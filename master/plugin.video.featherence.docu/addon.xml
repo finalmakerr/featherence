@@ -5,7 +5,7 @@
 	<import addon="plugin.video.youtube" version="5.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video audio</provides>
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <language>he</language>
