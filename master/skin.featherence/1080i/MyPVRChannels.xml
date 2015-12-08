@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <views>11</views>
+  <onload condition="Control.IsVisible(11)">Control.SetFocus(11)</onload>
+  <controls>
+    <control type="label" id="29">
+      <visible>False</visible>
+    </control>
+    <control type="label" id="30">
+      <visible>False</visible>
+    </control>
+    <control type="group" id="50">
+      <include>ViewDesign_11</include>
+    </control>
+	<include>ScrollBar</include>
+	<!--<include condition="!Control.IsVisible(12)">LeftMenuMyPVR</include>-->
+	<include>MenuDesign_Left</include>
+    <include>TopVideoInformation</include>
+	<include>TopInformation</include>
+  </controls>
+</window>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <include name="MenuDesign_Bottom" description="חלון תחתון -עסוק">
+    <control type="group">  			
+      <posx>640</posx>
+      <posy>700</posy>
+      <control type="image" description="מסגרת">
+		<include>Fade_BottomMenuOverlay</include>
+		<height>410</height>
+        <width>640</width>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+	  <control type="grouplist">
+	    <height>370</height>
+		<itemgap>20</itemgap>
+		<orientation>vertical</orientation>
+        <posx>20</posx>
+        <posy>20</posy>		
+		<width>600</width>
+		  <include condition="Window.IsVisible(DialogYesNo.xml)">BottomMenuDialogYesNo</include>
+		  <include condition="Window.IsVisible(DialogOK.xml)">BottomMenuDialogOk</include>
+		  <include condition="Window.IsVisible(DialogBusy.xml)">BottomMenuDialogBusy</include>
+		  
+		  
+		  <include condition="Window.IsVisible(DialogProgress.xml)">BottomMenuDialogProgress</include>
+	  </control>
+	</control>
+  </include>       
+  
+  <include name="BottomMenuDialogBusy">
+	  <control type="label" id="9" description="כותרת">
+	    <visible>!Window.IsVisible(DialogProgress.xml) + !Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogOK.xml)</visible>
+		<include>LabelC12</include>
+		<posy>-10</posy>
+		<height>60</height>
+		<label>$LOCALIZE[20186]</label> <!--[CR][COLOR Red]$INFO[Skin.String(DialogSelectSources)]-->
+	  </control>
+	  <control type="progress" id="10" description="Progressbar">
+	    <visible>!Window.IsVisible(DialogProgress.xml) + !Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogOK.xml)</visible>
+		<height>20</height>
+		<texturebg border="5,0,5,0">progress/ProgressBG.png</texturebg>
+		<midtexture border="0,1,0,1">progress/ProgressM.png</midtexture>
+		<righttexture border="1,1,5,1">progress/ProgressR.png</righttexture>
+		<lefttexture border="5,1,1,1">progress/ProgressL.png</lefttexture>
+	  </control>
+  </include>
+
+  <include name="BottomMenuDialogYesNo">
+      <control type="label" id="1" description="כותרת">
+		<textcolor>Yellow</textcolor>
+		<include>LabelC10</include>
+		<wrapmultiline>true</wrapmultiline>
+		<height>40</height>
+	  </control>
+	  <control type="textbox" id="9" description="תוכן">
+		<aligny>top</aligny>
+		<include>LabelC1</include>
+		<height>80</height>
+	  </control>
+	  <control type="button" id="10" description="No">
+		<width>600</width>
+		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		<onleft>noop</onleft>
+		<onright>noop</onright>
+		<onup>noop</onup>
+		<ondown>11</ondown>
+		<!--<onfocus condition="SubString(Control.GetLabel(1),)">Action(close)</onfocus>-->
+	  </control>
+	  <control type="button" id="11" description="Yes">
+		<width>600</width>
+		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		<onleft>noop</onleft>
+		<onright>noop</onright>
+		<onup>10</onup>
+		<ondown>noop</ondown>			
+	  </control>
+  </include>
+  
+  <include name="BottomMenuDialogOk" description="חלון שגיאה">
+	  <visible>!Window.IsVisible(DialogYesNo.xml)</visible>
+	  <control type="label" id="1" description="כותרת">
+		<include>LabelC10</include>
+		<height>80</height>
+		<wrapmultiline>true</wrapmultiline>
+	  </control>
+	  <control type="button" id="10" description="אישור">
+		<label>222</label>
+		<onfocus description="לא מופעלת הרחבת טלוויזיה חיה" condition="Window.IsVisible(Startup.xml) + SubString(Control.GetLabel(1),$LOCALIZE[19240])">Dialog.Close(okdialog)</onfocus>
+		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		<width>600</width>
+	  </control>
+	  <control type="textbox" id="9" description="Hidden">
+		<visible>false</visible>
+	  </control>
+	  <control type="textbox" description="תוכן">
+		<aligny>top</aligny>
+		<include>LabelC1</include>
+		<height>120</height>
+		<label>$INFO[Control.GetLabel(9)]</label>
+		<wrapmultiline>true</wrapmultiline>
+	  </control>
+	  <control type="textbox" description="תוכן2">
+		<aligny>top</aligny>
+		<include>LabelC1</include>
+		<height>120</height>
+		<label>$INFO[Control.GetLabel(90)]</label>
+		<visible>!IsEmpty(Control.GetLabel(90)) + !Skin.HasSetting(Admin)</visible>
+		<wrapmultiline>true</wrapmultiline>
+	  </control>
+  </include>       
+    
+  <include name="BottomMenuDialogProgress">
+    <control type="label" id="1" description="כותרת">
+	  <include>LabelC4</include>
+	  <height>15</height>
+	</control>
+    <control type="textbox" id="9" description="כותרת משנית - פותח זרימה">
+	  <posy>-10</posy>
+	  <aligny>top</aligny>
+	  <include>LabelC12</include>
+	  <height>60</height>
+	</control>
+	<control type="button" id="10" description="Cancel">
+	  <width>600</width>
+	  <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+	  <label>222</label>
+	</control>
+	<control type="progress" description="Progressbar">
+	  <posy>-10</posy>
+	  <height>20</height>
+	  <texturebg border="5,0,5,0">progress/ProgressBG.png</texturebg>
+	  <midtexture border="0,1,0,1">progress/ProgressM.png</midtexture>
+	  <righttexture border="1,1,5,1">progress/ProgressR.png</righttexture>
+	  <lefttexture border="5,1,1,1">progress/ProgressL.png</lefttexture>
+	  <info>System.Progressbar</info>
+	</control>
+  </include>
+</includes>

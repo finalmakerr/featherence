@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <include name="MenuDesign_Left">
+    <control type="label" id="90000">
+	  <visible>true</visible>
+	</control>
+	
+    <control type="group" description="Side menu 9000 group">
+      <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus() | ControlGroup(9002).HasFocus()</visible>
+	  <include>Slide5</include>
+      <height>530</height>	  
+	  <posx>-435</posx>
+	  <posy>275</posy>	  
+	  <width>480</width>	  	  
+      <control type="image" description="רקע">
+	    <include>Fade_LeftMenuOverlay</include>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+      <control type="grouplist" id="9000">
+		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() + !ControlGroup(9001).HasFocus() + !ControlGroup(9002).HasFocus() + !SubString(Window(home).Property(ViewsSettings),900)</visible>
+		<include>4ways3</include>
+		<!--<include condition="Window.IsVisible(Home.xml)">LeftMenuHome</include>-->
+		<include condition="Window.IsVisible(MyVideoNav.xml)">LeftMenuMyVideoNav</include>
+		<!--<include condition="Window.IsVisible(FileBrowser.xml)">LeftMenuFileBrowser</include>-->
+		<include condition="Window.IsVisible(MyVideoPlaylist)">LeftMenuMyVideoPlaylist</include>
+		<include condition="Window.IsVisible(MyPics.xml)">LeftMenuMyPics</include>
+		<include condition="Window.IsVisible(MyWeather.xml)">LeftMenuMyWeather</include>
+		<include condition="Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)">LeftMenuSettings</include>
+		<include condition="Window.IsVisible(MyMusicNav.xml)">LeftMenuMyMusicNav</include>
+		<include condition="Window.IsVisible(AddonBrowser.xml)">LeftMenuAddonBrowser</include>
+		<include condition="Window.IsVisible(MyPrograms.xml)">LeftMenuMyPrograms</include>
+		<include condition="Window.IsVisible(MyPVRChannels.xml)">LeftMenuMyPVR</include>
+	  </control>
+      
+	  <control type="grouplist" id="9001">
+		<visible allowhiddenfocus="false">[ControlGroup(9001).HasFocus() | StringCompare(Window(home).Property(ViewsSettings),9001)] + !Control.IsVisible(9000)</visible>
+		<include>4ways3</include>
+		
+		<control type="radiobutton" id="90" description="Toggle Main/View LeftMenu">
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <label>Views Settings</label>
+		  <selected>ControlGroup(9001).HasFocus() | StringCompare(Window(home).Property(ViewsSettings),9001)</selected>
+		  <onclick>ClearProperty(ViewsSettings,home)</onclick>
+		  <onclick>SetFocus(9000)</onclick>
+		</control>
+		
+		<control type="radiobutton" id="100" description="ShowDVDCases">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <label>$LOCALIZE[75141]</label>
+		  <selected>Control.IsVisible(57) + !Skin.HasSetting(ShowDVDCases) | [[Control.IsVisible(54) | Control.IsVisible(58)] + Skin.HasSetting(ShowDVDCases2)]</selected>
+		  <onclick condition="Control.IsVisible(57)">Skin.ToggleSetting(ShowDVDCases)</onclick>
+		  <onclick condition="Control.IsVisible(54) | Control.IsVisible(58)">Skin.ToggleSetting(ShowDVDCases2)</onclick>
+        </control>
+		<control type="radiobutton" id="102" description="ShowTopVideoInformation">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <label>$LOCALIZE[79044]</label>
+		  <selected>!Skin.HasSetting(ShowTopVideoInformation)</selected>
+		  <onclick condition="Control.IsVisible(57) | Control.IsVisible(58)">Skin.ToggleSetting(ShowTopVideoInformation)</onclick>
+		  <onclick condition="Control.IsVisible(57)">ReplaceWindow(videolibrary)</onclick>
+		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
+        </control>
+		<control type="radiobutton" id="104" description="פאנארט מסך מלא">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <label>$LOCALIZE[20445] $LOCALIZE[244]</label>
+		  <enable>!Skin.HasSetting(ShowTopVideoInformation)</enable>
+		  <selected>!Skin.HasSetting(FullFanartTopVideoInformation)</selected>
+		  <onclick>Skin.ToggleSetting(FullFanartTopVideoInformation)</onclick>
+		  <onclick>ActivateWindow(Home.xml)</onclick>
+		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>
+		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
+        </control>
+		<control type="radiobutton" id="105" description="פאנארט מסך מלא - ZOOM OUT">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <label>$LOCALIZE[20445] $LOCALIZE[244] - ZOOM OUT</label>
+		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(FullFanartTopVideoInformation)</enable>
+		  <selected>Skin.HasSetting(FullFanartZoomOut)</selected>
+		  <onclick>Skin.ToggleSetting(FullFanartZoomOut)</onclick>
+		  <onclick>ActivateWindow(Home.xml)</onclick>
+		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>
+		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
+        </control>
+		<control type="button" id="106" description="שקיפות עטיפות">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <label>$LOCALIZE[73130]: $INFO[Skin.String(MoviesTVCoversOverlay)]</label>
+		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)]</enable>
+		  <onclick condition="!Skin.String(MoviesTVCoversOverlay)">Skin.SetString(MoviesTVCoversOverlay, 100)</onclick>
+		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 100)">Skin.SetString(MoviesTVCoversOverlay, 95)</onclick>
+		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 95)">Skin.SetString(MoviesTVCoversOverlay, 90)</onclick>
+		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 90)">Skin.SetString(MoviesTVCoversOverlay, 85)</onclick>
+		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 85)">Skin.SetString(MoviesTVCoversOverlay, 80)</onclick>
+		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 80)">Skin.SetString(MoviesTVCoversOverlay, 70)</onclick>
+		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 70)">Skin.SetString(MoviesTVCoversOverlay, 60)</onclick>
+		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 60)">Skin.SetString(MoviesTVCoversOverlay, 50)</onclick>
+		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 50)">Skin.SetString(MoviesTVCoversOverlay, 40)</onclick>
+		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 40)">Skin.SetString(MoviesTVCoversOverlay, 30)</onclick>
+		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 30)">Skin.SetString(MoviesTVCoversOverlay, 20)</onclick>
+		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 20)">Skin.SetString(MoviesTVCoversOverlay, 10)</onclick>
+		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 10)">Skin.SetString(MoviesTVCoversOverlay, )</onclick>
+		  <!--<onclick>ActivateWindow(Home.xml)</onclick>
+		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>-->
+		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
+        </control>
+		<control type="radiobutton" id="139" description="פאנארט תמיד">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <label>$LOCALIZE[20445] $LOCALIZE[34122]</label>
+		  <enable></enable>
+		  <selected>Skin.HasSetting(AlwaysFanart)</selected>
+		  <onclick>Skin.ToggleSetting(AlwaysFanart)</onclick>
+		  <onclick>ActivateWindow(Home.xml)</onclick>
+		  <onclick>AlarmClock(139,ReplaceWindow(Home.xml),00:01,silent)</onclick>
+		  <onclick>AlarmClock(139,ReplaceWindow(videolibrary),00:01,silent)</onclick>
+		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
+        </control>
+	  </control>
+	  
+	  <control type="grouplist" id="9002">
+		<visible allowhiddenfocus="false">[ControlGroup(9002).HasFocus() | StringCompare(Window(home).Property(ViewsSettings),9002)] + !Control.IsVisible(9000)</visible>
+		<include>4ways3</include>
+
+		<control type="radiobutton" id="122" description="Toggle Main/View LeftMenu">
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <label>Views Settings</label>
+		  <selected>ControlGroup(9002).HasFocus() | StringCompare(Window(home).Property(ViewsSettings),9002)</selected>
+		  <onclick>ClearProperty(ViewsSettings,home)</onclick>
+		  <onclick>SetFocus(9000)</onclick>
+		</control>
+		
+		<control type="radiobutton" id="25">
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<label>$LOCALIZE[98] $VAR[25label2]</label>
+			<onclick>Skin.ToggleSetting(AutoView)</onclick>
+			<selected>!Skin.HasSetting(AutoView)</selected>
+		</control>
+		<control type="button" id="30">
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<!--<onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=movies)</onclick>-->
+			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.movies)</onclick>
+			<label>for movies: $INFO[Skin.String(AutoView.movies)]</label>
+			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+		</control>
+		<control type="button" id="31">
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.tvshows)</onclick>
+			<label>for tv shows:  $INFO[Skin.String(AutoView.tvshows)]</label>
+			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+		</control>
+		<control type="button" id="32">
+		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.seasons)</onclick>
+			<label>for seasons:  $INFO[Skin.String(AutoView.seasons)]</label>
+			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+		</control>
+		<control type="button" id="33">
+		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.episodes)</onclick>
+			<label>for episodes: $INFO[Skin.String(AutoView.episodes)]</label>
+			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+		</control>
+		<control type="button" id="34">
+		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.setmovies)</onclick>
+			<label>for movie sets: $INFO[Skin.String(AutoView.setmovies)]</label>
+			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+		</control>
+		<control type="button" id="36">
+		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.actors)</onclick>
+			<label>for Actors: $INFO[Skin.String(AutoView.actors)]</label>
+			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+		</control>
+		<control type="button" id="37">
+		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.genres)</onclick>
+			<label>for genres: $INFO[Skin.String(AutoView.genres)]</label>
+			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+		</control>
+		<control type="button" id="38">
+		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.others)</onclick>
+			<label>for years/countries/studios/directors: $INFO[Skin.String(AutoView.others)]</label>
+			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+		</control>
+		
+		<control type="button" id="40">
+		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.pictures)</onclick>
+			<label>for pictures: $INFO[Skin.String(AutoView.pictures)]</label>
+			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Window.IsVisible(MyPics.xml)</visible>
+		</control>
+	  </control>
+    </control>
+  </include>
+  
+  <include name="LeftMenuSettings">
+    <control type="button" id="20" description="Settings Level">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <onclick>SettingsLevelChange</onclick>
+	  <visible>Window.IsVisible(SettingsCategory.xml)</visible>
+	</control>
+	<include>button123_enablefanart</include>
+    <control type="togglebutton" id="120" description="Update library">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>653</label>
+	  <altlabel>13353</altlabel>
+	  <onclick>UpdateLibrary(video)</onclick>
+	  <usealttexture>library.isscanningvideo</usealttexture>
+	</control>
+  </include>
+  
+  <include name="LeftMenuMyVideoNav" description="חלון צד תצוגת וידאו">
+    <include>button2_views</include>
+	<include>button3_sort</include>
+	<include>button4_sortorder</include>
+	<control type="togglebutton" id="14" description="Toggle Watched">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
+	  <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
+	  <visible>Skin.HasSetting(Admin) | StringCompare(Control.GetLabel,$LOCALIZE[535]: $LOCALIZE[16101]) | Control.IsVisible(57)</visible>
+	  <!--<visible>[Skin.HasSetting(Admin) | !StringCompare(Container.FolderName,IsraeLIVE) + !SubString(Container.FolderPath,plugin://plugin.video.israelive)]</visible>-->
+	</control>
+	<control type="radiobutton" id="98" description="Filter">
+	  <enable>Container.CanFilterAdvanced</enable>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <onclick>Filter</onclick>
+	  <label>587</label>
+	  <visible>Control.IsEnabled(98)</visible>
+	</control>
+	<control type="button" id="8" description="Search for a string anywhere in the Kodi video database">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>137</label>
+	  <visible>!SubString(Container.FolderPath,plugin://) + !SubString(Container.FolderPath,special://userdata/library/videos) + !SubString(Container.FolderPath,special://home/) + !SubString(Container.FolderPath,/var/media/) + !SubString(Container.FolderPath,sources://video/)</visible>
+	  
+	</control>
+	<control type="button" id ="107" description="חפש-סדרות ישראליות">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>137</label>
+	  <onclick>RunScript(script.featherence.service,,?mode=300)</onclick>
+	  <visible>Window.IsVisible(Home.xml) + SubString(Container.FolderPath,plugin://plugin.video.sdarot.tv)</visible>
+	</control>
+	<control type="button" id ="109" description="?">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[]</label>
+	  <onclick>noop</onclick>
+	  <visible>Window.IsVisible(Home.xml) + StringCompare(Container.FolderPath,plugin://plugin.video.youtube/?folder=true&login=false&path=%2froot%2fsearch&store=searches)</visible>
+	  <visible>false</visible>
+	</control>
+	<include>AutoViewSettingsButton</include>
+	<include>openViewSettings9001</include>
+	<include condition="!Control.IsVisible(57)">CommonLeftMenuButtons</include>
+	<control type="togglebutton" id="20" description="Scanning library">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>653</label>
+	  <altlabel>13353</altlabel>
+	  <usealttexture>library.isscanningvideo</usealttexture>
+	  <visible>Control.IsEnabled(20) + !SubString(Container.FolderPath,sources://video/) + !SubString(Container.FolderPath,special://home/) + !SubString(Container.FolderPath,special://userdata/library/videos) + !SubString(Container.FolderPath,/var/media/) + !SubString(Container.FolderPath,sources://video/)</visible>
+	  <visible>!Window.IsVisible(SettingsCategory.xml)</visible>
+	</control>
+
+	<control type="togglebutton" id="120" description="Update library">
+	  <visible>!Control.IsEnabled(20) + SubString(Container.FolderPath,plugin://plugin.video.genesis)</visible>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>653</label>
+	  <altlabel>13353</altlabel>
+	  <onclick>UpdateLibrary(video)</onclick>
+	  <usealttexture>library.isscanningvideo</usealttexture>
+	</control>
+	<include condition="SubString(Container.FolderPath,special://userdata/library/videos) | SubString(Container.FolderPath,/var/media/) | SubString(Container.FolderPath,special://home/external/) | SubString(Container.FolderPath,sources://video/)">FileManagerButton</include>
+  </include>  
+  
+  <include name="LeftMenuDialogSelect">
+    <control type="group" description="Side menu 3/5 group">
+	  <include>Slide6</include>
+      <height>500</height>	  
+	  <posx>-440</posx>
+	  <posy>290</posy>	  
+	  <width>580</width>
+      <control type="image" description="רקע">
+	    <include>Fade_LeftMenuOverlay</include>
+		<animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="150,100">Conditional</animation>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+      <control type="label" id="1" description="כותרת">
+        <include>LabelC12</include>
+		<posx>20</posx>
+		<posy>0</posy>
+        <width>540</width>
+		<visible>Skin.HasSetting(Admin) | !StringCompare(Control.GetLabel(1),Genesis)</visible>
+      </control>
+	  <control type="label" id="100" description="כותרת">
+        <include>LabelC12</include>
+		<label>$LOCALIZE[79060] ($INFO[Container(3).NumItems])</label>
+		<posx>20</posx>
+		<posy>0</posy>
+        <width>540</width>
+		<visible>!Control.IsVisible(1)</visible>
+      </control>
+      <control type="panel" id="3" description="List of available options">
+		<height>430</height>
+		<width>870</width>
+        <onleft conditon="Control.IsVisible(1265) + !IsEmpty(Window(home).Property(TEMP))">1265</onleft>
+		<onleft conditon="Control.IsVisible(5)">5</onleft>
+		<onright condition="Control.IsVisible(5)">5</onright>
+		<onright>noop</onright>
+        <onup>3</onup>
+        <ondown>30</ondown>
+		<pagecontrol>60</pagecontrol>
+		<posy>70</posy>
+		<itemlayout description="()" height="60" width="870">	
+			<control type="label" description="שם">
+              <posx>45</posx>
+              <width>520</width>
+              <height>70</height>
+              <font>size28</font>
+              <textcolor>White</textcolor>
+			  <scroll>false</scroll>
+              <align>left</align>
+			  <label>$INFO[ListItem.Label]</label>
+			  <selectedcolor>Yellow</selectedcolor>
+			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>!StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
+            </control>
+			<control type="label" description="שם (רחב)">
+              <posx>45</posx>
+              <width>870</width>
+              <height>70</height>
+              <font>size28</font>
+              <textcolor>White</textcolor>
+			  <scroll>false</scroll>
+              <align>left</align>
+			  <label>$INFO[ListItem.Label]</label>
+			  <selectedcolor>Yellow</selectedcolor>
+			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
+            </control>
+		</itemlayout>
+        <focusedlayout description="()" height="60" width="870">
+			<control type="image" description="מסגרת">
+			  <animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
+			  <height>70</height>
+			  <posx>-30</posx>
+              <posy>0</posy>
+              <width>610</width>
+              <texture border="40">buttons/ButtonE.png</texture>
+            </control>
+			<control type="label" description="שם">
+              <posx>45</posx>
+              <width>520</width>
+              <height>70</height>
+              <font>size28</font>
+			  <selectedcolor>Yellow</selectedcolor>
+              <textcolor>White2</textcolor>
+			  <scroll>true</scroll>
+			  <scrollspeed>150</scrollspeed>
+              <align>left</align>
+			  <label>$INFO[ListItem.Label]</label>
+			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>!StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
+            </control>
+			<control type="label" description="שם (רחב)">
+              <posx>45</posx>
+              <width>870</width>
+              <height>70</height>
+              <font>size28</font>
+			  <selectedcolor>Yellow</selectedcolor>
+              <textcolor>White2</textcolor>
+			  <scroll>true</scroll>
+			  <scrollspeed>150</scrollspeed>
+              <align>left</align>
+			  <label>$INFO[ListItem.Label]</label>
+			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
+            </control>
+		</focusedlayout>        		
+	  </control>
+      <control type="panel" id="6" description="List of available add-ons">
+		<focusposition>0</focusposition>
+		<height>430</height>
+		<width>580</width>
+        <onleft condition="Control.IsVisible(5)">5</onleft>
+		<onleft condition="Control.IsVisible(1266)">1266</onleft>
+        <onright>Close</onright>
+        <onup>5</onup>
+        <ondown>30</ondown>	
+		<pagecontrol>60</pagecontrol>
+		<posy>70</posy>
+		<itemlayout description="()" height="60" width="580">	
+			<control type="label" description="שם">
+              <posx>95</posx>
+              <width>520</width>
+              <height>70</height>
+              <font>size28</font>
+              <textcolor>White</textcolor>
+			  <scroll>false</scroll>
+              <align>left</align>
+			  <label>$INFO[ListItem.Label]</label>
+			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>!StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
+            </control>
+			<control type="label" description="שם (רחב)">
+              <posx>95</posx>
+              <width>870</width>
+              <height>70</height>
+              <font>size28</font>
+              <textcolor>White</textcolor>
+			  <scroll>false</scroll>
+              <align>left</align>
+			  <label>$INFO[ListItem.Label]</label>
+			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>!StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
+            </control>
+            <control type="image">
+              <posx>35</posx>
+              <posy>5</posy>
+              <height>60</height>
+              <width>60</width>
+              <bordersize>6</bordersize>
+              <texture>$INFO[ListItem.Icon]</texture>
+              <aspectratio>keep</aspectratio>
+            </control>			
+		</itemlayout>
+        <focusedlayout description="()" height="60" width="580">
+			<control type="image" description="מסגרת"> 
+			  <animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
+			  <height>70</height>
+			  <posx>-30</posx>
+              <posy>0</posy>
+              <width>610</width>
+              <texture border="20">buttons/ButtonE.png</texture>
+			  <visible>!ListItem.IsSelected</visible>
+            </control>
+			<control type="image" description="מסגרת נבחר"> 
+			  <animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
+			  <height>70</height>
+			  <posx>-30</posx>
+              <posy>0</posy>
+              <width>610</width>
+			  <texture border="20">buttons/ButtonE.png</texture>
+			  <visible>ListItem.IsSelected</visible>
+            </control>
+			<control type="label" description="שם">
+              <posx>95</posx>
+              <width>520</width>
+              <height>70</height>
+              <font>size28</font>
+              <textcolor>Yellow</textcolor>
+			  <scroll>true</scroll>
+              <align>left</align>
+			  <label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
+			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>!StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
+            </control>
+			<control type="label" description="שם (רחב)">
+              <posx>95</posx>
+              <width>870</width>
+              <height>70</height>
+              <font>size28</font>
+              <textcolor>Yellow</textcolor>
+			  <scroll>true</scroll>
+              <align>left</align>
+			  <label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
+			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
+            </control>
+            <control type="image" description="אייקון1">
+              <posx>35</posx>
+              <posy>5</posy>
+              <height>60</height>
+              <width>60</width>
+              <bordersize>6</bordersize>
+              <texture>$INFO[ListItem.Icon]</texture>
+              <aspectratio>aspect</aspectratio>
+            </control>
+            <control type="image" description="אייקון2">
+			  <!--<include>Fade8</include>-->
+			  <animation condition="!IsEmpty(ListItem.Icon)" effect="zoom" end="700,700" time="0" reversible="false">Conditonal</animation>
+			  <aspectratio>aspect</aspectratio>
+			  <posx>210</posx>
+              <posy>55</posy>
+              <height>55</height>
+              <bordersize>6</bordersize>
+              <texture>$INFO[ListItem.Icon]</texture>
+			  <visible>!IsEmpty(ListItem.Icon) + false</visible>
+              <width>55</width>
+            </control>
+        </focusedlayout>        		
+	  </control>
+	  <control type="grouplist" id="30" description="Button 5">
+	    <animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
+		<posx>0</posx>
+	    <posy>520</posy>
+		<height>200</height>
+		<width>580</width>
+		<onleft>3</onleft>
+		<onright>3</onright>
+		<onup>6</onup>
+		<ondown>6</ondown>
+		<control type="button" id="5" description="Manual Get more button">
+			<include>Fade_LeftMenuOverlay</include>
+			<width>580</width>
+			<texturenofocus colordiffuse="ff96708f" border="40">buttons/ButtonE0.png</texturenofocus>
+			<include>ButtonR1</include>
+			<height>70</height>
+			<label>-</label>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>6</onup>
+			<ondown>6</ondown>
+			<posx>-30</posx>
+		</control>
+		<control type="button" id="1265" description="עוד...">
+			<include>Fade_LeftMenuOverlay</include>
+			<width>580</width>
+			<texturenofocus colordiffuse="ff96708f" border="40">buttons/ButtonE0.png</texturenofocus>
+			
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+			<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<font>size28</font>
+			<height>70</height>
+			<label>$LOCALIZE[22082]</label>
+			<onclick>RunScript(script.featherence.service,,?mode=70&amp;value=3)</onclick>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>6</onup>
+			<ondown>6</ondown>
+			<posx>10</posx>
+			<visible>!IsEmpty(Window(home).Property(TEMP)) + Window.IsVisible(DialogVideoInfo.xml)</visible>
+		</control>
+		<control type="button" id="1266" description="מקורות מדיה">
+			<width>580</width>
+			<texturenofocus colordiffuse="ff96708f" border="40">buttons/ButtonE0.png</texturenofocus>
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+			<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<font>size28</font>
+			<height>70</height>
+			<label>$LOCALIZE[22082]</label>
+			<onclick>Close</onclick>
+			<onclick>ActivateWindow(AddonBrowser,root)</onclick>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>6</onup>
+			<ondown>6</ondown>
+			<posx>-30</posx>
+			<visible>Window.IsVisible(CustomHomeCustomizer.xml) + !Control.IsVisible(5) + !Control.IsVisible(1265)</visible>
+			<visible>Control.IsVisible(6) + StringCompare(Control.GetLabel(1),$LOCALIZE[20094])</visible>
+		</control>
+	    <control type="button" id="1267" description="גודל">
+			<include>Fade_LeftMenuOverlay</include>
+			<width>580</width>
+			<texturenofocus colordiffuse="ff96708f" border="40">buttons/ButtonE0.png</texturenofocus>
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+			<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<font>size28</font>
+			<height>70</height>
+			<label>$LOCALIZE[22031]</label>
+			<onclick condition="StringCompare(Window(home).Property(DialogSelect.Wide),0) | IsEmpty(Window(home).Property(DialogSelect.Wide))">SetProperty(DialogSelect.Wide,1,home)</onclick>
+			<onclick condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ClearProperty(DialogSelect.Wide,home)</onclick>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>6</onup>
+			<ondown>6</ondown>
+			<posx>10</posx>
+			<visible>!IsEmpty(Window(home).Property(TEMP)) + Window.IsVisible(DialogVideoInfo.xml)</visible>
+		</control>
+		
+	  </control>
+        <control type="image" description="loopnf">
+			<include>Fade4</include>
+			<aspectratio>keep</aspectratio>
+			<posx>35</posx>
+			<posy>11</posy>
+			<height>60</height>
+			<texture>special://home/addons/script.featherence.service/resources/icons/se.png</texture>
+			<width>60</width>
+			<visible>Control.IsVisible(5) + !Window.IsVisible(DialogMediaFilter.xml) + !Window.IsVisible(Settings.xml) + !Window.IsVisible(SettingsCategory.xml)</visible>
+        </control>
+    </control>
+  </include>
+  
+  <include name="LeftMenuMyPics" description="חלון צד תצוגת תמונות">
+	<include>button2_views</include>
+	<include>button3_sort</include>
+	<include>button4_sortorder</include>
+	<control type="button" id="7" description="מצגת רקורסיבית">
+	  <disabledcolor>Grey</disabledcolor>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[13318]</label>
+	</control>
+	<control type="radiobutton" id="9" description="מצגת אקראית">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>31007</label>
+	</control>
+	<!--<include>button123_enablefanart</include>-->
+	<include>AutoViewSettingsButton</include>
+	<include>FileManagerButton</include>
+  </include>  
+  
+  <include name="LeftMenuMyMusicNav" description="חלון צד תצוגת האודיו">
+	<include>button2_views</include>
+	<include>button3_sort</include>
+	<include>button4_sortorder</include>
+	<control type="button" id="8" description="search">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>137</label>
+	</control>
+	<control type="radiobutton" id="24" description="נתיב קובץ">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[21801]</label>
+	  <onclick condition="Skin.HasSetting(ShowFileInfo)">Skin.ToggleSetting(ShowFileInfo)</onclick>
+	  <altclick condition="!Skin.HasSetting(ShowFileInfo)">Skin.ToggleSetting(ShowFileInfo)</altclick>
+	 <radiowidth>30</radiowidth>
+	 <radioheight>30</radioheight>
+	</control>	
+	<control type="togglebutton" id="20">
+	  <description>Update library</description>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>653</label>
+	  <altlabel>13353</altlabel>
+	  <onclick>AlarmClock(20,CleanLibrary(music),00:10,silent)</onclick>
+	  <onclick>AlarmClock(201,Container.Update,00:11,silent)</onclick>
+	  <usealttexture>library.isscanningvideo</usealttexture>
+	</control>
+	<include condition="!StringCompare(ListItem.Path,musicdb://)">FileManagerButton</include>
+	<include condition="Window.IsVisible(MyMusicNav.xml) + !Skin.String(ID10,C) + !Skin.String(ID10,D)">HelpButton</include>
+	<include>CommonLeftMenuButtons</include>
+  </include>  
+  <include name="LeftMenuMyWeather">
+    <control type="button" id="2" description="רענון">
+	  <texturenofocus>-</texturenofocus>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	</control>
+	<control type="spincontrolex" id="3" description="מיקום">
+	  <texturenofocus>-</texturenofocus>
+	  <width>480</width>
+	</control>
+	<control type="button" id="129" description="הגדרות">
+	  <label>$LOCALIZE[5]</label>
+	  <texturenofocus>-</texturenofocus>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <onclick condition="System.HasAddon(weather.yahoo)">Addon.OpenSettings(weather.yahoo)</onclick>
+	  <onclick condition="!System.HasAddon(weather.yahoo)">Notification(weather.yahoo addon is missing,Please reinstall it.,5000)</onclick>
+	</control>
+  </include>
+  <include name="LeftMenuAddonBrowser">
+    <include>button2_views</include>
+	<control type="radiobutton" id="7" description="Enable language filter">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>587</label>
+	</control>
+	<include>button3_sort</include>
+	<include>button4_sortorder</include>
+	<control type="radiobutton" id="6" description="Enable add-on notifications">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[518] $LOCALIZE[25000]</label>	  
+	</control>	
+	<control type="button" id="5" description="Enable auto-updating of the installed add-on's">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[518] $LOCALIZE[24063]</label>
+	</control>
+	<control type="button" id="9" description="Check for updates">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[24034]</label>
+	</control>
+	<include>CommonLeftMenuButtons</include>
+  </include>
+  
+  <include name="LeftMenuMyPrograms">
+	<include>button2_views</include>
+	<include>button3_sort</include>
+	<include>button4_sortorder</include>
+	<include>openViewSettings9001</include>
+	<control type="button" id="133" description="חיפוש משחקים">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[137] $LOCALIZE[15016]</label>
+	  <!--<onclick>RunScript(plugin.program.advanced.launcher,?STRING_QUERY/%%SEARCH_CODE%%)</onclick>-->
+	  <onclick>Skin.SetString(search1)</onclick>
+	  <onclick>ActivateWindow(10001,"plugin://plugin.program.advanced.launcher/?$INFO[Skin.String(search1)]/%%SEARCH_ITEM%%")</onclick>
+	  <onclick condition="true">AlarmClock(search1,Action(Right),0,silent)</onclick>
+	  <!--<onclick condition="!StringCompare(Container.Viewmode,romPT)">AlarmClock(romPTview,Container.NextViewMode,0,silent)</onclick>-->
+	  <!--<onclick condition="true">AlarmClock(Games1,Container.SetViewMode(58),0,silent)</onclick>-->
+	  <!--<onclick>AlarmClock(testme,Container.NextViewMode,0,silent)</onclick>-->
+	  <visible>StringCompare(Container.FolderName,Advanced Launcher)</visible>
+	</control>
+	<control type="button" id="130" description="מצב גויסטיק">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[79035]</label>
+	  <onclick condition="System.HasAddon(script.featherence.emu)">RunScript(script.featherence.emu,,?mode=2)</onclick>
+	  <visible>StringCompare(Container.FolderName,Advanced Launcher) + System.HasAddon(script.featherence.emu)</visible>
+	  <visible>System.Platform.Linux + !System.Platform.Android + System.HasAddon(service.openelec.settings) | Skin.HasSetting(Admin)]</visible>
+	</control>
+	<control type="button" id="132" description="אפשר תמיכת גויסטיק">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[79034]</label>
+	  <onclick condition="System.HasAddon(script.featherence.emu)">RunScript(script.featherence.emu,,?mode=1)</onclick>
+	  <visible>StringCompare(Container.FolderName,Advanced Launcher) + System.HasAddon(script.featherence.emu)</visible> <!--!System.GetBool(input.enablejoystick)-->
+	</control>
+	<control type="button" id="110" description="הגדרות מתקדמות">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>[COLOR=Red]$LOCALIZE[78997][/COLOR]</label>
+	  <onclick condition="System.HasAddon(script.featherence.emu)">RunScript(script.featherence.emu,,)</onclick>
+	  <visible>StringCompare(Container.FolderName,Advanced Launcher) + System.HasAddon(script.featherence.emu)</visible>
+	</control>
+	<include>CommonLeftMenuButtons</include>
+  </include>
+  
+  <include name="CommonLeftMenuButtons">
+    <include>button123_enablefanart</include>
+	<control type="radiobutton" id="138" description="פאנארט מסך מלא">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[20445] $LOCALIZE[244]</label>
+	  <selected>!Skin.HasSetting(FullFanartBackground2)</selected>
+	  <enable>!Skin.HasSetting(background2)</enable>
+	  <onclick>Skin.ToggleSetting(FullFanartBackground2)</onclick>
+	  <visible>!Control.IsVisible(57)</visible>
+	  <!--<onclick>ActivateWindow(Home.xml)</onclick>
+	  <onclick condition="Window.IsVisible(AddonBrowser.xml)">AlarmClock(138,ReplaceWindow(AddonBrowser.xml),00:00,silent)</onclick>
+	  <onclick condition="Window.IsVisible(MyPrograms.xml)">AlarmClock(138,ReplaceWindow(MyPrograms.xml),00:00,silent)</onclick>
+	  <onclick condition="Window.IsVisible(Home.xml)">AlarmClock(138,ReplaceWindow(Home.xml),00:00,silent)</onclick>-->
+	  <visible>false</visible>
+	</control>
+  </include>
+  <include name="LeftMenuMyVideoPlaylist">
+    <include>button2_views</include>
+	<include>button3_sort</include>
+	<include>button4_sortorder</include>
+	<control type="button" id="14" description="Number of items in the playlist">
+	  <texturenofocus>-</texturenofocus>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>Number of items in the playlist</label>
+	  <visible>false</visible>
+	</control>
+	<control type="radiobutton" id="20" description="Shuffle the playlist">
+	  <texturenofocus>-</texturenofocus>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>191</label>
+	</control>
+	<control type="button" id="21" description="Save the playlist">
+	  <texturenofocus>-</texturenofocus>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>190</label>
+	</control>
+	<control type="button" id="22" description="Clear the playlist">
+	  <texturenofocus>-</texturenofocus>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>192</label>
+	</control>
+	<control type="button" id="23" description="Play the playlist">
+	  <texturenofocus>-</texturenofocus>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[14098] $LOCALIZE[559]</label>
+	</control>
+	<control type="button" id="24" description="Play the next song in the playlist">
+	  <texturenofocus>-</texturenofocus>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[14098] $LOCALIZE[19031] $LOCALIZE[19107] $LOCALIZE[559]</label>
+	</control>
+	<control type="button" id="25" description="Play the previous song in the playlist">
+	  <texturenofocus>-</texturenofocus>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[14098] $LOCALIZE[210] $LOCALIZE[19107] $LOCALIZE[559]</label>
+	</control>
+	<control type="button" id="26" description="Put the playlist on repeat">
+	  <texturenofocus>-</texturenofocus>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>-</label>
+	</control>
+  </include>
+  <include name="LeftMenuMyPVR" description="חלון צד טלוויזיה חיה">
+	<include>button2_views</include>
+	<control type="button" id="30" description="קבוצת ערוצים">
+	  <description></description>
+	  <include>ButtonR3</include>
+	  <label>$VAR[ChannelGroupName]</label>
+	  <onleft condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels) | Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">PreviousChannelGroup</onleft>
+	  <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels) | Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
+	  <onclick condition="Window.IsActive(RadioChannels) + IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+	  <onclick condition="Window.IsActive(TVChannels) + !IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+	  <onclick condition="Window.IsActive(RadioGuide) + IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+	  <onclick condition="Window.IsActive(TVGuide) + !IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+	  <visible>true</visible>
+	</control>
+	<control type="button" id="31" description="מדריך טלוויזיה/ערוצי טלוויזיה">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$VAR[Button31]</label>
+	  <onclick condition="Window.IsVisible(MyPVRChannels.xml)">ActivateWindow(TVGuide)</onclick>
+	  <onclick condition="Window.IsVisible(MyPVRGuide.xml)">close</onclick>
+	  <onclick condition="Window.IsVisible(MyPVRGuide.xml)">ActivateWindow(TVChannels)</onclick>
+	</control>
+	<include>button3_sort</include>
+	<include>button4_sortorder</include>
+	<control type="button" id="32" description="עדכון רשימות ערוצים">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[70111]</label>
+	  <onclick condition="Window.IsVisible(MyPVRChannels.xml)">RunScript(script.featherence.service,,?mode=12)</onclick>
+	</control>
+	
+	<control type="button" id="33" description="Radio Channels">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[19024]</label>
+	  <onclick>ActivateWindow(RadioChannels)</onclick>
+	  <visible>false</visible>
+	</control>
+	<control type="button" id="34" description="הקלטות">
+	  <visible>Skin.HasSetting(Admin)</visible>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[19163]</label>
+	  <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+	  <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+	</control>
+	<control type="button" id="35" description="Timers">
+	  <visible>Skin.HasSetting(Admin)</visible>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>19040</label>
+	  <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+	  <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+	</control>
+	<control type="button" id="36" description="Search">
+	  <visible>Skin.HasSetting(Admin)</visible>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>137</label>
+	  <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+	  <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+	</control>
+	<control type="button" id="37" description="מנהל ערוצים">
+	  <visible>Skin.HasSetting(Admin)</visible>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>מנהל ערוצים</label>
+	  <onclick>ActivateWindow(pvrosdchannels)</onclick>
+	</control>
+	
+	<control type="radiobutton" id="5" description="Group recording items by folder structure">
+		<visible>Skin.HasSetting(Admin)</visible>
+		<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		<label>19270</label>
+		<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+	</control>
+	<control type="radiobutton" id="6" description="Show hidden channels">
+		<visible>Skin.HasSetting(Admin)</visible>
+		<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		<label>19051</label>
+		<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+	</control>
+	<control type="radiobutton" id="7" description="Show deleted recordings">
+		<visible>Skin.HasSetting(Admin)</visible>
+		<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		<textwidth>235</textwidth>
+		<label>19184</label>
+		<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+	</control>
+  </include>
+  
+  
+  <include name="ShowDVDCases">
+     <control type="group">
+	   <visible>!Skin.HasSetting(ShowDVDCases) + [!IsEmpty(Player.Art(tvshow.poster)) | !IsEmpty(Player.Art(poster)) | !IsEmpty(Control.GetLabel(1103)) | !IsEmpty(VideoPlayer.Cover) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Art(tvshow.poster)) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Icon) | SubString(ListItem.path,videodb://movies/sets/)]</visible>
+	   <visible>!StringCompare(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)</visible>
+	   <visible>!Window.IsVisible(DialogAddonInfo.xml)</visible>
+	   <visible>!SubString(Container.FolderPath,plugin://plugin.video.youtube/)</visible>
+	   <visible>!Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)</visible>
+
+		<control type="label" id="1103" description="***דירוג***">
+          <label>$VAR[TopVideoInformation3]</label>
+		  <visible>false</visible>
+        </control>
+	   <control type="image" id="191" description="הטובים ביותר">
+		 <texture colordiffuse="ff6699cc">misc/dvdcases/dvdcases.png</texture>
+		 <visible>[[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + [IntegerGreaterThan(ListItem.Rating,8.9) + !IntegerGreaterThan(ListItem.Rating,9.9)]] | [Container.Content(movies) + IntegerGreaterThan(ListItem.Rating,7.6) + !IntegerGreaterThan(ListItem.Rating,9.9)]  |  [[VideoPlayer.Content(episodes) | !IsEmpty(VideoPlayer.Season) | !IsEmpty(VideoPlayer.Episode)] + Window.IsVisible(DialogFullScreenInfo.xml) + IntegerGreaterThan(VideoPlayer.Rating,8.9) + !IntegerGreaterThan(VideoPlayer.Rating,9.9)] | [[VideoPlayer.Content(movies) | !IsEmpty(VideoPlayer.Director) | !IsEmpty(VideoPlayer.Country) | !IsEmpty(VideoPlayer.mpaa) | !IsEmpty(VideoPlayer.Tagline) | !IsEmpty(VideoPlayer.Cast)] + Window.IsVisible(DialogFullScreenInfo.xml) + IntegerGreaterThan(VideoPlayer.Rating,7.6) + !IntegerGreaterThan(VideoPlayer.Rating,9.9)]</visible>
+		 <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
+		 <visible>IsEmpty(ListItem.VideoResolution) + IsEmpty(ListItem.VideoCodec)</visible>
+	   </control>
+	   <control type="image" id="1910" description="הטובים ביותר">
+		 <texture colordiffuse="ff6699cc">misc/dvdcases/dvdcases.png</texture>
+		 <visible>Window.IsVisible(Home.xml) + !Control.IsVisible(191)</visible>
+		 <visible>Control.HasFocus(311) + [IntegerGreaterThan(Container(311).ListItem.Property(rating),8.9) + !IntegerGreaterThan(Container(311).ListItem.Property(rating),9.9)] | Control.HasFocus(312) + [IntegerGreaterThan(Container(312).ListItem.Property(rating),8.9) + !IntegerGreaterThan(Container(312).ListItem.Property(rating),9.9)]</visible>
+	   </control>
+	   <control type="image" id="192" description="מארז סרטים">
+		 <texture colordiffuse="ffff0000">misc/dvdcases/dvdcases.png</texture>
+		 <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
+	   </control>
+	   <control type="image" id="193" description="מקומי">
+		 <texture colordiffuse="ffffe135">misc/dvdcases/dvdcases3.png</texture>
+		 <visible>[IntegerGreaterThan(ListItem.Size,10) | !IsEmpty(ListItem.VideoResolution) | !IsEmpty(ListItem.VideoCodec)] | Window.IsVisible(DialogFullScreenInfo.xml) + [IntegerGreaterThan(VideoPlayer.Size,10)]</visible>
+		 <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
+	   </control>
+	   <control type="image" id="190" description="רגיל">
+		 <texture>misc/dvdcases/dvdcases.png</texture>
+		 <!--<visible>[[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + [!IntegerGreaterThan(ListItem.Rating,8.9) | IntegerGreaterThan(ListItem.Rating,9.9)]] | [Container.Content(movies) + [!IntegerGreaterThan(ListItem.Rating,7.6) | IntegerGreaterThan(ListItem.Rating,9.9)]] | [VideoPlayer.Content(movies) | !IsEmpty(VideoPlayer.Director) | !IsEmpty(VideoPlayer.Country) | !IsEmpty(VideoPlayer.mpaa) | !IsEmpty(VideoPlayer.Tagline) | !IsEmpty(VideoPlayer.Cast)] + [!IsEmpty(Player.Art(tvshow.poster)) | !IsEmpty(Player.Art(poster)) | !IsEmpty(VideoPlayer.Cover) | Container.Content(Movies) | Container.Content(TVshows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Substring(ListItem.path,videodb://)]</visible>-->
+		 <visible>[[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + [!IntegerGreaterThan(ListItem.Rating,8.9) | IntegerGreaterThan(ListItem.Rating,9.9)]] | [Container.Content(movies) + [!IntegerGreaterThan(ListItem.Rating,7.6) | IntegerGreaterThan(ListItem.Rating,9.9)]] | [[VideoPlayer.Content(episodes) | !IsEmpty(VideoPlayer.Season) | !IsEmpty(VideoPlayer.Episode)] + Window.IsVisible(DialogFullScreenInfo.xml) + [!IntegerGreaterThan(VideoPlayer.Rating,8.9) | IntegerGreaterThan(VideoPlayer.Rating,9.9)]] | [[VideoPlayer.Content(movies) | !IsEmpty(VideoPlayer.Director) | !IsEmpty(VideoPlayer.Tagline) | !IsEmpty(VideoPlayer.mpaa)] + Window.IsVisible(DialogFullScreenInfo.xml) + [!IntegerGreaterThan(VideoPlayer.Rating,7.6) | IntegerGreaterThan(VideoPlayer.Rating,9.9)]]</visible>
+		 <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
+		 <visible>IsEmpty(ListItem.VideoResolution) + IsEmpty(ListItem.VideoCodec)</visible>
+		 <!--<visible>false</visible>-->
+	   </control>
+	   <control type="image" id="1900" description="רגיל">
+		 <texture>misc/dvdcases/dvdcases.png</texture>
+		 <visible>Window.IsVisible(Home.xml) + !Control.IsVisible(190)</visible>
+		 <visible>Control.HasFocus(311) + [!IntegerGreaterThan(Container(311).ListItem.Property(rating),8.9) | IntegerGreaterThan(Container(311).ListItem.Property(rating),9.9)] | Control.HasFocus(312) + [!IntegerGreaterThan(Container(312).ListItem.Property(rating),8.9) | IntegerGreaterThan(Container(312).ListItem.Property(rating),9.9)]</visible>
+	   </control>
+	 </control>
+   </include>
+  <include name="FileManagerButton">
+    <control type="button" id="103" description="מנהל קבצים">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>$LOCALIZE[7]</label>
+	  <onclick condition="!IsEmpty(Container.FolderPath)">ActivateWindow(FileManager.xml,$INFO[Container.FolderPath])</onclick>
+	  <onclick condition="Window.IsVisible(MyMusicNav.xml) + IsEmpty(Container.FolderPath)">ActivateWindow(FileManager.xml,special://userdata/library/music/)</onclick>
+	  <enable>!SubString(Container.FolderPath,sources://video/)</enable>
+	</control>
+  </include>
+  <include name="AutoViewSettingsButton">
+    <control type="radiobutton" id="121" description="Toggle Main/AutoView">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>AutoView Settings</label>
+	  <selected>ControlGroup(9002).HasFocus() | StringCompare(Window(home).Property(ViewsSettings),9002)</selected>
+	  <onclick condition="true">SetProperty(ViewsSettings,9002,home)</onclick>
+	  <onclick>AlarmClock(0,SetFocus(9002),0,silent)</onclick>
+	</control>
+  </include>
+  <include name="button2_views">
+    <control type="button" id="2" description="Views">
+	  <texturenofocus>-</texturenofocus>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <visible>!IsEmpty(Control.GetLabel(2))</visible>
+	</control>
+  </include>
+  <include name="button3_sort">
+    <control type="button" id="3" description="Sort">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <visible>Control.IsEnabled(3)</visible>
+	  <visible>!SubString(Container.FolderPath,plugin://plugin.video.sdarot.tv)</visible>
+	  <visible>!IsEmpty(Control.GetLabel(3))</visible>
+	</control>
+  </include>
+  <include name="button4_sortorder">
+    <control type="togglebutton" id="4" description="SortOrder">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <label>584</label>
+	  <altlabel>585</altlabel>
+	  <visible>Control.IsEnabled(4)</visible>
+	  <visible>!Window.IsVisible(Settings.xml) + !Window.IsVisible(SettingsCategory.xml)</visible>
+	</control>
+  </include>
+  <include name="button123_enablefanart">
+	  <control type="radiobutton" id="123" description="פאנארט פעיל">
+	    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	    <label>$LOCALIZE[20445] $LOCALIZE[305]</label>
+	    <selected>!Skin.HasSetting(background2)</selected>
+	    <onclick>Skin.ToggleSetting(background2)</onclick>
+		<visible>!Control.IsVisible(57) + !Control.IsVisible(58) | Control.IsVisible(58) + Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart)</visible>
+	  </control>
+  </include>
+  <include name="openViewSettings9001">
+	  <control type="radiobutton" id="99" description="Toggle Main/View LeftMenu">
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <label>Views Settings</label>
+		  <selected>ControlGroup(9001).HasFocus() | StringCompare(Window(home).Property(ViewsSettings),9001)</selected>
+		  <onclick condition="true">SetProperty(ViewsSettings,9001,home)</onclick>
+		  <onclick>AlarmClock(0,SetFocus(9001),0,silent)</onclick>
+		  <visible>Control.IsVisible(54) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
+	  </control>
+  </include>
+</includes>

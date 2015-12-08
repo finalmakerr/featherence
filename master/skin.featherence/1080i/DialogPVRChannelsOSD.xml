@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+  <defaultcontrol always="true">11</defaultcontrol>
+  <controls>
+	<control type="group" id="250" description="ראשי">
+	  <posx>240</posx>
+	  <posy>810</posy>
+	  <control type="image" description="מסגרת">
+		<aspectratio>stretch</aspectratio>
+		<height>350</height>
+		<posy>-50</posy>
+		<width>1440</width>
+		<texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+	  </control>
+
+	  <control type="group" description="כותרות">
+		<control type="label" description="קבוצת ערוצים">
+		  <posx>520</posx>
+		  <posy>-25</posy>
+		  <include>LabelC2</include>
+		  <height>5</height>
+	      <width>400</width>
+	      <textcolor>White</textcolor>
+	      <label>$INFO[VideoPlayer.ChannelGroup]</label>
+		  <visible>!pvr.IsPlayingRadio</visible>
+		</control>
+		<control type="label" description="קבוצת רדיו">
+		  <posx>520</posx>
+		  <posy>-25</posy>
+		  <include>LabelC2</include>
+		  <height>5</height>
+	      <width>400</width>
+	      <textcolor>White</textcolor>
+	      <label>$INFO[MusicPlayer.ChannelGroup]</label>
+		  <visible>pvr.IsPlayingRadio</visible>
+		</control>
+	  </control>
+      <control type="list" id="11">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1440</width>
+        <height>300</height>
+        <onup>11</onup>
+        <ondown>11</ondown>
+        <onleft>PreviousChannelGroup</onleft>
+        <onright>NextChannelGroup</onright>
+        <pagecontrol>60</pagecontrol>
+        <itemlayout width="1360" height="54">
+          <control type="image" description="הקלטה">
+            <posx>10</posx>
+            <posy>5</posy>
+            <width>40</width>
+            <height>40</height>
+            <texture>pvr/rec.png</texture>
+			<aspectratio>keep</aspectratio>
+            <visible>ListItem.IsRecording</visible>
+          </control>
+		  <control type="image" description="תזמון הקלטה">
+            <posx>10</posx>
+            <posy>5</posy>
+            <width>40</width>
+            <height>40</height>
+            <texture>pvr/timer.png</texture>
+			<aspectratio>keep</aspectratio>
+            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+          </control>
+		  <control type="label" description="מספר הערוץ">
+            <posx>50</posx>
+			<posy>5</posy>
+            <width>60</width>
+            <height>40</height>
+            <include>LabelL1</include>
+            <textcolor>White</textcolor>
+            <selectedcolor>Yellow</selectedcolor>
+            <info>ListItem.ChannelNumber</info>
+          </control>
+		  <control type="image" description="אייקון">
+			<posx>120</posx>
+			<posy>5</posy>
+			<top></top>
+			<width>40</width>
+			<height>40</height>
+			<texture>$INFO[ListItem.Icon]</texture>
+			<aspectratio>keep</aspectratio>
+		  </control>
+		  <control type="label" description="שעה">
+            <posx>170</posx>
+			<posy>5</posy>
+            <width>100</width>
+            <height>40</height>
+            <include>LabelL1</include>
+            <textcolor>White</textcolor>
+            <selectedcolor>Yellow</selectedcolor>
+            <info>ListItem.StartTime</info>
+          </control>
+		  <control type="image" description="קו">
+			<posx>240</posx>
+			<posy>10</posy>
+			<top>4</top>
+			<width>40</width>
+			<height>280</height>
+			<texture>images/LineV.png</texture>
+			<aspectratio>keep</aspectratio>
+		  </control>
+          <control type="label" description="שם הערוץ">
+            <posx>270</posx>
+            <posy>5</posy>
+            <width>400</width>
+            <height>40</height>
+            <include>LabelL1</include>
+            <textcolor>White2</textcolor>
+            <selectedcolor>Yellow</selectedcolor>
+            <info>ListItem.Label</info>
+          </control>
+		  <control type="image" description="קו">
+			<posx>650</posx>
+			<posy>10</posy>
+			<top>4</top>
+			<width>40</width>
+			<height>280</height>
+			<texture>images/LineV.png</texture>
+			<aspectratio>keep</aspectratio>
+		  </control>
+		  <control type="label" description="שם התוכנית">
+            <posx>680</posx>
+            <posy>5</posy>
+            <width>1000</width>
+            <height>40</height>
+            <include>LabelL1</include>
+            <textcolor>White</textcolor>
+            <selectedcolor>Yellow</selectedcolor>
+            <info>ListItem.Title</info>
+          </control>
+		  <control type="image" description="קו">
+			<posx>955</posx>
+			<posy>10</posy>
+			<top>4</top>
+			<width>40</width>
+			<height>280</height>
+			<texture>images/LineV.png</texture>
+			<aspectratio>keep</aspectratio>
+			<visible>false</visible>
+		  </control>
+		  <control type="textbox" description="פרטי תוכנית">
+            <posx>980</posx>
+            <posy>5</posy>
+            <width>400</width>
+            <height>40</height>
+            <include>LabelL1</include>
+            <textcolor>White</textcolor>
+            <label>$INFO[ListItem.Plot]</label>
+			<visible>false</visible>
+          </control>
+        </itemlayout>
+        <focusedlayout width="1360" height="54">
+          <control type="image" description="כפתור">
+		    <posy>-10</posy>
+            <width>1440</width>
+            <height>70</height>
+            <texture border="40">buttons/ButtonE.png</texture>
+          </control>
+          <control type="image" description="הקלטה">
+            <posx>10</posx>
+            <posy>5</posy>
+            <width>40</width>
+            <height>40</height>
+            <texture>pvr/rec.png</texture>
+			<aspectratio>keep</aspectratio>
+            <visible>ListItem.IsRecording</visible>
+          </control>
+		  <control type="image" description="תזמון הקלטה">
+            <posx>10</posx>
+            <posy>5</posy>
+            <width>40</width>
+            <height>40</height>
+            <texture>pvr/timer.png</texture>
+			<aspectratio>keep</aspectratio>
+            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+          </control>
+		  <control type="label" description="מספר הערוץ">
+            <posx>50</posx>
+            <width>60</width>
+            <height>40</height>
+            <include>LabelL1</include>
+            <textcolor>Yellow</textcolor>
+            <selectedcolor>Yellow</selectedcolor>
+            <info>ListItem.ChannelNumber</info>
+          </control>
+		  <control type="image" description="אייקון">
+			<posx>120</posx>
+			<top>5</top>
+			<width>40</width>
+			<height>40</height>
+			<texture>$INFO[ListItem.Icon]</texture>
+			<aspectratio>keep</aspectratio>
+		  </control>
+		  <control type="label" description="שעה">
+            <posx>170</posx>
+			<posy>5</posy>
+            <width>100</width>
+            <height>40</height>
+            <include>LabelL1</include>
+            <textcolor>Yellow</textcolor>
+            <selectedcolor>Yellow</selectedcolor>
+            <info>ListItem.StartTime</info>
+          </control>
+		  <control type="image" description="קו">
+			<posx>240</posx>
+			<posy>10</posy>
+			<top>4</top>
+			<width>40</width>
+			<height>280</height>
+			<texture>images/LineV.png</texture>
+			<aspectratio>keep</aspectratio>
+		  </control>
+          <control type="label" description="שם הערוץ">
+            <posx>270</posx>
+            <posy>5</posy>
+            <width>400</width>
+            <height>40</height>
+            <include>LabelL1</include>
+            <textcolor>White2</textcolor>
+            <selectedcolor>Yellow</selectedcolor>
+            <info>ListItem.Label</info>
+          </control>
+		  <control type="image" description="קו">
+			<posx>650</posx>
+			<posy>10</posy>
+			<top>4</top>
+			<width>40</width>
+			<height>280</height>
+			<texture>images/LineV.png</texture>
+			<aspectratio>keep</aspectratio>
+		  </control>
+		  <control type="label" description="שם התוכנית">
+            <posx>680</posx>
+            <posy>5</posy>
+            <width>1000</width>
+            <height>40</height>
+            <include>LabelL1</include>
+            <textcolor>Yellow</textcolor>
+            <selectedcolor>Yellow</selectedcolor>
+            <info>ListItem.Title</info>
+          </control>
+		  <control type="image" description="קו">
+			<posx>955</posx>
+			<posy>10</posy>
+			<top>4</top>
+			<width>40</width>
+			<height>280</height>
+			<texture>images/LineV.png</texture>
+			<aspectratio>keep</aspectratio>
+			<visible>false</visible>
+		  </control>
+		  <control type="textbox" description="פרטי תוכנית">
+            <posx>980</posx>
+            <posy>5</posy>
+            <width>400</width>
+            <height>40</height>
+            <include>LabelL1</include>
+            <textcolor>Yellow</textcolor>
+            <label>$INFO[ListItem.Plot]</label>
+			<visible>false</visible>
+          </control>
+        </focusedlayout>
+      </control>
+
+  </control>
+  </controls>
+</window>

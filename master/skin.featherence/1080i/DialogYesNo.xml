@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window description="(100)">
+  <defaultcontrol always="true">10</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <!--<onload condition="!VideoPlayer.Content(Movies) + !VideoPlayer.Content(TVshows) + !VideoPlayer.Content(Seasons) + !VideoPlayer.Content(Episodes)">Dialog.Close(yesnodialog)</onload>-->
+  <!--<onload condition="SubString(System.CurrentControl,$ADDON[plugin.video.genesis 30350]) + !Player.HasVideo + !Skin.HasSetting(refreshrunnings)">RunScript(script.featherence.refresh)</onload>
+  <onload condition="Skin.HasSetting(Admin) + !Player.HasVideo">Notification(Admin $ADDON[plugin.video.genesis 30350],DialogYesNo.xml-refresh.py,2000)</onload>-->
+  <onload condition="Window.IsVisible(Startup.xml)">Dialog.Close(yesnodialog)</onload>
+  <onload condition="!Window.IsVisible(Startup.xml) + System.HasAddon(script.featherence.service.fix) + SubString(Control.GetLabel(1),OpenELEC Bluetooth)">RunScript(script.featherence.service.fix,,?mode=10)</onload>
+  <onunload condition="Window.IsVisible(Startup.xml)">Control.SetFocus(8)</onunload>
+  <controls>
+    <include>MenuDesign_Bottom</include>
+  </controls>
+</window>

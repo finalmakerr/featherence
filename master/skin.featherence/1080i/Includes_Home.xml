@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <include name="SetProperty_Home" description="">
+    <control type="button">
+	  <onfocus description="Button.ID_BASE" condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.ID_,$INFO[Container(9000).ListItemNoWrap(0).Property(id)],home)</onfocus>
+	  <!--<onfocus description="Button.ID_BASE-CustomHome" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.ID_,$INFO[Container(50).ListItemNoWrap(0).Property(id)],home)</onfocus>-->
+	  
+	  <onfocus description="Button.ID-Home" condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.ID,$INFO[Container(9000).ListItem(0).Label2],home)</onfocus>
+	  <onfocus description="Button.Name-Home" condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.Name,$INFO[System.CurrentControl],home)</onfocus>
+	  
+	  <onfocus description="Button.ID_BASE-CustomHome2" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(TEMP2,$INFO[Container(51).ListItemNoWrap(0).Property(id)],home)</onfocus>
+	  <onfocus description="Button.ID-CustomHome2" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(TEMP,$INFO[Container(51).ListItem(0).Label2],home)</onfocus>
+	  
+	  <visible>false</visible>
+	</control>
+  </include>
+  
+  <include name="ReloadSkin_Check">
+    <onload condition="Skin.HasSetting(Admin3) + Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Window.IsVisible(Home.xml) + Control.IsVisible(9000) + [!IntegerGreaterThan(Container(9000).NumItems,4) | StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,) | IsEmpty(Control.GetLabel(700105))]">Notification(TESTING,,2000)</onload>
+	<onload condition="Window.IsVisible(Home.xml) + Control.IsVisible(9000) + [!IntegerGreaterThan(Container(9000).NumItems,4) | StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,) | IsEmpty(Control.GetLabel(700105))]">RunScript(script.featherence.service,,?mode=213&amp;value=1)</onload>
+	<onload condition="Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(9000) + [StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,) | IsEmpty(Control.GetLabel(700105))]">RunScript(script.featherence.service,,?mode=213&amp;value=1)</onload>
+	<onload condition="Window.IsVisible(CustomHomeCustomizer2.xml) + Control.IsVisible(51) + [StringCompare(Container(51).NumItems,0) | StringCompare(Container(51).ListItem(0).Label,)]">RunScript(script.featherence.service,,?mode=213&amp;value=3)</onload>
+	<onload condition="Window.IsVisible(MyVideoNav.xml) + IsEmpty(Control.GetLabel(111)) + !Control.IsVisible(7021) + IsEmpty(Control.GetLabel(700105))">RunScript(script.featherence.service,,?mode=213&amp;value=4)</onload>
+  </include>
+  
+  <include name="Design_TopButtons">
+	<control type="grouplist" id="9009" description="כפתורים עליונים">
+	  <animation condition="Window.IsVisible(Home.xml) + System.IdleTime(3) + [Control.HasFocus(311) | Control.HasFocus(312)]" effect="fade" start="100" end="0" delay="0" time="700" reversible="false">Conditional</animation>
+	  <visible>[Window.IsVisible(Home.xml) + !Skin.HasSetting(widget) + [Control.IsVisible(311) | Control.IsVisible(312)]] | !Window.IsVisible(Home.xml)</visible>
+	  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml) | !Window.IsVisible(CustomHomeCustomizer.xml)</visible>
+	  <visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()</visible>
+	  <visible>!Window.IsVisible(Custom1173.xml)</visible>
+	  <height>40</height>
+	  <posx>20</posx>
+	  <posy>27</posy>
+	  <width>1880</width>
+	  <orientation>horizontal</orientation>
+	  <onup condition="Player.HasMedia">ActivateWindow(12901)</onup>
+	  <ondown condition="Control.IsVisible(7011)">7017</ondown>
+	  <ondown condition="Control.IsVisible(700)">700</ondown>
+	  <ondown condition="Control.IsVisible(9000)">9000</ondown>
+	  <ondown condition="Control.IsVisible(50)">50</ondown>
+	  <onright condition="">noop</onright>
+	  <onright condition="Control.IsVisible(312)">312</onright>
+	  <onleft condition="">noop</onleft>
+	  
+	  
+	  <include>Content_TopButtons</include>
+	</control>
+  </include>
+  
+  <include name="Widget_Home">
+    <control type="group" description="סמן חץ ימינה">
+		<visible>[Control.HasFocus(311) + Container(311).HasNext] | [Control.HasFocus(312) + Container(312).HasNext]</visible>
+		<posx>60r</posx>
+		<posy>275</posy>
+		<control type="image" description="לא נבחר">
+		  <width>40</width>
+		  <height>40</height>
+		  <texture border="0">images/ArrowNF.png</texture>
+		  <visible>[Control.HasFocus(311) + !Container(311).Position(4)] | [Control.HasFocus(312) + !Container(312).Position(4)]</visible>
+		</control>
+		<control type="image" description="נבחר">
+		  <width>40</width>
+		  <height>40</height>
+		  <texture border="0">images/ArrowFO.png</texture>
+		  <visible>[Control.HasFocus(311) + Container(311).Position(4)] | [Control.HasFocus(312) + Container(312).Position(4)]</visible>
+		</control>
+	</control>
+	
+	<control type="group" description="סמן חץ שמאלה">
+		<visible>[Control.HasFocus(311) + Container(311).HasPrevious] | [Control.HasFocus(312) + Container(312).HasPrevious]</visible>
+		<posx>20l</posx>
+		<posy>275</posy>
+		<control type="image" description="לא נבחר">
+		  <width>40</width>
+		  <height>40</height>
+		  <texture border="0">images/Arrow2NF.png</texture>
+		  <visible>[Control.HasFocus(311) + !Container(311).Position(0)] | [Control.HasFocus(312) + !Container(312).Position(0)]</visible>
+		</control>
+		<control type="image" description="נבחר">
+		  <width>40</width>
+		  <height>40</height>
+		  <texture border="0">images/Arrow2FO.png</texture>
+		  <visible>[Control.HasFocus(311) + Container(311).Position(0)] | [Control.HasFocus(312) + Container(312).Position(0)]</visible>
+		</control>
+	</control>
+    <control type="group" id="700" description="Shelf items שורה עליונה בכחול">
+	  <visible>Container(9000).Row(0) + !Container(9000).Row(1) + !Container(9000).HasPrevious()</visible>
+      <include description="פנל מדף סרטים שנוספו לאחרונה" condition="!Skin.HasSetting(MoviesShelfWL)">Movies_RA</include>
+      <include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include> 
+      <include description="פנל מדף פרקים שנוספו לאחרונה" condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RAIR</include> 
+      <include condition="Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
+	  <!--<include condition="Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)">MenuDesign_Widget</include>-->
+	  <onup condition="Control.IsVisible(9009)">9009</onup>
+	  <onup condition="Control.IsVisible(7011)">7017</onup>
+	  <onup condition="Player.HasAudio + !Control.IsVisible(9009)">ActivateWindow(12901)</onup>
+	  <ondown>9000</ondown>
+    </control>
+  </include>
+  <include name="Menu_Home">
+    <control type="panel" id="9000">
+	  <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] + !Window.IsVisible(CustomHomeCustomizer2.xml)" effect="slide" start="0,0" end="0,-551" time="220">Conditonal</animation>
+	  <animation condition="Window.IsVisible(CustomHomeCustomizer2.xml) + [!Container(51).Row(0) + !Container(51).Row(1) | !Container(51).HasPrevious()]" effect="fade" start="100" end="0" time="220">Conditonal</animation>
+	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
+	  <posx>30</posx>
+	  <posy>581</posy>
+	  <width>1850</width>
+	  <height>1040</height>
+	  <onleft>9000</onleft>
+	  <onright>9000</onright>
+	  <onup condition="Control.IsVisible(7011)">7017</onup>
+	  <onup condition="Control.IsVisible(700)">700</onup>
+	  <onup condition="Control.IsVisible(9009)">9009</onup>
+	  <onup>520</onup>
+	  <ondown>noop</ondown>
+	  <scrolltime tween="sine" easing="out">220</scrolltime>
+	  <include condition="!Skin.String(MenuDesign)" description="ברירת מחדל">MenuDesign_Home</include>
+	  <include condition="Skin.String(MenuDesign,1)" description="רכבת">MenuDesign_Home1</include>
+	  
+	  <content>
+		<include condition="!Window.IsVisible(LoginScreen)">Content_Home</include>
+		<include condition="Window.IsVisible(LoginScreen)">Content_LoginScreen</include>
+		<include condition="true">Content_Home2</include>
+		<!--<include>skinshortcuts-mainmenu</include>-->
+	  </content>
+	  <!--Container(id).Position-->
+	</control>
+  </include>
+  <include name="MenuDesign_Home" description="ברירת מחדל">
+    <itemlayout height="230" width="368">
+	  <control type="group">
+		<!--<animation condition="Skin.String(MenuDesign,1)" effect="zoom" center="312,180" end="50,100" time="0" reversible="false">Conditional</animation>-->
+		<animation condition="Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]]" effect="slide" start="0,0" end="0,1080" delay="3000" time="700" reversible="true">Conditional</animation>
+		<!--<animation condition="Window.IsVisible(Home.xml) + [[Control.HasFocus(311) | [Control.IsVisible(311) + ControlGroup(9009).HasFocus]] + StringCompare(ListItem.Label2,70)] | [[Control.HasFocus(312) | [Control.IsVisible(312) + ControlGroup(9009).HasFocus]] + StringCompare(ListItem.Label2,71)]" effect="slide" delay="3000" start="0,0" end="0,-1080" time="700" reversible="true">Conditional</animation>-->
+		<animation condition="Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | Control.HasFocus(311) | Control.HasFocus(312) | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
+        <control type="image" description="צבע">
+		  <height>180</height>
+		  <posx>30</posx>
+          <posy>30</posy>
+		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+		  <width>312</width>
+        </control>
+		<control type="image" description="אלמנט כפתור לא נבחר">
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
+          <texture>buttons/effects/black2.png</texture>
+		  <visible>Skin.String(ElementUButton)</visible>
+        </control>
+		<control type="image" description="צללית">
+		  <animation condition="true" effect="fade" end="40" time="0">Conditional</animation>
+		  <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
+          <texture>buttons/effects/menuiconshadow.png</texture>
+		  <visible>Skin.HasSetting(ShadowButton)</visible>
+        </control>
+		<control type="image" description="שקופית">
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
+          <texture>buttons/effects/gardient.png</texture>
+		  <visible>!Skin.HasSetting(OverlayButton)</visible>
+        </control>
+		<control type="image" description="שפוע Bevel">
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
+          <texture>buttons/effects/bevel.png</texture>
+		  <visible>!Skin.HasSetting(BevelButton)</visible>
+        </control>
+		<control type="image" description="מסגרת (Stroke)">
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
+          <texture>buttons/effects/stroke.png</texture>
+		  <visible>Skin.HasSetting(StrokeButton)</visible>
+        </control>
+        <control type="image" description="סמל">
+		  <include>Fade_IconOverlayButton</include>
+          <aspectratio>keep</aspectratio>
+		  <height>180</height>
+		  <posx>30</posx>
+          <posy>30</posy>
+          <texture border="0" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+		  <visible>!IsEmpty(ListItem.Thumb)</visible>
+		  <width>312</width>
+        </control>
+		<control type="image" description="סמל2">
+          <include>Fade_IconOverlayButton</include>
+		  <aspectratio>keep</aspectratio>
+          <height>180</height>
+		  <posx>30</posx>
+          <posy>30</posy>
+		  <texture diffuse="buttons/diffusehome.png">$INFO[ListItem.ActualIcon]</texture>
+		  <visible>!IsEmpty(Listitem.ActualIcon)</visible>
+		  <width>312</width>
+		  <visible>false</visible>
+        </control>
+		<control type="image" description="OFF">
+          <aspectratio>keep</aspectratio>
+		  <height>180</height>
+		  <posx>30</posx>
+          <posy>30</posy>
+		  <texture>misc/help/off.png</texture>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !IsEmpty(ListItem.Property(off))</visible>
+		  <width>312</width>
+        </control>
+		<control type="image" description="תפריט משני">
+		  <height>180</height>
+		  <posx>30</posx>
+          <posy>30</posy>
+		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
+		  <visible>!IsEmpty(ListItem.Property(sub))</visible>
+		  <width>312</width>
+        </control>
+        <control type="label" description="כותרת">
+          <include>LabelC1</include>
+		  <posx>0</posx>
+          <posy>220</posy>
+          <width>368</width>
+          <height>24</height>
+          <label>[B]$INFO[ListItem.Label][/B]</label>
+        </control>
+	  </control>
+    </itemlayout>
+    <focusedlayout height="250" width="388">
+	  <control type="group">
+	    <include>SetProperty_Home</include>
+		<!--<animation condition="Skin.String(MenuDesign,1)" effect="zoom" center="312,180" end="50,100" time="0" reversible="false">Conditional</animation>-->
+		<control type="image" description="צבע">
+          <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+        </control>
+		<control type="image" description="אלמנט כפתור נבחר">
+          <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+          <texture>buttons/effects/black2.png</texture>
+		  <visible>Skin.String(ElementFButton)</visible>
+        </control>
+		<control type="image" description="סמן בחירה 2">
+		  <colordiffuse>BFFFFFFF</colordiffuse>
+		  <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+		  <texture border="0" diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen2.png</texture>
+		  <visible>Skin.HasSetting(SelectionMarker2)</visible>
+        </control>
+		<control type="image" description="סמן בחירה 3">
+		  <!--<animation condition="true" effect="fade" end="10" time="0">Conditional</animation>-->
+		  <bordersize>1</bordersize>
+		  <posx>18</posx>
+          <posy>14</posy>
+		  <width>335</width>
+		  <height>211</height>
+		  <texture border="11">misc/frames/selector.png</texture>
+		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
+		</control>
+		<control type="image" description="צללית">
+		  <animation condition="true" effect="fade" end="40" time="0">Conditional</animation>
+		  <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+          <texture>buttons/menuiconshadow.png</texture>
+		  <visible>Skin.HasSetting(ShadowButton)</visible>
+		  <visible>false</visible>
+        </control>
+		<control type="image" description="שקופית">
+          <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+          <texture>buttons/effects/gardient.png</texture>
+		  <visible>!Skin.HasSetting(OverlayButton)</visible>
+        </control>
+		<control type="image" description="שפוע Bevel">
+          <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+          <texture>buttons/effects/bevel.png</texture>
+		  <visible>!Skin.HasSetting(BevelButton)</visible>
+        </control>
+		<control type="image" description="מסגרת (Stroke)">
+          <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+          <texture>buttons/effects/stroke.png</texture>
+		  <visible>Skin.HasSetting(StrokeButton)</visible>
+        </control>
+		<control type="image" description="סמל">
+          <aspectratio>keep</aspectratio>
+          <height>200</height>		  
+		  <posx>20</posx>
+          <posy>20</posy>
+		  <texture border="-8" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+		  <!--<visible>IsEmpty(Listitem.ActualIcon) + !IsEmpty(Listitem.thumb)</visible>-->
+		  <width>332</width>
+        </control>
+		<control type="image" description="סמל2">
+          <include>Fade_IconOverlayButton</include>
+		  <aspectratio>keep</aspectratio>
+          <height>200</height>		  
+		  <posx>20</posx>
+          <posy>20</posy>
+		  <texture diffuse="buttons/diffusehome.png">$INFO[ListItem.ActualIcon]</texture>
+		  <visible>!IsEmpty(Listitem.ActualIcon)</visible>
+		  <width>332</width>
+		  <visible>false</visible>
+        </control>
+		<control type="image" description="OFF">
+          <aspectratio>keep</aspectratio>
+		  <height>200</height>
+		  <posx>20</posx>
+          <posy>20</posy>
+		  <texture>misc/help/off.png</texture>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !IsEmpty(ListItem.Property(off))</visible>
+		  <width>332</width>
+        </control>
+		<control type="image" description="תפריט משני">
+		  <height>200</height>
+		  <posx>20</posx>
+          <posy>20</posy>
+		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
+		  <visible>!IsEmpty(ListItem.Property(sub))</visible>
+		  <width>332</width>
+        </control>
+        <control type="label" description="כותרת נבחר">
+          <animation effect="fade" start="80" end="100" time="220" delay="0">Focus</animation>
+          <textcolor>Yellow</textcolor>
+		  <include>LabelC1</include>
+		  <posx>0</posx>
+          <posy>220</posy>
+          <!--<width>368</width>-->
+		  <width>368</width>
+          <height>24</height>
+          <label>[B]$INFO[ListItem.Label][/B]</label>
+        </control>
+	  </control>
+    </focusedlayout>
+  </include>
+  <include name="MenuDesign_Home1" description="ברירת מחדל">
+    <itemlayout height="230" width="250">
+	  <control type="group">
+		<!--<animation condition="Skin.String(MenuDesign,1)" effect="zoom" center="312,180" end="50,100" time="0" reversible="false">Conditional</animation>-->
+		<animation condition="Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | Control.HasFocus(311) | Control.HasFocus(312) | System.IdleTime(7)" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
+        <control type="image" description="צבע">
+		  <height>180</height>
+		  <posx>30</posx>
+          <posy>30</posy>
+		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+		  <width>312</width>
+        </control>
+		<control type="image" description="אלמנט כפתור לא נבחר">
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
+          <texture>buttons/effects/black2.png</texture>
+		  <visible>Skin.String(ElementUButton)</visible>
+        </control>
+		<control type="image" description="צללית">
+		  <animation condition="true" effect="fade" end="40" time="0">Conditional</animation>
+		  <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
+          <texture>buttons/effects/menuiconshadow.png</texture>
+		  <visible>Skin.HasSetting(ShadowButton)</visible>
+        </control>
+		<control type="image" description="שקופית">
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
+          <texture>buttons/effects/gardient.png</texture>
+		  <visible>!Skin.HasSetting(OverlayButton)</visible>
+        </control>
+		<control type="image" description="שפוע Bevel">
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
+          <texture>buttons/effects/bevel.png</texture>
+		  <visible>!Skin.HasSetting(BevelButton)</visible>
+        </control>
+		<control type="image" description="מסגרת (Stroke)">
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
+          <texture>buttons/effects/stroke.png</texture>
+		  <visible>Skin.HasSetting(StrokeButton)</visible>
+        </control>
+        <control type="image" description="סמל">
+		  <include>Fade_IconOverlayButton</include>
+          <aspectratio>keep</aspectratio>
+		  <height>180</height>
+		  <posx>30</posx>
+          <posy>30</posy>
+          <texture border="0" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+		  <visible>!IsEmpty(ListItem.Thumb)</visible>
+		  <width>312</width>
+        </control>
+		<control type="image" description="סמל2">
+          <include>Fade_IconOverlayButton</include>
+		  <aspectratio>keep</aspectratio>
+          <height>180</height>
+		  <posx>30</posx>
+          <posy>30</posy>
+		  <texture diffuse="buttons/diffusehome.png">$INFO[ListItem.ActualIcon]</texture>
+		  <visible>!IsEmpty(Listitem.ActualIcon)</visible>
+		  <width>312</width>
+		  <visible>false</visible>
+        </control>
+		<control type="image" description="OFF">
+          <aspectratio>keep</aspectratio>
+		  <height>180</height>
+		  <posx>30</posx>
+          <posy>30</posy>
+		  <texture>misc/help/off.png</texture>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !IsEmpty(ListItem.Property(off))</visible>
+		  <width>312</width>
+        </control>
+		<control type="image" description="תפריט משני">
+		  <height>180</height>
+		  <posx>30</posx>
+          <posy>30</posy>
+		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
+		  <visible>!IsEmpty(ListItem.Property(sub))</visible>
+		  <width>312</width>
+        </control>
+        <control type="label" description="כותרת">
+          <include>LabelC1</include>
+		  <posx>0</posx>
+          <posy>220</posy>
+          <width>368</width>
+          <height>24</height>
+          <label>[B]$INFO[ListItem.Label][/B]</label>
+        </control>
+	  </control>
+    </itemlayout>
+    <focusedlayout height="250" width="250">
+	  <control type="group">
+	    <include>SetProperty_Home</include>
+		<!--<animation condition="Skin.String(MenuDesign,1)" effect="zoom" center="312,180" end="50,100" time="0" reversible="false">Conditional</animation>-->
+		<control type="image" description="צבע">
+          <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+        </control>
+		<control type="image" description="אלמנט כפתור נבחר">
+          <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+          <texture>buttons/effects/black2.png</texture>
+		  <visible>Skin.String(ElementFButton)</visible>
+        </control>
+		<control type="image" description="סמן בחירה 2">
+		  <colordiffuse>BFFFFFFF</colordiffuse>
+		  <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+		  <texture diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen2.png</texture>
+		  <visible>Skin.HasSetting(SelectionMarker2)</visible>
+        </control>
+		<control type="image" description="סמן בחירה 3">
+		  <!--<animation condition="true" effect="fade" end="10" time="0">Conditional</animation>-->
+		  <bordersize>1</bordersize>
+		  <posx>18</posx>
+          <posy>14</posy>
+		  <width>335</width>
+		  <height>211</height>
+		  <texture border="11">misc/frames/selector.png</texture>
+		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
+		</control>
+		<control type="image" description="צללית">
+		  <animation condition="true" effect="fade" end="40" time="0">Conditional</animation>
+		  <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+          <texture>buttons/menuiconshadow.png</texture>
+		  <visible>Skin.HasSetting(ShadowButton)</visible>
+		  <visible>false</visible>
+        </control>
+		<control type="image" description="שקופית">
+          <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+          <texture>buttons/effects/gardient.png</texture>
+		  <visible>!Skin.HasSetting(OverlayButton)</visible>
+        </control>
+		<control type="image" description="שפוע Bevel">
+          <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+          <texture>buttons/effects/bevel.png</texture>
+		  <visible>!Skin.HasSetting(BevelButton)</visible>
+        </control>
+		<control type="image" description="מסגרת (Stroke)">
+          <posx>20</posx>
+          <posy>20</posy>
+          <width>332</width>
+          <height>200</height>
+          <texture>buttons/effects/stroke.png</texture>
+		  <visible>Skin.HasSetting(StrokeButton)</visible>
+        </control>
+		<control type="image" description="סמל">
+          <aspectratio>keep</aspectratio>
+          <height>200</height>		  
+		  <posx>20</posx>
+          <posy>20</posy>
+		  <texture border="-8" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+		  <!--<visible>IsEmpty(Listitem.ActualIcon) + !IsEmpty(Listitem.thumb)</visible>-->
+		  <width>332</width>
+        </control>
+		<control type="image" description="סמל2">
+          <include>Fade_IconOverlayButton</include>
+		  <aspectratio>keep</aspectratio>
+          <height>200</height>		  
+		  <posx>20</posx>
+          <posy>20</posy>
+		  <texture diffuse="buttons/diffusehome.png">$INFO[ListItem.ActualIcon]</texture>
+		  <visible>!IsEmpty(Listitem.ActualIcon)</visible>
+		  <width>332</width>
+		  <visible>false</visible>
+        </control>
+		<control type="image" description="OFF">
+          <aspectratio>keep</aspectratio>
+		  <height>200</height>
+		  <posx>20</posx>
+          <posy>20</posy>
+		  <texture>misc/help/off.png</texture>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !IsEmpty(ListItem.Property(off))</visible>
+		  <width>332</width>
+        </control>
+		<control type="image" description="תפריט משני">
+		  <height>200</height>
+		  <posx>20</posx>
+          <posy>20</posy>
+		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
+		  <visible>!IsEmpty(ListItem.Property(sub))</visible>
+		  <width>332</width>
+        </control>
+        <control type="label" description="כותרת נבחר">
+          <animation effect="fade" start="80" end="100" time="220" delay="0">Focus</animation>
+          <textcolor>Yellow</textcolor>
+		  <include>LabelC1</include>
+		  <posx>0</posx>
+          <posy>220</posy>
+          <!--<width>368</width>-->
+		  <width>368</width>
+          <height>24</height>
+          <label>[B]$INFO[ListItem.Label][/B]</label>
+        </control>
+	  </control>
+    </focusedlayout>
+  </include>
+</includes>

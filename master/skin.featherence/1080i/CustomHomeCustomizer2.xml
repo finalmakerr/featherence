@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1127">
+  
+  <defaultcontrol always="true">51</defaultcontrol>
+  <!--<include>ReloadSkin_Check</include>-->
+  <controls>
+    <include>Backgrounds1</include>
+    <control type="image" description="Line bottom">
+        <posy>490</posy>
+        <width>1920</width>
+        <height>1</height>
+        <texture>images/Line1.png</texture>
+    </control>
+	<control type="group">
+	    <animation condition="Window.IsVisible(CustomHomeCustomizer2.xml) + [!Container(51).Row(0) + !Container(51).Row(1) | Container(51).HasPrevious()]" effect="slide" start="0,0" end="0,-551" time="220">Conditonal</animation>
+        <control type="panel" id="51">
+		  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
+		  <posx>40</posx>
+		  <posy>581</posy>
+		  <width>1840</width>
+		  <height>1040</height>
+          <onleft>51</onleft>
+          <onright>51</onright>
+		  <onup>noop</onup>
+          <ondown>noop</ondown>
+		  
+		  <include condition="!Skin.String(MenuDesign)" description="ברירת מחדל">MenuDesign_Home</include>
+		  <include condition="Skin.String(MenuDesign,1)" description="רכבת">MenuDesign_Home1</include>
+          
+		  <!--<content><include>skinshortcuts-mainmenu</include></content>-->
+		  <content>
+			<include>Content_Home</include>
+		  </content>
+		  <!--Container(id).Position-->
+	    </control>
+    </control>
+
+</controls>
+
+</window>

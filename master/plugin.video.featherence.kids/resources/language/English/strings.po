@@ -1,0 +1,8132 @@
+msgid ""
+msgstr ""
+
+msgctxt "#1
+msgid "Varied"
+msgstr "מכל מיני"
+
+msgctxt "#2
+msgid "Learn Language"
+msgstr "לימוד שפה"
+
+msgctxt "#3
+msgid ""
+msgstr ""
+
+msgctxt "#4
+msgid ""
+msgstr "מכין רשימת השמעה"
+
+msgctxt "#5
+msgid ""
+msgstr "ניגון מהיר"
+
+msgctxt "#6
+msgid ""
+msgstr "עוד תוצאות"
+
+msgctxt "#7
+msgid ""
+msgstr "רשימת השמעה"
+
+msgctxt "#8
+msgid "View Playlist"
+msgstr "הצג פרטי רשימת השמעה"
+
+msgctxt "#9
+msgid ""
+msgstr "מצב טלוויזיה"
+
+msgstr "#10
+msgid ""
+msgstr ""
+
+msgctxt "#11
+msgid ""
+msgstr ""
+
+msgctxt "#12
+msgid ""
+msgstr ""
+
+msgctxt "#13
+msgid ""
+msgstr ""
+
+msgctxt "#14
+msgid ""
+msgstr "ערוץ זום"
+
+msgctxt "#15
+msgid ""
+msgstr "ערוץ הילדים"
+
+msgctxt "#16
+msgid ""
+msgstr "הכי ישראלי!"
+
+msgctxt "#17
+msgid ""
+msgstr ""
+
+msgctxt "#18
+msgid ""
+msgstr "קלסיקלטת"
+
+msgctxt "#19
+msgid ""
+msgstr "סבא טוביה"
+
+msgctxt "#20
+msgid ""
+msgstr "בייבי איינשטיין"
+
+msgctxt "#21
+msgid ""
+msgstr "ייס VOD"
+
+msgctxt "#22
+msgid ""
+msgstr "וואלה VOD!"
+
+msgctxt "#27
+msgid ""
+msgstr "וידאו לילדים"
+
+msgctxt "#28
+msgid ""
+msgstr "בייבי אוריינטל"
+
+msgctxt "#29
+msgid ""
+msgstr ""
+
+msgctxt "#30
+msgid ""
+msgstr "סדרות סופר קרטונס"
+
+msgctxt "#31
+msgid ""
+msgstr "ערוץ בייבי"
+
+msgctxt "#32
+msgid ""
+msgstr ""
+
+msgctxt "#33
+msgid ""
+msgstr "ערוץ לולי"
+
+msgctxt "#34
+msgid ""
+msgstr ""
+
+msgctxt "#36
+msgid ""
+msgstr "הוט ילדים"
+
+msgctxt "#37
+msgid ""
+msgstr "פסטיגל"
+
+msgctxt "#38
+msgid ""
+msgstr "דיסני"
+
+msgctxt "#39
+msgid ""
+msgstr "חינוכית"
+
+msgctxt "#50
+msgid "Play varied %s kids contents."
+msgstr "נגן תכנים רבים לילדים בשפה ה%s."
+
+msgctxt "#51
+msgid ""
+msgstr ""
+
+msgctxt "#52
+msgid ""
+msgstr ""
+
+msgctxt "#53
+msgid ""
+msgstr ""
+
+msgctxt "#54
+msgid ""
+msgstr ""
+
+msgctxt "#55
+msgid ""
+msgstr ""
+
+msgctxt "#56
+msgid ""
+msgstr ""
+
+msgctxt "#57
+msgid ""
+msgstr "שירים"
+
+msgctxt "#58
+msgid ""
+msgstr "סיפורים"
+
+msgctxt "#59
+msgid ""
+msgstr ""
+
+msgctxt "#60
+msgid ""
+msgstr "יו-גאבה-גאבה"
+
+msgctxt "#61
+msgid ""
+msgstr "אנגלית זה כיף"
+
+msgctxt "#62
+msgid ""
+msgstr "רחוב סומסום"
+
+msgctxt "#63
+msgid "CBeebies"
+msgstr "סי בייביס"
+
+msgctxt "#64
+msgid ""
+msgstr ""
+
+msgctxt "#65
+msgid ""
+msgstr "ערוץ החיות"
+
+msgctxt "#66
+msgid ""
+msgstr "דיסני ג'וניור"
+
+msgctxt "#67
+msgid ""
+msgstr ""
+
+msgctxt "#68
+msgid ""
+msgstr ""
+
+msgctxt "#69
+msgid ""
+msgstr ""
+
+msgctxt "#70
+msgid ""
+msgstr "סופר סטרייקה"
+
+msgctxt "#71
+msgid ""
+msgstr "דורימון"
+
+msgctxt "#72
+msgid ""
+msgstr ""
+
+msgctxt "#73
+msgid ""
+msgstr "אוצר מילים עם נוני"
+
+msgctxt "#74
+msgid ""
+msgstr ""
+
+msgctxt "#75
+msgid ""
+msgstr ""
+
+msgctxt "#76
+msgid ""
+msgstr ""
+
+msgctxt "#77
+msgid ""
+msgstr ""
+
+msgctxt "#78
+msgid ""
+msgstr ""
+
+msgctxt "#79
+msgid ""
+msgstr ""
+
+msgctxt "#80
+msgid ""
+msgstr ""
+
+msgctxt "#81
+msgid ""
+msgstr ""
+
+msgctxt "#82
+msgid ""
+msgstr ""
+
+msgctxt "#83
+msgid ""
+msgstr ""
+
+msgctxt "#84
+msgid ""
+msgstr ""
+
+msgctxt "#85
+msgid ""
+msgstr ""
+
+msgctxt "#86
+msgid ""
+msgstr ""
+
+msgctxt "#87
+msgid ""
+msgstr ""
+
+msgctxt "#88
+msgid ""
+msgstr ""
+
+msgctxt "#89
+msgid ""
+msgstr ""
+
+msgctxt "#90
+msgid ""
+msgstr ""
+
+msgctxt "#91
+msgid ""
+msgstr ""
+
+msgctxt "#92
+msgid ""
+msgstr ""
+
+msgctxt "#93
+msgid ""
+msgstr ""
+
+msgctxt "#94
+msgid ""
+msgstr ""
+
+msgctxt "#95
+msgid ""
+msgstr ""
+
+msgctxt "#96
+msgid ""
+msgstr ""
+
+msgctxt "#97
+msgid ""
+msgstr ""
+
+msgctxt "#98
+msgid ""
+msgstr ""
+
+msgctxt "#99
+msgid ""
+msgstr ""
+
+msgctxt "#100
+msgid ""
+msgstr ""
+
+msgctxt "#101
+msgid "Songs and stories for children"
+msgstr "שירים וסיפורים לילדים"
+
+msgctxt "#102
+msgid "Childrens Live Shows"
+msgstr "הצגות לילדים"
+
+msgctxt "#103
+msgid ""
+msgstr ""
+
+msgctxt "#104
+msgid "Kids TVshows"
+msgstr "סדרות לילדים"
+
+msgctxt "#105
+msgid "Kids Movies"
+msgstr "סרטים לילדים"
+
+msgctxt "#106
+msgid "For Toddlers"
+msgstr "לפעוטות"
+
+msgctxt "#107
+msgid "For Tiny"
+msgstr "לקטנטנים"
+
+msgctxt "#108
+msgid "For Kids and Young"
+msgstr "לילדים ונוער"
+
+msgctxt "#109
+msgid "Foreign Languages"
+msgstr "שפות זרות"
+
+msgctxt "#111
+msgid "Varied - Test"
+msgstr "מכל מיני - ניסוי"
+
+msgctxt "#112
+msgid ""
+msgstr ""
+
+msgctxt "#113
+msgid ""
+msgstr "[COLOR=Yellow]הפנתר הוורוד (באנגלית: The Pink Panther), הוא שמה של סדרת סרטי קומדיה שהראשון שבה יצא בשנת 1963. הדמות "הפנתר הוורוד" הופיעה בסרטון קצר שהוצג לפני תחילת כל סרט, בו המפקח קלוזו רודף אחרי הפנתר הוורוד ללא הצלחה; לאחר שזכתה לפופולריות רבה, הוחלט ליצור לה סדרת טלוויזיה משל עצמה, שעלתה לראשונה ב-1964.[/COLOR][CR][CR]הסרט "הפנתר הוורוד" (1963) הופק בבימויו של בלייק אדוארדס, אשר גם יצר את הדמות. הסרט עוסק במפקח צרפתי מרושל בשם ז'אק קלוזו. בתחילת הסרט נגנב יהלום ורוד יקר בשם "יהלום הפנתר הוורוד" (אם מסתכלים על היהלום מקרוב ניתן לראות דמות של פנתר ורוד). על המפקח קלוזו מוטלת המשימה למצוא את היהלום. על אף רשלנותו הוא מצליח לפתור את התעלומה, בעיקר דרך מקרה.[CR]השחקן-קומיקאי פיטר סלרס, אשר גילם את קלוזו, זכה להצלחה גדולה בעקבות משחקו בסרטים.[CR]השם הפנתר הוורוד" מהווה מעין אוקסימורון, מכיוון שפנתרים ידועים כחיה שחורה, אם כי זוהי טעות בהשפעת גרסת דיסני לספר הג'ונגל, הכוללת מספר אי דיוקים.[CR]הפנתר הורוד הוא בעל חיים אגדי."
+
+msgctxt "#114
+msgid ""
+msgstr "[COLOR=Yellow]בא לכם להידלק? בא לכם להתחדש? יש לנו בשבילכם ערוץ חדש עם ים של סדרות וסרטים.כאן, בערוץ היוטיוב שלנו, אתם יכולים לצפות במיטב הסרטונים, הפרומואים והמעברונים שלנו.[/COLOR][CR][CR]רוצים עוד? עשו לייק בעמוד הפייסבוק שלנו ב-https://www.facebook.com/ZOOM.ISRAEL, או העבירו לערוץ 83 בהוט.[CR]ZOOM -- מה שבא לכם!""
+
+msgctxt "#115
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?""
+
+msgctxt "#116
+msgid ""
+msgstr "[COLOR=Yellow]שירי הילדים המוכרים והאהובים ביותר מתוך אוצר המוזיקה הישראלית.[/COLOR][CR][CR]חווה אלברשטיין, יהונתן גפן, יוני רכטר, נעמי שמר, עוזי חיטמן, יהודה אטלס, יהורם גאון, אסנת פז, יפה ירקוני, חנה לסלאו, אפרת בן ישראל, רוחמה רז, ששי קשת, גלי עטרי, חני נחמיאס ועוד רבים אחרים.""
+
+msgctxt "#118
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?""
+
+msgctxt "#119
+msgid ""
+msgstr "[COLOR=Yellow]טוביה צפיר, הוא רב אמן בתחום התיאטרון, הטלביזיה, הקולנוע והבידור ונחשב לאחד הבדרנים הטובים ביותר בארץ. מאחוריו השתתפות בהצגות תיאטרון נחשבות בתפקידים מרכזיים, חלקם בלתי נשכחים, השתתפות במחזות זמר, בסרטי קולנוע וסרטי טלביזיה, בתוכניות בידור וסאטירה ובהצגות בידור.[/COLOR][CR][CR]הצגות:[CR]-סיפורי החיות של סבא טוביה[CR]-סיפורי התנ"ך עם סבא טוביה[CR]-מספורי טובי דובי[CR]-סבא טוביה המלך.""
+
+msgctxt "#120
+msgid ""
+msgstr "[COLOR=Yellow]Where do babies get that power to make grown adults act like and make total, (in the best sense of the word), fools of themselves?...Okay. I'll speak for just myself then. With who else can I dance, sing, make faces, play my lips like a kazoo, and speak in foreign tongues, but never feel an iota of embarrassment cuz she just laughs and laughs!Rosaleen Dickson said,[/COLOR][CR][CR]❤"Whatever they grow up to be, they are still our children, and the one most important of all the things we can give to them is unconditional love. Not a love that depends on anything at all except that they are our children." ❤~As our children are our greatest hope for the future and our most valuable resource, and as my favorite 5 year old little girl, Shiloh (aka Miss Kitty), is also my dearest love and inspiration, here are a few videos especially for them; including all 26 episodes of the Baby Einstein series and 77 (of the 78) episodes of Kipper the Dog.~""
+
+msgctxt "#121
+msgid ""
+msgstr "[COLOR=Yellow]ערוץ yesVOD הנו ערוץ הבית של הילדים.כאן תוכלו למצוא את הסדרות, התכניות והדמויות האהובות והמוכרות מערוצי הילדים.[/COLOR][CR][CR]משפחה שולטת, כוכב הצפון, שוברי גלים, החממה, יומני החופש הגדול, קופיקו, תיכון השיר שלנו, גיבורי האור, מיכל הקטנה, המכולת של דוד חיים, יעלי בעולם התיאטרון ועוד.הירשמו לערוץ וצפו בתכנים המלאים של עולם הילדים."
+
+msgctxt "#122
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]?""
+
+msgctxt "#123
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?""
+
+msgctxt "#124
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#125
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#126
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#127
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#128
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#130
+msgid ""
+msgstr "[COLOR=Yellow]סופר קרטונס! הסרטים המצויירים שכולם מכירים.[/COLOR][CR][CR]-דאפי דק[CR]-פורקי פיג[CR]-פופאי[CR]-טום וגרי[CR]-גופי[CR]-דונלד דאק[CR]-סילבסטר[CR]-באקס באני[CR]-הפנתר הורוד[CR]ועוד רבים וטובים..."
+
+msgctxt "#131
+msgid ""
+msgstr "[COLOR=Yellow]בייבי הוא ערוץ טלוויזיה ראשון מסוגו בעולם, המיועד כל כולו לתינוקות בשלבי התפתחות שונים בטווח הגילאים 6 חודשים עד 3 שנים. הערוץ מציע מגוון רחב של תכניות טלוויזיה המתאימות במיוחד לתינוקות, 24 שעות ביממה. ערוץ בייבי, החל לשדר בישראל בשנת 2003 וכיום נהנים מתכניו תינוקות והורים רבים ברחבי העולם, באמצעות פלטפורמות שידור מובילות.[/COLOR][CR][CR]"
+
+msgctxt "#133
+msgid ""
+msgstr "[COLOR=Yellow]ערוץ לולי הוא ערוץ טלוויזיה לגיל הרך השייך לקבוצת הופ!. הערוץ משודר בחברת הכבלים הוט בערוץ 76. ב-2010 נמכר הערוץ לחברת התקשורת הפולנית Orange ברשת IPTV, ומאז משודר בדיבוב מלא לפולנית‏.[/COLOR][CR][CR]לערוץ התאמה ניכרת לגיל הרך ומתאים את עצמו ישירות לקהל היעד שלו. מאחר שקהל הערוץ אינו קורא וגם בגיל הצעיר ביותר התוכניות בערוץ מלוות במוזיקה ומשודרות בעברית בלבד.[CR]"
+
+msgctxt "#134
+msgid ""
+msgstr = ""
+
+msgctxt "#136
+msgid ""
+msgstr "[COLOR=Yellow]HOT VOD Young הוא שירות בלעדי ללקוחות HOT.ספרייה ענקית של אלפי שעות תוכניות לילדים ולנוער, ובהן מגוון תכניות, סרטים, מופעים, משחקים וקלטות לילדים ולפעוטות, מחכה לך ב-HOT VOD Young.[/COLOR][CR][CR]שירות HOT VOD Young הופך את חוויית הצפייה שלך לאיכותית יותר, מתוחכמת יותר ומהנה הרבה יותר: אתה לא צריך לחכות, הכול כבר שם. איך משתמשים? אם אתה יודע ללחוץ 02 בשלט, אתה יודע להשתמש ב-HOT VOD Young. לחץ 02 בשלט ועל הכפתור האדום. כל מה שתרצה לראות כבר שם, בטלוויזיה שלך. לא תיכנס?[CR]בואו ליהנות ממגוון עצום של תכנים לילדים ולנוער הכולל תוכניות, סרטים, הופעות וקלטות לילדים ולפעוטות."
+
+msgctxt "#137
+msgid ""
+msgstr "[COLOR=Yellow]פסטיגל הוא מחזמר ישראלי לילדים, שמשולבת בו תחרות זמר. המופע מוצג בחג החנוכה ומופיעים בו זמרים, שחקנים ובדרנים. הפסטיגל החל את דרכו בשנת 1981 ומאז נערך מדי שנה, בחודשים נובמבר-ינואר, במקומות שונים ברחבי הארץ.[/COLOR][CR][CR][COLOR=White2]משתתפים:[/COLOR][CR]זמרים ומוזיקאים רבים הופיעו במהלך הקריירה שלהם בפסטיגל, ביניהם אדם, ריטה, ירדנה ארזי, יגאל בשן, גלי עטרי, גידי גוב, אלון אולארצ'יק, שירי מימון, אתי אנקרי, רבקה זוהר, עפרה חזה, בועז שרעבי, שרית חדד, מירי מסיקה, אילנה אביטל, אייל גולן, מאיה בוסקילה, קטלין רייטר, לי בירן, לינה מח'ול ומארינה מקסימיליאן בלומין. כמו כן, בחלק מיוחד במופע, דאגו לאורך השנים להוקיר כבוד לאמנים ותיקים בתחום, דוגמת יפה ירקוני, ציפי שביט, חני נחמיאס, צביקה פיק, עוזי חיטמן, אריק איינשטיין, שלומי שבת, ירדנה ארזי והגשש החיוור.עם השנים, המופע כלל גם משתתפים המוכרים בעיקר כשחקנים ובדרנים, כגון ספי ריבלין, חנה לסלאו, יובל סמו, שלישיית מה קשור, יהודה לוי, יון תומרקין, אגם רודברג, אליאנה תדהר, דניאל מורשת וישראל קטורזה, דוגמנים כמו מייקל לואיס, מירי בוהדנה, גל גדות, אילנית לוי ואור גרוסמן. כמו כן, השתתפו בו מנחי ערוץ הילדים והערוץ הראשון: מיכל ינאי, יעל בר זוהר, טל מן, עודד מנשה, טל מוסרי, רוני דואני, דון לני גבאי, עדי הימלבלוי, דנה פרידר, עודד פז וקובי מחט.בשנת 1997 לוהקה הדוגמנית והשחקנית ענת אלימלך לצוות הפסטיגל של אותה שנה. אחרי שכבר השתתפה בקליפים ובתוכניות טלוויזיה לקידום המופע, מעט לפני ההופעה הראשונה, נרצחה בידי בן זוגה. בחלק האמנותי של המופע ביצעו לזכרה האמנים המשתתפים את השיר שהייתה אמורה לבצע, השיר "בלרינה" שכתב והלחין עבורה עוזי חיטמן.[CR][CR][COLOR=White2]היסטוריה:[/COLOR][CR]הפסטיגל החל בשנת 1981 כאירוע עירוני בחיפה, אך לאחר כמה שנים המופע החל להיות מוצג גם בתל אביב ובערים נוספות. הפקת המופע נעשית על ידי מיקי וירון פלד ("סולן הפקות") ומשנת 2006, בשיתוף עם "יוכלמן-אשר הפקות".בשנותיו הראשונות, התחרה הפסטיגל בפסטיבל שירי הילדים אשר החל את דרכו בשנות ה-70, זכה להצלחה רבה ורבים משיריו מוכרים עד עצם היום הזה. בשנת 2010 בוטל הפסטיבל, בין היתר לאור התחרות הקשה מול הפסטיגל. מאז, חברות הפקה רבות מעלות מחזות זמר אשר ניתן להגדירם כמתחרים בפסטיגל על לב הקהל.בדרך קבע, המופע מחולק לשני חלקים: בחלק הראשון, מוצגים השירים המתמודדים בתחרות השיר הטוב ביותר לאותה שנה, אשר משולבים לרוב בסיפור רקע שמקשר בין השירים. הצופים יכולים לבחור את שירם האהוב עליהם, על ידי השחלת פתקאות בתיבות הצבעה בהפסקה שבין החלק הראשון לשני. בחלק השני מבוצעים שירים של האומנים המשתתפים, הצדעה ליוצר מפורסם של שירי ילדים, מגיעים אמנים אורחים ומופיעים ילדים המכונים "ילדי הפסטיגל".לצורך קיום התחרות בין השירים, עד לשנת 2010, מוקמו תיבות הצבעה באולמות הפסטיגל וכל צופה התבקש לבחור בשיר שאהב ביותר, באמצעות שלשול של פתק לתיבה. ב-2011-2012 התאפשרה הצבעה באמצעות רשת הפייסבוק ובמופעים של שנת 2013 ניתנה לקהל אפשרות הצבעה במסרונים.בשנותיו הראשונות של המופע, האמנים שרו בהופעה חיה את השירים יחד עם תזמורת חיה. החל מאמצע שנות ה-90, עקב ריבוי ההופעות, השירים מוקלטים מראש ומבוצעים תוך שימוש בפלייבק, ללא צורך בתזמורת.לכל פסטיגל יש נושא מסגרת. כל אמן מקבל דמות הקשורה בנושא ורוב השירים קשורים באותו הנושא. בנוסף, לכל פסטיגל יש שיר נושא שמבצעים אותו כל האמנים באותה שנה. בשנותיו הראשונות היה "יד ביד" שיר הסיום הקבוע של הפסטיגל והוא בוצע על ידי כל האמנים. החל משנת 2002, לכל פסטיגל יש שיר נושא שהוא עיבוד עברי לשיר לועזי, או חידוש עברי לשיר ישן:[CR]ב-2002, "שיר הקטשופ" - (פסטיגל מהסרטים) "The Ketchup Song"ב-2003, "סביב כל העולם" - (פסטיגל סובב עולם) (חידוש לשירו של מייק בורשטיין וצעירי תל אביב)ב-2004, "נומה נומה היי" - (לא יאומן כי פסטיגל) "Dragostea Din Tei"ב-2005, "גיבור על העולם" - (פסטיגל גיבורי על) "Holding Out For A Hero"ב-2006, "פסטיגל פנטזיה" - (פסטיגל גיבורי הממלכה האבודה) "The Final Countdown"ב-2007, "זמן זה כוח" - (פסטיגל על הזמן) "Major Tom"ב-2008, "תפוס ת'פסטיגל" - (תפוס ת'פסטיגל) "Can You Feel It"ב-2009, "תנו ברגליים" - (קונג פו פסטיגל) "I'm So Excited"ב-2010, "לילה מטורף בפסטיגל" - (לילה מטורף בפסטיגל) "The Rhythm Of The Night"ב-2011, "i פסטיגל" - (I פסטיגל) "Mr. Saxobeat"ב-2012, "SPY פסטיגל קדימה" - (SPY פסטיגל) "Livin' La Vida Loca"ב-2013, "X פסטיגל" - (X פסטיגל) - "Euphoria"ב-2014, "זמן משחקי הפסטיגל" - (משחקי הפסטיגל) - "When The Rain Begins To Fall"בשנת 2010 התקיים בערוץ הילדים מופע חגיגי לרגל 30 שנים לפסטיגל, בו התבקש הקהל לבחור את השיר הטוב ביותר בכל הזמנים. השיר "הדרך אל הכפר", אותה שרה במקור רבקה זוהר בפסטיגל 1985, זכה בשיר הטוב ביותר, השיר "ראש בראש" של דון לני גבאי וטל מוסרי מפסטיגל 2008 זכה במקום השני, והשיר "מטרה מספר אחת" מפסטיגל 2009 של עדי הימלבלוי ואגם רודברג זכה במקום בשלישי. שירים נוספים שהגיעו לעשיריה הראשונה היו "בוא אל החגיגה", "לעוף", "מיכאל", "ארץ הצבר", "חברים בכל מיני צבעים" ו"אל תשכח".‏[1]משנת 1984 מצולם הפסטיגל ומשודר בטלוויזיה. בעבר דאג הערוץ הראשון לשדר את הפסטיגל, אך החל משנת 1993 ערוץ 2 משדר אותם. בנוסף, המופעים יוצאים על קלטות וידאו ומשנת 2002 גם על DVD. שירי המופע יוצאים על גבי תקליטורים ובעבר גם על גבי קלטות. בעבר יצאו גם משחקי קופסה וקלפים של הפסטיגל, בשנת 2007 יצאו תחפושות לפורים של הפסטיגל בהתאם לנושא שהיה באותה שנה והחל משנת 2013 יצאו בקבוקי מים מינרלים של הפסטיגל על ידי "מי עדן"."
+
+msgctxt "#138
+msgid ""
+msgstr "[COLOR=Yellow]ערוץ זה הוקם למען כל אוהבי דיסני (ובמיוחד לאוהבי השירים של דיסני בעברית) שמנסים תמיד לפענח את אותן מילים לא ברורות בשירי דיסני, או סתם נהנים לשמוע את השירים שוב ושוב בכיף...[/COLOR][CR][CR]~ בערוץ מתוכננים לעלות כל שירי דיסני בעברית, עם כתוביות מדויקות ואיכותיות! ~@ אתם מוזמנים לעשות Subscribe ולהתעדכן בכל פעם שעולה שיר חדש לערוץ!! @# ניתן לבקש שירים שהייתם רוצים שיועלו בתגובות... ;-) #This channel was established for all everyone who loves Disney (and especially for everyone who loves Disney songs in Hebrew) who always try to interpret the unclear words in Disney songs, or who just enjoy listening to these songs over and over again for fun.On this channel, we are preparing to upload all of the Hebrew Disney songs, with accurate, high-quality subtitles. You are invited to Subscribe to be updated every time we upload a new song to the channel!!"
+
+msgctxt "#140
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+#MAIN CATEGORIES
+msgctxt "#141
+msgid ""
+msgstr ""
+
+msgctxt "#142
+msgid ""
+msgstr ""
+
+msgctxt "#143
+msgid ""
+msgstr ""
+
+msgctxt "#144
+msgid ""
+msgstr ""
+
+msgctxt "#145
+msgid ""
+msgstr ""
+
+msgctxt "#146
+msgid ""
+msgstr ""
+
+msgctxt "#147
+msgid ""
+msgstr ""
+
+msgctxt "#148
+msgid ""
+msgstr ""
+
+msgctxt "#149
+msgid ""
+msgstr ""
+
+msgctxt "#151
+msgid ""
+msgstr "[COLOR=Yellow]We are a talented team based in India, who love coming to work and immersing ourselves in all things CREATIVE.Our team comprises creative artists, educators and marketers who want to use our ChuChu TV characters as teachers and positive role models for children.[/COLOR][CR][CR]ChuChuTV is designed to engage children through a series of upbeat songs and colorful animations. All our songs will have lots of ChuChu characters and these characters will entertain kids all over the world.We hope these videos will bring your family as much joy as we had creating it.Enjoy & Have Fun!"
+
+msgctxt "#152
+msgid ""
+msgstr "[COLOR=Yellow]HooplaKidz is a children’s educational web-series hosted on YouTube created by Anuradha Javeri. It is made for pre-school kids. It stars three popular animated characters – Annie, Ben, and Mango. The franchise revolves around nursery rhymes, pre-k content, basic numbers and language learning, kids’ recipes, art and craft, and children’s entertainment. The series started as a collection of children’s stories, educational videos, and nursery rhymes on June 7, 2010.[/COLOR][CR][CR]Welcome to a world of fun and fantasy where kids would love to be & parents can set them free!HooplaKidz is one of the most popular YouTube channels for preschoolers featuring the cutest and coolest characters in town Annie, Ben and Mango singing and dancing to popular nursery rhymes and original songs!Watch and enjoy Aesop's Fables that teach children about good morals and right conduct, build your vocabulary with our easy Spell Well series and have fun learning and playing with our Interactive Videos.HooplaKidz is a one stop preschool destination.
+
+msgctxt "#153
+msgid ""
+msgstr "[COLOR=Yellow]Songs for children. Kids songs. Educational songs and videos for children, toddlers and babies.[/COLOR][CR][CR]"
+
+msgctxt "#154
+msgid ""
+msgstr "[COLOR=Yellow]Long versions of lullabies for babies to go to sleep, songs for children, lullaby music for babies, nursery rhymes, baby lullaby music, health improving relaxing music, lullabies for toddlers.[/COLOR][CR][CR]Lullaby music helps build the whole brain.• May help with memorization, which helps with reading. Songs and rhyming lines are commonly used to promote a healthy memory in people of all ages.[CR]• Music Can help develop a sense of rhythm - especially when it involves chanting, clapping or dancing.[CR]• Enjoying music together helps you and your baby to bond - of course, that's true of any activity that you both enjoy.[CR]• Music changes moods. If she's cranky, singing a silly song could put a smile on your baby's face.[CR]• Lullaby Is calming.[CR]This channel was created for my little daughter. Thank you for visiting.[CR]Disclaimer: Some videos contain fast changing images. Please DO NOT WATCH the videos if you or your baby are photosensitive.[CR]"
+
+msgctxt "#155
+msgid ""
+msgstr "[COLOR=Yellow]Children's songs that are easy-to-teach, easy-to-learn, and super fun. New uploads every Wednesday! Our videos are intended for teachers and parents of young learners with developing speaking skills, ideal for sharing with Pre-K children and younger, young ESL/EFL learners, and children with special needs.[/COLOR][CR][CR]The songs are appropriately paced for children with developing motor skills, and full of room for gestures and dancing to help kids interact with the lyrics.[CR]We hope you'll enjoy these songs with the young learners in your life. Let us know how it goes![CR]"
+
+msgctxt "#156
+msgid ""
+msgstr "[COLOR=Yellow]אליס היא סדרת נעורים ישראלית המשודרת החל מ-פברואר 2012 בערוץ הילדים למנויי HOT בבימויו של עודד רז. הסדרה עוסקת במחנה קיץ ששמו "גאליס", ובהרפתקה של חניכי המחנה אל "לוחות הגורל", העיר האבודה - "גאליסיה" ו"מעיין הנשמות". "גאליס" היא ספין אוף של הסדרה "החולמים". באוגוסט 2014, יצא הסרט "גאליס - המסע לאסטרה" שמבוסס על הסדרה.[/COLOR][CR][CR]הסדרה היא זוכת פרס סדרת השנה בטקס נבחרי הילדים לשנת 2012, לשנת 2013, ולשנת 2014. בטקס נבחרי הילדים 2014 נודע שאחרי העונה החמישית תבוא עונה חדשה.בעקבות הצלחתה נמכרה הסדרה לערוץ Planet Kids האיטלקי ודובבה לאיטלקית.‏[1]הסדרה נמכרה לדיבוב גם לאנגלית ולהינדית.‏[CR]הסדרה מועמדת כבר משנת 2012 לפרס "סדרת השנה" בטקס נבחרי הילדים בערוץ הילדים וכבר שלוש פעמים ברציפות ניצחה. בשנת 2011 זכו תובל שפיר ואליאנה תדהר בפרס "זוג השנה" באותו הטקס. אליאנה תדהר קיבלה את התואר "שחקנית השנה" שלוש פעמים ברציפות, כך גם תובל שפיר קיבל את התואר "שחקן השנה" שלוש פעמים ברצף בטקס נבחרי הילדים. בשנת 2013 זכה הספר "גאליס - הקיץ של רונה ודורי" בתואר "ספר השנה" ובפרס "ספר הזהב" לשנת 2013.בשנת 2014 הועמד הסרט "גאליס - המסע לאסטרה" בפרס האקדמיה הישראלית לקולנוע וטלוויזיה אך לא עלה לשלב הגמר. באותה שנה גם זכו תובל שפיר (שחקן השנה), אליאנה תדהר (שחקנית השנה) וגאליס (סדרת נוער השנה) ב"נבחרי פרוגי 2014".הסדרה מועמדת כבר שלוש פעמים בתואר "סדרת דרמה לילדים ולנוער הטובה ביותר" בטקס פרסי האקדמיה לטלוויזיה בשנים 2012-2014 אך לא זכתה."
+
+msgctxt "#157
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#158
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#159
+msgid ""
+msgstr "[COLOR=Yellow]LearnEnglish Kids is the British Council's website for children around the world who are learning English as a second or foreign language.[/COLOR][CR][CR]"
+
+msgctxt "#160
+msgid ""
+msgstr "[COLOR=Yellow]Hello, friends! Let's say the magic words, "Yo Gabba Gabba!" and get ready for lots of fun, music and dancing![/COLOR][CR][CR]All of our friends are here… Brobee, Foofa, Muno, Plex and Toodee and the one and only, DJ Lance Rock! Don't forget the legendary Biz Markie (Biz's Beat of the Day) and Mark Mothersbaugh (Devo/"Mark's Magic Pictures), as well as lots of surprise guests!"
+
+msgctxt "#161
+msgid ""
+msgstr "[COLOR=Yellow]Kids Online English Channel teaches Children English as a Second Language (ESL) and is a fun and effective way to Learn English online. It uses cartoons, songs, funny skits, and more. Ideal for ages 3 -10. Each English lesson introduces new vocabulary, grammar patterns, and conversations. Experienced EFL teachers created this kids learning channel for both teachers and students.[/COLOR][CR][CR]LESSONS/PLAYLISTS[CR]1 -Family Members & Introductions.[CR]2 -Common Animals & Objects[CR]3 -Classroom Objects[CR]4 -Classroom Actions & Commands[CR]5 -Colors[CR]6 -Numbers & Counting[CR]7 -Body Parts[CR]8 -Adjectives of Description[CR]9 -1st Person Daily Actions[CR]10 -3rd Person Daily Actions[CR]11 -Can & Can't with Outdoor Action Verbs[CR]12 -Present Continuous Tense[CR]13 -Fruits[CR]14 -Emotions & Feelings[CR]AA -Karaoke Sing-a-long songs"
+
+msgctxt "#162
+msgid ""
+msgstr "[COLOR=Yellow]Welcome to Sesame Street. If, by some chance, you were looking for Elmo, Cookie Monster, Big Bird, Grover, Oscar, Bert & Ernie, Telly, Zoe, Rosita, Baby Bear and Snuffleupagus, you are in luck because they are all here! Subscribe for new videos every week:[/COLOR][CR][CR]Music on Mondays![CR]Celebrities on Tuesdays![CR]Muppet Fun on Wednesdays![CR]Classic Sesame on Thursdays![CR]Furchester on Fridays![CR]For more fun games and videos for your preschooler in a safe, child-friendly environment, visit us at http://www.sesamestreet.org[CR]Sesame Street is a production of Sesame Workshop, a nonprofit educational organization. Sesame Street reaches millions of children every day in more than 150 countries. The Workshop's mission is to use the educational power of media to help children everywhere reach their highest potential. The Workshop's programs are tailored to the needs of specific regions and focus on topics that help young children and families develop critical skills for lifelong learning."
+
+msgctxt "#163
+msgid ""
+msgstr "[COLOR=Yellow]This CBeebies YouTube channel is aimed at adults watching with children and offers a safe environment where CBeebies content is readily accessible with no inappropriate links or adverts.[/COLOR][CR][CR]CBeebies is dedicated to delighting and surprising its pre-school audience and it remains the UK's most watched and most loved channel for the under-sixes. For even more fun games and videos for your pre-schooler in a safe child friendly environment, visit us at http://www.bbc.co.uk/cbeebies"
+
+msgctxt "#164
+msgid ""
+msgstr ""
+
+msgctxt "#165
+msgid ""
+msgstr "[COLOR=Yellow]Are you an animal lover? Then you've come to the right channel! With regular content uploaded, our videos range from the endangered, to the wild, to the cute, scary and even weird animals! You don't want to miss out, so subscribe to our channel today![/COLOR][CR][CR]"
+
+msgctxt "#166
+msgid ""
+msgstr "[COLOR=Yellow]ערוץ דיסני ג'וניור הינו ערוץ המיועד לגילאי טרום בית ספר ( 2-7 ) ובני משפחותיהם.[CR]הערוץ מציע לוח שידורים עשיר הכולל סרטים, סדרות חדשות וסדרות קלאסיות- המשלבות את ערכי הליבה של דיסני: סיפור מרגש והפקה מושקעת, תוך יצירת חיבור רגשי בין הצופים לבין התכנים.[/COLOR][CR][CR]הערוץ מגיש חוויית דיסני קסומה ומוסיקלית, עשירה בסיפורים ודמויות תוך שילוב אלמנטים חינוכיים והתפתחותיים הנחוצים לילד בשלב מוקדם זה של חייו.[CR]הערוץ משלב בין היכולת הקלסית של דיסני לספר סיפורים- לבין הדמויות האהובות ,המוסיקה הייחודית ולמידה באמצעות משחק- וזאת על מנת להעניק חווית צפייה מושלמת המשותפת להורים וילדיהם.[CR]בנוסף וכדי להשלים את החוויה, ניתן להמשיך את החוויה באתר דיסני ג'וניור www.disneyjunior.co.il , מבית Disney.com:[CR]אתר לקטנטנים עשיר במשחקים, פעילויות יצירה ואינטראקציה תוך שימת דגש על חוויה לימודית עם הדמויות הקלסיות והחדשות של דיסני ובשפה העברית."
+
+msgctxt "#170
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#171
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#172
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#173
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#174
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#175
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#176
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#177
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#178
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#179
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#180
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#181
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#182
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#183
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#184
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#185
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#186
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#187
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#188
+msgid ""
+msgstr "[COLOR=Yellow]Bienvenue sur la chaîne pour enfants : MondeDesPetits.[CR]Ici, les enfants trouveront chaque semaine de nouvelles vidéos pour chanter (avec une sélection des meilleurs comptines et chansons en français et en anglais), apprendre le français (avec des vidéos éducatives pour apprendre l'alphabet, les chiffres, les couleurs etc...) et rêver (avec une sélection des meilleurs contes et histoires de Grimm, Perrault ou Andersen à écouter et à regarder en famille).[/COLOR][CR][CR]MondeDesPetits propose aussi des vidéos pour apprendre à dessiner, réaliser des personnages en pâte Fimo, et confectionner un grand nombre d'Origami.[CR]Une chaîne étudiée pour tous les bébés, tous les enfants et tous les parents qui veulent passer un bon moment ! Et surtout n'oubliez pas de nous rejoindre sur le site http://www.mondedespetits.fr/"
+
+msgctxt "#189
+msgid ""
+msgstr "[COLOR=Yellow]עשרות סרטים מצוירים מהאתר וואלה.[/COLOR][CR][CR]-מסביב לעולם עם פליקס.[CR]-ארנב הצעצוע ומכונת הזמן.[CR]-המסע של פופאי.[CR]-בראץ: פיות האופנה.[CR]-סיפורי ירקות.[CR]-אבא עושה בושות.[CR]-הרפתקאותיו החדשות של פינוקיו.[CR]-האריה מארץ עוץ.[CR]-ביגפוט.[CR]-הנסיכה והעדשה.[CR]ועוד..."
+
+msgctxt "#190
+msgid ""
+msgstr "לחץ כאן בכדי לנגן את כל התוצאות בעמוד זה (כולל רשימות השמעה) עד 50 סרטונים ברצף![CR][CR][COLOR=Green]לידיעתך: בעת ניגון, ניתן לעבור לוידאו הבא ע"י הכפתור הרץ קדימה. יש לעמוד על הכפתור וללחוץ לחיצה אחת למעלה.[/COLOR]"
+
+msgctxt "#191
+msgid ""
+msgstr "לחץ כאן בכדי לאסוף תכנים נוספים לניגון.[CR][CR]"
+
+msgctxt "#192
+msgid ""
+msgstr "[COLOR=Yellow2]רשימת השמעה:[/COLOR][CR][CR]לחץ כאן בכדי לנגן רשימת השמעה עבור תוכן זה.[CR]פעולה זו תגרום לניגון מרובה - כאשר הוידאו הראשון יסתיים, הבא בתור יתנגן באופן אוטומטי.[CR][CR][COLOR=Green]לידיעתך: באמצעות הכפתור -תפריט- ניתן לעיין ברשימת ההשמעה.[/COLOR]"
+
+msgctxt "#193
+msgid ""
+msgstr "[COLOR=Yellow]רשימה קטנה ואיכותית של סדרות לילדים[/COLOR][CR][CR]קצרים עונות 1-3 ,החיים על פי איגי, זומזום .מה שלמה,חיי כלב,מפלצת בטעות,גור ואוח,ראש גדול ועוד..."
+
+msgctxt "#194
+msgid ""
+msgstr "[COLOR=Yellow]רשימת סדרות ענקית לילדים מהאתר סדרות-TV.[/COLOR][CR][CR][COLOR=Blue]השירותים ינתנו ללא תשלום בכל השעות אך יתכנו עומסים בשרתים. חשבון בתשלום מקנה צפייה באיכות גבוהה יותר (אם קיים) וללא תלות בעומס בשרתים.[CR]ראה הגדרות מעטפת - חשבונות[/COLOR][CR][CR]-אגדות המלך שלמה *מדובב*[CR]-אגדת-טרזן-מדובב[CR]-אוטובוס הקסמים[CR]-אונץ פונץ[CR]-אקס-מן[CR]-בילבי[CR]-דין דין השופט[CR]-הדבורה מאיה[CR]-הדרדסים[CR]ועוד רבים..."
+
+msgctxt "#195
+msgid ""
+msgstr "[COLOR=Yellow]צפה בעשרות סדרות לילדים, פרקים מלאים, עונות שלמות, ניגון רציף בלחיצת כפתור אחת![/COLOR][CR][CR]-הדרדסים[CR]-פסטיגל[CR]-יובל המבולבל[CR]-פרפר נחמד[CR]-פינוקיו[CR]-הכבשה שושנה[CR]-טלטאביז[CR]-בלי סודות[CR]-דיסני[CR]-ארתור[CR]-בבית של פיסטוק[CR]-רחוב סומסום[CR]-טאזמניה[CR]-המומינים[CR]-טום וגרי[CR]-הקטקטים[CR]ועוד רבים וטובים..."
+
+msgctxt "#196
+msgid ""
+msgstr "[COLOR=Yellow]סרטים מצוירים ישנים מדובבים לעברית.[/COLOR][CR][CR]לתשומת לבך: חלק מהלינקים אינם פועלים."
+
+msgctxt "#197
+msgid ""
+msgstr "[COLOR=Yellow]שירים בעברית לפעוטות.[/COLOR][CR][CR]-שירי חגים[CR]-שירי משחק[CR]-נעמי שמר[CR]-עוזי חיטמן[CR]-הכבשה שושנה[CR]-טיף וטף[CR]-מיכל הקטנה[CR]ועוד..."
+
+msgctxt "#198
+msgid ""
+msgstr "[COLOR=Yellow]סיפורים בעברית לפעוטות.[/COLOR][CR][CR]-גומות החן של זוהר[CR]-פיץ העכבר[CR]-סיפור ושיר של מיריק שניר[CR]-הנימנומים[CR]-סרטים מהספרים[CR]-סיפורי התנ"ך."
+
+msgctxt "#199
+msgid ""
+msgstr "[COLOR=Yellow]כמה עשרות סדרות בעברית/אנגלית.[/COLOR][CR][CR]-אוגי והמקקים.[CR]-פאוור ריינג'רס.[CR]-פופיסקי.[CR]-זורו.[CR]-ארבעת המופלאים.[CR]-צבי הנינג'ה.[CR]-ארתור.[CR]-קספר.[CR]-חוש חש הבלש.[CR]-היה היה.[CR]ועוד רבים וטובים...[CR]"
+
+msgctxt "#200
+msgid "Hebrew"
+msgstr "עברית"
+
+msgctxt "#201
+msgid "English"
+msgstr "אנגלית"
+
+msgctxt "#202
+msgid "Dutch"
+msgstr "הולנדית"
+
+msgctxt "#203
+msgid "Ukrainian"
+msgstr "אוקראינית"
+
+msgctxt "#204
+msgid "French"
+msgstr "צרפתית"
+
+msgctxt "#205
+msgid "Russian"
+msgstr "רוסית"
+
+msgctxt "#206
+msgid "Georgian"
+msgstr "גרוזינית"
+
+msgctxt "#207
+msgid "Chinese"
+msgstr "סינית"
+
+msgctxt "#208
+msgid ""
+msgstr ""
+
+msgctxt "#209
+msgid ""
+msgstr ""
+
+msgctxt "#240
+msgid ""
+msgstr "(או תרגום מובנה)"
+
+msgctxt "#300
+msgid ""
+msgstr "האם להפעיל מצב טלוויזיה?"
+
+msgctxt "#301
+msgid ""
+msgstr "בחר באפשרות זו בכדי לנגן תכנים באקראי וברצף!"
+
+msgctxt "#302
+msgid ""
+msgstr "אין תמיכה במצב טלוויזיה עבור תוכן זה."
+
+msgctxt "#303
+msgid ""
+msgstr "מכין מצב טלוויזיה..."
+
+msgctxt "#304
+msgid ""
+msgstr "כפתור ילדים עודכן בהצלחה!"
+
+msgctxt "#305
+msgid ""
+msgstr "מצב טלוויזיה יסתיים בהצלחה (%s -%s)"
+
+msgctxt "#306
+msgid ""
+msgstr "צפייה מהנה!"
+
+msgctxt "#307
+msgid ""
+msgstr ""
+
+msgctxt "#308
+msgid ""
+msgstr ""
+
+msgctxt "#309
+msgid ""
+msgstr ""
+
+msgctxt "#310
+msgid ""
+msgstr ""
+
+msgctxt "#311
+msgid ""
+msgstr ""
+
+msgctxt "#312
+msgid ""
+msgstr ""
+
+msgctxt "#313
+msgid ""
+msgstr ""
+
+msgctxt "#314
+msgid ""
+msgstr ""
+
+msgctxt "#315
+msgid ""
+msgstr ""
+
+msgctxt "#316
+msgid ""
+msgstr ""
+
+msgctxt "#317
+msgid ""
+msgstr ""
+
+msgctxt "#318
+msgid ""
+msgstr ""
+
+msgctxt "#319
+msgid ""
+msgstr ""
+
+msgctxt "#320
+msgid ""
+msgstr ""
+
+msgctxt "#321
+msgid ""
+msgstr ""
+
+msgctxt "#322
+msgid ""
+msgstr ""
+
+msgctxt "#323
+msgid ""
+msgstr ""
+
+msgctxt "#324
+msgid ""
+msgstr ""
+
+msgctxt "#325
+msgid ""
+msgstr ""
+
+msgctxt "#326
+msgid ""
+msgstr ""
+
+msgctxt "#327
+msgid ""
+msgstr ""
+
+msgctxt "#328
+msgid ""
+msgstr ""
+
+msgctxt "#329
+msgid ""
+msgstr ""
+
+#
+msgctxt "#10000
+msgid ""
+msgstr ""
+
+msgctxt "#10001
+msgid ""
+msgstr ""
+
+msgctxt "#10002
+msgid ""
+msgstr ""
+
+msgctxt "#10003
+msgid ""
+msgstr ""
+
+msgctxt "#10004
+msgid ""
+msgstr ""
+
+msgctxt "#10005
+msgid ""
+msgstr ""
+
+msgctxt "#10006
+msgid ""
+msgstr ""
+
+msgctxt "#10007
+msgid ""
+msgstr ""
+
+msgctxt "#10008
+msgid ""
+msgstr ""
+
+msgctxt "#10009
+msgid ""
+msgstr ""
+
+msgctxt "#10010
+msgid ""
+msgstr ""
+
+msgctxt "#10011
+msgid ""
+msgstr ""
+
+msgctxt "#10012
+msgid ""
+msgstr ""
+
+msgctxt "#10013
+msgid ""
+msgstr ""
+
+msgctxt "#10014
+msgid ""
+msgstr ""
+
+msgctxt "#10015
+msgid ""
+msgstr ""
+
+msgctxt "#10016
+msgid ""
+msgstr ""
+
+msgctxt "#10017
+msgid ""
+msgstr ""
+
+msgctxt "#10018
+msgid ""
+msgstr ""
+
+msgctxt "#10019
+msgid ""
+msgstr ""
+
+msgctxt "#10020
+msgid ""
+msgstr ""
+
+msgctxt "#10021
+msgid ""
+msgstr ""
+
+msgctxt "#10022
+msgid ""
+msgstr ""
+
+msgctxt "#10023
+msgid ""
+msgstr ""
+
+msgctxt "#10024
+msgid ""
+msgstr ""
+
+msgctxt "#10025
+msgid ""
+msgstr ""
+
+msgctxt "#10026
+msgid ""
+msgstr ""
+
+msgctxt "#10027
+msgid ""
+msgstr ""
+
+msgctxt "#10028
+msgid ""
+msgstr ""
+
+msgctxt "#10029
+msgid ""
+msgstr ""
+
+msgctxt "#10030
+msgid ""
+msgstr ""
+
+msgctxt "#10031
+msgid ""
+msgstr ""
+
+msgctxt "#10032
+msgid ""
+msgstr ""
+
+msgctxt "#10033
+msgid ""
+msgstr ""
+
+msgctxt "#10034
+msgid ""
+msgstr ""
+
+msgctxt "#10035
+msgid ""
+msgstr ""
+
+msgctxt "#10036
+msgid ""
+msgstr ""
+
+msgctxt "#10037
+msgid ""
+msgstr ""
+
+msgctxt "#10038
+msgid ""
+msgstr ""
+
+msgctxt "#10039
+msgid ""
+msgstr ""
+
+msgctxt "#10040
+msgid ""
+msgstr ""
+
+msgctxt "#10041
+msgid ""
+msgstr ""
+
+msgctxt "#10042
+msgid ""
+msgstr ""
+
+msgctxt "#10043
+msgid ""
+msgstr ""
+
+msgctxt "#10044
+msgid ""
+msgstr ""
+
+msgctxt "#10045
+msgid ""
+msgstr ""
+
+msgctxt "#10046
+msgid ""
+msgstr ""
+
+msgctxt "#10047
+msgid ""
+msgstr ""
+
+msgctxt "#10048
+msgid ""
+msgstr ""
+
+msgctxt "#10049
+msgid ""
+msgstr ""
+
+msgctxt "#10050
+msgid ""
+msgstr ""
+
+msgctxt "#10051
+msgid ""
+msgstr ""
+
+msgctxt "#10052
+msgid ""
+msgstr ""
+
+msgctxt "#10053
+msgid ""
+msgstr ""
+
+msgctxt "#10054
+msgid ""
+msgstr ""
+
+msgctxt "#10055
+msgid ""
+msgstr ""
+
+msgctxt "#10056
+msgid ""
+msgstr ""
+
+msgctxt "#10057
+msgid ""
+msgstr ""
+
+msgctxt "#10058
+msgid ""
+msgstr ""
+
+msgctxt "#10059
+msgid ""
+msgstr ""
+
+msgctxt "#10060
+msgid ""
+msgstr ""
+
+msgctxt "#10061
+msgid ""
+msgstr ""
+
+msgctxt "#10062
+msgid ""
+msgstr ""
+
+msgctxt "#10063
+msgid ""
+msgstr ""
+
+msgctxt "#10064
+msgid ""
+msgstr ""
+
+msgctxt "#10065
+msgid ""
+msgstr ""
+
+msgctxt "#10066
+msgid ""
+msgstr ""
+
+msgctxt "#10067
+msgid ""
+msgstr ""
+
+msgctxt "#10068
+msgid ""
+msgstr ""
+
+msgctxt "#10069
+msgid ""
+msgstr ""
+
+msgctxt "#10070
+msgid ""
+msgstr ""
+
+msgctxt "#10071
+msgid ""
+msgstr ""
+
+msgctxt "#10072
+msgid ""
+msgstr ""
+
+msgctxt "#10073
+msgid ""
+msgstr ""
+
+msgctxt "#10074
+msgid ""
+msgstr ""
+
+msgctxt "#10075
+msgid ""
+msgstr ""
+
+msgctxt "#10076
+msgid ""
+msgstr ""
+
+msgctxt "#10077
+msgid ""
+msgstr ""
+
+msgctxt "#10078
+msgid ""
+msgstr ""
+
+msgctxt "#10079
+msgid ""
+msgstr ""
+
+msgctxt "#10080
+msgid ""
+msgstr ""
+
+msgctxt "#10081
+msgid ""
+msgstr ""
+
+msgctxt "#10082
+msgid ""
+msgstr ""
+
+msgctxt "#10083
+msgid ""
+msgstr ""
+
+msgctxt "#10084
+msgid ""
+msgstr ""
+
+msgctxt "#10085
+msgid ""
+msgstr ""
+
+msgctxt "#10086
+msgid ""
+msgstr ""
+
+msgctxt "#10087
+msgid ""
+msgstr ""
+
+msgctxt "#10088
+msgid ""
+msgstr ""
+
+msgctxt "#10089
+msgid ""
+msgstr ""
+
+msgctxt "#10090
+msgid ""
+msgstr ""
+
+msgctxt "#10091
+msgid ""
+msgstr ""
+
+msgctxt "#10092
+msgid ""
+msgstr ""
+
+msgctxt "#10093
+msgid ""
+msgstr ""
+
+msgctxt "#10094
+msgid ""
+msgstr ""
+
+msgctxt "#10095
+msgid ""
+msgstr ""
+
+msgctxt "#10096
+msgid ""
+msgstr ""
+
+msgctxt "#10097
+msgid ""
+msgstr ""
+
+msgctxt "#10098
+msgid ""
+msgstr ""
+
+msgctxt "#10099
+msgid ""
+msgstr ""
+
+#
+msgctxt "#10100
+msgid ""
+msgstr ""
+
+msgctxt "#10101
+msgid ""
+msgstr ""
+
+msgctxt "#10102
+msgid ""
+msgstr ""
+
+msgctxt "#10103
+msgid ""
+msgstr ""
+
+msgctxt "#10104
+msgid ""
+msgstr ""
+
+msgctxt "#10105
+msgid ""
+msgstr ""
+
+msgctxt "#10106
+msgid ""
+msgstr ""
+
+msgctxt "#10107
+msgid ""
+msgstr ""
+
+msgctxt "#10108
+msgid ""
+msgstr ""
+
+msgctxt "#10109
+msgid ""
+msgstr ""
+
+msgctxt "#10110
+msgid ""
+msgstr ""
+
+msgctxt "#10111
+msgid ""
+msgstr ""
+
+msgctxt "#10112
+msgid ""
+msgstr ""
+
+msgctxt "#10113
+msgid ""
+msgstr ""
+
+msgctxt "#10114
+msgid ""
+msgstr ""
+
+msgctxt "#10115
+msgid ""
+msgstr ""
+
+msgctxt "#10116
+msgid ""
+msgstr ""
+
+msgctxt "#10117
+msgid ""
+msgstr ""
+
+msgctxt "#10118
+msgid ""
+msgstr ""
+
+msgctxt "#10119
+msgid ""
+msgstr ""
+
+msgctxt "#10120
+msgid ""
+msgstr ""
+
+msgctxt "#10121
+msgid ""
+msgstr ""
+
+msgctxt "#10122
+msgid ""
+msgstr ""
+
+msgctxt "#10123
+msgid ""
+msgstr ""
+
+msgctxt "#10124
+msgid ""
+msgstr ""
+
+msgctxt "#10125
+msgid ""
+msgstr ""
+
+msgctxt "#10126
+msgid ""
+msgstr ""
+
+msgctxt "#10127
+msgid ""
+msgstr ""
+
+msgctxt "#10128
+msgid ""
+msgstr ""
+
+msgctxt "#10129
+msgid ""
+msgstr ""
+
+msgctxt "#10130
+msgid ""
+msgstr ""
+
+msgctxt "#10131
+msgid ""
+msgstr ""
+
+msgctxt "#10132
+msgid ""
+msgstr ""
+
+msgctxt "#10133
+msgid ""
+msgstr ""
+
+msgctxt "#10134
+msgid ""
+msgstr ""
+
+msgctxt "#10135
+msgid ""
+msgstr ""
+
+msgctxt "#10136
+msgid ""
+msgstr ""
+
+msgctxt "#10137
+msgid ""
+msgstr ""
+
+msgctxt "#10138
+msgid ""
+msgstr ""
+
+msgctxt "#10139
+msgid ""
+msgstr ""
+
+msgctxt "#10140
+msgid ""
+msgstr ""
+
+msgctxt "#10141
+msgid ""
+msgstr ""
+
+msgctxt "#10142
+msgid ""
+msgstr ""
+
+msgctxt "#10143
+msgid ""
+msgstr ""
+
+msgctxt "#10144
+msgid ""
+msgstr ""
+
+msgctxt "#10145
+msgid ""
+msgstr ""
+
+msgctxt "#10146
+msgid ""
+msgstr ""
+
+msgctxt "#10147
+msgid ""
+msgstr ""
+
+msgctxt "#10148
+msgid ""
+msgstr ""
+
+msgctxt "#10149
+msgid ""
+msgstr ""
+
+msgctxt "#10150
+msgid ""
+msgstr ""
+
+msgctxt "#10151
+msgid ""
+msgstr ""
+
+msgctxt "#10152
+msgid ""
+msgstr ""
+
+msgctxt "#10153
+msgid ""
+msgstr ""
+
+msgctxt "#10154
+msgid ""
+msgstr ""
+
+msgctxt "#10155
+msgid ""
+msgstr ""
+
+msgctxt "#10156
+msgid ""
+msgstr ""
+
+msgctxt "#10157
+msgid ""
+msgstr ""
+
+msgctxt "#10158
+msgid ""
+msgstr ""
+
+msgctxt "#10159
+msgid ""
+msgstr ""
+
+msgctxt "#10160
+msgid ""
+msgstr "אוסף סיפורים בעברית"
+
+msgctxt "#10161
+msgid ""
+msgstr ""
+
+msgctxt "#10162
+msgid ""
+msgstr ""
+
+msgctxt "#10163
+msgid ""
+msgstr ""
+
+msgctxt "#10164
+msgid ""
+msgstr ""
+
+msgctxt "#10165
+msgid ""
+msgstr ""
+
+msgctxt "#10166
+msgid ""
+msgstr ""
+
+msgctxt "#10167
+msgid ""
+msgstr ""
+
+msgctxt "#10168
+msgid ""
+msgstr ""
+
+msgctxt "#10169
+msgid ""
+msgstr ""
+
+msgctxt "#10170
+msgid ""
+msgstr ""
+
+msgctxt "#10171
+msgid ""
+msgstr ""
+
+msgctxt "#10172
+msgid ""
+msgstr ""
+
+msgctxt "#10173
+msgid ""
+msgstr ""
+
+msgctxt "#10174
+msgid ""
+msgstr ""
+
+msgctxt "#10175
+msgid ""
+msgstr ""
+
+msgctxt "#10176
+msgid ""
+msgstr ""
+
+msgctxt "#10177
+msgid ""
+msgstr ""
+
+msgctxt "#10178
+msgid ""
+msgstr ""
+
+msgctxt "#10179
+msgid ""
+msgstr ""
+
+msgctxt "#10180
+msgid ""
+msgstr ""
+
+msgctxt "#10181
+msgid ""
+msgstr ""
+
+msgctxt "#10182
+msgid ""
+msgstr ""
+
+msgctxt "#10183
+msgid ""
+msgstr ""
+
+msgctxt "#10184
+msgid ""
+msgstr ""
+
+msgctxt "#10185
+msgid ""
+msgstr ""
+
+msgctxt "#10186
+msgid ""
+msgstr ""
+
+msgctxt "#10187
+msgid ""
+msgstr ""
+
+msgctxt "#10188
+msgid ""
+msgstr ""
+
+msgctxt "#10189
+msgid ""
+msgstr ""
+
+msgctxt "#10190
+msgid ""
+msgstr ""
+
+msgctxt "#10191
+msgid ""
+msgstr ""
+
+msgctxt "#10192
+msgid ""
+msgstr ""
+
+msgctxt "#10193
+msgid ""
+msgstr ""
+
+msgctxt "#10194
+msgid ""
+msgstr ""
+
+msgctxt "#10195
+msgid ""
+msgstr ""
+
+msgctxt "#10196
+msgid ""
+msgstr ""
+
+msgctxt "#10197
+msgid ""
+msgstr ""
+
+msgctxt "#10198
+msgid ""
+msgstr ""
+
+msgctxt "#10199
+msgid ""
+msgstr ""
+
+#
+msgctxt "#10200
+msgid ""
+msgstr ""
+
+msgctxt "#10201
+msgid ""
+msgstr ""
+
+msgctxt "#10202
+msgid "101 Dalmatians dogs"
+msgstr "101 כלבים דלמטים"
+
+msgctxt "#10203
+msgid ""
+msgstr ""
+
+msgctxt "#10204
+msgid "Treasure Island"
+msgstr "אי המטמון"
+
+msgctxt "#10205
+msgid "Aladdin - The Musical"
+msgstr "אלדין - המחזמר"
+
+msgctxt "#10206
+msgid ""
+msgstr ""
+
+msgctxt "#10207
+msgid "Bilbi"
+msgstr "בילבי"
+
+msgctxt "#10208
+msgid ""
+msgstr ""
+
+msgctxt "#10209
+msgid "Galis - The Show"
+msgstr "גאליס המופע"
+
+msgctxt "#10210
+msgid ""
+msgstr ""
+
+msgctxt "#10211
+msgid "Heroes of Light"
+msgstr "גיבורי האור"
+
+msgctxt "#10212
+msgid ""
+msgstr ""
+
+msgctxt "#10213
+msgid "Gigigigont Children tape"
+msgstr "גיגיגיגונת קלטת ילדים"
+
+msgctxt "#10214
+msgid ""
+msgstr ""
+
+msgctxt "#10215
+msgid ""
+msgstr ""
+
+msgctxt "#10216
+msgid ""
+msgstr ""
+
+msgctxt "#10217
+msgid ""
+msgstr ""
+
+msgctxt "#10218
+msgid ""
+msgstr ""
+
+msgctxt "#10219
+msgid ""
+msgstr "דוד חיים"
+
+msgctxt "#10220
+msgid ""
+msgstr ""
+
+msgctxt "#10221
+msgid ""
+msgstr ""
+
+msgctxt "#10222
+msgid ""
+msgstr ""
+
+msgctxt "#10223
+msgid ""
+msgstr ""
+
+msgctxt "#10224
+msgid ""
+msgstr ""
+
+msgctxt "#10225
+msgid ""
+msgstr ""
+
+msgctxt "#10226
+msgid ""
+msgstr ""
+
+msgctxt "#10227
+msgid "Hercules - The Musical"
+msgstr "הרקולס - המחזמר המלא"
+
+msgctxt "#10228
+msgid ""
+msgstr ""
+
+msgctxt "#10229
+msgid ""
+msgstr ""
+
+msgctxt "#10230
+msgid ""
+msgstr ""
+
+msgctxt "#10231
+msgid "Wonderboy"
+msgstr "ילד פלא"
+
+msgctxt "#10232
+msgid ""
+msgstr ""
+
+msgctxt "#10233
+msgid "Yaniv the Cool"
+msgstr "יניב המגניב"
+
+msgctxt "#10234
+msgid ""
+msgstr ""
+
+msgctxt "#10235
+msgid ""
+msgstr ""
+
+msgctxt "#10236
+msgid ""
+msgstr ""
+
+msgctxt "#10237
+msgid ""
+msgstr ""
+
+msgctxt "#10238
+msgid ""
+msgstr ""
+
+msgctxt "#10239
+msgid "Liran the Wizard"
+msgstr "לירן הקוסם מהאגדות"
+
+msgctxt "#10240
+msgid ""
+msgstr ""
+
+msgctxt "#10241
+msgid ""
+msgstr ""
+
+msgctxt "#10242
+msgid ""
+msgstr ""
+
+msgctxt "#10243
+msgid "Motek the girls united"
+msgstr "מותק הילדות התחברו"
+
+msgctxt "#10244
+msgid "Motek - Festival"
+msgstr "מותק של פסטיבל"
+
+msgctxt "#10245
+msgid "Little Michal"
+msgstr "מיכל הקטנה"
+
+msgctxt "#10246
+msgid ""
+msgstr ""
+
+msgctxt "#10247
+msgid ""
+msgstr ""
+
+msgctxt "#10248
+msgid "Marko"
+msgstr "מרקו"
+
+msgctxt "#10249
+msgid ""
+msgstr ""
+
+msgctxt "#10250
+msgid "Festigal Games"
+msgstr "משחקי הפסטיגל"
+
+msgctxt "#10251
+msgid ""
+msgstr ""
+
+msgctxt "#10252
+msgid ""
+msgstr ""
+
+msgctxt "#10253
+msgid ""
+msgstr ""
+
+msgctxt "#10254
+msgid ""
+msgstr ""
+
+msgctxt "#10255
+msgid "Cindarella - Bar Rafaelli"
+msgstr "סינדרלה - בר רפאלי"
+
+msgctxt "#10256
+msgid ""
+msgstr ""
+
+msgctxt "#10257
+msgid ""
+msgstr ""
+
+msgctxt "#10258
+msgid "Jungle Book"
+msgstr "ספר הגונגל"
+
+msgctxt "#10259
+msgid ""
+msgstr ""
+
+msgctxt "#10260
+msgid ""
+msgstr ""
+
+msgctxt "#10261
+msgid "Ami and Tami"
+msgstr "עמי ותמי"
+
+msgctxt "#10262
+msgid "Alibaba and the 40 bandits"
+msgstr "עליבאבא וארבעים השודדים"
+
+msgctxt "#10263
+msgid "Alisa in wonderland"
+msgstr "עליסה בארץ הפלאות"
+
+msgctxt "#10264
+msgid ""
+msgstr ""
+
+msgctxt "#10265
+msgid ""
+msgstr ""
+
+msgctxt "#10266
+msgid ""
+msgstr ""
+
+msgctxt "#10267
+msgid "Piter Pen"
+msgstr "פיטר פן - הראל סקעת"
+
+msgctxt "#10268
+msgid ""
+msgstr ""
+
+msgctxt "#10269
+msgid ""
+msgstr ""
+
+msgctxt "#10270
+msgid ""
+msgstr ""
+
+msgctxt "#10271
+msgid ""
+msgstr ""
+
+msgctxt "#10272
+msgid "Robin Hood"
+msgstr "רובין הוד"
+
+msgctxt "#10273
+msgid ""
+msgstr ""
+
+msgctxt "#10274
+msgid "Rinat Gabai"
+msgstr "רינת גבאי"
+
+msgctxt "#10275
+msgid ""
+msgstr ""
+
+msgctxt "#10276
+msgid ""
+msgstr ""
+
+msgctxt "#10277
+msgid ""
+msgstr ""
+
+msgctxt "#10278
+msgid ""
+msgstr ""
+
+msgctxt "#10279
+msgid ""
+msgstr ""
+
+msgctxt "#10280
+msgid ""
+msgstr ""
+
+msgctxt "#10281
+msgid ""
+msgstr ""
+
+msgctxt "#10282
+msgid ""
+msgstr ""
+
+msgctxt "#10283
+msgid ""
+msgstr ""
+
+msgctxt "#10284
+msgid "Shurum Zurum"
+msgstr "שורום זורום"
+
+msgctxt "#10285
+msgid ""
+msgstr ""
+
+msgctxt "#10286
+msgid ""
+msgstr ""
+
+msgctxt "#10287
+msgid "Snow White and the Huntsman"
+msgstr "שלגיה והצייד"
+
+msgctxt "#10288
+msgid ""
+msgstr ""
+
+msgctxt "#10289
+msgid ""
+msgstr ""
+
+msgctxt "#10290
+msgid ""
+msgstr ""
+
+msgctxt "#10291
+msgid ""
+msgstr ""
+
+msgctxt "#10292
+msgid ""
+msgstr ""
+
+msgctxt "#10293
+msgid ""
+msgstr ""
+
+msgctxt "#10294
+msgid ""
+msgstr ""
+
+msgctxt "#10295
+msgid ""
+msgstr ""
+
+msgctxt "#10296
+msgid ""
+msgstr ""
+
+msgctxt "#10297
+msgid ""
+msgstr ""
+
+msgctxt "#10298
+msgid ""
+msgstr ""
+
+msgctxt "#10299
+msgid ""
+msgstr ""
+
+#
+msgctxt "#10300
+msgid ""
+msgstr ""
+
+msgctxt "#10301
+msgid ""
+msgstr ""
+
+msgctxt "#10302
+msgid ""
+msgstr ""
+
+msgctxt "#10303
+msgid ""
+msgstr ""
+
+msgctxt "#10304
+msgid ""
+msgstr ""
+
+msgctxt "#10305
+msgid ""
+msgstr ""
+
+msgctxt "#10306
+msgid ""
+msgstr ""
+
+msgctxt "#10307
+msgid ""
+msgstr ""
+
+msgctxt "#10308
+msgid ""
+msgstr ""
+
+msgctxt "#10309
+msgid ""
+msgstr ""
+
+msgctxt "#10310
+msgid ""
+msgstr ""
+
+msgctxt "#10311
+msgid ""
+msgstr ""
+
+msgctxt "#10312
+msgid ""
+msgstr ""
+
+msgctxt "#10313
+msgid ""
+msgstr ""
+
+msgctxt "#10314
+msgid ""
+msgstr ""
+
+msgctxt "#10315
+msgid ""
+msgstr ""
+
+msgctxt "#10316
+msgid ""
+msgstr ""
+
+msgctxt "#10317
+msgid ""
+msgstr ""
+
+msgctxt "#10318
+msgid ""
+msgstr ""
+
+msgctxt "#10319
+msgid ""
+msgstr ""
+
+msgctxt "#10320
+msgid ""
+msgstr ""
+
+msgctxt "#10321
+msgid ""
+msgstr ""
+
+msgctxt "#10322
+msgid ""
+msgstr ""
+
+msgctxt "#10323
+msgid ""
+msgstr ""
+
+msgctxt "#10324
+msgid ""
+msgstr ""
+
+msgctxt "#10325
+msgid ""
+msgstr ""
+
+msgctxt "#10326
+msgid ""
+msgstr ""
+
+msgctxt "#10327
+msgid ""
+msgstr ""
+
+msgctxt "#10328
+msgid ""
+msgstr ""
+
+msgctxt "#10329
+msgid ""
+msgstr ""
+
+msgctxt "#10330
+msgid ""
+msgstr ""
+
+msgctxt "#10331
+msgid ""
+msgstr ""
+
+msgctxt "#10332
+msgid ""
+msgstr ""
+
+msgctxt "#10333
+msgid ""
+msgstr ""
+
+msgctxt "#10334
+msgid ""
+msgstr ""
+
+msgctxt "#10335
+msgid ""
+msgstr ""
+
+msgctxt "#10336
+msgid ""
+msgstr ""
+
+msgctxt "#10337
+msgid ""
+msgstr ""
+
+msgctxt "#10338
+msgid ""
+msgstr ""
+
+msgctxt "#10339
+msgid ""
+msgstr ""
+
+msgctxt "#10340
+msgid ""
+msgstr ""
+
+msgctxt "#10341
+msgid ""
+msgstr ""
+
+msgctxt "#10342
+msgid ""
+msgstr ""
+
+msgctxt "#10343
+msgid ""
+msgstr ""
+
+msgctxt "#10344
+msgid ""
+msgstr ""
+
+msgctxt "#10345
+msgid ""
+msgstr ""
+
+msgctxt "#10346
+msgid ""
+msgstr ""
+
+msgctxt "#10347
+msgid ""
+msgstr ""
+
+msgctxt "#10348
+msgid ""
+msgstr ""
+
+msgctxt "#10349
+msgid ""
+msgstr ""
+
+msgctxt "#10350
+msgid ""
+msgstr ""
+
+msgctxt "#10351
+msgid ""
+msgstr ""
+
+msgctxt "#10352
+msgid ""
+msgstr ""
+
+msgctxt "#10353
+msgid ""
+msgstr ""
+
+msgctxt "#10354
+msgid ""
+msgstr ""
+
+msgctxt "#10355
+msgid ""
+msgstr ""
+
+msgctxt "#10356
+msgid ""
+msgstr ""
+
+msgctxt "#10357
+msgid ""
+msgstr ""
+
+msgctxt "#10358
+msgid ""
+msgstr ""
+
+msgctxt "#10359
+msgid ""
+msgstr ""
+
+msgctxt "#10360
+msgid ""
+msgstr ""
+
+msgctxt "#10361
+msgid ""
+msgstr ""
+
+msgctxt "#10362
+msgid ""
+msgstr ""
+
+msgctxt "#10363
+msgid ""
+msgstr ""
+
+msgctxt "#10364
+msgid ""
+msgstr ""
+
+msgctxt "#10365
+msgid ""
+msgstr ""
+
+msgctxt "#10366
+msgid ""
+msgstr ""
+
+msgctxt "#10367
+msgid ""
+msgstr ""
+
+msgctxt "#10368
+msgid ""
+msgstr ""
+
+msgctxt "#10369
+msgid ""
+msgstr ""
+
+msgctxt "#10370
+msgid ""
+msgstr ""
+
+msgctxt "#10371
+msgid ""
+msgstr ""
+
+msgctxt "#10372
+msgid ""
+msgstr ""
+
+msgctxt "#10373
+msgid ""
+msgstr ""
+
+msgctxt "#10374
+msgid ""
+msgstr ""
+
+msgctxt "#10375
+msgid ""
+msgstr ""
+
+msgctxt "#10376
+msgid ""
+msgstr ""
+
+msgctxt "#10377
+msgid ""
+msgstr ""
+
+msgctxt "#10378
+msgid ""
+msgstr ""
+
+msgctxt "#10379
+msgid ""
+msgstr ""
+
+msgctxt "#10380
+msgid ""
+msgstr ""
+
+msgctxt "#10381
+msgid ""
+msgstr ""
+
+msgctxt "#10382
+msgid ""
+msgstr ""
+
+msgctxt "#10383
+msgid ""
+msgstr ""
+
+msgctxt "#10384
+msgid ""
+msgstr ""
+
+msgctxt "#10385
+msgid ""
+msgstr ""
+
+msgctxt "#10386
+msgid ""
+msgstr ""
+
+msgctxt "#10387
+msgid ""
+msgstr ""
+
+msgctxt "#10388
+msgid ""
+msgstr ""
+
+msgctxt "#10389
+msgid ""
+msgstr ""
+
+msgctxt "#10390
+msgid ""
+msgstr ""
+
+msgctxt "#10391
+msgid ""
+msgstr ""
+
+msgctxt "#10392
+msgid ""
+msgstr ""
+
+msgctxt "#10393
+msgid ""
+msgstr ""
+
+msgctxt "#10394
+msgid ""
+msgstr ""
+
+msgctxt "#10395
+msgid ""
+msgstr ""
+
+msgctxt "#10396
+msgid ""
+msgstr ""
+
+msgctxt "#10397
+msgid ""
+msgstr ""
+
+msgctxt "#10398
+msgid ""
+msgstr ""
+
+msgctxt "#10399
+msgid ""
+msgstr ""
+
+#
+msgctxt "#10400
+msgid ""
+msgstr ""
+
+msgctxt "#10401
+msgid ""
+msgstr ""
+
+msgctxt "#10402
+msgid ""
+msgstr ""
+
+msgctxt "#10403
+msgid ""
+msgstr ""
+
+msgctxt "#10404
+msgid ""
+msgstr ""
+
+msgctxt "#10405
+msgid ""
+msgstr ""
+
+msgctxt "#10406
+msgid ""
+msgstr ""
+
+msgctxt "#10407
+msgid ""
+msgstr ""
+
+msgctxt "#10408
+msgid ""
+msgstr ""
+
+msgctxt "#10409
+msgid ""
+msgstr ""
+
+msgctxt "#10410
+msgid ""
+msgstr ""
+
+msgctxt "#10411
+msgid ""
+msgstr ""
+
+msgctxt "#10412
+msgid ""
+msgstr ""
+
+msgctxt "#10413
+msgid ""
+msgstr ""
+
+msgctxt "#10414
+msgid ""
+msgstr ""
+
+msgctxt "#10415
+msgid ""
+msgstr ""
+
+msgctxt "#10416
+msgid ""
+msgstr ""
+
+msgctxt "#10417
+msgid ""
+msgstr ""
+
+msgctxt "#10418
+msgid ""
+msgstr ""
+
+msgctxt "#10419
+msgid ""
+msgstr ""
+
+msgctxt "#10420
+msgid ""
+msgstr ""
+
+msgctxt "#10421
+msgid ""
+msgstr ""
+
+msgctxt "#10422
+msgid ""
+msgstr ""
+
+msgctxt "#10423
+msgid ""
+msgstr ""
+
+msgctxt "#10424
+msgid ""
+msgstr ""
+
+msgctxt "#10425
+msgid ""
+msgstr ""
+
+msgctxt "#10426
+msgid ""
+msgstr ""
+
+msgctxt "#10427
+msgid ""
+msgstr ""
+
+msgctxt "#10428
+msgid ""
+msgstr ""
+
+msgctxt "#10429
+msgid ""
+msgstr ""
+
+msgctxt "#10430
+msgid ""
+msgstr ""
+
+msgctxt "#10431
+msgid ""
+msgstr ""
+
+msgctxt "#10432
+msgid ""
+msgstr ""
+
+msgctxt "#10433
+msgid ""
+msgstr ""
+
+msgctxt "#10434
+msgid ""
+msgstr ""
+
+msgctxt "#10435
+msgid ""
+msgstr ""
+
+msgctxt "#10436
+msgid ""
+msgstr ""
+
+msgctxt "#10437
+msgid ""
+msgstr ""
+
+msgctxt "#10438
+msgid ""
+msgstr ""
+
+msgctxt "#10439
+msgid ""
+msgstr ""
+
+msgctxt "#10440
+msgid ""
+msgstr ""
+
+msgctxt "#10441
+msgid ""
+msgstr ""
+
+msgctxt "#10442
+msgid ""
+msgstr ""
+
+msgctxt "#10443
+msgid ""
+msgstr ""
+
+msgctxt "#10444
+msgid ""
+msgstr ""
+
+msgctxt "#10445
+msgid ""
+msgstr ""
+
+msgctxt "#10446
+msgid ""
+msgstr ""
+
+msgctxt "#10447
+msgid ""
+msgstr ""
+
+msgctxt "#10448
+msgid ""
+msgstr ""
+
+msgctxt "#10449
+msgid ""
+msgstr ""
+
+msgctxt "#10450
+msgid ""
+msgstr ""
+
+msgctxt "#10451
+msgid ""
+msgstr ""
+
+msgctxt "#10452
+msgid ""
+msgstr ""
+
+msgctxt "#10453
+msgid ""
+msgstr ""
+
+msgctxt "#10454
+msgid ""
+msgstr ""
+
+msgctxt "#10455
+msgid ""
+msgstr ""
+
+msgctxt "#10456
+msgid ""
+msgstr ""
+
+msgctxt "#10457
+msgid ""
+msgstr ""
+
+msgctxt "#10458
+msgid ""
+msgstr ""
+
+msgctxt "#10459
+msgid ""
+msgstr ""
+
+msgctxt "#10460
+msgid ""
+msgstr ""
+
+msgctxt "#10461
+msgid ""
+msgstr ""
+
+msgctxt "#10462
+msgid ""
+msgstr ""
+
+msgctxt "#10463
+msgid ""
+msgstr ""
+
+msgctxt "#10464
+msgid ""
+msgstr ""
+
+msgctxt "#10465
+msgid ""
+msgstr ""
+
+msgctxt "#10466
+msgid ""
+msgstr ""
+
+msgctxt "#10467
+msgid ""
+msgstr ""
+
+msgctxt "#10468
+msgid ""
+msgstr ""
+
+msgctxt "#10469
+msgid ""
+msgstr ""
+
+msgctxt "#10470
+msgid ""
+msgstr ""
+
+msgctxt "#10471
+msgid ""
+msgstr ""
+
+msgctxt "#10472
+msgid ""
+msgstr ""
+
+msgctxt "#10473
+msgid ""
+msgstr ""
+
+msgctxt "#10474
+msgid ""
+msgstr ""
+
+msgctxt "#10475
+msgid ""
+msgstr ""
+
+msgctxt "#10476
+msgid ""
+msgstr ""
+
+msgctxt "#10477
+msgid ""
+msgstr ""
+
+msgctxt "#10478
+msgid ""
+msgstr ""
+
+msgctxt "#10479
+msgid ""
+msgstr ""
+
+msgctxt "#10480
+msgid ""
+msgstr ""
+
+msgctxt "#10481
+msgid ""
+msgstr ""
+
+msgctxt "#10482
+msgid ""
+msgstr ""
+
+msgctxt "#10483
+msgid ""
+msgstr ""
+
+msgctxt "#10484
+msgid ""
+msgstr ""
+
+msgctxt "#10485
+msgid ""
+msgstr ""
+
+msgctxt "#10486
+msgid ""
+msgstr ""
+
+msgctxt "#10487
+msgid ""
+msgstr ""
+
+msgctxt "#10488
+msgid ""
+msgstr ""
+
+msgctxt "#10489
+msgid ""
+msgstr ""
+
+msgctxt "#10490
+msgid ""
+msgstr ""
+
+msgctxt "#10491
+msgid ""
+msgstr ""
+
+msgctxt "#10492
+msgid ""
+msgstr ""
+
+msgctxt "#10493
+msgid ""
+msgstr ""
+
+msgctxt "#10494
+msgid ""
+msgstr ""
+
+msgctxt "#10495
+msgid ""
+msgstr ""
+
+msgctxt "#10496
+msgid ""
+msgstr ""
+
+msgctxt "#10497
+msgid ""
+msgstr ""
+
+msgctxt "#10498
+msgid ""
+msgstr ""
+
+msgctxt "#10499
+msgid ""
+msgstr ""
+
+#
+msgctxt "#10500
+msgid ""
+msgstr ""
+
+msgctxt "#10501
+msgid ""
+msgstr ""
+
+msgctxt "#10502
+msgid ""
+msgstr ""
+
+msgctxt "#10503
+msgid ""
+msgstr ""
+
+msgctxt "#10504
+msgid ""
+msgstr ""
+
+msgctxt "#10505
+msgid ""
+msgstr ""
+
+msgctxt "#10506
+msgid ""
+msgstr ""
+
+msgctxt "#10507
+msgid ""
+msgstr ""
+
+msgctxt "#10508
+msgid ""
+msgstr ""
+
+msgctxt "#10509
+msgid ""
+msgstr ""
+
+msgctxt "#10510
+msgid ""
+msgstr ""
+
+msgctxt "#10511
+msgid ""
+msgstr ""
+
+msgctxt "#10512
+msgid ""
+msgstr ""
+
+msgctxt "#10513
+msgid ""
+msgstr ""
+
+msgctxt "#10514
+msgid ""
+msgstr ""
+
+msgctxt "#10515
+msgid ""
+msgstr ""
+
+msgctxt "#10516
+msgid ""
+msgstr ""
+
+msgctxt "#10517
+msgid ""
+msgstr ""
+
+msgctxt "#10518
+msgid ""
+msgstr ""
+
+msgctxt "#10519
+msgid ""
+msgstr ""
+
+msgctxt "#10520
+msgid "Movies (HE) Subtitle (HE)"
+msgstr "סרטים מדובבים"
+
+msgctxt "#10521
+msgid ""
+msgstr ""
+
+msgctxt "#10522
+msgid ""
+msgstr ""
+
+msgctxt "#10523
+msgid ""
+msgstr ""
+
+msgctxt "#10524
+msgid ""
+msgstr ""
+
+msgctxt "#10525
+msgid ""
+msgstr ""
+
+msgctxt "#10526
+msgid ""
+msgstr ""
+
+msgctxt "#10527
+msgid ""
+msgstr ""
+
+msgctxt "#10528
+msgid ""
+msgstr ""
+
+msgctxt "#10529
+msgid ""
+msgstr ""
+
+msgctxt "#10530
+msgid ""
+msgstr ""
+
+msgctxt "#10531
+msgid ""
+msgstr ""
+
+msgctxt "#10532
+msgid ""
+msgstr ""
+
+msgctxt "#10533
+msgid ""
+msgstr ""
+
+msgctxt "#10534
+msgid ""
+msgstr ""
+
+msgctxt "#10535
+msgid "Movies (EN) Subtitle (HE)"
+msgstr "סרטים מתורגמים"
+
+msgctxt "#10536
+msgid ""
+msgstr ""
+
+msgctxt "#10537
+msgid ""
+msgstr ""
+
+msgctxt "#10538
+msgid ""
+msgstr ""
+
+msgctxt "#10539
+msgid ""
+msgstr ""
+
+msgctxt "#10540
+msgid ""
+msgstr ""
+
+msgctxt "#10541
+msgid ""
+msgstr ""
+
+msgctxt "#10542
+msgid ""
+msgstr ""
+
+msgctxt "#10543
+msgid ""
+msgstr ""
+
+msgctxt "#10544
+msgid ""
+msgstr ""
+
+msgctxt "#10545
+msgid ""
+msgstr ""
+
+msgctxt "#10546
+msgid ""
+msgstr ""
+
+msgctxt "#10547
+msgid ""
+msgstr ""
+
+msgctxt "#10548
+msgid ""
+msgstr ""
+
+msgctxt "#10549
+msgid ""
+msgstr ""
+
+msgctxt "#10550
+msgid ""
+msgstr ""
+
+msgctxt "#10551
+msgid ""
+msgstr ""
+
+msgctxt "#10552
+msgid ""
+msgstr ""
+
+msgctxt "#10553
+msgid ""
+msgstr ""
+
+msgctxt "#10554
+msgid ""
+msgstr ""
+
+msgctxt "#10555
+msgid ""
+msgstr ""
+
+msgctxt "#10556
+msgid ""
+msgstr ""
+
+msgctxt "#10557
+msgid ""
+msgstr ""
+
+msgctxt "#10558
+msgid ""
+msgstr ""
+
+msgctxt "#10559
+msgid ""
+msgstr ""
+
+msgctxt "#10560
+msgid ""
+msgstr ""
+
+msgctxt "#10561
+msgid ""
+msgstr ""
+
+msgctxt "#10562
+msgid ""
+msgstr ""
+
+msgctxt "#10563
+msgid ""
+msgstr ""
+
+msgctxt "#10564
+msgid ""
+msgstr ""
+
+msgctxt "#10565
+msgid ""
+msgstr ""
+
+msgctxt "#10566
+msgid ""
+msgstr ""
+
+msgctxt "#10567
+msgid ""
+msgstr ""
+
+msgctxt "#10568
+msgid ""
+msgstr ""
+
+msgctxt "#10569
+msgid ""
+msgstr ""
+
+msgctxt "#10570
+msgid ""
+msgstr ""
+
+msgctxt "#10571
+msgid ""
+msgstr ""
+
+msgctxt "#10572
+msgid ""
+msgstr ""
+
+msgctxt "#10573
+msgid ""
+msgstr ""
+
+msgctxt "#10574
+msgid ""
+msgstr ""
+
+msgctxt "#10575
+msgid ""
+msgstr ""
+
+msgctxt "#10576
+msgid ""
+msgstr ""
+
+msgctxt "#10577
+msgid ""
+msgstr ""
+
+msgctxt "#10578
+msgid ""
+msgstr ""
+
+msgctxt "#10579
+msgid ""
+msgstr ""
+
+msgctxt "#10580
+msgid ""
+msgstr ""
+
+msgctxt "#10581
+msgid ""
+msgstr ""
+
+msgctxt "#10582
+msgid ""
+msgstr ""
+
+msgctxt "#10583
+msgid ""
+msgstr ""
+
+msgctxt "#10584
+msgid ""
+msgstr ""
+
+msgctxt "#10585
+msgid ""
+msgstr ""
+
+msgctxt "#10586
+msgid ""
+msgstr ""
+
+msgctxt "#10587
+msgid ""
+msgstr ""
+
+msgctxt "#10588
+msgid ""
+msgstr ""
+
+msgctxt "#10589
+msgid ""
+msgstr ""
+
+msgctxt "#10590
+msgid ""
+msgstr ""
+
+msgctxt "#10591
+msgid ""
+msgstr ""
+
+msgctxt "#10592
+msgid ""
+msgstr ""
+
+msgctxt "#10593
+msgid ""
+msgstr ""
+
+msgctxt "#10594
+msgid ""
+msgstr ""
+
+msgctxt "#10595
+msgid ""
+msgstr ""
+
+msgctxt "#10596
+msgid ""
+msgstr ""
+
+msgctxt "#10597
+msgid ""
+msgstr ""
+
+msgctxt "#10598
+msgid ""
+msgstr ""
+
+msgctxt "#10599
+msgid ""
+msgstr ""
+
+#
+msgctxt "#10600
+msgid ""
+msgstr ""
+
+msgctxt "#10601
+msgid ""
+msgstr ""
+
+msgctxt "#10602
+msgid ""
+msgstr ""
+
+msgctxt "#10603
+msgid ""
+msgstr ""
+
+msgctxt "#10604
+msgid ""
+msgstr ""
+
+msgctxt "#10605
+msgid ""
+msgstr ""
+
+msgctxt "#10606
+msgid ""
+msgstr ""
+
+msgctxt "#10607
+msgid ""
+msgstr ""
+
+msgctxt "#10608
+msgid ""
+msgstr ""
+
+msgctxt "#10609
+msgid ""
+msgstr ""
+
+msgctxt "#10610
+msgid ""
+msgstr ""
+
+msgctxt "#10611
+msgid ""
+msgstr ""
+
+msgctxt "#10612
+msgid ""
+msgstr ""
+
+msgctxt "#10613
+msgid ""
+msgstr ""
+
+msgctxt "#10614
+msgid ""
+msgstr ""
+
+msgctxt "#10615
+msgid ""
+msgstr ""
+
+msgctxt "#10616
+msgid ""
+msgstr ""
+
+msgctxt "#10617
+msgid ""
+msgstr ""
+
+msgctxt "#10618
+msgid ""
+msgstr ""
+
+msgctxt "#10619
+msgid ""
+msgstr ""
+
+msgctxt "#10620
+msgid ""
+msgstr ""
+
+msgctxt "#10621
+msgid ""
+msgstr ""
+
+msgctxt "#10622
+msgid ""
+msgstr ""
+
+msgctxt "#10623
+msgid ""
+msgstr ""
+
+msgctxt "#10624
+msgid ""
+msgstr ""
+
+msgctxt "#10625
+msgid ""
+msgstr ""
+
+msgctxt "#10626
+msgid ""
+msgstr ""
+
+msgctxt "#10627
+msgid ""
+msgstr ""
+
+msgctxt "#10628
+msgid ""
+msgstr ""
+
+msgctxt "#10629
+msgid ""
+msgstr ""
+
+msgctxt "#10630
+msgid "Shoshana the Sheep"
+msgstr "הכבשה שושנה"
+
+msgctxt "#10631
+msgid ""
+msgstr ""
+
+msgctxt "#10632
+msgid ""
+msgstr ""
+
+msgctxt "#10633
+msgid "Hnimnomim"
+msgstr "הנימנומים"
+
+msgctxt "#10634
+msgid ""
+msgstr ""
+
+msgctxt "#10635
+msgid ""
+msgstr ""
+
+msgctxt "#10636
+msgid ""
+msgstr ""
+
+msgctxt "#10637
+msgid ""
+msgstr ""
+
+msgctxt "#10638
+msgid ""
+msgstr ""
+
+msgctxt "#10639
+msgid ""
+msgstr ""
+
+msgctxt "#10640
+msgid ""
+msgstr ""
+
+msgctxt "#10641
+msgid ""
+msgstr ""
+
+msgctxt "#10642
+msgid "Teletubbies"
+msgstr "טלטאביז"
+
+msgctxt "#10643
+msgid ""
+msgstr ""
+
+msgctxt "#10644
+msgid ""
+msgstr ""
+
+msgctxt "#10645
+msgid ""
+msgstr ""
+
+msgctxt "#10646
+msgid ""
+msgstr ""
+
+msgctxt "#10647
+msgid ""
+msgstr ""
+
+msgctxt "#10648
+msgid ""
+msgstr ""
+
+msgctxt "#10649
+msgid ""
+msgstr ""
+
+msgctxt "#10650
+msgid ""
+msgstr ""
+
+msgctxt "#10651
+msgid ""
+msgstr ""
+
+msgctxt "#10652
+msgid ""
+msgstr ""
+
+msgctxt "#10653
+msgid ""
+msgstr ""
+
+msgctxt "#10654
+msgid ""
+msgstr ""
+
+msgctxt "#10655
+msgid ""
+msgstr ""
+
+msgctxt "#10656
+msgid ""
+msgstr ""
+
+msgctxt "#10657
+msgid ""
+msgstr ""
+
+msgctxt "#10658
+msgid ""
+msgstr ""
+
+msgctxt "#10659
+msgid ""
+msgstr ""
+
+msgctxt "#10660
+msgid ""
+msgstr ""
+
+msgctxt "#10661
+msgid ""
+msgstr ""
+
+msgctxt "#10662
+msgid ""
+msgstr ""
+
+msgctxt "#10663
+msgid ""
+msgstr ""
+
+msgctxt "#10664
+msgid ""
+msgstr ""
+
+msgctxt "#10665
+msgid ""
+msgstr ""
+
+msgctxt "#10666
+msgid ""
+msgstr ""
+
+msgctxt "#10667
+msgid ""
+msgstr ""
+
+msgctxt "#10668
+msgid ""
+msgstr ""
+
+msgctxt "#10669
+msgid ""
+msgstr ""
+
+msgctxt "#10670
+msgid ""
+msgstr ""
+
+msgctxt "#10671
+msgid ""
+msgstr ""
+
+msgctxt "#10672
+msgid ""
+msgstr ""
+
+msgctxt "#10673
+msgid ""
+msgstr ""
+
+msgctxt "#10674
+msgid ""
+msgstr ""
+
+msgctxt "#10675
+msgid ""
+msgstr ""
+
+msgctxt "#10676
+msgid ""
+msgstr ""
+
+msgctxt "#10677
+msgid ""
+msgstr ""
+
+msgctxt "#10678
+msgid ""
+msgstr ""
+
+msgctxt "#10679
+msgid ""
+msgstr ""
+
+msgctxt "#10680
+msgid ""
+msgstr ""
+
+msgctxt "#10681
+msgid ""
+msgstr ""
+
+msgctxt "#10682
+msgid ""
+msgstr ""
+
+msgctxt "#10683
+msgid ""
+msgstr ""
+
+msgctxt "#10684
+msgid ""
+msgstr ""
+
+msgctxt "#10685
+msgid ""
+msgstr ""
+
+msgctxt "#10686
+msgid ""
+msgstr ""
+
+msgctxt "#10687
+msgid ""
+msgstr ""
+
+msgctxt "#10688
+msgid ""
+msgstr ""
+
+msgctxt "#10689
+msgid ""
+msgstr ""
+
+msgctxt "#10690
+msgid ""
+msgstr ""
+
+msgctxt "#10691
+msgid ""
+msgstr ""
+
+msgctxt "#10692
+msgid ""
+msgstr ""
+
+msgctxt "#10693
+msgid ""
+msgstr ""
+
+msgctxt "#10694
+msgid ""
+msgstr ""
+
+msgctxt "#10695
+msgid ""
+msgstr ""
+
+msgctxt "#10696
+msgid ""
+msgstr ""
+
+msgctxt "#10697
+msgid ""
+msgstr ""
+
+msgctxt "#10698
+msgid ""
+msgstr ""
+
+msgctxt "#10699
+msgid ""
+msgstr ""
+
+#
+msgctxt "#10700
+msgid ""
+msgstr ""
+
+msgctxt "#10701
+msgid ""
+msgstr ""
+
+msgctxt "#10702
+msgid "Adivo"
+msgstr "אדיבו"
+
+msgctxt "#10703
+msgid ""
+msgstr ""
+
+msgctxt "#10704
+msgid ""
+msgstr ""
+
+msgctxt "#10705
+msgid "Lin's Garden"
+msgstr "בגינה של לין"
+
+msgctxt "#10706
+msgid ""
+msgstr ""
+
+msgctxt "#10707
+msgid "Bob the Builder"
+msgstr "בוב הבנאי"
+
+msgctxt "#10708
+msgid "Bulli the Snow Man"
+msgstr "בולי איש השלג"
+
+msgctxt "#10709
+msgid ""
+msgstr ""
+
+msgctxt "#10710
+msgid ""
+msgstr ""
+
+msgctxt "#10711
+msgid ""
+msgstr ""
+
+msgctxt "#10712
+msgid "Dan the postman"
+msgstr "דן הדוור"
+
+msgctxt "#10713
+msgid ""
+msgstr ""
+
+msgctxt "#10714
+msgid ""
+msgstr ""
+
+msgctxt "#10715
+msgid "Uncale Haim"
+msgstr "הדוד חיים"
+
+msgctxt "#10716
+msgid ""
+msgstr ""
+
+msgctxt "#10717
+msgid "Parents and puppies"
+msgstr "הורים וגורים"
+
+msgctxt "#10718
+msgid ""
+msgstr ""
+
+msgctxt "#10719
+msgid "Hey Binba"
+msgstr "היי בינבה"
+
+msgctxt "#10720
+msgid ""
+msgstr ""
+
+msgctxt "#10721
+msgid "Hello Kitty"
+msgstr "הלו קיטי"
+
+msgctxt "#10722
+msgid "Sofia the First"
+msgstr "הנסיכה סופיה הראשונה"
+
+msgctxt "#10723
+msgid "The secret of Maya"
+msgstr "הסוד של מיה"
+
+msgctxt "#10724
+msgid ""
+msgstr ""
+
+msgctxt "#10725
+msgid ""
+msgstr ""
+
+msgctxt "#10726
+msgid ""
+msgstr ""
+
+msgctxt "#10727
+msgid "Time to move"
+msgstr "זמן לזוז"
+
+msgctxt "#10728
+msgid ""
+msgstr ""
+
+msgctxt "#10729
+msgid ""
+msgstr ""
+
+msgctxt "#10730
+msgid ""
+msgstr ""
+
+msgctxt "#10731
+msgid "Confused Yuval"
+msgstr "יובל המבולבל"
+
+msgctxt "#10732
+msgid ""
+msgstr ""
+
+msgctxt "#10733
+msgid ""
+msgstr ""
+
+msgctxt "#10734
+msgid "Short Creation"
+msgstr "יצירה בקצרה"
+
+msgctxt "#10735
+msgid ""
+msgstr ""
+
+msgctxt "#10736
+msgid ""
+msgstr ""
+
+msgctxt "#10737
+msgid ""
+msgstr ""
+
+msgctxt "#10738
+msgid ""
+msgstr ""
+
+msgctxt "#10739
+msgid ""
+msgstr ""
+
+msgctxt "#10740
+msgid ""
+msgstr ""
+
+msgctxt "#10741
+msgid ""
+msgstr ""
+
+msgctxt "#10742
+msgid "Molly and Zumi"
+msgstr "מולי וצומי"
+
+msgctxt "#10743
+msgid ""
+msgstr ""
+
+msgctxt "#10744
+msgid ""
+msgstr ""
+
+msgctxt "#10745
+msgid "Best pastries club"
+msgstr "מועדון המאפים הטובים"
+
+msgctxt "#10746
+msgid "Miki the kids star"
+msgstr "מיקי כוכבת הילדים"
+
+msgctxt "#10747
+msgid "Mikmak"
+msgstr "מיקמק"
+
+msgctxt "#10748
+msgid "Mr. Why and Mrs. So"
+msgstr "מר למה וגברת ככה"
+
+msgctxt "#10749
+msgid "Birthday Family"
+msgstr "משפחת יומולדת"
+
+msgctxt "#10750
+msgid ""
+msgstr ""
+
+msgctxt "#10751
+msgid ""
+msgstr ""
+
+msgctxt "#10752
+msgid ""
+msgstr ""
+
+msgctxt "#10753
+msgid ""
+msgstr ""
+
+msgctxt "#10754
+msgid ""
+msgstr ""
+
+msgctxt "#10755
+msgid "Fairy Tales"
+msgstr "סיפורי פיות"
+
+msgctxt "#10756
+msgid ""
+msgstr ""
+
+msgctxt "#10757
+msgid "Sammy the fireman"
+msgstr "סמי הכבאי"
+
+msgctxt "#10758
+msgid ""
+msgstr ""
+
+msgctxt "#10759
+msgid ""
+msgstr ""
+
+msgctxt "#10760
+msgid "The magical world of Max"
+msgstr "עולמו הקסום של מקס"
+
+msgctxt "#10761
+msgid ""
+msgstr ""
+
+msgctxt "#10762
+msgid "Channel HOP!"
+msgstr "ערוץ הופ!"
+
+msgctxt "#10763
+msgid ""
+msgstr ""
+
+msgctxt "#10764
+msgid ""
+msgstr ""
+
+msgctxt "#10765
+msgid "Flipper and Lufka"
+msgstr "פליפר ולופקה"
+
+msgctxt "#10766
+msgid ""
+msgstr ""
+
+msgctxt "#10767
+msgid ""
+msgstr ""
+
+msgctxt "#10768
+msgid "Tz'ftz'olh - Michel Halfon"
+msgstr "צ'פצ'ולה' - מיכל כלפון"
+
+msgctxt "#10769
+msgid ""
+msgstr ""
+
+msgctxt "#10770
+msgid ""
+msgstr ""
+
+msgctxt "#10771
+msgid ""
+msgstr ""
+
+msgctxt "#10772
+msgid "Roy Boy"
+msgstr "רוי בוי"
+
+msgctxt "#10773
+msgid "Ronnie and cashews"
+msgstr "רוני וקשיו"
+
+msgctxt "#10774
+msgid "Rinat and Yoyo"
+msgstr "רינת ויויו"
+
+msgctxt "#10775
+msgid ""
+msgstr ""
+
+msgctxt "#10776
+msgid ""
+msgstr ""
+
+msgctxt "#10777
+msgid "Nonsense News"
+msgstr "שטויות בחדשות"
+
+msgctxt "#10778
+msgid "Sheldon"
+msgstr "שלדון"
+
+msgctxt "#10779
+msgid "3 4 Work"
+msgstr "שלוש ארבע לעבודה"
+
+msgctxt "#10780
+msgid ""
+msgstr ""
+
+msgctxt "#10781
+msgid ""
+msgstr ""
+
+msgctxt "#10782
+msgid ""
+msgstr ""
+
+msgctxt "#10783
+msgid ""
+msgstr ""
+
+msgctxt "#10784
+msgid "Strawberry"
+msgstr "תותית"
+
+msgctxt "#10785
+msgid ""
+msgstr ""
+
+msgctxt "#10786
+msgid ""
+msgstr ""
+
+msgctxt "#10787
+msgid ""
+msgstr ""
+
+msgctxt "#10788
+msgid ""
+msgstr ""
+
+msgctxt "#10789
+msgid ""
+msgstr ""
+
+msgctxt "#10790
+msgid ""
+msgstr ""
+
+msgctxt "#10791
+msgid ""
+msgstr ""
+
+msgctxt "#10792
+msgid ""
+msgstr ""
+
+msgctxt "#10793
+msgid ""
+msgstr ""
+
+msgctxt "#10794
+msgid ""
+msgstr ""
+
+msgctxt "#10795
+msgid ""
+msgstr ""
+
+msgctxt "#10796
+msgid ""
+msgstr ""
+
+msgctxt "#10797
+msgid ""
+msgstr ""
+
+msgctxt "#10798
+msgid "Mr. Tomato"
+msgstr "מר עגבניה"
+
+msgctxt "#10799
+msgid "מרתה מדברת"
+msgstr "מרתה מדברת"
+
+#
+msgctxt "#10800
+msgid ""
+msgstr "ערוץ הילדים"
+
+msgctxt "#10801
+msgid ""
+msgstr ""
+
+msgctxt "#10802
+msgid ""
+msgstr "ערוץ החינוכית"
+
+msgctxt "#10803
+msgid ""
+msgstr ""
+
+msgctxt "#10804
+msgid ""
+msgstr "בלי סודות"
+
+msgctxt "#10805
+msgid ""
+msgstr "קשת וענן"
+
+msgctxt "#10806
+msgid ""
+msgstr "רגע עם דודלי"
+
+msgctxt "#10807
+msgid ""
+msgstr "הקומדי סטור"
+
+msgctxt "#10808
+msgid ""
+msgstr "שרגא בישגדא"
+
+msgctxt "#10809
+msgid ""
+msgstr "חידון התנך"
+
+msgctxt "#10810
+msgid ""
+msgstr "גלילאו"
+
+msgctxt "#10811
+msgid ""
+msgstr ""
+
+msgctxt "#10812
+msgid ""
+msgstr ""
+
+msgctxt "#10813
+msgid ""
+msgstr ""
+
+msgctxt "#10814
+msgid ""
+msgstr ""
+
+msgctxt "#10815
+msgid ""
+msgstr ""
+
+msgctxt "#10816
+msgid ""
+msgstr ""
+
+msgctxt "#10817
+msgid ""
+msgstr ""
+
+msgctxt "#10818
+msgid ""
+msgstr ""
+
+msgctxt "#10819
+msgid ""
+msgstr ""
+
+msgctxt "#10820
+msgid ""
+msgstr ""
+
+msgctxt "#10821
+msgid ""
+msgstr ""
+
+msgctxt "#10822
+msgid ""
+msgstr ""
+
+msgctxt "#10823
+msgid ""
+msgstr ""
+
+msgctxt "#10824
+msgid ""
+msgstr ""
+
+msgctxt "#10825
+msgid ""
+msgstr ""
+
+msgctxt "#10826
+msgid ""
+msgstr ""
+
+msgctxt "#10827
+msgid ""
+msgstr ""
+
+msgctxt "#10828
+msgid ""
+msgstr ""
+
+msgctxt "#10829
+msgid ""
+msgstr ""
+
+msgctxt "#10830
+msgid ""
+msgstr ""
+
+msgctxt "#10831
+msgid ""
+msgstr ""
+
+msgctxt "#10832
+msgid ""
+msgstr ""
+
+msgctxt "#10833
+msgid ""
+msgstr ""
+
+msgctxt "#10834
+msgid ""
+msgstr ""
+
+msgctxt "#10835
+msgid ""
+msgstr ""
+
+msgctxt "#10836
+msgid ""
+msgstr ""
+
+msgctxt "#10837
+msgid ""
+msgstr ""
+
+msgctxt "#10838
+msgid ""
+msgstr ""
+
+msgctxt "#10839
+msgid ""
+msgstr ""
+
+msgctxt "#10840
+msgid ""
+msgstr ""
+
+msgctxt "#10841
+msgid ""
+msgstr ""
+
+msgctxt "#10842
+msgid ""
+msgstr ""
+
+msgctxt "#10843
+msgid ""
+msgstr ""
+
+msgctxt "#10844
+msgid ""
+msgstr ""
+
+msgctxt "#10845
+msgid ""
+msgstr ""
+
+msgctxt "#10846
+msgid ""
+msgstr ""
+
+msgctxt "#10847
+msgid ""
+msgstr ""
+
+msgctxt "#10848
+msgid ""
+msgstr ""
+
+msgctxt "#10849
+msgid ""
+msgstr ""
+
+msgctxt "#10850
+msgid ""
+msgstr ""
+
+msgctxt "#10851
+msgid ""
+msgstr ""
+
+msgctxt "#10852
+msgid ""
+msgstr ""
+
+msgctxt "#10853
+msgid ""
+msgstr ""
+
+msgctxt "#10854
+msgid ""
+msgstr ""
+
+msgctxt "#10855
+msgid ""
+msgstr ""
+
+msgctxt "#10856
+msgid ""
+msgstr ""
+
+msgctxt "#10857
+msgid ""
+msgstr ""
+
+msgctxt "#10858
+msgid ""
+msgstr ""
+
+msgctxt "#10859
+msgid ""
+msgstr ""
+
+msgctxt "#10860
+msgid ""
+msgstr ""
+
+msgctxt "#10861
+msgid ""
+msgstr ""
+
+msgctxt "#10862
+msgid ""
+msgstr ""
+
+msgctxt "#10863
+msgid ""
+msgstr ""
+
+msgctxt "#10864
+msgid ""
+msgstr ""
+
+msgctxt "#10865
+msgid ""
+msgstr ""
+
+msgctxt "#10866
+msgid ""
+msgstr ""
+
+msgctxt "#10867
+msgid ""
+msgstr ""
+
+msgctxt "#10868
+msgid ""
+msgstr ""
+
+msgctxt "#10869
+msgid ""
+msgstr ""
+
+msgctxt "#10870
+msgid ""
+msgstr ""
+
+msgctxt "#10871
+msgid ""
+msgstr ""
+
+msgctxt "#10872
+msgid ""
+msgstr ""
+
+msgctxt "#10873
+msgid ""
+msgstr ""
+
+msgctxt "#10874
+msgid ""
+msgstr ""
+
+msgctxt "#10875
+msgid ""
+msgstr ""
+
+msgctxt "#10876
+msgid ""
+msgstr ""
+
+msgctxt "#10877
+msgid ""
+msgstr ""
+
+msgctxt "#10878
+msgid ""
+msgstr ""
+
+msgctxt "#10879
+msgid ""
+msgstr ""
+
+msgctxt "#10880
+msgid ""
+msgstr ""
+
+msgctxt "#10881
+msgid ""
+msgstr ""
+
+msgctxt "#10882
+msgid ""
+msgstr ""
+
+msgctxt "#10883
+msgid ""
+msgstr ""
+
+msgctxt "#10884
+msgid ""
+msgstr ""
+
+msgctxt "#10885
+msgid ""
+msgstr ""
+
+msgctxt "#10886
+msgid ""
+msgstr ""
+
+msgctxt "#10887
+msgid ""
+msgstr ""
+
+msgctxt "#10888
+msgid ""
+msgstr ""
+
+msgctxt "#10889
+msgid ""
+msgstr ""
+
+msgctxt "#10890
+msgid ""
+msgstr ""
+
+msgctxt "#10891
+msgid ""
+msgstr ""
+
+msgctxt "#10892
+msgid ""
+msgstr ""
+
+msgctxt "#10893
+msgid ""
+msgstr ""
+
+msgctxt "#10894
+msgid ""
+msgstr ""
+
+msgctxt "#10895
+msgid ""
+msgstr ""
+
+msgctxt "#10896
+msgid ""
+msgstr ""
+
+msgctxt "#10897
+msgid ""
+msgstr ""
+
+msgctxt "#10898
+msgid ""
+msgstr ""
+
+msgctxt "#10899
+msgid ""
+msgstr ""
+
+#
+msgctxt "#100000
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100010
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100020
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100030
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100040
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100050
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100060
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100070
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100080
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100090
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100100
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100110
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100120
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100130
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100140
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100150
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100160
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100170
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100180
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100190
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100200
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100210
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100220
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100230
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100240
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100250
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100260
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100270
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100280
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100290
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100300
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100310
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100320
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100330
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100340
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100350
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100360
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100370
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100380
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100390
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100400
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100410
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100420
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100430
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100440
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100450
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100460
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100470
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100480
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100490
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100500
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100510
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100520
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100530
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100540
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100550
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100560
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100570
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100580
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100590
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100600
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100610
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100620
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100630
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100640
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "msgi650
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100660
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100670
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100680
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100690
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100700
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100710
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100720
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100730
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100740
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100750
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100760
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100770
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100780
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100790
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100800
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100810
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100820
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100830
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100840
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100850
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100860
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100870
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100880
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100890
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100900
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100910
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100920
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100930
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100940
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100950
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100960
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100970
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100980
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100990
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+#
+msgctxt "#101000
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101010
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101020
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101030
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101040
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101050
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101060
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101070
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101080
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101090
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101100
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101110
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101120
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101130
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101140
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101150
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101160
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101170
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101180
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101190
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101200
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101210
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101220
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101230
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101240
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101250
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101260
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101270
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101280
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101290
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101300
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101310
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101320
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101330
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101340
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101350
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101360
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101370
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101380
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101390
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101400
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101410
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101420
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101430
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101440
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101450
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101460
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101470
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101480
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101490
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101500
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101510
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101520
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101530
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101540
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101550
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101560
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101570
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101580
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101590
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101600
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101610
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101620
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101630
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101640
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "msgi650
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101660
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101670
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101680
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101690
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101700
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101710
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101720
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101730
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101740
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101750
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101760
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101770
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101780
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101790
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101800
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101810
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101820
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101830
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101840
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101850
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101860
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101870
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101880
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101890
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101900
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101910
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101920
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101930
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101940
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101950
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101960
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101970
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101980
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101990
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+#
+msgctxt "#102000
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102010
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102020
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102030
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102040
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102050
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102060
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102070
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102080
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102090
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102100
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102110
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102120
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102130
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102140
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102150
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102160
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102170
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102180
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102190
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102200
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102210
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102220
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102230
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102240
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102250
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102260
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102270
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102280
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102290
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102300
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102310
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102320
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102330
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102340
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102350
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102360
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102370
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102380
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102390
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102400
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102410
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102420
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102430
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102440
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102450
+msgid ""
+msgstr "[COLOR=Yellow]מיכל ויצמן (שם נעוריה: קעה)  (נולדה ב-9 בנובמבר 1982) הידועה בשם הבמה מיכל הקטנה היא שחקנית ישראלית.[/COLOR][CR][CR]קורות חייה:[CR]ויצמן נולדה וגדלה ביבנה. כשהייתה בת 14 זכתה במקום השני בשעשועון הטלוויזיה "קיץ על החוף". בשנת 2000 גילמה את דמותה של ספיר בעונה השישית של אופרת הסבון הישראלית "רמת אביב גימל". בין השנים 2002—2010 עבדה בחנות "קסטרו", תחילה כמוכרת ולאחר מכן כמנהלת וזכיינית של הסניף. ב-2010 החליטה לחזור לתחום הבידור.[CR]פעילותיה לילדי הגיל הרך:[CR]בשנת 2010 הוציאה ויצמן לחנויות את קלטת הילדים "מיכל הקטנה". בעקבות הצלחת הקלטת בקרב הילדים, הופיעה בהצגת הילדים "השיר שבלב", המשודרת ב-HOT V.O.D, וב-DVD, וכן הוציאה יומן לילדים. בשנת 2010 הופיעה במופע לגיל הרך "מיכל הקטנה חדשה בשכונה", בבימויו של אבי דור. כמו כן, החלה להופיע במופע "מיכל הקטנה - לב אוהב".בשנת 2012 הוציאה לאור את ספר הילדים הראשון שלה "אני מיכל הקטנה". במהלך אותה שנה, השתתפה בהצגת הילדים "מיכל הקטנה בממלכת האהבה", והצטלמה עבור yes VOD לתוכנית הילדים "מיכל הקטנה רוצה להיות גדולה".בשנת 2013 השתתפה מיכל ב"מותק של פסטיבל 6", וכן השתתפה בסדרת הילדים "חבורת מיכל הקטנה", ששודרה ב-Yes. בשנת 2014 המשיכה לשתף פעולה עם חברת Yes כאשר השתתפה בסדרת הילדים "מיכל הקטנה והטונטונים". בחנוכה 2014 השתתפה במופע "מותק של פסטיבל 7".מיכל ויצמן נשואה, ואם לשני ילדים.[CR]""
+
+msgctxt "#102460
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102470
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102480
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102490
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102500
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102510
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102520
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102530
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102540
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102550
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102560
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102570
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102580
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102590
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102600
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102610
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102620
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102630
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102640
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "msgi650
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102660
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102670
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102680
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102690
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102700
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102710
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102720
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102730
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102740
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102750
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102760
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102770
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102780
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102790
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102800
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102810
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102820
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102830
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102840
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102850
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102860
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102870
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102880
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102890
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102900
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102910
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102920
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102930
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102940
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102950
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102960
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102970
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102980
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#102990
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+#
+msgctxt "#103000
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103010
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103020
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103030
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103040
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103050
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103060
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103070
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103080
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103090
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103100
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103110
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103120
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103130
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103140
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103150
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103160
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103170
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103180
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103190
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103200
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103210
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103220
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103230
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103240
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103250
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103260
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103270
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103280
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103290
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103300
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103310
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103320
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103330
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103340
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103350
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103360
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103370
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103380
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103390
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103400
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103410
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103420
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103430
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103440
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103450
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103460
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103470
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103480
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103490
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103500
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103510
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103520
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103530
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103540
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103550
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103560
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103570
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103580
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103590
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103600
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103610
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103620
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103630
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103640
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "msgi650
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103660
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103670
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103680
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103690
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103700
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103710
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103720
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103730
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103740
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103750
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103760
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103770
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103780
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103790
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103800
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103810
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103820
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103830
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103840
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103850
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103860
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103870
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103880
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103890
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103900
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103910
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103920
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103930
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103940
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103950
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103960
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103970
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103980
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#103990
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+#
+msgctxt "#104000
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104010
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104020
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104030
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104040
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104050
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104060
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104070
+msgid ""
+msgstr "[COLOR=Yellow]קופיקו היא סדרת ספרי ילדים מאת תמר בורנשטיין-לזר העוסקת בקורותיו של קוף בשם קופיקו הגר עם משפחה ישראלית בשכונת עין גנים שבפתח תקווה. דמותו של קופיקו הוא של קוף חצוף ושובב, עוסק תמיד במתיחות, התחזויות ופריקת עול. קופיקו מחזיקה בשיא של הסדרה מאריכת הימים בכל הזמנים בשפה העברית, כ-60 שנים.[/COLOR][CR][CR]היסטוריה:[CR]קופיקו הופיע לראשונה כדמות בסיפור בדבר לילדים בשנת 1954. בסיפור המקורי, "הקוף שהתחפש", הגיבורה הייתה ילדה בשם אפרת שדודה הביא לה את קופיקו במתנה. דמותו של קופיקו התפתחה וכמה חוברות מאוחר יותר הוא החל גם לדבר בסיפור "גם קופיקו מביא ביכורים". בשנת 1957 יצא הספר הראשון בסדרה, "קופיקו האורח". נכתבו גם כמה ספרים בסדרה על קופיקו שנקראה "האנציקלופדיה העליזה של קופיקו". הסדרה גם דומה לסדרה "קופיקו אולי תדע", שכתובה ברשימה.במהלך השנים כתבה לזר יותר מ-140 ספרים שגיבורם היה קופיקו. רוב הספרים אוירו על ידי מ. אריה. בעוד הספרים עצמם זכו לפופולריות רבה, חלקם זכו לביקורות שליליות מסוימות מצד מורים ומבקרים ספרותיים ובראשם אוריאל אופק, עקב מה שכונה בפיהם "רמת כתיבה נמוכה". בנוסף אף שווקו משחקי קופסה של קופיקו.הספרים זכו לעיבודים רבים, בין השאר שלמה בר שביט ולזר הקריאו סיפורי קופיקו ברדיו, קופיקו היה גיבור של רצועת קומיקס בשם "תעלולי קופיקו" במקומון "רחוב ראשי" ב-1983, הומחזו כ-15 מחזות שונים המתבססים על הספרים, וב-1993 עובדה סדרת הספרים לתוכנית טלוויזיה בשם זהה בת 15 פרקים ששודרה בערוץ הילדים, וכל פרקי הסדרה נמכרו גם בקלטות וידאו. הסדרה עצמה שודרה בשידורים חוזרים בערוץ הילדים וערוץ 2 בין השנים 1994 - 1997. בעקבות הצלחת הסדרה התחילו להימכר מוצרים רבים של קופיקו כמו בובות, מחברות, תיקים, גביעי גלידה, ופלים, כדורים מאויירים, משחקי קופסה ומחשב ועוד.ב-2009 חברת YES העלתה את ההפקה הטלוויזיונית החדשה והעכשווית ל"קופיקו" ללקוחותיה ב-YES VOD. דמותו של קופיקו אף הוסרטה, בסרט שביים בועז דוידזון ב-1987. בשנת 2013 השתתף קופיקו בתוכנית מציאות פיקטיבית בשם "הגיבורים".במקביל לקורותיו של קופיקו, פרסמה לזר גם סדרת ספרים על קוף נוסף, צ'יפופו, בן דודו של קופיקו, קוף בלש הנודד ברחבי העולם ועוזר לילדים במצוקה, שחלק רבים מקווי האופי שלו עם בן דודו הספרותי, אולם הרקע להרפתקאותיו היה לרוב מחוץ לארץ ישראל."
+
+msgctxt "#104080
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104090
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104100
+msgid ""
+msgstr "[COLOR=Yellow]בילבי היא ילדה מיוחדת במינה שעושה כל מה שבא לה. היא חזקה ואמיצה, חכמה מכולם, שובבה ובלגניסטית לא קטנה.[/COLOR][CR][CR][CR]היא חיה בוילה עם חבריה: האחים טומי ואניקה, הקוף "מר נלסון" והסוס שלה. החבורה חווה הרפתקאות רבות ולפעמים גם מסתבכת בצרות; אבל, לא לדאוג בילבי תמיד מצליחה להתגבר על כל הקשיים העומדים בדרך בזכות כוחותיה המיוחדים, האנרגיה והדמיון המפותח שלה."
+
+msgctxt "#104110
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104120
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104130
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104140
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104150
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104160
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104170
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104180
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104190
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104200
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104210
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104220
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104230
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104240
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104250
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104260
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104270
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104280
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104290
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104300
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104310
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104320
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104330
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104340
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104350
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104360
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104370
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104380
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104390
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104400
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104410
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104420
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104430
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104440
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104450
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104460
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104470
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104480
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104490
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104500
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104510
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104520
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104530
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104540
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104550
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104560
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104570
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104580
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104590
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104600
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104610
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104620
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104630
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104640
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "msgi650
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104660
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104670
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104680
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104690
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104700
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104710
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104720
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104730
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104740
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104750
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104760
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104770
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104780
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104790
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104800
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104810
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104820
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104830
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104840
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104850
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104860
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104870
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104880
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104890
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104900
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104910
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104920
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104930
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104940
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104950
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104960
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104970
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104980
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#104990
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+
+#
+msgctxt "#105000
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105010
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105020
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105030
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105040
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105050
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105060
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105070
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105080
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105090
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105100
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105110
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105120
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105130
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105140
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105150
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105160
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105170
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105180
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105190
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105200
+msgid ""
+msgstr "[COLOR=Yellow]סרטים מצוירים מדובבים לעברית.[/COLOR][CR][CR]-מולאן[CR]-היפה והחיה[CR]-אדם וחווה[CR]-מגלים עם דורה[CR]-אומץ[CR]-הרפתקאות שלומיאל[CR]-מפלצת של מלון[CR]-קומבה[CR]-הארי פוטר[CR]-אי.טי.[CR]-מליפיסנט[CR]-פו הדב[CR]-מרקו מקאקו[CR]-להציל נסיכה[CR]ועוד רבים וטובים...""
+
+msgctxt "#105210
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105220
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105230
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105240
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105250
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105260
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105270
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105280
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105290
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105300
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105310
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105320
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105330
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105340
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105350
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105360
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105370
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105380
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105390
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105400
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105410
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105420
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105430
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105440
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105450
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105460
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105470
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105480
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105490
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105500
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105510
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105520
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105530
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105540
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105550
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105560
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105570
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105580
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105590
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105600
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105610
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105620
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105630
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105640
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "msgi650
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105660
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105670
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105680
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105690
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105700
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105710
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105720
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105730
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105740
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105750
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105760
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105770
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105780
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105790
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105800
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105810
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105820
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105830
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105840
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105850
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105860
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105870
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105880
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105890
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105900
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105910
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105920
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105930
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105940
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105950
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105960
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105970
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105980
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#105990
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+
+#
+msgctxt "#106000
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106010
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106020
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106030
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106040
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106050
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106060
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106070
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106080
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106090
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106100
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106110
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106120
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106130
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106140
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106150
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106160
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106170
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106180
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106190
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106200
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106210
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106220
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106230
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106240
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106250
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106260
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106270
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106280
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106290
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106300
+msgid ""
+msgstr "[COLOR=Yellow]מופעים של מיטב המופעים של משה דץ והכבשה שושנה[/COLOR][CR][CR]1.הכבשה שושנה בגן החיות 2. הכבשה שושנה שלום על ישראל 3. הכבשה שושנה וחברים 4. הכייפת של דץ ושושנה - חלק 1. 5. הכייפת של דץ ושושנה - חלק 2. 6. הכייפת של דץ ושושנה - חלק 3."
+
+msgctxt "#106310
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106320
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106330
+msgid ""
+msgstr "[COLOR=Yellow]סדרה המיועדת לגיל הרך.[/COLOR][CR][CR]שלוש בובות כוכב (נימו, מונה ומים) חיות בשמיים בין העננים, ועוסקות בשאלה המגיעה לאוזניהם מחדרו של ילד, שגר בכדור הארץ. אביו של הילד בדיוק מסיים לספר לו סיפור - שתמיד מסתיים בשאלה, איתה מתמודדים הנימנומים."
+
+msgctxt "#106340
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106350
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106360
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106370
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106380
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106390
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106400
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106410
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106420
+msgid ""
+msgstr "[COLOR=Yellow]טלטאביז (באנגלית: Teletubbies) היא תוכנית טלוויזיה חינוכית לילדים בגילאי הגן, אשר הופקה במקור עבור רשת ה-BBC בין השנים 1997 עד 2001 על ידי חברת ההפקות Ragdoll Productions.[/COLOR][CR][CR]התוכנית זכתה להצלחה מסחרית רבה באופן מהיר יחסית, בתחילה בבריטניה ובהמשך ברחבי העולם. בישראל הסדרה שודרה בדיבוב לעברית בערוץ הראשון. לא מכן שודרה בשידורים חוזרים ב"ערוץ לולי".[CR]ביוני 2014 הכריזה ה-BBC כי סדרה חדשה בת 60 פרקים תעלה לשידור, ותופק על ידי חברת DHX Media, אשר רכשה את Ragdoll.‏[1] אלה יהיו הפרקים החדשים הראשונים מאז 2001 והראשונים שישודרו ב-CBeebies, לאחר שהסדרה המקורית שודרה באותו הערוץ בשידורים חוזרים. אולם, הסדרה החדשה תצולם על חיקויים של הסטים המקוריים במקום בחוות וימפסטון שבוורוויקשייר (מיקומה המקורי של ארץ הטלטאביז) משום שבאזור שבו בית הטלטאביז היה קיים עכשיו אגם מכיוון שרוזמרי הארדינג, בעלת החווה, מאסה ממעריצי הסדרה שפלשו לשטח. באפריל 2015, הוכרז דניאל ריגבי כקריין הסדרה, פרן קוטון וג'ים ברודבנט הוכרזו כקולות החצוצרות, וג'יין הורוקס תדבב את הטאבי פון (Tubby Phone), מכשיר המשגר את הטלטאביז אל העולם המודרני. נכון ליוני 2015, לא הוכרזו שחקנים לתפקידיהם של הטלטאביז עצמם.[CR]הסדרה מיועדת לקהל צעיר בין הגילאים שנה עד ארבע. התוכנית מתמקדת בהרפתקאותיהן של ארבע דמויות עגלגלות וצבעוניות בעלות אנטנות על ראשן ומקלטי טלוויזיה על בטנן, אשר מאפשרים להן לצפות בתוכניות ילדים. הטלטאביז גרים ב"ארץ הטלטאביז", בבית עתידני הממוקם בין גבעות ירוקות, בו חיים גם ארנבונים רבים ופרחים אשר מסוגלים לדבר."
+
+msgctxt "#106430
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106440
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106450
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106460
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106470
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106480
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106490
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106500
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106510
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106520
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106530
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106540
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106550
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106560
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106570
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106580
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106590
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106600
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106610
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106620
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106630
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106640
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "msgi650
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106660
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106670
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106680
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106690
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106700
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106710
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106720
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106730
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106740
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106750
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106760
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106770
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106780
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106790
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106800
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106810
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106820
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106830
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106840
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106850
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106860
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106870
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106880
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106890
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106900
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106910
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106920
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106930
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106940
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106950
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106960
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106970
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106980
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#106990
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+
+#
+msgctxt "#107000
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107010
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107020
+msgid ""
+msgstr "[COLOR=Yellow]אדיבו היא סדרת ילדים נפוצה שעל פיה נעשו לא מעט משחקי מחשב המיועדים לילדים.[/COLOR][CR][CR]אדיבו ואדיליה הם שני אחים חייזרים חמודים, ויש להם חיית מחמד חייזרית - בוזי, ורובוט חכם וידידותי - רוביטוק. לכל החבורה יש חללית מיוחדת שיכולה להתמזער ולטוס בתוך הגוף האנושי. בכל פרק רוביטוק מלמד את אדיבו ואת חבריו משהו חדש על גוף האדם: החל בדרך פעולת העין וכלה בפעולות המעיים המביכות יותר. דרך מצוינת עבור הילדים להכיר את אברי הגוף, תפקידם והשמות שלהם."
+
+msgctxt "#107030
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107040
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107050
+msgid ""
+msgstr "[COLOR=Yellow]הכירו את לין: הכירו את לין החייכנית והאופטימית אשר מאמינה שפרחים ממלאים את הלב שמחה, העצים עושים מצב רוח טוב, ופירות זו הדרך של העולם להגיש לנו ממתקים של הטבע.[/COLOR][CR][CR]בכדי להשיב טוּב לעולם הנדיב לין שותלת, עודרת, מטפחת ונוטעת בגינה המתוקה שלה."
+
+msgctxt "#107060
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107070
+msgid ""
+msgstr "[COLOR=Yellow]בוב הבנאי (באנגלית: Bob the Builder) היא סדרת אנימציית סטופ מושן בריטית לילדים שנוצרה על ידי קית' צ'פמן.[CR] התוכנית נחשבת לאחת מתוכניות הטלוויזיה לילדים המצליחות ביותר בבריטניה.[/COLOR][CR][CR]סדרה עוסקת בהרפתקאותיו של בנאי בריטי בשם בוב, ובחבריו שחלקם הם מכונות צמ"ה מואנשות שונות. בוב עובד עם וונדי ולשניהם יש חתול בשם פילצ'ארד. בכל פרק מתמקדת החבורה בבניית בניין כלשהו (מפעל חדש, מצפה אסטרונומי, וכו') או בשיפוצים ותיקונים שונים, תוך שיתוף פעולה כדי לפתור מגוון רחב של בעיות. בנוסף לכך, מתמקדות עלילות הפרקים גם בסיפורים האישיים של הדמויות השונות.[CR]בתוכנית מושם דגש על יישוב קונפליקטים, עבודה בשיתוף פעולה, חברות, תכנון ומיומנויות למידה שונות. אמרת הכנף הקבועה של בוב היא "נצליח לתקן", והתשובה הקבועה של שאר הדמויות היא: "כן, כן, כן". אמרת כנף זו היא גם כותרת שיר הנושא של התוכנית, אשר היה להיט בבריטניה. למעלה ממיליון עותקים נמכרו משיר זה לאורך השנים בבריטניה בלבד, והוא היה השיר הנמכר ביותר בבריטניה בשנת 2000.‏[1][CR]על אף שהעונות הראשונות בשנים 1998 עד 2002 של הסדרה הופקו באנימצית סטופ מושן, העונות המתקדמות יותר של הסדרה בשנת 2011 הופקו בהמשך באמצעות אנימציה ממוחשבת. כמו כן, בעקבות ההצלחה של הסדרה הופקה בהמשך סדרת ספין אוף בשם "Ready, Steady, Build!".‏‏[2][CR]בשנת 2001 יצא לשווקים סרט באורך מלא של בוב הבנאי שבו השתתף אלטון ג'ון. לאורך השנים הסדרה שודרה ב-30 מדינות שונות.[CR]בשנת 2014 שונה מראהו של בוב הבנאי למראה צעיר וגבוה יותר‏[3]. כמו כן גם המדבב של בוב בגרסה האנגלית השתנה."
+
+msgctxt "#107080
+msgid ""
+msgstr "[COLOR=Yellow]לילותיו של בולי איש השלג וחבריו בכפר הבולים.[/COLOR][CR][CR]מספרת על בולי איש שלג שהירח הפיח בו ובחבריו רוח חיים. קסמו של הירח מונע מהם מלהנמס גם בקיץ ובשמש, וכך הם מטיילים בעולם, משחקים, שוחים ומבלים."
+
+msgctxt "#107090
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107100
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107110
+msgid ""
+msgstr "[COLOR=Yellow]הכירו את לין: הכירו את לין החייכנית והאופטימית אשר מאמינה שפרחים ממלאים את הלב שמחה, העצים עושים מצב רוח טוב, ופירות זו הדרך של העולם להגיש לנו ממתקים של הטבע.[/COLOR][CR][CR]בכדי להשיב טוּב לעולם הנדיב לין שותלת, עודרת, מטפחת ונוטעת בגינה המתוקה שלה."
+
+msgctxt "#107120
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107130
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107140
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107150
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107160
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107170
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107180
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107190
+msgid ""
+msgstr "[COLOR=Yellow]'הסדרה מתמקדת בבובי, נער צעיר אשר חלם תמיד על מכונית משלו ובבינבה, מכונית צהובה קטנה ומדברת שבקעה מתוך ביצה מוזרה בתוך משחטת רכב.[/COLOR][CR][CR]בובי, אשר שומע אותה בוכה, יוצא לעזרתה רגע לפני שהיא נהרסת, ומאז הם נעשים חברים טובים. בינבה, בובי והכלב שלו, פונפון יוצאים יחדיו למסע הרפתקאות בעולם במטרה למצוא את אמהּ של בינבה. הם נאלצים להתחמק מזעם הרשע שמנסה לתפוס את בינבה בכל הזדמנות.'"
+
+msgctxt "#107200
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107210
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107220
+msgid ""
+msgstr "[COLOR=Yellow]הנסיכה סופיה הראשונה היא סדרת אנימציה ממוחשבת אמריקאית לילדים המשודרת בישראל בערוץ דיסני ג'וניור.[/COLOR][CR][CR]עלילה:[CR]נערת כפר בשם סופיה הפכה לנסיכה כשאימה המלכה מירנדה נישאה למלך רונלד, חיים כנסיכה זרים לסופיה ולכן היא עוזרת לחברים כדי להיות ולהתנהג כמו נסיכה. במהלך הסדרה היא פוגשת דמויות של וולט דיסני (סינדרלה, יסמין, אריאל בת הים, והפיות של היפהפייה הנרדמת).[CR]הסדרה נוצרה עם שלל נסיכות של סרטי חברת וולט דיסני היא מתארת את חייה של כל נסיכה.[CR]דמויות:[CR]סופיה - ילדת כפר שהפכה לנסיכה כאשר אימה התחתנה עם רונלד, ומאז היא מנסה להתנהג כמו נסיכה אמיתית.[CR]אמבר - חברתה החדשה של סופיה, ביתו של רונלד.[CR]ג'יימס - נסיך, בנו של רונלד ואח של אמבר, עוזר לסופיה.[CR]המלכה מירנדה - אימה של סופיה אשר התחתנה עם רונלד והפכה למלכה.[CR]רונלד - מלך, אביהם של אמבר וג'יימס ואביה החורג של סופיה.[CR]בייליוויק - המשרת של המלך רונלד.[CR]פלורה, מריוותר, ופאונה - פיות מהסרט "היפהפייה הנרדמת", מורות לבית ספר לנסיכות ולנסיכים.[CR]קלובר - ארנב מדבר וחבר של סופיה.[CR]סדריק - המכשף של המלך רונלד,הוא רוצה את התיליון הקסום של סופיה כדי להישתלט על הממלכה"
+
+msgctxt "#107230
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107240
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107250
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107260
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107270
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107280
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107290
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107300
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107310
+msgid ""
+msgstr "[COLOR=Yellow]יובל המבולבל היא סדרת טלוויזיה ישראלית המשודרת בערוץ הופ!. לאור ההצלחה הרבה של התוכנית, הוחלט להרחיב את הפורמט הקיים שלה. בסדרה זו לאחר שיובל המבולבל קיבל את החולצה עם הכוכב הוא מגיע לערוץ הופ עם חבר חדש בשם צי'פ וכל הזמן הוא מתבלבל.[/COLOR][CR][CR]העלילה:[CR]העלילה עוסקת בשכונה של הופ! בה יובל המבולבל חוזר לפה עם חבר חדש בשם צ'יפ, בכל פרק הוא מתבלבל ועושה טעויות אבל יחד עם צ'יפ הוא לומד לקח ממעשיו, בעונה השנייה צ'יפ ויובל שוב מתנהגים אותו דבר כמו בעונה הקודמת, בעונה השלישית הוחלט לשנות את הסדרה ולהביא דמויות חדשות ליובל אלא שצ'יפ מופיע בעונה זו רק בפרק יחיד והקול שלו השתנה, כשיובל יוצא אל החצר הוא פוגש את הילדים ושר איתם בכל פרק שיר אחד מתוך קלטות הילדים שלו.[CR]הדמויות:[CR][עריכת קוד מקור | עריכה][CR]יובל המבולבל (יובל שם טוב) : ילד מבולבל שאימו ואביו אמריקאים, קוראים לו כך בגלל שהוא משקר מתבלבל ועושה טעויות ובדיחות כל הזמן, הוא אומר כל מיני משפטים כמו "אווו" "שקשוקה" "קופסה מדבוחה" ולפעמים הוא נעשה יותר רציני והוא כבר שוכח את הבלבולים שלו.[CR]צ'יפ (ז'יל בן דוד [עונות 1ו2] ,יוסף סוויד [עונה 3]) : שימפנזה בצבע כחול וחברו של יובל, לעתים הוא יותר רציני ולא מסכים להתבלבל עם יובל, אבל בכמה פרקים אחרים הוא כבר אוהב את הבלבולים של יובל.[CR]תיבת הדואר : תיבת דואר אדומה שמופיעה בכל סוף פרק (ולפעמים בכמה פרקים בסדרה) ואומרת ליובל את המשפט "יש לך מכתב פתח אותו עכשיו" כשיש מכתב מאיזה ילד, היא השתנתה לתיבת דואר אחרת ב"מועדון[CR]קפטן הוק (שאול עזר) : קפטן פירטים וחברו של יובל, בסוף אחד הפרקים הוא מצא עם יובל תיבה מלאה בצדפות.[CR]סבתא (גאולה נוני)  : סבתו של יובל, באחד הפרקים היא אומרת ליובל שהיא לא פוחדת מהחושך.[CR]עדי (יובל ווין) : ילדה וחברתו של יובל, באחד הפרקים היא המציאה מכונה."
+
+msgctxt "#107320
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107330
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107340
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107350
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107360
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107370
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107380
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107390
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107400
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107410
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107420
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107430
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107440
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107450
+msgid ""
+msgstr "[COLOR=Yellow]כוכב הילדים, "גילי בא לבקר", והקונדיטור, מיקי שמו, מארחים ילדים ב"מועדון המאפים הטובים", עם סיפורים, משחקים, והמון הפתעות.[/COLOR]"
+
+msgctxt "#107460
+msgid ""
+msgstr "[COLOR=Yellow]כוכבת הילדים מיקי ילדה מצחיקה בעלת דמיון מפותח ביחד עם סבא נתי, הכלב פונץ' ונדב.[/COLOR][CR][CR]"
+
+msgctxt "#107470
+msgid ""
+msgstr "[COLOR=Yellow]סדרת אנימציה משעשעת וקצבית, אשר עוקבת אחר ההרפתקאות של חבורת מיקמק - מקס, זואי, סאני וג'ימבו, קבוצה של ארבעה חברים אשר מפתחים משחקי מחשב וירטואליים.[/COLOR][CR][CR]האויבים המושבעים של חבורת מיקמק היא גברת מיקיאוולי, פוליטיקאית משופשפת ואשת עסקים והעוזר הנאמן שלה מונדו. היא רוצה להשתלט על המעבדה שלהם ולבנות קניון גדול במקומו, כחלק מהתכנית הגדולה שלה לצבור כסף וכוח ולהשתלט על כל מיקמק סיטי (העיר)."
+
+msgctxt "#107480
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107490
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107500
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107510
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107520
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107530
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107540
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107550
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107560
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107570
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107580
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107590
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107600
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107610
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107620
+msgid ""
+msgstr "[COLOR=Yellow]ערוץ הופ! הוא ערוץ טלוויזיה ישראלי, הראשון מסוגו בעולם, המיועד כולו לילדי טרום בית ספר וכיתות א' - ב' (גילאי 2 - 8). הערוץ משודר בישראל מדי יום בין השעות 5:00 בבוקר ל-21:00 בערב במסגרת חבילות הבסיס של חברת הכבלים HOT (אפיק 77) וחברת הלוויין yes (אפיק 82).[CR]חלק מתכני הערוץ מוצעים גם בערוץ הופ! ביוטיוב, אתר האינטרנט של הופ!, אתר המנויים של הופ! וכן באפליקציות מובייל של ערוץ הופ!.[CR]ערוץ הופ! מקיים פעילויות שטח מגוונות במהלך כל ימות השנה, לרבות מופעי חינם ברחבי הארץ, הצגות וכן, פעילויות שטח אינטראקטיביות שונות.[/COLOR][CR][CR]צביון הערוץ:[CR]ערוץ הופ! שם לו למטרה לשדר תכנים איכותיים, מעשירים ונטולי אלימות המותאמים, קוגניטיבית ורגשית, לקהל הצופים הצעיר. כל תכני הפקות המקור המופקות על ידי הערוץ מפותחים ומופקים בליווי צמוד של אנשי מקצוע בתחום התפתחות הילד והם מותאמים לסדר היום המשפחתי, החל משעות הבוקר המוקדמות ועד שעת השינה. [CR]הופ! שם דגש מיוחד על תכנים בעלי צביון ישראלי, כגון: עידוד קריאה, היכרות עם אותיות א' - ב', יסודות חשבון, טבע ישראלי, שבת, חגים ומועדים, עונות השנה  וכיוצא בזה. בערוץ אין פרסומות או תוכן שיווקי.[CR]תכני ערוץ הופ:[CR]מיום הקמתו משדר הערוץ תמהיל של תכנים איכותיים, הן מרחבי העולם המדובבים לעברית, והן תכני מקור המופקים במיוחד לצורכי הערוץ ומהווים כ-30% מלוח המשדרים. רבות מתוכניות המקור של הופ! הפכו זה מכבר לקלאסיקה, בהן: דפנה ודודידו, הקונצונים, אליק ובליק, טובי דובי, פרפרים של שבת, יובל המבולבל, כח הקצב, ממלכת טוביהו, סוד הקצב של מיכל, מולי וצומי ועוד רבים.בין התוכניות הבינלאומיות ששודרו בעבר או משודרות כיום בהופ! ניתן למצוא לדוגמה: בוב הבנאי (Bob the Builder), סמי הכבאי (Fireman Sam), נווה עצלנות (Lazy Town), דורה, תותית (Strawberry Shortcake), מועדון החברים של מיקי מאוס (Mickey mouse clubhouse), הרפתקאות הלו קיטי (Hello Kitty), הדבורה מאיה (Maya the bee), הפיה לילי (Princess lillifee), החיוך של רוזי (Everything`s Rosie) ורבות נוספות.קבוצת הופ! היא נציגה ושותפה בישראל של עמותת "סומסום" (Sesame workshop) האמריקאית, יוצרת ומפיקת הסדרה "רחוב סומסום" ברחבי העולם. במסגרת שיתוף פעולה זה, מפיק ערוץ הופ! את הגרסה הישראלית המקורית של "רחוב סומסום" ומשדר אותה בערוץ. עד 2014 הופקו בישראל על ידי הופ! 6 עונות של הסדרה."
+
+msgctxt "#107630
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107640
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107650
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107660
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107670
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107680
+msgid ""
+msgstr "[COLOR=Yellow]הערוץ הרשמי של הקומיקאית לילדים הלא היא - צ'פצ'ולה (מיכל כלפון-צמח)[/COLOR][CR][CR]בערוץ תוכלו ליהנות מקטעי הומור, שירי ילדים מקוריים ומדגדגים :)[CR]מערכונים וקטעים מתוך הטלוויזיה ועוד הפתעות..."
+
+msgctxt "#107690
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107700
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107710
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107720
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107730
+msgid ""
+msgstr "[COLOR=Yellow]רוני היא ילדה עם דמיון מפותח. היא לוקחת את אירועי היום-יום השגרתיים וגורמת להם להישמע קסומים ולא הגיוניים.[/COLOR][CR][CR]קשיו, החבר החצי אמיתי - חצי דמיוני של רוני, נסחף אחרי הסיפורים, עד שהם הופכים מופרכים לגמרי ואז הוא מחזיר את רוני ואת הצופים בחזרה למציאות."
+
+msgctxt "#107740
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107750
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107760
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107770
+msgid "[COLOR=Yellow]מהדורת חדשות מיוחדת ששום דבר בה לא מצליח להיות רציני.[/COLOR][CR][CR]עם עמוס דיקט הקריין שרק רוצה לצלוח את המהדורה בשלום, פיפי מנדולינה כתבת ל"עניינים רציניים", מטר רץ כתב הספורט והבריאות, דפי נידפי החזאית ומוקי הכלב."
+msgstr "[COLOR=Yellow]מהדורת חדשות מיוחדת ששום דבר בה לא מצליח להיות רציני.[/COLOR][CR][CR]עם עמוס דיקט הקריין שרק רוצה לצלוח את המהדורה בשלום, פיפי מנדולינה כתבת ל"עניינים רציניים", מטר רץ כתב הספורט והבריאות, דפי נידפי החזאית ומוקי הכלב."
+
+msgctxt "#107780
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107790
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107800
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107810
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107820
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107830
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107840
+msgid "[COLOR=Yellow]העלילה מספרת על ארץ של תות שדה המכונה "ארץ תות", שעשויה ממתקים ופירות.[/COLOR][CR][CR]בארץ תות גרות ילדות יתומות וחמודות: הילדה שגרה בארץ תות היא תותית ילדה קטנה עם לב ענק ואופטימיות מדבקת, עוזרת תמיד לחברים ומאמינה שהכל אפשרי. היא מלמדת מחקרים פותרת בעיות ומשחקת עם חברותיה עוגית, פיצפוצית, תפוזית ואחרות. תותית וחברותיה משתנות במראה שלהן."
+msgstr "[COLOR=Yellow]העלילה מספרת על ארץ של תות שדה המכונה "ארץ תות", שעשויה ממתקים ופירות.[/COLOR][CR][CR]בארץ תות גרות ילדות יתומות וחמודות: הילדה שגרה בארץ תות היא תותית ילדה קטנה עם לב ענק ואופטימיות מדבקת, עוזרת תמיד לחברים ומאמינה שהכל אפשרי. היא מלמדת מחקרים פותרת בעיות ומשחקת עם חברותיה עוגית, פיצפוצית, תפוזית ואחרות. תותית וחברותיה משתנות במראה שלהן."
+
+msgctxt "#107850
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107860
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107870
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107880
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107890
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107900
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107910
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107920
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107930
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107940
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107950
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107960
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107970
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107980
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#107990
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+#
+msgctxt "#108000
+msgid ""
+msgstr "[COLOR=Yellow]ערוץ הילדים (בעבר, "ערוץ 6"), הוא ערוץ טלוויזיה ישראלי לילדים המשודר בממיר הדיגיטלי של HOT (ערוץ 80) וב-yes (אפיק 90).[CR]ערוץ הוא אחד מערוצי הכבלים הראשונים בישראל, יחד עם ערוץ המשפחה (לימים ערוץ 3), ערוץ הספורט וערוץ הסרטים. ביולי 2012 נמכר הערוץ לקבוצת התקשורת RGE ושנה אחר כך, חזרה "נגה תקשורת" לנהל אותו.[/COLOR][CR][CR]ב-22 ביוני 2014 החל שידור הסדרה "שוברי גלים" לצופי Yes.ב-9 ביולי 2014, עם תחילתו של מבצע צוק איתן, החל שידורה של התוכנית "תנו לגדול בשקט", אשר עד מהרה הוחלפה ב"באים בטוב". את התוכניות הנחו דנה פרידר ואילן רוזנפלד, טל מוסרי ועודד פז.בתחילת ספטמבר 2014 עלתה התוכנית "MEאני" שמציגה את חייהם הפרטיים של כוכבי-נוער שונים, את תחביביהם, חבריהם ומשפחתם.החל מ-2015, משודרים (בשידור חוזר) פרקי הסדרה "כאן גרים בכיף" בימי א-ה בשעה 19:10. יחד עם פתיחת השנה, יצאה העונה התשיעית של "הפיג'מות" השודרה לילדי HOT. לאחר סיום העונה, עלתה העונה החמישית של "גאליס". ב-22 במרץ 2015 עלתה תוכנית יומית חדשה בשם "נדחפים"."
+
+msgctxt "#108010
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108020
+msgid ""
+msgstr "[COLOR=Yellow]הטלוויזיה החינוכית הישראלית היא ערוץ הטלוויזיה הראשון שהחל לפעול בישראל. במקור נועד הערוץ ללמד ילדים ובני נוער נושאים שונים, אולם שנים לאחר הקמתו, החל הערוץ לשדר גם תכנים להעשרת מבוגרים. אולפני הטלוויזיה החינוכית נמצאים ברחוב קלאוזנר 14 ברמת אביב, בצמוד למרכז לטכנולוגיה חינוכית.[/COLOR][CR][CR]היסטוריה:[CR]ערוץ החל לשדר ב-24 במרץ 1966 תחת השם "נאמנות הטלוויזיה הלימודית". התוכנית הראשונה הייתה "תחושת המספר והכמות", בהנחיית שלומית דקל, ובהמשך הופקו תוכניות נוספות, כאשר קהל הייעד של השידורים היה תלמידים מגן הילדים ועד לבית הספר התיכון. הערוץ שידר חומר לימודי בתחומים כגון מתמטיקה ואנגלית, כמו גם בתחומי העשרה שונים, ומנחי התוכניות היו מורים שעברו הכשרה להנחיית משדרי טלוויזיה.שורש הטלוויזיה החינוכית ברצון להפעיל טלוויזיה בישראל, תוך התגברות על ההתנגדות למדיום זה, שנחשב לשלילי ומזיק. התחנה, שהוקמה בידי קרן משפחת רוטשילד, הועברה כעבור שנה לידי משרד החינוך. מאז, היא מופעלת כיחידה במסגרת המשרד ותקציבה מגיע ממשרד החינוך ומתשדירי חסות המשודרים בין התוכניות.במהלך השנים נוספו לתחנה זו גם תוכניות אקטואליה, משדרי בידור וסדרות טלוויזיה שגרתיות. בשנות השמונים השתנתה מגמת התוכניות לבידור, אקטואליה רכה וחינוך, ובשנים אלו שונה שמה, על פי החלטת שר החינוך יצחק נבון ל"הטלוויזיה החינוכית".במהלך שנת 1980 הוחלט ביוזמה של מנהל הטלוויזיה החינוכית, יעקב לורברבוים, ומפקד גלי צה"ל, צבי שפירא, לשדר בטלוויזיה החינוכית פעמיים ביום תוכניות של חדשות, בשיתוף פעולה עם גלי צה"ל. השניים הצליחו לשכנע במהלך את שר הביטחון, הרמטכ"ל ואת שר החינוך, והיעד לפתיחת השידורים נקבע לסוף שנת 1980‏[1]. בראש צוות ההקמה של השידורים עמדו יצחק בן נר, עדנה פאר ושמואל אוקון נחושתן‏[2]. בגלל מגבלות תקציביות, ולאור הבחירות לכנסת העשירית, פתיחת השידורים נדחתה‏[3]. בין לבין הוחלט לקיים את השידורים בערב, ולא בבוקר, בהתאם לתוכנית המקורית‏[4]. עם פתיחת מלחמת לבנון, שכונתה אז "מבצע שלום הגליל", החל הערוץ לשדר חדשות וד"שים בתוכנית "שלום הגליל". לאחר המלחמה, התוכנית נותרה ושינתה את שמה ל"ערב חדש"‏[5], אשר משודרת עד היום. המנחה הראשון של התוכנית היה דן מרגלית, ובאוקטובר 1982 הצטרף אליו גדעון רייכר‏[6].במשך יותר מעשרים שנה, במה שמכונה בתקשורת הישראלית "עידן הערוץ היחיד", שידרה הטלוויזיה החינוכית את תוכניותיה בשעות הבוקר והצהריים, ואלה היו מכוונות לתלמידי ישראל. בשנות ה-90 של המאה ה-20, כשהשתנתה מפת ערוצי הטלוויזיה בישראל, עם כניסתם לשוק התקשורת של ערוץ 2 והטלוויזיה בכבלים, הורחבו שידורי הטלוויזיה החינוכית אל ערוצים אלה.הטלוויזיה החינוכית מפעילה גם את שירות הטלטקסט בישראל.ב-6 ביוני 1995 החלו השידורים ב"חינוכית 23" - ערוץ המוקדש כולו לשידורי הטלוויזיה החינוכית הישראלית.[CR]"
+
+msgctxt "#108030
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108040
+msgid ""
+msgstr "[COLOR=Yellow]בלי סודות היא תוכנית טלוויזיה לימודית, אשר שודרה בטלוויזיה החינוכית הישראלית באמצע שנות השמונים, ובשידורים חוזרים באמצע שנות התשעים.[/COLOR][CR][CR]התוכנית יועדה לתלמידי הכיתות הנמוכות של בית הספר היסודי, וביקשה להקנות להם יכולת קריאה. התוכנית שולבה כחלק אינטגרלי ממערך ההוראה ואף ליוו אותה 10 חוברות לימוד ו-5 חוברות העשרה בהוצאת מט"ח.[CR]משדרי הטלוויזיה המחישו לצופה את תהליך הקריאה באמצעות שירים ומערכונים אותם הובילו מנחי התוכנית חני נחמיאס, אושיק לוי, נתן נתנזון וחנן גולדבלט, ושחקנים נוספים שהתארחו בתוכנית, כמו שולה חן, עפרה חזה, גליה ישי ומתי סרי. שירי התוכנית (כולל הפתיח שכתבה אילנה לופט) הולחנו על ידי שלמה יידוב. בתוכנית נעשה שימוש באנימציית פלסטלינה (הנפשת סטופ-מושן) עם הדמויות "אלפי" ו"בתי" שעוצבו והונפשו בידי דני לבקוביץ. בעידן החד ערוצי בישראל, התוכנית זכתה לאחוזי חשיפה גבוהים מאוד בקרב הילדים והיא מוגדרת כאחת מתוכניות הקלאסיקה של הטלוויזיה החינוכית.[CR]הפופולריות הגדולה הובילה גם לתוכנית המשך, "בסוד העניינים", אשר הופקה בשנים 1991-1992. כחלק מתוכנית הלימודים צפו תלמידי כיתה א' בסדרה "בלי סודות", ובכיתה ב', בסדרת ההמשך "בסוד העניינים"."
+
+msgctxt "#108050
+msgid ""
+msgstr "[COLOR=Yellow]שת וענן היא סדרת טלוויזיה ישראלית לילדים, ששודרה בטלוויזיה החינוכית הישראלית בין השנים 1983- 1986 הסדרה שודרה בשידורים חוזרים עד סוף שנות השמונים ותחילת שנות התשעים. הסדרה עסקה בנושאים בתחום היהדות, כגון- מועדי ישראל, שבתות, עדות, אישים בתולדות עם ישראל ומנהגים יהודיים.[CR]שיר הפתיחה של הסדרה, שנכתב והולחן על ידי נפתלי וגנר, בוצע על ידי להקת הכל עובר חביבי. סרטון הפתיחה הונפש על ידי משה אריאל.[/COLOR][CR][CR]עלילת הסדרה התרחשה בסטודיו של אסף, אמן מפוזר, שהיה אוסף פריטים הקשורים למסורת היהודית.[CR]יצירתו המרכזית של אסף, שנבנתה בהשראת זכרונות ילדותו, הייתה "גלגל הזמן" - לוח שנה מיוחד שהיה מורכב מגלגלי החודשים והימים העבריים, שאותו מעטרות שתי בובות דמויות אדם - קשת וענן.[CR]אסף הנחה את הסדרה ודיבר בעיקר על מושגי יסוד ביהדות לצופים הילדים. בפזרנותו, היה נזכר כל פעם במשהו שעליו לעשות או לחפש. ברגע שהיה פונה לעיסוקיו אלו, עם קריאתו של התוכי שלו שאלתיאל "קום קשת ענן, קום קשת ענן" היו קמות לתחייה הבובות קשת וענן. קשת וענן התעסקו במושגי היהדות שאסף הסביר ושרו שירים בנושא. זמן קצר לפני שאסף היה חוזר, היה מזהיר התוכי שאלתיאל את קשת וענן כי עליהם לחזור למקומם בקריאה "שן קשת ענן, שן קשת ענן" והם היו חוזרים למקומם ולמצבם הרגיל בתור בובות.[CR]חגי היה המחליף של אסף בחלק מן הפרקים, ובחלק מהם שניהם היו."
+
+msgctxt "#108060
+msgid ""
+msgstr "[COLOR=Yellow]גע עם דודלי הייתה תוכנית טלוויזיה ישראלית מקורית לילדים, בהפקתה של הטלוויזיה החינוכית. התוכנית שודרה במשך כ-5 שנים (בין השנים 1976 - 1981) ולאחר מכן שודרה בשידורים חוזרים וזכתה לפופולריות רבה בשנות השבעים והשמונים. הסדרה (למעט פרק אחד) צולמה בשחור-לבן.[/COLOR][CR][CR]בתוכנית השתתפו השחקנים שלמה ניצן בתפקיד דודלי, בעל חנות מכולת, ציפי מור בתפקיד רגע (בובה שהפכה לילד) וספי ריבלין בתפקיד פיסטוק, וכן השתתפו ילדים ושחקנים אורחים, אשר חזרו בחלק מן התוכניות. רוב התוכניות התרחשו בחנות המכולת עצמה, אף כי לשכונה היה חלק נכבד בעלילה והיא שימשה גם כאתר הצילומים. דמות נוספת שהייתה בתוכנית היא "חביתוש" (בדיבובו של שלמה ניצן), בובה מכנית גדולה, שבסיסה חבית ואשר יכולה לדבר ולהתנועע כל עוד מקפידים למתוח את הקפיץ במנגנון שלה בעזרת מפתח.[CR]כל תוכנית נפתחה בקטע אנימציה קצר שהיה בנוי סביב דמותה של "ציפי" הציפור. את ציפי צייר טוביה קורץ האחראי על יצירת הפרפרים מהתוכנית פרפר נחמד והפיקה שושנה צחור שהיא מפיקה של התוכניות רגע עם דודלי, בבית של פיסטוק ופרפר נחמד.[CR]התוכנית נועדה לחנך את הילדים בנושאים כמו חברות ועזרה הדדית וליצור אצלם ידע בנושאים מגוונים כגון תקשורת, הבדלים בין עולם המבוגרים לעולם הילדים ועוד.[CR]הפרקים צולמו בשחור-לבן (למעט פרק אחד) באולפני הטלוויזיה החינוכית ברמת אביב. הפרק נמל הוא היחיד שצולם מחוץ לאולפן ובצבע. בתחילת שנות ה-80 רכשה החינוכית ניידת שידור שאיפשרה לה לראשונה להקליט ולשדר בצבע, אולם המכשור בתוך האולפנים אפשר צילום בשחור-לבן בלבד. הפרק נמל צולם מחוץ לאולפן ולכן ניתן היה לצלמו בצבע. תוכנית הבת בבית של פיסטוק כבר צולמה בצבע החל מעונתה השנייה לאחר שדרוג הציוד באולפני הטלוויזיה החינוכית בשנת 1982.[CR]בתחילת שנות השמונים ולאחר ששלמה ניצן הודיע על כוונתו לא לשוב לדמותו של דודלי, הוחלט ליצור לרגע עם דודלי סדרת בת בשם בבית של פיסטוק. בשנת 2006, כאשר חגגו 40 שנה להקמת הטלוויזיה החינוכית - התוכנית רגע עם דודלי זכתה בתואר התוכנית האהובה ביותר. בשנת 2008 יצא לאור מארז תקליטורים ובו 12 הפרקים הראשונים של הסדרה. מארז נוסף ובו 11 הפרקים האחרונים יצא לאור בתחילת 2009.[CR]שישה מן הפרקים נחשבו אבודים, ביניהם גם הפרק הראשון, מכיוון שהטלוויזיה החינוכית לא העבירה את הסרטים המקוריים לפורמט מודרני, אך נכון ל-2008 כל הפרקים שוחזרו בהצלחה לפורמט מודרני מקלטות שידור שנעשה בהן שימוש בשנות השמונים."
+
+msgctxt "#108070
+msgid ""
+msgstr "[COLOR=Yellow]הקומדי סטור היא תוכנית טלוויזיה הומוריסטית ישראלית, ששלוש עונותיה שודרו אצל הזכיינית טלעד בערוץ 2, בשנים 1994 - 1996. התוכניות כללו רצף מערכונים קצרים ופינות הומוריסטיות קבועות, לעתים קרובות עם מוטיב חוזר, ביטויים חוזרים ומשפטי מחץ קבועים. מפיקי התוכנית היו טדי יזמות והפקות ובמאי התוכנית היה יואב צפיר.[/COLOR][CR][CR]שורשיה של חבורת הקומיקאים שכיכבה ב"קומדי סטור" במקבץ מופעי סטנד-אפ, שהועלו תחת השם "הקומדי סטור" בבית ציוני אמריקה בתל אביב. עם האמנים הצעירים שנטלו חלק במופעים ניתן למנות את צביקה הדר, אסף אשתר, איתי שגב, רובי דואניאס וגיל ססובר, שהפכו אחר־כך לחברי הצוות במופע הטלוויזיוני, ולצדם אמנים כאריק זילברמן, ארז בן הרוש ורובי מוסקוביץ', שהופיעו בפרקיה הראשונים של התוכנית. במופעים אלה גם התגבשו כמה מן הדמויות ששולבו לאחר מכן בתוכנית, כמו דמותו של ז'וז'ו חלסטרה, אותה גילם הדר.[CR][B]העונה הראשונה:[/B][CR]עם תחילת שידורי ערוץ 2 החדש בסוף שנת 1993, שיתפה חברת ההפקות "טדי" פעולה עם "טלעד" בהפקת תוכנית בידור, שהתבססה על מופעי הבמה של "הקומדי סטור". המתכונת הראשונית של התוכנית (20 פרקים בעונתה הראשונה), שעלתה לשידור בחודש מרץ 1994, הייתה שונה במידה ניכרת מזו שהתעצבה מאוחר יותר, וכללה בין השאר תיעוד של קטעים ממופעי ה"קומדי סטור" כפי שהועלו על הבמה. לאחר כמה ניסיונות כושלים לערוך שינויים במתכונת התוכנית – ובהם פינה של הדר וחידה לשונית נושאת פרסים – התעצבה התוכנית במתכונת מסורתית יותר של רצף מערכונים ושירים, בשילוב פינות קבועות – המתכונת המוכרת של התוכנית. בעונה הראשונה נולדו דמויות ומשפטי מפתח שהפכו מזוהים עם התוכנית, כמו "יש לי יש לי", "ז'וז'ו חלסטרה", "אבי ברך אותי" ובהמשך גם "פינת העצה הפולנית", "במיטה עם איתי" והמצלמה המשוטטת של ג'ודי לוץ. בשני הפרקים הראשונים של העונה השתתפו צביקה הדר, אסף אשתר, ארז בן הרוש, רובי מוסקוביץ', אריק זילברמן, איתי שגב, מירב גרובר, דרור שגב, גיל ססובר ורובי דואניאס. בהמשך העונה השתתפו צביקה הדר, אסף אשתר, ארז בן הרוש, רובי מוסקוביץ' איתי שגב ואריק זילברמן (שלושה פרקים). לקראת סוף העונה הצטרפו ססובר ודואניאס לצוות הקבוע בתוכנית, ואילו בן הרוש ומוסקוביץ' עזבו אותה."
+
+msgctxt "#108080
+msgid ""
+msgstr "[COLOR=Yellow]שרגא בישגדא היא סדרה קומית לילדים המשודרת בטלוויזיה החינוכית בכיכובו של מוני מושונוב.[/COLOR][CR][CR]שרגא, הוא כותב בלוג יומי מצולם אשר עוסק באישים חשובים. שרגא סוקר בבלוג שלו על כל מיני אנשים אשר תרמו למדע, לאמנות, לתרבות, לרפואה, לחברה ולפוליטיקה. כגון: אליעזר בן יהודה, ארכימדס, צ'ארלי צ'אפלין, אברהם שלונסקי, לאה גולדברג, מרתה גרהם, האנס כריסטיאן אנדרסן, דוד בן-גוריון ועוד. אולם הוא נתקל בבעיות ובזכותם של עליזה השכנה ושל נטע עוזרת הבית מצליח שרגא לפתור אותן."
+
+msgctxt "#108090
+msgid ""
+msgstr "[COLOR=Yellow]חידון התנ"ך הוא חידון שנתי לבקיאות בתנ"ך שנערך בישראל והפך למסורת מאז הוחל בו במסגרת חגיגות העשור למדינת ישראל.[/COLOR][CR][CR]במהלך השנים ירדה קרנו של חידון התנ"ך והופסק החידון למבוגרים, אך החידון העולמי לנוער ממשיך להתקיים מדי יום עצמאות, והוא משודר בערוץ הראשון. בשנת 2011 חזר החידון למבוגרים להתקיים, במקביל לחידון לנוער.[CR]על חידון התנ"ך נאמרו גם דברי ביקורת, בצד המודעות לחשיבותו התרבותית והחינוכית. אחת הביקורות הייתה שהוא מביא לשטחיות של הפגנת ידע טריוויאלי, במקום התעמקות בתנ"ך. בין הבולטים שבמבקרי החידון היו הפרופסורים מרטין בובר וברוך קורצווייל‏[1].[CR]חידון התנ"ך הפך לנושא לסאטירה מפורסמת במסגרת התוכנית הבידורית "לול" בכיכובם של אורי זוהר ואריק איינשטיין, ונתן השראה לחידוני ידע אחרים כמו "חידון הגשש" במלאת "בר מצווה" לפעילות שלישיית "הגשש החיוור" וכן חידון הזמר העברי במסגרת "חגיגות הזמר העברי בערד"."
+
+msgctxt "#108100
+msgid ""
+msgstr "[COLOR=Yellow]גלילאו (במקור בגרמנית: Galileo), כותרת משנה: לראות - להתפלא - להבין, היא תוכנית טלוויזיה ישראלית המבוססת על כתבות בגרמנית, שעלתה לשידור בגרמניה ב-30 בנובמבר 1998 , ובישראל ב-2010, ומשודרת בטלוויזיה החינוכית, פעמיים ביום בימים א'-ה' בשעה 18:30 ובשעה 21:00 ושידורים חוזרים בסוף השבוע. התוכנית משודרת גם בערוץ 2.[/COLOR][CR][CR]הילה קורח משמשת כמנחה בין הכתבות מאז עליית התוכנית לשידור בארץ בשנת 2010. העורך הראשי של התוכנית מאז עלייתה הוא גידי יהושע."
+
+msgctxt "#108110
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108120
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108130
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108140
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108150
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108160
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108170
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108180
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108190
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108200
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108210
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108220
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108230
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108240
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108250
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108260
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108270
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108280
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108290
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108300
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108310
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108320
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108330
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108340
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108350
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108360
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108370
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108380
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108390
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108400
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108410
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108420
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108430
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108440
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108450
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108460
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108470
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108480
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108490
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108500
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108510
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108520
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108530
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108540
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108550
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108560
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108570
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108580
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108590
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108600
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108610
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108620
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108630
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108640
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108650
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108660
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108670
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108680
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108690
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108700
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108710
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108720
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108730
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108740
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108750
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108760
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108770
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108780
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108790
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108800
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108810
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108820
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108830
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108840
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108850
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108860
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108870
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108880
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108890
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108900
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108910
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108920
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108930
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108940
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108950
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108960
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108970
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108980
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#108990
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#109050401
+msgid "Ivan Tsarevich and the Grey Wolf"
+msgstr "איוון הצארביץ והזאב האפור"
+
+msgctxt "#1090504010
+msgid ""
+msgstr ""
+
+msgctxt "#109050403
+msgid "House Peppa Pigs"
+msgstr "בית החזירים פפה"
+
+msgctxt "#1090504030
+msgid ""
+msgstr ""
+
+msgctxt "#109050404
+msgid "Barboskiny"
+msgstr "ברבונסקי"
+
+msgctxt "#1090504040
+msgid ""
+msgstr ""
+
+msgctxt "#109050377
+msgid "Vehicles"
+msgstr "כלי רכב"
+
+msgctxt "#1090504370
+msgid ""
+msgstr ""
+
+msgctxt "#109050444
+msgid "Masha and the Bear"
+msgstr "מאשה והדוב"
+
+msgctxt "#1090504440
+msgid ""
+msgstr ""
+
+msgctxt "#109050457
+msgid "Fixiki"
+msgstr "פיקסי"
+
+msgctxt "#1090504570
+msgid ""
+msgstr ""

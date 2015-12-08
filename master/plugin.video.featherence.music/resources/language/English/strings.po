@@ -1,0 +1,1267 @@
+msgid ""
+msgstr ""
+
+msgctxt "#1
+msgid "Liveshow"
+msgstr "הופעה"
+
+msgctxt "#2
+msgid "Singer"
+msgstr "זמר"
+
+msgctxt "#3
+msgid "Search %s by name"
+msgstr "חפש %s לפי שם"
+
+msgctxt "#4
+msgid "Choose this option to create a smart playlist of your own."
+msgstr "בחר באפשרות זאת בכדי ליצור רשימות השמעה חכמות משלך."
+
+msgctxt "#5
+msgid "[CR][CR]You may also use the context menu button in order to save,load or reset your entire settings."
+msgstr "[CR][CR]באפשרותך להשתמש בכפתור תפריט בכדי לשמור, לטעון או לאפס את כלל הכפתורים האישיים בחלון זה."
+
+msgctxt "#6
+msgid "New Music Button.."
+msgstr "כפתור מוזיקה חדש.."
+
+msgctxt "#7
+msgid "[CR]Note: You may create unlimited number of links in a single playlist!"
+msgstr "[CR]לידיעתך: ניתן ליצור מספר בלתי מוגבל של קישורים ברשימת השמעה בודדת!"
+
+msgctxt "#8
+msgid "View Playlist"
+msgstr ""
+
+msgctxt "#9
+msgid "URL Error occured.[CR]You should remove the URL and Add new one."
+msgstr "נמצאה שגיאת קישור בכפתור זה.[CR]רצוי להסיר את הקישור ולהוסיף חדש."
+
+msgctxt "#10
+msgid "Warning: Choose YES to remove your button"
+msgstr "אזהרה: בחירה באפשרות כן תסיר את הכפתור שלך."
+
+msgctxt "#11
+msgid "Otherwise you may add additionals links and remove the other one afterwards."
+msgstr "לחלופין הוסף קישורים נוספים ומחק את האחרון לאחר מכן."
+
+msgctxt "#12
+msgid "Duplicated URL found!"
+msgstr "נמצאה כפילות בקישור זה!"
+
+msgctxt "#13
+msgid "Check My Music button"
+msgstr "ראה כפתור המוזיקה שלי"
+
+msgctxt "#14
+msgid "Use the %s button."
+msgstr "השתמש בכפתור %s."
+
+msgctxt "#15
+msgid "Share My Music buttons"
+msgstr "שיתוף כפתורי המוזיקה שלי"
+
+msgctxt "#16
+msgid "To proceed choose NO"
+msgstr "בחר לא בכדי להמשיך בפעולה"
+
+msgctxt "#17
+msgid "Use the %s button"
+msgstr "השתמש בכפתור %s"
+
+msgctxt "#18
+msgid "Locate the saved file at the following path:"
+msgstr "אתר את קובץ השמירה בנתיב הבא:"
+
+msgctxt "#19
+msgid "Name your file in that pattern: Addon_SavedButton1.txt (The number should set +1 then the current)"
+msgstr "בשם הקובץ רשום: Addon_SavedButton1.txt[CR] (המספר צריך להיות גדול באחד מהקיים ברשימה)"
+
+msgctxt "#20
+msgid "Your Music buttons"
+msgstr "כפתורי המוזיקה שלך"
+
+msgctxt "#21
+msgid "Your Music button"
+msgstr "כפתור המוזיקה שלך"
+
+msgctxt "#22
+msgid "Choose YES to learn how to share Your Music button"
+msgstr "בחר כן אם ברצונך ללמוד איך לשתף את כפתור המוזיקה שלך"
+
+msgctxt "#27
+msgid "Show only popular singers"
+msgstr "הצג רק זמרים פופולריים"
+
+msgctxt "#28
+msgid "Notice: Some singers are hidden!"
+msgstr "שים לב: חלק מהזמרים מוסתרים כשהגדרה זו מופעלת."
+
+msgctxt "#29
+msgid "Private Collection"
+msgstr "אוסף אישי"
+
+msgctxt "#30
+msgid "Israeli Playlist"
+msgstr "אוסף ישראליי"
+
+msgctxt "#31
+msgid ""
+msgstr ""
+
+msgctxt "#32
+msgid ""
+msgstr ""
+
+msgctxt "#33
+msgid ""
+msgstr ""
+
+msgctxt "#34
+msgid ""
+msgstr ""
+
+msgctxt "#35
+msgid ""
+msgstr ""
+
+msgctxt "#36
+msgid ""
+msgstr ""
+
+msgctxt "#37
+msgid ""
+msgstr ""
+
+msgctxt "#38
+msgid ""
+msgstr ""
+
+msgctxt "#39
+msgid ""
+msgstr ""
+
+msgctxt "#40
+msgid ""
+msgstr ""
+
+msgctxt "#41
+msgid ""
+msgstr ""
+
+msgctxt "#42
+msgid ""
+msgstr ""
+
+msgctxt "#43
+msgid ""
+msgstr ""
+
+msgctxt "#44
+msgid ""
+msgstr ""
+
+msgctxt "#45
+msgid ""
+msgstr ""
+
+msgctxt "#46
+msgid ""
+msgstr ""
+
+msgctxt "#47
+msgid ""
+msgstr ""
+
+msgctxt "#48
+msgid ""
+msgstr ""
+
+msgctxt "#49
+msgid ""
+msgstr ""
+
+msgctxt "#50
+msgid ""
+msgstr ""
+
+msgctxt "#51
+msgid ""
+msgstr ""
+
+msgctxt "#52
+msgid ""
+msgstr ""
+
+msgctxt "#53
+msgid ""
+msgstr ""
+
+msgctxt "#54
+msgid ""
+msgstr ""
+
+msgctxt "#55
+msgid ""
+msgstr ""
+
+msgctxt "#56
+msgid ""
+msgstr ""
+
+msgctxt "#57
+msgid ""
+msgstr ""
+
+msgctxt "#58
+msgid ""
+msgstr ""
+
+msgctxt "#59
+msgid ""
+msgstr ""
+
+msgctxt "#60
+msgid ""
+msgstr ""
+
+msgctxt "#61
+msgid ""
+msgstr ""
+
+msgctxt "#62
+msgid ""
+msgstr ""
+
+msgctxt "#63
+msgid ""
+msgstr ""
+
+msgctxt "#64
+msgid ""
+msgstr ""
+
+msgctxt "#65
+msgid ""
+msgstr ""
+
+msgctxt "#66
+msgid ""
+msgstr ""
+
+msgctxt "#67
+msgid ""
+msgstr ""
+
+msgctxt "#68
+msgid ""
+msgstr ""
+
+msgctxt "#69
+msgid ""
+msgstr ""
+
+msgctxt "#70
+msgid ""
+msgstr ""
+
+msgctxt "#71
+msgid ""
+msgstr ""
+
+msgctxt "#72
+msgid ""
+msgstr ""
+
+msgctxt "#73
+msgid ""
+msgstr ""
+
+msgctxt "#74
+msgid ""
+msgstr ""
+
+msgctxt "#75
+msgid ""
+msgstr ""
+
+msgctxt "#76
+msgid ""
+msgstr ""
+
+msgctxt "#77
+msgid ""
+msgstr ""
+
+msgctxt "#78
+msgid ""
+msgstr ""
+
+msgctxt "#79
+msgid ""
+msgstr ""
+
+msgctxt "#80
+msgid ""
+msgstr ""
+
+msgctxt "#81
+msgid ""
+msgstr ""
+
+msgctxt "#82
+msgid ""
+msgstr ""
+
+msgctxt "#83
+msgid ""
+msgstr ""
+
+msgctxt "#84
+msgid ""
+msgstr ""
+
+msgctxt "#85
+msgid ""
+msgstr ""
+
+msgctxt "#86
+msgid ""
+msgstr ""
+
+msgctxt "#87
+msgid ""
+msgstr ""
+
+msgctxt "#88
+msgid ""
+msgstr ""
+
+msgctxt "#89
+msgid ""
+msgstr ""
+
+msgctxt "#90
+msgid ""
+msgstr ""
+
+msgctxt "#91
+msgid ""
+msgstr ""
+
+msgctxt "#92
+msgid ""
+msgstr ""
+
+msgctxt "#93
+msgid ""
+msgstr ""
+
+msgctxt "#94
+msgid ""
+msgstr ""
+
+msgctxt "#95
+msgid ""
+msgstr ""
+
+msgctxt "#96
+msgid ""
+msgstr ""
+
+msgctxt "#97
+msgid ""
+msgstr ""
+
+msgctxt "#98
+msgid ""
+msgstr ""
+
+msgctxt "#99
+msgid ""
+msgstr ""
+
+msgctxt "#100
+msgid "My Music"
+msgstr "המוזיקה שלי"
+
+#SUB-CATEGORIES TITLE
+msgctxt "#101
+msgid "Israeli Music"
+msgstr "מוזיקה ישראלית"
+
+msgctxt "#102
+msgid "Israeli Karaoke"
+msgstr "קריוקי ישראלי"
+
+msgctxt "#103
+msgid ""
+msgstr ""
+
+msgctxt "#104
+msgid "Israeli Liveshows"
+msgstr "הופעות חיות מישראל"
+
+msgctxt "#105
+msgid "Israeli Djs"
+msgstr "די ג'יי ישראליים"
+
+msgctxt "#106
+msgid "Mizrahit Music"
+msgstr "מוזיקה מזרחית"
+
+msgctxt "#107
+msgid "Mizrahit Karaoke"
+msgstr "קריוקי מזרחי"
+
+msgctxt "#108
+msgid ""
+msgstr ""
+
+msgctxt "#109
+msgid "Mizrahit Liveshows"
+msgstr "הופעות חיות במזרחית"
+
+msgstr ""
+msgid ""
+msgstr ""
+
+msgctxt "#111
+msgid "Foreign Music"
+msgstr "מוזיקה לועזית"
+
+msgctxt "#112
+msgid "Foreign Karaoke"
+msgstr "קריוקי לועזי"
+
+msgctxt "#113
+msgid ""
+msgstr ""
+
+msgctxt "#114
+msgid "Foreign Liveshows"
+msgstr "הופעות חיות מחו"ל"
+
+msgctxt "#115
+msgid "Foreign Djs"
+msgstr "די ג'יי מחו"ל"
+
+msgctxt "#116
+msgid ""
+msgstr ""
+
+msgctxt "#117
+msgid ""
+msgstr ""
+
+msgctxt "#118
+msgid "Classical Music"
+msgstr "מוזיקה קלאסית"
+
+msgctxt "#119
+msgid "$LOCALIZE[19021]"
+msgstr "$LOCALIZE[19021]"
+
+msgctxt "#995
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#996
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#997
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#998
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#999
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#1000
+msgid ""
+msgstr ""
+
+#SUB-CATEGORIES DESCRIPTION
+msgctxt "#1001
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1002
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1003
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1004
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1005
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1006
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1007
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1008
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1009
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1010
+msgid ""
+msgstr "[COLOR=Yellow]כל הזמרים הישראלים![/COLOR][CR][CR]"
+
+msgctxt "#1020
+msgid ""
+msgstr "[COLOR=Yellow]כל שירי הקריוקי הישראלים![/COLOR][CR][CR]"
+
+msgctxt "#1030
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#1040
+msgid ""
+msgstr "[COLOR=Yellow]כל הופעות הזמרים הישראלים![/COLOR][CR][CR]"
+
+msgctxt "#1050
+msgid ""
+msgstr "[COLOR=Yellow]כל הדי ג'יי הישראלים![/COLOR][CR][CR]"
+
+msgctxt "#1060
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#1070
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#1080
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#1090
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#1100
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1110
+msgid ""
+msgstr "[COLOR=Yellow]כל הזמרים המובילים מחו"ל![/COLOR][CR][CR]"
+
+msgctxt "#1120
+msgid ""
+msgstr "[COLOR=Yellow]כל שירי הקריוקי מחו"ל![/COLOR][CR][CR]"
+
+msgctxt "#1130
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1140
+msgid ""
+msgstr "[COLOR=Yellow]כל הופעות הזמרים מחו"ל![/COLOR][CR][CR]"
+
+msgctxt "#1150
+msgid ""
+msgstr "[COLOR=Yellow]כל הדי ג'יי המובילים מחו"ל![/COLOR][CR][CR]"
+
+msgctxt "#1160
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#1170
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1180
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#1190
+msgid "[COLOR=Yellow]Listen to your favourite music (Audio only).[/COLOR][CR][CR]Goes great with photo presentation."
+msgstr "[COLOR=Yellow]שמע את המוזיקה האהובה עליך (ללא וידאו).[/COLOR][CR][CR]מתאים במיוחד עבור מצגת תמונות."
+
+msgctxt "#1210
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1220
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1230
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+msgctxt "#1240
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+
+#Foreign Karaoke2
+msgctxt "#1250
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#1251
+msgid ""
+msgstr "[COLOR=Yellow]We are Sing King Karaoke. A YouTube channel dedicated to bringing you the best free karaoke content - from brand new tracks to old classics, we are committed to bringing you the biggest and boldest hits around![/COLOR][CR][CR]Our channel caters to all genres including Pop, Rock, Alternative, Folk, Dance, Hip Hop, R&B and many more![CR]Whether you like to sing, scream, rap or shout along to your favourite tunes, this is the place to be. So... if you fancy yourself as the next Bruno Mars or Katy Perry, or you simply just like to show off at a karaoke party with your buddies, then we have plenty of free karaoke videos to help you practice and hone your vocal mastery![CR]We upload new videos on a daily basis, sometimes more than one a day - so subscribe to our channel to stay tuned.[CR]Above all else, we love to have a chat with our fans, so feel free to get involved and drop us a comment any time. :)"
+
+msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgid ""
+msgstr "[COLOR=Yellow]The KARAOKE Channel offers the world's largest licensed karaoke library to karaoke fans around the world via multiple services and products.[/COLOR][CR][CR]"
+
+msgctxt "#1253
+msgid ""
+msgstr "[COLOR=Yellow]KaraFun is the ultimate karaoke experience![CR][/COLOR][CR][CR]רשימת פלייליסטים:[CR]- שירי אהבה[CR]- דואטים[CR]- יום הולדת[CR]- שירי ילדים[CR]- זמן בנות[CR]- קלאסיקות[CR]- חג מולד[CR] ועוד..."
+
+msgctxt "#1254
+msgid ""
+msgstr "[COLOR=Yellow]Enjoy our Karaoke Video Jukebox and sing along to some of the best loved pop songs of the last 50 years.[/COLOR][CR][CR]רשימות השמעה:[CR]- Lady Gaga[CR]- Queen[CR]- Andrea Bocelli[CR]- Tom Jones[CR]- Elton John[CR]- Kelis[CR]- Rihanna[CR]- Katy Perry[CR]ועוד..."
+
+msgctxt "#1255
+msgid ""
+msgstr "[COLOR=Yellow]KaraokeOnVevo is created by www.DigiTraxEntertainment.com, mixed and mastered at www.SoKnoxStudios.com in Knoxville, TN. Produced by Joseph Vangieri and the SoKnox Wrecking Crew, with over 15,000 songs to their credit produced, mixed and mastered.[/COLOR][CR][CR]"
+
+msgctxt "#1256
+msgid ""
+msgstr "[COLOR=Yellow]Matt Monro (1 December 1930 – 7 February 1985), known as The Man With The Golden Voice, was an English singer who became one of the most popular entertainers on the international music scene during the 1960s and 1970s. Throughout his 30-year career, he filled cabarets, nightclubs, music halls, and stadiums in Australia, Japan, the Philippines, and Hong Kong to Africa, the Middle East, Europe, and the Americas.[/COLOR][CR][CR]Early Career:[CR]He was born Terence Edward Parsons in Shoreditch, London and attended Duncombe School in Islington, and Elliott School in Putney. Affectionately nicknamed "the singing bus driver" (because one of his many occupations prior to achieving fame was driving the Number 27 bus from Highgate to Teddington),[citation needed] he got his first break in 1956 when he became a featured vocalist with the BBC Show Band. An important influence on his early career was the pianist Winifred Atwell, who became his mentor, provided him with his stage name, and helped him sign with Decca Records.[CR]In 1957 Monro released Blue and Sentimental, a collection of standards. Despite the album's critical acclaim, Monro languished among the young male singers trying to break through at the end of the 1950s, many of them emulating Frankie Vaughan by recording cover versions of American hits. (Monro even recorded a version of Vaughan's "Garden of Eden" during this period.) A short recording contract with Fontana Records followed.[CR]By the end of the 1950s, Monro's mid-decade fame had evaporated, and he returned to relative obscurity. He and his wife Mickie lived from her wages as a song plugger and his royalties from a TV advertising jingle for Camay soap. In 1959 he recorded a country pastiche song, "Bound for Texas", for The Chaplin Revue, a feature-length compilation of Charlie Chaplin shorts. It would be the first of many Monro soundtrack themes."
+
+msgctxt "#10000
+msgid ""
+msgstr ""
+
+msgctxt "#10001
+msgid "Amir Elgazar's Playlists"
+msgstr "אמיר אלגזר פלייליסטים"
+
+msgctxt "#10101
+msgid "Eviatar Banai"
+msgstr "אביתר בנאי"
+
+msgctxt "#10102
+msgid "Avraham Tal"
+msgstr "אברהם טל"
+
+msgctxt "#10103
+msgid "Eyal Golan"
+msgstr "אייל גולן"
+
+msgctxt "#10104
+msgid "Aunt beehive trimmed"
+msgstr "כוורת דודה גזוז"
+
+msgctxt "#10105
+msgid "Ethnix"
+msgstr "אתניקס"
+
+msgctxt "#10107
+msgid "Dudu Aharon"
+msgstr "דודו אהרון"
+
+msgctxt "#10108
+msgid "Guy and Yahel"
+msgstr "גיא ויהל"
+
+msgctxt "#10109
+msgid ""
+msgstr ""
+
+msgctxt "#10110
+msgid ""
+msgstr ""
+
+msgctxt "#10111
+msgid "Danny Sanderson"
+msgstr "דני סנדרסון"
+
+msgctxt "#10148
+msgid "Israel Gurion and Dudaim"
+msgstr "הדודאים"
+
+msgctxt "#10112
+msgid "The Revivo Project"
+msgstr "הפרויקט של רביבו"
+
+msgctxt "#10113
+msgid "Harel Skaat"
+msgstr "הראל סקעת"
+
+msgctxt "#10114
+msgid "Haim Moshe"
+msgstr "חיים משה"
+
+msgctxt "#10116
+msgid "Yakov Hatan"
+msgstr "יעקב חתן"
+
+msgctxt "#10115
+msgid "Aunt beehive trimmed"
+msgstr "כוורת דודה גזוז"
+
+msgctxt "#10117
+msgid "Ishay Levi"
+msgstr "ישי לוי"
+
+msgctxt "#10118
+msgid "Lior Narkis"
+msgstr "ליאור נרקיס"
+
+msgctxt "#10119
+msgid ""
+msgstr ""
+
+msgctxt "#10120
+msgid "Mazi Cohen"
+msgstr "מזי כהן"
+
+msgctxt "#10121
+msgid "Mosh Ben Ari"
+msgstr "מוש בן ארי ולהקת שבע"
+
+msgctxt "#10122
+msgid "Moshik Afia"
+msgstr "מושיק עפיה"
+
+msgctxt "#10123
+msgid "Miri Mesika"
+msgstr "מירי מסיקה"
+
+msgctxt "#10124
+msgid "Maor Edri"
+msgstr "מאור אדרי"
+
+msgctxt "#10125
+msgid "Moshe Perez"
+msgstr "משה פרץ"
+
+msgctxt "#10126
+msgid "Mashina"
+msgstr "משינה"
+
+msgctxt "#10127
+msgid "Nathan Goshen"
+msgstr "נתן גושן"
+
+msgctxt "#10128
+msgid ""
+msgstr ""
+
+msgctxt "#10129
+msgid ""
+msgstr ""
+
+msgctxt "#10130
+msgid "Ivri Lider"
+msgstr "עברי לידר"
+
+msgctxt "#10131
+msgid ""
+msgstr ""
+
+msgctxt "#10132
+msgid "Idan Raichel"
+msgstr "עידן רייכל"
+
+msgctxt "#10133
+msgid "Omer Adam"
+msgstr "עומר אדם"
+
+msgctxt "#10134
+msgid ""
+msgstr ""
+
+msgctxt "#10135
+msgid "Peer Tasi"
+msgstr "פאר טסי"
+
+msgctxt "#10106
+msgid "Berry Sakharof"
+msgstr "פורטיסחרוף"
+
+msgctxt "#10136
+msgid ""
+msgstr ""
+
+msgctxt "#10137
+msgid "Kobi Peretz"
+msgstr "קובי פרץ"
+
+msgctxt "#10138
+msgid "Keren Peles"
+msgstr "קרן פלס"
+
+msgctxt "#10139
+msgid "Rita"
+msgstr "ריטה"
+
+msgctxt "#10140
+msgid "Rami Kleinshtein"
+msgstr "רמי קליינשטיין"
+
+msgctxt "#10141
+msgid "Shiri Maimon"
+msgstr "שירי מימון"
+
+msgctxt "#10142
+msgid "Shalom Hanoch"
+msgstr "שלום חנוך"
+
+msgctxt "#10143
+msgid "Shlomi Shabat"
+msgstr "שלומי שבת"
+
+msgctxt "#10144
+msgid "Shlomo Artzi"
+msgstr "שלמה ארצי"
+
+msgctxt "#10145
+msgid "Sarit Hadad"
+msgstr "שרית חדד"
+
+msgctxt "#10146
+msgid "Eden Ben Zaken"
+msgstr "עדן בן זקן"
+
+msgctxt "#10147
+msgid "shani yitshari"
+msgstr "שני יצהרי"
+
+msgctxt "#10149
+msgid "The Yarkon Trio"
+msgstr "שלישיית גשר הירקון"
+
+msgctxt "#10150
+msgid ""
+msgstr ""
+
+msgctxt "#10151
+msgid ""
+msgstr ""
+
+msgctxt "#10152
+msgid ""
+msgstr ""
+
+msgctxt "#10153
+msgid ""
+msgstr ""
+
+msgctxt "#10154
+msgid ""
+msgstr ""
+
+msgctxt "#10155
+msgid ""
+msgstr ""
+
+msgctxt "#10156
+msgid ""
+msgstr ""
+
+msgctxt "#10157
+msgid ""
+msgstr ""
+
+msgctxt "#10158
+msgid ""
+msgstr ""
+
+msgctxt "#10159
+msgid ""
+msgstr ""
+
+msgctxt "#10160
+msgid ""
+msgstr ""
+
+msgctxt "#10161
+msgid ""
+msgstr ""
+
+msgctxt "#10162
+msgid ""
+msgstr ""
+
+msgctxt "#10163
+msgid ""
+msgstr ""
+
+msgctxt "#10164
+msgid ""
+msgstr ""
+
+msgctxt "#10165
+msgid ""
+msgstr ""
+
+msgctxt "#10166
+msgid ""
+msgstr ""
+
+msgctxt "#10167
+msgid ""
+msgstr ""
+
+msgctxt "#10168
+msgid ""
+msgstr ""
+
+msgctxt "#10169
+msgid ""
+msgstr ""
+
+msgctxt "#10170
+msgid ""
+msgstr ""
+
+msgctxt "#10171
+msgid ""
+msgstr ""
+
+msgctxt "#10172
+msgid ""
+msgstr ""
+
+msgctxt "#10173
+msgid ""
+msgstr ""
+
+msgctxt "#10174
+msgid ""
+msgstr ""
+
+msgctxt "#10175
+msgid ""
+msgstr ""
+
+msgctxt "#10176
+msgid ""
+msgstr ""
+
+msgctxt "#10177
+msgid ""
+msgstr ""
+
+msgctxt "#10178
+msgid ""
+msgstr ""
+
+msgctxt "#10179
+msgid ""
+msgstr ""
+
+msgctxt "#10180
+msgid ""
+msgstr ""
+
+msgctxt "#10181
+msgid ""
+msgstr ""
+
+msgctxt "#10182
+msgid ""
+msgstr ""
+
+msgctxt "#10183
+msgid ""
+msgstr ""
+
+msgctxt "#10184
+msgid ""
+msgstr ""
+
+msgctxt "#10185
+msgid ""
+msgstr ""
+
+msgctxt "#10186
+msgid ""
+msgstr ""
+
+msgctxt "#10187
+msgid ""
+msgstr ""
+
+msgctxt "#10188
+msgid ""
+msgstr ""
+
+msgctxt "#10189
+msgid ""
+msgstr ""
+
+msgctxt "#10190
+msgid ""
+msgstr ""
+
+msgctxt "#10191
+msgid ""
+msgstr ""
+
+msgctxt "#10192
+msgid ""
+msgstr ""
+
+msgctxt "#10193
+msgid ""
+msgstr ""
+
+msgctxt "#10194
+msgid ""
+msgstr ""
+
+msgctxt "#10195
+msgid ""
+msgstr ""
+
+msgctxt "#10196
+msgid ""
+msgstr ""
+
+msgctxt "#10197
+msgid ""
+msgstr ""
+
+msgctxt "#10198
+msgid ""
+msgstr ""
+
+msgctxt "#10199
+msgid ""
+msgstr ""
+
+msgctxt "#100000
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#100010
+msgid ""
+msgstr "[COLOR=Yellow]פלייליסטים אוסף אישי[/COLOR]"
+
+msgctxt "#101010
+msgid "אביתר בנאי"
+msgstr "[COLOR=Yellow][/COLOR]אביתר בנאי (נולד ב-8 בפברואר 1973, ו' באדר א' ה'תשל"ג) הוא זמר-יוצר ישראלי, בן למשפחת בנאי"
+
+msgctxt "#101020
+msgid "אברהם טל"
+msgstr "[COLOR=Yellow][/COLOR]אברהם טל (נולד ב-28 בנובמבר 1976) הוא זמר, מוזיקאי ומפיק מוזיקלי ישראלי."
+
+msgctxt "#101030
+msgid "אייל גולן"
+msgstr "[COLOR=Yellow][/COLOR]אייל גולן (נולד ב-12 באפריל 1971) הוא זמר ישראלי, הנחשב לאחד הזמרים המצליחים בישראל. רוב אלבומיו הגיעו למעמד אלבום פלטינה.."
+
+msgctxt "#101040
+msgid ""
+msgstr ""
+
+msgctxt "#101050
+msgid "אתניX"
+msgstr "[COLOR=Yellow][/COLOR]אתניX ("אתניקס") היא להקה ישראלית הפועלת ברציפות משנת 1989 עד היום. הלהקה הוכתרה שבע פעמים כ"להקת השנה" במסגרת "מצעד הפזמונים העברי השנתי", יותר מכל להקה אחרת בישראל..."
+
+msgctxt "#101070
+msgid "דודו אהרון"
+msgstr "[COLOR=Yellow][/COLOR]  נולד ב 23 בדצמבר 1984  הוא זמר, יוצר, מוזיקאי, מלחין ופזמונאי ישראלי."
+
+msgctxt "#101080
+msgid "גיא ויהל"
+msgstr "[COLOR=Yellow][/COLOR]  הם צמד זמרים-יוצרים ישראלים המורכב מגיא מנטש ויהל דורון.."
+
+msgctxt "#101090
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101100
+msgid ""
+msgstr "[COLOR=Yellow][/COLOR]   " 
+
+msgctxt "#101110
+msgid "דני סנדרסון"
+msgstr "(נולד ב-30 בנובמבר 1950) הוא גיטריסט, זמר, מוזיקאי, סופר, פזמונאי, מלחין ומפיק מוזיקלי ישראלי."
+
+msgctxt "#101120
+msgid "הפרוייקט של רביבו"
+msgstr "הפרויקט של רביבו הוא הרכב מוזיקלי ישראלי המבצע גרסאות כיסוי של שירים שהתפרסמו בשנות השבעים והשמונים... "
+
+msgctxt "#101130
+msgid "הראל סקעת"
+msgstr " (נולד ב-8 באוגוסט 1981 בכפר סבא) הוא זמר ושחקן ישראלי."
+
+msgctxt "#101140
+msgid "חיים משה"
+msgstr "(נולד ב-20 בספטמבר 1955 ברמת השרון) הוא זמר ישראלי. הסגנון המוזיקלי שלו כולל זמר ים-תיכוני, מוזיקה ישראלית, ופופ.."
+
+msgctxt "#101150
+msgid "כוורת דודה גזוז"
+msgstr "חברי הלהקה המובילים בכל ההרכבים הם גידי גוב ודני סנדרסון הלהקות פעלו בשנות השבעים של המאה ה 20"
+
+msgctxt "#101160
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101170
+msgid "ישי לוי"
+msgstr "ישי לוי (נולד ב-20 בינואר 1963) הוא זמר ישראלי, הנחשב לאחד ממובילי המוזיקה המזרחית והים תיכונית בישראל.."
+
+msgctxt "#101180
+msgid "ליאור נרקיס"
+msgstr "(נולד ב-8 בנובמבר 1976) הוא זמר ישראלי. בעברו היה שר מוזיקת דיכאון וכיום שר מוזיקה מזרחית ים תיכונית וגם מוזיקת פופ..."
+
+msgctxt "#101190
+msgid ""
+msgstr " 
+
+#מזי כהן
+msgctxt "#101200
+msgid ""
+msgstr "(נולדה ב-29 באפריל 1959) היא זמרת ומוזיקאית ישראלית. התפרסמה בתחילת דרכה כסולנית של להקת גזוז ומאז שיתפה פעולה עם עשרות מוזיקאים ישראלים..."
+
+#מוש בן ארי ולהקת שבע
+msgctxt "#101210
+msgid ""
+msgstr "נולד ב-26 בספטמבר 1970) הוא זמר, מוזיקאי, פזמונאי ומלחין ישראלי..."
+
+msgctxt "#101220
+msgid "מושיק עפיה"
+msgstr "(נולד ב-3 באוקטובר 1974 בחולון) הוא זמר ישראלי ששר בסגנון מזרחי..."
+
+msgctxt "#101230
+msgid "מירי מסיקה"
+msgstr "(נולדה ב-3 במאי 1978) היא זמרת, שחקנית ודוגמנית ישראלית..."
+
+msgctxt "#101240
+msgid "מאור אדרי"
+msgstr "(נולד ב-17 באפריל 1989) הוא זמר, כותב ומלחין מוזיקה מזרחית ישראלי...."
+
+msgctxt "#101250
+msgid "משה פרץ"
+msgstr "(נולד ב-10 במאי 1983, כ"ז באייר תשמ"ג) הוא זמר, מלחין ופזמונאי ישראלי...."
+
+msgctxt "#101260
+msgid "משינה"
+msgstr "להקת רוק ישראלית, הנחשבת בעיני רבים לאחת הלהקות הבולטות שפעלו בישראל‏...."
+
+msgctxt "#101270
+msgid "נתן גושן"
+msgstr "נולד ב  6 באוגוסט 1986 זמר, פזמונאי ומלחין ישראלי....."
+
+msgctxt "#101290
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101300
+msgid "עיברי לידר"
+msgstr "נולד ב  10 בפברואר 1974 הוא זמר-יוצר, מלחין ופזמונאי ישראלי זוכה פרס אקו"ם‏  ..."
+
+msgctxt "#101320
+msgid "עידן רייכל"
+msgstr " (נולד ב-12 בספטמבר 1977), הוא מוזיקאי, פזמונאי, מלחין, זמר-יוצר, מעבד ומפיק מוזיקלי ישראלי. מוכר בעיקר כמפיק "הפרויקט של עידן רייכל ..."
+
+msgctxt "#101330
+msgid "עומר אדם"
+msgstr "(נולד ב-22 באוקטובר 1993 בארצות הברית) הוא זמר ישראלי השר מוזיקת פופ ים-תיכוני.‏  ..."
+
+msgctxt "#101340
+msgid ""
+msgstr "[COLOR=Yellow]עמיר (עמרם)‏ בניון (נולד ב-כ"ג באלול תשל"ה, 30 באוגוסט 1975‏) הוא זמר-יוצר, מוזיקאי, פזמונאי ומלחין ישראלי.[/COLOR][CR][CR]עמרם בניון נולד בבאר שבע ב-30 באוגוסט 1975. כבר מגיל צעיר החל לגלות עניין רב במוזיקה והיה שר ומנגן עם אביו ואחיו אבי. תוך כדי כתיבת המוזיקה התפרנס מעבודות בשיפוצים וחסך כסף להפקת אלבומו הראשון. הוא התגייס לצה"ל, אך שוחרר לאחר ימים בודדים עקב בעיות סמים. לאחר השחרור עבר תהליך גמילה שהצליח‏.[CR]ב-1 בינואר 1999 הוציא את אלבומו הראשון, "רק את", בעיבודים ובהפקה מוזיקלית של חברו נדב ביטון. לאחר הקלטת מספר סקיצות, שלח אותן בניון למיכה שטרית, שהחליט להפיק את האלבום. האלבום זכה להצלחה גדולה, עם מכירות של יותר מ-40,000 עותקים. בין שיריו המוכרים היו "כשאת עצובה", "מורה לחיים", "אולי הפעם", "יש לי חלום" ושיר הזיכרון "גולן"."
+
+msgctxt "#101350
+msgid "פאר טסי"
+msgstr "(נולד ב-10 במאי 1984) הוא זמר, כותב ומלחין מוזיקה ים-תיכונית ישראלי..."
+
+msgctxt "#101060
+msgid "פורטיסחרוף"
+msgstr "(נולד ב-7 ביולי 1957), הוא זמר, מוזיקאי, פזמונאי, מלחין ומפיק מוזיקלי ישראלי."
+
+msgctxt "#101360
+msgid ""
+msgstr "" 
+
+msgctxt "#101370
+msgid "קובי פרץ"
+msgstr "(נולד ב-28 באוקטובר 1975) הוא זמר ישראלי השר מוזיקה מזרחית ופופ דאנס.."
+
+msgctxt "#101380
+msgid ""
+msgstr "נולדה ב 11 במרץ 1979..."
+
+msgctxt "#101390
+msgid "ריטה"
+msgstr "ריטה יהאן-פרוז (לשעבר קלינשטיין; נולדה ב-24 במרץ 1962), המוכרת יותר בשמה הפרטי בלבד, היא זמרת ושחקנית ישראלית...."
+
+msgctxt "#101400
+msgid "רמי קליינשטיין"
+msgstr " (נולד ב-10 בנובמבר 1962) הוא זמר-יוצר, מלחין ומפיק מוזיקלי ישראלי. פעילותו מתמקדת בכתיבת חומר מקורי לעצמו ובעבר גם לזמרת ריטה, מי שהייתה אשתו..."
+
+msgctxt "#101410
+msgid ""
+msgstr "(נולדה ב-17 במאי 1981) היא זמרת, שחקנית ומנחת טלוויזיה ישראלית ..."
+
+msgctxt "#101420
+msgid "שלום חנוך"
+msgstr " (נולד ב-1 בספטמבר 1946) הוא זמר-יוצר, פזמונאי ומלחין ישראלי, הנחשב לאחד מראשוני היוצרים ברוק הישראלי. יצירתו, הן במסגרת שיתופי פעולה עם אמנים אחרים בתחילת דרכו והן לאחר מכן כסולן, השפיעה רבות על המוזיקה הפופולרית בישראל. במיוחד מוכר שיתוף הפעולה שלו עם הזמר אריק איינשטיין, שהניב את אלבומי הרוק הישראליים הראשונים.‏  ..."
+
+msgctxt "#101430
+msgid "שלומי שבת"
+msgstr "(נולד ב-30 באוגוסט 1954) הוא זמר ומלחין ישראלי..."
+
+msgctxt "#101440
+msgid "שלמה ארצי"
+msgstr " (נולד ב-26 בנובמבר 1949) הוא זמר-יוצר, מוזיקאי, מלחין ופזמונאי ישראלי. נחשב לאחד הזמרים המצליחים בישראל..."
+
+msgctxt "#101450
+msgid ""
+msgstr "[COLOR=Yellow]שרית חדד (בעבר שרה חודדטוב; נולדה ב-20 בספטמבר 1978, י"ח באלול התשל"ח) היא זמרת ומוזיקאית ישראלית.[/COLOR][CR][CR]הוציאה מעל 20 אלבומים, וזכתה מספר פעמים בתואר "זמרת השנה" וכן בתואר "זמרת העשור" במצעד הפזמונים העברי.[CR]שרית חדד מתמחה במוזיקה מזרחית, והיא הזמרת המושמעת ביותר בישראל."
+
+msgctxt "#101460
+msgid "עדן בן זקן"
+msgstr "(נולדה ב-8 ביוני 1994) היא זמרת ישראלית..." 
+
+msgctxt "#101470
+msgid ""
+msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+
+msgctxt "#101480
+msgid "הדודאים"
+msgstr "היו צמד זמרים, בני אמדורסקי וישראל גוריון, אשר בין השנים 1957-1993 היה אחד מהצמדים המובילים בזמר העברי..."
+
+msgctxt "#101490
+msgid "שלישיית גשר הירקון"
+msgstr "[COLOR=Yellow][/COLOR]הייתה הרכב מוזיקלי שהתקיים בין השנים 1964 - 1966 בשני הרכבים. חברי ההרכב הראשון היו אריק איינשטיין, יהורם גאון ובני אמדורסקי. בתוכניתה השנייה של השלישייה החליף ישראל גוריון את יהורם גאון שעזב"
+
+msgctxt "#111010
+msgid ""
+msgstr "[COLOR=Yellow]מייקל ג'וזף ג'קסון (באנגלית: Michael Joseph Jackson;‏ 29 באוגוסט 1958 – 25 ביוני 2009) היה זמר, מוזיקאי, רב נגן, רקדן, כוריאוגרף, מפיק מוזיקלי, שחקן ופזמונאי אפרו אמריקאי מצליח. ג'קסון, שנודע בכינויו "מלך הפופ", נחשב לאחד הזמרים הפופולריים והמצליחים ביותר בכל הזמנים.[/COLOR][CR][CR]הקריירה המוזיקלית של ג'קסון החלה בשנת 1963 כאשר הצטרף לאחיו בתור החבר הצעיר ביותר בהרכב המוזיקלי המשפחתי "חמישיית הג'קסונים". בהמשך עזב את הלהקה והחל קריירת סולו מצליחה יותר. אלבומו Thriller משנת 1982 מכר מעל ל-110 מיליון עותקים ונשאר עד היום האלבום הנמכר ביותר בכל הזמנים, לצד ארבעה אלבומים נוספים של ג'קסון. הווידאוקליפים לשיריו "Beat It"‏, "Billie Jean" ו-"Thriller" נחשבו לפורצי דרך והשפיעו רבות על תעשיית המוזיקה בהמשך. באותה העת, ג'קסון הפך מספר טכניקות ריקוד מסובכות לפופולאריות במיוחד, המפורסם שבריקודים הוא ריקוד "הליכת הירח". הסגנון המוזיקלי, הסגנון הווקאלי והכוריאוגרפיה הייחודית של ג'קסון הצליחו לגשר על פערי הדורות, הגזעים והתרבויות. הקריירה המוזיקלית של ג'קסון היוותה השראה למיליוני אנשים ברחבי העולם ואמנים רבים בתחום המוזיקה והריקוד הושפעו ממנו.[CR]הישגים נוספים לג'קסון כוללים בין היתר שבירת מספר שיאים עולמיים שנכנסו לספר השיאים של גינס, זכייה ב-15 פרסי גראמי, זכייה ב-26 פרסי American Music Awards, והפקת 17 סינגלים אשר הגיעו למקום ראשון במצעד הפזמונים האמריקאי (כולל ארבעה אשר הופקו בעודו חבר בחמישיית הג'קסונים). סך מכירות אלבומיו - המוערך בכ-780 מיליון עותקים ברחבי העולם, דבר שהפך אותו לאחד האומנים המצליחים ביותר מבחינה מסחרית בהיסטוריה של המוזיקה.[CR]לאורך השנים בשל ההתעניינות הרבה בג'קסון, הצהובונים ברחבי העולם עסקו באינטנסיביות בחייו הפרטיים של ג'קסון והתמקדו בעיקר בשינויים הקיצוניים במראהו החיצוני של ג'קסון שכלל שינוי מבנה אפו וצבע עורו, בהאשמות בביצוע מעשים מגונים בילדים ובמערכות היחסים השונות של ג'קסון.[CR]ג'קסון מת ב-25 ביוני 2009 מדום לב בשל מנת יתר של הסם פרופופול, סוג של סם הרגעה. מותו אירע במהלך ההכנות לסבב ההופעות שלו "This Is It". רופאו האישי של ג'קסון, קונראד מארי, אשר היה זה שטיפל בו שלא כראוי בסם, הורשע בהריגתו ונדון לארבע שנות מאסר."
+
+msgctxt "#111020
+msgid "Beyonce"
+msgstr ""
+
+msgctxt "#111030
+msgid ""
+msgstr "[COLOR=Yellow]רובין ריהאנה פנטי (באנגלית: Robyn Rihanna Fenty; נולדה ב-20 בפברואר 1988) המוכרת בשם הבמה ריהאנה, היא זמרת, שחקנית, ומעצבת אופנה ברבדית. היא נולדה בסיינט מייקל שבברבדוס והתגוררה שם עד גיל 15. היא החלה את הקריירה המוזיקלית שלה כשפגשה את המפיק המוזיקלי אוון רוג'רס ב-2003 והקליטה קלטות דמו תחת הדרכתו, שבסופו של דבר הגיעו לג'יי זי שהחליט לקחת אותה תחת חסותו.[/COLOR][CR][CR]מאז תחילת הקריירה שלה, הוציאה ריהאנה שבעה אלבומים; שבעתם הגיעו לעשרת הגדולים במצעד האלבומים האמריקאי בילבורד 200, ואלבומה השביעי אף הגיע למקום הראשון. 13 משיריה דורגו במקום הראשון במצעד הפזמונים האמריקאי בילבורד הוט 100, ובכך השוותה ריהאנה את שיאה לשיאו של מייקל ג'קסון וכעת היא ממוקמת במקום השלישי ברשימת אמני הסולו שהצליחו להכניס הכי הרבה שירים לצמרת המצעד.היא נחשבת לאחד מהאמנים הנמכרים ביותר בכל הזמנים. אלבומיה ושיריה נמכרו בכ-194.5 מיליון עותקים בכל העולם, מה שהופך אותה גם לאמנית הדיגיטלית הנמכרת ביותר בכל הזמנים.[CR]בשנת 2011 הגיעו עשרה משיריה לצמרת מצעד הבילבורד הוט 100 והייתה לאמן הצעיר ביותר שעשה זאת. בנוסף לכך נכון להיום היא האמן השלישי בהיסטוריה שצבר הכי הרבה שבועות במקום הראשון במצעד זה (עם 51 שבועות). ב-2012 דירג מגזין פורבס את ריהאנה כידוען הרביעי המשפיע של השנה, עם רווח של 53 מיליון דולר בין מאי 2011 למאי 2012. באותה שנה, הכריז טיים מגזין על ריהאנה כאחת מ-100 האנשים המשפיעים ביותר בעולם. בשנת 2013 דירג מגזין בילבורד את ריהאנה ברשימת "100 האמנים המצליחים ביותר בעשור הראשון של המאה ה-21" ולאמן המצליח ביותר בעשור השני של המאה ה-21. ב-2 ביוני 2014, הוצגה ריהאנה עם פרס אייקון האופנה על מפעל החיים ממועצת מעצבי האופנה של אמריקה, פרס מיוחד השמור לאדם שסגנונו הפך להשפעה משמעותית על התרבות הפופולרית על במה בינלאומית. ובאותה שנה נודע כי ריהאנה דורגה במקום ה-8 ברשימת "100 האנשים המשפיעים ביותר" של מגזין פורבס, עם רווח של 48 מיליון דולר בין יוני 2013 ליוני 2014, מה ששם אותה במקום ה-4 ברשימת ה"נשים המשפיעות ביותר" ובאותו מקום גם ברשימת ה"מוזיקאים המשפיעים ביותר". ריהאנה זכתה ב-311 פרסים, הבולטים מתוכם: 8 פרסי גראמי, 8 פרסי AMA ו-22 פרסי בילבורד. בטקס פרסי המוזיקה האמריקאית של שנת 2013, זכתה ריהאנה בפרס "אייקון" הראשון בהיסטוריה של הטקס, פרס אשר ניתן לאמן שתרם רבות לתעשיית המוזיקה."
+
+msgctxt "#111040
+msgid ""
+msgstr "[COLOR=Yellow]Taylor Swift הוא אלבום הבכורה של הזמרת-היוצרת האמריקאית טיילור סוויפט. האלבום יצא לאור ב-24 באוקטובר 2006, על ידי Big Machine Records, כשסוויפט הייתה בת 16. סוויפט כתבה שירים לאלבום במהלך השנה הראשונה שלה בתיכון, חלק מהם במשותף עם ליז רוז וכותבים נוספים.‏ סוויפט התנסתה עם מספר מפיקי מוזיקה ותיקים בנאשוויל, אך בסוף החליטה לשכור את מפיק הדמואים שלה נתן צ'פמן.‏ מבחינה מוזיקלית, האלבום הוא בסגנון מוזיקת קאנטרי, ומבחינה מילולית, הוא עוסק במערכות יחסים רומנטיות, שכמה מהן כתבה סוויפט מהתבוננות במערכת יחסים לפני שחוותה אחת בעצמה, ונוגע במאבקיה האישיים של סוויפט בתיכון.[/COLOR][CR][CR]חמישה סינגלים יצאו מהאלבום, כולם הגיעו למעמד פלטינה מטעם איגוד תעשיית ההקלטות האמריקאי (RIAA).‏ "Tim McGraw" יצא כסינגל המוביל, והגיע לעשרת הגדולים במצעד הקאנטרי של בילבורד. "Teardrops on My Guitar" יצא כסינגל השני, והפך לשיר המצליח ביותר באלבום, כשהגיע למקום ה-13 במצעד הבילבורד הוט 100. "Our Song" יצא כסינגל השלישי מתוך האלבום, והפך לשיר הראשון של סוויפט שכבש את פסגת מצעד הקאנטרי של בילבורד, מה שהפך את סוויפט לאדם הצעיר ביותר שיצר וביצע לבדו שיר שהגיע למקום הראשון במצעד.‏ "Picture to Burn" ו-"Should've Said No" יצאו כסינגלים והרביעי והחמישי מהאלבום, והצליחו במצעדי הקאנטרי בארצות הברית. סוויפט קידמה את אלבומה על ידי הופעות חימום לראסקל פלאטס, ג'ורג' סטרייט, קני צ'סני ובראד פייזלי, טים מקגרו ופיית' היל.‏‏[CR]Taylor Swift התקבל באופן חיובי על ידי המבקרים, ששיבחו את הכישרון של סוויפט בגיל כה צעיר. האלבום זכה להצלחה מסחרית והשיק את הקריירה של סוויפט במוזיקת קאנטרי. בארצות הברית, שהה האלבום בפסגת מצעד אלבומי הקאנטרי במשך 24 שבועות, והגיע למעמד פלטינה מחומשת מטעם איגוד תעשיית ההקלטות האמריקאי (RIAA), עם מכירות של מעל 5 מיליון עותקים. Taylor Swift נשאר 277 שבועות במצעד הבילבורד 200, מה שהופך אותו לאחד מ-12 האלבומים שנשארו בזמן הארוך ביותר בהיסטוריה של המצעד. האלבום הצליח גם מחוץ למדינת האם של סוויפט, בעיקר בקנדה, באוסטרליה, ובבריטניה. האלבום מכר למעלה משישה מיליון עותקים.‏"
+
+msgctxt "#111050
+msgid ""
+msgstr "[COLOR=Yellow]אריאנה גרנדה-בוטרה (באנגלית: Ariana Grande-Butera; נולדה ב-26 ביוני 1993), המוכרת בשם אריאנה גרנדה, היא זמרת ושחקנית אמריקאית.[/COLOR][CR][CR]היא התחילה את קריירת הבידור שלה בשנת 2010 כששיחקה בסדרת הנוער המצליחה "ויקטוריוס". בהמשך קיבלה תפקיד ראשי בסדרת הבת שלה "סאם וקאט" ששודרו בערוץ ניקלודיאון.[CR]ב-2013, זכתה גרנדה להצלחה רבה לאחר שיצא אלבום הבכורה שלה, Yours Truly, שדורג במקום הראשון במצעד האלבומים האמריקאי בילבורד 200. הסינגל הראשון מתוך האלבום, "The Way", הגיע לעשרת הגדולים במצעד הפזמונים האמריקאי בילבורד הוט 100 והגיע למעמד פלטינה משולשת בארצות הברית. האלבום זכה לשבחי ביקורת עם מבקרים שהשוו את מנעד קולה הרחב לזה של מריה קארי שמגיע למנעד קולי של 4 אוקטבות.[CR]ב-2014, הוצגה גרנדה על ידי אגודת עסקי המוזיקה כ"פריצת השנה", על הישגיה בשנת 2013.[CR]אלבום האולפן השני שלה, My Everything, שיצא ב-2014, העפיל אף הוא למקום הראשון במצעד האמריקאי וארבעה סינגלים ממנו נכנסו לעשירייה הפותחת במצעד, מה שהפך אותה לזמרת מיינסטרים לאחת הזמרות המצליחות ביותר באותה שנה."

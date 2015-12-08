@@ -1,0 +1,2011 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <include description="KILLALL ERROR" file="Includes_Variables.xml" />
+  <include description="ok!"  file="Defaults.xml" />
+  <include description="ok!"  file="Musicviews.xml" />
+  <include description="ok!"  file="PVRviews.xml" />
+  <include description="ok!" file="Includes_Animation.xml" />  
+  <include description="ok!" file="Includes_Forms.xml" />  
+  <include description="" file="Includes_Home.xml" />
+  <include description="" file="Includes_HomeContent.xml" />
+  <include description="ok!" file="Includes_Shelf.xml" />
+  <include description="KILLALL ERROR" file="Includes_Small.xml" />
+  <include description="ok!" file="Includes_Genre.xml" />
+  <include description="" file="Includes_Variables_label2.xml" />
+  <include description="" file="Includes_Settings.xml" />
+  <include description="" file="Includes_SettingsContent.xml" />
+  <include description="" file="Includes_SubContent.xml" />
+  <include description="תפריט אמצעי - עיצוב" file="Includes_CenterMenu.xml" />
+  <include description="תפריט אמצעי - תוכן" file="Includes_CenterMenuContent.xml" />
+  <include description="תפריט וידגט - עיצוב" file="Includes_Widget.xml" />
+  <include description="תפריט וידגט - תוכן" file="Includes_WidgetContent.xml" />
+  <include description="חלון" file="Includes_BottomMenu.xml" />
+  <include description="תפריט שמאל" file="Includes_LeftMenu.xml" />
+  <include description="תצוגות" file="Includes_Views.xml" />
+  
+  <!--<include condition="true" file="script-skinshortcuts-includes.xml"/>--> <!--Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)-->
+  
+  <!--<constant name="IconCrossfadeTime">400</constant>-->
+  <include name="PVRinfos">
+	  <control type="image">
+        <description>background image</description>
+        <posx>-170</posx>
+        <posy>-150</posy>
+        <width>1460</width>
+        <height>800</height>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+        <visible>![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]</visible>
+      </control>
+	  <control type="image">
+          <posy>110</posy>
+          <width>1160</width>
+          <height>1</height>
+          <texture>images/Line.png</texture>
+        </control>
+      <control type="image">
+          <posx>0</posx>
+          <posy>370</posy>
+          <width>1160</width>
+          <height>1</height>
+          <texture>images/Line.png</texture>
+      </control>
+      <control type="label">
+        <description>header label</description>
+        <posx>20</posx>
+        <posy>0</posy>
+        <width>1100</width>
+        <height>30</height>
+        <font>size26</font>
+        <label>$LOCALIZE[19047]</label>
+        <align>center</align>
+        <aligny>center</aligny>
+        <textcolor>White</textcolor>
+      </control>
+      <control type="label">
+        <description>Title label</description>
+        <posx>20</posx>
+        <posy>40</posy>
+        <width>1100</width>
+        <height>30</height>
+        <font>size33B</font>
+        <label>$INFO[ListItem.Title]</label>
+        <align>center</align>
+        <aligny>center</aligny>
+        <textcolor>Yellow</textcolor>
+        <shadowcolor>black</shadowcolor>
+      </control>
+      <control type="label">
+        <description>Start time</description>
+        <posx>20</posx>
+        <posy>75</posy>
+        <width>1100</width>
+        <height>25</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <font>Size26</font>
+        <textcolor>Grey</textcolor>
+        <label>$LOCALIZE[142] $INFO[ListItem.StartTime]</label>
+      </control>
+      <control type="textbox" id="400">
+        <description>Plot value</description>
+        <posx>20</posx>
+        <posy>110</posy>
+        <width>1080</width>
+        <height>260</height>
+        <font>size26</font>
+        <align>justify</align>
+        <textcolor>white</textcolor>
+        <pagecontrol>-</pagecontrol>
+        <label fallback="161">$INFO[ListItem.Plot]</label>
+      </control>
+      <control type="label">
+        <description>Duration</description>
+        <posx>60</posx>
+        <posy>390</posy>
+        <width>1000</width>
+        <height>25</height>
+        <align>center</align>
+        <font>size26</font>
+        <textcolor>Grey</textcolor>
+        <label>$LOCALIZE[552]: $INFO[ListItem.StartDate] / $LOCALIZE[19148]: $INFO[ListItem.ChannelName]</label>
+      </control>
+      <control type="label">
+        <description>Duration</description>
+        <posx>60</posx>
+        <posy>420</posy>
+        <width>1000</width>
+        <height>25</height>
+        <align>center</align>
+        <font>size26</font>
+        <textcolor>Grey</textcolor>
+        <label>$LOCALIZE[180]: $INFO[ListItem.Duration] / $LOCALIZE[135]: $INFO[ListItem.Genre]</label>
+      </control>
+  </include>
+  <include name="TopInformation">
+	<control type="group" id="7016" description="">
+	  <height>45</height>
+	  <posy>-6</posy>
+	  <animation condition="System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
+      <control type="image" description="מסגרת">
+		<include>Fade_TopInformationOverlay</include>
+		<posx>-60</posx>
+		<include condition="!Skin.String(TopInformationColor,None)">ButtonTopInformation</include>
+		<include condition="Skin.String(TopInformationColor,None)">ButtonTopInformation_</include>
+		<visible>!Skin.HasSetting(Admin)</visible>
+	    <width>2040</width>
+      </control>
+      <control type="image" description="(Admin) מסגרת">
+		<posx>-60</posx>
+		<texture colordiffuse="ff000000" border="40">buttons/ButtonE0.png</texture>
+		<visible>Skin.HasSetting(Admin)</visible>
+	    <width>2040</width>
+      </control>
+      <control type="image" description="(Admin) מסגרת">
+		<include>Fade_TopInformationOverlay</include>
+		<posx>-60</posx>
+		<texture border="20">buttons/ButtonC.png</texture>
+		<visible>!Skin.HasSetting(Admin) + Skin.HasSetting(Admin2) + System.IdleTime(10)</visible>
+	    <width>2040</width>
+		<visible>false</visible>
+      </control>
+	  <control type="label" id="11010" description="">
+		  <label>$VAR[VideoInformation1]</label>
+		  <visible>false</visible>
+	  </control>
+	  <control type="group" description="הכל">
+		  <posy>2</posy>
+		  <control type="group" description="() שמאל">
+			<posx>100</posx>
+			<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1124)</visible>
+			<width>500</width>
+			<control type="label" id="1121" description="שמאל1 (תיקייה)">
+			  <align>left</align>
+			  <aligny>top</aligny>
+			  <haspath>false</haspath>
+			  <height>20</height>
+			  <include>LabelC12</include>
+			  <label>$VAR[TopInformation2]</label>
+			  <scroll>true</scroll>
+			  <!--<visible>!IsEmpty(Control.GetLabel(1122))</visible>-->
+			  <!--<visible>[!StringCompare(ListItem.Label,..) + !StringCompare(ListItem.Label,עמוד)]</visible>-->
+			  <visible>!Control.IsVisible(1122) + !Control.IsVisible(1132)</visible>
+			</control>
+			<control type="label" id="1122" description="שמאל2 (ספרייה)">
+			  <align>left</align>
+			  <aligny>top</aligny>
+			  <haspath>true</haspath>
+			  <height>20</height>
+			  <include>LabelC12</include>
+			  <label>$VAR[TopInformation2.1]</label>
+			  <visible>!IsEmpty(Control.GetLabel(1122))</visible>
+			  <visible>StringCompare(ListItem.Label,..) | StringCompare(ListItem.Label,עמוד)</visible>
+			</control>
+		  </control>
+		  <control type="group" description="(includes) שמאל">
+			<!--<visible>!Window.IsVisible(script-skin_helper_service-ColorPicker.xml)</visible>-->
+			<include>Badges</include>
+			<include>featherencelogo</include>
+			<visible>!Skin.HasSetting(Admin)</visible>
+		  </control>
+		  <control type="label" id="1124" description="זמן לסיום(HasMedia) שמאל2">
+			<align>left</align>
+			<aligny>top</aligny>
+			<include>LabelC12</include>
+			<posx>230</posx>
+			<label>$VAR[TopInformation2.2]</label>
+			<visible>!Skin.HasSetting(Admin) + Player.HasMedia</visible>
+			<visible>!SubString(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
+			<visible>!Window.IsVisible(MyPics.xml) + !Window.IsVisible(SlideShow.xml) + !Window.IsVisible(MyPVRChannels.xml)</visible>
+			<visible>!SubString(Container.FolderPath,special://userdata/library/videos/) + !SubString(Container.FolderPath,/var/media/) + !SubString(Container.FolderPath,special://home/external/)</visible>
+			<visible>!SubString(MusicPlayer.Title,playfeatherence)</visible>
+			<visible>!Window.IsVisible(script-skin_helper_service-ColorPicker.xml)</visible>
+			<width>340</width>
+		  </control>
+		  <control type="label" description="() אמצע">
+			<aligny>top</aligny>
+			<include>LabelC12</include>
+			<include>Fade7</include>
+			<label>$VAR[TopInformation3.1]</label>
+			<posx>600</posx>
+			<scroll>false</scroll>
+			<!--<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127) + [!Player.HasMedia | Window.IsVisible(MyPics.xml) | Window.IsVisible(SlideShow.xml) | Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(313) | Control.HasFocus(314) | Control.HasFocus(315)]</visible>-->
+			<width>720</width>
+			<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127)</visible>
+			<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+		  </control>
+		  <control type="label" id="1127" description="(HasMedia) אמצע">
+			<aligny>top</aligny>
+			<include>LabelC12</include>
+			<label>$VAR[TopInformation3]</label>
+			<posx>600</posx>
+			<scroll>true</scroll>
+			<width>715</width>
+			<visible>!Skin.HasSetting(Admin) + Player.HasMedia + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(SlideShow.xml)</visible>
+			<visible>!SubString(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
+			<visible>!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(313) + !Control.HasFocus(314) + !Control.HasFocus(315)</visible>
+			<visible>!Window.IsVisible(script-skin_helper_service-ColorPicker.xml)</visible>
+			<visible>!SubString(MusicPlayer.Title,playfeatherence)</visible>
+			<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+		  </control>
+		  <control type="label" description="(Admin) אמצע">
+			<aligny>top</aligny>
+			<include>LabelC12</include>
+			<label>$VAR[TopInformation3.1]</label>
+			<posx>600</posx>
+			<scroll>true</scroll>
+			<width>720</width>
+			<visible>Skin.HasSetting(Admin)</visible>
+			<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+		  </control>
+		  <control type="group" description="(specials) ימין">
+			<include>IconsInformation</include>	
+			<posx>1400</posx>
+			<posy>5</posy>
+			<visible>true</visible>	
+		  </control>
+		  <control type="label" description="() ימין">
+			<aligny>top</aligny>
+			<include>LabelC12</include>
+			<label>$VAR[ShowClock]</label>		
+			<posx>350r</posx>
+			<visible>Window.IsActive(LoginScreen.xml) | !Skin.HasSetting(ShowClock)</visible> <!--Window.IsActive(home) | -->
+			<width>350</width>
+		  </control>
+	  </control>
+	</control>
+  </include>
+  <include name="TopVideoInformation">
+	<control type="group">
+	  <!--<animation condition="!System.IdleTime(3)" effect="fade" start="100" end="70" time="1000">Conditional</animation>-->
+      <include>Slide3</include>
+	  <visible>[Window.IsVisible(DialogFullScreenInfo.xml) + VideoPlayer.IsFullscreen] | Window.IsVisible(DialogVideoInfo.xml) | [Window.IsVisible(Home.xml) + System.IdleTime(3) + [Control.HasFocus(311) | Control.HasFocus(312)]] | [Control.IsVisible(57) | Control.IsVisible(58)] + [Container.Content(Seasons) | Container.Content(Episodes) | !Skin.HasSetting(ShowTopVideoInformation)] | Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(56) | Control.IsVisible(450) | Window.IsVisible(SettingsCategory.xml)</visible>
+	  <control type="image" description="מסגרת">
+		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,270">Conditional</animation>
+		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-5">Conditional</animation>
+		  <include>Fade_TopVideoInformationOverlay</include>
+		  <posx>-20</posx>
+          <posy>-566</posy>
+          <width>1960</width>
+          <height>128</height>
+		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation</include>
+		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation_</include>
+      </control>
+	  <control type="image" description="קו לאורך">
+		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,250">Conditional</animation>
+		  <include>Fade_TopVideoInformationOverlay</include>
+		  <aspectratio>keep</aspectratio>
+		  <posx>670</posx>
+          <posy>-566</posy>
+          <width>10</width>
+          <height>128</height>
+		  <texture border="5" colordiffuse="$VAR[TopVideoInformationColor]">images/LineV.png</texture>
+      </control>
+	  <control type="image" description="קו לאורך">
+		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,250">Conditional</animation>
+		  <include>Fade_TopVideoInformationOverlay</include>
+		  <aspectratio>keep</aspectratio>
+		  <posx>1225</posx>
+          <posy>-566</posy>
+          <width>10</width>
+          <height>128</height>
+		  <texture border="5" colordiffuse="$VAR[TopVideoInformationColor]">images/LineV.png</texture>
+      </control>
+	  <control type="image" description="קו לרוחב">
+		  <include>Fade_TopVideoInformationOverlay</include>
+		  <aspectratio>stretch</aspectratio>
+		  <posx>30</posx>
+          <posy>-445</posy>
+          <width>610</width>
+          <height>5</height>
+		  <texture border="5" colordiffuse="$VAR[TopVideoInformationColor]">images/line1.png</texture>
+		  <visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
+      </control>
+	  <control type="image" description="קו לרוחב">
+		  <include>Fade_TopVideoInformationOverlay</include>
+		  <aspectratio>stretch</aspectratio>
+		  <posx>685</posx>
+          <posy>-490</posy>
+          <width>509</width>
+          <height>5</height>
+		  <texture border="5" colordiffuse="$VAR[TopVideoInformationColor]">images/line1.png</texture>
+      </control>
+	  <control type="image" description="קו לרוחב">
+		  <include>Fade_TopVideoInformationOverlay</include>
+		  <aspectratio>stretch</aspectratio>
+		  <posx>1245</posx>
+          <posy>-490</posy>
+          <width>450</width>
+          <height>5</height>
+		  <texture border="5" colordiffuse="$VAR[TopVideoInformationColor]">images/line1.png</texture>
+      </control>
+	  <control type="group" description="משפט סרט/נצפו/פרק+עונה">
+		<include>Fade4</include>
+		<visible>!IsEmpty(Control.GetLabel(1107))</visible>
+		<!--<visible>!Window.IsVisible(AddonBrowser.xml)</visible>-->
+		<control type="label" id="1107" description="משפט סרט/נצפו/עונה+פרק/משפט הרחבה (1107)">
+	      <include condition="!IsEmpty(ListItem.Property(Addon.Description))">ScrollLabel</include>
+		  <posx>685</posx>
+          <posy>-482</posy>
+          <height>32</height>
+          <font>size21</font>
+		  <scroll></scroll>
+          <textcolor>White</textcolor>
+          <align>center</align>
+          <label>$VAR[TopVideoInformation7]</label>
+		  <visible>!IsEmpty(Control.GetLabel(1107))</visible>
+		  <width>530</width>
+        </control>
+	  </control>
+	  <control type="group" description="שם הוידאו">
+	    <include>Fade4</include>
+		<visible>!IsEmpty(Control.GetLabel(1108))</visible>
+	    <control type="label" id="1108" description="שם">
+		  <scroll>false</scroll>
+		  <posx>690</posx>
+          <posy>-561</posy>
+          <height>70</height>
+          <font>size34</font>
+          <textcolor>Yellow</textcolor>
+          <align>center</align>
+          <label>$VAR[TopVideoInformation8]</label>
+		  <width>530</width>
+        </control>
+	  </control>
+	  <control type="group" description="תמונת פרק">
+		<include>Fade4</include>
+		<height>180</height>		
+	    <posx>1235</posx>
+		<posy>-440</posy>	      
+	    <width>455</width>
+		<visible>!SubString(Container.FolderPath,plugin://)</visible> <!-- | Player.HasVideo + !IsEmpty(Player.Art(thumb))-->
+		<control type="image" description="מסגרת">
+		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,270">Conditional</animation>
+		  <animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="100,40">Conditional</animation>
+		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-5">Conditional</animation>
+		  <include>Fade_TopVideoInformationOverlay</include>
+		  <posx>-14</posx>
+          <posy>-10</posy>
+          <width>980</width>
+          <height>206</height>
+		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation</include>
+		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation_</include>
+		  <visible>!IsEmpty(ListItem.Art(thumb)) + Container.content(Episodes) + !Window.IsActive(VideoFullScreen.xml) | !IsEmpty(Container(50).ListItem.Property(FanartCode))</visible>
+		  <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
+      </control>
+		<control type="image">
+	      <aspectratio>stretch</aspectratio>
+		  <!--<bordersize>1</bordersize>
+		  <bordertexture border="10">misc/frames/fanartborder3.png</bordertexture>-->
+		  <posx>-51</posx>
+		  <posy>-10</posy>
+		  <width>570</width>
+		  <height>215</height>
+		  <texture border="20" diffuse="buttons/ButtonC0.png">$VAR[TopVideoInformation9]</texture>
+		  <visible>!IsEmpty(ListItem.Art(thumb)) + Container.content(Episodes) + !Window.IsActive(VideoFullScreen.xml)</visible>
+	    </control>
+	  </control>
+	  <control type="group" description="שנה/יוצר הרחבה">
+	    <include>Fade4</include>
+		<posx>1600</posx>
+        <posy>-499</posy>
+		<visible>!IsEmpty(Control.GetLabel(1102)) | !IsEmpty(Control.GetLabel(1103))</visible> <!--Window.IsVisible(DialogFullScreenInfo.xml) | -->
+		<control type="label" id="1102" description="שנה/יוצר הרחבה">
+          <align>right</align>
+		  <font>size28</font>
+		  <height>70</height>
+		  <posx>80</posx>
+          <width>250</width>		
+          <textcolor>White</textcolor>
+          <label>$VAR[TopVideoInformation2]</label>
+		  <scroll>false</scroll>
+		  <visible>!IsEmpty(Control.GetLabel(1102))</visible>
+        </control>
+	  </control>
+	  <control type="group" description="פוסטר">
+	    <animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="150,150" time="3000">Conditional</animation>
+        <include>Slide4</include>
+		<include>Fade4</include>
+		<height>294</height>		
+	    <posx>1720</posx>
+		<posy>-550</posy>
+	    <width>197</width>
+	    <control type="image" description="פוסטר">
+		  <aspectratio>stretch</aspectratio>
+		  <texture background="false">$VAR[TopVideoInformation4]</texture>
+		</control>
+	    <control type="label" id="1104" description="***פוסטר***">
+          <label>$VAR[TopVideoInformation4]</label>
+		  <visible>false</visible>
+        </control>
+		<control type="group" description="ShowDVDCases">
+			<posx>-32</posx>
+			<posy>-5</posy>              
+			<height>316</height>
+			<width>237</width>
+			<include>WatchedStatus</include> <!-- condition="!IsEmpty(Control.GetLabel(1104))"-->
+			<include>ShowDVDCases</include>
+		</control>
+		<include>FanartRollingMovieSetDiscs</include>
+		<include>cdart_image</include>
+		<control type="image" description="דירוג">
+          <posx>0</posx>
+          <posy>7</posy>
+          <height>24</height>
+          <width>125</width>
+          <aspectratio align="left">keep</aspectratio>
+          <texture>$VAR[TopVideoInformation3]</texture>
+		  <visible>!IsEmpty(Control.GetLabel(1103))</visible>
+		</control>
+		<control type="label" id="1103" description="***דירוג***">
+          <label>$VAR[TopVideoInformation3]</label>
+		  <visible>false</visible>
+        </control>
+		<control type="group" description="InProgressBadge">
+			<posx>-54</posx>
+			<posy>-24</posy>              
+			<height>316</height>
+			<width>237</width>
+			<include>InProgressBadge</include>
+		</control>
+	  </control>  
+	  
+	  <control type="group" description="עונה ופרק">
+		<posx>1240</posx>
+		<posy>-483</posy>
+		<!--<visible>!IsEmpty(Control.GetLabel(1480))</visible>-->
+		<control type="label" id="1480" description="עונה ופרק">
+		  <align>left</align>
+		  <label>$VAR[TopVideoInformation10]</label>
+		  <font>size28</font>
+		  <height>40</height>
+		  <pauseatend>3000</pauseatend>
+		  <width>192</width>
+		  <textcolor>White</textcolor>
+		  <visible>!IsEmpty(Control.GetLabel(1480))</visible>
+		  <visible>!Control.IsVisible(1481)</visible>
+		</control>
+		<control type="label" id="1481" description="נצפה לאחרונה">
+		  <font>size18</font>
+		  <include>LabelC4</include>
+		  <height>40</height>
+		  <posx>-65</posx>
+		  <posy>-5</posy>
+		  <scroll>false</scroll>
+          <width>280</width>		
+          <textcolor>White</textcolor>
+		  <label>$LOCALIZE[79023]:[CR]$INFO[ListItem.LastPlayed]</label>
+		  <visible>!IsEmpty(ListItem.LastPlayed)</visible>
+		  <visible>[System.IdleTime(3) + !System.IdleTime(6)]</visible>
+        </control>
+	  </control>
+		
+	  <control type="group" description="דירוג והצבעות/mpaa/נצפה לאחרונה">
+		<posx>1365</posx>
+        <posy>-483</posy>
+		<visible>Window.IsActive(DialogVideoInfo.xml)</visible> <!--Window.IsVisible(DialogFullScreenInfo.xml) | -->
+		<control type="label" description="דירוג והצבעות">
+          <align>right</align>
+		  <aligny>center</aligny>
+		  <font>size18</font>
+		  <height>40</height>
+		  <posx>220</posx>
+		  <posy>-2</posy>
+          <width>240</width>		
+          <textcolor>White</textcolor>
+          <label>$INFO[ListItem.RatingAndVotes]</label>
+		  <scroll>false</scroll>
+		  <visible>!IsEmpty(ListItem.RatingAndVotes) + Window.IsActive(DialogVideoInfo.xml)</visible>
+        </control>
+	    <control type="image">
+		  <height>30</height>
+	      <visible>!IsEmpty(ListItem.mpaa)</visible>
+		  <posx>-13</posx>
+		  <posy>3</posy>
+	      <width>50</width>
+	      <texture>$INFO[ListItem.mpaa,badges/mpaa/,.png] + Window.IsActive(DialogVideoInfo.xml)</texture>
+	    </control>
+	  </control>  
+	  <control type="group" description="פרטי וידאו (1105)">
+		<include>Fade4</include>
+		<visible>!IsEmpty(Control.GetLabel(1105)) + !SubString(Control.GetLabel(1105),$LOCALIZE[20457])</visible>
+		<visible></visible>
+	    <control type="textbox" description="פרטי סרט">
+		  <textcolor>White</textcolor>
+		  <font>size24</font>
+		  <include condition="SubString(Container.FolderPath,plugin.program.advanced.launcher)">LabelL1</include>
+		  <include condition="[StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,1)">LabelR1</include>
+		  <include condition="[!StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,2)">LabelL1</include>
+		  <include condition="Skin.String(PlotAlign,3)">LabelJ1</include>
+		  <include condition="Skin.String(PlotAlign,4)">LabelC1</include>
+		  <include>AutoScrollText</include>
+		  <posx>20</posx>
+          <posy>-561</posy>
+          <width>640</width>
+          <height>115</height> <!--130-->
+          <label>$VAR[TopVideoInformation5]</label>
+        </control>
+	    <control type="label" id="1105" description="***פרטי סרט***">
+          <label>$VAR[TopVideoInformation5]</label>
+		  <visible>false</visible>
+        </control>  		
+	    <control type="group" id="11051" description="משחקים">
+		  <posx>20</posx>
+		  <posy>-550</posy>
+		  <visible>SubString(Container.FolderName,Advanced Launcher) + IsEmpty(Control.GetLabel(1106))</visible>
+			<control type="multiimage" description="">
+			  <aspectratio align="left">keep</aspectratio>
+			  <height>300</height>
+			  <imagepath>$VAR[GamesImagePath]</imagepath>
+			  <timeperimage>10000</timeperimage>
+			  <width>300</width>
+			</control>		
+		</control>
+	  </control>
+	  <control type="group" description="+סגנון (1106)">
+	    <include>Fade4</include>
+		<visible>!IsEmpty(Control.GetLabel(1105)) | !IsEmpty(Control.GetLabel(1106))</visible>
+		<posx>1165</posx>
+		<posy>0</posy>
+	    <control type="label" id="1106" description="ג'אנר">
+		  <posx>65</posx>
+          <posy>-568</posy>
+          <width>320</width>
+          <height>70</height>
+          <font>size28</font>
+          <textcolor>White2</textcolor>
+          <align>left</align>
+          <label>$VAR[TopVideoInformation6]</label>
+		  <scroll>false</scroll>
+		  <visible>SubString(ListItem.Path,videodb://1/7) | SubString(ListItem.path,videodb://movies/sets/) | ListItem.Property(Addon.Type) | Skin.HasSetting(Admin)</visible>
+        </control>
+		<control type="grouplist" description="תמונת הסגנון">
+			<posx>65</posx>
+			<posy>-559</posy>
+			<width>360</width>
+			<align>left</align>
+			<itemgap>-10</itemgap>
+			<scrolltime tween="sine" easing="out">200</scrolltime>
+			<orientation>horizontal</orientation>
+			<visible>!Skin.HasSetting(Genre)</visible>
+			<include>MultiVideoGenreFlagging</include>
+		</control>
+		<control type="grouplist" description="שם הסגנון">
+			<posx>65</posx>
+			<posy>-517</posy>
+			<width>360</width>
+			<align>left</align>
+			<itemgap>-10</itemgap>
+			<scrolltime tween="sine" easing="out">200</scrolltime>
+			<orientation>horizontal</orientation>
+			<visible>!Skin.HasSetting(Genre)</visible>
+			<include>GenreText</include>
+		</control>
+		<control type="grouplist" description="שם הסגנון2">
+			<posx>80</posx>
+			<posy>-560</posy>
+			<width>370</width>
+			<align>left</align>
+			<itemgap>20</itemgap>
+			<orientation>horizontal</orientation>
+			<visible>Skin.HasSetting(Genre)</visible>
+			<include>GenreText</include>
+		</control>
+		<control type="group" description="מספר עונות">
+		    <posx>-50</posx>
+			<posy>0</posy>
+			<control type="label" id="1112" description="מספר">
+			  <align>center</align>
+			  <height>50</height>
+			  <posx>513</posx>
+			  <posy>-559</posy>
+			  <label>$VAR[TopVideoInformation1112a]</label>
+			  <visible>!IsEmpty(Control.GetLabel(1112))</visible>
+			  <width>70</width>
+			</control>
+			<control type="label" description="טקסט">
+			  <posx>479</posx>
+			  <include>GenreTextPlace</include>
+			  <posy>-517</posy>
+			  <label>$VAR[TopVideoInformation1112b]</label>
+			  <visible>Control.IsVisible(1112)</visible>
+			</control>
+		</control>
+		<control type="group" description="אורך בשעות/דקות">
+			<posx>-50</posx>
+			<posy>0</posy>
+			<control type="label" id="1101" description="אורך/מספר עונה/גרסה הרחבה">
+			  <include>LabelC12</include> 
+			  <posx>494</posx>
+			  <posy>-571</posy>
+			  <width>100</width>
+			  <label>$VAR[TopVideoInformation1]</label>
+			  <scroll>false</scroll>
+			  <visible>Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(DialogAddonInfo.xml) | Window.IsVisible(MyMusicNav.xml)</visible>
+			  <visible>!IsEmpty(Control.GetLabel(1101))</visible>
+			</control>
+			<control type="label" id="1109" description="אורך-בשעות">
+			  <include>LabelC12</include> 
+			  <posx>519</posx>
+			  <posy>-571</posy>
+			  <width>50</width>
+			  <label>$VAR[VideoInHours]</label>
+			  <visible>IntegerGreaterThan(Control.GetLabel(1109),0) + !IsEmpty(Control.GetLabel(1109))</visible> <!--!Window.IsActive(VideoFullScreen.xml) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !SubString(Container.FolderPath,shows)] | [Window.IsActive(VideoFullScreen.xml) + !VideoPlayer.Content(episodes)] + -->
+			  <visible>[!IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + Container.Content(tvshows)] | !Container.Content(tvshows)</visible>
+			  <visible>!Control.IsVisible(1101)</visible>
+			</control>
+			<control type="label" id="1110" description="אורך-בדקות">
+			  <include>LabelC12</include> 
+			  <posx>519</posx>
+			  <posy>-571</posy>
+			  <width>50</width>
+			  <label>$VAR[VideoInMins]</label>
+			  <visible>IntegerGreaterThan(Control.GetLabel(1110),0) + !IsEmpty(Control.GetLabel(1110)) + !Control.IsVisible(1109)</visible> <!--!Window.IsActive(VideoFullScreen.xml) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !SubString(Container.FolderPath,shows)] | [Window.IsActive(VideoFullScreen.xml) + !VideoPlayer.Content(episodes)] + -->
+			  <visible>[!IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + Container.Content(tvshows)] | !Container.Content(tvshows)</visible>
+			  <visible>!Control.IsVisible(1101)</visible>
+			</control>
+			<control type="label" description="שעות">
+			  <align>center</align>
+			  <label>$LOCALIZE[12392]</label>
+			  <font>size18</font>
+			  <posx>510</posx>
+			  <posy>-539</posy>
+			  <visible>Control.IsVisible(1109)</visible>
+			  <width>70</width>
+			</control>
+			<control type="label" description="דקות">
+			  <align>center</align>
+			  <label>$LOCALIZE[12391]</label>
+			  <font>size18</font>
+			  <posx>510</posx>
+			  <posy>-539</posy>
+			  <visible>Control.IsVisible(1110)</visible>
+			  <width>70</width>
+			</control>
+		  </control>
+	  </control>
+	</control>
+	<control type="label" id="11155" description="לתצוגת פרקים/עונות -57/58">
+	  <label>$VAR[11155label]</label>
+	  <posx>40</posx>
+	  <posy>150</posy>
+	  <visible>Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)</visible>
+    </control>
+	<include>RightMenuDialogVideoInfo</include>
+  </include>
+  <include name="TopMenuDialogSlider" description="(הזזת תרגום)">
+    <control type="group">  			
+      <posx>740</posx>
+      <posy>0</posy>
+	  <!--<animation effect="fade" start="100" end="0" time="4000">VisibleChange</animation>-->
+	  <!--<animation condition="System.IdleTime(5)" effect="fade" start="100" end="0" time="4000">Conditional</animation>-->
+      <control type="image" description="מסגרת">
+		<height>190</height>
+        <width>440</width>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+	  <control type="grouplist">
+	    <height>205</height>
+		<itemgap>15</itemgap>
+        <posx>20</posx>
+        <posy>20</posy>		
+		<width>400</width>
+		  <control type="label" id="10" description="Heading">
+			<include>LabelC10</include>
+			<height>40</height>
+		  </control>
+		  <control type="slider" id="11" description="Slider">	
+			<onup>11</onup>
+			<ondown>11</ondown>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
+			<width>400</width>
+		  </control>
+		  <control type="label" id="12" description="Slider value">
+			<include>LabelC10</include>
+			<height>20</height>
+		  </control>
+	  </control>
+	</control>
+  </include>   
+
+  <include name="LeftMenuVideoOSDSettings">
+    <control type="group" description="Side menu 5 group">
+	  <include>Slide6</include>
+	  <animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
+      <height>570</height>
+	  <posx>-420</posx>
+	  <posy>250</posy>	  
+	  <width>480</width>	   	  
+      <control type="image" description="רקע">
+	    <include>Fade_LeftMenuOverlay</include>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+      <control type="label" id="2" description="כותרת">
+		<height>40</height>
+		<include>LabelC1</include>
+		<posx>20</posx>
+		<posy>0</posy>
+        <width>440</width>
+      </control>
+      <control type="grouplist" id="5" description="Settings">
+        <height>530</height>
+		<ondown>5</ondown>
+		<onleft>Close</onleft>
+        <onright>Close</onright>
+        <onup>5</onup>
+		<pagecontrol>60</pagecontrol>
+		<posy>40</posy>
+		<width>480</width>		
+	  </control>
+	  <control type="button" id="7" description="ברירת מחדל slider">
+		<include>ButtonL4</include>
+	  </control>
+	  <control type="radiobutton" id="8" description="ברירת מחדל">
+		<include>ButtonL4</include>	
+	  </control>
+	  <control type="spincontrolex" id="9" description="ברירת מחדל arrows">
+		<include>ButtonL4</include>	
+	  </control>
+	  <control type="sliderex" id="13" description="ברירת מחדל">
+		<include>ButtonL4</include>	
+	  </control>
+    </control>
+  </include>
+  <include name="LeftDialogSongInfo" description="דיאלוג">
+    <control type="group" description="Side menu 300 group">
+	  <visible>!Window.IsActive(2001)</visible>
+	  <include>Slide6</include>
+      <height>530</height>	  
+	  <posx>-475</posx>
+	  <posy>275</posy>
+	  <width>480</width>
+      <control type="image" description="רקע">
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+      <control type="grouplist" id="300">
+		<include>4ways3</include>
+        <control type="button" id="12" description="Album Info">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>10523</label>
+        </control>
+        <control type="button" id="13" description="Get Thumb">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>13405</label>
+        </control>		
+        <control type="button" id="14" description="Decrease Rating">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>- $LOCALIZE[563]</label>
+          <onclick>DecreaseRating</onclick>
+        </control>
+        <control type="button" id="15" description="Increase Rating">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>+ $LOCALIZE[563]</label>
+          <onclick>IncreaseRating</onclick>
+        </control>
+        <control type="button" id="10" description="Save rating">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>$LOCALIZE[563] אישור</label>
+        </control>			
+      </control>
+    </control>
+  </include>  
+  <include name="LeftDialogAlbumInfo" description="דיאלוג">
+    <control type="group" description="Side menu 300 group">
+	  <include>Slide6</include>
+      <height>530</height>	  
+	  <posx>-475</posx>
+	  <posy>275</posy>	  
+	  <width>480</width>	  	  
+      <control type="image" description="רקע">
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+     <control type="grouplist" id="300">
+		<onright>Close</onright>
+		<include>4ways3</include>
+        <control type="button" id="6" description="רענן">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>184</label>
+        </control>
+        <control type="button" id="10" description="הורד תמונה">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>13405</label>
+        </control>		
+        <!--<control type="button" id="11" description="Last FM">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>Last FM</label>
+        </control>-->
+        <!--<control type="button" id="12" description="Get FanArt">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>20413</label>
+        </control>-->
+        <control type="button" id="5" description="Toggle">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>Toggle</label>
+        </control>			
+      </control>
+    </control> 
+  </include>  
+  <include name="LeftMenuDialogAddonInfo" description="דיאלוג">
+    <control type="group" description="Side menu 300 group">
+	  <include>Slide6</include>
+      <height>530</height>	  
+	  <posx>-435</posx>
+	  <posy>275</posy>
+	  <width>480</width>
+      <control type="image" description="רקע">
+	    <include>Fade_LeftMenuOverlay</include>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+     <control type="grouplist" id="300">
+		<include>4ways3</include>
+        <control type="button" id="12" description="הרץ הרחבה">
+		  <!--<enable>SubString(ListItem.Property(Addon.Status),זמין) | Window.IsVisible(Home.xml)</enable>-->
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <!--<onclick>Close</onclick>-->
+		  <onclick>RunAddon($INFO[ListItem.Property(Addon.ID)])</onclick>
+		  <label>518</label>
+		  <!--<label>$LOCALIZE[79024]</label>-->
+		  <visible>StringCompare(Control.GetLabel(7),$LOCALIZE[24021])</visible>
+        </control>
+        <control type="button" id="6" description="התקן/הסר הרחבה">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>$LOCALIZE[24038]</label>
+        </control>
+        <control type="togglebutton" id="7" description="Disable">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>$LOCALIZE[24021]</label>
+		  <altlabel>$LOCALIZE[24022]</altlabel>
+        </control>
+        <control type="button" id="9" description="settings">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>$LOCALIZE[5]</label>
+        </control>	
+        <control type="button" id="10" description="changelog">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>$LOCALIZE[24054]</label>
+        </control>
+        <control type="button" id="8" description="update">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>$LOCALIZE[24069]</label>
+		  <visible>StringCompare(Control.GetLabel(7),$LOCALIZE[24021])</visible>
+        </control>		
+        <control type="button" id="11" description="rollback">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+          <label>$LOCALIZE[24048]</label>
+        </control>
+      </control>
+    </control> 
+  </include>  
+  <include name="RightMenuDialogVideoInfo" description="פרטי סרט/סדרה">
+	  <control type="group" description="פרטים ימין">
+		<visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
+	    <height>250</height>		
+	    <posx>20</posx>
+	    <posy>130</posy>	 
+	    <width>600</width>
+        
+		<control type="grouplist">
+		  <height>360</height>
+		  <posx>0</posx>
+          <posy>20</posy>
+		  <visible>true</visible>
+		  <width>640</width>
+		  <control type="label" description="במאי">
+			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
+			<include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
+            <height>40</height>		  
+            <label>$VAR[DirectorButton]</label>
+			<visible>!IsEmpty(ListItem.Director)</visible>
+          </control>		  		  
+		  <control type="label" description="אולפן">
+			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
+			<include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
+            <height>40</height>		  
+            <label>$VAR[RightMenuDialogVideoInfo2]</label>
+			<visible>!IsEmpty(ListItem.Studio)</visible>
+          </control>
+		  <control type="label" description="מדינה">
+			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
+			<include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
+            <height>40</height>		  
+            <label>$VAR[RightMenuDialogVideoInfo4]</label>
+			<scrollspeed>10</scrollspeed>
+			<visible>!IsEmpty(ListItem.Country)</visible>
+          </control>		  
+		  <control type="label" description="שודר לראשונה">
+			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
+			<include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
+            <height>40</height>		  
+            <label>$VAR[RightMenuDialogVideoInfo5]</label>
+			<visible>!IsEmpty(ListItem.Premiered)</visible>
+          </control>		  
+		  <control type="label" description="כותבים">
+		    <font>size24</font>
+			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
+			<include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
+            <height>40</height>
+            <label>$VAR[RightMenuDialogVideoInfo3]</label>
+			<visible>!IsEmpty(ListItem.Writer)</visible>
+          </control>
+		  <control type="label" description="נתיב">
+			<textcolor>Grey</textcolor>
+			<font>size13</font>
+			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
+			<include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
+            <height>20</height>	
+            <label>$VAR[RightMenuDialogVideoInfo7]</label>
+			<scroll>true</scroll>
+			<visible>Skin.HasSetting(Admin) | Skin.HasSetting(Admin2)</visible>
+			<visible>!SubString(Container.FolderPath,plugin://)</visible>
+			
+          </control>
+      </control>
+      </control>
+  </include>
+    <include name="cdart_image">
+		<control type="group">
+			<visible>!Skin.HasSetting(fanart_plot) + !ListItem.IsCollection + !stringcompare(ListItem.Label,..)</visible>
+			<!-- Default Discart - plot -->
+			<control type="image">
+				<posx>1160</posx>
+				<posy>648</posy>
+				<width>213</width>
+				<height>213</height>
+				<aspect>keep</aspect>
+				<texture>$INFO[ListItem.Art(discart)]</texture>
+				<visible>!IsEmpty(ListItem.Art(discart)) + !Skin.HasSetting(fanart_Disable_CDART)</visible>
+				<animation type="Conditional" reversible="true" condition="!IsEmpty(ListItem.Art(discart))">
+					<effect type="slide" start="0,200" end="0,0" time="400"/>
+					<effect type="rotate" center="auto" start="0" end="-10800" time="500000" pulse="true" delay="400"/>
+				</animation> 
+			</control>
+			<!-- Fake Discart - plot -->
+			<control type="group">
+				<posx>1160</posx>
+				<posy>648</posy>
+				<width>213</width>
+				<height>213</height>
+				<visible>IsEmpty(ListItem.Art(discart)) + !Skin.HasSetting(fanart_Disable_FAKECDART) + !IsEmpty(ListItem.Art(poster)) + !Container.Content(Episodes)</visible>	
+				<animation effect="slide" start="0,200" end="0,0" time="400" condition="True">Conditional</animation>
+				<animation effect="rotate" center="auto" start="0" end="-10800" time="500000" reversible="false" pulse="true" delay="400" condition="True">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="0" condition="Skin.HasSetting(fanart_Disable_TVFAKECDART) + !Container.Content(movies)">Conditional</animation>
+				<!--<animation type="Visible" reversible="False">
+					<effect type="rotate" center="auto" start="0" end="-10800" time="500000" pulse="true" delay="400"/>
+					 <effect type="slide" start="0,200" end="0,0" time="400"/> 
+				</animation> -->
+				<control type="image">	
+					<aspect>keep</aspect>
+					<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[ListItem.Art(poster)]</texture>
+				</control>
+				<control type="image">
+					<texture>thumbs/sets/cdarttop.png</texture>
+					<visible>!IsEmpty(ListItem.Art(poster))</visible>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Skin.HasSetting(fanart_plot) + !ListItem.IsCollection + !stringcompare(ListItem.Label,..)</visible>
+			<!-- Default Discart - no plot -->
+			<control type="image">
+				<posx>1160</posx>
+				<posy>790</posy>
+				<width>263</width>
+				<height>263</height>
+				<aspect>keep</aspect>
+				<texture>$INFO[ListItem.Art(discart)]</texture>
+				<visible>!IsEmpty(ListItem.Art(discart)) + !Skin.HasSetting(fanart_Disable_CDART)</visible>
+				<animation type="Conditional" reversible="true" condition="!IsEmpty(ListItem.Art(discart))">
+					<effect type="slide" start="0,0" end="-145,0" time="400"/>
+					<effect type="rotate" center="auto" start="0" end="-10800" time="500000" pulse="true" delay="400"/>
+				</animation> 
+			</control>
+			<!-- Fake Discart - no plot -->
+			<control type="group">
+				<posx>1160</posx>
+				<posy>790</posy>
+				<width>263</width>
+				<height>263</height>
+				<visible>IsEmpty(ListItem.Art(discart)) + !Skin.HasSetting(fanart_Disable_FAKECDART) + !IsEmpty(ListItem.Art(poster)) + !Container.Content(Episodes)</visible>
+				<animation effect="slide" start="0,0" end="-145,0" time="400" condition="True">Conditional</animation>
+				<animation effect="rotate" center="auto" start="0" end="-10800" time="500000" reversible="false" pulse="true" delay="400" condition="True">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="0" condition="Skin.HasSetting(fanart_Disable_TVFAKECDART) + !Container.Content(movies)">Conditional</animation>
+
+				<control type="image">
+					<aspect>keep</aspect>
+					<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[ListItem.Art(poster)]</texture>
+				</control>
+				<control type="image">
+					<texture>thumbs/sets/cdarttop.png</texture>
+					<visible>!IsEmpty(ListItem.Art(poster))</visible>
+				</control>
+			</control>
+		</control>
+	</include>
+  	<include name="FanartRollingMovieSetDiscs">
+		<control type="image">
+			<aspectratio>keep</aspectratio>
+			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.7.DiscArt)]</texture>
+			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
+				<effect type="slide" start="0,0" end="0,2350" delay="3500" time="2600" tween="cubic" easing="inout" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="3500" time="2600" tween="cubic" easing="inout" />
+			</animation>
+			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.7.DiscArt))</visible>
+		</control>
+		<control type="image">
+			<aspectratio>keep</aspectratio>
+			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.6.DiscArt)]</texture>
+			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
+				<effect type="slide" start="0,0" end="0,2200" delay="3000" time="2600" tween="cubic" easing="inout" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="3000" time="2600" tween="cubic" easing="inout" />
+			</animation>
+			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.6.DiscArt))</visible>
+		</control>
+		<control type="image">
+			<aspectratio>keep</aspectratio>
+			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.5.DiscArt)]</texture>
+			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
+				<effect type="slide" start="0,0" end="-2050,0" delay="2500" time="2600" tween="cubic" easing="inout" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="2500" time="2600" tween="cubic" easing="inout" />
+			</animation>
+			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.5.DiscArt))</visible>
+		</control>
+		<control type="image">
+			<aspectratio>keep</aspectratio>
+			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.4.DiscArt)]</texture>
+			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
+				<effect type="slide" start="0,0" end="-1900,0" delay="2000" time="2600" tween="cubic" easing="inout" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="2000" time="2600" tween="cubic" easing="inout" />
+			</animation>
+			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.4.DiscArt))</visible>
+		</control>
+		<control type="image">
+			<aspectratio>keep</aspectratio>
+			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.3.DiscArt)]</texture>
+			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
+				<effect type="slide" start="0,0" end="-1750,0" delay="1500" time="2600" tween="cubic" easing="inout" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="1500" time="2600" tween="cubic" easing="inout" />
+			</animation>
+			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.3.DiscArt))</visible>
+		</control>
+		<control type="image">
+			<aspectratio>keep</aspectratio>
+			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.2.DiscArt)]</texture>
+			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
+				<effect type="slide" start="0,0" end="-1600,0" delay="1000" time="2600" tween="cubic" easing="inout" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="1000" time="2600" tween="cubic" easing="inout" />
+			</animation>
+			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.2.DiscArt))</visible>
+		</control>
+		<control type="image">
+			<aspectratio>keep</aspectratio>
+			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.1.DiscArt)]</texture>
+			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
+				<effect type="slide" start="0,0" end="-1450,0" delay="500" time="2600" tween="cubic" easing="inout" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="500" time="2600" tween="cubic" easing="inout" />
+			</animation>
+			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.1.DiscArt))</visible>
+		</control>
+		<control type="image">
+			<aspectratio>keep</aspectratio>
+			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.0.DiscArt)]</texture>
+			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
+				<effect type="slide" start="0,0" end="-1300,0" delay="0" time="2600" tween="cubic" easing="inout" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
+			</animation>
+			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.0.DiscArt))</visible>
+		</control>
+	</include>
+
+  <include name="BottomMenuDialogContextMenu" description="תפריט קליק ימני">
+	<control type="group">
+	  <!--<visible allowhiddenfocus="true">ControlGroup(996).HasFocus()</visible>--> 
+	  <posx>720</posx>
+      <posy>560</posy>
+      <control type="image" id="999" description="מסגרת">
+		<include>Fade_BottomMenuOverlay</include>
+		<height>535</height>
+        <width>480</width>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+	  <control type="grouplist" id="996" description="Context menu container">
+		<height>525</height>
+		<itemgap>0</itemgap>
+		<onup>noop</onup>
+		<ondown>noop</ondown>
+		
+		<onright>Close</onright>
+		<onleft>Close</onleft>
+		<!--<usecontrolcoords>true</usecontrolcoords>-->
+		<width>480</width>
+	  	  <control type="button" id="980" description="נגן קדימון">
+			<!--<enable>!IsEmpty(ListItem.Trailer)</enable>-->
+			<height>75</height>
+			<label>$LOCALIZE[208] $LOCALIZE[20410]</label>
+			<onclick>PlayMedia($ESCINFO[ListItem.Trailer],1)</onclick>
+			<visible>Container.Content(Movies) + !SubString(ListItem.Path,videodb://1/7) + !SubString(ListItem.path,videodb://movies/sets/) + !IsEmpty(ListItem.Trailer)</visible>
+			<!--<visible>!SubString(Container.ListItem(1).Label,Trailer)</visible>-->
+			<!--<visible>!SubString(Container.FolderPath,plugin://)</visible>-->
+		  </control>
+		  <control type="button" id="981" description="חיפוש קדימון">
+			<height>75</height>
+			<label>$LOCALIZE[137] $LOCALIZE[20410]</label>
+			<!--<onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Label] Trailer,return)</onclick>-->
+			<onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(LatestMovie.1.Title] $INFO[Window(home).Property(LatestMovie.1.Year)] Movie Trailer;,return)</onclick>
+			<visible>Container.Content(Movies) + !SubString(ListItem.Path,videodb://1/7) + !SubString(ListItem.path,videodb://movies/sets/) + IsEmpty(ListItem.Trailer)</visible>
+			<visible>!SubString(Container.FolderPath,plugin://)</visible>
+		  </control>
+		  <control type="button" id="983" description="הדגש">
+			<height>75</height>
+			<label>$LOCALIZE[79037]</label>
+			<onclick>Action(BackSpace)</onclick>
+			<onclick>AlarmClock(HighLight,Action(Highlight),0,silent)</onclick>
+			<!--<onclick>Notification($INFO[ListItem.IsSelected],,1000)</onclick>-->
+			<visible>Window.IsVisible(FileManager.xml)</visible>
+		  </control>
+		  <control type="button" id="985" description="הורד משחק">
+			<!--<onclick>RunScript(special://specials/scripts/overlay.py)</onclick>-->
+			<!--<onclick>RunPlugin($INFO[ListItem.overlay]/6)</onclick>-->
+			<onclick>RunScript(script.featherence.emu,,?mode=3)</onclick>
+			<!--<onclick>Action(Select)</onclick>-->
+			<!--<onclick condition="Skin.HAsSetting(Admin)">Skin.ToggleSetting(Admin)</onclick>-->
+			<label>$LOCALIZE[75562]</label>
+			<height>75</height>
+			<textoffsetx>20</textoffsetx>
+			<visible>SubString(Container.FolderName,Advanced Launcher)</visible>
+		  </control>
+		  <control type="button" id="1000" description="ברירת מחדל">
+			<height>75</height>
+			<textoffsetx>20</textoffsetx>
+			<visible>!SubString(Container.FolderName,Advanced Launcher) | SubString(Container.FolderName,Advanced Launcher) + Skin.HasSetting(Admin)</visible>
+		  </control>
+	  </control>
+	</control>
+  </include>
+  <include name="TopDialogKaiToast" description="חלון מידע">
+    <control type="group">
+	  <control type="group">
+		<posx>610</posx>
+		<posy>-6</posy>
+		<control type="image" description="Dialog BG_Down">
+		  <include>Fade_TopInformationOverlay</include>
+		  <posx>0</posx>
+		  <posy>0</posy>
+		  <width>700</width>
+		  <height>80</height>
+		  <texture border="20" colordiffuse="$VAR[TopInformationColor]">buttons/ButtonC0.png</texture>
+		</control>
+		<control type="image" id="400" description="File Icon">
+		  <aspectratio align="left" aligny="center">keep</aspectratio>
+		  <height>35</height>
+		  <posx>20</posx>
+		  <posy>3</posy>
+		  <texture colordiffuse="$VAR[MenuColor]">DefaultIconInfo.png</texture>
+		  <width>35</width>
+		</control>
+		<control type="image" id="403" description="Default Icon">
+		  <width>80</width>
+		  <height>80</height>
+		  <aspectratio align="left" aligny="center">keep</aspectratio>
+		  <visible>false</visible>
+		  <texture>DefaultIconInfo.png</texture>
+		</control>
+		<control type="image" id="404" description="Default Warning">
+		  <width>80</width>
+		  <height>80</height>
+		  <aspectratio align="left" aligny="center">keep</aspectratio>
+		  <visible>false</visible>
+		  <texture>DefaultIconWarning.png</texture>
+		</control>
+		<control type="image" id="405" description="Default Error">
+		  <width>80</width>
+		  <height>80</height>
+		  <aspectratio>keep</aspectratio>
+		  <visible>false</visible>
+		  <texture>DefaultIconError.png</texture>
+		</control>
+	  
+        <control type="label" id="401" description="כותרת">
+		  <aligny>top</aligny>
+		  <textcolor>Yellow</textcolor>
+		  <include>LabelC12</include>
+		  <label>-</label>
+		  <posx>10</posx>
+		  <width>680</width>
+        </control>
+        <control type="label" id="402" description="תוכן">
+		  <aligny>top</aligny>
+		  <include>LabelC13</include>
+		  <!--<include condition="StringCompare(System.Language,Hebrew)">LabelR4</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL4</include>-->
+		  <include>Fade7</include>
+          <scroll>true</scroll>
+          <label>-</label>
+		  <posy>35</posy>
+		  <posx>10</posx>
+		  <width>680</width>
+        </control>
+      </control>
+    </control>
+  </include>
+  <include name="TopDialogExtendedProgressBar" description="חלון עדכון ספרייה">
+    <control type="group">
+		<posx>610</posx>
+		<posy>-6</posy>
+		<control type="image" description="Dialog BG_Down">
+		  <include>Fade_TopInformationOverlay</include>
+		  <posx>0</posx>
+		  <posy>0</posy>
+		  <width>700</width>
+		  <height>80</height>
+		  <texture border="20" colordiffuse="$VAR[TopInformationColor]">buttons/ButtonC0.png</texture>
+		</control>
+        <control type="label" id="30" description="Caption Label">
+		  <aligny>top</aligny>
+		  <textcolor>Yellow</textcolor>
+		  <include>LabelC12</include>
+		  <label>-</label>
+		  <posx>10</posx>
+		  <width>680</width>
+        </control>
+        <control type="label" id="31" description="Current Directory Label">
+          <aligny>top</aligny>
+		  <include>LabelC13</include>
+		  <include>Fade7</include>
+          <scroll>true</scroll>
+          <label>-</label>
+		  <posx>10</posx>
+		  <posy>35</posy>
+		  <width>680</width>
+        </control>
+        <control type="progress" id="32" description="Progress bar">
+		  <posx>40</posx>
+          <posy>45</posy>
+          <width>150</width>
+          <height>10</height>
+          <texturebg>progress/ProgressBG.png</texturebg>
+          <midtexture>progress/ProgressM.png</midtexture>
+          <righttexture>progress/ProgressR.png</righttexture>
+          <lefttexture>progress/ProgressL.png</lefttexture>
+        </control>
+    </control>
+  </include>
+  <include name="BottomCenterDialogMediaFilter">
+    <control type="image" description="רקע">
+      <posx>430</posx>
+	  <posy>220</posy>
+      <width>1040</width>
+      <height>875</height>
+      <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+    </control>
+    <control type="group">
+      <posx>450</posx>
+      <posy>225</posy>
+      <control type="label" id="2" description="header label">
+        <include>LabelC11</include>
+		<posy>20</posy>
+        <width>1020</width>
+        <height>30</height>
+        <label>587</label>
+      </control> 
+      <control type="grouplist" id="5" description="control area">
+        <posy>70</posy>
+        <width>1000</width>
+        <height>700</height>
+        <itemgap>5</itemgap>
+        <pagecontrol>6</pagecontrol>
+        <onup>9001</onup>
+        <ondown>9001</ondown>
+        <onleft>9001</onleft>
+        <onright>6</onright>
+      </control>
+      <control type="scrollbar" description="?" id="6">
+        <posx>220</posx>
+        <posy>0</posy>
+        <width>22</width>
+        <height>390</height>
+        <texturesliderbackground>images/slider_bg.png</texturesliderbackground>
+        <texturesliderbar>images/slider_bg.png</texturesliderbar>
+        <texturesliderbarfocus>images/slider_bg.png</texturesliderbarfocus>
+        <textureslidernib>images/slider_nib.png</textureslidernib>
+        <textureslidernibfocus>images/slider_nib.png</textureslidernibfocus>
+        <onleft>5</onleft>
+        <onright>9001</onright>
+        <showonepage>false</showonepage>
+        <orientation>vertical</orientation>
+      </control>
+      <control type="button" description="Default Button" id="7">
+		<include>ButtonL2</include>
+		<height>70</height>
+      </control>
+      <control type="radiobutton" description="Default RadioButton ???" id="8">
+		<height>70</height>
+		<include>ButtonL2</include>
+      </control>
+      <control type="spincontrolex" description="Default SpinControlex (בתהליך/הכל)" id="9">
+		<textoffsetx>20</textoffsetx>
+		<!--<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		<include condition="StringCompare(System.Language,Hebrew)">spinposx</include>-->
+		<height>70</height>
+		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+        <texturefocus border="40">buttons/ButtonE.png</texturefocus>
+      </control>
+      <control type="sliderex" description="Default Slider (דירוג,שנה)" id="13">
+	    <textoffsetx>20</textoffsetx>
+		<height>70</height>
+        <disabledcolor>Grey</disabledcolor>
+        <textcolor>White</textcolor>
+        <align>left</align>
+        <aligny>center</aligny>
+        <sliderwidth>220</sliderwidth>
+        <sliderheight>30</sliderheight>
+		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+      </control>
+      <control type="edit" description="Default Edit" id="12">
+      </control>
+      <control type="grouplist" id="9001">
+        <height>775</height>
+		<itemgap>10</itemgap>
+		<orientation>horizontal</orientation>
+		<posx>305</posx>
+        <posy>750</posy>
+		<width>940</width>
+        <control type="button" description="אישור" id="28">
+          <width>200</width>
+          <height>70</height>
+          <align>center</align>
+          <aligny>center</aligny>
+          <label>186</label>
+          <onup>5</onup>
+          <onleft>27</onleft>
+          <onright>27</onright>
+          <ondown>5</ondown>
+		  <posy>5</posy>
+		  <texturenofocus colordiffuse="ffeeb13f" border="40">buttons/ButtonE0.png</texturenofocus>
+		  <texturefocus border="40">buttons/ButtonE.png</texturefocus>
+        </control>
+        <control type="button" description="ניקוי" id="27">
+          <posx>210</posx>
+          <width>200</width>
+          <height>70</height>
+          <align>center</align>
+          <aligny>center</aligny>
+          <label>192</label>
+          <onup>5</onup>
+          <onleft>28</onleft>
+          <onright>28</onright>
+          <ondown>5</ondown>
+		  <posy>5</posy>
+		  <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		  <texturefocus border="40">buttons/ButtonE.png</texturefocus>
+        </control>
+      </control>
+    </control>    
+  </include>
+  <include name="BottomCenterDialogContentSettings">
+    <control type="group" description="קבוצה עליון">
+	  <posx>430</posx>
+	  <posy>220</posy>
+	  <control type="image" description="רקע">
+        <width>1040</width>
+        <height>875</height>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+      <control type="spincontrolex" id="20" description="Content Type">
+		<posx>20</posx>
+        <posy>20</posy>
+        <width>1000</width>
+        <height>70</height>
+        <font>-</font>
+        <label>-</label>
+        <align>left</align>
+        <onup>29</onup>
+        <ondown>21</ondown>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		<texturefocus border="40">buttons/ButtonE.png</texturefocus>
+      </control>
+      <control type="label" description="ספריה זו מכילה">
+        <align>left</align>
+		<height>70</height>
+		<include>LabelC11</include>
+		<posx>40</posx>
+		<posy>23</posy>
+        <label>$LOCALIZE[20344] :</label>
+        <width>1020</width>		
+      </control>
+      <control type="label" description="Content Type Label">
+        <align>right</align>
+        <height>70</height>
+		<include>LabelC11</include>
+        <label>$INFO[Control.GetLabel(20)]</label>		
+		<posx>950</posx>
+		<posy>23</posy>
+        <width>700</width>
+      </control>
+      <control type="image" description="Addon Icon">
+        <posx>40</posx>
+        <posy>100</posy>
+        <width>230</width>
+        <height>230</height>
+        <texture background="false" fallback="DefaultAddonNone.png">$INFO[ListItem.Icon]</texture>
+        <aspectratio aligny="top">scale</aspectratio>
+        <bordertexture border="3">images/ThumbBorder3.png</bordertexture>
+        <bordersize>1</bordersize>
+      </control>
+	</control>
+      <control type="list" id="21" description="Scraper list">
+		<posx>430</posx>
+		<posy>320</posy>
+        <width>1020</width>
+        <height>310</height>
+        <onup>20</onup>
+        <onleft>20</onleft>
+        <onright>60</onright>
+        <ondown>5</ondown>
+		<itemlayout height="70" width="1020">
+          <control type="label">
+            <height>70</height>
+            <info>ListItem.Label</info>
+			<posx>300</posx>
+			<width>700</width>
+          </control>
+        </itemlayout>
+        <focusedlayout height="70" width="1020">
+          <control type="image">
+			<visible>Control.HasFocus(21)</visible>
+            <height>70</height>
+			<posx>280</posx>
+            <texture border="40">buttons/ButtonE.png</texture>
+			<width>740</width>
+          </control>
+          <control type="label">
+            <height>70</height>
+			<info>ListItem.Label</info>
+			<posx>300</posx>
+			<width>700</width>
+          </control>
+        </focusedlayout>
+      </control>  
+      <control type="grouplist" id="5" description="Control Area">
+        <posx>430</posx>
+		<posy>620</posy>
+        <width>1040</width>
+        <height>450</height>
+        <itemgap>5</itemgap>
+        <onup condition="Control.IsVisible(21)">21</onup>
+		<onup condition="!Control.IsVisible(21)">20</onup>
+        <ondown>9001</ondown>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+      </control>
+      <control type="button" description="Default Button" id="7">
+		<posx>20</posx>
+		<textoffsetx>20</textoffsetx>
+		<textcolor>White</textcolor>
+		<width>1040</width>
+		<include>ButtonR2</include>
+		<height>70</height>
+      </control>
+      <control type="radiobutton" id="8" description="???RadioButton">
+		<height>70</height>
+        <posx>20</posx>
+		<textcolor>White</textcolor>
+		<textoffsetx>20</textoffsetx>
+		<radioposx>40</radioposx>
+		<width>1040</width>
+		<include>ButtonR2</include>
+      </control>
+	  <control type="grouplist" id="9001">
+        <height>775</height>
+		<itemgap>10</itemgap>
+		<orientation>horizontal</orientation>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+        <onup>5</onup>
+        <ondown>3</ondown>		
+		<posx>633</posx>
+        <posy>970</posy>
+		<width>940</width>
+        <control type="button" description="אישור" id="28">
+		  <width>200</width>
+          <height>70</height>
+          <align>center</align>
+          <aligny>center</aligny>
+          <label>186</label>
+		  <posx>210</posx>
+		  <posy>5</posy>
+		  <texturenofocus colordiffuse="ffeeb13f" border="40">buttons/ButtonE0.png</texturenofocus>
+		  <texturefocus border="40">buttons/ButtonE.png</texturefocus>
+        </control>
+        <control type="button" id="29" description="Cancel">
+		  <width>200</width>
+          <height>70</height>
+          <align>center</align>
+          <aligny>center</aligny>
+          <label>222</label>
+		  <posy>5</posy>
+		  <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		  <texturefocus border="40">buttons/ButtonE.png</texturefocus>
+        </control>
+	    <control type="button" id="22" description="Settings">
+		  <posx>210</posx>
+		  <width>200</width>
+		  <label>$LOCALIZE[5]</label>
+		  <height>70</height>
+          <textcolor>White</textcolor>
+		  <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		  <texturefocus border="40">buttons/ButtonE.png</texturefocus>
+        </control>
+      </control>	
+  </include>
+  <include name="BottomCenterDialogProfileSettings">
+    <control type="group" description="קבוצה עליון">
+	  <posx>430</posx>
+	  <posy>220</posy>
+	  <control type="image" description="רקע">
+        <width>1040</width>
+        <height>875</height>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+	  <control type="grouplist">
+		<posx>40</posx>
+		<posy>23</posy>
+		<width>960</width>
+		<align>left</align>
+		<itemgap>0</itemgap>
+		<orientation>horizontal</orientation>
+		<control type="label" id="102" description="Profile Name">
+          <align>left</align>
+		  <height>70</height>
+		  <include>LabelC11</include>
+          <width>320</width>		
+        </control>
+		<control type="label" id="2" description="חדש*">
+		  <height>70</height>
+		  <include>LabelC11</include>
+		  <label>-</label>
+          <width>300</width>
+        </control>
+		<control type="label" id="103" description="Profile Directory">
+          <height>70</height>
+		  <include>LabelR2</include>
+          <width>310</width>
+        </control>
+	  </control>
+      <control type="image" id="101" description="Profile image">
+        <posx>40</posx>
+        <posy>100</posy>
+        <width>230</width>
+        <height>230</height>
+        <texture></texture>
+        <aspectratio aligny="top">scale</aspectratio>
+        <bordertexture border="3">images/ThumbBorder3.png</bordertexture>
+        <bordersize>1</bordersize>
+		<visible>false</visible>
+      </control>
+	</control>	
+      <control type="grouplist" id="5" description="Control Area">
+        <posx>910</posx>
+		<posy>320</posy>
+        <width>560</width>
+        <height>450</height>
+        <itemgap>5</itemgap>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+        <onup>29</onup>
+        <ondown>28</ondown>
+        <orientation>vertical</orientation>
+      </control>
+      <control type="button" description="Default Button" id="7">
+        <posx>20</posx>
+		<textoffsetx>20</textoffsetx>
+		<textcolor>White</textcolor>
+		<!--<width>1040</width>-->
+		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		<height>70</height>
+      </control>
+      <control type="radiobutton" id="8" description="???RadioButton">
+		<height>70</height>
+        <posx>20</posx>
+		<textcolor>White</textcolor>
+		<textoffsetx>20</textoffsetx>
+		<radioposx>40</radioposx>
+		<width>1040</width>
+		<include>ButtonR2</include>
+      </control>
+	  <control type="spincontrolex" id="9" description="Content Type">
+        <posx>20</posx>
+        <posy>20</posy>
+        <width>1000</width>
+        <height>70</height>
+        <font>-</font>
+        <label>-</label>
+        <align>left</align>
+        <onup>29</onup>
+        <ondown>4</ondown>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		<texturefocus border="40">buttons/ButtonE.png</texturefocus>
+      </control>
+	  <control type="grouplist" id="9001">
+        <height>775</height>
+		<itemgap>10</itemgap>
+		<orientation>horizontal</orientation>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+        <onup>28</onup>
+        <ondown>5</ondown>	
+		<posx>738</posx>
+        <posy>970</posy>
+		<width>940</width>
+        <control type="button" description="אישור" id="28">
+          <width>200</width>
+          <height>70</height>
+          <align>center</align>
+          <aligny>center</aligny>
+          <label>186</label>
+		  <posx>210</posx>
+		  <posy>5</posy>
+		  <texturenofocus colordiffuse="ffeeb13f" border="40">buttons/ButtonE0.png</texturenofocus>
+		  <texturefocus border="40">buttons/ButtonE.png</texturefocus>
+        </control>
+        <control type="button" id="29" description="Cancel">
+          <width>200</width>
+          <height>70</height>
+          <align>center</align>
+          <aligny>center</aligny>
+          <label>222</label>
+		  <posy>5</posy>
+		  <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		  <texturefocus border="40">buttons/ButtonE.png</texturefocus>
+        </control>
+      </control>	
+  </include>
+  <include name="BottomCenterDialogPeripheralManager">
+    <control type="group" description="קבוצה עליון">
+	  <posx>430</posx>
+	  <posy>220</posy>
+	  <control type="image" description="רקע">
+        <width>1040</width>
+        <height>875</height>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+      <control type="list" id="20" description="list">
+		<posx>0</posx>
+		<posy>0</posy>
+        <width>1040</width>
+        <height>310</height>
+        <onup>20</onup>
+        <onleft>20</onleft>
+        <onright>60</onright>
+        <ondown>9001</ondown>
+		<itemlayout height="70" width="1040">
+          <control type="image" description="כפתור">
+            <include>Fade_MenuButtonsOverlay</include>
+			<height>80</height>
+			<posx>0</posx>
+            <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+			<width>1040</width>
+          </control>
+          <control type="label" description="כותרת">
+            <include>LabelL1</include>
+			<height>70</height>
+			<label>$INFO[ListItem.Label]</label>
+			<posx>20</posx>
+			<width>1020</width>
+          </control>
+		  <control type="label" description="Product ID Vendor ID">
+            <include>LabelL7</include>
+            <label>$LOCALIZE[35504]:  [COLOR=Grey2]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=Grey2]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
+			<posx>300</posx>
+			<posy>20</posy>
+			<width>700</width>
+          </control>
+		  <control type="label" description="class">
+            <include>LabelL7</include>
+            <label>$LOCALIZE[35501]:  [COLOR=grey2]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey2]$INFO[ListItem.Property(Version)][/COLOR]</label>
+			<posx>300</posx>
+			<posy>40</posy>
+			<width>700</width>
+          </control>
+        </itemlayout>
+        <focusedlayout height="70" width="1040">
+          <control type="image" description="כפתור">
+            <height>80</height>
+			<posx>0</posx>
+            <texture border="40">buttons/ButtonE.png</texture>
+			<width>1040</width>
+          </control>
+          <control type="label" description="כותרת">
+            <include>LabelL1</include>
+			<height>70</height>
+			<label>$INFO[ListItem.Label]</label>
+			<posx>20</posx>
+			<width>1020</width>
+          </control>
+		  <control type="label" description="Product ID Vendor ID">
+            <include>LabelL7</include>
+            <label>$LOCALIZE[35504]:  [COLOR=Grey2]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=Grey2]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
+			<posx>300</posx>
+			<posy>20</posy>
+			<textcolor>Yellow</textcolor>
+			<width>700</width>
+          </control>
+		  <control type="label" description="class">
+            <include>LabelL7</include>
+            <label>$LOCALIZE[35501]:  [COLOR=grey2]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey2]$INFO[ListItem.Property(Version)][/COLOR]</label>
+			<posx>300</posx>
+			<posy>40</posy>
+			<textcolor>Yellow</textcolor>
+			<width>700</width>
+          </control>
+        </focusedlayout>
+	  </control>
+	</control>
+	<control type="grouplist" id="9001">
+		<height>775</height>
+		<itemgap>10</itemgap>
+		<orientation>horizontal</orientation>
+		<onleft>noop</onleft>
+		<onright>noop</onright>
+		<onup>20</onup>
+		<ondown>noop</ondown>		
+		<posx>738.5</posx>
+		<posy>970</posy>
+		<width>940</width>
+		<visible>!Window.IsVisible(DialogPeripheralSettings.xml)</visible>
+		<control type="button" id="10" description="אישור">
+		  <width>200</width>
+		  <label>186</label>
+		  <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		  <include>ButtonC1</include>
+		</control>
+		<control type="button"id="11" description="הגדרות">
+		  <width>200</width>
+		  <label>5</label>
+		  <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		  <include>ButtonC1</include>
+		</control>
+	</control>
+  </include>
+  <include name="BottomCenterDialogPeripheralSettings">
+    <control type="group" description="קבוצה עליון">
+	  <posx>450</posx>
+	  <posy>500</posy>
+	  <control type="grouplist" id="5" description="control area">
+		<animation effect="slide" start="0,0" end="5,0" time="0" condition="!Control.IsVisible(60)">Conditional</animation>
+		<width>950</width>
+        <height>400</height>
+		<itemgap>5</itemgap>
+		<pagecontrol>60</pagecontrol>
+		<onleft>28</onleft>
+		<onright>60</onright>
+		<onup>noop</onup>
+		<ondown>28</ondown>
+	  </control>
+	  <include>ScrollBar</include>
+	  <control type="button" id="7" description="Default Button">
+		<include>ButtonR5</include>
+	  </control>
+	  <control type="radiobutton" id="8" description="Default RadioButton">
+		<include>ButtonR5</include>
+	  </control>
+	  <control type="spincontrolex" id="9" description="Default SpinControlex">
+		<textoffsetx>20</textoffsetx>
+		<align>left</align>
+		<include>ButtonR5</include>
+	  </control>
+		<control type="sliderex" id="13" description="Default Slider">
+		  <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		  <include>ButtonR5</include>
+		</control>
+		<control type="image" id="11" description="separator image">
+		  <height>2</height>
+		  <texture>images/Line.png</texture>
+		</control>
+		<control type="label" id="14" description="Default Label">
+		  <include>LabelC2</include>
+		</control>
+		<control type="grouplist" id="9000">
+			<height>775</height>
+			<itemgap>10</itemgap>
+			<orientation>horizontal</orientation>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
+			<onup>5</onup>
+			<ondown>noop</ondown>		
+			<posx>185</posx>
+			<posy>470</posy>
+			<width>940</width>
+			<control type="button" id="28" description="אישור">
+			  <width>200</width>
+			  <label>186</label>
+			  <texturenofocus colordiffuse="ffeeb13f" border="40">buttons/ButtonE0.png</texturenofocus>
+			  <include>ButtonC1</include>
+			</control>
+			<control type="button" id="29" description="ביטול">
+			  <width>200</width>
+			  <label>222</label>
+			  <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+			  <include>ButtonC1</include>
+			</control>
+			<control type="button" id="50" description="ברירת מחדל">
+			  <width>200</width>
+			  <label>409</label>
+			  <font>size28</font>
+			  <texturenofocus colordiffuse="ff96708f" border="40">buttons/ButtonE0.png</texturenofocus>
+			  <include>ButtonC1</include>
+			</control>
+		</control>
+     </control>
+  </include>
+  <include name="BottomCenterDialogLockSettings">
+    <control type="group" description="קבוצה עליון">
+	  <posx>430</posx>
+	  <posy>220</posy>
+	  <control type="image" description="רקע">
+        <width>1040</width>
+        <height>875</height>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+      </control>
+	  <control type="label" id="2" description="העדפות נעילה">
+		  <posx>40</posx>
+		  <posy>20</posy>
+		  <height>70</height>
+		  <include>LabelC11</include>
+		  <label>$LOCALIZE[20043]</label>
+          <width>960</width>
+        </control>
+	</control>
+      <control type="grouplist" id="5" description="Control Area">
+        <posx>910</posx>
+		<posy>320</posy>
+        <width>560</width>
+        <height>450</height>
+        <itemgap>5</itemgap>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+        <onup>noop</onup>
+        <ondown>28</ondown>
+      </control>
+      <control type="button" description="Default Button" id="7">
+        <align>left</align>
+		<posx>20</posx>
+		<textoffsetx>20</textoffsetx>
+		<textcolor>White</textcolor>
+		<!--<width>1040</width>-->
+		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		<height>70</height>
+      </control>
+      <control type="radiobutton" id="8" description="">
+		<height>70</height>
+        <posx>20</posx>
+		<textcolor>White</textcolor>
+		<textoffsetx>20</textoffsetx>
+		<radioposx>40</radioposx>
+		<width>1040</width>
+		<include>ButtonR2</include>
+      </control>
+	  <control type="spincontrolex" id="9" description="">
+        <posx>20</posx>
+        <posy>20</posy>
+        <width>1000</width>
+        <height>70</height>
+        <font>-</font>
+        <label>-</label>
+        <align>left</align>
+        <onup>29</onup>
+        <ondown>4</ondown>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		<texturefocus border="40">buttons/ButtonE.png</texturefocus>
+      </control>
+	  <control type="grouplist" id="9001">
+        <height>775</height>
+		<itemgap>10</itemgap>
+		<orientation>horizontal</orientation>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+        <onup>5</onup>
+        <ondown>noop</ondown>	
+		<posx>738</posx>
+        <posy>970</posy>
+		<width>940</width>
+        <control type="button" description="אישור" id="28">
+          <width>200</width>
+          <height>70</height>
+          <align>center</align>
+          <aligny>center</aligny>
+          <label>186</label>
+		  <posx>210</posx>
+		  <posy>5</posy>
+		  <texturenofocus colordiffuse="ffeeb13f" border="40">buttons/ButtonE0.png</texturenofocus>
+		  <texturefocus border="40">buttons/ButtonE.png</texturefocus>
+        </control>
+        <control type="button" id="29" description="Cancel">
+          <width>200</width>
+          <height>70</height>
+          <align>center</align>
+          <aligny>center</aligny>
+          <label>222</label>
+		  <posy>5</posy>
+		  <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		  <texturefocus border="40">buttons/ButtonE.png</texturefocus>
+        </control>
+      </control>	
+  </include>
+  <include name="featherencepause">
+	<control type="group" description="לוגו בעצירת ניגון">
+	  <left>867</left>
+	  <top>447</top>
+	  <visible>Player.Paused | Slideshow.IsPaused</visible>
+	  <control type="image" description="logo">
+		<animation type="VisibleChange" reversible="false">
+			<effect type="fade" start="0" end="100" time="4000" delay="1000" />
+		</animation>
+		<animation type="WindowOpen" reversible="false">
+			<effect type="fade" start="0" end="100" time="4000" delay="1000" />
+		</animation>
+		<animation type="WindowClose" reversible="false">
+			<effect type="fade" start="100" end="0" time="0" delay="500" />
+		</animation>
+		<left>0</left>
+		<top>0</top>
+		<width>186</width>
+		<height>186</height>
+		<texture diffuse="BBBBBBBB">osd/featherence_pause4.png</texture>
+	  </control>
+	  <control type="image" description="pause">
+		<animation type="VisibleChange" reversible="false">
+			<effect type="fade" start="0" end="90" time="500" />
+		</animation>
+		<animation type="WindowOpen" reversible="false">
+			<effect type="fade" start="0" end="90" time="500" />
+		</animation>
+		<animation type="WindowClose" reversible="false">
+			<effect type="fade" start="100" end="0" time="500" />
+		</animation>
+		<left>0</left>
+		<top>0</top>
+		<width>186</width>
+		<height>186</height>
+		<texture>osd/featherence_pause2.png</texture>
+	  </control>
+	  <control type="label">
+	    <animation condition="true" effect="fade" start="50" end="50">Conditional</animation>
+		<align>center</align>
+		<height>186</height>
+	    <label>$INFO[Player.CacheLevel]</label>
+		<left>0</left>
+		<font>size18</font>
+		<top>-40</top>
+	    <width>186</width>
+	  </control>
+	</control>
+  </include>
+</includes>

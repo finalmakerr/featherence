@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+   <include name="Slide1" description="(Backgrounds)">
+     <animation condition="[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(56) | [Control.HasFocus(7017) + IntergerGreaterThan(Container.CurrentPage,1)] | Control.IsVisible(450) | Window.IsVisible(SettingsCategory.xml)] + Player.HasVideo" effect="slide" start="0,0" end="0,552" time="700" reversible="false">Conditional</animation>
+	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + !IsEmpty(Control.GetLabel(11155))" effect="slide" start="0,0" end="0,552" delay="0" time="700" reversible="false">Conditional</animation>
+	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,552" delay="3000" time="700" reversible="false">Conditional</animation>
+	 
+	 <animation description="No Fanart" condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-252" delay="3000" time="700" reversible="false">Conditional</animation>
+   </include>
+   
+   <include name="Slide1.5" description="Backgrounds-Home">
+     <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,-552" time="220" reversible="false">>Conditional</animation>
+   </include>
+   
+   <include name="Slide1.1" description="(2 רקע בית)">
+     <animation condition="Control.IsVisible(57) + Control.IsVisible(7013) + !IsEmpty(Control.GetLabel(11155)) " effect="slide" start="0,0" end="0,552" delay="0" time="700" reversible="false">Conditional</animation>
+	 <animation condition="[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(56) | [Control.HasFocus(7017) + IntergerGreaterThan(Container.CurrentPage,1)]] + Player.HasVideo" effect="slide" start="0,0" end="0,-31" time="700" reversible="false">>Conditional</animation>
+	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + !IsEmpty(Control.GetLabel(11155)) " effect="slide" start="0,0" end="0,-31" delay="0" time="700" reversible="false">Conditional</animation>
+	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-31" delay="3000" time="700" reversible="false">Conditional</animation>
+   </include>
+
+   <include name="Slide2" description="(Zoom-Backgrounds)">
+     <animation condition="[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(56) | [Control.HasFocus(7017) + IntergerGreaterThan(Container.CurrentPage,1)] | Control.IsVisible(450) | Window.IsVisible(SettingsCategory.xml)] + Player.HasVideo" effect="zoom" end="100,47" time="700" reversible="false">Conditional</animation>
+	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + !IsEmpty(Control.GetLabel(11155)) " effect="zoom" end="100,47" delay="0" time="700" reversible="false">Conditional</animation>
+	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="100,47" delay="3000" time="700" reversible="false">Conditional</animation>
+	 
+	 <animation description="No Fanart" condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="100,150" delay="3000" time="700" reversible="false">Conditional</animation>
+	 <!--<animation description="50 Video" condition="[Control.IsVisible(50)] + Player.HasVideo" effect="zoom" end="100,120" time="700" reversible="false">Conditional</animation>-->
+	 
+   </include>
+   <include name="Slide2.7" description="(Fanart) / 58">
+	 <animation condition="Control.IsVisible(58) + !Control.HasFocus(7017) + !Control.HasFocus(60) + [[!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] | Player.HasVideo] + !Container(58).OnNext + !Container(58).OnPrevious" effect="slide" start="0,0" end="0,-552" delay="3000" time="700" reversible="false">Conditional</animation>
+   </include>
+   <include name="Slide2.1" description="(Fanart) / 57">
+	 <animation description="Slide Up- (AlwaysFanart)" condition="Skin.HasSetting(AlwaysFanart) + !Skin.HasSetting(ShowTopVideoInformation) + !Player.HasVideo + IsEmpty(Control.GetLabel(11155)) + !Container(50).OnNext + !Container(50).OnPrevious + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60)" effect="slide" start="0,0" end="0,-552" delay="3000" time="700" reversible="false">Conditional</animation>
+	 <animation description="Slide Down- (!FullFanartTopVideoInformation/!AlwaysFanart/!ShowTopVideoInformation)" condition="!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(AlwaysFanart) + IsEmpty(Control.GetLabel(11155)) + !Container(50).OnNext + !Container(50).OnPrevious + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60)" effect="slide" start="0,0" end="0,552" delay="3000" time="700" reversible="false">Conditional</animation>
+	 <animation description="Slide Down- (FullFanartTopVideoInformation/!AlwaysFanart/!ShowTopVideoInformation)" condition="!Skin.HasSetting(ShowTopVideoInformation) + Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(AlwaysFanart) + IsEmpty(Control.GetLabel(11155)) + !Container(50).OnNext + !Container(50).OnPrevious + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60)" effect="slide" start="0,0" end="0,10" delay="3000" time="700" reversible="false">Conditional</animation>
+	 <animation description="Fade In-Video (!Episodes/!AlwaysFanart/!FullFanartTopVideoInformation)" condition="!Skin.HasSetting(AlwaysFanart) + !Skin.HasSetting(FullFanartTopVideoInformation) + Player.HasVideo + !Skin.HasSetting(ShowTopVideoInformation) + !Container(50).OnNext + !Container(50).OnPrevious + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Control.HasFocus(9000) + IsEmpty(Control.GetLabel(11155))" effect="fade" start="0" end="100" delay="3700" time="220" reversible="false">Conditional</animation>
+	 <animation description="Zoom Out-Video (!Episodes/!AlwaysFanart/!ShowTopVideoInformation)" condition="Player.HasVideo + !Skin.HasSetting(AlwaysFanart) + !Skin.HasSetting(ShowTopVideoInformation) + IsEmpty(Control.GetLabel(11155)) + !Container(50).OnNext + !Container(50).OnPrevious + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60)" effect="zoom" start="100,50" end="100,50" delay="3000" time="700" reversible="false">Conditional</animation>
+	 <animation description="Zoom In- (FullFanartTopVideoInformation/!AlwaysFanart)" condition="!Player.HasVideo + !Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(AlwaysFanart) + IsEmpty(Control.GetLabel(11155)) + !Container(50).OnNext + !Container(50).OnPrevious + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60)" effect="zoom" start="100,200" end="100,200" delay="3000" time="700" reversible="false">Conditional</animation>
+	 
+	 <!--<animation description="Slide Down-Video (!Episodes/!AlwaysFanart/!ShowTopVideoInformation)" condition="Player.HasVideo + !Skin.HasSetting(AlwaysFanart) + !Skin.HasSetting(ShowTopVideoInformation) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container(57).OnNext + !Container(57).OnPrevious + !Control.HasFocus(60)" effect="slide" start="0,0" end="0,33" delay="3000" time="700" reversible="false">Conditional</animation>-->
+	 <!--<animation description="Slide Down-Video (!Episodes/AlwaysFanart)" condition="Player.HasVideo + Skin.HasSetting(AlwaysFanart) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container(57).OnNext + !Container(57).OnPrevious + !Control.HasFocus(60)" effect="slide" start="0,0" end="0,1146" delay="3000" time="700" reversible="false">Conditional</animation>-->
+     <!--<animation description="Zoom Out-Video (AlwaysFanart/FullFanartTopVideoInformation)" condition="Player.HasVideo + [Skin.HasSetting(AlwaysFanart) | !Skin.HasSetting(FullFanartTopVideoInformation)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container(57).OnNext + !Container(57).OnPrevious + !Control.HasFocus(60)" effect="zoom" start="100,49" end="100,49" delay="3000" time="700" reversible="false">Conditional</animation>-->
+	 <!--<animation condition="Control.IsVisible(57) + Control.IsVisible(7013) + !IsEmpty(Control.GetLabel(11155))  + [Player.HasVideo + Skin.HasSetting(FullFanartTopVideoInformation)]" effect="slide" start="0,0" end="0,552" delay="0" time="700" reversible="false">Conditional</animation>-->
+	 <!--<animation condition="!Skin.HasSetting(FullFanartTopVideoInformation) + Control.IsVisible(57) + Control.IsVisible(7013) + [Container.Content(Tvshows) | Container.Content(Movies)] + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="100,200" delay="3000" time="700" reversible="false">Conditional</animation>-->
+	 <!--<animation condition="[Control.IsVisible(58) | Control.IsVisible(58)] + Control.IsVisible(7013) + !Container(58).OnNext + !Container(58).OnPrevious" effect="slide" end="0,-552" delay="3000" time="700" reversible="false">Conditional</animation>-->
+   </include>
+
+   <include name="Slide2.1f" description="(Fanart)">
+	 <animation description="Fade Out-Video (!Episodes/!AlwaysFanart/!ShowTopVideoInformation/FullFanartTopVideoInformation)" condition="Control.HasFocus(7017) + IsEmpty(Control.GetLabel(11155)) | Player.HasVideo + !Skin.HasSetting(AlwaysFanart) + Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(ShowTopVideoInformation) + !Container(50).OnNext + !Container(50).OnPrevious + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Control.HasFocus(9000) + IsEmpty(Control.GetLabel(11155))" effect="fade" start="0" end="0" delay="0" time="0" reversible="false">Conditional</animation>
+	 <animation description="Zoom Out-Video (Episodes)" condition="Player.HasVideo + !IsEmpty(Control.GetLabel(11155)) " effect="zoom" start="100,49" end="100,49" delay="0" time="0" reversible="false">Conditional</animation>
+	 <animation description="Zoom Out- (!Episodes/!AlwaysFanart/!ShowTopVideoInformation)" condition="!Player.HasVideo + !Skin.HasSetting(AlwaysFanart) + !Skin.HasSetting(ShowTopVideoInformation) + IsEmpty(Control.GetLabel(11155)) + !Container(50).OnNext + !Container(50).OnPrevious + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60)" effect="zoom" start="100,51" end="100,51" delay="0" time="0" reversible="false">Conditional</animation>	 
+	 <animation description="Slide Down-Video (Episodes)" condition="Player.HasVideo + !IsEmpty(Control.GetLabel(11155)) " effect="slide" start="0,0" end="0,552" delay="0" time="0" reversible="false">Conditional</animation>
+	 <animation description="Slide Down- (Episodes)" condition="!IsEmpty(Control.GetLabel(11155)) " effect="slide" start="0,0" end="0,552" delay="0" time="0" reversible="false">Conditional</animation>	 
+	 <animation description="Slide Down- (AlwaysFanart)" condition="Skin.HasSetting(AlwaysFanart) + IsEmpty(Control.GetLabel(11155))" effect="slide" start="0,0" end="0,1104" delay="0" time="0" reversible="false">Conditional</animation>	 
+	 <!--<animation description="Slide Down-Video (!AlwaysFanart)" condition="Control.IsVisible(7013) + Player.HasVideo + !Skin.HasSetting(AlwaysFanart) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container(57).OnNext + !Container(57).OnPrevious + !Control.HasFocus(60)" effect="slide" start="0,0" end="0,552" delay="0" time="0" reversible="false">Conditional</animation>-->
+	 <!--<animation description="Slide Down-Video (ALL)" condition="[Player.HasVideo]" effect="slide" start="0,0" end="0,552" delay="0" time="0" reversible="false">Conditional</animation>-->	 
+	 <!--<animation description="Zoom Out-" condition="[[[!Skin.HasSetting(AlwaysFanart) | [!Skin.HasSetting(AlwaysFanart) + Skin.HasSetting(FullFanartTopVideoInformation)]]] | [!Control.IsVisible(57) + Player.HasVideo] | Control.IsVisible(58) + StringCompare(Container.FolderName,Advanced Launcher)] + !Container.Content(Seasons) + !Container.Content(Episodes) | [Control.IsVisible(57) + Player.HasVideo + !IsEmpty(Control.GetLabel(11155)) ]" effect="zoom" start="100,49" end="100,49" delay="0" time="0" reversible="false">Conditional</animation>-->
+	 <!--<animation description="Slide Up-" condition="!Skin.HasSetting(AlwaysFanart) + Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(ShowTopVideoInformation) + !Container.Content(Seasons) + !Container.Content(Episodes)" effect="slide" start="0,0" end="0,-552" delay="0" time="0" reversible="false">Conditional</animation>-->	 
+   </include>
+   
+   <include name="Fade_MoviesTVCoversOverlay" description="שקיפות עטיפות">
+     <animation condition="!Skin.String(MoviesTVCoversOverlay) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="60" delay="3000" time="700" reversible="true">Conditional</animation>
+	 
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,10) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="10" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,20) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="20" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,30) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="30" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,40) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="40" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,50) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="50" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,60) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="60" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,70) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="70" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,75) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="75" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,80) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="80" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,85) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="85" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,90) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="90" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,95) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="95" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(MoviesTVCoversOverlay,100) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [Container.Content(Tvshows) | Container.Content(Movies)] + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="100" delay="3000" time="700" reversible="true">Conditional</animation>
+   </include>
+   
+   <include name="Slide2.3" description="(Fade)">
+	 <animation condition="[!Skin.String(MoviesTVCoversOverlay,75) + Skin.String(MoviesTVCoversOverlay,80) + Skin.String(MoviesTVCoversOverlay,85) + Skin.String(MoviesTVCoversOverlay,90) + Skin.String(MoviesTVCoversOverlay,95) + Skin.String(MoviesTVCoversOverlay,100)] + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] + Control.IsVisible(7013) + [Container.Content(Tvshows) | Container.Content(Movies)] + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="90" delay="3000" time="700" reversible="false">Conditional</animation>
+   </include> 
+   <include name="Slide2.4" description="(zoom)">
+	 <animation condition="!Skin.HasSetting(FullFanartTopVideoInformation) + Control.IsVisible(7013) + [Container.Content(Tvshows) | Container.Content(Movies)] + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + !Player.HasVideo + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60) + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="50,50" center="150,0" delay="3000" time="700" reversible="false">Conditional</animation>
+   </include>
+   <include name="Slide3" description="(TopVideoInformation)">
+     <animation condition="[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(56) | [Control.HasFocus(7017) + IntergerGreaterThan(Container.CurrentPage,1)] | Control.IsVisible(450)] + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [!Container(50).OnNext + !Container(50).OnPrevious] + [!Container(450).OnNext + !Container(450).OnPrevious] | Window.IsVisible(DialogVideoInfo.xml)" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" delay="0" time="700" reversible="true">Conditional</animation>
+	 <animation condition="[Control.IsVisible(50) + !IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(100).OnPrevious + !Container(100).OnNext" effect="slide" tween="Cubic" easing="out" start="0,-592" end="0,0" delay="3000" time="700" reversible="true">Conditional</animation>
+	 <animation condition="Window.IsVisible(SettingsCategory.xml) + !IsEmpty(Control.GetLabel(6)) + System.IdleTime(3)" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" delay="0" time="700" reversible="true">Conditional</animation>
+	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + !IsEmpty(Control.GetLabel(11155)) + Control.IsVisible(7016)" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" delay="0" time="3000" reversible="false">Conditional</animation>
+	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + [IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)] | Window.IsVisible(DialogFullScreenInfo.xml)" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" delay="1700" time="3000" reversible="false">Conditional</animation>
+	 <!--<animation condition="Window.IsActive(DialogVideoInfo.xml) | Window.IsVisible(DialogAddonInfo.xml) | Window.IsVisible(AddonBrowser.xml)" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" time="700" reversible="false">Conditional</animation>-->
+	 <animation condition="Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312)]" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" time="3000" reversible="false">Conditional</animation>
+   </include>
+   <include name="Slide4" description="TopVideoInformation4">
+	 <animation condition="[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(56) | [Control.HasFocus(7017) + IntergerGreaterThan(Container.CurrentPage,1)] | Control.IsVisible(450)] + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))]" effect="slide" tween="Cubic" easing="out" start="0,-592" end="0,0" delay="0" time="1400" reversible="false">Conditional</animation>
+	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + !IsEmpty(Control.GetLabel(11155)) " effect="slide" tween="Cubic" easing="out" start="0,-592" end="0,0" delay="3000" time="700" reversible="false">Conditional</animation>
+	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + [IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious] + !Skin.HasSetting(ShowTopVideoInformation) | Window.IsVisible(DialogFullScreenInfo.xml)" effect="slide" tween="Cubic" easing="out" start="0,-592" end="0,0" delay="3000" time="1400" reversible="false">Conditional</animation>
+	 <animation condition="Window.IsActive(DialogVideoInfo.xml) | Window.IsVisible(DialogAddonInfo.xml) | Window.IsVisible(AddonBrowser.xml)" effect="slide" tween="Cubic" easing="out" start="0,-592" end="0,0" delay="3000" time="1400" reversible="false">Conditional</animation>
+   </include>
+   <include name="Slide5" description="LeftMenu2">
+	  <animation effect="slide" start="0,0" end="400,0" delay="0" time="700" reversible="true">VisibleChange</animation>
+   </include>
+   <include name="Slide6" description="LeftMenu">
+	  <animation effect="slide" start="0,0" end="400,0" delay="0" time="700" reversible="true">WindowOpen</animation>
+   </include>
+   <include name="Slide7" description="RightMenu">
+	  <animation effect="slide" start="0,0" end="-400,0" delay="0" time="700" reversible="true">WindowOpen</animation>
+   </include>
+   <include name="Slide8" description="BottomMenu">
+	  <animation effect="slide" start="0,0" end="0,-400" delay="0" time="700" reversible="true">WindowOpen</animation>
+   </include>
+   <include name="Slide9" description="TopMenu">
+	  <animation effect="slide" start="0,0" end="0,400" delay="0" time="700" reversible="true">WindowOpen</animation>
+   </include>
+   
+   <include name="Fade1" description="VideoWindow">
+	  <animation effect="fade" time="7000">VisibleChange</animation>
+   </include>
+   <include name="Fade2" description="VideoWindow">
+	  <animation effect="fade" start="0" end="80" time="7000">VisibleChange</animation>
+   </include>
+   <include name="Fade3">
+     <animation effect="fade" end="100" delay="0" time="220">Focus</animation>
+     <animation effect="fade" end="0" time="100">Unfocus</animation>
+   </include>
+   <include name="Fade4">
+	  <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+   </include>
+  <include name="Fade5">
+    <control type="image" description="BG">
+      <animation condition="true" effect="fade" end="40" time="200">Conditional</animation>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>images/black.png</texture>
+    </control>
+  </include>
+   <include name="Fade6">
+     <animation effect="fade" time="200">WindowOpen</animation>
+     <animation effect="fade" time="200">WindowClose</animation>
+   </include>
+  <include name="Fade7">
+    <animation condition="System.IdleTime(3) + !Window.IsVisible(DialogVideoInfo.xml) + !Container().Scrolling + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsActive(DialogFullScreenInfo.xml)]" effect="fade" start="100" end="40" time="1000">Conditional</animation>
+	<animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="fade" start="100" end="0" time="1000">Conditional</animation>
+	<!--<animation condition="[[System.IdleTime(1) + !Container().Scrolling + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [Control.IsVisible(58)]" effect="fade" start="100" end="50" time="1000">Conditional</animation>-->
+  </include>
+  <include name="Fade8">
+	<animation effect="fade" start="70" end="50" time="220">Focus</animation>
+    <animation effect="fade" start="50" end="70" time="220">unFocus</animation>
+  </include>
+  <include name="Fade9">
+	<animation effect="fade" start="0" end="100" time="0" reversible="false">Focus</animation>
+	<animation effect="fade" start="100" end="0" time="0" reversible="false">unFocus</animation>
+  </include>
+  
+  <include name="Fade90">
+	<animation effect="fade" start="0" end="100" delay="100" time="100">Focus</animation>
+    <animation effect="fade" start="0" end="0" time="100">Unfocus</animation>
+  </include>  
+  
+   <include name="Fade11" description="">
+     <animation condition="Window.IsVisible(DialogContextMenu.xml) | ControlGroup(9000).HasFocus() | ControlGroup(450).HasFocus()" effect="fade" start="100" end="50" time="200">Conditional</animation>
+   </include>
+   <include name="Fade12" description="VideoWindow">
+	  <animation effect="fade" start="70" end="70" time="1000">WindowOpen</animation>
+   </include>
+   <include name="Fade13" description="VideoWindow">
+	  <animation effect="fade" start="100" end="0" time="1000">WindowClose</animation>
+   </include>
+   <include name="Fade14" desciption="Skin.HasSetting(Performance2)-algorithmdirtyregions">
+	  <animation effect="fade" start="100" end="100" time="0" reversible="false">Focus</animation>
+	  <animation effect="fade" start="100" end="70" time="200" reversible="false">UnFocus</animation>
+   </include>
+   
+   <include name="Fade40">
+	 <animation condition="true" effect="fade" start="100" end="40" time="1000">Conditional</animation>
+   </include>
+   <include name="Fade20">
+     <animation effect="fade" end="100" delay="200" time="200">Visible</animation>
+     <animation effect="fade" end="0" time="100">Hidden</animation>
+   </include>
+   
+   <include name="Fade_IconOverlayButton">
+     <animation condition="!Skin.String(IconOverlayButton)" effect="fade" end="30" time="0">Conditional</animation>
+	 
+	 <animation condition="Skin.String(IconOverlayButton,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(IconOverlayButton,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(IconOverlayButton,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(IconOverlayButton,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(IconOverlayButton,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(IconOverlayButton,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(IconOverlayButton,65)" effect="fade" end="65" time="0">Conditional</animation>
+	 <animation condition="Skin.String(IconOverlayButton,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(IconOverlayButton,80)" effect="fade" end="80" time="0">Conditional</animation>
+	 <animation condition="Skin.String(IconOverlayButton,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(IconOverlayButton,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(IconOverlayButton,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(IconOverlayButton,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   
+   <include name="Fade_MainBackgroundOverlay">
+     <animation condition="!Skin.String(MainBackgroundOverlay)" effect="fade" end="40" time="0">Conditional</animation>
+	 
+	 <animation condition="Skin.String(MainBackgroundOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MainBackgroundOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MainBackgroundOverlay,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MainBackgroundOverlay,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MainBackgroundOverlay,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MainBackgroundOverlay,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MainBackgroundOverlay,65)" effect="fade" end="65" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MainBackgroundOverlay,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MainBackgroundOverlay,80)" effect="fade" end="80" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MainBackgroundOverlay,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MainBackgroundOverlay,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MainBackgroundOverlay,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MainBackgroundOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   
+   <include name="Fade_TopMainBackgroundOverlay">
+     <animation condition="!Skin.String(TopMainBackgroundOverlay)" effect="fade" end="40" time="0">Conditional</animation>
+	 
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,65)" effect="fade" end="65" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,80)" effect="fade" end="80" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopMainBackgroundOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   
+   <include name="Fade_TopInformationOverlay">
+     <animation condition="!Skin.String(TopInformationOverlay)" effect="fade" end="100" time="0">Conditional</animation>
+	 
+	 <animation condition="Skin.String(TopInformationOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopInformationOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopInformationOverlay,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopInformationOverlay,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopInformationOverlay,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopInformationOverlay,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopInformationOverlay,65)" effect="fade" end="65" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopInformationOverlay,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopInformationOverlay,80)" effect="fade" end="80" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopInformationOverlay,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopInformationOverlay,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopInformationOverlay,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopInformationOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   
+   <include name="Fade_TopVideoInformationOverlay">
+     <animation condition="!Skin.String(TopVideoInformationOverlay)" effect="fade" end="60" time="0">Conditional</animation>
+	 
+	 <animation condition="Skin.String(TopVideoInformationOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopVideoInformationOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopVideoInformationOverlay,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopVideoInformationOverlay,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopVideoInformationOverlay,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopVideoInformationOverlay,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopVideoInformationOverlay,65)" effect="fade" end="65" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopVideoInformationOverlay,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopVideoInformationOverlay,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopVideoInformationOverlay,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopVideoInformationOverlay,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(TopVideoInformationOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   
+   <include name="Fade_LeftMenuOverlay">
+     <animation condition="!Skin.String(LeftMenuOverlay)" effect="fade" end="70" time="0">Conditional</animation>
+	 
+	 <animation condition="Skin.String(LeftMenuOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(LeftMenuOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(LeftMenuOverlay,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(LeftMenuOverlay,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(LeftMenuOverlay,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(LeftMenuOverlay,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(LeftMenuOverlay,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(LeftMenuOverlay,80)" effect="fade" end="80" time="0">Conditional</animation>
+	 <animation condition="Skin.String(LeftMenuOverlay,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(LeftMenuOverlay,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(LeftMenuOverlay,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(LeftMenuOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   
+   <include name="Fade_BottomMenuOverlay">
+     <animation condition="!Skin.String(BottomMenuOverlay)" effect="fade" end="70" time="0">Conditional</animation>
+	 
+	 <animation condition="Skin.String(BottomMenuOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BottomMenuOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BottomMenuOverlay,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BottomMenuOverlay,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BottomMenuOverlay,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BottomMenuOverlay,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BottomMenuOverlay,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BottomMenuOverlay,80)" effect="fade" end="80" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BottomMenuOverlay,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BottomMenuOverlay,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BottomMenuOverlay,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BottomMenuOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   
+   <include name="Fade_CenterMenuOverlay">
+     <animation condition="!Skin.String(CenterMenuOverlay)" effect="fade" end="70" time="0">Conditional</animation>
+	 
+     <animation condition="Skin.String(CenterMenuOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(CenterMenuOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(CenterMenuOverlay,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(CenterMenuOverlay,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(CenterMenuOverlay,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(CenterMenuOverlay,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(CenterMenuOverlay,65)" effect="fade" end="65" time="0">Conditional</animation>
+	 <animation condition="Skin.String(CenterMenuOverlay,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(CenterMenuOverlay,80)" effect="fade" end="80" time="0">Conditional</animation>
+	 <animation condition="Skin.String(CenterMenuOverlay,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(CenterMenuOverlay,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(CenterMenuOverlay,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(CenterMenuOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   
+   <include name="Fade_BackgroundOverlay">
+     <fadetime>220</fadetime>
+     <animation condition="!Skin.String(BackgroundOverlay)" effect="fade" end="40" time="0">Conditional</animation>
+	 
+     <animation condition="Skin.String(BackgroundOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BackgroundOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BackgroundOverlay,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BackgroundOverlay,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BackgroundOverlay,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BackgroundOverlay,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BackgroundOverlay,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BackgroundOverlay,80)" effect="fade" end="80" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BackgroundOverlay,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BackgroundOverlay,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BackgroundOverlay,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(BackgroundOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   
+   <include name="Fade_Background2Overlay">
+     <!--<animation condition="Control.IsVisible(57) + !Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart) + Skin.HasSetting(FullFanartTopVideoInformation)" effect="fade" end="100" time="0">Conditional</animation>
+	 <animation condition="Control.IsVisible(58) + !Skin.HasSetting(ShowTopProgramInformation)" effect="fade" end="100" time="0">Conditional</animation>-->
+	 
+     <animation condition="!Skin.String(Background2Overlay)" effect="fade" end="70" time="0">Conditional</animation>
+	 
+     <animation condition="Skin.String(Background2Overlay,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(Background2Overlay,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(Background2Overlay,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(Background2Overlay,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(Background2Overlay,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(Background2Overlay,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(Background2Overlay,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(Background2Overlay,80)" effect="fade" end="80" time="0">Conditional</animation>
+	 <animation condition="Skin.String(Background2Overlay,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(Background2Overlay,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(Background2Overlay,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(Background2Overlay,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   
+   <include name="Fade_MenuButtonsOverlay">
+     <animation condition="!Skin.String(MenuButtonsOverlay)" effect="fade" end="90" time="0">Conditional</animation>
+	 
+	 <animation condition="Skin.String(MenuButtonsOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MenuButtonsOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MenuButtonsOverlay,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MenuButtonsOverlay,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MenuButtonsOverlay,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MenuButtonsOverlay,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MenuButtonsOverlay,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MenuButtonsOverlay,75)" effect="fade" end="75" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MenuButtonsOverlay,80)" effect="fade" end="80" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MenuButtonsOverlay,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MenuButtonsOverlay,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MenuButtonsOverlay,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(MenuButtonsOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   <include name="fixedlist_tweak">
+     <include>Fade9</include>
+	 <animation condition="!Window.IsVisible(Custom1173.xml)" effect="slide" start="0,0" end="0,185" time="0">Conditional</animation>
+     <animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="0,-82" time="0">Conditional</animation>
+	 <animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="0,-164" time="0">Conditional</animation>
+	 <animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="0,-246" time="0">Conditional</animation>
+	 <animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="0,-328" time="0">Conditional</animation>
+	 <animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="0,-410" time="0">Conditional</animation>
+	 <animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,-492" time="0">Conditional</animation>
+	 <animation condition="Container(50).Position(7)" effect="slide" start="0,0" end="0,-574" time="0">Conditional</animation>
+	 <animation condition="Container(50).Position(8)" effect="slide" start="0,0" end="0,-656" time="0">Conditional</animation>
+	 <animation condition="Container(50).Position(9)" effect="slide" start="0,0" end="0,-738" time="0">Conditional</animation>
+	 <animation condition="Container(50).Position(10)" effect="slide" start="0,0" end="0,-820" time="0">Conditional</animation>
+   </include>
+</includes>

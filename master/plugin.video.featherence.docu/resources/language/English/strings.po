@@ -1,0 +1,347 @@
+msgid ""
+msgstr ""
+
+msgctxt "#29
+msgid ""
+msgstr ""
+
+msgctxt "#30
+msgid ""
+msgstr ""
+
+msgctxt "#31
+msgid ""
+msgstr ""
+
+msgctxt "#32
+msgid ""
+msgstr ""
+
+msgctxt "#33
+msgid ""
+msgstr ""
+
+msgctxt "#34
+msgid ""
+msgstr ""
+
+msgctxt "#35
+msgid ""
+msgstr ""
+
+msgctxt "#36
+msgid ""
+msgstr ""
+
+msgctxt "#37
+msgid ""
+msgstr ""
+
+msgctxt "#38
+msgid ""
+msgstr ""
+
+msgctxt "#39
+msgid ""
+msgstr ""
+
+msgctxt "#40
+msgid ""
+msgstr ""
+
+msgctxt "#41
+msgid ""
+msgstr ""
+
+msgctxt "#42
+msgid ""
+msgstr ""
+
+msgctxt "#43
+msgid ""
+msgstr ""
+
+msgctxt "#44
+msgid ""
+msgstr ""
+
+msgctxt "#45
+msgid ""
+msgstr ""
+
+msgctxt "#46
+msgid ""
+msgstr ""
+
+msgctxt "#47
+msgid ""
+msgstr ""
+
+msgctxt "#48
+msgid ""
+msgstr ""
+
+msgctxt "#49
+msgid ""
+msgstr ""
+
+msgctxt "#50
+msgid ""
+msgstr ""
+
+msgctxt "#51
+msgid ""
+msgstr ""
+
+msgctxt "#52
+msgid ""
+msgstr ""
+
+msgctxt "#53
+msgid ""
+msgstr ""
+
+msgctxt "#54
+msgid ""
+msgstr ""
+
+msgctxt "#55
+msgid ""
+msgstr ""
+
+msgctxt "#56
+msgid ""
+msgstr ""
+
+msgctxt "#57
+msgid ""
+msgstr ""
+
+msgctxt "#58
+msgid ""
+msgstr ""
+
+msgctxt "#59
+msgid ""
+msgstr ""
+
+msgctxt "#60
+msgid ""
+msgstr ""
+
+msgctxt "#61
+msgid ""
+msgstr ""
+
+msgctxt "#62
+msgid ""
+msgstr ""
+
+msgctxt "#63
+msgid ""
+msgstr ""
+
+msgctxt "#64
+msgid ""
+msgstr ""
+
+msgctxt "#65
+msgid ""
+msgstr ""
+
+msgctxt "#66
+msgid ""
+msgstr ""
+
+msgctxt "#67
+msgid ""
+msgstr ""
+
+msgctxt "#68
+msgid ""
+msgstr ""
+
+msgctxt "#69
+msgid ""
+msgstr ""
+
+msgctxt "#70
+msgid ""
+msgstr ""
+
+msgctxt "#71
+msgid ""
+msgstr ""
+
+msgctxt "#72
+msgid ""
+msgstr ""
+
+msgctxt "#73
+msgid ""
+msgstr ""
+
+msgctxt "#74
+msgid ""
+msgstr ""
+
+msgctxt "#75
+msgid ""
+msgstr ""
+
+msgctxt "#76
+msgid ""
+msgstr ""
+
+msgctxt "#77
+msgid ""
+msgstr ""
+
+msgctxt "#78
+msgid ""
+msgstr ""
+
+msgctxt "#79
+msgid ""
+msgstr ""
+
+msgctxt "#80
+msgid ""
+msgstr ""
+
+msgctxt "#81
+msgid ""
+msgstr ""
+
+msgctxt "#82
+msgid ""
+msgstr ""
+
+msgctxt "#83
+msgid ""
+msgstr ""
+
+msgctxt "#84
+msgid ""
+msgstr ""
+
+msgctxt "#85
+msgid ""
+msgstr ""
+
+msgctxt "#86
+msgid ""
+msgstr ""
+
+msgctxt "#87
+msgid ""
+msgstr ""
+
+msgctxt "#88
+msgid ""
+msgstr ""
+
+msgctxt "#89
+msgid ""
+msgstr ""
+
+msgctxt "#90
+msgid ""
+msgstr ""
+
+msgctxt "#91
+msgid ""
+msgstr ""
+
+msgctxt "#92
+msgid ""
+msgstr ""
+
+msgctxt "#93
+msgid ""
+msgstr ""
+
+msgctxt "#94
+msgid ""
+msgstr ""
+
+msgctxt "#95
+msgid ""
+msgstr ""
+
+msgctxt "#96
+msgid ""
+msgstr ""
+
+msgctxt "#97
+msgid ""
+msgstr ""
+
+msgctxt "#98
+msgid ""
+msgstr ""
+
+msgctxt "#99
+msgid ""
+msgstr ""
+
+msgctxt "#100
+msgid "My Docu"
+msgstr "הדוקו שלי"
+
+#SUB-CATEGORIES TITLE
+msgctxt "#101
+msgid "Nature"
+msgstr "טבע"
+
+msgctxt "#102
+msgid "Space"
+msgstr "חלל"
+
+msgctxt "#103
+msgid "History"
+msgstr "היסטוריה"
+
+msgctxt "#104
+msgid "Science"
+msgstr "מדע"
+
+msgctxt "#105
+msgid ""
+msgstr ""
+
+msgctxt "#106
+msgid ""
+msgstr ""
+
+msgctxt "#107
+msgid "Kids"
+msgstr "ילדים"
+
+msgctxt "#108
+msgid "Hebrew Subtitle"
+msgstr "מתורגם לעברית"
+
+msgctxt "#109
+msgid "TV channels"
+msgstr "ערוצי טלוויזיה"
+
+msgctxt "#110
+msgid ""
+msgstr ""
+
+msgctxt "#111
+msgid ""
+msgstr ""
+
+msgctxt "#1000
+msgid ""
+msgstr ""
+
+msgctxt "#1010
+msgid ""
+msgstr ""
+
+msgctxt "#1020
+msgid ""
+msgstr ""

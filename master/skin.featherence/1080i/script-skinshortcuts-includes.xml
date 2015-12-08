@@ -1,0 +1,500 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<includes>
+	<include name="skinshortcuts-mainmenu">
+		<item id="1">
+			<label>$LOCALIZE[342]</label>
+			<label2>skin.featherence</label2>
+			<icon>special://home/addons/script.featherence.service/resources/icons/movies.png</icon>
+			<property name="labelID">movies</property>
+			<property name="defaultID">movies</property>
+			<onclick condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Container(50).ListItemNoWrap(0).Property(labelID))">SetProperty(Button.ID,$INFO[Container(50).ListItemNoWrap(0).Property(labelID)],home)</onclick>
+			<property name="path">SetProperty(Button.ID,$INFO[Container(50).ListItemNoWrap(0).Property(labelID)],home)</property>
+			<property name="list">SetProperty(Button.ID,$INFO[Container(50).ListItemNoWrap(0).Property(labelID)],home)</property>
+			<onclick condition="Window.IsVisible(Home.xml) + !IsEmpty(Container(9000).ListItemNoWrap(0).Property(labelID))">SetProperty(Button.ID,$INFO[Container(9000).ListItemNoWrap(0).Property(labelID)],home)</onclick>
+			<property name="path">SetProperty(Button.ID,$INFO[Container(9000).ListItemNoWrap(0).Property(labelID)],home)</property>
+			<property name="list">SetProperty(Button.ID,$INFO[Container(9000).ListItemNoWrap(0).Property(labelID)],home)</property>
+			<onclick condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+			<property name="path">ActivateWindow(1175)</property>
+			<property name="list">1175</property>
+			<onclick condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
+			<property name="path">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</property>
+			<property name="list">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</property>
+			<onclick condition="System.HasAddon(script.featherence.service) + !Window.IsVisible(CustomHomeCustomizer.xml)">RunScript(script.featherence.service,,?mode=501)</onclick>
+			<property name="path">RunScript(script.featherence.service,,?mode=501)</property>
+			<property name="list">RunScript(script.featherence.service,,?mode=501)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">movies</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="2">
+			<label>[label]</label>
+			<label2>skin.featherence</label2>
+			<icon>DefaultShortcut.png</icon>
+			<property name="labelID">label</property>
+			<property name="defaultID">label</property>
+			<visible>Library.HasContent(Movies)</visible>
+			<onclick condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Container(50).ListItemNoWrap(0).Property(labelID))">SetProperty(Button.ID,$INFO[Container(50).ListItemNoWrap(0).Property(labelID)],home)</onclick>
+			<property name="path">SetProperty(Button.ID,$INFO[Container(50).ListItemNoWrap(0).Property(labelID)],home)</property>
+			<property name="list">SetProperty(Button.ID,$INFO[Container(50).ListItemNoWrap(0).Property(labelID)],home)</property>
+			<onclick condition="Window.IsVisible(Home.xml) + !IsEmpty(Container(9000).ListItemNoWrap(0).Property(labelID))">SetProperty(Button.ID,$INFO[Container(9000).ListItemNoWrap(0).Property(labelID)],home)</onclick>
+			<property name="path">SetProperty(Button.ID,$INFO[Container(9000).ListItemNoWrap(0).Property(labelID)],home)</property>
+			<property name="list">SetProperty(Button.ID,$INFO[Container(9000).ListItemNoWrap(0).Property(labelID)],home)</property>
+			<onclick condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+			<property name="path">ActivateWindow(1175)</property>
+			<property name="list">1175</property>
+			<onclick condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
+			<property name="path">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</property>
+			<property name="list">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</property>
+			<onclick condition="System.HasAddon(script.featherence.service) + !Window.IsVisible(CustomHomeCustomizer.xml)">RunScript(script.featherence.service,,?mode=501)</onclick>
+			<property name="path">RunScript(script.featherence.service,,?mode=501)</property>
+			<property name="list">RunScript(script.featherence.service,,?mode=501)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">label</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">False</property>
+		</item>
+	</include>
+	<include />
+	<include name="skinshortcuts-submenu">
+		<item id="1">
+			<label>$LOCALIZE[20386]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultRecentlyAddedMovies.png</icon>
+			<thumb />
+			<property name="labelID">20386</property>
+			<property name="defaultID">20386</property>
+			<visible>[Library.HasContent(Movies)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
+			<property name="list">videodb://recentlyaddedmovies/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[20434]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultSets.png</icon>
+			<thumb />
+			<property name="labelID">20434</property>
+			<property name="defaultID">20434</property>
+			<visible>[Library.HasContent(MovieSets)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
+			<property name="list">videodb://movies/sets/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[369]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultMovieTitle.png</icon>
+			<thumb />
+			<property name="labelID">369</property>
+			<property name="defaultID">369</property>
+			<onclick condition="System.HasAddon(script.featherence.service) + !Window.IsVisible(CustomHomeCustomizer.xml)">RunScript(script.featherence.service,,?mode=501)</onclick>
+			<property name="path">RunScript(script.featherence.service,,?mode=501)</property>
+			<property name="list">RunScript(script.featherence.service,,?mode=501)</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[135]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultGenre.png</icon>
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
+			<property name="list">videodb://movies/genres/</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[562]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultYear.png</icon>
+			<thumb />
+			<property name="labelID">562</property>
+			<property name="defaultID">562</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
+			<property name="list">videodb://movies/years/</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="6">
+			<label>$LOCALIZE[344]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultActor.png</icon>
+			<thumb />
+			<property name="labelID">344</property>
+			<property name="defaultID">344</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
+			<property name="list">videodb://movies/actors/</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-movies">
+		<item id="1">
+			<label>$LOCALIZE[20386]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultRecentlyAddedMovies.png</icon>
+			<thumb />
+			<property name="labelID">20386</property>
+			<property name="defaultID">20386</property>
+			<visible>Library.HasContent(Movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
+			<property name="list">videodb://recentlyaddedmovies/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[20434]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultSets.png</icon>
+			<thumb />
+			<property name="labelID">20434</property>
+			<property name="defaultID">20434</property>
+			<visible>Library.HasContent(MovieSets)</visible>
+			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
+			<property name="list">videodb://movies/sets/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[369]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultMovieTitle.png</icon>
+			<thumb />
+			<property name="labelID">369</property>
+			<property name="defaultID">369</property>
+			<onclick condition="System.HasAddon(script.featherence.service) + !Window.IsVisible(CustomHomeCustomizer.xml)">RunScript(script.featherence.service,,?mode=501)</onclick>
+			<property name="path">RunScript(script.featherence.service,,?mode=501)</property>
+			<property name="list">RunScript(script.featherence.service,,?mode=501)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[135]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultGenre.png</icon>
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
+			<property name="list">videodb://movies/genres/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[562]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultYear.png</icon>
+			<thumb />
+			<property name="labelID">562</property>
+			<property name="defaultID">562</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
+			<property name="list">videodb://movies/years/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="6">
+			<label>$LOCALIZE[344]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultActor.png</icon>
+			<thumb />
+			<property name="labelID">344</property>
+			<property name="defaultID">344</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
+			<property name="list">videodb://movies/actors/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-movies">
+		<item id="1">
+			<label>$LOCALIZE[20386]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultRecentlyAddedMovies.png</icon>
+			<thumb />
+			<property name="labelID">20386</property>
+			<property name="defaultID">20386</property>
+			<visible>[Library.HasContent(Movies)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
+			<property name="list">videodb://recentlyaddedmovies/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[20434]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultSets.png</icon>
+			<thumb />
+			<property name="labelID">20434</property>
+			<property name="defaultID">20434</property>
+			<visible>[Library.HasContent(MovieSets)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
+			<property name="list">videodb://movies/sets/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[369]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultMovieTitle.png</icon>
+			<thumb />
+			<property name="labelID">369</property>
+			<property name="defaultID">369</property>
+			<onclick condition="System.HasAddon(script.featherence.service) + !Window.IsVisible(CustomHomeCustomizer.xml)">RunScript(script.featherence.service,,?mode=501)</onclick>
+			<property name="path">RunScript(script.featherence.service,,?mode=501)</property>
+			<property name="list">RunScript(script.featherence.service,,?mode=501)</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[135]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultGenre.png</icon>
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
+			<property name="list">videodb://movies/genres/</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[562]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultYear.png</icon>
+			<thumb />
+			<property name="labelID">562</property>
+			<property name="defaultID">562</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
+			<property name="list">videodb://movies/years/</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="6">
+			<label>$LOCALIZE[344]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultActor.png</icon>
+			<thumb />
+			<property name="labelID">344</property>
+			<property name="defaultID">344</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
+			<property name="list">videodb://movies/actors/</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-template">
+		<include condition="StringCompare(System.ProfileName,Master user)">skinshortcuts-template-Master user</include>
+	</include>
+	<include name="skinshortcuts-template-Master user">
+		<control id="9001" type="fixedlist">
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<include>submenuList</include>
+			<include>submenuAnimation</include>
+			<itemlayout height="25" width="216">
+				<include>menuLayout</include>
+			</itemlayout>
+			<focusedlayout height="25" width="216">
+				<include>menuFocusedLayout</include>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<label>$LOCALIZE[20386]</label>
+					<label2>$ADDON[script.skinshortcuts 32014]</label2>
+					<icon>DefaultRecentlyAddedMovies.png</icon>
+					<thumb />
+					<property name="labelID">20386</property>
+					<property name="defaultID">20386</property>
+					<visible>Library.HasContent(Movies)</visible>
+					<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
+					<property name="list">videodb://recentlyaddedmovies/</property>
+					<property name="group">movies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="2">
+					<label>$LOCALIZE[20434]</label>
+					<label2>$LOCALIZE[342]</label2>
+					<icon>DefaultSets.png</icon>
+					<thumb />
+					<property name="labelID">20434</property>
+					<property name="defaultID">20434</property>
+					<visible>Library.HasContent(MovieSets)</visible>
+					<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
+					<property name="list">videodb://movies/sets/</property>
+					<property name="group">movies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="3">
+					<label>$LOCALIZE[369]</label>
+					<label2>$LOCALIZE[342]</label2>
+					<icon>DefaultMovieTitle.png</icon>
+					<thumb />
+					<property name="labelID">369</property>
+					<property name="defaultID">369</property>
+					<onclick condition="System.HasAddon(script.featherence.service) + !Window.IsVisible(CustomHomeCustomizer.xml)">RunScript(script.featherence.service,,?mode=501)</onclick>
+					<property name="path">RunScript(script.featherence.service,,?mode=501)</property>
+					<property name="list">RunScript(script.featherence.service,,?mode=501)</property>
+					<property name="group">movies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="4">
+					<label>$LOCALIZE[135]</label>
+					<label2>$LOCALIZE[342]</label2>
+					<icon>DefaultGenre.png</icon>
+					<thumb />
+					<property name="labelID">135</property>
+					<property name="defaultID">135</property>
+					<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
+					<property name="list">videodb://movies/genres/</property>
+					<property name="group">movies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="5">
+					<label>$LOCALIZE[562]</label>
+					<label2>$LOCALIZE[342]</label2>
+					<icon>DefaultYear.png</icon>
+					<thumb />
+					<property name="labelID">562</property>
+					<property name="defaultID">562</property>
+					<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
+					<property name="list">videodb://movies/years/</property>
+					<property name="group">movies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="6">
+					<label>$LOCALIZE[344]</label>
+					<label2>$LOCALIZE[342]</label2>
+					<icon>DefaultActor.png</icon>
+					<thumb />
+					<property name="labelID">344</property>
+					<property name="defaultID">344</property>
+					<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
+					<property name="list">videodb://movies/actors/</property>
+					<property name="group">movies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+			</content>
+		</control>
+		<control id="9001" type="fixedlist">
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),label)</visible>
+			<include>submenuList</include>
+			<include>submenuAnimation</include>
+			<itemlayout height="25" width="216">
+				<include>menuLayout</include>
+			</itemlayout>
+			<focusedlayout height="25" width="216">
+				<include>menuFocusedLayout</include>
+			</focusedlayout>
+			<content>
+					</content>
+		</control>
+		<control id="9000" type="fixedlist">
+			<include>mainmenuList</include>
+			<itemlayout height="25" width="216">
+				<include>menuLayout</include>
+			</itemlayout>
+			<focusedlayout height="25" width="216">
+				<include>menuFocusedLayout</include>
+			</focusedlayout>
+			<content>
+				<item>
+					<label>Static item</label>
+					<icon>static.png</icon>
+				</item>
+				<item id="1">
+					<label>$LOCALIZE[342]</label>
+					<label2>skin.featherence</label2>
+					<icon>special://home/addons/script.featherence.service/resources/icons/movies.png</icon>
+					<property name="labelID">movies</property>
+					<property name="defaultID">movies</property>
+					<onclick condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Container(50).ListItemNoWrap(0).Property(labelID))">SetProperty(Button.ID,$INFO[Container(50).ListItemNoWrap(0).Property(labelID)],home)</onclick>
+					<property name="path">SetProperty(Button.ID,$INFO[Container(50).ListItemNoWrap(0).Property(labelID)],home)</property>
+					<property name="list">SetProperty(Button.ID,$INFO[Container(50).ListItemNoWrap(0).Property(labelID)],home)</property>
+					<onclick condition="Window.IsVisible(Home.xml) + !IsEmpty(Container(9000).ListItemNoWrap(0).Property(labelID))">SetProperty(Button.ID,$INFO[Container(9000).ListItemNoWrap(0).Property(labelID)],home)</onclick>
+					<property name="path">SetProperty(Button.ID,$INFO[Container(9000).ListItemNoWrap(0).Property(labelID)],home)</property>
+					<property name="list">SetProperty(Button.ID,$INFO[Container(9000).ListItemNoWrap(0).Property(labelID)],home)</property>
+					<onclick condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+					<property name="path">ActivateWindow(1175)</property>
+					<property name="list">1175</property>
+					<onclick condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
+					<property name="path">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</property>
+					<property name="list">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</property>
+					<onclick condition="System.HasAddon(script.featherence.service) + !Window.IsVisible(CustomHomeCustomizer.xml)">RunScript(script.featherence.service,,?mode=501)</onclick>
+					<property name="path">RunScript(script.featherence.service,,?mode=501)</property>
+					<property name="list">RunScript(script.featherence.service,,?mode=501)</property>
+					<property name="submenuVisibility">movies</property>
+					<property name="group">mainmenu</property>
+				</item>
+				<item id="2">
+					<label>[label]</label>
+					<label2>skin.featherence</label2>
+					<icon>DefaultShortcut.png</icon>
+					<property name="labelID">label</property>
+					<property name="defaultID">label</property>
+					<visible>Library.HasContent(Movies)</visible>
+					<onclick condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Container(50).ListItemNoWrap(0).Property(labelID))">SetProperty(Button.ID,$INFO[Container(50).ListItemNoWrap(0).Property(labelID)],home)</onclick>
+					<property name="path">SetProperty(Button.ID,$INFO[Container(50).ListItemNoWrap(0).Property(labelID)],home)</property>
+					<property name="list">SetProperty(Button.ID,$INFO[Container(50).ListItemNoWrap(0).Property(labelID)],home)</property>
+					<onclick condition="Window.IsVisible(Home.xml) + !IsEmpty(Container(9000).ListItemNoWrap(0).Property(labelID))">SetProperty(Button.ID,$INFO[Container(9000).ListItemNoWrap(0).Property(labelID)],home)</onclick>
+					<property name="path">SetProperty(Button.ID,$INFO[Container(9000).ListItemNoWrap(0).Property(labelID)],home)</property>
+					<property name="list">SetProperty(Button.ID,$INFO[Container(9000).ListItemNoWrap(0).Property(labelID)],home)</property>
+					<onclick condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+					<property name="path">ActivateWindow(1175)</property>
+					<property name="list">1175</property>
+					<onclick condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
+					<property name="path">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</property>
+					<property name="list">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</property>
+					<onclick condition="System.HasAddon(script.featherence.service) + !Window.IsVisible(CustomHomeCustomizer.xml)">RunScript(script.featherence.service,,?mode=501)</onclick>
+					<property name="path">RunScript(script.featherence.service,,?mode=501)</property>
+					<property name="list">RunScript(script.featherence.service,,?mode=501)</property>
+					<property name="submenuVisibility">label</property>
+					<property name="group">mainmenu</property>
+				</item>
+			</content>
+		</control>
+	</include>
+	<include name="skinshortcuts-group-label" />
+	<include name="skinshortcuts-group-alt-label" />
+</includes>

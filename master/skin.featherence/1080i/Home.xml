@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+  <defaultcontrol always="true">9000</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <onload condition="Window(home).Property(ReloadSkin)">AlarmClock(Hide,ClearProperty(ReloadSkin,home),00:01,silent)</onload>
+  <include>ReloadSkin_Check</include>
+  <!--<onload description="mainmenu" condition="true">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=0)</onload>-->
+  <!--<onload description="submenu" >RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=[SubContent100]|[SubContent101]|[SubContent102])</onload>-->
+  <onload condition="!IsEmpty(Window(home).Property(ViewsSettings))">ClearProperty(ViewsSettings,home)</onload>
+  <include>onunload_ClearProperty_MainMenu</include>
+  <include>onunload_ClearProperty_SubMenu</include>
+  <controls>
+	<include>Backgrounds1</include>
+	<include>Design_TopButtons</include>
+	<include>Menu_Home</include>
+	<include>Widget_Home</include>
+    
+	<include>TopVideoInformation</include>
+	<include>TopInformation</include>
+  </controls>
+</window>
