@@ -202,6 +202,95 @@ def CATEGORIES102(admin):
 	addDir("Space and Universe",list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
 	
+	'''------------------------------
+	---art&visual arts----------------
+	------------------------------'''
+
+
+	'''markcrilley Channel'''
+	addDir('markcrilley','markcrilley',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''PESfilm Channel'''
+	addDir('Crash Course Kids Channel','crashcoursekids',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''WilliamsShamir Channel'''
+	addDir('WilliamsShamir Channel','WilliamsShamir',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''ChrisSamba22 Channel'''
+	addDir('ChrisSamba22 Channel','ChrisSamba22',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''EclecticAsylumArt Channel'''
+	addDir('EclecticAsylumArt Channel','EclecticAsylumArt',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''idrawgirls Channel'''
+	addDir('idrawgirls  Channel','idrawgirls/',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''daarken Channel'''
+	addDir('daarken Channel','daarken',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''Crash Course Kids Channel'''
+	addDir('Crash Course Kids Channel','crashcoursekids',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''3dsMaxHowTos Channel'''
+	addDir('3dsMaxHowTos Channel','3dsMaxHowTos',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''revolutions34 Channel'''
+	addDir('revolutions34 Channel','crashcoursekids',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+	cgoodswen
+	'''CGArtSuccess Channel'''
+	addDir('CGArtSuccess Channel','CGArtSuccess',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''bluefley00 Channel'''
+	addDir('bluefley00  Channel','bluefley00 ',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''bedavelli Channel'''
+	addDir('bedavelli Channel','bedavellis',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''arieldiaz3d Channel'''
+	addDir('arieldiaz3d Channel','arieldiaz3d',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''Arenovalis Channel'''
+	addDir('Arenovalis Channel','Arenovalis',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	
+	
+	'''iceblazer17 Channel'''
+	addDir('iceblazer17 Channel','iceblazer17',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''AlexanderKoshelkov Channel'''
+	addDir('AlexanderKoshelkov Channel','AlexanderKoshelkov',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''tate Channel'''
+	addDir('tate Channel','tate',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+		
+	'''smarthistoryvideos Channel'''
+	addDir('smarthistoryvideos Channel','smarthistoryvideos',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''guggenheim Channel'''
+	addDir('guggenheim Channel','guggenheim',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''MoMAvideos Channel'''
+	addDir('SciShow Kids Channel','scishowkids',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''TheArtistsPlace Channel'''
+	addDir('TheArtistsPlace Channel','UCLCHcL4M0xSwPeEuKGrsGkg',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''TattooWoo Channel'''
+	addDir('SciShow Kids Channel','scishowkids',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''Sycra Channel'''
+	addDir('Sycra Kids Channel','Sycra',9,'','','1',"", getAddonFanart(background, custom=""))
+	
 	
 	
 	
