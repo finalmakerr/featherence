@@ -65,7 +65,9 @@
       <posy>125</posy>  
 	  <width>880</width>	  	  
       <control type="image" description="רקע">
+		<height>870</height>
 		<posx>-20</posx>
+		<posy>-20</posy>
         <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
 		<width>920</width>
       </control>
@@ -81,7 +83,8 @@
       </control>
       <control type="button" id="3" description="Button template עיצוב כפתורים (2)">
 	    <font>size30</font>
-		<include>ButtonL2</include>
+		<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
       </control>
       <control type="label" id="7" description="Label template עיצוב">
 	    <align>left</align>
@@ -93,7 +96,6 @@
 	</control>
     <control type="radiobutton" id="4" description="Radiobutton template עיצוב">
 	  <font>size30</font>
-	  <textoffsetx>20</textoffsetx>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
       <radioposx>0</radioposx>
@@ -101,17 +103,19 @@
     <control type="spincontrolex" id="5" description="חץ למעלה/למטה">
 	  <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
 	  <font>size30</font>
-      <include>ButtonL4</include>
+      <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
       <reverse>yes</reverse>
     </control>
-    <control type="image" id="6" description="Default separator image DO NOT REMOVE">
+    <control type="image" id="6" description="Default separator image">
       <texture>-</texture>
 	  <height>1</height>
     </control>
     <control type="sliderex" id="8" description="featherence ימינה/שמאלה">
 	  <width>100</width>
-	  <font>size24</font>
-	  <include>ButtonC2</include>
+	  <font>size30</font>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
     </control>
     <include>TopInformation</include>
   </controls>

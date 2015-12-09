@@ -227,14 +227,14 @@
 	
   </default>
   <default type="sliderex" description="Default Slider">
-    <aligny>center</aligny>
+	<aligny>center</aligny>
 	<posx>795</posx>
     <posy>225</posy>
     <height>75</height>
     <width>450</width>
-    <sliderwidth>100</sliderwidth>
+    <sliderwidth>120</sliderwidth>
     <sliderheight>24</sliderheight>
-	<texturesliderbar border="0" colordiffuse="$VAR[MenuColor]">buttons/ButtonA0.png</texturesliderbar>
+	<texturesliderbar border="0" colordiffuse="BBBBBBBB">buttons/ButtonA0.png</texturesliderbar>
     <textureslidernib border="0">buttons/ButtonAF.png</textureslidernib>
     <textureslidernibfocus colordiffuse="ffeeb13f" border="0">buttons/ButtonA0.png</textureslidernibfocus>
 	<texturefocus colordiffuse="ff4f4f98" border="0">buttons/ButtonA.png</texturefocus>

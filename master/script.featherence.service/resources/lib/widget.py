@@ -82,7 +82,6 @@ class Main:
             log('Total time needed for all queries: %s' % c_total)
             # give a possible other instance some time to notice the empty property
             self.WINDOW.setProperty('SkinWidgets_Running', 'true')
-            #self._daemon()
 
     def _init_vars(self):
         self.WINDOW = xbmcgui.Window(10000)
@@ -107,7 +106,6 @@ class Main:
         self.WINDOW.setProperty('SkinWidgets_RandomItems', '%s' % __addon__.getSetting("randomitems_enable"))
         self.WINDOW.setProperty('SkinWidgets_RecentItems', '%s' % __addon__.getSetting("recentitems_enable"))
         self.WINDOW.setProperty('SkinWidgets_RandomItems_Update', 'false')
-        self.RECENTITEMS_HOME_UPDATE = __addon__.getSetting("recentitems_homeupdate")
         self.PLOT_ENABLE = __addon__.getSetting("plot_enable")  == 'true'
 
     def _parse_argv( self ):
@@ -637,24 +635,6 @@ class Main:
                         break
                 self.WINDOW.setProperty("%s.Count" % (request), str(json_query['result']['limits']['total']))
             del json_query
-
-    def _daemon(self):
-        # deamon is meant to keep script running at all time
-        count = 0
-        home_update = False
-        while (not xbmc.abortRequested) and self.WINDOW.getProperty('SkinWidgets_Running') == 'true':
-            xbmc.sleep(500)
-            xbmc.executebuiltin('Notification(1,1,1000)')
-            if not xbmc.Player().isPlayingVideo():
-                if self.WINDOW.getProperty('SkinWidgets_RandomItems_Update') == 'true':
-                    count = 0
-                    self.WINDOW.setProperty('SkinWidgets_RandomItems_Update','false')
-                    self._fetch_info_randomitems()
-                if  self.RECENTITEMS_HOME_UPDATE == 'true' and home_update and xbmcgui.getCurrentWindowId() == 10000:
-                    self._fetch_info_recentitems()
-                    home_update = False
-                elif self.RECENTITEMS_HOME_UPDATE == 'true' and not home_update and xbmcgui.getCurrentWindowId() != 10000:
-                    home_update = True
 
     def _clear_properties(self, request):
         count = 0

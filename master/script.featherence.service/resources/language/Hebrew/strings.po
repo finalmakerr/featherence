@@ -504,6 +504,18 @@ msgctxt "#32035
 msgid "Note: You may change this setting at anytime in the settings button"
 msgstr "לידיעתך ניתן לשנות את ההגדרה בכל עת בכפתור הגדרות"
 
+msgctxt "#32040
+msgid "Usage: Swift your mouse down to activate the taskbar."
+msgstr "שימוש: הזז את העכבר למטה במהירות להצגת שורת המשימות."
+
+msgctxt "#32041"
+msgid "Setup default volume level on startup."
+msgstr "קבע עוצמת ווליום ברירת מחדל בעת בהפעלה."
+
+msgctxt "#32042"
+msgid "Allow auto library update and cleanup.[CR]If enable, the library will be updated once a day and cleaned once a week, respectably.[CR]The action occur when the user idle for one-two hours."
+msgstr "אפשר עדכון וניקוי ספרייה אוטומטי.[CR]אם האפשרות מופעלת יתבצע עדכון ספרייה אחת ליום וניקוי ספרייה אחת לשבוע.[CR]הפעולה מתבצעת במידה ואינך משתמש בקודי למעלה משעה-שעתיים."
+
 msgctxt "#33300
 msgid "Action completed successfully"
 msgstr "הפעולה הסתיימה בהצלחה!"

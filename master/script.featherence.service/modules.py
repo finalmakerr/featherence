@@ -14,10 +14,9 @@ def mode0(admin, name, printpoint):
 	#returned = dialogyesno(localize(79516), localize(78,addon='script.featherence.service') + localize(75775)) #User settings
 	#option = localize(24056,[librarydatalocaldatestr]) #str24056.encode('utf-8') % (librarydatalocaldatestr)
 	#print option
-	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23)')
+	xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=31&value=header&value2=test&value3=Z:\kodi.log)')
 	#xbmc.executebuiltin('RunScript(script.htpt.widgets)')
 	#xbmc.executebuiltin('ActivateWindow(videoplaylist)')
-	xbmc.executebuiltin('ActivateWindow(1170)')
 	#mode5('', admin, name, printpoint)
 	
 def mode5(value, admin, name, printpoint):
@@ -28,6 +27,7 @@ def mode5(value, admin, name, printpoint):
 	AutoUpdate2 = getsetting('AutoUpdate2')
 	
 	if AutoUpdate == 'true':
+		printpoint = printpoint + '1'
 		try:
 			test = int(AutoUpdate2) + 1
 		except:
@@ -35,19 +35,26 @@ def mode5(value, admin, name, printpoint):
 			setsetting('AutoUpdate2','60')
 		xbmc.executebuiltin('UpdateAddonRepos')
 		xbmc.executebuiltin('UpdateLocalAddons')
-
-		xbmc.executebuiltin('AlarmClock(demon,RunScript(script.featherence.service,,?mode=5),'+str(AutoUpdate2)+',silent)') #demon
 	
 	if xbmc.getCondVisibility('!IntegerGreaterThan(System.Uptime,5)'):
+		'''one time at startup'''
 		Remote_Name = getsetting('Remote_Name')
 		Remote_Support = getsetting('Remote_Support')
 		if Remote_Name != "" and Remote_Name != 'None' and Remote_Support == 'true':
 			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=27&value=0)')
+	else:
+		'''multitime but not on startup'''
+		Library_On = getsetting('Library_On')
+		if Library_On == 'true':
+			printpoint = printpoint + '2'
+			LibraryUpdate(admin, datenowS, Library_On, Library_CleanDate, Library_UpdateDate)
+			
 	if xbmc.getSkinDir() == 'skin.featherence':
 		xbmc.sleep(60000)
 		setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
 		'''---------------------------'''
-	
+	if AutoUpdate == 'true' or Library_On == 'true':
+		xbmc.executebuiltin('AlarmClock(demon,RunScript(script.featherence.service,,?mode=5),'+str(AutoUpdate2)+',silent)') #demon
 
 def mode6(admin, name, printpoint):
 	'''------------------------------
@@ -452,23 +459,29 @@ def mode18(value, admin, name, printpoint):
 		'''------------------------------
 		---Keymaps-----------------------
 		------------------------------'''
-		keymaps_path = os.path.join(userdata_path,'keymaps', '')
-		copyfiles(os.path.join(featherenceservicecopy_path, 'manual', 'keymaps', '', '*'), keymaps_path)
-		xbmc.executebuiltin('Action(reloadkeymaps)')
-		dialogok('Keymaps copied!', 'keyboard.xml[CR]remote.xml[CR]joystick.Sony.PLAYSTATION(R)3.Controller[CR]joystick.PS4.Controller', '', '')
-		'''---------------------------'''
+		returned = dialogyesno('Would you like to continue?','This action will overwrite your current related files!')
+		if returned == 'ok':
+			keymaps_path = os.path.join(userdata_path,'keymaps', '')
+			copyfiles(os.path.join(featherenceservicecopy_path, 'manual', 'keymaps', '', '*'), keymaps_path)
+			xbmc.executebuiltin('Action(reloadkeymaps)')
+			dialogok('Keymaps copied!', 'keyboard.xml[CR]remote.xml[CR]joystick.Sony.PLAYSTATION(R)3.Controller[CR]joystick.PS4.Controller', '', '')
+			'''---------------------------'''
 	elif value == '2':
 		'''------------------------------
 		---Samba-------------------------
-		------------------------------'''		
-		copyfiles(os.path.join(featherenceservicecopy_path, 'manual', 'config', '*'), config_path, chmod='+x')
-		'''---------------------------'''
+		------------------------------'''
+		returned = dialogyesno('Would you like to continue?','This action will overwrite your current related files!')
+		if returned == 'ok':
+			copyfiles(os.path.join(featherenceservicecopy_path, 'manual', 'config', '*'), config_path, chmod='+x')
+			'''---------------------------'''
 	elif value == '3':
 		'''------------------------------
 		---service.openelec.settings-----
-		------------------------------'''		
-		copyfiles(os.path.join(featherenceservicecopy_path, 'manual', 'addon_data', 'service.openelec.settings', '*'), os.path.join(addondata_path,'service.openelec.settings'))
-		'''---------------------------'''
+		------------------------------'''
+		returned = dialogyesno('Would you like to continue?','This action will overwrite your current related files!')
+		if returned == 'ok':
+			copyfiles(os.path.join(featherenceservicecopy_path, 'manual', 'addon_data', 'service.openelec.settings', '*'), os.path.join(addondata_path,'service.openelec.settings'))
+			'''---------------------------'''
 	
 
 def Mode19(admin, name, printpoint, scriptfeatherencedebug_Info_TotalSpace, scriptfeatherencedebug_Info_TotalMemory, scriptfeatherencedebug_Info_Model, scriptfeatherencedebug_Info_Intel):
@@ -603,7 +616,6 @@ def mode21(value, admin, name, printpoint):
 					'''---------------------------'''
 				elif "9" in printpoint2: dialogok(str78974.encode('utf-8') + '[CR]' + '[COLOR=Yellow]' + str74550.encode('utf-8') % (str20343.encode('utf-8')) + '[/COLOR]',"", '$LOCALIZE[75210]', "") #Fix failed, Add movies to library
 				'''---------------------------'''
-			
 def mode22(value, admin, name, printpoint, ScreenSaver_Music):
 	'''------------------------------
 	---ScreenSaver_Music-------------
@@ -703,14 +715,17 @@ def mode30(admin, name):
 		else: diaogtextviewer(localize(75687).decode('utf-8') + "-" + '[COLOR=Yellow]' + xbmc.getInfoLabel('System.AddonVersion(skin.featherence)') + '[/COLOR]', message)
 		'''---------------------------'''
 
-def mode31(value, admin, name, printpoint):
+def mode31(value, value2, value3, value4, admin, name, printpoint):
 	'''------------------------------
 	---diaogtextviewer---------------
 	------------------------------'''
-	header = find_string(value, "", '||')
-	message2 = value.replace(header,"",1)
-	header = header.replace('||',"",1)
-	diaogtextviewer(header, message2)
+	header = str(value).encode('utf-8')
+	message = str(value2).encode('utf-8')
+	if value3 != None:
+		value3 = read_from_file(value3, silent=True, lines=False, retry=True, createlist=True, printpoint="", addlines="")
+		message = message + newline + str(value3)
+	message = message + newline + str(value4).encode('utf-8')
+	diaogtextviewer(header, message)
 	'''---------------------------'''
 	
 def mode32(value, admin, name, printpoint):
@@ -914,9 +929,7 @@ def mode53(admin, name, printpoint):
 	'''------------------------------
 	---POWEROFF----------------------
 	------------------------------'''
-	setsetting_custom1('script.featherence.service.debug','ModeOn_10',"true")
-	setsetting_custom1('script.featherence.service.debug','ModeTime_10',datenowS + "__" + timenow2S)
-	notification(startupmessage2,id1str,"",5000)
+	#notification(startupmessage2,id1str,"",5000)
 	custom = 's1'
 	killall(admin, custom)
 	'''---------------------------'''
@@ -1318,7 +1331,7 @@ def mode101(value, admin, name):
 			terminal('TASKKILL /im EAT_gil900.exe /f',"EAT-end") ; xbmc.sleep(200) ; terminal('TASKKILL /im EAT_gil900.exe /f',"EAT-end") ; xbmc.sleep(200)
 			if TotalMouse == "true":
 				terminal('"'+path+'"', 'EAT-start')
-				notification("TotalMouse by gil900", "", "", 2000) ; xbmc.sleep(1000)
+				notification("TotalMouse by gil900", "Enabled!", "", 2000) ; xbmc.sleep(1000)
 			else: notification('Total Mouse is not active!','','',1000)
 			'''---------------------------'''
 		else: notification_common("26")
@@ -2146,8 +2159,6 @@ def mode200(value, admin, name, printpoint):
 	'''---------------------------'''
 
 def Custom1000(title="", progress="", comment="", autoclose=""):
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
-	admin2 = xbmc.getInfoLabel('Skin.HasSetting(Admin2)')
 	if libraryisscanningvideo: xbmc.executebuiltin('UpdateLibrary(video)')
 	xbmc.executebuiltin('SetProperty(1000title,'+title+',home)')
 	xbmc.executebuiltin('SetProperty(1000progress,'+str(progress)+',home)')
@@ -2508,7 +2519,6 @@ def mode203(value, admin, name, printpoint):
 				'''------------------------------
 				---Save--------------------------
 				------------------------------'''
-				from variables2 import *
 				Custom1000(name,20,str(list[returned2]),10)
 				formula = ""
 				formula = "Skin.Theme=2" + skincurrenttheme
@@ -2688,6 +2698,8 @@ def mode203(value, admin, name, printpoint):
 						if count >= 10:
 							count = 0
 							property_1000progress = xbmc.getInfoLabel('Window(home).Property(1000progress)')
+							try: test = int(property_1000progress) + 2
+							except: property_1000progress = 20
 							Custom1000(name,int(property_1000progress) + 2,str(list[returned2]),10)
 						x = "" ; x1 = "" ; x2 = "" ; x3 = ""
 						if "=0" in line:
@@ -9883,41 +9895,43 @@ def mode999(admin, name, printpoint):
 	mode999(admin, name, printpoint)
 	'''---------------------------'''
 
-def LibraryUpdate(admin, Library_On, Library_CleanDate, Library_UpdateDate):
-	from variables import datenowS
+def LibraryUpdate(admin, datenowS, Library_On, Library_CleanDate, Library_UpdateDate):
 	name = 'LibraryUpdate' ; extra = "" ; printpoint = "" ; TypeError = ""
 
 	libraryisscanningvideo = xbmc.getCondVisibility('Library.IsScanningVideo')
 	'''---------------------------'''
-	if Library_Clean == "true":
-		'''---------------------------'''
-		if Library_CleanDate != "" and datenowS != "":
-			import datetime as dt
-			datenowD = stringtodate(datenowS,'%Y-%m-%d')
-			Library_CleanDateD = stringtodate(Library_CleanDate,'%Y-%m-%d')
-			Library_CleanDate2D = Library_CleanDateD + dt.timedelta(days=7)
-			'''---------------------------'''
-			if datenowD > Library_CleanDate2D: printpoint = printpoint + "7"
-			'''---------------------------'''
-		else: printpoint = printpoint + "7"
-		
-		if "7" in printpoint:
-			xbmc.executebuiltin('CleanLibrary(video)')
-			setsetting('Library_CleanDate',datenowS)
-			'''---------------------------'''
-
-		elif Library_CleanDate == datenowS: printpoint = printpoint + "1"
-		
+	if Library_On == "true":
+		systemidle3600 = xbmc.getCondVisibility('System.IdleTime(3600)')
+		if not systemidle3600: printpoint = printpoint + '9'
 		else:
-			if libraryisscanningvideo: printpoint = printpoint + "6"
-			elif datenowS != Library_UpdateDate:
-				printpoint = printpoint + "7"
-				setsetting('Library_UpdateDate',datenowS)
-				xbmc.executebuiltin('UpdateLibrary(video)')
+			'''---------------------------'''
+			if Library_CleanDate != "" and datenowS != "":
+				import datetime as dt
+				datenowD = stringtodate(datenowS,'%Y-%m-%d')
+				Library_CleanDateD = stringtodate(Library_CleanDate,'%Y-%m-%d')
+				Library_CleanDate2D = Library_CleanDateD + dt.timedelta(days=7)
 				'''---------------------------'''
+				if datenowD > Library_CleanDate2D: printpoint = printpoint + "7"
+				'''---------------------------'''
+			else: printpoint = printpoint + "7"
+			
+			if "7" in printpoint:
+				xbmc.executebuiltin('CleanLibrary(video)')
+				setsetting('Library_CleanDate',datenowS)
+				'''---------------------------'''
+
+			elif Library_CleanDate == datenowS: printpoint = printpoint + "1"
+			
 			else:
-				printpoint = printpoint + "9"
-				'''---------------------------'''
+				if libraryisscanningvideo: printpoint = printpoint + "6"
+				elif datenowS != Library_UpdateDate:
+					printpoint = printpoint + "7"
+					setsetting('Library_UpdateDate',datenowS)
+					xbmc.executebuiltin('UpdateLibrary(video)')
+					'''---------------------------'''
+				else:
+					printpoint = printpoint + "9"
+					'''---------------------------'''
 			
 		'''------------------------------
 		---PRINT-END---------------------

@@ -28,10 +28,10 @@
 		  <include>Slide1</include>
 		  <include>Slide2</include>
 		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
-		  <posx>-10</posx>
-		  <posy>360</posy>
-		  <width>480</width>
-		  <height>720</height>
+		  <posx>20</posx>
+		  <posy>140</posy>
+		  <width>1880</width>
+		  <height>930</height>
 		  <include>4ways</include>
 		  <viewtype label="31010">List</viewtype>
 		  <include>ViewDesign_50_Layout</include>
@@ -48,10 +48,10 @@
 		  <include>Slide1</include>
 		  <include>Slide2</include>
 		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
-		  <posx>-10</posx>
-		  <posy>360</posy>
-		  <width>480</width>
-		  <height>720</height>
+		  <posx>20</posx>
+		  <posy>140</posy>
+		  <width>1880</width>
+		  <height>930</height>
 		  <include>4ways</include>
 		  <include>ViewDesign_50_Layout</include>
 		</control>

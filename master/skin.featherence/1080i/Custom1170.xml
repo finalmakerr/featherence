@@ -30,7 +30,6 @@
 			<shadowcolor>black</shadowcolor>
 			<visible>false</visible>
         </control>
-
 		<control type="panel" id="3110">
 			<viewtype label="31438">icons</viewtype>
 			<posx>40</posx>

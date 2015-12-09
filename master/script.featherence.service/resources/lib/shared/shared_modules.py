@@ -2125,7 +2125,7 @@ def read_from_file(infile, silent=True, lines=False, retry=True, createlist=True
 			if lines == True:
 				printpoint = printpoint + "2"
 				for line in infile_.readlines():
-					print line
+					#print line
 					#[x.encode('utf-8') for x in l]
 					#line.decode('utf-8').encode('utf-8')
 					if addlines != "":

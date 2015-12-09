@@ -13,6 +13,7 @@ mode=None
 value=None
 value2=None
 value3=None
+value4=None
 
 try: mode=int(params["mode"])
 except: pass
@@ -22,7 +23,8 @@ try: value2=str(params["value2"])
 except: value2 = ""
 try: value3=str(params["value3"])
 except: value3 = ""
-
+try: value4=str(params["value4"])
+except: value4 = ""
 
 if mode == 0:
 	'''------------------------------
@@ -370,7 +372,7 @@ elif mode == 31:
 	---diaogtextviewer---------------
 	------------------------------'''
 	name = "diaogtextviewer"
-	mode31(value, admin, name, printpoint)
+	mode31(value, value2, value3, value4, admin, name, printpoint)
 	'''---------------------------'''
 
 elif mode == 32:
@@ -1670,6 +1672,7 @@ elif mode >= 200 and mode <= 249:
 		'''------------------------------
 		---Save and Load your skin design
 		------------------------------'''
+		from variables2 import *
 		name = "Save and Load your skin design"
 		mode203(value, admin, name, printpoint)
 		'''---------------------------'''

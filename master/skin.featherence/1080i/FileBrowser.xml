@@ -6,11 +6,11 @@
   
   <controls>
 	  <include>BlackBackground2</include>
-	  <include>ScrollBar</include>
 	  <include>ViewDesign_450</include>
 	  <include>MenuDesign_Center</include>
-	  <include>TopInformation</include>
 	  <include>TopVideoInformation</include>
+	  <include>ScrollBar</include>
+	  <include>TopInformation</include>
 	  
 	  <control type="label" id="412" description="Path of the selected item">
 	    <visible>false</visible>

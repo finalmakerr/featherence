@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-	<category label="STARTUP" description="">
+	<category label="Common Services" description="">
 	  <setting id="AutoUpdate" type="bool" default="true" label="Auto check for addons update" visible=""/>
 	  <setting id="AutoUpdate2" type="select" default="60m" label="Timing" values="60|90|120|150|180" visible="eq(-1,true)"/>
-	  <setting id="VolumeLevel" type="select" default="-" label="32015" values="-|40|50|60|70|80|90|100" visible="eq(-1,true)"/>
+	  <setting type="lsep" label="32042"/>
+	  <setting id="Library_On" type="bool" default="false" label="Auto Library Update/Clean" visible="true"/>
+	  <setting type="lsep" label=""/>
+	  <setting type="lsep" label="32041"/>
+	  <setting id="VolumeLevel" type="select" default="-" label="32015" values="-|40|50|60|70|80|90|100" visible="true"/>
+	  <setting type="lsep" label=""/>
 	</category>
 	
 	<category label="Remote">
@@ -28,24 +33,24 @@
       <setting label="32005" type="bool" id="randomitems_seasonfolders" subsetting="true" default="true" enable="eq(-2,true)"/>
 	  <setting label="32009" type="bool" id="recentitems_enable" default="true"/>
       <setting label="32011" type="bool" id="recentitems_unplayed" subsetting="true" default="true" enable="eq(-1,true)"/>
-      <setting label="32010" type="bool" id="recentitems_homeupdate" default="false"/>
 	</category>
 	
 	<category label="TOOLS" description="">
 		<setting type="lsep" label=""/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=6&amp;value=1)" label="Ping" visible="System.Platform.Windows | System.Platform.Linux | System.Platform.Linux.RaspberryPi"/>
-		<!--<setting type="bool" id="TotalMouse" default="false" label="TotalMouse" visible="System.Platform.Windows"/>-->
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=101&amp;value=0)" label="Total Mouse" option="close" visible="System.Platform.Windows"/>
-		<setting type="lsep" label="84"/>
-	    <setting id="Library_On" type="bool" default="false" label="Auto Library Update/Clean" visible=""/>
+		<setting type="lsep" label="Total Mouse offer an easy access to your taskbar from within Kodi." visible="System.Platform.Windows"/>
+		<setting type="bool" id="TotalMouse" default="false" label="Enable Total Mouse" visible="System.Platform.Windows"/>
+		<setting type="lsep" label="32040" visible="eq(-1,true)"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=101&amp;value=1)" label="Launch Total Mouse script" option="close" visible="System.Platform.Windows"/>
 	    
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=46)" label="OverClock PI" visible="System.Platform.Linux.RaspberryPi + System.HasAddon(service.openelec.settings)"/>
+		<setting type="lsep" label="84" visible="System.Platform.Linux | System.Platform.Linux.RaspberryPi"/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=63)" label="Texture & DB Removal" visible="System.Platform.Linux | System.Platform.Linux.RaspberryPi"/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=21&amp;value=1)" label="Auto Setup Movies Scraper" visible=""/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=21&amp;value=2)" label="Auto Setup TVshows Scraper" visible=""/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=18&amp;value=1)" label="Keymaps" visible=""/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=18&amp;value=2)" label="samba.conf" visible="System.HasAddon(service.openelec.settings)"/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=18&amp;value=3)" label="service.openelec.settings" visible="System.HasAddon(service.openelec.settings)"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=21&amp;value=1)" label="Auto Setup Movies Scraper" option="close" visible="false"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=21&amp;value=2)" label="Auto Setup TVshows Scraper" option="close" visible="false"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=18&amp;value=1)" label="Copy preconfigurated Keymaps" visible=""/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=18&amp;value=2)" label="Copy preconfigurated samba.conf" visible="System.HasAddon(service.openelec.settings)"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=18&amp;value=3)" label="Copy preconfigurated settings.xml for service.openelec.settings" visible="System.HasAddon(service.openelec.settings)"/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=19)" label="advancedSettings.xml" visible="false"/>
 	</category>
 	
