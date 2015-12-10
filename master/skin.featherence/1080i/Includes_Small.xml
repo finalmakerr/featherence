@@ -632,8 +632,8 @@
 	<itemgap>10</itemgap>
 	<align>left</align>
 	<orientation>horizontal</orientation>
-	<posx>70</posx>
-	<posy>2</posy>
+	<posx>100</posx>
+	<posy>7</posy>
 	<visible>!Player.HasVideo + !IsEmpty(ListItem.VideoResolution) + !IsEmpty(ListItem.VideoCodec)</visible>
 	<control type="image">
 	  <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>

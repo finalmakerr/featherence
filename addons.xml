@@ -23,6 +23,27 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.featherence.gopro" version="0.1.0" name="Featherence GoPro" provider-name="finalmakerr">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube" version="5.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>he, en</language>
+	<platform>all</platform>
+	<summary lang="en">Watch sport extreme videos.</summary>
+	<summary lang="he">צפה בסרטוני ספורט אקסטרים.</summary>
+    <description lang="en"></description>
+	<description lang="he"></description>
+    <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+	<email>finalmakerr@gmail.com</email>
+	<website></website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.1.0" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

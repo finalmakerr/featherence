@@ -758,7 +758,7 @@ def bash_count(path_, level=0):
 	return folders_count, subdir_count, files_count
 
 def CleanString(output, filter=[]):
-	name = 'CleanString' ; output0 = str(output) ; output1 = "" ; output2 = "" ; output3 = ""
+	name = 'CleanString' ; output0 = str(output) ; output1 = "" ; output2 = "" ; output3 = "" ; printpoint = ""
 	
 	if filter != []:
 		
@@ -2117,7 +2117,7 @@ def write_to_file(path, content, append=False, silent=True , utf8=False):
 
 	
 def read_from_file(infile, silent=True, lines=False, retry=True, createlist=True, printpoint="", addlines=""):
-	name = 'read_from_file' ; printpoint = "" ; returned = "" ; TypeError = "" ; extra = "" ; l = [] ; l2 = "" ; lcount = 0
+	name = 'read_from_file' ; returned = "" ; TypeError = "" ; extra = "" ; l = [] ; l2 = "" ; lcount = 0
 	try:
 		if os.path.exists(infile):
 			printpoint = printpoint + "1"

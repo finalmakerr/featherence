@@ -949,7 +949,7 @@
 	   <control type="image" id="193" description="מקומי">
 		 <texture colordiffuse="ffffe135">misc/dvdcases/dvdcases3.png</texture>
 		 <visible>[IntegerGreaterThan(ListItem.Size,10) | !IsEmpty(ListItem.VideoResolution) | !IsEmpty(ListItem.VideoCodec)] | Window.IsVisible(DialogFullScreenInfo.xml) + [IntegerGreaterThan(VideoPlayer.Size,10)]</visible>
-		 <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
+		 <visible>!SubString(ListItem.path,videodb://movies/sets/) + !SubString(ListItem.Path,plugin://)</visible>
 	   </control>
 	   <control type="image" id="190" description="רגיל">
 		 <texture>misc/dvdcases/dvdcases.png</texture>

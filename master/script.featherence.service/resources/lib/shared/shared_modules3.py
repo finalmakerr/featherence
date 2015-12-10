@@ -573,7 +573,9 @@ def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
 					'''---------------------------'''
 				elif "&youtube_ch=" in x:
 					#i2 += 1
-					x = x.replace("&youtube_ch=","")
+					#x = x.replace("&youtube_ch=","")
+					try: finalurlL, numOfItems2 = youtube_pl_to_youtube_id(x, playlist)
+					except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
 					#finalurl="plugin://plugin.video.youtube/play/?playlist_id="+x+""
 					'''---------------------------'''
 				elif "&youtube_pl=" in x:
@@ -653,7 +655,7 @@ def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
 				
 			elif mode == 6:
 				#try:
-				finalurl, name, iconimage, desc = getAPIdata(x, name, iconimage, desc)
+				finalurl, id, name, iconimage, desc = getAPIdata(x, name, iconimage, desc)
 							
 				#except: pass
 				
@@ -663,7 +665,7 @@ def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
 					'''---------------------------'''
 				elif "&youtube_ch=" in x:
 					x = x.replace("&youtube_ch=","")
-					if "/playlists" in x: pass
+					if "/playlists" in x: x = x.replace("/playlists","")
 					addDir(str(i) + '.' + space + name + space + name2, x, 9, iconimage, desc, num, viewtype) #addonString(192).encode('utf-8')
 					'''---------------------------'''
 				elif "&youtube_pl=" in x:
@@ -767,73 +769,75 @@ def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
 		
 def getAPIdata(x, name, iconimage, desc):
 	printpoint = "" ; TypeError = "" ; extra = ""
-	finalurl = "" ; url = "" ; prms = ""
+	finalurl = "" ; url = "" ; prms = "" ; id = ""
 	try:
 		#if 1 + 1 == 2:
-		if '&youtube_' in x:
-			if '&youtube_pl=' in x:
-				x2 = x.replace('&youtube_pl=',"")
-				url = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId='+x2+'&key=AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4&part=snippet&maxResults=40&pageToken='
+		if '&youtube_pl=' in x:
+			x2 = x.replace('&youtube_pl=',"")
+			url = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId='+x2+'&key='+featherenceapi+'&part=snippet&maxResults=40&pageToken='
+		
+		elif '&youtube_ch=' in x:
+			x2 = x.replace('&youtube_ch=',"")
+			url = 'https://www.googleapis.com/youtube/v3/channels?forUsername='+x2+'&key='+featherenceapi+'&part=snippet&maxResults=1'
+			link = OPEN_URL(url)
+			#print 'link__' + space2 + str(link)
+			if '"totalResults": 0' in link or '"items": []' in link:
+				url = 'https://www.googleapis.com/youtube/v3/channels?id='+x2+'&key='+featherenceapi+'&part=snippet&maxResults=1'
 			
+		elif '&youtube_id=' in x:
+			x2 = x.replace('&youtube_id=',"")
+			url = 'https://www.googleapis.com/youtube/v3/videos?id='+x2+'&key='+featherenceapi+'&part=snippet'
+		elif '&youtube_se' in x:
+			x2 = x.replace('&youtube_se=',"")
+			url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+featherenceapi+'&safeSearch=moderate&type=video&part=snippet&maxResults=40&pageToken='
+		elif '&custom_se' in x:
+			x2 = x.replace('&custom_se',"")
+			url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+featherenceapi+'&safeSearch=moderate&type=video&part=snippet&maxResults=1&pageToken='
+		
+		if url != "":
+			link = OPEN_URL(url)
+			prms=json.loads(link)
+			printlog(title='getAPIdata_test1', printpoint=printpoint, text=str(link), level=0, option="")
+			i = 0
+			if '&youtube_pl' in x:
+				id=str(prms['items'][i][u'snippet'][u'resourceId'][u'videoId']) #Video ID (Playlist)
+				#id=str(prms['items'][i][u'snippet'][u'playlistId']) #Video ID (Playlist)
+				if id != "":
+					finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
+					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
+					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
+					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
+					if not 'Deleted video' in name_: name = name_
+					if iconimage_ != "": iconimage = iconimage_
 			elif '&youtube_ch' in x:
-				x2 = x.replace('&youtube_ch=',"")
-				url = 'https://www.googleapis.com/youtube/v3/channels?forUsername='+x2+'&key=AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4&part=snippet&maxResults=1'
-				if '"totalResults": 0' in url:
-					url = 'https://www.googleapis.com/youtube/v3/channels?id='+x2+'&key=AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4&part=snippet&maxResults=1'
-			elif '&youtube_id=' in x:
-				x2 = x.replace('&youtube_id=',"")
-				url = 'https://www.googleapis.com/youtube/v3/videos?id='+x2+'&key=AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4&part=snippet'
+				id=str(prms['items'][i][u'id']) #Video ID (Playlist)
+				#id=str(prms['items'][i][u'snippet'][u'playlistId']) #Video ID (Playlist)
+				if id != "":
+					finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
+					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
+					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
+					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
+					if not 'Deleted video' in name_: name = name_
+					if iconimage_ != "": iconimage = iconimage_
+			elif '&youtube_id' in x:
+				id=str(prms['items'][i][u'id']) #Video ID ()
+				if id != "":
+					finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
+					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
+					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
+					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
+					if not 'Deleted video' in name_: name = name_
+					if iconimage_ != "": iconimage = iconimage_
+					
 			elif '&youtube_se' in x:
-				x2 = x.replace('&youtube_se=',"")
-				url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key=AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4&safeSearch=moderate&type=video&part=snippet&maxResults=40&pageToken='
-			elif '&custom_se' in x:
-				x2 = x.replace('&custom_se',"")
-				url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key=AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4&safeSearch=moderate&type=video&part=snippet&maxResults=1&pageToken='
-			
-			if url != "":
-				link = OPEN_URL(url)
-				prms=json.loads(link)
-				printlog(title='getAPIdata_test1', printpoint=printpoint, text=str(link), level=0, option="")
-				i = 0
-				if '&youtube_pl' in x:
-					id=str(prms['items'][i][u'snippet'][u'resourceId'][u'videoId']) #Video ID (Playlist)
-					#id=str(prms['items'][i][u'snippet'][u'playlistId']) #Video ID (Playlist)
-					if id != "":
-						finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
-						name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
-						iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
-						desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
-						if not 'Deleted video' in name_: name = name_
-						if iconimage_ != "": iconimage = iconimage_
-				elif '&youtube_ch' in x:
-					id=str(prms['items'][i][u'id']) #Video ID (Playlist)
-					#id=str(prms['items'][i][u'snippet'][u'playlistId']) #Video ID (Playlist)
-					if id != "":
-						finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
-						name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
-						iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
-						desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
-						if not 'Deleted video' in name_: name = name_
-						if iconimage_ != "": iconimage = iconimage_
-				elif '&youtube_id' in x:
-					id=str(prms['items'][i][u'id']) #Video ID ()
-					if id != "":
-						finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
-						name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
-						iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
-						desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
-						if not 'Deleted video' in name_: name = name_
-						if iconimage_ != "": iconimage = iconimage_
-						
-				elif '&youtube_se' in x:
-					id=str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)
-					if id != "":
-						finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
-						name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
-						iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
-						desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
-						if not 'Deleted video' in name_: name = name_
-						if iconimage_ != "": iconimage = iconimage_
+				id=str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)
+				if id != "":
+					finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
+					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
+					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
+					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
+					if not 'Deleted video' in name_: name = name_
+					if iconimage_ != "": iconimage = iconimage_
 				
 				
 				
@@ -847,7 +851,7 @@ def getAPIdata(x, name, iconimage, desc):
 	'desc' + space2 + str(desc) + extra
 	
 	printlog(title="getAPIdata", printpoint=printpoint, text=text, level=0, option="")
-	return str(finalurl), str(name), str(iconimage), str(desc)
+	return str(finalurl), str(id), str(name), str(iconimage), str(desc)
 	
 def PlayPlayList(playlistid):
 	printpoint = ""
@@ -1867,10 +1871,12 @@ def youtube_pl_to_youtube_id(x, playlist=[]):
 	if "&youtube_pl=" in x:
 		printpoint = printpoint + "1"
 		x = x.replace("&youtube_pl=","")
+		url = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId='+x+'&key='+featherenceapi+'&part=snippet&maxResults=40&pageToken='
 	elif "&youtube_se=" in x:
 		printpoint = printpoint + "2"
 		x = x.replace("&youtube_se=","")
 		x = clean_commonsearch(x)
+		url = 'https://www.googleapis.com/youtube/v3/search?q='+x+'&key='+featherenceapi+'&safeSearch=moderate&type=video&part=snippet&maxResults=40&pageToken='
 	elif "&custom_se=" in x:
 		text = 'xxx' + space2 + str(x)
 		printlog(title='youtube_pl_to_youtube_id_test1', printpoint=printpoint, text=text, level=0, option="")
@@ -1878,22 +1884,15 @@ def youtube_pl_to_youtube_id(x, playlist=[]):
 		x = x.replace("&custom_se=","")
 		x = clean_commonsearch(x)
 		#print "qwewqeqwe" + x
-		
-	
-	if "1" in printpoint: url = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId='+x+'&key=AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4&part=snippet&maxResults=40&pageToken='
-	elif "2" in printpoint:
-		url = 'https://www.googleapis.com/youtube/v3/search?q='+x+'&key=AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4&safeSearch=moderate&type=video&part=snippet&maxResults=40&pageToken='
-		#url = url.decode('utf-8')
-	elif "3" in printpoint:
 		pagesize = 1
-		url = 'https://www.googleapis.com/youtube/v3/search?q='+x+'&key=AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4&safeSearch=moderate&type=video&part=snippet&maxResults=1&pageToken='
-		#url = url.decode('utf-8')
+		url = 'https://www.googleapis.com/youtube/v3/search?q='+x+'&key='+featherenceapi+'&safeSearch=moderate&type=video&part=snippet&maxResults=1&pageToken='
+	elif "&youtube_ch=" in x:
+		printpoint = printpoint + "4"
+		finalurl, id, name, iconimage, desc = getAPIdata(x, "", "", "")
+		x = x.replace("&youtube_ch=","")
+		url = 'https://www.googleapis.com/youtube/v3/search?channelId='+id+'&key='+featherenceapi+'&part=snippet&maxResults=40'
 	else: printpoint = printpoint + "8"
-	if admin and 1 + 1 == 2:
-		pass
-		#print "123test" + space2 + str(x)
-		#print "123test" + space2 + str(url) + newline
-		
+	
 	link = OPEN_URL(url)
 	prms=json.loads(link)
 	text = "url" + space2 + str(url) + newline + \
@@ -1913,7 +1912,7 @@ def youtube_pl_to_youtube_id(x, playlist=[]):
 			#print "i" + space2 + str(i) + space + "duplicates__" + space2 + str(duplicates__) + "totalResults" + space2 + str(totalResults)
 			id = "" ; finalurl = ""
 			if "1" in printpoint: id=str(prms['items'][i][u'snippet'][u'resourceId'][u'videoId']) #Video ID (Playlist)
-			elif "2" in printpoint or "3" in printpoint: id=str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)
+			elif "2" in printpoint or "3" in printpoint or '4' in printpoint: id=str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)
 
 			if id != "":
 				finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
@@ -1959,7 +1958,6 @@ def youtube_pl_to_youtube_id(x, playlist=[]):
 	nextpage = page + 1
 	
 	#if totalpages > page: addDir('[COLOR=Yellow]' + localize(33078) + '[/COLOR]',x,13,"special://skin/media/DefaultVideo2.png",str79528.encode('utf-8'),str(nextpage),50) #Next Page
-
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''

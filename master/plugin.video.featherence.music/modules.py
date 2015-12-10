@@ -16,7 +16,7 @@ def CATEGORIES():
 	'''---------------------------'''
 	
 	'''---------------------------'''
-	if admin: addDir(addonString(118).encode('utf-8'),'',118,featherenceserviceicons_path + 'classical.png',addonString(1180).encode('utf-8'),'1',50, getAddonFanart(118)) #Classical Music
+	#addDir(addonString(118).encode('utf-8'),'',118,featherenceserviceicons_path + 'classical.png',addonString(1180).encode('utf-8'),'1',50, getAddonFanart(118)) #Classical Music
 	addDir(addonString(119).encode('utf-8'),'',119,featherenceserviceicons_path + 'radio.png',addonString(1190).encode('utf-8'),'1',50, getAddonFanart(119)) #Radio
 	
 def CATEGORIES100(admin):
@@ -49,7 +49,7 @@ def CATEGORIES100(admin):
 	'''רשימת השמעה 10'''
 	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',50, getAddonFanart("Custom_Playlist10"))
 	
-	if Custom_10001 == "true": addDir(addonString(10001).encode('utf-8'),'',10001,'',addonString(100010).encode('utf-8'),'1',58, '') #AMIR ELGAZAR PLAYLISTS
+	if Custom_10001 == "true": addDir(addonString(10001).encode('utf-8'),'',10001,'',addonString(100010).encode('utf-8'),'1',50, '') #AMIR ELGAZAR PLAYLISTS
 
 def CATEGORIES10001(name, iconimage, desc, fanart):
 	'''Easy Listening, Love songs & Bellads'''
@@ -126,14 +126,14 @@ def CATEGORIES101(admin):
 	addDir(addonString(106).encode('utf-8'),'',10106,featherenceserviceicons_path + "music.png",addonString(1060).encode('utf-8'),'1',58, getAddonFanart(10106)) #Mizrahit Music
 	addDir(addonString(107).encode('utf-8'),'',10107,featherenceserviceicons_path + "karaoke.png",addonString(1070).encode('utf-8'),'1',58, getAddonFanart(10107)) #Mizrahit Karaoke
 	addDir(addonString(109).encode('utf-8'),'',10109,featherenceserviceicons_path + "guitar.png",addonString(1090).encode('utf-8'),'1',58, getAddonFanart(10108)) #Mizrahit Liveshows
-	if admin: addDir(addonString(105).encode('utf-8'),'',10105,featherenceserviceicons_path + "microphone.png",addonString(1050).encode('utf-8'),'1',58, getAddonFanart(10105)) #Israeli Djs
+	#addDir(addonString(105).encode('utf-8'),'',10105,featherenceserviceicons_path + "microphone.png",addonString(1050).encode('utf-8'),'1',58, getAddonFanart(10105)) #Israeli Djs
 
 def CATEGORIES111(admin):
 	'''Foreign Music'''
 	addDir(addonString(111).encode('utf-8'),'',11101,featherenceserviceicons_path + "music.png",addonString(1110).encode('utf-8'),'1',58, getAddonFanart(11101)) #Foreign Music
 	addDir(addonString(112).encode('utf-8'),'',11102,featherenceserviceicons_path + "karaoke.png",addonString(1120).encode('utf-8'),'1',58, getAddonFanart(11102)) #Foreign Karaoke
 	addDir(addonString(114).encode('utf-8'),'',11104,featherenceserviceicons_path + "guitar.png",addonString(1140).encode('utf-8'),'1',58, getAddonFanart(11104)) #Foreign Liveshows
-	if admin: addDir(addonString(115).encode('utf-8'),'',11105,featherenceserviceicons_path + "microphone.png",addonString(1150).encode('utf-8'),'1',58, getAddonFanart(11105)) #Foreign Djs
+	#addDir(addonString(115).encode('utf-8'),'',11105,featherenceserviceicons_path + "microphone.png",addonString(1150).encode('utf-8'),'1',58, getAddonFanart(11105)) #Foreign Djs
 
 def CATEGORIES10101(name, iconimage, desc, fanart):
 	'''------------------------------

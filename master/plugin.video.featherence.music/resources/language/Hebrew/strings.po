@@ -1048,6 +1048,406 @@ msgctxt "#10199
 msgid ""
 msgstr ""
 
+msgctxt "#11100
+msgid ""
+msgstr ""
+
+msgctxt "#11101
+msgid "Michael Jackson"
+msgstr "Michael Jackson"
+
+msgctxt "#11102
+msgid "Beyonce"
+msgstr "Beyonce"
+
+msgctxt "#11103
+msgid "Rihanna"
+msgstr "Rihanna"
+
+msgctxt "#11104
+msgid "Taylor Swift"
+msgstr "Taylor Swift"
+
+msgctxt "#11105
+msgid ""
+msgstr ""
+
+msgctxt "#11106
+msgid ""
+msgstr ""
+
+msgctxt "#11107
+msgid ""
+msgstr ""
+
+msgctxt "#11108
+msgid ""
+msgstr ""
+
+msgctxt "#11109
+msgid ""
+msgstr ""
+
+msgctxt "#11110
+msgid "Roy Orbison"
+msgstr "Roy Orbison"
+
+msgctxt "#11111
+msgid "Madonna"
+msgstr "Madonna"
+
+msgctxt "#11112
+msgid ""
+msgstr ""
+
+msgctxt "#11113
+msgid "Mariah Carey"
+msgstr "Mariah Carey"
+
+msgctxt "#11114
+msgid "Whitney Houston"
+msgstr "Whitney Houston"
+
+msgctxt "#11115
+msgid "Usher Raymond"
+msgstr "Usher Raymond"
+
+msgctxt "#11116
+msgid ""
+msgstr ""
+
+msgctxt "#11117
+msgid ""
+msgstr ""
+
+msgctxt "#11118
+msgid "Jennifer Lopez"
+msgstr "Jennifer Lopez"
+
+msgctxt "#11119
+msgid ""
+msgstr ""
+
+msgctxt "#11120
+msgid "Elvis Presley‏"
+msgstr "Elvis Presley"
+
+msgctxt "#11121
+msgid ""
+msgstr ""
+
+msgctxt "#11122
+msgid "Bob Marley"
+msgstr "Bob Marley"
+
+msgctxt "#11123
+msgid "Bob Dylan"
+msgstr "Bob Dylan"
+
+msgctxt "#11124
+msgid "Eric Clapton"
+msgstr "Eric Clapton"
+
+msgctxt "#11125
+msgid "Eric Clapton"
+msgstr "Eric Clapton"
+
+msgctxt "#11126
+msgid "Aretha Franklin"
+msgstr "Aretha Franklin"
+
+msgctxt "#11127
+msgid "Adele"
+msgstr "Adele"
+
+msgctxt "#11128
+msgid "Led zepelin"
+msgstr "Led zepelin"
+
+msgctxt "#11129
+msgid "Coldplay"
+msgstr "Coldplay"
+
+msgctxt "#11130
+msgid "Justin Bieber"
+msgstr "Justin Bieber"
+
+msgctxt "#11131
+msgid "Jean Michel Jarre "
+msgstr "Jean Michel Jarre "
+
+msgctxt "#11132
+msgid ""
+msgstr ""
+
+msgctxt "#11133
+msgid ""
+msgstr ""
+
+msgctxt "#11134
+msgid ""
+msgstr ""
+
+msgctxt "#11135
+msgid ""
+msgstr ""
+
+msgctxt "#11136
+msgid ""
+msgstr ""
+
+msgctxt "#11137
+msgid ""
+msgstr ""
+
+msgctxt "#11138
+msgid ""
+msgstr ""
+
+msgctxt "#11139
+msgid ""
+msgstr ""
+
+msgctxt "#11140
+msgid ""
+msgstr ""
+
+msgctxt "#11141
+msgid ""
+msgstr ""
+
+msgctxt "#11142
+msgid ""
+msgstr ""
+
+msgctxt "#11143
+msgid ""
+msgstr ""
+
+msgctxt "#11144
+msgid ""
+msgstr ""
+
+msgctxt "#11145
+msgid ""
+msgstr ""
+
+msgctxt "#11146
+msgid ""
+msgstr ""
+
+msgctxt "#11147
+msgid ""
+msgstr ""
+
+msgctxt "#11148
+msgid ""
+msgstr ""
+
+msgctxt "#11149
+msgid ""
+msgstr ""
+
+msgctxt "#11150
+msgid "Britney Spears"
+msgstr "Britney Spears"
+
+msgctxt "#11151
+msgid "David Bowie"
+msgstr "David Bowie"
+
+msgctxt "#11152
+msgid "Elton John"
+msgstr "Elton John"
+
+msgctxt "#11153
+msgid ""
+msgstr ""
+
+msgctxt "#11154
+msgid ""
+msgstr ""
+
+msgctxt "#11155
+msgid ""
+msgstr ""
+
+msgctxt "#11156
+msgid ""
+msgstr ""
+
+msgctxt "#11157
+msgid ""
+msgstr ""
+
+msgctxt "#11158
+msgid ""
+msgstr ""
+
+msgctxt "#11159
+msgid ""
+msgstr ""
+
+msgctxt "#11160
+msgid ""
+msgstr ""
+
+msgctxt "#11161
+msgid ""
+msgstr ""
+
+msgctxt "#11162
+msgid ""
+msgstr ""
+
+msgctxt "#11163
+msgid ""
+msgstr ""
+
+msgctxt "#11164
+msgid ""
+msgstr ""
+
+msgctxt "#11165
+msgid ""
+msgstr ""
+
+msgctxt "#11166
+msgid ""
+msgstr ""
+
+msgctxt "#11167
+msgid ""
+msgstr ""
+
+msgctxt "#11168
+msgid ""
+msgstr ""
+
+msgctxt "#11169
+msgid ""
+msgstr ""
+
+msgctxt "#11170
+msgid ""
+msgstr ""
+
+msgctxt "#11171
+msgid ""
+msgstr ""
+
+msgctxt "#11172
+msgid ""
+msgstr ""
+
+msgctxt "#11173
+msgid ""
+msgstr ""
+
+msgctxt "#11174
+msgid ""
+msgstr ""
+
+msgctxt "#11175
+msgid ""
+msgstr ""
+
+msgctxt "#11176
+msgid ""
+msgstr ""
+
+msgctxt "#11177
+msgid ""
+msgstr ""
+
+msgctxt "#11178
+msgid ""
+msgstr ""
+
+msgctxt "#11179
+msgid ""
+msgstr ""
+
+msgctxt "#11180
+msgid ""
+msgstr ""
+
+msgctxt "#11181
+msgid ""
+msgstr ""
+
+msgctxt "#11182
+msgid ""
+msgstr ""
+
+msgctxt "#11183
+msgid ""
+msgstr ""
+
+msgctxt "#11184
+msgid ""
+msgstr ""
+
+msgctxt "#11185
+msgid ""
+msgstr ""
+
+msgctxt "#11186
+msgid ""
+msgstr ""
+
+msgctxt "#11187
+msgid ""
+msgstr ""
+
+msgctxt "#11188
+msgid ""
+msgstr ""
+
+msgctxt "#11189
+msgid ""
+msgstr ""
+
+msgctxt "#11190
+msgid ""
+msgstr ""
+
+msgctxt "#11191
+msgid ""
+msgstr ""
+
+msgctxt "#11192
+msgid ""
+msgstr ""
+
+msgctxt "#11193
+msgid ""
+msgstr ""
+
+msgctxt "#11194
+msgid ""
+msgstr ""
+
+msgctxt "#11195
+msgid ""
+msgstr ""
+
+msgctxt "#11196
+msgid ""
+msgstr ""
+
+msgctxt "#11197
+msgid ""
+msgstr ""
+
+msgctxt "#11198
+msgid ""
+msgstr ""
+
+msgctxt "#11199
+msgid ""
+msgstr ""
+
 msgctxt "#100000
 msgid ""
 msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"

@@ -4,8 +4,6 @@
 		<setting type="lsep" label=""/>
 		<setting type="lsep" label="Please note: AutoView is currently support only Featherence Skin!"/>
 		<setting id="General_AutoView" type="bool" default="true" label="$ADDON[script.featherence.service 20]" visible="true"/>
-		<setting id="General_PageSize" type="text" default="18" label="General_PageSize" visible="false"/>
-		<setting id="General_OnlyPopular" type="bool" default="false" label="27" visible="false"/>
 		<setting type="lsep" label="28" visible="eq(-1,true)"/>
 		<setting id="General_TVModeDialog" type="bool" default="true" label="$ADDON[script.featherence.service 16]" visible="true"/>
 		<setting id="General_TVModeShuffle" type="bool" default="true" label="$ADDON[script.featherence.service 17]" visible="eq(-1,true)"/>

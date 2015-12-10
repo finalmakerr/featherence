@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+
+msgctxt "#1
+msgid ""
+msgstr ""
+
+msgctxt "#2
+msgid ""
+msgstr ""
+
+msgctxt "#3
+msgid ""
+msgstr ""
+
+msgctxt "#4
+msgid ""
+msgstr ""
+
+msgctxt "#9
+msgid ""
+msgstr ""
+
+msgctxt "#10
+msgid ""
+msgstr ""
+
+msgctxt "#11
+msgid ""
+msgstr ""
+
+msgctxt "#12
+msgid ""
+msgstr ""
+
+msgctxt "#13
+msgid ""
+msgstr ""
+
+msgctxt "#14
+msgid ""
+msgstr ""
+
+msgctxt "#15
+msgid ""
+msgstr ""
+
+msgctxt "#16
+msgid ""
+msgstr ""
+
+msgctxt "#17
+msgid ""
+msgstr ""
+
+msgctxt "#18
+msgid ""
+msgstr ""
+
+msgctxt "#20
+msgid ""
+msgstr ""
+
+msgctxt "#21
+msgid ""
+msgstr ""
+
+msgctxt "#22
+msgid ""
+msgstr ""
+
+msgctxt "#27
+msgid ""
+msgstr ""
+
+msgctxt "#28
+msgid ""
+msgstr ""
+
+msgctxt "#29
+msgid ""
+msgstr ""
+
+msgctxt "#30
+msgid ""
+msgstr ""
+
+msgctxt "#31
+msgid ""
+msgstr ""
+
+msgctxt "#32
+msgid ""
+msgstr ""
+
+msgctxt "#33
+msgid ""
+msgstr ""
+
+msgctxt "#34
+msgid ""
+msgstr ""
+
+msgctxt "#35
+msgid ""
+msgstr ""
+
+msgctxt "#36
+msgid ""
+msgstr ""
+
+msgctxt "#37
+msgid ""
+msgstr ""
+
+msgctxt "#38
+msgid ""
+msgstr ""
+
+msgctxt "#40
+msgid ""
+msgstr ""
+
+msgctxt "#41
+msgid ""
+msgstr ""
+
+msgctxt "#42
+msgid ""
+msgstr ""
+
+msgctxt "#43
+msgid ""
+msgstr ""
+
+msgctxt "#44
+msgid ""
+msgstr ""
+
+msgctxt "#45
+msgid ""
+msgstr ""
+
+msgctxt "#46
+msgid ""
+msgstr ""
+
+msgctxt "#47
+msgid ""
+msgstr ""
+
+msgctxt "#48
+msgid ""
+msgstr ""
+
+msgctxt "#49
+msgid ""
+msgstr ""
+
+msgctxt "#50
+msgid ""
+msgstr ""
+
+msgctxt "#100
+msgid ""
+msgstr ""
+
+msgctxt "#101
+msgid ""
+msgstr ""
+
+msgctxt "#102
+msgid ""
+msgstr ""
+
+msgctxt "#103
+msgid ""
+msgstr ""
+
+msgctxt "#104
+msgid ""
+msgstr ""
+
+msgctxt "#105
+msgid ""
+msgstr ""
+
+msgctxt "#106
+msgid ""
+msgstr ""
+
+msgctxt "#107
+msgid ""
+msgstr ""
+
+msgctxt "#108
+msgid ""
+msgstr ""
+
+msgctxt "#109
+msgid ""
+msgstr ""

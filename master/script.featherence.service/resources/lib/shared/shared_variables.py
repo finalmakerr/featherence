@@ -565,7 +565,7 @@ libraryisscanningmusic = xbmc.getCondVisibility('Library.IsScanningMusic')
 controlhasfocus698 = ""
 controlhasfocus699 = ""
 
-
+featherenceapi = 'AIzaSyDkNxiwClyCildDbHdDKSWt5BkKQ6LeQqA' #AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4
 
 '''------------------------------
 ---CONTROL-----------------------
