@@ -894,7 +894,7 @@ def CATEGORIES11101(name, iconimage, desc, fanart):
 	
 	'''Adele'''
 	list = []
-	list.append('&youtube_pl=PL2jZGLrfnPrwKpGWByChK2ujJsh8XGT1u')
+	list.append('&youtube_pl=PL2jZGLrfnPrwKpGWByChK2ujJsh8XGT1u&name=TEST POPULAR&')
 	list.append('&youtube_pl=PL9319650950E41B78')
 	list.append('&youtube_pl=PL1C76D5F2FB130533')             
 	list.append('&youtube_pl=PLEEyQEShYtdXMVAiHjpbSAIXRmuaxkiac') 
