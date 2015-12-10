@@ -610,6 +610,79 @@
 				<label>ff30d5c8</label>
 				<label2>turquoise</label2>
 			  </item>
+			  <item id="61" description="brilliant lavender">
+			    <onclick>SetProperty(SelectedColor,fff4bbff, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,brilliant lavender, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/fff4bbff.png</icon>
+				<label>fff4bbff</label>
+				<label2>brilliant lavender</label2>
+			  </item>
+			  
+			  <item id="62" description="white smoke">
+			    <onclick>SetProperty(SelectedColor,fff5f5f5, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,white smoke, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/fff5f5f5.png</icon>
+				<label>fff5f5f5</label>
+				<label2>white smoke</label2>
+			  </item>
+			  <item id="63" description="wine">
+			    <onclick>SetProperty(SelectedColor,ff722f37, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,wine, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/ff722f37.png</icon>
+				<label>ff722f37</label>
+				<label2>wine</label2>
+			  </item>
+			  <item id="64" description="vivid violet">
+			    <onclick>SetProperty(SelectedColor,ff9f00ff, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,vivid violet, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/ff9f00ff.png</icon>
+				<label>ff9f00ff</label>
+				<label2>vivid violet</label2>
+			  </item>
+			  <item id="65" description="vanilla">
+			    <onclick>SetProperty(SelectedColor,fff3e5ab, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,vanilla, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/fff3e5ab.png</icon>
+				<label>fff3e5ab</label>
+				<label2>vanilla</label2>
+			  </item>
+			  <item id="66" description="umber">
+			    <onclick>SetProperty(SelectedColor,ff635147, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,umber, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/ff635147.png</icon>
+				<label>ff635147</label>
+				<label2>umber</label2>
+			  </item>
+			  <item id="67" description="twilight lavender">
+			    <onclick>SetProperty(SelectedColor,ff8a496b, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,twilight lavender, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/ff8a496b.png</icon>
+				<label>ff8a496b</label>
+				<label2>twilight lavender</label2>
+			  </item>
+			  <item id="68" description="tuscan red">
+			    <onclick>SetProperty(SelectedColor,ff66424d, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,tuscan red, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/ff66424d.png</icon>
+				<label>ff66424d</label>
+				<label2>tuscan red</label2>
+			  </item>
+			  <item id="69" description="turquoise green">
+			    <onclick>SetProperty(SelectedColor,ffa0d6b4, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,turquoise green, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/ffa0d6b4.png</icon>
+				<label>ffa0d6b4</label>
+				<label2>turquiose green</label2>
+			  </item>
 			</content>
 		</control>
 		
