@@ -117,6 +117,37 @@ def CATEGORIES101(admin):
 	addDir('natural phenomena and disasters',list,17,'','','1',"", getAddonFanart(background, custom=""))
  
 	
+	'''Animal's'''
+	list = []
+	list.append('&youtube_id=eH1s9GCqPKo')
+	list.append('&youtube_pl=PLNxd9fYeqXeba2Nz4ocWac4hyhJnEACFw')
+	list.append('&youtube_pl=PLNxd9fYeqXeYQpcE7LfadSFjUU4E6inZC')
+	list.append('&youtube_pl=PL_jFbqOSEqaLIYGS0Oz8jTlrB8PaHiwdp')
+	list.append('&youtube_pl=PL66rc6rMkuadKawGwt9pYSq_yVJ1dnsyp')
+	list.append('&youtube_pl=PLpHQQspuhgG7qhHOD1HrWklZg458-LQYj')
+	list.append('&youtube_pl=PL7GQU9nivpYJpnzAhTH1OB3N6BeQipls_')
+	list.append('&youtube_pl=PLd2jr44gFMvBMxFlT0tFxeJqrAYGmpjO1')
+	list.append('&youtube_pl=PLsa65XLFLA2-mxUpttawU8AN1TX0VwKpH')
+	list.append('&youtube_pl=PLvTrLxXekhJrlt2IY3-Paobg5skAXFIMB')
+	list.append('&youtube_pl=PLcOr-eBi9or-I7knKXhhdihMqswzWJ7yo')
+	list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq')
+	list.append('&youtube_pl=PL0GL1wmKQPGgOBIHtvwcP3g51_rWqnwBx')
+	list.append('&youtube_pl=PL0GL1wmKQPGhnl30h5A2OmyR94N1UkDmB')
+	list.append('&youtube_pl=PL0GL1wmKQPGi_eAvRbaBVlae24tVsrGuK')
+	list.append('&youtube_pl=PLpYgp0wW8mmZyLCqY415YbjefiazLBHzJ')
+	list.append('&youtube_ch=UC3c8nDp-i60gB2wTmUeyQAA')
+	list.append('&youtube_pl=PL38WzeWx41gayCgnx5EsqsFAS4lH3XhV5')
+	list.append('&youtube_ch=UCvfH62D48X5Bahu-oroIreQ')
+	list.append('&youtube_pl=PLvTrLxXekhJrUx5QHSfP6hJuIseU2FY2F')
+	list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq')
+	list.append('&youtube_pl=PLoUUkpYUScvJb2li_PY6c9fu_A3IlJKiT')
+	list.append('&youtube_pl=PLWWOl-2iqjMb2UljVPPhQQy6SJJ3E-7gK')
+	list.append('&youtube_pl=PLezpCwYgD_yvNYNXZlDM6z3mpuTQYgjUs')
+	list.append('&youtube_ch=PLHtNpWbpKrdgTnYZDyTKpZNyBStsVyNK-')
+	list.append('&youtube_pl=PLfAToAFYpTfuHlcsmO-hiYcpp1yrrP10y')
+	list.append('&youtube_ch=UCaL6Fn_Exyfe2tzBMI4cHVw')
+	addDir("Animal's",list,17,'','','1',"", getAddonFanart(background, custom=""))
+ 
 	'''Dogtv'''
 	list = []
 	list.append('&youtube_ch=DOGTVWORLD')
@@ -145,6 +176,42 @@ def CATEGORIES101(admin):
 	list.append('&youtube_id=fjNjEREV8j0')
 	addDir('אריות',list,17,'http://www.gocool.co.il/home/safari/marapic/120.jpg','אריה הוא מין של טורף גדול מהסוג פנתר שבמשפחת החתוליים, והוא השני בגודלו במשפחה זו אחרי תת-המין הסיבירי של הטיגריס.','1',"", getAddonFanart(background, custom="http://blogs-images.forbes.com/jimdobson/files/2015/07/tt-editors-picks-2273-man-pays-55-000-to-shoot-kill-cecil-the-lion-large.thumb_.jpg"))
 	
+	
+	'''Plant's'''
+	list = []
+	list.append('&youtube_ch=DOGTVWORLD')
+	list.append('&youtube_id=eH1s9GCqPKo')
+	list.append('&youtube_pl=PLgKYsEYF9_QCxM_29RC6euEJLvaHFOdrJ')
+	list.append('&youtube_pl=PLs7Y2nGwfz4FL4ZJgONHsl1qp-AZPr3tJ')
+	list.append('&youtube_pl=PLh8cmtKf7uVnEKm-YiByTebR3bdyOV_XV')
+	list.append('&youtube_pl=PL7fxIatI1SNjeZZ8yzoyKX2b3LihqLJzs')
+	list.append('&youtube_pl=PLolk0MpPk5HYNPHfb3tnSh6gSDjuGIPIv')
+	list.append('&youtube_pl=PLFSXLuczIM61o8GJ_kA9UoXbbIsLXD5hS')
+	list.append('&youtube_pl=PLYpOT73IUzMkKNkgQS-uGOISuOS207BL-')
+	addDir("Plant's",list,17,'','','1',"", getAddonFanart(background, custom=""))
+ 
+ 
+	'''natural places'''
+	list = []
+	list.append('&youtube_id=gWOeZ54JoO0')
+	list.append('&youtube_id=w7AFRg7-hrA')
+	list.append('&youtube_id=1DaFRA28C9o')
+	list.append('&youtube_id=-qzIUbI_SME')
+	list.append('&youtube_id=wX7ehYPWBtk')
+	list.append('&youtube_id=3aY9Se-J2ww')
+	list.append('&youtube_id=QfmRf8iOBkI')
+	list.append('&youtube_pl=PL84lwJwmw23BiBnJwzzX1uuuHg5LM8F4A')
+	list.append('&youtube_pl=3KRTfKZfIp0&list=PLmoUtGEFm50dTvd_VwML9_sEVJAQ7t2xj')
+	list.append('&youtube_pl=PL5P2pncIQpzCuoGHCF_PCudmHZ4wdUIEo')
+	list.append('&youtube_pl=PLdr2r9KsuBiteyDIaV_I8sb6kZCscO4kM')
+	list.append('&youtube_pl=PL9HOq0cGCaCQKoh6dWz1N3s9_H7HjxA5o')
+	list.append('&youtube_pl=PLxD46bIwUSnGBok3QJzd1PY6WkSiYfgKB')
+	list.append('&youtube_pl=PL0pF26S5a5KD1NcL1zbMrlV7qqj4ro6iw')
+	list.append('&youtube_pl=PL8rWKwqFW1l0opYCffj6A4EPi0kgobTuz')
+	list.append('&youtube_pl=PLR1CNcQmgvMlowMRAo2SjCLBKzibJq0Y5')
+	list.append('&youtube_pl=PLql7ZywaMwm2ugmP5-rIjUOvly5kqBV7J')
+	addDir('natural places',list,17,'','','1',"", getAddonFanart(background, custom=""))
+ 
 	'''World's Deadliest-החיות הקטלניות בעולם'''
 	list = []
 	list.append('&youtube_pl=PLNxd9fYeqXeba2Nz4ocWac4hyhJnEACFw')
@@ -547,6 +614,106 @@ def CATEGORIES108(admin):
 
 	'''ערוץ הגיון ומדע'''
 	addDir('ערוץ הגיון ומדע','ScienceReasonIsrael',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''חיות בספארי'''
+	list = []
+	list.append('&youtube_pl=PL43AC3544C5E17BEF')
+	addDir('חיות בספארי',list,17,'','','1',"", getAddonFanart(background, custom=""))
+
+	
+	'''חיות פראיות '''
+	list = []
+	list.append('&youtube_id=81Vh9FriKfc')
+	list.append('&youtube_pl=PLB781B8A94339CC67')
+	list.append('&youtube_id=RqLn1vCQVMo')
+	list.append('&youtube_id=fTTsZ1OGZV8')
+	list.append('&youtube_id=hqnv8qVOqLY')
+	list.append('&youtube_id=9GdWNAXvd0g')
+	list.append('&youtube_id=uhDjEYmF-oo')
+	list.append('&youtube_pl=PL2l4T5NjtOsrGnFacKHUc1m7F1Kojuisq')
+	list.append('&youtube_id=bI85XpkVTHg')
+	addDir('חיות פראיות ',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''קטנטנים בטבע'''
+	list = []
+	list.append('&youtube_id=J1JIHh1ZEf0')
+	addDir('קטנטנים בטבע',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''בעלי חיים לילדים ופעוטות'''
+	list = []
+	list.append('&youtube_id=QcANPfq5V7g')
+	addDir('בעלי חיים לילדים ופעוטות',list,17,'','','1',"", getAddonFanart(background, custom=""))
+		
+	'''גלילאו '''
+	list = []
+	list.append('&youtube_pl=PL01DA343E8BB95D12')
+	list.append('&youtube_pl=PLeZqOp-eE-FpvoWCBK-G5Wr1y_VA5Y4ih')
+	list.append('&youtube_pl=PLeZqOp-eE-FqJOAKrN7YN6aE8IsKxPqSZ&index=2')
+	list.append('&youtube_pl=PL104313B485ECC1DB')
+	list.append('&youtube_id=9Oyiis9B6pU')
+	list.append('&youtube_id=sVXFm5lOqy8')
+	list.append('&youtube_id=ku8mNNCrEys')
+	list.append('&youtube_id=P5KW_r2Uu1c')
+	addDir('גלילאו',list,17,'','','1',"", getAddonFanart(background, custom=""))
+		
+	'''היה היה'''
+	list = []
+	list.append('&youtube_pl=PLF487E714444A3272')
+	list.append('&youtube_pl=PL2E6FC61CB0B4C510')
+	list.append('&youtube_pl=PLEB6F71190B2A83D1')
+	list.append('&youtube_pl=PL19F750D7137E32A2')
+	list.append('youtube_id=TLT7tM6ZxLc')
+	addDir('היה היה',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''עולם החיות של הופ'''
+	list = []
+	list.append('&youtube_id=l3fXEyLWCzI')
+	addDir('עולם החיות של הופ',list,17,'','','1',"", getAddonFanart(background, custom=""))
+			
+	
+	'''החפרנים'''
+	list = []
+	list.append('&youtube_pl=PL51YAgTlfPj6PWe7kECdyz6ToCjcmSd6z')
+	list.append('&youtube_pl=PLth1a195qHsi9fsrgjDzYTzqKSOF-Ky-N')
+	addDir('החפרנים',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''להיות מדען עם פרופסור דן'''
+	list = []
+	list.append('&youtube_pl=PL51YAgTlfPj4oR5aIC0Ru5JZA1a1TT-RN')
+	addDir('להיות מדען עם פרופסור דן',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''מה זה מוזה'''
+	list = []
+	list.append('&youtube_pl=PL51YAgTlfPj4F8EkY07BfV1KhdjmtjX0P')
+	addDir('מה זה מוזה',list,17,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''מה זה מוזה במעבדה'''
+	list = []
+	list.append('&youtube_pl=PL51YAgTlfPj59VvVLjLaAiGbFjbqv7sh3')
+	addDir('דוקו קירשנבאום -קוסטה ריקה',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''2מה זה מוזה במעבדה'''
+	list = []
+	list.append('&youtube_pl=PLth1a195qHsj20lXv4QqTQ7kb2RLoGxY8')
+	addDir( '2מה זה מוזה במעבדה ',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''שירים לילדים בנושא חיות'''
+	list = []
+	list.append('&youtube_id=jMIELC0KFs4')
+	addDir('שירים לילדים בנושא חיות',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''חיות בערוץ לולי'''
+	list = []
+	list.append('&youtube_pl=PLTleo-h9TFqI2CFuWeFA-Q2Bu3BBHdXqv')
+	addDir('חיות בערוץ לולי',list,17,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''לולי אוהב חיות'''
+	list = []
+	list.append('&youtube_id=gO9hyX4s1ko')
+	addDir('לולי אוהב חיות',list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
 	addon = 'plugin.video.seretil'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
