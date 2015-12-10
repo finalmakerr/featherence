@@ -205,23 +205,8 @@ if xbmc.getSkinDir() == 'skin.featherence':
 	'''------------------------------
 	---SKIN-STRINGS------------------
 	------------------------------'''
-	customvar = xbmc.getInfoLabel('Skin.String(General_CustomVAR)')
 	customsettingtemp = xbmc.getInfoLabel('Skin.String(Custom_Setting_Temp)') #TEMP
-	
-listitemtvshowtitlestr = xbmc.getInfoLabel('Skin.String(ListItemTVShowTitle)')
-listitemgenrestr = xbmc.getInfoLabel('Skin.String(ListItemGenre)')
-listitemdurationstr = xbmc.getInfoLabel('Skin.String(ListItemDuration)')
-listitemratingstr = xbmc.getInfoLabel('Skin.String(ListItemRating)')
-listitemyearstr = xbmc.getInfoLabel('Skin.String(ListItemYear)')
 
-settingslevel = xbmc.getInfoLabel('Skin.String(SettingsLevel)')
-tvshowsestartup = xbmc.getInfoLabel('Skin.String(tvshowsestartup)')
-varcurrentpicvidpath = xbmc.getInfoLabel('Skin.String(VarCurrentPicVidPath)')
-usb1str = xbmc.getInfoLabel('Skin.String(USB1)')
-usb2str = xbmc.getInfoLabel('Skin.String(USB2)')
-usb3str = xbmc.getInfoLabel('Skin.String(USB3)')
-usb4str = xbmc.getInfoLabel('Skin.String(USB4)')
-usb5str = xbmc.getInfoLabel('Skin.String(USB5)')
 '''---------------------------'''
 overclocklevel = xbmc.getInfoLabel('Skin.String(OverClockLevel)')
 countrystr = xbmc.getInfoLabel('Skin.String(Country)')

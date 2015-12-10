@@ -108,7 +108,6 @@
         <width>1020</width>
         <align>left</align>
         <textoffsetx>20</textoffsetx>
-		<include>ButtonC2</include>		
         <onup>10</onup>
         <onleft>18</onleft>
         <onright>19</onright>

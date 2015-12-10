@@ -1,5 +1,3 @@
-#import xbmc, os, subprocess, sys
-#import xbmc, xbmcgui, xbmcaddon
 import xbmc, xbmcgui, xbmcaddon
 import subprocess, os, sys
 import xbmcplugin

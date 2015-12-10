@@ -1,15 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="2002">
-  
-  <type>dialog</type>
+<window type="dialog" id="2002">
   <defaultcontrol always="true">10</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <onunload condition="Skin.String(CustomVAR)">Skin.SetString(CustomVAR,)</onunload>
   <onunload condition="Window.IsVisible(Startup.xml)">Control.SetFocus(8)</onunload>
   <onload condition="Window.IsVisible(Startup.xml)">Dialog.Close(okdialog)</onload>
-  <onload condition="Window.IsVisible(Startup.xml) + SubString(Control.GetLabel(1),IsraeLIVE)">Dialog.Close(okdialog)</onload>
-  <!--<onload description="לא מופעלת הרחבת טלוויזיה חיה" condition="Window.IsVisible(Startup.xml) + [[!Skin.HasSetting(Connected) + !Skin.HasSetting(Connected2) + !Skin.HasSetting(Connected3)] | SubString(Control.GetLabel(1),IsraeLIVE) | SubString(Control.GetLabel(1),19240)]">SendClick(10)</onload>-->
-  
   <controls>
     <include>MenuDesign_Bottom</include>
   </controls>

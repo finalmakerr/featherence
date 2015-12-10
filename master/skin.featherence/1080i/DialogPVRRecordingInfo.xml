@@ -5,7 +5,7 @@
   <control type="group">
       <posx>400</posx>
       <posy>290</posy>
-<include>PVRinfos</include>
+	  <include>PVRinfos</include>
       <control type="grouplist" id="9000">
         <posx>40</posx>
         <posy>460</posy>

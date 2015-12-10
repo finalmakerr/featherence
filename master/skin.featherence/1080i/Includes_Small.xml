@@ -299,7 +299,6 @@
 		<width>1920</width>
 		<include>Slide2.1</include>
 		<include>Slide2.1f</include>
-		
 		<texture background="true">$VAR[fanart]</texture>
 		<aspectratio align="top">stretch</aspectratio>
 		<visible>!IsEmpty(Control.GetLabel(70130))</visible>
@@ -540,7 +539,7 @@
 	  <onfocus description="seasons-Side List" condition="Skin.String(AutoView.seasons,$LOCALIZE[31011]) + !StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
 	  <onfocus description="seasons-Small List" condition="[Skin.String(AutoView.seasons,$LOCALIZE[31012]) | !Skin.String(AutoView.seasons)] + !StringCompare(Container.Viewmode,$LOCALIZE[31012]) + !Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(56),0,silent)</onfocus>
 	  <onfocus description="seasons-Line" condition="Skin.String(AutoView.seasons,$LOCALIZE[31015]) + !StringCompare(Container.Viewmode,$LOCALIZE[31015]) + !Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
-	  <onfocus description="seasons-Wall" condition="Skin.String(AutoView.seasons,$LOCALIZE[31013]) | + !StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
+	  <onfocus description="seasons-Wall" condition="Skin.String(AutoView.seasons,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
 	  <onfocus description="seasons-Poster" condition="Skin.String(AutoView.seasons,$LOCALIZE[31014]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014]) + !Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
 	  
 	  <onfocus description="episodes-Center List" condition="Skin.String(AutoView.episodes,$LOCALIZE[31010]) + !StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
@@ -739,7 +738,7 @@
 	<control type="group" description="מצב ספרייה">
 	  <visible>Control.IsVisible(60)</visible>
 	  <visible>!Control.IsVisible(54)</visible>
-	  <visible>IntegerGreaterThan(Container.NumPages,2)</visible>
+	  <visible>IntegerGreaterThan(Container.NumPages,2) | Window.IsVisible(FileBrowser.xml)</visible>
 	  <height>880</height>
 	  <width>20</width>
 	  <posx>10r</posx>

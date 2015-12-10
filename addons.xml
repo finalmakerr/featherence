@@ -17,9 +17,9 @@
 	<description lang="he"></description>
     <disclaimer lang="en"></disclaimer>
 	<forum></forum>
+	<email>featherence@groups.facebook.com</email>
 	<source></source>
-	<email>finalmakerr@gmail.com</email>
-	<website></website>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
@@ -39,8 +39,10 @@
     <description lang="en"></description>
 	<description lang="he"></description>
     <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	<email>finalmakerr@gmail.com</email>
-	<website></website>
+	<email>featherence@groups.facebook.com</email>
+	<forum></forum>
+	<source></source>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
@@ -61,9 +63,9 @@
 	<description lang="he"></description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<forum></forum>
+	<email>featherence@groups.facebook.com</email>
 	<source></source>
-	<email>finalmakerr@gmail.com</email>
-	<website></website>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
@@ -84,9 +86,9 @@
 	<description lang="he"></description>
     <disclaimer lang="en"></disclaimer>
 	<forum></forum>
+	<email>featherence@groups.facebook.com</email>
 	<source></source>
-	<email>finalmakerr@gmail.com</email>
-	<website></website>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
@@ -97,13 +99,18 @@
 		<datadir zip="true">https://raw.githubusercontent.com/finalmakerr/featherence/master/</datadir>
     </extension>
 	<extension point="xbmc.addon.metadata">
+		<language>he en</language>
+		<platform>all</platform>
 		<summary lang="en"></summary>
 		<description lang="en">Get frequently updates from Featherence team</description>
-		<platform>all</platform>
+		<email>featherence@groups.facebook.com</email>
+		<forum></forum>
+		<source>https://github.com/finalmakerr/featherence/tree/master/master/skin.featherence/1080i</source>
+		<website>https://www.facebook.com/groups/featherence/</website>
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="featherence Service" version="0.1.0" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="featherence Service" version="0.1.1" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
 	<import addon="xbmc.json" version="6.0.0"/>
@@ -120,14 +127,14 @@
     <description lang="en"></description>
 	<description lang="he"></description>
     <disclaimer></disclaimer>
-	<email>finalmakerr@gmail.com</email>
+	<email>featherence@groups.facebook.com</email>
 	<forum></forum>
 	<source></source>
-	<website></website>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
-<addon id="skin.featherence" version="0.1.0" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.1.1" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
 	<import addon="repository.featherence" version="1.1.0" />
@@ -144,10 +151,10 @@
     <description lang="en"></description>
 	<description lang="he"></description>
     <disclaimer></disclaimer>
-	<email>finalmakerr@gmail.com</email>
+	<email>featherence@groups.facebook.com</email>
 	<forum></forum>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/skin.featherence/1080i</source>
-	<website></website>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 </addons>

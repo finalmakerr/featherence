@@ -2,13 +2,6 @@
 <window description="פרטי וידאו (12003)">
   <defaultcontrol always="true">22</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  
-  <onload condition="Skin.HasSetting(Admin)">Notification($INFO[ListItem.Label]),,3000)</onload>
-  <onload condition="!IsEmpty(ListItem.TVShowTitle) + !IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)">Skin.SetString(DialogSelectSources3,$INFO[ListItem.TVShowTitle] S0$INFO[ListItem.Season] E0$INFO[ListItem.Episode])</onload>
-  <onload condition="!IsEmpty(ListItem.TVShowTitle) + !IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)">Skin.SetString(DialogSelectSources3,$INFO[ListItem.TVShowTitle] S0$INFO[ListItem.Season] E$INFO[ListItem.Episode])</onload>
-  <onload condition="!IsEmpty(ListItem.TVShowTitle) + IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)">Skin.SetString(DialogSelectSources3,$INFO[ListItem.TVShowTitle] S$INFO[ListItem.Season] E0$INFO[ListItem.Episode])</onload>
-  <onload condition="!IsEmpty(ListItem.TVShowTitle) + IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)">Skin.SetString(DialogSelectSources3,$INFO[ListItem.TVShowTitle] S$INFO[ListItem.Season] E$INFO[ListItem.Episode])</onload>
-  <onload condition="!IsEmpty(ListItem.Year) + IsEmpty(ListItem.TVShowTitle)">Skin.SetString(DialogSelectSources3,$INFO[ListItem.Title])</onload>
   <onunload condition="!IsEmpty(Window(home).Property(TEMP))">ClearProperty(TEMP,home)</onunload>
   <controls>
     <include>BlackBackground</include>
@@ -102,8 +95,6 @@
 			<texturefocus colordiffuse="$VAR[IconFocusColor]">special://home/addons/script.featherence.service/resources/icons/trailers.png</texturefocus>
             <texturenofocus colordiffuse="ffa9a9a9">special://home/addons/script.featherence.service/resources/icons/trailers.png</texturenofocus>
 			<enable>!IsEmpty(ListItem.Trailer)</enable>
-			<onclick>Skin.SetString(General_CustomVAR,12)</onclick>
-			<onclick>Skin.SetString(DialogSelectSources3,$INFO[ListItem.Title]) ($INFO[ListItem.Year])</onclick>
 			<onclick condition="!Skin.HasSetting(trailer2)">PlayMedia($ESCINFO[ListItem.Trailer],1)</onclick>
 			<onclick condition="Skin.HasSetting(trailer2)">PlayMedia($ESCINFO[ListItem.Trailer])</onclick>
 			<onclick>Close</onclick>

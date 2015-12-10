@@ -68,6 +68,15 @@ def CATEGORIES101(admin):
 	list = []
 	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
 	
+	'''בעלי חיים'''
+	addDir(addonString(10101),'',10101,'',addonString(101010),'1',"", getAddonFanart(10101))
+	
+	'''צומח'''
+	addDir(addonString(10102),'',10102,'',addonString(101020),'1',"", getAddonFanart(10102))
+	
+	'''מקומות'''
+	addDir(addonString(10103),'',10103,'',addonString(101030),'1',"", getAddonFanart(10103))
+	
 	'''BBC Earth channel'''
 	addDir('BBC Earth','BBCEarth',9,'','','1',"", getAddonFanart(background, custom=""))
 
@@ -232,7 +241,20 @@ def CATEGORIES101(admin):
 	list.append('&youtube_pl=PLql7ZywaMwm2ugmP5-rIjUOvly5kqBV7J')
 	addDir('Nat Geo Wild HD Islands',list,17,'','','1',"", getAddonFanart(background, custom=""))
 
+def CATEGORIES10101(name, iconimage, desc, fanart):
+	'''------------------------------
+	---NATURE-ANIMALS----------------
+	------------------------------'''
 	
+def CATEGORIES10102(name, iconimage, desc, fanart):
+	'''------------------------------
+	---NATURE-PLANTS-----------------
+	------------------------------'''
+	
+def CATEGORIES10103(name, iconimage, desc, fanart):
+	'''------------------------------
+	---NATURE-PLACES-----------------
+	------------------------------'''
 		
 def CATEGORIES102(admin):
 	'''------------------------------
@@ -308,7 +330,6 @@ def CATEGORIES102(admin):
 	'''revolutions34 Channel'''
 	addDir('revolutions34 Channel','crashcoursekids',9,'','','1',"", getAddonFanart(background, custom=""))
 	
-	cgoodswen
 	'''CGArtSuccess Channel'''
 	addDir('CGArtSuccess Channel','CGArtSuccess',9,'','','1',"", getAddonFanart(background, custom=""))
 

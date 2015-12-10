@@ -37,8 +37,10 @@
 		<include>4ways3</include>
 		
 		<control type="radiobutton" id="90" description="Toggle Main/View LeftMenu">
+		  <texturenofocus border="40" colordiffuse="20BBBBBB">buttons/ButtonE0.png</texturenofocus>
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
 		  <label>Views Settings</label>
 		  <selected>ControlGroup(9001).HasFocus() | StringCompare(Window(home).Property(ViewsSettings),9001)</selected>
 		  <onclick>ClearProperty(ViewsSettings,home)</onclick>
@@ -48,6 +50,7 @@
 		<control type="radiobutton" id="100" description="ShowDVDCases">
           <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
 		  <label>$LOCALIZE[75141]</label>
 		  <selected>Control.IsVisible(57) + !Skin.HasSetting(ShowDVDCases) | [[Control.IsVisible(54) | Control.IsVisible(58)] + Skin.HasSetting(ShowDVDCases2)]</selected>
 		  <onclick condition="Control.IsVisible(57)">Skin.ToggleSetting(ShowDVDCases)</onclick>
@@ -56,37 +59,41 @@
 		<control type="radiobutton" id="102" description="ShowTopVideoInformation">
           <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
 		  <label>$LOCALIZE[79044]</label>
 		  <selected>!Skin.HasSetting(ShowTopVideoInformation)</selected>
 		  <onclick condition="Control.IsVisible(57) | Control.IsVisible(58)">Skin.ToggleSetting(ShowTopVideoInformation)</onclick>
-		  <onclick condition="Control.IsVisible(57)">ReplaceWindow(videolibrary)</onclick>
+		  <!--<onclick condition="Control.IsVisible(57)">ReplaceWindow(videolibrary)</onclick>-->
 		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
         </control>
 		<control type="radiobutton" id="104" description="פאנארט מסך מלא">
           <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
 		  <label>$LOCALIZE[20445] $LOCALIZE[244]</label>
 		  <enable>!Skin.HasSetting(ShowTopVideoInformation)</enable>
 		  <selected>!Skin.HasSetting(FullFanartTopVideoInformation)</selected>
 		  <onclick>Skin.ToggleSetting(FullFanartTopVideoInformation)</onclick>
-		  <onclick>ActivateWindow(Home.xml)</onclick>
-		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>
+		  <!--<onclick>ActivateWindow(Home.xml)</onclick>
+		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>-->
 		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
         </control>
 		<control type="radiobutton" id="105" description="פאנארט מסך מלא - ZOOM OUT">
-          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
 		  <label>$LOCALIZE[20445] $LOCALIZE[244] - ZOOM OUT</label>
 		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(FullFanartTopVideoInformation)</enable>
 		  <selected>Skin.HasSetting(FullFanartZoomOut)</selected>
 		  <onclick>Skin.ToggleSetting(FullFanartZoomOut)</onclick>
-		  <onclick>ActivateWindow(Home.xml)</onclick>
-		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>
+		  <!--<onclick>ActivateWindow(Home.xml)</onclick>
+		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>-->
 		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
         </control>
 		<control type="button" id="106" description="שקיפות עטיפות">
-          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
 		  <label>$LOCALIZE[73130]: $INFO[Skin.String(MoviesTVCoversOverlay)]</label>
 		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)]</enable>
 		  <onclick condition="!Skin.String(MoviesTVCoversOverlay)">Skin.SetString(MoviesTVCoversOverlay, 100)</onclick>
@@ -107,8 +114,9 @@
 		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
         </control>
 		<control type="radiobutton" id="139" description="פאנארט תמיד">
-          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
 		  <label>$LOCALIZE[20445] $LOCALIZE[34122]</label>
 		  <enable></enable>
 		  <selected>Skin.HasSetting(AlwaysFanart)</selected>
@@ -125,8 +133,10 @@
 		<include>4ways3</include>
 
 		<control type="radiobutton" id="122" description="Toggle Main/View LeftMenu">
+		  <texturenofocus border="40" colordiffuse="20BBBBBB">buttons/ButtonE0.png</texturenofocus>
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
 		  <label>Views Settings</label>
 		  <selected>ControlGroup(9002).HasFocus() | StringCompare(Window(home).Property(ViewsSettings),9002)</selected>
 		  <onclick>ClearProperty(ViewsSettings,home)</onclick>
@@ -136,6 +146,7 @@
 		<control type="radiobutton" id="25">
 			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<font>size28</font>
 			<label>$LOCALIZE[98] $VAR[25label2]</label>
 			<onclick>Skin.ToggleSetting(AutoView)</onclick>
 			<selected>!Skin.HasSetting(AutoView)</selected>
@@ -145,6 +156,7 @@
 		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 			<!--<onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=movies)</onclick>-->
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.movies)</onclick>
+			<font>size28</font>
 			<label>for movies: $INFO[Skin.String(AutoView.movies)]</label>
 			<visible>!Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
@@ -153,63 +165,71 @@
 			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.tvshows)</onclick>
+			<font>size28</font>
 			<label>for tv shows:  $INFO[Skin.String(AutoView.tvshows)]</label>
 			<visible>!Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="32">
-		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.seasons)</onclick>
+			<font>size28</font>
 			<label>for seasons:  $INFO[Skin.String(AutoView.seasons)]</label>
 			<visible>!Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="33">
-		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.episodes)</onclick>
+			<font>size28</font>
 			<label>for episodes: $INFO[Skin.String(AutoView.episodes)]</label>
 			<visible>!Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="34">
-		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.setmovies)</onclick>
+			<font>size28</font>
 			<label>for movie sets: $INFO[Skin.String(AutoView.setmovies)]</label>
 			<visible>!Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="36">
-		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.actors)</onclick>
+			<font>size28</font>
 			<label>for Actors: $INFO[Skin.String(AutoView.actors)]</label>
 			<visible>!Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="37">
-		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.genres)</onclick>
+			<font>size28</font>
 			<label>for genres: $INFO[Skin.String(AutoView.genres)]</label>
 			<visible>!Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="38">
-		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.others)</onclick>
+			<font>size28</font>
 			<label>for years/countries/studios/directors: $INFO[Skin.String(AutoView.others)]</label>
 			<visible>!Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		
 		<control type="button" id="40">
-		    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.pictures)</onclick>
+			<font>size28</font>
 			<label>for pictures: $INFO[Skin.String(AutoView.pictures)]</label>
 			<visible>!Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyPics.xml)</visible>
@@ -222,6 +242,7 @@
     <control type="button" id="20" description="Settings Level">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <onclick>SettingsLevelChange</onclick>
 	  <visible>Window.IsVisible(SettingsCategory.xml)</visible>
 	</control>
@@ -229,6 +250,7 @@
     <control type="togglebutton" id="120" description="Update library">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>653</label>
 	  <altlabel>13353</altlabel>
 	  <onclick>UpdateLibrary(video)</onclick>
@@ -243,15 +265,17 @@
 	<control type="togglebutton" id="14" description="Toggle Watched">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
 	  <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
 	  <visible>Skin.HasSetting(Admin) | StringCompare(Control.GetLabel,$LOCALIZE[535]: $LOCALIZE[16101]) | Control.IsVisible(57)</visible>
 	  <!--<visible>[Skin.HasSetting(Admin) | !StringCompare(Container.FolderName,IsraeLIVE) + !SubString(Container.FolderPath,plugin://plugin.video.israelive)]</visible>-->
 	</control>
 	<control type="radiobutton" id="98" description="Filter">
-	  <enable>Container.CanFilterAdvanced</enable>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <enable>Container.CanFilterAdvanced</enable>
+	  <font>size28</font>
 	  <onclick>Filter</onclick>
 	  <label>587</label>
 	  <visible>Control.IsEnabled(98)</visible>
@@ -259,6 +283,7 @@
 	<control type="button" id="8" description="Search for a string anywhere in the Kodi video database">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>137</label>
 	  <visible>!SubString(Container.FolderPath,plugin://) + !SubString(Container.FolderPath,special://userdata/library/videos) + !SubString(Container.FolderPath,special://home/) + !SubString(Container.FolderPath,/var/media/) + !SubString(Container.FolderPath,sources://video/)</visible>
 	  
@@ -266,6 +291,7 @@
 	<control type="button" id ="107" description="חפש-סדרות ישראליות">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>137</label>
 	  <onclick>RunScript(script.featherence.service,,?mode=300)</onclick>
 	  <visible>Window.IsVisible(Home.xml) + SubString(Container.FolderPath,plugin://plugin.video.sdarot.tv)</visible>
@@ -273,6 +299,7 @@
 	<control type="button" id ="109" description="?">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[]</label>
 	  <onclick>noop</onclick>
 	  <visible>Window.IsVisible(Home.xml) + StringCompare(Container.FolderPath,plugin://plugin.video.youtube/?folder=true&login=false&path=%2froot%2fsearch&store=searches)</visible>
@@ -284,6 +311,7 @@
 	<control type="togglebutton" id="20" description="Scanning library">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>653</label>
 	  <altlabel>13353</altlabel>
 	  <usealttexture>library.isscanningvideo</usealttexture>
@@ -295,6 +323,7 @@
 	  <visible>!Control.IsEnabled(20) + SubString(Container.FolderPath,plugin://plugin.video.genesis)</visible>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>653</label>
 	  <altlabel>13353</altlabel>
 	  <onclick>UpdateLibrary(video)</onclick>
@@ -547,7 +576,6 @@
 			<include>Fade_LeftMenuOverlay</include>
 			<width>580</width>
 			<texturenofocus colordiffuse="ff96708f" border="40">buttons/ButtonE0.png</texturenofocus>
-			
 			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 			<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 			<font>size28</font>
@@ -621,13 +649,16 @@
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <label>$LOCALIZE[13318]</label>
+	  <font>size28</font>
 	</control>
 	<control type="radiobutton" id="9" description="מצגת אקראית">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <label>31007</label>
+	  <font>size28</font>
 	</control>
 	<!--<include>button123_enablefanart</include>-->
+	<include>openViewSettings9001</include>
 	<include>AutoViewSettingsButton</include>
 	<include>FileManagerButton</include>
   </include>  
@@ -640,10 +671,12 @@
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <label>137</label>
+	  <font>size28</font>
 	</control>
 	<control type="radiobutton" id="24" description="נתיב קובץ">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[21801]</label>
 	  <onclick condition="Skin.HasSetting(ShowFileInfo)">Skin.ToggleSetting(ShowFileInfo)</onclick>
 	  <altclick condition="!Skin.HasSetting(ShowFileInfo)">Skin.ToggleSetting(ShowFileInfo)</altclick>
@@ -654,12 +687,15 @@
 	  <description>Update library</description>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>653</label>
 	  <altlabel>13353</altlabel>
 	  <onclick>AlarmClock(20,CleanLibrary(music),00:10,silent)</onclick>
 	  <onclick>AlarmClock(201,Container.Update,00:11,silent)</onclick>
 	  <usealttexture>library.isscanningvideo</usealttexture>
 	</control>
+	<include>openViewSettings9001</include>
+	<include>AutoViewSettingsButton</include>
 	<include condition="!StringCompare(ListItem.Path,musicdb://)">FileManagerButton</include>
 	<include condition="Window.IsVisible(MyMusicNav.xml) + !Skin.String(ID10,C) + !Skin.String(ID10,D)">HelpButton</include>
 	<include>CommonLeftMenuButtons</include>
@@ -669,12 +705,15 @@
 	  <texturenofocus>-</texturenofocus>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	</control>
 	<control type="spincontrolex" id="3" description="מיקום">
+	  <font>size28</font>
 	  <texturenofocus>-</texturenofocus>
 	  <width>480</width>
 	</control>
 	<control type="button" id="129" description="הגדרות">
+	  <font>size28</font>
 	  <label>$LOCALIZE[5]</label>
 	  <texturenofocus>-</texturenofocus>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
@@ -688,6 +727,7 @@
 	<control type="radiobutton" id="7" description="Enable language filter">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>587</label>
 	</control>
 	<include>button3_sort</include>
@@ -695,18 +735,23 @@
 	<control type="radiobutton" id="6" description="Enable add-on notifications">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[518] $LOCALIZE[25000]</label>	  
 	</control>	
 	<control type="button" id="5" description="Enable auto-updating of the installed add-on's">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[518] $LOCALIZE[24063]</label>
 	</control>
 	<control type="button" id="9" description="Check for updates">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[24034]</label>
 	</control>
+	<include>openViewSettings9001</include>
+	<include>AutoViewSettingsButton</include>
 	<include>CommonLeftMenuButtons</include>
   </include>
   
@@ -731,6 +776,7 @@
 	<control type="button" id="130" description="מצב גויסטיק">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[79035]</label>
 	  <onclick condition="System.HasAddon(script.featherence.emu)">RunScript(script.featherence.emu,,?mode=2)</onclick>
 	  <visible>StringCompare(Container.FolderName,Advanced Launcher) + System.HasAddon(script.featherence.emu)</visible>
@@ -739,6 +785,7 @@
 	<control type="button" id="132" description="אפשר תמיכת גויסטיק">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[79034]</label>
 	  <onclick condition="System.HasAddon(script.featherence.emu)">RunScript(script.featherence.emu,,?mode=1)</onclick>
 	  <visible>StringCompare(Container.FolderName,Advanced Launcher) + System.HasAddon(script.featherence.emu)</visible> <!--!System.GetBool(input.enablejoystick)-->
@@ -746,10 +793,13 @@
 	<control type="button" id="110" description="הגדרות מתקדמות">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>[COLOR=Red]$LOCALIZE[78997][/COLOR]</label>
 	  <onclick condition="System.HasAddon(script.featherence.emu)">RunScript(script.featherence.emu,,)</onclick>
 	  <visible>StringCompare(Container.FolderName,Advanced Launcher) + System.HasAddon(script.featherence.emu)</visible>
 	</control>
+	<include>openViewSettings9001</include>
+	<include>AutoViewSettingsButton</include>
 	<include>CommonLeftMenuButtons</include>
   </include>
   
@@ -758,6 +808,7 @@
 	<control type="radiobutton" id="138" description="פאנארט מסך מלא">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[20445] $LOCALIZE[244]</label>
 	  <selected>!Skin.HasSetting(FullFanartBackground2)</selected>
 	  <enable>!Skin.HasSetting(background2)</enable>
@@ -778,6 +829,7 @@
 	  <texturenofocus>-</texturenofocus>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>Number of items in the playlist</label>
 	  <visible>false</visible>
 	</control>
@@ -785,42 +837,49 @@
 	  <texturenofocus>-</texturenofocus>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>191</label>
 	</control>
 	<control type="button" id="21" description="Save the playlist">
 	  <texturenofocus>-</texturenofocus>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>190</label>
 	</control>
 	<control type="button" id="22" description="Clear the playlist">
 	  <texturenofocus>-</texturenofocus>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>192</label>
 	</control>
 	<control type="button" id="23" description="Play the playlist">
 	  <texturenofocus>-</texturenofocus>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[14098] $LOCALIZE[559]</label>
 	</control>
 	<control type="button" id="24" description="Play the next song in the playlist">
 	  <texturenofocus>-</texturenofocus>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[14098] $LOCALIZE[19031] $LOCALIZE[19107] $LOCALIZE[559]</label>
 	</control>
 	<control type="button" id="25" description="Play the previous song in the playlist">
 	  <texturenofocus>-</texturenofocus>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[14098] $LOCALIZE[210] $LOCALIZE[19107] $LOCALIZE[559]</label>
 	</control>
 	<control type="button" id="26" description="Put the playlist on repeat">
 	  <texturenofocus>-</texturenofocus>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>-</label>
 	</control>
   </include>
@@ -841,6 +900,7 @@
 	<control type="button" id="31" description="מדריך טלוויזיה/ערוצי טלוויזיה">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$VAR[Button31]</label>
 	  <onclick condition="Window.IsVisible(MyPVRChannels.xml)">ActivateWindow(TVGuide)</onclick>
 	  <onclick condition="Window.IsVisible(MyPVRGuide.xml)">close</onclick>
@@ -851,6 +911,7 @@
 	<control type="button" id="32" description="עדכון רשימות ערוצים">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[70111]</label>
 	  <onclick condition="Window.IsVisible(MyPVRChannels.xml)">RunScript(script.featherence.service,,?mode=12)</onclick>
 	</control>
@@ -858,6 +919,7 @@
 	<control type="button" id="33" description="Radio Channels">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[19024]</label>
 	  <onclick>ActivateWindow(RadioChannels)</onclick>
 	  <visible>false</visible>
@@ -866,6 +928,7 @@
 	  <visible>Skin.HasSetting(Admin)</visible>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[19163]</label>
 	  <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
 	  <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
@@ -874,6 +937,7 @@
 	  <visible>Skin.HasSetting(Admin)</visible>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>19040</label>
 	  <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
 	  <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
@@ -882,6 +946,7 @@
 	  <visible>Skin.HasSetting(Admin)</visible>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>137</label>
 	  <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
 	  <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
@@ -890,6 +955,7 @@
 	  <visible>Skin.HasSetting(Admin)</visible>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>מנהל ערוצים</label>
 	  <onclick>ActivateWindow(pvrosdchannels)</onclick>
 	</control>
@@ -898,6 +964,7 @@
 		<visible>Skin.HasSetting(Admin)</visible>
 		<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		<font>size28</font>
 		<label>19270</label>
 		<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
 	</control>
@@ -905,6 +972,7 @@
 		<visible>Skin.HasSetting(Admin)</visible>
 		<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		<font>size28</font>
 		<label>19051</label>
 		<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
 	</control>
@@ -913,9 +981,12 @@
 		<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		<textwidth>235</textwidth>
+		<font>size28</font>
 		<label>19184</label>
 		<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
 	</control>
+	<include>openViewSettings9001</include>
+	<include>AutoViewSettingsButton</include>
   </include>
   
   
@@ -970,6 +1041,7 @@
     <control type="button" id="103" description="מנהל קבצים">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>$LOCALIZE[7]</label>
 	  <onclick condition="!IsEmpty(Container.FolderPath)">ActivateWindow(FileManager.xml,$INFO[Container.FolderPath])</onclick>
 	  <onclick condition="Window.IsVisible(MyMusicNav.xml) + IsEmpty(Container.FolderPath)">ActivateWindow(FileManager.xml,special://userdata/library/music/)</onclick>
@@ -980,6 +1052,7 @@
     <control type="radiobutton" id="121" description="Toggle Main/AutoView">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>AutoView Settings</label>
 	  <selected>ControlGroup(9002).HasFocus() | StringCompare(Window(home).Property(ViewsSettings),9002)</selected>
 	  <onclick condition="true">SetProperty(ViewsSettings,9002,home)</onclick>
@@ -991,6 +1064,7 @@
 	  <texturenofocus>-</texturenofocus>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <visible>!IsEmpty(Control.GetLabel(2))</visible>
 	</control>
   </include>
@@ -998,6 +1072,7 @@
     <control type="button" id="3" description="Sort">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <visible>Control.IsEnabled(3)</visible>
 	  <visible>!SubString(Container.FolderPath,plugin://plugin.video.sdarot.tv)</visible>
 	  <visible>!IsEmpty(Control.GetLabel(3))</visible>
@@ -1007,6 +1082,7 @@
     <control type="togglebutton" id="4" description="SortOrder">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
 	  <label>584</label>
 	  <altlabel>585</altlabel>
 	  <visible>Control.IsEnabled(4)</visible>
@@ -1017,7 +1093,8 @@
 	  <control type="radiobutton" id="123" description="פאנארט פעיל">
 	    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-	    <label>$LOCALIZE[20445] $LOCALIZE[305]</label>
+	    <font>size28</font>
+		<label>$LOCALIZE[20445] $LOCALIZE[305]</label>
 	    <selected>!Skin.HasSetting(background2)</selected>
 	    <onclick>Skin.ToggleSetting(background2)</onclick>
 		<visible>!Control.IsVisible(57) + !Control.IsVisible(58) | Control.IsVisible(58) + Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart)</visible>
@@ -1027,6 +1104,7 @@
 	  <control type="radiobutton" id="99" description="Toggle Main/View LeftMenu">
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
 		  <label>Views Settings</label>
 		  <selected>ControlGroup(9001).HasFocus() | StringCompare(Window(home).Property(ViewsSettings),9001)</selected>
 		  <onclick condition="true">SetProperty(ViewsSettings,9001,home)</onclick>

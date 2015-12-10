@@ -519,26 +519,10 @@
 		</item>
 		
 		<item id="1001">
-          <visible>Window.IsVisible(Home.xml) + !IntegerGreaterThan(Container(9000).NumItems,5) + [!Skin.String(label98) | !Skin.String(label99)]</visible>
+          <visible>Window.IsVisible(Home.xml) + !IntegerGreaterThan(Container(9000).NumItems,3) + [!Skin.String(label98) | !Skin.String(label99)]</visible>
           <thumb>special://home/addons/script.featherence.service/resources/icons/magicwand.png</thumb>
           <label>REFRESH BUTTONS</label>
 		  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">RunScript(script.featherence.service,,?mode=40&amp;value=0)</onclick>
-		</item>
-		
-		<item id="9801">
-          <visible>Window.IsVisible(Home.xml) + !IntegerGreaterThan(Container(9000).NumItems,5) + !Skin.String(label98)</visible>
-          <thumb>special://home/addons/script.featherence.service/resources/icons/settings.png</thumb>
-          <label>5</label>
-		  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">ActivateWindow(Settings.xml)</onclick>
-		</item>
-		
-		<item id="9901">
-          <visible>Window.IsVisible(Home.xml) + !IntegerGreaterThan(Container(9000).NumItems,5) + !Skin.String(label99)</visible>
-          <thumb>special://home/addons/script.featherence.service/resources/icons/power.png</thumb>
-          <label>13005</label>
-		  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">SetProperty(Button.ID,990,home)</onclick>
-		  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">SetProperty(Button.ID_,990,home)</onclick>
-		  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">ActivateWindow(1138)</onclick>
 		</item>
   </include> 
   

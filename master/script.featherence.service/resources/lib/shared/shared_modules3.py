@@ -771,11 +771,10 @@ def getAPIdata(x, name, iconimage, desc):
 	printpoint = "" ; TypeError = "" ; extra = ""
 	finalurl = "" ; url = "" ; prms = "" ; id = ""
 	try:
-		#if 1 + 1 == 2:
 		if '&youtube_pl=' in x:
 			x2 = x.replace('&youtube_pl=',"")
 			url = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId='+x2+'&key='+featherenceapi+'&part=snippet&maxResults=40&pageToken='
-		
+			#url = 'https://www.googleapis.com/youtube/v3/playlists?id='+x2+'&key='+featherenceapi+'&part=snippet&maxResults=1&pageToken='
 		elif '&youtube_ch=' in x:
 			x2 = x.replace('&youtube_ch=',"")
 			url = 'https://www.googleapis.com/youtube/v3/channels?forUsername='+x2+'&key='+featherenceapi+'&part=snippet&maxResults=1'
@@ -800,12 +799,13 @@ def getAPIdata(x, name, iconimage, desc):
 			printlog(title='getAPIdata_test1', printpoint=printpoint, text=str(link), level=0, option="")
 			i = 0
 			if '&youtube_pl' in x:
+				#id=str(prms['items'][i][u'id']) #Video ID (Playlist)
 				id=str(prms['items'][i][u'snippet'][u'resourceId'][u'videoId']) #Video ID (Playlist)
 				#id=str(prms['items'][i][u'snippet'][u'playlistId']) #Video ID (Playlist)
 				if id != "":
 					finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
 					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
-					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
+					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'medium'][u'url'])
 					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
 					if not 'Deleted video' in name_: name = name_
 					if iconimage_ != "": iconimage = iconimage_
@@ -815,7 +815,7 @@ def getAPIdata(x, name, iconimage, desc):
 				if id != "":
 					finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
 					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
-					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
+					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'medium'][u'url'])
 					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
 					if not 'Deleted video' in name_: name = name_
 					if iconimage_ != "": iconimage = iconimage_
@@ -824,7 +824,7 @@ def getAPIdata(x, name, iconimage, desc):
 				if id != "":
 					finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
 					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
-					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
+					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'medium'][u'url'])
 					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
 					if not 'Deleted video' in name_: name = name_
 					if iconimage_ != "": iconimage = iconimage_
@@ -834,7 +834,7 @@ def getAPIdata(x, name, iconimage, desc):
 				if id != "":
 					finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
 					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
-					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
+					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'medium'][u'url'])
 					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
 					if not 'Deleted video' in name_: name = name_
 					if iconimage_ != "": iconimage = iconimage_

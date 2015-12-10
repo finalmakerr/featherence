@@ -4,7 +4,6 @@
   <allowoverlay>yes</allowoverlay>
   <views>50,51,54,57,58</views>
   <include>SetFocusView</include>
-  <onunload condition="Skin.String(VarCurrentPicVidPath)">Skin.SetString(VarCurrentPicVidPath,)</onunload>
   <controls>
     <include>Backgrounds3</include>
     <include>ViewDesign_50</include>

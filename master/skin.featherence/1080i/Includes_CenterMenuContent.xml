@@ -57,9 +57,8 @@
 	  </item>
 	  <item id="707" description="צבע כפתור">
 		<label>$LOCALIZE[74479]</label>
-		<onclick condition="System.HasAddon(script.skin.helper.service)">SetProperty(TEMP,color$INFO[Window(home).Property(Button.ID_)],home)</onclick>
-		<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service,action=colorpicker,skinstring=color$INFO[Window(home).Property(Button.ID_)])</onclick>
-		<onclick condition="!System.HasAddon(script.skin.helper.service)">RunScript(script.featherence.service,,?mode=231&amp;value=script.skin.helper.service)</onclick>
+		<onclick>SetProperty(TEMP,color$INFO[Window(home).Property(Button.ID_)],home)</onclick>
+		<onclick>ActivateWindow(1170)</onclick>
 		<include>CheckProperty_Menus</include>
 		 <visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
@@ -193,9 +192,9 @@
 	</control>
 	<control type="button" id="405" description="ברירת מחדל">
 	  <width>420</width>
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-	  <label>$LOCALIZE[571]</label>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
+	  <label>$LOCALIZE[571] $INFO[Window(home).Property(TEMP)] $INFO[Window(home).Property(Button.Name)]</label>
 	  <onclick>RunScript(script.featherence.service,,?mode=235)</onclick>
 	  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !IsEmpty(Window(home).Property(Button.ID))</visible>
 	  <visible>StringCompare(Window(home).Property(TEMP),icon) | StringCompare(Window(home).Property(TEMP),background)</visible>

@@ -980,7 +980,6 @@ def CATEGORIES10906(name, iconimage, desc, fanart):
 	#list.append('&youtube_pl=')
 	addDir(addonString(57).encode('utf-8') + space + '(' + name + ')',list,17,iconimage,desc,'1',"", getAddonFanart(background))
 	
-	
 def CATEGORIES10905(name, iconimage, desc, fanart):
 	'''רוסית'''
 	background = 109

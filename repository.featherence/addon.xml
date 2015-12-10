@@ -6,9 +6,14 @@
 		<datadir zip="true">https://raw.githubusercontent.com/finalmakerr/featherence/master/</datadir>
     </extension>
 	<extension point="xbmc.addon.metadata">
+		<language>he en</language>
+		<platform>all</platform>
 		<summary lang="en"></summary>
 		<description lang="en">Get frequently updates from Featherence team</description>
-		<platform>all</platform>
+		<email>featherence@groups.facebook.com</email>
+		<forum></forum>
+		<source>https://github.com/finalmakerr/featherence/tree/master/master/skin.featherence/1080i</source>
+		<website>https://www.facebook.com/groups/featherence/</website>
 	</extension>
 </addon>
 

@@ -1331,12 +1331,18 @@
         <orientation>vertical</orientation>
       </control>
       <control type="button" description="Default Button" id="7">
-		<include>ButtonL2</include>
+		<width>880</width>
 		<height>70</height>
+		<textoffsetx>20</textoffsetx>
+		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		<include>ButtonL1</include>
       </control>
       <control type="radiobutton" description="Default RadioButton ???" id="8">
+		<width>880</width>
 		<height>70</height>
-		<include>ButtonL2</include>
+		<textoffsetx>20</textoffsetx>
+		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		<include>ButtonL1</include>
       </control>
       <control type="spincontrolex" description="Default SpinControlex (בתהליך/הכל)" id="9">
 		<textoffsetx>20</textoffsetx>
@@ -1344,7 +1350,7 @@
 		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		<include condition="StringCompare(System.Language,Hebrew)">spinposx</include>-->
 		<height>70</height>
-		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		<texturenofocus border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
         <texturefocus border="40">buttons/ButtonE.png</texturefocus>
       </control>
       <control type="sliderex" description="Default Slider (דירוג,שנה)" id="13">
@@ -1356,7 +1362,8 @@
         <aligny>center</aligny>
         <sliderwidth>220</sliderwidth>
         <sliderheight>30</sliderheight>
-		<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+		<height>70</height>
+		<include>ButtonL1</include>
       </control>
       <control type="edit" description="Default Edit" id="12">
       </control>

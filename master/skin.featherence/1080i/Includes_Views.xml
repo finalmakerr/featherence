@@ -4,7 +4,7 @@
     <control type="group" description="">
 	  <visible>Control.IsVisible(50)</visible>
       <control type="group">
-		<control type="panel" id="50">
+		<control type="list" id="50">
 		  <include>Slide1</include>
 		  <include>Slide2</include>
 		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
@@ -24,7 +24,7 @@
 	  <visible>Control.IsVisible(11)</visible>
 	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1450,0">Conditional</animation>
       <control type="group">
-		<control type="panel" id="11">
+		<control type="list" id="11">
 		  <include>Slide1</include>
 		  <include>Slide2</include>
 		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
@@ -44,7 +44,7 @@
 	  <visible>Control.IsVisible(450)</visible>
 	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1450,0">Conditional</animation>
       <control type="group">
-		<control type="panel" id="450">
+		<control type="list" id="450">
 		  <include>Slide1</include>
 		  <include>Slide2</include>
 		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
@@ -61,7 +61,7 @@
   <include name="ViewDesign_50_Layout">
 	  <itemlayout description="(כללי)" condition="true" height="100" width="960"> <!--[Container.Content(files) | Container.Content(actors) | Container.Content(Sets) | ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | SubString(ListItem.path,plugin://plugin.video.youtube)]]-->
 		<control type="image" description="מסגרת נתון">
-		  <animation effect="slide" start="0,0" end="-100,0" time="700">UnFocus</animation>
+		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="slide" start="0,0" end="-100,0" time="700" reversible="true">Conditional</animation>
 		  <include>Fade_MenuButtonsOverlay</include>
 		  <posx>500</posx>
 		  <posy>20</posy>
@@ -71,8 +71,8 @@
 		  <visible>!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="image" description="מסגרת">
-		  <animation effect="slide" start="0,0" end="-100,0" time="700">UnFocus</animation>
-		  <animation effect="zoom" start="100,100" end="111.5,100" time="700">UnFocus</animation>
+		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="slide" start="0,0" end="-100,0" time="700" reversible="true">Conditional</animation>
+		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="zoom" start="100,100" end="111.5,100" time="700" reversible="true">Conditional</animation>
 		  <include>Fade_MenuButtonsOverlay</include>
 		  <posx>500</posx>
 		  <posy>20</posy>
@@ -127,14 +127,28 @@
 		  <width>700</width>
 		  <height>70</height>
 		  <label>$VAR[VideoInformation1]</label>
-		</control>			
+		</control>
+		<control type="label" description="שם2">
+		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="slide" start="0,0" end="-100,0" time="700" reversible="true">Conditional</animation>
+		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="fade" start="0" end="100" time="700" reversible="true">Conditional</animation>
+		  <align>left</align>
+		  <include>LabelC4</include>
+		  <posx>555</posx>
+		  <posy>32</posy>
+		  <width>100</width>
+		  <height>70</height>
+		  <label>$INFO[ListItem.Label2]</label>
+		  <wrapmultiline>true</wrapmultiline>
+		  <visible>!IsEmpty(ListItem.Label2)</visible>
+		  <visible>!Window.IsVisible(MyVideoNav.xml)</visible>
+		</control>
 	  </itemlayout>
 	  <focusedlayout description="(כללי)" condition="true" height="100" width="960">    
 		<include>AutoView</include>
 		<include>onfocus_SetProperty_ListItem</include>
 		<include>onfocus_SetProperty_TopVideoInformation</include>
 		<control type="image" description="מסגרת נתון">
-		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="slide" start="0,0" end="-100,0" time="700">Conditional</animation>
+		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="slide" start="0,0" end="-100,0" time="0" reversible="true">Conditional</animation>
 		  <include>Fade_MenuButtonsOverlay</include>
 		  <posx>500</posx>
 		  <posy>20</posy>
@@ -144,8 +158,8 @@
 		  <visible>!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="image" description="מסגרת">
-		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="slide" start="0,0" end="-100,0" time="700">Conditional</animation>
-		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="zoom" start="100,100" end="111.5,100" time="700">Conditional</animation>
+		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="slide" start="0,0" end="-100,0" time="0" reversible="true">Conditional</animation>
+		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="zoom" start="100,100" end="111.5,100" time="0" reversible="true">Conditional</animation>
 		  <include>Fade_MenuButtonsOverlay</include>
 		  <posx>500</posx>
 		  <posy>20</posy>
@@ -202,9 +216,11 @@
 		  <label>$VAR[VideoInformation1]</label>
 		</control>
 		<control type="label" description="שם2">
+		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="slide" start="0,0" end="-100,0" time="0" reversible="true">Conditional</animation>
+		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="fade" start="0" end="100" time="0" reversible="true">Conditional</animation>
 		  <align>left</align>
 		  <include>LabelC4</include>
-		  <posx>455</posx>
+		  <posx>555</posx>
 		  <posy>32</posy>
 		  <width>100</width>
 		  <height>70</height>
@@ -212,7 +228,7 @@
 		  <wrapmultiline>true</wrapmultiline>
 		  <visible>!IsEmpty(ListItem.Label2)</visible>
 		  <visible>!Window.IsVisible(MyVideoNav.xml)</visible>
-		</control>		
+		</control>
 	  </focusedlayout>	
   </include>
   
@@ -503,7 +519,7 @@
           <itemlayout description="(Movies+TVshows)" height="342" width="267"> <!-- + [!IsEmpty(Control.GetLabel(1105)) + !IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Container(57).ListItem(1).Plot) + !IsEmpty(Container(57).ListItem(1).Genre) | !IsEmpty(Container(57).ListItem(2).Plot) + !IsEmpty(Container(57).ListItem(2).Genre)-->
             <control type="group">
 			   	<include>Fade_MoviesTVCoversOverlay</include>
-				<include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + Skin.HasSetting(FullFanartZoomOut)">Slide2.4</include>
+				<include>Slide2.4</include>
 				<control type="image" description="תמונה נבחר">
 				  <posx>55</posx>
 				  <posy>24</posy>
@@ -724,7 +740,7 @@
 	  <itemlayout description="(Plugins)" height="510" width="373">
 		<control type="group">
 			<include>Fade_MoviesTVCoversOverlay</include>
-			<include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + Skin.HasSetting(FullFanartZoomOut)">Slide2.4</include>
+			<include>Slide2.4</include>
 			<control type="image" description="תמונה לא נבחר">
 			  <posx>55</posx>
 			  <posy>40</posy>
@@ -1033,7 +1049,7 @@
           <height>515</height>
 		  <include>2ways</include>
 		  <orientation>horizontal</orientation>
-          <viewtype label="31015">thumbnail</viewtype>
+          <viewtype label="31015">List</viewtype>
 		  <include>ViewDesign_58_Layout</include>
         </control>
       </control>
@@ -1042,7 +1058,7 @@
   <include name="ViewDesign_54_Layout">
 	  <itemlayout description="(Plugins)" height="510" width="363">
 		<control type="group">
-			<include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + Skin.HasSetting(FullFanartZoomOut)">Slide2.4</include>
+			<include>Slide2.4</include>
 			<control type="image" description="תמונה לא נבחר">
 			  <posx>55</posx>
 			  <posy>40</posy>

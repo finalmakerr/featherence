@@ -213,25 +213,14 @@
     <textoffsetx>40</textoffsetx>
     <align>left</align>
     <texturenofocus>-</texturenofocus>
-	<texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+	<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
   </include>
   <include name="ButtonR1" description="()">
 	<width>480</width>
     <textoffsetx>40</textoffsetx>
     <align>right</align>
     <texturenofocus>-</texturenofocus>
-	<texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
-  </include>
-  <include name="ButtonC2" description="()">
-	<width>880</width>
-    <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
-  </include>
-  <include name="ButtonL2" description="()">
-	<width>880</width>
-    <textoffsetx>20</textoffsetx>
-    <align>left</align>
-    <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
-	<alttexturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</alttexturenofocus>
+	<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
   </include>
   <include name="ButtonR2" description="()">
 	<width>880</width>

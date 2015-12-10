@@ -29,9 +29,9 @@
 				<texture>osd/keyboard/dialogheader.png</texture>
 			</control>
 			<control type="label" id="311" description="כותרת ראשי">
-				<left>40</left>
+				<left>90</left>
 				<top>20</top>
-				<width>720</width>
+				<width>600</width>
 				<height>30</height>
 				<font>size28</font>
 				<align>center</align>

@@ -3,7 +3,6 @@
   <defaultcontrol always="true">450</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <onload>Dialog.Close(1175)</onload>
-  
   <controls>
 	  <include>BlackBackground2</include>
 	  <include>ViewDesign_450</include>
@@ -11,7 +10,6 @@
 	  <include>TopVideoInformation</include>
 	  <include>ScrollBar</include>
 	  <include>TopInformation</include>
-	  
 	  <control type="label" id="412" description="Path of the selected item">
 	    <visible>false</visible>
 	  </control>
