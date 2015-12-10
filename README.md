@@ -1,5 +1,4 @@
 Install Kodi's addons from Featherence Repository
-==========================================:
 
 - Featherence Service: Core addon for every addon used in Featherence. Also offer a wide range of tools.
 - Featherence Docu: Nature, Science, Space, Technology and more..
@@ -10,5 +9,5 @@ Install Kodi's addons from Featherence Repository
 
 
 For support and requests:
-Facebook: 
-Youtube: 
+- Facebook: https://www.facebook.com/groups/featherence/
+- Youtube: 
