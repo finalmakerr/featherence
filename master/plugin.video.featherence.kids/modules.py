@@ -100,7 +100,7 @@ def CATEGORIES101(admin):
 	list.append('&youtube_pl=PLdhkcuUltKcfTUBHVy02eKfRIEnmg7fnn')
 	addDir('השירים הראשונים שלי',list,17,'http://ypk.cs4u.co.il/mall_product_images/auction_product/ZF21388.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
-	'''שירי עוזי חיטמן''' #item_id%3D2538763???
+	'''שירי עוזי חיטמן''' 
 	list = []
 	list.append('&wallaNew=item_id%3D2538763')
 	list.append('&youtube_pl=PLB58E216840771949')
@@ -111,10 +111,16 @@ def CATEGORIES101(admin):
 	addDir('שירי עוזי חיטמן',list,17,'http://www.lifemusic.co.il/files/singers/big/1248883756s56Ly.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''שירי לילה טוב'''
-	addDir('שירי לילה טוב',['&youtube_pl=PLErYJg2XgxyVYzsbPxH2dzhlWLs9sWGTa', '&youtube_pl=PLErYJg2XgxyXTMAJvmFXoW6Qe66Ztw0Fk'],17,'http://erezdvd.co.il/sites/default/files/imagecache/product_full/products/numi-numi.jpg',addonString(128).encode('utf-8'),'1',"", getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLErYJg2XgxyVYzsbPxH2dzhlWLs9sWGTa')
+	list.append('&youtube_pl=PLErYJg2XgxyXTMAJvmFXoW6Qe66Ztw0Fk')
+	addDir('שירי לילה טוב',list,17,'http://erezdvd.co.il/sites/default/files/imagecache/product_full/products/numi-numi.jpg',addonString(128).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''שירי פרפר נחמד'''
-	addDir('שירי פרפר נחמד',['&youtube_pl=PL51YAgTlfPj45OPEXI-ibfJy8ON0k1ARh', '&youtube_pl=PLNWPkdPqwKqtbM6--m50SdENigIXvoAqm'],17,'http://www.sdarot.wf/media/series/1092.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL51YAgTlfPj45OPEXI-ibfJy8ON0k1ARh')
+	list.append('&youtube_pl=PLNWPkdPqwKqtbM6--m50SdENigIXvoAqm') 
+	addDir('שירי פרפר נחמד',list,17,'http://www.sdarot.wf/media/series/1092.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''שירי דיסני'''
 	addDir('שירי דיסני','plugin://plugin.video.youtube/channel/UC6QxAhInaZ79pTg7wi3ZF-Q/',8,'http://i.ytimg.com/i/6QxAhInaZ79pTg7wi3ZF-Q/1.jpg?v=78ea3c',addonString(138).encode('utf-8'),'1',"", getAddonFanart(background))
@@ -130,7 +136,6 @@ def CATEGORIES101(admin):
 	list.append('youtube_pl=PLyDbwArKjNV_8c791W2Ox9LxgSuhBaCtd')
 	list.append('youtube_pl=PL74E72320D1F7932C')
 	list.append('youtube_pl=PL6jaO-hu0Ivzi0gndI5Rb6YYcqut13wlD')
-	#list.append('youtube_pl=')
 	list.append('wallaNew=seasonId%3d2867134')
 	list.append('&wallaNew=seasonId%3d2585073')
 	list.append('&wallaNew=seasonId%3d2535850')
@@ -151,7 +156,10 @@ def CATEGORIES101(admin):
 	addDir(addonString(10160).encode('utf-8'),list,17,'http://www.gidikoren.com/gidikoren/images/book_pitz_azar.jpg',addonString(101600).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''סיפורי סבא טוביה'''
-	addDir('סיפורי סבא טוביה',['&youtube_pl=PL6jaO-hu0IvwHsU9bzS8caFo8reAxEseX', '&youtube_pl=kbs02_gshRs'],17,'http://images.mouse.co.il/storage/2/e/b-saba.jpg',addonString(110).encode('utf-8'),'1',"", getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL6jaO-hu0IvwHsU9bzS8caFo8reAxEseX')
+	list.append('&youtube_pl=kbs02_gshRs')
+	addDir('סיפורי סבא טוביה',list,17,'http://images.mouse.co.il/storage/2/e/b-saba.jpg',addonString(110).encode('utf-8'),'1',"", getAddonFanart(background))
 
 	'''סיפורים בעברית 2'''
 	addDir(addonString(58).encode('utf-8') + space + addonString(200).encode('utf-8') + space + "2",'plugin://plugin.video.wallaNew.video/?mode=2&module=wallavod&name=%d7%a1%d7%99%d7%a4%d7%95%d7%a8%d7%99%d7%9d%20(5)&url=genre%3dkids%26genreId%3d7451',8,'https://lh6.ggpht.com/V8v_FzkTMqeLRg_oY7G00zf0bcxubsm659cLrbf9nEKMLHQG-5LSZdbbJGQgkV6j1PQ=w300',addonString(198).encode('utf-8'),'1',"", getAddonFanart(background))
@@ -180,10 +188,13 @@ def CATEGORIES102(admin):
 	YOULink(addonString(10204).encode('utf-8'), 'Cmd0VxJmmBA', 'http://images.mouse.co.il/storage/0/e/ggg--Matmon.jpg',addonString(102040).encode('utf-8'))
 	
 	'''אלדין'''
-	addDir(addonString(10205).encode('utf-8'),['&youtube_id=sVCYRfk3Wcc', '&youtube_id=aIY0onCV9u0'],17,'http://www.tipa.co.il/images/contentImages/images/TV/al.jpg',addonString(102050).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_id=sVCYRfk3Wcc')
+	list.append('&youtube_id=aIY0onCV9u0')
+	addDir('אלאדין',list,17,'http://www.tipa.co.il/images/contentImages/images/TV/al.jpg',addonString(102050).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''בילבי'''
-	YOULink(addonString(10207).encode('utf-8'), 'sHMEnVpDJR8', 'http://i.ytimg.com/vi/2mxOiPccxOs/maxresdefault.jpg',addonString(102070).encode('utf-8'))
+	YOULink('בילבי', 'sHMEnVpDJR8', 'http://i.ytimg.com/vi/2mxOiPccxOs/maxresdefault.jpg',addonString(102070).encode('utf-8'))
 	
 	'''גאליס המופע'''
 	list = []
@@ -201,13 +212,25 @@ def CATEGORIES102(admin):
 	YOULink(addonString(10213).encode('utf-8'), 'tKDm79jqRcI', 'http://erezdvd.co.il/sites/default/files/imagecache/product_full/products/369504.jpg',addonString(102130).encode('utf-8'))
 	
 	'''דוד חיים'''
-	addDir(addonString(10219).encode('utf-8'),['&youtube_id=ugmThlqdPJw', '&youtube_id=X3j6mQ9VgLI', '&youtube_id=T_a52ktWfLc', '&youtube_id=FruAxOYP0uw'],17,'http://www.nmcunited.co.il/Images/dynamic/movies/Dod-Haim2.jpg',addonString(102190).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_id=ugmThlqdPJw')
+	list.append('&youtube_id=X3j6mQ9VgLI')
+	list.append('&youtube_id=T_a52ktWfLc')
+	list.append('&youtube_id=FruAxOYP0uw')
+	addDir('דוד חיים',list,17,'http://www.nmcunited.co.il/Images/dynamic/movies/Dod-Haim2.jpg',addonString(102190).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''הרקולס - המחזמר המלא'''
 	YOULink(addonString(10227).encode('utf-8'), 'UiqG4WAcvCM', 'http://moridim.me/images/large/191.jpg',addonString(102270).encode('utf-8'))
 	
 	'''יובל המבולבל'''
-	addDir(addonString(10731).encode('utf-8'),['&youtube_id=6UrdISJBBC4', '&youtube_id=920d18542f05a', '&youtube_id=C2Rm4IuVWNQ', '&youtube_id=99c23afc06d1a', '&youtube_id=CZDniCIenbA', '&youtube_id=H9rwsZ1roRQ'],17,'http://yt3.ggpht.com/-FHcf2Rxu08A/AAAAAAAAAAI/AAAAAAAAAAA/dxzE2ng3uXI/s88-c-k-no/photo.jpg',addonString(107310).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_id=6UrdISJBBC4')
+	list.append('&youtube_id=920d18542f05a')
+	list.append('&youtube_id=C2Rm4IuVWNQ')
+	list.append('&youtube_id=99c23afc06d1a')
+	list.append('&youtube_id=CZDniCIenbA')
+	list.append('&youtube_id=H9rwsZ1roRQ')
+	addDir('יובל המבולבל',list,17,'http://yt3.ggpht.com/-FHcf2Rxu08A/AAAAAAAAAAI/AAAAAAAAAAA/dxzE2ng3uXI/s88-c-k-no/photo.jpg',addonString(107310).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''ילד פלא'''
 	YOULink(addonString(10231).encode('utf-8'), 'e5c134277697c', 'http://tzavta.co.il/images/siteCont/Content_233.2463.jpg',addonString(102310).encode('utf-8'))
@@ -219,13 +242,28 @@ def CATEGORIES102(admin):
 	YOULink(addonString(10239).encode('utf-8'), 'kNS4xMdPIos', 'http://i.ytimg.com/vi/5gN4SMO8EfE/maxresdefault.jpg',addonString(102390).encode('utf-8'))
 	
 	'''מותק הילדות התחברו'''
-	addDir(addonString(10243).encode('utf-8'),['&youtube_id=1wLhD4yqQxU', '&youtube_id=_Lv0UHXaY4I', '&youtube_id=j_BClvgFwMw', '&youtube_id=_WBgn4iw8gw'],17,'http://media.org.il/images/Baby.girls.tap.the.musical.IL.1999_Front.Cover.jpg',addonString(102430).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_id=1wLhD4yqQxU')
+	list.append('&youtube_id=_Lv0UHXaY4I')
+	list.append('&youtube_id=j_BClvgFwMw')
+	list.append('&youtube_id=_WBgn4iw8gw')
+	addDir('מותק הילדות התחברו',list,17,'http://media.org.il/images/Baby.girls.tap.the.musical.IL.1999_Front.Cover.jpg',addonString(102430).encode('utf-8'),'1',50, getAddonFanart(background))
 
 	'''מותק של פסטיבל'''
-	addDir(addonString(10244).encode('utf-8'),['&youtube_pl=PLE915B350E437A7D8', '&youtube_pl=PL8C370A361DD07BDB', '&youtube_id=t2ksCC_RyLw', '&youtube_id=2KQBeOM'],17,'http://www.yap.co.il/prdPics/4991_desc3_5_1_1409123377.jpg',addonString(102440).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLE915B350E437A7D8')
+	list.append('&youtube_pl=PL8C370A361DD07BDB')
+	list.append('&youtube_id=t2ksCC_RyLw')
+	list.append('&youtube_id=2KQBeOM')
+	addDir('שם',list,17,'http://www.yap.co.il/prdPics/4991_desc3_5_1_1409123377.jpg',addonString(102440).encode('utf-8'),'1',50, getAddonFanart(background))
 	
-	'''מיכל הקטנה''' #UCPCJS9igpTu7COLmoDeMKXQ
-	addDir(addonString(10245).encode('utf-8'),['&wallaNew=item_id%3D2567432', '&wallaNew=item_id%3D2698903', '&wallaNew=item_id%3D2583625', '&youtube_id=IEeuv8mtRLI'],17,'http://www.pashbar.co.il/pictures/show_big_0523173001376412565.jpg',addonString(102450).encode('utf-8'),'1',"", getAddonFanart(background))
+	'''מיכל הקטנה''' 
+	list =[]
+	list.append('&wallaNew=item_id%3D2567432')
+	list.append('&wallaNew=item_id%3D2698903')
+	list.append('&wallaNew=item_id%3D258362')
+	list.append('&youtube_id=IEeuv8mtRLI')
+	addDir('שם',list,17,'http://www.pashbar.co.il/pictures/show_big_0523173001376412565.jpg',addonString(102450).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''מרקו'''
 	YOULink(addonString(10248).encode('utf-8'), 'XgnCNCt71d8', 'http://www.ykp.co.il/cd_halev.jpg',addonString(102480).encode('utf-8'))
@@ -264,7 +302,11 @@ def CATEGORIES102(admin):
 	'''---------------------------'''
 	
 	'''צ'פצ'ולה' - מיכל כלפון'''
-	addDir(addonString(10775).encode('utf-8'),['&wallaNew=item_id%3D2728550', '&youtube_id=EKlFN3awN_w', '&youtube_id=UC64wDQFgTq9RpI1P8_p-SxA'],17,'http://yt3.ggpht.com/-4Rd1GQEZnaM/AAAAAAAAAAI/AAAAAAAAAAA/pfQtiUaNjng/s88-c-k-no/photo.jpg',addonString(107750).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&wallaNew=item_id%3D2728550')
+	list.append('&youtube_id=EKlFN3awN_w')
+	list.append('&youtube_id=UC64wDQFgTq9RpI1P8_p-SxA')
+	addDir("צ'יפצ'ולה- מיכל כלפון",list,17,'http://yt3.ggpht.com/-4Rd1GQEZnaM/AAAAAAAAAAI/AAAAAAAAAAA/pfQtiUaNjng/s88-c-k-no/photo.jpg',addonString(107750).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''רובין הוד'''
 	YOULink(addonString(10272).encode('utf-8'), '6nZk0H89jDQ', 'http://erezdvd.co.il/sites/default/files/imagecache/product_full/products/14810.jpg',addonString(102720).encode('utf-8'))
@@ -293,6 +335,17 @@ def CATEGORIES104(admin):
 	addDir(localize(22082),list,6,'',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background)) ; list = []
 	'''---------------------------'''
 	
+	'''TEST'''
+	addon = 'plugin.video.genesis'
+	addon2 = '/?action=movies&url=http%3a%2f%2fapi.themoviedb.org%2f3%2fdiscover%2fmovie%3fapi_key%3d%25s%26with_genres%3d28%26primary_release_date.gte%3d2014-12-10%26primary_release_date.lte%3d2015-12-10%26page%3d1'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Genesis','plugin://'+addon+addon2,8,thumb,plot,'1',"", getAddonFanart(background, custom=fanart))
+	
+	'''אאוץ'''
+	list = []
+	list.append('&sdarot=series_id=1864&series_name=%d7%90%d7%90%d7%95%d7%a5%27%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1864%2foperation-ouch-%d7%90%d7%90%d7%95%d7%a5-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir("אאוץ",list,5,'http://www.sdarot.pm/media/series/1864.jpg','אאוץ','1',50, getAddonFanart(background, custom="http://www.sdarot.pm/media/series/1864.jpg"))
+	
 	'''אגדות המלך שלמה'''
 	addDir('אגדות המלך שלמה',['&sdarot=series_id=815&series_name=%d7%90%d7%92%d7%93%d7%95%d7%aa%20%d7%94%d7%9e%d7%9c%d7%9a%20%d7%a9%d7%9c%d7%9e%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f815%2ftales-of-a-wise-king-hebdub-%d7%90%d7%92%d7%93%d7%95%d7%aa-%d7%94%d7%9e%d7%9c%d7%9a-%d7%a9%d7%9c%d7%9e%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&youtube_pl=PLOx5NGhretuY8wp75WCY5PQQx8agiZ2IC'],17,'http://www.sdarot.pm/media/series/815.jpg',addonString(104000).encode('utf-8'),'1',50, getAddonFanart(background))
 	
@@ -317,7 +370,6 @@ def CATEGORIES104(admin):
 	'''דורימון'''
 	list = []
 	list.append('&youtube_pl=PL95CWWe9DuaJ6xtv1V8ZxDvoG_cB3z4bc')
-	#list.append('&youtube_pl=')
 	addDir("דורימון",list,17,'http://www.animation-animagic.com/img/conteudo/2632008151425.jpg',addonString(110).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''דיגימון'''
@@ -333,40 +385,80 @@ def CATEGORIES104(admin):
 	addDir('הדבורה מאיה',['&sdarot=season_id=1&series_id=668&series_name=%d7%94%d7%93%d7%91%d7%95%d7%a8%d7%94%20%d7%9e%d7%90%d7%99%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary=%d7%9e%d7%90%d7%99%d7%94%20%d7%94%d7%99%d7%90%20%d7%93%d7%91%d7%95%d7%a8%d7%94%20%d7%9e%d7%a8%d7%93%d7%a0%d7%99%d7%aa%2c%20%d7%a1%d7%a7%d7%a8%d7%a0%d7%99%d7%aa%20%d7%95%d7%a9%d7%95%d7%91%d7%91%d7%94.%20%d7%94%d7%99%d7%90%20%d7%a2%d7%95%d7%96%d7%91%d7%aa%20%d7%90%d7%aa%20%d7%94%d7%9b%d7%95%d7%95%d7%a8%d7%aa%20%d7%9b%d7%93%d7%99%20%d7%9c%d7%a6%d7%90%d7%aa%20%d7%9c%d7%98%d7%99%d7%95%d7%9c%20%d7%91%d7%a2%d7%95%d7%9c%d7%9d%20%d7%99%d7%97%d7%93%20%d7%a2%d7%9d%20%d7%94%d7%93%d7%91%d7%95%d7%a8%d7%95%d7%9f%20%d7%95%d7%95%d7%99%d7%9c%d7%99.%20%d7%94%d7%a9%d7%a0%d7%99%d7%99%d7%9d%20%d7%a2%d7%95%d7%91%d7%a8%d7%99%d7%9d%20%d7%94%d7%a8%d7%a4%d7%aa%d7%a7%d7%90%d7%95%d7%aa%20%d7%a7%d7%a1%d7%95%d7%9e%d7%95%d7%aa%20%d7%95%d7%a4%d7%95%d7%92%d7%a9%d7%99%d7%9d%20%d7%97%d7%91%d7%a8%d7%99%d7%9d%20%d7%91%d7%93%d7%a8%d7%9a%20%d7%97%d7%93%d7%a9%d7%99%d7%9d.%20%d7%9e%d7%90%d7%99%d7%94%20%d7%97%d7%95%d7%96%d7%a8%d7%aa%20%d7%9c%d7%9b%d7%95%d7%95%d7%a8%d7%aa%20%d7%97%d7%96%d7%a7%d7%94%20%d7%95%d7%97%d7%9b%d7%9e%d7%94%20%d7%94%d7%a8%d7%91%d7%94%20%d7%99%d7%95%d7%aa%d7%a8.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f668%2fmaya-the-bee-%d7%94%d7%93%d7%91%d7%95%d7%a8%d7%94-%d7%9e%d7%90%d7%99%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&youtube_pl=PLfcYs4SRZfuKJs0CL98BF0_OOGRWlmpdQ'],17,'http://tochka.bg/uploads/ckfinder/images/maya_the_bee.png',addonString(100).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''הדרדסים'''
-	addDir('הדרדסים',['&youtube_pl=PL66F75CE8DFB7A2A2', '&youtube_pl=PLo3vmw8N0knb9tZuIy7AR9fMPTUzr1oiI', '&sdarot=series_id=236&series_name=%d7%94%d7%93%d7%a8%d7%93%d7%a1%d7%99%d7%9d%20-%20%d7%9e%d7%93%d7%95%d7%91%d7%91&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f236%2fthe-smurfs-%d7%94%d7%93%d7%a8%d7%93%d7%a1%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&hotVOD=http%3a%2f%2fhot.ynet.co.il%2fExt%2fComp%2fHot%2fTopSeriesPlayer_Hot%2fCdaTopSeriesPlayer_VidItems_Hot%2f0%2c13031%2cL-10842-525-0-0%2c00.html', '&hotVOD=http%3A%2F%2Fhot.ynet.co.il%2FCmn%2FApp%2FVideo%2FCmmAppVideoApi_AjaxItems%2F0%2C13776%2C48507-0%2C00.html'],17,'http://f.nanafiles.co.il/upload/Xternal/IsraBlog/73/34/75/753473/misc/23130510.jpg',addonString(104000).encode('utf-8'),'1',50, getAddonFanart(background))
-	
+	list =[]
+	list.append('&youtube_pl=PL66F75CE8DFB7A2A2')
+	list.append('&youtube_pl=PLo3vmw8N0knb9tZuIy7AR9fMPTUzr1oiI')
+	list.append('&youtube_')
+	list.append('&youtube_')
+	list.append('&sdarot=series_id=236&series_name=%d7%94%d7%93%d7%a8%d7%93%d7%a1%d7%99%d7%9d%20-%20%d7%9e%d7%93%d7%95%d7%91%d7%91&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f236%2fthe-smurfs-%d7%94%d7%93%d7%a8%d7%93%d7%a1%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	list.append('&hotVOD=http%3a%2f%2fhot.ynet.co.il%2fExt%2fComp%2fHot%2fTopSeriesPlayer_Hot%2fCdaTopSeriesPlayer_VidItems_Hot%2f0%2c13031%2cL-10842-525-0-0%2c00.html',)
+	list.append('&hotVOD=http%3A%2F%2Fhot.ynet.co.il%2FCmn%2FApp%2FVideo%2FCmmAppVideoApi_AjaxItems%2F0%2C13776%2C48507-0%2C00.html')
+	addDir('הדרדסים',list,17,'http://f.nanafiles.co.il/upload/Xternal/IsraBlog/73/34/75/753473/misc/23130510.jpg',addonString(104000).encode('utf-8'),'1',50, getAddonFanart(background))
+
 	'''הזרבובים'''
-	addDir("הזרבובים",['&youtube_pl=PLR7DTcU2p0QiY-wI8KC6f01uzKLDZcuAc', '&sdarot=season_id=1&series_id=1313&series_name=%d7%94%d7%96%d7%a8%d7%91%d7%95%d7%91%d7%99%d7%9d&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1313%2fthe-snorks-%d7%94%d7%96%d7%a8%d7%91%d7%95%d7%91%d7%99%d7%9d'],17,'http://www.sdarot.pm/media/series/1313.jpg','הזרבובים הם יצורים תת מימיים, עליזים, ססגוניים, שמשתמשים בשנורקל שעל ראשם כדי לנוע במהירות במים וכדי לעשות מוסיקה.','1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLR7DTcU2p0QiY-wI8KC6f01uzKLDZcuAc')
+	list.append('&sdarot=season_id=1&series_id=1313&series_name=%d7%94%d7%96%d7%a8%d7%91%d7%95%d7%91%d7%99%d7%9d&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1313%2fthe-snorks-%d7%94%d7%96%d7%a8%d7%91%d7%95%d7%91%d7%99%d7%9d')
+	addDir('הזרבובים',list,17,'http://www.sdarot.pm/media/series/1313.jpg','הזרבובים הם יצורים תת מימיים, עליזים, ססגוניים, שמשתמשים בשנורקל שעל ראשם כדי לנוע במהירות במים וכדי לעשות מוסיקה.','1',50, getAddonFanart(background))
 	
 	'''החתולים הסמוראים'''
 	addDir("החתולים הסמוראים",['&youtube_pl=PLR7DTcU2p0QhPmznEmitRHkv5RcUG3E-s'],17,'http://www.sdarot.pm/media/series/1147.jpg',"כשרובוט גרעיני עתיר ממדים קופץ לבקר בעירכם, למי תקראו? לחתולים הסמוראים!! פעולה, בידור והרבה אנשובי, הם המרכיבים העיקרים לרקיחת סדרת הרפתקאות מרגשות של חבורת החתולים הסמוראים, שוחרי הפיצה. כאשר הם אינם עסוקים בהצלת העולם מציפורניהם של אדוני הרשע והפשע, מנהלים החתולים הלוחמניים בית פיצה. אבל כל אימת שהרשע נושא אל-על את ראשו' הופכת הפיצריה החתולית למטה היי-טקי מתוחכם." + '[CR]' + 'מחמ"לם המצוייד, שולפים החתולים את ציפורניהם המושחזות ונכנסים לפעולה מהירה.','1',50, getAddonFanart(background))
 	
 	'''הקטקטים'''
-	addDir("הקטקטים",['&youtube_pl=PLR7DTcU2p0Qg5sF-jE09YnRymKba8N8l_','&youtube_pl=PLN0EJVTzRDL-WaGew7sZQHQc1l48LSZmp'],17,'http://www.23tv.co.il/sip_storage/FILES/5/8305.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))	
+	list =[]
+	list.append('&youtube_pl=PLR7DTcU2p0Qg5sF-jE09YnRymKba8N8l_')
+	list.append('&youtube_pl=PLN0EJVTzRDL-WaGew7sZQHQc1l48LSZmp')
+	addDir('הקטקטים',list,17,'http://www.23tv.co.il/sip_storage/FILES/5/8305.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))	
 	
 	'''המומינים'''
-	addDir("המומינים",['&youtube_pl=PL_8KXLhQVQMLvEJlwakyjEeFfOgGQKaCo','&youtube_pl=PL_8KXLhQVQMLB8AzFqkq5Tg7c_8ZX8RRb', '&youtube_pl=PLN0EJVTzRDL-IJiTK4_B1ni8tlRNQvaBg'],17,'http://upload.wikimedia.org/wikipedia/he/2/2b/%D7%94%D7%9E%D7%95%D7%9E%D7%99%D7%A0%D7%99%D7%9D.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL_8KXLhQVQMLvEJlwakyjEeFfOgGQKaCo')
+	list.append('&youtube_pl=PL_8KXLhQVQMLB8AzFqkq5Tg7c_8ZX8RRb')
+	list.append('&youtube_pl=PLN0EJVTzRDL-IJiTK4_B1ni8tlRNQvaBg')
+	addDir('המומינים',list,17,'http://upload.wikimedia.org/wikipedia/he/2/2b/%D7%94%D7%9E%D7%95%D7%9E%D7%99%D7%A0%D7%99%D7%9D.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''המעופפים הנועזים'''
-	addDir("המעופפים הנועזים",['&youtube_pl=PLR7DTcU2p0QhYwFJuI0zFXFmAN-q6n4A0','&youtube_pl=PL_8KXLhQVQMLhguXwe-d2HjvficZsfbEj','&sdarot=season_id=1&series_id=1387&series_name=%d7%94%d7%9e%d7%a2%d7%95%d7%a4%d7%a4%d7%99%d7%9d%20%d7%94%d7%a0%d7%95%d7%a2%d7%96%d7%99%d7%9d%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1387%2fthe-little-flying-bears-%d7%94%d7%9e%d7%a2%d7%95%d7%a4%d7%a4%d7%99%d7%9d-%d7%94%d7%a0%d7%95%d7%a2%d7%96%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://upload.wikimedia.org/wikipedia/he/archive/e/e8/20060406072630!Flying_bears.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLR7DTcU2p0QhYwFJuI0zFXFmAN-q6n4A0')
+	list.append('&youtube_pl=PL_8KXLhQVQMLhguXwe-d2HjvficZsfbEj')
+	list.append('&youtube_')
+	list.append('&youtube_')
+	list.append('&sdarot=season_id=1&series_id=1387&series_name=%d7%94%d7%9e%d7%a2%d7%95%d7%a4%d7%a4%d7%99%d7%9d%20%d7%94%d7%a0%d7%95%d7%a2%d7%96%d7%99%d7%9d%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1387%2fthe-little-flying-bears-%d7%94%d7%9e%d7%a2%d7%95%d7%a4%d7%a4%d7%99%d7%9d-%d7%94%d7%a0%d7%95%d7%a2%d7%96%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('המעופפים הנועזים',list,17,'http://upload.wikimedia.org/wikipedia/he/archive/e/e8/20060406072630!Flying_bears.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''הלב מרקו'''
 	addDir("הלב מרקו",['&youtube_pl=PL_8KXLhQVQMLx3W2W6YXTmaNHoPmlLl28'],17,'http://www.dossinet.me/coverage_pics/a0b25bf2f9a27e362a22f5a1dfac507f.jpg',addonString(110).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''הענק הירוק'''
+	#סדרות בטוח
 	if General_TrustedOnly == "true" or admin: addDir("הענק הירוק",['&sdarot=series_id=1738&series_name=%d7%94%d7%a2%d7%a0%d7%a7%20%d7%94%d7%99%d7%a8%d7%95%d7%a7%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1738%2fthe-incredible-hulk-%d7%94%d7%a2%d7%a0%d7%a7-%d7%94%d7%99%d7%a8%d7%95%d7%a7-%d7%9e%d7%93%d7%95%d7%91%d7%91'],6,'http://www.sdarot.pm/media/series/1738.jpg','"הענק" (באנגלית: The Incredible Hulk, או בכינויו העברי "הענק הירוק") הוא דמות בדיונית המופיעה בחוברות קומיקס של חברת מארוול קומיקס.[CR]','1',50, getAddonFanart(background))
 	
 	'''הפנתר הורוד'''
-	addDir('הפנתר הורוד',['&sdarot=series_id=1347&series_name=%d7%94%d7%a4%d7%a0%d7%aa%d7%a8%20%d7%94%d7%95%d7%95%d7%a8%d7%95%d7%93%20%2a%d7%90%d7%99%d7%9c%d7%9d%2a&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1347%2fthe-pink-panther-cartoons-%d7%94%d7%a4%d7%a0%d7%aa%d7%a8-%d7%94%d7%95%d7%95%d7%a8%d7%95%d7%93-%d7%90%d7%99%d7%9c%d7%9d', '&youtube_ch=PinkPanthersShow'],6,'http://www.sdarot.pm/media/series/1347.jpg',addonString(113).encode('utf-8'),'1',50, getAddonFanart(background))
+	if General_TrustedOnly == "true" or admin: addDir('הפנתר הורוד',['&sdarot=series_id=1347&series_name=%d7%94%d7%a4%d7%a0%d7%aa%d7%a8%20%d7%94%d7%95%d7%95%d7%a8%d7%95%d7%93%20%2a%d7%90%d7%99%d7%9c%d7%9d%2a&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1347%2fthe-pink-panther-cartoons-%d7%94%d7%a4%d7%a0%d7%aa%d7%a8-%d7%94%d7%95%d7%95%d7%a8%d7%95%d7%93-%d7%90%d7%99%d7%9c%d7%9d', '&youtube_ch=PinkPanthersShow'],6,'http://www.sdarot.pm/media/series/1347.jpg',addonString(113).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''וולברין והאקס מן'''
-	addDir("וולברין והאקס מן",['&youtube_pl=PLR7DTcU2p0QhGsv3LuA3GnCJWjoPBCafl', '&sdarot=season_id=1&series_id=823&series_name=%d7%95%d7%95%d7%9c%d7%91%d7%a8%d7%99%d7%9f%20%d7%95%d7%94%d7%90%d7%a7%d7%a1-%d7%9e%d7%9f%20%2a%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f823%2fwolverine-and-the-x-men-%d7%95%d7%95%d7%9c%d7%91%d7%a8%d7%99%d7%9f-%d7%95%d7%94%d7%90%d7%a7%d7%a1-%d7%9e%d7%9f-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94'],17,'http://i.ytimg.com/vi/_C9qXB0iPUY/hqdefault.jpg','שנה אחרי פיצוץ מסתורי בבית הספר למוטנטים לוגן מתעמת שוב מול מוס שמכניס לכלא משפחה שהחביאה את לוגן. האנק מנסה לפענח את הפיצוץ בביה"ס ויחד עם לוגן מתכונן למלחמה הקרובה. וולברין ואקס מן - וולברין מאחד את צוות אקס מן- צוות מוטנטים רודפי השלום. הצוות מתמודד גם מול אויבים מוטנטים בהנהגתו של מגנטו, וגם מול בני אדם, בפיקודו של הסנאטור קלי, ומנסה למנוע מלחמה בין בני האדם למוטנטים שתביא להרס עולמי/','1',"", getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLR7DTcU2p0QhGsv3LuA3GnCJWjoPBCafl')
+	list.append('&sdarot=season_id=1&series_id=823&series_name=%d7%95%d7%95%d7%9c%d7%91%d7%a8%d7%99%d7%9f%20%d7%95%d7%94%d7%90%d7%a7%d7%a1-%d7%9e%d7%9f%20%2a%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f823%2fwolverine-and-the-x-men-%d7%95%d7%95%d7%9c%d7%91%d7%a8%d7%99%d7%9f-%d7%95%d7%94%d7%90%d7%a7%d7%a1-%d7%9e%d7%9f-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
+	addDir('וולברין והאקס מן',list,17,'http://i.ytimg.com/vi/_C9qXB0iPUY/hqdefault.jpg','שנה אחרי פיצוץ מסתורי בבית הספר למוטנטים לוגן מתעמת שוב מול מוס שמכניס לכלא משפחה שהחביאה את לוגן. האנק מנסה לפענח את הפיצוץ בביה"ס ויחד עם לוגן מתכונן למלחמה הקרובה. וולברין ואקס מן - וולברין מאחד את צוות אקס מן- צוות מוטנטים רודפי השלום. הצוות מתמודד גם מול אויבים מוטנטים בהנהגתו של מגנטו, וגם מול בני אדם, בפיקודו של הסנאטור קלי, ומנסה למנוע מלחמה בין בני האדם למוטנטים שתביא להרס עולמי/','1',"", getAddonFanart(background))
 	
 	'''חוש חש הבלש'''
-	addDir("חוש חש הבלש",['&sdarot=season_id=1&series_id=1397&series_name=%d7%97%d7%95%d7%a9%20%d7%97%d7%a9%20%d7%94%d7%91%d7%9c%d7%a9%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary=%d7%a1%d7%93%d7%a8%d7%aa%20%d7%90%d7%a0%d7%99%d7%9e%d7%a6%d7%99%d7%94%20%d7%a7%d7%95%d7%9e%d7%99%d7%aa%2c%20%22%d7%97%d7%95%d7%a9%20%d7%97%d7%a9%22%20%d7%94%d7%95%d7%90%20%d7%91%d7%9c%d7%a9%20%d7%9e%d7%a4%d7%95%d7%96%d7%a8%2c%20%d7%9e%d7%92%d7%95%d7%a9%d7%9d%20%d7%95%d7%9c%d7%90%20%d7%99%d7%95%d7%a6%d7%9c%d7%97%20%d7%a9%d7%91%d7%92%d7%95%d7%a4%d7%95%20%d7%94%d7%95%d7%a9%d7%aa%d7%9c%d7%95%20%d7%90%d7%99%d7%91%d7%a8%d7%99%d7%9d%20%d7%91%d7%99%d7%95%d7%a0%d7%99%d7%99%d7%9d%20%d7%a9%d7%95%d7%a0%d7%99%d7%9d%20%d7%90%d7%a9%d7%a8%20%d7%9e%d7%a7%d7%a0%d7%99%d7%9d%20%d7%9c%d7%95%20%d7%9b%d7%95%d7%97%d7%95%d7%aa%20%d7%a2%d7%9c%20%d7%98%d7%91%d7%a2%d7%99%d7%99%d7%9d.%20%d7%90%d7%95%d7%99%d7%91%d7%95%20%d7%94%d7%a2%d7%99%d7%a7%d7%a8%d7%99%20%d7%94%d7%95%d7%90%20%d7%93%d7%95%d7%a7%d7%98%d7%95%d7%a8%20%d7%a8%d7%a9%d7%a2%20%d7%95%d7%9e%d7%a1%d7%aa%d7%95%d7%a8%d7%99%2c%20%d7%9e%d7%a0%d7%94%d7%99%d7%92%20%d7%90%d7%a8%d7%92%d7%95%d7%9f%20%d7%a4%d7%a9%d7%a2.%20%d7%9c%d7%97%d7%95%d7%a9%20%d7%97%d7%a9%20%d7%a2%d7%95%d7%96%d7%a8%d7%99%d7%9d%20%d7%90%d7%97%d7%99%d7%99%d7%a0%d7%99%d7%aa%d7%95%20%d7%a7%d7%a8%d7%9f%20%d7%95%d7%9b%d7%9c%d7%91%d7%94%20%d7%94%d7%97%d7%9b%d7%9d%20%22%d7%9e%d7%95%d7%97%22%2c%20%d7%9b%d7%9e%d7%95%20%d7%92%d7%9d%20%d7%a9%d7%a0%d7%99%20%d7%94%d7%a8%d7%95%d7%91%d7%95%d7%98%d7%99%d7%9d%20%d7%a4%d7%99%d7%93%d7%92%27%d7%98%20%d7%95%d7%93%d7%99%d7%92%27%d7%98%20%d7%94%d7%9e%d7%9b%d7%95%d7%a0%d7%99%d7%9d%20%22%d7%94%d7%97%d7%95%d7%a9%d7%97%d7%a9%d7%99%d7%9d%22.%20%d7%94%d7%9d%20%d7%9e%d7%a6%d7%99%d7%9c%d7%99%d7%9d%20%d7%90%d7%95%d7%aa%d7%95%20%d7%9e%d7%a1%d7%9b%d7%a0%d7%95%d7%aa%20%d7%95%d7%9e%d7%9b%d7%95%d7%95%d7%a0%d7%99%d7%9d%20%d7%90%d7%95%d7%aa%d7%95%20%d7%9c%d7%a1%d7%99%d7%9b%d7%95%d7%9c%20%d7%94%d7%a4%d7%a9%d7%a2%20%d7%9e%d7%91%d7%9c%d7%99%20%d7%a9%d7%94%d7%95%d7%90%20%d7%9e%d7%95%d7%93%d7%a2%20%d7%9c%d7%9b%d7%9a%20%d7%91%d7%9b%d7%9c%d7%9c.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1397%2finspector-gadget-%d7%97%d7%95%d7%a9-%d7%97%d7%a9-%d7%94%d7%91%d7%9c%d7%a9-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&youtube_pl=PLcnOogeoQ4TrfP9mO57AQY543KTLaTl8N', '&youtube_id=MbgrFDbE3b0', '&youtube_id=kWmBP09MM9w', '&youtube_id=P3gW3zPEhjY', '&youtube_id=uj9miIc0Ow4'],17,'http://www.sdarot.pm/media/series/1397.jpg','','1',50, getAddonFanart(background))
+	list = []
+	list.append('&sdarot=season_id=1&series_id=1397&series_name=%d7%97%d7%95%d7%a9%20%d7%97%d7%a9%20%d7%94%d7%91%d7%9c%d7%a9%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary=%d7%a1%d7%93%d7%a8%d7%aa%20%d7%90%d7%a0%d7%99%d7%9e%d7%a6%d7%99%d7%94%20%d7%a7%d7%95%d7%9e%d7%99%d7%aa%2c%20%22%d7%97%d7%95%d7%a9%20%d7%97%d7%a9%22%20%d7%94%d7%95%d7%90%20%d7%91%d7%9c%d7%a9%20%d7%9e%d7%a4%d7%95%d7%96%d7%a8%2c%20%d7%9e%d7%92%d7%95%d7%a9%d7%9d%20%d7%95%d7%9c%d7%90%20%d7%99%d7%95%d7%a6%d7%9c%d7%97%20%d7%a9%d7%91%d7%92%d7%95%d7%a4%d7%95%20%d7%94%d7%95%d7%a9%d7%aa%d7%9c%d7%95%20%d7%90%d7%99%d7%91%d7%a8%d7%99%d7%9d%20%d7%91%d7%99%d7%95%d7%a0%d7%99%d7%99%d7%9d%20%d7%a9%d7%95%d7%a0%d7%99%d7%9d%20%d7%90%d7%a9%d7%a8%20%d7%9e%d7%a7%d7%a0%d7%99%d7%9d%20%d7%9c%d7%95%20%d7%9b%d7%95%d7%97%d7%95%d7%aa%20%d7%a2%d7%9c%20%d7%98%d7%91%d7%a2%d7%99%d7%99%d7%9d.%20%d7%90%d7%95%d7%99%d7%91%d7%95%20%d7%94%d7%a2%d7%99%d7%a7%d7%a8%d7%99%20%d7%94%d7%95%d7%90%20%d7%93%d7%95%d7%a7%d7%98%d7%95%d7%a8%20%d7%a8%d7%a9%d7%a2%20%d7%95%d7%9e%d7%a1%d7%aa%d7%95%d7%a8%d7%99%2c%20%d7%9e%d7%a0%d7%94%d7%99%d7%92%20%d7%90%d7%a8%d7%92%d7%95%d7%9f%20%d7%a4%d7%a9%d7%a2.%20%d7%9c%d7%97%d7%95%d7%a9%20%d7%97%d7%a9%20%d7%a2%d7%95%d7%96%d7%a8%d7%99%d7%9d%20%d7%90%d7%97%d7%99%d7%99%d7%a0%d7%99%d7%aa%d7%95%20%d7%a7%d7%a8%d7%9f%20%d7%95%d7%9b%d7%9c%d7%91%d7%94%20%d7%94%d7%97%d7%9b%d7%9d%20%22%d7%9e%d7%95%d7%97%22%2c%20%d7%9b%d7%9e%d7%95%20%d7%92%d7%9d%20%d7%a9%d7%a0%d7%99%20%d7%94%d7%a8%d7%95%d7%91%d7%95%d7%98%d7%99%d7%9d%20%d7%a4%d7%99%d7%93%d7%92%27%d7%98%20%d7%95%d7%93%d7%99%d7%92%27%d7%98%20%d7%94%d7%9e%d7%9b%d7%95%d7%a0%d7%99%d7%9d%20%22%d7%94%d7%97%d7%95%d7%a9%d7%97%d7%a9%d7%99%d7%9d%22.%20%d7%94%d7%9d%20%d7%9e%d7%a6%d7%99%d7%9c%d7%99%d7%9d%20%d7%90%d7%95%d7%aa%d7%95%20%d7%9e%d7%a1%d7%9b%d7%a0%d7%95%d7%aa%20%d7%95%d7%9e%d7%9b%d7%95%d7%95%d7%a0%d7%99%d7%9d%20%d7%90%d7%95%d7%aa%d7%95%20%d7%9c%d7%a1%d7%99%d7%9b%d7%95%d7%9c%20%d7%94%d7%a4%d7%a9%d7%a2%20%d7%9e%d7%91%d7%9c%d7%99%20%d7%a9%d7%94%d7%95%d7%90%20%d7%9e%d7%95%d7%93%d7%a2%20%d7%9c%d7%9b%d7%9a%20%d7%91%d7%9b%d7%9c%d7%9c.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1397%2finspector-gadget-%d7%97%d7%95%d7%a9-%d7%97%d7%a9-%d7%94%d7%91%d7%9c%d7%a9-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	list.append('&youtube_pl=PLcnOogeoQ4TrfP9mO57AQY543KTLaTl8N')
+	list.append('&youtube_id=MbgrFDbE3b0')
+	list.append('&youtube_id=kWmBP09MM9w')
+	list.append('&youtube_id=P3gW3zPEhjY')
+	list.append('&youtube_id=uj9miIc0Ow4')
+	addDir("חוש חש הבלש",list,17,'http://www.sdarot.pm/media/series/1397.jpg','','1',50, getAddonFanart(background, custom="http://www.sdarot.pm/media/series/1397.jpg"))
 	
 	'''טום וג'רי'''
-	addDir("טום וג'רי",['&youtube_pl=PLN0EJVTzRDL-jbMDnITZcYO48kE1Hv3mc', '&youtube_pl=PLs3DueTtwGGppFDT2xv9zVBf4mz6RuOLj', '&youtube_pl=PL6hnqKp_bygo_2MFE6j3WWLitYXwhHGx3'],17,'https://upload.wikimedia.org/wikipedia/he/thumb/2/23/Tomjerrylogo40s.jpg/280px-Tomjerrylogo40s.jpg',"טום וג'רי (באנגלית: Tom and Jerry)‏ היא שמה של סדרת סרטי אנימציה קצרים מיוחדים ומצחיקים שנוצרו על ידי ויליאם האנה וג'וזף ברברה עבור MGM בשנות הארבעים, שנות החמישים ושנות השישים.",'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLN0EJVTzRDL-jbMDnITZcYO48kE1Hv3mc')
+	list.append('&youtube_pl=PLs3DueTtwGGppFDT2xv9zVBf4mz6RuOLj')
+	list.append('&youtube_pl=PL6hnqKp_bygo_2MFE6j3WWLitYXwhHGx3')
+	list.append('&youtube_')
+	addDir("טום וג'רי",list,17,'https://upload.wikimedia.org/wikipedia/he/thumb/2/23/Tomjerrylogo40s.jpg/280px-Tomjerrylogo40s.jpg',"טום וג'רי (באנגלית: Tom and Jerry)‏ היא שמה של סדרת סרטי אנימציה קצרים מיוחדים ומצחיקים שנוצרו על ידי ויליאם האנה וג'וזף ברברה עבור MGM בשנות הארבעים, שנות החמישים ושנות השישים.",'1',50, getAddonFanart(background))
 	
 	'''משטרת האגדות'''
 	addDir("משטרת האגדות",['&youtube_pl=PLR7DTcU2p0QiaEmc56lGHMpxW4ladE93X'],17,'http://www.tvland.co.il/Pics/mishterethaagadotbig.jpg',addonString(110).encode('utf-8'),'1',"", getAddonFanart(background))
@@ -390,16 +482,32 @@ def CATEGORIES104(admin):
 	'''פאואר ריינגרס'''
 	
 	'''פיטר פן'''
-	addDir("פיטר פן",['&youtube_pl=PL_8KXLhQVQMIMJ_lQkl0Z393wwTtRgg_i', '&youtube_pl=PLiDCIQSNnvwc-FqtPLIy3i3i5p0UoB5Fr', '&sdarot=season_id=1&series_id=1000&series_name=%d7%a4%d7%99%d7%98%d7%a8%20%d7%a4%d7%9f%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1000%2fpeter-pan-%d7%a4%d7%99%d7%98%d7%a8-%d7%a4%d7%9f-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpAqoUxOIErj3Kgl4053S4oixnvZCcvoJwhf83xupmupsHWKh8',"הטלוויזיה החינוכית חוזרת לשדר את הסדרה הקלסית פיטר פן, המבוססת על ספרו של ג'יימס מתיו ברי, ספר שיצא בשנת 1911 תחת השם"'"פיטר וּוונדי".','1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL_8KXLhQVQMIMJ_lQkl0Z393wwTtRgg_i')
+	list.append('&youtube_pl=PLiDCIQSNnvwc-FqtPLIy3i3i5p0UoB5Fr')
+	list.append('&sdarot=season_id=1&series_id=1000&series_name=%d7%a4%d7%99%d7%98%d7%a8%20%d7%a4%d7%9f%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1000%2fpeter-pan-%d7%a4%d7%99%d7%98%d7%a8-%d7%a4%d7%9f-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('פיטר פן',list,17,'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpAqoUxOIErj3Kgl4053S4oixnvZCcvoJwhf83xupmupsHWKh8',"הטלוויזיה החינוכית חוזרת לשדר את הסדרה הקלסית פיטר פן, המבוססת על ספרו של ג'יימס מתיו ברי, ספר שיצא בשנת 1911 תחת השם"'"פיטר וּוונדי".','1',50, getAddonFanart(background))
 	
 	'''פינגווינים'''
 	addDir("פינגווינים",['&youtube_pl=PL_8KXLhQVQMIkR9iafygY0ztBUPSAyUki'],17,'https://i.ytimg.com/vi/vzVdiqGJZ7E/default.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''פינוקיו'''
-	addDir('פינוקיו',['&youtube_pl=PL17BB1526E0625514', '&sdarot=series_id=904&series_name=%d7%a4%d7%99%d7%a0%d7%95%d7%a7%d7%99%d7%95%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f904%2fthe-adventures-of-pinocchio-%d7%a4%d7%99%d7%a0%d7%95%d7%a7%d7%99%d7%95-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&youtube_id=V098tHKky5A', '&youtube_id=Rv1VHwYWPsE'],17,'http://www.sdarot.pm/media/series/904.jpg',"ג'פטו, הנגר הבודד, גילף מבול עץ בובה שניעורה לחיים והפכה לבן שמעולם לא היה לו.[CR]"'פינוקיו השובב נשלח לבי"ס, אך ברח מהבית, ויצא לגלות את העולם ולעבור הרפתקאות רבות עם הברווזה בלה.','1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL17BB1526E0625514')
+	list.append('&sdarot=series_id=904&series_name=%d7%a4%d7%99%d7%a0%d7%95%d7%a7%d7%99%d7%95%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f904%2fthe-adventures-of-pinocchio-%d7%a4%d7%99%d7%a0%d7%95%d7%a7%d7%99%d7%95-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	list.append('&youtube_id=V098tHKky5A')
+	list.append('&youtube_id=Rv1VHwYWPsE')
+	addDir('פינוקיו',list,17,'http://www.sdarot.pm/media/series/904.jpg',"ג'פטו, הנגר הבודד, גילף מבול עץ בובה שניעורה לחיים והפכה לבן שמעולם לא היה לו.[CR]"'פינוקיו השובב נשלח לבי"ס, אך ברח מהבית, ויצא לגלות את העולם ולעבור הרפתקאות רבות עם הברווזה בלה.','1',50, getAddonFanart(background))
 	
 	'''קופיקו'''
-	addDir('קופיקו',['&youtube_pl=UCCktKuBGZ1kHifzp9Mxu6Eg', '&youtube_pl=PLN0EJVTzRDL_9qHYdDXgf6tslifiY_4zI', '&youtube_pl=PLR7DTcU2p0QhDzYbbniDNwSbXUM_p6N3f', '&youtube_pl=PLR7DTcU2p0QgEdLPHhrhKtxElvYVrseAQ', '&youtube_pl=PLR7DTcU2p0QhNGUffSgu8_5dP3lnOGZTx', '&sdarot=season_id=1&series_id=1810&series_name=%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95%20%d7%97%d7%95%d7%a7%d7%99%20%d7%94%d7%92%27%d7%95%d7%a0%d7%92%d7%9c&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1810%2fkofiko-jungle-laws-%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95-%d7%97%d7%95%d7%a7%d7%99-%d7%94%d7%92-%d7%95%d7%a0%d7%92%d7%9c', '&sdarot=series_id=422&series_name=%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f422%2fkofiko-%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95'],17,'http://www.sdarot.pm/media/series/422.jpg',addonString(104070).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=UCCktKuBGZ1kHifzp9Mxu6Eg')
+	list.append('&youtube_pl=PLN0EJVTzRDL_9qHYdDXgf6tslifiY_4zI')
+	list.append('&youtube_pl=PLR7DTcU2p0QhDzYbbniDNwSbXUM_p6N3f')
+	list.append('&youtube_pl=PLR7DTcU2p0QgEdLPHhrhKtxElvYVrseAQ')
+	list.append('&youtube_pl=PLR7DTcU2p0QhNGUffSgu8_5dP3lnOGZTx')
+	list.append('&sdarot=season_id=1&series_id=1810&series_name=%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95%20%d7%97%d7%95%d7%a7%d7%99%20%d7%94%d7%92%27%d7%95%d7%a0%d7%92%d7%9c&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1810%2fkofiko-jungle-laws-%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95-%d7%97%d7%95%d7%a7%d7%99-%d7%94%d7%92-%d7%95%d7%a0%d7%92%d7%9c', '&sdarot=series_id=422&series_name=%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f422%2fkofiko-%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95')
+	addDir('קופיקו',list,17,'http://www.sdarot.pm/media/series/422.jpg',addonString(104070).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''קספר'''
 	
@@ -407,10 +515,24 @@ def CATEGORIES104(admin):
 	if General_TrustedOnly == "true" or admin: addDir('רובוטריקים',['&sdarot=series_id=1395&series_name=%d7%a8%d7%95%d7%91%d7%95%d7%98%d7%a8%d7%99%d7%a7%d7%99%d7%9d%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1395%2ftransformers-hebdub-%d7%a8%d7%95%d7%91%d7%95%d7%98%d7%a8%d7%99%d7%a7%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/1395.jpg','הרובוטריקים (באנגלית: Transformers) הנה סדרת תכניות ילדים שהומצאה בעקבות סדרת צעצועים מצליחה של חברת טאקארה היפנית ולאחריה נוצרו גם סרטים נלווים וספרי קומיקס.[CR]היא נוצרה בארצות הברית בשנות ה-80. בסדרה מתואר מאבק בין מכונות?ענק בעלות תודעה, המסוגלות להפוך את צורתן מצורה דמוית-אנוש לצורה אחרת, לרוב כלי-רכב שונים.[CR]בישראל שודרו שתי העונות הראשונות של הסדרה בשנות השמונים בטלוויזיה החינוכית בדיבוב המקורי באנגלית עם כתוביות בעברית. כיום משודרת הסדרה בערוץ פוקס קידס בפרקים חדשים ובדיבוב לעברית.','1',50, getAddonFanart(background))
 	
 	'''רחוב סומסום'''
-	addDir('רחוב סומסום',['&youtube_pl=PLN0EJVTzRDL-zyHvJ7O4PTkwfwhm0GM0O', '&youtube_id=S9yMeuZnqf8', '&youtube_id=8Ce3d4Y1lXc', '&youtube_id=irGBfOr5M-0', '&youtube_id=7MsiQVLXANI', '&youtube_id=b9cppzqQEdk', '&youtube_id=UbebFD2BzSQ', '&youtube_id=5dHad5l61t0', '&youtube_id=f4Z0MxSQ3dc', '&youtube_id=hBsDetJvy2E', '&youtube_id=Y8CFfUbvuZI', '&youtube_id=ELQ0xiL5X7I', '&youtube_id=5uRyIMy2ktA'],17,'https://upload.wikimedia.org/wikipedia/he/thumb/4/41/SessemeStreet.jpg/200px-SessemeStreet.jpg',addonString(104000).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLN0EJVTzRDL-zyHvJ7O4PTkwfwhm0GM0O')
+	list.append('&youtube_id=S9yMeuZnqf8')
+	list.append('&youtube_id=8Ce3d4Y1lXc')
+	list.append('&youtube_id=irGBfOr5M-0')
+	list.append('&youtube_id=7MsiQVLXANI')
+	list.append('&youtube_id=b9cppzqQEdk')
+	list.append('&youtube_id=UbebFD2BzSQ')
+	list.append('&youtube_id=5dHad5l61t0')
+	list.append('&youtube_id=f4Z0MxSQ3dc')
+	list.append('&youtube_id=hBsDetJvy2E')
+	list.append('&youtube_id=Y8CFfUbvuZI')
+	list.append('&youtube_id=ELQ0xiL5X7I')
+	list.append('&youtube_id=5uRyIMy2ktA')
+	addDir('רחוב סומסום',list,17,'https://upload.wikimedia.org/wikipedia/he/thumb/4/41/SessemeStreet.jpg/200px-SessemeStreet.jpg',addonString(104000).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''צבי הנינג'ה'''
-	addDir("צבי הנינג'ה",['&sdarot=season_id=1&series_id=636&series_name=%d7%a6%d7%91%d7%99%20%d7%94%d7%a0%d7%99%d7%a0%d7%92%27%d7%94%20%2a%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f636%2fteenage-mutant-ninja-turtles-%d7%a6%d7%91%d7%99-%d7%94%d7%a0%d7%99%d7%a0%d7%92-%d7%94-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94', '&youtube_id=W7B3NXG0aDY', '&youtube_id=E7naeIx3rqo'],17,'http://www.sdarot.pm/media/series/636.jpg',"צבי הנינג'ה היא סדרת אנימציה ופעולה פופולרית המבוססת במקור על קומיקס למבוגרים.[CR]הסדרה הופקה לטלוויזיה במקור לערוץ סינדיקציה, ואחר כך עברה ל-CBS. התוכנית שודרה בין השנים 1987 ל-1996.",'1',50, getAddonFanart(background))
+	if General_TrustedOnly == "true": addDir("צבי הנינג'ה",['&sdarot=season_id=1&series_id=636&series_name=%d7%a6%d7%91%d7%99%20%d7%94%d7%a0%d7%99%d7%a0%d7%92%27%d7%94%20%2a%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f636%2fteenage-mutant-ninja-turtles-%d7%a6%d7%91%d7%99-%d7%94%d7%a0%d7%99%d7%a0%d7%92-%d7%94-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94', '&youtube_id=W7B3NXG0aDY', '&youtube_id=E7naeIx3rqo'],17,'http://www.sdarot.pm/media/series/636.jpg',"צבי הנינג'ה היא סדרת אנימציה ופעולה פופולרית המבוססת במקור על קומיקס למבוגרים.[CR]הסדרה הופקה לטלוויזיה במקור לערוץ סינדיקציה, ואחר כך עברה ל-CBS. התוכנית שודרה בין השנים 1987 ל-1996.",'1',50, getAddonFanart(background))
 	
 	'''צבי הנינג'ה הדור הבא'''
 	if General_TrustedOnly == "true": addDir("צבי הנינג'ה הדור הבא",['&sdarot=series_id=1670&series_name=%d7%a6%d7%91%d7%99%20%d7%94%d7%a0%d7%99%d7%a0%d7%92%27%d7%94%3a%20%d7%94%d7%93%d7%95%d7%a8%20%d7%94%d7%91%d7%90%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1670%2fninja-turtles-the-next-mutation-%d7%a6%d7%91%d7%99-%d7%94%d7%a0%d7%99%d7%a0%d7%92-%d7%94-%d7%94%d7%93%d7%95%d7%a8-%d7%94%d7%91%d7%90-%d7%9e%d7%93%d7%95%d7%91%d7%91'],6,'http://www.sdarot.pm/media/series/862.jpg',"מאסטר צ'ונג אי, ידידו הוותיק של ספלינטר, חולה מאד. לפני מותו, הוא מבקש מבתו המאומצת להתאחד עם צבי הנינג'ה אשר בימים אלה התבגרו כדי להציל את האנושות מפני דרקון-לורד, אשר השתחרר מארץ החלומות ומתכוון לשלוט בעולם.[CR]",'1',50, getAddonFanart(background))
@@ -419,10 +541,13 @@ def CATEGORIES104(admin):
 	addDir("סנדוקאן",['&youtube_pl=PLR7DTcU2p0QgWYVQap5zPK0MkwJizYku_'],17,'http://www.sdarot.pm/media/series/1308.jpg','הסדרה מספרת את סיפור הרפתקאותיהם של סנדוקאן, נסיך שהודח מכיסאו ומנסה להשיב לעצמו את כס המלוכה ואת אהובתו, הנסיכה מריאנה, ושל יאנז, הרפתקן פורטוגזי המשמש כיד ימינו.','1',50, getAddonFanart(background))
 	
 	'''סופר סטרייקה'''
-	addDir(addonString(70).encode('utf-8'),['&sdarot=series_id=1566&series_name=%d7%a1%d7%95%d7%a4%d7%a8%20%d7%a1%d7%98%d7%a8%d7%99%d7%99%d7%a7%d7%94%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1566%2fsupa-strikas-%d7%a1%d7%95%d7%a4%d7%a8-%d7%a1%d7%98%d7%a8%d7%99%d7%99%d7%a7%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&youtube_pl=PLU6_PRY_7y1TQMr67fJ6WC2mzkqtVyU3B', '&youtube_pl=PLKMFPiSCwUk3bjgDUSlTPskV9rA74nBiB'],17,'http://www.musicaneto.com/wp-content/uploads/2015/03/6246725.jpg',addonString(170).encode('utf-8'),'1',50, getAddonFanart(background))
+	if General_TrustedOnly == "true":addDir(addonString(70).encode('utf-8'),['&sdarot=series_id=1566&series_name=%d7%a1%d7%95%d7%a4%d7%a8%20%d7%a1%d7%98%d7%a8%d7%99%d7%99%d7%a7%d7%94%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1566%2fsupa-strikas-%d7%a1%d7%95%d7%a4%d7%a8-%d7%a1%d7%98%d7%a8%d7%99%d7%99%d7%a7%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&youtube_pl=PLU6_PRY_7y1TQMr67fJ6WC2mzkqtVyU3B', '&youtube_pl=PLKMFPiSCwUk3bjgDUSlTPskV9rA74nBiB'],17,'http://www.musicaneto.com/wp-content/uploads/2015/03/6246725.jpg',addonString(170).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''שאלתיאל קוואק'''
-	addDir('שאלתיאל קוואק',['&youtube_pl=PL_8KXLhQVQMKOtRoV1SuOu95dvVo-ea2J', '&sdarot=series_id=1137&series_name=%d7%a9%d7%90%d7%9c%d7%aa%d7%99%d7%90%d7%9c%20%d7%a7%d7%95%d7%95%d7%90%d7%a7%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1137%2falfred-j-kwak-%d7%a9%d7%90%d7%9c%d7%aa%d7%99%d7%90%d7%9c-%d7%a7%d7%95%d7%95%d7%90%d7%a7-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/1137.jpg','זמן קצר לאחר לידתו, שאלתיאל קוואק מאבד את הוריו, אחיו ואחיותיו אשר נהרגים בתאונת דרכים.[CR]חפי החפרפרת, חבר טוב של משפחתו, מגדל אותו. יחד עם חבריו יוצא שאלתיאל להרפתקאות רבות ומשונות ומפיק לקחים. המדינה בה מתגוררים שאלתיאל קוואק וקרוביו היא מַיִמוניה (בהולנדית Groot-Waterland, באנגלית Great Waterland, כלומר "ארץ המים הגדולה").','1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL_8KXLhQVQMKOtRoV1SuOu95dvVo-ea2J')
+	list.append('&sdarot=series_id=1137&series_name=%d7%a9%d7%90%d7%9c%d7%aa%d7%99%d7%90%d7%9c%20%d7%a7%d7%95%d7%95%d7%90%d7%a7%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1137%2falfred-j-kwak-%d7%a9%d7%90%d7%9c%d7%aa%d7%99%d7%90%d7%9c-%d7%a7%d7%95%d7%95%d7%90%d7%a7-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('שאלתיאל קוואק',list,17,'http://www.sdarot.pm/media/series/1137.jpg','זמן קצר לאחר לידתו, שאלתיאל קוואק מאבד את הוריו, אחיו ואחיותיו אשר נהרגים בתאונת דרכים.[CR]חפי החפרפרת, חבר טוב של משפחתו, מגדל אותו. יחד עם חבריו יוצא שאלתיאל להרפתקאות רבות ומשונות ומפיק לקחים. המדינה בה מתגוררים שאלתיאל קוואק וקרוביו היא מַיִמוניה (בהולנדית Groot-Waterland, באנגלית Great Waterland, כלומר "ארץ המים הגדולה").','1',50, getAddonFanart(background))
 	
 	'''שלגיה ושבעת הגמדים'''
 	addDir("שלגיה ושבעת הגמדים",['&youtube_pl=PL_8KXLhQVQMKKrMMm0glr1TMQoxCjFuTk'],17,'http://www.coloring4fun.com/wp-content/uploads/2013/03/snow-white-600x300.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
@@ -452,7 +577,7 @@ def CATEGORIES105(admin):
 	'''plugin.video.seretil'''
 	check_seretil_me = urlcheck('http://seretil.me', ping=True)
 	check_10q_tv = urlcheck('http://10q.tv', ping=True)
-	check_gozlan_me = urlcheck('http://gozlan.me', ping=True)
+	check_gozlan_me = urlcheck('http://anonymouse.org/cgi-bin/anon-www.cgi/http://gozlan.eu/', ping=True)
 	check_movix_me = urlcheck('http://www.movix.me/series', ping=True) #GAL CHECK THIS (PING)
 	#if systemplatformwindows: output = terminal('ping seretil.me -n 1',"Connected2")
 	#else: output = terminal('ping -W 1 -w 1 -4 -q seretil.me',"Connected")
@@ -508,16 +633,28 @@ def CATEGORIES106(admin):
 	addDir(addonString(1).encode('utf-8'),list,17,'http://thatfunnyblog.com/wp-content/uploads/ktz/funny-animals-cartoons-compilati-lxzeyg0x67lqpugni93cr7kmelwdaxik009hkqzzao.jpg','','1',50, getAddonFanart(background))
 	
 	'''אוליבר'''
-	addDir('אוליבר',['&youtube_pl=PLRnOaTF6ebYrvwkVqB6fC-93hwHZmYnDk', '&youtube_id=UftKh1FeHSs'],17,'http://media.israel-music.com/images/7290013890849.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLRnOaTF6ebYrvwkVqB6fC-93hwHZmYnDk')
+	list.append('&youtube_id=UftKh1FeHSs')
+	addDir('אוליבר',list,17,'http://media.israel-music.com/images/7290013890849.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''בייבי איינשטיין'''
-	addDir('בייבי איינשטיין',['&youtube_pl=PLvadvyUkv4iFxFnsG0i1mLhuvR5nQBUcf', '&youtube_pl=PLFB481A7458E12A61'],17,'http://d202m5krfqbpi5.cloudfront.net/books/1170326163l/46377.jpg',addonString(120).encode('utf-8'),'1',50, getAddonFanart(background)) #TerrapinStation5
+	list =[]
+	list.append('&youtube_pl=PLvadvyUkv4iFxFnsG0i1mLhuvR5nQBUcf')
+	list.append('&youtube_pl=PLFB481A7458E12A61')
+	list.append('&youtube_')
+	list.append('&youtube_')
+	addDir('בייבי איינשטיין',list,17,'http://d202m5krfqbpi5.cloudfront.net/books/1170326163l/46377.jpg',addonString(120).encode('utf-8'),'1',50, getAddonFanart(background)) #TerrapinStation5
 	
 	'''בייבי'''
 	addDir('בייבי','UCj10fKNd5h64J_M9YIQu0Zw/playlists',9,'http://yt3.ggpht.com/-RYFi0L82fh4/AAAAAAAAAAI/AAAAAAAAAAA/1hhzmsuRybc/s88-c-k-no/photo.jpg',addonString(131).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''אוצר מילים עם נוני'''
-	addDir('אוצר מילים עם נוני',['&youtube_pl=PLErYJg2XgxyXmgk6cyROtlJh2g-Fk_T6n', '&youtube_id=hu7Wa2URXi4', '&youtube_id=zSHKufiJvL4'],17,'http://i.ytimg.com/vi/m67adbe1SOg/0.jpg',addonString(173).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLErYJg2XgxyXmgk6cyROtlJh2g-Fk_T6n')
+	list.append('&youtube_id=hu7Wa2URXi4')
+	list.append('&youtube_id=zSHKufiJvL4')
+	addDir('אוצר מילים עם נוני',list,17,'http://i.ytimg.com/vi/m67adbe1SOg/0.jpg',addonString(173).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''בילי בם בם'''
 	
@@ -536,14 +673,25 @@ def CATEGORIES106(admin):
 	list = []
 	list.append('&youtube_pl=PLnraPnhPHcc7NZwbC41nphBAe-1jxXVSN')
 	list.append('&youtube_id=DvYvtAoKye0')
-	#list.append('&youtube_pl=')
 	addDir('הארי הארנב',list,17,'https://i.ytimg.com/vi/_GASnq3zBuE/hqdefault.jpg','','1',50, getAddonFanart(background))
 	
 	'''הכבשה שושנה'''
-	addDir(addonString(10630).encode('utf-8'),['&wallaNew=item_id%3D2819037', '&wallaNew=item_id%3D2819043', '&wallaNew=item_id%3D2819050', '&wallaNew=item_id%3D2817560', '&wallaNew=item_id%3D2817583', '&wallaNew=item_id%3D2817533', '&wallaNew=item_id%3D2820067', '&youtube_pl=PLC47880737B43FF96'],17,'http://www.sdarot.pm/media/series/1487.jpg',addonString(106300).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&wallaNew=item_id%3D2819037')
+	list.append('&wallaNew=item_id%3D2819043')
+	list.append('&wallaNew=item_id%3D2819050')
+	list.append('&wallaNew=item_id%3D2817560')
+	list.append('&wallaNew=item_id%3D2817583')
+	list.append('&wallaNew=item_id%3D2817533')
+	list.append('&wallaNew=item_id%3D2820067')
+	list.append('&youtube_pl=PLC47880737B43FF96')
+	addDir('הכבשה שושנה',list,17,'http://www.sdarot.pm/media/series/1487.jpg',addonString(106300).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''הנימנונמים'''
-	addDir(addonString(10633).encode('utf-8'),['&wallaNew=seasonId%3d2556132', '&sdarot=season_id=1&series_id=873&series_name=%d7%94%d7%a0%d7%99%d7%9e%d7%a0%d7%95%d7%9e%d7%99%d7%9d%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f873%2fhanimnumim-%d7%94%d7%a0%d7%99%d7%9e%d7%a0%d7%95%d7%9e%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91'],6,'http://www.sdarot.pm/media/series/873.jpg',addonString(106300).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&wallaNew=seasonId%3d2556132')
+	list.append('&sdarot=season_id=1&series_id=873&series_name=%d7%94%d7%a0%d7%99%d7%9e%d7%a0%d7%95%d7%9e%d7%99%d7%9d%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f873%2fhanimnumim-%d7%94%d7%a0%d7%99%d7%9e%d7%a0%d7%95%d7%9e%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('הנימנונמים',list,6,'http://www.sdarot.pm/media/series/873.jpg',addonString(106300).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	''''''
 	
@@ -560,27 +708,55 @@ def CATEGORIES106(admin):
 	''''''
 	
 	'''טימי הטלה'''
-	addDir('טימי הטלה',['&youtube_pl=PLLkqDC9xIu8Z7Aflrjr9SVbULT-42942l', '&youtube_pl=PLnw_wYZBfzuNfTcbuUfPrDov2jC8APZk0', '&youtube_id=_vb2lCx36bA'],17,'http://www.littleprince.co.il/pub/5897/timmy/timmy~big%20and%20cuddly~hr~21017.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLLkqDC9xIu8Z7Aflrjr9SVbULT-42942l')
+	list.append('&youtube_pl=PLnw_wYZBfzuNfTcbuUfPrDov2jC8APZk0')
+	list.append('&youtube_id=_vb2lCx36bA')
+	addDir('טמי הטלה',list,17,'http://www.littleprince.co.il/pub/5897/timmy/timmy~big%20and%20cuddly~hr~21017.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''טין טן'''
 	
 	'''טיפה טופה'''
 	
 	'''טלטאביז'''
-	addDir(addonString(10642).encode('utf-8'),['&youtube_pl=PLBDE473A2E30EE847', '&youtube_id=TGmpQKg2NtQ', '&youtube_id=mAlgerULqyU', '&youtube_id=3cJYHKsa52E', '&youtube_id=BOzl3RHn4Io', '&youtube_id=VZzivZvWidI', '&youtube_id=NN_gqjA8jJQ', '&youtube_id=AL0RVZMr-VY', '&youtube_id=C_Km9NYD-Pw', '&youtube_id=d_zk--Iconw', '&youtube_id=d3yfZlIUwF4', '&youtube_id=GUWpiwVZ-gI', '&youtube_id=wTm5rDg8tqI', '&youtube_id=1E9Z0-ppTl0', '&youtube_id=JdKoA4lIENc', '&youtube_id=GI4j0xDtU5Y'],17,'https://upload.wikimedia.org/wikipedia/he/thumb/4/49/Teletubbies_DVD.jpg/200px-Teletubbies_DVD.jpg',addonString(106420).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLBDE473A2E30EE847')
+	list.append('&youtube_id=TGmpQKg2NtQ')
+	list.append('&youtube_id=mAlgerULqyU')
+	list.append('&youtube_id=3cJYHKsa52E')
+	list.append('&youtube_id=BOzl3RHn4Io')
+	list.append('&youtube_id=VZzivZvWidI')
+	list.append('&youtube_id=NN_gqjA8jJQ')
+	list.append('&youtube_id=AL0RVZMr-VY')
+	list.append('&youtube_id=C_Km9NYD-Pw')
+	list.append('&youtube_id=d_zk--Iconw')
+	list.append('&youtube_id=d3yfZlIUwF4')
+	list.append('&youtube_id=GUWpiwVZ-gI')
+	list.append('&youtube_id=wTm5rDg8tqI')
+	list.append('&youtube_id=1E9Z0-ppTl0')
+	list.append('&youtube_id=JdKoA4lIENc')
+	list.append('&youtube_id=GI4j0xDtU5Y')
+	addDir('טלטאביז',list,17,'https://upload.wikimedia.org/wikipedia/he/thumb/4/49/Teletubbies_DVD.jpg/200px-Teletubbies_DVD.jpg',addonString(106420).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''לולה בייבי'''
 	addDir('לולה בייבי','UCOYUFFxT50nvDaRj5Mn5XNg',9,'http://yt3.ggpht.com/-C9HFu_35bmk/AAAAAAAAAAI/AAAAAAAAAAA/O5-pgwvceRI/s88-c-k-no/photo.jpg',addonString(154).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''לולי'''
-	addDir('לולי',['&youtube_ch=UCcYc90JDakyeXGeZgPL1ejA/playlists', '&youtube_pl=PLwimDnICcPKNQy5TSz2s5XKWsE6kKV5C1'],17,'http://yt3.ggpht.com/-n8_yk3MKYEk/AAAAAAAAAAI/AAAAAAAAAAA/0lOK__EwCtg/s88-c-k-no/photo.jpg',addonString(133).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_ch=UCcYc90JDakyeXGeZgPL1ejA/playlists')
+	list.append('&youtube_pl=PLwimDnICcPKNQy5TSz2s5XKWsE6kKV5C1')
+	addDir('לולי',list,17,'http://yt3.ggpht.com/-n8_yk3MKYEk/AAAAAAAAAAI/AAAAAAAAAAA/0lOK__EwCtg/s88-c-k-no/photo.jpg',addonString(133).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''מוסטי'''
 	
 	'''מיילו'''
 	
 	'''מיפי'''
-	addDir('מיפי',['&youtube_pl=PLTleo-h9TFqJWHazTOTJNQrcrkSZ_Gg83', '&wallaNew=seasonId%3d2542087', '&sdarot=season_id=1&series_id=881&series_name=%d7%9e%d7%99%d7%a4%d7%99%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary=%d7%a1%d7%93%d7%a8%d7%94%20%d7%94%d7%9e%d7%91%d7%95%d7%a1%d7%a1%d7%aa%20%d7%a2%d7%9c%20%d7%a1%d7%93%d7%a8%d7%aa%20%d7%a1%d7%a4%d7%a8%d7%99%20%d7%99%d7%9c%d7%93%d7%99%d7%9d%20%d7%9e%d7%a6%d7%9c%d7%99%d7%97%d7%94%20%d7%94%d7%97%d7%95%d7%a9%d7%a4%d7%aa%20%d7%90%d7%aa%20%d7%94%d7%a6%d7%95%d7%a4%d7%99%d7%9d%20%d7%91%d7%a4%d7%a0%d7%99%20%d7%9e%d7%95%d7%a9%d7%92%d7%99%20%d7%99%d7%a1%d7%95%d7%93%20%d7%9b%d7%9e%d7%95%20%d7%a6%d7%91%d7%a2%d7%99%d7%9d%2c%20%d7%a1%d7%a4%d7%a8%d7%95%d7%aa%20%d7%95%d7%a6%d7%95%d7%a8%d7%95%d7%aa.%20%d7%91%d7%9b%d7%9c%20%d7%a4%d7%a8%d7%a7%20%d7%90%d7%a0%d7%97%d7%a0%d7%95%20%d7%9e%d7%92%d7%9c%d7%99%d7%9d%20%d7%a7%d7%a6%d7%aa%20%d7%a2%d7%9c%20%d7%94%d7%97%d7%99%d7%99%d7%9d%20%d7%a9%d7%9c%20%d7%9e%d7%99%d7%a4%d7%99%20%d7%95%d7%97%d7%91%d7%a8%d7%99%d7%94%20%d7%94%d7%98%d7%95%d7%91%d7%99%d7%9d%20%d7%95%d7%99%d7%95%d7%a6%d7%90%d7%99%d7%9d%20%d7%9c%d7%94%d7%a8%d7%a4%d7%aa%d7%a7%d7%90%d7%95%d7%aa.%20%d7%9e%d7%99%d7%a4%d7%99%20%d7%94%d7%90%d7%a8%d7%a0%d7%91%d7%aa%20%d7%94%d7%90%d7%94%d7%95%d7%91%d7%94%20%d7%95%d7%94%d7%9e%d7%95%d7%9b%d7%a8%d7%aa%20%d7%a0%d7%95%d7%9c%d7%93%d7%94%20%d7%91%d7%9b%d7%aa%d7%91%d7%99%d7%95%20%d7%95%d7%a6%d7%99%d7%95%d7%a8%d7%99%d7%95%20%d7%a9%d7%9c%20%d7%94%d7%90%d7%9e%d7%9f%20%d7%94%d7%94%d7%95%d7%9c%d7%a0%d7%93%d7%99%20%d7%93%d7%99%d7%a7%20%d7%91%d7%a8%d7%95%d7%a0%d7%90%d7%94%20%d7%91%d7%a9%d7%a0%d7%aa%201955%2c%20%d7%9e%d7%aa%d7%95%d7%9a%20%d7%a1%d7%99%d7%a4%d7%95%d7%a8%d7%99%d7%9d%20%d7%a9%d7%a1%d7%99%d7%a4%d7%a8%20%d7%9c%d7%91%d7%99%d7%aa%d7%95%20%d7%91%d7%aa%20%d7%94%d7%a9%d7%a0%d7%94%20%d7%a2%d7%9c%20%d7%90%d7%a8%d7%a0%d7%91%d7%aa%20%d7%a9%d7%a4%d7%92%d7%a9%d7%95%20%d7%99%d7%97%d7%93%d7%99%d7%95%20%d7%91%d7%97%d7%99%d7%a7%20%d7%94%d7%98%d7%91%d7%a2.%20%d7%91%d7%a1%d7%93%d7%a8%d7%aa%20%d7%94%d7%a1%d7%a8%d7%98%d7%99%d7%9d%2c%20%d7%a0%d7%a4%d7%92%d7%95%d7%a9%20%d7%90%d7%aa%20%d7%9e%d7%99%d7%a4%d7%99%20%d7%95%d7%90%d7%aa%20%d7%91%d7%a0%d7%99%20%d7%9e%d7%a9%d7%a4%d7%97%d7%aa%d7%94%20%d7%94%d7%a9%d7%95%d7%a0%d7%99%d7%9d%20%3a%20%d7%94%d7%95%d7%a8%d7%99%d7%94%2c%20%d7%94%d7%a1%d7%91%d7%99%d7%9d%2c%20%d7%93%d7%95%d7%93%d7%94%20%d7%90%d7%9c%d7%99%d7%a1%2c%20%d7%91%d7%a8%d7%91%d7%a8%d7%94%20%d7%95%d7%91%d7%95%d7%a8%d7%99%d7%a1%20%d7%94%d7%93%d7%95%d7%91%d7%99%d7%9d%2c%20%d7%a4%d7%95%d7%a4%d7%99%20%d7%94%d7%97%d7%96%d7%99%d7%a8%2c%20%d7%95%d7%a2%d7%95%d7%93.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f881%2fmiffy-%d7%9e%d7%99%d7%a4%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/881.jpg','סדרה המבוססת על סדרת ספרי ילדים מצליחה החושפת את הצופים בפני מושגי יסוד כמו צבעים, ספרות וצורות.[CR]בכל פרק אנחנו מגלים קצת על החיים של מיפי וחבריה הטובים ויוצאים להרפתקאות. מיפי הארנבת האהובה והמוכרת נולדה בכתביו וציוריו של האמן ההולנדי דיק ברונאה בשנת 1955, מתוך סיפורים שסיפר לביתו בת השנה על ארנבת שפגשו יחדיו בחיק הטבע. בסדרת הסרטים, נפגוש את מיפי ואת בני משפחתה השונים : הוריה, הסבים, דודה אליס, ברברה ובוריס הדובים, פופי החזיר, ועוד.','1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLTleo-h9TFqJWHazTOTJNQrcrkSZ_Gg83')
+	list.append('&wallaNew=seasonId%3d2542087')
+	list.append('&sdarot=season_id=1&series_id=881&series_name=%d7%9e%d7%99%d7%a4%d7%99%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary=%d7%a1%d7%93%d7%a8%d7%94%20%d7%94%d7%9e%d7%91%d7%95%d7%a1%d7%a1%d7%aa%20%d7%a2%d7%9c%20%d7%a1%d7%93%d7%a8%d7%aa%20%d7%a1%d7%a4%d7%a8%d7%99%20%d7%99%d7%9c%d7%93%d7%99%d7%9d%20%d7%9e%d7%a6%d7%9c%d7%99%d7%97%d7%94%20%d7%94%d7%97%d7%95%d7%a9%d7%a4%d7%aa%20%d7%90%d7%aa%20%d7%94%d7%a6%d7%95%d7%a4%d7%99%d7%9d%20%d7%91%d7%a4%d7%a0%d7%99%20%d7%9e%d7%95%d7%a9%d7%92%d7%99%20%d7%99%d7%a1%d7%95%d7%93%20%d7%9b%d7%9e%d7%95%20%d7%a6%d7%91%d7%a2%d7%99%d7%9d%2c%20%d7%a1%d7%a4%d7%a8%d7%95%d7%aa%20%d7%95%d7%a6%d7%95%d7%a8%d7%95%d7%aa.%20%d7%91%d7%9b%d7%9c%20%d7%a4%d7%a8%d7%a7%20%d7%90%d7%a0%d7%97%d7%a0%d7%95%20%d7%9e%d7%92%d7%9c%d7%99%d7%9d%20%d7%a7%d7%a6%d7%aa%20%d7%a2%d7%9c%20%d7%94%d7%97%d7%99%d7%99%d7%9d%20%d7%a9%d7%9c%20%d7%9e%d7%99%d7%a4%d7%99%20%d7%95%d7%97%d7%91%d7%a8%d7%99%d7%94%20%d7%94%d7%98%d7%95%d7%91%d7%99%d7%9d%20%d7%95%d7%99%d7%95%d7%a6%d7%90%d7%99%d7%9d%20%d7%9c%d7%94%d7%a8%d7%a4%d7%aa%d7%a7%d7%90%d7%95%d7%aa.%20%d7%9e%d7%99%d7%a4%d7%99%20%d7%94%d7%90%d7%a8%d7%a0%d7%91%d7%aa%20%d7%94%d7%90%d7%94%d7%95%d7%91%d7%94%20%d7%95%d7%94%d7%9e%d7%95%d7%9b%d7%a8%d7%aa%20%d7%a0%d7%95%d7%9c%d7%93%d7%94%20%d7%91%d7%9b%d7%aa%d7%91%d7%99%d7%95%20%d7%95%d7%a6%d7%99%d7%95%d7%a8%d7%99%d7%95%20%d7%a9%d7%9c%20%d7%94%d7%90%d7%9e%d7%9f%20%d7%94%d7%94%d7%95%d7%9c%d7%a0%d7%93%d7%99%20%d7%93%d7%99%d7%a7%20%d7%91%d7%a8%d7%95%d7%a0%d7%90%d7%94%20%d7%91%d7%a9%d7%a0%d7%aa%201955%2c%20%d7%9e%d7%aa%d7%95%d7%9a%20%d7%a1%d7%99%d7%a4%d7%95%d7%a8%d7%99%d7%9d%20%d7%a9%d7%a1%d7%99%d7%a4%d7%a8%20%d7%9c%d7%91%d7%99%d7%aa%d7%95%20%d7%91%d7%aa%20%d7%94%d7%a9%d7%a0%d7%94%20%d7%a2%d7%9c%20%d7%90%d7%a8%d7%a0%d7%91%d7%aa%20%d7%a9%d7%a4%d7%92%d7%a9%d7%95%20%d7%99%d7%97%d7%93%d7%99%d7%95%20%d7%91%d7%97%d7%99%d7%a7%20%d7%94%d7%98%d7%91%d7%a2.%20%d7%91%d7%a1%d7%93%d7%a8%d7%aa%20%d7%94%d7%a1%d7%a8%d7%98%d7%99%d7%9d%2c%20%d7%a0%d7%a4%d7%92%d7%95%d7%a9%20%d7%90%d7%aa%20%d7%9e%d7%99%d7%a4%d7%99%20%d7%95%d7%90%d7%aa%20%d7%91%d7%a0%d7%99%20%d7%9e%d7%a9%d7%a4%d7%97%d7%aa%d7%94%20%d7%94%d7%a9%d7%95%d7%a0%d7%99%d7%9d%20%3a%20%d7%94%d7%95%d7%a8%d7%99%d7%94%2c%20%d7%94%d7%a1%d7%91%d7%99%d7%9d%2c%20%d7%93%d7%95%d7%93%d7%94%20%d7%90%d7%9c%d7%99%d7%a1%2c%20%d7%91%d7%a8%d7%91%d7%a8%d7%94%20%d7%95%d7%91%d7%95%d7%a8%d7%99%d7%a1%20%d7%94%d7%93%d7%95%d7%91%d7%99%d7%9d%2c%20%d7%a4%d7%95%d7%a4%d7%99%20%d7%94%d7%97%d7%96%d7%99%d7%a8%2c%20%d7%95%d7%a2%d7%95%d7%93.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f881%2fmiffy-%d7%9e%d7%99%d7%a4%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('מיפי',list,17,'http://www.sdarot.pm/media/series/881.jpg','סדרה המבוססת על סדרת ספרי ילדים מצליחה החושפת את הצופים בפני מושגי יסוד כמו צבעים, ספרות וצורות.[CR]בכל פרק אנחנו מגלים קצת על החיים של מיפי וחבריה הטובים ויוצאים להרפתקאות. מיפי הארנבת האהובה והמוכרת נולדה בכתביו וציוריו של האמן ההולנדי דיק ברונאה בשנת 1955, מתוך סיפורים שסיפר לביתו בת השנה על ארנבת שפגשו יחדיו בחיק הטבע. בסדרת הסרטים, נפגוש את מיפי ואת בני משפחתה השונים : הוריה, הסבים, דודה אליס, ברברה ובוריס הדובים, פופי החזיר, ועוד.','1',50, getAddonFanart(background))
 	
 	'''מספרי משימה'''
 	addDir('מספרי משימה',['&youtube_pl=PLn0MlLMGvwMVJrWgO028RM6UJrax1ItDr'],17,'http://i.ytimg.com/vi/DjUCZgrL8cY/hqdefault.jpg',addonString(106000).encode('utf-8'),'1',50, getAddonFanart(background))
@@ -595,10 +771,18 @@ def CATEGORIES106(admin):
 	''''''
 	
 	'''פים ופימבה'''
-	addDir("פים ופימבה",['&youtube_pl=PLTNonj9ImqaI2F7DHlMxZ3VDn8gwpaTKe', '&youtube_pl=PLaorT66MlVdw0Ebw7cVh44jKZUQZjMbfJ'],17,'http://msc.wcdn.co.il/archive/941107-54.jpg',addonString(154).encode('utf-8'),'1',58, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLTNonj9ImqaI2F7DHlMxZ3VDn8gwpaTKe')
+	list.append('&youtube_pl=PLaorT66MlVdw0Ebw7cVh44jKZUQZjMbfJ')
+	list.append('&youtube_')
+	list.append('&youtube_')
+	addDir('פים ופימבה',list,17,'http://msc.wcdn.co.il/archive/941107-54.jpg',addonString(154).encode('utf-8'),'1',58, getAddonFanart(background))
 	
 	'''פיצי'''
-	addDir('פיצי',['&youtube_pl=PL5kivPlEfMCTa3yiShQstAKsvzsdZIbkx', '&youtube_id=FKRVfhMczq8'],17,'http://i.ytimg.com/vi/Y02LzkHJ_Uk/hqdefault.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL5kivPlEfMCTa3yiShQstAKsvzsdZIbkx')
+	list.append('&youtube_id=FKRVfhMczq8')
+	addDir('פיצי',list,17,'http://i.ytimg.com/vi/Y02LzkHJ_Uk/hqdefault.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''צופי'''
 	list = []
@@ -609,15 +793,28 @@ def CATEGORIES106(admin):
 	list.append('youtube_pl=PLnraPnhPHcc7ZM0lb57BnB2QK9syspUuF')
 	list.append('youtube_id=dpIySQOXpvg')
 	addDir('צופי',['&youtube_pl=PL5kivPlEfMCTa3yiShQstAKsvzsdZIbkx', '&youtube_id=FKRVfhMczq8'],17,'https://yt3.ggpht.com/-W1ddvq5_0Qc/AAAAAAAAAAI/AAAAAAAAAAA/Z5zjTR71Ro0/s100-c-k-no/photo.jpg','','1',50, getAddonFanart(background))
-	'''צרלי ודודו'''
 	
+	'''צרלי ודודו'''
+	#נוצר על ידי לידור מליח
+	list =[]
+	list.append('&youtube_')
+	list.append('&youtube_')
+	list.append('&youtube_')
+	list.append('&youtube_')
+	addDir('צרלי ודודו',list,17,'https://i.ytimg.com/vi/QLtv1_pibW8/hqdefault.jpg','','1',50, getAddonFanart(background))
 	''''''
 	
 	'''קוקו הארנב'''
-	addDir('קוקו הארנב',['&youtube_pl=PLTleo-h9TFqLxJd-fvXvoQFuxMXBt8k1g', '&youtube_id=WIug1uuY3OM'],17,'http://www.luli.tv/Img/Albums/377/medium/koko.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLTleo-h9TFqLxJd-fvXvoQFuxMXBt8k1g')
+	list.append('&youtube_id=WIug1uuY3OM')
+	addDir('קוקו הארנב',list,17,'http://www.luli.tv/Img/Albums/377/medium/koko.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''קטני'''
-	addDir("קטני",['&youtube_pl=PLbHXbhgZi5cL97NlobjLHNtBwIA9VHcmw', '&youtube_pl=PLFdlLLQanAPDDSueGBJBwdSLnQCwdog9H'],17,'https://i.ytimg.com/vi/QS3UHEmaaaQ/default.jpg',addonString(110).encode('utf-8'),'1',58, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLbHXbhgZi5cL97NlobjLHNtBwIA9VHcmw')
+	list.append('&youtube_pl=PLFdlLLQanAPDDSueGBJBwdSLnQCwdog9H')
+	addDir('קטני',list,17,'https://i.ytimg.com/vi/QS3UHEmaaaQ/default.jpg',addonString(110).encode('utf-8'),'1',58, getAddonFanart(background))
 	
 	'''קמי'''
 	
@@ -643,7 +840,10 @@ def CATEGORIES107(admin):
 	'''---------------------------'''
 	
 	'''אדיבו'''
-	addDir(addonString(10702).encode('utf-8'),['&youtube_pl=PL_8KXLhQVQMLeDwIbMl6RyoMQiCuY7tu-', '&sdarot=season_id=1&series_id=1641&series_name=%d7%90%d7%93%d7%99%d7%91%d7%95%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1641%2fadiboo-%d7%90%d7%93%d7%99%d7%91%d7%95-%d7%9e%d7%93%d7%95%d7%91%d7%91'],6,'http://www.sdarot.pm/media/series/1641.jpg',addonString(107020).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL_8KXLhQVQMLeDwIbMl6RyoMQiCuY7tu-')
+	list.append('&sdarot=season_id=1&series_id=1641&series_name=%d7%90%d7%93%d7%99%d7%91%d7%95%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1641%2fadiboo-%d7%90%d7%93%d7%99%d7%91%d7%95-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('אדיבו',list,6,'http://www.sdarot.pm/media/series/1641.jpg',addonString(107020).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''בגינה של לין'''
 	addDir(addonString(10705).encode('utf-8'),['&youtube_pl=PLPWc8VdaIIsDcjHMTBavJG-Rm8p0wvvW_'],17,'http://img.youtube.com/vi/lQt9W6DU5dQ/0.jpg',addonString(107110).encode('utf-8'),'1',"", getAddonFanart(background))
@@ -660,7 +860,7 @@ def CATEGORIES107(admin):
 	addDir(addonString(10708).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1641.jpg',addonString(107080).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''דן הדוור'''
-	addDir(addonString(10712).encode('utf-8'),['&sdarot=season_id=1&series_id=1577&series_name=%d7%93%d7%9f%20%d7%94%d7%93%d7%95%d7%95%d7%a8&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1577%2fdan-hadavar-%d7%93%d7%9f-%d7%94%d7%93%d7%95%d7%95%d7%a8' ,'&youtube_pl=PL_8KXLhQVQMK05YV3wTQ4SZyEo2kWDvNH'],6,'http://www.sdarot.pm/media/series/1577.jpg','','1',50, getAddonFanart(background))
+	if General_TrustedOnly == "true" or admin: addDir(addonString(10712).encode('utf-8'),['&sdarot=season_id=1&series_id=1577&series_name=%d7%93%d7%9f%20%d7%94%d7%93%d7%95%d7%95%d7%a8&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1577%2fdan-hadavar-%d7%93%d7%9f-%d7%94%d7%93%d7%95%d7%95%d7%a8' ,'&youtube_pl=PL_8KXLhQVQMK05YV3wTQ4SZyEo2kWDvNH'],6,'http://www.sdarot.pm/media/series/1577.jpg','','1',50, getAddonFanart(background))
 	
 	'''הדוד חיים'''
 	addDir(addonString(10715).encode('utf-8'),['&youtube_pl=PLTNonj9ImqaIuFt2AyqdYFx6bCnKoFsIc'],17,'http://www.yap.co.il/prdPics/4298_desc3_2_2_1390119036.jpg',addonString(107150).encode('utf-8'),'1',50, getAddonFanart(background))
@@ -685,7 +885,7 @@ def CATEGORIES107(admin):
 	addDir(addonString(10721).encode('utf-8'),['&youtube_pl=PL-_BcMXVkaspyjwz7S5Hs_Rgih0F1d8_d'],17,'http://www.ligdol.co.il/Upload/hello%20kitty285.jpg',addonString(107210).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''הנסיכה סופיה הראשונה'''
-	addDir(addonString(10722).encode('utf-8'),['&sdarot=image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f1636.jpg&name=%d7%94%d7%a0%d7%a1%d7%99%d7%9b%d7%94%20%d7%a1%d7%95%d7%a4%d7%99%d7%94%20%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&series_id=1636&series_name=%d7%94%d7%a0%d7%a1%d7%99%d7%9b%d7%94%20%d7%a1%d7%95%d7%a4%d7%99%d7%94%20%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1636%2fsofia-the-first-%d7%94%d7%a0%d7%a1%d7%99%d7%9b%d7%94-%d7%a1%d7%95%d7%a4%d7%99%d7%94-%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91"', '&youtube_pl=PLVwL64lSxWWyAUC6Bv-GAbdgQAv3CuCrr'],6,'http://upload.wikimedia.org/wikipedia/he/a/a4/%D7%94%D7%A0%D7%A1%D7%99%D7%9B%D7%94_%D7%A1%D7%95%D7%A4%D7%99%D7%94.png',addonString(107220).encode('utf-8'),'1',50, getAddonFanart(background))
+	if General_TrustedOnly == "true" or admin: addDir(addonString(10722).encode('utf-8'),['&sdarot=image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f1636.jpg&name=%d7%94%d7%a0%d7%a1%d7%99%d7%9b%d7%94%20%d7%a1%d7%95%d7%a4%d7%99%d7%94%20%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&series_id=1636&series_name=%d7%94%d7%a0%d7%a1%d7%99%d7%9b%d7%94%20%d7%a1%d7%95%d7%a4%d7%99%d7%94%20%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1636%2fsofia-the-first-%d7%94%d7%a0%d7%a1%d7%99%d7%9b%d7%94-%d7%a1%d7%95%d7%a4%d7%99%d7%94-%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91"', '&youtube_pl=PLVwL64lSxWWyAUC6Bv-GAbdgQAv3CuCrr'],6,'http://upload.wikimedia.org/wikipedia/he/a/a4/%D7%94%D7%A0%D7%A1%D7%99%D7%9B%D7%94_%D7%A1%D7%95%D7%A4%D7%99%D7%94.png',addonString(107220).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''הסוד של מיה'''
 	addDir(addonString(10723).encode('utf-8'),['&youtube_pl=PLPWc8VdaIIsCGEVOC2iJxnWNEjI13xbnA'],17,'http://msc.wcdn.co.il/w-2-1/w-300/768225-54.jpg',addonString(107230).encode('utf-8'),'1',50, getAddonFanart(background))
@@ -694,25 +894,51 @@ def CATEGORIES107(admin):
 	addDir(addonString(10727).encode('utf-8'),['&youtube_pl=PLPWc8VdaIIsDYbIQJMDX4usMYw7pYmPxj'],17,'http://images1.ynet.co.il/PicServer3/2012/12/04/4315826/lazooz_01.jpg',addonString(107270).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''יובל המבולבל'''
-	addDir(addonString(10731).encode('utf-8'),['&youtube_ch=UC0r3m54hCOvyG47jzz08X2Q', '&youtube_pl=PL0495C8F5A2024FA4'],6,'http://yt3.ggpht.com/-FHcf2Rxu08A/AAAAAAAAAAI/AAAAAAAAAAA/dxzE2ng3uXI/s88-c-k-no/photo.jpg',addonString(107310).encode('utf-8'),'1',"", getAddonFanart(background))
+	list =[]
+	list.append('&youtube_ch=UC0r3m54hCOvyG47jzz08X2Q')
+	list.append('&youtube_pl=PL0495C8F5A2024FA4')
+	list.append('&youtube_')
+	list.append('&youtube_')
+	addDir('יובל המבולבל',list,6,'http://yt3.ggpht.com/-FHcf2Rxu08A/AAAAAAAAAAI/AAAAAAAAAAA/dxzE2ng3uXI/s88-c-k-no/photo.jpg',addonString(107310).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''יצירה בקצרה'''
-	addDir(addonString(10734).encode('utf-8'),['&youtube_pl=PLPWc8VdaIIsC0SPM0_dgOVIDn5vcCH8Ti', '&youtube_pl=PLPWc8VdaIIsD85fRihIJFTzwt9v_JX2t6'],6,'http://msc.wcdn.co.il/archive/1475513-5.jpg',addonString(107340).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLPWc8VdaIIsC0SPM0_dgOVIDn5vcCH8Ti')
+	list.append('&youtube_pl=PLPWc8VdaIIsD85fRihIJFTzwt9v_JX2t6')
+	list.append('&youtube_')
+	list.append('&youtube_')
+	addDir('יצירה בקצרה',list,6,'http://msc.wcdn.co.il/archive/1475513-5.jpg',addonString(107340).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''מולי וצומי'''
 	addDir(addonString(10742).encode('utf-8'),['&youtube_pl=PLfcYs4SRZfuJHmb8y_BpUpzAsm1guoAlK'],17,'http://www.yap.co.il/prdPics/4309_desc3_2_1_1390393153.jpg',addonString(107420).encode('utf-8'),'1',50, getAddonFanart(background))
 
 	'''מועדון המאפים הטובים'''
-	addDir(addonString(10745).encode('utf-8'),['&youtube_pl=PLPWc8VdaIIsDUd9awquJznDcL_aSyi00T','&youtube_pl=PLPWc8VdaIIsCfrHCUj7XKDG_rvLwE9V-p'],6,'http://www.erezdvd.co.il/sites/default/files/imagecache/product_full/products/gilisip.jpg',addonString(107450).encode('utf-8'),'1',"", getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLPWc8VdaIIsDUd9awquJznDcL_aSyi00T')
+	list.append('&youtube_pl=PLPWc8VdaIIsCfrHCUj7XKDG_rvLwE9V-p')
+	list.append('&youtube_')
+	list.append('&youtube_')
+	addDir('מועדון המאפים הטובים',list,6,'http://www.erezdvd.co.il/sites/default/files/imagecache/product_full/products/gilisip.jpg',addonString(107450).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''מיכל הקטנה'''
 	addDir(addonString(10245).encode('utf-8'),['&youtube_pl=PLTNonj9ImqaKElCJ-4e8X_3BzXvzEYU_0'],17,'http://www.pashbar.co.il/pictures/show_big_0523173001376412565.jpg',addonString(102450).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''מיקי כוכבת הילדים'''
-	addDir(addonString(10746).encode('utf-8'),['&youtube_id=5Zf0uSGOzlA', '&youtube_id=BKCAXKFXwEg', '&youtube_id=zGyEGXx3qkU'],17,'http://yt3.ggpht.com/-LQQaGMJh2g0/AAAAAAAAAAI/AAAAAAAAAAA/KebzcCn-y_Y/s88-c-k-no/photo.jpg',addonString(107460).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_id=5Zf0uSGOzlA')
+	list.append('&youtube_id=BKCAXKFXwEg')
+	list.append('&youtube_id=zGyEGXx3qkU')
+	addDir('מיקי כוכבת הילדים',list,17,'http://yt3.ggpht.com/-LQQaGMJh2g0/AAAAAAAAAAI/AAAAAAAAAAA/KebzcCn-y_Y/s88-c-k-no/photo.jpg',addonString(107460).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''מיקמק'''
-	addDir(addonString(10747).encode('utf-8'),['&youtube_pl=PL663sDNTault52-VzCCu4w0CfnoAtrmRg', '&youtube_pl=PL663sDNTaulu5KpP6eyz9Xr3caOQUDEl_', '&sdarot=series_id=861&series_name=%d7%9e%d7%99%d7%a7%d7%9e%d7%a7%20%3a%20%d7%94%d7%a1%d7%93%d7%a8%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f861%2fmikmak-hasidra-%d7%9e%d7%99%d7%a7%d7%9e%d7%a7-%d7%94%d7%a1%d7%93%d7%a8%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&youtube_pl=PL663sDNTault52-VzCCu4w0CfnoAtrmRg', '&youtube_id=1CshWmAFinY', '&youtube_id=a5WNY-FMMyQ'],17,'http://www.sdarot.wf/media/series/861.jpg',addonString(107470).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL663sDNTault52-VzCCu4w0CfnoAtrmRg')
+	list.append('&youtube_pl=PL663sDNTaulu5KpP6eyz9Xr3caOQUDEl_')
+	list.append('&sdarot=series_id=861&series_name=%d7%9e%d7%99%d7%a7%d7%9e%d7%a7%20%3a%20%d7%94%d7%a1%d7%93%d7%a8%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f861%2fmikmak-hasidra-%d7%9e%d7%99%d7%a7%d7%9e%d7%a7-%d7%94%d7%a1%d7%93%d7%a8%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	list.append('&youtube_pl=PL663sDNTault52-VzCCu4w0CfnoAtrmRg')
+	list.append('&youtube_id=1CshWmAFinY')
+	list.append('youtube_id=a5WNY-FMMyQ')
+	addDir('מיקמק',list,17,'http://www.sdarot.wf/media/series/861.jpg',addonString(107470).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''מר עגבניה'''
 	addDir(addonString(10798).encode('utf-8'),['&youtube_pl=PLwimDnICcPKMSeyub1DLM_2jG4aPjqI7n'],17,'http://media.israel-music.com/images/7290014394605.jpg',addonString(107980).encode('utf-8'),'1',50, getAddonFanart(background))
@@ -730,13 +956,22 @@ def CATEGORIES107(admin):
 	addDir(addonString(10755).encode('utf-8'),['&youtube_pl=PLPWc8VdaIIsD8YvtRkkqjYC5SF7TKvAcM'],17,'http://isc.wcdn.co.il/w9/skins/nick_jr/17/header_pic_2745.png',addonString(107550).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''סמי הכבאי'''
-	addDir(addonString(10757).encode('utf-8'),['&youtube_pl=PL_TbWUH2U7KmZtYRZlJtxzmYFP_m81vSk', '&youtube_pl=PLN0EJVTzRDL-IJiTK4_B1ni8tlRNQvaBg', '&youtube_pl=PL8x83ieZ_yGXSJbCVjtUc6ZV3XWY95iEH'],6,'http://www.ligdol.co.il/Upload/hello%20kitty285.jpg',addonString(107570).encode('utf-8'),'1',"", getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL_TbWUH2U7KmZtYRZlJtxzmYFP_m81vSk')
+	list.append('&youtube_pl=PLN0EJVTzRDL-IJiTK4_B1ni8tlRNQvaBg')
+	list.append('&youtube_pl=PL8x83ieZ_yGXSJbCVjtUc6ZV3XWY95iEH')
+	addDir('סמי הכבאי',list,6,'http://www.ligdol.co.il/Upload/hello%20kitty285.jpg',addonString(107570).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''עולמו הקסום של מקס'''
 	addDir(addonString(10760).encode('utf-8'),['&youtube_pl=PLPWc8VdaIIsCeVQhASYBNmykK4gKh0DCe'],17,'http://images1.ynet.co.il/PicServer3/2013/07/21/4745895/max_01.jpg',addonString(107600).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''ערוץ הופ!'''
-	addDir(addonString(10762).encode('utf-8'),['&youtube_ch=UClZXqxeY540_Epab3WDHFGw/playlists','&youtube_ch=UCfNjGgy-3XfTzgWoGMt_QOw/playlists'],6,'http://yt3.ggpht.com/-A6Z6Bj0Y5os/AAAAAAAAAAI/AAAAAAAAAAA/k-1dO4Dm0m8/s88-c-k-no/photo.jpg',addonString(107620).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_ch=UClZXqxeY540_Epab3WDHFGw/playlists')
+	list.append('&youtube_ch=UCfNjGgy-3XfTzgWoGMt_QOw/playlists')
+	list.append('&youtube_')
+	list.append('&youtube_')
+	addDir('ערוץ הופ!',list,6,'http://yt3.ggpht.com/-A6Z6Bj0Y5os/AAAAAAAAAAI/AAAAAAAAAAA/k-1dO4Dm0m8/s88-c-k-no/photo.jpg',addonString(107620).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''פליפר ולופקה'''
 	list = []
@@ -752,7 +987,10 @@ def CATEGORIES107(admin):
 	addDir(addonString(10772).encode('utf-8'),['&youtube_pl=PLR7DTcU2p0Qg8pxiEld0Fg3K2Bd8gTKw5'],17,'https://i.ytimg.com/vi/9s7UMkxTIJ8/hqdefault.jpg',addonString(107720).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''רוני וקשיו'''
-	addDir(addonString(10773).encode('utf-8'),['&youtube_pl=PLPWc8VdaIIsDPb04SHd5fzzqYt3FtmWs-','&youtube_pl=PLPWc8VdaIIsDCX6hU5b-ve2I_MRESc8FZ'],6,'http://amarganim.co.il/images_bo/%D7%A8%D7%95%D7%A0%D7%99%20%D7%95%D7%A7%D7%A9%D7%99%D7%95.jpg',addonString(107730).encode('utf-8'),'1',"", getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLPWc8VdaIIsDPb04SHd5fzzqYt3FtmWs-')
+	list.append('&youtube_pl=PLPWc8VdaIIsDCX6hU5b-ve2I_MRESc8FZ')
+	addDir('רוני וקשיו',list,6,'http://amarganim.co.il/images_bo/%D7%A8%D7%95%D7%A0%D7%99%20%D7%95%D7%A7%D7%A9%D7%99%D7%95.jpg',addonString(107730).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''רינת ויויו'''
 	addDir(addonString(10774).encode('utf-8'),['&youtube_pl=PLVisQUXwii8qa6lRDe1OmCIup6ylcprfc'],17,'http://media.israel-music.com/images/7290012163999.jpg',addonString(107740).encode('utf-8'),'1',"", getAddonFanart(background))
@@ -767,7 +1005,11 @@ def CATEGORIES107(admin):
 	addDir(addonString(10779).encode('utf-8'),['&youtube_pl=PLPWc8VdaIIsASIzs8TcS3FFYEL68jBPWO'],17,'http://www.hll.co.il/web/8888/nsf/web/8017/%D7%A9%D7%9C%D7%95%D7%A9-%D7%90%D7%A8%D7%91%D7%A2-%D7%9C%D7%A2%D7%91%D7%95%D7%93%D7%94.jpg',addonString(107790).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''תותית'''
-	addDir(addonString(10784).encode('utf-8'),['&youtube_pl=PLfcYs4SRZfuJgh8F-yrhcqKuQke6YbHLj', '&wallaNew=seasonId%3d2710592','&youtube_pl=PL-1E5hVd_frIjdhE0PzTB2VJr8RWgKbJ1'],17,'https://i1.ytimg.com/sh/YO96TrSN7Do/showposter.jpg?v=508e4f85',addonString(107840).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLfcYs4SRZfuJgh8F-yrhcqKuQke6YbHLj')
+	list.append('&wallaNew=seasonId%3d2710592')
+	list.append('&youtube_pl=PL-1E5hVd_frIjdhE0PzTB2VJr8RWgKbJ1')
+	addDir('תותית',list,17,'https://i1.ytimg.com/sh/YO96TrSN7Do/showposter.jpg?v=508e4f85',addonString(107840).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 def CATEGORIES108(admin):
 	background = 108
@@ -775,22 +1017,39 @@ def CATEGORIES108(admin):
 	addDir('בבית של פיסטוק',['&youtube_pl=PLN0EJVTzRDL96B86muPPFwgdymQjlwmLZ'],17,'https://upload.wikimedia.org/wikipedia/he/thumb/6/6c/FistukLogo.jpg/250px-FistukLogo.jpg',addonString(108040).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''בלי סודות''' #addonString(10804).encode('utf-8')
-	addDir('בלי סודות',['&youtube_pl=PL9FD9492D8C95F00F', '&youtube_pl=PL29CF6709AA760AB5'],6,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/%D7%9C%D7%95%D7%92%D7%95_%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99.jpg/250px-%D7%9C%D7%95%D7%92%D7%95_%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99.jpg','בבית של פיסטוק היא ספין-אוף של סדרת הטלוויזיה הישראלית לילדים "רגע עם דודלי".[CR]הסדרה הופקה על ידי הטלוויזיה החינוכית במשך שתי עונות בין השנים 1981 - 1983 וכללה 29 פרקים שצולמו בעונה הראשונה בשחור-לבן (18 פרקים) ובעונה השנייה בצבע (11 פרקים). הסדרה שודרה בשידורים חוזרים לאורך כל שנות השמונים והתשעים וזכתה לפופולריות רבה בקרב ילדי ישראל.[CR]עלילת הסדרה מתמקדת בהרפתקאותיהם של פיסטוק (ספי ריבלין) וידידו רגע (ציפי מור). פיסטוק הוא אדם תמהוני חביב ומגושם המתגורר בבית קטן ומוזר על ראש גבעה ורגע הוא בובה שהפכה לילד. בנוסף, התוכנית הכילה גם פינה של בובה בשם "פלטיאל ממגדיאל" וסדרה נוספת עם בובות מהולנד בשם סיפורימפו אשר דובבו לעברית.[CR]הסדרה הופקה בתקציב נמוך משמעותית מסדרת האם "רגע עם דודלי". למעט פרקים מיוחדים היא צולמה רובה ככולה באולפני הטלוויזיה החינוכית ברמת אביב. החל מעונתה השנייה, זו הייתה ההפקה הראשונה של הטלוויזיה החינוכית שצולמה בצבע.[CR]רבים מפרקי הסדרה שצולמו בשחור-לבן נחשבים כיום לאבודים, מאחר שהטלוויזיה החינוכית מעולם לא שימרה אותם ולא העבירה אותם מהסרטים המקוריים לפורמט דיגיטלי מודרני.[CR]שיר הפתיחה של התוכנית נכתב על ידי לאה נאור, הולחן על ידי נורית הירש, ובוצע על ידי אילנית.','1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL9FD9492D8C95F00F')
+	list.append('&youtube_pl=PL29CF6709AA760AB5')
+	addDir('בלי סודות',list,6,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/%D7%9C%D7%95%D7%92%D7%95_%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99.jpg/250px-%D7%9C%D7%95%D7%92%D7%95_%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99.jpg','בבית של פיסטוק היא ספין-אוף של סדרת הטלוויזיה הישראלית לילדים "רגע עם דודלי".[CR]הסדרה הופקה על ידי הטלוויזיה החינוכית במשך שתי עונות בין השנים 1981 - 1983 וכללה 29 פרקים שצולמו בעונה הראשונה בשחור-לבן (18 פרקים) ובעונה השנייה בצבע (11 פרקים). הסדרה שודרה בשידורים חוזרים לאורך כל שנות השמונים והתשעים וזכתה לפופולריות רבה בקרב ילדי ישראל.[CR]עלילת הסדרה מתמקדת בהרפתקאותיהם של פיסטוק (ספי ריבלין) וידידו רגע (ציפי מור). פיסטוק הוא אדם תמהוני חביב ומגושם המתגורר בבית קטן ומוזר על ראש גבעה ורגע הוא בובה שהפכה לילד. בנוסף, התוכנית הכילה גם פינה של בובה בשם "פלטיאל ממגדיאל" וסדרה נוספת עם בובות מהולנד ב סיפורימפו אשר דובבו לעברית.[CR]הסדרה הופקה בתקציב נמוך משמעותית מסדרת האם "רגע עם דודלי". למעט פרקים מיוחדים היא צולמה רובה ככולה באולפני הטלוויזיה החינוכית ברמת אביב. החל מעונתה השנייה, זו הייתה ההפקה הראשונה של הטלוויזיה החינוכית שצולמה בצבע.[CR]רבים מפרקי הסדרה שצולמו בשחור-לבן נחשבים כיום לאבודים, מאחר שהטלוויזיה החינוכית מעולם לא שימרה אותם ולא העבירה אותם מהסרטים המקוריים לפורמט דיגיטלי מודרני.[CR]שיר הפתיחה של התוכנית נכתב על ידי לאה נאור, הולחן על ידי נורית הירש, ובוצע על ידי אילנית.','1',50, getAddonFanart(background))
 	
 	'''גיבורי התנ"ך'''
-	addDir('גיבורי התנ"ך',['&sdarot=season_id=1&series_id=1083&series_name=%d7%92%d7%99%d7%91%d7%95%d7%a8%d7%99%20%d7%94%d7%aa%d7%a0%22%d7%9a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1083%2fgreatest-heroes-and-legends-of-the-bible-%d7%92%d7%99%d7%91%d7%95%d7%a8%d7%99-%d7%94%d7%aa%d7%a0-%d7%9a', '&youtube_pl=PLE8E08292878C59A1', '&youtube_pl=PL67F1DD7B9B45213A', '&youtube_pl=PLx1dI0IFg6RqlKwV-RPhXx_YZfDbadc7h'],6,'http://www.sdarot.pm/media/series/1083.jpg','אנתולוגיה של אירועים מפורסמים בתנ"ך.','1',50, getAddonFanart(background))
+	if General_TrustedOnly == "true" or admin: addDir('גיבורי התנ"ך',['&sdarot=season_id=1&series_id=1083&series_name=%d7%92%d7%99%d7%91%d7%95%d7%a8%d7%99%20%d7%94%d7%aa%d7%a0%22%d7%9a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1083%2fgreatest-heroes-and-legends-of-the-bible-%d7%92%d7%99%d7%91%d7%95%d7%a8%d7%99-%d7%94%d7%aa%d7%a0-%d7%9a', '&youtube_pl=PLE8E08292878C59A1', '&youtube_pl=PL67F1DD7B9B45213A', '&youtube_pl=PLx1dI0IFg6RqlKwV-RPhXx_YZfDbadc7h'],6,'http://www.sdarot.pm/media/series/1083.jpg','אנתולוגיה של אירועים מפורסמים בתנ"ך.','1',50, getAddonFanart(background))
 	
 	'''גלילאו''' #addonString(10810).encode('utf-8')
-	addDir('גלילאו',['&youtube_pl=PLth1a195qHsjFGXCmLtU0WZDuLq4CiWz4', '&youtube_pl=PL51YAgTlfPj6Ypxb-_Dh0eoCztCXiBYsN', '&youtube_pl=PLth1a195qHsigShKnT9DsIyKxcTBQ70Tf'],6,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Hila_Korach.jpg/250px-Hila_Korach.jpg',addonString(108100).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PLth1a195qHsjFGXCmLtU0WZDuLq4CiWz4')
+	list.append('&youtube_pl=PL51YAgTlfPj6Ypxb-_Dh0eoCztCXiBYsN')
+	list.append('&youtube_pl=PLth1a195qHsigShKnT9DsIyKxcTBQ70Tf')
+	addDir('גלילאו',list,6,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Hila_Korach.jpg/250px-Hila_Korach.jpg',addonString(108100).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''הופה היי'''
 	addDir('הופה היי',['&youtube_pl=PL1236E31BAFB62B85'],17,'https://upload.wikimedia.org/wikipedia/he/thumb/e/ef/Hopa_Hey.jpg/250px-Hopa_Hey.jpg','הופה היי הייתה להקה ותוכנית טלוויזיה ישראלית מצליחה לילדים ולכל המשפחה אשר הופיעה וצולמה ברחבי ישראל במהלך שנות השמונים ושנות התשעים.[CR]סדרת הטלוויזיה של הופה היי הופקה לטלוויזיה מיוני 1986 עד מאי 1995 והכילה 63 פרקים. הסדרה שודרה בערוץ הראשון במסגרת מחלקת התוכניות לילדים ונוער.[CR]בעקבות הצלחת סדרת הטלוויזיה בקרב ילדי ישראל, במהלך שנות פעילותה הופיעה הלהקה ברחבי ישראל בשמונה מופעים מצליחים והוציאה שבעה אלבומים. מוצרים נלווים נוספים של הופה היי אשר נמכרו לאורך השנים כוללים ספרים, קלטות וידאו וחטיף שוקולד.','1',50, getAddonFanart(background))
 	
 	'''היה היה'''
-	addDir('היה היה',['&sdarot=season_id=1&series_id=440&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%94%d7%97%d7%99%d7%99%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f440%2fonce-upon-a-time-life-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%94%d7%97%d7%99%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&sdarot=season_id=1&series_id=418&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%94%d7%90%d7%93%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f418%2fonce-upon-a-time-man-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%94%d7%90%d7%93%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&sdarot=series_id=575&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%9b%d7%93%d7%95%d7%a8%20%d7%94%d7%90%d7%a8%d7%a5%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f575%2fonce-upon-a-time-planet-earth-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%9b%d7%93%d7%95%d7%a8-%d7%94%d7%90%d7%a8%d7%a5-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&sdarot=season_id=1&series_id=785&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%9e%d7%9e%d7%a6%d7%99%d7%90%d7%99%d7%9d%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f785%2fonce-upon-a-time-the-discoverers-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%9e%d7%9e%d7%a6%d7%99%d7%90%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&sdarot=season_id=1&series_id=803&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%94%d7%97%d7%9c%d7%9c%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f803%2fonce-upon-a-time-space-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%94%d7%97%d7%9c%d7%9c-%d7%9e%d7%93%d7%95%d7%91%d7%91','&youtube_id=6WCaz40rvns','&youtube_id=yeReDzCnrzM','&youtube_id=Ftbsw1Bnm6U','&youtube_id=-HoFfctF_SM','&youtube_id=j53c8kOZHE4','&youtube_id=jEQWJ4yepSA','&youtube_id=bAf0wS2WHXY','&youtube_id=yybYd8d_CJc'],17,'https://upload.wikimedia.org/wikipedia/he/thumb/0/04/Once_Upon_a_Time..._Life.jpg/250px-Once_Upon_a_Time..._Life.jpg','היה היה, היא סדרת אנימציה צרפתית לילדים אשר הופקה ב-1986 על ידי חברת ההפקות הצרפתית "פרוסידיס" של אלבר בארייה.[CR]הסדרה שודרה במקור ב-1987 בערוץ הצרפתי FR3. בישראל שודרה בדיבוב לעברית בטלוויזיה החינוכית לראשונה בסוף שנות ה-80 של המאה ה-20, ולאחר מכן בשידורים חוזרים רבים. בשנים האחרונות שודרה הסדרה בערוץ לוגי ב-HOT.[CR]התוכנית מלמדת חומר חינוכי באנימציה הומוריסטית.','1',50, getAddonFanart(background))
+	if General_TrustedOnly == "true" or admin: addDir('היה היה',['&sdarot=season_id=1&series_id=440&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%94%d7%97%d7%99%d7%99%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f440%2fonce-upon-a-time-life-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%94%d7%97%d7%99%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&sdarot=season_id=1&series_id=418&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%94%d7%90%d7%93%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f418%2fonce-upon-a-time-man-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%94%d7%90%d7%93%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&sdarot=series_id=575&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%9b%d7%93%d7%95%d7%a8%20%d7%94%d7%90%d7%a8%d7%a5%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f575%2fonce-upon-a-time-planet-earth-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%9b%d7%93%d7%95%d7%a8-%d7%94%d7%90%d7%a8%d7%a5-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&sdarot=season_id=1&series_id=785&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%9e%d7%9e%d7%a6%d7%99%d7%90%d7%99%d7%9d%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f785%2fonce-upon-a-time-the-discoverers-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%9e%d7%9e%d7%a6%d7%99%d7%90%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&sdarot=season_id=1&series_id=803&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%94%d7%97%d7%9c%d7%9c%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f803%2fonce-upon-a-time-space-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%94%d7%97%d7%9c%d7%9c-%d7%9e%d7%93%d7%95%d7%91%d7%91','&youtube_id=6WCaz40rvns','&youtube_id=yeReDzCnrzM','&youtube_id=Ftbsw1Bnm6U','&youtube_id=-HoFfctF_SM','&youtube_id=j53c8kOZHE4','&youtube_id=jEQWJ4yepSA','&youtube_id=bAf0wS2WHXY','&youtube_id=yybYd8d_CJc'],17,'https://upload.wikimedia.org/wikipedia/he/thumb/0/04/Once_Upon_a_Time..._Life.jpg/250px-Once_Upon_a_Time..._Life.jpg','היה היה, היא סדרת אנימציה צרפתית לילדים אשר הופקה ב-1986 על ידי חברת ההפקות הצרפתית "פרוסידיס" של אלבר בארייה.[CR]הסדרה שודרה במקור ב-1987 בערוץ הצרפתי FR3. בישראל שודרה בדיבוב לעברית בטלוויזיה החינוכית לראשונה בסוף שנות ה-80 של המאה ה-20, ולאחר מכן בשידורים חוזרים רבים. בשנים האחרונות שודרה הסדרה בערוץ לוגי ב-HOT.[CR]התוכנית מלמדת חומר חינוכי באנימציה הומוריסטית.','1',50, getAddonFanart(background))
 	
 	'''הקומדי סטור''' #addonString(10807).encode('utf-8')
-	addDir('הקומדי סטור',['&youtube_id=OnTGfthIrSE','&youtube_id=xyo6FLeZ3Aw','&youtube_id=aSke8kN719Q','&youtube_id=Ui6doOZZdgg','&youtube_id=kQ-w5sdqOZ8','&youtube_id=eyUuh89Ivi0','&youtube_id=Tciexh7ZTio','&youtube_id=bCGekFm2_w4','&youtube_id=xlbcC9iQA0M'],17,'https://upload.wikimedia.org/wikipedia/he/5/58/Komedi.jpg',addonString(108070).encode('utf-8'),'1',"", getAddonFanart(background))
+	list =[]
+	list.append('&youtube_id=OnTGfthIrSE')
+	list.append('&youtube_id=xyo6FLeZ3Aw')
+	list.append('&youtube_id=aSke8kN719Q')
+	list.append('&youtube_id=Ui6doOZZdgg')
+	list.append('&youtube_id=kQ-w5sdqOZ8')
+	list.append('&youtube_id=eyUuh89Ivi0')
+	list.append('&youtube_id=Tciexh7ZTio')
+	list.append('&youtube_id=bCGekFm2_w4')
+	list.append('&youtube_id=xlbcC9iQA0M')
+	addDir('הקומדי סטור',list,17,'https://upload.wikimedia.org/wikipedia/he/5/58/Komedi.jpg',addonString(108070).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''חידון התנך''' #10809
 	addDir('חידון התנך',['&youtube_pl=PL51YAgTlfPj51ODBIMhtOF_lYxjS1cuQh'],17,'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Peresohad1985hidon.jpg/350px-Peresohad1985hidon.jpg',addonString(108090).encode('utf-8'),'1',50, getAddonFanart(background))
@@ -805,13 +1064,19 @@ def CATEGORIES108(admin):
 	addDir('ערוץ הילדים','UCOFp2_GttW3ljCuOc7r4l7g/playlists',9,'http://yt3.ggpht.com/-87JARv-G_rg/AAAAAAAAAAI/AAAAAAAAAAA/X9aVp9A1UiQ/s88-c-k-no/photo.jpg',addonString(108000).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''פרפר נחמד'''
-	addDir('פרפר נחמד',['&youtube_pl=PL51YAgTlfPj7XTzORdSrWpgCfF1x7ZUeK', '&youtube_pl=PL5B247BE19DDE24D5'],6,'http://31.168.230.11/flix/buffer/thumbs/flx2202065_200611121829495450.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL51YAgTlfPj7XTzORdSrWpgCfF1x7ZUeK')
+	list.append('&youtube_pl=PL5B247BE19DDE24D5')
+	addDir('פרפר נחמד',list,6,'http://31.168.230.11/flix/buffer/thumbs/flx2202065_200611121829495450.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''קשת וענן''' #addonString(10805).encode('utf-8')
-	addDir('קשת וענן',['&youtube_pl=PL51YAgTlfPj6qcpdP7e44dNj7xHuwd3oo', '&sdarot=season_id=1&series_id=1751&series_name=%d7%a7%d7%a9%d7%aa%20%d7%95%d7%a2%d7%a0%d7%9f&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1751%2fkeshet-veanan-%d7%a7%d7%a9%d7%aa-%d7%95%d7%a2%d7%a0%d7%9f'],6,'https://upload.wikimedia.org/wikipedia/he/thumb/5/56/Keshet_and_Anan_logo.jpg/250px-Keshet_and_Anan_logo.jpg',addonString(108050).encode('utf-8'),'1',50, getAddonFanart(background))
+	list =[]
+	list.append('&youtube_pl=PL51YAgTlfPj6qcpdP7e44dNj7xHuwd3oo')
+	list.append('&sdarot=season_id=1&series_id=1751&series_name=%d7%a7%d7%a9%d7%aa%20%d7%95%d7%a2%d7%a0%d7%9f&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1751%2fkeshet-veanan-%d7%a7%d7%a9%d7%aa-%d7%95%d7%a2%d7%a0%d7%9f')
+	addDir('קשת וענן',list,6,'https://upload.wikimedia.org/wikipedia/he/thumb/5/56/Keshet_and_Anan_logo.jpg/250px-Keshet_and_Anan_logo.jpg',addonString(108050).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''ראש גדול'''
-	addDir('ראש גדול',['&sdarot=series_id=572&series_name=%d7%a8%d7%90%d7%a9%20%d7%92%d7%93%d7%95%d7%9c&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f572%2frosh-gadol-%d7%a8%d7%90%d7%a9-%d7%92%d7%93%d7%95%d7%9c', '&youtube_pl=PLNMdxRa6e5t-8xyd3eFtXKIHbd6gcZPXG', '&youtube_id=2cuxr5DLnwg', '&youtube_id=TEuf9SojWug', '&youtube_id=dspu_9neTsA', '&youtube_id=syv0DjQqJQ0'],17,'http://www.sdarot.pm/media/series/572.jpg','הסדרה סובבת סביב תלמידי חטיבת ביניים טיפוסית, ופותחת צוהר אל עולמם של ילדים מרקעים שונים בגיל הייחודי שבין ילדות לבגרות.[CR]בסדרה נחשפים האלמנטים המרכזיים של חייהם: הווי בית הספר, המורים והבחינות; עולם התקשורת, המחשבים והאינטרנט; מותגים, תדמיות, וחיפוש אחר זהות אישית; מערכות היחסים עם האחים וההורים; תחילתה של עצמאות כלכלית מסוימת בגיל שבו אפשר לעבוד קצת; ובעיקר - התעוררות מהוססת וראשונית של יחסי אהבה ומשיכה לבני המין השני.','1',50, getAddonFanart(background))
+	if General_TrustedOnly == "true" or admin: addDir('ראש גדול',['&sdarot=series_id=572&series_name=%d7%a8%d7%90%d7%a9%20%d7%92%d7%93%d7%95%d7%9c&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f572%2frosh-gadol-%d7%a8%d7%90%d7%a9-%d7%92%d7%93%d7%95%d7%9c', '&youtube_pl=PLNMdxRa6e5t-8xyd3eFtXKIHbd6gcZPXG', '&youtube_id=2cuxr5DLnwg', '&youtube_id=TEuf9SojWug', '&youtube_id=dspu_9neTsA', '&youtube_id=syv0DjQqJQ0'],17,'http://www.sdarot.pm/media/series/572.jpg','הסדרה סובבת סביב תלמידי חטיבת ביניים טיפוסית, ופותחת צוהר אל עולמם של ילדים מרקעים שונים בגיל הייחודי שבין ילדות לבגרות.[CR]בסדרה נחשפים האלמנטים המרכזיים של חייהם: הווי בית הספר, המורים והבחינות; עולם התקשורת, המחשבים והאינטרנט; מותגים, תדמיות, וחיפוש אחר זהות אישית; מערכות היחסים עם האחים וההורים; תחילתה של עצמאות כלכלית מסוימת בגיל שבו אפשר לעבוד קצת; ובעיקר - התעוררות מהוססת וראשונית של יחסי אהבה ומשיכה לבני המין השני.','1',50, getAddonFanart(background))
 	
 	'''רגע עם דודלי''' #addonString(10806).encode('utf-8')
 	addDir('רגע עם דודלי',['&youtube_pl=PL51YAgTlfPj5gUK-SIhbYyAMUQASzrZAw'],17,'https://upload.wikimedia.org/wikipedia/he/thumb/f/fe/Dodlee.jpg/250px-Dodlee.jpg',addonString(108060).encode('utf-8'),'1',50, getAddonFanart(background))
@@ -979,6 +1244,7 @@ def CATEGORIES10906(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL0ABC6A3968804547')
 	#list.append('&youtube_pl=')
 	addDir(addonString(57).encode('utf-8') + space + '(' + name + ')',list,17,iconimage,desc,'1',"", getAddonFanart(background))
+	
 	
 def CATEGORIES10905(name, iconimage, desc, fanart):
 	'''רוסית'''
