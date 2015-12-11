@@ -130,9 +130,7 @@
   <include name="MenuDesign_Home" description="ברירת מחדל">
     <itemlayout height="230" width="368">
 	  <control type="group">
-		<!--<animation condition="Skin.String(MenuDesign,1)" effect="zoom" center="312,180" end="50,100" time="0" reversible="false">Conditional</animation>-->
 		<animation condition="Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]]" effect="slide" start="0,0" end="0,1080" delay="3000" time="700" reversible="true">Conditional</animation>
-		<!--<animation condition="Window.IsVisible(Home.xml) + [[Control.HasFocus(311) | [Control.IsVisible(311) + ControlGroup(9009).HasFocus]] + StringCompare(ListItem.Label2,70)] | [[Control.HasFocus(312) | [Control.IsVisible(312) + ControlGroup(9009).HasFocus]] + StringCompare(ListItem.Label2,71)]" effect="slide" delay="3000" start="0,0" end="0,-1080" time="700" reversible="true">Conditional</animation>-->
 		<animation condition="Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | Control.HasFocus(311) | Control.HasFocus(312) | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
         <control type="image" description="צבע">
 		  <height>180</height>
@@ -227,6 +225,7 @@
           <width>368</width>
           <height>24</height>
           <label>[B]$INFO[ListItem.Label][/B]</label>
+		  <shadowcolor>black</shadowcolor>
         </control>
 	  </control>
     </itemlayout>
@@ -349,6 +348,7 @@
 		  <width>368</width>
           <height>24</height>
           <label>[B]$INFO[ListItem.Label][/B]</label>
+		  <shadowcolor>black</shadowcolor>
         </control>
 	  </control>
     </focusedlayout>
@@ -356,8 +356,8 @@
   <include name="MenuDesign_Home1" description="ברירת מחדל">
     <itemlayout height="230" width="250">
 	  <control type="group">
-		<!--<animation condition="Skin.String(MenuDesign,1)" effect="zoom" center="312,180" end="50,100" time="0" reversible="false">Conditional</animation>-->
-		<animation condition="Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | Control.HasFocus(311) | Control.HasFocus(312) | System.IdleTime(7)" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
+		<animation condition="Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]]" effect="slide" start="0,0" end="0,1080" delay="3000" time="700" reversible="true">Conditional</animation>
+		<animation condition="Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | Control.HasFocus(311) | Control.HasFocus(312) | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
         <control type="image" description="צבע">
 		  <height>180</height>
 		  <posx>30</posx>
@@ -451,6 +451,7 @@
           <width>368</width>
           <height>24</height>
           <label>[B]$INFO[ListItem.Label][/B]</label>
+		  <shadowcolor>black</shadowcolor>
         </control>
 	  </control>
     </itemlayout>
@@ -573,6 +574,7 @@
 		  <width>368</width>
           <height>24</height>
           <label>[B]$INFO[ListItem.Label][/B]</label>
+		  <shadowcolor>black</shadowcolor>
         </control>
 	  </control>
     </focusedlayout>

@@ -1,4 +1,4 @@
-![](https://github.com/finalmakerr/featherence/blob/master/repository.featherence/icon.png)
+![](http://i.imgur.com/zfdrpSG.png)
 
 # **Features:**
 

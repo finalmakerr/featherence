@@ -8,7 +8,6 @@
   <onload condition="!Skin.HasSetting(NextAired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
   <include>SetFocusView</include>
   <include>ReloadSkin_Check</include>
-  <onunload condition="Skin.String(VarCurrentPicVid)">Skin.SetString(VarCurrentPicVid,)</onunload>
   <controls>
     <include>Backgrounds3</include>
     <include>ViewDesign_50</include>

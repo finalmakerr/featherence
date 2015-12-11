@@ -6,6 +6,6 @@ WIP - WORK IN PROGRESS
 - Backup to custom location.
 
 ------------------------
-featherence SYSTEM v0.1.0 (xx-Dec-15)
+featherence v0.1.0 (09-Dec-15)
 ------------------------
--
+- First Release.
