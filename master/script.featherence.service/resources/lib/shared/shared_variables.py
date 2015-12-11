@@ -294,8 +294,7 @@ tvshows_path = os.path.join(library_path,'tvshows','')
 addondata_path = os.path.join(userdata_path,'addon_data','')
 
 featherenceservice_addondata_path = os.path.join(addondata_path,'script.featherence.service', '')
-featherenceserviceaddondata_icons_path = os.path.join(featherenceservice_addondata_path, 'icons', '')
-featherenceserviceaddondata_backgrounds_path = os.path.join(featherenceservice_addondata_path, 'backgrounds', '')
+featherenceserviceaddondata_media_path = os.path.join(featherenceservice_addondata_path, 'media', '')
 packages_path = os.path.join(addons_path,'packages','')
 
 #skin_path = os.path.join(xbmc.translatePath("special://skin").decode("utf-8"))

@@ -126,7 +126,7 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 	'''---------------------------'''
 	return returned	
 
-def TranslatePath(x):
+def TranslatePath(x, filteroff=[]):
 	name = 'TranslatePath' ; printpoint = "" ; returned = "" ; x2 = ""
 	if x == None: x = ""
 	if systemplatformwindows: slash = '\\'
@@ -140,11 +140,17 @@ def TranslatePath(x):
 		
 	else: x2 = os.path.join(xbmc.translatePath(x).decode("utf-8"))
 	
-	if os.path.exists(x2): returned = x2
+	if os.path.exists(x2):
+		if filteroff != []:
+			for y in filteroff:
+				if y in x2:
+					printpoint = printpoint + '8'
+					break
+		if not '8' in printpoint: returned = x2
 	
 	text = 'x' + space2 + str(x) + space + 'x2' + space2 + str(x2) + space + 'returned' + space2 + str(returned)
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
-	return x2
+	return returned
 
 def GeneratePath(x2):
 	name = 'GeneratePath' ; printpoint = "" ; returned = "" ; y = "" ; y_ = "" ; y__ = "" ; y2 = ""
@@ -157,7 +163,7 @@ def GeneratePath(x2):
 		y_ = x2.split(slash)
 		y__ = y_[-2]
 		y = str(y__) + '_' + str(y)
-	y2 = os.path.join(featherenceserviceaddondata_icons_path, str(y))
+	y2 = os.path.join(featherenceserviceaddondata_media_path, str(y))
 	
 	text = 'x2' + space2 + str(x2) + space + 'y' + space2 + str(y) + space + 'y_' + space2 + str(y_) + space + 'y__' + space2 + str(y__) + space + 'y2' + space2 + str(y2)
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")

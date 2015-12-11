@@ -70,8 +70,8 @@
 		<include>CheckProperty_Menus</include>
 		 <visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
-	  <item id="709" description="רקע אקראי לפי ו'ידגט">
-		<label>רקע אקראי לפי ו'ידגט - $VAR[Button708]</label>
+	  <item id="709" description="רקע אקראי">
+		<label>$VAR[label709] - $VAR[Button708]</label>
 		<onclick condition="StringCompare(Window(home).Property(Button.ID),90)" description="סרטים">Skin.ToggleSetting(wbackground90)</onclick>
 		<onclick condition="StringCompare(Window(home).Property(Button.ID),91)" description="סדרות">Skin.ToggleSetting(wbackground91)</onclick>
 		<onclick condition="StringCompare(Window(home).Property(Button.ID),97)" description="מזג אוויר">Skin.ToggleSetting(wbackground97)</onclick>

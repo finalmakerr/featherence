@@ -9,10 +9,10 @@
     <orientation>horizontal</orientation>
     <itemlayout height="350" width="368">
       <control type="group">
-		<animation condition="!Control.HasFocus(311) + !Control.HasFocus(312) + !System.IdleTime(3)" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
-		<animation condition="!Control.HasFocus(311) + !Control.HasFocus(312) + System.IdleTime(3)" effect="fade" start="40" end="0" time="3000" reversible="false">Conditional</animation>
-		<animation condition="[Control.HasFocus(311) | Control.HasFocus(312)] + !System.IdleTime(3)" effect="fade" start="100" end="70" time="220" reversible="true">Conditional</animation>
-		<animation condition="[Control.HasFocus(311) | Control.HasFocus(312)] + System.IdleTime(3)" effect="fade" start="70" end="0" time="3000" reversible="false">Conditional</animation>
+		<animation condition="!Control.HasFocus(311) + !Control.HasFocus(312) + !System.IdleTime(3)" effect="fade" start="90" end="90" time="220" reversible="false">Conditional</animation>
+		<animation condition="!Control.HasFocus(311) + !Control.HasFocus(312) + System.IdleTime(3)" effect="fade" start="90" end="0" time="3000" reversible="false">Conditional</animation>
+		<animation condition="[Control.HasFocus(311) | Control.HasFocus(312)] + !System.IdleTime(3)" effect="fade" start="100" end="60" time="220" reversible="false">Conditional</animation>
+		<animation condition="[Control.HasFocus(311) | Control.HasFocus(312)] + System.IdleTime(3)" effect="fade" start="60" end="0" time="3000" reversible="false">Conditional</animation>
 		<control type="image" description="מסגרת">
 			<posx>50</posx>
 			<posy>30</posy>

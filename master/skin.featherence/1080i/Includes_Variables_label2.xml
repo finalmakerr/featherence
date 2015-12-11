@@ -341,10 +341,16 @@
 	<value condition="Skin.String(MainBackgroundTexture)">$LOCALIZE[107] $INFO[Skin.String(MainBackgroundTexture)]</value>
   </variable>
   
+  
   <variable name="395label">
     <value condition="StringCompare(System.Language,Hebrew)">$LOCALIZE[573] $LOCALIZE[13278]</value>
 	<value condition="!StringCompare(System.Language,Hebrew)">$LOCALIZE[13278] $LOCALIZE[573]</value>
   </variable>
+  <variable name="label709">
+    <value condition="StringCompare(System.Language,Hebrew)">$LOCALIZE[19190] $LOCALIZE[590]</value>
+	<value condition="!StringCompare(System.Language,Hebrew)">$LOCALIZE[590] $LOCALIZE[19190]</value>
+  </variable>
+  
   <variable name="290label2" description="">
     <value condition="!Skin.String(DialogKaiToastPos)">DEFAULT</value>
 	<value condition="Skin.String(DialogKaiToastPos,1)">SW</value>

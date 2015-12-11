@@ -2989,6 +2989,11 @@ def pluginend(admin):
 	else: notification("?","","",1000)
 	
 	if mode != 17 and mode != 5 and mode != 21: # and mode != 20
+		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_TITLE)
+		#xbmcplugin.setContent(int(sys.argv[1]), 'tvshows')
+		xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL, name)
+		xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_TITLE, name)
+		xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_VIDEO_TITLE, name)
 		xbmcplugin.endOfDirectory(int(sys.argv[1]))
 		printpoint = printpoint + "7"
 	
@@ -3036,7 +3041,7 @@ def pluginend2(admin, url, containerfolderpath, viewtype):
 			printpoint = printpoint + "5"
 			setView('', viewtype, containerfolderpath2)
 			'''---------------------------'''
-			
+	
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
