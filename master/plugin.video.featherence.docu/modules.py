@@ -123,8 +123,8 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	'''------------------------------
 	---NATURE-ANIMALS----------------
 	------------------------------'''
-	 		
-	'''Animal's'''
+	background = 10101
+	
 	list = []
 	list.append('&youtube_id=eH1s9GCqPKo')
 	list.append('&youtube_pl=PLNxd9fYeqXeba2Nz4ocWac4hyhJnEACFw')
@@ -180,7 +180,7 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	'''------------------------------
 	---NATURE-PLANTS-----------------
 	------------------------------'''
-			
+	background = 10102
 	'''Plant's'''
 	list = []
 	list.append('&youtube_ch=DOGTVWORLD')
@@ -198,7 +198,7 @@ def CATEGORIES10103(name, iconimage, desc, fanart):
 	'''------------------------------
 	---NATURE-PLACES-----------------
 	------------------------------'''
-		'''natural places'''
+	background = 10103
 	list = []
 	list.append('&youtube_id=gWOeZ54JoO0')
 	list.append('&youtube_id=w7AFRg7-hrA')
