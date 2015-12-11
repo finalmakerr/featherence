@@ -70,62 +70,7 @@ def CATEGORIES101(admin):
 	
 	'''בעלי חיים'''
 	addDir(addonString(10101),'',10101,'',addonString(101010),'1',"", getAddonFanart(10101))
-	
-	'''צומח'''
-	addDir(addonString(10102),'',10102,'',addonString(101020),'1',"", getAddonFanart(10102))
-	
-	'''מקומות'''
-	addDir(addonString(10103),'',10103,'',addonString(101030),'1',"", getAddonFanart(10103))
-	
-	'''BBC Earth channel'''
-	addDir('BBC Earth','BBCEarth',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	 
-	'''Nat Geo WILD channel'''
-	addDir('Nat Geo WILD','NatGeoWild',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	
-	'''Animal Planet Channel'''
-	addDir('Animal Planet Channel','AnimalPlanetTV',9,'','','1',"", getAddonFanart(background, custom=""))
-	
-	'''ocean's'''
-	list = []
-	list.append('&youtube_ch=DOGTVWORLD')
-	list.append('&youtube_id=eH1s9GCqPKo')
-	list.append('&youtube_pl=PLHva7axGsKGp38eqVqqdxD5d4IOB9KOWL')
-	list.append('&youtube_pl=PL7ddU90jpZDsJAhKNsVyuMcWELCLQsrfV')
-	list.append('&youtube_pl=PLrzTIP2lsW_ioMVg-nOA9no5PNg6PEfp_')
-	list.append('&youtube_pl=PLufSG52JVObYXb1-aZl9e7hFkXkKe92Hj')
-	list.append('&youtube_pl=PL3kcQ0lk32Iq3LDcQ8OUd6Zv6PTULCa3J')
-	list.append('&youtube_pl=PL1mDQRn6BW7Q-utly7N5DyrKWZeVrrRU2')
-	list.append('&youtube_pl=PLzEB0af6uUKY-C4hfcWqDI5o6P_Gbrycl')
-	list.append('&youtube_pl=PLD0rNDBsRxFOxysUhikCbhsGawiU50PMX')
-	list.append('&youtube_pl=PLG5mK0MTE_3GoOFcf7xKPXmcKTUnSvXW2')
-	addDir("ocean's",list,17,'','','1',"", getAddonFanart(background, custom=""))
- 
- 
-	
-	
-	'''natural phenomena and disasters'''
-	list = []
-	list.append('&youtube_id=x-rIe1sCJU4')
-	list.append('&youtube_id=x-d78aT0rbsDQ')
-	list.append('&youtube_id=x-YZzvu_fnDww')
-	list.append('&youtube_id=x-zb77L6v9vxM')
-	list.append('&youtube_id=x-yz0QYFq8bc')
-	list.append('&youtube_id=zQYe3ngG6qs')
-	list.append('&youtube_id=QfmRf8iOBkI')
-	list.append('&youtube_pl=PL_jFbqOSEqaJs4l1clBJ2w8dRWArUcQH3')
-	list.append('&youtube_pl=PLIhyKgmJSkqK50xd2ZC3eYMPZQBGNgcmq')
-	list.append('&youtube_pl=PLA42E3C7F214452E7')
-	list.append('&youtube_pl=PL95E291BF550DFD9C')
-	list.append('&youtube_pl=PLaKnDNcDS7loTcHzKgUJXkkCfAtYFfJd7')
-	list.append('&youtube_pl=PLxD46bIwUSnGBok3QJzd1PY6WkSiYfgKB')
-	list.append('&youtube_pl=PL0pF26S5a5KD1NcL1zbMrlV7qqj4ro6iw')
-	list.append('&youtube_pl=PL8rWKwqFW1l0opYCffj6A4EPi0kgobTuz')
-	addDir('natural phenomena and disasters',list,17,'','','1',"", getAddonFanart(background, custom=""))
- 
-	
+		
 	'''Animal's'''
 	list = []
 	list.append('&youtube_id=eH1s9GCqPKo')
@@ -178,9 +123,10 @@ def CATEGORIES101(admin):
 	list.append('&youtube_pl=PL4GlJCvaiJkS5S4M2QU5AJhTRhka_SzUC')
 	addDir('DOG WHISPERER',list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
+	'''צומח'''
+	addDir(addonString(10102),'',10102,'',addonString(101020),'1',"", getAddonFanart(10102))
 	
-
-	
+		
 	'''Plant's'''
 	list = []
 	list.append('&youtube_ch=DOGTVWORLD')
@@ -194,7 +140,8 @@ def CATEGORIES101(admin):
 	list.append('&youtube_pl=PLYpOT73IUzMkKNkgQS-uGOISuOS207BL-')
 	addDir("Plant's",list,17,'','','1',"", getAddonFanart(background, custom=""))
  
- 
+	'''מקומות'''
+	addDir(addonString(10103),'',10103,'',addonString(101030),'1',"", getAddonFanart(10103))
 	'''natural places'''
 	list = []
 	list.append('&youtube_id=gWOeZ54JoO0')
@@ -214,7 +161,64 @@ def CATEGORIES101(admin):
 	list.append('&youtube_pl=PL8rWKwqFW1l0opYCffj6A4EPi0kgobTuz')
 	list.append('&youtube_pl=PLR1CNcQmgvMlowMRAo2SjCLBKzibJq0Y5')
 	list.append('&youtube_pl=PLql7ZywaMwm2ugmP5-rIjUOvly5kqBV7J')
+	
+	'''ocean's'''
+	list = []
+	list.append('&youtube_ch=DOGTVWORLD')
+	list.append('&youtube_id=eH1s9GCqPKo')
+	list.append('&youtube_pl=PLHva7axGsKGp38eqVqqdxD5d4IOB9KOWL')
+	list.append('&youtube_pl=PL7ddU90jpZDsJAhKNsVyuMcWELCLQsrfV')
+	list.append('&youtube_pl=PLrzTIP2lsW_ioMVg-nOA9no5PNg6PEfp_')
+	list.append('&youtube_pl=PLufSG52JVObYXb1-aZl9e7hFkXkKe92Hj')
+	list.append('&youtube_pl=PL3kcQ0lk32Iq3LDcQ8OUd6Zv6PTULCa3J')
+	list.append('&youtube_pl=PL1mDQRn6BW7Q-utly7N5DyrKWZeVrrRU2')
+	list.append('&youtube_pl=PLzEB0af6uUKY-C4hfcWqDI5o6P_Gbrycl')
+	list.append('&youtube_pl=PLD0rNDBsRxFOxysUhikCbhsGawiU50PMX')
+	list.append('&youtube_pl=PLG5mK0MTE_3GoOFcf7xKPXmcKTUnSvXW2')
+	addDir("ocean's",list,17,'','','1',"", getAddonFanart(background, custom=""))
+ 
+ 
 	addDir('natural places',list,17,'','','1',"", getAddonFanart(background, custom=""))
+
+	'''BBC Earth channel'''
+	addDir('BBC Earth','BBCEarth',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	 
+	'''Nat Geo WILD channel'''
+	addDir('Nat Geo WILD','NatGeoWild',9,'','','1',"", getAddonFanart(background, custom=""))
+
+	
+	'''Animal Planet Channel'''
+	addDir('Animal Planet Channel','AnimalPlanetTV',9,'','','1',"", getAddonFanart(background, custom=""))
+	
+
+	
+	
+	'''natural phenomena and disasters'''
+	list = []
+	list.append('&youtube_id=x-rIe1sCJU4')
+	list.append('&youtube_id=x-d78aT0rbsDQ')
+	list.append('&youtube_id=x-YZzvu_fnDww')
+	list.append('&youtube_id=x-zb77L6v9vxM')
+	list.append('&youtube_id=x-yz0QYFq8bc')
+	list.append('&youtube_id=zQYe3ngG6qs')
+	list.append('&youtube_id=QfmRf8iOBkI')
+	list.append('&youtube_pl=PL_jFbqOSEqaJs4l1clBJ2w8dRWArUcQH3')
+	list.append('&youtube_pl=PLIhyKgmJSkqK50xd2ZC3eYMPZQBGNgcmq')
+	list.append('&youtube_pl=PLA42E3C7F214452E7')
+	list.append('&youtube_pl=PL95E291BF550DFD9C')
+	list.append('&youtube_pl=PLaKnDNcDS7loTcHzKgUJXkkCfAtYFfJd7')
+	list.append('&youtube_pl=PLxD46bIwUSnGBok3QJzd1PY6WkSiYfgKB')
+	list.append('&youtube_pl=PL0pF26S5a5KD1NcL1zbMrlV7qqj4ro6iw')
+	list.append('&youtube_pl=PL8rWKwqFW1l0opYCffj6A4EPi0kgobTuz')
+	addDir('natural phenomena and disasters',list,17,'','','1',"", getAddonFanart(background, custom=""))
+ 
+
+	
+
+	
+	
+ 
 
 def CATEGORIES10101(name, iconimage, desc, fanart):
 	'''------------------------------
