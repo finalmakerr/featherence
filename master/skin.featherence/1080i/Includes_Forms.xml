@@ -222,12 +222,19 @@
     <texturenofocus>-</texturenofocus>
 	<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
   </include>
+  <include name="ButtonL2" description="()">
+	<width>880</width>
+	<textoffsetx>20</textoffsetx>
+    <align>left</align>
+    <texturenofocus border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+	<alttexturenofocus border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</alttexturenofocus> <!--הפעל באמצעות: usealttexture-->
+  </include>
   <include name="ButtonR2" description="()">
 	<width>880</width>
 	<textoffsetx>20</textoffsetx>
     <align>right</align>
-    <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
-	<alttexturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</alttexturenofocus> <!--הפעל באמצעות: usealttexture-->
+    <texturenofocus border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+	<alttexturenofocus border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</alttexturenofocus> <!--הפעל באמצעות: usealttexture-->
   </include>
   <include name="ButtonL3" description="()">
 	<width>580</width>

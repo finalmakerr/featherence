@@ -673,16 +673,6 @@
 	  <label>137</label>
 	  <font>size28</font>
 	</control>
-	<control type="radiobutton" id="24" description="נתיב קובץ">
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-	  <font>size28</font>
-	  <label>$LOCALIZE[21801]</label>
-	  <onclick condition="Skin.HasSetting(ShowFileInfo)">Skin.ToggleSetting(ShowFileInfo)</onclick>
-	  <altclick condition="!Skin.HasSetting(ShowFileInfo)">Skin.ToggleSetting(ShowFileInfo)</altclick>
-	 <radiowidth>30</radiowidth>
-	 <radioheight>30</radioheight>
-	</control>	
 	<control type="togglebutton" id="20">
 	  <description>Update library</description>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
@@ -697,7 +687,6 @@
 	<include>openViewSettings9001</include>
 	<include>AutoViewSettingsButton</include>
 	<include condition="!StringCompare(ListItem.Path,musicdb://)">FileManagerButton</include>
-	<include condition="Window.IsVisible(MyMusicNav.xml) + !Skin.String(ID10,C) + !Skin.String(ID10,D)">HelpButton</include>
 	<include>CommonLeftMenuButtons</include>
   </include>  
   <include name="LeftMenuMyWeather">

@@ -607,7 +607,7 @@
 		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
 		  <label>$LOCALIZE[184]</label>
-		  <onclick>RunScript(script.featherence.service,,?mode=23&amp;value=)</onclick>
+		  <onclick>RunScript(script.featherence.service,,?mode=23)</onclick>
 		  <posx>-10</posx>
 		  <visible>[Control.IsVisible(311) | Control.IsVisible(312)] + Control.IsVisible(9090)</visible>
 		  <visible>Window.IsVisible(Home.xml)</visible>

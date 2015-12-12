@@ -31,7 +31,7 @@
 		<label>$ADDON[script.featherence.service 79]</label>
 		<onclick>RunScript(script.featherence.service,,?mode=232&amp;value=)</onclick>
 		<include>CheckProperty_Menus</include>
-		<visible>[!Window.IsVisible(Custom1138.xml) + IntegerGreaterThan(Window(home).Property(Button.ID),99) + !IntegerGreaterThan(Window(home).Property(Button.ID),200)] | [Window.IsVisible(Custom1139.xml) + IntegerGreaterThan(Window(home).Property(SubButton.ID_),99)]</visible>
+		<visible>[!Window.IsVisible(Custom1138.xml) + IntegerGreaterThan(Window(home).Property(Button.ID),99) + !IntegerGreaterThan(Window(home).Property(Button.ID),200)] | [Window.IsVisible(Custom1139.xml) + !SubString(Window(home).Property(SubButton.ID_),_90)]</visible>
 	  </item>
 	  <item id="704" description="הזזת פריט">
 		<label>13251</label>

@@ -6,7 +6,6 @@
   <onload>Action(Back)</onload>
   <onload>AlarmClock(MVclose1,Dialog.Close(visualisation),0,silent)</onload>
   <onload>AlarmClock(MVclose2,Dialog.Close(visualisation),00:01,silent)</onload>
-
   <controls>
 	<control type="button" id="10" description="כניסה">
 	  <onfocus>ReplaceWindow(Home.xml)</onfocus>

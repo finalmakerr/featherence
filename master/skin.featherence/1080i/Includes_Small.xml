@@ -329,6 +329,7 @@
 		<texture background="true">$VAR[background2]</texture>
 		<width>1920</width>
 		<visible>!Skin.HasSetting(background2) + !Control.IsVisible(7013) + !Control.IsVisible(7015) + !IsEmpty(Control.GetLabel(70140)) + IsEmpty(Control.GetLabel(70130))</visible>
+		<visible>[!Control.IsVisible(57) + !Control.IsVisible(58)]</visible>
 	  </control>
 	  <control type="image" description="מסגרת (רקע עליון)">
 		<animation condition="true" effect="fade" start="70" end="70" time="0">Conditional</animation>
@@ -738,7 +739,7 @@
 	<control type="group" description="מצב ספרייה">
 	  <visible>Control.IsVisible(60)</visible>
 	  <visible>!Control.IsVisible(54)</visible>
-	  <visible>IntegerGreaterThan(Container.NumPages,2) | Window.IsVisible(FileBrowser.xml)</visible>
+	  <visible>IntegerGreaterThan(Container.NumPages,1) | Window.IsVisible(FileBrowser.xml)</visible>
 	  <height>880</height>
 	  <width>20</width>
 	  <posx>10r</posx>
