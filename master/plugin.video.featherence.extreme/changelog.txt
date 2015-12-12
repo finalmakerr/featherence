@@ -3,6 +3,6 @@ WIP (WORK IN PROGRESS)
 ------------------------
 
 ------------------------
-Featherence GoPro v0.1.0 (xx-Dec-15)
+Featherence Extreme v0.1.0 (xx-Dec-15)
 ------------------------
 -
