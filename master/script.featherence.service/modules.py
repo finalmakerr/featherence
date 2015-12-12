@@ -724,9 +724,17 @@ def mode31(value, value2, value3, value4, admin, name, printpoint):
 	'''------------------------------
 	---diaogtextviewer---------------
 	------------------------------'''
-	header = str(value).encode('utf-8')
-	message = str(value2).encode('utf-8')
-	if value3 != None:
+	header = "" ; message = ""
+	try: header = str(value).encode('utf-8')
+	except: pass
+	try: message = str(value2).encode('utf-8')
+	except: pass
+	if value == 'Custom':
+		value3 = setPath(type=1,mask="", folderpath="")
+		if value3 != "":
+			header = os.path.basename(value3)
+	
+	if value3 != "" and value3 != None:
 		value3 = read_from_file(value3, silent=True, lines=False, retry=True, createlist=True, printpoint="", addlines="")
 		message = message + newline + str(value3)
 	message = message + newline + str(value4).encode('utf-8')

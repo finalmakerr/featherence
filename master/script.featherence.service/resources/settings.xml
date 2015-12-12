@@ -42,7 +42,8 @@
 		<setting type="bool" id="TotalMouse" default="false" label="Enable Total Mouse" visible="System.Platform.Windows"/>
 		<setting type="lsep" label="32040" visible="eq(-1,true)"/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=101&amp;value=1)" label="Launch Total Mouse script" option="close" visible="System.Platform.Windows"/>
-	    
+	    <setting type="lsep" label=""/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=31&amp;value=Custom)" label="Read file and display results" option="close" visible="true"/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=46)" label="OverClock PI" visible="System.Platform.Linux.RaspberryPi + System.HasAddon(service.openelec.settings)"/>
 		<setting type="lsep" label="84" visible="System.Platform.Linux | System.Platform.Linux.RaspberryPi"/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=63)" label="Texture & DB Removal" visible="System.Platform.Linux | System.Platform.Linux.RaspberryPi"/>

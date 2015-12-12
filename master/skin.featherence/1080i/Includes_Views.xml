@@ -42,7 +42,6 @@
   <include name="ViewDesign_450" description="Center List">
     <control type="group" description="">
 	  <visible>Control.IsVisible(450)</visible>
-	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1450,0">Conditional</animation>
       <control type="group">
 		<control type="list" id="450">
 		  <include>Slide1</include>

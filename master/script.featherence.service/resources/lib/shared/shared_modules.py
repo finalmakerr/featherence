@@ -1659,7 +1659,7 @@ def installaddonP(admin, addon, update=True):
 		
 	elif '.featherence' in addon: #GITHUB PATH
 		if not 'resource.' in addon and not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			version = getVersion(addon, 'https://raw.githubusercontent.com/htpthtpt/htpt/master/addons.xml')
+			version = getVersion(addon, 'https://raw.githubusercontent.com/finalmakerr/featherence/master/addons.xml')
 			file = addon + '-' + str(version) + '.zip'
 			DownloadFile(gh1+gh2+addon+'/'+file, file, packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
