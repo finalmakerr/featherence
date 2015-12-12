@@ -25,6 +25,7 @@ def mode5(value, admin, name, printpoint):
 	------------------------------'''
 	AutoUpdate = getsetting('AutoUpdate')
 	AutoUpdate2 = getsetting('AutoUpdate2')
+	Library_On = getsetting('Library_On')
 	
 	if AutoUpdate == 'true':
 		printpoint = printpoint + '1'
@@ -44,7 +45,6 @@ def mode5(value, admin, name, printpoint):
 			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=27&value=0)')
 	else:
 		'''multitime but not on startup'''
-		Library_On = getsetting('Library_On')
 		if Library_On == 'true':
 			printpoint = printpoint + '2'
 			LibraryUpdate(admin, datenowS, Library_On, Library_CleanDate, Library_UpdateDate)
