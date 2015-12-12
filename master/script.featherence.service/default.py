@@ -238,9 +238,9 @@ elif mode == 24:
 		value_title = xbmc.getInfoLabel('Window(home).Property('+value+'.Title)')
 		value_trailer = xbmc.getInfoLabel('Window(home).Property('+value+'.Trailer)')
 		
-		if trailers == 'true':
+		if trailers == 'true' or 'trailers' in value2:
 			if value_trailer != "": 
-				if not trailers2: xbmc.executebuiltin('PlayMedia('+value_trailer+'],1)')
+				if not trailers2 and value2 != 'trailers2': xbmc.executebuiltin('PlayMedia('+value_trailer+'],1)')
 				else: xbmc.executebuiltin('PlayMedia('+value_trailer+'])')
 				'''---------------------------'''
 			else:

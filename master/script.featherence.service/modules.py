@@ -367,10 +367,15 @@ def mode10(admin, name, printpoint):
 			videoplayertweak(admin, playerhasvideo)
 			playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
 			'''---------------------------'''
-		setProperty('mode10', "", type="home")
-		setProperty('VideoPlayer.Title', "", type="home")
 		for i in range(1,10):
 			setProperty('TopVideoInformation' + str(i), "", type="home")
+		if xbmc.getInfoLabel('Window(home).Property(VideoPlayer.Title)') != "": printpoint = printpoint + "5"
+		setProperty('mode10', "", type="home")
+		setProperty('VideoPlayer.Title', "", type="home")
+		if '5' in printpoint:
+			xbmc.sleep(3000)
+			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23)')
+		
 
 def mode12(admin, name, printpoint):
 	'''------------------------------
@@ -2955,7 +2960,7 @@ def mode215(value, admin, name, printpoint):
 	if value != "":
 		'''ראשי'''
 		x = '99' ; id = idT2.get(x)
-		if id != "" and id != None and 1 + 1 == 2:	
+		if id != "" and id != None and 1 + 1 == 3:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value == 'RESET': setSkinSetting('0','label'+id,localize(78942))
 			setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=519&value=0)')
