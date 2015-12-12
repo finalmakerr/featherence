@@ -18,10 +18,11 @@ def CATEGORIES():
 	addDir(addonString(107).encode('utf-8'),'',107,'',addonString(1070).encode('utf-8'),'1',50, getAddonFanart(107, custom="")) #Kids
 	addDir(addonString(108).encode('utf-8'),'',108,'',addonString(1080).encode('utf-8'),'1',50, getAddonFanart(108, custom="")) #Hebrew Subtitle
 	addDir(addonString(109).encode('utf-8'),'',109,'',addonString(1090).encode('utf-8'),'1',50, getAddonFanart(109, custom="")) #TV channels
-			
+	addDir(addonString(110).encode('utf-8'),'',110,'',addonString(1010).encode('utf-8'),'1',50, getAddonFanart(110, custom="")) #art
+		
 	addon = 'plugin.video.smithsonian'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('HD 1080','plugin://'+addon,8,thumb,plot,addon,58, getAddonFanart(110, custom=""))
+	addDir('Smithsonian HD 1080','plugin://'+addon,8,thumb,plot,addon,58, getAddonFanart(110, custom=""))
 	'''---------------------------'''
 	
 
@@ -68,6 +69,15 @@ def CATEGORIES101(admin):
 	list = []
 	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
 	
+	'''youtube nature channels'''
+	list = []
+	list.append('&youtube_ch=BBCEarth')
+	list.append('&youtube_ch=NatGeoWild')
+	list.append('&youtube_ch=AnimalPlanetTV')
+	list.append('&youtube_ch=DiscoveryNetworks')
+	list.append('&youtube_ch=NationalGeographic')
+	addDir("youtube nature channel's",list,17,'','','1',"", getAddonFanart(background, custom=""))
+ 
 	'''בעלי חיים'''
 	addDir(addonString(10101),'',10101,'',addonString(101010),'1',"", getAddonFanart(10101))
 	
@@ -77,41 +87,11 @@ def CATEGORIES101(admin):
 
 	'''מקומות'''
 	addDir(addonString(10103),'',10103,'',addonString(101030),'1',"", getAddonFanart(10103))
-	addDir('natural places',list,17,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''BBC Earth channel'''
-	addDir('BBC Earth','BBCEarth',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	 
-	'''Nat Geo WILD channel'''
-	addDir('Nat Geo WILD','NatGeoWild',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	
-	'''Animal Planet Channel'''
-	addDir('Animal Planet Channel','AnimalPlanetTV',9,'','','1',"", getAddonFanart(background, custom=""))
-	
 
 	
 	
-	'''natural phenomena and disasters'''
-	list = []
-	list.append('&youtube_id=x-rIe1sCJU4')
-	list.append('&youtube_id=x-d78aT0rbsDQ')
-	list.append('&youtube_id=x-YZzvu_fnDww')
-	list.append('&youtube_id=x-zb77L6v9vxM')
-	list.append('&youtube_id=x-yz0QYFq8bc')
-	list.append('&youtube_id=zQYe3ngG6qs')
-	list.append('&youtube_id=QfmRf8iOBkI')
-	list.append('&youtube_pl=PL_jFbqOSEqaJs4l1clBJ2w8dRWArUcQH3')
-	list.append('&youtube_pl=PLIhyKgmJSkqK50xd2ZC3eYMPZQBGNgcmq')
-	list.append('&youtube_pl=PLA42E3C7F214452E7')
-	list.append('&youtube_pl=PL95E291BF550DFD9C')
-	list.append('&youtube_pl=PLaKnDNcDS7loTcHzKgUJXkkCfAtYFfJd7')
-	list.append('&youtube_pl=PLxD46bIwUSnGBok3QJzd1PY6WkSiYfgKB')
-	list.append('&youtube_pl=PL0pF26S5a5KD1NcL1zbMrlV7qqj4ro6iw')
-	list.append('&youtube_pl=PL8rWKwqFW1l0opYCffj6A4EPi0kgobTuz')
-	addDir('natural phenomena and disasters',list,17,'','','1',"", getAddonFanart(background, custom=""))
- 
+
+	
 
 	
 
@@ -125,8 +105,9 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	------------------------------'''
 	background = 10101
 	
+	'''Animal's'''
 	list = []
-	list.append('&youtube_id=eH1s9GCqPKo')
+	list.append('&youtube_ch=UCFYJCBaHRzLJrnhRglM3GdA')
 	list.append('&youtube_pl=PLNxd9fYeqXeba2Nz4ocWac4hyhJnEACFw')
 	list.append('&youtube_pl=PLNxd9fYeqXeYQpcE7LfadSFjUU4E6inZC')
 	list.append('&youtube_pl=PL_jFbqOSEqaLIYGS0Oz8jTlrB8PaHiwdp')
@@ -135,26 +116,83 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL7GQU9nivpYJpnzAhTH1OB3N6BeQipls_')
 	list.append('&youtube_pl=PLd2jr44gFMvBMxFlT0tFxeJqrAYGmpjO1')
 	list.append('&youtube_pl=PLsa65XLFLA2-mxUpttawU8AN1TX0VwKpH')
-	list.append('&youtube_pl=PLvTrLxXekhJrlt2IY3-Paobg5skAXFIMB')
 	list.append('&youtube_pl=PLcOr-eBi9or-I7knKXhhdihMqswzWJ7yo')
 	list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq')
-	list.append('&youtube_pl=PL0GL1wmKQPGgOBIHtvwcP3g51_rWqnwBx')
-	list.append('&youtube_pl=PL0GL1wmKQPGhnl30h5A2OmyR94N1UkDmB')
-	list.append('&youtube_pl=PL0GL1wmKQPGi_eAvRbaBVlae24tVsrGuK')
-	list.append('&youtube_pl=PLpYgp0wW8mmZyLCqY415YbjefiazLBHzJ')
-	list.append('&youtube_ch=UC3c8nDp-i60gB2wTmUeyQAA')
-	list.append('&youtube_pl=PL38WzeWx41gayCgnx5EsqsFAS4lH3XhV5')
-	list.append('&youtube_ch=UCvfH62D48X5Bahu-oroIreQ')
-	list.append('&youtube_pl=PLvTrLxXekhJrUx5QHSfP6hJuIseU2FY2F')
-	list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq')
-	list.append('&youtube_pl=PLoUUkpYUScvJb2li_PY6c9fu_A3IlJKiT')
-	list.append('&youtube_pl=PLWWOl-2iqjMb2UljVPPhQQy6SJJ3E-7gK')
-	list.append('&youtube_pl=PLezpCwYgD_yvNYNXZlDM6z3mpuTQYgjUs')
-	list.append('&youtube_ch=PLHtNpWbpKrdgTnYZDyTKpZNyBStsVyNK-')
-	list.append('&youtube_pl=PLfAToAFYpTfuHlcsmO-hiYcpp1yrrP10y')
-	list.append('&youtube_ch=UCaL6Fn_Exyfe2tzBMI4cHVw')
 	addDir("Animal's",list,17,'','','1',"", getAddonFanart(background, custom=""))
- 
+    
+	'''Lions'''
+	list = []
+	list.append('&youtube_ch=UC3c8nDp-i60gB2wTmUeyQAA')
+	list.append('&youtube_pl=PLpYgp0wW8mmZyLCqY415YbjefiazLBHzJ')
+	list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq')
+	addDir('Lions',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''Giraffe'''
+	list = []
+	list.append('&youtube_ch=UCDJLpRSvaPy8vWn8hZVguSg') 
+	addDir('Giraffe',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''Elephant'''
+	list = []
+	list.append('&youtube_ch=UCXhjuyNdDSbe5L0yiFoCoxQ') 
+	addDir('Elephant',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''Tiger'''
+	list = []
+	list.append('&youtube_ch=UCEYScfGuWVU9gxdrqf0XArQ') 
+	addDir('Tiger',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''Monkey'''
+	list = []
+	list.append('&youtube_ch=channel/UC265iYDGY4YHbEqLPrhvJKQ') 
+	addDir('Monkey',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''Cats'''
+	list = []
+	list.append('&youtube_ch=UC9egiwuJsQZ0Cy2to5fvSIQ') 
+	addDir('Cats',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''Birds'''
+	list = []
+	list.append('&youtube_ch=UC7uJ7jdwfPcmqKu7V2nI9rA') 
+	list.append('&youtube_pl=PLvTrLxXekhJrlt2IY3-Paobg5skAXFIMB')
+
+	addDir('Birds',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''Fish'''
+	list = []
+	list.append('&youtube_ch=UCZGIp0c6Dv6o6GOR7XCuZTA')
+	list.append('&youtube_pl=PLfAToAFYpTfuHlcsmO-hiYcpp1yrrP10y')
+	list.append('&youtube_pl=PLezpCwYgD_yvNYNXZlDM6z3mpuTQYgjUs')
+	addDir('Fish',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+
+	'''Shark'''
+	list = []
+	list.append('&youtube_ch=UCHThGYhvhgyvTgUkv3n5R_A') 
+	addDir('Shark',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''Snakes'''
+	list = []
+	list.append('&youtube_ch=UC26F6BLFDlCufiZnXsbWMwQ')
+	list.append('&youtube_pl=PLWWOl-2iqjMb2UljVPPhQQy6SJJ3E-7gK')
+	list.append('&youtube_pl=PLoUUkpYUScvJb2li_PY6c9fu_A3IlJKiT')
+	addDir('Snakes',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''Reptile'''
+	list = []
+	list.append('&youtube_ch=UCvfH62D48X5Bahu-oroIreQ')
+	addDir('Reptile',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+
+	
+	'''dogs'''
+	list = []
+	list.append('&youtube_ch=UCcqLkZqBfBOKmi4vrgkQ6yw')
+	addDir('Dogs',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
 	'''Dogtv'''
 	list = []
 	list.append('&youtube_ch=DOGTVWORLD')
@@ -183,7 +221,6 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	background = 10102
 	'''Plant's'''
 	list = []
-	list.append('&youtube_ch=DOGTVWORLD')
 	list.append('&youtube_id=eH1s9GCqPKo')
 	list.append('&youtube_pl=PLgKYsEYF9_QCxM_29RC6euEJLvaHFOdrJ')
 	list.append('&youtube_pl=PLs7Y2nGwfz4FL4ZJgONHsl1qp-AZPr3tJ')
@@ -217,7 +254,8 @@ def CATEGORIES10103(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL8rWKwqFW1l0opYCffj6A4EPi0kgobTuz')
 	list.append('&youtube_pl=PLR1CNcQmgvMlowMRAo2SjCLBKzibJq0Y5')
 	list.append('&youtube_pl=PLql7ZywaMwm2ugmP5-rIjUOvly5kqBV7J')
-	
+	addDir('natural places',list,17,'','','1',"", getAddonFanart(background, custom=""))
+
 	'''ocean's'''
 	list = []
 	list.append('&youtube_id=eH1s9GCqPKo')
@@ -231,6 +269,27 @@ def CATEGORIES10103(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLD0rNDBsRxFOxysUhikCbhsGawiU50PMX')
 	list.append('&youtube_pl=PLG5mK0MTE_3GoOFcf7xKPXmcKTUnSvXW2')
 	addDir("ocean's",list,17,'','','1',"", getAddonFanart(background, custom=""))
+ 
+ 
+	
+	'''natural phenomena and disasters'''
+	list = []
+	list.append('&youtube_id=x-rIe1sCJU4')
+	list.append('&youtube_id=x-d78aT0rbsDQ')
+	list.append('&youtube_id=x-YZzvu_fnDww')
+	list.append('&youtube_id=x-zb77L6v9vxM')
+	list.append('&youtube_id=x-yz0QYFq8bc')
+	list.append('&youtube_id=zQYe3ngG6qs')
+	list.append('&youtube_id=QfmRf8iOBkI')
+	list.append('&youtube_pl=PL_jFbqOSEqaJs4l1clBJ2w8dRWArUcQH3')
+	list.append('&youtube_pl=PLIhyKgmJSkqK50xd2ZC3eYMPZQBGNgcmq')
+	list.append('&youtube_pl=PLA42E3C7F214452E7')
+	list.append('&youtube_pl=PL95E291BF550DFD9C')
+	list.append('&youtube_pl=PLaKnDNcDS7loTcHzKgUJXkkCfAtYFfJd7')
+	list.append('&youtube_pl=PLxD46bIwUSnGBok3QJzd1PY6WkSiYfgKB')
+	list.append('&youtube_pl=PL0pF26S5a5KD1NcL1zbMrlV7qqj4ro6iw')
+	list.append('&youtube_pl=PL8rWKwqFW1l0opYCffj6A4EPi0kgobTuz')
+	addDir('natural phenomena and disasters',list,17,'','','1',"", getAddonFanart(background, custom=""))
  
  
 	
@@ -271,94 +330,7 @@ def CATEGORIES102(admin):
 	addDir("Space and Universe",list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
 	
-	'''------------------------------
-	---art&visual arts----------------
-	------------------------------'''
 
-
-	'''markcrilley Channel'''
-	addDir('markcrilley','markcrilley',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''PESfilm Channel'''
-	addDir('Crash Course Kids Channel','crashcoursekids',9,'','','1',"", getAddonFanart(background, custom=""))
-	
-	
-	'''WilliamsShamir Channel'''
-	addDir('WilliamsShamir Channel','WilliamsShamir',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''ChrisSamba22 Channel'''
-	addDir('ChrisSamba22 Channel','ChrisSamba22',9,'','','1',"", getAddonFanart(background, custom=""))
-	
-	
-	'''EclecticAsylumArt Channel'''
-	addDir('EclecticAsylumArt Channel','EclecticAsylumArt',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''idrawgirls Channel'''
-	addDir('idrawgirls  Channel','idrawgirls/',9,'','','1',"", getAddonFanart(background, custom=""))
-	
-	
-	'''daarken Channel'''
-	addDir('daarken Channel','daarken',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''Crash Course Kids Channel'''
-	addDir('Crash Course Kids Channel','crashcoursekids',9,'','','1',"", getAddonFanart(background, custom=""))
-	
-	
-	'''3dsMaxHowTos Channel'''
-	addDir('3dsMaxHowTos Channel','3dsMaxHowTos',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''revolutions34 Channel'''
-	addDir('revolutions34 Channel','crashcoursekids',9,'','','1',"", getAddonFanart(background, custom=""))
-	
-	'''CGArtSuccess Channel'''
-	addDir('CGArtSuccess Channel','CGArtSuccess',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''bluefley00 Channel'''
-	addDir('bluefley00  Channel','bluefley00 ',9,'','','1',"", getAddonFanart(background, custom=""))
-	
-	
-	'''bedavelli Channel'''
-	addDir('bedavelli Channel','bedavellis',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''arieldiaz3d Channel'''
-	addDir('arieldiaz3d Channel','arieldiaz3d',9,'','','1',"", getAddonFanart(background, custom=""))
-	
-	
-	'''Arenovalis Channel'''
-	addDir('Arenovalis Channel','Arenovalis',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	
-	
-	'''iceblazer17 Channel'''
-	addDir('iceblazer17 Channel','iceblazer17',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''AlexanderKoshelkov Channel'''
-	addDir('AlexanderKoshelkov Channel','AlexanderKoshelkov',9,'','','1',"", getAddonFanart(background, custom=""))
-	
-	'''tate Channel'''
-	addDir('tate Channel','tate',9,'','','1',"", getAddonFanart(background, custom=""))
-	
-		
-	'''smarthistoryvideos Channel'''
-	addDir('smarthistoryvideos Channel','smarthistoryvideos',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''guggenheim Channel'''
-	addDir('guggenheim Channel','guggenheim',9,'','','1',"", getAddonFanart(background, custom=""))
-	
-	
-	'''MoMAvideos Channel'''
-	addDir('SciShow Kids Channel','scishowkids',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''TheArtistsPlace Channel'''
-	addDir('TheArtistsPlace Channel','UCLCHcL4M0xSwPeEuKGrsGkg',9,'','','1',"", getAddonFanart(background, custom=""))
-	
-	
-	'''TattooWoo Channel'''
-	addDir('SciShow Kids Channel','scishowkids',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''Sycra Channel'''
-	addDir('Sycra Kids Channel','Sycra',9,'','','1',"", getAddonFanart(background, custom=""))
-	
 	
 	
 	
@@ -385,6 +357,8 @@ def CATEGORIES103(admin):
 	list.append('&youtube_ch=UC5xIAFuCs4m2S4uPY9dp_Ww')
 	list.append('&youtube_ch=BlastfromthePast')
 	list.append('&youtube_ch=TheGreatWar')
+	list.append('&youtube_ch=UCBcIe5EBAxqK267uyEVibFw')
+
 	addDir("youtube history channel's",list,17,'','','1',"", getAddonFanart(background, custom=""))
 
 
@@ -407,7 +381,8 @@ def CATEGORIES103(admin):
 	list.append('&youtube_pl=PLAHSKcwF7IuoAlecwFFfOkyJvQZvFTEh5')
 	addDir("History Channel",list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
-        '''History '''
+    
+	'''General History'''
 	list = []
 	list.append('&youtube_pl=PLZctZ0yYTg4W4dvyFca9Yu6RK9inYHLtp')
 	list.append('&youtube_pl=PLx5B22t2Ksu2jerdLdWvZ1JuYizKsnnzr')
@@ -419,7 +394,7 @@ def CATEGORIES103(admin):
 	list.append('&youtube_pl=PL8dPuuaLjXtNjasccl-WajpONGX3zoY4M')
 	list.append('&youtube_pl=PLp-cIkvQ88-1_nvZZ2-i5j90J3llXJl1o')
 	list.append('&youtube_pl=PL47F868B521713645')
-	addDir("History Channel",list,17,'','','1',"", getAddonFanart(background, custom=""))
+	addDir("History ",list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
 	
 	
@@ -437,15 +412,22 @@ def CATEGORIES104(admin):
 	addDir(localize(137),'Science Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי'''
-	list = []
+	list = [] 
+	list.append('&youtube_ch=UCWFRiMtUDXj6N-hNe0An-VQ')
+	list.append('&youtube_ch=UCWYeiNSo18bhZvI1pz39U6g')
+	
+	list.append('&youtube_ch=UCWkOjdpqIcKZrnjefwWMKAQ')
+	list.append('&youtube_ch=UCWkOjdpqIcKZrnjefwWMKAQ')
+	list.append('&youtube_ch=UCWkOjdpqIcKZrnjefwWMKAQ')
+	list.append('&youtube_ch=UCWkOjdpqIcKZrnjefwWMKAQ')
+	list.append('&youtube_ch=UCWkOjdpqIcKZrnjefwWMKAQ')
+	list.append('&youtube_ch=UCWkOjdpqIcKZrnjefwWMKAQ')
+
+	
+	
 	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
 	
-	addon = 'plugin.video.ted.talks'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('TED','plugin://'+addon,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
 	
-
-
 	'''youtube science channel's'''
 	list = []
 	list.append('&youtube_ch=1veritasium')
@@ -462,16 +444,22 @@ def CATEGORIES104(admin):
 	addDir("youtube science channel's",list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
 	
-	'''מתמטיקה'''
-	list = []
-	list.append('&youtube_pl=-PL_7F0HR2FSAqlAmhi3HAASthdwFaPT1mf')
-	list.append('&youtube_pl=PLUl4u3cNGP63ctJIEC1UnZ0btsphnnoHR')
-	list.append('&youtube_pl=PL204B0C2C2F48DF2A')
-	list.append('&youtube_pl=-PL55C7C83781CF4316')
-	list.append('&youtube_pl=PL3o9D4Dl2FJ8zkoLxaO4aKlq2JsKsz365')
-	list.append('&youtube_pl=geW-geF5fa4')
-	addDir('מתמטיקה',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	addon = 'plugin.video.ted.talks'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('TED','plugin://'+addon,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
 	
+	
+	'''מדעי החברה והרוח'''
+	addDir(addonString(10401),'',10401,'',addonString(104010),'1',"", getAddonFanart(10401))
+	
+	'''מדעי הטבע'''
+	addDir(addonString(10402),'',10402,'',addonString(104020),'1',"", getAddonFanart(10402))
+
+	'''טכנולוגיה'''
+	addDir(addonString(10403),'',10403,'',addonString(104030),'1',"", getAddonFanart(10403))
+	
+
+
 	'''ניסויים מדעיים'''
 	list = []
 	list.append('&youtube_ch=SteveSpanglerScience')
@@ -486,12 +474,6 @@ def CATEGORIES104(admin):
 	list.append('&youtube_id=QnptSX1kPkU')
 	addDir('ניסויים מדעיים',list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
-	'''רובוטיקה'''
-	list = []
-	list.append('&youtube_id=-nOolOVw118')
-	list.append('&youtube_id=Bm6LzaxTX44')
-	list.append('&youtube_id=geW-geF5fa4')
-	addDir('רובוטיקה',list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
 	'''100 Greatest Discoveries'''
 	list = []
@@ -499,6 +481,115 @@ def CATEGORIES104(admin):
 	addDir('100 Greatest Discoveries',list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
 	
+	
+	
+def CATEGORIES10401(name, iconimage, desc, fanart):
+	'''------------------------------
+	---social science-----------------
+	------------------------------'''
+	background = 10401
+	
+	
+	'''ניסויים חברתיים'''
+	list = []
+	list.append('&youtube_pl=PLNLnlLmMBcgT9fhs_lpKRRrLasi2ggqT5')
+	list.append('&youtube_pl=PLeDkGnO-NieF4Otwc4K2RA-ZagUdAIVwZ')
+	list.append('&youtube_pl=PL0z0Pscrs45B0POHdpKhikbhjKU491-gL')
+	list.append('&youtube_pl=PLU8cnQEDNLyWeKlWxwj4aY8wDuAkxa06W')
+	addDir('ניסויים חברתיים',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''social science lectures'''
+	list = []
+	list.append('&youtube_pl=PLrb5XV0d1JsJAR-kAmDuyFyn6AUyDTKNH')
+	list.append('&youtube_pl=PLeDkGnO-NieF4Otwc4K2RA-ZagUdAIVwZ')
+	list.append('&youtube_pl=PLrb5XV0d1JsJnrEjivD-G1UbxB4q0hcNq')
+	list.append('&youtube_pl=PLrb5XV0d1JsLyXjrm5meM3mnSI0PopLdv')
+	addDir('ניסויים חברתיים',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+		
+	'''Psychology'''
+	list = []
+	list.append('&youtube_ch=UCYlpMl8sk46MKU9P7XgJpGw')
+	list.append('&youtube_pl=PLeDkGnO-NieF4Otwc4K2RA-ZagUdAIVwZ')
+	list.append('&youtube_pl=PLrb5XV0d1JsJnrEjivD-G1UbxB4q0hcNq')
+	list.append('&youtube_pl=PLrb5XV0d1JsLyXjrm5meM3mnSI0PopLdv')
+	addDir('Psychology',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+
+def CATEGORIES10402(name, iconimage, desc, fanart):
+	'''------------------------------
+	---natural sciences-----------------
+	------------------------------'''
+	background = 10402
+	
+	'''מתמטיקה'''
+	list = []
+	list.append('&youtube_ch=UCT4-UAcRfvBtO76gX2vexpA')	
+	list.append('&youtube_pl=-PL_7F0HR2FSAqlAmhi3HAASthdwFaPT1mf')
+	list.append('&youtube_pl=PLUl4u3cNGP63ctJIEC1UnZ0btsphnnoHR')
+	list.append('&youtube_pl=PL204B0C2C2F48DF2A')
+	list.append('&youtube_pl=PL3o9D4Dl2FJ8zkoLxaO4aKlq2JsKsz365')
+	addDir('מתמטיקה',list,17,'','','1',"", getAddonFanart(background, custom=""))
+
+	
+	'''ביולוגיה'''
+	list = []
+	list.append('&youtube_ch=UCaPqwD6at0tcpG7lEUbIiPw')
+	list.append('&youtube_pl=PL3EED4C1D684D3ADF')
+	list.append('&youtube_pl=PL-XXv-cvA_iDuZ4BUn54ujg2kZttNk27L')
+	list.append('&youtube_pl=PL-XXv-cvA_iBklnV4A6ucBpazJQ88yW-Z')
+	list.append('&youtube_pl=PLFCE4D99C4124A27A')
+	list.append('&youtube_pl=PL0B4CED0AB112B993')
+	addDir('ביולוגיה',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''פיסיקה'''
+	list = []
+	list.append('&youtube_ch=UCB9Sac4pdeZ7gcwhcS-q01g')	
+	list.append('&youtube_pl=PL8F3D8958EFBFF76E')
+	addDir('פיסיקה',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''כימיה'''
+	list = []
+	list.append('&youtube_ch=UChyplgK6jTl_XySEv0znTJw')	
+	addDir('כימיה',list,17,'','','1',"", getAddonFanart(background, custom=""))
+
+
+
+
+	
+
+def CATEGORIES10403(name, iconimage, desc, fanart):
+	'''------------------------------
+	---technology-----------------
+	------------------------------'''
+	background = 10403
+	
+	'''אקראי'''
+	list = []
+	list.append('&youtube_ch=UCiDF_uaU1V00dAc8ddKvNxA')
+	list.append('&youtube_ch=UCC7sJlTVc6vuxY6r5k5vuPQ')
+	list.append('&youtube_ch=UCQeVqx-WI_NrBfiOAizVgRg')
+	list.append('&youtube_ch=UCHiJaXgDo_JnsfOmSe-HgzA')
+	list.append('&youtube_ch=UCOanIHchig1FZ2kmN1BYZLg')
+	list.append('&youtube_ch=UCQeVqx-WI_NrBfiOAizVgRg')
+	addDir('אקראי',list,17,'','','1',"", getAddonFanart(background, custom=""))
+
+	
+	
+	'''רובוטיקה'''
+	list = []
+	list.append('&youtube_pl=-PLr2I5IvtDVkZGpQ-YnrsEge2ersHuhhHw')
+	list.append('&youtube_pl=PLMTaZKpkWF7JF_bsmPOrb-DGiha_k82x9')
+	list.append('&youtube_pl=PLV5Y1URLAmfQoCvOLtqtNSAwBeHHtP1QI')
+	list.append('&youtube_pl=PLr2I5IvtDVkZmflvZn9Mvny3WBDMaGnBJ')
+	list.append('&youtube_pl=PL6C6E43A700A08949')
+	list.append('&youtube_pl=PL2A735F42FA18D5DD')
+	list.append('&youtube_id=-nOolOVw118')
+	list.append('&youtube_id=Bm6LzaxTX44')
+	list.append('&youtube_id=geW-geF5fa4')
+	addDir('רובוטיקה',list,17,'','','1',"", getAddonFanart(background, custom=""))
+
 	
 def CATEGORIES107(admin):
 	'''------------------------------
@@ -514,40 +605,115 @@ def CATEGORIES107(admin):
 	list = []
 	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
 
-	'''SciShow Kids Channel'''
-	addDir('SciShow Kids Channel','scishowkids',9,'','','1',"", getAddonFanart(background, custom=""))
 
-	'''Crash Course Kids Channel'''
-	addDir('Crash Course Kids Channel','crashcoursekids',9,'','','1',"", getAddonFanart(background, custom=""))
+	'''youtube kids channel's'''
+	list = []
+	list.append('&youtube_ch=scishowkids')
+	list.append('&youtube_ch=crashcoursekids')
+	list.append('&youtube_ch=KidsAnimalChannel')
+	list.append('&youtube_ch=makemegenius')
+	list.append('&youtube_ch=Smartlearningforall')
+	list.append('&youtube_ch=hooplakidzlab')
+	list.append('&youtube_ch=cUCXVCgDuD_QCkI7gTKU7-tpg')
+	list.append('&youtube_ch=UCB_2_OiPFh6FdUvp50_maug')
+	addDir("youtube kids channel's",list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	
+	'''animal for kids'''
+	list = []
+	list.append('&youtube_pl=PL7BFAF7CBEF48B98D')
+	list.append('&youtube_pl=PLnoO3k54vcBTWDArEYxKGDBZXkVv7GM1F')
+	list.append('&youtube_pl=PL2Zef9KQGytUntJegeTmJxAFlIkaTRo-P')
+	list.append('&youtube_pl=PLakLrQJOovvlpJzAuQuWN8yOszoycRTzz')
+	list.append('&youtube_pl=PLbELaiA4QD9owZGT2vRmvbnvBBfQIlg9q')
+	list.append('&youtube_pl=uTvsWsnygMq7BLVmRxI7rokS')
+	list.append('&youtube_id=Ood3teygwh8')
+	list.append('&youtube_id=qnaXJf_yaj8')
+	list.append('&youtube_id=p5qwOxlvyhk')
+	list.append('&youtube_id=w5N2TN520U8')
+	addDir('animal for kids',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
 
-	'''Kids Animal Channel'''
-	addDir('Kids Animal Channel','KidsAnimalChannel',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''Crash Course Kids Channel'''
-	addDir('Crash Course Kids Channel','crashcoursekids',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''makemegenius Channel'''
-	addDir('makemegenius Channel','makemegenius',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''Smart Learning for All Channel'''
-	addDir('Smart Learning for All Channel','Smartlearningforall',9,'','','1',"", getAddonFanart(background, custom=""))
-
-	'''space and planet for kids'''
+	'''space and planet's for kids'''
 	list = []
 	list.append('&youtube_id=-xKKzIoJgMSQ')
 	list.append('&youtube_pl=PLRkXn_ayyCS8kOR-EKAbWx5hS_YUBEo5')
 	list.append('&youtube_pl=PLwmqN2cDkUGtn_gPHUpPfLwWF3Sp9BS3R')
+	list.append('&youtube_pl=PLRkXn_ayyCS8kOR-PLudXYjXPY1I6JnkHTWUiHJEvZd6f5_C26')
+	list.append('&youtube_pl=PLDO7YrQpg54RumJmx39xie-QGa9NUCyFd')
 	addDir('space and planet for kids',list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
-	'''planets for kids'''
+	'''plant's for kids'''
 	list = []
 	list.append('&youtube_pl=PLy0B6ncmGtqd-wb1Iqh036p3l9ZN4OCZ0')
 	list.append('&youtube_pl=PLlKRPDYgEh4xRq0AYTCwWduDmhq1yFPHY')
 	list.append('&youtube_pl=PL2Zef9KQGytUntJegeTmJxAFlIkaTRo-P')
 	list.append('&youtube_pl=PLfo1kYEnYLcJ-UhenL0Yf3afIR3zw7fr2')
 	list.append('&youtube_pl=PLeUPs98mdCOLKpvPU8tr1-1rgJ1h_xgxA')
-	list.append('&youtube_pl=PLwmqN2cDkUGtn_gPHUpPfLwWF3Sp9BS3R')
+	list.append('&youtube_pl=	PLamCflZiuToNeoHktZvD07ti-g-F1SFki')
 	addDir('planets for kids',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+
+def CATEGORIES110(admin):
+	'''------------------------------
+	---Art-------------------
+	------------------------------'''
+	background = 110
+	name = addonString(110).encode('utf-8')
+	
+	'''חיפוש'''
+	addDir(localize(137),'Live Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+	
+	'''אקראי'''
+	list = []
+	list.append('&youtube_ch=UCIZxVeC2kyPJIzfwaXqjhmg')
+	list.append('&youtube_ch=UCqqMppXUKf_dBaKoF-6cXHg')
+	list.append('&youtube_ch=UCAAi-y3PfAZuMJWR-2nA6Uw')
+	list.append('&youtube_ch=UC6SMopdiqCarcS6IUGZu2xg')
+	list.append('&youtube_ch=UCmg3B6F4Av4vmvhM6Lyndeg')
+	list.append('&youtube_ch=UCVuJxpqgQ9ZexOOhCIfh6jg')
+	list.append('&youtube_ch=UCGHWrdMukDc-uUzLYHx4r5g')
+	list.append('&youtube_ch=UCxRDqCzR5moFFjBNsb8lmMQ')
+	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
+
+	
+	'''youtube art channels'''
+	list = []
+	list.append('&youtube_ch=markcrilley')
+	list.append('&youtube_ch=PESfilm')
+	list.append('&youtube_ch=ChrisSamba22')
+	list.append('&youtube_ch=EclecticAsylumArt')
+	list.append('&youtube_ch=idrawgirls/')
+	list.append('&youtube_ch=daarken')
+	list.append('&youtube_ch=3dsMaxHowTos')
+	list.append('&youtube_ch=CGArtSuccess')
+	list.append('&youtube_ch=bluefley00')
+	list.append('&youtube_ch=bedavellis')
+	list.append('&youtube_ch=AlexanderKoshelkov')
+	list.append('&youtube_ch=arieldiaz3d')
+	list.append('&youtube_ch=iceblazer17')
+	list.append('&youtube_ch=tate')
+	list.append('&youtube_ch=smarthistoryvideos')
+	list.append('&youtube_ch=guggenheim')
+	list.append('&youtube_ch=MoMAvideos')
+	list.append('&youtube_ch=UCLCHcL4M0xSwPeEuKGrsGkg')
+	list.append('&youtube_ch=Sycra')
+	list.append('&youtube_ch=WilliamsShamir')
+	addDir("youtube art channel's",list,17,'','','1',"", getAddonFanart(background, custom=""))
+ 
+	'''art and artists'''
+	list = []
+	list.append('&youtube_pl=PLLUaXSRnKa3i3nijItUi0ifqGSS908qzA')
+	list.append('&youtube_pl=PL8844506E7313A565')
+	list.append('&youtube_pl=PLII6iBh1SmmXbUh-O-c7crIRuFzUd1ZhR')
+	list.append('&youtube_pl=PLMZJXymFn-onnjN1simnU0ci7HctVK5wx')
+	list.append('&youtube_pl=PLKHtWF0sQl2MVYjQek9uYH6IJZXgNtXZP')
+	list.append('&youtube_pl=PLL0D1-W61pZpMfkX0d_ylMb3iBLbdfxwv')
+	list.append('&youtube_pl=PLgxrD7KGdqICE3Y5bMLxpQ0H4yXnMLAuS')
+	list.append('&youtube_pl=PLlAZ-3Bm6pmYbX2q3yCO53aZ16ewlUmNI')
+	list.append('&youtube_pl=PLE8Rno1I66X84UJNGbpHEUkD5FR58xxMy')
+	list.append('&youtube_pl=PLwVO1qTdvxW2B7tvClvBoo_XwIY1FEhZw')
+	addDir("art and artists",list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
 	
 	
@@ -561,6 +727,7 @@ def CATEGORIES108(admin):
 	
 	'''חיפוש'''
 	addDir(localize(137),'מתורגם',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+	
 	
 	'''אקראי'''
 	list = []
@@ -603,6 +770,11 @@ def CATEGORIES108(admin):
 	list.append('&youtube_id=YMfg06-1zec')
 	addDir('דוקו קירשנבאום -קוסטה ריקה',list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
+	'''מים - המסתורין הגדול'''
+	list = []
+	list.append('&youtube_id=watch?v=JsPuREOKvPc')
+	addDir('מים - המסתורין הגדול',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
 	'''הסטוריה'''
 	list = []
 	list.append('&youtube_pl=PL51YAgTlfPj4IjHf-ISoprm2r9FO0szaD')		
@@ -616,7 +788,23 @@ def CATEGORIES108(admin):
 	list.append('&youtube_pl=PLBB3ncGmqWJFNfcnBO-TEdTqs8ovCBiqm')
 	list.append('&youtube_pl=PL7AqoEETVtK66cFOkIjGVTmXd_C7Q0r90')
 	list.append('&youtube_pl=PLjURn7HFksDKqxsERATYFlzmBVpp1vNGY')
+	list.append('&youtube_pl=PLLttfoK87AdV7Q8Eu8a_J3pVv28nC2lMv')
 	addDir('הסטוריה',list,17,'','','1',"", getAddonFanart(background, custom=""))
+	
+	'''דוקו ישראלי'''
+	list = []
+	list.append('&youtube_pl=PLv8p71sW2GjxrF8oXQeDlqDCtELS9dVg5')		
+	list.append('&youtube_pl=PLqwNAHu38eWXT7BdjK28TC1PmL1kzzEwB')
+	list.append('&youtube_pl=PLT_oMlvxWt_09lgcujCrv10eOWvR-is6o')
+	list.append('&youtube_id=PL-p_vqDAgZc7A')
+	list.append('&youtube_pl=g6RU5xVaywc')
+	list.append('&youtube_id=Sn8M283kGj0')
+	list.append('&youtube_id=DOEisLFmPrs')	
+	list.append('&youtube_id=PLhAvByb6CVNucuFXKM17ZNTO7RgqZ06jW')
+	list.append('&youtube_id=PLeCnWyfgXGWQHx6Enc80Q70foHGq5qrIz')
+	list.append('&youtube_id=PL6ADAC23F75CCB91F')
+	list.append('&youtube_id=PLhAvByb6CVNtiMfk1VQhdycNyOWxYhNUT')
+	addDir('דוקו ישראלי',list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
 	'''אילוף כלבים'''
 	addDir('אילוף כלבים','Orenadika73',9,'','','1',"", getAddonFanart(background, custom=""))
@@ -624,6 +812,27 @@ def CATEGORIES108(admin):
 	'''ערוץ הגיון ומדע'''
 	addDir('ערוץ הגיון ומדע','ScienceReasonIsrael',9,'','','1',"", getAddonFanart(background, custom=""))
 	
+	addon = 'plugin.video.seretil'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir(localize(342) + space + '1','plugin://'+addon+'/?iconimage=http%3a%2f%2fimages.nationalgeographic.com%2fwpf%2fsites%2fcommon%2fi%2fpresentation%2fNGLogo560x430-cb1343821768.png&mode=4&name=%d7%a0%d7%a9%d7%99%d7%95%d7%a0%d7%9c%20%d7%92%d7%90%d7%95%d7%92%d7%a8%d7%a4%d7%99%d7%a7&url=http%3a%2f%2fseretil.me%2fcategory%2f%25D7%25A0%25D7%25A9%25D7%2599%25D7%2595%25D7%25A0%25D7%259C-%25D7%2592%25D7%2599%25D7%2590%25D7%2595%25D7%2592%25D7%25A8%25D7%25A4%25D7%2599%25D7%25A7%2fpage1%2f',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	
+	addon = 'plugin.video.movixws'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir(localize(342) + space + '2','plugin://'+addon+'/?description&iconimage=http%3a%2f%2ficons.iconarchive.com%2ficons%2faaron-sinuhe%2ftv-movie-folder%2f512%2fDocumentaries-National-Geographic-icon.png&mode=2&name=Documentary%20-%20%d7%93%d7%95%d7%a7%d7%95%d7%9e%d7%a0%d7%98%d7%a8%d7%99&url=http%3a%2f%2fwww.movix.me%2fgenres%2fDocumentary',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	
+	addon = 'plugin.video.sdarot.tv'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir(localize(20343) + space + '1','plugin://'+addon+'/?mode=2&module=http%3a%2f%2fwww.sdarot.wf%2fseries%2fgenre%2f11%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94&name=%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94&summary&url=all-heb',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	
+	'''ילדים'''
+	addDir(addonString(10801),'',10801,'',addonString(108010),'1',"", getAddonFanart(10801))
+	
+
+def CATEGORIES10801(name, iconimage, desc, fanart):
+	'''------------------------------
+	---ילדים-----------------
+	------------------------------'''
+	background = 10801
 	
 	'''חיות בספארי'''
 	list = []
@@ -724,18 +933,7 @@ def CATEGORIES108(admin):
 	list.append('&youtube_id=gO9hyX4s1ko')
 	addDir('לולי אוהב חיות',list,17,'','','1',"", getAddonFanart(background, custom=""))
 	
-	addon = 'plugin.video.seretil'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(localize(342) + space + '1','plugin://'+addon+'/?iconimage=http%3a%2f%2fimages.nationalgeographic.com%2fwpf%2fsites%2fcommon%2fi%2fpresentation%2fNGLogo560x430-cb1343821768.png&mode=4&name=%d7%a0%d7%a9%d7%99%d7%95%d7%a0%d7%9c%20%d7%92%d7%90%d7%95%d7%92%d7%a8%d7%a4%d7%99%d7%a7&url=http%3a%2f%2fseretil.me%2fcategory%2f%25D7%25A0%25D7%25A9%25D7%2599%25D7%2595%25D7%25A0%25D7%259C-%25D7%2592%25D7%2599%25D7%2590%25D7%2595%25D7%2592%25D7%25A8%25D7%25A4%25D7%2599%25D7%25A7%2fpage1%2f',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
-	
-	addon = 'plugin.video.movixws'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(localize(342) + space + '2','plugin://'+addon+'/?description&iconimage=http%3a%2f%2ficons.iconarchive.com%2ficons%2faaron-sinuhe%2ftv-movie-folder%2f512%2fDocumentaries-National-Geographic-icon.png&mode=2&name=Documentary%20-%20%d7%93%d7%95%d7%a7%d7%95%d7%9e%d7%a0%d7%98%d7%a8%d7%99&url=http%3a%2f%2fwww.movix.me%2fgenres%2fDocumentary',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
-	
-	addon = 'plugin.video.sdarot.tv'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(localize(20343) + space + '1','plugin://'+addon+'/?mode=2&module=http%3a%2f%2fwww.sdarot.wf%2fseries%2fgenre%2f11%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94&name=%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94&summary&url=all-heb',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
-	
+
 def CATEGORIES109(admin):
 	'''------------------------------
 	---TV-channels-------------------
@@ -749,3 +947,4 @@ def CATEGORIES109(admin):
 	'''אקראי'''
 	list = []
 	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
+	
