@@ -75,6 +75,9 @@ def CATEGORIES100(admin):
 '''1=SONGS, 2=SHOWS, 3=LITTLE, 4=TVSHOWS, 5=MOVIES, 6=?, 7=BABY, 8=?, 9=OTHERS'''
 def CATEGORIES101(admin):
 	background = 101
+	'''חיפוש'''
+	addDir("[COLOR=BLUE]חיפוש[/COLOR]",'',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png','חיפוש תוכן בהרחבת יוטיוב','1',"", getAddonFanart(background, custom=""))
+	
 	'''אוסף שירים בעברית'''
 	list =[]
 	list.append('&youtube_ch=UCfm5IpcgGCooON4Mm2vq40A/playlists')
@@ -152,6 +155,7 @@ def CATEGORIES101(admin):
 	list.append('youtube_id=RCFSjBSXKHk')
 	list.append('youtube_id=QCFEPr9LLA0')
 	list.append('youtube_id=8-t8ujUVVIQ')
+	list.append('youtube_id=uGXiT9zyYa0')
 	
 	addDir(addonString(10160).encode('utf-8'),list,17,'http://www.gidikoren.com/gidikoren/images/book_pitz_azar.jpg',addonString(101600).encode('utf-8'),'1',"", getAddonFanart(background))
 	
@@ -180,6 +184,9 @@ def CATEGORIES102(admin):
 	list.append('&wallaNew=item_id%3D2833366')
 	list.append('&wallaNew=item_id%3D2817611')
 	addDir(localize(22082),list,17,'',addonString(102000).encode('utf-8'),'1',50, getAddonFanart(background))
+	'''חיפוש'''
+	addDir("[COLOR=BLUE]חיפוש[/COLOR]",'',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png','חיפוש תוכן בהרחבת יוטיוב','1',"", getAddonFanart(background, custom=""))
+	
 	
 	'''101 כלבים דלמטים'''
 	YOULink(addonString(10202).encode('utf-8'), 'RxMNt87ghsQ', 'http://www.pashbar.co.il/pictures/show_big_0712083001297352431.jpg',addonString(102020).encode('utf-8'))
@@ -255,7 +262,7 @@ def CATEGORIES102(admin):
 	list.append('&youtube_pl=PL8C370A361DD07BDB')
 	list.append('&youtube_id=t2ksCC_RyLw')
 	list.append('&youtube_id=2KQBeOM')
-	addDir('שם',list,17,'http://www.yap.co.il/prdPics/4991_desc3_5_1_1409123377.jpg',addonString(102440).encode('utf-8'),'1',50, getAddonFanart(background))
+	addDir('מותק של פסטיבל',list,17,'http://www.yap.co.il/prdPics/4991_desc3_5_1_1409123377.jpg',addonString(102440).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''מיכל הקטנה''' 
 	list =[]
@@ -263,7 +270,7 @@ def CATEGORIES102(admin):
 	list.append('&wallaNew=item_id%3D2698903')
 	list.append('&wallaNew=item_id%3D258362')
 	list.append('&youtube_id=IEeuv8mtRLI')
-	addDir('שם',list,17,'http://www.pashbar.co.il/pictures/show_big_0523173001376412565.jpg',addonString(102450).encode('utf-8'),'1',"", getAddonFanart(background))
+	addDir('מיכל הקטנה',list,17,'http://www.pashbar.co.il/pictures/show_big_0523173001376412565.jpg',addonString(102450).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''מרקו'''
 	YOULink(addonString(10248).encode('utf-8'), 'XgnCNCt71d8', 'http://www.ykp.co.il/cd_halev.jpg',addonString(102480).encode('utf-8'))
