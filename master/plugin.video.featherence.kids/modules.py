@@ -1,3 +1,4 @@
+#נוצר על ידי לידור מליח
 # -*- coding: utf-8 -*-
 import urllib,urllib2,sys,re,xbmcplugin,xbmcgui,xbmcaddon,xbmc,os
 
@@ -152,6 +153,7 @@ def CATEGORIES101(admin):
 	list.append('youtube_id=RCFSjBSXKHk')
 	list.append('youtube_id=QCFEPr9LLA0')
 	list.append('youtube_id=8-t8ujUVVIQ')
+	list.append('youtube_id=uGXiT9zyYa0')
 	
 	addDir(addonString(10160).encode('utf-8'),list,17,'http://www.gidikoren.com/gidikoren/images/book_pitz_azar.jpg',addonString(101600).encode('utf-8'),'1',"", getAddonFanart(background))
 	
@@ -255,7 +257,7 @@ def CATEGORIES102(admin):
 	list.append('&youtube_pl=PL8C370A361DD07BDB')
 	list.append('&youtube_id=t2ksCC_RyLw')
 	list.append('&youtube_id=2KQBeOM')
-	addDir('שם',list,17,'http://www.yap.co.il/prdPics/4991_desc3_5_1_1409123377.jpg',addonString(102440).encode('utf-8'),'1',50, getAddonFanart(background))
+	addDir('מותק של פסטיבל',list,17,'http://www.yap.co.il/prdPics/4991_desc3_5_1_1409123377.jpg',addonString(102440).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''מיכל הקטנה''' 
 	list =[]
@@ -263,7 +265,7 @@ def CATEGORIES102(admin):
 	list.append('&wallaNew=item_id%3D2698903')
 	list.append('&wallaNew=item_id%3D258362')
 	list.append('&youtube_id=IEeuv8mtRLI')
-	addDir('שם',list,17,'http://www.pashbar.co.il/pictures/show_big_0523173001376412565.jpg',addonString(102450).encode('utf-8'),'1',"", getAddonFanart(background))
+	addDir('מיכל הקטנה',list,17,'http://www.pashbar.co.il/pictures/show_big_0523173001376412565.jpg',addonString(102450).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''מרקו'''
 	YOULink(addonString(10248).encode('utf-8'), 'XgnCNCt71d8', 'http://www.ykp.co.il/cd_halev.jpg',addonString(102480).encode('utf-8'))
@@ -1421,4 +1423,5 @@ def CATEGORIES10907(name, iconimage, desc, fanart):
 #add_cat("דורה ודייגו", "PLqx6fN1abed4oHQ2Y5xadY-ILjzFdoMNM")
 #add_cat("פסטיגל", "PLwimDnICcPKPL4MdOLIQrGDMTOAshuQ2l")
 #add_cat("מיקי", "PLwimDnICcPKP4vFp6zklqeNUSdq08mN1H")
+
 
