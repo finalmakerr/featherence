@@ -27,7 +27,7 @@ if xbmc.getSkinDir() == 'skin.featherence':
 	except: pass
 	
 	if not xbmc.getInfoLabel('Skin.HasSetting(StartUpMusic)'):
-		if xbmc.getInfoLabel('Skin.String(StartUpMusic)') == "" or not os.path.exists(xbmc.getInfoLabel('Skin.String(StartUpMusic)')): xbmc.executebuiltin('PlayMedia(special://skin/sounds/playHTPT2.mp3)')
+		if xbmc.getInfoLabel('Skin.String(StartUpMusic)') == "" or not os.path.exists(xbmc.getInfoLabel('Skin.String(StartUpMusic)')): xbmc.executebuiltin('PlayMedia(special://skin/sounds/playfeatherence.mp3)')
 		else:
 			notification("Trying to play custom file","","",1000)
 			xbmc.executebuiltin('PlayMedia('+xbmc.getInfoLabel('Skin.String(StartUpMusic)')+')')

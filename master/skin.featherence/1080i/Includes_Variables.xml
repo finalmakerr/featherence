@@ -265,6 +265,7 @@
 	<value description="פוסטר סדרה - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Thumb)">$INFO[Container(312).ListItem.Thumb]</value>
 	<value condition="SubString(ListItem.Label,Next page) | SubString(ListItem.Label,$LOCALIZE[33078])">DefaultVideo2.png</value>
 	<value description="הרחבה" condition="Window.IsVisible(MyWeather.xml)">_</value>
+	<value description="כפתור מזג אוויר" condition="Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">weather/$INFO[Weather.fanartcode].png</value>
 	<value condition="!IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
 	<value condition="!IsEmpty(Container(50).ListItem.Thumb)">$INFO[Container(50).ListItem.Thumb]</value>
 	<value description="הרחבה" condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
@@ -317,7 +318,7 @@
 	<!--<value description="משפט סרט אקראי - בית" condition="[Window.IsActive(home) + Control.HasFocus(311)] + !IsEmpty(Container(311).ListItem.Property(Tagline))">[B]$INFO[Container(311).Property(Tagline)][/B]</value>
 	<value description="שם הפרק-בית" condition="[Window.IsActive(home) + Control.HasFocus(312)] + !IsEmpty(Container(312).ListItem.Property(title))">[B]$INFO[Window(Home).Property(RandomMovie.2.Title)][/B]</value>-->
 	<value condition="Window.IsVisible(DialogAddonInfo.xml) + !IsEmpty(ListItem.Property(Addon.Disclaimer))">$INFO[ListItem.Property(Addon.Disclaimer)]</value>
-	<value condition="Window.IsVisible(MyWeather.xml) + !IsEmpty(Container(50).ListItem.Label2)">$INFO[Window(Weather).Property(Current.Condition)]   |   $INFO[Window(Weather).Property(Day0.LowTemp)] - $INFO[Window(Weather).Property(Day0.HighTemp)]</value>
+	<value condition="Window.IsVisible(MyWeather.xml) + !IsEmpty(Container(50).ListItem.Label2) | Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">$INFO[Window(Weather).Property(Current.Condition)]   |   $INFO[Window(Weather).Property(Day0.LowTemp)] - $INFO[Window(Weather).Property(Day0.HighTemp)]</value>
 	<value condition="!IsEmpty(Container(50).ListItem.Label2)">$INFO[Container(50).ListItem.Label2]</value>
   </variable>
   <variable name="TopVideoInformation8" description="שם סרט/סדרה">
@@ -332,6 +333,7 @@
 	<!--<value condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !Window.IsVisible(DialogAddonInfo.xml)"></value>-->
     <value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
 	<value condition="Window.IsVisible(MyWeather.xml) + !IsEmpty(Container(50).ListItem.Label)">$INFO[Control.GetLabel(31)] - $INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</value>
+	<value condition="Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">$INFO[System.Date(DDD)] - $INFO[Weather.Temperature]</value>
 	<value condition="!IsEmpty(Container(50).ListItem.Label)">$INFO[Container(50).ListItem.Label]</value>
 	<value condition="Window.IsVisible(SettingsCategory.xml) + [ControlGroup(3).HasFocus | ControlGroup(5).HasFocus]">$INFO[System.CurrentControl]</value>
 	<value>...</value>
@@ -428,6 +430,7 @@
 	<value description="מוזיקה" condition="Window.IsActive(MyMusicNav.xml)">($INFO[Container.NumItems]) [B][COLOR Yellow]$INFO[Container.FolderName][/COLOR] $LOCALIZE[2] $ADDON[script.featherence.service 77] [/B]</value> <!--SubString(Container.FolderPath,musicdb://,left)-->
 	<value description="מנהל הרחבות" condition="Window.IsVisible(AddonBrowser.xml)">($INFO[Container.NumItems]) [B][COLOR Yellow]$INFO[Container.FolderName][/COLOR][/B]</value> <!-- $LOCALIZE[79040]-->
 	<value description="PVR" condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide) | Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">($INFO[Container.NumItems]) [COLOR White2][B]$VAR[ChannelGroupName][/B][/COLOR]</value>
+	<value description="עיצוב מעטפת" condition="Window.IsVisible(CustomHomeCustomizer.xml)">$LOCALIZE[76196] ($INFO[Container.NumItems])</value>
 	<value>$INFO[System.CurrentWindow] ($INFO[Container.NumItems])</value>
   </variable>
   <variable name="TopInformation2.1" description="שמאל2 (ספרייה)">
@@ -480,8 +483,8 @@
 	<value description="Home" condition="Window.IsActive(home) + Control.HasFocus(313)">[COLOR Yellow]$INFO[Container(313).ListItem(0).Label][/COLOR]</value>
 	<value description="Home" condition="Window.IsActive(home) + Control.HasFocus(314)">[COLOR Yellow]$INFO[Container(314).ListItem(0).Label][/COLOR]</value>
 	<value description="Home" condition="Window.IsActive(home) + Control.HasFocus(315)">[COLOR Yellow]$INFO[Container(315).ListItem(0).Label][/COLOR]</value>
-	<value description="מזג אוויר_he" condition="StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),84) | Window.IsVisible(MyWeather.xml)]">[COLOR Yellow][B]$INFO[Weather.Location][/COLOR][/B] $LOCALIZE[35500]: </value>
-	<value description="מזג אוויר_en" condition="!StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),84) | Window.IsVisible(MyWeather.xml)]">$LOCALIZE[35500]: [COLOR Yellow][B]$INFO[Weather.Location][/COLOR][/B]</value>	
+	<value description="מזג אוויר_he" condition="StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">[COLOR Yellow][B]$INFO[Weather.Location][/COLOR][/B] $LOCALIZE[35500]: </value>
+	<value description="מזג אוויר_en" condition="!StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">$LOCALIZE[35500]: [COLOR Yellow][B]$INFO[Weather.Location][/COLOR][/B]</value>	
 	<value description="Home" condition="Window.IsActive(home) + [Control.HasFocus(311) | Control.HasFocus(312)] + !IsEmpty(System.CurrentControl)">$INFO[System.CurrentControl]</value>	
 	<value description="Home" condition="Window.IsActive(home)">•••••••</value>	
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !IsEmpty(Slideshow.EXIFDate)]">[COLOR Yellow][B]$INFO[Slideshow.EXIFDate][/B][/COLOR] • $LOCALIZE[552]: [COLOR Yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>

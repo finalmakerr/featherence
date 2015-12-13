@@ -312,8 +312,11 @@
   </variable>
   
   <variable name="215label2">
-    <value condition="!Skin.String(MenuDesign)" description="ברירת מחדל">$LOCALIZE[409]</value>
-	<value condition="Skin.String(MenuDesign)" description="רכבת">$LOCALIZE[74478]</value>
+    <value condition="!Skin.String(MenuDesign)" description="פנל">$LOCALIZE[31031]</value>
+	<value condition="Skin.String(MenuDesign,1)" description="פנל 2">$LOCALIZE[31031] 2</value>
+	<value condition="Skin.String(MenuDesign,2)" description="מאוזן">$LOCALIZE[31032]</value>
+	<value condition="Skin.String(MenuDesign,3)" description="מאוזן 2">$LOCALIZE[31032] 2</value>
+	<value condition="Skin.String(MenuDesign,4)" description="מאונך">$LOCALIZE[31033]</value>
   </variable>
   
   <variable name="220label2">

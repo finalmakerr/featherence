@@ -3042,7 +3042,7 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "Container.FolderName" + space2 + xbmc.getInfoLabel('Container.FolderName')
 			message = message + newline + '---------------------------'
 			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('Window(Home).Property(SkinHelper.MovieSet.Title)') #CUSTOM TEST
-			message = message + newline + "custom2" + space2 + xbmc.getInfoLabel('ListItem.Path') #CUSTOM TEST
+			message = message + newline + "custom2" + space2 + xbmc.getInfoLabel('ListItem.IsCollection') #CUSTOM TEST
 			message = message + newline + "custom3" + space2 + str(xbmc.getCondVisibility('VideoPlayer.Content(episodes)')) #CUSTOM TEST
 			
 			

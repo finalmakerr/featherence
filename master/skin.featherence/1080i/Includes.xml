@@ -258,7 +258,7 @@
 	<control type="group">
 	  <!--<animation condition="!System.IdleTime(3)" effect="fade" start="100" end="70" time="1000">Conditional</animation>-->
       <include>Slide3</include>
-	  <visible>[Window.IsVisible(DialogFullScreenInfo.xml) + VideoPlayer.IsFullscreen + Player.Paused] | Window.IsVisible(DialogVideoInfo.xml) | [Window.IsVisible(Home.xml) + System.IdleTime(3) + [Control.HasFocus(311) | Control.HasFocus(312)]] | [Control.IsVisible(57) | Control.IsVisible(58)] + [Container.Content(Seasons) | Container.Content(Episodes) | !Skin.HasSetting(ShowTopVideoInformation)] | Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(56) | Control.IsVisible(450) | Window.IsVisible(SettingsCategory.xml)</visible>
+	  <visible>[Window.IsVisible(DialogFullScreenInfo.xml) + VideoPlayer.IsFullscreen + Player.Paused] | Window.IsVisible(DialogVideoInfo.xml) | [Window.IsVisible(Home.xml) + System.IdleTime(3) + [Control.HasFocus(311) | Control.HasFocus(312) | StringCompare(Window(home).Property(Button.ID),97)]] | [Control.IsVisible(57) | Control.IsVisible(58)] + [Container.Content(Seasons) | Container.Content(Episodes) | !Skin.HasSetting(ShowTopVideoInformation)] | Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(56) | Control.IsVisible(450) | Window.IsVisible(SettingsCategory.xml)</visible>
 	  <control type="image" description="מסגרת">
 		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,270">Conditional</animation>
 		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-5">Conditional</animation>

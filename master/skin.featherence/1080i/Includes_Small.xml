@@ -127,7 +127,7 @@
 	<control type="group">
 	  <include>Slide1.5</include>
 	  <height>552</height>
- <width>1920</width>
+	  <width>1920</width>
 	  <control type="image" description="צבע (רקע עליון)">
 		<!--<animation condition="Window.IsVisible(Home.xml) + [!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,25" time="220">Conditonal</animation>
 	    <animation condition="Window.IsVisible(CustomHomeCustomizer.xml) + [!Container(50).Row(0) + !Container(50).Row(1) | Container(50).HasPrevious()]" effect="slide" start="0,0" end="0,25" time="220">Conditonal</animation>-->
@@ -147,7 +147,7 @@
 		<aspectratio>scale</aspectratio>
 		<texture border="30" colordiffuse="$VAR[TopBackgroundColor]">$VAR[TopBackgroundTexture]</texture>
 		<visible>!Control.IsVisible(7011)</visible>
-		<visible>[[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()]</visible>
+		<visible>[[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()] | ![!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)]</visible>
 		<!--<visible>Skin.HasSetting(HideTopMainBackground) | Skin.HasSetting(background) | IsEmpty(Control.GetLabel(700102))</visible>-->
 	  </control>
 	  <control type="label" id="700102" description="רקע נוסחא">
@@ -177,8 +177,7 @@
 	  </control>
 	  <control type="image" description="רקע תחתון צבע">
 		<!--<visible>Skin.HasSetting(background)</visible>-->
-		
-		<animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,29" time="220">Conditonal</animation>
+		<animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] + [!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)]" effect="slide" start="0,0" end="0,29" time="220">Conditonal</animation>
 		<include>Fade_MainBackgroundOverlay</include>
 		<aspectratio>stretch</aspectratio>
 		<height>1080</height>
@@ -201,8 +200,9 @@
 	  </control>
 	  <control type="largeimage" description="רקע פאנארט">
 	    <animation condition="Skin.HasSetting(HomeFanartHalfScreen)" effect="zoom" start="100,100" end="100,51" time="0">Conditional</animation>
-	    <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | [[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() + Player.HasVideo]" effect="slide" start="0,0" end="0,551" time="220">Conditonal</animation>
-		<animation condition="[[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditonal</animation>
+	    <animation description="Slide-PanelView" condition="[!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | [[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() + Player.HasVideo]]" effect="slide" start="0,0" end="0,551" time="220">Conditonal</animation>
+		<animation description="Slide-ListView" condition="![!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)] + Player.HasVideo" effect="slide" start="0,0" end="0,551" time="220">Conditonal</animation>
+		<animation condition="[!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditonal</animation>
 		<aspectratio align="top">scale</aspectratio>
 		<visible>!Skin.HasSetting(background)</visible>
 		<!--<visible>[[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()] | [Container(50).Row(0) | Container(50).Row(1)] + !Container(50).HasPrevious()</visible>-->
@@ -604,7 +604,7 @@
 	<posx>100</posx>
 	<posy>7</posy>
 	<visible>Player.HasVideo</visible>
-	<visible>!StringCompare(Player.Title,playfeatherence.mp4) + !StringCompare(Player.Title,playfeatherence2.flac)</visible>
+	<visible>!SubString(Player.Title,playfeatherence)</visible>
 	<control type="image">
 	  <texture>$INFO[VideoPlayer.VideoResolution,badges/video/,.png]</texture>
 	  <visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
@@ -871,5 +871,8 @@
 	  <onfocus condition="!IsEmpty(ListItem.Duration) + [IsEmpty(Window(home).Property(ListItemDuration)) | !StringCompare(ListItem.Duration,Window(home).Property(ListItemDuration))] + !IntegerGreaterThan(ListItem.Duration,1000)">AlarmClock(ListItemDuration,SetProperty(ListItemDuration,$INFO[ListItem.Duration],home),00:03,silent)</onfocus>
 	  <visible>false</visible>
 	</control>
+  </include>
+  <include name="list9000_posx_heb">
+    <posx>-30</posx>
   </include>
 </includes>

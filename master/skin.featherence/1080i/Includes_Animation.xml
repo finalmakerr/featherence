@@ -9,7 +9,7 @@
    </include>
    
    <include name="Slide1.5" description="Backgrounds-Home">
-     <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,-552" time="220" reversible="false">>Conditional</animation>
+     <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] + [!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)]" effect="slide" start="0,0" end="0,-552" time="220" reversible="false">>Conditional</animation>
    </include>
    
    <include name="Slide1.1" description="(2 רקע בית)">
@@ -91,7 +91,7 @@
 	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + !IsEmpty(Control.GetLabel(11155)) + Control.IsVisible(7016)" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" delay="0" time="3000" reversible="false">Conditional</animation>
 	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017) | Control.HasFocus(7017) + !IntergerGreaterThan(Container.CurrentPage,1)] + [IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)] | Window.IsVisible(DialogFullScreenInfo.xml)" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" delay="1700" time="3000" reversible="false">Conditional</animation>
 	 <!--<animation condition="Window.IsActive(DialogVideoInfo.xml) | Window.IsVisible(DialogAddonInfo.xml) | Window.IsVisible(AddonBrowser.xml)" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" time="700" reversible="false">Conditional</animation>-->
-	 <animation condition="Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312)]" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" time="3000" reversible="false">Conditional</animation>
+	 <animation condition="Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | StringCompare(Window(home).Property(Button.ID),97)]" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" time="3000" reversible="false">Conditional</animation>
    </include>
    <include name="Slide4" description="TopVideoInformation4">
 	 <animation condition="[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(56) | [Control.HasFocus(7017) + IntergerGreaterThan(Container.CurrentPage,1)] | Control.IsVisible(450)] + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))]" effect="slide" tween="Cubic" easing="out" start="0,-592" end="0,0" delay="0" time="1400" reversible="false">Conditional</animation>

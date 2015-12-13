@@ -212,8 +212,11 @@
 		<label2>$VAR[215label2]</label2>
 		<thumb></thumb>
 		<property name="rinfo">$LOCALIZE[76206]</property>
-		<onclick condition="!Skin.String(MenuDesign)">Skin.SetString(MenuDesign, 1)</onclick>
-		<onclick condition="Skin.String(MenuDesign,1)">Skin.SetString(MenuDesign,)</onclick>
+		<onclick condition="!Skin.String(MenuDesign)">Skin.SetString(MenuDesign,1)</onclick>
+		<onclick condition="Skin.String(MenuDesign,1)">Skin.SetString(MenuDesign,2)</onclick>
+		<onclick condition="Skin.String(MenuDesign,2)">Skin.SetString(MenuDesign,3)</onclick>
+		<onclick condition="Skin.String(MenuDesign,3)">Skin.SetString(MenuDesign,4)</onclick>
+		<onclick condition="Skin.String(MenuDesign,4)">Skin.SetString(MenuDesign,)</onclick>
 		<onclick>Close</onclick>
 		<onclick>Close</onclick>
 		<onclick>ActivateWindow(1117)</onclick>
