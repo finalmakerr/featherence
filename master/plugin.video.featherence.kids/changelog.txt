@@ -1,9 +1,12 @@
 ------------------------
-WIP (WORK IN PROGRESS)
 ------------------------
-- None.
+WIP (NEXT V0.0.0)
+------------------------
+- add search button(COLOR-BLUE).
+- add some video for kids
+- 
 
 ------------------------
 Featherence Kids v0.1.0 (xx-xx-15)
 ------------------------
-- 
+- השקת ההרחבה
