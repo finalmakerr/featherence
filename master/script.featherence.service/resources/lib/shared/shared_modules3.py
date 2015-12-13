@@ -2177,6 +2177,18 @@ def update_view(url, num, viewtype):
 	printlog(title='update_view', printpoint="", text=text, level=0, option="")
 	return ok
 
+def play_view(url, num, viewtype):
+	if 'plugin.' in num:
+		if not xbmc.getCondVisibility('System.HasAddon('+ num +')') or not os.path.exists(os.path.join(addons_path, num)):
+			notification_common("24")
+			installaddon(admin, num, update=True)
+			xbmc.sleep(2000)
+	ok = True
+	xbmc.executebuiltin('PlayMedia(%s)' % url )
+	text = "url" + space2 + str(url) + space + 'viewtype' + space2 + str(viewtype)
+	printlog(title='update_view', printpoint="", text=text, level=0, option="")
+	return ok	
+
 def unescape(text):
 	try:            
 		rep = {"&nbsp;": " ",
@@ -2580,7 +2592,7 @@ def pluginend(admin):
 	elif mode == 9:
 		YOUList2(name, url, iconimage, desc, num, viewtype)
 	elif mode == 10:
-		pass
+		play_view(url, num, viewtype)
 	elif mode == 11:
 		pass #YOULinkAll(url)
 	elif mode == 12:
