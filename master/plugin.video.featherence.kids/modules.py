@@ -1,4 +1,3 @@
-#נוצר על ידי לידור מליח
 # -*- coding: utf-8 -*-
 import urllib,urllib2,sys,re,xbmcplugin,xbmcgui,xbmcaddon,xbmc,os
 
