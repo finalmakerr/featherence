@@ -1,3 +1,4 @@
+#נוצר על ידי לידור מליח
 # -*- coding: utf-8 -*-
 import urllib,urllib2,sys,re,xbmcplugin,xbmcgui,xbmcaddon,xbmc,os
 
@@ -1428,4 +1429,5 @@ def CATEGORIES10907(name, iconimage, desc, fanart):
 #add_cat("דורה ודייגו", "PLqx6fN1abed4oHQ2Y5xadY-ILjzFdoMNM")
 #add_cat("פסטיגל", "PLwimDnICcPKPL4MdOLIQrGDMTOAshuQ2l")
 #add_cat("מיקי", "PLwimDnICcPKP4vFp6zklqeNUSdq08mN1H")
+
 
