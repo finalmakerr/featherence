@@ -133,6 +133,7 @@ def CATEGORIES101(admin):
 def CATEGORIES111(admin):
 	'''Foreign Music'''
 	addDir(addonString(111).encode('utf-8'),'',11101,featherenceserviceicons_path + "music.png",addonString(1110).encode('utf-8'),'1',58, getAddonFanart(11101)) #Foreign Music
+	#addDir(addonString(112).encode('utf-8'),'',11102,featherenceserviceicons_path + "karaoke.png",addonString(1120).encode('utf-8'),'1',58, getAddonFanart(11102)) #Foreign Karaoke
 	addDir(addonString(114).encode('utf-8'),'',11104,featherenceserviceicons_path + "guitar.png",addonString(1140).encode('utf-8'),'1',58, getAddonFanart(11104)) #Foreign Liveshows
 	#addDir(addonString(115).encode('utf-8'),'',11105,featherenceserviceicons_path + "microphone.png",addonString(1150).encode('utf-8'),'1',58, getAddonFanart(11105)) #Foreign Djs
 
@@ -1122,6 +1123,118 @@ def CATEGORIES11101(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL201BB89398FE5675')
 	addDir(addonString(11114).encode('utf-8'),list,17,"http://img2.timeinc.net/people/i/2012/specials/yearend/obits/whitney-houston-1435.jpg",addonString(111140).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
 
+def CATEGORIES11102(name, iconimage, desc, fanart):
+	'''------------------------------
+	---Foreign-Karaoke---------------
+	------------------------------'''
+	background = 112
+	commonsearch = "commonsearch112"
+	
+	'''חיפוש'''
+	addDir(localize(137),commonsearch,3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, custom=""))
+	
+	'''אקראי'''
+	#addDir(localize(590),'UC-9-kyTW8ZkZNDHQJ6FgpwQ',9,featherenceserviceicons_path + "singers.png","",'1',"", getAddonFanart(background, custom=""))
+		
+	'''Aretha Franklin'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11126).encode('utf-8'),list,17,"http://sandiegofreepress.org/wp-content/uploads/2013/01/ARETHA-FRANKLIN-QUEEN-OF-SOUL.jpg",addonString(111260).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Beyonce'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11102).encode('utf-8'),list,17,"http://factmag-images.s3.amazonaws.com/wp-content/uploads/2013/05/beyonce-5.13.20132.jpg",addonString(111020).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Bob Marley'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11122).encode('utf-8'),list,17,"http://imgc.allpostersimages.com/images/P-473-488-90/65/6544/ATK4100Z/posters/bob-marley-colors.jpg/300px-Bob-Marley-in-Concert_Zurich_05-30-80.jpg",addonString(111220).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Bob Dylan'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11123).encode('utf-8'),list,17,"http://www.rockbandaide.com/wp-content/uploads/2014/02/Bob-Dylan-Times-are-Changing-C10113356.jpg",addonString(111230).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Britney Spears'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11150).encode('utf-8'),list,17,"http://guardianlv.com/wp-content/uploads/2013/12/Britney-Spears-Hits-Vegas-With-Piece-of-Me-Concert-Series-e1388228163153.jpg",addonString(111500).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Coldplay'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11129).encode('utf-8'),list,17,"http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/10/12/1318414177419/Coldplay-007.jpg",addonString(111290).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''David Bowie'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11151).encode('utf-8'),list,17,"https://wallpaperscraft.com/image/david_bowie_face_fist_sweater_look_3332_1920x1080.jpg",addonString(111510).encode('utf-8'),'1',"", getAddonFanart(background, custom="https://wallpaperscraft.com/image/david_bowie_face_fist_sweater_look_3332_1920x1080.jpg"))
+	
+	'''Elvis Presley'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11120).encode('utf-8'),list,17,"http://static.europosters.cz/image/750/plakatok/elvis-presley-portrait-i9038.jpg/375px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",addonString(111200).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+
+	'''Eric Clapton'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11124).encode('utf-8'),list,17,"http://rock.amazingradios.com/wp-content/uploads/2014/10/eric-clapton-9.jpg",addonString(111240).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Jennifer Lopez'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11118).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Jennifer_Lopez_GLAAD_2014.jpg/375px-Jennifer_Lopez_GLAAD_2014.jpg",addonString(111180).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Justin Bieber'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11130).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Believe_Tour_7%2C_2012.jpg/375px-Believe_Tour_7%2C_2012.jpg",addonString(111300).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Michael Jackson'''
+	list = []
+	list.append('&youtube_pl=PL3CF35F99B7B4A227')
+	addDir(addonString(11101).encode('utf-8'),list,17,"https://michaeljacksonisrael.files.wordpress.com/2013/05/69235_majkl-dzhekson_or_michael-jack21.jpg",addonString(111010).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Maddona'''
+	list = []
+	list.append('&youtube_pl=PLOOBElWP-gj6hl7PQVcZak9FGri0ppeWG')
+	addDir(addonString(11111).encode('utf-8'),list,17,"http://g04.a.alicdn.com/kf/HTB1jqmjIVXXXXbSapXXq6xXFXXX4/%D7%AA%D7%90%D7%A8%D7%99%D7%9A-%D7%94%D7%9E%D7%A1%D7%AA%D7%95%D7%A8%D7%99%D7%9F-%D7%A9%D7%97%D7%A7%D7%A0%D7%99%D7%AA-%D7%A7%D7%95%D7%9C%D7%A0%D7%95%D7%A2-%D7%9E%D7%93%D7%95%D7%A0%D7%94-ciccone-%D7%A4%D7%95%D7%A1%D7%98%D7%A8-%D7%A6%D7%99%D7%95%D7%A8-%D7%93%D7%A7%D7%95%D7%A8%D7%98%D7%99%D7%91%D7%99-%D7%9C%D7%91%D7%99%D7%AA-%D7%91%D7%93-%D7%9E%D7%A9%D7%99-%D7%94%D7%93%D7%A4%D7%A1%D7%94.jpg",addonString(111110).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Mariah Carey'''
+	list = []
+	list.append('&youtube_pl=PLEB34410B67CCA932')
+	addDir(addonString(11113).encode('utf-8'),list,17,"http://www.studentsoftheworld.info/sites/musique/img/2827_Maria_Carey_1.jpg",addonString(111130).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+
+	'''Roy Orbison'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11110).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/promo_650/public/stylus/1077939-roy-orbison-617-409.jpg",addonString(111100).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Rihanna'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11103).encode('utf-8'),list,17,"http://static1.1.sqspcdn.com/static/f/610086/15180915/1321583897117/Rihanna.jpg?token=kZt1lYEul%2FfTahdORTKehFd28NI%3D/site1/20091127/0023ae9885da0c7990e10d.jpg&pw=200",addonString(111030).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Sam Smith'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11133).encode('utf-8'),list,17,"https://yt3.ggpht.com/-9z_bFRPDMYQ/AAAAAAAAAAI/AAAAAAAAAAA/czjhAF4k4aw/s100-c-k-no/photo.jpg",addonString(111330).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Taylor Swift'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11104).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/he/5/58/Taylor_Swift_-_Taylor_Swift_Album_Cover.png",addonString(111040).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Usher'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(11115).encode('utf-8'),list,17,"http://www.usherdaily.com/wp-content/uploads/2015/02/usher-2014-cover-bb36-01-650.jpg",addonString(111150).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
+	
+	'''Whitney Houston'''
+	list = []
+	list.append('&youtube_pl=PL201BB89398FE5675')
+	addDir(addonString(11114).encode('utf-8'),list,17,"http://img2.timeinc.net/people/i/2012/specials/yearend/obits/whitney-houston-1435.jpg",addonString(111140).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
 
 def CATEGORIES11104(name, iconimage, desc, fanart):
 	'''------------------------------
@@ -1134,6 +1247,7 @@ def CATEGORIES11104(name, iconimage, desc, fanart):
 	addDir(localize(137),commonsearch,3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי הופעות חיות לועזי'''
+	list = []
 	addDir(localize(590),list,17,'http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33',addonString(590).encode('utf-8'),'1',"http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33", getAddonFanart(background, custom=""))
 	
 	'''Aretha Franklin'''

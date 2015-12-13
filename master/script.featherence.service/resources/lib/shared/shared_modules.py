@@ -1714,7 +1714,7 @@ def getVersion(addon, url):
 		if version != "" and version != None and not x in version and not y in version and '.' in version:
 			returned = version
 	
-	#print 'getVersion' + space + 'read' + space2 + str(read) + newline + 'line' + space2 + str(line) + space + 'returned' + space2 + str(returned)
+	print 'getVersion' + space + 'read' + space2 + str(read) + newline + 'line' + space2 + str(line) + space + 'returned' + space2 + str(returned)
 	return returned
 
 def oewindow(name):

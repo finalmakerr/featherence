@@ -320,15 +320,15 @@ msgstr "ילדים"
 
 msgctxt "#108
 msgid "Hebrew Subtitle"
-msgstr "דוקו בעברית"
+msgstr "מתורגם לעברית"
 
 msgctxt "#109
 msgid "TV channels"
 msgstr "ערוצי טלוויזיה"
 
 msgctxt "#110
-msgid "Art"
-msgstr "אומנות"
+msgid ""
+msgstr ""
 
 msgctxt "#111
 msgid ""
@@ -342,31 +342,6 @@ msgctxt "#1010
 msgid ""
 msgstr ""
 
-
-msgctxt "#10101
-msgid "Nature-animal's"
-msgstr "בעלי חיים"
-
-msgctxt "#10102
-msgid "Nature-plant's"
-msgstr "צמחים"
-
-msgctxt "#10103
-msgid "planet earth"
-msgstr "כדור הארץ"
-
-msgctxt "#10401
-msgid "Nature-animal's"
-msgstr " מדעי החברה והרוח"
-
-msgctxt "#10402
-msgid "Nature-plant's"
-msgstr "מדעי הטבע"
-
-msgctxt "#10403
-msgid "Technology"
-msgstr "טכנולוגיה"
-
-msgctxt "#10801
-msgid "Kids"
-msgstr "ילדים"
+msgctxt "#1020
+msgid ""
+msgstr ""

@@ -759,6 +759,10 @@ def mode32(value, admin, name, printpoint):
 		xbmc.executebuiltin('Skin.SetString(test,'+ containerfolderpath +')')
 		'''---------------------------'''
 	
+	elif value == '2':
+		returned = dialogyesno('TEST','...')
+		'''---------------------------'''
+	
 	
 def mode33(admin, name, printpoint):
 	'''------------------------------

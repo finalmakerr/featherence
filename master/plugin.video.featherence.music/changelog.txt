@@ -4,6 +4,6 @@ WIP (WORK IN PROGRESS)--
 - None.
 
 ------------------------
-Featherence Music v0.1.0 (xx-xx-15)
+Featherence Music v0.1.0 (09-12-15)
 ------------------------
-- 
+- First release
