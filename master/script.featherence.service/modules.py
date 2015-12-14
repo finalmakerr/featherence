@@ -756,7 +756,12 @@ def mode32(value, admin, name, printpoint):
 			setsetting('admin','false')
 			setSkinSetting('1','Admin','false')
 	elif value == '1':
-		text = containerfolderpath
+		nolabel = 'Container.FolderPath'
+		yeslabel = 'ListItem.Path'
+		returned = dialogyesno(str(name), addonString_servicefeatherence(31).encode('utf-8'), nolabel=nolabel, yeslabel=yeslabel)
+		
+		if returned != 'skip': text = xbmc.getInfoLabel('ListItem.FolderPath')
+		else: text = xbmc.getInfoLabel('Container.FolderPath')
 		text = text.replace('&amp;','&')
 		text = text.replace('&quot;',"")
 		write_to_file(featherenceservice_addondata_path + "Container.FolderPath" + ".txt", str(text), append=False, silent=True, utf8=False)

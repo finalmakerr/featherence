@@ -1185,7 +1185,7 @@ def dialogyesno(heading,line1,yes=False, nolabel="", yeslabel="", autoclose=0):
 	'''------------------------------
 	---DIALOG-YESNO------------------
 	------------------------------'''
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
+	name = 'dialogyesno' ; printpoint = ""
 	if '$LOCALIZE' in heading or '$ADDON' in heading: heading = xbmc.getInfoLabel(heading)
 	if '$LOCALIZE' in line1 or '$ADDON' in line1: line1 = xbmc.getInfoLabel(line1)
 	returned = 'skip'
@@ -1202,7 +1202,8 @@ def dialogyesno(heading,line1,yes=False, nolabel="", yeslabel="", autoclose=0):
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
-	if admin and not admin2: print printfirst + "dialogyesno" + space2 + heading + space3 + line1 + "( " + returned + " )"
+	text = 'heading: ' + str(heading) + space + 'line1: ' + str(line1) + space + 'returned: ' + str(returned)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	return returned
 	'''---------------------------'''
