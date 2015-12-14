@@ -756,7 +756,11 @@ def mode32(value, admin, name, printpoint):
 			setsetting('admin','false')
 			setSkinSetting('1','Admin','false')
 	elif value == '1':
-		xbmc.executebuiltin('Skin.SetString(test,'+ containerfolderpath +')')
+		text = containerfolderpath
+		text = text.replace('&amp;','&')
+		text = text.replace('&quot;',"")
+		write_to_file(featherenceservice_addondata_path + "Container.FolderPath" + ".txt", str(text), append=False, silent=True, utf8=False)
+		notification('url saved!','Container.FolderPath.txt','',2000)
 		'''---------------------------'''
 	
 	elif value == '2':
@@ -2972,7 +2976,7 @@ def mode215(value, admin, name, printpoint):
 	if value != "":
 		'''ראשי'''
 		x = '99' ; id = idT2.get(x)
-		if id != "" and id != None and 1 + 1 == 3:	
+		if id != "" and id != None and admin and admin3 == 'true':	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value == 'RESET': setSkinSetting('0','label'+id,localize(78942))
 			setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=519&value=0)')

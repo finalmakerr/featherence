@@ -255,8 +255,8 @@ msgid "Note: Random play isn't enabled!"
 msgstr "לתשומת לבך: האפשרות לניגון אקראי אינה מופעלת!"
 
 msgctxt "#63
-msgid "Visit us on Facebook :)"
-msgstr "בקרו אותנו בפייסבוק :)"
+msgid "Join our group in Facebook!"
+msgstr "הצטרף לקבוצה שלנו בפייסבוק!"
 
 msgctxt "#64
 msgid "National Geographic"

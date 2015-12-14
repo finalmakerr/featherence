@@ -7,11 +7,16 @@ from shared_modules import *
 
 '''plugins'''
 def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
-	url2 = url ; printpoint = "" ; returned = "" ; extra = ""
+	url2 = url ; printpoint = "" ; returned = "" ; extra = "" ; name2 = "" ; iconimage2 = "" ; desc2 = ""
 	if '$LOCALIZE' in name or '$ADDON' in name: name = xbmc.getInfoLabel(name)
 	if '$LOCALIZE' in desc or '$ADDON' in desc: desc = xbmc.getInfoLabel(desc)
 	
-
+	if 'getAPIdata' in num:
+		finalurl2, id2, name2, iconimage2, desc2, fanart2 = getAPIdata(num, name, iconimage, desc, fanart)
+		if 'getAPIdata' in name and name2 != "": name = name2
+		if 'getAPIdata' in iconimage and iconimage2 != "": iconimage = iconimage2
+		if 'getAPIdata' in desc and desc2 != "": desc2 = desc = desc2
+		if 'getAPIdata' in fanart and fanart2 != "": fanart = fanart2
 	if desc == None or desc == "" or desc == "None": desc = ""
 	else:
 		try: desc = str(desc).encode('utf-8')
@@ -32,10 +37,9 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		except: pass
 	if fanart == None: fanart = ""
 	
-	if mode == 17: name = '[COLOR=Green]' + name + '[/COLOR]'
-	elif mode == 5: name = '[COLOR=Yellow]' + name + '[/COLOR]'
+	if mode == 17: name = '[COLOR=green]' + name + '[/COLOR]'
+	elif mode == 5: name = '[COLOR=yellow]' + name + '[/COLOR]'
 	elif mode == 8: name = '[COLOR=White2]' + name + '[/COLOR]'
-	
 	
 	if mode >= 100 and 1 + 1 == 2:
 		#if url == "": url = "1"
@@ -350,17 +354,18 @@ def clean_commonsearch(x):
 		y = y.replace("[/COLOR]", "")
 	
 	y = y.replace(" ","%20")
+	y = y.replace("#","%23")
 	
 	text = "x" + str(x) + space + "y" + space2 + str(y)
 	printlog(title='clean_commonsearch', printpoint="", text=text, level=0, option="")
 	return y
 
-def LocalSearch(mode, name, url, iconimage, desc, num, viewtype):
+def LocalSearch(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	printpoint = "" ; admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)') ; value = "" ; url2 = ""
 	url2 = read_from_file(url, silent=True, lines=True, retry=True, printpoint="", addlines='&custom_se=', createlist=False)
 	text = 'url2' + space2 + str(url2)
 	printlog(title='LocalSearch' + space + name, printpoint=printpoint, text=text, level=0, option="")
-	TvMode2(mode, name, url2, iconimage, desc, num, viewtype)
+	TvMode2(addonID, mode, name, url2, iconimage, desc, num, viewtype, fanart)
 		
 def YoutubeSearch(name, url, desc, num, viewtype):
 	printpoint = "" ; admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)') ; value = "" ; url2 = ""
@@ -484,7 +489,7 @@ def YOULink(mname, url, thumb, desc):
 		printlog(title='YOULink', printpoint="", text=text, level=0, option="")
 		return ok
 		
-def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
+def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 	printpoint = "" ; i = 0 ; i2 = 0 ; extra = "" ; desc = str(desc)
 	pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
 	pl.clear()
@@ -498,8 +503,8 @@ def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
 	
 	url2 = url2.replace("&amp;", "&")
 	
-	url2 = url2.replace(" &custom","&custom")
 	url2 = url2.replace(" &custom_se","&custom_se")
+	url2 = url2.replace(" &custom","&custom")
 	url2 = url2.replace(" &dailymotion_id=","&dailymotion_id=")
 	url2 = url2.replace(" &hotVOD","&hotVOD")
 	url2 = url2.replace(" &sdarot","&sdarot")
@@ -510,6 +515,7 @@ def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
 	url2 = url2.replace(" &youtube_ch","&youtube_ch")
 	url2 = url2.replace(" &youtube_pl","&youtube_pl")
 	url2 = url2.replace(" &youtube_id","&youtube_id")
+	url2 = url2.replace(" &youtube_se2","&youtube_se2")
 	url2 = url2.replace(" &youtube_se","&youtube_se")
 	
 	url2a = url2
@@ -574,15 +580,14 @@ def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
 				elif "&youtube_ch=" in x:
 					#i2 += 1
 					#x = x.replace("&youtube_ch=","")
-					try: finalurlL, numOfItems2 = youtube_pl_to_youtube_id(x, playlist)
+					try: finalurlL, numOfItems2 = youtube_pl_to_youtube_id(addonID, x, playlist)
 					except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
 					#finalurl="plugin://plugin.video.youtube/play/?playlist_id="+x+""
 					'''---------------------------'''
 				elif "&youtube_pl=" in x:
 					#i2 += 1
 					#x = x.replace("&youtube_pl=","")
-					#finalurlL, numOfItems2 = youtube_pl_to_youtube_id(x, playlist)
-					try: finalurlL, numOfItems2 = youtube_pl_to_youtube_id(x, playlist)
+					try: finalurlL, numOfItems2 = youtube_pl_to_youtube_id(addonID, x, playlist)
 					except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
 					#finalurl="plugin://plugin.video.youtube/play/?playlist_id="+x+""
 					'''---------------------------'''
@@ -590,13 +595,13 @@ def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
 					x = x.replace("&youtube_id=","")
 					finalurl="plugin://plugin.video.youtube/play/?video_id="+x+"&hd=1"
 					'''---------------------------'''
-				elif "&youtube_se=" in x or "&custom_se=" in x:
+				elif "&youtube_se2=" in x or "&youtube_se=" in x or "&custom_se=" in x:
 					#try: str(name).encode('utf-8')
 					#except: str(name)
 					#x = x.replace("&youtube_se=","")
 					if '&youtube_se=' in x: x = x + space + str(name)
 					#print 'xxx' + str(x)
-					try: finalurlL, numOfItems2 = youtube_pl_to_youtube_id(x, playlist)
+					try: finalurlL, numOfItems2 = youtube_pl_to_youtube_id(addonID, x, playlist)
 					except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
 					#finalurl="plugin://plugin.video.youtube/play/?video_id="+x+"&hd=1"
 					'''---------------------------'''
@@ -655,7 +660,7 @@ def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
 				
 			elif mode == 6:
 				#try:
-				finalurl, id, name, iconimage, desc = getAPIdata(x, name, iconimage, desc)
+				finalurl, id, name, iconimage, desc, fanart = getAPIdata(x, name, iconimage, desc, fanart)
 							
 				#except: pass
 				
@@ -677,9 +682,10 @@ def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
 					#x = x.replace("&youtube_id=","")
 					addDir(str(i) + '.' + space + name + space + name2, x, 4, iconimage, desc, num, viewtype)
 					'''---------------------------'''
-				elif "&youtube_se=" in x or "&custom_se=" in x:
+				elif "&youtube_se2" in x or "&youtube_se=" in x or "&custom_se=" in x:
 					#try: str(name).encode('utf-8')
 					#except: str(name)
+					x = x.replace("&youtube_se2=","")
 					x = x.replace("&youtube_se=","")
 					x = x.replace("&custom_se=","")
 					x = x + space + str(name)
@@ -754,7 +760,7 @@ def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
 		if playlist == []: notification(addonString_servicefeatherence(1).encode('utf-8'), addonString_servicefeatherence(2).encode('utf-8'), "", 2000)
 		#xbmc.executebuiltin('RunScript('+addonID+'/?mode=6&name='+name+'&url='+url+'&iconimage='+str(iconimage)+'&desc='+desc+'&num='+str(num)+'&viewtype='+str(viewtype)+')')
-		#MultiVideos(6, name, url, iconimage, desc, num, viewtype)
+		#MultiVideos(6, name, url, iconimage, desc, num, viewtype, fanart)
 		
 	'''------------------------------
 	---PRINT-END---------------------
@@ -767,49 +773,74 @@ def MultiVideos(mode, name, url, iconimage, desc, num, viewtype):
 	printlog(title="MultiVideos", printpoint=printpoint, text=text, level=2, option="")
 	'''---------------------------'''
 		
-def getAPIdata(x, name, iconimage, desc):
+def getAPIdata(x, name, iconimage, desc, fanart):
 	printpoint = "" ; TypeError = "" ; extra = ""
 	finalurl = "" ; url = "" ; prms = "" ; id = ""
-	try:
-		if '&youtube_pl=' in x:
-			x2 = x.replace('&youtube_pl=',"")
-			url = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId='+x2+'&key='+featherenceapi+'&part=snippet&maxResults=40&pageToken='
-			#url = 'https://www.googleapis.com/youtube/v3/playlists?id='+x2+'&key='+featherenceapi+'&part=snippet&maxResults=1&pageToken='
-		elif '&youtube_ch=' in x:
+	#print 'x[:1]' + space2 + str(x[:1]) + newline + 'x[:-1]' + space2 + str(x[:-1]) + newline + 'x[1:]' + space2 + str(x[1:]) + newline + 'x[-1:]' + space2 + str(x[-1:])
+	if x[:1] == '[': x = x.replace('[',"",1)
+	if x[-1:] == ']': x = x.replace(']',"")
+	if x[:1] == "'": x = x.replace("'","",1)
+	if x[-1:] == "'": x = x.replace("'","")
+	if 'getAPIdata=' in x:
+		#x = find_string(name, "getAPIdata=", "")
+		x = x.replace('getAPIdata=',"")
+		#print 'blabla' + space2 + str(x)
+	#try:
+	if 1 + 1 == 2:
+		if '&youtube_ch=' in x:
+			printpoint = printpoint + '1'
 			x2 = x.replace('&youtube_ch=',"")
 			url = 'https://www.googleapis.com/youtube/v3/channels?forUsername='+x2+'&key='+featherenceapi+'&part=snippet&maxResults=1'
 			link = OPEN_URL(url)
 			#print 'link__' + space2 + str(link)
 			if '"totalResults": 0' in link or '"items": []' in link:
+				printpoint = printpoint + '2'
 				url = 'https://www.googleapis.com/youtube/v3/channels?id='+x2+'&key='+featherenceapi+'&part=snippet&maxResults=1'
+		elif '&youtube_se=' in x:
+			x2 = x.replace('&youtube_se=',"")
+			x2 = clean_commonsearch(x2)
+			url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+featherenceapi+'&safeSearch=moderate&type=video&part=snippet&maxResults=40&pageToken='
+		elif "&youtube_se2=" in x:
+			'''WIP'''
+			printpoint = printpoint + "4"
+			x2 = x.replace("&youtube_se2=","")
+			x2 = clean_commonsearch(x2)
+			url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+featherenceapi+'&safeSearch=moderate&type=channel&part=snippet&maxResults=1&pageToken='
+			print 'blabla2' + space2 + str(url)
+		elif '&youtube_pl=' in x:
+			x2 = x.replace('&youtube_pl=',"")
+			url = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId='+x2+'&key='+featherenceapi+'&part=snippet&maxResults=40&pageToken='
+			#url = 'https://www.googleapis.com/youtube/v3/playlists?id='+x2+'&key='+featherenceapi+'&part=snippet&maxResults=1&pageToken='
 			
 		elif '&youtube_id=' in x:
 			x2 = x.replace('&youtube_id=',"")
 			url = 'https://www.googleapis.com/youtube/v3/videos?id='+x2+'&key='+featherenceapi+'&part=snippet'
-		elif '&youtube_se' in x:
-			x2 = x.replace('&youtube_se=',"")
-			url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+featherenceapi+'&safeSearch=moderate&type=video&part=snippet&maxResults=40&pageToken='
 		elif '&custom_se' in x:
 			x2 = x.replace('&custom_se',"")
+			x2 = clean_commonsearch(x2)
 			url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+featherenceapi+'&safeSearch=moderate&type=video&part=snippet&maxResults=1&pageToken='
 		
 		if url != "":
+			printpoint = printpoint + '5'
 			link = OPEN_URL(url)
 			prms=json.loads(link)
-			printlog(title='getAPIdata_test1', printpoint=printpoint, text=str(link), level=0, option="")
+			printlog(title='getAPIdata_test1', printpoint=printpoint, text='url' + space2 + str(url) + newline + 'link' + space2 + str(link), level=0, option="")
 			i = 0
-			if '&youtube_pl' in x:
+			if '&youtube_pl=' in x:
 				#id=str(prms['items'][i][u'id']) #Video ID (Playlist)
 				id=str(prms['items'][i][u'snippet'][u'resourceId'][u'videoId']) #Video ID (Playlist)
 				#id=str(prms['items'][i][u'snippet'][u'playlistId']) #Video ID (Playlist)
 				if id != "":
+					print 'testing' + space2 + str(x2)
 					finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
 					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
 					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'medium'][u'url'])
 					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
+					fanart_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'high'][u'url'])
 					if not 'Deleted video' in name_: name = name_
 					if iconimage_ != "": iconimage = iconimage_
-			elif '&youtube_ch' in x:
+					if fanart_ != "": fanart = fanart_
+			elif '&youtube_ch=' in x:
 				id=str(prms['items'][i][u'id']) #Video ID (Playlist)
 				#id=str(prms['items'][i][u'snippet'][u'playlistId']) #Video ID (Playlist)
 				if id != "":
@@ -817,33 +848,51 @@ def getAPIdata(x, name, iconimage, desc):
 					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
 					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'medium'][u'url'])
 					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
+					fanart_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'high'][u'url'])
 					if not 'Deleted video' in name_: name = name_
 					if iconimage_ != "": iconimage = iconimage_
-			elif '&youtube_id' in x:
+					if fanart_ != "": fanart = fanart_
+			elif '&youtube_id=' in x:
 				id=str(prms['items'][i][u'id']) #Video ID ()
 				if id != "":
 					finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
 					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
 					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'medium'][u'url'])
 					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
+					fanart_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'high'][u'url'])
 					if not 'Deleted video' in name_: name = name_
 					if iconimage_ != "": iconimage = iconimage_
+					if fanart_ != "": fanart = fanart_
 					
-			elif '&youtube_se' in x:
+			elif '&youtube_se=' in x:
 				id=str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)
 				if id != "":
 					finalurl="plugin://plugin.video.youtube/play/?video_id="+id+"&hd=1"
 					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
 					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'medium'][u'url'])
 					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
+					fanart_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'high'][u'url'])
 					if not 'Deleted video' in name_: name = name_
 					if iconimage_ != "": iconimage = iconimage_
+					if fanart_ != "": fanart = fanart_
+			
+			elif '&youtube_se2=' in x:
+				id=str(prms['items'][i][u'snippet'][u'channelId']) #Video ID (Search)
+				if id != "":
+					finalurl=""
+					name_=str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
+					iconimage_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'medium'][u'url'])
+					desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
+					fanart_=str(prms['items'][i][u'snippet'][u'thumbnails'][u'high'][u'url'])
+					if not 'Deleted video' in name_: name = name_
+					if iconimage_ != "": iconimage = iconimage_
+					if fanart_ != "": fanart = fanart_
+		else: printpoint = printpoint + '9'	
 				
-				
-				
-	except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
+	#except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
 	
 	text = 'x' + space2 + str(x) + newline + \
+	'url' + space2 + str(url) + newline + \
 	'prms' + space2 + str(prms) + newline + \
 	'finalurl' + space2 + str(finalurl) + newline + \
 	'name' + space2 + str(name) + newline + \
@@ -851,7 +900,7 @@ def getAPIdata(x, name, iconimage, desc):
 	'desc' + space2 + str(desc) + extra
 	
 	printlog(title="getAPIdata", printpoint=printpoint, text=text, level=0, option="")
-	return str(finalurl), str(id), str(name), str(iconimage), str(desc)
+	return str(finalurl), str(id), str(name), str(iconimage), str(desc), str(fanart)
 	
 def PlayPlayList(playlistid):
 	printpoint = ""
@@ -1858,7 +1907,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 	'''---------------------------'''
 	printlog(title="ManageCustom", printpoint=printpoint, text=text, level=2, option="")
 		
-def youtube_pl_to_youtube_id(x, playlist=[]):
+def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 	'''Error may occured at anytime'''
 	'''Make sure to use exception upon running this module'''
 	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)') ; playlist2 = []
@@ -1868,6 +1917,15 @@ def youtube_pl_to_youtube_id(x, playlist=[]):
 	returned = get_types(playlist)
 	if not 'list' in returned: playlist = []
 	
+	videoDefinition = 'any'
+	safeSearch = 'moderate'
+	if addonID == 'plugin.video.featherence.docu':
+		pass
+		#videoDefinition = 'high'
+	
+	if addonID == 'plugin.video.featherence.kids':
+		safeSearch = 'strict'
+		
 	if "&youtube_pl=" in x:
 		printpoint = printpoint + "1"
 		x = x.replace("&youtube_pl=","")
@@ -1876,7 +1934,13 @@ def youtube_pl_to_youtube_id(x, playlist=[]):
 		printpoint = printpoint + "2"
 		x = x.replace("&youtube_se=","")
 		x = clean_commonsearch(x)
-		url = 'https://www.googleapis.com/youtube/v3/search?q='+x+'&key='+featherenceapi+'&safeSearch=moderate&type=video&part=snippet&maxResults=40&pageToken='
+		url = 'https://www.googleapis.com/youtube/v3/search?q='+x+'&key='+featherenceapi+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults=40&pageToken='
+	elif "&youtube_se2=" in x:
+		'''WIP'''
+		printpoint = printpoint + "5"
+		x = x.replace("&youtube_se2=","")
+		x = clean_commonsearch(x)
+		url = 'https://www.googleapis.com/youtube/v3/search?q='+x+'&key='+featherenceapi+'&safeSearch='+safeSearch+'&type=channel&part=snippet&maxResults=1&pageToken='
 	elif "&custom_se=" in x:
 		text = 'xxx' + space2 + str(x)
 		printlog(title='youtube_pl_to_youtube_id_test1', printpoint=printpoint, text=text, level=0, option="")
@@ -1885,12 +1949,12 @@ def youtube_pl_to_youtube_id(x, playlist=[]):
 		x = clean_commonsearch(x)
 		#print "qwewqeqwe" + x
 		pagesize = 1
-		url = 'https://www.googleapis.com/youtube/v3/search?q='+x+'&key='+featherenceapi+'&safeSearch=moderate&type=video&part=snippet&maxResults=1&pageToken='
+		url = 'https://www.googleapis.com/youtube/v3/search?q='+x+'&key='+featherenceapi+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults=1&pageToken='
 	elif "&youtube_ch=" in x:
 		printpoint = printpoint + "4"
-		finalurl, id, name, iconimage, desc = getAPIdata(x, "", "", "")
+		finalurl, id, name, iconimage, desc, fanart = getAPIdata(x, "", "", "", "")
 		x = x.replace("&youtube_ch=","")
-		url = 'https://www.googleapis.com/youtube/v3/search?channelId='+id+'&key='+featherenceapi+'&part=snippet&maxResults=40'
+		url = 'https://www.googleapis.com/youtube/v3/search?channelId='+id+'&key='+featherenceapi+'&videoDefinition='+videoDefinition+'&type=video&part=snippet&maxResults=40'
 	else: printpoint = printpoint + "8"
 	
 	link = OPEN_URL(url)
@@ -2105,7 +2169,7 @@ def TVMode_check(admin, url, playlists):
 	'''---------------------------'''
 	return returned
 
-def TvMode2(mode, name, url, iconimage, desc, num, viewtype):
+def TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 	returned = ""
 	if url == "None":
 		'''Empty button'''
@@ -2120,7 +2184,7 @@ def TvMode2(mode, name, url, iconimage, desc, num, viewtype):
 		if returned == 'ok': mode = 5
 		else: mode = 6
 		
-		MultiVideos(mode, name, url, iconimage, desc, num, viewtype)
+		MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart)
 		
 		return mode
 
@@ -2559,11 +2623,16 @@ def pluginend(admin):
 					else: notification('featherence',addonString_servicefeatherence(63).encode('utf-8'),'',2000)
 					installaddonP(admin, 'repository.xbmc-israel', version="", update=True, silent=False)
 					'''---------------------------'''
+				if addonID == 'plugin.video.featherence.docu':
+					if systemlanguage != "Hebrew" and systemlanguage != "English": notification("This addon does not support "+str(systemlanguage)+" yet","...","",2000)
+					else: notification('featherence',addonString_servicefeatherence(63).encode('utf-8'),'',2000)
+					installaddonP(admin, 'repository.xbmc-israel', version="", update=True, silent=False)
+					'''---------------------------'''
 				elif addonID == 'plugin.video.featherence.music':
 					if systemlanguage != "Hebrew" and systemlanguage != "English": notification("This addon does not support "+str(systemlanguage)+" yet","...","",2000)
 					else: notification('featherence',addonString_servicefeatherence(63).encode('utf-8'),'',2000)
 					
-					if Addon_Version == '0.0.17' or Addon_Version == '0.0.18': setsetting('General_OnlyPopular','true')
+					#if Addon_Version == '0.0.17' or Addon_Version == '0.0.18': setsetting('General_OnlyPopular','true')
 
 					
 		except Exception, TypeError:
@@ -2575,16 +2644,16 @@ def pluginend(admin):
 	elif mode == 1:
 		pass
 	elif mode == 2:
-		LocalSearch(mode, name, url, iconimage, desc, num, viewtype)
+		LocalSearch(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 3:
 		YoutubeSearch(name, url, desc, num, viewtype)
 	elif mode == 4:
 		#play_video(url) #API V3 issues
 		play_video2(url)
 	elif mode == 5:
-		MultiVideos(mode, name, url, iconimage, desc, num, viewtype)
+		MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 6:
-		MultiVideos(mode, name, url, iconimage, desc, num, viewtype)
+		MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 7:
 		ListLive(url)
 	elif mode == 8:
@@ -2608,10 +2677,10 @@ def pluginend(admin):
 	elif mode == 16:       
 		ShowFromUser(url)
 	elif mode == 17:
-		mode = TvMode2(mode, name, url, iconimage, desc, num, viewtype)
+		mode = TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 18:
 		'''Custom Playlist'''
-		mode = TvMode2(mode, name, url, iconimage, desc, num, viewtype)
+		mode = TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 20:
 		AddCustom(mode, name, url, iconimage, desc, num, viewtype)
 	elif mode == 21:

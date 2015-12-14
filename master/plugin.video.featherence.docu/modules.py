@@ -142,9 +142,9 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 
 	'''Lions'''
 	list = []
-	list.append('&youtube_ch=UC3c8nDp-i60gB2wTmUeyQAA')
-	list.append('&youtube_pl=PLpYgp0wW8mmZyLCqY415YbjefiazLBHzJ')
-	list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq')
+	list.append('&youtube_se=#lion')
+	#list.append('&youtube_pl=PLpYgp0wW8mmZyLCqY415YbjefiazLBHzJ')
+	#list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq')
 	addDir('Lions',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	

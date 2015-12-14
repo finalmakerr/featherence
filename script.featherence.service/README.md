@@ -111,6 +111,90 @@ PLAY RANDOM TRAILERS
 RunScript(script.featherence.service,,?mode=25)
 ```
 
+# **Create your own plugin:**
+* **modules.py:**
+  * **addDir:**
+	```
+	addDir form
+	addDir('<name>','<url>',<mode number>,'<iconimage>','<description>','<optional>',"<viewtype>", '<fanart>')
+	```
+	
+	```
+	PLAY YOUTUBE VIDEO
+	METHOD 1: MODE 4 | URL = text
+	METHOD 2: MODE 5/6/17 | URL = &youtube_id=text
+	```
+	
+	```
+	YOUTUBE PLAYLIST
+	PLAY: MODE 12 | URL = text
+	OPEN: MODE 13 | URL = text
+	FEATHERENCE: MODE 5/6/17 | URL = &youtube_pl=text
+	```
+	
+	```
+	YOUTUBE CHANNEL
+	OPEN: MODE 9 | URL = text
+	FEATHERENCE: MODE 5/6/17 | URL = &youtube_ch=text
+	```
+	
+	```
+	SEARCH YOUTUBE
+	OPEN: MODE 3 | URL = text
+	FEATHERENCE: MODE 5/6/17 | URL = &youtube_se=text
+	```
+	
+	```
+	READ LINE BY LINE FROM FILE AND SEARCH IN YOUTUBE
+	PLAY ALL: MODE 2 | URL = <file path>
+	TIP: os.path.join(addonPath, 'resources', 'templates2', '')
+	addonPath = current addon
+	```
+	
+	```
+	PLAY DIALYMOTION VIDEO
+	FEATHERENCE: MODE 5/6/17 | URL = &dailymotion_id=text
+	```
+	
+	```
+	ANY URLS
+	OPEN: MODE 8 | URL = <file path>
+	PLAY: MODE 10 | URL = <file path>
+	TIP: use ctrl+shift+P on the required location!
+	```
+	
+	```
+	GET ADDON INFO
+	ADDON = <ADDON ID>
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	```
+	
+	```
+	GET INFO FROM YOUTUBE
+	OPTIONAL = 'getAPIdata=<text>'
+	text = &youtube_se=#Lion
+	in that addDir put 'getAPIdata' in any of those:
+		name, iconimage, desc, fanart
+	```
+	
+	```
+	SHOW ALL
+	METHOD 1: MODE 6 | URL = <anything with '&xxx=text'>
+	TIP: URL must be a list []
+	```
+	
+	```
+	PLAY ALL
+	METHOD 1: MODE 5 | URL = <anything with '&xxx=text'>
+	TIP: URL must be a list []
+	```
+	
+	```
+	TVMODE
+	METHOD 1: MODE 17 | URL = <anything with '&xxx=text'>
+	TIP: URL must be a list []
+	```
+	
 # **Links:**
 
 * [Facebook](https://www.facebook.com/groups/featherence/)
