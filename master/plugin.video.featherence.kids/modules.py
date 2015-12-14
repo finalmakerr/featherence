@@ -346,7 +346,7 @@ def CATEGORIES104(admin):
 	addon = 'plugin.video.genesis'
 	addon2 = '/?action=movies&url=http%3a%2f%2fapi.themoviedb.org%2f3%2fdiscover%2fmovie%3fapi_key%3d%25s%26with_genres%3d28%26primary_release_date.gte%3d2014-12-10%26primary_release_date.lte%3d2015-12-10%26page%3d1'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('Genesis','plugin://'+addon+addon2,8,thumb,plot,'1',"", getAddonFanart(background, custom=fanart))
+	#addDir('Genesis','plugin://'+addon+addon2,8,thumb,plot,'1',"", getAddonFanart(background, custom=fanart))
 	
 	'''אאוץ'''
 	list = []
@@ -513,7 +513,8 @@ def CATEGORIES104(admin):
 	list.append('&youtube_pl=PLR7DTcU2p0QhDzYbbniDNwSbXUM_p6N3f')
 	list.append('&youtube_pl=PLR7DTcU2p0QgEdLPHhrhKtxElvYVrseAQ')
 	list.append('&youtube_pl=PLR7DTcU2p0QhNGUffSgu8_5dP3lnOGZTx')
-	list.append('&sdarot=season_id=1&series_id=1810&series_name=%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95%20%d7%97%d7%95%d7%a7%d7%99%20%d7%94%d7%92%27%d7%95%d7%a0%d7%92%d7%9c&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1810%2fkofiko-jungle-laws-%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95-%d7%97%d7%95%d7%a7%d7%99-%d7%94%d7%92-%d7%95%d7%a0%d7%92%d7%9c', '&sdarot=series_id=422&series_name=%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f422%2fkofiko-%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95')
+	list.append('&sdarot=season_id=1&series_id=1810&series_name=%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95%20%d7%97%d7%95%d7%a7%d7%99%20%d7%94%d7%92%27%d7%95%d7%a0%d7%92%d7%9c&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1810%2fkofiko-jungle-laws-%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95-%d7%97%d7%95%d7%a7%d7%99-%d7%94%d7%92-%d7%95%d7%a0%d7%92%d7%9c')
+	list.append('&sdarot=series_id=422&series_name=%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f422%2fkofiko-%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95')
 	addDir('קופיקו',list,17,'http://www.sdarot.pm/media/series/422.jpg',addonString(104070).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''קספר'''
@@ -649,12 +650,14 @@ def CATEGORIES106(admin):
 	list =[]
 	list.append('&youtube_pl=PLvadvyUkv4iFxFnsG0i1mLhuvR5nQBUcf')
 	list.append('&youtube_pl=PLFB481A7458E12A61')
-	list.append('&youtube_')
-	list.append('&youtube_')
+	#list.append('&youtube_')
+	#list.append('&youtube_')
 	addDir('בייבי איינשטיין',list,17,'http://d202m5krfqbpi5.cloudfront.net/books/1170326163l/46377.jpg',addonString(120).encode('utf-8'),'1',50, getAddonFanart(background)) #TerrapinStation5
 	
 	'''בייבי'''
-	addDir('בייבי','UCj10fKNd5h64J_M9YIQu0Zw/playlists',9,'http://yt3.ggpht.com/-RYFi0L82fh4/AAAAAAAAAAI/AAAAAAAAAAA/1hhzmsuRybc/s88-c-k-no/photo.jpg',addonString(131).encode('utf-8'),'1',50, getAddonFanart(background))
+	list = []
+	list.append('&youtube_ch=UCj10fKNd5h64J_M9YIQu0Zw/playlists')
+	addDir('בייבי',list,17,'http://yt3.ggpht.com/-RYFi0L82fh4/AAAAAAAAAAI/AAAAAAAAAAA/1hhzmsuRybc/s88-c-k-no/photo.jpg',addonString(131).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''אוצר מילים עם נוני'''
 	list =[]

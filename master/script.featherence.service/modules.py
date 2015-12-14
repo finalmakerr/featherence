@@ -710,7 +710,7 @@ def mode30(admin, name):
 	---featherence-CHANNEL------------------
 	------------------------------'''
 	
-	xbmc.executebuiltin('ActivateWindow(10025,plugin://plugin.video.youtube/channel/UCcYT8oPT83Yuw4_GUZ3mMFg/)')			
+	xbmc.executebuiltin('ActivateWindow(10025,plugin://plugin.video.youtube/channel/finalmakerr/),returned')			
 	if os.path.exists(skinlog_file):
 		if os.path.exists(skinlog_en_file) and xbmc.getInfoLabel('System.Language') != 'Hebrew': log = open(skinlog_en_file, 'r')
 		else: log = open(skinlog_file, 'r')

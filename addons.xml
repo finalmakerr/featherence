@@ -46,7 +46,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.1.1" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.1.2" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="plugin.video.youtube" version="5.1.0"/>
@@ -64,7 +64,7 @@
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<forum></forum>
 	<email>featherence@groups.facebook.com</email>
-	<source></source>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.kids</source>
 	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
@@ -110,7 +110,7 @@
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="featherence Service" version="0.1.6" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.1.7" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
 	<import addon="xbmc.json" version="6.0.0"/>
@@ -122,14 +122,14 @@
   <extension point="xbmc.addon.metadata">
     <language>he</language>
 	<platform>all</platform>
-    <summary lang="en"></summary>
-	<summary lang="he"></summary>
+    <summary lang="en">Developer ToolKit</summary>
+	<summary lang="he">כלים למפתחים</summary>
     <description lang="en"></description>
 	<description lang="he"></description>
     <disclaimer></disclaimer>
 	<email>featherence@groups.facebook.com</email>
 	<forum></forum>
-	<source></source>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.service</source>
 	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>

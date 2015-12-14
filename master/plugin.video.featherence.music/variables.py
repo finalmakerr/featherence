@@ -61,13 +61,4 @@ Custom_10007 = getsetting('Custom_10007')
 Custom_10008 = getsetting('Custom_10008')
 Custom_10009 = getsetting('Custom_10009')
 '''---------------------------'''
-commonsearch101 = "זמר שיר וידאו"
-commonsearch102 = "קריוקי"
-commonsearch104 = "הופעה חיה"
-commonsearch106 = "זמר מזרחי שיר וידאו"
-commonsearch107 = "קריוקי מזרחי"
-commonsearch109 = "הופעה חיה מזרחי"
-commonsearch111 = "songs video"
-commonsearch112 = "Karaoke"
-commonsearch114 = "LiveShow"
 sefilter = ['עונת ההופעות']

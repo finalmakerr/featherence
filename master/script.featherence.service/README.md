@@ -136,6 +136,7 @@ RunScript(script.featherence.service,,?mode=25)
 	YOUTUBE CHANNEL
 	OPEN: MODE 9 | URL = text
 	FEATHERENCE: MODE 5/6/17 | URL = &youtube_ch=text
+	TIP: You may add '/playlists' after that channel id!
 	```
 	
 	```
