@@ -81,6 +81,7 @@ def CATEGORIES101(admin):
 	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
 
 	'''Nature Ultra HD'''
+	list = []
 	list.append('&youtube_pl=PL_VFlQR7BSNQTvSG8Ua6rFtS-tyxVenA2')
 	list.append('&youtube_pl=PL_T9MO520krq5QsT1sIHdmBUNodksi8v2')
 	list.append('&youtube_pl=PLdhB2hC90YEsbPuupoVTms5PYM1iDCdDw')
@@ -92,16 +93,19 @@ def CATEGORIES101(admin):
 	addDir("Nature Ultra HD",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))	
  
 	'''Discovery'''
+	list = []
 	list.append('&youtube_ch=DiscoveryNetworks')
 	list.append('&youtube_ch=UCah1A9yF6I0geya0xNPHQfw')
 	addDir("Discovery",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
  
 	'''Nat Geo Wild'''
+	list = []
 	list.append('&youtube_ch=NatGeoWild')
 	list.append('&youtube_ch=UCWiqP_4evlj80g_HzzvToaw')
 	addDir("Nat Geo Wild",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
  
 	'''National Geographic'''
+	list = []
 	list.append('&youtube_ch=NationalGeographic')
 	list.append('&youtube_ch=UC1KCUsWsce0B6kXMv10bFsg')
 	addDir("National Geographic",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))	
@@ -142,7 +146,7 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 
 	'''Lions'''
 	list = []
-	list.append('&youtube_ch=UC3c8nDp-i60gB2wTmUeyQAA')
+	list.append('&youtube_se=#lions')
 	list.append('&youtube_pl=PLpYgp0wW8mmZyLCqY415YbjefiazLBHzJ')
 	list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq')
 	addDir('Lions',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
@@ -150,38 +154,38 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	
 	'''Giraffe'''
 	list = []
-	list.append('&youtube_ch=UCDJLpRSvaPy8vWn8hZVguSg') 
+	list.append('&youtube_se=UCDJLpRSvaPy8vWn8hZVguSg') 
 	addDir('Giraffe',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Elephant'''
 	list = []
-	list.append('&youtube_ch=UCXhjuyNdDSbe5L0yiFoCoxQ') 
+	list.append('&youtube_se=UCXhjuyNdDSbe5L0yiFoCoxQ') 
 	addDir('Elephant',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Tiger'''
 	list = []
-	list.append('&youtube_ch=UCEYScfGuWVU9gxdrqf0XArQ') 
+	list.append('&youtube_se=UCEYScfGuWVU9gxdrqf0XArQ') 
 	addDir('Tiger',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Monkey'''
 	list = []
-	list.append('&youtube_ch=channel/UC265iYDGY4YHbEqLPrhvJKQ') 
+	list.append('&youtube_se=channel/UC265iYDGY4YHbEqLPrhvJKQ') 
 	addDir('Monkey',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Cats'''
 	list = []
-	list.append('&youtube_ch=UC9egiwuJsQZ0Cy2to5fvSIQ') 
+	list.append('&youtube_se=UC9egiwuJsQZ0Cy2to5fvSIQ') 
 	addDir('Cats',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Birds'''
 	list = []
-	list.append('&youtube_ch=UC7uJ7jdwfPcmqKu7V2nI9rA') 
+	list.append('&youtube_se=UC7uJ7jdwfPcmqKu7V2nI9rA') 
 	list.append('&youtube_pl=PLvTrLxXekhJrlt2IY3-Paobg5skAXFIMB')
 	addDir('Birds',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Fish'''
 	list = []
-	list.append('&youtube_ch=UCZGIp0c6Dv6o6GOR7XCuZTA')
+	list.append('&youtube_se=UCZGIp0c6Dv6o6GOR7XCuZTA')
 	list.append('&youtube_pl=PLfAToAFYpTfuHlcsmO-hiYcpp1yrrP10y')
 	list.append('&youtube_pl=PLezpCwYgD_yvNYNXZlDM6z3mpuTQYgjUs')
 	addDir('Fish',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
@@ -189,26 +193,26 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 
 	'''Shark'''
 	list = []
-	list.append('&youtube_ch=UCHThGYhvhgyvTgUkv3n5R_A') 
+	list.append('&youtube_se=UCHThGYhvhgyvTgUkv3n5R_A') 
 	addDir('Shark',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Snakes'''
 	list = []
-	list.append('&youtube_ch=UC26F6BLFDlCufiZnXsbWMwQ')
+	list.append('&youtube_se=UC26F6BLFDlCufiZnXsbWMwQ')
 	list.append('&youtube_pl=PLWWOl-2iqjMb2UljVPPhQQy6SJJ3E-7gK')
 	list.append('&youtube_pl=PLoUUkpYUScvJb2li_PY6c9fu_A3IlJKiT')
 	addDir('Snakes',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Reptile'''
 	list = []
-	list.append('&youtube_ch=UCvfH62D48X5Bahu-oroIreQ')
+	list.append('&youtube_se=UCvfH62D48X5Bahu-oroIreQ')
 	addDir('Reptile',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 
 	
 	'''dogs'''
 	list = []
-	list.append('&youtube_ch=UCcqLkZqBfBOKmi4vrgkQ6yw')
+	list.append('&youtube_se=UCcqLkZqBfBOKmi4vrgkQ6yw')
 	addDir('Dogs',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	
@@ -383,14 +387,17 @@ def CATEGORIES102(admin):
 	addDir("youtube space channel's",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
  
 	'''Universe'''
+	list = []
 	list.append('&youtube_ch=UCAP0Ypni5eG56SJT0A0Kwaw')
 	addDir("Universe",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Space'''
+	list = []
 	list.append('&youtube_ch=UCRqAn0M59wxBYyHHuwOXfGA')
 	addDir("Space",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Astronomy'''
+	list = []
 	list.append('&youtube_ch=UCSIJHiTGlBRsdpRf5-fEZaA')
 	addDir("Astronomy",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
@@ -1136,9 +1143,31 @@ def CATEGORIES109(admin):
 	list = []
 	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
 	
-	'''TEST'''
+	'''Dextertv'''
 	addon = 'plugin.video.israelive'
 	addon2 = '/?url=nationalgeographic%3Fmode%3D16&mode=10&name=%5BCOLOR+yellow%5D%5BB%5DNational+Geographic+ABU+DHABI%5B%2FB%5D%5B%2FCOLOR%5D&iconimage=&description=&displayname=National+Geographic+ABU+DHABI&categoryid=10451'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('TEST','plugin://'+addon + addon2,10,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	addDir('Dextertv Ducomentaries','plugin://'+addon + addon2,10,thumb,plot,addon,50, getAddonFanart(110, custom=""))
 	'''---------------------------'''
+	
+	'''BBTS'''
+	addon = 'plugin.video.bbts'
+	addon2 = '/?folder=%2fDOCUMENTARIES'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('BBTS Ducomentaries','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''ZEUS'''
+	addon = 'plugin.video.zeus'
+	addon2 = '/?description&amp;iconimage=http%3a%2f%2fs6.postimg.org%2fiiswv9g9t%2fdocumentories.png&amp;mode=20&amp;name=%5bCOLOR%20white%5dDOCUMENTARIES%5b%2fCOLOR%5d&amp;url=niRwEAbN'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('ZEUS Ducomentaries','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	
+	
+	
+	
+	
+	
+	
