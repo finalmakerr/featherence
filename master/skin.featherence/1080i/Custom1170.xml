@@ -609,6 +609,37 @@
 				<icon>buttons/colors/ff30d5c8.png</icon>
 				<label>ff30d5c8</label>
 				<label2>turquoise</label2>
+				<item id="61" description="blue light">
+			    <onclick>SetProperty(SelectedColor,ff00bfff, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,blue, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/ff00bfff.png</icon>
+				<label>ff00bfff</label>
+				<label2>blue light</label2>
+			  </item>
+			  <item id="62" description="red orange">
+			    <onclick>SetProperty(SelectedColor,ffc04000, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,red orange, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/ffc04000.png</icon>
+				<label>ffc04000</label>
+				<label2>red orange</label2>
+			  </item>
+			  <item id="63" description="yellow green">
+			    <onclick>SetProperty(SelectedColor,ffccff00, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,yellow green, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/ffccff00.png</icon>
+				<label>ffccff00</label>
+				<label2>yellow green</label2>
+			  </item>			  
+			  <item id="64" description="purple pink">
+			    <onclick>SetProperty(SelectedColor,fff1a7fe, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,purple pink, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/fff1a7fe.png</icon>
+				<label>fff1a7fe</label>
+				<label2>purple pink</label2>
 			  </item>
 			</content>
 		</control>
