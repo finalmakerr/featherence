@@ -158,10 +158,22 @@ RunScript(script.featherence.service,,?mode=25)
 	```
 	
 	```
+	SDAROT TV VIDEO
+	FEATHERENCE: MODE 5/6/17 | URL = &sdarot=text
+	TIP: use ctrl+shift+P on the preferred location!
+	```
+	
+	```
+	WALLA NEW VIDEO
+	FEATHERENCE: MODE 5/6/17 | URL = &wallaNew=text
+	TIP: use ctrl+shift+P on the preferred location!
+	```
+	
+	```
 	ANY URLS
 	OPEN: MODE 8 | URL = <file path>
 	PLAY: MODE 10 | URL = <file path>
-	TIP: use ctrl+shift+P on the required location!
+	TIP: use ctrl+shift+P on the preferred location!
 	```
 	
 	```

@@ -609,7 +609,8 @@
 				<icon>buttons/colors/ff30d5c8.png</icon>
 				<label>ff30d5c8</label>
 				<label2>turquoise</label2>
-				<item id="61" description="blue light">
+			  </item>
+			  <item id="61" description="blue light">
 			    <onclick>SetProperty(SelectedColor,ff00bfff, home)</onclick>
 				<onclick>SetProperty(SelectedColorName,blue, home)</onclick>
 				<onclick>SetFocus(9000)</onclick>

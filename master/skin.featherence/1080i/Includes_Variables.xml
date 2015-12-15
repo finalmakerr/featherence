@@ -474,15 +474,12 @@
 	<value description="מנגן שיר_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">$LOCALIZE[79033] $LOCALIZE[179]: [COLOR Yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR]</value>
   </variable>
   <variable name="TopInformation3.1" description="() אמצע">
-    <value description="בחר צבע" condition="Skin.HasSetting(Admin3) + Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[COLOR Yellow]$INFO[Window.Property(colorname)][/COLOR]</value>
+	<value description="בחר צבע" condition="Skin.HasSetting(Admin3) + Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[COLOR Yellow]$INFO[Window.Property(colorname)][/COLOR]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(Custom1170.xml)">CHOOSEN: $INFO[Window(home).Property(SelectedColorName)]</value>
     <value condition="Skin.HasSetting(Admin) + !SubString(Container.FolderName,Advanced Launcher)">$INFO[System.CpuUsage] • $INFO[System.CpuFrequency] • $INFO[System.CPUTemperature] • $INFO[System.FreeMemory] • $INFO[System.FPS]</value>
 	<value description="הזזת פריט" condition="Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Window(home).Property(Button.Name))">MOVING [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
 	<value description="עריכת כפתור בתפריט משני" condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(SubButton.Name))">SUB MENU [B]$INFO[Window(home).Property(SubButton.Name)][/B]</value>
 	<value description="עריכת כפתור בית" condition="Window.IsVisible(Custom1175.xml) + !IsEmpty(Window(home).Property(Button.Name))">EDIT [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
-	<value description="Home" condition="Window.IsActive(home) + Control.HasFocus(313)">[COLOR Yellow]$INFO[Container(313).ListItem(0).Label][/COLOR]</value>
-	<value description="Home" condition="Window.IsActive(home) + Control.HasFocus(314)">[COLOR Yellow]$INFO[Container(314).ListItem(0).Label][/COLOR]</value>
-	<value description="Home" condition="Window.IsActive(home) + Control.HasFocus(315)">[COLOR Yellow]$INFO[Container(315).ListItem(0).Label][/COLOR]</value>
 	<value description="מזג אוויר_he" condition="StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">[COLOR Yellow][B]$INFO[Weather.Location][/COLOR][/B] $LOCALIZE[35500]: </value>
 	<value description="מזג אוויר_en" condition="!StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">$LOCALIZE[35500]: [COLOR Yellow][B]$INFO[Weather.Location][/COLOR][/B]</value>	
 	<value description="Home" condition="Window.IsActive(home) + [Control.HasFocus(311) | Control.HasFocus(312)] + !IsEmpty(System.CurrentControl)">$INFO[System.CurrentControl]</value>	

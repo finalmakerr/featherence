@@ -756,18 +756,62 @@ def mode32(value, admin, name, printpoint):
 			setsetting('admin','false')
 			setSkinSetting('1','Admin','false')
 	elif value == '1':
+		text = "" ; extra = ""
+		listitemfolderpath = xbmc.getInfoLabel('ListItem.FolderPath')
+		containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
+		
 		nolabel = 'Container.FolderPath'
 		yeslabel = 'ListItem.Path'
+		if containerfolderpath == "": nolabel = nolabel + space + '[Empty]'
+		if listitemfolderpath == "": yeslabel = yeslabel + space + '[Empty]'
+		
 		returned = dialogyesno(str(name), addonString_servicefeatherence(31).encode('utf-8'), nolabel=nolabel, yeslabel=yeslabel)
 		
-		if returned != 'skip': text = xbmc.getInfoLabel('ListItem.FolderPath')
-		else: text = xbmc.getInfoLabel('Container.FolderPath')
-		text = text.replace('&amp;','&')
-		text = text.replace('&quot;',"")
+		if returned != 'skip': text = listitemfolderpath ; printpoint = printpoint + '1'
+		else: text = containerfolderpath ; printpoint = printpoint + '2'
+		
+		if text != "":
+			printpoint = printpoint + '3'
+			text = text.replace('&amp;','&')
+			text = text.replace('&quot;',"")
+			if 'plugin://plugin.video.sdarot.tv/?' in text:
+				printpoint = printpoint + '4'
+				text = text.replace('plugin://plugin.video.sdarot.tv/?',"")
+				list = []
+				list.append('mode=')
+				list.append('image=')
+				list.append('summary')
+				list.append('name=')
+				for x in list:
+					text_ = regex_from_to(text, x, '&', excluding=False)
+					text = text.replace(text_,"",1)
+					extra = extra + 'x' + space2 + str(x) + space + 'text_' + space2 + str(text_) + newline
+				text = "list.append('&sdarot=" + text + "')"
+			
+			elif 'plugin://plugin.video.wallaNew.video/?' in text:
+				printpoint = printpoint + '4'
+				text = text.replace('plugin://plugin.video.wallaNew.video/?',"")
+				list = []
+				list.append('mode=')
+				list.append('module=')
+				list.append('name=')
+				for x in list:
+					text_ = regex_from_to(text, x, '&', excluding=False)
+					text = text.replace(text_,"",1)
+					extra = extra + 'x' + space2 + str(x) + space + 'text_' + space2 + str(text_) + newline
+				text = "list.append('&wallaNew=" + text + "')"
+
 		write_to_file(featherenceservice_addondata_path + "Container.FolderPath" + ".txt", str(text), append=False, silent=True, utf8=False)
 		notification('url saved!','Container.FolderPath.txt','',2000)
 		'''---------------------------'''
-	
+		
+		text2 = newline + 'text' + space2 + str(text) + newline + \
+		'containerfolderpath ' + space2 + str(xbmc.getInfoLabel('Container.FolderPath')) + newline + \
+		'containerfolderpath2' + space2 + containerfolderpath + newline + \
+		'listitemfolderpath  ' + space2 + str(xbmc.getInfoLabel('ListItem.FolderPath')) + newline + \
+		'listitemfolderpath2 ' + space2 + listitemfolderpath + newline + extra
+		printlog(title='MISCS (mode32) value: ' + str(value), printpoint=printpoint, text=text2, level=0, option="")
+		
 	elif value == '2':
 		returned = dialogyesno('TEST','...')
 		'''---------------------------'''
