@@ -355,12 +355,12 @@
   </variable>
   
   <variable name="290label2" description="">
-    <value condition="!Skin.String(DialogKaiToastPos)">DEFAULT</value>
-	<value condition="Skin.String(DialogKaiToastPos,1)">SW</value>
-	<value condition="Skin.String(DialogKaiToastPos,2)">SE</value>
+    <value condition="!Skin.String(MenuDesign_Bottom)">DEFAULT</value>
+	<value condition="Skin.String(MenuDesign_Bottom,1)">Center</value>
+	<!--<value condition="Skin.String(DialogKaiToastPos,2)">SE</value>
 	<value condition="Skin.String(DialogKaiToastPos,3)">N</value>
 	<value condition="Skin.String(DialogKaiToastPos,4)">NW</value>
-	<value condition="Skin.String(DialogKaiToastPos,5)">NE</value>
+	<value condition="Skin.String(DialogKaiToastPos,5)">NE</value>-->
   </variable>
   
   <variable name="ReloadSkin_check">

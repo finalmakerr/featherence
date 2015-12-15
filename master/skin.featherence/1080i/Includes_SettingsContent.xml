@@ -16,7 +16,6 @@
 	<item id="22" description="מיקום">
 		<label>$LOCALIZE[74446]</label>
 		<onclick>noop</onclick>
-		<visible>Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2)</visible>
 	</item>
 	
 	<item id="23" description="צבעים">
@@ -455,10 +454,10 @@
 	  </item>
 	  
 	  <item id="234" description="שקיפות (תפריט אמצע)">
-		<label>$LOCALIZE[78215] ($LOCALIZE[74436])</label>
+		<label>$LOCALIZE[78215] ($LOCALIZE[31034])</label>
 		<label2>$INFO[Skin.String(CenterMenuOverlay)]</label2>
 		<thumb>misc/help/CenterMenuOverlay.png</thumb>
-		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[74436][CR]$LOCALIZE[74437].</property>
+		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[31034][CR]$LOCALIZE[74437].</property>
 		<onclick condition="Skin.String(CenterMenuOverlay, )">Skin.SetString(CenterMenuOverlay, 100)</onclick>
 		<onclick condition="Skin.String(CenterMenuOverlay, 100)">Skin.SetString(CenterMenuOverlay, 95)</onclick>
 		<onclick condition="Skin.String(CenterMenuOverlay, 95)">Skin.SetString(CenterMenuOverlay, 90)</onclick>
@@ -631,6 +630,21 @@
 		<onclick condition="Skin.String(DialogKaiToastPos,4)">Skin.SetString(DialogKaiToastPos,5)</onclick>
 		<onclick condition="Skin.String(DialogKaiToastPos,5)">Skin.SetString(DialogKaiToastPos,)</onclick>
 		<onclick condition="!Window.IsVisible(DialogKaiToast.xml)">Notification(Test, ($INFO[Skin.String(DialogKaiToastPos)]),1000)</onclick>
+		<visible>Container(100).Hasfocus(22) + false</visible>
+	  </item>
+	  
+	  <item id="291" description="Reposition Dialog Yes/No, OK, Busy, Progress...">
+		<label>Reposition Dialog Yes/No, OK, Busy, Progress...</label>
+		<label2>$VAR[290label2]</label2>
+		<thumb></thumb>
+		<property name="rinfo"></property>
+		<onclick condition="!Skin.String(MenuDesign_Bottom)">Skin.SetString(MenuDesign_Bottom,1)</onclick>
+		<onclick condition="Skin.String(MenuDesign_Bottom,1)">Skin.SetString(MenuDesign_Bottom,)</onclick>
+		<!--<onclick condition="Skin.String(MenuDesign_Bottom,2)">Skin.SetString(MenuDesign_Bottom,3)</onclick>
+		<onclick condition="Skin.String(MenuDesign_Bottom,3)">Skin.SetString(MenuDesign_Bottom,4)</onclick>
+		<onclick condition="Skin.String(MenuDesign_Bottom,4)">Skin.SetString(MenuDesign_Bottom,5)</onclick>
+		<onclick condition="Skin.String(MenuDesign_Bottom,5)">Skin.SetString(MenuDesign_Bottom,)</onclick>-->
+		<onclick condition="!Window.IsVisible(DialogKaiToast.xml)">RunScript(script.featherence.service,,?mode=32&amp;value=2)</onclick>
 		<visible>Container(100).Hasfocus(22)</visible>
 	  </item>
 	  
@@ -865,13 +879,12 @@
 	  </item>
 	  <item id="39" description="">
 		<label>Featherence Service</label>
-		<label2></label2>
+		<label2>$INFO[System.AddonVersion(script.featherence.service)]</label2>
 		<thumb></thumb>
 		<property name="rinfo"></property>
 		<onclick>Addon.OpenSettings(script.featherence.service)</onclick>
 		<visible>Container(100).Hasfocus(2)</visible>
 	  </item>
-	  
 	  <item id="31" description="הרחבות וידאו">
 		<label>1037</label>
 		<label2></label2>

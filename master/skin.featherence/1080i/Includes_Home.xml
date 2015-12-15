@@ -638,6 +638,7 @@
 	  <control type="group">
 		<animation description="VerticalMenu" condition="[Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="200,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<animation description="VerticalMenu" condition="[Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-170,0" delay="0" time="220" reversible="true">Conditional</animation>
+		<animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
 		<animation condition="[Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | Control.HasFocus(311) | Control.HasFocus(312) | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]]" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
         <control type="image" description="צבע">
 		  <height>100</height>
@@ -741,6 +742,7 @@
     <focusedlayout height="100" width="288">
 	  <control type="group">
 	    <include>SetProperty_Home</include>
+		<animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="0,0" delay="0" time="0" reversible="true">Conditional</animation>
 		<animation description="VerticalMenu" condition="[Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="170,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<animation description="VerticalMenu" condition="[Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-170,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<control type="image" description="צבע">
@@ -812,6 +814,7 @@
 		  <visible>Skin.HasSetting(StrokeButton)</visible>
         </control>
 		<control type="image" description="סמל">
+		  <animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
           <include condition="StringCompare(System.Language,Hebrew)">ImageR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ImageL1</include>
 		  <height>70</height>
@@ -850,6 +853,7 @@
 		  <width>232</width>
         </control>
         <control type="label" description="כותרת נבחר">
+		  <animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
           <animation effect="fade" start="80" end="100" time="220" delay="0">Focus</animation>
           <textcolor>Yellow</textcolor>
 		  <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>

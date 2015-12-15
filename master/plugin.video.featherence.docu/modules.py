@@ -150,8 +150,11 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	
 	'''Giraffe'''
 	list = []
-	list.append('&youtube_ch=UCDJLpRSvaPy8vWn8hZVguSg') 
+	list.append('&youtube_se=Giraffe Docu') 
 	addDir('Giraffe',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+	
+	addDir('TEST','Giraffe Docu',3,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+	addDir('אביתר בנאי','&youtube_se=אביתר בנאי',6,'http://imgur.com/kcLrrGH.jpg','asds','1',"", getAddonFanart(background, custom=""))
 	
 	'''Elephant'''
 	list = []
@@ -189,8 +192,9 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 
 	'''Shark'''
 	list = []
-	list.append('&youtube_ch=UCHThGYhvhgyvTgUkv3n5R_A') 
-	addDir('Shark',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+	#list.append('&youtube_ch=UCHThGYhvhgyvTgUkv3n5R_A') 
+	list.append('&youtube_se2=#shark') 
+	addDir('Shark',list,6,'getAPIdata','getAPIdata','getAPIdata=&youtube_ch=UCHThGYhvhgyvTgUkv3n5R_A',"", getAddonFanart(background, custom="getAPIdata"))
 	
 	'''Snakes'''
 	list = []

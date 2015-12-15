@@ -94,7 +94,7 @@
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
-		  <label>$LOCALIZE[73130]: $INFO[Skin.String(MoviesTVCoversOverlay)]</label>
+		  <label>$LOCALIZE[31030]: $INFO[Skin.String(MoviesTVCoversOverlay)]</label>
 		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)]</enable>
 		  <onclick condition="!Skin.String(MoviesTVCoversOverlay)">Skin.SetString(MoviesTVCoversOverlay, 100)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 100)">Skin.SetString(MoviesTVCoversOverlay, 95)</onclick>
@@ -732,6 +732,12 @@
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <font>size28</font>
 	  <label>$LOCALIZE[518] $LOCALIZE[24063]</label>
+	</control>
+	<control type="radiobutton" id="8" description="Hide broken addons">
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
+	  <label>Hide broken addons</label>
 	</control>
 	<control type="button" id="9" description="Check for updates">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
