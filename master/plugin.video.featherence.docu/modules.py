@@ -81,6 +81,7 @@ def CATEGORIES101(admin):
 	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
 
 	'''Nature Ultra HD'''
+	list = []
 	list.append('&youtube_pl=PL_VFlQR7BSNQTvSG8Ua6rFtS-tyxVenA2')
 	list.append('&youtube_pl=PL_T9MO520krq5QsT1sIHdmBUNodksi8v2')
 	list.append('&youtube_pl=PLdhB2hC90YEsbPuupoVTms5PYM1iDCdDw')
@@ -92,16 +93,19 @@ def CATEGORIES101(admin):
 	addDir("Nature Ultra HD",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))	
  
 	'''Discovery'''
+	list = []
 	list.append('&youtube_ch=DiscoveryNetworks')
 	list.append('&youtube_ch=UCah1A9yF6I0geya0xNPHQfw')
 	addDir("Discovery",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
  
 	'''Nat Geo Wild'''
+	list = []
 	list.append('&youtube_ch=NatGeoWild')
 	list.append('&youtube_ch=UCWiqP_4evlj80g_HzzvToaw')
 	addDir("Nat Geo Wild",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
  
 	'''National Geographic'''
+	list = []
 	list.append('&youtube_ch=NationalGeographic')
 	list.append('&youtube_ch=UC1KCUsWsce0B6kXMv10bFsg')
 	addDir("National Geographic",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))	
@@ -142,9 +146,9 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 
 	'''Lions'''
 	list = []
-	list.append('&youtube_se=#lion')
-	#list.append('&youtube_pl=PLpYgp0wW8mmZyLCqY415YbjefiazLBHzJ')
-	#list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq')
+	list.append('&youtube_se=#lions')
+	list.append('&youtube_pl=PLpYgp0wW8mmZyLCqY415YbjefiazLBHzJ')
+	list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq')
 	addDir('Lions',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	
@@ -383,14 +387,17 @@ def CATEGORIES102(admin):
 	addDir("youtube space channel's",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
  
 	'''Universe'''
+	list = []
 	list.append('&youtube_ch=UCAP0Ypni5eG56SJT0A0Kwaw')
 	addDir("Universe",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Space'''
+	list = []
 	list.append('&youtube_ch=UCRqAn0M59wxBYyHHuwOXfGA')
 	addDir("Space",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Astronomy'''
+	list = []
 	list.append('&youtube_ch=UCSIJHiTGlBRsdpRf5-fEZaA')
 	addDir("Astronomy",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
@@ -900,7 +907,19 @@ def CATEGORIES108(admin):
 	
 	'''אקראי'''
 	list = []
+	list.append('&youtube_id=eIOvF0MlMe0')
+	list.append('&youtube_id=TOeT5DQSRDc')
+	list.append('&youtube_pl=VGVK6cqjoj6Aeyi2x7yQqo0S9Pq8CkZ')
+	list.append('&youtube_pl=PL51YAgTlfPj6s0QtcgOpIwKewkEeSN77e')
+	list.append('&youtube_id=PLEDEE611B09BB3800')
+	list.append('&youtube_pl=PL51YAgTlfPj7TAvhkV8c9UnnMHUpQy-Bx')
+	list.append('&youtube_pl=PL51YAgTlfPj474gCGLEUa7_Zo5Bxgy9fG')
+	list.append('&youtube_pl=PL51YAgTlfPj4v3ww2jfBb21LiJFh3XSIe')
+	list.append('&youtube_pl=PL51YAgTlfPj6zllZWhjkRCv95Q9LPhRZ2')
+	list.append('&youtube_pl=PL51YAgTlfPj4NGa6HC87lQQL5KfqQTqW3')
 	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
+	
+	
 	
 	'''אפריקה - הסרנגטי'''
 	list = []
@@ -917,7 +936,6 @@ def CATEGORIES108(admin):
 	list.append('&youtube_id=4pBLynGT5ZA')
 	addDir('סיפורים מהסוואנה',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
-
 	'''בית -home'''
 	list = []
 	list.append('&youtube_id=NEnRsTlSsxM')
@@ -943,6 +961,76 @@ def CATEGORIES108(admin):
 	list = []
 	list.append('&youtube_id=watch?v=JsPuREOKvPc')
 	addDir('מים - המסתורין הגדול',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+	
+	'''חיי היונקים'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f032%2f469%2ffanarts%2fmedium%2f3e05ae14af.jpg&mode=seasons&trakt_id=32469'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('חיי היונקים','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''הכוכב האנושי'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f031%2f922%2ffanarts%2fmedium%2f3d9a08eb9f.jpg&mode=seasons&trakt_id=31922'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('הכוכב האנושי','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''עולם מופלא'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f001%2f039%2ffanarts%2fmedium%2f29cc38ac56.jpg&mode=seasons&trakt_id=1039'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('עולם מופלא','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''סיפור החיים'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f081%2f151%2ffanarts%2fmedium%2f64c7db9e96.jpg&mode=seasons&trakt_id=81151'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('סיפור החיים','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+		
+	'''אל תוך היקום עם סטיבן הוקינג'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f032%2f469%2ffanarts%2fmedium%2f3e05ae14af.jpg&mode=seasons&trakt_id=32469'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('אל תוך היקום עם סטיבן הוקינג','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+		
+	'''קוסמוס: מסע לחלל'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f071%2f041%2ffanarts%2fmedium%2fd9e784c61b.jpg&mode=seasons&trakt_id=71041'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('קוסמוס: מסע לחלל','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+		
+	'''מבעד לחור התולעת'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f032%2f758%2ffanarts%2fmedium%2ff3e91f4d2c.jpg&mode=seasons&trakt_id=32758'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('מבעד לחור התולעת','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''הכוכב הכחול'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f013%2f520%2ffanarts%2fmedium%2f7486926229.jpg&mode=seasons&trakt_id=13520'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('הכוכב הכחול','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''חוצה ישראל'''
+	list = []
+	list.append('&youtube_pl=PL51YAgTlfPj4zFxXNjp8UC6nE9ePEQ9Ai')
+	list.append('&youtube_pl=PL127E7734AE7476DD')
+	list.append('&youtube_pl=PL3n39NB10sYkxOj0jlAWVtxGJBkMosU1K')
+	addDir('חוצה ישראל',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+	
+	'''מקבלים שבת'''
+	list = []
+	list.append('&youtube_pl=PLLttfoK87AdVbyvsH-HGmT2on83Y9UzMo')
+	list.append('&youtube_pl=PLLttfoK87AdVbyvsH-HGmT2on83Y9UzMo')
+	list.append('&youtube_pl=PLE1B47D7CC412DC7B')
+	addDir('מקבלים שבת',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''הסטוריה'''
 	list = []
@@ -975,7 +1063,12 @@ def CATEGORIES108(admin):
 	list.append('&youtube_id=PLhAvByb6CVNtiMfk1VQhdycNyOWxYhNUT')
 	addDir('דוקו ישראלי',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
+	'''תרבות-חינוכית'''
+	list = []
+	list.append('&youtube_ch=23Culture')
+	addDir('תרבות-חינוכית',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
+
 	'''ערוץ הגיון ומדע'''
 	list = []
 	list.append('&youtube_ch=ScienceReasonIsrael')
@@ -984,7 +1077,7 @@ def CATEGORIES108(admin):
 	'''אילוף כלבים'''
 	list = []
 	list.append('&youtube_ch=Orenadika73')
-	addDir('בית -home',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+	addDir('אילוף כלבים',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	addon = 'plugin.video.seretil'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
@@ -1013,6 +1106,9 @@ def CATEGORIES10801(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL43AC3544C5E17BEF')
 	addDir('חיות בספארי',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 
+	
+	
+	
 	
 	'''חיות פראיות '''
 	list = []
@@ -1107,6 +1203,18 @@ def CATEGORIES10801(name, iconimage, desc, fanart):
 	list.append('&youtube_id=gO9hyX4s1ko')
 	addDir('לולי אוהב חיות',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 	
+	'''חינוכית לילדים'''
+	list = []
+	list.append('&youtube_ch=The23Kidz')
+	addDir('חינוכית לילדים',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+
+	
+	'''חינוכית בית ספר לשפות'''
+	list = []
+	list.append('&youtube_ch=23language')
+	addDir('חינוכית בית ספר לשפות',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+
+	
 
 def CATEGORIES109(admin):
 	'''------------------------------
@@ -1129,16 +1237,29 @@ def CATEGORIES109(admin):
 	background = 109
 	name = addonString(109).encode('utf-8')
 	
-	'''חיפוש'''
-	addDir(localize(137),'Live Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
 	
-	'''אקראי'''
-	list = []
-	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
 	
-	'''TEST'''
-	addon = 'plugin.video.israelive'
-	addon2 = '/?url=nationalgeographic%3Fmode%3D16&mode=10&name=%5BCOLOR+yellow%5D%5BB%5DNational+Geographic+ABU+DHABI%5B%2FB%5D%5B%2FCOLOR%5D&iconimage=&description=&displayname=National+Geographic+ABU+DHABI&categoryid=10451'
+	'''BBTS'''
+	addon = 'plugin.video.bbts'
+	addon2 = '/?folder=%2fDOCUMENTARIES'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('TEST','plugin://'+addon + addon2,10,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	addDir('BBTS Ducomentaries','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
 	'''---------------------------'''
+	
+	'''ZEUS'''
+	addon = 'plugin.video.zeus'
+	addon2 = '/?description&iconimage=http%3a%2f%2fs6.postimg.org%2fiiswv9g9t%2fdocumentories.png&mode=20&name=%5bCOLOR%20white%5dDOCUMENTARIES%5b%2fCOLOR%5d&url=niRwEAbN'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('ZEUS Ducomentaries','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+
+	
+	'''DogTv'''
+	addon = 'plugin.video.israelive'
+	addon2 = '/?url=plugin%3A%2F%2Fplugin.video.israelive%2F%3Furl%3D3226%26mode%3D1%26ignorefilmonguide%3D1%26filmonmethod%3D1&mode=10&name=%5BCOLOR+yellow%5D%5BB%5DDog+TV%5B%2FB%5D%5B%2FCOLOR%5D&iconimage=http%3A%2F%2Fstatic.filmon.com%2Fcouch%2Fchannels%2F3226%2Fextra_big_logo.png&description=&displayname=Dog+TV&categoryid=10451'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Dog Tv','plugin://'+addon + addon2,10,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+
+
