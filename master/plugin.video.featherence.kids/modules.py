@@ -81,6 +81,7 @@ def CATEGORIES101(admin):
 	'''אוסף שירים בעברית'''
 	list =[]
 	list.append('&youtube_ch=UCfm5IpcgGCooON4Mm2vq40A/playlists')
+	list.append('&youtube_ch=23music')
 	list.append('&youtube_pl=PLFw7KwIWHNB1_mXvYXwqFOw6S026LL3tj')
 	list.append('&youtube_pl=PL62u-p9buEf2WVr1mKj0OgRasxhe-9ZKI')
 	list.append('&youtube_pl=PLF11AD94724D37E02')
@@ -370,8 +371,38 @@ def CATEGORIES104(admin):
 	'''ארתור'''
 	addDir('ארתור',['&sdarot=series_id=461&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f461%2farthur-%d7%90%d7%a8%d7%aa%d7%95%d7%a8-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94', '&youtube_pl=PL17sRM9raf1Q-i_fTe45N0UBqNgdnZTD6', '&youtube_pl=PLN0EJVTzRDL96B86muPPFwgdymQjlwmLZ'],17,'http://www.sdarot.pm/media/series/461.jpg',addonString(104000).encode('utf-8'),'1',50, getAddonFanart(background))
 	
-	'''בילבי'''
+	'''באג בראש'''#10
+	addDir('באג בראש',['&sdarot=series_id=461&series_name=%d7%90%d7%a8%d7%aa%d7%95%d7%a8%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f461%2farthur-%d7%90%d7%a8%d7%aa%d7%95%d7%a8-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94'],17,'http://www.sdarot.pm/media/series/1497.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))	
+	
+	'''בארץ הקטקטים'''#10
+	addDir('בארץ הקטקטים',['&sdarot=season_id=1&series_id=1323&series_name=%d7%91%d7%90%d7%a8%d7%a5%20%d7%94%d7%a7%d7%98%d7%a7%d7%98%d7%99%d7%9d%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1323%2fthe-littl-bits-%d7%91%d7%90%d7%a8%d7%a5-%d7%94%d7%a7%d7%98%d7%a7%d7%98%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/1323.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))	
+	
+	'''בובספוג'''#10
+	addDir('בובספוג',['&sdarot=series_id=490&series_name=%d7%91%d7%95%d7%91%d7%a1%d7%a4%d7%95%d7%92%20%d7%9e%d7%9b%d7%a0%d7%a1%20%d7%9e%d7%a8%d7%95%d7%91%d7%a2%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f490%2fspongebob-squarepants-%d7%91%d7%95%d7%91%d7%a1%d7%a4%d7%95%d7%92-%d7%9e%d7%9b%d7%a0%d7%a1-%d7%9e%d7%a8%d7%95%d7%91%d7%a2-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94'],17,'http://www.sdarot.pm/media/series/490.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''בולי איש השלג'''#10
+	addDir('בולי איש השלג',['&sdarot=season_id=1&series_id=1642&series_name=%d7%91%d7%95%d7%9c%d7%99%20%d7%90%d7%99%d7%a9%20%d7%94%d7%a9%d7%9c%d7%92%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1642%2fbouli-%d7%91%d7%95%d7%9c%d7%99-%d7%90%d7%99%d7%a9-%d7%94%d7%a9%d7%9c%d7%92-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/1642.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''בחצר של פופיק'''#10
+	addDir('בחצר של פופיק',['&sdarot=series_id=1674&series_name=%d7%91%d7%97%d7%a6%d7%a8%20%d7%a9%d7%9c%20%d7%a4%d7%95%d7%a4%d7%99%d7%a7&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1674%2fbahazer-shel-popik-%d7%91%d7%97%d7%a6%d7%a8-%d7%a9%d7%9c-%d7%a4%d7%95%d7%a4%d7%99%d7%a7'],17,'http://www.sdarot.pm/media/series/1674.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''בילבי'''#10
 	addDir('בילבי',['&sdarot=season_id=1&series_id=1159&series_name=%d7%91%d7%99%d7%9c%d7%91%d7%99%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&summary=%d7%91%d7%99%d7%9c%d7%91%d7%99%20%d7%94%d7%99%d7%90%20%d7%99%d7%9c%d7%93%d7%94%20%d7%9e%d7%99%d7%95%d7%97%d7%93%d7%aa%20%d7%91%d7%9e%d7%99%d7%a0%d7%94%20%d7%a9%d7%a2%d7%95%d7%a9%d7%94%20%d7%9b%d7%9c%20%d7%9e%d7%94%20%d7%a9%d7%91%d7%90%20%d7%9c%d7%94.%20%d7%94%d7%99%d7%90%20%d7%97%d7%96%d7%a7%d7%94%20%d7%95%d7%90%d7%9e%d7%99%d7%a6%d7%94%2c%20%d7%97%d7%9b%d7%9e%d7%94%20%d7%9e%d7%9b%d7%95%d7%9c%d7%9d%2c%20%d7%a9%d7%95%d7%91%d7%91%d7%94%20%d7%95%d7%91%d7%9c%d7%92%d7%a0%d7%99%d7%a1%d7%98%d7%99%d7%aa%20%d7%9c%d7%90%20%d7%a7%d7%98%d7%a0%d7%94.%20%d7%94%d7%99%d7%90%20%d7%97%d7%99%d7%94%20%d7%91%d7%95%d7%99%d7%9c%d7%94%20%d7%a2%d7%9d%20%d7%97%d7%91%d7%a8%d7%99%d7%94%3a%20%d7%94%d7%90%d7%97%d7%99%d7%9d%20%d7%98%d7%95%d7%9e%d7%99%20%d7%95%d7%90%d7%a0%d7%99%d7%a7%d7%94%2c%20%d7%94%d7%a7%d7%95%d7%a3%20%22%d7%9e%d7%a8%20%d7%a0%d7%9c%d7%a1%d7%95%d7%9f%22%20%d7%95%d7%94%d7%a1%d7%95%d7%a1%20%d7%a9%d7%9c%d7%94.%20%d7%94%d7%97%d7%91%d7%95%d7%a8%d7%94%20%d7%97%d7%95%d7%95%d7%94%20%d7%94%d7%a8%d7%a4%d7%aa%d7%a7%d7%90%d7%95%d7%aa%20%d7%a8%d7%91%d7%95%d7%aa%20%d7%95%d7%9c%d7%a4%d7%a2%d7%9e%d7%99%d7%9d%20%d7%92%d7%9d%20%d7%9e%d7%a1%d7%aa%d7%91%d7%9b%d7%aa%20%d7%91%d7%a6%d7%a8%d7%95%d7%aa%3b%20%d7%90%d7%91%d7%9c%2c%20%d7%9c%d7%90%20%d7%9c%d7%93%d7%90%d7%95%d7%92%20%d7%91%d7%99%d7%9c%d7%91%d7%99%20%d7%aa%d7%9e%d7%99%d7%93%20%d7%9e%d7%a6%d7%9c%d7%99%d7%97%d7%94%20%d7%9c%d7%94%d7%aa%d7%92%d7%91%d7%a8%20%d7%a2%d7%9c%20%d7%9b%d7%9c%20%d7%94%d7%a7%d7%a9%d7%99%d7%99%d7%9d%20%d7%94%d7%a2%d7%95%d7%9e%d7%93%d7%99%d7%9d%20%d7%91%d7%93%d7%a8%d7%9a%20%d7%91%d7%96%d7%9b%d7%95%d7%aa%20%d7%9b%d7%95%d7%97%d7%95%d7%aa%d7%99%d7%94%20%d7%94%d7%9e%d7%99%d7%95%d7%97%d7%93%d7%99%d7%9d%2c%20%d7%94%d7%90%d7%a0%d7%a8%d7%92%d7%99%d7%94%20%d7%95%d7%94%d7%93%d7%9e%d7%99%d7%95%d7%9f%20%d7%94%d7%9e%d7%a4%d7%95%d7%aa%d7%97%20%d7%a9%d7%9c%d7%94.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1159%2fpippi-longstocking-%d7%91%d7%99%d7%9c%d7%91%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94', '&youtube_id=CBWXP_5gxSw', '&youtube_id=kgLCdl2q8XQ', '&youtube_id=5tc2MzqqHH8', '&youtube_id=L878q4J48L8'],17,'http://www.sdarot.pm/media/series/1159.jpg',addonString(104100),'1',50, getAddonFanart(background))
+	
+	'''בלי סודות'''#10
+	addDir('בלי סודות',['&sdarot=season_id=1&series_id=1143&series_name=%d7%91%d7%9c%d7%99%20%d7%a1%d7%95%d7%93%d7%95%d7%aa&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1143%2fwithout-secrets-%d7%91%d7%9c%d7%99-%d7%a1%d7%95%d7%93%d7%95%d7%aa'],17,'http://www.sdarot.pm/media/series/1143.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''בן 10'''#10
+	addDir('בן 10',['&sdarot=series_id=1614&series_name=%d7%91%d7%9f%2010%20%d7%90%d7%95%d7%9e%d7%a0%d7%99%d7%91%d7%a8%d7%a1%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1614%2fben-10-omniverse-%d7%91%d7%9f-10-%d7%90%d7%95%d7%9e%d7%a0%d7%99%d7%91%d7%a8%d7%a1-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/1614.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''בנות הים פיצ'י פיצ'י פיץ'''#10
+	addDir("בנות הים פיצ'י פיצ'י פיץ",['&sdarot=series_id=550&series_name=%d7%91%d7%a0%d7%95%d7%aa%20%d7%94%d7%99%d7%9d%20%d7%a4%d7%99%d7%a6%27%d7%99%20%d7%a4%d7%99%d7%a6%27%d7%99%20%d7%a4%d7%99%d7%a5%27%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f550%2fmermaid-melody-pichi-pichi-pitch-%d7%91%d7%a0%d7%95%d7%aa-%d7%94%d7%99%d7%9d-%d7%a4%d7%99%d7%a6-%d7%99-%d7%a4%d7%99%d7%a6-%d7%99-%d7%a4%d7%99%d7%a5-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94'],17,'http://www.sdarot.pm/media/series/550.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''ג'רג מלך הג'ונגל'''#10
+	addDir("ג'ורג מלך הג'ונגל",['&sdarot=series_id=1909&series_name=%d7%92%27%d7%95%d7%a8%d7%92%27%20%d7%9e%d7%9c%d7%9a%20%d7%94%d7%92%27%d7%95%d7%a0%d7%92%d7%9c%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1909%2fgeorge-of-the-jungle-%d7%92-%d7%95%d7%a8%d7%92-%d7%9e%d7%9c%d7%9a-%d7%94%d7%92-%d7%95%d7%a0%d7%92%d7%9c-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94'],17,'http://www.sdarot.pm/media/series/1909.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''גברת פלפלת'''#10
+	addDir('גברת פלפלת',['&sdarot=season_id=1&series_id=1314&series_name=%d7%92%d7%91%d7%a8%d7%aa%20%d7%a4%d7%9c%d7%a4%d7%9c%d7%aa%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1314%2flittle-mrs-pepperpot-%d7%92%d7%91%d7%a8%d7%aa-%d7%a4%d7%9c%d7%a4%d7%9c%d7%aa-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/1314.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''דורימון'''
 	list = []
@@ -389,6 +420,18 @@ def CATEGORIES104(admin):
 	
 	'''הדבורה מאיה'''
 	addDir('הדבורה מאיה',['&sdarot=season_id=1&series_id=668&series_name=%d7%94%d7%93%d7%91%d7%95%d7%a8%d7%94%20%d7%9e%d7%90%d7%99%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary=%d7%9e%d7%90%d7%99%d7%94%20%d7%94%d7%99%d7%90%20%d7%93%d7%91%d7%95%d7%a8%d7%94%20%d7%9e%d7%a8%d7%93%d7%a0%d7%99%d7%aa%2c%20%d7%a1%d7%a7%d7%a8%d7%a0%d7%99%d7%aa%20%d7%95%d7%a9%d7%95%d7%91%d7%91%d7%94.%20%d7%94%d7%99%d7%90%20%d7%a2%d7%95%d7%96%d7%91%d7%aa%20%d7%90%d7%aa%20%d7%94%d7%9b%d7%95%d7%95%d7%a8%d7%aa%20%d7%9b%d7%93%d7%99%20%d7%9c%d7%a6%d7%90%d7%aa%20%d7%9c%d7%98%d7%99%d7%95%d7%9c%20%d7%91%d7%a2%d7%95%d7%9c%d7%9d%20%d7%99%d7%97%d7%93%20%d7%a2%d7%9d%20%d7%94%d7%93%d7%91%d7%95%d7%a8%d7%95%d7%9f%20%d7%95%d7%95%d7%99%d7%9c%d7%99.%20%d7%94%d7%a9%d7%a0%d7%99%d7%99%d7%9d%20%d7%a2%d7%95%d7%91%d7%a8%d7%99%d7%9d%20%d7%94%d7%a8%d7%a4%d7%aa%d7%a7%d7%90%d7%95%d7%aa%20%d7%a7%d7%a1%d7%95%d7%9e%d7%95%d7%aa%20%d7%95%d7%a4%d7%95%d7%92%d7%a9%d7%99%d7%9d%20%d7%97%d7%91%d7%a8%d7%99%d7%9d%20%d7%91%d7%93%d7%a8%d7%9a%20%d7%97%d7%93%d7%a9%d7%99%d7%9d.%20%d7%9e%d7%90%d7%99%d7%94%20%d7%97%d7%95%d7%96%d7%a8%d7%aa%20%d7%9c%d7%9b%d7%95%d7%95%d7%a8%d7%aa%20%d7%97%d7%96%d7%a7%d7%94%20%d7%95%d7%97%d7%9b%d7%9e%d7%94%20%d7%94%d7%a8%d7%91%d7%94%20%d7%99%d7%95%d7%aa%d7%a8.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f668%2fmaya-the-bee-%d7%94%d7%93%d7%91%d7%95%d7%a8%d7%94-%d7%9e%d7%90%d7%99%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&youtube_pl=PLfcYs4SRZfuKJs0CL98BF0_OOGRWlmpdQ'],17,'http://tochka.bg/uploads/ckfinder/images/maya_the_bee.png',addonString(100).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''הובוס ספר הקסמים הגדול'''#10
+	addDir('הובוס ספר הקסום הגדול',['&sdarot=season_id=1&series_id=1532&series_name=%d7%94%d7%95%d7%91%d7%95%d7%a1%20%d7%a1%d7%a4%d7%a8%20%d7%94%d7%a7%d7%a1%d7%9e%d7%99%d7%9d%20%d7%94%d7%92%d7%93%d7%95%d7%9c%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1532%2fthe-ultimate-book-of-spells-%d7%94%d7%95%d7%91%d7%95%d7%a1-%d7%a1%d7%a4%d7%a8-%d7%94%d7%a7%d7%a1%d7%9e%d7%99%d7%9d-%d7%94%d7%92%d7%93%d7%95%d7%9c-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/1532.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''היו היה'''
+	list = []
+	list.append('&sdarot=series_id=418&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%94%d7%90%d7%93%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f418%2fonce-upon-a-time-man-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%94%d7%90%d7%93%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
+	list.append('&sdarot=series_id=440&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%94%d7%97%d7%99%d7%99%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f440%2fonce-upon-a-time-life-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%94%d7%97%d7%99%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	list.append('&sdarot=series_id=803&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%94%d7%97%d7%9c%d7%9c%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f803%2fonce-upon-a-time-space-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%94%d7%97%d7%9c%d7%9c-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	list.append('&sdarot=series_id=575&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%9b%d7%93%d7%95%d7%a8%20%d7%94%d7%90%d7%a8%d7%a5%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f575%2fonce-upon-a-time-planet-earth-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%9b%d7%93%d7%95%d7%a8-%d7%94%d7%90%d7%a8%d7%a5-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	list.append('&sdarot=series_id=785&series_name=%d7%94%d7%99%d7%94%20%d7%94%d7%99%d7%94%20%3a%20%d7%9e%d7%9e%d7%a6%d7%99%d7%90%d7%99%d7%9d%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f785%2fonce-upon-a-time-the-discoverers-%d7%94%d7%99%d7%94-%d7%94%d7%99%d7%94-%d7%9e%d7%9e%d7%a6%d7%99%d7%90%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir("היו היה",list,17,'http://msc.wcdn.co.il/archive/1239471-54.jpg',addonString(110).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''הדרדסים'''
 	list =[]
@@ -409,6 +452,15 @@ def CATEGORIES104(admin):
 	
 	'''החתולים הסמוראים'''
 	addDir("החתולים הסמוראים",['&youtube_pl=PLR7DTcU2p0QhPmznEmitRHkv5RcUG3E-s'],17,'http://www.sdarot.pm/media/series/1147.jpg',"כשרובוט גרעיני עתיר ממדים קופץ לבקר בעירכם, למי תקראו? לחתולים הסמוראים!! פעולה, בידור והרבה אנשובי, הם המרכיבים העיקרים לרקיחת סדרת הרפתקאות מרגשות של חבורת החתולים הסמוראים, שוחרי הפיצה. כאשר הם אינם עסוקים בהצלת העולם מציפורניהם של אדוני הרשע והפשע, מנהלים החתולים הלוחמניים בית פיצה. אבל כל אימת שהרשע נושא אל-על את ראשו' הופכת הפיצריה החתולית למטה היי-טקי מתוחכם." + '[CR]' + 'מחמ"לם המצוייד, שולפים החתולים את ציפורניהם המושחזות ונכנסים לפעולה מהירה.','1',50, getAddonFanart(background))
+	
+	'''הלב'''#10
+	addDir('הלב',['&sdarot=season_id=1&series_id=745&series_name=%d7%94%d7%9c%d7%91%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f745%2fmarco-%d7%94%d7%9c%d7%91-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/745.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''המומינים'''#10
+	addDir('המומינים',['&sdarot=season_id=1&series_id=366&series_name=%d7%94%d7%9e%d7%95%d7%9e%d7%99%d7%a0%d7%99%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f366%2fthe-moomins-%d7%94%d7%9e%d7%95%d7%9e%d7%99%d7%a0%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/366.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''המופע של לולו'''#10
+	addDir('המופע של לולו',['&sdarot=season_id=1&series_id=460&series_name=%d7%94%d7%9e%d7%95%d7%a4%d7%a2%20%d7%a9%d7%9c%20%d7%9c%d7%95%d7%9c%d7%95%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f460%2fthe-little-lulu-show-%d7%94%d7%9e%d7%95%d7%a4%d7%a2-%d7%a9%d7%9c-%d7%9c%d7%95%d7%9c%d7%95-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/460.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''הקטקטים'''
 	list =[]
@@ -512,8 +564,7 @@ def CATEGORIES104(admin):
 	list.append('&youtube_pl=PLR7DTcU2p0QhDzYbbniDNwSbXUM_p6N3f')
 	list.append('&youtube_pl=PLR7DTcU2p0QgEdLPHhrhKtxElvYVrseAQ')
 	list.append('&youtube_pl=PLR7DTcU2p0QhNGUffSgu8_5dP3lnOGZTx')
-	list.append('&sdarot=season_id=1&series_id=1810&series_name=%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95%20%d7%97%d7%95%d7%a7%d7%99%20%d7%94%d7%92%27%d7%95%d7%a0%d7%92%d7%9c&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1810%2fkofiko-jungle-laws-%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95-%d7%97%d7%95%d7%a7%d7%99-%d7%94%d7%92-%d7%95%d7%a0%d7%92%d7%9c')
-	list.append('&sdarot=series_id=422&series_name=%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f422%2fkofiko-%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95')
+	#list.append('&sdarot=season_id=1&series_id=1810&series_name=%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95%20%d7%97%d7%95%d7%a7%d7%99%20%d7%94%d7%92%27%d7%95%d7%a0%d7%92%d7%9c&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1810%2fkofiko-jungle-laws-%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95-%d7%97%d7%95%d7%a7%d7%99-%d7%94%d7%92-%d7%95%d7%a0%d7%92%d7%9c', '&sdarot=series_id=422&series_name=%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f422%2fkofiko-%d7%a7%d7%95%d7%a4%d7%99%d7%a7%d7%95')
 	addDir('קופיקו',list,17,'http://www.sdarot.pm/media/series/422.jpg',addonString(104070).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''קספר'''
@@ -573,6 +624,8 @@ def CATEGORIES104(admin):
 	'''סדרות לילדים באנגלית 2''' #NOT WORKING!
 	if admin and not admin2: addDir('test','https://dl.dropboxusercontent.com/s/cwcptnocx310g00/Merry_Melodies.plx',7,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzwydiY6V_l5sE_ed7Rf66G6B8Ug2p7ajn4uPAhH2NYpDVMNBUQ','','1',"", getAddonFanart(background))
 	
+	'''עוד סדרות ילדים'''
+	if General_TrustedOnly == "true" or admin: addDir('עוד סדרות ילדים',['&sdarot=module=http%3a%2f%2fwww.sdarot.pm%2fseries%2fgenre%2f38%d7%99%d7%9c%d7%93%d7%99%d7%9d&url=all-heb'],6,'http://www.sdarot.pm/templates/frontend/2014/images/logo.png',"עוד סדרות ילדים מההרחבה סדרות.TV בחינם [CR]כל הסדרות מכל השנים בשפה העברית לילדים הישראלים בחינם",'1',50, getAddonFanart(background))
 	'''test'''
 	#addDir("test",'http://www.navixtreme.com/wiilist/all.plx?page=4',7,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzwydiY6V_l5sE_ed7Rf66G6B8Ug2p7ajn4uPAhH2NYpDVMNBUQ','','1',"", getAddonFanart(background))	
 	
@@ -649,14 +702,12 @@ def CATEGORIES106(admin):
 	list =[]
 	list.append('&youtube_pl=PLvadvyUkv4iFxFnsG0i1mLhuvR5nQBUcf')
 	list.append('&youtube_pl=PLFB481A7458E12A61')
-	#list.append('&youtube_')
-	#list.append('&youtube_')
+	list.append('&youtube_')
+	list.append('&youtube_')
 	addDir('בייבי איינשטיין',list,17,'http://d202m5krfqbpi5.cloudfront.net/books/1170326163l/46377.jpg',addonString(120).encode('utf-8'),'1',50, getAddonFanart(background)) #TerrapinStation5
 	
 	'''בייבי'''
-	list = []
-	list.append('&youtube_ch=UCj10fKNd5h64J_M9YIQu0Zw/playlists')
-	addDir('בייבי',list,17,'http://yt3.ggpht.com/-RYFi0L82fh4/AAAAAAAAAAI/AAAAAAAAAAA/1hhzmsuRybc/s88-c-k-no/photo.jpg',addonString(131).encode('utf-8'),'1',50, getAddonFanart(background))
+	addDir('בייבי','UCj10fKNd5h64J_M9YIQu0Zw/playlists',9,'http://yt3.ggpht.com/-RYFi0L82fh4/AAAAAAAAAAI/AAAAAAAAAAA/1hhzmsuRybc/s88-c-k-no/photo.jpg',addonString(131).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''אוצר מילים עם נוני'''
 	list =[]
@@ -804,7 +855,6 @@ def CATEGORIES106(admin):
 	addDir('צופי',['&youtube_pl=PL5kivPlEfMCTa3yiShQstAKsvzsdZIbkx', '&youtube_id=FKRVfhMczq8'],17,'https://yt3.ggpht.com/-W1ddvq5_0Qc/AAAAAAAAAAI/AAAAAAAAAAA/Z5zjTR71Ro0/s100-c-k-no/photo.jpg','','1',50, getAddonFanart(background))
 	
 	'''צרלי ודודו'''
-	#נוצר על ידי לידור מליח
 	list =[]
 	list.append('&youtube_')
 	list.append('&youtube_')
@@ -860,7 +910,7 @@ def CATEGORIES107(admin):
 	'''בוב הבנאי'''
 	addDir(addonString(10707).encode('utf-8'),['&youtube_pl=PL_8KXLhQVQMK80XCn7g3qVj7RwhrwiGHG'],17,'http://www.moviesforkids.co.il/images/MainCatMovies/%D7%91%D7%95%D7%91-%D7%94%D7%91%D7%A0%D7%90%D7%99.jpg',addonString(107070).encode('utf-8'),'1',50, getAddonFanart(background))
 	
-	'''בולי איש השלג'''
+	''' איש השלג'''
 	list = []
 	list.append('&sdarot=season_id=1&series_id=1642&series_name=%d7%91%d7%95%d7%9c%d7%99%20%d7%90%d7%99%d7%a9%20%d7%94%d7%a9%d7%9c%d7%92%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1642%2fbouli-%d7%91%d7%95%d7%9c%d7%99-%d7%90%d7%99%d7%a9-%d7%94%d7%a9%d7%9c%d7%92-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 	list.append('&youtube_id=2j2ISqZ40GU')
@@ -985,10 +1035,9 @@ def CATEGORIES107(admin):
 	'''פליפר ולופקה'''
 	list = []
 	list.append('&sdarot=series_id=1153&series_name=%d7%a4%d7%9c%d7%99%d7%a4%d7%a8%20%d7%95%d7%9c%d7%95%d7%a4%d7%a7%d7%94%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1153%2fflipper-and-lopaka-%d7%a4%d7%9c%d7%99%d7%a4%d7%a8-%d7%95%d7%9c%d7%95%d7%a4%d7%a7%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
-	list.append('&sdarot=series_id=1153&series_name=%d7%a4%d7%9c%d7%99%d7%a4%d7%a8%20%d7%95%d7%9c%d7%95%d7%a4%d7%a7%d7%94%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1153%2fflipper-and-lopaka-%d7%a4%d7%9c%d7%99%d7%a4%d7%a8-%d7%95%d7%9c%d7%95%d7%a4%d7%a7%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
 	list.append('&youtube_pl=PLerEkB0tFW3aCqMAK0gzZkkF0QjxQx-4h')
 	list.append('&youtube_pl=PLerEkB0tFW3brFpEnqz3N4vU6L4NUBQi3')
-	addDir(addonString(10765).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1153.jpg','וכבי סדרת האנימציה המדובבת לעברית, המתרחשת באי טרופי קסום ואידילי הם הדולפין פליפר והילד לופקה שהפכו לחברים טובים לאחר שפליפר הציל את לופקה מטביעה באוקיינוס.[CR]פליפר ולופקה, יחד עם החבורה האמיצה שלהם, יוצאים להרפתקאות מרתקות ונלחמים בכוחות הרוע שבראשם התמנון הענק והמרושע דקסטר ושומרי ראשו הכרישים חסרי המוח.','1',50, getAddonFanart(background))
+	addDir(addonString(10765).encode('utf-8'),list,6,'http://www.sdarot.pm/media/series/1153.jpg','וכבי סדרת האנימציה המדובבת לעברית, המתרחשת באי טרופי קסום ואידילי הם הדולפין פליפר והילד לופקה שהפכו לחברים טובים לאחר שפליפר הציל את לופקה מטביעה באוקיינוס.[CR]פליפר ולופקה, יחד עם החבורה האמיצה שלהם, יוצאים להרפתקאות מרתקות ונלחמים בכוחות הרוע שבראשם התמנון הענק והמרושע דקסטר ושומרי ראשו הכרישים חסרי המוח.','1',50, getAddonFanart(background))
 	
 	'''צ'פצ'ולה' - מיכל כלפון'''
 	addDir(addonString(10768).encode('utf-8'),['&youtube_ch=UC64wDQFgTq9RpI1P8_p-SxA', '&youtube_id=_Jsa4Ml77-I', '&youtube_id=BduVyZALCYs', '&wallaNew=item_id%3D2728301', '&wallaNew=item_id%3D2728353'],17,'http://yt3.ggpht.com/-4Rd1GQEZnaM/AAAAAAAAAAI/AAAAAAAAAAA/pfQtiUaNjng/s88-c-k-no/photo.jpg',addonString(107680).encode('utf-8'),'1',50, getAddonFanart(background))
@@ -1431,5 +1480,4 @@ def CATEGORIES10907(name, iconimage, desc, fanart):
 #add_cat("דורה ודייגו", "PLqx6fN1abed4oHQ2Y5xadY-ILjzFdoMNM")
 #add_cat("פסטיגל", "PLwimDnICcPKPL4MdOLIQrGDMTOAshuQ2l")
 #add_cat("מיקי", "PLwimDnICcPKP4vFp6zklqeNUSdq08mN1H")
-
 
