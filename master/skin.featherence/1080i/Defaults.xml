@@ -49,6 +49,8 @@
     <pagecontrol>61</pagecontrol>
     <pulseonselect></pulseonselect>
 	<autoscroll tween="sine" easing="out" delay="2000" time="2500" repeat="2000">True</autoscroll>
+	<aligny>top</aligny>
+	<wrapmultiline>true</wrapmultiline>
   </default>
   <default type="image">
     <posx>0</posx>

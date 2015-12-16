@@ -181,6 +181,12 @@
      <animation effect="fade" end="0" time="100">Hidden</animation>
    </include>
    
+   <include name="MenuDesign_Home_itemlayout">
+      <animation description="Slide 1080" condition="Window.IsVisible(Home.xml) + !Skin.HasSetting(HomeFanartHalfScreen) + !Skin.HasSetting(FixedUnFocusButtonsTransperancy) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus | IntegerGreaterThan(Container(9000).NumItems,5)] + System.IdleTime(7)" effect="slide" start="0,0" end="0,1080" delay="3000" time="700" reversible="true">Conditional</animation>
+	  <animation description="Fade 1" condition="!Skin.HasSetting(FixedUnFocusButtonsTransperancy) + [[Control.HasFocus(311) | Control.HasFocus(312) | IntegerGreaterThan(Container(9000).NumItems,5)] + System.IdleTime(3)]" effect="fade" start="100" end="70" time="220" reversible="true">Conditional</animation>
+	  <animation description="Fade 2" condition="[Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | !Skin.HasSetting(FixedUnFocusButtonsTransperancy) + [[Control.HasFocus(311) | Control.HasFocus(312) | IntegerGreaterThan(Container(9000).NumItems,5)] + System.IdleTime(7)]]" effect="fade" start="70" end="40" time="220" reversible="true">Conditional</animation>
+   </include>
+   
    <include name="Fade_IconOverlayButton">
      <animation condition="!Skin.String(IconOverlayButton)" effect="fade" end="30" time="0">Conditional</animation>
 	 
@@ -324,7 +330,7 @@
    
    <include name="Fade_BackgroundOverlay">
      <fadetime>220</fadetime>
-     <animation condition="!Skin.String(BackgroundOverlay)" effect="fade" end="40" time="0">Conditional</animation>
+     <animation condition="!Skin.String(BackgroundOverlay)" effect="fade" end="70" time="0">Conditional</animation>
 	 
      <animation condition="Skin.String(BackgroundOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
 	 <animation condition="Skin.String(BackgroundOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>

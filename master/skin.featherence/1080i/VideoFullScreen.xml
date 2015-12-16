@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2005" description="חלון קידוד וידאו">
   <defaultcontrol>-</defaultcontrol>
-  <onload condition="IsEmpty(Window(home).Property(mode10))">RunScript(script.featherence.service,,?mode=10)</onload>
+  <onload condition="IsEmpty(Window(home).Property(mode10))">AlarmClock(mode10,RunScript(script.featherence.service,,?mode=10),00:02,silent)</onload>
   <controls>
     <control type="group">
       <visible>!Window.IsActive(DialogFullscreenInfo.xml)</visible>

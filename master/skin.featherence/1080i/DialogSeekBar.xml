@@ -198,48 +198,9 @@
 			<animation effect="slide" start="0,300" end="0,0" time="200">VisibleChange</animation>
 		</control>-->
 		<include>featherencepause</include>
-
-		<control type="grouplist" description="תצוגה קדימה/אחורה">
-			<left>30</left>
-			<top>930</top>
-			<width>748</width>
-			<height>150</height>
-			<itemgap>10</itemgap>
-			<orientation>horizontal</orientation>
-			<include>Fade20</include>
-			<visible>Player.Forwarding | Player.Rewinding</visible>
-			<usecontrolcoords>true</usecontrolcoords>
-			<control type="image">
-				<top>3</top>
-				<width>90</width>
-				<height>87</height>
-				<aspectratio>keep</aspectratio>
-				<texture flipx="true">osd/ff.png</texture>
-				<colordiffuse>FFe5e5e5</colordiffuse>
-				<animation effect="fade" start="100" end="60" time="800" pulse="true" condition="true">Conditional</animation>
-				<visible>Player.Rewinding</visible>
-			</control>
-			<control type="label">
-				<label>$VAR[VideoPlayerForwardRewindVar]</label>
-				<width min="10" max="300">auto</width>
-				<height>90</height>
-				<textoffsetx>0</textoffsetx>
-				<aligny>center</aligny>
-				<font>size112</font>
-				<shadowcolor>44000000</shadowcolor>
-				<textcolor>DDe5e5e5</textcolor>
-			</control>
-			<control type="image">
-				<top>3</top>
-				<width>90</width>
-				<height>87</height>
-				<aspectratio>keep</aspectratio>
-				<texture>osd/ff.png</texture>
-				<colordiffuse>FFe5e5e5</colordiffuse>
-				<animation effect="fade" start="100" end="60" time="800" pulse="true" condition="true">Conditional</animation>
-				<visible>Player.Forwarding</visible>
-			</control>
-		</control>
+		
+		<include>ForwardingRewinding</include>
+		
 		<include>TopInformation</include>
 	</controls>
 </window>

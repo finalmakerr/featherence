@@ -56,6 +56,14 @@
 		  <onclick condition="Control.IsVisible(57)">Skin.ToggleSetting(ShowDVDCases)</onclick>
 		  <onclick condition="Control.IsVisible(54) | Control.IsVisible(58)">Skin.ToggleSetting(ShowDVDCases2)</onclick>
         </control>
+		<control type="radiobutton" id="101" description="ShowDVDdisc">
+          <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31042]</label>
+		  <selected>!Skin.HasSetting(ShowDVDdisc)</selected>
+		  <onclick>Skin.ToggleSetting(ShowDVDdisc)</onclick>
+        </control>
 		<control type="radiobutton" id="102" description="ShowTopVideoInformation">
           <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
@@ -1032,6 +1040,34 @@
 	   </control>
 	 </control>
    </include>
+  <include name="ShowDVDdisc">
+    <control type="group">
+	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster))" effect="slide" start="0,0" end="0,180" delay="4000" time="700">Conditional</animation>
+	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster))" effect="rotate" center="auto" start="0" end="360" time="10000" loop="true" delay="4000" reversible="false">Conditional</animation>
+	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster))" effect="fade" start="0" end="100" delay="4000" time="220">Conditional</animation>
+	  <height>160</height>
+	  <posx>13</posx>
+	  <posy>60</posy>
+	  <width>161</width>
+	  <visible>!Skin.HasSetting(ShowDVDdisc) + !IsEmpty(Control.GetLabel(1104))</visible>
+	  <visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+	  <control type="image" description="דיסק אמיתי">
+	     <aspect>keep</aspect>
+		 <texture colordiffuse="" diffuse="misc/dvdcases/disc.png">$INFO[ListItem.Art(discart)]</texture>
+		 <visible>!IsEmpty(ListItem.Art(discart))</visible>
+	   </control>
+	   <control type="image" description="דיסק מפוסטר">
+	     <aspect>keep</aspect>
+		 <texture background="true" colordiffuse="" diffuse="misc/dvdcases/disc.png">$INFO[Control.GetLabel(1104)]</texture>
+		 <visible>IsEmpty(ListItem.Art(discart))</visible>
+	   </control>
+	   <control type="image">
+		  <aspect>scale</aspect>
+		  <texture background="true" colordiffuse="70BBBBBB">misc/dvdcases/disc2.png</texture>
+		  <texture>misc/dvdcases/disc2.png</texture>
+	   </control>
+	</control>
+  </include>
   <include name="FileManagerButton">
     <control type="button" id="103" description="מנהל קבצים">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>

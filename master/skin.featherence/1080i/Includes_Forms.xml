@@ -82,16 +82,20 @@
   <include name="LabelC1" description="">
     <align>center</align>
 	<font>size28</font>
+	<shadowcolor>black</shadowcolor>
+	<textcolor>White2</textcolor>
   </include>
   <include name="LabelL1" description="">
     <align>left</align>
 	<font>size28</font>
 	<textcolor>White2</textcolor>
+	<shadowcolor>black</shadowcolor>
   </include>
   <include name="LabelR1" description="">
     <align>right</align>
 	<font>size28</font>
 	<textcolor>White2</textcolor>
+	<shadowcolor>black</shadowcolor>
   </include>
   <include name="LabelJ1" description="">
 	<align>justify</align>
@@ -101,6 +105,7 @@
   
   <include name="LabelC2" description="(טקסט2)">
     <align>center</align>
+	<aligny>top</aligny>
 	<font>size24</font>
   </include>
   <include name="LabelL2" description="(טקסט1-מיוחד)">
@@ -181,8 +186,22 @@
 	<shadowcolor>Black</shadowcolor>
 	<textcolor>White2</textcolor>
   </include>
+  <include name="LabelL12" description="(כותרת3)">
+    <align>left</align>
+	<aligny>center</aligny>
+	<font>size24B</font>
+	<shadowcolor>Black</shadowcolor>
+	<textcolor>White2</textcolor>
+  </include>
   <include name="LabelC12" description="(כותרת3)">
     <align>center</align>
+	<aligny>center</aligny>
+	<font>size24B</font>
+	<shadowcolor>Black</shadowcolor>
+	<textcolor>White2</textcolor>
+  </include>
+  <include name="LabelR12" description="(כותרת3)">
+    <align>right</align>
 	<aligny>center</aligny>
 	<font>size24B</font>
 	<shadowcolor>Black</shadowcolor>
@@ -302,6 +321,12 @@
 	<textwidth>400</textwidth>
   </include>
   
+  <include name="AddonSettings_he" description="()">
+    <align>left</align>
+	<textoffsetx>40</textoffsetx>
+	<textwidth>500</textwidth>
+  </include>
+  
   <include name="ButtonTopInformation" description="פס עליון">
     <texture border="20" colordiffuse="$VAR[TopInformationColor]">buttons/ButtonC0.png</texture>
   </include>
@@ -384,5 +409,23 @@
    </include>
    <include name="Control_Pos41" description="">
 	 <posy>26</posy>
+   </include>
+   
+   <include name="Control_Pos42" description="">
+	 <height>784</height>
+   </include>
+   <include name="Control_Pos43" description="">
+	 <posx>0</posx>
+	 <posy>0</posy>
+	 <height>1100</height>
+	 <width>270</width>
+   </include>
+   <include name="Control_Pos44" description="">
+     <height>1100</height>
+	 <posy>0</posy>
+	 <width>280</width>
+   </include>
+   <include name="Control_Pos45" description="">
+	 <posx>270</posx>
    </include>
 </includes>

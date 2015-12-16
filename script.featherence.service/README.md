@@ -158,13 +158,13 @@ RunScript(script.featherence.service,,?mode=25)
 	```
 	
 	```
-	SDAROT TV VIDEO
+	SDAROT TV ADDON
 	FEATHERENCE: MODE 5/6/17 | URL = &sdarot=text
 	TIP: use ctrl+shift+P on the preferred location!
 	```
 	
 	```
-	WALLA NEW VIDEO
+	WALLA NEW ADDON
 	FEATHERENCE: MODE 5/6/17 | URL = &wallaNew=text
 	TIP: use ctrl+shift+P on the preferred location!
 	```

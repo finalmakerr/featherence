@@ -209,7 +209,7 @@
 	  <item id="215" description="עיצוב תפריט">
 		<label>$LOCALIZE[78014]</label>
 		<label2>$VAR[215label2]</label2>
-		<thumb></thumb>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/cubes.png</thumb>
 		<property name="rinfo">$LOCALIZE[76206]</property>
 		<onclick condition="!Skin.String(MenuDesign)">Skin.SetString(MenuDesign,1)</onclick>
 		<onclick condition="Skin.String(MenuDesign,1)">Skin.SetString(MenuDesign,2)</onclick>
@@ -226,7 +226,7 @@
 	  <item id="220" description="פאנארט-בית פעיל">
 		<label>$LOCALIZE[20445]-$LOCALIZE[10000] $LOCALIZE[305]</label>
 		<label2>$VAR[220label2]</label2>
-		<thumb></thumb>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/image.png</thumb>
 		<property name="rinfo">$LOCALIZE[76207]</property>
 		<onclick>Skin.ToggleSetting(background)</onclick>
 		<visible>Container(100).Hasfocus(20)</visible>
@@ -237,7 +237,7 @@
 		
 		<label>$LOCALIZE[78215] ($LOCALIZE[20445]-$LOCALIZE[10000])</label>
 		<label2>$INFO[Skin.String(BackgroundOverlay)]</label2>
-		<thumb></thumb>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/image.png</thumb>
 		<property name="rinfo"></property>
 		<onclick condition="!Skin.String(BackgroundOverlay)">Skin.SetString(BackgroundOverlay, 100)</onclick>
 		<onclick condition="Skin.String(BackgroundOverlay, 100)">Skin.SetString(BackgroundOverlay, 95)</onclick>
@@ -258,23 +258,24 @@
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>
 	  
-	  <item id="222" description="פאנארט-בית חצי מסך">
+	  <item id="222" description="פאנארט-בית מסך מלא">
 	    <visible>!Skin.HasSetting(background)</visible>
-		<label>$LOCALIZE[20445]-$LOCALIZE[10000] $LOCALIZE[77878]</label>
+		<label>$LOCALIZE[20445]-$LOCALIZE[10000] $LOCALIZE[244]</label>
 		<label2>$VAR[222label2]</label2>
-		<thumb></thumb>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/fullscreen.png</thumb>
 		<property name="rinfo">$LOCALIZE[76205]</property>
 		<onclick>Skin.ToggleSetting(HomeFanartHalfScreen)</onclick>
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>
 	  
-	  <item id="223" description="הסתר רקע עליון">
-		<label>$LOCALIZE[74476] $LOCALIZE[78017]</label>
+	  <item id="223" description="פאנארט-נקי">
+		<label>$LOCALIZE[31035]</label>
 		<label2>$VAR[223label2]</label2>
 		<thumb></thumb>
 		<property name="rinfo">$LOCALIZE[76209]</property>
 		<onclick>Skin.ToggleSetting(HideTopMainBackground)</onclick>
 		<visible>Container(100).Hasfocus(20)</visible>
+		<visible>!Skin.HasSetting(background)</visible>
 	  </item>
 	  
 	  <!--225-249 שקיפויות-->
@@ -479,34 +480,18 @@
 		<label2>$INFO[Skin.String(IconOverlayButton)]</label2>
 		<thumb>misc/help/IconOverlayButton.png</thumb>
 		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[78216].</property>
-		
-		<onclick>RunScript(script.featherence.service,,?mode=200&amp;value=IconOverlayButton)</onclick>1
-		<!--
-		
-		<onclick condition="!Skin.String(IconOverlayButton)">Skin.SetString(IconOverlayButton, 100)</onclick>
-		<onclick condition="Skin.String(IconOverlayButton, 100)">Skin.SetString(IconOverlayButton, 95)</onclick>
-		<onclick condition="Skin.String(IconOverlayButton, 95)">Skin.SetString(IconOverlayButton, 90)</onclick>
-		<onclick condition="Skin.String(IconOverlayButton, 90)">Skin.SetString(IconOverlayButton, 85)</onclick>
-		<onclick condition="Skin.String(IconOverlayButton, 85)">Skin.SetString(IconOverlayButton, 80)</onclick>
-		<onclick condition="Skin.String(IconOverlayButton, 80)">Skin.SetString(IconOverlayButton, 70)</onclick>
-		<onclick condition="Skin.String(IconOverlayButton, 70)">Skin.SetString(IconOverlayButton, 60)</onclick>
-		<onclick condition="Skin.String(IconOverlayButton, 60)">Skin.SetString(IconOverlayButton, 50)</onclick>
-		<onclick condition="Skin.String(IconOverlayButton, 50)">Skin.SetString(IconOverlayButton, 40)</onclick>
-		<onclick condition="Skin.String(IconOverlayButton, 40)">Skin.SetString(IconOverlayButton, 30)</onclick>
-		<onclick condition="Skin.String(IconOverlayButton, 30)">Skin.SetString(IconOverlayButton, 20)</onclick>
-		<onclick condition="Skin.String(IconOverlayButton, 20)">Skin.SetString(IconOverlayButton, )</onclick>
-		
-		<onclick>Close</onclick>
-		<onclick>ReplaceWindow(SkinSettings.xml)</onclick>
-		<onclick>AlarmClock(0,ActivateWindow(1117),00:01,silent)</onclick>
-		<onclick>AlarmClock(1,ActivateWindow(1173),00:01,silent)</onclick>
-		-->
-		
-		
-		
+		<onclick>RunScript(script.featherence.service,,?mode=200&amp;value=IconOverlayButton)</onclick>
 		<visible>Container(100).Hasfocus(24)</visible>
 	  </item>
-
+	  
+	  <item id="241" description="שקיפות קבועה (כפתורי בית לא נבחר)">
+		<label>$LOCALIZE[31041] ($LOCALIZE[31039])</label>
+		<label2>$VAR[241label2]</label2>
+		<thumb></thumb>
+		<property name="rinfo">$LOCALIZE[31040]</property>
+		<onclick>Skin.ToggleSetting(FixedUnFocusButtonsTransperancy)</onclick>
+		<visible>Container(100).Hasfocus(24)</visible>
+	  </item>
 	  <!--250-274 צבעים-->
 	  <item id="250" description="בחירת צבע (רקע עליון)">
 		<label>$LOCALIZE[78020] ($LOCALIZE[78017])</label>
@@ -588,7 +573,7 @@
 		<visible>Container(100).Hasfocus(23)</visible>
 	  </item>
 	  
-	  <item id="260" description="בחירת צבע (סמל לא נבחר)">
+	  <item id="260" description="בחירת צבע (סמל/טקסט לא נבחר)">
 		<label>$LOCALIZE[78020] ($LOCALIZE[78015])</label>
 		<label2>$INFO[Skin.String(IconUnFocusColor.name)]</label2>
 		<thumb></thumb>
@@ -598,7 +583,7 @@
 		<visible>Container(100).Hasfocus(23)</visible>
 	  </item>
 	  
-	  <item id="261" description="בחירת צבע (סמל נבחר)">
+	  <item id="261" description="בחירת צבע (סמל/טקסט נבחר)">
 		<label>$LOCALIZE[78020] ($LOCALIZE[78016])</label>
 		<label2>$INFO[Skin.String(IconFocusColor.name)]</label2>
 		<thumb></thumb>
@@ -688,7 +673,7 @@
 		<label>$VAR[395label] ($LOCALIZE[536])</label>
 		<label2>$INFO[Skin.String(CustomIconsPath)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/foo.png</thumb>
-		<property name="rinfo"></property>
+		<property name="rinfo">$LOCALIZE[31036]</property>
 		<onclick condition="!Skin.String(CustomIconsPath)">Skin.SetPath(CustomIconsPath)</onclick>
 		<onclick condition="Skin.String(CustomIconsPath)">Skin.SetString(CustomIconsPath,)</onclick>
 		<visible>Container(100).Hasfocus(25)</visible>
@@ -697,7 +682,7 @@
 		<label>$VAR[395label] ($LOCALIZE[19190])</label>
 		<label2>$INFO[Skin.String(CustomBackgroundsPath)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/foo.png</thumb>
-		<property name="rinfo"></property>
+		<property name="rinfo">$LOCALIZE[31036]</property>
 		<onclick condition="!Skin.String(CustomBackgroundsPath)">Skin.SetPath(CustomBackgroundsPath)</onclick>
 		<onclick condition="Skin.String(CustomBackgroundsPath)">Skin.SetString(CustomBackgroundsPath,)</onclick>
 		<visible>Container(100).Hasfocus(25)</visible>
@@ -976,6 +961,14 @@
 		<thumb></thumb>
 		<property name="rinfo"></property>
 		<onclick>RunScript(script.featherence.service,,?mode=14)</onclick>
+		<visible>Container(100).Hasfocus(1)</visible>
+	  </item>
+	  <item id="3" description="הצג טיפים במצב המתנה">
+		<label>$LOCALIZE[31038]</label>
+		<label2>$VAR[3label2]</label2>
+		<thumb></thumb>
+		<property name="rinfo">Show randomize tips on Dialog Busy window.</property>
+		<onclick>Skin.ToggleSetting(tips)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
 	  <item id="12" description="מילות שיר ברירת מחדל">

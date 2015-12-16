@@ -46,7 +46,7 @@
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=31&amp;value=Custom)" label="Read file and display results" option="close" visible="true"/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=46)" label="OverClock PI" visible="System.Platform.Linux.RaspberryPi + System.HasAddon(service.openelec.settings)"/>
 		<setting type="lsep" label="84" visible="System.Platform.Linux | System.Platform.Linux.RaspberryPi"/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=63)" label="Texture & DB Removal" visible="System.Platform.Linux | System.Platform.Linux.RaspberryPi"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=63)" label="Texture & DB Removal" visible=""/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=21&amp;value=1)" label="Auto Setup Movies Scraper" option="close" visible="false"/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=21&amp;value=2)" label="Auto Setup TVshows Scraper" option="close" visible="false"/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=18&amp;value=1)" label="Copy preconfigurated Keymaps" visible=""/>

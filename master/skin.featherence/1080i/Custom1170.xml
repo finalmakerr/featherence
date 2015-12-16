@@ -642,6 +642,22 @@
 				<label>fff1a7fe</label>
 				<label2>purple pink</label2>
 			  </item>
+			  <item id="65" description="lemon chiffon">
+			    <onclick>SetProperty(SelectedColor,fffffacd, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,lemon chiffon, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/fffffacd.png</icon>
+				<label>fffffacd</label>
+				<label2>lemon chiffon</label2>
+			  </item>
+			  <item id="65" description="lavender blush">
+			    <onclick>SetProperty(SelectedColor,fffff0f5, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,lavender blush, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/fffff0f5.png</icon>
+				<label>fffff0f5</label>
+				<label2>lavender blush</label2>
+			  </item>
 			</content>
 		</control>
 		
@@ -704,13 +720,13 @@
 				<onclick>Dialog.Close(1170)</onclick>
 				<onclick>ActivateWindow(1117)</onclick>
 				<onclick condition="Window.IsVisible(1173)">ActivateWindow(1173)</onclick>
-				<label></label>
-				<label2>$LOCALIZE[409]</label2>
+				<label>$LOCALIZE[409]</label>
+				<label2></label2>
 				<posy>5</posy>
 			</control>
 			<control type="button" id="3011" description="שקוף">
 				<posx>210</posx>
-				<width>200</width>
+				<width>270</width>
 				<texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
 				<include>ButtonC1</include>
 				<!--<font>Reg32</font>-->

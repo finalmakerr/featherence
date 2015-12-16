@@ -230,11 +230,11 @@ elif mode == 24:
 	name = "Run-Widget"
 	value_year = xbmc.getInfoLabel('Window(home).Property('+value+'.Year)')
 	systemlanguage = xbmc.getInfoLabel('System.Language')
+	value_file = xbmc.getInfoLabel('Window(home).Property('+value+'.File)')
 	if 'Movie' in value:
 		'''movies'''
 		trailers = xbmc.getInfoLabel('Window(home).Property(Widget_Trailers)')
 		trailers2 = xbmc.getInfoLabel('Skin.HasSetting(trailers2)')
-		value_file = xbmc.getInfoLabel('Window(home).Property('+value+'.File)')
 		value_title = xbmc.getInfoLabel('Window(home).Property('+value+'.Title)')
 		value_trailer = xbmc.getInfoLabel('Window(home).Property('+value+'.Trailer)')
 		

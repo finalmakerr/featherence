@@ -154,43 +154,40 @@
 	  </control>
 	  <control type="group" description="הכל">
 		  <posy>2</posy>
-		  <control type="group" description="() שמאל">
+		  <control type="group" description="שמאל_en">
 			<posx>100</posx>
 			<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1124)</visible>
 			<width>500</width>
+			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1310,0">Conditonal</animation>
+			<animation description="Slide_en" condition="!StringCompare(System.Language,Hebrew) + !StringCompare(Control.GetLabel(1121),System.AddonVersion(skin.featherence))" effect="slide" start="0,0" end="-90,0">Conditonal</animation>
 			<control type="label" id="1121" description="שמאל1 (תיקייה)">
-			  <align>left</align>
-			  <aligny>top</aligny>
+			  <include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
+			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
 			  <haspath>false</haspath>
 			  <height>20</height>
-			  <include>LabelC12</include>
 			  <label>$VAR[TopInformation2]</label>
 			  <scroll>true</scroll>
-			  <!--<visible>!IsEmpty(Control.GetLabel(1122))</visible>-->
-			  <!--<visible>[!StringCompare(ListItem.Label,..) + !StringCompare(ListItem.Label,עמוד)]</visible>-->
 			  <visible>!Control.IsVisible(1122) + !Control.IsVisible(1132)</visible>
 			</control>
 			<control type="label" id="1122" description="שמאל2 (ספרייה)">
-			  <align>left</align>
-			  <aligny>top</aligny>
+			  <include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
+			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
 			  <haspath>true</haspath>
 			  <height>20</height>
-			  <include>LabelC12</include>
 			  <label>$VAR[TopInformation2.1]</label>
 			  <visible>!IsEmpty(Control.GetLabel(1122))</visible>
 			  <visible>StringCompare(ListItem.Label,..) | StringCompare(ListItem.Label,עמוד)</visible>
 			</control>
 		  </control>
 		  <control type="group" description="(includes) שמאל">
-			<!--<visible>!Window.IsVisible(script-skin_helper_service-ColorPicker.xml)</visible>-->
 			<include>Badges</include>
 			<include>featherencelogo</include>
 			<visible>!Skin.HasSetting(Admin)</visible>
 		  </control>
 		  <control type="label" id="1124" description="זמן לסיום(HasMedia) שמאל2">
-			<align>left</align>
-			<aligny>top</aligny>
-			<include>LabelC12</include>
+		    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1490,0">Conditonal</animation>
+			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
+			<include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
 			<posx>230</posx>
 			<label>$VAR[TopInformation2.2]</label>
 			<visible>!Skin.HasSetting(Admin) + Player.HasMedia</visible>
@@ -201,55 +198,60 @@
 			<visible>!Window.IsVisible(script-skin_helper_service-ColorPicker.xml)</visible>
 			<width>340</width>
 		  </control>
-		  <control type="label" description="() אמצע">
-			<aligny>top</aligny>
-			<include>LabelC12</include>
-			<include>Fade7</include>
-			<label>$VAR[TopInformation3.1]</label>
-			<posx>600</posx>
-			<scroll>false</scroll>
-			<!--<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127) + [!Player.HasMedia | Window.IsVisible(MyPics.xml) | Window.IsVisible(SlideShow.xml) | Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(313) | Control.HasFocus(314) | Control.HasFocus(315)]</visible>-->
-			<width>720</width>
-			<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127)</visible>
-			<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
-		  </control>
-		  <control type="label" id="1127" description="(HasMedia) אמצע">
-			<aligny>top</aligny>
-			<include>LabelC12</include>
-			<label>$VAR[TopInformation3]</label>
-			<posx>600</posx>
-			<scroll>true</scroll>
-			<width>715</width>
-			<visible>!Skin.HasSetting(Admin) + Player.HasMedia + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(SlideShow.xml)</visible>
-			<visible>!SubString(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
-			<visible>!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(313) + !Control.HasFocus(314) + !Control.HasFocus(315)</visible>
-			<visible>!Window.IsVisible(script-skin_helper_service-ColorPicker.xml)</visible>
-			<visible>!SubString(MusicPlayer.Title,playfeatherence)</visible>
-			<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
-		  </control>
-		  <control type="label" description="(Admin) אמצע">
-			<aligny>top</aligny>
-			<include>LabelC12</include>
-			<label>$VAR[TopInformation3.1]</label>
-			<posx>600</posx>
-			<scroll>true</scroll>
-			<width>720</width>
-			<visible>Skin.HasSetting(Admin)</visible>
-			<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+		  <control type="group">
+			  <visible>!Window.IsVisible(DialogExtendedProgressBar.xml) + !Window.IsVisible(DialogKaiToast.xml)</visible>
+			  <control type="label" description="() אמצע">
+				<aligny>top</aligny>
+				<include>LabelC12</include>
+				<include>Fade7</include>
+				<label>$VAR[TopInformation3.1]</label>
+				<posx>600</posx>
+				<scroll>false</scroll>
+				<!--<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127) + [!Player.HasMedia | Window.IsVisible(MyPics.xml) | Window.IsVisible(SlideShow.xml) | Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(313) | Control.HasFocus(314) | Control.HasFocus(315)]</visible>-->
+				<width>720</width>
+				<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127)</visible>
+				<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+			  </control>
+			  <control type="label" id="1127" description="(HasMedia) אמצע">
+				<aligny>top</aligny>
+				<include>LabelC12</include>
+				<label>$VAR[TopInformation3]</label>
+				<posx>600</posx>
+				<scroll>true</scroll>
+				<width>715</width>
+				<visible>!Skin.HasSetting(Admin) + Player.HasMedia + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(SlideShow.xml)</visible>
+				<visible>!SubString(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
+				<visible>!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(313) + !Control.HasFocus(314) + !Control.HasFocus(315)</visible>
+				<visible>!Window.IsVisible(script-skin_helper_service-ColorPicker.xml)</visible>
+				<visible>!SubString(MusicPlayer.Title,playfeatherence)</visible>
+				<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+			  </control>
+			  <control type="label" description="(Admin) אמצע">
+				<aligny>top</aligny>
+				<include>LabelC12</include>
+				<label>$VAR[TopInformation3.1]</label>
+				<posx>600</posx>
+				<scroll>true</scroll>
+				<width>720</width>
+				<visible>Skin.HasSetting(Admin)</visible>
+				<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+			  </control>
 		  </control>
 		  <control type="group" description="(specials) ימין">
+		    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1190,0">Conditonal</animation>
 			<include>IconsInformation</include>	
-			<posx>1400</posx>
+			<posx>1380</posx>
 			<posy>5</posy>
 			<visible>true</visible>	
 		  </control>
 		  <control type="label" description="() ימין">
-			<aligny>top</aligny>
-			<include>LabelC12</include>
+			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1290,0">Conditonal</animation>
+			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
+			<include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
 			<label>$VAR[ShowClock]</label>		
-			<posx>350r</posx>
+			<posx>330r</posx>
 			<visible>Window.IsActive(LoginScreen.xml) | !Skin.HasSetting(ShowClock)</visible> <!--Window.IsActive(home) | -->
-			<width>350</width>
+			<width>370</width>
 		  </control>
 	  </control>
 	</control>
@@ -351,95 +353,275 @@
 		  <width>530</width>
         </control>
 	  </control>
-	  <control type="group" description="תמונת פרק">
-		<include>Fade4</include>
-		<height>180</height>		
-	    <posx>1235</posx>
-		<posy>-440</posy>	      
-	    <width>455</width>
-		<visible>!SubString(Container.FolderPath,plugin://)</visible> <!-- | Player.HasVideo + !IsEmpty(Player.Art(thumb))-->
-		<control type="image" description="מסגרת">
-		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,270">Conditional</animation>
-		  <animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="100,40">Conditional</animation>
-		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-5">Conditional</animation>
-		  <include>Fade_TopVideoInformationOverlay</include>
-		  <posx>-14</posx>
-          <posy>-10</posy>
-          <width>980</width>
-          <height>206</height>
-		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation</include>
-		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation_</include>
-		  <visible>!IsEmpty(ListItem.Art(thumb)) + Container.content(Episodes) + !Window.IsActive(VideoFullScreen.xml) | !IsEmpty(Container(50).ListItem.Property(FanartCode))</visible>
-		  <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
-      </control>
-		<control type="image">
-	      <aspectratio>stretch</aspectratio>
-		  <!--<bordersize>1</bordersize>
-		  <bordertexture border="10">misc/frames/fanartborder3.png</bordertexture>-->
-		  <posx>-51</posx>
-		  <posy>-10</posy>
-		  <width>570</width>
-		  <height>215</height>
-		  <texture border="20" diffuse="buttons/ButtonC0.png">$VAR[TopVideoInformation9]</texture>
-		  <visible>!IsEmpty(ListItem.Art(thumb)) + Container.content(Episodes) + !Window.IsActive(VideoFullScreen.xml)</visible>
-	    </control>
-	  </control>
-	  <control type="group" description="שנה/יוצר הרחבה">
-	    <include>Fade4</include>
-		<posx>1600</posx>
-        <posy>-499</posy>
-		<visible>!IsEmpty(Control.GetLabel(1102)) | !IsEmpty(Control.GetLabel(1103))</visible> <!--Window.IsVisible(DialogFullScreenInfo.xml) | -->
-		<control type="label" id="1102" description="שנה/יוצר הרחבה">
-          <align>right</align>
-		  <font>size28</font>
-		  <height>70</height>
-		  <posx>80</posx>
-          <width>250</width>		
-          <textcolor>White</textcolor>
-          <label>$VAR[TopVideoInformation2]</label>
-		  <scroll>false</scroll>
-		  <visible>!IsEmpty(Control.GetLabel(1102))</visible>
-        </control>
+	  <control type="group" description="Right side">
+	      <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1015,0">Conditonal</animation>
+		  <control type="group" description="תמונת פרק">
+			<include>Fade4</include>
+			<posx>1221</posx>
+			<posy>-450</posy>	      
+			<visible>!SubString(Container.FolderPath,plugin://)</visible> <!-- | Player.HasVideo + !IsEmpty(Player.Art(thumb))-->
+			<control type="image" description="מסגרת">
+			  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-500,0">Conditonal</animation>
+			  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,270">Conditional</animation>
+			  <animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="100,40">Conditional</animation>
+			  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-5">Conditional</animation>
+			  <include>Fade_TopVideoInformationOverlay</include>
+			  <posx>0</posx>
+			  <posy>0</posy>
+			  <width>980</width>
+			  <height>191</height>
+			  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation</include>
+			  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation_</include>
+			  <visible>!IsEmpty(ListItem.Art(thumb)) + Container.content(Episodes) + !Window.IsActive(VideoFullScreen.xml) | !IsEmpty(Container(50).ListItem.Property(FanartCode))</visible>
+			  <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
+		    </control>
+			<control type="image">
+			  <aspectratio>stretch</aspectratio>
+			  <!--<bordersize>1</bordersize>
+			  <bordertexture border="10">misc/frames/fanartborder3.png</bordertexture>-->
+			  <posx>-44</posx>
+			  <posy>-7</posy>
+			  <width>570</width>
+			  <height>207</height>
+			  <texture border="0" diffuse="buttons/ButtonC0.png">$VAR[TopVideoInformation9]</texture>
+			  <visible>!IsEmpty(ListItem.Art(thumb)) + Container.content(Episodes) + !Window.IsActive(VideoFullScreen.xml)</visible>
+			</control>
+		  </control>
+		  <control type="group" description="שנה/יוצר הרחבה">
+			<include>Fade4</include>
+			<posx>1600</posx>
+			<posy>-499</posy>
+			<visible>!IsEmpty(Control.GetLabel(1102)) | !IsEmpty(Control.GetLabel(1103))</visible> <!--Window.IsVisible(DialogFullScreenInfo.xml) | -->
+			<control type="label" id="1102" description="שנה/יוצר הרחבה">
+			  <align>right</align>
+			  <font>size28</font>
+			  <height>70</height>
+			  <posx>80</posx>
+			  <width>250</width>		
+			  <textcolor>White</textcolor>
+			  <label>$VAR[TopVideoInformation2]</label>
+			  <scroll>false</scroll>
+			  <visible>!IsEmpty(Control.GetLabel(1102))</visible>
+			</control>
+		  </control>
+		  <control type="group" description="עונה ופרק">
+			<posx>1240</posx>
+			<posy>-483</posy>
+			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="15,0">Conditonal</animation>
+			<!--<visible>!IsEmpty(Control.GetLabel(1480))</visible>-->
+			<control type="label" id="1480" description="עונה ופרק">
+			  <align>left</align>
+			  <label>$VAR[TopVideoInformation10]</label>
+			  <font>size28</font>
+			  <height>40</height>
+			  <pauseatend>3000</pauseatend>
+			  <width>192</width>
+			  <textcolor>White</textcolor>
+			  <visible>!IsEmpty(Control.GetLabel(1480))</visible>
+			  <visible>!Control.IsVisible(1481)</visible>
+			</control>
+			<control type="label" id="1481" description="נצפה לאחרונה">
+			  <font>size18</font>
+			  <include>LabelC4</include>
+			  <height>40</height>
+			  <posx>-65</posx>
+			  <posy>-5</posy>
+			  <scroll>false</scroll>
+			  <width>280</width>		
+			  <textcolor>White</textcolor>
+			  <label>$LOCALIZE[79023]:[CR]$INFO[ListItem.LastPlayed]</label>
+			  <visible>!IsEmpty(ListItem.LastPlayed)</visible>
+			  <visible>[System.IdleTime(3) + !System.IdleTime(6)]</visible>
+			</control>
+		  </control>
+		  <control type="group" description="דירוג והצבעות/mpaa/נצפה לאחרונה">
+			<posx>1365</posx>
+			<posy>-483</posy>
+			<visible>Window.IsActive(DialogVideoInfo.xml)</visible> <!--Window.IsVisible(DialogFullScreenInfo.xml) | -->
+			<control type="label" description="דירוג והצבעות">
+			  <align>right</align>
+			  <aligny>center</aligny>
+			  <font>size18</font>
+			  <height>40</height>
+			  <posx>220</posx>
+			  <posy>-2</posy>
+			  <width>240</width>		
+			  <textcolor>White</textcolor>
+			  <label>$INFO[ListItem.RatingAndVotes]</label>
+			  <scroll>false</scroll>
+			  <visible>!IsEmpty(ListItem.RatingAndVotes) + Window.IsActive(DialogVideoInfo.xml)</visible>
+			</control>
+			<control type="image">
+			  <height>30</height>
+			  <visible>!IsEmpty(ListItem.mpaa)</visible>
+			  <posx>-13</posx>
+			  <posy>3</posy>
+			  <width>50</width>
+			  <texture>$INFO[ListItem.mpaa,badges/mpaa/,.png] + Window.IsActive(DialogVideoInfo.xml)</texture>
+			</control>
+		  </control>  
+		  <control type="group" description="+סגנון (1106)">
+			<include>Fade4</include>
+			<visible>!IsEmpty(Control.GetLabel(1105)) | !IsEmpty(Control.GetLabel(1106))</visible>
+			<visible>!Window.IsVisible(MyWeather.xml)</visible>
+			<posx>1165</posx>
+			<posy>0</posy>
+			<control type="label" id="1106" description="ג'אנר">
+			  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="15,0">Conditonal</animation>
+			  <posx>65</posx>
+			  <posy>-568</posy>
+			  <width>320</width>
+			  <height>70</height>
+			  <include>LabelL1</include>
+			  <label>$VAR[TopVideoInformation6]</label>
+			  <scroll>false</scroll>
+			  <visible>SubString(ListItem.Path,videodb://1/7) | SubString(ListItem.path,videodb://movies/sets/) | ListItem.Property(Addon.Type) | Skin.HasSetting(Admin)</visible>
+			</control>
+			<control type="grouplist" description="תמונת הסגנון">
+				<posx>65</posx>
+				<posy>-559</posy>
+				<width>360</width>
+				<align>left</align>
+				<itemgap>-10</itemgap>
+				<scrolltime tween="sine" easing="out">200</scrolltime>
+				<orientation>horizontal</orientation>
+				<visible>!Skin.HasSetting(Genre)</visible>
+				<include>MultiVideoGenreFlagging</include>
+			</control>
+			<control type="grouplist" description="שם הסגנון">
+				<posx>65</posx>
+				<posy>-517</posy>
+				<width>360</width>
+				<align>left</align>
+				<itemgap>-10</itemgap>
+				<scrolltime tween="sine" easing="out">200</scrolltime>
+				<orientation>horizontal</orientation>
+				<visible>!Skin.HasSetting(Genre)</visible>
+				<include>GenreText</include>
+			</control>
+			<control type="grouplist" description="שם הסגנון2">
+				<posx>80</posx>
+				<posy>-560</posy>
+				<width>370</width>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<visible>Skin.HasSetting(Genre)</visible>
+				<include>GenreText</include>
+			</control>
+			<control type="group" description="מספר עונות">
+				<posx>-50</posx>
+				<posy>0</posy>
+				<control type="label" id="1112" description="מספר">
+				  <align>center</align>
+				  <height>50</height>
+				  <posx>513</posx>
+				  <posy>-559</posy>
+				  <label>$VAR[TopVideoInformation1112a]</label>
+				  <visible>!IsEmpty(Control.GetLabel(1112))</visible>
+				  <width>70</width>
+				</control>
+				<control type="label" description="טקסט">
+				  <posx>479</posx>
+				  <include>GenreTextPlace</include>
+				  <posy>-517</posy>
+				  <label>$VAR[TopVideoInformation1112b]</label>
+				  <visible>Control.IsVisible(1112)</visible>
+				</control>
+			</control>
+			<control type="group" description="אורך בשעות/דקות">
+				<posx>-50</posx>
+				<posy>0</posy>
+				<control type="label" id="1101" description="אורך/מספר עונה/גרסה הרחבה">
+				  <include>LabelC12</include> 
+				  <posx>494</posx>
+				  <posy>-571</posy>
+				  <width>100</width>
+				  <label>$VAR[TopVideoInformation1]</label>
+				  <scroll>false</scroll>
+				  <visible>Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(DialogAddonInfo.xml) | Window.IsVisible(MyMusicNav.xml)</visible>
+				  <visible>!IsEmpty(Control.GetLabel(1101))</visible>
+				</control>
+				<control type="label" id="1109" description="אורך-בשעות">
+				  <include>LabelC12</include> 
+				  <posx>519</posx>
+				  <posy>-571</posy>
+				  <width>50</width>
+				  <label>$VAR[VideoInHours]</label>
+				  <visible>IntegerGreaterThan(Control.GetLabel(1109),0) + !IsEmpty(Control.GetLabel(1109))</visible> <!--!Window.IsActive(VideoFullScreen.xml) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !SubString(Container.FolderPath,shows)] | [Window.IsActive(VideoFullScreen.xml) + !VideoPlayer.Content(episodes)] + -->
+				  <visible>[!IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + Container.Content(tvshows)] | !Container.Content(tvshows)</visible>
+				  <visible>!Control.IsVisible(1101)</visible>
+				</control>
+				<control type="label" id="1110" description="אורך-בדקות">
+				  <include>LabelC12</include> 
+				  <posx>519</posx>
+				  <posy>-571</posy>
+				  <width>50</width>
+				  <label>$VAR[VideoInMins]</label>
+				  <visible>IntegerGreaterThan(Control.GetLabel(1110),0) + !IsEmpty(Control.GetLabel(1110)) + !Control.IsVisible(1109)</visible> <!--!Window.IsActive(VideoFullScreen.xml) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !SubString(Container.FolderPath,shows)] | [Window.IsActive(VideoFullScreen.xml) + !VideoPlayer.Content(episodes)] + -->
+				  <visible>[!IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + Container.Content(tvshows)] | !Container.Content(tvshows)</visible>
+				  <visible>!Control.IsVisible(1101)</visible>
+				</control>
+				<control type="label" description="שעות">
+				  <align>center</align>
+				  <label>$LOCALIZE[12392]</label>
+				  <font>size18</font>
+				  <posx>510</posx>
+				  <posy>-539</posy>
+				  <visible>Control.IsVisible(1109)</visible>
+				  <width>70</width>
+				</control>
+				<control type="label" description="דקות">
+				  <align>center</align>
+				  <label>$LOCALIZE[12391]</label>
+				  <font>size18</font>
+				  <posx>510</posx>
+				  <posy>-539</posy>
+				  <visible>Control.IsVisible(1110)</visible>
+				  <width>70</width>
+				</control>
+			  </control>
+		  </control>
 	  </control>
 	  <control type="group" description="פוסטר">
-	    <animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="150,150" time="3000">Conditional</animation>
-        <include>Slide4</include>
+		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1690,0">Conditonal</animation>
+		<animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="150,150" time="3000">Conditional</animation>
+		<include>Slide4</include>
 		<include>Fade4</include>
-		<height>294</height>		
-	    <posx>1720</posx>
+		<height>270</height>		
+		<posx>1720</posx>
 		<posy>-550</posy>
-	    <width>197</width>
-	    <control type="image" description="פוסטר">
+		<width>197</width>
+		<include>ShowDVDdisc</include>
+		<control type="image" description="פוסטר">
 		  <aspectratio>stretch</aspectratio>
 		  <texture background="false">$VAR[TopVideoInformation4]</texture>
 		</control>
-	    <control type="label" id="1104" description="***פוסטר***">
-          <label>$VAR[TopVideoInformation4]</label>
+		<control type="label" id="1104" description="***פוסטר***">
+		  <label>$VAR[TopVideoInformation4]</label>
 		  <visible>false</visible>
-        </control>
+		</control>
 		<control type="group" description="ShowDVDCases">
 			<posx>-32</posx>
 			<posy>-5</posy>              
-			<height>316</height>
+			<height>292</height>
 			<width>237</width>
 			<include>WatchedStatus</include> <!-- condition="!IsEmpty(Control.GetLabel(1104))"-->
 			<include>ShowDVDCases</include>
 		</control>
-		<include>FanartRollingMovieSetDiscs</include>
-		<include>cdart_image</include>
+		
 		<control type="image" description="דירוג">
-          <posx>0</posx>
-          <posy>7</posy>
-          <height>24</height>
-          <width>125</width>
-          <aspectratio align="left">keep</aspectratio>
-          <texture>$VAR[TopVideoInformation3]</texture>
+		  <posx>0</posx>
+		  <posy>7</posy>
+		  <height>24</height>
+		  <width>125</width>
+		  <aspectratio align="left">keep</aspectratio>
+		  <texture>$VAR[TopVideoInformation3]</texture>
 		  <visible>!IsEmpty(Control.GetLabel(1103))</visible>
 		</control>
 		<control type="label" id="1103" description="***דירוג***">
-          <label>$VAR[TopVideoInformation3]</label>
+		  <label>$VAR[TopVideoInformation3]</label>
 		  <visible>false</visible>
-        </control>
+		</control>
 		<control type="group" description="InProgressBadge">
 			<posx>-54</posx>
 			<posy>-24</posy>              
@@ -448,64 +630,8 @@
 			<include>InProgressBadge</include>
 		</control>
 	  </control>  
-	  
-	  <control type="group" description="עונה ופרק">
-		<posx>1240</posx>
-		<posy>-483</posy>
-		<!--<visible>!IsEmpty(Control.GetLabel(1480))</visible>-->
-		<control type="label" id="1480" description="עונה ופרק">
-		  <align>left</align>
-		  <label>$VAR[TopVideoInformation10]</label>
-		  <font>size28</font>
-		  <height>40</height>
-		  <pauseatend>3000</pauseatend>
-		  <width>192</width>
-		  <textcolor>White</textcolor>
-		  <visible>!IsEmpty(Control.GetLabel(1480))</visible>
-		  <visible>!Control.IsVisible(1481)</visible>
-		</control>
-		<control type="label" id="1481" description="נצפה לאחרונה">
-		  <font>size18</font>
-		  <include>LabelC4</include>
-		  <height>40</height>
-		  <posx>-65</posx>
-		  <posy>-5</posy>
-		  <scroll>false</scroll>
-          <width>280</width>		
-          <textcolor>White</textcolor>
-		  <label>$LOCALIZE[79023]:[CR]$INFO[ListItem.LastPlayed]</label>
-		  <visible>!IsEmpty(ListItem.LastPlayed)</visible>
-		  <visible>[System.IdleTime(3) + !System.IdleTime(6)]</visible>
-        </control>
-	  </control>
-		
-	  <control type="group" description="דירוג והצבעות/mpaa/נצפה לאחרונה">
-		<posx>1365</posx>
-        <posy>-483</posy>
-		<visible>Window.IsActive(DialogVideoInfo.xml)</visible> <!--Window.IsVisible(DialogFullScreenInfo.xml) | -->
-		<control type="label" description="דירוג והצבעות">
-          <align>right</align>
-		  <aligny>center</aligny>
-		  <font>size18</font>
-		  <height>40</height>
-		  <posx>220</posx>
-		  <posy>-2</posy>
-          <width>240</width>		
-          <textcolor>White</textcolor>
-          <label>$INFO[ListItem.RatingAndVotes]</label>
-		  <scroll>false</scroll>
-		  <visible>!IsEmpty(ListItem.RatingAndVotes) + Window.IsActive(DialogVideoInfo.xml)</visible>
-        </control>
-	    <control type="image">
-		  <height>30</height>
-	      <visible>!IsEmpty(ListItem.mpaa)</visible>
-		  <posx>-13</posx>
-		  <posy>3</posy>
-	      <width>50</width>
-	      <texture>$INFO[ListItem.mpaa,badges/mpaa/,.png] + Window.IsActive(DialogVideoInfo.xml)</texture>
-	    </control>
-	  </control>  
 	  <control type="group" description="פרטי וידאו (1105)">
+		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1250,0">Conditonal</animation>
 		<include>Fade4</include>
 		<visible>!IsEmpty(Control.GetLabel(1105)) + !SubString(Control.GetLabel(1105),$LOCALIZE[20457])</visible>
 		<visible></visible>
@@ -518,9 +644,9 @@
 		  <include condition="Skin.String(PlotAlign,3)">LabelJ1</include>
 		  <include condition="Skin.String(PlotAlign,4)">LabelC1</include>
 		  <include>AutoScrollText</include>
-		  <posx>20</posx>
+		  <posx>10</posx>
           <posy>-561</posy>
-          <width>640</width>
+          <width>650</width>
           <height>115</height> <!--130-->
           <label>$VAR[TopVideoInformation5]</label>
         </control>
@@ -540,129 +666,7 @@
 			  <width>300</width>
 			</control>		
 		</control>
-	  </control>
-	  <control type="group" description="+סגנון (1106)">
-	    <include>Fade4</include>
-		<visible>!IsEmpty(Control.GetLabel(1105)) | !IsEmpty(Control.GetLabel(1106))</visible>
-		<visible>!Window.IsVisible(MyWeather.xml)</visible>
-		<posx>1165</posx>
-		<posy>0</posy>
-	    <control type="label" id="1106" description="ג'אנר">
-		  <posx>65</posx>
-          <posy>-568</posy>
-          <width>320</width>
-          <height>70</height>
-          <font>size28</font>
-          <textcolor>White2</textcolor>
-          <align>left</align>
-          <label>$VAR[TopVideoInformation6]</label>
-		  <scroll>false</scroll>
-		  <visible>SubString(ListItem.Path,videodb://1/7) | SubString(ListItem.path,videodb://movies/sets/) | ListItem.Property(Addon.Type) | Skin.HasSetting(Admin)</visible>
-        </control>
-		<control type="grouplist" description="תמונת הסגנון">
-			<posx>65</posx>
-			<posy>-559</posy>
-			<width>360</width>
-			<align>left</align>
-			<itemgap>-10</itemgap>
-			<scrolltime tween="sine" easing="out">200</scrolltime>
-			<orientation>horizontal</orientation>
-			<visible>!Skin.HasSetting(Genre)</visible>
-			<include>MultiVideoGenreFlagging</include>
-		</control>
-		<control type="grouplist" description="שם הסגנון">
-			<posx>65</posx>
-			<posy>-517</posy>
-			<width>360</width>
-			<align>left</align>
-			<itemgap>-10</itemgap>
-			<scrolltime tween="sine" easing="out">200</scrolltime>
-			<orientation>horizontal</orientation>
-			<visible>!Skin.HasSetting(Genre)</visible>
-			<include>GenreText</include>
-		</control>
-		<control type="grouplist" description="שם הסגנון2">
-			<posx>80</posx>
-			<posy>-560</posy>
-			<width>370</width>
-			<align>left</align>
-			<itemgap>20</itemgap>
-			<orientation>horizontal</orientation>
-			<visible>Skin.HasSetting(Genre)</visible>
-			<include>GenreText</include>
-		</control>
-		<control type="group" description="מספר עונות">
-		    <posx>-50</posx>
-			<posy>0</posy>
-			<control type="label" id="1112" description="מספר">
-			  <align>center</align>
-			  <height>50</height>
-			  <posx>513</posx>
-			  <posy>-559</posy>
-			  <label>$VAR[TopVideoInformation1112a]</label>
-			  <visible>!IsEmpty(Control.GetLabel(1112))</visible>
-			  <width>70</width>
-			</control>
-			<control type="label" description="טקסט">
-			  <posx>479</posx>
-			  <include>GenreTextPlace</include>
-			  <posy>-517</posy>
-			  <label>$VAR[TopVideoInformation1112b]</label>
-			  <visible>Control.IsVisible(1112)</visible>
-			</control>
-		</control>
-		<control type="group" description="אורך בשעות/דקות">
-			<posx>-50</posx>
-			<posy>0</posy>
-			<control type="label" id="1101" description="אורך/מספר עונה/גרסה הרחבה">
-			  <include>LabelC12</include> 
-			  <posx>494</posx>
-			  <posy>-571</posy>
-			  <width>100</width>
-			  <label>$VAR[TopVideoInformation1]</label>
-			  <scroll>false</scroll>
-			  <visible>Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(DialogAddonInfo.xml) | Window.IsVisible(MyMusicNav.xml)</visible>
-			  <visible>!IsEmpty(Control.GetLabel(1101))</visible>
-			</control>
-			<control type="label" id="1109" description="אורך-בשעות">
-			  <include>LabelC12</include> 
-			  <posx>519</posx>
-			  <posy>-571</posy>
-			  <width>50</width>
-			  <label>$VAR[VideoInHours]</label>
-			  <visible>IntegerGreaterThan(Control.GetLabel(1109),0) + !IsEmpty(Control.GetLabel(1109))</visible> <!--!Window.IsActive(VideoFullScreen.xml) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !SubString(Container.FolderPath,shows)] | [Window.IsActive(VideoFullScreen.xml) + !VideoPlayer.Content(episodes)] + -->
-			  <visible>[!IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + Container.Content(tvshows)] | !Container.Content(tvshows)</visible>
-			  <visible>!Control.IsVisible(1101)</visible>
-			</control>
-			<control type="label" id="1110" description="אורך-בדקות">
-			  <include>LabelC12</include> 
-			  <posx>519</posx>
-			  <posy>-571</posy>
-			  <width>50</width>
-			  <label>$VAR[VideoInMins]</label>
-			  <visible>IntegerGreaterThan(Control.GetLabel(1110),0) + !IsEmpty(Control.GetLabel(1110)) + !Control.IsVisible(1109)</visible> <!--!Window.IsActive(VideoFullScreen.xml) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !SubString(Container.FolderPath,shows)] | [Window.IsActive(VideoFullScreen.xml) + !VideoPlayer.Content(episodes)] + -->
-			  <visible>[!IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + Container.Content(tvshows)] | !Container.Content(tvshows)</visible>
-			  <visible>!Control.IsVisible(1101)</visible>
-			</control>
-			<control type="label" description="שעות">
-			  <align>center</align>
-			  <label>$LOCALIZE[12392]</label>
-			  <font>size18</font>
-			  <posx>510</posx>
-			  <posy>-539</posy>
-			  <visible>Control.IsVisible(1109)</visible>
-			  <width>70</width>
-			</control>
-			<control type="label" description="דקות">
-			  <align>center</align>
-			  <label>$LOCALIZE[12391]</label>
-			  <font>size18</font>
-			  <posx>510</posx>
-			  <posy>-539</posy>
-			  <visible>Control.IsVisible(1110)</visible>
-			  <width>70</width>
-			</control>
-		  </control>
+	    <include>RightMenuDialogVideoInfo</include>
 	  </control>
 	</control>
 	<control type="label" id="11155" description="לתצוגת פרקים/עונות -57/58">
@@ -671,7 +675,6 @@
 	  <posy>150</posy>
 	  <visible>Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)</visible>
     </control>
-	<include>RightMenuDialogVideoInfo</include>
   </include>
   <include name="TopMenuDialogSlider" description="(הזזת תרגום)">
     <control type="group">  			
@@ -898,8 +901,8 @@
 	  <control type="group" description="פרטים ימין">
 		<visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
 	    <height>250</height>		
-	    <posx>20</posx>
-	    <posy>130</posy>	 
+	    <posx>10</posx>
+	    <posy>-460</posy>	 
 	    <width>600</width>
         
 		<control type="grouplist">
@@ -955,164 +958,10 @@
 			<scroll>true</scroll>
 			<visible>Skin.HasSetting(Admin) | Skin.HasSetting(Admin2)</visible>
 			<visible>!SubString(Container.FolderPath,plugin://)</visible>
-			
           </control>
       </control>
       </control>
   </include>
-    <include name="cdart_image">
-		<control type="group">
-			<visible>!Skin.HasSetting(fanart_plot) + !ListItem.IsCollection + !stringcompare(ListItem.Label,..)</visible>
-			<!-- Default Discart - plot -->
-			<control type="image">
-				<posx>1160</posx>
-				<posy>648</posy>
-				<width>213</width>
-				<height>213</height>
-				<aspect>keep</aspect>
-				<texture>$INFO[ListItem.Art(discart)]</texture>
-				<visible>!IsEmpty(ListItem.Art(discart)) + !Skin.HasSetting(fanart_Disable_CDART)</visible>
-				<animation type="Conditional" reversible="true" condition="!IsEmpty(ListItem.Art(discart))">
-					<effect type="slide" start="0,200" end="0,0" time="400"/>
-					<effect type="rotate" center="auto" start="0" end="-10800" time="500000" pulse="true" delay="400"/>
-				</animation> 
-			</control>
-			<!-- Fake Discart - plot -->
-			<control type="group">
-				<posx>1160</posx>
-				<posy>648</posy>
-				<width>213</width>
-				<height>213</height>
-				<visible>IsEmpty(ListItem.Art(discart)) + !Skin.HasSetting(fanart_Disable_FAKECDART) + !IsEmpty(ListItem.Art(poster)) + !Container.Content(Episodes)</visible>	
-				<animation effect="slide" start="0,200" end="0,0" time="400" condition="True">Conditional</animation>
-				<animation effect="rotate" center="auto" start="0" end="-10800" time="500000" reversible="false" pulse="true" delay="400" condition="True">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="0" condition="Skin.HasSetting(fanart_Disable_TVFAKECDART) + !Container.Content(movies)">Conditional</animation>
-				<!--<animation type="Visible" reversible="False">
-					<effect type="rotate" center="auto" start="0" end="-10800" time="500000" pulse="true" delay="400"/>
-					 <effect type="slide" start="0,200" end="0,0" time="400"/> 
-				</animation> -->
-				<control type="image">	
-					<aspect>keep</aspect>
-					<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[ListItem.Art(poster)]</texture>
-				</control>
-				<control type="image">
-					<texture>thumbs/sets/cdarttop.png</texture>
-					<visible>!IsEmpty(ListItem.Art(poster))</visible>
-				</control>
-			</control>
-		</control>
-		<control type="group">
-			<visible>Skin.HasSetting(fanart_plot) + !ListItem.IsCollection + !stringcompare(ListItem.Label,..)</visible>
-			<!-- Default Discart - no plot -->
-			<control type="image">
-				<posx>1160</posx>
-				<posy>790</posy>
-				<width>263</width>
-				<height>263</height>
-				<aspect>keep</aspect>
-				<texture>$INFO[ListItem.Art(discart)]</texture>
-				<visible>!IsEmpty(ListItem.Art(discart)) + !Skin.HasSetting(fanart_Disable_CDART)</visible>
-				<animation type="Conditional" reversible="true" condition="!IsEmpty(ListItem.Art(discart))">
-					<effect type="slide" start="0,0" end="-145,0" time="400"/>
-					<effect type="rotate" center="auto" start="0" end="-10800" time="500000" pulse="true" delay="400"/>
-				</animation> 
-			</control>
-			<!-- Fake Discart - no plot -->
-			<control type="group">
-				<posx>1160</posx>
-				<posy>790</posy>
-				<width>263</width>
-				<height>263</height>
-				<visible>IsEmpty(ListItem.Art(discart)) + !Skin.HasSetting(fanart_Disable_FAKECDART) + !IsEmpty(ListItem.Art(poster)) + !Container.Content(Episodes)</visible>
-				<animation effect="slide" start="0,0" end="-145,0" time="400" condition="True">Conditional</animation>
-				<animation effect="rotate" center="auto" start="0" end="-10800" time="500000" reversible="false" pulse="true" delay="400" condition="True">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="0" condition="Skin.HasSetting(fanart_Disable_TVFAKECDART) + !Container.Content(movies)">Conditional</animation>
-
-				<control type="image">
-					<aspect>keep</aspect>
-					<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[ListItem.Art(poster)]</texture>
-				</control>
-				<control type="image">
-					<texture>thumbs/sets/cdarttop.png</texture>
-					<visible>!IsEmpty(ListItem.Art(poster))</visible>
-				</control>
-			</control>
-		</control>
-	</include>
-  	<include name="FanartRollingMovieSetDiscs">
-		<control type="image">
-			<aspectratio>keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.7.DiscArt)]</texture>
-			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
-				<effect type="slide" start="0,0" end="0,2350" delay="3500" time="2600" tween="cubic" easing="inout" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="3500" time="2600" tween="cubic" easing="inout" />
-			</animation>
-			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.7.DiscArt))</visible>
-		</control>
-		<control type="image">
-			<aspectratio>keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.6.DiscArt)]</texture>
-			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
-				<effect type="slide" start="0,0" end="0,2200" delay="3000" time="2600" tween="cubic" easing="inout" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="3000" time="2600" tween="cubic" easing="inout" />
-			</animation>
-			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.6.DiscArt))</visible>
-		</control>
-		<control type="image">
-			<aspectratio>keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.5.DiscArt)]</texture>
-			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
-				<effect type="slide" start="0,0" end="-2050,0" delay="2500" time="2600" tween="cubic" easing="inout" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="2500" time="2600" tween="cubic" easing="inout" />
-			</animation>
-			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.5.DiscArt))</visible>
-		</control>
-		<control type="image">
-			<aspectratio>keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.4.DiscArt)]</texture>
-			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
-				<effect type="slide" start="0,0" end="-1900,0" delay="2000" time="2600" tween="cubic" easing="inout" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="2000" time="2600" tween="cubic" easing="inout" />
-			</animation>
-			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.4.DiscArt))</visible>
-		</control>
-		<control type="image">
-			<aspectratio>keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.3.DiscArt)]</texture>
-			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
-				<effect type="slide" start="0,0" end="-1750,0" delay="1500" time="2600" tween="cubic" easing="inout" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="1500" time="2600" tween="cubic" easing="inout" />
-			</animation>
-			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.3.DiscArt))</visible>
-		</control>
-		<control type="image">
-			<aspectratio>keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.2.DiscArt)]</texture>
-			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
-				<effect type="slide" start="0,0" end="-1600,0" delay="1000" time="2600" tween="cubic" easing="inout" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="1000" time="2600" tween="cubic" easing="inout" />
-			</animation>
-			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.2.DiscArt))</visible>
-		</control>
-		<control type="image">
-			<aspectratio>keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.1.DiscArt)]</texture>
-			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
-				<effect type="slide" start="0,0" end="-1450,0" delay="500" time="2600" tween="cubic" easing="inout" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="500" time="2600" tween="cubic" easing="inout" />
-			</animation>
-			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.1.DiscArt))</visible>
-		</control>
-		<control type="image">
-			<aspectratio>keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(SkinHelper.MovieSet.0.DiscArt)]</texture>
-			<animation type="Conditional" condition="!Skin.HasSetting(Disable_CDART) + ListItem.IsCollection" reversible="false">
-				<effect type="slide" start="0,0" end="-1300,0" delay="0" time="2600" tween="cubic" easing="inout" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
-			</animation>
-			<visible>!IsEmpty(Window(home).Property(SkinHelper.MovieSet.0.DiscArt))</visible>
-		</control>
-	</include>
 
   <include name="BottomMenuDialogContextMenu" description="תפריט קליק ימני">
 	<control type="group">

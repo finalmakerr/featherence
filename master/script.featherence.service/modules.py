@@ -11,13 +11,18 @@ def mode0(admin, name, printpoint):
 	#addon = ''
 	#installaddon(admin, addon, update=False)
 	#installaddonP(admin, addon, update=False)
-	#returned = dialogyesno(localize(79516), localize(78,addon='script.featherence.service') + localize(75775)) #User settings
+	#returned = dialogyesno(localize(79516) + '[CR]blablablasssssssssssssssssss', localize(78,addon='script.featherence.service') + localize(75775)) #User settings
+	#dialogok('asdasdsakdsalfd;gke;gwekfeaf[CR]asdasdsakdsalfd','dsafamlg;ewmfefsaf','dsafldmlemfwqfewfvasdfvdaf','sdafdglvnlerflqemfafcasfcaafasfsghgs')
 	#option = localize(24056,[librarydatalocaldatestr]) #str24056.encode('utf-8') % (librarydatalocaldatestr)
 	#print option
 	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=31&value=header&value2=test&value3=Z:\kodi.log)')
-	xbmc.executebuiltin('Skin.ResetSettings')
+	#xbmc.executebuiltin('Skin.ResetSettings')
 	#xbmc.executebuiltin('ActivateWindow(videoplaylist)')
 	#mode5('', admin, name, printpoint)
+	#dp = xbmcgui.DialogProgress()
+	#dp.create("featherence Texture-Cache-Removal", "Removing Datebase", "why are we here?[CR]test is here ssssssssssssssssssssssssssssssssssssssssssssssssssss ")
+	
+	xbmc.sleep(10000)
 	
 def mode5(value, admin, name, printpoint):
 	'''------------------------------
@@ -813,8 +818,21 @@ def mode32(value, admin, name, printpoint):
 		printlog(title='MISCS (mode32) value: ' + str(value), printpoint=printpoint, text=text2, level=0, option="")
 		
 	elif value == '2':
-		returned = dialogyesno('TEST','...')
-		'''---------------------------'''
+		returned, value = getRandom(0, min=0, max=3, percent=50)
+		if value == 0:
+			returned = dialogyesno('F--e--a--t--h--e--r--e--n--c--e[CR]F--e--a--t--h--e--r--e--n--c--e','F--e--a--t--h--e--r--e--n--c--e[CR]F--e--a--t--h--e--r--e--n--c--e')
+		elif value == 1:
+			dialogok('F--e--a--t--h--e--r--e--n--c--e[CR]F--e--a--t--h--e--r--e--n--c--e','F--e--a--t--h--e--r--e--n--c--e[CR]F--e--a--t--h--e--r--e--n--c--e','F--e--a--t--h--e--r--e--n--c--e[CR]F--e--a--t--h--e--r--e--n--c--e','F--e--a--t--h--e--r--e--n--c--e[CR]F--e--a--t--h--e--r--e--n--c--e')
+		else:
+			dp = xbmcgui.DialogProgress()
+			dp.create('F--e--a--t--h--e--r--e--n--c--e[CR]F--e--a--t--h--e--r--e--n--c--e','F--e--a--t--h--e--r--e--n--c--e[CR]F--e--a--t--h--e--r--e--n--c--e','F--e--a--t--h--e--r--e--n--c--e[CR]F--e--a--t--h--e--r--e--n--c--e')
+			count = 0
+			while count < 10 and not dp.iscanceled() and not xbmc.abortRequested:
+				count += 1
+				xbmc.sleep(500)
+				dp.update(count * 10,'F--e--a--t--h--e--r--e--n--c--e[CR]F--e--a--t--h--e--r--e--n--c--e','F--e--a--t--h--e--r--e--n--c--e[CR]F--e--a--t--h--e--r--e--n--c--e')
+			xbmc.sleep(500)
+			dp.close
 	
 	
 def mode33(admin, name, printpoint):
@@ -1063,13 +1081,16 @@ def mode63(admin, name):
 		dp.create("featherence Texture-Cache-Removal", "Removing Datebase", " ")
 		removefiles(database_path)
 		dp.update(20,"Removing Thumbnails"," ")
-		removefiles(thumbnails_path)
-		dp.update(90,addonString(33300).encode('utf-8')," ")
+		removefiles(thumbnails_path,dialogprogress=20)
+		if os.path.exists(thumbnails_path): message = 'Error'
+		else: message = addonString(33300).encode('utf-8')
+		dp.update(90,message," ")
 		xbmc.sleep(1000)
-		dp.update(100,addonString(33300).encode('utf-8')," ")
+		dp.update(100,message," ")
 		dp.close
-		dialogok("Reboot Required!", "Click OK", "", "")
-		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=50)')
+		if not os.path.exists(thumbnails_path) and not os.path.exists(database_path): dialogok("Reboot Required!", "Click OK", "", "")
+		else: dialogok("Couldn't remove thumbnails / database folder", "You should remove them manualy or reboot and retry!", "", "")
+		#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=50)')
 		
 	else: notification_common("9")
 
@@ -2904,12 +2925,17 @@ def mode214(value, admin, name, printpoint):
 	if value == '5':
 		'''SelectedColor'''
 		property_selectedcolor = xbmc.getInfoLabel('Window(home).Property(SelectedColor)')
-		returned = dialogkeyboard(property_selectedcolor,'Choose manual color code',0,"","","")
+		currentbuttoncolor = xbmc.getInfoLabel('Skin.String(color'+property_buttonid_+')')
+		notification(currentbuttoncolor,'Skin.String(color'+property_buttonid_+')','',2000)
+		if property_selectedcolor == "" and property_buttonid_ != "": value2 = currentbuttoncolor
+		else: value2 = property_selectedcolor
+		
+		returned = dialogkeyboard(value2,'Choose manual color code',0,"","","")
 		if returned != 'skip':
 			if returned != "":
 				path = os.path.join(skin_path, 'media', 'buttons', 'colors', str(returned) + '.png')
 				if os.path.exists(path):
-					if str(returned) == property_selectedcolor: pass
+					if str(returned) == currentbuttoncolor: pass
 					else:
 						setProperty('SelectedColor', str(returned), type="home")
 						notification('New color selected!', str(returned), '', 1000)
@@ -3090,15 +3116,17 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "ListItemUnWatchedEpisodes" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemUnWatchedEpisodes)')
 			message = message + newline + "ListItemTVShowTitle" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemTVShowTitle)')
 			message = message + newline + "ListItemDuration" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemDuration)')
+			message = message + newline + "ListItemPoster" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemPoster)')
 			message = message + newline + '---------------------------'
 			for i in range(1,9):
 				message = message + newline + "TopVideoInformation" + str(i) + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation'+str(i)+')')
 			message = message + newline + '---------------------------'
+			message = message + newline + "tips" + space2 + xbmc.getInfoLabel('Window(home).Property(tips)')
 			message = message + newline + "ListItem.Path" + space2 + xbmc.getInfoLabel('ListItem.Path')
 			message = message + newline + "Container.FolderPath" + space2 + xbmc.getInfoLabel('Container.FolderPath')
 			message = message + newline + "Container.FolderName" + space2 + xbmc.getInfoLabel('Container.FolderName')
 			message = message + newline + '---------------------------'
-			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('Window(Home).Property(SkinHelper.MovieSet.Title)') #CUSTOM TEST
+			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('ListItem.Art(Poster)') #CUSTOM TEST
 			message = message + newline + "custom2" + space2 + xbmc.getInfoLabel('ListItem.IsCollection') #CUSTOM TEST
 			message = message + newline + "custom3" + space2 + str(xbmc.getCondVisibility('VideoPlayer.Content(episodes)')) #CUSTOM TEST
 			

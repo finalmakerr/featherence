@@ -241,9 +241,9 @@
 		  <include>Slide2</include>
 		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
 		  <posx>-10</posx>
-		  <posy>360</posy>
+		  <posy>147</posy>
 		  <width>480</width>
-		  <height>720</height>
+		  <height>934</height>
 		  <include>4ways</include>
 		  <viewtype label="31011">List</viewtype>
 		  <include>ViewDesign_51_Layout</include>

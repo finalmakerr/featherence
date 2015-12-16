@@ -25,7 +25,7 @@
   
   <include name="Design_TopButtons">
 	<control type="grouplist" id="9009" description="כפתורים עליונים">
-	  <animation condition="Window.IsVisible(Home.xml) + System.IdleTime(3) + [Control.HasFocus(311) | Control.HasFocus(312)]" effect="fade" start="100" end="0" delay="0" time="700" reversible="false">Conditional</animation>
+	  <animation condition="Window.IsVisible(Home.xml) + System.IdleTime(3) + [Control.HasFocus(311) | Control.HasFocus(312) | System.IdleTime(5)]" effect="fade" start="100" end="0" delay="0" time="700" reversible="false">Conditional</animation>
 	  <visible>[Window.IsVisible(Home.xml) + !Skin.HasSetting(widget) + [Control.IsVisible(311) | Control.IsVisible(312)]] | !Window.IsVisible(Home.xml)</visible>
 	  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml) | !Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 	  <visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() | ![!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)]</visible>
@@ -94,6 +94,8 @@
       <include description="פנל מדף פרקים שנוספו לאחרונה" condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RAIR</include> 
       <include condition="Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
 	  <!--<include condition="Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)">MenuDesign_Widget</include>-->
+	  <onright condition="Control.IsVisible(9009) + !StringCompare(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onright>
+	  <onleft condition="Control.IsVisible(9009) + StringCompare(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onleft>
 	  <onup condition="Control.IsVisible(9009)">9009</onup>
 	  <onup condition="Control.IsVisible(7011)">7017</onup>
 	  <onup condition="Player.HasAudio + !Control.IsVisible(9009)">ActivateWindow(12901)</onup>
@@ -132,7 +134,7 @@
 	  <visible>Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)</visible>
 	  <posx>30</posx>
 	  <posy>820</posy>
-	  <width>1850</width>
+	  <width>1860</width>
 	  <height>1040</height>
 	  <onleft>9000</onleft>
 	  <onright>9000</onright>
@@ -162,13 +164,13 @@
 	  <height>920</height>
 	  <onup>9000</onup>
 	  <ondown>9000</ondown>
-	  <onright condition="Control.IsVisible(7011)">7017</onright>
-	  <onright condition="Control.IsVisible(700)">700</onright>
-	  <onright condition="Control.IsVisible(9009)">9009</onright>
+	  <onright condition="Control.IsVisible(7011) + !StringCompare(System.Language,Hebrew)">7017</onright>
+	  <onright condition="Control.IsVisible(700) + !StringCompare(System.Language,Hebrew)">700</onright>
+	  <onright condition="Control.IsVisible(9009) + !StringCompare(System.Language,Hebrew)">9009</onright>
 	  <onright>520</onright>
-	  <onleft condition="Control.IsVisible(7011)">7017</onleft>
-	  <onleft condition="Control.IsVisible(700)">700</onleft>
-	  <onleft condition="Control.IsVisible(9009)">9009</onleft>
+	  <onleft condition="Control.IsVisible(7011) + StringCompare(System.Language,Hebrew)">7017</onleft>
+	  <onleft condition="Control.IsVisible(700) + StringCompare(System.Language,Hebrew)">700</onleft>
+	  <onleft condition="Control.IsVisible(9009) + StringCompare(System.Language,Hebrew)">9009</onleft>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
 	  <orientation>vertical</orientation>
 	  <include condition="Skin.String(MenuDesign,4)" description="מאונך">MenuDesign_Home2</include>
@@ -182,9 +184,7 @@
   <include name="MenuDesign_Home" description="פנל/מאוזן">
     <itemlayout height="230" width="368">
 	  <control type="group">
-		<animation condition="Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus | IntegerGreaterThan(Container(9000).NumItems,7)] + System.IdleTime(7)" effect="slide" start="0,0" end="0,1080" delay="3000" time="700" reversible="true">Conditional</animation>
-		<animation condition="[Control.HasFocus(311) | Control.HasFocus(312) | IntegerGreaterThan(Container(9000).NumItems,5)] + System.IdleTime(3)" effect="fade" start="100" end="70" time="220" reversible="true">Conditional</animation>
-		<animation condition="[Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | [Control.HasFocus(311) | Control.HasFocus(312) | IntegerGreaterThan(Container(9000).NumItems,5)] + System.IdleTime(7)]" effect="fade" start="70" end="40" time="220" reversible="true">Conditional</animation>
+		<include>MenuDesign_Home_itemlayout</include>
         <control type="image" description="צבע">
 		  <height>180</height>
 		  <posx>30</posx>
@@ -272,7 +272,8 @@
 		  <width>312</width>
         </control>
         <control type="label" description="כותרת">
-          <include>LabelC1</include>
+          <textcolor>$VAR[IconUnFocusColor]</textcolor>
+		  <include>LabelC1</include>
 		  <posx>0</posx>
           <posy>220</posy>
           <width>368</width>
@@ -392,8 +393,8 @@
 		  <width>332</width>
         </control>
         <control type="label" description="כותרת נבחר">
-          <animation effect="fade" start="80" end="100" time="220" delay="0">Focus</animation>
-          <textcolor>Yellow</textcolor>
+          <textcolor>$VAR[IconFocusColor]</textcolor>
+		  <animation effect="fade" start="80" end="100" time="220" delay="0">Focus</animation>
 		  <include>LabelC1</include>
 		  <posx>0</posx>
           <posy>220</posy>
@@ -409,9 +410,7 @@
   <include name="MenuDesign_Home1" description="פנל2/מאוזן2">
     <itemlayout height="230" width="250">
 	  <control type="group">
-		<animation condition="Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus | IntegerGreaterThan(Container(9000).NumItems,7)] + System.IdleTime(7)" effect="slide" start="0,0" end="0,1080" delay="3000" time="700" reversible="true">Conditional</animation>
-		<animation condition="[Control.HasFocus(311) | Control.HasFocus(312) | IntegerGreaterThan(Container(9000).NumItems,5)] + System.IdleTime(3)" effect="fade" start="100" end="70" time="220" reversible="true">Conditional</animation>
-		<animation condition="[Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | [Control.HasFocus(311) | Control.HasFocus(312) | IntegerGreaterThan(Container(9000).NumItems,5)] + System.IdleTime(7)]" effect="fade" start="70" end="40" time="220" reversible="true">Conditional</animation>
+		<include>MenuDesign_Home_itemlayout</include>
         <control type="image" description="צבע">
 		  <height>180</height>
 		  <posx>30</posx>
@@ -499,7 +498,8 @@
 		  <width>312</width>
         </control>
         <control type="label" description="כותרת">
-          <include>LabelC1</include>
+          <textcolor>$VAR[IconUnFocusColor]</textcolor>
+		  <include>LabelC1</include>
 		  <posx>0</posx>
           <posy>220</posy>
           <width>368</width>
@@ -619,8 +619,8 @@
 		  <width>332</width>
         </control>
         <control type="label" description="כותרת נבחר">
-          <animation effect="fade" start="80" end="100" time="220" delay="0">Focus</animation>
-          <textcolor>Yellow</textcolor>
+          <textcolor>$VAR[IconFocusColor]</textcolor>
+		  <animation effect="fade" start="80" end="100" time="220" delay="0">Focus</animation>
 		  <include>LabelC1</include>
 		  <posx>0</posx>
           <posy>220</posy>
@@ -639,7 +639,7 @@
 		<animation description="VerticalMenu" condition="[Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="200,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<animation description="VerticalMenu" condition="[Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-170,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
-		<animation condition="[Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | Control.HasFocus(311) | Control.HasFocus(312) | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]]" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
+		<animation condition="[Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | !Skin.HasSetting(FixedUnFocusButtonsTransperancy) + [Control.HasFocus(311) | Control.HasFocus(312) | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]]]" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
         <control type="image" description="צבע">
 		  <height>100</height>
 		  <posx>0</posx>
@@ -728,6 +728,7 @@
 		  <width>212</width>
         </control>
         <control type="label" description="כותרת">
+		  <textcolor>$VAR[IconUnFocusColor]</textcolor>
           <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
 		  <posx>10</posx>
@@ -853,6 +854,7 @@
 		  <width>232</width>
         </control>
         <control type="label" description="כותרת נבחר">
+		  <textcolor>$VAR[IconFocusColor]</textcolor>
 		  <animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
           <animation effect="fade" start="80" end="100" time="220" delay="0">Focus</animation>
           <textcolor>Yellow</textcolor>

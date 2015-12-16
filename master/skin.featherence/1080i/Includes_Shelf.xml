@@ -99,6 +99,14 @@
       </control>
     </itemlayout>
     <focusedlayout height="350" width="368">
+	  <control type="button">
+	    <onunfocus condition="!IsEmpty(Window(home).Property(TopVideoInformation6))">AlarmClock(TopVideoInformation6,ClearProperty(TopVideoInformation6,home),00:02,silent)</onunfocus>
+		<onfocus condition="!IsEmpty(Container(311).ListItemNoWrap(0).Property(genre))">AlarmClock(TopVideoInformation6,SetProperty(TopVideoInformation6,$INFO[Container(311).ListItemNoWrap(0).Property(genre)],home),00:01,silent)</onfocus>
+		
+		<onunfocus condition="!IsEmpty(Window(home).Property(TopVideoinformation1))">AlarmClock(TopVideoinformation1,ClearProperty(TopVideoinformation1,home),00:02,silent)</onunfocus>
+		<onfocus condition="!IsEmpty(Container(311).ListItemNoWrap(0).Property(runtime))">AlarmClock(TopVideoinformation1,SetProperty(TopVideoinformation1,$INFO[Container(311).ListItemNoWrap(0).Property(runtime)],home),00:01,silent)</onfocus>
+		<visible>false</visible>
+	  </control>
 	  <control type="group">
 	    <animation condition="System.IdleTime(3)" effect="fade" start="100" end="40" time="3000" reversible="true">Conditional</animation>
 		  <control type="image" description="רקע פאנארט">

@@ -1875,28 +1875,47 @@ def removeaddons(addons, custom):
 	print printfirst + "removeaddons" + space + "addons" + space2 + str(addons) + space + "custom" + space2 + custom + space + "output" + space2 + output + newline + output2
 	'''---------------------------'''
 
-def removefiles(path, filteroff=[]):
+def removefiles(path, filteroff=[], dialogprogress=""):
 	name = 'removefiles' ; printpoint = "" ; path1 = path[-1:] ; TypeError = "" ; extra = ""
+	if dialogprogress != "":
+		try:
+			dialogprogress_ = dialogprogress
+			dialogprogress_ + 1 - 1
+		except: dilogprogress = ""
 	if 1 + 1 == 2:
 		if "*" in path: path = path.replace("*","")
 		if os.path.exists(path):
 			import shutil
-			if os.path.isdir(path) == True or "\*" in path:
+			if dialogprogress != "": printpoint = printpoint + "5"
+			elif os.path.isdir(path) == True or "\*" in path:
 				try:
 					if filteroff != []: error
 					shutil.rmtree(path)
 					printpoint = printpoint + "7"
 				except Exception, TypeError:
-					printpoint = printpoint + "5"
 					if 'The process cannot access the file because it is being used by another process' in TypeError or "global name 'error' is not defined" in TypeError:
-						for file in os.listdir(path):
-							x = os.path.join(path, file)
-							#print x
-							if file in filteroff: print printfirst + name + space + 'Skip' + space + str(x)
-							else:
-								try: removefiles(x)
-								except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
-					else: extra = extra + newline + "TypeError" + space2 + str(TypeError)
+						printpoint = printpoint + "5"
+			
+			if '5' in printpoint:
+				printpoint = printpoint + "A"
+				if dialogprogress != "":
+					printpoint = printpoint + "B"
+					dp = xbmcgui.DialogProgress()
+					dp.create("Removing: " + path, "", " ")
+					sumfolders = 0
+					for folder in os.listdir(path):
+						sumfolders += 1
+					progress_ = sumfolders * 100 / (100 - dialogprogress)
+				for file in os.listdir(path):
+					if dialogprogress != "":
+						dp.update(dialogprogress + progress_,str(os.listdir(path))," ")
+					x = os.path.join(path, file)
+					#print x
+					if file in filteroff: print printfirst + name + space + 'Skip' + space + str(x)
+					else:
+						try: removefiles(x)
+						except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
+				if dialogprogress != "": dp.close
 			else:
 				os.remove(path)
 				printpoint = printpoint + "7"
@@ -2710,10 +2729,10 @@ def killall(admin, custom=""):
 	name = 'killall' ; extra = "" ; TypeError = "" ; printpoint = ""
 	target = guisettings_file
 	if "1" in custom:
-		if customgui: printpoint = printpoint + '9'
+		if customgui or 1 + 1 == 2: printpoint = printpoint + '9'
 		else:
 			import shutil
-			from shared_modules4 import *
+			#from shared_modules4 import *
 			x = os.path.join(addondata_path,'skin.featherence', '')
 			if not os.path.exists(x): os.mkdir(x)
 			if not os.path.exists(featherenceservice_addondata_path): os.mkdir(featherenceservice_addondata_path)
