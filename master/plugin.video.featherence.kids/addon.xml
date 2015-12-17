@@ -8,7 +8,6 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <language>he</language>
 	<platform>all</platform>
     <summary lang="en">Light &amp; Genious Kids addon</summary>
 	<summary lang="he">הרחבת ילדים קלילה וגהונית</summary>
