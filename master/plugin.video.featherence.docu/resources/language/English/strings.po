@@ -367,3 +367,8 @@ msgctxt "#10403
 msgid "Technology"
 msgstr "טכנולוגיה"
 
+
+msgctxt "#10801
+msgid "kids"
+msgstr "ילדים"
+

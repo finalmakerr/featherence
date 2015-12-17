@@ -11,14 +11,19 @@
   <extension point="xbmc.addon.metadata">
     <language>he</language>
 	<platform>all</platform>
-    <summary lang="en"></summary>
-	<summary lang="he"></summary>
-    <description lang="en"></description>
-	<description lang="he"></description>
+    <summary lang="en">Light &amp; Genious Documentary addon</summary>
+	<summary lang="he">הרחבת דוקומנטרי קלילה וגהונית</summary>
+    <description>Features:
+- Smart TV Mode.
+- Smart Interface allow the users to create thier own music buttons and share with others.
+- Customized Fanart for each button.
+- Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox...
+- Smart Search button..
+- Sorted and Organized contents.</description>
     <disclaimer lang="en"></disclaimer>
 	<forum></forum>
 	<email>featherence@groups.facebook.com</email>
-	<source></source>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.docu</source>
 	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
