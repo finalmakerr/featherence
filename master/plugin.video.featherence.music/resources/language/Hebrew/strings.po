@@ -569,7 +569,7 @@ msgstr "[COLOR=Yellow]כל הזמרים המובילים מחו"ל![/COLOR][CR][
 
 msgctxt "#1120
 msgid ""
-msgstr "[COLOR=Yellow]כל שירי הקריוקי מחו"ל![/COLOR][CR][CR]"
+msgstr ""
 
 msgctxt "#1130
 msgid ""
@@ -797,8 +797,8 @@ msgid "Berry Sakharof"
 msgstr "פורטיסחרוף"
 
 msgctxt "#10136
-msgid ""
-msgstr ""
+msgid "Kobi Aflalo"
+msgstr "קובי אפללו"
 
 msgctxt "#10137
 msgid "Kobi Peretz"
@@ -1456,33 +1456,40 @@ msgctxt "#100010
 msgid ""
 msgstr "[COLOR=Yellow]פלייליסטים אוסף אישי[/COLOR]"
 
+#אביתר בנאי
 msgctxt "#101010
-msgid "אביתר בנאי"
-msgstr "[COLOR=Yellow][/COLOR]אביתר בנאי (נולד ב-8 בפברואר 1973, ו' באדר א' ה'תשל"ג) הוא זמר-יוצר ישראלי, בן למשפחת בנאי"
+msgid "Eviatar Banai was born on February 8, 1973, is an Israeli singer-songwriter"
+msgstr "אביתר בנאי (נולד ב-8 בפברואר 1973, ו' באדר א' ה'תשל"ג) הוא זמר-יוצר ישראלי, בן למשפחת בנאי"
 
+#אברהם טל
 msgctxt "#101020
-msgid "אברהם טל"
-msgstr "[COLOR=Yellow][/COLOR]אברהם טל (נולד ב-28 בנובמבר 1976) הוא זמר, מוזיקאי ומפיק מוזיקלי ישראלי."
+msgid "Avraham Tal was born on November 28, 1976 is a singer, musician and record producer Israeli..."
+msgstr "אברהם טל (נולד ב-28 בנובמבר 1976) הוא זמר, מוזיקאי ומפיק מוזיקלי ישראלי..."
 
+#אייל גולן
 msgctxt "#101030
-msgid "אייל גולן"
-msgstr "[COLOR=Yellow][/COLOR]אייל גולן (נולד ב-12 באפריל 1971) הוא זמר ישראלי, הנחשב לאחד הזמרים המצליחים בישראל. רוב אלבומיו הגיעו למעמד אלבום פלטינה.."
+msgid "Eyal Golan, born 12 April 1971 is an Israeli singer, considered one of the most successful singers in Israel. Most of his albums reached platinum album status ..."
+msgstr "אייל גולן (נולד ב-12 באפריל 1971) הוא זמר ישראלי, הנחשב לאחד הזמרים המצליחים בישראל. רוב אלבומיו הגיעו למעמד אלבום פלטינה.."
 
 msgctxt "#101040
 msgid ""
 msgstr ""
 
+#אתניX
 msgctxt "#101050
-msgid "אתניX"
-msgstr "[COLOR=Yellow][/COLOR]אתניX ("אתניקס") היא להקה ישראלית הפועלת ברציפות משנת 1989 עד היום. הלהקה הוכתרה שבע פעמים כ"להקת השנה" במסגרת "מצעד הפזמונים העברי השנתי", יותר מכל להקה אחרת בישראל..."
+msgid "
+Ethnic X ("Etnix") is an Israeli-based band continuously from 1989 until today. The band was named seven times Band of the Year "in the" hit parade of the annual Hebrew, "more than any other band in Israel ...""
+msgstr "אתניX ("אתניקס") היא להקה ישראלית הפועלת ברציפות משנת 1989 עד היום. הלהקה הוכתרה שבע פעמים כ"להקת השנה" במסגרת "מצעד הפזמונים העברי השנתי", יותר מכל להקה אחרת בישראל..."
 
+#דודו אהרון
 msgctxt "#101070
-msgid "דודו אהרון"
-msgstr "[COLOR=Yellow][/COLOR]  נולד ב 23 בדצמבר 1984  הוא זמר, יוצר, מוזיקאי, מלחין ופזמונאי ישראלי."
+msgid "Born on December 23, 1984 is a singer, creator, musician, composer, lyricist Israeli ..."
+msgstr "נולד ב 23 בדצמבר 1984  הוא זמר, יוצר, מוזיקאי, מלחין ופזמונאי ישראלי..."
 
+#גיא ויהל
 msgctxt "#101080
-msgid "גיא ויהל"
-msgstr "[COLOR=Yellow][/COLOR]  הם צמד זמרים-יוצרים ישראלים המורכב מגיא מנטש ויהל דורון.."
+msgid "They are a pair of singer-songwriters, composed of Israeli and Guy Mensch Yahel Doron ..."
+msgstr "הם צמד זמרים-יוצרים ישראלים המורכב מגיא מנטש ויהל דורון..."
 
 msgctxt "#101090
 msgid ""
@@ -1492,36 +1499,48 @@ msgctxt "#101100
 msgid ""
 msgstr "[COLOR=Yellow][/COLOR]   " 
 
+#דני סנדרסון
 msgctxt "#101110
-msgid "דני סנדרסון"
-msgstr "(נולד ב-30 בנובמבר 1950) הוא גיטריסט, זמר, מוזיקאי, סופר, פזמונאי, מלחין ומפיק מוזיקלי ישראלי."
+msgid "Born on 30 November 1950 is a guitarist, singer, musician, writer, songwriter, composer and record producer Israeli ..."
+msgstr "(נולד ב-30 בנובמבר 1950) הוא גיטריסט, זמר, מוזיקאי, סופר, פזמונאי, מלחין ומפיק מוזיקלי ישראלי..."
 
+#הדודאים
+msgctxt "#101480
+msgid "There were a couple of singers, Benny Amdurski and Israel Gurion, who between 1957-1993 was one of the leading pairs Hebrew song ..."
+msgstr "היו צמד זמרים, בני אמדורסקי וישראל גוריון, אשר בין השנים 1957-1993 היה אחד מהצמדים המובילים בזמר העברי..."
+
+#הפרוייקט של רביבו
 msgctxt "#101120
-msgid "הפרוייקט של רביבו"
+msgid "Revivo is the project of a musical composition Israeli operation cover versions of songs released in the seventies and eighties ..."
 msgstr "הפרויקט של רביבו הוא הרכב מוזיקלי ישראלי המבצע גרסאות כיסוי של שירים שהתפרסמו בשנות השבעים והשמונים... "
 
+#הראל סקעת
 msgctxt "#101130
-msgid "הראל סקעת"
-msgstr " (נולד ב-8 באוגוסט 1981 בכפר סבא) הוא זמר ושחקן ישראלי."
+msgid "Born on August 8, 1981 in Kfar Saba is an Israeli singer and actor ..."
+msgstr "נולד ב-8 באוגוסט 1981 בכפר סבא הוא זמר ושחקן ישראלי..."
 
+#חיים משה
 msgctxt "#101140
-msgid "חיים משה"
-msgstr "(נולד ב-20 בספטמבר 1955 ברמת השרון) הוא זמר ישראלי. הסגנון המוזיקלי שלו כולל זמר ים-תיכוני, מוזיקה ישראלית, ופופ.."
+msgid "Born on September 20, 1955 in Ramat Hasharon is an Israeli singer. His musical style includes singer Mediterranean, Israeli music, and pop ..."
+msgstr "נולד ב-20 בספטמבר 1955 ברמת השרון הוא זמר ישראלי. הסגנון המוזיקלי שלו כולל זמר ים-תיכוני, מוזיקה ישראלית, ופופ..."
 
+#כוורת דודה גזוז
 msgctxt "#101150
-msgid "כוורת דודה גזוז"
+msgid "The band members are leading in all vehicles Gidi Gov and Danny Sanderson bands were in the seventies of the 20th century"
 msgstr "חברי הלהקה המובילים בכל ההרכבים הם גידי גוב ודני סנדרסון הלהקות פעלו בשנות השבעים של המאה ה 20"
 
 msgctxt "#101160
 msgid ""
 msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
 
+#ישי לוי
 msgctxt "#101170
-msgid "ישי לוי"
-msgstr "ישי לוי (נולד ב-20 בינואר 1963) הוא זמר ישראלי, הנחשב לאחד ממובילי המוזיקה המזרחית והים תיכונית בישראל.."
+msgid "Yishai Levy was born on January 20, 1963 is an Israeli singer, considered one of the leaders of Mizrahi music in Israel and the Mediterranean ..."
+msgstr "ישי לוי (נולד ב-20 בינואר 1963) הוא זמר ישראלי, הנחשב לאחד ממובילי המוזיקה המזרחית והים תיכונית בישראל..."
 
+#ליאור נרקיס
 msgctxt "#101180
-msgid "ליאור נרקיס"
+msgid "Born on November 8, 1976 is an Israeli singer. Previously he was minister of music and currently Minister of depression Eastern Mediterranean music and pop music ..."
 msgstr "(נולד ב-8 בנובמבר 1976) הוא זמר ישראלי. בעברו היה שר מוזיקת דיכאון וכיום שר מוזיקה מזרחית ים תיכונית וגם מוזיקת פופ..."
 
 msgctxt "#101190
@@ -1530,121 +1549,138 @@ msgstr "
 
 #מזי כהן
 msgctxt "#101200
-msgid ""
+msgid "She was born on April 29, 1959 is an Israeli singer and musician. At the beginning, appeared as a soloist of the band trimmed and since has worked with dozens of Israeli musicians ..."
 msgstr "(נולדה ב-29 באפריל 1959) היא זמרת ומוזיקאית ישראלית. התפרסמה בתחילת דרכה כסולנית של להקת גזוז ומאז שיתפה פעולה עם עשרות מוזיקאים ישראלים..."
 
 #מוש בן ארי ולהקת שבע
 msgctxt "#101210
-msgid ""
+msgid "Born on September 26, 1970) is a singer, musician, songwriter and music composer ..."
 msgstr "נולד ב-26 בספטמבר 1970) הוא זמר, מוזיקאי, פזמונאי ומלחין ישראלי..."
 
+#מושיק עפיה
 msgctxt "#101220
-msgid "מושיק עפיה"
-msgstr "(נולד ב-3 באוקטובר 1974 בחולון) הוא זמר ישראלי ששר בסגנון מזרחי..."
+msgid "Born on October 3, 1974 in Holon is an Israeli singer who sang in oriental style..."
+msgstr "נולד ב-3 באוקטובר 1974 בחולון) הוא זמר ישראלי ששר בסגנון מזרחי..."
 
+#מירי מסיקה
 msgctxt "#101230
-msgid "מירי מסיקה"
-msgstr "(נולדה ב-3 במאי 1978) היא זמרת, שחקנית ודוגמנית ישראלית..."
+msgid "Born on May 3, 1978 is a singer, actress and model Israeli ..."
+msgstr "נולדה ב-3 במאי  1978 היא זמרת, שחקנית ודוגמנית ישראלית..."
 
+#מאור אדרי
 msgctxt "#101240
-msgid "מאור אדרי"
-msgstr "(נולד ב-17 באפריל 1989) הוא זמר, כותב ומלחין מוזיקה מזרחית ישראלי...."
+msgid "Born on 17 April 1989, is a singer, writer and composer Israeli Oriental music ..."
+msgstr "נולד ב-17 באפריל 1989 הוא זמר, כותב ומלחין מוזיקה מזרחית ישראלי..."
 
+#משה פרץ
 msgctxt "#101250
-msgid "משה פרץ"
-msgstr "(נולד ב-10 במאי 1983, כ"ז באייר תשמ"ג) הוא זמר, מלחין ופזמונאי ישראלי...."
+msgid "Born on 10 May 1983, is a singer, composer and songwriter Israeli ..."
+msgstr "נולד ב-10 במאי 1983, כ"ז באייר תשמ"ג הוא זמר, מלחין ופזמונאי ישראלי..."
 
+#משינה
 msgctxt "#101260
-msgid "משינה"
-msgstr "להקת רוק ישראלית, הנחשבת בעיני רבים לאחת הלהקות הבולטות שפעלו בישראל‏...."
+msgid "Israeli rock band, considered by many one of the most prominent bands operating in Israel ..."
+msgstr "להקת רוק ישראלית, הנחשבת בעיני רבים לאחת הלהקות הבולטות שפעלו בישראל‏..."
 
+#נתן גושן
 msgctxt "#101270
-msgid "נתן גושן"
-msgstr "נולד ב  6 באוגוסט 1986 זמר, פזמונאי ומלחין ישראלי....."
+msgid "Born on August 6, 1986 a singer, songwriter and music composer ..."
+msgstr "נולד ב  6 באוגוסט 1986 זמר, פזמונאי ומלחין ישראלי..."
 
 msgctxt "#101290
 msgid ""
 msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
 
+#עיברי לידר
 msgctxt "#101300
-msgid "עיברי לידר"
-msgstr "נולד ב  10 בפברואר 1974 הוא זמר-יוצר, מלחין ופזמונאי ישראלי זוכה פרס אקו"ם‏  ..."
+msgid "Born on 10 February 1974 is a singer-songwriter, composer and lyricist Acum Prize-winning Israeli Israeli singer first came out of the closet"
+msgstr "נולד ב  10 בפברואר 1974 הוא זמר-יוצר, מלחין ופזמונאי ישראלי זוכה פרס אקו"ם‏ ..."
 
+#עידן רייכל
 msgctxt "#101320
-msgid "עידן רייכל"
+msgid "Born on September 12, 1977, is a musician, songwriter, composer, singer-songwriter, arranger and record producer Israel. Best known as a producer, "Idan Raichel Project ..."
 msgstr " (נולד ב-12 בספטמבר 1977), הוא מוזיקאי, פזמונאי, מלחין, זמר-יוצר, מעבד ומפיק מוזיקלי ישראלי. מוכר בעיקר כמפיק "הפרויקט של עידן רייכל ..."
 
+#עדן בן זקן
+msgctxt "#101460
+msgid "She was born on June 8, 1994 Israeli singer ..."
+msgstr "נולדה ב-8 ביוני 1994 היא זמרת ישראלית...
+
+#עומר אדם
 msgctxt "#101330
-msgid "עומר אדם"
-msgstr "(נולד ב-22 באוקטובר 1993 בארצות הברית) הוא זמר ישראלי השר מוזיקת פופ ים-תיכוני.‏  ..."
+msgid "Born on 22 October 1993 in the United States is an Israeli singer Minister pop music Mediterranean. ..."
+msgstr "נולד ב-22 באוקטובר 1993 בארצות הברית הוא זמר ישראלי השר מוזיקת פופ ים-תיכוני ..."
 
 msgctxt "#101340
 msgid ""
-msgstr "[COLOR=Yellow]עמיר (עמרם)‏ בניון (נולד ב-כ"ג באלול תשל"ה, 30 באוגוסט 1975‏) הוא זמר-יוצר, מוזיקאי, פזמונאי ומלחין ישראלי.[/COLOR][CR][CR]עמרם בניון נולד בבאר שבע ב-30 באוגוסט 1975. כבר מגיל צעיר החל לגלות עניין רב במוזיקה והיה שר ומנגן עם אביו ואחיו אבי. תוך כדי כתיבת המוזיקה התפרנס מעבודות בשיפוצים וחסך כסף להפקת אלבומו הראשון. הוא התגייס לצה"ל, אך שוחרר לאחר ימים בודדים עקב בעיות סמים. לאחר השחרור עבר תהליך גמילה שהצליח‏.[CR]ב-1 בינואר 1999 הוציא את אלבומו הראשון, "רק את", בעיבודים ובהפקה מוזיקלית של חברו נדב ביטון. לאחר הקלטת מספר סקיצות, שלח אותן בניון למיכה שטרית, שהחליט להפיק את האלבום. האלבום זכה להצלחה גדולה, עם מכירות של יותר מ-40,000 עותקים. בין שיריו המוכרים היו "כשאת עצובה", "מורה לחיים", "אולי הפעם", "יש לי חלום" ושיר הזיכרון "גולן"."
+msgstr ""
 
+#פאר טסי
 msgctxt "#101350
-msgid "פאר טסי"
-msgstr "(נולד ב-10 במאי 1984) הוא זמר, כותב ומלחין מוזיקה ים-תיכונית ישראלי..."
+msgid "Born on May 10, 1984 is the singer-songwriter and music composer Israeli Mediterranean ..."
+msgstr "נולד ב-10 במאי 1984 הוא זמר, כותב ומלחין מוזיקה ים-תיכונית ישראלי..."
 
+#פורטיסחרוף
 msgctxt "#101060
-msgid "פורטיסחרוף"
-msgstr "(נולד ב-7 ביולי 1957), הוא זמר, מוזיקאי, פזמונאי, מלחין ומפיק מוזיקלי ישראלי."
+msgid "Born July 7, 1957, is a singer, musician, songwriter, composer and record producer Israeli ..."
+msgstr "נולד ב-7 ביולי 1957, הוא זמר, מוזיקאי, פזמונאי, מלחין ומפיק מוזיקלי ישראלי..."
 
 msgctxt "#101360
 msgid ""
 msgstr "" 
 
+#קובי פרץ
 msgctxt "#101370
-msgid "קובי פרץ"
-msgstr "(נולד ב-28 באוקטובר 1975) הוא זמר ישראלי השר מוזיקה מזרחית ופופ דאנס.."
+msgid "Born on 28 October 1975 an Israeli singer who sang pop music and oriental dance ..."
+msgstr "נולד ב-28 באוקטובר 1975 הוא זמר ישראלי השר מוזיקה מזרחית ופופ דאנס"
 
+#קרן פלס
 msgctxt "#101380
-msgid ""
-msgstr "נולדה ב 11 במרץ 1979..."
+msgid "Born on 11 March 1979 is a singer and generates pop-rock style and an Israeli actress, born Yavniel"
+msgstr "נולדה ב-11 במרץ 1979 היא זמרת ויוצרת בסיגנון פופ-רוק ושחקנית ישראלית, נולדה ביבניאל"
 
+#ריטה
 msgctxt "#101390
-msgid "ריטה"
-msgstr "ריטה יהאן-פרוז (לשעבר קלינשטיין; נולדה ב-24 במרץ 1962), המוכרת יותר בשמה הפרטי בלבד, היא זמרת ושחקנית ישראלית...."
+msgid "Rita Jehan ex-porosity Kleinstein; Born on March 24, 1962, better known by her first name only, is an Israeli actress and singer ..."
+msgstr "ריטה יהאן-פרוז לשעבר קלינשטיין; נולדה ב-24 במרץ 1962, המוכרת יותר בשמה הפרטי בלבד, היא זמרת ושחקנית ישראלית..."
 
+#רמי קליינשטיין
 msgctxt "#101400
-msgid "רמי קליינשטיין"
-msgstr " (נולד ב-10 בנובמבר 1962) הוא זמר-יוצר, מלחין ומפיק מוזיקלי ישראלי. פעילותו מתמקדת בכתיבת חומר מקורי לעצמו ובעבר גם לזמרת ריטה, מי שהייתה אשתו..."
+msgid "Born on November 10, 1962 is singer-songwriter, composer and record producer Israel. Activities concentrate on writing original material itself and the past singer Rita, who was his wife ..."
+msgstr " נולד ב-10 בנובמבר 1962 הוא זמר-יוצר, מלחין ומפיק מוזיקלי ישראלי. פעילותו מתמקדת בכתיבת חומר מקורי לעצמו ובעבר גם לזמרת ריטה, מי שהייתה אשתו...
 
+#שירי מיימון
 msgctxt "#101410
-msgid ""
-msgstr "(נולדה ב-17 במאי 1981) היא זמרת, שחקנית ומנחת טלוויזיה ישראלית ..."
+msgid "She was born on 17 May 1981 is a singer, actress and TV anchor Israeli ..."
+msgstr "נולדה ב-17 במאי 1981 היא זמרת, שחקנית ומנחת טלוויזיה ישראלית ..."
 
+#שלום חנוך
 msgctxt "#101420
-msgid "שלום חנוך"
-msgstr " (נולד ב-1 בספטמבר 1946) הוא זמר-יוצר, פזמונאי ומלחין ישראלי, הנחשב לאחד מראשוני היוצרים ברוק הישראלי. יצירתו, הן במסגרת שיתופי פעולה עם אמנים אחרים בתחילת דרכו והן לאחר מכן כסולן, השפיעה רבות על המוזיקה הפופולרית בישראל. במיוחד מוכר שיתוף הפעולה שלו עם הזמר אריק איינשטיין, שהניב את אלבומי הרוק הישראליים הראשונים.‏  ..."
+msgid "Born on 1 September 1946 is singer-songwriter, lyricist and music composer, considered one of the first Israeli rock artists. Work, both in collaboration with other artists initially and then as a soloist, greatly influenced popular music in Israel. Especially recognized for his collaboration with singer Arik Einstein, produced the first Israeli rock albums..."
+msgstr "נולד ב-1 בספטמבר 1946 הוא זמר-יוצר, פזמונאי ומלחין ישראלי, הנחשב לאחד מראשוני היוצרים ברוק הישראלי. יצירתו, הן במסגרת שיתופי פעולה עם אמנים אחרים בתחילת דרכו והן לאחר מכן כסולן, השפיעה רבות על המוזיקה הפופולרית בישראל. במיוחד מוכר שיתוף הפעולה שלו עם הזמר אריק איינשטיין, שהניב את אלבומי הרוק הישראליים הראשונים.‏.."
 
+#שלומי שבת
 msgctxt "#101430
-msgid "שלומי שבת"
-msgstr "(נולד ב-30 באוגוסט 1954) הוא זמר ומלחין ישראלי..."
+msgid "Born on August 30, 1954 is an Israeli singer and composer ..."
+msgstr "נולד ב-30 באוגוסט 1954 הוא זמר ומלחין ישראלי..."
 
+#שלישיית גשר הירקון
+msgctxt "#101490
+msgid "Musical composition was held between the years 1964 to 1966 in two vehicles. The first band members were Arik Einstein, Yoram Gaon and his Amdurski. Its program replaced the trio's second Israel Gurion Yoram Gaon leaving ..."
+msgstr "הייתה הרכב מוזיקלי שהתקיים בין השנים 1964 - 1966 בשני הרכבים. חברי ההרכב הראשון היו אריק איינשטיין, יהורם גאון ובני אמדורסקי. בתוכניתה השנייה של השלישייה החליף ישראל גוריון את יהורם גאון שעזב...
+
+#שלמה ארצי
 msgctxt "#101440
-msgid "שלמה ארצי"
-msgstr " (נולד ב-26 בנובמבר 1949) הוא זמר-יוצר, מוזיקאי, מלחין ופזמונאי ישראלי. נחשב לאחד הזמרים המצליחים בישראל..."
+msgid "Born on November 26, 1949, singer-songwriter, musician, composer and songwriter Israel. Considered one of the most successful singers in Israel ... ""
+msgstr " נולד ב-26 בנובמבר 1949 הוא זמר-יוצר, מוזיקאי, מלחין ופזמונאי ישראלי. נחשב לאחד הזמרים המצליחים בישראל..."
 
 msgctxt "#101450
 msgid ""
-msgstr "[COLOR=Yellow]שרית חדד (בעבר שרה חודדטוב; נולדה ב-20 בספטמבר 1978, י"ח באלול התשל"ח) היא זמרת ומוזיקאית ישראלית.[/COLOR][CR][CR]הוציאה מעל 20 אלבומים, וזכתה מספר פעמים בתואר "זמרת השנה" וכן בתואר "זמרת העשור" במצעד הפזמונים העברי.[CR]שרית חדד מתמחה במוזיקה מזרחית, והיא הזמרת המושמעת ביותר בישראל."
-
-msgctxt "#101460
-msgid "עדן בן זקן"
-msgstr "(נולדה ב-8 ביוני 1994) היא זמרת ישראלית..." 
+msgstr "[COLOR=Yellow]שרית חדד (בעבר שרה חודדטוב; נולדה ב-20 בספטמבר 1978, י"ח באלול התשל"ח) היא זמרת ומוזיקאית ישראלית.[/COLOR][CR][CR]הוציאה מעל 20 אלבומים, וזכתה מספר פעמים בתואר "זמרת השנה" וכן בתואר "זמרת העשור" במצעד הפזמונים העברי.[CR]שרית חדד מתמחה במוזיקה מזרחית, והיא הזמרת המושמעת ביותר בישראל..."
 
 msgctxt "#101470
 msgid ""
 msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
-
-msgctxt "#101480
-msgid "הדודאים"
-msgstr "היו צמד זמרים, בני אמדורסקי וישראל גוריון, אשר בין השנים 1957-1993 היה אחד מהצמדים המובילים בזמר העברי..."
-
-msgctxt "#101490
-msgid "שלישיית גשר הירקון"
-msgstr "[COLOR=Yellow][/COLOR]הייתה הרכב מוזיקלי שהתקיים בין השנים 1964 - 1966 בשני הרכבים. חברי ההרכב הראשון היו אריק איינשטיין, יהורם גאון ובני אמדורסקי. בתוכניתה השנייה של השלישייה החליף ישראל גוריון את יהורם גאון שעזב"
 
 msgctxt "#111010
 msgid ""

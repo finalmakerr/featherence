@@ -431,8 +431,8 @@ msgid "Foreign Music"
 msgstr "מוזיקה לועזית"
 
 msgctxt "#112
-msgid ""
-msgstr ""
+msgid "Foreign Karaoke"
+msgstr "קריוקי לועזי"
 
 msgctxt "#113
 msgid ""
@@ -797,8 +797,8 @@ msgid "Berry Sakharof"
 msgstr "פורטיסחרוף"
 
 msgctxt "#10136
-msgid ""
-msgstr ""
+msgid "Kobi Aflalo"
+msgstr "קובי אפללו"
 
 msgctxt "#10137
 msgid "Kobi Peretz"
