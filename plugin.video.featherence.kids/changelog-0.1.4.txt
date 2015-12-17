@@ -3,9 +3,15 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence Kids v0.1.2-4 (17-12-15)
+------------------------
+- Minor bugs fix.
+- Added new contents.
+
+------------------------
 Featherence Kids v0.1.1 (13-12-15)
 ------------------------
-- add search button (COLOR-BLUE).
+- add search button.
 - add some video for kids.
 
 ------------------------
