@@ -404,6 +404,10 @@
 	 <posy>-552</posy>
 	 <height>276</height>
    </include>
+   <include name="Control_Pos39" description="">
+     <posx>20</posx>
+	 <width>390</width>
+   </include>
    <include name="Control_Pos40" description="">
 	 <posy>546</posy>
    </include>
@@ -428,4 +432,20 @@
    <include name="Control_Pos45" description="">
 	 <posx>270</posx>
    </include>
+   <include name="Control_Pos46" description="">
+	 <posx>1450</posx>
+   </include>
+   <include name="Control_Pos47" description="">
+	 <posx>60</posx>
+   </include>
+   <include name="Control_Pos48" description="">
+	 <posx>-425</posx>
+   </include>
+   <include name="Control_Pos49" description="">
+	 <posx>1905</posx>
+   </include>
+   <include name="Control_Pos50" description="">
+	 <posx>1350</posx>
+   </include>
+   
 </includes>

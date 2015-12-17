@@ -51,12 +51,12 @@
 	  </control>
 	  <include>ArrowsLeftRight</include>
       <control type="grouplist" id="22" description="כפתורים ראשי">
-		<posx>30</posx>
+		<posx>22</posx>
 		<posy>60</posy>
-        <width>530</width>
+        <width>520</width>
         <ondown>50</ondown>
 		<onup>27</onup>
-        <itemgap>0</itemgap>
+        <itemgap>-5</itemgap>
         <aligny>bottom</aligny>
         <align>center</align>
         <orientation>horizontal</orientation>
@@ -120,8 +120,8 @@
 		  <visible>!SubString(Container.FolderPath,plugin://)</visible>
         </control>
 		<control type="button" id="26" description="עוד...">
-          <height>130</height>
-		  <width>130</width>
+          <height>133</height>
+		  <width>133</width>
 		  <label>$INFO[Container(1000).ListItem(0).label]</label>
 		  <onclick condition="IsEmpty(ListItem.TVShowTitle)">RunScript(script.featherence.service,,?mode=70&amp;value=0)</onclick>
 		  <onclick condition="!IsEmpty(ListItem.TVShowTitle)">RunScript(script.featherence.service,,?mode=70&amp;value=1)</onclick>

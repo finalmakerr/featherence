@@ -37,10 +37,10 @@
       <height>300</height>
       <onup>noop</onup>
       <ondown>9000</ondown>
-      <onleft>9000</onleft>
-      <onright>noop</onright>
+      <!--<onleft condition="StringCompare(System.Language,Hebrew)">9000</onleft>
+      <onright condition="!StringCompare(System.Language,Hebrew)">9000</onright>-->
       <orientation>horizontal</orientation>
-      <itemlayout width="160">
+      <itemlayout width="170">
 	    <control type="group">
 		  <posy>10</posy>
 		  <posx>10</posx>
@@ -84,7 +84,7 @@
 			</control>
 		</control>
       </itemlayout>
-      <focusedlayout width="160">
+      <focusedlayout width="170">
 	    <control type="group">
 		  <posy>10</posy>
 		  <posx>10</posx>
@@ -98,7 +98,7 @@
 			  <height>220</height>
 			  <posx>-13</posx>
 			  <posy>-27</posy>
-			  <width>175</width>
+			  <width>185</width>
 			  <texture border="40">buttons/ButtonC.png</texture>
 			</control>
 			<control type="label" description="ימים">

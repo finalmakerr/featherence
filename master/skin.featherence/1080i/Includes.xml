@@ -157,9 +157,9 @@
 		  <control type="group" description="שמאל_en">
 			<posx>100</posx>
 			<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1124)</visible>
-			<width>500</width>
-			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1310,0">Conditonal</animation>
-			<animation description="Slide_en" condition="!StringCompare(System.Language,Hebrew) + !StringCompare(Control.GetLabel(1121),System.AddonVersion(skin.featherence))" effect="slide" start="0,0" end="-90,0">Conditonal</animation>
+			<width>600</width>
+			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1210,0">Conditonal</animation>
+			<animation description="Slide_en" condition="!StringCompare(System.Language,Hebrew) + !Control.IsVisible(3200)" effect="slide" start="0,0" end="-90,0">Conditonal</animation>
 			<control type="label" id="1121" description="שמאל1 (תיקייה)">
 			  <include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
 			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
@@ -185,10 +185,11 @@
 			<visible>!Skin.HasSetting(Admin)</visible>
 		  </control>
 		  <control type="label" id="1124" description="זמן לסיום(HasMedia) שמאל2">
-		    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1490,0">Conditonal</animation>
+		    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1910,0">Conditonal</animation>
+			<animation description="Slide_en" condition="!StringCompare(System.Language,Hebrew) + Control.IsVisible(3200)" effect="slide" start="0,0" end="90,0">Conditonal</animation>
 			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
 			<include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
-			<posx>230</posx>
+			<posx>10</posx>
 			<label>$VAR[TopInformation2.2]</label>
 			<visible>!Skin.HasSetting(Admin) + Player.HasMedia</visible>
 			<visible>!SubString(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
@@ -196,7 +197,7 @@
 			<visible>!SubString(Container.FolderPath,special://userdata/library/videos/) + !SubString(Container.FolderPath,/var/media/) + !SubString(Container.FolderPath,special://home/external/)</visible>
 			<visible>!SubString(MusicPlayer.Title,playfeatherence)</visible>
 			<visible>!Window.IsVisible(script-skin_helper_service-ColorPicker.xml)</visible>
-			<width>340</width>
+			<width>360</width>
 		  </control>
 		  <control type="group">
 			  <visible>!Window.IsVisible(DialogExtendedProgressBar.xml) + !Window.IsVisible(DialogKaiToast.xml)</visible>
@@ -245,11 +246,11 @@
 			<visible>true</visible>	
 		  </control>
 		  <control type="label" description="() ימין">
-			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1290,0">Conditonal</animation>
-			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
-			<include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
+			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1900,0">Conditonal</animation>
+			<include condition="StringCompare(System.Language,Hebrew)">LabelL2</include>
+			<include condition="!StringCompare(System.Language,Hebrew)">LabelR2</include>
 			<label>$VAR[ShowClock]</label>		
-			<posx>330r</posx>
+			<posx>10r</posx>
 			<visible>Window.IsActive(LoginScreen.xml) | !Skin.HasSetting(ShowClock)</visible> <!--Window.IsActive(home) | -->
 			<width>370</width>
 		  </control>
@@ -262,7 +263,7 @@
       <include>Slide3</include>
 	  <visible>[Window.IsVisible(DialogFullScreenInfo.xml) + VideoPlayer.IsFullscreen + Player.Paused] | Window.IsVisible(DialogVideoInfo.xml) | [Window.IsVisible(Home.xml) + System.IdleTime(3) + [Control.HasFocus(311) | Control.HasFocus(312) | StringCompare(Window(home).Property(Button.ID),97)]] | [Control.IsVisible(57) | Control.IsVisible(58)] + [Container.Content(Seasons) | Container.Content(Episodes) | !Skin.HasSetting(ShowTopVideoInformation)] | Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(56) | Control.IsVisible(450) | Window.IsVisible(SettingsCategory.xml)</visible>
 	  <control type="image" description="מסגרת">
-		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,270">Conditional</animation>
+		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,256">Conditional</animation>
 		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-5">Conditional</animation>
 		  <include>Fade_TopVideoInformationOverlay</include>
 		  <posx>-20</posx>
@@ -351,19 +352,20 @@
           <align>center</align>
           <label>$VAR[TopVideoInformation8]</label>
 		  <width>530</width>
+		  <wrapmultiline>true</wrapmultiline>
         </control>
 	  </control>
 	  <control type="group" description="Right side">
-	      <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1015,0">Conditonal</animation>
+	      <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="-1015,0">Conditonal</animation>
 		  <control type="group" description="תמונת פרק">
 			<include>Fade4</include>
 			<posx>1221</posx>
 			<posy>-450</posy>	      
 			<visible>!SubString(Container.FolderPath,plugin://)</visible> <!-- | Player.HasVideo + !IsEmpty(Player.Art(thumb))-->
 			<control type="image" description="מסגרת">
-			  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-500,0">Conditonal</animation>
+			  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="-500,0">Conditonal</animation>
 			  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,270">Conditional</animation>
-			  <animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="100,40">Conditional</animation>
+			  <animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="100,45">Conditional</animation>
 			  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-5">Conditional</animation>
 			  <include>Fade_TopVideoInformationOverlay</include>
 			  <posx>0</posx>
@@ -393,6 +395,7 @@
 			<posy>-499</posy>
 			<visible>!IsEmpty(Control.GetLabel(1102)) | !IsEmpty(Control.GetLabel(1103))</visible> <!--Window.IsVisible(DialogFullScreenInfo.xml) | -->
 			<control type="label" id="1102" description="שנה/יוצר הרחבה">
+			  <include condition="Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(DialogAddonInfo.xml) | StringCompare(Container.FolderName,$LOCALIZE[24001])">Control_Pos39</include>
 			  <align>right</align>
 			  <font>size28</font>
 			  <height>70</height>
@@ -508,78 +511,80 @@
 				<visible>Skin.HasSetting(Genre)</visible>
 				<include>GenreText</include>
 			</control>
-			<control type="group" description="מספר עונות">
-				<posx>-50</posx>
-				<posy>0</posy>
-				<control type="label" id="1112" description="מספר">
-				  <align>center</align>
-				  <height>50</height>
-				  <posx>513</posx>
-				  <posy>-559</posy>
-				  <label>$VAR[TopVideoInformation1112a]</label>
-				  <visible>!IsEmpty(Control.GetLabel(1112))</visible>
-				  <width>70</width>
-				</control>
-				<control type="label" description="טקסט">
-				  <posx>479</posx>
-				  <include>GenreTextPlace</include>
-				  <posy>-517</posy>
-				  <label>$VAR[TopVideoInformation1112b]</label>
-				  <visible>Control.IsVisible(1112)</visible>
-				</control>
+		  </control>
+		  <control type="group" description="מספר עונות">
+			<posx>1115</posx>
+			<posy>0</posy>
+			<control type="label" id="1112" description="מספר">
+			  <align>center</align>
+			  <height>50</height>
+			  <posx>513</posx>
+			  <posy>-559</posy>
+			  <label>$VAR[TopVideoInformation1112a]</label>
+			  <visible>!IsEmpty(Control.GetLabel(1112))</visible>
+			  <width>70</width>
 			</control>
-			<control type="group" description="אורך בשעות/דקות">
-				<posx>-50</posx>
-				<posy>0</posy>
-				<control type="label" id="1101" description="אורך/מספר עונה/גרסה הרחבה">
-				  <include>LabelC12</include> 
-				  <posx>494</posx>
-				  <posy>-571</posy>
-				  <width>100</width>
-				  <label>$VAR[TopVideoInformation1]</label>
-				  <scroll>false</scroll>
-				  <visible>Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(DialogAddonInfo.xml) | Window.IsVisible(MyMusicNav.xml)</visible>
-				  <visible>!IsEmpty(Control.GetLabel(1101))</visible>
-				</control>
-				<control type="label" id="1109" description="אורך-בשעות">
-				  <include>LabelC12</include> 
-				  <posx>519</posx>
-				  <posy>-571</posy>
-				  <width>50</width>
-				  <label>$VAR[VideoInHours]</label>
-				  <visible>IntegerGreaterThan(Control.GetLabel(1109),0) + !IsEmpty(Control.GetLabel(1109))</visible> <!--!Window.IsActive(VideoFullScreen.xml) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !SubString(Container.FolderPath,shows)] | [Window.IsActive(VideoFullScreen.xml) + !VideoPlayer.Content(episodes)] + -->
-				  <visible>[!IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + Container.Content(tvshows)] | !Container.Content(tvshows)</visible>
-				  <visible>!Control.IsVisible(1101)</visible>
-				</control>
-				<control type="label" id="1110" description="אורך-בדקות">
-				  <include>LabelC12</include> 
-				  <posx>519</posx>
-				  <posy>-571</posy>
-				  <width>50</width>
-				  <label>$VAR[VideoInMins]</label>
-				  <visible>IntegerGreaterThan(Control.GetLabel(1110),0) + !IsEmpty(Control.GetLabel(1110)) + !Control.IsVisible(1109)</visible> <!--!Window.IsActive(VideoFullScreen.xml) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !SubString(Container.FolderPath,shows)] | [Window.IsActive(VideoFullScreen.xml) + !VideoPlayer.Content(episodes)] + -->
-				  <visible>[!IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + Container.Content(tvshows)] | !Container.Content(tvshows)</visible>
-				  <visible>!Control.IsVisible(1101)</visible>
-				</control>
-				<control type="label" description="שעות">
-				  <align>center</align>
-				  <label>$LOCALIZE[12392]</label>
-				  <font>size18</font>
-				  <posx>510</posx>
-				  <posy>-539</posy>
-				  <visible>Control.IsVisible(1109)</visible>
-				  <width>70</width>
-				</control>
-				<control type="label" description="דקות">
-				  <align>center</align>
-				  <label>$LOCALIZE[12391]</label>
-				  <font>size18</font>
-				  <posx>510</posx>
-				  <posy>-539</posy>
-				  <visible>Control.IsVisible(1110)</visible>
-				  <width>70</width>
-				</control>
-			  </control>
+			<control type="label" description="טקסט">
+			  <posx>479</posx>
+			  <include>GenreTextPlace</include>
+			  <posy>-517</posy>
+			  <label>$VAR[TopVideoInformation1112b]</label>
+			  <visible>Control.IsVisible(1112)</visible>
+			</control>
+		  </control>
+		  <control type="group" description="אורך בשעות/דקות">
+			<posx>1115</posx>
+			<posy>0</posy>
+			<visible>!Window.IsVisible(MyWeather.xml)</visible>
+			<control type="label" id="1101" description="אורך/מספר עונה/גרסה הרחבה">
+			  <include condition="Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(DialogAddonInfo.xml) | StringCompare(Container.FolderName,$LOCALIZE[24001])">Control_Pos39</include>
+			  <include>LabelC12</include> 
+			  <posx>494</posx>
+			  <posy>-571</posy>
+			  <width>100</width>
+			  <label>$VAR[TopVideoInformation1]</label>
+			  <scroll>false</scroll>
+			  <visible>Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(DialogAddonInfo.xml) | Window.IsVisible(MyMusicNav.xml)</visible>
+			  <visible>!IsEmpty(Control.GetLabel(1101))</visible>
+			</control>
+			<control type="label" id="1109" description="אורך-בשעות">
+			  <include>LabelC12</include> 
+			  <posx>519</posx>
+			  <posy>-571</posy>
+			  <width>50</width>
+			  <label>$VAR[VideoInHours]</label>
+			  <visible>IntegerGreaterThan(Control.GetLabel(1109),0) + !IsEmpty(Control.GetLabel(1109))</visible> <!--!Window.IsActive(VideoFullScreen.xml) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !SubString(Container.FolderPath,shows)] | [Window.IsActive(VideoFullScreen.xml) + !VideoPlayer.Content(episodes)] + -->
+			  <visible>[!IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + Container.Content(tvshows)] | !Container.Content(tvshows)</visible>
+			  <visible>!Control.IsVisible(1101)</visible>
+			</control>
+			<control type="label" id="1110" description="אורך-בדקות">
+			  <include>LabelC12</include> 
+			  <posx>519</posx>
+			  <posy>-571</posy>
+			  <width>50</width>
+			  <label>$VAR[VideoInMins]</label>
+			  <visible>IntegerGreaterThan(Control.GetLabel(1110),0) + !IsEmpty(Control.GetLabel(1110)) + !Control.IsVisible(1109)</visible> <!--!Window.IsActive(VideoFullScreen.xml) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !SubString(Container.FolderPath,shows)] | [Window.IsActive(VideoFullScreen.xml) + !VideoPlayer.Content(episodes)] + -->
+			  <visible>[!IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + Container.Content(tvshows)] | !Container.Content(tvshows)</visible>
+			  <visible>!Control.IsVisible(1101)</visible>
+			</control>
+			<control type="label" description="שעות">
+			  <align>center</align>
+			  <label>$LOCALIZE[12392]</label>
+			  <font>size18</font>
+			  <posx>510</posx>
+			  <posy>-539</posy>
+			  <visible>Control.IsVisible(1109)</visible>
+			  <width>70</width>
+			</control>
+			<control type="label" description="דקות">
+			  <align>center</align>
+			  <label>$LOCALIZE[12391]</label>
+			  <font>size18</font>
+			  <posx>510</posx>
+			  <posy>-539</posy>
+			  <visible>Control.IsVisible(1110)</visible>
+			  <width>70</width>
+			</control>
 		  </control>
 	  </control>
 	  <control type="group" description="פוסטר">
@@ -631,7 +636,7 @@
 		</control>
 	  </control>  
 	  <control type="group" description="פרטי וידאו (1105)">
-		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1250,0">Conditonal</animation>
+		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="1250,0">Conditonal</animation>
 		<include>Fade4</include>
 		<visible>!IsEmpty(Control.GetLabel(1105)) + !SubString(Control.GetLabel(1105),$LOCALIZE[20457])</visible>
 		<visible></visible>

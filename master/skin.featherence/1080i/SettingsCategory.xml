@@ -28,7 +28,7 @@
 		  <height>100</height>
 		  <itemgap>5</itemgap>
 		  <onup>9009</onup>
-		  <onleft>9000</onleft>
+		  <onleft>noop</onleft>
 		  <onright>noop</onright>
 		  <ondown>5</ondown>
 		  <orientation>horizontal</orientation>
@@ -45,8 +45,12 @@
 		  <height>830</height>
 		  <onup>3</onup>
 		  <ondown>noop</ondown>
-		  <onright>3</onright>
-		  <onleft>9000</onleft>
+		  <onright condition="!StringCompare(System.Language,Hebrew)">9000</onright>
+		  <onright condition="StringCompare(System.Language,Hebrew)">3</onright>
+		  
+		  <onleft condition="!StringCompare(System.Language,Hebrew)">3</onleft>
+		  <onleft condition="StringCompare(System.Language,Hebrew)">9000</onleft>
+		  
 		  <pagecontrol>60</pagecontrol>
 		  <orientation>vertical</orientation>
 		</control>

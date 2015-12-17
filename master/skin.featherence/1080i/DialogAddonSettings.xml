@@ -27,9 +27,8 @@
       </control>
 	</control>
     <control type="group" description="תפריט ימין (8999)">
-	  <include>Slide7</include>
       <height>530</height>	  
-	  <posx>1875</posx>
+	  <posx>1475</posx>
 	  <posy>275</posy>	  
 	  <width>480</width>	  	  
       <control type="image" description="רקע">

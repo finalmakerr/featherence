@@ -48,13 +48,14 @@
 		<wrapmultiline>true</wrapmultiline>
 	  </control>
 	  <control type="textbox" id="1500" description="טיפים">
+	    <animation condition="true" effect="slide" start="0,0" end="10,0">Conditional</animation>
 	    <visible>!Window.IsVisible(DialogProgress.xml) + !Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogOK.xml)</visible>
 		<visible>!IsEmpty(Window(home).Property(tips) + System.IdleTime(2) + !Skin.HasSetting(tips)</visible>
 		<textcolor>Grey2</textcolor>
 	    <include>LabelC2</include>
 	    <height>200</height>
-		<posx>20</posx>
-	    <width>560</width>
+		<posx>0</posx>
+	    <width>580</width>
 		<label>$VAR[tips]</label>
 	  </control>
 

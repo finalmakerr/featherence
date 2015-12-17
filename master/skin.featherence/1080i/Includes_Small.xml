@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="4ways">
-	  <onleft condition="Control.IsVisible(90000) + !SubString(Window(home).Property(ViewsSettings),900)">9000</onleft>
-	  <onleft condition="Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9001)">9001</onleft>
-	  <onleft condition="Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9002)">9002</onleft>
-	  <onleft condition="!Control.IsVisible(90000) + Control.IsVisible(7011) + Control.IsVisible(7017)">7017</onleft>
-	  <onleft condition="!Control.IsVisible(90000) + Player.HasAudio">ActivateWindow(12901)</onleft>
+	  <onleft condition="Control.IsVisible(90000) + !SubString(Window(home).Property(ViewsSettings),900) + StringCompare(System.Language,Hebrew)">9000</onleft>
+	  <onleft condition="Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9001) + StringCompare(System.Language,Hebrew)">9001</onleft>
+	  <onleft condition="Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9002) + StringCompare(System.Language,Hebrew)">9002</onleft>
+	  <onleft condition="!Control.IsVisible(90000) + Control.IsVisible(7011) + Control.IsVisible(7017) + StringCompare(System.Language,Hebrew)">7017</onleft>
+	  <onleft condition="!Control.IsVisible(90000) + Player.HasAudio + StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onleft>
 	  <onright condition="Window.IsVisible(FileBrowser.xml)">9005</onright>
-	  <onright condition="Control.IsVisible(60)">60</onright>
-	  <onright condition="!Control.IsVisible(60) + Control.IsVisible(7011)">7017</onright>
-	  <onright condition="!Control.IsVisible(60) + Player.HasAudio">ActivateWindow(12901)</onright>
-	  <onright condition="Control.IsVisible(90000) + [Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)]">9000</onright>
+	  <onright condition="Control.IsVisible(60) + StringCompare(System.Language,Hebrew)">60</onright>
+	  <onright condition="!Control.IsVisible(60) + Control.IsVisible(7011) + StringCompare(System.Language,Hebrew)">7017</onright>
+	  <onright condition="!Control.IsVisible(60) + Player.HasAudio + StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onright>
+	  <onright condition="Control.IsVisible(90000) + [Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)] + StringCompare(System.Language,Hebrew)">9000</onright>
+	  
+	  <onright condition="Control.IsVisible(90000) + !SubString(Window(home).Property(ViewsSettings),900) + !StringCompare(System.Language,Hebrew)">9000</onright>
+	  <onright condition="Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9001) + !StringCompare(System.Language,Hebrew)">9001</onright>
+	  <onright condition="Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9002) + !StringCompare(System.Language,Hebrew)">9002</onright>
+	  <onright condition="!Control.IsVisible(90000) + Control.IsVisible(7011) + Control.IsVisible(7017) + !StringCompare(System.Language,Hebrew)">7017</onright>
+	  <onright condition="!Control.IsVisible(90000) + Player.HasAudio + !StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onright>
+	  <onleft condition="Window.IsVisible(FileBrowser.xml)">9005</onleft>
+	  <onleft condition="Control.IsVisible(60) + !StringCompare(System.Language,Hebrew)">60</onleft>
+	  <onleft condition="!Control.IsVisible(60) + Control.IsVisible(7011) + !StringCompare(System.Language,Hebrew)">7017</onleft>
+	  <onleft condition="!Control.IsVisible(60) + Player.HasAudio + !StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onleft>
+	  <onleft condition="Control.IsVisible(90000) + [Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)] + !StringCompare(System.Language,Hebrew)">9000</onleft>
+	  
 	  <onup condition="Control.IsVisible(7011)">7017</onup>			  
 	  <onup condition="Player.HasAudio">ActivateWindow(12901)</onup>
 	  <onup condition="Control.IsVisible(90000) + [Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)]">9000</onup>
@@ -40,18 +52,18 @@
 	  <scrolltime tween="sine" easing="inout">200</scrolltime>
   </include>
   <include name="4ways2" description="IncludeShelf Top">
-	  <onup condition="Control.IsVisible(7011)">7017</onup>
-	  <onup condition="Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(310) + !Control.IsVisible(7011)">310</onup>
-	  <onup condition="Player.HasAudio">ActivateWindow(12901)</onup>
-	  <ondown condition="Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(50)">50</ondown>
-	  <ondown condition="Window.IsVisible(Home.xml) + Control.IsVisible(90000)">9000</ondown>
-	  <!--<ondown condition="Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(50) + [Control.HasFocus(313) | Control.HasFocus(314) | Control.HasFocus(315)]">50</ondown>-->
-	 <onleft condition="Control.HasFocus(313)">313</onleft>
-	 <onright condition="Control.HasFocus(313)">313</onright>
-	 <onleft condition="Control.HasFocus(314)">314</onleft>
-	 <onright condition="Control.HasFocus(314)">314</onright>	  
-	 <onleft condition="Control.HasFocus(315)">315</onleft>
-	 <onright condition="Control.HasFocus(315)">315</onright>
+	<onup condition="Control.IsVisible(7011)">7017</onup>
+	<onup condition="Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(310) + !Control.IsVisible(7011)">310</onup>
+	<onup condition="Player.HasAudio">ActivateWindow(12901)</onup>
+	<ondown condition="Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(50)">50</ondown>
+	<ondown condition="Window.IsVisible(Home.xml) + Control.IsVisible(90000)">9000</ondown>
+	<!--<ondown condition="Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(50) + [Control.HasFocus(313) | Control.HasFocus(314) | Control.HasFocus(315)]">50</ondown>-->
+	<onleft condition="Control.HasFocus(313)">313</onleft>
+	<onright condition="Control.HasFocus(313)">313</onright>
+	<onleft condition="Control.HasFocus(314)">314</onleft>
+	<onright condition="Control.HasFocus(314)">314</onright>	  
+	<onleft condition="Control.HasFocus(315)">315</onleft>
+	<onright condition="Control.HasFocus(315)">315</onright>
   </include>
   <include name="4ways3" description="SideMenu">
   	<onup condition="ControlGroup(9000).HasFocus() + !ControlGroup(9001).HasFocus() + !ControlGroup(9002).HasFocus()">9000</onup>
@@ -62,11 +74,17 @@
 	<ondown condition="ControlGroup(9001).HasFocus() + !ControlGroup(9002).HasFocus()">9001</ondown>
 	<ondown condition="ControlGroup(9002).HasFocus()">9002</ondown>
 	<ondown condition="ControlGroup(300).HasFocus()">300</ondown>
-	<onleft condition="Control.IsVisible(7011)">7017</onleft>
-	<onleft condition="Player.HasAudio">7017</onleft>
-	<onright condition="Window.IsActive(DialogAddonInfo.xml)">Close</onright> 
-	<onright condition="Window.IsActive(SettingsCategory.xml)">5</onright> 
-    <onright condition="ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus() | ControlGroup(9002).HasFocus() | ControlGroup(300).HasFocus | Window.IsVisible(MyPVRChannels.xml)">50</onright>
+	<onright description="en" condition="Control.IsVisible(7011) + !StringCompare(System.Language,Hebrew)">7017</onright>
+	<onright description="en" condition="Player.HasAudio + !StringCompare(System.Language,Hebrew)">7017</onright>
+	<onleft description="en" condition="Window.IsActive(DialogAddonInfo.xml) + !StringCompare(System.Language,Hebrew)">Close</onleft> 
+	<onleft description="en" condition="Window.IsActive(SettingsCategory.xml) + !StringCompare(System.Language,Hebrew)">5</onleft> 
+    <onleft description="en" condition="[ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus() | ControlGroup(9002).HasFocus() | ControlGroup(300).HasFocus | Window.IsVisible(MyPVRChannels.xml)] + !StringCompare(System.Language,Hebrew)">50</onleft>
+	
+	<onleft description="he" condition="Control.IsVisible(7011) + StringCompare(System.Language,Hebrew)">7017</onleft>
+	<onleft description="he" condition="Player.HasAudio + StringCompare(System.Language,Hebrew)">7017</onleft>
+	<onright description="he" condition="Window.IsActive(DialogAddonInfo.xml) + StringCompare(System.Language,Hebrew)">Close</onright> 
+	<onright description="he" condition="Window.IsActive(SettingsCategory.xml) + StringCompare(System.Language,Hebrew)">5</onright> 
+    <onright description="he" condition="[ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus() | ControlGroup(9002).HasFocus() | ControlGroup(300).HasFocus | Window.IsVisible(MyPVRChannels.xml)] + StringCompare(System.Language,Hebrew)">50</onright>
   </include>
   <include name="4ways4" description="Includes_Settings">
     <onup condition="!Control.IsVisible(100) + !Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(7011)">7017</onup>
@@ -87,10 +105,17 @@
 	  <onleft condition="Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9002)">9002</onleft>
 	  <onleft condition="!Control.IsVisible(90000) + Control.IsVisible(7011) + Control.IsVisible(7017)">7017</onleft>
 	  <onleft condition="!Control.IsVisible(90000) + Player.HasAudio">ActivateWindow(12901)</onleft>
+	  
+	  <onright condition="Control.IsVisible(90000) + !SubString(Window(home).Property(ViewsSettings),900)">9000</onright>
+	  <onright condition="Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9001)">9001</onright>
+	  <onright condition="Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9002)">9002</onright>
+	  <onright condition="!Control.IsVisible(90000) + Control.IsVisible(7011) + Control.IsVisible(7017)">7017</onright>
+	  <onright condition="!Control.IsVisible(90000) + Player.HasAudio">ActivateWindow(12901)</onright>
+	  
 	  <onup condition="Control.IsVisible(7011)">7017</onup>			  
 	  <onup condition="Player.HasAudio">ActivateWindow(12901)</onup>
 	  <onup condition="Control.IsVisible(60)">PageUp</onup>
-	  <onright>noop</onright>
+	  
 	  <ondown condition="Control.IsVisible(60)">PageDown</ondown>
 	  <preloaditems>2</preloaditems>
 	  <pagecontrol>60</pagecontrol>	  
@@ -403,6 +428,7 @@
 	  </control>
 	  <control type="button" id="7017">
 		<visible>Control.IsVisible(7011)</visible>
+		
 		<bordersize>10</bordersize>
 		<texturefocus border="10">misc/frames/selector.png</texturefocus>
 		<texturenofocus colordiffuse="FFFFAAFF"></texturenofocus>
@@ -674,13 +700,14 @@
   </include>
   
   <include name="Badges">
-   <control type="grouplist">
-    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1250,0">Conditonal</animation>
+  <control type="grouplist">
+	<animation description="Slide_en" condition="!StringCompare(System.Language,Hebrew) + Control.IsVisible(3200)" effect="slide" start="0,0" end="90,0">Conditonal</animation>
+	<include condition="StringCompare(System.Language,Hebrew)">Control_Pos50</include>
 	<height>24</height>
 	<itemgap>10</itemgap>
 	<align>left</align>
 	<orientation>horizontal</orientation>
-	<posx>100</posx>
+	<posx>360</posx>
 	<posy>7</posy>
 	<visible>Player.HasVideo</visible>
 	<visible>!SubString(Player.Title,playfeatherence)</visible>
@@ -696,24 +723,25 @@
 	</control>
 	<control type="image">
 	  <texture>$INFO[VideoPlayer.AudioChannels,badges/channels/channels,.png]</texture>
-	  <visible>Player.HasAudio + [!IsEmpty(VideoPlayer.AudioChannels) | !IsEmpty(MusicPlayer.Channels)]</visible>
+	  <visible>[!IsEmpty(VideoPlayer.AudioChannels) | !IsEmpty(MusicPlayer.Channels)]</visible>
 	  <width>50</width>
 	</control>
 	<control type="image">
 	  <texture>$INFO[VideoPlayer.AudioCodec,badges/audio/,.png]</texture>
-	  <visible>Player.HasAudio + [!IsEmpty(VideoPlayer.AudioCodec) | !IsEmpty(MusicPlayer.Codec)]</visible>
+	  <visible>[!IsEmpty(VideoPlayer.AudioCodec) | !IsEmpty(MusicPlayer.Codec)]</visible>
 	  <width>50</width>
 	</control>
    </control>
    
   <control type="grouplist" id="1132">
-	<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1250,0">Conditonal</animation>
+	<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1000,0">Conditonal</animation>
+	<animation description="Slide_en" condition="!StringCompare(System.Language,Hebrew) + Control.IsVisible(3200)" effect="slide" start="0,0" end="90,0">Conditonal</animation>
 	<height>24</height>
 	<itemgap>10</itemgap>
 	<align>left</align>
 	<orientation>horizontal</orientation>
-	<posx>100</posx>
-	<posy>7</posy>
+	<posx>1240</posx>
+	<posy>120</posy>
 	<visible>!Player.HasVideo + !IsEmpty(ListItem.VideoResolution) + !IsEmpty(ListItem.VideoCodec)</visible>
 	<control type="image">
 	  <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
@@ -738,7 +766,7 @@
    </control>
   </include>
   <include name="featherencelogo">
-    <control type="image">
+    <control type="image" id="3200">
 	  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1750,0">Conditonal</animation>
 	  <aspectratio>stretch</aspectratio>
 	  <height>150</height>
@@ -746,7 +774,7 @@
 	  <posy>-57</posy>
 	  <width>150</width>
 	  <texture>osd/featherence_pause4.png</texture>
-	  <visible>StringCompare(Control.GetLabel(1121),System.AddonVersion(skin.featherence))</visible>
+	  <visible>StringCompare(Control.GetLabel(1121),System.AddonVersion(skin.featherence)) + !Player.HasMedia</visible>
     </control>
   </include>
   <include name="IconsInformation">
@@ -789,14 +817,15 @@
   </include>
   <include name="ScrollBar">
 	<control type="group" description="מצב ספרייה">
+	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos49</include>
 	  <visible>Control.IsVisible(60)</visible>
 	  <visible>!Control.IsVisible(54)</visible>
 	  <visible>IntegerGreaterThan(Container.NumPages,1) | Window.IsVisible(FileBrowser.xml)</visible>
-	  <height>880</height>
 	  <width>20</width>
-	  <posx>10r</posx>
-	  <posy>275</posy>
+	  <posx>5</posx>
+	  <posy>60</posy>
 	  <control type="image" description="מסגרת">
+		<height>1120</height>
 		<posx>-10</posx>
 		<!--<texture border="20">buttons/ButtonEF.png</texture>-->
 		<texture>buttons/LineV.png</texture>
@@ -809,20 +838,36 @@
 		<visible></visible>
 	  </control>
 	  <control type="scrollbar" id="60" description="כלי גלילה">
-		<onright condition="Control.IsVisible(7011)">7017</onright>
-		<onright condition="Player.HasAudio">ActivateWindow(12901)</onright>
-		<onleft condition="[Window.IsVisible(DialogPeripheralSettings.xml) | Window.IsVisible(SettingsCategory.xml)] + Control.IsVisible(5)">5</onleft>
-		<onleft condition="Control.IsVisible(50) + !Window.IsVisible(MyPVRChannels.xml)">50</onleft>
-		<onleft condition="Control.IsVisible(51)">51</onleft>
-		<onleft condition="Control.IsVisible(52)">52</onleft>
-		<onleft condition="Control.IsVisible(55)">55</onleft>
-		<onleft condition="Control.IsVisible(56)">56</onleft>
-		<onleft condition="Control.IsVisible(57)">57</onleft>
-		<onleft condition="Control.IsVisible(58)">58</onleft>
-		<onleft condition="Control.IsVisible(450)">450</onleft>
-		<onleft condition="Control.IsVisible(10) + Window.IsVisible(MyPVRChannels.xml)">10</onleft>
-		<onleft condition="Control.IsVisible(11) + Window.IsVisible(MyPVRChannels.xml)">11</onleft>
-		<onleft condition="Control.IsVisible(12) + Window.IsVisible(MyPVRChannels.xml)">12</onleft>
+		<height>920</height>
+		<onright condition="Control.IsVisible(7011) + StringCompare(System.Language,Hebrew)">7017</onright>
+		<onright condition="Player.HasAudio+ StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onright>
+		<onleft condition="[Window.IsVisible(DialogPeripheralSettings.xml) | Window.IsVisible(SettingsCategory.xml)] + Control.IsVisible(5) + StringCompare(System.Language,Hebrew)">5</onleft>
+		<onleft condition="Control.IsVisible(50) + !Window.IsVisible(MyPVRChannels.xml) + StringCompare(System.Language,Hebrew)">50</onleft>
+		<onleft condition="Control.IsVisible(51) + StringCompare(System.Language,Hebrew)">51</onleft>
+		<onleft condition="Control.IsVisible(52) + StringCompare(System.Language,Hebrew)">52</onleft>
+		<onleft condition="Control.IsVisible(55) + StringCompare(System.Language,Hebrew)">55</onleft>
+		<onleft condition="Control.IsVisible(56) + StringCompare(System.Language,Hebrew)">56</onleft>
+		<onleft condition="Control.IsVisible(57) + StringCompare(System.Language,Hebrew)">57</onleft>
+		<onleft condition="Control.IsVisible(58) + StringCompare(System.Language,Hebrew)">58</onleft>
+		<onleft condition="Control.IsVisible(450) + StringCompare(System.Language,Hebrew)">450</onleft>
+		<onleft condition="Control.IsVisible(10) + Window.IsVisible(MyPVRChannels.xml) + StringCompare(System.Language,Hebrew)">10</onleft>
+		<onleft condition="Control.IsVisible(11) + Window.IsVisible(MyPVRChannels.xml) + StringCompare(System.Language,Hebrew)">11</onleft>
+		<onleft condition="Control.IsVisible(12) + Window.IsVisible(MyPVRChannels.xml) + StringCompare(System.Language,Hebrew)">12</onleft>
+		
+		<onleft condition="Control.IsVisible(7011) + !StringCompare(System.Language,Hebrew)">7017</onleft>
+		<onleft condition="Player.HasAudio+ !StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onleft>
+		<onright condition="[Window.IsVisible(DialogPeripheralSettings.xml) | Window.IsVisible(SettingsCategory.xml)] + Control.IsVisible(5) + !StringCompare(System.Language,Hebrew)">5</onright>
+		<onright condition="Control.IsVisible(50) + !Window.IsVisible(MyPVRChannels.xml) + !StringCompare(System.Language,Hebrew)">50</onright>
+		<onright condition="Control.IsVisible(51) + !StringCompare(System.Language,Hebrew)">51</onright>
+		<onright condition="Control.IsVisible(52) + !StringCompare(System.Language,Hebrew)">52</onright>
+		<onright condition="Control.IsVisible(55) + !StringCompare(System.Language,Hebrew)">55</onright>
+		<onright condition="Control.IsVisible(56) + !StringCompare(System.Language,Hebrew)">56</onright>
+		<onright condition="Control.IsVisible(57) + !StringCompare(System.Language,Hebrew)">57</onright>
+		<onright condition="Control.IsVisible(58) + !StringCompare(System.Language,Hebrew)">58</onright>
+		<onright condition="Control.IsVisible(450) + !StringCompare(System.Language,Hebrew)">450</onright>
+		<onright condition="Control.IsVisible(10) + Window.IsVisible(MyPVRChannels.xml) + !StringCompare(System.Language,Hebrew)">10</onright>
+		<onright condition="Control.IsVisible(11) + Window.IsVisible(MyPVRChannels.xml) + !StringCompare(System.Language,Hebrew)">11</onright>
+		<onright condition="Control.IsVisible(12) + Window.IsVisible(MyPVRChannels.xml) + !StringCompare(System.Language,Hebrew)">12</onright>
 		<!--<visible>IntegerGreaterThan(Container.NumPages,2)</visible>-->
 	  </control>
 	</control>

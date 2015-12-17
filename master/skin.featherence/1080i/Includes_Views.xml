@@ -234,8 +234,8 @@
   <include name="ViewDesign_51" description="Side List">
     <control type="group" description="">
 	  <visible>Control.IsVisible(51)</visible>
-	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1450,0">Conditional</animation>
       <control type="group">
+	    <include condition="StringCompare(System.Language,Hebrew)">Control_Pos46</include>
 		<control type="panel" id="51">
 		  <include>Slide1</include>
 		  <include>Slide2</include>
@@ -256,8 +256,9 @@
 		<control type="image" description="מסגרת">
 		  <include>Fade_MenuButtonsOverlay</include>
 		  <posx>10</posx>
+		  <posy>-5</posy>
 		  <width>480</width>
-		  <height>40</height>
+		  <height>45</height>
 		  <texture border="0" colordiffuse="$VAR[MenuColor]">buttons/ButtonA0.png</texture>
 		</control>
 		<control type="group" description="פרטים נוספים">
@@ -295,10 +296,10 @@
 		  </control>
 		</control>
 		<control type="label" description="שם">
-		  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="50,0">Conditional</animation>
+		  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos47</include>
 		  <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
-		  <posx>10</posx>
+		  <posx>30</posx>
 		  <width>400</width>
 		  <height>40</height>
 		  <label>$VAR[VideoInformation1]</label>
@@ -350,11 +351,11 @@
 		  </control>
 		</control>
 		<control type="label" description="שם">
-		  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="50,0">Conditional</animation>
+		  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos47</include>
 		  <textcolor>Yellow</textcolor>
 		  <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
-		  <posx>10</posx>
+		  <posx>30</posx>
 		  <width>400</width>
 		  <height>40</height>
 		  <scroll>true</scroll>
