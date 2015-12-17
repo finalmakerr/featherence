@@ -1260,12 +1260,11 @@ def findin_systemcurrentcontrol(custom,what,sleep,action,action2):
 	
 def get_types(value):
 	import types
+	name = 'get_types' ; printpoint = ""
 	returned = str(type(value))
-	
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	if admin: print printfirst + "get_types" + space + "value" + space2 + str(value) + space + "type" + space2 + returned
+
+	text = "value" + space2 + str(value) + space + "type" + space2 + returned
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	
 	return returned

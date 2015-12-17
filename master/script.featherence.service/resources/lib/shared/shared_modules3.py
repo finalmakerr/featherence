@@ -38,9 +38,9 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		except: pass
 	if fanart == None: fanart = ""
 	
-	if mode == 17: name = '[COLOR=green]' + name + '[/COLOR]'
-	elif mode == 5: name = '[COLOR=yellow]' + name + '[/COLOR]'
-	elif mode == 8: name = '[COLOR=White2]' + name + '[/COLOR]'
+	#if mode == 17: name = '[COLOR=green]' + name + '[/COLOR]'
+	#elif mode == 5: name = '[COLOR=yellow]' + name + '[/COLOR]'
+	#elif mode == 8: name = '[COLOR=White2]' + name + '[/COLOR]'
 	
 	if mode >= 100 and 1 + 1 == 2:
 		#if url == "": url = "1"
