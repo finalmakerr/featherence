@@ -6,7 +6,7 @@ WIP (WORK IN PROGRESS)--
 ------------------------
 Featherence Music v0.1.2 (17-12-15)
 ------------------------
-- Minor bugs fix.
+- Major bugs fix.
 - Added 99FM addon.
 - Update translations.
 
