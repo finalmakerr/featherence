@@ -76,12 +76,11 @@ def CATEGORIES100(admin):
 def CATEGORIES101(admin):
 	background = 101
 	'''חיפוש'''
-	addDir("[COLOR=BLUE]חיפוש[/COLOR]",'',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png','חיפוש תוכן בהרחבת יוטיוב','1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'שירים לילדים',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png','חיפוש תוכן בהרחבת יוטיוב','1',"", getAddonFanart(background, custom=""))
 	
 	'''אוסף שירים בעברית'''
 	list =[]
 	list.append('&youtube_ch=UCfm5IpcgGCooON4Mm2vq40A/playlists')
-	list.append('&youtube_ch=23music')
 	list.append('&youtube_pl=PLFw7KwIWHNB1_mXvYXwqFOw6S026LL3tj')
 	list.append('&youtube_pl=PL62u-p9buEf2WVr1mKj0OgRasxhe-9ZKI')
 	list.append('&youtube_pl=PLF11AD94724D37E02')
@@ -184,8 +183,9 @@ def CATEGORIES102(admin):
 	list.append('&wallaNew=item_id%3D2833366')
 	list.append('&wallaNew=item_id%3D2817611')
 	addDir(localize(22082),list,17,'',addonString(102000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
 	'''חיפוש'''
-	addDir("[COLOR=BLUE]חיפוש[/COLOR]",'',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png','חיפוש תוכן בהרחבת יוטיוב','1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'הופעה לילדים',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png','חיפוש תוכן בהרחבת יוטיוב','1',"", getAddonFanart(background, custom=""))
 	
 	
 	'''101 כלבים דלמטים'''
@@ -437,8 +437,6 @@ def CATEGORIES104(admin):
 	list =[]
 	list.append('&youtube_pl=PL66F75CE8DFB7A2A2')
 	list.append('&youtube_pl=PLo3vmw8N0knb9tZuIy7AR9fMPTUzr1oiI')
-	list.append('&youtube_')
-	list.append('&youtube_')
 	list.append('&sdarot=series_id=236&series_name=%d7%94%d7%93%d7%a8%d7%93%d7%a1%d7%99%d7%9d%20-%20%d7%9e%d7%93%d7%95%d7%91%d7%91&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f236%2fthe-smurfs-%d7%94%d7%93%d7%a8%d7%93%d7%a1%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 	list.append('&hotVOD=http%3a%2f%2fhot.ynet.co.il%2fExt%2fComp%2fHot%2fTopSeriesPlayer_Hot%2fCdaTopSeriesPlayer_VidItems_Hot%2f0%2c13031%2cL-10842-525-0-0%2c00.html',)
 	list.append('&hotVOD=http%3A%2F%2Fhot.ynet.co.il%2FCmn%2FApp%2FVideo%2FCmmAppVideoApi_AjaxItems%2F0%2C13776%2C48507-0%2C00.html')
@@ -1511,4 +1509,3 @@ def CATEGORIES10907(name, iconimage, desc, fanart):
 #add_cat("דורה ודייגו", "PLqx6fN1abed4oHQ2Y5xadY-ILjzFdoMNM")
 #add_cat("פסטיגל", "PLwimDnICcPKPL4MdOLIQrGDMTOAshuQ2l")
 #add_cat("מיקי", "PLwimDnICcPKP4vFp6zklqeNUSdq08mN1H")
-

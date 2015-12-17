@@ -334,8 +334,9 @@ def ListLive(url):
 	'''---------------------------'''
 
 def clean_commonsearch(x):
-	y = x
+	y = x ; printpoint = ""
 	if "commonsearch" in y:
+		printpoint = printpoint + '1'
 		if addonID == 'plugin.video.featherence.music':
 			y = y.replace("commonsearch101", space + commonsearch101)
 			y = y.replace("commonsearch102", space + commonsearch102)
@@ -348,17 +349,33 @@ def clean_commonsearch(x):
 			y = y.replace("commonsearch112", space + commonsearch112)
 			y = y.replace("commonsearch114", space + commonsearch114)
 	
-	if "[COLOR" in y or "[/COLOR" in y:
-		y = y.replace("[COLOR=Green]", "")
-		y = y.replace("[COLOR=Yellow]", "")
-		y = y.replace("[COLOR=White]", "")
-		y = y.replace("[/COLOR]", "")
+	count = 0
+	while count < 10 and '[' in y and not xbmc.abortRequested:
+		y = y.replace('[Search]',"")
+		y = y.replace('[Video]',"")
+		y = y.replace('[Playlist]',"")
+		y = y.replace('[Channel]',"")
+		if '[COLOR=' in y:
+			printpoint = printpoint + '4'
+			y_ = regex_from_to(y, '[COLOR=', ']', excluding=False)
+			y = y.replace(y_,"", 1)
+			y = y.replace('[/COLOR]',"", 1)
+			
+		elif '[' in y and ']' in y:
+			printpoint = printpoint + '5'
+			y_ = regex_from_to(y, '[', ']', excluding=False)
+			print 'wwwoot ' + y_
+			y = y.replace(y_,"", 1)
+		count += 1
 	
+	y = y.replace("  "," ")
+	y = y.replace("[","")
+	y = y.replace("]","")
 	y = y.replace(" ","%20")
 	y = y.replace("#","%23")
 	
-	text = "x" + str(x) + space + "y" + space2 + str(y)
-	printlog(title='clean_commonsearch', printpoint="", text=text, level=0, option="")
+	text = "x" + space2 + str(x) + space + "y" + space2 + str(y)
+	printlog(title='clean_commonsearch', printpoint=printpoint, text=text, level=0, option="")
 	return y
 
 def LocalSearch(mode, name, url, iconimage, desc, num, viewtype, fanart):
@@ -370,7 +387,7 @@ def LocalSearch(mode, name, url, iconimage, desc, num, viewtype, fanart):
 		
 def YoutubeSearch(name, url, desc, num, viewtype):
 	printpoint = "" ; value = ""
-	
+	print 'blablabla ' + str(name)
 	if url == None or url == 'None': url = ""
 	name = clean_commonsearch(name)
 	try: name = str(name).encode('utf-8')
@@ -385,10 +402,13 @@ def YoutubeSearch(name, url, desc, num, viewtype):
 			value = returned + space + url
 		else:
 			notification_common("8")
-	else:
+	elif 'commonsearch' in url:
 		'''commonsearch'''
 		printpoint = printpoint + "2"
-		#value = name + space + url
+		url = clean_commonsearch(url)
+		value = name + space + url
+	else:
+		printpoint = printpoint + '4'
 		value = url
 	
 	if value != "":
@@ -400,10 +420,11 @@ def YoutubeSearch(name, url, desc, num, viewtype):
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
-	text = newline + \
+	text = 'name' + space2 + str(name) + newline + \
+	"desc" + space2 + str(desc) + newline + \
 	"value" + space2 + str(value) + newline + \
 	"url" + space2 + str(url) + newline
-	printlog(title='YoutubeSearch', printpoint="", text=text, level=0, option="")
+	printlog(title='YoutubeSearch', printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	
 def ListPlaylist2(playlistid, num, viewtype):
@@ -562,9 +583,11 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						finalurl="plugin://plugin.video.hotVOD.video/?url="+x+"&mode=4"
 						'''---------------------------'''
 				elif "&sdarot=" in x:
-					x = x.replace("&sdarot=","")
-					#finalurl="plugin://plugin.video.sdarot.tv/?mode=4&"+x
-					'''---------------------------'''
+					x, z, summary, mode_, series_name, season_id = sdarot_(x)
+					if mode_ == 10:
+						#addDir(str(i) + '.' + space + name_ + space + name2, "plugin://plugin.video.sdarot.tv/?mode="+z+summary+series_name+"&image="+iconimage_+"&name_="+name_+"&"+x, mode_, iconimage_, desc_, num, viewtype, fanart_)
+						#finalurl="plugin://plugin.video.sdarot.tv/?mode="+z+summary+series_name+"&image="+iconimage+"&name_="+n
+						finalurl="plugin://plugin.video.sdarot.tv/?mode=4&"+x
 				elif "&seretil=" in x:
 					x = x.replace("&seretil=","")
 					#finalurl="plugin://plugin.video.sdarot.tv/?mode=4&"+x
@@ -598,11 +621,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					finalurl="plugin://plugin.video.youtube/play/?video_id="+x+"&hd=1"
 					'''---------------------------'''
 				elif "&youtube_se2=" in x or "&youtube_se=" in x or "&custom_se=" in x:
-					#try: str(name).encode('utf-8')
-					#except: str(name)
-					#x = x.replace("&youtube_se=","")
-					#if '&youtube_se=' in x: x = x + space + str(name)
-					#print 'xxx' + str(x)
+					if 'commonsearch' in x: x = x + space + str(name)
 					try: finalurlL, numOfItems2 = youtube_pl_to_youtube_id(addonID, x, playlist)
 					except Exception, TypeError: extra = extra + newline + "youtube_pl_to_youtube_id_TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
 					#finalurl="plugin://plugin.video.youtube/play/?video_id="+x+"&hd=1"
@@ -691,7 +710,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					x = x.replace("&youtube_se=","")
 					x = x.replace("&custom_se=","")
 					#x = x + space + str(name_)
-					x = clean_commonsearch(x)
+					#x = clean_commonsearch(x)
 					#print 'testme ' + str(x)
 					addDir(str(i) + '.' + space + name_ + space + name2, x, 3, iconimage_, desc_, num, viewtype, fanart_)
 					'''---------------------------'''	
@@ -711,33 +730,17 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						addDir(str(i) + '.' + space + name_ + space + name2, "plugin://plugin.video.wallaNew.video/?url="+x+"&mode="+z+"&module=nickjr", 8, iconimage_, desc_, num, viewtype, fanart_)
 						'''---------------------------'''
 					elif "&sdarot=" in x:
-						x = x.replace("&sdarot=","")
-						if "episode_id=" in url: z = '4'
-						elif "season_id" in url: z = '5'
-						elif "series_id=" in url: z = '3'
-						else: z = '2'
+						x, z, summary, mode_, series_name, season_id = sdarot_(x)
 						
-						if 1 + 1 == 2:
-							if not "summary=" in x:
-								if z == '3':
-									if not "summary" in x: summary = "&summary"
-									else: summary = ''
-								else: summary = "&summary="
-								#elif desc_ != "": summary = "&summary="+desc_
-							else: summary = ''
-						else: summary = ''
-						
+						addDir(str(i) + '.' + space + name_ + space + name2, "plugin://plugin.video.sdarot.tv/?mode="+z+summary+series_name+"&image="+iconimage_+"&name_="+season_id+name_+"&"+x, int(mode_), iconimage_, desc_, num, viewtype, fanart_)
 						text = "Testing x" + space2 + newline + \
 						"x" + space2 + str(x) + newline + \
 						"z" + space2 + str(z) + newline + \
 						"summary" + space2 + str(summary) + newline
-						printlog(title='MultiVideos_test4', printpoint=printpoint, text=text, level=0, option="")
-							
 						
-						if not "series_name=" in x: series_name = "&series_name="
-						else: series_name = ''
-						addDir(str(i) + '.' + space + name_ + space + name2, "plugin://plugin.video.sdarot.tv/?mode="+z+summary+series_name+"&image="+iconimage_+"&name_="+name_+"&"+x, 8, iconimage_, desc_, num, viewtype, fanart_)
-						'''---------------------------'''
+						
+						printlog(title='sdarot_', printpoint=printpoint, text=text, level=0, option="")
+
 					elif "&seretil=" in x:
 						x = x.replace("&seretil=","")
 						if "?mode=211&url=http%3a%2f%2fseretil.me" in x: name2 = '[COLOR=Red]' + name_ + space + str(i) + '[/COLOR]'
@@ -775,7 +778,37 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	"finalurl" + space2 + str(finalurl) + space + "finalurlL" + space2 + str(finalurlL) + space + newline + extra
 	printlog(title="MultiVideos", printpoint=printpoint, text=text, level=2, option="")
 	'''---------------------------'''
-		
+
+def sdarot_(x):
+	'''get required data for &sdarot='''
+	x = x.replace("&sdarot=","")
+	if "episode_id=" in x: z = '4'
+	elif "season_id" in x: z = '5'
+	elif "series_id=" in x: z = '3'
+	else: z = '2'
+
+	if 1 + 1 == 2:
+		if not "summary=" in x:
+			if z == '3':
+				if not "summary" in x: summary = "&summary"
+				else: summary = ''
+			else: summary = "&summary="
+			#elif desc_ != "": summary = "&summary="+desc_
+		else: summary = ''
+	else: summary = ''
+
+	if not "series_name=" in x: series_name = "&series_name="
+	else: series_name = ''
+	if 'series_id' in x:
+		if not "season_id=" in x: season_id = "&season_id="
+		else: season_id = ''
+	else: season_id = ''
+	
+	if z == '4': mode_ = 10
+	else: mode_ = 8
+	
+	return x, z, summary, mode_, series_name, season_id
+	
 def getAPIdata(x, name, iconimage, desc, fanart):
 	printpoint = "" ; TypeError = "" ; extra = ""
 	finalurl = "" ; url = "" ; prms = "" ; id = ""
@@ -1927,11 +1960,18 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 	'''Error may occured at anytime'''
 	'''Make sure to use exception upon running this module'''
 	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)') ; playlist2 = []
-	printpoint = "" ; TypeError = "" ; extra = "" ; page = 1 ; pagesize = 40
+	printpoint = "" ; TypeError = "" ; extra = "" ; page = 1 ; count = 0 ; count_ = "" ; pagesize = 40
 	valid_ = "" ; invalid_ = 0 ; invalid__ = "" ; duplicates_ = 0 ; duplicates__ = "" ; except_ = 0 ; except__ = ""
 	
 	returned = get_types(playlist)
-	if not 'list' in returned: playlist = []
+	if not 'list' in returned:
+		printpoint = printpoint + '0'
+		playlist = []
+	#count_ = playlist.count(',')
+	try:
+		count_ = int(len(playlist)) / 2
+		count = 0 + count_
+	except Exception, TypeError: extra = extra + newline + 'count_ TypeError: ' + str(TypeError)
 	
 	videoDefinition = 'any'
 	safeSearch = 'moderate'
@@ -1988,8 +2028,8 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 	totalpagesN = (totalResults / pagesize) + 1
 	'''---------------------------'''
 
-	i = 0 ; count = 0
-	while i < pagesize and i < totalResults and not "8" in printpoint and count < (pagesize + 20) and not xbmc.abortRequested: #h<totalResults
+	i = 0
+	while i < pagesize and i < totalResults and not "8" in printpoint and count < (pagesize) and not xbmc.abortRequested: #h<totalResults
 		try:
 			#if 1 + 1 == 2:
 			#print "i" + space2 + str(i) + space + "duplicates__" + space2 + str(duplicates__) + "totalResults" + space2 + str(totalResults)
@@ -2024,7 +2064,7 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 				
 				
 				i2 = 0
-				while i2 < pagesize and i2 < totalResults2 and i2 < 20 and not "8" in printpoint and count < (pagesize + 10) and not xbmc.abortRequested:
+				while i2 < pagesize and i2 < totalResults2 and i2 < 20 and not "8" in printpoint and count < (pagesize) and not xbmc.abortRequested:
 					id = "" ; finalurl = ""
 					id=str(prms2['items'][i2][u'snippet'][u'resourceId'][u'videoId']) #Video ID (Playlist)
 					if id != "":
@@ -2089,6 +2129,7 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 		
 	text = "i" + space2 + str(i) + space + "totalResults" + space2 + str(totalResults) + space + "numOfItems2" + space2 + str(numOfItems2) + newline + \
 	"x" + space2 + x + space + "page" + space2 + str(page) + " / " + str(totalpages) + space + "pagesize" + space2 + str(pagesize) + newline + \
+	'count' + space2 + str(count) + space + 'count_' + space2 + str(count_) + newline + \
 	"extra" + space2 + str(extra)
 	printlog(title='youtube_pl_to_youtube_id', printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''

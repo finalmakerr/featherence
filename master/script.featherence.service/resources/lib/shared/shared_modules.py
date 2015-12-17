@@ -1403,8 +1403,8 @@ def installaddon(admin, addonid2, name="", update=True):
 					xbmc.executebuiltin('Action(Down)')
 					xbmc.executebuiltin('Action(Select)')
 
-	homeW = xbmc.getCondVisibility('Window.IsVisible(Home.xml)')
-	if not homeW and not startupW: xbmc.executebuiltin('ActivateWindow(0)') ; xbmc.sleep(500)
+				homeW = xbmc.getCondVisibility('Window.IsVisible(Home.xml)')
+				if not homeW and not startupW and not '.featherence.' in containerfolderpath: xbmc.executebuiltin('ActivateWindow(0)') ; xbmc.sleep(500)
 	text = str(addonid2)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
@@ -1671,6 +1671,14 @@ def installaddonP(admin, addon, update=True):
 	elif 'plugin.audio.jango' in addon: #FIXED PATH
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			DownloadFile("https://offshoregit.com/kinkin-xbmc-repository/zips/plugin.audio.jango/plugin.audio.jango-0.8.6.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif 'plugin.audio.99fm-playlists' in addon: #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("http://www.abeksis.com/repo/plugin.audio.99fm-playlists/plugin.audio.99fm-playlists-0.1.8.zip", addon + ".zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
@@ -2190,7 +2198,6 @@ def read_from_file(infile, silent=True, lines=False, retry=True, createlist=True
 def regex_from_to(text, from_string, to_string, excluding=True):
     import re
     name = 'regex_from_to'
-    admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
     printpoint = "" ; TypeError = "" ; extra = ""
     if excluding:
         try: r = re.search("(?i)" + from_string + "([\S\s]+?)" + to_string, text).group(1)
@@ -2213,9 +2220,9 @@ def regex_from_to(text, from_string, to_string, excluding=True):
 				extra = newline + "TypeError" + space2 + str(TypeError)
 				r = ""
 	
-	if excluding == True or r == "": text = "from_string" + space2 + str(from_string) + space + "to_string" + space2 + str(to_string) + space + "r" + space2 + str(r) + space + "text" + space2 + str(text) + space + extra
-	else: text = "regex_from_to" + space2 + "from_string" + space2 + "r" + space2 + str(r) + space + "text" + space2 + str(text) + space + extra
-	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+    if excluding == True or r == "": text = "from_string" + space2 + str(from_string) + space + "to_string" + space2 + str(to_string) + space + "r" + space2 + str(r) + space + "text" + space2 + str(text) + space + extra
+    else: text = "regex_from_to" + space2 + "from_string" + space2 + "r" + space2 + str(r) + space + "text" + space2 + str(text) + space + extra
+    printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
     return str(r)
 
 def regex_get_all(text, start_with, end_with): #UNUSED
