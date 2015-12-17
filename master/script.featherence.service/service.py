@@ -18,6 +18,7 @@ if os.path.exists(skin_path) and xbmc.getCondVisibility('System.HasAddon(skin.fe
 xbmc.sleep(2000)
 
 if xbmc.getSkinDir() == 'skin.featherence':
+	installaddonP(admin, 'script.module.simplejson')
 	xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)')
 	mode215('_',admin,'','')
 	

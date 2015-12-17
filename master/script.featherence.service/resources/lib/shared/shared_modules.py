@@ -1486,6 +1486,16 @@ def installaddonP(admin, addon, update=True):
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
 	
+	elif addon == 'script.module.simplejson': #FIXED PATH *MASTER
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			fileID = getfileID(addon+".zip")
+			DownloadFile("https://github.com/XBMC-Addons/script.module.simplejson/archive/master.zip", addon + "-master.zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, 'script.module.simplejson-master'), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+		
 	elif addon == 'script.openelec.rpi.config':
 		
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
