@@ -342,20 +342,20 @@ def videostarttweak(admin):
 	playercache = xbmc.getInfoLabel('Player.CacheLevel')
 	playerpaused = xbmc.getCondVisibility('Player.Paused')
 	count = 0
-	
-	while count < 10 and int(playercache) < 90 and not xbmc.abortRequested:
-		if count == 0 and not playerpaused:
-			xbmc.executebuiltin('Action(Pause)')
-			notification('Cache Tweak','...','',2000)
-		count += 1
-		playercache = xbmc.getInfoLabel('Player.CacheLevel')
-		playerpaused = xbmc.getCondVisibility('Player.Paused')
-		xbmc.sleep(500)
-	
-	if count > 0 and count < 10:
-		playerpaused = xbmc.getCondVisibility('Player.Paused')
-		if playerpaused: xbmc.executebuiltin('Action(Play)')
-		
+	try:
+		while count < 10 and int(playercache) < 90 and not xbmc.abortRequested:
+			if count == 0 and not playerpaused:
+				xbmc.executebuiltin('Action(Pause)')
+				notification('Cache Tweak','...','',2000)
+			count += 1
+			playercache = xbmc.getInfoLabel('Player.CacheLevel')
+			playerpaused = xbmc.getCondVisibility('Player.Paused')
+			xbmc.sleep(500)
+
+		if count > 0 and count < 10:
+			playerpaused = xbmc.getCondVisibility('Player.Paused')
+			if playerpaused: xbmc.executebuiltin('Action(Play)')
+	except: pass
 def mode10(admin, name, printpoint):
 	'''------------------------------
 	---VideoPlayer demon-------------

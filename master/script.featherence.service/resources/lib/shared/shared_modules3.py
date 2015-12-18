@@ -760,7 +760,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						addLink(str(i) + '.' + space + name_ + space + name2, x, iconimage_, desc_, viewtype)
 						'''---------------------------'''
 					else: addLink(str(i) + '.' + space + name_ + space + name2, x, iconimage_, desc_, viewtype)
-		
+		else: extra = extra + newline + 'x' + space2 + str(x) + space + 'is in playlist or empty!'
 		
 	if mode == 5:
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
@@ -1959,9 +1959,12 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 	'''Error may occured at anytime'''
 	'''Make sure to use exception upon running this module'''
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)') ; playlist2 = []
-	printpoint = "" ; TypeError = "" ; extra = "" ; page = 1 ; count = 0 ; count_ = "" ; pagesize = 40
+	
+	'''playlist2 = store new videos from x'''
+	'''playlist = store up to date videos for comparision'''
+	printpoint = "" ; TypeError = "" ; extra = "" ; page = 1 ; count = 0 ; count_ = "" ; playlist2 = [] ; pagesize = 40
 	valid_ = "" ; invalid_ = 0 ; invalid__ = "" ; duplicates_ = 0 ; duplicates__ = "" ; except_ = 0 ; except__ = ""
+	x2 = x
 	
 	returned = get_types(playlist)
 	if not 'list' in returned:
@@ -2007,7 +2010,7 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 		x = clean_commonsearch(x)
 		#print "qwewqeqwe" + x
 		pagesize = 1
-		url = 'https://www.googleapis.com/youtube/v3/search?q='+x+'&key='+featherenceapi+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults=1&pageToken='
+		url = 'https://www.googleapis.com/youtube/v3/search?q='+x+'&key='+featherenceapi+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults=2&pageToken='
 	elif "&youtube_ch=" in x:
 		printpoint = printpoint + "4"
 		if '/playlists' in x: x = x.replace('/playlists',"")
@@ -2081,10 +2084,10 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 
 						playlist.append(finalurl)
 						playlist2.append(finalurl)
+						count += 1
 						'''---------------------------'''
 					#print 'i2' + space2 + str(i2) + space + 'id' + space2 + str(id)
 					i2 += 1
-					count += 1
 			else:	
 				if not finalurl in playlist and not "Deleted video" in title and not "Private video" in title and finalurl != "":
 					#ok, liz = addLink(title,finalurl, thumb, desc)
@@ -2093,6 +2096,7 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 
 					playlist.append(finalurl)
 					playlist2.append(finalurl)
+					count += 1
 					'''---------------------------'''
 				else:
 					if "Deleted video" in title or "Private video" in title:
@@ -2110,9 +2114,8 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 			'''---------------------------'''
 		
 		i += 1
-		count += 1
-		
-	numOfItems2 = len(playlist2)
+		if "&custom_se=" in x2 and count > 0: printpoint = printpoint + "8"
+	numOfItems2 = len(playlist)
 	#numOfItems2 = totalResults - invalid_ - duplicates_ - except_
 	#if numOfItems2 > pagesize: numOfItems2 = 40
 	totalpages = (numOfItems2 / pagesize) + 1

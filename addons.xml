@@ -14,7 +14,7 @@
 	<summary lang="he"></summary>
     <description lang="en">Features:
 - Smart TV Mode.
-- Smart Interface allow the users to create thier own music buttons and share with others.
+- Smart Interface allow the users to easily create thier own addon from within Kodi and share it with others.
 - Customized Fanart for each button.
 - Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox...
 - Smart Search button..
@@ -64,14 +64,14 @@
 	<summary lang="he"></summary>
     <description lang="en">Features:
 - Smart TV Mode.
-- Smart Interface allow the users to create thier own music buttons and share with others.
+- Smart Interface allow the users to easily create thier own addon from within Kodi and share it with others.
 - Customized Fanart for each button.
 - Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox...
 - Smart Search button..
 - Sorted and Organized contents.</description>
 	<description lang="he"></description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	<forum></forum>
+	<forum>http://forum.kodi.tv/showthread.php?tid=252567</forum>
 	<email>featherence@groups.facebook.com</email>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.kids</source>
 	<website>https://www.facebook.com/groups/featherence/</website>
@@ -93,7 +93,7 @@
 	<summary lang="he"></summary>
     <description lang="en">Features:
 - Smart TV Mode.
-- Smart Interface allow the users to create thier own music buttons and share with others.
+- Smart Interface allow the users to easily create thier own addon from within Kodi and share it with others.
 - Customized Fanart for each button.
 - Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox...
 - Smart Search button..
@@ -150,7 +150,7 @@
 
 <addon id="skin.featherence" version="0.1.4" name="Featherence" provider-name="finalmakerr">
   <requires>
-    <import addon="xbmc.gui" version="5.9.0"/>
+    <import addon="xbmc.gui" version="5.10.0"/>
 	<!--<import addon="repository.featherence" version="1.1.0" />-->
 	<import addon="script.featherence.service" version="0.1.0"/>
   </requires>
@@ -161,8 +161,22 @@
 	<platform>all</platform>
 	<summary lang="en"></summary>
 	<summary lang="he"></summary>
-    <description lang="en"></description>
-	<description lang="he"></description>
+    <description>Features:
+- Panel, Horizontal, Vertical home views with two versions each.
+- Wall, Small list, Center List, Poster, Line views.
+- 1:1 realtime home design capability. Customized is at the top level, superb easy and fun!
+- RTL &amp; LTR auto support mode.
+- Full mouse support.
+- AutoView support.
+- Choose any color for almost anything! (WIP)
+- Full save/load skin image.
+- Varied buttons and views effects.
+- Enchanced widget.
+- Full genres support.
+- Some views have an additional special features.
+- Dynamic weather and widgets fanart (optional).
+- Interactive video window &amp; OSD while navaigating.
+- Smart subtitle module display current and history choosen subtitles, smart search and auto subs hosts finder.</description>
     <disclaimer></disclaimer>
 	<email>featherence@groups.facebook.com</email>
 	<forum>http://forum.kodi.tv/showthread.php?tid=251726</forum>
