@@ -1,7 +1,8 @@
 ------------------------
 WIP (WORK IN PROGRESS)--
 ------------------------
-- None.
+- Update foreign singers translations.
+- Add foreign singers, karaoke, liveshows.
 
 ------------------------
 Featherence Music v0.1.2 (17-12-15)
