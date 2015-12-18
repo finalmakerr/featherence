@@ -334,6 +334,22 @@ msgctxt "#111
 msgid ""
 msgstr ""
 
+msgctxt "#111
+msgid "National Geographic"
+msgstr "נשיונאל ג'אוגראפיק"
+
+msgctxt "#112
+msgid "Discovery"
+msgstr "ערוץ דיסקאברי"
+
+msgctxt "#113
+msgid "Nat Geo Wild"
+msgstr "נשיונאל ג'אוגראפיק ווילד"
+
+msgctxt "#114
+msgid "Animal Planet"
+msgstr "אנימל פלאנט"
+
 msgctxt "#1000
 msgid ""
 msgstr ""
@@ -341,6 +357,8 @@ msgstr ""
 msgctxt "#1010
 msgid ""
 msgstr ""
+
+
 
 
 msgctxt "#10101
@@ -371,4 +389,5 @@ msgstr "טכנולוגיה"
 msgctxt "#10801
 msgid "kids"
 msgstr "ילדים"
+
 
