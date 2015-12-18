@@ -18,8 +18,11 @@ def CATEGORIES():
 	addDir(addonString(107).encode('utf-8'),'',107,'http://www.muralswallpaper.co.uk/sites/default/files/styles/full_lightbox/public/product_images/Cute-Animals-Kids-Wallpaper-Mural.jpg?itok=F5n249_x',addonString(1070).encode('utf-8'),'1',50, getAddonFanart(107, custom="")) #Kids
 	addDir(addonString(108).encode('utf-8'),'',108,'http://in.bgu.ac.il/welcome/EventGalleries/%D7%9C%D7%A9%D7%95%D7%9F%20%D7%A2%D7%91%D7%A8%D7%99%D7%AA.jpg',addonString(1080).encode('utf-8'),'1',50, getAddonFanart(108, custom="")) #Hebrew Subtitle
 	addDir(addonString(109).encode('utf-8'),'',109,'http://www.globallistings.info/repository/image/6/445.jpg',addonString(1090).encode('utf-8'),'1',50, getAddonFanart(109, custom="")) #TV channels
-	addDir(addonString(110).encode('utf-8'),'',110,'http://crownheights.org/wp-content/uploads/2015/07/art.jpg',addonString(1010).encode('utf-8'),'1',50, getAddonFanart(110, custom="")) #art
-		
+	addDir(addonString(110).encode('utf-8'),'',110,'http://crownheights.org/wp-content/uploads/2015/07/art.jpg',addonString(1100).encode('utf-8'),'1',50, getAddonFanart(110, custom="")) #Art
+	addDir(addonString(111).encode('utf-8'),'',111,'https://i.ytimg.com/vi/ZnBg4MCg7Mg/maxresdefault.jpg',addonString(1110).encode('utf-8'),'1',50, getAddonFanart(111, custom="")) #National Geographic
+	addDir(addonString(112).encode('utf-8'),'',112,'http://vignette1.wikia.nocookie.net/logopedia/images/3/34/Discovery_Channel_2000.png/revision/latest?cb=20100728112637',addonString(1120).encode('utf-8'),'1',50, getAddonFanart(112, custom="")) #Discovery
+	addDir(addonString(113).encode('utf-8'),'',113,'http://media.shawmedia.ca/uploadedimages/shawmedia/content/brands/header_natgeowild.jpg?n=4234',addonString(1130).encode('utf-8'),'1',50, getAddonFanart(113, custom="")) #Nat Geo Wild
+	addDir(addonString(114).encode('utf-8'),'',114,'https://upload.wikimedia.org/wikipedia/en/3/3a/Animal_Planet_Canada_Logo.PNG',addonString(1140).encode('utf-8'),'1',50, getAddonFanart(114, custom="")) #Animal Planet
 	addon = 'plugin.video.smithsonian'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
 	addDir('Smithsonian HD 1080','plugin://'+addon,8,thumb,plot,addon,58, getAddonFanart(110, custom=""))
@@ -98,7 +101,7 @@ def CATEGORIES101(admin):
 	list.append('&youtube_ch=BBCEarth')
 	list.append('&youtube_ch=AnimalPlanetTV')
 	list.append('&youtube_ch=UC1BOeEP9-jiSmvME99fneQA')
-	addDir("youtube nature channel's",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+	addDir("youtube nature channel's",list,17,'http://www.planwallpaper.com/static/images/121.jpg','','1',"", getAddonFanart(background, custom=""))
  
  
  
@@ -207,19 +210,6 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLjXkouFJLKB3jeq_W_wBZnyZe4q-rLDKL')
 	addDir('Dogtv',list,17,'http://www.telestar.fr/var/telestar/storage/images/2015/articles/dog-tv-quels-sont-les-programmes-proposes-par-cette-chaine-reservee-aux-chiens-96685/825982-1-fre-FR/Dog-TV-quels-sont-les-programmes-proposes-par-cette-chaine-reservee-aux-chiens.jpg','','1',"", getAddonFanart(background, custom=""))
  
-	'''DOG WHISPERER'''
-	list = []
-	list.append('&youtube_pl=PLdN3gbvLGO69ux2taRPiVADgwfTrPor2C')
-	list.append('&youtube_pl=PLdN3gbvLGO6-MbV_l-ThMzUsWX9-XVdP6')
-	list.append('&youtube_pl=PLvt1492Vj-RbJx64fEZkS5ygKZWCVOkZm')
-	list.append('&youtube_pl=PLdN3gbvLGO6-OHbniVjAUMfV5Z7K_dRzz')
-	list.append('&youtube_pl=PLdN3gbvLGO6_zXj9K0fwSTrqAG01MA__q')
-	list.append('&youtube_pl=PL4GlJCvaiJkTath_Qafqp_K0zfyxzXTUr')
-	list.append('&youtube_pl=PL4GlJCvaiJkThBI4xT-1VIHc4ZLSB0H97')
-	list.append('&youtube_pl=PL4GlJCvaiJkQjm8rnXXJhkuHrfu7rM3pV')
-	list.append('&youtube_pl=PL4GlJCvaiJkS5S4M2QU5AJhTRhka_SzUC')
-	addDir('DOG WHISPERER',list,17,'http://cdn-img.people.com/emstag/styles/800x600/s3/i/2009/pets/migration/001074442.jpg?itok=tMQvsEP0','','1',"", getAddonFanart(background, custom=""))
-
 def CATEGORIES10102(name, iconimage, desc, fanart):
 	'''------------------------------
 	---NATURE-PLANTS-----------------
@@ -564,7 +554,7 @@ def CATEGORIES10401(name, iconimage, desc, fanart):
 	'''Geography'''
 	list = []
 	list.append('&youtube_ch=UCl-12y1Zht8eSiOGBiMV7wQ')
-	addDir('Geography',list,17,'http://wallpaperbeta.com/wallpaper_800x600/map_of_the_world_geographical_geography_800x600_hd-wallpaper-330201.jpghttp://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+	addDir('Geography',list,17,'http://wallpaperbeta.com/wallpaper_800x600/map_of_the_world_geographical_geography_800x600_hd-wallpaper-330201.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Law'''
 	list = []
@@ -1106,7 +1096,7 @@ def CATEGORIES10801(name, iconimage, desc, fanart):
 	'''קטנטנים בטבע'''
 	list = []
 	list.append('&youtube_id=J1JIHh1ZEf0')
-	addDir('קטנטנים בטבע',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+	addDir('קטנטנים בטבע',list,17,'http://4.bp.blogspot.com/-i5yjcp0Hsek/VL3-_9tBpRI/AAAAAAAAjgk/3P6kPNQZDbc/s1600/%D7%A7%D7%99%D7%95%D7%98%D7%99.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''בעלי חיים לילדים ופעוטות'''
 	list = []
@@ -1212,10 +1202,12 @@ def CATEGORIES109(admin):
 	
 def CATEGORIES109(admin):
 	'''------------------------------
-	---TV-channels-------------------
+	---LIVE TV Channels-------------------
 	------------------------------'''
 	background = 109
 	name = addonString(109).encode('utf-8')
+	
+	
 	
 	
 	
@@ -1240,7 +1232,7 @@ def CATEGORIES109(admin):
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
 	addDir('Dog Tv','plugin://'+addon + addon2,10,'http://3.bp.blogspot.com/-LRjcfd85n5o/UlNRltQt_7I/AAAAAAAAAtE/i3vgCKqbfD4/s1600/dogtv+icon+2.png',plot,addon,50, getAddonFanart(110, custom=""))
 	'''---------------------------'''
-	
+	  
 	'''Travel Channel +1'''
 	addon = 'plugin.video.israelive'
 	addon2 ='/?url=plugin%3A%2F%2Fplugin.video.israelive%2F%3Furl%3D842%26mode%3D1%26ignorefilmonguide%3D1&mode=10&name=%5BCOLOR+yellow%5D%5BB%5DTravel+Channel%2B1%5B%2FB%5D%5B%2FCOLOR%5D+-+%5BCOLOR+orange%5D%5BB%5DShed+and+Buried%5B%2FB%5D%5B%2FCOLOR%5D+%5BCOLOR+burlywood%5D%5B19%3A30-20%3A00%5D%5B%2FCOLOR%5D+-+%5BCOLOR+white%5DNext%3A+%5BB%5DBuilding+Alaska%5B%2FB%5D%5B%2FCOLOR%5D+%5BCOLOR+burlywood%5D%5B20%3A00-21%3A00%5D%5B%2FCOLOR%5D&iconimage=http%3A%2F%2Fstatic.filmon.com%2Fcouch%2Fchannels%2F842%2Fextra_big_logo.png&description=Henry+and+Sam+continue+their+search+through+Britain%3Fs+sheds+in+search+of+vintage+treasure+to+restore+and+sell+for+a+tidy+profit.+In+Surrey%2C+they+find+Pontiac+ambulances%2C+mysterious+automotive+sculptures+and+strangely+well-preserved+motorbikes.+reserved.&displayname=Travel+Channel%2B1&categoryid=10451'
@@ -1248,5 +1240,297 @@ def CATEGORIES109(admin):
 	addDir('Travel Channel+1','plugin://'+addon + addon2,10,'http://www.travelchannel.com/content/dam/images/travel/fullset/2012/08/15/bc/travel-channel_web-logo.rend.tccom.616.462.jpeg',plot,addon,50, getAddonFanart(110, custom=""))
 	'''---------------------------'''
 		
+		
+def CATEGORIES111(admin):
+	'''------------------------------
+	---National Geographic-------------------
+	------------------------------'''
+	background = 111
+	name = addonString(111).encode('utf-8')
+	
+	'''חיפוש'''
+	addDir(localize(137),'Live Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+
+		
+	
+	'''National Geographic'''
+	list = []
+	list.append('&youtube_ch=NationalGeographic')
+	list.append('&youtube_ch=UC1KCUsWsce0B6kXMv10bFsg')
+	addDir("National Geographic",list,17,'https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn2/981552_347810472007719_83908702_o.jpg','','1',"", getAddonFanart(background, custom=""))	
+ 	
+	
+	
+	
+	
+	'''Air Crash Investigation (Mayday)'''
+	addon = 'plugin.video.salts'
+	addon2 ='/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f000%2f089%2ffanarts%2fmedium%2fe16b304873.jpg&mode=seasons&trakt_id=89'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('mayday','plugin://'+addon + addon2,8,'http://cosmolearning.org/images_dir/education/documentaries/1157/profile.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+
+	
+	'''Brain Games'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f053%2f972%2ffanarts%2fmedium%2fa91e82b592.jpg&mode=seasons&trakt_id=53972'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Brain Games','plugin://'+addon + addon2,8,'http://static1.squarespace.com/static/52c6e2f9e4b0fbf19ff9e2c6/52d5b7b9e4b0722eef0bd3e7/52d5b7b9e4b0722eef0bd3ee/1388950219619/brain-games(1).jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	
+	'''DOG WHISPERER'''
+	list = []
+	list.append('&youtube_pl=PLdN3gbvLGO69ux2taRPiVADgwfTrPor2C')
+	list.append('&youtube_pl=PLdN3gbvLGO6-MbV_l-ThMzUsWX9-XVdP6')
+	list.append('&youtube_pl=PLvt1492Vj-RbJx64fEZkS5ygKZWCVOkZm')
+	list.append('&youtube_pl=PLdN3gbvLGO6-OHbniVjAUMfV5Z7K_dRzz')
+	list.append('&youtube_pl=PLdN3gbvLGO6_zXj9K0fwSTrqAG01MA__q')
+	list.append('&youtube_pl=PL4GlJCvaiJkTath_Qafqp_K0zfyxzXTUr')
+	list.append('&youtube_pl=PL4GlJCvaiJkThBI4xT-1VIHc4ZLSB0H97')
+	list.append('&youtube_pl=PL4GlJCvaiJkQjm8rnXXJhkuHrfu7rM3pV')
+	list.append('&youtube_pl=PL4GlJCvaiJkS5S4M2QU5AJhTRhka_SzUC')
+	addDir('DOG WHISPERER',list,17,'http://cdn-img.people.com/emstag/styles/800x600/s3/i/2009/pets/migration/001074442.jpg?itok=tMQvsEP0','','1',"", getAddonFanart(background, custom=""))
+
+	
+	
+	
+
+	'''World's Most Extreme'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f080%2f202%2ffanarts%2fmedium%2fb4e2a93a35.jpg&mode=seasons&trakt_id=80202'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir("World's Most Extreme",'plugin://'+addon + addon2,8,'https://i.ytimg.com/vi/afbwKsNZ35k/maxresdefault.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	
+	'''Megafactories'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f005%2f320%2ffanarts%2fmedium%2f537f9c2cb3.jpg&mode=seasons&trakt_id=5320'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Megafactories','plugin://'+addon + addon2,8,'https://d3fa68hw0m2vcc.cloudfront.net/ba1/47613017.jpeg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''Drugs, Inc.'''
+	addon = ''
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f035%2f949%2ffanarts%2fmedium%2f1ba9dde305.jpg&mode=seasons&trakt_id=35949'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Drugs, Inc.','plugin://'+addon + addon2,8,'http://images.bwwstatic.com/columnpic6/B4F20FA4-A4D4-C308-9D0A8C30FB6655D9.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''Border Wars'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f033%2f767%2ffanarts%2fmedium%2ff726488acf.jpg&mode=seasons&trakt_id=33767'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Border Wars','plugin://'+addon + addon2,8,'http://ecx.images-amazon.com/images/I/814vtg37U%2BL._SY445_.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''Dirty Jobs'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f002%2f568%2ffanarts%2fmedium%2fe48554af99.jpg&mode=seasons&trakt_id=2568'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Dirty Jobs','plugin://'+addon + addon2,8,'http://ecx.images-amazon.com/images/I/91OeiYvZbbL._SL1500_.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+def CATEGORIES114(admin):
+	'''------------------------------
+	---Animal Planet-------------------
+	------------------------------'''
+	background = 114
+	name = addonString(114).encode('utf-8')
+	
+	'''חיפוש'''
+	addDir(localize(137),'Live Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+
+	'''Animal Planet'''
+	list = []
+	list.append('&youtube_ch=AnimalPlanetTV')
+	list.append('&youtube_ch=UC7mx4Zz-zgUeYrIxsRpPeNw')
+	addDir("Animal Plane",list,17,'http://www.gasta.org/wordpress/wp-content/uploads/2013/10/Dirty-Dancing-strapline-v2.jpeg','','1',"", getAddonFanart(background, custom=""))	
+ 	
+	
+	'''river monsters'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f018%2f069%2ffanarts%2fmedium%2fda556f2c4e.jpg&mode=seasons&trakt_id=18069'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('river monsters','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	
+	
+	'''Meerkat Manor'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f001%2f921%2ffanarts%2fmedium%2fd7'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Meerkat Manor','plugin://'+addon + addon2,8,'http://ecx.images-amazon.com/images/I/91JOCgTCDFL._SL1500_.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+
+	'''Pit Bulls & Parolees'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f031%2f400%2ffanarts%2fmedium%2f86208eb62f.jpg&mode=seasons&trakt_id=3140'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Pit Bulls & Parolees','plugin://'+addon + addon2,8,'http://cdn.renewcanceltv.com/wp-content/uploads/2015/03/PITBULLS.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	
+	
+
+def CATEGORIES112(admin):
+	'''------------------------------
+	---Discovery-------------------
+	------------------------------'''
+	background = 112
+	name = addonString(112).encode('utf-8')
+	
+	'''חיפוש'''
+	addDir(localize(137),'Live Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+
+
+	
+	'''Discovery'''
+	list = []
+	list.append('&youtube_ch=DiscoveryNetworks')
+	list.append('&youtube_ch=UCah1A9yF6I0geya0xNPHQfw')
+	addDir("Discovery",list,17,'http://www.podcasts.com/uploads/50759096c7f97.jpg','','1',"", getAddonFanart(background, custom=""))
+ 
+	
+	'''Big Giant Swords'''
+	addon = 'plugin.video.salts'
+	addon2 = '	/?fanart=C%3a%5cUsers%5cyoel%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.salts%5cfanart.jpg&mode=seasons&trakt_id=94652'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Big Giant Swords','plugin://'+addon + addon2,8,'http://when-will.net/images/artikel/2015/february/Big-Giant-Swords.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''Gold Rush'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f034%2f485%2ffanarts%2fmedium%2f88b1d5bf79.jpg&mode=seasons&tra'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Gold Rush','plugin://'+addon + addon2,8,'https://upload.wikimedia.org/wikipedia/en/e/ec/Gold_Rush_Title.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''MythBusters'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f001%2f419%2ffanarts%2fmedium%2f2f227cdbb9.jpg&mode=seasons&trakt_id=1419'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('MythBusters','plugin://'+addon + addon2,8,'http://media.boingboing.net/wp-content/uploads/2015/10/MythBusters-Unleashed.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''Deadliest Catch'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f002%2f596%2ffanarts%2fmedium%2f1d4e9ac6c4.jpg&mode=seasons&trakt_id=2596'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Deadliest Catch','plugin://'+addon + addon2,8,'http://toucharcade.com/wp-content/uploads/2015/05/deadliest-catch.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''Dual Survival'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f032%2f852%2ffanarts%2fmedium%2f533c12f58f.jpg&mode=seasons&trakt_id=32852'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Dual Survival','plugin://'+addon + addon2,8,'http://ecx.images-amazon.com/images/I/610wX702quL._SX940_.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''Fast N Loud'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f046%2f598%2ffanarts%2fmedium%2f79b727980e.jpg&mode=seasons&trakt_id=46598'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Fast N Loud','plugin://'+addon + addon2,8,'https://i.ytimg.com/vi/gnZUpBvGlWU/maxresdefault.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''Naked And Afraid'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f058%2f445%2ffanarts%2fmedium%2fcfeccc090a.jpg&mode=seasons&trakt_id=58445'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Naked And Afraid','plugin://'+addon + addon2,8,'http://r.ddmcdn.com/s_f/DSC/uploads/2014/07/naked-afraid-110-notunein-01.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''Man vs. Wild'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f004%2f685%2ffanarts%2fmedium%2f119d5858c3.jpg&mode=seasons&trakt_id=4685'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Man vs. Wild','plugin://'+addon + addon2,8,'http://ecx.images-amazon.com/images/I/A10AfUwm1wL._SL1500_.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''how it's made'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f001%2f737%2ffanarts%2fmedium%2f9c7e7e31ac.jpg&mode=seasons&trakt_id=1737'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir("how it's made",'plugin://'+addon + addon2,8,'https://techofcomm.files.wordpress.com/2015/09/512abxavpyl-_sx940_.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''how do they do it'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f001%2f737%2ffanarts%2fmedium%2f9c7e7e31ac.jpg&mode=seasons&trakt_id=1737'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('how do they do it','plugin://'+addon + addon2,8,'http://images.zap2it.com/assets/p404110_l_h6_aa/how-do-they-do-it.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''Amish Mafia'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f046%2f010%2ffanarts%2fmedium%2f2e'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Amish Mafia','plugin://'+addon + addon2,8,'https://upload.wikimedia.org/wikipedia/en/e/ee/Amish_Mafia.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	
+	'''ultimate survival alaska'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f070%2f702%2ffanarts%2fmedium%2f95'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('ultimate survival alaska','plugin://'+addon + addon2,8,'https://i1.ytimg.com/sh/zXSHyiqhP84/showposter.jpg?v=529ca2d6',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+
+def CATEGORIES113(admin):
+	'''------------------------------
+	---Nat Geo Wild-------------------
+	------------------------------'''
+	background = 113
+	name = addonString(113).encode('utf-8')
+	
+	'''חיפוש'''
+	addDir(localize(137),'Live Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+
+
+	
+	'''Nat Geo Wild'''
+	list = []
+	list.append('&youtube_ch=NatGeoWild')
+	list.append('&youtube_ch=UCWiqP_4evlj80g_HzzvToaw')
+	addDir("Nat Geo Wild",list,17,'http://www.givingbacksmiles.com/wp-content/uploads/2012/06/NAT-GEO-Ad-Snake-and-Bird.jpg','','1',"", getAddonFanart(background, custom=""))
+ 
+	
+	'''built for the kill'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f031%2f075%2ffanarts%2fmedium%2fe2259e2703.jpg&mode=seasons&trakt_id=31075'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('built for the kill','plugin://'+addon + addon2,8,'https://upload.wikimedia.org/wikipedia/en/4/41/Built_for_the_kill_collection_1_dvd_cover.jpg',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+
+
+	'''Islands HD'''
+	list = []
+	list.append('&youtube_pl=PLR1CNcQmgvMlowMRAo2SjCLBKzibJq0Y5')		
+	addDir('Islands HD',list,17,'http://weknowyourdreams.com/images/island/island-02.jpg','','1',"", getAddonFanart(background, custom=""))
+
+	
+	'''Wild Russia HD'''
+	list = []
+	list.append('&youtube_pl=PLR1CNcQmgvMlowMRAo2SjCLBKzibJq0Y5')		
+	addDir('Wild Russia HD',list,17,'https://fanart.tv/fanart/tv/125511/tvthumb/W_125511.jpg','','1',"", getAddonFanart(background, custom=""))
+	
+	'''The Incredible Dr. Pol'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=C%3a%5cUsers%5cyoel%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.salts%5cfanart.jpg&mode=seasons&trakt_id=67584'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('The Incredible Dr. Pol','plugin://'+addon + addon2,8,'https://lh5.ggpht.com/qg2YaGNf0D-ZgZkvfni-07gXn5srBdIhxSAXbXytjd7QsxkhQnp2LC58N_ywZ52SwGtt=w1264',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
+	
+	'''Fish Tank Kings'''
+	addon = 'plugin.video.salts'
+	addon2 = '/?fanart=C%3a%5cUsers%5cyoel%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.salts%5cfanart.jpg&mode=seasons&trakt_id=66535'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Fish Tank Kings','plugin://'+addon + addon2,8,'https://i1.ytimg.com/sh/lgiz1rGSPZ4/showposter.jpg?v=4f9acd8b',plot,addon,50, getAddonFanart(110, custom=""))
+	'''---------------------------'''
 	
 	
