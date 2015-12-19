@@ -53,11 +53,11 @@ def CATEGORIES100(admin):
 
 	
 def CATEGORIES10001(name, iconimage, desc, fanart):
-	if desc == None: desc = ""
+	
 	'''Easy Listening, Love songs & Bellads'''
 	thumb = 'https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0PGGM81.png?v=1.0'
 	fanart = 'http://www.pavellevchenko.com/hard-rock-music-guitar.jpg'
-	addDir('Easy Listening, Love songs & Bellads',templates2_path + 'Easy Listening, Love songs & Bellads Personal Collection.txt',2,thumb,desc,'1',50, fanart)
+	addDir('Easy Listening, Love songs & Bellads',templates2_path + 'Easy Listening, Love songs & Bellads Personal Collection.txt',2,thumb,desc + 'אמיר אלגזר פליליסטים','1',50, fanart)
 	
 	'''The Greatest Hits of All Times'''
 	thumb = 'https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0PGGM81.png?v=1.0'
@@ -79,10 +79,20 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.golden80s.com/wp-content/uploads/2014/05/Wham-head.jpg'
 	addDir('George Michael & wham',templates2_path + 'George Michael & wham.txt',2,thumb,desc + 'Personal Collection','1',50, fanart)
 	
+	'''Great French Collection'''
+	thumb = 'http://images.travelpod.com/tripwow/photos/ta-00b7-d4d4-11a6/arc-de-triomphe-paris-france+1152_12905284514-tpfil02aw-11867.jpg'
+	fanart = 'http://www.wallpapersbyte.com/wp-content/uploads/2015/06/Downolad-HD-Wallpaper-France-Paris-City-Eiffel-Tower-Sunset-WallpapersByte-com-1920x1080.jpg'
+	addDir('Great French Collection',templates2_path + 'Great French Collection.txt',2,thumb,desc + '','1',50, fanart)
+	
 	'''Twilight Time'''
 	thumb = 'http://cps-static.rovicorp.com/3/JPG_400/MI0003/649/MI0003649662.jpg?partner=allrovi.com'
 	fanart = 'http://a2.mzstatic.com/us/r1000/096/Purple/v4/cc/8c/0f/cc8c0ff5-6e27-d9fa-62f1-791ffc4c7432/mzl.lcqgfyzc.1024x1024-65.jpg'
 	addDir('Twilight Time - Oldies',templates2_path + 'Twilight Time.txt',2,thumb,desc + '','1',50, fanart)
+	
+	'''The Beatles'''
+	thumb = 'http://img2-ak.lst.fm/i/u/ar0/6a122bb0665d4d8ca0cc4c31e245ff55'
+	fanart = 'http://topwalls.net/wallpapers/2012/02/The-Beatles-1080x1920.jpg'
+	addDir('The Beatles',templates2_path + 'The Beatles.txt',2,thumb,desc + '','1',50, fanart)
 	
 	'''love songs vol 1'''
 	thumb = 'http://fullhdpictures.com/wp-content/uploads/2015/04/Beauty-Love-Wallpapers.jpg'
