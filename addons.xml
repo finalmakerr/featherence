@@ -151,32 +151,19 @@
 <addon id="skin.featherence" version="0.1.4" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
-	<!--<import addon="repository.featherence" version="1.1.0" />-->
+	<import addon="repository.featherence" version="1.1.0" />
 	<import addon="script.featherence.service" version="0.1.0"/>
   </requires>
   <extension point="xbmc.gui.skin" effectslowdown="1.0" debugging="false">
     <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
   </extension>
   <extension point="xbmc.addon.metadata">
+    <language>he en</language>
 	<platform>all</platform>
 	<summary lang="en"></summary>
 	<summary lang="he"></summary>
-    <description>Features:
-- Panel, Horizontal, Vertical home views with two versions each.
-- Wall, Small list, Center List, Poster, Line views.
-- 1:1 realtime home design capability. Customized is at the top level, superb easy and fun!
-- RTL &amp; LTR auto support mode.
-- Full mouse support.
-- AutoView support.
-- Choose any color for almost anything! (WIP)
-- Full save/load skin image.
-- Varied buttons and views effects.
-- Enchanced widget.
-- Full genres support.
-- Some views have an additional special features.
-- Dynamic weather and widgets fanart (optional).
-- Interactive video window &amp; OSD while navaigating.
-- Smart subtitle module display current and history choosen subtitles, smart search and auto subs hosts finder.</description>
+    <description lang="en"></description>
+	<description lang="he"></description>
     <disclaimer></disclaimer>
 	<email>featherence@groups.facebook.com</email>
 	<forum>http://forum.kodi.tv/showthread.php?tid=251726</forum>
