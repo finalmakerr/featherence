@@ -97,6 +97,7 @@
 		<shadowcolor>black</shadowcolor>
 		<textcolor>Grey2</textcolor>
 		<width>880</width>
+		<aligny>top</aligny>
 		<include>LabelL2</include>
 		<!--<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
 	    <include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>-->

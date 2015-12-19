@@ -734,6 +734,7 @@
    </control>
    
   <control type="grouplist" id="1132">
+    <include>Slide1</include>
 	<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1000,0">Conditonal</animation>
 	<animation description="Slide_en" condition="!StringCompare(System.Language,Hebrew) + Control.IsVisible(3200)" effect="slide" start="0,0" end="90,0">Conditonal</animation>
 	<height>24</height>
@@ -741,7 +742,7 @@
 	<align>left</align>
 	<orientation>horizontal</orientation>
 	<posx>1240</posx>
-	<posy>120</posy>
+	<posy>-432</posy>
 	<visible>!Player.HasVideo + !IsEmpty(ListItem.VideoResolution) + !IsEmpty(ListItem.VideoCodec)</visible>
 	<control type="image">
 	  <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
@@ -934,7 +935,7 @@
 	  <onfocus condition="Container.Content(TVShows) + !IsEmpty(ListItem.Property(UnWatchedEpisodes)) + [IsEmpty(Window(home).Property(ListItemUnWatchedEpisodes)) | !StringCompare(ListItem.Property(UnWatchedEpisodes),Window(home).Property(ListItemUnWatchedEpisodes))]">AlarmClock(ListItemUnWatchedEpisodes,SetProperty(ListItemUnWatchedEpisodes,$INFO[ListItem.Property(UnWatchedEpisodes)],home),00:03,silent)</onfocus>
 	  <onfocus condition="Container.Content(TVShows) + !IsEmpty(ListItem.TVShowTitle) + [IsEmpty(Window(home).Property(ListItemTVShowTitle)) | !StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle))]">AlarmClock(ListItemTVShowTitle,SetProperty(ListItemTVShowTitle,$INFO[ListItem.TVShowTitle],home),00:03,silent)</onfocus>
 	  <onfocus description="remove-only" condition="Container.Content(TVShows) + !IsEmpty(ListItem.TVShowTitle) + [IsEmpty(Window(home).Property(ListItemTVShowTitle)) | !StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle))]">AlarmClock(ListItemDuration,ClearProperty(ListItemDuration,home),00:03,silent)</onfocus>
-	  <onfocus condition="Skin.HasSetting(Admin) + Container.Content(TVShows) + !StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle))">AlarmClock(Notification,Notification(Admin,New ListItemTVShowTitle,1000),00:03,silent)</onfocus>
+	  <!--<onfocus condition="Skin.HasSetting(Admin) + Container.Content(TVShows) + !StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle))">AlarmClock(Notification,Notification(Admin,New ListItemTVShowTitle,1000),00:03,silent)</onfocus>-->
 	  <onfocus condition="!Container.Content(episodes) + !IsEmpty(ListItem.Art(poster)) + [IsEmpty(Window(home).Property(ListItemPoster)) | !StringCompare(ListItem.Poster,Window(home).Property(ListItemPoster))]">AlarmClock(ListItemPoster,SetProperty(ListItemPoster,$INFO[ListItem.Art(poster)],home),00:10,silent)</onfocus>
 	  <visible>false</visible>
 	</control>

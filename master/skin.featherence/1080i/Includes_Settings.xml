@@ -8,7 +8,7 @@
 		<include>Fade4</include>
 		<visible>[Control.IsVisible(100) + Container(100).HasNext] | !Control.IsVisible(100)</visible>
 		<visible>Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus + Container(22).HasNext | !ControlGroup(22).HasFocus</visible>
-		<visible>Container(50).HasFocus + Container(50).HasNext | !Container(50).HasFocus | ControlGroup(22).HasFocus</visible>
+		<visible>Container(50).HasFocus + Container(50).HasNext | !Window.IsVisible(DialogVideoInfo.xml) + !Container(50).HasFocus | Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus</visible>
 		<visible>[Control.IsVisible(3) + Container(3).HasNext] | !Control.IsVisible(3)</visible>
 		<posx>1450</posx>
 		<posy>85</posy>
@@ -39,7 +39,7 @@
 		<include>Fade4</include>
 		<visible>[Control.IsVisible(100) + Container(100).HasPrevious] | !Control.IsVisible(100)</visible>
 		<visible>Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus + Container(22).HasPrevious | !ControlGroup(22).HasFocus</visible>
-		<visible>Container(50).HasFocus + Container(50).HasPrevious | !Container(50).HasFocus | ControlGroup(22).HasFocus</visible>
+		<visible>Container(50).HasFocus + Container(50).HasPrevious | !Window.IsVisible(DialogVideoInfo.xml) + !Container(50).HasFocus | Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus</visible>
 		<visible>[Control.IsVisible(3) + Container(3).HasPrevious] | !Control.IsVisible(3)</visible>
 		<posx>430</posx>
 		<posy>85</posy>
@@ -283,6 +283,7 @@
 		</control>
 		<control type="label" description="נתון">
 		  <align>center</align>
+		  <aligny>center</aligny>
 		  <textcolor>Grey2</textcolor>
 		  <include>LabelC2</include>
 		  <posx>525</posx>
@@ -345,6 +346,7 @@
 		</control>
 		<control type="label" description="נתון">
 		  <align>center</align>
+		  <aligny>center</aligny>
 		  <textcolor>Yellow</textcolor>
 		  <include>LabelC2</include>
 		  <posx>525</posx>

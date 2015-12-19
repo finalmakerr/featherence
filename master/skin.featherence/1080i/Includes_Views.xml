@@ -57,6 +57,24 @@
       </control>
     </control>
   </include>
+  <include name="ViewDesign_570" description="Center List">
+    <control type="group" description="">
+	  <visible>Control.IsVisible(570)</visible>
+      <control type="group">
+		<control type="list" id="570">
+		  <include>Slide1</include>
+		  <include>Slide2</include>
+		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
+		  <posx>20</posx>
+		  <posy>140</posy>
+		  <width>1880</width>
+		  <height>930</height>
+		  <include>4ways</include>
+		  <include>ViewDesign_50_Layout</include>
+		</control>
+      </control>
+    </control>
+  </include>
   <include name="ViewDesign_50_Layout">
 	  <itemlayout description="(כללי)" condition="true" height="100" width="960"> <!--[Container.Content(files) | Container.Content(actors) | Container.Content(Sets) | ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | SubString(ListItem.path,plugin://plugin.video.youtube)]]-->
 		<control type="image" description="מסגרת נתון">
@@ -130,10 +148,9 @@
 		<control type="label" description="שם2">
 		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="slide" start="0,0" end="-100,0" time="700" reversible="true">Conditional</animation>
 		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="fade" start="0" end="100" time="700" reversible="true">Conditional</animation>
-		  <align>left</align>
-		  <include>LabelC4</include>
-		  <posx>555</posx>
-		  <posy>32</posy>
+		  <include>LabelL4</include>
+		  <posx>515</posx>
+		  <posy>35</posy>
 		  <width>100</width>
 		  <height>70</height>
 		  <label>$INFO[ListItem.Label2]</label>
@@ -217,10 +234,9 @@
 		<control type="label" description="שם2">
 		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="slide" start="0,0" end="-100,0" time="0" reversible="true">Conditional</animation>
 		  <animation condition="!IsEmpty(ListItem.Label2) + !Window.IsVisible(MyVideoNav.xml)" effect="fade" start="0" end="100" time="0" reversible="true">Conditional</animation>
-		  <align>left</align>
-		  <include>LabelC4</include>
-		  <posx>555</posx>
-		  <posy>32</posy>
+		  <include>LabelL4</include>
+		  <posx>515</posx>
+		  <posy>35</posy>
 		  <width>100</width>
 		  <height>70</height>
 		  <label>$INFO[ListItem.Label2]</label>
@@ -269,7 +285,8 @@
 		  <control type="image" description="סמן נצפה רגיל">
 			  <animation condition="!StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0">Conditional</animation>
 			  <height>40</height>
-			  <texture>$VAR[Overlay2]</texture>
+			  <posy>-2</posy>
+			  <texture colordiffuse="$VAR[IconUnFocusColor]">$VAR[Overlay2]</texture>
 			  <width>40</width>
 		      <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
 			  <visible>Window.IsVisible(MyVideoNav.xml)</visible>
@@ -279,6 +296,7 @@
 			<include condition="!StringCompare(System.Language,Hebrew)">LabelR7</include>
 			<height>40</height>
 			<label>$VAR[Button11300]</label>
+			<posy>-2</posy>
 			<textcolor>Grey2</textcolor>
 			<width>60</width>
 			<visible>[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)</visible>
@@ -300,6 +318,7 @@
 		  <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
 		  <posx>30</posx>
+		  <posy>-4</posy>
 		  <width>400</width>
 		  <height>40</height>
 		  <label>$VAR[VideoInformation1]</label>
@@ -324,7 +343,8 @@
 		  <control type="image" description="סמן נצפה רגיל">
 			  <animation condition="!StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0">Conditional</animation>
 			  <height>40</height>
-			  <texture>$VAR[Overlay2]</texture>
+			  <posy>-2</posy>
+			  <texture colordiffuse="$VAR[IconFocusColor]">$VAR[Overlay2]</texture>
 			  <width>40</width>
 		      <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
 			  <visible>Window.IsVisible(MyVideoNav.xml)</visible>
@@ -334,6 +354,7 @@
 			<include condition="!StringCompare(System.Language,Hebrew)">LabelR7</include>
 			<height>40</height>
 			<label>$VAR[Button11300]</label>
+			<posy>-2</posy>
 			<textcolor>Grey2</textcolor>
 			<width>60</width>
 			<visible>[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)</visible>
@@ -356,6 +377,7 @@
 		  <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
 		  <posx>30</posx>
+		  <posy>-4</posy>
 		  <width>400</width>
 		  <height>40</height>
 		  <scroll>true</scroll>
@@ -426,6 +448,7 @@
 				  <visible>Window.IsVisible(MyVideoNav.xml)</visible>
 			  </control> 
 			  <control type="label" description="טקסט נצפה">					
+				<aligny>top</aligny>
 				<include condition="StringCompare(System.Language,Hebrew)">LabelL2</include>
 				<include condition="!StringCompare(System.Language,Hebrew)">LabelR2</include>
 				<height>40</height>
@@ -488,6 +511,7 @@
 				  <visible>Window.IsVisible(MyVideoNav.xml)</visible>
 			  </control> 
 			  <control type="label" description="טקסט נצפה">					
+				<aligny>top</aligny>
 				<include condition="StringCompare(System.Language,Hebrew)">LabelL2</include>
 				<include condition="!StringCompare(System.Language,Hebrew)">LabelR2</include>
 				<height>40</height>
@@ -1162,10 +1186,10 @@
 	  </itemlayout>
 	  <focusedlayout description="(Plugins)" height="510" width="363">
 		<include>AutoView</include>
+		<include>onfocus_SetProperty_ListItem</include>
+		<include>onfocus_SetProperty_TopVideoInformation</include>
 		<control type="group">
 			<include>Slide2.3</include>
-			<include>onfocus_SetProperty_ListItem</include>
-			<include>onfocus_SetProperty_TopVideoInformation</include>
 			<control type="image" description="תמונה נבחר">
 			  <posx>55</posx>
 			  <posy>40</posy>
@@ -1299,8 +1323,5 @@
 			</control>
 		</control>
 	  </focusedlayout>
-  </include>  
-
-
-
+  </include>
 </includes>

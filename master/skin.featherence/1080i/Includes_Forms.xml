@@ -102,21 +102,17 @@
 	<font>size28</font>
 	<textcolor>White2</textcolor>
   </include>
-  
   <include name="LabelC2" description="(טקסט2)">
     <align>center</align>
-	<aligny>top</aligny>
 	<font>size24</font>
   </include>
   <include name="LabelL2" description="(טקסט1-מיוחד)">
-    <align>left</align>
 	<aligny>top</aligny>
 	<font>size24</font>
 	<radioposx>1350</radioposx>
   </include>
   <include name="LabelR2" description="(טקסט1-מיוחד)">
     <align>right</align>
-	<aligny>top</aligny>
 	<font>size24</font>
 	<radioposx>0</radioposx>
   </include>
@@ -416,7 +412,7 @@
    </include>
    
    <include name="Control_Pos42" description="">
-	 <height>784</height>
+	 <height>815</height>
    </include>
    <include name="Control_Pos43" description="">
 	 <posx>0</posx>

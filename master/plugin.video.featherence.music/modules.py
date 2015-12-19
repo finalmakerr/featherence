@@ -119,7 +119,6 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.haaretz.co.il/polopoly_fs/1.2490157.1416401072!/image/2643586370.jpg_gen/derivatives/size_936xAuto/2643586370.jpg'
 	addDir('אריק איינשטיין אוסף אישי',templates2_path + 'Arik Einstein.txt',2,thumb,desc + '','1',50, fanart)
 	
-	
 def CATEGORIES101(admin):
 	'''Israeli Music'''
 	addDir(addonString(101).encode('utf-8'),'',10101,featherenceserviceicons_path + "music.png",addonString(1010).encode('utf-8'),'1',58, getAddonFanart(10101)) #Israeli Music
@@ -1349,6 +1348,7 @@ def CATEGORIES11104(name, iconimage, desc, fanart):
 	
 	'''Aretha Franklin'''
 	list = []
+	list.append('&youtube_se='+commonsearch+'')
 	list.append('&youtube_id=a3raW4rt2fE')
 	list.append('&youtube_id=y0xZsepl4Is')
 	list.append('&youtube_id=CbmB2nXJRDM')
