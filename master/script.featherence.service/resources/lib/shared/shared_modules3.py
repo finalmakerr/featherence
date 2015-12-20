@@ -2395,12 +2395,12 @@ def getCustom_Playlist(admin):
 
 def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, viewtype):
 	printpoint = "" ; extra = "" ; New_Type = "" ; New_ID_ = ""
-	if "playlist?list=" in New_ID:
+	if "list=" in New_ID:
 		'''Playlist'''
 		New_Type = localize(559) #Playlist
 		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
-		New_ID = find_string(New_ID, "playlist?list=", "")
-		New_ID = New_ID.replace("playlist?list=","&youtube_pl=")
+		New_ID = find_string(New_ID, "list=", "")
+		New_ID = New_ID.replace("list=","&youtube_pl=")
 		New_ID_ = New_ID.replace("&youtube_pl=","")
 		'''---------------------------'''
 	elif "/user/" in New_ID or "/channel/" in New_ID:

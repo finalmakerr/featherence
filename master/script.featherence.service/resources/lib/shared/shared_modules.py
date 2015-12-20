@@ -993,7 +993,7 @@ def dialogkeyboard(input, heading, option, custom, set1, addon):
 		elif custom == '5':
 			'''Custom Playlist'''
 			printpoint = printpoint + "5"
-			if ("playlist?list=" in set1v or "watch?v=" in set1v or "/user/" in set1v or "/channel/" in set1v):
+			if ("list=" in set1v or "watch?v=" in set1v or "/user/" in set1v or "/channel/" in set1v):
 				from shared_modules3 import urlcheck
 				check = urlcheck(set1v, ping=False)
 				if check == "ok":
