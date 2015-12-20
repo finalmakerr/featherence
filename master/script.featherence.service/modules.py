@@ -356,13 +356,13 @@ def videostarttweak(admin):
 			playerpaused = xbmc.getCondVisibility('Player.Paused')
 			if playerpaused: xbmc.executebuiltin('Action(Play)')
 	except: pass
+	
 def mode10(admin, name, printpoint):
 	'''------------------------------
 	---VideoPlayer demon-------------
 	------------------------------'''
 	#notification('mode10 start','','',2000)
 	if property_mode10 == "":
-		xbmc.executebuiltin('Action(Info)')
 		setProperty('mode10', 'true', type="home")
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
 		setPlayerInfo(admin)
@@ -374,10 +374,14 @@ def mode10(admin, name, printpoint):
 			'''---------------------------'''
 		for i in range(1,10):
 			setProperty('TopVideoInformation' + str(i), "", type="home")
-		if xbmc.getInfoLabel('Window(home).Property(VideoPlayer.Title)') != "": printpoint = printpoint + "5"
+		if xbmc.getInfoLabel('Window(home).Property(VideoPlayer.Title)') != "":
+			if xbmcaddon.Addon('script.featherence.service').getSetting('widget_enable') == 'true':
+				if not xbmc.getCondVisibility('IntegerGreatherThan(VideoPlayer.PlaylistLength,1)'):
+					printpoint = printpoint + "5"
 		setProperty('mode10', "", type="home")
 		setProperty('VideoPlayer.Title', "", type="home")
 		if '5' in printpoint:
+			'''refresh widget'''
 			xbmc.sleep(3000)
 			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23)')
 		

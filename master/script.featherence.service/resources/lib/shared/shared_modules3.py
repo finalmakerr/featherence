@@ -1,5 +1,6 @@
 import urllib,urllib2,sys,re,xbmcplugin,xbmcgui,xbmcaddon,xbmc,os,random
 import json
+from random import shuffle
 
 from variables import *
 #from modules import *
@@ -513,6 +514,8 @@ def YOULink(mname, url, thumb, desc):
 		
 def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 	printpoint = "" ; i = 0 ; i2 = 0 ; extra = "" ; desc = str(desc)
+	playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
+	if playerhasvideo: xbmc.executebuiltin('Action(Stop)')
 	pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
 	pl.clear()
 	playlist = []
@@ -605,14 +608,14 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					#i2 += 1
 					#x = x.replace("&youtube_ch=","")
 					if '/playlists' in x: x.replace('/playlists',"")
-					try: finalurlL, numOfItems2 = youtube_pl_to_youtube_id(addonID, x, playlist)
+					try: finalurl, numOfItems2 = youtube_pl_to_youtube_id(addonID, x, playlist)
 					except Exception, TypeError: extra = extra + newline + "youtube_pl_to_youtube_id_TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
 					#finalurl="plugin://plugin.video.youtube/play/?playlist_id="+x+""
 					'''---------------------------'''
 				elif "&youtube_pl=" in x:
 					#i2 += 1
 					#x = x.replace("&youtube_pl=","")
-					try: finalurlL, numOfItems2 = youtube_pl_to_youtube_id(addonID, x, playlist)
+					try: finalurl, numOfItems2 = youtube_pl_to_youtube_id(addonID, x, playlist)
 					except Exception, TypeError: extra = extra + newline + "youtube_pl_to_youtube_id_TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
 					#finalurl="plugin://plugin.video.youtube/play/?playlist_id="+x+""
 					'''---------------------------'''
@@ -622,62 +625,23 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					'''---------------------------'''
 				elif "&youtube_se2=" in x or "&youtube_se=" in x or "&custom_se=" in x:
 					if 'commonsearch' in x: x = x + space + str(name)
-					try: finalurlL, numOfItems2 = youtube_pl_to_youtube_id(addonID, x, playlist)
+					try: finalurl, numOfItems2 = youtube_pl_to_youtube_id(addonID, x, playlist)
 					except Exception, TypeError: extra = extra + newline + "youtube_pl_to_youtube_id_TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
+					#print 'blabla___ ' + str(finalurlL) + space + 'numOfItems2 : ' + str(numOfItems2)
+					
 					#finalurl="plugin://plugin.video.youtube/play/?video_id="+x+"&hd=1"
 					'''---------------------------'''
-					
-				if admin: extra = extra + newline + str(i) + space2 + str(finalurl)
+				else: printpoint = printpoint + "Z"
+				extra = extra + newline + str(i) + space2 + str(finalurl)
 				'''---------------------------'''
 				#title= str(prms['feed'][u'entry'][i][ u'media$group'][u'media$title'][u'$t'].encode('utf-8')).decode('utf-8')
 				#thumb =str(prms['feed'][u'entry'][i][ u'media$group'][u'media$thumbnail'][2][u'url'])
 				#description = str(prms['feed'][u'entry'][i][ u'media$group'][u'media$description'][u'$t'].encode('utf-8')).decode('utf-8')
 				
-				if finalurl != "" or finalurlL != []:
-					returned = get_types(finalurl)
-					returned2 = get_types(finalurlL)
-					count = 0
-					if finalurlL != [] and 'list' in returned2:
-						if General_TVModeShuffle == "true" and mode == 5: random.shuffle(finalurlL) ; printpoint = printpoint + "0"
-						#finalurlL2 = str(finalurlL)
-						#finalurlL2 = finalurlL2.split(',')
-						if numOfItems2 > 0:
-							for y in finalurlL:
-								count += 1
-								#if not y in playlist:
-								pl.add(y)
-								playlist.append(y)
-								if not "3" in printpoint:
-									printpoint = printpoint + "3"
-									xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl) ; xbmc.sleep(2000)
-									'''---------------------------'''
-								#else:
-								#print "aaa " + "y" + space2 + str(y) + space + "playist" + space2 + str(playlist)
-								
-								
-								if count >= numOfItems2: break
-								text = "i" + space2 + str(i) + space + "y" + space2 + str(y) + space + "count" + space2 + str(count) + newline + "finalurlL" + space2 + str(finalurlL) + newline + 'numOfItems2' + space2 + str(numOfItems2)
-								printlog(title='MultiVideos_test2', printpoint=printpoint, text=text, level=0, option="")
-							
-					elif finalurl != "" and 'str' in returned:	
-						#if not y in playlist:
-						pl.add(finalurl)
-						playlist.append(finalurl)
-						if not "3" in printpoint:
-							printpoint = printpoint + "3"
-							xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl)
-							'''---------------------------'''
-					else: printpoint = printpoint + "9"
-					
-					text = "i" + space2 + str(i) + space + "count" + space2 + str(count) + space + "playlist" + space2 + str(playlist)
-					printlog(title='MultiVideos_test3', printpoint=printpoint, text=text, level=0, option="")
-				if '3' in printpoint:
-					playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
-					playlistlength = xbmc.getInfoLabel('Playlist.Length(video)')
-					if not playerhasvideo or int(playlistlength) >= 40:
-						'''Probably Cancel'''
-						printpoint = printpoint + 'q'
-						break
+				#notification(str(int(len(playlist))),'','',5000)
+				pl, playlist, printpoint = MultiVideos_play(finalurl, pl, playlist, printpoint, General_TVModeShuffle, mode)
+				
+				if 'x' in printpoint: break
 				
 			elif mode == 6:
 				#try:
@@ -774,11 +738,92 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	text = "mode" + space2 + str(mode) + space + "i" + space2 + str(i) + space + newline + \
 	"url " + space2 + str(url) + newline + \
 	"url2" + space2 + str(url2) + newline + \
-	"pl" + space2 + str(pl) + space + "playlist" + space2 + str(playlist) + newline + \
+	"pl" + space2 + str(pl) + space + "playlist" + space2 + str(len(playlist)) + space + str(playlist) + newline + \
 	"finalurl" + space2 + str(finalurl) + space + "finalurlL" + space2 + str(finalurlL) + space + newline + extra
 	printlog(title="MultiVideos", printpoint=printpoint, text=text, level=2, option="")
 	'''---------------------------'''
 
+def MultiVideos_play(finalurl, pl, playlist, printpoint, General_TVModeShuffle, mode):
+	count = 0 ; finalurlN = 0 ; printpoint2 = ""
+	playlistN = int(len(playlist))
+	if finalurl != "" or finalurl != []:
+		returned = get_types(finalurl)
+		if 'list' in returned:
+			printpoint2 = printpoint2 + '1'
+			finalurlN = int(len(finalurl))
+			if General_TVModeShuffle == "true" and mode == 5: random.shuffle(finalurl) ; printpoint = printpoint + "0"
+			
+		elif 'str' in returned:
+			printpoint2 = printpoint2 + '2'
+			finalurlN = 1
+		else: printpoint2 = printpoint2 + '9'
+		
+		if finalurlN > 0:
+			if '1' in printpoint2:
+				for y in finalurl:
+					pl, playlist, printpoint = MultiVideos_play2(y, pl, playlist, printpoint)
+					count += 1
+					playlistN = int(len(playlist))
+					if count >= finalurlN: break
+					elif playlistN >= 40:
+						printpoint = printpoint + 'x'
+						break
+					elif '3' in printpoint:
+						playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
+						playlistlength = xbmc.getInfoLabel('Playlist.Length(video)')
+						if not playerhasvideo or int(playlistlength) >= 40:
+							printpoint = printpoint + 'x_'
+							#print 'playlistlength' + space2 + str(playlistlength)
+							break
+							
+			elif '2' in printpoint2:
+				pl, playlist, printpoint = MultiVideos_play2(finalurl, pl, playlist, printpoint)
+	
+	text = 'finalurl' + space2 + str(finalurl) + newline + \
+	'pl' + space2 + str(pl) + newline + \
+	'playlist' + space2 + str(playlist) + newline + \
+	'count' + space2 + str(count) + space + 'playlistN' + space2 + str(playlistN) + space + 'finalurlN' + space2 + str(finalurlN)
+	printlog(title="MultiVideos_play", printpoint=printpoint + space + 'printpoint2' + space2 + str(printpoint2), text=text, level=0, option="")
+	return pl, playlist, printpoint
+
+def MultiVideos_play2(finalurl, pl, playlist, printpoint):
+	count = 0 ; printpoint2 = "" ; numOfItems2 = 0
+	
+	pl.add(finalurl)
+	playlist.append(finalurl)
+	if '606' in printpoint or '66' in printpoint:
+		notification_common('8')
+		sys.exit(0)
+	elif not "3" in printpoint:
+		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl) ; xbmc.sleep(2000)
+		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo') ; dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)') ; dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)') ; dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
+		while count < 10 and not playerhasvideo and not dialogokW and not xbmc.abortRequested:
+			xbmc.sleep(200)
+			playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
+			dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)')
+			dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)')
+			dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
+			if not dialogbusyW and not dialogprogressW: count += 1
+		
+		if playerhasvideo and not dialogokW: printpoint = printpoint + "3"
+		else:
+			dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)')
+			if dialogokW or count == 10:
+				printpoint = printpoint + '6'
+				xbmc.executebuiltin('Dialog.Close(okdialog)')
+				#xbmc.executebuiltin('Action(Close)') ; xbmc.sleep(100)
+				x = finalurl.replace('plugin://plugin.video.youtube/play/?video_id=',"")
+				x = x.replace('&hd=1',"")
+				notification('Video error: ' + str(x),'Trying to play next video','',2000)
+				'''---------------------------'''
+			
+	text = 'finalurl' + space2 + str(finalurl) + newline + \
+	'pl' + space2 + str(pl) + newline + \
+	'playlist' + space2 + str(playlist) + newline + \
+	'count' + space2 + str(count)
+	printlog(title="MultiVideos_play2", printpoint=printpoint, text=text, level=0, option="")
+	return pl, playlist, printpoint
+	
 def sdarot_(x):
 	'''get required data for &sdarot='''
 	x = x.replace("&sdarot=","")
@@ -1025,7 +1070,6 @@ def PlayPlayList(playlistid):
 def PlayPlayList2(playlistid):
 	default = 'plugin://plugin.video.youtube/'
 	default2 = 'play/?playlist_id='
-
 	xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/play/?playlist_id='+ playlistid +')')
 	#addLink("",'plugin://plugin.video.youtube/play/?playlist_id=' + playlistid,"","","")
 	#xbmc.executebuiltin('RunPlugin(plugin://plugin.video.youtube/play/?playlist_id='+ playlistid +'&order=default)')
@@ -1043,926 +1087,13 @@ def PlayPlayList3(playlistid):
 	update_view(default + default2 + playlistid + '/', num, viewtype)
 	'''---------------------------'''
 	
-def getCustom_Playlist(admin):
-	#from variables import Custom_Playlist1
-	returned = "" ; printpoint = ""
-	if Custom_Playlist1_ID  == "": returned = 'Custom_Playlist1_ID'
-	elif Custom_Playlist2_ID  == "": returned = 'Custom_Playlist2_ID'
-	elif Custom_Playlist3_ID  == "": returned = 'Custom_Playlist3_ID'
-	elif Custom_Playlist4_ID  == "": returned = 'Custom_Playlist4_ID'
-	elif Custom_Playlist5_ID  == "": returned = 'Custom_Playlist5_ID'
-	elif Custom_Playlist6_ID  == "": returned = 'Custom_Playlist6_ID'
-	elif Custom_Playlist7_ID  == "": returned = 'Custom_Playlist7_ID'
-	elif Custom_Playlist8_ID  == "": returned = 'Custom_Playlist8_ID'
-	elif Custom_Playlist9_ID  == "": returned = 'Custom_Playlist9_ID'
-	elif Custom_Playlist10_ID  == "": returned = 'Custom_Playlist10_ID'
-	'''---------------------------'''
-	text = "returned" + space2 + str(returned) + space + "Custom_Playlist1_ID" + space2 + str(Custom_Playlist1_ID)
-	printlog(title="getCustom_Playlist", printpoint=printpoint, text=text, level=2, option="")
-	return returned
-
-def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, viewtype):
-	printpoint = "" ; extra = "" ; New_Type = ""
-	if "&list=PL" in New_ID:
-		'''Playlist'''
-		New_Type = localize(559) #Playlist
-		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
-		New_ID = find_string(New_ID, "&list=PL", "")
-		New_ID = New_ID.replace("&list=","&youtube_pl=")
-		New_ID_ = New_ID.replace("&youtube_pl=","")
-		'''---------------------------'''
-	elif "/user/" in New_ID or "/channel/" in New_ID:
-		'''Channel'''
-		New_Type = localize(19029) #Channel
-		extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8') #New %s, Update Succesfully!
-		if "/channel/" in New_ID:
-			New_ID = find_string(New_ID, "/channel/", "")
-			New_ID = New_ID.replace("/channel/", "&youtube_ch=")
-		elif "/user/"    in New_ID:
-			New_ID = find_string(New_ID, "/user/", "")
-			New_ID = New_ID.replace("/user/", "&youtube_ch=")
-			
-		New_ID_ = New_ID.replace("&youtube_ch=","")
-		'''---------------------------'''
-	elif "watch?v=" in New_ID:
-		'''Single Video'''
-		New_Type = localize(157) #Video
-		extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8') #New %s, Update Succesfully!
-		New_ID = find_string(New_ID, "watch?v=", "")
-		New_ID = New_ID.replace("watch?v=", "&youtube_id=")
-		New_ID_ = New_ID.replace("&youtube_id=","")
-		'''---------------------------'''
-	
-	elif New_ID == "None":
-		New_Type = localize(2080) #Empty list
-		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
-		New_ID_ = ""
-		
-	if New_Type != "":
-		if New_ID in url:
-			check = dialogyesno(addonString_servicefeatherence(93).encode('utf-8'), localize(19194)) # Duplicated URL found!, Continue?
-			if check == "ok": pass				
-			else: notification_common("9") ; printpoint = printpoint + "8"
-		
-		if not "8" in printpoint:
-			if mode == 20:
-				setsetting(Custom_Playlist_ID, New_ID)
-			elif mode == 21:
-				setsetting(Custom_Playlist_ID, str(url) + "," + New_ID)
-				#extra = "Previous ID: " + str(url)		
-			#extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8')
-			dialogok(extra, "ID: " + str(New_ID_), str(name), "") ; xbmc.sleep(100)
-			update_view(url, num, viewtype)
-			'''---------------------------'''
-
-	else: notification_common("17")
-	
-	text = "name" + space2 + str(name) + newline + "New_Type" + space2 + str(New_Type) + space + "New_ID" + space2 + str(New_ID) + space + "New_ID_" + space2 + str(New_ID_)
-	printlog(title="setCustom_Playlist_ID", printpoint=printpoint, text=text, level=2, option="")
-	'''---------------------------'''
-
-def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
-	'''------------------------------
-	---Save and Load your addon-design
-	------------------------------'''
-	printpoint = "" ; extra = "" ; formula = "" ; formula_ = "" ; path = "" ; file1 = "" ; file2 = "" ; file3 = "" ; returned = "" ; returned2 = ""; returned3 = "" ; y = "s"
-	
-	if name == addonString(6).encode('utf-8'):
-		list = ['-> (Exit)']
-		list.append(localize(190) + space + localize(593)) #Save All
-		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + localize(593) + space + "[LOCAL]") #Load All [LOCAL]
-		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + localize(593) + space + "[REMOTE]") #Load All [REMOTE] 
-		list.append(localize(10035) + space + localize(593)) #Reset All
-		y = "s"
-		'''---------------------------'''
-	else:
-		list = ['-> (Exit)']
-		list.append(localize(190) + space + addonString_servicefeatherence(57).encode('utf-8')) #Save One
-		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + addonString_servicefeatherence(57).encode('utf-8') + space + "[LOCAL]") #Load One [LOCAL]
-		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + addonString_servicefeatherence(57).encode('utf-8') + space + "[REMOTE]") #Load One [REMOTE]
-		y = ""
-		
-		Custom_Playlist_ID = "Custom_Playlist" + num + "_ID"
-		if Custom_Playlist_ID == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
-		Custom_Playlist_Name = "Custom_Playlist" + num + "_Name"
-		Custom_Playlist_Thumb = "Custom_Playlist" + num + "_Thumb"
-		Custom_Playlist_Description = "Custom_Playlist" + num + "_Description"
-		Custom_Playlist_Fanart = "Custom_Playlist" + num + "_Fanart"
-		'''---------------------------'''
-	returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
-	
-	if returned == -1: printpoint = printpoint + "9"
-	elif returned == 0: printpoint = printpoint + "8"
-	else: printpoint = printpoint + "7"
-		
-	if ("7" in printpoint or value != "") and not "8" in printpoint and not "9" in printpoint:
-		
-		if returned == 1 or returned == 2: path = os.path.join(addondata_path, addonID, '')
-		elif returned == 3: path = os.path.join(addonPath, 'resources', 'templates', '')
-		elif returned == 4: pass
-		else: path = ""
-		
-		if path != "":
-
-			if returned == 3:
-				check = dialogyesno(addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8'), addonString_servicefeatherence(99).encode('utf-8')) #Share My Music buttons, Choose YES to learn how to share Your Music button
-				if check == 'ok':
-					header = addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8')
-					msg1 = localize(190) + space + localize(592) ; msg1.decode('utf-8').encode('utf-8') #; msg1 = '[B]' + msg1 + '[/B]'
-					msg2 = os.path.join(addondata_path, addonID) ; msg2 = msg2.decode('utf-8').encode('utf-8')
-					message = "1. " + addonString_servicefeatherence(95).encode('utf-8') % (msg1) + ".[CR]" + "2. " + addonString_servicefeatherence(97).encode('utf-8') + "[CR]" + msg2 + ".[CR]" + "3. " + addonString_servicefeatherence(52).encode('utf-8') + "[CR]" + "4. " + addonString_servicefeatherence(53).encode('utf-8') % ("templates") + "[CR]" + "5. " + addonString_servicefeatherence(54).encode('utf-8') + ".[CR]" + "6. " + addonString_servicefeatherence(98).encode('utf-8') + ".[CR]" + "7. " + addonString_servicefeatherence(55).encode('utf-8') + ".[CR]" + "8. " + addonString_servicefeatherence(56).encode('utf-8') % ("Commit") + ".[CR][CR]" + "*You should now wait for the next addon update."
-					diaogtextviewer(header,message)
-					
-			'''read existing files'''
-			file1 = os.path.join(path, "Addon_SavedButton"+y+"1.txt")
-			file2 = os.path.join(path, "Addon_SavedButton"+y+"2.txt")
-			file3 = os.path.join(path, "Addon_SavedButton"+y+"3.txt")
-			'''---------------------------'''
-			
-			if os.path.exists(file1):
-				infile1 = read_from_file(file1, silent=True)
-				filename1 = regex_from_to(infile1, "&name=", "&", excluding=True)
-			else: filename1 = None
-			if os.path.exists(file2):
-				infile2 = read_from_file(file2, silent=True)
-				filename2 = regex_from_to(infile2, "&name=", "&", excluding=True)
-			else: filename2 = None
-			if os.path.exists(file3):
-				infile3 = read_from_file(file3, silent=True)
-				filename3 = regex_from_to(infile3, "&name=", "&", excluding=True)
-				#print 'infile3' + space2 + str(infile3) + newline + 'filename3' + space2 + str(filename3)
-			else: filename3 = None
-			
-			value1 = 'NO.' + space + "1" + space + "(" + str(filename1) + ")"
-			value2 = 'NO.' + space + "2" + space + "(" + str(filename2) + ")"
-			value3 = 'NO.' + space + "3" + space + "(" + str(filename3) + ")"
-			
-			'''save/load'''
-			if filename1 == None: value1 = '[COLOR=Red]' + value1 + '[/COLOR]'
-			if filename2 == None: value2 = '[COLOR=Red]' + value2 + '[/COLOR]'
-			if filename3 == None: value3 = '[COLOR=Red]' + value3 + '[/COLOR]'
-		
-			list = ['-> (Exit)', value1, value2, value3]
-				
-			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
-			
-			if returned2 == -1: printpoint = printpoint + "9"
-			elif returned2 == 0: printpoint = printpoint + "8"
-			else: printpoint = printpoint + "7"
-			
-			if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
-				
-				if returned2 == 1: printpoint = printpoint + "1" #1
-				elif returned2 == 2: printpoint = printpoint + "2" #2
-				elif returned2 == 3: printpoint = printpoint + "3" #3
-				
-				if returned == 1: printpoint = printpoint + "A" #SAVE
-				elif returned == 2: printpoint = printpoint + "B" #LOAD
-				elif returned == 3: printpoint = printpoint + "C" #TEMPLATES
-		
-				if "A" in printpoint:
-					if y == "s":
-						'''------------------------------
-						---Save-All-----------------------
-						------------------------------'''
-						formula = ""
-
-						if Custom_Playlist1_ID != "":
-							formula = "Custom_Playlist1_ID" + "=5" + Custom_Playlist1_ID
-							formula = formula + newline + "Custom_Playlist1_Description" + "=5" + Custom_Playlist1_Description
-							formula = formula + newline + "Custom_Playlist1_Fanart" + "=5" + Custom_Playlist1_Fanart
-							formula = formula + newline + "Custom_Playlist1_Name" + "=5" + Custom_Playlist1_Name
-							formula = formula + newline + "Custom_Playlist1_Thumb" + "=5" + Custom_Playlist1_Thumb
-						if Custom_Playlist2_ID != "":
-							formula = formula + newline + "Custom_Playlist2_ID" + "=5" + Custom_Playlist2_ID + "=5" + Custom_Playlist2_ID
-							formula = formula + newline + "Custom_Playlist2_Description" + "=5" + Custom_Playlist2_Description
-							formula = formula + newline + "Custom_Playlist2_Fanart" + "=5" + Custom_Playlist2_Fanart
-							formula = formula + newline + "Custom_Playlist2_Name" + "=5" + Custom_Playlist2_Name
-							formula = formula + newline + "Custom_Playlist2_Thumb" + "=5" + Custom_Playlist2_Thumb
-						if Custom_Playlist3_ID != "":
-							formula = formula + newline + "Custom_Playlist3_ID" + "=5" + Custom_Playlist3_ID + "=5" + Custom_Playlist3_ID
-							formula = formula + newline + "Custom_Playlist3_Description" + "=5" + Custom_Playlist3_Description
-							formula = formula + newline + "Custom_Playlist3_Fanart" + "=5" + Custom_Playlist3_Fanart
-							formula = formula + newline + "Custom_Playlist3_Name" + "=5" + Custom_Playlist3_Name
-							formula = formula + newline + "Custom_Playlist3_Thumb" + "=5" + Custom_Playlist3_Thumb
-						if Custom_Playlist4_ID != "":
-							formula = formula + newline + "Custom_Playlist4_ID" + "=5" + Custom_Playlist4_ID + "=5" + Custom_Playlist4_ID
-							formula = formula + newline + "Custom_Playlist4_Description" + "=5" + Custom_Playlist4_Description
-							formula = formula + newline + "Custom_Playlist4_Fanart" + "=5" + Custom_Playlist4_Fanart
-							formula = formula + newline + "Custom_Playlist4_Name" + "=5" + Custom_Playlist4_Name
-							formula = formula + newline + "Custom_Playlist4_Thumb" + "=5" + Custom_Playlist4_Thumb
-						if Custom_Playlist5_ID != "":
-							formula = formula + newline + "Custom_Playlist5_ID" + "=5" + Custom_Playlist5_ID + "=5" + Custom_Playlist5_ID
-							formula = formula + newline + "Custom_Playlist5_Description" + "=5" + Custom_Playlist5_Description
-							formula = formula + newline + "Custom_Playlist5_Fanart" + "=5" + Custom_Playlist5_Fanart
-							formula = formula + newline + "Custom_Playlist5_Name" + "=5" + Custom_Playlist5_Name
-							formula = formula + newline + "Custom_Playlist5_Thumb" + "=5" + Custom_Playlist5_Thumb
-						if Custom_Playlist6_ID != "":
-							formula = formula + newline + "Custom_Playlist6_ID" + "=5" + Custom_Playlist6_ID + "=5" + Custom_Playlist6_ID
-							formula = formula + newline + "Custom_Playlist6_Description" + "=5" + Custom_Playlist6_Description
-							formula = formula + newline + "Custom_Playlist6_Fanart" + "=5" + Custom_Playlist6_Fanart
-							formula = formula + newline + "Custom_Playlist6_Name" + "=5" + Custom_Playlist6_Name
-							formula = formula + newline + "Custom_Playlist6_Thumb" + "=5" + Custom_Playlist6_Thumb
-						if Custom_Playlist7_ID != "":
-							formula = formula + newline + "Custom_Playlist7_ID" + "=5" + Custom_Playlist7_ID + "=5" + Custom_Playlist7_ID
-							formula = formula + newline + "Custom_Playlist7_Description" + "=5" + Custom_Playlist7_Description
-							formula = formula + newline + "Custom_Playlist7_Fanart" + "=5" + Custom_Playlist7_Fanart
-							formula = formula + newline + "Custom_Playlist7_Name" + "=5" + Custom_Playlist7_Name
-							formula = formula + newline + "Custom_Playlist7_Thumb" + "=5" + Custom_Playlist7_Thumb
-						if Custom_Playlist8_ID != "":
-							formula = formula + newline + "Custom_Playlist8_ID" + "=5" + Custom_Playlist8_ID + "=5" + Custom_Playlist8_ID
-							formula = formula + newline + "Custom_Playlist8_Description" + "=5" + Custom_Playlist8_Description
-							formula = formula + newline + "Custom_Playlist8_Fanart" + "=5" + Custom_Playlist8_Fanart
-							formula = formula + newline + "Custom_Playlist8_Name" + "=5" + Custom_Playlist8_Name
-							formula = formula + newline + "Custom_Playlist8_Thumb" + "=5" + Custom_Playlist8_Thumb
-						if Custom_Playlist9_ID != "":
-							formula = formula + newline + "Custom_Playlist9_ID" + "=5" + Custom_Playlist9_ID + "=5" + Custom_Playlist9_ID
-							formula = formula + newline + "Custom_Playlist9_Description" + "=5" + Custom_Playlist9_Description
-							formula = formula + newline + "Custom_Playlist9_Fanart" + "=5" + Custom_Playlist9_Fanart
-							formula = formula + newline + "Custom_Playlist9_Name" + "=5" + Custom_Playlist9_Name
-							formula = formula + newline + "Custom_Playlist9_Thumb" + "=5" + Custom_Playlist9_Thumb
-						if Custom_Playlist10_ID != "":
-							formula = formula + newline + "Custom_Playlist10_ID" + "=5" + Custom_Playlist10_ID + "=5" + Custom_Playlist10_ID
-							formula = formula + newline + "Custom_Playlist10_Description" + "=5" + Custom_Playlist10_Description
-							formula = formula + newline + "Custom_Playlist10_Fanart" + "=5" + Custom_Playlist10_Fanart
-							formula = formula + newline + "Custom_Playlist10_Name" + "=5" + Custom_Playlist10_Name
-							formula = formula + newline + "Custom_Playlist10_Thumb" + "=5" + Custom_Playlist10_Thumb
-					elif y == "":
-						'''------------------------------
-						---Save-One-----------------------
-						------------------------------'''
-						formula = ""
-
-						if Custom_Playlist_ID != "":
-							formula = Custom_Playlist_ID + "=5" + getsetting(Custom_Playlist_ID)
-							formula = formula + newline + Custom_Playlist_Fanart + "=5" + getsetting(Custom_Playlist_Fanart)
-							formula = formula + newline + Custom_Playlist_Name + "=5" + getsetting(Custom_Playlist_Name)
-							formula = formula + newline + Custom_Playlist_Thumb + "=5" + getsetting(Custom_Playlist_Thumb)
-							formula = formula + newline + Custom_Playlist_Description + "=5" + getsetting(Custom_Playlist_Description)
-							'''---------------------------'''
-							
-					if "1" in printpoint:
-						if filename1 == None: filename = ""
-						else: filename = filename1
-					elif "2" in printpoint:
-						if filename2 == None: filename = ""
-						else: filename = filename2
-					elif "3" in printpoint:
-						if filename3 == None: filename = ""
-						else: filename = filename3
-					
-					filename = dialogkeyboard(filename, localize(21821), 0, "", "", "") #Description
-					filename_ = "&name="+str(filename)+"&"
-					formula = filename_ + newline + formula
-					
-					try: formula.encode('utf-8')
-					except: pass
-					
-					if "1" in printpoint:
-						write_to_file(file1, str(formula), append=False, silent=True, utf8=False)
-						#setsetting('Addon_SavedButton'+y+'1', str(formula))
-					elif "2" in printpoint:
-						write_to_file(file2, str(formula), append=False, silent=True, utf8=False)
-						#setsetting('Addon_SavedButton'+y+'2', str(formula))
-					elif "3" in printpoint:
-						write_to_file(file3, str(formula), append=False, silent=True, utf8=False)
-						#setsetting('Addon_SavedButton'+y+'3', str(formula))
-						'''---------------------------'''
-					
-					notification(addonString_servicefeatherence(58).encode('utf-8'), str(filename), "", 4000) #Saved Succesfully!, 
-				
-				elif "B" in printpoint or "C" in printpoint:
-					'''------------------------------
-					---Load/Templates----------------
-					------------------------------'''
-
-					if "1" in printpoint:
-						if filename1 == None: printpoint = printpoint + "Q"
-						else: file = file1
-					elif "2" in printpoint:
-						if filename2 == None: printpoint = printpoint + "Q"
-						else: file = file2
-					elif "3" in printpoint:
-						if filename3 == None: printpoint = printpoint + "Q"
-						else: file = file3
-					
-					if "Q" in printpoint or file == "":
-						'''nothing to load'''
-						if "C" in printpoint: notification(localize(19055), "Share Your Music button first.", "", 4000) #No information available
-						else:
-							if y == "": extra2 = localize(190) + space + localize(592)
-							else: extra2 = localize(190) + space + localize(593)
-							extra2 = extra2.decode('utf-8').encode('utf-8')
-							notification(localize(19055), addonString_servicefeatherence(95).encode('utf-8') % (extra2), "", 4000) #No information available
-					else:
-						#formula_ = formula_.split(',')
-						#formula_ = CleanString(formula_, filter=[])
-						import fileinput
-						for line in fileinput.input([file]):
-							x = "" ; x1 = "" ; x2 = "" ; x3 = ""
-							if "=5" in line:
-								'''setsetting'''
-								x = line.replace("=5","=")
-								x1 = find_string(x, "", "=")
-								x2 = find_string(x, "=", "")
-								x1 = x1.replace("=","")
-								x2 = x2.replace('=&', '&') #CLEAN STRINGS
-								x2 = x2.replace('\n', '') #CLEAN STRINGS
-								if not "_ID" in x:
-									'''Clean values for none ID lines'''
-									x2 = x2.replace("=","")
-									#x2 = x2.replace("\n","")
-								
-								if y == "":
-									count = 0
-									while count <= 10 and not xbmc.abortRequested:
-										if str(count) in x1:
-											x1 = x1.replace(str(count), str(num))
-											count = 40
-										else: count += 1
-								setsetting(str(x1), str(x2))
-								
-							if admin3 and admin and not admin2: extra = extra + newline + space + "line" + space2 + str(line) + space + "x" + space2 + str(x) + space + "x1" + space2 + str(x1) + space + "x2" + space2 + str(x2) + space + "x3" + space2 + str(x3)
-							'''---------------------------'''	
-		elif returned == 4:
-			'''------------------------------
-			---Reset-All---------------------
-			------------------------------'''
-			returned = dialogyesno(localize(10035) + space + localize(593) + space + "(" + localize(19291) + ")", "You may want to SAVE your settings just in case..") #Reset all (Delete permanently),
-			if returned == 'ok':
-				file = os.path.join(addondata_path, addonID, 'settings.xml')
-				removefiles(file) ; xbmc.sleep(500)
-				setsetting('General_AutoView', General_AutoView)
-				setsetting('General_TVModeShuffle', General_TVModeShuffle)
-				setsetting('General_TVModeDialog', General_TVModeDialog)
-				setsetting('Addon_ShowLog', Addon_ShowLog)
-				setsetting('Addon_ShowLog2', Addon_ShowLog2)
-				setsetting('Addon_Update', Addon_Update)
-				setsetting('Addon_UpdateDate', Addon_UpdateDate)
-				setsetting('Addon_UpdateLog', Addon_UpdateLog)
-				setsetting('Addon_Version', Addon_Version)
-				setsetting('Fanart_Enable', Fanart_Enable)
-				setsetting('Fanart_EnableCustom', Fanart_EnableCustom)
-				setsetting('Fanart_Custom100', Fanart_Custom100)
-				setsetting('Fanart_Custom101', Fanart_Custom101)
-				setsetting('Fanart_Custom102', Fanart_Custom102)
-				setsetting('Fanart_Custom103', Fanart_Custom103)
-				setsetting('Fanart_Custom104', Fanart_Custom104)
-				setsetting('Fanart_Custom105', Fanart_Custom105)
-				setsetting('Fanart_Custom106', Fanart_Custom106)
-				setsetting('Fanart_Custom107', Fanart_Custom107)
-				setsetting('Fanart_Custom108', Fanart_Custom108)
-				setsetting('Fanart_Custom109', Fanart_Custom109)
-				setsetting('Fanart_Custom110', Fanart_Custom110)
-				setsetting('Fanart_Custom111', Fanart_Custom111)
-				setsetting('Fanart_Custom112', Fanart_Custom112)
-				setsetting('Fanart_Custom113', Fanart_Custom113)
-				setsetting('Fanart_Custom114', Fanart_Custom114)
-				setsetting('Fanart_Custom115', Fanart_Custom115)
-				setsetting('Fanart_Custom116', Fanart_Custom116)
-				setsetting('Fanart_Custom117', Fanart_Custom117)
-				setsetting('Fanart_Custom118', Fanart_Custom118)
-				setsetting('Fanart_Custom119', Fanart_Custom119)
-				setsetting('Fanart_Custom120', Fanart_Custom120)
-				setsetting('Fanart_Custom121', Fanart_Custom121)
-				setsetting('Fanart_Custom122', Fanart_Custom122)
-				setsetting('Fanart_Custom123', Fanart_Custom123)
-				setsetting('Fanart_Custom124', Fanart_Custom124)
-				setsetting('Fanart_Custom125', Fanart_Custom125)
-				setsetting('Fanart_Custom126', Fanart_Custom126)
-				setsetting('Fanart_Custom127', Fanart_Custom127)
-				setsetting('Fanart_Custom128', Fanart_Custom128)
-				setsetting('Fanart_Custom129', Fanart_Custom129)
-				setsetting('Fanart_Custom130', Fanart_Custom130)
-				
-				
-				
-	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
-		if not "Q" in printpoint and not "A" in printpoint:
-			notification(".","","",1000)
-			xbmc.sleep(500)
-			notification("..","","",1000)
-			update_view(url, num, viewtype)
-			'''---------------------------'''
-	
-	text = 'name_' + space2 + name + "_LV" + printpoint + space + newline + \
-	"path" + space2 + str(path) + newline + \
-	"file1" + space2 + str(file1) + newline + \
-	"file2" + space2 + str(file2) + newline + \
-	"file3" + space2 + str(file3) + newline + \
-	"formula" + space2 + str(formula) + space + "formula_" + space2 + str(formula_) + newline + \
-	"extra" + space2 + str(extra)
-	printlog(title="AdvancedCustom", printpoint=printpoint, text=text, level=2, option="")
-		
-def AddCustom(mode, name, url, iconimage, desc, num, viewtype):
-	'''------------------------------
-	---New-Button--------------------
-	------------------------------'''
-	printpoint = ""
-	Custom_Playlist_ID = getCustom_Playlist(admin) ; New_Type = "" ; New_ID = "" ; New_Name = ""
-	Custom_Playlist_Name = Custom_Playlist_ID.replace("_ID","_Name")
-	if Custom_Playlist_ID == "": notification("Playlist limit reached!", "You may delete some playlists and try again!", "", 4000)
-	else:
-		New_ID = dialogkeyboard("", "Enter YouTube URL", 0, "5", "" , "")
-		if New_ID != "skip":
-			New_Name = dialogkeyboard('My Button', "Button Name", 0, "",Custom_Playlist_Name, "0")
-			if New_Name != "skip":
-				setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, New_Name, num, viewtype)
-				
-	text = "name" + space2 + str(name)
-	printlog(title="AddCustom", printpoint=printpoint, text=text, level=2, option="")
-	'''---------------------------'''
-	
-def CheckMoveCustom(name, num):
-	extra = "" ; printpoint = "" ; down = "" ; up = ""
-	
-	'''---------------------------'''
-	if num == "1":
-		'''---------------------------'''
-		if Custom_PlaylistL[1] != "": down = "2"
-		elif Custom_PlaylistL[2] != "": down = "3"
-		elif Custom_PlaylistL[3] != "": down = "4"
-		elif Custom_PlaylistL[4] != "": down = "5"
-		elif Custom_PlaylistL[5] != "": down = "6"
-		elif Custom_PlaylistL[6] != "": down = "7"
-		elif Custom_PlaylistL[7] != "": down = "8"
-		elif Custom_PlaylistL[8] != "": down = "9"
-		elif Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "2":
-		if Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[2] != "": down = "3"
-		elif Custom_PlaylistL[3] != "": down = "4"
-		elif Custom_PlaylistL[4] != "": down = "5"
-		elif Custom_PlaylistL[5] != "": down = "6"
-		elif Custom_PlaylistL[6] != "": down = "7"
-		elif Custom_PlaylistL[7] != "": down = "8"
-		elif Custom_PlaylistL[8] != "": down = "9"
-		elif Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "3":
-		if Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[3] != "": down = "4"
-		elif Custom_PlaylistL[4] != "": down = "5"
-		elif Custom_PlaylistL[5] != "": down = "6"
-		elif Custom_PlaylistL[6] != "": down = "7"
-		elif Custom_PlaylistL[7] != "": down = "8"
-		elif Custom_PlaylistL[8] != "": down = "9"
-		elif Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "4":
-		if Custom_PlaylistL[2] != "": up = "3"
-		elif Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[4] != "": down = "5"
-		elif Custom_PlaylistL[5] != "": down = "6"
-		elif Custom_PlaylistL[6] != "": down = "7"
-		elif Custom_PlaylistL[7] != "": down = "8"
-		elif Custom_PlaylistL[8] != "": down = "9"
-		elif Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "5":
-		if Custom_PlaylistL[3] != "": up = "4"
-		elif Custom_PlaylistL[2] != "": up = "3"
-		elif Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[5] != "": down = "6"
-		elif Custom_PlaylistL[6] != "": down = "7"
-		elif Custom_PlaylistL[7] != "": down = "8"
-		elif Custom_PlaylistL[8] != "": down = "9"
-		elif Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "6":
-		if Custom_PlaylistL[4] != "": up = "5"
-		elif Custom_PlaylistL[3] != "": up = "4"
-		elif Custom_PlaylistL[2] != "": up = "3"
-		elif Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[6] != "": down = "7"
-		elif Custom_PlaylistL[7] != "": down = "8"
-		elif Custom_PlaylistL[8] != "": down = "9"
-		elif Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "7":
-		if Custom_PlaylistL[6] != "": up = "7"
-		elif Custom_PlaylistL[5] != "": up = "6"
-		elif Custom_PlaylistL[4] != "": up = "5"
-		elif Custom_PlaylistL[3] != "": up = "4"
-		elif Custom_PlaylistL[2] != "": up = "3"
-		elif Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[8] != "": up = "9"
-		elif Custom_PlaylistL[9] != "": up = "10"
-		'''---------------------------'''
-	elif num == "8":
-		if Custom_PlaylistL[7] != "": up = "8"
-		elif Custom_PlaylistL[6] != "": up = "7"
-		elif Custom_PlaylistL[5] != "": up = "6"
-		elif Custom_PlaylistL[4] != "": up = "5"
-		elif Custom_PlaylistL[3] != "": up = "4"
-		elif Custom_PlaylistL[2] != "": up = "3"
-		elif Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "10":
-		if Custom_PlaylistL[8] != "": up = "9"
-		elif Custom_PlaylistL[7] != "": up = "8"
-		elif Custom_PlaylistL[6] != "": up = "7"
-		elif Custom_PlaylistL[5] != "": up = "6"
-		elif Custom_PlaylistL[4] != "": up = "5"
-		elif Custom_PlaylistL[3] != "": up = "4"
-		elif Custom_PlaylistL[2] != "": up = "3"
-		elif Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-	
-	text = "name" + space2 + str(name) + space + "num" + space2 + str(num) + space + "down" + space2 + str(down) + space + "up" + space2 + str(up)
-	printlog(title="CheckMoveCustom", printpoint=printpoint, text=text, level=2, option="")
-		
-	return up, down
-
-def cleanfanartCustom(fanart):
-	printpoint = ""
-	fanart2 = fanart.replace("/","")
-	fanart2 = fanart2.replace("\\","")
-	addonFanart2 = addonFanart.replace("/","")
-	addonFanart2 = addonFanart2.replace("\\","")
-	if fanart2 == addonFanart2:
-		printpoint = printpoint + "7"
-		fanart = "" # or not os.path.exists(fanart)
-	
-	text = "fanart" + space2 + str(fanart) + newline + \
-	"fanart2" + space2 + str(fanart2) + newline + \
-	"addonFanart" + space2 + str(addonFanart) + newline + \
-	"addonFanart2" + space2 + str(addonFanart2)
-	printlog(title="cleanfanartCustom", printpoint=printpoint, text=text, level=2, option="")
-	return fanart
-	
-def MoveCustom(mode, name, url, iconimage, desc, num, viewtype, fanart):
-	'''23'''
-	printpoint = ""
-	'''---------------------------'''
-	if not "__" in num: printpoint = printpoint + "9"
-	else:
-		printpoint = printpoint + "1"
-		num = num.split("__")
-		num1 = num[0]
-		num2 = num[1]
-	try:
-		test = int(num1) + 1
-		test = int(num2) + 1
-	except Exception, TypeError: printpoint = printpoint + "9"
-	
-	fanart = cleanfanartCustom(fanart)
-	
-	if not "9" in printpoint:
-		printpoint = printpoint + "3"
-		Custom_Playlist_ID = "Custom_Playlist" + num1 + "_ID"
-		if Custom_Playlist_ID == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
-		Custom_Playlist_Name = "Custom_Playlist" + num1 + "_Name"
-		Custom_Playlist_Thumb = "Custom_Playlist" + num1 + "_Thumb"
-		Custom_Playlist_Description = "Custom_Playlist" + num1 + "_Description"
-		Custom_Playlist_Fanart = "Custom_Playlist" + num1 + "_Fanart"
-		'''---------------------------'''
-		Custom_Playlist_ID2 = "Custom_Playlist" + str(num2) + "_ID"
-		if Custom_Playlist_ID2 == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
-		Custom_Playlist_Name2 = "Custom_Playlist" + str(num2) + "_Name"
-		Custom_Playlist_Thumb2 = "Custom_Playlist" + str(num2) + "_Thumb"
-		Custom_Playlist_Description2 = "Custom_Playlist" + str(num2) + "_Description"
-		Custom_Playlist_Fanart2 = "Custom_Playlist" + str(num2) + "_Fanart"
-		'''---------------------------'''
-	
-	if not "9" in printpoint:
-		printpoint = printpoint + "7"
-		'''---------------------------'''
-		setsetting(Custom_Playlist_ID, getsetting(Custom_Playlist_ID2))
-		setsetting(Custom_Playlist_Name, getsetting(Custom_Playlist_Name2))
-		setsetting(Custom_Playlist_Thumb, getsetting(Custom_Playlist_Thumb2))
-		setsetting(Custom_Playlist_Description, getsetting(Custom_Playlist_Description2))
-		setsetting(Custom_Playlist_Fanart, getsetting(Custom_Playlist_Fanart2))
-		'''---------------------------'''
-		setsetting(Custom_Playlist_ID2, url)
-		setsetting(Custom_Playlist_Name2, name)
-		setsetting(Custom_Playlist_Thumb2, iconimage)
-		setsetting(Custom_Playlist_Description2, desc)
-		setsetting(Custom_Playlist_Fanart2, fanart)
-		'''---------------------------'''
-		update_view(url, num, viewtype)
-	
-	text = "url" + space2 + str(url) + space + "num" + space2 + str(num)
-	printlog(title="MoveCustom", printpoint=printpoint, text=text, level=2, option="")
-		
-def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
-	extra = "" ; printpoint = "" ; New_ID = ""
-	
-	Custom_Playlist_ID = "Custom_Playlist" + num + "_ID"
-	if Custom_Playlist_ID == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
-	Custom_Playlist_Name = "Custom_Playlist" + num + "_Name"
-	Custom_Playlist_Thumb = "Custom_Playlist" + num + "_Thumb"
-	Custom_Playlist_Description = "Custom_Playlist" + num + "_Description"
-	Custom_Playlist_Fanart = "Custom_Playlist" + num + "_Fanart"
-	
-	if printpoint != "9":
-		list = ['-> (Exit)']
-		list.append(addonString_servicefeatherence(38).encode('utf-8')) #Edit URL
-		list.append(addonString_servicefeatherence(41).encode('utf-8')) #Rename Button
-		if thumb == "": list.append(addonString_servicefeatherence(36).encode('utf-8')) #Add Thumb
-		else: list.append(addonString_servicefeatherence(37).encode('utf-8')) #Remove Thumb
-		if desc == "": list.append(addonString_servicefeatherence(32).encode('utf-8')) #Add Description
-		else: list.append(addonString_servicefeatherence(33).encode('utf-8')) #Edit Description
-		fanart = cleanfanartCustom(getsetting(Custom_Playlist_Fanart))
-		if fanart == "": list.append(addonString_servicefeatherence(34).encode('utf-8')) #Add Fanart
-		else: list.append(addonString_servicefeatherence(35).encode('utf-8')) #Remove Fanart
-		list.append(localize(13336)) #'Remove Button'
-
-		returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
-			
-		if returned == -1: printpoint = printpoint + "9"
-		elif returned == 0: printpoint = printpoint + "8"
-		else: printpoint = printpoint + "7"
-	
-	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
-		if returned == 1: printpoint = printpoint + "A" #Edit URL
-		elif returned == 2: printpoint = printpoint + "B" #Rename
-		elif returned == 3: printpoint = printpoint + "C" #Add/Remove Thumb
-		elif returned == 4: printpoint = printpoint + "D" #Add/Edit Description
-		elif returned == 5: printpoint = printpoint + "E" #Add/Remove Fanart
-		elif returned == 6: printpoint = printpoint + "F" #Remove Button
-		'''---------------------------'''
-	if "A" in printpoint:
-		'''------------------------------
-		---Edit-URL----------------------
-		------------------------------'''
-		list = ['-> (Exit)']
-		list.append(addonString_servicefeatherence(42).encode('utf-8')) #View URL
-		list.append(addonString_servicefeatherence(40).encode('utf-8')) #Add URL
-		list.append(addonString_servicefeatherence(39).encode('utf-8')) #Remove URL
-		
-		returned2, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
-			
-		if returned2 == -1: printpoint = printpoint + "9"
-		elif returned2 == 0: printpoint = printpoint + "8"
-		else: printpoint = printpoint + "7"
-		
-		if returned2 == 1: printpoint = printpoint + "1" #View URL
-		elif returned2 == 2: printpoint = printpoint + "2" #Add URL
-		elif returned2 == 3: printpoint = printpoint + "3" #Remove URL
-		
-		if "1" in printpoint:
-			'''------------------------------
-			---View-URL----------------------
-			------------------------------'''
-			message2 = "" ; i = 0
-			url2 = url.split(",")
-			for x in url2:
-				i += 1
-				x2 = ""
-				if "&youtube_ch=" in x:
-					x = x.replace("&youtube_ch=","")
-					x2 = space + "[" + "YouTube Channel" + "]"
-					'''---------------------------'''
-				elif "&youtube_pl=" in x:
-					x = x.replace("&youtube_pl=","")
-					x2 = space + "[" + "YouTube Playlist" + "]"
-					'''---------------------------'''
-				elif "&youtube_id=" in x:
-					x = x.replace("&youtube_id=","")
-					x2 = space + "[" + "YouTube Video" + "]"
-					'''---------------------------'''
-				if x2 != "": message2 = message2 + '[CR]' + str(i) + space2 + str(x) + str(x2)
-				'''---------------------------'''
-			header = addonString_servicefeatherence(42).encode('utf-8') + space2 + str(name)
-			if message2 != "": message = message2 + '[CR][CR]' + addonString_servicefeatherence(89).encode('utf-8')
-			else: message = addonString_servicefeatherence(90).encode('utf-8') #URL Error occured.
-			diaogtextviewer(header,message)
-			'''---------------------------'''
-			
-		elif "2" in printpoint:
-			'''------------------------------
-			---Add-URL-----------------------
-			------------------------------'''
-			New_ID = dialogkeyboard("", addonString_servicefeatherence(40).encode('utf-8'), 0, "5", "" , "")
-			setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, viewtype)
-			
-				
-		elif "3" in printpoint:
-			'''------------------------------
-			---Remove-URL--------------------
-			------------------------------'''
-			list = ['-> (Exit)']
-			url2 = url.split(',')
-			i = 0
-			for x in url2:
-				i += 1
-				list.append(x)
-
-			returned2, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
-				
-			if returned2 == -1: printpoint = printpoint + "9"
-			elif returned2 == 0: printpoint = printpoint + "8"
-			else: printpoint = printpoint + "7"
-			
-			if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
-				
-				if i == 1:
-					'''Warning 1 URL found!'''
-					check = dialogyesno(localize(13336), addonString_servicefeatherence(92).encode('utf-8') + '[CR]' + addonString_servicefeatherence(91).encode('utf-8'))
-					if check == "ok":
-						'''Remove Button'''
-						printpoint = printpoint + "F"
-					else:
-						'''Skip'''
-				else:
-					if value + "," in url:
-						'''multi links'''
-						value2 = url.replace(value + ",","",1)
-					elif value in url:
-						'''single link'''
-						value2 = url.replace(value,"",1)
-					else: value2 = ""
-					if value2 == "": notification_common("17")
-					else:
-						setsetting(Custom_Playlist_ID, value2)
-						notification(addonString_servicefeatherence(44).encode('utf-8') + space + addonString_servicefeatherence(43).encode('utf-8'),str(name), "", 4000) #URL Removed Succesfully!
-						'''---------------------------'''
-				
-	elif "B" in printpoint:
-		'''------------------------------
-		---Rename-Button-----------------
-		------------------------------'''
-		New_Name = dialogkeyboard(name, addonString_servicefeatherence(41).encode('utf-8'), 0, "", Custom_Playlist_Name, "0")
-		if New_Name != "skip" and New_Name != name:
-			notification(addonString_servicefeatherence(45).encode('utf-8') + space + addonString_servicefeatherence(30).encode('utf-8'), str(name), "", 4000) #Button Name Update Succesfully!
-			'''---------------------------'''
-		
-	elif "C" in printpoint:
-		if thumb == "":
-			'''------------------------------
-			---Add-Thumb---------------------
-			------------------------------'''
-			New_Thumb = ""
-			returned = dialogyesno(str(name), addonString_servicefeatherence(31).encode('utf-8'), nolabel=localize(20017), yeslabel=localize(20015))
-			if returned == 'ok':
-				'''remote'''
-				x = localize(20015) #Remote thumb
-				value = dialogkeyboard("", x + space + "URL", 0, "1", "", "")
-				if value != "skip":
-					returned = urlcheck(value, ping=False)
-					if returned != "ok":
-						notification("URL Error", "Try again..", "", 2000)
-						header = "URL Error"
-						message = "Examine your URL for errors:" + newline + '[B]' + str(value) + '[/B]'
-						diaogtextviewer(header,message)
-					else:
-						New_Thumb = value
-			else:
-				'''local'''
-				x = localize(20017) #Local thumb
-				xbmc.executebuiltin('Skin.SetString('+addonID+'_Temp,)')
-				xbmc.executebuiltin('Skin.SetImage('+addonID+'_Temp,)') ; xbmc.sleep(4000)
-				dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
-				while dialogfilebrowserW and not xbmc.abortRequested:
-					xbmc.sleep(500)
-					dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
-					xbmc.sleep(500)
-				xbmc.sleep(500)
-				New_Thumb = xbmc.getInfoLabel('Skin.String('+addonID+'_Temp)')
-			
-			if New_Thumb != "":
-				setsetting(Custom_Playlist_Thumb, New_Thumb)
-				notification(str(x) + space + addonString_servicefeatherence(30).encode('utf-8'), str(name), "", 4000) #Thumb* Update Succesfully!
-				'''---------------------------'''
-		else:
-			'''------------------------------
-			---Remove-Thumb------------------
-			------------------------------'''
-			if os.path.exists(thumb): x = localize(20017) #Local thumb
-			else: x = localize(20015)
-			setsetting(Custom_Playlist_Thumb, "")
-			notification(str(x) + space + addonString_servicefeatherence(43).encode('utf-8'), str(name), "", 2000) #Thumb* Removed Succesfully!
-			'''---------------------------'''
-			
-	elif "D" in printpoint:
-		'''------------------------------
-		---Add-Description---------------
-		------------------------------'''
-		returned, value = getRandom("0", min=0, max=100, percent=50)
-		if int(value) <= 10: notification("Tip New Line:", "[CR]", "", 4000)
-		elif int(value) <= 20: notification("Tip Bold:", "[B]text[/B]", "", 4000)
-		elif int(value) <= 30: notification("Tip Color:", "[COLOR=X]text[/COLOR]", "", 4000)
-		elif int(value) <= 40: notification("Tip Italic:", "[I]text[/I]", "", 4000)
-		
-		if Custom_Playlist_Description == "": extra1 = addonString_servicefeatherence(32).encode('utf-8') #Add Description
-		else: extra1 = addonString_servicefeatherence(33).encode('utf-8') #Edit Description
-		
-		returned = dialogkeyboard(desc, extra1, 0, "", Custom_Playlist_Description, "0")
-		if returned != "skip":
-			if returned == "": extra2 = addonString_servicefeatherence(43).encode('utf-8') #Removed Succesfully!
-			else: extra2 = addonString_servicefeatherence(30).encode('utf-8') #Update Succesfully!
-			if returned != desc: notification(localize(21821) + space + extra2, str(name), "", 4000) #Description Update/Removed Succesfully!
-			'''---------------------------'''
-	
-	elif "E" in printpoint:
-		
-		if fanart == "":
-			'''------------------------------
-			---Add-Fanart----------------
-			------------------------------'''
-			New_Fanart = ""
-			returned = dialogyesno(str(name), addonString_servicefeatherence(31).encode('utf-8'), nolabel=localize(20438), yeslabel=localize(20441))
-			if returned == 'ok':
-				'''remote'''
-				x = localize(20441) #Remote fanart
-				value = dialogkeyboard("", localize(20441), 0, "1", "", "")
-				if value != "skip":
-					returned2 = urlcheck(value, ping=False)
-					if returned2 != "ok":
-						notification("URL Error", "Try again..", "", 2000)
-						header = "URL Error"
-						message = "Examine your URL for errors:" + newline + '[B]' + str(value) + '[/B]'
-						diaogtextviewer(header,message)
-					else:
-						New_Fanart = value
-			else:
-				'''local'''
-				x = localize(20438) #Local fanart
-				xbmc.executebuiltin('Skin.SetString('+addonID+'_Temp,)')
-				xbmc.executebuiltin('Skin.SetImage('+addonID+'_Temp,)') ; xbmc.sleep(4000)
-				dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
-				while dialogfilebrowserW and not xbmc.abortRequested:
-					xbmc.sleep(500)
-					dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
-					xbmc.sleep(500)
-				xbmc.sleep(500)
-				New_Fanart = xbmc.getInfoLabel('Skin.String('+addonID+'_Temp)')
-			
-			if New_Fanart != "":
-				setsetting(Custom_Playlist_Fanart, New_Fanart)
-				 
-				notification(str(x) + space + addonString_servicefeatherence(30).encode('utf-8'), str(New_Fanart), "", 2000) #Fanart* Update Succesfully!
-				xbmc.sleep(2000)
-				if Fanart_Enable != "true": notification(addonString_servicefeatherence(28).encode('utf-8') + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Allow Backgrounds Disabled, ->Add-on settings
-				elif Fanart_EnableCustom != "true": notification(localize(21389) + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Enable custom background Disabled, ->Add-on settings
-				'''---------------------------'''
-		else:
-			'''------------------------------
-			---Remove-Fanart------------
-			------------------------------'''
-			setsetting(Custom_Playlist_Fanart, "")
-			notification(localize(33068) + space + localize(19179) + "!", str(name), "", 4000) #Background Deleted!
-			'''---------------------------'''
-			
-	if "F" in printpoint:
-		if Custom_Playlist_Description != "":
-			'''------------------------------
-			---Remove-Button-----------------
-			------------------------------'''
-			returned = dialogyesno(localize(13336) + '[CR]' + str(name),localize(19194)) #Remove Button, Continue?
-			if returned == "ok":
-				setsetting(Custom_Playlist_ID, "")
-				setsetting(Custom_Playlist_Name, "")
-				setsetting(Custom_Playlist_Thumb, "")
-				setsetting(Custom_Playlist_Description, "")
-				setsetting(Custom_Playlist_Fanart, "")
-				'''---------------------------'''
-				if desc != "": extra1 = localize(21821) + space2 + str(desc)
-				else: extra1 = ""
-				dialogok(localize(50) + space + addonString_servicefeatherence(43).encode('utf-8') + '[CR]' + str(name), "ID" + space2 + str(url), "", extra1)
-				'''---------------------------'''
-				
-	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
-		update_view(url, num, viewtype)
-		#xbmcplugin.endOfDirectory(int(sys.argv[1]))
-		
-	text = "name" + space2 + str(name) + newline + \
-	"Custom_Playlist_ID" + space2 + str(Custom_Playlist_ID) + newline + \
-	"Custom_Playlist_Name" + space2 + str(Custom_Playlist_Name) + newline + \
-	"Custom_Playlist_Thumb" + space2 + str(Custom_Playlist_Thumb) + newline + \
-	"thumb" + space2 + str(thumb) + newline + \
-	"Custom_Playlist_Description" + space2 + str(Custom_Playlist_Description) + newline + \
-	"Custom_Playlist_Fanart" + space2 + str(Custom_Playlist_Fanart) + newline + \
-	"fanart" + space2 + str(fanart) + newline + \
-	"New_ID" + space2 + str(New_ID) + newline + \
-	"url" + space2 + str(url) + newline
-	'''---------------------------'''
-	printlog(title="ManageCustom", printpoint=printpoint, text=text, level=2, option="")
-		
 def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 	'''Error may occured at anytime'''
 	'''Make sure to use exception upon running this module'''
 	
 	'''playlist2 = store new videos from x'''
 	'''playlist = store up to date videos for comparision'''
-	printpoint = "" ; TypeError = "" ; extra = "" ; page = 1 ; count = 0 ; count_ = "" ; playlist2 = [] ; pagesize = 40
+	printpoint = "" ; TypeError = "" ; extra = "" ; page = 1 ; count = 0 ; count_ = 0 ; playlist2 = [] ; pagesize = 40
 	valid_ = "" ; invalid_ = 0 ; invalid__ = "" ; duplicates_ = 0 ; duplicates__ = "" ; except_ = 0 ; except__ = ""
 	x2 = x
 	
@@ -1970,10 +1101,9 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 	if not 'list' in returned:
 		printpoint = printpoint + '0'
 		playlist = []
-	#count_ = playlist.count(',')
 	try:
-		count_ = int(len(playlist)) / 2
-		count = 0 + count_
+		count_ = int(len(playlist))
+		#count = 0 + int(count_)
 	except Exception, TypeError: extra = extra + newline + 'count_ TypeError: ' + str(TypeError)
 	
 	videoDefinition = 'any'
@@ -2018,7 +1148,7 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 		#x = x.replace('&youtube_ch=',"")
 		url = 'https://www.googleapis.com/youtube/v3/search?channelId='+x+'&key='+featherenceapi+'&part=snippet&maxResults=40' #'&videoDefinition='+videoDefinition+'&type=video
 	else: printpoint = printpoint + "8"
-	print url
+	#print url
 	link = OPEN_URL(url)
 	prms=json.loads(link)
 	text = "url" + space2 + str(url) + newline + \
@@ -2032,7 +1162,7 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 	'''---------------------------'''
 
 	i = 0
-	while i < pagesize and i < totalResults and not "8" in printpoint and count < (pagesize) and not xbmc.abortRequested: #h<totalResults
+	while i < pagesize and i < totalResults and not "8" in printpoint and ((count + count_) < pagesize) and not xbmc.abortRequested: #h<totalResults
 		try:
 			#if 1 + 1 == 2:
 			#print "i" + space2 + str(i) + space + "duplicates__" + space2 + str(duplicates__) + "totalResults" + space2 + str(totalResults)
@@ -2051,8 +1181,23 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 				thumb=str(prms['items'][i][u'snippet'][u'thumbnails'][u'default'][u'url'])
 				desc = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
 				#id = "" ; finalurl = "" ; title = "" ; thumb = "" ; desc = ""
-			
-			if playlistid != "":
+				
+				if not finalurl in playlist and not "Deleted video" in title and not "Private video" in title and finalurl != "":
+					playlist2.append(finalurl)
+					count += 1
+					#notification('playid ' + str(int(len(playlist))),str(playlist),'',1000) ; xbmc.sleep(1000)
+					'''---------------------------'''
+				else:
+					if "Deleted video" in title or "Private video" in title:
+						invalid_ += 1
+						invalid__ = "i" + space2 + str(i) + space + "id" + space2 + str(id)
+					elif finalurl in playlist:
+						duplicates_ += 1
+						duplicates__ = "i" + space2 + str(i) + space + "id" + space2 + str(id)
+				
+				#print 'tiltul ' + 'i' + space2 + str(i) + space + 'id' + space2 + str(id)	
+				
+			elif playlistid != "":
 				url2 = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId='+playlistid+'&key='+featherenceapi+'&part=snippet&maxResults=20&pageToken='
 				link2 = OPEN_URL(url2)
 				prms2=json.loads(link2)
@@ -2067,7 +1212,7 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 				
 				
 				i2 = 0
-				while i2 < pagesize and i2 < totalResults2 and i2 < 20 and not "8" in printpoint and count < (pagesize) and not xbmc.abortRequested:
+				while i2 < pagesize and i2 < totalResults2 and i2 < 20 and not "8" in printpoint and ((count + count_) < pagesize) and not xbmc.abortRequested:
 					id = "" ; finalurl = ""
 					id=str(prms2['items'][i2][u'snippet'][u'resourceId'][u'videoId']) #Video ID (Playlist)
 					if id != "":
@@ -2078,44 +1223,33 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 						desc = str(prms2['items'][i2][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
 					
 					if not finalurl in playlist and not "Deleted video" in title and not "Private video" in title and finalurl != "":
-						#ok, liz = addLink(title,finalurl, thumb, desc)
-						#name, url, mode, iconimage='DefaultFolder.png', desc="", num="", viewtype=""
-						#playlist.append((finalurl ,liz))
-
 						playlist.append(finalurl)
 						playlist2.append(finalurl)
 						count += 1
 						'''---------------------------'''
+					else:
+						if "Deleted video" in title or "Private video" in title:
+							invalid_ += 1
+							invalid__ = "i2" + space2 + str(i2) + space + "id" + space2 + str(id)
+						elif finalurl in playlist:
+							duplicates_ += 1
+							duplicates__ = "i2" + space2 + str(i2) + space + "id" + space2 + str(id)
 					#print 'i2' + space2 + str(i2) + space + 'id' + space2 + str(id)
 					i2 += 1
-			else:	
-				if not finalurl in playlist and not "Deleted video" in title and not "Private video" in title and finalurl != "":
-					#ok, liz = addLink(title,finalurl, thumb, desc)
-					#name, url, mode, iconimage='DefaultFolder.png', desc="", num="", viewtype=""
-					#playlist.append((finalurl ,liz))
 
-					playlist.append(finalurl)
-					playlist2.append(finalurl)
-					count += 1
-					'''---------------------------'''
-				else:
-					if "Deleted video" in title or "Private video" in title:
-						invalid_ += 1
-						invalid__ = "i" + space2 + str(i) + space + "id" + space2 + str(id)
-					elif finalurl in playlist:
-						duplicates_ += 1
-						duplicates__ = "i" + space2 + str(i) + space + "id" + space2 + str(id)
-
+			#print 'blablabla ' + 'x' + space2 + str(x) + newline + 'id' + space2 + str(id)
 		except Exception, TypeError:
-			except_ += 1
-			except__ = "i" + space2 + str(i) + space + "id" + space2 + str(id)
+			except_ += 1 ; except__ = "i" + space2 + str(i) + space + "id" + space2 + str(id)
 			if not 'list index out of range' in TypeError: extra = extra + newline + "i" + space2 + str(i) + space + "TypeError" + space2 + str(TypeError)
 			else: printpoint = printpoint + "8"
 			'''---------------------------'''
 		
 		i += 1
-		if "&custom_se=" in x2 and count > 0: printpoint = printpoint + "8"
-	numOfItems2 = len(playlist)
+		if "&custom_se=" in x2 and count > 0 and playlist2 != []: printpoint = printpoint + "8"
+		
+	#numOfItems2 = len(playlist2)
+	numOfItems2 = count
+	#numOfItems2 = int(len(playlist2)) / 2 #TEST THIS NEW !
 	#numOfItems2 = totalResults - invalid_ - duplicates_ - except_
 	#if numOfItems2 > pagesize: numOfItems2 = 40
 	totalpages = (numOfItems2 / pagesize) + 1
@@ -2133,6 +1267,8 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 	text = "i" + space2 + str(i) + space + "totalResults" + space2 + str(totalResults) + space + "numOfItems2" + space2 + str(numOfItems2) + newline + \
 	"x" + space2 + x + space + "page" + space2 + str(page) + " / " + str(totalpages) + space + "pagesize" + space2 + str(pagesize) + newline + \
 	'count' + space2 + str(count) + space + 'count_' + space2 + str(count_) + newline + \
+	"playlist" + space2 + str(len(playlist)) + space + str(playlist) + newline + \
+	"playlist2" + space2 + str(len(playlist2)) + space + str(playlist2) + newline + \
 	"extra" + space2 + str(extra)
 	printlog(title='youtube_pl_to_youtube_id', printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
@@ -3237,3 +2373,918 @@ def pluginend2(admin, url, containerfolderpath, viewtype):
 	"url" + space2 + str(url)
 	printlog(title='pluginend2', printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
+
+	
+def getCustom_Playlist(admin):
+	#from variables import Custom_Playlist1
+	returned = "" ; printpoint = ""
+	if Custom_Playlist1_ID  == "": returned = 'Custom_Playlist1_ID'
+	elif Custom_Playlist2_ID  == "": returned = 'Custom_Playlist2_ID'
+	elif Custom_Playlist3_ID  == "": returned = 'Custom_Playlist3_ID'
+	elif Custom_Playlist4_ID  == "": returned = 'Custom_Playlist4_ID'
+	elif Custom_Playlist5_ID  == "": returned = 'Custom_Playlist5_ID'
+	elif Custom_Playlist6_ID  == "": returned = 'Custom_Playlist6_ID'
+	elif Custom_Playlist7_ID  == "": returned = 'Custom_Playlist7_ID'
+	elif Custom_Playlist8_ID  == "": returned = 'Custom_Playlist8_ID'
+	elif Custom_Playlist9_ID  == "": returned = 'Custom_Playlist9_ID'
+	elif Custom_Playlist10_ID  == "": returned = 'Custom_Playlist10_ID'
+	'''---------------------------'''
+	text = "returned" + space2 + str(returned) + space + "Custom_Playlist1_ID" + space2 + str(Custom_Playlist1_ID)
+	printlog(title="getCustom_Playlist", printpoint=printpoint, text=text, level=2, option="")
+	return returned
+
+def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, viewtype):
+	printpoint = "" ; extra = "" ; New_Type = "" ; New_ID_ = ""
+	if "playlist?list=" in New_ID:
+		'''Playlist'''
+		New_Type = localize(559) #Playlist
+		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
+		New_ID = find_string(New_ID, "playlist?list=", "")
+		New_ID = New_ID.replace("playlist?list=","&youtube_pl=")
+		New_ID_ = New_ID.replace("&youtube_pl=","")
+		'''---------------------------'''
+	elif "/user/" in New_ID or "/channel/" in New_ID:
+		'''Channel'''
+		New_Type = localize(19029) #Channel
+		extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8') #New %s, Update Succesfully!
+		if "/channel/" in New_ID:
+			New_ID = find_string(New_ID, "/channel/", "")
+			New_ID = New_ID.replace("/channel/", "&youtube_ch=")
+		elif "/user/"    in New_ID:
+			New_ID = find_string(New_ID, "/user/", "")
+			New_ID = New_ID.replace("/user/", "&youtube_ch=")
+			
+		New_ID_ = New_ID.replace("&youtube_ch=","")
+		'''---------------------------'''
+	elif "watch?v=" in New_ID:
+		'''Single Video'''
+		New_Type = localize(157) #Video
+		extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8') #New %s, Update Succesfully!
+		New_ID = find_string(New_ID, "watch?v=", "")
+		New_ID = New_ID.replace("watch?v=", "&youtube_id=")
+		New_ID_ = New_ID.replace("&youtube_id=","")
+		'''---------------------------'''
+	
+	elif New_ID == "None":
+		New_Type = localize(2080) #Empty list
+		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
+		New_ID_ = ""
+		
+	if New_Type != "":
+		if New_ID in url:
+			check = dialogyesno(addonString_servicefeatherence(93).encode('utf-8'), localize(19194)) # Duplicated URL found!, Continue?
+			if check == "ok": pass				
+			else: notification_common("9") ; printpoint = printpoint + "8"
+		
+		if not "8" in printpoint:
+			if mode == 20:
+				setsetting(Custom_Playlist_ID, New_ID)
+			elif mode == 21:
+				setsetting(Custom_Playlist_ID, str(url) + "," + New_ID)
+				#extra = "Previous ID: " + str(url)		
+			#extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8')
+			dialogok(extra, "ID: " + str(New_ID_), str(name), "") ; xbmc.sleep(100)
+			update_view(url, num, viewtype)
+			'''---------------------------'''
+
+	else: notification_common("17")
+	
+	text = "name" + space2 + str(name) + newline + "New_Type" + space2 + str(New_Type) + space + "New_ID" + space2 + str(New_ID) + space + "New_ID_" + space2 + str(New_ID_)
+	printlog(title="setCustom_Playlist_ID", printpoint=printpoint, text=text, level=2, option="")
+	'''---------------------------'''
+
+def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
+	'''------------------------------
+	---Save and Load your addon-design
+	------------------------------'''
+	printpoint = "" ; extra = "" ; formula = "" ; formula_ = "" ; path = "" ; file1 = "" ; file2 = "" ; file3 = "" ; returned = "" ; returned2 = ""; returned3 = "" ; y = "s"
+	
+	if name == addonString(6).encode('utf-8'):
+		list = ['-> (Exit)']
+		list.append(localize(190) + space + localize(593)) #Save All
+		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + localize(593) + space + "[LOCAL]") #Load All [LOCAL]
+		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + localize(593) + space + "[REMOTE]") #Load All [REMOTE] 
+		list.append(localize(10035) + space + localize(593)) #Reset All
+		y = "s"
+		'''---------------------------'''
+	else:
+		list = ['-> (Exit)']
+		list.append(localize(190) + space + addonString_servicefeatherence(57).encode('utf-8')) #Save One
+		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + addonString_servicefeatherence(57).encode('utf-8') + space + "[LOCAL]") #Load One [LOCAL]
+		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + addonString_servicefeatherence(57).encode('utf-8') + space + "[REMOTE]") #Load One [REMOTE]
+		y = ""
+		
+		Custom_Playlist_ID = "Custom_Playlist" + num + "_ID"
+		if Custom_Playlist_ID == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
+		Custom_Playlist_Name = "Custom_Playlist" + num + "_Name"
+		Custom_Playlist_Thumb = "Custom_Playlist" + num + "_Thumb"
+		Custom_Playlist_Description = "Custom_Playlist" + num + "_Description"
+		Custom_Playlist_Fanart = "Custom_Playlist" + num + "_Fanart"
+		'''---------------------------'''
+	returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+	
+	if returned == -1: printpoint = printpoint + "9"
+	elif returned == 0: printpoint = printpoint + "8"
+	else: printpoint = printpoint + "7"
+		
+	if ("7" in printpoint or value != "") and not "8" in printpoint and not "9" in printpoint:
+		
+		if returned == 1 or returned == 2: path = os.path.join(addondata_path, addonID, '')
+		elif returned == 3: path = os.path.join(addonPath, 'resources', 'templates', '')
+		elif returned == 4: pass
+		else: path = ""
+		
+		if path != "":
+
+			if returned == 3:
+				check = dialogyesno(addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8'), addonString_servicefeatherence(99).encode('utf-8')) #Share My Music buttons, Choose YES to learn how to share Your Music button
+				if check == 'ok':
+					header = addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8')
+					msg1 = localize(190) + space + localize(592) ; msg1.decode('utf-8').encode('utf-8') #; msg1 = '[B]' + msg1 + '[/B]'
+					msg2 = os.path.join(addondata_path, addonID) ; msg2 = msg2.decode('utf-8').encode('utf-8')
+					message = "1. " + addonString_servicefeatherence(95).encode('utf-8') % (msg1) + ".[CR]" + "2. " + addonString_servicefeatherence(97).encode('utf-8') + "[CR]" + msg2 + ".[CR]" + "3. " + addonString_servicefeatherence(52).encode('utf-8') + "[CR]" + "4. " + addonString_servicefeatherence(53).encode('utf-8') % ("templates") + "[CR]" + "5. " + addonString_servicefeatherence(54).encode('utf-8') + ".[CR]" + "6. " + addonString_servicefeatherence(98).encode('utf-8') + ".[CR]" + "7. " + addonString_servicefeatherence(55).encode('utf-8') + ".[CR]" + "8. " + addonString_servicefeatherence(56).encode('utf-8') % ("Commit") + ".[CR][CR]" + "*You should now wait for the next addon update."
+					diaogtextviewer(header,message)
+					
+			'''read existing files'''
+			file1 = os.path.join(path, "Addon_SavedButton"+y+"1.txt")
+			file2 = os.path.join(path, "Addon_SavedButton"+y+"2.txt")
+			file3 = os.path.join(path, "Addon_SavedButton"+y+"3.txt")
+			'''---------------------------'''
+			
+			if os.path.exists(file1):
+				infile1 = read_from_file(file1, silent=True)
+				filename1 = regex_from_to(infile1, "&name=", "&", excluding=True)
+			else: filename1 = None
+			if os.path.exists(file2):
+				infile2 = read_from_file(file2, silent=True)
+				filename2 = regex_from_to(infile2, "&name=", "&", excluding=True)
+			else: filename2 = None
+			if os.path.exists(file3):
+				infile3 = read_from_file(file3, silent=True)
+				filename3 = regex_from_to(infile3, "&name=", "&", excluding=True)
+				#print 'infile3' + space2 + str(infile3) + newline + 'filename3' + space2 + str(filename3)
+			else: filename3 = None
+			
+			value1 = 'NO.' + space + "1" + space + "(" + str(filename1) + ")"
+			value2 = 'NO.' + space + "2" + space + "(" + str(filename2) + ")"
+			value3 = 'NO.' + space + "3" + space + "(" + str(filename3) + ")"
+			
+			'''save/load'''
+			if filename1 == None: value1 = '[COLOR=Red]' + value1 + '[/COLOR]'
+			if filename2 == None: value2 = '[COLOR=Red]' + value2 + '[/COLOR]'
+			if filename3 == None: value3 = '[COLOR=Red]' + value3 + '[/COLOR]'
+		
+			list = ['-> (Exit)', value1, value2, value3]
+				
+			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+			
+			if returned2 == -1: printpoint = printpoint + "9"
+			elif returned2 == 0: printpoint = printpoint + "8"
+			else: printpoint = printpoint + "7"
+			
+			if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
+				
+				if returned2 == 1: printpoint = printpoint + "1" #1
+				elif returned2 == 2: printpoint = printpoint + "2" #2
+				elif returned2 == 3: printpoint = printpoint + "3" #3
+				
+				if returned == 1: printpoint = printpoint + "A" #SAVE
+				elif returned == 2: printpoint = printpoint + "B" #LOAD
+				elif returned == 3: printpoint = printpoint + "C" #TEMPLATES
+		
+				if "A" in printpoint:
+					if y == "s":
+						'''------------------------------
+						---Save-All-----------------------
+						------------------------------'''
+						formula = ""
+
+						if Custom_Playlist1_ID != "":
+							formula = "Custom_Playlist1_ID" + "=5" + Custom_Playlist1_ID
+							formula = formula + newline + "Custom_Playlist1_Description" + "=5" + Custom_Playlist1_Description
+							formula = formula + newline + "Custom_Playlist1_Fanart" + "=5" + Custom_Playlist1_Fanart
+							formula = formula + newline + "Custom_Playlist1_Name" + "=5" + Custom_Playlist1_Name
+							formula = formula + newline + "Custom_Playlist1_Thumb" + "=5" + Custom_Playlist1_Thumb
+						if Custom_Playlist2_ID != "":
+							formula = formula + newline + "Custom_Playlist2_ID" + "=5" + Custom_Playlist2_ID + "=5" + Custom_Playlist2_ID
+							formula = formula + newline + "Custom_Playlist2_Description" + "=5" + Custom_Playlist2_Description
+							formula = formula + newline + "Custom_Playlist2_Fanart" + "=5" + Custom_Playlist2_Fanart
+							formula = formula + newline + "Custom_Playlist2_Name" + "=5" + Custom_Playlist2_Name
+							formula = formula + newline + "Custom_Playlist2_Thumb" + "=5" + Custom_Playlist2_Thumb
+						if Custom_Playlist3_ID != "":
+							formula = formula + newline + "Custom_Playlist3_ID" + "=5" + Custom_Playlist3_ID + "=5" + Custom_Playlist3_ID
+							formula = formula + newline + "Custom_Playlist3_Description" + "=5" + Custom_Playlist3_Description
+							formula = formula + newline + "Custom_Playlist3_Fanart" + "=5" + Custom_Playlist3_Fanart
+							formula = formula + newline + "Custom_Playlist3_Name" + "=5" + Custom_Playlist3_Name
+							formula = formula + newline + "Custom_Playlist3_Thumb" + "=5" + Custom_Playlist3_Thumb
+						if Custom_Playlist4_ID != "":
+							formula = formula + newline + "Custom_Playlist4_ID" + "=5" + Custom_Playlist4_ID + "=5" + Custom_Playlist4_ID
+							formula = formula + newline + "Custom_Playlist4_Description" + "=5" + Custom_Playlist4_Description
+							formula = formula + newline + "Custom_Playlist4_Fanart" + "=5" + Custom_Playlist4_Fanart
+							formula = formula + newline + "Custom_Playlist4_Name" + "=5" + Custom_Playlist4_Name
+							formula = formula + newline + "Custom_Playlist4_Thumb" + "=5" + Custom_Playlist4_Thumb
+						if Custom_Playlist5_ID != "":
+							formula = formula + newline + "Custom_Playlist5_ID" + "=5" + Custom_Playlist5_ID + "=5" + Custom_Playlist5_ID
+							formula = formula + newline + "Custom_Playlist5_Description" + "=5" + Custom_Playlist5_Description
+							formula = formula + newline + "Custom_Playlist5_Fanart" + "=5" + Custom_Playlist5_Fanart
+							formula = formula + newline + "Custom_Playlist5_Name" + "=5" + Custom_Playlist5_Name
+							formula = formula + newline + "Custom_Playlist5_Thumb" + "=5" + Custom_Playlist5_Thumb
+						if Custom_Playlist6_ID != "":
+							formula = formula + newline + "Custom_Playlist6_ID" + "=5" + Custom_Playlist6_ID + "=5" + Custom_Playlist6_ID
+							formula = formula + newline + "Custom_Playlist6_Description" + "=5" + Custom_Playlist6_Description
+							formula = formula + newline + "Custom_Playlist6_Fanart" + "=5" + Custom_Playlist6_Fanart
+							formula = formula + newline + "Custom_Playlist6_Name" + "=5" + Custom_Playlist6_Name
+							formula = formula + newline + "Custom_Playlist6_Thumb" + "=5" + Custom_Playlist6_Thumb
+						if Custom_Playlist7_ID != "":
+							formula = formula + newline + "Custom_Playlist7_ID" + "=5" + Custom_Playlist7_ID + "=5" + Custom_Playlist7_ID
+							formula = formula + newline + "Custom_Playlist7_Description" + "=5" + Custom_Playlist7_Description
+							formula = formula + newline + "Custom_Playlist7_Fanart" + "=5" + Custom_Playlist7_Fanart
+							formula = formula + newline + "Custom_Playlist7_Name" + "=5" + Custom_Playlist7_Name
+							formula = formula + newline + "Custom_Playlist7_Thumb" + "=5" + Custom_Playlist7_Thumb
+						if Custom_Playlist8_ID != "":
+							formula = formula + newline + "Custom_Playlist8_ID" + "=5" + Custom_Playlist8_ID + "=5" + Custom_Playlist8_ID
+							formula = formula + newline + "Custom_Playlist8_Description" + "=5" + Custom_Playlist8_Description
+							formula = formula + newline + "Custom_Playlist8_Fanart" + "=5" + Custom_Playlist8_Fanart
+							formula = formula + newline + "Custom_Playlist8_Name" + "=5" + Custom_Playlist8_Name
+							formula = formula + newline + "Custom_Playlist8_Thumb" + "=5" + Custom_Playlist8_Thumb
+						if Custom_Playlist9_ID != "":
+							formula = formula + newline + "Custom_Playlist9_ID" + "=5" + Custom_Playlist9_ID + "=5" + Custom_Playlist9_ID
+							formula = formula + newline + "Custom_Playlist9_Description" + "=5" + Custom_Playlist9_Description
+							formula = formula + newline + "Custom_Playlist9_Fanart" + "=5" + Custom_Playlist9_Fanart
+							formula = formula + newline + "Custom_Playlist9_Name" + "=5" + Custom_Playlist9_Name
+							formula = formula + newline + "Custom_Playlist9_Thumb" + "=5" + Custom_Playlist9_Thumb
+						if Custom_Playlist10_ID != "":
+							formula = formula + newline + "Custom_Playlist10_ID" + "=5" + Custom_Playlist10_ID + "=5" + Custom_Playlist10_ID
+							formula = formula + newline + "Custom_Playlist10_Description" + "=5" + Custom_Playlist10_Description
+							formula = formula + newline + "Custom_Playlist10_Fanart" + "=5" + Custom_Playlist10_Fanart
+							formula = formula + newline + "Custom_Playlist10_Name" + "=5" + Custom_Playlist10_Name
+							formula = formula + newline + "Custom_Playlist10_Thumb" + "=5" + Custom_Playlist10_Thumb
+					elif y == "":
+						'''------------------------------
+						---Save-One-----------------------
+						------------------------------'''
+						formula = ""
+
+						if Custom_Playlist_ID != "":
+							formula = Custom_Playlist_ID + "=5" + getsetting(Custom_Playlist_ID)
+							formula = formula + newline + Custom_Playlist_Fanart + "=5" + getsetting(Custom_Playlist_Fanart)
+							formula = formula + newline + Custom_Playlist_Name + "=5" + getsetting(Custom_Playlist_Name)
+							formula = formula + newline + Custom_Playlist_Thumb + "=5" + getsetting(Custom_Playlist_Thumb)
+							formula = formula + newline + Custom_Playlist_Description + "=5" + getsetting(Custom_Playlist_Description)
+							'''---------------------------'''
+							
+					if "1" in printpoint:
+						if filename1 == None: filename = ""
+						else: filename = filename1
+					elif "2" in printpoint:
+						if filename2 == None: filename = ""
+						else: filename = filename2
+					elif "3" in printpoint:
+						if filename3 == None: filename = ""
+						else: filename = filename3
+					
+					filename = dialogkeyboard(filename, localize(21821), 0, "", "", "") #Description
+					filename_ = "&name="+str(filename)+"&"
+					formula = filename_ + newline + formula
+					
+					try: formula.encode('utf-8')
+					except: pass
+					
+					if "1" in printpoint:
+						write_to_file(file1, str(formula), append=False, silent=True, utf8=False)
+						#setsetting('Addon_SavedButton'+y+'1', str(formula))
+					elif "2" in printpoint:
+						write_to_file(file2, str(formula), append=False, silent=True, utf8=False)
+						#setsetting('Addon_SavedButton'+y+'2', str(formula))
+					elif "3" in printpoint:
+						write_to_file(file3, str(formula), append=False, silent=True, utf8=False)
+						#setsetting('Addon_SavedButton'+y+'3', str(formula))
+						'''---------------------------'''
+					
+					notification(addonString_servicefeatherence(58).encode('utf-8'), str(filename), "", 4000) #Saved Succesfully!, 
+				
+				elif "B" in printpoint or "C" in printpoint:
+					'''------------------------------
+					---Load/Templates----------------
+					------------------------------'''
+
+					if "1" in printpoint:
+						if filename1 == None: printpoint = printpoint + "Q"
+						else: file = file1
+					elif "2" in printpoint:
+						if filename2 == None: printpoint = printpoint + "Q"
+						else: file = file2
+					elif "3" in printpoint:
+						if filename3 == None: printpoint = printpoint + "Q"
+						else: file = file3
+					
+					if "Q" in printpoint or file == "":
+						'''nothing to load'''
+						if "C" in printpoint: notification(localize(19055), "Share Your Music button first.", "", 4000) #No information available
+						else:
+							if y == "": extra2 = localize(190) + space + localize(592)
+							else: extra2 = localize(190) + space + localize(593)
+							extra2 = extra2.decode('utf-8').encode('utf-8')
+							notification(localize(19055), addonString_servicefeatherence(95).encode('utf-8') % (extra2), "", 4000) #No information available
+					else:
+						#formula_ = formula_.split(',')
+						#formula_ = CleanString(formula_, filter=[])
+						import fileinput
+						for line in fileinput.input([file]):
+							x = "" ; x1 = "" ; x2 = "" ; x3 = ""
+							if "=5" in line:
+								'''setsetting'''
+								x = line.replace("=5","=")
+								x1 = find_string(x, "", "=")
+								x2 = find_string(x, "=", "")
+								x1 = x1.replace("=","")
+								x2 = x2.replace('=&', '&') #CLEAN STRINGS
+								x2 = x2.replace('\n', '') #CLEAN STRINGS
+								if not "_ID" in x:
+									'''Clean values for none ID lines'''
+									x2 = x2.replace("=","")
+									#x2 = x2.replace("\n","")
+								
+								if y == "":
+									count = 0
+									while count <= 10 and not xbmc.abortRequested:
+										if str(count) in x1:
+											x1 = x1.replace(str(count), str(num))
+											count = 40
+										else: count += 1
+								setsetting(str(x1), str(x2))
+								
+							if admin3 and admin and not admin2: extra = extra + newline + space + "line" + space2 + str(line) + space + "x" + space2 + str(x) + space + "x1" + space2 + str(x1) + space + "x2" + space2 + str(x2) + space + "x3" + space2 + str(x3)
+							'''---------------------------'''	
+		elif returned == 4:
+			'''------------------------------
+			---Reset-All---------------------
+			------------------------------'''
+			returned = dialogyesno(localize(10035) + space + localize(593) + space + "(" + localize(19291) + ")", "You may want to SAVE your settings just in case..") #Reset all (Delete permanently),
+			if returned == 'ok':
+				file = os.path.join(addondata_path, addonID, 'settings.xml')
+				removefiles(file) ; xbmc.sleep(500)
+				setsetting('General_AutoView', General_AutoView)
+				setsetting('General_TVModeShuffle', General_TVModeShuffle)
+				setsetting('General_TVModeDialog', General_TVModeDialog)
+				setsetting('Addon_ShowLog', Addon_ShowLog)
+				setsetting('Addon_ShowLog2', Addon_ShowLog2)
+				setsetting('Addon_Update', Addon_Update)
+				setsetting('Addon_UpdateDate', Addon_UpdateDate)
+				setsetting('Addon_UpdateLog', Addon_UpdateLog)
+				setsetting('Addon_Version', Addon_Version)
+				setsetting('Fanart_Enable', Fanart_Enable)
+				setsetting('Fanart_EnableCustom', Fanart_EnableCustom)
+				setsetting('Fanart_Custom100', Fanart_Custom100)
+				setsetting('Fanart_Custom101', Fanart_Custom101)
+				setsetting('Fanart_Custom102', Fanart_Custom102)
+				setsetting('Fanart_Custom103', Fanart_Custom103)
+				setsetting('Fanart_Custom104', Fanart_Custom104)
+				setsetting('Fanart_Custom105', Fanart_Custom105)
+				setsetting('Fanart_Custom106', Fanart_Custom106)
+				setsetting('Fanart_Custom107', Fanart_Custom107)
+				setsetting('Fanart_Custom108', Fanart_Custom108)
+				setsetting('Fanart_Custom109', Fanart_Custom109)
+				setsetting('Fanart_Custom110', Fanart_Custom110)
+				setsetting('Fanart_Custom111', Fanart_Custom111)
+				setsetting('Fanart_Custom112', Fanart_Custom112)
+				setsetting('Fanart_Custom113', Fanart_Custom113)
+				setsetting('Fanart_Custom114', Fanart_Custom114)
+				setsetting('Fanart_Custom115', Fanart_Custom115)
+				setsetting('Fanart_Custom116', Fanart_Custom116)
+				setsetting('Fanart_Custom117', Fanart_Custom117)
+				setsetting('Fanart_Custom118', Fanart_Custom118)
+				setsetting('Fanart_Custom119', Fanart_Custom119)
+				setsetting('Fanart_Custom120', Fanart_Custom120)
+				setsetting('Fanart_Custom121', Fanart_Custom121)
+				setsetting('Fanart_Custom122', Fanart_Custom122)
+				setsetting('Fanart_Custom123', Fanart_Custom123)
+				setsetting('Fanart_Custom124', Fanart_Custom124)
+				setsetting('Fanart_Custom125', Fanart_Custom125)
+				setsetting('Fanart_Custom126', Fanart_Custom126)
+				setsetting('Fanart_Custom127', Fanart_Custom127)
+				setsetting('Fanart_Custom128', Fanart_Custom128)
+				setsetting('Fanart_Custom129', Fanart_Custom129)
+				setsetting('Fanart_Custom130', Fanart_Custom130)
+				
+				
+				
+	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
+		if not "Q" in printpoint and not "A" in printpoint:
+			notification(".","","",1000)
+			xbmc.sleep(500)
+			notification("..","","",1000)
+			update_view(url, num, viewtype)
+			'''---------------------------'''
+	
+	text = 'name_' + space2 + name + "_LV" + printpoint + space + newline + \
+	"path" + space2 + str(path) + newline + \
+	"file1" + space2 + str(file1) + newline + \
+	"file2" + space2 + str(file2) + newline + \
+	"file3" + space2 + str(file3) + newline + \
+	"formula" + space2 + str(formula) + space + "formula_" + space2 + str(formula_) + newline + \
+	"extra" + space2 + str(extra)
+	printlog(title="AdvancedCustom", printpoint=printpoint, text=text, level=2, option="")
+		
+def AddCustom(mode, name, url, iconimage, desc, num, viewtype):
+	'''------------------------------
+	---New-Button--------------------
+	------------------------------'''
+	printpoint = ""
+	Custom_Playlist_ID = getCustom_Playlist(admin) ; New_Type = "" ; New_ID = "" ; New_Name = ""
+	Custom_Playlist_Name = Custom_Playlist_ID.replace("_ID","_Name")
+	if Custom_Playlist_ID == "": notification("Playlist limit reached!", "You may delete some playlists and try again!", "", 4000)
+	else:
+		New_ID = dialogkeyboard("", "Enter YouTube URL", 0, "5", "" , "")
+		if New_ID != "skip":
+			New_Name = dialogkeyboard('My Button', "Button Name", 0, "",Custom_Playlist_Name, "0")
+			if New_Name != "skip":
+				setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, New_Name, num, viewtype)
+				
+	text = "name" + space2 + str(name)
+	printlog(title="AddCustom", printpoint=printpoint, text=text, level=2, option="")
+	'''---------------------------'''
+	
+def CheckMoveCustom(name, num):
+	extra = "" ; printpoint = "" ; down = "" ; up = ""
+	
+	'''---------------------------'''
+	if num == "1":
+		'''---------------------------'''
+		if Custom_PlaylistL[1] != "": down = "2"
+		elif Custom_PlaylistL[2] != "": down = "3"
+		elif Custom_PlaylistL[3] != "": down = "4"
+		elif Custom_PlaylistL[4] != "": down = "5"
+		elif Custom_PlaylistL[5] != "": down = "6"
+		elif Custom_PlaylistL[6] != "": down = "7"
+		elif Custom_PlaylistL[7] != "": down = "8"
+		elif Custom_PlaylistL[8] != "": down = "9"
+		elif Custom_PlaylistL[9] != "": down = "10"
+		'''---------------------------'''
+	elif num == "2":
+		if Custom_PlaylistL[0] != "": up = "1"
+		'''---------------------------'''
+		if Custom_PlaylistL[2] != "": down = "3"
+		elif Custom_PlaylistL[3] != "": down = "4"
+		elif Custom_PlaylistL[4] != "": down = "5"
+		elif Custom_PlaylistL[5] != "": down = "6"
+		elif Custom_PlaylistL[6] != "": down = "7"
+		elif Custom_PlaylistL[7] != "": down = "8"
+		elif Custom_PlaylistL[8] != "": down = "9"
+		elif Custom_PlaylistL[9] != "": down = "10"
+		'''---------------------------'''
+	elif num == "3":
+		if Custom_PlaylistL[1] != "": up = "2"
+		elif Custom_PlaylistL[0] != "": up = "1"
+		'''---------------------------'''
+		if Custom_PlaylistL[3] != "": down = "4"
+		elif Custom_PlaylistL[4] != "": down = "5"
+		elif Custom_PlaylistL[5] != "": down = "6"
+		elif Custom_PlaylistL[6] != "": down = "7"
+		elif Custom_PlaylistL[7] != "": down = "8"
+		elif Custom_PlaylistL[8] != "": down = "9"
+		elif Custom_PlaylistL[9] != "": down = "10"
+		'''---------------------------'''
+	elif num == "4":
+		if Custom_PlaylistL[2] != "": up = "3"
+		elif Custom_PlaylistL[1] != "": up = "2"
+		elif Custom_PlaylistL[0] != "": up = "1"
+		'''---------------------------'''
+		if Custom_PlaylistL[4] != "": down = "5"
+		elif Custom_PlaylistL[5] != "": down = "6"
+		elif Custom_PlaylistL[6] != "": down = "7"
+		elif Custom_PlaylistL[7] != "": down = "8"
+		elif Custom_PlaylistL[8] != "": down = "9"
+		elif Custom_PlaylistL[9] != "": down = "10"
+		'''---------------------------'''
+	elif num == "5":
+		if Custom_PlaylistL[3] != "": up = "4"
+		elif Custom_PlaylistL[2] != "": up = "3"
+		elif Custom_PlaylistL[1] != "": up = "2"
+		elif Custom_PlaylistL[0] != "": up = "1"
+		'''---------------------------'''
+		if Custom_PlaylistL[5] != "": down = "6"
+		elif Custom_PlaylistL[6] != "": down = "7"
+		elif Custom_PlaylistL[7] != "": down = "8"
+		elif Custom_PlaylistL[8] != "": down = "9"
+		elif Custom_PlaylistL[9] != "": down = "10"
+		'''---------------------------'''
+	elif num == "6":
+		if Custom_PlaylistL[4] != "": up = "5"
+		elif Custom_PlaylistL[3] != "": up = "4"
+		elif Custom_PlaylistL[2] != "": up = "3"
+		elif Custom_PlaylistL[1] != "": up = "2"
+		elif Custom_PlaylistL[0] != "": up = "1"
+		'''---------------------------'''
+		if Custom_PlaylistL[6] != "": down = "7"
+		elif Custom_PlaylistL[7] != "": down = "8"
+		elif Custom_PlaylistL[8] != "": down = "9"
+		elif Custom_PlaylistL[9] != "": down = "10"
+		'''---------------------------'''
+	elif num == "7":
+		if Custom_PlaylistL[6] != "": up = "7"
+		elif Custom_PlaylistL[5] != "": up = "6"
+		elif Custom_PlaylistL[4] != "": up = "5"
+		elif Custom_PlaylistL[3] != "": up = "4"
+		elif Custom_PlaylistL[2] != "": up = "3"
+		elif Custom_PlaylistL[1] != "": up = "2"
+		elif Custom_PlaylistL[0] != "": up = "1"
+		'''---------------------------'''
+		if Custom_PlaylistL[8] != "": up = "9"
+		elif Custom_PlaylistL[9] != "": up = "10"
+		'''---------------------------'''
+	elif num == "8":
+		if Custom_PlaylistL[7] != "": up = "8"
+		elif Custom_PlaylistL[6] != "": up = "7"
+		elif Custom_PlaylistL[5] != "": up = "6"
+		elif Custom_PlaylistL[4] != "": up = "5"
+		elif Custom_PlaylistL[3] != "": up = "4"
+		elif Custom_PlaylistL[2] != "": up = "3"
+		elif Custom_PlaylistL[1] != "": up = "2"
+		elif Custom_PlaylistL[0] != "": up = "1"
+		'''---------------------------'''
+		if Custom_PlaylistL[9] != "": down = "10"
+		'''---------------------------'''
+	elif num == "10":
+		if Custom_PlaylistL[8] != "": up = "9"
+		elif Custom_PlaylistL[7] != "": up = "8"
+		elif Custom_PlaylistL[6] != "": up = "7"
+		elif Custom_PlaylistL[5] != "": up = "6"
+		elif Custom_PlaylistL[4] != "": up = "5"
+		elif Custom_PlaylistL[3] != "": up = "4"
+		elif Custom_PlaylistL[2] != "": up = "3"
+		elif Custom_PlaylistL[1] != "": up = "2"
+		elif Custom_PlaylistL[0] != "": up = "1"
+		'''---------------------------'''
+	
+	text = "name" + space2 + str(name) + space + "num" + space2 + str(num) + space + "down" + space2 + str(down) + space + "up" + space2 + str(up)
+	printlog(title="CheckMoveCustom", printpoint=printpoint, text=text, level=2, option="")
+		
+	return up, down
+
+def cleanfanartCustom(fanart):
+	printpoint = ""
+	fanart2 = fanart.replace("/","")
+	fanart2 = fanart2.replace("\\","")
+	addonFanart2 = addonFanart.replace("/","")
+	addonFanart2 = addonFanart2.replace("\\","")
+	if fanart2 == addonFanart2:
+		printpoint = printpoint + "7"
+		fanart = "" # or not os.path.exists(fanart)
+	
+	text = "fanart" + space2 + str(fanart) + newline + \
+	"fanart2" + space2 + str(fanart2) + newline + \
+	"addonFanart" + space2 + str(addonFanart) + newline + \
+	"addonFanart2" + space2 + str(addonFanart2)
+	printlog(title="cleanfanartCustom", printpoint=printpoint, text=text, level=2, option="")
+	return fanart
+	
+def MoveCustom(mode, name, url, iconimage, desc, num, viewtype, fanart):
+	'''23'''
+	printpoint = ""
+	'''---------------------------'''
+	if not "__" in num: printpoint = printpoint + "9"
+	else:
+		printpoint = printpoint + "1"
+		num = num.split("__")
+		num1 = num[0]
+		num2 = num[1]
+	try:
+		test = int(num1) + 1
+		test = int(num2) + 1
+	except Exception, TypeError: printpoint = printpoint + "9"
+	
+	fanart = cleanfanartCustom(fanart)
+	
+	if not "9" in printpoint:
+		printpoint = printpoint + "3"
+		Custom_Playlist_ID = "Custom_Playlist" + num1 + "_ID"
+		if Custom_Playlist_ID == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
+		Custom_Playlist_Name = "Custom_Playlist" + num1 + "_Name"
+		Custom_Playlist_Thumb = "Custom_Playlist" + num1 + "_Thumb"
+		Custom_Playlist_Description = "Custom_Playlist" + num1 + "_Description"
+		Custom_Playlist_Fanart = "Custom_Playlist" + num1 + "_Fanart"
+		'''---------------------------'''
+		Custom_Playlist_ID2 = "Custom_Playlist" + str(num2) + "_ID"
+		if Custom_Playlist_ID2 == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
+		Custom_Playlist_Name2 = "Custom_Playlist" + str(num2) + "_Name"
+		Custom_Playlist_Thumb2 = "Custom_Playlist" + str(num2) + "_Thumb"
+		Custom_Playlist_Description2 = "Custom_Playlist" + str(num2) + "_Description"
+		Custom_Playlist_Fanart2 = "Custom_Playlist" + str(num2) + "_Fanart"
+		'''---------------------------'''
+	
+	if not "9" in printpoint:
+		printpoint = printpoint + "7"
+		'''---------------------------'''
+		setsetting(Custom_Playlist_ID, getsetting(Custom_Playlist_ID2))
+		setsetting(Custom_Playlist_Name, getsetting(Custom_Playlist_Name2))
+		setsetting(Custom_Playlist_Thumb, getsetting(Custom_Playlist_Thumb2))
+		setsetting(Custom_Playlist_Description, getsetting(Custom_Playlist_Description2))
+		setsetting(Custom_Playlist_Fanart, getsetting(Custom_Playlist_Fanart2))
+		'''---------------------------'''
+		setsetting(Custom_Playlist_ID2, url)
+		setsetting(Custom_Playlist_Name2, name)
+		setsetting(Custom_Playlist_Thumb2, iconimage)
+		setsetting(Custom_Playlist_Description2, desc)
+		setsetting(Custom_Playlist_Fanart2, fanart)
+		'''---------------------------'''
+		update_view(url, num, viewtype)
+	
+	text = "url" + space2 + str(url) + space + "num" + space2 + str(num)
+	printlog(title="MoveCustom", printpoint=printpoint, text=text, level=2, option="")
+		
+def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
+	extra = "" ; printpoint = "" ; New_ID = ""
+	
+	Custom_Playlist_ID = "Custom_Playlist" + num + "_ID"
+	if Custom_Playlist_ID == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
+	Custom_Playlist_Name = "Custom_Playlist" + num + "_Name"
+	Custom_Playlist_Thumb = "Custom_Playlist" + num + "_Thumb"
+	Custom_Playlist_Description = "Custom_Playlist" + num + "_Description"
+	Custom_Playlist_Fanart = "Custom_Playlist" + num + "_Fanart"
+	
+	if printpoint != "9":
+		list = ['-> (Exit)']
+		list.append(addonString_servicefeatherence(38).encode('utf-8')) #Edit URL
+		list.append(addonString_servicefeatherence(41).encode('utf-8')) #Rename Button
+		if thumb == "": list.append(addonString_servicefeatherence(36).encode('utf-8')) #Add Thumb
+		else: list.append(addonString_servicefeatherence(37).encode('utf-8')) #Remove Thumb
+		if desc == "": list.append(addonString_servicefeatherence(32).encode('utf-8')) #Add Description
+		else: list.append(addonString_servicefeatherence(33).encode('utf-8')) #Edit Description
+		fanart = cleanfanartCustom(getsetting(Custom_Playlist_Fanart))
+		if fanart == "": list.append(addonString_servicefeatherence(34).encode('utf-8')) #Add Fanart
+		else: list.append(addonString_servicefeatherence(35).encode('utf-8')) #Remove Fanart
+		list.append(localize(13336)) #'Remove Button'
+
+		returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+			
+		if returned == -1: printpoint = printpoint + "9"
+		elif returned == 0: printpoint = printpoint + "8"
+		else: printpoint = printpoint + "7"
+	
+	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
+		if returned == 1: printpoint = printpoint + "A" #Edit URL
+		elif returned == 2: printpoint = printpoint + "B" #Rename
+		elif returned == 3: printpoint = printpoint + "C" #Add/Remove Thumb
+		elif returned == 4: printpoint = printpoint + "D" #Add/Edit Description
+		elif returned == 5: printpoint = printpoint + "E" #Add/Remove Fanart
+		elif returned == 6: printpoint = printpoint + "F" #Remove Button
+		'''---------------------------'''
+	if "A" in printpoint:
+		'''------------------------------
+		---Edit-URL----------------------
+		------------------------------'''
+		list = ['-> (Exit)']
+		list.append(addonString_servicefeatherence(42).encode('utf-8')) #View URL
+		list.append(addonString_servicefeatherence(40).encode('utf-8')) #Add URL
+		list.append(addonString_servicefeatherence(39).encode('utf-8')) #Remove URL
+		
+		returned2, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+			
+		if returned2 == -1: printpoint = printpoint + "9"
+		elif returned2 == 0: printpoint = printpoint + "8"
+		else: printpoint = printpoint + "7"
+		
+		if returned2 == 1: printpoint = printpoint + "1" #View URL
+		elif returned2 == 2: printpoint = printpoint + "2" #Add URL
+		elif returned2 == 3: printpoint = printpoint + "3" #Remove URL
+		
+		if "1" in printpoint:
+			'''------------------------------
+			---View-URL----------------------
+			------------------------------'''
+			message2 = "" ; i = 0
+			url2 = url.split(",")
+			for x in url2:
+				i += 1
+				x2 = ""
+				if "&youtube_ch=" in x:
+					x = x.replace("&youtube_ch=","")
+					x2 = space + "[" + "YouTube Channel" + "]"
+					'''---------------------------'''
+				elif "&youtube_pl=" in x:
+					x = x.replace("&youtube_pl=","")
+					x2 = space + "[" + "YouTube Playlist" + "]"
+					'''---------------------------'''
+				elif "&youtube_id=" in x:
+					x = x.replace("&youtube_id=","")
+					x2 = space + "[" + "YouTube Video" + "]"
+					'''---------------------------'''
+				if x2 != "": message2 = message2 + '[CR]' + str(i) + space2 + str(x) + str(x2)
+				'''---------------------------'''
+			header = addonString_servicefeatherence(42).encode('utf-8') + space2 + str(name)
+			if message2 != "": message = message2 + '[CR][CR]' + addonString_servicefeatherence(89).encode('utf-8')
+			else: message = addonString_servicefeatherence(90).encode('utf-8') #URL Error occured.
+			diaogtextviewer(header,message)
+			'''---------------------------'''
+			
+		elif "2" in printpoint:
+			'''------------------------------
+			---Add-URL-----------------------
+			------------------------------'''
+			New_ID = dialogkeyboard("", addonString_servicefeatherence(40).encode('utf-8'), 0, "5", "" , "")
+			setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, viewtype)
+			
+				
+		elif "3" in printpoint:
+			'''------------------------------
+			---Remove-URL--------------------
+			------------------------------'''
+			list = ['-> (Exit)']
+			url2 = url.split(',')
+			i = 0
+			for x in url2:
+				i += 1
+				list.append(x)
+
+			returned2, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+				
+			if returned2 == -1: printpoint = printpoint + "9"
+			elif returned2 == 0: printpoint = printpoint + "8"
+			else: printpoint = printpoint + "7"
+			
+			if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
+				
+				if i == 1:
+					'''Warning 1 URL found!'''
+					check = dialogyesno(localize(13336), addonString_servicefeatherence(92).encode('utf-8') + '[CR]' + addonString_servicefeatherence(91).encode('utf-8'))
+					if check == "ok":
+						'''Remove Button'''
+						printpoint = printpoint + "F"
+					else:
+						'''Skip'''
+				else:
+					if value + "," in url:
+						'''multi links'''
+						value2 = url.replace(value + ",","",1)
+					elif value in url:
+						'''single link'''
+						value2 = url.replace(value,"",1)
+					else: value2 = ""
+					if value2 == "": notification_common("17")
+					else:
+						setsetting(Custom_Playlist_ID, value2)
+						notification(addonString_servicefeatherence(44).encode('utf-8') + space + addonString_servicefeatherence(43).encode('utf-8'),str(name), "", 4000) #URL Removed Succesfully!
+						'''---------------------------'''
+				
+	elif "B" in printpoint:
+		'''------------------------------
+		---Rename-Button-----------------
+		------------------------------'''
+		New_Name = dialogkeyboard(name, addonString_servicefeatherence(41).encode('utf-8'), 0, "", Custom_Playlist_Name, "0")
+		if New_Name != "skip" and New_Name != name:
+			notification(addonString_servicefeatherence(45).encode('utf-8') + space + addonString_servicefeatherence(30).encode('utf-8'), str(name), "", 4000) #Button Name Update Succesfully!
+			'''---------------------------'''
+		
+	elif "C" in printpoint:
+		if thumb == "":
+			'''------------------------------
+			---Add-Thumb---------------------
+			------------------------------'''
+			New_Thumb = ""
+			returned = dialogyesno(str(name), addonString_servicefeatherence(31).encode('utf-8'), nolabel=localize(20017), yeslabel=localize(20015))
+			if returned == 'ok':
+				'''remote'''
+				x = localize(20015) #Remote thumb
+				value = dialogkeyboard("", x + space + "URL", 0, "1", "", "")
+				if value != "skip":
+					returned = urlcheck(value, ping=False)
+					if returned != "ok":
+						notification("URL Error", "Try again..", "", 2000)
+						header = "URL Error"
+						message = "Examine your URL for errors:" + newline + '[B]' + str(value) + '[/B]'
+						diaogtextviewer(header,message)
+					else:
+						New_Thumb = value
+			else:
+				'''local'''
+				x = localize(20017) #Local thumb
+				xbmc.executebuiltin('Skin.SetString('+addonID+'_Temp,)')
+				xbmc.executebuiltin('Skin.SetImage('+addonID+'_Temp,)') ; xbmc.sleep(4000)
+				dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
+				while dialogfilebrowserW and not xbmc.abortRequested:
+					xbmc.sleep(500)
+					dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
+					xbmc.sleep(500)
+				xbmc.sleep(500)
+				New_Thumb = xbmc.getInfoLabel('Skin.String('+addonID+'_Temp)')
+			
+			if New_Thumb != "":
+				setsetting(Custom_Playlist_Thumb, New_Thumb)
+				notification(str(x) + space + addonString_servicefeatherence(30).encode('utf-8'), str(name), "", 4000) #Thumb* Update Succesfully!
+				'''---------------------------'''
+		else:
+			'''------------------------------
+			---Remove-Thumb------------------
+			------------------------------'''
+			if os.path.exists(thumb): x = localize(20017) #Local thumb
+			else: x = localize(20015)
+			setsetting(Custom_Playlist_Thumb, "")
+			notification(str(x) + space + addonString_servicefeatherence(43).encode('utf-8'), str(name), "", 2000) #Thumb* Removed Succesfully!
+			'''---------------------------'''
+			
+	elif "D" in printpoint:
+		'''------------------------------
+		---Add-Description---------------
+		------------------------------'''
+		returned, value = getRandom("0", min=0, max=100, percent=50)
+		if int(value) <= 10: notification("Tip New Line:", "[CR]", "", 4000)
+		elif int(value) <= 20: notification("Tip Bold:", "[B]text[/B]", "", 4000)
+		elif int(value) <= 30: notification("Tip Color:", "[COLOR=X]text[/COLOR]", "", 4000)
+		elif int(value) <= 40: notification("Tip Italic:", "[I]text[/I]", "", 4000)
+		
+		if Custom_Playlist_Description == "": extra1 = addonString_servicefeatherence(32).encode('utf-8') #Add Description
+		else: extra1 = addonString_servicefeatherence(33).encode('utf-8') #Edit Description
+		
+		returned = dialogkeyboard(desc, extra1, 0, "", Custom_Playlist_Description, "0")
+		if returned != "skip":
+			if returned == "": extra2 = addonString_servicefeatherence(43).encode('utf-8') #Removed Succesfully!
+			else: extra2 = addonString_servicefeatherence(30).encode('utf-8') #Update Succesfully!
+			if returned != desc: notification(localize(21821) + space + extra2, str(name), "", 4000) #Description Update/Removed Succesfully!
+			'''---------------------------'''
+	
+	elif "E" in printpoint:
+		
+		if fanart == "":
+			'''------------------------------
+			---Add-Fanart----------------
+			------------------------------'''
+			New_Fanart = ""
+			returned = dialogyesno(str(name), addonString_servicefeatherence(31).encode('utf-8'), nolabel=localize(20438), yeslabel=localize(20441))
+			if returned == 'ok':
+				'''remote'''
+				x = localize(20441) #Remote fanart
+				value = dialogkeyboard("", localize(20441), 0, "1", "", "")
+				if value != "skip":
+					returned2 = urlcheck(value, ping=False)
+					if returned2 != "ok":
+						notification("URL Error", "Try again..", "", 2000)
+						header = "URL Error"
+						message = "Examine your URL for errors:" + newline + '[B]' + str(value) + '[/B]'
+						diaogtextviewer(header,message)
+					else:
+						New_Fanart = value
+			else:
+				'''local'''
+				x = localize(20438) #Local fanart
+				xbmc.executebuiltin('Skin.SetString('+addonID+'_Temp,)')
+				xbmc.executebuiltin('Skin.SetImage('+addonID+'_Temp,)') ; xbmc.sleep(4000)
+				dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
+				while dialogfilebrowserW and not xbmc.abortRequested:
+					xbmc.sleep(500)
+					dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
+					xbmc.sleep(500)
+				xbmc.sleep(500)
+				New_Fanart = xbmc.getInfoLabel('Skin.String('+addonID+'_Temp)')
+			
+			if New_Fanart != "":
+				setsetting(Custom_Playlist_Fanart, New_Fanart)
+				 
+				notification(str(x) + space + addonString_servicefeatherence(30).encode('utf-8'), str(New_Fanart), "", 2000) #Fanart* Update Succesfully!
+				xbmc.sleep(2000)
+				if Fanart_Enable != "true": notification(addonString_servicefeatherence(28).encode('utf-8') + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Allow Backgrounds Disabled, ->Add-on settings
+				elif Fanart_EnableCustom != "true": notification(localize(21389) + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Enable custom background Disabled, ->Add-on settings
+				'''---------------------------'''
+		else:
+			'''------------------------------
+			---Remove-Fanart------------
+			------------------------------'''
+			setsetting(Custom_Playlist_Fanart, "")
+			notification(localize(33068) + space + localize(19179) + "!", str(name), "", 4000) #Background Deleted!
+			'''---------------------------'''
+			
+	if "F" in printpoint:
+		if Custom_Playlist_Description != "":
+			'''------------------------------
+			---Remove-Button-----------------
+			------------------------------'''
+			returned = dialogyesno(localize(13336) + '[CR]' + str(name),localize(19194)) #Remove Button, Continue?
+			if returned == "ok":
+				setsetting(Custom_Playlist_ID, "")
+				setsetting(Custom_Playlist_Name, "")
+				setsetting(Custom_Playlist_Thumb, "")
+				setsetting(Custom_Playlist_Description, "")
+				setsetting(Custom_Playlist_Fanart, "")
+				'''---------------------------'''
+				if desc != "": extra1 = localize(21821) + space2 + str(desc)
+				else: extra1 = ""
+				dialogok(localize(50) + space + addonString_servicefeatherence(43).encode('utf-8') + '[CR]' + str(name), "ID" + space2 + str(url), "", extra1)
+				'''---------------------------'''
+				
+	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
+		update_view(url, num, viewtype)
+		#xbmcplugin.endOfDirectory(int(sys.argv[1]))
+		
+	text = "name" + space2 + str(name) + newline + \
+	"Custom_Playlist_ID" + space2 + str(Custom_Playlist_ID) + newline + \
+	"Custom_Playlist_Name" + space2 + str(Custom_Playlist_Name) + newline + \
+	"Custom_Playlist_Thumb" + space2 + str(Custom_Playlist_Thumb) + newline + \
+	"thumb" + space2 + str(thumb) + newline + \
+	"Custom_Playlist_Description" + space2 + str(Custom_Playlist_Description) + newline + \
+	"Custom_Playlist_Fanart" + space2 + str(Custom_Playlist_Fanart) + newline + \
+	"fanart" + space2 + str(fanart) + newline + \
+	"New_ID" + space2 + str(New_ID) + newline + \
+	"url" + space2 + str(url) + newline
+	'''---------------------------'''
+	printlog(title="ManageCustom", printpoint=printpoint, text=text, level=2, option="")
+	

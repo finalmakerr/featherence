@@ -279,9 +279,6 @@ userdata_path = os.path.join(xbmc.translatePath("special://userdata/").decode("u
 thumbnails_path = os.path.join(xbmc.translatePath("special://thumbnails").decode("utf-8"))
 database_path = os.path.join(xbmc.translatePath("special://database").decode("utf-8"))	
 
-
-rom_path = os.path.join('storage','emulators','retroarch','rom','')
-emulators_path = os.path.join('storage','emulators','')
 config_path = os.path.join('/storage/','.config','')
 flash_path = os.path.join('/flash', '')
 
@@ -304,7 +301,7 @@ featherenceserviceicons_path = os.path.join(featherenceservice_path, 'resources'
 featherenceservicecopy_path = os.path.join(featherenceservice_path,'specials','scripts','copy','')
 packagesDir = os.path.join(addonsDir,'packages') #TEMP
 '''---------------------------'''
-if admin and not admin2 and 1 + 1 == 3:
+if admin == 'true' and 1 + 1 == 3:
 	print printfirst + "variables paths list" + space2 + \
 	newline + "skin_path" + space2 + skin_path + \
 	newline + "home_path" + space2 + home_path + \
@@ -508,6 +505,7 @@ ACTION_SELECT_ITEM = 7
 ------------------------------'''
 windowhomeproperty_moviescount = xbmc.getInfoLabel('Window(Home).Property(Movies.Count)')
 windowhomeproperty_tvshowscount = xbmc.getInfoLabel('Window(Home).Property(TVShows.Count)')
+scriptfeatherenceservice_downloading = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
 '''---------------------------'''
 
 

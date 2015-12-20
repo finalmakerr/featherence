@@ -275,33 +275,34 @@ def localize(value, s=[], addon=None):
 	return returned
 	
 def DownloadFile(url, filename, downloadpath, extractpath, silent=False):
-	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = ""
+	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = "" ; returned = ""
 	downloadpath2 = os.path.join(downloadpath, filename)
 	
-	from commondownloader import *
-	if servicefeatherence_General_DownloadON == "true":
+	if xbmc.getCondVisibility('IsEmpty(Network.GatewayAddress)') or xbmc.getCondVisibility('IsEmpty(Network.IPAddress)'):
+		printpoint = printpoint + "9"
+		notification_common('4')
+	elif xbmc.getCondVisibility('!StringCompare(System.InternetState,$LOCALIZE[15207])') and xbmc.getCondVisibility('!IsEmpty(System.InternetState)'):
+		printpoint = printpoint + "9"
+		notification_common("5")
+	elif scriptfeatherenceservice_downloading != "":
 		returned = "skip"
 		notification_common("23")
+		xbmc.executebuiltin('AlarmClock(scriptfeatherenceservice_downloading,ClearProperty(script.featherence.service_downloading,home),2,silent)')
 	else:
-		try: setsetting_custom1('script.featherence.service','General_DownloadON',"true")
-		except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
+		from commondownloader import *
+		setProperty('script.featherence.service_downloading', 'true', type="home")
 		try: returned = doDownload(url, downloadpath2, filename, "", "", "", silent=silent)
 		except exception, TypeError:
 			extra = extra + newline + "TypeError" + space2 + str(TypeError)
 			returned = str(TypeError)
-		try: setsetting_custom1('script.featherence.service','General_DownloadON',"false") ; xbmc.sleep(40)
-		except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
-	
-	if returned == "ok":
-		#dialogok("download done","","","")
-		#urllib.urlretrieve(url, downloadpath2) #, reporthook=dlProgress
-		ExtractAll(downloadpath2, extractpath)
-	
-	try:
-		if downloadpath2 != downloadpath: os.remove(downloadpath2)
-	except:
-		pass
-	
+		setProperty('script.featherence.service_downloading', '', type="home")
+		
+		if returned == "ok":
+			ExtractAll(downloadpath2, extractpath)
+		try:
+			if downloadpath2 != downloadpath: os.remove(downloadpath2)
+		except:
+			pass
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
@@ -992,7 +993,7 @@ def dialogkeyboard(input, heading, option, custom, set1, addon):
 		elif custom == '5':
 			'''Custom Playlist'''
 			printpoint = printpoint + "5"
-			if ("&list=PL" in set1v or "watch?v=" in set1v or "/user/" in set1v or "/channel/" in set1v):
+			if ("playlist?list=" in set1v or "watch?v=" in set1v or "/user/" in set1v or "/channel/" in set1v):
 				from shared_modules3 import urlcheck
 				check = urlcheck(set1v, ping=False)
 				if check == "ok":

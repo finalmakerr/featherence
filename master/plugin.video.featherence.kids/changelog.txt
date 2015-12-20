@@ -3,6 +3,14 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence Kids v0.1.5 (xx-12-15)
+------------------------
+- Update TV Mode shuffle function.
+- Update TV Mode accuracy.
+- *Extra attempt to play another video if the first has failed.
+*Failing is an issue of the Youtube plugin.
+
+------------------------
 Featherence Kids v0.1.2-4 (17-12-15)
 ------------------------
 - Minor bugs fix.

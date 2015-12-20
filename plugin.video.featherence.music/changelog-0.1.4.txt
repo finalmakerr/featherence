@@ -5,6 +5,17 @@ WIP (WORK IN PROGRESS)--
 - Add foreign singers, karaoke, liveshows.
 
 ------------------------
+Featherence Music v0.1.4 (20-12-15)
+------------------------
+- Update TV Mode shuffle function.
+- Update TV Mode accuracy.
+- Minor bugs fix.
+- My Music bug fix.
+- *Extra attempt to play another video if the first has failed.
+- *Fix bug in Amir Elgazar playlists.
+*Failing is an issue of the Youtube plugin.
+
+------------------------
 Featherence Music v0.1.2 (17-12-15)
 ------------------------
 - Major bugs fix.

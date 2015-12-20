@@ -330,9 +330,22 @@ msgctxt "#110
 msgid "Art"
 msgstr "אומנות"
 
+
 msgctxt "#111
-msgid ""
-msgstr ""
+msgid "National Geographic"
+msgstr "נשיונאל ג'אוגראפיק"
+
+msgctxt "#112
+msgid "Discovery"
+msgstr "ערוץ דיסקאברי"
+
+msgctxt "#113
+msgid "Nat Geo Wild"
+msgstr "נשיונאל ג'אוגראפיק ווילד"
+
+msgctxt "#114
+msgid "Animal Planet"
+msgstr "אנימל פלאנט"
 
 msgctxt "#1000
 msgid ""
@@ -341,6 +354,8 @@ msgstr ""
 msgctxt "#1010
 msgid ""
 msgstr ""
+
+
 
 
 msgctxt "#10101

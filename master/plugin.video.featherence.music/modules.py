@@ -150,7 +150,7 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_pl=PLjUpwHk7giaiaSeSzZ4Alqj8cGQB6rPEk')
 	list.append('&youtube_pl=PLjUpwHk7giaj910tIRA-XTqx6HJA7tPUi') 
-	list.append('&youtube_pl=PL46129841F86EDCCB4')
+	#list.append('&youtube_pl=PL46129841F86EDCCB4')
 	list.append('&youtube_pl=FLw_JTl5vBNd_ILZsGOecXmQ')
 	list.append('&youtube_pl=PLB97405B96D068FC6')
 	list.append('&youtube_pl=PL8B8D8008EC2AEC94')
@@ -1202,11 +1202,13 @@ def CATEGORIES11101(name, iconimage, desc, fanart):
 	addDir(addonString(11103).encode('utf-8'),list,17,"http://static1.1.sqspcdn.com/static/f/610086/15180915/1321583897117/Rihanna.jpg?token=kZt1lYEul%2FfTahdORTKehFd28NI%3D/site1/20091127/0023ae9885da0c7990e10d.jpg&pw=200",addonString(111030).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
 	
 	'''Taylor Swift'''
+	list = []
 	list.append('&youtube_se='+commonsearch)
 	list.append('&youtube_ch=TaylorSwiftVEVO')
 	addDir(addonString(11104).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/he/5/58/Taylor_Swift_-_Taylor_Swift_Album_Cover.png",addonString(111040).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
 	
 	'''Usher'''
+	list = []
 	list.append('&youtube_se='+commonsearch)
 	list.append('&youtube_ch=UsherVEVO')
 	addDir(addonString(11115).encode('utf-8'),list,17,"http://www.usherdaily.com/wp-content/uploads/2015/02/usher-2014-cover-bb36-01-650.jpg",addonString(111150).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
