@@ -392,9 +392,6 @@ def CATEGORIES104(admin):
 	'''בלי סודות'''#10
 	addDir('בלי סודות',['&sdarot=season_id=1&series_id=1143&series_name=%d7%91%d7%9c%d7%99%20%d7%a1%d7%95%d7%93%d7%95%d7%aa&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1143%2fwithout-secrets-%d7%91%d7%9c%d7%99-%d7%a1%d7%95%d7%93%d7%95%d7%aa'],17,'http://www.sdarot.pm/media/series/1143.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
 	
-	'''בן 10'''#10
-	addDir('בן 10',['&sdarot=series_id=1614&series_name=%d7%91%d7%9f%2010%20%d7%90%d7%95%d7%9e%d7%a0%d7%99%d7%91%d7%a8%d7%a1%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1614%2fben-10-omniverse-%d7%91%d7%9f-10-%d7%90%d7%95%d7%9e%d7%a0%d7%99%d7%91%d7%a8%d7%a1-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/1614.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
-	
 	'''בנות הים פיצ'י פיצ'י פיץ'''#10
 	addDir("בנות הים פיצ'י פיצ'י פיץ",['&sdarot=series_id=550&series_name=%d7%91%d7%a0%d7%95%d7%aa%20%d7%94%d7%99%d7%9d%20%d7%a4%d7%99%d7%a6%27%d7%99%20%d7%a4%d7%99%d7%a6%27%d7%99%20%d7%a4%d7%99%d7%a5%27%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f550%2fmermaid-melody-pichi-pichi-pitch-%d7%91%d7%a0%d7%95%d7%aa-%d7%94%d7%99%d7%9d-%d7%a4%d7%99%d7%a6-%d7%99-%d7%a4%d7%99%d7%a6-%d7%99-%d7%a4%d7%99%d7%a5-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94'],17,'http://www.sdarot.pm/media/series/550.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
 	
@@ -453,6 +450,10 @@ def CATEGORIES104(admin):
 	
 	'''הלב'''#10
 	addDir('הלב',['&sdarot=season_id=1&series_id=745&series_name=%d7%94%d7%9c%d7%91%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f745%2fmarco-%d7%94%d7%9c%d7%91-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/745.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	'''הלו קיטי'''#10
+	list = []
+	list.append('&sdarot=season_id=1&series_id=1684&series_name=%d7%94%d7%a8%d7%a4%d7%aa%d7%a7%d7%90%d7%95%d7%aa%20%d7%94%d7%9c%d7%95%20%d7%a7%d7%99%d7%98%d7%99%20%d7%95%d7%97%d7%91%d7%a8%d7%99%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1684%2fhello-kitty-and-friends-%d7%94%d7%a8%d7%a4%d7%aa%d7%a7%d7%90%d7%95%d7%aa-%d7%94%d7%9c%d7%95-%d7%a7%d7%99%d7%98%d7%99-%d7%95%d7%97%d7%91%d7%a8%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('הלו קיטי',list,17,'http://www.sdarot.pm/media/series/1684.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''המומינים'''#10
 	addDir('המומינים',['&sdarot=season_id=1&series_id=366&series_name=%d7%94%d7%9e%d7%95%d7%9e%d7%99%d7%a0%d7%99%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f366%2fthe-moomins-%d7%94%d7%9e%d7%95%d7%9e%d7%99%d7%a0%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/366.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
@@ -495,13 +496,33 @@ def CATEGORIES104(admin):
 	'''הפנתר הורוד'''
 	if General_TrustedOnly == "true" or admin: addDir('הפנתר הורוד',['&sdarot=series_id=1347&series_name=%d7%94%d7%a4%d7%a0%d7%aa%d7%a8%20%d7%94%d7%95%d7%95%d7%a8%d7%95%d7%93%20%2a%d7%90%d7%99%d7%9c%d7%9d%2a&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1347%2fthe-pink-panther-cartoons-%d7%94%d7%a4%d7%a0%d7%aa%d7%a8-%d7%94%d7%95%d7%95%d7%a8%d7%95%d7%93-%d7%90%d7%99%d7%9c%d7%9d', '&youtube_ch=PinkPanthersShow'],6,'http://www.sdarot.pm/media/series/1347.jpg',addonString(113).encode('utf-8'),'1',50, getAddonFanart(background))
 	
+	'''הפינגווינים ממדגסקר'''#10
+	list = []
+	list.append('&sdarot=series_id=416&series_name=%d7%94%d7%a4%d7%99%d7%a0%d7%92%d7%95%d7%95%d7%99%d7%a0%d7%99%d7%9d%20%d7%9e%d7%9e%d7%93%d7%92%d7%a1%d7%a7%d7%a8%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f416%2fthe-penguins-of-madagascar-%d7%94%d7%a4%d7%99%d7%a0%d7%92%d7%95%d7%95%d7%99%d7%a0%d7%99%d7%9d-%d7%9e%d7%9e%d7%93%d7%92%d7%a1%d7%a7%d7%a8-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
+	addDir('הפינגווינים ממדגסקר',list,17,'http://www.sdarot.pm/media/series/416.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
+	
+	'''השוטר גרזן'''#10
+	list = []
+	list.append('&sdarot=series_id=589&series_name=%d7%94%d7%a9%d7%95%d7%98%d7%a8%20%d7%92%d7%a8%d7%96%d7%9f%20%2a%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f589%2faxe-cop-%d7%94%d7%a9%d7%95%d7%98%d7%a8-%d7%92%d7%a8%d7%96%d7%9f-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
+	addDir('השוטר גרזן',list,17,'http://www.sdarot.pm/media/series/589.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
+	
 	'''וולברין והאקס מן'''
 	list =[]
 	list.append('&youtube_pl=PLR7DTcU2p0QhGsv3LuA3GnCJWjoPBCafl')
 	list.append('&sdarot=season_id=1&series_id=823&series_name=%d7%95%d7%95%d7%9c%d7%91%d7%a8%d7%99%d7%9f%20%d7%95%d7%94%d7%90%d7%a7%d7%a1-%d7%9e%d7%9f%20%2a%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f823%2fwolverine-and-the-x-men-%d7%95%d7%95%d7%9c%d7%91%d7%a8%d7%99%d7%9f-%d7%95%d7%94%d7%90%d7%a7%d7%a1-%d7%9e%d7%9f-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
 	addDir('וולברין והאקס מן',list,17,'http://i.ytimg.com/vi/_C9qXB0iPUY/hqdefault.jpg','שנה אחרי פיצוץ מסתורי בבית הספר למוטנטים לוגן מתעמת שוב מול מוס שמכניס לכלא משפחה שהחביאה את לוגן. האנק מנסה לפענח את הפיצוץ בביה"ס ויחד עם לוגן מתכונן למלחמה הקרובה. וולברין ואקס מן - וולברין מאחד את צוות אקס מן- צוות מוטנטים רודפי השלום. הצוות מתמודד גם מול אויבים מוטנטים בהנהגתו של מגנטו, וגם מול בני אדם, בפיקודו של הסנאטור קלי, ומנסה למנוע מלחמה בין בני האדם למוטנטים שתביא להרס עולמי/','1',"", getAddonFanart(background))
+	
+	'''חבורת הצב המעופף'''#10
+	list = []
+	list.append('&sdarot=series_id=589&series_name=%d7%94%d7%a9%d7%95%d7%98%d7%a8%20%d7%92%d7%a8%d7%96%d7%9f%20%2a%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f589%2faxe-cop-%d7%94%d7%a9%d7%95%d7%98%d7%a8-%d7%92%d7%a8%d7%96%d7%9f-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
+	addDir('חבורת הצב המעופף',list,17,'http://www.sdarot.pm/media/series/1050.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
 	'''חברים בחווה'''#10
 	addDir('חברים בחווה',['&sdarot=season_id=1&series_id=646&series_name=%d7%97%d7%91%d7%a8%d7%99%d7%9d%20%d7%91%d7%97%d7%95%d7%95%d7%94%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f646%2fback-at-the-barnyard-%d7%97%d7%91%d7%a8%d7%99%d7%9d-%d7%91%d7%97%d7%95%d7%95%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94'],17,'http://www.sdarot.pm/media/series/646.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))	
+		
+	'''חגי ישראל עם רינת ומימי'''#10
+	list = []
+	list.append('&sdarot=season_id=1&series_id=1263&series_name=%d7%97%d7%92%d7%99%20%d7%99%d7%a9%d7%a8%d7%90%d7%9c%20%d7%a2%d7%9d%20%d7%a8%d7%99%d7%a0%d7%aa%20%d7%95%d7%9e%d7%99%d7%9e%d7%99&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1263%2fhagi-israel-em-rinat-vemimi-%d7%97%d7%92%d7%99-%d7%99%d7%a9%d7%a8%d7%90%d7%9c-%d7%a2%d7%9d-%d7%a8%d7%99%d7%a0%d7%aa-%d7%95%d7%9e%d7%99%d7%9e%d7%99')
+	addDir('חגי ישראל עם רינת ומימי',list,17,'http://www.sdarot.pm/media/series/1263.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''חוש חש הבלש'''
 	list = []
@@ -513,8 +534,38 @@ def CATEGORIES104(admin):
 	list.append('&youtube_id=uj9miIc0Ow4')
 	addDir("חוש חש הבלש",list,17,'http://www.sdarot.pm/media/series/1397.jpg','','1',50, getAddonFanart(background, custom="http://www.sdarot.pm/media/series/1397.jpg"))
 	
+	'''חיות בקצר'''#10
+	list = []
+	list.append('&sdarot=series_id=1565&series_name=%d7%97%d7%99%d7%95%d7%aa%20%d7%91%d7%a7%d7%a6%d7%a8%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1565%2falmost-naked-animals-%d7%97%d7%99%d7%95%d7%aa-%d7%91%d7%a7%d7%a6%d7%a8-%d7%9e%d7%93%d7%95%d7%91%d7%91')	
+	addDir('חיות בקצר',list,17,'http://www.sdarot.pm/media/series/1565.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
+	
+	'''חיים בביוב'''#10
+	list = []
+	list.append('&sdarot=series_id=1605&series_name=%d7%97%d7%99%d7%99%d7%9d%20%d7%91%d7%91%d7%99%d7%95%d7%91%20-%20%2a%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1605%2flarva-%d7%97%d7%99%d7%99%d7%9d-%d7%91%d7%91%d7%99%d7%95%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
+	addDir('חיים בביוב',list,17,'http://www.sdarot.pm/media/series/1605.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
+	
+	'''חנונים ומפלצות'''#10
+	list = []
+	list.append('&sdarot=season_id=1&series_id=1664&series_name=%d7%97%d7%a0%d7%95%d7%a0%d7%99%d7%9d%20%d7%95%d7%9e%d7%a4%d7%9c%d7%a6%d7%95%d7%aa%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1664%2fnerds-and-monsters-%d7%97%d7%a0%d7%95%d7%a0%d7%99%d7%9d-%d7%95%d7%9e%d7%a4%d7%9c%d7%a6%d7%95%d7%aa-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
+	addDir('חנונים ומפלצות',list,17,'http://www.sdarot.pm/media/series/1664.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
+	
+	'''חתולי הרעם'''#10
+	list = []
+	list.append('&sdarot=season_id=1&series_id=1786&series_name=%d7%97%d7%aa%d7%95%d7%9c%d7%99%20%d7%94%d7%a8%d7%a2%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1786%2fthundercats-%d7%97%d7%aa%d7%95%d7%9c%d7%99-%d7%94%d7%a8%d7%a2%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('חתולי הרעם',list,17,'http://www.sdarot.pm/media/series/1786.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
+	
+	'''טאק וכוח הג'וג'ו'''#10
+	list = []
+	list.append('&sdarot=series_id=1790&series_name=%d7%98%d7%90%d7%a7%20%d7%95%d7%9b%d7%95%d7%97%20%d7%94%d7%92%27%d7%95%d7%92%27%d7%95%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1790%2ftak-and-the-power-of-juju-%d7%98%d7%90%d7%a7-%d7%95%d7%9b%d7%95%d7%97-%d7%94%d7%92-%d7%95%d7%92-%d7%95-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir("טאק וכוח הג'וג'ו",list,17,'http://www.sdarot.pm/media/series/1790.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
+	
 	'''טוב טוב הגמד'''#10
 	addDir('טוב טוב הגמד',['&sdarot=season_id=1&series_id=1581&series_name=%d7%98%d7%95%d7%91%20%d7%98%d7%95%d7%91%20%d7%94%d7%92%d7%9e%d7%93%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1581%2fthe-world-of-david-the-gnome-%d7%98%d7%95%d7%91-%d7%98%d7%95%d7%91-%d7%94%d7%92%d7%9e%d7%93-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/1581.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''טוטלי ספייס'''#10
+	list = []
+	list.append('&sdarot=series_id=462&series_name=%d7%98%d7%95%d7%98%d7%9c%d7%99%20%d7%a1%d7%a4%d7%99%d7%99%d7%a1%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f462%2ftotally-spies-%d7%98%d7%95%d7%98%d7%9c%d7%99-%d7%a1%d7%a4%d7%99%d7%99%d7%a1-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('טוטלי ספייס',list,17,'http://www.sdarot.pm/media/series/462.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''טום'''#10
 	addDir('טום',['&sdarot=series_id=1784&series_name=%d7%98%d7%95%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1784%2ftom-%d7%98%d7%95%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94'],17,'http://www.sdarot.pm/media/series/1784.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
@@ -524,17 +575,51 @@ def CATEGORIES104(admin):
 	list.append('&youtube_pl=PLN0EJVTzRDL-jbMDnITZcYO48kE1Hv3mc')
 	list.append('&youtube_pl=PLs3DueTtwGGppFDT2xv9zVBf4mz6RuOLj')
 	list.append('&youtube_pl=PL6hnqKp_bygo_2MFE6j3WWLitYXwhHGx3')
-	list.append('&youtube_')
 	addDir("טום וג'רי",list,17,'https://upload.wikimedia.org/wikipedia/he/thumb/2/23/Tomjerrylogo40s.jpg/280px-Tomjerrylogo40s.jpg',"טום וג'רי (באנגלית: Tom and Jerry)‏ היא שמה של סדרת סרטי אנימציה קצרים מיוחדים ומצחיקים שנוצרו על ידי ויליאם האנה וג'וזף ברברה עבור MGM בשנות הארבעים, שנות החמישים ושנות השישים.",'1',50, getAddonFanart(background))
+	
+	'''טום סויר'''
+	list =[] #10
+	list.append('&sdarot=series_id=1438&series_name=%d7%98%d7%95%d7%9d%20%d7%a1%d7%95%d7%99%d7%99%d7%a8%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1438%2ftom-sawyer-%d7%98%d7%95%d7%9d-%d7%a1%d7%95%d7%99%d7%99%d7%a8-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir("טום סויר",list,17,'http://www.sdarot.pm/media/series/1438.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''טורבו צוות פגז'''#10
+	list = []
+	list.append('&sdarot=series_id=1615&series_name=%d7%98%d7%95%d7%a8%d7%91%d7%95%20%d7%a6%d7%95%d7%95%d7%aa%20%d7%a4%d7%92%d7%96%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1615%2fturbo-fast-%d7%98%d7%95%d7%a8%d7%91%d7%95-%d7%a6%d7%95%d7%95%d7%aa-%d7%a4%d7%92%d7%96-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('טורבו צוות פגז',list,17,'http://www.sdarot.pm/media/series/1615.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
+	
+	'''טיטוף'''#10
+	list = []
+	list.append('&sdarot=series_id=1615&series_name=%d7%98%d7%95%d7%a8%d7%91%d7%95%20%d7%a6%d7%95%d7%95%d7%aa%20%d7%a4%d7%92%d7%96%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1615%2fturbo-fast-%d7%98%d7%95%d7%a8%d7%91%d7%95-%d7%a6%d7%95%d7%95%d7%aa-%d7%a4%d7%92%d7%96-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('טיטוף',list,17,'http://www.sdarot.pm/media/series/661.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''טימותי הולך לבית הספר'''#10
 	addDir('טימותי הולך לבית הספר',['&sdarot=series_id=1736&series_name=%d7%98%d7%99%d7%9e%d7%95%d7%aa%d7%99%20%d7%94%d7%95%d7%9c%d7%9a%20%d7%9c%d7%91%d7%99%d7%aa%20%d7%94%d7%a1%d7%a4%d7%a8%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1736%2ftimothy-goes-to-school-%d7%98%d7%99%d7%9e%d7%95%d7%aa%d7%99-%d7%94%d7%95%d7%9c%d7%9a-%d7%9c%d7%91%d7%99%d7%aa-%d7%94%d7%a1%d7%a4%d7%a8-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/1736.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''יוגי-הו'''#10
+	list = []
+	list.append('&sdarot=series_id=714&series_name=%d7%99%d7%95%d7%92%d7%99-%d7%94%d7%95%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f714%2fy%c3%bbgi%c3%b4-%d7%99%d7%95%d7%92%d7%99-%d7%94%d7%95-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('יוגי-הו',list,17,'http://www.sdarot.pm/media/series/714.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
+	
+	'''יש לנחש עם חן'''#10
+	list = []
+	list.append('&sdarot=season_id=1&series_id=883&series_name=%d7%99%d7%a9%20%d7%9c%d7%a0%d7%97%d7%a9%20%d7%a2%d7%9d%20%d7%97%d7%9f%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f883%2fyesh-lenahesh-%d7%99%d7%a9-%d7%9c%d7%a0%d7%97%d7%a9-%d7%a2%d7%9d-%d7%97%d7%9f-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('יש לנחש עם חן',list,17,'http://www.sdarot.pm/media/series/883.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
+	
+	'''כלב חשאי'''#10
+	list = []
+	list.append('&sdarot=series_id=778&series_name=%d7%9b%d7%9c%d7%91%20%d7%97%d7%a9%d7%90%d7%99%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f778%2ftuff-puppy-%d7%9b%d7%9c%d7%91-%d7%97%d7%a9%d7%90%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
+	addDir('כלב חשאי',list,17,'http://www.sdarot.pm/media/series/778.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
+	
+	'''לאקי לוק'''#10
+	list = []
+	list.append('&sdarot=season_id=1&series_id=1446&series_name=%d7%9c%d7%90%d7%a7%d7%99%20%d7%9c%d7%95%d7%a7%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1446%2flucky-luke-%d7%9c%d7%90%d7%a7%d7%99-%d7%9c%d7%95%d7%a7-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+	addDir('לאקי לוק',list,17,'http://www.sdarot.pm/media/series/1446.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''מאיה ומיגל'''#10
 	addDir('מאיה ומיגל',['&sdarot=series_id=1264&series_name=%d7%9e%d7%90%d7%99%d7%94%20%d7%95%d7%9e%d7%99%d7%92%d7%9c%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1264%2fmaya-miguel-%d7%9e%d7%90%d7%99%d7%94-%d7%95%d7%9e%d7%99%d7%92%d7%9c-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94'],17,'http://www.sdarot.pm/media/series/1264.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''מגלים עם דורה'''#10
-	addDir('מגלים עם דורה',[''],17,'http://www.sdarot.pm/media/series/855.jpg&sdarot=season_id=1&series_id=855&series_name=%d7%9e%d7%92%d7%9c%d7%99%d7%9d%20%d7%a2%d7%9d%20%d7%93%d7%95%d7%a8%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f855%2fdora-the-explorer-%d7%9e%d7%92%d7%9c%d7%99%d7%9d-%d7%a2%d7%9d-%d7%93%d7%95%d7%a8%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
+	addDir('מגלים עם דורה',['&sdarot=series_id=855&series_name=%d7%9e%d7%92%d7%9c%d7%99%d7%9d%20%d7%a2%d7%9d%20%d7%93%d7%95%d7%a8%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f855%2fdora-the-explorer-%d7%9e%d7%92%d7%9c%d7%99%d7%9d-%d7%a2%d7%9d-%d7%93%d7%95%d7%a8%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91'],17,'http://www.sdarot.pm/media/series/855.jpg',addonString(1099000).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''מולי וצומי'''#10
 	addDir(addonString(10742).encode('utf-8'),['&sdarot=series_id=2077&series_name=%d7%9e%d7%95%d7%9c%d7%99%20%d7%95%d7%a6%d7%95%d7%9e%d7%99&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f2077%2fmuli-and-tzumi-%d7%9e%d7%95%d7%9c%d7%99-%d7%95%d7%a6%d7%95%d7%9e%d7%99'],17,'http://www.yap.co.il/prdPics/4309_desc3_2_1_1390393153.jpg',addonString(107420).encode('utf-8'),'1',50, getAddonFanart(background))
