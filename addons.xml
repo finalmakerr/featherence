@@ -27,7 +27,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.extreme" version="0.1.0" name="Featherence Extreme" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.extreme" version="0.1.1" name="Featherence Extreme" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.youtube" version="5.1.0"/>
@@ -171,11 +171,12 @@
 - Choose any color for almost anything! (WIP)
 - Full save/load skin image.
 - Varied buttons and views effects.
-- Enchanced widget.
+- Enchanced widget and network status.
 - Full genres support.
 - Some views have an additional special features.
 - Dynamic weather and widgets fanart (optional).
 - Interactive video window &amp; OSD while navaigating.
+- Startup music and/or video (optional).
 - Smart subtitle module display current and history choosen subtitles, smart search and auto subs hosts finder.</description>
     <disclaimer></disclaimer>
 	<email>featherence@groups.facebook.com</email>

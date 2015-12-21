@@ -109,6 +109,354 @@ msgctxt "#31042
 msgid "Show disc art"
 msgstr "הצג דיסק מסתובב"
 
+msgctxt "#31043
+msgid "Zoom on selected image"
+msgstr "הגדל תמונה נבחרת"
+
+msgctxt "#31044
+msgid "Selector frame"
+msgstr "מסגרת בחירה"
+
+msgctxt "#31045
+msgid "Choose a color for the selector frame.[CR]Selector frame is an optional skin element."
+msgstr "בחר צבע עבור מסגרת בחירה.[CR]מסגרת בחירה הינה אפשרות שיש להפעיל בסקין."
+
+msgctxt "#31046
+msgid ""
+msgstr ""
+
+msgctxt "#31047
+msgid ""
+msgstr ""
+
+msgctxt "#31048
+msgid ""
+msgstr ""
+
+msgctxt "#31049
+msgid ""
+msgstr ""
+
+msgctxt "#31050
+msgid ""
+msgstr ""
+
+msgctxt "#31051
+msgid ""
+msgstr ""
+
+msgctxt "#31052
+msgid ""
+msgstr ""
+
+msgctxt "#31053
+msgid ""
+msgstr ""
+
+msgctxt "#31054
+msgid ""
+msgstr ""
+
+msgctxt "#31055
+msgid ""
+msgstr ""
+
+msgctxt "#31056
+msgid ""
+msgstr ""
+
+msgctxt "#31057
+msgid ""
+msgstr ""
+
+msgctxt "#31058
+msgid ""
+msgstr ""
+
+msgctxt "#31059
+msgid ""
+msgstr ""
+
+msgctxt "#31060
+msgid ""
+msgstr ""
+
+msgctxt "#31061
+msgid ""
+msgstr ""
+
+msgctxt "#31062
+msgid ""
+msgstr ""
+
+msgctxt "#31063
+msgid ""
+msgstr ""
+
+msgctxt "#31064
+msgid ""
+msgstr ""
+
+msgctxt "#31065
+msgid ""
+msgstr ""
+
+msgctxt "#31066
+msgid ""
+msgstr ""
+
+msgctxt "#31067
+msgid ""
+msgstr ""
+
+msgctxt "#31068
+msgid ""
+msgstr ""
+
+msgctxt "#31069
+msgid ""
+msgstr ""
+
+msgctxt "#31070
+msgid ""
+msgstr ""
+
+msgctxt "#31071
+msgid ""
+msgstr ""
+
+msgctxt "#31072
+msgid ""
+msgstr ""
+
+msgctxt "#31073
+msgid ""
+msgstr ""
+
+msgctxt "#31074
+msgid ""
+msgstr ""
+
+msgctxt "#31075
+msgid ""
+msgstr ""
+
+msgctxt "#31076
+msgid ""
+msgstr ""
+
+msgctxt "#31077
+msgid ""
+msgstr ""
+
+msgctxt "#31078
+msgid ""
+msgstr ""
+
+msgctxt "#31079
+msgid ""
+msgstr ""
+
+msgctxt "#31080
+msgid ""
+msgstr ""
+
+msgctxt "#31081
+msgid ""
+msgstr ""
+
+msgctxt "#31082
+msgid ""
+msgstr ""
+
+msgctxt "#31083
+msgid ""
+msgstr ""
+
+msgctxt "#31084
+msgid ""
+msgstr ""
+
+msgctxt "#31085
+msgid ""
+msgstr ""
+
+msgctxt "#31086
+msgid ""
+msgstr ""
+
+msgctxt "#31087
+msgid ""
+msgstr ""
+
+msgctxt "#31088
+msgid ""
+msgstr ""
+
+msgctxt "#31089
+msgid ""
+msgstr ""
+
+msgctxt "#31090
+msgid ""
+msgstr ""
+
+msgctxt "#31091
+msgid ""
+msgstr ""
+
+msgctxt "#31092
+msgid ""
+msgstr ""
+
+msgctxt "#31093
+msgid ""
+msgstr ""
+
+msgctxt "#31094
+msgid ""
+msgstr ""
+
+msgctxt "#31095
+msgid ""
+msgstr ""
+
+msgctxt "#31096
+msgid ""
+msgstr ""
+
+msgctxt "#31097
+msgid ""
+msgstr ""
+
+msgctxt "#31098
+msgid ""
+msgstr ""
+
+msgctxt "#31099
+msgid ""
+msgstr ""
+
+msgctxt "#31100
+msgid ""
+msgstr ""
+
+msgctxt "#31101
+msgid ""
+msgstr ""
+
+msgctxt "#31102
+msgid ""
+msgstr ""
+
+msgctxt "#31103
+msgid ""
+msgstr ""
+
+msgctxt "#31104
+msgid ""
+msgstr ""
+
+msgctxt "#31105
+msgid ""
+msgstr ""
+
+msgctxt "#31106
+msgid ""
+msgstr ""
+
+msgctxt "#31107
+msgid ""
+msgstr ""
+
+msgctxt "#31108
+msgid ""
+msgstr ""
+
+msgctxt "#31109
+msgid ""
+msgstr ""
+
+msgctxt "#31110
+msgid ""
+msgstr ""
+
+msgctxt "#31111
+msgid ""
+msgstr ""
+
+msgctxt "#31112
+msgid ""
+msgstr ""
+
+msgctxt "#31113
+msgid ""
+msgstr ""
+
+msgctxt "#31114
+msgid ""
+msgstr ""
+
+msgctxt "#31115
+msgid ""
+msgstr ""
+
+msgctxt "#31116
+msgid ""
+msgstr ""
+
+msgctxt "#31117
+msgid ""
+msgstr ""
+
+msgctxt "#31118
+msgid ""
+msgstr ""
+
+msgctxt "#31119
+msgid ""
+msgstr ""
+
+msgctxt "#31120
+msgid ""
+msgstr ""
+
+msgctxt "#31121
+msgid ""
+msgstr ""
+
+msgctxt "#31122
+msgid ""
+msgstr ""
+
+msgctxt "#31123
+msgid ""
+msgstr ""
+
+msgctxt "#31124
+msgid ""
+msgstr ""
+
+msgctxt "#31125
+msgid ""
+msgstr ""
+
+msgctxt "#31126
+msgid ""
+msgstr ""
+
+msgctxt "#31127
+msgid ""
+msgstr ""
+
+msgctxt "#31128
+msgid ""
+msgstr ""
+
+msgctxt "#31129
+msgid ""
+msgstr ""
+
 msgctxt "#31411
 msgid "Our Channel"
 msgstr "הערוץ שלנו"
