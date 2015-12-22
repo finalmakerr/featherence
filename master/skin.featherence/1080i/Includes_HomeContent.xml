@@ -512,14 +512,14 @@
 		  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=211&amp;value=0)</onclick>
         </item>
 		<item id="1000">
-          <visible>Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Window.IsVisible(Home.xml)</visible>
+          <visible>Skin.HasSetting(Admin) + Window.IsVisible(Home.xml)</visible>
           <thumb>special://home/addons/script.featherence.service/resources/icons/caa2.png</thumb>
           <label>Test</label>
 		  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">RunScript(script.featherence.service,,?mode=0)</onclick>
 		</item>
 		
 		<item id="1001">
-          <visible>Window.IsVisible(Home.xml) + !IntegerGreaterThan(Container(9000).NumItems,3) + [!Skin.String(label98) | !Skin.String(label99)]</visible>
+          <visible>Window.IsVisible(Home.xml) + [!Skin.String(label90) | !Skin.String(label91) | !Skin.String(label92)]</visible>
           <thumb>special://home/addons/script.featherence.service/resources/icons/magicwand.png</thumb>
           <label>REFRESH BUTTONS</label>
 		  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">RunScript(script.featherence.service,,?mode=40&amp;value=0)</onclick>

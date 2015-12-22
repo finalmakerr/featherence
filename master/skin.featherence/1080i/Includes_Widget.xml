@@ -120,8 +120,7 @@
           <posy>80</posy>
           <width>270</width>
           <height>270</height>
-          <texture border="10">misc/frames/selector.png</texture>
-		  <!--<texture border="10">misc/frames/generalslider.png</texture>-->
+          <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 		  <visible>Skin.HasSetting(SelectionMarker)</visible>
         </control>
 		<control type="label" description="שם">

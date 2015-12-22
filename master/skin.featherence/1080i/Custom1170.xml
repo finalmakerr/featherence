@@ -56,7 +56,7 @@
 				<control type="image" description="סמן בחירה">
 				  <width>135%</width>
 				  <height>120%</height>
-				  <texture colordiffuse="ffe25822" border="10">misc/frames/selector.png</texture>
+				  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 				  <visible>StringCompare(ListItem.Label,Window(home).Property(SelectedColor))</visible>
 				</control>
 				<control type="label">
@@ -98,7 +98,7 @@
 				  <posy>-10%</posy>
 				  <width>155%</width>
 				  <height>140%</height>
-				  <texture border="10">misc/frames/selector.png</texture>
+				  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 				  <visible>true</visible>
 				</control>
 				<control type="label">
@@ -657,6 +657,30 @@
 				<icon>buttons/colors/fffff0f5.png</icon>
 				<label>fffff0f5</label>
 				<label2>lavender blush</label2>
+			  </item>
+			  <item id="66" description="light blue">
+			    <onclick>SetProperty(SelectedColor,ff9697cb, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,light blue, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/ff9697cb.png</icon>
+				<label>ff9697cb</label>
+				<label2>light blue</label2>
+			  </item>
+			  <item id="67" description="smoky black">
+			    <onclick>SetProperty(SelectedColor,ff100c08, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,smoky black, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/ff100c08.png</icon>
+				<label>ff100c08</label>
+				<label2>smoky black</label2>
+			  </item>
+			  <item id="68" description="warm black">
+			    <onclick>SetProperty(SelectedColor,ff004242, home)</onclick>
+				<onclick>SetProperty(SelectedColorName,warm black, home)</onclick>
+				<onclick>SetFocus(9000)</onclick>
+				<icon>buttons/colors/ff004242.png</icon>
+				<label>ff004242</label>
+				<label2>warm black</label2>
 			  </item>
 			</content>
 		</control>

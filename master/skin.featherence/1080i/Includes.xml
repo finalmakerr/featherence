@@ -2,8 +2,6 @@
 <includes>
   <include description="KILLALL ERROR" file="Includes_Variables.xml" />
   <include description="ok!"  file="Defaults.xml" />
-  <include description="ok!"  file="Musicviews.xml" />
-  <include description="ok!"  file="PVRviews.xml" />
   <include description="ok!" file="Includes_Animation.xml" />  
   <include description="ok!" file="Includes_Forms.xml" />  
   <include description="" file="Includes_Home.xml" />
@@ -183,7 +181,6 @@
 		  </control>
 		  <control type="group" description="(includes) שמאל">
 			<include>Badges</include>
-			<include>featherencelogo</include>
 			<visible>!Skin.HasSetting(Admin)</visible>
 		  </control>
 		  <control type="label" id="1124" description="זמן לסיום(HasMedia) שמאל2">
@@ -198,8 +195,7 @@
 			<visible>!SubString(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
 			<visible>!Window.IsVisible(MyPics.xml) + !Window.IsVisible(SlideShow.xml) + !Window.IsVisible(MyPVRChannels.xml)</visible>
 			<visible>!SubString(Container.FolderPath,special://userdata/library/videos/) + !SubString(Container.FolderPath,/var/media/) + !SubString(Container.FolderPath,special://home/external/)</visible>
-			<visible>!SubString(MusicPlayer.Title,playfeatherence)</visible>
-			<visible>!Window.IsVisible(script-skin_helper_service-ColorPicker.xml)</visible>
+			<visible>!SubString(MusicPlayer.Title,featherence)</visible>
 			<width>360</width>
 		  </control>
 		  <control type="group">
@@ -274,6 +270,7 @@
           <posy>-566</posy>
           <width>1960</width>
           <height>128</height>
+		  
 		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation</include>
 		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation_</include>
       </control>
@@ -596,13 +593,15 @@
 		<animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="150,150" time="3000">Conditional</animation>
 		<include>Slide4</include>
 		<include>Fade4</include>
-		<height>270</height>		
+		<height>270</height>
 		<posx>1720</posx>
 		<posy>-550</posy>
 		<width>197</width>
 		<include>ShowDVDdisc</include>
 		<control type="image" description="פוסטר">
 		  <aspectratio>stretch</aspectratio>
+		  <bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
+		  <bordersize>2</bordersize>
 		  <texture background="false">$VAR[TopVideoInformation4]</texture>
 		</control>
 		<control type="label" id="1104" description="***פוסטר***">
@@ -614,16 +613,19 @@
 			<posy>-5</posy>              
 			<height>292</height>
 			<width>237</width>
-			<include>WatchedStatus</include> <!-- condition="!IsEmpty(Control.GetLabel(1104))"-->
+			<include>InProgressBadge</include>
 			<include>ShowDVDCases</include>
+			
 		</control>
-		
 		<control type="image" description="דירוג">
 		  <posx>0</posx>
 		  <posy>7</posy>
 		  <height>24</height>
 		  <width>125</width>
 		  <aspectratio align="left">keep</aspectratio>
+		  <include>Fade_TopVideoInformationOverlay</include>
+		  <!--<bordertexture colordiffuse="$VAR[TopVideoInformationColor]" border="0">buttons/ButtonA0.png</bordertexture>
+		  <bordersize>2</bordersize>-->
 		  <texture>$VAR[TopVideoInformation3]</texture>
 		  <visible>!IsEmpty(Control.GetLabel(1103))</visible>
 		</control>
@@ -631,38 +633,48 @@
 		  <label>$VAR[TopVideoInformation3]</label>
 		  <visible>false</visible>
 		</control>
-		<control type="group" description="InProgressBadge">
-			<posx>-54</posx>
-			<posy>-24</posy>              
-			<height>316</height>
-			<width>237</width>
-			<include>InProgressBadge</include>
-		</control>
 	  </control>  
 	  <control type="group" description="פרטי וידאו (1105)">
 		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="1250,0">Conditonal</animation>
+		<!--<animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="0,0" start="100,100" end="100,120" time="0">Conditional</animation>-->
 		<include>Fade4</include>
 		<visible>!IsEmpty(Control.GetLabel(1105)) + !SubString(Control.GetLabel(1105),$LOCALIZE[20457])</visible>
-		<visible></visible>
-	    <control type="textbox" description="פרטי סרט">
-		  <textcolor>White</textcolor>
-		  <font>size24</font>
-		  <include condition="SubString(Container.FolderPath,plugin.program.advanced.launcher)">LabelL1</include>
-		  <include condition="[StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,1)">LabelR1</include>
-		  <include condition="[!StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,2)">LabelL1</include>
-		  <include condition="Skin.String(PlotAlign,3)">LabelJ1</include>
-		  <include condition="Skin.String(PlotAlign,4)">LabelC1</include>
-		  <include>AutoScrollText</include>
-		  <posx>10</posx>
-          <posy>-561</posy>
-          <width>650</width>
-          <height>115</height> <!--130-->
-          <label>$VAR[TopVideoInformation5]</label>
-        </control>
-	    <control type="label" id="1105" description="***פרטי סרט***">
-          <label>$VAR[TopVideoInformation5]</label>
+		<control type="label" id="1105" description="***פרטי סרט***">
+		  <label>$VAR[TopVideoInformation5]</label>
 		  <visible>false</visible>
-        </control>  		
+		</control>
+		<control type="group" description="פרטי סרט">
+			<posx>10</posx>
+			<posy>-561</posy>
+			<control type="textbox" description="פרטי סרט">
+			  <textcolor>White</textcolor>
+			  <font>size24</font>
+			  <include condition="SubString(Container.FolderPath,plugin.program.advanced.launcher)">LabelL1</include>
+			  <include condition="[StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,1)">LabelR1</include>
+			  <include condition="[!StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,2)">LabelL1</include>
+			  <include condition="Skin.String(PlotAlign,3)">LabelJ1</include>
+			  <include condition="Skin.String(PlotAlign,4)">LabelC1</include>
+			  <include>AutoScrollText</include>
+			  <width>650</width>
+			  <height>115</height> <!--130-->
+			  <label>$VAR[TopVideoInformation5]</label>
+			  <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
+			</control>
+			<control type="textbox" description="פרטי סרט">
+			  <textcolor>White</textcolor>
+			  <font>size30</font>
+			  <include condition="SubString(Container.FolderPath,plugin.program.advanced.launcher)">LabelL1</include>
+			  <include condition="[StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,1)">LabelR1</include>
+			  <include condition="[!StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,2)">LabelL1</include>
+			  <include condition="Skin.String(PlotAlign,3)">LabelJ1</include>
+			  <include condition="Skin.String(PlotAlign,4)">LabelC1</include>
+			  <include>AutoScrollText</include>
+			  <width>650</width>
+			  <height>285</height> <!--130-->
+			  <label>$VAR[TopVideoInformation5]</label>
+			  <visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
+			</control>
+		</control>
 	    <control type="group" id="11051" description="משחקים">
 		  <posx>20</posx>
 		  <posy>-550</posy>
@@ -675,14 +687,15 @@
 			  <width>300</width>
 			</control>		
 		</control>
-	    <include>RightMenuDialogVideoInfo</include>
 	  </control>
+	<include>RightMenuDialogVideoInfo</include>
 	</control>
+	
 	<control type="label" id="11155" description="לתצוגת פרקים/עונות -57/58">
 	  <label>$VAR[11155label]</label>
 	  <posx>40</posx>
 	  <posy>150</posy>
-	  <visible>Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)</visible>
+	  <visible>false</visible>
     </control>
   </include>
   <include name="TopMenuDialogSlider" description="(הזזת תרגום)">
@@ -908,9 +921,10 @@
   </include>  
   <include name="RightMenuDialogVideoInfo" description="פרטי סרט/סדרה">
 	  <control type="group" description="פרטים ימין">
+	    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="-105,0">Conditonal</animation>
 		<visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
 	    <height>250</height>		
-	    <posx>10</posx>
+	    <posx>680</posx>
 	    <posy>-460</posy>	 
 	    <width>600</width>
         

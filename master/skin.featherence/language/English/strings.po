@@ -457,6 +457,26 @@ msgctxt "#31129
 msgid ""
 msgstr ""
 
+msgctxt "#31130
+msgid "Hide colors and textures when fanart exist."
+msgstr "הסתר צבעים וטקסטורות כאשר קיים פאנארט"
+
+msgctxt "#31131
+msgid "[CR][COLOR=red]Will not work when Clear Fanart is enabled and triggered.[/COLOR]"
+msgstr "[CR][COLOR=red]אפשרות זו לא תעבוד עם פאנארט נקי מופעל ותקף.[/COLOR]"
+
+msgctxt "#31132
+msgid "[CR][COLOR=green]This option effect the entire interface.[/COLOR]"
+msgstr "[CR][COLOR=green]אפשרות זו משפיעה על הממשק כולו.[/COLOR]"
+
+msgctxt "#31133
+msgid "[CR][COLOR=green]This window is[/COLOR]"
+msgstr "[CR][COLOR=green]חלון זה הינו[/COLOR]"
+
+msgctxt "#31134
+msgid "Choose the level of fade for buttons."
+msgstr "בחר את רמת שקיפות הכפתורים."
+
 msgctxt "#31411
 msgid "Our Channel"
 msgstr "הערוץ שלנו"
@@ -1725,10 +1745,6 @@ msgstr "בחר באפשרות זו בכדי לאפשר תצוגת פאנארט �
 msgctxt "#76208
 msgid "Choose a color for home menu and sub menu icons.[CR]Effect others buttons across the skin as well."
 msgstr "בחר צבע עבור אייקונים בתפריט הבית ובתת תפריט.[CR]משפיע גם על כפתורים נוספים בסקין!"
-
-msgctxt "#76209
-msgid "Hide top panel's color and texture when fanart exist."
-msgstr "הסתר צבע וטקסטורה בפנל העליון כאשר קיים פאנארט."
 
 msgctxt "#76210
 msgid "Change selected icon color."

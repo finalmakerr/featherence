@@ -318,7 +318,7 @@
           <posy>14</posy>
 		  <width>335</width>
 		  <height>211</height>
-		  <texture border="11">misc/frames/selector.png</texture>
+		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
 		</control>
 		<control type="image" description="צללית">
@@ -544,7 +544,7 @@
           <posy>14</posy>
 		  <width>335</width>
 		  <height>211</height>
-		  <texture border="11">misc/frames/selector.png</texture>
+		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
 		</control>
 		<control type="image" description="צללית">
@@ -777,7 +777,7 @@
           <posy>14</posy>
 		  <width>232</width>
 		  <height>111</height>
-		  <texture border="11">misc/frames/selector.png</texture>
+		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
 		</control>
 		<control type="image" description="צללית">

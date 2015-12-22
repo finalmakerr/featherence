@@ -8,7 +8,7 @@
         <width>920</width>
         <height>1080</height>
         <aspectratio>stretch</aspectratio>
-        <texture>images/black.png</texture>
+        <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 		<colordiffuse>AAFFFFFF</colordiffuse>
       </control>
 	  <control type="image" description="Dialog">

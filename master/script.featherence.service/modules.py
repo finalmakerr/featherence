@@ -48,6 +48,31 @@ def mode5(value, admin, name, printpoint):
 		Remote_Support = getsetting('Remote_Support')
 		if Remote_Name != "" and Remote_Name != 'None' and Remote_Support == 'true':
 			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=27&value=0)')
+		
+		mode101('1',admin, 'TotalMouse')
+		
+		try:
+			VolumeLevel = int(xbmcaddon.Addon(addonID).getSetting('VolumeLevel'))
+			xbmc.executebuiltin('SetVolume('+str(VolumeLevel)+')')
+		except: pass
+		
+		addon = 'plugin.video.featherence.docu'
+		if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
+			
+		addon = 'plugin.video.featherence.kids'
+		if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
+
+		addon = 'plugin.video.featherence.gopro'
+		if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
+
+		addon = 'plugin.video.featherence.music'
+		if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
+
+		if xbmc.getSkinDir() == 'skin.featherence':
+			mode215('_',admin,'','')
+			setsetting_custom1('script.featherence.service','Skin_UpdateLog',"true")
+			installaddonP(admin, 'script.module.simplejson')
+			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)')
 	else:
 		'''multitime but not on startup'''
 		if Library_On == 'true':
@@ -1426,9 +1451,10 @@ def mode101(value, admin, name):
 			terminal('TASKKILL /im EAT_gil900.exe /f',"EAT-end") ; xbmc.sleep(200) ; terminal('TASKKILL /im EAT_gil900.exe /f',"EAT-end") ; xbmc.sleep(200)
 			if TotalMouse == "true":
 				terminal('"'+path+'"', 'EAT-start')
-				notification("TotalMouse by gil900", "Enabled!", "", 2000) ; xbmc.sleep(1000)
-			else: notification('Total Mouse is not active!','','',1000)
-			'''---------------------------'''
+				if '0' in value: notification("TotalMouse by gil900", "Enabled!", "", 2000) ; xbmc.sleep(1000)
+			else:
+				if '0' in value: notification('Total Mouse is not active!','','',1000)
+				'''---------------------------'''
 		else: notification_common("26")
 	else: notification('OS not supported!','','',1000)
 
@@ -2313,16 +2339,14 @@ def mode201(value, admin, name, printpoint):
 	#from variables2 import *
 	returned = ""
 	container50hasfocus390 = xbmc.getCondVisibility('Container(50).HasFocus(390)') #BUTTONS
+
+	list = ['-> (Exit)', localize(10035) + space + "(" + localize(593) + ")", localize(590) + space + "(" + localize(593) + ")", \
+	localize(74840) + space + "(" + localize(80,addon='script.featherence.service') + ")", localize(74840) + space + localize(590) + space + "(" + localize(80,addon='script.featherence.service') + ")", \
+	localize(74840) + space + "(" + localize(593) + ")", localize(74840) + space + localize(590) + space + "(" + localize(593) + ")", \
+	localize(10035) + space + localize(78215) + space + "(" + localize(593) + ")", localize(10035) + space + localize(78215) + space + localize(590) + space + "(" + localize(593) + ")", \
+	localize(10035) + space + "(" + localize(74614) + ")"]
 	
-	if container50hasfocus390:
-		list = ['-> (Exit)', localize(10035) + space + "(" + localize(593) + ")", localize(590) + space + "(" + localize(593) + ")", \
-		localize(74840) + space + "(" + localize(80,addon='script.featherence.service') + ")", localize(74840) + space + localize(590) + space + "(" + localize(80,addon='script.featherence.service') + ")", \
-		localize(74840) + space + "(" + localize(593) + ")", localize(74840) + space + localize(590) + space + "(" + localize(593) + ")", \
-		localize(10035) + space + localize(78215) + space + "(" + localize(593) + ")", localize(10035) + space + localize(78215) + space + localize(590) + space + "(" + localize(593) + ")", \
-		localize(10035) + space + "(" + localize(74614) + ")"]
-	else: list = []
-	
-	if list != []:
+	if value == "" or container50hasfocus390:
 		returned, value_ = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
 		
 		if returned == -1: printpoint = printpoint + "9"
@@ -2338,12 +2362,10 @@ def mode201(value, admin, name, printpoint):
 		elif returned == 6: printpoint = printpoint + "DF" #RANDOM-ALL-COLORS
 		elif returned == 7: printpoint = printpoint + "G" #RESET-ALL-TRANSPERANCY
 		elif returned == 8: printpoint = printpoint + "H" #RANDOM-ALL-TRANSPERANCY
-		elif (returned == 9 or value == "9"): printpoint = printpoint + "I" #RESET BUTTONS PROPERTIES
+		elif (returned == 9 or value == "9"): returned = 9 ; printpoint = printpoint + "I" #RESET BUTTONS PROPERTIES
 		
 		from variables2 import labelT, list1, list0, list0c, list0c2, list0o
-		xbmc.executebuiltin('SetProperty(TEMP,'+name+',home)')
-		xbmc.executebuiltin('SetProperty(TEMP2,This action may take a while be patient!,home)')
-		xbmc.executebuiltin('Dialog.Close(1173)') ; xbmc.sleep(100) ; xbmc.executebuiltin('ActivateWindow(1000)') ; notification_common("2") ; xbmc.sleep(100)
+		Custom1000(name,0,str(list[returned]),20)
 		'''---------------------------'''
 		
 	if "A" in printpoint:
@@ -2471,7 +2493,7 @@ def mode201(value, admin, name, printpoint):
 			'''---------------------------'''
 	
 	if "I" in printpoint:
-		Custom1000(name,"",localize(74536),30)
+		Custom1000(name,20,str(list[returned]),10)
 		'''RESET BUTTONS PROPERTIES'''
 		count = 0
 		for i in range(18,20):
@@ -2482,28 +2504,33 @@ def mode201(value, admin, name, printpoint):
 			setSkinSetting('1','off'+str(i),"")
 		for i in range(90,120):
 			count += 2
-			setSkinSetting('0','id'+str(i),"")
-			setSkinSetting('0','label'+str(i),"")
-			setSkinSetting('0','action'+str(i),"")
-			setSkinSetting('0','color'+str(i),"")
-			setSkinSetting('0','icon'+str(i),"")
-			setSkinSetting('0','background'+str(i),"")
-			setSkinSetting('1','off'+str(i),"")
-			setSkinSetting('1','sub'+str(i),"")
-			'''---------------------------'''
-			for i2 in range(100,110):
-				setSkinSetting('0','id'+str(i)+'_'+str(i2),"")
-				setSkinSetting('0','label'+str(i)+'_'+str(i2),"")
-				setSkinSetting('0','action'+str(i)+'_'+str(i2),"")
-				setSkinSetting('1','off'+str(i)+'_'+str(i2),"")
-				setSkinSetting('0','icon'+str(i)+'_'+str(i2),"")
+			i_ = xbmc.getInfoLabel('Skin.String(label'+str(i)+')')
+			if i_ != "" and i_ != None:
+				setSkinSetting('0','id'+str(i),"")
+				setSkinSetting('0','label'+str(i),"")
+				setSkinSetting('0','action'+str(i),"")
+				setSkinSetting('0','color'+str(i),"")
+				setSkinSetting('0','icon'+str(i),"")
+				setSkinSetting('0','background'+str(i),"")
+				setSkinSetting('1','off'+str(i),"")
+				setSkinSetting('1','sub'+str(i),"")
 				'''---------------------------'''
+			for i2 in range(100,110):
+				i2_ = xbmc.getInfoLabel('Skin.String(label'+str(i)+'_'+str(i2)+')')
+				if i2_ != "" and i_ != None:
+					#setSkinSetting('0','id'+str(i)+'_'+str(i2),"")
+					setSkinSetting('0','label'+str(i)+'_'+str(i2),"")
+					setSkinSetting('0','action'+str(i)+'_'+str(i2),"")
+					setSkinSetting('1','off'+str(i)+'_'+str(i2),"")
+					setSkinSetting('0','icon'+str(i)+'_'+str(i2),"")
+					'''---------------------------'''
 		
 	if ("7" in printpoint or value != "") and not "8" in printpoint and not "9" in printpoint:
-		Custom1000(name,100,'',20)
-		notification(".","","",1000)
-		ReloadSkin(admin)
-		xbmc.executebuiltin('ActivateWindow(Home.xml)') ; xbmc.executebuiltin('ActivateWindow(1117)') ; xbmc.executebuiltin('ActivateWindow(1173)')
+		if value != "9":
+			Custom1000(name,100,'',20)
+			notification(".","","",1000)
+			ReloadSkin(admin)
+			xbmc.executebuiltin('ActivateWindow(Home.xml)') ; xbmc.executebuiltin('ActivateWindow(1117)') ; xbmc.executebuiltin('ActivateWindow(1173)')
 		
 	text = "list" + space2 + str(list) + space + "returned" + space2 + str(returned)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
@@ -2916,6 +2943,8 @@ def mode213(value, admin, name, printpoint):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
 def mode214(value, admin, name, printpoint):
+	text = "value" + space2 + str(value)
+	
 	if value == '0':
 		returned = dialogkeyboard(property_buttonname,'Button Name',0,"",'label'+property_buttonid_,"")
 		if returned != 'skip':
@@ -2928,6 +2957,7 @@ def mode214(value, admin, name, printpoint):
 	
 	if value == '5':
 		'''SelectedColor'''
+		returned_len = "" ; returned1 = "" ; path = ""
 		property_selectedcolor = xbmc.getInfoLabel('Window(home).Property(SelectedColor)')
 		currentbuttoncolor = xbmc.getInfoLabel('Skin.String(color'+property_buttonid_+')')
 		notification(currentbuttoncolor,'Skin.String(color'+property_buttonid_+')','',2000)
@@ -2937,6 +2967,12 @@ def mode214(value, admin, name, printpoint):
 		returned = dialogkeyboard(value2,'Choose manual color code',0,"","","")
 		if returned != 'skip':
 			if returned != "":
+				returned_len = len(returned) ; returned1 = returned[:2]
+				if returned1 != "ff":
+					if returned_len == 8: returned = returned.replace(returned1,"ff",1)
+					elif returned_len == 7: returned = 'f' + returned
+					elif returned_len == 6: returned = 'ff' + returned
+				
 				path = os.path.join(skin_path, 'media', 'buttons', 'colors', str(returned) + '.png')
 				if os.path.exists(path):
 					if str(returned) == currentbuttoncolor: pass
@@ -2944,7 +2980,15 @@ def mode214(value, admin, name, printpoint):
 						setProperty('SelectedColor', str(returned), type="home")
 						notification('New color selected!', str(returned), '', 1000)
 				else: notification('Color is not available!', str(path), '', 6000)
-		
+	
+		text = text + newline + 'returned' + space2 + str(returned) + space + 'returned_len' + space2 + str(returned_len) + space + 'returned1' + space2 + str(returned1) + newline + \
+		'path' + space2 + str(path) + newline + \
+		'property_selectedcolor' + space2 + str(property_selectedcolor) + newline + \
+		'currentbuttoncolor' + space2 + str(currentbuttoncolor) + newline + \
+		'value2' + space2 + str(value2)
+
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	
 def mode215(value, admin, name, printpoint):
 	from variables2 import *
 	extra2 = ""

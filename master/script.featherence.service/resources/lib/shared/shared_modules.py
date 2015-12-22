@@ -137,10 +137,15 @@ def TranslatePath(x, filteroff=[]):
 		x2 = x2.replace('%5c',slash)
 		x2 = x2.replace('%3a',':')
 		if x2[-1:] == '/': x2 = x2.replace(x2[-1:],"",1)
-		
+	
+	elif 'https://' in x or 'http://' in x:
+		printpoint = printpoint + '2'
+		x2 = x
 	else: x2 = os.path.join(xbmc.translatePath(x).decode("utf-8"))
 	
-	if os.path.exists(x2):
+	if '2' in printpoint:
+		returned = x2
+	elif os.path.exists(x2):
 		if filteroff != []:
 			for y in filteroff:
 				if y in x2:
@@ -2737,30 +2742,31 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 	
 	#print 'admin: ' + str(admin) + ' admin2: ' + str(admin2) + ' admin3: ' + str(admin3) + space + 'exe' + space2 + str(exe)
 	if exe != "":
-		print printfirst + title + '_LV' + printpoint + space + str(text)
+		print printfirst + str(title) + '_LV' + str(printpoint) + space + str(text)
 
 def killall(admin, custom=""):
 	customgui = xbmc.getInfoLabel('Skin.HasSetting(CustomGUI)')
 	CloseSession()
 	'''custom: ""=Just kill | "1"=Reload | "2"=Restore from gui1 | "3"=Restore from gui2'''
-	name = 'killall' ; extra = "" ; TypeError = "" ; printpoint = ""
+	name = 'killall' ; extra = "" ; TypeError = "" ; printpoint = "" ; source = ""
 	target = guisettings_file
-	if "1" in custom:
-		if customgui or 1 + 1 == 2: printpoint = printpoint + '9'
+	if 1 + 1 == 3:
+		if "1" in custom:
+			if customgui: printpoint = printpoint + '9'
+			else:
+				import shutil
+				#from shared_modules4 import *
+				x = os.path.join(addondata_path,'skin.featherence', '')
+				if not os.path.exists(x): os.mkdir(x)
+				if not os.path.exists(featherenceservice_addondata_path): os.mkdir(featherenceservice_addondata_path)
+				source = guisettings4_file
+				shutil.copyfile(guisettings_file, source)
+				guiset(admin, guiread="")
+				'''---------------------------'''
+		elif "2" in custom: source = guisettings2_file
+		elif "3" in custom: source = guisettings3_file
 		else:
-			import shutil
-			#from shared_modules4 import *
-			x = os.path.join(addondata_path,'skin.featherence', '')
-			if not os.path.exists(x): os.mkdir(x)
-			if not os.path.exists(featherenceservice_addondata_path): os.mkdir(featherenceservice_addondata_path)
-			source = guisettings4_file
-			shutil.copyfile(guisettings_file, source)
-			guiset(admin, guiread="")
-			'''---------------------------'''
-	elif "2" in custom: source = guisettings2_file
-	elif "3" in custom: source = guisettings3_file
-	else:
-		source = ""
+			source = ""
 	
 	print printfirst + name + '_LV' + printpoint + space + 'custom' + space2 + str(custom) + space + 'customgui' + space2 + str(customgui) + newline +\
 	'target' + space2 + str(target)
@@ -2768,7 +2774,7 @@ def killall(admin, custom=""):
 	if not '9' in printpoint:
 		if systemplatformandroid:
 			try:
-				if "1" in custom or "2" in custom or "3" in custom: extra = ''+extra+' & cp -rf '+source+' '+target+'' ; notification('1','2','',3000)
+				#if "1" in custom or "2" in custom or "3" in custom: extra = ''+extra+' & cp -rf '+source+' '+target+'' ; notification('1','2','',3000)
 				'''---------------------------'''
 				if "f" in custom:
 					xbmcexe_path = 'adb shell am start -a org.xbmc.kodi'
@@ -2799,7 +2805,7 @@ def killall(admin, custom=""):
 				
 		elif systemplatformlinux or systemplatformlinuxraspberrypi:
 			try:
-				if "1" in custom or "2" in custom or "3" in custom: extra = '& sleep 1 & cp -rf '+source+' '+target+''
+				#if "1" in custom or "2" in custom or "3" in custom: extra = '& sleep 1 & cp -rf '+source+' '+target+''
 				'''---------------------------'''
 				if "f" in custom: pass
 				elif "r" in custom: extra = ''+extra+' && sleep 2 && reboot'
@@ -2810,7 +2816,7 @@ def killall(admin, custom=""):
 		
 		elif systemplatformwindows:
 			try:
-				if '1' in custom or '2' in custom or '3' in custom: extra = '& copy "'+source+'" "'+target+'" /V /Y >NUL'
+				#if '1' in custom or '2' in custom or '3' in custom: extra = '& copy "'+source+'" "'+target+'" /V /Y >NUL'
 				'''---------------------------'''
 				if "f" in custom:
 					xbmcexe_path = os.path.join(xbmc_path, 'Kodi.exe')

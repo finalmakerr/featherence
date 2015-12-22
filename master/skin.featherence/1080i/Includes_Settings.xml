@@ -62,7 +62,6 @@
 		  <visible>!Control.IsVisible(3)</visible>
 		</control>
 	</control>
-	
   </include>
   
   <include name="MenuDesign_TopSettings" description="לשוניות">

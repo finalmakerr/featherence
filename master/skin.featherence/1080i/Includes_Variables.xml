@@ -6,6 +6,16 @@
 	<value condition="false">5</value>
 	<!--<value>test</value>-->
   </variable>
+  <variable name="11156label" description="">
+    <value condition="![!Skin.HasSetting(ShowDVDCases) | Skin.HasSetting(ShowDVDCases2)]">0</value>
+	<value condition="![[!IsEmpty(Player.Art(tvshow.poster)) | !IsEmpty(Player.Art(poster)) | !IsEmpty(Control.GetLabel(1103)) | !IsEmpty(VideoPlayer.Cover) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Art(tvshow.poster)) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Icon) | SubString(ListItem.path,videodb://movies/sets/)]]">1</value>
+	<value condition="![!SubString(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>
+	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
+	<value condition="![[Control.IsVisible(57) + !Skin.HasSetting(ShowDVDCases)] | !Control.IsVisible(57)]">5</value>
+	<value condition="![[[Control.IsVisible(54) | Control.IsVisible(58)] + Skin.HasSetting(ShowDVDCases2)] | !Control.IsVisible(54) + !Control.IsVisible(58)]">6</value>
+	
+	<!--<value>test</value>-->
+  </variable>
   <variable name="Button9090" description="כפתור קצה">
   	<value description="סרטים שנוספו לאחרונה" condition="Control.IsVisible(311) + !Skin.HasSetting(MoviesShelfWL) + !Player.HasVideo">$LOCALIZE[20386]</value>
 	<value description="סרטים שלא נצפו" condition="Control.IsVisible(311) + Skin.HasSetting(MoviesShelfWL) + !Player.HasVideo">$LOCALIZE[71030]</value>
@@ -31,10 +41,10 @@
 	<value description="מזג אוויר-לא" condition="StringCompare(Window(home).Property(Button.ID),97) + !Skin.HasSetting(wbackground97)">$LOCALIZE[107]</value>
   </variable>
   <variable name="Button11300" description="InProgressBadge">
-    <value condition="[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]">[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</value>
-	<value condition="[Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]">[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</value>
-	<!--<value condition="[Container.Content(Episodes) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]">[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</value>-->
-	<value condition="[Container.Content(Episodes)] + Window(home).Property(ListItemUnWatchedEpisodes)">[B]$INFO[Window(home).Property(ListItemUnWatchedEpisodes)][/B]</value>
+    <value condition="[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]">$INFO[ListItem.Property(UnwatchedEpisodes)]</value>
+	<value condition="[Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]">$INFO[ListItem.Property(UnwatchedEpisodes)]</value>
+	<!--<value condition="[Container.Content(Episodes) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]">$INFO[ListItem.Property(UnwatchedEpisodes)]</value>-->
+	<value condition="[Container.Content(Episodes)] + !IsEmpty(Window(home).Property(ListItemUnWatchedEpisodes))">$INFO[Window(home).Property(ListItemUnWatchedEpisodes)]</value>
   </variable>
   <variable name="Button31" description="מדריך טלוויזיה/ערוצי טלוויזיה">
     <value description="ערוצי טלוויזיה" condition="Window.IsVisible(MyPVRChannels.xml)">$LOCALIZE[79196]</value>
@@ -66,7 +76,7 @@
   </variable>
   
   <variable name="MainBackgroundColor" description="בחירת צבע רקע תחתון">
-    <value condition="!Skin.String(MainBackgroundColor)" description="ברירת מחדל-white smoke(20%)">33f5f5f5</value>
+    <value condition="!Skin.String(MainBackgroundColor)" description="ברירת מחדל-white smoke(100%)">fff5f5f5</value>
 	<value condition="Skin.String(MainBackgroundColor)" description="מותאם אישי">$INFO[Skin.String(MainBackgroundColor)]</value>
   </variable>
   <variable name="TopBackgroundColor" description="בחירת צבע רקע עליון">
@@ -101,6 +111,11 @@
   <variable name="KeyboardMainColor" description="בחירת צבע מקלדת וירטואלית">
     <value condition="!Skin.String(KeyboardMainColor)" description="ברירת מחדל-payne's grey(100%)">ff40404f-9</value>
 	<value condition="Skin.String(KeyboardMainColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardMainColor)]</value>
+  </variable>
+  
+  <variable name="SelectedFrameColor" description="בחירת צבע (מסגרת בחירה)">
+    <value condition="!Skin.String(SelectedFrameColor)" description="light blue">ff9697cb</value>
+	<value condition="Skin.String(SelectedFrameColor)" description="מותאם אישי">$INFO[Skin.String(SelectedFrameColor)]</value>
   </variable>
   
   <variable name="ChannelGroupName" description="PVR">
@@ -183,13 +198,13 @@
     <value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay,overlay/]</value>
   </variable>
   <variable name="Overlay2" description="status">
-	<value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + [Control.IsVisible(50) | Control.IsVisible(51)] + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)">overlay/OverlayWatched3.png</value>
-    <value condition="ListItem.IsResumable">overlay/OverlayWatched2.png</value>
+	<value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + !IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)">overlay/OverlayWatched3.png</value>
 	<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png)">overlay/OverlayWatched3.png</value>
+	<value condition="ListItem.IsResumable"></value>
     <value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay,overlay/]</value>
   </variable>
   <variable name="MainBackgroundTexture">
-	<value condition="!Skin.String(MainBackgroundTexture)">backgrounds/BackgroundTexture2.png</value>
+	<value condition="!Skin.String(MainBackgroundTexture)">backgrounds/BackgroundTexture5.png</value>
 	<value condition="Skin.String(MainBackgroundTexture,1)">backgrounds/BackgroundTexture.png</value>
 	<value condition="Skin.String(MainBackgroundTexture,2)">backgrounds/BackgroundTexture2.png</value>
 	<value condition="Skin.String(MainBackgroundTexture,3)">backgrounds/BackgroundTexture3.png</value>
@@ -444,7 +459,7 @@
   </variable>
   <variable name="TopInformation2.2" description="(HasMedia) שמאל2">
 	<!--<value description="ריק" condition="SubString(Container.FolderPath,library://video/movies/) | SubString(Container.FolderPath,library://video/tvshows/) | SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,videodb://movies/)"></value>-->
-	<value description="" condition="SubString(MusicPlayer.Title,playfeatherence)">•</value>
+	<value description="" condition="SubString(MusicPlayer.Title,featherence)">•</value>
 	<value description="זמן לסיום מוזיקה_he" condition="StringCompare(System.Language,Hebrew) + Player.HasAudio + [!Pvr.IsPlayingRadio + !SubString(Player.FolderPath,pvr://)] + [IntegerGreaterThan(Player.TimeRemaining,1) | IntegerGreaterThan(MusicPlayer.PlaylistLength,1)] + !SubString(Player.FolderPath,mms://)">($INFO[MusicPlayer.PlaylistPosition]/$INFO[MusicPlayer.PlaylistLength]) • [COLOR Yellow][B]$INFO[MusicPlayer.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
 	<value description="זמן לסיום מוזיקה_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasAudio + [!Pvr.IsPlayingRadio + !SubString(Player.FolderPath,pvr://)] + [IntegerGreaterThan(Player.TimeRemaining,1) | IntegerGreaterThan(MusicPlayer.PlaylistLength,1)] + !SubString(Player.FolderPath,mms://)"> $LOCALIZE[19127]: [COLOR Yellow][B]$INFO[MusicPlayer.TimeRemaining][/B][/COLOR] ($INFO[MusicPlayer.PlaylistPosition]/$INFO[MusicPlayer.PlaylistLength])</value>
 	<value description="זמן לסיום וידאו_he" condition="StringCompare(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">($INFO[VideoPlayer.PlaylistPosition]/$INFO[VideoPlayer.PlaylistLength]) • [COLOR Yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
@@ -471,7 +486,7 @@
 	<value description="מנגן רדיו" condition="Player.HasAudio + [!IntegerGreaterThan(Player.TimeRemaining,1) + !IntegerGreaterThan(MusicPlayer.PlaylistPosition,1) | SubString(Player.FolderPath,mms://)] + !IsEmpty(Player.Filename)">[COLOR Yellow]$INFO[Player.Filename][/COLOR] $LOCALIZE[79033] $LOCALIZE[19021]: </value>
 	<value description="מנגן רדיו (PVR)" condition="Pvr.IsPlayingRadio + !IsEmpty(MusicPlayer.ChannelName)">[COLOR Yellow][B]$INFO[MusicPlayer.ChannelName][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[19021]: </value>
 	<value description="מנגן רדיו (PVR)" condition="Pvr.IsPlayingRadio">[COLOR Yellow][B]$INFO[Player.Filename][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[19021]: </value>
-	<value description="" condition="SubString(MusicPlayer.Title,playfeatherence)">•••••</value>
+	<value description="" condition="SubString(MusicPlayer.Title,featherence)">•••••</value>
 	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !IsEmpty(MusicPlayer.Artist) + !IsEmpty(MusicPlayer.Album)">[COLOR Yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR Yellow][B]$INFO[MusicPlayer.Album][/B][/COLOR] • $LOCALIZE[558]: [COLOR Yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[179]: </value>	
 	<value condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + !IsEmpty(MusicPlayer.Album)" description="">[COLOR Yellow][B]$INFO[MusicPlayer.Album][/B][/COLOR] • $LOCALIZE[558]: [COLOR Yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[179]: </value>	
 	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">[COLOR Yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR Yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[179]: </value>	

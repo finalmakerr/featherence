@@ -6,6 +6,10 @@
   <onload condition="Skin.String(StartUpVideo)">ReplaceWindow(0)</onload>
   <onunload condition="Skin.String(StartUpVideo) + !Skin.HasSetting(StartUpVideoFullScreen)">PlayMedia($INFO[Skin.String(StartUpVideo)])</onunload>
   <onunload condition="Skin.String(StartUpVideo) + Skin.HasSetting(StartUpVideoFullScreen)">PlayMedia($INFO[Skin.String(StartUpVideo)],1)</onunload>
+  <onunload condition="!Skin.HasSetting(StartUpMusic) + !Skin.String(StartUpMusic) + !Skin.String(StartUpVideo)">PlayMedia(special://skin/sounds/featherence.mp3)</onunload>
+  <onunload condition="!Skin.HasSetting(StartUpMusic) + Skin.String(StartUpMusic) + !Skin.String(StartUpVideo)">PlayMedia($INFO[Skin.String(StartUpMusic)])</onunload>
+  <onunload condition="!Skin.HasSetting(StartUpMusic) + !Skin.String(StartUpMusic) + Skin.String(StartUpVideo)">AlarmClock(StartUpMusic,PlayMedia(special://skin/sounds/featherence.mp3),00:20,silent)</onunload>
+  <onunload condition="!Skin.HasSetting(StartUpMusic) + Skin.String(StartUpMusic) + Skin.String(StartUpVideo)">AlarmClock(StartUpMusic,PlayMedia($INFO[Skin.String(StartUpMusic)]),00:20,silent)</onunload>
   <controls>
 	<control type="label">
 	  <include>LabelC11</include>

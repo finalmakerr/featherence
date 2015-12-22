@@ -143,7 +143,27 @@
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 10)">Skin.SetString(MoviesTVCoversOverlay, )</onclick>
 		  <!--<onclick>ActivateWindow(Home.xml)</onclick>
 		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>-->
-		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
+		  <visible>Control.IsVisible(54) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
+        </control>
+		<control type="radiobutton" id="107" description="SelectedZoom">
+          <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31043]</label>
+		  <selected>!Skin.HasSetting(SelectedZoom)</selected>
+		  <onclick>Skin.ToggleSetting(SelectedZoom)</onclick>
+		  <visible>Control.IsVisible(54) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
+        </control>
+		<control type="radiobutton" id="108" description="מסגרת בחירה">
+          <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31044]</label>
+		  <selected>!Skin.HasSetting(SelectedFrame)</selected>
+		  <onclick>Skin.ToggleSetting(SelectedFrame)</onclick>
+		  <visible>Control.IsVisible(54) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
         </control>
 		<control type="radiobutton" id="139" description="פאנארט תמיד">
 		  <include>SideMenuCommon</include>
@@ -334,7 +354,7 @@
 	  <visible>!SubString(Container.FolderPath,plugin://) + !SubString(Container.FolderPath,special://userdata/library/videos) + !SubString(Container.FolderPath,special://home/) + !SubString(Container.FolderPath,/var/media/) + !SubString(Container.FolderPath,sources://video/)</visible>
 	  
 	</control>
-	<control type="button" id ="107" description="חפש-סדרות ישראליות">
+	<control type="button" id ="118" description="חפש-סדרות ישראליות">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <font>size28</font>
@@ -342,7 +362,7 @@
 	  <onclick>RunScript(script.featherence.service,,?mode=300)</onclick>
 	  <visible>Window.IsVisible(Home.xml) + SubString(Container.FolderPath,plugin://plugin.video.sdarot.tv)</visible>
 	</control>
-	<control type="button" id ="109" description="?">
+	<control type="button" id ="119" description="?">
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <font>size28</font>
@@ -1072,12 +1092,18 @@
   
   
   <include name="ShowDVDCases">
-     <control type="group">
-	   <visible>!Skin.HasSetting(ShowDVDCases) + [!IsEmpty(Player.Art(tvshow.poster)) | !IsEmpty(Player.Art(poster)) | !IsEmpty(Control.GetLabel(1103)) | !IsEmpty(VideoPlayer.Cover) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Art(tvshow.poster)) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Icon) | SubString(ListItem.path,videodb://movies/sets/)]</visible>
+     <control type="label" id="11156" description="דיסק">
+	   <label>$VAR[11156label]</label>
+	   <visible>false</visible>
+     </control>
+	 <control type="group">
+	   <!--<visible>!Skin.HasSetting(ShowDVDCases) | Skin.HasSetting(ShowDVDCases2)</visible>
+	   <visible>[!IsEmpty(Player.Art(tvshow.poster)) | !IsEmpty(Player.Art(poster)) | !IsEmpty(Control.GetLabel(1103)) | !IsEmpty(VideoPlayer.Cover) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Art(tvshow.poster)) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Icon) | SubString(ListItem.path,videodb://movies/sets/)]</visible>
 	   <visible>!StringCompare(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)</visible>
 	   <visible>!SubString(Container.FolderPath,plugin://plugin.video.youtube/)</visible>
-	   <visible>!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)</visible>
-
+	   <visible>!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)</visible>-->
+	   <visible>IsEmpty(Control.GetLabel(11156))</visible>
+	   <visible>!StringCompare(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)"</visible>
 		<control type="label" id="1103" description="***דירוג***">
           <label>$VAR[TopVideoInformation3]</label>
 		  <visible>false</visible>

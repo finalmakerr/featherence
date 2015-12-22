@@ -272,7 +272,7 @@
 		<label>$LOCALIZE[31035]</label>
 		<label2>$VAR[223label2]</label2>
 		<thumb></thumb>
-		<property name="rinfo">$LOCALIZE[76209]</property>
+		<property name="rinfo">$LOCALIZE[31130]</property>
 		<onclick>Skin.ToggleSetting(HideTopMainBackground)</onclick>
 		<visible>Container(100).Hasfocus(20)</visible>
 		<visible>!Skin.HasSetting(background)</visible>
@@ -284,7 +284,7 @@
 		<label>$LOCALIZE[78215] ($LOCALIZE[78017])</label>
 		<label2>$INFO[Skin.String(TopMainBackgroundOverlay)]</label2>
 		<thumb>misc/help/TopMainBackgroundOverlay.png</thumb>
-		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[78017].</property>
+		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[78017].$LOCALIZE[31131]</property>
 		<onclick condition="!Skin.String(TopMainBackgroundOverlay)">Skin.SetString(TopMainBackgroundOverlay, 100)</onclick>
 		<onclick condition="Skin.String(TopMainBackgroundOverlay, 100)">Skin.SetString(TopMainBackgroundOverlay, 95)</onclick>
 		<onclick condition="Skin.String(TopMainBackgroundOverlay, 95)">Skin.SetString(TopMainBackgroundOverlay, 90)</onclick>
@@ -308,7 +308,7 @@
 		<label>$LOCALIZE[78215] ($LOCALIZE[78214])</label>
 		<label2>$INFO[Skin.String(MainBackgroundOverlay)]</label2>
 		<thumb>misc/help/MainBackgroundOverlay.png</thumb>
-		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[78214].</property>
+		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[78214].$LOCALIZE[31131]$LOCALIZE[31132]</property>
 		<onclick condition="!Skin.String(MainBackgroundOverlay)">Skin.SetString(MainBackgroundOverlay, 100)</onclick>
 		<onclick condition="Skin.String(MainBackgroundOverlay, 100)">Skin.SetString(MainBackgroundOverlay, 95)</onclick>
 		<onclick condition="Skin.String(MainBackgroundOverlay, 95)">Skin.SetString(MainBackgroundOverlay, 90)</onclick>
@@ -356,7 +356,7 @@
 		<label>$LOCALIZE[78215] ($LOCALIZE[20159])</label>
 		<label2>$INFO[Skin.String(TopVideoInformationOverlay)]</label2>
 		<thumb>misc/help/TopVideoInformationOverlay.png</thumb>
-		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[20159].</property>
+		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[20159].$LOCALIZE[31133] [COLOR=green]$LOCALIZE[20159].[/COLOR]</property>
 		<onclick condition="!Skin.String(TopVideoInformationOverlay)">Skin.SetString(TopVideoInformationOverlay, 100)</onclick>
 		<onclick condition="Skin.String(TopVideoInformationOverlay, 100)">Skin.SetString(TopVideoInformationOverlay, 95)</onclick>
 		<onclick condition="Skin.String(TopVideoInformationOverlay, 95)">Skin.SetString(TopVideoInformationOverlay, 90)</onclick>
@@ -380,7 +380,7 @@
 		<label>$LOCALIZE[78215] ($LOCALIZE[74829])</label>
 		<label2>$INFO[Skin.String(MenuButtonsOverlay)]</label2>
 		<thumb></thumb>
-		<property name="rinfo"></property>
+		<property name="rinfo">$LOCALIZE[31134]$LOCALIZE[31132]</property>
 		<onclick condition="!Player.HasVideo">RunScript(script.featherence.service,,?mode=200&amp;value=MenuButtonsOverlay)</onclick>
 		<onclick condition="Player.HasVideo">Notification($LOCALIZE[257],$LOCALIZE[70100],2000)</onclick>
 		<visible>Container(100).Hasfocus(24)</visible>
@@ -569,6 +569,16 @@
 		<thumb></thumb>
 		<property name="rinfo">$LOCALIZE[74535]</property>
 		<onclick>SetProperty(TEMP,KeyboardMainColor,home)</onclick>
+		<onclick>ActivateWindow(1170)</onclick>
+		<visible>Container(100).Hasfocus(23)</visible>
+	  </item>
+	  
+	  <item id="257" description="בחירת צבע (מסגרת בחירה)">
+		<label>$LOCALIZE[78020] ($LOCALIZE[31044])</label>
+		<label2>$INFO[Skin.String(SelectedFrameColor.name)]</label2>
+		<thumb></thumb>
+		<property name="rinfo">$LOCALIZE[31045]</property>
+		<onclick>SetProperty(TEMP,SelectedFrameColor,home)</onclick>
 		<onclick>ActivateWindow(1170)</onclick>
 		<visible>Container(100).Hasfocus(23)</visible>
 	  </item>

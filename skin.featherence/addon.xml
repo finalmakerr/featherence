@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="skin.featherence" version="0.1.4" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.1.5" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
 	<!--<import addon="repository.featherence" version="1.1.0" />-->
@@ -22,11 +22,12 @@
 - Choose any color for almost anything! (WIP)
 - Full save/load skin image.
 - Varied buttons and views effects.
-- Enchanced widget.
+- Enchanced widget and network status.
 - Full genres support.
 - Some views have an additional special features.
 - Dynamic weather and widgets fanart (optional).
 - Interactive video window &amp; OSD while navaigating.
+- Startup music and/or video (optional).
 - Smart subtitle module display current and history choosen subtitles, smart search and auto subs hosts finder.</description>
     <disclaimer></disclaimer>
 	<email>featherence@groups.facebook.com</email>

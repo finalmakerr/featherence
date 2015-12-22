@@ -60,7 +60,7 @@
 			<control type="image" description="עונה ופרק">
 			  <height>30</height>
 			  <width>270</width>
-			  <texture background="false">images/black.png</texture>
+			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 			</control>
 			<control type="label" description="עונה ופרק">
 			  <align>center</align>
@@ -212,7 +212,7 @@
 				<control type="image" description="עונה ופרק">
 				  <height>30</height>
 				  <width>270</width>
-				  <texture background="false">images/black.png</texture>
+				  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 				</control>
 				<control type="label" description="עונה ופרק">
 				  <align>center</align>

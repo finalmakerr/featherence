@@ -79,7 +79,6 @@
 		
 		<include condition="Window.IsVisible(DialogKeyboard.xml)">CenterMenuContent_DialogKeyboard</include>
 		<content>
-		  <!--<include>skinshortcuts-group-[SubContent100]</include>-->
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(Button.ID_) + !StringCompare(Window(home).Property(Button.ID),N/A)">SubContent_X90</include>
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),90)">SubContent_90</include>
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),91)">SubContent_91</include>
@@ -197,7 +196,7 @@
 		  <posx>0</posx>
 		  <width>480</width>
 		  <height>70</height>
-		  <texture border="40">misc/frames/selector.png</texture>
+		  <texture border="40" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
 		</control>
       </control>

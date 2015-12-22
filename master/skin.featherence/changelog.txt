@@ -5,7 +5,7 @@ WIP - WORK IN PROGRESS
 - Horizontal view display position for multipages.
 
 ------------------------
-Featherence v0.1.5 (xx-Dec-15)
+Featherence v0.2.0 (22-Dec-15)
 ------------------------
 - Added few more colors options.
 - Added default startup music.
@@ -13,10 +13,13 @@ Featherence v0.1.5 (xx-Dec-15)
 - Option to hide selector frame.
 - Option to color selector frame.
 - Option to fade out unselected thumbnails for some views.
+- Minor update default design.
 - Update views.
 - Update inprogress and watched markers.
 - Update scrollbar.
 - Update edit manual color module.
+- *Major update save/load script.
+*Previous backups will not work.
 
 ------------------------
 Featherence v0.1.4 (17-Dec-15)

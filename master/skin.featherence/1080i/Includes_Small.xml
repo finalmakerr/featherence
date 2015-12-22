@@ -175,7 +175,7 @@
 		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,0" time="0">Conditonal</animation>
 		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="265,0" time="0">Conditonal</animation>
 		<aspectratio>scale</aspectratio>
-		<posy>-14</posy>
+		<posy>0</posy>
 		<width>1920</width>
 		<include condition="Skin.String(MenuDesign,4)">Control_Pos43</include>
 		<height>552</height>
@@ -195,7 +195,7 @@
 	  <!--<control type="image" description="רקע בית תחתון (שחור)">
 		<height>1080</height>
 		<posy>552</posy>
-		<texture>images/black.png</texture>
+		<texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 	  </control>-->
 	  <control type="videowindow" id="7011" description="חלון וידאו/אודיו">
 		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,0" time="0">Conditonal</animation>
@@ -211,7 +211,7 @@
 		<height>1080</height>
 		<width>1920</width>
 		<posy>552</posy>
-		<texture>images/black.png</texture>
+		<texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 		<visible>Player.HasVideo + Control.IsVisible(7011)</visible>
 		<visible>!Skin.String(MenuDesign,4)</visible>
 	  </control>
@@ -276,8 +276,7 @@
 		  <animation description="No full Fanart-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,30" start="100,100" end="86.3,200" time="0">Conditional</animation>
 		  <include condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)]">Control_Pos42</include>
 		  <visible>Control.IsVisible(7011)</visible>
-		  <bordersize>10</bordersize>
-		  <texturefocus border="10">misc/frames/selector.png</texturefocus>
+		  <texturefocus border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texturefocus>
 		  <label></label>
 		  <posx>0</posx>
 		  <posy>30</posy>
@@ -306,7 +305,7 @@
 		<aspectratio>stretch</aspectratio>
 		<height>1080</height>
 		<posy>0</posy>
-		<texture>images/black.png</texture>
+		<texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 	  </control>
 	  <control type="videowindow" id="7011" description="חלון וידאו">
 		<posy>-552</posy>
@@ -319,7 +318,7 @@
 		<height>1080</height>
 		<width>1920</width>
 		<posy>0</posy>
-		<texture>images/black.png</texture>
+		<texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 		<visible>Player.HasVideo + Control.IsVisible(7011)</visible>
 	  </control>
 	  <control type="image" id="7021" description="רקע תחתון צבע">
@@ -428,9 +427,8 @@
 	  </control>
 	  <control type="button" id="7017">
 		<visible>Control.IsVisible(7011)</visible>
-		
 		<bordersize>10</bordersize>
-		<texturefocus border="10">misc/frames/selector.png</texturefocus>
+		<texturefocus border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texturefocus>
 		<texturenofocus colordiffuse="FFFFAAFF"></texturenofocus>
 		<posy>-522</posy>
 		<onclick condition="Player.HasVideo">Fullscreen</onclick>
@@ -482,17 +480,17 @@
   </include>
   <include name="BlackBackground">
     <control type="image" description="Default BG">
- <width>1920</width>
- <height>1080</height>
- <texture>images/black.png</texture>
+	 <width>1920</width>
+	 <height>1080</height>
+	 <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
     </control>
   </include>
   <include name="BlackBackground2">
     <control type="image" description="Default BG">
 	  <animation condition="true" effect="fade" end="70" time="200">Conditional</animation>
- <width>1920</width>
- <height>1080</height>
- <texture>images/black.png</texture>
+		 <width>1920</width>
+		 <height>1080</height>
+		 <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
     </control>
   </include>
   <include name="PVRprogress">
@@ -539,43 +537,123 @@
 	<onload condition="[Window.IsActive(MyVideoNav.xml) | Window.IsActive(MyPics.xml)] + ControlGroup(9000).HasFocus() + StringCompare(Container.Viewmode,$LOCALIZE[31014])">Control.SetFocus(58)</onload>
 	<onload condition="Window.IsActive(MyVideoNav.xml) + ControlGroup(9000).HasFocus() + StringCompare(Container.Viewmode,$LOCALIZE[31013])">Control.SetFocus(57)</onload>
   </include>
+  
   <include name="InProgressBadge">
-    <control type="group" description="סדרות בתהליך">		  
-	  <height>312</height>
-	  <posx>23</posx>
-	  <posy>19</posy>
-	  <width>237</width>
-	  <visible>!IsEmpty(Control.GetLabel(11300))</visible>
-	  <control type="image" description="אדום">
-		<aspectratio>keep</aspectratio>
-		<height>50</height>
-		<posx>80r</posx>
-		<posy>4</posy>
-		<texture>badges/BadgeCount.png</texture>
-		<width>70</width>
-		<visible>!Container.Content(Seasons)</visible>
+    <control type="group" description="סדרות בתהליך">
+	  <height>60</height>
+	  <posx>70r</posx>
+	  <posy>5</posy>
+	  <width>65</width>
+	  <!--<visible>Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0)</visible>-->
+	  <visible>!IsEmpty(Control.GetLabel(11300)) | IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + !IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+	  <control type="image" description="">
+		<include>Fade_TopVideoInformationOverlay</include>
+		<height>40</height>
+		<posx>0</posx>
+		<posy>0</posy>
+		<texture diffuse="buttons/ButtonE0.png" colordiffuse="$VAR[TopVideoInformationColor]" border="0">buttons/ButtonA0.png</texture>
+		<width>100%</width>
+		<!--<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases2) + [Control.IsVisible(54) | Control.IsVisible(58)]]</visible>
+		<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases) + [Control.IsVisible(57)]]</visible>-->
 	  </control>
-	  <control type="image" description="שחור">
-		<aspectratio>keep</aspectratio>
-		<height>50</height>
-		<posx>80r</posx>
-		<posy>4</posy>
-		<texture>badges/BadgeCount.png</texture>
-		<width>70</width>
-		<visible>Container.Content(Seasons)</visible>
-	  </control>		  
 	  <control type="label" id="11300" description="">					
-		<angle>0</angle>
-		<font>size28</font>
-		<height>30</height>
+		<include>LabelC2</include>
+		<height>50%</height>
 		<label>$VAR[Button11300]</label>
-		<posx>80r</posx>
-		<posy>10</posy>
+		<posx>0</posx>
+		<posy>6</posy>
+		<width>100%</width>
+	  </control>	
+	  <control type="image" description="סמן נצפה רגיל">
+		  <height>80%</height>
+		  <posx>6</posx>
+		  <posy>-4</posy>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">$VAR[Overlay2]</texture>
+		  <width>80%</width>
+		  <visible>IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + !IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+		  <!--<visible>!Skin.HasSetting(ShowDVDCases2) | Skin.HasSetting(ShowDVDCases2) + !Control.IsVisible(54) + !Control.IsVisible(58)</visible>
+		  <visible>Skin.HasSetting(ShowDVDCases) | !Skin.HasSetting(ShowDVDCases) + !Control.IsVisible(57)</visible>-->
+		  <!--<visible>!IsEmpty(Control.GetLabel(1104)) | Control.IsVisible(50)</visible>--> <!-- | Window.IsVisible(DialogFullScreenInfo.xml)-->
+      </control>	  
+	  <control type="image" description="סמן נצפה">
+	  <!--<animation condition="Control.IsVisible(57)" effect="zoom" center="60,-10" start="100,100" end="70,70" time="0">Conditional</animation>-->
+		  <aspectratio align="left">keep</aspectratio>
+		  <height>285</height>
+		  <posx>-165</posx>
+		  <posy>-4</posy>
+		  <width>345</width>
+		  <texture>$VAR[Overlay]</texture>
+		  <visible>IsEmpty(Control.GetLabel(11156))</visible>
+      </control>
+	</control>
+  </include>
+  
+  <include name="InProgressBadge2">
+    <control type="group" description="סדרות בתהליך">	  
+	  <animation condition="Control.IsVisible(57)" effect="zoom" center="-203,-34" start="100,100" end="80,80" time="0">Conditional</animation>
+	  <!--<animation condition="Control.IsVisible(50)" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
+	  <animation condition="Control.IsVisible(50)" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
+	  <height>312</height>
+	  <posx>137</posx>
+	  <posy>37</posy>
+	  <width>237</width>	  
+	  <visible>Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) | StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	  <control type="image" description="">
+		<animation condition="true" effect="fade" start="70" end="70" time="0">Conditional</animation>
+		<height>40</height>
+		<posx>70r</posx>
+		<posy>4</posy>
+		<!--<texture diffuse="buttons/ButtonE0.png" colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>-->
+		<texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
+		<width>60</width>
+		<!--<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases2) + [Control.IsVisible(54) | Control.IsVisible(58)]]</visible>
+		<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases) + [Control.IsVisible(57)]]</visible>-->
+	  </control>		  
+	  <control type="label" description="">					
+		<angle>0</angle>
+		<include>LabelC2</include>
+		<height>30</height>
+		<label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
+		<posx>70r</posx>
+		<posy>8</posy>
 		<align>center</align>
 		<textcolor>White2</textcolor>
-		<width>70</width>
-	  </control>		  
+		<visible>IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+		<width>60</width>
+	  </control>
+	  <control type="image" description="סמן נצפה רגיל">
+		  <height>60</height>
+		  <posx>70r</posx>
+		  <posy>-6</posy>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">$VAR[Overlay2]</texture>
+		  <width>60</width>
+		  <visible>![IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]</visible>
+		  <!--<visible>!Skin.HasSetting(ShowDVDCases2) | Skin.HasSetting(ShowDVDCases2) + !Control.IsVisible(54) + !Control.IsVisible(58)</visible>
+		  <visible>Skin.HasSetting(ShowDVDCases) | !Skin.HasSetting(ShowDVDCases) + !Control.IsVisible(57)</visible>-->
+      </control>	  
 	</control>
+    <control type="image" description="סמן נצפה">
+	  <!--<animation condition="Control.IsVisible(57)" effect="zoom" center="60,-10" start="100,100" end="70,70" time="0">Conditional</animation>-->
+	  <aspectratio align="left">keep</aspectratio>
+	  <height>460</height>
+	  <posx>7</posx>
+	  <posy>30</posy>
+	  <width>350</width>
+	  <texture>$VAR[Overlay]</texture>
+	  <visible>[[Control.IsVisible(54) | Control.IsVisible(58)] + Skin.HasSetting(ShowDVDCases2)]</visible>
+	  <visible>IsEmpty(Control.GetLabel(11156))</visible>
+    </control>
+	<control type="image" description="סמן נצפה">
+	  <!--<animation condition="Control.IsVisible(57)" effect="zoom" center="60,-10" start="100,100" end="70,70" time="0">Conditional</animation>-->
+	  <aspectratio align="left">keep</aspectratio>
+	  <height>305</height>
+	  <posx>24</posx>
+	  <posy>19</posy>
+	  <width>345</width>
+	  <texture>$VAR[Overlay]</texture>
+	  <visible>[Control.IsVisible(57) + !Skin.HasSetting(ShowDVDCases)]</visible>
+	  <visible>IsEmpty(Control.GetLabel(11156))</visible>
+    </control>
   </include>
   <include name="AutoView" description="Videoviews.xml">
     <control type="button">
@@ -710,7 +788,7 @@
 	<posx>360</posx>
 	<posy>7</posy>
 	<visible>Player.HasVideo</visible>
-	<visible>!SubString(Player.Title,playfeatherence)</visible>
+	<visible>!SubString(MusicPlayer.Title,featherence)</visible>
 	<control type="image">
 	  <texture>$INFO[VideoPlayer.VideoResolution,badges/video/,.png]</texture>
 	  <visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
@@ -766,18 +844,6 @@
 	</control>
    </control>
   </include>
-  <include name="featherencelogo">
-    <control type="image" id="3200">
-	  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1750,0">Conditonal</animation>
-	  <aspectratio>stretch</aspectratio>
-	  <height>150</height>
-	  <posx>-24</posx>
-	  <posy>-57</posy>
-	  <width>150</width>
-	  <texture>osd/featherence_pause4.png</texture>
-	  <visible>StringCompare(Control.GetLabel(1121),System.AddonVersion(skin.featherence)) + !Player.HasMedia</visible>
-    </control>
-  </include>
   <include name="IconsInformation">
    <control type="grouplist">
 	<align>right</align>
@@ -822,24 +888,30 @@
 	  <visible>Control.IsVisible(60)</visible>
 	  <visible>!Control.IsVisible(54)</visible>
 	  <visible>IntegerGreaterThan(Container.NumPages,1) | Window.IsVisible(FileBrowser.xml)</visible>
+	  <height>950</height>
 	  <width>20</width>
-	  <posx>5</posx>
-	  <posy>60</posy>
+	  <posx>0</posx>
+	  <posy>147</posy>
 	  <control type="image" description="מסגרת">
-		<height>1120</height>
-		<posx>-10</posx>
+		<height>100%</height>
+		<posx>0</posx>
+		<bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
+		<bordersize>2</bordersize>
 		<!--<texture border="20">buttons/ButtonEF.png</texture>-->
-		<texture>buttons/LineV.png</texture>
+		<texture colordiffuse="$VAR[MenuColor]" border="0">buttons/ButtonA0.png</texture>
 		<visible></visible>
 	  </control>
 	  <control type="image" description="מסגרת">
-		<posx>-10</posx>
-		<texture>buttons/LineV.png</texture>
-		<!--<texture border="10">buttons/ButtonEF.png</texture>-->
+		<height>100%</height>
+		<posx>0</posx>
+		<bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
+		<bordersize>2</bordersize>
+		<!--<texture border="20">buttons/ButtonEF.png</texture>-->
+		<texture colordiffuse="$VAR[MenuColor]" border="0">buttons/ButtonA0.png</texture>
 		<visible></visible>
 	  </control>
 	  <control type="scrollbar" id="60" description="כלי גלילה">
-		<height>920</height>
+		<height>100%</height>
 		<onright condition="Control.IsVisible(7011) + StringCompare(System.Language,Hebrew)">7017</onright>
 		<onright condition="Player.HasAudio+ StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onright>
 		<onleft condition="[Window.IsVisible(DialogPeripheralSettings.xml) | Window.IsVisible(SettingsCategory.xml)] + Control.IsVisible(5) + StringCompare(System.Language,Hebrew)">5</onleft>
@@ -903,14 +975,6 @@
 	  </control>
 	</control>
   </include>
-   
-  <include name="WatchedStatus">
-	<control type="image" description="סמן נצפה">
-	  <aspectratio align="left">keep</aspectratio>
-	  <texture>$VAR[Overlay]</texture>
-	  <visible>!IsEmpty(Control.GetLabel(1104)) | Control.IsVisible(50)</visible> <!-- | Window.IsVisible(DialogFullScreenInfo.xml)-->
-	</control>
-  </include>
   
   <include name="VisibleFadeEffect" description="OpenELEC - mainWindow.xml">
   </include>
@@ -961,12 +1025,12 @@
 	  <onfocus condition="Container.Content(Episodes) + !Player.HasVideo + !IsEmpty(ListItem.Plot) + [IsEmpty(Window(home).Property(TopVideoInformation5)) | !StringCompare(ListItem.Plot,Window(home).Property(TopVideoInformation5))]">SetProperty(TopVideoInformation5,$INFO[ListItem.Plot],home)</onfocus>
 	  <onfocus condition="Container.Content(Episodes) + !Player.HasVideo + [!IsEmpty(ListItem.Genre) | !IsEmpty(Window(home).Property(ListItemGenre))] + [[IsEmpty(Window(home).Property(TopVideoInformation6))] | [!IsEmpty(ListItem.Genre) + !StringCompare(ListItem.Genre,Window(home).Property(TopVideoInformation6))] | [!IsEmpty(Window(home).Property(ListItemGenre)) + !StringCompare(Window(home).Property(ListItemGenre),Window(home).Property(TopVideoInformation6))]]">AlarmClock(TopVideoInformation6,SetProperty(TopVideoInformation6,$VAR[TopVideoInformation6],home),00:03,silent)</onfocus>
 	  
-	  <onfocus condition="Container.Content(Episodes) + !Player.HasVideo + [!IsEmpty(ListItem.Genre) | !IsEmpty(Window(home).Property(ListItemGenre))] + [[IsEmpty(Window(home).Property(TopVideoInformation6))] | [!IsEmpty(ListItem.Genre) + !StringCompare(ListItem.Genre,Window(home).Property(TopVideoInformation6))] | [!IsEmpty(Window(home).Property(ListItemGenre)) + !StringCompare(Window(home).Property(ListItemGenre),Window(home).Property(TopVideoInformation6))]]">Notification($VAR[TopVideoInformation6],1,1000)</onfocus>
+	  <!--<onfocus condition="Container.Content(Episodes) + !Player.HasVideo + [!IsEmpty(ListItem.Genre) | !IsEmpty(Window(home).Property(ListItemGenre))] + [[IsEmpty(Window(home).Property(TopVideoInformation6))] | [!IsEmpty(ListItem.Genre) + !StringCompare(ListItem.Genre,Window(home).Property(TopVideoInformation6))] | [!IsEmpty(Window(home).Property(ListItemGenre)) + !StringCompare(Window(home).Property(ListItemGenre),Window(home).Property(TopVideoInformation6))]]">Notification($VAR[TopVideoInformation6],1,1000)</onfocus>-->
 	  
 	  <onfocus description="7_he" condition="StringCompare(System.Language,Hebrew) + [Container.Content(Episodes) + !Player.HasVideo + !SubString(ListItem.Label,..,left) + !IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Season) + [IsEmpty(Window(home).Property(TopVideoInformation7)) | !StringCompare(ListItem.Genre,Window(home).Property(TopVideoInformation7))]]">AlarmClock(TopVideoInformation7,SetProperty(TopVideoInformation7,"[COLOR Yellow][B]$INFO[ListItem.Episode][/B][/COLOR] $LOCALIZE[20452]: [COLOR Yellow][B]$INFO[ListItem.Season][/B][/COLOR] $LOCALIZE[20373]: [COLOR Yellow][B]$INFO[ListItem.Title] [/B][/COLOR] $LOCALIZE[31408]: ", home),00:03,silent)</onfocus>
 	  <onfocus description="7_en" condition="!StringCompare(System.Language,Hebrew) + [Container.Content(Episodes) + !Player.HasVideo + !SubString(ListItem.Label,..,left) + !IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Season) + [IsEmpty(Window(home).Property(TopVideoInformation7)) | !StringCompare(ListItem.Genre,Window(home).Property(TopVideoInformation7))]]">AlarmClock(TopVideoInformation7,SetProperty(TopVideoInformation7,"$LOCALIZE[31408]: [COLOR Yellow][B]$INFO[ListItem.Title][/B][/COLOR] S: [COLOR Yellow][B]$INFO[ListItem.Season][/B][/COLOR] E: [COLOR Yellow][B]$INFO[ListItem.Episode][/B][/COLOR]", home),00:03,silent)</onfocus>
 	  <onfocus condition="Container.Content(Episodes) + !Player.HasVideo + !IsEmpty(ListItem.TVShowTitle) + [IsEmpty(Window(home).Property(TopVideoInformation8)) | !StringCompare(ListItem.TVShowTitle,Window(home).Property(TopVideoInformation8))]">AlarmClock(TopVideoInformation8,SetProperty(TopVideoInformation8,$INFO[ListItem.TVShowTitle],home),00:03,silent)</onfocus>
-	  <onfocus condition="Skin.HasSetting(Admin) + !Player.HasVideo + !Window.IsVisible(DialogKaiToast.xml) + Container.Content(Episodes) + !StringCompare(ListItem.TVShowTitle,Window(home).Property(TopVideoInformation7))">AlarmClock(TopVideoInformation,Notification(Admin,New TopVideoInformation7,1000),00:03,silent)</onfocus>
+	  <!--<onfocus condition="Skin.HasSetting(Admin) + !Player.HasVideo + !Window.IsVisible(DialogKaiToast.xml) + Container.Content(Episodes) + !StringCompare(ListItem.TVShowTitle,Window(home).Property(TopVideoInformation7))">AlarmClock(TopVideoInformation,Notification(Admin,New TopVideoInformation7,1000),00:03,silent)</onfocus>-->
 	  
 	  <onfocus condition="!IsEmpty(ListItem.Duration) + [IsEmpty(Window(home).Property(ListItemDuration)) | !StringCompare(ListItem.Duration,Window(home).Property(ListItemDuration))] + !IntegerGreaterThan(ListItem.Duration,1000)">AlarmClock(ListItemDuration,SetProperty(ListItemDuration,$INFO[ListItem.Duration],home),00:03,silent)</onfocus>
 	  <visible>false</visible>

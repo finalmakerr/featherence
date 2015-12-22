@@ -1674,7 +1674,7 @@ elif mode >= 200 and mode <= 249:
 		------------------------------'''
 		from variables2 import *
 		name = "Save and Load your skin design"
-		extra = "" ; formula = "" ; formula_ = "" ; path = "" ; file1 = "" ; file2 = "" ; file3 = "" ; returned = "" ; custommediaL = []
+		extra = "" ; formula = "" ; formula_ = "" ; path = "" ; filename = "" ; returned = "" ; custommediaL = []
 		list = ['-> (Exit)', 'Save', 'Load', 'Templates']
 		
 		if list != []:
@@ -1691,59 +1691,38 @@ elif mode >= 200 and mode <= 249:
 			elif returned == 3 or (returned == "" and value == "Templates"): path = os.path.join(featherenceservice_path, 'resources', 'skin_templates', '')
 			else: path = ""
 			
+			list2 = ['-> (Exit)', 'New']
 			if path != "":
 				'''read existing files'''
-				file1 = os.path.join(path, "Skin_SaveDesign1.txt")
-				file2 = os.path.join(path, "Skin_SaveDesign2.txt")
-				file3 = os.path.join(path, "Skin_SaveDesign3.txt")
-				'''---------------------------'''
-				if os.path.exists(file1):
-					infile1 = read_from_file(file1, silent=True)
-					filename1 = regex_from_to(infile1, "&name=", "&", excluding=True)
-				else: filename1 = None
-				if os.path.exists(file2):
-					infile2 = read_from_file(file2, silent=True)
-					filename2 = regex_from_to(infile2, "&name=", "&", excluding=True)
-				else: filename2 = None
-				if os.path.exists(file3):
-					infile3 = read_from_file(file3, silent=True)
-					filename3 = regex_from_to(infile3, "&name=", "&", excluding=True)
-				else: filename3 = None
-				
-				value1 = value + space + "1" + space + "(" + str(filename1) + ")"
-				value2 = value + space + "2" + space + "(" + str(filename2) + ")"
-				value3 = value + space + "3" + space + "(" + str(filename3) + ")"
-				
-				'''save/load'''
-				if filename1 == None: value1 = '[COLOR=Red]' + value1 + '[/COLOR]'
-				if filename2 == None: value2 = '[COLOR=Red]' + value2 + '[/COLOR]'
-				if filename3 == None: value3 = '[COLOR=Red]' + value3 + '[/COLOR]'
+				filesT = {}
+				for files in os.listdir(path):
+					filesname = ""
+					if '.zip' in files and not '.txt' in files:
+						if 'Featherence_' in files:
+							filesname = regex_from_to(files, "Featherence_", ".zip", excluding=True)
+							if filesname != "" and filesname != None:
+								filesT_ = { filesname: files }
+								filesT.update(filesT_)
+								list2.append(filesname)
+								extra = 'files' + space2 + str(files) + newline + 'filesname' + space2 + str(filesname)
+								'''---------------------------'''
 			
-			list = ['-> (Exit)', value1, value2, value3] #, 'Manual'
-			
-			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list2,0)
 			
 			if returned2 == -1: printpoint = printpoint + "9"
 			elif returned2 == 0: printpoint = printpoint + "8"
 			else: printpoint = printpoint + "7"
 			
 			if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
-				Custom1000(name,0,str(list[returned2]),5)
-				
-				if returned2 == 1: printpoint = printpoint + "1" #1
-				elif returned2 == 2: printpoint = printpoint + "2" #2
-				elif returned2 == 3: printpoint = printpoint + "3" #3
-				elif value2 == 'Manual': printpoint = printpoint + "M"
-				
 				if returned == 1: printpoint = printpoint + "A" #SAVE
 				elif returned == 2 or (returned == "" and value == "Templates"): printpoint = printpoint + "B" #LOAD
 				elif returned == 3: printpoint = printpoint + "C" #DEFAULT
-				
 				if "A" in printpoint:
 					'''------------------------------
 					---Save--------------------------
 					------------------------------'''
-					Custom1000(name,20,str(list[returned2]),10)
+					Custom1000(str(list[returned]),0,str(list2[returned2]),5)
+					
 					formula = ""
 					formula = "Skin.Theme=2" + skincurrenttheme
 					for i in range(18,20):
@@ -1772,8 +1751,6 @@ elif mode >= 200 and mode <= 249:
 								if os.path.exists(y2): formula = formula + newline + 'background'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
 								else: formula = formula + newline + 'background'+str(i)+'=0' + str(x)
 								#print 'test123 ' + 'x' + space2 + str(x) + newline + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'skin_backgrounds_path' + space2 + str(skin_backgrounds_path)
-							
-						
 					for i in range(90,120):
 						x = idT.get('id'+str(i))
 						if x != "" and x != None:
@@ -1827,7 +1804,7 @@ elif mode >= 200 and mode <= 249:
 											'''---------------------------'''
 							else: extra = extra + newline + 'label not exists!' + space + 'x' + space2 + str(x)
 						else: extra = extra + newline + 'id not exists!' + space + 'x' + space2 + str(x)
-					Custom1000(name,50,str(list[returned2]),5)
+					Custom1000(str(list[returned]),50,str(list2[returned2]),5)
 					for y in list1:
 						x = xbmc.getInfoLabel('Skin.HasSetting('+y+')')
 						formula = formula + newline + y+'=1' + str(x)
@@ -1845,7 +1822,7 @@ elif mode >= 200 and mode <= 249:
 						formula = formula + newline + y+'.name'+'=1' + str(x2)
 						'''---------------------------'''
 					
-					Custom1000(name,70,str(list[returned2]),5)
+					Custom1000(str(list[returned]),70,str(list2[returned2]),5)
 					for y in list0c2:
 						x = xbmc.getInfoLabel('Skin.String('+y+')')
 						formula = formula + newline + y+'=0' + str(x)
@@ -1856,130 +1833,125 @@ elif mode >= 200 and mode <= 249:
 						formula = formula + newline + y+'=0' + str(x)
 						'''---------------------------'''
 					
-					if "1" in printpoint:
-						if filename1 == None: filename = ""
-						else: filename = filename1
-					elif "2" in printpoint:
-						if filename2 == None: filename = ""
-						else: filename = filename2
-					elif "3" in printpoint:
-						if filename3 == None: filename = ""
-						else: filename = filename3
-					
-					Custom1000(name,90,str(list[returned2]),5)
+					if returned2 == 1: filename = ""
+					else:
+						filename = str(list2[returned2])
+					Custom1000(str(list[returned]),90,str(list2[returned2]),5)
 					filename = dialogkeyboard(filename, localize(21821), 0, "", "", "") #Description
-					filename_ = "&name="+str(filename)+"&"
-					formula = filename_ + newline + formula
-					
-					#formula.decode('utf-8').encode('utf-8')
-					try: formula.encode('utf-8')
-					except: pass
-					
-					i = 0
-					if "1" in printpoint: i = '1'
-					elif "2" in printpoint: i = '2'
-					elif "3" in printpoint: i = '3'
-					elif "4" in printpoint: i = ''
-					else: i = 0
-					
-					write_to_file(featherenceservice_addondata_path + "Skin_SaveDesign" + str(i) + ".txt", str(formula), append=False, silent=True, utf8=False)
-					CreateZip(featherenceservice_addondata_path, featherenceservice_addondata_path + 'Skin_SaveDesign' + str(i), filteron=['Skin_SaveDesign1.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
-					CreateZip(featherenceserviceaddondata_media_path, featherenceservice_addondata_path + 'Skin_SaveDesign' + str(i), filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
-					'''---------------------------'''
-					Custom1000(name,100,str(list[returned2]),0)
+					if filename != 'skip' and filename != "":
+						try: formula.encode('utf-8')
+						except: pass
+						
+						write_to_file(featherenceservice_addondata_path + "Featherence_" + ".txt", str(formula), append=False, silent=True, utf8=False) ; xbmc.sleep(200)
+						if not os.path.exists(featherenceservice_addondata_path + "Featherence_" + ".txt"):
+							notification_common('17')
+							extra = extra + newline + featherenceservice_addondata_path + "Featherence_" + ".txt" + space + 'Is not found!'
+						else:
+							zipname = featherenceservice_addondata_path + 'Featherence_' + str(filename)
+							CreateZip(featherenceservice_addondata_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
+							CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
+							'''---------------------------'''
+							Custom1000(str(list[returned]),100,str(list2[returned2]),0)
+					else: notification_common('9') ; extra = extra + newline + 'filename is empty!'
 					
 				elif "B" in printpoint or "C" in printpoint:
 					'''------------------------------
 					---Load/Templates----------------
 					------------------------------'''
-
-					if "1" in printpoint:
-						if filename1 == None: printpoint = printpoint + "Q"
-						else: file = file1
-					elif "2" in printpoint:
-						if filename2 == None: printpoint = printpoint + "Q"
-						else: file = file2
-					elif "3" in printpoint:
-						if filename2 == None: printpoint = printpoint + "Q"
-						else: file = file3
+					filename = str(list2[returned2])
+					file = filesT.get(filename)
 					
-					if "Q" in printpoint or file == "":
+					if not os.path.exists(path + file):
 						'''nothing to load'''
 						notification("There is no data to load!", "You should create a save session", "", 4000)
 					else:
 						#formula_ = formula_.split(',')
 						#formula_ = CleanString(formula_, filter=[])
-						mode201('9', admin, name, '') #Clear current strings
-						Custom1000(name,10,str(list[returned2]),5) ; source = file.replace('.txt','.zip', 1) ; ExtractAll(source, featherenceserviceaddondata_media_path)
-						Custom1000(name,20,str(list[returned2]),10)
-						import fileinput
-						count = 0
-						for line in fileinput.input([file]):
-							count += 1
-							if count >= 10:
-								count = 0
-								property_1000progress = xbmc.getInfoLabel('Window(home).Property(1000progress)')
-								try: test = int(property_1000progress) + 2
-								except: property_1000progress = 20
-								Custom1000(name,int(property_1000progress) + 2,str(list[returned2]),10)
-							x = "" ; x1 = "" ; x2 = "" ; x3 = ""
-							if "=0" in line:
-								'''Skin.String'''
-								x = line.replace("=0","=")
-								x1 = find_string(x, "", "=")
-								x2 = find_string(x, "=", "")
-								x1 = x1.replace("=","")
-								x2 = x2.replace("=","")
-								x2 = x2.replace("\n","")
-								if x2 != "" and x2 != None:
-									setSkinSetting('0', str(x1), str(x2))
-								
-							elif "=1" in line:
-								'''Skin.HasSetting'''
-								x = line.replace("=1","=")
-								x1 = find_string(x, "", "=")
-								x2 = find_string(x, "=", "")
-								x1 = x1.replace("=","")
-								x2 = x2.replace("=","")
-								x2 = x2.replace("\n","")
-								if x2 == "" or x2 == 'None' or x2 == None: x3 = "false"
-								else:
-									x3 = "true" ; x2 = "*" + x2 + "*"
-									setSkinSetting('1', str(x1), str(x3))
-							
-							elif "=2" in line:
-								'''xbmc.executebuiltin'''
-								x = line.replace("=2","=")
-								x1 = find_string(x, "", "=")
-								x2 = find_string(x, "=", "")
-								x1 = x1.replace("=","")
-								x2 = x2.replace("=","")
-								x2 = x2.replace("\n","")
-								
-								if x1 == "Skin.Theme":
-									pass
-									#xbmc.executebuiltin('Skin.Theme(SKINDEFAULT)')
-									#xbmc.executehttpapi( "SetGUISetting(3;lookandfeel.skintheme;%s)"  % x2 )
-									#if x2 == "SKINDEFAULT": xbmc.executebuiltin('Skin.Theme(SKINDEFAULT)')
-									#else: notification(str(x2),"","",3000)
-								#xbmc.executebuiltin(''+x1+'('+ x2 +')')
-								#xbmc.executebuiltin('AlarmClock(delayskinupdate, '+x1+'('+ x2 +'), 00:02, silent)')
-							else: pass
-							
-							if admin: extra = extra + newline + space + "line" + space2 + str(line) + space + "x" + space2 + str(x) + space + "x1" + space2 + str(x1) + space + "x2" + space2 + str(x2) + space + "x3" + space2 + str(x3)
-							'''---------------------------'''
+						if os.path.exists(featherenceservice_addondata_path + 'Featherence_.txt'):
+							removefiles(featherenceservice_addondata_path + 'Featherence_.txt')
+						Custom1000(str(list[returned]),10,str(list2[returned2]),5) ; ExtractAll(path + file, featherenceservice_addondata_path) ; Custom1000(str(list[returned]),20,str(list2[returned2]),10)
 						
-						Custom1000(name,100,str(list[returned2]),5)
-				if not "Q" in printpoint and not "A" in printpoint:
+						if not os.path.exists(featherenceservice_addondata_path + 'Featherence_.txt'):
+							notification("Featherence_.txt is missing!", "Check your zip file!", "", 4000)
+						else:
+							Custom1000(str(list[returned]),0,str(list2[returned2]),5)
+							printpoint = printpoint + "V"
+							mode201('9', admin, name, '') #Clear current strings
+							
+							import fileinput
+							count = 0
+							for line in fileinput.input(featherenceservice_addondata_path + 'Featherence_.txt'):
+								count += 1
+								if count >= 10:
+									count = 0
+									property_1000progress = xbmc.getInfoLabel('Window(home).Property(1000progress)')
+									try: test = int(property_1000progress) + 2
+									except: property_1000progress = 20
+									Custom1000(str(list[returned]),int(property_1000progress) + 2,str(list2[returned2]),5)
+								x = "" ; x1 = "" ; x2 = "" ; x3 = ""
+								if "=0" in line:
+									'''Skin.String'''
+									x = line.replace("=0","=")
+									x1 = find_string(x, "", "=")
+									x2 = find_string(x, "=", "")
+									x1 = x1.replace("=","")
+									x2 = x2.replace("=","")
+									x2 = x2.replace("\n","")
+									if x2 != "" and x2 != None:
+										setSkinSetting('0', str(x1), str(x2))
+									
+								elif "=1" in line:
+									'''Skin.HasSetting'''
+									x = line.replace("=1","=")
+									x1 = find_string(x, "", "=")
+									x2 = find_string(x, "=", "")
+									x1 = x1.replace("=","")
+									x2 = x2.replace("=","")
+									x2 = x2.replace("\n","")
+									if x2 == "" or x2 == 'None' or x2 == None: x3 = "false"
+									else:
+										x3 = "true" ; x2 = "*" + x2 + "*"
+										setSkinSetting('1', str(x1), str(x3))
+								
+								elif "=2" in line:
+									'''xbmc.executebuiltin'''
+									x = line.replace("=2","=")
+									x1 = find_string(x, "", "=")
+									x2 = find_string(x, "=", "")
+									x1 = x1.replace("=","")
+									x2 = x2.replace("=","")
+									x2 = x2.replace("\n","")
+									
+									if x1 == "Skin.Theme":
+										pass
+										#xbmc.executebuiltin('Skin.Theme(SKINDEFAULT)')
+										#xbmc.executehttpapi( "SetGUISetting(3;lookandfeel.skintheme;%s)"  % x2 )
+										#if x2 == "SKINDEFAULT": xbmc.executebuiltin('Skin.Theme(SKINDEFAULT)')
+										#else: notification(str(x2),"","",3000)
+									#xbmc.executebuiltin(''+x1+'('+ x2 +')')
+									#xbmc.executebuiltin('AlarmClock(delayskinupdate, '+x1+'('+ x2 +'), 00:02, silent)')
+								else: pass
+								
+								#print "line" + space2 + str(line)
+								#print "line" + space2 + str(line) + space + "x" + space2 + str(x) + space + "x1" + space2 + str(x1) + space + "x2" + space2 + str(x2) + space + "x3" + space2 + str(x3)
+								extra = extra + newline + space + "line" + space2 + str(line) + space + "x" + space2 + str(x) + space + "x1" + space2 + str(x1) + space + "x2" + space2 + str(x2) + space + "x3" + space2 + str(x3) #Causing Error!
+								'''---------------------------'''
+							
+							Custom1000(str(list[returned]),100,str(list2[returned2]),3)
+				
+				if "V" in printpoint:
 					xbmc.executebuiltin('Action(Back)') ; xbmc.sleep(200)
 					ReloadSkin(admin)
 					xbmc.executebuiltin('ActivateWindow(1173)')
 					'''---------------------------'''
-		
+				else:
+					custom1000W = xbmc.getCondVisibility('Window.IsVisible(Custom1000.xml)')
+					if custom1000W: xbmc.executebuiltin('Action(Back)')
 		text = "path" + space2 + str(path) + newline + \
-		"file1" + space2 + str(file1) + newline + \
-		"file2" + space2 + str(file2) + newline + \
-		"file3" + space2 + str(file3) + newline + \
+		"list" + space2 + str(list) + newline + \
+		"list2" + space2 + str(list2) + newline + \
+		"file" + space2 + str(file) + newline + \
+		"filename" + space2 + str(filename) + newline + \
 		"formula" + space2 + str(formula) + space + "formula_" + space2 + str(formula_) + newline + \
 		"custommediaL" + space2 + str(custommediaL) + newline + \
 		"extra" + space2 + str(extra)
