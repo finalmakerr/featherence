@@ -3,6 +3,7 @@ WIP - WORK IN PROGRESS
 ------------------------
 - Backup to custom location..
 - Horizontal view display position for multipages.
+- Added clear fanart support.
 
 ------------------------
 Featherence v0.2.0 (22-Dec-15)
