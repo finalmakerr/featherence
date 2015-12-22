@@ -3173,6 +3173,7 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "ListItem.Path" + space2 + xbmc.getInfoLabel('ListItem.Path')
 			message = message + newline + "Container.FolderPath" + space2 + xbmc.getInfoLabel('Container.FolderPath')
 			message = message + newline + "Container.FolderName" + space2 + xbmc.getInfoLabel('Container.FolderName')
+			message = message + newline + "ListItem.Overlay" + space2 + xbmc.getInfoLabel('ListItem.Overlay')
 			message = message + newline + '---------------------------'
 			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('ListItem.Art(Poster)') #CUSTOM TEST
 			message = message + newline + "custom2" + space2 + xbmc.getInfoLabel('ListItem.IsCollection') #CUSTOM TEST

@@ -243,7 +243,7 @@
    </include>
    
    <include name="Fade_TopInformationOverlay">
-     <animation condition="!Skin.String(TopInformationOverlay)" effect="fade" end="100" time="0">Conditional</animation>
+     <animation condition="!Skin.String(TopInformationOverlay)" effect="fade" end="70" time="0">Conditional</animation>
 	 
 	 <animation condition="Skin.String(TopInformationOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
 	 <animation condition="Skin.String(TopInformationOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>

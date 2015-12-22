@@ -545,7 +545,7 @@
 	  <posy>5</posy>
 	  <width>65</width>
 	  <!--<visible>Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0)</visible>-->
-	  <visible>!IsEmpty(Control.GetLabel(11300)) | IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + !IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+	  <visible>!IsEmpty(Control.GetLabel(11300)) | StringCompare(ListItem.Overlay,OverlayWatched.png) | IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + !IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
 	  <control type="image" description="">
 		<include>Fade_TopVideoInformationOverlay</include>
 		<height>40</height>
@@ -570,7 +570,7 @@
 		  <posy>-4</posy>
 		  <texture colordiffuse="$VAR[IconUnFocusColor]">$VAR[Overlay2]</texture>
 		  <width>80%</width>
-		  <visible>IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + !IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+		  <visible></visible>
 		  <!--<visible>!Skin.HasSetting(ShowDVDCases2) | Skin.HasSetting(ShowDVDCases2) + !Control.IsVisible(54) + !Control.IsVisible(58)</visible>
 		  <visible>Skin.HasSetting(ShowDVDCases) | !Skin.HasSetting(ShowDVDCases) + !Control.IsVisible(57)</visible>-->
 		  <!--<visible>!IsEmpty(Control.GetLabel(1104)) | Control.IsVisible(50)</visible>--> <!-- | Window.IsVisible(DialogFullScreenInfo.xml)-->

@@ -1223,7 +1223,7 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 						desc = str(prms2['items'][i2][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
 					
 					if not finalurl in playlist and not "Deleted video" in title and not "Private video" in title and finalurl != "":
-						playlist.append(finalurl)
+						#playlist.append(finalurl)
 						playlist2.append(finalurl)
 						count += 1
 						'''---------------------------'''

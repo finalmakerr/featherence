@@ -765,6 +765,7 @@
 			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 			  <visible>!IsEmpty(ListItem.Label) + !StringCompare(ListItem.Label,..)</visible>
 			  <width>310</width>
+			  <visible>!Skin.HasSetting(ShowDVDCases2) | !IsEmpty(Control.GetLabel(11156))</visible>
 			</control>
 			<control type="label" description="כותרת">
 			  <animation condition="Skin.HasSetting(ShowDVDCases2)" effect="fade" start="90" end="90" time="0">Conditional</animation>
@@ -777,6 +778,7 @@
 			  <textcolor>White2</textcolor>
 			  <scroll>false</scroll>
 			  <label>$VAR[VideoInformation1]</label>
+			  <visible>!Skin.HasSetting(ShowDVDCases2) | !IsEmpty(Control.GetLabel(11156))</visible>
 			</control>		
 			<control type="label" description="אורך">
 			  <animation condition="true" effect="fade" end="50" time="200">Conditional</animation>
@@ -893,6 +895,7 @@
 			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 			  <visible>!IsEmpty(ListItem.Label) + !StringCompare(ListItem.Label,..)</visible>
 			  <width>310</width>
+			  <visible>!Skin.HasSetting(ShowDVDCases2) | !IsEmpty(Control.GetLabel(11156))</visible>
 			</control>
 			<control type="label" description="כותרת">
 			  <animation condition="Skin.HasSetting(ShowDVDCases2)" effect="fade" start="90" end="90" time="0">Conditional</animation>
@@ -904,6 +907,7 @@
 			  <height>35</height>
 			  <scroll>false</scroll>
 			  <label>$VAR[VideoInformation1]</label>
+			  <visible>!Skin.HasSetting(ShowDVDCases2) | !IsEmpty(Control.GetLabel(11156))</visible>
 			</control>
 			<control type="label" description="תאריך תמונה">
 			  <include>Fade3</include>
