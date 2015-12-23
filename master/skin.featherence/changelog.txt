@@ -5,6 +5,7 @@ WIP - WORK IN PROGRESS
 - Horizontal view display position for multipages.
 - Added clear fanart support.
 - Update Side List view.
+- Touch device support.
 
 ------------------------
 Featherence v0.2.0 (22-Dec-15)
