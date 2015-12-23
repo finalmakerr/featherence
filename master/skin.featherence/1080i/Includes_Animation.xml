@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
    <include name="Slide1" description="(Backgrounds)">
-     <animation condition="[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(56) | [Control.HasFocus(7017)] | Control.IsVisible(450) | Window.IsVisible(SettingsCategory.xml)] + Player.HasVideo" effect="slide" start="0,0" end="0,552" time="700" reversible="false">Conditional</animation>
+     <animation condition="[Control.IsVisible(50) | Control.IsVisible(54) | Control.IsVisible(56) | [Control.HasFocus(7017)] | Control.IsVisible(450) | Window.IsVisible(SettingsCategory.xml)] + Player.HasVideo + !Control.IsVisible(51)" effect="slide" start="0,0" end="0,552" time="700" reversible="false">Conditional</animation>
 	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017)] + !IsEmpty(Control.GetLabel(11155))" effect="slide" start="0,0" end="0,552" delay="0" time="700" reversible="false">Conditional</animation>
 	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017)] + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,552" delay="3000" time="700" reversible="false">Conditional</animation>
 	 
@@ -14,13 +14,13 @@
    
    <include name="Slide1.1" description="(2 רקע בית)">
      <animation condition="Control.IsVisible(57) + Control.IsVisible(7013) + !IsEmpty(Control.GetLabel(11155)) " effect="slide" start="0,0" end="0,552" delay="0" time="700" reversible="false">Conditional</animation>
-	 <animation condition="[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(56) | [Control.HasFocus(7017)]] + Player.HasVideo" effect="slide" start="0,0" end="0,-31" time="700" reversible="false">Conditional</animation>
+	 <animation condition="[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(56) | [Control.HasFocus(7017)]] + Player.HasVideo + !Control.IsVisible(51)" effect="slide" start="0,0" end="0,-31" time="700" reversible="false">Conditional</animation>
 	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017)] + !IsEmpty(Control.GetLabel(11155)) " effect="slide" start="0,0" end="0,-31" delay="0" time="700" reversible="false">Conditional</animation>
 	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017)] + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-31" delay="3000" time="700" reversible="false">Conditional</animation>
    </include>
 
    <include name="Slide2" description="(Zoom-Backgrounds)">
-     <animation condition="[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(56) | [Control.HasFocus(7017)] | Control.IsVisible(450) | Window.IsVisible(SettingsCategory.xml)] + Player.HasVideo" effect="zoom" end="100,47" time="700" reversible="false">Conditional</animation>
+     <animation condition="[Control.IsVisible(50) | Control.IsVisible(56) | [Control.HasFocus(7017)] | Control.IsVisible(450) | Window.IsVisible(SettingsCategory.xml)] + Player.HasVideo + !Control.IsVisible(51)" effect="zoom" end="100,47" time="700" reversible="false">Conditional</animation>
 	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017)] + !IsEmpty(Control.GetLabel(11155)) " effect="zoom" end="100,47" delay="0" time="700" reversible="false">Conditional</animation>
 	 <animation condition="[Control.IsVisible(57) | Control.IsVisible(58)] + [!Control.HasFocus(7017)] + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="100,47" delay="3000" time="700" reversible="false">Conditional</animation>
 	 
@@ -351,7 +351,7 @@
      <!--<animation condition="Control.IsVisible(57) + !Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart) + Skin.HasSetting(FullFanartTopVideoInformation)" effect="fade" end="100" time="0">Conditional</animation>
 	 <animation condition="Control.IsVisible(58) + !Skin.HasSetting(ShowTopProgramInformation)" effect="fade" end="100" time="0">Conditional</animation>-->
 	 
-     <animation condition="!Skin.String(Background2Overlay)" effect="fade" end="70" time="0">Conditional</animation>
+     <animation condition="!Skin.String(Background2Overlay)" effect="fade" end="100" time="0">Conditional</animation>
 	 
      <animation condition="Skin.String(Background2Overlay,10)" effect="fade" end="10" time="0">Conditional</animation>
 	 <animation condition="Skin.String(Background2Overlay,20)" effect="fade" end="20" time="0">Conditional</animation>

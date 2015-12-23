@@ -134,7 +134,7 @@
 		<visible></visible> <!--Skin.HasSetting(SelectionMarker)-->
 		<label>$LOCALIZE[78021] ($ADDON[script.featherence.service 80])</label>
 		<label2>$VAR[200label2]</label2>
-		<thumb>misc/help/SelectionMarker.png</thumb>
+		<thumb>frames/selector.png</thumb>
 		<property name="rinfo">$LOCALIZE[76200].</property>
 		<onclick>Skin.ToggleSetting(SelectionMarker)</onclick>
 		<visible>Container(100).Hasfocus(20)</visible>
@@ -143,7 +143,7 @@
 	  <item id="201" description="סמן בחירה 2 (כפתור)">
 		<label>$LOCALIZE[78021] 2 ($ADDON[script.featherence.service 80])</label>
 		<label2>$VAR[201label2]</label2>
-		<thumb>misc/help/SelectionMarker2.png</thumb>
+		<thumb>buttons/effects/choosen2.png</thumb>
 		<property name="rinfo">$LOCALIZE[76201].</property>
 		<onclick>Skin.ToggleSetting(SelectionMarker2)</onclick>
 		<visible>Container(100).Hasfocus(20)</visible>
@@ -152,7 +152,7 @@
 	  <item id="203" description="צללית (כפתור)">
 		<label>$LOCALIZE[78218] ($ADDON[script.featherence.service 80])</label>
 		<label2>$VAR[203label2]</label2>
-		<thumb>misc/help/ShadowButton.png</thumb>
+		<thumb>buttons/effect/menuiconshadow.png</thumb>
 		<property name="rinfo">$LOCALIZE[76203]</property>
 		<onclick>Skin.ToggleSetting(ShadowButton)</onclick>
 		<visible>Container(100).Hasfocus(20)</visible>
@@ -478,7 +478,7 @@
 		<visible></visible>
 		<label>$LOCALIZE[78215] ($LOCALIZE[78015])</label>
 		<label2>$INFO[Skin.String(IconOverlayButton)]</label2>
-		<thumb>misc/help/IconOverlayButton.png</thumb>
+		<thumb></thumb>
 		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[78216].</property>
 		<onclick>RunScript(script.featherence.service,,?mode=200&amp;value=IconOverlayButton)</onclick>
 		<visible>Container(100).Hasfocus(24)</visible>
@@ -1020,7 +1020,7 @@
 	  <item id="18" description="מוזיקה בהפעלה">
 		<label>$LOCALIZE[2] $LOCALIZE[19107] $LOCALIZE[78935]</label>
 		<label2>$VAR[18label2]</label2>
-		<thumb>misc/help/startupmusic.png</thumb>
+		<thumb>icons/music.png</thumb>
 		<property name="rinfo">$LOCALIZE[74440]</property>
 		<onclick>Skin.ToggleSetting(StartUpMusic)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
@@ -1028,7 +1028,7 @@
 	  <item id="19" description="+מוזיקה בהפעלה">
 		<label>$LOCALIZE[2] $LOCALIZE[19107] $LOCALIZE[78935]+</label>
 		<label2>$VAR[19label2]</label2>
-		<thumb>misc/help/startupmusic2.png</thumb>
+		<thumb>icons/music.png</thumb>
 		<property name="rinfo">$LOCALIZE[74439]</property>
 		<onclick condition="Skin.String(StartUpMusic)">Skin.SetString(StartUpMusic,)</onclick>
 		<onclick condition="!Skin.String(StartUpMusic)">Skin.SetFile(StartUpMusic,,special://userdata/library/music/)</onclick>
