@@ -5,6 +5,12 @@ WIP (WORK IN PROGRESS)--
 - Add foreign singers, karaoke, liveshows.
 
 ------------------------
+Featherence Music v0.1.5 (24-12-15)
+------------------------
+- Added Great French Collection Amir's playlists.
+- Added The Beatles Amir's playlists.
+
+------------------------
 Featherence Music v0.1.4 (20-12-15)
 ------------------------
 - Update TV Mode shuffle function.
