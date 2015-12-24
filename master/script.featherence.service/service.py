@@ -6,8 +6,6 @@ import xbmcaddon
 from variables import *
 from modules import *
 	
-
-	
 if os.path.exists(skin_path) and xbmc.getCondVisibility('System.HasAddon(skin.featherence)') and 1 + 1 == 3:
 	xbmc.sleep(5000)
 	from shared_modules4 import *

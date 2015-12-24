@@ -57,6 +57,7 @@
 	
 	<category label="DEBUG">
 	  <setting id="admin" type="bool" default="false" label="Debug" visible="true"/>
+	  <!--<setting id="listappend" type="bool" default="false" label="Debug" visible="true"/>-->
 	  <setting type="lsep" label=""/>
 	  
 	  <setting id="Skin_UpdateDate" type="text" default="" label="Skin_UpdateDate" visible="false"/>

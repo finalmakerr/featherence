@@ -1,4 +1,4 @@
-import xbmc, xbmcaddon
+import xbmc, xbmcaddon, sys
 
 from shared_variables import str2, space, space2
 
@@ -14,6 +14,7 @@ addonVersion       = xbmcaddon.Addon().getAddonInfo("version")
 
 addonName2 = str2 + space + "Featherence"
 printfirst = addonName + ": !@# "
+pluginhandle = int(sys.argv[1])
 '''---------------------------'''
 General_AutoView = getsetting('General_AutoView')
 General_TVModeShuffle = getsetting('General_TVModeShuffle')

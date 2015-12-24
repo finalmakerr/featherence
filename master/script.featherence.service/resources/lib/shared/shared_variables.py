@@ -547,7 +547,8 @@ libraryisscanningmusic = xbmc.getCondVisibility('Library.IsScanningMusic')
 controlhasfocus698 = ""
 controlhasfocus699 = ""
 
-featherenceapi = 'AIzaSyDkNxiwClyCildDbHdDKSWt5BkKQ6LeQqA' #AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4
+api_youtube_featherence = 'AIzaSyDkNxiwClyCildDbHdDKSWt5BkKQ6LeQqA' #AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4
+api_dailymotion_featherence = '3e563cafd4fbba5de0c1'
 
 '''------------------------------
 ---CONTROL-----------------------

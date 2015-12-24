@@ -120,16 +120,11 @@ RunScript(script.featherence.service,,?mode=25)
 	```
 	
 	```
-	PLAY YOUTUBE VIDEO
+	PLAY VIDEO
 	METHOD 1: MODE 4 | URL = text
-	METHOD 2: MODE 5/6/17 | URL = &youtube_id=text
-	```
-	
-	```
-	YOUTUBE PLAYLIST
-	PLAY: MODE 12 | URL = text
-	OPEN: MODE 13 | URL = text
-	FEATHERENCE: MODE 5/6/17 | URL = &youtube_pl=text
+	METHOD 2: MODE 5/6/17 | URL = text
+		  OR- YOUTUBE VIDEO ID: MODE 5/6/17 | URL = &youtube_id=text
+		  OR- YOUTUBE PLAYLIST ID: MODE 5/6/17 | URL = &youtube_pl=text
 	```
 	
 	```
@@ -170,6 +165,12 @@ RunScript(script.featherence.service,,?mode=25)
 	```
 	
 	```
+	HOT VOD ADDON
+	FEATHERENCE: MODE 5/6/17 | URL = &hotVOD=text
+	TIP: use ctrl+shift+P on the preferred location!
+	```
+	
+	```
 	ANY URLS
 	OPEN: MODE 8 | URL = <file path>
 	PLAY: MODE 10 | URL = <file path>
@@ -194,6 +195,7 @@ RunScript(script.featherence.service,,?mode=25)
 	SHOW ALL
 	METHOD 1: MODE 6 | URL = <anything with '&xxx=text'>
 	TIP: URL must be a list []
+	     Modify default sublabel using '&name_=text&' inside the url.
 	```
 	
 	```

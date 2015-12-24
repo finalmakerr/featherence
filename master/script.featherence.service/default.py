@@ -1721,138 +1721,143 @@ elif mode >= 200 and mode <= 249:
 					'''------------------------------
 					---Save--------------------------
 					------------------------------'''
-					Custom1000(str(list[returned]),0,str(list2[returned2]),5)
-					
-					formula = ""
-					formula = "Skin.Theme=2" + skincurrenttheme
-					for i in range(18,20):
-						x = labelT.get('label'+str(i))
-						if x != "" and x != None:
-							formula = formula + newline + 'label'+str(i)+'=0' + str(x)
-							x = actionT.get('action'+str(i))
-							formula = formula + newline + 'action'+str(i)+'=0' + str(x)
-							x = offT.get('off'+str(i))
-							formula = formula + newline + 'off'+str(i)+'=1' + str(x)
-							x = colorT.get('color'+str(i))
-							formula = formula + newline + 'color'+str(i)+'=0' + str(x)
-							x = iconT.get('icon'+str(i))
-							x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
-							if x2 != "":
-								y, y2 = GeneratePath(x2)
-								copyfiles(x2, y2, chmod="", mount=False)
-								if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
-								else: formula = formula + newline + 'icon'+str(i)+'=0' + str(x)
-								#print 'test123 ' + 'x' + space2 + str(x) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
-							x = backgroundT.get('background'+str(i))
-							x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
-							if x2 != "":
-								y, y2 = GeneratePath(x2)
-								copyfiles(x2, y2, chmod="", mount=False)
-								if os.path.exists(y2): formula = formula + newline + 'background'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
-								else: formula = formula + newline + 'background'+str(i)+'=0' + str(x)
-								#print 'test123 ' + 'x' + space2 + str(x) + newline + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'skin_backgrounds_path' + space2 + str(skin_backgrounds_path)
-					for i in range(90,120):
-						x = idT.get('id'+str(i))
-						if x != "" and x != None:
-							formula = formula + newline + 'id'+str(i)+'=0' + str(x)
-							x = labelT.get('label'+str(i))
-							if x != "" and x != None:
-								formula = formula + newline + 'label'+str(i)+'=0' + str(x)
-								x = actionT.get('action'+str(i))
-								formula = formula + newline + 'action'+str(i)+'=0' + str(x)
-								x = offT.get('off'+str(i))
-								formula = formula + newline + 'off'+str(i)+'=1' + str(x)
-								x = colorT.get('color'+str(i))
-								formula = formula + newline + 'color'+str(i)+'=0' + str(x)
-								x = subT.get('sub'+str(i))
-								formula = formula + newline + 'sub'+str(i)+'=1' + str(x)
-								x = iconT.get('icon'+str(i))
-								x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
-								if x2 != "":
-									y, y2 = GeneratePath(x2)
-									copyfiles(x2, y2, chmod="", mount=False)
-									if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
-									else: formula = formula + newline + 'icon'+str(i)+'=0' + str(x)
-									#print 'test123 ' + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
-								else: extra = extra + newline + 'icon not exists!' + space + 'x' + space2 + str(x) + space + 'x2' + space2 + str(x2)		
-								x = backgroundT.get('background'+str(i))
-								x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
-								if x2 != "":
-									y, y2 = GeneratePath(x2)
-									copyfiles(x2, y2, chmod="", mount=False)
-									if os.path.exists(y2): formula = formula + newline + 'background'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
-									else: formula = formula + newline + 'background'+str(i)+'=0' + str(x)
-									#print 'test123 ' + 'x' + space2 + str(x) + newline + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'skin_backgrounds_path' + space2 + str(skin_backgrounds_path)
-								else: extra = extra + newline + 'fanart not exists!' + space + 'x' + space2 + str(x) + space + 'x2' + space2 + str(x2)
-								
-								for i2 in range(100,110):
-									x = label_T.get('label'+str(i)+'_'+str(i2))
+					if returned2 > 1:
+						yesno = dialogyesno('Overwrite' + space + str(list2[returned2]) + '?','Choose YES to continue')
+						if yesno == 'skip': printpoint = printpoint + '9'
+						else:
+							Custom1000(str(list[returned]),0,str(list2[returned2]),5)
+							
+							formula = ""
+							formula = "Skin.Theme=2" + skincurrenttheme
+							for i in range(18,20):
+								x = labelT.get('label'+str(i))
+								if x != "" and x != None:
+									formula = formula + newline + 'label'+str(i)+'=0' + str(x)
+									x = actionT.get('action'+str(i))
+									formula = formula + newline + 'action'+str(i)+'=0' + str(x)
+									x = offT.get('off'+str(i))
+									formula = formula + newline + 'off'+str(i)+'=1' + str(x)
+									x = colorT.get('color'+str(i))
+									formula = formula + newline + 'color'+str(i)+'=0' + str(x)
+									x = iconT.get('icon'+str(i))
+									x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
+									if x2 != "":
+										y, y2 = GeneratePath(x2)
+										copyfiles(x2, y2, chmod="", mount=False)
+										if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
+										else: formula = formula + newline + 'icon'+str(i)+'=0' + str(x)
+										#print 'test123 ' + 'x' + space2 + str(x) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
+									x = backgroundT.get('background'+str(i))
+									x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
+									if x2 != "":
+										y, y2 = GeneratePath(x2)
+										copyfiles(x2, y2, chmod="", mount=False)
+										if os.path.exists(y2): formula = formula + newline + 'background'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
+										else: formula = formula + newline + 'background'+str(i)+'=0' + str(x)
+										#print 'test123 ' + 'x' + space2 + str(x) + newline + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'skin_backgrounds_path' + space2 + str(skin_backgrounds_path)
+							for i in range(90,120):
+								x = idT.get('id'+str(i))
+								if x != "" and x != None:
+									formula = formula + newline + 'id'+str(i)+'=0' + str(x)
+									x = labelT.get('label'+str(i))
 									if x != "" and x != None:
-										formula = formula + newline + 'label'+str(i)+'_'+str(i2)+'=0' + str(x)
-										x = action_T.get('action'+str(i)+'_'+str(i2))
-										formula = formula + newline + 'action'+str(i)+'_'+str(i2)+'=0' + str(x)
-										x = off_T.get('off'+str(i)+'_'+str(i2))
-										formula = formula + newline + 'off'+str(i)+'_'+str(i2)+'=1' + str(x)
-										x = icon_T.get('icon'+str(i)+'_'+str(i2))
+										formula = formula + newline + 'label'+str(i)+'=0' + str(x)
+										x = actionT.get('action'+str(i))
+										formula = formula + newline + 'action'+str(i)+'=0' + str(x)
+										x = offT.get('off'+str(i))
+										formula = formula + newline + 'off'+str(i)+'=1' + str(x)
+										x = colorT.get('color'+str(i))
+										formula = formula + newline + 'color'+str(i)+'=0' + str(x)
+										x = subT.get('sub'+str(i))
+										formula = formula + newline + 'sub'+str(i)+'=1' + str(x)
+										x = iconT.get('icon'+str(i))
 										x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
 										if x2 != "":
 											y, y2 = GeneratePath(x2)
 											copyfiles(x2, y2, chmod="", mount=False)
 											if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
 											else: formula = formula + newline + 'icon'+str(i)+'=0' + str(x)
-											#print 'test123 ' + 'x' + space2 + str(x) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
-											'''---------------------------'''
-							else: extra = extra + newline + 'label not exists!' + space + 'x' + space2 + str(x)
-						else: extra = extra + newline + 'id not exists!' + space + 'x' + space2 + str(x)
-					Custom1000(str(list[returned]),50,str(list2[returned2]),5)
-					for y in list1:
-						x = xbmc.getInfoLabel('Skin.HasSetting('+y+')')
-						formula = formula + newline + y+'=1' + str(x)
-						'''---------------------------'''
-					
-					for y in list0:
-						x = xbmc.getInfoLabel('Skin.String('+y+')')
-						formula = formula + newline + y+'=0' + str(x)
-						'''---------------------------'''
-						
-					for y in list0c:
-						x = xbmc.getInfoLabel('Skin.String('+y+')')
-						x2 = xbmc.getInfoLabel('Skin.String('+y+'.name)')
-						formula = formula + newline + y+'=1' + str(x)
-						formula = formula + newline + y+'.name'+'=1' + str(x2)
-						'''---------------------------'''
-					
-					Custom1000(str(list[returned]),70,str(list2[returned2]),5)
-					for y in list0c2:
-						x = xbmc.getInfoLabel('Skin.String('+y+')')
-						formula = formula + newline + y+'=0' + str(x)
-						'''---------------------------'''
-					
-					for y in list0o:
-						x = xbmc.getInfoLabel('Skin.String('+y+')')
-						formula = formula + newline + y+'=0' + str(x)
-						'''---------------------------'''
-					
-					if returned2 == 1: filename = ""
-					else:
-						filename = str(list2[returned2])
-					Custom1000(str(list[returned]),90,str(list2[returned2]),5)
-					filename = dialogkeyboard(filename, localize(21821), 0, "", "", "") #Description
-					if filename != 'skip' and filename != "":
-						try: formula.encode('utf-8')
-						except: pass
-						
-						write_to_file(featherenceservice_addondata_path + "Featherence_" + ".txt", str(formula), append=False, silent=True, utf8=False) ; xbmc.sleep(200)
-						if not os.path.exists(featherenceservice_addondata_path + "Featherence_" + ".txt"):
-							notification_common('17')
-							extra = extra + newline + featherenceservice_addondata_path + "Featherence_" + ".txt" + space + 'Is not found!'
-						else:
-							zipname = featherenceservice_addondata_path + 'Featherence_' + str(filename)
-							CreateZip(featherenceservice_addondata_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
-							CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
-							'''---------------------------'''
-							Custom1000(str(list[returned]),100,str(list2[returned2]),0)
-					else: notification_common('9') ; extra = extra + newline + 'filename is empty!'
+											#print 'test123 ' + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
+										else: extra = extra + newline + 'icon not exists!' + space + 'x' + space2 + str(x) + space + 'x2' + space2 + str(x2)		
+										x = backgroundT.get('background'+str(i))
+										x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
+										if x2 != "":
+											y, y2 = GeneratePath(x2)
+											copyfiles(x2, y2, chmod="", mount=False)
+											if os.path.exists(y2): formula = formula + newline + 'background'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
+											else: formula = formula + newline + 'background'+str(i)+'=0' + str(x)
+											#print 'test123 ' + 'x' + space2 + str(x) + newline + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'skin_backgrounds_path' + space2 + str(skin_backgrounds_path)
+										else: extra = extra + newline + 'fanart not exists!' + space + 'x' + space2 + str(x) + space + 'x2' + space2 + str(x2)
+										
+										for i2 in range(100,110):
+											x = label_T.get('label'+str(i)+'_'+str(i2))
+											if x != "" and x != None:
+												formula = formula + newline + 'label'+str(i)+'_'+str(i2)+'=0' + str(x)
+												x = action_T.get('action'+str(i)+'_'+str(i2))
+												formula = formula + newline + 'action'+str(i)+'_'+str(i2)+'=0' + str(x)
+												x = off_T.get('off'+str(i)+'_'+str(i2))
+												formula = formula + newline + 'off'+str(i)+'_'+str(i2)+'=1' + str(x)
+												x = icon_T.get('icon'+str(i)+'_'+str(i2))
+												x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
+												if x2 != "":
+													y, y2 = GeneratePath(x2)
+													copyfiles(x2, y2, chmod="", mount=False)
+													if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
+													else: formula = formula + newline + 'icon'+str(i)+'=0' + str(x)
+													#print 'test123 ' + 'x' + space2 + str(x) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
+													'''---------------------------'''
+									else: extra = extra + newline + 'label not exists!' + space + 'x' + space2 + str(x)
+								else: extra = extra + newline + 'id not exists!' + space + 'x' + space2 + str(x)
+							Custom1000(str(list[returned]),50,str(list2[returned2]),5)
+							for y in list1:
+								x = xbmc.getInfoLabel('Skin.HasSetting('+y+')')
+								formula = formula + newline + y+'=1' + str(x)
+								'''---------------------------'''
+							
+							for y in list0:
+								x = xbmc.getInfoLabel('Skin.String('+y+')')
+								formula = formula + newline + y+'=0' + str(x)
+								'''---------------------------'''
+								
+							for y in list0c:
+								x = xbmc.getInfoLabel('Skin.String('+y+')')
+								x2 = xbmc.getInfoLabel('Skin.String('+y+'.name)')
+								formula = formula + newline + y+'=1' + str(x)
+								formula = formula + newline + y+'.name'+'=1' + str(x2)
+								'''---------------------------'''
+							
+							Custom1000(str(list[returned]),70,str(list2[returned2]),5)
+							for y in list0c2:
+								x = xbmc.getInfoLabel('Skin.String('+y+')')
+								formula = formula + newline + y+'=0' + str(x)
+								'''---------------------------'''
+							
+							for y in list0o:
+								x = xbmc.getInfoLabel('Skin.String('+y+')')
+								formula = formula + newline + y+'=0' + str(x)
+								'''---------------------------'''
+							
+							if returned2 == 1: filename = ""
+							else:
+								filename = str(list2[returned2])
+							Custom1000(str(list[returned]),90,str(list2[returned2]),5)
+							filename = dialogkeyboard(filename, localize(21821), 0, "", "", "") #Description
+							if filename != 'skip' and filename != "":
+								try: formula.encode('utf-8')
+								except: pass
+								
+								write_to_file(featherenceservice_addondata_path + "Featherence_" + ".txt", str(formula), append=False, silent=True, utf8=False) ; xbmc.sleep(200)
+								if not os.path.exists(featherenceservice_addondata_path + "Featherence_" + ".txt"):
+									notification_common('17')
+									extra = extra + newline + featherenceservice_addondata_path + "Featherence_" + ".txt" + space + 'Is not found!'
+								else:
+									zipname = featherenceservice_addondata_path + 'Featherence_' + str(filename)
+									CreateZip(featherenceservice_addondata_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
+									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
+									'''---------------------------'''
+									Custom1000(str(list[returned]),100,str(list2[returned2]),0)
+									removefiles(featherenceservice_addondata_path + 'Featherence_' + str(list2[returned2]) + '.zip')
+							else: notification_common('9') ; extra = extra + newline + 'filename is empty!'
 					
 				elif "B" in printpoint or "C" in printpoint:
 					'''------------------------------

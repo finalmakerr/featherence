@@ -22,7 +22,9 @@ def mode0(admin, name, printpoint):
 	#dp = xbmcgui.DialogProgress()
 	#dp.create("featherence Texture-Cache-Removal", "Removing Datebase", "why are we here?[CR]test is here ssssssssssssssssssssssssssssssssssssssssssssssssssss ")
 	
-	xbmc.sleep(10000)
+	from shared_modules3 import *
+	#dailymotion_test("")
+	getAPIdata('&dailymotion_pl=x2c745_SIMONVJ_reggae-playlist', "", "", "", "")
 	
 def mode5(value, admin, name, printpoint):
 	'''------------------------------
@@ -834,7 +836,11 @@ def mode32(value, admin, name, printpoint):
 					text = text.replace(text_,"",1)
 					extra = extra + 'x' + space2 + str(x) + space + 'text_' + space2 + str(text_) + newline
 				text = "list.append('&wallaNew=" + text + "')"
-
+			
+			else:
+				if '1' in printpoint: text = "list.append('&custom4=" + text + "')"
+				elif '2' in printpoint: text = "list.append('&custom8=" + text + "')"
+				
 		write_to_file(featherenceservice_addondata_path + "Container.FolderPath" + ".txt", str(text), append=False, silent=True, utf8=False)
 		notification('url saved!','Container.FolderPath.txt','',2000)
 		'''---------------------------'''
@@ -3174,6 +3180,7 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "Container.FolderPath" + space2 + xbmc.getInfoLabel('Container.FolderPath')
 			message = message + newline + "Container.FolderName" + space2 + xbmc.getInfoLabel('Container.FolderName')
 			message = message + newline + "ListItem.Overlay" + space2 + xbmc.getInfoLabel('ListItem.Overlay')
+			message = message + newline + "VAR-11156label" + space2 + xbmc.getInfoLabel('$VAR[11156label]')
 			message = message + newline + '---------------------------'
 			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('ListItem.Art(Poster)') #CUSTOM TEST
 			message = message + newline + "custom2" + space2 + xbmc.getInfoLabel('ListItem.IsCollection') #CUSTOM TEST
