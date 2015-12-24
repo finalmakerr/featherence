@@ -554,7 +554,7 @@
 				  <width>197</width>
 				  <height>290</height>
 				  <texture background="true">$VAR[VideoInformation2]</texture> <!--TopVideoInformation4-->
-				  <bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
+				  <bordertexture colordiffuse="ff000000" border="0">$VAR[VideoInformation2]</bordertexture>
 				  <bordersize>2</bordersize>
 				  <aspectratio>stretch</aspectratio>
 				</control>
@@ -568,9 +568,9 @@
 				  <include>ShowDVDCases</include>
 				</control>
 				<control type="image" description="רקע שחור">
-				  <posx>56</posx>
-				  <posy>294</posy>
-				  <width>195</width>
+				  <posx>58</posx>
+				  <posy>290</posy>
+				  <width>191</width>
 				  <height>24</height>
 				  <texture colordiffuse="ff000000">buttons/ButtonA0.png</texture>
 				  <aspectratio>scale</aspectratio>
@@ -582,7 +582,7 @@
 				  <align>center</align>
 				  <font>size18</font>
 				  <posx>58</posx>
-				  <posy>290</posy>
+				  <posy>286</posy>
 				  <width>194</width>
 				  <height>35</height>
 				  <textcolor>White2</textcolor>
@@ -603,7 +603,7 @@
 				  <width>197</width>
 				  <height>290</height>
 				  <texture background="true">$VAR[VideoInformation2]</texture> <!--TopVideoInformation4-->
-				  <bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
+				  <bordertexture colordiffuse="ff000000" border="0">$VAR[VideoInformation2]</bordertexture>
 			      <bordersize>2</bordersize>
 				  <aspectratio>stretch</aspectratio>
 				</control>
@@ -627,9 +627,9 @@
 				  <visible>!IsEmpty(ListItem.Rating)</visible>
 				</control>
 				<control type="image" description="רקע שחור">
-				  <posx>56</posx>
-				  <posy>294</posy>
-				  <width>195</width>
+				  <posx>58</posx>
+				  <posy>290</posy>
+				  <width>191</width>
 				  <height>24</height>
 				  <texture colordiffuse="ff000000">buttons/ButtonA0.png</texture>
 				  <aspectratio>scale</aspectratio>
@@ -664,7 +664,7 @@
 				  <align>center</align>
 				  <font>size18</font>
 				  <posx>58</posx>
-				  <posy>290</posy>
+				  <posy>286</posy>
 				  <width>194</width>
 				  <height>35</height>
 				  <textcolor>Yellow</textcolor>
@@ -723,7 +723,7 @@
 			  <width>310</width>
 			  <height>430</height>
 			  <texture background="true">$VAR[VideoInformation2]</texture>
-			  <bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
+			  <bordertexture colordiffuse="ff000000" border="0">$VAR[VideoInformation2]</bordertexture>
 			  <bordersize>2</bordersize>
 			  <!--<texture background="true">$VAR[TopVideoInformation4]</texture>-->
 			</control>
@@ -760,20 +760,20 @@
 			  <animation condition="Skin.HasSetting(ShowDVDCases2)" effect="fade" start="90" end="90" time="0">Conditional</animation>
 			  <aspectratio>scale</aspectratio>
 			  <height>33</height>
-			  <posx>55</posx>
-			  <posy>437</posy>
+			  <posx>57</posx>
+			  <posy>435</posy>
 			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 			  <visible>!IsEmpty(ListItem.Label) + !StringCompare(ListItem.Label,..)</visible>
-			  <width>310</width>
+			  <width>306</width>
 			  <visible>!Skin.HasSetting(ShowDVDCases2) | !IsEmpty(Control.GetLabel(11156))</visible>
 			</control>
 			<control type="label" description="כותרת">
 			  <animation condition="Skin.HasSetting(ShowDVDCases2)" effect="fade" start="90" end="90" time="0">Conditional</animation>
 			  <include>Fade11</include>
 			  <include>LabelC2</include>
-			  <posx>55</posx>
-			  <posy>437</posy>
-			  <width>310</width>
+			  <posx>60</posx>
+			  <posy>435</posy>
+			  <width>304</width>
 			  <height>35</height>
 			  <textcolor>White2</textcolor>
 			  <scroll>false</scroll>
@@ -829,7 +829,7 @@
 			  <width>310</width>
 			  <height>430</height>
 			  <texture background="true">$VAR[VideoInformation2]</texture>
-			  <bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
+			  <bordertexture colordiffuse="ff000000" border="0">$VAR[VideoInformation2]</bordertexture>
 			  <bordersize>2</bordersize>
 			  <!--<texture background="true">$VAR[TopVideoInformation4]</texture>-->
 			</control>
@@ -890,20 +890,20 @@
 			  <animation condition="Skin.HasSetting(ShowDVDCases2)" effect="fade" start="90" end="90" time="0">Conditional</animation>
 			  <aspectratio>scale</aspectratio>
 			  <height>33</height>
-			  <posx>55</posx>
-			  <posy>440</posy>
+			  <posx>57</posx>
+			  <posy>435</posy>
 			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 			  <visible>!IsEmpty(ListItem.Label) + !StringCompare(ListItem.Label,..)</visible>
-			  <width>310</width>
+			  <width>306</width>
 			  <visible>!Skin.HasSetting(ShowDVDCases2) | !IsEmpty(Control.GetLabel(11156))</visible>
 			</control>
 			<control type="label" description="כותרת">
 			  <animation condition="Skin.HasSetting(ShowDVDCases2)" effect="fade" start="90" end="90" time="0">Conditional</animation>
 			  <textcolor>Yellow</textcolor>			  
 			  <include>LabelC2</include>
-			  <posx>55</posx>
-			  <posy>437</posy>
-			  <width>310</width>
+			  <posx>60</posx>
+			  <posy>435</posy>
+			  <width>304</width>
 			  <height>35</height>
 			  <scroll>false</scroll>
 			  <label>$VAR[VideoInformation1]</label>

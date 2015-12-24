@@ -337,9 +337,9 @@
 		<include>Slide1.1</include>
 		<animation description="No Fanart" condition="[Control.IsVisible(57) | Control.IsVisible(58)] + !Control.HasFocus(7017) + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-252" delay="3000" time="700" reversible="false">Conditional</animation>
 		
-		<animation description="slide-Vertical_he" condition="Player.HasVideo + Control.IsVisible(51)" effect="zoom" center="auto" start="100,100" end="27,113" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Control.IsVisible(51) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="2750,165" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Control.IsVisible(51) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-2785,165" time="0">Conditonal</animation>
+		<animation description="slide-Vertical" condition="Player.HasVideo + Control.IsVisible(51)" effect="zoom" center="auto" start="100,100" end="27,113" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="Player.HasVideo + Control.IsVisible(51) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="2750,165" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="Player.HasVideo + Control.IsVisible(51) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-2785,165" time="0">Conditonal</animation>
 		<aspectratio>stretch</aspectratio>
 		<height>1080</height>
 		<width>1950</width>
@@ -354,15 +354,14 @@
 		<include>Slide1.1</include>
 		<animation description="No Fanart" condition="[Control.IsVisible(57) | Control.IsVisible(58)] + !Control.HasFocus(7017) + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-252" delay="3000" time="700" reversible="false">Conditional</animation>
 		<animation description="slide-Vertical_he" condition="Player.HasVideo + Control.IsVisible(51)" effect="zoom" center="auto" start="100,100" end="24,100" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Control.IsVisible(51) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="2985,0" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Control.IsVisible(51) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-3020,0" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="Player.HasVideo + Control.IsVisible(51) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="2985,0" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="Player.HasVideo + Control.IsVisible(51) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-3020,0" time="0">Conditonal</animation>
 		<aspectratio>stretch</aspectratio>
 		<height>1080</height>
 		<width>1950</width>
 		<posx>-15</posx>
 		<posy>30</posy>
 		<texture border="30" colordiffuse="$VAR[MainBackgroundColor]">$VAR[MainBackgroundTexture]</texture>
-		<visible>false</visible>
 	  </control>
 	  <control type="largeimage" id="7013" description="פאנארט">
 		<fadetime>200</fadetime>
@@ -447,9 +446,9 @@
 		<visible>false</visible>
 	  </control>
 	  <control type="button" id="7017">
-		<animation description="slide-Vertical_he" condition="Control.IsVisible(51) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-235,800" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Control.IsVisible(51) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="235,800" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Control.IsVisible(51)" effect="zoom" center="auto" start="100,100" end="75.5,210" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="Control.IsVisible(51) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-235,815" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="Control.IsVisible(51) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="235,815" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="Control.IsVisible(51)" effect="zoom" center="auto" start="100,100" end="75.5,202" time="0">Conditonal</animation>
 		<texturefocus border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texturefocus>
 		<texturenofocus colordiffuse="FFFFAAFF"></texturenofocus>
 		<posy>-522</posy>

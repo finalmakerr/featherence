@@ -110,7 +110,7 @@ msgid "Show disc art"
 msgstr "הצג דיסק מסתובב"
 
 msgctxt "#31043
-msgid "Zoom on selected image"
+msgid "Enlarge focused thumbnail"
 msgstr "הגדל תמונה נבחרת"
 
 msgctxt "#31044

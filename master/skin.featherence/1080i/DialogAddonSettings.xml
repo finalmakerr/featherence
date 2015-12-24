@@ -4,6 +4,15 @@
   <allowoverlay>no</allowoverlay>
   <controls>
     <include>BlackBackground</include>
+	<control type="largeimage" id="7014" description="רקע פאנארט">
+		<include>Fade_Background2Overlay</include>
+		<aspectratio align="top">scale</aspectratio>
+		<posy>0</posy>
+		<height>1080</height>
+		<texture background="true">$VAR[background2]</texture>
+		<width>1920</width>
+		<visible>!Skin.HasSetting(background2)</visible>
+	</control>
     <control type="group" description="תפריט שמאל (9)">
 	  <include>Slide6</include>
       <height>530</height>
@@ -11,7 +20,10 @@
 	  <posy>275</posy>
 	  <width>480</width>	  	  
       <control type="image" description="רקע">
-        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+	    <animation condition="true" effect="fade" start="100" end="40" time="0">Conditional</animation>
+        <bordertexture colordiffuse="ff000000" border="20">buttons/ButtonE0.png</bordertexture>
+		<bordersize>2</bordersize>
+		<texture border="20" colordiffuse="$VAR[MainBackgroundColor]">buttons/ButtonE0.png</texture>
       </control>
       <control type="grouplist" id="9" description="תפריט שמאל">
         <itemgap>0</itemgap>
@@ -32,7 +44,10 @@
 	  <posy>275</posy>	  
 	  <width>480</width>	  	  
       <control type="image" description="רקע">
-        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+	    <animation condition="true" effect="fade" start="100" end="40" time="0">Conditional</animation>
+        <bordertexture colordiffuse="ff000000" border="20">buttons/ButtonE0.png</bordertexture>
+		<bordersize>2</bordersize>
+		<texture border="20" colordiffuse="$VAR[MainBackgroundColor]">buttons/ButtonE0.png</texture>
       </control>
       <control type="grouplist" id="8999" description="קבוצה תפריט ימין">
         <itemgap>0</itemgap>
@@ -62,12 +77,15 @@
       <height>830</height>	  
 	  <posx>500</posx>
       <posy>125</posy>  
-	  <width>880</width>	  	  
+	  <width>880</width>
       <control type="image" description="רקע">
 		<height>870</height>
 		<posx>-20</posx>
 		<posy>-20</posy>
-        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+        <animation condition="true" effect="fade" start="100" end="40" time="0">Conditional</animation>
+        <bordertexture colordiffuse="ff000000" border="20">buttons/ButtonE0.png</bordertexture>
+		<bordersize>2</bordersize>
+		<texture border="20" colordiffuse="$VAR[MainBackgroundColor]">buttons/ButtonE0.png</texture>
 		<width>920</width>
       </control>
       <control type="grouplist" id="2" description="תפריט ראשי (2)">
@@ -91,13 +109,13 @@
 	    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>-->
       </control>
       <control type="label" id="7" description="תאור כללי">
-		<height>40</height>
+		<aligny>center</aligny>
+		<height>50</height>
 		<posx>0</posx>
 		<scroll>true</scroll>
 		<shadowcolor>black</shadowcolor>
 		<textcolor>Grey2</textcolor>
 		<width>880</width>
-		<aligny>top</aligny>
 		<include>LabelL2</include>
 		<!--<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
 	    <include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>-->

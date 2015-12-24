@@ -600,7 +600,7 @@
 		<include>ShowDVDdisc</include>
 		<control type="image" description="פוסטר">
 		  <aspectratio>stretch</aspectratio>
-		  <bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
+		  <bordertexture colordiffuse="ff000000" border="0">$VAR[TopVideoInformation4]</bordertexture>
 		  <bordersize>2</bordersize>
 		  <texture background="false">$VAR[TopVideoInformation4]</texture>
 		</control>
