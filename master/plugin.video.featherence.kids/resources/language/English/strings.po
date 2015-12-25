@@ -338,8 +338,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#100
-msgid ""
-msgstr ""
+msgid "My Kids"
+msgstr "הילדים שלי"
 
 msgctxt "#101
 msgid "Songs and stories for children"

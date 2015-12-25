@@ -1,12 +1,17 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
+- Add more contents in English.
+- Update default sorting.
+- Update English language.
 
 ------------------------
-Featherence Kids v0.1.5 (xx-12-15)
+Featherence Kids v0.1.6 (25-12-15)
 ------------------------
+- Added about 60 new tvshows.
 - Update TV Mode shuffle function.
 - Update TV Mode accuracy.
+- Minor bugs fix.
 - *Extra attempt to play another video if the first has failed.
 *Failing is an issue of the Youtube plugin.
 

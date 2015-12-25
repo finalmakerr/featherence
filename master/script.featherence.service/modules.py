@@ -51,7 +51,7 @@ def mode5(value, admin, name, printpoint):
 		if Remote_Name != "" and Remote_Name != 'None' and Remote_Support == 'true':
 			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=27&value=0)')
 		
-		mode101('1',admin, 'TotalMouse')
+		#mode101('1',admin, 'TotalMouse')
 		
 		try:
 			VolumeLevel = int(xbmcaddon.Addon(addonID).getSetting('VolumeLevel'))
@@ -395,6 +395,8 @@ def mode10(admin, name, printpoint):
 		setPlayerInfo(admin)
 		videostarttweak(admin)
 		while playerhasvideo and not xbmc.abortRequested:
+			if xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)'):
+				xbmc.executebuiltin('Action(Info)')
 			xbmc.sleep(5000)
 			videoplayertweak(admin, playerhasvideo)
 			playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')

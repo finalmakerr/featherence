@@ -50,7 +50,10 @@ def CATEGORIES100(admin):
 	
 	'''כפתור הילדים שלי חדש..'''
 	addDir(addonString_servicefeatherence(86).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,'https://cdn3.iconfinder.com/data/icons/logistics-delivery-set-1/512/8-512.png',addonString_servicefeatherence(87).encode('utf-8') + addonString_servicefeatherence(88).encode('utf-8') + addonString_servicefeatherence(89).encode('utf-8'),'1',50, getAddonFanart(fanart))
-	
+	if admin:
+		pass
+		#addDir('dailymotion_test',"&dailymotion_id=x3iijfg",4,'a','a','1','a','a')
+		#addDir('dailymotion_pl',"&dailymotion_pl=x3z4fy",13,'','','1','','')
 	'''רשימת השמעה 1'''
 	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',50, getAddonFanart("Custom_Playlist1"))
 	'''רשימת השמעה 2'''
@@ -355,7 +358,7 @@ def CATEGORIES104(admin):
 	
 	'''אגדות המלך שלמה'''
 	list = []
-	list.append('&sdarot=series_id=815&series_name=%d7%90%d7%92%d7%93%d7%95%d7%aa%20%d7%94%d7%9e%d7%9c%d7%9a%20%d7%a9%d7%9c%d7%9e%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f815%2ftales-of-a-wise-king-hebdub-%d7%90%d7%92%d7%93%d7%95%d7%aa-%d7%94%d7%9e%d7%9c%d7%9a-%d7%a9%d7%9c%d7%9e%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91', '&youtube_pl=PLOx5NGhretuY8wp75WCY5PQQx8agiZ2IC')
+	list.append('&sdarot=series_id=815&series_name=%d7%90%d7%92%d7%93%d7%95%d7%aa%20%d7%94%d7%9e%d7%9c%d7%9a%20%d7%a9%d7%9c%d7%9e%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f815%2ftales-of-a-wise-king-hebdub-%d7%90%d7%92%d7%93%d7%95%d7%aa-%d7%94%d7%9e%d7%9c%d7%9a-%d7%a9%d7%9c%d7%9e%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 	list.append('&youtube_pl=PLOx5NGhretuY8wp75WCY5PQQx8agiZ2IC')
 	addDir('אגדות המלך שלמה',list,17,'http://www.sdarot.pm/media/series/815.jpg',addonString(104000).encode('utf-8'),'1',50, getAddonFanart(background))
 	
@@ -636,14 +639,6 @@ def CATEGORIES104(admin):
 	list = []
 	list.append('&sdarot=season_id=1&series_id=689&series_name=%d7%9e%d7%92%d7%a8%d7%a9%20%d7%94%d7%a9%d7%93%d7%99%d7%9d%20%d7%94%d7%9b%d7%97%d7%95%d7%9c%20-%20%2a%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f689%2fao-no-exorcist-%d7%9e%d7%92%d7%a8%d7%a9-%d7%94%d7%a9%d7%93%d7%99%d7%9d-%d7%94%d7%9b%d7%97%d7%95%d7%9c-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
 	addDir('מגרש השדים הכחול',list,17,'http://www.sdarot.pm/media/series/689.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
-	
-	'''מה מי מו עם דוד חיים'''#10
-	list = []
-	list.append('&youtube_id=VQLASGxELwc')
-	list.append('&youtube_id=18Tq9hbo')
-	list.append('&youtube_id=5yOKydYwMmk')
-	list.append('&sdarot=season_id=1&series_id=1943&series_name=%d7%9e%d7%94%20%d7%9e%d7%99%20%d7%9e%d7%95%20%d7%a2%d7%9d%20%d7%93%d7%95%d7%93%20%d7%97%d7%99%d7%99%d7%9d&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1943%2fma-me-moo-with-uncle-haim-%d7%9e%d7%94-%d7%9e%d7%99-%d7%9e%d7%95-%d7%a2%d7%9d-%d7%93%d7%95%d7%93-%d7%97%d7%99%d7%99%d7%9d')
-	addDir('מה מי מו עם דוד חיים',list,17,'http://www.sdarot.pm/media/series/1943.jpg',addonString(1099000).encode('utf-8'),'1',"", getAddonFanart(background))
 
 	'''מולי וצומי'''#10
 	addDir(addonString(10742).encode('utf-8'),['&sdarot=series_id=2077&series_name=%d7%9e%d7%95%d7%9c%d7%99%20%d7%95%d7%a6%d7%95%d7%9e%d7%99&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f2077%2fmuli-and-tzumi-%d7%9e%d7%95%d7%9c%d7%99-%d7%95%d7%a6%d7%95%d7%9e%d7%99','&youtube_pl=PLfcYs4SRZfuJHmb8y_BpUpzAsm1guoAlK'],17,'http://www.yap.co.il/prdPics/4309_desc3_2_1_1390393153.jpg',addonString(107420).encode('utf-8'),'1',50, getAddonFanart(background))
@@ -1346,10 +1341,18 @@ def CATEGORIES107(admin):
 	addDir(addonString(10708).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1641.jpg',addonString(107080).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''דן הדוור'''
-	if General_TrustedOnly == "true" or admin: addDir(addonString(10712).encode('utf-8'),['&sdarot=season_id=1&series_id=1577&series_name=%d7%93%d7%9f%20%d7%94%d7%93%d7%95%d7%95%d7%a8&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1577%2fdan-hadavar-%d7%93%d7%9f-%d7%94%d7%93%d7%95%d7%95%d7%a8' ,'&youtube_pl=PL_8KXLhQVQMK05YV3wTQ4SZyEo2kWDvNH'],6,'http://www.sdarot.pm/media/series/1577.jpg','','1',50, getAddonFanart(background))
-	
+	list = []
+	list.append('&sdarot=season_id=1&series_id=1577&series_name=%d7%93%d7%9f%20%d7%94%d7%93%d7%95%d7%95%d7%a8&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1577%2fdan-hadavar-%d7%93%d7%9f-%d7%94%d7%93%d7%95%d7%95%d7%a8')
+	list.append('&youtube_pl=PL_8KXLhQVQMK05YV3wTQ4SZyEo2kWDvNH')
+	addDir(addonString(10712).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1577.jpg','','1',50, getAddonFanart(background))
+
 	'''הדוד חיים'''
-	addDir(addonString(10715).encode('utf-8'),['&youtube_pl=PLTNonj9ImqaIuFt2AyqdYFx6bCnKoFsIc'],17,'http://www.yap.co.il/prdPics/4298_desc3_2_2_1390119036.jpg',addonString(107150).encode('utf-8'),'1',50, getAddonFanart(background))
+	list = []
+	list.append('&sdarot=season_id=1&series_id=1943&series_name=%d7%9e%d7%94%20%d7%9e%d7%99%20%d7%9e%d7%95%20%d7%a2%d7%9d%20%d7%93%d7%95%d7%93%20%d7%97%d7%99%d7%99%d7%9d&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1943%2fma-me-moo-with-uncle-haim-%d7%9e%d7%94-%d7%9e%d7%99-%d7%9e%d7%95-%d7%a2%d7%9d-%d7%93%d7%95%d7%93-%d7%97%d7%99%d7%99%d7%9d')
+	list.append('&youtube_pl=PLTNonj9ImqaIuFt2AyqdYFx6bCnKoFsIc')
+	list.append('&youtube_id=VQLASGxELwc')
+	list.append('&youtube_id=5yOKydYwMmk')
+	addDir(addonString(10715).encode('utf-8'),list,17,'http://www.yap.co.il/prdPics/4298_desc3_2_2_1390119036.jpg',addonString(107150).encode('utf-8'),'1',50, getAddonFanart(background))
 	'''---------------------------'''
 	
 	'''הופלה'''

@@ -508,9 +508,9 @@ msgctxt "#32040
 msgid "Usage: Swift your mouse down to activate the taskbar."
 msgstr "שימוש: הזז את העכבר למטה במהירות להצגת שורת המשימות."
 
-msgctxt "#32041"
+msgctxt "#32041
 msgid "Setup default volume level on startup."
-msgstr "קבע עוצמת ווליום ברירת מחדל בעת בהפעלה."
+msgstr "קבע עוצמת ווליום ברירת מחדל בהפעלה."
 
 msgctxt "#32042"
 msgid "Allow auto library update and cleanup.[CR]If enable, the library will be updated once a day and cleaned once a week, respectably.[CR]The action occur when the user idle for one-two hours."

@@ -50,7 +50,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.1.5" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.1.6" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="plugin.video.youtube" version="5.1.0"/>
@@ -60,8 +60,8 @@
   </extension>
   <extension point="xbmc.addon.metadata">
 	<platform>all</platform>
-    <summary lang="en"></summary>
-	<summary lang="he"></summary>
+    <summary lang="en">_</summary>
+	<summary lang="he">_</summary>
     <description lang="en">Features:
 - Smart TV Mode.
 - Smart Interface allow the users to easily create thier own addon from within Kodi and share it with others.
@@ -124,7 +124,7 @@
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.1.17" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.1.18" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
 	<import addon="xbmc.json" version="6.0.0"/>

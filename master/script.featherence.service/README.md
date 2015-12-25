@@ -122,16 +122,37 @@ RunScript(script.featherence.service,,?mode=25)
 	```
 	PLAY VIDEO
 	METHOD 1: MODE 4 | URL = text
-	METHOD 2: MODE 5/6/17 | URL = text
-		  OR- YOUTUBE VIDEO ID: MODE 5/6/17 | URL = &youtube_id=text
-		  OR- YOUTUBE PLAYLIST ID: MODE 5/6/17 | URL = &youtube_pl=text
+	METHOD 2: MODE 5/17 | URL = text
+		  - YOUTUBE VIDEO ID: URL = &youtube_id=text
+		  - YOUTUBE PLAYLIST ID: URL = &youtube_pl=text
+		  - DAILYMOTION VIDEO ID: URL = &dailymotion_id=text
+		  - DAILYMOTION PLAYLIST ID: URL = &dailymotion=text
+		  - *ANY VIDEO FROM ADDON: URL = &custom4=text
+		  *use ctrl+shift+P on the preferred location!
 	```
 	
 	```
-	YOUTUBE CHANNEL
-	OPEN: MODE 9 | URL = text
-	FEATHERENCE: MODE 5/6/17 | URL = &youtube_ch=text
-	TIP: You may add '/playlists' after that channel id!
+	SHOW FROM ADDON
+	METHOD 1: MODE 8 | URL = text
+	METHOD 2: MODE 6/17 | URL = text
+		- *ANY VIDEO FROM ADDON: URL = &custom8=text
+		*use ctrl+shift+P on the preferred location!
+	```
+	
+	```
+	SHOW PLAYLIST
+	METHOD 1: MODE 13 | URL = text
+	METHOD 2: MODE 6/17 | URL = text
+		  - YOUTUBE PLAYLIST ID: URL = &youtube_pl=text
+		  - DAILYMOTION PLAYLIST ID: URL = &dailymotion_id=text
+	```
+	
+	```
+	SHOW YOUTUBE CHANNEL
+	METHOD 1: MODE 9 | URL = text
+	METHOD 2: MODE 6/17 | URL = text
+		- YOUTUBE CHANNEL ID: URL = &youtube_ch=text
+		TIP: You may add '/playlists' after that channel id!
 	```
 	
 	```
@@ -145,11 +166,6 @@ RunScript(script.featherence.service,,?mode=25)
 	PLAY ALL: MODE 2 | URL = <file path>
 	TIP: os.path.join(addonPath, 'resources', 'templates2', '')
 	addonPath = current addon
-	```
-	
-	```
-	PLAY DIALYMOTION VIDEO
-	FEATHERENCE: MODE 5/6/17 | URL = &dailymotion_id=text
 	```
 	
 	```
@@ -167,13 +183,6 @@ RunScript(script.featherence.service,,?mode=25)
 	```
 	HOT VOD ADDON
 	FEATHERENCE: MODE 5/6/17 | URL = &hotVOD=text
-	TIP: use ctrl+shift+P on the preferred location!
-	```
-	
-	```
-	ANY URLS
-	OPEN: MODE 8 | URL = <file path>
-	PLAY: MODE 10 | URL = <file path>
 	TIP: use ctrl+shift+P on the preferred location!
 	```
 	
