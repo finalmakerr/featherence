@@ -294,7 +294,8 @@ def clean_commonsearch(x):
 			y = y.replace("commonsearch104", space + commonsearch104)
 			y = y.replace("commonsearch106", space + commonsearch106)
 			y = y.replace("commonsearch107", space + commonsearch107)
-			y = y.replace("commonsearch108", space + commonsearch109)
+			y = y.replace("commonsearch108", space + commonsearch108)
+			y = y.replace("commonsearch109", space + commonsearch109)
 			
 			y = y.replace("commonsearch111", space + commonsearch111)
 			y = y.replace("commonsearch112", space + commonsearch112)
@@ -1475,6 +1476,15 @@ def update_view(url, num, viewtype):
 			installaddon(admin, num, update=True)
 			xbmc.sleep(2000)
 	ok = True
+	
+	if '&' in url and '=' in url:
+		url_ = find_string(url, "&", '=')
+		url = url.replace(url_,"",1)
+	
+	url = url.replace('[',"",1)
+	url = url.replace(']',"",1)
+	url = url.replace("'","",1)
+	url = url.replace("'","",1)
 	xbmc.executebuiltin('XBMC.Container.Update(%s)' % url )
 	text = "url" + space2 + str(url) + space + 'viewtype' + space2 + str(viewtype)
 	printlog(title='update_view', printpoint="", text=text, level=0, option="")
