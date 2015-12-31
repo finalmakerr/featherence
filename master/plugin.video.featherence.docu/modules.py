@@ -17,9 +17,7 @@ def CATEGORIES():
 	addDir(addonString(104).encode('utf-8'),'',104,'http://orig07.deviantart.net/ff1a/f/2009/033/1/3/science_wallpaper_by_hamdanzinha.jpg',addonString(1040).encode('utf-8'),'1',50, getAddonFanart(104, custom="")) #Science
 	addDir(addonString(107).encode('utf-8'),'',107,'http://www.muralswallpaper.co.uk/sites/default/files/styles/full_lightbox/public/product_images/Cute-Animals-Kids-Wallpaper-Mural.jpg?itok=F5n249_x',addonString(1070).encode('utf-8'),'1',50, getAddonFanart(107, custom="")) #Kids
 	addDir(addonString(108).encode('utf-8'),'',108,'http://in.bgu.ac.il/welcome/EventGalleries/%D7%9C%D7%A9%D7%95%D7%9F%20%D7%A2%D7%91%D7%A8%D7%99%D7%AA.jpg',addonString(1080).encode('utf-8'),'1',50, getAddonFanart(108, custom="")) #Hebrew Subtitle
-	addDir(addonString(109).encode('utf-8'),'',109,'http://www.globallistings.info/repository/image/6/445.jpg',addonString(1090).encode('utf-8'),'1',50, getAddonFanart(109, custom="")) #TV channels
-	addDir(addonString(110).encode('utf-8'),'',110,'http://crownheights.org/wp-content/uploads/2015/07/art.jpg',addonString(1010).encode('utf-8'),'1',50, getAddonFanart(110, custom="")) #art
-		
+	addDir(addonString(110).encode('utf-8'),'',110,'http://crownheights.org/wp-content/uploads/2015/07/art.jpg',addonString(1100).encode('utf-8'),'1',50, getAddonFanart(110, custom="")) #Art
 	addon = 'plugin.video.smithsonian'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
 	addDir('Smithsonian HD 1080','plugin://'+addon,8,thumb,plot,addon,58, getAddonFanart(110, custom=""))
@@ -97,10 +95,19 @@ def CATEGORIES101(admin):
 	list = []
 	list.append('&youtube_ch=BBCEarth')
 	list.append('&youtube_ch=AnimalPlanetTV')
-	list.append('&youtube_ch=UC1BOeEP9-jiSmvME99fneQA')
-	addDir("youtube nature channel's",list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+	list.append('&youtube_ch=UC1BOeEP9-jiSmvME99fneQA/playlists')
+	addDir("youtube nature channel's",list,17,'http://www.planwallpaper.com/static/images/121.jpg','','1',"", getAddonFanart(background, custom=""))
  
- 
+    
+	
+	
+	'''Earth Touch'''
+	list = []
+	list.append('&custom8=plugin://plugin.video.earthtouch/')
+	addDir('Earth Touch',list,8,"http://www.earthtouchnews.com/media/1074524/earth-touch-insider_series-poster_2_GalleryLarge.jpg","",'',50, getAddonFanart(110, custom=""))
+
+	
+
  
 	'''בעלי חיים'''
 	addDir(addonString(10101),'',10101,'http://3.bp.blogspot.com/-GmdLk2R6ahA/T55Ud9aXCcI/AAAAAAAABY4/4Z9aMnM0Ukc/s1600/blue-Butterfuly-Latest-Animal-Wallpaper-2012.jpg',addonString(101010),'1',"", getAddonFanart(10101))
@@ -122,80 +129,142 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	background = 10101
 	
 
-	'''Animal's'''
-	list = []
-	list.append('&youtube_ch=UCFYJCBaHRzLJrnhRglM3GdA')
-	addDir("Animal's",list,17,'http://hdwallpaper.camera/download/2461/2015/03/black_panther_animals_wallpaper_1920x1080-800x600.jpg/','','1',"", getAddonFanart(background, custom=""))
 
 	'''Lions'''
 	list = []
-	list.append('&youtube_se=#lions')
+	list.append('&youtube_id=8KaqVQP7oMk')
+	list.append('&youtube_id=LU8DDYz68kM')
+	list.append('&youtube_id=JRSYMfC2PFU')
+	list.append('&youtube_id=EpnERlsfBFc')
+	list.append('&youtube_id=Z7inua2QVdM')
+	list.append('&youtube_id=2kYWXQ2N45c')
+	list.append('&youtube_pl=PL5o3ll3G4aczWH4OD47Jp4xTMH5hE3kUa&index=2')
+	list.append('&youtube_pl=PLkie5Q84Noe2IgDYmkMaXHZ743_T4vYcP')
+	list.append('&youtube_pl=PLkie5Q84Noe2IgDYmkMaXHZ743_T4vYcP')
 	list.append('&youtube_pl=PLpYgp0wW8mmZyLCqY415YbjefiazLBHzJ')
-	list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq')
+	list.append('&youtube_pl=PLpYgp0wW8mmbd_brFAIB31QSerTwHOv7j')
 	addDir('Lions',list,17,'http://3.bp.blogspot.com/-Iff7IaN3DKI/UeUqIwYg3ZI/AAAAAAAAAZ4/1qJiCmolK7M/s1600/lion-photo.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	
 	'''Giraffe'''
 	list = []
-	list.append('&youtube_ch=UCDJLpRSvaPy8vWn8hZVguSg') 
+	list.append('&youtube_id=VhMU_F3arSA')
+	list.append('&youtube_id=zBUgaQrUBWQ')
+	list.append('&youtube_id=DRQmVSyvcKA')
+	list.append('&youtube_id=7HcYJKMxpcg')
+	list.append('&youtube_pl=PLVxXlr3XU-_VZwC1SOiaPBFaujWEFiTPh')
+	list.append('&youtube_pl=PLVxXlr3XU-_W_YnYr9wn_6ueFPH-O3Ltb') 
+	list.append('&youtube_pl=PLVxXlr3XU-_X9GwrrVOCDuTbJujU0r8_4') 
+	list.append('&youtube_pl=PLVxXlr3XU-_VGu-vKA7xMs_QlrBRHThS2') 
 	addDir('Giraffe',list,17,'http://ww2.valdosta.edu/~sybashlor/giraffe.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Elephant'''
 	list = []
-	list.append('&youtube_ch=UCXhjuyNdDSbe5L0yiFoCoxQ') 
+	list.append('&youtube_id=ZVAMnirC72c')
+	list.append('&youtube_id=FJBtujXM5cQ')
+	list.append('&youtube_id=d-GdNAnVweE')
+	list.append('&youtube_id=0NVBNC37V90')
+	list.append('&youtube_pl=PLAiO6kEglH8xLaBkxV7MObuAa9QqCA10b')
+	list.append('&youtube_pl=PLAiO6kEglH8x7Rv1DaI1hIhpk4MGPIG8I')
+	list.append('&youtube_pl=PLAiO6kEglH8w5OVIBqcl7ZlIzjIkHMXeW') 
+	list.append('&youtube_pl=PLAiO6kEglH8zS--XRJUQke_MxDoCEsF3u') 
+	list.append('&youtube_pl=PLAiO6kEglH8xydCtHcO2pYPlVdssYH9l4')  
 	addDir('Elephant',list,17,'http://www.turtlehurtled.com/wp-content/uploads/2013/06/Elephant.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Tiger'''
 	list = []
-	list.append('&youtube_ch=UCEYScfGuWVU9gxdrqf0XArQ') 
+	list.append('&youtube_id=1b7oy0jo5tU')
+	list.append('&youtube_id=_fc3m96wtQo')
+	list.append('&youtube_id=7HcYJKMxpcg')
+	list.append('&youtube_pl=PLpE7aFRb1sOUEWGAyTiqzA8jx5IncqwIr')
+	list.append('&youtube_pl=PL5o3ll3G4acw3YumPFuqmJWgjgJmOVQX-')
+	list.append('&youtube_pl=PLpE7aFRb1sOXrYG24pHaeqFmApxdtn5Iz') 
+	list.append('&youtube_pl=PL5iIO4k3YjsRK7j4HZGNiJINQUC29wamE') 
+	list.append('&youtube_pl=PLJAiNrGWNZmbZOcdxnMI5zG-bD83NYP8E')  
 	addDir('Tiger',list,17,'http://www.the-south-asian.com/april2001/bengal_tiger.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Monkey'''
 	list = []
-	list.append('&youtube_ch=channel/UC265iYDGY4YHbEqLPrhvJKQ') 
+	list.append('&youtube_id=lPmOcJ9YdYw')
+	list.append('&youtube_id=z3pGxE4SjUI')
+	list.append('&youtube_id=ITvBkHxVszg')
+	list.append('&youtube_id=Rqq2rqQA3FQ')
+	list.append('&youtube_pl=PLvYtTDz1O1ZSbmQpbOzz05ao4c7Ziqlzb')
+	list.append('&youtube_pl=PLvYtTDz1O1ZToKTjnexNwLDFYY6oaSNGx')
+	list.append('&youtube_pl=PLvYtTDz1O1ZSUQVSwotzFtQh0LHwmm_6v') 
+	list.append('&youtube_pl=PLzcIUDUth-LrlrwlP04LIkPMhjgq-cSPO') 
+	list.append('&youtube_pl=PLb7h-pNxlzo-YAGePRFli68k7cOHxIWHI')
+	list.append('&youtube_pl=PLZKAUcf1exr2OxfbQaqcuCOxAEi-NklJt')	
 	addDir('Monkey',list,17,'http://www.happytrailsindonesia.com/uploads/img/8/Monkey%20Indonesia.jpg','','1',"", getAddonFanart(background, custom=""))
 	
-	'''Cats'''
-	list = []
-	list.append('&youtube_ch=UC9egiwuJsQZ0Cy2to5fvSIQ') 
-	addDir('Cats',list,17,'https://www.colourbox.com/preview/3100637-grey-scottish-cat-on-the-white-background.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Birds'''
 	list = []
-	list.append('&youtube_ch=UC7uJ7jdwfPcmqKu7V2nI9rA') 
-	list.append('&youtube_pl=PLvTrLxXekhJrlt2IY3-Paobg5skAXFIMB')
+	list.append('&youtube_id=0Yjdf3woXl8')
+	list.append('&youtube_id=YTR21os8gTA')
+	list.append('&youtube_id=Xb0P5t5NQWM')
+	list.append('&youtube_id=pd5BMP_41bI')
+	list.append('&youtube_pl=PLvTrLxXekhJrlt2IY3-Paobg5skAXFIMB') 
+	list.append('&youtube_pl=PLvTrLxXekhJosswcJtwUAyZmD1Kn0ePrN')
+	list.append('&youtube_pl=PLADghIKXCKMd39gUXdb2m3mOJF25-ighv')
+	list.append('&youtube_pl=PLvTrLxXekhJoJM4NroZILrYVOCot7Gw0i')
 	addDir('Birds',list,17,'http://nice-animals.com/wp-content/uploads/2013/02/colorful-birds-02.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Fish'''
 	list = []
-	list.append('&youtube_ch=UCZGIp0c6Dv6o6GOR7XCuZTA')
+	list.append('&youtube_id=Z-BbpaNXbxg')
+	list.append('&youtube_id=5G_6YZrNNy0')
+	list.append('&youtube_id=Slp8G7bAWeA')
+	list.append('&youtube_id=Yx1a5swwqXc')
 	list.append('&youtube_pl=PLfAToAFYpTfuHlcsmO-hiYcpp1yrrP10y')
 	list.append('&youtube_pl=PLezpCwYgD_yvNYNXZlDM6z3mpuTQYgjUs')
+	list.append('&youtube_pl=PL3L2HQeYSn6ff_0gyAJ8T_Hcsq9uyxxx1')
+	list.append('&youtube_pl=PLSMO2bjU_7i9A7SbNN4PB_cosoXsmrBWN')
 	addDir('Fish',list,17,'http://corural.com/wp-content/uploads/2014/10/great-barrier-reef-fish.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 
 	'''Shark'''
 	list = []
-	list.append('&youtube_ch=UCHThGYhvhgyvTgUkv3n5R_A') 
+	list.append('&youtube_id=zQV_WcltnsA')
+	list.append('&youtube_id=zeQMqUMvIeY')
+	list.append('&youtube_id=6aKcazsEWPk')
+	list.append('&youtube_id=xrt27dZ7DOA')
+	list.append('&youtube_id=aBzW95qi9gs')
+	list.append('&youtube_id=RKyn6dEMHKA')
+	list.append('&youtube_pl=PLB3B2BB679EA6723E')
+	list.append('&youtube_pl=PLCE93DFB3E4FFA625')
+	list.append('&youtube_pl=PL9BFF5E829E9F4C0A')
+	list.append('&youtube_pl=PL2B-PWFn-iOZPvf3javy1DaGvy9nCl0pk')
 	addDir('Shark',list,17,'http://marinesciencetoday.com/wp-content/uploads/2009/10/Blacktip-Reef-Shark-Carcharhinus-melanopterus-Bora-Bora-Photo-by-Duncan-Rawlinson.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Snakes'''
 	list = []
-	list.append('&youtube_ch=UC26F6BLFDlCufiZnXsbWMwQ')
+	list.append('&youtube_id=l56K8eAtCig')
+	list.append('&youtube_id=C17LC5M_v1k')
+	list.append('&youtube_id=MiHPMpXqX20')
+	list.append('&youtube_id=AJ2l4owxC7s')
+	list.append('&youtube_id=lkdFDKk8YWk')
 	list.append('&youtube_pl=PLWWOl-2iqjMb2UljVPPhQQy6SJJ3E-7gK')
 	list.append('&youtube_pl=PLoUUkpYUScvJb2li_PY6c9fu_A3IlJKiT')
+	list.append('&youtube_pl=PL5o3ll3G4acyS0FuMUmUct17qnGIMT9L-')
+	list.append('&youtube_pl=PLLxGCgUG6c44p9fsTX5SJKxmooliiou8X')
 	addDir('Snakes',list,17,'http://www.888reptiles.co.uk/user/products/large/amberstripe.jpg','','1',"", getAddonFanart(background, custom=""))
 	
-	'''Reptile'''
-	list = []
-	list.append('&youtube_ch=UCvfH62D48X5Bahu-oroIreQ')
-	addDir('Reptile',list,17,'http://coldbloodedexpos.com/wp-content/uploads/2012/03/PatchanSambavaFired.jpg','','1',"", getAddonFanart(background, custom=""))
-	
+
 
 	
 	'''dogs'''
 	list = []
-	list.append('&youtube_ch=UCcqLkZqBfBOKmi4vrgkQ6yw')
+	list.append('&youtube_id=mwm0OwqWvF4')
+	list.append('&youtube_id=ilMzs1UHEmw')
+	list.append('&youtube_id=B8ISzf2pryI')
+	list.append('&youtube_id=rp03AorAWLY')
+	list.append('&youtube_id=zOiWYQIrqyE')
+	list.append('&youtube_id=b0nG0kuwcSg')
+	list.append('&youtube_pl=PLuVVnmxF_tkSSxMWZZYOCopZ-h5YiBW48')
+	list.append('&youtube_pl=PLMssKIjsDxXmMGypWsr8u-yGOUSoPoozb')
+	list.append('&youtube_pl=PLIAkKPWGh_rbUV3uPDUXCOcoMEv3VJnsP')
+	list.append('&youtube_pl=PLIAkKPWGh_rawwECMC2UCD0zSq-QUz2_Z')
 	addDir('Dogs',list,17,'http://images4.fanpop.com/image/photos/15300000/Basset-Hound-hound-dogs-15363087-800-600.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	
@@ -207,19 +276,6 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLjXkouFJLKB3jeq_W_wBZnyZe4q-rLDKL')
 	addDir('Dogtv',list,17,'http://www.telestar.fr/var/telestar/storage/images/2015/articles/dog-tv-quels-sont-les-programmes-proposes-par-cette-chaine-reservee-aux-chiens-96685/825982-1-fre-FR/Dog-TV-quels-sont-les-programmes-proposes-par-cette-chaine-reservee-aux-chiens.jpg','','1',"", getAddonFanart(background, custom=""))
  
-	'''DOG WHISPERER'''
-	list = []
-	list.append('&youtube_pl=PLdN3gbvLGO69ux2taRPiVADgwfTrPor2C')
-	list.append('&youtube_pl=PLdN3gbvLGO6-MbV_l-ThMzUsWX9-XVdP6')
-	list.append('&youtube_pl=PLvt1492Vj-RbJx64fEZkS5ygKZWCVOkZm')
-	list.append('&youtube_pl=PLdN3gbvLGO6-OHbniVjAUMfV5Z7K_dRzz')
-	list.append('&youtube_pl=PLdN3gbvLGO6_zXj9K0fwSTrqAG01MA__q')
-	list.append('&youtube_pl=PL4GlJCvaiJkTath_Qafqp_K0zfyxzXTUr')
-	list.append('&youtube_pl=PL4GlJCvaiJkThBI4xT-1VIHc4ZLSB0H97')
-	list.append('&youtube_pl=PL4GlJCvaiJkQjm8rnXXJhkuHrfu7rM3pV')
-	list.append('&youtube_pl=PL4GlJCvaiJkS5S4M2QU5AJhTRhka_SzUC')
-	addDir('DOG WHISPERER',list,17,'http://cdn-img.people.com/emstag/styles/800x600/s3/i/2009/pets/migration/001074442.jpg?itok=tMQvsEP0','','1',"", getAddonFanart(background, custom=""))
-
 def CATEGORIES10102(name, iconimage, desc, fanart):
 	'''------------------------------
 	---NATURE-PLANTS-----------------
@@ -227,8 +283,14 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	background = 10102
 	'''Plant's'''
 	list = []
-	list.append('&youtube_ch=UCNVi9QvilfDjDZ8MPzSl8Xg')
-	list.append('&youtube_id=eH1s9GCqPKo')
+	list.append('&youtube_id=SvUJHX0EG4c')
+	list.append('&youtube_id=wcmKT5uHgL0')
+	list.append('&youtube_id=OTfB7FWipWk')
+	list.append('&youtube_id=BsL5nsEf56s')
+	list.append('&youtube_id=NsIojj4PzAo')
+	list.append('&youtube_id=3qNlk3FAb5c')
+	list.append('&youtube_id=MgDZBqTuUuE')
+	list.append('&youtube_id=metLFxsnLDc')
 	list.append('&youtube_pl=PLgKYsEYF9_QCxM_29RC6euEJLvaHFOdrJ')
 	list.append('&youtube_pl=PLs7Y2nGwfz4FL4ZJgONHsl1qp-AZPr3tJ')
 	list.append('&youtube_pl=PLh8cmtKf7uVnEKm-YiByTebR3bdyOV_XV')
@@ -240,17 +302,39 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 
 	'''Tree's'''
 	list = []
-	list.append('&youtube_ch=UCTdBhnGG8i5bNLSGBR4PJGQ')
+	list.append('&youtube_id=8pJPSxYGp1Y')
+	list.append('&youtube_id=cNlqSCN9V-4')
+	list.append('&youtube_id=FpeCOyxWEsc')
+	list.append('&youtube_id=qdlJUnfDTus')
+	list.append('&youtube_id=TI7sJnMADHk')
+	list.append('&youtube_id=DY1jz3SQXJ')
+	list.append('&youtube_id=m5Mmq2vxkB0')
+	list.append('&youtube_id=QJvtJeB2Iq0')
+	list.append('&youtube_id=9aq_ssT-vfs')
+	list.append('&youtube_id=BickMFHAZR0')
+	list.append('&youtube_pl=PL21A27CBAD0255C88')
+	list.append('&youtube_pl=PLS2vMpIq_JAklZyf-gI3MAtotuBZGs3b8')
+	list.append('&youtube_pl=PLbuqSmk1tafN-_LltPvJ9T5DRmP8bVO_a')
+	list.append('&youtube_pl=PLAA38DC71D32D4FAB')
+	list.append('&youtube_pl=PL5C118AE173F37A41')
+	list.append('&youtube_pl=PLQlgR0H02jQtTCuwdO5PFGYw1-pz4Q33')
 	addDir("Tree's",list,17,'http://memolition.com/wp-content/uploads/2015/07/collection-of-beautiful-pictures-from-around-the-world-23781.jpg','','1',"", getAddonFanart(background, custom=""))
 
-	'''Vegetable'''
+	'''edibl'''
 	list = []
-	list.append('&youtube_ch=UCsSTiRba-BUnOk0PALOhsug')
+	list.append('&youtube_ch=UCsSTiRba-BUnOk0PALOhsug/playlists')
 	addDir("vegetable",list,17,'http://earthdivasblog.com/wp-content/uploads/2010/07/Colorful-vegetables-755879.jpg','','1',"", getAddonFanart(background, custom=""))
 
 	'''Botany'''
 	list = []
-	list.append('&youtube_ch=UCSq58WM2_CZGlps_oZeAyOQ')
+	list.append('&youtube_pl=PL7D120055C712F646')
+	list.append('&youtube_pl=PLFDF144E5C691634E')
+	list.append('&youtube_pl=PLJAzFg3PHTb3HVw18aKBsL82UGSdHGo-F')
+	list.append('&youtube_pl=PLamCflZiuToPflePAQQrn-vhvFbhE8JeC')
+	list.append('&youtube_pl=PLDfSq7WkJcZVA58kjn0jztzjoqrJTfcaJ')
+	list.append('&youtube_pl=PLamCflZiuToNa6pIevRMZec0V1-7DOmmj')
+	list.append('&youtube_pl=PLamCflZiuToPohg1CYK3KAx-nOcdHOWLq')
+	list.append('&youtube_pl=PLsBvTYtPA-42WyF1BDOfp96wNQoNkajE9')
 	addDir("Botany",list,17,'http://chabad4israel.org/tznius4israel/pictures/brooklyn-botanic-garden-new-yor.jpg','','1',"", getAddonFanart(background, custom=""))
 
 	'''stracture,growth & Physiology'''
@@ -295,7 +379,6 @@ def CATEGORIES10103(name, iconimage, desc, fanart):
 
 	'''ocean's'''
 	list = []
-	list.append('&youtube_ch=UCpytjV41TM0RiSuZx0dS-7Q')
 	list.append('&youtube_id=eH1s9GCqPKo')
 	list.append('&youtube_pl=PLHva7axGsKGp38eqVqqdxD5d4IOB9KOWL')
 	list.append('&youtube_pl=PL7ddU90jpZDsJAhKNsVyuMcWELCLQsrfV')
@@ -311,7 +394,16 @@ def CATEGORIES10103(name, iconimage, desc, fanart):
 	
 	'''Earth'''
 	list = []
-	list.append('&youtube_ch=UC8OvMbWkaW5rWhOGsGNHD5Q')
+	list.append('&youtube_id=VNqNnUJVcVs')
+	list.append('&youtube_id=GOAEIMx39-w')
+	list.append('&youtube_id=x1QTc5YeO6w')
+	list.append('&youtube_id=COWE6sMzdqI')
+	list.append('&youtube_id=6v2L2UGZJAM')
+	list.append('&youtube_pl=PL9CE54703E2B8E92F')
+	list.append('&youtube_pl=PL746FAD2B2C91D906')
+	list.append('&youtube_pl=PLki90Aw2GjddE7j9gsNyZ2BLOS9onitwN')
+	list.append('&youtube_pl=PLZa5JgpDRphafqlAxL_j9eOGQkRsrQ1a6')
+	list.append('&youtube_pl=PLzW2SWgVnP9sr5xy1qUxfkmnZAf47J9Wu')
 	addDir("Earth",list,17,'http://orig14.deviantart.net/3632/f/2008/151/4/a/the_planet_earth_by_technoking.jpg','','1',"", getAddonFanart(background, custom=""))
 
 
@@ -367,29 +459,75 @@ def CATEGORIES102(admin):
 	list.append('&youtube_ch=VideoFromSpace')
 	list.append('&youtube_ch=UC7_gcs09iThXybpVgjHZ_7g')
 	list.append('&youtube_ch=scishowspace')
+	list.append('&youtube_ch=canadianspaceagency')
 	addDir("youtube space channel's",list,17,'http://www.fabuloussavers.com/wallpapers/wspace5.jpg','','1',"", getAddonFanart(background, custom=""))
  
-	'''Universe'''
+	'''Space Exploration'''
 	list = []
-	list.append('&youtube_ch=UCAP0Ypni5eG56SJT0A0Kwaw')
-	addDir("Universe",list,17,'https://wallpaperscraft.com/image/nebula_universe_space_stars_105874_800x600.jpg','','1',"", getAddonFanart(background, custom=""))
+	list.append('&youtube_id=tMVDWvHlrRc')
+	list.append('&youtube_id=htOtW0pD92Y')
+	list.append('&youtube_id=_P57CbtAVE0')
+	list.append('&youtube_id=KyKvr_7fNWc')
+	list.append('&youtube_id=ZtaKWt26dNs')
+	list.append('&youtube_id=GVTm0loi9OY')
+	list.append('&youtube_id=dyyOcL5tn7k')
+	list.append('&youtube_ch=UC7DeQ1bhSunszQ3JQ-25WiA/playlists')
+	addDir("Space Exploration",list,17,'https://wallpaperscraft.com/image/nebula_universe_space_stars_105874_800x600.jpg','','1',"", getAddonFanart(background, custom=""))
 	
-	'''Space'''
+	'''Hubble Space Telescope'''
 	list = []
-	list.append('&youtube_ch=UCRqAn0M59wxBYyHHuwOXfGA')
+	list.append('&youtube_id=udAL48P5NJU')
+	list.append('&youtube_id=3afEX8a2jPg')
+	list.append('&youtube_id=SnnJg0jqr8A')
+	list.append('&youtube_id=ZQKW76d2xrw')
+	list.append('&youtube_ch=HubbleSiteChannel')
+	list.append('&youtube_pl=PLowYwBwSCQXWnznaU5d0KXA2rz4vkHgsY')
+	list.append('&youtube_pl=PLYTAjChqCnmE8QkMiaEilnBX20gxmbXG2')
+	list.append('&youtube_pl=PLDA7830389EE0BA94')
+	list.append('&youtube_pl=PLowYwBwSCQXW4OkSW1Oh0UbIe-w_h5crt')
 	addDir("Space",list,17,'http://2.bp.blogspot.com/-epZUsCIzQuY/T18MYajib8I/AAAAAAAAAb4/9Z6xk2nj8Vk/s1600/Space-Wallpaper.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Astronomy'''
 	list = []
-	list.append('&youtube_ch=UCSIJHiTGlBRsdpRf5-fEZaA')
+	list.append('&youtube_id=L3op3B907hM')
+	list.append('&youtube_id=rCqZQdqd6Cw')
+	list.append('&youtube_id=uabNtlLfYyU')
+	list.append('&youtube_id=Xp4OIzvqE9k')
+	list.append('&youtube_pl=PLsNB4peY6C6KgGVbYmTp0N5zPIXYE3ebY')
+	list.append('&youtube_pl=PLw4zAzjwBP1d5annau67miUKlxoEERFKi')
+	list.append('&youtube_pl=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL')
+	list.append('&youtube_pl=PL39CB50AA10C74547')
+	list.append('&youtube_pl=PLB47070730D7DA3F2')
+	list.append('&youtube_pl=PL2yn_e5rlIW0bsNIOc3dEadJ6YwTOoj-Z')
 	addDir("Astronomy",list,17,'http://www.wall321.com/thumbnails/detail/20120615/outer%20space%20stars%20nebulae%201920x1200%20wallpaper_www.wall321.com_24.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	
+	'''Astronaut'''
+	list = []
+	list.append('&youtube_id=7DWzmq9e0Lw')
+	list.append('&youtube_id=uVLfkSrzBPk')
+	list.append('&youtube_id=uabNtlLfYyU')
+	list.append('&youtube_id=9ZEdApyi9Vw')
+	list.append('&youtube_pl=PLN4k6F5s6hnkfkZ5py9pvdW4PMJ4pUqLG')
+	list.append('&youtube_pl=PLN4k6F5s6hnm0GZ8tNJDNVP4osOiFwdLw')
+	list.append('&youtube_pl=PLOXyXTU9MRIknE5ZVSWkEQ--HBLivYcM3')
+	list.append('&youtube_pl=PLN4k6F5s6hnntHXavTTQ_T43eRlyZKjea')
+	list.append('&youtube_pl=PLOXyXTU9MRIl4BGXzh8RAwHIdacWVAVpD')
+	addDir("Astronaut",list,17,'http://www.blt.co.uk/wp-content/uploads/2015/12/Astronauts_Nigeria_.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	
-	
+	'''eso'''
+	list = []
+	list.append('&custom8=plugin://plugin.video.eso/')
+	addDir('ESO-European Organisation for Astronomical Research',list,8,"https://lh6.googleusercontent.com/-UUnCTamsMNo/TXRGOOvxvnI/AAAAAAAAArY/psesZKPG8so/s1600/Nova_Fires_jpg.jpg","",'',50, getAddonFanart(110, custom=""))
 
 	
+	
+	'''ESA'''
+	list = []
+	list.append('&custom8=plugin://plugin.video.esa/')
+	addDir('ESA- European Space Agency',list,8,"http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2006/05/artist_s_impression_of_the_gaia_satellite/9272925-5-eng-GB/Artist_s_impression_of_the_Gaia_satellite.jpg","",'',50, getAddonFanart(110, custom=""))
+
 	
 	
 def CATEGORIES103(admin):
@@ -442,18 +580,44 @@ def CATEGORIES103(admin):
 	list.append('&youtube_pl=PLAHSKcwF7IuoAlecwFFfOkyJvQZvFTEh5')
 	list.append('&youtube_pl=PLJQnz1qx0QxZNT7KQKC9L95-Wt1ZQ-gaT')
 	list.append('&youtube_pl=PL5CFDF24A6CB53CD6')
-	list.append('&youtube_pl=PLAHSKcwF7IuoAlecwFFfOkyJvQZvFTEh5')
-	list.append('&youtube_pl=PLAHSKcwF7IuoAlecwFFfOkyJvQZvFTEh5')
-	list.append('&youtube_pl=PLAHSKcwF7IuoAlecwFFfOkyJvQZvFTEh5')
-	list.append('&youtube_pl=PLAHSKcwF7IuoAlecwFFfOkyJvQZvFTEh5')
 	addDir("History Channel",list,17,'http://download.1wallpaper.net/20150329/the-history-channel-logo-design-black-background-800x600.jpg','','1',"", getAddonFanart(background, custom=""))
 	
-	'''History'''
-	list.append('&youtube_ch=UCBcIe5EBAxqK267uyEVibFw')
-	addDir("History",list,17,'https://wallpaperscraft.com/image/colosseum_rome_italy_architecture_monument_history_25482_800x600.jpg','','1',"", getAddonFanart(background, custom=""))
+	
+	'''World Wars'''
+	list = []
+	list.append('&youtube_ch=TheGreatWar')
+	list.append('&youtube_pl=PLC-0e1pjuxF9bc8e0cDsmj0tqGJ0Ss8tT')
+	list.append('&youtube_pl=PL-b6BqXQgEFo88XFZ2r-DQmN-c5W5W9u-')
+	list.append('&youtube_pl=PLtvqDUuIy5Ee5p_YVMoOfhCmkaLie32KB')
+	list.append('&youtube_pl=PL7eLCXTvueOvs67EDHnuKr7aXguRyuJ0S')
+	list.append('&youtube_pl=PLu7g1OfsO2vcKnzSXQiCHisyUIQcclbxr')
+	list.append('&youtube_pl=PL95DD3A12BDB77AF0')
+	list.append('&youtube_pl=PLACB85DD0818A69A8')
+	list.append('&youtube_pl=PLCA467ED9C59E9D8D')
+	list.append('&youtube_pl=PLkJloWOsgyNlKNx-LhoAp50o5gqn5d8rp')
+	list.append('&youtube_pl=PLHbgAq4l2Bj7AwVk7R1SIuhqtki7fPLUL')
+	list.append('&youtube_pl=PL8dPuuaLjXtNjasccl-WajpONGX3zoY4M')
+	list.append('&youtube_pl=PLLvOGyTQQoqziO-Uobw49bDRT2Lel0t3R')
+	list.append('&youtube_pl=PL6oforB7ir5JDZaxy6017UJM-cvC-CpKy&index=1')
+	addDir("World Wars",list,17,'http://cdn.usborne.com/catalogue/covers/eng/width_223px/87886.jpg','','1',"", getAddonFanart(background, custom=""))
+	
+
+	'''Military history'''
+	list.append('&youtube_id=m7pT4T0dixQ')
+	list.append('&youtube_id=JldZnx3msTY')
+	list.append('&youtube_id=PRA2zXjX-Xk')
+	list.append('&youtube_id=emDz5qghrzY')
+	list.append('&youtube_pl=PLi4lYGGXHIkMwfUrvRCTGZgbiBSjanvKw')
+	list.append('&youtube_pl=PLaXWjn2EfstzVU9xb0HQRiPUOzAt6D1Z0')
+	list.append('&youtube_pl=PLfFUSMjNfugL-kJQdkQS6B2_x_0cSDpnd')
+	list.append('&youtube_ch=UClh0ObJvSmUAJU9K9mefMKg/playlists')
+	list.append('&youtube_pl=PLi4lYGGXHIkMwfUrvRCTGZgbiBSjanvKw')
+	list.append('&youtube_pl=PLdVZrg_VhTFEchYC_NfvZQLHBzbh08PZ4')
+	list.append('&youtube_pl=PL6CCB81AAEACD6D17')
+	addDir("Military history",list,17,'https://upload.wikimedia.org/wikipedia/en/d/d0/History_channel_military.png','','1',"", getAddonFanart(background, custom=""))
 
     
-	
+
 	
 	
 	
@@ -506,7 +670,15 @@ def CATEGORIES104(admin):
 	addDir(addonString(10403),'',10403,'http://kommercialize.com/wp-content/uploads/2013/02/iStock_000020426012Small.jpg',addonString(104030),'1',"", getAddonFanart(10403))	
 
 	'''מחקר מדעי'''
-	list.append('&youtube_ch=UCWFRiMtUDXj6N-hNe0An-VQ')
+	list = []
+	list.append('&youtube_pl=PLtSuKq2ke_sm8yCeOhOs-yaYgEyVIKXxt')
+	list.append('&youtube_pl=PLtSuKq2ke_snSo4WimGOrlquJc8r7Tq7u')                        
+	list.append('&youtube_pl=PLtSuKq2ke_skIPkapVG8PLBUmIOSgPlkS')
+	list.append('&youtube_pl=PLtSuKq2ke_slVxQS0sqeYVoLkmP74Y4gW')
+	list.append('&youtube_pl=PLtSuKq2ke_sn4qo5px_i1jZNVDzz47PVJ')
+	list.append('&youtube_pl=PLtSuKq2ke_smyz5y_v6N36MfT5dgA4ORB')
+	list.append('&youtube_pl=PLtSuKq2ke_sn4qo5px_i1jZNVDzz47PVJ')
+	list.append('&youtube_pl=PLtSuKq2ke_smyz5y_v6N36MfT5dgA4ORB')
 	addDir('מחקר',list,17,'https://www.colourbox.com/preview/4178295-scientific-research.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''ניסויים מדעיים'''
@@ -553,47 +725,85 @@ def CATEGORIES10401(name, iconimage, desc, fanart):
 	
 	'''Sociology'''
 	list = []
-	list.append('&youtube_ch=UCltQS7ZuOoJSHaPW53t0sig')
+	list.append('&youtube_pl=PLiyEC8E9r_ymK3Ps3DbXtzn9NDt9b47PY')
+	list.append('&youtube_pl=PLiyEC8E9r_yltRbrb3lKnf-wuvsxUq1w6')
+	list.append('&youtube_pl=PLiyEC8E9r_ymDhossOXG2t-XXE_G9j_1-')
+	list.append('&youtube_pl=PLiyEC8E9r_ymUoLrKtCmVDJyxFyYFl5z2')
+	list.append('&youtube_pl=PLP8Ma8K8YxnwiAYGiCMba5yu8swa6a7-V')
+	list.append('&youtube_pl=PLT35IWG8lUbYwramdIPMAR5wPbDFjDU0H')
 	addDir('Sociology',list,17,'http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/09/241.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Politics'''
 	list = []
-	list.append('&youtube_ch=UCMQtDXgovMX9yMfHAEsdjVw')
+	list.append('&youtube_pl=PL3Ikn3SKdJHgC14x0oUEMJ7pxG_Yj8UNa')
+	list.append('&youtube_pl=PLlTLHnxSVuIyeEZPBIQF_krewJkY2JSwi')
+	list.append('&youtube_pl=PLeyJPHbRnGaaKyuj1467jFo7gzXqYSPKx')
+	list.append('&youtube_pl=PLt-M8o1W_GdQrVQpvLQMJZlprs5MD0imr')
+	list.append('&youtube_pl=PLrb5XV0d1JsJQIgr3l1iJtkRjzr1Cgbu8')
 	addDir('Politics',list,17,'http://wallpoper.com/images/00/28/25/35/flags-politics_00282535.png','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Geography'''
 	list = []
-	list.append('&youtube_ch=UCl-12y1Zht8eSiOGBiMV7wQ')
-	addDir('Geography',list,17,'http://wallpaperbeta.com/wallpaper_800x600/map_of_the_world_geographical_geography_800x600_hd-wallpaper-330201.jpghttp://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+	list.append('&youtube_pl=PL67F390EB9FE9F4F0')
+	list.append('&youtube_pl=PLR7XO54Pktt8_jNjAVaunw1EqqcEAdcow')
+	list.append('&youtube_pl=R719mLoDLaQ&list=PLD985DC24042D71ED')
+	list.append('&youtube_pl=PL3RbLxbjtXdmyirZPUqrKKWrSjGlfwqRc')
+	list.append('&youtube_pl=PLzW2SWgVnP9t9VP7q65cy7Zg3o9DudTUx')
+	list.append('&youtube_pl=PL71HsN_LrZoA-Suz9mznJktPqwHVMQRX0')
+	list.append('&youtube_pl=PLdAwJqwLRJOHCEeJwJipe24G1-6YYwSLd')
+	list.append('&youtube_pl=PLVeXbgaZS8ge9SQwQK47meZbUGA0I-RwX')
+	addDir('Geography',list,17,'http://wallpaperbeta.com/wallpaper_800x600/map_of_the_world_geographical_geography_800x600_hd-wallpaper-330201.jpg','','1',"", getAddonFanart(background, custom=""))
 	
-	'''Law'''
-	list = []
-	list.append('&youtube_ch=UC_LsaJB2t-LJy2cxw_QYWyQ')
-	addDir('Law',list,17,'http://oddstuffmagazine.com/wp-content/uploads/2012/06/Law.jpg','','1',"", getAddonFanart(background, custom=""))
-	
+
 	'''Architecture'''
 	list = []
-	list.append('&youtube_ch=UCMT9aOQSpFzjorzrVpv9Dig')
+	list.append('&youtube_id=sHL_F9g9scY')
+	list.append('&youtube_id=gi9u6VgGn3k')
+	list.append('&youtube_id=iY0Uuyf8Xhw')
+	list.append('&youtube_id=Gb8k7pkGKKA')
+	list.append('&youtube_id=KCB1_paPy-c')
+	list.append('&youtube_pl=PLB3DC6A8DE288C013')
+	list.append('&youtube_pl=PLPXsMt57rLthe1kihStAdRgGdj3IZ7WHe')
+	list.append('&youtube_pl=PLABA0239EA68C47B6')
+	list.append('&youtube_pl=PLnEy4CjpTzIUsjNPw1T62KDnYl_hBUU7X')
+	list.append('&youtube_pl=PLs6rfCOqpsQgt_Ycctt-oRLhKiolwHbUZ')
 	addDir('Architecture',list,17,'http://www.datavisualizationtools.biz/wp-content/uploads/2015/09/architecture-modern-atlanta-modern-architecture-architecture-atlanta-architecture.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Philosophy'''
 	list = []
-	list.append('&youtube_ch=UC_LsaJB2t-LJy2cxw_QYWyQ')
+	list.append('&youtube_ch=thephilosophytube')
+	list.append('&youtube_pl=PLwxNMb28XmpfEr2zNKQfU97eyEs70krSb')
+	list.append('&youtube_pl=hdCBGWcd4qw&list=PL914258A2DAF5D393')
+	list.append('&youtube_pl=PLtKNX4SfKpzUURFV6ucpn2TGaZYqXyrai')
+	list.append('&youtube_pl=XXBQRuMfs2E&list=PLFF9E7ADD88FBA144')
+	list.append('&youtube_id=Tm0Uq08xXhY')
+	list.append('&youtube_id=j3BKnmtlMco')
+	list.append('&youtube_id=UVA8jX9KQcE')
+	list.append('&youtube_id=Mz_iGGGMddw')
 	addDir('Philosophy',list,17,'http://www.thegreatcourses.com/media/catalog/product/cache/1/image/800x600/0f396e8a55728e79b48334e699243c07/4/4/4477---base_image_4.1424272096.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	
-	'''Economy'''
+	'''Economics'''
 	list = []
-	list.append('&youtube_ch=UC15VWxug_nLMMWVbj5zgxCQ')
-	list.append('&youtube_ch=UC4V_BtzAiDgh_XcNRZ70jaw')
-	addDir('Economy',list,17,'http://gazettereview.com/wp-content/uploads/2015/04/march-jobs-report-economic-news.jpg','','1',"", getAddonFanart(background, custom=""))
+	list.append('&youtube_pl=PL6FA614EF0CB2AD82')
+	list.append('&youtube_pl=PL8dPuuaLjXtPNZwz5_o_5uirJ8gQXnhEO')
+	list.append('&youtube_pl=PLA46DB4506062B62B')
+	list.append('&youtube_pl=PL11ADD17785C9C9A4')
+	list.append('&youtube_pl=PLE70CA726102FB294')
+	list.append('&youtube_pl=PL50F9C4FD0BE8FE28')
+	list.append('&youtube_pl=5IDhKM&list=PL54ADCC41A7E439B7')
+	list.append('&youtube_pl=5IDhKM&list=PL-9JQaDLOcT5MLi4NdWH7arCY3dEhozFS')
+	addDir('Economics',list,17,'http://gazettereview.com/wp-content/uploads/2015/04/march-jobs-report-economic-news.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''Psychology'''
 	list = []
-	list.append('&youtube_ch=UCYlpMl8sk46MKU9P7XgJpGw')
-	list.append('&youtube_pl=PLeDkGnO-NieF4Otwc4K2RA-ZagUdAIVwZ')
-	list.append('&youtube_pl=PLrb5XV0d1JsJnrEjivD-G1UbxB4q0hcNq')
-	list.append('&youtube_pl=PLrb5XV0d1JsLyXjrm5meM3mnSI0PopLdv')
+	list.append('&youtube_ch=UCYlpMl8sk46MKU9P7XgJpGw/playlists')
+	list.append('&youtube_pl=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6')
+	list.append('&youtube_pl=P3FKHH2RzjI&list=PL6A08EB4EEFF3E91F')
+	list.append('&youtube_pl=PL6uC-XGZC7X6xObklmWEk8MbRVm87g0Uu')
+	list.append('&youtube_pl=XgRlrBl-7Yg&list=PLFDE868BCF58A3950')
+	list.append('&youtube_pl=2fbrl6WoIyo&list=PL44ABC9278E2EE706')
+	list.append('&youtube_pl=PLg0JqCtcY-SxZt4kKj0b0OgIZESF46TDP')
 	addDir('Psychology',list,17,'http://cdn.patch.com/users/22843411/stock/T800x600/20150254e5602e6ff13.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	
@@ -606,45 +816,109 @@ def CATEGORIES10402(name, iconimage, desc, fanart):
 	
 	'''מתמטיקה'''
 	list = []
-	list.append('&youtube_ch=UCT4-UAcRfvBtO76gX2vexpA')	
+	list.append('&youtube_id=HzeTPM3yEbI')
+	list.append('&youtube_id=VJf8XAhC550')
+	list.append('&youtube_id=YWHx0RsRNzI')
+	list.append('&youtube_id=oiIW69RU')
+	list.append('&youtube_pl=PLE3376FF44087B17B')	
 	list.append('&youtube_pl=-PL_7F0HR2FSAqlAmhi3HAASthdwFaPT1mf')
 	list.append('&youtube_pl=PLUl4u3cNGP63ctJIEC1UnZ0btsphnnoHR')
 	list.append('&youtube_pl=PL204B0C2C2F48DF2A')
 	list.append('&youtube_pl=PL3o9D4Dl2FJ8zkoLxaO4aKlq2JsKsz365')
+	list.append('&youtube_pl=PLc0BtI8B0p-F8SHQ95LUIpBS0zozJIVc3')
 	addDir('מתמטיקה',list,17,'https://lh4.googleusercontent.com/-Glq_hJMk9C8/T3QvhUuGdgI/AAAAAAAAAdQ/iVeLm88VrHY/w800-h800/Magic%2BMath.png','','1',"", getAddonFanart(background, custom=""))
 
 	
 	'''ביולוגיה'''
 	list = []
+	list.append('&youtube_id=juM2ROSLWfw')
+	list.append('&youtube_id=MsHEAnPX59Y')
+	list.append('&youtube_id=Y2f7YwCtHcgk')
+	list.append('&youtube_id=gFuEo2ccTPA')
 	list.append('&youtube_ch=UCaPqwD6at0tcpG7lEUbIiPw')
 	list.append('&youtube_pl=PL3EED4C1D684D3ADF')
 	list.append('&youtube_pl=PL-XXv-cvA_iDuZ4BUn54ujg2kZttNk27L')
 	list.append('&youtube_pl=PL-XXv-cvA_iBklnV4A6ucBpazJQ88yW-Z')
 	list.append('&youtube_pl=PLFCE4D99C4124A27A')
 	list.append('&youtube_pl=PL0B4CED0AB112B993')
+	list.append('&youtube_pl=PL7A9646BC5110CF64')
+	list.append('&youtube_pl=PLC0CC234D0C5278A9')
+	list.append('&youtube_pl=PLwL0Myd7Dk1F0iQPGrjehze3eDpco1eVz')
+	list.append('&youtube_pl=PLB3FCEEAC84884760')
 	addDir('ביולוגיה',list,17,'http://cdn.allwallpaper.in/wallpapers/800x600/4746/biology-microscopic-cells-neurons-background-800x600-wallpaper.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''פיסיקה'''
 	list = []
+	list.append('&youtube_ch=UCUK0HBIBWgM2c4vsPhkYY4w')
+	list.append('&youtube_ch=physicsgalaxy74')
+	list.append('&youtube_ch=bestdamntutoring')
+	list.append('&youtube_ch=minutephysics')
+	list.append('&youtube_ch=Fysikshow')
+	list.append('&youtube_ch=ilectureonline')
+	list.append('&youtube_id=Ws6AAhTw7RA')
+	list.append('&youtube_id=RtWbpyjJqrU')
+	list.append('&youtube_id=0NbBjNiw4tk')
+	list.append('&youtube_id=pnbJEg9r1o8')
+	list.append('&youtube_id=IOYyCHGWJq4')
+	list.append('&youtube_id=gzkB574jivA')
+	list.append('&youtube_id=YAfmZKX24Zs')
+	list.append('&youtube_id=1Xp_imnO6WE')
 	list.append('&youtube_ch=UCB9Sac4pdeZ7gcwhcS-q01g')	
 	list.append('&youtube_pl=PL8F3D8958EFBFF76E')
+	list.append('&youtube_pl=PLaMjJl9Tuw7GnWs5upbXwmXdoJDaeIK_E')
+	list.append('&youtube_pl=PLaMjJl9Tuw7HoCo8wzZNwMC7jjo3nrEvx')
+	list.append('&youtube_pl=PLPxO-_IM9m7ixs5EASdix4veUUHET8oRz')
+	list.append('&youtube_pl=PLQkrOakXQ_vGfcN29-KmVKYENsUwNLyPK')
 	addDir('פיסיקה',list,17,'http://www.wall321.com/thumbnails/detail/20120913/mathematics%20chalkboards%20equation%20mind%201024x768%20wallpaper_www.wall321.com_79.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''כימיה'''
 	list = []
-	list.append('&youtube_ch=UChyplgK6jTl_XySEv0znTJw')	
+	list.append('&youtube_id=C5tOEBmBAHg')
+	list.append('&youtube_id=_g_ml8tAnWE')
+	list.append('&youtube_id=IFKnq9QM6_A')
+	list.append('&youtube_id=u6MfZbCvPCw')
+	list.append('&youtube_ch=periodicvideos')
+	list.append('&youtube_ch=tdewitt451')
+	list.append('&youtube_pl=PLPxO-_IM9m7jpLSepNkezbLVNq19DztUK')
+	list.append('&youtube_pl=PLk-gRvbk-NRT01UkWrLjIFIhFsu4A_0RD')
+	list.append('&youtube_pl=PLPxO-_IM9m7hyNbuBZMDYkJUf_V8SdSIF')
+	list.append('&youtube_pl=PLk-gRvbk-NRQ8Tdx3bZjYNsuNPWqJZR_7')
+	list.append('&youtube_pl=PLk-gRvbk-NRQnOvOr-eiEXlIjenN5c1ai')
+	list.append('&youtube_pl=PLk-gRvbk-NRQxVEoGmK75H9QQ9qIJTuaZ')
+	list.append('&youtube_pl=PL7A1F4CF36C085DE1')
+	list.append('&youtube_pl=PL166048DD75B05C0D')
 	addDir('כימיה',list,17,'http://www.wallpaperhi.com/thumbnails/detail/20111217/26.jpg','','1',"", getAddonFanart(background, custom=""))
     
 	'''מח'''
 	list = []
 	list.append('&youtube_ch=UCNJIGYmJX206jSl1tpqF1Tg')
-	list.append('&youtube_ch=UCIw-oqRTWIWMV0RrF-bVtGQ')
-	addDir('מח',list,17,'https://c1.staticflickr.com/9/8230/8384110298_da510e0347_b.jpg','','1',"", getAddonFanart(background, custom=""))
+	list.append('&youtube_id=JiTz2i4VHFw')
+	list.append('&youtube_id=9bx7Vl6klmw')
+	list.append('&youtube_id=K2MrzXPlt8o')
+	list.append('&youtube_id=uAbUtrwYETg')
+	list.append('&youtube_id=DfgkAJmp9-A')
+	list.append('&youtube_id=3P8q_dCU3RI')
+	list.append('&youtube_pl=PLMWnwPCA972tbj1p_FJJl8_scEuvIFEfD')
+	list.append('&youtube_pl=PLMWnwPCA972sL53mDP7nCj2h95wMBtia0')
+	list.append('&youtube_pl=PLMWnwPCA972tDM1djs-nmfN4Uvjer36Kn')
+	list.append('&youtube_pl=PLk-gRvbk-NRQ8Tdx3bZjYNsuNPWqJZR_7')
+	list.append('&youtube_pl=PLk-gRvbk-NRQnOvOr-eiEXlIjenN5c1ai')
+	list.append('&youtube_pl=PLk-gRvbk-NRQxVEoGmK75H9QQ9qIJTuaZ')
+	addDir(' מדעי ומשחקי מח',list,17,'https://c1.staticflickr.com/9/8230/8384110298_da510e0347_b.jpg','','1',"", getAddonFanart(background, custom=""))
     
 	
 	'''רפואה'''
-	list = []
-	list.append('&youtube_ch=UCVlOYl7YDZhYvzzwOp1urtA')	
+	list = []	
+	list.append('&youtube_pl=PLfJpbOpZBUQa34cJ2TRKpz3oA_3BywCs-')
+	list.append('&youtube_pl=PL01AEFFF7C4C3C881')
+	list.append('&youtube_pl=PL04349AC9C197EC93')
+	list.append('&youtube_pl=PLpRE0Zu_k-BxWZoSNhjTxYLE3t14XUljV')
+	list.append('&youtube_pl=PL831FBCA74153165E')
+	list.append('&youtube_pl=PL4E2A5CA2AC52F71F')
+	list.append('&youtube_id=mNvm0OWQOgA')
+	list.append('&youtube_id=Qxx14RCxblg')
+	list.append('&youtube_id=OBm1c_7tnCk')
+	list.append('&youtube_id=9V-Ts9rFX2Q')
 	addDir('רפואה',list,17,'http://wallpaperbeta.com/wallpaper_800x600/tablets_capsule_medicine_macro_800x600_hd-wallpaper-239312.jpg','','1',"", getAddonFanart(background, custom=""))
     
     
@@ -660,7 +934,7 @@ def CATEGORIES10403(name, iconimage, desc, fanart):
 	
 	'''אקראי'''
 	list = []
-	list.append('&youtube_ch=UCiDF_uaU1V00dAc8ddKvNxA')
+	list.append('&youtube_ch=PLB76E9DFE905DDAC0')
 	addDir('אקראי',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
 
 	'''קודי'''
@@ -672,7 +946,6 @@ def CATEGORIES10403(name, iconimage, desc, fanart):
 	list.append('&youtube_ch=UCKRic5GN63gWXc2MsWaRUHA')
 	list.append('&youtube_ch=newtechevolution')
 	list.append('&youtube_ch=dimitrology')	
-	list.append('&youtube_ch=Charba')	
 	list.append('&youtube_ch=UCrzGIViKiIGPX0BHqsTCWrQ')
 	list.append('&youtube_ch=RobertoJorgeC')
 	addDir('קודי',list,17,'http://i.imgur.com/bkWkbHH.png','','1',"", getAddonFanart(background, custom=""))
@@ -680,29 +953,48 @@ def CATEGORIES10403(name, iconimage, desc, fanart):
 	
 	'''טלפון סלולרי'''
 	list = []
-	list.append('&youtube_ch=UCQeVqx-WI_NrBfiOAizVgRg')	
+	list.append('&youtube_pl=PL57quI9usf_sKq-un-sKiH28GufDbfXud')
+	list.append('&youtube_pl=PL57quI9usf_us0KVzB8aZFPVmdvp1_sIh')
+	list.append('&youtube_pl=PLPBN-Ln1bNtxpgyoI2uVTAoD3VqHfe83c')
+	list.append('&youtube_pl=PL57quI9usf_ujAfHHeCUHuJDL9rMo2_kr')
 	addDir('טלפון סלולרי',list,17,'http://wallpapers.windowsace.com/pics/f/r/free-electronics-and-gadgets-iphone-wallpaper-voyager-cell-phone--a-e-ibackgroundz.com.jpg','','1',"", getAddonFanart(background, custom=""))
     
 	'''מחשבים'''
 	list = []
-	list.append('&youtube_ch=UCC7sJlTVc6vuxY6r5k5vuPQ')
+	list.append('&youtube_pl=PL57quI9usf_skTMa14vP58RZxlSjCIJ1P')
+	list.append('&youtube_pl=PL57quI9usf_uI8ZxI58Gc5ACnmbL7rxP-')
+	list.append('&youtube_pl=PL57quI9usf_so2Apomw8ap8jMm8e2-xTs')
+	list.append('&youtube_pl=PL57quI9usf_saUGUzSvs4909pfSaloLHS')
 	addDir('מחשבים',list,17,'http://www.bestfullhdwallpapers.com/download/6183/Computers/hd_wallpaper_computer_hd-800x600.jpg/','','1',"", getAddonFanart(background, custom=""))
     
+	
+	'''אלקטרוניקה'''
+	list = []
+	list.append('&youtube_pl=PL3C5D963B695411B6')
+	list.append('&youtube_pl=PLC8A1AD995AB64055')
+	list.append('&youtube_pl=PLFF553CED56CDE25D')
+	list.append('&youtube_pl=PL9CDF91EC3585AAD9')
+	list.append('&youtube_pl=PLLilrKdbjXDH-ztjsBHZLEpRvKHHP6bgO')
+	list.append('&youtube_pl=PL774BE597B77BF3C5')
+	addDir('אלקטרוניקה',list,17,'http://www.alsglobal.com/~/media/Images/Divisions/Life%20Sciences/Electronics%20Testing/Electronics%204.jpg','','1',"", getAddonFanart(background, custom=""))
+   
+	
+	
 	'''כלי רכב'''
 	list = []
-	list.append('&youtube_ch=UCHiJaXgDo_JnsfOmSe-HgzA')	
+	list.append('&youtube_pl=PLE5A7A868916EA37C')
+	list.append('&youtube_pl=PLN6Q52i0YBycJHc1nZ8BQrymggkDXQWoi')
+	list.append('&youtube_pl=PLLilrKdbjXDH-ztjsBHZLEpRvKHHP6bgO')
+	list.append('&youtube_pl=PL0_qQzejvS2m9t_PtPp1NMA6RqMeN0RVi')
+	list.append('&youtube_pl=PLTu8nanTJo7ENISO0CPDoTesFUCk7uDXt')
+	list.append('&youtube_pl=PLwC75JJGC4SUavw0jxNw66mTHsaPyLMqY')
+	list.append('&youtube_pl=0TGJWxOYdemHRZCcGHCK')
+	list.append('&youtube_pl=PLyFDjajffaUAxX0JIB2bVlJL-r-Og3GhW')
+	list.append('&youtube_pl=PLwC75JJGC4SUavw0jxNw66mTHsaPyLMqY')
+	list.append('&youtube_pl=PLlxvC7vPiNHBfbJJGMdAi-8njhYGQHgGt')
 	addDir('כלי רכב',list,17,'http://wallpaperbeta.com/wallpaper_800x600/porsche_plane_sun_airfield_machine_car_800x600_hd-wallpaper-342079.jpg','','1',"", getAddonFanart(background, custom=""))
    
-	'''מטוסים'''
-	list = []
-	list.append('&youtube_ch=UCYY7yBrHt9BDlvQWKfu0-uw')	
-	addDir('מטוסים',list,17,'http://www.fabuloussavers.com/wallpapers/5_f22_raptor_fighter_plane_sunset_usairforce_aviation_wallpaper_s.jpg','','1',"", getAddonFanart(background, custom=""))
-  
-	'''אופנועים'''
-	list = []
-	list.append('&youtube_ch=UCOanIHchig1FZ2kmN1BYZLg')	
-	addDir('אופנועים',list,17,'http://newestmotorcycle.com/wp-content/uploads/2015/10/awesome-cruiser-motorcycle-wallpaper-hd-800x600.jpg','','1',"", getAddonFanart(background, custom=""))
-  
+
 	'''רובוטיקה'''
 	list = []
 	list.append('&youtube_pl=-PLr2I5IvtDVkZGpQ-YnrsEge2ersHuhhHw')
@@ -781,7 +1073,7 @@ def CATEGORIES107(admin):
 	list.append('&youtube_pl=PL2Zef9KQGytUntJegeTmJxAFlIkaTRo-P')
 	list.append('&youtube_pl=PLfo1kYEnYLcJ-UhenL0Yf3afIR3zw7fr2')
 	list.append('&youtube_pl=PLeUPs98mdCOLKpvPU8tr1-1rgJ1h_xgxA')
-	list.append('&youtube_pl=	PLamCflZiuToNeoHktZvD07ti-g-F1SFki')
+	list.append('&youtube_pl=PLamCflZiuToNeoHktZvD07ti-g-F1SFki')
 	addDir('planets for kids',list,17,'https://cdn-jr.brainpop.com/topics/plantadaptations/motw_graphic.png','','1',"", getAddonFanart(background, custom=""))
 	
 
@@ -834,47 +1126,78 @@ def CATEGORIES110(admin):
 	list.append('&youtube_ch=WilliamsShamir')
 	addDir("youtube art channel's",list,17,'http://www.abm-enterprises.net/fractal-art/color-16-wallpaper.jpg','','1',"", getAddonFanart(background, custom=""))
  
-	'''אומנות'''
-	list = []
-	list.append('&youtube_ch=UCIZxVeC2kyPJIzfwaXqjhmg')
-	addDir("אומנות",list,17,'http://pengcognito.com/wallpaper/nightpenguins/800x600.jpg','','1',"", getAddonFanart(background, custom=""))
-	
+
 	'''צילום'''
 	list = []
-	list.append('&youtube_ch=UCqqMppXUKf_dBaKoF-6cXHg')	
+	list.append('&youtube_ch=DigitalRevCom')
+	list.append('&youtube_ch=PhlearnLLC')
+	list.append('&youtube_ch=thatnikonguy')
+	list.append('&youtube_ch=theartofphotography')
+	list.append('&youtube_pl=PLBE338967F8DB7F2A')
+	list.append('&youtube_pl=PLJ6FIlZVNbQOYg4WXQN7ZpYK3FEH1GVco')
+	list.append('&youtube_pl=PLBC5A73FEA8B7D7D2')
+	list.append('&youtube_pl=PL0ajMRlXs96oTkC-ic_CrzJbM-y3p0F8s')
+	list.append('&youtube_pl=PLCEE9B921EA84A6BF')
+	list.append('&youtube_pl=PLBBCCB798B85DA47B')
+	list.append('&youtube_pl=PLAD38BBF9053DE8DD')
+	list.append('&youtube_pl=PL904CB241ED4AEE06')
+	list.append('&youtube_pl=PL4F6CB4E3874F8483')
+	list.append('&youtube_pl=PLF8Y1CD3PV0I2EYgQ6-DM3_UgZNnjDjeP')
 	addDir('צילום',list,17,'https://wallpaperscraft.com/image/canon_clip_art_camera_photography_beach_42535_800x600.jpg','','1',"", getAddonFanart(background, custom=""))
     
 	'''אומנים'''
 	list = []
-	list.append('&youtube_ch=UCAAi-y3PfAZuMJWR-2nA6Uw')
+	list.append('&youtube_pl=PLgxrD7KGdqIAjKrX7044XQCCYyygH_Iip')
+	list.append('&youtube_pl=PLgxrD7KGdqIBZ8L3mbbDWhtKVJx4P6VSY')
+	list.append('&youtube_pl=PLYIapPsysmjCw77uxfyxW7HmdoMEooZzZ')
+	list.append('&youtube_pl=PL3A50F86AE9A35934')
+	list.append('&youtube_pl=PLgxrD7KGdqIAJLfcDPQHgj_mA6yMYFP0S')
+	list.append('&youtube_pl=PLgxrD7KGdqICXqET81hxUjnbvRbQyw5bi')
+	list.append('&youtube_pl=PLLUaXSRnKa3i3nijItUi0ifqGSS908qzA')
 	addDir('אומנים',list,17,'http://www.davidpaulkirkpatrick.com/wp-content/uploads/2013/03/van-Gogh-Self-Potrait_1889_1890.jpg','','1',"", getAddonFanart(background, custom=""))
     
 	'''עבודות אומנות'''
 	list = []
-	list.append('&youtube_ch=UC6SMopdiqCarcS6IUGZu2xg')
+	list.append('&youtube_pl=PLpKVHhjWeQ6_b9dCLPDTXNNLLrdSuwvQ')
+	list.append('&youtube_pl=PLSVoinOQWRwRIzhWxuK2KWoHH454deajP')
+	list.append('&youtube_pl=PLvwqC5cvT9A56w--qpeul2oiV0vz95CSm')
+	list.append('&youtube_pl=PLvwqC5cvT9A56w--qpeul2oiV0vz95CSm')
 	addDir('עבודות אומנות',list,17,'https://wallpaperscraft.com/image/plate_paper_candy_pink_background_crafts_80738_800x600.jpg','','1',"", getAddonFanart(background, custom=""))
     
 	'''שרטוט'''
 	list = []
-	list.append('&youtube_ch=UCmg3B6F4Av4vmvhM6Lyndeg')
+	list.append('&youtube_pl=iXTDv4BewvLgrgttAC6OgX')
+	list.append('&youtube_pl=PLhBKkQX9XSgeVEGuevcUrnxWYhyB31rZG')
+	list.append('&youtube_pl=PLhBKkQX9XSgeALUlhjOdRwMaq7ucc6t6c')
+	list.append('&youtube_pl=PLvwqC5cvT9A56w--qpeul2oiV0vz95CSm')
+	list.append('&youtube_pl=PLvwqC5cvT9A56w--qpeul2oiV0vz95CSm')
 	addDir('שרטוט',list,17,'http://orig00.deviantart.net/3a19/f/2013/230/1/8/drawing_michael_ealy_part_two_by_xjorieke-d6io2s8.jpg','','1',"", getAddonFanart(background, custom=""))
    
 	'''ציור'''
 	list = []
-	list.append('&youtube_ch=UCVuJxpqgQ9ZexOOhCIfh6jg')	
+	list.append('&youtube_pl=PLAEQD0ULngi67rwmhrkNjMZKvyCReqDV4')
+	list.append('&youtube_pl=PL-OQ2u8XlJLuACG2jfzt_XxK8pDVsdIhm')
+	list.append('&youtube_pl=PLCgkDVJst-Zhh6lqVu0UVUQPe68hgdEUo')
+	list.append('&youtube_pl=PL2010F0BDC411BDC9')
+	list.append('&youtube_pl=PL95664E97F3D868D7')
 	addDir('ציור',list,17,'http://www.florenceartacademy.it/blog/wp-content/uploads/2013/07/Gioconda.jpg','','1',"", getAddonFanart(background, custom=""))
   
-	'''עיצוב פנים'''
-	list = []
-	list.append('&youtube_ch=UCGHWrdMukDc-uUzLYHx4r5g')
-	addDir('עיצוב פנים',list,17,'http://magnificentonline.com/wp-content/uploads/2013/01/BLACK-home-design-interior-japan-livingroom.jpg','','1',"", getAddonFanart(background, custom=""))
-   
-	'''עיצוב גרפי'''
-	list = []
-	list.append('&youtube_ch=UCxRDqCzR5moFFjBNsb8lmMQ')	
-	addDir('עיצוב גרפי',list,17,'http://cdn.allwallpaper.in/wallpapers/800x600/13756/graphic-design-text-typography-800x600-wallpaper.jpg','','1',"", getAddonFanart(background, custom=""))
-  
 	
+	'''פיסול'''
+	list = []
+	list.append('&youtube_pl=PLdtE9aIU4iHlmdkhv2_oJg27s49CODbVC')
+	list.append('&youtube_pl=PLB33559E547A1892B')
+	list.append('&youtube_pl=PLcAAX2LjtsB6Eczr5HaHGxlAboQLgPv6I')
+	list.append('&youtube_pl=PL0BF8F437080FBFB3')
+	list.append('&youtube_pl=PLCD685A75D9C854E1')
+	list.append('&youtube_pl=PLaOZQCQIBfZQ3EKqPb3w-Y-lK7InP63K6')
+	list.append('&youtube_pl=PLaOZQCQIBfZSVI0_DYZmJr21RtURiVmI9')
+	list.append('&youtube_pl=PLaOZQCQIBfZR26CsNo5xy1ezj68uF2Fue')
+	list.append('&youtube_pl=PLaOZQCQIBfZTTXxj9cV6lTBDviu86Bwp8')
+	list.append('&youtube_pl=PLaOZQCQIBfZTlvg0j2Hn-xr0M8ZGUzZZT')
+	list.append('&youtube_pl=PLaOZQCQIBfZSqT2fIRR8P_thmLvawqSOQ')
+	addDir('פיסול',list,17,'https://s-media-cache-ak0.pinimg.com/736x/ef/06/95/ef0695c68517e3baaf58313d82573984.jpg','','1',"", getAddonFanart(background, custom=""))
+  
 	
 
 def CATEGORIES108(admin):
@@ -903,103 +1226,36 @@ def CATEGORIES108(admin):
 	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
 	
 	
-	
-	'''אפריקה - הסרנגטי'''
+	'''דוקו סרטים'''
 	list = []
 	list.append('&youtube_id=Md3BQG4oWDU')
-	addDir('אפריקה - הסרנגטי',list,17,'http://www.wallpapergeeks.com/wp-content/uploads/2014/12/african-safari-zebras-wallpaper-800x600.jpg','','1',"", getAddonFanart(background, custom=""))
-					
-	'''הסוד הכמוס של אפריקה'''
-	list = []
 	list.append('&youtube_id=jC5iaonGRCg')
-	addDir('הסוד הכמוס של אפריקה',list,17,'http://photography.nationalgeographic.com/staticfiles/NGS/Shared/StaticFiles/Photography/Images/POD/s/san-bushmen-504958-sw.jpg','','1',"", getAddonFanart(background, custom=""))
-	
-	'''סיפורים מהסוואנה'''
-	list = []
 	list.append('&youtube_id=4pBLynGT5ZA')
-	addDir('סיפורים מהסוואנה',list,17,'https://pbs.twimg.com/media/CJsdloWUkAE0g38.jpg','','1',"", getAddonFanart(background, custom=""))
-	
-	'''בית -home'''
-	list = []
 	list.append('&youtube_id=NEnRsTlSsxM')
-	addDir('בית -home',list,17,'https://upload.wikimedia.org/wikipedia/en/a/a7/HOME-SHOT.jpg','','1',"", getAddonFanart(background, custom=""))
-		
-	'''ההסטוריה של העולם בשעתיים'''
-	list = []
-	list.append('&youtube_id=HZzSLaqk2dA')
-	addDir('ההסטוריה של העולם בשעתיים',list,17,'https://i.ytimg.com/vi/HZzSLaqk2dA/hqdefault.jpg','','1',"", getAddonFanart(background, custom=""))
+	list.append('&youtube_id=watch?v=JsPuREOKvPc')
+	list.append('&youtube_id=watch?v=Qw3lObBE8WE')
+	list.append('&youtube_id=watch?v=vYzxryWHVZs')
+	list.append('&youtube_id=uIotx1aGtKg')
+	addDir('דוקו סרטים',list,17,'http://www.wallpapergeeks.com/wp-content/uploads/2014/12/african-safari-zebras-wallpaper-800x600.jpg','','1',"", getAddonFanart(background, custom=""))
+					
 		
 	'''טבע ישראלי'''
 	list = []
+	list.append('&youtube_id=AoizSL-TEJQ')
+	list.append('&youtube_id=cn6RKXod9zk')
+	list.append('&youtube_id=RjLTWrxhJG0')
+	list.append('&youtube_id=cCb2r8stBuM')
+	list.append('&youtube_id=xPWtMZ-mGCM')
+	list.append('&youtube_pl=PLq714Bj5JxO4x_MMlDQpC-FTPV64mfhGP')
+	list.append('&youtube_pl=PLHv0VZq_Hje7b_ZUanXVHHLtzoFe8zUsn')
+	list.append('&youtube_pl=PLZxxWjeQgN4s1cXnvkS6rWDGKCI1YYW8g')
+	list.append('&youtube_pl=PLTa6eP38rKWV9jW-XdavVcQtM72hIGPVF')
+	list.append('&youtube_pl=PLMOOIFFitzstfZJRTXIeirKr8V-UoUpsA')
+	list.append('&youtube_pl=PL6A2CaEev7b4vrILtDfeCszrTq1rsXl_c')
 	list.append('&youtube_pl=PL1PXZ56eQG-SGcBGlBXuokGz8O0Iogpzs')
 	list.append('&youtube_pl=PL762D7FD5B70D28C0')
 	addDir('טבע ישראלי',list,17,'http://www.israel-travel-secrets.com/images/Meshushim-pool3.jpg','','1',"", getAddonFanart(background, custom=""))
 	
-	'''דוקו קירשנבאום -קוסטה ריקה'''
-	list = []
-	list.append('&youtube_id=YMfg06-1zec')
-	addDir('דוקו קירשנבאום -קוסטה ריקה',list,17,'http://images.nana10.co.il/upload/mediastock/img/8/0/192/192476.jpg','','1',"", getAddonFanart(background, custom=""))
-	
-	'''מים - המסתורין הגדול'''
-	list = []
-	list.append('&youtube_id=watch?v=JsPuREOKvPc')
-	addDir('מים - המסתורין הגדול',list,17,'http://evolution-diet.com/wp-content/uploads/2013/01/water.jpg','','1',"", getAddonFanart(background, custom=""))
-	
-	'''חיי היונקים'''
-	addon = 'plugin.video.salts'
-	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f032%2f469%2ffanarts%2fmedium%2f3e05ae14af.jpg&mode=seasons&trakt_id=32469'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('חיי היונקים','plugin://'+addon + addon2,8,'http://www.articlesweb.org/blog/wp-content/uploads/2012/04/mammals-definition-for-kids-12.jpg',plot,addon,50, getAddonFanart(110, custom=""))
-	'''---------------------------'''
-	
-	'''הכוכב האנושי'''
-	addon = 'plugin.video.salts'
-	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f031%2f922%2ffanarts%2fmedium%2f3d9a08eb9f.jpg&mode=seasons&trakt_id=31922'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('הכוכב האנושי','plugin://'+addon + addon2,8,'http://www.2all.co.il/web/Sites4//12123322portal/199369_(186).jpg',plot,addon,50, getAddonFanart(110, custom=""))
-	'''---------------------------'''
-	
-	'''עולם מופלא'''
-	addon = 'plugin.video.salts'
-	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f001%2f039%2ffanarts%2fmedium%2f29cc38ac56.jpg&mode=seasons&trakt_id=1039'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('עולם מופלא','plugin://'+addon + addon2,8,'http://www.kinbooks.co.il/media/uploads/olam%20mufla_med.jpg',plot,addon,50, getAddonFanart(110, custom=""))
-	'''---------------------------'''
-	
-	'''סיפור החיים'''
-	addon = 'plugin.video.salts'
-	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f081%2f151%2ffanarts%2fmedium%2f64c7db9e96.jpg&mode=seasons&trakt_id=81151'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('סיפור החיים','plugin://'+addon + addon2,8,'http://www.bbcshop.com/content/ebiz/bbc/invt/bbcbd0281/life_story_bd_f_600.jpg',plot,addon,50, getAddonFanart(110, custom=""))
-	'''---------------------------'''
-		
-	'''אל תוך היקום עם סטיבן הוקינג'''
-	addon = 'plugin.video.salts'
-	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f032%2f469%2ffanarts%2fmedium%2f3e05ae14af.jpg&mode=seasons&trakt_id=32469'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('אל תוך היקום עם סטיבן הוקינג','plugin://'+addon + addon2,8,'http://www.theupportunity.com/wp-content/uploads/2015/02/69429.jpg',plot,addon,50, getAddonFanart(110, custom=""))
-	'''---------------------------'''
-		
-	'''קוסמוס: מסע לחלל'''
-	addon = 'plugin.video.salts'
-	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f071%2f041%2ffanarts%2fmedium%2fd9e784c61b.jpg&mode=seasons&trakt_id=71041'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('קוסמוס: מסע לחלל','plugin://'+addon + addon2,8,'http://contraversao.com/wp-content/uploads/2014/01/cosmos-a-spacetime-odyssey-fox-poster-800x600.jpg',plot,addon,50, getAddonFanart(110, custom=""))
-	'''---------------------------'''
-		
-	'''מבעד לחור התולעת'''
-	addon = 'plugin.video.salts'
-	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f032%2f758%2ffanarts%2fmedium%2ff3e91f4d2c.jpg&mode=seasons&trakt_id=32758'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('מבעד לחור התולעת','plugin://'+addon + addon2,8,'http://cdn.indiewire.psdops.com/dims4/INDIEWIRE/6e0a535/2147483647/resize/1024x633%3E/quality/90/?url=http%3A%2F%2Fdl9fvu4r30qs1.cloudfront.net%2F66%2F36%2Fb4540b7945a295e3fb8cde27604f%2Fmorgan-freeman-through-the-wormhole.jpg',plot,addon,50, getAddonFanart(110, custom=""))
-	'''---------------------------'''
-	
-	'''הכוכב הכחול'''
-	addon = 'plugin.video.salts'
-	addon2 = '/?fanart=https%3a%2f%2fwalter.trakt.us%2fimages%2fshows%2f000%2f013%2f520%2ffanarts%2fmedium%2f7486926229.jpg&mode=seasons&trakt_id=13520'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('הכוכב הכחול','plugin://'+addon + addon2,8,'http://media.israel-music.com/images/7290372215994.jpg',plot,addon,50, getAddonFanart(110, custom=""))
-	'''---------------------------'''
 	
 	'''חוצה ישראל'''
 	list = []
@@ -1014,7 +1270,7 @@ def CATEGORIES108(admin):
 	list.append('&youtube_pl=PLLttfoK87AdVbyvsH-HGmT2on83Y9UzMo')
 	list.append('&youtube_pl=PLE1B47D7CC412DC7B')
 	addDir('מקבלים שבת',list,17,'http://www.iba.org.il/pictures/p452860.jpg','','1',"", getAddonFanart(background, custom=""))
-	
+
 	'''הסטוריה'''
 	list = []
 	list.append('&youtube_pl=PL51YAgTlfPj4IjHf-ISoprm2r9FO0szaD')		
@@ -1029,6 +1285,9 @@ def CATEGORIES108(admin):
 	list.append('&youtube_pl=PL7AqoEETVtK66cFOkIjGVTmXd_C7Q0r90')
 	list.append('&youtube_pl=PLjURn7HFksDKqxsERATYFlzmBVpp1vNGY')
 	list.append('&youtube_pl=PLLttfoK87AdV7Q8Eu8a_J3pVv28nC2lMv')
+	list.append('&youtube_pl=PLLttfoK87AdV7Q8Eu8a_J3pVv28nC2lMv')
+	list.append('&youtube_id=EFD_o0-1QbQ')
+	list.append('&youtube_id=L5Wq-ma70tY')
 	addDir('הסטוריה',list,17,'https://upload.wikimedia.org/wikipedia/he/d/d8/%D7%9C%D7%95%D7%92%D7%95_%D7%A2%D7%A8%D7%95%D7%A5_%D7%94%D7%94%D7%99%D7%A1%D7%98%D7%95%D7%A8%D7%99%D7%94.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''דוקו ישראלי'''
@@ -1046,33 +1305,62 @@ def CATEGORIES108(admin):
 	list.append('&youtube_id=PLhAvByb6CVNtiMfk1VQhdycNyOWxYhNUT')
 	addDir('דוקו ישראלי',list,17,'http://images.photolight.co.il/photo/2006-06-24/15120.jpg','','1',"", getAddonFanart(background, custom=""))
 	
+	
 	'''תרבות-חינוכית'''
 	list = []
 	list.append('&youtube_ch=23Culture')
 	addDir('תרבות-חינוכית',list,17,'https://yt3.ggpht.com/-PVEs_ee6CxU/AAAAAAAAAAI/AAAAAAAAAAA/NNkej9cD-YA/s100-c-k-no/photo.jpg','','1',"", getAddonFanart(background, custom=""))
 	
-
 	'''ערוץ הגיון ומדע'''
 	list = []
 	list.append('&youtube_ch=ScienceReasonIsrael')
-	addDir('ערוץ הגיון ומדע',list,17,'http://www.iba.org.il/zap/pictures/P670944.jpg','','1',"", getAddonFanart(background, custom=""))
+	list.append('&youtube_ch=UCLpn_QJwfehfKuTt0orfYDw')
+	addDir('ערוצי הגיון ומדע',list,17,'http://www.iba.org.il/zap/pictures/P670944.jpg','','1',"", getAddonFanart(background, custom=""))
+
 	
-	'''אילוף כלבים'''
+	#'''אילוף כלבים'''
+	#list = []
+	#list.append('&youtube_ch=Orenadika73')
+	#addDir('אילוף כלבים',list,17,'https://lh6.googleusercontent.com/-04dBifp4BQc/VE9pqg-8-WI/AAAAAAAAACQ/FqqIgmOz0vY/w800-h800/best%2Bdog%2Btrainer.JPG','','1',"", getAddonFanart(background, custom=""))
+	
+	'''מאקו הרצאות'''
 	list = []
-	list.append('&youtube_ch=Orenadika73')
-	addDir('אילוף כלבים',list,17,'https://lh6.googleusercontent.com/-04dBifp4BQc/VE9pqg-8-WI/AAAAAAAAACQ/FqqIgmOz0vY/w800-h800/best%2Bdog%2Btrainer.JPG','','1',"", getAddonFanart(background, custom=""))
+	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f545c3cefe4b0263200cf8bb7%2ft%2f5474d191e4b0dda9e3ce84e7%2f1416941970318%2flecture.jpg%3fformat%3d1500w&mode=0&name=%d7%94%d7%a8%d7%a6%d7%90%d7%95%d7%aa&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-more%2flectures')
+	addDir('מאקו הרצאות',list,8,"","",'plugin.video.MakoTV',50, getAddonFanart(110, custom=""))
+	
+	'''מאקו דוקו'''
+	list = []
+	list.append('&custom8=plugin://plugin.video.MakoTV//?iconimage=http%3a%2f%2fopendoclab.mit.edu%2fwp%2fwp-content%2fuploads%2f2011%2f09%2fcamera.jpg&mode=0&name=%d7%93%d7%95%d7%a7%d7%95&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-more%2fdocu_tv')
+	addDir('דוקו מאקו',list,8,"","",'plugin.video.MakoTV',50, getAddonFanart(110, custom=""))
+
+	
+	'''וואלה דוקו'''
+	list = []
+	list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=wallavod&name=%d7%93%d7%95%d7%a7%d7%95%20(56)&url=genre%3dmovies%26genreId%3d6263')
+	addDir('דוקו וואלה',list,8,"","",'',50, getAddonFanart(110, custom=""))
+
+	'''ערוץ 8'''
+	list = []
+	list.append('&custom8=plugin://plugin.video.hotVOD.video/?mode=5&name=%d7%a2%d7%a8%d7%95%d7%a5%208&url=http%3a%2f%2fhot.ynet.co.il%2fhome%2f0%2c7340%2cL-7461%2c00.html')
+	addDir('ערוץ 8',list,8,"","",'',50, getAddonFanart(110, custom=""))
+
+	
+	addon = 'plugin.video.ilten'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('דוקו 10','plugin://'+addon+'/?category=2118',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	
 	
 	addon = 'plugin.video.seretil'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(localize(342) + space + '1','plugin://'+addon+'/?iconimage=http%3a%2f%2fimages.nationalgeographic.com%2fwpf%2fsites%2fcommon%2fi%2fpresentation%2fNGLogo560x430-cb1343821768.png&mode=4&name=%d7%a0%d7%a9%d7%99%d7%95%d7%a0%d7%9c%20%d7%92%d7%90%d7%95%d7%92%d7%a8%d7%a4%d7%99%d7%a7&url=http%3a%2f%2fseretil.me%2fcategory%2f%25D7%25A0%25D7%25A9%25D7%2599%25D7%2595%25D7%25A0%25D7%259C-%25D7%2592%25D7%2599%25D7%2590%25D7%2595%25D7%2592%25D7%25A8%25D7%25A4%25D7%2599%25D7%25A7%2fpage1%2f',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	addDir('sertil דוקו','plugin://'+addon+'/?iconimage=http%3a%2f%2fimages.nationalgeographic.com%2fwpf%2fsites%2fcommon%2fi%2fpresentation%2fNGLogo560x430-cb1343821768.png&mode=4&name=%d7%a0%d7%a9%d7%99%d7%95%d7%a0%d7%9c%20%d7%92%d7%90%d7%95%d7%92%d7%a8%d7%a4%d7%99%d7%a7&url=http%3a%2f%2fseretil.me%2fcategory%2f%25D7%25A0%25D7%25A9%25D7%2599%25D7%2595%25D7%25A0%25D7%259C-%25D7%2592%25D7%2599%25D7%2590%25D7%2595%25D7%2592%25D7%25A8%25D7%25A4%25D7%2599%25D7%25A7%2fpage1%2f',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
 	
 	addon = 'plugin.video.movixws'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(localize(342) + space + '2','plugin://'+addon+'/?description&iconimage=http%3a%2f%2ficons.iconarchive.com%2ficons%2faaron-sinuhe%2ftv-movie-folder%2f512%2fDocumentaries-National-Geographic-icon.png&mode=2&name=Documentary%20-%20%d7%93%d7%95%d7%a7%d7%95%d7%9e%d7%a0%d7%98%d7%a8%d7%99&url=http%3a%2f%2fwww.movix.me%2fgenres%2fDocumentary',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	addDir('movix דוקו','plugin://'+addon+'/?description&iconimage=http%3a%2f%2ficons.iconarchive.com%2ficons%2faaron-sinuhe%2ftv-movie-folder%2f512%2fDocumentaries-National-Geographic-icon.png&mode=2&name=Documentary%20-%20%d7%93%d7%95%d7%a7%d7%95%d7%9e%d7%a0%d7%98%d7%a8%d7%99&url=http%3a%2f%2fwww.movix.me%2fgenres%2fDocumentary',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
 	
 	addon = 'plugin.video.sdarot.tv'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(localize(20343) + space + '1','plugin://'+addon+'/?mode=2&module=http%3a%2f%2fwww.sdarot.wf%2fseries%2fgenre%2f11%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94&name=%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94&summary&url=all-heb',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
+	addDir('sdarot.tv דוקו','plugin://'+addon+'/?mode=2&module=http%3a%2f%2fwww.sdarot.wf%2fseries%2fgenre%2f11%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94&name=%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94&summary&url=all-heb',8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
 	
 	'''ילדים'''
 	addDir(addonString(10801),'',10801,'http://www.disneywallpaper.net/data/media/7/Winnie_the_Pooh_kids.jpg',addonString(108010),'1',"", getAddonFanart(10801))
@@ -1106,7 +1394,7 @@ def CATEGORIES10801(name, iconimage, desc, fanart):
 	'''קטנטנים בטבע'''
 	list = []
 	list.append('&youtube_id=J1JIHh1ZEf0')
-	addDir('קטנטנים בטבע',list,17,'http://imgur.com/kcLrrGH.jpg','','1',"", getAddonFanart(background, custom=""))
+	addDir('קטנטנים בטבע',list,17,'http://4.bp.blogspot.com/-i5yjcp0Hsek/VL3-_9tBpRI/AAAAAAAAjgk/3P6kPNQZDbc/s1600/%D7%A7%D7%99%D7%95%D7%98%D7%99.jpg','','1',"", getAddonFanart(background, custom=""))
 	
 	'''בעלי חיים לילדים ופעוטות'''
 	list = []
@@ -1194,59 +1482,3 @@ def CATEGORIES10801(name, iconimage, desc, fanart):
 	list.append('&youtube_ch=23language')
 	addDir('חינוכית בית ספר לשפות',list,17,'https://yt3.ggpht.com/-lBNXia5dmco/AAAAAAAAAAI/AAAAAAAAAAA/WdkzNf3TbHE/s100-c-k-no/photo.jpg','','1',"", getAddonFanart(background, custom=""))
 
-	
-
-def CATEGORIES109(admin):
-	'''------------------------------
-	---TV-channels-------------------
-	------------------------------'''
-	background = 109
-	name = addonString(109).encode('utf-8')
-	
-	'''חיפוש'''
-	addDir(localize(137),'Live Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
-	
-	'''אקראי'''
-	list = []
-	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
-	
-def CATEGORIES109(admin):
-	'''------------------------------
-	---TV-channels-------------------
-	------------------------------'''
-	background = 109
-	name = addonString(109).encode('utf-8')
-	
-	
-	
-	'''BBTS'''
-	addon = 'plugin.video.bbts'
-	addon2 = '/?folder=%2fDOCUMENTARIES'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('BBTS Ducomentaries','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
-	'''---------------------------'''
-	
-	'''ZEUS'''
-	addon = 'plugin.video.zeus'
-	addon2 = '/?description&iconimage=http%3a%2f%2fs6.postimg.org%2fiiswv9g9t%2fdocumentories.png&mode=20&name=%5bCOLOR%20white%5dDOCUMENTARIES%5b%2fCOLOR%5d&url=niRwEAbN'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('ZEUS Ducomentaries','plugin://'+addon + addon2,8,thumb,plot,addon,50, getAddonFanart(110, custom=""))
-	'''---------------------------'''
-
-	
-	'''DogTv'''
-	addon = 'plugin.video.israelive'
-	addon2 = '/?url=plugin%3A%2F%2Fplugin.video.israelive%2F%3Furl%3D3226%26mode%3D1%26ignorefilmonguide%3D1%26filmonmethod%3D1&mode=10&name=%5BCOLOR+yellow%5D%5BB%5DDog+TV%5B%2FB%5D%5B%2FCOLOR%5D&iconimage=http%3A%2F%2Fstatic.filmon.com%2Fcouch%2Fchannels%2F3226%2Fextra_big_logo.png&description=&displayname=Dog+TV&categoryid=10451'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('Dog Tv','plugin://'+addon + addon2,10,'http://3.bp.blogspot.com/-LRjcfd85n5o/UlNRltQt_7I/AAAAAAAAAtE/i3vgCKqbfD4/s1600/dogtv+icon+2.png',plot,addon,50, getAddonFanart(110, custom=""))
-	'''---------------------------'''
-	
-	'''Travel Channel +1'''
-	addon = 'plugin.video.israelive'
-	addon2 ='/?url=plugin%3A%2F%2Fplugin.video.israelive%2F%3Furl%3D842%26mode%3D1%26ignorefilmonguide%3D1&mode=10&name=%5BCOLOR+yellow%5D%5BB%5DTravel+Channel%2B1%5B%2FB%5D%5B%2FCOLOR%5D+-+%5BCOLOR+orange%5D%5BB%5DShed+and+Buried%5B%2FB%5D%5B%2FCOLOR%5D+%5BCOLOR+burlywood%5D%5B19%3A30-20%3A00%5D%5B%2FCOLOR%5D+-+%5BCOLOR+white%5DNext%3A+%5BB%5DBuilding+Alaska%5B%2FB%5D%5B%2FCOLOR%5D+%5BCOLOR+burlywood%5D%5B20%3A00-21%3A00%5D%5B%2FCOLOR%5D&iconimage=http%3A%2F%2Fstatic.filmon.com%2Fcouch%2Fchannels%2F842%2Fextra_big_logo.png&description=Henry+and+Sam+continue+their+search+through+Britain%3Fs+sheds+in+search+of+vintage+treasure+to+restore+and+sell+for+a+tidy+profit.+In+Surrey%2C+they+find+Pontiac+ambulances%2C+mysterious+automotive+sculptures+and+strangely+well-preserved+motorbikes.+reserved.&displayname=Travel+Channel%2B1&categoryid=10451'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('Travel Channel+1','plugin://'+addon + addon2,10,'http://www.travelchannel.com/content/dam/images/travel/fullset/2012/08/15/bc/travel-channel_web-logo.rend.tccom.616.462.jpeg',plot,addon,50, getAddonFanart(110, custom=""))
-	'''---------------------------'''
-		
-	
-	
