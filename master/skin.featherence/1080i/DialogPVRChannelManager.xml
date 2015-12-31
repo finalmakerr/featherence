@@ -37,7 +37,7 @@
 			<width>1600</width>
 			<height>30</height>
 			<font>Size36</font>
-			<textcolor>White2</textcolor>
+			<textcolor>white2</textcolor>
 			<label>$LOCALIZE[19199] - $LOCALIZE[19023]/$LOCALIZE[19024]</label>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -75,7 +75,7 @@
 				<aligny>center</aligny>
 				<scroll>false</scroll>
 				<font>size36</font>
-				<textcolor>White</textcolor>
+				<textcolor>white</textcolor>
                 <label>$INFO[ListItem.Label]</label>
               </control>
             </itemlayout>
@@ -96,7 +96,7 @@
 				<width>630</width>
 				<aligny>center</aligny>
 				<font>size36</font>
-				<textcolor>White2</textcolor>
+				<textcolor>white2</textcolor>
                 <label>$INFO[ListItem.Label]</label>
 				</control>
             </focusedlayout>
@@ -119,7 +119,7 @@
 					<label>$LOCALIZE[33063]</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<textcolor>Yellow</textcolor>
+					<textcolor>yellow</textcolor>
 				</control>
 				<control type="radiobutton" id ="7">
 					<description>Channel activated</description>

@@ -46,7 +46,7 @@
 		<include condition="Window.IsVisible(MyMusicNav.xml)">LeftMenuMyMusicNav</include>
 		<include condition="Window.IsVisible(AddonBrowser.xml)">LeftMenuAddonBrowser</include>
 		<include condition="Window.IsVisible(MyPrograms.xml)">LeftMenuMyPrograms</include>
-		<include condition="Window.IsVisible(MyPVRChannels.xml)">LeftMenuMyPVR</include>
+		<include condition="Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml)">LeftMenuMyPVR</include>
 	  </control>
       
 	  <control type="grouplist" id="9001">
@@ -71,9 +71,10 @@
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[75141]</label>
-		  <selected>Control.IsVisible(57) + !Skin.HasSetting(ShowDVDCases) | [[Control.IsVisible(54) | Control.IsVisible(58)] + Skin.HasSetting(ShowDVDCases2)]</selected>
-		  <onclick condition="Control.IsVisible(57)">Skin.ToggleSetting(ShowDVDCases)</onclick>
-		  <onclick condition="Control.IsVisible(54) | Control.IsVisible(58)">Skin.ToggleSetting(ShowDVDCases2)</onclick>
+		  <selected>StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(ShowDVDCases) | [[StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)]</selected>
+		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])">Skin.ToggleSetting(ShowDVDCases)</onclick>
+		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])">Skin.ToggleSetting(ShowDVDCases2)</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31015])</visible>
         </control>
 		<control type="radiobutton" id="101" description="ShowDVDdisc">
           <include>SideMenuCommon</include>
@@ -91,9 +92,9 @@
 		  <font>size28</font>
 		  <label>$LOCALIZE[79044]</label>
 		  <selected>!Skin.HasSetting(ShowTopVideoInformation)</selected>
-		  <onclick condition="Control.IsVisible(57) | Control.IsVisible(58)">Skin.ToggleSetting(ShowTopVideoInformation)</onclick>
-		  <!--<onclick condition="Control.IsVisible(57)">ReplaceWindow(videolibrary)</onclick>-->
-		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
+		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])">Skin.ToggleSetting(ShowTopVideoInformation)</onclick>
+		  <!--<onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])">ReplaceWindow(videolibrary)</onclick>-->
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 		<control type="radiobutton" id="104" description="פאנארט מסך מלא">
           <include>SideMenuCommon</include>
@@ -106,7 +107,7 @@
 		  <onclick>Skin.ToggleSetting(FullFanartTopVideoInformation)</onclick>
 		  <!--<onclick>ActivateWindow(Home.xml)</onclick>
 		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>-->
-		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 		<control type="radiobutton" id="105" description="פאנארט מסך מלא - ZOOM OUT">
 		  <include>SideMenuCommon</include>
@@ -119,7 +120,7 @@
 		  <onclick>Skin.ToggleSetting(FullFanartZoomOut)</onclick>
 		  <!--<onclick>ActivateWindow(Home.xml)</onclick>
 		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>-->
-		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 		<control type="button" id="106" description="שקיפות עטיפות">
 		  <include>SideMenuCommon</include>
@@ -127,7 +128,7 @@
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31030]: $INFO[Skin.String(MoviesTVCoversOverlay)]</label>
-		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)]</enable>
+		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] | StringCompare(Container.Viewmode,$LOCALIZE[31015])</enable>
 		  <onclick condition="!Skin.String(MoviesTVCoversOverlay)">Skin.SetString(MoviesTVCoversOverlay, 100)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 100)">Skin.SetString(MoviesTVCoversOverlay, 95)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 95)">Skin.SetString(MoviesTVCoversOverlay, 90)</onclick>
@@ -143,7 +144,7 @@
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 10)">Skin.SetString(MoviesTVCoversOverlay, )</onclick>
 		  <!--<onclick>ActivateWindow(Home.xml)</onclick>
 		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>-->
-		  <visible>Control.IsVisible(54) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 		<control type="radiobutton" id="107" description="SelectedZoom">
           <include>SideMenuCommon</include>
@@ -153,7 +154,7 @@
 		  <label>$LOCALIZE[31043]</label>
 		  <selected>!Skin.HasSetting(SelectedZoom)</selected>
 		  <onclick>Skin.ToggleSetting(SelectedZoom)</onclick>
-		  <visible>Control.IsVisible(54) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 		<control type="radiobutton" id="108" description="מסגרת בחירה">
           <include>SideMenuCommon</include>
@@ -163,7 +164,37 @@
 		  <label>$LOCALIZE[31044]</label>
 		  <selected>!Skin.HasSetting(SelectedFrame)</selected>
 		  <onclick>Skin.ToggleSetting(SelectedFrame)</onclick>
-		  <visible>Control.IsVisible(54) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+        </control>
+		<control type="radiobutton" id="109" description="תפריט רחב">
+          <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31046]</label>
+		  <selected>!Skin.HasSetting(View50_Plus)</selected>
+		  <onclick>Skin.ToggleSetting(View50_Plus)</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
+        </control>
+		<control type="radiobutton" id="110" description="פאנארט מסך מלא">
+          <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[20445] $LOCALIZE[244]</label>
+		  <selected>Skin.HasSetting(View50_Plus2)</selected>
+		  <onclick>Skin.ToggleSetting(View50_Plus2)</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
+        </control>
+		<control type="radiobutton" id="111" description="הצג דירוג">
+          <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31043]</label>
+		  <selected>!Skin.HasSetting(Show_Rating)</selected>
+		  <onclick>Skin.ToggleSetting(Show_Rating)</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 		<control type="radiobutton" id="139" description="פאנארט תמיד">
 		  <include>SideMenuCommon</include>
@@ -174,7 +205,7 @@
 		  <enable></enable>
 		  <selected>Skin.HasSetting(AlwaysFanart)</selected>
 		  <onclick>Skin.ToggleSetting(AlwaysFanart)</onclick>
-		  <visible>Control.IsVisible(57) | Control.IsVisible(58)</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 	  </control>
 	  
@@ -201,7 +232,7 @@
 			<font>size28</font>
 			<label>$LOCALIZE[98] $VAR[25label2]</label>
 			<onclick>Skin.ToggleSetting(AutoView)</onclick>
-			<selected>!Skin.HasSetting(AutoView)</selected>
+			<selected>Skin.HasSetting(AutoView)</selected>
 		</control>
 		<control type="button" id="30">
 			<include>SideMenuCommon</include>
@@ -211,7 +242,7 @@
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.movies)</onclick>
 			<font>size28</font>
 			<label>for movies: $INFO[Skin.String(AutoView.movies)]</label>
-			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="31">
@@ -221,7 +252,7 @@
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.tvshows)</onclick>
 			<font>size28</font>
 			<label>for tv shows:  $INFO[Skin.String(AutoView.tvshows)]</label>
-			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="32">
@@ -231,7 +262,7 @@
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.seasons)</onclick>
 			<font>size28</font>
 			<label>for seasons:  $INFO[Skin.String(AutoView.seasons)]</label>
-			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="33">
@@ -241,7 +272,7 @@
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.episodes)</onclick>
 			<font>size28</font>
 			<label>for episodes: $INFO[Skin.String(AutoView.episodes)]</label>
-			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="34">
@@ -251,7 +282,7 @@
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.setmovies)</onclick>
 			<font>size28</font>
 			<label>for movie sets: $INFO[Skin.String(AutoView.setmovies)]</label>
-			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="36">
@@ -261,7 +292,7 @@
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.actors)</onclick>
 			<font>size28</font>
 			<label>for Actors: $INFO[Skin.String(AutoView.actors)]</label>
-			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="37">
@@ -271,7 +302,7 @@
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.genres)</onclick>
 			<font>size28</font>
 			<label>for genres: $INFO[Skin.String(AutoView.genres)]</label>
-			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="button" id="38">
@@ -281,7 +312,7 @@
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.others)</onclick>
 			<font>size28</font>
 			<label>for years/countries/studios/directors: $INFO[Skin.String(AutoView.others)]</label>
-			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		
@@ -292,7 +323,7 @@
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.pictures)</onclick>
 			<font>size28</font>
 			<label>for pictures: $INFO[Skin.String(AutoView.pictures)]</label>
-			<visible>!Skin.HasSetting(AutoView)</visible>
+			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyPics.xml)</visible>
 		</control>
 	  </control>
@@ -332,7 +363,7 @@
 	  <font>size28</font>
 	  <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
 	  <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
-	  <visible>Skin.HasSetting(Admin) | StringCompare(Control.GetLabel,$LOCALIZE[535]: $LOCALIZE[16101]) | Control.IsVisible(57)</visible>
+	  <visible>Skin.HasSetting(Admin) | StringCompare(Control.GetLabel,$LOCALIZE[535]: $LOCALIZE[16101]) | StringCompare(Container.Viewmode,$LOCALIZE[31013])</visible>
 	  <!--<visible>[Skin.HasSetting(Admin) | !StringCompare(Container.FolderName,IsraeLIVE) + !SubString(Container.FolderPath,plugin://plugin.video.israelive)]</visible>-->
 	</control>
 	<control type="radiobutton" id="98" description="Filter">
@@ -373,7 +404,7 @@
 	</control>
 	<include>AutoViewSettingsButton</include>
 	<include>openViewSettings9001</include>
-	<include condition="!Control.IsVisible(57)">CommonLeftMenuButtons</include>
+	<include condition="!StringCompare(Container.Viewmode,$LOCALIZE[31013])">CommonLeftMenuButtons</include>
 	<control type="togglebutton" id="20" description="Scanning library">
 	  <include>SideMenuCommon</include>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
@@ -444,11 +475,11 @@
               <width>520</width>
               <height>70</height>
               <font>size28</font>
-              <textcolor>White</textcolor>
+              <textcolor>white</textcolor>
 			  <scroll>false</scroll>
               <align>left</align>
 			  <label>$INFO[ListItem.Label]</label>
-			  <selectedcolor>Yellow</selectedcolor>
+			  <selectedcolor>yellow</selectedcolor>
 			  <visible>!IsEmpty(ListItem.Label)</visible>
 			  <visible>!StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
             </control>
@@ -457,11 +488,11 @@
               <width>870</width>
               <height>70</height>
               <font>size28</font>
-              <textcolor>White</textcolor>
+              <textcolor>white</textcolor>
 			  <scroll>false</scroll>
               <align>left</align>
 			  <label>$INFO[ListItem.Label]</label>
-			  <selectedcolor>Yellow</selectedcolor>
+			  <selectedcolor>yellow</selectedcolor>
 			  <visible>!IsEmpty(ListItem.Label)</visible>
 			  <visible>StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
             </control>
@@ -480,8 +511,8 @@
               <width>520</width>
               <height>70</height>
               <font>size28</font>
-			  <selectedcolor>Yellow</selectedcolor>
-              <textcolor>White2</textcolor>
+			  <selectedcolor>yellow</selectedcolor>
+              <textcolor>white2</textcolor>
 			  <scroll>true</scroll>
 			  <scrollspeed>150</scrollspeed>
               <align>left</align>
@@ -494,8 +525,8 @@
               <width>870</width>
               <height>70</height>
               <font>size28</font>
-			  <selectedcolor>Yellow</selectedcolor>
-              <textcolor>White2</textcolor>
+			  <selectedcolor>yellow</selectedcolor>
+              <textcolor>white2</textcolor>
 			  <scroll>true</scroll>
 			  <scrollspeed>150</scrollspeed>
               <align>left</align>
@@ -522,7 +553,7 @@
               <width>520</width>
               <height>70</height>
               <font>size28</font>
-              <textcolor>White</textcolor>
+              <textcolor>white</textcolor>
 			  <scroll>false</scroll>
               <align>left</align>
 			  <label>$INFO[ListItem.Label]</label>
@@ -534,7 +565,7 @@
               <width>870</width>
               <height>70</height>
               <font>size28</font>
-              <textcolor>White</textcolor>
+              <textcolor>white</textcolor>
 			  <scroll>false</scroll>
               <align>left</align>
 			  <label>$INFO[ListItem.Label]</label>
@@ -575,7 +606,7 @@
               <width>520</width>
               <height>70</height>
               <font>size28</font>
-              <textcolor>Yellow</textcolor>
+              <textcolor>yellow</textcolor>
 			  <scroll>true</scroll>
               <align>left</align>
 			  <label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
@@ -587,7 +618,7 @@
               <width>870</width>
               <height>70</height>
               <font>size28</font>
-              <textcolor>Yellow</textcolor>
+              <textcolor>yellow</textcolor>
 			  <scroll>true</scroll>
               <align>left</align>
 			  <label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
@@ -714,7 +745,7 @@
 	<include>button4_sortorder</include>
 	<control type="button" id="7" description="מצגת רקורסיבית">
 	  <include>SideMenuCommon</include>
-	  <disabledcolor>Grey</disabledcolor>
+	  <disabledcolor>grey</disabledcolor>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <label>$LOCALIZE[13318]</label>
@@ -875,7 +906,7 @@
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <font>size28</font>
-	  <label>[COLOR=Red]$LOCALIZE[78997][/COLOR]</label>
+	  <label>[COLOR=red]$LOCALIZE[78997][/COLOR]</label>
 	  <onclick condition="System.HasAddon(script.featherence.emu)">RunScript(script.featherence.emu,,)</onclick>
 	  <visible>StringCompare(Container.FolderName,Advanced Launcher) + System.HasAddon(script.featherence.emu)</visible>
 	</control>
@@ -895,7 +926,7 @@
 	  <selected>!Skin.HasSetting(FullFanartBackground2)</selected>
 	  <enable>!Skin.HasSetting(background2)</enable>
 	  <onclick>Skin.ToggleSetting(FullFanartBackground2)</onclick>
-	  <visible>!Control.IsVisible(57)</visible>
+	  <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31013])</visible>
 	  <!--<onclick>ActivateWindow(Home.xml)</onclick>
 	  <onclick condition="Window.IsVisible(AddonBrowser.xml)">AlarmClock(138,ReplaceWindow(AddonBrowser.xml),00:00,silent)</onclick>
 	  <onclick condition="Window.IsVisible(MyPrograms.xml)">AlarmClock(138,ReplaceWindow(MyPrograms.xml),00:00,silent)</onclick>
@@ -977,10 +1008,10 @@
 	<include>button2_views</include>
 	<control type="button" id="30" description="קבוצת ערוצים">
 	  <include>SideMenuCommon</include>
-	  <description></description>
-	  <include>ButtonR3</include>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <label>$VAR[ChannelGroupName]</label>
-	  <onleft condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels) | Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">PreviousChannelGroup</onleft>
+	  <!--<onleft condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels) | Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">PreviousChannelGroup</onleft>-->
 	  <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels) | Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
 	  <onclick condition="Window.IsActive(RadioChannels) + IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
 	  <onclick condition="Window.IsActive(TVChannels) + !IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
@@ -1007,8 +1038,8 @@
 	  <font>size28</font>
 	  <label>$LOCALIZE[70111]</label>
 	  <onclick condition="Window.IsVisible(MyPVRChannels.xml)">RunScript(script.featherence.service,,?mode=12)</onclick>
+	  <visible>false</visible>
 	</control>
-	
 	<control type="button" id="33" description="Radio Channels">
 	  <include>SideMenuCommon</include>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
@@ -1237,7 +1268,7 @@
 		<label>$LOCALIZE[20445] $LOCALIZE[305]</label>
 	    <selected>!Skin.HasSetting(background2)</selected>
 	    <onclick>Skin.ToggleSetting(background2)</onclick>
-		<visible>!Control.IsVisible(57) + !Control.IsVisible(58) | Control.IsVisible(58) + Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart)</visible>
+		<visible>!StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart)</visible>
 	  </control>
   </include>
   <include name="openViewSettings9001">
@@ -1250,7 +1281,7 @@
 		  <selected>ControlGroup(9001).HasFocus() | StringCompare(Window(home).Property(ViewsSettings),9001)</selected>
 		  <onclick condition="true">SetProperty(ViewsSettings,9001,home)</onclick>
 		  <onclick>AlarmClock(0,SetFocus(9001),0,silent)</onclick>
-		  <visible>Control.IsVisible(54) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
 	  </control>
   </include>
   

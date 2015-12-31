@@ -182,7 +182,7 @@ dialogvideonfoEW = xbmc.getCondVisibility('Window.IsVisible(script-ExtendedInfo 
 ------------------------------'''
 
 adult = xbmc.getInfoLabel('Skin.HasSetting(Adult)')
-autoview = xbmc.getInfoLabel('Skin.HasSetting(AutoView)')
+autoview = xbmc.getInfoLabel('!Skin.HasSetting(AutoView)')
 connected = xbmc.getInfoLabel('Skin.HasSetting(Connected)')
 connected2 = xbmc.getInfoLabel('Skin.HasSetting(Connected2)')
 connected3 = xbmc.getInfoLabel('Skin.HasSetting(Connected3)')
@@ -394,7 +394,7 @@ if xbmc.getSkinDir() == 'skin.featherence':
 
 	str74540 = xbmc.getInfoLabel('$LOCALIZE[74540]').decode('utf-8') #Your featherence model is %s
 	str74541 = xbmc.getInfoLabel('$LOCALIZE[74541]').decode('utf-8') #This model support external media storage only!
-	str74542 = xbmc.getInfoLabel('$LOCALIZE[74542]').decode('utf-8') #[CR][CR][COLOR=White2]For support please contact us by using the help button in the home screen.[/COLOR]
+	str74542 = xbmc.getInfoLabel('$LOCALIZE[74542]').decode('utf-8') #[CR][CR][COLOR=white2]For support please contact us by using the help button in the home screen.[/COLOR]
 	str74543 = xbmc.getInfoLabel('$LOCALIZE[74543]').decode('utf-8') #This model has no support for %s
 	str74544 = xbmc.getInfoLabel('$LOCALIZE[74544]').decode('utf-8') #This model has support for %s
 	str74545 = xbmc.getInfoLabel('$LOCALIZE[74545]').decode('utf-8') #
@@ -404,88 +404,9 @@ if xbmc.getSkinDir() == 'skin.featherence':
 	str74549 = xbmc.getInfoLabel('$LOCALIZE[74549]').decode('utf-8') #
 	str74550 = xbmc.getInfoLabel('$LOCALIZE[74550]').decode('utf-8') #Add %s to library
 	str74551 = xbmc.getInfoLabel('$LOCALIZE[74551]').decode('utf-8') #
-	str74553 = xbmc.getInfoLabel('$LOCALIZE[74553]').decode('utf-8') #Unlocking device
-	str74554 = xbmc.getInfoLabel('$LOCALIZE[74554]').decode('utf-8') #Reset skin settings
-	str75209 = xbmc.getInfoLabel('$LOCALIZE[75209]').decode('utf-8') #Test the fix by adding %s to the library (search/add + menu button)
-	str78971 = xbmc.getInfoLabel('$LOCALIZE[78971]').decode('utf-8') #Doing Manual Fix
-	str78974 = xbmc.getInfoLabel('$LOCALIZE[78974]').decode('utf-8') #Fix failed!
-	str78978 = xbmc.getInfoLabel('$LOCALIZE[78978]').decode('utf-8') #The system has found an unfair use!!!
-	str78981 = xbmc.getInfoLabel('$LOCALIZE[78981]').decode('utf-8') #Would you like to proceed with the fix at this time?
-	str78985 = xbmc.getInfoLabel('$LOCALIZE[78985]').decode('utf-8') #Manual fix is available!
-	str78986 = xbmc.getInfoLabel('$LOCALIZE[78986]').decode('utf-8') #Fix Succeeded!
-	str79058 = xbmc.getInfoLabel('$LOCALIZE[79058]').decode('utf-8') #Describe your issue in short
-	str79089 = xbmc.getInfoLabel('$LOCALIZE[79089]').decode('utf-8') #
-	str79495 = xbmc.getInfoLabel('$LOCALIZE[79495]').decode('utf-8') #Try again
-	str79496 = xbmc.getInfoLabel('$LOCALIZE[79496]').decode('utf-8') #This feature is under development
-	str79497 = xbmc.getInfoLabel('$LOCALIZE[79497]').decode('utf-8') #Thank you for your patience
-	str79504 = xbmc.getInfoLabel('$LOCALIZE[79504]').decode('utf-8') #Would you like to try again?
-	str79545 = xbmc.getInfoLabel('$LOCALIZE[79545]').decode('utf-8') #
-	str79550 = xbmc.getInfoLabel('$LOCALIZE[79550]').decode('utf-8') #
-	str79551 = xbmc.getInfoLabel('$LOCALIZE[79551]').decode('utf-8') #SERVICE CALL RECEIVED
-	str79552 = xbmc.getInfoLabel('$LOCALIZE[79552]').decode('utf-8') #TRIAL RENEWED
-	str79553 = xbmc.getInfoLabel('$LOCALIZE[79553]').decode('utf-8') #TRIAL ENDED
-	str79554 = xbmc.getInfoLabel('$LOCALIZE[79554]').decode('utf-8') #DEVICE SUSPEND
-	str79555 = xbmc.getInfoLabel('$LOCALIZE[79555]').decode('utf-8') #DEVICE SABOTAGE
-	str79556 = xbmc.getInfoLabel('$LOCALIZE[79556]').decode('utf-8') #DEVICE FIXED
-	str79557 = xbmc.getInfoLabel('$LOCALIZE[79557]').decode('utf-8') #DEVICE SOFT-REBOOTED
-	str79558 = xbmc.getInfoLabel('$LOCALIZE[79558]').decode('utf-8') #DEVICE REBOOTED
-	str79559= xbmc.getInfoLabel('$LOCALIZE[79559]').decode('utf-8') #DEVICE POWEROFF
-	str79560 = xbmc.getInfoLabel('$LOCALIZE[79560]').decode('utf-8') #DEVICE POWEROFF %s
-	str79561 = xbmc.getInfoLabel('$LOCALIZE[79561]').decode('utf-8') #DEVICE AUTO POWEROFF
-	str79562 = xbmc.getInfoLabel('$LOCALIZE[79562]').decode('utf-8') #DEVICE ACTIVATED
-	str79563 = xbmc.getInfoLabel('$LOCALIZE[79563]').decode('utf-8') #UNAUTHORIZED
-	str79564 = xbmc.getInfoLabel('$LOCALIZE[79564]').decode('utf-8') #DEVICE AT STARTUP 12m
-	str79565 = xbmc.getInfoLabel('$LOCALIZE[79565]').decode('utf-8') #DEVICE ACTIVATE 2h
-	str79566 = xbmc.getInfoLabel('$LOCALIZE[79566]').decode('utf-8') #DEVICE ERROR %s
-	str79567 = xbmc.getInfoLabel('$LOCALIZE[79567]').decode('utf-8') #DEVICE ACTIVATE 1h
-	str79568 = xbmc.getInfoLabel('$LOCALIZE[79568]').decode('utf-8') #DEVICE PURCHASED
-	str79569 = xbmc.getInfoLabel('$LOCALIZE[79569]').decode('utf-8') #VERSION UPDATED
-	str79570 = xbmc.getInfoLabel('$LOCALIZE[79570]').decode('utf-8') #INSTALLED
-	str79571 = xbmc.getInfoLabel('$LOCALIZE[79571]').decode('utf-8') #UNINSTALLED
-	str79573 = xbmc.getInfoLabel('$LOCALIZE[79573]').decode('utf-8') #Previous period
-	str79574 = xbmc.getInfoLabel('$LOCALIZE[79574]').decode('utf-8') #New period
 
 	str79577 = xbmc.getInfoLabel('$LOCALIZE[79577]').decode('utf-8') #Update Movies and Tvshows library
 	str79583 = xbmc.getInfoLabel('$LOCALIZE[79583]').decode('utf-8') #Added
-
-
-	str75004 = xbmc.getInfoLabel('$LOCALIZE[75004]').decode('utf-8') #Local Music
-	str75687 = xbmc.getInfoLabel('$LOCALIZE[75687]').decode('utf-8') #Update History
-	str79046 = xbmc.getInfoLabel('$LOCALIZE[79046]').decode('utf-8') #Deactivated
-	str79215 = xbmc.getInfoLabel('$LOCALIZE[79215]') #Warning: Internet Browsing
-	str79216 = xbmc.getInfoLabel('$LOCALIZE[79216]') #VERIFY YOU HAVE A KEYBOARD BEFORE PROCEEDING!
-	str79217 = xbmc.getInfoLabel('$LOCALIZE[79217]') #Use the following keys in order to return:
-	str79218 = xbmc.getInfoLabel('$LOCALIZE[79218]') #ESC / ALT-TAB / ALT+F4
-	str79498 = xbmc.getInfoLabel('$LOCALIZE[79498]').decode('utf-8') #EXTERNAL DEVICES
-	str79520 = xbmc.getInfoLabel('$LOCALIZE[79520]').decode('utf-8') #Quick Play
-	str79521 = xbmc.getInfoLabel('$LOCALIZE[79521]').decode('utf-8') #More Results
-	str79522 = xbmc.getInfoLabel('$LOCALIZE[79522]').decode('utf-8') #View Playlist
-	str79523 = xbmc.getInfoLabel('$LOCALIZE[79523]').decode('utf-8') #Activate TV Mode?
-	str79524 = xbmc.getInfoLabel('$LOCALIZE[79524]').decode('utf-8') #
-	str79525 = xbmc.getInfoLabel('$LOCALIZE[79525]').decode('utf-8') #TV Mode
-	str79526 = xbmc.getInfoLabel('$LOCALIZE[79526]').decode('utf-8') #Quick-Play (Description)...
-	str79527 = xbmc.getInfoLabel('$LOCALIZE[79527]').decode('utf-8') #Play List (Description)...
-	str79528 = xbmc.getInfoLabel('$LOCALIZE[79528]').decode('utf-8') #More Result (Description)...
-	str79529 = xbmc.getInfoLabel('$LOCALIZE[79529]').decode('utf-8') #Preparing TV Mode...
-	str79530 = xbmc.getInfoLabel('$LOCALIZE[79530]').decode('utf-8') #Various performances
-	str79531 = xbmc.getInfoLabel('$LOCALIZE[79531]').decode('utf-8') #The system issued an automatic abort
-	str79535 = xbmc.getInfoLabel('$LOCALIZE[79535]').decode('utf-8') #
-	str79536 = xbmc.getInfoLabel('$LOCALIZE[79536]').decode('utf-8') #Begining: %s   |   End: %s
-	str79537 = xbmc.getInfoLabel('$LOCALIZE[79537]').decode('utf-8') #
-	str79538 = xbmc.getInfoLabel('$LOCALIZE[79538]').decode('utf-8') #Hello %s,
-	str79539 = xbmc.getInfoLabel('$LOCALIZE[79539]').decode('utf-8') #Invalid Phone Number!
-
-
-	str79540 = xbmc.getInfoLabel('$LOCALIZE[79540]').decode('utf-8') #%s Files found in %s Folder
-	str79541 = xbmc.getInfoLabel('$LOCALIZE[79541]').decode('utf-8') #Would you like to delete those files?
-	str79542 = xbmc.getInfoLabel('$LOCALIZE[79542]').decode('utf-8') #Fix issued successfuly
-	str79543 = xbmc.getInfoLabel('$LOCALIZE[79543]').decode('utf-8') #Cleaning Library No. %s %s
-	str79544 = xbmc.getInfoLabel('$LOCALIZE[79544]').decode('utf-8') #Last Service Call
-	str79548 = xbmc.getInfoLabel('$LOCALIZE[79548]').decode('utf-8') #
-	str79549 = xbmc.getInfoLabel('$LOCALIZE[79549]').decode('utf-8') #
-	numinumistr = xbmc.getInfoLabel('$LOCALIZE[79068]')
-	idpstr = xbmc.getInfoLabel('$LOCALIZE[79246]')
-	idp2str = xbmc.getInfoLabel('$LOCALIZE[79247]')
 
 '''------------------------------
 ---CUSTOM-$LOCALIZE--------------
@@ -549,6 +470,7 @@ controlhasfocus699 = ""
 
 api_youtube_featherence = 'AIzaSyDkNxiwClyCildDbHdDKSWt5BkKQ6LeQqA' #AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4
 api_dailymotion_featherence = '3e563cafd4fbba5de0c1'
+api_vimeo_featherence = '45584ad52d6951f441fd2f7c7ae690d2'
 
 '''------------------------------
 ---CONTROL-----------------------

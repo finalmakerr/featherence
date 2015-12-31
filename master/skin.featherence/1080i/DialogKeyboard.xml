@@ -36,7 +36,7 @@
 				<font>size28</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>Yellow</textcolor>
+				<textcolor>yellow</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="button" id="700" description="כפתור סגור חלון">
@@ -69,7 +69,7 @@
 				<font>size28</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>White2</textcolor>
+				<textcolor>white2</textcolor>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onleft>300</onleft>
@@ -787,7 +787,7 @@
 					<texturefocus flipx="true" border="5,5,25,25">osd/keyboard/KeyboardCornerBottom2.png</texturefocus>		
 					<width>200</width>
 					<height>100</height>
-					<focusedcolor>Black</focusedcolor>				
+					<focusedcolor>black</focusedcolor>				
 					<include>Keyboard</include>
 					<left>500</left>
 					<top>150</top>
@@ -807,7 +807,7 @@
 					<texturefocus flipx="true" border="5,5,25,25">osd/keyboard/KeyboardCornerBottom2.png</texturefocus>		
 					<width>150</width> <!--200-->
 					<height>100</height>
-					<focusedcolor>Black</focusedcolor>	
+					<focusedcolor>black</focusedcolor>	
 					<include>Keyboard</include>
 					<left>550</left>
 					<top>150</top>

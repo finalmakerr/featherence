@@ -211,7 +211,8 @@
 		<label2>$VAR[215label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/cubes.png</thumb>
 		<property name="rinfo">$LOCALIZE[76206]</property>
-		<onclick condition="!Skin.String(MenuDesign)">Skin.SetString(MenuDesign,1)</onclick>
+		<onclick condition="!Skin.String(MenuDesign)">Skin.SetString(MenuDesign,0)</onclick>
+		<onclick condition="Skin.String(MenuDesign,0)">Skin.SetString(MenuDesign,1)</onclick>
 		<onclick condition="Skin.String(MenuDesign,1)">Skin.SetString(MenuDesign,2)</onclick>
 		<onclick condition="Skin.String(MenuDesign,2)">Skin.SetString(MenuDesign,3)</onclick>
 		<onclick condition="Skin.String(MenuDesign,3)">Skin.SetString(MenuDesign,4)</onclick>

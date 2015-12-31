@@ -103,7 +103,7 @@ def CATEGORIES101(admin):
  
  
 	'''בעלי חיים'''
-	addDir(addonString(10101),'',10101,'http://3.bp.blogspot.com/-GmdLk2R6ahA/T55Ud9aXCcI/AAAAAAAABY4/4Z9aMnM0Ukc/s1600/Blue-Butterfuly-Latest-Animal-Wallpaper-2012.jpg',addonString(101010),'1',"", getAddonFanart(10101))
+	addDir(addonString(10101),'',10101,'http://3.bp.blogspot.com/-GmdLk2R6ahA/T55Ud9aXCcI/AAAAAAAABY4/4Z9aMnM0Ukc/s1600/blue-Butterfuly-Latest-Animal-Wallpaper-2012.jpg',addonString(101010),'1',"", getAddonFanart(10101))
 	
 	'''צומח'''
 	addDir(addonString(10102),'',10102,'https://lh5.ggpht.com/rJg02fFypSfx2mL6BMWEN__3Je-E-sy2ZDgZs2PNnnFLawi2b1QtL9S_GtY5sPLXPw=h900',addonString(101020),'1',"", getAddonFanart(10102))

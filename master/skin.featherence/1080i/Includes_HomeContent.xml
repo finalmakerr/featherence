@@ -571,7 +571,7 @@
   <include name="Content_TopButtons">
 	
 	  <control type="button" id="9090" description="ו'ידגט סרטים/סדרות">
-		  <include>Fade_TopVideoInformationOverlay</include>
+		  <include>Fade_TopInformationOverlay</include>
 		  <width>350</width>
 		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
@@ -590,7 +590,7 @@
 		  <visible>Window.IsVisible(Home.xml)</visible>
 	  </control>
 	  <control type="button" id="9091" description="קדימונים/סרטים">
-		  <include>Fade_TopVideoInformationOverlay</include>
+		  <include>Fade_TopInformationOverlay</include>
 		  <width>150</width>
 		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
@@ -602,7 +602,7 @@
 		  <visible>Window.IsVisible(Home.xml)</visible>
 	  </control>
 	  <control type="button" id="9092" description="רענן">
-		  <include>Fade_TopVideoInformationOverlay</include>
+		  <include>Fade_TopInformationOverlay</include>
 		  <width>150</width>
 		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
@@ -613,7 +613,7 @@
 		  <visible>Window.IsVisible(Home.xml)</visible>
 	  </control>
 	  <control type="button" id="9093" description="ניגון ידני/אוטומטי">
-		  <include>Fade_TopVideoInformationOverlay</include>
+		  <include>Fade_TopInformationOverlay</include>
 		  <width>140</width>
 		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
@@ -624,7 +624,7 @@
 		  <visible>Window.IsVisible(Home.xml)</visible>
 	  </control>
 	  <control type="button" id="9094" description="נגן קדימונים אקראיים">
-		  <include>Fade_TopVideoInformationOverlay</include>
+		  <include>Fade_TopInformationOverlay</include>
 		  <width min="250" max="310">auto</width>
 		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
@@ -636,7 +636,7 @@
 	  </control>
 
 	  <control type="radiobutton" id="9100" description="עיצוב מעטפת">
-	    <include>Fade_TopVideoInformationOverlay</include>
+	    <include>Fade_TopInformationOverlay</include>
 		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
 		<label>$LOCALIZE[76196]</label>
@@ -647,7 +647,7 @@
 	  </control>
 	  
 	  <control type="radiobutton" id="9103" description="הגדרות מעטפת">
-	    <include>Fade_TopVideoInformationOverlay</include>
+	    <include>Fade_TopInformationOverlay</include>
 		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
 		<label>$LOCALIZE[20077]</label>
@@ -656,7 +656,7 @@
 	  </control>
 	  
 	  <control type="radiobutton" id="9101" description="הסתר כפתורים לא פעילים">
-		<include>Fade_TopVideoInformationOverlay</include>
+		<include>Fade_TopInformationOverlay</include>
 		<width>370</width>
 		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
@@ -668,7 +668,7 @@
 	  </control>
 	  
 	  <control type="button" id="9102" description="גוון">
-		<include>Fade_TopVideoInformationOverlay</include>
+		<include>Fade_TopInformationOverlay</include>
 		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
 		<label>$LOCALIZE[79042]: $INFO[Skin.String(MenuColor.name)]</label>
@@ -680,7 +680,7 @@
 	  </control>
 
 	  <control type="radiobutton" id="9109" description="TEST">
-		<include>Fade_TopVideoInformationOverlay</include>
+		<include>Fade_TopInformationOverlay</include>
 		<onleft>520</onleft>
 		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>

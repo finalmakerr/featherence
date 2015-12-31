@@ -260,8 +260,8 @@
   </variable>
 
   <variable name="25label2">
-	<value condition="Skin.HasSetting(AutoView)">$LOCALIZE[106]</value>
-	<value condition="!Skin.HasSetting(AutoView)">$LOCALIZE[107]</value>
+	<value condition="!Skin.HasSetting(AutoView)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(AutoView)">$LOCALIZE[107]</value>
   </variable>
   <variable name="36label2">
 	<value condition="!Skin.String(screensavermusic)">$LOCALIZE[106]</value>
@@ -317,7 +317,8 @@
   </variable>
   
   <variable name="215label2">
-    <value condition="!Skin.String(MenuDesign)" description="פנל">$LOCALIZE[31031]</value>
+    <value condition="!Skin.String(MenuDesign)" description="ברירת מחדל">DEFAULT</value>
+    <value condition="Skin.String(MenuDesign,0)" description="פנל">$LOCALIZE[31031]</value>
 	<value condition="Skin.String(MenuDesign,1)" description="פנל 2">$LOCALIZE[31031] 2</value>
 	<value condition="Skin.String(MenuDesign,2)" description="מאוזן">$LOCALIZE[31032]</value>
 	<value condition="Skin.String(MenuDesign,3)" description="מאוזן 2">$LOCALIZE[31032] 2</value>

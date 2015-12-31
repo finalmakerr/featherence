@@ -53,8 +53,8 @@
         <font>size33</font>
         <align>left</align>
         <aligny>top</aligny>
-        <focusedcolor>White</focusedcolor>
-        <selectedcolor>White</selectedcolor>
+        <focusedcolor>white</focusedcolor>
+        <selectedcolor>white</selectedcolor>
         <label>-</label>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>
@@ -100,7 +100,7 @@
               <width>780</width>
               <height>63</height>
               <info>ListItem.Label</info>
-			  <selectedcolor>Yellow</selectedcolor>
+			  <selectedcolor>yellow</selectedcolor>
             </control>
           </itemlayout>
           <focusedlayout width="840" height="63">
@@ -118,7 +118,7 @@
               <height>63</height>
               <width>780</width>
               <info>ListItem.Label</info>
-			  <selectedcolor>Yellow</selectedcolor>
+			  <selectedcolor>yellow</selectedcolor>
             </control>
           </focusedlayout>
         </control>

@@ -45,7 +45,7 @@
 			  <height>40</height>
 			  <font>size24</font>
 			  <posx>610</posx>
-			  <textcolor>Yellow</textcolor>
+			  <textcolor>yellow</textcolor>
 			  <visible>false</visible>
 			  <width>360</width>
 			</control>
@@ -63,7 +63,7 @@
 			  <label>$INFO[Window(home).Property(DialogSubtitles2)]</label>
 			  <height>40</height>
 			  <posx>1418</posx>
-			  <textcolor>Yellow</textcolor>
+			  <textcolor>yellow</textcolor>
 			  <visible>!IsEmpty(Control.GetLabel(1300))</visible>
 			  <width>500</width>
 			</control>
@@ -100,7 +100,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>White2</textcolor>
+                        <textcolor>white2</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label</info>
@@ -127,7 +127,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>White2</textcolor>
+                        <textcolor>white2</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label2</info>
@@ -138,7 +138,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>BlackT</textcolor>
+                        <textcolor>black</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label2</info>
@@ -150,7 +150,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>Yellow</textcolor>
+                        <textcolor>yellow</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label2</info>
@@ -160,7 +160,7 @@
                         <posx>1300</posx>
                         <width>100</width>
                         <height>54</height>
-                        <colordiffuse>White2</colordiffuse>
+                        <colordiffuse>white2</colordiffuse>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.ActualIcon,badges/subtitles/rating,.png]</texture> <!--badges/$INFO[ListItem.ActualIcon].0.png-->
                     </control>
@@ -191,7 +191,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>White2</textcolor>
+                        <textcolor>white2</textcolor>
                         <align>left</align>
                         <info>ListItem.Label</info>
                     </control>
@@ -217,7 +217,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>White2</textcolor>
+                        <textcolor>white2</textcolor>
                         <align>left</align>
                         <info>ListItem.Label2</info>
                     </control>
@@ -227,7 +227,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>BlackT</textcolor>
+                        <textcolor>black</textcolor>
                         <align>left</align>
                         <info>ListItem.Label2</info>
 						<visible>StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA1)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA2)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA3)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA4)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA5)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA6)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA7)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA8)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA9)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA10))</visible>
@@ -238,7 +238,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>Yellow</textcolor>
+                        <textcolor>yellow</textcolor>
                         <align>left</align>
                         <info>ListItem.Label2</info>
 						<visible>StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitles2))</visible>
@@ -255,7 +255,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>Red</textcolor>
+                        <textcolor>red</textcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.ActualIcon]</label>
 						<visible>Skin.HasSetting(Admin)</visible>
@@ -278,7 +278,7 @@
 			  <textoffsety>105</textoffsety>
               <height>70</height>
 			  <font>size28</font>
-			  <focusedcolor>White2</focusedcolor>
+			  <focusedcolor>white2</focusedcolor>
 			  <width>450</width>
 			  <include>ButtonC1</include>
               <onleft>noop</onleft>
@@ -291,7 +291,7 @@
 			  <textoffsety>105</textoffsety>
               <height>70</height>
 			  <font>size28</font>
-			  <focusedcolor>White2</focusedcolor>
+			  <focusedcolor>white2</focusedcolor>
 			  <posy>60</posy>
 			  <width>450</width>
 			  <include>ButtonC1</include>
@@ -324,8 +324,8 @@
 				  <height>54</height>
 				  <info>ListItem.Label</info>
 				  <posx>90</posx>
-				  <textcolor>White2</textcolor>
-				  <selectedcolor>Yellow</selectedcolor>
+				  <textcolor>white2</textcolor>
+				  <selectedcolor>yellow</selectedcolor>
 				  <visible>!ListItem.property(man)</visible>
 				</control>
 				<control type="label">
@@ -333,7 +333,7 @@
 				  <height>54</height>
 				  <info>ListItem.Label</info>
 				  <posx>90</posx>
-				  <textcolor>White2</textcolor>
+				  <textcolor>white2</textcolor>
 			      <visible>ListItem.property(man)</visible>
 				</control>
               </itemlayout>
@@ -349,8 +349,8 @@
 					  <!--<include>LabelL2</include>-->
                       <height>54</height>
 					  <posx>90</posx>
-                      <textcolor>White2</textcolor>
-                      <selectedcolor>Yellow</selectedcolor>
+                      <textcolor>white2</textcolor>
+                      <selectedcolor>yellow</selectedcolor>
                       <info>ListItem.Label</info>
                       <visible>!ListItem.property(man)</visible>
                     </control>
@@ -358,7 +358,7 @@
 					  <!--<include>LabelL2</include>-->
                       <height>54</height>
 					  <posx>90</posx>
-                      <textcolor>White2</textcolor>
+                      <textcolor>white2</textcolor>
                       <info>ListItem.Label</info>
                       <visible>ListItem.property(man)</visible>
                     </control>

@@ -38,8 +38,8 @@
 			<width>250</width>
 			<height>50</height>
 			<font>size28</font>
-			<textcolor>Yellow</textcolor>
-			<disabledcolor>White2</disabledcolor>
+			<textcolor>yellow</textcolor>
+			<disabledcolor>white2</disabledcolor>
 			<align>center</align>
 			<aligny>center</aligny>
 		</control>
@@ -57,7 +57,7 @@
 			<width>280</width>
 			<height>35</height>
 			<font>size28</font>
-			<textcolor>Yellow</textcolor>
+			<textcolor>yellow</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<align>center</align>
 			<aligny>center</aligny>

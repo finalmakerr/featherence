@@ -114,7 +114,7 @@
 		<posx>0</posx>
 		<scroll>true</scroll>
 		<shadowcolor>black</shadowcolor>
-		<textcolor>Grey2</textcolor>
+		<textcolor>grey2</textcolor>
 		<width>880</width>
 		<include>LabelL2</include>
 		<!--<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>

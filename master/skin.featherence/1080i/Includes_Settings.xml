@@ -115,7 +115,7 @@
 		  <texture border="30">buttons/ButtonE.png</texture>
 		</control>
 		<control type="label" description="שם">
-		  <textcolor>Yellow</textcolor>
+		  <textcolor>yellow</textcolor>
 		  <include>LabelC3</include>
 		  <posx>10</posx>
 		  <posy>20</posy>
@@ -154,7 +154,7 @@
 		  <height>40</height>
 		  <texture border="0">images/Arrow3NF.png</texture>
 		  <visible>[Control.IsVisible(50) + !Container(50).Position(0)] | !Control.IsVisible(50)</visible>
-		  <visible>[Control.IsVisible(5) + ControlGroup(5).HasFocus] | !Control.IsVisible(5)</visible>
+		  <visible>[Control.IsVisible(5) + [!Container(5).Position(0) | ControlGroup(5).HasFocus]] | !Control.IsVisible(5)</visible>
 		  <visible>[Control.IsVisible(450) + !Container(450).Position(0)] | !Control.IsVisible(450)</visible>
 		  <visible>[Control.IsVisible(9005) + !Container(9005).Position(0)] | !Control.IsVisible(9005)</visible>
 		  <visible>[Control.IsVisible(56) + !Container(56).Position(0)] | !Control.IsVisible(56)</visible>
@@ -164,7 +164,7 @@
 		  <height>40</height>
 		  <texture border="0">images/Arrow3FO.png</texture>
 		  <visible>[Control.IsVisible(50) + Container(50).Position(0)] | !Control.IsVisible(50)</visible>
-		  <visible>!Control.IsVisible(5)</visible>
+		  <visible>[Control.IsVisible(5) + Container(5).Position(0)] | !Control.IsVisible(5)</visible>
 		  <visible>[Control.IsVisible(450) + Container(450).Position(0)] | !Control.IsVisible(450)</visible>
 		  <visible>[Control.IsVisible(9005) + Container(9005).Position(0)] | !Control.IsVisible(9005)</visible>
 		  <visible>[Control.IsVisible(56) + Container(56).Position(0)] | !Control.IsVisible(56)</visible>
@@ -189,7 +189,7 @@
 		  <texture border="0">images/Arrow4NF.png</texture>
 		  <visible>[Control.IsVisible(50) + !Container(50).Position(9)] | !Control.IsVisible(50)</visible>
 		  <visible>[Window.IsVisible(Custom1173.xml) + !Container(50).Position(4)] | !Window.IsVisible(Custom1173.xml)</visible>
-		  <visible>[Control.IsVisible(5) + ControlGroup(5).HasFocus] | !Control.IsVisible(5)</visible>
+		  <visible>[Control.IsVisible(5) + !Container(5).Position(9)] | !Control.IsVisible(5)</visible>
 		  <visible>[Control.IsVisible(450) + !Container(450).Position(9)] | !Control.IsVisible(450)</visible>
 		  <visible>[Control.IsVisible(9005) + !Container(9005).Position(4)] | !Control.IsVisible(9005)</visible>
 		  <visible>[Control.IsVisible(56) + !Container(56).Position(7)] | !Control.IsVisible(56)</visible>
@@ -200,7 +200,7 @@
 		  <texture border="0">images/Arrow4FO.png</texture>
 		  <visible>[Control.IsVisible(50) + Container(50).Position(9)] | !Control.IsVisible(50) | Window.IsVisible(Custom1173.xml)</visible>
 		  <visible>[Window.IsVisible(Custom1173.xml) + Container(50).Position(4)] | !Window.IsVisible(Custom1173.xml)</visible>
-		  <visible>!Control.IsVisible(5)</visible>
+		  <visible>[Control.IsVisible(5) + Container(5).Position(9)] | !Control.IsVisible(5)</visible>
 		  <visible>[Control.IsVisible(450) + Container(450).Position(9)] | !Control.IsVisible(450)</visible>
 		  <visible>[Control.IsVisible(9005) + Container(9005).Position(4)] | !Control.IsVisible(9005)</visible>
 		  <visible>[Control.IsVisible(56) + Container(56).Position(7)] | !Control.IsVisible(56)</visible>
@@ -267,7 +267,7 @@
 		  <posy>22</posy>
 		  <width>40</width>
 		  <height>40</height>
-		  <texture background="true" colordiffuse="White">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
+		  <texture background="true" colordiffuse="white">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
 		  <visible>!IsEmpty(ListItem.Property(rinfo))</visible>
 		</control>
 		<control type="label" description="שם">
@@ -283,7 +283,7 @@
 		<control type="label" description="נתון">
 		  <align>center</align>
 		  <aligny>center</aligny>
-		  <textcolor>Grey2</textcolor>
+		  <textcolor>grey2</textcolor>
 		  <include>LabelC2</include>
 		  <posx>525</posx>
 		  <posy>2</posy>
@@ -328,11 +328,11 @@
 		  <posy>22</posy>
 		  <width>40</width>
 		  <height>40</height>
-		  <texture background="true" colordiffuse="Yellow">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
+		  <texture background="true" colordiffuse="yellow">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
 		  <visible>!IsEmpty(ListItem.Property(rinfo))</visible>
 		</control>
 		<control type="label" description="שם">
-		  <textcolor>Yellow</textcolor>
+		  <textcolor>yellow</textcolor>
 		  <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
 		  <posx>700</posx>
@@ -346,7 +346,7 @@
 		<control type="label" description="נתון">
 		  <align>center</align>
 		  <aligny>center</aligny>
-		  <textcolor>Yellow</textcolor>
+		  <textcolor>yellow</textcolor>
 		  <include>LabelC2</include>
 		  <posx>525</posx>
 		  <posy>2</posy>

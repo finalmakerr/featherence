@@ -20,7 +20,7 @@
       <align>right</align>
       <aligny>center</aligny>
       <font>size33B</font>
-      <textcolor>White</textcolor>
+      <textcolor>white</textcolor>
       <label>$INFO[System.Time]</label>
     </control>
     <control type="group">
@@ -42,12 +42,12 @@
         <width>615</width>
         <height>45</height>
         <font>size24</font>
-        <textcolor>Grey2</textcolor>
+        <textcolor>grey2</textcolor>
         <align>center</align>
         <label>-</label>
       </control>
       <control type="image" description="Slider 50">
-        <visible>Control.IsVisible(50)</visible>
+        <visible>StringCompare(Container.Viewmode,$LOCALIZE[31010])</visible>
         <posx>60</posx>
         <posy>99</posy>
         <width>600</width>
@@ -164,7 +164,7 @@
           <height>420</height>
           <font>size26</font>
           <align>center</align>
-          <label>$INFO[Container(50).ListItem.Artist,[COLOR=Grey]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Album,[COLOR=Grey]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Duration,[COLOR=Grey]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Genre,[COLOR=Grey]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
+          <label>$INFO[Container(50).ListItem.Artist,[COLOR=grey]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Album,[COLOR=grey]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Duration,[COLOR=grey]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Genre,[COLOR=grey]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
         </control>
       </control>
       <control type="group">
@@ -187,7 +187,7 @@
           <height>420</height>
           <font>size26</font>
           <align>center</align>
-          <label>$INFO[Container(100).ListItem.Artist,[COLOR=Grey]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Album,[COLOR=Grey]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Duration,[COLOR=Grey]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Genre,[COLOR=Grey]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
+          <label>$INFO[Container(100).ListItem.Artist,[COLOR=grey]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Album,[COLOR=grey]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Duration,[COLOR=grey]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Genre,[COLOR=grey]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
         </control>
       </control>
       <control type="image" description="separator Bottom">
@@ -241,7 +241,7 @@
         <width>615</width>
         <height>45</height>
         <font>size24</font>
-        <textcolor>Grey2</textcolor>
+        <textcolor>grey2</textcolor>
         <align>center</align>
         <label>-</label>
       </control>

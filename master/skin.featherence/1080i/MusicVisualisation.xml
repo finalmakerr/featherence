@@ -134,8 +134,8 @@
               <scroll>true</scroll>
               <align>left</align>
               <font>size42B</font>
-              <textcolor>White2</textcolor>
-              <shadowcolor>Black</shadowcolor>
+              <textcolor>white2</textcolor>
+              <shadowcolor>black</shadowcolor>
               <animation effect="fade" time="200">VisibleChange</animation>
               <label>$INFO[MusicPlayer.Title]</label>
             </control>
@@ -162,7 +162,7 @@
               <posy>690</posy>
               <width>900</width>
               <align>left</align>
-              <textcolor>Grey</textcolor>
+              <textcolor>grey</textcolor>
               <animation effect="fade" time="200">VisibleChange</animation>
               <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
               <font>size26</font>
@@ -177,7 +177,7 @@
                 <align>left</align>
                 <label>[B]$INFO[Player.Time][/B]</label>
                 <font>size26</font>
-                <textcolor>Grey2</textcolor>
+                <textcolor>grey2</textcolor>
               </control>
               <control type="progress" description="Progress Bar">
                 <posx>122</posx>
@@ -200,7 +200,7 @@
                 <align>right</align>
                 <label>[B]$INFO[Player.TimeRemaining,-][/B]</label>
                 <font>size26</font>
-                <textcolor>Grey2</textcolor>
+                <textcolor>grey2</textcolor>
               </control>
               <control type="label">
                 <posx>777</posx>
@@ -210,7 +210,7 @@
                 <align>left</align>
                 <label>$INFO[Control.GetLabel(23)]</label>
                 <font>size26</font>
-                <textcolor>Red</textcolor>
+                <textcolor>red</textcolor>
                 <visible>Skin.HasSetting(DebugInfo)</visible>
               </control>
             </control>
@@ -280,7 +280,7 @@
               <scroll>true</scroll>
               <align>right</align>
               <font>size42B</font>
-              <textcolor>White2</textcolor>
+              <textcolor>white2</textcolor>
               <animation effect="fade" time="200">VisibleChange</animation>
               <label>$INFO[MusicPlayer.Title]</label>
             </control>
@@ -307,11 +307,11 @@
               <posy>690</posy>
               <width>900</width>
               <align>right</align>
-              <textcolor>Grey</textcolor>
+              <textcolor>grey</textcolor>
               <animation effect="fade" time="200">VisibleChange</animation>
               <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
               <font>size26</font>
-              <shadowcolor>Black</shadowcolor>
+              <shadowcolor>black</shadowcolor>
             </control>
           </control>
           <control type="group">
@@ -324,7 +324,7 @@
               <align>left</align>
               <label>[B]$INFO[Player.Time][/B]</label>
               <font>size26</font>
-              <textcolor>Grey2</textcolor>
+              <textcolor>grey2</textcolor>
             </control>
             <control type="progress" description="Progress Bar">
               <posx>357</posx>
@@ -347,7 +347,7 @@
               <align>right</align>
               <label>[B]$INFO[Player.TimeRemaining,-][/B]</label>
               <font>size26</font>
-              <textcolor>Grey2</textcolor>
+              <textcolor>grey2</textcolor>
             </control>
             <control type="label">
               <posx>777</posx>
@@ -357,7 +357,7 @@
               <align>left</align>
               <label>$INFO[Control.GetLabel(23)]</label>
               <font>size26</font>
-              <textcolor>Red</textcolor>
+              <textcolor>red</textcolor>
               <visible>Skin.HasSetting(DebugInfo)</visible>
             </control>
           </control>
@@ -408,8 +408,8 @@
           <width>750</width>
           <label>$LOCALIZE[210]</label>
           <font>size24</font>
-          <textcolor>Grey</textcolor>
-          <shadowcolor>Black</shadowcolor>
+          <textcolor>grey</textcolor>
+          <shadowcolor>black</shadowcolor>
         </control>
         <control type="label" description="Previous">
           <posx>30</posx>
@@ -419,7 +419,7 @@
           <label>$INFO[MusicPlayer.offset(-1).Title]</label>
           <font>size33</font>
           <textcolor>Grey3</textcolor>
-          <shadowcolor>Black</shadowcolor>
+          <shadowcolor>black</shadowcolor>
         </control>
       </control>
       <control type="group">
@@ -430,8 +430,8 @@
           <align>right</align>
           <label>$LOCALIZE[209]</label>
           <font>size24</font>
-          <textcolor>Grey</textcolor>
-          <shadowcolor>Black</shadowcolor>
+          <textcolor>grey</textcolor>
+          <shadowcolor>black</shadowcolor>
         </control>
         <control type="label" description="Next">
           <posx>70r</posx>
@@ -442,7 +442,7 @@
           <label>$INFO[MusicPlayer.offset(1).Title]</label>
           <font>size33</font>
           <textcolor>Grey3</textcolor>
-          <shadowcolor>Black</shadowcolor>
+          <shadowcolor>black</shadowcolor>
         </control>
       </control>
     </control>-->

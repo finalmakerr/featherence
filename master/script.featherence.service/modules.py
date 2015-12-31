@@ -22,9 +22,18 @@ def mode0(admin, name, printpoint):
 	#dp = xbmcgui.DialogProgress()
 	#dp.create("featherence Texture-Cache-Removal", "Removing Datebase", "why are we here?[CR]test is here ssssssssssssssssssssssssssssssssssssssssssssssssssss ")
 	
-	from shared_modules3 import *
+	#from shared_modules3 import *
 	#dailymotion_test("")
-	getAPIdata('&dailymotion_pl=x2c745_SIMONVJ_reggae-playlist', "", "", "", "")
+	#api_vimeo_featherence
+	#category = 'documentary'
+	#url = 'https://api.vimeo.com/categories/'+category+'/channels'
+	#link = OPEN_URL(url)
+	#getAPIdata('&dailymotion_pl=x2c745_SIMONVJ_reggae-playlist', "", "", "", "")
+	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=70&value=40)')
+	addon = 'script.extendedinfo'
+	#if int(value) < 40: xbmc.executebuiltin('RunScript('+addon+',info='+input0+','+input2+'='+input+')')
+	#xbmc.executebuiltin('RunScript('+addon+',info=topratedtvshows','Premiered')
+	#comingsoon
 	
 def mode5(value, admin, name, printpoint):
 	'''------------------------------
@@ -300,7 +309,7 @@ def mode9(admin, name):
 		------------------------------'''
 		playerpaused = xbmc.getCondVisibility('Player.Paused')
 		if not playerpaused: xbmc.executebuiltin('Action(Pause)')
-		header = '[COLOR=Yellow]' + xbmc.getInfoLabel('$LOCALIZE[78946]') + '[/COLOR]'
+		header = '[COLOR=yellow]' + xbmc.getInfoLabel('$LOCALIZE[78946]') + '[/COLOR]'
 		message2 = xbmc.getInfoLabel('$LOCALIZE[78945]')
 		w = TextViewer_Dialog('DialogTextViewer.xml', "", header=header, text=message2)
 		w.doModal()
@@ -419,7 +428,8 @@ def mode12(admin, name, printpoint):
 	'''------------------------------
 	---UPDATE-LIVE-TV-PVR------------
 	------------------------------'''
-	if connected:
+	addon = 'plugin.video.israelive'
+	if xbmc.getCondVisibility('System.HasAddon('+addon+')'):
 		notification("UPDATE-LIVE-TV-PVR","","",1000)
 
 		path = os.path.join(addondata_path, 'plugin.video.israelive', '')
@@ -629,15 +639,15 @@ def mode21(value, admin, name, printpoint):
 			printpoint2 = "" ; printpoint2 = doFix_100_0(printpoint2, "100")
 			
 			if not "9" in printpoint2 and "0" in printpoint2:
-				dialogok(str78985.encode('utf-8') + '[CR]' + '[COLOR=Yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]', '$LOCALIZE[78983]', '$LOCALIZE[78982]',"")
-				returned = dialogyesno(str78985.encode('utf-8'), '[COLOR=Yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]' + '[CR]' + str78981.encode('utf-8')) #Manual fix is available ,
+				dialogok(localize(78985) + '[CR]' + '[COLOR=yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]', '$LOCALIZE[78983]', '$LOCALIZE[78982]',"")
+				returned = dialogyesno(localize(78985), '[COLOR=yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]' + '[CR]' + localize(78981)) #Manual fix is available ,
 				if returned == 'ok': printpoint2 = doFix_100(admin, "100", TEMP)
 				else: printpoint2 = printpoint2 + "8"
 				'''---------------------------'''
 				if "7" in printpoint2:
-					dialogok(str78986.encode('utf-8') + '[CR]' + '[COLOR=Yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]',str75209.encode('utf-8') % (localize(342)), '$LOCALIZE[75208]', "")
+					dialogok(localize(78986) + '[CR]' + '[COLOR=yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]',localize(75209,s=[localize(342)]), '$LOCALIZE[75208]', "")
 					'''---------------------------'''
-				elif "9" in printpoint2: dialogok(str78974.encode('utf-8') + '[CR]' + '[COLOR=Yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]',"", '$LOCALIZE[75210]', "") #Fix failed, Add movies to library
+				elif "9" in printpoint2: dialogok(localize(78974) + '[CR]' + '[COLOR=yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]',"", '$LOCALIZE[75210]', "") #Fix failed, Add movies to library
 				'''---------------------------'''
 		elif value == '2':
 			'''------------------------------
@@ -649,15 +659,15 @@ def mode21(value, admin, name, printpoint):
 			printpoint2 = "" ; printpoint2 = doFix_100_0(printpoint2, "101", TEMP)
 			'''---------------------------'''
 			if not "9" in printpoint2 and "0" in printpoint2:
-				dialogok(str78985.encode('utf-8') + '[CR]' + '[COLOR=Yellow]' + str74550.encode('utf-8') % (str20343.encode('utf-8')) + '[/COLOR]', '$LOCALIZE[78983]', '$LOCALIZE[78982]',"")
-				returned = dialogyesno(str78985.encode('utf-8'), '[COLOR=Yellow]' + str74550.encode('utf-8') % (str20343.encode('utf-8')) + '[/COLOR]' + '[CR]' + str78981.encode('utf-8')) #Manual fix is available ,
+				dialogok(localize(78985) + '[CR]' + '[COLOR=yellow]' + str74550.encode('utf-8') % (str20343.encode('utf-8')) + '[/COLOR]', '$LOCALIZE[78983]', '$LOCALIZE[78982]',"")
+				returned = dialogyesno(localize(78985), '[COLOR=yellow]' + str74550.encode('utf-8') % (str20343.encode('utf-8')) + '[/COLOR]' + '[CR]' + localize(78981)) #Manual fix is available ,
 				if returned == 'ok': printpoint2 = doFix_100(admin, "101")
 				else: printpoint2 = printpoint2 + "8"
 				'''---------------------------'''
 				if "7" in printpoint2:
-					dialogok(str78986.encode('utf-8') + '[CR]' + '[COLOR=Yellow]' + str74550.encode('utf-8') % (str20343.encode('utf-8')) + '[/COLOR]',str75209.encode('utf-8') % (str20343.encode('utf-8')), '$LOCALIZE[75208]', "")
+					dialogok(localize(78986) + '[CR]' + '[COLOR=yellow]' + str74550.encode('utf-8') % (str20343.encode('utf-8')) + '[/COLOR]',localize(75209,s=[localize(20343)]), '$LOCALIZE[75208]', "")
 					'''---------------------------'''
-				elif "9" in printpoint2: dialogok(str78974.encode('utf-8') + '[CR]' + '[COLOR=Yellow]' + str74550.encode('utf-8') % (str20343.encode('utf-8')) + '[/COLOR]',"", '$LOCALIZE[75210]', "") #Fix failed, Add movies to library
+				elif "9" in printpoint2: dialogok(localize(78974) + '[CR]' + '[COLOR=yellow]' + str74550.encode('utf-8') % (str20343.encode('utf-8')) + '[/COLOR]',"", '$LOCALIZE[75210]', "") #Fix failed, Add movies to library
 				'''---------------------------'''
 def mode22(value, admin, name, printpoint, ScreenSaver_Music):
 	'''------------------------------
@@ -754,8 +764,8 @@ def mode30(admin, name):
 		else: log = open(skinlog_file, 'r')
 		message = log.read()
 		log.close()
-		if xbmc.getInfoLabel('System.Language') == 'Hebrew': diaogtextviewer('[COLOR=Yellow]' + xbmc.getInfoLabel('System.AddonVersion(skin.featherence)') + '[/COLOR]' + localize(75687).decode('utf-8') + "-", message)
-		else: diaogtextviewer(localize(75687).decode('utf-8') + "-" + '[COLOR=Yellow]' + xbmc.getInfoLabel('System.AddonVersion(skin.featherence)') + '[/COLOR]', message)
+		if xbmc.getInfoLabel('System.Language') == 'Hebrew': diaogtextviewer('[COLOR=yellow]' + xbmc.getInfoLabel('System.AddonVersion(skin.featherence)') + '[/COLOR]' + localize(75687).decode('utf-8') + "-", message)
+		else: diaogtextviewer(localize(75687).decode('utf-8') + "-" + '[COLOR=yellow]' + xbmc.getInfoLabel('System.AddonVersion(skin.featherence)') + '[/COLOR]', message)
 		'''---------------------------'''
 
 def mode31(value, value2, value3, value4, admin, name, printpoint):
@@ -826,7 +836,7 @@ def mode32(value, admin, name, printpoint):
 					extra = extra + 'x' + space2 + str(x) + space + 'text_' + space2 + str(text_) + newline
 				text = "list.append('&sdarot=" + text + "')"
 			
-			elif 'plugin://plugin.video.wallaNew.video/?' in text:
+			elif 'plugin://plugin.video.wallaNew.video/?' in text and 1 + 1 == 3:
 				printpoint = printpoint + '4'
 				text = text.replace('plugin://plugin.video.wallaNew.video/?',"")
 				list = []
@@ -1184,64 +1194,103 @@ def mode70(value, admin, name, printpoint, property_temp):
 	---ExtendedInfo------------------
 	------------------------------'''
 	listitemlabel = xbmc.getInfoLabel('ListItem.Label')
+	listitemdbid = xbmc.getInfoLabel('ListItem.DBID')
 	listitemtitle = xbmc.getInfoLabel('ListItem.Title')
+	listitemseason = xbmc.getInfoLabel('ListItem.Season')
+	listitemdirector = xbmc.getInfoLabel('ListItem.Director')
+	listitemyear = xbmc.getInfoLabel('ListItem.Year')
+	listitemwriter = xbmc.getInfoLabel('ListItem.Writer')
+	property_listitemyear = xbmc.getInfoLabel('Window(home).Property(ListItemYear)')
+	property_listitemtvshowtitle = xbmc.getInfoLabel('Window(home).Property(ListItemTVShowTitle)')
 	listitemtvshowtitle = xbmc.getInfoLabel('ListItem.TVShowTitle')
 	
-	addon = 'script.extendedinfo' ; input = "" ; input2 = "" ; container50listitemlabel2 = "" ; property_temp_ = ""
+	addon = 'script.extendedinfo' ; input0 = "" ; input = "" ; input2 = "" ; container50listitemlabel2 = "" ; property_temp_ = ""
 	if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
 		if value == '0':
 			'''movie info'''
-			name = name + space2 + "Movie Info"
-			input2 = 'name'
 			if listitemtitle != "":
-				input = listitemtitle
+				input = 'info=extendedinfo,name=%s' % (listitemtitle)
 		elif value == '1':
-			'''tvshow info'''
-			name = name + space2 + "tvshow Info"
-			input2 = 'name'
-			if listitemtvshowtitle != "":
+			if localize(20373) in listitemlabel and listitemseason != "":
+				'''seasoninfo'''
+				printpoint = printpoint + "1"
+				input = 'info=seasoninfo,tvshow=%s,season=%s' % (listitemtvshowtitle,listitemseason)
+			elif listitemtvshowtitle != "":
+				'''extendedtvinfo'''
 				printpoint = printpoint + "2"
-				input = listitemtvshowtitle
+				input = 'info=extendedtvinfo,name=%s' % (listitemtvshowtitle)
 
 		elif value == '3':
-			'''Actor info'''
-			if property_temp != "" and dialogselectW:
-				printpoint = printpoint + "5"
-				name = name + space2 + "Actors"
-				if xbmc.getInfoLabel('$LOCALIZE[20347]') in property_temp:
-					property_temp_ = find_string(property_temp, property_temp[:1], xbmc.getInfoLabel('$LOCALIZE[20347]'))
-					str20347_len = len(xbmc.getInfoLabel('$LOCALIZE[20347]'))
-					property_temp_ = property_temp_[:-str20347_len]
-					input = property_temp_
-				else: input = property_temp
-				'''---------------------------'''
-		elif value == '4':
-			'''Director info'''
-			if property_temp != "" and dialogselectW:
+			if '&actor=' in property_temp:
+				'''Actor info'''
 				printpoint = printpoint + "1"
-				xbmc.executebuiltin('dialog.close(selectdialog)')
-				xbmc.sleep(500)
-				if property_temp == listitemdirector:
+				property_temp = property_temp.replace('&actor=',"")
+				if localize(20347) in property_temp:
 					printpoint = printpoint + "2"
-					name = name + space2 + "Director"
-					input = property_temp
-					if input != "":
-						printpoint = printpoint + "3"
-						input2 = 'director'
-					else: printpoint = printpoint + "4"
+					property_temp_ = find_string(property_temp, property_temp[:1], xbmc.getInfoLabel('$LOCALIZE[20347]'))
+					str20347_len = len(localize(20347))
+					property_temp_ = property_temp_[:-str20347_len]
+					property_temp = property_temp_
+				else: pass
+				input = 'info=extendedactorinfo,name=%s' % (property_temp)
+			elif '&director=' in property_temp:
+				printpoint = printpoint + "3"
+				property_temp = property_temp.replace('&director=',"")
+				#input = 'directormovies,director=%s' % (property_temp)
+				input = 'info=extendedinfo,director=%s' % (property_temp)
+				
+
+		elif value == '5':
+			'''Write info'''
+			input0 = 'writermovies'
+			input2 = 'writer'
+			if listitemwriter != "":
+				if ' / ' in listitemwriter and 1 + 1 == 3:
+					listitemwriter_ = listitemwriter.split(' / ')
+					list = []
+					for x in listitemwriter_:
+						list.append(x)
+					
+					if len(list) > 1:
+						returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+						if returned == -1: printpoint = printpoint + "9"
+						else:
+							printpoint = printpoint + "7"
+							input = 'info=writermovies,writer=%s' % (value)
+							input = 'info=extendedinfo,writer=%s' % (value)
+							'''---------------------------'''
+				else:
+					#input = 'info=writermovies,writer=%s' % (listitemwriter)
+					input = 'info=extendedinfo,writer=%s,writer=%s' % (listitemwriter)
 					'''---------------------------'''
+		elif value == '10':
+			input0 = 'ratedialog'
+			input2 = 'name'
+			input = listitemlabel		
+		elif value == '20':
+			#xbmc.executebuiltin('RunScript(script.extendedinfo,info=seasoninfo,tvshow='+listitemtvshowtitle+',season='+listitemseason+')')
+			xbmc.executebuiltin('RunScript(script.extendedinfo,info=extendedinfo,director='+listitemdirector+')')
+			#input0 = 'similartvshowstrakt'
+			#input2 = 'id'
+			#input = listitemdbid
+		
+		elif value == '40':
+			input0 = 'comingsoon'
+			
 		else: pass
-			
-			
+		
 		if input != "":
-			xbmc.executebuiltin('RunScript('+addon+',info=extendedinfo,'+input2+'='+input+')')
+			if dialogselectW:
+				xbmc.executebuiltin('dialog.close(selectdialog)') ; xbmc.sleep(500)
+			
+			xbmc.executebuiltin('RunScript('+addon+','+input+')')
 			count = 0 ; dialogvideonfoEW = xbmc.getCondVisibility('Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)')
 			while count < 10 and not dialogvideonfoEW and not xbmc.abortRequested:
 				count += 1
 				xbmc.sleep(500)
 				dialogvideonfoEW = xbmc.getCondVisibility('Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)')
 			if count < 10: printpoint = printpoint + "7"
-			else: printpoint = printpoint + "9"
+			else: printpoint = printpoint + "Q"
 		else:
 			printpoint = printpoint + "8"
 			notification_common("17")
@@ -1250,7 +1299,13 @@ def mode70(value, admin, name, printpoint, property_temp):
 		printpoint = printpoint + "9"
 		installaddon(admin, addon, update=True)
 	
-	text = "input" + space2 + input + space + space + "input2" + space2 + input2 + space + newline + "INFO" + space2 + "listitemlabel" + space2 + listitemlabel + newline + "listitemtvshowtitle" + space2 + listitemtvshowtitle + newline + "listitemtitle" + space2 + listitemtitle + newline + "listitemimdbnumber" + space2 + listitemimdbnumber + newline + "listitemdbid" + space2 + listitemdbid + newline + "containerfolderpath" + space2 + containerfolderpath + newline + "property_temp" + space2 + property_temp + space + "property_temp_" + space2 + str(property_temp_) + newline + "listitemdirector" + space2 + listitemdirector
+	text = "input" + space2 + input + newline + \
+	"INFO" + space2 + "listitemlabel" + space2 + listitemlabel + newline + "listitemtvshowtitle" + space2 + listitemtvshowtitle + newline + \
+	"listitemtitle" + space2 + listitemtitle + newline + "listitemimdbnumber" + space2 + listitemimdbnumber + newline + "listitemdbid" + space2 + listitemdbid + newline + \
+	'listitemseason' + space2 + str(listitemseason) + newline + \
+	"containerfolderpath" + space2 + containerfolderpath + newline + "property_temp" + space2 + property_temp + space + "property_temp_" + space2 + str(property_temp_) + newline + \
+	"listitemdirector" + space2 + listitemdirector + newline + \
+	"listitemwriter" + space2 + listitemwriter
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 	'''---------------------------'''
 
@@ -3184,6 +3239,7 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "ListItem.Overlay" + space2 + xbmc.getInfoLabel('ListItem.Overlay')
 			message = message + newline + "VAR-11156label" + space2 + xbmc.getInfoLabel('$VAR[11156label]')
 			message = message + newline + "ListItem.Duration" + space2 + xbmc.getInfoLabel('ListItem.Duration')
+			message = message + newline + "Container.Viewmode" + space2 + xbmc.getInfoLabel('Container.Viewmode')
 			message = message + newline + '---------------------------'
 			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('ListItem.Art(Poster)') #CUSTOM TEST
 			message = message + newline + "custom2" + space2 + xbmc.getInfoLabel('ListItem.IsCollection') #CUSTOM TEST
@@ -5527,28 +5583,25 @@ def mode512(value, admin, name, printpoint):
 		name = localize(443)
 		if systemplatformwindows: terminal('start /max www.google.co.il','')
 		elif systemplatformandroid: terminal('adb shell am start -a android.intent.action.VIEW -d http://www.google.co.il','')
-		else:
+		elif systemplatformlinux:
 			#returned = supportcheck(name, ["A","B"], 1, Intel=True, platform="456")
 			returned = 'ok'
 			if returned == "ok":
-				if connected or connected2 or connected3:
-					returned = dialogyesno(str79215,str79216)
-					if returned == "ok":
-						addon = 'browser.chromium-browser'
-						if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
-							notification(str79217, str79218, "", 4000)
-							settingschange('SystemSettings','input.enablemouse','1','no',xbmc.getInfoLabel('$LOCALIZE[14094]'),xbmc.getInfoLabel('$LOCALIZE[21369]'))
-							xbmc.sleep(1000)
-							if not systemplatformwindows: xbmc.executebuiltin('RunAddon(browser.chromium-browser)')
-							'''---------------------------'''
-						else: installaddon(admin, addon, update=True)
-					else:
-						notification_common("8")
-						#settingschange('SystemSettings','input.enablemouse','0','no',xbmc.getInfoLabel('$LOCALIZE[14094]'),xbmc.getInfoLabel('$LOCALIZE[21369]'))
+				returned = dialogyesno(localize(79215),localize(79216))
+				if returned == "ok":
+					addon = 'browser.chromium-browser'
+					if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
+						notification(localize(79217), localize(79218), "", 4000)
+						settingschange('SystemSettings','input.enablemouse','1','no',xbmc.getInfoLabel('$LOCALIZE[14094]'),xbmc.getInfoLabel('$LOCALIZE[21369]'))
+						xbmc.sleep(1000)
+						if not systemplatformwindows: xbmc.executebuiltin('RunAddon(browser.chromium-browser)')
 						'''---------------------------'''
-				else: notification_common("4")
-				'''---------------------------'''
-
+					else: installaddon(admin, addon, update=True)
+				else:
+					notification_common("8")
+					#settingschange('SystemSettings','input.enablemouse','0','no',xbmc.getInfoLabel('$LOCALIZE[14094]'),xbmc.getInfoLabel('$LOCALIZE[21369]'))
+					'''---------------------------'''
+		else: notification_common('25')
 def mode513(value, admin, name, printpoint):
 	'''------------------------------
 	---VIDEOS-BUTTON-----------------
@@ -5617,7 +5670,7 @@ def mode517(value, admin, name, printpoint):
 				containernumitems = xbmc.getInfoLabel('Container.NumItems')
 				try:
 					if int(containernumitems) < 2: printpoint = printpoint + "8"
-					elif containerfoldername != localize(19287): dialogok('[COLOR=Yellow]' + '$LOCALIZE[19051]' + '[/COLOR]', str79548 % (containernumitems), str79549, "")
+					elif containerfoldername != localize(19287): pass #dialogok('[COLOR=yellow]' + '$LOCALIZE[19051]' + '[/COLOR]', localize(79548, s=[containernumitems]), localize(79549), "")
 				except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
 
 			else: printpoint = printpoint + "9"
@@ -5764,7 +5817,7 @@ def mode521(value, admin, name, printpoint):
 						'''------------------------------
 						---LIVE-MATCHS-FOUND!------------
 						------------------------------'''
-						dialogok(localize(78917), localize(78919) + '[CR]' + '[COLOR=Yellow]' + "LIVE FOOTBALL" + '[/COLOR]',"","")
+						dialogok(localize(78917), localize(78919) + '[CR]' + '[COLOR=yellow]' + "LIVE FOOTBALL" + '[/COLOR]',"","")
 						'''---------------------------'''
 			text = "systemcurrentcontrol" + space2 + systemcurrentcontrol + space + "count" + space2 + str(count)
 			printlog(title='mode15', printpoint=printpoint, text=text, level=0, option="")
@@ -9921,9 +9974,9 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS):
 		if admin: notification("number2S:" + number2S,"","",2000)
 		number2N = int(number2S)
 		'''---------------------------'''
-		if number2N == 0: header = '[COLOR=Yellow]' + localize(79201) + space + localize(33006) + " - " + Skin_Version + '[/COLOR]'
-		elif number2N == 1: header = '[COLOR=Green]' + localize(79201) + space + addonString_servicefeatherence(5).encode('utf-8') + " - " + Skin_Version + '[/COLOR]'
-		elif number2N <= 7: header = '[COLOR=Purple]' + localize(79201) + space + addonString_servicefeatherence(6).encode('utf-8') + " - " + Skin_Version + '[/COLOR]'
+		if number2N == 0: header = '[COLOR=yellow]' + localize(79201) + space + localize(33006) + " - " + Skin_Version + '[/COLOR]'
+		elif number2N == 1: header = '[COLOR=green]' + localize(79201) + space + addonString_servicefeatherence(5).encode('utf-8') + " - " + Skin_Version + '[/COLOR]'
+		elif number2N <= 7: header = '[COLOR=purple]' + localize(79201) + space + addonString_servicefeatherence(6).encode('utf-8') + " - " + Skin_Version + '[/COLOR]'
 		else: header = ""
 		'''---------------------------'''
 		if os.path.exists(skinlog_file):
@@ -9948,8 +10001,8 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS):
 
 def doFix_100(admin, custom, TEMP):
 	'''---------------------------'''
-	if custom == "100": dialogok(str78971.encode('utf-8') + '[CR]' + '[COLOR=Yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]', '$LOCALIZE[78972]', '$LOCALIZE[78973]', '$LOCALIZE[78980]')
-	elif custom == "101": dialogok(str78971.encode('utf-8') + '[CR]' + '[COLOR=Yellow]' + str74550.encode('utf-8') % (str36903.encode('utf-8')) + '[/COLOR]', '$LOCALIZE[78972]', '$LOCALIZE[78973]', '$LOCALIZE[78980]')
+	if custom == "100": dialogok(localize(78971)+ '[CR]' + '[COLOR=yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]', '$LOCALIZE[78972]', '$LOCALIZE[78973]', '$LOCALIZE[78980]')
+	elif custom == "101": dialogok(localize(78971)+ '[CR]' + '[COLOR=yellow]' + str74550.encode('utf-8') % (str36903.encode('utf-8')) + '[/COLOR]', '$LOCALIZE[78972]', '$LOCALIZE[78973]', '$LOCALIZE[78980]')
 	libraryisscanningvideo = xbmc.getCondVisibility('Library.IsScanningVideo')
 	if libraryisscanningvideo: xbmc.executebuiltin('UpdateLibrary(video)')
 	#if not systemplatformwindows: UserBlock("ON")

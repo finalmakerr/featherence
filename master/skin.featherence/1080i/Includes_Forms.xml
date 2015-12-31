@@ -9,7 +9,7 @@
     <aligny>center</aligny>
 	<width>50</width>
 	<height>50</height>
-	<focusedcolor>Yellow</focusedcolor>	
+	<focusedcolor>yellow</focusedcolor>	
 	<font>size24</font>
 	<textoffsetx>0</textoffsetx>
     <width>75</width>	
@@ -67,7 +67,7 @@
       <height>44</height>
       <width>80</width>
       <font>size30</font>
-      <textcolor>White</textcolor>
+      <textcolor>white</textcolor>
       <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
     </control>
 	</control>
@@ -79,28 +79,34 @@
   <include name="ImageR1">
     <aspectratio align="right">keep</aspectratio>
   </include>
+  <include name="ImageL2">
+    <aspectratio align="left">stretch</aspectratio>
+  </include>
+  <include name="ImageR2">
+    <aspectratio align="right">stretch</aspectratio>
+  </include>
   <include name="LabelC1" description="">
     <align>center</align>
 	<font>size28</font>
 	<shadowcolor>black</shadowcolor>
-	<textcolor>White2</textcolor>
+	<textcolor>white2</textcolor>
   </include>
   <include name="LabelL1" description="">
     <align>left</align>
 	<font>size28</font>
-	<textcolor>White2</textcolor>
+	<textcolor>white2</textcolor>
 	<shadowcolor>black</shadowcolor>
   </include>
   <include name="LabelR1" description="">
     <align>right</align>
 	<font>size28</font>
-	<textcolor>White2</textcolor>
+	<textcolor>white2</textcolor>
 	<shadowcolor>black</shadowcolor>
   </include>
   <include name="LabelJ1" description="">
 	<align>justify</align>
 	<font>size28</font>
-	<textcolor>White2</textcolor>
+	<textcolor>white2</textcolor>
   </include>
   <include name="LabelC2" description="(טקסט2)">
     <align>center</align>
@@ -158,57 +164,57 @@
     <align>center</align>
 	<aligny>center</aligny>
 	<font>size36B</font>
-	<shadowcolor>Black</shadowcolor>
-	<textcolor>White2</textcolor>
+	<shadowcolor>black</shadowcolor>
+	<textcolor>white2</textcolor>
   </include>
   <include name="LabelC11" description="(כותרת2)">
     <align>center</align>
 	<aligny>center</aligny>
 	<font>Size42B</font>
-	<shadowcolor>Black</shadowcolor>
-	<textcolor>White2</textcolor>
+	<shadowcolor>black</shadowcolor>
+	<textcolor>white2</textcolor>
   </include>
   <include name="LabelL11" description="(כותרת2)">
     <align>left</align>
 	<aligny>center</aligny>
 	<font>Size42B</font>
-	<shadowcolor>Black</shadowcolor>
-	<textcolor>White2</textcolor>
+	<shadowcolor>black</shadowcolor>
+	<textcolor>white2</textcolor>
   </include>
   <include name="LabelR11" description="(כותרת2)">
     <align>right</align>
 	<aligny>center</aligny>
 	<font>Size42B</font>
-	<shadowcolor>Black</shadowcolor>
-	<textcolor>White2</textcolor>
+	<shadowcolor>black</shadowcolor>
+	<textcolor>white2</textcolor>
   </include>
   <include name="LabelL12" description="(כותרת3)">
     <align>left</align>
 	<aligny>center</aligny>
 	<font>size24B</font>
-	<shadowcolor>Black</shadowcolor>
-	<textcolor>White2</textcolor>
+	<shadowcolor>black</shadowcolor>
+	<textcolor>white2</textcolor>
   </include>
   <include name="LabelC12" description="(כותרת3)">
     <align>center</align>
 	<aligny>center</aligny>
 	<font>size24B</font>
-	<shadowcolor>Black</shadowcolor>
-	<textcolor>White2</textcolor>
+	<shadowcolor>black</shadowcolor>
+	<textcolor>white2</textcolor>
   </include>
   <include name="LabelR12" description="(כותרת3)">
     <align>right</align>
 	<aligny>center</aligny>
 	<font>size24B</font>
-	<shadowcolor>Black</shadowcolor>
-	<textcolor>White2</textcolor>
+	<shadowcolor>black</shadowcolor>
+	<textcolor>white2</textcolor>
   </include>
   <include name="LabelC13" description="(כותרת3)">
     <align>center</align>
 	<aligny>center</aligny>
 	<font>size21B</font>
-	<shadowcolor>Black</shadowcolor>
-	<textcolor>White2</textcolor>
+	<shadowcolor>black</shadowcolor>
+	<textcolor>white2</textcolor>
   </include>
   
   
@@ -217,10 +223,10 @@
     <textoffsetx>-</textoffsetx>
     <align>center</align>
     <aligny>center</aligny>
-	<textcolor>White2</textcolor>
-    <focusedcolor>Yellow</focusedcolor>
+	<textcolor>white2</textcolor>
+    <focusedcolor>yellow</focusedcolor>
 	<font>size34</font>
-    <disabledcolor>Grey</disabledcolor>
+    <disabledcolor>grey</disabledcolor>
     <texturenofocus>-</texturenofocus>
   </include>
   <include name="ButtonL1" description="()">
@@ -271,7 +277,7 @@
 	<width>480</width>
     <textoffsetx>20</textoffsetx>
     <align>left</align>
-	<textcolor>White2</textcolor>
+	<textcolor>white2</textcolor>
 	<font>size18</font>
     <!--<texturenofocus>-</texturenofocus>-->
   </include>
@@ -279,7 +285,7 @@
 	<width>480</width>
     <textoffsetx>60</textoffsetx>
     <align>right</align>
-	<disabledcolor>Grey</disabledcolor>
+	<disabledcolor>grey</disabledcolor>
     <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
     <texturefocus border="20">buttons/ButtonE.png</texturefocus>
     <alttexturefocus border="20">buttons/ButtonE.png</alttexturefocus>
@@ -288,7 +294,7 @@
   <include name="ButtonC10" description="מדף עליון">
 	<height>40</height>
 	<width>300</width>
-	<textcolor>White2</textcolor>
+	<textcolor>white2</textcolor>
 	<textoffsetx>10</textoffsetx>
 	<font>size24B</font>
 	<radioposy>7</radioposy>
@@ -300,7 +306,7 @@
   <include name="ButtonC10_" description="מדף עליון">
 	<height>40</height>
 	<width>300</width>
-	<textcolor>White2</textcolor>
+	<textcolor>white2</textcolor>
 	<textoffsetx>10</textoffsetx>
 	<font>size24B</font>
 	<texturenofocus border="23">buttons/ButtonCF.png</texturenofocus>
@@ -403,9 +409,23 @@
    <include name="Control_Pos14" description="">
      <height>230</height>
    </include>
+   <include name="Control_Pos34" description="">
+	 <posx>185</posx>
+   </include>
+   <include name="Control_Pos35" description="">
+	 <posx>-35</posx>
+   </include>
+   <include name="Control_Pos36" description="">
+	 <posx>135</posx>
+   </include>
+   <include name="Control_Pos37" description="">
+	 <posx>5</posx>
+   </include>
+   <include name="Control_Pos38" description="">
+	 <posx>250</posx>
+   </include>
    <include name="Control_Pos39" description="">
-     <posx>20</posx>
-	 <width>390</width>
+	 <width>430</width>
    </include>
    <include name="Control_Pos40" description="">
 	 <posy>546</posy>
@@ -435,7 +455,7 @@
 	 <posx>1450</posx>
    </include>
    <include name="Control_Pos47" description="">
-	 <posx>60</posx>
+	 <posx>55</posx>
    </include>
    <include name="Control_Pos48" description="">
 	 <posx>-425</posx>

@@ -19,7 +19,7 @@
 		<onup>520</onup>
 		
 		<include>SquareShortcutsCommons</include>
-		<visible>!Control.IsVisible(54)</visible>
+		<visible>!StringCompare(Container.Viewmode,$LOCALIZE[31015])</visible>
 		
 		<visible>[Container(9000).Position(3) | Container(50).Position(3)] | [[Container(9000).Position(2) | Container(50).Position(2)] + [SubString(Container(9000).ListItem(1).Label,$LOCALIZE[342]) | SubString(Container(50).ListItem(1).Label,$LOCALIZE[342]) | SubString(Container(9000).ListItem(1).Label,$LOCALIZE[20343]) | SubString(Container(50).ListItem(1).Label,$LOCALIZE[20343])]]</visible>
 		<content>
@@ -30,9 +30,9 @@
 	  <control type="panel" id="52" description="WidgetContent_52">
 		<onup>520</onup>
 		<include>SquareShortcutsCommons</include>
-		<visible>!Control.IsVisible(54) + !Control.IsVisible(53)</visible>
+		<visible>!StringCompare(Container.Viewmode,$LOCALIZE[31015]) + !Control.IsVisible(53)</visible>
 		
-		<visible>[Container(9000).Position(2) | Container(50).Position(2)] | [[Container(9000).Position(1) | Container(50).Position(1)] + [SubString(Container(9000).ListItem(1).Label,$LOCALIZE[342]) | SubString(Container(50).ListItem(1).Label,$LOCALIZE[342]) | SubString(Container(9000).ListItem(1).Label,$LOCALIZE[20343]) | SubString(Container(50).ListItem(1).Label,$LOCALIZE[20343])]] | [[Container(9000).Position(0) | Container(9000).Position(1) | Container(50).Position(0) | Container(50).Position(1)] + !Control.IsVisible(54) + !Control.IsVisible(53)]</visible>
+		<visible>[Container(9000).Position(2) | Container(50).Position(2)] | [[Container(9000).Position(1) | Container(50).Position(1)] + [SubString(Container(9000).ListItem(1).Label,$LOCALIZE[342]) | SubString(Container(50).ListItem(1).Label,$LOCALIZE[342]) | SubString(Container(9000).ListItem(1).Label,$LOCALIZE[20343]) | SubString(Container(50).ListItem(1).Label,$LOCALIZE[20343])]] | [[Container(9000).Position(0) | Container(9000).Position(1) | Container(50).Position(0) | Container(50).Position(1)] + !StringCompare(Container.Viewmode,$LOCALIZE[31015]) + !Control.IsVisible(53)]</visible>
 		<content>
 		  <include>SubContent_321</include>
 		  
@@ -79,7 +79,7 @@
 			  <height>30</height>
 			  <posx>57</posx>
 			  <posy>377</posy>
-			  <textcolor>White2</textcolor>
+			  <textcolor>white2</textcolor>
 			  <scroll>false</scroll>
 			  <scrollspeed>1</scrollspeed>
 			  <visible>!IsEmpty(ListItem.Label)</visible>
@@ -91,7 +91,7 @@
 			<width>345</width>
 			<height>30</height>
 			<font>size26</font>
-			<textcolor>White2</textcolor>
+			<textcolor>white2</textcolor>
 			<label>$INFO[ListItem.label2]</label>
 			<align>center</align>
 		  </control>
@@ -130,7 +130,7 @@
 		  <height>30</height>
 		  <posx>57</posx>
 		  <posy>377</posy>
-		  <textcolor>White2</textcolor>
+		  <textcolor>white2</textcolor>
 		  <scroll>false</scroll>
 		  <scrollspeed>1</scrollspeed>
 		  <visible>!IsEmpty(ListItem.Label)</visible>

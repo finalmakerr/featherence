@@ -231,6 +231,7 @@
 		<height>40</height>
 		<aspectratio align="center" aligny="center">keep</aspectratio>
 		<texture>$INFO[Window.Property(WeatherProviderLogo)]</texture>
+		<visible>false</visible>
 	</control>
   </controls>
 </window>

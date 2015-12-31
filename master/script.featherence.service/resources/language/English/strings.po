@@ -75,8 +75,8 @@ msgid "Allow Random TV Mode"
 msgstr "אפשר מצב טלוויזיה אקראי"
 
 msgctxt "#18
-msgid "[CR][CR][COLOR=Red]Changes will take effect upon reboot![/COLOR]"
-msgstr "[CR][CR][COLOR=Red]השינויים יכנסו לתוקף בהפעלה מחדש![/COLOR]"
+msgid "[CR][CR][COLOR=red]Changes will take effect upon reboot![/COLOR]"
+msgstr "[CR][CR][COLOR=red]השינויים יכנסו לתוקף בהפעלה מחדש![/COLOR]"
 
 msgctxt "#19
 msgid "No changes were made"
@@ -328,7 +328,7 @@ msgstr "נגן וידאו במסך מלא."
 
 msgctxt "#84
 msgid "Choose this button if you want to clean your cache since day 1.[CR]This option will also remove your database folder.[CR][CR]Choose this option in order to obtain extra space on your device or start fresh.[/COLOR]"
-msgstr "בחר בכפתור זה אם ברצונך לנקות את כל התמונות והרקעים שהורדו למכשירך.[CR]הפעולה גם תסיר את בסיסי הנתונים עבור סרטים, סדרות, מוזיקה וטלוויזיה חיה.[CR][CR][COLOR=Red]השתמש באפשרות זו בכדי לפנות מקום במכשיר או בכדי להקים בסיסי נתונים חדשים.[/COLOR]"
+msgstr "בחר בכפתור זה אם ברצונך לנקות את כל התמונות והרקעים שהורדו למכשירך.[CR]הפעולה גם תסיר את בסיסי הנתונים עבור סרטים, סדרות, מוזיקה וטלוויזיה חיה.[CR][CR][COLOR=red]השתמש באפשרות זו בכדי לפנות מקום במכשיר או בכדי להקים בסיסי נתונים חדשים.[/COLOR]"
 
 msgctxt "#85
 msgid "Free YouTube search"

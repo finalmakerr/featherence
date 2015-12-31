@@ -28,7 +28,7 @@
         <posy>66</posy>
         <width>1080</width>
         <align>center</align>
-        <textcolor>Grey</textcolor>
+        <textcolor>grey</textcolor>
         <label>21422</label>
       </control>
       <control type="group" id="9001">

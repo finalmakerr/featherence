@@ -19,7 +19,7 @@
     <onload condition="Skin.HasSetting(Admin3) + Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Window.IsVisible(Home.xml) + Control.IsVisible(9000) + [!IntegerGreaterThan(Container(9000).NumItems,4) | StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,) | IsEmpty(Control.GetLabel(700105))]">Notification(TESTING,,2000)</onload>
 	<onload condition="Window.IsVisible(Home.xml) + Control.IsVisible(9000) + [!IntegerGreaterThan(Container(9000).NumItems,4) | StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,) | IsEmpty(Control.GetLabel(700105))]">RunScript(script.featherence.service,,?mode=213&amp;value=1)</onload>
 	<onload condition="Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(9000) + [StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,) | IsEmpty(Control.GetLabel(700105))]">RunScript(script.featherence.service,,?mode=213&amp;value=1)</onload>
-	<onload condition="Window.IsVisible(CustomHomeCustomizer2.xml) + Control.IsVisible(51) + [StringCompare(Container(51).NumItems,0) | StringCompare(Container(51).ListItem(0).Label,)]">RunScript(script.featherence.service,,?mode=213&amp;value=3)</onload>
+	<onload condition="Window.IsVisible(CustomHomeCustomizer2.xml) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + [StringCompare(Container(51).NumItems,0) | StringCompare(Container(51).ListItem(0).Label,)]">RunScript(script.featherence.service,,?mode=213&amp;value=3)</onload>
 	<onload condition="Window.IsVisible(MyVideoNav.xml) + IsEmpty(Control.GetLabel(111)) + !Control.IsVisible(7021) + IsEmpty(Control.GetLabel(700105))">RunScript(script.featherence.service,,?mode=213&amp;value=4)</onload>
   </include>
   
@@ -28,7 +28,7 @@
 	  <animation condition="Window.IsVisible(Home.xml) + System.IdleTime(3) + [Control.HasFocus(311) | Control.HasFocus(312) | System.IdleTime(5)]" effect="fade" start="100" end="0" delay="0" time="700" reversible="false">Conditional</animation>
 	  <visible>[Window.IsVisible(Home.xml) + !Skin.HasSetting(widget) + [Control.IsVisible(311) | Control.IsVisible(312)]] | !Window.IsVisible(Home.xml)</visible>
 	  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml) | !Window.IsVisible(CustomHomeCustomizer.xml)</visible>
-	  <visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() | ![!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)]</visible>
+	  <visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
 	  <visible>!Window.IsVisible(Custom1173.xml)</visible>
 	  <height>40</height>
 	  <posx>20</posx>
@@ -39,7 +39,7 @@
 	  <ondown condition="Control.IsVisible(7011)">7017</ondown>
 	  <ondown condition="Control.IsVisible(700)">700</ondown>
 	  <ondown condition="Control.IsVisible(9000)">9000</ondown>
-	  <ondown condition="Control.IsVisible(50)">50</ondown>
+	  <ondown condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])">50</ondown>
 	  <onright condition="">noop</onright>
 	  <onright condition="Control.IsVisible(312)">312</onright>
 	  <onleft condition="">noop</onleft>
@@ -86,7 +86,7 @@
 		</control>
 	</control>
     <control type="group" id="700" description="Shelf items שורה עליונה בכחול">
-	  <visible>Container(9000).Row(0) + !Container(9000).Row(1) + !Container(9000).HasPrevious() | ![!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)]</visible>
+	  <visible>Container(9000).Row(0) + !Container(9000).Row(1) + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
 	  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + Control.HasFocus(9000)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-300,0">Conditonal</animation>
 	  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + Control.HasFocus(9000)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="300,0">Conditonal</animation>
       <include description="פנל מדף סרטים שנוספו לאחרונה" condition="!Skin.HasSetting(MoviesShelfWL)">Movies_RA</include>
@@ -107,7 +107,7 @@
 	  <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] + !Window.IsVisible(CustomHomeCustomizer2.xml)" effect="slide" start="0,0" end="0,-551" time="220">Conditonal</animation>
 	  <animation condition="Window.IsVisible(CustomHomeCustomizer2.xml) + [!Container(51).Row(0) + !Container(51).Row(1) | !Container(51).HasPrevious()]" effect="fade" start="100" end="0" time="220">Conditonal</animation>
 	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
-	  <visible>!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)</visible>
+	  <visible>Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)</visible>
 	  <posx>30</posx>
 	  <posy>581</posy>
 	  <width>1850</width>
@@ -120,7 +120,7 @@
 	  <onup>520</onup>
 	  <ondown>noop</ondown>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
-	  <include condition="!Skin.String(MenuDesign)" description="פנל">MenuDesign_Home</include>
+	  <include condition="Skin.String(MenuDesign,0)" description="פנל">MenuDesign_Home</include>
 	  <include condition="Skin.String(MenuDesign,1)" description="פנל2">MenuDesign_Home1</include>
 	  <content>
 		<include condition="!Window.IsVisible(LoginScreen)">Content_Home</include>
@@ -131,7 +131,7 @@
 	
 	<control type="list" id="9000" description="מאוזן">
 	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
-	  <visible>Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)</visible>
+	  <visible>Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)</visible>
 	  <posx>30</posx>
 	  <posy>820</posy>
 	  <width>1860</width>
@@ -146,7 +146,7 @@
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
 	  <orientation>horizontal</orientation>
 	  <include condition="Skin.String(MenuDesign,2)" description="מאוזן">MenuDesign_Home</include>
-	  <include condition="Skin.String(MenuDesign,3)" description="מאוזן2">MenuDesign_Home1</include>
+	  <include condition="Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)" description="מאוזן2">MenuDesign_Home1</include>
 	  <content>
 		<include condition="!Window.IsVisible(LoginScreen)">Content_Home</include>
 		<include condition="Window.IsVisible(LoginScreen)">Content_LoginScreen</include>
@@ -857,7 +857,7 @@
 		  <textcolor>$VAR[IconFocusColor]</textcolor>
 		  <animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
           <animation effect="fade" start="80" end="100" time="220" delay="0">Focus</animation>
-          <textcolor>Yellow</textcolor>
+          <textcolor>yellow</textcolor>
 		  <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
 		  <posx>10</posx>

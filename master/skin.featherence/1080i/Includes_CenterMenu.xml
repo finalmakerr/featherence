@@ -15,7 +15,8 @@
 	<control type="group" description="חלון הגדרות כפתור">
       <posx>720</posx>
       <posy>340</posy>
-	  <animation condition="Window.IsVisible(FileBrowser.xml)" effect="slide" start="0,0" end="700,100" time="0,0">Conditional</animation>
+	  <!--<animation condition="Window.IsVisible(FileBrowser.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="700,100" time="0,0">Conditional</animation>
+	  <animation condition="Window.IsVisible(FileBrowser.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-700,100" time="0,0">Conditional</animation>-->
       <control type="image" description="מסגרת">
         <include>Fade_CenterMenuOverlay</include>
 		<height>410</height>
@@ -25,20 +26,23 @@
       </control>
 	  <include>ArrowsUpDown</include>
 	  <control type="grouplist" id="9005">
-		<onright condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(60)">60</onright>
-		<onleft condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(450)">450</onleft>
+		<!--<onright condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(60)">60</onright>-->
+		<onleft condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(450) + !StringCompare(System.Language,Hebrew)">450</onleft>
+		<onright condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(450) + StringCompare(System.Language,Hebrew)">450</onright>
+		
 		<onup>9005</onup>
 		<ondown>9005</ondown>
 		<height>355</height>
 		<width>480</width>
 		<scrolltime>40</scrolltime>
-		<control type="button" id="1" description="חזור"> 
+		<control type="button" id="0" description="חזור"> 
 		  <height>75</height>
 		  <label>--></label>
 		  <onclick>Close</onclick>
 		  <visible>false</visible>
 		</control>
-		<include description="בחירת קבצים">CenterMenuContent_FileBrowser</include>
+		<include description="בחירת קבצים" condition="true">CenterMenuContent_FileBrowser</include>
+		<include description="מידע PVR" condition="Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml)">CenterMenuContent_DialogPVRGuideInfo</include>
 	  </control>
     </control>
   </include>

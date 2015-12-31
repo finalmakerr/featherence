@@ -55,7 +55,7 @@
         </control>
         <control type="label" description="eng">
           <align>left</align>
-		  <textcolor>Yellow</textcolor>
+		  <textcolor>yellow</textcolor>
 		  <include>LabelC1</include>
           <height>54</height>
           <info>ListItem.Label2</info>
@@ -66,7 +66,7 @@
         </control>
         <control type="label" description="heb">
           <align>right</align>
-		  <textcolor>Yellow</textcolor>
+		  <textcolor>yellow</textcolor>
 		  <include>LabelC1</include>
 		  <info>ListItem.Label</info>
           <height>54</height>

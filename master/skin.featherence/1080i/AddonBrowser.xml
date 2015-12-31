@@ -5,8 +5,8 @@
   <views>50,51,54,57,58</views>
   <controls>
     <include>Backgrounds3</include>
-    <include>ViewDesign_50</include>
-	<include>ViewDesign_51</include>
+    <include>ViewDesign_51</include>
+	<include>ViewDesign_50</include>
 	<include>ViewDesign_54</include>
 	<include>ViewDesign_57</include>
 	<include>ViewDesign_58</include>

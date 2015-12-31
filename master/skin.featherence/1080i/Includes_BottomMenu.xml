@@ -44,14 +44,14 @@
 	    <include>LabelC1</include>
 	    <height>60</height>
 	    <width>600</width>
-		<label>$LOCALIZE[20186]</label> <!--[CR][COLOR Red]$INFO[Skin.String(DialogSelectSources)]-->
+		<label>$LOCALIZE[20186]</label> <!--[CR][COLOR red]$INFO[Skin.String(DialogSelectSources)]-->
 		<wrapmultiline>true</wrapmultiline>
 	  </control>
 	  <control type="textbox" id="1500" description="טיפים">
 	    <animation condition="true" effect="slide" start="0,0" end="10,0">Conditional</animation>
 	    <visible>!Window.IsVisible(DialogProgress.xml) + !Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogOK.xml)</visible>
 		<visible>!IsEmpty(Window(home).Property(tips) + System.IdleTime(2) + !Skin.HasSetting(tips)</visible>
-		<textcolor>Grey2</textcolor>
+		<textcolor>grey2</textcolor>
 	    <include>LabelC2</include>
 	    <height>200</height>
 		<posx>0</posx>
@@ -71,7 +71,7 @@
 
   <include name="BottomMenuDialogYesNo">
       <control type="label" id="1" description="כותרת">
-		<textcolor>Yellow</textcolor>
+		<textcolor>yellow</textcolor>
 		<aligny>top</aligny>
 		<include>LabelC1</include>
 		<wrapmultiline>true</wrapmultiline>
@@ -106,7 +106,7 @@
   <include name="BottomMenuDialogOk" description="חלון שגיאה">
 	  <visible>!Window.IsVisible(DialogYesNo.xml)</visible>
 	  <control type="label" id="1" description="כותרת">
-		<textcolor>Yellow</textcolor>
+		<textcolor>yellow</textcolor>
 		<aligny>top</aligny>
 		<include>LabelC1</include>
 		<wrapmultiline>true</wrapmultiline>

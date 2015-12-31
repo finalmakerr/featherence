@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="126">
+<window>
   <defaultcontrol always="true">450</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <onload>Dialog.Close(1175)</onload>
+  <onload condition="Window.IsVisible(Custom1175.xml)">Dialog.Close(1175)</onload>
   <controls>
 	  <include>BlackBackground2</include>
-	  <include>ViewDesign_450</include>
 	  <include>MenuDesign_Center</include>
+	  <include>ViewDesign_450</include>
+	  <!--<include>ViewDesign_451</include>-->
 	  <include>TopVideoInformation</include>
 	  <include>ScrollBar</include>
 	  <include>TopInformation</include>

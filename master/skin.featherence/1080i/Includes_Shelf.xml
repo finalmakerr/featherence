@@ -48,7 +48,7 @@
 		  <height>30</height>
 		  <posx>57</posx>
 		  <posy>-2</posy>
-		  <textcolor>White2</textcolor>
+		  <textcolor>white2</textcolor>
 		  <visible>!IsEmpty(ListItem.Property(year))</visible>
 		  <visible>false</visible>
 		  <width>265</width>
@@ -68,7 +68,7 @@
 			  <font>size28</font>
 			  <height>30</height>
 			  <width>270</width>
-			  <textcolor>White2</textcolor>
+			  <textcolor>white2</textcolor>
 			  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
 			<control type="label" description="שם הסרט">
@@ -76,7 +76,7 @@
 			  <label>$INFO[ListItem.Property(title)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 			  <font>size18</font>
 			  <height>30</height>
-			  <textcolor>White2</textcolor>
+			  <textcolor>white2</textcolor>
 			  <scroll>false</scroll>
 			  <width>270</width>
 			  <visible>!IsEmpty(ListItem.Property(title)) + Control.IsVisible(311)</visible>
@@ -89,7 +89,7 @@
 		  <height>30</height>
 		  <posx>57</posx>
 		  <posy>395</posy>
-		  <textcolor>White2</textcolor>
+		  <textcolor>white2</textcolor>
 		  <scroll>false</scroll>
 		  <scrollspeed>1</scrollspeed>
 		  <visible>!IsEmpty(ListItem.Property(title))</visible>
@@ -161,7 +161,7 @@
 				  <label>$VAR[VideoInHours]</label>
 				  <posx>285</posx>
 				  <posy>45</posy>
-				  <textcolor>Black</textcolor>
+				  <textcolor>black</textcolor>
 				  <visible>IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
 				  <width>70</width>
 				</control>
@@ -170,7 +170,7 @@
 				  <posx>285</posx>
 				  <posy>45</posy>
 				  <label>$VAR[VideoInMins]</label>
-				  <textcolor>Black</textcolor>
+				  <textcolor>black</textcolor>
 				  <visible>IntegerGreaterThan(ListItem.Property(runtime),4.5) + !IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
 				  <width>70</width>
 				</control>			
@@ -180,7 +180,7 @@
 				  <font>size18</font>
 				  <posx>285</posx>
 				  <posy>70</posy>
-				  <textcolor>Black</textcolor>
+				  <textcolor>black</textcolor>
 				  <visible>IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
 				  <width>70</width>
 				</control>
@@ -190,7 +190,7 @@
 				  <font>size18</font>
 				  <posx>510</posx>
 				  <posy>-239</posy>
-				  <textcolor>White2</textcolor>
+				  <textcolor>white2</textcolor>
 				  <visible>IntegerGreaterThan(ListItem.Property(runtime),4.5) + !IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
 				  <width>70</width>
 				</control>
@@ -220,7 +220,7 @@
 				  <font>size28</font>
 				  <height>30</height>
 				  <width>270</width>
-				  <textcolor>White2</textcolor>
+				  <textcolor>white2</textcolor>
 				  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
 				<control type="label" description="שם הסרט">
@@ -228,7 +228,7 @@
 				  <label>$INFO[ListItem.Property(title)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 				  <font>size18</font>
 				  <height>30</height>
-				  <textcolor>Yellow</textcolor>
+				  <textcolor>yellow</textcolor>
 				  <scroll>false</scroll>
 				  <width>270</width>
 				  <visible>!IsEmpty(ListItem.Property(title)) + Control.IsVisible(311)</visible>
@@ -568,7 +568,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.1.Season)] E$INFO[Window(Home).Property(RecentEpisode.1.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.1.Year)]</property>
-			<property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.1.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.1.Episode)][/COLOR]</property>
+			<property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.1.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.1.Episode)][/COLOR]</property>
             <thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.1)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.1.Runtime)]</property>
@@ -584,7 +584,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.2.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.2.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.2.Season)] E$INFO[Window(Home).Property(RecentEpisode.2.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.2.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.2.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.2.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.2.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.2.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.2)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.2.Runtime)]</property>
@@ -600,7 +600,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.3.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.3.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.3.Season)] E$INFO[Window(Home).Property(RecentEpisode.3.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.3.Year)]</property>
-			<property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.3.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.3.Episode)][/COLOR]</property>
+			<property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.3.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.3.Episode)][/COLOR]</property>
             <thumb>$INFO[Window(Home).Property(RecentEpisode.3.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.3)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.3.Runtime)]</property>
@@ -616,7 +616,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.4.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.4.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.4.Season)] E$INFO[Window(Home).Property(RecentEpisode.4.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.4.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.4.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.4.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.4.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.4.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.4)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.4.Runtime)]</property>
@@ -632,7 +632,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.5.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.5.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.5.Season)] E$INFO[Window(Home).Property(RecentEpisode.5.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.5.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.5.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.5.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.5.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.5.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecentEpisode.5.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.5)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.5.Runtime)]</property>
@@ -648,7 +648,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.6.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.6.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.6.Season)] E$INFO[Window(Home).Property(RecentEpisode.6.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.6.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.6.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.6.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.6.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.6.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecentEpisode.6.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.6)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.6.Runtime)]</property>
@@ -664,7 +664,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.7.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.7.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.7.Season)] E$INFO[Window(Home).Property(RecentEpisode.7.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.7.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.7.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.7.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.7.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.7.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecentEpisode.7.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.7)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.7.Runtime)]</property>
@@ -680,7 +680,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.8.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.8.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.8.Season)] E$INFO[Window(Home).Property(RecentEpisode.8.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.8.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.8.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.8.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.8.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.8.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecentEpisode.8.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.8)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.8.Runtime)]</property>
@@ -696,7 +696,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.9.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.9.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.9.Season)] E$INFO[Window(Home).Property(RecentEpisode.9.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.9.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.9.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.9.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.9.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.9.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.9)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.9.Runtime)]</property>
@@ -712,7 +712,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.10.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.10.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.10.Season)] E$INFO[Window(Home).Property(RecentEpisode.10.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.10.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.10.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecentEpisode.10.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.10.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.10.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.10)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.10.Runtime)]</property>
@@ -745,7 +745,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.1.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.1.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.1.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.1.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.1.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.1.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.1.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.1)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.1.Runtime)]</property>
@@ -761,7 +761,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.2.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.2.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.2.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.2.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.2.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.2.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.2.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.2.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.2)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.2.Runtime)]</property>
@@ -777,7 +777,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.3.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.3.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.3.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.3.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.3.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.3.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.3.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.3.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.3)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.3.Runtime)]</property>
@@ -793,7 +793,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.4.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.4.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.4.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.4.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.4.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.4.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.4.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.4.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.4)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.4.Runtime)]</property>
@@ -809,7 +809,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.5.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.5.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.5.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.5.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.5.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.5.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.5.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.5.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.5)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.5.Runtime)]</property>
@@ -825,7 +825,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.6.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.6.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.6.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.6.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.6.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.6.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.6.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.6.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.6)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.6.Runtime)]</property>
@@ -841,7 +841,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.7.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.7.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.7.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.7.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.7.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.7.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.7.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.7.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.7)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.7.Runtime)]</property>
@@ -857,7 +857,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.8.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.8.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.8.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.8.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.8.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.8.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.8.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.8.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.8)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.8.Runtime)]</property>
@@ -873,7 +873,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.9.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.9.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.9.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.9.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.9.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.9.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.9.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.9.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.9)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.9.Runtime)]</property>
@@ -889,7 +889,7 @@
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.10.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.10.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.10.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.10.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.10.Year)]</property>
-            <property name="se">S: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.10.Season)][/COLOR] • E: [COLOR Yellow]$INFO[Window(Home).Property(RecommendedEpisode.10.Episode)][/COLOR]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.10.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.10.Episode)][/COLOR]</property>
 			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.poster))]</thumb>
 			<onclick>RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.10)</onclick>
 			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.10.Runtime)]</property>

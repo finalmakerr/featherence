@@ -6,6 +6,19 @@ WIP - WORK IN PROGRESS
 - Touch device support.
 
 ------------------------
+Featherence v0.2.2 (xx-Dec-15)
+------------------------
+- Added PVR support.
+- Option to enlarge Side List view for extra information.
+- Option to toggle fanart size for Side List view.
+- Update autoview script.
+- Update ExtendedInfo.
+- Update views.
+- Setup default views & others settings.
+- Backup script now support all languages.
+- Minor bugs fix.
+
+------------------------
 Featherence v0.2.1 (24-Dec-15)
 ------------------------
 - Minor bugs fix.

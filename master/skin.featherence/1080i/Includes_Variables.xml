@@ -11,12 +11,17 @@
 	<value condition="![!IsEmpty(Player.Art(tvshow.poster)) | !IsEmpty(Player.Art(poster)) | !IsEmpty(Control.GetLabel(1103)) | !IsEmpty(VideoPlayer.Cover) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Art(tvshow.poster)) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Thumb) | !IsEmpty(ListItem.Icon) | SubString(ListItem.path,videodb://movies/sets/)]">1</value>
 	<value condition="![!SubString(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>
 	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
-	<value condition="![[Control.IsVisible(57) + !Skin.HasSetting(ShowDVDCases)] | !Control.IsVisible(57)]">5</value>
-	<value condition="![[[Control.IsVisible(54) | Control.IsVisible(58)] + Skin.HasSetting(ShowDVDCases2)] | !Control.IsVisible(54) + !Control.IsVisible(58)]">6</value>
-	<value condition="![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)]">7</value>
+	<value condition="![[StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(ShowDVDCases)] | !StringCompare(Container.Viewmode,$LOCALIZE[31013])]">5</value>
+	<value condition="![[[StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)] | !StringCompare(Container.Viewmode,$LOCALIZE[31015]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014])]">6</value>
+	<value condition="![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)]]">7</value>
+	<value condition="![!Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogContextMenu.xml)]">8</value>
 	<!--<value condition="!IsEmpty(ListItem.Rating)">8</value>-->
 	
 	<!--<value>test</value>-->
+  </variable>
+  <variable name="BorderTexture">
+    <value condition="StringCompare(ListItem.Label,..)">$VAR[VideoInformation2]</value>
+	<value>buttons/ButtonA0.png</value>
   </variable>
   <variable name="Button9090" description="כפתור קצה">
   	<value description="סרטים שנוספו לאחרונה" condition="Control.IsVisible(311) + !Skin.HasSetting(MoviesShelfWL) + !Player.HasVideo">$LOCALIZE[20386]</value>
@@ -140,39 +145,41 @@
 	<value description="חיפוש קדימון" condition="Control.HasFocus(7140)">$LOCALIZE[137] $LOCALIZE[20410]</value>
 	<value description="רענן פרטים" condition="Control.HasFocus(6)">$LOCALIZE[184] $LOCALIZE[33029]</value>
 	<value description="החלף תמונה / רקע" condition="Control.HasFocus(10)">$LOCALIZE[74434]</value>
-	<value description="סרטים נוספים של במאי זה" condition="Control.HasFocus(13)">$LOCALIZE[79074]</value>
+	<value description="מידע במאי" condition="Control.HasFocus(7141)">$LOCALIZE[31413]</value>
+	<value description="דרג" condition="Control.HasFocus(14)">Rate</value>
+	<value description="סרטים נוספים של כותב זה" condition="Control.HasFocus(15)">$LOCALIZE[31135]</value>
 	<value description="עוד..." condition="Control.HasFocus(26)">$LOCALIZE[22082]</value>
 	<value description="חזור" condition="Control.HasFocus(27)">$LOCALIZE[79075]</value>
   </variable>
   <variable name="DirectorButton" description="סרטים נוספים של הבמאי">
-    <value condition="Control.HasFocus(13) + StringCompare(System.Language,Hebrew)">[COLOR Yellow][B]$INFO[ListItem.Director][/B][/COLOR] [COLOR=White]$LOCALIZE[20339]:[/COLOR]</value>
-	<value condition="Control.HasFocus(13) + !StringCompare(System.Language,Hebrew)">[COLOR=White]$LOCALIZE[20339]:[/COLOR] [COLOR Yellow][B]$INFO[ListItem.Director][/B][/COLOR] </value>
-	<value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Director] [COLOR=White]$LOCALIZE[20339]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=White]$LOCALIZE[20339]:[/COLOR] $INFO[ListItem.Director]</value>
+    <value condition="Control.HasFocus(7141) + StringCompare(System.Language,Hebrew)">[COLOR yellow][B]$INFO[ListItem.Director][/B][/COLOR] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
+	<value condition="Control.HasFocus(7141) + !StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[20339]:[/COLOR] [COLOR yellow][B]$INFO[ListItem.Director][/B][/COLOR] </value>
+	<value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Director] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
+	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[20339]:[/COLOR] $INFO[ListItem.Director]</value>
   </variable>
   <variable name="RightMenuDialogVideoInfo2">
-    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Studio] [COLOR=White]$LOCALIZE[572]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=White]$LOCALIZE[572]:[/COLOR] $INFO[ListItem.Studio] </value>
+    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Studio] [COLOR=white]$LOCALIZE[572]:[/COLOR]</value>
+	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[572]:[/COLOR] $INFO[ListItem.Studio] </value>
   </variable>
   <variable name="RightMenuDialogVideoInfo3">
-    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Writer] [COLOR=White]$LOCALIZE[20418]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=White]$LOCALIZE[20418]:[/COLOR] $INFO[ListItem.Writer]</value>
+    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Writer] [COLOR=white]$LOCALIZE[20418]:[/COLOR]</value>
+	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[20418]:[/COLOR] $INFO[ListItem.Writer]</value>
   </variable>
   <variable name="RightMenuDialogVideoInfo4">
-    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Country] [COLOR=White]$LOCALIZE[21874]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=White]$LOCALIZE[21874]:[/COLOR] $INFO[ListItem.Country]</value>
+    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Country] [COLOR=white]$LOCALIZE[21874]:[/COLOR]</value>
+	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[21874]:[/COLOR] $INFO[ListItem.Country]</value>
   </variable>
   <variable name="RightMenuDialogVideoInfo5">
-    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Premiered] [COLOR=White]$LOCALIZE[20416]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=White]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Premiered]</value>
+    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Premiered] [COLOR=white]$LOCALIZE[20416]:[/COLOR]</value>
+	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Premiered]</value>
   </variable>
   <variable name="RightMenuDialogVideoInfo6">
     <value condition="StringCompare(System.Language,Hebrew)"></value>
 	<value condition="!StringCompare(System.Language,Hebrew)"></value>
   </variable>
   <variable name="RightMenuDialogVideoInfo7">
-    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Path] [COLOR=White]$LOCALIZE[78292]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=White]$LOCALIZE[78292]:[/COLOR] $INFO[ListItem.Path]</value>
+    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Path] [COLOR=white]$LOCALIZE[78292]:[/COLOR]</value>
+	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[78292]:[/COLOR] $INFO[ListItem.Path]</value>
   </variable>
   <variable name="RightMenuDialogVideoInfo8">
     <value condition="StringCompare(System.Language,Hebrew)"></value>
@@ -225,7 +232,7 @@
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Duration)">$INFO[VideoPlayer.Duration]</value>
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(Window(home).Property(TopVideoInformation1))">$INFO[Window(home).Property(TopVideoInformation1)]</value>
     <value condition="!IsEmpty(ListItem.Duration) + [SubString(Container.FolderPath,plugin://plugin.video.youtube)]">$INFO[ListItem.Duration]</value>
-	<value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows) | StringCompare(Container.FolderName,Genesis)]">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[33054]</value>
+	<!--<value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows) | StringCompare(Container.FolderName,Genesis)]">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[33054]</value>-->
 	<value condition="!IsEmpty(ListItem.Duration) + !Container.Content(tvshows)">$INFO[ListItem.Duration]</value>
 	<value condition="!IsEmpty(ListItem.Property(runtime)) + Window.IsVisible(Home)">$INFO[ListItem.Property(runtime)]</value>
 	<value description="Home-Movies" condition="Control.IsVisible(311) + !IsEmpty(Container(311).ListItem.Property(runtime))">$INFO[Container(311).ListItem.Property(runtime)]</value>
@@ -233,18 +240,18 @@
 	<value condition="Window(home).Property(ListItemDuration) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle))">$INFO[Window(home).Property(ListItemDuration)]</value>
 	<value description="בית" condition="Window.IsActive(home) + !IsEmpty(ListItem.Property(Runtime))">$INFO[ListItem.Property(Runtime)]</value>
 	<value description="גרסת הרחבה" condition="!IsEmpty(ListItem.Property(Addon.Version))">$INFO[ListItem.Property(Addon.Version)]</value>
+	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItemNoWrap(0).Duration)">$INFO[Container(11).ListItemNoWrap(0).Duration]</value>
 	<value condition="Skin.HasSetting(Admin)">...</value>
   </variable>
   <variable name="TopVideoInformation2" description="שנה/יוצר הרחבה">
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Year)">$INFO[VideoPlayer.Year]</value>
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(Window(home).Property(TopVideoInformation2))">$INFO[Window(home).Property(TopVideoInformation2)]</value>
 	<value condition="!IsEmpty(ListItem.Year)">$INFO[ListItem.Year]</value>
-	<value description="הרחבות" condition="!IsEmpty(ListItem.Property(Addon.Creator))">$INFO[ListItem.Property(Addon.Creator)]</value>
 	<value description="Home-Movies" condition="Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(year))">$INFO[Container(311).ListItem.Property(Year)]</value>
 	<value description="Home-TV" condition="Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(year))">$INFO[Container(312).ListItem.Property(Year)]</value>
 	<value condition="[StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) | [Container.Content(Seasons) + SubString(Container.FolderPath,videodb://tvshows/)]] + !IsEmpty(Window(home).Property(ListItemYear))">$INFO[Window(home).Property(ListItemYear)]</value>
 	<value condition="!IsEmpty(MusicPlayer.Year)">$INFO[MusicPlayer.Year]</value>
-	<value condition="!IsEmpty(ListItem.Date)">$INFO[ListItem.Date]</value>
+	<value condition="!IsEmpty(ListItem.Date) + !Window.IsVisible(MyPVRChannels.xml) + !Window.IsVisible(MyPVRGuide.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !ListItem.HasEpg">$INFO[ListItem.Date]</value>
   </variable>
   <variable name="TopVideoInformation3" description="דירוג וידאו/אודיו">
 	<value description="Home" condition="Skin.HasSetting(Rating) + Window.IsActive(home) + [Control.HasFocus(311) | Control.HasFocus(312)] + !IsEmpty(ListItem.Property(rating))">$INFO[ListItem.Property(rating),badges/rating/10/,.png]</value>
@@ -267,7 +274,7 @@
 	<value description="אחר(+)" condition="!Skin.HasSetting(Rating) + !IsEmpty(ListItem.Rating)">$INFO[ListItem.Rating,badges/rating/10+/,.png]</value>
 	<value description="אחר2" condition="Skin.HasSetting(Rating) + [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) | [Container.Content(Seasons) + SubString(Container.FolderPath,videodb://tvshows/)]] + [!IsEmpty(Window(home).Property(ListItemRating)) + !Window.IsVisible(DialogFullScreenInfo.xml)] + [!Container.Content(songs) + !Container.Content(artists) + !Container.Content(albums)]">$INFO[Window(home).Property(ListItemRating),badges/rating/10/,.png]</value>
 	<value description="אחר2(+)" condition="!Skin.HasSetting(Rating) + [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) | [Container.Content(Seasons) + SubString(Container.FolderPath,videodb://tvshows/)]] + [!IsEmpty(Window(home).Property(ListItemRating)) + !Window.IsVisible(DialogFullScreenInfo.xml)] + [!Container.Content(songs) + !Container.Content(artists) + !Container.Content(albums)]">$INFO[Window(home).Property(ListItemRating),badges/rating/10+/,.png]</value>
-	<value></value>
+	<!--<value></value>-->
   </variable>
   <variable name="TopVideoInformation4" description="פוסטר">
     <!--<value condition="Player.HasVideo + Pvr.IsPlayingTV">$INFO[]</value>-->
@@ -287,13 +294,14 @@
 	<value condition="!IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
 	<value condition="!IsEmpty(Container(50).ListItem.Thumb)">$INFO[Container(50).ListItem.Thumb]</value>
 	<value description="הרחבה" condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItem(0).Thumb)">$INFO[Container(11).ListItem(0).Thumb]</value>
   </variable>
   <variable name="TopVideoInformation5" description="פרטי וידאו">
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(Window(home).Property(TopVideoInformation5))">$INFO[Window(home).Property(TopVideoInformation5)]</value>
-	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Description)) + !IsEmpty(ListItem.Property(Addon.Summary))">[COLOR=Yellow]$INFO[ListItem.Property(Addon.Summary)][/COLOR][CR][CR]$INFO[ListItem.Property(Addon.Description)]</value>
-	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Description)) + IsEmpty(ListItem.Property(Addon.Summary))">[COLOR=Yellow]$INFO[ListItem.Property(Addon.Summary)][/COLOR][CR][CR]$INFO[ListItem.Property(Addon.Description)]</value>
+	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Description)) + !IsEmpty(ListItem.Property(Addon.Summary))">[COLOR=yellow]$INFO[ListItem.Property(Addon.Summary)][/COLOR][CR][CR]$INFO[ListItem.Property(Addon.Description)]</value>
+	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Description)) + IsEmpty(ListItem.Property(Addon.Summary))">[COLOR=yellow]$INFO[ListItem.Property(Addon.Summary)][/COLOR][CR][CR]$INFO[ListItem.Property(Addon.Description)]</value>
 	<!--<value description="הרחבה" condition="[Container.content(addons) | Window.IsActive(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
     <value description="הרחבה" condition="[Container.content(addons) | Window.IsActive(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Summary))">$INFO[ListItem.Property(Addon.Summary)]</value>-->
 	<value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
@@ -306,13 +314,15 @@
 	<value condition="!IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))">$INFO[Container(50).ListItemNoWrap(0).Property(rinfo)]</value>
 	<value condition="Window.IsVisible(SettingsCategory.xml) + !IsEmpty(Control.GetLabel(121))">$INFO[Control.GetLabel(121)]</value>
 	<value condition="Window.IsVisible(SettingsCategory.xml) + !IsEmpty(Control.GetLabel(6))">$INFO[Control.GetLabel(6)]</value>
-	<value description="הרחבה" condition="Window.IsVisible(MyWeather.xml)">$LOCALIZE[404]: $INFO[Window.Property(Current.Wind)]   |   $LOCALIZE[402]: $INFO[Window.Property(Current.FeelsLike)]°   |   [CR]$LOCALIZE[405]: $INFO[Window.Property(Current.DewPoint)]   |   $LOCALIZE[406]: $INFO[Window.Property(Current.Humidity)]   |   $LOCALIZE[403]: $INFO[Window.Property(Current.UVIndex)]</value>
+	<value description="הרחבה" condition="Window.IsVisible(MyWeather.xml)">$LOCALIZE[404]: $INFO[Window.Property(Current.Wind)]   |   $LOCALIZE[402]: $INFO[Window.Property(Current.FeelsLike)]°[CR]$LOCALIZE[405]: $INFO[Window.Property(Current.DewPoint)]   |   $LOCALIZE[406]: $INFO[Window.Property(Current.Humidity)]   |   $LOCALIZE[403]: $INFO[Window.Property(Current.UVIndex)]</value>
 	<value condition="Window.IsVisible(FileBrowser.xml) + !IsEmpty(Control.GetLabel(412))">$INFO[Control.GetLabel(412)]</value>
+	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.Path)">$INFO[ListItem.Path]</value>
+	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItemNoWrap(0).Plot)">$INFO[Container(11).ListItemNoWrap(0).Plot]</value>
 	<value condition="Control.IsVisible(11051)">•••••</value>
   </variable>
   <variable name="TopVideoInformation5.1" description="פרטי טלוויזיה חיה">
-    <value condition="Control.IsVisible(10)">$INFO[ListItem.Duration] [COLOR=White]$LOCALIZE[180]:[/COLOR][CR][COLOR=Yellow]$INFO[ListItem.Title][/COLOR][CR]$INFO[ListItem.Plot]</value>
-	<value condition="!Control.IsVisible(10)">$INFO[ListItem.Duration] [COLOR=White]$LOCALIZE[180]:[/COLOR][CR][COLOR=Yellow]$INFO[ListItem.Title][/COLOR][CR]$INFO[ListItem.Plot][CR][CR][COLOR=Grey]$INFO[ListItem.NextTitle][/COLOR] [COLOR=White]$LOCALIZE[19031]:[/COLOR]</value>
+    <value condition="Control.IsVisible(10)">$INFO[ListItem.Duration] [COLOR=white]$LOCALIZE[180]:[/COLOR][CR][COLOR=yellow]$INFO[ListItem.Title][/COLOR][CR]$INFO[ListItem.Plot]</value>
+	<value condition="!Control.IsVisible(10)">$INFO[ListItem.Duration] [COLOR=white]$LOCALIZE[180]:[/COLOR][CR][COLOR=yellow]$INFO[ListItem.Title][/COLOR][CR]$INFO[ListItem.Plot][CR][CR][COLOR=grey]$INFO[ListItem.NextTitle][/COLOR] [COLOR=white]$LOCALIZE[19031]:[/COLOR]</value>
   </variable>
   <variable name="TopVideoInformation6" description="סגנון">
     <value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Genre)">$INFO[VideoPlayer.Genre]</value>
@@ -323,6 +333,7 @@
 	<value condition="SubString(ListItem.Path,videodb://1/7) | SubString(ListItem.path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
 	<value condition="Window.IsVisible(DialogAddonInfo.xml) + !IsEmpty(ListItem.Property(Addon.Type))">$INFO[ListItem.Property(Addon.Type)]</value>
 	<value condition="Window.IsVisible(FileBrowser.xml) + !IsEmpty(Control.GetLabel(412))">$INFO[Control.GetLabel(412)]</value>
+	<value condition="Window.IsVisible(MyPics.xml)">_</value>
 	<value condition="!Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(Window(home).Property(ListItemGenre)) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + [Window.IsVisible(Home.xml) | Window.IsVisible(MyVideoNav.xml)]">$INFO[Window(home).Property(ListItemGenre)]</value>
   </variable>
   <variable name="TopVideoInformation7" description="משפט סרט/שם פרק(1107)">
@@ -333,11 +344,16 @@
 	<value description="שם הפרק" condition="[Container.content(Episodes)] + !SubString(ListItem.Label,..,left) + !IsEmpty(ListItem.Title) + !StringCompare(ListItem.Title,ListItem.TVShowTitle)">[B]$INFO[ListItem.Title][/B]</value>
 	<value description="שם הפרק-בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(title))">[B]$INFO[Container(312).ListItem.Property(title)][/B]</value>
 	<value description="משפט סרט-בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(tagline))">[B]$INFO[Container(311).ListItem.Property(tagline)][/B]</value>
+	<value description="PVR" condition="[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.EpisodeName]</value>
+	<value description="PVR" condition="[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
 	<!--<value description="משפט סרט אקראי - בית" condition="[Window.IsActive(home) + Control.HasFocus(311)] + !IsEmpty(Container(311).ListItem.Property(Tagline))">[B]$INFO[Container(311).Property(Tagline)][/B]</value>
 	<value description="שם הפרק-בית" condition="[Window.IsActive(home) + Control.HasFocus(312)] + !IsEmpty(Container(312).ListItem.Property(title))">[B]$INFO[Window(Home).Property(RandomMovie.2.Title)][/B]</value>-->
 	<value condition="Window.IsVisible(DialogAddonInfo.xml) + !IsEmpty(ListItem.Property(Addon.Disclaimer))">$INFO[ListItem.Property(Addon.Disclaimer)]</value>
 	<value condition="Window.IsVisible(MyWeather.xml) + !IsEmpty(Container(50).ListItem.Label2) | Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">$INFO[Window(Weather).Property(Current.Condition)]   |   $INFO[Window(Weather).Property(Day0.LowTemp)] - $INFO[Window(Weather).Property(Day0.HighTemp)]</value>
-	<value condition="!IsEmpty(Container(50).ListItem.Label2)">$INFO[Container(50).ListItem.Label2]</value>
+	<value description="מספר פרקים שנצפו" condition="Container.Content(tvshows) | Container.Content(seasons)">$LOCALIZE[21457] $INFO[ListItem.Property(WatchedEpisodes)] $LOCALIZE[20163] $INFO[ListItem.Property(NumEpisodes)]</value>
+	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItem(0).Label2)">$INFO[Container(11).ListItem(0).Label2]</value>
+	<value condition="!IsEmpty(Container(50).ListItem.Label2) + !SubString(Container(50).ListItem.Label2,0 B) + !Container.Content(movies)">$INFO[Container(50).ListItem.Label2]</value>
+	
   </variable>
   <variable name="TopVideoInformation8" description="שם סרט/סדרה">
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.TVShowTitle]</value>
@@ -348,12 +364,14 @@
 	<value description="Home-Movies" condition="Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(title))">$INFO[Container(311).ListItem.Property(title)]</value>
 	<value description="Home-TV" condition="Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(title))">$INFO[Container(312).ListItem.Property(tvshowtitle)]</value>
 	<value condition="Window.IsVisible(DialogAddonInfo.xml) + !IsEmpty(ListItem.Property(Addon.Name))">$INFO[ListItem.Property(Addon.Name)]</value>
+	<value description="תמונות" condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FileName)">$INFO[ListItem.FileName]</value>
 	<!--<value condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !Window.IsVisible(DialogAddonInfo.xml)"></value>-->
     <value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
 	<value condition="Window.IsVisible(MyWeather.xml) + !IsEmpty(Container(50).ListItem.Label)">$INFO[Control.GetLabel(31)] - $INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</value>
 	<value condition="Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">$INFO[System.Date(DDD)] - $INFO[Weather.Temperature]</value>
 	<value condition="!IsEmpty(Container(50).ListItem.Label)">$INFO[Container(50).ListItem.Label]</value>
 	<value condition="Window.IsVisible(SettingsCategory.xml) + [ControlGroup(3).HasFocus | ControlGroup(5).HasFocus]">$INFO[System.CurrentControl]</value>
+	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItem(0).Label)">$INFO[Container(11).ListItem(0).Label]</value>
 	<value>...</value>
   </variable>
   <variable name="TopVideoInformation9" description="תמונת פרק">
@@ -362,10 +380,10 @@
 	<!--<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(Window(home).Property(TopVideoInformation9))">$INFO[Window(home).Property(TopVideoInformation9)]</value>-->
   </variable>
   <variable name="TopVideoInformation10" description="עונה ופרק">
-	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [IntegerGreaterThan(VideoPlayer.Season,9) + IntegerGreaterThan(VideoPlayer.Episode,9)]">S[COLOR Yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E[COLOR Yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
-	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [IntegerGreaterThan(VideoPlayer.Season,9) + !IntegerGreaterThan(VideoPlayer.Episode,9)]">S[COLOR Yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E0[COLOR Yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
-	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [!IntegerGreaterThan(VideoPlayer.Season,9) + IntegerGreaterThan(VideoPlayer.Episode,9)]">S0[COLOR Yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E[COLOR Yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
-	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [!IntegerGreaterThan(VideoPlayer.Season,9) + !IntegerGreaterThan(VideoPlayer.Episode,9)]">S0[COLOR Yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E0[COLOR Yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
+	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [IntegerGreaterThan(VideoPlayer.Season,9) + IntegerGreaterThan(VideoPlayer.Episode,9)]">S[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
+	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [IntegerGreaterThan(VideoPlayer.Season,9) + !IntegerGreaterThan(VideoPlayer.Episode,9)]">S[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E0[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
+	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [!IntegerGreaterThan(VideoPlayer.Season,9) + IntegerGreaterThan(VideoPlayer.Episode,9)]">S0[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
+	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [!IntegerGreaterThan(VideoPlayer.Season,9) + !IntegerGreaterThan(VideoPlayer.Episode,9)]">S0[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E0[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
 	
 	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)]">S$INFO[ListItem.Season]  E$INFO[ListItem.Episode]</value>
 	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)]">S$INFO[ListItem.Season]  E0$INFO[ListItem.Episode]</value>
@@ -392,6 +410,23 @@
 	<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 	<value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
   </variable>
+  <variable name="VideoInformation3" description="מידע צדדי">
+	<value condition="!IsEmpty(ListItem.ChannelNumber) + !IsEmpty(ListItem.Progress)">$INFO[ListItem.ChannelNumber] $INFO[ListItem.Progress]</value>
+	<value condition="[Window.IsVisible(MyVideoNav.xml) | IsEmpty(Control.GetLabel(1101))]"></value>
+	<value condition="!IsEmpty(ListItem.ChannelNumber)">$INFO[ListItem.ChannelNumber]</value>
+	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
+	<value condition="!IsEmpty(ListItem.Label2) + !StringCompare(ListItem.Label2,0 B) + !Window.IsVisible(MyVideoNav.xml)">$INFO[ListItem.Label2]</value>
+  </variable>
+  <variable name="VideoInformation4">
+	<value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows) | StringCompare(Container.FolderName,Genesis)]">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[33054]</value>
+	<value condition="IntegerGreaterThan(Control.GetLabel(1109),0) + !IsEmpty(Control.GetLabel(1109)) + !SubString(ListItem.path,videodb://movies/sets/) + !IsEmpty(ListItem.Duration)">$VAR[VideoInHours]h</value>
+	<value condition="IntegerGreaterThan(Control.GetLabel(1110),0) + !IsEmpty(Control.GetLabel(1110)) + !SubString(ListItem.path,videodb://movies/sets/) + !IsEmpty(ListItem.Duration)">$VAR[VideoInMins]m</value>
+	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.Size)">$INFO[ListItem.Size]</value>
+  </variable>
+  <variable name="VideoInformation5">
+    <value condition="!IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
+	<value condition="!IsEmpty(ListItem.Size) + !SubString(ListItem.Size,0 B)">$INFO[ListItem.Size]</value>
+  </variable>
   <variable name="PhotoInformation1" description="סמל תמונה/תיקייה">
 	<value condition="!ListItem.IsFolder + !IsEmpty(ListItem.PicturePath)">special://home/addons/script.featherence.service/resources/icons/pictures.png</value>
 	<value condition="ListItem.IsFolder">special://home/addons/script.featherence.service/resources/icons/folder.png</value>
@@ -400,7 +435,7 @@
   </variable>
   <variable name="PhotoInformation2" description="תאריך תמונה">
 	<value condition="!IsEmpty(ListItem.PictureDate)">$INFO[ListItem.PictureDate]</value>
-	<value condition="!IsEmpty(ListItem.Date)">[COLOR=Red]$INFO[ListItem.Date][/COLOR]</value>
+	<value condition="!IsEmpty(ListItem.Date)">[COLOR=red]$INFO[ListItem.Date][/COLOR]</value>
   </variable>
   <variable name="MusicInformation3" description="דירוג אודיו/יו-טיוב">
 	<value condition="IntegerGreaterThan(ListItem.Rating,218) | SubString(ListItem.Rating,5)">badges/rating/5+/5.0.png</value>
@@ -441,77 +476,78 @@
 	<value description="גרסה" condition="Window.IsVisible(Home.xml)">$INFO[System.AddonVersion(skin.featherence)]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[B]$ADDON[script.skin.helper.service 32011][/B]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(Custom1170.xml)">Choose $INFO[Window(home).Property(TEMP)]</value>
-	<value description="סרטים_he" condition="StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://movies,left) | SubString(Container.FolderPath,library://video/movies) | SubString(Container.FolderPath,special://userdata/library/movies/)] + !SubString(Container.FolderName,$LOCALIZE[20342])">($INFO[Container.NumItems]) [COLOR Yellow]$VAR[GenreLabel2][/COLOR] $LOCALIZE[20342] $ADDON[script.featherence.service 77] </value>
-	<value description="סרטים_en" condition="!StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://movies,left) | SubString(Container.FolderPath,library://video/movies) | SubString(Container.FolderPath,special://userdata/library/movies/)] + !SubString(Container.FolderName,$LOCALIZE[20342])">$LOCALIZE[20342] $ADDON[script.featherence.service 77] [COLOR Yellow]$VAR[GenreLabel2][/COLOR] ($INFO[Container.NumItems])</value>
-	<value description="סדרות טלוויזיה_he" condition="StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://tvshows,left) | SubString(Container.FolderPath,library://video/tvshows) | SubString(Container.FolderPath,special://userdata/library/tvshows/)] + !SubString(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) [B][COLOR Yellow]$VAR[GenreLabel2][/COLOR][/B] $LOCALIZE[20343] $ADDON[script.featherence.service 77] </value>
-	<value description="סדרות טלוויזיה_en" condition="!StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://tvshows,left) | SubString(Container.FolderPath,library://video/tvshows) | SubString(Container.FolderPath,special://userdata/library/tvshows/)] + !SubString(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) $LOCALIZE[20343] $ADDON[script.featherence.service 77] [B][COLOR Yellow]$VAR[GenreLabel2][/COLOR][/B] </value>
-	<value description="מוזיקה" condition="Window.IsActive(MyMusicNav.xml)">($INFO[Container.NumItems]) [B][COLOR Yellow]$INFO[Container.FolderName][/COLOR] $LOCALIZE[2] $ADDON[script.featherence.service 77] [/B]</value> <!--SubString(Container.FolderPath,musicdb://,left)-->
-	<value description="מנהל הרחבות" condition="Window.IsVisible(AddonBrowser.xml)">($INFO[Container.NumItems]) [B][COLOR Yellow]$INFO[Container.FolderName][/COLOR][/B]</value> <!-- $LOCALIZE[79040]-->
-	<value description="PVR" condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide) | Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">($INFO[Container.NumItems]) [COLOR White2][B]$VAR[ChannelGroupName][/B][/COLOR]</value>
+	<value description="סרטים_he" condition="StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://movies,left) | SubString(Container.FolderPath,library://video/movies) | SubString(Container.FolderPath,special://userdata/library/movies/)] + !SubString(Container.FolderName,$LOCALIZE[20342])">($INFO[Container.NumItems]) [COLOR yellow]$VAR[GenreLabel2][/COLOR] $LOCALIZE[20342] $ADDON[script.featherence.service 77] </value>
+	<value description="סרטים_en" condition="!StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://movies,left) | SubString(Container.FolderPath,library://video/movies) | SubString(Container.FolderPath,special://userdata/library/movies/)] + !SubString(Container.FolderName,$LOCALIZE[20342])">$LOCALIZE[20342] $ADDON[script.featherence.service 77] [COLOR yellow]$VAR[GenreLabel2][/COLOR] ($INFO[Container.NumItems])</value>
+	<value description="סדרות טלוויזיה_he" condition="StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://tvshows,left) | SubString(Container.FolderPath,library://video/tvshows) | SubString(Container.FolderPath,special://userdata/library/tvshows/)] + !SubString(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] $LOCALIZE[20343] $ADDON[script.featherence.service 77] </value>
+	<value description="סדרות טלוויזיה_en" condition="!StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://tvshows,left) | SubString(Container.FolderPath,library://video/tvshows) | SubString(Container.FolderPath,special://userdata/library/tvshows/)] + !SubString(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) $LOCALIZE[20343] $ADDON[script.featherence.service 77] [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] </value>
+	<value description="מוזיקה" condition="Window.IsActive(MyMusicNav.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR] $LOCALIZE[2] $ADDON[script.featherence.service 77] [/B]</value> <!--SubString(Container.FolderPath,musicdb://,left)-->
+	<value description="מנהל הרחבות" condition="Window.IsVisible(AddonBrowser.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR][/B]</value> <!-- $LOCALIZE[79040]-->
+	<value description="PVR" condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide) | Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(MyPVRGuide.xml)">($INFO[Container.NumItems]) [COLOR white2][B]$VAR[ChannelGroupName][/B][/COLOR]</value>
+	<value description="מזג אוויר" condition="Window.IsVisible(MyWeather.xml)">$INFO[System.CurrentWindow] ($INFO[Weather.Plugin])</value>
 	<value description="עיצוב מעטפת" condition="Window.IsVisible(CustomHomeCustomizer.xml)">$LOCALIZE[76196] ($INFO[Container.NumItems])</value>
-	<value description="הרחבה" condition="SubString(Container.FolderPath,plugin://) + !IsEmpty(Container.FolderName) + !IsEmpty(Container.NumItems)">$INFO[Container.FolderName] ($INFO[Container.NumItems])</value>
-	<value description="הרחבה2" condition="SubString(Container.FolderPath,plugin://) + !IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
+	<value description="הרחבה" condition="[SubString(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !IsEmpty(Container.FolderName) + !IsEmpty(Container.NumItems)">$INFO[Container.FolderName] ($INFO[Container.NumItems])</value>
+	<value description="הרחבה2" condition="[SubString(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
 	<value>$INFO[System.CurrentWindow] ($INFO[Container.NumItems])</value>
   </variable>
   <variable name="TopInformation2.1" description="שמאל2 (ספרייה)">
-	<value condition="Container.content(movies) + [SubString(Container.FolderPath,videodb://movies/) | SubString(Container.FolderPath,plugin://plugin.video.genesis/?action=movieNavigator) | StringCompare(Container.FolderName,$LOCALIZE[20342])]">[COLOR Yellow][B]$LOCALIZE[20342] $LOCALIZE[16102][/B][/COLOR] [COLOR Yellow][B]$INFO[Window(Home).Property(Movies.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(Movies.Count)]</value> <!-- + SubString(Container.FolderPath,videodb://movies/)  StringCompare(Container.FolderName,$LOCALIZE[369]) | StringCompare(Container.FolderName,$LOCALIZE[20342])-->
-	<value condition="Container.content(tvshows) + [SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,plugin://plugin.video.genesis/?action=tvNavigator) | StringCompare(Container.FolderName,$LOCALIZE[20343])]">[COLOR Yellow][B]$LOCALIZE[20343] $LOCALIZE[16102][/B][/COLOR] [COLOR Yellow][B]$INFO[Window(Home).Property(TVShows.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(TVShows.Count)]</value> <!--  + SubString(Container.FolderPath,videodb://tvshows/) StringCompare(Container.FolderName,$LOCALIZE[369]) | StringCompare(Container.FolderName,$LOCALIZE[20343])-->
-	<value condition="Window.IsActive(MyMusicNav.xml)">[COLOR Yellow][B]$INFO[Window(Home).Property(Music.ArtistsCount)][/B][/COLOR] • $LOCALIZE[133]: [COLOR Yellow][B]$INFO[Window(Home).Property(Music.AlbumsCount)][/B][/COLOR] • $LOCALIZE[132]: [COLOR Yellow][B]$INFO[Window(Home).Property(Music.SongsCount)][/B][/COLOR] $LOCALIZE[134]: </value>
-	<!--<value condition="Window.IsActive(MyPics.xml)">[COLOR Yellow][B]$INFO[ListItem.PictureResolution][/B][/COLOR] • רזולוציה: [COLOR Yellow][B]$INFO[ListItem.PictureDate][/B][/COLOR] • תאריך: [COLOR Yellow][B]$INFO[ListItem.PictureState][/B][/COLOR] מיקום: </value>-->
+	<value condition="Container.content(movies) + [SubString(Container.FolderPath,videodb://movies/) | SubString(Container.FolderPath,plugin://plugin.video.genesis/?action=movieNavigator) | StringCompare(Container.FolderName,$LOCALIZE[20342])]">[COLOR yellow][B]$LOCALIZE[20342] $LOCALIZE[16102][/B][/COLOR] [COLOR yellow][B]$INFO[Window(Home).Property(Movies.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(Movies.Count)]</value> <!-- + SubString(Container.FolderPath,videodb://movies/)  StringCompare(Container.FolderName,$LOCALIZE[369]) | StringCompare(Container.FolderName,$LOCALIZE[20342])-->
+	<value condition="Container.content(tvshows) + [SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,plugin://plugin.video.genesis/?action=tvNavigator) | StringCompare(Container.FolderName,$LOCALIZE[20343])]">[COLOR yellow][B]$LOCALIZE[20343] $LOCALIZE[16102][/B][/COLOR] [COLOR yellow][B]$INFO[Window(Home).Property(TVShows.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(TVShows.Count)]</value> <!--  + SubString(Container.FolderPath,videodb://tvshows/) StringCompare(Container.FolderName,$LOCALIZE[369]) | StringCompare(Container.FolderName,$LOCALIZE[20343])-->
+	<value condition="Window.IsActive(MyMusicNav.xml)">[COLOR yellow][B]$INFO[Window(Home).Property(Music.ArtistsCount)][/B][/COLOR] • $LOCALIZE[133]: [COLOR yellow][B]$INFO[Window(Home).Property(Music.AlbumsCount)][/B][/COLOR] • $LOCALIZE[132]: [COLOR yellow][B]$INFO[Window(Home).Property(Music.SongsCount)][/B][/COLOR] $LOCALIZE[134]: </value>
+	<!--<value condition="Window.IsActive(MyPics.xml)">[COLOR yellow][B]$INFO[ListItem.PictureResolution][/B][/COLOR] • רזולוציה: [COLOR yellow][B]$INFO[ListItem.PictureDate][/B][/COLOR] • תאריך: [COLOR yellow][B]$INFO[ListItem.PictureState][/B][/COLOR] מיקום: </value>-->
   </variable>
   <variable name="TopInformation2.2" description="(HasMedia) שמאל2">
 	<!--<value description="ריק" condition="SubString(Container.FolderPath,library://video/movies/) | SubString(Container.FolderPath,library://video/tvshows/) | SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,videodb://movies/)"></value>-->
 	<value description="" condition="SubString(MusicPlayer.Title,featherence)">•</value>
-	<value description="זמן לסיום מוזיקה_he" condition="StringCompare(System.Language,Hebrew) + Player.HasAudio + [!Pvr.IsPlayingRadio + !SubString(Player.FolderPath,pvr://)] + [IntegerGreaterThan(Player.TimeRemaining,1) | IntegerGreaterThan(MusicPlayer.PlaylistLength,1)] + !SubString(Player.FolderPath,mms://)">($INFO[MusicPlayer.PlaylistPosition]/$INFO[MusicPlayer.PlaylistLength]) • [COLOR Yellow][B]$INFO[MusicPlayer.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
-	<value description="זמן לסיום מוזיקה_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasAudio + [!Pvr.IsPlayingRadio + !SubString(Player.FolderPath,pvr://)] + [IntegerGreaterThan(Player.TimeRemaining,1) | IntegerGreaterThan(MusicPlayer.PlaylistLength,1)] + !SubString(Player.FolderPath,mms://)"> $LOCALIZE[19127]: [COLOR Yellow][B]$INFO[MusicPlayer.TimeRemaining][/B][/COLOR] ($INFO[MusicPlayer.PlaylistPosition]/$INFO[MusicPlayer.PlaylistLength])</value>
-	<value description="זמן לסיום וידאו_he" condition="StringCompare(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">($INFO[VideoPlayer.PlaylistPosition]/$INFO[VideoPlayer.PlaylistLength]) • [COLOR Yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
-	<value description="זמן לסיום וידאו_en" condition="!StringCompare(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">$LOCALIZE[19127]: [COLOR Yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] • ($INFO[VideoPlayer.PlaylistPosition]/$INFO[VideoPlayer.PlaylistLength])</value>
+	<value description="זמן לסיום מוזיקה_he" condition="StringCompare(System.Language,Hebrew) + Player.HasAudio + [!Pvr.IsPlayingRadio + !SubString(Player.FolderPath,pvr://)] + [IntegerGreaterThan(Player.TimeRemaining,1) | IntegerGreaterThan(MusicPlayer.PlaylistLength,1)] + !SubString(Player.FolderPath,mms://)">($INFO[MusicPlayer.PlaylistPosition]/$INFO[MusicPlayer.PlaylistLength]) • [COLOR yellow][B]$INFO[MusicPlayer.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
+	<value description="זמן לסיום מוזיקה_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasAudio + [!Pvr.IsPlayingRadio + !SubString(Player.FolderPath,pvr://)] + [IntegerGreaterThan(Player.TimeRemaining,1) | IntegerGreaterThan(MusicPlayer.PlaylistLength,1)] + !SubString(Player.FolderPath,mms://)"> $LOCALIZE[19127]: [COLOR yellow][B]$INFO[MusicPlayer.TimeRemaining][/B][/COLOR] ($INFO[MusicPlayer.PlaylistPosition]/$INFO[MusicPlayer.PlaylistLength])</value>
+	<value description="זמן לסיום וידאו_he" condition="StringCompare(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">($INFO[VideoPlayer.PlaylistPosition]/$INFO[VideoPlayer.PlaylistLength]) • [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
+	<value description="זמן לסיום וידאו_en" condition="!StringCompare(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">$LOCALIZE[19127]: [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] • ($INFO[VideoPlayer.PlaylistPosition]/$INFO[VideoPlayer.PlaylistLength])</value>
   </variable>
   <variable name="TopInformation3" description="(HasMedia) אמצע">
     <value condition="Window.IsVisible(DialogFullScreenInfo.xml) + Skin.HasSetting(Admin)">A_$INFO[Player.CacheLevel] • B_$INFO[Player.ProgressCache]$ESCINFO[Player.ProgressCache]</value>
-	<value description="מנגן סדרה_he" condition="StringCompare(System.Language,Hebrew) + [[VideoPlayer.Content(episodes) + !IsEmpty(VideoPlayer.TVShowTitle)] + !IsEmpty(VideoPlayer.Title) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season)] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">[COLOR Yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR] • $LOCALIZE[20452]: [COLOR Yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] • $LOCALIZE[20373]: [COLOR Yellow][B]$INFO[VideoPlayer.TVShowTitle][/B][/COLOR]$LOCALIZE[79033] $LOCALIZE[36902]: </value>
-	<value description="מנגן סדרה_en" condition="!StringCompare(System.Language,Hebrew) + [[VideoPlayer.Content(episodes) + !IsEmpty(VideoPlayer.TVShowTitle)] + !IsEmpty(VideoPlayer.Title) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season)] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">$LOCALIZE[79033] $LOCALIZE[36902]: [COLOR Yellow][B]$INFO[VideoPlayer.TVShowTitle][/B][/COLOR] S: [COLOR Yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] • E: [COLOR Yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR] </value>
-	<value description="מנגן סרט_he" condition="StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(movies) + [!IsEmpty(VideoPlayer.Tagline) | !IsEmpty(VideoPlayer.Year)]] + IsEmpty(VideoPlayer.Season) + IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Title)">[COLOR Yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.Year]) [/COLOR] $LOCALIZE[79033] $LOCALIZE[36900]: </value>
-	<value description="מנגן סרט_en" condition="!StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(movies) + [!IsEmpty(VideoPlayer.Tagline) | !IsEmpty(VideoPlayer.Year)]] + IsEmpty(VideoPlayer.Season) + IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Title)"> $LOCALIZE[79033] $LOCALIZE[36900]: [COLOR Yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.Year]) [/COLOR]</value>
-	<value description="מנגן ערוץ_he" condition="StringCompare(System.Language,Hebrew) + Player.HasVideo + [!IntegerGreaterThan(Player.TimeRemaining,1) | SubString(Player.FolderPath,rtmp://)] + !IsEmpty(Player.Title)">[COLOR Yellow]$INFO[Player.Title][/COLOR] $LOCALIZE[79033] $LOCALIZE[19078] </value>
-	<value description="מנגן ערוץ_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasVideo + [!IntegerGreaterThan(Player.TimeRemaining,1) | SubString(Player.FolderPath,rtmp://)] + !IsEmpty(Player.Title)">$LOCALIZE[79033] $LOCALIZE[19078] [COLOR Yellow]$INFO[Player.Title][/COLOR]</value>
-	<value description="מנגן ערוץ (PVR)_he" condition="StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">[COLOR Yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[79033] $LOCALIZE[19078] </value>
-	<value description="מנגן ערוץ (PVR)_en" condition="!StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">$LOCALIZE[79033] $LOCALIZE[19078] [COLOR Yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR]</value>
-	<value description="מקליט ערוץ (PVR)" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsRecording">[COLOR Yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[79199] $LOCALIZE[19078] </value>
-	<value description="מנגן הקלטה" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingRecording">[COLOR Yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.ChannelName]) [/COLOR] $LOCALIZE[79033] $LOCALIZE[264]: </value>
-	<value description="מנגן וידאו_he" condition="StringCompare(System.Language,Hebrew) + !IsEmpty(VideoPlayer.Title)">[COLOR Yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[157]: </value>
-	<value description="מנגן וידאו_en" condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(VideoPlayer.Title)">$LOCALIZE[79033] $LOCALIZE[157]: [COLOR Yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR]</value>
-	<!--<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !IsEmpty(Slideshow.Filedate)]">[COLOR Yellow][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR Yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
-	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + SubString(Slideshow.Filename,airplay_photo)]">[COLOR Yellow][B]תמונות/וידאו מהאייפון/אייפד[/B][/COLOR]</value>
-	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR Yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>-->
-	<value description="מנגן רדיו" condition="Player.HasAudio + [!IntegerGreaterThan(Player.TimeRemaining,1) + !IntegerGreaterThan(MusicPlayer.PlaylistPosition,1) | SubString(Player.FolderPath,mms://)] + !IsEmpty(Player.Title)">[COLOR Yellow]$INFO[Player.Title][/COLOR] $LOCALIZE[79033] $LOCALIZE[19021]: </value>
-	<value description="מנגן רדיו" condition="Player.HasAudio + [!IntegerGreaterThan(Player.TimeRemaining,1) + !IntegerGreaterThan(MusicPlayer.PlaylistPosition,1) | SubString(Player.FolderPath,mms://)] + !IsEmpty(Player.Filename)">[COLOR Yellow]$INFO[Player.Filename][/COLOR] $LOCALIZE[79033] $LOCALIZE[19021]: </value>
-	<value description="מנגן רדיו (PVR)" condition="Pvr.IsPlayingRadio + !IsEmpty(MusicPlayer.ChannelName)">[COLOR Yellow][B]$INFO[MusicPlayer.ChannelName][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[19021]: </value>
-	<value description="מנגן רדיו (PVR)" condition="Pvr.IsPlayingRadio">[COLOR Yellow][B]$INFO[Player.Filename][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[19021]: </value>
+	<value description="מנגן סדרה_he" condition="StringCompare(System.Language,Hebrew) + [[VideoPlayer.Content(episodes) + !IsEmpty(VideoPlayer.TVShowTitle)] + !IsEmpty(VideoPlayer.Title) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season)] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR] • $LOCALIZE[20452]: [COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] • $LOCALIZE[20373]: [COLOR yellow][B]$INFO[VideoPlayer.TVShowTitle][/B][/COLOR]$LOCALIZE[79033] $LOCALIZE[36902]: </value>
+	<value description="מנגן סדרה_en" condition="!StringCompare(System.Language,Hebrew) + [[VideoPlayer.Content(episodes) + !IsEmpty(VideoPlayer.TVShowTitle)] + !IsEmpty(VideoPlayer.Title) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season)] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">$LOCALIZE[79033] $LOCALIZE[36902]: [COLOR yellow][B]$INFO[VideoPlayer.TVShowTitle][/B][/COLOR] S: [COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] • E: [COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR] </value>
+	<value description="מנגן סרט_he" condition="StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(movies) + [!IsEmpty(VideoPlayer.Tagline) | !IsEmpty(VideoPlayer.Year)]] + IsEmpty(VideoPlayer.Season) + IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Title)">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.Year]) [/COLOR] $LOCALIZE[79033] $LOCALIZE[36900]: </value>
+	<value description="מנגן סרט_en" condition="!StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(movies) + [!IsEmpty(VideoPlayer.Tagline) | !IsEmpty(VideoPlayer.Year)]] + IsEmpty(VideoPlayer.Season) + IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Title)"> $LOCALIZE[79033] $LOCALIZE[36900]: [COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.Year]) [/COLOR]</value>
+	<value description="מנגן ערוץ_he" condition="StringCompare(System.Language,Hebrew) + Player.HasVideo + [!IntegerGreaterThan(Player.TimeRemaining,1) | SubString(Player.FolderPath,rtmp://)] + !IsEmpty(Player.Title)">[COLOR yellow]$INFO[Player.Title][/COLOR] $LOCALIZE[79033] $LOCALIZE[19078] </value>
+	<value description="מנגן ערוץ_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasVideo + [!IntegerGreaterThan(Player.TimeRemaining,1) | SubString(Player.FolderPath,rtmp://)] + !IsEmpty(Player.Title)">$LOCALIZE[79033] $LOCALIZE[19078] [COLOR yellow]$INFO[Player.Title][/COLOR]</value>
+	<value description="מנגן ערוץ (PVR)_he" condition="StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">[COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[79033] $LOCALIZE[19078] </value>
+	<value description="מנגן ערוץ (PVR)_en" condition="!StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">$LOCALIZE[79033] $LOCALIZE[19078] [COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR]</value>
+	<value description="מקליט ערוץ (PVR)" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsRecording">[COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[79199] $LOCALIZE[19078] </value>
+	<value description="מנגן הקלטה" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingRecording">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.ChannelName]) [/COLOR] $LOCALIZE[79033] $LOCALIZE[264]: </value>
+	<value description="מנגן וידאו_he" condition="StringCompare(System.Language,Hebrew) + !IsEmpty(VideoPlayer.Title)">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[157]: </value>
+	<value description="מנגן וידאו_en" condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(VideoPlayer.Title)">$LOCALIZE[79033] $LOCALIZE[157]: [COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR]</value>
+	<!--<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !IsEmpty(Slideshow.Filedate)]">[COLOR yellow][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + SubString(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות/וידאו מהאייפון/אייפד[/B][/COLOR]</value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>-->
+	<value description="מנגן רדיו" condition="Player.HasAudio + [!IntegerGreaterThan(Player.TimeRemaining,1) + !IntegerGreaterThan(MusicPlayer.PlaylistPosition,1) | SubString(Player.FolderPath,mms://)] + !IsEmpty(Player.Title)">[COLOR yellow]$INFO[Player.Title][/COLOR] $LOCALIZE[79033] $LOCALIZE[19021]: </value>
+	<value description="מנגן רדיו" condition="Player.HasAudio + [!IntegerGreaterThan(Player.TimeRemaining,1) + !IntegerGreaterThan(MusicPlayer.PlaylistPosition,1) | SubString(Player.FolderPath,mms://)] + !IsEmpty(Player.Filename)">[COLOR yellow]$INFO[Player.Filename][/COLOR] $LOCALIZE[79033] $LOCALIZE[19021]: </value>
+	<value description="מנגן רדיו (PVR)" condition="Pvr.IsPlayingRadio + !IsEmpty(MusicPlayer.ChannelName)">[COLOR yellow][B]$INFO[MusicPlayer.ChannelName][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[19021]: </value>
+	<value description="מנגן רדיו (PVR)" condition="Pvr.IsPlayingRadio">[COLOR yellow][B]$INFO[Player.Filename][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[19021]: </value>
 	<value description="" condition="SubString(MusicPlayer.Title,featherence)">•••••</value>
-	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !IsEmpty(MusicPlayer.Artist) + !IsEmpty(MusicPlayer.Album)">[COLOR Yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR Yellow][B]$INFO[MusicPlayer.Album][/B][/COLOR] • $LOCALIZE[558]: [COLOR Yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[179]: </value>	
-	<value condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + !IsEmpty(MusicPlayer.Album)" description="">[COLOR Yellow][B]$INFO[MusicPlayer.Album][/B][/COLOR] • $LOCALIZE[558]: [COLOR Yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[179]: </value>	
-	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">[COLOR Yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR Yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[179]: </value>	
-	<value description="מנגן שיר_he" condition="StringCompare(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">[COLOR Yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[179]: </value>
-	<value description="מנגן שיר_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">$LOCALIZE[79033] $LOCALIZE[179]: [COLOR Yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR]</value>
+	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !IsEmpty(MusicPlayer.Artist) + !IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR yellow][B]$INFO[MusicPlayer.Album][/B][/COLOR] • $LOCALIZE[558]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[179]: </value>	
+	<value condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + !IsEmpty(MusicPlayer.Album)" description="">[COLOR yellow][B]$INFO[MusicPlayer.Album][/B][/COLOR] • $LOCALIZE[558]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[179]: </value>	
+	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[179]: </value>	
+	<value description="מנגן שיר_he" condition="StringCompare(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[179]: </value>
+	<value description="מנגן שיר_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">$LOCALIZE[79033] $LOCALIZE[179]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR]</value>
   </variable>
   <variable name="TopInformation3.1" description="() אמצע">
-	<value description="בחר צבע" condition="Skin.HasSetting(Admin3) + Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[COLOR Yellow]$INFO[Window.Property(colorname)][/COLOR]</value>
+	<value description="בחר צבע" condition="Skin.HasSetting(Admin3) + Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[COLOR yellow]$INFO[Window.Property(colorname)][/COLOR]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(Custom1170.xml)">CHOOSEN: $INFO[Window(home).Property(SelectedColorName)]</value>
     <value condition="Skin.HasSetting(Admin) + !SubString(Container.FolderName,Advanced Launcher)">$INFO[System.CpuUsage] • $INFO[System.CpuFrequency] • $INFO[System.CPUTemperature] • $INFO[System.FreeMemory] • $INFO[System.FPS]</value>
 	<value description="הזזת פריט" condition="Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Window(home).Property(Button.Name))">MOVING [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
 	<value description="עריכת כפתור בתפריט משני" condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(SubButton.Name))">SUB MENU [B]$INFO[Window(home).Property(SubButton.Name)][/B]</value>
 	<value description="עריכת כפתור בית" condition="Window.IsVisible(Custom1175.xml) + !IsEmpty(Window(home).Property(Button.Name))">EDIT [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
-	<value description="מזג אוויר_he" condition="StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">[COLOR Yellow][B]$INFO[Weather.Location][/COLOR][/B] $LOCALIZE[35500]: </value>
-	<value description="מזג אוויר_en" condition="!StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">$LOCALIZE[35500]: [COLOR Yellow][B]$INFO[Weather.Location][/COLOR][/B]</value>	
+	<value description="מזג אוויר_he" condition="StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">[COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B] $LOCALIZE[35500]: </value>
+	<value description="מזג אוויר_en" condition="!StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">$LOCALIZE[35500]: [COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B]</value>	
 	<value description="Home" condition="Window.IsActive(home) + [Control.HasFocus(311) | Control.HasFocus(312)] + !IsEmpty(System.CurrentControl)">$INFO[System.CurrentControl]</value>	
 	<value description="Home" condition="Window.IsActive(home)">•••••••</value>	
-	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !IsEmpty(Slideshow.EXIFDate)]">[COLOR Yellow][B]$INFO[Slideshow.EXIFDate][/B][/COLOR] • $LOCALIZE[552]: [COLOR Yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
-	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.EXIFDate) + !IsEmpty(Slideshow.Filedate)]">[COLOR Red][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR Yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
-	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + SubString(Slideshow.Filename,airplay_photo)]">[COLOR Yellow][B]תמונות מהאייפון/אייפד[/B][/COLOR]</value>
-	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR Yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
-	<value condition="!IsEmpty(ListItem.Label) + IsEmpty(Control.GetLabel(1105)) + IsEmpty(Control.GetLabel(1106))">[COLOR Yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
-	<!--<value condition="!IsEmpty(System.CurrentControl) + !Window.IsVisible(MyVideoNav.xml)">[COLOR Yellow][B]$INFO[System.CurrentControl][/B][/COLOR]</value>--> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !IsEmpty(Slideshow.EXIFDate)]">[COLOR yellow][B]$INFO[Slideshow.EXIFDate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.EXIFDate) + !IsEmpty(Slideshow.Filedate)]">[COLOR red][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + SubString(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות מהאייפון/אייפד[/B][/COLOR]</value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
+	<value condition="!IsEmpty(ListItem.Label) + IsEmpty(Control.GetLabel(1105)) + IsEmpty(Control.GetLabel(1106))">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
+	<!--<value condition="!IsEmpty(System.CurrentControl) + !Window.IsVisible(MyVideoNav.xml)">[COLOR yellow][B]$INFO[System.CurrentControl][/B][/COLOR]</value>--> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
   </variable>
   
   <variable name="TopVideoInformation1112a">
@@ -521,39 +557,39 @@
     <value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows) | StringCompare(Container.FolderName,Genesis)]">$LOCALIZE[33054]</value>
   </variable>
   <variable name="VideoInHours">
-    <value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,285) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),285)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,17100) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),285)]]">5</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,255) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),255)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,15300) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),255)]]">4.5</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,225) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),225)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,13500) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),225)]]">4</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,195) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),195)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,11700) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),195)]]">3.5</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,165) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),165)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,9900) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),165)]]">3</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,135) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),135)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,8100) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),135)]]">2.5</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,105) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),105)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,6300) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),105)]]">2</value>
-    <value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,75) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),75)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,4500) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),75)]]">1.5</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,55) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),55)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,3300) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),55)]]">1</value>
+    <value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,285)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),285)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,17100) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),285)]]">5</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,255)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),255)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,15300) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),255)]]">4.5</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,225)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),225)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,13500) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),225)]]">4</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,195)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),195)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,11700) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),195)]]">3.5</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,165)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),165)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,9900) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),165)]]">3</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,135)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),135)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,8100) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),135)]]">2.5</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,105)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),105)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,6300) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),105)]]">2</value>
+    <value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,75)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),75)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,4500) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),75)]]">1.5</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,55)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),55)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,3300) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),55)]]">1</value>
 	<value description="HOURS" condition="SubString(Container.FolderPath,plugin://plugin.video.genesis/?) + IntegerGreaterThan(ListItem.Duration,0) + !IntegerGreaterThan(ListItem.Duration,5)">1</value>
-	<!--<value description="N/A" condition="IntegerGreaterThan(Window(home).Property(TopVideoInformation1),25) | IntegerGreaterThan(ListItem.Duration,25) | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + IntegerGreaterThan(Player.Duration,1500)]">0.5</value>-->
+	<!--<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(Window(home).Property(TopVideoInformation1),25) | IntegerGreaterThan(ListItem.Duration,25) | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + IntegerGreaterThan(Player.Duration,1500)]">0.5</value>-->
   </variable>
   <variable name="VideoInMins">
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,47.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),47.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,2850) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),47.5)]]">50</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,42.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),42.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,2550) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),42.5)]]">45</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,37.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),37.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,2250) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),37.5)]]">40</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,32.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),32.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,1950) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),32.5)]]">35</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,27.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),27.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,1650) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),27.5)]]">30</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,22.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),22.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,1350) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),22.5)]]">25</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,17.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),17.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,1050) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),17.5)]]">20</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,12.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),12.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,750) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),12.5)]]">15</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,7.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),7.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,450) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),7.5)]]">10</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,4.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),4.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,270) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),4.5)]]">5</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,3.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),3.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,216) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),3.5)]]">4</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,2.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),2.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,162) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),2.5)]]">3</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,1.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),1.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,108) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),1.5)]]">2</value>
-	<value description="N/A" condition="IntegerGreaterThan(ListItem.Duration,0.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),0.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,54) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),0.5)]]">1</value>
-	<value description="N/A" condition="!IntegerGreaterThan(ListItem.Duration,0.5) | [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + !IntegerGreaterThan(Window(home).Property(ListItemDuration),0.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [!IntegerGreaterThan(Player.Duration,54) | !IntegerGreaterThan(Window(home).Property(TopVideoInformation1),0.5)]]">0</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,47.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),47.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,2850) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),47.5)]]">50</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,42.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),42.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,2550) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),42.5)]]">45</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,37.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),37.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,2250) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),37.5)]]">40</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,32.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),32.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,1950) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),32.5)]]">35</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,27.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),27.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,1650) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),27.5)]]">30</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,22.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),22.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,1350) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),22.5)]]">25</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,17.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),17.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,1050) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),17.5)]]">20</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,12.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),12.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,750) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),12.5)]]">15</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,7.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),7.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,450) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),7.5)]]">10</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,4.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),4.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,270) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),4.5)]]">5</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,3.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),3.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,216) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),3.5)]]">4</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,2.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),2.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,162) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),2.5)]]">3</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,1.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),1.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,108) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),1.5)]]">2</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,0.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),0.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,54) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),0.5)]]">1</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + !IntegerGreaterThan(ListItem.Duration,0.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + !IntegerGreaterThan(Window(home).Property(ListItemDuration),0.5)] | [[Window.IsVisible(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [!IntegerGreaterThan(Player.Duration,54) | !IntegerGreaterThan(Window(home).Property(TopVideoInformation1),0.5)]]">0</value>
   </variable>
   
   <variable name="centermenu_color">
-    <value condition="!SubString(ListItem.Property(id),_90) | Window.IsVisible(Home.xml)">Yellow</value>
-	<value condition="SubString(ListItem.Property(id),_90) + !Window.IsVisible(Home.xml)">Grey</value>
+    <value condition="!SubString(ListItem.Property(id),_90) | Window.IsVisible(Home.xml)">yellow</value>
+	<value condition="SubString(ListItem.Property(id),_90) + !Window.IsVisible(Home.xml)">grey</value>
   </variable>
   <variable name="VideoPlayerForwardRewindVar" description="(DialogSeekbar)">
 	  <value condition="Player.Forwarding2x | Player.Rewinding2x">2x</value>
@@ -562,255 +598,6 @@
 	  <value condition="Player.Forwarding16x | Player.Rewinding16x">16x</value>
 	  <value condition="Player.Forwarding32x | Player.Rewinding32x">32x</value>
   </variable>
-	<variable name="GenreLabel">
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31600]) | SubString(ListItem.Label,Action) | SubString(ListItem.Label,אקשן)">$LOCALIZE[31600]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31601]) | SubString(ListItem.Label,Adventure)">$LOCALIZE[31601]</value>
-		<value condition="[SubString(ListItem.Label,$LOCALIZE[31602]) | SubString(ListItem.Label,Animation)] + [!SubString(ListItem.Label,$LOCALIZE[31653]) + !SubString(ListItem.Label,Film & Animation)]">$LOCALIZE[31602]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31603]) | SubString(ListItem.Label,Biography)">$LOCALIZE[31603]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31604]) | SubString(ListItem.Label,Children)">$LOCALIZE[31604]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31605]) | SubString(ListItem.Label,Comedy)">$LOCALIZE[31605]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31606]) | SubString(ListItem.Label,Crime)">$LOCALIZE[31606]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31607]) | SubString(ListItem.Label,Disaster)">$LOCALIZE[31607]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31608]) | SubString(ListItem.Label,Document)">$LOCALIZE[31608]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31609]) | SubString(ListItem.Label,Drama)">$LOCALIZE[31609]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31610]) | SubString(ListItem.Label,Family)">$LOCALIZE[31610]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31611]) | SubString(ListItem.Label,Fantasy)">$LOCALIZE[31611]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31638]) | SubString(ListItem.Label,Foreign)">$LOCALIZE[31638]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31612]) | SubString(ListItem.Label,History) | SubString(ListItem.Label,הסטוריה)">$LOCALIZE[31612]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31613]) | SubString(ListItem.Label,Holiday)">$LOCALIZE[31613]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31614]) | SubString(ListItem.Label,Horror)">$LOCALIZE[31614]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31615]) | SubString(ListItem.Label,Indie)">$LOCALIZE[31615]</value>
-		<value condition="[SubString(ListItem.Label,$LOCALIZE[31616]) | SubString(ListItem.Label,Music) | SubString(ListItem.Label,מוסיקה)] + [!SubString(ListItem.Label,$LOCALIZE[31646]) + !SubString(ListItem.Label,Musical)]">$LOCALIZE[31616]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31617]) | SubString(ListItem.Label,Mystery) | SubString(ListItem.Label,מסתורין)">$LOCALIZE[31617]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31618]) | SubString(ListItem.Label,Romance)">$LOCALIZE[31618]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31619]) | SubString(ListItem.Label,Science Fiction) | SubString(ListItem.Label,Science-Fiction) | SubString(ListItem.Label,Sci-Fi)">$LOCALIZE[31619]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31620]) | SubString(ListItem.Label,Short)">$LOCALIZE[31620]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31621]) | SubString(ListItem.Label,Sport)">$LOCALIZE[31621]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31622]) | SubString(ListItem.Label,Suspense)">$LOCALIZE[31622]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31623]) | SubString(ListItem.Label,Thriller)">$LOCALIZE[31623]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31624]) | SubString(ListItem.Label,War)">$LOCALIZE[31624]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31625]) | SubString(ListItem.Label,Western)">$LOCALIZE[31625]</value>
-		
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31626]) | SubString(ListItem.Label,Game Show) | SubString(ListItem.Label,Game-Show)">$LOCALIZE[31626]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31627]) | StringCompare(ListItem.Label,News)">$LOCALIZE[31627]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31628]) | SubString(ListItem.Label,Reality) | SubString(ListItem.Label,Reality-TV)">$LOCALIZE[31628]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31629]) | SubString(ListItem.Label,Sitcom) | SubString(ListItem.Label,sitcom)">$LOCALIZE[31629]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31630]) | SubString(ListItem.Label,Talk Show) | SubString(ListItem.Label,Talk-Show)">$LOCALIZE[31630]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31631]) | SubString(ListItem.Label,Food)">$LOCALIZE[31631]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31632]) | SubString(ListItem.Label,Home and Garden) | SubString(ListItem.Label,Home-and-Garden)">$LOCALIZE[31632]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31633]) | SubString(ListItem.Label,Mini Series) | SubString(ListItem.Label,Mini-Series)">$LOCALIZE[31633]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31634]) | SubString(ListItem.Label,Soap)">$LOCALIZE[31634]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31635]) | SubString(ListItem.Label,Special Interest)">$LOCALIZE[31635]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31636]) | SubString(ListItem.Label,Travel)">$LOCALIZE[31636]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31637]) | SubString(ListItem.Label,Film Noir) | SubString(ListItem.Label,Film-Noir)">$LOCALIZE[31637]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31646]) | SubString(ListItem.Label,Musical)">$LOCALIZE[31646]</value>
-		
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31650]) | SubString(ListItem.Label,$LOCALIZE[19630]) | SubString(ListItem.Label,Technology)">$LOCALIZE[31650]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31651]) | SubString(ListItem.Label,People) | SubString(ListItem.Label,Blogs)">$LOCALIZE[31651]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31652]) | SubString(ListItem.Label,Entertain)">$LOCALIZE[31652]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31653]) | SubString(ListItem.Label,Film & Animation)">$LOCALIZE[31653]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31654]) | SubString(ListItem.Label,Autos & Vehicles)">$LOCALIZE[31654]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31655]) | SubString(ListItem.Label,News & Politics)">$LOCALIZE[31655]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31656]) | SubString(ListItem.Label,Education)">$LOCALIZE[31656]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31657]) | SubString(ListItem.Label,Pets & Animals)">$LOCALIZE[31657]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31658]) | SubString(ListItem.Label,Travel & Events)">$LOCALIZE[31658]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[15016]) | SubString(ListItem.Label,Gaming)">$LOCALIZE[15016]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31700]) | SubString(ListItem.Label,Driving) | SubString(ListItem.Label,Race)">$LOCALIZE[31700]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31701]) | SubString(ListItem.Label,Platform)">$LOCALIZE[31701]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31702]) | SubString(ListItem.Label,Run Jump)">$LOCALIZE[31702]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31703]) | SubString(ListItem.Label,Maze)">$LOCALIZE[31703]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31704]) | SubString(ListItem.Label,Digging)">$LOCALIZE[31704]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31705]) | SubString(ListItem.Label,Fighter)">$LOCALIZE[31705]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31706]) | SubString(ListItem.Label,Miscellaneous) | SubString(ListItem.Label,Misc.)">$LOCALIZE[31706]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31707]) | SubString(ListItem.Label,Shooter)">$LOCALIZE[31707]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31708]) | SubString(ListItem.Label,Puzzle)">$LOCALIZE[31708]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31709]) | SubString(ListItem.Label,Toss)">$LOCALIZE[31709]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31710]) | SubString(ListItem.Label,Hang Gliding)">$LOCALIZE[31710]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31711]) | SubString(ListItem.Label,1st Person)">$LOCALIZE[31711]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31712]) | SubString(ListItem.Label,Gun)">$LOCALIZE[31712]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31713]) | SubString(ListItem.Label,Flying Vertical)">$LOCALIZE[31713]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31714]) | SubString(ListItem.Label,Flying Horizontal)">$LOCALIZE[31714]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31715]) | SubString(ListItem.Label,Versus)">$LOCALIZE[31715]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31716]) | SubString(ListItem.Label,Multiplay)">$LOCALIZE[31716]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31717]) | SubString(ListItem.Label,2.5D)">$LOCALIZE[31717]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31718]) | SubString(ListItem.Label,Field)">$LOCALIZE[31718]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31719]) | SubString(ListItem.Label,3rd Person)">$LOCALIZE[31719]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31720]) | SubString(ListItem.Label,Co-op)">$LOCALIZE[31720]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31721]) | SubString(ListItem.Label,Golf)">$LOCALIZE[31721]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31722]) | SubString(ListItem.Label,Wrestling)">$LOCALIZE[31722]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31723]) | SubString(ListItem.Label,Hockey)">$LOCALIZE[31723]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31724]) | SubString(ListItem.Label,Role-Playing)">$LOCALIZE[31724]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31725]) | SubString(ListItem.Label,Simulation)">$LOCALIZE[31725]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31726]) | SubString(ListItem.Label,Strategy)">$LOCALIZE[31726]</value>
-		<value condition="Skin.HasSetting(Admin)">...</value>
-		<value>$INFO[ListItem.Label]</value>
-	</variable>
-	<variable name="GenreLabel2">
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31600]) | SubString(Container.FolderName,Action)">$LOCALIZE[31600]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31601]) | SubString(Container.FolderName,Adventure)">$LOCALIZE[31601]</value>
-		<value condition="[SubString(Container.FolderName,$LOCALIZE[31602]) | SubString(Container.FolderName,Animation)] + [!SubString(Container.FolderName,$LOCALIZE[31653]) + !SubString(Container.FolderName,Film & Animation)]">$LOCALIZE[31602]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31603]) | SubString(Container.FolderName,Biography)">$LOCALIZE[31603]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31604]) | SubString(Container.FolderName,Children)">$LOCALIZE[31604]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31605]) | SubString(Container.FolderName,Comedy)">$LOCALIZE[31605]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31606]) | SubString(Container.FolderName,Crime) | SubString(ListItem.Label,פשע)">$LOCALIZE[31606]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31607]) | SubString(Container.FolderName,Disaster)">$LOCALIZE[31607]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31608]) | SubString(Container.FolderName,Document)">$LOCALIZE[31608]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31609]) | SubString(Container.FolderName,Drama)">$LOCALIZE[31609]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31610]) | SubString(Container.FolderName,Family)">$LOCALIZE[31610]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31611]) | SubString(Container.FolderName,Fantasy)">$LOCALIZE[31611]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31638]) | SubString(Container.FolderName,Foreign)">$LOCALIZE[31638]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31612]) | SubString(Container.FolderName,History) | SubString(ListItem.Label,הסטוריה)">$LOCALIZE[31612]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31613]) | SubString(Container.FolderName,Holiday)">$LOCALIZE[31613]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31614]) | SubString(Container.FolderName,Horror)">$LOCALIZE[31614]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31615]) | SubString(Container.FolderName,Indie)">$LOCALIZE[31615]</value>
-		<value condition="[SubString(Container.FolderName,$LOCALIZE[31616]) | SubString(Container.FolderName,Music)] + [!SubString(Container.FolderName,$LOCALIZE[31646]) + !SubString(Container.FolderName,Musical)]">$LOCALIZE[31616]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31617]) | SubString(Container.FolderName,Mystery) | SubString(Container.FolderName,מסתורין)">$LOCALIZE[31617]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31618]) | SubString(Container.FolderName,Romance)">$LOCALIZE[31618]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31619]) | SubString(Container.FolderName,Science Fiction) | SubString(Container.FolderName,Science-Fiction) | SubString(Container.FolderName,Sci-Fi)">$LOCALIZE[31619]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31620]) | SubString(Container.FolderName,Short)">$LOCALIZE[31620]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31621]) | SubString(Container.FolderName,Sport)">$LOCALIZE[31621]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31622]) | SubString(Container.FolderName,Suspense)">$LOCALIZE[31622]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31623]) | SubString(Container.FolderName,Thriller)">$LOCALIZE[31623]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31624]) | SubString(Container.FolderName,War)">$LOCALIZE[31624]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31625]) | SubString(Container.FolderName,Western)">$LOCALIZE[31625]</value>
-		
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31626]) | SubString(Container.FolderName,Game Show) | SubString(Container.FolderName,Game-Show)">$LOCALIZE[31626]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31627]) | StringCompare(Container.FolderName,News)">$LOCALIZE[31627]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31628]) | SubString(Container.FolderName,Reality) | SubString(Container.FolderName,Reality-TV)">$LOCALIZE[31628]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31629]) | SubString(Container.FolderName,Sitcom) | SubString(Container.FolderName,sitcom)">$LOCALIZE[31629]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31630]) | SubString(Container.FolderName,Talk Show) | SubString(Container.FolderName,Talk-Show)">$LOCALIZE[31630]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31631]) | SubString(Container.FolderName,Food)">$LOCALIZE[31631]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31632]) | SubString(Container.FolderName,Home and Garden) | SubString(Container.FolderName,Home-and-Garden)">$LOCALIZE[31632]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31633]) | SubString(Container.FolderName,Mini Series) | SubString(Container.FolderName,Mini-Series)">$LOCALIZE[31633]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31634]) | SubString(Container.FolderName,Soap)">$LOCALIZE[31634]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31635]) | SubString(Container.FolderName,Special Interest)">$LOCALIZE[31635]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31636]) | SubString(Container.FolderName,Travel)">$LOCALIZE[31636]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31637]) | SubString(Container.FolderName,Film Noir) | SubString(Container.FolderName,Film-Noir)">$LOCALIZE[31637]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31646]) | SubString(Container.FolderName,Musical)">$LOCALIZE[31646]</value>
-		
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31650]) | SubString(Container.FolderName,$LOCALIZE[19630]) | SubString(Container.FolderName,Technology)">$LOCALIZE[31650]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31651]) | SubString(Container.FolderName,People) | SubString(Container.FolderName,Blogs)">$LOCALIZE[31651]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31652]) | SubString(Container.FolderName,Entertain)">$LOCALIZE[31652]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31653]) | SubString(Container.FolderName,Film & Animation)">$LOCALIZE[31653]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31654]) | SubString(Container.FolderName,Autos & Vehicles)">$LOCALIZE[31654]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31655]) | SubString(Container.FolderName,News & Politics)">$LOCALIZE[31655]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31656]) | SubString(Container.FolderName,Education)">$LOCALIZE[31656]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31657]) | SubString(Container.FolderName,Pets & Animals)">$LOCALIZE[31657]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31658]) | SubString(Container.FolderName,Travel & Events)">$LOCALIZE[31658]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[15016]) | SubString(Container.FolderName,Gaming)">$LOCALIZE[15016]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31700]) | SubString(Container.FolderName,Driving) | SubString(Container.FolderName,Race)">$LOCALIZE[31700]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31701]) | SubString(Container.FolderName,Platform)">$LOCALIZE[31701]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31702]) | SubString(Container.FolderName,Run Jump)">$LOCALIZE[31702]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31703]) | SubString(Container.FolderName,Maze)">$LOCALIZE[31703]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31704]) | SubString(Container.FolderName,Digging)">$LOCALIZE[31704]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31705]) | SubString(Container.FolderName,Fighter)">$LOCALIZE[31705]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31706]) | SubString(Container.FolderName,Miscellaneous) | SubString(Container.FolderName,Misc.)">$LOCALIZE[31706]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31707]) | SubString(Container.FolderName,Shooter)">$LOCALIZE[31707]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31708]) | SubString(Container.FolderName,Puzzle)">$LOCALIZE[31708]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31709]) | SubString(Container.FolderName,Toss)">$LOCALIZE[31709]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31710]) | SubString(Container.FolderName,Hang Gliding)">$LOCALIZE[31710]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31711]) | SubString(Container.FolderName,1st Person)">$LOCALIZE[31711]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31712]) | SubString(Container.FolderName,Gun)">$LOCALIZE[31712]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31713]) | SubString(Container.FolderName,Flying Vertical)">$LOCALIZE[31713]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31714]) | SubString(Container.FolderName,Flying Horizontal)">$LOCALIZE[31714]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31715]) | SubString(Container.FolderName,Versus)">$LOCALIZE[31715]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31716]) | SubString(Container.FolderName,Multiplay)">$LOCALIZE[31716]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31717]) | SubString(Container.FolderName,2.5D)">$LOCALIZE[31717]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31718]) | SubString(Container.FolderName,Field)">$LOCALIZE[31718]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31719]) | SubString(Container.FolderName,3rd Person)">$LOCALIZE[31719]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31720]) | SubString(Container.FolderName,Co-op)">$LOCALIZE[31720]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31721]) | SubString(Container.FolderName,Golf)">$LOCALIZE[31721]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31722]) | SubString(Container.FolderName,Wrestling)">$LOCALIZE[31722]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31723]) | SubString(Container.FolderName,Hockey)">$LOCALIZE[31723]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31724]) | SubString(Container.FolderName,Role-Playing)">$LOCALIZE[31724]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31725]) | SubString(Container.FolderName,Simulation)">$LOCALIZE[31725]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31726]) | SubString(Container.FolderName,Strategy)">$LOCALIZE[31726]</value>
-		<value condition="Skin.HasSetting(Admin)">...</value>
-		<value>$INFO[Container.FolderName]</value>
-	</variable>
-
-	<variable name="GenrePic">
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31600]) | SubString(ListItem.Label,Action) | SubString(ListItem.Label,אקשן)">badges/genre/Action.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31601]) | SubString(ListItem.Label,Adventure)">badges/genre/Adventure.png</value>
-		<value condition="[SubString(ListItem.Label,$LOCALIZE[31602]) | SubString(ListItem.Label,Animation)] + [!SubString(ListItem.Label,$LOCALIZE[31653]) + !SubString(ListItem.Label,Film & Animation)]">badges/genre/Animation.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31603]) | SubString(ListItem.Label,Biography)">badges/genre/Biography.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31604]) | SubString(ListItem.Label,Children)">badges/genre/Children.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31605]) | SubString(ListItem.Label,Comedy)">badges/genre/Comedy.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31606]) | SubString(ListItem.Label,Crime)">badges/genre/Crime.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31607]) | SubString(ListItem.Label,Disaster)">badges/genre/Disaster.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31608]) | SubString(ListItem.Label,Document) | SubString(ListItem.Label,דוקומנטרי)">badges/genre/Document.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31609]) | SubString(ListItem.Label,Drama)">badges/genre/Drama.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31610]) | SubString(ListItem.Label,Family)">badges/genre/Family.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31611]) | SubString(ListItem.Label,Fantasy)">badges/genre/Fantasy.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31638]) | SubString(ListItem.Label,Foreign)"></value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31612]) | SubString(ListItem.Label,History) | SubString(ListItem.Label,הסטוריה)">badges/genre/History.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31613]) | SubString(ListItem.Label,Holiday)">badges/genre/Holiday.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31614]) | SubString(ListItem.Label,Horror)">badges/genre/Horror.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31615]) | SubString(ListItem.Label,Indie)">badges/genre/Indie.png</value>
-		<value condition="[SubString(ListItem.Label,$LOCALIZE[31616]) | SubString(ListItem.Label,Music) | SubString(ListItem.Label,מוסיקה)] + [!SubString(ListItem.Label,$LOCALIZE[31646]) + !SubString(ListItem.Label,Musical)]">badges/genre/Music.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31617]) | SubString(ListItem.Label,Mystery) | SubString(ListItem.Label,מסתורין)">badges/genre/Mystery.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31618]) | SubString(ListItem.Label,Romance)">badges/genre/Romance.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31619]) | SubString(ListItem.Label,Science Fiction) | SubString(ListItem.Label,Science-Fiction) | SubString(ListItem.Label,Sci-Fi)">badges/genre/Sci-Fi.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31620]) | SubString(ListItem.Label,Short)">badges/genre/Short.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31621]) | SubString(ListItem.Label,Sport)">badges/genre/Sport.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31622]) | SubString(ListItem.Label,Suspense)">badges/genre/Suspense.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31623]) | SubString(ListItem.Label,Thriller)">badges/genre/Thriller.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31624]) | SubString(ListItem.Label,War)">badges/genre/War.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31625]) | SubString(ListItem.Label,Western) | SubString(ListItem.Label,מערבון)">badges/genre/Western.png</value>
-		
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31626]) | SubString(ListItem.Label,Game Show) | SubString(ListItem.Label,Game-Show)">badges/genre/Game-Show.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31627]) | StringCompare(ListItem.Label,News)">badges/genre/News.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31628]) | SubString(ListItem.Label,Reality) | SubString(ListItem.Label,Reality-TV)">badges/genre/Reality.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31629]) | SubString(ListItem.Label,Sitcom) | SubString(ListItem.Label,sitcom)">badges/genre/Sitcom.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31630]) | SubString(ListItem.Label,Talk Show) | SubString(ListItem.Label,Talk-Show) | SubString(ListItem.Label,דיבורים)">badges/genre/Talk-Show.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31631]) | SubString(ListItem.Label,Food)">badges/genre/Food.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31632]) | SubString(ListItem.Label,Home and Garden) | SubString(ListItem.Label,Home-and-Garden)">badges/genre/Home-and-Garden.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31633]) | SubString(ListItem.Label,Mini Series) | SubString(ListItem.Label,Mini-Series)">badges/genre/Mini-Series.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31634]) | SubString(ListItem.Label,Soap) | SubString(ListItem.Label,סבון)">badges/genre/Soap.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31635]) | SubString(ListItem.Label,Special Interest)">badges/genre/Special-Interest.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31636]) | SubString(ListItem.Label,Travel)">badges/genre/Travel.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31637]) | SubString(ListItem.Label,Film Noir) | SubString(ListItem.Label,Film-Noir)">badges/genre/Film-Noir.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31646]) | SubString(ListItem.Label,Musical)">badges/genre/Musical.png</value>
-		
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31650]) | SubString(ListItem.Label,$LOCALIZE[19630]) | SubString(ListItem.Label,Technology)">badges/genre/Technology.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31651]) | SubString(ListItem.Label,People) | SubString(ListItem.Label,Blogs)">badges/genre/People.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31652]) | SubString(ListItem.Label,Entertain)">badges/genre/Entertainment.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31653]) | SubString(ListItem.Label,Film & Animation)">badges/genre/Entertainment.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31654]) | SubString(ListItem.Label,Autos & Vehicles)">badges/genre/Driving.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31655]) | SubString(ListItem.Label,News & Politics)">badges/genre/News.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31656]) | SubString(ListItem.Label,Education)">badges/genre/Biography.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31657]) | SubString(ListItem.Label,Pets & Animals)">badges/genre/Animals.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31658]) | SubString(ListItem.Label,Travel & Events)">badges/genre/Travel.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[15016]) | SubString(ListItem.Label,Gaming)">badges/genre/Platform.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31700]) | SubString(ListItem.Label,Driving) | SubString(ListItem.Label,Race)">badges/genre/Driving.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31701]) | SubString(ListItem.Label,Platform)">badges/genre/Platform.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31702]) | SubString(ListItem.Label,Run Jump)">badges/genre/Run Jump.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31703]) | SubString(ListItem.Label,Maze)">badges/genre/Maze.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31704]) | SubString(ListItem.Label,Digging)">badges/genre/Digging.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31705]) | SubString(ListItem.Label,Fighter)">badges/genre/Fighter.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31706]) | SubString(ListItem.Label,Miscellaneous) | SubString(ListItem.Label,Misc.)">badges/genre/Miscellaneous.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31707]) | SubString(ListItem.Label,Shooter)">badges/genre/Shooter.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31708]) | SubString(ListItem.Label,Puzzle)">badges/genre/Puzzle.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31709]) | SubString(ListItem.Label,Toss)">badges/genre/Toss.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31710]) | SubString(ListItem.Label,Hang Gliding)">badges/genre/Hang Gliding.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31711]) | SubString(ListItem.Label,1st Person)">badges/genre/1st Person.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31712]) | SubString(ListItem.Label,Gun)">badges/genre/Gun.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31713]) | SubString(ListItem.Label,Flying Vertical)">badges/genre/Flying.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31714]) | SubString(ListItem.Label,Flying Horizontal)">badges/genre/Flying.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31715]) | SubString(ListItem.Label,Versus)">badges/genre/Versus.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31716]) | SubString(ListItem.Label,Multiplay)">badges/genre/Multiplay.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31717]) | SubString(ListItem.Label,2.5D)">badges/genre/2.5D.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31718]) | SubString(ListItem.Label,Field)">badges/genre/Field.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31719]) | SubString(ListItem.Label,3rd Person)">badges/genre/3rd Person.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31720]) | SubString(ListItem.Label,Co-op)">badges/genre/Co-op.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31721]) | SubString(ListItem.Label,Golf)">badges/genre/Golf.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31722]) | SubString(ListItem.Label,Wrestling)">badges/genre/Wrestling.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31723]) | SubString(ListItem.Label,Hockey)">badges/genre/Hockey.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31724]) | SubString(ListItem.Label,Role-Playing)">badges/genre/Role-Playing.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31725]) | SubString(ListItem.Label,Simulation)">badges/genre/Simulation.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31726]) | SubString(ListItem.Label,Strategy)">badges/genre/Strategy.png</value>
-	</variable>
-	
 	<variable name="tips">
 	  <value condition="StringCompare(Window(home).Property(tips),1)">[B]Featherence Support Team[/B][CR]Did you know?[CR]We are offering support for all of our addons.[CR]For support send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook support group:[CR]https://www.facebook.com/groups/featherence</value>
 	  <value condition="StringCompare(Window(home).Property(tips),2)">[B]AutoView:[/B][CR]Did you know?[CR]You can force your preferred view for predefined categories such as: Movies/TVshows/Seasons/Episodes/Movies Set/Actors/Genre and more...</value>

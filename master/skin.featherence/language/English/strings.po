@@ -122,8 +122,8 @@ msgid "Choose a color for the selector frame.[CR]Selector frame is an optional s
 msgstr "בחר צבע עבור מסגרת בחירה.[CR]מסגרת בחירה הינה אפשרות שיש להפעיל בסקין."
 
 msgctxt "#31046
-msgid ""
-msgstr ""
+msgid "Wider Menu"
+msgstr "תפריט רחב"
 
 msgctxt "#31047
 msgid ""
@@ -477,6 +477,10 @@ msgctxt "#31134
 msgid "Choose the level of fade for buttons."
 msgstr "בחר את רמת שקיפות הכפתורים."
 
+msgctxt "#31135"
+msgid "More movies of this writer"
+msgstr "סרטים נוספים של כותב זה"
+
 msgctxt "#31411
 msgid "Our Channel"
 msgstr "הערוץ שלנו"
@@ -484,6 +488,10 @@ msgstr "הערוץ שלנו"
 msgctxt "#31412
 msgid "No changes were made"
 msgstr "לא בוצעו שינויים"
+
+msgctxt "#31413
+msgid "Director Info"
+msgstr "מידע במאי"
 
 msgctxt "#31600
 msgid "Action"
@@ -2562,10 +2570,6 @@ msgstr "אתחול מהיר"
 msgctxt "#79073"
 msgid "Go to tvshow"
 msgstr "לך לסדרה"
-
-msgctxt "#79074"
-msgid "More movies of this director"
-msgstr "סרטים נוספים של במאי זה"
 
 msgctxt "#79075"
 msgid "return"

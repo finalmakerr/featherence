@@ -93,7 +93,11 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 									'''---------------------------'''
 									
 		else: printpoint = printpoint + "9"				
-		if admin: print "Admin-Test_LV" + printpoint + space + "dirname" + space2 + str(dirname) + space + "subdir" + space2 + str(subdir) + space + "subdir_level" + space2 + str(subdir_level) + space + "subdir2" + space2 + str(subdir2) + space + "files" + space2 + str(files) + space + "file" + space2 + str(file) + space + "level" + space2 + str(level) + space + extra2
+		if admin:
+			print "Admin-Test_LV" + printpoint + space + "dirname" + space2 + str(to_utf8(dirname)) + newline + \
+			"subdir" + space2 + to_unicode(subdir) + space + "subdir_level" + space2 + str(subdir_level) + space + "subdir2" + space2 + str(to_utf8(subdir2)) + space + "files" + space2 + str(to_utf8(files)) + newline + \
+			"file" + space2 + str(to_utf8(file)) + space + "level" + space2 + str(level) + newline + \
+			'to_utf8(extra2)'
 	
 	#except Exception, TypeError:
 	#TypeError = str(TypeError) + space + "os.walk(src)" + space2 + str(os.walk(src)) + space + "src" + space2 + str(src) + space + "dirname" + space2 + dirname + space + "files" + space2 + str(files)
@@ -121,7 +125,23 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 	---PRINT-END---------------------
 	------------------------------'''
 	if TypeError != "": extra = newline + "TypeError:" + space2 + str(TypeError)
-	text = "src" + space2 + str(src) + space + "dst" + space2 + str(dst) + space + "filteron" + space2 + str(filteron) + space + "filteroff" + space2 + str(filteroff) + space + "level" + space2 + str(level) + space + newline + "arcname" + space2 + str(arcname) + space + "absname" + space2 + str(absname) + space + "abs_src" + space2 + str(abs_src) + space + "dirname" + space2 + str(dirname) + space + "files" + space2 + str(files) + space + "subdirs" + space2 + str(subdirs) + space + "subdir" + space2 + str(subdir) + space + extra
+	text = ""
+	try: text = text + "src" + space2 + str(src) + space + "dst" + space2 + str(dst) + space + "filteron" + space2 + str(filteron) + space + "filteroff" + space2 + str(filteroff) + newline
+	except Exception, TypeError: extra = extra + newline + 'TypeError' + space2 + str(TypeError)
+	try: text = text + "level" + space2 + str(level) + space + "arcname" + space2 + str(arcname) + space + "abs_src" + space2 + str(abs_src) + newline
+	except Exception, TypeError: extra = extra + newline + 'TypeError' + space2 + str(TypeError)
+	try: text = text + "absname" + space2 + str(absname) + newline
+	except Exception, TypeError: extra = extra + newline + 'TypeError' + space2 + str(TypeError)
+	try: text = text + "dirname" + space2 + str(dirname) + newline
+	except Exception, TypeError: extra = extra + newline + 'TypeError' + space2 + str(TypeError)
+	try: text = text + "files" + space2 + str(files) + newline
+	except Exception, TypeError: extra = extra + newline + 'TypeError' + space2 + str(TypeError)
+	try: text = text + "subdirs" + space2 + str(subdirs) + newline
+	except Exception, TypeError: extra = extra + newline + 'TypeError' + space2 + str(TypeError)
+	try: text = text + "subdir" + space2 + to_unicode(subdir) + newline
+	except Exception, TypeError: extra = extra + newline + 'TypeError' + space2 + str(TypeError)
+	try: text = text + extra
+	except Exception, TypeError: extra = extra + newline + 'TypeError' + space2 + str(TypeError)
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 	'''---------------------------'''
 	return returned	
@@ -511,10 +531,10 @@ def setAddon_UpdateLog(admin, Addon_Version, Addon_UpdateDate, Addon_ShowLog, Ad
 			if admin: notification("number2S:" + number2S,"","",2000)
 			number2N = int(number2S)
 			'''---------------------------'''
-			#header = '[COLOR=Yellow]' + addonString(304).encode('utf-8') + " - " + addonVersion + '[/COLOR]'
-			if number2N == 0: header = '[COLOR=Yellow]' + localize(24065) + space + localize(33006) + space5 + Addon_Version + '[/COLOR]'
-			elif number2N == 1: header = '[COLOR=Green]' + localize(24065) + space + addonString_servicefeatherence(5).encode('utf-8') + space5 + Addon_Version + '[/COLOR]'
-			elif number2N <= 7: header = '[COLOR=Purple]' + localize(24065) + space + addonString_servicefeatherence(6).encode('utf-8') + space5 + Addon_Version + '[/COLOR]'
+			#header = '[COLOR=yellow]' + addonString(304).encode('utf-8') + " - " + addonVersion + '[/COLOR]'
+			if number2N == 0: header = '[COLOR=yellow]' + localize(24065) + space + localize(33006) + space5 + Addon_Version + '[/COLOR]'
+			elif number2N == 1: header = '[COLOR=green]' + localize(24065) + space + addonString_servicefeatherence(5).encode('utf-8') + space5 + Addon_Version + '[/COLOR]'
+			elif number2N <= 7: header = '[COLOR=purple]' + localize(24065) + space + addonString_servicefeatherence(6).encode('utf-8') + space5 + Addon_Version + '[/COLOR]'
 			else: header = ""
 			'''---------------------------'''
 			if number2N <= int(Addon_ShowLog2):
@@ -1632,6 +1652,14 @@ def installaddonP(admin, addon, update=True):
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
 	
+	elif addon == 'script.extendedinfo': #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("http://ftp.vim.org/ftp/mediaplayer/xbmc/addons/helix/script.extendedinfo/script.extendedinfo-3.1.2.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+		
 	elif addon == 'plugin.video.OperationRobocopUltimate': #FIXED PATH
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			DownloadFile("https://github.com/hmemar/husham.com/raw/master/zip/plugin.video.OperationRobocopUltimate/plugin.video.OperationRobocopUltimate-1.9.667.zip", addon + ".zip", packages_path, addons_path, silent=True)
@@ -1966,7 +1994,7 @@ def removefiles(path, filteroff=[], dialogprogress=""):
 		
 		else: printpoint = printpoint + "8"
 	
-	if "0" in printpoint or admin3 == 'true' or TypeError != "": print printfirst + name + "_LV" + printpoint + space + "path" + space2 + str(path) + extra
+	if "0" in printpoint or admin3 == 'true' or TypeError != "": print printfirst + name + "_LV" + printpoint + space + "path" + space2 + to_utf8(path) + to_utf8(extra)
 	
 def copytree(source, target, symlinks=False, ignore=None):
 	import shutil
@@ -2102,7 +2130,7 @@ def notification_common(custom):
 	elif custom == "15":
 		playlistlength = xbmc.getInfoLabel('Playlist.Length(video)')
 		playlistposition = xbmc.getInfoLabel('Playlist.Position(video)')
-		notification('$LOCALIZE[74998]','[COLOR=Yellow]' + playlistposition + space4 + playlistlength + '[/COLOR]',"",2000) #Playlist Done,
+		notification('$LOCALIZE[74998]','[COLOR=yellow]' + playlistposition + space4 + playlistlength + '[/COLOR]',"",2000) #Playlist Done,
 	
 	elif custom == "16": notification("Downloading Files...","","",4000) #
 	
@@ -2114,9 +2142,10 @@ def notification_common(custom):
 	elif custom == "22": notification('$LOCALIZE[75062]','',"",4000) #The system is processing for solution...
 	elif custom == "23": notification(localize(78929), localize(78980),"",4000) #Active download in background
 	elif custom == "24": notification(localize(79195), localize(79154),"",2000) #Addon is missing! Trying to download addon
+	elif custom == "25": notification('OS not supported!','',2000) #Addon is missing! Trying to download addon
 	elif custom == "26": notification('File is missing!', "","",2000)
-	elif custom == "100": notification('$LOCALIZE[78971]' ,'[COLOR=Yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]' + space + addonString_servicefeatherence(10).encode('utf-8') + space,"",7000) #MVAZEH TIKUN YADANI
-	elif custom == "101": notification('$LOCALIZE[78971]' ,'[COLOR=Yellow]' + str74550.encode('utf-8') % (str36903.encode('utf-8')) + '[/COLOR]' + space + addonString_servicefeatherence(10).encode('utf-8') + space,"",7000) #MVAZEH TIKUN YADANI
+	elif custom == "100": notification('$LOCALIZE[78971]' ,'[COLOR=yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]' + space + addonString_servicefeatherence(10).encode('utf-8') + space,"",7000) #MVAZEH TIKUN YADANI
+	elif custom == "101": notification('$LOCALIZE[78971]' ,'[COLOR=yellow]' + str74550.encode('utf-8') % (str36903.encode('utf-8')) + '[/COLOR]' + space + addonString_servicefeatherence(10).encode('utf-8') + space,"",7000) #MVAZEH TIKUN YADANI
 
 def replaceAll(file,searchExp,replaceExp):
     '''UNUSED?'''
@@ -2209,37 +2238,53 @@ def read_from_file(infile, silent=True, lines=False, retry=True, createlist=True
 		printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 		
 		return str(returned)
-		
+
 def regex_from_to(text, from_string, to_string, excluding=True):
-    import re
-    name = 'regex_from_to'
-    printpoint = "" ; TypeError = "" ; extra = ""
-    if excluding:
-        try: r = re.search("(?i)" + from_string + "([\S\s]+?)" + to_string, text).group(1)
-        except Exception, TypeError:
-            extra = newline + "TypeError" + space2 + str(TypeError)
-            try:
-				r = re.search("(?i)" + from_string + "([\S\s]+?)" + to_string, text)
-				if r == None: r = ""
-            except Exception, TypeError:
-			    extra = newline + "TypeError" + space2 + str(TypeError)
-			    r = ""
-    else:
-        try: r = re.search("(?i)(" + from_string + "[\S\s]+?" + to_string + ")", text).group(1)
-        except Exception, TypeError:
-            try:
+	import re
+	name = 'regex_from_to'
+	printpoint = "" ; TypeError = "" ; extra = ""
+	if excluding:
+		try: r = re.search("(?i)" + from_string + "([\S\s]+?)" + to_string, text).group(1)
+		except Exception, TypeError:
+			extra = newline + "TypeError" + space2 + str(TypeError)
+			try:
+			 r = re.search("(?i)" + from_string + "([\S\s]+?)" + to_string, text)
+			 if r == None: r = ""
+			except Exception, TypeError:
+				extra = newline + "TypeError" + space2 + str(TypeError)
+				r = ""
+	else:
+		try: r = re.search("(?i)(" + from_string + "[\S\s]+?" + to_string + ")", text).group(1)
+		except Exception, TypeError:
+			try:
 				extra = newline + "TypeError" + space2 + str(TypeError)
 				r = re.search("(?i)(" + from_string + "[\S\s]+?" + to_string + ")", text)
 				if r == None: r = from_string + to_string
-            except Exception, TypeError:
+			except Exception, TypeError:
 				extra = newline + "TypeError" + space2 + str(TypeError)
 				r = ""
 	
-    if excluding == True or r == "": text = "from_string" + space2 + str(from_string) + space + "to_string" + space2 + str(to_string) + space + "r" + space2 + str(r) + space + "text" + space2 + str(text) + space + extra
-    else: text = "regex_from_to" + space2 + "from_string" + space2 + "r" + space2 + str(r) + space + "text" + space2 + str(text) + space + extra
-    printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
-    return str(r)
+	r = to_utf8(r)
+	#text = text.encode('utf-8')
+	if excluding == True or r == "": text = "from_string" + space2 + str(from_string) + space + "to_string" + space2 + str(to_string) + space + "r" + space2 + to_unicode(r) + space + "text" + space2 + to_unicode(text) + space + extra
+	else: text = "regex_from_to" + space2 + "from_string" + space2 + "r" + space2 + str(r) + space + "text" + space2 + str(text) + space + extra
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	return str(r)
 
+def to_utf8(text):
+	result = text
+	if isinstance(text, unicode):
+		result = text.encode('utf-8')
+		pass
+	return result
+	
+def to_unicode(text):
+	result = text
+	if isinstance(text, str):
+		result = text.decode('utf-8')
+		pass
+	return result
+	
 def regex_get_all(text, start_with, end_with): #UNUSED
     import re
     r = re.findall("(?i)" + start_with + "([\S\s]+?)" + end_with, text)
@@ -2633,19 +2678,19 @@ class Custom1000_Dialog(xbmcgui.Window):
 	title = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
 	addonisrunning = xbmc.getInfoLabel('Window(home).Property(script.htpt.service_RUNNING)')
 	
-	self.strActionInfo = xbmcgui.ControlLabel(0, 0, 1260, 680,'', 'Size42B', 'White2','',6)
+	self.strActionInfo = xbmcgui.ControlLabel(0, 0, 1260, 680,'', 'Size42B', 'white2','',6)
 	self.addControl(self.strActionInfo)
 	self.strActionInfo.setLabel(localize(20186))
 	
 	if progress != "":
 		'''Create Dialog Progress'''
-		self.strActionInfo = xbmcgui.ControlLabel(0, 50, 1260, 680,'', 'size36B', 'Yellow','',6)
+		self.strActionInfo = xbmcgui.ControlLabel(0, 50, 1260, 680,'', 'size36B', 'yellow','',6)
 		self.addControl(self.strActionInfo)
 		self.strActionInfo.setLabel(progress)
 	
 	if title != "":
 		'''Create Subject'''
-		self.strActionInfo = xbmcgui.ControlLabel(0, 100, 1260, 680,'', 'size28', 'White','',6)
+		self.strActionInfo = xbmcgui.ControlLabel(0, 100, 1260, 680,'', 'size28', 'white','',6)
 		self.addControl(self.strActionInfo)
 		self.strActionInfo.setLabel(str(title))
 		
@@ -2742,7 +2787,7 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 	
 	#print 'admin: ' + str(admin) + ' admin2: ' + str(admin2) + ' admin3: ' + str(admin3) + space + 'exe' + space2 + str(exe)
 	if exe != "":
-		print printfirst + str(title) + '_LV' + str(printpoint) + space + str(text)
+		print printfirst + to_utf8(title) + '_LV' + str(printpoint) + space + to_utf8(text)
 
 def killall(admin, custom=""):
 	customgui = xbmc.getInfoLabel('Skin.HasSetting(CustomGUI)')

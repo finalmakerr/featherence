@@ -14,7 +14,7 @@ def CATEGORIES():
 	'''Go-Pro'''
 	#YOUList2("GoProCamera", 'UCqhnX4jA0A5paNd1v-zEysw', "", "", '1')
 	
-	addDir(localize(137),"Go-Pro",3,featherenceserviceicons_path + "se.png","Search Go-Pro Video",'1',58, getAddonFanart(9))
+	addDir(localize(137),"Go-Pro",3,featherenceserviceicons_path + "se.png","Search Go-Pro Video",'1',58, "")
 	'''Go-Pro'''
 	list = []
 	list.append('&youtube_ch=GoProCamera')
@@ -22,7 +22,15 @@ def CATEGORIES():
 	list.append('&youtube_ch=GoProTutorials')
 	list.append('&youtube_ch=GoProWorldOfficial')
 	list.append('&youtube_ch=GoProUncut')
-	addDir('Go-Pro',list,17,'https://lh6.ggpht.com/remKtmFiZgZ3yP409xrHZNIIe9M_bV9xEdQM1IOkJw5Ep28lDGVnC7z9iqgv-PsTsHA=w300',"",'1',58, getAddonFanart(9))
+	addDir('Go-Pro',list,17,'https://lh6.ggpht.com/remKtmFiZgZ3yP409xrHZNIIe9M_bV9xEdQM1IOkJw5Ep28lDGVnC7z9iqgv-PsTsHA=w300',"",'1',58, "")
+	
 	'''Exterme Sport'''
-	addDir("Extreme Sport",'plugin://plugin.video.extreme.com',8,"special://home/addons/plugin.video.extreme.com/icon.png","",'1',50, getAddonFanart(9))   
-	#addDir(addonString(57).encode('utf-8') + space + addonString(200).encode('utf-8') + space + "1" + space5 + addonString(16).encode('utf-8'),'UCqhnX4jA0A5paNd1v-zEysw',9,'http://i.ytimg.com/i/fm5IpcgGCooON4Mm2vq40A/1.jpg?v=52fcd974',addonString(116).encode('utf-8'),'1',"")
+	addon = 'plugin.video.extreme.com'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('Extreme Sport','plugin://'+addon,8,thumb,plot,addon,58, fanart)
+	
+	'''Bushido'''
+	list = []
+	list.append('&youtube_ch=UC7mIy-IFtq1k5xCAhItL_uA')
+	list.append('&youtube_ch=bushidoUA')
+	addDir('Bushido',list,17,'http://ru2.anyfad.com/items/t1@6d88be0e-7719-49da-beca-fdea83dd4c05/Bushido---put-voina.jpg',"",'1',58, "")

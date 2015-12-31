@@ -8,11 +8,11 @@
     <align>left</align>
     <aligny>center</aligny>
     <font>size36</font>
-    <textcolor>White</textcolor>
+    <textcolor>white</textcolor>
     <shadowcolor>-</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>Yellow</selectedcolor>
-    <disabledcolor>Grey</disabledcolor>
+    <focusedcolor>white2</focusedcolor>
+    <selectedcolor>yellow</selectedcolor>
+    <disabledcolor>grey</disabledcolor>
     <scroll>false</scroll>
     <scrollspeed>50</scrollspeed>
     <scrollsuffix>|</scrollsuffix>
@@ -27,11 +27,11 @@
     <aligny>center</aligny>
     <font>size36</font>
     <textoffsetx>20</textoffsetx>
-    <textcolor>White</textcolor>
+    <textcolor>white</textcolor>
     <shadowcolor>-</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Grey</disabledcolor>
+    <focusedcolor>white2</focusedcolor>
+    <selectedcolor>white2</selectedcolor>
+    <disabledcolor>grey</disabledcolor>
 	<scroll>false</scroll>
     <scrollout>false</scrollout>
 	<scrollspeed>500</scrollspeed>
@@ -41,11 +41,11 @@
   <default type="textbox">
     <label>-</label>
     <font>size30</font>
-    <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Grey</disabledcolor>
+    <textcolor>white</textcolor>
+    <shadowcolor>shadow</shadowcolor>
+    <focusedcolor>white2</focusedcolor>
+    <selectedcolor>white2</selectedcolor>
+    <disabledcolor>grey</disabledcolor>
     <pagecontrol>61</pagecontrol>
     <pulseonselect></pulseonselect>
 	<autoscroll tween="sine" easing="out" delay="2000" time="2500" repeat="2000">True</autoscroll>
@@ -86,17 +86,17 @@
   <default type="button">
     <align>center</align>
     <aligny>center</aligny>
-	<disabledcolor>Grey</disabledcolor>
-	<focusedcolor>Yellow</focusedcolor>
+	<disabledcolor>grey</disabledcolor>
+	<focusedcolor>yellow</focusedcolor>
 	<font>size34</font>
     <height>75</height>
     <label>-</label>  
 	<posx>0</posx>
     <posy>0</posy>    
     <pulseonselect>false</pulseonselect>
-    <shadowcolor>Shadow</shadowcolor>
-	<selectedcolor>White2</selectedcolor>    
-	<textcolor>White2</textcolor>
+    <shadowcolor>shadow</shadowcolor>
+	<selectedcolor>white2</selectedcolor>    
+	<textcolor>white2</textcolor>
 	<textoffsetx>-</textoffsetx>
     <texturenofocus>-</texturenofocus>
     <texturefocus border="40">buttons/ButtonE.png</texturefocus> <!--ff4f4f98-->
@@ -105,8 +105,8 @@
   <default type="edit">
     <align>center</align>
     <aligny>center</aligny>
-    <disabledcolor>Grey</disabledcolor>	
-    <focusedcolor>Yellow</focusedcolor>	
+    <disabledcolor>grey</disabledcolor>	
+    <focusedcolor>yellow</focusedcolor>	
 	<font>size33</font>	
     <height>75</height>
 	<hinttext>...</hinttext>
@@ -114,10 +114,10 @@
     <posx>0</posx>
     <posy>0</posy>	
 	<pulseonselect>false</pulseonselect>
-    <selectedcolor>White2</selectedcolor>    
-	<shadowcolor>Shadow</shadowcolor>	
+    <selectedcolor>white2</selectedcolor>    
+	<shadowcolor>shadow</shadowcolor>	
     <textoffsetx>20</textoffsetx>
-    <textcolor>White</textcolor>
+    <textcolor>white</textcolor>
     <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
 	<texturefocus border="40">buttons/ButtonE.png</texturefocus>
 	<width>880</width>
@@ -125,18 +125,18 @@
   <default type="togglebutton">
     <align>center</align>
     <aligny>center</aligny>
-	<altselectedcolor>Yellow</altselectedcolor>
-	<disabledcolor>Grey</disabledcolor>
-	<focusedcolor>Yellow</focusedcolor>
+	<altselectedcolor>yellow</altselectedcolor>
+	<disabledcolor>grey</disabledcolor>
+	<focusedcolor>yellow</focusedcolor>
 	<font>size34</font>
     <height>75</height>
     <label>-</label>  
 	<posx>0</posx>
     <posy>0</posy>    
     <pulseonselect>false</pulseonselect>
-    <shadowcolor>Shadow</shadowcolor>
-	<selectedcolor>White2</selectedcolor>    
-	<textcolor>White2</textcolor>
+    <shadowcolor>shadow</shadowcolor>
+	<selectedcolor>white2</selectedcolor>    
+	<textcolor>white2</textcolor>
 	<textoffsetx>20</textoffsetx>
     <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
     <texturefocus border="40">buttons/ButtonE.png</texturefocus>
@@ -147,21 +147,22 @@
   <default type="radiobutton">
     <align>center</align>
     <aligny>center</aligny>
-	<altselectedcolor>Yellow</altselectedcolor>
-	<disabledcolor>Grey</disabledcolor>
-	<focusedcolor>Yellow</focusedcolor>
+	<altselectedcolor>yellow</altselectedcolor>
+	<disabledcolor>grey</disabledcolor>
+	<focusedcolor>yellow</focusedcolor>
 	<font>size34</font>
     <height>75</height>
     <label>-</label>  
 	<posx>0</posx>
     <posy>10</posy>    
     <pulseonselect>false</pulseonselect>
-    <shadowcolor>Shadow</shadowcolor>
-	<selectedcolor>White2</selectedcolor>    
-	<textcolor>White2</textcolor>
+    <shadowcolor>shadow</shadowcolor>
+	<selectedcolor>white2</selectedcolor>    
+	<textcolor>white2</textcolor>
 	<textoffsetx>20</textoffsetx>
     <texturenofocus>-</texturenofocus>
     <texturefocus border="40">buttons/ButtonE.png</texturefocus>
+	<!--<texturefocus colordiffuse="ff4f4f98" border="40">buttons/ButtonE0.png</texturefocus>-->
 	<width>480</width>
     <radiowidth>30</radiowidth>
     <radioheight>30</radioheight>
@@ -182,11 +183,11 @@
     <spinwidth>14</spinwidth>
     <spinheight>14</spinheight>
     <font>size34</font>
-    <textcolor>Yellow</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Grey</disabledcolor>
+    <textcolor>yellow</textcolor>
+    <shadowcolor>shadow</shadowcolor>
+    <focusedcolor>white2</focusedcolor>
+    <selectedcolor>white2</selectedcolor>
+    <disabledcolor>grey</disabledcolor>
     <textoffsetx>20</textoffsetx>
     <align>left</align>
     <aligny>center</aligny>
@@ -209,11 +210,11 @@
 	<spinposy>0</spinposy>
 	<spinwidth>14</spinwidth>
     <spinheight>14</spinheight>
-    <textcolor>White2</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>Yellow</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Grey</disabledcolor>
+    <textcolor>white2</textcolor>
+    <shadowcolor>shadow</shadowcolor>
+    <focusedcolor>yellow</focusedcolor>
+    <selectedcolor>white2</selectedcolor>
+    <disabledcolor>grey</disabledcolor>
     <textoffsetx>60</textoffsetx>
     <align>left</align>
     <aligny>center</aligny>
@@ -241,10 +242,10 @@
 	<texturefocus border="40">buttons/ButtonE.png</texturefocus>
     <texturenofocus>-</texturenofocus>
     <font>size33</font>
-    <textcolor>White2</textcolor>
-    <focusedcolor>Yellow</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Grey</disabledcolor>
+    <textcolor>white2</textcolor>
+    <focusedcolor>yellow</focusedcolor>
+    <selectedcolor>white2</selectedcolor>
+    <disabledcolor>grey</disabledcolor>
     <textoffsetx>20</textoffsetx>
   </default>
   <default type="scrollbar">

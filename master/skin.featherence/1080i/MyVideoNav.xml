@@ -5,13 +5,13 @@
   <views>50,51,54,56,57,58</views>
   <include>onunload_ClearProperty_ListItem</include>
   <include>onunload_ClearProperty_TopVideoInformation</include>
-  <onload condition="!Skin.HasSetting(NextAired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
+  <onload condition="System.HasAddon(script.tv.show.next.aired) + !Skin.HasSetting(NextAired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
   <include>SetFocusView</include>
   <include>ReloadSkin_Check</include>
   <controls>
     <include>Backgrounds3</include>
-    <include>ViewDesign_50</include>
-	<include>ViewDesign_51</include>
+    <include>ViewDesign_51</include>
+	<include>ViewDesign_50</include>
 	<include>ViewDesign_54</include>
 	<include>ViewDesign_56</include>
 	<include>ViewDesign_57</include>

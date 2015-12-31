@@ -71,7 +71,7 @@
         <label>-</label>
         <font>size30B</font>
         <haspath>true</haspath>
-        <textcolor>Yellow</textcolor>
+        <textcolor>yellow</textcolor>
         <shadowcolor>black</shadowcolor>
       </control>
       <control type="label" id="12" description="סהכ">
@@ -80,7 +80,7 @@
         <width>480</width>
         <align>left</align>
         <font>size30B</font>
-        <textcolor>Yellow</textcolor>
+        <textcolor>yellow</textcolor>
         <label>-</label>
       </control>
       <control type="list" id="20" description="רשימה שמאל">
@@ -101,8 +101,8 @@
             <font>size26</font>
 			<align>left</align>
             <aligny>center</aligny>
-            <selectedcolor>Yellow</selectedcolor>
-            <textcolor>White</textcolor>			
+            <selectedcolor>yellow</selectedcolor>
+            <textcolor>white</textcolor>			
             <info>ListItem.Label</info>
           </control>
           <control type="label" description="נתון2">
@@ -112,7 +112,7 @@
             <font>size27</font>
             <align>right</align>
             <aligny>center</aligny>
-            <textcolor>Silver</textcolor>
+            <textcolor>silver</textcolor>
             <info>ListItem.Label2</info>
           </control>
         </itemlayout>
@@ -135,8 +135,8 @@
             <height>60</height>
             <font>size26</font>
             <aligny>center</aligny>
-            <textcolor>White</textcolor>
-			<selectedcolor>Yellow</selectedcolor>
+            <textcolor>white</textcolor>
+			<selectedcolor>yellow</selectedcolor>
             <info>ListItem.Label</info>
           </control>
           <control type="label" description="נתון2">
@@ -146,7 +146,7 @@
             <font>size27</font>
             <align>right</align>
             <aligny>center</aligny>
-            <textcolor>Silver</textcolor>
+            <textcolor>silver</textcolor>
             <info>ListItem.Label2</info>
           </control>
         </focusedlayout>
@@ -171,7 +171,7 @@
         <label>-</label>
         <font>size30B</font>
         <haspath>true</haspath>
-        <textcolor>Yellow</textcolor>
+        <textcolor>yellow</textcolor>
         <shadowcolor>black</shadowcolor>
       </control>
       <control type="label" id="13" description="סהכ">
@@ -180,7 +180,7 @@
         <width>480</width>
         <align>right</align>
         <font>size30B</font>
-        <textcolor>Yellow</textcolor>
+        <textcolor>yellow</textcolor>
         <label>-</label>
       </control>
       <control type="list" id="21" description="רשימה ימין">
@@ -201,8 +201,8 @@
             <font>size26</font>
             <align>left</align>
             <aligny>center</aligny>
-			<selectedcolor>Yellow</selectedcolor>
-            <textcolor>White</textcolor>
+			<selectedcolor>yellow</selectedcolor>
+            <textcolor>white</textcolor>
             <info>ListItem.Label</info>
           </control>
           <control type="label" description="נתון2">
@@ -212,7 +212,7 @@
             <font>size27</font>
 			<align>right</align>
             <aligny>center</aligny>
-            <textcolor>Silver</textcolor>
+            <textcolor>silver</textcolor>
             <info>ListItem.Label2</info>
           </control>
         </itemlayout>
@@ -236,8 +236,8 @@
             <width>750</width>
             <height>60</height>
             <font>size26</font>
-			<selectedcolor>Yellow</selectedcolor>
-            <textcolor>White</textcolor>
+			<selectedcolor>yellow</selectedcolor>
+            <textcolor>white</textcolor>
             <info>ListItem.Label</info>
           </control>
           <control type="label" description="נתון2">
@@ -247,7 +247,7 @@
             <width>150</width>
             <font>size27</font>
             <aligny>center</aligny>
-            <textcolor>Silver</textcolor>
+            <textcolor>silver</textcolor>
             <info>ListItem.Label2</info>
           </control>
         </focusedlayout>

@@ -1,11 +1,13 @@
 ------------------------
 WIP (WORK IN PROGRESS)
 ------------------------
+- Added Bushido channel.
 
 ------------------------
 Featherence Extreme v0.1.1 (21-12-15)
 ------------------------
 - Added TV Mode for Go-Pro videos.
+- Added GoPro Motorsports, Tutorials, World and Uncut channels.
 - Update TV Mode shuffle function.
 - Update TV Mode accuracy.
 - *Extra attempt to play another video if the first has failed.

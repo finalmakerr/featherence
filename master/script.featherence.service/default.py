@@ -264,8 +264,8 @@ elif mode == 24:
 		setProperty('TopVideoInformation3', value_rating, type="home")
 		setProperty('TopVideoInformation5', value_plot, type="home")
 		setProperty('TopVideoInformation6', value_genre, type="home")
-		if systemlanguage == 'Hebrew': setProperty('TopVideoInformation7', '[COLOR Yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Episode)][/B][/COLOR] $LOCALIZE[20452]: [COLOR Yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Season)][/B][/COLOR] $LOCALIZE[20373]: [COLOR Yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Title)][/B][/COLOR] $LOCALIZE[21442]: )', type="home")
-		else: setProperty('TopVideoInformation7', '$LOCALIZE[21442]: [COLOR Yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Title)][/B][/COLOR] S: [COLOR Yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Season)][/B][/COLOR] E: [COLOR Yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Episode)][/B][/COLOR])', type="home")
+		if systemlanguage == 'Hebrew': setProperty('TopVideoInformation7', '[COLOR yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Episode)][/B][/COLOR] $LOCALIZE[20452]: [COLOR yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Season)][/B][/COLOR] $LOCALIZE[20373]: [COLOR yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Title)][/B][/COLOR] $LOCALIZE[21442]: )', type="home")
+		else: setProperty('TopVideoInformation7', '$LOCALIZE[21442]: [COLOR yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Title)][/B][/COLOR] S: [COLOR yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Season)][/B][/COLOR] E: [COLOR yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Episode)][/B][/COLOR])', type="home")
 		setProperty('TopVideoInformation8', value_tvshowtitle, type="home")
 		xbmc.executebuiltin('PlayMedia('+value_file+')')
 		xbmc.executebuiltin('AlarmClock(mode10,RunScript(script.featherence.service,,?mode=10&amp;value=),1,silent)')
@@ -1704,7 +1704,8 @@ elif mode >= 200 and mode <= 249:
 								filesT_ = { filesname: files }
 								filesT.update(filesT_)
 								list2.append(filesname)
-								extra = 'files' + space2 + str(files) + newline + 'filesname' + space2 + str(filesname)
+								extra = 'files' + space2 + to_utf8(files) + newline + 'filesname' + space2 + to_utf8(filesname)
+								print extra 
 								'''---------------------------'''
 			
 			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list2,0)
@@ -1853,12 +1854,12 @@ elif mode >= 200 and mode <= 249:
 								notification_common('17')
 								extra = extra + newline + featherenceservice_addondata_path + "Featherence_" + ".txt" + space + 'Is not found!'
 							else:
+								removefiles(featherenceservice_addondata_path + 'Featherence_' + to_unicode(list2[returned2]) + '.zip')
 								zipname = featherenceservice_addondata_path + 'Featherence_' + str(filename).decode('utf-8')
 								CreateZip(featherenceservice_addondata_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
 								CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
 								'''---------------------------'''
 								Custom1000(str(list[returned]),100,str(list2[returned2]),0)
-								removefiles(featherenceservice_addondata_path + 'Featherence_' + str(list2[returned2]) + '.zip')
 						else: notification_common('9') ; extra = extra + newline + 'filename is empty!'
 				
 				elif "B" in printpoint or "C" in printpoint:
@@ -1952,8 +1953,8 @@ elif mode >= 200 and mode <= 249:
 					xbmc.executebuiltin('ActivateWindow(1173)')
 					'''---------------------------'''
 				else:
-					custom1000W = xbmc.getCondVisibility('Window.IsVisible(Custom1000.xml)')
-					if custom1000W: xbmc.executebuiltin('Action(Back)')
+					pass
+					#Custom1000(str(list[returned]),100,str(list2[returned2]),0)
 		text = "path" + space2 + str(path) + newline + \
 		"list" + space2 + str(list) + newline + \
 		"list2" + space2 + str(list2) + newline + \

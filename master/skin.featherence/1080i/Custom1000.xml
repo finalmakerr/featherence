@@ -16,7 +16,7 @@
 	  <label>$LOCALIZE[20186]</label>
 	</control>
 	<control type="label" description="כותרת + התקדמות">
-	  <textcolor>Yellow</textcolor>
+	  <textcolor>yellow</textcolor>
 	  <include>LabelC10</include>
 	  <!--<posx>960</posx>-->
 	  <posy>60</posy>
@@ -59,7 +59,7 @@
 		<width>1920</width>
 		<control type="label" description="זיכרון פנוי">
 		  <include>LabelL1</include>
-		  <label>[Color=Red]If value keep changing, your device is not stuck![/COLOR]</label>
+		  <label>[Color=red]If value keep changing, your device is not stuck![/COLOR]</label>
 		  <visible>!IsEmpty(System.FreeMemory)</visible>
 		</control>
 	</control>

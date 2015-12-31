@@ -12,6 +12,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	if '$LOCALIZE' in name or '$ADDON' in name: name = xbmc.getInfoLabel(name)
 	if '$LOCALIZE' in desc or '$ADDON' in desc: desc = xbmc.getInfoLabel(desc)
 	
+	if num == None: num = ""
 	if 'getAPIdata' in num:
 		finalurl2, id2, name2, iconimage2, desc2, fanart2 = getAPIdata(num, name, iconimage, desc, fanart)
 		if 'getAPIdata' in name and name2 != "": name = name2
@@ -41,7 +42,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	
 	#if mode == 17: name = '[COLOR=green]' + name + '[/COLOR]'
 	#elif mode == 5: name = '[COLOR=yellow]' + name + '[/COLOR]'
-	#elif mode == 8: name = '[COLOR=White2]' + name + '[/COLOR]'
+	#elif mode == 8: name = '[COLOR=white2]' + name + '[/COLOR]'
 	
 	if mode >= 100 and 1 + 1 == 2:
 		#if url == "": url = "1"
@@ -89,12 +90,12 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		---PlayMultiVideos-(list)--------
 		------------------------------'''
 		if admin:
-			#menu.append(('[COLOR=Green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://plugin.video.featherence.kids/?&mode=5&url=%s)"% (url)))
-			#menu.append(('[COLOR=Purple]' + str79522.encode('utf-8') + '[/COLOR]', "XBMC.Container.Update(plugin://%s/?num&iconimage=''&mode=6&name=''&url=%s)"% (addonID, url)))
-			#menu.append(('[COLOR=Purple]' + str79522.encode('utf-8') + '[/COLOR]', "XBMC.Container.Update(plugin://plugin.video.featherence.kids/?&mode=5&url="+url+")"))
-			#menu.append(('[COLOR=Green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://"+addonID+"/?iconimage="+iconimage+"&mode=5&name="+name+"&num="+num+"&url="+url+")"))
-			#menu.append(('[COLOR=Green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://plugin.video.featherence.kids/?iconimage=http%3a%2f%2fmsc.wcdn.co.il%2fw-2-1%2fw-300%2f768225-54.jpg&mode=5&name=%d7%94%d7%9b%d7%91%d7%a9%d7%94%20%d7%a9%d7%95%d7%a9%d7%a0%d7%94&num=1&url=%5b%27shuffle%3dtrue%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819037%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%201%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819043%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%202%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819050%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%203%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817560%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx9c%5cxd7%5cx95%5cxd7%5cx9d%20%5cxd7%5cxa2%5cxd7%5cx9c%20%5cxd7%5cx99%5cxd7%5cxa9%5cxd7%5cxa8%5cxd7%5cx90%5cxd7%5cx9c%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817583%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx95%5cxd7%5cx97%5cxd7%5cx91%5cxd7%5cxa8%5cxd7%5cx99%5cxd7%5cx9d%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817533%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx91%5cxd7%5cx92%5cxd7%5cx9f%20%5cxd7%5cx94%5cxd7%5cx90%5cxd7%5cx95%5cxd7%5cxaa%5cxd7%5cx99%5cxd7%5cx95%5cxd7%5cxaa%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2820067%26mode%3d10%26name%3d%5cxd7%5cx91%5cxd7%5cx90%20%5cxd7%5cx9c%5cxd7%5cx99%20%5cxd7%5cx9e%5cxd7%5cxa1%5cxd7%5cx99%5cxd7%5cx91%5cxd7%5cx94%20%5cxd7%5cx9c%5cxd7%5cx99%26module%3dwallavod%27%5d&viewtype=50)"))
-			#menu.append(('[COLOR=Green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://"+addonID+"/?&mode=5&url=%5b%27shuffle%3dtrue%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819037%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%201%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819043%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%202%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819050%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%203%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817560%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx9c%5cxd7%5cx95%5cxd7%5cx9d%20%5cxd7%5cxa2%5cxd7%5cx9c%20%5cxd7%5cx99%5cxd7%5cxa9%5cxd7%5cxa8%5cxd7%5cx90%5cxd7%5cx9c%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817583%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx95%5cxd7%5cx97%5cxd7%5cx91%5cxd7%5cxa8%5cxd7%5cx99%5cxd7%5cx9d%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817533%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx91%5cxd7%5cx92%5cxd7%5cx9f%20%5cxd7%5cx94%5cxd7%5cx90%5cxd7%5cx95%5cxd7%5cxaa%5cxd7%5cx99%5cxd7%5cx95%5cxd7%5cxaa%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2820067%26mode%3d10%26name%3d%5cxd7%5cx91%5cxd7%5cx90%20%5cxd7%5cx9c%5cxd7%5cx99%20%5cxd7%5cx9e%5cxd7%5cxa1%5cxd7%5cx99%5cxd7%5cx91%5cxd7%5cx94%20%5cxd7%5cx9c%5cxd7%5cx99%26module%3dwallavod%27%5d)"))
+			#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://plugin.video.featherence.kids/?&mode=5&url=%s)"% (url)))
+			#menu.append(('[COLOR=purple]' + str79522.encode('utf-8') + '[/COLOR]', "XBMC.Container.Update(plugin://%s/?num&iconimage=''&mode=6&name=''&url=%s)"% (addonID, url)))
+			#menu.append(('[COLOR=purple]' + str79522.encode('utf-8') + '[/COLOR]', "XBMC.Container.Update(plugin://plugin.video.featherence.kids/?&mode=5&url="+url+")"))
+			#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://"+addonID+"/?iconimage="+iconimage+"&mode=5&name="+name+"&num="+num+"&url="+url+")"))
+			#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://plugin.video.featherence.kids/?iconimage=http%3a%2f%2fmsc.wcdn.co.il%2fw-2-1%2fw-300%2f768225-54.jpg&mode=5&name=%d7%94%d7%9b%d7%91%d7%a9%d7%94%20%d7%a9%d7%95%d7%a9%d7%a0%d7%94&num=1&url=%5b%27shuffle%3dtrue%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819037%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%201%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819043%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%202%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819050%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%203%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817560%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx9c%5cxd7%5cx95%5cxd7%5cx9d%20%5cxd7%5cxa2%5cxd7%5cx9c%20%5cxd7%5cx99%5cxd7%5cxa9%5cxd7%5cxa8%5cxd7%5cx90%5cxd7%5cx9c%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817583%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx95%5cxd7%5cx97%5cxd7%5cx91%5cxd7%5cxa8%5cxd7%5cx99%5cxd7%5cx9d%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817533%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx91%5cxd7%5cx92%5cxd7%5cx9f%20%5cxd7%5cx94%5cxd7%5cx90%5cxd7%5cx95%5cxd7%5cxaa%5cxd7%5cx99%5cxd7%5cx95%5cxd7%5cxaa%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2820067%26mode%3d10%26name%3d%5cxd7%5cx91%5cxd7%5cx90%20%5cxd7%5cx9c%5cxd7%5cx99%20%5cxd7%5cx9e%5cxd7%5cxa1%5cxd7%5cx99%5cxd7%5cx91%5cxd7%5cx94%20%5cxd7%5cx9c%5cxd7%5cx99%26module%3dwallavod%27%5d&viewtype=50)"))
+			#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://"+addonID+"/?&mode=5&url=%5b%27shuffle%3dtrue%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819037%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%201%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819043%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%202%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819050%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%203%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817560%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx9c%5cxd7%5cx95%5cxd7%5cx9d%20%5cxd7%5cxa2%5cxd7%5cx9c%20%5cxd7%5cx99%5cxd7%5cxa9%5cxd7%5cxa8%5cxd7%5cx90%5cxd7%5cx9c%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817583%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx95%5cxd7%5cx97%5cxd7%5cx91%5cxd7%5cxa8%5cxd7%5cx99%5cxd7%5cx9d%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817533%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx91%5cxd7%5cx92%5cxd7%5cx9f%20%5cxd7%5cx94%5cxd7%5cx90%5cxd7%5cx95%5cxd7%5cxaa%5cxd7%5cx99%5cxd7%5cx95%5cxd7%5cxaa%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2820067%26mode%3d10%26name%3d%5cxd7%5cx91%5cxd7%5cx90%20%5cxd7%5cx9c%5cxd7%5cx99%20%5cxd7%5cx9e%5cxd7%5cxa1%5cxd7%5cx99%5cxd7%5cx91%5cxd7%5cx94%20%5cxd7%5cx9c%5cxd7%5cx99%26module%3dwallavod%27%5d)"))
 			liz.addContextMenuItems(items=menu, replaceItems=False)
 		ok=xbmcplugin.addDirectoryItem(handle=pluginhandle,url=u,listitem=liz,isFolder=False)
 		returned = ok
@@ -104,10 +105,10 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		---ListMultiVideos-(play)--------
 		------------------------------'''
 		if admin:
-			#menu.append(('[COLOR=Green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://plugin.video.featherence.kids/?&mode=5&url=%s)"% (url2)))
-			#menu.append(('[COLOR=Green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://"+addonID+"/?iconimage="+iconimage+"&mode=5&name="+name+"&num="+num+"&url="+url+")"))
-			#menu.append(('[COLOR=Green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://plugin.video.featherence.kids/?iconimage=http%3a%2f%2fmsc.wcdn.co.il%2fw-2-1%2fw-300%2f768225-54.jpg&mode=5&name=%d7%94%d7%9b%d7%91%d7%a9%d7%94%20%d7%a9%d7%95%d7%a9%d7%a0%d7%94&num=1&url=%5b%27shuffle%3dtrue%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819037%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%201%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819043%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%202%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819050%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%203%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817560%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx9c%5cxd7%5cx95%5cxd7%5cx9d%20%5cxd7%5cxa2%5cxd7%5cx9c%20%5cxd7%5cx99%5cxd7%5cxa9%5cxd7%5cxa8%5cxd7%5cx90%5cxd7%5cx9c%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817583%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx95%5cxd7%5cx97%5cxd7%5cx91%5cxd7%5cxa8%5cxd7%5cx99%5cxd7%5cx9d%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817533%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx91%5cxd7%5cx92%5cxd7%5cx9f%20%5cxd7%5cx94%5cxd7%5cx90%5cxd7%5cx95%5cxd7%5cxaa%5cxd7%5cx99%5cxd7%5cx95%5cxd7%5cxaa%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2820067%26mode%3d10%26name%3d%5cxd7%5cx91%5cxd7%5cx90%20%5cxd7%5cx9c%5cxd7%5cx99%20%5cxd7%5cx9e%5cxd7%5cxa1%5cxd7%5cx99%5cxd7%5cx91%5cxd7%5cx94%20%5cxd7%5cx9c%5cxd7%5cx99%26module%3dwallavod%27%5d&viewtype=50)"))
-			#menu.append(('[COLOR=Green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://"+addonID+"/?&mode=5&url=%5b%27shuffle%3dtrue%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819037%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%201%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819043%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%202%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819050%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%203%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817560%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx9c%5cxd7%5cx95%5cxd7%5cx9d%20%5cxd7%5cxa2%5cxd7%5cx9c%20%5cxd7%5cx99%5cxd7%5cxa9%5cxd7%5cxa8%5cxd7%5cx90%5cxd7%5cx9c%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817583%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx95%5cxd7%5cx97%5cxd7%5cx91%5cxd7%5cxa8%5cxd7%5cx99%5cxd7%5cx9d%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817533%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx91%5cxd7%5cx92%5cxd7%5cx9f%20%5cxd7%5cx94%5cxd7%5cx90%5cxd7%5cx95%5cxd7%5cxaa%5cxd7%5cx99%5cxd7%5cx95%5cxd7%5cxaa%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2820067%26mode%3d10%26name%3d%5cxd7%5cx91%5cxd7%5cx90%20%5cxd7%5cx9c%5cxd7%5cx99%20%5cxd7%5cx9e%5cxd7%5cxa1%5cxd7%5cx99%5cxd7%5cx91%5cxd7%5cx94%20%5cxd7%5cx9c%5cxd7%5cx99%26module%3dwallavod%27%5d)"))
+			#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://plugin.video.featherence.kids/?&mode=5&url=%s)"% (url2)))
+			#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://"+addonID+"/?iconimage="+iconimage+"&mode=5&name="+name+"&num="+num+"&url="+url+")"))
+			#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://plugin.video.featherence.kids/?iconimage=http%3a%2f%2fmsc.wcdn.co.il%2fw-2-1%2fw-300%2f768225-54.jpg&mode=5&name=%d7%94%d7%9b%d7%91%d7%a9%d7%94%20%d7%a9%d7%95%d7%a9%d7%a0%d7%94&num=1&url=%5b%27shuffle%3dtrue%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819037%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%201%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819043%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%202%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819050%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%203%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817560%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx9c%5cxd7%5cx95%5cxd7%5cx9d%20%5cxd7%5cxa2%5cxd7%5cx9c%20%5cxd7%5cx99%5cxd7%5cxa9%5cxd7%5cxa8%5cxd7%5cx90%5cxd7%5cx9c%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817583%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx95%5cxd7%5cx97%5cxd7%5cx91%5cxd7%5cxa8%5cxd7%5cx99%5cxd7%5cx9d%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817533%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx91%5cxd7%5cx92%5cxd7%5cx9f%20%5cxd7%5cx94%5cxd7%5cx90%5cxd7%5cx95%5cxd7%5cxaa%5cxd7%5cx99%5cxd7%5cx95%5cxd7%5cxaa%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2820067%26mode%3d10%26name%3d%5cxd7%5cx91%5cxd7%5cx90%20%5cxd7%5cx9c%5cxd7%5cx99%20%5cxd7%5cx9e%5cxd7%5cxa1%5cxd7%5cx99%5cxd7%5cx91%5cxd7%5cx94%20%5cxd7%5cx9c%5cxd7%5cx99%26module%3dwallavod%27%5d&viewtype=50)"))
+			#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://"+addonID+"/?&mode=5&url=%5b%27shuffle%3dtrue%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819037%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%201%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819043%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%202%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819050%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%203%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817560%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx9c%5cxd7%5cx95%5cxd7%5cx9d%20%5cxd7%5cxa2%5cxd7%5cx9c%20%5cxd7%5cx99%5cxd7%5cxa9%5cxd7%5cxa8%5cxd7%5cx90%5cxd7%5cx9c%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817583%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx95%5cxd7%5cx97%5cxd7%5cx91%5cxd7%5cxa8%5cxd7%5cx99%5cxd7%5cx9d%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817533%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx91%5cxd7%5cx92%5cxd7%5cx9f%20%5cxd7%5cx94%5cxd7%5cx90%5cxd7%5cx95%5cxd7%5cxaa%5cxd7%5cx99%5cxd7%5cx95%5cxd7%5cxaa%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2820067%26mode%3d10%26name%3d%5cxd7%5cx91%5cxd7%5cx90%20%5cxd7%5cx9c%5cxd7%5cx99%20%5cxd7%5cx9e%5cxd7%5cxa1%5cxd7%5cx99%5cxd7%5cx91%5cxd7%5cx94%20%5cxd7%5cx9c%5cxd7%5cx99%26module%3dwallavod%27%5d)"))
 			liz.addContextMenuItems(items=menu, replaceItems=False)
 		ok=xbmcplugin.addDirectoryItem(handle=pluginhandle,url=u,listitem=liz,isFolder=True)
 		returned = ok
@@ -117,8 +118,8 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		---View-Playlist-----------------
 		------------------------------'''
 		#url=urllib.unquote(url)
-		#menu.append(('[COLOR=Purple]' + str79522.encode('utf-8') + '[/COLOR]', "XBMC.Container.Update(plugin://plugin.video.featherence.kids/?num&iconimage=''&mode=13&name=''&url=%s)"% (url)))
-		#menu.append(('[COLOR=Purple]' + str79522.encode('utf-8') + '[/COLOR]', "XBMC.Container.Update(plugin://%s/?num&iconimage=''&mode=13&name=''&url=%s)"% (addonID, url)))
+		#menu.append(('[COLOR=purple]' + str79522.encode('utf-8') + '[/COLOR]', "XBMC.Container.Update(plugin://plugin.video.featherence.kids/?num&iconimage=''&mode=13&name=''&url=%s)"% (url)))
+		#menu.append(('[COLOR=purple]' + str79522.encode('utf-8') + '[/COLOR]', "XBMC.Container.Update(plugin://%s/?num&iconimage=''&mode=13&name=''&url=%s)"% (addonID, url)))
 		liz.addContextMenuItems(items=menu, replaceItems=False)
 		ok=xbmcplugin.addDirectoryItem(handle=pluginhandle,url=u,listitem=liz,isFolder=False)
 		returned = ok
@@ -127,7 +128,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		'''------------------------------
 		---TV-MODE-----------------------
 		------------------------------'''
-		#menu.append(('[COLOR=Green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://%s/?num&iconimage=''&mode=15&name=''&url=%s)"% (addonID, url)))
+		#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://%s/?num&iconimage=''&mode=15&name=''&url=%s)"% (addonID, url)))
 		liz.addContextMenuItems(items=menu, replaceItems=False)
 		#ok=xbmcplugin.addDirectoryItem(handle=pluginhandle,url=u,listitem=liz,isFolder=True)
 		ok=xbmcplugin.addDirectoryItem(handle=pluginhandle,url=u,listitem=liz,isFolder=False)
@@ -143,7 +144,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		returned = ok
 		'''---------------------------'''
 	elif mode == 13:
-		#menu.append(('[COLOR=Yellow]' + str79520.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://%s/?num&iconimage=''&mode=12&name=''&url=%s)"% (addonID, url)))
+		#menu.append(('[COLOR=yellow]' + str79520.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://%s/?num&iconimage=''&mode=12&name=''&url=%s)"% (addonID, url)))
 		liz.addContextMenuItems(items=menu, replaceItems=False)
 		ok=xbmcplugin.addDirectoryItem(handle=pluginhandle,url=u,listitem=liz,isFolder=True)
 		returned = ok
@@ -232,7 +233,7 @@ def get_params():
 	return param
 	
 def ListLive(url, mode, num, viewtype, fanart):
-	#addDir('[COLOR=Yellow]' + str79520.encode('utf-8') + '[/COLOR]',url,12,addonMediaPath + "190.png",str79526.encode('utf-8'),'1',"") #Quick-Play
+	#addDir('[COLOR=yellow]' + str79520.encode('utf-8') + '[/COLOR]',url,12,addonMediaPath + "190.png",str79526.encode('utf-8'),'1',"") #Quick-Play
 	link = OPEN_URL(url)
 	link=unescape(link)
 	print printfirst + "link" + space2 + link
@@ -485,9 +486,11 @@ def YOULink(mname, url, thumb, desc):
 def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 	printpoint = "" ; i = 0 ; i2 = 0 ; extra = "" ; desc = str(desc)
 	playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
-	if playerhasvideo: xbmc.executebuiltin('Action(Stop)')
-	pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
-	pl.clear()
+	if playerhasvideo and mode == 5:
+		xbmc.executebuiltin('Action(Stop)')
+		pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
+		pl.clear()
+		
 	playlist = []
 	
 	url2 = url.replace("['","")
@@ -692,7 +695,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 
 					elif "&seretil=" in x:
 						x = x.replace("&seretil=","")
-						if "?mode=211&url=http%3a%2f%2fseretil.me" in x: name2 = '[COLOR=Red]' + name_ + space + str(i) + '[/COLOR]'
+						if "?mode=211&url=http%3a%2f%2fseretil.me" in x: name2 = '[COLOR=red]' + name_ + space + str(i) + '[/COLOR]'
 						else: name2 = name_ + space + str(i)
 						addDir(name2, "plugin://plugin.video.seretil/"+x, 8, iconimage_, desc_, num, viewtype, fanart_)
 						'''---------------------------'''
@@ -942,6 +945,7 @@ def getAPIdata(x, name, iconimage, desc, fanart):
 			x2 = x.replace('&dailymotion_pl=',"")
 			#url = 'https://api.dailymotion.com/playlist/'+x2+'/videos?fields=description,duration,id,owner.username,taken_time,thumbnail_large_url,title,views_total&sort=recent&limit=40&family_filter=1&localization=en&page=1'
 			url = 'https://api.dailymotion.com/playlist/'+x2
+		
 		if url != "":
 			printpoint = printpoint + '5'
 			link = OPEN_URL(url)
@@ -1257,7 +1261,7 @@ def youtube_pl_to_youtube_id(addonID, x, playlist=[]):
 	totalpages = (numOfItems2 / pagesize) + 1
 	nextpage = page + 1
 	
-	#if totalpages > page: addDir('[COLOR=Yellow]' + localize(33078) + '[/COLOR]',x,13,"special://skin/media/DefaultVideo2.png",str79528.encode('utf-8'),str(nextpage),50) #Next Page
+	#if totalpages > page: addDir('[COLOR=yellow]' + localize(33078) + '[/COLOR]',x,13,"special://skin/media/DefaultVideo2.png",str79528.encode('utf-8'),str(nextpage),50) #Next Page
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
@@ -1350,7 +1354,7 @@ def setView(content, viewType, containerfolderpath2):
 		elif content == 'movies': viewType = 58
 		
 
-	if General_AutoView == "true" and viewType != None:
+	if General_AutoView == "true" and viewType != None and 1 + 1 == 3:
 		if xbmc.getSkinDir() == 'skin.featherence':
 			xbmc.executebuiltin("Container.SetViewMode(%s)" % str(viewType) )
 			printpoint = printpoint + "7"
@@ -1464,7 +1468,7 @@ def getAddonInfo(addon):
 	except: pass
 	try: description = description.encode('utf-8')
 	except: pass
-	plot = '[COLOR=Yellow]'+summary+'[/COLOR]'+'[CR][CR]'+description
+	plot = '[COLOR=yellow]'+summary+'[/COLOR]'+'[CR][CR]'+description
 	
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	return thumb, fanart, summary, description, plot
@@ -2544,9 +2548,9 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			value3 = 'NO.' + space + "3" + space + "(" + str(filename3) + ")"
 			
 			'''save/load'''
-			if filename1 == None: value1 = '[COLOR=Red]' + value1 + '[/COLOR]'
-			if filename2 == None: value2 = '[COLOR=Red]' + value2 + '[/COLOR]'
-			if filename3 == None: value3 = '[COLOR=Red]' + value3 + '[/COLOR]'
+			if filename1 == None: value1 = '[COLOR=red]' + value1 + '[/COLOR]'
+			if filename2 == None: value2 = '[COLOR=red]' + value2 + '[/COLOR]'
+			if filename3 == None: value3 = '[COLOR=red]' + value3 + '[/COLOR]'
 		
 			list = ['-> (Exit)', value1, value2, value3]
 				
@@ -3256,8 +3260,8 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				 
 				notification(str(x) + space + addonString_servicefeatherence(30).encode('utf-8'), str(New_Fanart), "", 2000) #Fanart* Update Succesfully!
 				xbmc.sleep(2000)
-				if Fanart_Enable != "true": notification(addonString_servicefeatherence(28).encode('utf-8') + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Allow Backgrounds Disabled, ->Add-on settings
-				elif Fanart_EnableCustom != "true": notification(localize(21389) + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Enable custom background Disabled, ->Add-on settings
+				if Fanart_Enable != "true": notification(addonString_servicefeatherence(28).encode('utf-8') + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Allow Backgrounds disabled, ->Add-on settings
+				elif Fanart_EnableCustom != "true": notification(localize(21389) + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Enable custom background disabled, ->Add-on settings
 				'''---------------------------'''
 		else:
 			'''------------------------------

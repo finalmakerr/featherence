@@ -70,7 +70,7 @@
       <description>Default Button</description>
       <height>40</height>
       <font>Size26</font>
-      <textcolor>Grey</textcolor>
+      <textcolor>grey</textcolor>
       <focusedcolor>white</focusedcolor>
       <align>left</align>
     </control>
@@ -78,14 +78,14 @@
       <description>Default RadioButton</description>
       <height>40</height>
       <font>Size26</font>
-      <textcolor>Grey</textcolor>
+      <textcolor>grey</textcolor>
       <focusedcolor>white</focusedcolor>
       <align>left</align>
     </control>
     <control type="spincontrolex" id="9">
       <description>Default spincontrolex</description>
       <height>40</height>
-      <textcolor>Grey</textcolor>
+      <textcolor>grey</textcolor>
       <focusedcolor>white</focusedcolor>
       <font>Size26</font>
       <aligny>center</aligny>
@@ -95,7 +95,7 @@
       <description>Default Slider</description>
       <height>200</height>
       <font>Size26</font>
-      <textcolor>Grey</textcolor>
+      <textcolor>grey</textcolor>
       <focusedcolor>white</focusedcolor>
     </control>
     <control type="image" id="11">
@@ -108,7 +108,7 @@
       <description>Default Edit</description>
       <height>100</height>
       <font>Size26</font>
-      <textcolor>Grey</textcolor>
+      <textcolor>grey</textcolor>
       <focusedcolor>white</focusedcolor>
     </control>
   </controls>

@@ -186,8 +186,8 @@
 					<label>-</label>
 					<width>100</width>
 					<height>100</height>
-					<onclick>ActivateWindow(PVROSDChannels)</onclick>
 					<onclick>Dialog.close(VideoOSD)</onclick>
+					<onclick>ActivateWindow(PVROSDChannels)</onclick>
 					<visible>Skin.HasSetting(Admin) | VideoPlayer.Content(LiveTV) | Pvr.IsPlayingTv</visible>
 					<visible>Player.HasVideo</visible>
 				</control>
@@ -200,6 +200,7 @@
 					<onclick condition="VideoFullScreen.xml">Action(Back)</onclick>					
 					<onclick>ActivateWindow(PVROSDGuide)</onclick>
 					<visible>Pvr.HasEpg | VideoPlayer.HasEpg</visible>
+					<visible>false</visible>
 				</control>
 				<control type="button" id="810">
 					<texturefocus>osd/buttons/OSDTeleTextFO.png</texturefocus>
