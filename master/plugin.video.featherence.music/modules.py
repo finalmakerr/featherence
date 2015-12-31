@@ -62,42 +62,47 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	'''The Greatest Hits of All Times'''
 	thumb = 'https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0PGGM81.png?v=1.0'
 	fanart = 'http://www.pavellevchenko.com/hard-rock-music-guitar.jpg'
-	addDir('The Greatest Hits of All Times',templates2_path + 'The Greatest Hits of All Times.txt',2,thumb,desc + 'Personal Collection','1',50, fanart)
+	addDir('The Greatest Hits of All Times',templates2_path + 'The Greatest Hits of All Times.txt',2,thumb,desc +  'אמיר אלגזר פלייליסטים - Personal Collection','1',50, fanart)
 	
 	'''billboard top 100 All The Time'''
 	thumb = 'https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0PGGM81.png?v=1.0'
 	fanart = 'http://www.pavellevchenko.com/hard-rock-music-guitar.jpg'
-	addDir('billboard top 100 All The Time',templates2_path + 'billboard top 100 All The Time.txt',2,thumb,desc + '','1',50, fanart)
+	addDir('billboard top 100 All The Time',templates2_path + 'billboard top 100 All The Time.txt',2,thumb,desc + 'אמיר אלגזר פלייליסטים','1',50, fanart)
 	
 	'''Elton John Personal Collection'''
 	thumb = 'https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/GreatestHits19761986EltonJohn.jpg/220px-GreatestHits19761986EltonJohn.jpg'
 	fanart = 'http://www.kwiknews.my/sites/default/files/styles/kwik_inner_cover/public/elton.john_.jpg?itok=eUB3cG36'
-	addDir('Elton John Personal Collection',templates2_path + 'Elton John Personal Collection.txt',2,thumb,desc + 'אלטון גון - אוסף אישי','1',50, fanart)
+	addDir('Elton John Personal Collection',templates2_path + 'Elton John Personal Collection.txt',2,thumb,desc + 'אמיר אלגזר פלייליסטים','1',50, fanart)
+	
+	'''Rain songs in a playlist'''
+	thumb = 'http://laughingsquid.com/wp-content/uploads/Rain.jpg'
+	fanart = 'http://www.artifacting.com/blog/wp-content/uploads/2012/10/Rain-Room.jpg'
+	addDir('Rain songs in a playlist',templates2_path + 'Rain songs in a playlist.txt',2,thumb,desc + 'אמיר אלגזר פלייליסטים','1',50, fanart) 
 	
 	'''George Michael & wham'''
 	thumb = 'http://i234.photobucket.com/albums/ee136/suwarnaadi/hair/GeorgeMichaelshortsideshair.jpg'
 	fanart = 'http://www.golden80s.com/wp-content/uploads/2014/05/Wham-head.jpg'
-	addDir('George Michael & wham',templates2_path + 'George Michael & wham.txt',2,thumb,desc + 'Personal Collection','1',50, fanart)
+	addDir('George Michael & wham',templates2_path + 'George Michael & wham.txt',2,thumb,desc + 'אמיר אלגזר פלייליסטים - Personal Collection','1',50, fanart)
 	
 	'''Great French Collection'''
 	thumb = 'http://images.travelpod.com/tripwow/photos/ta-00b7-d4d4-11a6/arc-de-triomphe-paris-france+1152_12905284514-tpfil02aw-11867.jpg'
 	fanart = 'http://www.wallpapersbyte.com/wp-content/uploads/2015/06/Downolad-HD-Wallpaper-France-Paris-City-Eiffel-Tower-Sunset-WallpapersByte-com-1920x1080.jpg'
-	addDir('Great French Collection',templates2_path + 'Great French Collection.txt',2,thumb,desc + '','1',50, fanart)
+	addDir('Great French Collection',templates2_path + 'Great French Collection.txt',2,thumb,desc + 'אמיר אלגזר פלייליסטים','1',50, fanart)
 	
 	'''Twilight Time'''
 	thumb = 'http://cps-static.rovicorp.com/3/JPG_400/MI0003/649/MI0003649662.jpg?partner=allrovi.com'
 	fanart = 'http://a2.mzstatic.com/us/r1000/096/Purple/v4/cc/8c/0f/cc8c0ff5-6e27-d9fa-62f1-791ffc4c7432/mzl.lcqgfyzc.1024x1024-65.jpg'
-	addDir('Twilight Time - Oldies',templates2_path + 'Twilight Time.txt',2,thumb,desc + '','1',50, fanart)
+	addDir('Twilight Time - Oldies',templates2_path + 'Twilight Time.txt',2,thumb,desc + 'אמיר אלגזר פלייליסטים','1',50, fanart)
 	
 	'''The Beatles'''
 	thumb = 'http://img2-ak.lst.fm/i/u/ar0/6a122bb0665d4d8ca0cc4c31e245ff55'
 	fanart = 'http://topwalls.net/wallpapers/2012/02/The-Beatles-1080x1920.jpg'
-	addDir('The Beatles',templates2_path + 'The Beatles.txt',2,thumb,desc + '','1',50, fanart)
+	addDir('The Beatles',templates2_path + 'The Beatles.txt',2,thumb,desc + 'אמיר אלגזר פלייליסטים','1',50, fanart)
 	
 	'''love songs vol 1'''
 	thumb = 'http://fullhdpictures.com/wp-content/uploads/2015/04/Beauty-Love-Wallpapers.jpg'
 	fanart = 'http://www.hd-wallpapersdownload.com/upload/bulk-upload/hd-wallpaper-romantic-love.jpg'
-	addDir('love songs vol 1',templates2_path + 'love songs vol 1.txt',2,thumb,desc + 'love songs vol 1 - Personal Collection','1',50, fanart)
+	addDir('love songs vol 1',templates2_path + 'love songs vol 1.txt',2,thumb,desc + 'אמיר אלגזר פלייליסטים - love songs vol 1 - Personal Collection','1',50, fanart)
 	
 	'''אוסף ישראלי'''
 	thumb = 'http://www.artishuk.co.il/UserFiles/Store/Products/Products/230x634453006475603750_M.png'
@@ -112,7 +117,7 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	'''שלמה ארצי אוסף אישי'''
 	thumb = 'http://www.nrg.co.il/images/archive/465x349/1/077/947.jpg'
 	fanart = 'http://www.megapixel.co.il/mega/wp-content/uploads/2012/02/Shlomo-Artzi_so.jpg'
-	addDir('שלמה ארצי אוסף אישי',templates2_path + 'Shlomo Artzi Personal Collection.txt',2,thumb,desc + '','1',50, fanart)
+	addDir('שלמה ארצי אוסף אישי',templates2_path + 'Shlomo Artzi Personal Collection.txt',2,thumb,desc + 'אמיר אלגזר פלייליסטים','1',50, fanart)
 	
 	'''פלייליסט מזרחי שקט ורגוע''' 
 	thumb = 'http://www.vehiclehi.com/thumbnails/detail/20121101/headphones%20women%20music%20headphones%20girl%201920x1080%20wallpaper_www.vehiclehi.com_28.jpg'
@@ -127,7 +132,8 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	'''אריק איינשטיין אוסף אישי'''
 	thumb = 'http://www.maariv.co.il/download/pictures/%D7%90%D7%A8%D7%99%D7%A7%20%D7%90%D7%99%D7%99%D7%A0%D7%A9%D7%98%D7%99%D7%9F%203%20-%20%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A9%D7%94%20%D7%A9%D7%99%20%D7%A4%D7%9C%D7%90%D7%A9%2090%20480_2.jpg'
 	fanart = 'http://www.haaretz.co.il/polopoly_fs/1.2490157.1416401072!/image/2643586370.jpg_gen/derivatives/size_936xAuto/2643586370.jpg'
-	addDir('אריק איינשטיין אוסף אישי',templates2_path + 'Arik Einstein.txt',2,thumb,desc + '','1',50, fanart)
+	addDir('אריק איינשטיין אוסף אישי',templates2_path + 'Arik Einstein.txt',2,thumb,desc + 'אמיר אלגזר פלייליסטים','1',50, fanart)
+	
 	
 def CATEGORIES101(admin):
 	'''Israeli Music'''
