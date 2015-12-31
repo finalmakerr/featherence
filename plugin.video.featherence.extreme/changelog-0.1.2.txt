@@ -3,13 +3,13 @@ WIP (WORK IN PROGRESS)
 ------------------------
 
 ------------------------
-Featherence Extreme v0.1.1 (21-12-15)
+Featherence Extreme v0.1.2 (31-12-15)
 ------------------------
+- Added Bushido channel.
 - Added TV Mode for Go-Pro videos.
+- Added GoPro Motorsports, Tutorials, World and Uncut channels.
 - Update TV Mode shuffle function.
 - Update TV Mode accuracy.
-- *Extra attempt to play another video if the first has failed.
-*Failing is an issue of the Youtube plugin.
 
 ------------------------
 Featherence Extreme v0.1.0 (10-Dec-15)

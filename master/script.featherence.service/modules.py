@@ -807,6 +807,7 @@ def mode32(value, admin, name, printpoint):
 		text = "" ; extra = ""
 		listitemfolderpath = xbmc.getInfoLabel('ListItem.FolderPath')
 		containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
+		listitemthumb = xbmc.getInfoLabel('ListItem.Thumb')
 		
 		nolabel = 'Container.FolderPath'
 		yeslabel = 'ListItem.Path'
@@ -852,7 +853,9 @@ def mode32(value, admin, name, printpoint):
 			else:
 				if '1' in printpoint: text = "list.append('&custom4=" + text + "')"
 				elif '2' in printpoint: text = "list.append('&custom8=" + text + "')"
-				
+		
+		if listitemthumb != "":
+			text = text + newline + str(listitemthumb)
 		write_to_file(featherenceservice_addondata_path + "Container.FolderPath" + ".txt", str(text), append=False, silent=True, utf8=False)
 		notification('url saved!','Container.FolderPath.txt','',2000)
 		'''---------------------------'''

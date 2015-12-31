@@ -49,11 +49,8 @@ def CATEGORIES100(admin):
 	fanart = 100
 	
 	'''כפתור הילדים שלי חדש..'''
-	addDir(addonString_servicefeatherence(86).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,'https://cdn3.iconfinder.com/data/icons/logistics-delivery-set-1/512/8-512.png',addonString_servicefeatherence(87).encode('utf-8') + addonString_servicefeatherence(88).encode('utf-8') + addonString_servicefeatherence(89).encode('utf-8'),'1',50, getAddonFanart(fanart))
-	if admin:
-		pass
-		#addDir('dailymotion_test',"&dailymotion_id=x3iijfg",4,'a','a','1','a','a')
-		#addDir('dailymotion_pl',"&dailymotion_pl=x3z4fy",13,'','','1','','')
+	addDir(addonString_servicefeatherence(86).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(87).encode('utf-8') + addonString_servicefeatherence(88).encode('utf-8') + addonString_servicefeatherence(89).encode('utf-8'),'1',50, getAddonFanart(fanart))
+		
 	'''רשימת השמעה 1'''
 	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',50, getAddonFanart("Custom_Playlist1"))
 	'''רשימת השמעה 2'''
@@ -128,36 +125,42 @@ def CATEGORIES101(admin):
 	addDir('שירי פרפר נחמד',list,17,'http://www.sdarot.wf/media/series/1092.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''שירי דיסני'''
-	addDir('שירי דיסני','plugin://plugin.video.youtube/channel/UC6QxAhInaZ79pTg7wi3ZF-Q/',8,'http://i.ytimg.com/i/6QxAhInaZ79pTg7wi3ZF-Q/1.jpg?v=78ea3c',addonString(138).encode('utf-8'),'1',"", getAddonFanart(background))
+	list = []
+	list.append('&youtube_ch=UC6QxAhInaZ79pTg7wi3ZF-Q')
+	addDir('שירי דיסני',list,17,'http://i.ytimg.com/i/6QxAhInaZ79pTg7wi3ZF-Q/1.jpg?v=78ea3c',addonString(138).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''שירי מיכל כלפון'''
+	list = []
+	list.append('&youtube_pl=PLPWc8VdaIIsAHPacvuyNfA-y8VSxoh4or')
 	addDir('שירי מיכל כלפון',['&youtube_pl=PL9boemkB6hYz5WlmI-QH_xmRyZDpHKvt9'],17,'http://yt3.ggpht.com/-4Rd1GQEZnaM/AAAAAAAAAAI/AAAAAAAAAAA/pfQtiUaNjng/s88-c-k-no/photo.jpg',addonString(107750).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''שירי ענבלי בא לי'''
-	addDir('שירי ענבלי בא לי','PLPWc8VdaIIsAHPacvuyNfA-y8VSxoh4or',13,'http://www.tel-aviv.gov.il/ToEnjoy/CulterAndArts/DocLib4/inbali.jpg.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
+	list = []
+	list.append('&youtube_pl=PLPWc8VdaIIsAHPacvuyNfA-y8VSxoh4or')
+	addDir('שירי ענבלי בא לי',list,17,'http://www.tel-aviv.gov.il/ToEnjoy/CulterAndArts/DocLib4/inbali.jpg.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''אוסף סיפורים בעברית'''
 	list = []
-	list.append('youtube_pl=PLyDbwArKjNV_8c791W2Ox9LxgSuhBaCtd')
-	list.append('youtube_pl=PL74E72320D1F7932C')
-	list.append('youtube_pl=PL6jaO-hu0Ivzi0gndI5Rb6YYcqut13wlD')
-	list.append('wallaNew=seasonId%3d2867134')
+	list.append('&youtube_pl=PLyDbwArKjNV_8c791W2Ox9LxgSuhBaCtd')
+	list.append('&youtube_pl=PL74E72320D1F7932C')
+	list.append('&youtube_pl=PL6jaO-hu0Ivzi0gndI5Rb6YYcqut13wlD')
+	list.append('&wallaNew=seasonId%3d2867134')
 	list.append('&wallaNew=seasonId%3d2585073')
 	list.append('&wallaNew=seasonId%3d2535850')
 	list.append('&wallaNew=seasonId%3d2554281')
 	list.append('&wallaNew=seasonId%3d2535850')
 	list.append('&wallaNew=item_id%3D2526364')
 	list.append('&wallaNew=item_id%3D2833303')
-	list.append('youtube_id=tl64w59Hh8E')
-	list.append('youtube_id=NPqxLDRQF3M')
-	list.append('youtube_id=CvlF7okXM2g')
-	list.append('youtube_id=uGXiT9zyYa0')
-	list.append('youtube_id=HAXPFap0P0A')
-	list.append('youtube_id=qSOsMgZ1iwk')
-	list.append('youtube_id=RCFSjBSXKHk')
-	list.append('youtube_id=QCFEPr9LLA0')
-	list.append('youtube_id=8-t8ujUVVIQ')
-	list.append('youtube_id=uGXiT9zyYa0')
+	list.append('&youtube_id=tl64w59Hh8E')
+	list.append('&youtube_id=NPqxLDRQF3M')
+	list.append('&youtube_id=CvlF7okXM2g')
+	list.append('&youtube_id=uGXiT9zyYa0')
+	list.append('&youtube_id=HAXPFap0P0A')
+	list.append('&youtube_id=qSOsMgZ1iwk')
+	list.append('&youtube_id=RCFSjBSXKHk')
+	list.append('&youtube_id=QCFEPr9LLA0')
+	list.append('&youtube_id=8-t8ujUVVIQ')
+	list.append('&youtube_id=uGXiT9zyYa0')
 	
 	addDir(addonString(10160).encode('utf-8'),list,17,'http://www.gidikoren.com/gidikoren/images/book_pitz_azar.jpg',addonString(101600).encode('utf-8'),'1',"", getAddonFanart(background))
 	
@@ -240,6 +243,7 @@ def CATEGORIES102(admin):
 	list.append('&youtube_id=99c23afc06d1a')
 	list.append('&youtube_id=CZDniCIenbA')
 	list.append('&youtube_id=H9rwsZ1roRQ')
+	list.append('&youtube_id=oAkA7DnCBdE')
 	addDir('יובל המבולבל',list,17,'http://yt3.ggpht.com/-FHcf2Rxu08A/AAAAAAAAAAI/AAAAAAAAAAA/dxzE2ng3uXI/s88-c-k-no/photo.jpg',addonString(107310).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''ילד פלא'''
@@ -484,8 +488,8 @@ def CATEGORIES104(admin):
 	list =[]
 	list.append('&youtube_pl=PLR7DTcU2p0QhYwFJuI0zFXFmAN-q6n4A0')
 	list.append('&youtube_pl=PL_8KXLhQVQMLhguXwe-d2HjvficZsfbEj')
-	list.append('&youtube_')
-	list.append('&youtube_')
+	#list.append('&youtube_')
+	#list.append('&youtube_')
 	list.append('&sdarot=season_id=1&series_id=1387&series_name=%d7%94%d7%9e%d7%a2%d7%95%d7%a4%d7%a4%d7%99%d7%9d%20%d7%94%d7%a0%d7%95%d7%a2%d7%96%d7%99%d7%9d%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1387%2fthe-little-flying-bears-%d7%94%d7%9e%d7%a2%d7%95%d7%a4%d7%a4%d7%99%d7%9d-%d7%94%d7%a0%d7%95%d7%a2%d7%96%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 	addDir('המעופפים הנועזים',list,17,'http://upload.wikimedia.org/wikipedia/he/archive/e/e8/20060406072630!Flying_bears.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	
@@ -1033,9 +1037,6 @@ def CATEGORIES104(admin):
 	addDir("שלגיה ושבעת הגמדים",['&youtube_pl=PL_8KXLhQVQMKKrMMm0glr1TMQoxCjFuTk'],17,'http://www.coloring4fun.com/wp-content/uploads/2013/03/snow-white-600x300.jpg',addonString(110).encode('utf-8'),'1',50, getAddonFanart(background))
 	'''---------------------------'''
 	
-	'''ערוץ גאליס 1''' '''צריך לסנן להראות רק פרקים מלאים'''
-	#if OFF_20 != "true": addDir(addonString(56).encode('utf-8') + space + "1",'UC1ZvZmYKkigob8Vg7MSgqjg',9,'http://yt3.ggpht.com/-2NPlgdL7mU8/AAAAAAAAAAI/AAAAAAAAAAA/ch9GzL2fOlM/s88-c-k-no/photo.jpg',addonString(156).encode('utf-8'),'1',"", getAddonFanart(background))
-	
 	#'''סדרות לילדים'''
 	#seriestvheb1 = 'ערוצי סדרות א'
 	#if OFF_17 != "true": addDir(addonString(44).encode('utf-8') + space + "10",seriestvheb1.decode('utf-8'),9,"https://yt3.ggpht.com/-hbyD79o9YWk/AAAAAAAAAAI/AAAAAAAAAAA/gOv2DB9cLC4/s100-c-k-no/photo.jpg",addonString(93).encode('utf-8'),'1',"", getAddonFanart(background))
@@ -1083,8 +1084,8 @@ def CATEGORIES105(admin):
 		#addDir(addonString(10520).encode('utf-8'),list1,6,'http://www.iphoneil.net/icone/111185-icon.png',addonString(105200).encode('utf-8'),'1',50, getAddonFanart(background))
 		addDir(addonString(10520).encode('utf-8') + space + str(count),'plugin://plugin.video.seretil/?mode=4&name=%d7%9e%d7%93%d7%95%d7%91%d7%91%d7%99%d7%9d%20%d7%a8%d7%90%d7%a9%d7%99&url=http%3a%2f%2fseretil.me%2fcategory%2f%25D7%25A1%25D7%25A8%25D7%2598%25D7%2599%25D7%259D-%25D7%259E%25D7%2593%25D7%2595%25D7%2591%25D7%2591%25D7%2599%25D7%259D%2fpage1%2f',8,'http://blog.tapuz.co.il/seretilNET/images/3745375_1.jpg',addonString(105200).encode('utf-8'),'1',58, getAddonFanart(background)) ; count += 1
 		if General_TrustedOnly == "false" or admin: 
-			addDir('[COLOR=Red]' + addonString(10520).encode('utf-8') + space + str(count) + '[/COLOR]','plugin://plugin.video.seretil/?mode=211&name=%20%d7%90%d7%95%d7%a1%d7%a3%20%d7%a1%d7%a8%d7%98%d7%99%d7%9d%20%d7%9e%d7%93%d7%95%d7%91%d7%91%d7%99%d7%9d&url=http%3a%2f%2fseretil.me%2f%25D7%2590%25D7%2595%25D7%25A1%25D7%25A3-%25D7%25A1%25D7%25A8%25D7%2598%25D7%2599%25D7%259D-%25D7%259E%25D7%2593%25D7%2595%25D7%2591%25D7%2591%25D7%2599%25D7%259D%2f',8,'http://blog.tapuz.co.il/seretilNET/images/3745375_1.jpg',addonString(196).encode('utf-8'),'1',50, getAddonFanart(background)) ; count += 1
-			addDir('[COLOR=Red]' + addonString(10520).encode('utf-8') + space + str(count) + '[/COLOR]','plugin://plugin.video.seretil/?mode=211&name=%d7%90%d7%95%d7%a1%d7%a3%20%d7%9e%d7%a1%d7%a4%d7%a8%202%20%d7%a1%d7%a8%d7%98%d7%99%d7%9d%20%d7%9e%d7%93%d7%95%d7%91%d7%91%d7%99%d7%9d&url=http%3a%2f%2fseretil.me%2f%25D7%2590%25D7%2595%25D7%25A1%25D7%25A3-%25D7%2592%25D7%2593%25D7%2595%25D7%259C-%25D7%25A9%25D7%259C-%25D7%25A1%25D7%25A8%25D7%2598%25D7%2599%25D7%259D-%25D7%259E%25D7%25A6%25D7%2595%25D7%2599%25D7%25A8%25D7%2599%25D7%259D%25D7%259E%25D7%2593%25D7%2595%25D7%2591%25D7%2591%25D7%2599%25D7%259D%2f',8,'http://blog.tapuz.co.il/seretilNET/images/3745375_1.jpg',addonString(196).encode('utf-8'),'1',50, getAddonFanart(background)) ; count += 1
+			addDir('[COLOR=red]' + addonString(10520).encode('utf-8') + space + str(count) + '[/COLOR]','plugin://plugin.video.seretil/?mode=211&name=%20%d7%90%d7%95%d7%a1%d7%a3%20%d7%a1%d7%a8%d7%98%d7%99%d7%9d%20%d7%9e%d7%93%d7%95%d7%91%d7%91%d7%99%d7%9d&url=http%3a%2f%2fseretil.me%2f%25D7%2590%25D7%2595%25D7%25A1%25D7%25A3-%25D7%25A1%25D7%25A8%25D7%2598%25D7%2599%25D7%259D-%25D7%259E%25D7%2593%25D7%2595%25D7%2591%25D7%2591%25D7%2599%25D7%259D%2f',8,'http://blog.tapuz.co.il/seretilNET/images/3745375_1.jpg',addonString(196).encode('utf-8'),'1',50, getAddonFanart(background)) ; count += 1
+			addDir('[COLOR=red]' + addonString(10520).encode('utf-8') + space + str(count) + '[/COLOR]','plugin://plugin.video.seretil/?mode=211&name=%d7%90%d7%95%d7%a1%d7%a3%20%d7%9e%d7%a1%d7%a4%d7%a8%202%20%d7%a1%d7%a8%d7%98%d7%99%d7%9d%20%d7%9e%d7%93%d7%95%d7%91%d7%91%d7%99%d7%9d&url=http%3a%2f%2fseretil.me%2f%25D7%2590%25D7%2595%25D7%25A1%25D7%25A3-%25D7%2592%25D7%2593%25D7%2595%25D7%259C-%25D7%25A9%25D7%259C-%25D7%25A1%25D7%25A8%25D7%2598%25D7%2599%25D7%259D-%25D7%259E%25D7%25A6%25D7%2595%25D7%2599%25D7%25A8%25D7%2599%25D7%259D%25D7%259E%25D7%2593%25D7%2595%25D7%2591%25D7%2591%25D7%2599%25D7%259D%2f',8,'http://blog.tapuz.co.il/seretilNET/images/3745375_1.jpg',addonString(196).encode('utf-8'),'1',50, getAddonFanart(background)) ; count += 1
 			'''---------------------------'''
 	'''---------------------------'''	
 
@@ -1124,8 +1125,8 @@ def CATEGORIES106(admin):
 	list =[]
 	list.append('&youtube_pl=PLvadvyUkv4iFxFnsG0i1mLhuvR5nQBUcf')
 	list.append('&youtube_pl=PLFB481A7458E12A61')
-	list.append('&youtube_')
-	list.append('&youtube_')
+	#list.append('&youtube_')
+	#list.append('&youtube_')
 	addDir('בייבי איינשטיין',list,17,'http://d202m5krfqbpi5.cloudfront.net/books/1170326163l/46377.jpg',addonString(120).encode('utf-8'),'1',50, getAddonFanart(background)) #TerrapinStation5
 	
 	'''בייבי'''
@@ -1256,8 +1257,8 @@ def CATEGORIES106(admin):
 	list =[]
 	list.append('&youtube_pl=PLTNonj9ImqaI2F7DHlMxZ3VDn8gwpaTKe')
 	list.append('&youtube_pl=PLaorT66MlVdw0Ebw7cVh44jKZUQZjMbfJ')
-	list.append('&youtube_')
-	list.append('&youtube_')
+	#list.append('&youtube_')
+	#list.append('&youtube_')
 	addDir('פים ופימבה',list,17,'http://msc.wcdn.co.il/archive/941107-54.jpg',addonString(154).encode('utf-8'),'1',58, getAddonFanart(background))
 	
 	'''פיצי'''
@@ -1278,11 +1279,11 @@ def CATEGORIES106(admin):
 	
 	'''צרלי ודודו'''
 	list =[]
-	list.append('&youtube_')
-	list.append('&youtube_')
-	list.append('&youtube_')
-	list.append('&youtube_')
-	addDir('צרלי ודודו',list,17,'https://i.ytimg.com/vi/QLtv1_pibW8/hqdefault.jpg','','1',50, getAddonFanart(background))
+	#list.append('&youtube_')
+	#list.append('&youtube_')
+	#list.append('&youtube_')
+	#list.append('&youtube_')
+	#addDir('צרלי ודודו',list,17,'https://i.ytimg.com/vi/QLtv1_pibW8/hqdefault.jpg','','1',50, getAddonFanart(background))
 	''''''
 	
 	'''קוקו הארנב'''
@@ -1384,18 +1385,17 @@ def CATEGORIES107(admin):
 	
 	'''יובל המבולבל'''
 	list =[]
-	list.append('&youtube_ch=UC0r3m54hCOvyG47jzz08X2Q')
-	list.append('&youtube_pl=PL0495C8F5A2024FA4')
-	list.append('&youtube_')
-	list.append('&youtube_')
+	list.append('&youtube_ch=7yuval')
+	list.append('&youtube_pl=PLzAqQoYm2t2xi_8LMKWYVfW0DjchcSzv0')
+	list.append('&youtube_pl=PLfcYs4SRZfuIrU-AvQvAoJ01gW-EnlfHw')
 	addDir('יובל המבולבל',list,6,'http://yt3.ggpht.com/-FHcf2Rxu08A/AAAAAAAAAAI/AAAAAAAAAAA/dxzE2ng3uXI/s88-c-k-no/photo.jpg',addonString(107310).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''יצירה בקצרה'''
 	list =[]
 	list.append('&youtube_pl=PLPWc8VdaIIsC0SPM0_dgOVIDn5vcCH8Ti')
 	list.append('&youtube_pl=PLPWc8VdaIIsD85fRihIJFTzwt9v_JX2t6')
-	list.append('&youtube_')
-	list.append('&youtube_')
+	#list.append('&youtube_')
+	#list.append('&youtube_')
 	addDir('יצירה בקצרה',list,6,'http://msc.wcdn.co.il/archive/1475513-5.jpg',addonString(107340).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''מולי וצומי'''
@@ -1405,8 +1405,8 @@ def CATEGORIES107(admin):
 	list =[]
 	list.append('&youtube_pl=PLPWc8VdaIIsDUd9awquJznDcL_aSyi00T')
 	list.append('&youtube_pl=PLPWc8VdaIIsCfrHCUj7XKDG_rvLwE9V-p')
-	list.append('&youtube_')
-	list.append('&youtube_')
+	#list.append('&youtube_')
+	#list.append('&youtube_')
 	addDir('מועדון המאפים הטובים',list,6,'http://www.erezdvd.co.il/sites/default/files/imagecache/product_full/products/gilisip.jpg',addonString(107450).encode('utf-8'),'1',"", getAddonFanart(background))
 	
 	'''מיכל הקטנה'''
@@ -1458,8 +1458,8 @@ def CATEGORIES107(admin):
 	list =[]
 	list.append('&youtube_ch=UClZXqxeY540_Epab3WDHFGw/playlists')
 	list.append('&youtube_ch=UCfNjGgy-3XfTzgWoGMt_QOw/playlists')
-	list.append('&youtube_')
-	list.append('&youtube_')
+	#list.append('&youtube_')
+	#list.append('&youtube_')
 	addDir('ערוץ הופ!',list,6,'http://yt3.ggpht.com/-A6Z6Bj0Y5os/AAAAAAAAAAI/AAAAAAAAAAA/k-1dO4Dm0m8/s88-c-k-no/photo.jpg',addonString(107620).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''פליפר ולופקה'''
@@ -1502,14 +1502,27 @@ def CATEGORIES107(admin):
 	
 def CATEGORIES108(admin):
 	background = 108
+	
+	'''חיפוש'''
+	addDir(localize(137) + space + 'Sdarot TV','&activatewindow=plugin://plugin.video.sdarot.tv/?mode=6&name=%5bCOLOR%20red%5d%20%d7%97%d7%a4%d7%a9%20%20%5b%2fCOLOR%5d&summary&url=http%3a%2f%2fwww.sdarot.wf%2fsearch',8,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png','חיפוש תוכן בהרחבת סדרות','1',"", getAddonFanart(background, custom=""))
+
 	'''בבית של פיסטוק'''
-	addDir('בבית של פיסטוק',['&youtube_pl=PLN0EJVTzRDL96B86muPPFwgdymQjlwmLZ'],17,'https://upload.wikimedia.org/wikipedia/he/thumb/6/6c/FistukLogo.jpg/250px-FistukLogo.jpg',addonString(108040).encode('utf-8'),'1',50, getAddonFanart(background))
+	list = []
+	list.append('&youtube_pl=PLN0EJVTzRDL96B86muPPFwgdymQjlwmLZ')
+	addDir('בבית של פיסטוק',list,17,'https://upload.wikimedia.org/wikipedia/he/thumb/6/6c/FistukLogo.jpg/250px-FistukLogo.jpg',addonString(108040).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''בלי סודות''' #addonString(10804).encode('utf-8')
 	list =[]
 	list.append('&youtube_pl=PL9FD9492D8C95F00F')
 	list.append('&youtube_pl=PL29CF6709AA760AB5')
-	addDir('בלי סודות',list,6,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/%D7%9C%D7%95%D7%92%D7%95_%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99.jpg/250px-%D7%9C%D7%95%D7%92%D7%95_%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99.jpg','בבית של פיסטוק היא ספין-אוף של סדרת הטלוויזיה הישראלית לילדים "רגע עם דודלי".[CR]הסדרה הופקה על ידי הטלוויזיה החינוכית במשך שתי עונות בין השנים 1981 - 1983 וכללה 29 פרקים שצולמו בעונה הראשונה בשחור-לבן (18 פרקים) ובעונה השנייה בצבע (11 פרקים). הסדרה שודרה בשידורים חוזרים לאורך כל שנות השמונים והתשעים וזכתה לפופולריות רבה בקרב ילדי ישראל.[CR]עלילת הסדרה מתמקדת בהרפתקאותיהם של פיסטוק (ספי ריבלין) וידידו רגע (ציפי מור). פיסטוק הוא אדם תמהוני חביב ומגושם המתגורר בבית קטן ומוזר על ראש גבעה ורגע הוא בובה שהפכה לילד. בנוסף, התוכנית הכילה גם פינה של בובה בשם "פלטיאל ממגדיאל" וסדרה נוספת עם בובות מהולנד ב סיפורימפו אשר דובבו לעברית.[CR]הסדרה הופקה בתקציב נמוך משמעותית מסדרת האם "רגע עם דודלי". למעט פרקים מיוחדים היא צולמה רובה ככולה באולפני הטלוויזיה החינוכית ברמת אביב. החל מעונתה השנייה, זו הייתה ההפקה הראשונה של הטלוויזיה החינוכית שצולמה בצבע.[CR]רבים מפרקי הסדרה שצולמו בשחור-לבן נחשבים כיום לאבודים, מאחר שהטלוויזיה החינוכית מעולם לא שימרה אותם ולא העבירה אותם מהסרטים המקוריים לפורמט דיגיטלי מודרני.[CR]שיר הפתיחה של התוכנית נכתב על ידי לאה נאור, הולחן על ידי נורית הירש, ובוצע על ידי אילנית.','1',50, getAddonFanart(background))
+	addDir('בלי סודות',list,17,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/%D7%9C%D7%95%D7%92%D7%95_%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99.jpg/250px-%D7%9C%D7%95%D7%92%D7%95_%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99.jpg','בבית של פיסטוק היא ספין-אוף של סדרת הטלוויזיה הישראלית לילדים "רגע עם דודלי".[CR]הסדרה הופקה על ידי הטלוויזיה החינוכית במשך שתי עונות בין השנים 1981 - 1983 וכללה 29 פרקים שצולמו בעונה הראשונה בשחור-לבן (18 פרקים) ובעונה השנייה בצבע (11 פרקים). הסדרה שודרה בשידורים חוזרים לאורך כל שנות השמונים והתשעים וזכתה לפופולריות רבה בקרב ילדי ישראל.[CR]עלילת הסדרה מתמקדת בהרפתקאותיהם של פיסטוק (ספי ריבלין) וידידו רגע (ציפי מור). פיסטוק הוא אדם תמהוני חביב ומגושם המתגורר בבית קטן ומוזר על ראש גבעה ורגע הוא בובה שהפכה לילד. בנוסף, התוכנית הכילה גם פינה של בובה בשם "פלטיאל ממגדיאל" וסדרה נוספת עם בובות מהולנד ב סיפורימפו אשר דובבו לעברית.[CR]הסדרה הופקה בתקציב נמוך משמעותית מסדרת האם "רגע עם דודלי". למעט פרקים מיוחדים היא צולמה רובה ככולה באולפני הטלוויזיה החינוכית ברמת אביב. החל מעונתה השנייה, זו הייתה ההפקה הראשונה של הטלוויזיה החינוכית שצולמה בצבע.[CR]רבים מפרקי הסדרה שצולמו בשחור-לבן נחשבים כיום לאבודים, מאחר שהטלוויזיה החינוכית מעולם לא שימרה אותם ולא העבירה אותם מהסרטים המקוריים לפורמט דיגיטלי מודרני.[CR]שיר הפתיחה של התוכנית נכתב על ידי לאה נאור, הולחן על ידי נורית הירש, ובוצע על ידי אילנית.','1',50, getAddonFanart(background))
+	
+	'''גאליס'''
+	list =[]
+	#list.append('&youtube_ch=UC1ZvZmYKkigob8Vg7MSgqjg')
+	list.append('&youtube_se=commonsearch101&videoDuration=long&')
+	#list.append('&sdarot=series_id=421&series_name=%d7%92%d7%90%d7%9c%d7%99%d7%a1&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f421%2fgalis-%d7%92%d7%90%d7%9c%d7%99%d7%a1')
+	addDir('גאליס',list,6,'http://www.sdarot.wf/media/series/421.jpg','','1',50, getAddonFanart(background))
 	
 	'''גיבורי התנ"ך'''
 	if General_TrustedOnly == "true" or admin: addDir('גיבורי התנ"ך',['&sdarot=season_id=1&series_id=1083&series_name=%d7%92%d7%99%d7%91%d7%95%d7%a8%d7%99%20%d7%94%d7%aa%d7%a0%22%d7%9a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1083%2fgreatest-heroes-and-legends-of-the-bible-%d7%92%d7%99%d7%91%d7%95%d7%a8%d7%99-%d7%94%d7%aa%d7%a0-%d7%9a', '&youtube_pl=PLE8E08292878C59A1', '&youtube_pl=PL67F1DD7B9B45213A', '&youtube_pl=PLx1dI0IFg6RqlKwV-RPhXx_YZfDbadc7h'],6,'http://www.sdarot.pm/media/series/1083.jpg','אנתולוגיה של אירועים מפורסמים בתנ"ך.','1',50, getAddonFanart(background))
@@ -1519,7 +1532,13 @@ def CATEGORIES108(admin):
 	list.append('&youtube_pl=PLth1a195qHsjFGXCmLtU0WZDuLq4CiWz4')
 	list.append('&youtube_pl=PL51YAgTlfPj6Ypxb-_Dh0eoCztCXiBYsN')
 	list.append('&youtube_pl=PLth1a195qHsigShKnT9DsIyKxcTBQ70Tf')
-	addDir('גלילאו',list,6,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Hila_Korach.jpg/250px-Hila_Korach.jpg',addonString(108100).encode('utf-8'),'1',50, getAddonFanart(background))
+	addDir('גלילאו',list,17,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Hila_Korach.jpg/250px-Hila_Korach.jpg',addonString(108100).encode('utf-8'),'1',50, getAddonFanart(background))
+	
+	'''החממה'''
+	list =[]
+	list.append('&youtube_se=UCdAREOT3Agv88XHKfGs9TPw')
+	list.append('&sdarot=series_id=349&series_name=%d7%94%d7%97%d7%9e%d7%9e%d7%94&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f349%2fhahamama-%d7%94%d7%97%d7%9e%d7%9e%d7%94')
+	addDir('החממה',list,6,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Hila_Korach.jpg/250px-Hila_Korach.jpg',addonString(108100).encode('utf-8'),'1',50, getAddonFanart(background))
 	
 	'''הופה היי'''
 	addDir('הופה היי',['&youtube_pl=PL1236E31BAFB62B85'],17,'https://upload.wikimedia.org/wikipedia/he/thumb/e/ef/Hopa_Hey.jpg/250px-Hopa_Hey.jpg','הופה היי הייתה להקה ותוכנית טלוויזיה ישראלית מצליחה לילדים ולכל המשפחה אשר הופיעה וצולמה ברחבי ישראל במהלך שנות השמונים ושנות התשעים.[CR]סדרת הטלוויזיה של הופה היי הופקה לטלוויזיה מיוני 1986 עד מאי 1995 והכילה 63 פרקים. הסדרה שודרה בערוץ הראשון במסגרת מחלקת התוכניות לילדים ונוער.[CR]בעקבות הצלחת סדרת הטלוויזיה בקרב ילדי ישראל, במהלך שנות פעילותה הופיעה הלהקה ברחבי ישראל בשמונה מופעים מצליחים והוציאה שבעה אלבומים. מוצרים נלווים נוספים של הופה היי אשר נמכרו לאורך השנים כוללים ספרים, קלטות וידאו וחטיף שוקולד.','1',50, getAddonFanart(background))

@@ -11,10 +11,10 @@ Featherence v0.2.2 (xx-Dec-15)
 - Added PVR support.
 - Option to enlarge Side List view for extra information.
 - Option to toggle fanart size for Side List view.
+- Update default settings.
 - Update autoview script.
-- Update ExtendedInfo.
+- Update ExtendedInfo buttons.
 - Update views.
-- Setup default views & others settings.
 - Backup script now support all languages.
 - Minor bugs fix.
 

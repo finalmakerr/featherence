@@ -134,11 +134,13 @@
           </control>
 		  <control type="image" description="סמל">
 			<include>Fade_IconOverlayButton</include>
-            <aspectratio align="left">stretch</aspectratio>
-		    <height>70</height>
-            <texture border="20" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+            <aspectratio align="center">stretch</aspectratio>
+		    <height>60</height>
+			<posy>5</posy>
+			<posx>5</posx>
+            <texture border="0" diffuse="buttons/ButtonE0.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
 		    <visible>!IsEmpty(ListItem.Thumb)</visible>
-		    <width>70</width>
+		    <width>60</width>
 		  </control>
 		  <control type="image" description="OFF">
             <aspectratio align="left">stretch</aspectratio>
@@ -167,13 +169,15 @@
           <height>70</height>
 		  <texture border="40">buttons/ButtonE.png</texture>
         </control>
-        <control type="image" description="סמל">
-		  <include>Fade_IconOverlayButton</include>
-          <aspectratio align="left">stretch</aspectratio>
-          <height>70</height>
-          <texture border="20" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
-   	      <visible>!IsEmpty(ListItem.Thumb)</visible>
-		  <width>70</width>
+		<include>Fade_IconOverlayButton</include>
+		<control type="image" description="סמל">
+            <aspectratio align="center">stretch</aspectratio>
+		    <height>60</height>
+			<posy>5</posy>
+			<posx>5</posx>
+            <texture border="0" diffuse="buttons/ButtonE0.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+		    <visible>!IsEmpty(ListItem.Thumb)</visible>
+		    <width>60</width>
 		</control>
 		<control type="image" description="OFF">
           <aspectratio align="left">stretch</aspectratio>

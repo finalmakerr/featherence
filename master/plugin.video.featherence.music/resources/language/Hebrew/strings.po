@@ -464,23 +464,23 @@ msgstr "$LOCALIZE[19021]"
 
 msgctxt "#995
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#996
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#997
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#998
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#999
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#1000
 msgid ""
@@ -489,83 +489,83 @@ msgstr ""
 #SUB-CATEGORIES DESCRIPTION
 msgctxt "#1001
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1002
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1003
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1004
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1005
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1006
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1007
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1008
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1009
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1010
 msgid ""
-msgstr "[COLOR=Yellow]כל הזמרים הישראלים![/COLOR][CR][CR]"
+msgstr "[COLOR=yellow]כל הזמרים הישראלים![/COLOR][CR][CR]"
 
 msgctxt "#1020
 msgid ""
-msgstr "[COLOR=Yellow]כל שירי הקריוקי הישראלים![/COLOR][CR][CR]"
+msgstr "[COLOR=yellow]כל שירי הקריוקי הישראלים![/COLOR][CR][CR]"
 
 msgctxt "#1030
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#1040
 msgid ""
-msgstr "[COLOR=Yellow]כל הופעות הזמרים הישראלים![/COLOR][CR][CR]"
+msgstr "[COLOR=yellow]כל הופעות הזמרים הישראלים![/COLOR][CR][CR]"
 
 msgctxt "#1050
 msgid ""
-msgstr "[COLOR=Yellow]כל הדי ג'יי הישראלים![/COLOR][CR][CR]"
+msgstr "[COLOR=yellow]כל הדי ג'יי הישראלים![/COLOR][CR][CR]"
 
 msgctxt "#1060
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#1070
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#1080
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#1090
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#1100
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1110
 msgid ""
-msgstr "[COLOR=Yellow]כל הזמרים המובילים מחו"ל![/COLOR][CR][CR]"
+msgstr "[COLOR=yellow]כל הזמרים המובילים מחו"ל![/COLOR][CR][CR]"
 
 msgctxt "#1120
 msgid ""
@@ -573,76 +573,76 @@ msgstr ""
 
 msgctxt "#1130
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1140
 msgid ""
-msgstr "[COLOR=Yellow]כל הופעות הזמרים מחו"ל![/COLOR][CR][CR]"
+msgstr "[COLOR=yellow]כל הופעות הזמרים מחו"ל![/COLOR][CR][CR]"
 
 msgctxt "#1150
 msgid ""
-msgstr "[COLOR=Yellow]כל הדי ג'יי המובילים מחו"ל![/COLOR][CR][CR]"
+msgstr "[COLOR=yellow]כל הדי ג'יי המובילים מחו"ל![/COLOR][CR][CR]"
 
 msgctxt "#1160
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#1170
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1180
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#1190
-msgid "[COLOR=Yellow]Listen to your favourite music (Audio only).[/COLOR][CR][CR]Goes great with photo presentation."
-msgstr "[COLOR=Yellow]שמע את המוזיקה האהובה עליך (ללא וידאו).[/COLOR][CR][CR]מתאים במיוחד עבור מצגת תמונות."
+msgid "[COLOR=yellow]Listen to your favourite music (Audio only).[/COLOR][CR][CR]Goes great with photo presentation."
+msgstr "[COLOR=yellow]שמע את המוזיקה האהובה עליך (ללא וידאו).[/COLOR][CR][CR]מתאים במיוחד עבור מצגת תמונות."
 
 msgctxt "#1210
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1220
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1230
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1240
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 #Foreign Karaoke2
 msgctxt "#1250
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#1251
 msgid ""
-msgstr "[COLOR=Yellow]We are Sing King Karaoke. A YouTube channel dedicated to bringing you the best free karaoke content - from brand new tracks to old classics, we are committed to bringing you the biggest and boldest hits around![/COLOR][CR][CR]Our channel caters to all genres including Pop, Rock, Alternative, Folk, Dance, Hip Hop, R&B and many more![CR]Whether you like to sing, scream, rap or shout along to your favourite tunes, this is the place to be. So... if you fancy yourself as the next Bruno Mars or Katy Perry, or you simply just like to show off at a karaoke party with your buddies, then we have plenty of free karaoke videos to help you practice and hone your vocal mastery![CR]We upload new videos on a daily basis, sometimes more than one a day - so subscribe to our channel to stay tuned.[CR]Above all else, we love to have a chat with our fans, so feel free to get involved and drop us a comment any time. :)"
+msgstr "[COLOR=yellow]We are Sing King Karaoke. A YouTube channel dedicated to bringing you the best free karaoke content - from brand new tracks to old classics, we are committed to bringing you the biggest and boldest hits around![/COLOR][CR][CR]Our channel caters to all genres including Pop, Rock, Alternative, Folk, Dance, Hip Hop, R&B and many more![CR]Whether you like to sing, scream, rap or shout along to your favourite tunes, this is the place to be. So... if you fancy yourself as the next Bruno Mars or Katy Perry, or you simply just like to show off at a karaoke party with your buddies, then we have plenty of free karaoke videos to help you practice and hone your vocal mastery![CR]We upload new videos on a daily basis, sometimes more than one a day - so subscribe to our channel to stay tuned.[CR]Above all else, we love to have a chat with our fans, so feel free to get involved and drop us a comment any time. :)"
 
-msgstr "[COLOR=Yellow][/COLOR][CR][CR]"
+msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 msgid ""
-msgstr "[COLOR=Yellow]The KARAOKE Channel offers the world's largest licensed karaoke library to karaoke fans around the world via multiple services and products.[/COLOR][CR][CR]"
+msgstr "[COLOR=yellow]The KARAOKE Channel offers the world's largest licensed karaoke library to karaoke fans around the world via multiple services and products.[/COLOR][CR][CR]"
 
 msgctxt "#1253
 msgid ""
-msgstr "[COLOR=Yellow]KaraFun is the ultimate karaoke experience![CR][/COLOR][CR][CR]רשימת פלייליסטים:[CR]- שירי אהבה[CR]- דואטים[CR]- יום הולדת[CR]- שירי ילדים[CR]- זמן בנות[CR]- קלאסיקות[CR]- חג מולד[CR] ועוד..."
+msgstr "[COLOR=yellow]KaraFun is the ultimate karaoke experience![CR][/COLOR][CR][CR]רשימת פלייליסטים:[CR]- שירי אהבה[CR]- דואטים[CR]- יום הולדת[CR]- שירי ילדים[CR]- זמן בנות[CR]- קלאסיקות[CR]- חג מולד[CR] ועוד..."
 
 msgctxt "#1254
 msgid ""
-msgstr "[COLOR=Yellow]Enjoy our Karaoke Video Jukebox and sing along to some of the best loved pop songs of the last 50 years.[/COLOR][CR][CR]רשימות השמעה:[CR]- Lady Gaga[CR]- Queen[CR]- Andrea Bocelli[CR]- Tom Jones[CR]- Elton John[CR]- Kelis[CR]- Rihanna[CR]- Katy Perry[CR]ועוד..."
+msgstr "[COLOR=yellow]Enjoy our Karaoke Video Jukebox and sing along to some of the best loved pop songs of the last 50 years.[/COLOR][CR][CR]רשימות השמעה:[CR]- Lady Gaga[CR]- Queen[CR]- Andrea Bocelli[CR]- Tom Jones[CR]- Elton John[CR]- Kelis[CR]- Rihanna[CR]- Katy Perry[CR]ועוד..."
 
 msgctxt "#1255
 msgid ""
-msgstr "[COLOR=Yellow]KaraokeOnVevo is created by www.DigiTraxEntertainment.com, mixed and mastered at www.SoKnoxStudios.com in Knoxville, TN. Produced by Joseph Vangieri and the SoKnox Wrecking Crew, with over 15,000 songs to their credit produced, mixed and mastered.[/COLOR][CR][CR]"
+msgstr "[COLOR=yellow]KaraokeOnVevo is created by www.DigiTraxEntertainment.com, mixed and mastered at www.SoKnoxStudios.com in Knoxville, TN. Produced by Joseph Vangieri and the SoKnox Wrecking Crew, with over 15,000 songs to their credit produced, mixed and mastered.[/COLOR][CR][CR]"
 
 msgctxt "#1256
 msgid ""
-msgstr "[COLOR=Yellow]Matt Monro (1 December 1930 – 7 February 1985), known as The Man With The Golden Voice, was an English singer who became one of the most popular entertainers on the international music scene during the 1960s and 1970s. Throughout his 30-year career, he filled cabarets, nightclubs, music halls, and stadiums in Australia, Japan, the Philippines, and Hong Kong to Africa, the Middle East, Europe, and the Americas.[/COLOR][CR][CR]Early Career:[CR]He was born Terence Edward Parsons in Shoreditch, London and attended Duncombe School in Islington, and Elliott School in Putney. Affectionately nicknamed "the singing bus driver" (because one of his many occupations prior to achieving fame was driving the Number 27 bus from Highgate to Teddington),[citation needed] he got his first break in 1956 when he became a featured vocalist with the BBC Show Band. An important influence on his early career was the pianist Winifred Atwell, who became his mentor, provided him with his stage name, and helped him sign with Decca Records.[CR]In 1957 Monro released Blue and Sentimental, a collection of standards. Despite the album's critical acclaim, Monro languished among the young male singers trying to break through at the end of the 1950s, many of them emulating Frankie Vaughan by recording cover versions of American hits. (Monro even recorded a version of Vaughan's "Garden of Eden" during this period.) A short recording contract with Fontana Records followed.[CR]By the end of the 1950s, Monro's mid-decade fame had evaporated, and he returned to relative obscurity. He and his wife Mickie lived from her wages as a song plugger and his royalties from a TV advertising jingle for Camay soap. In 1959 he recorded a country pastiche song, "Bound for Texas", for The Chaplin Revue, a feature-length compilation of Charlie Chaplin shorts. It would be the first of many Monro soundtrack themes."
+msgstr "[COLOR=yellow]Matt Monro (1 December 1930 – 7 February 1985), known as The Man With The Golden Voice, was an English singer who became one of the most popular entertainers on the international music scene during the 1960s and 1970s. Throughout his 30-year career, he filled cabarets, nightclubs, music halls, and stadiums in Australia, Japan, the Philippines, and Hong Kong to Africa, the Middle East, Europe, and the Americas.[/COLOR][CR][CR]Early Career:[CR]He was born Terence Edward Parsons in Shoreditch, London and attended Duncombe School in Islington, and Elliott School in Putney. Affectionately nicknamed "the singing bus driver" (because one of his many occupations prior to achieving fame was driving the Number 27 bus from Highgate to Teddington),[citation needed] he got his first break in 1956 when he became a featured vocalist with the BBC Show Band. An important influence on his early career was the pianist Winifred Atwell, who became his mentor, provided him with his stage name, and helped him sign with Decca Records.[CR]In 1957 Monro released Blue and Sentimental, a collection of standards. Despite the album's critical acclaim, Monro languished among the young male singers trying to break through at the end of the 1950s, many of them emulating Frankie Vaughan by recording cover versions of American hits. (Monro even recorded a version of Vaughan's "Garden of Eden" during this period.) A short recording contract with Fontana Records followed.[CR]By the end of the 1950s, Monro's mid-decade fame had evaporated, and he returned to relative obscurity. He and his wife Mickie lived from her wages as a song plugger and his royalties from a TV advertising jingle for Camay soap. In 1959 he recorded a country pastiche song, "Bound for Texas", for The Chaplin Revue, a feature-length compilation of Charlie Chaplin shorts. It would be the first of many Monro soundtrack themes."
 
 msgctxt "#10000
 msgid ""
@@ -1450,11 +1450,11 @@ msgstr ""
 
 msgctxt "#100000
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#100010
-msgid ""
-msgstr "[COLOR=Yellow]פלייליסטים אוסף אישי[/COLOR]"
+msgid "Playlists private collection"
+msgstr "פלייליסטים אוסף אישי"
 
 #אביתר בנאי
 msgctxt "#101010
@@ -1493,11 +1493,11 @@ msgstr "הם צמד זמרים-יוצרים ישראלים המורכב מגיא
 
 msgctxt "#101090
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#101100
 msgid ""
-msgstr "[COLOR=Yellow][/COLOR]   " 
+msgstr "[COLOR=yellow][/COLOR]   " 
 
 #דני סנדרסון
 msgctxt "#101110
@@ -1531,7 +1531,7 @@ msgstr "חברי הלהקה המובילים בכל ההרכבים הם גידי
 
 msgctxt "#101160
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 #ישי לוי
 msgctxt "#101170
@@ -1589,7 +1589,7 @@ msgstr "נולד ב  6 באוגוסט 1986 זמר, פזמונאי ומלחין �
 
 msgctxt "#101290
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 #עיברי לידר
 msgctxt "#101300
@@ -1676,15 +1676,15 @@ msgstr " נולד ב-26 בנובמבר 1949 הוא זמר-יוצר, מוזיקא
 
 msgctxt "#101450
 msgid ""
-msgstr "[COLOR=Yellow]שרית חדד (בעבר שרה חודדטוב; נולדה ב-20 בספטמבר 1978, י"ח באלול התשל"ח) היא זמרת ומוזיקאית ישראלית.[/COLOR][CR][CR]הוציאה מעל 20 אלבומים, וזכתה מספר פעמים בתואר "זמרת השנה" וכן בתואר "זמרת העשור" במצעד הפזמונים העברי.[CR]שרית חדד מתמחה במוזיקה מזרחית, והיא הזמרת המושמעת ביותר בישראל..."
+msgstr "[COLOR=yellow]שרית חדד (בעבר שרה חודדטוב; נולדה ב-20 בספטמבר 1978, י"ח באלול התשל"ח) היא זמרת ומוזיקאית ישראלית.[/COLOR][CR][CR]הוציאה מעל 20 אלבומים, וזכתה מספר פעמים בתואר "זמרת השנה" וכן בתואר "זמרת העשור" במצעד הפזמונים העברי.[CR]שרית חדד מתמחה במוזיקה מזרחית, והיא הזמרת המושמעת ביותר בישראל..."
 
 msgctxt "#101470
 msgid ""
-msgstr "[COLOR=Yellow]?[/COLOR][CR][CR]?"
+msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
 
 msgctxt "#111010
 msgid ""
-msgstr "[COLOR=Yellow]מייקל ג'וזף ג'קסון (באנגלית: Michael Joseph Jackson;‏ 29 באוגוסט 1958 – 25 ביוני 2009) היה זמר, מוזיקאי, רב נגן, רקדן, כוריאוגרף, מפיק מוזיקלי, שחקן ופזמונאי אפרו אמריקאי מצליח. ג'קסון, שנודע בכינויו "מלך הפופ", נחשב לאחד הזמרים הפופולריים והמצליחים ביותר בכל הזמנים.[/COLOR][CR][CR]הקריירה המוזיקלית של ג'קסון החלה בשנת 1963 כאשר הצטרף לאחיו בתור החבר הצעיר ביותר בהרכב המוזיקלי המשפחתי "חמישיית הג'קסונים". בהמשך עזב את הלהקה והחל קריירת סולו מצליחה יותר. אלבומו Thriller משנת 1982 מכר מעל ל-110 מיליון עותקים ונשאר עד היום האלבום הנמכר ביותר בכל הזמנים, לצד ארבעה אלבומים נוספים של ג'קסון. הווידאוקליפים לשיריו "Beat It"‏, "Billie Jean" ו-"Thriller" נחשבו לפורצי דרך והשפיעו רבות על תעשיית המוזיקה בהמשך. באותה העת, ג'קסון הפך מספר טכניקות ריקוד מסובכות לפופולאריות במיוחד, המפורסם שבריקודים הוא ריקוד "הליכת הירח". הסגנון המוזיקלי, הסגנון הווקאלי והכוריאוגרפיה הייחודית של ג'קסון הצליחו לגשר על פערי הדורות, הגזעים והתרבויות. הקריירה המוזיקלית של ג'קסון היוותה השראה למיליוני אנשים ברחבי העולם ואמנים רבים בתחום המוזיקה והריקוד הושפעו ממנו.[CR]הישגים נוספים לג'קסון כוללים בין היתר שבירת מספר שיאים עולמיים שנכנסו לספר השיאים של גינס, זכייה ב-15 פרסי גראמי, זכייה ב-26 פרסי American Music Awards, והפקת 17 סינגלים אשר הגיעו למקום ראשון במצעד הפזמונים האמריקאי (כולל ארבעה אשר הופקו בעודו חבר בחמישיית הג'קסונים). סך מכירות אלבומיו - המוערך בכ-780 מיליון עותקים ברחבי העולם, דבר שהפך אותו לאחד האומנים המצליחים ביותר מבחינה מסחרית בהיסטוריה של המוזיקה.[CR]לאורך השנים בשל ההתעניינות הרבה בג'קסון, הצהובונים ברחבי העולם עסקו באינטנסיביות בחייו הפרטיים של ג'קסון והתמקדו בעיקר בשינויים הקיצוניים במראהו החיצוני של ג'קסון שכלל שינוי מבנה אפו וצבע עורו, בהאשמות בביצוע מעשים מגונים בילדים ובמערכות היחסים השונות של ג'קסון.[CR]ג'קסון מת ב-25 ביוני 2009 מדום לב בשל מנת יתר של הסם פרופופול, סוג של סם הרגעה. מותו אירע במהלך ההכנות לסבב ההופעות שלו "This Is It". רופאו האישי של ג'קסון, קונראד מארי, אשר היה זה שטיפל בו שלא כראוי בסם, הורשע בהריגתו ונדון לארבע שנות מאסר."
+msgstr "[COLOR=yellow]מייקל ג'וזף ג'קסון (באנגלית: Michael Joseph Jackson;‏ 29 באוגוסט 1958 – 25 ביוני 2009) היה זמר, מוזיקאי, רב נגן, רקדן, כוריאוגרף, מפיק מוזיקלי, שחקן ופזמונאי אפרו אמריקאי מצליח. ג'קסון, שנודע בכינויו "מלך הפופ", נחשב לאחד הזמרים הפופולריים והמצליחים ביותר בכל הזמנים.[/COLOR][CR][CR]הקריירה המוזיקלית של ג'קסון החלה בשנת 1963 כאשר הצטרף לאחיו בתור החבר הצעיר ביותר בהרכב המוזיקלי המשפחתי "חמישיית הג'קסונים". בהמשך עזב את הלהקה והחל קריירת סולו מצליחה יותר. אלבומו Thriller משנת 1982 מכר מעל ל-110 מיליון עותקים ונשאר עד היום האלבום הנמכר ביותר בכל הזמנים, לצד ארבעה אלבומים נוספים של ג'קסון. הווידאוקליפים לשיריו "Beat It"‏, "Billie Jean" ו-"Thriller" נחשבו לפורצי דרך והשפיעו רבות על תעשיית המוזיקה בהמשך. באותה העת, ג'קסון הפך מספר טכניקות ריקוד מסובכות לפופולאריות במיוחד, המפורסם שבריקודים הוא ריקוד "הליכת הירח". הסגנון המוזיקלי, הסגנון הווקאלי והכוריאוגרפיה הייחודית של ג'קסון הצליחו לגשר על פערי הדורות, הגזעים והתרבויות. הקריירה המוזיקלית של ג'קסון היוותה השראה למיליוני אנשים ברחבי העולם ואמנים רבים בתחום המוזיקה והריקוד הושפעו ממנו.[CR]הישגים נוספים לג'קסון כוללים בין היתר שבירת מספר שיאים עולמיים שנכנסו לספר השיאים של גינס, זכייה ב-15 פרסי גראמי, זכייה ב-26 פרסי American Music Awards, והפקת 17 סינגלים אשר הגיעו למקום ראשון במצעד הפזמונים האמריקאי (כולל ארבעה אשר הופקו בעודו חבר בחמישיית הג'קסונים). סך מכירות אלבומיו - המוערך בכ-780 מיליון עותקים ברחבי העולם, דבר שהפך אותו לאחד האומנים המצליחים ביותר מבחינה מסחרית בהיסטוריה של המוזיקה.[CR]לאורך השנים בשל ההתעניינות הרבה בג'קסון, הצהובונים ברחבי העולם עסקו באינטנסיביות בחייו הפרטיים של ג'קסון והתמקדו בעיקר בשינויים הקיצוניים במראהו החיצוני של ג'קסון שכלל שינוי מבנה אפו וצבע עורו, בהאשמות בביצוע מעשים מגונים בילדים ובמערכות היחסים השונות של ג'קסון.[CR]ג'קסון מת ב-25 ביוני 2009 מדום לב בשל מנת יתר של הסם פרופופול, סוג של סם הרגעה. מותו אירע במהלך ההכנות לסבב ההופעות שלו "This Is It". רופאו האישי של ג'קסון, קונראד מארי, אשר היה זה שטיפל בו שלא כראוי בסם, הורשע בהריגתו ונדון לארבע שנות מאסר."
 
 msgctxt "#111020
 msgid "Beyonce"
@@ -1692,12 +1692,12 @@ msgstr ""
 
 msgctxt "#111030
 msgid ""
-msgstr "[COLOR=Yellow]רובין ריהאנה פנטי (באנגלית: Robyn Rihanna Fenty; נולדה ב-20 בפברואר 1988) המוכרת בשם הבמה ריהאנה, היא זמרת, שחקנית, ומעצבת אופנה ברבדית. היא נולדה בסיינט מייקל שבברבדוס והתגוררה שם עד גיל 15. היא החלה את הקריירה המוזיקלית שלה כשפגשה את המפיק המוזיקלי אוון רוג'רס ב-2003 והקליטה קלטות דמו תחת הדרכתו, שבסופו של דבר הגיעו לג'יי זי שהחליט לקחת אותה תחת חסותו.[/COLOR][CR][CR]מאז תחילת הקריירה שלה, הוציאה ריהאנה שבעה אלבומים; שבעתם הגיעו לעשרת הגדולים במצעד האלבומים האמריקאי בילבורד 200, ואלבומה השביעי אף הגיע למקום הראשון. 13 משיריה דורגו במקום הראשון במצעד הפזמונים האמריקאי בילבורד הוט 100, ובכך השוותה ריהאנה את שיאה לשיאו של מייקל ג'קסון וכעת היא ממוקמת במקום השלישי ברשימת אמני הסולו שהצליחו להכניס הכי הרבה שירים לצמרת המצעד.היא נחשבת לאחד מהאמנים הנמכרים ביותר בכל הזמנים. אלבומיה ושיריה נמכרו בכ-194.5 מיליון עותקים בכל העולם, מה שהופך אותה גם לאמנית הדיגיטלית הנמכרת ביותר בכל הזמנים.[CR]בשנת 2011 הגיעו עשרה משיריה לצמרת מצעד הבילבורד הוט 100 והייתה לאמן הצעיר ביותר שעשה זאת. בנוסף לכך נכון להיום היא האמן השלישי בהיסטוריה שצבר הכי הרבה שבועות במקום הראשון במצעד זה (עם 51 שבועות). ב-2012 דירג מגזין פורבס את ריהאנה כידוען הרביעי המשפיע של השנה, עם רווח של 53 מיליון דולר בין מאי 2011 למאי 2012. באותה שנה, הכריז טיים מגזין על ריהאנה כאחת מ-100 האנשים המשפיעים ביותר בעולם. בשנת 2013 דירג מגזין בילבורד את ריהאנה ברשימת "100 האמנים המצליחים ביותר בעשור הראשון של המאה ה-21" ולאמן המצליח ביותר בעשור השני של המאה ה-21. ב-2 ביוני 2014, הוצגה ריהאנה עם פרס אייקון האופנה על מפעל החיים ממועצת מעצבי האופנה של אמריקה, פרס מיוחד השמור לאדם שסגנונו הפך להשפעה משמעותית על התרבות הפופולרית על במה בינלאומית. ובאותה שנה נודע כי ריהאנה דורגה במקום ה-8 ברשימת "100 האנשים המשפיעים ביותר" של מגזין פורבס, עם רווח של 48 מיליון דולר בין יוני 2013 ליוני 2014, מה ששם אותה במקום ה-4 ברשימת ה"נשים המשפיעות ביותר" ובאותו מקום גם ברשימת ה"מוזיקאים המשפיעים ביותר". ריהאנה זכתה ב-311 פרסים, הבולטים מתוכם: 8 פרסי גראמי, 8 פרסי AMA ו-22 פרסי בילבורד. בטקס פרסי המוזיקה האמריקאית של שנת 2013, זכתה ריהאנה בפרס "אייקון" הראשון בהיסטוריה של הטקס, פרס אשר ניתן לאמן שתרם רבות לתעשיית המוזיקה."
+msgstr "[COLOR=yellow]רובין ריהאנה פנטי (באנגלית: Robyn Rihanna Fenty; נולדה ב-20 בפברואר 1988) המוכרת בשם הבמה ריהאנה, היא זמרת, שחקנית, ומעצבת אופנה ברבדית. היא נולדה בסיינט מייקל שבברבדוס והתגוררה שם עד גיל 15. היא החלה את הקריירה המוזיקלית שלה כשפגשה את המפיק המוזיקלי אוון רוג'רס ב-2003 והקליטה קלטות דמו תחת הדרכתו, שבסופו של דבר הגיעו לג'יי זי שהחליט לקחת אותה תחת חסותו.[/COLOR][CR][CR]מאז תחילת הקריירה שלה, הוציאה ריהאנה שבעה אלבומים; שבעתם הגיעו לעשרת הגדולים במצעד האלבומים האמריקאי בילבורד 200, ואלבומה השביעי אף הגיע למקום הראשון. 13 משיריה דורגו במקום הראשון במצעד הפזמונים האמריקאי בילבורד הוט 100, ובכך השוותה ריהאנה את שיאה לשיאו של מייקל ג'קסון וכעת היא ממוקמת במקום השלישי ברשימת אמני הסולו שהצליחו להכניס הכי הרבה שירים לצמרת המצעד.היא נחשבת לאחד מהאמנים הנמכרים ביותר בכל הזמנים. אלבומיה ושיריה נמכרו בכ-194.5 מיליון עותקים בכל העולם, מה שהופך אותה גם לאמנית הדיגיטלית הנמכרת ביותר בכל הזמנים.[CR]בשנת 2011 הגיעו עשרה משיריה לצמרת מצעד הבילבורד הוט 100 והייתה לאמן הצעיר ביותר שעשה זאת. בנוסף לכך נכון להיום היא האמן השלישי בהיסטוריה שצבר הכי הרבה שבועות במקום הראשון במצעד זה (עם 51 שבועות). ב-2012 דירג מגזין פורבס את ריהאנה כידוען הרביעי המשפיע של השנה, עם רווח של 53 מיליון דולר בין מאי 2011 למאי 2012. באותה שנה, הכריז טיים מגזין על ריהאנה כאחת מ-100 האנשים המשפיעים ביותר בעולם. בשנת 2013 דירג מגזין בילבורד את ריהאנה ברשימת "100 האמנים המצליחים ביותר בעשור הראשון של המאה ה-21" ולאמן המצליח ביותר בעשור השני של המאה ה-21. ב-2 ביוני 2014, הוצגה ריהאנה עם פרס אייקון האופנה על מפעל החיים ממועצת מעצבי האופנה של אמריקה, פרס מיוחד השמור לאדם שסגנונו הפך להשפעה משמעותית על התרבות הפופולרית על במה בינלאומית. ובאותה שנה נודע כי ריהאנה דורגה במקום ה-8 ברשימת "100 האנשים המשפיעים ביותר" של מגזין פורבס, עם רווח של 48 מיליון דולר בין יוני 2013 ליוני 2014, מה ששם אותה במקום ה-4 ברשימת ה"נשים המשפיעות ביותר" ובאותו מקום גם ברשימת ה"מוזיקאים המשפיעים ביותר". ריהאנה זכתה ב-311 פרסים, הבולטים מתוכם: 8 פרסי גראמי, 8 פרסי AMA ו-22 פרסי בילבורד. בטקס פרסי המוזיקה האמריקאית של שנת 2013, זכתה ריהאנה בפרס "אייקון" הראשון בהיסטוריה של הטקס, פרס אשר ניתן לאמן שתרם רבות לתעשיית המוזיקה."
 
 msgctxt "#111040
 msgid ""
-msgstr "[COLOR=Yellow]Taylor Swift הוא אלבום הבכורה של הזמרת-היוצרת האמריקאית טיילור סוויפט. האלבום יצא לאור ב-24 באוקטובר 2006, על ידי Big Machine Records, כשסוויפט הייתה בת 16. סוויפט כתבה שירים לאלבום במהלך השנה הראשונה שלה בתיכון, חלק מהם במשותף עם ליז רוז וכותבים נוספים.‏ סוויפט התנסתה עם מספר מפיקי מוזיקה ותיקים בנאשוויל, אך בסוף החליטה לשכור את מפיק הדמואים שלה נתן צ'פמן.‏ מבחינה מוזיקלית, האלבום הוא בסגנון מוזיקת קאנטרי, ומבחינה מילולית, הוא עוסק במערכות יחסים רומנטיות, שכמה מהן כתבה סוויפט מהתבוננות במערכת יחסים לפני שחוותה אחת בעצמה, ונוגע במאבקיה האישיים של סוויפט בתיכון.[/COLOR][CR][CR]חמישה סינגלים יצאו מהאלבום, כולם הגיעו למעמד פלטינה מטעם איגוד תעשיית ההקלטות האמריקאי (RIAA).‏ "Tim McGraw" יצא כסינגל המוביל, והגיע לעשרת הגדולים במצעד הקאנטרי של בילבורד. "Teardrops on My Guitar" יצא כסינגל השני, והפך לשיר המצליח ביותר באלבום, כשהגיע למקום ה-13 במצעד הבילבורד הוט 100. "Our Song" יצא כסינגל השלישי מתוך האלבום, והפך לשיר הראשון של סוויפט שכבש את פסגת מצעד הקאנטרי של בילבורד, מה שהפך את סוויפט לאדם הצעיר ביותר שיצר וביצע לבדו שיר שהגיע למקום הראשון במצעד.‏ "Picture to Burn" ו-"Should've Said No" יצאו כסינגלים והרביעי והחמישי מהאלבום, והצליחו במצעדי הקאנטרי בארצות הברית. סוויפט קידמה את אלבומה על ידי הופעות חימום לראסקל פלאטס, ג'ורג' סטרייט, קני צ'סני ובראד פייזלי, טים מקגרו ופיית' היל.‏‏[CR]Taylor Swift התקבל באופן חיובי על ידי המבקרים, ששיבחו את הכישרון של סוויפט בגיל כה צעיר. האלבום זכה להצלחה מסחרית והשיק את הקריירה של סוויפט במוזיקת קאנטרי. בארצות הברית, שהה האלבום בפסגת מצעד אלבומי הקאנטרי במשך 24 שבועות, והגיע למעמד פלטינה מחומשת מטעם איגוד תעשיית ההקלטות האמריקאי (RIAA), עם מכירות של מעל 5 מיליון עותקים. Taylor Swift נשאר 277 שבועות במצעד הבילבורד 200, מה שהופך אותו לאחד מ-12 האלבומים שנשארו בזמן הארוך ביותר בהיסטוריה של המצעד. האלבום הצליח גם מחוץ למדינת האם של סוויפט, בעיקר בקנדה, באוסטרליה, ובבריטניה. האלבום מכר למעלה משישה מיליון עותקים.‏"
+msgstr "[COLOR=yellow]Taylor Swift הוא אלבום הבכורה של הזמרת-היוצרת האמריקאית טיילור סוויפט. האלבום יצא לאור ב-24 באוקטובר 2006, על ידי Big Machine Records, כשסוויפט הייתה בת 16. סוויפט כתבה שירים לאלבום במהלך השנה הראשונה שלה בתיכון, חלק מהם במשותף עם ליז רוז וכותבים נוספים.‏ סוויפט התנסתה עם מספר מפיקי מוזיקה ותיקים בנאשוויל, אך בסוף החליטה לשכור את מפיק הדמואים שלה נתן צ'פמן.‏ מבחינה מוזיקלית, האלבום הוא בסגנון מוזיקת קאנטרי, ומבחינה מילולית, הוא עוסק במערכות יחסים רומנטיות, שכמה מהן כתבה סוויפט מהתבוננות במערכת יחסים לפני שחוותה אחת בעצמה, ונוגע במאבקיה האישיים של סוויפט בתיכון.[/COLOR][CR][CR]חמישה סינגלים יצאו מהאלבום, כולם הגיעו למעמד פלטינה מטעם איגוד תעשיית ההקלטות האמריקאי (RIAA).‏ "Tim McGraw" יצא כסינגל המוביל, והגיע לעשרת הגדולים במצעד הקאנטרי של בילבורד. "Teardrops on My Guitar" יצא כסינגל השני, והפך לשיר המצליח ביותר באלבום, כשהגיע למקום ה-13 במצעד הבילבורד הוט 100. "Our Song" יצא כסינגל השלישי מתוך האלבום, והפך לשיר הראשון של סוויפט שכבש את פסגת מצעד הקאנטרי של בילבורד, מה שהפך את סוויפט לאדם הצעיר ביותר שיצר וביצע לבדו שיר שהגיע למקום הראשון במצעד.‏ "Picture to Burn" ו-"Should've Said No" יצאו כסינגלים והרביעי והחמישי מהאלבום, והצליחו במצעדי הקאנטרי בארצות הברית. סוויפט קידמה את אלבומה על ידי הופעות חימום לראסקל פלאטס, ג'ורג' סטרייט, קני צ'סני ובראד פייזלי, טים מקגרו ופיית' היל.‏‏[CR]Taylor Swift התקבל באופן חיובי על ידי המבקרים, ששיבחו את הכישרון של סוויפט בגיל כה צעיר. האלבום זכה להצלחה מסחרית והשיק את הקריירה של סוויפט במוזיקת קאנטרי. בארצות הברית, שהה האלבום בפסגת מצעד אלבומי הקאנטרי במשך 24 שבועות, והגיע למעמד פלטינה מחומשת מטעם איגוד תעשיית ההקלטות האמריקאי (RIAA), עם מכירות של מעל 5 מיליון עותקים. Taylor Swift נשאר 277 שבועות במצעד הבילבורד 200, מה שהופך אותו לאחד מ-12 האלבומים שנשארו בזמן הארוך ביותר בהיסטוריה של המצעד. האלבום הצליח גם מחוץ למדינת האם של סוויפט, בעיקר בקנדה, באוסטרליה, ובבריטניה. האלבום מכר למעלה משישה מיליון עותקים.‏"
 
 msgctxt "#111050
 msgid ""
-msgstr "[COLOR=Yellow]אריאנה גרנדה-בוטרה (באנגלית: Ariana Grande-Butera; נולדה ב-26 ביוני 1993), המוכרת בשם אריאנה גרנדה, היא זמרת ושחקנית אמריקאית.[/COLOR][CR][CR]היא התחילה את קריירת הבידור שלה בשנת 2010 כששיחקה בסדרת הנוער המצליחה "ויקטוריוס". בהמשך קיבלה תפקיד ראשי בסדרת הבת שלה "סאם וקאט" ששודרו בערוץ ניקלודיאון.[CR]ב-2013, זכתה גרנדה להצלחה רבה לאחר שיצא אלבום הבכורה שלה, Yours Truly, שדורג במקום הראשון במצעד האלבומים האמריקאי בילבורד 200. הסינגל הראשון מתוך האלבום, "The Way", הגיע לעשרת הגדולים במצעד הפזמונים האמריקאי בילבורד הוט 100 והגיע למעמד פלטינה משולשת בארצות הברית. האלבום זכה לשבחי ביקורת עם מבקרים שהשוו את מנעד קולה הרחב לזה של מריה קארי שמגיע למנעד קולי של 4 אוקטבות.[CR]ב-2014, הוצגה גרנדה על ידי אגודת עסקי המוזיקה כ"פריצת השנה", על הישגיה בשנת 2013.[CR]אלבום האולפן השני שלה, My Everything, שיצא ב-2014, העפיל אף הוא למקום הראשון במצעד האמריקאי וארבעה סינגלים ממנו נכנסו לעשירייה הפותחת במצעד, מה שהפך אותה לזמרת מיינסטרים לאחת הזמרות המצליחות ביותר באותה שנה."
+msgstr "[COLOR=yellow]אריאנה גרנדה-בוטרה (באנגלית: Ariana Grande-Butera; נולדה ב-26 ביוני 1993), המוכרת בשם אריאנה גרנדה, היא זמרת ושחקנית אמריקאית.[/COLOR][CR][CR]היא התחילה את קריירת הבידור שלה בשנת 2010 כששיחקה בסדרת הנוער המצליחה "ויקטוריוס". בהמשך קיבלה תפקיד ראשי בסדרת הבת שלה "סאם וקאט" ששודרו בערוץ ניקלודיאון.[CR]ב-2013, זכתה גרנדה להצלחה רבה לאחר שיצא אלבום הבכורה שלה, Yours Truly, שדורג במקום הראשון במצעד האלבומים האמריקאי בילבורד 200. הסינגל הראשון מתוך האלבום, "The Way", הגיע לעשרת הגדולים במצעד הפזמונים האמריקאי בילבורד הוט 100 והגיע למעמד פלטינה משולשת בארצות הברית. האלבום זכה לשבחי ביקורת עם מבקרים שהשוו את מנעד קולה הרחב לזה של מריה קארי שמגיע למנעד קולי של 4 אוקטבות.[CR]ב-2014, הוצגה גרנדה על ידי אגודת עסקי המוזיקה כ"פריצת השנה", על הישגיה בשנת 2013.[CR]אלבום האולפן השני שלה, My Everything, שיצא ב-2014, העפיל אף הוא למקום הראשון במצעד האמריקאי וארבעה סינגלים ממנו נכנסו לעשירייה הפותחת במצעד, מה שהפך אותה לזמרת מיינסטרים לאחת הזמרות המצליחות ביותר באותה שנה."

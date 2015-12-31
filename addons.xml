@@ -27,7 +27,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.extreme" version="0.1.1" name="Featherence Extreme" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.extreme" version="0.1.2" name="Featherence Extreme" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.youtube" version="5.1.0"/>
@@ -36,7 +36,6 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <language>he, en</language>
 	<platform>all</platform>
 	<summary lang="en">Watch sport extreme videos.</summary>
 	<summary lang="he">צפה בסרטוני ספורט אקסטרים.</summary>

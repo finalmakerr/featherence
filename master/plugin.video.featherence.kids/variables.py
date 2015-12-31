@@ -49,3 +49,4 @@ else:
 		sys.exit(1)
 
 General_TrustedOnly = getsetting('General_TrustedOnly')
+commonsearch101 = "פרק מלא"
