@@ -323,8 +323,8 @@ msgid "Hebrew Subtitle"
 msgstr "דוקו בעברית"
 
 msgctxt "#109
-msgid "TV channels"
-msgstr "ערוצי טלוויזיה"
+msgid ""
+msgstr ""
 
 msgctxt "#110
 msgid "Art"
@@ -332,20 +332,20 @@ msgstr "אומנות"
 
 
 msgctxt "#111
-msgid "National Geographic"
-msgstr "נשיונאל ג'אוגראפיק"
+msgid ""
+msgstr ""
 
 msgctxt "#112
-msgid "Discovery"
-msgstr "ערוץ דיסקאברי"
+msgid ""
+msgstr ""
 
 msgctxt "#113
-msgid "Nat Geo Wild"
-msgstr "נשיונאל ג'אוגראפיק ווילד"
+msgid ""
+msgstr ""
 
 msgctxt "#114
-msgid "Animal Planet"
-msgstr "אנימל פלאנט"
+msgid ""
+msgstr ""
 
 msgctxt "#1000
 msgid ""
@@ -386,4 +386,5 @@ msgstr "טכנולוגיה"
 msgctxt "#10801
 msgid "kids"
 msgstr "ילדים"
+
 
