@@ -140,7 +140,7 @@
   <include name="ArrowsUpDown">
     <control type="group" description="סמן חץ למעלה">
 		<animation condition="Control.IsVisible(9005)" effect="slide" start="0,0" end="-733,-150" time="0">Conditional</animation>
-		<animation condition="Control.IsVisible(56)" effect="slide" start="0,0" end="-12.5,50" time="0">Conditional</animation>
+		<animation condition="Control.IsVisible(56)" effect="slide" start="0,0" end="-12.5,0" time="0">Conditional</animation>
 		<visible>[Control.IsVisible(50) + Container(50).HasPrevious] | !Control.IsVisible(50)</visible>
 		<visible>[Control.IsVisible(5) + Container(5).HasPrevious] | !Control.IsVisible(5)</visible>
 		<visible>[Control.IsVisible(450) + Container(450).HasPrevious] | !Control.IsVisible(450)</visible>

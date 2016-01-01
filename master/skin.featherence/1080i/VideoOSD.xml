@@ -188,8 +188,8 @@
 					<height>100</height>
 					<onclick>Dialog.close(VideoOSD)</onclick>
 					<onclick>ActivateWindow(PVROSDChannels)</onclick>
-					<visible>Skin.HasSetting(Admin) | VideoPlayer.Content(LiveTV) | Pvr.IsPlayingTv</visible>
-					<visible>Player.HasVideo</visible>
+					<visible>VideoPlayer.Content(LiveTV) | Pvr.IsPlayingTv</visible>
+					<visible>VideoPlayer.IsFullscreen</visible>
 				</control>
 				<control type="button" id="808">
 					<texturefocus>osd/buttons/OSDepgFO.png</texturefocus>

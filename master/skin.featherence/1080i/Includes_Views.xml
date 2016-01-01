@@ -166,7 +166,7 @@
 		  <width>480</width>
 		  <height>935</height>
 		  <include>4ways</include>
-		  <viewtype label="31011">List</viewtype>
+		  <viewtype label="">List</viewtype>
 		  <include>ViewDesign_50_Layout</include>
 		</control>
       </control>
@@ -508,15 +508,15 @@
     <control type="group" description="">
 	  <visible>Control.IsVisible(56)</visible>
       <control type="group">
-	    <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-130" time="0" reversible="false">Conditional</animation>
+	    <!--<animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>-->
 	    <include>Slide1</include>
 		<include>Slide2</include>
 		<include>ArrowsUpDown</include>
         <control type="panel" id="56">
           <posx>20</posx>
-          <posy>240</posy>
+          <posy>210</posy>
           <width>1880</width>
-          <height>820</height>
+          <height>825</height>
 		  <include>4ways</include>
 		  <viewtype label="31012">Grid</viewtype>
 		  <itemlayout description="(Seasons/Episodes)" height="100" width="960"> <!--SubString(Container.FolderName,Mako)-->

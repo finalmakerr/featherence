@@ -10,8 +10,8 @@ msgid "Featherence rating method"
 msgstr "Featherence שיטת דירוג"
 
 msgctxt "#31002
-msgid "Enable this feature in order to have a better rating system for movies, tvshows and youtube videos.[CR][COLOR=Red]If disable the rating will be as you familar, Movies and Tvshows rating will most likely be always above 2.5 stars.[/COLOR]"
-msgstr "הפעל אפשרות זאת בכדי לכפות דירוג סרטים / סדרות / סרטונים(יו-טיוב) בתצורה מיטבית.[CR][COLOR=Red]אם אפשרות זו מבוטלת... דירוג סרטים / סדרות יהיה בהכרח תמיד גבוהה מ-2.5 כוכבים.[/COLOR]"
+msgid "Enable this feature in order to have a better rating system for movies, tvshows and youtube videos.[CR][COLOR=red]If disable the rating will be as you familar, Movies and Tvshows rating will most likely be always above 2.5 stars.[/COLOR]"
+msgstr "הפעל אפשרות זאת בכדי לכפות דירוג סרטים / סדרות / סרטונים(יו-טיוב) בתצורה מיטבית.[CR][COLOR=red]אם אפשרות זו מבוטלת... דירוג סרטים / סדרות יהיה בהכרח תמיד גבוהה מ-2.5 כוכבים.[/COLOR]"
 
 msgctxt "#31003
 msgid "Save and Load your skin design."
@@ -126,8 +126,8 @@ msgid "Wider Menu"
 msgstr "תפריט רחב"
 
 msgctxt "#31047
-msgid ""
-msgstr ""
+msgid "Show Rating"
+msgstr "הצג דירוג"
 
 msgctxt "#31048
 msgid ""
@@ -931,8 +931,8 @@ msgid "Menus include:[CR]Poweroff, music and more..."
 msgstr "תפריטים כלולים:[CR]כיבוי, מוזיקה ועוד..."
 
 msgctxt "#74439"
-msgid "Choose your own Music File to be played upon startup.[CR][CR][COLOR=Yellow]$INFO[Skin.String(StartUpMusic)][/COLOR]"
-msgstr "בחר קובץ מוזיקה משלך אשר ינוגן בעת הפעלת המכשיר.[CR][CR][COLOR=Yellow]$INFO[Skin.String(StartUpMusic)][/COLOR]"
+msgid "Choose your own Music File to be played upon startup.[CR][CR][COLOR=yellow]$INFO[Skin.String(StartUpMusic)][/COLOR]"
+msgstr "בחר קובץ מוזיקה משלך אשר ינוגן בעת הפעלת המכשיר.[CR][CR][COLOR=yellow]$INFO[Skin.String(StartUpMusic)][/COLOR]"
 
 msgctxt "#74440"
 msgid "Choosing this option for playing music upon startup."
@@ -1323,8 +1323,8 @@ msgid "This model support external media storage only!"
 msgstr "דגם זה תומך באחסון מדיה חיצוני בלבד!"
 
 msgctxt "#74542"
-msgid "[CR][CR][COLOR=White2]For support please contact us by using the help button in the home screen.[/COLOR]"
-msgstr "[CR][CR][COLOR=White2]לקבלת תמיכה ניתן לפנות אלינו באמצעות הכפתור "עזרה" במסך הבית.[/COLOR]"
+msgid "[CR][CR][COLOR=white2]For support please contact us by using the help button in the home screen.[/COLOR]"
+msgstr "[CR][CR][COLOR=white2]לקבלת תמיכה ניתן לפנות אלינו באמצעות הכפתור "עזרה" במסך הבית.[/COLOR]"
 
 msgctxt "#74543"
 msgid "This model has no support for %s"
@@ -1471,8 +1471,8 @@ msgid "Reset colors"
 msgstr "איפוס צבעים"
 
 msgctxt "#74841"
-msgid "[COLOR=Green]Shortcut available by: [/COLOR]"
-msgstr "[CR][CR][COLOR=Green]קיים קיצור דרך: [/COLOR]"
+msgid "[COLOR=green]Shortcut available by: [/COLOR]"
+msgstr "[CR][CR][COLOR=green]קיים קיצור דרך: [/COLOR]"
 
 msgctxt "#74842"
 msgid "Use this window in order to customize your system as you like."
@@ -1567,7 +1567,7 @@ msgid "Menu button + download video"
 msgstr "כפתור תפריט + כפתור הורד וידאו"
 
 msgctxt "#75208
-msgid "Menu button on TV Remote: Red[CR]on Keyboard: C or Right Click.[CR]Joystick: Triangle[CR]Smartphone: 5-lines (long press)."
+msgid "Menu button on TV Remote: red[CR]on Keyboard: C or Right Click.[CR]Joystick: Triangle[CR]Smartphone: 5-lines (long press)."
 msgstr "כפתור תפריט בשלט טלוויזיה: אדום.[CR]במקלדת: C / קליק ימני.[CR]בגויסטיק: משולש.[CR]בסמארטפון: 5-קווים (לחיצה ארוכה)."
 
 msgctxt "#75209
@@ -1591,8 +1591,8 @@ msgid "Updates History"
 msgstr "היסטוריית עדכונים"
 
 msgctxt "#75775
-msgid "[CR][CR][COLOR=Green]Note: You may change this option at anytime.[/COLOR]"
-msgstr "[CR][CR][COLOR=Green]לידיעתך: ניתן לשנות אפשרות זו בכל עת.[/COLOR]"
+msgid "[CR][CR][COLOR=green]Note: You may change this option at anytime.[/COLOR]"
+msgstr "[CR][CR][COLOR=green]לידיעתך: ניתן לשנות אפשרות זו בכל עת.[/COLOR]"
 
 msgctxt "#75776
 msgid "1. Turn OFF your WIFI on your Iphone or Ipad then turn it ON.[CR]2. Close the photos application on your Iphone or Ipad.[CR]3. Reset your router.[CR]4. Reboot your featherence.[CR]5. Reboot your Iphone or Ipad."
@@ -1723,16 +1723,16 @@ msgid "Enable/Disable marker around your home buttons"
 msgstr "הפעל/בטל סמן בחירה מסביב לכפתורי הבית שלך"
 
 msgctxt "#76201
-msgid "Enable/Disable marker inside your home buttons.[CR][CR][COLOR=Green]Fit well with coloring the buttons[/COLOR]"
-msgstr "הפעל/בטל סמן בחירה בתוך כפתורי הבית שלך.[CR][CR][COLOR=Green]משתלב טוב בעיקר עם צביעת הכפתורים[/COLOR]"
+msgid "Enable/Disable marker inside your home buttons.[CR][CR][COLOR=green]Fit well with coloring the buttons[/COLOR]"
+msgstr "הפעל/בטל סמן בחירה בתוך כפתורי הבית שלך.[CR][CR][COLOR=green]משתלב טוב בעיקר עם צביעת הכפתורים[/COLOR]"
 
 msgctxt "#76202
 msgid "Home"
 msgstr "בית"
 
 msgctxt "#76203
-msgid "Enable/Disable shadow inside your home buttons.[CR][CR][COLOR=Green]Fit well with coloring the buttons[/COLOR]"
-msgstr "הפעל/בטל צל בתוך כפתור הבית שלך.[CR][CR][COLOR=Green]משתלב טוב בעיקר עם צביעת הכפתורים[/COLOR]"
+msgid "Enable/Disable shadow inside your home buttons.[CR][CR][COLOR=green]Fit well with coloring the buttons[/COLOR]"
+msgstr "הפעל/בטל צל בתוך כפתור הבית שלך.[CR][CR][COLOR=green]משתלב טוב בעיקר עם צביעת הכפתורים[/COLOR]"
 
 msgctxt "#76204
 msgid "Enable/Disable clear frame button"
@@ -1855,7 +1855,7 @@ msgid "Overlay"
 msgstr "שקופית"
 
 msgctxt "#78218
-msgid "Shadow"
+msgid "shadow"
 msgstr "צללית"
 
 msgctxt "#78273
@@ -1879,8 +1879,8 @@ msgid "This service is free only on morning."
 msgstr "השירותים ינתנו ללא תשלום בשעות הבוקר בלבד!"
 
 msgctxt "#78281
-msgid "[CR][CR][COLOR=Red][B]Always make sure you're account is valid![/COLOR][/B]"
-msgstr "[CR][CR][COLOR=Red][B]תמיד וודא שחשבונך אומת ופעיל.[/COLOR][/B]"
+msgid "[CR][CR][COLOR=red][B]Always make sure you're account is valid![/COLOR][/B]"
+msgstr "[CR][CR][COLOR=red][B]תמיד וודא שחשבונך אומת ופעיל.[/COLOR][/B]"
 
 msgctxt "#78282
 msgid "This service is free at all time but overload may happen. Premium account grant an higher quality videos available and no overload during all hours."
@@ -1903,8 +1903,8 @@ msgid "Choose this option if you have an issue you need help with.[CR]This featu
 msgstr "בחר באפשרות זו אם ברצונך לקבל עזרה.[CR]כפתור זה עלול לפתור בעיות מורכבות במיוחד הנוגעות למכשיר זה.[CR][CR]אפשרות זו מלווה בקובץ דיבאג המכיל בתוכו את נתוני המכשיר מזמן ההפעלה האחרון."
 
 msgctxt "#78288
-msgid "[CR][CR][COLOR=Red]Changes will take effect upon reboot![/COLOR]"
-msgstr "[CR][CR][COLOR=Red]השינויים יכנסו לתוקף בהפעלה מחדש![/COLOR]"
+msgid "[CR][CR][COLOR=red]Changes will take effect upon reboot![/COLOR]"
+msgstr "[CR][CR][COLOR=red]השינויים יכנסו לתוקף בהפעלה מחדש![/COLOR]"
 
 msgctxt "#78289
 msgid "This tool is for advanced users.[CR]Using it will greatly improve your hardware performance!"
@@ -1963,8 +1963,8 @@ msgid "Keys configuration is matching the specified remote, immediately working 
 msgstr "הגדרת המקשים מותאמת לשלט הספציפי, פועלת במיידי ומכילה מספר רב של מקשים חיוניים שאינם מגבילים את השימוש הרגיל בשלט הטלוויזיה."
 
 msgctxt "#78910
-msgid "[CR][CR][COLOR=Green]At anytime you may return to default settings by choosing "no" and rebooting.[/COLOR]"
-msgstr "[CR][CR][COLOR=Green]ניתן לחזור בכל עת להגדרות ברירת מחדל ע"י בחירה ב-"לא" והפעלת המכשיר מחדש.[/COLOR]"
+msgid "[CR][CR][COLOR=green]At anytime you may return to default settings by choosing "no" and rebooting.[/COLOR]"
+msgstr "[CR][CR][COLOR=green]ניתן לחזור בכל עת להגדרות ברירת מחדל ע"י בחירה ב-"לא" והפעלת המכשיר מחדש.[/COLOR]"
 
 msgctxt "#78911
 msgid "Choose this option in order to show or hide settings according to your experience level."
@@ -2071,8 +2071,8 @@ msgid "Enable this option if you have"
 msgstr "הפעל אפשרות זאת באם יש לך"
 
 msgctxt "#78940
-msgid "Choose this option if you like to have your movies and tvshows scrapers auto configurate.[CR]Note: This option is enabled by default upon installation.[CR][CR][COLOR=Red]Using this tool may solve problem with your scrapers.[/COLOR]"
-msgstr "בחר באפשרות זאת אם ברצונך להגדיר את הסקריפר עבור ספריית הסרטים והסדרות שלך.[CR]פעולה זו נעשית באופן אוטומטי עם התקנת המכשיר או כאשר יש צורך שנתגלה.[CR][CR][COLOR=Red]פעולה זו עשויה לתת פיתרון לכך שלא מתווספים סרטים/סדרות לספרייה שלך.[/COLOR]"
+msgid "Choose this option if you like to have your movies and tvshows scrapers auto configurate.[CR]Note: This option is enabled by default upon installation.[CR][CR][COLOR=red]Using this tool may solve problem with your scrapers.[/COLOR]"
+msgstr "בחר באפשרות זאת אם ברצונך להגדיר את הסקריפר עבור ספריית הסרטים והסדרות שלך.[CR]פעולה זו נעשית באופן אוטומטי עם התקנת המכשיר או כאשר יש צורך שנתגלה.[CR][CR][COLOR=red]פעולה זו עשויה לתת פיתרון לכך שלא מתווספים סרטים/סדרות לספרייה שלך.[/COLOR]"
 
 msgctxt "#78941
 msgid "Choose this option in order to temporary switch into a different skin."
@@ -2092,15 +2092,15 @@ msgstr "אין מספיק תרגומים..."
 
 #GAL FILL IT!
 msgctxt "#78945 
-msgid "1. If the file include a subtitle:[CR] - Current subtitle.[COLOR=Yellow]Yellow Color[/COLOR] -[CR] - Previous subtitle.[COLOR=Grey]Grey color[/COLOR] -[CR] - Sync subtitle.[COLOR=White2]SYNC / CC[/COLOR] -[CR][CR]2. You may add Additionals languages by settings - Subtitles - Video.[CR]3. If the subtitle is out of sync you may simply stand on the subtitles button and use up and down arrows in order to adjust the sync.[CR][COLOR=Red]This feature allow you to sync almost any subtitle[/COLOR][CR]4. Always double check if the movie/tvshow name is included in the subtitles search window.[CR]"
-msgstr "1. אם קובץ התרגום מכיל:[CR] -  תרגום נוכחי.[COLOR=Yellow]צבע צהוב[/COLOR] -[CR] -  תרגום שבחרת לאחרונה.[COLOR=Grey]צבע אפור[/COLOR] -[CR] -  תרגום תואם.[COLOR=White2]SYNC / CC[/COLOR] -[CR][CR]2. שפות נוספות - ניתן להוסיף דרך הגדרות - וידאו - כתוביות.[CR]3. תזמון תרגום - אם התרגום לא תואם, ניתן פשוט להתאים אותו בעזרת עמידה על הכפתור תרגום ולחיצה למטה/למעלה.[CR][COLOR=Red]פעולה זו מאפשרת להתאים כמעט כל תרגום בפעולה פשוטה.[/COLOR][CR]4. בחירת תרגום - תמיד שים לב האם שם הסרט/הסדרה כלול בקובץ התרגום.[CR][COLOR=Red]יתכנו מצבים בהם ישנם מספר גרסאות לסרט וכולן יופיעו בחלון בחירת תרגום.[CR]במקרה זה יש לשים לב שהשנה בשם התרגום תואמת לסרט הנוכחי.[/COLOR][CR]5. שרתי תרגום - ניתן להוריד תרגום ממספר שרתים המופיעים בחלון בצד שמאל.[CR][COLOR=Red]לעיתים השרת ברירת מחדל נופל או חסר תרגום, במקרה זה מומלץ לבצע חיפוש בשרת אחר.[/COLOR][CR]6. לסיום במקרים מסוימים מומלץ לעצור את הניגון ולהפעיל שוב ע"י ניגון ידני.[CR]פעולה זו תנגן את הסרט/הפרק שוב אך הפעם עם קובץ אחר.[CR][COLOR=Red]קובץ שונה מצריך תרגום שונה ולכן סיכויי ההתאמה יעלו.[/COLOR]"
+msgid "1. If the file include a subtitle:[CR] - Current subtitle.[COLOR=yellow]yellow Color[/COLOR] -[CR] - Previous subtitle.[COLOR=grey]grey color[/COLOR] -[CR] - Sync subtitle.[COLOR=white2]SYNC / CC[/COLOR] -[CR][CR]2. You may add Additionals languages by settings - Subtitles - Video.[CR]3. If the subtitle is out of sync you may simply stand on the subtitles button and use up and down arrows in order to adjust the sync.[CR][COLOR=red]This feature allow you to sync almost any subtitle[/COLOR][CR]4. Always double check if the movie/tvshow name is included in the subtitles search window.[CR]"
+msgstr "1. אם קובץ התרגום מכיל:[CR] -  תרגום נוכחי.[COLOR=yellow]צבע צהוב[/COLOR] -[CR] -  תרגום שבחרת לאחרונה.[COLOR=grey]צבע אפור[/COLOR] -[CR] -  תרגום תואם.[COLOR=white2]SYNC / CC[/COLOR] -[CR][CR]2. שפות נוספות - ניתן להוסיף דרך הגדרות - וידאו - כתוביות.[CR]3. תזמון תרגום - אם התרגום לא תואם, ניתן פשוט להתאים אותו בעזרת עמידה על הכפתור תרגום ולחיצה למטה/למעלה.[CR][COLOR=red]פעולה זו מאפשרת להתאים כמעט כל תרגום בפעולה פשוטה.[/COLOR][CR]4. בחירת תרגום - תמיד שים לב האם שם הסרט/הסדרה כלול בקובץ התרגום.[CR][COLOR=red]יתכנו מצבים בהם ישנם מספר גרסאות לסרט וכולן יופיעו בחלון בחירת תרגום.[CR]במקרה זה יש לשים לב שהשנה בשם התרגום תואמת לסרט הנוכחי.[/COLOR][CR]5. שרתי תרגום - ניתן להוריד תרגום ממספר שרתים המופיעים בחלון בצד שמאל.[CR][COLOR=red]לעיתים השרת ברירת מחדל נופל או חסר תרגום, במקרה זה מומלץ לבצע חיפוש בשרת אחר.[/COLOR][CR]6. לסיום במקרים מסוימים מומלץ לעצור את הניגון ולהפעיל שוב ע"י ניגון ידני.[CR]פעולה זו תנגן את הסרט/הפרק שוב אך הפעם עם קובץ אחר.[CR][COLOR=red]קובץ שונה מצריך תרגום שונה ולכן סיכויי ההתאמה יעלו.[/COLOR]"
 
 msgctxt "#78946
 msgid "Tips in subtitles download"
 msgstr "טיפים בהורדת תרגום"
 
 msgctxt "#78947
-msgid "Note: Current Subtitle in Yellow."
+msgid "Note: Current Subtitle in yellow."
 msgstr "הערה: תרגום נוכחי (צהוב)"
 
 msgctxt "#78948
@@ -2140,8 +2140,8 @@ msgid "See skin settings - Advance state"
 msgstr "ראה הגדרות מעטפת - מצב מתקדם"
 
 msgctxt "#78957"
-msgid "[COLOR=Red]Turn Advance state on.[/COLOR]"
-msgstr "[COLOR=Red]יש להפעיל מצב מתקדם![/COLOR]"
+msgid "[COLOR=red]Turn Advance state on.[/COLOR]"
+msgstr "[COLOR=red]יש להפעיל מצב מתקדם![/COLOR]"
 
 msgctxt "#78958"
 msgid "Israeli movies"
@@ -2600,8 +2600,8 @@ msgid "return"
 msgstr "חזור"
 
 msgctxt "#79101"
-msgid "[CR][CR][COLOR=Red]In order to improve user experience, do not disable this option.[/COLOR]"
-msgstr "[CR][CR][COLOR=Red]לשיפור חווית השימוש אין לבטל אפשרות זאת.[/COLOR]"
+msgid "[CR][CR][COLOR=red]In order to improve user experience, do not disable this option.[/COLOR]"
+msgstr "[CR][CR][COLOR=red]לשיפור חווית השימוש אין לבטל אפשרות זאת.[/COLOR]"
 
 msgctxt "#79102"
 msgid "Manual Play"
@@ -2667,7 +2667,7 @@ msgstr "אנא וודא שיש ברשותך עכבר/מקלדת לפני האי�
 
 msgctxt "#79217"
 msgid "Use the following keys in order to return:"
-msgstr "[COLOR=Yellow]השתמש במקשים הבאים בכדי לסגור גלישה:[/COLOR]"
+msgstr "[COLOR=yellow]השתמש במקשים הבאים בכדי לסגור גלישה:[/COLOR]"
 
 msgctxt "#79218"
 msgid "ESC / ALT-TAB / ALT+F4"
@@ -2838,8 +2838,8 @@ msgid "Your device doesn't support this service!"
 msgstr "מכשירך אינו תומך בשירות זה!"
 
 msgctxt "#79502"
-msgid "[CR][CR][COLOR=Yellow]Tutorials available in our channel button.[/COLOR]"
-msgstr "[CR][CR][COLOR=Yellow]בכפתור הערוץ שלנו קיימים מדריכים בנושא.[/COLOR]"
+msgid "[CR][CR][COLOR=yellow]Tutorials available in our channel button.[/COLOR]"
+msgstr "[CR][CR][COLOR=yellow]בכפתור הערוץ שלנו קיימים מדריכים בנושא.[/COLOR]"
 
 msgctxt "#79503"
 msgid "Attention: Probably issue is"
@@ -2935,11 +2935,11 @@ msgstr "מצב טלוויזיה"
 
 msgctxt "#79526
 msgid ""
-msgstr "לחץ כאן בכדי לנגן את כל התוצאות בעמוד זה (כולל רשימות השמעה) עד 50 סרטונים ברצף![CR][CR][COLOR=Green]לידיעתך: בעת ניגון, ניתן לעבור לוידאו הבא ע"י הכפתור הרץ קדימה. יש לעמוד על הכפתור וללחוץ לחיצה אחת למעלה.[/COLOR]"
+msgstr "לחץ כאן בכדי לנגן את כל התוצאות בעמוד זה (כולל רשימות השמעה) עד 50 סרטונים ברצף![CR][CR][COLOR=green]לידיעתך: בעת ניגון, ניתן לעבור לוידאו הבא ע"י הכפתור הרץ קדימה. יש לעמוד על הכפתור וללחוץ לחיצה אחת למעלה.[/COLOR]"
 
 msgctxt "#79527
 msgid ""
-msgstr "[COLOR=Yellow2]רשימת השמעה:[/COLOR][CR][CR]לחץ כאן בכדי לנגן רשימת השמעה עבור תוכן זה.[CR]פעולה זו תגרום לניגון מרובה - כאשר הוידאו הראשון יסתיים, הבא בתור יתנגן באופן אוטומטי.[CR][CR][COLOR=Green]לידיעתך: באמצעות הכפתור -תפריט- ניתן לעיין ברשימת ההשמעה.[/COLOR]"
+msgstr "[COLOR=yellow2]רשימת השמעה:[/COLOR][CR][CR]לחץ כאן בכדי לנגן רשימת השמעה עבור תוכן זה.[CR]פעולה זו תגרום לניגון מרובה - כאשר הוידאו הראשון יסתיים, הבא בתור יתנגן באופן אוטומטי.[CR][CR][COLOR=green]לידיעתך: באמצעות הכפתור -תפריט- ניתן לעיין ברשימת ההשמעה.[/COLOR]"
 
 msgctxt "#79528
 msgid "Click here in order to add additionals contents to play.[CR][CR]"
@@ -3026,8 +3026,8 @@ msgid "The default window include %s channels from more then 1000 channels avail
 msgstr "החלון הנוכחי מכיל %s ערוצים מתוך למעלה מ-1000 ערוצים הנתמכים ע"י מכשירך.[CR]"
 
 msgctxt "#79549"
-msgid "[COLOR=Yellow]Use the yellow button at the left side menu in order to locate more channels.[/COLOR]"
-msgstr "[COLOR=Yellow]בכדי לקבל ערוצים נוספים יש ללחוץ על הכפתור הצהוב בתפריט השמאלי.[/COLOR]"
+msgid "[COLOR=yellow]Use the yellow button at the left side menu in order to locate more channels.[/COLOR]"
+msgstr "[COLOR=yellow]בכדי לקבל ערוצים נוספים יש ללחוץ על הכפתור הצהוב בתפריט השמאלי.[/COLOR]"
 
 msgctxt "#79551"
 msgid "SERVICE CALL RECEIVED"

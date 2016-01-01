@@ -298,13 +298,13 @@
 	  <include>Slide1</include>
 	  <height>552</height>
 	  <width>1920</width>
+	  <include>VideoPlayerWindow</include>
 	  <control type="image" id="7021" description="רקע תחתון צבע">
 		<include>Fade_MainBackgroundOverlay</include>
 		<include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + !IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo">Slide1</include>
-		<include>Slide1.1</include>
 		<animation description="No Fanart" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Control.HasFocus(7017) + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-252" delay="3000" time="700" reversible="false">Conditional</animation>
 		<animation description="slide-Vertical" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)]" effect="zoom" center="auto" start="100,100" end="27,113" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="2995,0" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="2765,0" time="0">Conditonal</animation>
 		<animation description="slide-Vertical_en" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-2790,0" time="0">Conditonal</animation>
 		<aspectratio>stretch</aspectratio>
 		<height>1110</height>
@@ -318,10 +318,9 @@
 	  <control type="image" description="רקע תחתון טקסטורה">
 	    <include>Fade_MainBackgroundOverlay</include>
 	    <include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + !IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo">Slide1</include>
-		<include>Slide1.1</include>
 		<animation description="No Fanart" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Control.HasFocus(7017) + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-252" delay="3000" time="700" reversible="false">Conditional</animation>
 		<animation description="slide-Vertical" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)]" effect="zoom" center="auto" start="100,100" end="27,113" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="2995,0" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="2765,0" time="0">Conditonal</animation>
 		<animation description="slide-Vertical_en" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-2790,0" time="0">Conditonal</animation>
 		<aspectratio>stretch</aspectratio>
 		<height>1100</height>
@@ -412,7 +411,6 @@
 		<texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 		<visible>false</visible>
 	  </control>
-	  <include>VideoPlayerWindow</include>
 	  
 	</control>
     <include>ForwardingRewinding</include>
@@ -420,13 +418,14 @@
   
   <include name="VideoPlayerWindow">
     <control type="group">
-	  <include>Slide1</include>
+	  <!--<include>Slide1</include>
 	  <height>552</height>
-	  <width>1920</width>
+	  <width>1920</width>-->
 		<control type="videowindow" id="7011" description="חלון וידאו">
 			<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-245,618" time="0">Conditonal</animation>
-			<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="235,618" time="0">Conditonal</animation>
-			<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="75.5,100" time="0">Conditonal</animation>
+			<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="235,618" time="0">Conditonal</animation>
+			<animation description="zoom-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="75.5,100" time="0">Conditonal</animation>
+			<!--<include condition="!StringCompare(Container.Viewmode,$LOCALIZE[31011]) + [!Control.IsVisible(11) | Window.IsVisible(MyPVRGuide.xml)]">Control_Pos6</include>-->
 			<posy>-552</posy>
 			<height>1080</height>
 			<width>1920</width>
@@ -440,11 +439,12 @@
 			<posy>0</posy>
 			<texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
 			<visible>Player.HasVideo + Control.IsVisible(7011) + !StringCompare(Container.Viewmode,$LOCALIZE[31011]) + [!Control.IsVisible(11) | Window.IsVisible(MyPVRGuide.xml)]</visible>
+			<visible>false</visible>
 		  </control>
 		  <control type="button" id="7017">
-			<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-235,815" time="0">Conditonal</animation>
-			<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="235,815" time="0">Conditonal</animation>
-			<animation description="slide-Vertical" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="75.5,202" time="0">Conditonal</animation>
+			<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="0,1080" time="0">Conditonal</animation>
+			<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="472,1080" time="0">Conditonal</animation>
+			<animation description="slide-Vertical" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="" start="100,100" end="75,180" time="0">Conditonal</animation>
 			<texturefocus border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texturefocus>
 			<texturenofocus colordiffuse="FFFFAAFF"></texturenofocus>
 			<posy>-522</posy>
@@ -476,6 +476,10 @@
 			<visible>Control.IsVisible(7011)</visible>
 		  </control>
 	  </control>
+  </include>
+  <include name="Border_Common">
+    <bordertexture colordiffuse="ff000000" border="40">buttons/ButtonE0.png</bordertexture>
+	<bordersize>1</bordersize>
   </include>
   <include name="VideoOSDflag">
 	<control type="image">

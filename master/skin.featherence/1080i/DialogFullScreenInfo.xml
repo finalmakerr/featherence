@@ -5,6 +5,6 @@
   <zorder>2</zorder>
   <controls>
     <include>TopVideoInformation</include>
-    <include>TopInformation</include>
+    <!--<include>TopInformation</include>-->
   </controls>
 </window>

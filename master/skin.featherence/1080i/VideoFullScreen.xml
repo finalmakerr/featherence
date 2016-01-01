@@ -3,6 +3,7 @@
   <defaultcontrol>-</defaultcontrol>
   <onload condition="IsEmpty(Window(home).Property(mode10)) + !Pvr.IsPlayingTv + !Window.IsVisible(DialogPVRChannelsOSD.xml)">AlarmClock(mode10,RunScript(script.featherence.service,,?mode=10),00:02,silent)</onload>
   <onload condition="!Pvr.IsPlayingTv + !Window.IsVisible(DialogPVRChannelsOSD.xml)">Action(Info)</onload>
+  <include>Fade6</include>
   <controls>
     <control type="group">
       <visible>!Window.IsActive(DialogFullscreenInfo.xml)</visible>

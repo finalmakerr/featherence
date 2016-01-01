@@ -19,9 +19,10 @@
 	  <animation condition="Window.IsVisible(FileBrowser.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-700,100" time="0,0">Conditional</animation>-->
       <control type="image" description="מסגרת">
         <include>Fade_CenterMenuOverlay</include>
+		<include>Border_Common</include>
 		<height>410</height>
         <!--<texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>-->
-		<texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+		<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
 		<width>480</width>
       </control>
 	  <include>ArrowsUpDown</include>
@@ -56,15 +57,17 @@
 	  <animation condition="Window.IsVisible(DialogKeyboard.xml)" effect="zoom" start="100,100" end="91,107" time="0,0">Conditional</animation>
       <control type="image" description="מסגרת">
         <include>Fade_CenterMenuOverlay</include>
+		<include>Border_Common</include>
 		<height>410</height>
-		<texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+		<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
 		<width>480</width>
 		<visible>!Window.IsVisible(DialogKeyboard.xml)</visible>
       </control>
 	  <control type="image" description="מסגרת">
         <include>Fade_CenterMenuOverlay</include>
+		<include>Border_Common</include>
 		<height>410</height>
-		<texture border="20" colordiffuse="$VAR[KeyboardMainColor]">buttons/ButtonE0.png</texture>
+		<texture border="40" colordiffuse="$VAR[KeyboardMainColor]">buttons/ButtonE0.png</texture>
 		<width>480</width>
 		<visible>Window.IsVisible(DialogKeyboard.xml)</visible>
       </control>
@@ -127,10 +130,10 @@
     <itemlayout height="70" width="480">
 	  <control type="group">
 	      <control type="image" description="מסגרת">
-            <posx>0</posx>
+			<posx>0</posx>
 			<width>480</width>
             <height>70</height>
-		    <texture colordiffuse="$VAR[MenuColor]" border="20">buttons/ButtonE0.png</texture>
+		    <texture colordiffuse="$VAR[MenuColor]" border="40">buttons/ButtonE0.png</texture>
           </control>
 		  <control type="image" description="סמל">
 			<include>Fade_IconOverlayButton</include>
@@ -169,7 +172,6 @@
           <height>70</height>
 		  <texture border="40">buttons/ButtonE.png</texture>
         </control>
-		<include>Fade_IconOverlayButton</include>
 		<control type="image" description="סמל">
             <aspectratio align="center">stretch</aspectratio>
 		    <height>60</height>

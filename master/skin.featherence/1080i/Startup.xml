@@ -10,6 +10,7 @@
   <onunload condition="!Skin.HasSetting(StartUpMusic) + Skin.String(StartUpMusic) + !Skin.String(StartUpVideo)">PlayMedia($INFO[Skin.String(StartUpMusic)])</onunload>
   <onunload condition="!Skin.HasSetting(StartUpMusic) + !Skin.String(StartUpMusic) + Skin.String(StartUpVideo)">AlarmClock(StartUpMusic,PlayMedia(special://skin/sounds/featherence.mp3),00:20,silent)</onunload>
   <onunload condition="!Skin.HasSetting(StartUpMusic) + Skin.String(StartUpMusic) + Skin.String(StartUpVideo)">AlarmClock(StartUpMusic,PlayMedia($INFO[Skin.String(StartUpMusic)]),00:20,silent)</onunload>
+  <include>Fade6</include>
   <controls>
 	<control type="label">
 	  <include>LabelC11</include>

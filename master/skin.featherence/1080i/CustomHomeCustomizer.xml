@@ -8,6 +8,7 @@
   <onunload condition="">RunScript(script.featherence.service,,?mode=215&amp;value=_)</onunload>
   <include>onunload_ClearProperty_MainMenu</include>
   <include>onunload_ClearProperty_SubMenu</include>
+  <include>Fade6</include>
   <controls>
     <include>Backgrounds1</include>
     <include>Design_TopButtons</include>

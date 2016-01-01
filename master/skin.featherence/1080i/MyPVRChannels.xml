@@ -4,6 +4,7 @@
   <allowoverlay>no</allowoverlay>
   <views>50,51,54,56,57,58</views>
   <onload condition="Control.IsVisible(50)">Control.SetFocus(50)</onload>
+  <include>Fade6</include>
   <controls>
     <include>Backgrounds3</include>
 	<include>ViewDesign_51</include>

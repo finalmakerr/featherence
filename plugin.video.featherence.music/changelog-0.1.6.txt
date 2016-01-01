@@ -1,0 +1,42 @@
+------------------------
+WIP (WORK IN PROGRESS)--
+------------------------
+- Update foreign singers translations.
+- Add foreign singers, karaoke, liveshows.
+
+------------------------
+Featherence Music v0.1.6 (01-01-16)
+------------------------
+- Update mizrahit live shows.
+- Update mizrahit karaoke.
+- Added singers and TV mode support for mizrahit karaoke.
+- Minor bugs fix.
+
+------------------------
+Featherence Music v0.1.5 (24-12-15)
+------------------------
+- Added Great French Collection Amir's playlists.
+- Added The Beatles Amir's playlists.
+
+------------------------
+Featherence Music v0.1.4 (20-12-15)
+------------------------
+- Update TV Mode shuffle function.
+- Update TV Mode accuracy.
+- Minor bugs fix.
+- My Music bug fix.
+- *Extra attempt to play another video if the first has failed.
+- *Fix bug in Amir Elgazar playlists.
+*Failing is an issue of the Youtube plugin.
+
+------------------------
+Featherence Music v0.1.2 (17-12-15)
+------------------------
+- Major bugs fix.
+- Added 99FM addon.
+- Update translations.
+
+------------------------
+Featherence Music v0.1.0 (09-12-15)
+------------------------
+- First release
