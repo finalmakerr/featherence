@@ -320,11 +320,30 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLQlgR0H02jQtTCuwdO5PFGYw1-pz4Q33')
 	addDir("Tree's",list,17,'http://memolition.com/wp-content/uploads/2015/07/collection-of-beautiful-pictures-from-around-the-world-23781.jpg','','1',"", getAddonFanart(background, custom=""))
 
-	'''edibl'''
+	
+	'''orchid'''
 	list = []
-	list.append('&youtube_ch=UCsSTiRba-BUnOk0PALOhsug/playlists')
-	addDir("vegetable",list,17,'http://earthdivasblog.com/wp-content/uploads/2010/07/Colorful-vegetables-755879.jpg','','1',"", getAddonFanart(background, custom=""))
+	list.append('&youtube_id=tzgdCaBNUPI')
+	list.append('&youtube_id=tLj62iMs-TY')
+	list.append('&youtube_id=J1FZNjASyKg')
+	list.append('&youtube_id=QdfGCscTMak')
+	list.append('&youtube_id=wbXQIsNKysk')
+	list.append('&youtube_id=rI4YMycBfFk')
+	list.append('&youtube_pl=PLAACBEB202A901918')
+	list.append('&youtube_pl=PLPODINV_NFvrHTLuY_5t24zksa_a6nFX_')
+	list.append('&youtube_pl=PLxo6tXzj__mYMG6SleHkd2-w4s5r15BYB')
+	list.append('&youtube_pl=PLtWeWo5hGEkXgeSFumvRs2UPnM4uzvSyT')
+	list.append('&youtube_pl=PLC1AEDCB8419E20E0')
+	list.append('&youtube_pl=PLxo6tXzj__maD-wYTfK7_HZ-LSQRc9Xxm')
+	list.append('&youtube_pl=PLdmAnVS3TYh3EWSHsQUxRMIwebHyi8OQb')
+	list.append('&youtube_pl=PL-dcm20p996rQpoffnFBIlAZefgSpO55j')
+	list.append('&youtube_pl=PL-dcm20p996o5X9LdTspLmO8QY24Ah_vE')
+	list.append('&youtube_pl=PLek3G4uZlLYa7oipoSuvu2PmrxZPsBRN3')
+	list.append('&youtube_pl=PL-dcm20p996r3ocrVFos7Shx6UvYwGhet')
+	list.append('&youtube_pl=PL-dcm20p996peINJHgMOLskxDTGMlShDG')
+	addDir("Orchid",list,17,'http://1.bp.blogspot.com/-ysKfjEIIlvA/U4mlY_TLzHI/AAAAAAAAAGU/Hu6j3XFa3Jg/s1600/Orchid-flower-HD-stock-photos-editable-for-greetings.jpg','','1',"", getAddonFanart(background, custom=""))
 
+	
 	'''Botany'''
 	list = []
 	list.append('&youtube_pl=PL7D120055C712F646')
@@ -957,7 +976,7 @@ def CATEGORIES10403(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL57quI9usf_us0KVzB8aZFPVmdvp1_sIh')
 	list.append('&youtube_pl=PLPBN-Ln1bNtxpgyoI2uVTAoD3VqHfe83c')
 	list.append('&youtube_pl=PL57quI9usf_ujAfHHeCUHuJDL9rMo2_kr')
-	addDir('טלפון סלולרי',list,17,'http://wallpapers.windowsace.com/pics/f/r/free-electronics-and-gadgets-iphone-wallpaper-voyager-cell-phone--a-e-ibackgroundz.com.jpg','','1',"", getAddonFanart(background, custom=""))
+	addDir('טלפון סלולרי',list,17,'https://creationapplication.com/wp-content/uploads/2013/01/iStock_000019696025_Large1.jpg','','1',"", getAddonFanart(background, custom=""))
     
 	'''מחשבים'''
 	list = []
@@ -965,7 +984,7 @@ def CATEGORIES10403(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL57quI9usf_uI8ZxI58Gc5ACnmbL7rxP-')
 	list.append('&youtube_pl=PL57quI9usf_so2Apomw8ap8jMm8e2-xTs')
 	list.append('&youtube_pl=PL57quI9usf_saUGUzSvs4909pfSaloLHS')
-	addDir('מחשבים',list,17,'http://www.bestfullhdwallpapers.com/download/6183/Computers/hd_wallpaper_computer_hd-800x600.jpg/','','1',"", getAddonFanart(background, custom=""))
+	addDir('מחשבים',list,17,'http://7-themes.com/data_images/out/73/7022381-computer-keyboard-wallpaper.jpg','','1',"", getAddonFanart(background, custom=""))
     
 	
 	'''אלקטרוניקה'''
@@ -1481,3 +1500,4 @@ def CATEGORIES10801(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_ch=23language')
 	addDir('חינוכית בית ספר לשפות',list,17,'https://yt3.ggpht.com/-lBNXia5dmco/AAAAAAAAAAI/AAAAAAAAAAA/WdkzNf3TbHE/s100-c-k-no/photo.jpg','','1',"", getAddonFanart(background, custom=""))
+
