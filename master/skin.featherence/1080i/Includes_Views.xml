@@ -675,6 +675,7 @@
 				  <height>35</height>
 				  <textcolor>white2</textcolor>
 				  <label>$VAR[VideoInformation1]</label>
+				  <visible>Skin.HasSetting(ShowDVDCases) | !IsEmpty(Control.GetLabel(11156))</visible>
 				</control>
 			    <include>PVRprogress</include>
 			</control>
@@ -697,16 +698,7 @@
 				  <height>35</height>
 				  <textcolor>yellow</textcolor>
 				  <label>$VAR[VideoInformation1]</label>
-				</control>
-				<control type="image" description="דירוג נבחר">
-				  <include>Fade8</include>
-				  <posx>55</posx>
-				  <posy>28</posy>
-				  <width>135</width>
-				  <height>20</height>
-				  <aspectratio align="center">keep</aspectratio>
-				  <texture>$VAR[TopVideoInformation3]</texture>
-				  <visible>!IsEmpty(ListItem.Rating)</visible>
+				  <visible>Skin.HasSetting(ShowDVDCases) | !IsEmpty(Control.GetLabel(11156))</visible>
 				</control>
 			    <control type="group" description="מסגרת סמן בחירה">
 				  <control type="image">
@@ -767,7 +759,8 @@
 	  <height>24</height>
 	  <texture colordiffuse="ff100c08">buttons/ButtonA0.png</texture>
 	  <aspectratio>scale</aspectratio>
-	  <visible>!IsEmpty(ListItem.Label)</visible>
+	  <visible>!IsEmpty(ListItem.Label) + !StringCompare(ListItem.Label,..)</visible>
+	  <visible>Skin.HasSetting(ShowDVDCases) | !IsEmpty(Control.GetLabel(11156))</visible>
 	</control>
 	<control type="image" description="סמן מידע">
 	  <aspectratio>keep</aspectratio>
@@ -780,6 +773,8 @@
 	  <visible>![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)]]</visible>
 	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
 	</control>
+	<include>Duration_</include>
+	<include>Rating_</include>
   </include>
   
   <include name="ViewDesign_58" description="Poster">

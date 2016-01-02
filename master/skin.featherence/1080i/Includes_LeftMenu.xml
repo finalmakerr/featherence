@@ -1268,7 +1268,7 @@
 		<label>$LOCALIZE[20445] $LOCALIZE[305]</label>
 	    <selected>!Skin.HasSetting(background2)</selected>
 	    <onclick>Skin.ToggleSetting(background2)</onclick>
-		<visible>!StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart)</visible>
+		<visible>!StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart) | !Control.IsVisible(7013)</visible>
 	  </control>
   </include>
   <include name="openViewSettings9001">

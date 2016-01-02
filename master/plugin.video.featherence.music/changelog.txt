@@ -7,9 +7,10 @@ WIP (WORK IN PROGRESS)--
 ------------------------
 Featherence Music v0.1.6 (01-01-16)
 ------------------------
+- Added Rain playlist (Amir Elgazar).
+- Added singers and TV mode support for mizrahit karaoke.
 - Update mizrahit live shows.
 - Update mizrahit karaoke.
-- Added singers and TV mode support for mizrahit karaoke.
 - Minor bugs fix.
 
 ------------------------

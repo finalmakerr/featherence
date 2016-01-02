@@ -361,7 +361,7 @@
 		<texture background="true">$VAR[fanart]</texture>
 		<visible>!IsEmpty(Control.GetLabel(70130)) + !Control.IsVisible(7013)</visible>
 		<visible>!Skin.HasSetting(background2)</visible>
-		<visible>[!StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014])]</visible>
+		<visible>[!StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014])] | !Control.IsVisible(7013)</visible>
 		<visible>![Player.HasVideo + StringCompare(Container.Viewmode,$LOCALIZE[31011])]</visible>
 	  </control>
 	  <control type="largeimage" id="7014" description="רקע פאנארט">
@@ -597,8 +597,8 @@
   </include>
   
   <include name="InProgressBadge2">
-    <control type="group" description="סדרות בתהליך">	  
-	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="-203,-34" start="100,100" end="80,80" time="0">Conditional</animation>
+    <control type="group" description="סדרות בתהליך">
+	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="-203,-38" start="100,100" end="80,80" time="0">Conditional</animation>
 	  <!--<animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
 	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
 	  <height>312</height>
@@ -664,8 +664,8 @@
     </control>
   </include>
   <include name="Duration_">
-    <control type="group" description="זמן">	  
-	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="-203,-34" start="100,100" end="80,80" time="0">Conditional</animation>
+    <control type="group" description="זמן">
+	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="-203,-38" start="100,100" end="80,80" time="0">Conditional</animation>
 	  <!--<animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
 	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
 	  <height>312</height>
@@ -701,8 +701,8 @@
 	</control>
   </include>
   <include name="Rating_">
-    <control type="group" description="דירוג">	  
-	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="-203,-34" start="100,100" end="80,80" time="0">Conditional</animation>
+    <control type="group" description="דירוג">
+	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="60,-38" start="100,100" end="80,80" time="0">Conditional</animation>
 	  <!--<animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
 	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
 	  <height>312</height>

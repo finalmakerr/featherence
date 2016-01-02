@@ -128,8 +128,6 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	------------------------------'''
 	background = 10101
 	
-
-
 	'''Lions'''
 	list = []
 	list.append('&youtube_id=8KaqVQP7oMk')
