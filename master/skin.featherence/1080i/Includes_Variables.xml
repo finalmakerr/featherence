@@ -341,7 +341,7 @@
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Title)">[B]$INFO[VideoPlayer.Title][/B]</value>
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(Window(home).Property(TopVideoInformation7))">$INFO[Window(home).Property(TopVideoInformation7)]</value>
 	<value description="משפט סרט" condition="!IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
-	<value description="שם הפרק" condition="[Container.content(Episodes)] + !SubString(ListItem.Label,..,left) + !IsEmpty(ListItem.Title) + !StringCompare(ListItem.Title,ListItem.TVShowTitle)">[B]$INFO[ListItem.Title][/B]</value>
+	<value description="שם הפרק" condition="[Container.content(Episodes)] + !SubString(ListItem.Label,..,left) + !IsEmpty(ListItem.Title) + !StringCompare(ListItem.Title,ListItem.TVShowTitle) + !StringCompare(ListItem.Title,$INFO[System.CurrentControl])">[B]$INFO[ListItem.Title][/B]</value>
 	<value description="שם הפרק-בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(title))">[B]$INFO[Container(312).ListItem.Property(title)][/B]</value>
 	<value description="משפט סרט-בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(tagline))">[B]$INFO[Container(311).ListItem.Property(tagline)][/B]</value>
 	<value description="PVR" condition="[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.EpisodeName]</value>
@@ -359,19 +359,19 @@
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.TVShowTitle]</value>
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Title) + [!IsEmpty(VideoPlayer.Genre) | IsEmpty(Window(home).Property(TopVideoInformation8))]">$INFO[VideoPlayer.Title]</value>
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(Window(home).Property(TopVideoInformation8))">$INFO[Window(home).Property(TopVideoInformation8)]</value>
-	<value condition="[SubString(ListItem.Label,..)] + Container.content(Episodes) | Container.content(Seasons)">$INFO[Container.FolderName]</value>
-	<value condition="!IsEmpty(ListItem.TVShowTitle) + Container.content(Seasons) | Container.content(Episodes)">$INFO[ListItem.TVShowTitle]</value>
+	<value condition="[SubString(ListItem.Label,..)] + [Container.content(Episodes) | Container.content(Seasons)]">$INFO[Container.FolderName]</value>
+	<value condition="!IsEmpty(ListItem.TVShowTitle) + [Container.content(Seasons) | Container.content(Episodes)]">$INFO[ListItem.TVShowTitle]</value>
 	<value description="Home-Movies" condition="Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(title))">$INFO[Container(311).ListItem.Property(title)]</value>
 	<value description="Home-TV" condition="Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(title))">$INFO[Container(312).ListItem.Property(tvshowtitle)]</value>
 	<value condition="Window.IsVisible(DialogAddonInfo.xml) + !IsEmpty(ListItem.Property(Addon.Name))">$INFO[ListItem.Property(Addon.Name)]</value>
 	<value description="תמונות" condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FileName)">$INFO[ListItem.FileName]</value>
 	<!--<value condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !Window.IsVisible(DialogAddonInfo.xml)"></value>-->
-    <value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
 	<value condition="Window.IsVisible(MyWeather.xml) + !IsEmpty(Container(50).ListItem.Label)">$INFO[Control.GetLabel(31)] - $INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</value>
 	<value condition="Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">$INFO[System.Date(DDD)] - $INFO[Weather.Temperature]</value>
 	<value condition="!IsEmpty(Container(50).ListItem.Label)">$INFO[Container(50).ListItem.Label]</value>
 	<value condition="Window.IsVisible(SettingsCategory.xml) + [ControlGroup(3).HasFocus | ControlGroup(5).HasFocus]">$INFO[System.CurrentControl]</value>
 	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItem(0).Label)">$INFO[Container(11).ListItem(0).Label]</value>
+	<value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
 	<value>...</value>
   </variable>
   <variable name="TopVideoInformation9" description="תמונת פרק">
@@ -410,12 +410,13 @@
 	<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 	<value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
   </variable>
-  <variable name="VideoInformation3" description="מידע צדדי">
+  <variable name="VideoInformation3" description="מידע צדדי (11153)">
 	<value condition="!IsEmpty(ListItem.ChannelNumber) + !IsEmpty(ListItem.Progress)">$INFO[ListItem.ChannelNumber] $INFO[ListItem.Progress]</value>
 	<value condition="[Window.IsVisible(MyVideoNav.xml) | IsEmpty(Control.GetLabel(1101))]"></value>
 	<value condition="!IsEmpty(ListItem.ChannelNumber)">$INFO[ListItem.ChannelNumber]</value>
 	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
 	<value condition="!IsEmpty(ListItem.Label2) + !StringCompare(ListItem.Label2,0 B) + !Window.IsVisible(MyVideoNav.xml)">$INFO[ListItem.Label2]</value>
+	<value condition="[!IsEmpty(Container.ListItemNoWrap(-1).Label2) | !IsEmpty(Container.ListItemNoWrap(1).Label2)] + !Window.IsVisible(MyVideoNav.xml)">•</value>
   </variable>
   <variable name="VideoInformation4">
 	<value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows) | StringCompare(Container.FolderName,Genesis)]">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[33054]</value>
@@ -546,7 +547,8 @@
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.EXIFDate) + !IsEmpty(Slideshow.Filedate)]">[COLOR red][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + SubString(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות מהאייפון/אייפד[/B][/COLOR]</value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
-	<value condition="!IsEmpty(ListItem.Label) + IsEmpty(Control.GetLabel(1105)) + IsEmpty(Control.GetLabel(1106))">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
+	<value condition="StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Skin.HasSetting(View50_Plus2)">•••••••</value> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
+	<value condition="!IsEmpty(ListItem.Label) + [IsEmpty(Control.GetLabel(1105)) + IsEmpty(Control.GetLabel(1106)) | IsEmpty(Control.GetLabel(11156))]">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
 	<!--<value condition="!IsEmpty(System.CurrentControl) + !Window.IsVisible(MyVideoNav.xml)">[COLOR yellow][B]$INFO[System.CurrentControl][/B][/COLOR]</value>--> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
   </variable>
   

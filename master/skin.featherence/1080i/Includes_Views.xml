@@ -1,141 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-  <include name="ViewDesign_51" description="Center List">
-    <control type="group" description="">
-	  <visible>Control.IsVisible(51)</visible>
-      <control type="group">
-		<control type="list" id="51">
-		  <include>Slide1</include>
-		  <include>Slide2</include>
-		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
-		  <posx>20</posx>
-		  <posy>150</posy>
-		  <width>1880</width>
-		  <height>920</height>
-		  <include>4ways</include>
-		  <viewtype label="31010">List</viewtype>
-		  <include>ViewDesign_51_Layout</include>
-		</control>
-      </control>
-    </control>
-  </include>
-  
-  <include name="ViewDesign_570" description="Center List">
-    <control type="group" description="">
-	  <visible>Control.IsVisible(570)</visible>
-      <control type="group">
-		<control type="list" id="570">
-		  <include>Slide1</include>
-		  <include>Slide2</include>
-		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
-		  <posx>20</posx>
-		  <posy>140</posy>
-		  <width>1880</width>
-		  <height>930</height>
-		  <include>4ways</include>
-		  <include>ViewDesign_51_Layout</include>
-		</control>
-      </control>
-    </control>
-  </include>
-  <include name="ViewDesign_51_Layout">
-	  <itemlayout description="(כללי)" condition="true" height="100" width="960"> <!--[Container.Content(files) | Container.Content(actors) | Container.Content(Sets) | ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | SubString(ListItem.path,plugin://plugin.video.youtube)]]-->
-		<control type="image" description="מסגרת">
-		  <include>Fade_MenuButtonsOverlay</include>
-		  <posx>500</posx>
-		  <posy>20</posy>
-		  <width>880</width>
-		  <height>100</height>
-		  <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
-		</control>
-		<include>View51_Common</include>
-		<control type="label" description="שם">
-		  <include>LabelC5</include>
-		  <posx>600</posx>
-		  <posy>32</posy>
-		  <width>700</width>
-		  <height>70</height>
-		  <label>$VAR[VideoInformation1]</label>
-		</control>
-		<include>PVRprogress</include>
-	  </itemlayout>
-	  <focusedlayout description="(כללי)" condition="true" height="100" width="960">    
-		<include>AutoView</include>
-		<include>onfocus_SetProperty_ListItem</include>
-		<include>onfocus_SetProperty_TopVideoInformation</include>
-		<control type="image" description="מסגרת">
-		  <include>Fade41</include>
-		  <posx>500</posx>
-		  <posy>20</posy>
-		  <width>880</width>
-		  <height>100</height>
-		  <texture border="20">buttons/ButtonE.png</texture>
-		</control>
-		<include>View51_Common</include>
-		
-		<control type="label" description="שם">
-		  <textcolor>yellow</textcolor>
-		  <include>LabelC3</include>
-		  <posx>600</posx>
-		  <posy>32</posy>
-		  <width>700</width>
-		  <height>70</height>
-		  <scroll>true</scroll>
-		  <label>$VAR[VideoInformation1]</label>
-		</control>
-		<include>PVRprogress</include>
-	  </focusedlayout>	
-  </include>
-  
-  <include name="View51_Common">
-    <control type="group" description="תמונה">
-		<height>60</height>		
-		<posx>1310</posx>
-		<posy>40</posy>	      
-		<width>40</width>
-		<control type="image" description="תמונה לא נבחר">
-		  <texture background="true">$VAR[VideoInformation2]</texture>
-		  <visible>true</visible>
-		</control>
-		<include>InProgressBadge2</include>
-	</control>
-	<control type="image" description="סמן מידע">
-	  <aspectratio>keep</aspectratio>
-	  <height>40</height>		
-	  <posx>520</posx>
-	  <posy>49</posy>	      
-	  <width>60</width>
-	  <texture colordiffuse="grey2">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
-	  <visible>[!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))] + IsEmpty(Control.GetLabel(11153)) + !StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
-	  <visible>![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)]]</visible>
-	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
-	</control>
-	<control type="image" description="אייקון">
-	  <include>Fade40</include>
-	  <aspectratio align="center">keep</aspectratio>			  			  
-	  <height>40</height>
-	  <posx>390</posx>
-	  <posy>30</posy>
-	  <texture colordiffuse="grey2">$VAR[PhotoInformation1]</texture>
-	  <width>310</width>
-	  <visible>Window.IsVisible(MyPics.xml)</visible>
-	</control>
-	<control type="label" description="שם2">
-	  <include>Fade40</include>
-	  <include>LabelL4</include>
-	  <posx>530</posx>
-	  <posy>50</posy>
-	  <width>100</width>
-	  <height>70</height>
-	  <label>$VAR[VideoInformation3]</label>
-	  <textcolor>grey2</textcolor>
-	  <wrapmultiline>true</wrapmultiline>
-	  <visible>!IsEmpty(Control.GetLabel(11153)) | Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FileExtension)</visible>
-	</control>
-  </include>
   <include name="ViewDesign_50" description="Side List">
     <control type="group" description="">
-	  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
+	  <visible>Control.IsVisible(50)</visible>
       <control type="group">
 	    <include condition="StringCompare(System.Language,Hebrew)">Control_Pos46</include>
 		<control type="panel" id="50">
@@ -343,7 +210,7 @@
 		  <textcolor>grey2</textcolor>
 		  <width>60</width>
 		  <wrapmultiline>true</wrapmultiline>
-		  <visible>IsEmpty(Control.GetLabel(11155))</visible>
+		  <visible>IsEmpty(Control.GetLabel(11155)) + !IsEmpty(Control.GetLabel(11153))</visible>
 	  </control>
 	</control>
 	<control type="label" description="שם">
@@ -504,6 +371,140 @@
 	  </control>
   </include>
   
+  <include name="ViewDesign_51" description="Center List">
+    <control type="group" description="">
+	  <visible>Control.IsVisible(51)</visible>
+      <control type="group">
+		<control type="panel" id="51">
+		  <include>Slide1</include>
+		  <include>Slide2</include>
+		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
+		  <posx>20</posx>
+		  <posy>150</posy>
+		  <width>1880</width>
+		  <height>920</height>
+		  <include>4ways</include>
+		  <viewtype label="31010">List</viewtype>
+		  <include>ViewDesign_51_Layout</include>
+		</control>
+      </control>
+    </control>
+  </include>
+  
+  <include name="ViewDesign_570" description="Center List">
+    <control type="group" description="">
+	  <visible>Control.IsVisible(570)</visible>
+      <control type="group">
+		<control type="list" id="570">
+		  <include>Slide1</include>
+		  <include>Slide2</include>
+		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
+		  <posx>20</posx>
+		  <posy>140</posy>
+		  <width>1880</width>
+		  <height>930</height>
+		  <include>4ways</include>
+		  <include>ViewDesign_51_Layout</include>
+		</control>
+      </control>
+    </control>
+  </include>
+  <include name="ViewDesign_51_Layout">
+	  <itemlayout description="(כללי)" condition="true" height="100" width="960"> <!--[Container.Content(files) | Container.Content(actors) | Container.Content(Sets) | ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | SubString(ListItem.path,plugin://plugin.video.youtube)]]-->
+		<control type="image" description="מסגרת">
+		  <include>Fade_MenuButtonsOverlay</include>
+		  <posx>500</posx>
+		  <posy>20</posy>
+		  <width>880</width>
+		  <height>100</height>
+		  <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+		</control>
+		<include>View51_Common</include>
+		<control type="label" description="שם">
+		  <include>LabelC5</include>
+		  <posx>600</posx>
+		  <posy>32</posy>
+		  <width>700</width>
+		  <height>70</height>
+		  <label>$VAR[VideoInformation1]</label>
+		</control>
+		<include>PVRprogress</include>
+	  </itemlayout>
+	  <focusedlayout description="(כללי)" condition="true" height="100" width="960">    
+		<include>AutoView</include>
+		<include>onfocus_SetProperty_ListItem</include>
+		<include>onfocus_SetProperty_TopVideoInformation</include>
+		<control type="image" description="מסגרת">
+		  <include>Fade41</include>
+		  <posx>500</posx>
+		  <posy>20</posy>
+		  <width>880</width>
+		  <height>100</height>
+		  <texture border="20">buttons/ButtonE.png</texture>
+		</control>
+		<include>View51_Common</include>
+		
+		<control type="label" description="שם">
+		  <textcolor>yellow</textcolor>
+		  <include>LabelC3</include>
+		  <posx>600</posx>
+		  <posy>32</posy>
+		  <width>700</width>
+		  <height>70</height>
+		  <scroll>true</scroll>
+		  <label>$VAR[VideoInformation1]</label>
+		</control>
+		<include>PVRprogress</include>
+	  </focusedlayout>	
+  </include>
+  
+  <include name="View51_Common">
+    <control type="group" description="תמונה">
+		<height>60</height>		
+		<posx>1310</posx>
+		<posy>40</posy>	      
+		<width>40</width>
+		<control type="image" description="תמונה לא נבחר">
+		  <texture background="true">$VAR[VideoInformation2]</texture>
+		  <visible>true</visible>
+		</control>
+		<include>InProgressBadge2</include>
+	</control>
+	<control type="image" description="סמן מידע">
+	  <aspectratio>keep</aspectratio>
+	  <height>40</height>		
+	  <posx>520</posx>
+	  <posy>49</posy>	      
+	  <width>60</width>
+	  <texture colordiffuse="grey2">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
+	  <visible>[!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))] + IsEmpty(Control.GetLabel(11153)) + !StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	  <visible>![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)]]</visible>
+	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
+	</control>
+	<control type="image" description="אייקון">
+	  <include>Fade40</include>
+	  <aspectratio align="center">keep</aspectratio>			  			  
+	  <height>40</height>
+	  <posx>390</posx>
+	  <posy>30</posy>
+	  <texture colordiffuse="grey2">$VAR[PhotoInformation1]</texture>
+	  <width>310</width>
+	  <visible>Window.IsVisible(MyPics.xml)</visible>
+	</control>
+	<control type="label" description="שם2">
+	  <include>Fade40</include>
+	  <include>LabelL4</include>
+	  <posx>530</posx>
+	  <posy>50</posy>
+	  <width>100</width>
+	  <height>70</height>
+	  <label>$VAR[VideoInformation3]</label>
+	  <textcolor>grey2</textcolor>
+	  <wrapmultiline>true</wrapmultiline>
+	  <visible>!IsEmpty(Control.GetLabel(11153)) | Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FileExtension)</visible>
+	</control>
+  </include>
+  
   <include name="ViewDesign_56" description="Small List">
     <control type="group" description="">
 	  <visible>Control.IsVisible(56)</visible>
@@ -588,7 +589,7 @@
               <posy>20</posy>
               <width>360</width>
               <height>100</height>
-              <texture border="50">buttons/ButtonE.png</texture>
+              <texture border="40">buttons/ButtonE.png</texture>
             </control>
 		    <control type="label" description="פרק/עונה">
               <include>LabelC3</include>
@@ -743,6 +744,8 @@
 	  <bordersize>1</bordersize>
 	  <aspectratio>stretch</aspectratio>
 	</control>
+	<include>Rating_</include>
+	<include>Duration_</include>
     <include>InProgressBadge2</include>
 	<control type="group" description="לא נבחר ShowDVDCases">
 	  <posx>23</posx>
@@ -773,8 +776,6 @@
 	  <visible>![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)]]</visible>
 	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
 	</control>
-	<include>Duration_</include>
-	<include>Rating_</include>
   </include>
   
   <include name="ViewDesign_58" description="Poster">
@@ -952,6 +953,8 @@
 	  <width>310</width>
 	  <visible>Window.IsVisible(MyPics.xml)</visible>
 	</control>
+	<include>Rating_</include>
+	<include>Duration_</include>
 	<include>InProgressBadge2</include>
 	<control type="group" description="לא נבחר ShowDVDCases">
 	  <visible>Skin.HasSetting(ShowDVDCases2)</visible>
@@ -974,7 +977,6 @@
 	  <visible>!IsEmpty(ListItem.Rating)</visible>
 	  <visible>false</visible>
 	</control>
-	<include>Rating_</include>
 	<control type="image" description="סמן מידע">
 	  <aspectratio>keep</aspectratio>
 	  <height>40</height>		
@@ -986,7 +988,6 @@
 	  <visible>![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)]]</visible>
 	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
 	</control>
-	<include>Duration_</include>
   </include>
   <include name="ViewDesign_54" description="Line">
     <control type="group" description="">
@@ -1002,7 +1003,7 @@
 			<texture background="false">$VAR[fanart]</texture>
 			<aspectratio align="top">keep</aspectratio>
 	    </control>
-        <control type="list" id="54">
+        <control type="fixedlist" id="54">
           <posx>20</posx>
           <posy>565</posy>
           <width>1900</width>

@@ -236,7 +236,7 @@
         <control type="image" description="סמל">
 		  <include>Fade_IconOverlayButton</include>
           <aspectratio>keep</aspectratio>
-		  <height>180</height>
+		  <height>150</height>
 		  <posx>30</posx>
           <posy>30</posy>
           <texture border="0" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
@@ -274,9 +274,9 @@
         <control type="label" description="כותרת">
           <textcolor>$VAR[IconUnFocusColor]</textcolor>
 		  <include>LabelC1</include>
-		  <posx>0</posx>
-          <posy>220</posy>
-          <width>368</width>
+		  <posx>35</posx>
+          <posy>170</posy>
+          <width>300</width>
           <height>24</height>
           <label>[B]$INFO[ListItem.Label][/B]</label>
 		  <shadowcolor>black</shadowcolor>
@@ -357,7 +357,7 @@
         </control>
 		<control type="image" description="סמל">
           <aspectratio>keep</aspectratio>
-          <height>200</height>		  
+          <height>180</height>		  
 		  <posx>20</posx>
           <posy>20</posy>
 		  <texture border="-8" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
@@ -396,10 +396,10 @@
           <textcolor>$VAR[IconFocusColor]</textcolor>
 		  <animation effect="fade" start="80" end="100" time="220" delay="0">Focus</animation>
 		  <include>LabelC1</include>
-		  <posx>0</posx>
-          <posy>220</posy>
+		  <posx>35</posx>
+          <posy>180</posy>
           <!--<width>368</width>-->
-		  <width>368</width>
+		  <width>300</width>
           <height>24</height>
           <label>[B]$INFO[ListItem.Label][/B]</label>
 		  <shadowcolor>black</shadowcolor>
@@ -462,7 +462,7 @@
         <control type="image" description="סמל">
 		  <include>Fade_IconOverlayButton</include>
           <aspectratio>keep</aspectratio>
-		  <height>180</height>
+		  <height>150</height>
 		  <posx>30</posx>
           <posy>30</posy>
           <texture border="0" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
@@ -500,9 +500,9 @@
         <control type="label" description="כותרת">
           <textcolor>$VAR[IconUnFocusColor]</textcolor>
 		  <include>LabelC1</include>
-		  <posx>0</posx>
-          <posy>220</posy>
-          <width>368</width>
+		  <posx>35</posx>
+          <posy>170</posy>
+          <width>300</width>
           <height>24</height>
           <label>[B]$INFO[ListItem.Label][/B]</label>
 		  <shadowcolor>black</shadowcolor>
@@ -583,7 +583,7 @@
         </control>
 		<control type="image" description="סמל">
           <aspectratio>keep</aspectratio>
-          <height>200</height>		  
+          <height>180</height>		  
 		  <posx>20</posx>
           <posy>20</posy>
 		  <texture border="-8" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
@@ -622,10 +622,10 @@
           <textcolor>$VAR[IconFocusColor]</textcolor>
 		  <animation effect="fade" start="80" end="100" time="220" delay="0">Focus</animation>
 		  <include>LabelC1</include>
-		  <posx>0</posx>
-          <posy>220</posy>
+		  <posx>35</posx>
+          <posy>180</posy>
           <!--<width>368</width>-->
-		  <width>368</width>
+		  <width>300</width>
           <height>24</height>
           <label>[B]$INFO[ListItem.Label][/B]</label>
 		  <shadowcolor>black</shadowcolor>

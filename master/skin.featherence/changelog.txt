@@ -6,6 +6,11 @@ WIP - WORK IN PROGRESS
 - Touch device support.
 
 ------------------------
+Featherence v0.2.3 (06-Jan-16)
+------------------------
+- Minor bugs fix.
+
+------------------------
 Featherence v0.2.2 (01-Jan-16)
 ------------------------
 - Added PVR support.

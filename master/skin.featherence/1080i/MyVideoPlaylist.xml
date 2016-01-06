@@ -2,11 +2,10 @@
 <window description="(28)">
   <defaultcontrol always="true">50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <onload>Notification(1,1,1000)</onload>
   <controls>
     <include>Backgrounds3</include>
 	<include>ScrollBar</include>
-    <include>ViewDesign_50</include>
+    <include>ViewDesign_51</include>
 	<include>ViewDesign_58</include>
 	<include>MenuDesign_Left</include>
 	<include>TopVideoInformation</include>
