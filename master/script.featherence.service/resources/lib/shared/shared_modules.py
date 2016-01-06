@@ -374,9 +374,8 @@ def addonsettings2(addon,set1,set1v,set2,set2v,set3,set3v,set4,set4v,set5,set5v)
 		if checkChange == "true" and admin: print printfirst + "addonsettings2 " + addon + space + set1 + space2 + set1v + space + set2 + space2 + set2v + space + set3 + space2 + set3v + space + set4 + space2 + set4v + space + set5 + space2 + set5v + space
 		'''---------------------------'''
 
-def checkAddon_Update(admin, Addon_Update, Addon_Version, Addon_UpdateDate, Addon_UpdateLog, Addon_ShowLog, Addon_ShowLog2, VerReset=""):
-	TypeError = "" ; extra = ""
-	from variables import addonVersion
+def checkAddon_Update(admin, Addon_Update, Addon_Version, addonVersion, Addon_UpdateDate, Addon_UpdateLog, Addon_ShowLog, Addon_ShowLog2, VerReset=""):
+	TypeError = "" ; extra = "" ; name = 'checkAddon_Update' ; printpoint = ""
 	#addonVersion          = xbmcaddon.Addon().getAddonInfo("version")
 	#reload(addonVersion)
 	#notification(addonVersion,"","",5000)
@@ -430,6 +429,7 @@ def setAddon_Update(admin, addonVersion, Addon_Version, Addon_Update):
 	'''------------------------------
 	---CHECK-FOR-FIX-UPDATE----------
 	------------------------------'''
+	name = 'setAddon_Update' ; printpoint = ""
 	Addon_Update2 = Addon_Update
 	if Addon_Version != addonVersion and Addon_Update == "false":
 		Addon_Update2 = "true"
@@ -454,6 +454,7 @@ def setAddon_Version(admin, addonVersion, Addon_Version, VerReset=""):
 	'''------------------------------
 	---CHECK-FOR-ADDON-UPDATE-2------
 	------------------------------'''
+	name = 'setAddon_Version' ; printpoint = ""
 	Addon_Version2 = Addon_Version
 	'''---------------------------'''
 	if Addon_Version != addonVersion:
@@ -477,6 +478,7 @@ def setAddon_UpdateDate(admin, addonVersion, Addon_Version, Addon_Update, Addon_
 	---VARIABLES---------------------
 	------------------------------'''
 	from variables import datenowS
+	name = 'setAddon_UpdateDate' ; printpoint = ""
 	Addon_UpdateDate2 = Addon_UpdateDate
 	'''---------------------------'''
 	if Addon_UpdateDate != datenowS:
@@ -496,6 +498,7 @@ def setAddon_UpdateLog(admin, Addon_Version, Addon_UpdateDate, Addon_ShowLog, Ad
 	'''------------------------------
 	---VARIABLES---------------------
 	------------------------------'''
+	name = 'setAddon_UpdateLog' ; printpoint = ""
 	if Addon_ShowLog == "true":
 		from variables import addonID, addonName2
 		printpoint = "" ; TypeError = "" ; extra = ""
@@ -562,25 +565,39 @@ def setAddon_UpdateLog(admin, Addon_Version, Addon_UpdateDate, Addon_ShowLog, Ad
 	'''---------------------------'''
 
 
-def terminal(command,desc=""):
+def terminal(command,desc="", remote=False):
 	import subprocess
 	customhomecustomizerW = xbmc.getCondVisibility('Window.IsVisible(CustomHomeCustomizer.xml)')
 	name = 'terminal' ; admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)') ; printpoint = "" ; TypeError = "" ; extra = "" ; output = ""
 	#print command
-	try:
-		if systemplatformandroid:
-			#process = subprocess.Popen(x, stdout=subprocess.PIPE)
-			#process = subprocess.Popen(x, stderr=subprocess.STDOUT)
-			
-			process = subprocess.Popen(command,stdout=subprocess.PIPE,shell=False)
-			#process = subprocess.Popen(command,stderr=subprocess.STDOUT,shell=False)
+	#try:
+	if 1 + 1 == 2:
+		if remote == True:
+			client = '192.168.1.180'
+			sshProcess = subprocess.Popen(['ssh', client],80 ,stdin=subprocess.PIPE, stdout = subprocess.PIPE)
+			sshProcess.stdin.write("ls mydirectory\n")
+			sshProcess.stdin.write("echo END\n")
+			for line in stdout.readlines():
+				if line == "END\n":
+					break
+				print(line)
+
+			sshProcess.stdin.write("uptime\n")
+			sshProcess.stdin.write("echo END\n")
+			for line in stdout.readlines():
+				if line == "END\n":
+					break
+				print(line)
+	
+			#process = subprocess.call(["ssh", "root@192.168.1.180", "openelec"]);
+			process = subprocess.Popen(["ssh", "root@192.168.1.180", "openelec"], stderr=subprocess.PIPE)
+			#errdata = prog.communicate()[1]
 			output = process.communicate()[0]
-			'''---------------------------'''
 		else:
 			process = subprocess.Popen(command,stdout=subprocess.PIPE,shell=True)
 			output = process.communicate()[0]
-			'''---------------------------'''
-	except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
+		
+	#except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
 	
 	if 'Permission denied' in TypeError or 'Too many open files' in TypeError:
 		printpoint = printpoint + '9'		
@@ -593,7 +610,7 @@ def terminal(command,desc=""):
 				write_to_file(guikeepertxt_file, "", append=False, silent=True , utf8=False)
 				'''---------------------------'''
 			
-	if output == "":
+	if output == "" and 1 + 1 == 3:
 		printpoint = printpoint + '5'
 		if systemplatformandroid:
 			write_to_file(guikeepertxt_file, command, append=False, silent=True , utf8=False) ; xbmc.sleep(10) ; os.system('sh '+guikeepersh_file+'')
@@ -1734,7 +1751,14 @@ def installaddonP(admin, addon, update=True):
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
-		
+	
+	elif 'plugin.video.supercartoons' in addon: #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://raw.github.com/spoyser/spoyser-repo/master/zips/plugin.video.supercartoons/plugin.video.supercartoons-1.0.14.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
 	elif 'plugin.video.movixws' in addon: #FIXED PATH
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			DownloadFile("https://github.com/cubicle-vdo/xbmc-israel/raw/master/repo/plugin.video.movixws/plugin.video.movixws-1.2.4.zip", addon + ".zip", packages_path, addons_path, silent=True)

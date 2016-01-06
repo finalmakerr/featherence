@@ -372,6 +372,8 @@ str24021 = xbmc.getInfoLabel('$LOCALIZE[24021]').decode('utf-8') #Disable
 str24022 = xbmc.getInfoLabel('$LOCALIZE[24022]').decode('utf-8') #Enable
 str36901 = xbmc.getInfoLabel('$LOCALIZE[36901]').decode('utf-8') #movies
 str36903 = xbmc.getInfoLabel('$LOCALIZE[36903]').decode('utf-8') #TV shows
+
+systemlanguage = xbmc.getInfoLabel('System.Language')
 '''---------------------------'''
 
 if xbmc.getSkinDir() == 'skin.featherence':
@@ -407,12 +409,6 @@ if xbmc.getSkinDir() == 'skin.featherence':
 
 	str79577 = xbmc.getInfoLabel('$LOCALIZE[79577]').decode('utf-8') #Update Movies and Tvshows library
 	str79583 = xbmc.getInfoLabel('$LOCALIZE[79583]').decode('utf-8') #Added
-
-'''------------------------------
----CUSTOM-$LOCALIZE--------------
-------------------------------'''
-blockedL = ["featherenceuser3", "featherenceuser9"]
-'''---------------------------'''
 
 '''------------------------------
 ---LIST--------------------------

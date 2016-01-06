@@ -512,9 +512,29 @@ msgctxt "#32041
 msgid "Setup default volume level on startup."
 msgstr "קבע עוצמת ווליום ברירת מחדל בהפעלה."
 
-msgctxt "#32042"
+msgctxt "#32042
 msgid "Allow auto library update and cleanup.[CR]If enable, the library will be updated once a day and cleaned once a week, respectably.[CR]The action occur when the user idle for one-two hours."
 msgstr "אפשר עדכון וניקוי ספרייה אוטומטי.[CR]אם האפשרות מופעלת יתבצע עדכון ספרייה אחת ליום וניקוי ספרייה אחת לשבוע.[CR]הפעולה מתבצעת במידה ואינך משתמש בקודי למעלה משעה-שעתיים."
+
+msgctxt "#32060
+msgid "Would you like thanks us? Would love to hear you!"
+msgstr "רוצה להגיד לנו תודה? נשמח לשמוע!"
+
+msgctxt "#32061
+msgid "Do you want to contribute?"
+msgstr "מעוניין לסייע לנו בפיתוח ההרחבה?"
+
+msgctxt "#32062
+msgid "Have an idea for new addon?"
+msgstr "יש לך רעיון להרחבה חדשה?"
+
+msgctxt "#32063
+msgid "Looking for support?"
+msgstr "צריך תמיכה?"
+
+msgctxt "#32064
+msgid "Having a question? Ask us!"
+msgstr "רוצה לשאול שאלה?"
 
 msgctxt "#33300
 msgid "Action completed successfully"

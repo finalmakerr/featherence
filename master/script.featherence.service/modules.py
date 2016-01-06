@@ -21,19 +21,7 @@ def mode0(admin, name, printpoint):
 	#mode5('', admin, name, printpoint)
 	#dp = xbmcgui.DialogProgress()
 	#dp.create("featherence Texture-Cache-Removal", "Removing Datebase", "why are we here?[CR]test is here ssssssssssssssssssssssssssssssssssssssssssssssssssss ")
-	
-	#from shared_modules3 import *
-	#dailymotion_test("")
-	#api_vimeo_featherence
-	#category = 'documentary'
-	#url = 'https://api.vimeo.com/categories/'+category+'/channels'
-	#link = OPEN_URL(url)
-	#getAPIdata('&dailymotion_pl=x2c745_SIMONVJ_reggae-playlist', "", "", "", "")
-	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=70&value=40)')
-	addon = 'script.extendedinfo'
-	#if int(value) < 40: xbmc.executebuiltin('RunScript('+addon+',info='+input0+','+input2+'='+input+')')
-	#xbmc.executebuiltin('RunScript('+addon+',info=topratedtvshows','Premiered')
-	#comingsoon
+	terminal('killall -9 kodi.bin',desc="", remote=True)
 	
 def mode5(value, admin, name, printpoint):
 	'''------------------------------
