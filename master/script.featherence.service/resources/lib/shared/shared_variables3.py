@@ -19,7 +19,17 @@ pluginhandle = int(sys.argv[1])
 General_AutoView = getsetting('General_AutoView')
 General_TVModeShuffle = getsetting('General_TVModeShuffle')
 General_TVModeDialog = getsetting('General_TVModeDialog')
-'''---------------------------'''
+try:
+	General_Language = getsetting('General_Language')
+	General_Language2 = getsetting('General_Language2')
+	General_Language3 = getsetting('General_Language3')
+	General_LanguageL = [General_Language, General_Language2, General_Language3]
+except:
+	General_Language = systemlanguage
+	General_Language2 = "English"
+	General_Language3 = ""
+	General_LanguageL = [systemlanguage, 'English']
+	'''---------------------------'''
 Addon_ShowLog = getsetting('Addon_ShowLog')
 Addon_ShowLog2 = getsetting('Addon_ShowLog2')
 Addon_Update = getsetting('Addon_Update')

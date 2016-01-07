@@ -856,8 +856,6 @@ def CleanString(output, filter=[]):
 	'''---------------------------'''
 	return output4
 	
-
-
 def checkDialog(admin):
 	'''------------------------------
 	---checkDialog-------------------
@@ -870,6 +868,7 @@ def checkDialog(admin):
 	dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)')
 	dialogkaitoastW = xbmc.getCondVisibility('Window.IsVisible(DialogKaiToast.xml)')
 	dialogkeyboardW = xbmc.getCondVisibility('Window.IsVisible(DialogKeyboard.xml)')
+	dialogtextviewerW = xbmc.getCondVisibility('Window.IsVisible(DialogTextViewer.xml)')
 	dialogsubtitlesW = xbmc.getCondVisibility('Window.IsVisible(DialogSubtitles.xml)')
 	videofullscreenW = xbmc.getCondVisibility('Window.IsVisible(VideoFullScreen.xml)')
 	'''---------------------------'''
@@ -937,6 +936,12 @@ def checkDialog(admin):
 		dialogMessageCustom = ""
 		returned_Dialog = "videofullscreenW"
 		'''---------------------------'''
+	elif dialogtextviewerW:
+		dialogHeader = ""
+		dialogHeaderCustom = ""
+		dialogMessage = ""
+		dialogMessageCustom = ""
+		returned_Dialog = "dialogtextviewerW"
 	else:
 		'''------------------------------
 		---NOTHING-SPECIFIC--------------

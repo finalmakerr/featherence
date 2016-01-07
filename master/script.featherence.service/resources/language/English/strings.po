@@ -504,6 +504,7 @@ msgctxt "#32035
 msgid "Note: You may change this setting at anytime in the settings button"
 msgstr "לידיעתך ניתן לשנות את ההגדרה בכל עת בכפתור הגדרות"
 
+#Others addons settings
 msgctxt "#32040
 msgid "Usage: Swift your mouse down to activate the taskbar."
 msgstr "שימוש: הזז את העכבר למטה במהירות להצגת שורת המשימות."
@@ -516,6 +517,7 @@ msgctxt "#32042
 msgid "Allow auto library update and cleanup.[CR]If enable, the library will be updated once a day and cleaned once a week, respectably.[CR]The action occur when the user idle for one-two hours."
 msgstr "אפשר עדכון וניקוי ספרייה אוטומטי.[CR]אם האפשרות מופעלת יתבצע עדכון ספרייה אחת ליום וניקוי ספרייה אחת לשבוע.[CR]הפעולה מתבצעת במידה ואינך משתמש בקודי למעלה משעה-שעתיים."
 
+#Message
 msgctxt "#32060
 msgid "Would you like thanks us? Would love to hear you!"
 msgstr "רוצה להגיד לנו תודה? נשמח לשמוע!"
@@ -535,6 +537,198 @@ msgstr "צריך תמיכה?"
 msgctxt "#32064
 msgid "Having a question? Ask us!"
 msgstr "רוצה לשאול שאלה?"
+
+msgctxt "#32065
+msgid ""
+msgstr ""
+
+#Custom start here!
+msgctxt "#32080
+msgid "Main language has been changed to:"
+msgstr "שפה ראשית שונתה ל-:"
+
+msgctxt "#32081
+msgid "The addon will provide contents in your choosen languages.[CR]See addon settings."
+msgstr "ההרחבה תספק תכנים בשפות שבחרת.[CR]ראה הגדרות הרחבה."
+
+msgctxt "#32082
+msgid "Watch varied of channels in %s"
+msgstr "צפה במגוון ערוצי טלוויזיה ב-%s"
+
+msgctxt "#32083
+msgid ""
+msgstr ""
+
+msgctxt "#32084
+msgid ""
+msgstr ""
+
+msgctxt "#32085
+msgid ""
+msgstr ""
+
+msgctxt "#32086
+msgid ""
+msgstr ""
+
+msgctxt "#32087
+msgid ""
+msgstr ""
+
+msgctxt "#32088
+msgid ""
+msgstr ""
+
+msgctxt "#32089
+msgid ""
+msgstr ""
+
+msgctxt "#32090
+msgid ""
+msgstr ""
+
+#Smart Playlist
+
+msgctxt "#32800
+msgid "Easily create & share your own addon.[CR]Support only YouTube links atm."
+msgstr "צור ושתף בקלות הרחבה משלך.[CR]Support only YouTube links atm."
+
+msgctxt "#32801
+msgid ""
+msgstr ""
+
+msgctxt "#32802
+msgid ""
+msgstr ""
+
+msgctxt "#32803
+msgid ""
+msgstr ""
+
+#Languages
+msgctxt "#32900
+msgid "Hebrew"
+msgstr "עברית"
+
+msgctxt "#32901
+msgid "English"
+msgstr "אנגלית"
+
+msgctxt "#32902
+msgid "Dutch"
+msgstr "הולנדית"
+
+msgctxt "#32903
+msgid "Ukrainian"
+msgstr "אוקראינית"
+
+msgctxt "#32904
+msgid "French"
+msgstr "צרפתית"
+
+msgctxt "#32905
+msgid "Russian"
+msgstr "רוסית"
+
+msgctxt "#32906
+msgid "Georgian"
+msgstr "גרוזינית"
+
+msgctxt "#32907
+msgid "Chinese"
+msgstr "סינית"
+
+msgctxt "#32908
+msgid "Spanish"
+msgstr "ספרדית"
+
+msgctxt "#32909
+msgid "Italian"
+msgstr "איטלקית"
+
+msgctxt "#32910
+msgid "Thai"
+msgstr "תיאלנדית"
+
+msgctxt "#32911
+msgid "Japanese"
+msgstr "יפנית"
+
+msgctxt "#32912
+msgid "Irish"
+msgstr "אירית"
+
+msgctxt "#32913
+msgid "Korean"
+msgstr "קוריאנית"
+
+msgctxt "#32914
+msgid "Romanian"
+msgstr "רומנית"
+
+msgctxt "#32915
+msgid "Serbian"
+msgstr "סרבית"
+
+msgctxt "#32916
+msgid "Turkish"
+msgstr "טורקית"
+
+msgctxt "#32917
+msgid "Slovak"
+msgstr "סלובקית"
+
+msgctxt "#32918
+msgid "Portuguese"
+msgstr "פורטוגזית"
+
+msgctxt "#32919
+msgid "Catalan"
+msgstr "קטלאנית"
+
+msgctxt "#32920
+msgid "German"
+msgstr "גרמנית"
+
+msgctxt "#32921
+msgid "Hungarian"
+msgstr "הונגרית"
+
+msgctxt "#32922
+msgid "Polish"
+msgstr "פולנית"
+
+msgctxt "#32923
+msgid "Hindi"
+msgstr "הודית"
+
+msgctxt "#32924
+msgid "Haitian"
+msgstr "קריאולית האיטית"
+
+msgctxt "#32925
+msgid "Finnish"
+msgstr "פינית"
+
+msgctxt "#32926
+msgid "Arabic"
+msgstr "ערבית"
+
+msgctxt "#32927
+msgid "Indonesian"
+msgstr "אינדונזית"
+
+msgctxt "#32928
+msgid "Bulgarian"
+msgstr "בולגרית"
+
+msgctxt "#32929
+msgid "Uzbek"
+msgstr "אוזבקית"
+
+msgctxt "#32930
+msgid "Kazakh"
+msgstr "קזחית"
 
 msgctxt "#33300
 msgid "Action completed successfully"

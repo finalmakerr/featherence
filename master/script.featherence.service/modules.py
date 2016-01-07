@@ -70,18 +70,16 @@ def mode5(value, admin, name, printpoint):
 		if xbmc.getSkinDir() == 'skin.featherence':
 			mode215('_',admin,'','')
 			setsetting_custom1('script.featherence.service','Skin_UpdateLog',"true")
+			Skin_UpdateLog = 'true'
 			installaddonP(admin, 'script.module.simplejson')
 			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)')
+			setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
 	else:
 		'''multitime but not on startup'''
 		if Library_On == 'true':
 			printpoint = printpoint + '2'
 			LibraryUpdate(admin, datenowS, Library_On, Library_CleanDate, Library_UpdateDate)
-			
-	if xbmc.getSkinDir() == 'skin.featherence':
-		xbmc.sleep(60000)
-		setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
-		'''---------------------------'''
+
 	if AutoUpdate == 'true' or Library_On == 'true':
 		xbmc.executebuiltin('AlarmClock(demon,RunScript(script.featherence.service,,?mode=5),'+str(AutoUpdate2)+',silent)') #demon
 
@@ -9924,37 +9922,49 @@ def setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLo
 	'''------------------------------
 	---CHECK-FOR-SKIN-UPDATE---------
 	------------------------------'''
-	if datenowS == "" or datenowS == None: pass
+	name = 'setSkin_Update' ; printpoint = ""
+	if datenowS == "" or datenowS == None: printpoint = printpoint + '9'
 	else:
 		Skin_Version2 = xbmc.getInfoLabel('System.AddonVersion(skin.featherence)')
 		if Skin_Version != Skin_Version2:
+			printpoint = printpoint + '1'
 			setsetting('Skin_UpdateLog',"true")
 			setsetting('Skin_UpdateDate',datenowS)
 			setsetting('Skin_Version',Skin_Version2)
 			#xbmc.executebuiltin('RunScript(script.featherence.service.debug,,?mode=19)')
 			Skin_UpdateLog = 'true'
+			
+		else: printpoint = printpoint + '2'
 		
 		if Skin_UpdateLog == 'true':
-			if not dialogbusyW and not dialogokW and not dialogprogressW and not dialogselectW and not dialogtextviewerW and not dialogyesnoW and not startupW and not custom1191W:
+			printpoint = printpoint + '3'
+			returned_Dialog, returned_Header, returned_Message = checkDialog(admin)
+			if returned_Dialog == "":
+				printpoint = printpoint + '7'
 				setsetting('Skin_UpdateLog',"false")
 				setSkin_UpdateLog(admin, Skin_Version2, Skin_UpdateDate, datenowS)
-
+		else:
+			printpoint = printpoint + '8'
+	text = "Skin_UpdateDate" + space2 + Skin_UpdateDate + " - " + datenowS + space + space + "Skin_UpdateLog" + space2 + Skin_UpdateLog + newline + \
+	'Skin_Version' + space2 + str(Skin_Version)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	'''---------------------------'''
+	
 def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS):	
 	'''------------------------------
 	---VARIABLES---------------------
 	------------------------------'''
-	printpoint = ""
-	number2S = ""
+	printpoint = "" ; number2S = "" ; extra = "" ; TypeError = ""
 	datenowD = stringtodate(datenowS,'%Y-%m-%d')
 	datedifferenceD = stringtodate(Skin_UpdateDate, '%Y-%m-%d')
-	datedifferenceS = str(datedifferenceD)
 	if "error" in [datenowD, datedifferenceD]: printpoint = printpoint + "9"
 	try:
 		number2 = datenowD - datedifferenceD
 		number2S = str(number2)
 		printpoint = printpoint + "2"
 		'''---------------------------'''
-	except:
+	except Exception, TypeError:
+		extra = extra + newline + 'TypeError' + space2 + str(TypeError)
 		printpoint = printpoint + "9"
 		'''---------------------------'''
 	if not "9" in printpoint and xbmc.getSkinDir() == 'skin.featherence':
@@ -9971,6 +9981,7 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS):
 		else: header = ""
 		'''---------------------------'''
 		if os.path.exists(skinlog_file):
+			printpoint = printpoint + "5"
 			log = open(skinlog_file, 'r')
 			message2 = log.read()
 			log.close()
@@ -9979,14 +9990,18 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS):
 			message3 = '"' + message3 + '"'
 			message3S = str(message3)
 			if header != "":
-				diaogtextviewer(header, message2)
-				'''---------------------------'''
+				printpoint = printpoint + "6"
+				if number2N == 0 or xbmc.getCondVisibility('System.IdleTime(5)'):
+					printpoint = printpoint + "7"
+					diaogtextviewer(header, message2)
+					'''---------------------------'''
 			
 	setsetting('Skin_UpdateLog',"false")
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
-	text = "Skin_UpdateDate" + space2 + Skin_UpdateDate + " - " + datenowS + space + "(" + number2S + ")" + space + "Skin_UpdateLog" + space2 + Skin_UpdateLog
+	text = "Skin_UpdateDate" + space2 + Skin_UpdateDate + " - " + datenowS + space + "(" + number2S + ")" + space + "Skin_UpdateLog" + space2 + Skin_UpdateLog + newline + \
+	'datedifferenceD' + space2 + str(datedifferenceD) + extra
 	printlog(title='setSkin_UpdateLog', printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 
