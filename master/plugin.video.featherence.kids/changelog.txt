@@ -8,11 +8,18 @@ WIP - WORK IN PROGRESS
 ------------------------
 Featherence Kids v0.1.7 (xx-01-16)
 ------------------------
-- Reduce addon size.
-- Added TV Mode support for Young category.
-- Added Young series.
+- Added new method of choosing your main and secondary prefered languages.
+- Added description to all buttons (English & Hebrew).
+- Added thumbnails for main and sub categories.
+- Added TV Mode support for over 100 series.
+- Added thousands of new videos.
 - Added SdarotTV search.
-- Minor bugs fix.
+- Update English translation.
+- Update Hebrew translation.
+- Update all links to be available per choosens languages only.
+- Major resorting of contents.
+- Major update of broken links.
+- Reduce addon size.
 
 ------------------------
 Featherence Kids v0.1.6 (25-12-15)

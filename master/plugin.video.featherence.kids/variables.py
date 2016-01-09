@@ -42,6 +42,8 @@ else:
 	try:
 		from shared_variables import *
 		from shared_variables3 import *
+		libDir = os.path.join(addonPath, 'resources', 'lib', '')
+		sys.path.insert(1, libDir)
 		'''---------------------------'''
 	except Exception, TypeError:
 		xbmc.executebuiltin('Notification(FEATHERENCE SERVICE ADDON ERROR, Solution: Reinstall the addon, 2000)')
