@@ -1639,7 +1639,7 @@ def setaddonFanart(fanart, Fanart_Enable, Fanart_EnableCustom): #Fanart_EnableEx
 	printlog(title='setaddonFanart', printpoint=printpoint, text=text, level=0, option="")
 	return returned
 
-def getAddonFanart(category, custom=""):
+def getAddonFanart(category, custom="", default=""):
 	#admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
 	#admin2 = xbmc.getInfoLabel('Skin.HasSetting(Admin2)')
 	#admin3 = xbmc.getInfoLabel('Skin.HasSetting(Admin3)')
@@ -1651,8 +1651,9 @@ def getAddonFanart(category, custom=""):
 		if 'ok' in valid:
 			printpoint = printpoint + "7"
 			returned = custom
-	if returned == "":
-		if Fanart_EnableCustom != "true":
+			
+	if returned == "" and not '7' in printpoint:
+		if Fanart_EnableCustom != "true" and default == "":
 			returned = addonFanart
 			printpoint = printpoint + "8"
 		elif category == 100: category_path = Fanart_Custom100
@@ -1759,6 +1760,13 @@ def getAddonFanart(category, custom=""):
 				else:
 					setsetting('Fanart_Custom'+str(category),"")
 					printpoint = printpoint + "9d"
+		
+		elif default != "" and not '7' in printpoint:
+			valid = urlcheck(default, ping=False, timeout=1)
+			
+			if 'ok' in valid:
+				printpoint = printpoint + "7"
+				returned = default
 		else:
 			printpoint = printpoint + "9"
 			
@@ -1769,9 +1777,12 @@ def getAddonFanart(category, custom=""):
 			extra = extra + newline + "TypeError" + space2 + str(TypeError)
 			returned = ""
 	
-	elif "7" in printpoint and custom == "": returned = category_path
+	elif "7" in printpoint:
+		if default == "" and custom == "": returned = category_path
 	
-	text = "category" + space2 + str(category) + space + "custom" + space2 + str(custom) + newline + \
+	text = "category" + space2 + str(category) + newline + \
+	"custom" + space2 + str(custom) + newline + \
+	"default" + space2 + str(default) + newline + \
 	"returned" + space2 + str(returned) + newline + \
 	"category_path" + space2 + str(category_path) + extra
 	printlog(title='getAddonFanart', printpoint=printpoint, text=text, level=0, option="")

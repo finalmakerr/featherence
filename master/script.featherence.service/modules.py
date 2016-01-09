@@ -21,7 +21,10 @@ def mode0(admin, name, printpoint):
 	#mode5('', admin, name, printpoint)
 	#dp = xbmcgui.DialogProgress()
 	#dp.create("featherence Texture-Cache-Removal", "Removing Datebase", "why are we here?[CR]test is here ssssssssssssssssssssssssssssssssssssssssssssssssssss ")
-	terminal('killall -9 kodi.bin',desc="", remote=True)
+	#terminal('killall -9 kodi.bin',desc="", remote=True)
+	path = 'C:\Users\gal\AppData\Roaming\Kodi\userdata\library\pictures_\אלבום\אבג.jpg'
+	path = to_unicode(path)
+	if os.path.exists(path): notification('1','','',2000)
 	
 def mode5(value, admin, name, printpoint):
 	'''------------------------------

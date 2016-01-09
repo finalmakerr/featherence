@@ -65,8 +65,9 @@
 - Smart TV Mode.
 - Smart Interface allow the users to easily create thier own addon from within Kodi and share it with others.
 - Customized Fanart for each button.
-- Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox...
-- Smart Search button..
+- Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox..
+- Smart Search button.
+- Multilanguage support (over 30 countries).
 - Sorted and Organized contents.</description>
 	<description lang="he"></description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
@@ -123,7 +124,7 @@
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.1.22" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.1.23" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
 	<import addon="xbmc.json" version="6.0.0"/>

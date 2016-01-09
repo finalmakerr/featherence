@@ -1745,8 +1745,8 @@ elif mode >= 200 and mode <= 249:
 								if x2 != "":
 									y, y2 = GeneratePath(x2)
 									copyfiles(x2, y2, chmod="", mount=False)
-									if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
-									else: formula = formula + newline + 'icon'+str(i)+'=0' + str(x)
+									if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + to_utf8(y2) ; custommediaL.append(y)
+									else: formula = formula + newline + 'icon'+str(i)+'=0' + to_unicode(x)
 									#print 'test123 ' + 'x' + space2 + str(x) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
 								x = backgroundT.get('background'+str(i))
 								x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])

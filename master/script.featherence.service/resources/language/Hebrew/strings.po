@@ -666,7 +666,7 @@ msgctxt "#32914
 msgid "Romanian"
 msgstr "רומנית"
 
-msgctxt "#32915
+msgctxt "#32915 #Croatian
 msgid "Serbian"
 msgstr "סרבית"
 
@@ -729,6 +729,26 @@ msgstr "אוזבקית"
 msgctxt "#32930
 msgid "Kazakh"
 msgstr "קזחית"
+
+msgctxt "#32931
+msgid "Greek"
+msgstr "יוונית"
+
+msgctxt "#32932
+msgid "Swedish"
+msgstr "שוודית"
+
+msgctxt "#32933
+msgid "Dansk"
+msgstr "דנית"
+
+msgctxt "#32934
+msgid ""
+msgstr ""
+
+msgctxt "#32935
+msgid ""
+msgstr ""
 
 msgctxt "#33300
 msgid "Action completed successfully"

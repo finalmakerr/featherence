@@ -60,7 +60,7 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 								absname = os.path.abspath(os.path.join(dirname, filename))
 								arcname = absname[len(abs_src) + 1:]
 								arcname1dir = find_string(arcname, arcname[:2], "/")
-								print 'zipping %s as %s' % (os.path.join(dirname, filename),arcname)
+								print 'zipping %s as %s' % (os.path.join(to_utf8(dirname), to_utf8(filename)),to_utf8(arcname))
 								#if filteron == [] or arcname in filteron:
 								#if filteroff == [] or not arcname in filteroff:
 								try:
@@ -147,7 +147,7 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 	return returned	
 
 def TranslatePath(x, filteroff=[]):
-	name = 'TranslatePath' ; printpoint = "" ; returned = "" ; x2 = ""
+	name = 'TranslatePath' ; printpoint = "" ; returned = "" ; x2 = "" ; TypeError = "" ; extra = ""
 	if x == None: x = ""
 	if systemplatformwindows: slash = '\\'
 	else: slash = '/'
@@ -161,7 +161,15 @@ def TranslatePath(x, filteroff=[]):
 	elif 'https://' in x or 'http://' in x:
 		printpoint = printpoint + '2'
 		x2 = x
-	else: x2 = os.path.join(xbmc.translatePath(x).decode("utf-8"))
+	else:
+		if 'special://' in x:
+			try: x2 = os.path.join(xbmc.translatePath(x).decode("utf-8"))
+			except Exception, TypeError: extra = extra + newline + 'TypeError: ' + str(TypeError)
+		else:
+			#x2 = os.path.join(xbmc.translatePath(x))
+			x2 = x
+	
+	x2 = to_unicode(x2)
 	
 	if '2' in printpoint:
 		returned = x2
@@ -173,12 +181,19 @@ def TranslatePath(x, filteroff=[]):
 					break
 		if not '8' in printpoint: returned = x2
 	
-	text = 'x' + space2 + str(x) + space + 'x2' + space2 + str(x2) + space + 'returned' + space2 + str(returned)
+	else: printpoint = printpoint + '9'
+	
+	#try:
+	text = 'x' + space2 + str(x) + space + 'x2' + space2 + to_utf8(x2) + space + 'returned' + space2 + to_utf8(returned)
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+	#except Exception, TypeError:
+	#extra = extra + newline + 'TypeError: ' + str(TypeError)
+	#text = 'x' + space2 + str(x) + space + extra
+	#printlog(title=name, printpoint=printpoint, text=text, level=7, option="")
 	return returned
 
 def GeneratePath(x2):
-	name = 'GeneratePath' ; printpoint = "" ; returned = "" ; y = "" ; y_ = "" ; y__ = "" ; y2 = ""
+	name = 'GeneratePath' ; printpoint = "" ; returned = "" ; y = "" ; y_ = "" ; y__ = "" ; y2 = "" ; TypeError = "" ; extra = ""
 	if x2 == None: x = ""
 	if systemplatformwindows: slash = '\\'
 	else: slash = '/'
@@ -187,11 +202,12 @@ def GeneratePath(x2):
 	if y == 'icon.png':
 		y_ = x2.split(slash)
 		y__ = y_[-2]
-		y = str(y__) + '_' + str(y)
-	y2 = os.path.join(featherenceserviceaddondata_media_path, str(y))
+		y = to_unicode(y__) + '_' + to_unicode(y)
+	y2 = os.path.join(featherenceserviceaddondata_media_path, to_unicode(y))
 	
-	text = 'x2' + space2 + str(x2) + space + 'y' + space2 + str(y) + space + 'y_' + space2 + str(y_) + space + 'y__' + space2 + str(y__) + space + 'y2' + space2 + str(y2)
+	text = 'x2' + space2 + to_utf8(x2) + space + 'y' + space2 + to_utf8(y) + space + 'y_' + space2 + str(y_) + space + 'y__' + space2 + to_utf8(y__) + space + 'y2' + space2 + to_utf8(y2) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+	
 	return y, y2
 	
 def ExtractAll(source, output):
@@ -632,15 +648,15 @@ def terminal(command,desc="", remote=False):
 def find_string(findin, findwhat, findwhat2):
 	name = 'find_string' ; printpoint = ""
 	
-	findin = str(findin)
+	findin = to_utf8(findin)
 	findinL = len(findin)
 	findinLS = str(findinL)
 	findinLN = int(findinLS)
-	findwhat = str(findwhat)
+	findwhat = to_utf8(findwhat)
 	findwhatL = len(findwhat)
 	findwhatLS = str(findwhatL)
 	findwhatLN = int(findwhatLS)
-	findwhat2 = str(findwhat2)
+	findwhat2 = to_utf8(findwhat2)
 	findwhat2L = len(findwhat2)
 	findwhat2LS = str(findwhat2L)
 	findwhat2LN = int(findwhat2LS)
@@ -2131,7 +2147,7 @@ def copyfiles(source, target, chmod="", mount=False):
 				else:
 					returned = "skip"
 	
-	text = "source" + space2 + str(source) + space + "target" + space2 + str(target) + space + "source1" + space2 + str(source1) + space + 'targetdir' + space2 + str(targetdir) + extra
+	text = "source" + space2 + to_utf8(source) + space + "target" + space2 + to_utf8(target) + space + "source1" + space2 + to_utf8(source1) + space + 'targetdir' + space2 + to_utf8(targetdir) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def catfile(path):
