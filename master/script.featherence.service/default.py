@@ -1703,7 +1703,9 @@ elif mode >= 200 and mode <= 249:
 			elif returned == 3 or (returned == "" and value == "Templates"): path = os.path.join(featherenceservice_path, 'resources', 'skin_templates', '')
 			else: path = ""
 			
-			list2 = ['-> (Exit)', 'New']
+			list2 = ['-> (Exit)']
+			if returned == 1: list2.append('New')
+			
 			if path != "":
 				'''read existing files'''
 				filesT = {}
@@ -1892,7 +1894,9 @@ elif mode >= 200 and mode <= 249:
 					filename = str(list2[returned2])
 					file = filesT.get(filename)
 					
-					if not os.path.exists(path + file):
+					if file == "" or file == None:
+						notification("Invalid file!", "", "", 4000)
+					elif not os.path.exists(path + file):
 						'''nothing to load'''
 						notification("There is no data to load!", "You should create a save session", "", 4000)
 					else:
@@ -1971,7 +1975,8 @@ elif mode >= 200 and mode <= 249:
 							Custom1000(str(list[returned]),100,str(list2[returned2]),3)
 				
 				if "V" in printpoint:
-					xbmc.executebuiltin('Action(Back)') ; xbmc.sleep(200)
+					xbmc.executebuiltin('Action(Back)') ; xbmc.sleep(20000)
+					print 'BOOOO'
 					ReloadSkin(admin)
 					xbmc.executebuiltin('ActivateWindow(1173)')
 					'''---------------------------'''

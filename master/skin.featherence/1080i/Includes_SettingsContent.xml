@@ -388,7 +388,6 @@
 	  </item>
 	  
 	  <item id="231" description="שקיפות פאנארט-כללי">
-		
 		<label>$LOCALIZE[78215] ($LOCALIZE[20445]-$LOCALIZE[16000])</label>
 		<label2>$INFO[Skin.String(Background2Overlay)]</label2>
 		<thumb></thumb>

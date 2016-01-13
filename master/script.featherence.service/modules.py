@@ -2810,7 +2810,7 @@ def mode211(value, admin, name, printpoint):
 				x = xbmc.getInfoLabel('Skin.String(label'+property_buttonid+'_'+str(i)+')')
 				if x == "":
 					y = property_buttonid+'_'+str(i)
-					setSkinSetting('0','id'+y,y)
+					#setSkinSetting('0','id'+y,y)
 					setSkinSetting('0','label'+y,"...")
 					setSkinSetting('1','off'+y,"false")
 					break
@@ -2889,7 +2889,7 @@ def mode212(value, admin, name, printpoint):
 								if i > 99 : setSkinSetting('0','label'+x+'_'+str(i),"")
 								else: setSkinSetting('0','label'+x+'_'+str(i),"")
 								setSkinSetting('1','off'+x+'_'+str(i),"false")
-								setSkinSetting('0','id'+x+'_'+str(i),"")
+								#setSkinSetting('0','id'+x+'_'+str(i),"")
 								setSkinSetting('0','action'+x+'_'+str(i),"")
 								setSkinSetting('0','icon'+x+'_'+str(i),"")
 								'''---------------------------'''			
@@ -2911,7 +2911,7 @@ def mode212(value, admin, name, printpoint):
 				setSkinSetting('1','off' + x,"false")
 				if not '_90' in property_subbuttonid_ and not 'B' in value: setSkinSetting('0','label' + x,"")
 				else: setSkinSetting('0','label' + x,"...")
-				setSkinSetting('0','id' + x,"")
+				#setSkinSetting('0','id' + x,"")
 				setSkinSetting('0','icon' + x,"")
 				setSkinSetting('0','action' + x,"")
 				printpoint = printpoint + "7"

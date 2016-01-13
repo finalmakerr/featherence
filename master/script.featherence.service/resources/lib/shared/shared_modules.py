@@ -2405,7 +2405,9 @@ def replace_word(infile,old_word,new_word, infile_="", LineR=False , LineClean=F
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
 def ReloadSkin(admin):
+	name = 'ReloadSkin' ; printpoint = ""
 	if property_reloadskin == "":
+		printpoint = printpoint + '1'
 		xbmc.executebuiltin('ActivateWindow(1000)')
 		xbmc.executebuiltin('SetProperty(ReloadSkin,true,home)')
 		if playerhasmedia: xbmc.executebuiltin('Action(Stop)') ; notification('Video Stop',"","",1000) ; xbmc.sleep(1000)
@@ -2416,8 +2418,11 @@ def ReloadSkin(admin):
 		xbmc.executebuiltin('Action(Back)')
 		#xbmc.executebuiltin('ReplaceWindow(CustomHomeCustomizer.xml)')
 	else:
-		pass
+		printpoint = printpoint + '9'
 		#xbmc.executebuiltin('RunScript(script.htpt.service,,?mode=215&value=_)')
+	
+	text = "property_reloadskin" + space2 + str(property_reloadskin)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def settingschange(window,systemgetbool,falsetrue,force,string1,string2):
 	'''systemgetbool'''
