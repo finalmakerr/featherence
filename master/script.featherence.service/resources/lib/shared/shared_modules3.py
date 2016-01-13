@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import urllib,urllib2,sys,re,xbmcplugin,xbmcgui,xbmcaddon,xbmc,os,random
 import json
 from random import shuffle
@@ -75,11 +76,11 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	
 	if '9' in printpoint: pass
 	else:
-		if mode >= 100 and 1 + 1 == 2:
+		if mode >= 100 and 1 + 1 == 3:
 			#if url == "": url = "1"
-			u=sys.argv[0]+"?url="+str(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)+"&desc="+urllib.quote_plus(desc)+"&num="+urllib.quote_plus(num)+"&viewtype="+str(viewtype)
+			u=sys.argv[0]+"?url="+str(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)+"&desc="+urllib.quote_plus(desc)+"&num="+urllib.quote_plus(num)+"&viewtype="+str(viewtype)+"&fanart="+str(fanart)
 		else:
-			u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)+"&desc="+urllib.quote_plus(desc)+"&num="+urllib.quote_plus(num)+"&viewtype="+str(viewtype)
+			u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)+"&desc="+urllib.quote_plus(desc)+"&num="+urllib.quote_plus(num)+"&viewtype="+str(viewtype)+"&fanart="+str(fanart)
 		
 		
 		
@@ -109,6 +110,12 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 			liz.addContextMenuItems(items=menu, replaceItems=False)
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
 			returned = ok
+		elif mode == 1:
+			'''random'''
+			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
+			returned = ok
+			'''---------------------------'''	
+			
 		elif mode == 2 or mode == 4 or mode == 3 or mode == 7:
 			'''------------------------------
 			---play_video/2------------------
@@ -180,7 +187,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 			'''------------------------------
 			---TV-MODE-2---------------------
 			------------------------------'''
-			liz.addContextMenuItems(items=menu, replaceItems=True)
+			liz.addContextMenuItems(items=menu, replaceItems=False)
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
 			returned = ok
 			'''---------------------------'''
@@ -237,6 +244,9 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
 			returned = ok
 		
+		#scriptfeatherenceservice_random = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random)')
+		checkRandom(url)
+		
 	text = "name" + space2 + str(name) + newline + \
 	"desc" + space2 + str(desc) + space + "addonID" + space2 + str(addonID) + newline + \
 	"iconimage" + space2 + str(iconimage) + newline + \
@@ -246,6 +256,43 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	'''---------------------------'''
 	if not '9' in printpoint: return returned
 
+def checkRandom(url):
+	printpoint = "" ; i = "" ; returned = ""
+	#extra = extra + newline + 'scriptfeatherenceservice_random' + space2 + str(xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random)'))
+	if xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random)') != "":
+		printpoint = printpoint + '0'
+		url = CleanString2(url)
+		if xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random)') == "true":
+			printpoint = printpoint + '1'
+			i = 1
+			setProperty('script.featherence.service_random', str(i), type="home")
+			setProperty('script.featherence.service_randomL', "", type="home")
+			for x in range(1,6):
+				setProperty('script.featherence.service_random'+str(x), "", type="home")
+			
+		else:
+			printpoint = printpoint + '2'
+			i = int(xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random)'))
+		
+		if i != "":
+			if xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random'+str(i)+')') == "":
+				printpoint = printpoint + '3'
+				returned = str(url)
+				setProperty('script.featherence.service_random'+str(i), returned, type="home")
+			else:
+				printpoint = printpoint + '4'
+				returned = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random'+str(i)+')') + '|' + str(url)
+				setProperty('script.featherence.service_random'+str(i), returned, type="home")
+
+			if i == 5: setProperty('script.featherence.service_random', '1', type="home")
+			else: setProperty('script.featherence.service_random', str(i + 1), type="home")
+				
+				
+		text = 'i' + space2 + str(i) + newline + \
+		"url" + space2 + str(url) + newline + \
+		'returned' + space2 + str(returned) + newline + \
+		"scriptfeatherenceservice_randomL" + space2 + str(xbmc.getInfoLabel('Window(home).Property(script.featherence.service_randomL)'))
+		printlog(title='checkRandom', printpoint=printpoint, text=text, level=0, option="")
 def get_params():
 	param=[]
 	paramstring=sys.argv[2]
@@ -531,6 +578,7 @@ def YOULink(mname, url, thumb, desc):
 		
 def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 	printpoint = "" ; i = 0 ; i2 = 0 ; extra = "" ; desc = str(desc)
+	print 'testtt ' + fanart
 	pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
 	playlist = []
 	playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
@@ -693,7 +741,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					'''---------------------------'''
 				elif "&youtube_pl=" in x:
 					#x = x.replace("&youtube_pl=","")
-					addDir(str(i) + '.' + space + title_L[0] + space + name2, x, 13, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0]) #addonString(192).encode('utf-8')
+					addDir(str(i) + '.' + space + title_L[0] + space + name2, x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0]) #addonString(192).encode('utf-8')
 					'''---------------------------'''
 				elif "&youtube_id=" in x:
 					#x = x.replace("&youtube_id=","")
@@ -759,6 +807,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	text = "mode" + space2 + str(mode) + space + "i" + space2 + str(i) + space + newline + \
 	"url " + space2 + str(url) + newline + \
 	"url2" + space2 + str(url2) + newline + \
+	"fanart" + space2 + str(fanart) + newline + \
 	"pl" + space2 + str(pl) + space + "playlist" + space2 + str(len(playlist)) + space + str(playlist) + newline + \
 	"finalurl" + space2 + str(finalurl) + space + "finalurlL" + space2 + str(finalurlL) + space + newline + extra
 	printlog(title="MultiVideos", printpoint=printpoint, text=text, level=2, option="")
@@ -980,7 +1029,13 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 	if '&videoDuration=' in x:
 		videoDuration = regex_from_to(x, '&videoDuration=', '&', excluding=True)
 		x = x.replace('&videoDuration='+videoDuration+'&',"")
-		#notification(x,'','',2000)
+		#notification(x,videoDuration,'',2000)
+	
+	if '&videoDefinition=' in x:
+		videoDefinition = regex_from_to(x, '&videoDefinition=', '&', excluding=True)
+		x = x.replace('&videoDefinition='+videoDefinition+'&',"")
+		#notification(x,videoDefinition,'',2000)
+		
 	if addonID == 'plugin.video.featherence.docu':
 		pass
 		#videoDefinition = 'high'
@@ -1010,8 +1065,8 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 			x2 = x_ + space + x2
 		x2 = clean_commonsearch(x2)
 			
-		notification(x2,'','',2000)
-		url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+api_youtube_featherence+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults='+maxResults+'&pageToken='
+		#notification(x2,'','',2000)
+		url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+api_youtube_featherence+'&videoDuration='+videoDuration+'&videoDefinition='+videoDefinition+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults='+maxResults+'&pageToken='
 	elif "&youtube_se2=" in x:
 		'''WIP'''
 		printpoint = printpoint + "5"
@@ -1028,7 +1083,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		printpoint = printpoint + "3"
 		x2 = x.replace("&custom_se=","")
 		x2 = clean_commonsearch(x2)
-		url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+api_youtube_featherence+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults=1&pageToken='
+		url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+api_youtube_featherence+'&videoDuration='+videoDuration+'&videoDefinition='+videoDefinition+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults=1&pageToken='
 	elif "&youtube_ch=" in x:
 		printpoint = printpoint + "4"
 		title2 = '[Channel]'
@@ -1045,6 +1100,11 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		else:
 			url = 'https://www.googleapis.com/youtube/v3/search?channelId='+x2+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults+'&videoDefinition='+videoDefinition #+'&type=video'
 			
+	elif '&dailymotion_id=' in x:
+		title2 = '[Video]'
+		x2 = x.replace('&dailymotion_id=',"")
+		url = 'https://api.dailymotion.com/video/'+x2+'/?fields=description,duration,id,owner.username,taken_time,thumbnail_large_url,title,views_total&family_filter=1&localization=en'
+		print 'url: ' + url
 	elif '&dailymotion_pl=' in x:
 		printpoint = printpoint + '7'
 		title2 = '[Playlist]'
@@ -1069,6 +1129,9 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 			if prms[u'has_more']:
 				totalResults = int(prms[u'limit'])
 			else: totalResults = prms[u'total']
+		elif '&dailymotion_id=' in x:
+			if prms[u'id']:
+				totalResults = len(prms[u'id'])
 		else:
 			totalResults=int(prms['pageInfo'][u'totalResults']) #if bigger than pagesize needs to add more result
 		totalpagesN = (totalResults / pagesize) + 1
@@ -1111,7 +1174,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 					desc_ = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8'))
 					fanart_ = str(prms['items'][i][u'snippet'][u'thumbnails'][u'high'][u'url'])
 					
-					id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i')
+					id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i')
 					
 				elif playlistid_ != "":
 					url2 = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId='+playlistid_+'&key='+api_youtube_featherence+'&part=snippet&maxResults=20&pageToken='
@@ -1141,7 +1204,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 							except Exception, TypeError: extra = extra + newline + 'thumb TypeError: ' + str(TypeError) + space + 'i2' + space2 + str(i2) + space + 'id' + space2 + str(id_)
 							desc_ = str(prms2['items'][i2][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
 							
-							id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart_, fanart_L, count, invalid__, duplicates__, i2, i_='i2')
+							id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i2, i_='i2')
 						
 						#print 'i2' + space2 + str(i2) + space + 'id' + space2 + str(id)
 						i2 += 1
@@ -1150,7 +1213,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 					id_ = id2_
 					finalurl_ = 'plugin://plugin.video.dailymotion_com/?url='+id_+'&mode=playVideo'
 					if '&dailymotion_id=' in x: #if onlydata == True:
-						title_ = str(prms[u'name'])
+						title_ = str(prms[u'title'])
 						try: thumb_ = str(prms[u'thumbnail_large_url'])
 						except Exception, TypeError: pass
 						try: desc_ = str(prms[u'description']).encode('utf-8')
@@ -1164,7 +1227,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 						fanart_ = str(prms[u'list'][i][u'thumbnail_large_url'])
 					
 						
-					id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i')
+					id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i')
 			
 			except Exception, TypeError:
 				except__ = except__ + newline + "i" + space2 + str(i) + space + "id" + space2 + str(id)
@@ -1234,7 +1297,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 			
 	return finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L
 
-def apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i'):
+def apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i'):
 	if not finalurl_ in playlist and not "Deleted video" in title_ and not "Private video" in title_ and finalurl_ != "":
 		#if onlydata == True:
 		if title2 != "":
@@ -1242,9 +1305,9 @@ def apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, titl
 		id_L.append(id_)
 		playlist_L.append(finalurl_)
 		title_L.append(title_)
-		thumb_L.append(thumb_)
-		desc_L.append(desc_)
-		fanart_L.append(fanart_)
+		if thumb_L != "": thumb_L.append(thumb_)
+		if desc_ != "": desc_L.append(desc_)
+		if fanart == "": fanart_L.append(fanart_)
 		
 		count += 1
 	else:
@@ -1455,10 +1518,11 @@ def update_view(url, num, viewtype):
 	
 	ok = True
 	
-	if '&activatewindow=' in url: printpoint = printpoint + '2'
+	if '&activatewindow=' in url:
+		printpoint = printpoint + '2'
 	if '&' in url and '=' in url:
 		url_ = find_string(url, "&", '=')
-		list = ['&youtube_pl=', '&youtube_id=', '&youtube_ch=', '&youtube_se=', '&sdarot=']
+		list = ['&youtube_pl=', '&youtube_id=', '&youtube_ch=', '&youtube_se=', '&sdarot=', '&activatewindow=']
 		if url_ in list:
 			url = url.replace(url_,"",1)
 	
@@ -1619,17 +1683,18 @@ def setaddonFanart(fanart, Fanart_Enable, Fanart_EnableCustom): #Fanart_EnableEx
 	if Fanart_Enable == "true" and extra == "":
 		printpoint = printpoint + "1"
 		if fanart != "":
+			printpoint = printpoint + "2"
 			try:
 				if os.path.exists(fanart):
-					printpoint = printpoint + "4"
+					printpoint = printpoint + "3"
 					returned = fanart
-				elif "http://" in fanart or "www." in fanart:
-					printpoint = printpoint + "5"
+				elif "http://" in fanart or "www." in fanart or "https://" in fanart:
+					printpoint = printpoint + "4"
 					returned = fanart
 				else: pass
 			except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
 			
-			printpoint = printpoint + "2"
+			
 			
 		else: printpoint = printpoint + "8"
 	else: printpoint = printpoint + "9"
@@ -1639,16 +1704,18 @@ def setaddonFanart(fanart, Fanart_Enable, Fanart_EnableCustom): #Fanart_EnableEx
 	printlog(title='setaddonFanart', printpoint=printpoint, text=text, level=0, option="")
 	return returned
 
-def getAddonFanart(category, custom="", default=""):
+def getAddonFanart(category, custom="", default="", urlcheck_=False):
 	#admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
 	#admin2 = xbmc.getInfoLabel('Skin.HasSetting(Admin2)')
 	#admin3 = xbmc.getInfoLabel('Skin.HasSetting(Admin3)')
-	returned = "" ; category_path = "" ; printpoint = "" ; extra = ""
+	returned = "" ; category_path = "" ; printpoint = "" ; extra = "" ; 
 	
 	if custom != "":
-		valid = urlcheck(custom, ping=False, timeout=1)
+		valid = ""
+		if urlcheck_ == True: 
+			valid = urlcheck(custom, ping=False, timeout=1)
 		
-		if 'ok' in valid:
+		if 'ok' in valid or urlcheck_ != True:
 			printpoint = printpoint + "7"
 			returned = custom
 			
@@ -1838,7 +1905,8 @@ def pluginend(admin):
 	'''---------------------------'''
 	text = "mode" + space2 + str(mode) + newline + \
 	"url" + space2 + str(url) + newline + \
-	"name" + space2 + str(name) + space + "IconImage" + space2 + IconImageS + space + "desc" + space2 + str(desc) + newline + \
+	"name" + space2 + str(name) + space + "IconImage" + space2 + IconImageS + newline + \
+	"desc" + space2 + str(desc) + newline + \
 	"viewtype" + space2 + str(viewtype) + space + "fanart" + space2 + str(fanart) + newline + \
 	"params" + space2 + str(params)
 	printlog(title='pluginend', printpoint=printpoint, text=text, level=0, option="")
@@ -1898,7 +1966,7 @@ def pluginend(admin):
 		
 	#1-99 = COMMANDS
 	elif mode == 1:
-		pass
+		getLists(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 2:
 		LocalSearch(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 3:
@@ -3314,4 +3382,26 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 	"url" + space2 + str(url) + newline
 	'''---------------------------'''
 	printlog(title="ManageCustom", printpoint=printpoint, text=text, level=2, option="")
+
+def getLists(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	
+	count = 0
+	setProperty('script.featherence.service_random', "true", type="home")
+	#returned = ActivateWindow('0', addonID, containerfolderpath, 0, wait=True)
+	xbmc.executebuiltin('Container.Refresh') ; xbmc.sleep(2000)
+	dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)')
+	while count < 20 and dialogbusyW and not xbmc.abortRequested:
+		if count == 0: notification('Random-Play','.','',2000)
+		elif count == 4: notification('Random-Play','..','',2000)
+		elif count == 8: notification('Random-Play','...','',2000)
+		xbmc.sleep(500)
+		dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)')
+		count += 1
+	
+	setProperty('script.featherence.service_random', "", type="home")
+	xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=17&value='+addonID+')')
+	#print 'getLists: ' + 'scriptfeatherenceservice_randomL' + space2 + str(scriptfeatherenceservice_randomL)
+
+def CATEGORIES_RANDOM():
+	'''אקראי'''
+	addDir('-' + localize(590),list,1,featherenceserviceicons_path + 'random.png',addonString_servicefeatherence(8).encode('utf-8'),'1',"", "") #אקראי

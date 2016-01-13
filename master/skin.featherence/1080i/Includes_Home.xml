@@ -236,9 +236,9 @@
         <control type="image" description="סמל">
 		  <include>Fade_IconOverlayButton</include>
           <aspectratio>keep</aspectratio>
-		  <height>150</height>
+		  <height>120</height>
 		  <posx>30</posx>
-          <posy>30</posy>
+          <posy>45</posy>
           <texture border="0" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
 		  <visible>!IsEmpty(ListItem.Thumb)</visible>
 		  <width>312</width>
@@ -357,9 +357,9 @@
         </control>
 		<control type="image" description="סמל">
           <aspectratio>keep</aspectratio>
-          <height>180</height>		  
+          <height>140</height>		  
 		  <posx>20</posx>
-          <posy>20</posy>
+          <posy>35</posy>
 		  <texture border="-8" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
 		  <!--<visible>IsEmpty(Listitem.ActualIcon) + !IsEmpty(Listitem.thumb)</visible>-->
 		  <width>332</width>
@@ -461,10 +461,10 @@
         </control>
         <control type="image" description="סמל">
 		  <include>Fade_IconOverlayButton</include>
-          <aspectratio>keep</aspectratio>
-		  <height>150</height>
+		  <aspectratio>keep</aspectratio>
+		  <height>120</height>
 		  <posx>30</posx>
-          <posy>30</posy>
+          <posy>45</posy>
           <texture border="0" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
 		  <visible>!IsEmpty(ListItem.Thumb)</visible>
 		  <width>312</width>
@@ -583,9 +583,9 @@
         </control>
 		<control type="image" description="סמל">
           <aspectratio>keep</aspectratio>
-          <height>180</height>		  
+          <height>140</height>		  
 		  <posx>20</posx>
-          <posy>20</posy>
+          <posy>35</posy>
 		  <texture border="-8" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
 		  <!--<visible>IsEmpty(Listitem.ActualIcon) + !IsEmpty(Listitem.thumb)</visible>-->
 		  <width>332</width>
@@ -692,9 +692,9 @@
 		  <include>Fade_IconOverlayButton</include>
           <include condition="StringCompare(System.Language,Hebrew)">ImageR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ImageL1</include>
-		  <height>70</height>
+		  <height>55</height>
 		  <posx>10</posx>
-          <posy>50</posy>
+          <posy>60</posy>
           <texture border="0" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
 		  <visible>!IsEmpty(ListItem.Thumb)</visible>
 		  <width>190</width>
@@ -818,10 +818,10 @@
 		  <animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
           <include condition="StringCompare(System.Language,Hebrew)">ImageR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ImageL1</include>
-		  <height>70</height>
+		  <height>55</height>
 		  <posx>10</posx>
-          <posy>50</posy>
-		  <texture border="-8" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+          <posy>60</posy>
+		  <texture border="0" diffuse="buttons/colors/ffffffff.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
 		  <!--<visible>IsEmpty(Listitem.ActualIcon) + !IsEmpty(Listitem.thumb)</visible>-->
 		  <width>190</width>
         </control>

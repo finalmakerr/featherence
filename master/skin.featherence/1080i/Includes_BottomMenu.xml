@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-  <include name="MenuDesign_Bottom" description="חלון תחתון -עסוק">
+  <include name="MenuDesign_Bottom" description="חלון תחתון">
     <control type="group">  			
       <posx>640</posx>
       <posy>700</posy>
 	  <animation condition="Skin.String(MenuDesign_Bottom,1)" effect="slide" start="0,0" end="0,-350">Conditional</animation>
       <control type="image" description="מסגרת">
 		<include>Fade_BottomMenuOverlay</include>
+		<include>Border_Common</include>
+		<animation condition="true" effect="fade" start="100" end="90" time="0">Conditional</animation>
 		<height>410</height>
         <width>640</width>
-        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+        <texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
       </control>
 	  <control type="image" description="מסגרת">
 		<visible>Control.IsVisible(1500)</visible>
+		<include>Border_Common</include>
+		<animation condition="true" effect="fade" start="100" end="90" time="0">Conditional</animation>
 		<height>250</height>
 		<posx>20</posx>
 		<posy>80</posy>
         <width>600</width>
-        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+        <texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
       </control>
 	  <control type="grouplist">
 	    <height>370</height>

@@ -517,6 +517,38 @@ msgctxt "#32042
 msgid "Allow auto library update and cleanup.[CR]If enable, the library will be updated once a day and cleaned once a week, respectably.[CR]The action occur when the user idle for one-two hours."
 msgstr "אפשר עדכון וניקוי ספרייה אוטומטי.[CR]אם האפשרות מופעלת יתבצע עדכון ספרייה אחת ליום וניקוי ספרייה אחת לשבוע.[CR]הפעולה מתבצעת במידה ואינך משתמש בקודי למעלה משעה-שעתיים."
 
+msgctxt "#32043
+msgid "Choose your prefered languages of speak.[CR]The contents availability is effected by this setting!"
+msgstr "בחר עדפות שפה.[CR]זמינות התכנים מושפעת מהגדרה זו!"
+
+msgctxt "#32044
+msgid "In order to add more contents, you may visit Featherence Github[CR]and make your changes there.[CR]"
+msgstr "In order to add more contents, you may visit Featherence Github[CR]and make your changes there.[CR]"
+
+msgctxt "#32045
+msgid "If you don't know how to do that, it's quite [B]easy!![/B][CR]and we will be happy to teach you!"
+msgstr "If you don't know how to do that, it's quite [B]easy!![/B][CR]and we will be happy to teach you!"
+
+msgctxt "#32046
+msgid ""
+msgstr ""
+
+msgctxt "#32047
+msgid ""
+msgstr ""
+
+msgctxt "#32048
+msgid ""
+msgstr ""
+
+msgctxt "#32049
+msgid ""
+msgstr ""
+
+msgctxt "#32050
+msgid ""
+msgstr ""
+
 #Message
 msgctxt "#32060
 msgid "Would you like thanks us? Would love to hear you!"
@@ -556,8 +588,8 @@ msgid "Watch varied of channels in %s"
 msgstr "צפה במגוון ערוצי טלוויזיה ב-%s"
 
 msgctxt "#32083
-msgid ""
-msgstr ""
+msgid "in"
+msgstr "ב"
 
 msgctxt "#32084
 msgid ""
@@ -743,10 +775,14 @@ msgid "Dansk"
 msgstr "דנית"
 
 msgctxt "#32934
+msgid "Czech"
+msgstr "צ'כית"
+
+msgctxt "#32935
 msgid ""
 msgstr ""
 
-msgctxt "#32935
+msgctxt "#32999
 msgid ""
 msgstr ""
 

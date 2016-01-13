@@ -6,7 +6,7 @@
 	 <!--<animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !IsEmpty(Control.GetLabel(11155))" effect="slide" start="0,0" end="0,552" delay="0" time="700" reversible="false">Conditional</animation>-->
 	 <animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,552" delay="3000" time="700" reversible="false">Conditional</animation> <!--+ IsEmpty(Control.GetLabel(11155)) -->
 	 
-	 <animation description="No Fanart" condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-252" delay="3000" time="700" reversible="false">Conditional</animation>
+	 <animation description="No Fanart" condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) | Skin.HasSetting(background2)] + !Container.OnNext + !Container.OnPrevious + !Player.HasVideo + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-252" delay="3000" time="700" reversible="false">Conditional</animation>
    </include>
    
    <include name="Slide1.5" description="Backgrounds-Home">
@@ -19,7 +19,7 @@
 	 <!--<animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !IsEmpty(Control.GetLabel(11155)) " effect="zoom" end="100,47" delay="0" time="700" reversible="false">Conditional</animation>-->
 	 <animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="100,47" delay="3000" time="700" reversible="false">Conditional</animation> <!--+ IsEmpty(Control.GetLabel(11155)) -->
 	 
-	 <animation description="No Fanart" condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container.OnNext + !Container.OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="100,150" delay="3000" time="700" reversible="false">Conditional</animation>
+	 <animation description="No Fanart" condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) | Skin.HasSetting(background2)] + !Container.OnNext + !Container.OnPrevious + !Player.HasVideo + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="100,150" delay="3000" time="700" reversible="false">Conditional</animation>
 	 <!--<animation description="50 Video" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31010])] + Player.HasVideo" effect="zoom" end="100,120" time="700" reversible="false">Conditional</animation>-->
 	 
    </include>
@@ -117,14 +117,15 @@
       <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
     </control>
   </include>
-   <include name="Fade6">
+  <include name="Fade6">
      <animation type="WindowOpen" reversible="false">
 	   <effect type="fade" time="200"/>
 	 </animation>
      <animation type="WindowClose" reversible="false">
 	   <effect type="fade" time="200"/>
 	 </animation>
-   </include>
+  </include>
+
   <include name="Fade7">
     <animation condition="System.IdleTime(3) + !Window.IsVisible(DialogVideoInfo.xml) + !Container().Scrolling + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | Control.IsVisible(50) | StringCompare(Container.Viewmode,$LOCALIZE[31010]) | StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31015]) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsActive(DialogFullScreenInfo.xml)]" effect="fade" start="100" end="40" time="1000">Conditional</animation>
 	<animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="fade" start="100" end="0" time="1000">Conditional</animation>

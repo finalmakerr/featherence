@@ -350,7 +350,7 @@
 	<value description="שם הפרק-בית" condition="[Window.IsActive(home) + Control.HasFocus(312)] + !IsEmpty(Container(312).ListItem.Property(title))">[B]$INFO[Window(Home).Property(RandomMovie.2.Title)][/B]</value>-->
 	<value condition="Window.IsVisible(DialogAddonInfo.xml) + !IsEmpty(ListItem.Property(Addon.Disclaimer))">$INFO[ListItem.Property(Addon.Disclaimer)]</value>
 	<value condition="Window.IsVisible(MyWeather.xml) + !IsEmpty(Container(50).ListItem.Label2) | Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">$INFO[Window(Weather).Property(Current.Condition)]   |   $INFO[Window(Weather).Property(Day0.LowTemp)] - $INFO[Window(Weather).Property(Day0.HighTemp)]</value>
-	<value description="מספר פרקים שנצפו" condition="Container.Content(tvshows) | Container.Content(seasons)">$LOCALIZE[21457] $INFO[ListItem.Property(WatchedEpisodes)] $LOCALIZE[20163] $INFO[ListItem.Property(NumEpisodes)]</value>
+	<value description="מספר פרקים שנצפו" condition="!SubString(Container.FolderPath,plugin://) + [Container.Content(tvshows) | Container.Content(seasons)]">$LOCALIZE[21457] $INFO[ListItem.Property(WatchedEpisodes)] $LOCALIZE[20163] $INFO[ListItem.Property(NumEpisodes)]</value>
 	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItem(0).Label2)">$INFO[Container(11).ListItem(0).Label2]</value>
 	<value condition="!IsEmpty(Container(50).ListItem.Label2) + !SubString(Container(50).ListItem.Label2,0 B) + !Container.Content(movies)">$INFO[Container(50).ListItem.Label2]</value>
 	
@@ -416,7 +416,7 @@
 	<value condition="!IsEmpty(ListItem.ChannelNumber)">$INFO[ListItem.ChannelNumber]</value>
 	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
 	<value condition="!IsEmpty(ListItem.Label2) + !StringCompare(ListItem.Label2,0 B) + !Window.IsVisible(MyVideoNav.xml)">$INFO[ListItem.Label2]</value>
-	<value condition="[!IsEmpty(Container.ListItemNoWrap(-1).Label2) | !IsEmpty(Container.ListItemNoWrap(1).Label2)] + !Window.IsVisible(MyVideoNav.xml)">•</value>
+	<value condition="[!IsEmpty(Container.ListItemNoWrap(-1).Label2) | !IsEmpty(Container.ListItemNoWrap(1).Label2)] + !Window.IsVisible(MyVideoNav.xml)"></value>
   </variable>
   <variable name="VideoInformation4">
 	<value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows) | StringCompare(Container.FolderName,Genesis)]">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[33054]</value>

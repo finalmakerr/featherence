@@ -370,6 +370,11 @@
         </control>
   </include>
    
+   <include name="Border_Common">
+    <bordertexture colordiffuse="ff000000" border="40">buttons/ButtonE0.png</bordertexture>
+	<bordersize>1</bordersize>
+  </include>
+  
    <include name="Control_Pos1" description="50/55/58">
 	 <posx>0</posx>
 	 <posy>0</posy>

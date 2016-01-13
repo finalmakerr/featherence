@@ -165,10 +165,22 @@ elif mode == 16:
 
 elif mode == 17:
 	'''------------------------------
-	---?-----------------------------
+	---Random-Play-------------------
 	------------------------------'''
-	name = "?"
-	mode17(admin, name, printpoint)
+	name = "Random-Play"
+	import urllib
+	value2 = str(scriptfeatherenceservice_randomL).replace('|',",")
+
+	xbmc.executebuiltin("XBMC.RunPlugin(plugin://%s/?url=%s&mode=5&name=&iconimage=&descs&num=&viewtype=&fanart=)"% (value, urllib.quote_plus(value2)))
+	
+	for x in range(1,6):
+		setProperty('script.featherence.service_random'+str(x), "", type="home")
+	text = "value" + space2 + str(value) + newline + \
+	'scriptfeatherenceservice_randomL' + space2 + str(scriptfeatherenceservice_randomL) + newline + \
+	'value2' + space2 + str(value2)
+	
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	#mode17(admin, name, printpoint)
 	'''---------------------------'''
 
 elif mode == 18:
@@ -1743,17 +1755,17 @@ elif mode >= 200 and mode <= 249:
 								x = iconT.get('icon'+str(i))
 								x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
 								if x2 != "":
-									y, y2 = GeneratePath(x2)
+									y, y2, y3 = GeneratePath(x2)
 									copyfiles(x2, y2, chmod="", mount=False)
-									if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + to_utf8(y2) ; custommediaL.append(y)
+									if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3) ; custommediaL.append(y)
 									else: formula = formula + newline + 'icon'+str(i)+'=0' + to_unicode(x)
 									#print 'test123 ' + 'x' + space2 + str(x) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
 								x = backgroundT.get('background'+str(i))
 								x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
 								if x2 != "":
-									y, y2 = GeneratePath(x2)
+									y, y2, y3 = GeneratePath(x2)
 									copyfiles(x2, y2, chmod="", mount=False)
-									if os.path.exists(y2): formula = formula + newline + 'background'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
+									if os.path.exists(y2): formula = formula + newline + 'background'+str(i)+'=0' + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3) ; custommediaL.append(y)
 									else: formula = formula + newline + 'background'+str(i)+'=0' + str(x)
 									#print 'test123 ' + 'x' + space2 + str(x) + newline + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'skin_backgrounds_path' + space2 + str(skin_backgrounds_path)
 						for i in range(90,120):
@@ -1774,18 +1786,19 @@ elif mode >= 200 and mode <= 249:
 									x = iconT.get('icon'+str(i))
 									x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
 									if x2 != "":
-										y, y2 = GeneratePath(x2)
+										y, y2, y3 = GeneratePath(x2)
 										copyfiles(x2, y2, chmod="", mount=False)
-										if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
+										#if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + to_utf8(y2) ; custommediaL.append(y)
+										if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3) ; custommediaL.append(y)
 										else: formula = formula + newline + 'icon'+str(i)+'=0' + str(x)
 										#print 'test123 ' + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
 									else: extra = extra + newline + 'icon not exists!' + space + 'x' + space2 + str(x) + space + 'x2' + space2 + str(x2)		
 									x = backgroundT.get('background'+str(i))
 									x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
 									if x2 != "":
-										y, y2 = GeneratePath(x2)
+										y, y2, y3 = GeneratePath(x2)
 										copyfiles(x2, y2, chmod="", mount=False)
-										if os.path.exists(y2): formula = formula + newline + 'background'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
+										if os.path.exists(y2): formula = formula + newline + 'background'+str(i)+'=0' + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3) ; custommediaL.append(y)
 										else: formula = formula + newline + 'background'+str(i)+'=0' + str(x)
 										#print 'test123 ' + 'x' + space2 + str(x) + newline + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'skin_backgrounds_path' + space2 + str(skin_backgrounds_path)
 									else: extra = extra + newline + 'fanart not exists!' + space + 'x' + space2 + str(x) + space + 'x2' + space2 + str(x2)
@@ -1801,9 +1814,9 @@ elif mode >= 200 and mode <= 249:
 											x = icon_T.get('icon'+str(i)+'_'+str(i2))
 											x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
 											if x2 != "":
-												y, y2 = GeneratePath(x2)
+												y, y2, y3 = GeneratePath(x2)
 												copyfiles(x2, y2, chmod="", mount=False)
-												if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + str(y2) ; custommediaL.append(y)
+												if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + 'special://userdata/addon_data/script.featherence.service/media/' + str(y3) ; custommediaL.append(y)
 												else: formula = formula + newline + 'icon'+str(i)+'=0' + str(x)
 												#print 'test123 ' + 'x' + space2 + str(x) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
 												'''---------------------------'''
@@ -1838,6 +1851,16 @@ elif mode >= 200 and mode <= 249:
 							formula = formula + newline + y+'=0' + str(x)
 							'''---------------------------'''
 						
+						for y in list1l:
+							x = xbmc.getInfoLabel('Skin.HasSetting('+y+')')
+							formula = formula + newline + y+'=1' + str(x)
+							'''---------------------------'''
+						
+						for y in list0l:
+							x = xbmc.getInfoLabel('Skin.String('+y+')')
+							formula = formula + newline + y+'=0' + str(x)
+							'''---------------------------'''
+							
 						if returned2 == 1: filename = ""
 						else:
 							filename = str(list2[returned2])
@@ -1905,7 +1928,7 @@ elif mode >= 200 and mode <= 249:
 									x1 = x1.replace("=","")
 									x2 = x2.replace("=","")
 									x2 = x2.replace("\n","")
-									if x2 != "" and x2 != None:
+									if x2 != None:
 										setSkinSetting('0', str(x1), str(x2))
 									
 								elif "=1" in line:

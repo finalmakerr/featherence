@@ -2292,8 +2292,12 @@ if property_subbuttonid_ != "" or property_temp != "" or property_temp2 != "" or
 	off_T.update(off119_T)
 	
 if xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)') or 1 + 1 == 2:
-	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign'] #NO RANDOM SUPPORT
-	list0c = ['MenuColor', 'SubMenuMarkColor', 'TopInformationColor', 'TopVideoInformationColor', 'MainBackgroundColor', 'TopBackgroundColor', 'IconUnFocusColor', 'IconFocusColor', 'KeyboardMainColor']
+	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos'] #NO RANDOM SUPPORT
+	list0c = ['MenuColor', 'SubMenuMarkColor', 'TopInformationColor', 'TopVideoInformationColor', 'MainBackgroundColor', 'TopBackgroundColor', 'IconUnFocusColor', 'IconFocusColor', 'KeyboardMainColor', 'SelectedFrameColor', 'SubMenuMarkColor']
 	list0c2 = ['MainBackgroundTexture', 'TopBackgroundTexture'] #NO RANDOM SUPPORT
-	list0o = ['IconOverlayButton', 'MenuButtonsOverlay', 'LeftMenuOverlay', 'BottomMenuOverlay', 'CenterMenuOverlay', 'TopVideoInformationOverlay', 'TopMainBackgroundOverlay', 'TopInformationOverlay', 'MainBackgroundOverlay', 'BackgroundOverlay', 'Background2Overlay']
-	list1 = ['SelectionMarker', 'SelectionMarker2', 'ShadowButton', 'OverlayButton', 'background', 'BevelButton', 'StrokeButton', 'HideTopMainBackground']
+	list0o = ['IconOverlayButton', 'MenuButtonsOverlay', 'LeftMenuOverlay', 'BottomMenuOverlay', 'CenterMenuOverlay', 'TopVideoInformationOverlay', 'TopMainBackgroundOverlay', 'TopInformationOverlay', 'MainBackgroundOverlay', 'BackgroundOverlay', 'Background2Overlay', 'IconUnFocusColor']
+	list1 = ['SelectionMarker', 'SelectionMarker2', 'ShadowButton', 'OverlayButton', 'background', 'BevelButton', 'StrokeButton', 'HideTopMainBackground', 'FixedUnFocusButtonsTransperancy', 'HomeFanartHalfScreen', 'HideTopMainBackground']
+	
+	'''left menu'''
+	list0l = ['MoviesTVCoversOverlay']
+	list1l = ['AutoView', 'FullFanartBackground2', 'background2', 'ShowDVDCases', 'ShowDVDdisc', 'ShowTopVideoInformation', 'FullFanartTopVideoInformation', 'FullFanartZoomOut', 'SelectedZoom', 'SelectedFrame', 'View50_Plus', 'View50_Plus2', 'Show_Rating', 'AlwaysFanart', ]

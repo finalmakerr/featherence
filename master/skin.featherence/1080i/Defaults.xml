@@ -107,7 +107,7 @@
     <aligny>center</aligny>
     <disabledcolor>grey</disabledcolor>	
     <focusedcolor>yellow</focusedcolor>	
-	<font>size33</font>	
+	<font>size34</font>	
     <height>75</height>
 	<hinttext>...</hinttext>
     <label>-</label>
@@ -118,7 +118,7 @@
 	<shadowcolor>shadow</shadowcolor>	
     <textoffsetx>20</textoffsetx>
     <textcolor>white</textcolor>
-    <texturenofocus border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
+    <texturenofocus border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texturenofocus>
 	<texturefocus border="40">buttons/ButtonE.png</texturefocus>
 	<width>880</width>
   </default>
@@ -244,7 +244,7 @@
     <font>size33</font>
     <textcolor>white2</textcolor>
     <focusedcolor>yellow</focusedcolor>
-    <selectedcolor>white2</selectedcolor>
+    <selectedcolor>yellow</selectedcolor>
     <disabledcolor>grey</disabledcolor>
     <textoffsetx>20</textoffsetx>
   </default>

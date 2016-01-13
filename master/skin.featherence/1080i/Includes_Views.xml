@@ -67,11 +67,11 @@
 		<include>ViewDesign_50_FocusedLayout</include>
 	  </focusedlayout>	
 	  
-	  <itemlayout description="(כללי)" condition="!Skin.HasSetting(View50_Plus)" height="80" width="480">
+	  <itemlayout description="(כללי)" condition="!Skin.HasSetting(View50_Plus)" height="85" width="480">
 		<include>ViewDesign_50_ItemLayout</include>
 		<include>View50_Plus</include>
 	  </itemlayout>
-	  <focusedlayout description="(כללי)" condition="!Skin.HasSetting(View50_Plus)" height="80" width="480">    
+	  <focusedlayout description="(כללי)" condition="!Skin.HasSetting(View50_Plus)" height="85" width="480">    
 		<include>ViewDesign_50_FocusedLayout</include>
 		<include>View50_Plus</include>
 	  </focusedlayout>	
@@ -267,7 +267,9 @@
 	  <include condition="!StringCompare(System.Language,Hebrew)">ImageR1</include>
 	  <texture colordiffuse="grey2">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
 	  <visible>!ListItem.HasEpg</visible>
-	  <visible>[!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))] + IsEmpty(Control.GetLabel(11153)) + !StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	  <visible>[!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))] + !StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	  <visible description="Label2">![!IsEmpty(ListItem.Label2) + !StringCompare(ListItem.Label2,0 B) + !Window.IsVisible(MyVideoNav.xml)]</visible>
+	  <visible description="Progress">![IsEmpty(ListItem.ChannelNumber) + !IsEmpty(ListItem.Progress)]</visible>
 	  <visible>![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)]]</visible>
 	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
     </control>
@@ -520,7 +522,7 @@
           <height>825</height>
 		  <include>4ways</include>
 		  <viewtype label="31012">Grid</viewtype>
-		  <itemlayout description="(Seasons/Episodes)" height="100" width="960"> <!--SubString(Container.FolderName,Mako)-->
+		  <itemlayout description="(Seasons/Episodes)" condition="!IsEmpty(Control.GetLabel(11155))" height="100" width="960"> <!--SubString(Container.FolderName,Mako)-->
 			<control type="image" description="מסגרת">
 			  <include>Fade_MenuButtonsOverlay</include>
               <posx>760</posx>
@@ -580,7 +582,7 @@
 			  </control>
 			</control>
 		  </itemlayout>
-          <focusedlayout description="(Seasons/Episodes)" height="100" width="960">    
+          <focusedlayout description="(Seasons/Episodes)" condition="!IsEmpty(Control.GetLabel(11155))" height="100" width="960">    
 			<include>AutoView</include>
 			<include>onfocus_SetProperty_ListItem</include>
 			<include>onfocus_SetProperty_TopVideoInformation</include>
@@ -1003,7 +1005,7 @@
 			<texture background="false">$VAR[fanart]</texture>
 			<aspectratio align="top">keep</aspectratio>
 	    </control>
-        <control type="fixedlist" id="54">
+        <control type="panel" id="54">
           <posx>20</posx>
           <posy>565</posy>
           <width>1900</width>

@@ -204,11 +204,11 @@ def GeneratePath(x2):
 		y__ = y_[-2]
 		y = to_unicode(y__) + '_' + to_unicode(y)
 	y2 = os.path.join(featherenceserviceaddondata_media_path, to_unicode(y))
-	
+	y3 = to_unicode(y)
 	text = 'x2' + space2 + to_utf8(x2) + space + 'y' + space2 + to_utf8(y) + space + 'y_' + space2 + str(y_) + space + 'y__' + space2 + to_utf8(y__) + space + 'y2' + space2 + to_utf8(y2) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 	
-	return y, y2
+	return y, y2, y3
 	
 def ExtractAll(source, output):
 	name = 'ExtractAll' ; printpoint = "" ; TypeError = "" ; extra = ""
@@ -871,6 +871,22 @@ def CleanString(output, filter=[]):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	return output4
+
+def CleanString2(x):
+	'''clean for Random-Play'''
+	name = 'CleanString2' ; printpoint = ""
+	x2 = str(x)
+	x2 = x2.replace(' ','')
+	x2 = x2.replace(' ','')
+	x2 = x2.replace("'",'')
+	x2 = x2.replace("[",'')
+	x2 = x2.replace("]",'')
+	x2 = x2.replace(",",'|')
+		
+	text = "x" + space2 + str(x) + newline + "x2" + space2 + str(x2)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	'''---------------------------'''
+	return x2
 	
 def checkDialog(admin):
 	'''------------------------------
@@ -2101,7 +2117,9 @@ def copyfiles(source, target, chmod="", mount=False):
 					shutil.copy(source, target)
 					#terminal('cp -rf '+source+' '+target+'',name + space2 + source + space5 + target) ; printpoint = printpoint + "3"
 				
-		except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
+		except Exception, TypeError:
+			try: extra = extra + newline + "TypeError" + space2 + str(TypeError)
+			except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + 'Unknown'
 	else:
 		if systemplatformandroid:
 			import shutil
@@ -2754,10 +2772,10 @@ class Custom1000_Dialog(xbmcgui.Window):
 	  
 	  
 def ActivateWindow(custom, addon, url, return0, wait=True):
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
+	name = 'ActivateWindow' ; printpoint = "" ; count = 0 ; returned = ""
 	containernumitems = ""
-	printpoint = ""
-	count = ""
+	
+	
 	if return0 == 0: return0 = ',return'
 	else: return0 = ""
 	return0 = str(return0)
@@ -2769,7 +2787,7 @@ def ActivateWindow(custom, addon, url, return0, wait=True):
 		printpoint = printpoint + "2"
 		containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
 		containernumitems = xbmc.getInfoLabel('Container.NumItems')
-		count = 0
+		
 		while count < 10 and not addon in containerfolderpath and not xbmc.abortRequested: #or containernumitems == "0"
 			count += 1
 			xbmc.sleep(300)
@@ -2785,12 +2803,19 @@ def ActivateWindow(custom, addon, url, return0, wait=True):
 	else: printpoint = printpoint + "8"
 	
 	ViewSetFocus(admin)
-	print printfirst + "ActivateWindow_LV" + printpoint + space + "addon" + space2 + addon + space + "url" + space2 + url + space + "containernumitems" + space2 + containernumitems + space + "count" + space2 + str(count)
-	if "7" in printpoint: return "ok"
-	elif "5" in printpoint: return "ok2"
-	else: return ""
+	
+	if "7" in printpoint: returned = "ok"
+	elif "5" in printpoint: returned = "ok2"
+	else: returned = ""
+	
+	text = "addon" + space2 + addon + space + "containernumitems" + space2 + containernumitems + space + "count" + space2 + str(count) + newline + \
+	"url" + space2 + url
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+	
+	return returned
 	
 def ViewSetFocus(admin):
+	name = 'ViewSetFocus' ; printpoint = ""
 	containerviewmode = xbmc.getInfoLabel('Container.Viewmode')
 	if containerviewmode == "addonsPT" or containerviewmode == "GeneralPT": viewmode = 50
 	elif containerviewmode == "romPT": viewmode = 55
@@ -2799,7 +2824,8 @@ def ViewSetFocus(admin):
 	else: viewmode = ""
 	if viewmode != "": xbmc.executebuiltin('Control.SetFocus('+ str(viewmode) +')')
 	
-	if admin: print printfirst + "ViewSetFocus" + space + "containerviewmode" + space2 + containerviewmode + space + "viewmode" + space2 + str(viewmode)
+	text = "containerviewmode" + space2 + containerviewmode + space + "viewmode" + space2 + str(viewmode)
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
 
 def printlog(title="", printpoint="", text="", level=0, option=""):

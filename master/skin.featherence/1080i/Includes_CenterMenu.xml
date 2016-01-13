@@ -55,6 +55,7 @@
       <posy>340</posy>
 	  <animation condition="Window.IsVisible(DialogKeyboard.xml)" effect="slide" start="0,0" end="35,-345" time="0,0">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogKeyboard.xml)" effect="zoom" start="100,100" end="91,107" time="0,0">Conditional</animation>
+	  <visible>!SubString(Control.GetLabel(311),password) + !SubString(Control.GetLabel(311),$LOCALIZE[733]) + Window.IsVisible(DialogKeyboard.xml) | !Window.IsVisible(DialogKeyboard.xml)</visible>
       <control type="image" description="מסגרת">
         <include>Fade_CenterMenuOverlay</include>
 		<include>Border_Common</include>

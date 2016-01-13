@@ -159,6 +159,9 @@ RunScript(script.featherence.service,,?mode=25)
 	SEARCH YOUTUBE
 	OPEN: MODE 3 | URL = text
 	FEATHERENCE: MODE 5/6/17 | URL = &youtube_se=text
+	TIP: You may use:
+	"&videoDuration=text&" | text = short/medium/long
+	"&videoDefinition=text&" | text = standard/high
 	```
 	
 	```
@@ -217,6 +220,12 @@ RunScript(script.featherence.service,,?mode=25)
 	TVMODE
 	METHOD 1: MODE 17 | URL = <anything with '&xxx=text'>
 	TIP: URL must be a list []
+	```
+	
+	```
+	RANDOM PLAY ALL (ANY FOLDER + SUBFOLDERS IN CURRENT CONTAINER)
+	METHOD 1: MODE 1
+	TIP: Simply use: CATEGORIES102A()
 	```
 	
 # **Links:**

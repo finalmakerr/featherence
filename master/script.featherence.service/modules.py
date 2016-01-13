@@ -3193,6 +3193,13 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "Current XML" + space2 + xbmc.getInfoLabel('Window.Property(xmlfile)')
 			message = message + newline + "TEMP" + space2 + property_temp
 			message = message + newline + "TEMP2" + space2 + property_temp2
+			message = message + newline + "scriptfeatherenceservice_random" + space2 + scriptfeatherenceservice_random
+			message = message + newline + "scriptfeatherenceservice_random1" + space2 + scriptfeatherenceservice_random1
+			message = message + newline + "scriptfeatherenceservice_random2" + space2 + scriptfeatherenceservice_random2
+			message = message + newline + "scriptfeatherenceservice_random3" + space2 + scriptfeatherenceservice_random3
+			message = message + newline + "scriptfeatherenceservice_random4" + space2 + scriptfeatherenceservice_random4
+			message = message + newline + "scriptfeatherenceservice_random5" + space2 + scriptfeatherenceservice_random5
+			message = message + newline + "scriptfeatherenceservice_randomL" + space2 + str(scriptfeatherenceservice_randomL)
 			message = message + newline + '---------------------------'
 			message = message + newline + "Button.ID" + space2 + property_buttonid
 			message = message + newline + "Button.ID_" + space2 + property_buttonid_

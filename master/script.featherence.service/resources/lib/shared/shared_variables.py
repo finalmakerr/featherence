@@ -423,6 +423,18 @@ ACTION_SELECT_ITEM = 7
 windowhomeproperty_moviescount = xbmc.getInfoLabel('Window(Home).Property(Movies.Count)')
 windowhomeproperty_tvshowscount = xbmc.getInfoLabel('Window(Home).Property(TVShows.Count)')
 scriptfeatherenceservice_downloading = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
+scriptfeatherenceservice_random = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random)')
+scriptfeatherenceservice_random1 = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random1)')
+scriptfeatherenceservice_random2 = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random2)')
+scriptfeatherenceservice_random3 = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random3)')
+scriptfeatherenceservice_random4 = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random4)')
+scriptfeatherenceservice_random5 = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random5)')
+scriptfeatherenceservice_randomL = []
+if scriptfeatherenceservice_random1 != "": scriptfeatherenceservice_randomL.append(scriptfeatherenceservice_random1)
+if scriptfeatherenceservice_random2 != "": scriptfeatherenceservice_randomL.append(scriptfeatherenceservice_random2)
+if scriptfeatherenceservice_random3 != "": scriptfeatherenceservice_randomL.append(scriptfeatherenceservice_random3)
+if scriptfeatherenceservice_random4 != "": scriptfeatherenceservice_randomL.append(scriptfeatherenceservice_random4)
+if scriptfeatherenceservice_random5 != "": scriptfeatherenceservice_randomL.append(scriptfeatherenceservice_random5)
 '''---------------------------'''
 
 

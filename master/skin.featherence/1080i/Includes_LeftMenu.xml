@@ -102,7 +102,7 @@
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[20445] $LOCALIZE[244]</label>
-		  <enable>!Skin.HasSetting(ShowTopVideoInformation)</enable>
+		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(background2)</enable>
 		  <selected>!Skin.HasSetting(FullFanartTopVideoInformation)</selected>
 		  <onclick>Skin.ToggleSetting(FullFanartTopVideoInformation)</onclick>
 		  <!--<onclick>ActivateWindow(Home.xml)</onclick>
@@ -115,7 +115,7 @@
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[20445] $LOCALIZE[244] - ZOOM OUT</label>
-		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(FullFanartTopVideoInformation)</enable>
+		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(background2)</enable>
 		  <selected>Skin.HasSetting(FullFanartZoomOut)</selected>
 		  <onclick>Skin.ToggleSetting(FullFanartZoomOut)</onclick>
 		  <!--<onclick>ActivateWindow(Home.xml)</onclick>
@@ -202,7 +202,7 @@
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[20445] $LOCALIZE[34122]</label>
-		  <enable></enable>
+		  <enable>!Skin.HasSetting(background2)</enable>
 		  <selected>Skin.HasSetting(AlwaysFanart)</selected>
 		  <onclick>Skin.ToggleSetting(AlwaysFanart)</onclick>
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
@@ -404,7 +404,7 @@
 	</control>
 	<include>AutoViewSettingsButton</include>
 	<include>openViewSettings9001</include>
-	<include condition="!StringCompare(Container.Viewmode,$LOCALIZE[31013])">CommonLeftMenuButtons</include>
+	<include>CommonLeftMenuButtons</include>
 	<control type="togglebutton" id="20" description="Scanning library">
 	  <include>SideMenuCommon</include>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
@@ -466,7 +466,8 @@
 		<onright condition="Control.IsVisible(5)">5</onright>
 		<onright>noop</onright>
         <onup>3</onup>
-        <ondown>30</ondown>
+        <!--<ondown condition="Control.IsVisible(30)">30</ondown>-->
+		<ondown>3</ondown>
 		<pagecontrol>60</pagecontrol>
 		<posy>70</posy>
 		<itemlayout description="()" height="60" width="870">	
@@ -1232,6 +1233,7 @@
 	  <include>SideMenuCommon</include>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31012]) + IsEmpty(Control.GetLabel(11155))">SendClick(2)</onclick>
 	  <font>size28</font>
 	  <visible>!IsEmpty(Control.GetLabel(2))</visible>
 	</control>
@@ -1268,7 +1270,7 @@
 		<label>$LOCALIZE[20445] $LOCALIZE[305]</label>
 	    <selected>!Skin.HasSetting(background2)</selected>
 	    <onclick>Skin.ToggleSetting(background2)</onclick>
-		<visible>!StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart) | !Control.IsVisible(7013)</visible>
+		<!--<visible>!StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart) | !Control.IsVisible(7013)</visible>-->
 	  </control>
   </include>
   <include name="openViewSettings9001">
