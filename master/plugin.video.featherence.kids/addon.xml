@@ -9,10 +9,10 @@
   </extension>
   <extension point="xbmc.addon.metadata">
 	<platform>all</platform>
-    <summary lang="en">_</summary>
-	<summary lang="he">_</summary>
+    <summary lang="en">Worldwide kids addon</summary>
+	<summary lang="he">הרחבת ילדים בינלאומית</summary>
     <description lang="en">Features:
-- Smart TV Mode.
+- Smart TV Mode and Randomise Play.
 - Smart Interface allow the users to easily create thier own addon from within Kodi and share it with others.
 - Customized Fanart for each button.
 - Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox..

@@ -6,19 +6,23 @@ WIP - WORK IN PROGRESS
 - Update English language.
 
 ------------------------
-Featherence Kids v0.1.7 (xx-01-16)
+Featherence Kids v0.2.0 (14-01-16)
 ------------------------
-- Added new method of choosing your main and secondary prefered languages.
+- Added new method of choosing up to 3 prefered languages.
 - Added description to all buttons (English & Hebrew).
 - Added thumbnails for main and sub categories.
+- Added fanart for some contents.
 - Added TV Mode support for over 100 series.
+- TV mode now occur also inside container.
 - Added thousands of new videos.
 - Added SdarotTV search.
 - Update English translation.
 - Update Hebrew translation.
 - Update all links to be available per choosens languages only.
+- Major bugs fix.
 - Major resorting of contents.
 - Major update of broken links.
+- Major update random play method.
 - Reduce addon size.
 
 ------------------------

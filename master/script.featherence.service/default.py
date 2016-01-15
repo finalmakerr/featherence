@@ -1820,9 +1820,9 @@ elif mode >= 200 and mode <= 249:
 											if x2 != "":
 												y, y2, y3 = GeneratePath(x2)
 												copyfiles(x2, y2, chmod="", mount=False)
-												if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + 'special://userdata/addon_data/script.featherence.service/media/' + str(y3) ; custommediaL.append(y)
-												else: formula = formula + newline + 'icon'+str(i)+'=0' + str(x)
-												#print 'test123 ' + 'x' + space2 + str(x) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
+												if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'_'+str(i2)+'=0' + 'special://userdata/addon_data/script.featherence.service/media/' + str(y3) ; custommediaL.append(y)
+												else: formula = formula + newline + 'icon'+str(i)+'_'+str(i2)+'=0' + str(x)
+												print 'test123 ' + str('icon'+str(i)+'_'+str(i2)) + space + 'x' + space2 + str(x) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
 												'''---------------------------'''
 								else: extra = extra + newline + 'label not exists!' + space + 'x' + space2 + str(x)
 							else: extra = extra + newline + 'id not exists!' + space + 'x' + space2 + str(x)
@@ -1977,10 +1977,11 @@ elif mode >= 200 and mode <= 249:
 							Custom1000(str(list[returned]),100,str(list2[returned2]),3)
 				
 				if "V" in printpoint:
-					xbmc.executebuiltin('Action(Back)') ; xbmc.sleep(20000)
-					print 'BOOOO'
-					ReloadSkin(admin)
-					xbmc.executebuiltin('ActivateWindow(1173)')
+					#mode215('_',admin,'','') ; xbmc.sleep(3000)
+					xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_)')
+					xbmc.executebuiltin('Action(Back)')
+					#ReloadSkin(admin)
+					#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=5)')
 					'''---------------------------'''
 				else:
 					pass
@@ -1988,11 +1989,11 @@ elif mode >= 200 and mode <= 249:
 		text = "path" + space2 + str(path) + newline + \
 		"list" + space2 + str(list) + newline + \
 		"list2" + space2 + str(list2) + newline + \
-		"file" + space2 + str(file) + newline + \
-		"filename" + space2 + str(filename) + newline + \
+		"file" + space2 + to_utf8(file) + newline + \
+		"filename" + space2 + to_utf8(filename) + newline + \
 		"formula" + space2 + str(formula) + space + "formula_" + space2 + str(formula_) + newline + \
 		"custommediaL" + space2 + str(custommediaL) + newline + \
-		"extra" + space2 + str(extra)
+		"extra" + space2 + to_utf8(extra)
 		printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 		'''---------------------------'''
 	

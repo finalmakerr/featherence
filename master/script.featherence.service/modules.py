@@ -872,6 +872,8 @@ def mode32(value, admin, name, printpoint):
 			xbmc.sleep(500)
 			dp.close
 	
+	elif value == '5':
+		ReloadSkin(admin)
 	elif value == '40':
 		addon = 'plugin.video.featherence.kids'
 		if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
@@ -940,7 +942,7 @@ def mode40(value, admin, name, printpoint):
 		xbmc.executebuiltin('Action(Back)') ; xbmc.sleep(500) ; customhomecustomizerW = xbmc.getCondVisibility('Window.IsVisible(CustomHomeCustomizer.xml)')
 		if not customhomecustomizerW: xbmc.executebuiltin('ActivateWindow(1171)')
 
-	printlog(title=name, printpoint=printpoint, text=extra2, level=0, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 			
 def mode41(admin, name, printpoint):
 	'''------------------------------
@@ -3051,7 +3053,7 @@ def mode214(value, admin, name, printpoint):
 	
 def mode215(value, admin, name, printpoint):
 	from variables2 import *
-	extra2 = ""
+	extra2 = "" ; id = ""
 				
 	if value != "": notification_common("2")
 			
@@ -3381,7 +3383,7 @@ def mode232(value, admin, name, printpoint):
 			elif custom1138W:	
 				'''Sub Action'''
 				printpoint = printpoint + "x2"
-				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=False&showNone=True&skinLabel=label'+id1+'&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]&skinThumbnail=icon'+id1+')')
+				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinLabel=label'+id1+'&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]&skinThumbnail=icon'+id1+')')
 				'''---------------------------'''
 			else: printpoint = printpoint + "8"	
 			
@@ -3408,8 +3410,11 @@ def mode232(value, admin, name, printpoint):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 			
 def mode233(value, admin, name, printpoint):
-	x = "" ; y = property_buttonid_
-	if '0' in value: y = property_subbuttonid_
+	printpoint = ""
+	x = "" ; y = property_buttonid_ ; path = ""
+	if '0' in value:
+		y = property_subbuttonid_
+		value = value.replace('0',"",1)
 	
 	if '1' in value:
 		'''Add-Fanart'''
@@ -3427,35 +3432,42 @@ def mode233(value, admin, name, printpoint):
 		yeslabel=localize(20015)
 	
 	if x != "":
+		printpoint = printpoint + '1'
 		returned = dialogyesno(str(name), addonString_servicefeatherence(31).encode('utf-8'), nolabel=nolabel, yeslabel=yeslabel)
 		if returned == 'ok':
-			returned2, value = getRandom(0, min=0, max=100, percent=40)
+			printpoint = printpoint + '2'
+			returned2, value2 = getRandom(0, min=0, max=100, percent=40)
 			if returned2 == 'ok': notification('O_o???','Copy & Paste an image URL','',4000)
 			'''remote'''
-			value = dialogkeyboard("", yeslabel, 0, "1", "", "")
-			if value != "skip":
+			url = dialogkeyboard("", yeslabel, 0, "1", "", "")
+			if url != "skip":
 				from shared_modules3 import urlcheck
-				returned2 = urlcheck(value, ping=False)
+				returned2 = urlcheck(url, ping=False)
 				if returned2 != "ok":
 					notification("URL Error", "Try again..", "", 2000)
 					header = "URL Error"
-					message = "Examine your URL for errors:" + newline + '[B]' + str(value) + '[/B]'
+					message = "Examine your URL for errors:" + newline + '[B]' + str(url) + '[/B]'
 					diaogtextviewer(header,message)
 				else:
-					setSkinSetting('0',x+y,str(value))
+					setSkinSetting('0',x+y,str(url))
 		else:
+			printpoint = printpoint + '3'
 			'''local'''
 			if value == '1':
 				custombackgroundspath = xbmc.getInfoLabel('Skin.String(CustomBackgroundsPath)')
 				if os.path.exists(custombackgroundspath): path = custombackgroundspath
-				else: path = os.path.join(skin_path, 'extras', 'icons', '')
+				else: path = featherenceserviceicons_path
 				xbmc.executebuiltin('Skin.SetImage(background'+y+',,'+path+')')
 			elif value == '2':
 				customiconspath = xbmc.getInfoLabel('Skin.String(CustomIconsPath)')
 				if os.path.exists(customiconspath): path = customiconspath
-				else: path = os.path.join(skin_path, 'extras', 'icons', '')
+				else: path = featherenceserviceicons_path
 				xbmc.executebuiltin('Skin.SetImage(icon'+y+',,'+path+')')
-		
+			else: printpoint = printpoint + '9'
+			
+	text = 'value' + space2 + str(value) + space + 'path' + space2 + str(path) + newline + \
+	'name' + space2 + str(name)
+	printlog(title='mode233', printpoint=printpoint, text=text, level=0, option="")
 
 def mode235(value, admin, name, printpoint):
 	'''------------------------------
@@ -3483,7 +3495,7 @@ def mode235(value, admin, name, printpoint):
 	xbmc.executebuiltin('Dialog.Close(filebrowser)')
 	
 	text = 'property_temp' + space2 + str(property_temp) + space + 'property_buttonid' + space2 + str(property_buttonid)
-	printlog(title=name, printpoint=printpoint, text=extra2, level=0, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def mode236(admin, name, printpoint):
 	'''------------------------------

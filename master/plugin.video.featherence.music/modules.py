@@ -160,7 +160,7 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	background = 101
 	commonsearch = 'commonsearch101'
 	'''חיפוש'''
-	addDir(localize(137),'שיר',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'שיר',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
 	
 	'''קליפים ישראליים אקראי'''
 	list = []
@@ -359,7 +359,7 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	background = 102
 	commonsearch = 'commonsearch102'
 	'''חיפוש'''
-	addDir(localize(137),'קריוקי',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'קריוקי',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, custom=""))
 	
 	'''ישראלי קריוקי אקראי'''
 	list = []
@@ -547,7 +547,7 @@ def CATEGORIES10104(name, iconimage, desc, fanart):
 	background = 104
 	commonsearch = 'commonsearch104'
 	'''חיפוש'''
-	addDir(localize(137),'הופעה חיה',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'הופעה חיה',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי'''
 	list = []
@@ -767,7 +767,7 @@ def CATEGORIES10106(name, iconimage, desc, fanart):
 	background = 106
 	commonsearch = 'commonsearch106'
 	'''חיפוש'''
-	addDir(localize(137),'שיר',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'שיר',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
 	
 	'''מיזרחי אקראי'''
 	list = []
@@ -908,7 +908,7 @@ def CATEGORIES10107(name, iconimage, desc, fanart):
 	background = 107
 	commonsearch = 'commonsearch102'
 	'''חיפוש'''
-	addDir(localize(137),'קריוקי',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'קריוקי',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי'''
 	list = []
@@ -1008,7 +1008,7 @@ def CATEGORIES10109(name, iconimage, desc, fanart):
 	commonsearch = "commonsearch104"
 	
 	'''חיפוש'''
-	addDir(localize(137),'הופעה חיה',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'הופעה חיה',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי'''
 	list = []
@@ -1114,7 +1114,7 @@ def CATEGORIES11101(name, iconimage, desc, fanart):
 	background = 111
 	commonsearch = 'commonsearch111'
 	'''חיפוש'''
-	addDir(localize(137),'song',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'song',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
 	
 	'''להיטים לועזיים מכל הזמנים'''
 	list = []
@@ -1271,7 +1271,7 @@ def CATEGORIES11102(name, iconimage, desc, fanart):
 	commonsearch = 'commonsearch112'
 	
 	'''חיפוש'''
-	addDir(localize(137),'karaoke',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'karaoke',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי'''
 	#addDir(localize(590),'UC-9-kyTW8ZkZNDHQJ6FgpwQ',9,featherenceserviceicons_path + "singers.png","",'1',"", getAddonFanart(background, custom=""))
@@ -1386,7 +1386,7 @@ def CATEGORIES11104(name, iconimage, desc, fanart):
 	background = 114
 	commonsearch = 'commonsearch114'
 	'''חיפוש'''
-	addDir(localize(137),'liveshow',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'liveshow',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי הופעות חיות לועזי'''
 	list = []

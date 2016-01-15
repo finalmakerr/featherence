@@ -13,6 +13,14 @@ msgctxt "#3
 msgid "Stories"
 msgstr "סיפורי"
 
+msgctxt "#4
+msgid "Songs"
+msgstr "שירי"
+
+msgctxt "#5
+msgid "TV Channels in %s"
+msgstr "ערוצי טלוויזיה ב-%s"
+
 msgctxt "#11
 msgid "Songs"
 msgstr "שירים"
@@ -134,10 +142,6 @@ msgid ""
 msgstr "צפייה מהנה!"
 
 msgctxt "#1010
-msgid "Create your"
-msgstr "שירים וסיפורים לילדים שלנו."
-
-msgctxt "#1010
 msgid "Songs and stories for your loved one."
 msgstr "שירים וסיפורים לילדים שלנו."
 
@@ -226,8 +230,8 @@ msgid "Holiday in %s"
 msgstr "חגים ב-%s"
 
 msgctxt "#10112
-msgid ""
-msgstr ""
+msgid "דתיה בן דרור"
+msgstr "דתיה בן דרור"
 
 msgctxt "#10113
 msgid ""
@@ -600,19 +604,19 @@ msgstr "אי המטמון"
 
 msgctxt "#10205
 msgid "Aladdin"
-msgstr "אלדין"
+msgstr "אלאדין"
 
 msgctxt "#10206
-msgid ""
-msgstr ""
+msgid "Mother Goose"
+msgstr "אמא אווזה"
 
 msgctxt "#10207
 msgid "Bilbi"
 msgstr "בילבי"
 
 msgctxt "#10208
-msgid ""
-msgstr ""
+msgid "Jack and the Beanstalk"
+msgstr "ג'ק ואפון הפלא"
 
 msgctxt "#10209
 msgid "Galis - The Show"
@@ -679,8 +683,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#10225
-msgid ""
-msgstr ""
+msgid "Maccabees"
+msgstr "המכבים"
 
 msgctxt "#10226
 msgid ""
@@ -699,8 +703,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#10230
-msgid ""
-msgstr ""
+msgid "Barbie"
+msgstr "ברבי"
 
 msgctxt "#10231
 msgid "Wonderboy"
@@ -787,8 +791,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#10252
-msgid ""
-msgstr ""
+msgid "Prince of Egypt"
+msgstr "נסיך מצרים"
 
 msgctxt "#10253
 msgid ""
@@ -799,8 +803,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#10255
-msgid "Cindarella - Bar Rafaelli"
-msgstr "סינדרלה - בר רפאלי"
+msgid "Cindarella"
+msgstr "סינדרלה"
 
 msgctxt "#10256
 msgid ""
@@ -848,7 +852,7 @@ msgstr ""
 
 msgctxt "#10267
 msgid "Piter Pen"
-msgstr "פיטר פן - הראל סקעת"
+msgstr "פיטר פן"
 
 msgctxt "#10268
 msgid ""
@@ -871,8 +875,8 @@ msgid "Robin Hood"
 msgstr "רובין הוד"
 
 msgctxt "#10273
-msgid ""
-msgstr ""
+msgid "Robinson Crusoe"
+msgstr "רובין זו קרוזו"
 
 msgctxt "#10274
 msgid "Rinat Gabai"
@@ -1413,7 +1417,7 @@ msgid "Artur"
 msgstr "ארתור"
 
 msgctxt "#10408
-msgid ""Bug Alert"
+msgid "Bug Alert"
 msgstr "באג בראש"
 
 msgctxt "#10409
@@ -1485,8 +1489,8 @@ msgid "3000 Leagues in Search of Mother"
 msgstr "הלב"
 
 msgctxt "#10426
-msgid ""
-msgstr "היתקליף"
+msgid "Denver, the Last Dinosaur"
+msgstr "דנבר הדינוזאור האחרון"
 
 msgctxt "#10427
 msgid "Moomin"
@@ -1697,8 +1701,8 @@ msgid "Pokémon"
 msgstr "פוקימון"
 
 msgctxt "#10479
-msgid "Peter Pan"
-msgstr "פיטר פן"
+msgid "Lego Ninjago: Masters of Spinjitzu"
+msgstr "נינג'גו - מאסטר הספינג'יצו"
 
 msgctxt "#10480
 msgid "Pinocchio"
@@ -1733,32 +1737,32 @@ msgid "Hero Factory"
 msgstr "מפעל הגיבורים"
 
 msgctxt "#10488
-msgid ""
-msgstr ""
+msgid "The Avengers: Earth's Mightiest Heroes"
+msgstr "הנוקמים: לוחמי העל"
 
 msgctxt "#10489
-msgid ""
-msgstr ""
+msgid "Star Wars Rebels"
+msgstr "מלחמת הכוכבים: המורדים"
 
 msgctxt "#10490
-msgid ""
-msgstr ""
+msgid "Legends of Chima"
+msgstr "צ'ימה"
 
 msgctxt "#10491
-msgid ""
-msgstr ""
+msgid "Ox Tales"
+msgstr "סיפורי מוש"
 
 msgctxt "#10492
-msgid ""
-msgstr ""
+msgid "Princess Sissi"
+msgstr "הנסיכה סיסי"
 
 msgctxt "#10493
-msgid ""
-msgstr ""
+msgid "Almost Naked Animals"
+msgstr "חיות בקצר"
 
 msgctxt "#10494
-msgid ""
-msgstr ""
+msgid "Tak and the Power of Juju"
+msgstr "טאק וכוח הג'וג'ו"
 
 msgctxt "#10495
 msgid ""
@@ -1773,11 +1777,11 @@ msgid ""
 msgstr ""
 
 msgctxt "#10498
-msgid ""
-msgstr ""
+msgid "Cardcaptor Sakura"
+msgstr "סאקורה לוכדת הקלפים"
 
 msgctxt "#10499
-msgid "אגדות האחים גרים"
+msgid "Grimm's Fairy Tale Classics"
 msgstr "אגדות האחים גרים"
 
 #
@@ -1894,8 +1898,8 @@ msgid "Barbie in a Mermaid Tale"
 msgstr "ברבי בת הים"
 
 msgctxt "#10528
-msgid ""
-msgstr ""
+msgid "Dragon Ball"
+msgstr "דראגון בול"
 
 msgctxt "#10529
 msgid "Aladdin"
@@ -1986,8 +1990,8 @@ msgid "Cinderella"
 msgstr "סינדרלה"
 
 msgctxt "#10551
-msgid ""
-msgstr ""
+msgid "Fireman Sam"
+msgstr "סמי הכבאי"
 
 msgctxt "#10552
 msgid ""
@@ -2227,28 +2231,28 @@ msgid ""
 msgstr ""
 
 msgctxt "#10611
-msgid ""
-msgstr ""
+msgid "Boowa and Kwala"
+msgstr "בואלה וקואלה"
 
 msgctxt "#10612
 msgid ""
 msgstr ""
 
 msgctxt "#10613
-msgid ""
-msgstr ""
+msgid "Billy & Bam Bam"
+msgstr "בילי בם בם"
 
 msgctxt "#10614
-msgid "Barbie"
-msgstr "ברבי"
+msgid ""
+msgstr ""
 
 msgctxt "#10615
 msgid "Bernard"
 msgstr "ברנרד"
 
 msgctxt "#10616
-msgid ""
-msgstr ""
+msgid "Milo"
+msgstr "מיילו"
 
 msgctxt "#10617
 msgid "דובים ונהנים"
@@ -2271,24 +2275,24 @@ msgid "Vipo the flying dog"
 msgstr "ויפו הכלב המעופף"
 
 msgctxt "#10622
-msgid ""
-msgstr ""
+msgid "Darco"
+msgstr "דרקו"
 
 msgctxt "#10623
-msgid ""
-msgstr ""
+msgid "Care Bears"
+msgstr "דובוני אכפת לי"
 
 msgctxt "#10624
-msgid ""
-msgstr ""
+msgid "הגלופסים"
+msgstr "הגלופסים"
 
 msgctxt "#10625
 msgid ""
 msgstr ""
 
 msgctxt "#10626
-msgid ""
-msgstr ""
+msgid "Heathcliff"
+msgstr "היתקליף"
 
 msgctxt "#10627
 msgid ""
@@ -2327,12 +2331,12 @@ msgid ""
 msgstr ""
 
 msgctxt "#10636
-msgid ""
-msgstr ""
+msgid "Miffy & Friends"
+msgstr "מיפי"
 
 msgctxt "#10637
 msgid "Pocoyo"
-msgstr "פויוקו"
+msgstr "פוקיו"
 
 msgctxt "#10638
 msgid "Pim and Pimba"
@@ -2343,12 +2347,12 @@ msgid ""
 msgstr ""
 
 msgctxt "#10640
-msgid "Lully"
-msgstr "לולי"
+msgid ""
+msgstr ""
 
 msgctxt "#10641
 msgid ""
-msgstr "לולה בייבי"
+msgstr ""
 
 msgctxt "#10642
 msgid ""
@@ -2592,32 +2596,32 @@ msgid ""
 msgstr ""
 
 msgctxt "#10702
-msgid "Adivo"
+msgid "Adiboo"
 msgstr "אדיבו"
 
 msgctxt "#10703
-msgid ""
-msgstr ""
+msgid "Bumba"
+msgstr "בומבה"
 
 msgctxt "#10704
-msgid ""
-msgstr ""
+msgid "Whisker Haven Tales With the Palace Pets"
+msgstr "ארמון החיות"
 
 msgctxt "#10705
 msgid "Lin's Garden"
 msgstr "בגינה של לין"
 
 msgctxt "#10706
-msgid ""
-msgstr ""
+msgid "Team Umizoomi"
+msgstr "צוות אומי זומי"
 
 msgctxt "#10707
 msgid "Bob the Builder"
 msgstr "בוב הבנאי"
 
 msgctxt "#10708
-msgid ""
-msgstr ""
+msgid "Blaze and the Monster Machines"
+msgstr "בלייז ומכוניות הענק"
 
 msgctxt "#10709
 msgid "The Adventures of Little Brown Bear"
@@ -2628,7 +2632,7 @@ msgid "Pooches"
 msgstr "ברבונסקי"
 
 msgctxt "#10711
-msgid "דורה וחברים"
+msgid "Dora and Friends"
 msgstr "דורה וחברים"
 
 msgctxt "#10712
@@ -2680,8 +2684,8 @@ msgid "The secret of Maya"
 msgstr "הסוד של מיה"
 
 msgctxt "#10724
-msgid ""
-msgstr ""
+msgid "The Tale of Peter Rabbit"
+msgstr "הרפתקאות פיטר הארנב"
 
 msgctxt "#10725
 msgid "זמן לזוז"
@@ -2716,28 +2720,28 @@ msgid "Timmy Time"
 msgstr "טימי הטלה"
 
 msgctxt "#10733
-msgid ""
-msgstr ""
+msgid "Traktor Tom"
+msgstr "טום הטרקטור"
 
 msgctxt "#10734
 msgid "Short Creation"
 msgstr "יצירה בקצרה"
 
 msgctxt "#10735
-msgid ""
-msgstr ""
+msgid "Barney & Friends"
+msgstr "החברים של ברני"
 
 msgctxt "#10736
-msgid ""
-msgstr ""
+msgid "Robocar Poli"
+msgstr "רובו אוטו פולי"
 
 msgctxt "#10737
 msgid ""
 msgstr ""
 
 msgctxt "#10738
-msgid ""
-msgstr ""
+msgid "The 7D"
+msgstr "חבורת 7ג'"
 
 msgctxt "#10739
 msgid ""
@@ -2761,7 +2765,7 @@ msgstr ""
 
 msgctxt "#10744
 msgid "Mickey Mouse Clubhouse"
-msgstr "מועדון החברים של מיקימאוס"
+msgstr "מועדון החברים של מיקי מאוס"
 
 msgctxt "#10745
 msgid "Best pastries club"
@@ -2772,8 +2776,9 @@ msgid "Miki the kids star"
 msgstr "מיקי כוכבת הילדים"
 
 msgctxt "#10747
-msgid ""
-msgstr ""
+msgid "Everything's Rosie"
+msgstr "החיוך של רוזי"
+
 
 msgctxt "#10748
 msgid "Mr. Why and Mrs. So"
@@ -2820,8 +2825,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#10759
-msgid ""
-msgstr ""
+msgid "Miles from Tomorrowland"
+msgstr "מיילס מהמחר"
 
 msgctxt "#10760
 msgid "The magical world of Max"
@@ -2868,8 +2873,8 @@ msgid "Go Diego Go!"
 msgstr "רוץ דייגו רוץ!"
 
 msgctxt "#10771
-msgid ""
-msgstr ""
+msgid "Roary the Racing Car"
+msgstr "רורי - מכונית המירוץ"
 
 msgctxt "#10772
 msgid "Roy Boy"
@@ -2884,12 +2889,12 @@ msgid "Rinat and Yoyo"
 msgstr "רינת ויויו"
 
 msgctxt "#10775
-msgid ""
-msgstr ""
+msgid "Little Charmers"
+msgstr "קוסמות קטנה"
 
 msgctxt "#10776
-msgid ""
-msgstr ""
+msgid "Doc McStuffins"
+msgstr "דוק רופאת הצעצועים"
 
 msgctxt "#10777
 msgid "Nonsense News"
@@ -2988,8 +2993,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#10801
-msgid ""
-msgstr ""
+msgid "Eek! The Cat"
+msgstr "איק החתול"
 
 msgctxt "#10802
 msgid "איוון מקסימוב"
@@ -3000,7 +3005,7 @@ msgid "Ivan Tsarevich and the Grey Wolf"
 msgstr "איוון הצארביץ והזאב האפור"
 
 msgctxt "#10804
-msgid ""
+msgid "בלי סודות"
 msgstr "בלי סודות"
 
 msgctxt "#10805
@@ -3052,16 +3057,16 @@ msgid "House of Anubis"
 msgstr "בית אנוביס"
 
 msgctxt "#10817
-msgid ""
-msgstr ""
+msgid "Life with Louie"
+msgstr "החיים עם לואי"
 
 msgctxt "#10818
-msgid ""
-msgstr ""
+msgid "Bureau of Alien Detectors"
+msgstr "בורו גלאי החייזרים"
 
 msgctxt "#10819
-msgid ""
-msgstr ""
+msgid "Jim Button"
+msgstr "גים באטן"
 
 msgctxt "#10820
 msgid "Greatest Heroes of the Bible"
@@ -3072,28 +3077,28 @@ msgid "Galactik Football"
 msgstr "גלקטיק פוטבול"
 
 msgctxt "#10822
-msgid ""
-msgstr ""
+msgid "The Kids from Room 402"
+msgstr "הילדים מחדר 402"
 
 msgctxt "#10823
 msgid "Paddington"
 msgstr "הדב פדינגטון"
 
 msgctxt "#10824
-msgid ""
-msgstr ""
+msgid "The Secret Files of the Spy Dogs"
+msgstr "הקבצים הסודיים של כלבי מרגלים"
 
 msgctxt "#10825
-msgid ""
-msgstr ""
+msgid "The Tofus"
+msgstr "הטופוס"
 
 msgctxt "#10826
-msgid ""
-msgstr ""
+msgid "Louie"
+msgstr "לואי"
 
 msgctxt "#10827
-msgid ""
-msgstr ""
+msgid "מועדון החנונים"
+msgstr "מועדון החנונים"
 
 msgctxt "#10828
 msgid "Max & Shred"
@@ -3164,40 +3169,40 @@ msgid "סבבה בנט"
 msgstr "סבבה בנט"
 
 msgctxt "#10845
-msgid ""
-msgstr ""
+msgid "Rabbids Invasion"
+msgstr "פלישת הרבידים"
 
 msgctxt "#10846
-msgid ""
-msgstr ""
+msgid "The Tick"
+msgstr "הטיק"
 
 msgctxt "#10847
-msgid ""
-msgstr ""
+msgid "Pingu"
+msgstr "פינגו"
 
 msgctxt "#10848
-msgid ""
-msgstr ""
+msgid "הארווי ביקס"
+msgstr "Harvey Beacks"
 
 msgctxt "#10849
-msgid ""
-msgstr ""
+msgid "Galis"
+msgstr "גאליס"
 
 msgctxt "#10850
-msgid ""
-msgstr ""
+msgid "Wild Kratts"
+msgstr "אחים ואחיות אחרות"
 
 msgctxt "#10851
-msgid ""
-msgstr ""
+msgid "Get Ace"
+msgstr "אייס"
 
 msgctxt "#10852
-msgid ""
-msgstr ""
+msgid "The Trash Pack"
+msgstr "הזבולונים"
 
 msgctxt "#10853
-msgid ""
-msgstr ""
+msgid "Lazy Town"
+msgstr "נווה עצלנות"
 
 msgctxt "#10854
 msgid "סול איטר"
@@ -3208,16 +3213,16 @@ msgid "קופיקו"
 msgstr "קופיקו"
 
 msgctxt "#10856
-msgid ""
-msgstr ""
+msgid "Beavis and Butt-head"
+msgstr "ביוויס ובאטהד"
 
 msgctxt "#10857
-msgid ""
-msgstr ""
+msgid "She-Ra: Princess of Power"
+msgstr "שי-רה נסיכת הכוח"
 
 msgctxt "#10858
-msgid ""
-msgstr ""
+msgid "אגדת הנסיך וליאנט"
+msgstr "The Legend of Prince Valiant"
 
 msgctxt "#10859
 msgid ""
@@ -3240,8 +3245,8 @@ msgid "Speed Racer The Next Generation"
 msgstr "ספיד רייסר הדור הבא"
 
 msgctxt "#10864
-msgid ""
-msgstr ""
+msgid "Pig City"
+msgstr "עיר החזירים"
 
 msgctxt "#10865
 msgid "ראש גדול"
@@ -3284,8 +3289,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#10875
-msgid ""
-msgstr ""
+msgid "Sesame Street"
+msgstr "רחוב סומסום"
 
 msgctxt "#10876
 msgid ""
@@ -3461,8 +3466,8 @@ msgid "Enjoy your %s holiday with your kids."
 msgstr "תהנו מהחג ב-%s עם הילדים שלכם."
 
 msgctxt "#101120
-msgid ""
-msgstr ""
+msgid "דַּתְיָה בן דור (נולדה ב-27 ביולי 1944) היא סופרת, תסריטאית, מחזאית, משוררת ומלחינה לילדים. יצירותיה ראו אור בספרים, תקליטורים, קלטות וידאו, תוכניות טלוויזיה, על במת התיאטרון ובמשחקי מחשב, ונלמדות במערכת החינוך ובאקדמיה."
+msgstr "דַּתְיָה בן דור (נולדה ב-27 ביולי 1944) היא סופרת, תסריטאית, מחזאית, משוררת ומלחינה לילדים. יצירותיה ראו אור בספרים, תקליטורים, קלטות וידאו, תוכניות טלוויזיה, על במת התיאטרון ובמשחקי מחשב, ונלמדות במערכת החינוך ובאקדמיה."
 
 msgctxt "#101130
 msgid ""
@@ -3834,8 +3839,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#102050
-msgid ""
-msgstr ""
+msgid "Watch as one of Disney's beloved movies transforms into a Broadway musical in Aladdin Musical Spectacular!"
+msgstr "המופע בכיכובם של שירי מימון והראל סקעת, מציג את הסיפור המוכר בצורה מעורבבת ולא ברורה עם בדיחות במשקל נוצה - לפחות השירה טובה."
 
 msgctxt "#102060
 msgid ""
@@ -3846,8 +3851,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#102080
-msgid ""
-msgstr ""
+msgid "Jack and the Beanstalk" is an English fairy tale. It appeared as "The Story of Jack Spriggins and the Enchanted Bean" in 1734 and as Benjamin Tabart's moralised "The History of Jack and the Bean-Stalk" in 1807."
+msgstr "ג'ק ואפון הפלא הידוע גם בשם יעקב והאפון, ג'ק והאפונים או ג'ק וגבעול השעועית הוא סיפור עם אנגלי, הופיע לראשונה בדפוס בשנת 1807."
 
 msgctxt "#102090
 msgid ""
@@ -3914,8 +3919,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#102250
-msgid ""
-msgstr ""
+msgid "The Maccabees, also spelled Machabees (Hebrew: מכבים or מקבים‎, Maqabim; Latin: Machabi or Machado; Greek: Μακκαβαῖοι, Makkabaioi), were the leaders of a Jewish rebel army that took control of Judea, which at the time had been a province of the Seleucid Empire. They founded the Hasmonean dynasty, which ruled from 164 BCE to 63 BCE. They reasserted the Jewish religion, partly by forced conversion, expanded the boundaries of Judea by conquest and reduced the influence of Hellenism and Hellenistic Judaism."
+msgstr "מחזמר חדש ומקורי לכל המשפחה מאת אסף אשתר ובבימויו של עידו רוזנברג המביא את סיפורם של היהודים. חייהם השלווים של היהודים במודיעין עומדים בפני סכנה גדולה. אנטיוכוס (צביקה הדר), המלך היווני החמדן ואחותו נמסיס (דנה פרידר), שרת הצבא שוחרת המלחמות גוזרים עליהם גזרות קשות. המכבים הגיבורים, ובראשם יהודה (לי בירן) ושמעון (אסף הרץ), מחליטים למרוד ביוונים. האם יעמדו המעטים מול הרבים? האם תגבר הרוח על הכוח? סיפור נס החנוכה מסופר דרך עיניה של יהודית האמיצה (רינת גבאי), ידידת המכבים."
 
 msgctxt "#102260
 msgid ""
@@ -3934,8 +3939,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#102300
-msgid ""
-msgstr ""
+msgid "The series is set in a fictional version of Malibu, California where all of its inhabitants are dolls. The dolls behave like people, though a number of the show's gags rely on their doll-like nature. The series centers on the life of Barbie, her friends, siblings and her boyfriend Ken. The series is stylized as a mock reality show featuring confessionals of the characters in between scenes."
+msgstr "The series is set in a fictional version of Malibu, California where all of its inhabitants are dolls. The dolls behave like people, though a number of the show's gags rely on their doll-like nature. The series centers on the life of Barbie, her friends, siblings and her boyfriend Ken. The series is stylized as a mock reality show featuring confessionals of the characters in between scenes."
 
 msgctxt "#102310
 msgid ""
@@ -4022,8 +4027,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#102520
-msgid ""
-msgstr ""
+msgid "ההצגה מביאה את סיפורו של משה רבנו מהיום בו אחותו מרים מצילה אותו מגזירת פרעה ומשיטה אותו בתיבה על פני היאור. הסיפור עובר דרך הצלתו על ידי בת פרעה וגידולו בבית הארמון תחת עינה הפקוחה של יועצת המלך, הפרעונית הוותיקה (מיקי קם/ניקי גולדשטיין), עד להפיכתו לנסיך מצרים לצד פרעה הצעיר (אודי גוטשלק). שיאו של הסיפור מגיע כשמשה, נסיך מצרים לוקח על עצמו את תפקיד המנהיג, מתעמת מול פרעה, ומוציא את אחיו, בני ישראל מעבדות לחירות."
+msgstr "ההצגה מביאה את סיפורו של משה רבנו מהיום בו אחותו מרים מצילה אותו מגזירת פרעה ומשיטה אותו בתיבה על פני היאור. הסיפור עובר דרך הצלתו על ידי בת פרעה וגידולו בבית הארמון תחת עינה הפקוחה של יועצת המלך, הפרעונית הוותיקה (מיקי קם/ניקי גולדשטיין), עד להפיכתו לנסיך מצרים לצד פרעה הצעיר (אודי גוטשלק). שיאו של הסיפור מגיע כשמשה, נסיך מצרים לוקח על עצמו את תפקיד המנהיג, מתעמת מול פרעה, ומוציא את אחיו, בני ישראל מעבדות לחירות."
 
 msgctxt "#102530
 msgid ""
@@ -4082,8 +4087,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#102670
-msgid ""
-msgstr ""
+msgid "Peter Pan is a character created by Scottish novelist and playwright J. M. Barrie. A mischievous boy who can fly and never grows up, Peter Pan spends his never-ending childhood having adventures on the small island of Neverland as the leader of his gang, the Lost Boys, interacting with mermaids, Native Americans, fairies, pirates, and occasionally ordinary children from the world outside Neverland."
+msgstr "פיטר פן (באנגלית: Peter Pan) הוא דמות בדיונית וגיבור המחזה והספר המפורסמים מאת הסופר והמחזאי הסקוטי ג'יימס מתיו ברי (1860–1937)."
 
 msgctxt "#102680
 msgid ""
@@ -4106,8 +4111,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#102730
-msgid ""
-msgstr ""
+msgid "Robinson Crusoe /ˌrɒbɪnsən ˈkruːsoʊ/ is a novel by Daniel Defoe, first published on 25 April 1719."
+msgstr "רובינזון קרוזו (באנגלית: Robinson Crusoe) הוא רומן מאת הסופר דניאל דפו, שפורסם לראשונה בשנת 1719."
 
 msgctxt "#102740
 msgid ""
@@ -4720,11 +4725,11 @@ msgid "3000 Leagues in Search of Mother (母をたずねて三千里 Haha o Tazu
 msgstr "הלב (ביפנית: 母をたずねて三千里)‏ היא סדרת אנימה יפנית בת 52 פרקים שביים ותסרט איסאו טאקאהטה (קבר הגחליליות) עוד השתתפו בתפקיד היצירה שמות בולטים כגון הייאו מיאזאקי ויושיוקי טומינו (גנדאם) והופקה לטלוויזיה ב-1976."
 
 msgctxt "#104260
-msgid ""
-msgstr ""
+msgid "The show revolves around the adventures of Denver, the last dinosaur - a Corythosaurus - who was released from his egg by a group of multicultural modern California teens: Jeremy, Mario, Shades, Wally, and Casey, along with tag-along older sister, Heather. The kids taught Denver the finer points of skateboarding and other pastimes while protecting him from rock concert promoter Morton Fizzback who wanted to use the dinosaur to make money."
+msgstr "קבוצת נערים מקליפורניה (שולי, ירמי, צלי ומאריו) מגלים ביצת דינוזאור אשר בוקעת ומתוכה יוצא דינוזאור קטן וידידותי. את שמו דנבר הוא מקבל אחרי שהנערים ראו פרסומת על גבי אוטובוס לעיר דנבר. דנבר הוא דינוזאור יוצא דופן אשר אוהב לנגן בגיטרה ולרכב על סקייטבורד. הוא מסוגל לחזור לתקופה הפרה-היסטורית בעזרת חלק מהביצה שממנה בקע. דנבר מוצא מקלט אצל החבורה מפני האמרגן מורטון פיצבק אשר רוצה להתעשר מלכידתו של דנבר. דנבר סיים את חייו במוות אלים בעסקת סמים שהשתבשה. הדינוזאור האחרון סבל במשך כל ימיו מבדידות וידיו הקצרות לא איפשרו לו להגיע לפורקן עצמי, כך הוא הידרדר לחיי סמים ופשע."
 
 msgctxt "#104270
-msgid "The Moomins (Swedish: Mumintroll) are the central characters in a series of books and a comic strip by Swedish-speaking Finnish illustrator and writer Tove Jansson, originally published in Swedish by Schildts[2] in Finland."
+msgid "The Moomins are the central characters in a series of books and a comic strip by Swedish-speaking Finnish illustrator and writer Tove Jansson, originally published in Swedish by Schildts in Finland."
 msgstr "המומינים (בשוודית: Mumin) הם הדמויות הראשיות בסדרת ספרים, וסדרת רצועות קומיקס מאת המאיירת והסופרת השוודית-פינית טוּבֶה ינסון, אשר פורסמו במקור בשפה השוודית בפינלנד על ידי המוציא לאור "Schildts Förlags Ab""
 
 msgctxt "#104280
@@ -4864,7 +4869,7 @@ msgid ""
 msgstr ""
 
 msgctxt "#104620
-msgid "ased on the books by Jean de Brunhoff and Laurent de Brunhoff, the plot focuses on the story of Babar as it is told by him to his children."
+msgid "Based on the books by Jean de Brunhoff and Laurent de Brunhoff, the plot focuses on the story of Babar as it is told by him to his children."
 msgstr "עלילת הסדרה מבוססת על עלילת סדרת ספרי הילדים המצליחה של ז'אן דה ברונוף ומתמקדת בסיפור חייו ועלילותיו של הפיל בבר, כפי שהם מסופרים לילדיו."
 
 msgctxt "#104630
@@ -4932,8 +4937,8 @@ msgid "Pokémon (ポケモン Pokemon?, /ˈpoʊkeɪmɒn/ poh-kay-mon)12 is a med
 msgstr "פוקימון (באנגלית: Pokémon, ביפנית: ポケモン) הוא זיכיון מדיה שבבעלות חברת משחקי הווידאו נינטנדו אשר נוצר במקור על ידי סטושי טג'ירי. המוצר המקורי בזיכיון היה צמד משחקי תפקידים ששווקו על ידי נינטנדו בשנת 1996 כמשחקי וידאו עבור קונסולת המשחקים הניידת גיימבוי."
 
 msgctxt "#104790
-msgid "Peter Pan is a character created by Scottish novelist and playwright J. M. Barrie. A mischievous boy who can fly and never grows up, Peter Pan spends his never-ending childhood having adventures on the small island of Neverland as the leader of his gang, the Lost Boys, interacting with mermaids, Native Americans, fairies, pirates, and occasionally ordinary children from the world outside Neverland."
-msgstr "פיטר פן (באנגלית: Peter Pan) הוא דמות בדיונית וגיבור המחזה והספר המפורסמים מאת הסופר והמחזאי הסקוטי ג'יימס מתיו ברי (1860–1937)."
+msgid "Each season focuses on a specific ninja to improve character development.[CR]The pilot episodes feature Sensei Wu struggling to train four young teenage ninja in the ways of an ancient battle art called Spinjitzu (which manifests as an elemental spinning movement faster than any normal fighting style) to defeat his corrupted brother Lord Garmadon, ruler of the Underworld, to stop him from gaining power through the Four Golden Weapons - The Sword of Fire, Scythe of Quakes, Nunchucks of Lightning and Shurikens of Ice."
+msgstr "הסדרה המצליחה מבית היוצר של לגו (Lego). כוכבי הסדרה מתמחים באומנות הלחימה המיוחדת ספינג'יטסו. כעת, עליהם להתמקצע, לאחד כוחות, ללמוד לשתף פעולה ולהגן על היקום כולו."
 
 msgctxt "#104800
 msgid "This version of tells a story of an extremely gullible, naive and morally confused wooden doll/marionette brought to life by a mystical turquoise-haired fairy. Pinocchio (Mokku) is characterized as having many character faults which he must learn to overcome in order to be worthy of being granted humanity. Some of these character faults include selfishness, rudeness, insensitivity, indolence, obstinacy, over- trusting, self-pity, stupidity, disobedience, compulsive lying, arrogance, greed, cowardice, recklessness, cruelty, foolishness and an inability to learn from mistakes."
@@ -4968,32 +4973,32 @@ msgid "Hero Factory (stylized as HERO FACTORY) was a line of construction toys c
 msgstr "Hero Factory (stylized as HERO FACTORY) was a line of construction toys created by the Lego Group marketed primarily at 6-to-16-year-olds. Premiering in the summer of 2010, the theme was created in response to the decision to close down production of the formerly-popular Lego construction theme Bionicle and acted as a successor."
 
 msgctxt "#104880
-msgid ""
-msgstr ""
+msgid "The Avengers: Earth's Mightiest Heroes! is an American animated television series by Marvel Animation in cooperation with Film Roman, based on the Marvel Comics superhero team the Avengers."
+msgstr "האוונג'רס: סדרת האנימציה (באנגלית: The Avengers: Earth's Mightiest Heroes, בישראל לוחמי העל) היא סדרת אנימציה אמריקאית המבוססת על סדרת הקומיקס האוונג'רס מבית מארוול קומיקס."
 
 msgctxt "#104890
 msgid ""
-msgstr ""
+msgstr "עלילת הסדרה מתרחשת בין האירועים שהתחוללו בפרקים 3 ו-4 של "מלחמת הכוכבים", בימים החשוכים שבהם האימפריה הגלקטית הידקה את אחיזתה בגלקסיה. כוחות האימפריה כבשו כוכב מרוחק וכעת הם ממררים את חיי תושביו. מנגד, הצוות של ספינת החלל "Ghost" הוא מהמעטים והאמיצים שמוכנים לצאת נגד האימפריה ולהילחם על עתידם."
 
 msgctxt "#104900
-msgid ""
-msgstr ""
+msgid "The Land of Chima is a pristine land filled with tribes consisting of various anthropomorphic animals ranging from the Lions, Crocodiles, Eagles, Gorillas, Wolves, Ravens, Rhinos, Bears, Beavers, Scorpions, Spiders, Bats, Saber-Tooth Tigers, Mammoths, Vultures, Phoenixes, Tigers, Leopards, Ice Bears, and other animals."
+msgstr "צ'ימה בה זורמים מים "טהורים" ובה חיים שבטים בעלי חיים שונים המתנהגים באורח אנושי: אריות, גורילות, עיטים, בונים, קרנפים, דובים, תנינים, זאבים, עורבים, עקרבים, עטלפים, עכבישים, טיגריסים, נשרים, ממותות, וציפורי הפניקס."
 
 msgctxt "#104910
-msgid ""
-msgstr ""
+msgid "Ollie the ox- Ollie is the owner of the Funny Farm and isn't exactly the greenest grass on the farm. Although he means well, he sometimes makes situations worse than they usually are, but this is usually rare."
+msgstr "עלילת הסדרה עוקבת אחר הרפתקאותיו של החקלאי מוש השור בחוותו אשר מכילה חיות רבות ושונות, יחד עם חברו הטוב, צבי הצב וכלבו רקס."
 
 msgctxt "#104920
-msgid ""
-msgstr ""
+msgid "A unique Bavarian girl, Sissi's, life changes forever after the day she meets the charming and noble princes, Franz and Karl. It doesn't take long until Sissi and Franz start to make plans for a future together, but there are so many people trying to make sure that the magnificent wedding day is delayed and postponed several times. Sissi and Franz must face jealousy, deceit, treason, and danger between the fronts of Austria and Hungary."
+msgstr "הסדרה מציגה את הרפתקאותיה של סיסי והתאהבותה בנסיך פראנז (במציאות היה זה הנסיך פרנץ יוזף), כמו גם את התמודדותה עם קשיי ההסתגלות לחיים בבית המלוכה, עם ההתנגדות לאירוסיה והשפעות המרד ההונגרי. בפרקים הראשונים מוצגת סיסי באחוזת בית פוסי ופוגשת את הנסיך. בניגוד למציאות, לסדרה סוף טוב."
 
 msgctxt "#104930
-msgid ""
-msgstr ""
+msgid "The cartoon is set inside a tropical resort called the Banana Cabana.[2] All of the cabana's staff members and residents are funny animals who have shaved off their fur and wear only underclothes. A dog named Howie is the manager and leader of the cabana. Each episode follows Howie and his "misfit" crew having unusual adventures in the Banana Cabana."
+msgstr "עלילותיהם של האווי הכלבלב וחבריו העובדים במלון טרופי, בעולם של חיות מגולחות עם תחתונים בלבד."
 
 msgctxt "#104940
-msgid ""
-msgstr ""
+msgid "The television series tells of Tak and his friend, Jeera, including his master, Jibolba, and other characters. Tak is faced with the responsibilities of being a shaman as he daily has to save his village from villains."
+msgstr "הסדרה מספרת על טאק, השאמן הצעיר של שבט הפופונונו. מדי פרק הכפר נקלע לבעיות ותסבוכות שנגרמות לרוב על ידי טאק והוא נאלץ לפתור אותן. למרות עזרתו הרבה של טאק הוא לא זוכה להוקרה מהצ'יף המפונק. חבריו הטובים של טאק הם ג'ירה,בתו של הצ'יף וקיקו הרגוע שאוהב להשתטות."
 
 msgctxt "#104950
 msgid ""
@@ -5008,12 +5013,12 @@ msgid ""
 msgstr ""
 
 msgctxt "#104980
-msgid ""
-msgstr ""
+msgid "Cardcaptor Sakura takes place in the fictional Japanese city of Tomoeda, which is somewhere near Tokyo. Ten-year-old Sakura Kinomoto accidentally releases a set of magical cards known as Clow Cards from a book in her basement created and named after the sorcerer Clow Reed. Each card has its own unique ability and can assume an alternate form when activated. The guardian of the cards, Cerberus, emerges from the book and chooses Sakura to retrieve the missing cards. As she finds each card, she battles its magical personification and defeats it by sealing it away. Cerberus acts as her guide, while her best friend and second cousin, Tomoyo Daidouji films her exploits and provides her with battle costumes. Sakura's older brother Toya Kinomoto watches over her, while pretending that he is unaware of what is going on."
+msgstr "סאקורה קינומוטו (ביפנית: פריחת הדובדבן) היא ילדה יפנית רגילה הלומדת בכיתה ד'. יום אחד נכנסה סאקורה לספריה של אביה, שם מצאה את ספר קלפי הקלאו. בתוך הספר היא מגלה ערימת קלפים, כאשר סאקורה מרימה את הקלף העליון בערימה, קלף הרוח, וקוראת את שמו, כל שאר הקלפים עפים ומתפזרים בכל האזור. יצור בשם קרברוס שנראה כמו דובון קטן עם כנפיים יוצא מכריכת הספר ומספר לה שעליה למצוא את כל הקלפים שעפו וללכוד אותם בטרם יפול אסון על העולם, כך סאקורה הפכה רשמית ל"לוכדת קלפי הקלאו"."
 
 msgctxt "#104990
-msgid ""
-msgstr ""
+msgid "Grimm's Fairy Tale Classics (グリム名作劇場 Gurimu Meisaku Gekijō?) is a Japanese anime anthology series by Nippon Animation. The episodes are adaptations of a variety of folk and fairy tales, and not limited to Grimm's Fairy Tales."
+msgstr "אגדות האחים גרים (ביפנית: グリム名作劇場, באנגלית: Grimm Masterpiece Theatre) היא סדרת אנימה יפנית בת 24 פרקים שהופקה לטלוויזיה בשנת 1987 בהשראת מעשיות האחים גרים."
 
 
 #
@@ -5130,8 +5135,8 @@ msgid "Barbie stars as Merliah, a surfer who learns a shocking secret: she's a m
 msgstr "Barbie stars as Merliah, a surfer who learns a shocking secret: she's a mermaid! She and her dolphin friend set out for an undersea adventure to rescue her mother, the queen of Oceana."
 
 msgctxt "#105280
-msgid ""
-msgstr ""
+msgid "monkey-tailed boy named Goku befriending a teenage girl named Bulma, whom he accompanies to find the seven Dragon Balls, which summon the dragon Shenlong to grant the user one wish. The journey leads them to the desert bandit Yamcha, who later becomes an ally; Chi-Chi, whom Goku unknowingly agrees to marry; and Pilaf, an impish man who seeks the Dragon Balls to fulfill his desire to rule the world."
+msgstr "גוקו הגיע לכדור הארץ בתוך חללית כאשר היה תינוק, ונמצא על ידי איש זקן שקוראים לו גוהאן. גוהאן לקח את התינוק אל ביתו והחל לדאוג לו ולכל צרכיו, אבל התינוק התנהג בצורה רעה וגסת רוח כלפי הסביבה וכלפי גוהאן. יום אחד כאשר גוהאן יצא לטייל, התינוק נפל מצוק, נפצע בראשו וכמעט נהרג. במזל התינוק ניצל ממוות, ומאז החל להתנהג בצורה טובה ומנומסת כלפי הסביבה וכלפי גוהאן. מאותו יום הוא נודע בשם גוקו. בילדותו גוהאן הזהיר את גוקו לא לצאת בזמן ירח מלא מביתו כי בחוץ מסתובבת מפלצת גדולת ממדים שתהרוג אותו, אבל גוקו לא הקשיב וכאשר יצא באחת הפעמים בזמן ירח מלא, מפלצת גדולת ממדים בצורת קוף הרגה את גוהאן, וגוקו ישן בזמן זה (גוקו הוא המפלצת)."
 
 msgctxt "#105290
 msgid ""
@@ -5222,8 +5227,8 @@ msgid "When Cinderella's cruel stepmother prevents her from attending the Royal 
 msgstr "When Cinderella's cruel stepmother prevents her from attending the Royal Ball, she gets some unexpected help from the lovable mice Gus and Jaq, and from her Fairy Godmother."
 
 msgctxt "#105510
-msgid ""
-msgstr ""
+msgid "Fireman Sam is an animated comedy children's television series about a fireman called Sam, his fellow firefighters, and other townspeople in the fictional Welsh rural town of Pontypandy (a portmanteau of two real towns, Pontypridd and Tonypandy, which are situated approximately 5 miles (8.0 km) apart in the South Wales valleys)."
+msgstr "סמי הוא כבאי מצטיין העובד בתחנת הכיבוי של פונטיפנדי (Pontypandy). בכל פרק נקלעת אחת מהדמויות לצרה או יוצרת אותה, לעתים בטעות ולעתים בכוונה תחילה. הדמויות המקורבות לנפגע או הרואות את המתרחש, רצות לטלפון הציבורי או מתקשרות בטלפון הנייד האישי שלהן. השיחה מועברת לפקס בתחנת הכיבוי. מתחנת הכיבוי יוצאים רכבי הכיבוי וההצלה, כאשר על סיפונם סמי וחבריו אלביס ופני, כאשר הצוות משתנה מפעם לפעם."
 
 msgctxt "#105520
 msgid ""
@@ -5432,8 +5437,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#106030
-msgid ""
-msgstr ""
+msgid "Baby Einstein is a line of multimedia products and toys that specialize in interactive activities for preschoolers below 4 years of age."
+msgstr "בייבי איינשטיין היא סדרת מוצרי מולטימדיה לימודית לתינוקות, הנמכרת היטב ברחבי העולם. רוב הסדרה נועדה לחשוף תינוקות למוזיקה קלאסית והצילומים בתקליטורים מתמקדים בעיקר בצעצועים לפעוטות."
 
 msgctxt "#106040
 msgid ""
@@ -5472,12 +5477,12 @@ msgid ""
 msgstr ""
 
 msgctxt "#106130
-msgid ""
-msgstr ""
+msgid "Loveable siblings Billy and BamBam find creative and fun ways to play with everything – leaves, bowls, socks and even oranges!"
+msgstr "Loveable siblings Billy and BamBam find creative and fun ways to play with everything – leaves, bowls, socks and even oranges!"
 
 msgctxt "#106140
-msgid "The series is set in a fictional version of Malibu, California where all of its inhabitants are dolls. The dolls behave like people, though a number of the show's gags rely on their doll-like nature. The series centers on the life of Barbie, her friends, siblings and her boyfriend Ken. The series is stylized as a mock reality show featuring confessionals of the characters in between scenes."
-msgstr "The series is set in a fictional version of Malibu, California where all of its inhabitants are dolls. The dolls behave like people, though a number of the show's gags rely on their doll-like nature. The series centers on the life of Barbie, her friends, siblings and her boyfriend Ken. The series is stylized as a mock reality show featuring confessionals of the characters in between scenes."
+msgid ""
+msgstr ""
 
 msgctxt "#106150
 msgid "The show centers on a curious polar bear named Bernard, whose bumbling slapstick antics typically result in the bear being knocked unconscious or being severely injured by the end of an episode. Bernard doesn't speak, but he does communicate through guttural sounds."
@@ -5511,8 +5516,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#106230
-msgid ""
-msgstr ""
+msgid "The Care Bears are a group of multi-colored bear characters created by American Greetings Corporation, LLC in 1981, through its Those Characters From Cleveland research and development division, for use on greeting cards."
+msgstr "מספר נבלים שונים מנסים בסדרות ובסרטים לסכל את משימותיהם של הדובונים כי מטרתם היא למצוא את מחבוא ארץ אכפתיה ולקחת את סמלי הבטן של הדובונים. במהלך העונה הראשונה של הסדרה המקורית משנות השמונים היה זה פרופסור לב קר הרשע ועוזרו לב שפל ובעונה השנייה של אותה הסדרה הנבל הראשי היה "חסר לב" ועוזריו ספחת וצרחת."
 
 msgctxt "#106240
 msgid ""
@@ -5523,8 +5528,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#106260
-msgid ""
-msgstr ""
+msgid "Heathcliff (aka Heathcliff and The Catillac Cats) is an American animated television series that debuted on September 5, 1984."
+msgstr "Heathcliff (aka Heathcliff and The Catillac Cats) is an American animated television series that debuted on September 5, 1984."
 
 msgctxt "#106270
 msgid ""
@@ -5563,8 +5568,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#106360
-msgid ""
-msgstr ""
+msgid "The series focuses on the life of young rabbit Miffy. It is presented in a storybook style, with an unseen narrator explaining the actions of nonspeaking Miffy and her friends."
+msgstr "The series focuses on the life of young rabbit Miffy. It is presented in a storybook style, with an unseen narrator explaining the actions of nonspeaking Miffy and her friends."
 
 msgctxt "#106370
 msgid "Pocoyo is the eponymous main character of the series. He is a four-year-old boy who is full of curiosity and loves to play games and discover new things."
@@ -5663,8 +5668,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#106620
-msgid ""
-msgstr ""
+msgid "BabyTV’s favourite foursome, the “Cuddlies”, present a series of entertaining stories from the world of the toddler. Join our charming friends and explore co-operation, sharing, and caring, as they help each-other solve simple dilemmas in a delightful, cooperative way."
+msgstr "BabyTV’s favourite foursome, the “Cuddlies”, present a series of entertaining stories from the world of the toddler. Join our charming friends and explore co-operation, sharing, and caring, as they help each-other solve simple dilemmas in a delightful, cooperative way."
 
 msgctxt "#106630
 msgid ""
@@ -5833,24 +5838,24 @@ msgid ""
 msgstr ""
 
 msgctxt "#107040
-msgid ""
-msgstr ""
+msgid "Whisker Haven Tales with the Palace Pets is a series starring a core group of six palace pets: Treasure, Pumpkin, Petite, Sultan, Dreamy and Berry along with the caretaker fairy hummingbird Ms. Featherbon. These Palace Pets enter magical portals from their respective Princess Kingdoms and travel to the animal kingdom of Whisker Haven. In this new magical world, the Palace Pets go on fun-filled adventures and learn to value friendship, kindness and loyalty. From putting on a dance show to throwing the biggest ball, there’s no task too big, too small, or too glamorous for the Palace Pets."
+msgstr "Whisker Haven Tales with the Palace Pets is a series starring a core group of six palace pets: Treasure, Pumpkin, Petite, Sultan, Dreamy and Berry along with the caretaker fairy hummingbird Ms. Featherbon. These Palace Pets enter magical portals from their respective Princess Kingdoms and travel to the animal kingdom of Whisker Haven. In this new magical world, the Palace Pets go on fun-filled adventures and learn to value friendship, kindness and loyalty. From putting on a dance show to throwing the biggest ball, there’s no task too big, too small, or too glamorous for the Palace Pets."
 
 msgctxt "#107050
 msgid ""
 msgstr "הכירו את לין: הכירו את לין החייכנית והאופטימית אשר מאמינה שפרחים ממלאים את הלב שמחה, העצים עושים מצב רוח טוב, ופירות זו הדרך של העולם להגיש לנו ממתקים של הטבע.[CR][CR]בכדי להשיב טוּב לעולם הנדיב לין שותלת, עודרת, מטפחת ונוטעת בגינה המתוקה שלה."
 
 msgctxt "#107060
-msgid ""
-msgstr ""
+msgid "Team Umizoomi is a computer animated fantasy musical series with an emphasis on preschool mathematical concepts, such as counting, sequences, shapes, patterns, measurements, and comparisons."
+msgstr "Team Umizoomi is a computer animated fantasy musical series with an emphasis on preschool mathematical concepts, such as counting, sequences, shapes, patterns, measurements, and comparisons."
 
 msgctxt "#107070
 msgid ""
 msgstr "בוב הבנאי (באנגלית: Bob the Builder) היא סדרת אנימציית סטופ מושן בריטית לילדים שנוצרה על ידי קית' צ'פמן.[CR] התוכנית נחשבת לאחת מתוכניות הטלוויזיה לילדים המצליחות ביותר בבריטניה.[CR][CR]סדרה עוסקת בהרפתקאותיו של בנאי בריטי בשם בוב, ובחבריו שחלקם הם מכונות צמ"ה מואנשות שונות. בוב עובד עם וונדי ולשניהם יש חתול בשם פילצ'ארד. בכל פרק מתמקדת החבורה בבניית בניין כלשהו (מפעל חדש, מצפה אסטרונומי, וכו') או בשיפוצים ותיקונים שונים, תוך שיתוף פעולה כדי לפתור מגוון רחב של בעיות. בנוסף לכך, מתמקדות עלילות הפרקים גם בסיפורים האישיים של הדמויות השונות.[CR]בתוכנית מושם דגש על יישוב קונפליקטים, עבודה בשיתוף פעולה, חברות, תכנון ומיומנויות למידה שונות. אמרת הכנף הקבועה של בוב היא "נצליח לתקן", והתשובה הקבועה של שאר הדמויות היא: "כן, כן, כן". אמרת כנף זו היא גם כותרת שיר הנושא של התוכנית, אשר היה להיט בבריטניה. למעלה ממיליון עותקים נמכרו משיר זה לאורך השנים בבריטניה בלבד, והוא היה השיר הנמכר ביותר בבריטניה בשנת 2000.‏[1][CR]על אף שהעונות הראשונות בשנים 1998 עד 2002 של הסדרה הופקו באנימצית סטופ מושן, העונות המתקדמות יותר של הסדרה בשנת 2011 הופקו בהמשך באמצעות אנימציה ממוחשבת. כמו כן, בעקבות ההצלחה של הסדרה הופקה בהמשך סדרת ספין אוף בשם "Ready, Steady, Build!".‏‏[2][CR]בשנת 2001 יצא לשווקים סרט באורך מלא של בוב הבנאי שבו השתתף אלטון ג'ון. לאורך השנים הסדרה שודרה ב-30 מדינות שונות.[CR]בשנת 2014 שונה מראהו של בוב הבנאי למראה צעיר וגבוה יותר‏[3]. כמו כן גם המדבב של בוב בגרסה האנגלית השתנה."
 
 msgctxt "#107080
-msgid ""
-msgstr ""
+msgid "Blaze and the Monster Machines is an educational American CGI interactive animated television series."
+msgstr "Blaze and the Monster Machines is an educational American CGI interactive animated television series."
 
 msgctxt "#107090
 msgid "Little Bear is an educational Canadian children's animated series based on the Little Bear series of books written by Else Holmelund Minarik, and illustrated by Maurice Sendak."
@@ -5861,7 +5866,7 @@ msgid ""
 msgstr ""
 
 msgctxt "#107110
-msgid ""
+msgid "In this series, Dora, who is older than she was in the original Dora the Explorer series, attends school and lives in the city of Playa Verde. She has five friends: Kate, who loves art, Emma, who loves music, Alana, who's tomboyish and loves animals, Naiya, who is smart and enjoys reading, and Pablo, who enjoys playing soccer. Together, Dora and her friends work together and go on adventures while discovering the secrets of their city. Dora has a magical charm bracelet and a smartphone, complete with an app version of the previous series' map to aid her."
 msgstr "הכירו את לין: הכירו את לין החייכנית והאופטימית אשר מאמינה שפרחים ממלאים את הלב שמחה, העצים עושים מצב רוח טוב, ופירות זו הדרך של העולם להגיש לנו ממתקים של הטבע.[CR][CR]בכדי להשיב טוּב לעולם הנדיב לין שותלת, עודרת, מטפחת ונוטעת בגינה המתוקה שלה."
 
 msgctxt "#107120
@@ -5913,8 +5918,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#107240
-msgid ""
-msgstr ""
+msgid "The show follows mischievous, charming Peter Rabbit as he overcomes obstacles, outwits predators and avoids danger. Peter wants to grow up to be just like his late father and carries his journal (a guide on how to be a good rabbit) on his adventures with his friends, Cousin Benjamin Bunny and new character Lily Bobtail, in the Lake District of northern England."
+msgstr "הרפתקאות פיטר הארנב היא סדרת טלוויזיה אמריקאית המשודרת בישראל בערוץ הופ משנת 2014, זה מבוסס על ספר באותו שם אשר יצא בשנת 1992."
 
 msgctxt "#107250
 msgid ""
@@ -5957,8 +5962,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#107350
-msgid ""
-msgstr ""
+msgid "The series features the title character Barney, a purple anthropomorphic tyrannosaurus rex who conveys educational messages through songs and small dance routines with a friendly, optimistic attitude. Production of new episodes ceased in 2009, although reruns of the series were still shown on several PBS stations in following years. From 2005 until 2015 reruns aired on Sprout. A revival of the series is set for a 2017 launch."
+msgstr "כוכב הסדרה הוא דינוזאור סגול וידידותי מסוג טירנוזאור רקס אשר מחנך ומבדר קבוצת ילדים באמצעות שירים, ריקודים ובעזרת גישה ידידותית ואופטימית. ברוב הפרקים הופיעו גם הדינוזאורית הירוקה בובה בון והדינוזאור הצהוב בובי בן, והחל משנת 2006, הצטרף הדינוזאור הכתום ריף. לחנו של הפתיח מבוסס על השיר האמריקני העממי "ינקי דודל"."
 
 msgctxt "#107360
 msgid ""
@@ -5969,8 +5974,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#107380
-msgid ""
-msgstr ""
+msgid "The 7D defend the land of Jollywood from the magical villains Grim and Hildy Gloom who attempt to dethrone Queen Delightful and rule Jollywood.[1] The Glooms attempt to steal magical gems from the 7D mine to aid in their efforts."
+msgstr "הסדרה מתרחשת בעולם המופלא של שמחה-ליווד, שבו המלכה עונג מסתמכת על שבעת הגמדים - עליזי, ביישני, ישנוני, אפצ'י, שטיא, רטנוני ודוק, שישמרו על ביטחון הממלכה. בדרכם של הגמדים עומדים שני נבלים מרושעים בשם גרים והילדי האפלוליים, שמתכננים להשתלט על הממלכה באמצעות גניבת האוצרות הקסומים שנמצאים במכרה של שבעת הגמדים. שבעת הגמדים, השונים זה מזה באופיים, תמיד מצליחים להציל את המצב ולשלוח את הילדי ואת גרים בחזרה למאורת הרשע שלהם."
 
 msgctxt "#107390
 msgid ""
@@ -6005,8 +6010,8 @@ msgid ""
 msgstr "כוכבת הילדים מיקי ילדה מצחיקה בעלת דמיון מפותח ביחד עם סבא נתי, הכלב פונץ' ונדב."
 
 msgctxt "#107470
-msgid ""
-msgstr ""
+msgid "Rosie is the lead character and has brightly coloured ribboned hair held together with a large green button and has a positive attitude, keen sense of adventure and loves playing with her friends, especially her best friend Raggles."
+msgstr "Rosie is the lead character and has brightly coloured ribboned hair held together with a large green button and has a positive attitude, keen sense of adventure and loves playing with her friends, especially her best friend Raggles."
 
 msgctxt "#107480
 msgid ""
@@ -6025,8 +6030,8 @@ msgid "The Adventures of Luntik and his friends (Приключения Лунт
 msgstr "The Adventures of Luntik and his friends (Приключения Лунтика и его друзей) (or Moonzy) or simply Luntik (Лунтик) a Russian educational animated series for preschoolers."
 
 msgctxt "#107520
-msgid ""
-msgstr ""
+msgid "A tech-savvy boy named Ryder leads a pack of seven dogs: Marshall, Rubble, Chase, Rocky, Zuma, Skye and Everest (the last of which was added to the team in season two). With a unique blend of stunts, pop culture references and lots of child-friendly humor, the PAW Patrol works together on high-stakes rescue missions to protect the city of Adventure Bay. Their most frequent caller is a fisherman named Cap'n Turbot, who knows a lot about the ocean and loves hanging out with the pups."
+msgstr "A tech-savvy boy named Ryder leads a pack of seven dogs: Marshall, Rubble, Chase, Rocky, Zuma, Skye and Everest (the last of which was added to the team in season two). With a unique blend of stunts, pop culture references and lots of child-friendly humor, the PAW Patrol works together on high-stakes rescue missions to protect the city of Adventure Bay. Their most frequent caller is a fisherman named Cap'n Turbot, who knows a lot about the ocean and loves hanging out with the pups."
 
 msgctxt "#107530
 msgid ""
@@ -6042,7 +6047,7 @@ msgstr ""
 
 msgctxt "#107560
 msgid "Simsala Grimm (2001-2005) is a German television series, consisting of stories based on fairy tales by Grimm Brothers, Hans Christian Andersen and other notable authors."
-msgstr "Simsala Grimm (2001-2005) is a German television series, consisting of stories based on fairy tales by Grimm Brothers, Hans Christian Andersen and other notable authors."
+msgstr "ספר הקסמים לוקח אותנו למסע עם האגדות המוכרות ביותר בעולם. עולמם של האחים גרים מתעורר לתחייה בעזרת איורים מרהיבים ומבעד לנקודת המבט הייחודית והמבדרת של קרוקי ויויו. קרוקי, תולעת הספרים, ויויו, זאב הערבות, עושים בכל פרק את כל שביכולתם כדי שגיבורי האגדות יגיעו אל הסוף הטוב ויחיו באושר ובעושר."
 
 msgctxt "#107570
 msgid ""
@@ -6053,16 +6058,16 @@ msgid ""
 msgstr ""
 
 msgctxt "#107590
-msgid ""
-msgstr ""
+msgid "Miles from Tomorrowland is an animated space adventure series. It centers on the Callisto family who live on a spaceship called the Stellosphere and work for the Tomorrowland Transit Authority (TTA)."
+msgstr "ערי הזהב הנסתרותבני משפחת קליסטו עובדים בחלל החיצון עבור תאגיד "עולם המחר". כל יום הם יוצאים להרפתקאות בחלל החיצון עם בנם בן ה-7, מיילס ואחותו הגדולה."
 
 msgctxt "#107600
 msgid ""
 msgstr ""
 
 msgctxt "#107610
-msgid ""
-msgstr ""
+msgid "Фи́ксики — российский анимационный мультсериал. Создан по мотивам повести Эдуарда Успенского «Гарантийные человечки». С 13 декабря 2010 года выходит в телепередаче «Спокойной ночи, малыши!» на канале «Россия-1». Также выходит на телеканалах «Карусель» и «Детский». С июля по декабрь 2014 года транслировался на телеканале «Культура». С осени 2014 года транслируется на телеканале «Мульт»["
+msgstr "Фи́ксики — российский анимационный мультсериал. Создан по мотивам повести Эдуарда Успенского «Гарантийные человечки». С 13 декабря 2010 года выходит в телепередаче «Спокойной ночи, малыши!» на канале «Россия-1». Также выходит на телеканалах «Карусель» и «Детский». С июля по декабрь 2014 года транслировался на телеканале «Культура». С осени 2014 года транслируется на телеканале «Мульт»["
 
 msgctxt "#107620
 msgid "The series centers around Fanboy and Chum Chum, a pair of hyperactive, odd, energetic, and slow-witted best friends enthusiastically obsessed with superhero comics, particularly those featuring their favorite superhero Man-Arctica, who also apparently seems to double as a holiday figurehead parodying Santa Claus within the series."
@@ -6101,8 +6106,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#107710
-msgid ""
-msgstr ""
+msgid "The series follows the lives and adventures of racing vehicles Roary, Maxi, Cici, Drifter, Tin Top and the human people they work for, Big Chris and Marsha the mechanics and the owner of the race track Mr. Carburettor. Also there's P.C. Pete, local Farmer Green, Molecom, Flash and many more. The plot sometimes revolves around other vehicle characters, such as Rusty, FB, Nick, Plugger, Zippee, Hellie, Breeze, Conrod, James and Loada."
+msgstr "The series follows the lives and adventures of racing vehicles Roary, Maxi, Cici, Drifter, Tin Top and the human people they work for, Big Chris and Marsha the mechanics and the owner of the race track Mr. Carburettor. Also there's P.C. Pete, local Farmer Green, Molecom, Flash and many more. The plot sometimes revolves around other vehicle characters, such as Rusty, FB, Nick, Plugger, Zippee, Hellie, Breeze, Conrod, James and Loada."
 
 msgctxt "#107720
 msgid ""
@@ -6117,12 +6122,12 @@ msgid ""
 msgstr ""
 
 msgctxt "#107750
-msgid ""
-msgstr ""
+msgid "Hazel Charming (voiced by Addison Holley) - A young Charmer magic is known for its tendency not to work out well. Sometimes Hazel uses her wand in Charmhouse."
+msgstr "Hazel Charming (voiced by Addison Holley) - A young Charmer magic is known for its tendency not to work out well. Sometimes Hazel uses her wand in Charmhouse."
 
 msgctxt "#107760
-msgid ""
-msgstr ""
+msgid "The series chronicles freckled,six-year-old (later seven) Dottie "Doc" McStuffins who decides she wants to become a doctor like her mother. She practices her dream by fixing toys and dolls."
+msgstr "The series chronicles freckled,six-year-old (later seven) Dottie "Doc" McStuffins who decides she wants to become a doctor like her mother. She practices her dream by fixing toys and dolls."
 
 msgctxt "#107770
 msgid "מהדורת חדשות מיוחדת ששום דבר בה לא מצליח להיות רציני.[CR][CR]עם עמוס דיקט הקריין שרק רוצה לצלוח את המהדורה בשלום, פיפי מנדולינה כתבת ל"עניינים רציניים", מטר רץ כתב הספורט והבריאות, דפי נידפי החזאית ומוקי הכלב."
@@ -6222,8 +6227,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#108010
-msgid ""
-msgstr ""
+msgid "Eek! the Cat is about a purple cat named Eek whose motto is "it never hurts to help". This attitude generally gets him into trouble, from which much of the humor of the show is derived. Other characters include Eek!'s human family, with whom he cannot communicate via spoken language; Sharky the Sharkdog (his worst nightmare), and Eek's girlfriend, Annabelle."
+msgstr "Eek! the Cat is about a purple cat named Eek whose motto is "it never hurts to help". This attitude generally gets him into trouble, from which much of the humor of the show is derived. Other characters include Eek!'s human family, with whom he cannot communicate via spoken language; Sharky the Sharkdog (his worst nightmare), and Eek's girlfriend, Annabelle."
 
 msgctxt "#108020
 msgid "Ivan Leonidovich Maximov (Russian: Иван Леонидович Максимов; born 19 November 1958) is an artist, professional animator and director."
@@ -6286,16 +6291,16 @@ msgid "House of Anubis is a jointly Nickelodeon British, American, and Belgian m
 msgstr "בית אנוביס (באנגלית: House of Anubis) היא סדרת מתח-דרמה בהפקה משותפת אמריקאית-בלגית-בריטית, המיועדת לבני נוער."
 
 msgctxt "#108170
-msgid ""
-msgstr ""
+msgid "Adventures of Louie Anderson as a child, growing up with his sweet-hearted mother, his loud and war crazed father, his 10 siblings, and children at school who love to tease him."
+msgstr "Adventures of Louie Anderson as a child, growing up with his sweet-hearted mother, his loud and war crazed father, his 10 siblings, and children at school who love to tease him."
 
 msgctxt "#108180
-msgid ""
-msgstr ""
+msgid "To many, it's modern day folklore, to others it is simply tabloid headlines but to a select few it is the ultimate reality. Intergalactic aliens have arrived on Earth, now they move among us."
+msgstr "To many, it's modern day folklore, to others it is simply tabloid headlines but to a select few it is the ultimate reality. Intergalactic aliens have arrived on Earth, now they move among us."
 
 msgctxt "#108190
-msgid ""
-msgstr ""
+msgid "Jim Button and his best friend Luke live on an island. When Luke has to leave the island Jim decides to go with him. when they leave they don't have a clue about the hidden dangers in the world. while traveling they learn that a young princess name Lisi was captured by pirates whom brought her to Sorrowland. The evil and dangerous dragon miss. Grindtooth rules in that land. Jim and Luke decide to go to Sorrowland to save princess Lisi."
+msgstr "Jim Button and his best friend Luke live on an island. When Luke has to leave the island Jim decides to go with him. when they leave they don't have a clue about the hidden dangers in the world. while traveling they learn that a young princess name Lisi was captured by pirates whom brought her to Sorrowland. The evil and dangerous dragon miss. Grindtooth rules in that land. Jim and Luke decide to go to Sorrowland to save princess Lisi."
 
 msgctxt "#108200
 msgid "Anthology of famous events of the Old Testament."
@@ -6306,28 +6311,28 @@ msgid ""
 msgstr ""
 
 msgctxt "#108220
-msgid ""
-msgstr ""
+msgid "The series is focused primarily on a group of elementary school students. Miss Graves, their teacher, is usually shown as an interlocutor in the problems and injustices that are inflicted upon the students, whether the dilemmas be internal or external. Each episode usually ends with a substantiated moral or lesson resulting from such aforementioned situations."
+msgstr "The series is focused primarily on a group of elementary school students. Miss Graves, their teacher, is usually shown as an interlocutor in the problems and injustices that are inflicted upon the students, whether the dilemmas be internal or external. Each episode usually ends with a substantiated moral or lesson resulting from such aforementioned situations."
 
 msgctxt "#108230
 msgid "Paddington Bear is a series of British animated shorts based on the Paddington Bear book series by Michael Bond produced by FilmFair."
 msgstr "Paddington Bear is a series of British animated shorts based on the Paddington Bear book series by Michael Bond produced by FilmFair."
 
 msgctxt "#108240
-msgid ""
-msgstr ""
+msgid "The Spy Dogs are a secret organization of dogs that are dedicated to protecting their world.[1]"
+msgstr "The Spy Dogs are a secret organization of dogs that are dedicated to protecting their world.[1]"
 
 msgctxt "#108250
-msgid ""
-msgstr ""
+msgid "Environmental activists Mom and Pop Tofu, concerned that their family is suffocating from urban routine, decide to move to a farmhouse in the town of Beauvillage and embrace a more natural way of life, much to the horror of their pre-teen children, Chichi and Lola. They would rather watch TV and go shopping than amuse themselves with Grandma Buba's animals: Cracker the Rooster, Curly the Sheep, and Suzie the Goat. The siblings must cope with their parents' ecology-friendly world vision and the humiliation that results from their efforts to encourage others to protect the environment."
+msgstr "Environmental activists Mom and Pop Tofu, concerned that their family is suffocating from urban routine, decide to move to a farmhouse in the town of Beauvillage and embrace a more natural way of life, much to the horror of their pre-teen children, Chichi and Lola. They would rather watch TV and go shopping than amuse themselves with Grandma Buba's animals: Cracker the Rooster, Curly the Sheep, and Suzie the Goat. The siblings must cope with their parents' ecology-friendly world vision and the humiliation that results from their efforts to encourage others to protect the environment."
 
 msgctxt "#108260
-msgid ""
-msgstr ""
+msgid "Louie is a cute little rabbit. With the help of his friend Yoko, the ladybird, they draw many exciting things for children to discover : a house, an aeroplane, a kangaroo, a rocket and even an elephant. Children can learn to be master artists themselves."
+msgstr "Louie is a cute little rabbit. With the help of his friend Yoko, the ladybird, they draw many exciting things for children to discover : a house, an aeroplane, a kangaroo, a rocket and even an elephant. Children can learn to be master artists themselves."
 
 msgctxt "#108270
-msgid ""
-msgstr ""
+msgid "העלילה מתמקדת ביותם, חנון מלידה והדמות הראשית בסדרה, המקים יחד עם חבריו מועדון בשם "מועדון החנונים". במועדון החנונים פועלים לפי ספר חוקים אותו כותב יותם בכל סוף פרק. בסדרה בני האדם משתייכים למעמדות שונים: בריונים, חנונים ומקובלים. המקובלים והחנונים חווים יחד אהבות, מזימות, אכזבות, בלגנים ודברים אחרים."
+msgstr "העלילה מתמקדת ביותם, חנון מלידה והדמות הראשית בסדרה, המקים יחד עם חבריו מועדון בשם "מועדון החנונים". במועדון החנונים פועלים לפי ספר חוקים אותו כותב יותם בכל סוף פרק. בסדרה בני האדם משתייכים למעמדות שונים: בריונים, חנונים ומקובלים. המקובלים והחנונים חווים יחד אהבות, מזימות, אכזבות, בלגנים ודברים אחרים."
 
 msgctxt "#108280
 msgid "The series chronicles the hilarious and unlikely friendship between Max Asher (Jonny Gray), a celebrity snowboarder, and Alvin "Shred" Ackerman (Jake Goodman), a science whiz-kid, who become roommates and instant friends when Max moves to Colorado to train for the Winter Cup."
@@ -6398,40 +6403,40 @@ msgid ""
 msgstr ""
 
 msgctxt "#108450
-msgid ""
-msgstr ""
+msgid "Rabbids Invasion is a French/American animated television series which premiered on August 3, 2013 on Nickelodeon. It was produced by Ubisoft Motion Pictures, TeamTO, France Télévisions and Nickelodeon Productions. The show is based on the Raving Rabbids video game series produced by Ubisoft."
+msgstr "Rabbids Invasion is a French/American animated television series which premiered on August 3, 2013 on Nickelodeon. It was produced by Ubisoft Motion Pictures, TeamTO, France Télévisions and Nickelodeon Productions. The show is based on the Raving Rabbids video game series produced by Ubisoft."
 
 msgctxt "#108460
 msgid ""
 msgstr ""
 
 msgctxt "#108470
-msgid ""
-msgstr ""
+msgid "The program is set in Antarctica and centres around penguin families living and working in igloos. The main character, Pingu, belongs to one such family. He frequently goes on adventures with his little sister, Pinga, and often gets into mischief with his best friend, Robby the Seal."
+msgstr "The program is set in Antarctica and centres around penguin families living and working in igloos. The main character, Pingu, belongs to one such family. He frequently goes on adventures with his little sister, Pinga, and often gets into mischief with his best friend, Robby the Seal."
 
 msgctxt "#108480
-msgid ""
-msgstr ""
+msgid "The series focuses on Harvey Beaks, a young, friendly bird, and his two best friends, the rambunctious twins Fee and Foo. Together, the trio seek adventure and mischief in Littlebark Grove, a magical forest that they call home."
+msgstr "הסדרה עוקבת אחר הרפתקאותיהם של הארווי, גוזל מנומס וחבריו התאומים אנרגטיים פי ופו ברחבי היער."
 
 msgctxt "#108490
-msgid ""
-msgstr ""
+msgid "Galis is an Israeli youth series broadcast from February 12, 2012, the children's channel subscribers HOT. The series focuses upon a summer camp called Galis, and the adventures of campers to Treasure Sargon - Boards Fate and Lost City. Galis is a spin-off of the series "The Dreamers". In August 2014, the movie "Galis: Quest for Astra" is released."
+msgstr "גאליס היא סדרת נעורים ישראלית המשודרת החל מ-פברואר 2012 בערוץ הילדים למנויי HOT בבימויו של עודד רז. הסדרה עוסקת במחנה קיץ ששמו "גאליס", ובהרפתקה של חניכי המחנה אל "לוחות הגורל", העיר האבודה - "גאליסיה", "מעיין הנשמות" ו"ספר הבריאה". "גאליס" היא ספין-אוף של הסדרה "החולמים". באוגוסט 2014, יצא הסרט "גאליס - המסע לאסטרה" שמבוסס על הסדרה.[CR]הסדרה היא זוכת פרס סדרת השנה בטקס נבחרי הילדים בשנים 2012 עד 2015. בעקבות הצלחתה נמכרה הסדרה לערוץ Planet Kids האיטלקי ודובבה לאיטלקית.‏ הסדרה נמכרה לדיבוב גם לאנגלית ולהינדית.‏"
 
 msgctxt "#108500
 msgid ""
-msgstr ""
+msgstr "האחים קראט לאחר הופעתם בסדרה "זובומפו" וחבריהם נוסעים מסביב לעולם בחיפוש אחר חיות מזן נדיר, ומגינים עליהם מפני מזימתם של זק ושותפיו. בארצות אחרות הסדרה מתחילה עם האנשים האמיתיים שמדובבים את האחים המונפשים.תמיד יש אחד בלונדיני ואחד שחרחר אבל אלו הם שחקנים שמדובבים את הדמויות.בארץ אין את השחקנים המדובבים שנוסעים למסעות בעולם. ואין את האמיתיים."
 
 msgctxt "#108510
-msgid ""
-msgstr ""
+msgid "A case of mistaken identity causes ordinary highschool student, Ace McDougal to be thrown into the fast paced world of hi-tech super spies. During a normal trip to the dentist's office, Ace is accidentally fitted out with a set of hi-tech, super spy braces, loaded with dozens of different gadgets and a holographic artificial intelligence program named Hugo, that only he can see. Against the odds, Ace and Hugo (Holographic User Guidance Operative) must learn to get along in order to keep the braces secret and safe. The braces original owner Ned Krinkle, an evil spy and master of disguise, will do anything to get them back."
+msgstr "התוכנית מספרת על עלילותיו של אייס מקדוגל שקיבל בטעות פלטה משוכללת מרופא שיניים. כאשר הוא משתמש בפלטה היא גורמת לו צרות רבות וגם לסובבים אותו."
 
 msgctxt "#108520
 msgid ""
 msgstr ""
 
 msgctxt "#108530
-msgid ""
-msgstr ""
+msgid "LazyTown (Icelandic: Latibær) is an Icelandic educational musical children's television program with a cast and crew from Iceland, the United Kingdom, and the United States."
+msgstr "הסדרה מתמקדת בשכונה רדומה וחסרת אירועים הנקראת "נווה עצלנות" שהאתלטיות של תושביה מתעוררת עם הגעתה של תושבת חדשה בשם סטפני המעודדת ומקדמת תרבות ספורט ובריאות בקרב התושבים. מלבד סטפני, התושבים מושפעים מגיבור מקומי בשם "ספורטקס" (באנגלית: "ספורטקוס" - "Sportacus " (הלחם של ספרטקוס וספורט).[CR]עם זאת, ישנו תושב נוסף בנווה עצלנות בשם "רובי רקב" החי במאורה וזומם לסכל את פעילויות הספורט של תושבי השכונה כדי להחזיר את נווה עצלנות למצבה הרדום."
 
 msgctxt "#108540
 msgid "Soul Eater is set at Death Weapon Meister Academy (死神武器職人専門学校 Shinigami Buki Shokunin Senmon Gakkō?)—"DWMA" (死武専 Shibusen?) for short—located in the fictional Death City in Nevada, United States."
@@ -6442,16 +6447,16 @@ msgid ""
 msgstr ""
 
 msgctxt "#108560
-msgid ""
-msgstr ""
+msgid "Beavis and Butt-Head are in ninth grade at Highland High School. Their stupidity leads to a demotion all the way down to kindergarten in the episode "Held Back," but they soon prove to be such an annoyance that the elementary school principal quickly re-promotes them back to Highland High."
+msgstr "ביוויס ובאטהד, יחד עם סדרות אנימציה כמו "רן וסטימפי" ו"משפחת סימפסון", מתחו את גבולות האנימציה האמריקאית והפכו אותה למדיום שחורג מבידור "נקי" לילדים. כתוצאה מכך, עוררה הסדרה תגובות מעורבות. בעוד שרבים מחו על הסגנון הבוטה, אחרים חלקו שבחים לביקורת התרבות הסמויה של הסדרה ולאופן הסאטירי שבו תיארה את החיים באמריקה. חלק מהמבקרים אף טענו כי מדובר בסאטירה נגד תרבות ה-MTV עצמה, וראו בביוויס ובאטהד את מייצגי דור "ילדי המפתח", שצפיית יתר בקליפים מוזיקליים פגעה ביכולתם לקיים אינטראקציות חברתיות נורמליות או לנהל יחסים בריאים עם בנות המין השני."
 
 msgctxt "#108570
-msgid ""
-msgstr ""
+msgid "The show follows the adventures of Adora, He-Man's twin sister, who leads a group of freedom fighters known as the Great Rebellion in the fight to free Etheria from the tyrannical rule of Hordak and the Evil Horde. With her Sword of Protection Adora can become She-Ra, just as Prince Adam can become He-Man.[CR]Born on planet Eternia to Queen Marlena and King Randor, Princess Adora is kidnapped at birth by Hordak and taken to Etheria. There she serves as a Horde Force Captain before He-Man rescues her. After reuniting with her parents on Eternia, She-Ra decides to return to Etheria and lead the Great Rebellion."
+msgstr "שי-רה נסיכת הכוח (אנגלית: She-Ra: Princess of Power) היא סדרת אנימציה של אולפני "פילמיישן" (Filmation) מז'אנר פנטזיה/פעולה והמדע בדיוני שמבוססת על סדרת צעצועים אשר מיוצרות על ידי חברת מאטל (Mattel) עם אותו שם. זוהי סדרת בת לסדרת האנימציה הי-מן ושליטי היקום במרכזה עומדת שי-רה, אחותו התאומה היפה של הי-מן, הנלחמת נגד כנופיית הרוע ברשותו של הורדאק, מכשף רובוטי מרושע. הסדרה המקורית שודרה בשנים 1985-1987."
 
 msgctxt "#108580
-msgid ""
-msgstr ""
+msgid "Like the original comic strip, the series begins with the fall of Thule, the fictional kingdom that Prince Valiant is heir to. Valiant, his parents, and a group of survivors from the castle are exiled by the ruthless conqueror Cynan to a hostile marsh across the sea. The young prince, deeply saddened by this defeat and vengeful towards Cynan, attempts to make the best of his new life but craves some greater purpose. He finds this purpose when he has a series of dreams about a kingdom called Camelot, King Arthur, Merlin, and the Knights of the Round Table."
+msgstr "Like the original comic strip, the series begins with the fall of Thule, the fictional kingdom that Prince Valiant is heir to. Valiant, his parents, and a group of survivors from the castle are exiled by the ruthless conqueror Cynan to a hostile marsh across the sea. The young prince, deeply saddened by this defeat and vengeful towards Cynan, attempts to make the best of his new life but craves some greater purpose. He finds this purpose when he has a series of dreams about a kingdom called Camelot, King Arthur, Merlin, and the Knights of the Round Table."
 
 msgctxt "#108590
 msgid ""
@@ -6474,8 +6479,8 @@ msgid "ספיד רייסר - הדור הבא היא סדרת אנימציה אמ
 msgstr "Speed Racer: The Next Generation is an American animated television series based on the classic Japanese Speed Racer franchise, in which the internal events take place decades after those in the 1967 Japanese series."
 
 msgctxt "#108640
-msgid ""
-msgstr ""
+msgid "Pig City is an animated television program originally airing on Teletoon (Canada), on September 1, 2002. It features a country pig (Mikey) moving to the big city to live with his cousins (Martha and Reggie)."
+msgstr "Pig City is an animated television program originally airing on Teletoon (Canada), on September 1, 2002. It features a country pig (Mikey) moving to the big city to live with his cousins (Martha and Reggie)."
 
 msgctxt "#108650
 msgid "הסדרה סובבת סביב תלמידי חטיבת ביניים טיפוסית, ופותחת צוהר אל עולמם של ילדים מרקעים שונים בגיל הייחודי שבין ילדות לבגרות.[CR]בסדרה נחשפים האלמנטים המרכזיים של חייהם: הווי בית הספר, המורים והבחינות; עולם התקשורת, המחשבים והאינטרנט; מותגים, תדמיות, וחיפוש אחר זהות אישית; מערכות היחסים עם האחים וההורים; תחילתה של עצמאות כלכלית מסוימת בגיל שבו אפשר לעבוד קצת; ובעיקר - התעוררות מהוססת וראשונית של יחסי אהבה ומשיכה לבני המין השני.'"
@@ -6518,8 +6523,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#108750
-msgid ""
-msgstr ""
+msgid "Rechov Sumsum (Hebrew: רחוב סומסום, "Sesame Street") is an Israeli educational television program for preschoolers, based on the popular U.S. children's show "Sesame Street"."
+msgstr ""רחוב סומסום" היא תוכנית טלוויזיה חינוכית לילדים בגילאי הרך. במקור הייתה זו תוכנית אמריקאית בשם "Sesame Street", אחת מתוכניות הילדים הוותיקות ביותר עד היום, ולאור הצלחתה, הופקו גרסאות מקומיות שלה ב-22 מדינות, לרבות בישראל."
 
 msgctxt "#108760
 msgid ""

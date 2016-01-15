@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="skin.featherence" version="0.2.4" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.2.5" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
 	<!--<import addon="repository.featherence" version="1.1.0" />-->
@@ -24,6 +24,7 @@
 - Varied buttons and views effects.
 - Enchanced widget and network status.
 - Full genres support.
+- ExtendedInfo support (Movies/TV/Actors/Directors/AutoComplete..)
 - Some views have an additional special features.
 - Dynamic weather and widgets fanart (optional).
 - Interactive video window &amp; OSD while navaigating.

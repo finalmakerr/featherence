@@ -696,11 +696,12 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					'''---------------------------'''
 				elif "&youtube_se2=" in x or "&youtube_se=" in x or "&custom_se=" in x:
 					if 'commonsearch' in x: x = x + space + str(name)
-					try:
+					#try:
+					if 1 + 1 == 2:
 						finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(x, name, iconimage, desc, fanart, playlist=playlist, onlydata=False)
 						finalurl = playlist_L
-					except Exception, TypeError: extra = extra + newline + "apimaster_TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
-					'''---------------------------'''
+					#except Exception, TypeError: extra = extra + newline + "apimaster_TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
+					
 				elif "&dailymotion_id=" in x:
 					x = x.replace("&dailymotion_id=","")
 					finalurl='plugin://plugin.video.dailymotion_com/?url='+x+'&mode=playVideo'
@@ -851,7 +852,7 @@ def MultiVideos_play(finalurl, pl, playlist, printpoint, General_TVModeShuffle, 
 					pl, playlist, printpoint = MultiVideos_play2(y, pl, playlist, printpoint)
 					count += 1
 					playlistN = int(len(playlist))
-					if count >= finalurlN: break
+					if count > finalurlN: break
 					elif playlistN >= 40:
 						printpoint = printpoint + 'x'
 						break
@@ -1011,6 +1012,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 	id_L = [] ; playlist_L = [] ; title_L = [] ; thumb_L = [] ; desc_L = [] ; fanart_L = []
 	id_ = ""   ; finalurl_ = ""   ; title_ = "" ; thumb_ = ""  ; desc_ = ""  ; fanart_ = ""
 	valid_ = "" ; invalid__ = "" ; duplicates__ = "" ; except__ = "" ; url = "" ; title2 = "" ; prms = "" ;  link = ""
+	resultsPerPage = pagesize
 	
 	if onlydata == True:
 		maxResults = '5'
@@ -1163,11 +1165,12 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 				totalResults = len(prms[u'id'])
 		else:
 			totalResults=int(prms['pageInfo'][u'totalResults']) #if bigger than pagesize needs to add more result
+			resultsPerPage = int(prms['pageInfo'][u'resultsPerPage'])
 		totalpagesN = (totalResults / pagesize) + 1
 		'''---------------------------'''
 
 		i = 0
-		while i < pagesize and i < totalResults and not "8" in printpoint and ((count + count_) < pagesize) and not xbmc.abortRequested: #h<totalResults
+		while i < pagesize and i < totalResults and i < resultsPerPage and not "8" in printpoint and ((count + count_) < pagesize) and not xbmc.abortRequested: #h<totalResults
 			
 			#try:
 			if 1 + 1 == 2:
@@ -1189,6 +1192,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 					if onlydata == True:
 						id_ = str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)
 					else:
+						print str(i)
 						id_ = str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)		
 				elif '&youtube_se2=' in x:
 					id_ = str(prms['items'][i][u'snippet'][u'channelId']) #Video ID (Search)
@@ -1348,6 +1352,13 @@ def apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, titl
 			invalid__ = invalid__ + newline + i_ + space2 + str(i) + space + "id_" + space2 + str(id_)
 		elif finalurl_ in playlist:
 			duplicates__ = duplicates__ + newline + i_ + space2 + str(i) + space + "id_" + space2 + str(id_)
+	
+	text = "i" + space2 + str(i) + space + "count" + space2 + str(count) + newline + \
+	'title_' + space2 + str(title_) + newline + \
+	"id_" + space2 + str(id_)
+
+	printlog(title='apimaster2', printpoint="", text=text, level=0, option="")
+	
 	return id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__
 
 def RanFromPlayList(playlistid):
@@ -1963,7 +1974,8 @@ def pluginend(admin):
 	------------------------------'''
 	if mode == None or ((url == None or len(url)<1) and mode < 100) or 1 + 1 == 3:
 		if addonID == 'plugin.video.featherence.kids' and General_Language == "":
-			CATEGORIES200(admin)
+			try: CATEGORIES200(admin)
+			except: pass
 			xbmc.executebuiltin('AlarmClock(firstrun,RunScript(script.featherence.service,,?mode=32&value=40),00:01,silent)')
 			
 		else: CATEGORIES()
