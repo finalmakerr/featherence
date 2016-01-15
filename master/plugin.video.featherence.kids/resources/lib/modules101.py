@@ -919,10 +919,10 @@ def CATEGORIES101I(General_LanguageL, background, background2): #אוסף סיפ
 	'''עברית'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=wallavod&name=%d7%a1%d7%99%d7%a4%d7%95%d7%a8%d7%99%d7%9d%20(7)&url=genre%3dkids%26genreId%3d7451')
 		list.append('&youtube_pl=PLyDbwArKjNV_8c791W2Ox9LxgSuhBaCtd')
 		list.append('&youtube_pl=PL74E72320D1F7932C')
 		list.append('&youtube_pl=PL6jaO-hu0Ivzi0gndI5Rb6YYcqut13wlD')
-		
 		list.append('&wallaNew=seasonId%3d2867134')
 		list.append('&wallaNew=seasonId%3d2585073')
 		list.append('&wallaNew=seasonId%3d2535850')
@@ -932,7 +932,6 @@ def CATEGORIES101I(General_LanguageL, background, background2): #אוסף סיפ
 		list.append('&wallaNew=item_id%3D2833303')
 		list.append('&youtube_id=tl64w59Hh8E')
 		list.append('&youtube_id=NPqxLDRQF3M')
-		list.append('&youtube_id=CvlF7okXM2g')
 		list.append('&youtube_id=uGXiT9zyYa0')
 		list.append('&youtube_id=HAXPFap0P0A')
 		list.append('&youtube_id=qSOsMgZ1iwk')
@@ -940,10 +939,6 @@ def CATEGORIES101I(General_LanguageL, background, background2): #אוסף סיפ
 		list.append('&youtube_id=QCFEPr9LLA0')
 		list.append('&youtube_id=8-t8ujUVVIQ')
 		list.append('&youtube_id=uGXiT9zyYa0')
-		list.append('&custom4=plugin://plugin.video.wallaNew.video/?mode=5&module=wallavod&name=%d7%a1%d7%99%d7%a4%d7%95%d7%a8%d7%99%20%d7%94%d7%aa%d7%a0%22%d7%9a&url=seriesId%3d2535848')
-		list.append('&custom4=plugin://plugin.video.wallaNew.video/?mode=5&module=wallavod&name=%d7%a1%d7%a8%d7%98%d7%99%d7%9d%20%d7%9e%d7%94%d7%a1%d7%a4%d7%a8%d7%99%d7%9d&url=seriesId%3d2554280')
-		list.append('&custom4=plugin://plugin.video.wallaNew.video/?mode=5&module=wallavod&name=%d7%a1%d7%99%d7%a4%d7%95%d7%a8%20%d7%95%d7%a9%d7%99%d7%a8%20%d7%a9%d7%9c%20%d7%9e%d7%99%d7%a8%d7%99%d7%a7%20%d7%a9%d7%a0%d7%99%d7%a8&url=seriesId%3d2585071')
-		list.append('&custom4=plugin://plugin.video.wallaNew.video/?mode=5&module=wallavod&name=%d7%a1%d7%a8%d7%98%d7%99%d7%9d%20%d7%9e%d7%94%d7%a1%d7%a4%d7%a8%d7%99%d7%9d%202&url=seriesId%3d2867132')
 	addDir('-' + addonString(10107).encode('utf-8') % (addonString_servicefeatherence(32900).encode('utf-8')),list,17,"http://flaglane.com/download/israeli-flag/israeli-flag-medium.png",addonString(101070).encode('utf-8') % (addonString_servicefeatherence(32900).encode('utf-8')),'1',50, getAddonFanart(background, custom="http://pre15.deviantart.net/2dd4/th/pre/f/2015/166/3/2/israel_aph_by_wolf_kid1000-d8xdbyp.jpg"))
 		
 	'''אנגלית'''

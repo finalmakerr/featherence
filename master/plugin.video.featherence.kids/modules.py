@@ -320,7 +320,7 @@ def CATEGORIES102(admin):
 		list.append('&youtube_id=CZDniCIenbA')
 		list.append('&youtube_id=H9rwsZ1roRQ')
 		list.append('&youtube_id=oAkA7DnCBdE')
-		list.append('&custom4=plugin://plugin.video.MakoTV/?url=http%3A%2F%2Fwww.mako.co.il%2Fmako-vod-kids%2FVOD-a4c39d434280e31006.htm%3FsCh%3D131102642cecc310%26pId%3D540607453&mode=4&name=%D7%A2%D7%95%D7%9C%D7%9E%D7%95+%D7%A9%D7%9C+%D7%99%D7%95%D7%91%D7%9C+%D7%94%D7%9E%D7%91%D7%95%D7%9C%D7%91%D7%9C&iconimage=http://img.mako.co.il/2013/04/21/1920X1080_yuval_world_f.jpg')
+		#list.append('&custom4=plugin://plugin.video.MakoTV/?url=http%3A%2F%2Fwww.mako.co.il%2Fmako-vod-kids%2FVOD-a4c39d434280e31006.htm%3FsCh%3D131102642cecc310%26pId%3D540607453&mode=4&name=%D7%A2%D7%95%D7%9C%D7%9E%D7%95+%D7%A9%D7%9C+%D7%99%D7%95%D7%91%D7%9C+%D7%94%D7%9E%D7%91%D7%95%D7%9C%D7%91%D7%9C&iconimage=http://img.mako.co.il/2013/04/21/1920X1080_yuval_world_f.jpg')
 	addDir(addonString(10731).encode('utf-8'),list,17,'http://yt3.ggpht.com/-FHcf2Rxu08A/AAAAAAAAAAI/AAAAAAAAAAA/dxzE2ng3uXI/s88-c-k-no/photo.jpg',addonString(107310).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://www.ashdodnet.com/dyncontent/t_post/2012/7/24/26370203843604787436.jpg"))
 	
 	'''ילד פלא'''
@@ -1264,7 +1264,10 @@ def CATEGORIES104(admin):
 		list.append('&youtube_id=1CshWmAFinY')
 		list.append('&youtube_id=a5WNY-FMMyQ')
 	addDir(addonString(10459).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/861.jpg',addonString(104590).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
-
+	
+	'''מלחמת הכוכבים: המורדים'''
+	CATEGORIES104G(General_LanguageL, background, background2)
+	
 	'''פליקס הארנב'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
@@ -1781,14 +1784,15 @@ def CATEGORIES105(admin):
 
 		'''סרטים מתורגמים'''
 		count = 1
+		if check_10q_tv == 'ok': 
+			addDir(addonString(10535).encode('utf-8') + space + str(count),'plugin://plugin.video.10qtv/?mode=6&name=%d7%9e%d7%a9%d7%a4%d7%97%d7%94&url=http%3a%2f%2fwww.10q.tv%2fboard%2ffilmy%2fmshfhha%2f17',8,'http://mirror.cinosure.com/superrepo/v5/addons/plugin.video.10qtv/icon.png',addonString(110).encode('utf-8'),'1',57) ; count += 1
+			addDir(addonString(10535).encode('utf-8') + space + str(count),'plugin://plugin.video.10qtv/?mode=6&name=אנימציה&url=http://www.10q.tv/board/filmy/animciha/5',8,'http://mirror.cinosure.com/superrepo/v5/addons/plugin.video.10qtv/icon.png',addonString(110).encode('utf-8'),'1',57) ; count += 1
+			'''---------------------------'''
 		if check_gozlan_me == 'ok':
 			addDir(addonString(10535).encode('utf-8') + space + str(count),'plugin://plugin.video.gozlan.me/?mode=1&name=%d7%a1%d7%a8%d7%98%d7%99%20%d7%90%d7%a0%d7%99%d7%9e%d7%a6%d7%99%d7%94&url=http%3a%2f%2fanonymouse.org%2fcgi-bin%2fanon-www.cgi%2fhttp%3a%2f%2fgozlan.co%2f%2fsearch.html%3fg%3d%25D7%2590%25D7%25A0%25D7%2599%25D7%259E%25D7%25A6%25D7%2599%25D7%2594',8,'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v5/addons/plugin.video.gozlan.me/icon.png','','1',58,getAddonFanart(background, custom="", default=background2)) ; count += 1
 			addDir(addonString(10535).encode('utf-8') + space + str(count),'plugin://plugin.video.gozlan.me/?mode=1&name=%d7%a1%d7%a8%d7%98%d7%99%20%d7%9e%d7%a9%d7%a4%d7%97%d7%94&url=http%3a%2f%2fanonymouse.org%2fcgi-bin%2fanon-www.cgi%2fhttp%3a%2f%2fgozlan.co%2f%2fsearch.html%3fg%3d%25D7%259E%25D7%25A9%25D7%25A4%25D7%2597%25D7%2594',8,'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v5/addons/plugin.video.gozlan.me/icon.png','','1',58,getAddonFanart(background, custom="", default=background2)) ; count += 1
 			'''---------------------------'''
-		if check_10q_tv == 'ok': 
-			addDir(addonString(10535).encode('utf-8') + space + str(count),'plugin://plugin.video.10qtv/?mode=6&name=אנימציה&url=http://www.10q.tv/board/filmy/animciha/5',8,'http://mirror.cinosure.com/superrepo/v5/addons/plugin.video.10qtv/icon.png',addonString(110).encode('utf-8'),'1',57) ; count += 1
-			addDir(addonString(10535).encode('utf-8') + space + str(count),'plugin://plugin.video.10qtv/?mode=6&name=%d7%9e%d7%a9%d7%a4%d7%97%d7%94&url=http%3a%2f%2fwww.10q.tv%2fboard%2ffilmy%2fmshfhha%2f17',8,'http://mirror.cinosure.com/superrepo/v5/addons/plugin.video.10qtv/icon.png',addonString(110).encode('utf-8'),'1',57) ; count += 1
-			'''---------------------------'''
+		
 	
 	'''אוגי והמקקים (2014)*'''
 	list = []
@@ -2012,9 +2016,6 @@ def CATEGORIES105(admin):
 		list.append('&youtube_id=8xZDb6OK4e4') #Hebrew
 	
 	addDir('מועדון ווינקס',list,17,'','','1',"",getAddonFanart(background, custom="", default=background2))
-	
-	'''מלחמת הכוכבים: המורדים'''
-	CATEGORIES104G(General_LanguageL, background, background2)
 	
 	'''מלך האריות 1 (1994)'''
 	thumb = 'http://ia.media-imdb.com/images/M/MV5BMjEyMzgwNTUzMl5BMl5BanBnXkFtZTcwNTMxMzM3Ng@@._V1__SX2064_SY1000_.jpg'
