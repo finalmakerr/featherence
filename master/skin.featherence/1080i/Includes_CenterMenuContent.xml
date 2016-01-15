@@ -19,7 +19,7 @@
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) | Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="702" description="בחירת סמל">
-		<label>$LOCALIZE[19284]</label>
+		<label>19284</label>
 		<onclick condition="!IsEmpty(Window(home).Property(Button.ID))">SetProperty(TEMP,icon,home)</onclick>
 		<onclick description="1175" condition="!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">RunScript(script.featherence.service,,?mode=233&amp;value=2)</onclick>
 		<onclick description="1139" condition="!IsEmpty(Window(home).Property(SubButton.ID_)) + Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=233&amp;value=02)</onclick>
@@ -87,14 +87,14 @@
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="719" description="פריט חדש">
-		<label>Create New Item</label>
+		<label>$LOCALIZE[31049]</label>
 		<onclick description="1175" condition="!IsEmpty(Window(home).Property(Button.ID)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">RunScript(script.featherence.service,,?mode=211&amp;value=0)</onclick>
 		<onclick description="1138" condition="!IsEmpty(Window(home).Property(Button.ID)) + !Window.IsVisible(Custom1139.xml) + Window.IsVisible(Custom1138.xml)">RunScript(script.featherence.service,,?mode=211&amp;value=1)</onclick>
 		<include>CheckProperty_Menus</include>
 		<visible>[Window.IsVisible(Custom1175.xml) | Window.IsVisible(Custom1138.xml)] + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="720" description="הסרת פריט">
-		<label>הסרת פריט</label>
+		<label>$LOCALIZE[31048]</label>
 		<onclick description="1175-Remove" condition="!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml)">RunScript(script.featherence.service,,?mode=212&amp;value=02)</onclick>
 		<onclick description="1139-Remove" condition="Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=212&amp;value=1)</onclick>
 		<include>CheckProperty_Menus</include>

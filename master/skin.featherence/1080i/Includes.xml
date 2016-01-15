@@ -620,9 +620,8 @@
 		<include>ShowDVDdisc</include>
 		<control type="image" description="פוסטר">
 		  <aspectratio>stretch</aspectratio>
-		  <bordertexture colordiffuse="ff000000" border="0">$VAR[TopVideoInformation4]</bordertexture>
-		  <bordersize>2</bordersize>
-		  <texture background="false">$VAR[TopVideoInformation4]</texture>
+		  <include>Border_Common2</include>
+		  <texture diffuse="buttons/ButtonA0.png" border="0" background="false">$VAR[TopVideoInformation4]</texture>
 		</control>
 		<control type="label" id="1104" description="***פוסטר***">
 		  <label>$VAR[TopVideoInformation4]</label>

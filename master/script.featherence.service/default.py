@@ -409,6 +409,7 @@ elif mode == 34:
 	------------------------------'''
 	from shared_modules3 import *
 	setCustomFanart(value, value2, admin, 'setCustomFanart', printpoint)
+	xbmc.executebuiltin('XBMC.Container.Update(%s)' % containerfolderpath )
 	'''---------------------------'''
 
 elif mode == 35:
@@ -416,6 +417,7 @@ elif mode == 35:
 	---Remove-Custom-Fanart----------
 	------------------------------'''
 	setsetting_custom1(value, 'Fanart_Custom' + str(value2),"")
+	xbmc.executebuiltin('XBMC.Container.Update(%s)' % containerfolderpath )
 	'''---------------------------'''
 
 elif mode == 36:

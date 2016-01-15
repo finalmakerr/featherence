@@ -130,12 +130,12 @@ msgid "Show Rating"
 msgstr "הצג דירוג"
 
 msgctxt "#31048
-msgid ""
-msgstr ""
+msgid "Remove Item"
+msgstr "הסרת פריט"
 
 msgctxt "#31049
-msgid ""
-msgstr ""
+msgid "Create New Item"
+msgstr "צור פריט חדש"
 
 msgctxt "#31050
 msgid ""

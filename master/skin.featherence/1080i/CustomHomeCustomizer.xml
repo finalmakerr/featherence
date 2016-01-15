@@ -5,7 +5,7 @@
   <onunload description="submenu">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=[SubContent100]|[SubContent101]|[SubContent102])</onunload>-->
   <onload condition="Window(home).Property(ReloadSkin)">AlarmClock(Hide,ClearProperty(ReloadSkin,home),00:02,silent)</onload>
   <include>ReloadSkin_Check</include>
-  <onunload condition="">RunScript(script.featherence.service,,?mode=215&amp;value=_)</onunload>
+  <onunload condition="true">RunScript(script.featherence.service,,?mode=215&amp;value=_)</onunload>
   <include>onunload_ClearProperty_MainMenu</include>
   <include>onunload_ClearProperty_SubMenu</include>
   <include>Fade6</include>

@@ -1182,16 +1182,16 @@ def dialogok(heading,line1,line2,line3, line1c="", line2c="", line3c="", line4c=
 	except: line3 = str(line3)
 	
 	if line1c != "":
-		try: line1 = '[COLOR='+ line1c + ']' + line1 + '[/COLOR]'
+		try: heading = '[COLOR='+ line1c + ']' + heading + '[/COLOR]'
 		except Exception, TypeError: pass
 	if line2c != "":
-		try: line1 = '[COLOR='+ line2c + ']' + line1 + '[/COLOR]'
+		try: line2 = '[COLOR='+ line2 + ']' + line1 + '[/COLOR]'
 		except Exception, TypeError: pass
 	if line3c != "":
-		try: line1 = '[COLOR='+ line3c + ']' + line1 + '[/COLOR]'
+		try: line2 = '[COLOR='+ line3c + ']' + line2 + '[/COLOR]'
 		except Exception, TypeError: pass
 	if line4c != "":
-		try: line1 = '[COLOR='+ line4c + ']' + line1 + '[/COLOR]'
+		try: line3 = '[COLOR='+ line4c + ']' + line3 + '[/COLOR]'
 		except Exception, TypeError: pass
 		
 	dialog.ok(heading,line1,line2,line3)
@@ -1629,7 +1629,7 @@ def installaddonP(admin, addon, update=True):
 	elif addon == 'script.module.unidecode':
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			fileID = getfileID(addon+".zip")
-			DownloadFile("https://www.dropbox.com/s/"+fileID+"/"+addon+".zip?dl=1", addon + ".zip", packages_path, addons_path, silent=True)
+			DownloadFile("http://mirrors.kodi.tv/addons/frodo/script.module.unidecode/script.module.unidecode-0.4.16.zip", addon + ".zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
@@ -1926,6 +1926,7 @@ def notification(heading, message, icon, time):
 		'''---------------------------'''
 		
 def removeaddons(addons, custom):
+	name = 'removeaddons'
 	Afolders_count = 0 ; Afiles_count = 0 ; Bfolders_count = 0 ; Bfiles_count = 0 ; Cfolders_count = 0 ; Cfiles_count = 0 ; printpoint = ""
 	forceL = ['plugin.video.p2p-streams', 'program.plexus', 'script.htpt.service', 'script.htpt.emu', 'skin.featherence']
 	output = ""
@@ -1983,9 +1984,12 @@ def removeaddons(addons, custom):
 		xbmc.sleep(500)
 		xbmc.executebuiltin("UpdateLocalAddons")
 		xbmc.sleep(500)
-	'''---------------------------'''
-	print printfirst + "removeaddons" + space + "addons" + space2 + str(addons) + space + "custom" + space2 + custom + space + "output" + space2 + output + newline + output2
-	'''---------------------------'''
+	
+	text = "addons" + space2 + str(addons) + newline + \
+	"custom" + space2 + custom + newline + \
+	"output" + space2 + output + newline + \
+	"output2" + space2 + str(output2)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
 def removefiles(path, filteroff=[], dialogprogress=""):
 	name = 'removefiles' ; printpoint = "" ; path1 = path[-1:] ; TypeError = "" ; extra = ""
@@ -2023,7 +2027,8 @@ def removefiles(path, filteroff=[], dialogprogress=""):
 						dp.update(dialogprogress + progress_,str(os.listdir(path))," ")
 					x = os.path.join(path, file)
 					#print x
-					if file in filteroff: print printfirst + name + space + 'Skip' + space + str(x)
+					if file in filteroff:
+						extra = extra + newline + name + space + 'filteroff (skip)' + space2 + str(x)
 					else:
 						try: removefiles(x)
 						except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
@@ -2054,8 +2059,12 @@ def removefiles(path, filteroff=[], dialogprogress=""):
 			else: pass ; printpoint = printpoint + "9"
 		
 		else: printpoint = printpoint + "8"
+
 	
-	if "0" in printpoint or admin3 == 'true' or TypeError != "": print printfirst + name + "_LV" + printpoint + space + "path" + space2 + to_utf8(path) + to_utf8(extra)
+	text = "path" + space2 + to_utf8(path) + newline + \
+	"filteroff" + space2 + str(filteroff) + space + "dialogprogress" + space2 + str(dialogprogress) + newline + \
+	to_utf8(extra)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def copytree(source, target, symlinks=False, ignore=None):
 	import shutil
@@ -2372,7 +2381,7 @@ def replace_word(infile,old_word,new_word, infile_="", LineR=False , LineClean=F
 			infile_ = read_from_file(infile, lines=True)
 			#print infile_
 			for line in infile_:
-				print line
+				extra = extra + newline + str(line)
 				if LineClean == True and re.match(r'^\s*$', line): line = "" #line.replace('\n\n','\n') #re.match(r'^\s*$', line)
 				elif old_word != "" and new_word != "":
 					if old_word in line:
@@ -2485,11 +2494,18 @@ def settingschange(window,systemgetbool,falsetrue,force,string1,string2):
 			if not systemgetbool2: xbmc.executebuiltin('Notification('+ systemcurrentcontrol +',,5000)')
 
 def setProperty(id, value, type="home"):
+
+	name = 'setProperty' ; printpoint = ""
 	if value != "": xbmc.executebuiltin('SetProperty('+str(id)+','+str(value)+','+str(type)+')')
 	else: xbmc.executebuiltin('ClearProperty('+str(id)+','+str(type)+')')
 	xbmc.sleep(10)
 	returned = xbmc.getInfoLabel('Window('+str(type)+').Property('+str(id)+')')
-	#print 'setProperty' + space2 + 'returned' + space2 + str(returned)
+	
+	text = 'id' + space2 + str(id) + newline + \
+	'value' + space2 + str(value) + newline + \
+	'type' + space2 + str(type) + newline + \
+	'returned' + space2 + str(returned)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def setSkinSetting(custom,set1,set1v):
 	if xbmc.getSkinDir() == 'skin.featherence':
@@ -2537,13 +2553,12 @@ def setsetting_custom1(addon,set1,set1v):
 	'''------------------------------
 	---SET-ADDON-SETTING-1-----------
 	------------------------------'''
-	TypeError = ""
+	name = 'setsetting_custom1' ; printpoint = "" ; TypeError = "" ; extra = "" 
 	try:
 		getsetting_custom          = xbmcaddon.Addon(addon).getSetting
 		setsetting_custom          = xbmcaddon.Addon(addon).setSetting
 	except Exception, TypeError:
-		TypeError = newline + "TypeError" + space2 + str(TypeError)
-		print printfirst + "setsetting_custom1" + space + TypeError
+		extra = extra + newline + "TypeError" + space2 + str(TypeError)
 	
 	if TypeError == "":
 		set = getsetting_custom(set1)
@@ -2556,24 +2571,23 @@ def setsetting_custom1(addon,set1,set1v):
 			------------------------------'''
 			if admin and not admin2 or TypeError != "": print printfirst + "setsetting_custom1" + space2 + addon + space + set1 + space2 + set1v + space3
 			'''---------------------------'''
+	
+	text = 'addon' + space2 + str(addon) + space + 'set1' + space2 + str(set1) + space + 'set1v' + space2 + str(set1v) + newline + \
+	extra
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	
 
 def datetostring(dt_str):
-	TypeError = ""
-	printpoint = ""
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
-	admin2 = xbmc.getInfoLabel('Skin.HasSetting(Admin2)')
-	
-	
+	name = 'datetostring' ; printpoint = "" ; TypeError = "" ; extra = ""
+
 	dt_str2 = str(dt_str)
 	dt_str2 = dt_str2.replace("00:00:00","",1)
 	dt_str2 = dt_str2.replace("0:00:00","",1)
 	dt_str2 = dt_str2.replace(" ","",1)
-	
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	if admin and admin2 or str(TypeError) != "": print printfirst + "datetostring_LV" + printpoint + space + "dt_str" + space2 + dt_str + space + "dt_str2" + space2 + dt_str2
-	'''---------------------------'''
+
+	text = 'dt_str' + space2 + str(dt_str) + space + 'dt_str2' + space2 + str(dt_str2) + newline + \
+	extra
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	return dt_str2
 
 def getfileID(file):
@@ -2679,12 +2693,7 @@ def getfileID(file):
 
 def stringtodate(dt_str, dt_func):
 	#from datetime import datetime
-	TypeError = ""
-	extra = ""
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
-	admin2 = xbmc.getInfoLabel('Skin.HasSetting(Admin2)')
-	printpoint = ""
-	count = 0
+	name = 'stringtodate' ; printpoint = "" ; TypeError = "" ; extra = "" ; count = 0
 	dt_str = str(dt_str)
 	dt_str = dt_str.replace(" ","",1)
 	dt_obj = ""
@@ -2692,7 +2701,7 @@ def stringtodate(dt_str, dt_func):
 	#dt_func = '%m/%d/%Y %I:%M:%S %p'
 	if dt_str == "" or dt_func == "" or dt_str == None or dt_func == None:
 		printpoint = printpoint + "9"
-		if admin: notification("stringtodate_ERROR!","isEMPTY","",1000)
+		#if admin: notification("stringtodate_ERROR!","isEMPTY","",1000)
 	else:
 		while count < 3 and not "7" in printpoint and not xbmc.abortRequested:
 			try:
@@ -2701,9 +2710,7 @@ def stringtodate(dt_str, dt_func):
 				printpoint = printpoint + "7"
 			except Exception, TypeError:
 				dt_obj = "error"
-				if admin and not admin2 and count == 2:
-					dialogkaitoastW = xbmc.getCondVisibility('Window.IsVisible(DialogKaiToast.xml)')
-					if not dialogkaitoastW: notification("stringtodate_ERROR!","error","",1000)
+
 			count += 1
 			xbmc.sleep(100)
 
@@ -2712,8 +2719,10 @@ def stringtodate(dt_str, dt_func):
 	------------------------------'''
 	dt_objS = str(dt_obj)
 	if TypeError != "": extra = newline + "TypeError" + space2 + str(TypeError) + space + "count" + space2 + str(count)
-	if admin and admin2 or extra != "": print printfirst + "stringtodate_LV" + printpoint + space + "dt_str" + space2 + dt_str + space + "dt_objS" + space2 + dt_objS + extra
-	'''---------------------------'''
+
+	text = 'dt_str' + space2 + str(dt_str) + space + 'dt_objS' + space2 + str(dt_objS) + newline + \
+	extra
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	return dt_obj
 	
 class TextViewer_Dialog(xbmcgui.WindowXMLDialog):
@@ -2766,8 +2775,11 @@ class Custom1000_Dialog(xbmcgui.Window):
       global exit_requested
       exit_requested = True
       self.close()
-      if admin:
-		print printfirst + 'Custom1000_Dialog' + space + 'progress' + space2 + str(progress) + space + "title" + space2 + str(title) + space + 'addonisrunning' + space2 + str(addonisrunning)
+
+      text = 'progress' + space2 + str(progress) + space + 'title' + space2 + str(title) + newline + \
+      'addonisrunning' + space2 + str(addonisrunning)
+      printlog(title='Custom1000_Dialog', printpoint=printpoint, text=text, level=0, option="")
+      return dt_obj
 	  
   def onAction(self, action):
 	if action == ACTION_PREVIOUS_MENU:

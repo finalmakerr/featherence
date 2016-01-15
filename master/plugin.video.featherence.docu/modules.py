@@ -62,7 +62,7 @@ def CATEGORIES101(admin):
 	name = addonString(101).encode('utf-8')
 	
 	'''חיפוש'''
-	addDir(localize(137),'Nature Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'Nature Docu',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי'''
 	list = []
@@ -76,7 +76,7 @@ def CATEGORIES101(admin):
 	list.append('&youtube_pl=PLsa65XLFLA2-mxUpttawU8AN1TX0VwKpH')
 	list.append('&youtube_pl=PLcOr-eBi9or-I7knKXhhdihMqswzWJ7yo')
 	list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq')
-	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(590),list,17,featherenceserviceicons_path + 'random.png',"",'1',"", getAddonFanart(background, custom=""))
 
 	'''Nature Ultra HD'''
 	list = []
@@ -317,7 +317,6 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL5C118AE173F37A41')
 	list.append('&youtube_pl=PLQlgR0H02jQtTCuwdO5PFGYw1-pz4Q33')
 	addDir("Tree's",list,17,'http://memolition.com/wp-content/uploads/2015/07/collection-of-beautiful-pictures-from-around-the-world-23781.jpg','','1',"", getAddonFanart(background, custom=""))
-
 	
 	'''orchid'''
 	list = []
@@ -340,8 +339,12 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL-dcm20p996r3ocrVFos7Shx6UvYwGhet')
 	list.append('&youtube_pl=PL-dcm20p996peINJHgMOLskxDTGMlShDG')
 	addDir("Orchid",list,17,'http://1.bp.blogspot.com/-ysKfjEIIlvA/U4mlY_TLzHI/AAAAAAAAAGU/Hu6j3XFa3Jg/s1600/Orchid-flower-HD-stock-photos-editable-for-greetings.jpg','','1',"", getAddonFanart(background, custom=""))
-
 	
+	'''edibl'''
+	list = []
+	list.append('&youtube_ch=UCsSTiRba-BUnOk0PALOhsug/playlists')
+	#addDir("vegetable",list,17,'http://earthdivasblog.com/wp-content/uploads/2010/07/Colorful-vegetables-755879.jpg','','1',"", getAddonFanart(background, custom=""))
+
 	'''Botany'''
 	list = []
 	list.append('&youtube_pl=PL7D120055C712F646')
@@ -453,7 +456,7 @@ def CATEGORIES102(admin):
 	background = 102
 	name = addonString(102).encode('utf-8')
 	'''חיפוש'''
-	addDir(localize(137),'Space Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'Space Docu',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי'''
 	list = []
@@ -466,7 +469,7 @@ def CATEGORIES102(admin):
 	list.append('&youtube_pl=PLht3ColwII5rNwVkc7vJdCYkAUVr-1-uG')
 	list.append('&youtube_pl=PL6oforB7ir5Iq9DHVczSeQKYfmwl-zgY3')
 	list.append('&youtube_pl=PLw4zAzjwBP1d5annau67miUKlxoEERFKi')
-	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(590),list,17,featherenceserviceicons_path + 'random.png',"",'1',"", getAddonFanart(background, custom=""))
 
 
 	'''youtube space channels'''
@@ -555,7 +558,7 @@ def CATEGORIES103(admin):
 	name = addonString(103).encode('utf-8')
 	
 	'''חיפוש'''
-	addDir(localize(137),'History Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'History Docu',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי'''
 	list = []
@@ -569,7 +572,7 @@ def CATEGORIES103(admin):
 	list.append('&youtube_pl=PL8dPuuaLjXtNjasccl-WajpONGX3zoY4M')
 	list.append('&youtube_pl=PLp-cIkvQ88-1_nvZZ2-i5j90J3llXJl1o')
 	list.append('&youtube_pl=PL47F868B521713645')
-	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(590),list,17,featherenceserviceicons_path + 'random.png',"",'1',"", getAddonFanart(background, custom=""))
 
 	
 	'''youtube history channel's'''
@@ -647,13 +650,13 @@ def CATEGORIES104(admin):
 	name = addonString(104).encode('utf-8')
 	
 	'''חיפוש'''
-	addDir(localize(137),'Science Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'Science Docu',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי'''
 	list = [] 
 	list.append('&youtube_ch=UCWYeiNSo18bhZvI1pz39U6g')
 	list.append('&youtube_ch=UCWkOjdpqIcKZrnjefwWMKAQ')
-	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(590),list,17,featherenceserviceicons_path + 'random.png',"",'1',"", getAddonFanart(background, custom=""))
 	
 	
 	'''youtube science channel's'''
@@ -974,7 +977,7 @@ def CATEGORIES10403(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL57quI9usf_us0KVzB8aZFPVmdvp1_sIh')
 	list.append('&youtube_pl=PLPBN-Ln1bNtxpgyoI2uVTAoD3VqHfe83c')
 	list.append('&youtube_pl=PL57quI9usf_ujAfHHeCUHuJDL9rMo2_kr')
-	addDir('טלפון סלולרי',list,17,'https://creationapplication.com/wp-content/uploads/2013/01/iStock_000019696025_Large1.jpg','','1',"", getAddonFanart(background, custom=""))
+	addDir('טלפון סלולרי',list,17,'http://wallpapers.windowsace.com/pics/f/r/free-electronics-and-gadgets-iphone-wallpaper-voyager-cell-phone--a-e-ibackgroundz.com.jpg','','1',"", getAddonFanart(background, custom=""))
     
 	'''מחשבים'''
 	list = []
@@ -1034,11 +1037,11 @@ def CATEGORIES107(admin):
 	name = addonString(107).encode('utf-8')
 	
 	'''חיפוש'''
-	addDir(localize(137),'Kids Documentary',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'Kids Documentary',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי'''
 	list = []
-	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(590),list,17,featherenceserviceicons_path + 'random.png',"",'1',"", getAddonFanart(background, custom=""))
 
 	
 	'''youtube kids channel's'''
@@ -1102,7 +1105,7 @@ def CATEGORIES110(admin):
 	name = addonString(110).encode('utf-8')
 	
 	'''חיפוש'''
-	addDir(localize(137),'Live Docu',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'Live Docu',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
 	
 	'''אקראי'''
 	list = []
@@ -1116,7 +1119,7 @@ def CATEGORIES110(admin):
 	list.append('&youtube_pl=PLlAZ-3Bm6pmYbX2q3yCO53aZ16ewlUmNI')
 	list.append('&youtube_pl=PLE8Rno1I66X84UJNGbpHEUkD5FR58xxMy')
 	list.append('&youtube_pl=PLwVO1qTdvxW2B7tvClvBoo_XwIY1FEhZw')
-	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(590),list,17,featherenceserviceicons_path + 'random.png',"",'1',"", getAddonFanart(background, custom=""))
 
 	
 	'''youtube art channels'''
@@ -1225,7 +1228,7 @@ def CATEGORIES108(admin):
 	name = addonString(108).encode('utf-8')
 	
 	'''חיפוש'''
-	addDir(localize(137),'מתורגם',3,'http://files.softicons.com/download/system-icons/web0.2ama-icons-by-chrfb/png/128x128/Search.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(137),'מתורגם',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (name),'1',"", getAddonFanart(background, custom=""))
 	
 	
 	'''אקראי'''
@@ -1240,7 +1243,7 @@ def CATEGORIES108(admin):
 	list.append('&youtube_pl=PL51YAgTlfPj4v3ww2jfBb21LiJFh3XSIe')
 	list.append('&youtube_pl=PL51YAgTlfPj6zllZWhjkRCv95Q9LPhRZ2')
 	list.append('&youtube_pl=PL51YAgTlfPj4NGa6HC87lQQL5KfqQTqW3')
-	addDir(localize(590),list,17,'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Random-512.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir(localize(590),list,17,featherenceserviceicons_path + 'random.png',"",'1',"", getAddonFanart(background, custom=""))
 	
 	
 	'''דוקו סרטים'''
@@ -1498,4 +1501,3 @@ def CATEGORIES10801(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_ch=23language')
 	addDir('חינוכית בית ספר לשפות',list,17,'https://yt3.ggpht.com/-lBNXia5dmco/AAAAAAAAAAI/AAAAAAAAAAA/WdkzNf3TbHE/s100-c-k-no/photo.jpg','','1',"", getAddonFanart(background, custom=""))
-

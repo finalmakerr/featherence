@@ -592,24 +592,24 @@ msgid "in"
 msgstr "ב"
 
 msgctxt "#32084
-msgid ""
-msgstr ""
+msgid "Main Language"
+msgstr "שפת אם"
 
 msgctxt "#32085
-msgid ""
-msgstr ""
+msgid "Choose your main language"
+msgstr "בחר שפה ראשית"
 
 msgctxt "#32086
-msgid ""
-msgstr ""
+msgid "Your current secondary language is %s"
+msgstr השפה המשנית שלך היא %s""
 
 msgctxt "#32087
-msgid ""
-msgstr ""
+msgid "You may receive contents for up to 3 different languages!"
+msgstr "באפשרותך לקבל תכנים לעד 3 שפות בו זמנית."
 
 msgctxt "#32088
-msgid ""
-msgstr ""
+msgid "Check addon settings for more information."
+msgstr "למידע נוסף ראה הגדרות הרחבה."
 
 msgctxt "#32089
 msgid ""

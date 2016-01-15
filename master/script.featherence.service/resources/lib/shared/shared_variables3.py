@@ -14,7 +14,8 @@ addonVersion       = xbmcaddon.Addon().getAddonInfo("version")
 
 addonName2 = str2 + space + "Featherence"
 printfirst = addonName + ": !@# "
-pluginhandle = int(sys.argv[1])
+try: pluginhandle = int(sys.argv[1])
+except: pluginhandle = ""
 '''---------------------------'''
 General_AutoView = getsetting('General_AutoView')
 General_TVModeShuffle = getsetting('General_TVModeShuffle')

@@ -208,7 +208,7 @@
 		  <width>480</width>
 		  <height>70</height>
 		  <texture border="40" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
+		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
 		</control>
       </control>
     </focusedlayout>

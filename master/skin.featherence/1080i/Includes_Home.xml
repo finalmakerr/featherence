@@ -639,7 +639,7 @@
 		<animation description="VerticalMenu" condition="[Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="200,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<animation description="VerticalMenu" condition="[Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-170,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
-		<animation condition="[Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | !Skin.HasSetting(FixedUnFocusButtonsTransperancy) + [Control.HasFocus(311) | Control.HasFocus(312) | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]]]" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
+		<animation condition="[Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | Skin.HasSetting(FixedUnFocusButtonsTransperancy) + [Control.HasFocus(311) | Control.HasFocus(312) | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]]]" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
         <control type="image" description="צבע">
 		  <height>100</height>
 		  <posx>0</posx>

@@ -233,13 +233,13 @@
 	  </control>
 	  <control type="largeimage" description="רקע פאנארט">
 	    <fadetime>200</fadetime>
-	    <animation condition="Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]" effect="zoom" start="100,100" end="100,51" time="0">Conditional</animation>
-		<animation condition="Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.1" time="0">Conditional</animation>
-		<animation description="No full Fanart-Vertical_he" condition="Skin.HasSetting(HomeFanartHalfScreen) + Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
-		<animation description="No full Fanart-Vertical_en" condition="Skin.HasSetting(HomeFanartHalfScreen) + Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
+	    <animation condition="!Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]" effect="zoom" start="100,100" end="100,51" time="0">Conditional</animation>
+		<animation condition="!Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.1" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(HomeFanartHalfScreen) + Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(HomeFanartHalfScreen) + Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
 	    <animation description="Slide-Panel" condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | [[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() + Player.HasVideo]]" effect="slide" start="0,0" end="0,551" time="220">Conditonal</animation>
 		<animation description="Slide-Horizontal" condition="![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + Player.HasVideo" effect="slide" start="0,0" end="0,551" time="220">Conditonal</animation>
-		<animation condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditonal</animation>
+		<animation condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + !Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditonal</animation>
 		<aspectratio align="top">scale</aspectratio>
 		<visible>!Skin.HasSetting(background)</visible>
 		<!--<visible>[[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()] | [Container(50).Row(0) | Container(50).Row(1)] + !Container(50).HasPrevious()</visible>-->
@@ -248,7 +248,7 @@
 		<posy>0</posy>
 		<height>1080</height>
 		<width>1920</width>
-		<visible>![Skin.HasSetting(HomeFanartHalfScreen) + Player.HasVideo]</visible>
+		<visible>![!Skin.HasSetting(HomeFanartHalfScreen) + Player.HasVideo]</visible>
 		<visible>![Skin.String(MenuDesign,4) + Player.HasVideo]</visible>
 	  </control>
 	  <control type="image" description="רקע תחתון צבע">
@@ -313,33 +313,29 @@
 	  <control type="image" id="7021" description="רקע תחתון צבע">
 		<include>Fade_MainBackgroundOverlay</include>
 		<include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + !IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo">Slide1</include>
-		<animation description="No Fanart" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Control.HasFocus(7017) + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-252" delay="3000" time="700" reversible="false">Conditional</animation>
-		<animation description="slide-Vertical" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)]" effect="zoom" center="auto" start="100,100" end="27,113" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="2765,0" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_en" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-2790,0" time="0">Conditonal</animation>
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,85.8" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="74.7,85.8" time="0">Conditional</animation>
 		<aspectratio>stretch</aspectratio>
 		<height>1110</height>
 		<width>1957</width>
 		<posx>-20</posx>
 		<posy>-5</posy>
 		<texture border="20" colordiffuse="$VAR[MainBackgroundColor]">buttons/ButtonC0.png</texture>
-		<!--<visible>![StringCompare(Container.Viewmode,$LOCALIZE[31011]) + Player.HasVideo]</visible>-->
+		<visible>![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] | [StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Control.HasFocus(7017) + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)</visible>
 		<!--<visible>![!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !IsEmpty(Control.GetLabel(70130))]</visible>-->
 	  </control>
 	  <control type="image" description="רקע תחתון טקסטורה">
 	    <include>Fade_MainBackgroundOverlay</include>
 	    <include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + !IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo">Slide1</include>
-		<animation description="No Fanart" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Control.HasFocus(7017) + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-252" delay="3000" time="700" reversible="false">Conditional</animation>
-		<animation description="slide-Vertical" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)]" effect="zoom" center="auto" start="100,100" end="27,113" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="2765,0" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_en" condition="Player.HasVideo + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-2790,0" time="0">Conditonal</animation>
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,85.8" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="74.7,85.8" time="0">Conditional</animation>
 		<aspectratio>stretch</aspectratio>
 		<height>1100</height>
 		<width>1957</width>
 		<posx>-20</posx>
 		<posy>-5</posy>
 		<texture border="20" colordiffuse="$VAR[MainBackgroundColor]">$VAR[MainBackgroundTexture]</texture>
-		<!--<visible>![!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !IsEmpty(Control.GetLabel(70130))]</visible>-->
+		<visible>![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] | [StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Control.HasFocus(7017) + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)</visible>
 	  </control>
 	  <control type="largeimage" id="7013" description="פאנארט">
 		<fadetime>200</fadetime>
@@ -361,8 +357,8 @@
 	  </control>
 	  <control type="largeimage" id="7015" description="פאנארט">
 		<include condition="!Window.IsVisible(MyPics.xml)">Fade_Background2Overlay</include>
-		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,86.35" time="0">Conditional</animation>
-		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75.5,86.35" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,86.15" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75.5,86.15" time="0">Conditional</animation>
 		<aspectratio align="top">stretch</aspectratio>
 		<!--<include>Slide2.7</include>-->
 		<fadetime>200</fadetime>
@@ -378,8 +374,8 @@
 	  </control>
 	  <control type="largeimage" id="7014" description="רקע פאנארט">
 		<include>Fade_Background2Overlay</include>
-		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,86.35" time="0">Conditional</animation>
-		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75.5,86.35" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,86.15" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75.5,86.15" time="0">Conditional</animation>
 		<aspectratio align="top">scale</aspectratio>
 		<posy>0</posy>
 		<height>1080</height>
@@ -435,8 +431,8 @@
 	  <height>552</height>
 	  <width>1920</width>-->
 		<control type="videowindow" id="7011" description="חלון וידאו">
-			<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-245,618" time="0">Conditonal</animation>
-			<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="235,618" time="0">Conditonal</animation>
+			<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-245,657" time="0">Conditonal</animation>
+			<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="235,657" time="0">Conditonal</animation>
 			<animation description="zoom-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="75.5,100" time="0">Conditonal</animation>
 			<!--<include condition="!StringCompare(Container.Viewmode,$LOCALIZE[31011]) + [!Control.IsVisible(11) | Window.IsVisible(MyPVRGuide.xml)]">Control_Pos6</include>-->
 			<posy>-552</posy>
@@ -457,7 +453,7 @@
 		  <control type="button" id="7017">
 			<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="0,1080" time="0">Conditonal</animation>
 			<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="472,1080" time="0">Conditonal</animation>
-			<animation description="slide-Vertical" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="" start="100,100" end="75,180" time="0">Conditonal</animation>
+			<animation description="slide-Vertical" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="" start="100,100" end="75,179" time="0">Conditonal</animation>
 			<texturefocus border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texturefocus>
 			<texturenofocus colordiffuse="FFFFAAFF"></texturenofocus>
 			<posy>-522</posy>

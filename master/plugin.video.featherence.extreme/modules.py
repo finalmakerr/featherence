@@ -16,6 +16,8 @@ def CATEGORIES():
 	#YOUList2("GoProCamera", 'UCqhnX4jA0A5paNd1v-zEysw', "", "", '1')
 	
 	addDir(localize(137),"Go-Pro",3,featherenceserviceicons_path + "se.png","Search Go-Pro Video",'1',58, getAddonFanart(background))
+	CATEGORIES102A() #אקראי
+	
 	'''Go-Pro'''
 	list = []
 	list.append('&youtube_ch=GoProCamera')

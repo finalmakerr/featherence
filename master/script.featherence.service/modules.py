@@ -392,9 +392,8 @@ def mode10(admin, name, printpoint):
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
 		setPlayerInfo(admin)
 		videostarttweak(admin)
+		if playerhasvideo and xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)'): xbmc.executebuiltin('Action(Info)')
 		while playerhasvideo and not xbmc.abortRequested:
-			if xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)'):
-				xbmc.executebuiltin('Action(Info)')
 			xbmc.sleep(5000)
 			videoplayertweak(admin, playerhasvideo)
 			playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
@@ -873,7 +872,13 @@ def mode32(value, admin, name, printpoint):
 			xbmc.sleep(500)
 			dp.close
 	
-	
+	elif value == '40':
+		addon = 'plugin.video.featherence.kids'
+		if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
+			dialogok(addonString_servicefeatherence(32085).encode('utf-8'),addonString_servicefeatherence(32081).encode('utf-8'),"",'[B][COLOR=blue]Website[/COLOR][/B]: www.facebook.com/groups/featherence[CR]',line1c="yellow")
+			General_Language2 = xbmcaddon.Addon(addon).getSetting('General_Language2') ; General_Language2 = str(General_Language2)
+			dialogok(addonString_servicefeatherence(32086).encode('utf-8') % (General_Language2),addonString_servicefeatherence(32087).encode('utf-8'),"",addonString_servicefeatherence(32088).encode('utf-8'),line1c="yellow")
+		
 def mode33(admin, name, printpoint):
 	'''------------------------------
 	---?--------------------
@@ -3345,8 +3350,14 @@ def mode232(value, admin, name, printpoint):
 	------------------------------'''
 	id1 = "" ; id2 = "" ; extra = "" ; TypeError = ""
 	if printpoint != "": printpoint = printpoint + "_"
-	addon = 'script.skinshortcuts'
-	if not xbmc.getCondVisibility('System.HasAddon('+ addon +')'): installaddon(admin, addon, update=True)
+
+	addon1 = installaddonP(admin, 'script.skinshortcuts', update=True)
+	addon2 = installaddonP(admin, 'script.module.unidecode', update=True)
+	
+	if '9' in addon1 or '9' in addon2:
+		notification_common("24") ; xbmc.sleep(3000)
+		if '9' in addon1: notification('script.skinshortcuts','','',2000)
+		elif '9' in addon2: notification('script.module.unidecode','','',2000)
 	else:
 		printpoint = printpoint + "0"
 		try:
@@ -9805,7 +9816,7 @@ def videoplayertweak(admin,playerhasvideo):
 			if '.sdarot.w' in playerfolderpath: fix = 'yes'
 			elif xbmc.getCondVisibility('!VideoPlayer.Content(Movies)') and xbmc.getCondVisibility('!VideoPlayer.Content(Episodes)') and xbmc.getCondVisibility('IsEmpty(VideoPlayer.Year)') and xbmc.getCondVisibility('IsEmpty(VideoPlayer.Plot)') and xbmc.getCondVisibility('!SubString(Player.Title,S0)') and xbmc.getCondVisibility('!SubString(Player.Title,S1)') and xbmc.getCondVisibility('!SubString(VideoPlayer.Title,TNPB)') and xbmc.getCondVisibility('!SubString(VideoPlayer.Title,Staael)') and xbmc.getCondVisibility('!SubString(Player.Filename,YIFY)'): fix = 'yes'
 			if fix == 'yes':
-				if admin: xbmc.executebuiltin('Notification(Admin,fix bug with subtitles,1000)')
+				#if admin: xbmc.executebuiltin('Notification(Admin,fix bug with subtitles,1000)')
 				xbmc.executebuiltin('Action(ShowSubtitles)')
 				'''---------------------------'''
 				
@@ -9819,7 +9830,7 @@ def videoplayertweak(admin,playerhasvideo):
 			dialogpvrchannelsosd = xbmc.getCondVisibility('Window.IsVisible(DialogPVRChannelsOSD.xml)')
 			'''---------------------------'''
 			if (not subtitleosdbutton or not videoplayerhassubtitles) and not volumeosdbutton and not dialogpvrchannelsosd:
-				if admin: xbmc.executebuiltin('Notification(Admin,videoosdauto,1000)')
+				#if admin: xbmc.executebuiltin('Notification(Admin,videoosdauto,1000)')
 				xbmc.executebuiltin('Dialog.Close(VideoOSD.xml)')
 				'''---------------------------'''
 			else:

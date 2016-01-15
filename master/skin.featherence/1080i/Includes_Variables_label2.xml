@@ -331,8 +331,8 @@
   </variable>
   
   <variable name="222label2">
-    <value condition="Skin.HasSetting(HomeFanartHalfScreen)">$LOCALIZE[106]</value>
-	<value condition="!Skin.HasSetting(HomeFanartHalfScreen)">$LOCALIZE[107]</value>
+    <value condition="!Skin.HasSetting(HomeFanartHalfScreen)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(HomeFanartHalfScreen)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="223label2">
@@ -345,9 +345,9 @@
 	<value condition="Skin.String(TopBackgroundTexture)">$LOCALIZE[107] $INFO[Skin.String(TopBackgroundTexture)]</value>
   </variable>
   
-  <variable name="241label2">
-    <value condition="!Skin.HasSetting(FixedUnFocusButtonsTransperancy)">$LOCALIZE[106]</value>
-	<value condition="Skin.HasSetting(FixedUnFocusButtonsTransperancy)">$LOCALIZE[107]</value>
+  <variable name="241label2" description="שקיפות קבועה (כפתורי בית לא נבחר)">
+    <value condition="!Skin.HasSetting(FixedUnFocusButtonsTransperancy)">$LOCALIZE[107]</value>
+	<value condition="Skin.HasSetting(FixedUnFocusButtonsTransperancy)">$LOCALIZE[106]</value>
   </variable>
   
   <variable name="252label2">

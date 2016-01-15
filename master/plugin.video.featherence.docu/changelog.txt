@@ -5,6 +5,12 @@ WIP (WORK IN PROGRESS)--
 - Add fanarts to buttons.
 - Add thumbnails to buttons.
 - Add multi languages support.
+- Major update random play method.
+
+------------------------
+Featherence Docu v0.1.6 (xx-01-16)
+------------------------
+- TV mode now occur also inside container.
 
 ------------------------
 Featherence Docu v0.1.5 (02-01-16)
