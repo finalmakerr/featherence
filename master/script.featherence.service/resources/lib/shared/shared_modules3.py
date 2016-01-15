@@ -685,10 +685,11 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					'''---------------------------'''
 				elif "&youtube_pl=" in x:
 					#x = x.replace("&youtube_pl=","")
-					try:
-						finalurl, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(x, name, iconimage, desc, fanart, playlist=playlist, onlydata=False)
+					#try:
+					if 1 + 1 == 2:
+						finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(x, name, iconimage, desc, fanart, playlist=playlist, onlydata=False)
 						finalurl = playlist_L
-					except Exception, TypeError: extra = extra + newline + "apimaster_TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
+					#except Exception, TypeError: extra = extra + newline + "apimaster_TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
 					'''---------------------------'''
 				elif "&youtube_id=" in x:
 					x = x.replace("&youtube_id=","")
@@ -1192,7 +1193,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 					if onlydata == True:
 						id_ = str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)
 					else:
-						print str(i)
+						#print str(i)
 						id_ = str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)		
 				elif '&youtube_se2=' in x:
 					id_ = str(prms['items'][i][u'snippet'][u'channelId']) #Video ID (Search)
@@ -1207,9 +1208,12 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 					#if '&youtube_pl=' in x: finalurl_ = "plugin://plugin.video.youtube/playlist/"+id_+"/"
 					finalurl_ = "plugin://plugin.video.youtube/play/?video_id="+id_+"&hd=1"
 					title_ = str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
-					thumb_ = str(prms['items'][i][u'snippet'][u'thumbnails'][thumbnails][u'url'])
+					try:
+						thumb_ = str(prms['items'][i][u'snippet'][u'thumbnails'][thumbnails][u'url'])
+						fanart_ = str(prms['items'][i][u'snippet'][u'thumbnails'][u'high'][u'url'])
+					except Exception, TypeError: extra = extra + newline + 'thumb TypeError: ' + str(TypeError) + space + 'i' + space2 + str(i) + space + 'id_' + space2 + str(id_)
 					desc_ = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8'))
-					fanart_ = str(prms['items'][i][u'snippet'][u'thumbnails'][u'high'][u'url'])
+					
 					
 					id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i')
 					

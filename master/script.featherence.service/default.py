@@ -1913,7 +1913,7 @@ elif mode >= 200 and mode <= 249:
 						else:
 							Custom1000(str(list[returned]),0,str(list2[returned2]),5)
 							printpoint = printpoint + "V"
-							mode201('9', admin, name, '') #Clear current strings
+							mode201('9', admin, name, '') ; xbmc.sleep(1000) #Clear current strings #Give some time to finalise the cleaning
 							
 							import fileinput
 							count = 0
