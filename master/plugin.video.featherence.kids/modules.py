@@ -1906,6 +1906,7 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 		list.append('&dailymotion_id=x2tibbo') #English
 		list.append('&dailymotion_id=x2lfbb6') #English
 		list.append('&dailymotion_id=x2ivr3w') #English
+		list.append('&youtube_id=-xJuZyEtT3I') #English
 	if 'Hindi' in General_LanguageL:
 		list.append('&dailymotion_id=x2ht25v') #Hindi
 		list.append('&dailymotion_id=x2ixbar') #Hindi
@@ -2043,12 +2044,19 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 		list.append('&dailymotion_id=x3gbh1o') #English
 	addDir(addonString(10539).encode('utf-8') + space + '(1999)',list,6,'http://ia.media-imdb.com/images/M/MV5BMTIxNzY1MDg2Ml5BMl5BanBnXkFtZTcwMDgxMDEzMQ@@._V1_UY268_CR2,0,182,268_AL_.jpg',addonString(105390).encode('utf-8'),'1',50, getAddonFanart(background, custom="https://i.ytimg.com/vi/73yinrBti8k/maxresdefault.jpg"))
 	
-	'''מועדון ווינX'''
+	'''מועדון ווינX [Collection]'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&youtube_id=8xZDb6OK4e4') #Hebrew
+		list.append('&youtube_id=8xZDb6OK4e4')
+		list.append('&youtube_id=SVXBErt1fHE')
+		list.append('&youtube_id=zMSgF3xdHZ4')
+	if 'English' in General_LanguageL:	
+		list.append('&youtube_id=k_huLZPULZg')
+		list.append('&youtube_id=dLVm8IrUamM')
+		list.append('&youtube_id=oMCRUUvwz58')
+		list.append('&youtube_id=ZYw7hBoEiwo')
 	
-	addDir(addonString(10455).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/456.jpg',addonString(104550).encode('utf-8'),'1',"",getAddonFanart(background, custom="https://i.ytimg.com/vi/zMSgF3xdHZ4/maxresdefault.jpg", default=background2))
+	addDir(addonString(10455).encode('utf-8') + space + '[Collection]',list,17,'http://www.sdarot.pm/media/series/456.jpg',addonString(104550).encode('utf-8'),'1',"",getAddonFanart(background, custom="https://i.ytimg.com/vi/zMSgF3xdHZ4/maxresdefault.jpg", default=background2))
 	
 	'''מלך האריות 1 (1994)'''
 	thumb = 'http://ia.media-imdb.com/images/M/MV5BMjEyMzgwNTUzMl5BMl5BanBnXkFtZTcwNTMxMzM3Ng@@._V1__SX2064_SY1000_.jpg'
