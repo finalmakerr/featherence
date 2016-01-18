@@ -115,11 +115,22 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
 			returned = ok
 			'''---------------------------'''	
+		elif mode == 3:
+			'''search'''
+			if num == 'Custom':
+				menu.append(("Remove", "XBMC.RunPlugin(plugin://%s/?url=%s&mode=31&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)" % (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), 'Delete', viewtype, urllib.quote_plus(fanart)))) #Move Up
+				menu.append(("Remove All", "XBMC.RunPlugin(plugin://%s/?url=%s&mode=31&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)" % (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), 'Delete All', viewtype, urllib.quote_plus(fanart)))) #Move Up
 			
-		elif mode == 2 or mode == 4 or mode == 3 or mode == 7:
+			liz.addContextMenuItems(items=menu, replaceItems=False)
+			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
+			returned = ok
+			
+		elif mode == 2 or mode == 4 or mode == 7:
 			'''------------------------------
 			---play_video/2------------------
 			------------------------------'''
+			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
+			liz.addContextMenuItems(items=menu, replaceItems=False)
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
 			returned = ok
 			'''---------------------------'''
@@ -127,14 +138,8 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 			'''------------------------------
 			---PlayMultiVideos-(list)--------
 			------------------------------'''
-			if admin:
-				#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://plugin.video.featherence.kids/?&mode=5&url=%s)"% (url)))
-				#menu.append(('[COLOR=purple]' + str79522.encode('utf-8') + '[/COLOR]', "XBMC.Container.Update(plugin://%s/?num&iconimage=''&mode=6&name=''&url=%s)"% (addonID, url)))
-				#menu.append(('[COLOR=purple]' + str79522.encode('utf-8') + '[/COLOR]', "XBMC.Container.Update(plugin://plugin.video.featherence.kids/?&mode=5&url="+url+")"))
-				#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://"+addonID+"/?iconimage="+iconimage+"&mode=5&name="+name+"&num="+num+"&url="+url+")"))
-				#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://plugin.video.featherence.kids/?iconimage=http%3a%2f%2fmsc.wcdn.co.il%2fw-2-1%2fw-300%2f768225-54.jpg&mode=5&name=%d7%94%d7%9b%d7%91%d7%a9%d7%94%20%d7%a9%d7%95%d7%a9%d7%a0%d7%94&num=1&url=%5b%27shuffle%3dtrue%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819037%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%201%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819043%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%202%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819050%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%203%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817560%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx9c%5cxd7%5cx95%5cxd7%5cx9d%20%5cxd7%5cxa2%5cxd7%5cx9c%20%5cxd7%5cx99%5cxd7%5cxa9%5cxd7%5cxa8%5cxd7%5cx90%5cxd7%5cx9c%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817583%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx95%5cxd7%5cx97%5cxd7%5cx91%5cxd7%5cxa8%5cxd7%5cx99%5cxd7%5cx9d%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817533%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx91%5cxd7%5cx92%5cxd7%5cx9f%20%5cxd7%5cx94%5cxd7%5cx90%5cxd7%5cx95%5cxd7%5cxaa%5cxd7%5cx99%5cxd7%5cx95%5cxd7%5cxaa%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2820067%26mode%3d10%26name%3d%5cxd7%5cx91%5cxd7%5cx90%20%5cxd7%5cx9c%5cxd7%5cx99%20%5cxd7%5cx9e%5cxd7%5cxa1%5cxd7%5cx99%5cxd7%5cx91%5cxd7%5cx94%20%5cxd7%5cx9c%5cxd7%5cx99%26module%3dwallavod%27%5d&viewtype=50)"))
-				#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://"+addonID+"/?&mode=5&url=%5b%27shuffle%3dtrue%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819037%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%201%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819043%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%202%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819050%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%203%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817560%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx9c%5cxd7%5cx95%5cxd7%5cx9d%20%5cxd7%5cxa2%5cxd7%5cx9c%20%5cxd7%5cx99%5cxd7%5cxa9%5cxd7%5cxa8%5cxd7%5cx90%5cxd7%5cx9c%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817583%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx95%5cxd7%5cx97%5cxd7%5cx91%5cxd7%5cxa8%5cxd7%5cx99%5cxd7%5cx9d%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817533%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx91%5cxd7%5cx92%5cxd7%5cx9f%20%5cxd7%5cx94%5cxd7%5cx90%5cxd7%5cx95%5cxd7%5cxaa%5cxd7%5cx99%5cxd7%5cx95%5cxd7%5cxaa%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2820067%26mode%3d10%26name%3d%5cxd7%5cx91%5cxd7%5cx90%20%5cxd7%5cx9c%5cxd7%5cx99%20%5cxd7%5cx9e%5cxd7%5cxa1%5cxd7%5cx99%5cxd7%5cx91%5cxd7%5cx94%20%5cxd7%5cx9c%5cxd7%5cx99%26module%3dwallavod%27%5d)"))
-				liz.addContextMenuItems(items=menu, replaceItems=False)
+			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
+			liz.addContextMenuItems(items=menu, replaceItems=False)
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
 			returned = ok
 			'''---------------------------'''
@@ -142,42 +147,42 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 			'''------------------------------
 			---ListMultiVideos-(play)--------
 			------------------------------'''
-			if admin:
-				#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://plugin.video.featherence.kids/?&mode=5&url=%s)"% (url2)))
-				#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://"+addonID+"/?iconimage="+iconimage+"&mode=5&name="+name+"&num="+num+"&url="+url+")"))
-				#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://plugin.video.featherence.kids/?iconimage=http%3a%2f%2fmsc.wcdn.co.il%2fw-2-1%2fw-300%2f768225-54.jpg&mode=5&name=%d7%94%d7%9b%d7%91%d7%a9%d7%94%20%d7%a9%d7%95%d7%a9%d7%a0%d7%94&num=1&url=%5b%27shuffle%3dtrue%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819037%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%201%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819043%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%202%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819050%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%203%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817560%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx9c%5cxd7%5cx95%5cxd7%5cx9d%20%5cxd7%5cxa2%5cxd7%5cx9c%20%5cxd7%5cx99%5cxd7%5cxa9%5cxd7%5cxa8%5cxd7%5cx90%5cxd7%5cx9c%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817583%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx95%5cxd7%5cx97%5cxd7%5cx91%5cxd7%5cxa8%5cxd7%5cx99%5cxd7%5cx9d%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817533%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx91%5cxd7%5cx92%5cxd7%5cx9f%20%5cxd7%5cx94%5cxd7%5cx90%5cxd7%5cx95%5cxd7%5cxaa%5cxd7%5cx99%5cxd7%5cx95%5cxd7%5cxaa%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2820067%26mode%3d10%26name%3d%5cxd7%5cx91%5cxd7%5cx90%20%5cxd7%5cx9c%5cxd7%5cx99%20%5cxd7%5cx9e%5cxd7%5cxa1%5cxd7%5cx99%5cxd7%5cx91%5cxd7%5cx94%20%5cxd7%5cx9c%5cxd7%5cx99%26module%3dwallavod%27%5d&viewtype=50)"))
-				#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://"+addonID+"/?&mode=5&url=%5b%27shuffle%3dtrue%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819037%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%201%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819043%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%202%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2819050%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx99%5cxd7%5cx99%5cxd7%5cxa4%5cxd7%5cxaa%20%5cxd7%5cxa9%5cxd7%5cx9c%20%5cxd7%5cx93%5cxd7%5cxa5%20%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20-%20%5cxd7%5cx97%5cxd7%5cx9c%5cxd7%5cxa7%203%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817560%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx9c%5cxd7%5cx95%5cxd7%5cx9d%20%5cxd7%5cxa2%5cxd7%5cx9c%20%5cxd7%5cx99%5cxd7%5cxa9%5cxd7%5cxa8%5cxd7%5cx90%5cxd7%5cx9c%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817583%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx95%5cxd7%5cx97%5cxd7%5cx91%5cxd7%5cxa8%5cxd7%5cx99%5cxd7%5cx9d%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2817533%26mode%3d10%26name%3d%5cxd7%5cx94%5cxd7%5cx9b%5cxd7%5cx91%5cxd7%5cxa9%5cxd7%5cx94%20%5cxd7%5cxa9%5cxd7%5cx95%5cxd7%5cxa9%5cxd7%5cxa0%5cxd7%5cx94%20%5cxd7%5cx91%5cxd7%5cx92%5cxd7%5cx9f%20%5cxd7%5cx94%5cxd7%5cx90%5cxd7%5cx95%5cxd7%5cxaa%5cxd7%5cx99%5cxd7%5cx95%5cxd7%5cxaa%26module%3dwallavod%27%2c%20%27%26custom%3dplugin%3a%2f%2fplugin.video.wallaNew.video%2f%3furl%3ditem_id%253D2820067%26mode%3d10%26name%3d%5cxd7%5cx91%5cxd7%5cx90%20%5cxd7%5cx9c%5cxd7%5cx99%20%5cxd7%5cx9e%5cxd7%5cxa1%5cxd7%5cx99%5cxd7%5cx91%5cxd7%5cx94%20%5cxd7%5cx9c%5cxd7%5cx99%26module%3dwallavod%27%5d)"))
-				liz.addContextMenuItems(items=menu, replaceItems=False)
+			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
+			liz.addContextMenuItems(items=menu, replaceItems=False)
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
 			returned = ok
 			'''---------------------------'''
 		elif mode == 12:
 			'''TEMP'''
+			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
 			liz.addContextMenuItems(items=menu, replaceItems=False)
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
 			returned = ok
 			'''---------------------------'''
 		elif mode == 9:
 			'''------------------------------
-			---TV-MODE-----------------------
+			---View-Channel------------------
 			------------------------------'''
-			#menu.append(('[COLOR=green]' + str79525.encode('utf-8') + '[/COLOR]', "XBMC.RunPlugin(plugin://%s/?num&iconimage=''&mode=15&name=''&url=%s)"% (addonID, url)))
+			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
 			liz.addContextMenuItems(items=menu, replaceItems=False)
-			#ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
 			returned = ok
 			'''---------------------------'''
 		elif mode == 8 or mode == 10:
+			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
 			liz.addContextMenuItems(items=menu, replaceItems=False)
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz)
 			returned = ok
 			'''---------------------------'''
 		elif mode == 11 or mode == 15:
+			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
+			liz.addContextMenuItems(items=menu, replaceItems=False)
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
 			returned = ok
 			'''---------------------------'''
 		elif mode == 13:
 			'''List Playlist'''
+			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
 			liz.addContextMenuItems(items=menu, replaceItems=False)
 			if '&dailymotion_pl' in url: ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
 			else: ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
@@ -187,6 +192,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 			'''------------------------------
 			---TV-MODE-2---------------------
 			------------------------------'''
+			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
 			liz.addContextMenuItems(items=menu, replaceItems=False)
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
 			returned = ok
@@ -256,6 +262,14 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	'''---------------------------'''
 	if not '9' in printpoint: return returned
 
+
+def menu_list(custom, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart):
+	if '1' in str(custom):
+		'''Add to favourites [Featherence]'''
+		menu.append((localize(14076) + space + '[Featherence]', "XBMC.RunPlugin(plugin://%s/?url=%s&mode=24&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart)))
+	
+	return menu
+	
 def checkRandom(url):
 	printpoint = "" ; i = "" ; returned = ""
 	#extra = extra + newline + 'scriptfeatherenceservice_random' + space2 + str(xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random)'))
@@ -394,6 +408,7 @@ def clean_commonsearch(x):
 			y = y.replace('[Video]',"")
 			y = y.replace('[Playlist]',"")
 			y = y.replace('[Channel]',"")
+			y = y.replace('[Sdarot-TV]',"")
 		elif '[COLOR=' in y:
 			printpoint = printpoint + '4'
 			y_ = regex_from_to(y, '[COLOR=', ']', excluding=False)
@@ -447,6 +462,12 @@ def YoutubeSearch(name, url, desc, num, viewtype):
 		if returned != 'skip':
 			printpoint = printpoint + "2"
 			value = returned + space + url
+			if Search_History == 'true':
+				if os.path.exists(Search_History_file): printpoint = printpoint + 'A' ; append = True ; value = '\n' + value
+				else: printpoint = printpoint + 'B' ; append = False
+				write_to_file(Search_History_file, value, append=append, silent=True , utf8=False)
+				
+					
 		else:
 			notification_common("8")
 	elif 'commonsearch' in url:
@@ -645,7 +666,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 			x = x.replace(name2,"",1)
 			name2 = name2.replace('&name_=',"",1)
 			name2 = name2.replace('&',"")
-			name2 = space + '(' + name2 + ')'
+			if name2 != "": name = name2
 			
 		if x not in playlist and x != "":
 			i += 1
@@ -729,28 +750,28 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 				
 				if "&custom4=" in x:
 					x = x.replace("&custom4=","")
-					addDir(str(i) + '.' + space + title_L[0] + space + name2, x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+					addDir(str(i) + '.' + space + title_L[0], x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					'''---------------------------'''
 				elif "&custom8=" in x:
 					x = x.replace("&custom8=","")
-					addDir(str(i) + '.' + space + title_L[0] + space + name2, x, 8, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+					addDir(str(i) + '.' + space + title_L[0], x, 8, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					'''---------------------------'''
 				elif "&dailymotion_id=" in x:
 					#x = x.replace("&dailymotion_id=","")
-					addDir(str(i) + '.' + space + title_L[0] + space + name2, x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+					addDir(str(i) + '.' + space + title_L[0], x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					'''---------------------------'''
 				elif "&dailymotion_pl=" in x:
 					if 'O' in printpoint:
 						ListPlaylist2(name, x, iconimage, desc, num, viewtype, fanart)
 						#mode = 13
-					else: addDir(str(i) + '.' + space + title_L[0] + space + name2, x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+					else: addDir(str(i) + '.' + space + title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 				elif "&youtube_ch=" in x:
 					#x = x.replace("&youtube_ch=","")
 					#if "/playlists" in x: x = x.replace("/playlists","")
 					if 'O' in printpoint:
 						YOUList2(name, url, iconimage, desc, num, viewtype)
 						mode = 9
-					else: mode_ = addDir(str(i) + '.' + space + title_L[0] + space + name2, x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0]) #addonString(192).encode('utf-8')
+					else: mode_ = addDir(str(i) + '.' + space + title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0]) #addonString(192).encode('utf-8')
 					
 					'''---------------------------'''
 				elif "&youtube_pl=" in x:
@@ -758,11 +779,11 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					if 'O' in printpoint:
 						ListPlaylist2(name, url, iconimage, desc, num, viewtype, fanart)
 						mode = 13
-					else: addDir(str(i) + '.' + space + title_L[0] + space + name2, x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0]) #addonString(192).encode('utf-8')
+					else: addDir(str(i) + '.' + space + title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0]) #addonString(192).encode('utf-8')
 					'''---------------------------'''
 				elif "&youtube_id=" in x:
 					#x = x.replace("&youtube_id=","")
-					addDir(str(i) + '.' + space + title_L[0] + space + name2, x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+					addDir(str(i) + '.' + space + title_L[0], x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					'''---------------------------'''
 				elif "&youtube_se2" in x or "&youtube_se=" in x or "&custom_se=" in x:
 					#try: str(name).encode('utf-8')
@@ -773,7 +794,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					#x = x + space + str(name)
 					#x = clean_commonsearch(x)
 					#print 'testme ' + str(x)
-					addDir(str(i) + '.' + space + title_L[0] + space + name2, x, 3, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+					addDir(str(i) + '.' + space + title_L[0], x, 3, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					'''---------------------------'''	
 				else:
 					if "&wallaNew=" in x:
@@ -784,16 +805,16 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						elif "genreId" in x: z = '2' ; m = 8
 						else: z = '10' ; m = 8
 						
-						addDir(str(i) + '.' + space + title_L[0] + space + name2, "plugin://plugin.video.wallaNew.video/?url="+x+"&mode="+z+"&module=wallavod", m, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+						addDir(str(i) + '.' + space + title_L[0] + space + '[Walla]', "plugin://plugin.video.wallaNew.video/?url="+x+"&mode="+z+"&module=wallavod", m, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 						'''---------------------------'''
 					elif "&wallaNew2=" in x:
 						x = x.replace("&wallaNew2=","")
 						z = '1'
-						addDir(str(i) + '.' + space + title_L[0] + space + name2, "plugin://plugin.video.wallaNew.video/?url="+x+"&mode="+z+"&module=nickjr", 8, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+						addDir(str(i) + '.' + space + title_L[0] + space + '[Walla]', "plugin://plugin.video.wallaNew.video/?url="+x+"&mode="+z+"&module=nickjr", 8, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 						'''---------------------------'''
 					elif "&sdarot=" in x:
 						x, z, summary, mode_, series_name, season_id = sdarot_(x)
-						addDir(str(i) + '.' + space + title_L[0] + space + name2, "plugin://plugin.video.sdarot.tv/?mode="+z+summary+series_name+"&image="+thumb_L[0]+"&name="+season_id+title_L[0]+"&"+x, int(mode_), thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+						addDir(str(i) + '.' + space + title_L[0] + space + '[Sdarot-TV]', "plugin://plugin.video.sdarot.tv/?mode="+z+summary+series_name+"&image="+thumb_L[0]+"&name="+season_id+title_L[0]+"&"+x, int(mode_), thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					elif "&seretil=" in x:
 						x = x.replace("&seretil=","")
 						if "?mode=211&url=http%3a%2f%2fseretil.me" in x: name2 = '[COLOR=red]' + title_L[0] + space + str(i) + '[/COLOR]'
@@ -805,7 +826,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						if "TopSeriesPlayer" in x: z = '3&module=%2fCmn%2fApp%2fVideo%2fCmmAppVideoApi_AjaxItems%2f0%2c13776%2c'
 						elif "FCmmAppVideoApi_AjaxItems" in x: z = '4'
 						else: z = '3&module=%2fCmn%2fApp%2fVideo%2fCmmAppVideoApi_AjaxItems%2f0%2c13776%2c'
-						addDir(str(i) + '.' + space + title_L[0] + space + name2, "plugin://plugin.video.hotVOD.video/?mode="+z+"&url="+x, 8, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+						addDir(str(i) + '.' + space + title_L[0], "plugin://plugin.video.hotVOD.video/?mode="+z+"&url="+x, 8, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 						'''---------------------------'''	
 					
 					else: pass
@@ -1665,7 +1686,7 @@ def urlcheck(url, ping=False, timeout=7):
 	
 def YOUList2(name, url, iconimage, desc, num, viewtype):
 	returned = "" ; printpoint = "" ; i = 0 ; urlL = ['channel', 'user'] #, 'show'
-	
+	url = CleanString2(url)
 	if '&youtube_ch=' in url or (not '&' in url and not '=' in url):
 		printpoint = printpoint + '1'
 		if '&youtube_ch=' in url:
@@ -2070,13 +2091,20 @@ def pluginend(admin):
 		'''Custom Playlist'''
 		mode = TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 20:
-		AddCustom(mode, name, url, iconimage, desc, num, viewtype)
+		AddCustom(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 21:
 		ManageCustom(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 22:
 		AdvancedCustom(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 23:
 		MoveCustom(mode, name, url, iconimage, desc, num, viewtype, fanart)
+	elif mode == 24:
+		AddCustom(mode, name, url, iconimage, desc, num, viewtype, fanart)
+	elif mode == 30:
+		CATEGORIES_SEARCH2(mode, name, url, iconimage, desc, num, viewtype, fanart)
+	elif mode == 31:
+		Search_Menu(mode, name, url, iconimage, desc, num, viewtype, fanart)
+	
 	elif mode == 40:
 		pass
 	elif mode == 90:
@@ -2086,89 +2114,89 @@ def pluginend(admin):
 			xbmc.sleep(500)
 		CATEGORIES()
 	elif mode == 100:
-		CATEGORIES100(admin)
+		CATEGORIES100(name, iconimage, desc, fanart)
 	elif mode == 101:
-		CATEGORIES101(admin)
+		CATEGORIES101(name, iconimage, desc, fanart)
 	elif mode == 102: 
-		CATEGORIES102(admin)
+		CATEGORIES102(name, iconimage, desc, fanart)
 	elif mode == 103:       
-		CATEGORIES103(admin)
+		CATEGORIES103(name, iconimage, desc, fanart)
 	elif mode == 104:       
-		CATEGORIES104(admin)
+		CATEGORIES104(name, iconimage, desc, fanart)
 	elif mode == 105:    
-		CATEGORIES105(admin)
+		CATEGORIES105(name, iconimage, desc, fanart)
 	elif mode == 106:       
-		CATEGORIES106(admin)
+		CATEGORIES106(name, iconimage, desc, fanart)
 	elif mode == 107:       
-		CATEGORIES107(admin)
+		CATEGORIES107(name, iconimage, desc, fanart)
 	elif mode == 108:       
-		CATEGORIES108(admin)
+		CATEGORIES108(name, iconimage, desc, fanart)
 	elif mode == 109:
-		CATEGORIES109(admin)
+		CATEGORIES109(name, iconimage, desc, fanart)
 	elif mode == 110:       
-		CATEGORIES110(admin)
+		CATEGORIES110(name, iconimage, desc, fanart)
 	elif mode == 111:
-		CATEGORIES111(admin)
+		CATEGORIES111(name, iconimage, desc, fanart)
 	elif mode == 112: 
-		CATEGORIES112(admin)
+		CATEGORIES112(name, iconimage, desc, fanart)
 	elif mode == 113:       
-		CATEGORIES113(admin)
+		CATEGORIES113(name, iconimage, desc, fanart)
 	elif mode == 114:       
-		CATEGORIES114(admin)
+		CATEGORIES114(name, iconimage, desc, fanart)
 	elif mode == 115:    
-		CATEGORIES115(admin)
+		CATEGORIES115(name, iconimage, desc, fanart)
 	elif mode == 116:       
-		CATEGORIES116(admin)
+		CATEGORIES116(name, iconimage, desc, fanart)
 	elif mode == 117:       
-		CATEGORIES117(admin)
+		CATEGORIES117(name, iconimage, desc, fanart)
 	elif mode == 118:       
-		CATEGORIES118(admin)
+		CATEGORIES118(name, iconimage, desc, fanart)
 	elif mode == 119:       
-		CATEGORIES119(admin)
+		CATEGORIES119(name, iconimage, desc, fanart)
 	
 	elif mode == 120:       
-		CATEGORIES120(admin)	
+		CATEGORIES120(name, iconimage, desc, fanart)	
 	elif mode == 121:
-		CATEGORIES121(admin)
+		CATEGORIES121(name, iconimage, desc, fanart)
 	elif mode == 122: 
-		CATEGORIES122(admin)
+		CATEGORIES122(name, iconimage, desc, fanart)
 	elif mode == 123:       
-		CATEGORIES123(admin)
+		CATEGORIES123(name, iconimage, desc, fanart)
 	elif mode == 124:       
-		CATEGORIES124(admin)
+		CATEGORIES124(name, iconimage, desc, fanart)
 	elif mode == 125:    
-		CATEGORIES125(admin)
+		CATEGORIES125(name, iconimage, desc, fanart)
 	elif mode == 126:       
-		CATEGORIES126(admin)
+		CATEGORIES126(name, iconimage, desc, fanart)
 	elif mode == 127:       
-		CATEGORIES127(admin)
+		CATEGORIES127(name, iconimage, desc, fanart)
 	elif mode == 128:       
-		CATEGORIES128(admin)
+		CATEGORIES128(name, iconimage, desc, fanart)
 	elif mode == 129:       
-		CATEGORIES129(admin)
+		CATEGORIES129(name, iconimage, desc, fanart)
 	
 	elif mode == 130:
-		CATEGORIES130(admin)
+		CATEGORIES130(name, iconimage, desc, fanart)
 	elif mode == 131:
-		CATEGORIES131(admin)
+		CATEGORIES131(name, iconimage, desc, fanart)
 	elif mode == 132: 
-		CATEGORIES132(admin)
+		CATEGORIES132(name, iconimage, desc, fanart)
 	elif mode == 133:       
-		CATEGORIES133(admin)
+		CATEGORIES133(name, iconimage, desc, fanart)
 	elif mode == 134:       
-		CATEGORIES134(admin)
+		CATEGORIES134(name, iconimage, desc, fanart)
 	elif mode == 135:    
-		CATEGORIES135(admin)
+		CATEGORIES135(name, iconimage, desc, fanart)
 	elif mode == 136:       
-		CATEGORIES136(admin)
+		CATEGORIES136(name, iconimage, desc, fanart)
 	elif mode == 137:       
-		CATEGORIES137(admin)
+		CATEGORIES137(name, iconimage, desc, fanart)
 	elif mode == 138:       
-		CATEGORIES138(admin)
+		CATEGORIES138(name, iconimage, desc, fanart)
 	elif mode == 139:       
-		CATEGORIES139(admin)
+		CATEGORIES139(name, iconimage, desc, fanart)
 	elif mode == 200:
-		CATEGORIES200(admin)
+		CATEGORIES200(name, iconimage, desc, fanart)
 	
 	#10101+ = SUB-CATEGORIES2
 	elif mode == 10001:
@@ -2471,11 +2499,18 @@ def pluginend(admin):
 		#xbmcplugin.setContent(int(sys.argv[1]), 'tvshows')
 		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL, name)
 		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_NONE)
+		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_VIDEO_RATING)
+		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_VIDEO_YEAR)
+		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_DATE)
 		if mode != "" and mode != None and mode != 100:
+			#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_DURATION)
 			xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_UNSORTED)
-			xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL)
+			#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL)
+			xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
+			#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_VIDEO_TITLE, name)
+			
 			#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_TITLE, name)
-		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_VIDEO_TITLE, name)
+		
 		xbmcplugin.endOfDirectory(int(sys.argv[1]))
 		printpoint = printpoint + "7"
 	
@@ -2536,7 +2571,7 @@ def pluginend2(admin, url, containerfolderpath, viewtype):
 
 	
 def getCustom_Playlist(admin):
-	#from variables import Custom_Playlist1
+	'''Get the next new Item ID'''
 	returned = "" ; printpoint = ""
 	if Custom_Playlist1_ID  == "": returned = 'Custom_Playlist1_ID'
 	elif Custom_Playlist2_ID  == "": returned = 'Custom_Playlist2_ID'
@@ -2553,8 +2588,28 @@ def getCustom_Playlist(admin):
 	printlog(title="getCustom_Playlist", printpoint=printpoint, text=text, level=2, option="")
 	return returned
 
+def getCustom_Playlist2(value):
+	'''Get the current item ID'''
+	returned = "" ; printpoint = "" ; TypeError = "" ; extra = ""
+	
+	if Custom_Playlist1_ID  == "": returned = 'Custom_Playlist1_ID'
+	
+	try:
+		returned = Custom_PlaylistL.index(value)
+		returned += 1
+		returned = 'Custom_Playlist' + str(returned) + '_ID'
+	except Exception, TypeError: extra = extra + newline + 'TypeError' + space2 + str(TypeError)
+	
+	text = "returned" + space2 + str(returned) + newline + \
+	"value" + space2 + str(value)
+	printlog(title="getCustom_Playlist2", printpoint=printpoint, text=text, level=2, option="")
+	return returned
+
 def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, viewtype):
-	printpoint = "" ; extra = "" ; New_Type = "" ; New_ID_ = ""
+	printpoint = "" ; extra = "" ; extra2 = "" ; New_Type = "" ; New_ID_ = "" ; New_IDL = "" ; DuplicatedL = [] ; IgnoredL = []
+	Custom_Playlist_ID_ = getsetting(Custom_Playlist_ID)
+	Custom_Playlist_ID_L = Custom_Playlist_ID_.split(',')
+	
 	if "list=" in New_ID:
 		'''Playlist'''
 		New_Type = localize(559) #Playlist
@@ -2585,31 +2640,84 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 		New_ID_ = New_ID.replace("&youtube_id=","")
 		'''---------------------------'''
 	
+	elif mode == 24:
+		if New_ID == 'Custom':
+			New_Type = 'New Custom'
+		else:
+			New_Type = 'Custom'
+		New_ID = url
+		New_ID_ = url
+		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
+		
 	elif New_ID == "None":
 		New_Type = localize(2080) #Empty list
 		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
 		New_ID_ = ""
 		
 	if New_Type != "":
-		if New_ID in url:
-			check = dialogyesno(addonString_servicefeatherence(93).encode('utf-8'), localize(19194)) # Duplicated URL found!, Continue?
-			if check == "ok": pass				
-			else: notification_common("9") ; printpoint = printpoint + "8"
+		printpoint = printpoint + "1"
+		New_IDL = CleanString2(New_ID, comma=True)
+		New_IDL = New_IDL.split(',')
+		for x in New_IDL:
+			
+			if 'commonsearch' in x:
+				IgnoredL.append(x)
+			elif x in Custom_Playlist_ID_L and x != "":
+				DuplicatedL.append(x)
+				if mode == 20 or mode == 21:
+					check = dialogyesno(addonString_servicefeatherence(93).encode('utf-8'), localize(19194)) # Duplicated URL found!, Continue?
+					if check == "ok": pass				
+					else: notification_common("9") ; printpoint = printpoint + "8"
+					break
+				else:
+					pass
+					
+			
 		
-		if not "8" in printpoint:
-			if mode == 20:
+		if mode == 24:
+			for x in IgnoredL:
+				New_IDL.remove(x)
+			for x in DuplicatedL:
+				New_IDL.remove(x)
+			
+				
+			New_ID = CleanString2(New_IDL, comma=True)
+			New_ID_ = New_ID
+		
+		if not "8" in printpoint and New_ID != "":
+			printpoint = printpoint + "2"
+			if mode == 20 or mode == 24 and New_Type == 'New Custom':
 				setsetting(Custom_Playlist_ID, New_ID)
 			elif mode == 21:
 				setsetting(Custom_Playlist_ID, str(url) + "," + New_ID)
-				#extra = "Previous ID: " + str(url)		
+				#extra = "Previous ID: " + str(url)
+			elif mode == 24:
+				setsetting(Custom_Playlist_ID, Custom_Playlist_ID_ + "," + New_ID)
+				
+			else: notification_common("17") ; printpoint = printpoint + "9"
 			#extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8')
-			dialogok(extra, "ID: " + str(New_ID_), str(name), "") ; xbmc.sleep(100)
+			if 'Custom' in New_Type: ID_Info = "" #'Source: ' + name
+			else: ID_Info = "ID: " + str(New_ID_)
+			
+			if DuplicatedL != []:
+				extra2 = 'Duplicated ID Ignored:[CR]' + str(DuplicatedL)
+			dialogok(extra, str(name), ID_Info, extra2, line1c="yellow", line2c="yellow") ; xbmc.sleep(100)
 			update_view(url, num, viewtype)
 			'''---------------------------'''
-
-	else: notification_common("17")
+		elif DuplicatedL != []: notification('Already exists in favourites!','','',2000)
+		elif New_ID == "": notification('NO valid url has been detected!','','',2000)
+		
+	else: notification_common("17") ; printpoint = printpoint + "9"
 	
-	text = "name" + space2 + str(name) + newline + "New_Type" + space2 + str(New_Type) + space + "New_ID" + space2 + str(New_ID) + space + "New_ID_" + space2 + str(New_ID_)
+	text = "name" + space2 + str(name) + space + 'mode' + space2 + str(mode) + newline + \
+	"New_Type" + space2 + str(New_Type) + newline + \
+	"New_ID" + space2 + str(New_ID) + newline + \
+	"New_ID_" + space2 + str(New_ID_) + newline + \
+	"New_IDL" + space2 + str(New_IDL) + newline + \
+	"DuplicatedL" + space2 + str(DuplicatedL) + newline + \
+	"IgnoredL" + space2 + str(IgnoredL) + newline + \
+	"Custom_Playlist_ID_L" + space2 + str(Custom_Playlist_ID_L) + newline + \
+	"Custom_Playlist_ID" + space2 + str(Custom_Playlist_ID) + newline
 	printlog(title="setCustom_Playlist_ID", printpoint=printpoint, text=text, level=2, option="")
 	'''---------------------------'''
 
@@ -2617,14 +2725,15 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 	'''------------------------------
 	---Save and Load your addon-design
 	------------------------------'''
-	printpoint = "" ; extra = "" ; formula = "" ; formula_ = "" ; path = "" ; file1 = "" ; file2 = "" ; file3 = "" ; returned = "" ; returned2 = ""; returned3 = "" ; y = "s"
+	printpoint = "" ; extra = "" ; formula = "" ; formula_ = "" ; path = "" ; file1 = "" ; file2 = "" ; file3 = "" ; returned = "" ; returned2 = ""; returned3 = "" ; y = "s" ; custommediaL = []
 	
-	if name == addonString(6).encode('utf-8'):
+	if num == 's':
 		list = ['-> (Exit)']
 		list.append(localize(190) + space + localize(593)) #Save All
 		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + localize(593) + space + "[LOCAL]") #Load All [LOCAL]
 		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + localize(593) + space + "[REMOTE]") #Load All [REMOTE] 
-		list.append(localize(10035) + space + localize(593)) #Reset All
+		list.append('Remove all buttons') #Remove-All-Buttons
+		
 		y = "s"
 		'''---------------------------'''
 	else:
@@ -2649,285 +2758,197 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		
 	if ("7" in printpoint or value != "") and not "8" in printpoint and not "9" in printpoint:
 		
-		if returned == 1 or returned == 2: path = os.path.join(addondata_path, addonID, '')
-		elif returned == 3: path = os.path.join(addonPath, 'resources', 'templates', '')
-		elif returned == 4: pass
+		if returned == 1 or returned == 2: path = os.path.join(addondata_path, addonID, '') #SAVE /LOAD [LOCAL]
+		elif returned == 3: path = os.path.join(addonPath, 'resources', 'templates', '') #LOAD [REMOTE]
+		elif returned == 4: pass #REMOVE ALL
 		else: path = ""
 		
-		if path != "":
-
-			if returned == 3:
-				check = dialogyesno(addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8'), addonString_servicefeatherence(99).encode('utf-8')) #Share My Music buttons, Choose YES to learn how to share Your Music button
-				if check == 'ok':
-					header = addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8')
-					msg1 = localize(190) + space + localize(592) ; msg1.decode('utf-8').encode('utf-8') #; msg1 = '[B]' + msg1 + '[/B]'
-					msg2 = os.path.join(addondata_path, addonID) ; msg2 = msg2.decode('utf-8').encode('utf-8')
-					message = "1. " + addonString_servicefeatherence(95).encode('utf-8') % (msg1) + ".[CR]" + "2. " + addonString_servicefeatherence(97).encode('utf-8') + "[CR]" + msg2 + ".[CR]" + "3. " + addonString_servicefeatherence(52).encode('utf-8') + "[CR]" + "4. " + addonString_servicefeatherence(53).encode('utf-8') % ("templates") + "[CR]" + "5. " + addonString_servicefeatherence(54).encode('utf-8') + ".[CR]" + "6. " + addonString_servicefeatherence(98).encode('utf-8') + ".[CR]" + "7. " + addonString_servicefeatherence(55).encode('utf-8') + ".[CR]" + "8. " + addonString_servicefeatherence(56).encode('utf-8') % ("Commit") + ".[CR][CR]" + "*You should now wait for the next addon update."
-					diaogtextviewer(header,message)
-					
-			'''read existing files'''
-			file1 = os.path.join(path, "Addon_SavedButton"+y+"1.txt")
-			file2 = os.path.join(path, "Addon_SavedButton"+y+"2.txt")
-			file3 = os.path.join(path, "Addon_SavedButton"+y+"3.txt")
-			'''---------------------------'''
-			
-			if os.path.exists(file1):
-				infile1 = read_from_file(file1, silent=True)
-				filename1 = regex_from_to(infile1, "&name=", "&", excluding=True)
-			else: filename1 = None
-			if os.path.exists(file2):
-				infile2 = read_from_file(file2, silent=True)
-				filename2 = regex_from_to(infile2, "&name=", "&", excluding=True)
-			else: filename2 = None
-			if os.path.exists(file3):
-				infile3 = read_from_file(file3, silent=True)
-				filename3 = regex_from_to(infile3, "&name=", "&", excluding=True)
-				#print 'infile3' + space2 + str(infile3) + newline + 'filename3' + space2 + str(filename3)
-			else: filename3 = None
-			
-			value1 = 'NO.' + space + "1" + space + "(" + str(filename1) + ")"
-			value2 = 'NO.' + space + "2" + space + "(" + str(filename2) + ")"
-			value3 = 'NO.' + space + "3" + space + "(" + str(filename3) + ")"
-			
-			'''save/load'''
-			if filename1 == None: value1 = '[COLOR=red]' + value1 + '[/COLOR]'
-			if filename2 == None: value2 = '[COLOR=red]' + value2 + '[/COLOR]'
-			if filename3 == None: value3 = '[COLOR=red]' + value3 + '[/COLOR]'
-		
-			list = ['-> (Exit)', value1, value2, value3]
+		list2 = ['-> (Exit)']
+		if returned == 1: list2.append('New')
+		elif returned == 3:
+			check = dialogyesno(addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8'), addonString_servicefeatherence(99).encode('utf-8')) #Share My Music buttons, Choose YES to learn how to share Your Music button
+			if check == 'ok':
+				header = addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8')
+				msg1 = localize(190) + space + localize(592) ; msg1.decode('utf-8').encode('utf-8') #; msg1 = '[B]' + msg1 + '[/B]'
+				msg2 = os.path.join(addondata_path, addonID) ; msg2 = msg2.decode('utf-8').encode('utf-8')
+				message = "1. " + addonString_servicefeatherence(95).encode('utf-8') % (msg1) + ".[CR]" + "2. " + addonString_servicefeatherence(97).encode('utf-8') + "[CR]" + msg2 + ".[CR]" + "3. " + addonString_servicefeatherence(52).encode('utf-8') + "[CR]" + "4. " + addonString_servicefeatherence(53).encode('utf-8') % ("templates") + "[CR]" + "5. " + addonString_servicefeatherence(54).encode('utf-8') + ".[CR]" + "6. " + addonString_servicefeatherence(98).encode('utf-8') + ".[CR]" + "7. " + addonString_servicefeatherence(55).encode('utf-8') + ".[CR]" + "8. " + addonString_servicefeatherence(56).encode('utf-8') % ("Commit") + ".[CR][CR]" + "*You should now wait for the next addon update."
+				diaogtextviewer(header,message)
 				
-			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+		if path != "":
+			'''read existing files'''
+			filesT = {}
+			AddonName = addonID.replace('plugin.video.', "", 1)
+			AddonName = AddonName + '_'
+			for files in os.listdir(path):
+				filesname = ""
+				if '.zip' in files and not '.txt' in files:
+					if AddonName in files:
+						filesname = regex_from_to(files, AddonName, ".zip", excluding=True)
+						if filesname != "" and filesname != None:
+							filesT_ = { filesname: files }
+							filesT.update(filesT_)
+							list2.append(filesname)
+							extra = 'files' + space2 + to_utf8(files) + newline + 'filesname' + space2 + to_utf8(filesname)
+							print extra 
+							'''---------------------------'''
+			
+			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list2,0)
 			
 			if returned2 == -1: printpoint = printpoint + "9"
 			elif returned2 == 0: printpoint = printpoint + "8"
 			else: printpoint = printpoint + "7"
-			
+				
 			if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
-				
-				if returned2 == 1: printpoint = printpoint + "1" #1
-				elif returned2 == 2: printpoint = printpoint + "2" #2
-				elif returned2 == 3: printpoint = printpoint + "3" #3
-				
 				if returned == 1: printpoint = printpoint + "A" #SAVE
 				elif returned == 2: printpoint = printpoint + "B" #LOAD
 				elif returned == 3: printpoint = printpoint + "C" #TEMPLATES
 		
 				if "A" in printpoint:
+					formula = ""
 					if y == "s":
-						'''------------------------------
-						---Save-All-----------------------
-						------------------------------'''
-						formula = ""
+						'''save all'''
+						min = 1
+						max = 11
+					else:
+						'''save one'''
+						min = int(num)
+						max = int(num) + 1
+					for i in range(min,max):
 
-						if Custom_Playlist1_ID != "":
-							formula = "Custom_Playlist1_ID" + "=5" + Custom_Playlist1_ID
-							formula = formula + newline + "Custom_Playlist1_Description" + "=5" + Custom_Playlist1_Description
-							formula = formula + newline + "Custom_Playlist1_Fanart" + "=5" + Custom_Playlist1_Fanart
-							formula = formula + newline + "Custom_Playlist1_Name" + "=5" + Custom_Playlist1_Name
-							formula = formula + newline + "Custom_Playlist1_Thumb" + "=5" + Custom_Playlist1_Thumb
-						if Custom_Playlist2_ID != "":
-							formula = formula + newline + "Custom_Playlist2_ID" + "=5" + Custom_Playlist2_ID + "=5" + Custom_Playlist2_ID
-							formula = formula + newline + "Custom_Playlist2_Description" + "=5" + Custom_Playlist2_Description
-							formula = formula + newline + "Custom_Playlist2_Fanart" + "=5" + Custom_Playlist2_Fanart
-							formula = formula + newline + "Custom_Playlist2_Name" + "=5" + Custom_Playlist2_Name
-							formula = formula + newline + "Custom_Playlist2_Thumb" + "=5" + Custom_Playlist2_Thumb
-						if Custom_Playlist3_ID != "":
-							formula = formula + newline + "Custom_Playlist3_ID" + "=5" + Custom_Playlist3_ID + "=5" + Custom_Playlist3_ID
-							formula = formula + newline + "Custom_Playlist3_Description" + "=5" + Custom_Playlist3_Description
-							formula = formula + newline + "Custom_Playlist3_Fanart" + "=5" + Custom_Playlist3_Fanart
-							formula = formula + newline + "Custom_Playlist3_Name" + "=5" + Custom_Playlist3_Name
-							formula = formula + newline + "Custom_Playlist3_Thumb" + "=5" + Custom_Playlist3_Thumb
-						if Custom_Playlist4_ID != "":
-							formula = formula + newline + "Custom_Playlist4_ID" + "=5" + Custom_Playlist4_ID + "=5" + Custom_Playlist4_ID
-							formula = formula + newline + "Custom_Playlist4_Description" + "=5" + Custom_Playlist4_Description
-							formula = formula + newline + "Custom_Playlist4_Fanart" + "=5" + Custom_Playlist4_Fanart
-							formula = formula + newline + "Custom_Playlist4_Name" + "=5" + Custom_Playlist4_Name
-							formula = formula + newline + "Custom_Playlist4_Thumb" + "=5" + Custom_Playlist4_Thumb
-						if Custom_Playlist5_ID != "":
-							formula = formula + newline + "Custom_Playlist5_ID" + "=5" + Custom_Playlist5_ID + "=5" + Custom_Playlist5_ID
-							formula = formula + newline + "Custom_Playlist5_Description" + "=5" + Custom_Playlist5_Description
-							formula = formula + newline + "Custom_Playlist5_Fanart" + "=5" + Custom_Playlist5_Fanart
-							formula = formula + newline + "Custom_Playlist5_Name" + "=5" + Custom_Playlist5_Name
-							formula = formula + newline + "Custom_Playlist5_Thumb" + "=5" + Custom_Playlist5_Thumb
-						if Custom_Playlist6_ID != "":
-							formula = formula + newline + "Custom_Playlist6_ID" + "=5" + Custom_Playlist6_ID + "=5" + Custom_Playlist6_ID
-							formula = formula + newline + "Custom_Playlist6_Description" + "=5" + Custom_Playlist6_Description
-							formula = formula + newline + "Custom_Playlist6_Fanart" + "=5" + Custom_Playlist6_Fanart
-							formula = formula + newline + "Custom_Playlist6_Name" + "=5" + Custom_Playlist6_Name
-							formula = formula + newline + "Custom_Playlist6_Thumb" + "=5" + Custom_Playlist6_Thumb
-						if Custom_Playlist7_ID != "":
-							formula = formula + newline + "Custom_Playlist7_ID" + "=5" + Custom_Playlist7_ID + "=5" + Custom_Playlist7_ID
-							formula = formula + newline + "Custom_Playlist7_Description" + "=5" + Custom_Playlist7_Description
-							formula = formula + newline + "Custom_Playlist7_Fanart" + "=5" + Custom_Playlist7_Fanart
-							formula = formula + newline + "Custom_Playlist7_Name" + "=5" + Custom_Playlist7_Name
-							formula = formula + newline + "Custom_Playlist7_Thumb" + "=5" + Custom_Playlist7_Thumb
-						if Custom_Playlist8_ID != "":
-							formula = formula + newline + "Custom_Playlist8_ID" + "=5" + Custom_Playlist8_ID + "=5" + Custom_Playlist8_ID
-							formula = formula + newline + "Custom_Playlist8_Description" + "=5" + Custom_Playlist8_Description
-							formula = formula + newline + "Custom_Playlist8_Fanart" + "=5" + Custom_Playlist8_Fanart
-							formula = formula + newline + "Custom_Playlist8_Name" + "=5" + Custom_Playlist8_Name
-							formula = formula + newline + "Custom_Playlist8_Thumb" + "=5" + Custom_Playlist8_Thumb
-						if Custom_Playlist9_ID != "":
-							formula = formula + newline + "Custom_Playlist9_ID" + "=5" + Custom_Playlist9_ID + "=5" + Custom_Playlist9_ID
-							formula = formula + newline + "Custom_Playlist9_Description" + "=5" + Custom_Playlist9_Description
-							formula = formula + newline + "Custom_Playlist9_Fanart" + "=5" + Custom_Playlist9_Fanart
-							formula = formula + newline + "Custom_Playlist9_Name" + "=5" + Custom_Playlist9_Name
-							formula = formula + newline + "Custom_Playlist9_Thumb" + "=5" + Custom_Playlist9_Thumb
-						if Custom_Playlist10_ID != "":
-							formula = formula + newline + "Custom_Playlist10_ID" + "=5" + Custom_Playlist10_ID + "=5" + Custom_Playlist10_ID
-							formula = formula + newline + "Custom_Playlist10_Description" + "=5" + Custom_Playlist10_Description
-							formula = formula + newline + "Custom_Playlist10_Fanart" + "=5" + Custom_Playlist10_Fanart
-							formula = formula + newline + "Custom_Playlist10_Name" + "=5" + Custom_Playlist10_Name
-							formula = formula + newline + "Custom_Playlist10_Thumb" + "=5" + Custom_Playlist10_Thumb
-					elif y == "":
-						'''------------------------------
-						---Save-One-----------------------
-						------------------------------'''
-						formula = ""
-
-						if Custom_Playlist_ID != "":
-							formula = Custom_Playlist_ID + "=5" + getsetting(Custom_Playlist_ID)
-							formula = formula + newline + Custom_Playlist_Fanart + "=5" + getsetting(Custom_Playlist_Fanart)
-							formula = formula + newline + Custom_Playlist_Name + "=5" + getsetting(Custom_Playlist_Name)
-							formula = formula + newline + Custom_Playlist_Thumb + "=5" + getsetting(Custom_Playlist_Thumb)
-							formula = formula + newline + Custom_Playlist_Description + "=5" + getsetting(Custom_Playlist_Description)
-							'''---------------------------'''
+						Custom_Playlist_ID_ = "Custom_Playlist" + str(i) + "_ID"
+						Custom_Playlist_Name_ = "Custom_Playlist" + str(i) + "_Name"
+						Custom_Playlist_Thumb_ = "Custom_Playlist" + str(i) + "_Thumb"
+						Custom_Playlist_Description_ = "Custom_Playlist" + str(i) + "_Description"
+						Custom_Playlist_Fanart_ = "Custom_Playlist" + str(i) + "_Fanart"
+						
+						Custom_Playlist_ID__ = getsetting(Custom_Playlist_ID_)
+						Custom_Playlist_Name__ = getsetting(Custom_Playlist_Name_)
+						Custom_Playlist_Thumb__ = getsetting(Custom_Playlist_Thumb_)
+						Custom_Playlist_Description__ = getsetting(Custom_Playlist_Description_)
+						Custom_Playlist_Fanart__ = getsetting(Custom_Playlist_Fanart_)
+						
+						if Custom_Playlist_ID__ == "":
 							
-					if "1" in printpoint:
-						if filename1 == None: filename = ""
-						else: filename = filename1
-					elif "2" in printpoint:
-						if filename2 == None: filename = ""
-						else: filename = filename2
-					elif "3" in printpoint:
-						if filename3 == None: filename = ""
-						else: filename = filename3
+							formula = Custom_Playlist_ID_ + "=5" + ""
+							formula = Custom_Playlist_Name_ + "=5" + ""
+							formula = Custom_Playlist_Thumb_ + "=5" + ""
+							formula = Custom_Playlist_Description_ + "=5" + ""
+							formula = Custom_Playlist_Fanart_ + "=5" + ""
+						
+						else:
+							formula = formula + newline + Custom_Playlist_ID_ + "=5" + Custom_Playlist_ID__
+							formula = formula + newline + Custom_Playlist_Name_ + "=5" + Custom_Playlist_Name__
+							x2 = TranslatePath(Custom_Playlist_Thumb__, filteroff=[featherenceserviceicons_path, skin_path])
+							if x2 != "":
+								y, y2, y3 = GeneratePath(x2)
+								copyfiles(x2, y2, chmod="", mount=False)
+								formula = formula + newline + Custom_Playlist_Thumb_ + "=5" + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3)
+								if os.path.exists(y2): custommediaL.append(y)
+							formula = formula + newline + Custom_Playlist_Description_ + "=5" + Custom_Playlist_Description__
+							x2 = TranslatePath(Custom_Playlist_Fanart__, filteroff=[featherenceserviceicons_path, skin_path])
+							if x2 != "":
+								y, y2, y3 = GeneratePath(x2)
+								copyfiles(x2, y2, chmod="", mount=False)
+								formula = formula + newline + Custom_Playlist_Fanart_ + "=5" + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3)
+								if os.path.exists(y2): custommediaL.append(y)
+							
+					if returned2 == 1: filename = ""
+					else: filename = str(list2[returned2])
 					
 					filename = dialogkeyboard(filename, localize(21821), 0, "", "", "") #Description
-					filename_ = "&name="+str(filename)+"&"
-					formula = filename_ + newline + formula
+					if filename != 'skip' and filename != "":
+						formula = to_utf8(formula)
 					
-					try: formula.encode('utf-8')
-					except: pass
+						write_to_file(featherenceservice_addondata_path + AddonName + ".txt", str(formula), append=False, silent=True, utf8=False) ; xbmc.sleep(200)
+						if not os.path.exists(featherenceservice_addondata_path + AddonName + ".txt"):
+							notification_common('17')
+							extra = extra + newline + featherenceservice_addondata_path + AddonName + ".txt" + space + 'Is not found!'
+						else:
+							removefiles(path + AddonName + to_unicode(list2[returned2]) + '.zip')
+							zipname = path + AddonName + str(filename).decode('utf-8')
+							if custommediaL == []:
+								CreateZip(featherenceservice_addondata_path, zipname, filteron=[AddonName + '.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=False)
+							else:
+								CreateZip(featherenceservice_addondata_path, zipname, filteron=[AddonName + '.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
+								CreateZip(featherenceservice_addondata_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
+							notification(addonString_servicefeatherence(58).encode('utf-8'), str(filename), "", 4000) #Saved Succesfully!, 
+							'''---------------------------'''
+					else: notification_common('9') ; extra = extra + newline + 'filename is empty!'
 					
-					if "1" in printpoint:
-						write_to_file(file1, str(formula), append=False, silent=True, utf8=False)
-						#setsetting('Addon_SavedButton'+y+'1', str(formula))
-					elif "2" in printpoint:
-						write_to_file(file2, str(formula), append=False, silent=True, utf8=False)
-						#setsetting('Addon_SavedButton'+y+'2', str(formula))
-					elif "3" in printpoint:
-						write_to_file(file3, str(formula), append=False, silent=True, utf8=False)
-						#setsetting('Addon_SavedButton'+y+'3', str(formula))
-						'''---------------------------'''
 					
-					notification(addonString_servicefeatherence(58).encode('utf-8'), str(filename), "", 4000) #Saved Succesfully!, 
+					
 				
 				elif "B" in printpoint or "C" in printpoint:
 					'''------------------------------
 					---Load/Templates----------------
 					------------------------------'''
-
-					if "1" in printpoint:
-						if filename1 == None: printpoint = printpoint + "Q"
-						else: file = file1
-					elif "2" in printpoint:
-						if filename2 == None: printpoint = printpoint + "Q"
-						else: file = file2
-					elif "3" in printpoint:
-						if filename3 == None: printpoint = printpoint + "Q"
-						else: file = file3
+					filename = str(list2[returned2])
+					file = filesT.get(filename)
 					
-					if "Q" in printpoint or file == "":
+					if file == "" or file == None:
+						notification("Invalid file!", "", "", 4000)
+					elif not os.path.exists(path + file):
 						'''nothing to load'''
-						if "C" in printpoint: notification(localize(19055), "Share Your Music button first.", "", 4000) #No information available
-						else:
-							if y == "": extra2 = localize(190) + space + localize(592)
-							else: extra2 = localize(190) + space + localize(593)
-							extra2 = extra2.decode('utf-8').encode('utf-8')
-							notification(localize(19055), addonString_servicefeatherence(95).encode('utf-8') % (extra2), "", 4000) #No information available
+						notification("There is no data to load!", "You should create a save session", "", 4000)
 					else:
-						#formula_ = formula_.split(',')
-						#formula_ = CleanString(formula_, filter=[])
-						import fileinput
-						for line in fileinput.input([file]):
-							x = "" ; x1 = "" ; x2 = "" ; x3 = ""
-							if "=5" in line:
-								'''setsetting'''
-								x = line.replace("=5","=")
-								x1 = find_string(x, "", "=")
-								x2 = find_string(x, "=", "")
-								x1 = x1.replace("=","")
-								x2 = x2.replace('=&', '&') #CLEAN STRINGS
-								x2 = x2.replace('\n', '') #CLEAN STRINGS
-								if not "_ID" in x:
-									'''Clean values for none ID lines'''
-									x2 = x2.replace("=","")
-									#x2 = x2.replace("\n","")
-								
-								if y == "":
-									count = 0
-									while count <= 10 and not xbmc.abortRequested:
-										if str(count) in x1:
-											x1 = x1.replace(str(count), str(num))
-											count = 40
-										else: count += 1
-								setsetting(str(x1), str(x2))
-								
-							if admin3 and admin and not admin2: extra = extra + newline + space + "line" + space2 + str(line) + space + "x" + space2 + str(x) + space + "x1" + space2 + str(x1) + space + "x2" + space2 + str(x2) + space + "x3" + space2 + str(x3)
-							'''---------------------------'''	
+						if os.path.exists(featherenceservice_addondata_path + AddonName + '.txt'):
+							removefiles(featherenceservice_addondata_path + AddonName + '.txt')
+							
+						ExtractAll(path + file, featherenceservice_addondata_path) ; xbmc.sleep(200)
+						
+						if not os.path.exists(featherenceservice_addondata_path + AddonName + '.txt'):
+							notification(AddonName + ".txt is missing!", "Check your zip file!", "", 4000)
+						else:
+							printpoint = printpoint + "V"
+							print file
+							import fileinput
+							for line in fileinput.input(featherenceservice_addondata_path + AddonName + '.txt'):
+								x = "" ; x1 = "" ; x2 = "" ; x3 = ""
+								if "=5" in line:
+									'''setsetting'''
+									x = line.replace("=5","=")
+									x1 = find_string(x, "", "=")
+									x2 = find_string(x, "=", "")
+									x1 = x1.replace("=","")
+									x2 = x2.replace('=&', '&') #CLEAN STRINGS
+									x2 = x2.replace('\n', '') #CLEAN STRINGS
+									if not "_ID" in x:
+										'''Clean values for none ID lines'''
+										x2 = x2.replace("=","")
+										#x2 = x2.replace("\n","")
+									
+									x2 = CleanString2(x2, comma=True)
+									
+									if y == "":
+										count = 0
+										while count <= 10 and not xbmc.abortRequested:
+											if str(count) in x1:
+												x1 = x1.replace(str(count), str(num))
+												count = 40
+											else: count += 1
+									setsetting(str(x1), str(x2))
+									
+								extra = extra + newline + space + "line" + space2 + str(line) + space + "x" + space2 + str(x) + space + "x1" + space2 + str(x1) + space + "x2" + space2 + str(x2) + space + "x3" + space2 + str(x3)
+								'''---------------------------'''	
 		elif returned == 4:
 			'''------------------------------
-			---Reset-All---------------------
+			---Remove-All-Buttons------------
 			------------------------------'''
-			returned = dialogyesno(localize(10035) + space + localize(593) + space + "(" + localize(19291) + ")", "You may want to SAVE your settings just in case..") #Reset all (Delete permanently),
-			if returned == 'ok':
-				file = os.path.join(addondata_path, addonID, 'settings.xml')
-				removefiles(file) ; xbmc.sleep(500)
-				setsetting('General_AutoView', General_AutoView)
-				setsetting('General_TVModeShuffle', General_TVModeShuffle)
-				setsetting('General_TVModeDialog', General_TVModeDialog)
-				setsetting('Addon_ShowLog', Addon_ShowLog)
-				setsetting('Addon_ShowLog2', Addon_ShowLog2)
-				setsetting('Addon_Update', Addon_Update)
-				setsetting('Addon_UpdateDate', Addon_UpdateDate)
-				setsetting('Addon_UpdateLog', Addon_UpdateLog)
-				setsetting('Addon_Version', Addon_Version)
-				setsetting('Fanart_Enable', Fanart_Enable)
-				setsetting('Fanart_EnableCustom', Fanart_EnableCustom)
-				setsetting('Fanart_Custom100', Fanart_Custom100)
-				setsetting('Fanart_Custom101', Fanart_Custom101)
-				setsetting('Fanart_Custom102', Fanart_Custom102)
-				setsetting('Fanart_Custom103', Fanart_Custom103)
-				setsetting('Fanart_Custom104', Fanart_Custom104)
-				setsetting('Fanart_Custom105', Fanart_Custom105)
-				setsetting('Fanart_Custom106', Fanart_Custom106)
-				setsetting('Fanart_Custom107', Fanart_Custom107)
-				setsetting('Fanart_Custom108', Fanart_Custom108)
-				setsetting('Fanart_Custom109', Fanart_Custom109)
-				setsetting('Fanart_Custom110', Fanart_Custom110)
-				setsetting('Fanart_Custom111', Fanart_Custom111)
-				setsetting('Fanart_Custom112', Fanart_Custom112)
-				setsetting('Fanart_Custom113', Fanart_Custom113)
-				setsetting('Fanart_Custom114', Fanart_Custom114)
-				setsetting('Fanart_Custom115', Fanart_Custom115)
-				setsetting('Fanart_Custom116', Fanart_Custom116)
-				setsetting('Fanart_Custom117', Fanart_Custom117)
-				setsetting('Fanart_Custom118', Fanart_Custom118)
-				setsetting('Fanart_Custom119', Fanart_Custom119)
-				setsetting('Fanart_Custom120', Fanart_Custom120)
-				setsetting('Fanart_Custom121', Fanart_Custom121)
-				setsetting('Fanart_Custom122', Fanart_Custom122)
-				setsetting('Fanart_Custom123', Fanart_Custom123)
-				setsetting('Fanart_Custom124', Fanart_Custom124)
-				setsetting('Fanart_Custom125', Fanart_Custom125)
-				setsetting('Fanart_Custom126', Fanart_Custom126)
-				setsetting('Fanart_Custom127', Fanart_Custom127)
-				setsetting('Fanart_Custom128', Fanart_Custom128)
-				setsetting('Fanart_Custom129', Fanart_Custom129)
-				setsetting('Fanart_Custom130', Fanart_Custom130)
-				
-				
+			Custom_Playlist_NameL = [Custom_Playlist1_Name, Custom_Playlist2_Name, Custom_Playlist3_Name, Custom_Playlist4_Name, Custom_Playlist5_Name, Custom_Playlist6_Name, Custom_Playlist7_Name, Custom_Playlist8_Name, Custom_Playlist9_Name, Custom_Playlist10_Name]
+			returned = dialogyesno('Remove ALL buttons' + '[CR]' + str(Custom_Playlist_NameL),localize(19194)) #Remove Button, Continue?
+			if returned == "ok":
+				for x in range(1,11):
+					setsetting('Custom_Playlist' + str(x) + '_ID', "")
+					setsetting('Custom_Playlist' + str(x) + '_Name', "")
+					setsetting('Custom_Playlist' + str(x) + '_Thumb', "")
+					setsetting('Custom_Playlist' + str(x) + '_Description', "")
+					setsetting('Custom_Playlist' + str(x) + '_Fanart', "")
+					'''---------------------------'''
+				if desc != "": extra1 = localize(21821) + space2 + str(desc)
+				else: extra1 = ""
+				dialogok(localize(50) + space + addonString_servicefeatherence(43).encode('utf-8') + '[CR]' + str(name), "ID" + space2 + str(url), "", extra1)
+				'''---------------------------'''
+			
 				
 	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
 		if not "Q" in printpoint and not "A" in printpoint:
@@ -2946,14 +2967,44 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 	"extra" + space2 + str(extra)
 	printlog(title="AdvancedCustom", printpoint=printpoint, text=text, level=2, option="")
 		
-def AddCustom(mode, name, url, iconimage, desc, num, viewtype):
+def AddCustom(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	'''------------------------------
 	---New-Button--------------------
 	------------------------------'''
-	printpoint = ""
-	Custom_Playlist_ID = getCustom_Playlist(admin) ; New_Type = "" ; New_ID = "" ; New_Name = ""
+	printpoint = "" ; New_Type = "" ; New_ID = "" ; New_Name = "" ; value = "" ; value2 = ""
+	Custom_Playlist_ID = getCustom_Playlist(admin)
 	Custom_Playlist_Name = Custom_Playlist_ID.replace("_ID","_Name")
 	if Custom_Playlist_ID == "": notification("Playlist limit reached!", "You may delete some playlists and try again!", "", 4000)
+	elif mode == 24:
+		'''from Menu'''
+		#Custom_Playlist_ID = "Custom_Playlist" + num + "_ID"
+		#if Custom_Playlist_ID == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
+		#Custom_Playlist_Name = "Custom_Playlist" + num + "_Name"
+		#Custom_Playlist_Thumb = "Custom_Playlist" + num + "_Thumb"
+		#Custom_Playlist_Description = "Custom_Playlist" + num + "_Description"
+		#Custom_Playlist_Fanart = "Custom_Playlist" + num + "_Fanart"
+		
+		list = ['-> (Exit)', 'New']
+		for x in Custom_PlaylistL:
+			if x != "":
+				x2 = Custom_Playlist_NameT.get(x)
+				x2 = to_utf8(x2)
+				list.append(x2) #NAME
+		returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+		
+		if returned == -1: pass
+		elif returned == 0: pass
+		elif returned == 1:
+			printpoint = printpoint + "1"
+			New_Name = dialogkeyboard('My Button', "Button Name", 0, "",Custom_Playlist_Name, "0")
+			setCustom_Playlist_ID(Custom_Playlist_ID, 'New Custom', mode, url, New_Name, num, viewtype)
+		else:
+			printpoint = printpoint + "2"
+			New_Name = value
+			value2 = Custom_Playlist_NameT2.get(value) #ID
+			Custom_Playlist_ID = getCustom_Playlist2(value2)
+			setCustom_Playlist_ID(Custom_Playlist_ID, url, mode, url, New_Name, num, viewtype)
+			
 	else:
 		New_ID = dialogkeyboard("", "Enter YouTube URL", 0, "5", "" , "")
 		if New_ID != "skip":
@@ -2961,7 +3012,14 @@ def AddCustom(mode, name, url, iconimage, desc, num, viewtype):
 			if New_Name != "skip":
 				setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, New_Name, num, viewtype)
 				
-	text = "name" + space2 + str(name)
+	text = "mode" + space2 + str(mode) + space + "name" + space2 + str(name) + newline + \
+	"New_Type" + space2 + str(New_Type) + newline + \
+	"New_ID" + space2 + str(New_ID) + newline + \
+	"New_Name" + space2 + str(New_Name) + newline + \
+	"value" + space2 + str(value) + newline + \
+	"value2" + space2 + str(value2) + newline + \
+	"url" + space2 + str(url) + newline + \
+	"iconimage" + space2 + str(iconimage) + newline
 	printlog(title="AddCustom", printpoint=printpoint, text=text, level=2, option="")
 	'''---------------------------'''
 	
@@ -3174,7 +3232,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		fanart = cleanfanartCustom(getsetting(Custom_Playlist_Fanart))
 		if fanart == "": list.append(addonString_servicefeatherence(34).encode('utf-8')) #Add Fanart
 		else: list.append(addonString_servicefeatherence(35).encode('utf-8')) #Remove Fanart
-		list.append(localize(13336)) #'Remove Button'
+		list.append(localize(13336)) #Remove Button
 
 		returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
 			
@@ -3470,3 +3528,34 @@ def getLists(mode, name, url, iconimage, desc, num, viewtype, fanart):
 def CATEGORIES_RANDOM():
 	'''אקראי'''
 	addDir('-' + localize(590),list,1,featherenceserviceicons_path + 'random.png',addonString_servicefeatherence(8).encode('utf-8'),'1',"", "") #אקראי
+
+def CATEGORIES_SEARCH(mode=3, name='-' + localize(137), url="", num=""):
+	'''חיפוש'''
+	printpoint = "" ; infile_ = ""
+	if Search_History == 'true' and os.path.exists(Search_History_file) and mode == 30:
+		infile_ = read_from_file(Search_History_file, silent=True, lines=True, retry=True, createlist=True, printpoint="", addlines="")
+		if infile_ != "" and infile_ != []: pass
+		else: mode = 3
+	else: mode = 3
+	addDir(name,url,mode,featherenceserviceicons_path + 'se.png',localize(137) + space + 'YouTube',num,"", getAddonFanart("", custom="", urlcheck_=True))
+	
+	text = 'mode' + space2 + str(mode) + newline + \
+	'infile_' + space2 + str(infile_)
+	printlog(title="CATEGORIES_SEARCH", printpoint=printpoint, text=text, level=0, option="")
+	
+def CATEGORIES_SEARCH2(mode, name, url, iconimage, desc, num, viewtype, fanart):
+	'''רשימת חיפוש'''
+	CATEGORIES_SEARCH()
+	infile_ = read_from_file(Search_History_file, silent=True, lines=True, retry=True, createlist=True, printpoint="", addlines="")
+	for x in infile_:
+		CATEGORIES_SEARCH(url=str(x), name=str(x), num='Custom')
+
+def Search_Menu(mode, name, url, iconimage, desc, num, viewtype, fanart):
+	if num == 'Delete':
+		replace_word(Search_History_file, url, "", infile_="", LineR=False , LineClean=False)
+	elif num == 'Delete All':
+		removefiles(Search_History_file)
+	xbmc.sleep(500) ; xbmc.executebuiltin('Container.Refresh')
+
+def MyFavourites(mode, name, url, iconimage, desc, num, viewtype, fanart):
+	pass

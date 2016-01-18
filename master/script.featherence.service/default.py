@@ -84,10 +84,12 @@ elif mode == 6:
 
 elif mode == 7:
 	'''------------------------------
-	---?-----------------------------
+	---SEND-DEBUG--------------------
 	------------------------------'''
-	name = "?"
-	mode7(admin, name, printpoint)
+	from debug import *
+	from debug2 import *
+	name = "SEND-DEBUG"
+	SendDebug()
 	'''---------------------------'''
 	
 elif mode == 8:
@@ -373,9 +375,9 @@ elif mode == 29:
 	
 elif mode == 30:
 	'''------------------------------
-	---featherence-CHANNEL------------------
+	---------------------------------
 	------------------------------'''
-	name = "featherence-CHANNEL"
+	pass
 	mode30(admin, name)
 	'''---------------------------'''	
 
@@ -1871,10 +1873,7 @@ elif mode >= 200 and mode <= 249:
 						Custom1000(str(list[returned]),90,str(list2[returned2]),5)
 						filename = dialogkeyboard(filename, localize(21821), 0, "", "", "") #Description
 						if filename != 'skip' and filename != "":
-							try: formula = formula.encode('utf-8')
-							except: pass
-							#try: filename = filename.encode('utf-8')
-							#except: pass
+							formula = to_utf8(formula)
 							
 							write_to_file(featherenceservice_addondata_path + "Featherence_" + ".txt", str(formula), append=False, silent=True, utf8=False) ; xbmc.sleep(200)
 							if not os.path.exists(featherenceservice_addondata_path + "Featherence_" + ".txt"):
@@ -1883,9 +1882,12 @@ elif mode >= 200 and mode <= 249:
 							else:
 								removefiles(featherenceservice_addondata_path + 'Featherence_' + to_unicode(list2[returned2]) + '.zip')
 								zipname = featherenceservice_addondata_path + 'Featherence_' + str(filename).decode('utf-8')
-								CreateZip(featherenceservice_addondata_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
-								CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
-								'''---------------------------'''
+								if custommediaL == []:
+									CreateZip(featherenceservice_addondata_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=False)
+								else:
+									CreateZip(featherenceservice_addondata_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
+									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
+									'''---------------------------'''
 								Custom1000(str(list[returned]),100,str(list2[returned2]),0)
 						else: notification_common('9') ; extra = extra + newline + 'filename is empty!'
 				
@@ -1980,17 +1982,23 @@ elif mode >= 200 and mode <= 249:
 					#mode215('_',admin,'','') ; xbmc.sleep(3000)
 					xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_)')
 					xbmc.executebuiltin('Action(Back)')
+					xbmc.sleep(2000)
+					returned = dialogyesno('Your current language is %s' % (systemlanguage), 'Does the buttons are in %s?' % (systemlanguage))
+					if returned == 'skip':
+						xbmc.sleep(3000)
+						mode215('LABEL', admin, name, printpoint)
 					#ReloadSkin(admin)
 					#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=5)')
 					'''---------------------------'''
 				else:
 					pass
 					#Custom1000(str(list[returned]),100,str(list2[returned2]),0)
+					
 		text = "path" + space2 + str(path) + newline + \
-		"list" + space2 + str(list) + newline + \
-		"list2" + space2 + str(list2) + newline + \
-		"file" + space2 + to_utf8(file) + newline + \
-		"filename" + space2 + to_utf8(filename) + newline + \
+		"list" + space2 + str(list) + space + 'returned' + space2 + str(returned) + newline + \
+		"list2" + space2 + str(list2) + space + 'returned2' + space2 + str(returned2) + newline + \
+		"file" + space2 + to_utf8(str(file)) + newline + \
+		"filename" + space2 + to_utf8(str(filename)) + newline + \
 		"formula" + space2 + str(formula) + space + "formula_" + space2 + str(formula_) + newline + \
 		"custommediaL" + space2 + str(custommediaL) + newline + \
 		"extra" + space2 + to_utf8(extra)

@@ -22,9 +22,15 @@ def mode0(admin, name, printpoint):
 	#dp = xbmcgui.DialogProgress()
 	#dp.create("featherence Texture-Cache-Removal", "Removing Datebase", "why are we here?[CR]test is here ssssssssssssssssssssssssssssssssssssssssssssssssssss ")
 	#terminal('killall -9 kodi.bin',desc="", remote=True)
-	path = 'C:\Users\gal\AppData\Roaming\Kodi\userdata\library\pictures_\אלבום\אבג.jpg'
-	path = to_unicode(path)
-	if os.path.exists(path): notification('1','','',2000)
+	from debug2 import *
+	from debug3 import *
+	subject = 'test'
+	text = 'test2'
+	file = 'C:\\Users\\gal\\AppData\\Roaming\\Kodi\\1941146-1920x1080-[DesktopNexus.com]_.jpg'
+	#file = to_unicode(file)
+	#file = ""
+	upload_file2(file)
+	#sendMail(Debug_Email, Debug_Password, subject, text, file)
 	
 def mode5(value, admin, name, printpoint):
 	'''------------------------------
@@ -742,19 +748,7 @@ def mode29(admin, name, printpoint):
 	'''---------------------------'''
 	
 def mode30(admin, name):
-	'''------------------------------
-	---featherence-CHANNEL------------------
-	------------------------------'''
-	
-	xbmc.executebuiltin('ActivateWindow(10025,plugin://plugin.video.youtube/channel/finalmakerr/),returned')			
-	if os.path.exists(skinlog_file):
-		if os.path.exists(skinlog_en_file) and xbmc.getInfoLabel('System.Language') != 'Hebrew': log = open(skinlog_en_file, 'r')
-		else: log = open(skinlog_file, 'r')
-		message = log.read()
-		log.close()
-		if xbmc.getInfoLabel('System.Language') == 'Hebrew': diaogtextviewer('[COLOR=yellow]' + xbmc.getInfoLabel('System.AddonVersion(skin.featherence)') + '[/COLOR]' + localize(75687).decode('utf-8') + "-", message)
-		else: diaogtextviewer(localize(75687).decode('utf-8') + "-" + '[COLOR=yellow]' + xbmc.getInfoLabel('System.AddonVersion(skin.featherence)') + '[/COLOR]', message)
-		'''---------------------------'''
+	pass
 
 def mode31(value, value2, value3, value4, admin, name, printpoint):
 	'''------------------------------
@@ -768,6 +762,7 @@ def mode31(value, value2, value3, value4, admin, name, printpoint):
 	if value == 'Custom':
 		value3 = setPath(type=1,mask="", folderpath="")
 		if value3 != "":
+			'''get file name only'''
 			header = os.path.basename(value3)
 	
 	if value3 != "" and value3 != None:
@@ -872,8 +867,14 @@ def mode32(value, admin, name, printpoint):
 			xbmc.sleep(500)
 			dp.close
 	
+	elif value == '3':
+		'''Featherence YouTube channel'''
+		xbmc.executebuiltin('ActivateWindow(10025,plugin://plugin.video.youtube/user/finalmakerr/),returned')			
+		setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=True)
+		
 	elif value == '5':
 		ReloadSkin(admin)
+	
 	elif value == '40':
 		addon = 'plugin.video.featherence.kids'
 		if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
@@ -3063,7 +3064,7 @@ def mode215(value, admin, name, printpoint):
 		x = '90' ; id = idT2.get(x)
 		if id != "" and id != None:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET': setSkinSetting('0','label'+id,localize(342))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(342))
 			setSkinSetting('0','action'+id,'ActivateWindow(Videos,MovieTitles,return)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/movies.png')		
 			'''---------------------------'''
@@ -3074,7 +3075,7 @@ def mode215(value, admin, name, printpoint):
 		x = '91' ; id = idT2.get(x)
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET': setSkinSetting('0','label'+id,localize(20343))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(20343))
 			
 			setSkinSetting('0','action'+id,'ActivateWindow(VideoLibrary,TVShowTitles,return)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/tvshows.png')
@@ -3086,7 +3087,7 @@ def mode215(value, admin, name, printpoint):
 		x = '92' ; id = idT2.get(x)
 		if id != "" and id != None:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET': setSkinSetting('0','label'+id,localize(19023))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(19023))
 			setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=517&value=0)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/LiveTV.png')
 			'''---------------------------'''
@@ -3097,7 +3098,7 @@ def mode215(value, admin, name, printpoint):
 		x = '93' ; id = idT2.get(x) ; background = backgroundT.get('icon'+x)
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET': setSkinSetting('0','label'+id,localize(73220))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(73220))
 			setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=515&value=0)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/kids.png')
 			'''---------------------------'''	
@@ -3108,7 +3109,7 @@ def mode215(value, admin, name, printpoint):
 		x = '94' ; id = idT2.get(x)
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET': setSkinSetting('0','label'+id,localize(2))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(2))
 			setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=514&value=0)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/music.png')
 			'''---------------------------'''
@@ -3119,7 +3120,7 @@ def mode215(value, admin, name, printpoint):
 		x = '95' ; id = idT2.get(x)
 		if id != "" and id != None and 1 + 1 == 2:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET': setSkinSetting('0','label'+id,localize(1036))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(1036))
 			setSkinSetting('0','action'+id,'ActivateWindow(134)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/star.png')
 			'''---------------------------'''	
@@ -3130,7 +3131,7 @@ def mode215(value, admin, name, printpoint):
 		x = '96' ; id = idT2.get(x)
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET': setSkinSetting('0','label'+id,localize(1))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(1))
 			setSkinSetting('0','action'+id,'ActivateWindow(Pictures)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/pictures.png')
 			'''---------------------------'''
@@ -3141,7 +3142,7 @@ def mode215(value, admin, name, printpoint):
 		x = '97' ; id = idT2.get(x)
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET': setSkinSetting('0','label'+id,localize(8))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(8))
 			setSkinSetting('0','action'+id,'ActivateWindow(MyWeather.xml)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/weather.png')
 			'''---------------------------'''
@@ -3152,7 +3153,7 @@ def mode215(value, admin, name, printpoint):
 		x = '98' ; id = idT2.get(x)
 		if id != "" and id != None and 1 + 1 == 3:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET': setSkinSetting('0','label'+id,localize(15016))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(15016))
 			setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=510&value=0)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/games.png')
 			'''---------------------------'''	
@@ -3163,7 +3164,7 @@ def mode215(value, admin, name, printpoint):
 		x = '99' ; id = idT2.get(x)
 		if id != "" and id != None and admin and admin3 == 'true':	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET': setSkinSetting('0','label'+id,localize(78942))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(78942))
 			setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=519&value=0)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/animals.png')
 			'''---------------------------'''
@@ -9904,8 +9905,8 @@ def connectioncheck(admin):
 	'''------------------------------
 	---NETWORK-STATUS----------------
 	------------------------------'''
-	printpoint = ""
-	list = ['-> (Exit)', 'Internet', 'Router']
+	name = 'connectioncheck' ; printpoint = ""
+	list = ['-> (Exit)', 'Internet', 'Router'] ; returned = "" ; returned2 = "" ; totalL = []
 	
 	returned, type = dialogselect('Choose ping type',list,0)
 	if returned == -1: pass
@@ -9923,23 +9924,23 @@ def connectioncheck(admin):
 			'''Router'''
 			list = ['-> (Exit)', xbmc.getInfoLabel('Network.GatewayAddress'), 'Manual']
 			returned2, target = dialogselect('Choose ping target',list,0)
-			if returned == -1: pass
-			elif returned == 0: pass
-			elif returned == 1: printpoint = printpoint + '7'
-			elif returned == 2:
-				target = dialogkeyboard(xbmc.getInfoLabel('Network.GatewayAddress'), 'Choose local IP address', 4, '0', "", "")
+			if returned2 == -1: pass
+			elif returned2 == 0: pass
+			elif returned2 == 1: printpoint = printpoint + '7'
+			elif returned2 == 2:
+				target = dialogkeyboard(xbmc.getInfoLabel('Network.GatewayAddress'), 'Choose local IP address', 0, '0', "", "")
 				if target != 'skip': printpoint = printpoint + '7'
 		
 		if '7' in printpoint:
-			dp = xbmcgui.DialogProgress() ; count = 0 ; totalL = []
+			dp = xbmcgui.DialogProgress() ; count = 0
 			dp.create('Pinging type: ' + str(type), 'target: ' + str(target), " ")
 			while count < 100 and not dp.iscanceled() and not xbmc.abortRequested:
-				if returned == 1:
+				if returned == 1 or returned == 2:
 					if systemplatformwindows: output = terminal('ping '+str(target)+' -n 1',"Connected")
 					elif systemplatformlinux or systemplatformlinuxraspberrypi: output = terminal('ping -W 1 -w 1 -4 -q '+str(target)+'',"Connected")
 					elif systemplatformandroid: output = terminal('ping -W 1 -w 1 -c 1 '+str(target)+'',"Connected")
 					else: output = ""
-					
+
 					ping = getPing(output)
 					totalL.append(ping)
 					
@@ -9950,15 +9951,21 @@ def connectioncheck(admin):
 			dp.close
 			message = 'Pinging type: ' + str(type) + newline + 'target: ' + str(target) + newline + 'pings: ' + str(totalL)
 			diaogtextviewer('Pinging summary',message)
-
+	
+	text = "returned" + space2 + str(returned) + space + space + "returned2" + space2 + str(returned2) + newline + \
+	'totalL' + space2 + str(totalL)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	
 def setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog):
 	'''------------------------------
 	---CHECK-FOR-SKIN-UPDATE---------
 	------------------------------'''
-	name = 'setSkin_Update' ; printpoint = ""
+	name = 'setSkin_Update' ; printpoint = "" ; returned_Dialog = ""
+	Skin_Version2 = xbmc.getInfoLabel('System.AddonVersion(skin.featherence)')
+	
 	if datenowS == "" or datenowS == None: printpoint = printpoint + '9'
 	else:
-		Skin_Version2 = xbmc.getInfoLabel('System.AddonVersion(skin.featherence)')
+		
 		if Skin_Version != Skin_Version2:
 			printpoint = printpoint + '1'
 			setsetting('Skin_UpdateLog',"true")
@@ -9978,16 +9985,21 @@ def setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLo
 				setSkin_UpdateLog(admin, Skin_Version2, Skin_UpdateDate, datenowS)
 		else:
 			printpoint = printpoint + '8'
-	text = "Skin_UpdateDate" + space2 + Skin_UpdateDate + " - " + datenowS + space + space + "Skin_UpdateLog" + space2 + Skin_UpdateLog + newline + \
-	'Skin_Version' + space2 + str(Skin_Version)
-	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+			
+	text = "Skin_Version" + space2 + str(Skin_Version) + newline + \
+	"Skin_Version2" + space2 + str(Skin_Version2) + newline + \
+	"datenowS" + space2 + str(datenowS) + newline + \
+	"Skin_UpdateDate" + space2 + str(Skin_UpdateDate) + newline + \
+	"Skin_UpdateLog" + space2 + str(Skin_UpdateLog) + newline + \
+	"returned_Dialog" + space2 + str(returned_Dialog)
 	'''---------------------------'''
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
-def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS):	
+def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=False):	
 	'''------------------------------
 	---VARIABLES---------------------
 	------------------------------'''
-	printpoint = "" ; number2S = "" ; extra = "" ; TypeError = ""
+	name = 'setSkin_UpdateLog' ; printpoint = "" ; number2S = "" ; extra = "" ; TypeError = ""
 	datenowD = stringtodate(datenowS,'%Y-%m-%d')
 	datedifferenceD = stringtodate(Skin_UpdateDate, '%Y-%m-%d')
 	if "error" in [datenowD, datedifferenceD]: printpoint = printpoint + "9"
@@ -10000,7 +10012,7 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS):
 		extra = extra + newline + 'TypeError' + space2 + str(TypeError)
 		printpoint = printpoint + "9"
 		'''---------------------------'''
-	if not "9" in printpoint and xbmc.getSkinDir() == 'skin.featherence':
+	if (not "9" in printpoint or force == True) and xbmc.getSkinDir() == 'skin.featherence':
 		printpoint = printpoint + "4"
 		if "day," in number2S: number2S = number2S.replace(" day, 0:00:00","",1)
 		elif "days," in number2S: number2S = number2S.replace(" days, 0:00:00","",1)
@@ -10011,6 +10023,7 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS):
 		if number2N == 0: header = '[COLOR=yellow]' + localize(79201) + space + localize(33006) + " - " + Skin_Version + '[/COLOR]'
 		elif number2N == 1: header = '[COLOR=green]' + localize(79201) + space + addonString_servicefeatherence(5).encode('utf-8') + " - " + Skin_Version + '[/COLOR]'
 		elif number2N <= 7: header = '[COLOR=purple]' + localize(79201) + space + addonString_servicefeatherence(6).encode('utf-8') + " - " + Skin_Version + '[/COLOR]'
+		elif force == True: header = addonString(32073).encode('utf-8') + space + space5 + Skin_Version
 		else: header = ""
 		'''---------------------------'''
 		if os.path.exists(skinlog_file):
@@ -10028,15 +10041,18 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS):
 					printpoint = printpoint + "7"
 					diaogtextviewer(header, message2)
 					'''---------------------------'''
+		else: printpoint = printpoint + '9'
 			
 	setsetting('Skin_UpdateLog',"false")
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	text = "Skin_UpdateDate" + space2 + Skin_UpdateDate + " - " + datenowS + space + "(" + number2S + ")" + space + "Skin_UpdateLog" + space2 + Skin_UpdateLog + newline + \
-	'datedifferenceD' + space2 + str(datedifferenceD) + extra
-	printlog(title='setSkin_UpdateLog', printpoint=printpoint, text=text, level=0, option="")
+	
+	text = "Skin_Version" + space2 + str(Skin_Version) + newline + \
+	"force" + space2 + str(force) + newline + \
+	"datenowS" + space2 + str(datenowS) + newline + \
+	"Skin_UpdateDate" + space2 + str(Skin_UpdateDate) + newline + \
+	"Skin_UpdateLog" + space2 + str(Skin_UpdateLog) + newline + \
+	"number2S" + space2 + str(number2S)
 	'''---------------------------'''
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
 def doFix_100(admin, custom, TEMP):
 	'''---------------------------'''

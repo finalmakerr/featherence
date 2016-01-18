@@ -479,6 +479,8 @@ controlhasfocus699 = ""
 api_youtube_featherence = 'AIzaSyDkNxiwClyCildDbHdDKSWt5BkKQ6LeQqA' #AIzaSyASEuRNOghvziOY_8fWSbKGKTautNkAYz4
 api_dailymotion_featherence = '3e563cafd4fbba5de0c1'
 api_vimeo_featherence = '45584ad52d6951f441fd2f7c7ae690d2'
+api_pastebin_featherence = '1040252c25203082ce6901fcf22e2756'
+api_imagebin_featherence = 'c8LpkstmM3WBoukL+zaJdFRCJEMIWRwL'
 
 '''------------------------------
 ---CONTROL-----------------------

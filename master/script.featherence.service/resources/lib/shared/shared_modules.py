@@ -47,7 +47,7 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 		
 		if subdir_level <= level:
 			printpoint = printpoint + "1"
-			if filteron == [] or subdir in filteron or subdir == "" or subdir2 in filteron:
+			if filteron == [] or subdir in filteron or subdir == ""  or subdirs == [] or subdir2 in filteron:
 				printpoint = printpoint + "2"
 				if filteroff == [] or (not subdir in filteroff and not subdir2 in filteroff):
 					printpoint = printpoint + "3"
@@ -258,7 +258,7 @@ def ExtractAll(source, output):
 	if "7" in printpoint: return True
 	else: return False
 
-def getFileAttribute(custom, file):
+def getFileAttribute(custom, file, option=""):
 	name = 'getFileAttribute' ; printpoint = "" ; extra = "" ; returned = ""
 	
 	if not os.path.exists(file): printpoint = printpoint + "8"
@@ -269,7 +269,8 @@ def getFileAttribute(custom, file):
 		
 	elif custom == 2: #size
 		returned = os.path.getsize(file)
-	
+		if option == 1:
+			returned = returned / 1000000
 	text = "custom" + space2 + str(custom) + space + "file" + space2 + str(file) + newline + \
 	"returned" + space2 + str(returned) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
@@ -547,7 +548,6 @@ def setAddon_UpdateLog(admin, Addon_Version, Addon_UpdateDate, Addon_ShowLog, Ad
 			if "day," in number2S: number2S = number2S.replace(" day, 0:00:00","",1)
 			elif "days," in number2S: number2S = number2S.replace(" days, 0:00:00","",1)
 			else: number2S = "0"
-			if admin: notification("number2S:" + number2S,"","",2000)
 			number2N = int(number2S)
 			'''---------------------------'''
 			#header = '[COLOR=yellow]' + addonString(304).encode('utf-8') + " - " + addonVersion + '[/COLOR]'
@@ -573,12 +573,14 @@ def setAddon_UpdateLog(admin, Addon_Version, Addon_UpdateDate, Addon_ShowLog, Ad
 	#setsetting('Addon_UpdateLog',"false")
 	setsetting_custom1(addonID, 'Addon_UpdateLog', "false")
 		
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	print printfirst + "setAddon_UpdateLog_LV" + printpoint + space2 + "Addon_UpdateDate" + space2 + Addon_UpdateDate + " - " + datenowS + "(" + number2S + ")" + space + newline + \
-	"Addon_UpdateLog" + space2 + Addon_UpdateLog + space + "Addon_ShowLog" + space2 + str(Addon_ShowLog) + space + "Addon_ShowLog2" + space2 + str(Addon_ShowLog2) + extra
+	text = "Addon_UpdateDate" + space2 + str(Addon_UpdateDate) + newline + \
+	"datenowS" + space2 + str(datenowS) + newline + \
+	"number2S" + space2 + str(number2S) + newline + \
+	"Addon_UpdateLog" + space2 + str(Addon_UpdateLog) + newline + \
+	"Addon_ShowLog" + space2 + str(Addon_ShowLog) + newline + \
+	"Addon_ShowLog2" + space2 + str(Addon_ShowLog2)
 	'''---------------------------'''
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
 
 def terminal(command,desc="", remote=False):
@@ -872,7 +874,7 @@ def CleanString(output, filter=[]):
 	'''---------------------------'''
 	return output4
 
-def CleanString2(x):
+def CleanString2(x, comma=False):
 	'''clean for Random-Play'''
 	name = 'CleanString2' ; printpoint = ""
 	x2 = str(x)
@@ -881,7 +883,7 @@ def CleanString2(x):
 	x2 = x2.replace("'",'')
 	x2 = x2.replace("[",'')
 	x2 = x2.replace("]",'')
-	x2 = x2.replace(",",'|')
+	if comma == False: x2 = x2.replace(",",'|')
 		
 	text = "x" + space2 + str(x) + newline + "x2" + space2 + str(x2)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
@@ -1011,7 +1013,7 @@ def checkDialog(admin):
 		
 def setPath(type=0,mask="", folderpath=""):
 	returned = "" ; count = 0
-	if mask == 'pic': mask = '.jpg|.jpeg|.bmp|.gif'
+	if mask == 'pic': mask = '.jpg|.jpeg|.JPEG|.bmp|.gif|.GIF|.png|.PNG'
 	elif mask == 'music': mask = '.mp3|.flac|.wav|.m3u'
 	if type == 0: xbmc.executebuiltin('Skin.SetPath(TEMP)')
 	elif type == 1: xbmc.executebuiltin('Skin.SetFile(TEMP,'+mask+','+folderpath+')')
@@ -1019,7 +1021,7 @@ def setPath(type=0,mask="", folderpath=""):
 	
 	while count < 10 and not dialogfilebrowserW and not xbmc.abortRequested:
 		count += 1
-		xbmc.sleep(500)
+		xbmc.sleep(1000)
 		dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
 	
 	while dialogfilebrowserW and not xbmc.abortRequested:
@@ -1094,13 +1096,13 @@ def dialogkeyboard(input, heading, option, custom, set1, addon):
 	if returned == 'ok':
 		returned = set1v
 		if set1 != "" and addon != "":
-			if addon == "0": setsetting(set1, set1v)
-			elif addon != "": setsetting_custom1(addon,set1,set1v)
+			if addon == "0": setsetting(set1, to_utf8(set1v))
+			elif addon != "": setsetting_custom1(addon,set1,to_utf8(set1v))
 			'''---------------------------'''
 		elif set1 != "" and addon == "": setSkinSetting("0",set1,set1v)
 	
 	if option != 0: set1v = "******"
-	print printfirst + name + "_LV" + printpoint + space + "returned" + space2 + str(returned) + space + "heading" + space2 + str(heading) + space + "set1v" + space2 + str(set1v)
+	#print printfirst + name + "_LV" + printpoint + space + "option" + space2 + str(option) + space + "returned" + space2 + str(returned) + space + "heading" + space2 + str(heading) + space + "set1v" + space2 + str(set1v)
 	'''---------------------------'''
 	return returned
 
@@ -1154,11 +1156,11 @@ def dialognumeric(type,heading,input,custom,set1,addon):
 			'''---------------------------'''
 		else: printpoint = printpoint + "9"
 		
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	print printfirst + name + "_LV" + printpoint + space + "heading" + space2 + str(heading) + space + "input" + space2 + str(input) + space5 + str(set1v) + space +  "( " + returned + " )"	
-	'''---------------------------'''
+	text = 'heading: ' + str(heading) + newline + \
+	'input: ' + str(input) + newline + \
+	'set1v: ' + str(set1v) + newline + \
+	'returned: ' + str(returned)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 	'''---------------------------'''
 	return returned, set1v
@@ -1167,41 +1169,30 @@ def dialogok(heading,line1,line2,line3, line1c="", line2c="", line3c="", line4c=
 	'''------------------------------
 	---DIALOG-OK---------------------
 	------------------------------'''
-	dialog = xbmcgui.Dialog() ; TypeError = "" ; extra = ""
+	dialog = xbmcgui.Dialog()
+	name = 'dialogok' ; printpoint = "" ; TypeError = "" ; extra = ""
 	if '$LOCALIZE' in heading or '$ADDON' in heading: heading = xbmc.getInfoLabel(heading)
 	if '$LOCALIZE' in line1 or '$ADDON' in line1: line1 = xbmc.getInfoLabel(line1)
 	if '$LOCALIZE' in line2 or '$ADDON' in line2: line2 = xbmc.getInfoLabel(line2)
 	if '$LOCALIZE' in line3 or '$ADDON' in line3: line3 = xbmc.getInfoLabel(line3)
-	try: heading = str(heading.encode('utf-8'))
-	except: heading = str(heading)
-	try: line1 = str(line1.encode('utf-8'))
-	except: line1= str(line1)
-	try: line2 = str(line2.encode('utf-8'))
-	except: line2 = str(line2)
-	try: line3 = str(line3.encode('utf-8'))
-	except: line3 = str(line3)
 	
-	if line1c != "":
-		try: heading = '[COLOR='+ line1c + ']' + heading + '[/COLOR]'
-		except Exception, TypeError: pass
-	if line2c != "":
-		try: line2 = '[COLOR='+ line2 + ']' + line1 + '[/COLOR]'
-		except Exception, TypeError: pass
-	if line3c != "":
-		try: line2 = '[COLOR='+ line3c + ']' + line2 + '[/COLOR]'
-		except Exception, TypeError: pass
-	if line4c != "":
-		try: line3 = '[COLOR='+ line4c + ']' + line3 + '[/COLOR]'
-		except Exception, TypeError: pass
+	heading = to_utf8(heading)
+	line1 = to_utf8(line1)
+	line2 = to_utf8(line2)
+	line3 = to_utf8(line3)
+	
+	if line1c != "": heading = '[COLOR='+ line1c + ']' + heading + '[/COLOR]'
+	if line2c != "": line1 = '[COLOR='+ line2c + ']' + line1 + '[/COLOR]'
+	if line3c != "": line2 = '[COLOR='+ line3c + ']' + line2 + '[/COLOR]'
+	if line4c != "": line3 = '[COLOR='+ line4c + ']' + line3 + '[/COLOR]'
 		
 	dialog.ok(heading,line1,line2,line3)
 	
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	if TypeError != "": extra = newline + "TypeError" + space2 + str(TypeError)
-	print printfirst + heading + space2 + line1 + space2 + line2 + space2 + line3 + extra
-	'''---------------------------'''
+	text = 'heading: ' + str(heading) + newline + \
+	'line1: ' + str(line1) + newline + \
+	'line2: ' + str(line2) + newline + \
+	'line3: ' + str(line3) + newline + extra
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def dialogselect(heading, list, autoclose):
 	'''------------------------------
@@ -1214,12 +1205,9 @@ def dialogselect(heading, list, autoclose):
 		printpoint = printpoint + "1"
 		heading = xbmc.getInfoLabel(heading)
 	#heading = str(heading).decode('utf-8').encode('utf-8')
-	try: heading = heading.encode('utf-8')
-	except Exception, TypeError: printpoint = printpoint + "2" ; extra = extra + newline + "TypeError_LV" + printpoint + space2 + str(TypeError)
-	try: heading = str(heading)
-	except Exception, TypeError: printpoint = printpoint + "3" ; extra = extra + newline + "TypeError_LV" + printpoint + space2 + str(TypeError)
-			
-	returned = dialog.select(heading,list,autoclose)
+	heading = to_utf8(heading)
+	
+	returned = dialog.select(str(heading),list,autoclose)
 	returned = int(returned)
 	
 	
@@ -1242,7 +1230,7 @@ def dialogselect(heading, list, autoclose):
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
-	text = heading + "( " + str(returned) + " )" + space + "value" + space2 + value + extra
+	text = str(heading) + "( " + str(returned) + " )" + space + "value" + space2 + value + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	
@@ -1277,14 +1265,9 @@ def dialogyesno(heading,line1,yes=False, nolabel="", yeslabel="", autoclose=0):
 	except: pass
 	try: line1 = str(line1.encode('utf-8'))
 	except: pass
-	
-	
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
+
 	text = 'heading: ' + str(heading) + space + 'line1: ' + str(line1) + space + 'returned: ' + str(returned)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
-	'''---------------------------'''
 	return returned
 	'''---------------------------'''
 
@@ -2263,8 +2246,6 @@ def write_to_file(path, content, append=False, silent=True , utf8=False):
 		else: level = 7
 		printlog(title=name, printpoint=printpoint, text=text, level=level, option="")
 		return False
-
-
 	
 def read_from_file(infile, silent=True, lines=False, retry=True, createlist=True, printpoint="", addlines=""):
 	name = 'read_from_file' ; returned = "" ; TypeError = "" ; extra = "" ; l = [] ; l2 = "" ; lcount = 0
@@ -2309,7 +2290,7 @@ def read_from_file(infile, silent=True, lines=False, retry=True, createlist=True
 		"returned10" + space2 + returned10 + space + 'l' + space2 + str(l) + space + 'l2' + space2 + str(l2) + extra
 		printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 		
-		return str(returned)
+		return returned
 
 def regex_from_to(text, from_string, to_string, excluding=True):
 	import re
@@ -2859,7 +2840,8 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 	else: admin2 = 'false'
 	
 	macaddress = xbmc.getInfoLabel('Network.MacAddress')
-	if macaddress == '0C:8B:FD:9D:2F:CE': admin3 = 'true'
+	User_Name = xbmc.getInfoLabel('Skin.String(User_Name)')
+	if macaddress == '0C:8B:FD:9D:2F:CE' or User_Name == 'finalmakerr': admin3 = 'true'
 	elif macaddress != "": admin3 = 'false'
 	else: admin3 = 'false'
 	

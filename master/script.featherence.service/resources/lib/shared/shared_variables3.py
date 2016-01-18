@@ -1,6 +1,6 @@
-import xbmc, xbmcaddon, sys
+import xbmc, xbmcaddon, sys, os
 
-from shared_variables import str2, space, space2
+from shared_variables import str2, space, space2, addondata_path
 
 getsetting         = xbmcaddon.Addon().getSetting
 
@@ -30,7 +30,17 @@ except:
 	General_Language2 = "English"
 	General_Language3 = ""
 	General_LanguageL = [systemlanguage, 'English']
-	'''---------------------------'''
+
+
+try:
+	Search_History = getsetting('Search_History')
+	Search_Limit = getsetting('Search_Limit')
+except:
+	Search_History = ""
+	Search_Limit = ""
+
+Search_History_file = os.path.join(addondata_path, addonID, 'Search_History.txt')
+
 Addon_ShowLog = getsetting('Addon_ShowLog')
 Addon_ShowLog2 = getsetting('Addon_ShowLog2')
 Addon_Update = getsetting('Addon_Update')
@@ -148,5 +158,6 @@ Custom_Playlist10_Description = getsetting('Custom_Playlist10_Description')
 Custom_Playlist10_Fanart = getsetting('Custom_Playlist10_Fanart')
 '''---------------------------'''
 Custom_PlaylistL = [Custom_Playlist1_ID, Custom_Playlist2_ID, Custom_Playlist3_ID, Custom_Playlist4_ID, Custom_Playlist5_ID, Custom_Playlist6_ID, Custom_Playlist7_ID, Custom_Playlist8_ID, Custom_Playlist9_ID, Custom_Playlist10_ID]
-
+Custom_Playlist_NameT = { Custom_Playlist1_ID: Custom_Playlist1_Name, Custom_Playlist2_ID: Custom_Playlist2_Name, Custom_Playlist3_ID: Custom_Playlist3_Name, Custom_Playlist4_ID: Custom_Playlist4_Name, Custom_Playlist5_ID: Custom_Playlist5_Name, Custom_Playlist6_ID: Custom_Playlist6_Name, Custom_Playlist7_ID: Custom_Playlist7_Name, Custom_Playlist8_ID: Custom_Playlist8_Name, Custom_Playlist9_ID: Custom_Playlist9_Name, Custom_Playlist10_ID: Custom_Playlist10_Name }
+Custom_Playlist_NameT2 = { Custom_Playlist1_Name: Custom_Playlist1_ID, Custom_Playlist2_Name: Custom_Playlist2_ID, Custom_Playlist3_Name: Custom_Playlist3_ID, Custom_Playlist4_Name: Custom_Playlist4_ID, Custom_Playlist5_Name: Custom_Playlist5_ID, Custom_Playlist6_Name: Custom_Playlist6_ID, Custom_Playlist7_Name: Custom_Playlist7_ID, Custom_Playlist8_Name: Custom_Playlist8_ID, Custom_Playlist9_Name: Custom_Playlist9_ID, Custom_Playlist10_Name: Custom_Playlist10_ID }
 sefilter = []

@@ -530,16 +530,16 @@ msgid "If you don't know how to do that, it's quite [B]easy!![/B][CR]and we will
 msgstr "If you don't know how to do that, it's quite [B]easy!![/B][CR]and we will be happy to teach you!"
 
 msgctxt "#32046
-msgid ""
-msgstr ""
+msgid "Search History"
+msgstr "היסטוריית חיפוש"
 
 msgctxt "#32047
-msgid ""
-msgstr ""
+msgid "Maximum search items to keep in history"
+msgstr "מקסימום פריטי חיפוש לשימוש חוזר"
 
 msgctxt "#32048
-msgid ""
-msgstr ""
+msgid "Need support? Want to say thanks to us?[CR]"
+msgstr "צריך עזרה? רוצה לומר לנו תודה?[CR]"
 
 msgctxt "#32049
 msgid ""
@@ -571,8 +571,65 @@ msgid "Having a question? Ask us!"
 msgstr "רוצה לשאול שאלה?"
 
 msgctxt "#32065
+msgid "Choose YES to continue"
+msgstr "בחר "כן" להמשך"
+
+msgctxt "#32066
+msgid "Doing so will make a post on Featherence facebook group"
+msgstr "פעולה זו תיצור פוסט חדש בקבוצת פדרנס בפייסבוק"
+
+msgctxt "#32067
+msgid "Your message has been sent!"
+msgstr "הודעתך נשלחה בהצלחה!"
+
+msgctxt "#32068
+msgid "Connecting to Facebook"
+msgstr "מתחבר לפייסבוק"
+
+msgctxt "#32069
+msgid "Preparing the post"
+msgstr "מכין את הפוסט"
+
+msgctxt "#32070"
+msgid "Progress (%s/%s)"
+msgstr "תהליך (%s/%s)"
+
+msgctxt "#32071
+msgid "Operation Failed!"
+msgstr "הפעולה נכשלה!"
+
+msgctxt "#32072
+msgid "Uploading file %s to xbmclogs.com"
+msgstr "מעלה קובץ %s ל-xbmclogs.com"
+
+msgctxt "#32073
 msgid ""
 msgstr ""
+
+msgctxt "#32074
+msgid ""
+msgstr ""
+
+msgctxt "#32075
+msgid ""
+msgstr ""
+
+msgctxt "#32076
+msgid ""
+msgstr ""
+
+msgctxt "#32077
+msgid ""
+msgstr ""
+
+msgctxt "#32078
+msgid ""
+msgstr ""
+
+msgctxt "#32079
+msgid ""
+msgstr ""
+
 
 #Custom start here!
 msgctxt "#32080
@@ -601,7 +658,7 @@ msgstr "בחר שפה ראשית"
 
 msgctxt "#32086
 msgid "Your current secondary language is %s"
-msgstr השפה המשנית שלך היא %s""
+msgstr "השפה המשנית שלך היא %s"
 
 msgctxt "#32087
 msgid "You may receive contents for up to 3 different languages!"
@@ -612,8 +669,8 @@ msgid "Check addon settings for more information."
 msgstr "למידע נוסף ראה הגדרות הרחבה."
 
 msgctxt "#32089
-msgid ""
-msgstr ""
+msgid "TV Channels in %s"
+msgstr "ערוצי טלוויזיה ב-%s"
 
 msgctxt "#32090
 msgid ""

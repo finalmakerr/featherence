@@ -19,13 +19,18 @@ addonString           = xbmcaddon.Addon().getLocalizedString
 addonID               = xbmcaddon.Addon().getAddonInfo("id")
 addonPath             = xbmcaddon.Addon().getAddonInfo("path")
 addonFanart           = os.path.join(addonPath, "fanart.jpg")
+addonIcon           = os.path.join(addonPath, "icon.png")
 addonVersion          = xbmcaddon.Addon().getAddonInfo("version")
 
 libDir = os.path.join(addonPath, 'resources', 'lib')
 sys.path.insert(1, libDir)
+libDir2 = os.path.join(addonPath, 'resources', 'lib', 'pastebin_python')
+sys.path.insert(2, libDir2)
+
 
 printfirst = addonName + ": !@# "
 '''---------------------------'''
+
 Skin_UpdateDate = getsetting('Skin_UpdateDate')
 Skin_UpdateLog = getsetting('Skin_UpdateLog')
 Skin_Version = getsetting('Skin_Version')
