@@ -5,12 +5,19 @@ WIP (WORK IN PROGRESS)--
 - Add fanarts to buttons.
 - Add thumbnails to buttons.
 - Add multi languages support.
-- Major update random play method.
+
 
 ------------------------
 Featherence Docu v0.1.6 (xx-01-16)
 ------------------------
+- Added next page button to some categories.
+- Added smart search button to main menu with search history option.
+- Major update random play method.
+- Minor bugs fix.
+- My docu button now support adding favourites items as well.
 - TV mode now occur also inside container.
+- *Update saving/loading script to include local media when sharing.
+*Previous backups will not work!
 
 ------------------------
 Featherence Docu v0.1.5 (02-01-16)

@@ -21,8 +21,8 @@ def CATEGORIES():
 	------------------------------'''
 	try: General_Language = getsetting('General_Language')
 	except: General_Language = systemlanguage
-
-	addDir('-' + localize(137),'',3,featherenceserviceicons_path + 'se.png',localize(137) + space + 'YouTube','1',"", getAddonFanart("", custom="", urlcheck_=True)) #חיפוש
+	
+	CATEGORIES_SEARCH(mode=30, url="")
 	addDir('-' + addonString(100).encode('utf-8'),'',100,featherenceserviceicons_path + 'star.png',addonString_servicefeatherence(32800).encode('utf-8'),'1',50, getAddonFanart(100, urlcheck_=True)) #My Kids
 	
 	addDir(addonString(101).encode('utf-8'),'',101,featherenceserviceicons_path + 'music.png',addonString(1010).encode('utf-8'),'1',58, getAddonFanart(101, default="http://p1.pichost.me/i/28/1509965.jpg", urlcheck_=True)) #SONGS AND STORIES
@@ -37,17 +37,16 @@ def CATEGORIES():
 
 	#addDir('קלסיקלטת','plugin://plugin.video.wallaNew.video/?mode=1&module=338&name=קלסיקלטת&url=http://vod.walla.co.il/channel/338/clasicaletet',8,'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYE2VT8CR2O31MsqAhdaydYrqrCD--HCCdGcs7blBn3Zh92Kwq','','1',"", getAddonFanart(0))
 	#addDir('ניק','plugin://plugin.video.wallaNew.video/?mode=1&module=nick&name=ניק&url=http://nick.walla.co.il/',8,'http://www.karmieli.co.il/sites/default/files/images/nico.jpg','','1',"", getAddonFanart(0))
-	#addDir('ניק ויניור','plugin://plugin.video.wallaNew.video/?mode=1&module=junior&name=גוניור&url=http://junior.walla.co.il/',8,'http://upload.wikimedia.org/wikipedia/he/1/19/%D7%A2%D7%A8%D7%95%D7%A5_%D7%92%27%D7%95%D7%A0%D7%99%D7%95%D7%A8.jpg','','1',"", getAddonFanart(0))
-	#addDir('גוניור','plugin://plugin.video.wallaNew.video/?mode=1&module=nickjr&name=גוניור&url=http://nickjr.walla.co.il/',8,'http://upload.wikimedia.org/wikipedia/he/1/19/%D7%A2%D7%A8%D7%95%D7%A5_%D7%92%27%D7%95%D7%A0%D7%99%D7%95%D7%A8.jpg','','1',"", getAddonFanart(0))
+	addDir('גוניור','plugin://plugin.video.wallaNew.video/?mode=1&module=nickjr&name=גוניור&url=http://nickjr.walla.co.il/',8,'http://upload.wikimedia.org/wikipedia/he/1/19/%D7%A2%D7%A8%D7%95%D7%A5_%D7%92%27%D7%95%D7%A0%D7%99%D7%95%D7%A8.jpg','','1',"", getAddonFanart(0))
 
-def CATEGORIES100(admin):
+def CATEGORIES100(name, iconimage, desc, fanart):
 	'''------------------------------
 	---My-Kids-----------------------
 	------------------------------'''
 	fanart = 100
 	
 	'''כפתור הילדים שלי חדש..'''
-	addDir(addonString_servicefeatherence(86).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(87).encode('utf-8') + addonString_servicefeatherence(88).encode('utf-8') + addonString_servicefeatherence(89).encode('utf-8'),'1',50, getAddonFanart(fanart, urlcheck_=True))
+	addDir(addonString_servicefeatherence(86).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(87).encode('utf-8') + addonString_servicefeatherence(88).encode('utf-8') + addonString_servicefeatherence(89).encode('utf-8'),'s',50, getAddonFanart(fanart, urlcheck_=True))
 		
 	'''רשימת השמעה 1'''
 	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',50, getAddonFanart("Custom_Playlist1", urlcheck_=True))
@@ -70,9 +69,12 @@ def CATEGORIES100(admin):
 	'''רשימת השמעה 10'''
 	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',50, getAddonFanart("Custom_Playlist10", urlcheck_=True))
 	
+	'''מעודפים'''
+	addDir(localize(1036),"",32,featherenceserviceicons_path + 'star.png','','1',50, getAddonFanart(fanart, urlcheck_=True))
+	
 '''1=SONGS, 2=SHOWS, 3=LITTLE, 4=TVSHOWS, 5=MOVIES, 6=?, 7=BABY, 8=?, 9=OTHERS'''
 
-def CATEGORIES101(admin):
+def CATEGORIES101(name, iconimage, desc, fanart):
 	background = 101
 	background2 = "" #http://p1.pichost.me/i/28/1509965.jpg"
 	
@@ -176,7 +178,7 @@ def CATEGORIES101(admin):
 	
 	CATEGORIES101A(General_LanguageL, background, background2) #עמוד הבא שירים וסיפורים
 	
-def CATEGORIES102(admin):
+def CATEGORIES102(name, iconimage, desc, fanart):
 	background = 102
 	background2 = "" #http://2.bp.blogspot.com/-Dz3-VwZZryE/Uh5ZXg7zCMI/AAAAAAAAdCQ/OmLVkdWI47c/s1600/Disney+Junior+Live+Pirate+and+Princess+Adventure+-+Jake%252C+Izzy+%2526+Cubby.jpg"
 	
@@ -505,7 +507,7 @@ def CATEGORIES102(admin):
 	
 	CATEGORIES102A(General_LanguageL, background, background2) #עמוד הבא שירים וסיפורים
 	
-def CATEGORIES104(admin):
+def CATEGORIES104(name, iconimage, desc, fanart):
 	background = 104
 	background2 = "" #http://www.canadiananimationresources.ca/wp-content/uploads/2012/10/9-Story-Arthur-Couch.jpg"
 	
@@ -519,7 +521,7 @@ def CATEGORIES104(admin):
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&sdarot=series_id=1864&series_name=%d7%90%d7%90%d7%95%d7%a5%27%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1864%2foperation-ouch-%d7%90%d7%90%d7%95%d7%a5-%d7%9e%d7%93%d7%95%d7%91%d7%91')
-	addDir(addonString(10401).encode('utf-8'),list,5,'http://www.sdarot.pm/media/series/1864.jpg',addonString(104010).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://www.sdarot.pm/media/series/1864.jpg"))
+	addDir(addonString(10401).encode('utf-8'),list,6,'http://www.sdarot.pm/media/series/1864.jpg',addonString(104010).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://www.sdarot.pm/media/series/1864.jpg"))
 	
 	CATEGORIES104L(General_LanguageL, background, background2) #אגדות האחים גרים
 	
@@ -535,7 +537,7 @@ def CATEGORIES104(admin):
 	list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=3&module=wallavod&name=%d7%a4%d7%a8%d7%a7%d7%99%d7%9d%20%d7%9e%d7%9c%d7%90%d7%99%d7%9d&url=seasonId%3d2830054')
 	list.append('&youtube_pl=PLsN1aN-kzJnOgSDAwE5PPF3IH9fGH57Xx')
 	list.append('&youtube_pl=PLDks7iHzd1bV7S9aLZfEtFmoToSrJPPdE')
-	addDir(addonString(10429).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1032.jpg',addonString(104290).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10429).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/585.jpg',addonString(104290).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
 	
 	CATEGORIES104O(General_LanguageL, background, background2) #אוטובוס הקסמים
 	
@@ -1218,13 +1220,25 @@ def CATEGORIES104(admin):
 		list.append('&sdarot=series_id=456&series_name=%d7%9e%d7%95%d7%a2%d7%93%d7%95%d7%9f%20%d7%95%d7%95%d7%99%d7%a0%d7%a7%d7%a1%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f456%2fwinx-club-%d7%9e%d7%95%d7%a2%d7%93%d7%95%d7%9f-%d7%95%d7%95%d7%99%d7%a0%d7%a7%d7%a1-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
 		list.append('&youtube_pl=PLby7JALZWGy6xV7aec0CC9LFdeaEgsM_g') #Hebrew
 		list.append('&youtube_pl=PLsvJJHNjHidCEbC_IM4LC7Mp56wQ-3A4H') #Hebrew
+		
+		list.append('&dailymotion_pl=x3j85r') #S4
+		list.append('&dailymotion_pl=x3v205') #S5
+		list.append('&dailymotion_pl=x3w6u5') #S6
+		list.append('&dailymotion_pl=x3tlpa') #S6
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLJg404csJ854N08KuIMR9prlfveYScLIz') #English
+		list.append('&dailymotion_pl=x3ibmc') #S6
+		list.append('&dailymotion_pl=x3rvbd') #S7
+		
 	if 'Spanish' in General_LanguageL:
 		list.append('&youtube_pl=PLQvqWmQTCX-jR_xRqX-ouF8dbWC0yNz9t') #Spanish
 		list.append('&youtube_pl=PLQvqWmQTCX-jBHlk7d79ZSeHLc5nV8Rzk') #Spanish
+		
+		list.append('&dailymotion_pl=x40gnb') #S3
+		list.append('&dailymotion_pl=x449l3') #S7
+	if 'French' in General_LanguageL:
 		list.append('&youtube_pl=PL80E8353D11F3BBE4') #French
-	addDir(addonString(10455).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/456.jpg',addonString(104550).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10455).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/456.jpg',addonString(104550).encode('utf-8'),'1',"",getAddonFanart(background, custom="https://i.ytimg.com/vi/zMSgF3xdHZ4/maxresdefault.jpg", default=background2))
 	
 	'''מחנה הפחד'''
 	list = []
@@ -1240,6 +1254,25 @@ def CATEGORIES104(admin):
 		list.append('&sdarot=season_id=1&series_id=1667&series_name=%d7%9e%d7%98%d7%95%d7%a8%d7%9c%d7%9c%d7%99%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1667%2ftrolls-of-troy-%d7%9e%d7%98%d7%95%d7%a8%d7%9c%d7%9c%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
 		list.append('&youtube_pl=PLf5Wskorw9t6lSLxSpE9acGNYSGkirYp0')
 	addDir(addonString(10457).encode('utf-8'),list,6,'http://www.sdarot.pm/media/series/1667.jpg',addonString(104570).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
+		
+	'''מייטי מקס'''
+	thumb = 'http://ia.media-imdb.com/images/M/MV5BMTkyMzE3MDIzMl5BMl5BanBnXkFtZTcwODEzNjMyMQ@@._V1_SX214_AL_.jpg'
+	fanart = 'http://orig10.deviantart.net/0afb/f/2015/103/7/e/mightymax_by_fooray-d8pjomo.jpg'
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&dailymotion_id=x17xn3s')
+		list.append('&youtube_id=4t-8ebOB_I8') #S2E1
+	if 'English' in General_LanguageL:
+		list.append('&youtube_pl=PLBA98D24AE96BD6CB') #S1-2
+		list.append('&youtube_pl=PLWwnLtb5fzbaRqn_PpAQSXNOVyue_S8Bq') #S1
+	if 'French' in General_LanguageL:
+		list.append('&dailymotion_pl=xt1pg')
+	if 'Italian' in General_LanguageL:
+		list.append('&dailymotion_pl=x18qqjs')
+	if 'Catalan' in General_LanguageL:
+		list.append('&dailymotion_pl=x41v8u')
+	
+	addDir(addonString(10495).encode('utf-8'),list,17,thumb,addonString(104950).encode('utf-8'),'1',"", getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''מיקי מאוס'''
 	list = []
@@ -1758,7 +1791,7 @@ def CATEGORIES104(admin):
 	
 	CATEGORIES104A(General_LanguageL, background, background2) #עמוד הבא הצגות ילדים
 	
-def CATEGORIES105(admin):
+def CATEGORIES105(name, iconimage, desc, fanart):
 	background = 105
 	background2 = "" #http://4.bp.blogspot.com/-Af2HcIQzlg8/UhwQ8lKPucI/AAAAAAAACIA/d7aY4RrxUfk/s1600/bambi-friends-disney-animated-movie-photo.jpg"
 	
@@ -1797,12 +1830,12 @@ def CATEGORIES105(admin):
 	'''אוגי והמקקים (2014)*'''
 	list = []
 	list.append('&dailymotion_id=x2rirvo')
-	addDir(addonString(10429).encode('utf-8') + space + '(2014)',list,6,'http://www.sdarot.pm/media/series/1032.jpg',addonString(104290).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10429).encode('utf-8') + space + '(2014)',list,5,'http://www.sdarot.pm/media/series/585.jpg',addonString(104290).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
 	
 	'''אוגי והמקקים (2015)*'''
 	list = []
 	list.append('&dailymotion_id=x31fwqj')
-	addDir(addonString(10429).encode('utf-8') + space + '(2015)',list,6,'http://www.sdarot.pm/media/series/1032.jpg',addonString(104290).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10429).encode('utf-8') + space + '(2015)',list,5,'http://www.sdarot.pm/media/series/585.jpg',addonString(104290).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
 
 	'''אלאדין 1 (1991)'''
 	list = []
@@ -2010,12 +2043,12 @@ def CATEGORIES105(admin):
 		list.append('&dailymotion_id=x3gbh1o') #English
 	addDir(addonString(10539).encode('utf-8') + space + '(1999)',list,6,'http://ia.media-imdb.com/images/M/MV5BMTIxNzY1MDg2Ml5BMl5BanBnXkFtZTcwMDgxMDEzMQ@@._V1_UY268_CR2,0,182,268_AL_.jpg',addonString(105390).encode('utf-8'),'1',50, getAddonFanart(background, custom="https://i.ytimg.com/vi/73yinrBti8k/maxresdefault.jpg"))
 	
-	'''מועדון ווינקס'''
+	'''מועדון ווינX'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_id=8xZDb6OK4e4') #Hebrew
 	
-	addDir('מועדון ווינקס',list,17,'','','1',"",getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10455).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/456.jpg',addonString(104550).encode('utf-8'),'1',"",getAddonFanart(background, custom="https://i.ytimg.com/vi/zMSgF3xdHZ4/maxresdefault.jpg", default=background2))
 	
 	'''מלך האריות 1 (1994)'''
 	thumb = 'http://ia.media-imdb.com/images/M/MV5BMjEyMzgwNTUzMl5BMl5BanBnXkFtZTcwNTMxMzM3Ng@@._V1__SX2064_SY1000_.jpg'
@@ -2162,7 +2195,7 @@ def CATEGORIES105(admin):
 	
 	CATEGORIES105A(General_LanguageL, background, background2) #עמוד הבא סרטים
 	
-def CATEGORIES106(admin):
+def CATEGORIES106(name, iconimage, desc, fanart):
 	'''לפעוטות'''
 	background = 106
 	background2 = "" #http://1.bp.blogspot.com/-MnUXpmW1n1M/UKfOgAXUmXI/AAAAAAAAbBY/BfoQ1FNgNUk/s1600/duvcar1024x768_en_27.jpg"
@@ -2450,7 +2483,7 @@ def CATEGORIES106(admin):
 	
 	CATEGORIES106A(General_LanguageL, background, background2) #עמוד הבא פעוטות
 	
-def CATEGORIES107(admin):
+def CATEGORIES107(name, iconimage, desc, fanart):
 	background = 107
 	background2 = "" #http://7-themes.com/data_images/out/63/6986632-dora-wallpaper-free.jpg"
 	
@@ -3194,7 +3227,7 @@ def CATEGORIES107(admin):
 	
 	CATEGORIES107A(General_LanguageL, background, background2) #עמוד הבא קטנטנים
 	
-def CATEGORIES108(admin):
+def CATEGORIES108(name, iconimage, desc, fanart):
 	background = 108
 	background2 = "" #http://30k0u22sosp4xzag03cfogt1.wpengine.netdna-cdn.com/wp-content/uploads/2015/03/strika-3.jpg
 	
@@ -3222,6 +3255,24 @@ def CATEGORIES108(admin):
 		list.append('&youtube_pl=')
 		
 	addDir(addonString(10858).encode('utf-8'),list,17,'http://ecx.images-amazon.com/images/I/51leujDMgQL.jpg',addonString(108580).encode('utf-8'),'1',50, getAddonFanart(background, custom="https://static.justwatch.com/backdrop/496670/s1440/the-legend-of-prince-valiant", default=background2))
+	
+	'''אוסטין ואלי'''
+	thumb = 'https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Austin_%26_ally_tv_series_logo.png/200px-Austin_%26_ally_tv_series_logo.png'
+	fanart = 'http://img.lum.dolimg.com/v1/images/au_disneychannel_aaa_ross_aanda_superroom_albumcover_d16e7f65.jpeg'
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		thumb = 'https://upload.wikimedia.org/wikipedia/he/1/1b/A%26a.hebrew.png'
+		list.append('&youtube_pl=')
+	if 'English' in General_LanguageL:
+		list.append('&dailymotion_pl=x46tyj') #S1-3
+		list.append('&dailymotion_pl=x2fj350') #S1-3
+		list.append('&dailymotion_pl=x2fiw3b') #S2
+		list.append('&dailymotion_pl=x3irdaq') #S4
+		
+	if 'Turkish' in General_LanguageL:
+		list.append('&youtube_pl=PLXXlWZEt9lW6W03mrW407QLmBZdRs7U4I')
+		
+	addDir(addonString(10859).encode('utf-8'),list,17,thumb,addonString(108590).encode('utf-8'),'1',50, getAddonFanart(background, custom=fanart, default=background2))
 	
 	CATEGORIES108C(General_LanguageL, background, background2) #אחים וחיות אחרות
 	
@@ -3333,7 +3384,7 @@ def CATEGORIES108(admin):
 		list.append('&dailymotion_pl=x3my1z') #S2
 		list.append('&dailymotion_pl=x3mzpe') #S3
 		list.append('&dailymotion_pl=x3n07f') #S4
-		list.append('&dailymotion_pl=x3nt5q') #S5
+		#list.append('&dailymotion_pl=x3nt5q') #S5
 		list.append('&dailymotion_pl=x48aar') #S6
 		
 		list.append('&youtube_se=commonsearch101&videoDuration=long&')
@@ -3365,7 +3416,7 @@ def CATEGORIES108(admin):
 	if 'Turkish' in General_LanguageL:
 		list.append('&youtube_pl=PL4A983F74692C098F') #Turkish #S1
 		list.append('&youtube_pl=PL4A37742103A8546E') #Turkish #S2
-	addDir(addonString(10821).encode('utf-8'),list,17,'http://www.sdarot.wf/media/series/421.jpg',addonString(108210).encode('utf-8'),'1',50, getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10821).encode('utf-8'),list,17,'https://pbs.twimg.com/profile_images/541776376/Galactik_Reduced_Carr__400x400.jpg',addonString(108210).encode('utf-8'),'1',50, getAddonFanart(background, custom="", default=background2))
 	
 	'''ג'ינג'י'''
 	list = []
@@ -3576,12 +3627,10 @@ def CATEGORIES108(admin):
 	'''הרפתקאות קראט'''
 	list = []
 	if 'English' in General_LanguageL:
-		list.append('&youtube_pl=PLa8HWWMcQEGShWcQbipVlr3uEEnr0bLeh') #הרפתקאות קראט
+		list.append('&youtube_pl=PLa8HWWMcQEGShWcQbipVlr3uEEnr0bLeh')
 	if 'Spanish' in General_LanguageL:
-		list.append('&youtube_pl=PL75Ev9SzNPCbBph8ohUx7PztLgGIqqxkS') #הרפתקאות קראט
+		list.append('&youtube_pl=PL75Ev9SzNPCbBph8ohUx7PztLgGIqqxkS')
 	addDir(addonString(10813).encode('utf-8'),list,17,'http://pbskids.org/apps/media/apps/WK_World_PBS_Apps-1024X1024.png',addonString(108130).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
-	
-	'''השכונה'''
 	
 	'''ויקטוריוס'''
 	list = []
@@ -3795,7 +3844,7 @@ def CATEGORIES108(admin):
 		list.append('&youtube_pl=PLZs0gQed9tMSLhHXasmy0gSjgs_vv9sU5') #English
 	if 'Serbian' in General_LanguageL:
 		list.append('&youtube_pl=PLWMCwroYhJSqSut59L-Sxr0A5IR-0XWeE') #Serbian
-	addDir(addonString(10843).encode('utf-8'),list,17,'http://isc.wcdn.co.il/w9/skins/nick_jr/17/header_pic_2745.png',addonString(108430).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10843).encode('utf-8'),list,17,'https://upload.wikimedia.org/wikipedia/en/7/7f/Nascar_racers_title.png',addonString(108430).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
 	
 	'''סאם וקאט'''
 	list = []
@@ -4126,6 +4175,15 @@ def CATEGORIES108(admin):
 	
 	CATEGORIES108E(General_LanguageL, background, background2) #שי-רה נסיכת הכוח
 	
+	'''שכונה'''
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		#list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nick&name=%f9%eb%e5%f0%e4&url=http%3a%2f%2fnick.walla.co.il%2f%3fw%3d%2f%2f2796370') #Empty!
+		list.append('&dailymotion_pl=x45tcn')
+		list.append('&youtube_pl=PLuQCYUv97StR0o1N7zfbpobVVwev0sx91')
+		
+	addDir('שכונה',list,6,'https://upload.wikimedia.org/wikipedia/he/8/80/10628436_316742958505148_2646201463663204371_n.jpg','','1',"", getAddonFanart(background, custom="", default=background2))
+	
 	'''שרגא בישגדא'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
@@ -4141,7 +4199,7 @@ def CATEGORIES108(admin):
 	
 	CATEGORIES108A(General_LanguageL, background, background2) #עמוד הבא ילדים ונוער
 	
-def CATEGORIES109(admin):
+def CATEGORIES109(name, iconimage, desc, fanart):
 	'''לימוד שפה'''
 	background = 109
 	background2 = ""
@@ -4151,7 +4209,7 @@ def CATEGORIES109(admin):
 	
 	CATEGORIES109A(General_LanguageL, background, background2) #עמוד הבא לימוד שפה
 	
-def CATEGORIES200(admin):
+def CATEGORIES200(name, iconimage, desc, fanart):
 	background = 200
 	background2 = ""
 	

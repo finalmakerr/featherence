@@ -4,29 +4,32 @@ import urllib,urllib2,sys,re,xbmcplugin,xbmcgui,xbmcaddon,xbmc,os
 from variables import *
 from shared_modules import *
 if "plugin." in addonID: from shared_modules3 import *
+from modulesZ import *
+from modulesA import *
 """-----------------------------"""
 
 def CATEGORIES():
 	'''------------------------------
 	---MAIN--------------------------
 	------------------------------'''
+	CATEGORIES_SEARCH(mode=30, url="") #חיפוש
 	addDir(addonString(100).encode('utf-8'),'MyMusic',100,featherenceserviceicons_path + 'star.png',addonString(1000).encode('utf-8'),'1',50, getAddonFanart(100)) #My Music
 	addDir(addonString(101).encode('utf-8'),'',101,featherenceserviceicons_path + 'sod.png',addonString(1010).encode('utf-8'),'1',50, getAddonFanart(101)) #Israeli Music
 	addDir(addonString(111).encode('utf-8'),'',111,featherenceserviceicons_path + 'us.png',addonString(1010).encode('utf-8'),'1',50, getAddonFanart(101)) #Foreign Music
 	'''---------------------------'''
 	
 	'''---------------------------'''
-	#addDir(addonString(118).encode('utf-8'),'',118,featherenceserviceicons_path + 'classical.png',addonString(1180).encode('utf-8'),'1',50, getAddonFanart(118)) #Classical Music
+	addDir(addonString(118).encode('utf-8'),'',118,featherenceserviceicons_path + 'classical.png',addonString(1180).encode('utf-8'),'1',50, getAddonFanart(118)) #Classical Music
 	addDir(addonString(119).encode('utf-8'),'',119,featherenceserviceicons_path + 'radio.png',addonString(1190).encode('utf-8'),'1',50, getAddonFanart(119)) #Radio
 	
-def CATEGORIES100(admin):
+def CATEGORIES100(name, iconimage, desc, fanart):
 	'''------------------------------
 	---My-Music----------------------
 	------------------------------'''
 	background = 100
 	
 	'''כפתור מוזיקה חדש..'''
-	addDir(addonString_servicefeatherence(86).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(87).encode('utf-8') + addonString_servicefeatherence(88).encode('utf-8') + addonString_servicefeatherence(89).encode('utf-8'),'1',50, getAddonFanart(background))
+	addDir(addonString_servicefeatherence(86).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(87).encode('utf-8') + addonString_servicefeatherence(88).encode('utf-8') + addonString_servicefeatherence(89).encode('utf-8'),'s',50, getAddonFanart(background))
 	
 	'''רשימת השמעה 1'''
 	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',50, getAddonFanart("Custom_Playlist1"))
@@ -51,7 +54,6 @@ def CATEGORIES100(admin):
 	
 	if Custom_10001 == "true": addDir(addonString(10001).encode('utf-8'),'',10001,featherenceserviceicons_path + 'star.png',addonString(100010).encode('utf-8'),'1',50, '') #AMIR ELGAZAR PLAYLISTS
 
-	
 def CATEGORIES10001(name, iconimage, desc, fanart):
 	if name == None: name = ""
 	else: name = name + newline
@@ -65,15 +67,20 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.pavellevchenko.com/hard-rock-music-guitar.jpg'
 	addDir('The Greatest Hits of All Times',templates2_path + 'The Greatest Hits of All Times.txt',2,thumb,name + 'Personal Collection','1',50, fanart)
 	
+	'''billboard top 10 All The Time'''
+	thumb = 'https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0PGGM81.png?v=1.0'
+	fanart = 'http://www.pavellevchenko.com/hard-rock-music-guitar.jpg'
+	addDir('billboard top 10 All The Time',templates2_path + 'billboard top 10 All The Time.txt',2,thumb,name + '','1',50, fanart)
+	
 	'''Elton John Personal Collection'''
 	thumb = 'https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/GreatestHits19761986EltonJohn.jpg/220px-GreatestHits19761986EltonJohn.jpg'
 	fanart = 'http://www.kwiknews.my/sites/default/files/styles/kwik_inner_cover/public/elton.john_.jpg?itok=eUB3cG36'
 	addDir('Elton John Personal Collection',templates2_path + 'Elton John Personal Collection.txt',2,thumb,name + 'אלטון גון - אוסף אישי','1',50, fanart)
 	
-	'''billboard top 10 All The Time'''
-	thumb = 'https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0PGGM81.png?v=1.0'
-	fanart = 'http://www.pavellevchenko.com/hard-rock-music-guitar.jpg'
-	addDir('billboard top 10 All The Time',templates2_path + 'billboard top 10 All The Time.txt',2,thumb,name + '','1',50, fanart)
+	'''Rain songs in a playlist'''
+	thumb = 'http://laughingsquid.com/wp-content/uploads/Rain.jpg'
+	fanart = 'http://www.artifacting.com/blog/wp-content/uploads/2012/10/Rain-Room.jpg'
+	addDir('Rain songs in a playlist',templates2_path + 'Rain songs in a playlist.txt',2,thumb,name + '','1',50, fanart) 
 	
 	'''George Michael & wham'''
 	thumb = 'http://i234.photobucket.com/albums/ee136/suwarnaadi/hair/GeorgeMichaelshortsideshair.jpg'
@@ -84,26 +91,21 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	thumb = 'http://images.travelpod.com/tripwow/photos/ta-00b7-d4d4-11a6/arc-de-triomphe-paris-france+1152_12905284514-tpfil02aw-11867.jpg'
 	fanart = 'http://www.wallpapersbyte.com/wp-content/uploads/2015/06/Downolad-HD-Wallpaper-France-Paris-City-Eiffel-Tower-Sunset-WallpapersByte-com-1920x1080.jpg'
 	addDir('Great French Collection',templates2_path + 'Great French Collection.txt',2,thumb,name + '','1',50, fanart)
-
-	'''Rain songs in a playlist'''
-	thumb = 'http://laughingsquid.com/wp-content/uploads/Rain.jpg'
-	fanart = 'http://www.artifacting.com/blog/wp-content/uploads/2012/10/Rain-Room.jpg'
-	addDir('Rain songs in a playlist',templates2_path + 'Rain songs in a playlist.txt',2,thumb,name + '','1',50, fanart) 
 	
 	'''Twilight Time'''
 	thumb = 'http://cps-static.rovicorp.com/3/JPG_400/MI0003/649/MI0003649662.jpg?partner=allrovi.com'
-	fanart = 'http://a2.mzstatic.com/us/r1000/096/Purple/v4/cc/8c/0f/cc8c0ff5-6e27-d9fa-62f1-791ffc4c7432/mzl.lcqgfyzc.1024x1024-65.jpg'
+	fanart = 'http://a2.mzstatic.com/us/r1000/096/purple/v4/cc/8c/0f/cc8c0ff5-6e27-d9fa-62f1-791ffc4c7432/mzl.lcqgfyzc.1024x1024-65.jpg'
 	addDir('Twilight Time - Oldies',templates2_path + 'Twilight Time.txt',2,thumb,name + '','1',50, fanart)
-	
-	'''love songs vol 1'''
-	thumb = 'http://fullhdpictures.com/wp-content/uploads/2015/04/Beauty-Love-Wallpapers.jpg'
-	fanart = 'http://www.hd-wallpapersdownload.com/upload/bulk-upload/hd-wallpaper-romantic-love.jpg'
-	addDir('love songs vol 1',templates2_path + 'love songs vol 1.txt',2,thumb,name + 'love songs vol 1 - Personal Collection','1',50, fanart)
 	
 	'''The Beatles'''
 	thumb = 'http://img2-ak.lst.fm/i/u/ar0/6a122bb0665d4d8ca0cc4c31e245ff55'
 	fanart = 'http://topwalls.net/wallpapers/2012/02/The-Beatles-1080x1920.jpg'
 	addDir('The Beatles',templates2_path + 'The Beatles.txt',2,thumb,name + '','1',50, fanart)
+	
+	'''love songs vol 1'''
+	thumb = 'http://fullhdpictures.com/wp-content/uploads/2015/04/Beauty-Love-Wallpapers.jpg'
+	fanart = 'http://www.hd-wallpapersdownload.com/upload/bulk-upload/hd-wallpaper-romantic-love.jpg'
+	addDir('love songs vol 1',templates2_path + 'love songs vol 1.txt',2,thumb,name + 'love songs vol 1 - Personal Collection','1',50, fanart)
 	
 	'''אוסף ישראלי'''
 	thumb = 'http://www.artishuk.co.il/UserFiles/Store/Products/Products/230x634453006475603750_M.png'
@@ -120,11 +122,6 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.megapixel.co.il/mega/wp-content/uploads/2012/02/Shlomo-Artzi_so.jpg'
 	addDir('שלמה ארצי אוסף אישי',templates2_path + 'Shlomo Artzi Personal Collection.txt',2,thumb,name + '','1',50, fanart)
 	
-	'''אריק איינשטיין אוסף אישי'''
-	thumb = 'http://www.maariv.co.il/download/pictures/%D7%90%D7%A8%D7%99%D7%A7%20%D7%90%D7%99%D7%99%D7%A0%D7%A9%D7%98%D7%99%D7%9F%203%20-%20%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A9%D7%94%20%D7%A9%D7%99%20%D7%A4%D7%9C%D7%90%D7%A9%2090%20480_2.jpg'
-	fanart = 'http://www.haaretz.co.il/polopoly_fs/1.2490157.1416401072!/image/2643586370.jpg_gen/derivatives/size_936xAuto/2643586370.jpg'
-	addDir('אריק איינשטיין אוסף אישי',templates2_path + 'Arik Einstein.txt',2,thumb,name + '','1',50, fanart)
-	
 	'''פלייליסט מזרחי שקט ורגוע''' 
 	thumb = 'http://www.vehiclehi.com/thumbnails/detail/20121101/headphones%20women%20music%20headphones%20girl%201920x1080%20wallpaper_www.vehiclehi.com_28.jpg'
 	fanart = 'http://i.ytimg.com/vi/vaQiwOi8Afk/maxresdefault.jpg'
@@ -135,8 +132,12 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://3.bp.blogspot.com/-_90x10bD8Xs/VIn8kUH4rwI/AAAAAAAAABo/Yif1L9eLyuE/s1600/music.jpg'
 	addDir('פלייליסט מזרחי קיצבי דאנס',templates2_path + 'mizrahi playlist rhythmic dance.txt',2,thumb,name + 'על פי בקשה של חברי הקבוצה (KODISRAEL.NET)','1',50, fanart) 
 	
-
-def CATEGORIES101(admin):
+	'''אריק איינשטיין אוסף אישי'''
+	thumb = 'http://www.maariv.co.il/download/pictures/%D7%90%D7%A8%D7%99%D7%A7%20%D7%90%D7%99%D7%99%D7%A0%D7%A9%D7%98%D7%99%D7%9F%203%20-%20%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A9%D7%94%20%D7%A9%D7%99%20%D7%A4%D7%9C%D7%90%D7%A9%2090%20480_2.jpg'
+	fanart = 'http://www.haaretz.co.il/polopoly_fs/1.2490157.1416401072!/image/2643586370.jpg_gen/derivatives/size_936xAuto/2643586370.jpg'
+	addDir('אריק איינשטיין אוסף אישי',templates2_path + 'Arik Einstein.txt',2,thumb,name + '','1',50, fanart)
+	
+def CATEGORIES101(name, iconimage, desc, fanart):
 	'''Israeli Music'''
 	addDir(addonString(101).encode('utf-8'),'',10101,featherenceserviceicons_path + "music.png",addonString(1010).encode('utf-8'),'1',58, getAddonFanart(10101)) #Israeli Music
 	addDir(addonString(102).encode('utf-8'),'',10102,featherenceserviceicons_path + "karaoke.png",addonString(1020).encode('utf-8'),'1',58, getAddonFanart(10102)) #Israeli Karaoke
@@ -147,7 +148,7 @@ def CATEGORIES101(admin):
 	addDir(addonString(109).encode('utf-8'),'',10109,featherenceserviceicons_path + "guitar.png",addonString(1090).encode('utf-8'),'1',58, getAddonFanart(10108)) #Mizrahit Liveshows
 	#addDir(addonString(105).encode('utf-8'),'',10105,featherenceserviceicons_path + "microphone.png",addonString(1050).encode('utf-8'),'1',58, getAddonFanart(10105)) #Israeli Djs
 
-def CATEGORIES111(admin):
+def CATEGORIES111(name, iconimage, desc, fanart):
 	'''Foreign Music'''
 	addDir(addonString(111).encode('utf-8'),'',11101,featherenceserviceicons_path + "music.png",addonString(1110).encode('utf-8'),'1',58, getAddonFanart(11101)) #Foreign Music
 	addDir(addonString(112).encode('utf-8'),'',11102,featherenceserviceicons_path + "karaoke.png",addonString(1120).encode('utf-8'),'1',58, getAddonFanart(11102)) #Foreign Karaoke
@@ -160,37 +161,13 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	------------------------------'''
 	background = 101
 	commonsearch = 'commonsearch101'
+	
+	CATEGORIES_RANDOM()
 	'''חיפוש'''
 	addDir(localize(137),'שיר',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
 	
-	'''קליפים ישראליים אקראי'''
-	list = []
-	list.append('&youtube_pl=PLjUpwHk7giaiaSeSzZ4Alqj8cGQB6rPEk')
-	list.append('&youtube_pl=PLjUpwHk7giaj910tIRA-XTqx6HJA7tPUi') 
-	#list.append('&youtube_pl=PL46129841F86EDCCB4')
-	list.append('&youtube_pl=FLw_JTl5vBNd_ILZsGOecXmQ')
-	list.append('&youtube_pl=PLB97405B96D068FC6')
-	list.append('&youtube_pl=PL8B8D8008EC2AEC94')
-	list.append('&youtube_pl=PL87E8D450A93CD471')
-	list.append('&youtube_pl=PLC5599CB5B12761ED')
-	list.append('&youtube_pl=PL8E141F3BEC23F14D')
-	list.append('&youtube_pl=PL99BA4ED06D054C29')	
-	list.append('&youtube_pl=PLB1AAF2963CBAEF82')
-	list.append('&youtube_pl=PLB262A552C2351091')
-	list.append('&youtube_pl=PLjf7D2X0WebGDn5SI4OZls5u0iiXdEKPg')
-	list.append('&youtube_pl=PLjUpwHk7giaj910tIRA-XTqx6HJA7tPUi') 
-	list.append('&youtube_pl=PLWvtqTEJL_PecfYvYdEhXvijvSas9ocp5')
-	list.append('&youtube_pl=PLD_zAoRa9UcA4U7jHXTx3hDF3om7zM5jd')
-	list.append('&youtube_pl=PLzzwAvFoE3KfG0eR0kCdUjEiEbOIUpvZb')
-	list.append('&youtube_pl=PL533AC0BFD30DA202')
-	list.append('&youtube_pl=PLFcBFujWU-tB6op3uAj-eJiymuwsUt51T')
-	list.append('&youtube_pl=PLFcBFujWU-tDTP_OahLQ6CVvew_TElbHr')
-	list.append('&youtube_pl=PLLaB91oVoE-Cq3aJa7MElaf5i3JBILpit')
-	list.append('&youtube_pl=PLDMFOZKyoCX0EMCapcK2qW7X3mxjs52Xw')	
-	list.append('&youtube_pl=PL1sns8HoY1uKuGp9ze9f5W410VleGhAZ-')
-	list.append('&youtube_pl=PL6CcUVzFqqcVNcscz560ZsaxhWrQOrWXH')
-	addDir(localize(590),list,17,'http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33',addonString(590).encode('utf-8'),'1',"http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33", getAddonFanart(background, custom=""))
-	
+	CATEGORIES10101Z(name, iconimage, desc, fanart) #ערוצי טלוויזיה
+
 	'''אביתר בנאי'''
 	list = []
 	list.append('&youtube_se='+commonsearch)
@@ -353,32 +330,21 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLWb1bV-0WydPLmTK9orqNOigyeSGi0KW7')
 	addDir(addonString(10149).encode('utf-8'),list,17,'https://www.kedem-auctions.com/sites/default/files/sale/1300/19724.jpg',addonString(101490).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
 	
+	CATEGORIES10101A(name, iconimage, desc, fanart) #דף הבא
+	
 def CATEGORIES10102(name, iconimage, desc, fanart):
 	'''------------------------------
 	---Israeli-Karaoke---------------
 	------------------------------'''
 	background = 102
 	commonsearch = 'commonsearch102'
+	
+	CATEGORIES_RANDOM()
 	'''חיפוש'''
 	addDir(localize(137),'קריוקי',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, custom=""))
 	
-	'''ישראלי קריוקי אקראי'''
-	list = []
-	list.append('&youtube_ch=sharimkaraokeltd')
-	list.append('&youtube_pl=PL5MV8_qxHC5ufNt9OV-lyMTm_WU-xUFWV')
-	list.append('&youtube_pl=PLpx0ojEH2giXH8GUUIcvsBmc5adv_96FW')
-	list.append('&youtube_pl=PL6WvGFcuPjESeFQY0YyCzTy7qTofzMlaQ')
-	list.append('&youtube_pl=PL7302191F8A43E01C')
-	list.append('&youtube_pl=PLgEY_FhZUaoolhDNTkPX40f6cqxIISjp_')
-	list.append('&youtube_pl=PL5MV8_qxHC5ufNt9OV-lyMTm_WU-xUFWV')
-	list.append('&youtube_pl=PLjHwF6MA1nycO4TXyQ0Di7ADrg9wTJ8XW')
-	list.append('&youtube_pl=PL96E48EDE517CA6D3')
-	list.append('&youtube_pl=PL5MV8_qxHC5ufNt9OV-lyMTm_WU-xUFWV')
-	list.append('&youtube_pl=PL9LIAIL0iLiqjA78v9ZYxQELTUsDSvttM')
-	list.append('&youtube_pl=PLpUURqa-V9sg8RHi8M-sn3x9Kn6UB9aQs')
-	list.append('&youtube_pl=PL5MV8_qxHC5ufNt9OV-lyMTm_WU-xUFWV')
-	addDir(localize(590),list,17,'http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33',addonString(590).encode('utf-8'),'1',"http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33", getAddonFanart(background, custom=""))
-	
+	CATEGORIES10102Z(name, iconimage, desc, fanart) #ערוצי טלוויזיה
+
 	'''אביתר בנאי'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
@@ -541,18 +507,20 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLWb1bV-0WydPLmTK9orqNOigyeSGi0KW7')
 	addDir(addonString(10149).encode('utf-8'),list,17,'https://www.kedem-auctions.com/sites/default/files/sale/1300/19724.jpg',addonString(101490).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
 	
+	CATEGORIES10102A(name, iconimage, desc, fanart) #דף הבא
+	
 def CATEGORIES10104(name, iconimage, desc, fanart):
 	'''------------------------------
 	---Israeli-Liveshows-------------
 	------------------------------'''
 	background = 104
 	commonsearch = 'commonsearch104'
+	
+	CATEGORIES_RANDOM()
 	'''חיפוש'''
 	addDir(localize(137),'הופעה חיה',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
 	
-	'''אקראי'''
-	list = []
-	addDir(localize(590),list,17,'http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33',addonString(590).encode('utf-8'),'1',"http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33", getAddonFanart(background, custom=""))
+	CATEGORIES10104Z(name, iconimage, desc, fanart) #ערוצי טלוויזיה
 	
 	'''אייל גולן'''
 	list = []
@@ -754,12 +722,18 @@ def CATEGORIES10104(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
 	addDir(addonString(10145).encode('utf-8'),list,17,'https://i.ytimg.com/i/0m-czKbg-tL7J61RDdU1rg/mq1.jpg?v=54ac3da1',addonString(11450).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
-
+	
+	CATEGORIES10104A(name, iconimage, desc, fanart) #דף הבא
+	
 def CATEGORIES10105(name, iconimage, desc, fanart):
 	'''------------------------------
 	---Israeli-Djs-------------------
 	------------------------------'''
 	background = 105
+	
+	CATEGORIES_RANDOM()
+	CATEGORIES10105Z(name, iconimage, desc, fanart) #ערוצי טלוויזיה
+	CATEGORIES10105A(name, iconimage, desc, fanart) #דף הבא
 	
 def CATEGORIES10106(name, iconimage, desc, fanart):
 	'''------------------------------
@@ -767,25 +741,13 @@ def CATEGORIES10106(name, iconimage, desc, fanart):
 	------------------------------'''
 	background = 106
 	commonsearch = 'commonsearch106'
+	
+	CATEGORIES_RANDOM()
 	'''חיפוש'''
 	addDir(localize(137),'שיר',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
 	
-	'''מיזרחי אקראי'''
-	list = []
-	list.append('&youtube_pl=PLTc0JNRljDnDGP78_AArd92uOID5cgXQ-')
-	list.append('&youtube_pl=PL76tprfc11flz1_awCcqXMU54HAKmU9hQ')
-	list.append('&youtube_pl=PL76C25ECA2C0A42D8')
-	list.append('&youtube_pl=PLHJ3aAavAyXPvWoAZDAbSjF7_rtxcj_GV')
-	list.append('&youtube_pl=PL244F4D7779BDB785')
-	list.append('&youtube_pl=PL4Y9oM_hCEX-ufbpFC1PFGNDgW0cs0VjC')
-	list.append('&youtube_pl=PL0-1r69ebVlq4lyF3IG2RCDv9K-7Cx4kb')
-	list.append('&youtube_pl=PL2ED2F272AAD77564')
-	list.append('&youtube_pl=PL6T48PIw2WV0lA-0CGnJkyBN9kHpZrMsN')
-	list.append('&youtube_pl=PLcTtnwINjBVetkyrXdlslnaB18-FGrIeB')
-	list.append('&youtube_pl=PLwc22f_a0ALr7yxtJfyMBL4UvghuPCyaW')
-	addDir(localize(590),list,17,'http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33',addonString(590).encode('utf-8'),'1',"http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33", getAddonFanart(background, custom=""))
-	
-	
+	CATEGORIES10106Z(name, iconimage, desc, fanart) #ערוצי טלוויזיה
+
 	'''אייל גולן'''
 	list = []
 	list.append('&youtube_se='+commonsearch)
@@ -902,24 +864,21 @@ def CATEGORIES10106(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL015121DF81A43072')
 	addDir(addonString(10147).encode('utf-8'),list,17,'http://images.one.co.il/images/mag/450_250/gg789176.jpg',addonString(101470).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
 	
+	CATEGORIES10106A(name, iconimage, desc, fanart) #דף הבא
+	
 def CATEGORIES10107(name, iconimage, desc, fanart):
 	'''------------------------------
 	---Mizrahit-Karaoke--------------
 	------------------------------'''
 	background = 107
 	commonsearch = 'commonsearch102'
+	
+	CATEGORIES_RANDOM()
 	'''חיפוש'''
 	addDir(localize(137),'קריוקי',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, custom=""))
 	
-	'''אקראי'''
-	list = []
-	list.append('&youtube_ch=sharimkaraokeltd')
-	list.append('&youtube_pl=PL5MV8_qxHC5ufNt9OV-lyMTm_WU-xUFWV')
-	list.append('&youtube_pl=PLjHwF6MA1nycO4TXyQ0Di7ADrg9wTJ8XW')
-	list.append('&youtube_pl=PL6WvGFcuPjESeFQY0YyCzTy7qTofzMlaQ')
-	list.append('&youtube_pl=PL7302191F8A43E01C')
-	addDir(localize(590),list,17,'http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33',addonString(590).encode('utf-8'),'1',"http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33", getAddonFanart(background, custom=""))
-	
+	CATEGORIES10107Z(name, iconimage, desc, fanart) #ערוצי טלוויזיה
+
 	'''אייל גולן'''
 	list = []
 	list.append('&youtube_se='+commonsearch)
@@ -1001,6 +960,8 @@ def CATEGORIES10107(name, iconimage, desc, fanart):
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(10145).encode('utf-8'),list,17,'https://i.ytimg.com/i/0m-czKbg-tL7J61RDdU1rg/mq1.jpg?v=54ac3da1',addonString(11450).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
 	
+	CATEGORIES10107A(name, iconimage, desc, fanart) #דף הבא
+	
 def CATEGORIES10109(name, iconimage, desc, fanart):
 	'''------------------------------
 	---Mizrahit-Liveshows------------
@@ -1008,8 +969,11 @@ def CATEGORIES10109(name, iconimage, desc, fanart):
 	background = 109
 	commonsearch = "commonsearch104"
 	
+	CATEGORIES_RANDOM()
 	'''חיפוש'''
 	addDir(localize(137),'הופעה חיה',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
+	
+	CATEGORIES10109Z(name, iconimage, desc, fanart) #ערוצי טלוויזיה
 	
 	'''אקראי'''
 	list = []
@@ -1108,32 +1072,20 @@ def CATEGORIES10109(name, iconimage, desc, fanart):
 	list.append('&youtube_se='+commonsearch+'')
 	addDir(addonString(10145).encode('utf-8'),list,17,'https://i.ytimg.com/i/0m-czKbg-tL7J61RDdU1rg/mq1.jpg?v=54ac3da1',addonString(11450).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
 
+	CATEGORIES10109A(name, iconimage, desc, fanart) #דף הבא
+	
 def CATEGORIES11101(name, iconimage, desc, fanart):
 	'''------------------------------
 	---Foreign-Music-----------------
 	------------------------------'''
 	background = 111
 	commonsearch = 'commonsearch111'
+	
+	CATEGORIES_RANDOM()
 	'''חיפוש'''
 	addDir(localize(137),'song',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
 	
-	'''להיטים לועזיים מכל הזמנים'''
-	list = []
-	list.append('&youtube_pl=PLuK6flVU_Aj45QZ_A5ld0-pP3CIkoNQDk')
-	list.append('&youtube_pl=PLsiyfJZak8Pc7AA6EqEIXBgU4u-qypRLe')
-	list.append('&youtube_pl=PLuK6flVU_Aj5EJ9Pp-C9N7XA0YJr_GrJI')
-	list.append('&youtube_pl=PLqYXv_L7NiEyYnfZhVHR7ixOTANxjes89')
-	list.append('&youtube_pl=PL6D06B33066D077FF')
-	list.append('&youtube_pl=PL2E373ABBD360C09F')
-	list.append('&youtube_pl=PLP6Mnyo0OTQtnZtDpxceawHIFW5dx38y8')
-	list.append('&youtube_pl=PL422A945E3D37BF49')
-	list.append('&youtube_pl=PL230B1AFAC3F149D0')
-	list.append('&youtube_pl=PLQw-AwSCH8G3Dhw4vAu0R7OfxDWdUbhaR')
-	list.append('&youtube_pl=PL7BA598CBAF2745D9')
-	list.append('&youtube_pl=PL05E1623111A9A860')
-	list.append('&youtube_pl=PLpuDUpB0osJmZQ0a3n6imXirSu0QAZIqF')
-	addDir(localize(590),list,17,'http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33',addonString(590).encode('utf-8'),'1',"http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33", getAddonFanart(background, custom=""))
-	
+	CATEGORIES11101Z(name, iconimage, desc, fanart) #ערוצי טלוויזיה
 	
 	'''Adele'''
 	list = []
@@ -1264,6 +1216,8 @@ def CATEGORIES11101(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL201BB89398FE5675')
 	addDir(addonString(11114).encode('utf-8'),list,17,"http://img2.timeinc.net/people/i/2012/specials/yearend/obits/whitney-houston-1435.jpg",addonString(111140).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
 
+	CATEGORIES11101A(name, iconimage, desc, fanart) #דף הבא
+	
 def CATEGORIES11102(name, iconimage, desc, fanart):
 	'''------------------------------
 	---Foreign-Karaoke---------------
@@ -1271,11 +1225,11 @@ def CATEGORIES11102(name, iconimage, desc, fanart):
 	background = 112
 	commonsearch = 'commonsearch112'
 	
+	CATEGORIES_RANDOM()
 	'''חיפוש'''
 	addDir(localize(137),'karaoke',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, custom=""))
 	
-	'''אקראי'''
-	#addDir(localize(590),'UC-9-kyTW8ZkZNDHQJ6FgpwQ',9,featherenceserviceicons_path + "singers.png","",'1',"", getAddonFanart(background, custom=""))
+	CATEGORIES11102Z(name, iconimage, desc, fanart) #ערוצי טלוויזיה
 		
 	'''Aretha Franklin'''
 	list = []
@@ -1379,19 +1333,21 @@ def CATEGORIES11102(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_pl=PL201BB89398FE5675')
 	addDir(addonString(11114).encode('utf-8'),list,17,"http://img2.timeinc.net/people/i/2012/specials/yearend/obits/whitney-houston-1435.jpg",addonString(111140).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
-
+	
+	CATEGORIES11102A(name, iconimage, desc, fanart) #דף הבא
+	
 def CATEGORIES11104(name, iconimage, desc, fanart):
 	'''------------------------------
 	---Foreign-Liveshows-------------
 	------------------------------'''
 	background = 114
 	commonsearch = 'commonsearch114'
+	
+	CATEGORIES_RANDOM()
 	'''חיפוש'''
 	addDir(localize(137),'liveshow',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, custom=""))
 	
-	'''אקראי הופעות חיות לועזי'''
-	list = []
-	addDir(localize(590),list,17,'http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33',addonString(590).encode('utf-8'),'1',"http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33", getAddonFanart(background, custom=""))
+	CATEGORIES11104Z(name, iconimage, desc, fanart) #ערוצי טלוויזיה
 	
 	'''Aretha Franklin'''
 	list = []
@@ -1502,18 +1458,32 @@ def CATEGORIES11104(name, iconimage, desc, fanart):
 	list.append('&youtube_se='+commonsearch+'')
 	list.append('&youtube_pl=PL201BB89398FE5675')
 	addDir(addonString(11114).encode('utf-8'),list,17,"http://img2.timeinc.net/people/i/2012/specials/yearend/obits/whitney-houston-1435.jpg",addonString(111140).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
-		
+	
+	CATEGORIES11104A(name, iconimage, desc, fanart) #דף הבא
+	
 def CATEGORIES11105(name, iconimage, desc, fanart):
 	'''------------------------------
 	---Foregin-Djs-------------------
 	------------------------------'''
 	background = 115
-
-	'''אקראי Djs'''
-	addDir(localize(590),list,17,'http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33',addonString(590).encode('utf-8'),'1',"http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33", getAddonFanart(background, custom=""))
+	
+	CATEGORIES_RANDOM()
+	CATEGORIES11105Z(name, iconimage, desc, fanart) #ערוצי טלוויזיה
+	CATEGORIES11105A(name, iconimage, desc, fanart) #דף הבא
 
 	
-def CATEGORIES119(admin):
+	
+def CATEGORIES118(name, iconimage, desc, fanart):
+	'''------------------------------
+	---Classical-Music---------------
+	------------------------------'''
+	background = 118
+	
+	CATEGORIES_RANDOM()
+	CATEGORIES118Z(name, iconimage, desc, fanart) #ערוצי טלוויזיה
+	CATEGORIES118A(name, iconimage, desc, fanart) #דף הבא
+	
+def CATEGORIES119(name, iconimage, desc, fanart):
 	'''------------------------------
 	---Radio-------------------------
 	------------------------------'''
@@ -1525,27 +1495,4 @@ def CATEGORIES119(admin):
 	addon = 'plugin.audio.99fm-playlists'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
 	addDir('99 FM','plugin://'+addon,8,thumb,plot,addon,"", getAddonFanart(background, custom=fanart))
-	
-	
-def CATEGORIES121(admin):
-	'''------------------------------
-	---Classical-Music---------------
-	------------------------------'''
-	
-	'''אקראי מוזיקה קלאסית'''
-	addDir(localize(590),list,17,'http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33',addonString(590).encode('utf-8'),'1',"http://reallifeglobal.com/wp-content/uploads/2012/06/music.jpg?467a33", getAddonFanart(background, custom=""))
-
-	
-	background = 121
-	'''מוזיקה קלאסית 1'''
-	addDir(addonString(121).encode('utf-8') + space + "1",'ClassicalMusicOnly',9,'https://yt3.ggpht.com/-ECuTE_OO3EU/AAAAAAAAAAI/AAAAAAAAAAA/2j-Kiyky9JU/s100-c-k-no/photo.jpg',addonString(2050).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
-	
-	'''מוזיקה קלאסית 2'''
-	addDir(addonString(121).encode('utf-8') + space + "2",'TopClassicalMusic',9,'https://yt3.ggpht.com/-RcrsdLR_BvI/AAAAAAAAAAI/AAAAAAAAAAA/2kIbfIgVXi4/s100-c-k-no/photo.jpg',addonString(2051).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
-	
-	'''מוזיקה קלאסית 3'''
-	addDir(addonString(121).encode('utf-8') + space + "3",'ClassicalMusicOn',9,'https://yt3.ggpht.com/-LuYmD_n6gFo/AAAAAAAAAAI/AAAAAAAAAAA/nNUB6_ECXJc/s100-c-k-no/photo.jpg',addonString(2052).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
-	
-	'''מוזיקה קלאסית 4'''
-	addDir(addonString(121).encode('utf-8') + space + "4",'PLcGkkXtask_fpbK9YXSzlJC4f0nGms1mI',13,'https://yt3.ggpht.com/-LFti8mQBHdE/AAAAAAAAAAI/AAAAAAAAAAA/F8sYy19ISBc/s88-c-k-no/photo.jpg',addonString(2053).encode('utf-8'),'1',"", getAddonFanart(background, custom=""))
 

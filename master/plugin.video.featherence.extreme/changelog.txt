@@ -5,8 +5,11 @@ WIP (WORK IN PROGRESS)
 ------------------------
 Featherence Extreme v0.1.3 (xx-02-16)
 ------------------------
-- TV mode now occur also inside container.
 - Added random play feature.
+- Added smart search button to main menu with search history option.
+- Major update random play method.
+- Minor bugs fix.
+- TV mode now occur also inside container.
 
 ------------------------
 Featherence Extreme v0.1.2 (31-12-15)

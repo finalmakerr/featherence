@@ -42,14 +42,17 @@ else:
 	try:
 		from shared_variables import *
 		from shared_variables3 import *
+		libDir = os.path.join(addonPath, 'resources', 'lib', '')
+		sys.path.insert(1, libDir)
 		'''---------------------------'''
 	except Exception, TypeError:
-		xbmc.executebuiltin('Notification(FEATHERENCE SERVICE ADDON ERROR, Solution: Reinstall the addon, 2000)')
+		if 'No module named' in str(TypeError): xbmc.executebuiltin('Notification(FEATHERENCE SERVICE ADDON ERROR, Solution: Reinstall the addon, 2000)')
+		else: xbmc.executebuiltin('Notification(Unknown Error, www.facebook.com/groups/featherence, 2000)')
 		print 'TypeError: ' + str(TypeError)
 		sys.exit(1)
 		
 templates2_path = os.path.join(addonPath, 'resources', 'templates2', '')
-General_OnlyPopular = getsetting('General_OnlyPopular')
+
 '''---------------------------'''
 Custom_10001 = getsetting('Custom_10001')
 Custom_10002 = getsetting('Custom_10002')

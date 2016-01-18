@@ -464,23 +464,23 @@ msgstr "$LOCALIZE[19021]"
 
 msgctxt "#995
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#996
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#997
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#998
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#999
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#1000
 msgid ""
@@ -533,7 +533,7 @@ msgstr "[COLOR=yellow]כל שירי הקריוקי הישראלים![/COLOR][CR]
 
 msgctxt "#1030
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#1040
 msgid ""
@@ -545,19 +545,19 @@ msgstr "[COLOR=yellow]כל הדי ג'יי הישראלים![/COLOR][CR][CR]"
 
 msgctxt "#1060
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#1070
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#1080
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#1090
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#1100
 msgid ""
@@ -585,7 +585,7 @@ msgstr "[COLOR=yellow]כל הדי ג'יי המובילים מחו"ל![/COLOR][CR
 
 msgctxt "#1160
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#1170
 msgid ""
@@ -593,7 +593,7 @@ msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 
 msgctxt "#1180
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#1190
 msgid "[COLOR=yellow]Listen to your favourite music (Audio only).[/COLOR][CR][CR]Goes great with photo presentation."
@@ -618,7 +618,7 @@ msgstr "[COLOR=yellow][/COLOR][CR][CR]"
 #Foreign Karaoke2
 msgctxt "#1250
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#1251
 msgid ""
@@ -1450,7 +1450,7 @@ msgstr ""
 
 msgctxt "#100000
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#100010
 msgid "Playlists private collection"
@@ -1493,7 +1493,7 @@ msgstr "הם צמד זמרים-יוצרים ישראלים המורכב מגיא
 
 msgctxt "#101090
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#101100
 msgid ""
@@ -1531,7 +1531,7 @@ msgstr "חברי הלהקה המובילים בכל ההרכבים הם גידי
 
 msgctxt "#101160
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 #ישי לוי
 msgctxt "#101170
@@ -1589,7 +1589,7 @@ msgstr "נולד ב  6 באוגוסט 1986 זמר, פזמונאי ומלחין �
 
 msgctxt "#101290
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 #עיברי לידר
 msgctxt "#101300
@@ -1680,7 +1680,7 @@ msgstr "[COLOR=yellow]שרית חדד (בעבר שרה חודדטוב; נולד�
 
 msgctxt "#101470
 msgid ""
-msgstr "[COLOR=yellow]?[/COLOR][CR][CR]?"
+msgstr ""
 
 msgctxt "#111010
 msgid ""

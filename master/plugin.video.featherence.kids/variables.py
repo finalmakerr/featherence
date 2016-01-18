@@ -46,9 +46,9 @@ else:
 		sys.path.insert(1, libDir)
 		'''---------------------------'''
 	except Exception, TypeError:
-		xbmc.executebuiltin('Notification(FEATHERENCE SERVICE ADDON ERROR, Solution: Reinstall the addon, 2000)')
+		if 'No module named' in str(TypeError): xbmc.executebuiltin('Notification(FEATHERENCE SERVICE ADDON ERROR, Solution: Reinstall the addon, 2000)')
+		else: xbmc.executebuiltin('Notification(Unknown Error, www.facebook.com/groups/featherence, 2000)')
 		print 'TypeError: ' + str(TypeError)
 		sys.exit(1)
 
-General_TrustedOnly = getsetting('General_TrustedOnly')
 commonsearch101 = "פרק מלא"

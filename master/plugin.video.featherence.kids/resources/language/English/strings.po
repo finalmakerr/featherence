@@ -17,10 +17,6 @@ msgctxt "#4
 msgid "Songs"
 msgstr "שירי"
 
-msgctxt "#5
-msgid "TV Channels in %s"
-msgstr "ערוצי טלוויזיה ב-%s"
-
 msgctxt "#11
 msgid "Songs"
 msgstr "שירים"
@@ -1765,8 +1761,8 @@ msgid "Tak and the Power of Juju"
 msgstr "טאק וכוח הג'וג'ו"
 
 msgctxt "#10495
-msgid ""
-msgstr ""
+msgid "Mighty Max"
+msgstr "מייטי מקס"
 
 msgctxt "#10496
 msgid ""
@@ -1898,8 +1894,8 @@ msgid "Barbie in a Mermaid Tale"
 msgstr "ברבי בת הים"
 
 msgctxt "#10528
-msgid ""
-msgstr ""
+msgid "Dragon Ball"
+msgstr "דראגון בול"
 
 msgctxt "#10529
 msgid "Aladdin"
@@ -2195,7 +2191,7 @@ msgid "Oliver"
 msgstr "אוליבר"
 
 msgctxt "#10602
-msgid ""
+msgid "Louie World"
 msgstr "אוצר מילים עם נוני"
 
 msgctxt "#10603
@@ -3225,8 +3221,8 @@ msgid "אגדת הנסיך וליאנט"
 msgstr "The Legend of Prince Valiant"
 
 msgctxt "#10859
-msgid ""
-msgstr ""
+msgid "Austin & Ally"
+msgstr "אוסטין ואלי"
 
 msgctxt "#10860
 msgid ""
@@ -5001,8 +4997,8 @@ msgid "The television series tells of Tak and his friend, Jeera, including his m
 msgstr "הסדרה מספרת על טאק, השאמן הצעיר של שבט הפופונונו. מדי פרק הכפר נקלע לבעיות ותסבוכות שנגרמות לרוב על ידי טאק והוא נאלץ לפתור אותן. למרות עזרתו הרבה של טאק הוא לא זוכה להוקרה מהצ'יף המפונק. חבריו הטובים של טאק הם ג'ירה,בתו של הצ'יף וקיקו הרגוע שאוהב להשתטות."
 
 msgctxt "#104950
-msgid ""
-msgstr ""
+msgid "Max, a 12 year old boy, finds a magical cap that can teleport him across dimensions."
+msgstr "Max, a 12 year old boy, finds a magical cap that can teleport him across dimensions."
 
 msgctxt "#104960
 msgid ""
@@ -5135,8 +5131,8 @@ msgid "Barbie stars as Merliah, a surfer who learns a shocking secret: she's a m
 msgstr "Barbie stars as Merliah, a surfer who learns a shocking secret: she's a mermaid! She and her dolphin friend set out for an undersea adventure to rescue her mother, the queen of Oceana."
 
 msgctxt "#105280
-msgid ""
-msgstr ""
+msgid "monkey-tailed boy named Goku befriending a teenage girl named Bulma, whom he accompanies to find the seven Dragon Balls, which summon the dragon Shenlong to grant the user one wish. The journey leads them to the desert bandit Yamcha, who later becomes an ally; Chi-Chi, whom Goku unknowingly agrees to marry; and Pilaf, an impish man who seeks the Dragon Balls to fulfill his desire to rule the world."
+msgstr "גוקו הגיע לכדור הארץ בתוך חללית כאשר היה תינוק, ונמצא על ידי איש זקן שקוראים לו גוהאן. גוהאן לקח את התינוק אל ביתו והחל לדאוג לו ולכל צרכיו, אבל התינוק התנהג בצורה רעה וגסת רוח כלפי הסביבה וכלפי גוהאן. יום אחד כאשר גוהאן יצא לטייל, התינוק נפל מצוק, נפצע בראשו וכמעט נהרג. במזל התינוק ניצל ממוות, ומאז החל להתנהג בצורה טובה ומנומסת כלפי הסביבה וכלפי גוהאן. מאותו יום הוא נודע בשם גוקו. בילדותו גוהאן הזהיר את גוקו לא לצאת בזמן ירח מלא מביתו כי בחוץ מסתובבת מפלצת גדולת ממדים שתהרוג אותו, אבל גוקו לא הקשיב וכאשר יצא באחת הפעמים בזמן ירח מלא, מפלצת גדולת ממדים בצורת קוף הרגה את גוהאן, וגוקו ישן בזמן זה (גוקו הוא המפלצת)."
 
 msgctxt "#105290
 msgid ""
@@ -5429,8 +5425,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#106010
-msgid ""
-msgstr ""
+msgid "Louie introduces viewers to first words by naming objects that occur in a similar category such as animals, toys, or musical instruments. Louie repeats the object's name and also uses the much-loved game of ‘peek-a-boo’ to demonstrate the connection between the object and the title with which it is identified."
+msgstr "Louie introduces viewers to first words by naming objects that occur in a similar category such as animals, toys, or musical instruments. Louie repeats the object's name and also uses the much-loved game of ‘peek-a-boo’ to demonstrate the connection between the object and the title with which it is identified."
 
 msgctxt "#106020
 msgid ""
@@ -6459,8 +6455,8 @@ msgid "Like the original comic strip, the series begins with the fall of Thule, 
 msgstr "Like the original comic strip, the series begins with the fall of Thule, the fictional kingdom that Prince Valiant is heir to. Valiant, his parents, and a group of survivors from the castle are exiled by the ruthless conqueror Cynan to a hostile marsh across the sea. The young prince, deeply saddened by this defeat and vengeful towards Cynan, attempts to make the best of his new life but craves some greater purpose. He finds this purpose when he has a series of dreams about a kingdom called Camelot, King Arthur, Merlin, and the Knights of the Round Table."
 
 msgctxt "#108590
-msgid ""
-msgstr ""
+msgid "Set in Miami, Austin & Ally is a multi-camera comedy about the relationship between two very different musicians: extroverted singer and instrumentalist Austin Moon (Ross Lynch), who is fun-loving and outgoing, and introverted and awkward songwriter Ally Dawson (Laura Marano), who is a singer, but has a bad case of stage fright."
+msgstr "אלי דוסון היא ילדה שכותבת שירים, בעלת פחד במה שעובדת בחנות כלי הנגינה של אביה. אוסטין מון הוא כוכב רוק שאוהב להיות על הבמה ושכל הזמן מסתבך בצרות. בתחילת העונה הוא שומע את אלי שרה כשהוא בא לחנות של אביה ומלחין את השיר שלה בסגנון שלו. השיר מתפרסם בכל רחבי האינטרנט וכך הוא נהיה כוכב רוק. לכן הוא מחליט שהאמרגנית שלו תהיה טריש - חברה שלו ושל אלי, עצלנית, שתמיד מוצאת דרכים איך להתחמק מאחריות, והשותפה שלו תהיה אלי, שכותבת את השירים, אך מפחדת להופיע בעצמה (עד לאמצע עונה 2)."
 
 msgctxt "#108600
 msgid ""
