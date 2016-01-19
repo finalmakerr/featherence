@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
-  <fontset id="Arial" idloc="31026" unicode="true">
+  <fontset id="Default" idloc="31026" unicode="true">
 	<font>
       <name>font10</name>
       <filename>arial.ttf</filename>

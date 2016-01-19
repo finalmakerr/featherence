@@ -313,7 +313,7 @@
 	  <control type="image" id="7021" description="רקע תחתון צבע">
 		<include>Fade_MainBackgroundOverlay</include>
 		<include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + !IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo">Slide1</include>
-		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,85.8" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="74.65,85.8" time="0">Conditional</animation>
 		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75,85.8" time="0">Conditional</animation>
 		<aspectratio>stretch</aspectratio>
 		<height>1110</height>
@@ -327,7 +327,7 @@
 	  <control type="image" description="רקע תחתון טקסטורה">
 	    <include>Fade_MainBackgroundOverlay</include>
 	    <include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + !IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo">Slide1</include>
-		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,85.8" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="74.4,85.8" time="0">Conditional</animation>
 		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="74.7,85.8" time="0">Conditional</animation>
 		<aspectratio>stretch</aspectratio>
 		<height>1100</height>

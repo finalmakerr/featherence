@@ -869,7 +869,7 @@
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/youtube.png</thumb>
 		<property name="rinfo"></property>
-		<onclick>RunScript(script.featherence.service,,?mode=30)</onclick>
+		<onclick>RunScript(script.featherence.service,,?mode=32&amp;value=3)</onclick>
 		<visible>Container(100).Hasfocus(2)</visible>
 	  </item>
 	  <item id="39" description="">

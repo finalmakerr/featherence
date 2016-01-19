@@ -114,7 +114,7 @@
 		<aligny>top</aligny>
 		<include>LabelC1</include>
 		<wrapmultiline>true</wrapmultiline>
-		<height>70</height>
+		<height>60</height>
 		<width>600</width>
 	  </control>
 	  <control type="textbox" id="9" description="Hidden">
