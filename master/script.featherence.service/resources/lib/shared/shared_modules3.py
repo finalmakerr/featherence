@@ -262,7 +262,6 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	'''---------------------------'''
 	if not '9' in printpoint: return returned
 
-
 def menu_list(custom, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart):
 	if '1' in str(custom):
 		'''Add to favourites [Featherence]'''
@@ -794,8 +793,11 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					#x = x + space + str(name)
 					#x = clean_commonsearch(x)
 					#print 'testme ' + str(x)
-					addDir(str(i) + '.' + space + title_L[0], x, 3, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
-					'''---------------------------'''	
+					if 'O' in printpoint:
+						YoutubeSearch(name, url, desc, num, viewtype)
+						mode = 3
+					else:
+						addDir(str(i) + '.' + space + title_L[0], x, 3, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 				else:
 					if "&wallaNew=" in x:
 						x = x.replace("&wallaNew=","")
@@ -1071,6 +1073,9 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		x = x.replace('&videoDuration='+videoDuration+'&',"")
 		#notification(x,videoDuration,'',2000)
 	
+	if General_TVModeQuality == '1':
+		videoDefinition = 'high'
+		
 	if '&videoDefinition=' in x:
 		videoDefinition = regex_from_to(x, '&videoDefinition=', '&', excluding=True)
 		x = x.replace('&videoDefinition='+videoDefinition+'&',"")
@@ -1999,8 +2004,7 @@ def pluginend(admin):
 	------------------------------'''
 	if mode == None or ((url == None or len(url)<1) and mode < 100) or 1 + 1 == 3:
 		if addonID == 'plugin.video.featherence.kids' and General_Language == "":
-			try: CATEGORIES200(admin)
-			except: pass
+			CATEGORIES200()
 			xbmc.executebuiltin('AlarmClock(firstrun,RunScript(script.featherence.service,,?mode=32&value=40),00:01,silent)')
 			
 		else: CATEGORIES()
@@ -2196,7 +2200,7 @@ def pluginend(admin):
 	elif mode == 139:       
 		CATEGORIES139(name, iconimage, desc, fanart)
 	elif mode == 200:
-		CATEGORIES200(name, iconimage, desc, fanart)
+		CATEGORIES200()
 	
 	#10101+ = SUB-CATEGORIES2
 	elif mode == 10001:
@@ -2494,7 +2498,7 @@ def pluginend(admin):
 		
 	else: notification("?","","",1000)
 	
-	if mode != 17 and mode != 5 and mode != 21 and mode != 4 and mode != 9 and mode != 13: # and mode != 20
+	if mode != 17 and mode != 5 and mode != 21 and mode != 4 and mode != 9 and mode != 13 and mode != 3: # and mode != 20
 		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_TITLE)
 		#xbmcplugin.setContent(int(sys.argv[1]), 'tvshows')
 		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL, name)
@@ -2725,7 +2729,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 	'''------------------------------
 	---Save and Load your addon-design
 	------------------------------'''
-	printpoint = "" ; extra = "" ; formula = "" ; formula_ = "" ; path = "" ; file1 = "" ; file2 = "" ; file3 = "" ; returned = "" ; returned2 = ""; returned3 = "" ; y = "s" ; custommediaL = []
+	printpoint = "" ; extra = "" ; formula = "" ; formula_ = "" ; path = "" ; file = "" ; returned = "" ; returned2 = ""; returned3 = "" ; y = "s" ; custommediaL = [] ; list2_ = [] ; list2 = [] ; filesT_ = []
 	
 	if num == 's':
 		list = ['-> (Exit)']
@@ -2763,7 +2767,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		elif returned == 4: pass #REMOVE ALL
 		else: path = ""
 		
-		list2 = ['-> (Exit)']
+		list2 = ['-> (Exit)'] ; list2_ = ['-> (Exit)']
 		if returned == 1: list2.append('New')
 		elif returned == 3:
 			check = dialogyesno(addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8'), addonString_servicefeatherence(99).encode('utf-8')) #Share My Music buttons, Choose YES to learn how to share Your Music button
@@ -2778,7 +2782,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			'''read existing files'''
 			filesT = {}
 			AddonName = addonID.replace('plugin.video.', "", 1)
-			AddonName = AddonName + '_'
+			AddonName = AddonName + str(y) + '_'
 			for files in os.listdir(path):
 				filesname = ""
 				if '.zip' in files and not '.txt' in files:
@@ -2787,12 +2791,14 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 						if filesname != "" and filesname != None:
 							filesT_ = { filesname: files }
 							filesT.update(filesT_)
+							filedate = getFileAttribute(1, path + files, option="1")
+							list2_.append(filesname + space + '-(' + str(filedate) + ')')
 							list2.append(filesname)
 							extra = 'files' + space2 + to_utf8(files) + newline + 'filesname' + space2 + to_utf8(filesname)
-							print extra 
+							#print extra 
 							'''---------------------------'''
 			
-			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list2,0)
+			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list2_,0)
 			
 			if returned2 == -1: printpoint = printpoint + "9"
 			elif returned2 == 0: printpoint = printpoint + "8"
@@ -2804,80 +2810,91 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				elif returned == 3: printpoint = printpoint + "C" #TEMPLATES
 		
 				if "A" in printpoint:
-					formula = ""
-					if y == "s":
-						'''save all'''
-						min = 1
-						max = 11
-					else:
-						'''save one'''
-						min = int(num)
-						max = int(num) + 1
-					for i in range(min,max):
+					if returned2 > 1:
+						yesno = dialogyesno('Overwrite' + space + str(list2[returned2]) + '?','Choose YES to continue')
+						if yesno == 'skip': printpoint = printpoint + '9'
+					if not '9' in printpoint:
+						formula = ""
+						if y == "s":
+							'''save all'''
+							min = 1
+							max = 11
+						else:
+							'''save one'''
+							min = int(num)
+							max = int(num) + 1
+							
+						for i in range(min,max):
 
-						Custom_Playlist_ID_ = "Custom_Playlist" + str(i) + "_ID"
-						Custom_Playlist_Name_ = "Custom_Playlist" + str(i) + "_Name"
-						Custom_Playlist_Thumb_ = "Custom_Playlist" + str(i) + "_Thumb"
-						Custom_Playlist_Description_ = "Custom_Playlist" + str(i) + "_Description"
-						Custom_Playlist_Fanart_ = "Custom_Playlist" + str(i) + "_Fanart"
-						
-						Custom_Playlist_ID__ = getsetting(Custom_Playlist_ID_)
-						Custom_Playlist_Name__ = getsetting(Custom_Playlist_Name_)
-						Custom_Playlist_Thumb__ = getsetting(Custom_Playlist_Thumb_)
-						Custom_Playlist_Description__ = getsetting(Custom_Playlist_Description_)
-						Custom_Playlist_Fanart__ = getsetting(Custom_Playlist_Fanart_)
-						
-						if Custom_Playlist_ID__ == "":
+							Custom_Playlist_ID_ = "Custom_Playlist" + str(i) + "_ID"
+							Custom_Playlist_Name_ = "Custom_Playlist" + str(i) + "_Name"
+							Custom_Playlist_Thumb_ = "Custom_Playlist" + str(i) + "_Thumb"
+							Custom_Playlist_Description_ = "Custom_Playlist" + str(i) + "_Description"
+							Custom_Playlist_Fanart_ = "Custom_Playlist" + str(i) + "_Fanart"
 							
-							formula = Custom_Playlist_ID_ + "=5" + ""
-							formula = Custom_Playlist_Name_ + "=5" + ""
-							formula = Custom_Playlist_Thumb_ + "=5" + ""
-							formula = Custom_Playlist_Description_ + "=5" + ""
-							formula = Custom_Playlist_Fanart_ + "=5" + ""
-						
-						else:
-							formula = formula + newline + Custom_Playlist_ID_ + "=5" + Custom_Playlist_ID__
-							formula = formula + newline + Custom_Playlist_Name_ + "=5" + Custom_Playlist_Name__
-							x2 = TranslatePath(Custom_Playlist_Thumb__, filteroff=[featherenceserviceicons_path, skin_path])
-							if x2 != "":
-								y, y2, y3 = GeneratePath(x2)
-								copyfiles(x2, y2, chmod="", mount=False)
-								formula = formula + newline + Custom_Playlist_Thumb_ + "=5" + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3)
-								if os.path.exists(y2): custommediaL.append(y)
-							formula = formula + newline + Custom_Playlist_Description_ + "=5" + Custom_Playlist_Description__
-							x2 = TranslatePath(Custom_Playlist_Fanart__, filteroff=[featherenceserviceicons_path, skin_path])
-							if x2 != "":
-								y, y2, y3 = GeneratePath(x2)
-								copyfiles(x2, y2, chmod="", mount=False)
-								formula = formula + newline + Custom_Playlist_Fanart_ + "=5" + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3)
-								if os.path.exists(y2): custommediaL.append(y)
+							Custom_Playlist_ID__ = getsetting(Custom_Playlist_ID_)
+							Custom_Playlist_Name__ = getsetting(Custom_Playlist_Name_)
+							Custom_Playlist_Thumb__ = getsetting(Custom_Playlist_Thumb_)
+							Custom_Playlist_Description__ = getsetting(Custom_Playlist_Description_)
+							Custom_Playlist_Fanart__ = getsetting(Custom_Playlist_Fanart_)
 							
-					if returned2 == 1: filename = ""
-					else: filename = str(list2[returned2])
-					
-					filename = dialogkeyboard(filename, localize(21821), 0, "", "", "") #Description
-					if filename != 'skip' and filename != "":
-						formula = to_utf8(formula)
-					
-						write_to_file(featherenceservice_addondata_path + AddonName + ".txt", str(formula), append=False, silent=True, utf8=False) ; xbmc.sleep(200)
-						if not os.path.exists(featherenceservice_addondata_path + AddonName + ".txt"):
-							notification_common('17')
-							extra = extra + newline + featherenceservice_addondata_path + AddonName + ".txt" + space + 'Is not found!'
-						else:
-							removefiles(path + AddonName + to_unicode(list2[returned2]) + '.zip')
-							zipname = path + AddonName + str(filename).decode('utf-8')
-							if custommediaL == []:
-								CreateZip(featherenceservice_addondata_path, zipname, filteron=[AddonName + '.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=False)
+							if Custom_Playlist_ID__ == "":
+								
+								formula = formula + newline + Custom_Playlist_ID_ + "=5" + ""
+								formula = formula + newline + Custom_Playlist_Name_ + "=5" + ""
+								formula = formula + newline + Custom_Playlist_Thumb_ + "=5" + ""
+								formula = formula + newline + Custom_Playlist_Description_ + "=5" + ""
+								formula = formula + newline + Custom_Playlist_Fanart_ + "=5" + ""
+							
 							else:
-								CreateZip(featherenceservice_addondata_path, zipname, filteron=[AddonName + '.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
-								CreateZip(featherenceservice_addondata_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
-							notification(addonString_servicefeatherence(58).encode('utf-8'), str(filename), "", 4000) #Saved Succesfully!, 
-							'''---------------------------'''
-					else: notification_common('9') ; extra = extra + newline + 'filename is empty!'
-					
-					
-					
-				
+								formula = formula + newline + Custom_Playlist_ID_ + "=5" + Custom_Playlist_ID__
+								formula = formula + newline + Custom_Playlist_Name_ + "=5" + Custom_Playlist_Name__
+								x2 = TranslatePath(Custom_Playlist_Thumb__, filteroff=[featherenceserviceicons_path, skin_path])
+								if x2 != "":
+									y, y2, y3 = GeneratePath(x2)
+									copyfiles(x2, y2, chmod="", mount=False)
+									if os.path.exists(y2):
+										formula = formula + newline + Custom_Playlist_Thumb_ + "=5" + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3)
+										custommediaL.append(y)
+									else:
+										formula = formula + newline + Custom_Playlist_Thumb_ + "=5" + Custom_Playlist_Thumb__
+										
+								formula = formula + newline + Custom_Playlist_Description_ + "=5" + Custom_Playlist_Description__
+								x2 = TranslatePath(Custom_Playlist_Fanart__, filteroff=[featherenceserviceicons_path, skin_path])
+								if x2 != "":
+									y, y2, y3 = GeneratePath(x2)
+									copyfiles(x2, y2, chmod="", mount=False)
+									if os.path.exists(y2):
+										formula = formula + newline + Custom_Playlist_Fanart_ + "=5" + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3)
+										custommediaL.append(y)
+									else:
+										formula = formula + newline + Custom_Playlist_Fanart_ + "=5" + Custom_Playlist_Fanart__
+							
+							extra = extra + newline + 'i' + space2 + str(i) + space + 'Custom_Playlist_ID_' + space2 + str(Custom_Playlist_ID_) + space + 'Custom_Playlist_ID__' + space2 + str(Custom_Playlist_ID__)
+							
+						if returned2 == 1: filename = ""
+						else: filename = str(list2[returned2])
+						
+						filename = dialogkeyboard(filename, localize(21821), 0, "", "", "") #Description
+						if filename != 'skip' and filename != "":
+							formula = to_utf8(formula)
+						
+							write_to_file(featherenceservice_addondata_path + AddonName + ".txt", str(formula), append=False, silent=True, utf8=False) ; xbmc.sleep(200)
+							if not os.path.exists(featherenceservice_addondata_path + AddonName + ".txt"):
+								notification_common('17')
+								extra = extra + newline + featherenceservice_addondata_path + AddonName + ".txt" + space + 'Is not found!'
+							else:
+								removefiles(path + AddonName + to_unicode(list2[returned2]) + '.zip')
+								zipname = path + AddonName + str(filename).decode('utf-8')
+								if custommediaL == []:
+									CreateZip(featherenceservice_addondata_path, zipname, filteron=[AddonName + '.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=False)
+								else:
+									CreateZip(featherenceservice_addondata_path, zipname, filteron=[AddonName + '.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
+									CreateZip(featherenceservice_addondata_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
+								notification(addonString_servicefeatherence(58).encode('utf-8'), str(filename), "", 4000) #Saved Succesfully!, 
+								'''---------------------------'''
+						else: notification_common('9') ; extra = extra + newline + 'filename is empty!'
+						
 				elif "B" in printpoint or "C" in printpoint:
 					'''------------------------------
 					---Load/Templates----------------
@@ -2899,37 +2916,36 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 						if not os.path.exists(featherenceservice_addondata_path + AddonName + '.txt'):
 							notification(AddonName + ".txt is missing!", "Check your zip file!", "", 4000)
 						else:
-							printpoint = printpoint + "V"
-							print file
-							import fileinput
-							for line in fileinput.input(featherenceservice_addondata_path + AddonName + '.txt'):
-								x = "" ; x1 = "" ; x2 = "" ; x3 = ""
-								if "=5" in line:
-									'''setsetting'''
-									x = line.replace("=5","=")
-									x1 = find_string(x, "", "=")
-									x2 = find_string(x, "=", "")
-									x1 = x1.replace("=","")
-									x2 = x2.replace('=&', '&') #CLEAN STRINGS
-									x2 = x2.replace('\n', '') #CLEAN STRINGS
-									if not "_ID" in x:
-										'''Clean values for none ID lines'''
-										x2 = x2.replace("=","")
-										#x2 = x2.replace("\n","")
-									
-									x2 = CleanString2(x2, comma=True)
-									
-									if y == "":
-										count = 0
-										while count <= 10 and not xbmc.abortRequested:
-											if str(count) in x1:
-												x1 = x1.replace(str(count), str(num))
-												count = 40
-											else: count += 1
-									setsetting(str(x1), str(x2))
-									
-								extra = extra + newline + space + "line" + space2 + str(line) + space + "x" + space2 + str(x) + space + "x1" + space2 + str(x1) + space + "x2" + space2 + str(x2) + space + "x3" + space2 + str(x3)
-								'''---------------------------'''	
+							if y == 's':
+								yesno = dialogyesno('Overwrite All buttons?' + '?','Choose YES to continue')
+								if yesno == 'skip': printpoint = printpoint + '9'
+							else:
+								yesno = dialogyesno('Overwrite' + space + xbmc.getInfoLabel('ListItem.Label') + '?','Choose YES to continue')
+								if yesno == 'skip': printpoint = printpoint + '9'
+								
+							if not '9' in printpoint:
+								printpoint = printpoint + "V"
+								#print file
+								import fileinput
+								for line in fileinput.input(featherenceservice_addondata_path + AddonName + '.txt'):
+									x = "" ; x1 = "" ; x2 = "" ; x3 = ""
+									if "=5" in line:
+										'''setsetting'''
+										x1 = regex_from_to(line, 'Custom_Playlist', '=5', excluding=False)
+										x2 = line.replace(x1,"")
+										x2 = x2.replace('\n', '')
+										x1 = x1.replace('=5',"")
+										
+										
+										if y == "":
+											x1_ = regex_from_to(x1, 'Custom_Playlist', '_', excluding=True) #count
+											x1__ = x1.replace('Custom_Playlist' + x1_ + '_','Custom_Playlist' + str(num) + '_')
+											setsetting(str(x1__), str(x2))
+										else:
+											setsetting(str(x1), str(x2))
+										
+									extra = extra + newline + space + "line" + space2 + str(line) + space + "x " + space2 + str(x) + space + "x1" + space2 + str(x1) + space + "x2" + space2 + str(x2) + space + "x3" + space2 + str(x3)
+									'''---------------------------'''	
 		elif returned == 4:
 			'''------------------------------
 			---Remove-All-Buttons------------
@@ -2948,7 +2964,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				else: extra1 = ""
 				dialogok(localize(50) + space + addonString_servicefeatherence(43).encode('utf-8') + '[CR]' + str(name), "ID" + space2 + str(url), "", extra1)
 				'''---------------------------'''
-			
+		else: printpoint = printpoint + '9'	
 				
 	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
 		if not "Q" in printpoint and not "A" in printpoint:
@@ -2960,9 +2976,11 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 	
 	text = 'name_' + space2 + name + "_LV" + printpoint + space + newline + \
 	"path" + space2 + str(path) + newline + \
-	"file1" + space2 + str(file1) + newline + \
-	"file2" + space2 + str(file2) + newline + \
-	"file3" + space2 + str(file3) + newline + \
+	"list" + space2 + str(list) + space + 'returned' + space2 + str(returned) + newline + \
+	"list2" + space2 + str(list2) + space + 'returned2' + space2 + str(returned2) + newline + \
+	"list2_" + space2 + str(list2) + space + 'returned2_' + newline + \
+	"file" + space2 + str(file) + newline + \
+	"filesT_" + space2 + str(filesT_) + newline + \
 	"formula" + space2 + str(formula) + space + "formula_" + space2 + str(formula_) + newline + \
 	"extra" + space2 + str(extra)
 	printlog(title="AdvancedCustom", printpoint=printpoint, text=text, level=2, option="")

@@ -1,9 +1,20 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
-- Add more contents in English.
+
+------------------------
+Featherence Kids v0.2.1 (20-01-16)
+------------------------
+- Added about us section with useful information and contact tools.
+- Added contents in varied languages.
+- Added Remove-All-Buttons to My Kids script.
+- Added Search History option to smart search button.
+- Major bugs fix.
+- My kids button now support adding favourites items as well.
 - Update default sorting.
 - Update English language.
+- *Update saving/loading script to include local media when sharing.
+*Previous backups will not work!
 
 ------------------------
 Featherence Kids v0.2.0 (15-01-16)
@@ -22,7 +33,7 @@ Featherence Kids v0.2.0 (15-01-16)
 - Major bugs fix.
 - Major resorting of contents.
 - Major update of broken links.
-- Major update random play method.
+- Major update of random play button.
 - Reduce addon size.
 
 ------------------------

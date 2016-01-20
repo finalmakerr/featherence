@@ -55,7 +55,7 @@ def sendMail(Debug_Email, Debug_Password, subject, text, *attachmentFilePaths):
 	#if 1 + 1 == 2:
 	try:
 		dp = xbmcgui.DialogProgress()
-		dp.create(addonString(32068), addonString(10),"")
+		dp.create(addonString(32095), addonString(10),"")
 		while count == 0 and not dp.iscanceled() and not xbmc.abortRequested:
 			if '@gmail.com' in Debug_Email: mailServer = smtplib.SMTP('smtp.gmail.com', 587) #, timeout=20
 			else:
@@ -68,7 +68,7 @@ def sendMail(Debug_Email, Debug_Password, subject, text, *attachmentFilePaths):
 			msg['Subject'] = subject
 			msg.attach(MIMEText(text))
 			
-			dp.update(10,addonString(32069), addonString(32070) % ("1","4"))
+			dp.update(10,addonString(32094), addonString(32093) % ("1","4"))
 			if str(attachmentFilePaths) != "('',)":
 				for attachmentFilePath in attachmentFilePaths:
 					msg.attach(getAttachment(attachmentFilePath))
@@ -76,19 +76,19 @@ def sendMail(Debug_Email, Debug_Password, subject, text, *attachmentFilePaths):
 				pass
 				#msg.attach(getAttachment(addonIcon))
 			
-			dp.update(20,addonString(32069), addonString(32070) % ("1","4"))
+			dp.update(20,addonString(32094), addonString(32093) % ("1","4"))
 			#mailServer.ehlo()
 			mailServer.starttls()
-			dp.update(30,addonString(32069), addonString(32070) % ("2","4"))
+			dp.update(30,addonString(32094), addonString(32093) % ("2","4"))
 			mailServer.ehlo()
-			dp.update(40,addonString(32069), addonString(32070) % ("3","4"))
+			dp.update(40,addonString(32094), addonString(32093) % ("3","4"))
 			mailServer.login(Debug_Email, Debug_Password)	
-			dp.update(50,addonString(32069), addonString(32070) % ("3","4"))
+			dp.update(50,addonString(32094), addonString(32093) % ("3","4"))
 			
 			mailServer.sendmail(Debug_Email, recipient, msg.as_string())
 			mailServer.quit()
 			count += 1
-			dp.update(100,addonString(32069), addonString(32070) % ("4","4"))
+			dp.update(100,addonString(32094), addonString(32093) % ("4","4"))
 			notification(addonString(74483), localize(20186), "", 2000)
 			returned = 'ok'
 			'''---------------------------'''
@@ -96,7 +96,7 @@ def sendMail(Debug_Email, Debug_Password, subject, text, *attachmentFilePaths):
 	except Exception, TypeError:
 		try: mailServer.quit()
 		except: pass
-		notification(addonString(32071).encode('utf-8'), str(TypeError), "", 2000)
+		notification(addonString(32092).encode('utf-8'), str(TypeError), "", 2000)
 		
 		if "535, '5.7.8 Username and Password not accepted." in TypeError:
 			'''gmail'''
@@ -152,7 +152,7 @@ def SendDebug(Debug_Email, Debug_Password, Debug_Title, Debug_Message, Debug_Fil
 			notification_common("2")
 			SendDebug(Debug_Email, Debug_Password, Debug_Title, Debug_Message, Debug_File)
 		else:
-			returned = dialogyesno(addonString(32071).encode('utf-8'), addonString(21).encode('utf-8') + '[CR]' + str(TypeError))
+			returned = dialogyesno(addonString(32092).encode('utf-8'), addonString(21).encode('utf-8') + '[CR]' + str(TypeError))
 			if returned == 'ok': SendDebug(Debug_Email, Debug_Password, Debug_Title, Debug_Message, Debug_File)
 			else:
 				notification(localize(16200), addonString(10), "", 2000)
@@ -162,7 +162,7 @@ def SendDebug(Debug_Email, Debug_Password, Debug_Title, Debug_Message, Debug_Fil
 		'''------------------------------
 		---PRINT-MAIL-SUCUESS------------
 		------------------------------'''
-		dialogok(addonString(32067).encode('utf-8'), 'www.facebook.com/groups/featherence/', "" ,Debug_Message,line2c="yellow")
+		dialogok(addonString(32096).encode('utf-8'), 'www.facebook.com/groups/featherence/', "" ,Debug_Message,line2c="yellow")
 		setsetting('Debug_Title',"")
 		setsetting('Debug_Message',"")
 		setsetting('Debug_Email',Debug_Email)
@@ -177,19 +177,17 @@ def SendDebug(Debug_Email, Debug_Password, Debug_Title, Debug_Message, Debug_Fil
 	"Debug_File" + space2 + to_utf8(Debug_File) + extra
 	printlog(title='SendDebug', printpoint=printpoint, text=text, level=0, option="")
 	
-def upload_file(file):
+def upload_file(file, filesize):
 	name = 'upload_file' ; printpoint = "" ; TypeError = "" ; extra = ""
 	returned = "" ; paste_id = "" ; count = 0
 	import re, urllib2, json
 	
 	dp = xbmcgui.DialogProgress()
-	filesize = getFileAttribute(2, file, option=1)
-	print str(filesize)
-	dp.create(addonString(32072) % (str(os.path.basename(file))), addonString(10).encode('utf-8'),str(filesize) + 'MB')
+	dp.create(addonString(32090) % (str(os.path.basename(filesize))), addonString(10).encode('utf-8'),'')
 	
 	while count == 0 and not dp.iscanceled() and not xbmc.abortRequested:
 		file_content = open(file, 'rb').read()
-		dp.update(10,addonString(32069), addonString(32070) % ("1","4") + '[CR]' + str(filesize) + 'MB')
+		dp.update(10,addonString(32094), addonString(32093) % ("1","4") + '[CR]' + str(filesize))
 		for pattern, repl in REPLACES:
 			file_content = re.sub(pattern, repl, file_content)
 		post_dict = {
@@ -198,22 +196,22 @@ def upload_file(file):
 			'language': 'text',
 			'expire': 1209600,
 		}
-		dp.update(20,addonString(32069), addonString(32070) % ("1","4") + '[CR]' + str(filesize) + 'MB')
+		dp.update(20,addonString(32094), addonString(32093) % ("1","4") + '[CR]' + str(filesize))
 		post_data = json.dumps(post_dict)
 		headers = {
 			'User-Agent': '%s-%s' % (addonName, addonVersion),
 			'Content-Type': 'application/json',
 		}
-		dp.update(30,addonString(32069), addonString(32070) % ("2","4") + '[CR]' + str(filesize) + 'MB')
+		dp.update(30,addonString(32094), addonString(32093) % ("2","4") + '[CR]' + str(filesize))
 		req = urllib2.Request(UPLOAD_URL, post_data, headers)
-		dp.update(40,addonString(32069), addonString(32070) % ("3","4") + '[CR]' + str(filesize) + 'MB')
+		dp.update(40,addonString(32094), addonString(32093) % ("3","4") + '[CR]' + str(filesize))
 		try:
 			response = urllib2.urlopen(req, timeout=60)
 			response = response.read()
 		except Exception, TypeError:
 			extra = extra + newline + 'TypeError' + space2 + str(TypeError)
 			
-		dp.update(50,addonString(32069), addonString(32070) % ("3","4") + '[CR]' + str(filesize) + 'MB')
+		dp.update(50,addonString(32094), addonString(32093) % ("3","4") + '[CR]' + str(filesize))
 
 		try:
 			response_data = json.loads(response)
@@ -223,7 +221,7 @@ def upload_file(file):
 		if response_data and response_data.get('result', {}).get('id'):
 			paste_id = response_data['result']['id']
 			if paste_id != "":
-				dp.update(100,addonString(32069), addonString(32070) % ("4","4"))
+				dp.update(100,addonString(32094), addonString(32093) % ("4","4"))
 				printpoint = printpoint + '7'
 				returned = 'http://xbmclogs.com/' + paste_id
 		else:
@@ -240,7 +238,7 @@ def upload_file(file):
 	
 	dp.close
 	if 'timed out' in extra:
-		dialogok('Your %s is too big! (%s)' % (str(os.path.basename(file)), str(filesize) + 'MB'),'You should restart your Kodi and try again!','','')
+		dialogok('Your %s is too big!' % (str(filesize)),'You should restart your Kodi and try again!','','')
 		
 	return returned
 
@@ -253,12 +251,12 @@ def upload_file2(file):
 	import re, urllib, urllib2, json
 	
 	dp = xbmcgui.DialogProgress()
-	dp.create(addonString(32072), addonString(10),"")
+	dp.create(addonString(32090), addonString(10),"")
 	
 	while count == 0 and not dp.iscanceled() and not xbmc.abortRequested:
 		#file_content = getAttachment(file)
 		file_content = file
-		dp.update(10,addonString(32069), addonString(32070) % ("1","4"))
+		dp.update(10,addonString(32094), addonString(32093) % ("1","4"))
 		#'expire': 1209600,
 		post_dict = {
 			'key': api_imagebin_featherence,
@@ -266,19 +264,19 @@ def upload_file2(file):
 		}
 		post_dict = urllib.urlencode(post_dict)
 
-		dp.update(20,addonString(32069), addonString(32070) % ("1","4"))
+		dp.update(20,addonString(32094), addonString(32093) % ("1","4"))
 		
 		post_data = json.dumps(post_dict)
 		headers = {
 			'User-Agent': '%s-%s' % (addonName, addonVersion),
 			'Content-Type': 'application/json',
 		}
-		dp.update(30,addonString(32069), addonString(32070) % ("2","4"))
+		dp.update(30,addonString(32094), addonString(32093) % ("2","4"))
 		req = urllib2.Request(UPLOAD_URL2, post_data, headers)
-		dp.update(40,addonString(32069), addonString(32070) % ("3","4"))
+		dp.update(40,addonString(32094), addonString(32093) % ("3","4"))
 		print 'req' + space2 + str(req)
 		response = urllib2.urlopen(req).read()
-		dp.update(50,addonString(32069), addonString(32070) % ("3","4"))
+		dp.update(50,addonString(32094), addonString(32093) % ("3","4"))
 
 		try:
 			response_data = json.loads(response)
@@ -287,7 +285,7 @@ def upload_file2(file):
 		if response_data and response_data.get('result', {}).get('id'):
 			paste_id = response_data['result']['id']
 			if paste_id != "":
-				dp.update(100,addonString(32069), addonString(32070) % ("4","4"))
+				dp.update(100,addonString(32094), addonString(32093) % ("4","4"))
 				printpoint = printpoint + '7'
 				returned = 'http://imagebin.ca' + paste_id
 		else:

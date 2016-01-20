@@ -538,7 +538,7 @@ msgid "Maximum search items to keep in history"
 msgstr "מקסימום פריטי חיפוש לשימוש חוזר"
 
 msgctxt "#32048
-msgid "Need support? Want to say thanks to us?[CR]"
+msgid "Need support? Want to say thanks?[CR]"
 msgstr "צריך עזרה? רוצה לומר לנו תודה?[CR]"
 
 msgctxt "#32049
@@ -546,8 +546,8 @@ msgid "Note: You must join featherence group with your associated email account.
 msgstr "הערה: יש להצטרף לקבוצת פדרנס עם החשבון פייסבוק המקושר למייל זה."
 
 msgctxt "#32050
-msgid ""
-msgstr ""
+msgid "TV Mode Quality"
+msgstr "איכות מצב טלוויזיה"
 
 #Message
 msgctxt "#32060
@@ -575,44 +575,44 @@ msgid "Choose YES to continue"
 msgstr "בחר "כן" להמשך"
 
 msgctxt "#32066
-msgid "Doing so will create a post on Featherence facebook group"
-msgstr "פעולה זו תיצור פוסט חדש בקבוצת פדרנס בפייסבוק"
+msgid ""
+msgstr ""
 
 msgctxt "#32067
-msgid "Your message has been sent!"
-msgstr "הודעתך נשלחה בהצלחה!"
+msgid ""
+msgstr ""
 
 msgctxt "#32068
-msgid "Connecting to Facebook"
-msgstr "מתחבר לפייסבוק"
+msgid ""
+msgstr ""
 
 msgctxt "#32069
-msgid "Preparing the post"
-msgstr "מכין את הפוסט"
+msgid ""
+msgstr ""
 
 msgctxt "#32070"
-msgid "Progress (%s/%s)"
-msgstr "תהליך (%s/%s)"
+msgid ""
+msgstr ""
 
 msgctxt "#32071
-msgid "Operation Failed!"
-msgstr "הפעולה נכשלה!"
+msgid ""
+msgstr ""
 
 msgctxt "#32072
-msgid "Uploading file %s to xbmclogs.com"
-msgstr "מעלה קובץ %s ל-xbmclogs.com"
+msgid ""
+msgstr ""
 
 msgctxt "#32073
-msgid "Most recent updates"
-msgstr "עדכונים אחרונים"
+msgid ""
+msgstr ""
 
 msgctxt "#32074
-msgid ""
-msgstr ""
+msgid "Enable/Disable customs backgrounds for categories.[CR]If disable, the backgrounds will always be as default."
+msgstr "הפעל/נטרל רקעים שבחרת עבור קטגוריות בהרחבה.[CR]אם לא מופעל הרקעים יהיו תמיד ברירת מחדל!"
 
 msgctxt "#32075
-msgid ""
-msgstr ""
+msgid "Add a custom background to a category by pressing the menu button and "Set Custom Fanart"."
+msgstr "בחר רקע אישי לקטגורייה ע"י לחיצה על כפתור תפריט ו-"Set Custom Fanart"."
 
 msgctxt "#32076
 msgid ""
@@ -673,40 +673,40 @@ msgid "TV Channels in %s"
 msgstr "ערוצי טלוויזיה ב-%s"
 
 msgctxt "#32090
-msgid ""
-msgstr ""
+msgid "Uploading file %s to xbmclogs.com"
+msgstr "מעלה קובץ %s ל-xbmclogs.com"
 
 msgctxt "#32091
-msgid ""
-msgstr ""
+msgid "Most recent updates"
+msgstr "עדכונים אחרונים"
 
 msgctxt "#32092
-msgid ""
-msgstr ""
+msgid "Operation Failed!"
+msgstr "הפעולה נכשלה!"
 
 msgctxt "#32093
-msgid ""
-msgstr ""
+msgid "Progress (%s/%s)"
+msgstr "תהליך (%s/%s)"
 
 msgctxt "#32094
-msgid ""
-msgstr ""
+msgid "Preparing the post"
+msgstr "מכין את הפוסט"
 
 msgctxt "#32095
-msgid ""
-msgstr ""
+msgid "Connecting to Facebook"
+msgstr "מתחבר לפייסבוק"
 
 msgctxt "#32096
-msgid ""
-msgstr ""
+msgid "Your message has been sent!"
+msgstr "הודעתך נשלחה בהצלחה!"
 
 msgctxt "#32097
-msgid ""
-msgstr ""
+msgid "Doing so will create a post on Featherence facebook group"
+msgstr "פעולה זו תיצור פוסט חדש בקבוצת פדרנס בפייסבוק"
 
 msgctxt "#32098
-msgid ""
-msgstr ""
+msgid "Choose YES to continue"
+msgstr "בחר "כן" להמשך"
 
 msgctxt "#32099
 msgid ""
@@ -1911,6 +1911,22 @@ msgstr ""
 msgctxt "#32399
 msgid ""
 msgstr ""
+
+msgctxt "#32715"
+msgid "Warning: Internet Browsing"
+msgstr "אזהרה: גלישה באינטרנט"
+
+msgctxt "#32716"
+msgid "VERIFY YOU HAVE A KEYBOARD BEFORE PROCEEDING!"
+msgstr "אנא וודא שיש ברשותך עכבר/מקלדת לפני האישור!"
+
+msgctxt "#32717"
+msgid "Use the following keys in order to return:"
+msgstr "[COLOR=yellow]השתמש במקשים הבאים בכדי לסגור גלישה:[/COLOR]"
+
+msgctxt "#32718"
+msgid "ESC / ALT-TAB / ALT+F4"
+msgstr "ESC / ALT-TAB / ALT+F4"
 
 #Smart Playlist
 

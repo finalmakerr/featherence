@@ -35,9 +35,11 @@ except:
 try:
 	Search_History = getsetting('Search_History')
 	Search_Limit = getsetting('Search_Limit')
+	General_TVModeQuality = getsetting('General_TVModeQuality')
 except:
 	Search_History = ""
 	Search_Limit = ""
+	General_TVModeQuality = "0"
 
 Search_History_file = os.path.join(addondata_path, addonID, 'Search_History.txt')
 

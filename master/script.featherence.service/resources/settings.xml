@@ -35,7 +35,7 @@
       <setting label="32011" type="bool" id="recentitems_unplayed" subsetting="true" default="true" enable="eq(-1,true)"/>
 	</category>
 	
-	<category label="TOOLS" description="">
+	<category label="Tools" description="">
 		<setting type="lsep" label=""/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=6&amp;value=1)" label="Ping" visible="System.Platform.Windows | System.Platform.Linux | System.Platform.Linux.RaspberryPi"/>
 		<setting type="lsep" label="Total Mouse offer an easy access to your taskbar from within Kodi." visible="System.Platform.Windows + false"/>
@@ -55,19 +55,29 @@
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=19)" label="advancedSettings.xml" visible="false"/>
 	</category>
 	
-	<category label="DEBUG">
-	  <setting type="lsep" label="32048" visible="true"/>
-	  <setting type="lsep" label="32049" visible="true"/>
-	  <setting type="action" action="RunScript(script.featherence.service,,?mode=7)" label="Post at Featherence's facebook group!" option="close" visible=""/>
-	  <setting id="Debug_Email" type="text" default="" label="Gmail Email" visible="true"/>
-	  <setting id="Debug_Password" type="text" default="" label="Gmail Password" visible="true" option="hidden"/>
-	  <setting type="lsep" label="Turn it ON _ONLY_ if you're aware of the risks!![CR]" visible="true"/>
-	  <setting id="Debug_PasswordKeeper" type="bool" default="false" label="Save Password for future use" visible="true"/>
-	  
-	  <setting id="Debug_Name" type="text" default="" label="Debug_Name" visible="false"/>
+	<category label="About" description="About">
+		<setting type="lsep" label=""/>
+		<setting type="lsep" label="[B][COLOR=yellow]Featherence[/COLOR][/B][CR]"/>
+		<setting type="lsep" label="[B][COLOR=blue]Facebook[/COLOR][/B]: www.facebook.com/groups/featherence[CR]"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=1)" label="Featherence Facebook Group Website" option="close" visible="true"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32048] $ADDON[script.featherence.service 32049]" visible="true"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=7)" label="Post on Facebook!" option="close" visible=""/>
+		<setting type="lsep" label="[B][COLOR=blue]YouTube[/COLOR][/B]: www.youtube.com/user/finalmakerr[CR]"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=32&amp;value=3)" label="Featherence YouTube Channel" option="close" visible="true"/>
+		<setting type="lsep" label="[B][COLOR=blue]Github[/COLOR][/B]: www.github.com/finalmakerr/featherence[CR]"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=2)" label="Featherence Github Server" option="close" visible="true"/>
+		<setting type="lsep" label="[CR]$ADDON[script.featherence.service 32044]"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32045]"/>
+		<setting type="lsep" label=""/>
+	</category>
+	
+	<category label="Debug">
+	  <setting id="Debug_Email" type="text" default="" label="Gmail Email" visible="false"/>
+	  <setting id="Debug_Password" type="text" default="" label="Gmail Password" visible="false" option="hidden"/>
+	  <setting type="lsep" label="Turn it ON _ONLY_ if you're aware of the risks!![CR]" visible="false"/>
+	  <setting id="Debug_PasswordKeeper" type="bool" default="false" label="Save Facebook Password for future use" visible="false"/>
 	  <setting id="Debug_Title" type="text" default="" label="Debug_Title" visible="false"/>
 	  <setting id="Debug_Message" type="text" default="" label="Debug_Message" visible="false"/>
-	  <setting id="Debug_MailService" type="text" default="1" label="Debug_MailService" visible="false"/>
 	  <setting type="lsep" label=""/>
 	  <setting type="lsep" label="You better keep the DEBUG button off if you're not a developer!"/>
 	  <setting id="admin" type="bool" default="false" label="Debug" visible="true"/>

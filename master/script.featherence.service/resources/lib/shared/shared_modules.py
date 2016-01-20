@@ -264,15 +264,22 @@ def getFileAttribute(custom, file, option=""):
 	if not os.path.exists(file): printpoint = printpoint + "8"
 	elif custom == 1: #last modified
 		import time
-		returned = time.ctime(os.path.getmtime(file))
+		if option == '1':
+			returned = timenow.strftime("%d/%m/%y %H:%M") #date and time representation
+			
+		else:
+			returned = time.ctime(os.path.getmtime(file))
 		extra = extra + newline + "timenow5" + space2 + str(timenow5)
 		
 	elif custom == 2: #size
 		returned = os.path.getsize(file)
 		if option == 1:
-			returned = returned / 1000000
+			#returned = (returned // 100000)%10
+			returned = (returned // 100000)*0.10
+			
 	text = "custom" + space2 + str(custom) + space + "file" + space2 + str(file) + newline + \
-	"returned" + space2 + str(returned) + extra
+	"returned" + space2 + str(returned) + newline + \
+	'option' + space2 + str(option) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	return returned
 
@@ -1559,7 +1566,17 @@ def installaddonP(admin, addon, update=True):
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
 		
-	elif addon == 'script.openelec.rpi.config':
+	elif addon == 'browser.chromium-browser':
+		
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			fileID = getfileID(addon+".zip")
+			DownloadFile("http://unofficial.addon.pro/addons/4.1/Generic/x86_64/browser.chromium-browser/browser.chromium-browser-4.1.4.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'browser.chromium-browser':
 		
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			fileID = getfileID(addon+".zip")

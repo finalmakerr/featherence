@@ -53,16 +53,16 @@
 	<control type="group" description="חלון הגדרות כפתור">
       <posx>720</posx>
       <posy>340</posy>
-	  <animation condition="Window.IsVisible(DialogKeyboard.xml)" effect="slide" start="0,0" end="35,-345" time="0,0">Conditional</animation>
-	  <animation condition="Window.IsVisible(DialogKeyboard.xml)" effect="zoom" start="100,100" end="91,107" time="0,0">Conditional</animation>
-	  <visible>!SubString(Control.GetLabel(311),password) + !SubString(Control.GetLabel(311),$LOCALIZE[733]) + Window.IsVisible(DialogKeyboard.xml) | !Window.IsVisible(DialogKeyboard.xml)</visible>
+	  <animation condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)" effect="slide" start="0,0" end="35,-345" time="0,0">Conditional</animation>
+	  <animation condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)" effect="zoom" start="100,100" end="91,107" time="0,0">Conditional</animation>
+	  <visible>!SubString(Control.GetLabel(311),password) + !SubString(Control.GetLabel(311),$LOCALIZE[733]) + Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml) | ![Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)]</visible>
       <control type="image" description="מסגרת">
         <include>Fade_CenterMenuOverlay</include>
 		<include>Border_Common</include>
 		<height>410</height>
 		<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
 		<width>480</width>
-		<visible>!Window.IsVisible(DialogKeyboard.xml)</visible>
+		<visible>![Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)]</visible>
       </control>
 	  <control type="image" description="מסגרת">
         <include>Fade_CenterMenuOverlay</include>
@@ -70,12 +70,12 @@
 		<height>410</height>
 		<texture border="40" colordiffuse="$VAR[KeyboardMainColor]">buttons/ButtonE0.png</texture>
 		<width>480</width>
-		<visible>Window.IsVisible(DialogKeyboard.xml)</visible>
+		<visible>Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)</visible>
       </control>
 	  <include>ArrowsUpDown</include>
 	  <control type="list" id="9005">
-		<onright condition="Window.IsVisible(DialogKeyboard.xml)">309</onright>
-		<onleft condition="Window.IsVisible(DialogKeyboard.xml)">300</onleft>
+		<onright condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)">309</onright>
+		<onleft condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)">300</onleft>
 		<onup>9005</onup>
 		<ondown>9005</ondown>
 		<height>355</height>
@@ -85,7 +85,7 @@
 		<scrolltime>40</scrolltime>
 		<include>MenuDesign_Center2_</include>
 		
-		<include condition="Window.IsVisible(DialogKeyboard.xml)">CenterMenuContent_DialogKeyboard</include>
+		<include condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)">CenterMenuContent_DialogKeyboard</include>
 		<content>
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(Button.ID_) + !StringCompare(Window(home).Property(Button.ID),N/A)">SubContent_X90</include>
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),90)">SubContent_90</include>

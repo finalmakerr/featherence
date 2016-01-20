@@ -13,6 +13,8 @@ class SendDebug:
 	'''Current_Name'''
 	returned = dialogkeyboard(Debug_Email, 'Gmail Email (related to facebook)', 0, '1', '', '')
 	if returned == 'skip': notification_common("3")
+	elif not '@gmail.com' in Debug_Email:
+		notification('Error email is not supported!',str(returned),'',2000)
 	else:
 		Debug_Email = to_utf8(returned.lower())
 		setsetting('Debug_Email',Debug_Email)
@@ -38,7 +40,22 @@ class SendDebug:
 							Debug_File = setPath(type=1,mask="pic", folderpath="")
 						
 					'''include kodi.log'''
-					list = ["",'Include kodi.log', 'Include kodi.old.log']
+					list = ["None"]
+					for x in [file1, file2]:
+						filesize = 0
+						x_ = str(os.path.basename(x))
+						if os.path.exists(x):
+							filesize = getFileAttribute(2, file1, option=1)
+							
+							if filesize <= 5:
+								x_ = '' + str(x_) + space + '(' + str(filesize) + 'MB' + ')' + ''
+							else:
+								x_ = '[COLOR=red]' + x_ + '[/COLOR]'
+						else:
+							x_ = '[COLOR=red]' + x_ + space + 'Not Found!' + '[/COLOR]'
+							
+						list.append(x_)
+						
 					returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)	
 					if returned == -1: printpoint = printpoint + "9"
 					elif returned == 0: file = ""
@@ -47,13 +64,14 @@ class SendDebug:
 						elif returned == 2: file = file2
 						
 						if file != "":
-							file = upload_file(file)
+							file = upload_file(file, value)
 							file = to_utf8(file)
 							
-					Debug_Message = Debug_Title + newline + newline + Debug_Message + newline + newline + file
+					#Debug_Message = Debug_Title + newline + newline + Debug_Message + newline + newline + file
+					Debug_Message = newline + Debug_Message + newline + newline + file
 
 					'''send debug prompt'''
-					returned = dialogyesno(addonString(32065), addonString(32066))
+					returned = dialogyesno(addonString(32098), addonString(32097))
 					if returned == 'skip': notification('$LOCALIZE[257]',addonString(10).encode('utf-8'),"",2000)
 					elif returned == 'ok':
 						SendDebug(Debug_Email, Debug_Password, Debug_Title, Debug_Message, Debug_File)

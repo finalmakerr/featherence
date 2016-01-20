@@ -2,6 +2,7 @@
 WIP (WORK IN PROGRESS)--
 ------------------------
 - None.
+- Toggle HD in TV mode / Random.
 
 ------------------------
 Featherence Service v0.1.0 (09-Dec-15)

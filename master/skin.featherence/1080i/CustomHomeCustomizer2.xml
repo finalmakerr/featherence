@@ -79,7 +79,6 @@
 		  </content>
 		</control>
     </control>
-
+	<include>TopInformation</include>
 </controls>
-
 </window>

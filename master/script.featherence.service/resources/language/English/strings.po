@@ -538,7 +538,7 @@ msgid "Maximum search items to keep in history"
 msgstr "מקסימום פריטי חיפוש לשימוש חוזר"
 
 msgctxt "#32048
-msgid "Need support? Want to say thanks to us?[CR]"
+msgid "Need support? Want to say thanks?[CR]"
 msgstr "צריך עזרה? רוצה לומר לנו תודה?[CR]"
 
 msgctxt "#32049
@@ -546,8 +546,8 @@ msgid "Note: You must join featherence group with your associated email account.
 msgstr "הערה: יש להצטרף לקבוצת פדרנס עם החשבון פייסבוק המקושר למייל זה."
 
 msgctxt "#32050
-msgid ""
-msgstr ""
+msgid "TV Mode Quality"
+msgstr "איכות מצב טלוויזיה"
 
 #Message
 msgctxt "#32060

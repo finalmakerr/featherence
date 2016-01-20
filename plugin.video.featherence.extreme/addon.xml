@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.featherence.extreme" version="0.1.2" name="Featherence Extreme" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.extreme" version="0.1.3" name="Featherence Extreme" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.youtube" version="5.1.0"/>
@@ -11,12 +11,15 @@
 	<platform>all</platform>
 	<summary lang="en">Watch sport extreme videos.</summary>
 	<summary lang="he">צפה בסרטוני ספורט אקסטרים.</summary>
-    <description lang="en"></description>
-	<description lang="he"></description>
+    <description lang="en">Features:
+- Smart TV Mode and Randomise Play.
+- Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox...
+- Smart Search button.
+- Sorted and Organized contents.</description>
     <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<email>featherence@groups.facebook.com</email>
 	<forum></forum>
-	<source></source>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.extreme</source>
 	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>

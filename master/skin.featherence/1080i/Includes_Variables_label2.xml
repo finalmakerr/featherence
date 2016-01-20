@@ -168,7 +168,7 @@
 	<value condition="Skin.String(background96)">$INFO[Skin.String(background96)]</value>
   </variable>
   <variable name="background97">
-    <value condition="!Skin.HasSetting(wbackground97)">special://skin/backgrounds/weather/$INFO[Weather.FanartCode]/fanart.jpg</value>
+    <value condition="!Skin.HasSetting(wbackground97) | Window.IsVisible(MyWeather.xml)">special://skin/backgrounds/weather/$INFO[Weather.FanartCode]/fanart.jpg</value>
 	<value condition="!Skin.String(background97)">special://skin/backgrounds/background97.jpg</value>
 	<value condition="Skin.String(background97)">$INFO[Skin.String(background97)]</value>
   </variable>

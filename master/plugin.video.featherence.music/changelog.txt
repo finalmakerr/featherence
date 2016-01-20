@@ -5,13 +5,14 @@ WIP (WORK IN PROGRESS)--
 - Add foreign singers, karaoke, liveshows.
 
 ------------------------
-Featherence Music v0.2.0 (xx-01-16)
+Featherence Music v0.2.0 (21-01-16)
 ------------------------
+- Added about us section with useful information and contact tools.
 - Added classical music category.
 - Added next page button to some categories.
 - Added 200+ songs to Four in the afternoon Amir Elgazar's playlist.
 - Added search history.
-- Major update of random play.
+- Major update of random play button.
 - Minor bugs fix.
 - My music button now support adding favourites items as well.
 - *Update saving/loading script to include local media when sharing.

@@ -23,6 +23,11 @@
     <value condition="StringCompare(ListItem.Label,..)">$VAR[VideoInformation2]</value>
 	<value>buttons/ButtonA0.png</value>
   </variable>
+  <variable name="InternetKeyboardButton">
+    <value condition="SubString(Control.GetLabel(311),YouTube) | SubString(Control.GetLabel(311),Add URL)">YouTube</value>
+	<value condition="SubString(Control.GetLabel(311),thumb)">Google</value>
+	<value condition="SubString(Control.GetLabel(311),fanart)">Google</value>
+  </variable>
   <variable name="Button9090" description="כפתור קצה">
   	<value description="סרטים שנוספו לאחרונה" condition="Control.IsVisible(311) + !Skin.HasSetting(MoviesShelfWL) + !Player.HasVideo">$LOCALIZE[20386]</value>
 	<value description="סרטים שלא נצפו" condition="Control.IsVisible(311) + Skin.HasSetting(MoviesShelfWL) + !Player.HasVideo">$LOCALIZE[71030]</value>

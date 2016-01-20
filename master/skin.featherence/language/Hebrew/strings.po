@@ -2657,22 +2657,6 @@ msgctxt "#79213"
 msgid "Telephone"
 msgstr "טלפון"
 
-msgctxt "#79215"
-msgid "Warning: Internet Browsing"
-msgstr "אזהרה: גלישה באינטרנט"
-
-msgctxt "#79216"
-msgid "VERIFY YOU HAVE A KEYBOARD BEFORE PROCEEDING!"
-msgstr "אנא וודא שיש ברשותך עכבר/מקלדת לפני האישור!"
-
-msgctxt "#79217"
-msgid "Use the following keys in order to return:"
-msgstr "[COLOR=yellow]השתמש במקשים הבאים בכדי לסגור גלישה:[/COLOR]"
-
-msgctxt "#79218"
-msgid "ESC / ALT-TAB / ALT+F4"
-msgstr "ESC / ALT-TAB / ALT+F4"
-
 msgctxt "#79219"
 msgid "Send debug"
 msgstr "שלח DEBUG"
