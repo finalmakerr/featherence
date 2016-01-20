@@ -1690,8 +1690,8 @@ elif mode >= 200 and mode <= 249:
 		------------------------------'''
 		from variables2 import *
 		name = "Save and Load your skin design"
-		extra = "" ; formula = "" ; formula_ = "" ; path = "" ; filename = "" ; returned = "" ; custommediaL = []
-		list = ['-> (Exit)', 'Save', 'Load', 'Templates']
+		extra = "" ; formula = "" ; formula_ = "" ; path = "" ; filename = "" ; returned = "" ; returned2 = ""
+		list = ['-> (Exit)', 'Save', 'Load', 'Templates'] ; list2 = [] ; custommediaL = []
 		
 		if list != []:
 			returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
@@ -1707,8 +1707,10 @@ elif mode >= 200 and mode <= 249:
 			elif returned == 3 or (returned == "" and value == "Templates"): path = os.path.join(featherenceservice_path, 'resources', 'skin_templates', '')
 			else: path = ""
 			
-			list2 = ['-> (Exit)']
-			if returned == 1: list2.append('New')
+			list2 = ['-> (Exit)'] ; list2_ = ['-> (Exit)']
+			if returned == 1:
+				list2.append('New')
+				list2_.append('New')
 			
 			if path != "":
 				'''read existing files'''
@@ -1722,11 +1724,13 @@ elif mode >= 200 and mode <= 249:
 								filesT_ = { filesname: files }
 								filesT.update(filesT_)
 								list2.append(filesname)
+								filedate = getFileAttribute(1, path + files, option="1")
+								list2_.append(filesname + space + '-(' + str(filedate) + ')')
 								extra = 'files' + space2 + to_utf8(files) + newline + 'filesname' + space2 + to_utf8(filesname)
-								print extra 
+								#print extra 
 								'''---------------------------'''
 			
-			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list2,0)
+			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list2_,0)
 			
 			if returned2 == -1: printpoint = printpoint + "9"
 			elif returned2 == 0: printpoint = printpoint + "8"
@@ -1842,8 +1846,8 @@ elif mode >= 200 and mode <= 249:
 						for y in list0c:
 							x = xbmc.getInfoLabel('Skin.String('+y+')')
 							x2 = xbmc.getInfoLabel('Skin.String('+y+'.name)')
-							formula = formula + newline + y+'=1' + str(x)
-							formula = formula + newline + y+'.name'+'=1' + str(x2)
+							formula = formula + newline + y+'=0' + str(x)
+							formula = formula + newline + y+'.name'+'=0' + str(x2)
 							'''---------------------------'''
 						
 						Custom1000(str(list[returned]),70,str(list2[returned2]),5)
@@ -1981,7 +1985,7 @@ elif mode >= 200 and mode <= 249:
 				if "V" in printpoint:
 					#mode215('_',admin,'','') ; xbmc.sleep(3000)
 					xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_)')
-					xbmc.executebuiltin('Action(Back)')
+					#xbmc.executebuiltin('Action(Back)')
 					xbmc.sleep(2000)
 					returned = dialogyesno('Your current language is %s' % (systemlanguage), 'Does the buttons are in %s?' % (systemlanguage))
 					if returned == 'skip':
@@ -1993,7 +1997,7 @@ elif mode >= 200 and mode <= 249:
 				else:
 					pass
 					#Custom1000(str(list[returned]),100,str(list2[returned2]),0)
-					
+				Custom1000(str(list[returned]),100,str(list2[returned2]),0)
 		text = "path" + space2 + str(path) + newline + \
 		"list" + space2 + str(list) + space + 'returned' + space2 + str(returned) + newline + \
 		"list2" + space2 + str(list2) + space + 'returned2' + space2 + str(returned2) + newline + \

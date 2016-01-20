@@ -23,14 +23,17 @@ def mode0(admin, name, printpoint):
 	#dp.create("featherence Texture-Cache-Removal", "Removing Datebase", "why are we here?[CR]test is here ssssssssssssssssssssssssssssssssssssssssssssssssssss ")
 	#terminal('killall -9 kodi.bin',desc="", remote=True)
 	from debug2 import *
-	from debug3 import *
-	subject = 'test'
-	text = 'test2'
+	#from debug3 import *
+	#subject = 'test'
+	#text = 'test2'
 	file = 'C:\\Users\\gal\\AppData\\Roaming\\Kodi\\1941146-1920x1080-[DesktopNexus.com]_.jpg'
 	#file = to_unicode(file)
 	#file = ""
-	upload_file2(file)
+	#upload_file2(file)
 	#sendMail(Debug_Email, Debug_Password, subject, text, file)
+	if os.path.exists(file1):
+		filesize = getFileAttribute(1, file1, option=1)
+		
 	
 def mode5(value, admin, name, printpoint):
 	'''------------------------------
@@ -871,6 +874,8 @@ def mode32(value, admin, name, printpoint):
 		'''Featherence YouTube channel'''
 		xbmc.executebuiltin('ActivateWindow(10025,plugin://plugin.video.youtube/user/finalmakerr/),returned')			
 		setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=True)
+	elif value == '4':
+		pass
 		
 	elif value == '5':
 		ReloadSkin(admin)
@@ -942,7 +947,8 @@ def mode40(value, admin, name, printpoint):
 		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=RESET)') ; xbmc.sleep(7000)
 		xbmc.executebuiltin('Action(Back)') ; xbmc.sleep(500) ; customhomecustomizerW = xbmc.getCondVisibility('Window.IsVisible(CustomHomeCustomizer.xml)')
 		if not customhomecustomizerW: xbmc.executebuiltin('ActivateWindow(1171)')
-
+	
+	text = ''
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 			
 def mode41(admin, name, printpoint):
@@ -2854,7 +2860,7 @@ def mode212(value, admin, name, printpoint):
 		if '1' in value:
 			if not "_" in property_subbuttonid_: printpoint = printpoint + "9C"
 			if not "_" in property_subbuttonid_: printpoint = printpoint + "9D"
-			if not property_buttonid_ in property_subbuttonid_: printpoint = printpoint + "9E"
+			if not property_buttonid in property_subbuttonid_: printpoint = printpoint + "9E"
 		if 'B' in value and property_buttonid != property_buttonid_:
 			from variables2 import idT, labelT
 			two = 2
@@ -3256,7 +3262,6 @@ def mode218(value, admin, name, printpoint):
 
 		header = name
 		diaogtextviewer(header,message)
-
 							
 def mode220(admin, name, printpoint):
 	'''------------------------------
@@ -3403,7 +3408,6 @@ def mode232(value, admin, name, printpoint):
 				else:
 					if 'x1' in printpoint and not '_' in id1: setSkinSetting('0','label'+id1+'_90',str(xlabel))
 					
-	
 	text = "value" + space2 + str(value) + space + "property_buttonid" + space2 + str(property_buttonid) + newline + \
 	"id1" + space2 + str(id1) + space + "id2" + space2 + str(id2) + newline + \
 	extra
@@ -5602,29 +5606,35 @@ def mode512(value, admin, name, printpoint):
 	'''------------------------------
 	---INTERNET-BUTTON---------------
 	------------------------------'''
-	if value == '0':
-		name = localize(443)
-		if systemplatformwindows: terminal('start /max www.google.co.il','')
-		elif systemplatformandroid: terminal('adb shell am start -a android.intent.action.VIEW -d http://www.google.co.il','')
-		elif systemplatformlinux:
-			#returned = supportcheck(name, ["A","B"], 1, Intel=True, platform="456")
-			returned = 'ok'
+	url = ""
+	if value == '0': url = 'www.google.co.il'
+	elif value == '1': url = 'www.facebook.com/groups/featherence'
+	elif value == '2': url = 'www.github.com/finalmakerr/featherence'
+	elif value == '3': url = 'www.youtube.com'
+	elif value == '4': url = 'https://www.google.co.il/imghp?hl=iw&tab=wi' #Thumbnail
+	elif value == '5': url = 'https://www.google.co.il/imghp?hl=iw&tab=wi' #Fanart
+	
+	name = localize(443)
+	if systemplatformwindows: terminal('start /max '+url+'','')
+	elif systemplatformandroid: terminal('adb shell am start -a android.intent.action.VIEW -d '+url+'','')
+	elif systemplatformlinux:
+		#returned = supportcheck(name, ["A","B"], 1, Intel=True, platform="456")
+		returned = 'ok'
+		if returned == "ok":
+			returned = dialogyesno(addonString(32715).encode('utf-8'),addonString(32716).encode('utf-8'))
 			if returned == "ok":
-				returned = dialogyesno(localize(79215),localize(79216))
-				if returned == "ok":
-					addon = 'browser.chromium-browser'
-					if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
-						notification(localize(79217), localize(79218), "", 4000)
-						settingschange('SystemSettings','input.enablemouse','1','no',xbmc.getInfoLabel('$LOCALIZE[14094]'),xbmc.getInfoLabel('$LOCALIZE[21369]'))
-						xbmc.sleep(1000)
-						if not systemplatformwindows: xbmc.executebuiltin('RunAddon(browser.chromium-browser)')
-						'''---------------------------'''
-					else: installaddon(admin, addon, update=True)
-				else:
-					notification_common("8")
-					#settingschange('SystemSettings','input.enablemouse','0','no',xbmc.getInfoLabel('$LOCALIZE[14094]'),xbmc.getInfoLabel('$LOCALIZE[21369]'))
+				addon = 'browser.chromium-browser'
+				if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
+					notification(addonString(32717).encode('utf-8'), addonString(32718).encode('utf-8').encode('utf-8'), "", 4000)
+					settingschange('SystemSettings','input.enablemouse','1','no',localize(14094),localize(21369))
+					xbmc.sleep(1000)
+					if not systemplatformwindows: xbmc.executebuiltin('RunAddon(browser.chromium-browser)')
 					'''---------------------------'''
-		else: notification_common('25')
+				else: installaddon(admin, addon, update=True)
+			else:
+				notification_common("8")
+	else: notification_common('25')
+		
 def mode513(value, admin, name, printpoint):
 	'''------------------------------
 	---VIDEOS-BUTTON-----------------
@@ -10017,13 +10027,12 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=Fals
 		if "day," in number2S: number2S = number2S.replace(" day, 0:00:00","",1)
 		elif "days," in number2S: number2S = number2S.replace(" days, 0:00:00","",1)
 		else: number2S = "0"
-		if admin: notification("number2S:" + number2S,"","",2000)
 		number2N = int(number2S)
 		'''---------------------------'''
 		if number2N == 0: header = '[COLOR=yellow]' + localize(79201) + space + localize(33006) + " - " + Skin_Version + '[/COLOR]'
 		elif number2N == 1: header = '[COLOR=green]' + localize(79201) + space + addonString_servicefeatherence(5).encode('utf-8') + " - " + Skin_Version + '[/COLOR]'
 		elif number2N <= 7: header = '[COLOR=purple]' + localize(79201) + space + addonString_servicefeatherence(6).encode('utf-8') + " - " + Skin_Version + '[/COLOR]'
-		elif force == True: header = addonString(32073).encode('utf-8') + space + space5 + Skin_Version
+		elif force == True: header = addonString(32091).encode('utf-8') + space + space5 + Skin_Version
 		else: header = ""
 		'''---------------------------'''
 		if os.path.exists(skinlog_file):

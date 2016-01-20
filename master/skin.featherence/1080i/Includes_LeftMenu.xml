@@ -142,8 +142,6 @@
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 30)">Skin.SetString(MoviesTVCoversOverlay, 20)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 20)">Skin.SetString(MoviesTVCoversOverlay, 10)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 10)">Skin.SetString(MoviesTVCoversOverlay, )</onclick>
-		  <!--<onclick>ActivateWindow(Home.xml)</onclick>
-		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>-->
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 		<control type="radiobutton" id="107" description="SelectedZoom">
@@ -339,17 +337,9 @@
 	  <onclick>SettingsLevelChange</onclick>
 	  <visible>Window.IsVisible(SettingsCategory.xml)</visible>
 	</control>
+	<include>button120_updatelibrary</include>
 	<include>button123_enablefanart</include>
-    <control type="togglebutton" id="120" description="Update library">
-	  <include>SideMenuCommon</include>
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-	  <font>size28</font>
-	  <label>653</label>
-	  <altlabel>13353</altlabel>
-	  <onclick>UpdateLibrary(video)</onclick>
-	  <usealttexture>library.isscanningvideo</usealttexture>
-	</control>
+    
   </include>
   
   <include name="LeftMenuMyVideoNav" description="חלון צד תצוגת וידאו">
@@ -416,18 +406,7 @@
 	  <visible>Control.IsEnabled(20) + !SubString(Container.FolderPath,sources://video/) + !SubString(Container.FolderPath,special://home/) + !SubString(Container.FolderPath,special://userdata/library/videos) + !SubString(Container.FolderPath,/var/media/) + !SubString(Container.FolderPath,sources://video/)</visible>
 	  <visible>!Window.IsVisible(SettingsCategory.xml)</visible>
 	</control>
-
-	<control type="togglebutton" id="120" description="Update library">
-	  <visible>!Control.IsEnabled(20) + SubString(Container.FolderPath,plugin://plugin.video.genesis)</visible>
-	  <include>SideMenuCommon</include>
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-	  <font>size28</font>
-	  <label>653</label>
-	  <altlabel>13353</altlabel>
-	  <onclick>UpdateLibrary(video)</onclick>
-	  <usealttexture>library.isscanningvideo</usealttexture>
-	</control>
+	<!--<include>button120_updatelibrary</include>-->
 	<include condition="SubString(Container.FolderPath,special://userdata/library/videos) | SubString(Container.FolderPath,/var/media/) | SubString(Container.FolderPath,special://home/external/) | SubString(Container.FolderPath,sources://video/)">FileManagerButton</include>
   </include>  
   
@@ -809,6 +788,8 @@
 	  <texturenofocus>-</texturenofocus>
 	  <width>480</width>
 	</control>
+	<include>button120_updatelibrary</include>
+	<!--<include>button123_enablefanart</include>-->
 	<control type="button" id="129" description="הגדרות">
 	  <include>SideMenuCommon</include>
 	  <font>size28</font>
@@ -1272,6 +1253,18 @@
 	    <onclick>Skin.ToggleSetting(background2)</onclick>
 		<!--<visible>!StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart) | !Control.IsVisible(7013)</visible>-->
 	  </control>
+  </include>
+  <include name="button120_updatelibrary">
+	<control type="togglebutton" id="120" description="Update library">
+	  <include>SideMenuCommon</include>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
+	  <label>653</label>
+	  <altlabel>13353</altlabel>
+	  <onclick>UpdateLibrary(video)</onclick>
+	  <usealttexture>library.isscanningvideo</usealttexture>
+	</control>
   </include>
   <include name="openViewSettings9001">
 	  <control type="radiobutton" id="99" description="Toggle Main/View LeftMenu">

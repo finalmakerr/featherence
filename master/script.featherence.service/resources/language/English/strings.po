@@ -542,8 +542,8 @@ msgid "Need support? Want to say thanks to us?[CR]"
 msgstr "צריך עזרה? רוצה לומר לנו תודה?[CR]"
 
 msgctxt "#32049
-msgid ""
-msgstr ""
+msgid "Note: You must join featherence group with your associated email account."
+msgstr "הערה: יש להצטרף לקבוצת פדרנס עם החשבון פייסבוק המקושר למייל זה."
 
 msgctxt "#32050
 msgid ""
@@ -575,44 +575,44 @@ msgid "Choose YES to continue"
 msgstr "בחר "כן" להמשך"
 
 msgctxt "#32066
-msgid "Doing so will make a post on Featherence facebook group"
-msgstr "פעולה זו תיצור פוסט חדש בקבוצת פדרנס בפייסבוק"
+msgid ""
+msgstr ""
 
 msgctxt "#32067
-msgid "Your message has been sent!"
-msgstr "הודעתך נשלחה בהצלחה!"
+msgid ""
+msgstr ""
 
 msgctxt "#32068
-msgid "Connecting to Facebook"
-msgstr "מתחבר לפייסבוק"
+msgid ""
+msgstr ""
 
 msgctxt "#32069
-msgid "Preparing the post"
-msgstr "מכין את הפוסט"
+msgid ""
+msgstr ""
 
 msgctxt "#32070"
-msgid "Progress (%s/%s)"
-msgstr "תהליך (%s/%s)"
+msgid ""
+msgstr ""
 
 msgctxt "#32071
-msgid "Operation Failed!"
-msgstr "הפעולה נכשלה!"
+msgid ""
+msgstr ""
 
 msgctxt "#32072
-msgid "Uploading file %s to xbmclogs.com"
-msgstr "מעלה קובץ %s ל-xbmclogs.com"
+msgid ""
+msgstr ""
 
 msgctxt "#32073
 msgid ""
 msgstr ""
 
 msgctxt "#32074
-msgid ""
-msgstr ""
+msgid "Enable/Disable customs backgrounds for categories.[CR]If disable, the backgrounds will always be as default."
+msgstr "הפעל/נטרל רקעים שבחרת עבור קטגוריות בהרחבה.[CR]אם לא מופעל הרקעים יהיו תמיד ברירת מחדל!"
 
 msgctxt "#32075
-msgid ""
-msgstr ""
+msgid "Add a custom background to a category by pressing the menu button and "Set Custom Fanart"."
+msgstr "בחר רקע אישי לקטגורייה ע"י לחיצה על כפתור תפריט ו-"Set Custom Fanart"."
 
 msgctxt "#32076
 msgid ""
@@ -673,8 +673,1260 @@ msgid "TV Channels in %s"
 msgstr "ערוצי טלוויזיה ב-%s"
 
 msgctxt "#32090
+msgid "Uploading file %s to xbmclogs.com"
+msgstr "מעלה קובץ %s ל-xbmclogs.com"
+
+msgctxt "#32091
+msgid "Most recent updates"
+msgstr "עדכונים אחרונים"
+
+msgctxt "#32092
+msgid "Operation Failed!"
+msgstr "הפעולה נכשלה!"
+
+msgctxt "#32093
+msgid "Progress (%s/%s)"
+msgstr "תהליך (%s/%s)"
+
+msgctxt "#32094
+msgid "Preparing the post"
+msgstr "מכין את הפוסט"
+
+msgctxt "#32095
+msgid "Connecting to Facebook"
+msgstr "מתחבר לפייסבוק"
+
+msgctxt "#32096
+msgid "Your message has been sent!"
+msgstr "הודעתך נשלחה בהצלחה!"
+
+msgctxt "#32097
+msgid "Doing so will create a post on Featherence facebook group"
+msgstr "פעולה זו תיצור פוסט חדש בקבוצת פדרנס בפייסבוק"
+
+msgctxt "#32098
+msgid "Choose YES to continue"
+msgstr "בחר "כן" להמשך"
+
+msgctxt "#32099
 msgid ""
 msgstr ""
+
+msgctxt "#32100
+msgid ""
+msgstr ""
+
+msgctxt "#32101
+msgid ""
+msgstr ""
+
+msgctxt "#32102
+msgid ""
+msgstr ""
+
+msgctxt "#32103
+msgid ""
+msgstr ""
+
+msgctxt "#32104
+msgid ""
+msgstr ""
+
+msgctxt "#32105
+msgid ""
+msgstr ""
+
+msgctxt "#32106
+msgid ""
+msgstr ""
+
+msgctxt "#32107
+msgid ""
+msgstr ""
+
+msgctxt "#32108
+msgid ""
+msgstr ""
+
+msgctxt "#32109
+msgid ""
+msgstr ""
+
+msgctxt "#32110
+msgid ""
+msgstr ""
+
+msgctxt "#32111
+msgid ""
+msgstr ""
+
+msgctxt "#32112
+msgid ""
+msgstr ""
+
+msgctxt "#32113
+msgid ""
+msgstr ""
+
+msgctxt "#32114
+msgid ""
+msgstr ""
+
+msgctxt "#32115
+msgid ""
+msgstr ""
+
+msgctxt "#32116
+msgid ""
+msgstr ""
+
+msgctxt "#32117
+msgid ""
+msgstr ""
+
+msgctxt "#32118
+msgid ""
+msgstr ""
+
+msgctxt "#32119
+msgid ""
+msgstr ""
+
+msgctxt "#32120
+msgid ""
+msgstr ""
+
+msgctxt "#32121
+msgid ""
+msgstr ""
+
+msgctxt "#32122
+msgid ""
+msgstr ""
+
+msgctxt "#32123
+msgid ""
+msgstr ""
+
+msgctxt "#32124
+msgid ""
+msgstr ""
+
+msgctxt "#32125
+msgid ""
+msgstr ""
+
+msgctxt "#32126
+msgid ""
+msgstr ""
+
+msgctxt "#32127
+msgid ""
+msgstr ""
+
+msgctxt "#32128
+msgid ""
+msgstr ""
+
+msgctxt "#32129
+msgid ""
+msgstr ""
+
+msgctxt "#32130
+msgid ""
+msgstr ""
+
+msgctxt "#32131
+msgid ""
+msgstr ""
+
+msgctxt "#32132
+msgid ""
+msgstr ""
+
+msgctxt "#32133
+msgid ""
+msgstr ""
+
+msgctxt "#32134
+msgid ""
+msgstr ""
+
+msgctxt "#32135
+msgid ""
+msgstr ""
+
+msgctxt "#32136
+msgid ""
+msgstr ""
+
+msgctxt "#32137
+msgid ""
+msgstr ""
+
+msgctxt "#32138
+msgid ""
+msgstr ""
+
+msgctxt "#32139
+msgid ""
+msgstr ""
+
+msgctxt "#32140
+msgid ""
+msgstr ""
+
+msgctxt "#32141
+msgid ""
+msgstr ""
+
+msgctxt "#32142
+msgid ""
+msgstr ""
+
+msgctxt "#32143
+msgid ""
+msgstr ""
+
+msgctxt "#32144
+msgid ""
+msgstr ""
+
+msgctxt "#32145
+msgid ""
+msgstr ""
+
+msgctxt "#32146
+msgid ""
+msgstr ""
+
+msgctxt "#32147
+msgid ""
+msgstr ""
+
+msgctxt "#32148
+msgid ""
+msgstr ""
+
+msgctxt "#32149
+msgid ""
+msgstr ""
+
+msgctxt "#32150
+msgid ""
+msgstr ""
+
+msgctxt "#32151
+msgid ""
+msgstr ""
+
+msgctxt "#32152
+msgid ""
+msgstr ""
+
+msgctxt "#32153
+msgid ""
+msgstr ""
+
+msgctxt "#32154
+msgid ""
+msgstr ""
+
+msgctxt "#32155
+msgid ""
+msgstr ""
+
+msgctxt "#32156
+msgid ""
+msgstr ""
+
+msgctxt "#32157
+msgid ""
+msgstr ""
+
+msgctxt "#32158
+msgid ""
+msgstr ""
+
+msgctxt "#32159
+msgid ""
+msgstr ""
+
+msgctxt "#32160
+msgid ""
+msgstr ""
+
+msgctxt "#32161
+msgid ""
+msgstr ""
+
+msgctxt "#32162
+msgid ""
+msgstr ""
+
+msgctxt "#32163
+msgid ""
+msgstr ""
+
+msgctxt "#32164
+msgid ""
+msgstr ""
+
+msgctxt "#32165
+msgid ""
+msgstr ""
+
+msgctxt "#32166
+msgid ""
+msgstr ""
+
+msgctxt "#32167
+msgid ""
+msgstr ""
+
+msgctxt "#32168
+msgid ""
+msgstr ""
+
+msgctxt "#32169
+msgid ""
+msgstr ""
+
+msgctxt "#32170
+msgid ""
+msgstr ""
+
+msgctxt "#32171
+msgid ""
+msgstr ""
+
+msgctxt "#32172
+msgid ""
+msgstr ""
+
+msgctxt "#32173
+msgid ""
+msgstr ""
+
+msgctxt "#32174
+msgid ""
+msgstr ""
+
+msgctxt "#32175
+msgid ""
+msgstr ""
+
+msgctxt "#32176
+msgid ""
+msgstr ""
+
+msgctxt "#32177
+msgid ""
+msgstr ""
+
+msgctxt "#32178
+msgid ""
+msgstr ""
+
+msgctxt "#32179
+msgid ""
+msgstr ""
+
+msgctxt "#32180
+msgid ""
+msgstr ""
+
+msgctxt "#32181
+msgid ""
+msgstr ""
+
+msgctxt "#32182
+msgid ""
+msgstr ""
+
+msgctxt "#32183
+msgid ""
+msgstr ""
+
+msgctxt "#32184
+msgid ""
+msgstr ""
+
+msgctxt "#32185
+msgid ""
+msgstr ""
+
+msgctxt "#32186
+msgid ""
+msgstr ""
+
+msgctxt "#32187
+msgid ""
+msgstr ""
+
+msgctxt "#32188
+msgid ""
+msgstr ""
+
+msgctxt "#32189
+msgid ""
+msgstr ""
+
+msgctxt "#32190
+msgid ""
+msgstr ""
+
+msgctxt "#32191
+msgid ""
+msgstr ""
+
+msgctxt "#32192
+msgid ""
+msgstr ""
+
+msgctxt "#32193
+msgid ""
+msgstr ""
+
+msgctxt "#32194
+msgid ""
+msgstr ""
+
+msgctxt "#32195
+msgid ""
+msgstr ""
+
+msgctxt "#32196
+msgid ""
+msgstr ""
+
+msgctxt "#32197
+msgid ""
+msgstr ""
+
+msgctxt "#32198
+msgid ""
+msgstr ""
+
+msgctxt "#32199
+msgid ""
+msgstr ""
+
+msgctxt "#32200
+msgid ""
+msgstr ""
+
+msgctxt "#32201
+msgid ""
+msgstr ""
+
+msgctxt "#32202
+msgid ""
+msgstr ""
+
+msgctxt "#32203
+msgid ""
+msgstr ""
+
+msgctxt "#32204
+msgid ""
+msgstr ""
+
+msgctxt "#32205
+msgid ""
+msgstr ""
+
+msgctxt "#32206
+msgid ""
+msgstr ""
+
+msgctxt "#32207
+msgid ""
+msgstr ""
+
+msgctxt "#32208
+msgid ""
+msgstr ""
+
+msgctxt "#32209
+msgid ""
+msgstr ""
+
+msgctxt "#32210
+msgid ""
+msgstr ""
+
+msgctxt "#32211
+msgid ""
+msgstr ""
+
+msgctxt "#32212
+msgid ""
+msgstr ""
+
+msgctxt "#32213
+msgid ""
+msgstr ""
+
+msgctxt "#32214
+msgid ""
+msgstr ""
+
+msgctxt "#32215
+msgid ""
+msgstr ""
+
+msgctxt "#32216
+msgid ""
+msgstr ""
+
+msgctxt "#32217
+msgid ""
+msgstr ""
+
+msgctxt "#32218
+msgid ""
+msgstr ""
+
+msgctxt "#32219
+msgid ""
+msgstr ""
+
+msgctxt "#32220
+msgid ""
+msgstr ""
+
+msgctxt "#32221
+msgid ""
+msgstr ""
+
+msgctxt "#32222
+msgid ""
+msgstr ""
+
+msgctxt "#32223
+msgid ""
+msgstr ""
+
+msgctxt "#32224
+msgid ""
+msgstr ""
+
+msgctxt "#32225
+msgid ""
+msgstr ""
+
+msgctxt "#32226
+msgid ""
+msgstr ""
+
+msgctxt "#32227
+msgid ""
+msgstr ""
+
+msgctxt "#32228
+msgid ""
+msgstr ""
+
+msgctxt "#32229
+msgid ""
+msgstr ""
+
+msgctxt "#32230
+msgid ""
+msgstr ""
+
+msgctxt "#32231
+msgid ""
+msgstr ""
+
+msgctxt "#32232
+msgid ""
+msgstr ""
+
+msgctxt "#32233
+msgid ""
+msgstr ""
+
+msgctxt "#32234
+msgid ""
+msgstr ""
+
+msgctxt "#32235
+msgid ""
+msgstr ""
+
+msgctxt "#32236
+msgid ""
+msgstr ""
+
+msgctxt "#32237
+msgid ""
+msgstr ""
+
+msgctxt "#32238
+msgid ""
+msgstr ""
+
+msgctxt "#32239
+msgid ""
+msgstr ""
+
+msgctxt "#32240
+msgid ""
+msgstr ""
+
+msgctxt "#32241
+msgid ""
+msgstr ""
+
+msgctxt "#32242
+msgid ""
+msgstr ""
+
+msgctxt "#32243
+msgid ""
+msgstr ""
+
+msgctxt "#32244
+msgid ""
+msgstr ""
+
+msgctxt "#32245
+msgid ""
+msgstr ""
+
+msgctxt "#32246
+msgid ""
+msgstr ""
+
+msgctxt "#32247
+msgid ""
+msgstr ""
+
+msgctxt "#32248
+msgid ""
+msgstr ""
+
+msgctxt "#32249
+msgid ""
+msgstr ""
+
+msgctxt "#32250
+msgid ""
+msgstr ""
+
+msgctxt "#32251
+msgid ""
+msgstr ""
+
+msgctxt "#32252
+msgid ""
+msgstr ""
+
+msgctxt "#32253
+msgid ""
+msgstr ""
+
+msgctxt "#32254
+msgid ""
+msgstr ""
+
+msgctxt "#32255
+msgid ""
+msgstr ""
+
+msgctxt "#32256
+msgid ""
+msgstr ""
+
+msgctxt "#32257
+msgid ""
+msgstr ""
+
+msgctxt "#32258
+msgid ""
+msgstr ""
+
+msgctxt "#32259
+msgid ""
+msgstr ""
+
+msgctxt "#32260
+msgid ""
+msgstr ""
+
+msgctxt "#32261
+msgid ""
+msgstr ""
+
+msgctxt "#32262
+msgid ""
+msgstr ""
+
+msgctxt "#32263
+msgid ""
+msgstr ""
+
+msgctxt "#32264
+msgid ""
+msgstr ""
+
+msgctxt "#32265
+msgid ""
+msgstr ""
+
+msgctxt "#32266
+msgid ""
+msgstr ""
+
+msgctxt "#32267
+msgid ""
+msgstr ""
+
+msgctxt "#32268
+msgid ""
+msgstr ""
+
+msgctxt "#32269
+msgid ""
+msgstr ""
+
+msgctxt "#32270
+msgid ""
+msgstr ""
+
+msgctxt "#32271
+msgid ""
+msgstr ""
+
+msgctxt "#32272
+msgid ""
+msgstr ""
+
+msgctxt "#32273
+msgid ""
+msgstr ""
+
+msgctxt "#32274
+msgid ""
+msgstr ""
+
+msgctxt "#32275
+msgid ""
+msgstr ""
+
+msgctxt "#32276
+msgid ""
+msgstr ""
+
+msgctxt "#32277
+msgid ""
+msgstr ""
+
+msgctxt "#32278
+msgid ""
+msgstr ""
+
+msgctxt "#32279
+msgid ""
+msgstr ""
+
+msgctxt "#32280
+msgid ""
+msgstr ""
+
+msgctxt "#32281
+msgid ""
+msgstr ""
+
+msgctxt "#32282
+msgid ""
+msgstr ""
+
+msgctxt "#32283
+msgid ""
+msgstr ""
+
+msgctxt "#32284
+msgid ""
+msgstr ""
+
+msgctxt "#32285
+msgid ""
+msgstr ""
+
+msgctxt "#32286
+msgid ""
+msgstr ""
+
+msgctxt "#32287
+msgid ""
+msgstr ""
+
+msgctxt "#32288
+msgid ""
+msgstr ""
+
+msgctxt "#32289
+msgid ""
+msgstr ""
+
+msgctxt "#32290
+msgid ""
+msgstr ""
+
+msgctxt "#32291
+msgid ""
+msgstr ""
+
+msgctxt "#32292
+msgid ""
+msgstr ""
+
+msgctxt "#32293
+msgid ""
+msgstr ""
+
+msgctxt "#32294
+msgid ""
+msgstr ""
+
+msgctxt "#32295
+msgid ""
+msgstr ""
+
+msgctxt "#32296
+msgid ""
+msgstr ""
+
+msgctxt "#32297
+msgid ""
+msgstr ""
+
+msgctxt "#32298
+msgid ""
+msgstr ""
+
+msgctxt "#32299
+msgid ""
+msgstr ""
+
+msgctxt "#32300
+msgid ""
+msgstr ""
+
+msgctxt "#32301
+msgid ""
+msgstr ""
+
+msgctxt "#32302
+msgid ""
+msgstr ""
+
+msgctxt "#32303
+msgid ""
+msgstr ""
+
+msgctxt "#32304
+msgid ""
+msgstr ""
+
+msgctxt "#32305
+msgid ""
+msgstr ""
+
+msgctxt "#32306
+msgid ""
+msgstr ""
+
+msgctxt "#32307
+msgid ""
+msgstr ""
+
+msgctxt "#32308
+msgid ""
+msgstr ""
+
+msgctxt "#32309
+msgid ""
+msgstr ""
+
+msgctxt "#32310
+msgid ""
+msgstr ""
+
+msgctxt "#32311
+msgid ""
+msgstr ""
+
+msgctxt "#32312
+msgid ""
+msgstr ""
+
+msgctxt "#32313
+msgid ""
+msgstr ""
+
+msgctxt "#32314
+msgid ""
+msgstr ""
+
+msgctxt "#32315
+msgid ""
+msgstr ""
+
+msgctxt "#32316
+msgid ""
+msgstr ""
+
+msgctxt "#32317
+msgid ""
+msgstr ""
+
+msgctxt "#32318
+msgid ""
+msgstr ""
+
+msgctxt "#32319
+msgid ""
+msgstr ""
+
+msgctxt "#32320
+msgid ""
+msgstr ""
+
+msgctxt "#32321
+msgid ""
+msgstr ""
+
+msgctxt "#32322
+msgid ""
+msgstr ""
+
+msgctxt "#32323
+msgid ""
+msgstr ""
+
+msgctxt "#32324
+msgid ""
+msgstr ""
+
+msgctxt "#32325
+msgid ""
+msgstr ""
+
+msgctxt "#32326
+msgid ""
+msgstr ""
+
+msgctxt "#32327
+msgid ""
+msgstr ""
+
+msgctxt "#32328
+msgid ""
+msgstr ""
+
+msgctxt "#32329
+msgid ""
+msgstr ""
+
+msgctxt "#32330
+msgid ""
+msgstr ""
+
+msgctxt "#32331
+msgid ""
+msgstr ""
+
+msgctxt "#32332
+msgid ""
+msgstr ""
+
+msgctxt "#32333
+msgid ""
+msgstr ""
+
+msgctxt "#32334
+msgid ""
+msgstr ""
+
+msgctxt "#32335
+msgid ""
+msgstr ""
+
+msgctxt "#32336
+msgid ""
+msgstr ""
+
+msgctxt "#32337
+msgid ""
+msgstr ""
+
+msgctxt "#32338
+msgid ""
+msgstr ""
+
+msgctxt "#32339
+msgid ""
+msgstr ""
+
+msgctxt "#32340
+msgid ""
+msgstr ""
+
+msgctxt "#32341
+msgid ""
+msgstr ""
+
+msgctxt "#32342
+msgid ""
+msgstr ""
+
+msgctxt "#32343
+msgid ""
+msgstr ""
+
+msgctxt "#32344
+msgid ""
+msgstr ""
+
+msgctxt "#32345
+msgid ""
+msgstr ""
+
+msgctxt "#32346
+msgid ""
+msgstr ""
+
+msgctxt "#32347
+msgid ""
+msgstr ""
+
+msgctxt "#32348
+msgid ""
+msgstr ""
+
+msgctxt "#32349
+msgid ""
+msgstr ""
+
+msgctxt "#32350
+msgid ""
+msgstr ""
+
+msgctxt "#32351
+msgid ""
+msgstr ""
+
+msgctxt "#32352
+msgid ""
+msgstr ""
+
+msgctxt "#32353
+msgid ""
+msgstr ""
+
+msgctxt "#32354
+msgid ""
+msgstr ""
+
+msgctxt "#32355
+msgid ""
+msgstr ""
+
+msgctxt "#32356
+msgid ""
+msgstr ""
+
+msgctxt "#32357
+msgid ""
+msgstr ""
+
+msgctxt "#32358
+msgid ""
+msgstr ""
+
+msgctxt "#32359
+msgid ""
+msgstr ""
+
+msgctxt "#32360
+msgid ""
+msgstr ""
+
+msgctxt "#32361
+msgid ""
+msgstr ""
+
+msgctxt "#32362
+msgid ""
+msgstr ""
+
+msgctxt "#32363
+msgid ""
+msgstr ""
+
+msgctxt "#32364
+msgid ""
+msgstr ""
+
+msgctxt "#32365
+msgid ""
+msgstr ""
+
+msgctxt "#32366
+msgid ""
+msgstr ""
+
+msgctxt "#32367
+msgid ""
+msgstr ""
+
+msgctxt "#32368
+msgid ""
+msgstr ""
+
+msgctxt "#32369
+msgid ""
+msgstr ""
+
+msgctxt "#32370
+msgid ""
+msgstr ""
+
+msgctxt "#32371
+msgid ""
+msgstr ""
+
+msgctxt "#32372
+msgid ""
+msgstr ""
+
+msgctxt "#32373
+msgid ""
+msgstr ""
+
+msgctxt "#32374
+msgid ""
+msgstr ""
+
+msgctxt "#32375
+msgid ""
+msgstr ""
+
+msgctxt "#32376
+msgid ""
+msgstr ""
+
+msgctxt "#32377
+msgid ""
+msgstr ""
+
+msgctxt "#32378
+msgid ""
+msgstr ""
+
+msgctxt "#32379
+msgid ""
+msgstr ""
+
+msgctxt "#32380
+msgid ""
+msgstr ""
+
+msgctxt "#32381
+msgid ""
+msgstr ""
+
+msgctxt "#32382
+msgid ""
+msgstr ""
+
+msgctxt "#32383
+msgid ""
+msgstr ""
+
+msgctxt "#32384
+msgid ""
+msgstr ""
+
+msgctxt "#32385
+msgid ""
+msgstr ""
+
+msgctxt "#32386
+msgid ""
+msgstr ""
+
+msgctxt "#32387
+msgid ""
+msgstr ""
+
+msgctxt "#32388
+msgid ""
+msgstr ""
+
+msgctxt "#32389
+msgid ""
+msgstr ""
+
+msgctxt "#32390
+msgid ""
+msgstr ""
+
+msgctxt "#32391
+msgid ""
+msgstr ""
+
+msgctxt "#32392
+msgid ""
+msgstr ""
+
+msgctxt "#32393
+msgid ""
+msgstr ""
+
+msgctxt "#32394
+msgid ""
+msgstr ""
+
+msgctxt "#32395
+msgid ""
+msgstr ""
+
+msgctxt "#32396
+msgid ""
+msgstr ""
+
+msgctxt "#32397
+msgid ""
+msgstr ""
+
+msgctxt "#32398
+msgid ""
+msgstr ""
+
+msgctxt "#32399
+msgid ""
+msgstr ""
+
+msgctxt "#32715"
+msgid "Warning: Internet Browsing"
+msgstr "אזהרה: גלישה באינטרנט"
+
+msgctxt "#32716"
+msgid "VERIFY YOU HAVE A KEYBOARD BEFORE PROCEEDING!"
+msgstr "אנא וודא שיש ברשותך עכבר/מקלדת לפני האישור!"
+
+msgctxt "#32717"
+msgid "Use the following keys in order to return:"
+msgstr "[COLOR=yellow]השתמש במקשים הבאים בכדי לסגור גלישה:[/COLOR]"
+
+msgctxt "#32718"
+msgid "ESC / ALT-TAB / ALT+F4"
+msgstr "ESC / ALT-TAB / ALT+F4"
 
 #Smart Playlist
 

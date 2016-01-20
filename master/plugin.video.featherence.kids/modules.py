@@ -37,7 +37,7 @@ def CATEGORIES():
 
 	#addDir('קלסיקלטת','plugin://plugin.video.wallaNew.video/?mode=1&module=338&name=קלסיקלטת&url=http://vod.walla.co.il/channel/338/clasicaletet',8,'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYE2VT8CR2O31MsqAhdaydYrqrCD--HCCdGcs7blBn3Zh92Kwq','','1',"", getAddonFanart(0))
 	#addDir('ניק','plugin://plugin.video.wallaNew.video/?mode=1&module=nick&name=ניק&url=http://nick.walla.co.il/',8,'http://www.karmieli.co.il/sites/default/files/images/nico.jpg','','1',"", getAddonFanart(0))
-	addDir('גוניור','plugin://plugin.video.wallaNew.video/?mode=1&module=nickjr&name=גוניור&url=http://nickjr.walla.co.il/',8,'http://upload.wikimedia.org/wikipedia/he/1/19/%D7%A2%D7%A8%D7%95%D7%A5_%D7%92%27%D7%95%D7%A0%D7%99%D7%95%D7%A8.jpg','','1',"", getAddonFanart(0))
+	#addDir('גוניור','plugin://plugin.video.wallaNew.video/?mode=1&module=nickjr&name=גוניור&url=http://nickjr.walla.co.il/',8,'http://upload.wikimedia.org/wikipedia/he/1/19/%D7%A2%D7%A8%D7%95%D7%A5_%D7%92%27%D7%95%D7%A0%D7%99%D7%95%D7%A8.jpg','','1',"", getAddonFanart(0))
 
 def CATEGORIES100(name, iconimage, desc, fanart):
 	'''------------------------------
@@ -4217,7 +4217,7 @@ def CATEGORIES109(name, iconimage, desc, fanart):
 	
 	CATEGORIES109A(General_LanguageL, background, background2) #עמוד הבא לימוד שפה
 	
-def CATEGORIES200(name, iconimage, desc, fanart):
+def CATEGORIES200():
 	background = 200
 	background2 = ""
 	

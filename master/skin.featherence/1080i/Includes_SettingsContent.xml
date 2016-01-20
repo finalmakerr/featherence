@@ -856,15 +856,23 @@
 		<onclick>ActivateWindow(MyWeather)</onclick>
 		<visible>Container(100).Hasfocus(2)</visible>
 	  </item>
-	  <item id="25" description="אינטרנט">
-		<label>443</label>
+	  <item id="25" description="Featherence Facebook Group">
+		<label>Featherence Facebook Group</label>
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/internet.png</thumb>
 		<property name="rinfo"></property>
-		<onclick>RunScript(script.featherence.service,,?mode=512&value=0)</onclick>
+		<onclick>RunScript(script.featherence.service,,?mode=512&amp;value=1)</onclick>
 		<visible>Container(100).Hasfocus(2)</visible>
 	  </item>
-	  <item id="26" description="">
+	  <item id="26" description="Post on Facebook!">
+		<label>Post on Facebook!</label>
+		<label2></label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/facebook.png</thumb>
+		<property name="rinfo">$ADDON[script.featherence.service 32048] $ADDON[script.featherence.service 32049]</property>
+		<onclick>RunScript(script.featherence.service,,?mode=7)</onclick>
+		<visible>Container(100).Hasfocus(2)</visible>
+	  </item>
+	  <item id="27" description="">
 		<label>Featherence YouTube Channel</label>
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/youtube.png</thumb>

@@ -54,6 +54,25 @@
 				<onup>701</onup>
 				<ondown>701</ondown>
 			</control>
+			<control type="button" description="אינטרנט">
+				<left>0</left>
+				<top>10</top>
+				<width>164</width>
+				<height>40</height>
+				<texturenofocus border="3" diffuse="buttons/ButtonC0.png" colordiffuse="$VAR[KeyboardMainColor]">osd/keyboard/KeyboardKeyNF.png</texturenofocus>
+				<texturefocus border="5" diffuse="buttons/ButtonC0.png">osd/keyboard/KeyboardKey.png</texturefocus>
+				<include>Keyboard</include>
+				<label>$VAR[InternetKeyboardButton]</label>
+				<font>size18</font>
+				<onclick condition="SubString(Control.GetLabel(311),YouTube) | SubString(Control.GetLabel(311),Add URL)">RunScript(script.featherence.service,,?mode=512&amp;value=3)</onclick>
+				<onclick condition="SubString(Control.GetLabel(311),thumb)">RunScript(script.featherence.service,,?mode=512&amp;value=4)</onclick>
+				<onclick condition="SubString(Control.GetLabel(311),fanart)">RunScript(script.featherence.service,,?mode=512&amp;value=5)</onclick>
+				<onleft>701</onleft>
+				<onright>701</onright>
+				<onup>701</onup>
+				<ondown>701</ondown>
+				<visible>SubString(Control.GetLabel(311),YouTube) | SubString(Control.GetLabel(311),Add URL) | SubString(Control.GetLabel(311),thumb) | SubString(Control.GetLabel(311),fanart)</visible>
+			</control>
 			<control type="image" description="תמונה מחרוזת חיפוש">
 				<left>50</left>
 				<top>60</top>
@@ -84,7 +103,7 @@
 				<height>30</height>
 				<texture>osd/keyboard/dialogheader.png</texture>
 			</control>
-			<include condition="System.HasAddon(script.extendedinfo) + !SubString(Control.GetLabel(311),password) + !SubString(Control.GetLabel(311),$LOCALIZE[733])">MenuDesign_Center2</include>
+			<include condition="System.HasAddon(script.extendedinfo) + !SubString(Control.GetLabel(311),password) + !SubString(Control.GetLabel(311),$LOCALIZE[733]) + !Window.IsVisible(Custom1175.xml)">MenuDesign_Center2</include>
 			<control type="group" id="701">
 				<left>30</left>
 				<top>140</top>
