@@ -551,7 +551,7 @@ msgstr "איכות מצב טלוויזיה"
 
 #Message
 msgctxt "#32060
-msgid "Would you like thanks us? Would love to hear you!"
+msgid "Having a good time using Featherence? Would love to hear you!"
 msgstr "רוצה להגיד לנו תודה? נשמח לשמוע!"
 
 msgctxt "#32061

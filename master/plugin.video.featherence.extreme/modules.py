@@ -1,13 +1,11 @@
-import xbmc, xbmcgui, xbmcaddon
-import subprocess, os, sys
-import xbmcplugin
-import urllib
-import urllib2
-import re
+# -*- coding: utf-8 -*-
+import urllib,urllib2,sys,re,xbmcplugin,xbmcgui,xbmcaddon,xbmc,os
 
 from variables import *
 from shared_modules import *
 if "plugin." in addonID: from shared_modules3 import *
+#from modulesZ import *
+#from modulesA import *
 '''---------------------------'''
 
 def CATEGORIES():
@@ -16,7 +14,7 @@ def CATEGORIES():
 	#YOUList2("GoProCamera", 'UCqhnX4jA0A5paNd1v-zEysw', "", "", '1')
 	
 	addDir(localize(137),"Go-Pro",3,featherenceserviceicons_path + "se.png","Search Go-Pro Video",'1',58, getAddonFanart(background))
-	CATEGORIES102A() #אקראי
+	CATEGORIES_RANDOM() #אקראי
 	
 	'''Go-Pro'''
 	list = []
