@@ -15,7 +15,7 @@ def CATEGORIES():
 	CATEGORIES_SEARCH(mode=30, url="")
 	addDir(addonString(100).encode('utf-8'),'MyDocu',100,"http://www.2gzr.com/uploads/2014/07/documentary-2.jpg",addonString(1000).encode('utf-8'),'1',50, getAddonFanart(100, custom="")) #My Docu
 	addDir(addonString(101).encode('utf-8'),'',101,'https://i.ytimg.com/vi/q4AQDDKglEE/maxresdefault.jpg',addonString(1010).encode('utf-8'),'1',50, getAddonFanart(101, custom="")) #Nature
-	addDir(addonString(102).encode('utf-8'),'',102,'http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2014/02/searching_for_exoplanetary_systems/14282306-1-eng-GB/Searching_for_exoplanetary_systems.jpg',addonString(1020).encode('utf-8'),'1',50, getAddonFanart(102, custom="")) #Space
+	addDir(addonString(102).encode('utf-8'),'',102,'http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2014/02/searching_for_exoplanetary_systems/14282306-1-eng-GB/Searching_for_exoplanetary_systems.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(102).encode('utf-8')),'1',50, getAddonFanart(102, default="http://infossible.com/infosdata/wp-content/uploads/2015/08/Earth-From-Space-Space-1080x1920.jpg")) #Space
 	addDir(addonString(103).encode('utf-8'),'',103,'http://wsap.academy/wp-content/uploads/2015/03/1123676.jpg',addonString(1030).encode('utf-8'),'1',50, getAddonFanart(103, custom="")) #History
 	addDir(addonString(104).encode('utf-8'),'',104,'http://orig07.deviantart.net/ff1a/f/2009/033/1/3/science_wallpaper_by_hamdanzinha.jpg',addonString(1040).encode('utf-8'),'1',50, getAddonFanart(104, custom="")) #Science
 	addDir(addonString(107).encode('utf-8'),'',107,'http://www.muralswallpaper.co.uk/sites/default/files/styles/full_lightbox/public/product_images/Cute-Animals-Kids-Wallpaper-Mural.jpg?itok=F5n249_x',addonString(1070).encode('utf-8'),'1',50, getAddonFanart(107, custom="")) #Kids
@@ -472,7 +472,7 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLYTAjChqCnmE8QkMiaEilnBX20gxmbXG2')
 	list.append('&youtube_pl=PLDA7830389EE0BA94')
 	list.append('&youtube_pl=PLowYwBwSCQXW4OkSW1Oh0UbIe-w_h5crt')
-	addDir("Space",list,17,'http://2.bp.blogspot.com/-epZUsCIzQuY/T18MYajib8I/AAAAAAAAAb4/9Z6xk2nj8Vk/s1600/Space-Wallpaper.jpg','','1',"", getAddonFanart(background, custom=""))
+	addDir("Space",list,17,'http://2.bp.blogspot.com/-epZUsCIzQuY/T18MYajib8I/AAAAAAAAAb4/9Z6xk2nj8Vk/s1600/Space-Wallpaper.jpg','','1',"", getAddonFanart(background, custom="http://infossible.com/infosdata/wp-content/uploads/2015/08/Earth-From-Space-Space-1080x1920.jpg"))
 	
 	'''Astronomy'''
 	list = []

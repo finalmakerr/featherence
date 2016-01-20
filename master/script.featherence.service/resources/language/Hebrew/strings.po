@@ -709,8 +709,8 @@ msgid "Choose YES to continue"
 msgstr "בחר "כן" להמשך"
 
 msgctxt "#32099
-msgid ""
-msgstr ""
+msgid "Watch varied of videos about %s."
+msgstr "צפה במגוון תכנים בנושא -%s".
 
 msgctxt "#32100
 msgid ""
