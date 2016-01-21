@@ -1496,3 +1496,8 @@ def CATEGORIES119(name, iconimage, desc, fanart):
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
 	addDir('99 FM','plugin://'+addon,8,thumb,plot,addon,"", getAddonFanart(background, custom=fanart))
 
+	addon = 'plugin.audio.8tracks'
+	thumb, fanart, summary, description, plot = getAddonInfo(addon)
+	addDir('8tracks','plugin://'+addon,8,thumb,plot,addon,"", getAddonFanart(background, custom=fanart))
+
+
