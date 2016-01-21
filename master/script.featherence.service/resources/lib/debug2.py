@@ -10,6 +10,7 @@ Debug_Message = getsetting('Debug_Message')
 Debug_PasswordKeeper = getsetting('Debug_PasswordKeeper')
 
 recipient = 'featherence@groups.facebook.com'
+Debug_EmailL = ['@gmail.com', '@walla.com', '@walla.co.il']
 Debug_File = ""
 
 if systemplatformwindows:

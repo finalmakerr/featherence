@@ -3,6 +3,11 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence Kids v0.2.2 (xx-01-16)
+------------------------
+- Minor bugs fix.
+
+------------------------
 Featherence Kids v0.2.1 (20-01-16)
 ------------------------
 - Added about us section with useful information and contact tools.

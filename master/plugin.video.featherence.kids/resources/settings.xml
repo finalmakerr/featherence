@@ -12,7 +12,7 @@
 		<setting id="General_TVModeShuffle" type="bool" default="true" label="$ADDON[script.featherence.service 17]" enable="eq(-1,true)" subsetting="true"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 62]" visible="eq(-1,false)"/>
 		
-		<setting id="General_Language" type="text" default="" label="Main Language" enable="true" visible="true"/>
+		<setting id="General_Language" type="select" default="" label="Main Language" values=" |Arabic|Bulgarian|Catalan|Chinese|Czech|Dansk|Dutch|English|Finnish|French|Georgian|German|Greek|Haitian|Hebrew|Hindi|Hungarian|Indonesian|Italian|Irish|Japanese|Kazakh|Korean|Polish|Portuguese|Romanian|Russian|Serbian|Slovak|Spanish|Swedish|Thai|Turkish|Ukrainian|Uzbek|Ukrainian|Russian" enable="true" visible="true"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32043]"/>
 		<setting id="General_Language2" type="select" default="English" label="Secondary Language" values=" |Arabic|Bulgarian|Catalan|Chinese|Czech|Dansk|Dutch|English|Finnish|French|Georgian|German|Greek|Haitian|Hebrew|Hindi|Hungarian|Indonesian|Italian|Irish|Japanese|Kazakh|Korean|Polish|Portuguese|Romanian|Russian|Serbian|Slovak|Spanish|Swedish|Thai|Turkish|Ukrainian|Uzbek|Ukrainian|Russian" enable="true" visible="true"/>
 		<setting id="General_Language3" type="select" default="" label="Additonal Language" values=" |Arabic|Bulgarian|Catalan|Chinese|Czech|Dansk|Dutch|English|Finnish|French|Georgian|German|Greek|Haitian|Hebrew|Hindi|Hungarian|Indonesian|Italian|Irish|Japanese|Kazakh|Korean|Polish|Portuguese|Romanian|Russian|Serbian|Slovak|Spanish|Swedish|Thai|Turkish|Ukrainian|Uzbek|Ukrainian|Russian" enable="true" visible="true"/>

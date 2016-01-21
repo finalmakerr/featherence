@@ -2216,6 +2216,7 @@ def notification_common(custom):
 	elif custom == "24": notification(localize(79195), localize(79154),"",2000) #Addon is missing! Trying to download addon
 	elif custom == "25": notification('OS not supported!','',2000) #Addon is missing! Trying to download addon
 	elif custom == "26": notification('File is missing!', "","",2000)
+	elif custom == "27": notification(addonString_servicefeatherence(32100).encode('utf-8'), addonString_servicefeatherence(32101).encode('utf-8'),"",2000) #Your email provider isn't supported.
 	elif custom == "100": notification('$LOCALIZE[78971]' ,'[COLOR=yellow]' + str74550.encode('utf-8') % (localize(342)) + '[/COLOR]' + space + addonString_servicefeatherence(10).encode('utf-8') + space,"",7000) #MVAZEH TIKUN YADANI
 	elif custom == "101": notification('$LOCALIZE[78971]' ,'[COLOR=yellow]' + str74550.encode('utf-8') % (str36903.encode('utf-8')) + '[/COLOR]' + space + addonString_servicefeatherence(10).encode('utf-8') + space,"",7000) #MVAZEH TIKUN YADANI
 

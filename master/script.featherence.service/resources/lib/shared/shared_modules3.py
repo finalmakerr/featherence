@@ -665,7 +665,9 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 			x = x.replace(name2,"",1)
 			name2 = name2.replace('&name_=',"",1)
 			name2 = name2.replace('&',"")
-			if name2 != "": name = name2
+			if name2 != "":
+				if name2 == 'default': name2 = name
+				else: name = name2
 			
 		if x not in playlist and x != "":
 			i += 1
@@ -746,8 +748,15 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 			elif mode == 6:
 				finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(x, name, iconimage, desc, fanart, playlist=playlist, onlydata=True)
 				#except: pass
-				
-				if "&custom4=" in x:
+				for y in title_L:
+					if name2 != "":
+						y = y.replace(y, name)
+					y = y.replace(y,str(i) + '. ' + y, 1)
+					
+					
+					
+				if finalurl_ == "": pass
+				elif "&custom4=" in x:
 					x = x.replace("&custom4=","")
 					addDir(str(i) + '.' + space + title_L[0], x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					'''---------------------------'''
@@ -757,8 +766,12 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					'''---------------------------'''
 				elif "&dailymotion_id=" in x:
 					#x = x.replace("&dailymotion_id=","")
-					addDir(str(i) + '.' + space + title_L[0], x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
-					'''---------------------------'''
+					if 'O' in printpoint:
+						PlayVideos(title_L[0], 4, x, thumb_L[0], desc_L[0], num, fanart_L[0])
+						mode = 4
+					else:
+						addDir(str(i) + '.' + space + title_L[0], x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+						'''---------------------------'''
 				elif "&dailymotion_pl=" in x:
 					if 'O' in printpoint:
 						ListPlaylist2(name, x, iconimage, desc, num, viewtype, fanart)
@@ -907,6 +920,10 @@ def MultiVideos_play2(finalurl, pl, playlist, printpoint):
 		notification_common('8')
 		sys.exit(0)
 	elif not "3" in printpoint:
+		if 'plugin://' in finalurl:
+			printpoint2 = printpoint2 + '3'
+			plugin = regex_from_to(finalurl, 'plugin://', '/', excluding=True)
+			installaddon(admin, plugin, update=True)
 		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl) ; xbmc.sleep(2000)
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo') ; dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)') ; dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)') ; dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
 		while count < 20 and not playerhasvideo and not dialogokW and not xbmc.abortRequested:
@@ -1175,136 +1192,144 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 	printlog(title='apimaster_test2', printpoint=printpoint, text=text, level=0, option="")
 	
 	if url != "":
-		link = OPEN_URL(url)
-		prms=json.loads(link)
-		text = "url" + space2 + str(url) + newline + \
-		"link" + space2 + str(link) + newline + \
-		"prms" + space2 + str(prms) + newline #+ \ + "totalResults" + space2 + str(totalResults)
-		'''---------------------------'''
-		printlog(title='apimaster_test2', printpoint=printpoint, text=text, level=0, option="")
-	
-		if '&dailymotion_pl=' in x:
-			if prms[u'has_more']:
-				totalResults = int(prms[u'limit'])
-			else: totalResults = prms[u'total']
-		elif '&dailymotion_id=' in x:
-			if prms[u'id']:
-				totalResults = len(prms[u'id'])
-		else:
-			totalResults=int(prms['pageInfo'][u'totalResults']) #if bigger than pagesize needs to add more result
-			resultsPerPage = int(prms['pageInfo'][u'resultsPerPage'])
-		totalpagesN = (totalResults / pagesize) + 1
-		'''---------------------------'''
+		try: link = OPEN_URL(url)
+		except Exception, TypeError:
+			printpoint = printpoint + '9'
+			extra = extra + newline + 'TypeError' + space2 + str(TypeError)
+			print printfirst + '***The following video ID is broken!' + space + str(title) + space + str(x) + space + 'Please report to Featherence in order to fix it!***'
+			title_L.append('[COLOR=red]' + title + space + '[Deleted!]' + '[/COLOR]')
+		if not '9' in printpoint:
+			prms=json.loads(link)
+			text = "url" + space2 + str(url) + newline + \
+			"link" + space2 + str(link) + newline + \
+			"prms" + space2 + str(prms) + newline #+ \ + "totalResults" + space2 + str(totalResults)
+			'''---------------------------'''
+			printlog(title='apimaster_test2', printpoint=printpoint, text=text, level=0, option="")
+		
+			if '&dailymotion_pl=' in x:
+				if prms[u'has_more']:
+					totalResults = int(prms[u'limit'])
+				else: totalResults = prms[u'total']
+			elif '&dailymotion_id=' in x:
+				if prms[u'id']:
+					totalResults = len(prms[u'id'])
+			else:
+				totalResults=int(prms['pageInfo'][u'totalResults']) #if bigger than pagesize needs to add more result
+				resultsPerPage = int(prms['pageInfo'][u'resultsPerPage'])
+			totalpagesN = (totalResults / pagesize) + 1
+			'''---------------------------'''
 
-		i = 0
-		while i < pagesize and i < totalResults and i < resultsPerPage and not "8" in printpoint and ((count + count_) < pagesize) and not xbmc.abortRequested: #h<totalResults
-			
-			#try:
-			if 1 + 1 == 2:
-				id_ = "" ; id2_ = "" ; playlistid_ = ""
-				finalurl_ = "" ; title_ = "" ; thumb_ = "" ; desc_ = "" ; fanart_ = ""
+			i = 0
+			while i < pagesize and i < totalResults and i < resultsPerPage and not "8" in printpoint and ((count + count_) < pagesize) and not xbmc.abortRequested: #h<totalResults
 				
-				if "&youtube_pl=" in x or "&youtube_ch=" in x or '&youtube_id=' in x:
-					if onlydata == True:
-						id_ = str(prms['items'][i][u'id'])
-					else:
-						try: id_ = str(prms['items'][i][u'snippet'][u'resourceId'][u'videoId']) #Video ID (Playlist)
-						except:
-							try: playlistid_ = str(prms['items'][i][u'id'][u'playlistId'])
+				#try:
+				if 1 + 1 == 2:
+					id_ = "" ; id2_ = "" ; playlistid_ = ""
+					finalurl_ = "" ; title_ = "" ; thumb_ = "" ; desc_ = "" ; fanart_ = ""
+					
+					if "&youtube_pl=" in x or "&youtube_ch=" in x or '&youtube_id=' in x:
+						if onlydata == True:
+							id_ = str(prms['items'][i][u'id'])
+						else:
+							try: id_ = str(prms['items'][i][u'snippet'][u'resourceId'][u'videoId']) #Video ID (Playlist)
 							except:
-								try: id_ = str(prms['items'][i][u'id'][u'videoId'])
-								except: id_ = str(prms['items'][i][u'id'])
-								
-				elif "&youtube_se=" in x or '&custom_se=' in x:
-					if onlydata == True:
-						id_ = str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)
-					else:
-						#print str(i)
-						id_ = str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)		
-				elif '&youtube_se2=' in x:
-					id_ = str(prms['items'][i][u'snippet'][u'channelId']) #Video ID (Search)
-				elif '&dailymotion_id=' in x:
-					id2_ = str(prms[u'id'])
-				elif '&dailymotion_pl=' in x:
-					#if onlydata == True:
-					id2_ = str(prms[u'list'][i][u'id'])
-						
-				
-				if id_ != "":
-					#if '&youtube_pl=' in x: finalurl_ = "plugin://plugin.video.youtube/playlist/"+id_+"/"
-					finalurl_ = "plugin://plugin.video.youtube/play/?video_id="+id_+"&hd=1"
-					title_ = str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
-					try:
-						thumb_ = str(prms['items'][i][u'snippet'][u'thumbnails'][thumbnails][u'url'])
-						fanart_ = str(prms['items'][i][u'snippet'][u'thumbnails'][u'high'][u'url'])
-					except Exception, TypeError: extra = extra + newline + 'thumb TypeError: ' + str(TypeError) + space + 'i' + space2 + str(i) + space + 'id_' + space2 + str(id_)
-					desc_ = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8'))
-					
-					
-					id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i')
-					
-				elif playlistid_ != "":
-					url2 = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId='+playlistid_+'&key='+api_youtube_featherence+'&part=snippet&maxResults=20&pageToken='
-					link2 = OPEN_URL(url2)
-					prms2 = json.loads(link2)
-					totalResults2 = int(prms2['pageInfo'][u'totalResults']) #if bigger than pagesize needs to add more result
-					totalpagesN = (totalResults2 / pagesize) + 1
-					
-					text = "url2" + space2 + str(url2) + newline + \
-					"link2" + space2 + str(link2) + newline + \
-					"prms2" + space2 + str(prms2) + newline + \
-					"totalResults2" + space2 + str(totalResults2)
-					printlog(title='apimaster_test3', printpoint=printpoint, text=text, level=0, option="")
-					
-					
-					i2 = 0
-					while i2 < pagesize and i2 < totalResults2 and i2 < 20 and not "8" in printpoint and ((count + count_) < pagesize) and not xbmc.abortRequested:
-						id_ = "" ; finalurl_ = ""
-						title_ = "" ; thumb_ = "" ; desc_ = "" ; fanart_ = ""
-						id_ = str(prms2['items'][i2][u'snippet'][u'resourceId'][u'videoId']) #Video ID (Playlist)
-						if id_ != "":
-							finalurl_ = "plugin://plugin.video.youtube/play/?video_id="+id_+"&hd=1"
-							title_ = str(prms2['items'][i2][u'snippet'][u'title'].encode('utf-8'))
-							try:
-								thumb_ = str(prms2['items'][i2][u'snippet'][u'thumbnails'][u'default'][u'url'])
-								fanart_ = str(prms['items'][i2][u'snippet'][u'thumbnails'][u'high'][u'url'])
-							except Exception, TypeError: extra = extra + newline + 'thumb TypeError: ' + str(TypeError) + space + 'i2' + space2 + str(i2) + space + 'id' + space2 + str(id_)
-							desc_ = str(prms2['items'][i2][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
-							
-							id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i2, i_='i2')
-						
-						#print 'i2' + space2 + str(i2) + space + 'id' + space2 + str(id)
-						i2 += 1
-				
-				elif id2_ != "":
-					id_ = id2_
-					finalurl_ = 'plugin://plugin.video.dailymotion_com/?url='+id_+'&mode=playVideo'
-					if '&dailymotion_id=' in x: #if onlydata == True:
-						title_ = str(prms[u'title'])
-						try: thumb_ = str(prms[u'thumbnail_large_url'])
-						except Exception, TypeError: pass
-						try: desc_ = str(prms[u'description']).encode('utf-8')
-						except Exception, TypeError: pass
-						try: fanart_ = str(prms[u'thumbnail_large_url'])
-						except Exception, TypeError: pass
+								try: playlistid_ = str(prms['items'][i][u'id'][u'playlistId'])
+								except:
+									try: id_ = str(prms['items'][i][u'id'][u'videoId'])
+									except: id_ = str(prms['items'][i][u'id'])
+									
+					elif "&youtube_se=" in x or '&custom_se=' in x:
+						if onlydata == True:
+							id_ = str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)
+						else:
+							#print str(i)
+							id_ = str(prms['items'][i][u'id'][u'videoId']) #Video ID (Search)		
+					elif '&youtube_se2=' in x:
+						id_ = str(prms['items'][i][u'snippet'][u'channelId']) #Video ID (Search)
+					elif '&dailymotion_id=' in x:
+						id2_ = str(prms[u'id'])
 					elif '&dailymotion_pl=' in x:
-						title_ = str(prms[u'list'][i][u'title'].encode('utf-8'))
-						thumb_ = str(prms[u'list'][i][u'thumbnail_large_url'])
-						desc_ = str(prms[u'list'][i][u'description'].encode('utf-8'))
-						fanart_ = str(prms[u'list'][i][u'thumbnail_large_url'])
+						#if onlydata == True:
+						id2_ = str(prms[u'list'][i][u'id'])
+							
 					
+					if id_ != "":
+						#if '&youtube_pl=' in x: finalurl_ = "plugin://plugin.video.youtube/playlist/"+id_+"/"
+						finalurl_ = "plugin://plugin.video.youtube/play/?video_id="+id_+"&hd=1"
+						title_ = str(prms['items'][i][u'snippet'][u'title'].encode('utf-8'))
+						try:
+							thumb_ = str(prms['items'][i][u'snippet'][u'thumbnails'][thumbnails][u'url'])
+							fanart_ = str(prms['items'][i][u'snippet'][u'thumbnails'][u'high'][u'url'])
+						except Exception, TypeError: extra = extra + newline + 'thumb TypeError: ' + str(TypeError) + space + 'i' + space2 + str(i) + space + 'id_' + space2 + str(id_)
+						desc_ = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8'))
 						
-					id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i')
-			
-			#except Exception, TypeError:
-				#except__ = except__ + newline + "i" + space2 + str(i) + space + "id" + space2 + str(id)
-				#if not 'list index out of range' in TypeError: extra = extra + newline + "i" + space2 + str(i) + space + "TypeError" + space2 + str(TypeError)
-				#else: printpoint = printpoint + "8"
+						
+						id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i')
+						
+					elif playlistid_ != "":
+						url2 = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId='+playlistid_+'&key='+api_youtube_featherence+'&part=snippet&maxResults=20&pageToken='
+						link2 = OPEN_URL(url2)
+						prms2 = json.loads(link2)
+						totalResults2 = int(prms2['pageInfo'][u'totalResults']) #if bigger than pagesize needs to add more result
+						totalpagesN = (totalResults2 / pagesize) + 1
+						
+						text = "url2" + space2 + str(url2) + newline + \
+						"link2" + space2 + str(link2) + newline + \
+						"prms2" + space2 + str(prms2) + newline + \
+						"totalResults2" + space2 + str(totalResults2)
+						printlog(title='apimaster_test3', printpoint=printpoint, text=text, level=0, option="")
+						
+						
+						i2 = 0
+						while i2 < pagesize and i2 < totalResults2 and i2 < 20 and not "8" in printpoint and ((count + count_) < pagesize) and not xbmc.abortRequested:
+							id_ = "" ; finalurl_ = ""
+							title_ = "" ; thumb_ = "" ; desc_ = "" ; fanart_ = ""
+							try: id_ = str(prms2['items'][i2][u'snippet'][u'resourceId'][u'videoId']) #Video ID (Playlist)
+							except Exception, TypeError:
+								extra = extra + newline + 'TypeError' + space2 + str(TypeError)
+							if id_ != "":
+								finalurl_ = "plugin://plugin.video.youtube/play/?video_id="+id_+"&hd=1"
+								title_ = str(prms2['items'][i2][u'snippet'][u'title'].encode('utf-8'))
+								try:
+									thumb_ = str(prms2['items'][i2][u'snippet'][u'thumbnails'][u'default'][u'url'])
+									fanart_ = str(prms['items'][i2][u'snippet'][u'thumbnails'][u'high'][u'url'])
+								except Exception, TypeError: extra = extra + newline + 'thumb TypeError: ' + str(TypeError) + space + 'i2' + space2 + str(i2) + space + 'id' + space2 + str(id_)
+								desc_ = str(prms2['items'][i2][u'snippet'][u'description'].encode('utf-8')) #.decode('utf-8')
+								
+								id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i2, i_='i2')
+							
+							#print 'i2' + space2 + str(i2) + space + 'id' + space2 + str(id)
+							i2 += 1
+					
+					elif id2_ != "":
+						id_ = id2_
+						finalurl_ = 'plugin://plugin.video.dailymotion_com/?url='+id_+'&mode=playVideo'
+						if '&dailymotion_id=' in x: #if onlydata == True:
+							title_ = to_utf8(prms[u'title'])
+							try: thumb_ = str(prms[u'thumbnail_large_url'])
+							except Exception, TypeError: pass
+							try: desc_ = str(prms[u'description']).encode('utf-8')
+							except Exception, TypeError: pass
+							try: fanart_ = str(prms[u'thumbnail_large_url'])
+							except Exception, TypeError: pass
+						elif '&dailymotion_pl=' in x:
+							title_ = str(prms[u'list'][i][u'title'].encode('utf-8'))
+							thumb_ = str(prms[u'list'][i][u'thumbnail_large_url'])
+							desc_ = str(prms[u'list'][i][u'description'].encode('utf-8'))
+							fanart_ = str(prms[u'list'][i][u'thumbnail_large_url'])
+						
+							
+						id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i')
 				
-			
-			i += 1
-			if "&custom_se=" in x2 and count > 0 and playlist_L != []: printpoint = printpoint + "8"
-			elif onlydata == True and count > 0 and playlist_L != []: printpoint = printpoint + "8"
+				#except Exception, TypeError:
+					#except__ = except__ + newline + "i" + space2 + str(i) + space + "id" + space2 + str(id)
+					#if not 'list index out of range' in TypeError: extra = extra + newline + "i" + space2 + str(i) + space + "TypeError" + space2 + str(TypeError)
+					#else: printpoint = printpoint + "8"
+					
+				
+				i += 1
+				if "&custom_se=" in x2 and count > 0 and playlist_L != []: printpoint = printpoint + "8"
+				elif onlydata == True and count > 0 and playlist_L != []: printpoint = printpoint + "8"
 		
 	#numOfItems2 = len(playlist_L)
 	numOfItems2 = count
@@ -1315,7 +1340,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 	nextpage = page + 1
 	
 	#if totalpages > page: addDir('[COLOR=yellow]' + localize(33078) + '[/COLOR]',x,13,"special://skin/media/DefaultVideo2.png",str79528.encode('utf-8'),str(nextpage),50) #Next Page
-	if onlydata == True:
+	if onlydata == True and not '9' in printpoint:
 		if id_L == []:
 			pass
 			#id_L.append(id_)
@@ -1361,8 +1386,11 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 	"extra" + space2 + str(extra)
 	printlog(title='apimaster_id', printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
-			
-	return finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L
+	
+	if '9' in printpoint:
+		return "", [], [], [], [], [], []
+	else:
+		return finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L
 
 def apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i'):
 	if not finalurl_ in playlist and not "Deleted video" in title_ and not "Private video" in title_ and finalurl_ != "":
@@ -2498,7 +2526,8 @@ def pluginend(admin):
 		
 	else: notification("?","","",1000)
 	
-	if mode != 17 and mode != 5 and mode != 21 and mode != 4 and mode != 9 and mode != 13 and mode != 3: # and mode != 20
+	if mode != "" and mode != None and mode != 100:
+		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_DURATION)
 		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_TITLE)
 		#xbmcplugin.setContent(int(sys.argv[1]), 'tvshows')
 		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL, name)
@@ -2506,15 +2535,14 @@ def pluginend(admin):
 		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_VIDEO_RATING)
 		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_VIDEO_YEAR)
 		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_DATE)
-		if mode != "" and mode != None and mode != 100:
-			#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_DURATION)
-			xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_UNSORTED)
-			#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL)
-			xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
-			#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_VIDEO_TITLE, name)
-			
-			#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_TITLE, name)
+		xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_UNSORTED)
+		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL)
+		xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
+		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_VIDEO_TITLE, name)
 		
+		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_TITLE, name)
+		printpoint = printpoint + "S"
+	if mode != 17 and mode != 5 and mode != 21 and mode != 4 and mode != 9 and mode != 13 and mode != 3: # and mode != 20
 		xbmcplugin.endOfDirectory(int(sys.argv[1]))
 		printpoint = printpoint + "7"
 	

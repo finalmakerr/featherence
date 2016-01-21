@@ -1242,15 +1242,19 @@ def mode70(value, admin, name, printpoint, property_temp):
 			elif '&director=' in property_temp:
 				printpoint = printpoint + "3"
 				property_temp = property_temp.replace('&director=',"")
-				#input = 'directormovies,director=%s' % (property_temp)
-				input = 'info=extendedinfo,director=%s' % (property_temp)
+				input = 'info=extendedactorinfo,name=%s' % (property_temp)
+				#input = 'info=directormovies,director=%s' % (property_temp)
+				#input = 'info=extendedinfo,director=%s' % (property_temp)
 				
 
 		elif value == '5':
 			'''Write info'''
 			input0 = 'writermovies'
 			input2 = 'writer'
-			if listitemwriter != "":
+			#input = 'info=extendedinfo,writer=%s,writer=%s' % (listitemwriter)
+			#input = 'info=writermovies,writer=%s' % (listitemwriter)
+			input = 'info=extendedactorinfo,name=%s' % (listitemwriter)
+			if listitemwriter != "" and 1 + 1 == 3:
 				if ' / ' in listitemwriter and 1 + 1 == 3:
 					listitemwriter_ = listitemwriter.split(' / ')
 					list = []
@@ -1266,13 +1270,13 @@ def mode70(value, admin, name, printpoint, property_temp):
 							input = 'info=extendedinfo,writer=%s' % (value)
 							'''---------------------------'''
 				else:
+					pass
 					#input = 'info=writermovies,writer=%s' % (listitemwriter)
-					input = 'info=extendedinfo,writer=%s,writer=%s' % (listitemwriter)
+					#input = 'info=extendedinfo,writer=%s,writer=%s' % (listitemwriter)
 					'''---------------------------'''
 		elif value == '10':
-			input0 = 'ratedialog'
-			input2 = 'name'
-			input = listitemlabel		
+			'''Rate Movie/TVshow'''
+			input = 'info=ratedialog,name=%s' % (str(listitemlabel))
 		elif value == '20':
 			#xbmc.executebuiltin('RunScript(script.extendedinfo,info=seasoninfo,tvshow='+listitemtvshowtitle+',season='+listitemseason+')')
 			xbmc.executebuiltin('RunScript(script.extendedinfo,info=extendedinfo,director='+listitemdirector+')')
@@ -3171,7 +3175,8 @@ def mode215(value, admin, name, printpoint):
 		if id != "" and id != None and admin and admin3 == 'true':	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(78942))
-			setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=519&value=0)')
+			#setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=519&value=0)')
+			setSkinSetting('0','action'+id,'RunAddon(plugin.video.featherence.docu)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/animals.png')
 			'''---------------------------'''
 	

@@ -2062,8 +2062,8 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 	thumb = 'http://ia.media-imdb.com/images/M/MV5BMjEyMzgwNTUzMl5BMl5BanBnXkFtZTcwNTMxMzM3Ng@@._V1__SX2064_SY1000_.jpg'
 	list = []
 	if 'English' in General_LanguageL:
-		list.append('&dailymotion_id=x2balxi') #English
 		list.append('&dailymotion_id=x2f088y') #English
+		list.append('&dailymotion_id=x2balxi&name_=default&') #English
 	if 'Hindi' in General_LanguageL:
 		list.append('&dailymotion_id=x2snuxz') #Hindi
 	addDir(addonString(10540).encode('utf-8') + space + '1' + space + '(1994)',list,6,thumb,addonString(105400).encode('utf-8'),'1',50, getAddonFanart(background, custom="https://i.ytimg.com/vi/n_Cl4Lwia3o/maxresdefault.jpg"))
@@ -2074,7 +2074,7 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 	if 'English' in General_LanguageL:
 		list.append('&dailymotion_id=x3gihrq') #English
 	if 'Hindi' in General_LanguageL:
-		list.append('&dailymotion_id=x2sj8p2') #Hindi
+		pass
 		
 	addDir(addonString(10540).encode('utf-8') + space + '2' + space + '(1998)',list,6,thumb,addonString(105400).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://s1.dmcdn.net/JAHm2/1280x720-dM3.jpg"))
 	
@@ -2082,10 +2082,11 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 	thumb = 'http://ia.media-imdb.com/images/M/MV5BMjAyNjE3MTkzMF5BMl5BanBnXkFtZTYwNzc3NDg2._V1_UY268_CR5,0,182,268_AL_.jpg'
 	list = []
 	if 'English' in General_LanguageL:
-		list.append('&dailymotion_id=x2iopcp') #English
+		pass
+		#list.append('&dailymotion_id=x2iopcp') #Removed!
 	if 'Hindi' in General_LanguageL:
-		list.append('&dailymotion_id=x2sqt1o') #Hindi
-	addDir(addonString(10540).encode('utf-8') + space + '3' + space + '(2004)',list,6,thumb,addonString(105400).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://wallpaperbeta.com/wallpaper_800x600/the_lion_king_3_hakuna_matata_1_%C3%90_%C3%90_film_800x600_hd-wallpaper-10933.jpg"))
+		list.append('&dailymotion_id=x2sqt1o') 
+	addDir(addonString(10540).encode('utf-8') + space + '3' + space + '(2004)',list,17,thumb,addonString(105400).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://wallpaperbeta.com/wallpaper_800x600/the_lion_king_3_hakuna_matata_1_%C3%90_%C3%90_film_800x600_hd-wallpaper-10933.jpg"))
 	
 	'''נילס הולגרסון'''
 	list = []

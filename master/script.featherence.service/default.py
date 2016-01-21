@@ -1954,7 +1954,7 @@ elif mode >= 200 and mode <= 249:
 									if x2 == "" or x2 == 'None' or x2 == None: x3 = "false"
 									else:
 										x3 = "true" ; x2 = "*" + x2 + "*"
-										setSkinSetting('1', str(x1), str(x3))
+									setSkinSetting('1', str(x1), str(x3))
 								
 								elif "=2" in line:
 									'''xbmc.executebuiltin'''
@@ -1985,10 +1985,10 @@ elif mode >= 200 and mode <= 249:
 				if "V" in printpoint:
 					#mode215('_',admin,'','') ; xbmc.sleep(3000)
 					xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_)')
-					#xbmc.executebuiltin('Action(Back)')
+					xbmc.executebuiltin('Action(Back)')
 					xbmc.sleep(2000)
-					returned = dialogyesno('Your current language is %s' % (systemlanguage), 'Does the buttons are in %s?' % (systemlanguage))
-					if returned == 'skip':
+					returned_ = dialogyesno('Your current language is %s' % (systemlanguage), 'Are the buttons in %s?' % (systemlanguage))
+					if returned_ == 'skip':
 						xbmc.sleep(3000)
 						mode215('LABEL', admin, name, printpoint)
 					#ReloadSkin(admin)
@@ -1996,8 +1996,8 @@ elif mode >= 200 and mode <= 249:
 					'''---------------------------'''
 				else:
 					pass
-					#Custom1000(str(list[returned]),100,str(list2[returned2]),0)
-				Custom1000(str(list[returned]),100,str(list2[returned2]),0)
+					Custom1000(str(list[returned]),100,str(list2[returned2]),0)
+				
 		text = "path" + space2 + str(path) + newline + \
 		"list" + space2 + str(list) + space + 'returned' + space2 + str(returned) + newline + \
 		"list2" + space2 + str(list2) + space + 'returned2' + space2 + str(returned2) + newline + \

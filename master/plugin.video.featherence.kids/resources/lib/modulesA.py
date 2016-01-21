@@ -634,7 +634,6 @@ def CATEGORIES105A(General_LanguageL, background, background2): #עמוד הבא
 	'''רוסית'''
 	if 'Russian' in General_LanguageL:
 		list.append('&youtube_pl=PLIf4rYL_srdU4GHrrC2SY6FpPWV05dr-i') #Russian Kids Movies
-		list.append('&youtube_ch=getmovies/playlists') #getmovies
 		list.append('&youtube_id=jEQvhO3QCDg') #Three heroes and Shamahanskaya queen (cartoon)
 		list.append('&youtube_id=8vPQKM5UOJU')
 	

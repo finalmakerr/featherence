@@ -713,12 +713,12 @@ msgid "Watch varied of videos about %s."
 msgstr "צפה במגוון תכנים בנושא -%s".
 
 msgctxt "#32100
-msgid ""
-msgstr ""
+msgid "Your email provider isn't supported."
+msgstr "ספק הדואר שלך אינו נתמך."
 
 msgctxt "#32101
-msgid ""
-msgstr ""
+msgid "Contact us for support!"
+msgstr "צור עמנו קשר לתמיכה!"
 
 msgctxt "#32102
 msgid ""

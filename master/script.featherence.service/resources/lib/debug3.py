@@ -51,17 +51,24 @@ def sendMail(Debug_Email, Debug_Password, subject, text, *attachmentFilePaths):
 	#from email.MIMEImage import MIMEImage
 	#from email import Encoders
 	TypeError = "" ; extra = "" ; gmailUser = "" ; count = 0
-	
-	#if 1 + 1 == 2:
-	try:
+	SMTP_SSL = False
+	#recipient = 'infohtpt@gmail.com'
+	if 1 + 1 == 2:
+		#try:
 		dp = xbmcgui.DialogProgress()
 		dp.create(addonString(32095), addonString(10),"")
 		while count == 0 and not dp.iscanceled() and not xbmc.abortRequested:
 			if '@gmail.com' in Debug_Email: mailServer = smtplib.SMTP('smtp.gmail.com', 587) #, timeout=20
+			elif '@walla.com' in Debug_Email:
+				mailServer = smtplib.SMTP_SSL('out.walla.co.il', 587)
+				SMTP_SSL = True
+			elif '@walla.co.il' in Debug_Email:
+				mailServer = smtplib.SMTP_SSL('out.walla.co.il', 587)
+				SMTP_SSL = True
 			else:
-				notification('Error email is not supported!','','',2000)
-				sys.exit(1)
-			#recipient = 'infohtpt@gmail.com'
+				notification_common('27')
+				count += 1 ; xbmc.sleep(500)
+			
 			msg = MIMEMultipart()
 			msg['From'] = Debug_Email
 			msg['To'] = recipient
@@ -78,7 +85,8 @@ def sendMail(Debug_Email, Debug_Password, subject, text, *attachmentFilePaths):
 			
 			dp.update(20,addonString(32094), addonString(32093) % ("1","4"))
 			#mailServer.ehlo()
-			mailServer.starttls()
+			if SMTP_SSL == False:
+				mailServer.starttls()
 			dp.update(30,addonString(32094), addonString(32093) % ("2","4"))
 			mailServer.ehlo()
 			dp.update(40,addonString(32094), addonString(32093) % ("3","4"))
@@ -92,7 +100,7 @@ def sendMail(Debug_Email, Debug_Password, subject, text, *attachmentFilePaths):
 			notification(addonString(74483), localize(20186), "", 2000)
 			returned = 'ok'
 			'''---------------------------'''
-	#try: test = 'test'
+	try: test = 'test'
 	except Exception, TypeError:
 		try: mailServer.quit()
 		except: pass
@@ -118,13 +126,14 @@ def sendMail(Debug_Email, Debug_Password, subject, text, *attachmentFilePaths):
 		else:
 			returned = 'skip'
 			'''---------------------------'''
+			
 	dp.close
 	text = "returned" + space2 + to_utf8(returned) + newline + \
 	"Debug_Email" + space2 + to_utf8(Debug_Email) + newline + \
 	"recipient" + space2 + to_utf8(recipient) + newline + \
 	"attachmentFilePaths" + space2 + str(attachmentFilePaths) + newline + \
 	"extra" + space2 + to_utf8(extra)
-	printlog(title='sendMail', printpoint=printpoint, text=text, level=0, option="")
+	printlog(title='sendMail', printpoint=printpoint, text=text, level=1, option="")
 
 	return returned, str(TypeError)
 
