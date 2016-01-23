@@ -454,8 +454,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#31129
-msgid ""
-msgstr ""
+msgid "Allow thumbnail fanart"
+msgstr "אפשר פאנארט מפוסטר"
 
 msgctxt "#31130
 msgid "Hide colors and textures when fanart exist."
@@ -2079,8 +2079,8 @@ msgid "Choose this option in order to temporary switch into a different skin."
 msgstr "בחר באפשרות זאת אם ברצונך לעבור למעטפת אחרת מבלי להסיר את ה-featherence."
 
 msgctxt "#78942
-msgid "Science and Nature"
-msgstr "מדע וטבע"
+msgid "Documentary"
+msgstr "דוקומנטרי"
 
 msgctxt "#78943
 msgid "Opera Soap"

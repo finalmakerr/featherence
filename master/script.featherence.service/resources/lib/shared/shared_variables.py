@@ -291,7 +291,14 @@ tvshows_path = os.path.join(library_path,'tvshows','')
 addondata_path = os.path.join(userdata_path,'addon_data','')
 
 featherenceservice_addondata_path = os.path.join(addondata_path,'script.featherence.service', '')
+if not os.path.exists(featherenceservice_addondata_path):
+	try: os.mkdir(featherenceservice_addondata_path)
+	except: pass
 featherenceserviceaddondata_media_path = os.path.join(featherenceservice_addondata_path, 'media', '')
+if not os.path.exists(featherenceserviceaddondata_media_path):
+	try: os.mkdir(featherenceserviceaddondata_media_path)
+	except: pass
+
 packages_path = os.path.join(addons_path,'packages','')
 
 #skin_path = os.path.join(xbmc.translatePath("special://skin").decode("utf-8"))

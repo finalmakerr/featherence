@@ -146,69 +146,109 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 	'''---------------------------'''
 	return returned	
 
-def TranslatePath(x, filteroff=[]):
-	name = 'TranslatePath' ; printpoint = "" ; returned = "" ; x2 = "" ; TypeError = "" ; extra = ""
+def TranslatePath(x, filename=True):
+	name = 'TranslatePath' ; printpoint = "" ; returned = "" ; returned2 = "" ; TypeError = "" ; extra = ""
 	if x == None: x = ""
+	
 	if systemplatformwindows: slash = '\\'
 	else: slash = '/'
 	
 	if 'image://' in x:
-		x2 = x.replace('image://',"",1)
-		x2 = x2.replace('%5c',slash)
-		x2 = x2.replace('%3a',':')
-		if x2[-1:] == '/': x2 = x2.replace(x2[-1:],"",1)
-	
+		printpoint = printpoint + '1'
+		returned = x.replace('image://',"",1)
+		returned = returned.replace('%5c',slash)
+		returned = returned.replace('%3a',':')
+		if returned[-1:] == '/': returned = returned.replace(returned[-1:],"",1)
+		
+		
 	elif 'https://' in x or 'http://' in x:
 		printpoint = printpoint + '2'
-		x2 = x
-	else:
-		if 'special://' in x:
-			try: x2 = os.path.join(xbmc.translatePath(x).decode("utf-8"))
-			except Exception, TypeError: extra = extra + newline + 'TypeError: ' + str(TypeError)
-		else:
-			#x2 = os.path.join(xbmc.translatePath(x))
-			x2 = x
+		returned = x
+	elif 'special://' in x:
+		try:
+			printpoint = printpoint + '3'
+			returned = os.path.join(xbmc.translatePath(x).decode("utf-8"))
+		except Exception, TypeError:
+			printpoint = printpoint + '9'
+			extra = extra + newline + 'TypeError: ' + str(TypeError)
+			
+		returned2 = x
 	
-	x2 = to_unicode(x2)
-	
-	if '2' in printpoint:
-		returned = x2
-	elif os.path.exists(x2):
-		if filteroff != []:
-			for y in filteroff:
-				if y in x2:
-					printpoint = printpoint + '8'
-					break
-		if not '8' in printpoint: returned = x2
-	
+	elif os.path.exists(x):
+		returned = x
+		printpoint = printpoint + '5'
+		
+		list = [temp_path, addons_path, xbmc_path, userdata_path, thumbnails_path, database_path]
+		list2 = ['special://temp/', 'special://home/addons/', 'special://xbmc/',  'special://userdata/',  'special://thumbnails/',  'special://database/']
+		i = 0
+		for y in list:
+			if y in x:
+				returned2 = x.replace(y, list2[i])
+				break
+			i += 1
+
 	else: printpoint = printpoint + '9'
 	
-	#try:
-	text = 'x' + space2 + str(x) + space + 'x2' + space2 + to_utf8(x2) + space + 'returned' + space2 + to_utf8(returned)
+	if filename == False:
+		filename_ = os.path.basename(returned)
+		returned = returned.replace(filename_,"",1)
+		
+		filename_ = os.path.basename(returned2)
+		returned2 = returned2.replace(filename_,"",1)
+		
+	text = newline + \
+	'x' + space2 + str(x) + newline + \
+	'returned' + space2 + to_utf8(returned) + newline + \
+	'returned2' + space2 + to_utf8(returned2) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
-	#except Exception, TypeError:
-	#extra = extra + newline + 'TypeError: ' + str(TypeError)
-	#text = 'x' + space2 + str(x) + space + extra
-	#printlog(title=name, printpoint=printpoint, text=text, level=7, option="")
-	return returned
+	
+	return to_unicode(returned), to_unicode(returned2)
 
-def GeneratePath(x2):
-	name = 'GeneratePath' ; printpoint = "" ; returned = "" ; y = "" ; y_ = "" ; y__ = "" ; y2 = "" ; TypeError = "" ; extra = ""
-	if x2 == None: x = ""
+def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[]):
+	name = 'GeneratePath' ; printpoint = "" ; formula_ = "" ; subdir = "" ; filename = "" ; subdir_filename = "" ; TypeError = "" ; extra = ""
+	if x2 == None: x2 = ""
+	
 	if systemplatformwindows: slash = '\\'
 	else: slash = '/'
-	
-	y = os.path.basename(x2)
-	if y == 'icon.png':
-		y_ = x2.split(slash)
-		y__ = y_[-2]
-		y = to_unicode(y__) + '_' + to_unicode(y)
-	y2 = os.path.join(featherenceserviceaddondata_media_path, to_unicode(y))
-	y3 = to_unicode(y)
-	text = 'x2' + space2 + to_utf8(x2) + space + 'y' + space2 + to_utf8(y) + space + 'y_' + space2 + str(y_) + space + 'y__' + space2 + to_utf8(y__) + space + 'y2' + space2 + to_utf8(y2) + extra
+		
+	if x2 == "" and custom == "":
+		printpoint = printpoint + '9'
+	elif x2 == "":
+		printpoint = printpoint + '1'
+		formula = formula + newline + custom + str(x2)
+	elif 'https://' in x2 or 'http://' in x2:
+		printpoint = printpoint + '2'
+		formula = formula + newline + custom + str(x2)
+	else:
+		if ignoreL != []:
+			printpoint = printpoint + '3'
+			for x in ignoreL:
+				if x in x2_:
+					printpoint = printpoint + '4'
+					formula = formula + newline + custom + str(x2_)
+					break
+					
+		if not '4' in printpoint:
+			printpoint = printpoint + '7'
+			filename = os.path.basename(x2)
+			subdir = x2.split(slash)
+			subdir = subdir[-2]
+			subdir_filename = to_unicode(subdir) + '_' + to_unicode(filename)
+			target = os.path.join(featherenceserviceaddondata_media_path, subdir_filename)
+			
+			copyfiles(x2, target, chmod="", mount=False)
+			custommediaL.append(subdir_filename)
+			
+			formula = formula + newline + custom + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(subdir_filename)
+		
+	text = 'custom' + space2 + str(custom) + newline + \
+	'ignoreL' + space2 + str(ignoreL) + newline + \
+	'x2' + space2 + to_utf8(x2) + newline + \
+	'x2_' + space2 + to_utf8(x2_) + newline + \
+	'subdir_filename' + space2 + to_utf8(subdir_filename) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 	
-	return y, y2, y3
+	return formula, custommediaL
 	
 def ExtractAll(source, output):
 	name = 'ExtractAll' ; printpoint = "" ; TypeError = "" ; extra = ""
@@ -1567,7 +1607,7 @@ def installaddonP(admin, addon, update=True):
 		else: printpoint = printpoint + "7"
 		
 	elif addon == 'browser.chromium-browser':
-		
+		'''5.8'''
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			fileID = getfileID(addon+".zip")
 			DownloadFile("http://unofficial.addon.pro/addons/4.1/Generic/x86_64/browser.chromium-browser/browser.chromium-browser-4.1.4.zip", addon + ".zip", packages_path, addons_path, silent=True)
@@ -1576,11 +1616,12 @@ def installaddonP(admin, addon, update=True):
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
 	
-	elif addon == 'browser.chromium-browser':
-		
+	
+	elif addon == 'browser.chromium':
+		'''6.0'''
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			fileID = getfileID(addon+".zip")
-			DownloadFile("https://www.dropbox.com/s/"+fileID+"/"+addon+".zip?dl=1", addon + ".zip", packages_path, addons_path, silent=True)
+			DownloadFile("https://www.dropbox.com/sh/7rwud8jv5xu85ga/AABvIzzF-8w-H1IduFRgo_dNa/addons/chromium/browser.chromium-6.0.6.zip?dl=0", addon + ".zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
@@ -1601,6 +1642,15 @@ def installaddonP(admin, addon, update=True):
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			fileID = getfileID(addon+".zip")
 			DownloadFile("https://www.dropbox.com/s/"+fileID+"/"+addon+".zip?dl=1", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'plugin.video.extreme.com':
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			fileID = getfileID(addon+".zip")
+			DownloadFile("http://mirrors.superrepo.org/v5/addons/plugin.video.extreme.com/plugin.video.extreme.com-1.0.5.zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
@@ -1713,7 +1763,15 @@ def installaddonP(admin, addon, update=True):
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
-		
+	
+	elif addon == 'plugin.video.thewiz.wall': #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("http://ftp.vim.org/ftp/mediaplayer/xbmc/addons/helix/script.extendedinfo/script.extendedinfo-3.1.2.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
 	elif addon == 'plugin.video.OperationRobocopUltimate': #FIXED PATH
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			DownloadFile("https://github.com/hmemar/husham.com/raw/master/zip/plugin.video.OperationRobocopUltimate/plugin.video.OperationRobocopUltimate-1.9.667.zip", addon + ".zip", packages_path, addons_path, silent=True)

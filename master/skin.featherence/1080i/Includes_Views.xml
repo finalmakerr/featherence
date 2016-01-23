@@ -298,7 +298,7 @@
 	  <texture background="true">$VAR[VideoInformation2]</texture>
 	  <visible>IsEmpty(ListItem.Genre)</visible>
 	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
-	  <visible>!Container.Content(seasons) + !Container.Content(episodes)</visible>
+	  <visible>[!Container.Content(seasons) + !Container.Content(episodes) + !SubString(ListItem.path,videodb://movies/sets/)] | IsEmpty(ListItem.Genre)</visible>
 	</control>
 	<control type="label" description="שעות/דקות/עונות">
 	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos35</include>

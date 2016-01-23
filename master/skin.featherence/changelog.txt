@@ -4,6 +4,18 @@ WIP - WORK IN PROGRESS
 - Horizontal view display position for multipages.
 - Added clear fanart support.
 - Touch device support.
+- Update dialogtextviewer.
+
+------------------------
+Featherence v0.2.8 (xx-Jan-16)
+------------------------
+- Added Show poster as fanart (optional).
+- Added choose overlay for sub marker.
+- Minor bugs fix.
+- Update ExtendedInfo actions.
+- Update dialogselect window.
+- Update videos information bar.
+- Update widget script.
 
 ------------------------
 Featherence v0.2.7 (20-Jan-16)

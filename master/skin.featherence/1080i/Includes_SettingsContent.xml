@@ -474,6 +474,26 @@
 		<visible>Container(100).Hasfocus(24)</visible>
 	  </item>
 	  
+	  <item id="235" description="שקיפות (סמן תפריט משני)">
+		<label>$LOCALIZE[78215] ($LOCALIZE[79593])</label>
+		<label2>$INFO[Skin.String(SubMenuMarkOverlay)]</label2>
+		<thumb>misc/help/SubMenuMarkOverlay.png</thumb>
+		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[79593].</property>
+		<onclick condition="Skin.String(SubMenuMarkOverlay, )">Skin.SetString(SubMenuMarkOverlay, 100)</onclick>
+		<onclick condition="Skin.String(SubMenuMarkOverlay, 100)">Skin.SetString(SubMenuMarkOverlay, 95)</onclick>
+		<onclick condition="Skin.String(SubMenuMarkOverlay, 95)">Skin.SetString(SubMenuMarkOverlay, 90)</onclick>
+		<onclick condition="Skin.String(SubMenuMarkOverlay, 90)">Skin.SetString(SubMenuMarkOverlay, 85)</onclick>
+		<onclick condition="Skin.String(SubMenuMarkOverlay, 85)">Skin.SetString(SubMenuMarkOverlay, 80)</onclick>
+		<onclick condition="Skin.String(SubMenuMarkOverlay, 80)">Skin.SetString(SubMenuMarkOverlay, 70)</onclick>
+		<onclick condition="Skin.String(SubMenuMarkOverlay, 70)">Skin.SetString(SubMenuMarkOverlay, 60)</onclick>
+		<onclick condition="Skin.String(SubMenuMarkOverlay, 60)">Skin.SetString(SubMenuMarkOverlay, 50)</onclick>
+		<onclick condition="Skin.String(SubMenuMarkOverlay, 50)">Skin.SetString(SubMenuMarkOverlay, 40)</onclick>
+		<onclick condition="Skin.String(SubMenuMarkOverlay, 40)">Skin.SetString(SubMenuMarkOverlay, 30)</onclick>
+		<onclick condition="Skin.String(SubMenuMarkOverlay, 30)">Skin.SetString(SubMenuMarkOverlay, 20)</onclick>
+		<onclick condition="Skin.String(SubMenuMarkOverlay, 20)">Skin.SetString(SubMenuMarkOverlay, )</onclick>
+		<visible>Container(100).Hasfocus(24)</visible>
+	  </item>
+	  
 	  <item id="240" description="שקיפות (סמל לא נבחר)">
 		<visible></visible>
 		<label>$LOCALIZE[78215] ($LOCALIZE[78015])</label>

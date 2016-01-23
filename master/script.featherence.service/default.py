@@ -610,9 +610,10 @@ elif mode == 63:
 
 elif mode == 64:
 	'''------------------------------
-	---?--------------------
+	---Extract from file-------------
 	------------------------------'''
-	pass
+	name = 'Extract from file'
+	mode64(value, admin, name, printpoint)
 	'''---------------------------'''
 
 elif mode == 65:
@@ -1763,21 +1764,11 @@ elif mode >= 200 and mode <= 249:
 								x = colorT.get('color'+str(i))
 								formula = formula + newline + 'color'+str(i)+'=0' + str(x)
 								x = iconT.get('icon'+str(i))
-								x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
-								if x2 != "":
-									y, y2, y3 = GeneratePath(x2)
-									copyfiles(x2, y2, chmod="", mount=False)
-									if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3) ; custommediaL.append(y)
-									else: formula = formula + newline + 'icon'+str(i)+'=0' + to_unicode(x)
-									#print 'test123 ' + 'x' + space2 + str(x) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
+								x2, x2_ = TranslatePath(x)
+								formula, custommediaL, = GeneratePath('icon'+str(i)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"])
 								x = backgroundT.get('background'+str(i))
-								x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
-								if x2 != "":
-									y, y2, y3 = GeneratePath(x2)
-									copyfiles(x2, y2, chmod="", mount=False)
-									if os.path.exists(y2): formula = formula + newline + 'background'+str(i)+'=0' + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3) ; custommediaL.append(y)
-									else: formula = formula + newline + 'background'+str(i)+'=0' + str(x)
-									#print 'test123 ' + 'x' + space2 + str(x) + newline + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'skin_backgrounds_path' + space2 + str(skin_backgrounds_path)
+								x2, x2_ = TranslatePath(x)
+								formula, custommediaL, = GeneratePath('background'+str(i)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"])
 						for i in range(90,120):
 							x = idT.get('id'+str(i))
 							if x != "" and x != None:
@@ -1794,24 +1785,11 @@ elif mode >= 200 and mode <= 249:
 									x = subT.get('sub'+str(i))
 									formula = formula + newline + 'sub'+str(i)+'=1' + str(x)
 									x = iconT.get('icon'+str(i))
-									x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
-									if x2 != "":
-										y, y2, y3 = GeneratePath(x2)
-										copyfiles(x2, y2, chmod="", mount=False)
-										#if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + to_utf8(y2) ; custommediaL.append(y)
-										if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'=0' + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3) ; custommediaL.append(y)
-										else: formula = formula + newline + 'icon'+str(i)+'=0' + str(x)
-										#print 'test123 ' + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
-									else: extra = extra + newline + 'icon not exists!' + space + 'x' + space2 + str(x) + space + 'x2' + space2 + str(x2)		
+									x2, x2_ = TranslatePath(x)
+									formula, custommediaL, = GeneratePath('icon'+str(i)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"])
 									x = backgroundT.get('background'+str(i))
-									x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
-									if x2 != "":
-										y, y2, y3 = GeneratePath(x2)
-										copyfiles(x2, y2, chmod="", mount=False)
-										if os.path.exists(y2): formula = formula + newline + 'background'+str(i)+'=0' + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3) ; custommediaL.append(y)
-										else: formula = formula + newline + 'background'+str(i)+'=0' + str(x)
-										#print 'test123 ' + 'x' + space2 + str(x) + newline + 'x2' + space2 + str(x2) + newline + 'y' + space2 + str(y) + newline + 'skin_backgrounds_path' + space2 + str(skin_backgrounds_path)
-									else: extra = extra + newline + 'fanart not exists!' + space + 'x' + space2 + str(x) + space + 'x2' + space2 + str(x2)
+									x2, x2_ = TranslatePath(x)
+									formula, custommediaL, = GeneratePath('background'+str(i)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"])
 									
 									for i2 in range(100,110):
 										x = label_T.get('label'+str(i)+'_'+str(i2))
@@ -1822,14 +1800,8 @@ elif mode >= 200 and mode <= 249:
 											x = off_T.get('off'+str(i)+'_'+str(i2))
 											formula = formula + newline + 'off'+str(i)+'_'+str(i2)+'=1' + str(x)
 											x = icon_T.get('icon'+str(i)+'_'+str(i2))
-											x2 = TranslatePath(x, filteroff=[featherenceserviceicons_path, skin_path])
-											if x2 != "":
-												y, y2, y3 = GeneratePath(x2)
-												copyfiles(x2, y2, chmod="", mount=False)
-												if os.path.exists(y2): formula = formula + newline + 'icon'+str(i)+'_'+str(i2)+'=0' + 'special://userdata/addon_data/script.featherence.service/media/' + str(y3) ; custommediaL.append(y)
-												else: formula = formula + newline + 'icon'+str(i)+'_'+str(i2)+'=0' + str(x)
-												print 'test123 ' + str('icon'+str(i)+'_'+str(i2)) + space + 'x' + space2 + str(x) + newline + 'y' + space2 + str(y) + newline + 'featherenceserviceaddondata_media_path' + space2 + str(featherenceserviceaddondata_media_path)
-												'''---------------------------'''
+											x2, x2_ = TranslatePath(x)
+											formula, custommediaL, = GeneratePath('icon'+str(i)+'_'+str(i2)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"])
 								else: extra = extra + newline + 'label not exists!' + space + 'x' + space2 + str(x)
 							else: extra = extra + newline + 'id not exists!' + space + 'x' + space2 + str(x)
 						Custom1000(str(list[returned]),50,str(list2[returned2]),5)
@@ -1879,21 +1851,21 @@ elif mode >= 200 and mode <= 249:
 						if filename != 'skip' and filename != "":
 							formula = to_utf8(formula)
 							
-							write_to_file(featherenceservice_addondata_path + "Featherence_" + ".txt", str(formula), append=False, silent=True, utf8=False) ; xbmc.sleep(200)
-							if not os.path.exists(featherenceservice_addondata_path + "Featherence_" + ".txt"):
+							write_to_file(featherenceserviceaddondata_media_path + "Featherence_" + ".txt", str(formula), append=False, silent=True, utf8=False) ; xbmc.sleep(200)
+							if not os.path.exists(featherenceserviceaddondata_media_path + "Featherence_" + ".txt"):
 								notification_common('17')
-								extra = extra + newline + featherenceservice_addondata_path + "Featherence_" + ".txt" + space + 'Is not found!'
+								extra = extra + newline + featherenceserviceaddondata_media_path + "Featherence_" + ".txt" + space + 'Is not found!'
 							else:
-								removefiles(featherenceservice_addondata_path + 'Featherence_' + to_unicode(list2[returned2]) + '.zip')
+								removefiles(featherenceserviceaddondata_media_path + 'Featherence_' + to_unicode(list2[returned2]) + '.zip')
 								zipname = featherenceservice_addondata_path + 'Featherence_' + str(filename).decode('utf-8')
 								if custommediaL == []:
-									CreateZip(featherenceservice_addondata_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=False)
+									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=0, append=False, ZipFullPath=False, temp=False)
 								else:
-									CreateZip(featherenceservice_addondata_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
-									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
+									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=0, append=False, ZipFullPath=False, temp=True)
+									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=custommediaL, filteroff=[], level=3, append='End', ZipFullPath=False, temp=True)
 									'''---------------------------'''
-								Custom1000(str(list[returned]),100,str(list2[returned2]),0)
-						else: notification_common('9') ; extra = extra + newline + 'filename is empty!'
+								Custom1000(str(list[returned]),100,str(list2[returned2]),4)
+						else: notification_common('9') ; extra = extra + home
 				
 				elif "B" in printpoint or "C" in printpoint:
 					'''------------------------------
@@ -1910,20 +1882,21 @@ elif mode >= 200 and mode <= 249:
 					else:
 						#formula_ = formula_.split(',')
 						#formula_ = CleanString(formula_, filter=[])
-						if os.path.exists(featherenceservice_addondata_path + 'Featherence_.txt'):
-							removefiles(featherenceservice_addondata_path + 'Featherence_.txt')
-						Custom1000(str(list[returned]),10,str(list2[returned2]),5) ; ExtractAll(path + file, featherenceservice_addondata_path) ; Custom1000(str(list[returned]),20,str(list2[returned2]),10)
+						if os.path.exists(featherenceserviceaddondata_media_path + 'Featherence_.txt'):
+							removefiles(featherenceserviceaddondata_media_path + 'Featherence_.txt')
+						Custom1000(str(list[returned]),10,str(list2[returned2]),5)
+						ExtractAll(path + file, featherenceserviceaddondata_media_path) ; Custom1000(str(list[returned]),20,str(list2[returned2]),10)
 						
-						if not os.path.exists(featherenceservice_addondata_path + 'Featherence_.txt'):
+						if not os.path.exists(featherenceserviceaddondata_media_path + 'Featherence_.txt'):
 							notification("Featherence_.txt is missing!", "Check your zip file!", "", 4000)
 						else:
 							Custom1000(str(list[returned]),0,str(list2[returned2]),5)
 							printpoint = printpoint + "V"
-							mode201('9', admin, name, '') ; xbmc.sleep(1000) #Clear current strings #Give some time to finalise the cleaning
+							mode201('9', admin, name, '') ; xbmc.sleep(1500) #Clear current strings #Give some time to finalise the cleaning
 							
 							import fileinput
 							count = 0
-							for line in fileinput.input(featherenceservice_addondata_path + 'Featherence_.txt'):
+							for line in fileinput.input(featherenceserviceaddondata_media_path + 'Featherence_.txt'):
 								count += 1
 								if count >= 10:
 									count = 0
@@ -1983,14 +1956,14 @@ elif mode >= 200 and mode <= 249:
 							Custom1000(str(list[returned]),100,str(list2[returned2]),3)
 				
 				if "V" in printpoint:
-					#mode215('_',admin,'','') ; xbmc.sleep(3000)
+					xbmc.sleep(500)
 					xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_)')
 					xbmc.executebuiltin('Action(Back)')
 					xbmc.sleep(2000)
 					returned_ = dialogyesno('Your current language is %s' % (systemlanguage), 'Are the buttons in %s?' % (systemlanguage))
 					if returned_ == 'skip':
 						xbmc.sleep(3000)
-						mode215('LABEL', admin, name, printpoint)
+						xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=LABEL)')
 					#ReloadSkin(admin)
 					#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=5)')
 					'''---------------------------'''
@@ -2006,7 +1979,7 @@ elif mode >= 200 and mode <= 249:
 		"formula" + space2 + str(formula) + space + "formula_" + space2 + str(formula_) + newline + \
 		"custommediaL" + space2 + str(custommediaL) + newline + \
 		"extra" + space2 + to_utf8(extra)
-		printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+		printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 		'''---------------------------'''
 	
 	elif mode == 204:

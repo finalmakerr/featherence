@@ -13,7 +13,7 @@
 	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
 	<value condition="![[StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(ShowDVDCases)] | !StringCompare(Container.Viewmode,$LOCALIZE[31013])]">5</value>
 	<value condition="![[[StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)] | !StringCompare(Container.Viewmode,$LOCALIZE[31015]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014])]">6</value>
-	<value condition="![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)]]">7</value>
+	<value condition="![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)] | Window.IsVisible(Home.xml)]">7</value>
 	<value condition="![!Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogContextMenu.xml)]">8</value>
 	<!--<value condition="!IsEmpty(ListItem.Rating)">8</value>-->
 	
@@ -296,6 +296,7 @@
 	<value condition="SubString(ListItem.Label,Next page) | SubString(ListItem.Label,$LOCALIZE[33078])">DefaultVideo2.png</value>
 	<value description="הרחבה" condition="Window.IsVisible(MyWeather.xml)">_</value>
 	<value description="כפתור מזג אוויר" condition="Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">weather/$INFO[Weather.fanartcode].png</value>
+	<value condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenrePic]</value>
 	<value condition="!IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
 	<value condition="!IsEmpty(Container(50).ListItem.Thumb)">$INFO[Container(50).ListItem.Thumb]</value>
 	<value description="הרחבה" condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
@@ -346,7 +347,7 @@
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Title)">[B]$INFO[VideoPlayer.Title][/B]</value>
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(Window(home).Property(TopVideoInformation7))">$INFO[Window(home).Property(TopVideoInformation7)]</value>
 	<value description="משפט סרט" condition="!IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
-	<value description="שם הפרק" condition="[Container.content(Episodes)] + !SubString(ListItem.Label,..,left) + !IsEmpty(ListItem.Title) + !StringCompare(ListItem.Title,ListItem.TVShowTitle) + !StringCompare(ListItem.Title,$INFO[System.CurrentControl])">[B]$INFO[ListItem.Title][/B]</value>
+	<value description="שם הפרק" condition="Container.Content(Episodes) + !StringCompare(ListItem.Label,..) + !IsEmpty(ListItem.Title) + !StringCompare(ListItem.Title,ListItem.TVShowTitle) + !StringCompare(ListItem.Title,System.CurrentControl)">[B]$INFO[ListItem.Title][/B]</value>
 	<value description="שם הפרק-בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(title))">[B]$INFO[Container(312).ListItem.Property(title)][/B]</value>
 	<value description="משפט סרט-בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(tagline))">[B]$INFO[Container(311).ListItem.Property(tagline)][/B]</value>
 	<value description="PVR" condition="[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.EpisodeName]</value>
@@ -404,7 +405,7 @@
 	<value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Season)">$LOCALIZE[20373] $INFO[ListItem.Season]</value>
 	<value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
 	<value condition="!IsEmpty(ListItem.Episode) + Container.Content(Episodes) + !IsEmpty(ListItem.Season) + !IsEmpty(ListItem.TVShowTitle)">$LOCALIZE[20359] $INFO[ListItem.Episode]</value>
-	<value condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenreLabel]</value> <!--| StringCompare(Container.FolderPath,plugin://plugin.video.genesis/?action=movieGenres) | StringCompare(Container.FolderPath,plugin://plugin.video.genesis/?action=tvGenres)-->
+	<value condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenreLabel]</value>
 	<value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
 	<value>...</value>
   </variable> 
@@ -730,5 +731,6 @@
 		<value description="מזג אוויר" condition="Window.IsVisible(MyWeather.xml)">$VAR[background97]</value>
 		<value description="משחקים" condition="Window.IsVisible(MyPrograms.xml) + SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher)">$VAR[background98]</value>
 		<value description="דוקו" condition="[SubString(Container.FolderPath,plugin://plugin.video.movixws/?) + SubString(Container.FolderPath,name=Documentary)]">$VAR[background99]</value>
+		<value condition="Skin.HasSetting(PosterFanart) + StringCompare(Container.Viewmode,$LOCALIZE[31011])">$INFO[ListItem.Thumb]</value>
 	</variable>
 </includes>

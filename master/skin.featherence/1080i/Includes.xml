@@ -448,17 +448,30 @@
 			  <visible>!Control.IsVisible(1481)</visible>
 			</control>
 		  </control>
+		  <control type="label" id="1103" description="***דירוג***">
+			  <label>$VAR[TopVideoInformation3]</label>
+			  <visible>false</visible>
+		  </control>
+		  <control type="image" description="דירוג">
+			  <posx>1450</posx>
+			  <posy>-478</posy>
+			  <height>24</height>
+			  <width>125</width>
+			  <aspectratio align="center">keep</aspectratio>
+			  <include>Fade_TopVideoInformationOverlay</include>
+			  <texture background="false">$VAR[TopVideoInformation3]</texture>
+			  <visible>!IsEmpty(Control.GetLabel(1103))</visible>
+		  </control>
 		  <control type="group" description="דירוג והצבעות/mpaa/נצפה לאחרונה">
-			<posx>1365</posx>
+			<posx>1368</posx>
 			<posy>-483</posy>
-			<visible>Window.IsActive(DialogVideoInfo.xml)</visible> <!--Window.IsVisible(DialogFullScreenInfo.xml) | -->
 			<control type="label" description="דירוג והצבעות">
 			  <align>right</align>
 			  <aligny>center</aligny>
 			  <font>size18</font>
 			  <height>40</height>
 			  <posx>220</posx>
-			  <posy>-2</posy>
+			  <posy>22</posy>
 			  <width>240</width>		
 			  <textcolor>white</textcolor>
 			  <label>$INFO[ListItem.RatingAndVotes]</label>
@@ -635,23 +648,6 @@
 			<include>InProgressBadge_</include>
 			<include>ShowDVDCases</include>
 			<include>InProgressBadge</include>
-			
-		</control>
-		<control type="image" description="דירוג">
-		  <posx>0</posx>
-		  <posy>7</posy>
-		  <height>24</height>
-		  <width>125</width>
-		  <aspectratio align="left">keep</aspectratio>
-		  <include>Fade_TopVideoInformationOverlay</include>
-		  <!--<bordertexture colordiffuse="$VAR[TopVideoInformationColor]" border="0">buttons/ButtonA0.png</bordertexture>
-		  <bordersize>2</bordersize>-->
-		  <texture>$VAR[TopVideoInformation3]</texture>
-		  <visible>!IsEmpty(Control.GetLabel(1103))</visible>
-		</control>
-		<control type="label" id="1103" description="***דירוג***">
-		  <label>$VAR[TopVideoInformation3]</label>
-		  <visible>false</visible>
 		</control>
 	  </control>  
 	  <control type="group" description="פרטי וידאו (1105)">
@@ -949,11 +945,11 @@
 		<visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
 	    <height>250</height>		
 	    <posx>680</posx>
-	    <posy>-460</posy>	 
+	    <posy>-410</posy>	 
 	    <width>600</width>
         
-		<control type="grouplist">
-		  <height>360</height>
+		<control type="grouplist" description="center">
+		  <height>220</height>
 		  <posx>0</posx>
           <posy>20</posy>
 		  <visible>true</visible>
@@ -983,6 +979,15 @@
 			<scrollspeed>10</scrollspeed>
 			<visible>!IsEmpty(ListItem.Country)</visible>
           </control>		  
+        </control>
+      
+	    <control type="grouplist" description="side">
+		  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1000,0">Conditonal</animation>
+		  <height>220</height>
+		  <posx>450</posx>
+          <posy>20</posy>
+		  <visible>true</visible>
+		  <width>640</width>
 		  <control type="label" description="שודר לראשונה">
 			<aligny>top</aligny>
 			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
@@ -1012,8 +1017,8 @@
 			<visible>Skin.HasSetting(Admin) | Skin.HasSetting(Admin2)</visible>
 			<visible>!SubString(Container.FolderPath,plugin://)</visible>
           </control>
-      </control>
-      </control>
+        </control>
+	  </control>
   </include>
 
   <include name="BottomMenuDialogContextMenu" description="תפריט קליק ימני">

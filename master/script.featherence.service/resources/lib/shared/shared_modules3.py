@@ -1055,6 +1055,8 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 	valid_ = "" ; invalid__ = "" ; duplicates__ = "" ; except__ = "" ; url = "" ; title2 = "" ; prms = "" ;  link = ""
 	resultsPerPage = pagesize
 	
+	finalurl_ = x
+	
 	if onlydata == True:
 		maxResults = '5'
 		thumbnails = u'medium'
@@ -1674,14 +1676,14 @@ def unescape(text):
 
 def urlcheck(url, ping=False, timeout=7):
 	import urllib2
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
-	name = "urlcheck" ; printpoint = "" ; returned = "" ; extra = "" ; TypeError = ""
+	name = "urlcheck" ; printpoint = "" ; returned = "" ; extra = "" ; TypeError = "" ; response_ = ""
 	
 	
 	try:
 		#urllib2.urlopen(url)
 		request = urllib2.Request(url)
 		response = urllib2.urlopen(request, timeout=timeout)
+		response_ = response
 		#content = response.read()
 		#f = urllib2.urlopen(url)
 		#f.fp._sock.recv=None # hacky avoidance
@@ -1699,20 +1701,24 @@ def urlcheck(url, ping=False, timeout=7):
 		printpoint = printpoint + "9"
 		extra = extra + newline + "TypeError" + space2 + str(TypeError)
 		if 'The read operation timed out' in TypeError: returned = 'timeout'
-		
+			
 	if not "7" in printpoint:
 		if ping == True:
 			if systemplatformwindows: output = terminal('ping '+url+' -n 1',"Connected2")
 			else: output = terminal('ping -W 1 -w 1 -4 -q '+url+'',"Connected")
 			if (not systemplatformwindows and ("1 packets received" in output or not "100% packet loss" in output)) or (systemplatformwindows and ("Received = 1" in output or not "100% loss" in output)): printpoint = printpoint + "7"
-	
+			
+		elif 'Forbidden' in extra:
+			printpoint = printpoint + '7'
+			
 	if "UKY3scPIMd8" in url: printpoint = printpoint + "6"
 	elif "7" in printpoint: returned = "ok" # or 'Forbidden' in extra
 	else: returned = 'error'
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
-	text = "url" + space2 + url + space + "ping" + space2 + str(ping) + space + 'returned' + space2 + str(returned) + space + extra
+	text = "url" + space2 + url + space + "ping" + space2 + str(ping) + space + 'returned' + space2 + str(returned) + newline + \
+	'response_' + space2 + str(response_) + extra
 	printlog(title='urlcheck', printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	return returned
@@ -2796,7 +2802,9 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		else: path = ""
 		
 		list2 = ['-> (Exit)'] ; list2_ = ['-> (Exit)']
-		if returned == 1: list2.append('New')
+		if returned == 1:
+			list2.append('New')
+			list2_.append('New')
 		elif returned == 3:
 			check = dialogyesno(addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8'), addonString_servicefeatherence(99).encode('utf-8')) #Share My Music buttons, Choose YES to learn how to share Your Music button
 			if check == 'ok':
@@ -2877,26 +2885,12 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 							else:
 								formula = formula + newline + Custom_Playlist_ID_ + "=5" + Custom_Playlist_ID__
 								formula = formula + newline + Custom_Playlist_Name_ + "=5" + Custom_Playlist_Name__
-								x2 = TranslatePath(Custom_Playlist_Thumb__, filteroff=[featherenceserviceicons_path, skin_path])
-								if x2 != "":
-									y, y2, y3 = GeneratePath(x2)
-									copyfiles(x2, y2, chmod="", mount=False)
-									if os.path.exists(y2):
-										formula = formula + newline + Custom_Playlist_Thumb_ + "=5" + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3)
-										custommediaL.append(y)
-									else:
-										formula = formula + newline + Custom_Playlist_Thumb_ + "=5" + Custom_Playlist_Thumb__
+								x2, x2_ = TranslatePath(Custom_Playlist_Thumb__)
+								formula, custommediaL, = GeneratePath(Custom_Playlist_Thumb_ + "=5", formula, custommediaL, x2, x2_, ignoreL=[])
 										
 								formula = formula + newline + Custom_Playlist_Description_ + "=5" + Custom_Playlist_Description__
-								x2 = TranslatePath(Custom_Playlist_Fanart__, filteroff=[featherenceserviceicons_path, skin_path])
-								if x2 != "":
-									y, y2, y3 = GeneratePath(x2)
-									copyfiles(x2, y2, chmod="", mount=False)
-									if os.path.exists(y2):
-										formula = formula + newline + Custom_Playlist_Fanart_ + "=5" + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(y3)
-										custommediaL.append(y)
-									else:
-										formula = formula + newline + Custom_Playlist_Fanart_ + "=5" + Custom_Playlist_Fanart__
+								x2, x2_ = TranslatePath(Custom_Playlist_Fanart__)
+								formula, custommediaL, = GeneratePath(Custom_Playlist_Fanart_ + "=5", formula, custommediaL, x2, x2_, ignoreL=[])
 							
 							extra = extra + newline + 'i' + space2 + str(i) + space + 'Custom_Playlist_ID_' + space2 + str(Custom_Playlist_ID_) + space + 'Custom_Playlist_ID__' + space2 + str(Custom_Playlist_ID__)
 							
@@ -2907,18 +2901,18 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 						if filename != 'skip' and filename != "":
 							formula = to_utf8(formula)
 						
-							write_to_file(featherenceservice_addondata_path + AddonName + ".txt", str(formula), append=False, silent=True, utf8=False) ; xbmc.sleep(200)
-							if not os.path.exists(featherenceservice_addondata_path + AddonName + ".txt"):
+							write_to_file(featherenceserviceaddondata_media_path + AddonName + ".txt", str(formula), append=False, silent=True, utf8=False) ; xbmc.sleep(200)
+							if not os.path.exists(featherenceserviceaddondata_media_path + AddonName + ".txt"):
 								notification_common('17')
-								extra = extra + newline + featherenceservice_addondata_path + AddonName + ".txt" + space + 'Is not found!'
+								extra = extra + newline + featherenceserviceaddondata_media_path + AddonName + ".txt" + space + 'Is not found!'
 							else:
 								removefiles(path + AddonName + to_unicode(list2[returned2]) + '.zip')
 								zipname = path + AddonName + str(filename).decode('utf-8')
 								if custommediaL == []:
-									CreateZip(featherenceservice_addondata_path, zipname, filteron=[AddonName + '.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=False)
+									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=[AddonName + '.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=False)
 								else:
-									CreateZip(featherenceservice_addondata_path, zipname, filteron=[AddonName + '.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
-									CreateZip(featherenceservice_addondata_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
+									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=[AddonName + '.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
+									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
 								notification(addonString_servicefeatherence(58).encode('utf-8'), str(filename), "", 4000) #Saved Succesfully!, 
 								'''---------------------------'''
 						else: notification_common('9') ; extra = extra + newline + 'filename is empty!'

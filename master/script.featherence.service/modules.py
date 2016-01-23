@@ -1147,12 +1147,29 @@ def mode63(admin, name):
 		
 	else: notification_common("9")
 
-def mode64(admin, name, printpoint):
+def mode64(value, admin, name, printpoint):
 	'''------------------------------
-	---?-----------------------------
+	---Extract from file-------------
 	------------------------------'''
-	name = "?"
-	mode64(admin, name, printpoint)
+	removeaddons('repository.htpt', '123')
+	removeaddons('script.htpt.remote', '123')
+	removeaddons('script.htpt.refresh', '123')
+	removeaddons('script.htpt.install', '123')
+	removeaddons('resource.uisounds.htpt', '123')
+	removeaddons('repository.htpt', '123')
+	removeaddons('resource.images.htpt', '123')
+	removeaddons('script.htpt.smartbuttons', '123')
+	removeaddons('script.htpt.widgets', '123')
+	removeaddons('service.htpt', '123')
+	removeaddons('service.htpt.debug', '123')
+	removeaddons('service.htpt.fix', '123')
+	removeaddons('skin.htpt', '123')
+	
+	addon = 'plugin.video.thewiz.wall'
+	installaddonP(admin, addon, update=False)
+	setsetting_custom1(addon,'Fix_101',"true")
+	
+	#'featherence@walla.com'
 	'''---------------------------'''
 
 def mode65(admin, name, printpoint):
@@ -3067,6 +3084,26 @@ def mode215(value, admin, name, printpoint):
 	extra2 = "" ; id = ""
 				
 	if value != "": notification_common("2")
+	
+	'''הגדרות'''
+	if value != "":
+		'''ראשי'''
+		x = '18' ; id = x
+		if id != "" and id != None:
+			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(5))
+			if value == 'RESET': setSkinSetting('0','icon'+id,'')		
+			'''---------------------------'''
+	
+	'''כיבוי'''
+	if value != "":
+		'''ראשי'''
+		x = '19' ; id = x
+		if id != "" and id != None and 1 + 1 == 2:	
+			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(13005))
+			if value == 'RESET': setSkinSetting('0','icon'+id,'')
+			'''---------------------------'''
 			
 	'''סרטים'''
 	if value != "":
@@ -3172,7 +3209,7 @@ def mode215(value, admin, name, printpoint):
 	if value != "":
 		'''ראשי'''
 		x = '99' ; id = idT2.get(x)
-		if id != "" and id != None and admin and admin3 == 'true':	
+		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(78942))
 			#setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=519&value=0)')
@@ -3183,7 +3220,7 @@ def mode215(value, admin, name, printpoint):
 	text = "value" + space2 + str(value) + space + "id" + space2 + str(id) + newline + \
 	"idT" + space2 + str(idT) + newline + \
 	extra2
-	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
 def mode218(value, admin, name, printpoint):
 	'''------------------------------
@@ -3382,7 +3419,7 @@ def mode232(value, admin, name, printpoint):
 				if property_buttonid_ == "": printpoint = printpoint + "9B"
 				else: test = int(property_buttonid) + 1 ; id1 = property_buttonid_
 			elif custom1138W:
-				if property_subbuttonid_ == "" or (not property_buttonid_ in property_subbuttonid_): printpoint = printpoint + "9C"
+				if property_subbuttonid_ == "" or (not property_buttonid in property_subbuttonid_): printpoint = printpoint + "9C"
 				else: id1 = property_subbuttonid_
 		except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "9D"
 		
@@ -3463,16 +3500,29 @@ def mode233(value, admin, name, printpoint):
 		else:
 			printpoint = printpoint + '3'
 			'''local'''
-			if value == '1':
+			if '1' in value:
 				custombackgroundspath = xbmc.getInfoLabel('Skin.String(CustomBackgroundsPath)')
-				if os.path.exists(custombackgroundspath): path = custombackgroundspath
+				x_ = xbmc.getInfoLabel('Skin.String(background'+y+')')
+				x2, x2_ = TranslatePath(x_, filename=False)
+				
+				if os.path.exists(x_): path = x2
+				elif os.path.exists(custombackgroundspath): path = custombackgroundspath
 				else: path = featherenceserviceicons_path
-				xbmc.executebuiltin('Skin.SetImage(background'+y+',,'+path+')')
-			elif value == '2':
+				xbmc.executebuiltin('Skin.SetImage(background'+y+',,'+path+')') ; xbmc.sleep(1000) ; x_ = xbmc.getInfoLabel('Skin.String(background'+y+')')
+				x2, x2_ = TranslatePath(x, filename=False)
+				if x2_ != "": setSkinSetting('0','background'+y,x2_)
+			elif '2' in value:
 				customiconspath = xbmc.getInfoLabel('Skin.String(CustomIconsPath)')
-				if os.path.exists(customiconspath): path = customiconspath
+				x_ = xbmc.getInfoLabel('Skin.String(icon'+y+')')
+				x2, x2_ = TranslatePath(x_, filename=False)
+				
+				if os.path.exists(x2): path = x2
+				elif os.path.exists(customiconspath): path = customiconspath
 				else: path = featherenceserviceicons_path
-				xbmc.executebuiltin('Skin.SetImage(icon'+y+',,'+path+')')
+				xbmc.executebuiltin('Skin.SetImage(icon'+y+',,'+path+')') ; xbmc.sleep(1000) ; x_ = xbmc.getInfoLabel('Skin.String(icon'+y+')')
+				x2, x2_ = TranslatePath(x, filename=False)
+				if x2_ != "": setSkinSetting('0','icon'+y,x2_)
+				
 			else: printpoint = printpoint + '9'
 			
 	text = 'value' + space2 + str(value) + space + 'path' + space2 + str(path) + newline + \
@@ -5628,12 +5678,12 @@ def mode512(value, admin, name, printpoint):
 		if returned == "ok":
 			returned = dialogyesno(addonString(32715).encode('utf-8'),addonString(32716).encode('utf-8'))
 			if returned == "ok":
-				addon = 'browser.chromium-browser'
+				addon = 'browser.chromium'
 				if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
 					notification(addonString(32717).encode('utf-8'), addonString(32718).encode('utf-8').encode('utf-8'), "", 4000)
 					settingschange('SystemSettings','input.enablemouse','1','no',localize(14094),localize(21369))
 					xbmc.sleep(1000)
-					if not systemplatformwindows: xbmc.executebuiltin('RunAddon(browser.chromium-browser)')
+					xbmc.executebuiltin('RunAddon(browser.chromium)')
 					'''---------------------------'''
 				else: installaddon(admin, addon, update=True)
 			else:

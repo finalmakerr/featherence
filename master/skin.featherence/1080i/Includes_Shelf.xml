@@ -243,7 +243,6 @@
       <control type="panel" id="311" description="פנל מדף סרטים שנוספו לאחרונה">
         <visible>Library.HasContent(Movies) + !Player.HasVideo + [StringCompare(Window(home).Property(Button.ID),90) | Control.HasFocus(311)]</visible>
 		<visible>!Skin.HasSetting(MoviesShelfWL)</visible>
-		<visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() | ![!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)]</visible>
 		<onup>9009</onup>
         <ondown>9000</ondown>
         <onleft>311</onleft>
@@ -401,7 +400,6 @@
       <control type="panel" id="311" description="פנל מדף סרטים אקראיים">
         <visible>Library.HasContent(Movies) + !Player.HasVideo + [StringCompare(Window(home).Property(Button.ID),90) | Control.HasFocus(311)]</visible>
 		<visible>Skin.HasSetting(MoviesShelfWL)</visible>
-		<visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() | ![!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)]</visible>
         <onup>9009</onup>
         <ondown>9000</ondown>
         <onleft>311</onleft>
@@ -557,7 +555,6 @@
       <visible>Library.HasContent(TVShows)</visible>
       <control type="panel" id="312" description="פנל מדף פרקים שנוספו לאחרונה">
         <visible>[Library.HasContent(TVShows) | !Skin.HasSetting(TVShelf_Watchlist)] + [SubString(Window(home).Property(Button.ID),91) | Control.HasFocus(312)] + !Player.HasVideo</visible>
-		<visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() | ![!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)]</visible>
         <onup>9009</onup>
         <ondown>9000</ondown>
         <onleft>312</onleft>
@@ -733,7 +730,6 @@
       <visible>Library.HasContent(TVShows)</visible>
       <control type="panel" id="312" description="פנל מדף סדרות בתהליך">
         <visible>[Library.HasContent(TVShows) | Skin.HasSetting(TVShelf_Watchlist)] + [SubString(Window(home).Property(Button.ID),91) | Control.HasFocus(312)] + !Player.HasVideo</visible>
-		<visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() | ![!Skin.String(MenuDesign) | Skin.String(MenuDesign,1)]</visible>
         <onup>9009</onup>
         <ondown>9000</ondown>
         <onleft>312</onleft>

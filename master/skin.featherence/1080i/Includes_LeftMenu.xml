@@ -184,7 +184,17 @@
 		  <onclick>Skin.ToggleSetting(View50_Plus2)</onclick>
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
         </control>
-		<control type="radiobutton" id="111" description="הצג דירוג">
+		<control type="radiobutton" id="111" description="אפשר פאנארט מפוסטר">
+          <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31129]</label>
+		  <selected>Skin.HasSetting(PosterFanart)</selected>
+		  <onclick>Skin.ToggleSetting(PosterFanart)</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
+        </control>
+		<control type="radiobutton" id="112" description="הצג דירוג">
           <include>SideMenuCommon</include>
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
@@ -442,8 +452,8 @@
 		<width>870</width>
         <onleft conditon="Control.IsVisible(1265) + !IsEmpty(Window(home).Property(TEMP))">1265</onleft>
 		<onleft conditon="Control.IsVisible(5)">5</onleft>
-		<onright condition="Control.IsVisible(5)">5</onright>
-		<onright>noop</onright>
+		<onleft>PageUp</onleft>
+		<onright>PageDown</onright>
         <onup>3</onup>
         <!--<ondown condition="Control.IsVisible(30)">30</ondown>-->
 		<ondown>3</ondown>
@@ -522,7 +532,8 @@
 		<width>580</width>
         <onleft condition="Control.IsVisible(5)">5</onleft>
 		<onleft condition="Control.IsVisible(1266)">1266</onleft>
-        <onright>Close</onright>
+        <onleft>PageUp</onleft>
+		<onright>PageDown</onright>
         <onup>5</onup>
         <ondown>30</ondown>	
 		<pagecontrol>60</pagecontrol>
