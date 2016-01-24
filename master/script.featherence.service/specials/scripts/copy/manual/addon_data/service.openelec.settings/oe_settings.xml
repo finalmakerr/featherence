@@ -7,7 +7,7 @@
 			<KeyboardLayout1>us</KeyboardLayout1>
 			<KeyboardVariant1/>
 			<KeyboardLayout2>il</KeyboardLayout2>
-			<hostname>HTPT</hostname>
+			<hostname>OpenELEC</hostname>
 			<AutoUpdate>auto</AutoUpdate>
 			<UpdateNotify>0</UpdateNotify>
 			<KeyboardType>pc105</KeyboardType>

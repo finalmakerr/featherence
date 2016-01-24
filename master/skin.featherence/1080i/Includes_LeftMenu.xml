@@ -416,6 +416,7 @@
 	  <visible>Control.IsEnabled(20) + !SubString(Container.FolderPath,sources://video/) + !SubString(Container.FolderPath,special://home/) + !SubString(Container.FolderPath,special://userdata/library/videos) + !SubString(Container.FolderPath,/var/media/) + !SubString(Container.FolderPath,sources://video/)</visible>
 	  <visible>!Window.IsVisible(SettingsCategory.xml)</visible>
 	</control>
+	<include>button120_updatelibrary</include>
 	<!--<include>button120_updatelibrary</include>-->
 	<include condition="SubString(Container.FolderPath,special://userdata/library/videos) | SubString(Container.FolderPath,/var/media/) | SubString(Container.FolderPath,special://home/external/) | SubString(Container.FolderPath,sources://video/)">FileManagerButton</include>
   </include>  
@@ -1127,7 +1128,7 @@
 	   <visible>!SubString(Container.FolderPath,plugin://plugin.video.youtube/)</visible>
 	   <visible>!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)</visible>-->
 	   <visible>IsEmpty(Control.GetLabel(11156))</visible>
-	   <visible>!StringCompare(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)"</visible>
+	   <visible>!SubString(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)"</visible>
 		<control type="label" id="1103" description="***דירוג***">
           <label>$VAR[TopVideoInformation3]</label>
 		  <visible>false</visible>
@@ -1275,6 +1276,7 @@
 	  <altlabel>13353</altlabel>
 	  <onclick>UpdateLibrary(video)</onclick>
 	  <usealttexture>library.isscanningvideo</usealttexture>
+	  <visible>!Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoNav.xml) + !Control.IsEnabled(20)</visible>
 	</control>
   </include>
   <include name="openViewSettings9001">

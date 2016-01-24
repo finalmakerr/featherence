@@ -34,4 +34,4 @@ def CATEGORIES():
 	list = []
 	list.append('&youtube_ch=UC7mIy-IFtq1k5xCAhItL_uA')
 	list.append('&youtube_ch=bushidoUA')
-	addDir('Bushido',list,17,'http://ru2.anyfad.com/items/t1@6d88be0e-7719-49da-beca-fdea83dd4c05/Bushido---put-voina.jpg',"",'1',58, getAddonFanart(background))
+	addDir('Bushido',list,17,'http://ru2.anyfad.com/items/t1@6d88be0e-7719-49da-beca-fdea83dd4c05/Bushido---put-voina.jpg',"",'1',58, getAddonFanart(background, default="https://i.ytimg.com/vi/9fgTFkC5yWc/maxresdefault.jpg"))

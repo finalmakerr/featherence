@@ -326,7 +326,7 @@
 		<posy>-10</posy>
 		<texture border="20" colordiffuse="$VAR[MainBackgroundColor]">buttons/ButtonC0.png</texture>
 		<visible>![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] | IsEmpty(Control.GetLabel(70130)) | Skin.HasSetting(background2)</visible>
-		<visible>![[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Player.HasVideo]</visible>
+		<visible>![[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Player.HasVideo + !Window.IsVisible(DialogAddonSettings.xml)]</visible>
 	  </control>
 	  <control type="image" description="רקע תחתון טקסטורה">
 	    <include>Fade_MainBackgroundOverlay</include>
@@ -340,7 +340,7 @@
 		<posy>-5</posy>
 		<texture border="20" colordiffuse="$VAR[MainBackgroundColor]">$VAR[MainBackgroundTexture]</texture>
 		<visible>![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] | IsEmpty(Control.GetLabel(70130)) | Skin.HasSetting(background2)</visible>
-		<visible>![[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Player.HasVideo]</visible>
+		<visible>![[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Player.HasVideo + !Window.IsVisible(DialogAddonSettings.xml)]</visible>
 		<!--<visible>![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] | [StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Control.HasFocus(7017) + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)</visible>-->
 	  </control>
 	  <control type="largeimage" id="7013" description="פאנארט">
@@ -376,7 +376,7 @@
 		<visible>!IsEmpty(Control.GetLabel(70130)) + !Control.IsVisible(7013)</visible>
 		<visible>!Skin.HasSetting(background2)</visible>
 		<visible>[!StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014])] | !Control.IsVisible(7013)</visible>
-		<visible>![Player.HasVideo + StringCompare(Container.Viewmode,$LOCALIZE[31011])]</visible>
+		<visible>![Player.HasVideo + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml)]</visible>
 	  </control>
 	  <control type="largeimage" id="7014" description="רקע פאנארט">
 		<include>Fade_Background2Overlay</include>
@@ -436,6 +436,7 @@
 	  <!--<include>Slide1</include>
 	  <height>552</height>
 	  <width>1920</width>-->
+	  <visible>!Window.IsVisible(DialogFavourites.xml)</visible>
 		<control type="videowindow" id="7011" description="חלון וידאו">
 			<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-245,624" time="0">Conditonal</animation>
 			<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="235,624" time="0">Conditonal</animation>
