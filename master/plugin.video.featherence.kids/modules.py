@@ -1799,9 +1799,9 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 	CATEGORIES105Z(General_LanguageL, background, background2) #ערוצי טלוויזיה
 	
 	if 'Hebrew' in General_LanguageL:
-		check_seretil_me = urlcheck('http://seretil.me', ping=True)
-		check_10q_tv = urlcheck('http://10q.tv', ping=True)
-		check_gozlan_me = urlcheck('http://anonymouse.org/cgi-bin/anon-www.cgi/http://gozlan.eu/', ping=True)
+		check_seretil_me = urlcheck('http://seretil.me', ping=False)
+		check_10q_tv = urlcheck('http://10q.tv', ping=False)
+		check_gozlan_me = urlcheck('http://anonymouse.org/cgi-bin/anon-www.cgi/http://gozlan.eu/', ping=False)
 		check_movix_me = "" #check_movix_me = urlcheck('http://www.movix.me/series', ping=True) #GAL CHECK THIS (PING)
 		
 		'''סרטים מדובבים'''
