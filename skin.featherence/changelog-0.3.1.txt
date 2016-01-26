@@ -13,7 +13,6 @@ Featherence v0.3.1 (26-Jan-16)
 - Added template: Classico.
 - DVD case is now marked for Wall and Posters views.
 - Major reduce skin size.
-- Now available on official Kodi's repo.
 - Update dialogtextviewer.
 - Update integrated player window.
 - Update weather icons and fanarts.
