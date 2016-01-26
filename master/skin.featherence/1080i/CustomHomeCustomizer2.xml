@@ -1,84 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1127">
-  
-  <defaultcontrol always="true">51</defaultcontrol>
-  <!--<include>ReloadSkin_Check</include>-->
+  <defaultcontrol always="true">9000</defaultcontrol>
   <controls>
     <include>Backgrounds1</include>
-    <control type="image" description="Line bottom">
-        <posy>490</posy>
-        <width>1920</width>
-        <height>1</height>
-        <texture>images/Line1.png</texture>
-    </control>
-	<control type="group">
-        <control type="panel" id="51">
-		  <animation condition="Window.IsVisible(CustomHomeCustomizer2.xml) + [!Container(51).Row(0) + !Container(51).Row(1) | Container(51).HasPrevious()]" effect="slide" start="0,0" end="0,-551" time="220">Conditonal</animation>
-		  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
-		  <visible>Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)</visible>
-		  <posx>40</posx>
-		  <posy>581</posy>
-		  <width>1840</width>
-		  <height>1040</height>
-          <onleft>51</onleft>
-          <onright>51</onright>
-		  <onup>noop</onup>
-          <ondown>noop</ondown>
-		  <include condition="Skin.String(MenuDesign,0)" description="פנל">MenuDesign_Home</include>
-		  <include condition="Skin.String(MenuDesign,1)" description="פנל2">MenuDesign_Home1</include>
-		  <content>
-			<include>Content_Home</include>
-		  </content>
-	    </control>
-		
-		<control type="list" id="51" description="מאוזן">
-		  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
-		  <visible>Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)</visible>
-		  <posx>30</posx>
-		  <posy>820</posy>
-		  <width>1850</width>
-		  <height>1040</height>
-		  <onleft>9000</onleft>
-		  <onright>9000</onright>
-		  <onup condition="Control.IsVisible(7011)">7017</onup>
-		  <onup condition="Control.IsVisible(700)">700</onup>
-		  <onup condition="Control.IsVisible(9009)">9009</onup>
-		  <onup>520</onup>
-		  <ondown>noop</ondown>
-		  <scrolltime tween="sine" easing="out">220</scrolltime>
-		  <orientation>horizontal</orientation>
-		  <include condition="Skin.String(MenuDesign,2)" description="מאוזן">MenuDesign_Home</include>
-		  <include condition="Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)" description="מאוזן2">MenuDesign_Home1</include>
-		  <content>
-			<include condition="!Window.IsVisible(LoginScreen)">Content_Home</include>
-		  </content>
-		</control>
-		
-		<control type="list" id="51" description="מאונך">
-		  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
-		  <visible>Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)</visible>
-		  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1665,0" time="0">Conditonal</animation>
-		  <posx>10</posx>
-		  <posy>150</posy>
-		  <width>1850</width>
-		  <height>920</height>
-		  <onup>9000</onup>
-		  <ondown>9000</ondown>
-		  <onright condition="Control.IsVisible(7011)">7017</onright>
-		  <onright condition="Control.IsVisible(700)">700</onright>
-		  <onright condition="Control.IsVisible(9009)">9009</onright>
-		  <onright>520</onright>
-		  <onleft condition="Control.IsVisible(7011)">7017</onleft>
-		  <onleft condition="Control.IsVisible(700)">700</onleft>
-		  <onleft condition="Control.IsVisible(9009)">9009</onleft>
-		  <scrolltime tween="sine" easing="out">220</scrolltime>
-		  <orientation>vertical</orientation>
-		  <include condition="Skin.String(MenuDesign,4)" description="מאונך">MenuDesign_Home2</include>
-		  <content>
-			<include condition="!Window.IsVisible(LoginScreen)">Content_Home</include>
-		  </content>
-		</control>
-    </control>
+    <include>Design_TopButtons</include>
+	<include>Menu_Home</include>
 	<include>TopInformation</include>
 </controls>
 </window>

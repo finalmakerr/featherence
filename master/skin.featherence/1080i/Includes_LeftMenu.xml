@@ -204,6 +204,28 @@
 		  <onclick>Skin.ToggleSetting(Show_Rating)</onclick>
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
+		<control type="button" id="113" description="שקיפות פאנארט">
+		  <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31050]: $INFO[Skin.String(Background2Overlay)]</label>
+		  <enable></enable>
+		  <onclick condition="!Skin.String(Background2Overlay)">Skin.SetString(Background2Overlay, 100)</onclick>
+		  <onclick condition="Skin.String(Background2Overlay, 100)">Skin.SetString(Background2Overlay, 95)</onclick>
+		  <onclick condition="Skin.String(Background2Overlay, 95)">Skin.SetString(Background2Overlay, 90)</onclick>
+		  <onclick condition="Skin.String(Background2Overlay, 90)">Skin.SetString(Background2Overlay, 85)</onclick>
+		  <onclick condition="Skin.String(Background2Overlay, 85)">Skin.SetString(Background2Overlay, 80)</onclick>
+		  <onclick condition="Skin.String(Background2Overlay, 80)">Skin.SetString(Background2Overlay, 70)</onclick>
+		  <onclick condition="Skin.String(Background2Overlay, 70)">Skin.SetString(Background2Overlay, 60)</onclick>
+		  <onclick condition="Skin.String(Background2Overlay, 60)">Skin.SetString(Background2Overlay, 50)</onclick>
+		  <onclick condition="Skin.String(Background2Overlay, 50)">Skin.SetString(Background2Overlay, 40)</onclick>
+		  <onclick condition="Skin.String(Background2Overlay, 40)">Skin.SetString(Background2Overlay, 30)</onclick>
+		  <onclick condition="Skin.String(Background2Overlay, 30)">Skin.SetString(Background2Overlay, 20)</onclick>
+		  <onclick condition="Skin.String(Background2Overlay, 20)">Skin.SetString(Background2Overlay, 10)</onclick>
+		  <onclick condition="Skin.String(Background2Overlay, 10)">Skin.SetString(Background2Overlay, )</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+        </control>
 		<control type="radiobutton" id="139" description="פאנארט תמיד">
 		  <include>SideMenuCommon</include>
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
@@ -793,6 +815,8 @@
 	  <font>size28</font>
 	</control>
 	<control type="spincontrolex" id="3" description="מיקום">
+	
+	  <include>SideMenuCommon2</include>
 	  <include>SideMenuCommon</include>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>

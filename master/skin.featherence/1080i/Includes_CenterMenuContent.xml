@@ -8,6 +8,7 @@
 		<onclick description="1138" condition="!IsEmpty(Window(home).Property(Button.ID_)) + !Window.IsVisible(Custom1139.xml) + Window.IsVisible(Custom1138.xml)">Skin.ToggleSetting(sub$INFO[Window(home).Property(Button.ID_)])</onclick>
 		<onclick description="1139" condition="!IsEmpty(Window(home).Property(Button.ID_)) + !IsEmpty(Window(home).Property(SubButton.ID_)) + Window.IsVisible(Custom1139.xml)">Skin.ToggleSetting(off$INFO[Window(home).Property(SubButton.ID_)])</onclick>
 		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/bolt.png</thumb>
 		<visible>!Window.IsVisible(Custom1139.xml) + IntegerGreaterThan(Window(home).Property(Button.ID),80) | Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="701" description="שינוי שם">
@@ -16,6 +17,7 @@
 		<onclick description="1175" condition="Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=214&amp;value=0)</onclick>
 		<onclick description="1139" condition="Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=214&amp;value=1)</onclick>
 		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/pencil.png</thumb>
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) | Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="702" description="בחירת סמל">
@@ -24,6 +26,7 @@
 		<onclick description="1175" condition="!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">RunScript(script.featherence.service,,?mode=233&amp;value=2)</onclick>
 		<onclick description="1139" condition="!IsEmpty(Window(home).Property(SubButton.ID_)) + Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=233&amp;value=02)</onclick>
 		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/avg.png</thumb>
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) | Window.IsVisible(Custom1139.xml)</visible>
 		<visible>!SubString(Window(home).Property(SubButton.ID),_90)</visible>
 	  </item>
@@ -31,6 +34,7 @@
 		<label>$ADDON[script.featherence.service 79]</label>
 		<onclick>RunScript(script.featherence.service,,?mode=232&amp;value=)</onclick>
 		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
 		<visible>[!Window.IsVisible(Custom1138.xml) + IntegerGreaterThan(Window(home).Property(Button.ID),99) + !IntegerGreaterThan(Window(home).Property(Button.ID),200)] | [Window.IsVisible(Custom1139.xml) + !SubString(Window(home).Property(SubButton.ID_),_90)]</visible>
 	  </item>
 	  <item id="704" description="הזזת פריט">
@@ -38,6 +42,7 @@
 		<onclick>Dialog.Close(1175)</onclick>
 		<onclick description="1175" condition="!Window.IsVisible(Custom1139.xml)">ActivateWindow(1127)</onclick>
 		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/ruler.png</thumb>
 		<visible>IntegerGreaterThan(Window(home).Property(Button.ID),80)</visible>
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
@@ -45,6 +50,7 @@
 		<label>$LOCALIZE[13251] UP</label>
 		<onclick description="1139-UP" condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(Previous_SubButton.ID_)) + !SubString(Window(home).Property(Previous_SubButton.ID_,_90)">RunScript(script.featherence.service,,?mode=210&amp;value=1)</onclick>
 		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/arrowup.png</thumb>
 		<visible>Window.IsVisible(Custom1139.xml)</visible>
 		<visible>!IsEmpty(Window(home).Property(Previous_SubButton.ID_)) + !SubString(Window(home).Property(Previous_SubButton.ID_),_90)</visible>
 	  </item>
@@ -52,6 +58,7 @@
 		<label>$LOCALIZE[13251] DOWN</label>
 		<onclick description="1139-DOWN" condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(Next_SubButton.ID_)) + !SubString(Window(home).Property(Next_SubButton.ID_,_90)">RunScript(script.featherence.service,,?mode=210&amp;value=2)</onclick>
 		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/arrowdown.png</thumb>
 		<visible>Window.IsVisible(Custom1139.xml)</visible>
 		<visible>!IsEmpty(Window(home).Property(Next_SubButton.ID_)) + !SubString(Window(home).Property(Next_SubButton.ID_),_90)</visible>
 	  </item>
@@ -60,7 +67,8 @@
 		<onclick>SetProperty(TEMP,color$INFO[Window(home).Property(Button.ID_)],home)</onclick>
 		<onclick>ActivateWindow(1170)</onclick>
 		<include>CheckProperty_Menus</include>
-		 <visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/colorpalette.png</thumb>
+		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="708" description="רקע / פאנארט">
 		<label>$LOCALIZE[70006]</label>
@@ -68,7 +76,8 @@
 		<onclick condition="!IsEmpty(Window(home).Property(Button.ID))">SetProperty(TEMP,background,home)</onclick>
 		<onclick condition="!IsEmpty(Window(home).Property(Button.ID))">RunScript(script.featherence.service,,?mode=233&amp;value=1)</onclick>
 		<include>CheckProperty_Menus</include>
-		 <visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/paintbucket.png</thumb>
+		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="709" description="רקע אקראי">
 		<label>$VAR[label709] - $VAR[Button708]</label>
@@ -76,6 +85,7 @@
 		<onclick condition="StringCompare(Window(home).Property(Button.ID),91)" description="סדרות">Skin.ToggleSetting(wbackground91)</onclick>
 		<onclick condition="StringCompare(Window(home).Property(Button.ID),97)" description="מזג אוויר">Skin.ToggleSetting(wbackground97)</onclick>
 		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/presentation.png</thumb>
 		<visible>StringCompare(Window(home).Property(Button.ID),90) | StringCompare(Window(home).Property(Button.ID),91) | StringCompare(Window(home).Property(Button.ID),97)</visible>
 		<visible>!Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>  
@@ -83,6 +93,7 @@
 		<label>$LOCALIZE[79592]</label>
 		<onclick>ActivateWindow(1138)</onclick>
 		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/medal.png</thumb>
 		<visible>IntegerGreaterThan(Window(home).Property(Button.ID),80)</visible>
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
@@ -91,6 +102,7 @@
 		<onclick description="1175" condition="!IsEmpty(Window(home).Property(Button.ID)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">RunScript(script.featherence.service,,?mode=211&amp;value=0)</onclick>
 		<onclick description="1138" condition="!IsEmpty(Window(home).Property(Button.ID)) + !Window.IsVisible(Custom1139.xml) + Window.IsVisible(Custom1138.xml)">RunScript(script.featherence.service,,?mode=211&amp;value=1)</onclick>
 		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/present.png</thumb>
 		<visible>[Window.IsVisible(Custom1175.xml) | Window.IsVisible(Custom1138.xml)] + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="720" description="הסרת פריט">
@@ -98,6 +110,7 @@
 		<onclick description="1175-Remove" condition="!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml)">RunScript(script.featherence.service,,?mode=212&amp;value=02)</onclick>
 		<onclick description="1139-Remove" condition="Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=212&amp;value=1)</onclick>
 		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/bin.png</thumb>
 		<visible>[!Window.IsVisible(Custom1138.xml) + IntegerGreaterThan(Window(home).Property(Button.ID),99)] | [Window.IsVisible(Custom1139.xml) + !SubString(Window(home).Property(SubButton.ID_),_9)]</visible>
 	  </item>
 	  <item id="721" description="איפוס פריט">
@@ -105,6 +118,7 @@
 		<onclick description="1175-DEFAULT" condition="!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + !IntegerGreaterThan(Window(home).Property(Button.ID),99)">RunScript(script.featherence.service,,?mode=212&amp;value=02B)</onclick>
 		<onclick description="1139-DEFAULT" condition="Window.IsVisible(Custom1139.xml) + SubString(Window(home).Property(SubButton.ID),_9)">RunScript(script.featherence.service,,?mode=212&amp;value=1B)</onclick>
 		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/pre.png</thumb>
 		<visible>!IsEmpty(Window(home).Property(Button.ID)) + !IsEmpty(Window(home).Property(Button.ID_)) + !Control.IsVisible(720)</visible>
 		<visible>!StringCompare(Window(home).Property(Button.ID),Window(home).Property(Button.ID_))</visible>
 		<visible>[!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + !IntegerGreaterThan(Window(home).Property(Button.ID),99)] | [Window.IsVisible(Custom1139.xml) + SubString(Window(home).Property(SubButton.ID),_9)]</visible>

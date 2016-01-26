@@ -157,26 +157,26 @@
 	<value description="חזור" condition="Control.HasFocus(27)">$LOCALIZE[79075]</value>
   </variable>
   <variable name="DirectorButton" description="סרטים נוספים של הבמאי">
-    <value condition="Control.HasFocus(7141) + StringCompare(System.Language,Hebrew)">[COLOR yellow][B]$INFO[ListItem.Director][/B][/COLOR] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
-	<value condition="Control.HasFocus(7141) + !StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[20339]:[/COLOR] [COLOR yellow][B]$INFO[ListItem.Director][/B][/COLOR] </value>
-	<value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Director] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[20339]:[/COLOR] $INFO[ListItem.Director]</value>
+    <value condition="Control.HasFocus(7141) + StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Director)">[COLOR yellow][B]$INFO[ListItem.Director][/B][/COLOR] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
+	<value condition="Control.HasFocus(7141) + !StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Director)">[COLOR=white]$LOCALIZE[20339]:[/COLOR] [COLOR yellow][B]$INFO[ListItem.Director][/B][/COLOR] </value>
+	<value condition="StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Director)">$INFO[ListItem.Director] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
+	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Director)">[COLOR=white]$LOCALIZE[20339]:[/COLOR] $INFO[ListItem.Director]</value>
   </variable>
   <variable name="RightMenuDialogVideoInfo2">
-    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Studio] [COLOR=white]$LOCALIZE[572]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[572]:[/COLOR] $INFO[ListItem.Studio] </value>
+    <value condition="StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Studio)">$INFO[ListItem.Studio] [COLOR=white]$LOCALIZE[572]:[/COLOR]</value>
+	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Studio)">[COLOR=white]$LOCALIZE[572]:[/COLOR] $INFO[ListItem.Studio] </value>
   </variable>
   <variable name="RightMenuDialogVideoInfo3">
-    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Writer] [COLOR=white]$LOCALIZE[20418]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[20418]:[/COLOR] $INFO[ListItem.Writer]</value>
+    <value condition="StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Writer)">$INFO[ListItem.Writer] [COLOR=white]$LOCALIZE[20418]:[/COLOR]</value>
+	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Writer)">[COLOR=white]$LOCALIZE[20418]:[/COLOR] $INFO[ListItem.Writer]</value>
   </variable>
   <variable name="RightMenuDialogVideoInfo4">
-    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Country] [COLOR=white]$LOCALIZE[21874]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[21874]:[/COLOR] $INFO[ListItem.Country]</value>
+    <value condition="StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Country)">$INFO[ListItem.Country] [COLOR=white]$LOCALIZE[21874]:[/COLOR]</value>
+	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Country)">[COLOR=white]$LOCALIZE[21874]:[/COLOR] $INFO[ListItem.Country]</value>
   </variable>
   <variable name="RightMenuDialogVideoInfo5">
-    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Premiered] [COLOR=white]$LOCALIZE[20416]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Premiered]</value>
+    <value condition="StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Premiered)">$INFO[ListItem.Premiered] [COLOR=white]$LOCALIZE[20416]:[/COLOR]</value>
+	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Premiered)">[COLOR=white]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Premiered]</value>
   </variable>
   <variable name="RightMenuDialogVideoInfo6">
     <value condition="StringCompare(System.Language,Hebrew)"></value>
@@ -295,7 +295,7 @@
 	<value description="פוסטר סדרה - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Thumb)">$INFO[Container(312).ListItem.Thumb]</value>
 	<value condition="SubString(ListItem.Label,Next page) | SubString(ListItem.Label,$LOCALIZE[33078])">DefaultVideo2.png</value>
 	<value description="הרחבה" condition="Window.IsVisible(MyWeather.xml)">_</value>
-	<value description="כפתור מזג אוויר" condition="Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">weather/$INFO[Weather.fanartcode].png</value>
+	<value description="כפתור מזג אוויר" condition="Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">special://home/addons/resource.images.weathericons.outline/resources/$INFO[Weather.fanartcode].png</value>
 	<value condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenrePic]</value>
 	<value condition="!IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
 	<value condition="!IsEmpty(Container(50).ListItem.Thumb)">$INFO[Container(50).ListItem.Thumb]</value>
@@ -374,7 +374,7 @@
 	<!--<value condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !Window.IsVisible(DialogAddonInfo.xml)"></value>-->
 	<value condition="Window.IsVisible(MyWeather.xml) + !IsEmpty(Container(50).ListItem.Label)">$INFO[Control.GetLabel(31)] - $INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</value>
 	<value condition="Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">$INFO[System.Date(DDD)] - $INFO[Weather.Temperature]</value>
-	<value condition="!IsEmpty(Container(50).ListItem.Label)">$INFO[Container(50).ListItem.Label]</value>
+	<value condition="!Window.IsVisible(DialogVideoInfo.xml) + !IsEmpty(Container(50).ListItem.Label)">$INFO[Container(50).ListItem.Label]</value>
 	<value condition="Window.IsVisible(SettingsCategory.xml) + [ControlGroup(3).HasFocus | ControlGroup(5).HasFocus]">$INFO[System.CurrentControl]</value>
 	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItem(0).Label)">$INFO[Container(11).ListItem(0).Label]</value>
 	<value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
@@ -548,7 +548,8 @@
 	<value description="מזג אוויר_he" condition="StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">[COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B] $LOCALIZE[35500]: </value>
 	<value description="מזג אוויר_en" condition="!StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">$LOCALIZE[35500]: [COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B]</value>	
 	<value description="Home" condition="Window.IsActive(home) + [Control.HasFocus(311) | Control.HasFocus(312)] + !IsEmpty(System.CurrentControl)">$INFO[System.CurrentControl]</value>	
-	<value description="Home" condition="Window.IsActive(home)">•••••••</value>	
+	<value description="Home" condition="Window.IsActive(home)">•••••••</value>
+	<!--<value description="חלון מידע וידאו" condition="Window.IsVisible(DialogVideoInfo.xml)">$INFO[ListItem.Path]</value>-->
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !IsEmpty(Slideshow.EXIFDate)]">[COLOR yellow][B]$INFO[Slideshow.EXIFDate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.EXIFDate) + !IsEmpty(Slideshow.Filedate)]">[COLOR red][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + SubString(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות מהאייפון/אייפד[/B][/COLOR]</value>
@@ -614,7 +615,7 @@
 	  <value condition="StringCompare(Window(home).Property(tips),5)">[B]Resposition home buttons:[/B][CR]Did you know?[CR]You can easily move your buttons in the order you like.</value>
 	  <value condition="StringCompare(Window(home).Property(tips),6)">[B]Sub Menu:[/B][CR]Did you know?[CR]You can activate sub menu for each button on your home screen.[CR]sub menu buttons are visible by the a small line at the top right button corner.</value>
 	  <value condition="StringCompare(Window(home).Property(tips),7)">[B]Home views:[/B][CR]Did you know?[CR]You can change the home buttons position to panel/horizontal/vertical.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),8)">[B]Movies widget:[/B][CR]Did you know?[CR]You can easily access random unwatched movies in your library or recently added movies.[CR]You may also watch watch trailers directly from the widget.</value>
+	  <value condition="StringCompare(Window(home).Property(tips),8)">[B]Movies widget:[/B][CR]Did you know?[CR]You can easily access random unwatched movies in your library or recently added movies.[CR]You may also play trailers directly from the widget.</value>
 	  <value condition="StringCompare(Window(home).Property(tips),9)">[B]TVshows widget:[/B][CR]Did you know?[CR]You can easily access your in progress TVshows or recently added episodes.[CR]You may also force refresh for triggering the next episode if needed.</value>
 	  <value condition="StringCompare(Window(home).Property(tips),10)">[B]Share your ideas:[/B][CR]Would like to see something different?[CR]We want to hear you![CR]For requests send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>
 	  <value condition="StringCompare(Window(home).Property(tips),11)">[B]Featherence Service:[/B][CR]Did you know?[CR]You can open Featherence Service addon for using prebuilt tools.</value>
@@ -720,6 +721,10 @@
 	<variable name="ManualColor">
 	  <value condition="!IsEmpty(Window(home).Property(SelectedColor))">$INFO[Window(home).Property(SelectedColor)]</value>
 	  <value condition="Window.IsVisible(Custom1170.xml)">Manual</value>
+	</variable>
+	<variable name="colorTopVideoInformation3">
+	  <value condition=""></value>
+	  <value></value>
 	</variable>
 	<variable name="background2">
 		<value description="הגדרות" condition="Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SkinSettings.xml)">$VAR[background18]</value>

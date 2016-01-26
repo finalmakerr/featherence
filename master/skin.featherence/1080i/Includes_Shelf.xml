@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="MoviesShortcutsCommons" description="מדף סרטים/סדרות">
-    <include>Fade20</include>
 	<posx>40</posx>
     <posy>90</posy>
     <width>1920</width>
@@ -9,11 +8,7 @@
     <orientation>horizontal</orientation>
     <itemlayout height="350" width="368">
       <control type="group">
-		<!--<animation condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [Control.HasFocus(311) | Control.HasFocus(312)] + Container.Position(4)" effect="fade" start="100" end="0">Conditonal</animation>-->
-		<animation condition="!Control.HasFocus(311) + !Control.HasFocus(312) + !System.IdleTime(3)" effect="fade" start="90" end="90" time="220" reversible="false">Conditional</animation>
-		<animation condition="!Control.HasFocus(311) + !Control.HasFocus(312) + System.IdleTime(3)" effect="fade" start="90" end="0" time="3000" reversible="false">Conditional</animation>
-		<animation condition="[Control.HasFocus(311) | Control.HasFocus(312)] + !System.IdleTime(3)" effect="fade" start="100" end="60" time="220" reversible="false">Conditional</animation>
-		<animation condition="[Control.HasFocus(311) | Control.HasFocus(312)] + System.IdleTime(3)" effect="fade" start="60" end="0" time="3000" reversible="false">Conditional</animation>
+		<include>Fade10</include>
 		<control type="image" description="מסגרת">
 			<posx>50</posx>
 			<posy>30</posy>
@@ -54,6 +49,7 @@
 		  <width>265</width>
 		</control>
 		<control type="group" description="עונה ופרק">
+			<animation condition="true" effect="fade" start="100" end="60" time="220" reversible="false">Conditional</animation>
 			<posx>50</posx>
 			<posy>360</posy>
 			<visible></visible>
@@ -108,7 +104,7 @@
 		<visible>false</visible>
 	  </control>
 	  <control type="group">
-	    <animation condition="System.IdleTime(3)" effect="fade" start="100" end="40" time="3000" reversible="true">Conditional</animation>
+	    <animation condition="Control.HasFocus(312) + !Container(312).OnPrevious + !Container(312).OnNext | Control.HasFocus(311) + !Container(311).OnPrevious + !Container(311).OnNext" effect="fade" start="100" end="70" delay="5000" time="3000" reversible="false">Conditional</animation>
 		  <control type="image" description="רקע פאנארט">
 			<animation condition="Window.IsVisible(Home.xml) + [!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,551" time="220">Conditonal</animation>
 			<animation condition="Window.IsVisible(CustomHomeCustomizer.xml) + [!Container(50).Row(0) + !Container(50).Row(1) | Container(50).HasPrevious()]" effect="slide" start="0,0" end="0,551" time="220">Conditonal</animation>

@@ -362,15 +362,15 @@ elif mode == 28:
 	---?-----------------------------
 	------------------------------'''
 	name = "AutoView"
-	mode28(value, admin, name, printpoint)
+	mode28(value, value2, value3, name, printpoint)
 	'''---------------------------'''
 
 elif mode == 29:
 	'''------------------------------
-	---?-----------------------------
+	---Dialog-Select-Skin------------
 	------------------------------'''
-	name = "?"
-	mode29(admin, name, printpoint)
+	name = "Dialog-Select-Skin"
+	mode29(value, value2, value3, value4, name, printpoint)
 	'''---------------------------'''
 	
 elif mode == 30:
@@ -1848,6 +1848,7 @@ elif mode >= 200 and mode <= 249:
 							filename = str(list2[returned2])
 						Custom1000(str(list[returned]),90,str(list2[returned2]),5)
 						filename = dialogkeyboard(filename, localize(21821), 0, "", "", "") #Description
+						
 						if filename != 'skip' and filename != "":
 							formula = to_utf8(formula)
 							
@@ -1865,7 +1866,7 @@ elif mode >= 200 and mode <= 249:
 									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=custommediaL, filteroff=[], level=3, append='End', ZipFullPath=False, temp=True)
 									'''---------------------------'''
 								Custom1000(str(list[returned]),100,str(list2[returned2]),4)
-						else: notification_common('9') ; extra = extra + home
+						else: notification_common('9')
 				
 				elif "B" in printpoint or "C" in printpoint:
 					'''------------------------------
@@ -1907,22 +1908,22 @@ elif mode >= 200 and mode <= 249:
 								x = "" ; x1 = "" ; x2 = "" ; x3 = ""
 								if "=0" in line:
 									'''Skin.String'''
-									x = line.replace("=0","=")
+									x = line.replace("=0","=",1)
 									x1 = find_string(x, "", "=")
 									x2 = find_string(x, "=", "")
 									x1 = x1.replace("=","")
-									x2 = x2.replace("=","")
+									x2 = x2.replace("=","",1)
 									x2 = x2.replace("\n","")
 									if x2 != None:
 										setSkinSetting('0', str(x1), str(x2))
 									
 								elif "=1" in line:
 									'''Skin.HasSetting'''
-									x = line.replace("=1","=")
+									x = line.replace("=1","=", 1)
 									x1 = find_string(x, "", "=")
 									x2 = find_string(x, "=", "")
-									x1 = x1.replace("=","")
-									x2 = x2.replace("=","")
+									x1 = x1.replace("=","", 1)
+									x2 = x2.replace("=","", 1)
 									x2 = x2.replace("\n","")
 									if x2 == "" or x2 == 'None' or x2 == None: x3 = "false"
 									else:
@@ -1966,7 +1967,12 @@ elif mode >= 200 and mode <= 249:
 						xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=LABEL)')
 					#ReloadSkin(admin)
 					#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=5)')
-					'''---------------------------'''
+					if filename == 'Classico Plus':
+						dialogok("Kodi's Tweaks are avaialble!", "The loaded package %s contain tweaks to make your Kodi work better in overall." % (filename),"Choose YES to proceed with the tweaks or NO to finish the skin image loading.","")
+						returned_ = dialogyesno('Would you like to use the tweak?',"")
+						if returned_ == 'skip': pass
+						else: mode18('4', admin, name, printpoint)
+						'''---------------------------'''
 				else:
 					pass
 					Custom1000(str(list[returned]),100,str(list2[returned2]),0)

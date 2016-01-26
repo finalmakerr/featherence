@@ -12,11 +12,12 @@
       <texture>busy/BusyBG.png</texture>
     </control>
     <control type="image">
-      <posx>415</posx>
+      <include>Border_Common</include>
+	  <posx>415</posx>
       <posy>50</posy>
       <width>1100</width>
       <height>980</height>
-	  <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+	  <texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
     </control>
     <control type="group">
       <posx>415</posx>
@@ -30,14 +31,14 @@
       </control>
 	  <control type="button" id="700" description="כפתור סגור חלון">
 		<left>940</left>
-		<top>-5</top>
+		<top>-18</top>
 		<width>96</width>
 		<height>48</height>
 		<label>-</label>
 		<font>-</font>
 		<onclick>PreviousMenu</onclick>
-		<texturefocus>osd/keyboard/DialogCloseButton-focus.png</texturefocus>
-		<texturenofocus border="0" colordiffuse="$VAR[KeyboardMainColor]">osd/keyboard/DialogCloseButton.png</texturenofocus>
+		<texturefocus border="5" colordiffuse="$VAR[IconFocusColor]">osd/keyboard/DialogCloseButton.png</texturefocus>
+		<texturenofocus border="5" colordiffuse="$VAR[MenuColor]">osd/keyboard/DialogCloseButton.png</texturenofocus>
 		<onleft>noop</onleft>
 		<onright>noop</onright>
 		<onup>noop</onup>
@@ -57,7 +58,16 @@
 		<width>920</width>
 		<height>790</height>
 		<include condtion="StringCompare(System.Language,Hebrew)">LabelR1</include>
-		<include condtion="!StringCompare(System.Language,Hebrew)">LabelL1</include>
+		<visible>StringCompare(System.Language,Hebrew)</visible>
+		<visible>false</visible>
+	  </control>
+	  <control type="textbox" id="5" description="Textarea">
+		<posx>90</posx>
+		<posy>120</posy>
+		<width>920</width>
+		<height>790</height>
+		<include>LabelL1</include>
+		<!--<visible>!StringCompare(System.Language,Hebrew)</visible>-->
 	  </control>
 	  <control type="group" description="מצב ספרייה">
 		  <visible>Control.IsVisible(61)</visible>
@@ -71,15 +81,7 @@
 			<visible></visible>
 		  </control>
 	  </control>
-      <control type="scrollbar" id="61">
-        <posx>1030</posx>
-        <posy>120</posy>
-        <height>780</height>
-        <onleft>700</onleft>
-        <onright>700</onright>
-        <ondown>61</ondown>
-        <onup>700</onup>
-      </control>
+	  <include>ScrollBar</include>
     </control>
   </controls>
 </window>

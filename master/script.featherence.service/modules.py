@@ -22,7 +22,7 @@ def mode0(admin, name, printpoint):
 	#dp = xbmcgui.DialogProgress()
 	#dp.create("featherence Texture-Cache-Removal", "Removing Datebase", "why are we here?[CR]test is here ssssssssssssssssssssssssssssssssssssssssssssssssssss ")
 	#terminal('killall -9 kodi.bin',desc="", remote=True)
-	from debug2 import *
+	#from debug2 import *
 	#from debug3 import *
 	#subject = 'test'
 	#text = 'test2'
@@ -31,9 +31,8 @@ def mode0(admin, name, printpoint):
 	#file = ""
 	#upload_file2(file)
 	#sendMail(Debug_Email, Debug_Password, subject, text, file)
-	if os.path.exists(file1):
-		filesize = getFileAttribute(1, file1, option=1)
-		
+	#setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=True)
+	mode29('boris&natan mem', '0=TopInformationIcons', 'Choose an option from the list', '1', "", "")	
 	
 def mode5(value, admin, name, printpoint):
 	'''------------------------------
@@ -78,7 +77,9 @@ def mode5(value, admin, name, printpoint):
 
 		addon = 'plugin.video.featherence.music'
 		if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
-
+		
+		installaddonP(admin, 'repository.featherence')
+		
 		if xbmc.getSkinDir() == 'skin.featherence':
 			mode215('_',admin,'','')
 			setsetting_custom1('script.featherence.service','Skin_UpdateLog',"true")
@@ -86,6 +87,10 @@ def mode5(value, admin, name, printpoint):
 			installaddonP(admin, 'script.module.simplejson')
 			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)')
 			setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
+			
+			installaddonP(admin, 'resource.images.weathericons.outline')
+			installaddonP(admin, 'resource.images.weatherfanart.single')
+			
 	else:
 		'''multitime but not on startup'''
 		if Library_On == 'true':
@@ -356,7 +361,7 @@ def setPlayerInfo(admin):
 	else: type = 2
 	
 	if type != "":
-		if type == 0: input = videoplayertitle + space + videoplayeryear # + space + videoplayervideoresolution #+ space + videoplayervideocodec
+		if type == 0: input = str(videoplayertitle) + space + videoplayeryear # + space + videoplayervideoresolution #+ space + videoplayervideocodec
 		elif type == 1:
 			try: seasonN = int(videoplayerseason)
 			except: seasonN = ""
@@ -531,6 +536,38 @@ def mode18(value, admin, name, printpoint):
 		returned = dialogyesno('Would you like to continue?','This action will overwrite your current related files!')
 		if returned == 'ok':
 			copyfiles(os.path.join(featherenceservicecopy_path, 'manual', 'addon_data', 'service.openelec.settings', '*'), os.path.join(addondata_path,'service.openelec.settings'))
+			'''---------------------------'''
+	elif value == '4':
+		'''------------------------------
+		---plus-build--------------------
+		------------------------------'''
+		returned = dialogyesno('Would you like to continue?','This action will overwrite your current related files!')
+		if returned == 'ok':
+			removeaddons('repository.htpt', '123')
+			removeaddons('script.htpt.remote', '123')
+			removeaddons('script.htpt.refresh', '123')
+			removeaddons('script.htpt.install', '123')
+			removeaddons('resource.uisounds.htpt', '123')
+			removeaddons('repository.htpt', '123')
+			removeaddons('resource.images.htpt', '123')
+			removeaddons('script.htpt.smartbuttons', '123')
+			removeaddons('script.htpt.widgets', '123')
+			removeaddons('service.htpt', '123')
+			removeaddons('service.htpt.debug', '123')
+			removeaddons('service.htpt.fix', '123')
+			removeaddons('skin.htpt', '123')
+			
+			addon = 'script.pulsar.kickass-mc'
+			installaddonP(admin, addon, update=False)
+			
+			addon = 'script.pulsar.thepiratebay-mc'
+			installaddonP(admin, addon, update=False)
+			
+			addon = 'script.pulsar.torrentz-mc'
+			installaddonP(admin, addon, update=False)
+
+			fileID = getfileID('addondata_path'+".zip")
+			DownloadFile("https://www.dropbox.com/s/"+fileID+"/"+addon+".zip?dl=1", addon + ".zip", temp_path, addondata_path, silent=False)
 			'''---------------------------'''
 	
 
@@ -742,13 +779,67 @@ def mode28(value, admin, name, printpoint):
 		else: printpoint = printpoint + "8"
 		'''---------------------------'''
 
-def mode29(admin, name, printpoint):
+def mode29(value, command, header, exit, name, printpoint):
 	'''------------------------------
-	---?-----------------------------
-	------------------------------'''
-	name = "?"
-	mode29(admin, name, printpoint)
-	'''---------------------------'''
+	---Dialog-Select-Skin------------
+	------------------------------
+	value = list ; output = Skin.String/Setting ; header='''
+	extra = "" ; TypeError = "" ; returned2 = "" ; returned = "" ; commandL = [] ; list = [] ; list2 = []
+	
+	if command == "":
+		printpoint = printpoint + '9'
+		notification_common('3')
+		
+	commandL = command.split('|')
+	
+	if header == "":
+		header = 'Choose an option from the list'
+	
+	if exit != '0':
+		list.append('-> (Exit)')
+		list2.append('-> (Exit)')
+	
+	valueL = value.split('|')
+	for x in valueL:
+		#x = to_utf8(x)
+		y = find_string(x, '-[', ']-')
+		print y
+		if y != "":
+			y_ = x.replace(y, "")
+			list.append(y_)
+			y__ = y.replace('-[',"",1)
+			y__ = y__.replace(']-',"",1)
+			list2.append(y__)
+		else:	
+			list.append(x)
+			list2.append(x)
+
+	returned, returned2 = dialogselect(header,list,0)
+
+	if returned == -1: printpoint = printpoint + "9"
+	elif returned == 0 and exit != '0': printpoint = printpoint + "8"
+	else: printpoint = printpoint + "7"
+	
+	if "7" in printpoint:
+		for x in commandL:
+			if x[:2] == '0.':
+				x_ = x.replace(x[:2],"",1)
+				if '_name' in x:
+					setSkinSetting('0', x_, list[returned], force=True)
+				else:
+					setSkinSetting('0', x_, list2[returned], force=True)
+			elif x[:2] == '1.':
+				setSkinSetting('1', str(returned2), list2[returned], force=True)
+			else:
+				xbmc.executebuiltin(x) ; xbmc.sleep(10)
+	
+	text2 = newline + 'value' + space2 + str(value) + newline + \
+	'list ' + space2 + str(list) + newline + \
+	'list2 ' + space2 + str(list2) + newline + \
+	'returned' + space2 + str(returned) + space + 'returned2' + space2 + str(returned2) + newline + \
+	'command  ' + space2 + str(command) + newline + \
+	'commandL ' + space2 + str(commandL) + newline + extra
+	printlog(title=name, printpoint=printpoint, text=text2, level=0, option="")
 	
 def mode30(admin, name):
 	pass
@@ -1151,26 +1242,7 @@ def mode64(value, admin, name, printpoint):
 	'''------------------------------
 	---Extract from file-------------
 	------------------------------'''
-	removeaddons('repository.htpt', '123')
-	removeaddons('script.htpt.remote', '123')
-	removeaddons('script.htpt.refresh', '123')
-	removeaddons('script.htpt.install', '123')
-	removeaddons('resource.uisounds.htpt', '123')
-	removeaddons('repository.htpt', '123')
-	removeaddons('resource.images.htpt', '123')
-	removeaddons('script.htpt.smartbuttons', '123')
-	removeaddons('script.htpt.widgets', '123')
-	removeaddons('service.htpt', '123')
-	removeaddons('service.htpt.debug', '123')
-	removeaddons('service.htpt.fix', '123')
-	removeaddons('skin.htpt', '123')
-	
-	addon = 'plugin.video.thewiz.wall'
-	installaddonP(admin, addon, update=False)
-	setsetting_custom1(addon,'Fix_101',"true")
-	
-	#'featherence@walla.com'
-	'''---------------------------'''
+	pass
 
 def mode65(admin, name, printpoint):
 	'''------------------------------
@@ -2457,7 +2529,6 @@ def mode201(value, admin, name, printpoint):
 		from variables2 import labelT, list1, list0, list0c, list0c2, list0o
 		Custom1000(name,0,str(list[returned]),20)
 		'''---------------------------'''
-		
 	if "A" in printpoint:
 		Custom1000(name,20,str(list[returned]),20)
 		xbmc.executebuiltin('SetProperty(1000title,'+name+',home)')
@@ -2523,6 +2594,7 @@ def mode201(value, admin, name, printpoint):
 		
 	if "F" in printpoint:
 		Custom1000(name,70,str(list[returned]),15)
+		value1, value1_, value2, value2_, value3, value3_, value4, value4_, value5, value5_ = getRandomColors(admin)
 		'''RANDOM-ALL-COLORS'''
 		returnedx, count = getRandom("0", min=1, max=5, percent=50)
 		for x in list0c:
@@ -2554,7 +2626,7 @@ def mode201(value, admin, name, printpoint):
 		for value in listL:
 			count += 1
 			if value > 0 and value <= 5: value = ''
-			elif value > 5 and value <= 10: value = '10'
+			elif value > 5 and value <= 10: value = ''
 			elif value > 10 and value <= 15: value = '20'
 			elif value > 15 and value <= 20: value = '30'
 			elif value > 20 and value <= 25: value = '40'
@@ -2617,12 +2689,14 @@ def mode201(value, admin, name, printpoint):
 		
 	if ("7" in printpoint or value != "") and not "8" in printpoint and not "9" in printpoint:
 		if value != "9":
-			Custom1000(name,100,'',20)
+			Custom1000(name,90,str(list[returned]),3)
 			notification(".","","",1000)
 			ReloadSkin(admin)
-			xbmc.executebuiltin('ActivateWindow(Home.xml)') ; xbmc.executebuiltin('ActivateWindow(1117)') ; xbmc.executebuiltin('ActivateWindow(1173)')
+			Custom1000(name,100,str(list[returned]),1) ; xbmc.sleep(1500)
+			xbmc.executebuiltin('ActivateWindow(1117)') ; xbmc.sleep(2000) ; xbmc.executebuiltin('ActivateWindow(1173)')
 		
-	text = "list" + space2 + str(list) + space + "returned" + space2 + str(returned)
+	text = "list" + space2 + str(list) + newline + \
+	"returned" + space2 + str(returned)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 
@@ -3298,7 +3372,7 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + '---------------------------'
 			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('ListItem.Art(Poster)') #CUSTOM TEST
 			message = message + newline + "custom2" + space2 + xbmc.getInfoLabel('ListItem.IsCollection') #CUSTOM TEST
-			message = message + newline + "custom3" + space2 + str(xbmc.getCondVisibility('VideoPlayer.Content(episodes)')) #CUSTOM TEST
+			message = message + newline + "custom3" + space2 + str(xbmc.getInfoLabel('System.InternetState')) #CUSTOM TEST
 			
 			
 
@@ -3458,7 +3532,7 @@ def mode232(value, admin, name, printpoint):
 			
 def mode233(value, admin, name, printpoint):
 	printpoint = ""
-	x = "" ; y = property_buttonid_ ; path = ""
+	x = "" ; y = property_buttonid_ ; path = "" ; x2_ = ""
 	if '0' in value:
 		y = property_subbuttonid_
 		value = value.replace('0',"",1)
@@ -3501,17 +3575,18 @@ def mode233(value, admin, name, printpoint):
 			printpoint = printpoint + '3'
 			'''local'''
 			if '1' in value:
+				printpoint = printpoint + '4'
 				custombackgroundspath = xbmc.getInfoLabel('Skin.String(CustomBackgroundsPath)')
 				x_ = xbmc.getInfoLabel('Skin.String(background'+y+')')
 				x2, x2_ = TranslatePath(x_, filename=False)
 				
-				if os.path.exists(x_): path = x2
+				if os.path.exists(x2): path = x2
 				elif os.path.exists(custombackgroundspath): path = custombackgroundspath
 				else: path = featherenceserviceicons_path
-				xbmc.executebuiltin('Skin.SetImage(background'+y+',,'+path+')') ; xbmc.sleep(1000) ; x_ = xbmc.getInfoLabel('Skin.String(background'+y+')')
-				x2, x2_ = TranslatePath(x, filename=False)
-				if x2_ != "": setSkinSetting('0','background'+y,x2_)
+				xbmc.executebuiltin('Skin.SetImage(background'+y+',,'+path+')')
+				
 			elif '2' in value:
+				printpoint = printpoint + '5'
 				customiconspath = xbmc.getInfoLabel('Skin.String(CustomIconsPath)')
 				x_ = xbmc.getInfoLabel('Skin.String(icon'+y+')')
 				x2, x2_ = TranslatePath(x_, filename=False)
@@ -3519,14 +3594,13 @@ def mode233(value, admin, name, printpoint):
 				if os.path.exists(x2): path = x2
 				elif os.path.exists(customiconspath): path = customiconspath
 				else: path = featherenceserviceicons_path
-				xbmc.executebuiltin('Skin.SetImage(icon'+y+',,'+path+')') ; xbmc.sleep(1000) ; x_ = xbmc.getInfoLabel('Skin.String(icon'+y+')')
-				x2, x2_ = TranslatePath(x, filename=False)
-				if x2_ != "": setSkinSetting('0','icon'+y,x2_)
+				xbmc.executebuiltin('Skin.SetImage(icon'+y+',,'+path+')')
 				
 			else: printpoint = printpoint + '9'
 			
 	text = 'value' + space2 + str(value) + space + 'path' + space2 + str(path) + newline + \
-	'name' + space2 + str(name)
+	'name' + space2 + str(name) + newline + \
+	'x2_' + space2 + str(x2_)
 	printlog(title='mode233', printpoint=printpoint, text=text, level=0, option="")
 
 def mode235(value, admin, name, printpoint):

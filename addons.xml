@@ -3,7 +3,6 @@
 <addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.6" provider-name="finalmakerr, yoel guy">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
-	<import addon="plugin.video.youtube" version="5.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -30,7 +29,6 @@
 <addon id="plugin.video.featherence.extreme" version="0.1.4" name="Featherence Extreme" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube" version="5.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -84,7 +82,6 @@
 <addon id="plugin.video.featherence.music" name="Featherence Music" version="0.2.0" provider-name="finalmakerr, amir elgazar">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
-	<import addon="plugin.video.youtube" version="5.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video audio</provides>
@@ -127,12 +124,10 @@
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.1.31" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.1.32" provider-name="finalmakerr">
   <requires>
-    <import addon="xbmc.addon" version="12.0.0"/>
 	<import addon="xbmc.json" version="6.0.0"/>
-	<import addon="xbmc.python" version="2.1.0"/> <!--2.1.0-->
-	<!--<import addon="script.module.simplejson" version="3.3.0"/-->
+	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="default.py"/>
   <extension point="xbmc.service" library="service.py" start="startup"/>
@@ -153,8 +148,9 @@
 <addon id="skin.featherence" version="0.3.0" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
-	<!--<import addon="repository.featherence" version="1.1.0" />-->
 	<import addon="script.featherence.service" version="0.1.0"/>
+	<!--<import addon="resource.images.weathericons.outline" version="0.0.4" optional="true"/>
+	<import addon="resource.images.weatherfanart.single" version="0.0.4" optional="true"/>-->
   </requires>
   <extension point="xbmc.gui.skin" effectslowdown="1.0" debugging="false">
     <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
@@ -167,20 +163,20 @@
 - Panel, Horizontal, Vertical home views with two versions each.
 - Wall, Small list, Center List, Poster, Line views.
 - 1:1 realtime home design capability. Customized is at the top level, superb easy and fun!
-- RTL &amp; LTR auto support mode.
+- RTL and LTR auto support mode.
 - Full mouse support.
 - AutoView support.
-- Choose any color for almost anything! (WIP)
-- Full save/load skin image.
+- Choose varied of colors for almost anything!
+- Smart backup script.
 - Varied buttons and views effects.
 - Enchanced widget and network status.
 - Full genres support.
-- ExtendedInfo support (Movies/TV/Actors/Directors/AutoComplete..)
 - Some views have an additional special features.
 - Dynamic weather and widgets fanart (optional).
-- Interactive video window &amp; OSD while navaigating.
+- Interactive video window and OSD while navaigating.
 - Startup music and/or video (optional).
-- Smart subtitle module display current and history choosen subtitles, smart search and auto subs hosts finder.</description>
+- Smart subtitle module display current and history choosen subtitles, smart search and auto subs hosts finder.
+- ExtendedInfo support (Movies/TV/Actors/Directors/AutoComplete..)</description>
     <disclaimer></disclaimer>
 	<email>featherence@groups.facebook.com</email>
 	<forum>http://forum.kodi.tv/showthread.php?tid=251726</forum>

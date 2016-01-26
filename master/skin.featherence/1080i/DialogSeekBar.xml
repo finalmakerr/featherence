@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window description="(7009)">
 	<defaultcontrol>1</defaultcontrol>
-	<visible>[Window.IsVisible(VideoOSD.xml) | Window.IsActive(fullscreeninfo) | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + VideoPlayer.IsFullscreen</visible>
+	<visible>[Window.IsVisible(VideoOSD.xml) | Window.IsActive(fullscreeninfo) | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + VideoPlayer.IsFullscreen</visible>
 	<visible>!Window.IsVisible(DialogSubtitles.xml) + !Window.IsVisible(MusicOSD.xml)</visible>
 	<onunload condition="VideoPlayer.SubtitlesEnabled + [SubString(Player.Filename,master.m3u8) | SubString(Player.FolderPath,media3.sdarot.)] + !Skin.HasSetting(General_ScriptON)">Action(ShowSubtitles)</onunload>
 	<controls>

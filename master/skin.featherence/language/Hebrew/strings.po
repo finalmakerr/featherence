@@ -138,8 +138,8 @@ msgid "Create New Item"
 msgstr "צור פריט חדש"
 
 msgctxt "#31050
-msgid ""
-msgstr ""
+msgid "Fanart Transperancy"
+msgstr "שקיפות פאנארט"
 
 msgctxt "#31051
 msgid ""

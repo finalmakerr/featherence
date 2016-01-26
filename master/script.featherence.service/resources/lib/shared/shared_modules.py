@@ -60,7 +60,9 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 								absname = os.path.abspath(os.path.join(dirname, filename))
 								arcname = absname[len(abs_src) + 1:]
 								arcname1dir = find_string(arcname, arcname[:2], "/")
-								print 'zipping %s as %s' % (os.path.join(to_utf8(dirname), to_utf8(filename)),to_utf8(arcname))
+
+								text = 'zipping %s as %s' % (os.path.join(to_utf8(dirname), to_utf8(filename)),to_utf8(arcname))
+								printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
 								#if filteron == [] or arcname in filteron:
 								#if filteroff == [] or not arcname in filteroff:
 								try:
@@ -77,7 +79,9 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 											
 											
 											#if len(split[0]) == 2: absname2 = split[0] + "\\" + absname
-											if admin: print printfirst + name + space + "absname2_test" + space2 + "split[0]" + space2 + str(split[0]) + space + "split[1]" + space2 + str(split[1]) + space
+											text = "split[0]" + space2 + str(split[0]) + space + "split[1]" + space2 + str(split[1])
+											printlog(title=name + 'absname2_test', printpoint=printpoint, text=text, level=0, option="")
+											
 											#if "C:\\" in absname2: absname2 = absname2.replace("C:\\","C:\\\\")
 											zf.write(absname, absname2)
 										else:
@@ -92,12 +96,13 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 									TypeError = str(TypeError) + space + "absname" + space2 + str(absname) + space + "arcname" + space2 + str(arcname)
 									'''---------------------------'''
 									
-		else: printpoint = printpoint + "9"				
-		if admin:
-			print "Admin-Test_LV" + printpoint + space + "dirname" + space2 + str(to_utf8(dirname)) + newline + \
-			"subdir" + space2 + to_unicode(subdir) + space + "subdir_level" + space2 + str(subdir_level) + space + "subdir2" + space2 + str(to_utf8(subdir2)) + space + "files" + space2 + str(to_utf8(files)) + newline + \
-			"file" + space2 + str(to_utf8(file)) + space + "level" + space2 + str(level) + newline + \
-			'to_utf8(extra2)'
+		else: printpoint = printpoint + "9"
+
+		text = "dirname" + space2 + str(to_utf8(dirname)) + newline + \
+		"subdir" + space2 + to_unicode(subdir) + space + "subdir_level" + space2 + str(subdir_level) + space + "subdir2" + space2 + str(to_utf8(subdir2)) + space + "files" + space2 + str(to_utf8(files)) + newline + \
+		"file" + space2 + str(to_utf8(file)) + space + "level" + space2 + str(level) + newline + \
+		'to_utf8(extra2)'
+		printlog(title=name + '_LV', printpoint=printpoint, text=text, level=0, option="")
 	
 	#except Exception, TypeError:
 	#TypeError = str(TypeError) + space + "os.walk(src)" + space2 + str(os.walk(src)) + space + "src" + space2 + str(src) + space + "dirname" + space2 + dirname + space + "files" + space2 + str(files)
@@ -161,7 +166,7 @@ def TranslatePath(x, filename=True):
 		if returned[-1:] == '/': returned = returned.replace(returned[-1:],"",1)
 		
 		
-	elif 'https://' in x or 'http://' in x:
+	elif 'https://' in x or 'http://' in x or 'http:%2f' in x:
 		printpoint = printpoint + '2'
 		returned = x
 	elif 'special://' in x:
@@ -184,6 +189,7 @@ def TranslatePath(x, filename=True):
 		for y in list:
 			if y in x:
 				returned2 = x.replace(y, list2[i])
+				returned2 = returned2.replace('\\','/')
 				break
 			i += 1
 
@@ -216,7 +222,7 @@ def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[]):
 	elif x2 == "":
 		printpoint = printpoint + '1'
 		formula = formula + newline + custom + str(x2)
-	elif 'https://' in x2 or 'http://' in x2:
+	elif 'https://' in x2 or 'http://' in x2 or 'http:%2f' in x2:
 		printpoint = printpoint + '2'
 		formula = formula + newline + custom + str(x2)
 	else:
@@ -232,6 +238,7 @@ def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[]):
 			printpoint = printpoint + '7'
 			filename = os.path.basename(x2)
 			subdir = x2.split(slash)
+			#print 'test! ' + 'x2' + space2 + str(x2) + newline + str(subdir) + filename
 			subdir = subdir[-2]
 			subdir_filename = to_unicode(subdir) + '_' + to_unicode(filename)
 			target = os.path.join(featherenceserviceaddondata_media_path, subdir_filename)
@@ -403,7 +410,7 @@ def addonsettings2(addon,set1,set1v,set2,set2v,set3,set3v,set4,set4v,set5,set5v)
 	'''------------------------------
 	---SET-ADDON-SETTING-5-----------
 	------------------------------'''
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
+	name = 'addonsettings2' ; printpoint = ""
 	if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
 		getsetting_custom          = xbmcaddon.Addon(addon).getSetting
 		setsetting_custom          = xbmcaddon.Addon(addon).setSetting
@@ -432,11 +439,9 @@ def addonsettings2(addon,set1,set1v,set2,set2v,set3,set3v,set4,set4v,set5,set5v)
 			setsetting_custom(set5,set5v)
 			if checkChange != "true": checkChange = "true"
 		
-		'''------------------------------
-		---PRINT-END---------------------
-		------------------------------'''
-		if checkChange == "true" and admin: print printfirst + "addonsettings2 " + addon + space + set1 + space2 + set1v + space + set2 + space2 + set2v + space + set3 + space2 + set3v + space + set4 + space2 + set4v + space + set5 + space2 + set5v + space
-		'''---------------------------'''
+		if checkChange == "true":
+			text = addon + space + set1 + space2 + set1v + space + set2 + space2 + set2v + space + set3 + space2 + set3v + space + set4 + space2 + set4v + space + set5 + space2 + set5v + space
+			printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
 def checkAddon_Update(admin, Addon_Update, Addon_Version, addonVersion, Addon_UpdateDate, Addon_UpdateLog, Addon_ShowLog, Addon_ShowLog2, VerReset=""):
 	TypeError = "" ; extra = "" ; name = 'checkAddon_Update' ; printpoint = ""
@@ -941,7 +946,7 @@ def checkDialog(admin):
 	'''------------------------------
 	---checkDialog-------------------
 	------------------------------'''
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
+	name = 'checkDialog' ; printpoint = ""
 	dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)')
 	dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
 	dialogselectW = xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)')
@@ -959,7 +964,7 @@ def checkDialog(admin):
 	dialogMessageCustom = ""
 	'''---------------------------'''
 	if dialogselectW:
-		dialogHeader = xbmc.getInfoLabel('Control.GetLabel(1)') ### Skin.HasSetting(Admin) | !StringCompare(Control.GetLabel(1),Genesis)
+		dialogHeader = xbmc.getInfoLabel('Control.GetLabel(1)')
 		dialogHeaderCustom = xbmc.getInfoLabel('Control.GetLabel(100)') ###CUSTOM
 		dialogMessage = ""
 		dialogMessageCustom = ""
@@ -1044,8 +1049,10 @@ def checkDialog(admin):
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
-	if returned_Dialog != "" and admin: print printfirst + "checkDialog" + space + "returned_Dialog" + space2 + "returned_Dialog" + space2 + returned_Dialog + space + "dialogHeader" + space2 + dialogHeader + space3 + "dialogHeaderCustom" + space2 + dialogHeaderCustom + space3 + "dialogMessage" + space2 + dialogMessage + space3 + "dialogMessageCustom" + space2 + dialogMessageCustom + space3
-	'''---------------------------'''
+	if returned_Dialog != "":
+		text = "returned_Dialog" + space2 + "returned_Dialog" + space2 + returned_Dialog + space + "dialogHeader" + space2 + dialogHeader + space3 + "dialogHeaderCustom" + space2 + dialogHeaderCustom + space3 + "dialogMessage" + space2 + dialogMessage + space3 + "dialogMessageCustom" + space2 + dialogMessageCustom + space3
+		printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+		'''---------------------------'''
 	
 	'''------------------------------
 	---RETURN-END--------------------
@@ -1098,6 +1105,7 @@ def dialogkeyboard(input, heading, option, custom, set1, addon):
 	try: heading = heading.encode('utf-8')
 	except: pass
 	dialog = xbmcgui.Dialog()
+	xbmc.sleep(40) #Delay time to make sure operation executed!
 	keyboard = xbmc.Keyboard(input,heading,option)
 	keyboard.doModal()
 	
@@ -1149,7 +1157,9 @@ def dialogkeyboard(input, heading, option, custom, set1, addon):
 		elif set1 != "" and addon == "": setSkinSetting("0",set1,set1v)
 	
 	if option != 0: set1v = "******"
-	#print printfirst + name + "_LV" + printpoint + space + "option" + space2 + str(option) + space + "returned" + space2 + str(returned) + space + "heading" + space2 + str(heading) + space + "set1v" + space2 + str(set1v)
+	
+	text = "option" + space2 + str(option) + space + "returned" + space2 + str(returned) + space + "heading" + space2 + str(heading) + space + "set1v" + space2 + str(set1v)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	return returned
 
@@ -1251,35 +1261,22 @@ def dialogselect(heading, list, autoclose):
 	if '$LOCALIZE' in heading or '$ADDON' in heading:
 		printpoint = printpoint + "1"
 		heading = xbmc.getInfoLabel(heading)
-	#heading = str(heading).decode('utf-8').encode('utf-8')
+
 	heading = to_utf8(heading)
 	
 	returned = dialog.select(str(heading),list,autoclose)
 	returned = int(returned)
 	
-	
-	
-	#value = value.replace(" ","",1)
-	#value = value.decode('utf-8').encode('utf-8')
-	#value = str(value).decode('utf-8')
-	#value = str(value).decode('utf-8').encode('utf-8')
-	#value = value.decode('utf-8').encode('utf-8')
 	if returned == -1:
 		notification_common("9")
 		value = ""
 	else:
 		value = list[returned]
-		try: value = value.encode('utf-8')
-		except Exception, TypeError: printpoint = printpoint + "5" ; extra = extra + newline + "TypeError_LV" + printpoint + space2 + str(TypeError)
-		try: value = str(value)
-		except Exception, TypeError: printpoint = printpoint + "6" ; extra = extra + newline + "TypeError_LV" + printpoint + space2 + str(TypeError)
+		value = to_utf8(value)
+		value = str(value)
 
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
 	text = str(heading) + "( " + str(returned) + " )" + space + "value" + space2 + value + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
-	'''---------------------------'''
 	
 	return returned, value
 	'''---------------------------'''
@@ -1390,7 +1387,7 @@ def refresh_datetime(admin, datenowS_, timenowS_):
 	import datetime as dt
 	import time
 	
-	name = 'refresh_datetime'
+	name = 'refresh_datetime' ; printpoint = ""
 	
 	datenow = dt.date.today()
 	datenowS = str(datenow)
@@ -1414,11 +1411,9 @@ def refresh_datetime(admin, datenowS_, timenowS_):
 	timenow4 = timenow.strftime("%S")
 	timenow4S = str(timenow4)
 	'''---------------------------'''
-	
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	print printfirst + name + space + "datenowS/2" + space2 + datenowS_ + space4 + datenowS + space + "timenowS" + space2 + timenowS_ + space4 + timenowS
+
+	text = "datenowS/2" + space2 + datenowS_ + space4 + datenowS + space + "timenowS" + space2 + timenowS_ + space4 + timenowS
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	return datenow, datenowS, dateafter, dateafterS, yearnow, yearnowS, daynow, daynowS, timenowS, timeow2S, timenow3S, timenow4S
 
@@ -1427,23 +1422,16 @@ def getRandom(custom, min=0, max=100, percent=50):
 	---RANDOM------------------------
 	------------------------------'''
 	import random
-	value = ""
-	returned = ""
-	printpoint = ""
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
+	name = 'getRandom' ; printpoint = "" ; TypeError = "" ; extra = "" ; value = "" ; returned = ""
+
 	try:
 		custom = int(custom)
 		min = int(min)
 		max = int(max)
 		percent = int(percent)
-	except Exception, TypeError: printpoint = printpoint + "9"
-	'''---------------------------
-	random.random()
-	This prints a random floating point number in the range [0, 1) (that is, between 0 and 1, including 0.0 but always smaller than 1.0).
-	randrange(a, b) chooses an integer in the range [a, b).
-	uniform(a, b) chooses a floating point number in the range [a, b).
-	normalvariate(mean, sdev) samples the normal (Gaussian) distribution.
-	------------------------------'''
+	except Exception, TypeError:
+		printpoint = printpoint + "9"
+		extra = extra + newline + 'TypeError' + space2 + str(TypeError)
 	
 	if not "9" in printpoint:
 		'''---------------------------'''
@@ -1451,13 +1439,9 @@ def getRandom(custom, min=0, max=100, percent=50):
 		'''---------------------------'''
 		if value <= percent: returned = "ok"
 		else: returned = "skip"
-	
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	if admin: print "getRandom_LV" + printpoint + space + "min" + space2 + str(min) + space + "max" + space2 + str(max) + space + "percent" + space2 + str(percent) + newline + "returned" + space2 + str(returned) + space + "value" + space2 + str(value)
-	if "9" in printpoint: print "getRandom_LV" + printpoint + space + "TypeError" + space2 + str(TypeError) 
-	'''---------------------------'''
+
+	text = "min" + space2 + str(min) + space + "max" + space2 + str(max) + space + "percent" + space2 + str(percent) + newline + "returned" + space2 + str(returned) + space + "value" + space2 + str(value) + extra
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 	return returned, value
 				
@@ -1466,7 +1450,8 @@ def get_timenow(custom):
 	---VARIABLES---------------------
 	------------------------------'''
 	import datetime as dt
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
+	
+	name = 'get_timenow' ; printpoint = ""
 	customS = str(custom)
 	timenow = dt.datetime.now()
 	timenow3 = timenow.strftime("%H")
@@ -1480,10 +1465,9 @@ def get_timenow(custom):
 	
 	if custom == 1: returned = timezone
 	else: returned = ""
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	if admin: print printfirst + "get_timenow_" + customS + space + "timenow3S" + space2 + timenow3S + space + "timezone" + space2 + timezone + space
+	
+	text = customS + space + "timenow3S" + space2 + timenow3S + space + "timezone" + space2 + timezone + space
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	return returned
 
@@ -1605,7 +1589,37 @@ def installaddonP(admin, addon, update=True):
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
-		
+	
+	elif addon == 'script.pulsar.torrentz-mc':
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			fileID = getfileID(addon+".zip")
+			DownloadFile("https://github.com/mancuniancol/script.pulsar.torrentz-mc/raw/master/script.pulsar.torrentz-mc-3.0.3.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'script.pulsar.thepiratebay-mc': #FIXED PATH *MASTER
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			fileID = getfileID(addon+".zip")
+			DownloadFile("https://github.com/mancuniancol/script.pulsar.thepiratebay-mc/archive/master.zip", addon + "-master.zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, 'script.module.simplejson-master'), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'script.pulsar.kickass-mc': #FIXED PATH *MASTER
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			fileID = getfileID(addon+".zip")
+			DownloadFile("https://github.com/mancuniancol/script.pulsar.kickass-mc/archive/master.zip", addon + "-master.zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, 'script.module.simplejson-master'), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	
 	elif addon == 'browser.chromium-browser':
 		'''5.8'''
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
@@ -1676,16 +1690,34 @@ def installaddonP(admin, addon, update=True):
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
 	
-	elif addon == 'script.module.unidecode':
+	
+	elif addon == 'script.module.unidecode': #FIXED PATH
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			fileID = getfileID(addon+".zip")
 			DownloadFile("http://mirrors.kodi.tv/addons/frodo/script.module.unidecode/script.module.unidecode-0.4.16.zip", addon + ".zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
-	
-	elif addon == 'plugin.video.dailymotion_com':
+		
+	elif addon == 'resource.images.weathericons.outline': #FIXED PATH - *MASTER (PATH EXISTS!!)
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.outline/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, 'resource.images.weathericons.outline-master'), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+
+	elif addon == 'resource.images.weatherfanart.single': #FIXED PATH
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("http://mirrors.xbmc.org/addons/jarvis/resource.images.weatherfanart.single/resource.images.weatherfanart.single-0.0.5.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, 'script.module.requests-gotham'), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+		
+	elif addon == 'plugin.video.dailymotion_com': #DROPBOX PATH
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			fileID = getfileID(addon+".zip")
 			DownloadFile("https://www.dropbox.com/s/"+fileID+"/"+addon+".zip?dl=1", addon + ".zip", packages_path, addons_path, silent=True)
@@ -1868,12 +1900,14 @@ def installaddonP(admin, addon, update=True):
 			xbmc.sleep(1000)
 		if "repository" in addon: xbmc.executebuiltin("UpdateAddonRepos")
 		'''---------------------------'''
-		
-	print printfirst + name + "_LV" + printpoint
+	
+	text = ""
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")	
+
 	return printpoint
 
 def getVersion(addon, url):
-	returned = ""
+	name = 'getVersion' ; printpoint = "" ; returned = ""
 	from shared_modules3 import OPEN_URL
 	read = OPEN_URL(url)
 	x = '<addon id="'+addon+'"' ; y = '>'
@@ -1884,15 +1918,16 @@ def getVersion(addon, url):
 		version = regex_from_to(line, x, y, excluding=True)
 		if version != "" and version != None and not x in version and not y in version and '.' in version:
 			returned = version
-	
-	print 'getVersion' + space + 'read' + space2 + str(read) + newline + 'line' + space2 + str(line) + space + 'returned' + space2 + str(returned)
+
+	text = 'read' + space2 + str(read) + newline + 'line' + space2 + str(line) + space + 'returned' + space2 + str(returned)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	return returned
 
 def oewindow(name):
 	'''------------------------------
 	---OpenELEC-Window---------------
 	------------------------------'''
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
+	name = 'oewindow' ; printpoint = ""
 	xbmc.executebuiltin('RunScript(service.openelec.settings)')
 	xbmc.sleep(500)
 	mainwindowW = xbmc.getCondVisibility('Window.IsVisible(mainwindow.xml)')
@@ -1943,18 +1978,16 @@ def oewindow(name):
 				dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)')
 				if mainwindowW and dialogbusyW: xbmc.executebuiltin('RunScript(script.htpt.service,,?mode=50)') #NEW GAL CHECK!
 				'''---------------------------'''
-	
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	if admin: print printfirst + "oewindow" + space + name + space2 + "countbusy" + space2 + str(countbusy)
+
+	text = name + space2 + "countbusy" + space2 + str(countbusy)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	
 def notification(heading, message, icon, time):
 	'''------------------------------
 	---Show a Notification alert.----
 	------------------------------'''
-	admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
+	name = 'notification' ; printpoint = ""
 	'''heading : string - dialog heading | message : string - dialog message. | icon : [opt] string - icon to use. (default xbmcgui.NOTIFICATION_INFO/NOTIFICATION_WARNING/NOTIFICATION_ERROR) | time : [opt] integer - time in milliseconds (default 5000) | sound : [opt] bool - play notification sound (default True)'''
 	
 	if '$LOCALIZE' in heading or '$ADDON' in heading: heading = xbmc.getInfoLabel(heading)
@@ -1975,13 +2008,10 @@ def notification(heading, message, icon, time):
 	elif '$LOCALIZE' in message or '$ADDON' in message: message = str(message)
 	
 	time = str(time)
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	if admin:
-		try: print printfirst + "notification" + space2 + heading + space3 + message + space + time
-		except: print printfirst + "notification" + "..."
-		'''---------------------------'''
+
+	text = heading + space3 + message + space + time
+	try: printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	except Exception, TypeError: printlog(title=name, printpoint=printpoint, text=str(TypeError), level=0, option="")
 		
 def removeaddons(addons, custom):
 	name = 'removeaddons'
@@ -2564,8 +2594,8 @@ def setProperty(id, value, type="home"):
 	'returned' + space2 + str(returned)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
-def setSkinSetting(custom,set1,set1v):
-	if xbmc.getSkinDir() == 'skin.featherence':
+def setSkinSetting(custom,set1,set1v, force=False):
+	if xbmc.getSkinDir() == 'skin.featherence' or force == True:
 		'''------------------------------
 		---SET-SKIN-SETTING-1------------
 		------------------------------'''
@@ -2600,7 +2630,7 @@ def setSkinSetting(custom,set1,set1v):
 		'''------------------------------
 		---PRINT-END---------------------
 		------------------------------'''
-		if setting1 != set1v:
+		if setting1 != set1v or force == True:
 			text = custom + space + set1 + space2 + setting1 + " - " + set1v + space + \
 			newline + "localize(20122)" + space2 + localize(20122)
 			'''---------------------------'''
@@ -2622,15 +2652,11 @@ def setsetting_custom1(addon,set1,set1v):
 		set1v = str(set1v)
 		'''---------------------------'''
 		if set != set1v:
+			printpoint = printpoint + '7'
 			setsetting_custom(set1,set1v)
-			'''------------------------------
-			---PRINT-END---------------------
-			------------------------------'''
-			if admin and not admin2 or TypeError != "": print printfirst + "setsetting_custom1" + space2 + addon + space + set1 + space2 + set1v + space3
 			'''---------------------------'''
 	
-	text = 'addon' + space2 + str(addon) + space + 'set1' + space2 + str(set1) + space + 'set1v' + space2 + str(set1v) + newline + \
-	extra
+	text = 'addon' + space2 + str(addon) + space + 'set1' + space2 + str(set1) + space + 'set1v' + space2 + str(set1v) + newline + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 
@@ -2673,6 +2699,7 @@ def getfileID(file):
 	elif file == "playHTPT2.zip": fileID = "w5z5d6f9mauj33e" #htpthtpt
 	elif file == "fanarts.zip": fileID = "42uw5ptvq5jsv2q" #htpthtpt
 	elif file == "icons.zip": fileID = "z3kkvn89x2knrzf" #htpthtpt
+	elif file == "addondata_path.zip": fileID = "ksnyetbn0ryrcx6" #htpthtpt
 	
 	
 	

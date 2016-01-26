@@ -265,7 +265,7 @@
 	  <visible description="Label2">![!IsEmpty(ListItem.Label2) + !StringCompare(ListItem.Label2,0 B) + !Window.IsVisible(MyVideoNav.xml)]</visible>
 	  <visible description="Progress">![IsEmpty(ListItem.ChannelNumber) + !IsEmpty(ListItem.Progress)]</visible>
 	  <!--<visible>![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-3).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating) | !IsEmpty(Container.ListItemNoWrap(2).Rating) | !IsEmpty(Container.ListItemNoWrap(3).Rating)]]</visible>-->
-	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
+	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + !IsEmpty(ListItem.Property(UnWatchedEpisodes))] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
     </control>
   </include>
   <include name="View50_Plus">
@@ -334,9 +334,9 @@
 		<visible>ListItem.HasEpg</visible>
 		<visible>!StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Skin.HasSetting(View50_Plus)</visible>
 		<control type="label" description="StartTime">
-		  <posx>75</posx>
+		  <posx>80</posx>
 		  <posy>0</posy>
-		  <width>70</width>
+		  <width>60</width>
 		  <height>30</height>
 		  <font>size18</font>
 		  <textcolor>grey2</textcolor>
@@ -344,7 +344,7 @@
 		  <label>$INFO[ListItem.StartTime]</label>
 		</control>
 		<control type="progress">
-		  <posx>130</posx>
+		  <posx>135</posx>
 		  <posy>10</posy>
 		  <width>120</width>
 		  <height>13</height>
@@ -355,9 +355,9 @@
 		  <info>ListItem.Progress</info>
 		</control>
 		<control type="label" description="EndTime">
-		  <posx>255</posx>
+		  <posx>260</posx>
 		  <posy>0</posy>
-		  <width>70</width>
+		  <width>60</width>
 		  <height>30</height>
 		  <font>size18</font>
 		  <textcolor>grey2</textcolor>
@@ -685,6 +685,16 @@
 			   	<include>Slide2.3</include>
 				<animation condition="!Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 				<include>View57_Common</include>
+				<control type="image" description="סמן">
+				 <posx>23</posx>
+				 <posy>19</posy>              
+				 <height>312</height>
+				 <width>237</width>
+				 <texture colordiffuse="yellow">misc/dvdcases/dvdcases.png</texture>
+				 <visible>IsEmpty(Control.GetLabel(11156))</visible>
+				 <visible>!Skin.HasSetting(ShowDVDCases)</visible>
+				 <visible>!SubString(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)"</visible>
+				</control>
 				<control type="label" description="כותרת">
 				  <scrollspeed>1</scrollspeed>
 				  <align>center</align>
@@ -852,6 +862,16 @@
 			<animation condition="!Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 			<include>Slide2.3</include>
 			<include>View58_Common</include>
+			<control type="image" description="סמן">
+			 <posx>3</posx>
+			 <posy>25</posy>              
+			 <height>472</height>
+			 <width>380</width>
+			 <texture colordiffuse="yellow">misc/dvdcases/dvdcases.png</texture>
+			 <visible>IsEmpty(Control.GetLabel(11156))</visible>
+			 <visible>Skin.HasSetting(ShowDVDCases2)</visible>
+			 <visible>!SubString(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)"</visible>
+			</control>
 			<control type="label" description="כותרת">
 			  <animation condition="Skin.HasSetting(ShowDVDCases2)" effect="fade" start="90" end="90" time="0">Conditional</animation>
 			  <textcolor>yellow</textcolor>			  

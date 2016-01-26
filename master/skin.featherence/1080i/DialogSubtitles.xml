@@ -10,6 +10,7 @@
           <posx>240</posx>
 		  <posy>810</posy>
 		  <control type="image" description="מסגרת">
+		    <include>Border_Common</include>
 			<aspectratio>stretch</aspectratio>
 			<height>350</height>
 			<posy>-50</posy>
@@ -168,7 +169,6 @@
                 <focusedlayout width="1360" height="54">
                     <control type="button">
 					  <onfocus>SetProperty(DialogSubtitles,$INFO[Container(120).ListItem.Label2],home)</onfocus>
-					  <onfocus condition="Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + !Window(home).Property(DialogSubtitles)">Notification($INFO[Container(120).ListItem.Label2],$INFO[Window(home).Property(DialogSubtitles2)],1000)</onfocus>
 					  <visible>false</visible>
 					</control>
 					<control type="image">
@@ -258,7 +258,7 @@
                         <textcolor>red</textcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.ActualIcon]</label>
-						<visible>Skin.HasSetting(Admin)</visible>
+						<visible>Skin.HasSetting(Admin) + false</visible>
                         <width>70</width>
                     </control>
                 </focusedlayout>
@@ -271,6 +271,7 @@
 		  <posy>270</posy>	  
 		  <width>450</width>
             <control type="image" description="רקע">
+			  <include>Border_Common</include>
 			  <aspectratio>stretch</aspectratio>
 			  <texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
             </control>
@@ -422,7 +423,7 @@
 			<ondown condition="VideoPlayer.HasSubtitles">SubtitleDelayMinus</ondown>
 			<onclick>Action(ShowSubtitles)</onclick>
 		</control>
-	</control>
-		<include>TopInformation</include>
+	  </control>
+	  <include>TopInformation</include>
 	</controls>
 </window>

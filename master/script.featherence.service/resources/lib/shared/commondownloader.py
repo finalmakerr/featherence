@@ -77,7 +77,7 @@ def download(url, dest, title=None, referer=None, agent=None, cookie=None, silen
 
 
 def doDownload(url, dest, title, referer, agent, cookie, silent=False):
-    admin3 = xbmc.getInfoLabel('Skin.HasSetting(Admin3)')
+    admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
 	#unquote parameters
     url     = urllib.unquote_plus(url)
     dest    = urllib.unquote_plus(dest)
@@ -91,7 +91,7 @@ def doDownload(url, dest, title, referer, agent, cookie, silent=False):
     resp = getResponse(url, 0, referer, agent, cookie, silent)
 
     if not resp:
-        if silent != True or admin3: xbmcgui.Dialog().ok(title, dest, 'Download failed', 'No response from server')
+        if silent != True or admin: xbmcgui.Dialog().ok(title, dest, 'Download failed', 'No response from server')
         return "skip"
 
     try:    content = int(resp.headers['Content-Length'])
@@ -103,10 +103,11 @@ def doDownload(url, dest, title, referer, agent, cookie, silent=False):
     #print "Download Header"
     #print resp.headers
     if resumable:
-        print "Download is resumable"
+        pass
+		#print "Download is resumable"
 
     if content < 1:
-        xbmcgui.Dialog().ok(title, file, 'Unknown filesize', 'Unable to download')
+        if silent != True or admin: xbmcgui.Dialog().ok(title, file, 'Unknown filesize', 'Unable to download')
         return "skip"
 
     size = 1024 * 1024
@@ -126,7 +127,7 @@ def doDownload(url, dest, title, referer, agent, cookie, silent=False):
         if xbmcgui.Dialog().yesno(title + ' - Confirm Download', file, 'Complete file is %dMB' % mb, 'Continue with download?', 'Confirm',  'Cancel') == 1:
 			return "abort"
 
-    print 'Download File Size : %dMB %s ' % (mb, dest)
+    if silent != True or admin: print 'Download File Size : %dMB %s ' % (mb, dest)
 
     #f = open(dest, mode='wb')
     f = xbmcvfs.File(dest, 'w')
@@ -140,11 +141,12 @@ def doDownload(url, dest, title, referer, agent, cookie, silent=False):
             downloaded += len(c)
         percent = min(100 * downloaded / content, 100)
         if percent >= notify:
-            xbmc.executebuiltin( "XBMC.Notification(%s,%s,%i)" % ( title + " - " + str(percent)+'%', dest, 10000))
+			if silent != True or admin:
+				xbmc.executebuiltin( "XBMC.Notification(%s,%s,%i)" % ( title + " - " + str(percent)+'%', dest, 10000))
 
-            print 'Download percent : %s %s %dMB downloaded : %sMB File Size : %sMB' % (str(percent)+'%', dest, mb, downloaded / 1000000, content / 1000000)
+				print 'Download percent : %s %s %dMB downloaded : %sMB File Size : %sMB' % (str(percent)+'%', dest, mb, downloaded / 1000000, content / 1000000)
 
-            notify += 10
+				notify += 10
 
         chunk = None
         error = False

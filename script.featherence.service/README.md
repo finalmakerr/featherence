@@ -13,6 +13,22 @@
 # **Available scripts commands:**
 
 ```
+OPEN DIALOG SELECT WINDOW
+RunScript(script.featherence.service,,?mode=29&amp;value=list&amp;value2=command&amp;value3=header&amp;value4=1)
+TIP:
+	- You may add more values to list and command by adding "|".
+	- For set SkinString use 0.<skin.string> in value2.
+	- For set different value upon select add -[x]- in value.
+	- For set same value upon select when different value is also used (-[x]-) add _name in value2 command.
+	- Use value4 = 0 for removing the exit button.
+```
+
+```
+OPEN CUSTOM DIALOG TEXT VIEWER
+RunScript(script.featherence.service,,?mode=31&amp;value=header&amp;value2=message)
+```
+
+```
 SOFT-RESTART (Terminal supported)
 RunScript(script.featherence.service,,?mode=50)
 ```
@@ -57,10 +73,7 @@ LAUNCH EXTENDEDINFO DIRECTOR INFO
 RunScript(script.featherence.service,,?mode=70&amp;value=4)
 ```
 
-```
-OPEN CUSTOM DIALOG TEXT VIEWER
-RunScript(script.featherence.service,,?mode=31&amp;value=header&amp;value2=message)
-```
+
 
 ```
 READ FROM FILE AND DISPLAY

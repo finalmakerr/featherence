@@ -370,7 +370,7 @@
         </control>
   </include>
    
-   <include name="Border_Common">
+  <include name="Border_Common">
     <bordertexture colordiffuse="ff000000" border="40">buttons/ButtonE0.png</bordertexture>
 	<bordersize>1</bordersize>
   </include>
@@ -410,6 +410,14 @@
 	 <height>552</height>
    </include>
    <include name="Control_Pos7" description="">
+     <aspectratio aligny="top">stretch</aspectratio>
+	 <height>30</height>
+	 <width>50</width>
+   </include>
+   <include name="Control_Pos8" description="">
+     <height>522</height>
+	 <posx>0</posx>
+	 <posy>30</posy>
    </include>
    <include name="Control_Pos13" description="">
      <posx>0</posx>
@@ -418,6 +426,9 @@
    </include>
    <include name="Control_Pos14" description="">
      <height>230</height>
+   </include>
+   <include name="Control_Pos33" description="">
+	 <height>773</height>
    </include>
    <include name="Control_Pos34" description="">
 	 <posx>185</posx>

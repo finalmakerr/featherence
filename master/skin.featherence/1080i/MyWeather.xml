@@ -67,10 +67,12 @@
 			  <label>$INFO[ListItem.Property(Conditions)]</label>
 			</control>
 			<control type="image" description="תמונת מצב">
-			  <posy>0</posy>
-			  <height>160</height>
-			  <width>160</width>
-			  <texture>weather/$INFO[ListItem.Property(FanartCode)].png</texture>
+			  <posy>15</posy>
+			  <posx>30</posx>
+			  <height>100</height>
+			  <width>100</width>
+			  <texture>special://home/addons/resource.images.weathericons.outline/resources/$INFO[ListItem.Property(FanartCode)].png</texture>
+			  <!--<texture>weather/$INFO[ListItem.Property(FanartCode)].png</texture>-->
 			  <aspectratio align="center">keep</aspectratio>
 			</control>
 			<control type="image" description="קו לאורך">
@@ -124,10 +126,12 @@
 			  <label>$INFO[ListItem.Property(Conditions)]</label>
 			</control>
 			<control type="image" description="תמונת מצב">
-			  <posy>0</posy>
-			  <height>160</height>
-			  <width>160</width>
-			  <texture>weather/$INFO[ListItem.Property(FanartCode)].png</texture>
+			  <posy>15</posy>
+			  <posx>30</posx>
+			  <height>100</height>
+			  <width>100</width>
+			  <texture>special://home/addons/resource.images.weathericons.outline/resources/$INFO[ListItem.Property(FanartCode)].png</texture>
+			  <!--<texture>weather/$INFO[ListItem.Property(FanartCode)].png</texture>-->
 			  <aspectratio align="center">keep</aspectratio>
 			</control>
 		</control>

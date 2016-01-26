@@ -4,12 +4,25 @@ WIP - WORK IN PROGRESS
 - Horizontal view display position for multipages.
 - Added clear fanart support.
 - Touch device support.
+- Widget auto refresh on condition.
+
+------------------------
+Featherence v0.3.1 (xx-Jan-16)
+------------------------
+- Added icons to skin design's menus.
+- Added template: Classico.
+- DVD case is now marked for Wall and Posters views.
+- Major reduce skin size.
+- Now available on official Kodi's repo.
 - Update dialogtextviewer.
+- Update integrated player window.
+- Update weather icons and fanarts.
 
 ------------------------
 Featherence v0.3.0 (24-Jan-16)
 ------------------------
 - Added Show poster as fanart (optional).
+- Added fanart overlay adjustment for Wall and Posters views.
 - Added choose overlay for sub marker.
 - Minor bugs fix.
 - Update ExtendedInfo actions.

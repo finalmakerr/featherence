@@ -171,6 +171,7 @@
           <posx>0</posx>
 		  <width>480</width>
           <height>70</height>
+		  <!--<texture colordiffuse="$VAR[IconFocusColor]" border="40">buttons/ButtonE0.png</texture>-->
 		  <texture border="40">buttons/ButtonE.png</texture>
         </control>
 		<control type="image" description="סמל">
