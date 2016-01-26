@@ -47,31 +47,6 @@
       <texture border="32">images/Slider.png</texture>
     </control>
   </include>
-  <include name="Unwatched">
-  <control type="group">
-  <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
-  <animation effect="fade" time="200" delay="300">Visible</animation>
-    <animation effect="fade" end="0">Hidden</animation>
-    <control type="image">
-      <posy>480</posy>
-      <posx>140</posx>
-      <height>55</height>
-      <width>80</width>
-      <aspectratio>keep</aspectratio>
-      <texture>badges/Badgecount.png</texture>
-    </control>
-    <control type="label" description="Label2">
-      <align>center</align>
-	  <posy>480</posy>
-      <posx>140</posx>
-      <height>44</height>
-      <width>80</width>
-      <font>size30</font>
-      <textcolor>white</textcolor>
-      <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
-    </control>
-	</control>
-  </include>
   
   <include name="ImageL1">
     <aspectratio align="left">keep</aspectratio>

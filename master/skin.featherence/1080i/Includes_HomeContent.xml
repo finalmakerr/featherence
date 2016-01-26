@@ -612,17 +612,6 @@
 		  <visible>[Control.IsVisible(311) | Control.IsVisible(312)] + Control.IsVisible(9090)</visible>
 		  <visible>Window.IsVisible(Home.xml)</visible>
 	  </control>
-	  <control type="button" id="9093" description="ניגון ידני/אוטומטי">
-		  <include>Fade_TopInformationOverlay</include>
-		  <width>140</width>
-		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
-		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
-		  <label>$VAR[Button9093]</label>
-		  <onclick>RunScript(script.featherence.refresh,,?mode=2)</onclick>
-		  <posx>-10</posx>
-		  <visible>Control.IsVisible(9090) + false</visible>
-		  <visible>Window.IsVisible(Home.xml)</visible>
-	  </control>
 	  <control type="button" id="9094" description="נגן קדימונים אקראיים">
 		  <include>Fade_TopInformationOverlay</include>
 		  <width min="250" max="310">auto</width>

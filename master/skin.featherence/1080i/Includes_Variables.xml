@@ -34,12 +34,6 @@
 	<value description="פרקים שנוספו לאחרונה" condition="Control.IsVisible(312) + !Skin.HasSetting(TVShelf_Watchlist) + !Player.HasVideo">$LOCALIZE[20387]</value>
 	<value description="סדרות בתהליך" condition="Control.IsVisible(312) + Skin.HasSetting(TVShelf_Watchlist) + !Player.HasVideo">$LOCALIZE[73120]</value>
   </variable>
-  <variable name="Button9093" description="כפתור קצה">
-  	<value description="ידני" condition="Skin.HasSetting(AutoPlay_Pause)">$LOCALIZE[413]</value>
-	<value description="אוטומטי" condition="!Skin.HasSetting(AutoPlay_Pause)">$LOCALIZE[14061]</value>
-	<value description="ידני" condition="Skin.HasSetting(AutoPlay_Pause)">$LOCALIZE[79102]</value>
-	<value description="אוטומטי" condition="!Skin.HasSetting(AutoPlay_Pause)">$LOCALIZE[79103]</value>
-  </variable>
   <variable name="Button9091" description="כפתור קצה">
   	<value condition="Control.IsVisible(311) + IsEmpty(Window(home).Property(Widget_Trailers)) + !Player.HasVideo">$LOCALIZE[342]</value>
 	<value condition="Control.IsVisible(311) + !IsEmpty(Window(home).Property(Widget_Trailers)) + !Player.HasVideo">$LOCALIZE[72100]</value>
@@ -259,26 +253,17 @@
 	<value condition="!IsEmpty(ListItem.Date) + !Window.IsVisible(MyPVRChannels.xml) + !Window.IsVisible(MyPVRGuide.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !ListItem.HasEpg">$INFO[ListItem.Date]</value>
   </variable>
   <variable name="TopVideoInformation3" description="דירוג וידאו/אודיו">
-	<value description="Home" condition="Skin.HasSetting(Rating) + Window.IsActive(home) + [Control.HasFocus(311) | Control.HasFocus(312)] + !IsEmpty(ListItem.Property(rating))">$INFO[ListItem.Property(rating),badges/rating/10/,.png]</value>
-	<value description="Home(+)" condition="!Skin.HasSetting(Rating) + Window.IsActive(home) + [Control.HasFocus(311) | Control.HasFocus(312)] + !IsEmpty(ListItem.Property(rating))">$INFO[ListItem.Property(rating),badges/rating/10+/,.png]</value>
-	<value description="Home2_Movies" condition="Skin.HasSetting(Rating) + Window.IsActive(home) + Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(rating))">$INFO[Container(311).ListItem.Property(rating),badges/rating/10/,.png]</value>
-	<value description="Home2(+)_Movies" condition="!Skin.HasSetting(Rating) + Window.IsActive(home) + Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(rating))">$INFO[Container(311).ListItem.Property(rating),badges/rating/10+/,.png]</value>
-	<value description="Home2_TV" condition="Skin.HasSetting(Rating) + Window.IsActive(home) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(rating))">$INFO[Container(312).ListItem.Property(rating),badges/rating/10/,.png]</value>
-	<value description="Home2(+)_TV" condition="!Skin.HasSetting(Rating) + Window.IsActive(home) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(rating))">$INFO[Container(312).ListItem.Property(rating),badges/rating/10+/,.png]</value>
-    <value description="בניגון יו-טיוב" condition="Skin.HasSetting(Rating) + Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Rating) + IntegerGreaterThan(VideoPlayer.Rating,0) + !IntegerGreaterThan(VideoPlayer.Rating,5) + [SubString(Player.FolderPath,.googlevideo.com) | SubString(Player.FolderPath,&source=youtube&) | SubString(Player.FolderPath,plugin.video.youtube)]">$INFO[VideoPlayer.Rating,badges/rating/5/,.png]</value>  <!-- SubString(Player.Filename, -->
-	<value description="בניגון יו-טיוב(+)" condition="!Skin.HasSetting(Rating) + Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Rating) + IntegerGreaterThan(VideoPlayer.Rating,0) + !IntegerGreaterThan(VideoPlayer.Rating,5) + [SubString(Player.FolderPath,.googlevideo.com) | SubString(Player.FolderPath,&source=youtube&) | SubString(Player.FolderPath,plugin.video.youtube)]">$INFO[VideoPlayer.Rating,badges/rating/5+/,.png]</value>  <!-- SubString(Player.Filename, -->
-	<value description="בניגון וידאו" condition="Skin.HasSetting(Rating) + Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Rating)">$INFO[VideoPlayer.Rating,badges/rating/10/,.png]</value>
-	<value description="בניגון וידאו(+)" condition="!Skin.HasSetting(Rating) + Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Rating)">$INFO[VideoPlayer.Rating,badges/rating/10+/,.png]</value>
-	<value description="בניגון וידאו3" condition="Skin.HasSetting(Rating) + Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(Window(home).Property(TopVideoInformation3))">$INFO[Window(home).Property(TopVideoInformation3),badges/rating/10/,.png]</value>
-	<value description="בניגון וידאו3(+)" condition="!Skin.HasSetting(Rating) + Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(Window(home).Property(TopVideoInformation3))">$INFO[Window(home).Property(TopVideoInformation3),badges/rating/10+/,.png]</value>
-	<value description="יו-טיוב" condition="Skin.HasSetting(Rating) + !IsEmpty(ListItem.Rating) + SubString(Container.FolderPath,plugin://plugin.video.youtube)">$INFO[ListItem.Rating,badges/rating/5/,.png]</value>
-	<value description="יו-טיוב(+)" condition="!Skin.HasSetting(Rating) + !IsEmpty(ListItem.Rating) + SubString(Container.FolderPath,plugin://plugin.video.youtube)">$INFO[ListItem.Rating,badges/rating/5+/,.png]</value>
+	<value description="Home" condition="Window.IsActive(home) + [Control.HasFocus(311) | Control.HasFocus(312)] + !IsEmpty(ListItem.Property(rating))">$INFO[ListItem.Property(rating),badges/rating/10/,.png]</value>
+	<value description="Home2_Movies" condition="Window.IsActive(home) + Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(rating))">$INFO[Container(311).ListItem.Property(rating),badges/rating/10/,.png]</value>
+	<value description="Home2_TV" condition="Window.IsActive(home) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(rating))">$INFO[Container(312).ListItem.Property(rating),badges/rating/10/,.png]</value>
+    <value description="בניגון יו-טיוב" condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Rating) + IntegerGreaterThan(VideoPlayer.Rating,0) + !IntegerGreaterThan(VideoPlayer.Rating,5) + [SubString(Player.FolderPath,.googlevideo.com) | SubString(Player.FolderPath,&source=youtube&) | SubString(Player.FolderPath,plugin.video.youtube)]">$INFO[VideoPlayer.Rating,badges/rating/5/,.png]</value>  <!-- SubString(Player.Filename, -->
+	<value description="בניגון וידאו" condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(VideoPlayer.Rating)">$INFO[VideoPlayer.Rating,badges/rating/10/,.png]</value>
+	<value description="בניגון וידאו3" condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(Window(home).Property(TopVideoInformation3))">$INFO[Window(home).Property(TopVideoInformation3),badges/rating/10/,.png]</value>
+	<value description="יו-טיוב" condition="!IsEmpty(ListItem.Rating) + SubString(Container.FolderPath,plugin://plugin.video.youtube)">$INFO[ListItem.Rating,badges/rating/5/,.png]</value>
 	<value description="מוזיקה" condition="!IsEmpty(ListItem.Rating) + Window.IsVisible(MyMusicNav.xml) + [Container.Content(songs) | Container.Content(artists) | Container.Content(albums)]">$VAR[MusicInformation3]</value>
 	<value description="הרחבות" condition="Window.IsVisible(DialogAddonInfo.xml) + !IsEmpty(ListItem.Property(Addon.StarRating))">$INFO[ListItem.Property(Addon.StarRating)]</value>
-	<value description="אחר" condition="Skin.HasSetting(Rating) + !IsEmpty(ListItem.Rating)">$INFO[ListItem.Rating,badges/rating/10/,.png]</value>
-	<value description="אחר(+)" condition="!Skin.HasSetting(Rating) + !IsEmpty(ListItem.Rating)">$INFO[ListItem.Rating,badges/rating/10+/,.png]</value>
-	<value description="אחר2" condition="Skin.HasSetting(Rating) + [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) | [Container.Content(Seasons) + SubString(Container.FolderPath,videodb://tvshows/)]] + [!IsEmpty(Window(home).Property(ListItemRating)) + !Window.IsVisible(DialogFullScreenInfo.xml)] + [!Container.Content(songs) + !Container.Content(artists) + !Container.Content(albums)]">$INFO[Window(home).Property(ListItemRating),badges/rating/10/,.png]</value>
-	<value description="אחר2(+)" condition="!Skin.HasSetting(Rating) + [StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) | [Container.Content(Seasons) + SubString(Container.FolderPath,videodb://tvshows/)]] + [!IsEmpty(Window(home).Property(ListItemRating)) + !Window.IsVisible(DialogFullScreenInfo.xml)] + [!Container.Content(songs) + !Container.Content(artists) + !Container.Content(albums)]">$INFO[Window(home).Property(ListItemRating),badges/rating/10+/,.png]</value>
+	<value description="אחר" condition="!IsEmpty(ListItem.Rating)">$INFO[ListItem.Rating,badges/rating/10/,.png]</value>
+	<value description="אחר2" condition="[StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) | [Container.Content(Seasons) + SubString(Container.FolderPath,videodb://tvshows/)]] + [!IsEmpty(Window(home).Property(ListItemRating)) + !Window.IsVisible(DialogFullScreenInfo.xml)] + [!Container.Content(songs) + !Container.Content(artists) + !Container.Content(albums)]">$INFO[Window(home).Property(ListItemRating),badges/rating/10/,.png]</value>
 	<!--<value></value>-->
   </variable>
   <variable name="TopVideoInformation4" description="פוסטר">
@@ -723,7 +708,7 @@
 	  <value condition="Window.IsVisible(Custom1170.xml)">Manual</value>
 	</variable>
 	<variable name="colorTopVideoInformation3">
-	  <value condition=""></value>
+	  <value condition="Skin.HasSetting(Rating)">red</value>
 	  <value></value>
 	</variable>
 	<variable name="background2">

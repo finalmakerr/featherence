@@ -272,10 +272,6 @@
 	<value condition="!Skin.String(screensavermusic)">$LOCALIZE[106]</value>
 	<value condition="Skin.String(screensavermusic)">$LOCALIZE[107]</value>
   </variable>
-  <variable name="40label2">
-	<value condition="!Skin.HasSetting(AutoPlaySD)">$LOCALIZE[106]</value>
-	<value condition="Skin.HasSetting(AutoPlaySD)">$LOCALIZE[107]</value>
-  </variable>
   <variable name="52label2">
 	<value condition="!Skin.HasSetting(trailer2)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(trailer2)">$LOCALIZE[107]</value>

@@ -716,7 +716,6 @@
 			</control>		
 		</control>
 	  </control>
-	<include>RightMenuDialogVideoInfo</include>
 	</control>
 	
 	<control type="label" id="11155" description="לתצוגת פרקים/עונות -57/58">

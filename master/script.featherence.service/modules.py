@@ -3103,7 +3103,7 @@ def mode213(value, admin, name, printpoint):
 	"x" + space2 + str(x) + space + "y" + space2 + str(y) + space + newline + \
 	"list" + space2 + str(list) + newline + \
 	"$VAR[background]" + space2 + str(xbmc.getInfoLabel('$VAR[background]')) + space + "$VAR[MainBackgroundTexture]" + space2 + str(xbmc.getInfoLabel('$VAR[MainBackgroundTexture]')) + newline + \
-	"$VAR[Button9093]" + space2 + str(xbmc.getInfoLabel('$VAR[Button9093]')) + space + "reloadskin_check" + space2 + str(reloadskin_check)
+	"reloadskin_check" + space2 + str(reloadskin_check)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
 def mode214(value, admin, name, printpoint):

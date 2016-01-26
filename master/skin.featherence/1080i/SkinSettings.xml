@@ -11,7 +11,7 @@
 	    <include>Slide2</include>
 		<include>MenuDesign_TopSettings</include>
 		<include>MenuDesign_Settings</include>
-		<include>LeftMenu</include>
+		<include>MenuDesign_Left</include>
       </control>
 	  <include>TopVideoInformation</include>
 	  <include>TopInformation</include>
