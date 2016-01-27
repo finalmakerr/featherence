@@ -191,6 +191,12 @@
 		  <height>180</height>
 		  <posx>30</posx>
           <posy>30</posy>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4</include>
 		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
 		  <width>312</width>
         </control>
@@ -203,12 +209,17 @@
 		  <visible>Skin.String(ElementUButton)</visible>
         </control>
 		<control type="image" description="צללית">
-		  <animation condition="true" effect="fade" end="40" time="0">Conditional</animation>
 		  <posx>30</posx>
           <posy>30</posy>
           <width>312</width>
           <height>180</height>
-          <texture>buttons/effects/menuiconshadow.png</texture>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_shadow</include>
+          <texture>buttons/effects/shadow.png</texture>
 		  <visible>Skin.HasSetting(ShadowButton)</visible>
         </control>
 		<control type="image" description="שקופית">
@@ -216,6 +227,12 @@
           <posy>30</posy>
           <width>312</width>
           <height>180</height>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_gardient</include>
           <texture>buttons/effects/gardient.png</texture>
 		  <visible>!Skin.HasSetting(OverlayButton)</visible>
         </control>
@@ -224,6 +241,12 @@
           <posy>30</posy>
           <width>312</width>
           <height>180</height>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_bevel</include>
           <texture>buttons/effects/bevel.png</texture>
 		  <visible>!Skin.HasSetting(BevelButton)</visible>
         </control>
@@ -232,7 +255,13 @@
           <posy>30</posy>
           <width>312</width>
           <height>180</height>
-          <texture>buttons/effects/stroke.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_stroke</include>
+		  <texture>buttons/effects/stroke.png</texture>
 		  <visible>Skin.HasSetting(StrokeButton)</visible>
         </control>
         <control type="image" description="סמל">
@@ -295,6 +324,12 @@
           <posy>20</posy>
           <width>332</width>
           <height>200</height>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4</include>
 		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
         </control>
 		<control type="image" description="אלמנט כפתור נבחר">
@@ -325,21 +360,31 @@
 		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
 		</control>
 		<control type="image" description="צללית">
-		  <animation condition="true" effect="fade" end="40" time="0">Conditional</animation>
 		  <posx>20</posx>
           <posy>20</posy>
           <width>332</width>
           <height>200</height>
-          <texture>buttons/menuiconshadow.png</texture>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_shadow</include>
+          <texture>buttons/effects/shadow.png</texture>
 		  <visible>Skin.HasSetting(ShadowButton)</visible>
-		  <visible>false</visible>
         </control>
 		<control type="image" description="שקופית">
           <posx>20</posx>
           <posy>20</posy>
           <width>332</width>
           <height>200</height>
-          <texture>buttons/effects/gardient.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_gardient</include>
+		  <texture>buttons/effects/gardient.png</texture>
 		  <visible>!Skin.HasSetting(OverlayButton)</visible>
         </control>
 		<control type="image" description="שפוע Bevel">
@@ -347,7 +392,13 @@
           <posy>20</posy>
           <width>332</width>
           <height>200</height>
-          <texture>buttons/effects/bevel.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_bevel</include>
+		  <texture>buttons/effects/bevel.png</texture>
 		  <visible>!Skin.HasSetting(BevelButton)</visible>
         </control>
 		<control type="image" description="מסגרת (Stroke)">
@@ -355,6 +406,12 @@
           <posy>20</posy>
           <width>332</width>
           <height>200</height>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_stroke</include>
           <texture>buttons/effects/stroke.png</texture>
 		  <visible>Skin.HasSetting(StrokeButton)</visible>
         </control>
@@ -419,6 +476,12 @@
 		  <height>180</height>
 		  <posx>30</posx>
           <posy>30</posy>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4</include>
 		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
 		  <width>312</width>
         </control>
@@ -431,12 +494,17 @@
 		  <visible>Skin.String(ElementUButton)</visible>
         </control>
 		<control type="image" description="צללית">
-		  <animation condition="true" effect="fade" end="40" time="0">Conditional</animation>
 		  <posx>30</posx>
           <posy>30</posy>
           <width>312</width>
           <height>180</height>
-          <texture>buttons/effects/menuiconshadow.png</texture>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_shadow</include>
+          <texture>buttons/effects/shadow.png</texture>
 		  <visible>Skin.HasSetting(ShadowButton)</visible>
         </control>
 		<control type="image" description="שקופית">
@@ -444,7 +512,13 @@
           <posy>30</posy>
           <width>312</width>
           <height>180</height>
-          <texture>buttons/effects/gardient.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_gardient</include>
+		  <texture>buttons/effects/gardient.png</texture>
 		  <visible>!Skin.HasSetting(OverlayButton)</visible>
         </control>
 		<control type="image" description="שפוע Bevel">
@@ -452,7 +526,13 @@
           <posy>30</posy>
           <width>312</width>
           <height>180</height>
-          <texture>buttons/effects/bevel.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_bevel</include>
+		  <texture>buttons/effects/bevel.png</texture>
 		  <visible>!Skin.HasSetting(BevelButton)</visible>
         </control>
 		<control type="image" description="מסגרת (Stroke)">
@@ -460,7 +540,13 @@
           <posy>30</posy>
           <width>312</width>
           <height>180</height>
-          <texture>buttons/effects/stroke.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_stroke</include>
+		  <texture>buttons/effects/stroke.png</texture>
 		  <visible>Skin.HasSetting(StrokeButton)</visible>
         </control>
         <control type="image" description="סמל">
@@ -523,6 +609,12 @@
           <posy>20</posy>
           <width>332</width>
           <height>200</height>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4</include>
 		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
         </control>
 		<control type="image" description="אלמנט כפתור נבחר">
@@ -553,21 +645,31 @@
 		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
 		</control>
 		<control type="image" description="צללית">
-		  <animation condition="true" effect="fade" end="40" time="0">Conditional</animation>
 		  <posx>20</posx>
           <posy>20</posy>
           <width>332</width>
           <height>200</height>
-          <texture>buttons/menuiconshadow.png</texture>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_shadow</include>
+          <texture>buttons/effects/shadow.png</texture>
 		  <visible>Skin.HasSetting(ShadowButton)</visible>
-		  <visible>false</visible>
         </control>
 		<control type="image" description="שקופית">
           <posx>20</posx>
           <posy>20</posy>
           <width>332</width>
           <height>200</height>
-          <texture>buttons/effects/gardient.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_gardient</include>
+		  <texture>buttons/effects/gardient.png</texture>
 		  <visible>!Skin.HasSetting(OverlayButton)</visible>
         </control>
 		<control type="image" description="שפוע Bevel">
@@ -575,7 +677,13 @@
           <posy>20</posy>
           <width>332</width>
           <height>200</height>
-          <texture>buttons/effects/bevel.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_bevel</include>
+		  <texture>buttons/effects/bevel.png</texture>
 		  <visible>!Skin.HasSetting(BevelButton)</visible>
         </control>
 		<control type="image" description="מסגרת (Stroke)">
@@ -583,7 +691,13 @@
           <posy>20</posy>
           <width>332</width>
           <height>200</height>
-          <texture>buttons/effects/stroke.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_stroke</include>
+		  <texture>buttons/effects/stroke.png</texture>
 		  <visible>Skin.HasSetting(StrokeButton)</visible>
         </control>
 		<control type="image" description="סמל">
@@ -650,6 +764,12 @@
 		  <height>100</height>
 		  <posx>0</posx>
           <posy>20</posy>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4</include>
 		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
 		  <width>212</width>
         </control>
@@ -662,12 +782,17 @@
 		  <visible>Skin.String(ElementUButton)</visible>
         </control>
 		<control type="image" description="צללית">
-		  <animation condition="true" effect="fade" end="40" time="0">Conditional</animation>
 		  <posx>0</posx>
           <posy>20</posy>
           <width>212</width>
           <height>100</height>
-          <texture>buttons/effects/menuiconshadow.png</texture>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_shadow</include>
+          <texture>buttons/effects/shadow.png</texture>
 		  <visible>Skin.HasSetting(ShadowButton)</visible>
         </control>
 		<control type="image" description="שקופית">
@@ -675,7 +800,13 @@
           <posy>20</posy>
           <width>212</width>
           <height>100</height>
-          <texture>buttons/effects/gardient.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_gardient</include>
+		  <texture>buttons/effects/gardient.png</texture>
 		  <visible>!Skin.HasSetting(OverlayButton)</visible>
         </control>
 		<control type="image" description="שפוע Bevel">
@@ -683,7 +814,13 @@
           <posy>20</posy>
           <width>212</width>
           <height>100</height>
-          <texture>buttons/effects/bevel.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_bevel</include>
+		  <texture>buttons/effects/bevel.png</texture>
 		  <visible>!Skin.HasSetting(BevelButton)</visible>
         </control>
 		<control type="image" description="מסגרת (Stroke)">
@@ -691,7 +828,13 @@
           <posy>20</posy>
           <width>212</width>
           <height>100</height>
-          <texture>buttons/effects/stroke.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_stroke</include>
+		  <texture>buttons/effects/stroke.png</texture>
 		  <visible>Skin.HasSetting(StrokeButton)</visible>
         </control>
         <control type="image" description="סמל">
@@ -758,6 +901,12 @@
           <posy>20</posy>
           <width>232</width>
           <height>100</height>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4</include>
 		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
         </control>
 		<control type="image" description="אלמנט כפתור נבחר">
@@ -788,21 +937,31 @@
 		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
 		</control>
 		<control type="image" description="צללית">
-		  <animation condition="true" effect="fade" end="40" time="0">Conditional</animation>
 		  <posx>0</posx>
           <posy>20</posy>
           <width>232</width>
           <height>100</height>
-          <texture>buttons/menuiconshadow.png</texture>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_shadow</include>
+          <texture>buttons/effects/shadow.png</texture>
 		  <visible>Skin.HasSetting(ShadowButton)</visible>
-		  <visible>false</visible>
         </control>
 		<control type="image" description="שקופית">
           <posx>0</posx>
           <posy>20</posy>
           <width>232</width>
           <height>100</height>
-          <texture>buttons/effects/gardient.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_gardient</include>
+		  <texture>buttons/effects/gardient.png</texture>
 		  <visible>!Skin.HasSetting(OverlayButton)</visible>
         </control>
 		<control type="image" description="שפוע Bevel">
@@ -810,7 +969,13 @@
           <posy>20</posy>
           <width>232</width>
           <height>100</height>
-          <texture>buttons/effects/bevel.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_bevel</include>
+		  <texture>buttons/effects/bevel.png</texture>
 		  <visible>!Skin.HasSetting(BevelButton)</visible>
         </control>
 		<control type="image" description="מסגרת (Stroke)">
@@ -818,7 +983,13 @@
           <posy>20</posy>
           <width>232</width>
           <height>100</height>
-          <texture>buttons/effects/stroke.png</texture>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_stroke</include>
+		  <texture>buttons/effects/stroke.png</texture>
 		  <visible>Skin.HasSetting(StrokeButton)</visible>
         </control>
 		<control type="image" description="סמל">

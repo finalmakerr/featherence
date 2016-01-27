@@ -258,7 +258,7 @@ def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[]):
 	return formula, custommediaL
 	
 def ExtractAll(source, output):
-	name = 'ExtractAll' ; printpoint = "" ; TypeError = "" ; extra = ""
+	name = 'ExtractAll' ; printpoint = "" ; TypeError = "" ; extra = "" ; level = 1
 	if ".zip" in source:
 		import zipfile
 		#import zlib
@@ -298,9 +298,11 @@ def ExtractAll(source, output):
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
-	if TypeError != "": extra = newline + "TypeError:" + space2 + str(TypeError)
+	if TypeError != "":
+		extra = newline + "TypeError:" + space2 + str(TypeError)
+		level = 7
 	text = "source" + space2 + source + space + "output" + space2 + output + space + extra
-	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 	'''---------------------------'''
 	if "7" in printpoint: return True
 	else: return False
@@ -373,37 +375,41 @@ def localize(value, s=[], addon=None):
 def DownloadFile(url, filename, downloadpath, extractpath, silent=False):
 	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = "" ; returned = ""
 	downloadpath2 = os.path.join(downloadpath, filename)
-	
-	if xbmc.getCondVisibility('IsEmpty(Network.GatewayAddress)') or xbmc.getCondVisibility('IsEmpty(Network.IPAddress)'):
-		printpoint = printpoint + "9"
-		notification_common('4')
-	elif xbmc.getCondVisibility('!StringCompare(System.InternetState,$LOCALIZE[15207])') and xbmc.getCondVisibility('!IsEmpty(System.InternetState)'):
-		printpoint = printpoint + "9"
-		notification_common("5")
-	elif scriptfeatherenceservice_downloading != "":
+
+	if scriptfeatherenceservice_downloading != "":
 		returned = "skip"
 		notification_common("23")
 		xbmc.executebuiltin('AlarmClock(scriptfeatherenceservice_downloading,ClearProperty(script.featherence.service_downloading,home),2,silent)')
 	else:
+		printpoint = printpoint + "1"
 		from commondownloader import *
 		setProperty('script.featherence.service_downloading', 'true', type="home")
-		try: returned = doDownload(url, downloadpath2, filename, "", "", "", silent=silent)
-		except exception, TypeError:
+		
+		returned = doDownload(url, downloadpath2, filename, "", "", "", silent=silent)
+		try: test = 1
+		except Exception, TypeError:
 			extra = extra + newline + "TypeError" + space2 + str(TypeError)
 			returned = str(TypeError)
 		setProperty('script.featherence.service_downloading', '', type="home")
 		
 		if returned == "ok":
+			printpoint = printpoint + "3"
 			ExtractAll(downloadpath2, extractpath)
-		try:
-			if downloadpath2 != downloadpath: os.remove(downloadpath2)
-		except:
-			pass
+		if downloadpath2 != downloadpath:
+			printpoint = printpoint + "4"
+			removefiles(downloadpath2)
+			
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
-	text = "url" + space2 + url + space + "returned" + space2 + str(returned) + extra
-	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	text = "returned" + space2 + str(returned) + newline + \
+	"url" + space2 + url + newline + \
+	'downloadpath' + space2 + str(downloadpath) + newline + \
+	'downloadpath2' + space2 + str(downloadpath2) + newline + \
+	'extractpath' + space2 + str(extractpath) + newline + \
+	'silent' + space2 + str(silent) + newline + \
+	extra
+	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
 	'''---------------------------'''
 	
 def addonsettings2(addon,set1,set1v,set2,set2v,set3,set3v,set4,set4v,set5,set5v):
@@ -1584,7 +1590,7 @@ def installaddonP(admin, addon, update=True):
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			fileID = getfileID(addon+".zip")
 			DownloadFile("https://github.com/XBMC-Addons/script.module.simplejson/archive/master.zip", addon + "-master.zip", packages_path, addons_path, silent=True)
-			movefiles(os.path.join(addons_path, 'script.module.simplejson-master'), os.path.join(addons_path, addon))
+			movefiles(os.path.join(addons_path, addon + '-master'), os.path.join(addons_path, addon))
 			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
@@ -1640,7 +1646,7 @@ def installaddonP(admin, addon, update=True):
 		
 	elif addon == 'resource.images.weathericons.outline': #FIXED PATH - *MASTER (PATH EXISTS!!)
 		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.outline/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True) ; xbmc.sleep(500)
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.outline/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
 			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
 			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
@@ -1649,8 +1655,7 @@ def installaddonP(admin, addon, update=True):
 
 	elif addon == 'resource.images.weatherfanart.single': #FIXED PATH
 		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("http://mirrors.xbmc.org/addons/jarvis/resource.images.weatherfanart.single/resource.images.weatherfanart.single-0.0.5.zip", addon + ".zip", packages_path, addons_path, silent=True) ; xbmc.sleep(500)
-			movefiles(os.path.join(addons_path, addon), os.path.join(addons_path, addon))
+			DownloadFile("http://mirrors.xbmc.org/addons/jarvis/resource.images.weatherfanart.single/resource.images.weatherfanart.single-0.0.5.zip", addon + ".zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
@@ -1665,10 +1670,9 @@ def installaddonP(admin, addon, update=True):
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
 	
-	elif addon == 'script.module.requests': #FIXED PATH
+	elif addon == 'script.module.requests': #FIXED PATH *SPECIAL
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			DownloadFile("https://github.com/beenje/script.module.requests/archive/gotham.zip", addon + ".zip", packages_path, addons_path, silent=True)
-			#os.rename(os.path.join(addons_path, 'script.module.requests-gotham'), 'script.module.requests')
 			movefiles(os.path.join(addons_path, 'script.module.requests-gotham'), os.path.join(addons_path, addon))
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
@@ -2031,8 +2035,14 @@ def movefiles(source, target):
 		printpoint = printpoint + '2'
 		shutil.move(source, target)
 	else:
-		printpoint = printpoint + '9'
-		level=7
+		printpoint = printpoint + '3'
+		xbmc.sleep(1000)
+		if os.path.exists(source):
+			printpoint = printpoint + '4'
+			shutil.move(source, target)
+		else:
+			printpoint = printpoint + '9'
+			level=7
 		
 	text = "source" + space2 + to_utf8(source) + space + "target" + space2 + to_utf8(target)
 	printlog(title=name, printpoint=printpoint, text=text, level=level, option="")

@@ -1159,6 +1159,102 @@
 	  <visible>false</visible>
 	</control>
   </include>
+  
+  <include name="ButtonsDesign">
+    <texture diffuse="buttons/types/bd.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+  </include>
+  <include name="ButtonsDesign0">
+    <texture diffuse="buttons/types/bd0.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+  </include>
+  <include name="ButtonsDesign1">
+    <texture diffuse="buttons/types/bd1.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+  </include>
+  <include name="ButtonsDesign2">
+    <texture diffuse="buttons/types/bd2.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+  </include>
+  <include name="ButtonsDesign3">
+    <texture diffuse="buttons/types/bd3.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+  </include>
+  <include name="ButtonsDesign4">
+    <texture diffuse="buttons/types/bd4.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+  </include>
+  
+  <include name="ButtonsDesign_gardient">
+    <texture diffuse="buttons/types/bd.png">buttons/effects/gardient.png</texture>
+  </include>
+  <include name="ButtonsDesign0_gardient">
+    <texture diffuse="buttons/types/bd0.png">buttons/effects/gardient.png</texture>
+  </include>
+  <include name="ButtonsDesign1_gardient">
+    <texture diffuse="buttons/types/bd1.png">buttons/effects/gardient.png</texture>
+  </include>
+  <include name="ButtonsDesign2_gardient">
+    <texture diffuse="buttons/types/bd2.png">buttons/effects/gardient.png</texture>
+  </include>
+  <include name="ButtonsDesign3_gardient">
+    <texture diffuse="buttons/types/bd3.png">buttons/effects/gardient.png</texture>
+  </include>
+  <include name="ButtonsDesign4_gardient">
+    <texture diffuse="buttons/types/bd4.png">buttons/effects/gardient.png</texture>
+  </include>
+  
+  <include name="ButtonsDesign_bevel">
+    <texture diffuse="buttons/types/bd.png">buttons/effects/bevel.png</texture>
+  </include>
+  <include name="ButtonsDesign0_bevel">
+    <texture diffuse="buttons/types/bd0.png">buttons/effects/bevel.png</texture>
+  </include>
+  <include name="ButtonsDesign1_bevel">
+    <texture diffuse="buttons/types/bd1.png">buttons/effects/bevel.png</texture>
+  </include>
+  <include name="ButtonsDesign2_bevel">
+    <texture diffuse="buttons/types/bd2.png">buttons/effects/bevel.png</texture>
+  </include>
+  <include name="ButtonsDesign3_bevel">
+    <texture diffuse="buttons/types/bd3.png">buttons/effects/bevel.png</texture>
+  </include>
+  <include name="ButtonsDesign4_bevel">
+    <texture diffuse="buttons/types/bd4.png">buttons/effects/bevel.png</texture>
+  </include>
+  
+  <include name="ButtonsDesign_stroke">
+    <texture diffuse="buttons/types/bd.png">buttons/effects/stroke.png</texture>
+  </include>
+  <include name="ButtonsDesign0_stroke">
+    <texture diffuse="buttons/types/bd0.png">buttons/effects/stroke.png</texture>
+  </include>
+  <include name="ButtonsDesign1_stroke">
+    <texture diffuse="buttons/types/bd1.png">buttons/effects/stroke.png</texture>
+  </include>
+  <include name="ButtonsDesign2_stroke">
+    <texture diffuse="buttons/types/bd2.png">buttons/effects/stroke.png</texture>
+  </include>
+  <include name="ButtonsDesign3_stroke">
+    <texture diffuse="buttons/types/bd3.png">buttons/effects/stroke.png</texture>
+  </include>
+  <include name="ButtonsDesign4_stroke">
+    <texture diffuse="buttons/types/bd4.png">buttons/effects/stroke.png</texture>
+  </include>
+  
+  <include name="ButtonsDesign_shadow">
+    <texture diffuse="buttons/types/bd.png">buttons/effects/shadow.png</texture>
+  </include>
+  <include name="ButtonsDesign0_shadow">
+    <texture diffuse="buttons/types/bd0.png">buttons/effects/shadow.png</texture>
+  </include>
+  <include name="ButtonsDesign1_shadow">
+    <texture diffuse="buttons/types/bd1.png">buttons/effects/shadow.png</texture>
+  </include>
+  <include name="ButtonsDesign2_shadow">
+    <texture diffuse="buttons/types/bd2.png">buttons/effects/shadow.png</texture>
+  </include>
+  <include name="ButtonsDesign3_shadow">
+    <texture diffuse="buttons/types/bd3.png">buttons/effects/shadow.png</texture>
+  </include>
+  <include name="ButtonsDesign4_shadow">
+    <texture diffuse="buttons/types/bd4.png">buttons/effects/shadow.png</texture>
+  </include>
+  
   <include name="list9000_posx_heb">
     <posx>-30</posx>
   </include>

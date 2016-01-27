@@ -151,7 +151,7 @@
 	  <item id="203" description="צללית (כפתור)">
 		<label>$LOCALIZE[78218] ($ADDON[script.featherence.service 80])</label>
 		<label2>$VAR[203label2]</label2>
-		<thumb>buttons/effects/menuiconshadow.png</thumb>
+		<thumb>buttons/effects/shadow.png</thumb>
 		<property name="rinfo">$LOCALIZE[76203]</property>
 		<onclick>Skin.ToggleSetting(ShadowButton)</onclick>
 		<visible>Container(100).Hasfocus(20)</visible>
@@ -216,6 +216,25 @@
 		<onclick condition="Skin.String(MenuDesign,2)">Skin.SetString(MenuDesign,3)</onclick>
 		<onclick condition="Skin.String(MenuDesign,3)">Skin.SetString(MenuDesign,4)</onclick>
 		<onclick condition="Skin.String(MenuDesign,4)">Skin.SetString(MenuDesign,)</onclick>
+		<onclick>Close</onclick>
+		<onclick>Close</onclick>
+		
+		<onclick>ActivateWindow(1117)</onclick>
+		<onclick>AlarmClock(1173,ActivateWindow(1173),00:01,silent)</onclick>
+		<visible>Container(100).Hasfocus(20)</visible>
+	  </item>
+	  
+	  <item id="216" description="צורת כפתורים">
+		<label>$LOCALIZE[31054]</label>
+		<label2>$VAR[216label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/cubes.png</thumb>
+		<property name="rinfo"></property>
+		<onclick condition="!Skin.String(ButtonsDesign)">Skin.SetString(ButtonsDesign,0)</onclick>
+		<onclick condition="Skin.String(ButtonsDesign,0)">Skin.SetString(ButtonsDesign,1)</onclick>
+		<onclick condition="Skin.String(ButtonsDesign,1)">Skin.SetString(ButtonsDesign,2)</onclick>
+		<onclick condition="Skin.String(ButtonsDesign,2)">Skin.SetString(ButtonsDesign,3)</onclick>
+		<onclick condition="Skin.String(ButtonsDesign,3)">Skin.SetString(ButtonsDesign,4)</onclick>
+		<onclick condition="Skin.String(ButtonsDesign,4)">Skin.SetString(ButtonsDesign,)</onclick>
 		<onclick>Close</onclick>
 		<onclick>Close</onclick>
 		

@@ -327,6 +327,15 @@
 	<value condition="Skin.String(MenuDesign,4)" description="מאונך">$LOCALIZE[31033]</value>
   </variable>
   
+  <variable name="216label2">
+    <value condition="!Skin.String(ButtonsDesign)" description="ברירת מחדל">DEFAULT</value>
+    <value condition="Skin.String(ButtonsDesign,0)" description="מלבן 2">$LOCALIZE[31051] 2</value>
+	<value condition="Skin.String(ButtonsDesign,1)" description="עיגול">$LOCALIZE[31052]</value>
+	<value condition="Skin.String(ButtonsDesign,2)" description="עיגול 2">$LOCALIZE[31052] 2</value>
+	<value condition="Skin.String(ButtonsDesign,3)" description="מרובע">$LOCALIZE[31053]</value>
+	<value condition="Skin.String(ButtonsDesign,4)" description="מרובע 2">$LOCALIZE[31053] 2</value>
+  </variable>
+  
   <variable name="220label2">
     <value condition="!Skin.HasSetting(background)">$LOCALIZE[107]</value>
 	<value condition="Skin.HasSetting(background)">$LOCALIZE[106]</value>

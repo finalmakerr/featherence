@@ -128,6 +128,7 @@
 	<value condition="!IsEmpty(ListItem.ChannelGroup)">$INFO[ListItem.ChannelGroup]</value>
 	<value condition="!IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
   </variable>
+  
   <variable name="StartupMessage2">
 	<value description="שבת שלום" condition="[StringCompare(System.Date(DDD),$LOCALIZE[16]) + !System.Time(20:00)] | [StringCompare(System.Date(DDD),$LOCALIZE[15]) + System.Time(16:00)]">$LOCALIZE[78293]</value>
 	<value description="שבוע טוב" condition="StringCompare(System.Date(DDD),$LOCALIZE[17])">$LOCALIZE[79310]</value>

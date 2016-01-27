@@ -142,20 +142,20 @@ msgid "Fanart Transperancy"
 msgstr "שקיפות פאנארט"
 
 msgctxt "#31051
-msgid ""
-msgstr ""
+msgid "Rectangle"
+msgstr "מלבן"
 
 msgctxt "#31052
-msgid ""
-msgstr ""
+msgid "Rounding"
+msgstr "עיגול"
 
 msgctxt "#31053
-msgid ""
-msgstr ""
+msgid "Square"
+msgstr "מרובע"
 
 msgctxt "#31054
-msgid ""
-msgstr ""
+msgid "Buttons Shape"
+msgstr "צורת כפתורים"
 
 msgctxt "#31055
 msgid ""
