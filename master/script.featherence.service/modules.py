@@ -26,18 +26,14 @@ def mode0(admin, name, printpoint):
 	#from debug3 import *
 	#subject = 'test'
 	#text = 'test2'
-	file = 'C:\\Users\\gal\\AppData\\Roaming\\Kodi\\1941146-1920x1080-[DesktopNexus.com]_.jpg'
+	#file = 'C:\\Users\\gal\\AppData\\Roaming\\Kodi\\1941146-1920x1080-[DesktopNexus.com]_.jpg'
 	#file = to_unicode(file)
 	#file = ""
 	#upload_file2(file)
 	#sendMail(Debug_Email, Debug_Password, subject, text, file)
 	#setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=True)
-	folder_ = 'Featherence'
-	path_ = os.path.join(featherenceserviceaddondata_media_path, folder_, '')
-	if os.path.exists(path_):
-		returned_ = dialogyesno('%s Folder found!' % (folder_), 'Choose YES to proceed (Optional)')
-		if returned_ != 'skip':
-			copyfiles(path_, home_path)
+	installaddonP(admin, 'resource.images.weathericons.outline')
+	installaddonP(admin, 'resource.images.weatherfanart.single')
 	
 def mode5(value, admin, name, printpoint):
 	'''------------------------------
@@ -3081,7 +3077,7 @@ def mode215(value, admin, name, printpoint):
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(73220))
-			setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=515&value=0)')
+			setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.kids,return)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/kids.png')
 			'''---------------------------'''	
 			
@@ -3092,7 +3088,7 @@ def mode215(value, admin, name, printpoint):
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(2))
-			setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=514&value=0)')
+			setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.music,return)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/music.png')
 			'''---------------------------'''
 	
@@ -3148,7 +3144,7 @@ def mode215(value, admin, name, printpoint):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(78942))
 			#setSkinSetting('0','action'+id,'RunScript(script.featherence.service,,?mode=519&value=0)')
-			setSkinSetting('0','action'+id,'RunAddon(plugin.video.featherence.docu)')
+			setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.docu,return)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/animals.png')
 			'''---------------------------'''
 	

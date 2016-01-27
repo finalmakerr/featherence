@@ -778,11 +778,13 @@ def CATEGORIES104G(General_LanguageL, background, background2): #מלחמת הכ
 	if 'Hebrew' in General_LanguageL:
 		list.append('&sdarot=series_id=1362&series_name=%d7%9e%d7%9c%d7%97%d7%9e%d7%aa%20%d7%94%d7%9b%d7%95%d7%9b%d7%91%d7%99%d7%9d%3a%20%d7%94%d7%9e%d7%95%d7%a8%d7%93%d7%99%d7%9d%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1362%2fstar-wars-rebels-%d7%9e%d7%9c%d7%97%d7%9e%d7%aa-%d7%94%d7%9b%d7%95%d7%9b%d7%91%d7%99%d7%9d-%d7%94%d7%9e%d7%95%d7%a8%d7%93%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 		list.append('&youtube_pl=')
+		
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLgP379x--W4ZPG7KJzWD6XL0pNGen74a2') #S1
 		list.append('&youtube_pl=PLsNE3pORizv4UHWlqw6gaHnjr-mXkSQXm') #S2
 		list.append('&youtube_pl=')
+		
 	'''אוזבקית'''
 	if 'Uzbek' in General_LanguageL:
 		list.append('&youtube_pl=')

@@ -14,7 +14,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	if '$LOCALIZE' in desc or '$ADDON' in desc: desc = xbmc.getInfoLabel(desc)
 	
 	if num == None: num = ""
-	if '&getAPIdata=' in num:
+	if '&getAPIdata=' in str(num):
 		finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(num, name, iconimage, desc, fanart, playlist=[], onlydata=True)
 		if 'getAPIdata' in name and title_L != []: name = title_L[0]
 		if 'getAPIdata' in iconimage and thumb_L != []: iconimage = thumb_L[0]

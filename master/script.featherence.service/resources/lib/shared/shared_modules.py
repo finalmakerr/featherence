@@ -1640,8 +1640,8 @@ def installaddonP(admin, addon, update=True):
 		
 	elif addon == 'resource.images.weathericons.outline': #FIXED PATH - *MASTER (PATH EXISTS!!)
 		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.outline/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
-			movefiles(os.path.join(addons_path, 'resource.images.weathericons.outline-master'), os.path.join(addons_path, addon))
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.outline/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True) ; xbmc.sleep(500)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
 			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
@@ -1649,8 +1649,8 @@ def installaddonP(admin, addon, update=True):
 
 	elif addon == 'resource.images.weatherfanart.single': #FIXED PATH
 		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("http://mirrors.xbmc.org/addons/jarvis/resource.images.weatherfanart.single/resource.images.weatherfanart.single-0.0.5.zip", addon + ".zip", packages_path, addons_path, silent=True)
-			movefiles(os.path.join(addons_path, 'script.module.requests-gotham'), os.path.join(addons_path, addon))
+			DownloadFile("http://mirrors.xbmc.org/addons/jarvis/resource.images.weatherfanart.single/resource.images.weatherfanart.single-0.0.5.zip", addon + ".zip", packages_path, addons_path, silent=True) ; xbmc.sleep(500)
+			movefiles(os.path.join(addons_path, addon), os.path.join(addons_path, addon))
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
@@ -1969,9 +1969,12 @@ def removefiles(path, filteroff=[], dialogprogress=""):
 						try: removefiles(x)
 						except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError)
 				if dialogprogress != "": dp.close
-			else:
+			elif os.path.exists(path):
 				os.remove(path)
 				printpoint = printpoint + "7"
+			else:
+				printpoint = printpoint + "A"
+				
 		elif os.path.isfile(path) == True:
 			printpoint = printpoint + "4"
 			os.remove(path)
@@ -2018,12 +2021,21 @@ def copytree(source, target, symlinks=False, ignore=None):
 		#print "item" + space2 + str(item)
 
 def movefiles(source, target):
+	name = 'movefiles' ; printpoint = "" ; level=1
 	import shutil
 	if os.path.exists(target):
+		printpoint = printpoint + '1'
 		copyfiles(source, target, chmod="", mount=False)
 		removefiles(source)
-	else:
+	elif os.path.exists(source):
+		printpoint = printpoint + '2'
 		shutil.move(source, target)
+	else:
+		printpoint = printpoint + '9'
+		level=7
+		
+	text = "source" + space2 + to_utf8(source) + space + "target" + space2 + to_utf8(target)
+	printlog(title=name, printpoint=printpoint, text=text, level=level, option="")
 		
 def copyfiles(source, target, chmod="", mount=False):
 	name = 'copyfiles' ; printpoint = "" ; source1 = source[-1:] ; targetdir = "" ; TypeError = "" ; extra = ""
