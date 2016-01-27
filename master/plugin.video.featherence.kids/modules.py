@@ -383,6 +383,7 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_id=LFoX4vn6Obg')
+		list.append('&youtube_id=WnR0EuLWSOo')
 	addDir(addonString(10252).encode('utf-8'),list,5,'http://www.ideals.co.il/wp-content/uploads/2015/02/nas3.jpg',addonString(102520).encode('utf-8'),'1',50, getAddonFanart(background, custom="https://i.ytimg.com/vi/NUXjR_WIJfQ/maxresdefault.jpg"))
 	
 	'''סינדרלה'''
@@ -2298,6 +2299,13 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 	
 	CATEGORIES106G(General_LanguageL, background, background2) #דובוני אכפת לי (חדש)
 	
+	
+	'''דינו דן'''
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&youtube_pl=PL0zAFNbEotfkBCaGmpE0PHyRDjk7yOkgv')
+	addDir('דינו דן',list,17,'','','1',50,getAddonFanart(background, custom="http://images.nickjr.com/nickjr/properties/dino-dan/property-header-dino-dan-desktop-portrait-2x.png?quality=0.75", default=background2))
+	
 	'''דובים ונהנים'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
@@ -2348,9 +2356,20 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 		list.append('&sdarot=season_id=1&series_id=873&series_name=%d7%94%d7%a0%d7%99%d7%9e%d7%a0%d7%95%d7%9e%d7%99%d7%9d%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f873%2fhanimnumim-%d7%94%d7%a0%d7%99%d7%9e%d7%a0%d7%95%d7%9e%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 	addDir(addonString(10620).encode('utf-8'),list,6,'http://www.sdarot.pm/media/series/873.jpg',addonString(106200).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
 	
+	'''הפוני הקטן שלי'''
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&youtube_ch=UCrqoWeNzvpkTobP3DaNtdFA')
+	addDir('הפוני הקטן שלי',list,17,'http://www.hop.co.il/wp-content/uploads/2015/09/KT-E45238-%D7%90%D7%99%D7%A8%D7%95%D7%A2-%D7%94%D7%90%D7%97%D7%99%D7%95%D7%AA.jpg','','1',50,getAddonFanart(background, custom="https://i.ytimg.com/vi/dhehRAwr2KM/maxresdefault.jpg", default=background2))
+	
 	
 	'''ויפו הכלב המעופף'''
 	CATEGORIES106C(General_LanguageL, background, background2)
+	'''זובומפו zoboomafoo'''
+	list = []
+	if 'English' in General_LanguageL:
+		list.append('&youtube_ch=UCgkPirt3MeBXLJ82Q5Rue-w') 
+	addDir('zoboomafoo',list,17,'http://images.techtimes.com/data/images/full/25401/zoboomafoo2-jpg.jpg?w=600','','1',50,getAddonFanart(background, custom="http://i.huffpost.com/gen/2271948/images/o-ZOBOOMAFOO-DEAD-facebook.jpg", default=background2))
 
 	'''זומזומים'''
 	list = []
@@ -2640,6 +2659,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&youtube_id=YUNtUxIc708')
 	addDir(addonString(10719).encode('utf-8'),list,6,'http://www.sdarot.pm/media/series/1142.jpg',addonString(107190).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
 	
+	
 	'''הרפתקאות הלו קיטי'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
@@ -2708,10 +2728,22 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	
 	'''זאק וקוואק'''
 	
+	
+	'''חבורת החצר'''
+	list = []#זקוק לשם עברי אנגלי
+	if 'Hebrew' in General_LanguageL:
+		list.append('&youtube_pl=PLn92uhkZaRGwsVJc7EaCsZAWnD_AZW02o')
+	
+	if 'English' in General_LanguageL:
+		list.append('&youtube_pl=PLYpg2jvVNY-PfH6fm_Erv0aIn-BPhnL5x&index')
+				
+	addDir('חבורת החצר',list,17,'https://upload.wikimedia.org/wikipedia/en/1/1c/The_7D_logo.png',addonString(107380).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://img3.wikia.nocookie.net/__cb20140709082318/disney/images/a/a4/The_7D.png"))
+	
 	'''חבורת 7ג'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		pass
+			list.append('&youtube_pl=PLVwL64lSxWWyyxhryxyjW-2f85xwUGKN2')
+	list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nick&name=%e7%e1%e5%f8%fa%20%e4%f1%f4%f1%ec%20%e4%e0%e7%e5%f8%e9&url=http%3a%2f%2fnick.walla.co.il%2f%3fw%3d%2f%2f2825941')
 	
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLe-Na2ky4G0AeFESccRuVngVs5dF7HtDe')
@@ -2873,10 +2905,12 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	'''מועדון החברים של מיקי מאוס'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
+		list.append('&youtube_pl=PLVwL64lSxWWwxYwb9KJCqp9Knh-o70C4V')
 		list.append('&sdarot=series_id=1656&series_name=%d7%9e%d7%95%d7%a2%d7%93%d7%95%d7%9f%20%d7%94%d7%97%d7%91%d7%a8%d7%99%d7%9d%20%d7%a9%d7%9c%20%d7%9e%d7%99%d7%a7%d7%99%20%d7%9e%d7%90%d7%95%d7%a1%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1656%2fthe-mickey-mouse-club-%d7%9e%d7%95%d7%a2%d7%93%d7%95%d7%9f-%d7%94%d7%97%d7%91%d7%a8%d7%99%d7%9d-%d7%a9%d7%9c-%d7%9e%d7%99%d7%a7%d7%99-%d7%9e%d7%90%d7%95%d7%a1-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLI-nQtOHVKRu0erW8Khquk1pRvEHDpR7i') #English
 		list.append('&youtube_pl=PLmC05rj_6ViYvReMLbUEmNgyrKWrmpA4c') #English
+		list.append('&youtube_pl=PL6hnqKp_bygo9OPZYYVy_h2rZ3lBzhNtU')#EN
 	addDir(addonString(10744).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1656.jpg',addonString(107440).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://s2.dmcdn.net/IRKa_/1280x720-nzB.jpg"))
 	
 	'''מועדון המאפים הטובים'''
@@ -3653,6 +3687,13 @@ def CATEGORIES108(name, iconimage, desc, fanart):
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nick&name=%e7%e1%e5%f8%fa%20%e4%f1%f4%f1%ec%20%e4%e0%e7%e5%f8%e9&url=http%3a%2f%2fnick.walla.co.il%2f%3fw%3d%2f%2f2825941')
 	addDir('חבורת הספסל האחורי',list,6,'','','1',"", getAddonFanart(background, custom="", default=background2))
 	
+	'''חבורת 7ג'''
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&youtube_pl=PLVwL64lSxWWyyxhryxyjW-2f85xwUGKN2')
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nick&name=%e7%e1%e5%f8%fa%20%e4%f1%f4%f1%ec%20%e4%e0%e7%e5%f8%e9&url=http%3a%2f%2fnick.walla.co.il%2f%3fw%3d%2f%2f2825941')
+	addDir('חבורת 7ג',list,17,'https://upload.wikimedia.org/wikipedia/en/1/1c/The_7D_logo.png',addonString(107380).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://img3.wikia.nocookie.net/__cb20140709082318/disney/images/a/a4/The_7D.png"))
+	
 	'''חידון התנך'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
@@ -4100,6 +4141,13 @@ def CATEGORIES108(name, iconimage, desc, fanart):
 		list.append('&sdarot=series_id=1320&series_name=%d7%a6%d7%95%d7%a8%20%d7%9e%d7%a9%d7%9c%d7%a0%d7%95&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1320%2ftzur-meshelanu-%d7%a6%d7%95%d7%a8-%d7%9e%d7%a9%d7%9c%d7%a0%d7%95')
 		list.append('&youtube_pl=PLtz5gfkQ59bJw2o_B23A_Pb1ooaHq3-tj')
 	addDir('צור משלנו',list,17,'http://www.sdarot.pm/media/series/1320.jpg',"צור משלנו זו תוכנית חינוכית וערכית לילדים. מדובר בבובה ועוד מס' שחקנים שכל פרק עוסק בנושא אחר חינוכי וערכי. כגון לכבד את האחר, לשפוט לכף זכות, לעזור לשני וכו' צור הוא ילד סקרן בעל הרבה חוש הומור, נוטה לשאול שאלות ואף ליישם את מה שהוא לומד.",'1',50, getAddonFanart(background, custom="", default=background2))
+	
+	'''קוד ליוקו אבולוציה '''
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&sdarot=series_id=1579&series_name=%d7%a7%d7%95%d7%93-%d7%9c%d7%99%d7%95%d7%a7%d7%95-%d7%90%d7%91%d7%95%d7%9c%d7%95%d7%a6%d7%99%d7%94-code-lyoko-evolution%2fseason%2f1&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1579%2f%d7%a7%d7%95%d7%93-%d7%9c%d7%99%d7%95%d7%a7%d7%95-%d7%90%d7%91%d7%95%d7%9c%d7%95%d7%a6%d7%99%d7%94-code-lyoko-evolution%2fseason%2f1')
+	addDir('קוד ליוקו אבולוציה ',list,17,'http://www.sdarot.pm/media/series/1579.jpg','','1',50, getAddonFanart(background, custom="", default=background2))
+	
 	
 	'''קופיקו'''
 	list = []
