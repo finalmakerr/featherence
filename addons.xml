@@ -124,7 +124,7 @@
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.1.34" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.1.35" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -145,7 +145,7 @@
   </extension>
 </addon>
 
-<addon id="skin.featherence" version="0.3.1" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.3.2" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
 	<import addon="script.featherence.service" version="0.1.0"/>
@@ -160,21 +160,30 @@
 	<summary lang="en">_</summary>
 	<summary lang="he">_</summary>
     <description>Features:
-- Panel, Horizontal, Vertical home views with two versions each.
-- Wall, Small list, Center List, Poster, Line views.
+- 6 different layouts: Panel, Horizontal, Vertical..
+- *6 different views: Wall, Small list, Center List, Poster, Line views..
+* Most views have about 10 different settings to fit your preference.
+- 6 different layout's shapes: Rectangles, Pillows, Hexagons..
+- 8 AutoView setup: Movies, TV shows, seasons..
+- *4 effects: Bevel, Shadow, Overlay..
+*Available for home buttons and general across the skin (common buttons and menus).
 - 1:1 realtime home design capability. Customized is at the top level, superb easy and fun!
-- RTL and LTR auto support mode.
-- Full mouse support.
-- AutoView support.
-- Choose varied of colors for almost anything!
+- Coloring: Everything can be colored exactly as you want, preview is included.
+- Overlay: Up to 10 different values of overlay for any buttons/menus, preview is included.
+- Fanart: Over 10 properties for fanarts! Including 2 layers of colors and/or textures.
+- Reposition: Movement of objects maybe done automatic, aka RTL and LTR - simply depend on system language.
+- Mouse: Full mouse support across the skin.
 - Smart backup script.
 - Varied buttons and views effects.
-- Enchanced widget and network status.
-- Full genres support.
-- Some views have an additional special features.
-- Dynamic weather and widgets fanart (optional).
-- Interactive video window and OSD while navaigating.
-- Startup music and/or video (optional).
+- *Widget: unwatched/recently added movies and inprogress/recently added TV shows (10 etc).
+* Additionaly support: play trailer or up to 20 random trailers, manual/auto refresh, random fanart from widgets..
+- *Genres: Genres are hard coded so it's may be always seen in your prefered language!
+*74 Genres images are included!
+- Integrated video screen and OSD: Keep watching your video while navigating on any window/view, Video player OSD included!
+- User customized media: Startup music, video, slideshow..
+- *Semi auto subtitle finder: Smart search and mark current and previous subtitles. Subtitles services will auto switch when needed.
+*Subtitle OSD show country flag and set sub slider
+
 - Smart subtitle module display current and history choosen subtitles, smart search and auto subs hosts finder.
 - ExtendedInfo support (Movies/TV/Actors/Directors/AutoComplete..)</description>
     <disclaimer></disclaimer>

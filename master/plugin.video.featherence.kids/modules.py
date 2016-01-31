@@ -34,7 +34,10 @@ def CATEGORIES():
 	addDir(addonString(108).encode('utf-8'),'',108,featherenceserviceicons_path + 'kids2.png',addonString(1080).encode('utf-8'),'1',50, getAddonFanart(108, default="http://30k0u22sosp4xzag03cfogt1.wpengine.netdna-cdn.com/wp-content/uploads/2015/03/strika-3.jpg", urlcheck_=True)) #Kids and Young
 	addDir(addonString(109).encode('utf-8'),'',109,featherenceserviceicons_path + 'ud.png',addonString(1090).encode('utf-8'),'1',50, getAddonFanart(109, default="", urlcheck_=True)) #Learn Language
 	addDir(addonString(200).encode('utf-8') % (General_Language),'',200,featherenceserviceicons_path + 'ud.png','[COLOR=red]1: %s | 2: %s | 3: %s[/COLOR]' % (General_Language, General_Language2, General_Language3) + '[CR]' + addonString_servicefeatherence(32081).encode('utf-8'),'1',50, getAddonFanart(200, urlcheck_=True)) #Forigen Language
-
+	
+	exe = printlog(title="test", printpoint="", text="", level=0, option="")
+	if exe != "": addDir('test','',999,'','','1',50, '') #Test
+	
 	#addDir('קלסיקלטת','plugin://plugin.video.wallaNew.video/?mode=1&module=338&name=קלסיקלטת&url=http://vod.walla.co.il/channel/338/clasicaletet',8,'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYE2VT8CR2O31MsqAhdaydYrqrCD--HCCdGcs7blBn3Zh92Kwq','','1',"", getAddonFanart(0))
 	#addDir('ניק','plugin://plugin.video.wallaNew.video/?mode=1&module=nick&name=ניק&url=http://nick.walla.co.il/',8,'http://www.karmieli.co.il/sites/default/files/images/nico.jpg','','1',"", getAddonFanart(0))
 	#addDir('גוניור','plugin://plugin.video.wallaNew.video/?mode=1&module=nickjr&name=גוניור&url=http://nickjr.walla.co.il/',8,'http://upload.wikimedia.org/wikipedia/he/1/19/%D7%A2%D7%A8%D7%95%D7%A5_%D7%92%27%D7%95%D7%A0%D7%99%D7%95%D7%A8.jpg','','1',"", getAddonFanart(0))
@@ -2449,7 +2452,6 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_pl=PLbHXbhgZi5cL97NlobjLHNtBwIA9VHcmw') #קטני
-		list.append('&youtube_pl=PL004FC6C7ABCC0EB6')
 		
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PL004FC6C7ABCC0EB6') #קטני

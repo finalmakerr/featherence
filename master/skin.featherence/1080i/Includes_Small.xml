@@ -87,6 +87,8 @@
 	<onleft description="en" condition="Control.IsVisible(56) + !StringCompare(System.Language,enbrew)">56</onleft>
 	<onleft description="en" condition="Control.IsVisible(57) + !StringCompare(System.Language,enbrew)">57</onleft>
 	<onleft description="en" condition="Control.IsVisible(58) + !StringCompare(System.Language,enbrew)">58</onleft>
+	<onleft description="en" condition="Control.IsVisible(50) + !StringCompare(System.Language,enbrew)">50</onleft>
+	<onleft description="en" condition="Control.IsVisible(450) + !StringCompare(System.Language,enbrew)">450</onleft>
 	
 	<onleft description="he" condition="Control.IsVisible(7011) + StringCompare(System.Language,Hebrew)">7017</onleft>
 	<onleft description="he" condition="Player.HasAudio + StringCompare(System.Language,Hebrew)">7017</onleft>
@@ -98,6 +100,8 @@
 	<onright description="he" condition="Control.IsVisible(56) + StringCompare(System.Language,Hebrew)">56</onright>
 	<onright description="he" condition="Control.IsVisible(57) + StringCompare(System.Language,Hebrew)">57</onright>
 	<onright description="he" condition="Control.IsVisible(58) + StringCompare(System.Language,Hebrew)">58</onright>
+	<onright description="he" condition="Control.IsVisible(50) + StringCompare(System.Language,Hebrew)">50</onright>
+	<onright description="he" condition="Control.IsVisible(450) + StringCompare(System.Language,Hebrew)">450</onright>
   </include>
   <include name="4ways4" description="Includes_Settings">
     <onup condition="!Control.IsVisible(100) + !Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(7011)">7017</onup>
@@ -183,8 +187,7 @@
 		<height>564</height>
 		
 		<texture border="40" colordiffuse="$VAR[TopBackgroundColor]">buttons/ButtonC0.png</texture>
-		<visible>!Skin.String(TopBackgroundColor,None)</visible>
-		<visible>Skin.HasSetting(HideTopMainBackground) | Skin.HasSetting(background) | IsEmpty(Control.GetLabel(700102))</visible>
+		<visible>Skin.HasSetting(HideTopMainBackground) | Skin.HasSetting(background) | IsEmpty(Control.GetLabel(700102)) | [Window.IsVisible(Custom1170.xml) + !IsEmpty(Window(home).Property(SelectedColor)) + StringCompare(Window(home).Property(TEMP),TopBackgroundColor)]</visible>
 	  </control>
 	  <control type="image" description="טקסטורה (רקע עליון)">
 		<include>Fade_TopMainBackgroundOverlay</include>
@@ -234,6 +237,7 @@
 		<height>1080</height>
 		<width>1920</width>
 		<visible>!Player.HasVideo | [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + Skin.HasSetting(HomeFanartHalfScreen)</visible>
+		<visible>![Window.IsVisible(Custom1170.xml) + !IsEmpty(Window(home).Property(SelectedColor)) + [StringCompare(Window(home).Property(TEMP),MainBackgroundColor)]]</visible>
 	  </control>
 	  <control type="image" description="רקע תחתון צבע">
 		<!--<visible>Skin.HasSetting(background)</visible>-->
@@ -248,7 +252,6 @@
 		<posx>-10</posx>
 		<posy>548</posy>
 		<texture border="20" colordiffuse="$VAR[MainBackgroundColor]">buttons/ButtonC0.png</texture>
-		<visible>!Skin.String(MainBackgroundColor,None)</visible>
 		<visible>[!Skin.String(MenuDesign,4) | Skin.String(MenuDesign,4) + [Window.IsVisible(CustomHomeCustomizer.xml) | ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]]]</visible>
 	  </control>
 	  <control type="image" description="רקע תחתון טקסטורה">
@@ -432,15 +435,16 @@
 		<animation description="No full Fanart-Vertical_en" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,30" start="100,100" end="86.3,200" time="0">Conditional</animation>
 		
 		<!--Nav.xml-->
-		<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="0,1080" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="472,1080" time="0">Conditonal</animation>
-		<animation description="slide-Vertical" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="" start="100,100" end="75,179" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-240,320" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="230,320" time="0">Conditonal</animation>
+		<animation description="slide-Vertical" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="75,179" time="0">Conditonal</animation>
+		<animation description="slide-others" condition="Window.IsVisible(MyVideoNav.xml) + ![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)]" effect="slide" start="0,0" end="0,-552" time="0">Conditonal</animation>
+		<animation description="slide-others" condition="Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)" effect="slide" start="0,0" end="0,-552" time="0">Conditonal</animation>
 		
 		<!--Home.xml-->
-		<include condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]">Control_Pos33</include>		
-		<include condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)]">Control_Pos7</include>		
+		<include condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]">Control_Pos33</include>
 		<!--Nav.xml-->
-		<posy>-522</posy>
+		<posy>30</posy>
 		<height>522</height>
 		
 		<!--Home.xml-->
@@ -541,6 +545,7 @@
 	<onload condition="ControlGroup(9000).HasFocus() + Control.IsVisible(58)">Control.SetFocus(58)</onload>
   </include>
   
+  
   <include name="InProgressBadge">
     <control type="group" description="סדרות בתהליך">
 	  <height>60</height>
@@ -554,7 +559,7 @@
 		<height>40</height>
 		<posx>0</posx>
 		<posy>0</posy>
-		<texture diffuse="buttons/ButtonE0.png" colordiffuse="$VAR[TopVideoInformationColor]" border="0">buttons/ButtonA0.png</texture>
+		<texture diffuse="buttons/types/bd.png" colordiffuse="$VAR[TopInformationColor]" border="0">buttons/ButtonA0.png</texture>
 		<width>100%</width>
 		<!--<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases2) + [StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])]]</visible>
 		<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases) + [StringCompare(Container.Viewmode,$LOCALIZE[31013])]]</visible>-->
@@ -617,7 +622,7 @@
 		<height>40</height>
 		<posx>70r</posx>
 		<posy>4</posy>
-		<!--<texture diffuse="buttons/ButtonE0.png" colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>-->
+		<!--<texture diffuse="buttons/types/bd.png" colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>-->
 		<texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
 		<width>60</width>
 		<!--<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases2) + [StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])]]</visible>
@@ -686,7 +691,7 @@
 		<height>40</height>
 		<posx>70r</posx>
 		<posy>4</posy>
-		<!--<texture diffuse="buttons/ButtonE0.png" colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>-->
+		<!--<texture diffuse="buttons/types/bd.png" colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>-->
 		<texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
 		<width>60</width>
 		<!--<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases2) + [StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])]]</visible>
@@ -722,7 +727,7 @@
 		<animation condition="true" effect="fade" start="70" end="70" time="0">Conditional</animation>
 		<height>40</height>
 		<posy>4</posy>
-		<!--<texture diffuse="buttons/ButtonE0.png" colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>-->
+		<!--<texture diffuse="buttons/types/bd.png" colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>-->
 		<texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
 		<width>100%</width>
 		<!--<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases2) + [StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])]]</visible>
@@ -875,7 +880,7 @@
 	<align>left</align>
 	<orientation>horizontal</orientation>
 	<posx>360</posx>
-	<posy>7</posy>
+	<posy>5</posy>
 	<visible>Player.HasVideo</visible>
 	<visible>!SubString(MusicPlayer.Title,featherence)</visible>
 	<control type="image">
@@ -935,7 +940,8 @@
   </include>
   <include name="IconsInformation">
    <control type="grouplist">
-	<align>right</align>
+	<include condition="StringCompare(System.Language,Hebrew)">LabelL1</include>
+	<include condition="!StringCompare(System.Language,Hebrew)">LabelR1</include>
 	<height>35</height>
 	<posx>620r</posx>
 	<itemgap>10</itemgap>
@@ -997,7 +1003,7 @@
 	  <height>950</height>
 	  <width>20</width>
 	  <posx>0</posx>
-	  <posy>145</posy>
+	  <posy>146.5</posy>
 	  <control type="image" description="מסגרת">
 		<height>100%</height>
 		<posx>0</posx>
@@ -1017,8 +1023,8 @@
 		<visible></visible>
 	  </control>
 	  <control type="scrollbar" id="60" description="כלי גלילה">
-		<height>100%</height>
-		
+		<height>99%</height>
+		<posy>1.5</posy>
 		<onright condition="Control.IsVisible(7011) + StringCompare(System.Language,Hebrew)">7017</onright>
 		<onright condition="Player.HasAudio + StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onright>
 		<onleft condition="[Window.IsVisible(DialogPeripheralSettings.xml) | Window.IsVisible(SettingsCategory.xml)] + Control.IsVisible(5) + StringCompare(System.Language,Hebrew)">5</onleft>
@@ -1104,6 +1110,13 @@
   <include name="WindowTitleCommons" description="OpenELEC">
   </include>
   
+  <include name="Custom1170Click">
+    <onclick>SetProperty(DoubleClick,true,home)</onclick>
+    <onclick>AlarmClock(DoubleClick,ClearProperty(DoubleClick,home),00:01,silent)</onclick>
+    <onclick condition="!IsEmpty(Window(home).Property(DoubleClick))">SetFocus(9000)</onclick>
+	<onclick condition="!IsEmpty(Window(home).Property(DoubleClick))">Notification($INFO[Window(home).Property(SelectedColor),,1000)]</onclick>
+  </include>
+  
   <include name="onunload_ClearProperty_ListItem">
     <onunload condition="true">AlarmClock(ListItemGenre,ClearProperty(ListItemGenre,home),00:01,silent)</onunload> <!--!IsEmpty(Window(home).Property(ListItemGenre))-->
     <onunload condition="true">AlarmClock(ListItemDuration,ClearProperty(ListItemDuration,home),00:01,silent)</onunload>
@@ -1179,80 +1192,137 @@
     <texture diffuse="buttons/types/bd4.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
   </include>
   
+  <include name="ButtonsDesign_icon">
+    <texture border="0" diffuse="buttons/types/bd.png">$INFO[ListItem.Icon]</texture>
+  </include>
+  <include name="ButtonsDesign0_icon">
+    <texture border="0" diffuse="buttons/types/bd0.png">$INFO[ListItem.Icon]</texture>
+  </include>
+  <include name="ButtonsDesign1_icon">
+    <texture border="0" diffuse="buttons/types/bd1.png">$INFO[ListItem.Icon]</texture>
+  </include>
+  <include name="ButtonsDesign2_icon">
+    <texture border="0" diffuse="buttons/types/bd2.png">$INFO[ListItem.Icon]</texture>
+  </include>
+  <include name="ButtonsDesign3_icon">
+    <texture border="0" diffuse="buttons/types/bd3.png">$INFO[ListItem.Icon]</texture>
+  </include>
+  <include name="ButtonsDesign4_icon">
+    <texture border="0" diffuse="buttons/types/bd4.png">$INFO[ListItem.Icon]</texture>
+  </include>
+  
   <include name="ButtonsDesign_gardient">
     <texture diffuse="buttons/types/bd.png">buttons/effects/gardient.png</texture>
   </include>
   <include name="ButtonsDesign0_gardient">
-    <texture diffuse="buttons/types/bd0.png">buttons/effects/gardient.png</texture>
+    <texture diffuse="buttons/types/bd0.png">buttons/effects/gardient0.png</texture>
   </include>
   <include name="ButtonsDesign1_gardient">
-    <texture diffuse="buttons/types/bd1.png">buttons/effects/gardient.png</texture>
+    <texture diffuse="buttons/types/bd1.png">buttons/effects/gardient1.png</texture>
   </include>
   <include name="ButtonsDesign2_gardient">
-    <texture diffuse="buttons/types/bd2.png">buttons/effects/gardient.png</texture>
+    <texture diffuse="buttons/types/bd2.png">buttons/effects/gardient2.png</texture>
   </include>
   <include name="ButtonsDesign3_gardient">
-    <texture diffuse="buttons/types/bd3.png">buttons/effects/gardient.png</texture>
+    <texture diffuse="buttons/types/bd3.png">buttons/effects/gardient3.png</texture>
   </include>
   <include name="ButtonsDesign4_gardient">
-    <texture diffuse="buttons/types/bd4.png">buttons/effects/gardient.png</texture>
+    <texture diffuse="buttons/types/bd4.png">buttons/effects/gardient4.png</texture>
   </include>
   
   <include name="ButtonsDesign_bevel">
     <texture diffuse="buttons/types/bd.png">buttons/effects/bevel.png</texture>
   </include>
   <include name="ButtonsDesign0_bevel">
-    <texture diffuse="buttons/types/bd0.png">buttons/effects/bevel.png</texture>
+    <texture diffuse="buttons/types/bd0.png">buttons/effects/bevel0.png</texture>
   </include>
   <include name="ButtonsDesign1_bevel">
-    <texture diffuse="buttons/types/bd1.png">buttons/effects/bevel.png</texture>
+    <texture diffuse="buttons/types/bd1.png">buttons/effects/bevel1.png</texture>
   </include>
   <include name="ButtonsDesign2_bevel">
-    <texture diffuse="buttons/types/bd2.png">buttons/effects/bevel.png</texture>
+    <texture diffuse="buttons/types/bd2.png">buttons/effects/bevel2.png</texture>
   </include>
   <include name="ButtonsDesign3_bevel">
-    <texture diffuse="buttons/types/bd3.png">buttons/effects/bevel.png</texture>
+    <texture diffuse="buttons/types/bd3.png">buttons/effects/bevel3.png</texture>
   </include>
   <include name="ButtonsDesign4_bevel">
-    <texture diffuse="buttons/types/bd4.png">buttons/effects/bevel.png</texture>
+    <texture diffuse="buttons/types/bd4.png">buttons/effects/bevel4.png</texture>
   </include>
   
   <include name="ButtonsDesign_stroke">
     <texture diffuse="buttons/types/bd.png">buttons/effects/stroke.png</texture>
   </include>
   <include name="ButtonsDesign0_stroke">
-    <texture diffuse="buttons/types/bd0.png">buttons/effects/stroke.png</texture>
+    <texture diffuse="buttons/types/bd0.png">buttons/effects/stroke0.png</texture>
   </include>
   <include name="ButtonsDesign1_stroke">
-    <texture diffuse="buttons/types/bd1.png">buttons/effects/stroke.png</texture>
+    <texture diffuse="buttons/types/bd1.png">buttons/effects/stroke1.png</texture>
   </include>
   <include name="ButtonsDesign2_stroke">
-    <texture diffuse="buttons/types/bd2.png">buttons/effects/stroke.png</texture>
+    <texture diffuse="buttons/types/bd2.png">buttons/effects/stroke2.png</texture>
   </include>
   <include name="ButtonsDesign3_stroke">
-    <texture diffuse="buttons/types/bd3.png">buttons/effects/stroke.png</texture>
+    <texture diffuse="buttons/types/bd3.png">buttons/effects/stroke3.png</texture>
   </include>
   <include name="ButtonsDesign4_stroke">
-    <texture diffuse="buttons/types/bd4.png">buttons/effects/stroke.png</texture>
+    <texture diffuse="buttons/types/bd4.png">buttons/effects/stroke4.png</texture>
   </include>
   
   <include name="ButtonsDesign_shadow">
     <texture diffuse="buttons/types/bd.png">buttons/effects/shadow.png</texture>
   </include>
   <include name="ButtonsDesign0_shadow">
-    <texture diffuse="buttons/types/bd0.png">buttons/effects/shadow.png</texture>
+    <texture diffuse="buttons/types/bd0.png">buttons/effects/shadow0.png</texture>
   </include>
   <include name="ButtonsDesign1_shadow">
-    <texture diffuse="buttons/types/bd1.png">buttons/effects/shadow.png</texture>
+    <texture diffuse="buttons/types/bd1.png">buttons/effects/shadow1.png</texture>
   </include>
   <include name="ButtonsDesign2_shadow">
-    <texture diffuse="buttons/types/bd2.png">buttons/effects/shadow.png</texture>
+    <texture diffuse="buttons/types/bd2.png">buttons/effects/shadow2.png</texture>
   </include>
   <include name="ButtonsDesign3_shadow">
-    <texture diffuse="buttons/types/bd3.png">buttons/effects/shadow.png</texture>
+    <texture diffuse="buttons/types/bd3.png">buttons/effects/shadow3.png</texture>
   </include>
   <include name="ButtonsDesign4_shadow">
-    <texture diffuse="buttons/types/bd4.png">buttons/effects/shadow.png</texture>
+    <texture diffuse="buttons/types/bd4.png">buttons/effects/shadow4.png</texture>
+  </include>
+  
+  <include name="ButtonsDesign_sub">
+    <texture diffuse="buttons/types/bd.png" colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
+  </include>
+  <include name="ButtonsDesign0_sub">
+    <texture diffuse="buttons/types/bd0.png" colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
+  </include>
+  <include name="ButtonsDesign1_sub">
+    <texture diffuse="buttons/types/bd1.png" colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
+  </include>
+  <include name="ButtonsDesign2_sub">
+    <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub2.png</texture>
+  </include>
+  <include name="ButtonsDesign3_sub">
+    <texture diffuse="buttons/types/bd3.png" colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
+  </include>
+  <include name="ButtonsDesign4_sub">
+    <texture diffuse="buttons/types/bd4.png" colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
+  </include>
+  
+  <include name="ButtonsDesign_choosen">
+    <texture diffuse="buttons/types/bd.png" colordiffuse="$VAR[IconUnFocusColor]">buttons/effects/choosen.png</texture>
+  </include>
+  <include name="ButtonsDesign0_choosen">
+    <texture diffuse="buttons/types/bd0.png" colordiffuse="$VAR[IconUnFocusColor]">buttons/effects/choosen0.png</texture>
+  </include>
+  <include name="ButtonsDesign1_choosen">
+    <texture diffuse="buttons/types/bd1.png" colordiffuse="$VAR[IconUnFocusColor]">buttons/effects/choosen.png</texture>
+  </include>
+  <include name="ButtonsDesign2_choosen">
+    <texture diffuse="buttons/types/bd2.png" colordiffuse="$VAR[IconUnFocusColor]">buttons/effects/choosen.png</texture>
+  </include>
+  <include name="ButtonsDesign3_choosen">
+    <texture diffuse="buttons/types/bd3.png" colordiffuse="$VAR[IconUnFocusColor]">buttons/effects/choosen.png</texture>
+  </include>
+  <include name="ButtonsDesign4_choosen">
+    <texture diffuse="buttons/types/bd4.png" colordiffuse="$VAR[IconUnFocusColor]">buttons/effects/choosen.png</texture>
   </include>
   
   <include name="list9000_posx_heb">

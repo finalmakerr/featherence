@@ -541,6 +541,7 @@
 	  <label2>&quot;18&quot;</label2>
 	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml)">ActivateWindow(Settings.xml)</onclick>
 	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <visible>!Window.IsVisible(CustomHomeCustomizer2.xml)</visible>
 	</item>
 	<item id="19">
 	  <visible>true</visible>
@@ -556,6 +557,7 @@
 	  <label2>&quot;19&quot;</label2>
 	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml)">ActivateWindow(1138)</onclick>
 	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <visible>!Window.IsVisible(CustomHomeCustomizer2.xml)</visible>
 	</item>
   </include>
   
@@ -653,18 +655,6 @@
 		<onclick condition="IsEmpty(Window(1117).Property(HideInactiveButtons))">SetProperty(HideInactiveButtons,true,1117)</onclick>
 		<onclick condition="!IsEmpty(Window(1117).Property(HideInactiveButtons))">ClearProperty(HideInactiveButtons,1117)</onclick>
 		<selected>!IsEmpty(Window(1117).Property(HideInactiveButtons))</selected>
-		<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
-	  </control>
-	  
-	  <control type="button" id="9102" description="גוון">
-		<include>Fade_TopInformationOverlay</include>
-		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
-		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
-		<label>$LOCALIZE[79042]: $INFO[Skin.String(MenuColor.name)]</label>
-		<onclick>SetProperty(TEMP,MenuColor,home)</onclick>
-		<onclick>ActivateWindow(1170)</onclick>
-		<!--<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service,action=colorpicker,skinstring=MenuColor)</onclick>
-		<onclick condition="!System.HasAddon(script.skin.helper.service)">RunScript(script.featherence.service,,?mode=231&amp;value=script.skin.helper.service)</onclick>-->
 		<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 	  </control>
 

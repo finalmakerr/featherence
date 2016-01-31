@@ -14,6 +14,8 @@ value=None
 value2=None
 value3=None
 value4=None
+value5=None
+value6=None
 
 try: mode=int(params["mode"])
 except: pass
@@ -25,6 +27,10 @@ try: value3=str(params["value3"])
 except: value3 = ""
 try: value4=str(params["value4"])
 except: value4 = ""
+try: value5=str(params["value5"])
+except: value5 = ""
+try: value6=str(params["value6"])
+except: value6 = ""
 
 if mode == 0:
 	'''------------------------------
@@ -373,10 +379,10 @@ elif mode == 29:
 	
 elif mode == 30:
 	'''------------------------------
-	---------------------------------
+	---Dialog-Keyboard-Skin----------
 	------------------------------'''
-	pass
-	mode30(admin, name)
+	name = "Dialog-Keyboard-Skin"
+	mode30(value, value2, value3, value4, value5, value6, name, printpoint)
 	'''---------------------------'''	
 
 elif mode == 31:

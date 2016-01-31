@@ -32,8 +32,11 @@ def mode0(admin, name, printpoint):
 	#upload_file2(file)
 	#sendMail(Debug_Email, Debug_Password, subject, text, file)
 	#setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=True)
-	installaddonP(admin, 'resource.images.weathericons.outline')
-	installaddonP(admin, 'resource.images.weatherfanart.single')
+	from shared_modules3 import*
+	url = 'https://docs.google.com/file/d/0B3qBRwW3mJUBamk0MFo5YjR6akE/edit?pli=1'
+	image = 'http://dragonballz.co.il/wp-content/uploads/2015/03/1058-214x300.jpg'
+	title = 'דרגון בול זי פרק 1 – מדובב לעברית'
+	PlayCartoon(title, image, url)
 	
 def mode5(value, admin, name, printpoint):
 	'''------------------------------
@@ -698,8 +701,18 @@ def mode29(value, command, header, exit, name, printpoint):
 	'commandL ' + space2 + str(commandL) + newline + extra
 	printlog(title=name, printpoint=printpoint, text=text2, level=0, option="")
 	
-def mode30(admin, name):
-	pass
+def mode30(input, header, option, action, set1, addon, name, printpoint):
+	'''------------------------------
+	---Dialog-Keyboard-Skin----------
+	------------------------------'''
+	if action != "":
+		'''same time action (pre)'''
+		xbmc.executebuiltin('AlarmClock(mode30,'+action+',00:01,silent)')
+	try: option += 1
+	except: option = 0
+	dialogkeyboard(input, header, option, "", set1=set1, addon=addon, force=True)
+	
+	
 
 def mode31(value, value2, value3, value4, admin, name, printpoint):
 	'''------------------------------
@@ -826,7 +839,8 @@ def mode32(value, admin, name, printpoint):
 		pass
 		
 	elif value == '5':
-		ReloadSkin(admin)
+		ReloadSkin(admin,force=False)
+		#ReloadSkin(admin)
 	
 	elif value == '40':
 		addon = 'plugin.video.featherence.kids'

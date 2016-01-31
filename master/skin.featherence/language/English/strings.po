@@ -90,8 +90,8 @@ msgid "When choosing button fanart."
 msgstr "כאשר בוחרים פאנארט לכפתור."
 
 msgctxt "#31038
-msgid "Show usful Tips on wait"
-msgstr "הצג טיפים שימושיים בזמן המתנה"
+msgid "Allow Tips on wait"
+msgstr "אפשר טיפים במצב המתנה"
 
 msgctxt "#31039
 msgid "Unfocus home buttons"
@@ -142,32 +142,32 @@ msgid "Fanart Transperancy"
 msgstr "שקיפות פאנארט"
 
 msgctxt "#31051
-msgid "Rectangle"
-msgstr "מלבן"
+msgid "Rectangles"
+msgstr "מלבנים"
 
 msgctxt "#31052
-msgid "Rounding"
-msgstr "עיגול"
+msgid "Circles"
+msgstr "עיגולים"
 
 msgctxt "#31053
-msgid "Square"
-msgstr "מרובע"
+msgid "Triangles"
+msgstr "משולשים"
 
 msgctxt "#31054
-msgid "Buttons Shape"
-msgstr "צורת כפתורים"
+msgid "Pillows"
+msgstr "כריות"
 
 msgctxt "#31055
-msgid ""
-msgstr ""
+msgid "Hexagons"
+msgstr "משושים"
 
 msgctxt "#31056
 msgid ""
 msgstr ""
 
 msgctxt "#31057
-msgid ""
-msgstr ""
+msgid "Buttons Shape"
+msgstr "צורת כפתורים"
 
 msgctxt "#31058
 msgid ""
@@ -178,32 +178,32 @@ msgid ""
 msgstr ""
 
 msgctxt "#31060
-msgid ""
-msgstr ""
+msgid "Show randomize tips on Dialog Busy window."
+msgstr "הצגת טיפים אקראיים בזמן המתנה."
 
 msgctxt "#31061
-msgid ""
-msgstr ""
+msgid "Menu Buttons"
+msgstr "כפתורי תפריט"
 
 msgctxt "#31062
-msgid ""
-msgstr ""
+msgid "dialogues"
+msgstr "דיאלוגים"
 
 msgctxt "#31063
-msgid ""
-msgstr ""
+msgid "Reposition effect many dialogs such as DialogYesNo, DialogOK, DialogProgress and more.."
+msgstr "מיקום מחדש חל על חלונות דיאלוגים רבים כגון:[CR]דיאלוג כן/לא, דיאלוג אישור, דיאלוג התקדמות ועוד.."
 
 msgctxt "#31064
-msgid ""
-msgstr ""
+msgid "Upper Design"
+msgstr "עיצוב עליון"
 
 msgctxt "#31065
-msgid ""
-msgstr ""
+msgid "Keyboard"
+msgstr "מקלדת"
 
 msgctxt "#31066
-msgid ""
-msgstr ""
+msgid "Home Buttons"
+msgstr "כפתורי בית"
 
 msgctxt "#31067
 msgid ""
@@ -266,8 +266,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#31082
-msgid ""
-msgstr ""
+msgid "Effect icon and text only."
+msgstr "חל עך אייקון וטקסט בלבד."
 
 msgctxt "#31083
 msgid ""
@@ -410,48 +410,48 @@ msgid ""
 msgstr ""
 
 msgctxt "#31118
-msgid ""
-msgstr ""
+msgid "Enable 2D in any buttons across the skin."
+msgstr "הפעל בכדי להפעיל מצב דו-מימד עבור כל כפתור בסקין."
 
 msgctxt "#31119
-msgid ""
-msgstr ""
+msgid "Choose a text edit area color for your virtual keyboard."
+msgstr "בחר צבע רקע עריכת טקסט במקלדת וירטואלית."
 
 msgctxt "#31120
-msgid ""
-msgstr ""
+msgid "Edit keyboard text color"
+msgstr "רקע עריכת טקסט במקלדת"
 
 msgctxt "#31121
-msgid ""
-msgstr ""
+msgid "Choose a background color for your virtual keyboard."
+msgstr "בחר צבע עבור רקע מקלדת וירטואלית."
 
 msgctxt "#31122
-msgid ""
-msgstr ""
+msgid "Keyboard background"
+msgstr "רקע מקלדת"
 
 msgctxt "#31123
-msgid ""
-msgstr ""
+msgid "Choose a color for your virtual keyboard."
+msgstr "בחר צבע עבור כפתורי מקלדת וירטואלית."
 
 msgctxt "#31124
-msgid ""
-msgstr ""
+msgid "Unocus Keyboards buttons"
+msgstr "כפתורי מקלדת לא נבחרים"
 
 msgctxt "#31125
-msgid ""
-msgstr ""
+msgid "Focus keyboards buttons"
+msgstr "כפתורי מקלדת נבחרים"
 
 msgctxt "#31126
-msgid ""
-msgstr ""
+msgid "Choose color for all menu's buttons"
+msgstr "בחירת צבע עבור כל כפתורי התפריט."
 
 msgctxt "#31127
-msgid ""
-msgstr ""
+msgid "UnFocus Menu Buttons"
+msgstr "כפתורי תפריט לא נבחרים"
 
 msgctxt "#31128
-msgid ""
-msgstr ""
+msgid "Focused Menu Buttons"
+msgstr "כפתורי תפריט נבחרים"
 
 msgctxt "#31129
 msgid "Allow thumbnail fanart"
@@ -1293,10 +1293,6 @@ msgstr ""
 msgctxt "#74534"
 msgid ""
 msgstr ""
-
-msgctxt "#74535"
-msgid "Choose a color for your virtual keyboard."
-msgstr "בחר צבע עבור מקלדת וירטואלית.[CR]"
 
 msgctxt "#74536"
 msgid "This action may take a while, be patient!"

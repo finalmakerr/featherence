@@ -8,13 +8,16 @@
   <include>onunload_ClearProperty_SubMenu</include>
   <include>Fade6</include>
   <controls>
-    <include>Backgrounds1</include>
-    <include>Design_TopButtons</include>
-	<include>Menu_Home</include>
+    <control type="group">
+	  <animation condition="Window.IsVisible(CustomHomeCustomizer2.xml) + [!Container(9000).Row(0) + !Container(9000).Row(1) | !Container(9000).HasPrevious()]" effect="fade" start="100" end="0" time="220">Conditonal</animation>
+      <include>Backgrounds1</include>
+      <include>Design_TopButtons</include>
+	  <include>Menu_Home</include>
 	<!--<include>Widget_Home</include>-->
 	<!--<include condition="Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)">MenuDesign_Widget</include>-->
 	
-	<include>TopInformation</include>
+	  <include>TopInformation</include>
+	</control>
   </controls>
 
 </window>

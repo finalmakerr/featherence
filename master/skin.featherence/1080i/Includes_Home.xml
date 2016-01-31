@@ -106,8 +106,7 @@
   </include>
   <include name="Menu_Home">
     <control type="panel" id="9000">
-	  <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] + !Window.IsVisible(CustomHomeCustomizer2.xml)" effect="slide" start="0,0" end="0,-551" time="220">Conditonal</animation>
-	  <animation condition="Window.IsVisible(CustomHomeCustomizer2.xml) + [!Container(9000).Row(0) + !Container(9000).Row(1) | !Container(9000).HasPrevious()]" effect="fade" start="100" end="0" time="220">Conditonal</animation>
+	  <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,-551" time="220">Conditonal</animation>
 	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
 	  <visible>Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)</visible>
 	  <posx>30</posx>
@@ -299,6 +298,12 @@
 		  <height>180</height>
 		  <posx>30</posx>
           <posy>32</posy>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_sub</include>
 		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
 		  <visible>!IsEmpty(ListItem.Property(sub))</visible>
 		  <width>310</width>
@@ -346,7 +351,13 @@
           <posy>20</posy>
           <width>332</width>
           <height>200</height>
-		  <texture border="0" diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen2.png</texture>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_choosen</include>
+		  <texture border="0" diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen.png</texture>
 		  <visible>Skin.HasSetting(SelectionMarker2)</visible>
         </control>
 		<control type="image" description="סמן בחירה 3">
@@ -357,7 +368,7 @@
 		  <width>335</width>
 		  <height>211</height>
 		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
+		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
 		</control>
 		<control type="image" description="צללית">
 		  <posx>20</posx>
@@ -449,6 +460,12 @@
 		  <height>200</height>
 		  <posx>20</posx>
           <posy>22</posy>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_sub</include>
 		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
 		  <visible>!IsEmpty(ListItem.Property(sub))</visible>
 		  <width>330</width>
@@ -584,6 +601,12 @@
 		  <height>180</height>
 		  <posx>30</posx>
           <posy>32</posy>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_sub</include>
 		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
 		  <visible>!IsEmpty(ListItem.Property(sub))</visible>
 		  <width>310</width>
@@ -631,7 +654,13 @@
           <posy>20</posy>
           <width>332</width>
           <height>200</height>
-		  <texture diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen2.png</texture>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_choosen</include>
+		  <texture diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen.png</texture>
 		  <visible>Skin.HasSetting(SelectionMarker2)</visible>
         </control>
 		<control type="image" description="סמן בחירה 3">
@@ -642,7 +671,7 @@
 		  <width>335</width>
 		  <height>211</height>
 		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
+		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
 		</control>
 		<control type="image" description="צללית">
 		  <posx>20</posx>
@@ -734,6 +763,12 @@
 		  <height>200</height>
 		  <posx>20</posx>
           <posy>22</posy>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_sub</include>
 		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
 		  <visible>!IsEmpty(ListItem.Property(sub))</visible>
 		  <width>330</width>
@@ -838,8 +873,16 @@
 		  <visible>Skin.HasSetting(StrokeButton)</visible>
         </control>
         <control type="image" description="סמל">
+		  <animation description="עיגולים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="-145,-20" time="0">Conditonal</animation>
+		  <animation description="עיגולים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="145,-20" time="0">Conditonal</animation>
+		  
+		  <animation description="משולשים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="-65,-30" time="0">Conditonal</animation>
+		  <animation description="משולשים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="65,-30" time="0">Conditonal</animation>
+		  <animation description="משושים" condition="Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="0,10" time="0">Conditonal</animation>
+		  
 		  <include>Fade_IconOverlayButton</include>
-          <include condition="StringCompare(System.Language,Hebrew)">ImageR1</include>
+          <include condition="Skin.String(ButtonsDesign,4)">ImageC1</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ImageR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ImageL1</include>
 		  <height>55</height>
 		  <posx>10</posx>
@@ -870,16 +913,28 @@
         </control>
 		<control type="image" description="תפריט משני">
 		  <include>Fade_SubMenuMarkOverlay</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">Control_Pos51</include>
 		  <height>100</height>
 		  <posx>0</posx>
           <posy>22</posy>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_sub</include>
 		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
 		  <visible>!IsEmpty(ListItem.Property(sub))</visible>
 		  <width>210</width>
         </control>
         <control type="label" description="כותרת">
+		  <animation description="עיגולים" condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="0,23" time="0">Conditonal</animation>
+		  <animation description="משולשים" condition="Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="0,55" time="0">Conditonal</animation>
+		  <animation description="משושים" condition="Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="0,15" time="0">Conditonal</animation>
+		  
 		  <textcolor>$VAR[IconUnFocusColor]</textcolor>
-          <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
+          <include condition="Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)">LabelC2</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
 		  <posx>10</posx>
           <posy>35</posy>
@@ -923,7 +978,13 @@
           <posy>20</posy>
           <width>232</width>
           <height>100</height>
-		  <texture border="0" diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen2.png</texture>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_choosen</include>
+		  <texture border="0" diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen.png</texture>
 		  <visible>Skin.HasSetting(SelectionMarker2)</visible>
         </control>
 		<control type="image" description="סמן בחירה 3">
@@ -934,7 +995,7 @@
 		  <width>232</width>
 		  <height>111</height>
 		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]]</visible>
+		  <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
 		</control>
 		<control type="image" description="צללית">
 		  <posx>0</posx>
@@ -993,8 +1054,18 @@
 		  <visible>Skin.HasSetting(StrokeButton)</visible>
         </control>
 		<control type="image" description="סמל">
+		  <animation description="עיגולים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="-165,-20" time="0">Conditonal</animation>
+		  <animation description="עיגולים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="165,-20" time="0">Conditonal</animation>
+		  
+		  <animation description="משולשים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="-10,-30" time="0">Conditonal</animation>
+		  <animation description="משולשים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="10,-30" time="0">Conditonal</animation>
+		  <animation description="משושים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="-5,10" time="0">Conditonal</animation>
+		  <animation description="משושים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="5,10" time="0">Conditonal</animation>
+		  
 		  <animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
-          <include condition="StringCompare(System.Language,Hebrew)">ImageR1</include>
+		  
+          <include description="משולשים/משושים" condition="Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)">ImageC1</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ImageR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ImageL1</include>
 		  <height>55</height>
 		  <posx>10</posx>
@@ -1028,15 +1099,28 @@
 		  <height>100</height>
 		  <posx>0</posx>
           <posy>22</posy>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_sub</include>
 		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
 		  <visible>!IsEmpty(ListItem.Property(sub))</visible>
 		  <width>230</width>
         </control>
         <control type="label" description="כותרת נבחר">
 		  <textcolor>$VAR[IconFocusColor]</textcolor>
+		  <animation description="עיגולים" condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="0,23" time="0">Conditonal</animation>
+		  <animation description="משולשים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="-10,55" time="0">Conditonal</animation>
+		  <animation description="משולשים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="10,55" time="0">Conditonal</animation>
+		  <animation description="משושים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="-5,15" time="0">Conditonal</animation>
+		  <animation description="משושים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="5,15" time="0">Conditonal</animation>
+		  
 		  <animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
           <animation effect="fade" start="80" end="100" time="220" delay="0">Focus</animation>
           <textcolor>yellow</textcolor>
+		  <include condition="Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)">LabelC2</include>
 		  <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
 		  <posx>10</posx>

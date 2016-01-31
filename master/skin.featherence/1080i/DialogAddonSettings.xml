@@ -23,7 +23,7 @@
       <control type="image" description="רקע">
 	    <animation condition="true" effect="fade" start="100" end="90" time="0">Conditional</animation>
         <include>Border_Common</include>
-		<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+		<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
       </control>
       <control type="grouplist" id="9" description="תפריט שמאל">
         <itemgap>0</itemgap>
@@ -46,7 +46,7 @@
       <control type="image" description="רקע">
 	    <animation condition="true" effect="fade" start="100" end="90" time="0">Conditional</animation>
 		<include>Border_Common</include>
-		<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+		<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
       </control>
       <control type="grouplist" id="8999" description="קבוצה תפריט ימין">
         <itemgap>0</itemgap>
@@ -92,7 +92,7 @@
 		<posy>0</posy>
         <animation condition="true" effect="fade" start="100" end="90" time="0">Conditional</animation>
         <include>Border_Common</include>
-		<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+		<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
 		<width>880</width>
       </control>
       <control type="grouplist" id="2" description="תפריט ראשי (2)">

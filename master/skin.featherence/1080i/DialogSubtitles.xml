@@ -15,7 +15,7 @@
 			<height>350</height>
 			<posy>-50</posy>
 			<width>1440</width>
-			<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+			<texture border="40" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
 		  </control>
           <control type="group" id="111" description="קו ראשון">
 		    <posy>-40</posy>
@@ -175,7 +175,7 @@
                         <width>1440</width>
                         <height>60</height>
 						<posy>0</posy>
-                        <texture border="40">buttons/ButtonE.png</texture>
+                        <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
                         <visible>Control.HasFocus(120)</visible>
                     </control>
                     <control type="image" description="מדינה">
@@ -273,7 +273,7 @@
             <control type="image" description="רקע">
 			  <include>Border_Common</include>
 			  <aspectratio>stretch</aspectratio>
-			  <texture border="40" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+			  <texture border="40" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
             </control>
             <control type="button" id="160" description="חיפוש ידני">
 			  <textoffsety>105</textoffsety>
@@ -343,7 +343,7 @@
 					  <posx></posx>
 					  <posy>0</posy>
                       <height>70</height>
-                      <texture border="40">buttons/ButtonE.png</texture>
+                      <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
                       <visible>Control.HasFocus(150)</visible>
                     </control>
                     <control type="label">

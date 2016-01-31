@@ -61,7 +61,7 @@
 	  <posy>100</posy>	  
 	  <width>900</width> 	  
       <control type="image" description="רקע">
-        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
       </control>	  
       <control type="label" id="101" description="כותרת ראשי">
         <posx>40</posx>
@@ -124,7 +124,7 @@
 		  <control type="image" description="מסגרת">
             <height>60</height>
             <posx>0</posx>
-            <texture border="30">buttons/ButtonE.png</texture>			
+            <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
 			<visible>Control.HasFocus(20)</visible>
 			<width>900</width>			
           </control>
@@ -161,7 +161,7 @@
 	  <posy>100</posy>	  
 	  <width>900</width>	  	  
       <control type="image" description="רקע">
-        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
       </control>	
       <control type="label" id="102" description="כותרת ראשי">
         <posx>40r</posx>
@@ -224,7 +224,7 @@
 		  <control type="image" description="מסגרת">
             <height>60</height>
             <posx>0</posx>			
-            <texture border="30">buttons/ButtonE.png</texture>			
+            <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
 			<visible>Control.HasFocus(21)</visible>
 			<width>900</width>			
           </control>

@@ -16,9 +16,9 @@ if 1 + 1 == 2:
 	menubuttonsoverlay = xbmc.getInfoLabel('Skin.String(MenuButtonsOverlay)')
 	mainbackgroundoverlay = xbmc.getInfoLabel('Skin.String(MainBackgroundOverlay)')
 	topmainbackgroundoverlay = xbmc.getInfoLabel('Skin.String(TopMainBackgroundOverlay)')
-	leftmenuoverlay = xbmc.getInfoLabel('Skin.String(LeftMenuOverlay)')
-	bottommenuoverlay = xbmc.getInfoLabel('Skin.String(BottomMenuOverlay)')
-	centermenuoverlay = xbmc.getInfoLabel('Skin.String(CenterMenuOverlay)')
+	menubackgroundoverlay = xbmc.getInfoLabel('Skin.String(MenuBackgroundOverlay)')
+	dialogbackgroundoverlay = xbmc.getInfoLabel('Skin.String(DialogBackgroundOverlay)')
+	keyboardbackgroundoverlay = xbmc.getInfoLabel('Skin.String(KeyboardBackgroundOverlay)')
 	topvideoinformationoverlay = xbmc.getInfoLabel('Skin.String(TopVideoInformationOverlay)')
 	topinformationoverlay = xbmc.getInfoLabel('Skin.String(TopInformationOverlay)')
 	mainbackgroundtexture = xbmc.getInfoLabel('Skin.String(MainBackgroundTexture)')
@@ -37,8 +37,18 @@ if 1 + 1 == 2:
 	iconunfocuscolorname = xbmc.getInfoLabel('Skin.String(IconUnFocusColor.name)')
 	iconfocuscolor = xbmc.getInfoLabel('Skin.String(IconFocusColor)')
 	iconfocuscolorname = xbmc.getInfoLabel('Skin.String(IconFocusColor.name)')
-	keyboardmaincolor = xbmc.getInfoLabel('Skin.String(KeyboardMainColor)')
-	keyboardmaincolorname = xbmc.getInfoLabel('Skin.String(KeyboardMainColor.name)')
+	buttonunfocuscolor = xbmc.getInfoLabel('Skin.String(ButtonUnFocusColor)')
+	buttonunfocuscolorname = xbmc.getInfoLabel('Skin.String(ButtonUnFocusColor.name)')
+	buttonfocuscolor = xbmc.getInfoLabel('Skin.String(ButtonFocusColor)')
+	buttonfocuscolorname = xbmc.getInfoLabel('Skin.String(ButtonFocusColor.name)')
+	keyboardunfocuscolor = xbmc.getInfoLabel('Skin.String(KeyboardUnFocusColor)')
+	keyboardunfocuscolorname = xbmc.getInfoLabel('Skin.String(KeyboardUnFocusColor.name)')
+	keyboardfocuscolor = xbmc.getInfoLabel('Skin.String(KeyboardFocusColor)')
+	keyboardfocuscolorname = xbmc.getInfoLabel('Skin.String(KeyboardFocusColor.name)')
+	keyboardbackgroundcolor = xbmc.getInfoLabel('Skin.String(KeyboardBackgroundColor)')
+	keyboardbackgroundcolorname = xbmc.getInfoLabel('Skin.String(KeyboardBackgroundColor.name)')
+	keyboardeditcolor = xbmc.getInfoLabel('Skin.String(KeyboardEditColor)')
+	keyboardeditcolorname = xbmc.getInfoLabel('Skin.String(KeyboardEditColor.name)')
 	
 	
 if property_buttonid != "" and property_buttonid_ != "" or 1 + 1 == 2:
@@ -2292,11 +2302,11 @@ if property_subbuttonid_ != "" or property_temp != "" or property_temp2 != "" or
 	off_T.update(off119_T)
 	
 if xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)') or 1 + 1 == 2:
-	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos'] #NO RANDOM SUPPORT
-	list0c = ['MenuColor', 'SubMenuMarkColor', 'TopInformationColor', 'TopVideoInformationColor', 'MainBackgroundColor', 'TopBackgroundColor', 'IconUnFocusColor', 'IconFocusColor', 'KeyboardMainColor', 'SelectedFrameColor', 'SubMenuMarkColor']
+	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos', 'ButtonsDesign', 'DialogMenu'] #NO RANDOM SUPPORT
+	list0c = ['MenuColor', 'SubMenuMarkColor', 'TopInformationColor', 'TopVideoInformationColor', 'MainBackgroundColor', 'TopBackgroundColor', 'IconUnFocusColor', 'IconFocusColor', 'ButtonUnFocusColor', 'ButtonFocusColor', 'KeyboardUnFocusColor', 'KeyboardFocusColor', 'keyboardbackgroundcolor', 'KeyboardEditColor', 'SelectedFrameColor', 'SubMenuMarkColor']
 	list0c2 = ['MainBackgroundTexture', 'TopBackgroundTexture'] #NO RANDOM SUPPORT
-	list0o = ['IconOverlayButton', 'MenuButtonsOverlay', 'LeftMenuOverlay', 'BottomMenuOverlay', 'CenterMenuOverlay', 'TopVideoInformationOverlay', 'TopMainBackgroundOverlay', 'TopInformationOverlay', 'MainBackgroundOverlay', 'BackgroundOverlay', 'Background2Overlay', 'IconUnFocusColor']
-	list1 = ['SelectionMarker', 'SelectionMarker2', 'ShadowButton', 'OverlayButton', 'background', 'BevelButton', 'StrokeButton', 'HideTopMainBackground', 'FixedUnFocusButtonsTransperancy', 'HomeFanartHalfScreen', 'HideTopMainBackground']
+	list0o = ['IconOverlayButton', 'MenuButtonsOverlay', 'MenuOverlay', 'DialogBackgroundOverlay', 'KeyboardBackgroundOverlay', 'TopVideoInformationOverlay', 'TopMainBackgroundOverlay', 'TopInformationOverlay', 'MainBackgroundOverlay', 'BackgroundOverlay', 'Background2Overlay']
+	list1 = ['SelectionMarker', 'SelectionMarker2', 'ShadowButton', 'OverlayButton', 'BevelButton', 'StrokeButton', '2DButton2', 'MenuBackground', 'ShadowButton2', 'OverlayButton2', 'BevelButton2', 'StrokeButton2', 'background', 'HideTopMainBackground', 'FixedUnFocusButtonsTransperancy', 'HomeFanartHalfScreen', 'HideTopMainBackground']
 	
 	'''left menu'''
 	list0l = ['MoviesTVCoversOverlay']

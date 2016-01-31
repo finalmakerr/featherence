@@ -12,6 +12,7 @@
 
 # **Available scripts commands:**
 
+
 ```
 OPEN DIALOG SELECT WINDOW
 RunScript(script.featherence.service,,?mode=29&amp;value=list&amp;value2=command&amp;value3=header&amp;value4=1)
@@ -21,6 +22,26 @@ TIP:
 	- For set different value upon select add -[x]- in value.
 	- For set same value upon select when different value is also used (-[x]-) add _name in value2 command.
 	- Use value4 = 0 for removing the exit button.
+```
+
+```
+OPEN DIALOG KEYBOARD WINDOW
+RunScript(script.featherence.service,,?mode=30&amp;value=input&amp;value2=header&amp;value3=option&amp;value4=action&amp;value5=id&amp;value6=addon)
+TIP:
+	- value3 (option):
+		0 - xbmcgui.INPUT_ALPHANUM (standard keyboard)
+		1 - xbmcgui.INPUT_NUMERIC (format: #)
+		2 - xbmcgui.INPUT_DATE (format: DD/MM/YYYY)
+		3 - xbmcgui.INPUT_TIME (format: HH:MM)
+		4 - xbmcgui.INPUT_IPADDRESS (format: #.#.#.#)
+		5 - xbmcgui.INPUT_PASSWORD (return md5 hash of input, input is masked)
+		
+	- value4 (action):
+	  Action to executed a sec after the virtual keyboard is open. 
+	- value5 (id):
+	  write up the skin string and that's it!
+	- value6 (addon):
+	  write up the addon ID then write the actual addon's settings ID in value5.
 ```
 
 ```

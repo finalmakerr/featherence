@@ -5,6 +5,6 @@
   <onunload condition="Window.IsVisible(Startup.xml)">Control.SetFocus(8)</onunload>
   <onload condition="Window.IsVisible(Startup.xml)">Dialog.Close(okdialog)</onload>
   <controls>
-    <include>MenuDesign_Bottom</include>
+    <include>DialogMenu</include>
   </controls>
 </window>

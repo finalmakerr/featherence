@@ -241,6 +241,10 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
 			returned = ok
 			'''---------------------------'''
+		elif mode == 44:
+			liz.addContextMenuItems(items=menu, replaceItems=True)
+			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
+			returned = ok
 		elif mode == 200 or mode == 90:
 			liz.addContextMenuItems(items=menu, replaceItems=True)
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
@@ -2145,6 +2149,8 @@ def pluginend(admin):
 	
 	elif mode == 40:
 		pass
+	elif mode == 44:
+		liz = PlayCartoon(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 90:
 		if General_Language != url and url != "":
 			setsetting('General_Language',url)
@@ -2235,6 +2241,8 @@ def pluginend(admin):
 		CATEGORIES139(name, iconimage, desc, fanart)
 	elif mode == 200:
 		CATEGORIES200()
+	elif mode == 999:
+		CATEGORIES999()
 	
 	#10101+ = SUB-CATEGORIES2
 	elif mode == 10001:
@@ -2548,9 +2556,14 @@ def pluginend(admin):
 		
 		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_TITLE, name)
 		printpoint = printpoint + "S"
-	if mode != 17 and mode != 5 and mode != 21 and mode != 4 and mode != 9 and mode != 13 and mode != 3: # and mode != 20
+	if mode == 44:
+		xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, liz)
+		xbmcplugin.setContent(int(sys.argv[1]), 'movies')
+	elif mode != 17 and mode != 5 and mode != 21 and mode != 4 and mode != 9 and mode != 13 and mode != 3: # and mode != 20
+		printpoint = printpoint + "7"		
 		xbmcplugin.endOfDirectory(int(sys.argv[1]))
-		printpoint = printpoint + "7"
+		
+		
 	
 	'''------------------------------
 	---PRINT-END---------------------
@@ -3565,6 +3578,52 @@ def getLists(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=17&value='+addonID+')')
 	#print 'getLists: ' + 'scriptfeatherenceservice_randomL' + space2 + str(scriptfeatherenceservice_randomL)
 
+def getUserAgent():
+    agents = []
+    #agents.append('Mozilla/5.0 (Android; Mobile; rv:29.0) Gecko/29.0 Firefox/29.0')
+    #agents.append('Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36')
+    #agents.append('Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) CriOS/34.0.1847.18 Mobile/11B554a')
+    #agents.append('Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53')
+    #agents.append('Mozilla/5.0 (iPhone; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53')
+    #agents.append('Mozilla/5.0 (Android; Mobile; rv:30.0) Gecko/30.0 Firefox/30.0')
+
+    agents.append('Mozilla/5.0 (Android; Mobile; rv:%d.0) Gecko/%d.0 Firefox/%d.0')
+    agents.append('Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.%d (KHTML, like Gecko) Chrome/%d.0.1847.114 Mobile Safari/537.%d')
+    agents.append('Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/5%d.51.1 (KHTML, like Gecko) CriOS/%d.0.1847.%d Mobile/11B554a')
+    agents.append('Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/5%d.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B5%da Safari/9537.%d')
+    agents.append('Mozilla/5.0 (iPhone; CPU OS 7_0_4 like Mac OS X) AppleWebKit/5%d.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B%d4a Safari/9537.%d')
+    agents.append('Mozilla/5.0 (Android; Mobile; rv:%d.0) Gecko/%d.0 Firefox/%d.0')
+
+    agent = random.choice(agents) % (random.randint(10, 40), random.randint(10, 40), random.randint(10, 40))
+
+    return '?|User-Agent=%s' % agent
+
+
+def	CATEGORIES999():
+	url2 = 'https://docs.google.com/file/d/0B3qBRwW3mJUBamk0MFo5YjR6akE/edit?pli=1'
+	url2 = 'http://www.supercartoons.net/video/1210/a-tiki-scare-is-no-fair.mp4'
+	image2 = 'http://dragonballz.co.il/wp-content/uploads/2015/03/1058-214x300.jpg'
+	title2 = 'דרגון בול זי פרק 1 – מדובב לעברית'
+	addDir(title2,url2,44,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True)) #Test
+
+def PlayCartoon(mode, name, url, iconimage, desc, num, viewtype, fanart):
+	url += getUserAgent()
+	iconimage += getUserAgent()
+	
+	liz = xbmcgui.ListItem(name, iconImage=iconimage, thumbnailImage=iconimage)
+	liz.setInfo( type="Video", infoLabels={ "Title": name} )
+	liz.setPath(url)
+	#pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
+    #pl.clear()
+    #pl.add(url, liz)
+    #play_view(url, num, viewtype)
+	xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, liz)
+	xbmcplugin.setContent(int(sys.argv[1]), 'movies')
+	xbmcplugin.endOfDirectory(int(sys.argv[1]))
+	sys.exit()
+	#xbmc.executebuiltin('PlayMedia(%s)' % url )
+	return liz
+	
 def CATEGORIES_RANDOM():
 	'''אקראי'''
 	addDir('-' + localize(590),list,1,featherenceserviceicons_path + 'random.png',addonString_servicefeatherence(8).encode('utf-8'),'1',"", "") #אקראי

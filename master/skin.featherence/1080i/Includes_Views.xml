@@ -43,12 +43,10 @@
 		<control type="list" id="450">
 		  <posx>-10</posx>
 		  <posy>149</posy>
-		  <width>1480</width>
+		  <width>480</width>
 		  <height>935</height>
 		  <include>4ways</include>
 		  <include>ViewDesign_50_Layout</include>
-		  <!--<include condition="!Window.IsVisible(FileBrowser.xml)">ViewDesign_50_Layout</include>
-		  <include condition="Window.IsVisible(FileBrowser.xml)">ViewDesign_51_Layout</include>-->
 		</control>
       </control>
     </control>
@@ -74,7 +72,7 @@
   <include name="ViewDesign_50_ItemLayout">
     <control type="image" description="מסגרת">
 	  <animation condition="!Skin.HasSetting(View50_Plus)" effect="zoom" center="0,0" start="100,100" end="100,200">Conditional</animation>
-	  <include>Fade_MenuButtonsOverlay</include>
+	  <!--<include>Fade_MenuButtonsOverlay</include>-->
 	  <posx>0</posx>
 	  <posy>-5</posy>
 	  <width>480</width>
@@ -169,7 +167,7 @@
 	  <height>45</height>
 	  <bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
 	  <bordersize>2</bordersize>
-	  <texture border="0" colordiffuse="ff4f4f98">buttons/ButtonA0.png</texture>
+	  <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/ButtonA0.png</texture>
 	</control>
 	<control type="group" description="פרטים נוספים">
 	  <height>60</height>		
@@ -408,12 +406,12 @@
   <include name="ViewDesign_51_Layout">
 	  <itemlayout description="(כללי)" condition="true" height="100" width="960"> <!--[Container.Content(files) | Container.Content(actors) | Container.Content(Sets) | ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | SubString(ListItem.path,plugin://plugin.video.youtube)]]-->
 		<control type="image" description="מסגרת">
-		  <include>Fade_MenuButtonsOverlay</include>
+		  <!--<include>Fade_MenuButtonsOverlay</include>-->
 		  <posx>500</posx>
 		  <posy>20</posy>
 		  <width>880</width>
 		  <height>100</height>
-		  <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+		  <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
 		</control>
 		<include>View51_Common</include>
 		<control type="label" description="שם">
@@ -436,7 +434,7 @@
 		  <posy>20</posy>
 		  <width>880</width>
 		  <height>100</height>
-		  <texture border="20">buttons/ButtonE.png</texture>
+		  <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
 		</control>
 		<include>View51_Common</include>
 		
@@ -518,12 +516,12 @@
 		  <viewtype label="31012">Grid</viewtype>
 		  <itemlayout description="(Seasons/Episodes)" condition="!IsEmpty(Control.GetLabel(11155))" height="100" width="960"> <!--SubString(Container.FolderName,Mako)-->
 			<control type="image" description="מסגרת">
-			  <include>Fade_MenuButtonsOverlay</include>
+			  <!--<include>Fade_MenuButtonsOverlay</include>-->
               <posx>760</posx>
               <posy>20</posy>
               <width>360</width>
               <height>100</height>
-              <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+              <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
             </control>
 			<control type="label" description="פרק/עונה">
               <include>LabelC3</include>
@@ -585,7 +583,7 @@
               <posy>20</posy>
               <width>360</width>
               <height>100</height>
-              <texture border="40">buttons/ButtonE.png</texture>
+              <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
             </control>
 		    <control type="label" description="פרק/עונה">
               <include>LabelC3</include>
@@ -1042,7 +1040,7 @@
 		<height>350</height>
 		<posy>-50</posy>
 		<width>1440</width>
-		<texture border="20" colordiffuse="$VAR[MenuColor]">buttons/ButtonE0.png</texture>
+		<texture border="20" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
 	  </control>
 
 	  <control type="group" description="כותרות">
@@ -1189,7 +1187,7 @@
 		    <posy>-5</posy>
             <width>1440</width>
             <height>70</height>
-            <texture border="40">buttons/ButtonE.png</texture>
+            <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
           </control>
           <control type="image" description="הקלטה">
             <posx>10</posx>

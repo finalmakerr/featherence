@@ -1097,7 +1097,7 @@ def setPath(type=0,mask="", folderpath=""):
 	
 	return returned
 	
-def dialogkeyboard(input, heading, option, custom, set1, addon):
+def dialogkeyboard(input, heading, option, custom, set1, addon, force=False):
 	'''option:
     - xbmcgui.INPUT_ALPHANUM (standard keyboard)
     - xbmcgui.INPUT_NUMERIC (format: #)
@@ -1106,10 +1106,12 @@ def dialogkeyboard(input, heading, option, custom, set1, addon):
     - xbmcgui.INPUT_IPADDRESS (format: #.#.#.#)
     - xbmcgui.INPUT_PASSWORD (return md5 hash of input, input is masked)
 	'''
+	if set1 == None: set1 = ""
+	if addon == None: addon = ""
+	
 	name = 'dialogkeyboard' ; printpoint = "" ; returned = 'skip' ; set1v = ""
 	if '$LOCALIZE' in heading: heading = xbmc.getInfoLabel(heading)
-	try: heading = heading.encode('utf-8')
-	except: pass
+	heading = to_utf8(heading)
 	dialog = xbmcgui.Dialog()
 	xbmc.sleep(40) #Delay time to make sure operation executed!
 	keyboard = xbmc.Keyboard(input,heading,option)
@@ -1160,7 +1162,7 @@ def dialogkeyboard(input, heading, option, custom, set1, addon):
 			if addon == "0": setsetting(set1, to_utf8(set1v))
 			elif addon != "": setsetting_custom1(addon,set1,to_utf8(set1v))
 			'''---------------------------'''
-		elif set1 != "" and addon == "": setSkinSetting("0",set1,set1v)
+		elif set1 != "" and addon == "": setSkinSetting("0",set1,set1v, force=force)
 	
 	if option != 0: set1v = "******"
 	
@@ -1615,7 +1617,7 @@ def installaddonP(admin, addon, update=True):
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
-
+	
 	elif addon == 'plugin.video.extreme.com':
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			fileID = getfileID(addon+".zip")
@@ -1861,7 +1863,7 @@ def notification(heading, message, icon, time):
 	
 	time = str(time)
 
-	text = heading + space3 + message + space + time
+	text = to_utf8(heading) + space3 + to_utf8(message) + space + to_utf8(time)
 	try: printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	except Exception, TypeError: printlog(title=name, printpoint=printpoint, text=str(TypeError), level=0, option="")
 		
@@ -2370,18 +2372,24 @@ def replace_word(infile,old_word,new_word, infile_="", LineR=False , LineClean=F
 	extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
-def ReloadSkin(admin):
+def ReloadSkin(admin,force=True):
 	name = 'ReloadSkin' ; printpoint = ""
 	if property_reloadskin == "":
 		printpoint = printpoint + '1'
 		xbmc.executebuiltin('ActivateWindow(1000)')
 		xbmc.executebuiltin('SetProperty(ReloadSkin,true,home)')
-		if playerhasmedia: xbmc.executebuiltin('Action(Stop)') ; notification('Video Stop',"","",1000) ; xbmc.sleep(1000)
-		notification("..","","",1000)
+		if force == True:
+			if playerhasmedia: xbmc.executebuiltin('Action(Stop)') ; notification('Video Stop',"","",1000) ; xbmc.sleep(1000)
+			notification("..","","",1000)
 		xbmc.sleep(200)
-		xbmc.executebuiltin('ReloadSkin()') ; xbmc.sleep(1500)
-		xbmc.executebuiltin('AlarmClock(reloadskin,ClearProperty(ReloadSkin,home),00:05,silent)')
+		xbmc.executebuiltin('ReloadSkin()')
+		if force == True:
+			xbmc.sleep(1500)
+			xbmc.executebuiltin('AlarmClock(reloadskin,ClearProperty(ReloadSkin,home),00:05,silent)')
+		else: xbmc.executebuiltin('AlarmClock(reloadskin,ClearProperty(ReloadSkin,home),0,silent)')
 		xbmc.executebuiltin('Action(Back)')
+		
+		
 		#xbmc.executebuiltin('ReplaceWindow(CustomHomeCustomizer.xml)')
 	else:
 		printpoint = printpoint + '9'
@@ -2831,7 +2839,9 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 	#print 'admin: ' + str(admin) + ' admin2: ' + str(admin2) + ' admin3: ' + str(admin3) + space + 'exe' + space2 + str(exe)
 	if exe != "":
 		print printfirst + to_utf8(title) + '_LV' + str(printpoint) + space + to_utf8(text)
-
+		
+	return exe
+	
 def killall(admin, custom=""):
 	customgui = xbmc.getInfoLabel('Skin.HasSetting(CustomGUI)')
 	CloseSession()

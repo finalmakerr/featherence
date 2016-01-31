@@ -7,11 +7,27 @@ WIP - WORK IN PROGRESS
 - Widget auto refresh on condition.
 
 ------------------------
-Featherence v0.3.2 (xx-Jan-16)
+Featherence v0.3.2 (xx-Feb-16)
 ------------------------
+- Added 2D mode for all buttons (optional).
+- Added 5 different home buttons's shapes.
+- Added 400+ new colors option via manual mode.
+- Added coloring opion for menu's buttons (Focus/Unfocus).
+- Added coloring option for all backgrounds menus.
+- Added coloring opion for keyboard background, edit area and buttons (Focus/Unfocus).
+- Added preview display for all coloring options.
+- *Added double click check for some windows (aka if double click do different action).
+* For example - double clicking on selected color will go to save button, otherwise stay on the same button.
+- Added info button in coloring window.
+- Major update of all buttons textures and effects.
+- Major update of all dialog windows.
+- Major update of skin design options sort order.
 - Minor bugs fix.
-- Update buttons effects.
-
+- You may now color, reshape and set overlay for every apsect in the skin.
+- Update colors window.
+- Update Default and Classico template.
+- Update radio buttons
+- Update transperancy option for all menu buttons.
 
 ------------------------
 Featherence v0.3.1 (26-Jan-16)
