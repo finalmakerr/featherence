@@ -402,12 +402,12 @@ msgid ""
 msgstr ""
 
 msgctxt "#31116
-msgid ""
-msgstr ""
+msgid "Choose this option for rearranging your home buttons layout.[CR]There are total of six available layouts![CR]Some of them are Horizontal, Vertical, Panel.."
+msgstr "בחר באפשרות זאת בכדי לשנות את מצב התצוגה שלך. למשל תפריט אופקי, אנכי, פנל.."
 
 msgctxt "#31117
-msgid ""
-msgstr ""
+msgid "Buttons Layout"
+msgstr "פריסת כפתורים"
 
 msgctxt "#31118
 msgid "Enable 2D in any buttons across the skin."
@@ -492,6 +492,22 @@ msgstr "לא בוצעו שינויים"
 msgctxt "#31413
 msgid "Director Info"
 msgstr "מידע במאי"
+
+msgctxt "#31414
+msgid "Selection marker"
+msgstr "סמן בחירה"
+
+msgctxt "#31415
+msgid "Focus Button"
+msgstr "כפתור נבחר"
+
+msgctxt "#31416
+msgid "Unfocus button"
+msgstr "כפתור לא נבחר"
+
+msgctxt "#31417
+msgid "Element"
+msgstr "אלמנט"
 
 msgctxt "#31600
 msgid "Action"
@@ -925,10 +941,6 @@ msgstr "החלף תמונה / רקע"
 msgctxt "#74435
 msgid "Bottom Menu"
 msgstr "תפריט תחתית"
-
-msgctxt "#74437"
-msgid "Menus include:[CR]Poweroff, music and more..."
-msgstr "תפריטים כלולים:[CR]כיבוי, מוזיקה ועוד..."
 
 msgctxt "#74439"
 msgid "Choose your own Music File to be played upon startup.[CR][CR][COLOR=yellow]$INFO[Skin.String(StartUpMusic)][/COLOR]"
@@ -1402,18 +1414,6 @@ msgctxt "#74608"
 msgid "Stroke"
 msgstr "מסגרת (Stroke)"
 
-msgctxt "#74609"
-msgid "Element"
-msgstr "אלמנט"
-
-msgctxt "#74610"
-msgid "Focus Button"
-msgstr "כפתור נבחר"
-
-msgctxt "#74611"
-msgid "Unfocus button"
-msgstr "כפתור לא נבחר"
-
 msgctxt "#74612"
 msgid "Main Buttons position"
 msgstr "מיקום כפתורים ראשי"
@@ -1738,10 +1738,6 @@ msgctxt "#76205
 msgid "Relocate the fanart position in the home screen by having a fanart on the entire screen or outside the home buttons area."
 msgstr "שנה את מיקום הפאנארט בחלון הבית כך שיופיע על כל המסך או מחוץ למסגרת כפתורי הבית."
 
-msgctxt "#76206
-msgid "Choose this option for rearranging your home buttons design."
-msgstr "בחר באפשרות זאת בכדי לשנות את עיצוב כפתורי הבית."
-
 msgctxt "#76207
 msgid "Choose this option to allow fanart view while browsing home menu."
 msgstr "בחר באפשרות זו בכדי לאפשר תצוגת פאנארט בזמן ניווט בחלון הבית."
@@ -1778,10 +1774,6 @@ msgctxt "#78013
 msgid "Transperancy"
 msgstr "שקוף"
 
-msgctxt "#78014
-msgid "Menu Design"
-msgstr "עיצוב תפריט"
-
 msgctxt "#78015
 msgid "UnFocus Icon/Label"
 msgstr "סמל/טקסט לא נבחר"
@@ -1805,10 +1797,6 @@ msgstr "פס עליון"
 msgctxt "#78020
 msgid "Choose color"
 msgstr "בחירת צבע"
-
-msgctxt "#78021
-msgid "Selection marker"
-msgstr "סמן בחירה"
 
 msgctxt "#78022"
 msgid "Choose YES if you want to"

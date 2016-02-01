@@ -70,7 +70,7 @@
     <include>ArrowsLeftRight</include>
 
 	<include name="MenuBackground">
-		<param name="border" value="40" />
+		<param name="border" value="35" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="81" />
 		<param name="posx" value="460" />

@@ -452,6 +452,51 @@
 	</definition>
   </include>
   
+  <include name="Buttons_Color" description="Layouts">
+	<param name="height" default="0"/>
+	<param name="posx" default="0"/>
+	<param name="posy" default="0"/>
+	<param name="width" default="0"/>
+	
+	<param name="condition" default="true"/>
+	<definition>
+		<control type="group">
+		  <height>$PARAM[height]</height>
+		  <posx>$PARAM[posx]</posx>
+		  <posy>$PARAM[posy]</posy>
+		  <width>$PARAM[width]</width>
+		  <visible>$PARAM[condition]</visible>
+		  <control type="group">
+			  <control type="image" description="צבע">
+				<texture diffuse="buttons/types/bd.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+				<visible>!Skin.String(ButtonsDesign)</visible>
+			  </control>
+			  <control type="image" description="צבע">
+				<texture diffuse="buttons/types/bd0.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+				<visible>Skin.String(ButtonsDesign,0)</visible>
+			  </control>
+			  <control type="image" description="צבע">
+				<texture diffuse="buttons/types/bd1.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+				<visible>Skin.String(ButtonsDesign,1)</visible>
+			  </control>
+			  <control type="image" description="צבע">
+				<texture diffuse="buttons/types/bd2.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+				<visible>Skin.String(ButtonsDesign,2)</visible>
+			  </control>
+			  <control type="image" description="צבע">
+				<texture diffuse="buttons/types/bd3.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+				<visible>Skin.String(ButtonsDesign,3)</visible>
+			  </control>
+			  <control type="image" description="צבע">
+				<texture diffuse="buttons/types/bd4.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+				<visible>Skin.String(ButtonsDesign,4)</visible>
+			  </control>
+		  </control>
+		  
+		  
+		</control>
+	</definition>
+  </include>
   
   <include name="Control_Pos1" description="50/55/58">
 	<posx>0</posx>
@@ -567,5 +612,8 @@
 	 <height>100</height>
    </include>
    <include name="Control_Pos52" description="">
+   </include>
+   <include name="Control_Pos53" description="">
+	 <posx>0</posx>
    </include>
 </includes>

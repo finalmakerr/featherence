@@ -146,11 +146,11 @@
   
   <include name="Content_Custom1173_50">
 	  <!--198-224 מסך בית מותאם אישי-->
-	  <item id="198" description="עיצוב תפריט">
-		<label>$LOCALIZE[78014]</label>
+	  <item id="198" description="פריסת כפתורים">
+		<label>$LOCALIZE[31117]</label>
 		<label2>$VAR[198label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/ofx.png</thumb>
-		<property name="rinfo">$LOCALIZE[76206]</property>
+		<property name="rinfo">$LOCALIZE[31116]</property>
 		<onclick condition="!Skin.String(MenuDesign)">Skin.SetString(MenuDesign,0)</onclick>
 		<onclick condition="Skin.String(MenuDesign,0)">Skin.SetString(MenuDesign,1)</onclick>
 		<onclick condition="Skin.String(MenuDesign,1)">Skin.SetString(MenuDesign,2)</onclick>
@@ -184,9 +184,9 @@
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>
 	  
-	  <item id="200" description="סמן בחירה (כפתור)">
+	  <item id="200" description="סמן בחירה כפתור נבחר">
 		<visible></visible> <!--Skin.HasSetting(SelectionMarker)-->
-		<label>$LOCALIZE[78021] ($ADDON[script.featherence.service 80])</label>
+		<label>$LOCALIZE[31414] $LOCALIZE[31415]</label>
 		<label2>$VAR[200label2]</label2>
 		<thumb>misc/frames/selector.png</thumb>
 		<property name="rinfo">$LOCALIZE[76200].</property>
@@ -205,7 +205,7 @@
 	  </item>
 	  
 	  <item id="202" description="סמן בחירה 2 (כפתור)">
-		<label>$LOCALIZE[78021] 2 $ADDON[script.featherence.service 80]</label>
+		<label>$LOCALIZE[31414] 2 $ADDON[script.featherence.service 80]</label>
 		<label2>$VAR[201label2]</label2>
 		<thumb>buttons/effects/choosen2.png</thumb>
 		<property name="rinfo">$LOCALIZE[76201].</property>
@@ -247,8 +247,8 @@
 		<onclick>Skin.ToggleSetting(StrokeButton)</onclick>
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>
-	  <item id="209" description="אלמנט (כפתור לא נבחר)">
-		<label>$LOCALIZE[74609] ($LOCALIZE[74611])</label>
+	  <item id="209" description="אלמנט כפתור לא נבחר">
+		<label>$LOCALIZE[31417] $LOCALIZE[31416]</label>
 		<label2>$INFO[Skin.String(ElementUButton)]</label2>
 		<thumb></thumb>
 		<property name="rinfo"></property>
@@ -257,8 +257,8 @@
 		<onclick condition="Skin.String(ElementUButton,2)">Skin.SetString(ElementUButton,)</onclick>
 		<visible>Container(100).Hasfocus(20) + false</visible>
 	  </item>
-	  <item id="210" description="אלמנט (כפתור נבחר)">
-		<label>$LOCALIZE[74609] ($LOCALIZE[74610])</label>
+	  <item id="210" description="אלמנט כפתור נבחר">
+		<label>$LOCALIZE[31417] $LOCALIZE[31415]</label>
 		<label2>$INFO[Skin.String(ElementFButton)]</label2>
 		<thumb></thumb>
 		<property name="rinfo"></property>
@@ -740,7 +740,7 @@
 		<label>$LOCALIZE[78215] $LOCALIZE[31122]</label>
 		<label2>$INFO[Skin.String(KeyboardBackgroundOverlay)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/eye.png</thumb>
-		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[31034][CR]$LOCALIZE[74437].</property>
+		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[31122].</property>
 		<onclick condition="Skin.String(KeyboardBackgroundOverlay, )">Skin.SetString(KeyboardBackgroundOverlay, 100)</onclick>
 		<onclick condition="Skin.String(KeyboardBackgroundOverlay, 100)">Skin.SetString(KeyboardBackgroundOverlay, 95)</onclick>
 		<onclick condition="Skin.String(KeyboardBackgroundOverlay, 95)">Skin.SetString(KeyboardBackgroundOverlay, 90)</onclick>

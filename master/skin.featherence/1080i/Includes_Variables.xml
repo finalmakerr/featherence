@@ -82,6 +82,11 @@
 	<value condition="Skin.String(MenuColor)" description="מותאם אישי">$INFO[Skin.String(MenuColor)]</value>
   </variable>
   
+  <variable name="ButtonsDesignColor" description="צבע כפתור בית">
+    <value condition="Window.IsVisible(Custom1170.xml) + SubString(Window(home).Property(TEMP),color,left) + !IsEmpty(Window(home).Property(SelectedColor))" description="">buttons/colors/$INFO[Window(home).Property(SelectedColor)].png</value>
+    <value condition="true" description="">buttons/colors/$INFO[ListItem.Property(color)].png</value>
+  </variable>
+  
   <variable name="MainBackgroundColor" description="בחירת צבע רקע תחתון">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),MainBackgroundColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(MainBackgroundColor)" description="ברירת מחדל-white smoke(100%)">fff5f5f5</value>

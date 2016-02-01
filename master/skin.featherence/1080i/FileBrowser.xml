@@ -10,7 +10,8 @@
 	  <!--<include>ViewDesign_451</include>-->
 	  <!--<include>TopVideoInformation</include> --> <!-- Bugged! -->
 	  
-	  <control type="group" description="תפריט ימין (9005)">
+	<control type="group" description="תפריט ימין (9005)">
+	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos35</include>
       <height>530</height>	  
 	  <posx>1475</posx>
 	  <posy>275</posy>	  

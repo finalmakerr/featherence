@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="4ways">
-	  
+	  <onleft condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(9005) + StringCompare(System.Language,Hebrew)">9005</onleft>
 	  <onleft condition="Control.IsVisible(7011) + Control.IsVisible(7017) + StringCompare(System.Language,Hebrew) + !Control.HasFocus(7017) + [!Control.IsVisible(90000) | StringCompare(Container.Viewmode,$LOCALIZE[31011])]">7017</onleft>
 	  <onleft condition="Control.IsVisible(90000) + !SubString(Window(home).Property(ViewsSettings),900) + [StringCompare(System.Language,Hebrew) | Window.IsVisible(MyPVRGuide.xml)]">9000</onleft>
 	  <onleft condition="Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9001) + [StringCompare(System.Language,Hebrew) | Window.IsVisible(MyPVRGuide.xml)]">9001</onleft>
 	  <onleft condition="Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9002) + [StringCompare(System.Language,Hebrew) | Window.IsVisible(MyPVRGuide.xml)]">9002</onleft>
 	  <onleft condition="!Control.IsVisible(90000) + Player.HasAudio + StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onleft>
 
-	  <onright condition="Window.IsVisible(FileBrowser.xml) + !StringCompare(System.Language,Hebrew)">9005</onright>
+	  <onright condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(9005) + !StringCompare(System.Language,Hebrew)">9005</onright>
 	  <onright condition="Control.IsVisible(60) + StringCompare(System.Language,Hebrew)">60</onright>
 	  <onright condition="!Control.IsVisible(60) + Control.IsVisible(7011) + StringCompare(System.Language,Hebrew) + !Control.HasFocus(7017) + !StringCompare(Container.Viewmode,$LOCALIZE[31011])">7017</onright>
 	  <onright condition="!Control.IsVisible(60) + Player.HasAudio + StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onright>
@@ -20,7 +20,6 @@
 	  <onright condition="Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9002) + [!StringCompare(System.Language,Hebrew) | Window.IsVisible(MyPVRGuide.xml)]">9002</onright>
 	  <onright condition="!Control.IsVisible(90000) + Player.HasAudio + !StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onright>
 	  
-	  <onleft condition="Window.IsVisible(FileBrowser.xml) + StringCompare(System.Language,Hebrew)">9005</onleft>
 	  <onleft condition="Control.IsVisible(60) + !StringCompare(System.Language,Hebrew)">60</onleft>
 	  <onleft condition="!Control.IsVisible(60) + Control.IsVisible(7011) + !StringCompare(System.Language,Hebrew) + !StringCompare(Container.Viewmode,$LOCALIZE[31011])">7017</onleft>
 	  <onleft condition="!Control.IsVisible(60) + Player.HasAudio + !StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onleft>
@@ -83,12 +82,12 @@
 	<onleft description="en" condition="Window.IsActive(SettingsCategory.xml) + !StringCompare(System.Language,Hebrew)">5</onleft> 
     <onleft description="en" condition="[ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus() | ControlGroup(9002).HasFocus() | ControlGroup(300).HasFocus | Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml)] + !StringCompare(System.Language,Hebrew) + Control.IsVisible(50)">50</onleft>
 	<onleft description="en" condition="Control.IsVisible(51) + !StringCompare(System.Language,Hebrew)">51</onleft>
-	<onleft description="en" condition="Control.IsVisible(54) + !StringCompare(System.Language,enbrew)">54</onleft>
-	<onleft description="en" condition="Control.IsVisible(56) + !StringCompare(System.Language,enbrew)">56</onleft>
-	<onleft description="en" condition="Control.IsVisible(57) + !StringCompare(System.Language,enbrew)">57</onleft>
-	<onleft description="en" condition="Control.IsVisible(58) + !StringCompare(System.Language,enbrew)">58</onleft>
-	<onleft description="en" condition="Control.IsVisible(50) + !StringCompare(System.Language,enbrew)">50</onleft>
-	<onleft description="en" condition="Control.IsVisible(450) + !StringCompare(System.Language,enbrew)">450</onleft>
+	<onleft description="en" condition="Control.IsVisible(54) + !StringCompare(System.Language,Hebrew)">54</onleft>
+	<onleft description="en" condition="Control.IsVisible(56) + !StringCompare(System.Language,Hebrew)">56</onleft>
+	<onleft description="en" condition="Control.IsVisible(57) + !StringCompare(System.Language,Hebrew)">57</onleft>
+	<onleft description="en" condition="Control.IsVisible(58) + !StringCompare(System.Language,Hebrew)">58</onleft>
+	<onleft description="en" condition="Control.IsVisible(50) + !StringCompare(System.Language,Hebrew)">50</onleft>
+	<onleft description="en" condition="Control.IsVisible(450) + !StringCompare(System.Language,Hebrew)">450</onleft>
 	
 	<onleft description="he" condition="Control.IsVisible(7011) + StringCompare(System.Language,Hebrew)">7017</onleft>
 	<onleft description="he" condition="Player.HasAudio + StringCompare(System.Language,Hebrew)">7017</onleft>
@@ -1171,25 +1170,6 @@
 	  <onfocus condition="!IsEmpty(ListItem.Duration) + [IsEmpty(Window(home).Property(ListItemDuration)) | !StringCompare(ListItem.Duration,Window(home).Property(ListItemDuration))] + !IntegerGreaterThan(ListItem.Duration,1000)">AlarmClock(ListItemDuration,SetProperty(ListItemDuration,$INFO[ListItem.Duration],home),00:03,silent)</onfocus>
 	  <visible>false</visible>
 	</control>
-  </include>
-  
-  <include name="ButtonsDesign">
-    <texture diffuse="buttons/types/bd.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
-  </include>
-  <include name="ButtonsDesign0">
-    <texture diffuse="buttons/types/bd0.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
-  </include>
-  <include name="ButtonsDesign1">
-    <texture diffuse="buttons/types/bd1.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
-  </include>
-  <include name="ButtonsDesign2">
-    <texture diffuse="buttons/types/bd2.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
-  </include>
-  <include name="ButtonsDesign3">
-    <texture diffuse="buttons/types/bd3.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
-  </include>
-  <include name="ButtonsDesign4">
-    <texture diffuse="buttons/types/bd4.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
   </include>
   
   <include name="ButtonsDesign_icon">

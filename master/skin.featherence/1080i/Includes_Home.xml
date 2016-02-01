@@ -186,19 +186,12 @@
     <itemlayout height="230" width="368">
 	  <control type="group">
 		<include>MenuDesign_Home_itemlayout</include>
-        <control type="image" description="צבע">
-		  <height>180</height>
-		  <posx>30</posx>
-          <posy>30</posy>
-		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign</include>
-		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0</include>
-		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1</include>
-		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2</include>
-		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3</include>
-		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4</include>
-		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
-		  <width>312</width>
-        </control>
+		<include name="Buttons_Color" description="צבע">
+			<param name="height" value="180" />
+			<param name="posx" value="30" />
+			<param name="posy" value="30" />
+			<param name="width" value="312" />
+		</include>
 		<control type="image" description="אלמנט כפתור לא נבחר">
           <posx>30</posx>
           <posy>30</posy>
@@ -324,19 +317,12 @@
 	  <control type="group">
 	    <include>SetProperty_Home</include>
 		<!--<animation condition="Skin.String(MenuDesign,1)" effect="zoom" center="312,180" end="50,100" time="0" reversible="false">Conditional</animation>-->
-		<control type="image" description="צבע">
-          <posx>20</posx>
-          <posy>20</posy>
-          <width>332</width>
-          <height>200</height>
-		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign</include>
-		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0</include>
-		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1</include>
-		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2</include>
-		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3</include>
-		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4</include>
-		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
-        </control>
+		<include name="Buttons_Color" description="צבע">
+			<param name="height" value="200" />
+			<param name="posx" value="20" />
+			<param name="posy" value="20" />
+			<param name="width" value="332" />
+		</include>
 		<control type="image" description="אלמנט כפתור נבחר">
           <posx>20</posx>
           <posy>20</posy>
@@ -489,19 +475,13 @@
     <itemlayout height="230" width="250">
 	  <control type="group">
 		<include>MenuDesign_Home_itemlayout</include>
-        <control type="image" description="צבע">
-		  <height>180</height>
-		  <posx>30</posx>
-          <posy>30</posy>
-		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign</include>
-		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0</include>
-		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1</include>
-		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2</include>
-		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3</include>
-		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4</include>
-		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
-		  <width>312</width>
-        </control>
+		
+		<include name="Buttons_Color" description="צבע">
+			<param name="height" value="180" />
+			<param name="posx" value="30" />
+			<param name="posy" value="30" />
+			<param name="width" value="312" />
+		</include>
 		<control type="image" description="אלמנט כפתור לא נבחר">
           <posx>30</posx>
           <posy>30</posy>
@@ -627,19 +607,12 @@
 	  <control type="group">
 	    <include>SetProperty_Home</include>
 		<!--<animation condition="Skin.String(MenuDesign,1)" effect="zoom" center="312,180" end="50,100" time="0" reversible="false">Conditional</animation>-->
-		<control type="image" description="צבע">
-          <posx>20</posx>
-          <posy>20</posy>
-          <width>332</width>
-          <height>200</height>
-		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign</include>
-		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0</include>
-		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1</include>
-		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2</include>
-		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3</include>
-		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4</include>
-		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
-        </control>
+		<include name="Buttons_Color" description="צבע">
+			<param name="height" value="200" />
+			<param name="posx" value="20" />
+			<param name="posy" value="20" />
+			<param name="width" value="332" />
+		</include>
 		<control type="image" description="אלמנט כפתור נבחר">
           <posx>20</posx>
           <posy>20</posy>
@@ -795,19 +768,12 @@
 		<animation description="VerticalMenu" condition="[Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-170,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
 		<animation condition="[Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | Skin.HasSetting(FixedUnFocusButtonsTransperancy) + [Control.HasFocus(311) | Control.HasFocus(312) | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]]]" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
-        <control type="image" description="צבע">
-		  <height>100</height>
-		  <posx>0</posx>
-          <posy>20</posy>
-		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign</include>
-		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0</include>
-		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1</include>
-		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2</include>
-		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3</include>
-		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4</include>
-		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
-		  <width>212</width>
-        </control>
+		<include name="Buttons_Color" description="צבע">
+			<param name="height" value="100" />
+			<param name="posx" value="0" />
+			<param name="posy" value="20" />
+			<param name="width" value="212" />
+		</include>
 		<control type="image" description="אלמנט כפתור לא נבחר">
           <posx>0</posx>
           <posy>20</posy>
@@ -951,19 +917,12 @@
 		<animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="0,0" delay="0" time="0" reversible="true">Conditional</animation>
 		<animation description="VerticalMenu" condition="[Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="170,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<animation description="VerticalMenu" condition="[Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-170,0" delay="0" time="220" reversible="true">Conditional</animation>
-		<control type="image" description="צבע">
-          <posx>0</posx>
-          <posy>20</posy>
-          <width>232</width>
-          <height>100</height>
-		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign</include>
-		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0</include>
-		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1</include>
-		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2</include>
-		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3</include>
-		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4</include>
-		  <texture>buttons/colors/$INFO[ListItem.Property(color)].png</texture>
-        </control>
+		<include name="Buttons_Color" description="צבע">
+			<param name="height" value="100" />
+			<param name="posx" value="0" />
+			<param name="posy" value="20" />
+			<param name="width" value="232" />
+		</include>
 		<control type="image" description="אלמנט כפתור נבחר">
           <posx>0</posx>
           <posy>20</posy>

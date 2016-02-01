@@ -1164,9 +1164,12 @@ def dialogkeyboard(input, heading, option, custom, set1, addon, force=False):
 			'''---------------------------'''
 		elif set1 != "" and addon == "": setSkinSetting("0",set1,set1v, force=force)
 	
-	if option != 0: set1v = "******"
+	if option != 0:
+		set1v = "******"
+		returnedv = "******"
+	else: returnedv = returned
 	
-	text = "option" + space2 + str(option) + space + "returned" + space2 + str(returned) + space + "heading" + space2 + str(heading) + space + "set1v" + space2 + str(set1v)
+	text = "option" + space2 + str(option) + space + "returned" + space2 + str(returnedv) + space + "heading" + space2 + str(heading) + space + "set1v" + space2 + str(set1v)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	return returned
