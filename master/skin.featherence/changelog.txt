@@ -5,9 +5,10 @@ WIP - WORK IN PROGRESS
 - Added clear fanart support.
 - Touch device support.
 - Widget auto refresh on condition.
+- Bottom - SubMenu / Enter - Main Button. Horizontal only.
 
 ------------------------
-Featherence v0.3.2 (xx-Feb-16)
+Featherence v0.3.3 (01-Feb-16)
 ------------------------
 - Added 2D mode for all buttons (optional).
 - Added 5 different home buttons's shapes.
