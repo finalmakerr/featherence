@@ -23,7 +23,6 @@ def CATEGORIES10101Z(name, iconimage, desc, background, fanart):
 	background = 10101
 	
 	list = []
-
 		
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, default=fanart))
 
@@ -32,7 +31,6 @@ def CATEGORIES10102Z(name, iconimage, desc, background, fanart):
 	background = 10102
 	
 	list = []
-
 		
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, default=fanart))
 	

@@ -2740,8 +2740,8 @@ msgid "The 7D"
 msgstr "חבורת 7ג'"
 
 msgctxt "#10739
-msgid ""
-msgstr ""
+msgid "The Backyardigans"
+msgstr "חבורת החצר"
 
 msgctxt "#10740
 msgid "Dora The Explorer"
@@ -5974,8 +5974,8 @@ msgid "The 7D defend the land of Jollywood from the magical villains Grim and Hi
 msgstr "הסדרה מתרחשת בעולם המופלא של שמחה-ליווד, שבו המלכה עונג מסתמכת על שבעת הגמדים - עליזי, ביישני, ישנוני, אפצ'י, שטיא, רטנוני ודוק, שישמרו על ביטחון הממלכה. בדרכם של הגמדים עומדים שני נבלים מרושעים בשם גרים והילדי האפלוליים, שמתכננים להשתלט על הממלכה באמצעות גניבת האוצרות הקסומים שנמצאים במכרה של שבעת הגמדים. שבעת הגמדים, השונים זה מזה באופיים, תמיד מצליחים להציל את המצב ולשלוח את הילדי ואת גרים בחזרה למאורת הרשע שלהם."
 
 msgctxt "#107390
-msgid ""
-msgstr ""
+msgid "The series follows a ritualistic pattern and centers around an assortment of neighboring playmates depicted as bipedal, anthropomorphic animals: Uniqua, Pablo, Tyrone, Austin, and Tasha. Designed to encourage imaginative play, the characters communicate with the viewers by constantly breaking the fourth-wall, albeit the series rests particular focus on the role-playing games in which the friends participate varying with each episode, and said games are visualized through dream sequences lasting for a majority of the episode and serving as the primary focus of that certain episode."
+msgstr "חבורת החצר היא סדרת אנימציה מוזיקלית קנדית/אמריקנית שנוצרה על ידי ג'אניס בורג'ס. הסדרה מתארת את קורותיהם של חמישה ילדים-חיות הנפגשים בחצר ביתם המשותפת ומשחקים יחדיו במשחקי דמיון רוויים הרפתקאות, ריקודים ושירים."
 
 msgctxt "#107400
 msgid ""

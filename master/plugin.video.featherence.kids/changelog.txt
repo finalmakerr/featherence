@@ -3,6 +3,13 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence Kids v0.2.3 (03-02-16)
+------------------------
+- Added some more contents and links.
+- minor bugs fix.
+- Update addon information.
+
+------------------------
 Featherence Kids v0.2.2 (24-01-16)
 ------------------------
 - Major bugs fix.
