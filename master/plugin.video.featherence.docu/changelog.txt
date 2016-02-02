@@ -7,6 +7,13 @@ WIP (WORK IN PROGRESS)--
 - Add multi languages support.
 
 ------------------------
+Featherence Docu v0.1.7 (02-02-16)
+------------------------
+- Added fanart for all categories.
+- Added description for main categories.
+- Update addon information.
+
+------------------------
 Featherence Docu v0.1.6 (21-01-16)
 ------------------------
 - Added about us section with useful information and contact tools.

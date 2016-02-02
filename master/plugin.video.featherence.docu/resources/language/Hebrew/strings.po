@@ -355,9 +355,6 @@ msgctxt "#1010
 msgid ""
 msgstr ""
 
-
-
-
 msgctxt "#10101
 msgid "Nature-animal's"
 msgstr "בעלי חיים"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.featherence.extreme" version="0.1.4" name="Featherence Extreme" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.extreme" version="0.1.5" name="Featherence Extreme" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -11,10 +11,20 @@
 	<summary lang="en">Watch sport extreme videos.</summary>
 	<summary lang="he">צפה בסרטוני ספורט אקסטרים.</summary>
     <description lang="en">Features:
-- Smart TV Mode and Randomise Play.
-- Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox...
-- Smart Search button.
-- Sorted and Organized contents.</description>
+- Customized Menus: Support customized Fanart for each button.
+- Random Play: Auto play any visible button in a random super long playlist.
+- Sorting: Sorted and Organized contents by ages, languages specific sorting are included.
+- Smart TV Mode: Auto play current button contents as a 40 items playlist, random is optional.
+- Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
+- YouTube search: Search any contents from YouTube, history included.
+    </description>
+	<description lang="he">מאפיינים:
+- חיפוש יו-טיוב: מאפשר חיפוש תכנים מיו-טיוב, כולל רשימת היסטוריה.
+- מצב טלוויזיה חכם: ניגון אוטומטי של התכנים בכפתור הנבחר, עד 40 פריטים  שונים בפלייליסט אחד, אפשרות לאקראי.
+- מיון: תכנים ממויינים ומאורגנים לפי גיל, כולל מיון לפי שפה.
+- ניגון אקראי: ניגון אוטומטי של כל הכפתורים בחלון הנוכחי באקראי וברצף.
+- תכנים מגוונים ואין סופיים: תמיכה במגוון עצום של מקורות לתוכן בודד.
+	</description>
     <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<email>featherence@groups.facebook.com</email>
 	<forum></forum>
