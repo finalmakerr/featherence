@@ -40,7 +40,6 @@ except:
 	Search_History = ""
 	Search_Limit = ""
 	General_TVModeQuality = "0"
-
 Search_History_file = os.path.join(addondata_path, addonID, 'Search_History.txt')
 
 Addon_ShowLog = getsetting('Addon_ShowLog')

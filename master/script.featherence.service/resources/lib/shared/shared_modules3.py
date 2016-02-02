@@ -1682,39 +1682,42 @@ def urlcheck(url, ping=False, timeout=7):
 	import urllib2
 	name = "urlcheck" ; printpoint = "" ; returned = "" ; extra = "" ; TypeError = "" ; response_ = ""
 	
-	
-	try:
-		#urllib2.urlopen(url)
-		request = urllib2.Request(url)
-		response = urllib2.urlopen(request, timeout=timeout)
-		response_ = response
-		#content = response.read()
-		#f = urllib2.urlopen(url)
-		#f.fp._sock.recv=None # hacky avoidance
-		response.close()
-		del response
-		printpoint = printpoint + "7"
-		
-	except urllib2.HTTPError, e: 
-		extra = extra + newline + str(e.code) + space + str(e)
-		printpoint = printpoint + "8"
-	except urllib2.URLError, e:
-		extra = extra + newline + str(e.args) + space + str(e)
-		printpoint = printpoint + "9"
-	except Exception, TypeError:
-		printpoint = printpoint + "9"
-		extra = extra + newline + "TypeError" + space2 + str(TypeError)
-		if 'The read operation timed out' in TypeError: returned = 'timeout'
+	if url == None or url == "":
+		url = ""
+		printpoint = printpoint + '9'
+	else:
+		try:
+			#urllib2.urlopen(url)
+			request = urllib2.Request(url)
+			response = urllib2.urlopen(request, timeout=timeout)
+			response_ = response
+			#content = response.read()
+			#f = urllib2.urlopen(url)
+			#f.fp._sock.recv=None # hacky avoidance
+			response.close()
+			del response
+			printpoint = printpoint + "7"
 			
-	if not "7" in printpoint:
-		if ping == True:
-			if systemplatformwindows: output = terminal('ping '+url+' -n 1',"Connected2")
-			else: output = terminal('ping -W 1 -w 1 -4 -q '+url+'',"Connected")
-			if (not systemplatformwindows and ("1 packets received" in output or not "100% packet loss" in output)) or (systemplatformwindows and ("Received = 1" in output or not "100% loss" in output)): printpoint = printpoint + "7"
-			
-		elif 'Forbidden' in extra:
-			printpoint = printpoint + '7'
-			
+		except urllib2.HTTPError, e: 
+			extra = extra + newline + str(e.code) + space + str(e)
+			printpoint = printpoint + "8"
+		except urllib2.URLError, e:
+			extra = extra + newline + str(e.args) + space + str(e)
+			printpoint = printpoint + "9"
+		except Exception, TypeError:
+			printpoint = printpoint + "9"
+			extra = extra + newline + "TypeError" + space2 + str(TypeError)
+			if 'The read operation timed out' in TypeError: returned = 'timeout'
+				
+		if not "7" in printpoint:
+			if ping == True:
+				if systemplatformwindows: output = terminal('ping '+url+' -n 1',"Connected2")
+				else: output = terminal('ping -W 1 -w 1 -4 -q '+url+'',"Connected")
+				if (not systemplatformwindows and ("1 packets received" in output or not "100% packet loss" in output)) or (systemplatformwindows and ("Received = 1" in output or not "100% loss" in output)): printpoint = printpoint + "7"
+				
+			elif 'Forbidden' in extra:
+				printpoint = printpoint + '7'
+				
 	if "UKY3scPIMd8" in url: printpoint = printpoint + "6"
 	elif "7" in printpoint: returned = "ok" # or 'Forbidden' in extra
 	else: returned = 'error'
@@ -1845,6 +1848,7 @@ def getAddonFanart(category, custom="", default="", urlcheck_=False):
 			returned = custom
 			
 	if returned == "" and not '7' in printpoint:
+		printpoint = printpoint + '1'
 		if Fanart_EnableCustom != "true" and default == "":
 			returned = addonFanart
 			printpoint = printpoint + "8"
@@ -1954,11 +1958,8 @@ def getAddonFanart(category, custom="", default="", urlcheck_=False):
 					printpoint = printpoint + "9d"
 		
 		elif default != "" and not '7' in printpoint:
-			valid = urlcheck(default, ping=False, timeout=1)
-			
-			if 'ok' in valid:
-				printpoint = printpoint + "7"
-				returned = default
+			printpoint = printpoint + '5'
+			returned, returned2 = TranslatePath(default, filename=True, urlcheck_=True)
 		else:
 			printpoint = printpoint + "9"
 			
@@ -3624,9 +3625,9 @@ def PlayCartoon(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	#xbmc.executebuiltin('PlayMedia(%s)' % url )
 	return liz
 	
-def CATEGORIES_RANDOM():
+def CATEGORIES_RANDOM(background="", default="", custom=""):
 	'''אקראי'''
-	addDir('-' + localize(590),list,1,featherenceserviceicons_path + 'random.png',addonString_servicefeatherence(8).encode('utf-8'),'1',"", "") #אקראי
+	addDir('-' + localize(590),list,1,featherenceserviceicons_path + 'random.png',addonString_servicefeatherence(8).encode('utf-8'),'1',"", getAddonFanart(background, default=default, custom=custom)) #אקראי
 
 def CATEGORIES_SEARCH(mode=3, name='-' + localize(137), url="", num=""):
 	'''חיפוש'''

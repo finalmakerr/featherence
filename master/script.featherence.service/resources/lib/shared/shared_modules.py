@@ -151,7 +151,7 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 	'''---------------------------'''
 	return returned	
 
-def TranslatePath(x, filename=True):
+def TranslatePath(x, filename=True, urlcheck_=False):
 	name = 'TranslatePath' ; printpoint = "" ; returned = "" ; returned2 = "" ; TypeError = "" ; extra = ""
 	if x == None: x = ""
 	
@@ -168,10 +168,16 @@ def TranslatePath(x, filename=True):
 		
 	elif 'https://' in x or 'http://' in x or 'http:%2f' in x:
 		printpoint = printpoint + '2'
-		returned = x
+		if urlcheck_ == True:
+			from shared_modules3 import urlcheck
+			valid = urlcheck(x, ping=False, timeout=1)
+			if 'ok' in valid:
+				printpoint = printpoint + "4"
+				returned = x
+		else: returned = x
 	elif 'special://' in x:
 		try:
-			printpoint = printpoint + '3'
+			printpoint = printpoint + '5'
 			returned = os.path.join(xbmc.translatePath(x).decode("utf-8"))
 		except Exception, TypeError:
 			printpoint = printpoint + '9'

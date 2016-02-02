@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.2.0" provider-name="finalmakerr, amir elgazar">
+<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.2.2" provider-name="finalmakerr, amir elgazar">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -11,17 +11,31 @@
     <summary lang="en">_</summary>
 	<summary lang="he">_</summary>
     <description lang="en">Features:
-- Smart TV Mode and Randomise Play.
-- Smart Interface allow the users to easily create thier own addon from within Kodi and share it with others.
-- Customized Fanart for each button.
-- Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox...
-- Smart Search button..
-- Sorted and Organized contents.</description>
-	<description lang="he"></description>
-    <disclaimer lang="en"></disclaimer>
+- Customized Menus: Support customized Fanart for each button.
+- Favourite Items: Add any valid existed item to My Kids button.
+- My Music: Create your own buttons by feeding links from YouTube.
+  You may also add your own title, description, poster, fanart and even share it with others.
+- Random Play: Auto play any visible button in a random super long playlist.
+- Sorting: Sorted and Organized contents by ages, languages specific sorting are included.
+- Smart TV Mode: Auto play current button contents as a 40 items playlist, random is optional.
+- Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
+- YouTube search: Search any contents from YouTube, history included.
+    </description>
+	<description lang="he">מאפיינים:
+- המוזיקה שלי: צור כפתורים משלך ע"י הזנת קישורים מיו-טיוב.
+  בנוסף ניתן להוסיף לכפתורים: שם, תאור, תמונה, פאנארט ואפילו לשתף עם אנשים אחרים.
+- חיפוש יו-טיוב: מאפשר חיפוש תכנים מיו-טיוב, כולל רשימת היסטוריה.
+- מצב טלוויזיה חכם: ניגון אוטומטי של התכנים בכפתור הנבחר, עד 40 פריטים  שונים בפלייליסט אחד, אפשרות לאקראי.
+- מיון: תכנים ממויינים ומאורגנים לפי גיל, כולל מיון לפי שפה.
+- מעודפים: הוסף כל פריט קיים לכפתור הילדים שלי.
+- ניגון אקראי: ניגון אוטומטי של כל הכפתורים בחלון הנוכחי באקראי וברצף.
+- תכנים מגוונים ואין סופיים: תמיכה במגוון עצום של מקורות לתוכן בודד.
+- תפריטים אישיים: אפשרות ליצור פאנארט אישי לכל כפתור.
+	</description>
+    <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<forum></forum>
 	<email>featherence@groups.facebook.com</email>
-	<source></source>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.music</source>
 	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>

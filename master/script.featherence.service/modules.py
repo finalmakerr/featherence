@@ -277,10 +277,6 @@ def mode9(admin, name):
 		
 		dialogsubtitlesW = xbmc.getCondVisibility('Window.IsVisible(DialogSubtitles.xml)')
 		if dialogsubtitlesW:
-			if not controlgroup70hasfocus0 and not xbmc.getCondVisibility('System.GetBool(subtitles.pauseonsearch)'):
-				if systemidle3 and playerpaused: xbmc.executebuiltin('Action(Play)')
-				elif not systemidle3 and not playerpaused: xbmc.executebuiltin('Action(Pause)')
-				'''---------------------------'''
 			xbmc.sleep(1000)
 			'''---------------------------'''
 			count += 1
@@ -288,17 +284,13 @@ def mode9(admin, name):
 			else: countidle = 0
 			'''---------------------------'''
 	
-	systemidle1 = xbmc.getCondVisibility('System.IdleTime(1)')
-	systemidle7 = xbmc.getCondVisibility('System.IdleTime(7)')
-	
-	if systemidle1 and not systemidle7:
+	if xbmc.getCondVisibility('System.IdleTime(1)') and not xbmc.getCondVisibility('System.IdleTime(7)'):
 		'''------------------------------
 		---SET-NEW-SUBTITLE--------------
 		------------------------------'''
 		setProperty('TEMP2', localize(24110), type="home")
 		property_dialogsubtitles = xbmc.getInfoLabel('Window(home).Property(DialogSubtitles)')
-		setProperty('DialogSubtitles2', property_dialogsubtitles, type="home")
-		if property_dialogsubtitles2 != "": setSubHisotry(admin, property_dialogsubtitles, property_dialogsubtitles2, property_dialogsubtitlesna1, property_dialogsubtitlesna2, property_dialogsubtitlesna3, property_dialogsubtitlesna4, property_dialogsubtitlesna5, property_dialogsubtitlesna6, property_dialogsubtitlesna7, property_dialogsubtitlesna8, property_dialogsubtitlesna9, property_dialogsubtitlesna10)
+		if property_dialogsubtitles != "": setSubHisotry(admin, property_dialogsubtitles, property_dialogsubtitles2, property_dialogsubtitlesna1, property_dialogsubtitlesna2, property_dialogsubtitlesna3, property_dialogsubtitlesna4, property_dialogsubtitlesna5, property_dialogsubtitlesna6, property_dialogsubtitlesna7, property_dialogsubtitlesna8, property_dialogsubtitlesna9, property_dialogsubtitlesna10, subL)
 		if property_subtitleservice != controlgetlabel100 and controlgetlabel100 != "": setProperty('Subtitle_Service', controlgetlabel100, type="home")
 		'''---------------------------'''
 		
@@ -306,22 +298,21 @@ def mode9(admin, name):
 	setProperty('DialogSubtitles', "", type="home")
 	setProperty('TEMP2', "", type="home")
 	
-	playerpaused = xbmc.getCondVisibility('Player.Paused')
-	if playerpaused: xbmc.executebuiltin('Action(Play)')
+	if xbmc.getCondVisibility('Player.Paused'): xbmc.executebuiltin('Action(Play)')
 	'''---------------------------'''
 	
 	if property_dialogsubtitlesna6 and not property_dialogsubtitlesna7:
 		'''------------------------------
 		---SHOW-TIPS---------------------
 		------------------------------'''
-		playerpaused = xbmc.getCondVisibility('Player.Paused')
-		if not playerpaused: xbmc.executebuiltin('Action(Pause)')
+		if not xbmc.getCondVisibility('Player.Paused'): xbmc.executebuiltin('Action(Pause)')
 		header = '[COLOR=yellow]' + xbmc.getInfoLabel('$LOCALIZE[78946]') + '[/COLOR]'
 		message2 = xbmc.getInfoLabel('$LOCALIZE[78945]')
 		w = TextViewer_Dialog('DialogTextViewer.xml', "", header=header, text=message2)
 		w.doModal()
 		'''---------------------------'''
-		
+	
+	setProperty('DialogSubtitles',"",type="home")
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
@@ -329,23 +320,28 @@ def mode9(admin, name):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 
-def setSubHisotry(admin, property_dialogsubtitles, property_dialogsubtitles2, property_dialogsubtitlesna1, property_dialogsubtitlesna2, property_dialogsubtitlesna3, property_dialogsubtitlesna4, property_dialogsubtitlesna5, property_dialogsubtitlesna6, property_dialogsubtitlesna7, property_dialogsubtitlesna8, property_dialogsubtitlesna9, property_dialogsubtitlesna10):
-	if property_dialogsubtitles != "":
+def setSubHisotry(admin, property_dialogsubtitles, property_dialogsubtitles2, property_dialogsubtitlesna1, property_dialogsubtitlesna2, property_dialogsubtitlesna3, property_dialogsubtitlesna4, property_dialogsubtitlesna5, property_dialogsubtitlesna6, property_dialogsubtitlesna7, property_dialogsubtitlesna8, property_dialogsubtitlesna9, property_dialogsubtitlesna10, subL):
+	if property_dialogsubtitles != "" and not property_dialogsubtitles in subL:
 		for i in range(1,11):
 			if xbmc.getInfoLabel('Window(home).Property(DialogSubtitlesNA'+str(i)+')') == "":
 				setProperty('DialogSubtitlesNA' +str(i), property_dialogsubtitles, type="home")
 				break
 	
 	xbmc.sleep(1000)
-	setCurrent_Subtitle(admin, property_dialogsubtitles, property_dialogsubtitles2, property_dialogsubtitlesna1, property_dialogsubtitlesna2, property_dialogsubtitlesna3, property_dialogsubtitlesna4, property_dialogsubtitlesna5, property_dialogsubtitlesna6, property_dialogsubtitlesna7, property_dialogsubtitlesna8, property_dialogsubtitlesna9, property_dialogsubtitlesna10)
+	setCurrent_Subtitle(admin, property_dialogsubtitles, property_dialogsubtitles2, property_dialogsubtitlesna1, property_dialogsubtitlesna2, property_dialogsubtitlesna3, property_dialogsubtitlesna4, property_dialogsubtitlesna5, property_dialogsubtitlesna6, property_dialogsubtitlesna7, property_dialogsubtitlesna8, property_dialogsubtitlesna9, property_dialogsubtitlesna10, subL)
 	'''---------------------------'''
 	
-def setCurrent_Subtitle(admin, property_dialogsubtitles, property_dialogsubtitles2, property_dialogsubtitlesna1, property_dialogsubtitlesna2, property_dialogsubtitlesna3, property_dialogsubtitlesna4, property_dialogsubtitlesna5, property_dialogsubtitlesna6, property_dialogsubtitlesna7, property_dialogsubtitlesna8, property_dialogsubtitlesna9, property_dialogsubtitlesna10):
-	for i in range(0,11):
-		if i == 0: setProperty('DialogSubtitles', property_dialogsubtitles, type="home")
-		else: setProperty('DialogSubtitles' +str(i), xbmc.getInfoLabel('Window(home).Property(DialogSubtitlesNA'+str(i)+')'), type="home")
-		'''---------------------------'''
-		
+def setCurrent_Subtitle(admin, property_dialogsubtitles, property_dialogsubtitles2, property_dialogsubtitlesna1, property_dialogsubtitlesna2, property_dialogsubtitlesna3, property_dialogsubtitlesna4, property_dialogsubtitlesna5, property_dialogsubtitlesna6, property_dialogsubtitlesna7, property_dialogsubtitlesna8, property_dialogsubtitlesna9, property_dialogsubtitlesna10, subL):
+	setProperty('DialogSubtitles2', property_dialogsubtitles, type="home")
+	'''---------------------------'''
+
+def ClearSubHisotry():
+	setProperty('DialogSubtitles',"",type="home")
+	setProperty('DialogSubtitles2',"",type="home")
+	for i in range(1,11):
+		setProperty('DialogSubtitlesNA'+str(i),"",type="home")
+
+				
 def setPlayerInfo(admin):
 	type = None
 	videoplayercontentEPISODE = xbmc.getCondVisibility('VideoPlayer.Content(episodes)')
@@ -421,7 +417,9 @@ def mode10(admin, name, printpoint):
 		if xbmc.getInfoLabel('Window(home).Property(VideoPlayer.Title)') != "":
 			if xbmcaddon.Addon('script.featherence.service').getSetting('widget_enable') == 'true':
 				if not xbmc.getCondVisibility('IntegerGreatherThan(VideoPlayer.PlaylistLength,1)'):
-					printpoint = printpoint + "5"
+					pass #printpoint = printpoint + "5"
+		
+		ClearSubHisotry()
 		setProperty('mode10', "", type="home")
 		setProperty('VideoPlayer.Title', "", type="home")
 		if '5' in printpoint:
@@ -3202,6 +3200,8 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "scriptfeatherenceservice_random5" + space2 + scriptfeatherenceservice_random5
 			message = message + newline + "scriptfeatherenceservice_randomL" + space2 + str(scriptfeatherenceservice_randomL)
 			message = message + newline + '---------------------------'
+			#message = message + newline + "ListItem.Property(id)" + space2 + xbmc.getInfoLabel('Container(9000).ListItemNoWrap(0).Property(id)')
+			#message = message + newline + "ListItem.Property(id)" + space2 + xbmc.getInfoLabel('ListItem.Property(id)')
 			message = message + newline + "Button.ID" + space2 + property_buttonid
 			message = message + newline + "Button.ID_" + space2 + property_buttonid_
 			message = message + newline + "Button.Name" + space2 + property_buttonname
@@ -3221,6 +3221,7 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "property_mode10" + space2 + property_mode10
 			message = message + newline + "ViewsSettings" + space2 + xbmc.getInfoLabel('Window(home).Property(ViewsSettings)')
 			message = message + newline + '---------------------------'
+			message = message + newline + "SelectedColor" + space2 + xbmc.getInfoLabel('Window(home).Property(SelectedColor)')
 			message = message + newline + "ListItemYear" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemYear)')
 			message = message + newline + "ListItemGenre" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemGenre)')
 			message = message + newline + "ListItemRating" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemRating)')

@@ -710,7 +710,7 @@ msgstr "בחר "כן" להמשך"
 
 msgctxt "#32099
 msgid "Watch varied of videos about %s."
-msgstr "צפה במגוון תכנים בנושא -%s".
+msgstr "צפה במגוון תכנים בנושא -%s."
 
 msgctxt "#32100
 msgid "Your email provider isn't supported."
