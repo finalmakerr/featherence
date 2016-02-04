@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-  <include description="KILLALL ERROR" file="Includes_Variables.xml" />
-  <include description="ok!"  file="Defaults.xml" />
-  <include description="ok!" file="Includes_Animation.xml" />  
-  <include description="ok!" file="Includes_Buttons.xml" />  
-  <include description="ok!" file="Includes_Forms.xml" />  
-  <include description="" file="Includes_Home.xml" />
-  <include description="" file="Includes_HomeContent.xml" />
-  <include description="ok!" file="Includes_Shelf.xml" />
-  <include description="KILLALL ERROR" file="Includes_Small.xml" />
-  <include description="ok!" file="Includes_Genre.xml" />
-  <include description="" file="Includes_Variables_label2.xml" />
-  <include description="" file="Includes_Settings.xml" />
-  <include description="" file="Includes_SettingsContent.xml" />
-  <include description="" file="Includes_SubContent.xml" />
-  <include description="תפריט אמצעי - עיצוב" file="Includes_CenterMenu.xml" />
-  <include description="תפריט אמצעי - תוכן" file="Includes_CenterMenuContent.xml" />
-  <include description="תפריט וידגט - עיצוב" file="Includes_Widget.xml" />
-  <include description="תפריט וידגט - תוכן" file="Includes_WidgetContent.xml" />
-  <include description="דיאלוג - עיצוב" file="Includes_DialogMenu.xml" />
-  <include description="דיאלוג - תוכן" file="Includes_DialogMenuContent.xml" />
-  <include description="תפריט שמאל" file="Includes_LeftMenu.xml" />
-  <include description="תצוגות" file="Includes_Views.xml" />
-  <include description="תצוגות" file="PVRviews.xml" />
+  <include file="Defaults.xml" />
+  <include file="Includes_Animation.xml" />  
+  <include file="Includes_Backgrounds.xml" />
+  <include file="Includes_Buttons.xml" />  
+  <include file="Includes_CenterMenu.xml" />
+  <include file="Includes_CenterMenuContent.xml" />
+  <include file="Includes_DialogMenu.xml" />
+  <include file="Includes_DialogMenuContent.xml" />
+  <include file="Includes_Forms.xml" />  
+  <include file="Includes_Home.xml" />
+  <include file="Includes_HomeContent.xml" />
   
-  <!--<include condition="true" file="script-skinshortcuts-includes.xml"/>--> <!--Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)-->
-  
-  <!--<constant name="IconCrossfadeTime">400</constant>-->
+  <include file="Includes_Genre.xml" />
+  <include file="Includes_LeftMenu.xml" />
+  <include file="Includes_Settings.xml" />
+  <include file="Includes_SettingsContent.xml" />
+  <include file="Includes_Shelf.xml" />
+  <include file="Includes_Small.xml" />
+  <include file="Includes_SubContent.xml" />
+  <include file="Includes_Widget.xml" />
+  <include file="Includes_WidgetContent.xml" />
+  <include file="Includes_Variables.xml" />
+  <include file="Includes_Variables_label2.xml" />
+  <include file="Includes_Views.xml" />
+  <include file="PVRviews.xml" />
+
   <include name="PVRinfos">
 	  <control type="image">
         <description>background image</description>
@@ -688,7 +687,7 @@
 			  <width>650</width>
 			  <height>115</height> <!--130-->
 			  <label>$VAR[TopVideoInformation5]</label>
-			  <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
+			  <visible>!Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(FileBrowser.xml)</visible>
 			</control>
 			<control type="textbox" description="פרטי סרט">
 			  <textcolor>white</textcolor>

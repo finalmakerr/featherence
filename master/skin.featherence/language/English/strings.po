@@ -302,36 +302,36 @@ msgid ""
 msgstr ""
 
 msgctxt "#31091
-msgid ""
-msgstr ""
+msgid "Choose this option in order to display fanart for sub menus's buttons."
+msgstr "בחר באפשרות זו בכדי לאפשר בחירה והצגת רקעים עבור כפתורים בתפריט משני."
 
 msgctxt "#31092
-msgid ""
-msgstr ""
+msgid "Reshape icons"
+msgstr "חיתוך סמלים לפי צורה"
 
 msgctxt "#31093
-msgid ""
-msgstr ""
+msgid "Choose this option in order to change the shape of yours icons to match your choosen button's shapes."
+msgstr "בחר באפשרות זו בכדי לחתוך סמלים מצורתם המקורית לצורה בה בחרת."
 
 msgctxt "#31094
-msgid ""
-msgstr ""
+msgid "Reposition"
+msgstr "מיקום"
 
 msgctxt "#31095
-msgid ""
-msgstr ""
+msgid "Choose this option in order to change the position for"
+msgstr "בחר באפשרות זו בכדי לשנות מיקום עבור"
 
 msgctxt "#31096
-msgid ""
-msgstr ""
+msgid "[CR][COLOR=green]Note: This option take effect on the entire skin.[/COLOR]"
+msgstr "[CR][COLOR=green]שים לב: הגדרה זו משפיעה על המעטפת כולה.[/COLOR]"
 
 msgctxt "#31097
-msgid ""
-msgstr ""
+msgid "Choose this option in order to change the shapes of the buttons."
+msgstr "בחר באפשרות זו בכדי לשנות את צורת הכפתורים."
 
 msgctxt "#31098
-msgid ""
-msgstr ""
+msgid "Fanart Transperancy"
+msgstr "שקיפות פאנארט"
 
 msgctxt "#31099
 msgid ""

@@ -262,7 +262,6 @@
 	  <visible>[!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))] + !StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	  <visible description="Label2">![!IsEmpty(ListItem.Label2) + !StringCompare(ListItem.Label2,0 B) + !Window.IsVisible(MyVideoNav.xml)]</visible>
 	  <visible description="Progress">![IsEmpty(ListItem.ChannelNumber) + !IsEmpty(ListItem.Progress)]</visible>
-	  <!--<visible>![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-3).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating) | !IsEmpty(Container.ListItemNoWrap(2).Rating) | !IsEmpty(Container.ListItemNoWrap(3).Rating)]]</visible>-->
 	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + !IsEmpty(ListItem.Property(UnWatchedEpisodes))] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
     </control>
   </include>

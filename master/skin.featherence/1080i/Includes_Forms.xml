@@ -498,6 +498,119 @@
 	</definition>
   </include>
   
+  <include name="Buttons_Icon" description="Layouts">
+	<param name="color" default=""/>
+	<param name="height" default="0"/>
+	<param name="posx" default="0"/>
+	<param name="posy" default="0"/>
+	<param name="width" default="0"/>
+	
+	<param name="condition" default="true"/>
+	<param name="type0" default="true" description="UnFocus"/>
+	<param name="type1" default="false" description="Focus"/>
+	<definition>
+		<control type="group">
+		  <height>$PARAM[height]</height>
+		  <posx>$PARAM[posx]</posx>
+		  <posy>$PARAM[posy]</posy>
+		  <width>$PARAM[width]</width>
+		  <visible>$PARAM[condition]</visible>
+		  <visible>!IsEmpty(ListItem.Thumb)</visible>
+		  <include condition="$PARAM[type0]">Fade_IconOverlayButton</include>
+		  <include condition="!Skin.String(MenuDesign) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)">Slide_MenuDesign_Home_Icons</include>
+		  <include condition="Skin.String(MenuDesign,4)">Slide_MenuDesign2_Home_Icons</include>
+		  <include condition="Skin.String(MenuDesign,4) + $PARAM[type1]">Slide_MenuDesign2_Home_Icons2</include>
+		  
+		  <control type="group">
+			  <visible>!Skin.HasSetting(ReshapeIcons)</visible>
+			  <control type="image">
+			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+			    <aspectratio>keep</aspectratio>
+				<texture colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
+				<visible>!Skin.String(ButtonsDesign)</visible>
+			  </control>
+			  <control type="image">
+			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+			    <aspectratio>keep</aspectratio>
+				<texture colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
+				<visible>Skin.String(ButtonsDesign,0)</visible>
+			  </control>
+			  <control type="image">
+			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+				<aspectratio>keep</aspectratio>
+				<texture colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
+				<visible>Skin.String(ButtonsDesign,1)</visible>
+			  </control>
+			  <control type="image">
+			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+				<aspectratio>keep</aspectratio>
+				<texture colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
+				<visible>Skin.String(ButtonsDesign,2)</visible>
+			  </control>
+			  <control type="image">
+			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+				<aspectratio>keep</aspectratio>
+				<texture colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
+				<visible>Skin.String(ButtonsDesign,3)</visible>
+			  </control>
+			  <control type="image">
+			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+				<aspectratio>keep</aspectratio>
+				<texture colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
+				<visible>Skin.String(ButtonsDesign,4)</visible>
+			  </control>
+		  </control>
+		  
+		  <control type="group">
+			  <visible>Skin.HasSetting(ReshapeIcons)</visible>
+			  <control type="image">
+			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+				<aspectratio>keep</aspectratio>
+				<texture diffuse="buttons/types/bd.png" colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
+				<visible>!Skin.String(ButtonsDesign)</visible>
+			  </control>
+			  <control type="image">
+			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+				<aspectratio>keep</aspectratio>
+				<texture diffuse="buttons/types/bd0.png" colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
+				<visible>Skin.String(ButtonsDesign,0)</visible>
+			  </control>
+			  <control type="image">
+			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+				<aspectratio>keep</aspectratio>
+				<texture diffuse="buttons/types/bd1.png" colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
+				<visible>Skin.String(ButtonsDesign,1)</visible>
+			  </control>
+			  <control type="image">
+			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+				<aspectratio>keep</aspectratio>
+				<texture diffuse="buttons/types/bd2.png" colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
+				<visible>Skin.String(ButtonsDesign,2)</visible>
+			  </control>
+			  <control type="image">
+			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+				<aspectratio>keep</aspectratio>
+				<texture diffuse="buttons/types/bd3.png" colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
+				<visible>Skin.String(ButtonsDesign,3)</visible>
+			  </control>
+			  <control type="image">
+			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+				<aspectratio>keep</aspectratio>
+				<texture diffuse="buttons/types/bd4.png" colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
+				<visible>Skin.String(ButtonsDesign,4)</visible>
+			  </control>
+		  </control>
+		  
+		  
+		</control>
+	</definition>
+  </include>
+  
+  <include name="MenuDesign4_Icon">
+	<include description="משולשים/משושים" condition="Skin.String(MenuDesign,4) + [Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)]">ImageC1</include>
+	<include condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)">ImageR1</include>
+	<include condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)">ImageL1</include>
+  </include>
   <include name="Control_Pos1" description="50/55/58">
 	<posx>0</posx>
 	<posy>0</posy>

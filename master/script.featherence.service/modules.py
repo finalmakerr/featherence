@@ -372,6 +372,7 @@ def setPlayerInfo(admin):
 			elif seasonN > 10 and episodeN > 10: input = videoplayertvshowtitle + " " + 'S' + videoplayerseason + 'E' + videoplayerepisode
 			elif seasonN > 10 and episodeN < 10: input = videoplayertvshowtitle + " " + 'S' + videoplayerseason + 'E0' + videoplayerepisode
 			elif seasonN < 10 and episodeN > 10: input = videoplayertvshowtitle + " " + 'S0' + videoplayerseason + 'E' + videoplayerepisode
+			else: input = playertitle
 			'''---------------------------'''
 		else: input = playertitle
 		
@@ -2734,8 +2735,9 @@ def mode210(value, admin, name, printpoint):
 					setSkinSetting('0','label'+x,label_T.get('label'+y))
 					setSkinSetting('0','action'+x,str(action_T.get('action'+y)))
 					setSkinSetting('0','icon'+x,str(icon_T.get('icon'+y)))
+					setSkinSetting('0','background'+x,str(backgroundT.get('background'+y)))
 					
-					#extra = extra + newline + label_T.get('label'+y)
+					#extra = extra + newline + label_T.get('label'+y)	
 					#extra = extra + newline + 'label_' + space2 + label_
 					#extra = extra + newline + action_T.get('action'+y)
 					#extra = extra + newline + icon_T.get('icon'+y)
@@ -3406,6 +3408,7 @@ def mode233(value, admin, name, printpoint):
 	printpoint = ""
 	x = "" ; y = property_buttonid_ ; path = "" ; x2_ = ""
 	if '0' in value:
+		printpoint = printpoint + '0'
 		y = property_subbuttonid_
 		value = value.replace('0',"",1)
 	
@@ -3413,7 +3416,7 @@ def mode233(value, admin, name, printpoint):
 		'''Add-Fanart'''
 		name = localize(20441)
 		x = 'background'
-		y = property_buttonid
+		if not '0' in printpoint: y = property_buttonid
 		nolabel=localize(20438)
 		yeslabel=localize(20441)
 	
@@ -3481,7 +3484,10 @@ def mode235(value, admin, name, printpoint):
 	------------------------------'''
 	if property_temp == 'background':
 		printpoint = printpoint + '1'
-		if property_buttonid != "":
+		if property_subbuttonid_ != "":
+			printpoint = printpoint + '4'
+			setSkinSetting('0',property_temp+str(property_subbuttonid_),"")
+		elif property_buttonid != "":
 			setSkinSetting('0',property_temp+str(property_buttonid),"")
 			printpoint = printpoint + '2'
 			'''---------------------------'''
@@ -3489,8 +3495,7 @@ def mode235(value, admin, name, printpoint):
 		printpoint = printpoint + '3'
 		if property_subbuttonid_ != "":
 			printpoint = printpoint + '4'
-			setSkinSetting('0',property_temp+str(property_buttonid_)+'_'+str(property_subbuttonid_),"")
-			mode215(property_subbuttonid_, admin, '', '')
+			setSkinSetting('0',property_temp+str(property_subbuttonid_),"")
 		elif property_buttonid_ != "":
 			printpoint = printpoint + '5'
 			setSkinSetting('0',property_temp+str(property_buttonid_),"")

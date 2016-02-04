@@ -94,7 +94,7 @@
   </variable>
   <variable name="TopBackgroundColor" description="בחירת צבע רקע עליון">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),TopBackgroundColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
-    <value condition="!Skin.String(TopBackgroundColor)" description="ברירת מחדל-white smoke(100%)">fff5f5f5</value>
+    <value condition="!Skin.String(TopBackgroundColor)" description="">00FFFFFF</value>
 	<value condition="Skin.String(TopBackgroundColor)" description="מותאם אישי">$INFO[Skin.String(TopBackgroundColor)]</value>
   </variable>
   <variable name="TopInformationColor" description="בחירת צבע פס עליון">
@@ -266,7 +266,7 @@
 	<value condition="Skin.String(MainBackgroundTexture,5)">backgrounds/BackgroundTexture5.png</value>
   </variable>
   <variable name="TopBackgroundTexture">
-	<value condition="!Skin.String(TopBackgroundTexture)">backgrounds/BackgroundTexture5.png</value>
+	<value condition="!Skin.String(TopBackgroundTexture)"></value>
 	<value condition="Skin.String(TopBackgroundTexture,1)">backgrounds/BackgroundTexture.png</value>
 	<value condition="Skin.String(TopBackgroundTexture,2)">backgrounds/BackgroundTexture2.png</value>
 	<value condition="Skin.String(TopBackgroundTexture,3)">backgrounds/BackgroundTexture3.png</value>
@@ -669,84 +669,11 @@
 	  <value condition="StringCompare(Window(home).Property(tips),29)">[B]Random Design[/B][CR]Did you know?[CR]You can randomize your skin design to see a wide range of options in no time.</value>
 	  <value condition="StringCompare(Window(home).Property(tips),30)">[B]Have an idea for new addon?:[/B][CR]Is it that great?[CR]Come and share it with us![CR]send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>
 	</variable>
-	<variable name="background">
-	    <value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(1) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.1.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(2) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.2.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(3) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.3.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(4) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.4.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(5) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.5.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(6) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.6.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(7) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.7.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(8) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.8.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(9) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.9.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(10) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.10.Art(fanart))]</value>
-		
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(1) + Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RandomMovie.1.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(2) + Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RandomMovie.2.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(3) + Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RandomMovie.3.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(4) + Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RandomMovie.4.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(5) + Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RandomMovie.5.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(6) + Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RandomMovie.6.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(7) + Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RandomMovie.7.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(8) + Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RandomMovie.8.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(9) + Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RandomMovie.9.Art(fanart))]</value>
-		<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(10) + Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RandomMovie.10.Art(fanart))]</value>
-		
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(1) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.1.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(2) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.2.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(3) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.3.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(4) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.4.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(5) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.5.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(6) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.6.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(7) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.7.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(8) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.8.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(9) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.9.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(10) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.10.Art(tvshow.fanart))]</value>
-		
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(1) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(2) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.2.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(3) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.3.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(4) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.4.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(5) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.5.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(6) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.6.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(7) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.7.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(8) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.8.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(9) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.9.Art(tvshow.fanart))]</value>
-		<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(10) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.10.Art(tvshow.fanart))]</value>
-		
-		<value condition="StringCompare(Window(home).Property(Button.ID),18) | Window.IsVisible(DialogAddonSettings.xml)">$VAR[background18]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),19)">$VAR[background19]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),90)">$VAR[background90]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),91)">$VAR[background91]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),92)">$VAR[background92]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),93)">$VAR[background93]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),94)">$VAR[background94]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),95)">$VAR[background95]</value>		
-		<value condition="StringCompare(Window(home).Property(Button.ID),96)">$VAR[background96]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),97)">$VAR[background97]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),98)">$VAR[background98]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),99)">$VAR[background99]</value>
-		
-		<value condition="StringCompare(Window(home).Property(Button.ID),100)">$VAR[background100]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),101)">$VAR[background101]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),102)">$INFO[Skin.String(background102)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),103)">$INFO[Skin.String(background103)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),104)">$INFO[Skin.String(background104)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),105)">$INFO[Skin.String(background105)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),106)">$INFO[Skin.String(background106)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),107)">$INFO[Skin.String(background107)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),108)">$INFO[Skin.String(background108)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),109)">$INFO[Skin.String(background109)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),110)">$INFO[Skin.String(background110)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),111)">$INFO[Skin.String(background111)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),112)">$INFO[Skin.String(background112)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),113)">$INFO[Skin.String(background113)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),114)">$INFO[Skin.String(background114)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),115)">$INFO[Skin.String(background115)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),116)">$INFO[Skin.String(background116)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),117)">$INFO[Skin.String(background117)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),118)">$INFO[Skin.String(background118)]</value>
-		<value condition="StringCompare(Window(home).Property(Button.ID),119)">$INFO[Skin.String(background119)]</value>
+	<variable name="DialogSelectTitle">
+	  <value condition="Control.IsVisible(3) + !IsEmpty(Contol.GetLabel(1)">$INFO[Control.GetLabel(1)] ($INFO[Container(3).NumItems])</value>
+	  <value condition="Control.IsVisible(6) + !IsEmpty(Contol.GetLabel(1)">$INFO[Control.GetLabel(1)] ($INFO[Container(6).NumItems])</value>
+	  <value condition="Control.IsVisible(3) + IsEmpty(Contol.GetLabel(1)">$LOCALIZE[79060] ($INFO[Container(3).NumItems])</value>
+	  <value condition="Control.IsVisible(6) + IsEmpty(Contol.GetLabel(1)">$LOCALIZE[79060] ($INFO[Container(6).NumItems])</value>
 	</variable>
 	<variable name="ManualColor">
 	  <value condition="!IsEmpty(Window(home).Property(SelectedColor))">$INFO[Window(home).Property(SelectedColor)]</value>
@@ -755,17 +682,5 @@
 	<variable name="colorTopVideoInformation3">
 	  <value condition="Skin.HasSetting(Rating)">red</value>
 	  <value></value>
-	</variable>
-	<variable name="background2">
-		<value description="הגדרות" condition="Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SkinSettings.xml)">$VAR[background18]</value>
-		<value description="ערוצי טלוויזיה" condition="Window.IsVisible(MyPVRChannels.xml) | SubString(Container.FolderPath,plugin://plugin.video.israelive)">$VAR[background92]</value>
-		<value description="ילדים" condition="SubString(Container.FolderPath,plugin://plugin.video.featherence.kids)">$VAR[background93]</value>
-		<value description="מוזיקה" condition="Window.IsVisible(MyMusicNav.xml) | Window.IsVisible(MyMusicSongs.xml)">$VAR[background94]</value>
-		<value description="מעודפים" condition="Window.IsVisible(DialogFavourites.xml)">$VAR[background95]</value>
-		<value description="תמונות" condition="Window.IsVisible(MyPics.xml) + false">$VAR[background96]</value>
-		<value description="מזג אוויר" condition="Window.IsVisible(MyWeather.xml)">$VAR[background97]</value>
-		<value description="משחקים" condition="Window.IsVisible(MyPrograms.xml) + SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher)">$VAR[background98]</value>
-		<value description="דוקו" condition="[SubString(Container.FolderPath,plugin://plugin.video.movixws/?) + SubString(Container.FolderPath,name=Documentary)]">$VAR[background99]</value>
-		<value condition="Skin.HasSetting(PosterFanart) + StringCompare(Container.Viewmode,$LOCALIZE[31011])">$INFO[ListItem.Thumb]</value>
 	</variable>
 </includes>

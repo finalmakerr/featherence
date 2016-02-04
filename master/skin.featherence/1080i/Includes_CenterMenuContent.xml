@@ -74,10 +74,11 @@
 		<label>$LOCALIZE[70006]</label>
 		<textoffsetx>15</textoffsetx>
 		<onclick condition="!IsEmpty(Window(home).Property(Button.ID))">SetProperty(TEMP,background,home)</onclick>
-		<onclick condition="!IsEmpty(Window(home).Property(Button.ID))">RunScript(script.featherence.service,,?mode=233&amp;value=1)</onclick>
+		<onclick condition="!Window.IsVisible(Custom1138.xml) + !IsEmpty(Window(home).Property(Button.ID))">RunScript(script.featherence.service,,?mode=233&amp;value=1)</onclick>
+		<onclick condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(SubButton.ID_))">RunScript(script.featherence.service,,?mode=233&amp;value=01)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/paintbucket.png</thumb>
-		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
+		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) | Window.IsVisible(Custom1139.xml) + Skin.HasSetting(SubBackground)</visible>
 	  </item>
 	  <item id="709" description="רקע אקראי">
 		<label>$VAR[label709] - $VAR[Button708]</label>

@@ -1806,6 +1806,9 @@ elif mode >= 200 and mode <= 249:
 											x = icon_T.get('icon'+str(i)+'_'+str(i2))
 											x2, x2_ = TranslatePath(x)
 											formula, custommediaL, = GeneratePath('icon'+str(i)+'_'+str(i2)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"])
+											x = backgroundT.get('background'+str(i)+'_'+str(i2))
+											x2, x2_ = TranslatePath(x)
+											formula, custommediaL, = GeneratePath('background'+str(i)+'_'+str(i2)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"])
 								else: extra = extra + newline + 'label not exists!' + space + 'x' + space2 + str(x)
 							else: extra = extra + newline + 'id not exists!' + space + 'x' + space2 + str(x)
 						Custom1000(str(list[returned]),50,str(list2[returned2]),5)
@@ -1975,7 +1978,7 @@ elif mode >= 200 and mode <= 249:
 						folder_ = 'Featherence'
 						path_ = os.path.join(featherenceserviceaddondata_media_path, folder_, '')
 						if os.path.exists(path_):
-							returned_ = dialogyesno('%s Folder found!' % (folder_), 'Choose YES to proceed (Optional)')
+							returned_ = dialogyesno('Extras folder found!', 'Choose YES to proceed (Optional)')
 							if returned_ != 'skip':
 								copyfiles(path_, home_path)
 								removefiles(path_)

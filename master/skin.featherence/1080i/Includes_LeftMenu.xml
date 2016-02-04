@@ -228,6 +228,7 @@
 		  <onclick condition="Skin.String(Background2Overlay, 30)">Skin.SetString(Background2Overlay, 20)</onclick>
 		  <onclick condition="Skin.String(Background2Overlay, 20)">Skin.SetString(Background2Overlay, 10)</onclick>
 		  <onclick condition="Skin.String(Background2Overlay, 10)">Skin.SetString(Background2Overlay, )</onclick>
+		  <!--<onclick>AlarmClock(update,Container.Update($INFO[Container.FolderPath],replace),0,silent)</onclick>-->
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 		<control type="radiobutton" id="139" description="פאנארט תמיד">
@@ -456,7 +457,7 @@
 	  <control type="group">
 		  <animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 		  <include name="MenuBackground">
-			<param name="border" value="40" />
+			<param name="border" value="30" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="672" />
 			<param name="posx" value="0" />
@@ -473,12 +474,12 @@
 		<posx>20</posx>
 		<posy>0</posy>
         <width>540</width>
-		<visible>Skin.HasSetting(Admin) | !StringCompare(Control.GetLabel(1),Genesis)</visible>
+		<visible>false</visible>
       </control>
 	  <control type="label" id="100" description="כותרת">
         <animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="slide" start="0,0" end="165,0">Conditional</animation>
 		<include>LabelC12</include>
-		<label>$LOCALIZE[79060] ($INFO[Container(3).NumItems])</label>
+		<label>$VAR[DialogSelectTitle]</label>
 		<posx>20</posx>
 		<posy>0</posy>
         <width>540</width>
@@ -499,7 +500,7 @@
 			  <animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 			  <include name="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="40" />
+				<param name="border" value="30" />
 				<param name="color" value="$VAR[ButtonUnFocusColor]" />
 				<param name="height" value="66" />
 				<param name="posx" value="-30" />
@@ -513,21 +514,19 @@
               <height>70</height>
               <textcolor>white</textcolor>
 			  <scroll>false</scroll>
-              <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
+              <include condition="true">LabelL1</include>
 			  <label>$INFO[ListItem.Label]</label>
 			  <selectedcolor>yellow</selectedcolor>
 			  <visible>!IsEmpty(ListItem.Label)</visible>
 			  <visible>!StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
             </control>
 			<control type="label" description="שם (רחב)">
-              <posx>-30</posx>
+              <posx>45</posx>
               <width>870</width>
               <height>70</height>
               <textcolor>white</textcolor>
 			  <scroll>false</scroll>
-              <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
+              <include condition="true">LabelL1</include>
 			  <label>$INFO[ListItem.Label]</label>
 			  <selectedcolor>yellow</selectedcolor>
 			  <visible>!IsEmpty(ListItem.Label)</visible>
@@ -539,7 +538,7 @@
 			  <animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 			  <include name="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="40" />
+				<param name="border" value="30" />
 				<param name="color" value="$VAR[ButtonFocusColor]" />
 				<param name="height" value="66" />
 				<param name="posx" value="-30" />
@@ -555,22 +554,20 @@
               <textcolor>white2</textcolor>
 			  <scroll>true</scroll>
 			  <scrollspeed>150</scrollspeed>
-              <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
+              <include condition="true">LabelL1</include>
 			  <label>$INFO[ListItem.Label]</label>
 			  <visible>!IsEmpty(ListItem.Label)</visible>
 			  <visible>!StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
             </control>
 			<control type="label" description="שם (רחב)">
-              <posx>-30</posx>
+              <posx>45</posx>
               <width>870</width>
               <height>70</height>
 			  <selectedcolor>yellow</selectedcolor>
               <textcolor>white2</textcolor>
 			  <scroll>true</scroll>
 			  <scrollspeed>150</scrollspeed>
-              <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
+              <include condition="true">LabelL1</include>
 			  <label>$INFO[ListItem.Label]</label>
 			  <visible>!IsEmpty(ListItem.Label)</visible>
 			  <visible>StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
@@ -588,12 +585,12 @@
         <ondown>6</ondown>	
 		<pagecontrol>60</pagecontrol>
 		<posy>70</posy>
-		<itemlayout description="()" height="60" width="580">
+		<itemlayout description="()" height="60" width="870">
 		    <control type="group">
 			  <animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 			  <include name="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="40" />
+				<param name="border" value="30" />
 				<param name="color" value="$VAR[ButtonUnFocusColor]" />
 				<param name="condition" default="true"/>
 				<param name="height" value="70" />
@@ -603,28 +600,26 @@
 			  </include>
 			</control>
 			<control type="label" description="שם">
-              <posx>45</posx>
+              <posx>95</posx>
               <width>520</width>
-              <height>66</height>
+              <height>70</height>
               <textcolor>white</textcolor>
 			  <scroll>false</scroll>
-              <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
+              <include condition="true">LabelL1</include>
 			  <label>$INFO[ListItem.Label]</label>
 			  <visible>!IsEmpty(ListItem.Label)</visible>
 			  <visible>!StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
             </control>
 			<control type="label" description="שם (רחב)">
-              <posx>-30</posx>
+              <posx>95</posx>
               <width>520</width>
               <height>66</height>
               <textcolor>white</textcolor>
 			  <scroll>false</scroll>
-              <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
+              <include condition="true">LabelL1</include>
 			  <label>$INFO[ListItem.Label]</label>
 			  <visible>!IsEmpty(ListItem.Label)</visible>
-			  <visible>!StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
+			  <visible>StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
             </control>
             <control type="image">
               <posx>35</posx>
@@ -636,12 +631,12 @@
               <aspectratio>keep</aspectratio>
             </control>
 		</itemlayout>
-        <focusedlayout description="()" height="60" width="580">
+        <focusedlayout description="()" height="60" width="870">
 			<control type="group">
 			  <animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 			  <include name="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="40" />
+				<param name="border" value="30" />
 				<param name="color" value="$VAR[ButtonFocusColor]" />
 				<param name="height" value="70" />
 				<param name="posx" value="-30" />
@@ -655,8 +650,7 @@
               <height>70</height>
               <textcolor>yellow</textcolor>
 			  <scroll>true</scroll>
-              <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
+			  <include condition="true">LabelL1</include>
 			  <label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
 			  <visible>!IsEmpty(ListItem.Label)</visible>
 			  <visible>!StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
@@ -668,8 +662,7 @@
               <font>size28</font>
               <textcolor>yellow</textcolor>
 			  <scroll>true</scroll>
-              <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
+              <include condition="true">LabelL1</include>
 			  <label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
 			  <visible>!IsEmpty(ListItem.Label)</visible>
 			  <visible>StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
@@ -698,6 +691,7 @@
         </focusedlayout>        		
 	  </control>
 	  <control type="grouplist" id="30" description="Button 5">
+		<animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 		<posx>0</posx>
 	    <posy>520</posy>
 		<height>200</height>
@@ -706,79 +700,49 @@
 		<onright>3</onright>
 		<onup>6</onup>
 		<ondown>6</ondown>
-		<animation condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 		<visible>Control.IsVisible(5) | Control.IsVisible(1265) | Control.IsVisible(1266) | Control.IsVisible(1267)</visible>
 		<control type="button" id="5" description="Manual Get more button">
 			<width>580</width>
-			<include>ButtonR1</include>
+			<include condition="true">LabelL1</include>
 			<height>66</height>
 			<label>-</label>
-			<onleft>3</onleft>
-			<onright>3</onright>
-			<onup>6</onup>
-			<ondown>6</ondown>
-			<posx>-30</posx>
+			<textoffsetx>45</textoffsetx>
 		</control>
 		<control type="button" id="1265" description="עוד...">
 			<width>580</width>
-			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-			<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<include condition="true">LabelL1</include>
 			<font>size28</font>
 			<height>66</height>
 			<label>$LOCALIZE[22082]</label>
 			<onclick>RunScript(script.featherence.service,,?mode=70&amp;value=3)</onclick>
-			<onleft>3</onleft>
-			<onright>3</onright>
-			<onup>6</onup>
-			<ondown>6</ondown>
-			<posx>10</posx>
+			<textoffsetx>45</textoffsetx>
 			<visible>!IsEmpty(Window(home).Property(TEMP)) + Window.IsVisible(DialogVideoInfo.xml)</visible>
 		</control>
 		<control type="button" id="1266" description="מקורות מדיה">
 			<width>580</width>
-			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-			<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<include condition="true">LabelL1</include>
 			<font>size28</font>
 			<height>66</height>
 			<label>$LOCALIZE[22082]</label>
 			<onclick>Close</onclick>
 			<onclick>ActivateWindow(AddonBrowser,root)</onclick>
-			<onleft>3</onleft>
-			<onright>3</onright>
-			<onup>6</onup>
-			<ondown>6</ondown>
-			<posx>-30</posx>
+			<textoffsetx>45</textoffsetx>
 			<visible>Window.IsVisible(CustomHomeCustomizer.xml) + !Control.IsVisible(5) + !Control.IsVisible(1265)</visible>
 			<visible>Control.IsVisible(6) + StringCompare(Control.GetLabel(1),$LOCALIZE[20094])</visible>
 		</control>
 	    <control type="button" id="1267" description="גודל">
 			<width>580</width>
-			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-			<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-			<font>size28</font>
 			<height>66</height>
+			<textoffsetx>45</textoffsetx>
+			<include condition="true">LabelL1</include>
+			<font>size28</font>
 			<label>$LOCALIZE[22031]</label>
-			<onclick condition="StringCompare(Window(home).Property(DialogSelect.Wide),0) | IsEmpty(Window(home).Property(DialogSelect.Wide))">SetProperty(DialogSelect.Wide,1,home)</onclick>
+			<onclick condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">SetProperty(DialogSelect.Wide,1,home)</onclick>
 			<onclick condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ClearProperty(DialogSelect.Wide,home)</onclick>
-			<onleft>3</onleft>
-			<onright>3</onright>
-			<onup>6</onup>
-			<ondown>6</ondown>
-			<posx>10</posx>
-			<!--<visible>!StringCompare(Control.GetLabel(1),Choose shortcut)</visible>-->
+			<visible>!StringCompare(Control.GetLabel(1),Choose shortcut) | StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
+			<visible>!Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		</control>
-		
 	  </control>
-        <control type="image" description="loopnf">
-			<include>Fade4</include>
-			<aspectratio>keep</aspectratio>
-			<posx>35</posx>
-			<posy>11</posy>
-			<height>60</height>
-			<texture>special://home/addons/script.featherence.service/resources/icons/se.png</texture>
-			<width>60</width>
-			<visible>Control.IsVisible(5) + !Window.IsVisible(DialogMediaFilter.xml) + !Window.IsVisible(Settings.xml) + !Window.IsVisible(SettingsCategory.xml)</visible>
-        </control>
     </control>
   </include>
   

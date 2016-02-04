@@ -12,7 +12,7 @@
 		<param name="posx" value="0" />
 		<param name="posy" value="0" />
 		<param name="width" value="640" />
-		<param name="condition" value="!Control.IsVisible(1500)"/>
+		<param name="condition" value="true"/>
 		
 		<param name="type0" value="false" description="MenuBackground"/>
 		<param name="type1" value="true" description="DialogBackground"/>
@@ -39,9 +39,7 @@
 		<width>600</width>
 		  <include condition="Window.IsVisible(DialogYesNo.xml)">BottomMenuDialogYesNo</include>
 		  <include condition="Window.IsVisible(DialogOK.xml)">BottomMenuDialogOk</include>
-		  <include condition="Window.IsVisible(DialogBusy.xml)">BottomMenuDialogBusy</include>
-		  
-		  
+		  <include condition="Window.IsVisible(DialogBusy.xml)">BottomMenuDialogBusy</include>	  
 		  <include condition="Window.IsVisible(DialogProgress.xml)">BottomMenuDialogProgress</include>
 	  </control>
 	</control>

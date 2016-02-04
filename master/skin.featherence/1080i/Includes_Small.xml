@@ -172,38 +172,6 @@
 	  <include>Slide1.5</include>
 	  <height>552</height>
 	  <width>1920</width>
-	  <control type="image" description="צבע (רקע עליון)">
-		<include>Fade_TopMainBackgroundOverlay</include>
-		<include condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]">Control_Pos42</include>
-		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,0" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-270,0" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="270,0" time="0">Conditonal</animation>
-		<aspectratio>stretch</aspectratio>
-		<posx>-15</posx>
-		<posy>-7</posy>
-		<width>1950</width>
-		<include condition="Skin.String(MenuDesign,4)">Control_Pos43</include>
-		<height>564</height>
-		
-		<texture border="40" colordiffuse="$VAR[TopBackgroundColor]">buttons/ButtonC0.png</texture>
-		<visible>Skin.HasSetting(HideTopMainBackground) | Skin.HasSetting(background) | IsEmpty(Control.GetLabel(700102)) | [Window.IsVisible(Custom1170.xml) + !IsEmpty(Window(home).Property(SelectedColor)) + StringCompare(Window(home).Property(TEMP),TopBackgroundColor)]</visible>
-	  </control>
-	  <control type="image" description="טקסטורה (רקע עליון)">
-		<include>Fade_TopMainBackgroundOverlay</include>
-		<include condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)| !Skin.String(MenuDesign)]">Control_Pos42</include>
-		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,-14" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,0" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="265,0" time="0">Conditonal</animation>
-		<aspectratio>scale</aspectratio>
-		<posy>0</posy>
-		<width>1920</width>
-		<include condition="Skin.String(MenuDesign,4)">Control_Pos43</include>
-		<height>552</height>
-		<texture border="30" colordiffuse="$VAR[TopBackgroundColor]">$VAR[TopBackgroundTexture]</texture>
-		<visible>!Control.IsVisible(7011)</visible>
-		<visible>[[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()] | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
-		<visible>Skin.HasSetting(HideTopMainBackground) | Skin.HasSetting(background) | IsEmpty(Control.GetLabel(700102))</visible>
-	  </control>
 	  <control type="label" id="700102" description="רקע נוסחא">
 	    <visible>false</visible>
 		<label>$VAR[background]</label>
@@ -250,7 +218,7 @@
 		<width>1950</width>
 		<posx>-10</posx>
 		<posy>548</posy>
-		<texture border="20" colordiffuse="$VAR[MainBackgroundColor]">buttons/ButtonC0.png</texture>
+		<texture border="40" colordiffuse="$VAR[MainBackgroundColor]">buttons/ButtonC0.png</texture>
 		<visible>[!Skin.String(MenuDesign,4) | Skin.String(MenuDesign,4) + [Window.IsVisible(CustomHomeCustomizer.xml) | ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]]]</visible>
 	  </control>
 	  <control type="image" description="רקע תחתון טקסטורה">
@@ -265,6 +233,39 @@
 		<posx>0</posx>
 		<posy>552</posy>
 		<texture border="30" colordiffuse="$VAR[MainBackgroundColor]">$VAR[MainBackgroundTexture]</texture>
+		<visible>[!Skin.String(MenuDesign,4) | Skin.String(MenuDesign,4) + [Window.IsVisible(CustomHomeCustomizer.xml) | ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]]]</visible>
+	  </control>
+	  <control type="image" description="צבע (רקע עליון)">
+		<include>Fade_TopMainBackgroundOverlay</include>
+		<include condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]">Control_Pos42</include>
+		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,0" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-270,0" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="270,0" time="0">Conditonal</animation>
+		<aspectratio>stretch</aspectratio>
+		<posx>-20</posx>
+		<posy>-7</posy>
+		<width>1960</width>
+		<include condition="Skin.String(MenuDesign,4)">Control_Pos43</include>
+		<height>567</height>
+		<texture border="40" colordiffuse="$VAR[TopBackgroundColor]">buttons/ButtonC0.png</texture>
+		<visible>[!Skin.String(MenuDesign,4) | Skin.String(MenuDesign,4) + [Window.IsVisible(CustomHomeCustomizer.xml) | ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]]]</visible>
+		<!--<visible>Skin.HasSetting(HideTopMainBackground) | Skin.HasSetting(background) | IsEmpty(Control.GetLabel(700102)) | [Window.IsVisible(Custom1170.xml) + !IsEmpty(Window(home).Property(SelectedColor)) + StringCompare(Window(home).Property(TEMP),TopBackgroundColor)]</visible>-->
+	  </control>
+	  <control type="image" description="טקסטורה (רקע עליון)">
+		<include>Fade_TopMainBackgroundOverlay</include>
+		<include condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)| !Skin.String(MenuDesign)]">Control_Pos42</include>
+		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,-14" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,0" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="265,0" time="0">Conditonal</animation>
+		<aspectratio>scale</aspectratio>
+		<posy>0</posy>
+		<width>1920</width>
+		<include condition="Skin.String(MenuDesign,4)">Control_Pos43</include>
+		<height>552</height>
+		<texture border="30" colordiffuse="$VAR[TopBackgroundColor]">$VAR[TopBackgroundTexture]</texture>
+		<visible>!Control.IsVisible(7011)</visible>
+		<visible>[[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()] | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
+		<!--<visible>Skin.HasSetting(HideTopMainBackground) | Skin.HasSetting(background) | IsEmpty(Control.GetLabel(700102))</visible>-->
 		<visible>[!Skin.String(MenuDesign,4) | Skin.String(MenuDesign,4) + [Window.IsVisible(CustomHomeCustomizer.xml) | ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]]]</visible>
 	  </control>
 	</control>
