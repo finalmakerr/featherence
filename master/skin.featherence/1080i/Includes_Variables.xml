@@ -670,10 +670,10 @@
 	  <value condition="StringCompare(Window(home).Property(tips),30)">[B]Have an idea for new addon?:[/B][CR]Is it that great?[CR]Come and share it with us![CR]send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>
 	</variable>
 	<variable name="DialogSelectTitle">
-	  <value condition="Control.IsVisible(3) + !IsEmpty(Contol.GetLabel(1)">$INFO[Control.GetLabel(1)] ($INFO[Container(3).NumItems])</value>
-	  <value condition="Control.IsVisible(6) + !IsEmpty(Contol.GetLabel(1)">$INFO[Control.GetLabel(1)] ($INFO[Container(6).NumItems])</value>
-	  <value condition="Control.IsVisible(3) + IsEmpty(Contol.GetLabel(1)">$LOCALIZE[79060] ($INFO[Container(3).NumItems])</value>
-	  <value condition="Control.IsVisible(6) + IsEmpty(Contol.GetLabel(1)">$LOCALIZE[79060] ($INFO[Container(6).NumItems])</value>
+	  <value condition="Control.IsVisible(3)">$INFO[Control.GetLabel(1)] ($INFO[Container(3).NumItems])</value>
+	  <value condition="Control.IsVisible(6)">$INFO[Control.GetLabel(1)] ($INFO[Container(6).NumItems])</value>
+	  <value condition="Control.IsVisible(3) + IsEmpty(Contol.GetLabel(1))">$LOCALIZE[79060] ($INFO[Container(3).NumItems])</value>
+	  <value condition="Control.IsVisible(6) + IsEmpty(Contol.GetLabel(1))">$LOCALIZE[79060] ($INFO[Container(6).NumItems])</value>
 	</variable>
 	<variable name="ManualColor">
 	  <value condition="!IsEmpty(Window(home).Property(SelectedColor))">$INFO[Window(home).Property(SelectedColor)]</value>
