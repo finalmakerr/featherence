@@ -5,7 +5,12 @@ WIP (WORK IN PROGRESS)--
 - Add foreign singers, karaoke, liveshows.
 
 ------------------------
-Featherence Music v0.2.2 (02-02-16)
+Featherence Music v0.2.3 (05-Feb-16)
+------------------------
+- Amir Elgazar playlists is visible in addon settings (bug fix).
+
+------------------------
+Featherence Music v0.2.2 (02-Feb-16)
 ------------------------
 - Added 8tracks to radio category.
 - Added fanart for sub categories.
@@ -13,7 +18,7 @@ Featherence Music v0.2.2 (02-02-16)
 - Update english strings.
 
 ------------------------
-Featherence Music v0.2.0 (20-01-16)
+Featherence Music v0.2.0 (20-Jan-16)
 ------------------------
 - Added about us section with useful information and contact tools.
 - Added classical music category.
@@ -28,7 +33,7 @@ Featherence Music v0.2.0 (20-01-16)
 - TV mode now occur also inside container.
 
 ------------------------
-Featherence Music v0.1.6 (01-01-16)
+Featherence Music v0.1.6 (01-Jan-16)
 ------------------------
 - Added Rain playlist (Amir Elgazar).
 - Added singers and TV mode support for mizrahit karaoke.
@@ -37,13 +42,13 @@ Featherence Music v0.1.6 (01-01-16)
 - Minor bugs fix.
 
 ------------------------
-Featherence Music v0.1.5 (24-12-15)
+Featherence Music v0.1.5 (24-Dec-15)
 ------------------------
 - Added Great French Collection Amir's playlists.
 - Added The Beatles Amir's playlists.
 
 ------------------------
-Featherence Music v0.1.4 (20-12-15)
+Featherence Music v0.1.4 (20-Dec-15)
 ------------------------
 - Update TV Mode shuffle function.
 - Update TV Mode accuracy.
@@ -54,13 +59,13 @@ Featherence Music v0.1.4 (20-12-15)
 *Failing is an issue of the Youtube plugin.
 
 ------------------------
-Featherence Music v0.1.2 (17-12-15)
+Featherence Music v0.1.2 (17-Dec-15)
 ------------------------
 - Major bugs fix.
 - Added 99FM addon.
 - Update translations.
 
 ------------------------
-Featherence Music v0.1.0 (09-12-15)
+Featherence Music v0.1.0 (09-Dec-15)
 ------------------------
 - First release
