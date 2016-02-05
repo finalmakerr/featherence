@@ -1729,7 +1729,7 @@ elif mode >= 200 and mode <= 249:
 								filesT_ = { filesname: files }
 								filesT.update(filesT_)
 								list2.append(filesname)
-								filedate = getFileAttribute(1, path + files, option="1")
+								filedate = getFileAttribute(1, path + files, option="")
 								list2_.append(filesname + space + '-(' + str(filedate) + ')')
 								extra = 'files' + space2 + to_utf8(files) + newline + 'filesname' + space2 + to_utf8(filesname)
 								#print extra 
@@ -1750,6 +1750,7 @@ elif mode >= 200 and mode <= 249:
 					---Save--------------------------
 					------------------------------'''
 					if returned2 > 1:
+						printpoint = printpoint + 'o'
 						yesno = dialogyesno('Overwrite' + space + str(list2[returned2]) + '?','Choose YES to continue')
 						if yesno == 'skip': printpoint = printpoint + '9'
 					if not '9' in printpoint:
@@ -1864,7 +1865,6 @@ elif mode >= 200 and mode <= 249:
 								notification_common('17')
 								extra = extra + newline + featherenceserviceaddondata_media_path + "Featherence_" + ".txt" + space + 'Is not found!'
 							else:
-								removefiles(featherenceserviceaddondata_media_path + 'Featherence_' + to_unicode(list2[returned2]) + '.zip')
 								zipname = featherenceservice_addondata_path + 'Featherence_' + str(filename).decode('utf-8')
 								if custommediaL == []:
 									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=0, append=False, ZipFullPath=False, temp=False)
@@ -1872,6 +1872,12 @@ elif mode >= 200 and mode <= 249:
 									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=['Featherence_.txt'], filteroff=[], level=0, append=False, ZipFullPath=False, temp=True)
 									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=custommediaL, filteroff=[], level=3, append='End', ZipFullPath=False, temp=True)
 									'''---------------------------'''
+								
+								if 'o' in printpoint:
+									if filename != str(list2[returned2]):
+										returned_ = dialogyesno('%s has been successfully saved!' % (filename), 'Would you like to remove %s save?' % (str(list2[returned2])))
+										if returned_ != 'skip':
+											removefiles(featherenceservice_addondata_path + 'Featherence_' + to_unicode(list2[returned2]) + '.zip')
 								Custom1000(str(list[returned]),100,str(list2[returned2]),4)
 						else: notification_common('9')
 				
@@ -1967,13 +1973,10 @@ elif mode >= 200 and mode <= 249:
 					xbmc.sleep(500)
 					xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_)')
 					xbmc.executebuiltin('Action(Back)')
-					xbmc.sleep(2000)
+					xbmc.sleep(500)
 					returned_ = dialogyesno('Your current language is %s' % (systemlanguage), 'Are the buttons in %s?' % (systemlanguage))
 					if returned_ == 'skip':
-						xbmc.sleep(3000)
 						xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=LABEL)')
-					#ReloadSkin(admin)
-					#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=5)')
 					if filename == 'Classico Plus':
 						folder_ = 'Featherence'
 						path_ = os.path.join(featherenceserviceaddondata_media_path, folder_, '')
@@ -1982,6 +1985,8 @@ elif mode >= 200 and mode <= 249:
 							if returned_ != 'skip':
 								copyfiles(path_, home_path)
 								removefiles(path_)
+				    
+					ReloadSkin(admin, force=True)
 				else:
 					pass
 					Custom1000(str(list[returned]),100,str(list2[returned2]),0)

@@ -740,7 +740,7 @@
 			<onclick condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">SetProperty(DialogSelect.Wide,1,home)</onclick>
 			<onclick condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ClearProperty(DialogSelect.Wide,home)</onclick>
 			<visible>!StringCompare(Control.GetLabel(1),Choose shortcut) | StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
-			<visible>!Window.IsVisible(CustomHomeCustomizer.xml)</visible>
+			<visible>!Window.IsVisible(Custom1175.xml)</visible>
 		</control>
 	  </control>
     </control>

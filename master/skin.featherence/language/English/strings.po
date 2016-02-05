@@ -14,8 +14,8 @@ msgid "Enable this feature in order to have a better rating system for movies, t
 msgstr "הפעל אפשרות זאת בכדי לכפות דירוג סרטים / סדרות / סרטונים(יו-טיוב) בתצורה מיטבית.[CR][COLOR=red]אם אפשרות זו מבוטלת... דירוג סרטים / סדרות יהיה בהכרח תמיד גבוהה מ-2.5 כוכבים.[/COLOR]"
 
 msgctxt "#31003
-msgid "Save and Load your skin design."
-msgstr "שמירה וטעינת עיצוב הסקין שלך."
+msgid "Build Management"
+msgstr "Build Management"
 
 msgctxt "#31004"
 msgid "Choose this option for saving/loading/changing your skin design.[CR]The configuration files maybe used on any machine!"

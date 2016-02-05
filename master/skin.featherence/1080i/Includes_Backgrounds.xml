@@ -423,61 +423,61 @@
   </variable>
   
   <variable name="background18">
-    <value condition="!Skin.String(background18)">special://skin/backgrounds/background18.jpg</value>
+    <value condition="!Skin.String(background18) | SubString(Skin.String(background18),special://skin)">http://i.imgur.com/gQUqrF0.jpg</value>
 	<value condition="Skin.String(background18)">$INFO[Skin.String(background18)]</value>
   </variable>
   <variable name="background19">
-    <value condition="!Skin.String(background19)">special://skin/backgrounds/background19.jpg</value>
+    <value condition="!Skin.String(background19) | SubString(Skin.String(background19),special://skin)">http://i.imgur.com/u1xBPQw.jpg</value>
 	<value condition="Skin.String(background19)">$INFO[Skin.String(background19)]</value>
   </variable>
   <variable name="background90">
-    <value condition="!Skin.String(background90)">special://skin/backgrounds/background90.jpg</value>
+    <value condition="!Skin.String(background90) | SubString(Skin.String(background90),special://skin)">http://i.imgur.com/kGsFLx9.jpg</value>
 	<value condition="Skin.String(background90)">$INFO[Skin.String(background90)]</value>
   </variable>
   <variable name="background91">
-    <value condition="!Skin.String(background91)">special://skin/backgrounds/background91.jpg</value>
+    <value condition="!Skin.String(background91) | SubString(Skin.String(background91),special://skin)">http://i.imgur.com/bo6oRuY.jpg</value>
 	<value condition="Skin.String(background91)">$INFO[Skin.String(background91)]</value>
   </variable>
   <variable name="background92">
-    <value condition="!Skin.String(background92)">special://skin/backgrounds/background92.jpg</value>
+    <value condition="!Skin.String(background92) | SubString(Skin.String(background92),special://skin)">http://i.imgur.com/DKkCOaq.jpg</value>
 	<value condition="Skin.String(background92)">$INFO[Skin.String(background92)]</value>
   </variable>
   <variable name="background93">
-    <value condition="!Skin.String(background93) | Skin.String(background93,special://skin)">special://home/addons/plugin.video.featherence.kids/fanart.jpg</value>
+    <value condition="!Skin.String(background93) | SubString(Skin.String(background93),special://skin)">special://home/addons/plugin.video.featherence.kids/fanart.jpg</value>
 	<value condition="Skin.String(background93)">$INFO[Skin.String(background93)]</value>
   </variable>
   <variable name="background94">
-    <value condition="!Skin.String(background94) | Skin.String(background94,special://skin)">special://home/addons/plugin.video.featherence.music/fanart.jpg</value>
+    <value condition="!Skin.String(background94) | SubString(Skin.String(background94),special://skin)">special://home/addons/plugin.video.featherence.music/fanart.jpg</value>
 	<value condition="Skin.String(background94)">$INFO[Skin.String(background94)]</value>
   </variable>
   <variable name="background95">
-    <value condition="!Skin.String(background95)">special://skin/backgrounds/background95.jpg</value>
+    <value condition="!Skin.String(background95) | SubString(Skin.String(background95),special://skin)">http://i.imgur.com/dzMGjSz.jpg</value>
 	<value condition="Skin.String(background95)">$INFO[Skin.String(background95)]</value>
   </variable>
   <variable name="background96">
     <value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
-	<value condition="!Skin.String(background96)">special://skin/backgrounds/background96.jpg</value>
+	<value condition="!Skin.String(background96) | SubString(Skin.String(background96),special://skin)">http://i.imgur.com/XrqSil9.jpg</value>
 	<value condition="Skin.String(background96)">$INFO[Skin.String(background96)]</value>
   </variable>
   <variable name="background97">
     <value condition="!Skin.HasSetting(wbackground97) | Window.IsVisible(MyWeather.xml)">special://home/addons/resource.images.weatherfanart.single/resources/$INFO[Weather.FanartCode].jpg</value>
-	<value condition="!Skin.String(background97)">special://skin/backgrounds/background97.jpg</value>
+	<value condition="!Skin.String(background97) | SubString(Skin.String(background97),special://skin)">http://i.imgur.com/9LRnEqg.jpg</value>
 	<value condition="Skin.String(background97)">$INFO[Skin.String(background97)]</value>
   </variable>
   <variable name="background98">
-	<value condition="!Skin.String(background98)">special://skin/backgrounds/background98.jpg</value>
+	<value condition="!Skin.String(background98) | SubString(Skin.String(background98),special://skin)">http://i.imgur.com/HMkK5Ou.jpg</value>
 	<value condition="Skin.String(background98)">$INFO[Skin.String(background98)]</value>
   </variable>
   <variable name="background99">
-    <value condition="!Skin.String(background99) | Skin.String(background94,special://skin)">special://home/addons/plugin.video.featherence.docu/fanart.jpg</value>
+    <value condition="!Skin.String(background99) | SubString(Skin.String(background99),special://skin)">special://home/addons/plugin.video.featherence.docu/fanart.jpg</value>
 	<value condition="Skin.String(background99)">$INFO[Skin.String(background99)]</value>
   </variable>
   <variable name="background100">
-    <value condition="!Skin.String(background100)">special://skin/backgrounds/background100.jpg</value>
+    <value condition="!Skin.String(background100) | SubString(Skin.String(background100),special://skin)">http://i.imgur.com/iNEBSuC.jpg</value>
 	<value condition="Skin.String(background100)">$INFO[Skin.String(background100)]</value>
   </variable>
   <variable name="background101">
-    <value condition="!Skin.String(background101)">special://skin/backgrounds/background101.jpg</value>
+    <value condition="!Skin.String(background101) | SubString(Skin.String(background101),special://skin)">http://i.imgur.com/OGxTBvt.jpg</value>
 	<value condition="Skin.String(background101)">$INFO[Skin.String(background101)]</value>
   </variable>
 </includes>

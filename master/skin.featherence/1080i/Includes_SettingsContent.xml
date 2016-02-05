@@ -195,7 +195,7 @@
 	  </item>
 	  
 	  <item id="201" description="צבע מסגרת בחירה">
-		<label>$LOCALIZE[78020] $LOCALIZE[31044]</label>
+		<label>$LOCALIZE[737] $LOCALIZE[31044]</label>
 		<label2>$INFO[Skin.String(SelectedFrameColor.name)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/colorpalette.png</thumb>
 		<property name="rinfo">$LOCALIZE[31045]</property>
@@ -288,7 +288,7 @@
 	  </item>
 	  
 	  <item id="213" description="צבע סמל/טקסט לא נבחר">
-		<label>$LOCALIZE[78020] $LOCALIZE[78015]</label>
+		<label>$LOCALIZE[737] $LOCALIZE[78015]</label>
 		<label2>$INFO[Skin.String(IconUnFocusColor.name)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/colorpalette.png</thumb>
 		<property name="rinfo">$LOCALIZE[76208][CR]</property>
@@ -298,7 +298,7 @@
 	  </item>
 	  
 	  <item id="214" description="צבע סמל/טקסט נבחר">
-		<label>$LOCALIZE[78020] $LOCALIZE[78016]</label>
+		<label>$LOCALIZE[737] $LOCALIZE[78016]</label>
 		<label2>$INFO[Skin.String(IconFocusColor.name)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/colorpalette.png</thumb>
 		<property name="rinfo">$LOCALIZE[76208][CR]</property>
@@ -342,7 +342,7 @@
 	  </item>
 	  
 	  <item id="219" description="צבע סמן תפריט משני">
-		<label>$LOCALIZE[78020] $LOCALIZE[79593]</label>
+		<label>$LOCALIZE[737] $LOCALIZE[79593]</label>
 		<label2>$INFO[Skin.String(SubMenuMarkColor.name)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/colorpalette.png</thumb>
 		<property name="rinfo">$LOCALIZE[79599]</property>
@@ -465,7 +465,7 @@
 		<property name="rinfo">$LOCALIZE[31091]</property>
 		<onclick>Skin.ToggleSetting(SubBackground)</onclick>
 		<visible>Container(100).Hasfocus(28)</visible>
-		<visible>Skin.HasSetting(Admin)</visible>
+		<visible>false</visible>
 	  </item>
 	  
 	  <item id="233" description="שקיפות רקע ראשי">
@@ -494,7 +494,7 @@
 	  </item>
 
 	  <item id="234" description="צבע רקע ראשי">
-		<label>$LOCALIZE[78020] $LOCALIZE[78214]</label>
+		<label>$LOCALIZE[737] $LOCALIZE[78214]</label>
 		<label2>$INFO[Skin.String(MainBackgroundColor.name)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/paintbucket.png</thumb>
 		<property name="rinfo">$LOCALIZE[78025] $LOCALIZE[78214].$LOCALIZE[31096]</property>
@@ -606,7 +606,7 @@
 	  </item>
 	  
 	  <item id="287" description="כפתורי תפריט לא נבחר">
-		<label>$LOCALIZE[78020] $LOCALIZE[31127]</label>
+		<label>$LOCALIZE[737] $LOCALIZE[31127]</label>
 		<label2>$INFO[Skin.String(ButtonUnFocusColor.name)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/colorpalette.png</thumb>
 		<property name="rinfo">$LOCALIZE[31126][CR]</property>
@@ -616,7 +616,7 @@
 	  </item>
 	  
 	  <item id="288" description="כפתורי תפריט נבחר">
-		<label>$LOCALIZE[78020] $LOCALIZE[31128]</label>
+		<label>$LOCALIZE[737] $LOCALIZE[31128]</label>
 		<label2>$INFO[Skin.String(ButtonFocusColor.name)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/colorpalette.png</thumb>
 		<property name="rinfo">$LOCALIZE[31126][CR]</property>

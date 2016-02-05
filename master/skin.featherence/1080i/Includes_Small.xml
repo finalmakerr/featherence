@@ -204,7 +204,7 @@
 		<height>1080</height>
 		<width>1920</width>
 		<visible>!Player.HasVideo | [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + Skin.HasSetting(HomeFanartHalfScreen)</visible>
-		<visible>![Window.IsVisible(Custom1170.xml) + !IsEmpty(Window(home).Property(SelectedColor)) + [StringCompare(Window(home).Property(TEMP),MainBackgroundColor)]]</visible>
+		<!--<visible>![Window.IsVisible(Custom1170.xml) + !IsEmpty(Window(home).Property(SelectedColor)) + [StringCompare(Window(home).Property(TEMP),MainBackgroundColor)]]</visible>-->
 	  </control>
 	  <control type="image" description="רקע תחתון צבע">
 		<!--<visible>Skin.HasSetting(background)</visible>-->

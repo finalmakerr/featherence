@@ -2894,6 +2894,7 @@ def mode212(value, admin, name, printpoint):
 				#setSkinSetting('0','id' + x,"")
 				setSkinSetting('0','icon' + x,"")
 				setSkinSetting('0','action' + x,"")
+				setSkinSetting('0','background' + x,"")
 				printpoint = printpoint + "7"
 		
 	
@@ -3173,9 +3174,28 @@ def mode218(value, admin, name, printpoint):
 	------------------------------'''	
 	message = ""
 	if "view" in value:
-		myweatherW = xbmc.getCondVisibility('Window.IsVisible(MyWeather.xml)')
+		dialogfullscreeninfoW = xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)')
 		dialogsubtitlesW = xbmc.getCondVisibility('Window.IsVisible(DialogSubtitles.xml)')
-		if myweatherW:
+		myweatherW = xbmc.getCondVisibility('Window.IsVisible(MyWeather.xml)')
+		playerpaused = xbmc.getCondVisibility('Player.Paused')
+		if dialogfullscreeninfoW and playerpaused:
+			message = message + newline + "VideoPlayer.Duration" + space2 + xbmc.getInfoLabel('VideoPlayer.Duration')
+			message = message + newline + "TopVideoInformation1" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation1)')
+			message = message + newline + "VideoPlayer.Year" + space2 + xbmc.getInfoLabel('VideoPlayer.Year')
+			message = message + newline + "TopVideoInformation2" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation2)')
+			message = message + newline + "VideoPlayer.Rating" + space2 + xbmc.getInfoLabel('VideoPlayer.Rating')
+			message = message + newline + "TopVideoInformation3" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation3)')
+			message = message + newline + "VideoPlayer.Plot" + space2 + xbmc.getInfoLabel('VideoPlayer.Plot')
+			message = message + newline + "TopVideoInformation5" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation5)')
+			
+			message = message + newline + "VideoPlayer.Genre" + space2 + xbmc.getInfoLabel('VideoPlayer.Genre')
+			message = message + newline + "TopVideoInformation6" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation6)')
+			message = message + newline + "VideoPlayer.Tagline" + space2 + xbmc.getInfoLabel('VideoPlayer.Tagline')
+			message = message + newline + "TopVideoInformation7" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation7)')
+			message = message + newline + "VideoPlayer.TVShowTitle" + space2 + xbmc.getInfoLabel('VideoPlayer.TVShowTitle')
+			message = message + newline + "TopVideoInformation8" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation8)')
+			
+		elif myweatherW:
 			message = message + newline + "Day0 Title" + space2 + xbmc.getInfoLabel('Window.Property(Day0.Title)')
 			message = message + newline + "Day1 Title" + space2 + xbmc.getInfoLabel('Window.Property(Day1.Title)')
 			message = message + newline + "Day2 Title" + space2 + xbmc.getInfoLabel('Window.Property(Day2.Title)')
@@ -3375,7 +3395,7 @@ def mode232(value, admin, name, printpoint):
 			if custom1175W and not custom1138W:
 				'''Main Action'''
 				printpoint = printpoint + "x1"
-				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=False&showNone=True&skinLabel=label'+id1+'&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]&skinThumbnail=icon'+id1+')')
+				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinLabel=label'+id1+'&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]&skinThumbnail=icon'+id1+')')
 			elif custom1138W:	
 				'''Sub Action'''
 				printpoint = printpoint + "x2"

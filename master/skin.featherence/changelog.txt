@@ -2,12 +2,21 @@
 WIP - WORK IN PROGRESS
 ------------------------
 - Added clear fanart support.
-- Background for Sub Menus.
 - Bottom - SubMenu / Enter - Main Button. Horizontal only.
 - Horizontal view display position for multipages.
 - Return home preserve previous location.
 - Touch device support.
 - Widget auto refresh on condition.
+- Added background for sub menus.
+- Update coloring preview.
+
+------------------------
+Featherence v0.4.1 (05-Feb-16)
+------------------------
+- Minor bugs fix.
+- Reduce skin size.
+- Update build's management tool.
+- Update Transperancy template.
 
 ------------------------
 Featherence v0.4.0 (04-Feb-16)
