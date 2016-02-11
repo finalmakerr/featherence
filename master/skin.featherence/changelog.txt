@@ -7,11 +7,11 @@ WIP - WORK IN PROGRESS
 - Return home preserve previous location.
 - Touch device support.
 - Widget auto refresh on condition.
-- Added background for sub menus.
 
 ------------------------
-Featherence v0.4.2 (xx-Feb-16)
+Featherence v0.4.2 (11-Feb-16)
 ------------------------
+- Added background for sub menus (optional).
 - Improve performance when scrolling.
 - Minor bugs fix.
 - Update coloring preview.

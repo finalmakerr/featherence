@@ -465,7 +465,6 @@
 		<property name="rinfo">$LOCALIZE[31091]</property>
 		<onclick>Skin.ToggleSetting(SubBackground)</onclick>
 		<visible>Container(100).Hasfocus(28)</visible>
-		<visible>Skin.HasSetting(Admin)</visible>
 	  </item>
 	  
 	  <item id="233" description="שקיפות רקע ראשי">

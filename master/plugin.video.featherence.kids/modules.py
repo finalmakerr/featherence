@@ -1819,7 +1819,7 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 		check_seretil_me = urlcheck('http://seretil.me', ping=False)
 		check_10q_tv = urlcheck('http://10q.tv', ping=False)
 		check_gozlan_me = urlcheck('http://anonymouse.org/cgi-bin/anon-www.cgi/http://gozlan.eu/', ping=False)
-		check_movix_me = "" #check_movix_me = urlcheck('http://www.movix.me/series', ping=True) #GAL CHECK THIS (PING)
+		check_movix_me = 'ok' #check_movix_me = urlcheck('http://www.movix.me/series', ping=True) #GAL CHECK THIS (PING)
 		
 		'''סרטים מדובבים'''
 		count = 1

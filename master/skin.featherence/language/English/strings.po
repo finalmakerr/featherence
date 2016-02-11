@@ -509,6 +509,12 @@ msgctxt "#31417
 msgid "Element"
 msgstr "אלמנט"
 
+msgctxt "#31418"
+msgid "Skin Version Updated"
+msgstr "גרסת מעטפת עודכנה"
+
+
+
 msgctxt "#31600
 msgid "Action"
 msgstr "פעולה"
@@ -2628,10 +2634,6 @@ msgstr "מדריך טלוויזיה"
 msgctxt "#79199"
 msgid "record"
 msgstr "הקלט"
-
-msgctxt "#79201"
-msgid "Skin Version Updated"
-msgstr "גרסת מעטפת עודכנה"
 
 msgctxt "#79210"
 msgid "Shalom"
