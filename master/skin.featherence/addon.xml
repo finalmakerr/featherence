@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="skin.featherence" version="0.4.2" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.4.3" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
 	<import addon="script.featherence.service" version="0.1.0"/>
-	<import addon="script.extendedinfo" version="3.1.2"/>
-	<import addon="script.skinshortcuts" version="1.0.2"/>
 	<!--<import addon="resource.images.weathericons.outline" version="0.0.4" optional="true"/>
 	<import addon="resource.images.weatherfanart.single" version="0.0.4" optional="true"/>-->
   </requires>

@@ -775,7 +775,7 @@ def mode70(value, admin, name, printpoint, property_temp):
 	
 	text = "input" + space2 + input + newline + \
 	"INFO" + space2 + "listitemlabel" + space2 + listitemlabel + newline + "listitemtvshowtitle" + space2 + listitemtvshowtitle + newline + \
-	"listitemtitle" + space2 + listitemtitle + newline + "listitemimdbnumber" + space2 + listitemimdbnumber + newline + "listitemdbid" + space2 + listitemdbid + newline + \
+	"listitemtitle" + space2 + listitemtitle + newline + "listitemdbid" + space2 + listitemdbid + newline + \
 	'listitemseason' + space2 + str(listitemseason) + newline + \
 	"containerfolderpath" + space2 + containerfolderpath + newline + "property_temp" + space2 + property_temp + space + "property_temp_" + space2 + str(property_temp_) + newline + \
 	"listitemdirector" + space2 + listitemdirector + newline + \
