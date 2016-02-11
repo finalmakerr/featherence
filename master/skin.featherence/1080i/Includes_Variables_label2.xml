@@ -217,20 +217,7 @@
 	<value condition="!Skin.HasSetting(trailer2)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(trailer2)">$LOCALIZE[107]</value>
   </variable>
-  <variable name="55label2">
-	<value condition="Skin.HasSetting(LibraryData_AutoUpdate)">$LOCALIZE[106]</value>
-	<value condition="!Skin.HasSetting(LibraryData_AutoUpdate)">$LOCALIZE[107]</value>
-  </variable>
-  <variable name="56label2">
-	<value condition="StringCompare(Skin.String(LibraryData_RemoteDate),Skin.String(LibraryData_LocalDate))">$LOCALIZE[107]</value>
-	<value condition="!StringCompare(Skin.String(LibraryData_RemoteDate),Skin.String(LibraryData_LocalDate))">$LOCALIZE[106]</value>
-  </variable>
-  
-  <variable name="67label2">
-	<value condition="Skin.HasSetting(Widget)">$LOCALIZE[106]</value>
-	<value condition="!Skin.HasSetting(Widget)">$LOCALIZE[107]</value>
-  </variable>
-  
+
   <variable name="198label2">
     <value condition="!Skin.String(MenuDesign)" description="ברירת מחדל">DEFAULT</value>
     <value condition="Skin.String(MenuDesign,0)" description="פנל">$LOCALIZE[31031]</value>

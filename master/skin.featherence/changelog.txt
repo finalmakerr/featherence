@@ -8,7 +8,14 @@ WIP - WORK IN PROGRESS
 - Touch device support.
 - Widget auto refresh on condition.
 - Added background for sub menus.
+
+------------------------
+Featherence v0.4.2 (xx-Feb-16)
+------------------------
+- Improve performance when scrolling.
+- Minor bugs fix.
 - Update coloring preview.
+- Update Music, File Manager, DialogMediaSource windows.
 
 ------------------------
 Featherence v0.4.1 (05-Feb-16)

@@ -16,11 +16,11 @@
   </include>
   
   <include name="ReloadSkin_Check">
-    <onload condition="Skin.HasSetting(Admin3) + Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Window.IsVisible(Home.xml) + Control.IsVisible(9000) + [!IntegerGreaterThan(Container(9000).NumItems,4) | StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,) | IsEmpty(Control.GetLabel(700105))]">Notification(TESTING,,2000)</onload>
+    <!--<onload condition="Skin.HasSetting(Admin3) + Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Window.IsVisible(Home.xml) + Control.IsVisible(9000) + [!IntegerGreaterThan(Container(9000).NumItems,4) | StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,) | IsEmpty(Control.GetLabel(700105))]">Notification(TESTING,,2000)</onload>
 	<onload condition="Window.IsVisible(Home.xml) + Control.IsVisible(9000) + [!IntegerGreaterThan(Container(9000).NumItems,4) | StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,) | IsEmpty(Control.GetLabel(700105))]">RunScript(script.featherence.service,,?mode=213&amp;value=1)</onload>
 	<onload condition="Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(9000) + [StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,) | IsEmpty(Control.GetLabel(700105))]">RunScript(script.featherence.service,,?mode=213&amp;value=1)</onload>
 	<onload condition="Window.IsVisible(CustomHomeCustomizer2.xml) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + [StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,)]">RunScript(script.featherence.service,,?mode=213&amp;value=3)</onload>
-	<onload condition="Window.IsVisible(MyVideoNav.xml) + IsEmpty(Control.GetLabel(111)) + !Control.IsVisible(7021) + IsEmpty(Control.GetLabel(700105))">RunScript(script.featherence.service,,?mode=213&amp;value=4)</onload>
+	<onload condition="Window.IsVisible(MyVideoNav.xml) + IsEmpty(Control.GetLabel(111)) + !Control.IsVisible(7021) + IsEmpty(Control.GetLabel(700105))">RunScript(script.featherence.service,,?mode=213&amp;value=4)</onload>-->
   </include>
   
   <include name="Design_TopButtons">

@@ -5,6 +5,11 @@ WIP (WORK IN PROGRESS)--
 - Add foreign singers, karaoke, liveshows.
 
 ------------------------
+Featherence Music v0.2.4 (xx-Feb-16)
+------------------------
+- Mizrahit live shows bug fix.
+
+------------------------
 Featherence Music v0.2.3 (05-Feb-16)
 ------------------------
 - Amir Elgazar playlists is visible in addon settings (bug fix).

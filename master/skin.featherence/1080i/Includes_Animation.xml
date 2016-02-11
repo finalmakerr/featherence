@@ -92,6 +92,9 @@
    <include name="Slide7" description="RightMenu">
 	  <animation effect="slide" start="0,0" end="-400,0" delay="0" time="700" reversible="true">VisibleChange</animation>
    </include>
+   <include name="Slide7.5" description="RightMenu">
+	  <animation effect="slide" start="0,0" end="-400,0" delay="0" time="700" reversible="true">WindowOpen</animation>
+   </include>
    <include name="Slide8" description="BottomMenu">
 	  <animation effect="slide" start="0,0" end="0,-400" delay="0" time="700" reversible="true">WindowOpen</animation>
    </include>

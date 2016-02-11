@@ -80,7 +80,7 @@ def CATEGORIES10107Z(name, iconimage, desc, background, fanart):
 		
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
 
-def CATEGORIES10108Z(name, iconimage, desc, background, fanart):
+def CATEGORIES10109Z(name, iconimage, desc, background, fanart):
 	'''הופעות חיות מזרחיות'''
 	background = 108
 	

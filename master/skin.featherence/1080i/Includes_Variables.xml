@@ -6,6 +6,7 @@
 	<value condition="false">5</value>
 	<!--<value>test</value>-->
   </variable>
+  
   <variable name="11156label" description="">
     <value condition="![!Skin.HasSetting(ShowDVDCases) | Skin.HasSetting(ShowDVDCases2)]">0</value>
 	<value condition="![!IsEmpty(Player.Art(tvshow.poster)) | !IsEmpty(Player.Art(poster)) | !IsEmpty(Control.GetLabel(1103)) | !IsEmpty(VideoPlayer.Cover) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Art(tvshow.poster)) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Thumb) | !IsEmpty(ListItem.Icon) | SubString(ListItem.path,videodb://movies/sets/)]">1</value>
@@ -585,7 +586,7 @@
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + SubString(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות מהאייפון/אייפד[/B][/COLOR]</value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
 	<value condition="StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Skin.HasSetting(View50_Plus2)">•••••••</value> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
-	<value condition="!IsEmpty(ListItem.Label) + [IsEmpty(Control.GetLabel(1105)) + IsEmpty(Control.GetLabel(1106)) | IsEmpty(Control.GetLabel(11156))]">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
+	<value condition="!IsEmpty(ListItem.Label) + [IsEmpty(Control.GetLabel(1105)) + IsEmpty(Control.GetLabel(1106))]">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
 	<!--<value condition="!IsEmpty(System.CurrentControl) + !Window.IsVisible(MyVideoNav.xml)">[COLOR yellow][B]$INFO[System.CurrentControl][/B][/COLOR]</value>--> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
   </variable>
   

@@ -50,31 +50,6 @@ RunScript(script.featherence.service,,?mode=31&amp;value=header&amp;value2=messa
 ```
 
 ```
-SOFT-RESTART (Terminal supported)
-RunScript(script.featherence.service,,?mode=50)
-```
-
-```
-RESTART (Terminal supported)
-RunScript(script.featherence.service,,?mode=51)
-```
-
-```
-SUSPEND (Terminal supported)
-RunScript(script.featherence.service,,?mode=52)
-```
-
-```
-POWEROFF (Terminal supported)
-RunScript(script.featherence.service,,?mode=53)
-```
-
-```
-QUIT (Terminal supported)
-RunScript(script.featherence.service,,?mode=54)
-```
-
-```
 LAUNCH EXTENDEDINFO MOVIES INFO
 RunScript(script.featherence.service,,?mode=70&amp;value=0)
 ```
@@ -93,8 +68,6 @@ RunScript(script.featherence.service,,?mode=70&amp;value=3)
 LAUNCH EXTENDEDINFO DIRECTOR INFO
 RunScript(script.featherence.service,,?mode=70&amp;value=4)
 ```
-
-
 
 ```
 READ FROM FILE AND DISPLAY
@@ -203,24 +176,6 @@ RunScript(script.featherence.service,,?mode=25)
 	PLAY ALL: MODE 2 | URL = <file path>
 	TIP: os.path.join(addonPath, 'resources', 'templates2', '')
 	addonPath = current addon
-	```
-	
-	```
-	SDAROT TV ADDON
-	FEATHERENCE: MODE 5/6/17 | URL = &sdarot=text
-	TIP: use ctrl+shift+P on the preferred location!
-	```
-	
-	```
-	WALLA NEW ADDON
-	FEATHERENCE: MODE 5/6/17 | URL = &wallaNew=text
-	TIP: use ctrl+shift+P on the preferred location!
-	```
-	
-	```
-	HOT VOD ADDON
-	FEATHERENCE: MODE 5/6/17 | URL = &hotVOD=text
-	TIP: use ctrl+shift+P on the preferred location!
 	```
 	
 	```

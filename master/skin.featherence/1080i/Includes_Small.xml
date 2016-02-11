@@ -561,8 +561,6 @@
 		<posy>0</posy>
 		<texture diffuse="buttons/types/bd.png" colordiffuse="$VAR[TopInformationColor]" border="0">buttons/ButtonA0.png</texture>
 		<width>100%</width>
-		<!--<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases2) + [StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])]]</visible>
-		<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases) + [StringCompare(Container.Viewmode,$LOCALIZE[31013])]]</visible>-->
 	  </control>
 	  <control type="label" id="11300" description="">					
 		<include>LabelC2</include>
@@ -579,9 +577,6 @@
 		  <texture colordiffuse="$VAR[IconUnFocusColor]">$VAR[Overlay2]</texture>
 		  <width>80%</width>
 		  <visible></visible>
-		  <!--<visible>!Skin.HasSetting(ShowDVDCases2) | Skin.HasSetting(ShowDVDCases2) + !StringCompare(Container.Viewmode,$LOCALIZE[31015]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
-		  <visible>Skin.HasSetting(ShowDVDCases) | !Skin.HasSetting(ShowDVDCases) + !StringCompare(Container.Viewmode,$LOCALIZE[31013])</visible>-->
-		  <!--<visible>!IsEmpty(Control.GetLabel(1104)) | StringCompare(Container.Viewmode,$LOCALIZE[31010])</visible>--> <!-- | Window.IsVisible(DialogFullScreenInfo.xml)-->
       </control>
 	</control>
   </include>
@@ -625,8 +620,6 @@
 		<!--<texture diffuse="buttons/types/bd.png" colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>-->
 		<texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
 		<width>60</width>
-		<!--<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases2) + [StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])]]</visible>
-		<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases) + [StringCompare(Container.Viewmode,$LOCALIZE[31013])]]</visible>-->
 	  </control>		  
 	  <control type="label" description="">					
 		<angle>0</angle>
@@ -647,8 +640,6 @@
 		  <texture colordiffuse="$VAR[IconUnFocusColor]">$VAR[Overlay2]</texture>
 		  <width>60</width>
 		  <visible>![IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]</visible>
-		  <!--<visible>!Skin.HasSetting(ShowDVDCases2) | Skin.HasSetting(ShowDVDCases2) + !StringCompare(Container.Viewmode,$LOCALIZE[31015]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
-		  <visible>Skin.HasSetting(ShowDVDCases) | !Skin.HasSetting(ShowDVDCases) + !StringCompare(Container.Viewmode,$LOCALIZE[31013])</visible>-->
       </control>
 	</control>
     <control type="image" description="סמן נצפה">
@@ -691,11 +682,8 @@
 		<height>40</height>
 		<posx>70r</posx>
 		<posy>4</posy>
-		<!--<texture diffuse="buttons/types/bd.png" colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>-->
 		<texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
 		<width>60</width>
-		<!--<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases2) + [StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])]]</visible>
-		<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases) + [StringCompare(Container.Viewmode,$LOCALIZE[31013])]]</visible>-->
 	  </control>		  
 	  <control type="label" description="">					
 		<angle>0</angle>
@@ -727,11 +715,8 @@
 		<animation condition="true" effect="fade" start="70" end="70" time="0">Conditional</animation>
 		<height>40</height>
 		<posy>4</posy>
-		<!--<texture diffuse="buttons/types/bd.png" colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>-->
 		<texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
 		<width>100%</width>
-		<!--<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases2) + [StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])]]</visible>
-		<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) | ![Skin.HasSetting(ShowDVDCases) + [StringCompare(Container.Viewmode,$LOCALIZE[31013])]]</visible>-->
 	  </control>	  
 	  <control type="image" description="דירוג">
 		  <posy>8</posy>
@@ -993,12 +978,12 @@
 	<scrollsuffix></scrollsuffix>
   </include>
   <include name="ScrollBar">
-	<control type="group" description="מצב ספרייה">
+	<control type="group" description="">
 	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="zoom" center="auto" start="100,100" end="100,85">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="slide" start="0,0" end="1070,-130">Conditional</animation>
 	  <include condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(DialogTextViewer.xml)">Control_Pos49</include>
 	  <visible>Control.IsVisible(60) | Control.IsVisible(61)</visible>
-	  <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31015])</visible>
+	  <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31015]) | Window.IsVisible(DialogTextViewer.xml)</visible>
 	  <visible>IntegerGreaterThan(Container.NumPages,1) | Window.IsVisible(FileBrowser.xml) | Window.IsVisible(DialogFavourites.xml) | Window.IsVisible(DialogTextViewer.xml) | Control.IsVisible(11) + IntegerGreaterThan(Container(11).NumPages,1)</visible>
 	  <height>950</height>
 	  <width>20</width>
@@ -1009,7 +994,6 @@
 		<posx>0</posx>
 		<bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
 		<bordersize>2</bordersize>
-		<!--<texture border="20">buttons/ButtonEF.png</texture>-->
 		<texture colordiffuse="$VAR[MenuColor]" border="0">buttons/ButtonA0.png</texture>
 		<visible></visible>
 	  </control>
@@ -1018,7 +1002,6 @@
 		<posx>0</posx>
 		<bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
 		<bordersize>2</bordersize>
-		<!--<texture border="20">buttons/ButtonEF.png</texture>-->
 		<texture colordiffuse="$VAR[MenuColor]" border="0">buttons/ButtonA0.png</texture>
 		<visible></visible>
 	  </control>
@@ -1057,18 +1040,19 @@
 		<!--<visible>IntegerGreaterThan(Container.NumPages,2)</visible>-->
 		<visible>!Window.IsVisible(DialogTextViewer.xml)</visible>
 	  </control>
-	
+	  
 	  <control type="scrollbar" id="61" description="כלי גלילה">
-		<height>100%</height>
-		<onleft>700</onleft>
-        <onright>700</onright>
+		<height>99%</height>
+		<posy>1.5</posy>
+		<onleft condition="Control.IsVisible(700)">700</onleft>
+        <onright condition="Control.IsVisible(700)">700</onright>
+		
         <ondown>61</ondown>
-        <onup>700</onup>
+        <onup condition="Control.IsVisible(700)">700</onup>
 		<visible>Window.IsVisible(DialogTextViewer.xml)</visible>
 	  </control>
 	</control>
-	
-	<control type="group" description="מצב ספרייה">
+	<control type="group" description="">
 	  <visible>Control.IsVisible(60)</visible>
 	  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015])</visible>
 	  <height>20</height>
@@ -1080,7 +1064,6 @@
 		<posx>0</posx>
 		<bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
 		<bordersize>2</bordersize>
-		<!--<texture border="20">buttons/ButtonEF.png</texture>-->
 		<texture colordiffuse="$VAR[MenuColor]" border="0">buttons/ButtonA0.png</texture>
 		<visible></visible>
 	  </control>
@@ -1089,7 +1072,6 @@
 		<posx>0</posx>
 		<bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
 		<bordersize>2</bordersize>
-		<!--<texture border="20">buttons/ButtonEF.png</texture>-->
 		<texture colordiffuse="$VAR[MenuColor]" border="0">buttons/ButtonA0.png</texture>
 		<visible></visible>
 	  </control>

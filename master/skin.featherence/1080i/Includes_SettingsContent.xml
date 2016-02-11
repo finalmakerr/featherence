@@ -465,7 +465,7 @@
 		<property name="rinfo">$LOCALIZE[31091]</property>
 		<onclick>Skin.ToggleSetting(SubBackground)</onclick>
 		<visible>Container(100).Hasfocus(28)</visible>
-		<visible>false</visible>
+		<visible>Skin.HasSetting(Admin)</visible>
 	  </item>
 	  
 	  <item id="233" description="שקיפות רקע ראשי">
@@ -990,7 +990,7 @@
 		<label>$LOCALIZE[76196]</label>
 		<label2>$INFO[Skin.String(ID1)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/star.png</thumb>
-		<property name="rinfo">$LOCALIZE[74842] $LOCALIZE[74841] [B]CTRL+SHIFT+L[/B]</property>
+		<property name="rinfo">$LOCALIZE[74842]</property>
 		<onclick>ActivateWindow(1117)</onclick>
 		<visible>Container(100).Hasfocus(2)</visible>
 	  </item>
@@ -1075,7 +1075,7 @@
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/music.png</thumb>
 		<property name="rinfo"></property>
-		<onclick>ActivateWindow(Music,Addons)</onclick>
+		<onclick>ActivateWindow(Music,addons://sources/audio/)</onclick>
 		<visible>Container(100).Hasfocus(3)</visible>
 	  </item>
 	  <item id="33" description="תוכנות">

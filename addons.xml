@@ -186,11 +186,10 @@
   <extension point="xbmc.service" library="service.py" start="startup"/>
   <extension point="xbmc.addon.metadata">
 	<platform>all</platform>
-    <summary lang="en">Developer ToolKit</summary>
-	<summary lang="he">כלים למפתחים</summary>
+    <summary>Add-on for skins and video plugins to provide simple development</summary>
     <description lang="en">_</description>
 	<description lang="he">_</description>
-    <disclaimer>Dear developers: Feel free to use this addon to fit your needs.</disclaimer>
+    <disclaimer></disclaimer>
 	<email>featherence@groups.facebook.com</email>
 	<forum></forum>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.service</source>
@@ -202,6 +201,8 @@
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
 	<import addon="script.featherence.service" version="0.1.0"/>
+	<import addon="script.extendedinfo" version="3.1.2"/>
+	<import addon="script.skinshortcuts" version="1.0.2"/>
 	<!--<import addon="resource.images.weathericons.outline" version="0.0.4" optional="true"/>
 	<import addon="resource.images.weatherfanart.single" version="0.0.4" optional="true"/>-->
   </requires>

@@ -118,7 +118,7 @@ def CATEGORIES10107A(name, iconimage, desc, fanart):
 		
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 
-def CATEGORIES10108A(name, iconimage, desc, fanart):
+def CATEGORIES10109A(name, iconimage, desc, fanart):
 	'''הופעות חיות מזרחיות'''
 	background = 108
 	
