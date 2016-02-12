@@ -93,15 +93,20 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.wallpapersbyte.com/wp-content/uploads/2015/06/Downolad-HD-Wallpaper-France-Paris-City-Eiffel-Tower-Sunset-WallpapersByte-com-1920x1080.jpg'
 	addDir('Great French Collection',templates2_path + 'Great French Collection.txt',2,thumb,name + '','1',50, fanart)
 	
-	'''Twilight Time'''
+        '''Twilight Time'''
 	thumb = 'http://cps-static.rovicorp.com/3/JPG_400/MI0003/649/MI0003649662.jpg?partner=allrovi.com'
-	fanart = 'http://a2.mzstatic.com/us/r1000/096/purple/v4/cc/8c/0f/cc8c0ff5-6e27-d9fa-62f1-791ffc4c7432/mzl.lcqgfyzc.1024x1024-65.jpg'
+	fanart = 'http://screencast.com/t/t85VTb1XCb'
 	addDir('Twilight Time - Oldies',templates2_path + 'Twilight Time.txt',2,thumb,name + '','1',50, fanart)
 	
 	'''The Beatles'''
 	thumb = 'http://img2-ak.lst.fm/i/u/ar0/6a122bb0665d4d8ca0cc4c31e245ff55'
-	fanart = 'http://topwalls.net/wallpapers/2012/02/The-Beatles-1080x1920.jpg'
+	fanart = 'http://p1.pichost.me/i/70/1943195.jpg'
 	addDir('The Beatles',templates2_path + 'The Beatles.txt',2,thumb,name + '','1',50, fanart)
+	
+	'''bob dylan'''
+	thumb = 'https://s3.amazonaws.com/rapgenius/600full-the-best-of-bob-dylan-cover.jpg'
+	fanart = 'http://zetaestaticos.com/cordoba/img/noticias/0/950/950919_1.jpg'
+	addDir('bob dylan',templates2_path + 'bob dylan.txt',2,thumb,desc + '','1',50, fanart)
 	
 	'''love songs vol 1'''
 	thumb = 'http://fullhdpictures.com/wp-content/uploads/2015/04/Beauty-Love-Wallpapers.jpg'
