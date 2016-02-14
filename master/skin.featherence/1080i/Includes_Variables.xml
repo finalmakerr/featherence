@@ -54,7 +54,7 @@
 	<value condition="[Container.Content(Episodes)] + !IsEmpty(Window(home).Property(ListItemUnWatchedEpisodes))">$INFO[Window(home).Property(ListItemUnWatchedEpisodes)]</value>
   </variable>
   <variable name="Button31" description="מדריך טלוויזיה/ערוצי טלוויזיה">
-    <value description="ערוצי טלוויזיה" condition="Window.IsVisible(MyPVRChannels.xml)">$LOCALIZE[79196]</value>
+    <value description="ערוצי טלוויזיה" condition="Window.IsVisible(MyPVRChannels.xml)">$LOCALIZE[4]</value>
 	<value description="מדריך טלוויזיה" condition="Window.IsVisible(MyPVRGuide.xml)">$LOCALIZE[19023]</value>
   </variable>
   <variable name="Button100" description="MoviesShelfWL">
@@ -174,19 +174,9 @@
 	<value condition="!IsEmpty(ListItem.ChannelGroup)">$INFO[ListItem.ChannelGroup]</value>
 	<value condition="!IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
   </variable>
-  
-  <variable name="StartupMessage2">
-	<value description="שבת שלום" condition="[StringCompare(System.Date(DDD),$LOCALIZE[16]) + !System.Time(20:00)] | [StringCompare(System.Date(DDD),$LOCALIZE[15]) + System.Time(16:00)]">$LOCALIZE[78293]</value>
-	<value description="שבוע טוב" condition="StringCompare(System.Date(DDD),$LOCALIZE[17])">$LOCALIZE[79310]</value>
-	<value description="בוקר טוב" condition="System.Time(05:00) + !System.Time(10:00)">$LOCALIZE[79300]</value>
-	<value description="צהריים טובים" condition="System.Time(12:00) + !System.Time(16:00)">$LOCALIZE[79301]</value>
-	<value description="אחר צהריים טובים" condition="System.Time(16:00) + !System.Time(19:00)">$LOCALIZE[79302]</value>
-	<value description="ערב טוב" condition="System.Time(19:00) + !System.Time(21:00)">$LOCALIZE[79303]</value>
-	<value description="לילה טוב" condition="[System.Time(21:00) + !System.Time(00:00)] | [System.Time(00:01) + !System.Time(05:00)]">$LOCALIZE[79304]</value>
-  </variable>
   <variable name="DialogVideoInfoText" description="פרטי וידאו-טקסט לכפתורים">
     <value description="נגן וידאו" condition="Control.HasFocus(80) + !Container.Content(TVShows)">$LOCALIZE[208] $LOCALIZE[291]</value>
-	<value description="לך לסדרה" condition="Control.HasFocus(8) + Container.Content(TVShows)">$LOCALIZE[79073]</value>
+	<value description="בחירת סדרה:" condition="Control.HasFocus(8) + Container.Content(TVShows)">$LOCALIZE[20356]</value>
 	<value description="נגן קדימון" condition="Control.HasFocus(11) | Control.HasFocus(7120)">$LOCALIZE[208] $LOCALIZE[20410]</value>
 	<value description="חיפוש קדימון" condition="Control.HasFocus(7140)">$LOCALIZE[137] $LOCALIZE[20410]</value>
 	<value description="רענן פרטים" condition="Control.HasFocus(6)">$LOCALIZE[184] $LOCALIZE[33029]</value>
@@ -195,7 +185,7 @@
 	<value description="דרג" condition="Control.HasFocus(14)">Rate</value>
 	<value description="סרטים נוספים של כותב זה" condition="Control.HasFocus(15)">$LOCALIZE[31135]</value>
 	<value description="עוד..." condition="Control.HasFocus(26)">$LOCALIZE[22082]</value>
-	<value description="חזור" condition="Control.HasFocus(27)">$LOCALIZE[79075]</value>
+	<value description="יציאה" condition="Control.HasFocus(27)">$LOCALIZE[13012]</value>
   </variable>
   <variable name="DirectorButton" description="סרטים נוספים של הבמאי">
     <value condition="Control.HasFocus(7141) + StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Director)">[COLOR yellow][B]$INFO[ListItem.Director][/B][/COLOR] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
@@ -218,18 +208,6 @@
   <variable name="RightMenuDialogVideoInfo5">
     <value condition="StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Premiered)">$INFO[ListItem.Premiered] [COLOR=white]$LOCALIZE[20416]:[/COLOR]</value>
 	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Premiered)">[COLOR=white]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Premiered]</value>
-  </variable>
-  <variable name="RightMenuDialogVideoInfo6">
-    <value condition="StringCompare(System.Language,Hebrew)"></value>
-	<value condition="!StringCompare(System.Language,Hebrew)"></value>
-  </variable>
-  <variable name="RightMenuDialogVideoInfo7">
-    <value condition="StringCompare(System.Language,Hebrew)">$INFO[ListItem.Path] [COLOR=white]$LOCALIZE[78292]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">[COLOR=white]$LOCALIZE[78292]:[/COLOR] $INFO[ListItem.Path]</value>
-  </variable>
-  <variable name="RightMenuDialogVideoInfo8">
-    <value condition="StringCompare(System.Language,Hebrew)"></value>
-	<value condition="!StringCompare(System.Language,Hebrew)"></value>
   </variable>
   <variable name="fanart" description="פאנארט">
 	<value condition="!IsEmpty(ListItem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
@@ -340,8 +318,6 @@
 	<value condition="Window.IsVisible(DialogFullScreenInfo.xml) + !IsEmpty(Window(home).Property(TopVideoInformation5))">$INFO[Window(home).Property(TopVideoInformation5)]</value>
 	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Description)) + !IsEmpty(ListItem.Property(Addon.Summary))">[COLOR=yellow]$INFO[ListItem.Property(Addon.Summary)][/COLOR][CR][CR]$INFO[ListItem.Property(Addon.Description)]</value>
 	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Description)) + IsEmpty(ListItem.Property(Addon.Summary))">[COLOR=yellow]$INFO[ListItem.Property(Addon.Summary)][/COLOR][CR][CR]$INFO[ListItem.Property(Addon.Description)]</value>
-	<!--<value description="הרחבה" condition="[Container.content(addons) | Window.IsActive(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
-    <value description="הרחבה" condition="[Container.content(addons) | Window.IsActive(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Summary))">$INFO[ListItem.Property(Addon.Summary)]</value>-->
 	<value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
 	<value condition="Container.Content(Seasons) |  Container.Content(Episodes) + !IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
 	<value description="פרטי סרט - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(plot))">[B]$INFO[Container(311).ListItem.Property(plot)][/B]</value>
@@ -519,7 +495,7 @@
 	<value description="סדרות טלוויזיה_he" condition="StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://tvshows,left) | SubString(Container.FolderPath,library://video/tvshows) | SubString(Container.FolderPath,special://userdata/library/tvshows/)] + !SubString(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] $LOCALIZE[20343] $ADDON[script.featherence.service 77] </value>
 	<value description="סדרות טלוויזיה_en" condition="!StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://tvshows,left) | SubString(Container.FolderPath,library://video/tvshows) | SubString(Container.FolderPath,special://userdata/library/tvshows/)] + !SubString(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) $LOCALIZE[20343] $ADDON[script.featherence.service 77] [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] </value>
 	<value description="מוזיקה" condition="Window.IsActive(MyMusicNav.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR] $LOCALIZE[2] $ADDON[script.featherence.service 77] [/B]</value> <!--SubString(Container.FolderPath,musicdb://,left)-->
-	<value description="מנהל הרחבות" condition="Window.IsVisible(AddonBrowser.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR][/B]</value> <!-- $LOCALIZE[79040]-->
+	<value description="מנהל הרחבות" condition="Window.IsVisible(AddonBrowser.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR][/B]</value>
 	<value description="PVR" condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide) | Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(MyPVRGuide.xml)">($INFO[Container.NumItems]) [COLOR white2][B]$VAR[ChannelGroupName][/B][/COLOR]</value>
 	<value description="מזג אוויר" condition="Window.IsVisible(MyWeather.xml)">$INFO[System.CurrentWindow] ($INFO[Weather.Plugin])</value>
 	<value description="עיצוב מעטפת" condition="Window.IsVisible(CustomHomeCustomizer.xml)">$LOCALIZE[76196] ($INFO[Container.NumItems])</value>
@@ -551,7 +527,7 @@
 	<value description="מנגן ערוץ_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasVideo + [!IntegerGreaterThan(Player.TimeRemaining,1) | SubString(Player.FolderPath,rtmp://)] + !IsEmpty(Player.Title)">$LOCALIZE[79033] $LOCALIZE[19078] [COLOR yellow]$INFO[Player.Title][/COLOR]</value>
 	<value description="מנגן ערוץ (PVR)_he" condition="StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">[COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[79033] $LOCALIZE[19078] </value>
 	<value description="מנגן ערוץ (PVR)_en" condition="!StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">$LOCALIZE[79033] $LOCALIZE[19078] [COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR]</value>
-	<value description="מקליט ערוץ (PVR)" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsRecording">[COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[79199] $LOCALIZE[19078] </value>
+	<value description="מקליט ערוץ (PVR)" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsRecording">[COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[264] $LOCALIZE[19078] </value>
 	<value description="מנגן הקלטה" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingRecording">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.ChannelName]) [/COLOR] $LOCALIZE[79033] $LOCALIZE[264]: </value>
 	<value description="מנגן וידאו_he" condition="StringCompare(System.Language,Hebrew) + !IsEmpty(VideoPlayer.Title)">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR] $LOCALIZE[79033] $LOCALIZE[157]: </value>
 	<value description="מנגן וידאו_en" condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(VideoPlayer.Title)">$LOCALIZE[79033] $LOCALIZE[157]: [COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR]</value>
@@ -585,9 +561,8 @@
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.EXIFDate) + !IsEmpty(Slideshow.Filedate)]">[COLOR red][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + SubString(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות מהאייפון/אייפד[/B][/COLOR]</value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
-	<value condition="StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Skin.HasSetting(View50_Plus2)">•••••••</value> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
-	<value condition="!IsEmpty(ListItem.Label) + [IsEmpty(Control.GetLabel(1105)) + IsEmpty(Control.GetLabel(1106))]">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
-	<!--<value condition="!IsEmpty(System.CurrentControl) + !Window.IsVisible(MyVideoNav.xml)">[COLOR yellow][B]$INFO[System.CurrentControl][/B][/COLOR]</value>--> <!-- + [Window.IsVisible(MyVideoNav.xml) + !StringCompare(ListItem.Label,$VAR[VideoInformation1]) | !Window.IsVisible(MyVideoNav.xml)]-->
+	<value condition="StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Skin.HasSetting(View50_Plus2)">•••••••</value>
+	<value condition="!IsEmpty(ListItem.Label) + [IsEmpty(Control.GetLabel(1105)) + IsEmpty(Control.GetLabel(1106))]">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value>
   </variable>
   
   <variable name="TopVideoInformation1112a">
@@ -673,8 +648,8 @@
 	<variable name="DialogSelectTitle">
 	  <value condition="Control.IsVisible(3)">$INFO[Control.GetLabel(1)] ($INFO[Container(3).NumItems])</value>
 	  <value condition="Control.IsVisible(6)">$INFO[Control.GetLabel(1)] ($INFO[Container(6).NumItems])</value>
-	  <value condition="Control.IsVisible(3) + IsEmpty(Contol.GetLabel(1))">$LOCALIZE[79060] ($INFO[Container(3).NumItems])</value>
-	  <value condition="Control.IsVisible(6) + IsEmpty(Contol.GetLabel(1))">$LOCALIZE[79060] ($INFO[Container(6).NumItems])</value>
+	  <value condition="Control.IsVisible(3) + IsEmpty(Contol.GetLabel(1))">$ADDON[script.featherence.service 31] ($INFO[Container(3).NumItems])</value>
+	  <value condition="Control.IsVisible(6) + IsEmpty(Contol.GetLabel(1))">$ADDON[script.featherence.service 31] ($INFO[Container(6).NumItems])</value>
 	</variable>
 	<variable name="ManualColor">
 	  <value condition="!IsEmpty(Window(home).Property(SelectedColor))">$INFO[Window(home).Property(SelectedColor)]</value>

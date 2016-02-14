@@ -4,7 +4,6 @@
     <control type="button">
 	  <onfocus description="Button.ID_BASE" condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.ID_,$INFO[Container(9000).ListItemNoWrap(0).Property(id)],home)</onfocus>
 	  <!--<onfocus description="Button.ID_BASE-CustomHome" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.ID_,$INFO[Container(50).ListItemNoWrap(0).Property(id)],home)</onfocus>-->
-	  
 	  <onfocus description="Button.ID-Home" condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.ID,$INFO[Container(9000).ListItem(0).Label2],home)</onfocus>
 	  <onfocus description="Button.Name-Home" condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.Name,$INFO[System.CurrentControl],home)</onfocus>
 	  
@@ -26,6 +25,7 @@
   <include name="Design_TopButtons">
 	<control type="grouplist" id="9009" description="כפתורים עליונים">
 	  <include>Fade10</include>
+	  <animation condition="System.IdleTime(60)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
 	  <visible>[Window.IsVisible(Home.xml) + !Skin.HasSetting(widget) + [Control.IsVisible(311) | Control.IsVisible(312)]] | !Window.IsVisible(Home.xml)</visible>
 	  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml) | !Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 	  <visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
@@ -143,6 +143,7 @@
 	  <onup condition="Control.IsVisible(700)">700</onup>
 	  <onup condition="Control.IsVisible(9009)">9009</onup>
 	  <onup>520</onup>
+	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + !StringCompare(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction)">ActivateWindow(1138)</ondown>
 	  <ondown>noop</ondown>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
 	  <orientation>horizontal</orientation>
@@ -165,10 +166,12 @@
 	  <height>920</height>
 	  <onup>9000</onup>
 	  <ondown>9000</ondown>
+	  <onright description="openSUB-he" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + !StringCompare(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + StringCompare(System.Language,Hebrew)">ActivateWindow(1138)</onright>
 	  <onright condition="Control.IsVisible(7011) + !StringCompare(System.Language,Hebrew)">7017</onright>
 	  <onright condition="Control.IsVisible(700) + !StringCompare(System.Language,Hebrew)">700</onright>
 	  <onright condition="Control.IsVisible(9009) + !StringCompare(System.Language,Hebrew)">9009</onright>
 	  <onright>520</onright>
+	  <onleft description="openSUB-he" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + !StringCompare(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + !StringCompare(System.Language,Hebrew)">ActivateWindow(1138)</onleft>
 	  <onleft condition="Control.IsVisible(7011) + StringCompare(System.Language,Hebrew)">7017</onleft>
 	  <onleft condition="Control.IsVisible(700) + StringCompare(System.Language,Hebrew)">700</onleft>
 	  <onleft condition="Control.IsVisible(9009) + StringCompare(System.Language,Hebrew)">9009</onleft>

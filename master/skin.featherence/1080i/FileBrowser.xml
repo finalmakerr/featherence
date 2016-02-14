@@ -33,7 +33,8 @@
         <include>4ways3</include>
         <orientation>Vertical</orientation>
 	    <control type="button" id="413" description="OK">
-          <include>SideMenuCommon</include>
+          <onclick>SetProperty(TEMP2,ok,home)</onclick>
+		  <include>SideMenuCommon</include>
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>

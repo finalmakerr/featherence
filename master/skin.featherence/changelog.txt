@@ -2,11 +2,22 @@
 WIP - WORK IN PROGRESS
 ------------------------
 - Added clear fanart support.
-- Bottom - SubMenu / Enter - Main Button. Horizontal only.
 - Horizontal view display position for multipages.
 - Return home preserve previous location.
 - Touch device support.
 - Widget auto refresh on condition.
+
+------------------------
+Featherence v0.4.4 (14-Feb-16)
+------------------------
+- Added action change for default buttons.
+- Added additonal Sub Menu action method.
+  You may use it to activate main button on a click or sub menu on an arrow click (depend on your current layout).
+- Added full video information on pause.
+- Added Save and Load button shortcut in Skin Design window.
+- Fixed path (special://) for buttons's Icons and fanart.
+  You may save then load to create special:// path for your current buttons all at once.
+- Minor bugs fix.
 
 ------------------------
 Featherence v0.4.2 (11-Feb-16)

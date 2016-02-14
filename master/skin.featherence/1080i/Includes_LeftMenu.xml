@@ -97,7 +97,7 @@
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
-		  <label>$LOCALIZE[79044]</label>
+		  <label>$LOCALIZE[31806]</label>
 		  <selected>!Skin.HasSetting(ShowTopVideoInformation)</selected>
 		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])">Skin.ToggleSetting(ShowTopVideoInformation)</onclick>
 		  <!--<onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])">ReplaceWindow(videolibrary)</onclick>-->
@@ -486,6 +486,7 @@
 		<width>870</width>
 		<onleft>PageUp</onleft>
 		<onright>PageDown</onright>
+        <onup condition="Control.IsVisible(30)">30</onup>
         <onup>3</onup>
         <ondown condition="Control.IsVisible(30)">30</ondown>
 		<ondown>3</ondown>
@@ -518,7 +519,7 @@
             </control>
 			<control type="label" description="שם (רחב)">
               <posx>45</posx>
-              <width>870</width>
+              <width>850</width>
               <height>70</height>
               <textcolor>white</textcolor>
 			  <scroll>false</scroll>
@@ -576,9 +577,10 @@
 		<width>580</width>
         <onleft>PageUp</onleft>
 		<onright>PageDown</onright>
-        <onup>5</onup>
+        <onup condition="Control.IsVisible(30)">30</onup>
+		<onup>6</onup>
 		<ondown condition="Control.IsVisible(30)">30</ondown>
-        <ondown>6</ondown>	
+        <ondown>6</ondown>
 		<pagecontrol>60</pagecontrol>
 		<posy>70</posy>
 		<itemlayout description="()" height="60" width="870">
@@ -608,7 +610,7 @@
             </control>
 			<control type="label" description="שם (רחב)">
               <posx>95</posx>
-              <width>520</width>
+              <width>850</width>
               <height>66</height>
               <textcolor>white</textcolor>
 			  <scroll>false</scroll>
@@ -871,39 +873,6 @@
 	<include>button2_views</include>
 	<include>button3_sort</include>
 	<include>button4_sortorder</include>
-	<control type="button" id="133" description="חיפוש משחקים">
-	  <include>SideMenuCommon</include>
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-	  <label>$LOCALIZE[137] $LOCALIZE[15016]</label>
-	  <!--<onclick>RunScript(plugin.program.advanced.launcher,?STRING_QUERY/%%SEARCH_CODE%%)</onclick>-->
-	  <onclick>Skin.SetString(search1)</onclick>
-	  <onclick>ActivateWindow(10001,"plugin://plugin.program.advanced.launcher/?$INFO[Skin.String(search1)]/%%SEARCH_ITEM%%")</onclick>
-	  <onclick condition="true">AlarmClock(search1,Action(Right),0,silent)</onclick>
-	  <!--<onclick condition="!StringCompare(Container.Viewmode,romPT)">AlarmClock(romPTview,Container.NextViewMode,0,silent)</onclick>-->
-	  <!--<onclick condition="true">AlarmClock(Games1,Container.SetViewMode(58),0,silent)</onclick>-->
-	  <!--<onclick>AlarmClock(testme,Container.NextViewMode,0,silent)</onclick>-->
-	  <visible>StringCompare(Container.FolderName,Advanced Launcher)</visible>
-	</control>
-	<control type="button" id="130" description="מצב גויסטיק">
-	  <include>SideMenuCommon</include>
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-	  <font>size28</font>
-	  <label>$LOCALIZE[79035]</label>
-	  <onclick condition="System.HasAddon(script.featherence.emu)">RunScript(script.featherence.emu,,?mode=2)</onclick>
-	  <visible>StringCompare(Container.FolderName,Advanced Launcher) + System.HasAddon(script.featherence.emu)</visible>
-	  <visible>System.Platform.Linux + !System.Platform.Android + System.HasAddon(service.openelec.settings) | Skin.HasSetting(Admin)]</visible>
-	</control>
-	<control type="button" id="132" description="אפשר תמיכת גויסטיק">
-	  <include>SideMenuCommon</include>
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-	  <font>size28</font>
-	  <label>$LOCALIZE[79034]</label>
-	  <onclick condition="System.HasAddon(script.featherence.emu)">RunScript(script.featherence.emu,,?mode=1)</onclick>
-	  <visible>StringCompare(Container.FolderName,Advanced Launcher) + System.HasAddon(script.featherence.emu)</visible> <!--!System.GetBool(input.enablejoystick)-->
-	</control>
 	<include>openViewSettings9001</include>
 	<include>AutoViewSettingsButton</include>
 	<include>CommonLeftMenuButtons</include>

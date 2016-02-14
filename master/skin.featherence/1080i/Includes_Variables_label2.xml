@@ -274,6 +274,11 @@
 	<value condition="!Skin.HasSetting(ReshapeIcons)">$LOCALIZE[106]</value>
   </variable>
   
+  <variable name="216label2" description="פעולת כפתור משני">
+    <value condition="Skin.HasSetting(SubMenuAction)">$LOCALIZE[107]</value>
+	<value condition="!Skin.HasSetting(SubMenuAction)">$LOCALIZE[106]</value>
+  </variable>
+  
   <variable name="220label2">
     <value condition="!Skin.HasSetting(background)">$LOCALIZE[107]</value>
 	<value condition="Skin.HasSetting(background)">$LOCALIZE[106]</value>
@@ -348,6 +353,11 @@
 	<value condition="Skin.String(DialogKaiToastPos,3)">N</value>
 	<value condition="Skin.String(DialogKaiToastPos,4)">NW</value>
 	<value condition="Skin.String(DialogKaiToastPos,5)">NE</value>-->
+  </variable>
+  
+  <variable name="398label2">
+    <value condition="!Skin.HasSetting(DefaultActionButtons)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(DefaultActionButtons)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="ReloadSkin_check">

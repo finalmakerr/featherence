@@ -21,6 +21,7 @@ def CATEGORIES():
 	'''---------------------------'''
 	addDir(addonString(118).encode('utf-8'),'',118,featherenceserviceicons_path + 'classical.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(118).encode('utf-8')),'1',50, getAddonFanart(118)) #Classical Music
 	addDir(addonString(119).encode('utf-8'),'',119,featherenceserviceicons_path + 'radio.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(119).encode('utf-8')),'1',50, getAddonFanart(119)) #Radio
+	addDir(localize(10516),'ActivateWindow(MusicFiles,root)',201,featherenceserviceicons_path + 'music.png',"Local Kodi's music library",'1',50, getAddonFanart(100)) #
 	
 def CATEGORIES100(name, iconimage, desc, fanart):
 	'''------------------------------
@@ -93,7 +94,7 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.wallpapersbyte.com/wp-content/uploads/2015/06/Downolad-HD-Wallpaper-France-Paris-City-Eiffel-Tower-Sunset-WallpapersByte-com-1920x1080.jpg'
 	addDir('Great French Collection',templates2_path + 'Great French Collection.txt',2,thumb,name + '','1',50, fanart)
 	
-        '''Twilight Time'''
+	'''Twilight Time'''
 	thumb = 'http://cps-static.rovicorp.com/3/JPG_400/MI0003/649/MI0003649662.jpg?partner=allrovi.com'
 	fanart = 'http://screencast.com/t/t85VTb1XCb'
 	addDir('Twilight Time - Oldies',templates2_path + 'Twilight Time.txt',2,thumb,name + '','1',50, fanart)

@@ -35,7 +35,7 @@
 		<onclick>RunScript(script.featherence.service,,?mode=232&amp;value=)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
-		<visible>[!Window.IsVisible(Custom1138.xml) + IntegerGreaterThan(Window(home).Property(Button.ID),99) + !IntegerGreaterThan(Window(home).Property(Button.ID),200)] | [Window.IsVisible(Custom1139.xml) + !SubString(Window(home).Property(SubButton.ID_),_90)]</visible>
+		<visible>[!Window.IsVisible(Custom1138.xml) + [IntegerGreaterThan(Window(home).Property(Button.ID),99) | Skin.HasSetting(DefaultActionButtons) + IntegerGreaterThan(Window(home).Property(Button.ID),89)] + !IntegerGreaterThan(Window(home).Property(Button.ID),200)] | [Window.IsVisible(Custom1139.xml) + !SubString(Window(home).Property(SubButton.ID_),_90)]</visible>
 	  </item>
 	  <item id="704" description="הזזת פריט">
 		<label>13251</label>
@@ -91,7 +91,7 @@
 		<visible>!Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>  
 	  <item id="711" description="תפריט משני">
-		<label>$LOCALIZE[79592]</label>
+		<label>$LOCALIZE[31800]</label>
 		<onclick>ActivateWindow(1138)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/medal.png</thumb>
@@ -196,11 +196,11 @@
 	  <label>$LOCALIZE[208] $LOCALIZE[19029]</label>
 	  <visible>Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
 	</control>
-	<control type="button" id="6" description="הקלט ערוץ">
+	<control type="button" id="6" description="הקלטה">
 	  <width>480</width>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
-	  <label>$LOCALIZE[79199] $LOCALIZE[19029]</label>
+	  <label>$LOCALIZE[264]</label>
 	  <visible>Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
 	</control>
 	<!--

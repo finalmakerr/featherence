@@ -316,11 +316,21 @@
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>
 	  
+	  <item id="216" description="פעולת כפתור משני">
+		<label>$LOCALIZE[31069]</label>
+		<label2>$VAR[216label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
+		<property name="rinfo">$LOCALIZE[31070]</property>
+		<onclick>Skin.ToggleSetting(SubMenuAction)</onclick>
+		<visible>Container(100).Hasfocus(20)</visible>
+		<visible>![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
+	  </item>
+	  
 	  <item id="218" description="שקיפות (סמן תפריט משני)">
-		<label>$LOCALIZE[78215] ($LOCALIZE[79593])</label>
+		<label>$LOCALIZE[78215] ($LOCALIZE[31801])</label>
 		<label2>$INFO[Skin.String(SubMenuMarkOverlay)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/eye.png</thumb>
-		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[79593].</property>
+		<property name="rinfo">$LOCALIZE[78024] $LOCALIZE[31801].</property>
 		<onclick condition="Skin.String(SubMenuMarkOverlay, )">Skin.SetString(SubMenuMarkOverlay, 100)</onclick>
 		<onclick condition="Skin.String(SubMenuMarkOverlay, 100)">Skin.SetString(SubMenuMarkOverlay, 95)</onclick>
 		<onclick condition="Skin.String(SubMenuMarkOverlay, 95)">Skin.SetString(SubMenuMarkOverlay, 90)</onclick>
@@ -342,10 +352,10 @@
 	  </item>
 	  
 	  <item id="219" description="צבע סמן תפריט משני">
-		<label>$LOCALIZE[737] $LOCALIZE[79593]</label>
+		<label>$LOCALIZE[737] $LOCALIZE[31801]</label>
 		<label2>$INFO[Skin.String(SubMenuMarkColor.name)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/colorpalette.png</thumb>
-		<property name="rinfo">$LOCALIZE[79599]</property>
+		<property name="rinfo">$LOCALIZE[31802]</property>
 		<onclick>SetProperty(TEMP,SubMenuMarkColor,home)</onclick>
 		<onclick>ActivateWindow(1170)</onclick>
 		<visible>Container(100).Hasfocus(20)</visible>
@@ -459,7 +469,7 @@
 	  </item>
 	  	  	  
 	  <item id="229" description="פאנארט-תפריט משני">
-		<label>$LOCALIZE[20445]-$LOCALIZE[79592]</label>
+		<label>$LOCALIZE[20445]-$LOCALIZE[31800]</label>
 		<label2>$VAR[229label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/image.png</thumb>
 		<property name="rinfo">$LOCALIZE[31091]</property>
@@ -817,10 +827,10 @@
 	  
 	  
 	  <item id="392" description="איפוס הגדרות מעטפת">
-		<label>$LOCALIZE[79517]</label>
+		<label>$LOCALIZE[31803]</label>
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/so.png</thumb> <!--misc/help/ResetSetting20Button.png-->
-		<property name="rinfo">$LOCALIZE[79499]</property>
+		<property name="rinfo">$LOCALIZE[31804]</property>
 		<onclick>RunScript(script.featherence.service,,?mode=40&amp;value=1)</onclick>
 		<visible>Container(100).Hasfocus(25)</visible>
 	  </item>
@@ -843,7 +853,7 @@
 		<visible>Container(100).Hasfocus(25)</visible>
 	  </item>
 	  
-	  <item id="392" description="שמירה וטעינת הגדרות עיצוב">
+	  <item id="392" description="שמירה/טעינה">
 		<label>$LOCALIZE[31003]</label>
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/flpp.png</thumb>
@@ -868,6 +878,15 @@
 		<property name="rinfo">$LOCALIZE[31036]</property>
 		<onclick condition="!Skin.String(CustomBackgroundsPath)">Skin.SetPath(CustomBackgroundsPath)</onclick>
 		<onclick condition="Skin.String(CustomBackgroundsPath)">Skin.SetString(CustomBackgroundsPath,)</onclick>
+		<visible>Container(100).Hasfocus(25)</visible>
+	  </item>
+	  
+	  <item id="398" description="אפשר שינוי פעולת כפתורי ברירת מחדל">
+		<label>$LOCALIZE[31067]</label>
+		<label2>$VAR[398label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
+		<property name="rinfo">$LOCALIZE[31068]</property>
+		<onclick>Skin.ToggleSetting(DefaultActionButtons)</onclick>
 		<visible>Container(100).Hasfocus(25)</visible>
 	  </item>
 	  
@@ -903,8 +922,8 @@
 		<!--<visible>Skin.HasSetting(Admin) | Skin.HasSetting(Admin2)</visible>-->
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
-	   <item id="14" description="LiveTV">
-		<label>$LOCALIZE[79028]</label>
+	   <item id="14" description="ערוצי טלוויזיה">
+		<label>$LOCALIZE[19023]</label>
 		<label2>$VAR[14label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/LiveTV.png</thumb>
 		<property name="rinfo"></property>
@@ -1015,11 +1034,9 @@
 		<label2>$INFO[Window(home).Property(Remote_Name)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/remoteb.png</thumb>
 		<property name="rinfo">$LOCALIZE[78897][CR]$LOCALIZE[78898]</property>
-		<onclick condition="System.HasAddon(script.featherence.remote)">RunScript(script.featherence.remote)</onclick>
-		<onclick condition="!System.HasAddon(script.featherence.remote)">ActivateWindow(10025,plugin://script.featherence.remote)</onclick>
-		<onclick condition="!System.HasAddon(script.featherence.remote)">AlarmClock(back,Action(Previous),00:01,silent)</onclick>
+		<onclick>RunScript(script.featherence.service,,?mode=27)</onclick>
 		<visible>Container(100).Hasfocus(2)</visible>
-		<visible>System.Platform.Linux + !System.Platform.Android + !System.Platform.Linux.RaspberryPi + System.HasAddon(service.openelec.settings)</visible>
+		<visible>System.Platform.Linux + !System.Platform.Android + !System.Platform.Linux.RaspberryPi + System.HasAddon(service.openelec.settings) + System.HasAddon(script.featherence.service)</visible>
 	  </item>
 	  <item id="24" description="מזג אוויר">
 		<label>8</label>
@@ -1086,7 +1103,7 @@
 		<visible>Container(100).Hasfocus(3)</visible>
 	  </item>
 	  <item id="34" description="מנהל הרחבות">
-		<label>$LOCALIZE[79040]</label>
+		<label>$LOCALIZE[31807]</label>
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/megaphone.png</thumb>
 		<property name="rinfo"></property>
@@ -1202,7 +1219,7 @@
 		<label>$LOCALIZE[135] $LOCALIZE[1411] $LOCALIZE[1]</label>
 		<label2>$VAR[15label2]</label2>
 		<thumb>misc/help/genre.png</thumb>
-		<property name="rinfo">$LOCALIZE[78278]$LOCALIZE[79101]</property>
+		<property name="rinfo">$LOCALIZE[78278]</property>
 		<onclick>Skin.ToggleSetting(Genre)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
@@ -1278,10 +1295,10 @@
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
 	  <item id="80" description="איפוס הגדרות מעטפת">
-		<label>$LOCALIZE[79517]</label>
+		<label>$LOCALIZE[31803]</label>
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/so.png</thumb>
-		<property name="rinfo">$LOCALIZE[79499]</property>
+		<property name="rinfo">$LOCALIZE[31804]</property>
 		<onclick>RunScript(script.featherence.service,,?mode=40&amp;value=1)</onclick>
 		<visible>Container(100).Hasfocus(4)</visible>
 	  </item>

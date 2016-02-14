@@ -17,6 +17,7 @@
 	<!--<include condition="Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)">MenuDesign_Widget</include>-->
 	
 	  <include>TopInformation</include>
+	  <include>TopVideoInformation</include>
 	</control>
   </controls>
 

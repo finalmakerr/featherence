@@ -174,7 +174,7 @@
 		  </control>
 		  <control type="button" id="983" description="הדגש">
 			<height>75</height>
-			<label>$LOCALIZE[79037]</label>
+			<label>$LOCALIZE[31809]</label>
 			<onclick>Action(BackSpace)</onclick>
 			<onclick>AlarmClock(HighLight,Action(Highlight),0,silent)</onclick>
 			<!--<onclick>Notification($INFO[ListItem.IsSelected],,1000)</onclick>-->

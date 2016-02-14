@@ -87,7 +87,8 @@
 	  <width>40</width>
 	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-405,0">Conditional</animation>
 	  <control type="image" description="סמן נצפה רגיל">
-		  <animation condition="!StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0">Conditional</animation>
+		  <animation condition="!StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="14,0">Conditional</animation>
+		  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-8,0">Conditional</animation>
 		  <height>40</height>
 		  <posy>-2</posy>
 		  <texture colordiffuse="$VAR[IconUמFocusColor]">$VAR[Overlay2]</texture>
@@ -161,6 +162,7 @@
 	<include>onfocus_SetProperty_TopVideoInformation</include>
 	<control type="image" description="מסגרת">
 	  <animation condition="!Skin.HasSetting(View50_Plus)" effect="zoom" center="0,0" start="100,100" end="100,200">Conditional</animation>
+	  <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="10">Conditional</animation>
 	  <posx>0</posx>
 	  <posy>-5</posy>
 	  <width>480</width>

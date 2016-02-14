@@ -94,7 +94,7 @@
                 <itemlayout width="1360" height="54">
 				    <include name="Buttons_Frame">
 						<param name="id" value="" />
-						<param name="border" value="35" />
+						<param name="border" value="30" />
 						<param name="color" value="$VAR[ButtonUnFocusColor]" />
 						<param name="condition" default="true"/>
 						<param name="height" value="60" />
@@ -189,7 +189,7 @@
 					  <visible>Control.HasFocus(120)</visible>
 					  <include name="Buttons_Frame">
 						<param name="id" value="" />
-						<param name="border" value="35" />
+						<param name="border" value="30" />
 						<param name="color" value="$VAR[ButtonFocusColor]" />
 						<param name="condition" default=""/>
 						<param name="height" value="60" />
@@ -202,7 +202,7 @@
 					  <visible>!Control.HasFocus(120)</visible>
 					  <include name="Buttons_Frame">
 						<param name="id" value="" />
-						<param name="border" value="35" />
+						<param name="border" value="30" />
 						<param name="color" value="$VAR[ButtonUnFocusColor]" />
 						<param name="condition" default=""/>
 						<param name="height" value="60" />
@@ -315,7 +315,7 @@
 			  <ondown>160</ondown>
 			  <onclick>RunScript(script.featherence.service,,?mode=8)</onclick>
 			  <visible>!IsEmpty(Window(home).Property(VideoPlayer.Title)) | !Skin.HasSetting(Admin)</visible>
-              <label>$LOCALIZE[79038]</label>
+              <label>$LOCALIZE[31808]</label>
             </control>
             <control type="button" id="160" description="חיפוש ידני">
 			  <include>SideMenuCommon</include>
@@ -346,7 +346,7 @@
 			  <itemlayout width="450" height="65">
 			    <include name="Buttons_Frame">
 					<param name="id" value="" />
-					<param name="border" value="40" />
+					<param name="border" value="30" />
 					<param name="color" value="$VAR[ButtonUnFocusColor]" />
 					<param name="condition" default="true"/>
 					<param name="height" value="70" />
@@ -386,7 +386,7 @@
 				  <visible>Control.HasFocus(150) + !Control.HasFocus(160) + !Control.HasFocus(161) + !Control.HasFocus(120)</visible>
 				  <include name="Buttons_Frame">
 					<param name="id" value="" />
-					<param name="border" value="40" />
+					<param name="border" value="30" />
 					<param name="color" value="$VAR[ButtonFocusColor]" />
 					<param name="condition" default="true"/>
 					<param name="height" value="70" />
@@ -399,7 +399,7 @@
 				  <visible>![Control.HasFocus(150) + !Control.HasFocus(160) + !Control.HasFocus(161) + !Control.HasFocus(120)]</visible>
 				  <include name="Buttons_Frame">
 					<param name="id" value="" />
-					<param name="border" value="40" />
+					<param name="border" value="30" />
 					<param name="color" value="$VAR[ButtonUnFocusColor]" />
 					<param name="condition" default="true"/>
 					<param name="height" value="70" />
