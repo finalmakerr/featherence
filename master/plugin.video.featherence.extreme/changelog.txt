@@ -3,6 +3,13 @@ WIP (WORK IN PROGRESS)
 ------------------------
 
 ------------------------
+Featherence Extreme v0.1.x (xx-Feb-16)
+------------------------
+- *Added Google Drive and direct links support.
+  Those are also support TV Mode.
+  *Send your URLS if you want to share.
+  
+------------------------
 Featherence Extreme v0.1.5 (03-Feb-16)
 ------------------------
 - Update addon information.

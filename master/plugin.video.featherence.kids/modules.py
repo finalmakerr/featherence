@@ -7,6 +7,7 @@ if "plugin." in addonID: from shared_modules3 import *
 from modules101 import *
 from modules102 import *
 from modules104 import *
+from modules105 import *
 from modules106 import *
 from modules107 import *
 from modules108 import *
@@ -556,7 +557,7 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	if 'Hebrew' in General_LanguageL:
 		list.append('&sdarot=series_id=1461&series_name=iron-man-%d7%90%d7%99%d7%99%d7%a8%d7%95%d7%9f-%d7%9e%d7%9f-%d7%9e%d7%93%d7%95%d7%91%d7%91&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1461%2firon-man-%d7%90%d7%99%d7%99%d7%a8%d7%95%d7%9f-%d7%9e%d7%9f-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 		list.append('&sdarot=series_id=2087&series_name=iron-man-armored-adventures-%d7%90%d7%99%d7%99%d7%a8%d7%95%d7%9f-%d7%9e%d7%9f-%d7%9e%d7%93%d7%95%d7%91%d7%91&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f2087%2firon-man-armored-adventures-%d7%90%d7%99%d7%99%d7%a8%d7%95%d7%9f-%d7%9e%d7%9f-%d7%9e%d7%93%d7%95%d7%91%d7%91')
-	addDir('איירון מן',list,6,'http://www.sdarot.pm/media/series/1461.jpg','','1',50, getAddonFanart(background, custom="http://images.alphacoders.com/482/482291.jpg"))
+	addDir('איירון מן',list,6,'http://pics.filmaffinity.com/Ironman_Iron_Man_TV_Series-688204837-large.jpg','','1',50, getAddonFanart(background, custom="http://images.alphacoders.com/482/482291.jpg"))
 	
 	'''אלאדין'''
 	list = []
@@ -766,7 +767,6 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 		list.append('&youtube_id=zWwqxZPg8as') #Hebrew
 		list.append('&youtube_id=yLMFuFM5b7U') #Hebrew
 		list.append('&youtube_id=VYxab_Lh0gg') #Hebrew
-		list.append('&youtube_id=EjpsfP86Neo') #Hebrew
 	if 'Serbian' in General_LanguageL:
 		list.append('&youtube_pl=PL810CC2AF30CEFF13') #Serbian
 	addDir(addonString(10417).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/448.jpg',addonString(104170).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
@@ -1779,7 +1779,7 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	addDir(addonString(10486).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/821.jpg',addonString(104860).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
 	
 	'''Walt Disney Cartoons*'''
-	thumb = 'http://img15.deviantart.net/9b16/i/2011/212/e/e/walt_disney_pictures_logo_icon_by_mahesh69a-d42bchp.png'
+	thumb = 'http://everythinglists.com/wp-content/uploads/2013/10/Looney-Tunes.jpg'
 	list = []
 	list.append('&custom8=plugin://plugin.video.supercartoons/?image=C%3a%5cUsers%5cgal%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.supercartoons%5cresources%5cartwork%5ccharacters.png&mode=400&page=1&title=Characters')
 	list.append('&custom4=plugin://plugin.video.supercartoons/?mode=100&title=Kids+Time+%2810+Random+Cartoons%29&image=C%3A%5CUsers%5Cgal%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.supercartoons%5Cresources%5Cartwork%5Ckidstime.png&page=1')
@@ -1814,35 +1814,8 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 	
 	CATEGORIES_RANDOM(background,fanart) #אקראי
 	CATEGORIES105Z(General_LanguageL, background, background2) #ערוצי טלוויזיה
-	
-	if 'Hebrew' in General_LanguageL:
-		check_seretil_me = urlcheck('http://seretil.me', ping=False)
-		check_10q_tv = urlcheck('http://10q.tv', ping=False)
-		check_gozlan_me = urlcheck('http://anonymouse.org/cgi-bin/anon-www.cgi/http://gozlan.eu/', ping=False)
-		check_movix_me = 'ok' #check_movix_me = urlcheck('http://www.movix.me/series', ping=True) #GAL CHECK THIS (PING)
-		
-		'''סרטים מדובבים'''
-		count = 1
-		if check_movix_me == 'ok':
-			addDir(addonString(10520).encode('utf-8') + space + str(count),'plugin://plugin.video.movixws/?iconimage=http%3a%2f%2fwww.in-hebrew.co.il%2fimages%2flogo-s.jpg&mode=2&name=Kids%20-%20%d7%99%d7%9c%d7%93%d7%99%d7%9d&url=http%3a%2f%2fwww.movix.me%2fgenres%2fKids',8,'http://www.in-hebrew.co.il/images/logo-s.jpg','','1',50,getAddonFanart(background, custom="", default=background2)) ; count += 1
-			addDir(addonString(10520).encode('utf-8') + space + str(count),'plugin://plugin.video.movixws/?iconimage=http%3a%2f%2ficons.iconarchive.com%2ficons%2fdesignbolts%2ffree-movie-folder%2f256%2fAnimated-icon.png&mode=2&name=Animation%20-%20%d7%90%d7%a0%d7%99%d7%9e%d7%a6%d7%99%d7%94&url=http%3a%2f%2fwww.movix.me%2fgenres%2fAnimation',8,'http://icons.iconarchive.com/icons/designbolts/free-movie-folder/256/Animated-icon.png','','1',50,getAddonFanart(background, custom="", default=background2)) ; count += 1
-		if check_seretil_me == 'ok':
-			#addDir(addonString(10520).encode('utf-8'),list1,6,'http://www.iphoneil.net/icone/111185-icon.png',addonString(105200).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
-			addDir(addonString(10520).encode('utf-8') + space + str(count),'plugin://plugin.video.seretil/?mode=4&name=%d7%9e%d7%93%d7%95%d7%91%d7%91%d7%99%d7%9d%20%d7%a8%d7%90%d7%a9%d7%99&url=http%3a%2f%2fseretil.me%2fcategory%2f%25D7%25A1%25D7%25A8%25D7%2598%25D7%2599%25D7%259D-%25D7%259E%25D7%2593%25D7%2595%25D7%2591%25D7%2591%25D7%2599%25D7%259D%2fpage1%2f',8,'http://blog.tapuz.co.il/seretilNET/images/3745375_1.jpg',addonString(105200).encode('utf-8'),'1',58,getAddonFanart(background, custom="", default=background2)) ; count += 1
-			#addDir('[COLOR=red]' + addonString(10520).encode('utf-8') + space + str(count) + '[/COLOR]','plugin://plugin.video.seretil/?mode=211&name=%20%d7%90%d7%95%d7%a1%d7%a3%20%d7%a1%d7%a8%d7%98%d7%99%d7%9d%20%d7%9e%d7%93%d7%95%d7%91%d7%91%d7%99%d7%9d&url=http%3a%2f%2fseretil.me%2f%25D7%2590%25D7%2595%25D7%25A1%25D7%25A3-%25D7%25A1%25D7%25A8%25D7%2598%25D7%2599%25D7%259D-%25D7%259E%25D7%2593%25D7%2595%25D7%2591%25D7%2591%25D7%2599%25D7%259D%2f',8,'http://blog.tapuz.co.il/seretilNET/images/3745375_1.jpg',addonString(196).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2)) ; count += 1
-			#addDir('[COLOR=red]' + addonString(10520).encode('utf-8') + space + str(count) + '[/COLOR]','plugin://plugin.video.seretil/?mode=211&name=%d7%90%d7%95%d7%a1%d7%a3%20%d7%9e%d7%a1%d7%a4%d7%a8%202%20%d7%a1%d7%a8%d7%98%d7%99%d7%9d%20%d7%9e%d7%93%d7%95%d7%91%d7%91%d7%99%d7%9d&url=http%3a%2f%2fseretil.me%2f%25D7%2590%25D7%2595%25D7%25A1%25D7%25A3-%25D7%2592%25D7%2593%25D7%2595%25D7%259C-%25D7%25A9%25D7%259C-%25D7%25A1%25D7%25A8%25D7%2598%25D7%2599%25D7%259D-%25D7%259E%25D7%25A6%25D7%2595%25D7%2599%25D7%25A8%25D7%2599%25D7%259D%25D7%259E%25D7%2593%25D7%2595%25D7%2591%25D7%2591%25D7%2599%25D7%259D%2f',8,'http://blog.tapuz.co.il/seretilNET/images/3745375_1.jpg',addonString(196).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2)) ; count += 1
-
-		'''סרטים מתורגמים'''
-		count = 1
-		if check_10q_tv == 'ok': 
-			addDir(addonString(10535).encode('utf-8') + space + str(count),'plugin://plugin.video.10qtv/?mode=6&name=%d7%9e%d7%a9%d7%a4%d7%97%d7%94&url=http%3a%2f%2fwww.10q.tv%2fboard%2ffilmy%2fmshfhha%2f17',8,'http://mirror.cinosure.com/superrepo/v5/addons/plugin.video.10qtv/icon.png',addonString(110).encode('utf-8'),'1',57) ; count += 1
-			addDir(addonString(10535).encode('utf-8') + space + str(count),'plugin://plugin.video.10qtv/?mode=6&name=אנימציה&url=http://www.10q.tv/board/filmy/animciha/5',8,'http://mirror.cinosure.com/superrepo/v5/addons/plugin.video.10qtv/icon.png',addonString(110).encode('utf-8'),'1',57) ; count += 1
-			'''---------------------------'''
-		if check_gozlan_me == 'ok':
-			addDir(addonString(10535).encode('utf-8') + space + str(count),'plugin://plugin.video.gozlan.me/?mode=1&name=%d7%a1%d7%a8%d7%98%d7%99%20%d7%90%d7%a0%d7%99%d7%9e%d7%a6%d7%99%d7%94&url=http%3a%2f%2fanonymouse.org%2fcgi-bin%2fanon-www.cgi%2fhttp%3a%2f%2fgozlan.co%2f%2fsearch.html%3fg%3d%25D7%2590%25D7%25A0%25D7%2599%25D7%259E%25D7%25A6%25D7%2599%25D7%2594',8,'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v5/addons/plugin.video.gozlan.me/icon.png','','1',58,getAddonFanart(background, custom="", default=background2)) ; count += 1
-			addDir(addonString(10535).encode('utf-8') + space + str(count),'plugin://plugin.video.gozlan.me/?mode=1&name=%d7%a1%d7%a8%d7%98%d7%99%20%d7%9e%d7%a9%d7%a4%d7%97%d7%94&url=http%3a%2f%2fanonymouse.org%2fcgi-bin%2fanon-www.cgi%2fhttp%3a%2f%2fgozlan.co%2f%2fsearch.html%3fg%3d%25D7%259E%25D7%25A9%25D7%25A4%25D7%2597%25D7%2594',8,'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v5/addons/plugin.video.gozlan.me/icon.png','','1',58,getAddonFanart(background, custom="", default=background2)) ; count += 1
-			'''---------------------------'''
-		
+	CATEGORIES105B(General_LanguageL, background, background2) #סרטים לילדים ב-
+	CATEGORIES105C(General_LanguageL, background, background2) #סרטים עם תרגום ב-
 	
 	'''אוגי והמקקים (2014)*'''
 	list = []
@@ -3163,7 +3136,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%f8%e5%f5%20%e3%e9%e9%e2%e5%20%f8%e5%f5!&url=http%3a%2f%2fnickjr.walla.co.il%2f%3fw%3d%2f%2f1688298')
-		list.append('&youtube_se=commonsearch101&videoDuration=long&&videoDefinition=high&')
+		list.append('&youtube_ch=UCB6woLfnHOGUo2V4L1O_xUw')
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLGlfDbXygO0aM7lIzlvQczZUIG7uWVAE_')
 		list.append('&youtube_pl=PLGlfDbXygO0bFeMr9q7HHcjnegFvr52yQ')
@@ -3476,7 +3449,7 @@ def CATEGORIES108(name, iconimage, desc, fanart):
 		#list.append('&dailymotion_pl=x3nt5q') #S5
 		list.append('&dailymotion_pl=x48aar') #S6
 		
-		list.append('&youtube_se=commonsearch101&videoDuration=long&')
+		list.append('&youtube_pl=PL5NvWknQGq-IoWfSxfH71hyT0Ec4u7VgE')
 		list.append('&sdarot=series_id=421&series_name=%d7%92%d7%90%d7%9c%d7%99%d7%a1&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f421%2fgalis-%d7%92%d7%90%d7%9c%d7%99%d7%a1')
 	addDir(addonString(10849).encode('utf-8'),list,17,'http://www.sdarot.wf/media/series/421.jpg',addonString(108490).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://niranbd.com/newcity/vcitypics/950593/976250_597922800238215_757208968_o.jpg", default=background2))
 	

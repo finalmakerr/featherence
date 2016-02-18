@@ -5,8 +5,11 @@ WIP (WORK IN PROGRESS)--
 - Add foreign singers, karaoke, liveshows.
 
 ------------------------
-Featherence Music v0.2.4 (xx-Feb-16)
+Featherence Music v0.2.4 (18-Feb-16)
 ------------------------
+*Added Google Drive and direct links support.
+  Those are also support TV Mode.
+  *Send your URLS if you want to share.
 - Added Music - Library (Kodi).
 - Amir Elgazar patch:
   - Added new playlist: Bob Dylan

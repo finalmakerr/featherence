@@ -20,6 +20,7 @@ except: pluginhandle = ""
 import geturllib
 geturllib.SetCacheDir(xbmc.translatePath(os.path.join('special://profile', 'addon_data', addonID ,'cache')))
 
+templates2_path = os.path.join(addonPath, 'resources', 'templates2', '')
 containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
 '''---------------------------'''
 General_AutoView = getsetting('General_AutoView')

@@ -176,7 +176,12 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz)
 			returned = ok
 			'''---------------------------'''
-		elif mode == 11 or mode == 15:
+		elif mode == 11:
+			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
+			liz.addContextMenuItems(items=menu, replaceItems=False)
+			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
+			returned = ok
+		elif mode == 15:
 			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
 			liz.addContextMenuItems(items=menu, replaceItems=False)
 			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
@@ -403,7 +408,17 @@ def LocalSearch(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	text = 'url2' + space2 + str(url2)
 	printlog(title='LocalSearch' + space + name, printpoint=printpoint, text=text, level=0, option="")
 	TvMode2(addonID, mode, name, url2, iconimage, desc, num, viewtype, fanart)
-		
+	
+def LocalSearch2(mode, name, url, iconimage, desc, num, viewtype, fanart):
+	'''Read lines of a file like .txt and use each line to create a folder or play'''
+	printpoint = "" ; admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)') ; value = "" ; url2 = ""
+	url2 = read_from_file(url, silent=True, lines=True, retry=True, printpoint="", addlines="", createlist=False)
+	
+	text = 'url2' + space2 + str(url2)
+	printlog(title='LocalSearch2' + space + name, printpoint=printpoint, text=text, level=0, option="")
+	mode = TvMode2(addonID, mode, name, url2, iconimage, desc, num, viewtype, fanart)
+	
+	return mode
 def YoutubeSearch(name, url, desc, num, viewtype):
 	'''Search in YouTube command'''
 	printpoint = "" ; value = ""
@@ -493,6 +508,10 @@ def PlayVideos(name, mode, url, iconimage, desc, num, fanart):
 	pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
 	pl.clear()
 	General_TVModeShuffle = getsetting('General_TVModeShuffle')
+	
+	url = url.replace("[","")
+	url = url.replace("]","")
+	url = url.replace("'","")
 	
 	printpoint = "" ; extra = "" ; TypeError = ""
 	if 'plugin.' in num:
@@ -584,6 +603,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	url2 = url2.replace(" &direct4=","&direct4=")
 	url2 = url2.replace(" &custom8=","&custom8=")
 	url2 = url2.replace(" &direct8=","&direct8=")
+	url2 = url2.replace(" &googledrive=","&googledrive=")
 	url2 = url2.replace(" &dailymotion_id=","&dailymotion_id=")
 	url2 = url2.replace(" &dailymotion_pl=","&dailymotion_pl=")
 	url2 = url2.replace(" &hotVOD=","&hotVOD=")
@@ -602,7 +622,6 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	url2 = url2.split(',')
 	if General_TVModeShuffle == "true" and mode == 5: random.shuffle(url2) ; printpoint = printpoint + "0"
 		
-		
 	text = "url " + space2 + str(url) + newline + "url2a" + space2 + str(url2a) + newline + "url2" + space2 + str(url2)
 	printlog(title='url_first_check', printpoint="", text=text, level=0, option="")
 	#returned = get_types(url)
@@ -620,9 +639,11 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 		x = x.replace("]","")
 		
 		if '&' in x and '=' in x:
+			'''check if x contain valid statement'''
 			x_ = find_string(x, "&", '=')
 			if x == x_:
 				printpoint = printpoint = 's' ; continue
+		
 		if '&name_=' in x:
 			name2 = find_string(x, '&name_=', '&')
 			x = x.replace(name2,"",1)
@@ -631,7 +652,13 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 			if name2 != "":
 				if name2 == 'default': name2 = name
 				else: name = name2
-			
+		
+		if '<url="' in x and '/><title="' in x:
+			'''check if mode == 11'''
+			printpoint = printpoint + 'r'
+			id_L, title_L, thumb_L, desc_L, fanart_L = checkMode11(mode, name, x, iconimage, desc, num, viewtype, fanart)
+			x = id_L[0]
+			finalurl_ = x
 		if x not in playlist and x != "":
 			i += 1
 			if mode == 5:
@@ -649,6 +676,9 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					id_L, title_L, thumb_L, desc_L = listURLS_(42, name, x2, iconimage, desc, num, 50, fanart)
 					finalurl = id_L
 					
+				elif "&googledrive=" in x:
+					x2 = x.replace("&googledrive=","")
+					finalurl='plugin://plugin.video.gdrive?mode=streamURL&url=https://docs.google.com/file/d/'+x2+'/preview'
 					'''---------------------------'''
 				elif "&hotVOD=" in x:
 					x = x.replace("&hotVOD=","")
@@ -698,7 +728,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(x, name, iconimage, desc, fanart, playlist=playlist, onlydata=False)
 						finalurl = playlist_L
 					#except Exception, TypeError: extra = extra + newline + "apimaster_TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
-					
+				
 				elif "&dailymotion_id=" in x:
 					x = x.replace("&dailymotion_id=","")
 					finalurl='plugin://plugin.video.dailymotion_com/?url='+x+'&mode=playVideo'
@@ -720,14 +750,12 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 				if 'x' in printpoint: break
 				
 			elif mode == 6:
-				finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(x, name, iconimage, desc, fanart, playlist=playlist, onlydata=True)
+				if not 'r' in printpoint: finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(x, name, iconimage, desc, fanart, playlist=playlist, onlydata=True)
 				#except: pass
 				for y in title_L:
 					if name2 != "":
 						y = y.replace(y, name)
 					y = y.replace(y,str(i) + '. ' + y, 1)
-					
-					
 					
 				if finalurl_ == "": pass
 				elif "&custom4=" in x:
@@ -746,6 +774,14 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					x = x.replace("&direct8=","")
 					addDir(str(i) + '.' + space + title_L[0], x, 40, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					'''---------------------------'''
+				elif "&googledrive=" in x:
+					if 'O' in printpoint:
+						PlayVideos(title_L[0], 4, x, thumb_L[0], desc_L[0], num, fanart_L[0])
+						mode = 4
+					else:
+						title2 = '[googledrive]'
+						addDir(str(i) + '.' + space + title_L[0] + space + title2, x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+						'''---------------------------'''
 				elif "&dailymotion_id=" in x:
 					#x = x.replace("&dailymotion_id=","")
 					if 'O' in printpoint:
@@ -830,6 +866,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 			else: printpoint = printpoint + 'y'
 		else: extra = extra + newline + 'x' + space2 + str(x) + space + 'is in playlist or empty!'
 		
+		if 'r' in printpoint: printpoint = printpoint.replace('r',"")
 	if mode == 5:
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
 		if playlist == []: notification(addonString_servicefeatherence(1).encode('utf-8'), addonString_servicefeatherence(2).encode('utf-8'), "", 2000)
@@ -853,6 +890,7 @@ def MultiVideos_play(finalurl, pl, playlist, printpoint, General_TVModeShuffle, 
 	'''Prepare the first available video in the playlist'''
 	count = 0 ; finalurlN = 0 ; printpoint2 = ""
 	playlistN = int(len(playlist))
+
 	if finalurl != "" and finalurl != []:
 		printpoint2 = printpoint2 + '0'
 		returned = get_types(finalurl)
@@ -887,6 +925,9 @@ def MultiVideos_play(finalurl, pl, playlist, printpoint, General_TVModeShuffle, 
 			elif '2' in printpoint2:
 				pl, playlist, printpoint = MultiVideos_play2(finalurl, pl, playlist, printpoint)
 	
+	playlistN = int(len(playlist))
+	if playlistN >= 40:
+		printpoint = printpoint + 'x'
 	text = 'finalurl' + space2 + str(finalurl) + newline + \
 	'pl' + space2 + str(pl) + newline + \
 	'playlist' + space2 + str(playlist) + newline + \
@@ -907,22 +948,26 @@ def MultiVideos_play2(finalurl, pl, playlist, printpoint):
 		if 'plugin://' in finalurl:
 			printpoint2 = printpoint2 + '3'
 			plugin = regex_from_to(finalurl, 'plugin://', '/', excluding=True)
+			plugin = regex_from_to(plugin, 'plugin://', '?', excluding=True)
 			installaddon(plugin, update=True)
+			
 		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl) ; xbmc.sleep(2000)
-		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo') ; dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)') ; dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)') ; dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
+		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo') ; dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)') ; dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)') ; dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)') ; dialogselectW = xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)')
 		while count < 20 and not playerhasvideo and not dialogokW and not xbmc.abortRequested:
 			xbmc.sleep(200)
 			playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
 			dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)')
 			dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)')
 			dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
-			if not dialogbusyW and not dialogprogressW: count += 2
+			dialogselectW = xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)')
+			if dialogselectW: xbmc.sleep(1000)
+			elif not dialogbusyW and not dialogprogressW: count += 2
 			else: count += 1
 			
 		if playerhasvideo and not dialogokW: printpoint = printpoint + "3"
 		else:
 			dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)')
-			if dialogokW or count == 10:
+			if dialogokW or count >= 20:
 				printpoint = printpoint + '6'
 				xbmc.executebuiltin('Dialog.Close(okdialog)')
 				#xbmc.executebuiltin('Action(Close)') ; xbmc.sleep(100)
@@ -1058,7 +1103,6 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 			x2 = x_ + space + x2
 		x2 = clean_commonsearch(x2)
 			
-		#notification(x2,'','',2000)
 		url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+api_youtube_featherence+'&videoDuration='+videoDuration+'&videoDefinition='+videoDefinition+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults='+maxResults+'&pageToken='
 	elif "&youtube_se2=" in x:
 		'''WIP'''
@@ -1659,7 +1703,8 @@ def getAddonFanart(category, custom="", default="", urlcheck_=False):
 	
 	if custom != "":
 		valid = ""
-		if urlcheck_ == True and 1 + 1 == 3: 
+		urlcheck_ = False
+		if urlcheck_ == True: 
 			valid = urlcheck(custom, ping=False, timeout=1)
 		
 		if 'ok' in valid or urlcheck_ != True:
@@ -2094,7 +2139,7 @@ def pluginend(admin):
 		mode = 4
 		PlayVideos(name, mode, url, iconimage, desc, num, fanart)
 	elif mode == 11:
-		pass
+		mode = LocalSearch2(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 12:
 		PlayVideos(name, mode, url, iconimage, desc, num, fanart)
 	elif mode == 13:
@@ -3552,26 +3597,36 @@ def getLists(mode, name, url, iconimage, desc, num, viewtype, fanart):
 def	CATEGORIES999():
 	'''testing'''
 	url2 = '0B4tub3thj86KRjhUWGJIMXhlQU0'
-	url2 = '0B7-ya5fAYJHWS0RQS244LTh6akU'
+	url2 = '&googledrive=0Bxnz_CSSq5-xVFNIVFZNY24xcTA'
+	url3 = '&googledrive2=http://dragonballz.co.il/%d7%93%d7%a8%d7%92%d7%95%d7%9f-%d7%91%d7%95%d7%9c-%d7%96%d7%99-%d7%9c%d7%a6%d7%a4%d7%99%d7%99%d7%94-%d7%99%d7%a9%d7%99%d7%a8%d7%94/'
+	#url3 = '&googledrive2=http://stackoverflow.com/questions/32575617/using-unicode-hebrew-characters-with-regular-expression'
 	#url2 = 'http://www.supercartoons.net/video/1208/jeepers-its-the-creeper.mp4'
 	image2 = 'http://dragonballz.co.il/wp-content/uploads/2015/03/1058-214x300.jpg'
 	title2 = 'דרגון בול זי פרק 1 – מדובב לעברית'
-	addDir(title2,url2,44,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True)) #Test
+	addDir('googledrive',url2,4,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True)) #Test
+	
+	url = os.path.join(templates2_path, '104', 'Dragon Ball Z.txt')
+	addDir('googledrive mode=11 custom_se2',url,11,image2,'testing','1',50, image2) #Test
+	
+	
+	addDir('moridim','http://www.moridim.tv/%D7%A1%D7%A8%D7%98%D7%99%D7%9D.html#types-4',40,'','testing','1',50, "") #Test
 	
 	list = []
 	#list.append('&direct4='+url2)
+	list.append('&googledrive2='+url3)
 	list.append('&googledrive='+url2)
-	addDir(addonString(10420).encode('utf-8'),list,4,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
+	#addDir(addonString(10420).encode('utf-8'),url3,40,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
+	
+	addDir('dragonball',url3,40,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
 	
 	
-	#addDir(title2,'http://www.supercartoons.net/cartoons/',40,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True))
+	addDir('cartoons','http://www.supercartoons.net/cartoons/',40,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True))
 	
 	
 	'''הובוס ספר הקסמים הגדול'''
 	list = []
-	list.append('&direct8=http://www.supercartoons.net/cartoons/')
-	list.append('&youtube_id=EjpsfP86Neo') #Hebrew
-	addDir(addonString(10420).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
+	url = 'http://serethd.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fserethd.net%2F%25d7%2590%25d7%25a0%25d7%2599%25d7%259e%25d7%25a6%25d7%2599%25d7%2594%2F%25d7%25a6%25d7%25a2%25d7%25a6%25d7%2595%25d7%25a2-%25d7%25a9%25d7%259c-%25d7%25a1%25d7%2599%25d7%25a4%25d7%2595%25d7%25a8-%25d7%259e%25d7%2593%25d7%2595%25d7%2591%25d7%2591-%25d7%259c%25d7%25a6%25d7%25a4%25d7%2599%25d7%2599%25d7%2594-%25d7%2599%25d7%25a9%25d7%2599%25d7%25a8%25d7%2594.html'
+	addDir('direct8/44',url,44,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
 
 	
 def listURLS(mode, name, url, iconimage, desc, num, viewtype, fanart):

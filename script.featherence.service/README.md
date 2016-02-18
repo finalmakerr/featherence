@@ -134,6 +134,7 @@ RunScript(script.featherence.service,,?mode=25)
 		  - YOUTUBE PLAYLIST ID: URL = &youtube_pl=text
 		  - DAILYMOTION VIDEO ID: URL = &dailymotion_id=text
 		  - DAILYMOTION PLAYLIST ID: URL = &dailymotion=text
+		  - GOOGLE DRIVE VIDEO ID: URL = &googledrive=text
 		  - *ANY VIDEO FROM ADDON: URL = &custom4=text
 		  *use ctrl+shift+P on the preferred location!
 	```
@@ -207,6 +208,15 @@ RunScript(script.featherence.service,,?mode=25)
 	```
 	READ LINE BY LINE FROM FILE AND SEARCH IN YOUTUBE
 	PLAY ALL: MODE 2 | URL = <file path>
+	TIP: os.path.join(addonPath, 'resources', 'templates2', '')
+	addonPath = current addon
+	```
+	
+	```
+	READ LINE BY LINE FROM FILE - VIEW AND PLAY
+	MAIN: MODE 11 | URL = <file path>
+	FILE STRUCTURE: <url=""/><title=""/><thumb=""/><desc=""/>
+	URL EXAMPLES: <url="&googledrive=<ID>"/>
 	TIP: os.path.join(addonPath, 'resources', 'templates2', '')
 	addonPath = current addon
 	```
