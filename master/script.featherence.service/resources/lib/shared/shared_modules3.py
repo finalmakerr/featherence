@@ -14,6 +14,7 @@ Import the module and input the addDir in your addon module.py file.
 def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	url2 = url ; printpoint = "" ; returned = "" ; extra = "" ; name2 = "" ; iconimage2 = "" ; desc2 = ""
 	name = str(name)
+	if '$LOCALIZE' in name or '$ADDON' in name: name = xbmc.getInfoLabel(name)
 	
 	if num == None: num = ""
 	if '&getAPIdata=' in str(num):
@@ -23,15 +24,9 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		if 'getAPIdata' in desc and desc_L != []: desc = desc_L[0]
 		if 'getAPIdata' in fanart and fanart_L != []: fanart = fanart_L[0]
 		
-	if desc == None or desc == "" or desc == "None": desc = ""
-	else:
-		try: desc = str(desc).encode('utf-8')
-		except:
-			try: desc = str(desc)
-			except Exception, TypeError:
-				extra = extra + newline + "TypeError" + space2 + "desc Error" + space + "name" + space2 + str(name)
-				desc = ""
-	if iconimage == None or iconimage == "": iconimage = "" #iconimage = "None" #"None"
+	desc = str(to_utf8(desc))
+		
+	if iconimage == None or iconimage == "": iconimage = ""
 	
 	
 	if url == None or url == "": url = "None"
@@ -72,10 +67,6 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		except: pass
 	if fanart == None: fanart = ""
 	
-	#if mode == 17: name = '[COLOR=green]' + name + '[/COLOR]'
-	#elif mode == 5: name = '[COLOR=yellow]' + name + '[/COLOR]'
-	#elif mode == 8: name = '[COLOR=white2]' + name + '[/COLOR]'
-	
 	if '9' in printpoint: pass
 	else:
 		if mode >= 100 and 1 + 1 == 3:
@@ -102,11 +93,8 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		
 		text = "addonID" + space2 + str(addonID) + newline + "name" + space2 + str(name) + newline + "url " + space2 + str(url) + newline + "url2" + space2 + str(url2) + newline + "mode" + space2 + str(mode) + newline + "iconimage" + space2 + str(iconimage) + newline + "desc" + space2 + str(desc) + newline + "num" + space2 + str(num)
 		printlog(title='addDir_test1', printpoint=printpoint, text=text, level=0, option="")
-		
-		if addonID == 'script.featherence.install':
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-			returned = ok
-		elif mode >= 100 and mode <= 139 or mode >= 10001:
+
+		if mode >= 100 and mode <= 139 or mode >= 10001:
 			menu.append(('Set Custom Fanart', 'RunScript(script.featherence.service,,?mode=34&value='+str(addonID)+'&value2='+str(mode)+')'))
 			if getsetting('Fanart_Custom'+str(mode)) != "": menu.append(('Remove Custom Fanart', 'RunScript(script.featherence.service,,?mode=35&value='+str(addonID)+'&value2='+str(mode)+')'))
 			liz.addContextMenuItems(items=menu, replaceItems=False)
@@ -1703,7 +1691,6 @@ def getAddonFanart(category, custom="", default="", urlcheck_=False):
 	
 	if custom != "":
 		valid = ""
-		urlcheck_ = False
 		if urlcheck_ == True: 
 			valid = urlcheck(custom, ping=False, timeout=1)
 		
