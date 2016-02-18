@@ -17,9 +17,17 @@ msgctxt "#4
 msgid "Songs"
 msgstr "שירי"
 
+msgctxt "#5
+msgid "Movies in %s"
+msgstr "סרטים ב-%s"
+
 msgctxt "#11
 msgid "Songs"
 msgstr "שירים"
+
+msgctxt "#15
+msgid "Movies with %s subtitle"
+msgstr "סרטים עם תרגום ב-%s"
 
 msgctxt "#100
 msgid "My Kids"
@@ -5097,10 +5105,6 @@ msgstr ""
 msgctxt "#105190
 msgid ""
 msgstr ""
-
-msgctxt "#105200
-msgid ""
-msgstr "סרטים מצוירים מדובבים לעברית.[CR][CR]-מולאן[CR]-היפה והחיה[CR]-אדם וחווה[CR]-מגלים עם דורה[CR]-אומץ[CR]-הרפתקאות שלומיאל[CR]-מפלצת של מלון[CR]-קומבה[CR]-הארי פוטר[CR]-אי.טי.[CR]-מליפיסנט[CR]-פו הדב[CR]-מרקו מקאקו[CR]-להציל נסיכה[CR]ועוד רבים וטובים...""
 
 msgctxt "#105210
 msgid ""

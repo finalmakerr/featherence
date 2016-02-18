@@ -767,19 +767,12 @@ elif mode >= 200 and mode <= 249:
 		'''---------------------------'''
 
 
-elif mode >= 500 and mode <= 549:
+elif mode == 512:
 	'''------------------------------
-	---HOME-BUTTONS-(1)-500-549------
+	---INTERNET-BUTTON---------------
 	------------------------------'''
-	if custom1138W: xbmc.executebuiltin('Dialog.Close(1138)')
-	
-	if mode == 512:
-		'''------------------------------
-		---INTERNET-BUTTON---------------
-		------------------------------'''
-		name = "INTERNET-BUTTON"
-		mode512(value, admin, name, printpoint)
-		'''---------------------------'''
+	mode512(value, name)
+	'''---------------------------'''
 	
 else: printpoint = printpoint + "9"
 

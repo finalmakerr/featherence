@@ -301,7 +301,7 @@
 		  <animation condition="ControlGroup(251).HasFocus" effect="slide" start="0,0" end="355,0" delay="0" time="700" reversible="true">Conditional</animation>
 		  <height>500</height>	  
 		  <posx>-400</posx>
-		  <posy>340</posy>	  
+		  <posy>385</posy>	  
 		  <width>450</width>
 		    <control type="button" id="161" description="חיפוש חכם">
 			  <include>SideMenuCommon</include>
@@ -337,7 +337,7 @@
             <control type="list" id="150">
 			  <posy>75</posy>
 			  <width>450</width>
-			  <height>430</height>
+			  <height>265</height>
 			  <onleft>120</onleft>
 			  <onright>120</onright>
 			  <onup>160</onup>
@@ -436,7 +436,17 @@
 				</control>
 			  </focusedlayout>
             </control>
-        </control>
+			
+			<include name="Arrows_UpDown">
+				<param name="posx" value="400" />
+				<param name="posy" value="93" />
+				<param name="posx2" value="400" />
+				<param name="posy2" value="290" />
+				<param name="container" value="150" />
+				<param name="position" value="3" />
+				<param name="condition" value="true" />
+			</include>
+		</control>		
 	    <control type="image">
 		  <animation condition="!Control.IsVisible(703) | !Control.IsVisible(70)" effect="slide" start="0,0" end="30,300" time="0">Conditional</animation>
 		  <aspectratio>keep</aspectratio>
@@ -495,6 +505,16 @@
 			<onclick>Action(ShowSubtitles)</onclick>
 		</control>
 	  </control>
+	  
+	  <include name="Arrows_UpDown">
+		<param name="posx" value="1450" />
+		<param name="posy" value="820" />
+		<param name="posx2" value="1450" />
+		<param name="posy2" value="1040" />
+		<param name="container" value="120" />
+		<param name="position" value="4" />
+		<param name="condition" value="true" />
+	  </include>
 	  <include>TopInformation</include>
 	</controls>
 </window>

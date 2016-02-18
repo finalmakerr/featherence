@@ -14,27 +14,6 @@
 	<textoffsetx>0</textoffsetx>
     <width>75</width>	
   </include>  
-  <include name="ListFade" description="למחוק?">
-    <control type="image">
-      <visible>Container.HasPrevious</visible>
-      <animation effect="fade" time="200">VisibleChange</animation>
-      <posx>1005</posx>
-      <posy>125</posy>
-      <height>81</height>
-      <width>832</width>
-      <texture flipy="true">images/DefaultGradient.png</texture>
-    </control>
-  </include>
-  <include name="Slider2">
-    <control type="image">
-      <animation effect="fade" time="100">VisibleChange</animation>
-      <posx>-27</posx>
-      <posy>306</posy>
-      <width>855</width>
-      <height>165</height>
-      <texture border="32">images/Slider.png</texture>
-    </control>
-  </include>
   
   <include name="ImageC1">
     <aspectratio align="center">keep</aspectratio>
@@ -271,6 +250,14 @@
   </include>
   <include name="ButtonSettingsCategory_he" description="()">
 	<textoffsetx>647</textoffsetx>
+	<textwidth>400</textwidth>
+  </include>
+  <include name="ButtonSettingsCategory2_he" description="()">
+	<textoffsetx>487</textoffsetx>
+	<textwidth>500</textwidth>
+  </include>
+  <include name="ButtonSettingsCategory3_he" description="()">
+	<textoffsetx>17</textoffsetx>
 	<textwidth>400</textwidth>
   </include>
   
@@ -712,7 +699,62 @@
 	  
     </control>
   </include>
-      
+  
+  <include name="Arrows_UpDown">
+	 <param name="posx" default="0"/>
+	 <param name="posy" default="0"/>
+	 <param name="posx2" default="0"/>
+	 <param name="posy2" default="0"/>
+	 
+	 <param name="container" default="0"/>
+	 <param name="position" default="0"/>
+	 <param name="condition" default="true"/>
+	 <definition>
+		<control type="group">
+		  <visible>Control.IsVisible($PARAM[container])</visible>
+		  
+		  <control type="group" description="סמן חץ למעלה">
+			<visible>Container($PARAM[container]).HasPrevious</visible>
+			<include>Fade4</include>
+			<posx>$PARAM[posx]</posx>
+		    <posy>$PARAM[posy]</posy>
+			<control type="image" description="לא נבחר">
+			  <width>40</width>
+			  <height>40</height>
+			  <texture border="0">images/Arrow3NF.png</texture>
+			  <visible>!Container($PARAM[container]).Position(0)</visible>
+			</control>
+			<control type="image" description="נבחר">
+			  <width>40</width>
+			  <height>40</height>
+			  <texture border="0">images/Arrow3FO.png</texture>
+			  <visible>Container($PARAM[container]).Position(0)</visible>
+			</control>
+		</control>
+		
+		<control type="group" description="סמן חץ למטה">
+			<visible>Container($PARAM[container]).HasNext</visible>
+			<include>Fade4</include>
+			<posx>$PARAM[posx2]</posx>
+		    <posy>$PARAM[posy2]</posy>
+			<control type="image" description="לא נבחר">
+			  <width>40</width>
+			  <height>40</height>
+			  <texture border="0">images/Arrow4NF.png</texture>
+			  <visible>!Container($PARAM[container]).Position($PARAM[position])</visible>
+			</control>
+			<control type="image" description="נבחר">
+			  <width>40</width>
+			  <height>40</height>
+			  <texture border="0">images/Arrow4FO.png</texture>
+			  <visible>Container($PARAM[container]).Position($PARAM[position])</visible>
+			</control>
+		</control>
+		
+		</control>
+	</definition>
+  </include>
+  
   <include name="MenuDesign4_Icon">
 	<include description="משולשים/משושים" condition="Skin.String(MenuDesign,4) + [Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)]">ImageC1</include>
 	<include condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)">ImageR1</include>

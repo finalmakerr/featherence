@@ -853,7 +853,6 @@
           <include>statusbiglist</include> </focusedlayout>
       </control>
     </control>
-    <include>ListFade</include>
     <control type="scrollbar" id="60">
       <posx>39r</posx>
       <posy>135</posy>
@@ -1193,7 +1192,6 @@
           <include>statusbiglist</include> </focusedlayout>
       </control>
 	</control>
-    <include>ListFade</include>
     <control type="scrollbar" id="60">
       <posx>39r</posx>
       <posy>135</posy>

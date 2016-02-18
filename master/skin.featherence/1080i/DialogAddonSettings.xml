@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window description="(10140) הגדרות הרחבה">
+<window>
   <defaultcontrol always="true">2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
@@ -134,7 +134,7 @@
       </control>
       <control type="label" id="7" description="תאור כללי">
 		<aligny>center</aligny>
-		<height>65</height>
+		<height>80</height>
 		<textoffsetx>20</textoffsetx>
 		<textoffsety>5</textoffsety>
 		<scroll>false</scroll>

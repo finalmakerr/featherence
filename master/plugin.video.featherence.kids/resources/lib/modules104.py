@@ -1570,7 +1570,7 @@ def CATEGORIES104K(General_LanguageL, background, background2): #סיפורי מ
 
 def CATEGORIES104L(General_LanguageL, background, background2): #אגדות האחים גרים
 	'''סדרות'''
-	thumb = 'https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Gftc.jpg/220px-Gftc.jpg'
+	thumb = 'https://i.ytimg.com/vi/k9LhldX2qNM/hqdefault.jpg'
 	list = []
 	
 	'''עברית'''

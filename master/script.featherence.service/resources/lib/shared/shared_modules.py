@@ -290,6 +290,7 @@ def getFileAttribute(custom, file, option=""):
 	elif custom == 1: #last modified
 		import time
 		if option == '1':
+			timenow = dt.datetime.now()
 			returned = timenow.strftime("%d/%m/%y %H:%M") #date and time representation
 			
 		else:

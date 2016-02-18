@@ -1860,27 +1860,35 @@ def mode235(value, admin, name, printpoint):
 	
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
-def mode512(value, admin, name, printpoint):
+def mode512(value):
 	'''------------------------------
 	---INTERNET-BUTTON---------------
 	------------------------------'''
-	url = ""
-	if value == '0': url = 'www.google.co.il'
-	elif value == '1': url = 'www.facebook.com/groups/featherence'
-	elif value == '2': url = 'www.github.com/finalmakerr/featherence'
-	elif value == '3': url = 'www.youtube.com'
-	elif value == '4': url = 'https://www.google.co.il/imghp?hl=iw&tab=wi' #Thumbnail
-	elif value == '5': url = 'https://www.google.co.il/imghp?hl=iw&tab=wi' #Fanart
+	name = 'INTERNET-BUTTON' ; TypeError = "" ; extra = "" ; printpoint = ""
+	xbmc.executebuiltin('ActivateWindow(busydialog)')
+	try:
+		url = ""
+		if value == '0': url = 'www.google.co.il'
+		elif value == '1': url = 'www.facebook.com/groups/featherence'
+		elif value == '2': url = 'www.github.com/finalmakerr/featherence'
+		elif value == '3': url = 'www.youtube.com'
+		elif value == '4': url = 'https://www.google.co.il/imghp?hl=iw&tab=wi' #Thumbnail
+		elif value == '5': url = 'https://www.google.co.il/imghp?hl=iw&tab=wi' #Fanart
+		
+		name = localize(443)
+		if systemplatformwindows: terminal('start /max '+url+'','')
+		elif systemplatformandroid: terminal('adb shell am start -a android.intent.action.VIEW -d '+url+'','')
+		elif systemplatformlinux: xbmc.executebuiltin('RunAddon(browser.chromium)')
+		else: notification_common('25')
+
+	except Exception, TypeError:
+		extra = extra + 'TypeError' + space2 + str(TypeError)
 	
-	name = localize(443)
-	if systemplatformwindows: terminal('start /max '+url+'','')
-	elif systemplatformandroid: terminal('adb shell am start -a android.intent.action.VIEW -d '+url+'','')
-	elif systemplatformlinux: xbmc.executebuiltin('RunAddon(browser.chromium)')
-	else: notification_common('25')
-
-
-
-
+	xbmc.sleep(1000)
+	xbmc.executebuiltin('Dialog.Close(busydialog)')
+	
+	text = 'value' + space2 + str(value) + space + extra
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
 def videoplayertweak(admin,playerhasvideo):
 	if playerhasvideo:

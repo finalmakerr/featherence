@@ -3,24 +3,26 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
-Featherence Kids v0.2.4 (xx-02-16)
+Featherence Kids v0.2.4 (xx-Feb-16)
 ------------------------
-- Minor contents update.
+- Major update of movies section.
+- Minor links update.
+- Update broken posters.
 
 ------------------------
-Featherence Kids v0.2.3 (03-02-16)
+Featherence Kids v0.2.3 (03-Feb-16)
 ------------------------
 - Added some more contents and links.
 - minor bugs fix.
 - Update addon information.
 
 ------------------------
-Featherence Kids v0.2.2 (24-01-16)
+Featherence Kids v0.2.2 (24-Jan-16)
 ------------------------
 - Major bugs fix.
 
 ------------------------
-Featherence Kids v0.2.1 (20-01-16)
+Featherence Kids v0.2.1 (20-Jan-16)
 ------------------------
 - Added about us section with useful information and contact tools.
 - Added contents in varied languages.
@@ -34,7 +36,7 @@ Featherence Kids v0.2.1 (20-01-16)
 *Previous backups will not work!
 
 ------------------------
-Featherence Kids v0.2.0 (15-01-16)
+Featherence Kids v0.2.0 (15-Jan-16)
 ------------------------
 - Added new method of choosing up to 3 prefered languages.
 - Added thumbnails for main and sub categories.
@@ -54,7 +56,7 @@ Featherence Kids v0.2.0 (15-01-16)
 - Reduce addon size.
 
 ------------------------
-Featherence Kids v0.1.6 (25-12-15)
+Featherence Kids v0.1.6 (25-Dec-15)
 ------------------------
 - Added about 60 new tvshows.
 - Update TV Mode shuffle function.
@@ -64,18 +66,18 @@ Featherence Kids v0.1.6 (25-12-15)
 *Failing is an issue of the Youtube plugin.
 
 ------------------------
-Featherence Kids v0.1.2-4 (17-12-15)
+Featherence Kids v0.1.2-4 (17-Dec-15)
 ------------------------
 - Minor bugs fix.
 - Added new contents.
 
 ------------------------
-Featherence Kids v0.1.1 (13-12-15)
+Featherence Kids v0.1.1 (13-Dec-15)
 ------------------------
 - add search button.
 - add some video for kids.
 
 ------------------------
-Featherence Kids v0.1.0 (08-12-15)
+Featherence Kids v0.1.0 (08-Dec-15)
 ------------------------
 - First release.

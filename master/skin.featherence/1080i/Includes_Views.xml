@@ -177,7 +177,8 @@
 	  <width>40</width>
 	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-405,0">Conditional</animation>
 	  <control type="image" description="סמן נצפה רגיל">
-		  <animation condition="!StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0">Conditional</animation>
+		  <animation condition="!StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="14,0">Conditional</animation>
+		  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-8,0">Conditional</animation>
 		  <height>40</height>
 		  <posy>-2</posy>
 		  <texture colordiffuse="$VAR[IconFocusColor]">$VAR[Overlay2]</texture>

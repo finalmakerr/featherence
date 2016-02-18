@@ -981,7 +981,7 @@
 	<control type="group" description="">
 	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="zoom" center="auto" start="100,100" end="100,85">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="slide" start="0,0" end="1070,-130">Conditional</animation>
-	  <include condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(DialogTextViewer.xml)">Control_Pos49</include>
+	  <include condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(DialogTextViewer.xml) + !Window.IsVisible(DialogPVRChannelManager.xml)">Control_Pos49</include>
 	  <visible>Control.IsVisible(60) | Control.IsVisible(61)</visible>
 	  <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31015]) | Window.IsVisible(DialogTextViewer.xml)</visible>
 	  <visible>IntegerGreaterThan(Container.NumPages,1) | Window.IsVisible(FileBrowser.xml) | Window.IsVisible(DialogFavourites.xml) | Window.IsVisible(DialogTextViewer.xml) | Control.IsVisible(11) + IntegerGreaterThan(Container(11).NumPages,1)</visible>
@@ -1034,9 +1034,11 @@
 		<onright condition="StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(System.Language,Hebrew)">57</onright>
 		<onright condition="StringCompare(Container.Viewmode,$LOCALIZE[31014]) + !StringCompare(System.Language,Hebrew)">58</onright>
 		<onright condition="Control.IsVisible(450) + !StringCompare(System.Language,Hebrew)">450</onright>
+		<onright condition="Control.IsVisible(13) + Window.IsVisible(DialogPVRGroupManager.xml)">13</onright>
 		<onright condition="Control.IsVisible(10) + !StringCompare(System.Language,Hebrew)">10</onright>
 		<onright condition="Control.IsVisible(11) + !StringCompare(System.Language,Hebrew)">11</onright>
 		<onright condition="Control.IsVisible(12) + !StringCompare(System.Language,Hebrew)">12</onright>
+		<onright condition="Control.IsVisible(20)">20</onright>
 		<!--<visible>IntegerGreaterThan(Container.NumPages,2)</visible>-->
 		<visible>!Window.IsVisible(DialogTextViewer.xml)</visible>
 	  </control>

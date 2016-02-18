@@ -137,6 +137,18 @@ RunScript(script.featherence.service,,?mode=25)
 		  - *ANY VIDEO FROM ADDON: URL = &custom4=text
 		  *use ctrl+shift+P on the preferred location!
 	```
+		
+	```
+	PLAY DIRECT VIDEO
+	METHOD 1: MODE 44 | URL = text
+	METHOD 2: MODE 5/17 | URL = text | &direct4=text
+	```
+	
+	```
+	LIST DIRECT VIDEO
+	METHOD 1: MODE 42 | URL = text
+	METHOD 2: MODE 6/17 | URL = text | &direct4=text
+	```
 	
 	```
 	SHOW FROM ADDON
@@ -152,6 +164,27 @@ RunScript(script.featherence.service,,?mode=25)
 	METHOD 2: MODE 6/17 | URL = text
 		  - YOUTUBE PLAYLIST ID: URL = &youtube_pl=text
 		  - DAILYMOTION PLAYLIST ID: URL = &dailymotion_id=text
+	```
+	
+	```
+	SHOW FROM SPECIFIC WEBSITES
+	METHOD 1: MODE 40 | URL = text
+	METHOD 2: MODE 6/17 | URL = text | &direct8=text
+		  - 
+	```
+	
+	```
+	SHOW FROM SPECIFIC WEBSITES
+	METHOD 1: MODE 40 | URL = text
+	METHOD 2: MODE 6/17 | URL = text | &direct8=text
+		  - 
+	```
+	
+	```
+	LIST&PLAY FROM SPECIFIC WEBSITES
+	METHOD 1: MODE 41 | URL = text
+	METHOD 2: MODE 6/17 | URL = text | &direct8=text
+		  - 
 	```
 	
 	```
