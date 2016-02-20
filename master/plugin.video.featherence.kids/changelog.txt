@@ -9,6 +9,10 @@ Featherence Kids v0.2.4 (xx-Feb-16)
   Those are also support TV Mode.
   *Send your URLS if you want to share.
 
+- Added 292 Dragon Ball Z episodes.
+- Added Play All menu button.
+- Added TV Mode menu button.
+
 - Major update of movies section.
 - Minor links update.
 - Update broken posters.

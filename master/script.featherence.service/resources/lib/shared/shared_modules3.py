@@ -13,7 +13,11 @@ Import the module and input the addDir in your addon module.py file.
 '''
 def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	url2 = url ; printpoint = "" ; returned = "" ; extra = "" ; name2 = "" ; iconimage2 = "" ; desc2 = ""
-	name = str(name)
+	
+	name = str(to_utf8(name))
+	desc = str(to_utf8(desc))
+	fanart = str(to_utf8(fanart))
+	
 	if '$LOCALIZE' in name or '$ADDON' in name: name = xbmc.getInfoLabel(name)
 	
 	if num == None: num = ""
@@ -24,7 +28,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		if 'getAPIdata' in desc and desc_L != []: desc = desc_L[0]
 		if 'getAPIdata' in fanart and fanart_L != []: fanart = fanart_L[0]
 		
-	desc = str(to_utf8(desc))
+	
 		
 	if iconimage == None or iconimage == "": iconimage = ""
 	
@@ -60,13 +64,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		else:
 			printpoint = printpoint + '4'
 			url = str(url)
-	
-	if name == None or name == "": name = "" #name = "None" #"None"
-	else:
-		try: name = name.encode('utf-8')
-		except: pass
-	if fanart == None: fanart = ""
-	
+
 	if '9' in printpoint: pass
 	else:
 		if mode >= 100 and 1 + 1 == 3:
@@ -89,169 +87,22 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		if fanart2 != "": liz.setProperty('Fanart_Image', fanart2)
 			
 		menu = []
-		#ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
+		menu = menu_list(01, menu, addonID, name, url, mode, iconimage, desc, num, viewtype, fanart)
+		menu.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
+		
+		isFolder = getisFolder(name, url, mode, iconimage, desc, num, viewtype, fanart)
 		
 		text = "addonID" + space2 + str(addonID) + newline + "name" + space2 + str(name) + newline + "url " + space2 + str(url) + newline + "url2" + space2 + str(url2) + newline + "mode" + space2 + str(mode) + newline + "iconimage" + space2 + str(iconimage) + newline + "desc" + space2 + str(desc) + newline + "num" + space2 + str(num)
 		printlog(title='addDir_test1', printpoint=printpoint, text=text, level=0, option="")
 
-		if mode >= 100 and mode <= 139 or mode >= 10001:
-			menu.append(('Set Custom Fanart', 'RunScript(script.featherence.service,,?mode=34&value='+str(addonID)+'&value2='+str(mode)+')'))
-			if getsetting('Fanart_Custom'+str(mode)) != "": menu.append(('Remove Custom Fanart', 'RunScript(script.featherence.service,,?mode=35&value='+str(addonID)+'&value2='+str(mode)+')'))
-			liz.addContextMenuItems(items=menu, replaceItems=False)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-			returned = ok
-		elif mode == 1:
-			'''random'''
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-			returned = ok
-			'''---------------------------'''	
-		elif mode == 3:
-			'''search'''
-			if num == 'Custom':
-				menu.append(("Remove", "XBMC.RunPlugin(plugin://%s/?url=%s&mode=31&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)" % (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), 'Delete', viewtype, urllib.quote_plus(fanart)))) #Move Up
-				menu.append(("Remove All", "XBMC.RunPlugin(plugin://%s/?url=%s&mode=31&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)" % (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), 'Delete All', viewtype, urllib.quote_plus(fanart)))) #Move Up
-			
-			liz.addContextMenuItems(items=menu, replaceItems=False)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-			returned = ok
-			
-		elif mode == 2 or mode == 4 or mode == 7:
-			'''------------------------------
-			---play_video/2------------------
-			------------------------------'''
-			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
-			liz.addContextMenuItems(items=menu, replaceItems=False)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 5:
-			'''------------------------------
-			---PlayMultiVideos-(list)--------
-			------------------------------'''
-			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
-			liz.addContextMenuItems(items=menu, replaceItems=False)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 6:
-			'''------------------------------
-			---ListMultiVideos-(play)--------
-			------------------------------'''
-			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
-			liz.addContextMenuItems(items=menu, replaceItems=False)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 12:
-			'''TEMP'''
-			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
-			liz.addContextMenuItems(items=menu, replaceItems=False)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 9:
-			'''------------------------------
-			---View-Channel------------------
-			------------------------------'''
-			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
-			liz.addContextMenuItems(items=menu, replaceItems=False)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 8 or mode == 10:
-			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
-			liz.addContextMenuItems(items=menu, replaceItems=False)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 11:
-			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
-			liz.addContextMenuItems(items=menu, replaceItems=False)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-			returned = ok
-		elif mode == 15:
-			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
-			liz.addContextMenuItems(items=menu, replaceItems=False)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 13:
-			'''List Playlist'''
-			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
-			liz.addContextMenuItems(items=menu, replaceItems=False)
-			if '&dailymotion_pl' in url: ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-			else: ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 17:
-			'''------------------------------
-			---TV-MODE-2---------------------
-			------------------------------'''
-			menu = menu_list(1, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart)
-			liz.addContextMenuItems(items=menu, replaceItems=False)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 18:
-			'''------------------------------
-			---TV-MODE-2+CUSTOM--------------
-			------------------------------'''
-			up, down = CheckMoveCustom(name, num)
-			
-			if up != "": menu.append(("Move Up", "XBMC.RunPlugin(plugin://%s/?url=%s&mode=23&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)" % (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num + "__" + up, viewtype, urllib.quote_plus(fanart)))) #Move Up
-			if down != "": menu.append(("Move Down", "XBMC.RunPlugin(plugin://%s/?url=%s&mode=23&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)" % (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num + "__" + down, viewtype, fanart))) #Move Down
-			#u=sys.argv[0]+"?url="+str(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)+"&desc="+urllib.quote_plus(desc)+"&num="+urllib.quote_plus(num)+"&viewtype="+str(viewtype)
-			
-			#menu.append((localize(16106), "XBMC.RunPlugin(plugin://%s/?url=%s&mode=21&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, url, name, iconimage, desc, num, viewtype, fanart))) #Manage....
-			
-			menu.append((localize(16106), "XBMC.RunPlugin(plugin://%s/?url=%s&mode=21&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart))) #Manage....
-			menu.append((localize(33063), "XBMC.RunPlugin(plugin://%s/?url=%s&mode=22&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart))) #Options....
-			liz.addContextMenuItems(items=menu, replaceItems=True)
-			if url == "None": ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-			else: ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 20:
-			'''------------------------------
-			---New-Custom-Playlist-----------
-			------------------------------'''
-			menu.append((localize(33063), "XBMC.RunPlugin(plugin://%s/?url=%s&mode=22&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart))) #Options....
-			liz.addContextMenuItems(items=menu, replaceItems=True)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 21:
-			'''------------------------------
-			---Manage...---------------------
-			------------------------------'''
-			liz.addContextMenuItems(items=menu, replaceItems=True)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 22:
-			'''------------------------------
-			---AdvancedCustom...-------------
-			------------------------------'''
-			liz.addContextMenuItems(items=menu, replaceItems=True)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-			returned = ok
-			'''---------------------------'''
-		elif mode == 41 or mode == 42 or mode == 44:
-			liz.addContextMenuItems(items=menu, replaceItems=False)
+		if mode == 41 or mode == 42 or mode == 44:
 			liz.setProperty('IsPlayable', 'true')
 			liz.setPath(url)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-			returned = ok
-		elif mode == 200 or mode == 90:
-			liz.addContextMenuItems(items=menu, replaceItems=True)
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-			returned = ok
-			
-		else:
-			ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-			returned = ok
+
 		
-		#scriptfeatherenceservice_random = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random)')
+		liz.addContextMenuItems(items=menu, replaceItems=True)
+		ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=isFolder)
+		returned = ok
 		checkRandom(url)
 		
 	text = "name" + space2 + str(name) + newline + \
@@ -263,13 +114,6 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	'''---------------------------'''
 	if not '9' in printpoint:
 		return returned
-
-def menu_list(custom, menu, addonID, url, name, iconimage, desc, num, viewtype, fanart):
-	if '1' in str(custom):
-		'''Add to favourites [Featherence]'''
-		menu.append((localize(14076) + space + '[Featherence]', "XBMC.RunPlugin(plugin://%s/?url=%s&mode=24&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart)))
-	
-	return menu
 	
 def checkRandom(url):
 	'''Check if random has been choosed then create a random playlist of the current view'''
@@ -395,8 +239,9 @@ def LocalSearch(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	url2 = read_from_file(url, silent=True, lines=True, retry=True, printpoint="", addlines='&custom_se=', createlist=False)
 	text = 'url2' + space2 + str(url2)
 	printlog(title='LocalSearch' + space + name, printpoint=printpoint, text=text, level=0, option="")
-	TvMode2(addonID, mode, name, url2, iconimage, desc, num, viewtype, fanart)
+	mode = TvMode2(addonID, mode, name, url2, iconimage, desc, num, viewtype, fanart)
 	
+	return mode
 def LocalSearch2(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	'''Read lines of a file like .txt and use each line to create a folder or play'''
 	printpoint = "" ; admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)') ; value = "" ; url2 = ""
@@ -573,11 +418,18 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
 	playlist = []
 	playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
-	if mode == 5 or mode == 2:
+	if mode == 5: #or mode == 2
 		if playerhasvideo:
 			xbmc.executebuiltin('Action(Stop)')
 		pl.clear()
 	
+		if "&custom_se11=" in url:
+			z = regex_from_to(url, "&custom_se11=", '.txt', excluding=False)
+			z_ = z.replace('&custom_se11=',"")
+			z__ = read_from_file(z_, silent=True, lines=True, retry=True, printpoint="", addlines="", createlist=False)
+			url = url.replace(z, z__,1)
+			#print 'testtt ' + 'z' + space2 + str(z) + newline + 'url' + space2 + str(url)
+			
 	url2 = url.replace("['","")
 	url2 = url2.replace("']","")
 	url2 = url2.replace("'","")
@@ -587,6 +439,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	url2 = url2.replace("&amp;", "&")
 	
 	url2 = url2.replace(" &custom_se=","&custom_se=")
+	url2 = url2.replace(" &custom_se11=","&custom_se11=")
 	url2 = url2.replace(" &custom4=","&custom4=")
 	url2 = url2.replace(" &direct4=","&direct4=")
 	url2 = url2.replace(" &custom8=","&custom8=")
@@ -609,7 +462,23 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	url2a = url2
 	url2 = url2.split(',')
 	if General_TVModeShuffle == "true" and mode == 5: random.shuffle(url2) ; printpoint = printpoint + "0"
-		
+	
+	if '&custom_se=' in url2a:
+		numTotal = int(len(url2))
+		numEnd = int(num) * 20
+		numStart = int(numEnd) - 20
+		notification('1',str(numStart),'',1000)
+		if numStart < numTotal:
+			if int(num) > 1:
+				for i__ in range(1,numStart):
+					print 'i__' + space2 + str(i__) + space + str(url2)
+					try: del url2[i__]
+					except Exception, TypeError: break
+				
+				'''show the right number (line) in addDir'''
+				i += i__
+			if numEnd < numTotal: printpoint = printpoint + 'M'
+					
 	text = "url " + space2 + str(url) + newline + "url2a" + space2 + str(url2a) + newline + "url2" + space2 + str(url2)
 	printlog(title='url_first_check', printpoint="", text=text, level=0, option="")
 	#returned = get_types(url)
@@ -639,14 +508,17 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 			name2 = name2.replace('&',"")
 			if name2 != "":
 				if name2 == 'default': name2 = name
+				elif '<url="' in x and '/><title="' in x or "&custom_se11=" in x:
+					name = name + space + name2
 				else: name = name2
-		
-		if '<url="' in x and '/><title="' in x:
+			
+		if '<url="' in x and '/><title="' in x or "&custom_se11=" in x:
 			'''check if mode == 11'''
 			printpoint = printpoint + 'r'
 			id_L, title_L, thumb_L, desc_L, fanart_L = checkMode11(mode, name, x, iconimage, desc, num, viewtype, fanart)
 			x = id_L[0]
 			finalurl_ = x
+			
 		if x not in playlist and x != "":
 			i += 1
 			if mode == 5:
@@ -668,6 +540,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					x2 = x.replace("&googledrive=","")
 					finalurl='plugin://plugin.video.gdrive?mode=streamURL&url=https://docs.google.com/file/d/'+x2+'/preview'
 					'''---------------------------'''
+					
 				elif "&hotVOD=" in x:
 					x = x.replace("&hotVOD=","")
 					if "FCmmAppVideoApi_AjaxItems" in x:
@@ -716,7 +589,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(x, name, iconimage, desc, fanart, playlist=playlist, onlydata=False)
 						finalurl = playlist_L
 					#except Exception, TypeError: extra = extra + newline + "apimaster_TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
-				
+
 				elif "&dailymotion_id=" in x:
 					x = x.replace("&dailymotion_id=","")
 					finalurl='plugin://plugin.video.dailymotion_com/?url='+x+'&mode=playVideo'
@@ -742,10 +615,17 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 				#except: pass
 				for y in title_L:
 					if name2 != "":
-						y = y.replace(y, name)
+						if 'r' in printpoint:
+							y = y.replace(y, name + space + name2)
+						else:
+							y = y.replace(y, name)
 					y = y.replace(y,str(i) + '. ' + y, 1)
 					
 				if finalurl_ == "": pass
+				elif "&custom_se11=" in x:
+					title2 = '[Web]'
+					x = x.replace("&custom_se11=","")
+					addDir(str(i) + '.' + space + title_L[0] + space + title2, x, 11, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 				elif "&custom4=" in x:
 					x = x.replace("&custom4=","")
 					addDir(str(i) + '.' + space + title_L[0], x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
@@ -835,7 +715,8 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						'''---------------------------'''
 					elif "&sdarot=" in x:
 						x, z, summary, mode_, series_name, season_id = sdarot_(x)
-						addDir(str(i) + '.' + space + title_L[0] + space + '[Sdarot-TV]', "plugin://plugin.video.sdarot.tv/?mode="+z+summary+series_name+"&image="+thumb_L[0]+"&name="+season_id+title_L[0]+"&"+x, int(mode_), thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+						print 'test111 ' + str(thumb_L)
+						addDir(str(i) + '.' + space + title_L[0] + space + '[Sdarot-TV]', "plugin://plugin.video.sdarot.tv/?mode="+z+summary+series_name+"&image="+"n"+"&name="+season_id+title_L[0]+"&"+x, int(mode_), thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					elif "&seretil=" in x:
 						x = x.replace("&seretil=","")
 						if "?mode=211&url=http%3a%2f%2fseretil.me" in x: name2 = '[COLOR=red]' + title_L[0] + space + str(i) + '[/COLOR]'
@@ -851,6 +732,13 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						'''---------------------------'''	
 					
 					else: pass
+				
+				if 1 + 1 == 2:
+					if 'M' in printpoint:
+						if i >= numEnd:
+							addDir('Next Page', url, mode, iconimage, desc, str(int(num) + 1), viewtype, fanart)
+							break
+					
 			else: printpoint = printpoint + 'y'
 		else: extra = extra + newline + 'x' + space2 + str(x) + space + 'is in playlist or empty!'
 		
@@ -864,7 +752,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
-	text = "mode" + space2 + str(mode) + space + "i" + space2 + str(i) + space + newline + \
+	text = "mode" + space2 + str(mode) + space + "i" + space2 + str(i) + space + "num " + space2 + str(num) + newline + \
 	"url " + space2 + str(url) + newline + \
 	"url2" + space2 + str(url2) + newline + \
 	"fanart" + space2 + str(fanart) + newline + \
@@ -933,8 +821,9 @@ def MultiVideos_play2(finalurl, pl, playlist, printpoint):
 		notification_common('8')
 		sys.exit(0)
 	elif not "3" in printpoint:
+		'''play first video in the list'''
 		if 'plugin://' in finalurl:
-			printpoint2 = printpoint2 + '3'
+			printpoint = printpoint + '3'
 			plugin = regex_from_to(finalurl, 'plugin://', '/', excluding=True)
 			plugin = regex_from_to(plugin, 'plugin://', '?', excluding=True)
 			installaddon(plugin, update=True)
@@ -1082,10 +971,11 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		title2 = '[Video]'
 		x2 = x.replace('&youtube_id=',"")
 		url = 'https://www.googleapis.com/youtube/v3/videos?id='+x2+'&key='+api_youtube_featherence+'&part=snippet'
-	elif "&youtube_se=" in x:
+	elif "&youtube_se=" in x or "&custom_se=" in x:
 		title2 = '[Search]'
 		printpoint = printpoint + "2"
 		x2 = x.replace("&youtube_se=","")
+		x2 = x2.replace("&custom_se=","")
 		if 'commonsearch' in x:
 			x_ = clean_commonsearch(title)
 			x2 = x_ + space + x2
@@ -1444,7 +1334,7 @@ def TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 		if General_TVModeDialog == "true" or mode == 2:
 			if General_TVModeShuffle == "true": extra = addonString_servicefeatherence(8).encode('utf-8')
 			else: extra = addonString_servicefeatherence(61).encode('utf-8') + '[CR]' + addonString_servicefeatherence(62).encode('utf-8')
-			if mode == 2: returned = 'ok'
+			if mode == 2 and 1 + 1 == 3: returned = 'ok'
 			else: returned = dialogyesno(addonString_servicefeatherence(7).encode('utf-8'), extra)
 			
 		if returned == 'ok': mode = 5
@@ -2107,7 +1997,7 @@ def pluginend(admin):
 	elif mode == 1:
 		getLists(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 2:
-		LocalSearch(mode, name, url, iconimage, desc, num, viewtype, fanart)
+		mode = LocalSearch(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 3:
 		YoutubeSearch(name, url, desc, num, viewtype)
 	elif mode == 4:
@@ -3079,124 +2969,6 @@ def AddCustom(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	"iconimage" + space2 + str(iconimage) + newline
 	printlog(title="AddCustom", printpoint=printpoint, text=text, level=2, option="")
 	'''---------------------------'''
-	
-def CheckMoveCustom(name, num):
-	'''Prepare reposition of customized buttons'''
-	extra = "" ; printpoint = "" ; down = "" ; up = ""
-	
-	'''---------------------------'''
-	if num == "1":
-		'''---------------------------'''
-		if Custom_PlaylistL[1] != "": down = "2"
-		elif Custom_PlaylistL[2] != "": down = "3"
-		elif Custom_PlaylistL[3] != "": down = "4"
-		elif Custom_PlaylistL[4] != "": down = "5"
-		elif Custom_PlaylistL[5] != "": down = "6"
-		elif Custom_PlaylistL[6] != "": down = "7"
-		elif Custom_PlaylistL[7] != "": down = "8"
-		elif Custom_PlaylistL[8] != "": down = "9"
-		elif Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "2":
-		if Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[2] != "": down = "3"
-		elif Custom_PlaylistL[3] != "": down = "4"
-		elif Custom_PlaylistL[4] != "": down = "5"
-		elif Custom_PlaylistL[5] != "": down = "6"
-		elif Custom_PlaylistL[6] != "": down = "7"
-		elif Custom_PlaylistL[7] != "": down = "8"
-		elif Custom_PlaylistL[8] != "": down = "9"
-		elif Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "3":
-		if Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[3] != "": down = "4"
-		elif Custom_PlaylistL[4] != "": down = "5"
-		elif Custom_PlaylistL[5] != "": down = "6"
-		elif Custom_PlaylistL[6] != "": down = "7"
-		elif Custom_PlaylistL[7] != "": down = "8"
-		elif Custom_PlaylistL[8] != "": down = "9"
-		elif Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "4":
-		if Custom_PlaylistL[2] != "": up = "3"
-		elif Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[4] != "": down = "5"
-		elif Custom_PlaylistL[5] != "": down = "6"
-		elif Custom_PlaylistL[6] != "": down = "7"
-		elif Custom_PlaylistL[7] != "": down = "8"
-		elif Custom_PlaylistL[8] != "": down = "9"
-		elif Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "5":
-		if Custom_PlaylistL[3] != "": up = "4"
-		elif Custom_PlaylistL[2] != "": up = "3"
-		elif Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[5] != "": down = "6"
-		elif Custom_PlaylistL[6] != "": down = "7"
-		elif Custom_PlaylistL[7] != "": down = "8"
-		elif Custom_PlaylistL[8] != "": down = "9"
-		elif Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "6":
-		if Custom_PlaylistL[4] != "": up = "5"
-		elif Custom_PlaylistL[3] != "": up = "4"
-		elif Custom_PlaylistL[2] != "": up = "3"
-		elif Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[6] != "": down = "7"
-		elif Custom_PlaylistL[7] != "": down = "8"
-		elif Custom_PlaylistL[8] != "": down = "9"
-		elif Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "7":
-		if Custom_PlaylistL[6] != "": up = "7"
-		elif Custom_PlaylistL[5] != "": up = "6"
-		elif Custom_PlaylistL[4] != "": up = "5"
-		elif Custom_PlaylistL[3] != "": up = "4"
-		elif Custom_PlaylistL[2] != "": up = "3"
-		elif Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[8] != "": up = "9"
-		elif Custom_PlaylistL[9] != "": up = "10"
-		'''---------------------------'''
-	elif num == "8":
-		if Custom_PlaylistL[7] != "": up = "8"
-		elif Custom_PlaylistL[6] != "": up = "7"
-		elif Custom_PlaylistL[5] != "": up = "6"
-		elif Custom_PlaylistL[4] != "": up = "5"
-		elif Custom_PlaylistL[3] != "": up = "4"
-		elif Custom_PlaylistL[2] != "": up = "3"
-		elif Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-		if Custom_PlaylistL[9] != "": down = "10"
-		'''---------------------------'''
-	elif num == "10":
-		if Custom_PlaylistL[8] != "": up = "9"
-		elif Custom_PlaylistL[7] != "": up = "8"
-		elif Custom_PlaylistL[6] != "": up = "7"
-		elif Custom_PlaylistL[5] != "": up = "6"
-		elif Custom_PlaylistL[4] != "": up = "5"
-		elif Custom_PlaylistL[3] != "": up = "4"
-		elif Custom_PlaylistL[2] != "": up = "3"
-		elif Custom_PlaylistL[1] != "": up = "2"
-		elif Custom_PlaylistL[0] != "": up = "1"
-		'''---------------------------'''
-	
-	text = "name" + space2 + str(name) + space + "num" + space2 + str(num) + space + "down" + space2 + str(down) + space + "up" + space2 + str(up)
-	printlog(title="CheckMoveCustom", printpoint=printpoint, text=text, level=2, option="")
-		
-	return up, down
 
 def cleanfanartCustom(fanart):
 	printpoint = ""

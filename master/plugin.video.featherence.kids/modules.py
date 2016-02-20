@@ -3603,7 +3603,6 @@ def CATEGORIES108(name, iconimage, desc, fanart):
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=5&module=wallavod&name=%d7%94%d7%97%d7%9e%d7%9e%d7%94&url=seriesId%3d2855906')
 		list.append('&sdarot=series_id=349&series_name=%d7%94%d7%97%d7%9e%d7%9e%d7%94&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f349%2fhahamama-%d7%94%d7%97%d7%9e%d7%9e%d7%94')
-		list.append('&youtube_se=UCdAREOT3Agv88XHKfGs9TPw') #?
 		
 	addDir('החממה',list,6,'https://upload.wikimedia.org/wikipedia/he/thumb/5/5b/Hahamama.jpg/250px-Hahamama.jpg','החממה היא סדרת נוער ישראלית.[CR]הסדרה מתארת את עלילותיהם של בני נוער הלומדים בבית-ספר למנהיגים הנקרא "החממה" שעל שפת הכנרת.','1',50, getAddonFanart(background, custom="https://i.ytimg.com/vi/qhil5N9kWi8/maxresdefault.jpg"))
 	

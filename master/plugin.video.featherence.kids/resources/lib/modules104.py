@@ -2677,9 +2677,12 @@ def CATEGORIES104S(General_LanguageL, background, background2): #דראגון ב
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
+		url = os.path.join(templates2_path, '104', 'Dragon Ball Z.txt')
+		list.append('&custom_se11='+url) #&name_=Full&
 		list.append('&sdarot=series_id=293&series_name=%d7%93%d7%a8%d7%92%d7%95%d7%9f%20%d7%91%d7%95%d7%9c%20%d7%96%d7%99%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f293%2fdragon-ball-z-%d7%93%d7%a8%d7%92%d7%95%d7%9f-%d7%91%d7%95%d7%9c-%d7%96%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 		list.append('&youtube_pl=PLzPOIgqAmUxsr8WjTdDiNvgIjzOqwwD1O')
 		list.append('&youtube_pl=PL6E0EE345D513F341')
+		#addDir('googledrive mode=11 custom_se2',url,11,image2,'testing','1',50, image2) #Test
 		
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
@@ -2835,6 +2838,8 @@ def CATEGORIES104T(General_LanguageL, background, background2): #דראגון ב
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
+		url = os.path.join(templates2_path, '104', 'Dragon Ball Z.txt')
+		list.append('&custom_se11='+url) #&name_=Full&
 		list.append('&sdarot=series_id=1813&series_name=%d7%93%d7%a8%d7%92%d7%95%d7%9f%20%d7%91%d7%95%d7%9c%20%d7%a1%d7%95%d7%a4%d7%a8%20-%20%2a%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1813%2fdragon-ball-super-%d7%93%d7%a8%d7%92%d7%95%d7%9f-%d7%91%d7%95%d7%9c-%d7%a1%d7%95%d7%a4%d7%a8-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
 		list.append('&youtube_pl=')
 	'''אנגלית'''

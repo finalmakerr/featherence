@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.featherence.be_creative" name="Featherence ?" version="0.0.1" provider-name="finalmakerr">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+    <summary lang="en">Easily create new addon</summary>
+	<summary lang="he">צור הרחבה חדשה בקלי קלות</summary>
+    <description lang="en">
+    </description>
+	<description lang="he">
+	</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+	<forum></forum>
+	<email>featherence@groups.facebook.com</email>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.be_creative</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.7" provider-name="finalmakerr, yoel guy">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>

@@ -5,6 +5,14 @@ WIP (WORK IN PROGRESS)--
 - Add foreign singers, karaoke, liveshows.
 
 ------------------------
+Featherence Music v0.2.5 (xx-Feb-16)
+------------------------
+- Added Play All menu button.
+- Added TV Mode menu button.
+- Amir Elgazar Playlists are now viewable for selection.
+
+
+------------------------
 Featherence Music v0.2.4 (18-Feb-16)
 ------------------------
 - Added Google Drive and direct links support, TV Mode included!

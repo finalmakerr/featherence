@@ -63,7 +63,9 @@ featherenceserviceicons_path = os.path.join(featherenceservice_path, 'resources'
 featherenceserviceicons_path_ = os.path.join('special://home/addons/', 'script.featherence.service', 'resources', 'icons', '')
 
 systemlanguage = xbmc.getInfoLabel('System.Language')
+containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
 '''---------------------------'''
+
 
 '''------------------------------
 ---Window(Home).Property(key)----
