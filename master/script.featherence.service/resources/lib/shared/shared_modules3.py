@@ -387,7 +387,7 @@ def PlayVideos(name, mode, url, iconimage, desc, num, fanart):
 	
 	elif '&googledrive=' in url:
 		url = url.replace("&googledrive=","")
-		xbmc.executebuiltin('PlayMedia(plugin://plugin.video.gdrive?mode=streamURL&url=https://docs.google.com/file/d/'+url+'/preview)')
+		xbmc.executebuiltin('PlayMedia(plugin://plugin.video.gdrive?mode=streamURL&promptquality=False&url=https://docs.google.com/file/d/'+url+'/preview)')
 	else: xbmc.executebuiltin('PlayMedia('+ url +')')
 	
 	'''------------------------------
@@ -627,16 +627,18 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					x = x.replace("&custom_se11=","")
 					addDir(str(i) + '.' + space + title_L[0] + space + title2, x, 11, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 				elif "&custom4=" in x:
+					title2 = gettitle2(x)
 					x = x.replace("&custom4=","")
-					addDir(str(i) + '.' + space + title_L[0], x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+					addDir(str(i) + '.' + space + title_L[0] + title2, x, 4, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					'''---------------------------'''
 				elif "&direct4=" in x:
 					x = x.replace("&direct4=","")
 					addDir(str(i) + '.' + space + title_L[0], x, 44, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					'''---------------------------'''
 				elif "&custom8=" in x:
+					title2 = gettitle2(x)
 					x = x.replace("&custom8=","")
-					addDir(str(i) + '.' + space + title_L[0], x, 8, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+					addDir(str(i) + '.' + space + title_L[0] + title2, x, 8, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					'''---------------------------'''
 				elif "&direct8=" in x:
 					x = x.replace("&direct8=","")
@@ -715,8 +717,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						'''---------------------------'''
 					elif "&sdarot=" in x:
 						x, z, summary, mode_, series_name, season_id = sdarot_(x)
-						print 'test111 ' + str(thumb_L)
-						addDir(str(i) + '.' + space + title_L[0] + space + '[Sdarot-TV]', "plugin://plugin.video.sdarot.tv/?mode="+z+summary+series_name+"&image="+"n"+"&name="+season_id+title_L[0]+"&"+x, int(mode_), thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+						addDir(str(i) + '.' + space + title_L[0] + space + '[Sdarot-TV]', "plugin://plugin.video.sdarot.tv/?mode="+z+summary+series_name+"&image="+thumb_L[0]+"&name="+season_id+title_L[0]+"&"+x, int(mode_), thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					elif "&seretil=" in x:
 						x = x.replace("&seretil=","")
 						if "?mode=211&url=http%3a%2f%2fseretil.me" in x: name2 = '[COLOR=red]' + title_L[0] + space + str(i) + '[/COLOR]'
@@ -2555,7 +2556,7 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 	Custom_Playlist_ID_ = getsetting(Custom_Playlist_ID)
 	Custom_Playlist_ID_L = Custom_Playlist_ID_.split(',')
 	
-	if "list=" in New_ID:
+	if "list=" in New_ID or len(New_ID) == 10 or '&youtube_pl=' in New_ID:
 		'''Playlist'''
 		New_Type = localize(559) #Playlist
 		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
@@ -2563,7 +2564,7 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 		New_ID = New_ID.replace("list=","&youtube_pl=")
 		New_ID_ = New_ID.replace("&youtube_pl=","")
 		'''---------------------------'''
-	elif "/user/" in New_ID or "/channel/" in New_ID:
+	elif "/user/" in New_ID or "/channel/" in New_ID or '&youtube_ch=' in New_ID:
 		'''Channel'''
 		New_Type = localize(19029) #Channel
 		extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8') #New %s, Update Succesfully!
@@ -2576,7 +2577,7 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 			
 		New_ID_ = New_ID.replace("&youtube_ch=","")
 		'''---------------------------'''
-	elif "watch?v=" in New_ID:
+	elif "watch?v=" in New_ID or '&youtube_id=' in New_ID:
 		'''Single Video'''
 		New_Type = localize(157) #Video
 		extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8') #New %s, Update Succesfully!

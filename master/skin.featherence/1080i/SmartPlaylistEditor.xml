@@ -17,7 +17,7 @@
     <control type="label" id="2" description="Header label">
       <posy>50</posy>
 	  <posx>780</posx>
-	  <include>Heading</include>
+	  <include>LabelC1</include>
       <label>21432</label>
     </control>
     <control type="group">

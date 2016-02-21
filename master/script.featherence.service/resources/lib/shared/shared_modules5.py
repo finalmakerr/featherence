@@ -162,6 +162,12 @@ def menu_list(custom, menu, addonID, name, url, mode, iconimage, desc, num, view
 		menu.append((localize(33063), "XBMC.RunPlugin(plugin://%s/?url=%s&mode=22&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart))) #Options....
 	return menu
 
+def gettitle2(x):
+	title2 = ""
+	if '&custom' in x:
+		if 'plugin://plugin.video.sdarot.tv' in x: title2 = space + '[Sdarot-TV]'
+	
+	return title2
 def getisFolder(name, url, mode, iconimage, desc, num, viewtype, fanart):
 	isFolder = True
 	modeL = [1,3,4,5,7,9,12,15,20,41,42,44]

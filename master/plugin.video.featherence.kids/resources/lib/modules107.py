@@ -167,7 +167,7 @@ def CATEGORIES107D(General_LanguageL, background, background2): #אדיבו
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
-		list.append('&sdarot=season_id=1&series_id=1641&series_name=%d7%90%d7%93%d7%99%d7%91%d7%95%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1641%2fadiboo-%d7%90%d7%93%d7%99%d7%91%d7%95-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f1641.jpg&mode=5&name=%d7%a2%d7%95%d7%a0%d7%94%201&season_id=1&series_id=1641&series_name=%d7%90%d7%93%d7%99%d7%91%d7%95-%d7%9e%d7%93%d7%95%d7%91%d7%91-adiboo%2fseason%2f1&summary=%d7%90%d7%93%d7%99%d7%91%d7%95%20%d7%94%d7%99%d7%90%20%d7%a1%d7%93%d7%a8%d7%aa%20%d7%99%d7%9c%d7%93%d7%99%d7%9d%20%d7%a0%d7%a4%d7%95%d7%a6%d7%94%20%d7%a9%d7%a2%d7%9c%20%d7%a4%d7%99%d7%94%20%d7%a0%d7%a2%d7%a9%d7%95%20%d7%9c%d7%90%20%d7%9e%d7%a2%d7%98%20%d7%9e%d7%a9%d7%97%d7%a7%d7%99%20%d7%9e%d7%97%d7%a9%d7%91%20%d7%94%d7%9e%d7%99%d7%95%d7%a2%d7%93%d7%99%d7%9d%20%d7%9c%d7%99%d7%9c%d7%93%d7%99%d7%9d.%d7%90%d7%93%d7%99%d7%91%d7%95%20%d7%95%d7%90%d7%93%d7%99%d7%9c%d7%99%d7%94%20%d7%94%d7%9d%20%d7%a9%d7%a0%d7%99%20%d7%90%d7%97%d7%99%d7%9d%20%d7%97%d7%99%d7%99%d7%96%d7%a8%d7%99%d7%9d%20%d7%97%d7%9e%d7%95%d7%93%d7%99%d7%9d%2c%20%d7%95%d7%99%d7%a9%20%d7%9c%d7%94%d7%9d%20%d7%97%d7%99%d7%99%d7%aa%20%d7%9e%d7%97%d7%9e%d7%93%20%d7%97%d7%99%d7%99%d7%96%d7%a8%d7%99%d7%aa%20-%20%d7%91%d7%95%d7%96%d7%99%2c%20%d7%95%d7%a8%d7%95%d7%91%d7%95%d7%98%20%d7%97%d7%9b%d7%9d%20%d7%95%d7%99%d7%93%d7%99%d7%93%d7%95%d7%aa%d7%99%20-%20%d7%a8%d7%95%d7%91%d7%99%d7%98%d7%95%d7%a7.%20%d7%9c%d7%9b%d7%9c%20%d7%94%d7%97%d7%91%d7%95%d7%a8%d7%94%20%d7%99%d7%a9%20%d7%97%d7%9c%d7%9c%d7%99%d7%aa%20%d7%9e%d7%99%d7%95%d7%97%d7%93%d7%aa%20%d7%a9%d7%99%d7%9b%d7%95%d7%9c%d7%94%20%d7%9c%d7%94%d7%aa%d7%9e%d7%96%d7%a2%d7%a8%20%d7%95%d7%9c%d7%98%d7%95%d7%a1%20%d7%91%d7%aa%d7%95%d7%9a%20%d7%94%d7%92%d7%95%d7%a3%20%d7%94%d7%90%d7%a0%d7%95%d7%a9%d7%99.%d7%91%d7%9b%d7%9c%20%d7%a4%d7%a8%d7%a7%20%d7%a8%d7%95%d7%91%d7%99%d7%98%d7%95%d7%a7%20%d7%9e%d7%9c%d7%9e%d7%93%20%d7%90%d7%aa%20%d7%90%d7%93%d7%99%d7%91%d7%95%20%d7%95%d7%90%d7%aa%20%d7%97%d7%91%d7%a8%d7%99%d7%95%20%d7%9e%d7%a9%d7%94%d7%95%20%d7%97%d7%93%d7%a9%20%d7%a2%d7%9c%20%d7%92%d7%95%d7%a3%20%d7%94%d7%90%d7%93%d7%9d%3a%20%d7%94%d7%97%d7%9c%20%d7%91%d7%93%d7%a8%d7%9a%20%d7%a4%d7%a2%d7%95%d7%9c%d7%aa%20%d7%94%d7%a2%d7%99%d7%9f%20%d7%95%d7%9b%d7%9c%d7%94%20%d7%91%d7%a4%d7%a2%d7%95%d7%9c%d7%95%d7%aa%20%d7%94%d7%9e%d7%a2%d7%99%d7%99%d7%9d%20%d7%94%d7%9e%d7%91%d7%99%d7%9b%d7%95%d7%aa%20%d7%99%d7%95%d7%aa%d7%a8.%d7%93%d7%a8%d7%9a%20%d7%9e%d7%a6%d7%95%d7%99%d7%a0%d7%aa%20%d7%a2%d7%91%d7%95%d7%a8%20%d7%94%d7%99%d7%9c%d7%93%d7%99%d7%9d%20%d7%9c%d7%94%d7%9b%d7%99%d7%a8%20%d7%90%d7%aa%20%d7%90%d7%91%d7%a8%d7%99%20%d7%94%d7%92%d7%95%d7%a3%2c%20%d7%aa%d7%a4%d7%a7%d7%99%d7%93%d7%9d%20%d7%95%d7%94%d7%a9%d7%9e%d7%95%d7%aa%20%d7%a9%d7%9c%d7%94%d7%9d.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1641%2f%d7%90%d7%93%d7%99%d7%91%d7%95-%d7%9e%d7%93%d7%95%d7%91%d7%91-adiboo%2fseason%2f1')
 		list.append('&youtube_pl=PL_8KXLhQVQMLeDwIbMl6RyoMQiCuY7tu-')
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
@@ -645,7 +645,7 @@ def CATEGORIES107G(General_LanguageL, background, background2): #סמי הכבא
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
-		list.append('&sdarot=series_id=824&series_name=%d7%a1%d7%9e%d7%99%20%d7%94%d7%9b%d7%91%d7%90%d7%99%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f824%2ffireman-sam-%d7%a1%d7%9e%d7%99-%d7%94%d7%9b%d7%91%d7%90%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f824.jpg&mode=3&name=%d7%a1%d7%9e%d7%99-%d7%94%d7%9b%d7%91%d7%90%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91-fireman-sam%2fseason%2f1&series_id=824&series_name=%d7%a1%d7%9e%d7%99-%d7%94%d7%9b%d7%91%d7%90%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91-fireman-sam%2fseason%2f1&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f824%2f%d7%a1%d7%9e%d7%99-%d7%94%d7%9b%d7%91%d7%90%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91-fireman-sam%2fseason%2f1')
 		list.append('&youtube_pl=PLWe-dtph0LIoLXbFwMyFK40JxLulnv0ma')
 		list.append('&youtube_pl=PL_TbWUH2U7KmZtYRZlJtxzmYFP_m81vSk')
 		list.append('&youtube_pl=PLN0EJVTzRDL-IJiTK4_B1ni8tlRNQvaBg')
@@ -1308,7 +1308,7 @@ def CATEGORIES107K(General_LanguageL, background, background2): #הנסיכה ס
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
-		list.append('&sdarot=image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f1636.jpg&name=%d7%94%d7%a0%d7%a1%d7%99%d7%9b%d7%94%20%d7%a1%d7%95%d7%a4%d7%99%d7%94%20%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&series_id=1636&series_name=%d7%94%d7%a0%d7%a1%d7%99%d7%9b%d7%94%20%d7%a1%d7%95%d7%a4%d7%99%d7%94%20%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%94%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1636%2fsofia-the-first-%d7%94%d7%a0%d7%a1%d7%99%d7%9b%d7%94-%d7%a1%d7%95%d7%a4%d7%99%d7%94-%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91"')
+		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f1636.jpg&mode=3&name=sofia-the-first-%d7%94%d7%a0%d7%a1%d7%99%d7%9b%d7%94-%d7%a1%d7%95%d7%a4%d7%99%d7%94-%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91&series_id=1636&series_name=sofia-the-first-%d7%94%d7%a0%d7%a1%d7%99%d7%9b%d7%94-%d7%a1%d7%95%d7%a4%d7%99%d7%94-%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1636%2fsofia-the-first-%d7%94%d7%a0%d7%a1%d7%99%d7%9b%d7%94-%d7%a1%d7%95%d7%a4%d7%99%d7%94-%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 		list.append('&youtube_pl=')
 		list.append('&youtube_pl=PLVwL64lSxWWyAUC6Bv-GAbdgQAv3CuCrr') #Songs
 	'''אנגלית'''
@@ -2107,7 +2107,7 @@ def CATEGORIES107P(General_LanguageL, background, background2): #סימסאלה 
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
-		list.append('&sdarot=series_id=1775&series_name=%d7%a1%d7%99%d7%9e%d7%a1%d7%90%d7%9c%d7%94%20%d7%92%d7%a8%d7%99%d7%9d%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1775%2fsimsala-grimm-%d7%a1%d7%99%d7%9e%d7%a1%d7%90%d7%9c%d7%94-%d7%92%d7%a8%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
+		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f1775.jpg&mode=3&name=simsala-grimm-%d7%a1%d7%99%d7%9e%d7%a1%d7%90%d7%9c%d7%94-%d7%92%d7%a8%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91&series_id=1775&series_name=simsala-grimm-%d7%a1%d7%99%d7%9e%d7%a1%d7%90%d7%9c%d7%94-%d7%92%d7%a8%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1775%2fsimsala-grimm-%d7%a1%d7%99%d7%9e%d7%a1%d7%90%d7%9c%d7%94-%d7%92%d7%a8%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 		list.append('&youtube_pl=PLxd2PvjbApyUmvVaMyQsaiqJnu4tultQw')
 	'''אנגלית'''
 	if 'English' in General_LanguageL:

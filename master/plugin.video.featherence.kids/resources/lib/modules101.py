@@ -1315,7 +1315,7 @@ def CATEGORIES101M(General_LanguageL, background, background2): #חגים
 	'''עברית'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&sdarot=season_id=1&series_id=1263&series_name=%d7%97%d7%92%d7%99%20%d7%99%d7%a9%d7%a8%d7%90%d7%9c%20%d7%a2%d7%9d%20%d7%a8%d7%99%d7%a0%d7%aa%20%d7%95%d7%9e%d7%99%d7%9e%d7%99&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1263%2fhagi-israel-em-rinat-vemimi-%d7%97%d7%92%d7%99-%d7%99%d7%a9%d7%a8%d7%90%d7%9c-%d7%a2%d7%9d-%d7%a8%d7%99%d7%a0%d7%aa-%d7%95%d7%9e%d7%99%d7%9e%d7%99')
+		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f603.jpg&mode=3&name=%d7%a9%d7%91%d7%aa%d7%95%d7%aa-%d7%95%d7%97%d7%92%d7%99%d7%9d-shabatot-vehagim%2fseason%2f3&series_id=603&series_name=%d7%a9%d7%91%d7%aa%d7%95%d7%aa-%d7%95%d7%97%d7%92%d7%99%d7%9d-shabatot-vehagim%2fseason%2f3&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f603%2f%d7%a9%d7%91%d7%aa%d7%95%d7%aa-%d7%95%d7%97%d7%92%d7%99%d7%9d-shabatot-vehagim%2fseason%2f3')
 		list.append('&youtube_pl=PLErYJg2XgxyVi04kFLpJ3QJQ1LDIQqYIH')
 		list.append('&youtube_pl=PLfcYs4SRZfuK04smzdIzbgixhN_aj0TxF') #ראש השנה
 		list.append('&youtube_pl=PLfcYs4SRZfuK04smzdIzbgixhN_aj0TxF') #חנוכה

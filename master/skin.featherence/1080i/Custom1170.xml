@@ -793,18 +793,18 @@
 				<onclick>Skin.SetString($INFO[Window(home).Property(TEMP)].name,None)</onclick>
 				<onclick condition="Window.IsVisible(1173)">AlarmClock(5,ActivateWindow(1173),00:01,silent)</onclick>
 				<onclick>ClearProperty(TEMP,home)</onclick>
-				<label>$LOCALIZE[78013]</label>
+				<label>$LOCALIZE[31838]</label>
 				<posy>5</posy>
 				<visible>!StringCompare(Window(home).Property(TEMP),IconFocusColor) + !StringCompare(Window(home).Property(TEMP),IconUnFocusColor) + !StringCompare(Window(home).Property(TEMP),MenuColor)</visible>
 			</control>
-			<control type="radiobutton" id="3014" description="Info">
+			<control type="radiobutton" id="3014" description="פרטים">
 				<posx>210</posx>
 				<width>270</width>
 				<include>ButtonC1</include>
 				<onclick condition="IsEmpty(Window(home).Property(Custom1170_ShowInfo))">SetProperty(Custom1170_ShowInfo,true,home)</onclick>
 				<onclick condition="!IsEmpty(Window(home).Property(Custom1170_ShowInfo))">ClearProperty(Custom1170_ShowInfo,home)</onclick>
 				<selected>!IsEmpty(Window(home).Property(Custom1170_ShowInfo))</selected>
-				<label>Info</label>
+				<label>19033</label>
 				<posy>5</posy>
 				<visible>true</visible>
 			</control>

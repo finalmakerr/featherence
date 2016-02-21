@@ -48,7 +48,7 @@
 	  </item>
 	  <item id="705" description="הזז למעלה">
 		<label>$LOCALIZE[13251] UP</label>
-		<onclick description="1139-UP" condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(Previous_SubButton.ID_)) + !SubString(Window(home).Property(Previous_SubButton.ID_,_90)">RunScript(script.featherence.service,,?mode=210&amp;value=1)</onclick>
+		<onclick description="1139-UP" condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(Previous_SubButton.ID_)) + !SubString(Window(home).Property(Previous_SubButton.ID_),_90)">RunScript(script.featherence.service,,?mode=210&amp;value=1)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/arrowup.png</thumb>
 		<visible>Window.IsVisible(Custom1139.xml)</visible>
@@ -56,14 +56,14 @@
 	  </item>
 	  <item id="706" description="הזז למטה">
 		<label>$LOCALIZE[13251] DOWN</label>
-		<onclick description="1139-DOWN" condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(Next_SubButton.ID_)) + !SubString(Window(home).Property(Next_SubButton.ID_,_90)">RunScript(script.featherence.service,,?mode=210&amp;value=2)</onclick>
+		<onclick description="1139-DOWN" condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(Next_SubButton.ID_)) + !SubString(Window(home).Property(Next_SubButton.ID_),_90)">RunScript(script.featherence.service,,?mode=210&amp;value=2)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/arrowdown.png</thumb>
 		<visible>Window.IsVisible(Custom1139.xml)</visible>
 		<visible>!IsEmpty(Window(home).Property(Next_SubButton.ID_)) + !SubString(Window(home).Property(Next_SubButton.ID_),_90)</visible>
 	  </item>
 	  <item id="707" description="צבע כפתור">
-		<label>$LOCALIZE[74479]</label>
+		<label>$LOCALIZE[31819]</label>
 		<onclick>SetProperty(TEMP,color$INFO[Window(home).Property(Button.ID_)],home)</onclick>
 		<onclick>ActivateWindow(1170)</onclick>
 		<include>CheckProperty_Menus</include>
@@ -71,7 +71,7 @@
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="708" description="רקע / פאנארט">
-		<label>$LOCALIZE[70006]</label>
+		<label>$LOCALIZE[31810]</label>
 		<textoffsetx>15</textoffsetx>
 		<onclick condition="!IsEmpty(Window(home).Property(Button.ID))">SetProperty(TEMP,background,home)</onclick>
 		<onclick condition="!Window.IsVisible(Custom1138.xml) + !IsEmpty(Window(home).Property(Button.ID))">RunScript(script.featherence.service,,?mode=233&amp;value=1)</onclick>
@@ -181,12 +181,11 @@
 	  <label>--></label>
 	  <visible>Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
 	</control>
-	<control type="button" id="4" description="Similar button">
+	<control type="button" id="4" description="מציאת דומים">
 	  <width>480</width>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
-	  <label>Similar button</label>
-	  <visible>false</visible>
+	  <label>19003</label>
 	  <visible>Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
 	</control>
 	<control type="button" id="5" description="נגן ערוץ">

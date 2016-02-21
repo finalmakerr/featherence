@@ -106,8 +106,8 @@
 	  <control type="group">
 	    <animation condition="Control.HasFocus(312) + !Container(312).OnPrevious + !Container(312).OnNext | Control.HasFocus(311) + !Container(311).OnPrevious + !Container(311).OnNext" effect="fade" start="100" end="70" delay="5000" time="3000" reversible="false">Conditional</animation>
 		  <control type="image" description="רקע פאנארט">
-			<animation condition="Window.IsVisible(Home.xml) + [!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,551" time="220">Conditonal</animation>
-			<animation condition="Window.IsVisible(CustomHomeCustomizer.xml) + [!Container(50).Row(0) + !Container(50).Row(1) | Container(50).HasPrevious()]" effect="slide" start="0,0" end="0,551" time="220">Conditonal</animation>
+			<animation condition="Window.IsVisible(Home.xml) + [!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
+			<animation condition="Window.IsVisible(CustomHomeCustomizer.xml) + [!Container(50).Row(0) + !Container(50).Row(1) | Container(50).HasPrevious()]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
 			<visible>!Skin.HasSetting(background) + [Control.HasFocus(311) | Control.HasFocus(312)]</visible>
 			<include>Fade_BackgroundOverlay</include>
 			<animation effect="fade" time="1000">WindowOpen</animation>

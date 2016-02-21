@@ -6,7 +6,7 @@
     <include>SideMenu2</include>
 	<include>TopInformation</include>
     <control type="group" description="פרטי וידאו (1105)">
-		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="1250,0">Conditonal</animation>
+		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="1250,0">Conditional</animation>
 		<include>Fade4</include>
 		<posx>10</posx>
 		<posy>5</posy>
@@ -67,7 +67,7 @@
 				<height>200</height>
 				<aspectratio scalediffuse="false">strech</aspectratio>
 				<texture fallback="defaultmusicalbums.png">$INFO[ListItem.Icon]</texture>
-				<bordertexture colordiffuse="$VAR[main_color]">white.png</bordertexture>
+				<bordertexture colordiffuse="$VAR[ButtonFocusColor]">white.png</bordertexture>
 				<bordersize>3</bordersize>
 				<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
 			</control>
@@ -84,7 +84,7 @@
 				<description>Disc Focus</description>
 				<height>40</height>
 				<width>194</width>
-				<textcolor>$VAR[main_color]</textcolor>
+				<textcolor>$VAR[ButtonFocusColor]</textcolor>
 				<align>center</align>
 				<scroll>true</scroll>
 				<scrollspeed>50</scrollspeed>

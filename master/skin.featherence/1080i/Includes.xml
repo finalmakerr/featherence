@@ -157,8 +157,7 @@
 			<posx>100</posx>
 			<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1124)</visible>
 			<width>600</width>
-			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1210,0">Conditonal</animation>
-			<animation description="Slide_en" condition="!StringCompare(System.Language,Hebrew) + !Control.IsVisible(3200)" effect="slide" start="0,0" end="-90,0">Conditonal</animation>
+			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1210,0">Conditional</animation>
 			<control type="label" id="1121" description="שמאל1 (תיקייה)">
 			  <aligny>top</aligny>
 			  <include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
@@ -185,8 +184,7 @@
 			<visible>!Skin.HasSetting(Admin)</visible>
 		  </control>
 		  <control type="label" id="1124" description="זמן לסיום(HasMedia) שמאל2">
-		    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1910,0">Conditonal</animation>
-			<animation description="Slide_en" condition="!StringCompare(System.Language,Hebrew) + Control.IsVisible(3200)" effect="slide" start="0,0" end="90,0">Conditonal</animation>
+		    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1910,0">Conditional</animation>
 			<aligny>top</aligny>
 			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
 			<include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
@@ -238,14 +236,14 @@
 			  </control>
 		  </control>
 		  <control type="group" description="(specials) ימין">
-		    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1020,0">Conditonal</animation>
+		    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1020,0">Conditional</animation>
 			<include>IconsInformation</include>	
 			<posx>1380</posx>
 			<posy>4</posy>
 			<visible>true</visible>	
 		  </control>
 		  <control type="label" description="() ימין">
-			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1900,0">Conditonal</animation>
+			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1900,0">Conditional</animation>
 			<aligny>top</aligny>
 			<include condition="StringCompare(System.Language,Hebrew)">LabelL2</include>
 			<include condition="!StringCompare(System.Language,Hebrew)">LabelR2</include>
@@ -368,14 +366,14 @@
         </control>
 	  </control>
 	  <control type="group" description="Right side">
-	      <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="-1015,0">Conditonal</animation>
+	      <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="-1015,0">Conditional</animation>
 		  <control type="group" description="תמונת פרק">
 			<include>Fade4</include>
 			<posx>1221</posx>
 			<posy>-450</posy>	      
 			<visible>!SubString(Container.FolderPath,plugin://)</visible> <!-- | Player.HasVideo + !IsEmpty(Player.Art(thumb))-->
 			<control type="image" description="מסגרת">
-			  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="-500,0">Conditonal</animation>
+			  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="-500,0">Conditional</animation>
 			  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,270">Conditional</animation>
 			  <animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="100,45">Conditional</animation>
 			  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-5">Conditional</animation>
@@ -421,7 +419,7 @@
 		  <control type="group" description="עונה ופרק/יוצר הרחבה">
 			<posx>1240</posx>
 			<posy>-483</posy>
-			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="15,0">Conditonal</animation>
+			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="15,0">Conditional</animation>
 			<!--<visible>!IsEmpty(Control.GetLabel(1480))</visible>-->
 			<control type="label" id="1480" description="עונה ופרק">
 			  <align>left</align>
@@ -443,7 +441,7 @@
 			  <scroll>false</scroll>
 			  <width>280</width>		
 			  <textcolor>white</textcolor>
-			  <label>$LOCALIZE[79023]:[CR]$INFO[ListItem.LastPlayed]</label>
+			  <label>$LOCALIZE[31072]:[CR]$INFO[ListItem.LastPlayed]</label>
 			  <visible>!IsEmpty(ListItem.LastPlayed)</visible>
 			  <visible>[System.IdleTime(3) + !System.IdleTime(6)]</visible>
 			</control>
@@ -507,7 +505,7 @@
 			<posx>1165</posx>
 			<posy>0</posy>
 			<control type="label" id="1106" description="ג'אנר">
-			  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="15,0">Conditonal</animation>
+			  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="15,0">Conditional</animation>
 			  <posx>65</posx>
 			  <posy>-568</posy>
 			  <width>320</width>
@@ -636,7 +634,7 @@
 		  </control>
 	  </control>
 	  <control type="group" description="פוסטר">
-		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1690,0">Conditonal</animation>
+		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1690,0">Conditional</animation>
 		<animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="150,150" time="3000">Conditional</animation>
 		<include>Fade4</include>
 		<height>270</height>
@@ -664,7 +662,7 @@
 		</control>
 	  </control>  
 	  <control type="group" description="פרטי וידאו (1105)">
-		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="1250,0">Conditonal</animation>
+		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="1250,0">Conditional</animation>
 		<!--<animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="0,0" start="100,100" end="100,120" time="0">Conditional</animation>-->
 		<include>Fade4</include>
 		<visible>!IsEmpty(Control.GetLabel(1105)) + !SubString(Control.GetLabel(1105),$LOCALIZE[20457])</visible>

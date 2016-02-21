@@ -362,7 +362,7 @@
   
   <variable name="ReloadSkin_check">
     <value>TEST</value>
-	<value condition="Skin.String(MainBackgroundTexture">MainBackgroundTexture</value>
+	<value condition="Skin.String(MainBackgroundTexture)">MainBackgroundTexture</value>
 	<value condition="Skin.String(TopBackgroundTexture)">TopBackgroundTexture</value>
 	<value condition="Skin.String(background)">background</value>
 	

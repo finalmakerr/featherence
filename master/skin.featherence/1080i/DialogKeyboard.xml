@@ -116,7 +116,7 @@
 					<texturefocus border="25,25,5,5" colordiffuse="$VAR[KeyboardFocusColor]">osd/keyboard/KeyboardCornerTopNF.png</texturefocus>
 					<texturenofocus border="25,25,5,5" colordiffuse="$VAR[KeyboardUnFocusColor]">osd/keyboard/KeyboardCornerTopNF.png</texturenofocus>
 					<font>size18</font>
-					<label>Options</label>					
+					<label>33063</label>					
 					<width>100</width>
 					<height>50</height>
 					<include>Keyboard</include>
@@ -136,7 +136,7 @@
 					<font>size18</font>
 					<width>100</width>
 					<include>Keyboard</include>
-					<label>Symbols</label>
+					<label>20180</label>
 					<onleft>8</onleft>
 					<onright>120</onright>
 					<onup>3070</onup>

@@ -38,7 +38,7 @@
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Animation.png</texture>
 			<visible>SubString(ListItem.Genre,$LOCALIZE[31602]) | SubString(ListItem.Genre,Animation) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Animation)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31602]) | SubString(VideoPlayer.Genre,Animation) | SubString(Window(home).Property(TopVideoInformation6),Animation)]]</visible>
-			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !SubString(ListItem.Genre,$LOCALIZE[31653]) + !SubString(ListItem.Genre,Film & Animation)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + !SubString(VideoPlayer.Genre,$LOCALIZE[31653]) + !SubString(VideoPlayer.Genre,Film & Animation)]</visible>
+			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !SubString(ListItem.Genre,$LOCALIZE[31653]) + !SubString(ListItem.Genre,Film &amp; Animation)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + !SubString(VideoPlayer.Genre,$LOCALIZE[31653]) + !SubString(VideoPlayer.Genre,Film &amp; Animation)]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
@@ -243,17 +243,17 @@
 		<control type="image" description="וידאו ואנימציה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Entertainment.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31653]) | SubString(ListItem.Genre,Film & Animation) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31653]) | SubString(VideoPlayer.Genre,Film & Animation)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31653]) | SubString(ListItem.Genre,Film &amp; Animation) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31653]) | SubString(VideoPlayer.Genre,Film &amp; Animation)]]</visible>
 		</control>
 		<control type="image" description="אוטו' ורכב">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Driving.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31654]) | SubString(ListItem.Genre,Autos & Vehicles) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31654]) | SubString(VideoPlayer.Genre,Autos & Vehicles)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31654]) | SubString(ListItem.Genre,Autos &amp; Vehicles) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31654]) | SubString(VideoPlayer.Genre,Autos &amp; Vehicles)]]</visible>
 		</control>
 		<control type="image" description="חדשות ופוליטיקה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/News.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31655]) | SubString(ListItem.Genre,News & Politics) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31655]) | SubString(VideoPlayer.Genre,News & Politics)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31655]) | SubString(ListItem.Genre,News &amp; Politics) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31655]) | SubString(VideoPlayer.Genre,News &amp; Politics)]]</visible>
 		</control>
 		<control type="image" description="השכלה">
 			<include>MultiGenreFlag</include>
@@ -263,12 +263,12 @@
 		<control type="image" description="בעלי חיים">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Animals.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31657]) | SubString(ListItem.Genre,Pets & Animals) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31657]) | SubString(VideoPlayer.Genre,Pets & Animals)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31657]) | SubString(ListItem.Genre,Pets &amp; Animals) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31657]) | SubString(VideoPlayer.Genre,Pets &amp; Animals)]]</visible>
 		</control>
 		<control type="image" description="טיולים ואירועים">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Travel.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31658]) | SubString(ListItem.Genre,Travel & Events) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31658]) | SubString(VideoPlayer.Genre,Travel & Events)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31658]) | SubString(ListItem.Genre,Travel &amp; Events) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31658]) | SubString(VideoPlayer.Genre,Travel &amp; Events)]]</visible>
 		</control>
 		<control type="image" description="משחקים">
 			<include>MultiGenreFlag</include>
@@ -429,7 +429,7 @@
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31602]</label>
 			<visible>SubString(ListItem.Genre,$LOCALIZE[31602]) | SubString(ListItem.Genre,Animation) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Animation)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31602]) | SubString(VideoPlayer.Genre,Animation) | SubString(Window(home).Property(TopVideoInformation6),Animation)]]</visible>
-			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !SubString(ListItem.Genre,$LOCALIZE[31653]) + !SubString(ListItem.Genre,Film & Animation)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + !SubString(VideoPlayer.Genre,$LOCALIZE[31653]) + !SubString(VideoPlayer.Genre,Film & Animation)]</visible>
+			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !SubString(ListItem.Genre,$LOCALIZE[31653]) + !SubString(ListItem.Genre,Film &amp; Animation)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + !SubString(VideoPlayer.Genre,$LOCALIZE[31653]) + !SubString(VideoPlayer.Genre,Film &amp; Animation)]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -672,19 +672,19 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31653]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31653]) | SubString(ListItem.Genre,Film & Animation) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31653]) | SubString(VideoPlayer.Genre,Film & Animation)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31653]) | SubString(ListItem.Genre,Film &amp; Animation) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31653]) | SubString(VideoPlayer.Genre,Film &amp; Animation)]]</visible>
 		</control>
 		<control type="label" description="אוטו' ורכב">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31654]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31654]) | SubString(ListItem.Genre,Autos & Vehicles) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31654]) | SubString(VideoPlayer.Genre,Autos & Vehicles)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31654]) | SubString(ListItem.Genre,Autos &amp; Vehicles) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31654]) | SubString(VideoPlayer.Genre,Autos &amp; Vehicles)]]</visible>
 		</control>
 		<control type="label" description="חדשות ופוליטיקה">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31655]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31655]) | SubString(ListItem.Genre,News & Politics) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31655]) | SubString(VideoPlayer.Genre,News & Politics)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31655]) | SubString(ListItem.Genre,News &amp; Politics) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31655]) | SubString(VideoPlayer.Genre,News &amp; Politics)]]</visible>
 		</control>
 		<control type="label" description="השכלה">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -696,13 +696,13 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31657]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31657]) | SubString(ListItem.Genre,Pets & Animals) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31657]) | SubString(VideoPlayer.Genre,Pets & Animals)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31657]) | SubString(ListItem.Genre,Pets &amp; Animals) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31657]) | SubString(VideoPlayer.Genre,Pets &amp; Animals)]]</visible>
 		</control>
 		<control type="label" description="טיולים ואירועים">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31658]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31658]) | SubString(ListItem.Genre,Travel & Events) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31658]) | SubString(VideoPlayer.Genre,Travel & Events)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31658]) | SubString(ListItem.Genre,Travel &amp; Events) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31658]) | SubString(VideoPlayer.Genre,Travel &amp; Events)]]</visible>
 		</control>
 		<control type="label" description="משחקים">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -877,7 +877,7 @@
 	<variable name="GenreLabel">
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31600]) | SubString(ListItem.Label,Action) | SubString(ListItem.Label,אקשן)">$LOCALIZE[31600]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31601]) | SubString(ListItem.Label,Adventure)">$LOCALIZE[31601]</value>
-		<value condition="[SubString(ListItem.Label,$LOCALIZE[31602]) | SubString(ListItem.Label,Animation)] + [!SubString(ListItem.Label,$LOCALIZE[31653]) + !SubString(ListItem.Label,Film & Animation)]">$LOCALIZE[31602]</value>
+		<value condition="[SubString(ListItem.Label,$LOCALIZE[31602]) | SubString(ListItem.Label,Animation)] + [!SubString(ListItem.Label,$LOCALIZE[31653]) + !SubString(ListItem.Label,Film &amp; Animation)]">$LOCALIZE[31602]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31603]) | SubString(ListItem.Label,Biography)">$LOCALIZE[31603]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31604]) | SubString(ListItem.Label,Children)">$LOCALIZE[31604]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31605]) | SubString(ListItem.Label,Comedy)">$LOCALIZE[31605]</value>
@@ -920,12 +920,12 @@
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31650]) | SubString(ListItem.Label,$LOCALIZE[19630]) | SubString(ListItem.Label,Technology)">$LOCALIZE[31650]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31651]) | SubString(ListItem.Label,People) | SubString(ListItem.Label,Blogs)">$LOCALIZE[31651]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31652]) | SubString(ListItem.Label,Entertain)">$LOCALIZE[31652]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31653]) | SubString(ListItem.Label,Film & Animation)">$LOCALIZE[31653]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31654]) | SubString(ListItem.Label,Autos & Vehicles)">$LOCALIZE[31654]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31655]) | SubString(ListItem.Label,News & Politics)">$LOCALIZE[31655]</value>
+		<value condition="SubString(ListItem.Label,$LOCALIZE[31653]) | SubString(ListItem.Label,Film &amp; Animation)">$LOCALIZE[31653]</value>
+		<value condition="SubString(ListItem.Label,$LOCALIZE[31654]) | SubString(ListItem.Label,Autos &amp; Vehicles)">$LOCALIZE[31654]</value>
+		<value condition="SubString(ListItem.Label,$LOCALIZE[31655]) | SubString(ListItem.Label,News &amp; Politics)">$LOCALIZE[31655]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31656]) | SubString(ListItem.Label,Education)">$LOCALIZE[31656]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31657]) | SubString(ListItem.Label,Pets & Animals)">$LOCALIZE[31657]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31658]) | SubString(ListItem.Label,Travel & Events)">$LOCALIZE[31658]</value>
+		<value condition="SubString(ListItem.Label,$LOCALIZE[31657]) | SubString(ListItem.Label,Pets &amp; Animals)">$LOCALIZE[31657]</value>
+		<value condition="SubString(ListItem.Label,$LOCALIZE[31658]) | SubString(ListItem.Label,Travel &amp; Events)">$LOCALIZE[31658]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[15016]) | SubString(ListItem.Label,Gaming)">$LOCALIZE[15016]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31700]) | SubString(ListItem.Label,Driving) | SubString(ListItem.Label,Race)">$LOCALIZE[31700]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31701]) | SubString(ListItem.Label,Platform)">$LOCALIZE[31701]</value>
@@ -960,7 +960,7 @@
 	<variable name="GenreLabel2">
 		<value condition="SubString(Container.FolderName,$LOCALIZE[31600]) | SubString(Container.FolderName,Action)">$LOCALIZE[31600]</value>
 		<value condition="SubString(Container.FolderName,$LOCALIZE[31601]) | SubString(Container.FolderName,Adventure)">$LOCALIZE[31601]</value>
-		<value condition="[SubString(Container.FolderName,$LOCALIZE[31602]) | SubString(Container.FolderName,Animation)] + [!SubString(Container.FolderName,$LOCALIZE[31653]) + !SubString(Container.FolderName,Film & Animation)]">$LOCALIZE[31602]</value>
+		<value condition="[SubString(Container.FolderName,$LOCALIZE[31602]) | SubString(Container.FolderName,Animation)] + [!SubString(Container.FolderName,$LOCALIZE[31653]) + !SubString(Container.FolderName,Film &amp; Animation)]">$LOCALIZE[31602]</value>
 		<value condition="SubString(Container.FolderName,$LOCALIZE[31603]) | SubString(Container.FolderName,Biography)">$LOCALIZE[31603]</value>
 		<value condition="SubString(Container.FolderName,$LOCALIZE[31604]) | SubString(Container.FolderName,Children)">$LOCALIZE[31604]</value>
 		<value condition="SubString(Container.FolderName,$LOCALIZE[31605]) | SubString(Container.FolderName,Comedy)">$LOCALIZE[31605]</value>
@@ -1003,12 +1003,12 @@
 		<value condition="SubString(Container.FolderName,$LOCALIZE[31650]) | SubString(Container.FolderName,$LOCALIZE[19630]) | SubString(Container.FolderName,Technology)">$LOCALIZE[31650]</value>
 		<value condition="SubString(Container.FolderName,$LOCALIZE[31651]) | SubString(Container.FolderName,People) | SubString(Container.FolderName,Blogs)">$LOCALIZE[31651]</value>
 		<value condition="SubString(Container.FolderName,$LOCALIZE[31652]) | SubString(Container.FolderName,Entertain)">$LOCALIZE[31652]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31653]) | SubString(Container.FolderName,Film & Animation)">$LOCALIZE[31653]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31654]) | SubString(Container.FolderName,Autos & Vehicles)">$LOCALIZE[31654]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31655]) | SubString(Container.FolderName,News & Politics)">$LOCALIZE[31655]</value>
+		<value condition="SubString(Container.FolderName,$LOCALIZE[31653]) | SubString(Container.FolderName,Film &amp; Animation)">$LOCALIZE[31653]</value>
+		<value condition="SubString(Container.FolderName,$LOCALIZE[31654]) | SubString(Container.FolderName,Autos &amp; Vehicles)">$LOCALIZE[31654]</value>
+		<value condition="SubString(Container.FolderName,$LOCALIZE[31655]) | SubString(Container.FolderName,News &amp; Politics)">$LOCALIZE[31655]</value>
 		<value condition="SubString(Container.FolderName,$LOCALIZE[31656]) | SubString(Container.FolderName,Education)">$LOCALIZE[31656]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31657]) | SubString(Container.FolderName,Pets & Animals)">$LOCALIZE[31657]</value>
-		<value condition="SubString(Container.FolderName,$LOCALIZE[31658]) | SubString(Container.FolderName,Travel & Events)">$LOCALIZE[31658]</value>
+		<value condition="SubString(Container.FolderName,$LOCALIZE[31657]) | SubString(Container.FolderName,Pets &amp; Animals)">$LOCALIZE[31657]</value>
+		<value condition="SubString(Container.FolderName,$LOCALIZE[31658]) | SubString(Container.FolderName,Travel &amp; Events)">$LOCALIZE[31658]</value>
 		<value condition="SubString(Container.FolderName,$LOCALIZE[15016]) | SubString(Container.FolderName,Gaming)">$LOCALIZE[15016]</value>
 		<value condition="SubString(Container.FolderName,$LOCALIZE[31700]) | SubString(Container.FolderName,Driving) | SubString(Container.FolderName,Race)">$LOCALIZE[31700]</value>
 		<value condition="SubString(Container.FolderName,$LOCALIZE[31701]) | SubString(Container.FolderName,Platform)">$LOCALIZE[31701]</value>
@@ -1044,7 +1044,7 @@
 	<variable name="GenrePic">
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31600]) | SubString(ListItem.Label,Action) | SubString(ListItem.Label,אקשן)">badges/genre/Action.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31601]) | SubString(ListItem.Label,Adventure)">badges/genre/Adventure.png</value>
-		<value condition="[SubString(ListItem.Label,$LOCALIZE[31602]) | SubString(ListItem.Label,Animation)] + [!SubString(ListItem.Label,$LOCALIZE[31653]) + !SubString(ListItem.Label,Film & Animation)]">badges/genre/Animation.png</value>
+		<value condition="[SubString(ListItem.Label,$LOCALIZE[31602]) | SubString(ListItem.Label,Animation)] + [!SubString(ListItem.Label,$LOCALIZE[31653]) + !SubString(ListItem.Label,Film &amp; Animation)]">badges/genre/Animation.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31603]) | SubString(ListItem.Label,Biography)">badges/genre/Biography.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31604]) | SubString(ListItem.Label,Children)">badges/genre/Children.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31605]) | SubString(ListItem.Label,Comedy)">badges/genre/Comedy.png</value>
@@ -1087,12 +1087,12 @@
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31650]) | SubString(ListItem.Label,$LOCALIZE[19630]) | SubString(ListItem.Label,Technology)">badges/genre/Technology.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31651]) | SubString(ListItem.Label,People) | SubString(ListItem.Label,Blogs)">badges/genre/People.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31652]) | SubString(ListItem.Label,Entertain)">badges/genre/Entertainment.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31653]) | SubString(ListItem.Label,Film & Animation)">badges/genre/Entertainment.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31654]) | SubString(ListItem.Label,Autos & Vehicles)">badges/genre/Driving.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31655]) | SubString(ListItem.Label,News & Politics)">badges/genre/News.png</value>
+		<value condition="SubString(ListItem.Label,$LOCALIZE[31653]) | SubString(ListItem.Label,Film &amp; Animation)">badges/genre/Entertainment.png</value>
+		<value condition="SubString(ListItem.Label,$LOCALIZE[31654]) | SubString(ListItem.Label,Autos &amp; Vehicles)">badges/genre/Driving.png</value>
+		<value condition="SubString(ListItem.Label,$LOCALIZE[31655]) | SubString(ListItem.Label,News &amp; Politics)">badges/genre/News.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31656]) | SubString(ListItem.Label,Education)">badges/genre/Biography.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31657]) | SubString(ListItem.Label,Pets & Animals)">badges/genre/Animals.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31658]) | SubString(ListItem.Label,Travel & Events)">badges/genre/Travel.png</value>
+		<value condition="SubString(ListItem.Label,$LOCALIZE[31657]) | SubString(ListItem.Label,Pets &amp; Animals)">badges/genre/Animals.png</value>
+		<value condition="SubString(ListItem.Label,$LOCALIZE[31658]) | SubString(ListItem.Label,Travel &amp; Events)">badges/genre/Travel.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[15016]) | SubString(ListItem.Label,Gaming)">badges/genre/Platform.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31700]) | SubString(ListItem.Label,Driving) | SubString(ListItem.Label,Race)">badges/genre/Driving.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31701]) | SubString(ListItem.Label,Platform)">badges/genre/Platform.png</value>
@@ -1126,7 +1126,7 @@
 	<variable name="GenrePic2">
 		<value condition="SubString(ListItem.Genre,$LOCALIZE[31600]) | SubString(ListItem.Genre,Action) | SubString(ListItem.Genre,אקשן)">badges/genre/Action.png</value>
 		<value condition="SubString(ListItem.Genre,$LOCALIZE[31601]) | SubString(ListItem.Genre,Adventure)">badges/genre/Adventure.png</value>
-		<value condition="[SubString(ListItem.Genre,$LOCALIZE[31602]) | SubString(ListItem.Genre,Animation)] + [!SubString(ListItem.Genre,$LOCALIZE[31653]) + !SubString(ListItem.Genre,Film & Animation)]">badges/genre/Animation.png</value>
+		<value condition="[SubString(ListItem.Genre,$LOCALIZE[31602]) | SubString(ListItem.Genre,Animation)] + [!SubString(ListItem.Genre,$LOCALIZE[31653]) + !SubString(ListItem.Genre,Film &amp; Animation)]">badges/genre/Animation.png</value>
 		<value condition="SubString(ListItem.Genre,$LOCALIZE[31603]) | SubString(ListItem.Genre,Biography)">badges/genre/Biography.png</value>
 		<value condition="SubString(ListItem.Genre,$LOCALIZE[31604]) | SubString(ListItem.Genre,Children)">badges/genre/Children.png</value>
 		<value condition="SubString(ListItem.Genre,$LOCALIZE[31605]) | SubString(ListItem.Genre,Comedy)">badges/genre/Comedy.png</value>
@@ -1169,12 +1169,12 @@
 		<value condition="SubString(ListItem.Genre,$LOCALIZE[31650]) | SubString(ListItem.Genre,$LOCALIZE[19630]) | SubString(ListItem.Genre,Technology)">badges/genre/Technology.png</value>
 		<value condition="SubString(ListItem.Genre,$LOCALIZE[31651]) | SubString(ListItem.Genre,People) | SubString(ListItem.Genre,Blogs)">badges/genre/People.png</value>
 		<value condition="SubString(ListItem.Genre,$LOCALIZE[31652]) | SubString(ListItem.Genre,Entertain)">badges/genre/Entertainment.png</value>
-		<value condition="SubString(ListItem.Genre,$LOCALIZE[31653]) | SubString(ListItem.Genre,Film & Animation)">badges/genre/Entertainment.png</value>
-		<value condition="SubString(ListItem.Genre,$LOCALIZE[31654]) | SubString(ListItem.Genre,Autos & Vehicles)">badges/genre/Driving.png</value>
-		<value condition="SubString(ListItem.Genre,$LOCALIZE[31655]) | SubString(ListItem.Genre,News & Politics)">badges/genre/News.png</value>
+		<value condition="SubString(ListItem.Genre,$LOCALIZE[31653]) | SubString(ListItem.Genre,Film &amp; Animation)">badges/genre/Entertainment.png</value>
+		<value condition="SubString(ListItem.Genre,$LOCALIZE[31654]) | SubString(ListItem.Genre,Autos &amp; Vehicles)">badges/genre/Driving.png</value>
+		<value condition="SubString(ListItem.Genre,$LOCALIZE[31655]) | SubString(ListItem.Genre,News &amp; Politics)">badges/genre/News.png</value>
 		<value condition="SubString(ListItem.Genre,$LOCALIZE[31656]) | SubString(ListItem.Genre,Education)">badges/genre/Biography.png</value>
-		<value condition="SubString(ListItem.Genre,$LOCALIZE[31657]) | SubString(ListItem.Genre,Pets & Animals)">badges/genre/Animals.png</value>
-		<value condition="SubString(ListItem.Genre,$LOCALIZE[31658]) | SubString(ListItem.Genre,Travel & Events)">badges/genre/Travel.png</value>
+		<value condition="SubString(ListItem.Genre,$LOCALIZE[31657]) | SubString(ListItem.Genre,Pets &amp; Animals)">badges/genre/Animals.png</value>
+		<value condition="SubString(ListItem.Genre,$LOCALIZE[31658]) | SubString(ListItem.Genre,Travel &amp; Events)">badges/genre/Travel.png</value>
 		<value condition="SubString(ListItem.Genre,$LOCALIZE[15016]) | SubString(ListItem.Genre,Gaming)">badges/genre/Platform.png</value>
 		<value condition="SubString(ListItem.Genre,$LOCALIZE[31700]) | SubString(ListItem.Genre,Driving) | SubString(ListItem.Genre,Race)">badges/genre/Driving.png</value>
 		<value condition="SubString(ListItem.Genre,$LOCALIZE[31701]) | SubString(ListItem.Genre,Platform)">badges/genre/Platform.png</value>

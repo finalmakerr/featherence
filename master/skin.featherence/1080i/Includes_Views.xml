@@ -91,7 +91,7 @@
 		  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-8,0">Conditional</animation>
 		  <height>40</height>
 		  <posy>-2</posy>
-		  <texture colordiffuse="$VAR[IconUמFocusColor]">$VAR[Overlay2]</texture>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">$VAR[Overlay2]</texture>
 		  <width>40</width>
 		  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
 		  <visible>Window.IsVisible(MyVideoNav.xml)</visible>
@@ -141,7 +141,7 @@
 	</control>
 	<control type="label" description="סגנונות">
 	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos34</include>
-	  <animation description="slide_he" condition="Window.IsVisible(MyPics.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditonal</animation>
+	  <animation description="slide_he" condition="Window.IsVisible(MyPics.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
 	  <posx>45</posx>
 	  <posy>40</posy>
 	  <width>270</width>
@@ -220,7 +220,7 @@
 	</control>
 	<control type="grouplist" description="תמונת סגנון">
 	    <animation condition="true" effect="zoom" center="auto" start="100,100" end="80,80">Conditional</animation>
-		<animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="140,0" time="0">Conditonal</animation>
+		<animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="140,0" time="0">Conditional</animation>
 	    <posx>-40</posx>
 		<posy>30</posy>
 		<include condition="StringCompare(System.Language,Hebrew)">LabelR7</include>
@@ -236,7 +236,7 @@
 	</control>
 	<control type="label" description="סגנונות">
 	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos34</include>
-	  <animation description="slide_he" condition="Window.IsVisible(MyPics.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditonal</animation>
+	  <animation description="slide_he" condition="Window.IsVisible(MyPics.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
 	  <posx>45</posx>
 	  <posy>40</posy>
 	  <width>270</width>
@@ -281,7 +281,7 @@
 	  <visible>[[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
 	</control>
 	<control type="image" description="תמונה">
-	  <animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="385,0" time="0">Conditonal</animation>
+	  <animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="385,0" time="0">Conditional</animation>
 	  <posx>30</posx>
 	  <posy>30</posy>
 	  <height>40</height>

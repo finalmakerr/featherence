@@ -31,10 +31,6 @@
 	  </include>
 	  <include>ArrowsUpDown</include>
 	  <control type="grouplist" id="9005">
-		<!--<onright condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(60)">60</onright>-->
-		<onleft condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(450) + !StringCompare(System.Language,Hebrew)">450</onleft>
-		<onright condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(450) + StringCompare(System.Language,Hebrew)">450</onright>
-		
 		<onup>9005</onup>
 		<ondown>9005</ondown>
 		<height>350</height>
@@ -46,7 +42,6 @@
 		  <onclick>Close</onclick>
 		  <visible>false</visible>
 		</control>
-		<include description="בחירת קבצים" condition="true">CenterMenuContent_FileBrowser</include>
 		<include description="מידע PVR" condition="Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml)">CenterMenuContent_DialogPVRGuideInfo</include>
 	  </control>
     </control>

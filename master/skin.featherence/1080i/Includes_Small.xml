@@ -55,17 +55,12 @@
   </include>
   <include name="4ways2" description="IncludeShelf Top">
 	<onup condition="Control.IsVisible(7011)">7017</onup>
-	<onup condition="Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(310) + !Control.IsVisible(7011)">310</onup>
 	<onup condition="Player.HasAudio">ActivateWindow(12901)</onup>
 	<ondown condition="Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(50)">50</ondown>
 	<ondown condition="Window.IsVisible(Home.xml) + Control.IsVisible(90000)">9000</ondown>
-	<!--<ondown condition="Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(50) + [Control.HasFocus(313) | Control.HasFocus(314) | Control.HasFocus(315)]">50</ondown>-->
-	<onleft condition="Control.HasFocus(313)">313</onleft>
-	<onright condition="Control.HasFocus(313)">313</onright>
-	<onleft condition="Control.HasFocus(314)">314</onleft>
-	<onright condition="Control.HasFocus(314)">314</onright>	  
-	<onleft condition="Control.HasFocus(315)">315</onleft>
-	<onright condition="Control.HasFocus(315)">315</onright>
+	
+	<onleft condition="Control.HasFocus(50)">50</onleft>
+	<onright condition="Control.HasFocus(50)">50</onright>
   </include>
   <include name="4ways3" description="SideMenu">
   	<onup condition="ControlGroup(9000).HasFocus() + !ControlGroup(9001).HasFocus() + !ControlGroup(9002).HasFocus()">9000</onup>
@@ -192,9 +187,9 @@
 		<animation condition="!Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.1" time="0">Conditional</animation>
 		<animation description="No full Fanart-Vertical_he" condition="[!Skin.HasSetting(HomeFanartHalfScreen) + ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus + Window.IsVisible(Home.xml)]] + Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
 		<animation description="No full Fanart-Vertical_en" condition="[!Skin.HasSetting(HomeFanartHalfScreen) + ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus + Window.IsVisible(Home.xml)]] + Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
-	    <animation description="Slide-Panel" condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | [[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() + Player.HasVideo]]" effect="slide" start="0,0" end="0,551" time="220">Conditonal</animation>
-		<animation description="Slide-Horizontal" condition="![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + Player.HasVideo" effect="slide" start="0,0" end="0,551" time="220">Conditonal</animation>
-		<animation condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + !Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditonal</animation>
+	    <animation description="Slide-Panel" condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | [[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() + Player.HasVideo]]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
+		<animation description="Slide-Horizontal" condition="![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + Player.HasVideo" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
+		<animation condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + !Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditional</animation>
 		<aspectratio align="top">scale</aspectratio>
 		<visible>!Skin.HasSetting(background)</visible>
 		<!--<visible>[[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()] | [Container(50).Row(0) | Container(50).Row(1)] + !Container(50).HasPrevious()</visible>-->
@@ -204,13 +199,12 @@
 		<height>1080</height>
 		<width>1920</width>
 		<visible>!Player.HasVideo | [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + Skin.HasSetting(HomeFanartHalfScreen)</visible>
-		<!--<visible>![Window.IsVisible(Custom1170.xml) + !IsEmpty(Window(home).Property(SelectedColor)) + [StringCompare(Window(home).Property(TEMP),MainBackgroundColor)]]</visible>-->
 	  </control>
 	  <control type="image" description="רקע תחתון צבע">
 		<!--<visible>Skin.HasSetting(background)</visible>-->
-		<animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]" effect="slide" start="0,0" end="0,29" time="220">Conditonal</animation>
-		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,250" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1660,0" time="0">Conditonal</animation>
+		<animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]" effect="slide" start="0,0" end="0,29" time="220">Conditional</animation>
+		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,250" time="0">Conditional</animation>
+		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1660,0" time="0">Conditional</animation>
 		<include condition="Skin.String(MenuDesign,4)">Control_Pos44</include>
 		<include>Fade_MainBackgroundOverlay</include>
 		<aspectratio>stretch</aspectratio>
@@ -222,9 +216,9 @@
 		<visible>[!Skin.String(MenuDesign,4) | Skin.String(MenuDesign,4) + [Window.IsVisible(CustomHomeCustomizer.xml) | ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]]]</visible>
 	  </control>
 	  <control type="image" description="רקע תחתון טקסטורה">
-		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,250" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1660,0" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-10,0" time="0">Conditonal</animation>
+		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,250" time="0">Conditional</animation>
+		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1660,0" time="0">Conditional</animation>
+		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-10,0" time="0">Conditional</animation>
 		<include>Fade_MainBackgroundOverlay</include>
 		<aspectratio>scale</aspectratio>
 		<include condition="Skin.String(MenuDesign,4)">Control_Pos43</include>
@@ -238,9 +232,9 @@
 	  <control type="image" description="צבע (רקע עליון)">
 		<include>Fade_TopMainBackgroundOverlay</include>
 		<include condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]">Control_Pos42</include>
-		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,0" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-270,0" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="270,0" time="0">Conditonal</animation>
+		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,0" time="0">Conditional</animation>
+		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-270,0" time="0">Conditional</animation>
+		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="270,0" time="0">Conditional</animation>
 		<aspectratio>stretch</aspectratio>
 		<posx>-20</posx>
 		<posy>-7</posy>
@@ -254,9 +248,9 @@
 	  <control type="image" description="טקסטורה (רקע עליון)">
 		<include>Fade_TopMainBackgroundOverlay</include>
 		<include condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)| !Skin.String(MenuDesign)]">Control_Pos42</include>
-		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,-14" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,0" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="265,0" time="0">Conditonal</animation>
+		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,-14" time="0">Conditional</animation>
+		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,0" time="0">Conditional</animation>
+		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="265,0" time="0">Conditional</animation>
 		<aspectratio>scale</aspectratio>
 		<posy>0</posy>
 		<width>1920</width>
@@ -401,13 +395,13 @@
 	  <visible>!Window.IsVisible(DialogFavourites.xml)</visible>
 	  <visible>Player.HasVideo</visible>
 	  <control type="videowindow" id="7011" description="חלון וידאו">
-		  <animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-245,624" time="0">Conditonal</animation>
-		  <animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="235,624" time="0">Conditonal</animation>
-		  <animation description="zoom-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="86,85.5" time="0">Conditonal</animation>
-		  <animation description="zoom-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="86,85.5" time="0">Conditonal</animation>
+		  <animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-245,624" time="0">Conditional</animation>
+		  <animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="235,624" time="0">Conditional</animation>
+		  <animation description="zoom-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="86,85.5" time="0">Conditional</animation>
+		  <animation description="zoom-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="86,85.5" time="0">Conditional</animation>
 		  <!--<include condition="!StringCompare(Container.Viewmode,$LOCALIZE[31011]) + [!Control.IsVisible(11) | Window.IsVisible(MyPVRGuide.xml)]">Control_Pos6</include>-->
 		  
-		  <animation description="slide-Home-Vertical_he" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,0" time="0">Conditonal</animation>
+		  <animation description="slide-Home-Vertical_he" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,0" time="0">Conditional</animation>
 		  
 		  <include condition="![Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)]">Control_Pos4</include>
 		  <include condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4)">Control_Pos45</include>
@@ -417,9 +411,9 @@
 	  </control>
 
 	  <control type="image" description="רקע שחור אחורי - מסתיר חלון וידאו על כל המסך">
-		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,250" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,552" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="265,552" time="0">Conditonal</animation>
+		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,250" time="0">Conditional</animation>
+		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,552" time="0">Conditional</animation>
+		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="265,552" time="0">Conditional</animation>
 		<aspectratio>stretch</aspectratio>
 		<height>1080</height>
 		<width>1920</width>
@@ -435,11 +429,11 @@
 		<animation description="No full Fanart-Vertical_en" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,30" start="100,100" end="86.3,200" time="0">Conditional</animation>
 		
 		<!--Nav.xml-->
-		<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-240,320" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="230,320" time="0">Conditonal</animation>
-		<animation description="slide-Vertical" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="75,179" time="0">Conditonal</animation>
-		<animation description="slide-others" condition="Window.IsVisible(MyVideoNav.xml) + ![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)]" effect="slide" start="0,0" end="0,-552" time="0">Conditonal</animation>
-		<animation description="slide-others" condition="Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)" effect="slide" start="0,0" end="0,-552" time="0">Conditonal</animation>
+		<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-240,320" time="0">Conditional</animation>
+		<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="230,320" time="0">Conditional</animation>
+		<animation description="slide-Vertical" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="75,179" time="0">Conditional</animation>
+		<animation description="slide-others" condition="Window.IsVisible(MyVideoNav.xml) + ![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)]" effect="slide" start="0,0" end="0,-552" time="0">Conditional</animation>
+		<animation description="slide-others" condition="Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)" effect="slide" start="0,0" end="0,-552" time="0">Conditional</animation>
 		
 		<!--Home.xml-->
 		<include condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]">Control_Pos33</include>
@@ -810,10 +804,10 @@
   
   <include name="ForwardingRewinding">
     <control type="grouplist" description="תצוגה קדימה/אחורה">
-		<animation description="Horizontal" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [!Skin.String(MenuDesign) | Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)]" effect="slide" start="0,0" end="0,-240" time="0">Conditonal</animation>
-		<animation description="Vertical" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + !StringCompare(System.Language,Hebrew) + [Skin.String(MenuDesign,4)]" effect="slide" start="0,0" end="260,0" time="0">Conditonal</animation>
-		<animation description="Panel" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]" effect="slide" start="0,0" end="0,-490" time="0">Conditonal</animation>
-		<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="460,0" time="0">Conditonal</animation>
+		<animation description="Horizontal" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [!Skin.String(MenuDesign) | Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)]" effect="slide" start="0,0" end="0,-240" time="0">Conditional</animation>
+		<animation description="Vertical" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + !StringCompare(System.Language,Hebrew) + [Skin.String(MenuDesign,4)]" effect="slide" start="0,0" end="260,0" time="0">Conditional</animation>
+		<animation description="Panel" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]" effect="slide" start="0,0" end="0,-490" time="0">Conditional</animation>
+		<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="460,0" time="0">Conditional</animation>
 		<left>30</left>
 		<top>950</top>
 		<width>748</width>
@@ -858,7 +852,6 @@
   
   <include name="Badges">
   <control type="grouplist">
-	<animation description="Slide_en" condition="!StringCompare(System.Language,Hebrew) + Control.IsVisible(3200)" effect="slide" start="0,0" end="90,0">Conditonal</animation>
 	<include condition="StringCompare(System.Language,Hebrew)">Control_Pos50</include>
 	<height>24</height>
 	<itemgap>10</itemgap>
@@ -892,8 +885,7 @@
    
   <control type="grouplist" id="1132">
     <include>Slide1</include>
-	<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1000,0">Conditonal</animation>
-	<animation description="Slide_en" condition="!StringCompare(System.Language,Hebrew) + Control.IsVisible(3200)" effect="slide" start="0,0" end="90,0">Conditonal</animation>
+	<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1000,0">Conditional</animation>
 	<height>24</height>
 	<itemgap>10</itemgap>
 	<align>left</align>

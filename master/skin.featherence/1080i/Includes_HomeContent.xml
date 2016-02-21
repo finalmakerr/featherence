@@ -511,17 +511,17 @@
 		  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
 		  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=211&amp;value=0)</onclick>
         </item>
-		<item id="1000">
+		<item id="1000" description="test">
           <visible>Skin.HasSetting(Admin) + Window.IsVisible(Home.xml)</visible>
           <thumb>special://home/addons/script.featherence.service/resources/icons/caa2.png</thumb>
-          <label>Test</label>
+          <label>226</label>
 		  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">RunScript(script.featherence.service,,?mode=0)</onclick>
 		</item>
 		
-		<item id="1001">
+		<item id="1001" description="Refresh Buttons">
           <visible>Window.IsVisible(Home.xml) + [!Skin.String(label90) | !Skin.String(label91) | !Skin.String(label92)]</visible>
           <thumb>special://home/addons/script.featherence.service/resources/icons/magicwand.png</thumb>
-          <label>REFRESH BUTTONS</label>
+          <label>184</label>
 		  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">RunScript(script.featherence.service,,?mode=40&amp;value=0)</onclick>
 		</item>
   </include> 
@@ -630,7 +630,7 @@
 	    <include>Fade_TopInformationOverlay</include>
 		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
-		<label>$LOCALIZE[76196]</label>
+		<label>$LOCALIZE[31830]</label>
 		<onclick>Action(Down)</onclick>
 		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
 		<selected>Window.IsVisible(1173)</selected>
@@ -651,7 +651,7 @@
 		<width>370</width>
 		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
 		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
-		<label>$LOCALIZE[74480]</label>
+		<label>$LOCALIZE[31820]</label>
 		<onclick condition="IsEmpty(Window(1117).Property(HideInactiveButtons))">SetProperty(HideInactiveButtons,true,1117)</onclick>
 		<onclick condition="!IsEmpty(Window(1117).Property(HideInactiveButtons))">ClearProperty(HideInactiveButtons,1117)</onclick>
 		<selected>!IsEmpty(Window(1117).Property(HideInactiveButtons))</selected>

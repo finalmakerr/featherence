@@ -21,7 +21,7 @@
       <texture>images/Line.png</texture>
     </control>
     <control type="label" description="Heading">
-      <include>Heading</include>
+      <include>LabelC1</include>
       <label>130</label>
     </control>
     <control type="group">

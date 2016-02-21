@@ -88,8 +88,8 @@
 			</control>
 		</control>
 		<control type="group" id="700" description="Shelf items שורה עליונה בכחול">
-		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + Control.HasFocus(9000)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-300,0">Conditonal</animation>
-		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + Control.HasFocus(9000)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="300,0">Conditonal</animation>
+		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + Control.HasFocus(9000)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-300,0">Conditional</animation>
+		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + Control.HasFocus(9000)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="300,0">Conditional</animation>
 		  <include description="פנל מדף סרטים שנוספו לאחרונה" condition="!Skin.HasSetting(MoviesShelfWL)">Movies_RA</include>
 		  <include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include> 
 		  <include description="פנל מדף פרקים שנוספו לאחרונה" condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RAIR</include> 
@@ -106,7 +106,7 @@
   </include>
   <include name="Menu_Home">
     <control type="panel" id="9000">
-	  <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,-551" time="220">Conditonal</animation>
+	  <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,-551" time="220">Conditional</animation>
 	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
 	  <visible>Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)</visible>
 	  <posx>30</posx>
@@ -159,7 +159,7 @@
 	<control type="list" id="9000" description="מאונך">
 	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
 	  <visible>Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)</visible>
-	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1665,0" time="0">Conditonal</animation>
+	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1665,0" time="0">Conditional</animation>
 	  <posx>10</posx>
 	  <posy>150</posy>
 	  <width>1850</width>

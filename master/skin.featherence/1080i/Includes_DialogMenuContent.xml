@@ -626,7 +626,7 @@
 		  <include name="Buttons_Frame">
 			<param name="id" value="" />
 			<param name="border" value="40" />
-			<param name="color" value="$VAR[ButtonUמFocusColor]" />
+			<param name="color" value="$VAR[ButtonUnFocusColor]" />
 			<param name="condition" default="true"/>
 			<param name="height" value="80" />
 			<param name="posx" value="" />
@@ -710,7 +710,7 @@
 		  <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>
 		  <include>ButtonC1</include>
 		</control>
-		<control type="button"id="11" description="הגדרות">
+		<control type="button" id="11" description="הגדרות">
 		  <width>200</width>
 		  <label>5</label>
 		  <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>

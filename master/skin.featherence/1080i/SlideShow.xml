@@ -228,7 +228,6 @@
 			<visible>Player.HasAudio + Playlist.IsRepeat + !Pvr.IsPlayingRadio</visible>
 		</control>	
 	</control>
-  </control>-->
 	<control type="group">
 	  <include>featherencepause</include>
 	</control>

@@ -1152,7 +1152,6 @@ def notification_common(custom):
 	elif custom == "16": notification("Downloading Files...","","",4000) #
 	
 	elif custom == "17": notification(localize(257),'$LOCALIZE[1446]',"",2000) #Error, Unknown
-	elif custom == "19": notification('$LOCALIZE[16200]','$LOCALIZE[77877]',"",2000) #HAPEULA BUTLA, HAMISTAMES ITAREV BEAMZA APEHULA
 	elif custom == "22": notification(addonString_servicefeatherence(32407).encode('utf-8'),'',"",4000) #The system is processing for solution...
 	elif custom == "23": notification(addonString_servicefeatherence(32406).encode('utf-8'), addonString_servicefeatherence(32405).encode('utf-8'),"",4000) #Active download in background
 	elif custom == "24": notification(addonString_servicefeatherence(32402).encode('utf-8'), addonString_servicefeatherence(32403).encode('utf-8'),"",2000) #Addon is missing! Trying to download addon

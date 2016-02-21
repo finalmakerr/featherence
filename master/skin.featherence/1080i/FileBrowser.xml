@@ -60,7 +60,7 @@
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
-		  <label>Horizontal Flip</label>
+		  <label>20184</label>
 		  <visible>Window.IsVisible(FileBrowser.xml) + Control.IsEnabled(416)</visible>
 		</control>
 		<control type="button" id="405" description="ברירת מחדל">

@@ -214,7 +214,8 @@ RunScript(script.featherence.service,,?mode=25)
 	
 	```
 	READ LINE BY LINE FROM FILE - VIEW AND PLAY
-	MAIN: MODE 11 | URL = <file path>
+	METHOD 1: MODE 11 | URL = <file path>
+	METHOD 2: MODE 5/6/17 | URL = &custom_se11=<file path>
 	FILE STRUCTURE: <url=""/><title=""/><thumb=""/><desc=""/>
 	URL EXAMPLES: <url="&googledrive=<ID>"/>
 	TIP: os.path.join(addonPath, 'resources', 'templates2', '')

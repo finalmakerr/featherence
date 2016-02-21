@@ -155,8 +155,8 @@ def mode9(admin, name):
 							'''---------------------------'''
 							
 					elif tip == "true" and countidle == 3:
-						if container120listitemlabel2 == property_dialogsubtitles2: notification('$LOCALIZE[78947]',property_dialogsubtitles2,"",3000)
-						elif container120listitemlabel2 in subL: notification('$LOCALIZE[78949]',property_dialogsubtitles2,"",3000)
+						if container120listitemlabel2 == property_dialogsubtitles2: notification('$LOCALIZE[31858]',property_dialogsubtitles2,"",3000)
+						elif container120listitemlabel2 in subL: notification('$LOCALIZE[31859]',property_dialogsubtitles2,"",3000)
 						
 						tip = "false"
 						'''---------------------------'''
@@ -168,7 +168,7 @@ def mode9(admin, name):
 					'''------------------------------
 					---LOOKING-FOR-SUBTITLE----------
 					------------------------------'''
-					notification('$LOCALIZE[78952]',"","",4000)
+					notification('$LOCALIZE[31862]',"","",4000)
 					'''---------------------------'''
 				
 				elif countidle > 3 and count2 == 10 and systemcurrentcontrol == controlgetlabel100:
@@ -176,7 +176,7 @@ def mode9(admin, name):
 					---REFRESH-----------------------
 					------------------------------'''
 					if controlgetlabel100 == "Subtitle.co.il": xbmc.sleep(1000)
-					notification('$LOCALIZE[78951]',"","",2000)
+					notification('$LOCALIZE[31861]',"","",2000)
 					systemcurrentcontrol = findin_systemcurrentcontrol("0",controlgetlabel100,40,'Action(Down)','')
 					systemcurrentcontrol = findin_systemcurrentcontrol("0",controlgetlabel100,40,'Action(Down)','')
 					systemcurrentcontrol = findin_systemcurrentcontrol("0",controlgetlabel100,40,'Action(Down)','')
@@ -189,7 +189,7 @@ def mode9(admin, name):
 					'''------------------------------
 					---CHANGE-SUBTITLE-SERVICE-------
 					------------------------------'''
-					notification('$LOCALIZE[78950]',"","",2000)
+					notification('$LOCALIZE[31860]',"","",2000)
 					if controlgetlabel100 in listL: listL.remove(controlgetlabel100) #listL = 
 					
 					systemcurrentcontrol = findin_systemcurrentcontrol("2",listL,40,'Action(Down)','')
@@ -388,7 +388,7 @@ def mode28(value, admin, name, printpoint):
 	list.append(localize(31014)) #Poster
 	list.append(localize(31015)) #List
 
-	returned, value2 = dialogselect('$LOCALIZE[74433]',list,0)
+	returned, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
 
 	if returned == -1: printpoint = printpoint + "9"
 	elif returned == 0: printpoint = printpoint + "8"
@@ -530,36 +530,9 @@ def mode32(value, admin, name, printpoint):
 			printpoint = printpoint + '3'
 			text = text.replace('&amp;','&')
 			text = text.replace('&quot;',"")
-			if 'plugin://plugin.video.sdarot.tv/?' in text:
-				printpoint = printpoint + '4'
-				text = text.replace('plugin://plugin.video.sdarot.tv/?',"")
-				list = []
-				list.append('mode=')
-				list.append('image=')
-				list.append('summary')
-				list.append('name=')
-				for x in list:
-					text_ = regex_from_to(text, x, '&', excluding=False)
-					text = text.replace(text_,"",1)
-					extra = extra + 'x' + space2 + str(x) + space + 'text_' + space2 + str(text_) + newline
-				text = "list.append('&sdarot=" + text + "')"
 			
-			elif 'plugin://plugin.video.wallaNew.video/?' in text and 1 + 1 == 3:
-				printpoint = printpoint + '4'
-				text = text.replace('plugin://plugin.video.wallaNew.video/?',"")
-				list = []
-				list.append('mode=')
-				list.append('module=')
-				list.append('name=')
-				for x in list:
-					text_ = regex_from_to(text, x, '&', excluding=False)
-					text = text.replace(text_,"",1)
-					extra = extra + 'x' + space2 + str(x) + space + 'text_' + space2 + str(text_) + newline
-				text = "list.append('&wallaNew=" + text + "')"
-			
-			else:
-				if '1' in printpoint: text = "list.append('&custom4=" + text + "')"
-				elif '2' in printpoint: text = "list.append('&custom8=" + text + "')"
+			if '1' in printpoint: text = "list.append('&custom4=" + text + "')"
+			elif '2' in printpoint: text = "list.append('&custom8=" + text + "')"
 		
 		if listitemthumb != "":
 			text = text + newline + str(listitemthumb)
@@ -617,7 +590,7 @@ def mode40(value, admin, name, printpoint):
 	extra2 = "" ; TypeError = ""
 	if value == '0': printpoint = printpoint + '1'
 	elif value == '1':
-		returned = dialogyesno(localize(74554) , localize(74556))
+		returned = dialogyesno(localize(31821) , localize(31822))
 		if returned == 'ok': printpoint = printpoint + '1' ; xbmc.executebuiltin('Dialog.Close(1173)')
 	
 	if printpoint == '1':
@@ -798,7 +771,7 @@ def mode200(value, admin, name, printpoint):
 	else: pass
 	
 	if "1" in printpoint:
-		returned, value2 = dialogselect('$LOCALIZE[74433]',list,0)
+		returned, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
 	
 		if returned == -1: printpoint = printpoint + "9"
 		elif returned == 0: printpoint = printpoint + "8"
@@ -880,10 +853,10 @@ def mode201(value, admin, name, printpoint):
 	container50hasfocus390 = xbmc.getCondVisibility('Container(50).HasFocus(390)') #BUTTONS
 
 	list = ['-> (Exit)', localize(10035) + space + "(" + localize(593) + ")", localize(590) + space + "(" + localize(593) + ")", \
-	localize(74840) + space + "(" + localize(80,addon='script.featherence.service') + ")", localize(74840) + space + localize(590) + space + "(" + localize(80,addon='script.featherence.service') + ")", \
-	localize(74840) + space + "(" + localize(593) + ")", localize(74840) + space + localize(590) + space + "(" + localize(593) + ")", \
-	localize(10035) + space + localize(78215) + space + "(" + localize(593) + ")", localize(10035) + space + localize(78215) + space + localize(590) + space + "(" + localize(593) + ")", \
-	localize(10035) + space + "(" + localize(74614) + ")"]
+	localize(31827) + space + "(" + localize(80,addon='script.featherence.service') + ")", localize(31827) + space + localize(590) + space + "(" + localize(80,addon='script.featherence.service') + ")", \
+	localize(31827) + space + "(" + localize(593) + ")", localize(31827) + space + localize(590) + space + "(" + localize(593) + ")", \
+	localize(10035) + space + localize(31849) + space + "(" + localize(593) + ")", localize(10035) + space + localize(31849) + space + localize(590) + space + "(" + localize(593) + ")", \
+	localize(10035) + space + "(" + localize(31825) + ")"]
 	
 	if value == "" or container50hasfocus390:
 		returned, value_ = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
@@ -1491,7 +1464,7 @@ def mode215(value, admin, name, printpoint):
 		x = '93' ; id = idT2.get(x) ; background = backgroundT.get('icon'+x)
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(73220))
+			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(31814))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.kids,return)')
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/kids.png')
 			'''---------------------------'''	

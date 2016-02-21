@@ -563,8 +563,8 @@ msgid "Choose YES to continue"
 msgstr "בחר "כן" להמשך"
 
 msgctxt "#32066
-msgid ""
-msgstr ""
+msgid "configure TV remote"
+msgstr "הגדרת שלט טלוויזיה"
 
 msgctxt "#32067
 msgid ""

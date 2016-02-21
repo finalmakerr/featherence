@@ -8,9 +8,15 @@ WIP - WORK IN PROGRESS
 - Widget auto refresh on condition.
 
 ------------------------
+Featherence v0.4.4 (xx-Feb-16)
+------------------------
+- Added DialogPVRChannelManager and DialogPVRGroupManager.
+- Minor update DialogSubtitles.
+- Major internal code maintenance.
+
+------------------------
 Featherence v0.4.4 (14-Feb-16)
 ------------------------
-- Added action change for default buttons.
 - Added additonal Sub Menu action method.
   You may use it to activate main button on a click or sub menu on an arrow click (depend on your current layout).
 - Added full video information on pause.
@@ -18,6 +24,7 @@ Featherence v0.4.4 (14-Feb-16)
 - Fixed path (special://) for buttons's Icons and fanart.
   You may save then load to create special:// path for your current buttons all at once.
 - Minor bugs fix.
+- You may now change the action of the default buttons (or revert back if needed).
 
 ------------------------
 Featherence v0.4.2 (11-Feb-16)

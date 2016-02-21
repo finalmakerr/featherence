@@ -11,8 +11,8 @@
   </extension>
   <extension point="xbmc.addon.metadata">
 	<platform>all</platform>
-	<summary lang="en"></summary>
-	<summary lang="he"></summary>
+	<summary lang="en">Featherence Skin</summary>
+	<summary lang="he">פדרנס סקין</summary>
     <description lang="en">Features:
 - 4 2D buttons effects: Bevel, Shadow, Overlay and Stroke effects are available across the entire skin.
 - 6 Layouts: Panel/2, Horizontal/2, Vertical RTL/LTR.

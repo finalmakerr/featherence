@@ -12,6 +12,7 @@ Featherence v0.4.4 (xx-Feb-16)
 ------------------------
 - Added DialogPVRChannelManager and DialogPVRGroupManager.
 - Minor update DialogSubtitles.
+- Major internal code maintenance.
 
 ------------------------
 Featherence v0.4.4 (14-Feb-16)

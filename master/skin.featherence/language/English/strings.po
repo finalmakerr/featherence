@@ -1,824 +1,824 @@
 msgid ""
 msgstr ""
 
-msgctxt "#31000
+msgctxt "#31000"
 msgid "Choose a default lyric addon."
-msgstr "בחר הרחבה ברירת מחדל למילים לשירים."
+msgstr ""
 
-msgctxt "#31001
+msgctxt "#31001"
 msgid "Featherence rating method"
-msgstr "Featherence שיטת דירוג"
+msgstr ""
 
-msgctxt "#31002
+msgctxt "#31002"
 msgid "Enable this feature in order to have a better rating system for movies, tvshows and youtube videos.[CR][COLOR=red]If disable the rating will be as you familar, Movies and Tvshows rating will most likely be always above 2.5 stars.[/COLOR]"
-msgstr "הפעל אפשרות זאת בכדי לכפות דירוג סרטים / סדרות / סרטונים(יו-טיוב) בתצורה מיטבית.[CR][COLOR=red]אם אפשרות זו מבוטלת... דירוג סרטים / סדרות יהיה בהכרח תמיד גבוהה מ-2.5 כוכבים.[/COLOR]"
+msgstr ""
 
-msgctxt "#31003
+msgctxt "#31003"
 msgid "Save/Load"
-msgstr "שמירה/טעינה"
+msgstr ""
 
 msgctxt "#31004"
 msgid "Choose this option for saving/loading/changing your skin design.[CR]The configuration files maybe used on any machine!"
-msgstr "באחר באפשרות באם ברצונך לשמור/לטעון/לשנות את הגדרות העיצוב שלך.[CR]ניתן להשתמש בקובץ השמור על כל מכשיר או להעביר לחבר!"
+msgstr ""
 
-msgctxt "#31005
+msgctxt "#31005"
 msgid "Reset default buttons name/icons"
-msgstr "איפוס שמות/סמלים כפתורים ברירת מחדל"
+msgstr ""
 
 msgctxt "#31006"
 msgid "This button is useful when you have changed your system language or if icons are missing in the default buttons."
-msgstr "כפתור זה שימושי אם שינית את שפת המערכת או אם לא מופיעים סמלים בכפתורי ברירת מחדל."
+msgstr ""
 
-msgctxt "#31007
+msgctxt "#31007"
 msgid "Randomize slideshow"
-msgstr "מצגת אקראית"
+msgstr ""
 
-msgctxt "#31010
+msgctxt "#31010"
 msgid "Center List"
-msgstr "Center List"
+msgstr ""
 
-msgctxt "#31011
+msgctxt "#31011"
 msgid "Side List"
-msgstr "Side List"
+msgstr ""
 
-msgctxt "#31012
+msgctxt "#31012"
 msgid "Small List"
-msgstr "Small List"
+msgstr ""
 
-msgctxt "#31013
+msgctxt "#31013"
 msgid "Wall"
-msgstr "Wall"
+msgstr ""
 
-msgctxt "#31014
+msgctxt "#31014"
 msgid "Poster"
-msgstr "Poster"
+msgstr ""
 
-msgctxt "#31015
+msgctxt "#31015"
 msgid "Line"
-msgstr "Line"
+msgstr ""
 
-msgctxt "#31030
+msgctxt "#31030"
 msgid "Covers Transperancy"
-msgstr "שקיפות עטיפות"
+msgstr ""
 
-msgctxt "#31031
+msgctxt "#31031"
 msgid "Panel"
-msgstr "פנל"
+msgstr ""
 
-msgctxt "#31032
+msgctxt "#31032"
 msgid "Horizontal"
-msgstr "מאוזן"
+msgstr ""
 
-msgctxt "#31033
+msgctxt "#31033"
 msgid "Vertical"
-msgstr "מאונך"
+msgstr ""
 
-msgctxt "#31034
+msgctxt "#31034"
 msgid "Center Menu"
-msgstr "תפריט אמצע"
+msgstr ""
 
-msgctxt "#31035
+msgctxt "#31035"
 msgid "Clear fanart"
-msgstr "פאנארט נקי"
+msgstr ""
 
-msgctxt "#31036
+msgctxt "#31036"
 msgid "When choosing button icon."
-msgstr "כאשר בוחרים סמל לכפתור."
+msgstr ""
 
-msgctxt "#31037
+msgctxt "#31037"
 msgid "When choosing button fanart."
-msgstr "כאשר בוחרים פאנארט לכפתור."
+msgstr ""
 
-msgctxt "#31038
+msgctxt "#31038"
 msgid "Allow Tips on wait"
-msgstr "אפשר טיפים במצב המתנה"
+msgstr ""
 
-msgctxt "#31039
+msgctxt "#31039"
 msgid "Unfocus home buttons"
-msgstr "כפתורי בית לא נבחר"
+msgstr ""
 
-msgctxt "#31040
+msgctxt "#31040"
 msgid "If you choose NO, the buttons will have thier transperancy increased on user idle or while navigating the widget.[CR]In some views the buttons may drop down for clearer fanart."
-msgstr "אם תבחר לא הכפתורים יקבלו שקיפות כאשר אין פעילות משתמש או בזמן ניווט בו'ידגט.[CR]בחלק מהתצוגות הכפתורים אף יצופו למטה בכדי להציג פאנארט נקי."
+msgstr ""
 
-msgctxt "#31041
+msgctxt "#31041"
 msgid "Static Transperancy"
-msgstr "שקיפות קבועה"
+msgstr ""
 
-msgctxt "#31042
+msgctxt "#31042"
 msgid "Show disc art"
-msgstr "הצג דיסק מסתובב"
+msgstr ""
 
-msgctxt "#31043
+msgctxt "#31043"
 msgid "Enlarge focused thumbnail"
-msgstr "הגדל תמונה נבחרת"
+msgstr ""
 
-msgctxt "#31044
+msgctxt "#31044"
 msgid "Selector frame"
-msgstr "מסגרת בחירה"
+msgstr ""
 
-msgctxt "#31045
+msgctxt "#31045"
 msgid "Choose a color for the selector frame.[CR]Selector frame is an optional skin element."
-msgstr "בחר צבע עבור מסגרת בחירה.[CR]מסגרת בחירה הינה אפשרות שיש להפעיל בסקין."
+msgstr ""
 
-msgctxt "#31046
+msgctxt "#31046"
 msgid "Wider Menu"
-msgstr "תפריט רחב"
+msgstr ""
 
-msgctxt "#31047
+msgctxt "#31047"
 msgid "Show Rating"
-msgstr "הצג דירוג"
+msgstr ""
 
-msgctxt "#31048
+msgctxt "#31048"
 msgid "Remove Item"
-msgstr "הסרת פריט"
+msgstr ""
 
-msgctxt "#31049
+msgctxt "#31049"
 msgid "Create New Item"
-msgstr "צור פריט חדש"
+msgstr ""
 
-msgctxt "#31050
+msgctxt "#31050"
 msgid "Fanart Transperancy"
-msgstr "שקיפות פאנארט"
+msgstr ""
 
-msgctxt "#31051
+msgctxt "#31051"
 msgid "Rectangles"
-msgstr "מלבנים"
+msgstr ""
 
-msgctxt "#31052
+msgctxt "#31052"
 msgid "Circles"
-msgstr "עיגולים"
+msgstr ""
 
-msgctxt "#31053
+msgctxt "#31053"
 msgid "Triangles"
-msgstr "משולשים"
+msgstr ""
 
-msgctxt "#31054
+msgctxt "#31054"
 msgid "Pillows"
-msgstr "כריות"
+msgstr ""
 
-msgctxt "#31055
+msgctxt "#31055"
 msgid "Hexagons"
-msgstr "משושים"
+msgstr ""
 
-msgctxt "#31056
+msgctxt "#31056"
 msgid ""
 msgstr ""
 
-msgctxt "#31057
+msgctxt "#31057"
 msgid "Buttons Shape"
-msgstr "צורת כפתורים"
+msgstr ""
 
-msgctxt "#31058
+msgctxt "#31058"
 msgid ""
 msgstr ""
 
-msgctxt "#31059
+msgctxt "#31059"
 msgid ""
 msgstr ""
 
-msgctxt "#31060
+msgctxt "#31060"
 msgid "Show randomize tips on Dialog Busy window."
-msgstr "הצגת טיפים אקראיים בזמן המתנה."
+msgstr ""
 
-msgctxt "#31061
+msgctxt "#31061"
 msgid "Menu Buttons"
-msgstr "כפתורי תפריט"
+msgstr ""
 
-msgctxt "#31062
+msgctxt "#31062"
 msgid "dialogues"
-msgstr "דיאלוגים"
+msgstr ""
 
-msgctxt "#31063
+msgctxt "#31063"
 msgid "Reposition effect many dialogs such as DialogYesNo, DialogOK, DialogProgress and more.."
-msgstr "מיקום מחדש חל על חלונות דיאלוגים רבים כגון:[CR]דיאלוג כן/לא, דיאלוג אישור, דיאלוג התקדמות ועוד.."
+msgstr ""
 
-msgctxt "#31064
+msgctxt "#31064"
 msgid "Upper Design"
-msgstr "עיצוב עליון"
+msgstr ""
 
-msgctxt "#31065
+msgctxt "#31065"
 msgid "Keyboard"
-msgstr "מקלדת"
+msgstr ""
 
-msgctxt "#31066
+msgctxt "#31066"
 msgid "Home Buttons"
-msgstr "כפתורי בית"
+msgstr ""
 
-msgctxt "#31067
+msgctxt "#31067"
 msgid "Allow action change for default buttons"
-msgstr "אפשר שינוי פעולת כפתורי ברירת מחדל"
+msgstr ""
 
-msgctxt "#31068
+msgctxt "#31068"
 msgid "If you choose YES, you be able to change the action for default buttons.[CR]If you choose NO, default action will be triggered on all default buttons."
-msgstr "אם בחרת כן, תוכל לבחור לשנות פעולת כפתורי ברירת מחדל.[CR]אם בחרת לא, פעולת כפתורי ברירת מחדל תידרס למקור."
+msgstr ""
 
-msgctxt "#31069
+msgctxt "#31069"
 msgid "Sub Menu action"
-msgstr "פעולת כפתור משני"
+msgstr ""
 
-msgctxt "#31070
+msgctxt "#31070"
 msgid "Choose YES in order to open the sub menu with a down/side click and the main button action using a regular click.[CR]If you choose NO sub menu will always be open on click (default).[CR]Not available on Panel layout."
-msgstr "בחר באפשרות כן בכדי לפתוח את התפריט המשני באמצעות לחיצה למטה/הצידה ואת הכפתור הראשי באמצעות לחיצה רגילה.[CR]אם תבחר לא, תפריט משני תמיד יפתח בלחיצה (ברירת מחדל).[CR]לא זמין עבור פריסת כפתורים: פנל."
+msgstr ""
 
-msgctxt "#31071
+msgctxt "#31071"
+msgid "Playing"
+msgstr ""
+
+msgctxt "#31072"
+msgid "Watched on"
+msgstr ""
+
+msgctxt "#31073"
+msgid "Number of items in the playlist"
+msgstr ""
+
+msgctxt "#31074"
 msgid ""
 msgstr ""
 
-msgctxt "#31072
+msgctxt "#31075"
 msgid ""
 msgstr ""
 
-msgctxt "#31073
+msgctxt "#31076"
 msgid ""
 msgstr ""
 
-msgctxt "#31074
+msgctxt "#31077"
 msgid ""
 msgstr ""
 
-msgctxt "#31075
+msgctxt "#31078"
 msgid ""
 msgstr ""
 
-msgctxt "#31076
+msgctxt "#31079"
 msgid ""
 msgstr ""
 
-msgctxt "#31077
+msgctxt "#31080"
 msgid ""
 msgstr ""
 
-msgctxt "#31078
+msgctxt "#31081"
 msgid ""
 msgstr ""
 
-msgctxt "#31079
-msgid ""
-msgstr ""
-
-msgctxt "#31080
-msgid ""
-msgstr ""
-
-msgctxt "#31081
-msgid ""
-msgstr ""
-
-msgctxt "#31082
+msgctxt "#31082"
 msgid "Effect icon and text only."
-msgstr "חל עך אייקון וטקסט בלבד."
+msgstr ""
 
-msgctxt "#31083
+msgctxt "#31083"
 msgid ""
 msgstr ""
 
-msgctxt "#31084
+msgctxt "#31084"
 msgid ""
 msgstr ""
 
-msgctxt "#31085
+msgctxt "#31085"
 msgid ""
 msgstr ""
 
-msgctxt "#31086
+msgctxt "#31086"
 msgid ""
 msgstr ""
 
-msgctxt "#31087
+msgctxt "#31087"
 msgid ""
 msgstr ""
 
-msgctxt "#31088
+msgctxt "#31088"
 msgid ""
 msgstr ""
 
-msgctxt "#31089
+msgctxt "#31089"
 msgid ""
 msgstr ""
 
-msgctxt "#31090
+msgctxt "#31090"
 msgid ""
 msgstr ""
 
-msgctxt "#31091
+msgctxt "#31091"
 msgid "Choose this option in order to display fanart for sub menus's buttons."
-msgstr "בחר באפשרות זו בכדי לאפשר בחירה והצגת רקעים עבור כפתורים בתפריט משני."
+msgstr ""
 
-msgctxt "#31092
+msgctxt "#31092"
 msgid "Reshape icons"
-msgstr "חיתוך סמלים לפי צורה"
+msgstr ""
 
-msgctxt "#31093
+msgctxt "#31093"
 msgid "Choose this option in order to change the shape of yours icons to match your choosen button's shapes."
-msgstr "בחר באפשרות זו בכדי לחתוך סמלים מצורתם המקורית לצורה בה בחרת."
+msgstr ""
 
-msgctxt "#31094
+msgctxt "#31094"
 msgid "Reposition"
-msgstr "מיקום"
+msgstr ""
 
-msgctxt "#31095
+msgctxt "#31095"
 msgid "Choose this option in order to change the position for"
-msgstr "בחר באפשרות זו בכדי לשנות מיקום עבור"
+msgstr ""
 
-msgctxt "#31096
+msgctxt "#31096"
 msgid "[CR][COLOR=green]Note: This option take effect on the entire skin.[/COLOR]"
-msgstr "[CR][COLOR=green]שים לב: הגדרה זו משפיעה על המעטפת כולה.[/COLOR]"
+msgstr ""
 
-msgctxt "#31097
+msgctxt "#31097"
 msgid "Choose this option in order to change the shapes of the buttons."
-msgstr "בחר באפשרות זו בכדי לשנות את צורת הכפתורים."
+msgstr ""
 
-msgctxt "#31098
+msgctxt "#31098"
 msgid "Fanart Transperancy"
-msgstr "שקיפות פאנארט"
+msgstr ""
 
-msgctxt "#31099
+msgctxt "#31099"
 msgid ""
 msgstr ""
 
-msgctxt "#31100
+msgctxt "#31100"
 msgid ""
 msgstr ""
 
-msgctxt "#31101
+msgctxt "#31101"
 msgid ""
 msgstr ""
 
-msgctxt "#31102
+msgctxt "#31102"
 msgid ""
 msgstr ""
 
-msgctxt "#31103
+msgctxt "#31103"
 msgid ""
 msgstr ""
 
-msgctxt "#31104
+msgctxt "#31104"
 msgid ""
 msgstr ""
 
-msgctxt "#31105
+msgctxt "#31105"
 msgid ""
 msgstr ""
 
-msgctxt "#31106
+msgctxt "#31106"
 msgid ""
 msgstr ""
 
-msgctxt "#31107
+msgctxt "#31107"
 msgid ""
 msgstr ""
 
-msgctxt "#31108
+msgctxt "#31108"
 msgid ""
 msgstr ""
 
-msgctxt "#31109
+msgctxt "#31109"
 msgid ""
 msgstr ""
 
-msgctxt "#31110
+msgctxt "#31110"
 msgid ""
 msgstr ""
 
-msgctxt "#31111
+msgctxt "#31111"
 msgid ""
 msgstr ""
 
-msgctxt "#31112
+msgctxt "#31112"
 msgid ""
 msgstr ""
 
-msgctxt "#31113
+msgctxt "#31113"
 msgid ""
 msgstr ""
 
-msgctxt "#31114
+msgctxt "#31114"
 msgid ""
 msgstr ""
 
-msgctxt "#31115
+msgctxt "#31115"
 msgid ""
 msgstr ""
 
-msgctxt "#31116
+msgctxt "#31116"
 msgid "Choose this option for rearranging your home buttons layout.[CR]There are total of six available layouts![CR]Some of them are Horizontal, Vertical, Panel.."
-msgstr "בחר באפשרות זאת בכדי לשנות את מצב התצוגה שלך. למשל תפריט אופקי, אנכי, פנל.."
+msgstr ""
 
-msgctxt "#31117
+msgctxt "#31117"
 msgid "Buttons Layout"
-msgstr "פריסת כפתורים"
+msgstr ""
 
-msgctxt "#31118
+msgctxt "#31118"
 msgid "Enable 2D in any buttons across the skin."
-msgstr "הפעל בכדי להפעיל מצב דו-מימד עבור כל כפתור בסקין."
+msgstr ""
 
-msgctxt "#31119
+msgctxt "#31119"
 msgid "Choose a text edit area color for your virtual keyboard."
-msgstr "בחר צבע רקע עריכת טקסט במקלדת וירטואלית."
+msgstr ""
 
-msgctxt "#31120
+msgctxt "#31120"
 msgid "Edit keyboard text color"
-msgstr "רקע עריכת טקסט במקלדת"
+msgstr ""
 
-msgctxt "#31121
+msgctxt "#31121"
 msgid "Choose a background color for your virtual keyboard."
-msgstr "בחר צבע עבור רקע מקלדת וירטואלית."
+msgstr ""
 
-msgctxt "#31122
+msgctxt "#31122"
 msgid "Keyboard background"
-msgstr "רקע מקלדת"
+msgstr ""
 
-msgctxt "#31123
+msgctxt "#31123"
 msgid "Choose a color for your virtual keyboard."
-msgstr "בחר צבע עבור כפתורי מקלדת וירטואלית."
+msgstr ""
 
-msgctxt "#31124
+msgctxt "#31124"
 msgid "Unocus Keyboards buttons"
-msgstr "כפתורי מקלדת לא נבחרים"
+msgstr ""
 
-msgctxt "#31125
+msgctxt "#31125"
 msgid "Focus keyboards buttons"
-msgstr "כפתורי מקלדת נבחרים"
+msgstr ""
 
-msgctxt "#31126
+msgctxt "#31126"
 msgid "Choose color for all menu's buttons"
-msgstr "בחירת צבע עבור כל כפתורי התפריט."
+msgstr ""
 
-msgctxt "#31127
+msgctxt "#31127"
 msgid "UnFocus Menu Buttons"
-msgstr "כפתורי תפריט לא נבחרים"
+msgstr ""
 
-msgctxt "#31128
+msgctxt "#31128"
 msgid "Focused Menu Buttons"
-msgstr "כפתורי תפריט נבחרים"
+msgstr ""
 
-msgctxt "#31129
+msgctxt "#31129"
 msgid "Allow thumbnail fanart"
-msgstr "אפשר פאנארט מפוסטר"
+msgstr ""
 
-msgctxt "#31130
+msgctxt "#31130"
 msgid "Hide colors and textures when fanart exist."
-msgstr "הסתר צבעים וטקסטורות כאשר קיים פאנארט"
+msgstr ""
 
-msgctxt "#31131
+msgctxt "#31131"
 msgid "[CR][COLOR=red]Will not work when Clear Fanart is enabled and triggered.[/COLOR]"
-msgstr "[CR][COLOR=red]אפשרות זו לא תעבוד עם פאנארט נקי מופעל ותקף.[/COLOR]"
+msgstr ""
 
-msgctxt "#31132
+msgctxt "#31132"
 msgid "[CR][COLOR=green]This option effect the entire interface.[/COLOR]"
-msgstr "[CR][COLOR=green]אפשרות זו משפיעה על הממשק כולו.[/COLOR]"
+msgstr ""
 
-msgctxt "#31133
+msgctxt "#31133"
 msgid "[CR][COLOR=green]This window is[/COLOR]"
-msgstr "[CR][COLOR=green]חלון זה הינו[/COLOR]"
+msgstr ""
 
-msgctxt "#31134
+msgctxt "#31134"
 msgid "Choose the level of fade for buttons."
-msgstr "בחר את רמת שקיפות הכפתורים."
+msgstr ""
 
 msgctxt "#31135"
 msgid "More movies of this writer"
-msgstr "סרטים נוספים של כותב זה"
+msgstr ""
 
-msgctxt "#31411
+msgctxt "#31411"
 msgid "Our Channel"
-msgstr "הערוץ שלנו"
+msgstr ""
 
-msgctxt "#31412
+msgctxt "#31412"
 msgid "No changes were made"
-msgstr "לא בוצעו שינויים"
+msgstr ""
 
-msgctxt "#31413
+msgctxt "#31413"
 msgid "Director Info"
-msgstr "מידע במאי"
+msgstr ""
 
-msgctxt "#31414
+msgctxt "#31414"
 msgid "Selection marker"
-msgstr "סמן בחירה"
+msgstr ""
 
-msgctxt "#31415
+msgctxt "#31415"
 msgid "Focus Button"
-msgstr "כפתור נבחר"
+msgstr ""
 
-msgctxt "#31416
+msgctxt "#31416"
 msgid "Unfocus button"
-msgstr "כפתור לא נבחר"
+msgstr ""
 
-msgctxt "#31417
+msgctxt "#31417"
 msgid "Element"
-msgstr "אלמנט"
+msgstr ""
 
 msgctxt "#31418"
 msgid "Skin Version Updated"
-msgstr "גרסת מעטפת עודכנה"
+msgstr ""
 
 
 
-msgctxt "#31600
+msgctxt "#31600"
 msgid "Action"
-msgstr "פעולה"
+msgstr ""
 
-msgctxt "#31601
+msgctxt "#31601"
 msgid "Adventure"
-msgstr "הרפתקאות"
+msgstr ""
 
-msgctxt "#31602
+msgctxt "#31602"
 msgid "Animation"
-msgstr "אנימציה"
+msgstr ""
 
-msgctxt "#31603
+msgctxt "#31603"
 msgid "Biography"
-msgstr "ביוגרפיה"
+msgstr ""
 
-msgctxt "#31604
+msgctxt "#31604"
 msgid "Children"
-msgstr "ילדים"
+msgstr ""
 
-msgctxt "#31605
+msgctxt "#31605"
 msgid "Comedy"
-msgstr "קומדיה"
+msgstr ""
 
-msgctxt "#31606
+msgctxt "#31606"
 msgid "Crime"
-msgstr "פשע"
+msgstr ""
 
-msgctxt "#31607
+msgctxt "#31607"
 msgid "Disaster"
-msgstr "אסונות"
+msgstr ""
 
-msgctxt "#31608
+msgctxt "#31608"
 msgid "Documentary"
-msgstr "תעודה"
+msgstr ""
 
-msgctxt "#31609
+msgctxt "#31609"
 msgid "Drama"
-msgstr "דרמה"
+msgstr ""
 
-msgctxt "#31610
+msgctxt "#31610"
 msgid "Family"
-msgstr "משפחה"
+msgstr ""
 
 msgctxt "#31611"
 msgid "Fantasy"
-msgstr "פנטזיה"
+msgstr ""
 
 msgctxt "#31612"
 msgid "History"
-msgstr "היסטוריה"
+msgstr ""
 
 msgctxt "#31613"
 msgid "Holiday"
-msgstr "חופשה"
+msgstr ""
 
 msgctxt "#31614"
 msgid "Horror"
-msgstr "אימה"
+msgstr ""
 
 msgctxt "#31615"
 msgid "Indie"
-msgstr "הודי"
+msgstr ""
 
 msgctxt "#31616"
 msgid "Music"
-msgstr "מוזיקה"
+msgstr ""
 
 msgctxt "#31617"
 msgid "Mystery"
-msgstr "מיסתורין"
+msgstr ""
 
 msgctxt "#31618"
 msgid "Romance"
-msgstr "רומנטי"
+msgstr ""
 
 msgctxt "#31619"
 msgid "Sci-Fi"
-msgstr "מדע בדיוני"
+msgstr ""
 
 msgctxt "#31620"
 msgid "Short"
-msgstr "קצר"
+msgstr ""
 
 msgctxt "#31621"
 msgid "Sport"
-msgstr "ספורט"
+msgstr ""
 
 msgctxt "#31622"
 msgid "Suspense"
-msgstr "מותחן"
+msgstr ""
 
 msgctxt "#31623"
 msgid "Thriller"
-msgstr "מתח"
+msgstr ""
 
 msgctxt "#31624"
 msgid "War"
-msgstr "מלחמה"
+msgstr ""
 
 msgctxt "#31625"
 msgid "Western"
-msgstr "מערב פרוע"
+msgstr ""
 
 msgctxt "#31626"
 msgid "Game Show"
-msgstr "שעשועון"
+msgstr ""
 
 msgctxt "#31627"
 msgid "News"
-msgstr "חדשות"
+msgstr ""
 
 msgctxt "#31628"
 msgid "Reality"
-msgstr "ריאליטי"
+msgstr ""
 
 msgctxt "#31629"
 msgid "Sitcom"
-msgstr "קומדיית מצבים"
+msgstr ""
 
 msgctxt "#31630"
 msgid "Talk Show"
-msgstr "תוכנית אירוח"
+msgstr ""
 
 msgctxt "#31631"
 msgid "Food"
-msgstr "אוכל"
+msgstr ""
 
 msgctxt "#31632"
 msgid "Home and Garden"
-msgstr "בית וגינה"
+msgstr ""
 
 msgctxt "#31633"
 msgid "Mini Series"
-msgstr "סדרות קצרות"
+msgstr ""
 
 msgctxt "#31634"
 msgid "Soap"
-msgstr "אופרת סבון"
+msgstr ""
 
 msgctxt "#31635"
 msgid "Special Interest"
-msgstr "עניין מיוחד"
+msgstr ""
 
 msgctxt "#31636"
 msgid "Travel"
-msgstr "טיולים"
+msgstr ""
 
 msgctxt "#31637"
 msgid "Film Noir"
-msgstr "פילם נואר"
+msgstr ""
 
 msgctxt "#31638"
 msgid "Foreign"
-msgstr "זר"
+msgstr ""
 
 msgctxt "#31646"
 msgid "Musical"
-msgstr "מוזיקלי"
+msgstr ""
 
 #Custom
 msgctxt "#31650"
 msgid "Science & Technology"
-msgstr "מדע וטכנולוגיה"
+msgstr ""
 
 msgctxt "#31651"
 msgid "People & Blogs"
-msgstr "אנשים ובלוג"
+msgstr ""
 
 msgctxt "#31652"
 msgid "Entertainment"
-msgstr "בידור"
+msgstr ""
 
 msgctxt "#31653"
 msgid "Film & Animation"
-msgstr "וידאו ואנימציה"
+msgstr ""
 
 msgctxt "#31654"
 msgid "Autos & Vehicles"
-msgstr "אוטו' ורכב"
+msgstr ""
 
 msgctxt "#31655"
 msgid "News & Politics"
-msgstr "חדשות ופוליטיקה"
+msgstr ""
 
 msgctxt "#31656"
 msgid "Education"
-msgstr "השכלה"
+msgstr ""
 
 msgctxt "#31657"
 msgid "Pets & Animals"
-msgstr "בעלי חיים"
+msgstr ""
 
 msgctxt "#31658"
 msgid "Travel & Events"
-msgstr "טיולים ואירועים"
+msgstr ""
 
 msgctxt "#31700"
 msgid "Driving"
-msgstr "מירוצים"
+msgstr ""
 
 msgctxt "#31701"
 msgid "Platform"
-msgstr "פלטפורמה"
+msgstr ""
 
 msgctxt "#31702"
 msgid "Run Jump"
-msgstr "ריצה/קפיצה"
+msgstr ""
 
 msgctxt "#31703"
 msgid "Maze"
-msgstr "מבוך"
+msgstr ""
 
 msgctxt "#31704"
 msgid "Digging"
-msgstr "חפירה"
+msgstr ""
 
 msgctxt "#31705"
 msgid "Fighter"
-msgstr "לחימה"
+msgstr ""
 
 msgctxt "#31706"
 msgid "Miscellaneous"
-msgstr "שונה"
+msgstr ""
 
 msgctxt "#31707"
 msgid "Shooter"
-msgstr "יריות"
+msgstr ""
 
 msgctxt "#31708"
 msgid "Puzzle"
-msgstr "פאזל"
+msgstr ""
 
 msgctxt "#31709"
 msgid "Toss"
-msgstr "ההטלה"
+msgstr ""
 
 msgctxt "#31710"
 msgid "Hang Gliding"
-msgstr "רחיפה"
+msgstr ""
 
 msgctxt "#31711"
 msgid "1st Person"
-msgstr "גוף ראשון"
+msgstr ""
 
 msgctxt "#31712"
 msgid "Gun"
-msgstr "אקדח"
+msgstr ""
 
 msgctxt "#31713"
 msgid "Flying Vertical"
-msgstr "H-תעופה"
+msgstr ""
 
 msgctxt "#31714"
 msgid "Flying Horizontal"
-msgstr "W-תעופה"
+msgstr ""
 
 msgctxt "#31715"
 msgid "Versus"
-msgstr "נגד"
+msgstr ""
 
 msgctxt "#31716"
 msgid "Multiplay"
-msgstr "מרובה"
+msgstr ""
 
 msgctxt "#31717"
 msgid "2.5D"
-msgstr "2.5 מימד"
+msgstr ""
 
 msgctxt "#31718"
 msgid "Field"
-msgstr "סטטי"
+msgstr ""
 
 msgctxt "#31719"
 msgid "3rd Person"
-msgstr "גוף שלישי"
+msgstr ""
 
 msgctxt "#31720"
 msgid "Co-op"
-msgstr "שיתוף פעולה"
+msgstr ""
 
 msgctxt "#31721"
 msgid "Golf"
-msgstr "גולף"
+msgstr ""
 
 msgctxt "#31722"
 msgid "Wrestling"
-msgstr "היאבקות"
+msgstr ""
 
 msgctxt "#31723"
 msgid "Hockey"
-msgstr "הוקי"
+msgstr ""
 
 msgctxt "#31724"
 msgid "Role-Playing"
-msgstr "תפקידים"
+msgstr ""
 
 msgctxt "#31725"
 msgid "Simulation"
-msgstr "סימולציה"
+msgstr ""
 
 msgctxt "#31726"
 msgid "Strategy"
-msgstr "אסטרטגיה"
+msgstr ""
 
 msgctxt "#31727"
 msgid ""
@@ -827,476 +827,268 @@ msgstr ""
 
 msgctxt "#31800"
 msgid "Sub Menu"
-msgstr "תפריט משני"
+msgstr ""
 
-msgctxt "#31801
+msgctxt "#31801"
 msgid "Sub Menu Mark"
-msgstr "סמן תפריט משני"
+msgstr ""
 
-msgctxt "#31802
+msgctxt "#31802"
 msgid "Choose this option in order to change the marker color when submenu is enable for a specific button.[CR][CR]The marker will be visible only if the button has color!"
-msgstr "בחר באפשרות זאת בכדי לשנות גוון סמן כאשר תת תפריט מופעל בכפתור מסוים.[CR][CR]הסמן יוצג אם הכפתור צבוע בלבד!"
+msgstr ""
 
-msgctxt "#31803
+msgctxt "#31803"
 msgid "Reset Skin Settings"
-msgstr "איפוס הגדרות מעטפת"
+msgstr ""
 
-msgctxt "#31804
+msgctxt "#31804"
 msgid "Choose this option in order to reset your skin settings."
-msgstr "בחר באפשרות זו בכדי לאפס את הגדרות המעטפת שלך."
+msgstr ""
 
-msgctxt "#31805
+msgctxt "#31805"
 msgid "Play Random Trailers"
-msgstr "נגן קדימונים אקראיים"
+msgstr ""
 
-msgctxt "#31806
+msgctxt "#31806"
 msgid "Upper Information Window"
-msgstr "חלון מידע עליון"
+msgstr ""
 
-msgctxt "#31807
+msgctxt "#31807"
 msgid "Addons Manager"
-msgstr "מנהל הרחבות"
+msgstr ""
 
-msgctxt "#31808
+msgctxt "#31808"
 msgid "Smart search string"
-msgstr "חיפוש מחרוזת חכם"
+msgstr ""
 
-msgctxt "#31809
+msgctxt "#31809"
 msgid "Highlight"
-msgstr "הדגש"
-
-msgctxt "#31999
-msgid ""
 msgstr ""
 
-msgctxt "#70006"
+msgctxt "#31810"
 msgid "Background / Fanart"
-msgstr "רקע / פאנארט"
-
-msgctxt "#70019"
-msgid "Last expiration date"
-msgstr "תאריך תוקף אחרון"
-
-msgctxt "#70020"
-msgid "WOULD YOU LIKE TO ADD THIS CONTENT TO featherence?"
-msgstr "האם להוסיף תוכן זה ל-featherence?"
-
-msgctxt "#70098"
-msgid ""
 msgstr ""
 
-msgctxt "#70099"
-msgid "Your Action cause system error no."
-msgstr "פעולתך יצרה שגיאת מערכת מס."
-
-msgctxt "#70100"
-msgid "Not possible during video playback"
-msgstr "לא אפשרי בזמן ניגון וידאו"
-
-msgctxt "#70101"
-msgid "Reset background path"
-msgstr "אפס נתיב רקע"
-
-msgctxt "#70102"
-msgid "Set background path"
-msgstr "קבע נתיב רקע"
-
-msgctxt "#70110"
-msgid "The action require a reboot."
-msgstr "הפעולה מחייבת אתחול מהיר!"
-
-msgctxt "#70111"
-msgid "Update channels lists"
-msgstr "עדכון רשימות ערוצים"
-
-msgctxt "#71030"
+msgctxt "#31811"
 msgid "Unwatched Movies"
-msgstr "סרטים שלא נצפו"
-
-msgctxt "#72100"
-msgid "Trailers"
-msgstr "קדימונים"
-
-msgctxt "#72101"
-msgid "Today"
-msgstr "היום"
-
-msgctxt "#72102"
-msgid "Yesterday"
-msgstr "אתמול"
-
-msgctxt "#72103"
-msgid "This Week"
-msgstr "השבוע"
-
-msgctxt "#73120
-msgid "Inprogress TVshows"
-msgstr "סדרות בתהליך"
-
-msgctxt "#73220"
-msgid "Kids"
-msgstr "ילדים"
-
-msgctxt "#74431"
-msgid ""
 msgstr ""
 
-msgctxt "#74432"
-msgid "Choose how many different colors"
-msgstr "בחר כמות צבעים שונים"
+msgctxt "#31812"
+msgid "Trailers"
+msgstr ""
 
-msgctxt "#74433
-msgid "Choose an option from the list"
-msgstr "בחר אפשרות מהרשימה"
+msgctxt "#31813"
+msgid "Inprogress TVshows"
+msgstr ""
 
-msgctxt "#74434"
+msgctxt "#31814"
+msgid "Kids"
+msgstr ""
+
+msgctxt "#31815"
 msgid "Change picture or background"
-msgstr "החלף תמונה / רקע"
+msgstr ""
 
-msgctxt "#74435
-msgid "Bottom Menu"
-msgstr "תפריט תחתית"
-
-msgctxt "#74439"
+msgctxt "#31816"
 msgid "Choose your own Music File to be played upon startup.[CR][CR][COLOR=yellow]$INFO[Skin.String(StartUpMusic)][/COLOR]"
-msgstr "בחר קובץ מוזיקה משלך אשר ינוגן בעת הפעלת המכשיר.[CR][CR][COLOR=yellow]$INFO[Skin.String(StartUpMusic)][/COLOR]"
+msgstr ""
 
-msgctxt "#74440"
+msgctxt "#31817"
 msgid "Choosing this option for playing music upon startup."
-msgstr "בחר באפשרות באם ברצונך להפעיל מוזיקה בעת הפעלת המכשיר."
+msgstr ""
 
-msgctxt "#74442
+msgctxt "#31818"
 msgid "Choose this option to always watch trailers in fullscreen."
-msgstr "בחר באפשרות באם ברצונך לצפות תמיד בקדימונים במסך מלא.[CR]"
+msgstr ""
 
-msgctxt "#74446"
-msgid "Position"
-msgstr "מיקום"
-
-msgctxt "#74447"
-msgid "Notification Window"
-msgstr "חלון הודעות"
-
-msgctxt "#74448"
-msgid "At the left menu you can choose a ready design."
-msgstr "בתפריט בצד שמאל ניתן לבחור עיצוב מוכן"
-
-msgctxt "#74476"
-msgid "hide"
-msgstr "הסתר"
-
-msgctxt "#74477"
-msgid "Transparencies"
-msgstr "שקיפויות"
-
-msgctxt "#74479"
+msgctxt "#31819"
 msgid "Button color"
-msgstr "צבע כפתור"
+msgstr ""
 
-msgctxt "#74480"
+msgctxt "#31820"
 msgid "Hide unactive buttons"
-msgstr "הסתר כפתורים לא פעילים"
+msgstr ""
 
-msgctxt "#74481"
-msgid "Starting to Send Report"
-msgstr "מתחיל לשלוח דוח"
-
-msgctxt "#74482"
-msgid "Sending Report (%s/%s)"
-msgstr "שולח דוח (%s/%s)"
-
-msgctxt "#74483"
-msgid "The report has been sent successfully"
-msgstr "הדוח נשלח בהצלחה!"
-
-msgctxt "#74484"
-msgid "Report has failed!"
-msgstr "שליחת הדוח נכשלה!"
-
-msgctxt "#74554"
+msgctxt "#31821"
 msgid "Reset skin settings"
-msgstr "איפוס הגדרות מעטפת"
+msgstr ""
 
-msgctxt "#74556"
+msgctxt "#31822"
 msgid "Choose YES only if you know what you are doing!"
-msgstr "בחר "כן" רק אם הינך מבין מה אתה עושה!"
+msgstr ""
 
-msgctxt "#74559"
-msgid "External Drive"
-msgstr "כונן חיצוני"
-
-msgctxt "#74607"
+msgctxt "#31823"
 msgid "Bevel"
-msgstr "שפוע (Bevel)"
+msgstr ""
 
-msgctxt "#74608"
+msgctxt "#31824"
 msgid "Stroke"
-msgstr "מסגרת (Stroke)"
+msgstr ""
 
-msgctxt "#74612"
-msgid "Main Buttons position"
-msgstr "מיקום כפתורים ראשי"
-
-msgctxt "#74613"
-msgid "Sub Buttons position"
-msgstr "מיקום כפתורים משני"
-
-msgctxt "#74614"
+msgctxt "#31825"
 msgid "Buttons Properties"
-msgstr "הגדרות כפתורים"
+msgstr ""
 
-msgctxt "#74829
+msgctxt "#31826"
 msgid "Menu Buttons"
-msgstr "כפתורי תפריט"
+msgstr ""
 
-msgctxt "#74840"
+msgctxt "#31827"
 msgid "Reset colors"
-msgstr "איפוס צבעים"
+msgstr ""
 
-msgctxt "#74842"
+msgctxt "#31828"
 msgid "Use this window in order to customize your system as you like."
-msgstr "השתמש בחלון זה בכדי לקנפג את המערכת כפי רצונך."
+msgstr ""
 
-msgctxt "#75141
+msgctxt "#31829"
 msgid "DVD Case"
-msgstr "עטיפת דיסק"
+msgstr ""
 
-msgctxt "#76177
-msgid "Allow sending reports from this device"
-msgstr "אפשר שליחת נתונים ממכשיר זה"
-
-msgctxt "#76178
-msgid "Choose this option if you would like to assist featherence to improve the system by sending reports to our server.[CR]This action may allow us solve different issues and provide a solution for you."
-msgstr "בחר באפשרות זו אם ברצונך לסייע לשיפור המערכת ע"י שליחת נתונים לשרת.[CR]פעולה זאת עשויה לאתר תקלות שונות ולסייע במתן פיתרון עבורך."
-
-msgctxt "#76179
-msgid "You may change this setting from skin settings."
-msgstr "ניתן לשנות הגדרה זו דרך הגדרות מעטפת"
-
-msgctxt "#76180
-msgid "You may change this setting by"
-msgstr "ניתן לשנות הגדרה זו באמצעות"
-
-msgctxt "#76196
+msgctxt "#31830"
 msgid "Skin Design"
-msgstr "עיצוב מעטפת"
+msgstr ""
 
-msgctxt "#76197
-msgid "Finishing, Buttons, Transperancy and much more customize settings."
-msgstr "צבעים, כפתורים, שקיפויות ועוד המון העדפות אישיות."
-
-msgctxt "#76198
-msgid "At this screen you can design how your featherence look like."
-msgstr "בחלון זה ניתן לעצב את המראה של ה-featherence שלך."
-
-msgctxt "#76199"
-msgid "Customize"
-msgstr "מותאם אישית"
-
-msgctxt "#76200
+msgctxt "#31831"
 msgid "Enable/Disable marker around your home buttons"
-msgstr "הפעל/בטל סמן בחירה מסביב לכפתורי הבית שלך"
+msgstr ""
 
-msgctxt "#76201
+msgctxt "#31832"
 msgid "Enable/Disable marker inside your home buttons.[CR][CR][COLOR=green]Fit well with coloring the buttons[/COLOR]"
-msgstr "הפעל/בטל סמן בחירה בתוך כפתורי הבית שלך.[CR][CR][COLOR=green]משתלב טוב בעיקר עם צביעת הכפתורים[/COLOR]"
+msgstr ""
 
-msgctxt "#76202
-msgid "Home"
-msgstr "בית"
-
-msgctxt "#76203
+msgctxt "#31833"
 msgid "Enable/Disable shadow inside your home buttons.[CR][CR][COLOR=green]Fit well with coloring the buttons[/COLOR]"
-msgstr "הפעל/בטל צל בתוך כפתור הבית שלך.[CR][CR][COLOR=green]משתלב טוב בעיקר עם צביעת הכפתורים[/COLOR]"
+msgstr ""
 
-msgctxt "#76204
+msgctxt "#31834"
 msgid "Enable/Disable clear frame button"
-msgstr "הפעל/בטל מסגרת כפתור שקופה"
+msgstr ""
 
-msgctxt "#76205
+msgctxt "#31835"
 msgid "Relocate the fanart position in the home screen by having a fanart on the entire screen or outside the home buttons area."
-msgstr "שנה את מיקום הפאנארט בחלון הבית כך שיופיע על כל המסך או מחוץ למסגרת כפתורי הבית."
+msgstr ""
 
-msgctxt "#76207
+msgctxt "#31836"
 msgid "Choose this option to allow fanart view while browsing home menu."
-msgstr "בחר באפשרות זו בכדי לאפשר תצוגת פאנארט בזמן ניווט בחלון הבית."
+msgstr ""
 
-msgctxt "#76208
+msgctxt "#31837"
 msgid "Choose a color for home menu and sub menu icons.[CR]Effect others buttons across the skin as well."
-msgstr "בחר צבע עבור אייקונים בתפריט הבית ובתת תפריט.[CR]משפיע גם על כפתורים נוספים בסקין!"
+msgstr ""
 
-msgctxt "#76210
-msgid "Change selected icon color."
-msgstr "שנה גוון אייקון נבחר."
-
-msgctxt "#76289
-msgid "Choose this option in order to show yes/no dialog of adding new movies and tvshows to your library when available."
-msgstr "בחר באפשרות זו בכדי להציג דיאלוג בדבר הוספת סרטים וסדרות לספרייה כשיש עדכון זמין."
-
-msgctxt "#77473
-msgid "Tools"
-msgstr "כלים"
-
-msgctxt "#77475
-msgid "Top addons"
-msgstr "הרחבות עליונות"
-
-msgctxt "#77877
-msgid "The user intervene at middle of the operation."
-msgstr "המשתמש התערב באמצע הפעולה."
-
-msgctxt "#77878
-msgid "Half Screen"
-msgstr "חצי מסך"
-
-msgctxt "#78013
+msgctxt "#31838"
 msgid "Transperancy"
-msgstr "שקוף"
+msgstr ""
 
-msgctxt "#78015
+msgctxt "#31839"
 msgid "UnFocus Icon/Label"
-msgstr "סמל/טקסט לא נבחר"
+msgstr ""
 
-msgctxt "#78016
+msgctxt "#31840"
 msgid "Focus Icon/Label"
-msgstr "סמל/טקסט נבחר"
+msgstr ""
 
-msgctxt "#78017
-msgid "Top Background"
-msgstr "רקע עליון"
-
-msgctxt "#78018
+msgctxt "#31841"
 msgid "Texture"
-msgstr "טקסטורה"
+msgstr ""
 
-msgctxt "#78019
+msgctxt "#31842"
 msgid "Top bar"
-msgstr "פס עליון"
+msgstr ""
 
-msgctxt "#78020
-msgid "Choose color"
-msgstr "בחירת צבע"
-
-msgctxt "#78022"
-msgid "Choose YES if you want to"
-msgstr "בחר כן אם ברצונך לשנות"
-
-msgctxt "#78023
+msgctxt "#31843"
 msgid "Choose this option in order to change color for"
-msgstr "בחר באפשרות זו בכדי לשנות צבע עבור"
+msgstr ""
 
-msgctxt "#78024
+msgctxt "#31844"
 msgid "Choose this option in order to change the transperancy for"
-msgstr "בחר באפשרות זו בכדי לשנות את רמת השקיפות עבור"
+msgstr ""
 
-msgctxt "#78025
+msgctxt "#31845"
 msgid "Choose this option in order to change the texture for"
-msgstr "בחר באפשרות זו אם ברצונך לשנות את הטקסטורה עבור"
+msgstr ""
 
-msgctxt "#78026
-msgid ""
-msgstr "בחר באפשרות זו אם ברצונך לשנות מספר רב של הגדרות עיצוב בלחיצת כפתור.[CR]באפשרותך לאפס למצב ברירת מחדל, לצבוע את כפתורי הבית באופן אקראי, לצבוע את שאר הכפתורים ולשנות רמת שקיפות אקראית ואפשרויות נוספות בלחיצת כפתור."
+msgctxt "#31846"
+msgid "Randomize and Reset lots of design aspects in the skin."
+msgstr ""
 
-msgctxt "#78027
+msgctxt "#31847"
 msgid "Choose this option when"
-msgstr "בחר באפשרות זו כאשר"
+msgstr ""
 
-msgctxt "#78214
+msgctxt "#31848"
 msgid "Main background"
-msgstr "רקע ראשי"
+msgstr ""
 
-msgctxt "#78215
+msgctxt "#31849"
 msgid "Transperancy"
-msgstr "שקיפות"
+msgstr ""
 
-msgctxt "#78216
-msgid "Selected Icon"
-msgstr "אייקון נבחר"
-
-msgctxt "#78217
+msgctxt "#31850"
 msgid "Overlay"
-msgstr "שקופית"
+msgstr ""
 
-msgctxt "#78218
-msgid "shadow"
-msgstr "צללית"
+msgctxt "#31851"
+msgid "Shadow"
+msgstr ""
 
-msgctxt "#78278
+msgctxt "#31852"
 msgid "Enable/Disable a display of genres as icons in Movies, Tvshows and games."
-msgstr "הפעל/בטל תצוגת תמונות לסגנונות סרטים, סדרות ומשחקים."
+msgstr ""
 
-msgctxt "#78928
-msgid "Left menu"
-msgstr "תפריט בצד שמאל"
+msgctxt "#31853"
+msgid "Side menu"
+msgstr ""
 
-msgctxt "#78930
-msgid "See skin settings"
-msgstr "ראה הגדרות מעטפת"
-
-msgctxt "#78933
+msgctxt "#31854"
 msgid "Choose this option to set your prefered Clock settings.[CR]1. Date and Hour.[CR]2. Hour.[CR]3. Date."
-msgstr "בחר באפשרות זו בכדי לשנות העדפה בתצוגת השעון.[CR]1. תאריך ושעה.[CR]2. שעה.[CR]3. תאריך."
+msgstr ""
 
-msgctxt "#78934
+msgctxt "#31855"
 msgid "Change prefered clock"
-msgstr "שנה העדפת שעון"
+msgstr ""
 
-msgctxt "#78935
-msgid "startup"
-msgstr "הפעלה"
+msgctxt "#31856"
+msgid "Startup"
+msgstr ""
 
-msgctxt "#78936
-msgid "Choose YES in order to auto set the best view mode for the current window you are in."
-msgstr "בחר באפשרות באם ברצונך לקבל את מצב התצוגה הטוב ביותר לחלון שבו אתה נמצא."
-
-msgctxt "#78937
-msgid "Display left menu"
-msgstr "הצג תפריט צד שמאל."
-
-msgctxt "#78938
+msgctxt "#31857"
 msgid "Enable time information"
-msgstr "הפעל תצוגת זמן"
+msgstr ""
 
-msgctxt "#78939
+msgctxt "#78939"
 msgid "Enable this option if you have"
-msgstr "הפעל אפשרות זאת באם יש לך"
+msgstr ""
 
-msgctxt "#78947
+msgctxt "#31858"
 msgid "Note: Current Subtitle in yellow."
-msgstr "הערה: תרגום נוכחי (צהוב)"
+msgstr ""
 
-msgctxt "#78949
+msgctxt "#31859"
 msgid "Note: this subtitle has been previously choosen."
-msgstr "הערה: תרגום זה נבחר לאחרונה (אפור)."
+msgstr ""
 
-msgctxt "#78950"
+msgctxt "#31860"
 msgid "Changing server..."
-msgstr "מחליף שרת..."
+msgstr ""
 
-msgctxt "#78951"
+msgctxt "#31861"
 msgid "Refreshing list..."
-msgstr "מרענן רשימה..."
+msgstr ""
 
-msgctxt "#78952"
+msgctxt "#31862"
 msgid "Searching subtitle..."
-msgstr "מחפש תרגום..."
+msgstr ""
 
-msgctxt "#78967"
+msgctxt "#31863"
 msgid "Choose one of the following options if you wish to change the reading direction for Movies and TVshows plot:[CR]1. AUTO (DEFAULT)[CR]2. RTL[CR]3. LTR[CR]4. JUSTIFY[CR]5. CENTER"
-msgstr "בחר אחת מהאפשרויות הבאות אם ברצונך לשנות את כיוון הטקסט עבור עלילת סרטים וסדרות:[CR]1. AUTO (DEFAULT)[CR]2. RTL[CR]3. LTR[CR]4. JUSTIFY[CR]5. CENTER"
+msgstr ""
 
-msgctxt "#78968"
+msgctxt "#31864"
 msgid "Movies/Tvshows plot align"
-msgstr "כיוון טקסט עלילת סרט/סדרה"
+msgstr ""
 
-msgctxt "#79023"
-msgid "Watched on"
-msgstr "נצפה לאחרונה"
-
-msgctxt "#79033"
-msgid "Playing"
-msgstr "מנגן"
-
-msgctxt "#79221
-msgid "configure TV remote"
-msgstr "הגדרת שלט טלוויזיה"
+msgctxt "#31999"
+msgid ""
+msgstr ""

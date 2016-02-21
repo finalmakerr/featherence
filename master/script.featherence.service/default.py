@@ -771,8 +771,7 @@ elif mode == 512:
 	'''------------------------------
 	---INTERNET-BUTTON---------------
 	------------------------------'''
-	name = 'INTERNET-BUTTON'
-	mode512(value, name)
+	mode512(value)
 	'''---------------------------'''
 	
 else: printpoint = printpoint + "9"

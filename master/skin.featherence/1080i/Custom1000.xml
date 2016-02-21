@@ -48,20 +48,5 @@
 		  <visible>!IsEmpty(System.FreeMemory)</visible>
 		</control>
 	</control>
-	
-	<control type="grouplist">
-		<visible>false</visible>
-		<posx>40</posx>
-		<posy>130</posy>
-		<itemgap>0</itemgap>
-		<orientation>horizontal</orientation>
-		<height>100</height>
-		<width>1920</width>
-		<control type="label" description="זיכרון פנוי">
-		  <include>LabelL1</include>
-		  <label>[Color=red]If value keep changing, your device is not stuck![/COLOR]</label>
-		  <visible>!IsEmpty(System.FreeMemory)</visible>
-		</control>
-	</control>
   </controls>
 </window>

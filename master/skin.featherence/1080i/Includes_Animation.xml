@@ -418,51 +418,51 @@
    </include>
    
    <include name="Slide_MenuDesign_Home_Icons" description="אופקי ופנל">
-     <animation description="עיגולים" condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="0,-10" time="0">Conditonal</animation>
-	 <animation description="משולשים" condition="Skin.String(ButtonsDesign,2) + false" effect="slide" start="0,0" end="0,0" time="0">Conditonal</animation>
-	 <animation description="משושים" condition="Skin.String(ButtonsDesign,4) + false" effect="slide" start="0,0" end="0,0" time="0">Conditonal</animation>
+     <animation description="עיגולים" condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="0,-10" time="0">Conditional</animation>
+	 <animation description="משולשים" condition="Skin.String(ButtonsDesign,2) + false" effect="slide" start="0,0" end="0,0" time="0">Conditional</animation>
+	 <animation description="משושים" condition="Skin.String(ButtonsDesign,4) + false" effect="slide" start="0,0" end="0,0" time="0">Conditional</animation>
    </include>
    
    <include name="Slide_MenuDesign_Home_Labels" description="אופקי ופנל">
-     <animation description="עיגולים" condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="0,-23" time="0">Conditonal</animation>
-	 <animation description="משולשים" condition="Skin.String(ButtonsDesign,2) + false" effect="slide" start="0,0" end="0,0" time="0">Conditonal</animation>
-	 <animation description="משושים" condition="Skin.String(ButtonsDesign,4) + false" effect="slide" start="0,0" end="0,0" time="0">Conditonal</animation>
+     <animation description="עיגולים" condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="0,-23" time="0">Conditional</animation>
+	 <animation description="משולשים" condition="Skin.String(ButtonsDesign,2) + false" effect="slide" start="0,0" end="0,0" time="0">Conditional</animation>
+	 <animation description="משושים" condition="Skin.String(ButtonsDesign,4) + false" effect="slide" start="0,0" end="0,0" time="0">Conditional</animation>
    </include>
    
    <include name="Slide_MenuDesign2_Home_Icons" description="מאונך לא נבחר">
-     <animation description="עיגולים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="-68,8" time="0">Conditonal</animation>
-	 <animation description="עיגולים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="68,8" time="0">Conditonal</animation>
+     <animation description="עיגולים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="-68,8" time="0">Conditional</animation>
+	 <animation description="עיגולים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="68,8" time="0">Conditional</animation>
 	  
-	 <animation description="משולשים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="0,-28" time="0">Conditonal</animation>
-	 <animation description="משולשים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="0,-28" time="0">Conditonal</animation>
-	 <animation description="משושים" condition="Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="0,8" time="0">Conditonal</animation>
+	 <animation description="משולשים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="0,-28" time="0">Conditional</animation>
+	 <animation description="משולשים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="0,-28" time="0">Conditional</animation>
+	 <animation description="משושים" condition="Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="0,8" time="0">Conditional</animation>
    </include>
    
    <include name="Slide_MenuDesign2_Home_Icons2" description="מאונך נבחר">
-     <animation description="עיגולים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="-5,0" time="0">Conditonal</animation>
-	 <animation description="עיגולים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="5,0" time="0">Conditonal</animation>
+     <animation description="עיגולים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="-5,0" time="0">Conditional</animation>
+	 <animation description="עיגולים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="5,0" time="0">Conditional</animation>
 	  
-	 <animation description="משולשים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="-10,0" time="0">Conditonal</animation>
-	 <animation description="משולשים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="10,0" time="0">Conditonal</animation>
-	 <animation description="משושים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="-10,0" time="0">Conditonal</animation>
-	 <animation description="משושים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="10,0" time="0">Conditonal</animation>
+	 <animation description="משולשים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="-10,0" time="0">Conditional</animation>
+	 <animation description="משולשים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="10,0" time="0">Conditional</animation>
+	 <animation description="משושים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="-10,0" time="0">Conditional</animation>
+	 <animation description="משושים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="10,0" time="0">Conditional</animation>
 	  
 	 <animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
    </include>
    
    <include name="Slide_MenuDesign2_Home_Labels" description="מאונך לא נבחר">
-     <animation description="עיגולים" condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="0,17" time="0">Conditonal</animation>
-	 <animation description="משולשים" condition="Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="0,55" time="0">Conditonal</animation>
-	 <animation description="משושים" condition="Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="0,15" time="0">Conditonal</animation>
+     <animation description="עיגולים" condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="0,17" time="0">Conditional</animation>
+	 <animation description="משולשים" condition="Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="0,55" time="0">Conditional</animation>
+	 <animation description="משושים" condition="Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="0,15" time="0">Conditional</animation>
    </include>
    
    <include name="Slide_MenuDesign2_Home_Labels2" description="מאונך נבחר">
-     <animation description="עיגולים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="-5,0" time="0">Conditonal</animation>
-	 <animation description="עיגולים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="5,0" time="0">Conditonal</animation>
-	 <animation description="משולשים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="-10,0" time="0">Conditonal</animation>
-	 <animation description="משולשים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="10,0" time="0">Conditonal</animation>
-	 <animation description="משושים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="-10,0" time="0">Conditonal</animation>
-	 <animation description="משושים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="10,0" time="0">Conditonal</animation>
+     <animation description="עיגולים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="-5,0" time="0">Conditional</animation>
+	 <animation description="עיגולים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="5,0" time="0">Conditional</animation>
+	 <animation description="משולשים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="-10,0" time="0">Conditional</animation>
+	 <animation description="משולשים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="10,0" time="0">Conditional</animation>
+	 <animation description="משושים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="-10,0" time="0">Conditional</animation>
+	 <animation description="משושים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="10,0" time="0">Conditional</animation>
 	  
 	 
 	 <animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>

@@ -8,7 +8,7 @@
 	<include>TopInformation</include>
     <control type="label" description="Heading">
       <posy>70</posy>
-      <include>Heading</include>
+      <include>LabelC1</include>
       <label>10034</label>
     </control>
     <control type="togglebutton" id="4" description="Toggle Login Screen">
