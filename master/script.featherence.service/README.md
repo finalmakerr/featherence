@@ -122,10 +122,8 @@ RunScript(script.featherence.service,,?mode=25)
 
 * **plugin.video.featherence.be_creative:**
  * **What to do with it?:**
-	```
-	- Install the addon from ZIP.
-	- Edit addon.xml and rename the ID and addon's folder name.
-	```
+   * Install the addon from ZIP.
+   * Edit addon.xml and rename the ID and addon's folder name.
 
 * **modules.py:**
   * **addDir:**
@@ -156,18 +154,28 @@ RunScript(script.featherence.service,,?mode=25)
 			  - GOOGLE DRIVE VIDEO ID: URL = &googledrive=text
 			  - *ANY VIDEO FROM ADDON: URL = &custom4=text
 			  *use ctrl+shift+P on the preferred location!
+			  
+			  EXAMPLES USAGE:
+			 * 
+			 * 
 		```
 			
 		```
 		PLAY DIRECT VIDEO
 		METHOD 1: MODE 44 | URL = text
 		METHOD 2: MODE 5/17 | URL = text | &direct4=text
+		EXAMPLES USAGE:
+			 * 
+			 * 
 		```
 		
 		```
 		LIST DIRECT VIDEO
 		METHOD 1: MODE 42 | URL = text
 		METHOD 2: MODE 6/17 | URL = text | &direct4=text
+		EXAMPLES USAGE:
+			 * 
+			 * 
 		```
 		
 		```
@@ -176,6 +184,9 @@ RunScript(script.featherence.service,,?mode=25)
 		METHOD 2: MODE 6/17 | URL = text
 			- *ANY VIDEO FROM ADDON: URL = &custom8=text
 			*use ctrl+shift+P on the preferred location!
+		EXAMPLES USAGE:
+			 * 
+			 * 
 		```
 		
 		```
@@ -184,27 +195,36 @@ RunScript(script.featherence.service,,?mode=25)
 		METHOD 2: MODE 6/17 | URL = text
 			  - YOUTUBE PLAYLIST ID: URL = &youtube_pl=text
 			  - DAILYMOTION PLAYLIST ID: URL = &dailymotion_id=text
+		EXAMPLES USAGE:
+			 * 
+			 * 
 		```
 		
 		```
 		SHOW FROM SPECIFIC WEBSITES
 		METHOD 1: MODE 40 | URL = text
 		METHOD 2: MODE 6/17 | URL = text | &direct8=text
-			  - 
+		EXAMPLES USAGE:
+			 * 
+			 *  
 		```
 		
 		```
 		SHOW FROM SPECIFIC WEBSITES
 		METHOD 1: MODE 40 | URL = text
 		METHOD 2: MODE 6/17 | URL = text | &direct8=text
-			  - 
+		EXAMPLES USAGE:
+			 * 
+			 *  
 		```
 		
 		```
 		LIST&PLAY FROM SPECIFIC WEBSITES
 		METHOD 1: MODE 41 | URL = text
 		METHOD 2: MODE 6/17 | URL = text | &direct8=text
-			  - 
+		EXAMPLES USAGE:
+			 * 
+			 *  
 		```
 		
 		```
@@ -214,13 +234,9 @@ RunScript(script.featherence.service,,?mode=25)
 			- YOUTUBE CHANNEL ID: URL = &youtube_ch=text
 			TIP: You may add '/playlists' after that channel id!
 		
-			```
-				
-			```
-			```				
-				
-			```
-		
+		EXAMPLES USAGE:
+			 * 
+			 * 
 		```
 		
 		```
@@ -231,15 +247,12 @@ RunScript(script.featherence.service,,?mode=25)
 		"&videoDuration=text&" | text = short/medium/long
 		"&videoDefinition=text&" | text = standard/high
 
-			```
-				addDir(localize(137),3,'song',featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % ('song'),'1',"", getAddonFanart(background="", default="", custom=""))
-			```
-			```				
-				list = []
+		EXAMPLES USAGE:
+			 * addDir(localize(137),3,'song',featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % ('song'),'1',"", getAddonFanart(background="", default="", custom=""))
+			 * list = []
 				list.append('&youtube_se=Featherence')
 				list.append('&youtube_se=Kodi')
 				addDir(localize(137),list,17,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % ('Featherence & Kodi'),'1',"", getAddonFanart(background="", default="", custom=""))
-			```
 		```
 		
 		```
@@ -247,6 +260,9 @@ RunScript(script.featherence.service,,?mode=25)
 		PLAY ALL: MODE 2 | URL = <file path>
 		TIP: os.path.join(addonPath, 'resources', 'templates2', '')
 		addonPath = current addon
+		EXAMPLES USAGE:
+			 * 
+			 * 
 		```
 		
 		```
@@ -257,12 +273,9 @@ RunScript(script.featherence.service,,?mode=25)
 		URL EXAMPLES: <url="&googledrive=<ID>"/>
 		TIP: os.path.join(addonPath, 'resources', 'templates2', '')
 		addonPath = current addon
-		```
-		
-		```
-		GET ADDON INFO
-		ADDON = <ADDON ID>
-		thumb, fanart, summary, description, plot = getAddonInfo(addon)
+		EXAMPLES USAGE:
+			 * 
+			 * 
 		```
 		
 		```
@@ -290,6 +303,9 @@ RunScript(script.featherence.service,,?mode=25)
 		TVMODE
 		METHOD 1: MODE 17 | URL = <anything with '&xxx=text'>
 		TIP: URL must be a list []
+		EXAMPLES USAGE:
+			 * 
+			 * 
 		```
 		
 		```
@@ -298,17 +314,40 @@ RunScript(script.featherence.service,,?mode=25)
 		TIP: Simply use: CATEGORIES102A()
 		```
 		
-	* **getAddonInfo(addon):**
+* **getAddonInfo(addon):**
 		```
 		GET ADDON INFO FOR ADDDIR
-		addon = 'plugin.video.featherence.kids'
-		thumb, fanart, summary, description, plot = getAddonInfo(addon)
-		addDir('Featherence Kids','plugin://'+addon,8,thumb,plot,addon,"", getAddonFanart(background, custom=fanart))
+		EXAMPLES USAGE:
+			addon = 'plugin.video.featherence.kids'
+			thumb, fanart, summary, description, plot = getAddonInfo(addon)
+			addDir('Featherence Kids','plugin://'+addon,8,thumb,plot,addon,"", getAddonFanart(background, custom=fanart))
 		```
 
-* **PLAY ALL:**
+  * **PLAY ALL:**
 		```
 		PLAY ALL
+		CATEGORIES_RANDOM(background="", default="", custom="")
+		<category number> = Let the user choose thier own fanart for any category.
+		<default> = fanart to be used if the user is not customize any. Otherwise default addon fanart for given addDir.
+		<custom> = Otherwise default and category - Fixed fanart for given addDIr.
+		```
+
+  * **AVAILABLE CATEGORIES:**
+		```
+		CATEGORIES() = MAIN
+		CATEGORIES100(name, iconimage, desc, fanart) = SUB (100-139)
+		CATEGORIES200() = LIST OF COUNTRIES/LANGUAGES
+		CATEGORIES10001(name, iconimage, desc, fanart) = SUB2 (10001-10009)
+		CATEGORIES10101(name, iconimage, desc, fanart) = SUB2 (10101-10109)
+		CATEGORIES10201(name, iconimage, desc, fanart) = SUB2 (10201-10209)
+		CATEGORIES10301(name, iconimage, desc, fanart) = SUB2 (10301-10309)
+		CATEGORIES10401(name, iconimage, desc, fanart) = SUB2 (10401-10409)
+		CATEGORIES10501(name, iconimage, desc, fanart) = SUB2 (10501-10509)
+		CATEGORIES10601(name, iconimage, desc, fanart) = SUB2 (10601-10609)
+		CATEGORIES10701(name, iconimage, desc, fanart) = SUB2 (10701-10709)
+		CATEGORIES10801(name, iconimage, desc, fanart) = SUB2 (10801-10809)
+		CATEGORIES10901(name, iconimage, desc, fanart) = SUB2 (10901-10909)
+		
 		CATEGORIES_RANDOM(background="", default="", custom="")
 		<category number> = Let the user choose thier own fanart for any category.
 		<default> = fanart to be used if the user is not customize any. Otherwise default addon fanart for given addDir.
