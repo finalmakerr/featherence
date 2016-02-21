@@ -5,10 +5,8 @@
   <controls>
 	<include>Backgrounds3</include>
 	<control type="group" description="">
-	  <include condition="!Skin.HasSetting(Performance)">Slide1</include>
-	  <include condition="Skin.HasSetting(Performance)">Slide1p</include>
-	  <include condition="!Skin.HasSetting(Performance)">Slide2</include>
-	  <include condition="Skin.HasSetting(Performance)">Slide2p</include>
+	  <include>Slide1</include>
+	  <include>Slide2</include>
 		<control type="label" id="2" description="Heading">
 		  <height>75</height>
 		  <include>LabelC11</include>

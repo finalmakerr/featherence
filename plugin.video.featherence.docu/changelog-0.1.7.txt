@@ -14,6 +14,9 @@ Featherence Docu v0.1.x (xx-Feb-16)
   *Send your URLS if you want to share.
 - Added Play All menu button.
 - Added TV Mode menu button.
+- My Docu:
+  - Add URL: Added option to add the following URLS: Manual, ID, Playlist, Channel, Search.
+  - Search: Added option to add search strings, aka: "Featherence".
   
 ------------------------
 Featherence Docu v0.1.7 (02-Feb-16)

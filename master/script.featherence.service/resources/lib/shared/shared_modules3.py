@@ -1201,13 +1201,13 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 			if title == None: title = ""
 			title_L.append(title)
 		if thumb_L == []:
-			thumb_L.append(thumb)
+			thumb_L.append(str(thumb))
 		if desc_L == []:
 			if desc == None: desc = ""
-			desc_L.append(desc)
+			desc_L.append(str(desc))
 		if fanart_L == []:
 			if fanart == None: fanart = ""
-			fanart_L.append(fanart)
+			fanart_L.append(str(fanart))
 			
 	'''------------------------------
 	---PRINT-END---------------------
@@ -2560,8 +2560,11 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 		'''Playlist'''
 		New_Type = localize(559) #Playlist
 		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
-		New_ID = find_string(New_ID, "list=", "")
-		New_ID = New_ID.replace("list=","&youtube_pl=")
+		if "list=" in New_ID:
+			New_ID = find_string(New_ID, "list=", "")
+			New_ID = New_ID.replace("list=","&youtube_pl=")
+		elif "&youtube_ch" in New_ID:
+			New_ID = find_string(New_ID, "&youtube_ch=", "")
 		New_ID_ = New_ID.replace("&youtube_pl=","")
 		'''---------------------------'''
 	elif "/user/" in New_ID or "/channel/" in New_ID or '&youtube_ch=' in New_ID:
@@ -2574,6 +2577,8 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 		elif "/user/"    in New_ID:
 			New_ID = find_string(New_ID, "/user/", "")
 			New_ID = New_ID.replace("/user/", "&youtube_ch=")
+		elif "&youtube_ch" in New_ID:
+			New_ID = find_string(New_ID, "&youtube_ch=", "")
 			
 		New_ID_ = New_ID.replace("&youtube_ch=","")
 		'''---------------------------'''
@@ -2581,10 +2586,21 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 		'''Single Video'''
 		New_Type = localize(157) #Video
 		extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8') #New %s, Update Succesfully!
-		New_ID = find_string(New_ID, "watch?v=", "")
+		if "watch?v=" in New_ID: New_ID = find_string(New_ID, "watch?v=", "")
+		else: New_ID = find_string(New_ID, "&youtube_id", "")
+		
 		New_ID = New_ID.replace("watch?v=", "&youtube_id=")
 		New_ID_ = New_ID.replace("&youtube_id=","")
 		'''---------------------------'''
+	elif "results?search_query=" in New_ID or '&youtube_se=' in New_ID:
+		'''Search Video'''
+		New_Type = localize(137) #Search
+		extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8') #New %s, Update Succesfully!
+		if "results?search_query=" in New_ID: New_ID = find_string(New_ID, "results?search_query=", "")
+		else: New_ID = find_string(New_ID, "&youtube_se=", "")
+		New_ID = New_ID.replace("results?search_query=", "&youtube_se=")
+		New_ID_ = New_ID.replace("&youtube_se=","")
+		'''---------------------------'''	
 	
 	elif mode == 24:
 		if New_ID == 'Custom':
@@ -3131,8 +3147,27 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			'''------------------------------
 			---Add-URL-----------------------
 			------------------------------'''
-			New_ID = dialogkeyboard("", addonString_servicefeatherence(40).encode('utf-8'), 0, "5", "" , "")
-			setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, viewtype)
+			list3 = ['-> (Exit)']
+			list3.append(localize(413)) #Manual
+			list3.append('YouTube Video ID') #
+			list3.append('YouTube Playlist ID') #
+			list3.append('YouTube Channel ID') #
+			list3.append('YouTube Search') #
+			
+			returned3, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list3,0)
+			if returned3 == -1: printpoint = printpoint + "9"
+			elif returned3 == 0: printpoint = printpoint + "8"
+			else:
+				printpoint = printpoint + "7" ; x = ""			
+				if returned3 == 1: x = ""
+				elif returned3 == 2: x = "&youtube_id="
+				elif returned3 == 3: x = "&youtube_pl="
+				elif returned3 == 4: x = "&youtube_ch="
+				elif returned3 == 5: x = "&youtube_se="
+					
+				New_ID = dialogkeyboard(x, value, 0, "5", "" , "")
+				if New_ID != 'skip':
+					setCustom_Playlist_ID(Custom_Playlist_ID, x + New_ID, mode, url, name, num, viewtype)
 			
 				
 		elif "3" in printpoint:

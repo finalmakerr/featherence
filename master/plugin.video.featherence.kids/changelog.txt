@@ -16,6 +16,9 @@ Featherence Kids v0.2.4 (xx-Feb-16)
 - Major update of movies section.
 - Major update of SDAROT-TV links.
 - Minor links update.
+- My Kids:
+  - Add URL: Added option to add the following URLS: Manual, ID, Playlist, Channel, Search.
+  - Search: Added option to add search strings, aka: "Featherence".
 - Update broken posters.
 
 ------------------------

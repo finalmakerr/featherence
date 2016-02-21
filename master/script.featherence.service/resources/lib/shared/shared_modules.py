@@ -601,19 +601,39 @@ def dialogkeyboard(input, heading, option, custom, set1, addon, force=False):
 		elif custom == '5':
 			'''Custom Playlist'''
 			printpoint = printpoint + "5"
-			if ("list=" in set1v or "watch?v=" in set1v or "/user/" in set1v or "/channel/" in set1v):
-				from shared_modules3 import urlcheck
-				check = urlcheck(set1v, ping=False)
+			if set1v == "" or set1v[-1:] == "=":
+				check = dialogyesno(addonString_servicefeatherence(60).encode('utf-8'), localize(19194)) #Your input is empty!, Continue?
+				if check == "ok":
+					returned = "ok"
+					set1v = "None"
+			elif ("list=" in set1v or "watch?v=" in set1v or "/user/" in set1v or "/channel/" in set1v or "results?search_query=" in set1v or "&youtube_" in set1v):
+				from shared_modules3 import urlcheck, clean_commonsearch
+				set1v_ = set1v ; set1v__ = ""
+				if "results?search_query=" in set1v or "&youtube_se=" in set1v:
+					set1v = clean_commonsearch(set1v)
+					set1v_ = set1v_.replace('&youtube_se=',"")
+					set1v_ = 'https://www.youtube.com/results?search_query='+set1v_
+				elif '&youtube_ch=' in set1v:
+					set1v_ = set1v_.replace('&youtube_ch=',"")
+					set1v_ = 'https://www.youtube.com/user/'+set1v_
+					set1v__ = 'https://www.youtube.com/channel/'+set1v_
+				elif '&youtube_pl=' in set1v:
+					set1v_ = set1v_.replace('&youtube_pl=',"")
+					set1v_ = 'https://www.youtube.com/playlist?list='+set1v_
+				elif '&youtube_id=' in set1v:
+					set1v_ = set1v_.replace('&youtube_id=',"")
+					set1v_ = 'https://www.youtube.com/watch?v='+set1v_
+					
+				
+				
+				check = urlcheck(set1v_, ping=False, timeout=1)
+				if check != 'ok' and set1v__ != "": check = urlcheck(set1v__, ping=False, timeout=1)
+					
 				if check == "ok":
 					xbmc.executebuiltin('Notification('+ heading +': '+ set1v +',,4000)')
 					returned = 'ok'
 					'''---------------------------'''
 				else: notification("URL is not valid!", "Try again..", "", 2000)
-			elif set1v == "":
-				check = dialogyesno(addonString_servicefeatherence(60).encode('utf-8'), localize(19194)) #Your input is empty!, Continue?
-				if check == "ok":
-					returned = "ok"
-					set1v = "None"
 			else: notification("URL is not valid!", "Try again..", "", 2000)
 			
 		elif custom == "":

@@ -13,6 +13,7 @@ Featherence v0.4.4 (xx-Feb-16)
 - Added DialogPVRChannelManager and DialogPVRGroupManager.
 - Minor update DialogSubtitles.
 - Major internal code maintenance.
+- Side Menus stay visible for few more seconds on unfocus.
 
 ------------------------
 Featherence v0.4.4 (14-Feb-16)

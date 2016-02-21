@@ -119,147 +119,203 @@ RunScript(script.featherence.service,,?mode=25)
 ```
 
 # **Create your own plugin:**
+
+* **plugin.video.featherence.be_creative:**
+ * **What to do with it?:**
+	```
+	- Install the addon from ZIP.
+	- Edit addon.xml and rename the ID and addon's folder name.
+	```
+
 * **modules.py:**
   * **addDir:**
 	```
 	addDir form
-	addDir('<name>','<url>',<mode number>,'<iconimage>','<description>','<optional>',"<viewtype>", '<fanart>')
-	```
+	addDir('<name>','<url>',<mode>,'<iconimage>','<description>','<optional>','<viewtype>', '<fanart>')
 	
+	- mode: see list of available modes down below!
+	- optional: 
+	- viewtype: Currently have no usage - keep empty ('').
+	- fanart: simply put the fanart URL or use getAddonFanart(<category number>, default=<URL>, custom=<URL>)
+	The idea behind getAddonFanart is:
+		When using this method there will always be a fanart (if the user allow it in the addon settings).
+		<category number> = Let the user choose thier own fanart for any category.
+		<default> = fanart to be used if the user is not customize any. Otherwise default addon fanart for given addDir.
+		<custom> = Otherwise default and category - Fixed fanart for given addDIr.
 	```
-	PLAY VIDEO
-	METHOD 1: MODE 4 | URL = text
-	METHOD 2: MODE 5/17 | URL = text
-		  - YOUTUBE VIDEO ID: URL = &youtube_id=text
-		  - YOUTUBE PLAYLIST ID: URL = &youtube_pl=text
-		  - DAILYMOTION VIDEO ID: URL = &dailymotion_id=text
-		  - DAILYMOTION PLAYLIST ID: URL = &dailymotion=text
-		  - GOOGLE DRIVE VIDEO ID: URL = &googledrive=text
-		  - *ANY VIDEO FROM ADDON: URL = &custom4=text
-		  *use ctrl+shift+P on the preferred location!
-	```
+
+	 * **Available Modes:**
+		```
+		PLAY VIDEO
+		METHOD 1: MODE 4 | URL = text
+		METHOD 2: MODE 5/17 | URL = text
+			  - YOUTUBE VIDEO ID: URL = &youtube_id=text
+			  - YOUTUBE PLAYLIST ID: URL = &youtube_pl=text
+			  - DAILYMOTION VIDEO ID: URL = &dailymotion_id=text
+			  - DAILYMOTION PLAYLIST ID: URL = &dailymotion=text
+			  - GOOGLE DRIVE VIDEO ID: URL = &googledrive=text
+			  - *ANY VIDEO FROM ADDON: URL = &custom4=text
+			  *use ctrl+shift+P on the preferred location!
+		```
+			
+		```
+		PLAY DIRECT VIDEO
+		METHOD 1: MODE 44 | URL = text
+		METHOD 2: MODE 5/17 | URL = text | &direct4=text
+		```
 		
-	```
-	PLAY DIRECT VIDEO
-	METHOD 1: MODE 44 | URL = text
-	METHOD 2: MODE 5/17 | URL = text | &direct4=text
-	```
+		```
+		LIST DIRECT VIDEO
+		METHOD 1: MODE 42 | URL = text
+		METHOD 2: MODE 6/17 | URL = text | &direct4=text
+		```
+		
+		```
+		SHOW FROM ADDON
+		METHOD 1: MODE 8 | URL = text
+		METHOD 2: MODE 6/17 | URL = text
+			- *ANY VIDEO FROM ADDON: URL = &custom8=text
+			*use ctrl+shift+P on the preferred location!
+		```
+		
+		```
+		SHOW PLAYLIST
+		METHOD 1: MODE 13 | URL = text
+		METHOD 2: MODE 6/17 | URL = text
+			  - YOUTUBE PLAYLIST ID: URL = &youtube_pl=text
+			  - DAILYMOTION PLAYLIST ID: URL = &dailymotion_id=text
+		```
+		
+		```
+		SHOW FROM SPECIFIC WEBSITES
+		METHOD 1: MODE 40 | URL = text
+		METHOD 2: MODE 6/17 | URL = text | &direct8=text
+			  - 
+		```
+		
+		```
+		SHOW FROM SPECIFIC WEBSITES
+		METHOD 1: MODE 40 | URL = text
+		METHOD 2: MODE 6/17 | URL = text | &direct8=text
+			  - 
+		```
+		
+		```
+		LIST&PLAY FROM SPECIFIC WEBSITES
+		METHOD 1: MODE 41 | URL = text
+		METHOD 2: MODE 6/17 | URL = text | &direct8=text
+			  - 
+		```
+		
+		```
+		SHOW YOUTUBE CHANNEL
+		METHOD 1: MODE 9 | URL = text
+		METHOD 2: MODE 6/17 | URL = text
+			- YOUTUBE CHANNEL ID: URL = &youtube_ch=text
+			TIP: You may add '/playlists' after that channel id!
+		
+			```
+				
+			```
+			```				
+				
+			```
+		
+		```
+		
+		```
+		SEARCH YOUTUBE
+		OPEN: MODE 3 | URL = text
+		FEATHERENCE: MODE 5/6/17 | URL = &youtube_se=text
+		TIP: You may use:
+		"&videoDuration=text&" | text = short/medium/long
+		"&videoDefinition=text&" | text = standard/high
+
+			```
+				addDir(localize(137),3,'song',featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % ('song'),'1',"", getAddonFanart(background="", default="", custom=""))
+			```
+			```				
+				list = []
+				list.append('&youtube_se=Featherence')
+				list.append('&youtube_se=Kodi')
+				addDir(localize(137),list,17,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % ('Featherence & Kodi'),'1',"", getAddonFanart(background="", default="", custom=""))
+			```
+		```
+		
+		```
+		READ LINE BY LINE FROM FILE AND SEARCH IN YOUTUBE
+		PLAY ALL: MODE 2 | URL = <file path>
+		TIP: os.path.join(addonPath, 'resources', 'templates2', '')
+		addonPath = current addon
+		```
+		
+		```
+		READ LINE BY LINE FROM FILE - VIEW AND PLAY
+		METHOD 1: MODE 11 | URL = <file path>
+		METHOD 2: MODE 5/6/17 | URL = &custom_se11=<file path>
+		FILE STRUCTURE: <url=""/><title=""/><thumb=""/><desc=""/>
+		URL EXAMPLES: <url="&googledrive=<ID>"/>
+		TIP: os.path.join(addonPath, 'resources', 'templates2', '')
+		addonPath = current addon
+		```
+		
+		```
+		GET ADDON INFO
+		ADDON = <ADDON ID>
+		thumb, fanart, summary, description, plot = getAddonInfo(addon)
+		```
+		
+		```
+		GET INFO FROM YOUTUBE
+		OPTIONAL = 'getAPIdata=<text>'
+		text = &youtube_se=#Lion
+		in that addDir put 'getAPIdata' in any of those:
+			name, iconimage, desc, fanart
+		```
+		
+		```
+		SHOW ALL
+		METHOD 1: MODE 6 | URL = <anything with '&xxx=text'>
+		TIP: URL must be a list []
+			 Modify default sublabel using '&name_=text&' inside the url.
+		```
+		
+		```
+		PLAY ALL
+		METHOD 1: MODE 5 | URL = <anything with '&xxx=text'>
+		TIP: URL must be a list []
+		```
+		
+		```
+		TVMODE
+		METHOD 1: MODE 17 | URL = <anything with '&xxx=text'>
+		TIP: URL must be a list []
+		```
+		
+		```
+		RANDOM PLAY ALL (ANY FOLDER + SUBFOLDERS IN CURRENT CONTAINER)
+		METHOD 1: MODE 1
+		TIP: Simply use: CATEGORIES102A()
+		```
+		
+	* **getAddonInfo(addon):**
+		```
+		GET ADDON INFO FOR ADDDIR
+		addon = 'plugin.video.featherence.kids'
+		thumb, fanart, summary, description, plot = getAddonInfo(addon)
+		addDir('Featherence Kids','plugin://'+addon,8,thumb,plot,addon,"", getAddonFanart(background, custom=fanart))
+		```
+
+* **PLAY ALL:**
+		```
+		PLAY ALL
+		CATEGORIES_RANDOM(background="", default="", custom="")
+		<category number> = Let the user choose thier own fanart for any category.
+		<default> = fanart to be used if the user is not customize any. Otherwise default addon fanart for given addDir.
+		<custom> = Otherwise default and category - Fixed fanart for given addDIr.
+		```
+
 	
-	```
-	LIST DIRECT VIDEO
-	METHOD 1: MODE 42 | URL = text
-	METHOD 2: MODE 6/17 | URL = text | &direct4=text
-	```
-	
-	```
-	SHOW FROM ADDON
-	METHOD 1: MODE 8 | URL = text
-	METHOD 2: MODE 6/17 | URL = text
-		- *ANY VIDEO FROM ADDON: URL = &custom8=text
-		*use ctrl+shift+P on the preferred location!
-	```
-	
-	```
-	SHOW PLAYLIST
-	METHOD 1: MODE 13 | URL = text
-	METHOD 2: MODE 6/17 | URL = text
-		  - YOUTUBE PLAYLIST ID: URL = &youtube_pl=text
-		  - DAILYMOTION PLAYLIST ID: URL = &dailymotion_id=text
-	```
-	
-	```
-	SHOW FROM SPECIFIC WEBSITES
-	METHOD 1: MODE 40 | URL = text
-	METHOD 2: MODE 6/17 | URL = text | &direct8=text
-		  - 
-	```
-	
-	```
-	SHOW FROM SPECIFIC WEBSITES
-	METHOD 1: MODE 40 | URL = text
-	METHOD 2: MODE 6/17 | URL = text | &direct8=text
-		  - 
-	```
-	
-	```
-	LIST&PLAY FROM SPECIFIC WEBSITES
-	METHOD 1: MODE 41 | URL = text
-	METHOD 2: MODE 6/17 | URL = text | &direct8=text
-		  - 
-	```
-	
-	```
-	SHOW YOUTUBE CHANNEL
-	METHOD 1: MODE 9 | URL = text
-	METHOD 2: MODE 6/17 | URL = text
-		- YOUTUBE CHANNEL ID: URL = &youtube_ch=text
-		TIP: You may add '/playlists' after that channel id!
-	```
-	
-	```
-	SEARCH YOUTUBE
-	OPEN: MODE 3 | URL = text
-	FEATHERENCE: MODE 5/6/17 | URL = &youtube_se=text
-	TIP: You may use:
-	"&videoDuration=text&" | text = short/medium/long
-	"&videoDefinition=text&" | text = standard/high
-	```
-	
-	```
-	READ LINE BY LINE FROM FILE AND SEARCH IN YOUTUBE
-	PLAY ALL: MODE 2 | URL = <file path>
-	TIP: os.path.join(addonPath, 'resources', 'templates2', '')
-	addonPath = current addon
-	```
-	
-	```
-	READ LINE BY LINE FROM FILE - VIEW AND PLAY
-	METHOD 1: MODE 11 | URL = <file path>
-	METHOD 2: MODE 5/6/17 | URL = &custom_se11=<file path>
-	FILE STRUCTURE: <url=""/><title=""/><thumb=""/><desc=""/>
-	URL EXAMPLES: <url="&googledrive=<ID>"/>
-	TIP: os.path.join(addonPath, 'resources', 'templates2', '')
-	addonPath = current addon
-	```
-	
-	```
-	GET ADDON INFO
-	ADDON = <ADDON ID>
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	```
-	
-	```
-	GET INFO FROM YOUTUBE
-	OPTIONAL = 'getAPIdata=<text>'
-	text = &youtube_se=#Lion
-	in that addDir put 'getAPIdata' in any of those:
-		name, iconimage, desc, fanart
-	```
-	
-	```
-	SHOW ALL
-	METHOD 1: MODE 6 | URL = <anything with '&xxx=text'>
-	TIP: URL must be a list []
-	     Modify default sublabel using '&name_=text&' inside the url.
-	```
-	
-	```
-	PLAY ALL
-	METHOD 1: MODE 5 | URL = <anything with '&xxx=text'>
-	TIP: URL must be a list []
-	```
-	
-	```
-	TVMODE
-	METHOD 1: MODE 17 | URL = <anything with '&xxx=text'>
-	TIP: URL must be a list []
-	```
-	
-	```
-	RANDOM PLAY ALL (ANY FOLDER + SUBFOLDERS IN CURRENT CONTAINER)
-	METHOD 1: MODE 1
-	TIP: Simply use: CATEGORIES102A()
-	```
 	
 # **Links:**
 
