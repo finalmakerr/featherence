@@ -8,9 +8,15 @@ WIP - WORK IN PROGRESS
 - Widget auto refresh on condition.
 
 ------------------------
-Featherence v0.4.4 (xx-Feb-16)
+Featherence v0.4.x (xx-Feb-16)
+------------------------
+- Added Repeat to video OSD buttons.
+
+------------------------
+Featherence v0.4.5 (22-Feb-16)
 ------------------------
 - Added DialogPVRChannelManager and DialogPVRGroupManager.
+- Added Jarvis support! Check http://offshoregit.com/finalmakerr
 - Minor update DialogSubtitles.
 - Major internal code maintenance.
 - Side Menus stay visible for few more seconds on unfocus.

@@ -146,7 +146,7 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 	'''---------------------------'''
 	return returned	
 
-def TranslatePath(x, filename=True, urlcheck_=False):
+def TranslatePath(x, filename=True, urlcheck_=False, force=False):
 	name = 'TranslatePath' ; printpoint = "" ; returned = "" ; returned2 = "" ; TypeError = "" ; extra = ""
 	if x == None: x = ""
 	returned = x
@@ -170,6 +170,9 @@ def TranslatePath(x, filename=True, urlcheck_=False):
 			if 'ok' in valid:
 				printpoint = printpoint + "4"
 				returned = x
+			else:
+				printpoint = printpoint + '9'
+				if force == True: returned = ""
 		else: returned = x
 	elif 'special://' in x:
 		try:
@@ -181,20 +184,23 @@ def TranslatePath(x, filename=True, urlcheck_=False):
 			
 		returned2 = x
 	
-	if os.path.exists(returned):
-		printpoint = printpoint + '5'
-		
-		list = [temp_path, addons_path, xbmc_path, userdata_path, thumbnails_path, database_path]
-		list2 = ['special://temp/', 'special://home/addons/', 'special://xbmc/',  'special://userdata/',  'special://thumbnails/',  'special://database/']
-		i = 0
-		for y in list:
-			if y in returned:
-				returned2 = returned.replace(y, list2[i])
-				returned2 = returned2.replace('\\','/')
-				break
-			i += 1
+	if not '2' in printpoint:
+		if os.path.exists(returned):
+			printpoint = printpoint + '5'
+			
+			list = [temp_path, addons_path, xbmc_path, userdata_path, thumbnails_path, database_path]
+			list2 = ['special://temp/', 'special://home/addons/', 'special://xbmc/',  'special://userdata/',  'special://thumbnails/',  'special://database/']
+			i = 0
+			for y in list:
+				if y in returned:
+					returned2 = returned.replace(y, list2[i])
+					returned2 = returned2.replace('\\','/')
+					break
+				i += 1
 
-	else: printpoint = printpoint + '9'
+		else:
+			printpoint = printpoint + '9'
+			if force == True: returned = ""
 	
 	if filename == False:
 		filename_ = os.path.basename(returned)
@@ -608,9 +614,9 @@ def dialogkeyboard(input, heading, option, custom, set1, addon, force=False):
 					set1v = "None"
 			elif ("list=" in set1v or "watch?v=" in set1v or "/user/" in set1v or "/channel/" in set1v or "results?search_query=" in set1v or "&youtube_" in set1v):
 				from shared_modules3 import urlcheck, clean_commonsearch
+				set1v = clean_commonsearch(set1v)
 				set1v_ = set1v ; set1v__ = ""
 				if "results?search_query=" in set1v or "&youtube_se=" in set1v:
-					set1v = clean_commonsearch(set1v)
 					set1v_ = set1v_.replace('&youtube_se=',"")
 					set1v_ = 'https://www.youtube.com/results?search_query='+set1v_
 				elif '&youtube_ch=' in set1v:

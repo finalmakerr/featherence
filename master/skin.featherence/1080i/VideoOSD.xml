@@ -49,6 +49,32 @@
 					<onclick>UpdateLibrary(video)</onclick>
 					<visible>Library.IsScanningVideo</visible>
 				</control>
+				<control type="togglebutton" id="611" description="Repeat">
+					<texturefocus>osd/buttons/OSDRepeatFO.png</texturefocus>
+					<texturenofocus>osd/buttons/OSDRepeatNF.png</texturenofocus>
+					<alttexturefocus>osd/buttons/OSDRepeatAllFO.png</alttexturefocus>
+					<alttexturenofocus>osd/buttons/OSDRepeatAllNF.png</alttexturenofocus>
+					<width>100</width>
+					<height>100</height>
+					<usealttexture>Playlist.IsRepeat | Playlist.IsRepeatOne</usealttexture>
+					<onclick>PlayerControl(RepeatAll)</onclick>
+					<altclick>PlayerControl(RepeatOff)</altclick>
+					<visible>Player.HasAudio + !Pvr.IsPlayingRadio | Playlist.IsRepeat | Playlist.IsRepeatOne | !IsEmpty(Window(home).Property(OSDPlus))</visible>
+					<visible>!SubString(Player.FolderPath,rtmp://) + !SubString(Player.FolderPath,mms://)</visible>
+				</control>	
+				<control type="togglebutton" id="612" description="Audio">
+				    <enable>Player.HasAudio</enable>
+					<texturefocus>osd/buttons/OSDRandomOffFO.png</texturefocus>
+					<texturenofocus>osd/buttons/OSDRandomOffNF.png</texturenofocus>
+					<alttexturefocus>osd/buttons/OSDRandomOnFO.png</alttexturefocus>
+					<alttexturenofocus>osd/buttons/OSDRandomOnNF.png</alttexturenofocus>
+					<width>100</width>
+					<height>100</height>
+					<usealttexture>Playlist.IsRandom</usealttexture>
+					<onclick>PlayerControl(Random)</onclick>
+					<altclick>PlayerControl(Random)</altclick>
+					<visible>Player.HasAudio + Playlist.IsRepeat + !Pvr.IsPlayingRadio</visible>
+				</control>
 			    <control type="button" id="700" description="Bookmark">
 					<textoffsety>60</textoffsety>
 					<texturefocus>osd/buttons/OSDBookMarksFO.png</texturefocus>
@@ -260,32 +286,6 @@
 					<onclick>ActivateWindow(10142)</onclick>
 					<visible>false</visible>
 					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)</visible>
-				</control>
-				<control type="togglebutton" id="611" description="Repeat">
-					<texturefocus>osd/buttons/OSDRepeatFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDRepeatNF.png</texturenofocus>
-					<alttexturefocus>osd/buttons/OSDRepeatAllFO.png</alttexturefocus>
-					<alttexturenofocus>osd/buttons/OSDRepeatAllNF.png</alttexturenofocus>
-					<width>100</width>
-					<height>100</height>
-					<usealttexture>Playlist.IsRepeat | Playlist.IsRepeatOne</usealttexture>
-					<onclick>PlayerControl(RepeatAll)</onclick>
-					<altclick>PlayerControl(RepeatOff)</altclick>
-					<visible>Player.HasAudio + !Pvr.IsPlayingRadio</visible>
-					<visible>!SubString(Player.FolderPath,rtmp://) + !SubString(Player.FolderPath,mms://)</visible>
-				</control>	
-				<control type="togglebutton" id="612" description="Audio">
-				    <enable>Player.HasAudio</enable>
-					<texturefocus>osd/buttons/OSDRandomOffFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDRandomOffNF.png</texturenofocus>
-					<alttexturefocus>osd/buttons/OSDRandomOnFO.png</alttexturefocus>
-					<alttexturenofocus>osd/buttons/OSDRandomOnNF.png</alttexturenofocus>
-					<width>100</width>
-					<height>100</height>
-					<usealttexture>Playlist.IsRandom</usealttexture>
-					<onclick>PlayerControl(Random)</onclick>
-					<altclick>PlayerControl(Random)</altclick>
-					<visible>Player.HasAudio + Playlist.IsRepeat + !Pvr.IsPlayingRadio</visible>
 				</control>
 				<control type="togglebutton" id="707" description="Volume">
 				    <enable>true</enable>

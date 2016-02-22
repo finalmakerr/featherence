@@ -3,13 +3,15 @@ WIP (WORK IN PROGRESS)
 ------------------------
 
 ------------------------
-Featherence Extreme v0.1.x (xx-Feb-16)
+Featherence Extreme v0.1.6 (xx-Feb-16)
 ------------------------
 - *Added Google Drive and direct links support.
   Those are also support TV Mode.
   *Send your URLS if you want to share.
 - Added Play All menu button.
 - Added TV Mode menu button.
+- Added XTreme, Masters of Dirt channels.
+- Update contents information.
   
 ------------------------
 Featherence Extreme v0.1.5 (03-Feb-16)

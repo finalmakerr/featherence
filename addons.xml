@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.featherence.be_creative" name="Featherence ?" version="0.0.1" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.be_creative" name="Featherence Be Creative" version="0.0.1" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -11,9 +11,11 @@
 	<platform>all</platform>
     <summary lang="en">Easily create new addon</summary>
 	<summary lang="he">צור הרחבה חדשה בקלי קלות</summary>
-    <description lang="en">
+    <description lang="en">For support ask in Featherence's facebook.
+	Also don't forget to check the addon.xml file for the source of information.
     </description>
-	<description lang="he">
+	<description lang="he">לתמיכה שאל בקבוצת הפייסבוק.
+	Also don't forget to check the addon.xml file for the source of information.
 	</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<forum></forum>
@@ -200,7 +202,7 @@
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.2.2" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.2.3" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -220,7 +222,7 @@
   </extension>
 </addon>
 
-<addon id="skin.featherence" version="0.4.4" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.4.5" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
 	<import addon="script.featherence.service" version="0.1.0"/>

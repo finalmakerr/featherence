@@ -107,10 +107,10 @@
 		<param name="posx" value="" />
 		<param name="posy" value="" />
 		<param name="width" value="885" />
-		<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
+		<param name="condition" value="true"/>
 		
-		<param name="type0" value="true" description="MenuBackground"/>
-		<param name="type1" value="false" description="DialogBackground"/>
+		<param name="type0" value="false" description="MenuBackground"/>
+		<param name="type1" value="true" description="DialogBackground"/>
       </include>
       <control type="grouplist" id="2" description="תפריט ראשי (2)">
         <itemgap>0</itemgap>

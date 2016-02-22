@@ -2688,7 +2688,6 @@ def CATEGORIES104S(General_LanguageL, background, background2): #דראגון ב
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLIEbITAtGBeYy4Gi9gSZT0GKXndtWEVev')
-		list.append('&youtube_pl=PLWyJiIUfiUwW_l0E_mD8yumdQ6W9yGJpc')
 		list.append('&youtube_pl=PLIEbITAtGBeZ4DNOjaALTh8jDLn8_L4Pa')
 		list.append('&youtube_pl=PLIEbITAtGBeZCo9HFoiPSRgrMvyynBy8R')
 		

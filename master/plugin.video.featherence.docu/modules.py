@@ -13,7 +13,7 @@ def CATEGORIES():
 	---MAIN--------------------------
 	------------------------------'''
 	CATEGORIES_SEARCH(mode=30, url="")
-	addDir(addonString(100).encode('utf-8'),'MyDocu',100,"http://www.2gzr.com/uploads/2014/07/documentary-2.jpg",addonString_servicefeatherence(32800).encode('utf-8'),'1',50, getAddonFanart(100, default="https://i.ytimg.com/vi/esMX5NIsHdk/maxresdefault.jpg")) #My Docu
+	addDir(addonString(100).encode('utf-8'),'MyDocu',100,featherenceserviceicons_path + 'star.png',addonString_servicefeatherence(32800).encode('utf-8'),'1',50, getAddonFanart(100, default="https://i.ytimg.com/vi/esMX5NIsHdk/maxresdefault.jpg")) #My Docu
 	addDir(addonString(101).encode('utf-8'),'',101,'https://i.ytimg.com/vi/q4AQDDKglEE/maxresdefault.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(101).encode('utf-8')),'1',50, getAddonFanart(101, default="http://www.freedomwallpaper.com/wp-content/uploads/2015/02/Wild-animal-wallpaper-2.jpg")) #Nature
 	addDir(addonString(102).encode('utf-8'),'',102,'http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2014/02/searching_for_exoplanetary_systems/14282306-1-eng-GB/Searching_for_exoplanetary_systems.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(102).encode('utf-8')),'1',50, getAddonFanart(102, default="http://infossible.com/infosdata/wp-content/uploads/2015/08/Earth-From-Space-Space-1080x1920.jpg")) #Space
 	addDir(addonString(103).encode('utf-8'),'',103,'http://wsap.academy/wp-content/uploads/2015/03/1123676.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(103).encode('utf-8')),'1',50, getAddonFanart(103, default="https://d1ox703z8b11rg.cloudfront.net/uploads_image/3caff507-7d11-49ef-973a-c38a5fefe0e6/d01263ae1ef2e674b4920fecc6ddb625.png")) #History
@@ -34,7 +34,7 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 	fanart = 100
 	
 	'''כפתור דוקו חדש..'''
-	addDir(addonString_servicefeatherence(86).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,'https://cdn3.iconfinder.com/data/icons/logistics-delivery-set-1/512/8-512.png',addonString_servicefeatherence(87).encode('utf-8') + addonString_servicefeatherence(88).encode('utf-8') + addonString_servicefeatherence(89).encode('utf-8'),'s',50, getAddonFanart(fanart))
+	addDir(addonString_servicefeatherence(86).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(87).encode('utf-8') + addonString_servicefeatherence(88).encode('utf-8') + addonString_servicefeatherence(89).encode('utf-8'),'s',50, getAddonFanart(fanart))
 	
 	'''רשימת השמעה 1'''
 	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',50, getAddonFanart("Custom_Playlist1"))

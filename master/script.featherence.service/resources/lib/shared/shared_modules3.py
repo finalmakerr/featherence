@@ -23,10 +23,16 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	if num == None: num = ""
 	if '&getAPIdata=' in str(num):
 		finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(num, name, iconimage, desc, fanart, playlist=[], onlydata=True)
-		if 'getAPIdata' in name and title_L != []: name = title_L[0]
-		if 'getAPIdata' in iconimage and thumb_L != []: iconimage = thumb_L[0]
-		if 'getAPIdata' in desc and desc_L != []: desc = desc_L[0]
-		if 'getAPIdata' in fanart and fanart_L != []: fanart = fanart_L[0]
+		if 'getAPIdata' in name and title_L != [] and not 'getAPIdata' in title_L: name = title_L[0]
+		if 'getAPIdata' in iconimage:
+			if 'getAPIdata' in thumb_L: iconimage = ""
+			elif thumb_L != []: iconimage = thumb_L[0]
+		if 'getAPIdata' in desc:
+			if 'getAPIdata' in desc_L: desc = ""
+			elif desc_L != []: desc = desc_L[0]
+		if 'getAPIdata' in fanart:
+			if 'getAPIdata' in fanart_L: fanart = ""
+			elif fanart_L != []: fanart = fanart_L[0]
 		
 	
 		
@@ -429,6 +435,17 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 			z__ = read_from_file(z_, silent=True, lines=True, retry=True, printpoint="", addlines="", createlist=False)
 			url = url.replace(z, z__,1)
 			#print 'testtt ' + 'z' + space2 + str(z) + newline + 'url' + space2 + str(url)
+	
+	else:
+		if '.' in name:
+			'''check if x contain previous positions'''
+			name_ = find_string(name, name[:1], '. ')
+			name__ = name_.replace('. ',"")
+			notification(name_,name__,"",4000)
+			try:
+				test = int(name__) + 1
+				name = name.replace(name_,"",1)
+			except: pass
 			
 	url2 = url.replace("['","")
 	url2 = url2.replace("']","")
@@ -486,7 +503,9 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	for x in url2:
 		x = str(x) ; finalurl = "" ; finalurlL = [] ; numOfItems2 = 0 ; name2 = ""
 		x = url2[counturl2]
-		if len(url2) < 2: printpoint = printpoint + 'O'
+		if len(url2) < 2:
+			'''check if list contain only one item'''
+			printpoint = printpoint + 'O'
 		counturl2 += 1
 		text = "x" + space2 + str(x) + newline + "playlist" + space + str(playlist) + newline + "finalurl" + space2 + str(finalurl) + space + "finalurlL" + space2 + str(finalurlL)
 		printlog(title='MultiVideos_test', printpoint=printpoint, text=text, level=0, option="")
@@ -1043,6 +1062,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 	printlog(title='apimaster_test2', printpoint=printpoint, text=text, level=0, option="")
 	
 	if url != "":
+		if 'A' in printpoint: title2 = ""
 		try: link = OPEN_URL(url)
 		except Exception, TypeError:
 			printpoint = printpoint + '9'
@@ -1328,14 +1348,15 @@ def TVMode_check(admin, url, playlists):
 
 def TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 	returned = ""
+	scriptfeatherenceservice_random = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random)')
 	if url == "None":
 		'''Empty button'''
 		notification("no valid URL founds!", "...", "", 2000)
 	else:
-		if General_TVModeDialog == "true" or mode == 2:
+		if General_TVModeDialog == "true" or mode == 2 or scriptfeatherenceservice_random != "":
 			if General_TVModeShuffle == "true": extra = addonString_servicefeatherence(8).encode('utf-8')
 			else: extra = addonString_servicefeatherence(61).encode('utf-8') + '[CR]' + addonString_servicefeatherence(62).encode('utf-8')
-			if mode == 2 and 1 + 1 == 3: returned = 'ok'
+			if scriptfeatherenceservice_random != "": returned = 'ok'
 			else: returned = dialogyesno(addonString_servicefeatherence(7).encode('utf-8'), extra)
 			
 		if returned == 'ok': mode = 5
@@ -1699,9 +1720,10 @@ def getAddonFanart(category, custom="", default="", urlcheck_=False):
 					setsetting('Fanart_Custom'+str(category),"")
 					printpoint = printpoint + "9d"
 		
-		elif default != "" and not '7' in printpoint:
+		elif default != "" and default != 'getAPIdata' and not '7' in printpoint:
 			printpoint = printpoint + '5'
-			returned, returned2 = TranslatePath(default, filename=True, urlcheck_=True)
+			returned, returned2 = TranslatePath(default, filename=True, urlcheck_=True, force=True)
+			if returned == "": printpoint = printpoint + "9"
 		else:
 			printpoint = printpoint + "9"
 			
@@ -2466,7 +2488,7 @@ def pluginend(admin):
 		
 		#xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_TITLE, name)
 		printpoint = printpoint + "S"
-	if mode != 17 and mode != 5 and mode != 21 and mode != 4 and mode != 9 and mode != 13 and mode != 3: # and mode != 20
+	if mode != 17 and mode != 5 and mode != 21 and mode != 4 and mode != 9 and mode != 13 and mode != 3:
 		printpoint = printpoint + "7"		
 		xbmcplugin.endOfDirectory(int(sys.argv[1]))
 		
@@ -2556,7 +2578,17 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 	Custom_Playlist_ID_ = getsetting(Custom_Playlist_ID)
 	Custom_Playlist_ID_L = Custom_Playlist_ID_.split(',')
 	
-	if "list=" in New_ID or len(New_ID) == 10 or '&youtube_pl=' in New_ID:
+		
+	if mode == 24:
+		if New_ID == 'Custom':
+			New_Type = 'New Custom'
+		else:
+			New_Type = 'Custom'
+		New_ID = url
+		New_ID_ = url
+		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
+	
+	elif "list=" in New_ID or len(New_ID) == 10 or '&youtube_pl=' in New_ID:
 		'''Playlist'''
 		New_Type = localize(559) #Playlist
 		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
@@ -2601,15 +2633,6 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 		New_ID = New_ID.replace("results?search_query=", "&youtube_se=")
 		New_ID_ = New_ID.replace("&youtube_se=","")
 		'''---------------------------'''	
-	
-	elif mode == 24:
-		if New_ID == 'Custom':
-			New_Type = 'New Custom'
-		else:
-			New_Type = 'Custom'
-		New_ID = url
-		New_ID_ = url
-		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
 		
 	elif New_ID == "None":
 		New_Type = localize(2080) #Empty list
@@ -2636,7 +2659,7 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 					
 			
 		
-		if mode == 24:
+		if mode == 24 or mode == 21:
 			for x in IgnoredL:
 				New_IDL.remove(x)
 			for x in DuplicatedL:
@@ -2730,12 +2753,12 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			list2.append('New')
 			list2_.append('New')
 		elif returned == 3:
-			check = dialogyesno(addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8'), addonString_servicefeatherence(99).encode('utf-8')) #Share My Music buttons, Choose YES to learn how to share Your Music button
+			check = dialogyesno(addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8'), addonString_servicefeatherence(99).encode('utf-8')) #Share My button, Choose YES to learn how to share Your Music button
 			if check == 'ok':
 				header = addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8')
-				msg1 = localize(190) + space + localize(592) ; msg1.decode('utf-8').encode('utf-8') #; msg1 = '[B]' + msg1 + '[/B]'
+				msg1 = localize(190) + space + localize(592) ; msg1.decode('utf-8').encode('utf-8')
 				msg2 = os.path.join(addondata_path, addonID) ; msg2 = msg2.decode('utf-8').encode('utf-8')
-				message = "1. " + addonString_servicefeatherence(95).encode('utf-8') % (msg1) + ".[CR]" + "2. " + addonString_servicefeatherence(97).encode('utf-8') + "[CR]" + msg2 + ".[CR]" + "3. " + addonString_servicefeatherence(52).encode('utf-8') + "[CR]" + "4. " + addonString_servicefeatherence(53).encode('utf-8') % ("templates") + "[CR]" + "5. " + addonString_servicefeatherence(54).encode('utf-8') + ".[CR]" + "6. " + addonString_servicefeatherence(98).encode('utf-8') + ".[CR]" + "7. " + addonString_servicefeatherence(55).encode('utf-8') + ".[CR]" + "8. " + addonString_servicefeatherence(56).encode('utf-8') % ("Commit") + ".[CR][CR]" + "*You should now wait for the next addon update."
+				message = "1. Save a button using the [B]Save One[/B] button.[CR]2. Locate the saved zip file in:[CR][B]special://userdata/addon_data/"+addonID+"/[/B][CR]3. Share the file with your friends."
 				diaogtextviewer(header,message)
 				
 		if path != "":
@@ -2941,13 +2964,6 @@ def AddCustom(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	if Custom_Playlist_ID == "": notification("Playlist limit reached!", "You may delete some playlists and try again!", "", 4000)
 	elif mode == 24:
 		'''from Menu'''
-		#Custom_Playlist_ID = "Custom_Playlist" + num + "_ID"
-		#if Custom_Playlist_ID == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
-		#Custom_Playlist_Name = "Custom_Playlist" + num + "_Name"
-		#Custom_Playlist_Thumb = "Custom_Playlist" + num + "_Thumb"
-		#Custom_Playlist_Description = "Custom_Playlist" + num + "_Description"
-		#Custom_Playlist_Fanart = "Custom_Playlist" + num + "_Fanart"
-		
 		list = ['-> (Exit)', 'New']
 		for x in Custom_PlaylistL:
 			if x != "":
@@ -3167,7 +3183,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 					
 				New_ID = dialogkeyboard(x, value, 0, "5", "" , "")
 				if New_ID != 'skip':
-					setCustom_Playlist_ID(Custom_Playlist_ID, x + New_ID, mode, url, name, num, viewtype)
+					setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, viewtype)
 			
 				
 		elif "3" in printpoint:
@@ -3179,7 +3195,10 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			i = 0
 			for x in url2:
 				i += 1
-				list.append(x)
+				if x == "" and ',,' in url:
+					setsetting(Custom_Playlist_ID, url.replace(',,',""))
+				else:
+					list.append(x)
 
 			returned2, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
 				

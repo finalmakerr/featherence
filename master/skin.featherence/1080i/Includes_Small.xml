@@ -492,6 +492,7 @@
 	  <animation condition="!Control.IsVisible(601)" effect="slide" start="0,0" end="-50,0" time="0">Conditional</animation>
 	  <animation condition="!Control.IsVisible(602)" effect="slide" start="0,0" end="-50,0" time="0">Conditional</animation>
 	  
+	  <animation condition="Control.IsVisible(611)" effect="slide" start="0,0" end="100,0" time="0">Conditional</animation>
 	  <animation condition="Control.IsVisible(613)" effect="slide" start="0,0" end="50,0" time="0">Conditional</animation>
 	  <animation condition="Control.IsVisible(699)" effect="slide" start="0,0" end="50,0" time="0">Conditional</animation>
 	  <animation condition="Control.IsVisible(701)" effect="slide" start="0,0" end="50,0" time="0">Conditional</animation>

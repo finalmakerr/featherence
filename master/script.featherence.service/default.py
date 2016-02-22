@@ -98,7 +98,6 @@ elif mode == 17:
 	name = "Random-Play"
 	import urllib
 	value2 = str(scriptfeatherenceservice_randomL).replace('|',",")
-
 	xbmc.executebuiltin("XBMC.RunPlugin(plugin://%s/?url=%s&mode=5&name=&iconimage=&descs&num=&viewtype=&fanart=)"% (value, urllib.quote_plus(value2)))
 	
 	for x in range(1,6):
@@ -107,6 +106,7 @@ elif mode == 17:
 	'scriptfeatherenceservice_randomL' + space2 + str(scriptfeatherenceservice_randomL) + newline + \
 	'value2' + space2 + str(value2)
 	
+	xbmc.executebuiltin('AlarmClock(service_random,ClearProperty(script.featherence.service_random,home),00:05,silent)')
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	#mode17(admin, name, printpoint)
 	'''---------------------------'''
@@ -645,14 +645,16 @@ elif mode >= 200 and mode <= 249:
 					returned_ = dialogyesno('Your current language is %s' % (systemlanguage), 'Are the buttons in %s?' % (systemlanguage))
 					if returned_ == 'skip':
 						xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=LABEL)')
-					if filename == 'Classico Plus':
-						folder_ = 'Featherence'
-						path_ = os.path.join(featherenceserviceaddondata_media_path, folder_, '')
-						if os.path.exists(path_):
-							returned_ = dialogyesno('Extras folder found!', 'Choose YES to proceed (Optional)')
-							if returned_ != 'skip':
-								copyfiles(path_, home_path)
-								removefiles(path_)
+						
+					folder_ = 'Featherence'
+					path_ = os.path.join(featherenceserviceaddondata_media_path, folder_, '')
+					if os.path.exists(path_):
+						returned_ = dialogyesno('Extras folder found!', 'Choose YES to proceed (Optional)')
+						if returned_ != 'skip':
+							copyfiles(path_, home_path)
+							xbmc.executebuiltin("UpdateLocalAddons")
+							xbmc.executebuiltin("UpdateAddonRepos")
+						removefiles(path_)
 				    
 					ReloadSkin(admin, force=True)
 				else:
