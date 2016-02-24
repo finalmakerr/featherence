@@ -513,7 +513,25 @@ msgctxt "#31418"
 msgid "Skin Version Updated"
 msgstr "גרסת מעטפת עודכנה"
 
+msgctxt "#31419"
+msgid "By"
+msgstr "לפי"
 
+msgctxt "#31420"
+msgid "Button"
+msgstr "כפתור"
+
+msgctxt "#31421"
+msgid "Welcome"
+msgstr "ברוך הבא"
+
+msgctxt "#31422"
+msgid "Choose a video file to be play on startup.[CR]Note: This feature trigger on AFK only."
+msgstr "בחר קובץ וידאו אשר יתנגן עם פתיחת המכשיר.[CR]הערה: פעולה זו אינה חלה במקרים בהם המשתמש נוגע במקשים."
+
+msgctxt "#31423"
+msgid "Play video in a full screen."
+msgstr "נגן וידאו במסך מלא."
 
 msgctxt "#31600"
 msgid "Action"

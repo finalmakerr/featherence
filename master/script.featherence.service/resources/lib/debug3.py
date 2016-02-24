@@ -161,7 +161,7 @@ def SendDebug(Debug_Email, Debug_Password, Debug_Title, Debug_Message, Debug_Fil
 			notification_common("2")
 			SendDebug(Debug_Email, Debug_Password, Debug_Title, Debug_Message, Debug_File)
 		else:
-			returned = dialogyesno(addonString(32092).encode('utf-8'), addonString(21).encode('utf-8') + '[CR]' + str(TypeError))
+			returned = dialogyesno(addonString(32092).encode('utf-8'), addonString(32449).encode('utf-8') + '[CR]' + str(TypeError))
 			if returned == 'ok': SendDebug(Debug_Email, Debug_Password, Debug_Title, Debug_Message, Debug_File)
 			else:
 				notification(localize(16200), addonString(10), "", 2000)

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2007">
+  <onload condition="!Player.HasMedia + Skin.String(screensavermusic)">RunScript(script.featherence.service,,?mode=21&amp;value=$INFO[Skin.String(screensavermusic)]&amp;value2=music)</onload>
   <controls>
     <include>TopInformation</include>
 	<animation effect="slide" start="0,-438" end="0,0" time="220" delay="240" reversibile="false" tween="quadratic">WindowOpen</animation>
@@ -19,6 +20,7 @@
 		<onleft>202</onleft>
 		<onright>202</onright>
 		<visible>Player.HasMedia</visible>
+		<visible>false</visible>
 		<control type="button" id="700" description="Bookmark">
 			<textoffsety>60</textoffsety>
 			<texturefocus>osd/buttons/OSDBookMarksFO.png</texturefocus>

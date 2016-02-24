@@ -11,15 +11,21 @@ WIP - WORK IN PROGRESS
 Featherence v0.4.x (xx-Feb-16)
 ------------------------
 - Added Repeat to video OSD buttons.
+- Minor update Checkerboard template.
+- Update Music and Video on startup and slideshow.
+  You may now choose single file or path to be played randomly when triggered.
+- Update slideshow window information.
 
 ------------------------
 Featherence v0.4.5 (22-Feb-16)
 ------------------------
 - Added DialogPVRChannelManager and DialogPVRGroupManager.
-- Added Jarvis support! Check http://offshoregit.com/finalmakerr
+- *Added Jarvis support!
 - Minor update DialogSubtitles.
 - Major internal code maintenance.
 - Side Menus stay visible for few more seconds on unfocus.
+
+*Install from ZIP: http://offshoregit.com/finalmakerr
 
 ------------------------
 Featherence v0.4.4 (14-Feb-16)

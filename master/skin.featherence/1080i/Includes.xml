@@ -192,7 +192,7 @@
 			<label>$VAR[TopInformation2.2]</label>
 			<visible>!Skin.HasSetting(Admin) + Player.HasMedia</visible>
 			<visible>!SubString(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
-			<visible>!Window.IsVisible(MyPics.xml) + !Window.IsVisible(SlideShow.xml) + !Window.IsVisible(MyPVRChannels.xml)</visible>
+			<visible>!Window.IsVisible(MyPVRChannels.xml)</visible>
 			<visible>!SubString(Container.FolderPath,special://userdata/library/videos/) + !SubString(Container.FolderPath,/var/media/) + !SubString(Container.FolderPath,special://home/external/)</visible>
 			<visible>!SubString(MusicPlayer.Title,featherence)</visible>
 			<width>360</width>

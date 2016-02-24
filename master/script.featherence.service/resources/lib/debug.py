@@ -59,7 +59,7 @@ class SendDebug:
 								
 							list.append(x_)
 							
-						returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)	
+						returned, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)	
 						if returned == -1: printpoint = printpoint + "9"
 						elif returned == 0: file = ""
 						else:

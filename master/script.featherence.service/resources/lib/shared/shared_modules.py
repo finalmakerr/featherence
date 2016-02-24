@@ -608,7 +608,7 @@ def dialogkeyboard(input, heading, option, custom, set1, addon, force=False):
 			'''Custom Playlist'''
 			printpoint = printpoint + "5"
 			if set1v == "" or set1v[-1:] == "=":
-				check = dialogyesno(addonString_servicefeatherence(60).encode('utf-8'), localize(19194)) #Your input is empty!, Continue?
+				check = dialogyesno(addonString_servicefeatherence(32446).encode('utf-8'), localize(19194)) #Your input is empty!, Continue?
 				if check == "ok":
 					returned = "ok"
 					set1v = "None"
@@ -1162,13 +1162,13 @@ def copyfiles(source, target):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def notification_common(custom):
-	if custom == "2": notification(addonString_servicefeatherence(11).encode('utf-8'),addonString_servicefeatherence(10).encode('utf-8'),"",4000) #processing, please wait
+	if custom == "2": notification(addonString_servicefeatherence(32414).encode('utf-8'),localize(20186),"",4000) #processing, please wait
 	elif custom == "3": notification(localize(257),localize(106) + space + localize(504),"",2000) #Error, Not Empty!
 	elif custom == "4": notification('$ADDON[script.featherence.service 32401]','',"",2000) #Check network connection!...
 	elif custom == "5": notification('$ADDON[script.featherence.service 32400]','$LOCALIZE[21451]',"",2000) #Check internet connection!...
 	elif custom == "6": notification('Invalid Path','...',"",2000)
 	elif custom == "8": notification('$LOCALIZE[16200]',"","",2000) #HAPEULA BUTLA
-	elif custom == "9": notification('$LOCALIZE[16200]',addonString_servicefeatherence(19).encode('utf-8'),"",2000) #HAPEULA BUTLA, LO BUTZHU SINUHIM
+	elif custom == "9": notification('$LOCALIZE[16200]',addonString_servicefeatherence(32415).encode('utf-8'),"",2000) #HAPEULA BUTLA, LO BUTZHU SINUHIM
 	elif custom == "13": notification('$LOCALIZE[79072]',"...","",2000) #HAPEULA ISTAIMA BEHATZLAHA!
 	elif custom == "15":
 		playlistlength = xbmc.getInfoLabel('Playlist.Length(video)')

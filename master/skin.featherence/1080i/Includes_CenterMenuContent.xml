@@ -31,7 +31,7 @@
 		<visible>!SubString(Window(home).Property(SubButton.ID),_90)</visible>
 	  </item>
 	  <item id="703" description="פעולת כפתור">
-		<label>$ADDON[script.featherence.service 79]</label>
+		<label>$ADDON[script.featherence.service 32448]</label>
 		<onclick>RunScript(script.featherence.service,,?mode=232&amp;value=)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
@@ -115,7 +115,7 @@
 		<visible>[!Window.IsVisible(Custom1138.xml) + IntegerGreaterThan(Window(home).Property(Button.ID),99)] | [Window.IsVisible(Custom1139.xml) + !SubString(Window(home).Property(SubButton.ID_),_9)]</visible>
 	  </item>
 	  <item id="721" description="איפוס פריט">
-		<label>$LOCALIZE[10035] $ADDON[script.featherence.service 80]</label>
+		<label>$LOCALIZE[10035] $LOCALIZE[31420]</label>
 		<onclick description="1175-DEFAULT" condition="!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + !IntegerGreaterThan(Window(home).Property(Button.ID),99)">RunScript(script.featherence.service,,?mode=212&amp;value=02B)</onclick>
 		<onclick description="1139-DEFAULT" condition="Window.IsVisible(Custom1139.xml) + SubString(Window(home).Property(SubButton.ID),_9)">RunScript(script.featherence.service,,?mode=212&amp;value=1B)</onclick>
 		<include>CheckProperty_Menus</include>

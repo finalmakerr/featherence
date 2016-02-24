@@ -77,10 +77,6 @@
 		<control type="label" id="6" description="תאור הגדרה">
 		  <visible>false</visible>
 		</control>
-		<control type="label" id="121" description="תאור הגדרה 2">
-		  <label>$VAR[Button121]</label>
-		  <visible>false</visible>
-		</control>
 	</control>
 	<include>ScrollBar</include>
     <include>MenuDesign_Left</include>

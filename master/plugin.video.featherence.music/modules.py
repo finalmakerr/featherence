@@ -30,7 +30,7 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 	background = 100
 	
 	'''כפתור מוזיקה חדש..'''
-	addDir(addonString_servicefeatherence(86).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(87).encode('utf-8') + addonString_servicefeatherence(88).encode('utf-8') + addonString_servicefeatherence(89).encode('utf-8'),'s',50, getAddonFanart(background))
+	addDir(addonString_servicefeatherence(32450).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',50, getAddonFanart(background))
 	
 	'''רשימת השמעה 1'''
 	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',50, getAddonFanart("Custom_Playlist1"))
@@ -171,7 +171,7 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	
 	CATEGORIES_RANDOM(background,fanart)
 	'''חיפוש'''
-	addDir(localize(137),'שיר',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(localize(137),'שיר',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	CATEGORIES10101Z(name, iconimage, desc, background, fanart) #ערוצי טלוויזיה
 
@@ -348,7 +348,7 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	
 	CATEGORIES_RANDOM(background,fanart)
 	'''חיפוש'''
-	addDir(localize(137),'קריוקי',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(localize(137),'קריוקי',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	CATEGORIES10102Z(name, iconimage, desc, background, fanart) #ערוצי טלוויזיה
 
@@ -525,7 +525,7 @@ def CATEGORIES10104(name, iconimage, desc, fanart):
 	
 	CATEGORIES_RANDOM(background,fanart)
 	'''חיפוש'''
-	addDir(localize(137),'הופעה חיה',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(localize(137),'הופעה חיה',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	CATEGORIES10104Z(name, iconimage, desc, background, fanart) #ערוצי טלוויזיה
 	
@@ -693,7 +693,7 @@ def CATEGORIES10106(name, iconimage, desc, fanart):
 	
 	CATEGORIES_RANDOM(background,fanart)
 	'''חיפוש'''
-	addDir(localize(137),'שיר',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(localize(137),'שיר',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	CATEGORIES10106Z(name, iconimage, desc, background, fanart) #ערוצי טלוויזיה
 
@@ -824,7 +824,7 @@ def CATEGORIES10107(name, iconimage, desc, fanart):
 	
 	CATEGORIES_RANDOM(background,fanart)
 	'''חיפוש'''
-	addDir(localize(137),'קריוקי',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(localize(137),'קריוקי',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	CATEGORIES10107Z(name, iconimage, desc, background, fanart) #ערוצי טלוויזיה
 
@@ -920,7 +920,7 @@ def CATEGORIES10109(name, iconimage, desc, fanart):
 	
 	CATEGORIES_RANDOM(background,fanart)
 	'''חיפוש'''
-	addDir(localize(137),'הופעה חיה',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(localize(137),'הופעה חיה',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	CATEGORIES10109Z(name, iconimage, desc, background, fanart) #ערוצי טלוויזיה
 	
@@ -1076,7 +1076,7 @@ def CATEGORIES11101(name, iconimage, desc, fanart):
 	
 	CATEGORIES_RANDOM(background,fanart)
 	'''חיפוש'''
-	addDir(localize(137),'song',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(localize(137),'song',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(2).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	CATEGORIES11101Z(name, iconimage, desc, background, fanart) #ערוצי טלוויזיה
 	
@@ -1220,7 +1220,7 @@ def CATEGORIES11102(name, iconimage, desc, fanart):
 	
 	CATEGORIES_RANDOM(background,fanart)
 	'''חיפוש'''
-	addDir(localize(137),'karaoke',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(localize(137),'karaoke',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (localize(13327)),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	CATEGORIES11102Z(name, iconimage, desc, background, fanart) #ערוצי טלוויזיה
 		
@@ -1338,7 +1338,7 @@ def CATEGORIES11104(name, iconimage, desc, fanart):
 	
 	CATEGORIES_RANDOM(background,fanart)
 	'''חיפוש'''
-	addDir(localize(137),'liveshow',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(localize(137),'liveshow',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(1).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	CATEGORIES11104Z(name, iconimage, desc, background, fanart) #ערוצי טלוויזיה
 	

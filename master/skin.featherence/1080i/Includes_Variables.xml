@@ -61,11 +61,6 @@
     <value description="סרטים שלא נצפו" condition="Skin.HasSetting(MoviesShelfWL)">$LOCALIZE[31811]</value>
 	<value description="סרטים שנוספו לאחרונה" condition="!Skin.HasSetting(MoviesShelfWL)">$LOCALIZE[20386]</value>
   </variable>
-  <variable name="Button121" description="תאור הגדרה2">
-    <value description="Settings Level" condition="Control.HasFocus(20)">$LOCALIZE[78911]</value>
-	<value description="הגדרות משתמש" condition="Control.HasFocus(120)">$ADDON[script.featherence.service 78] $LOCALIZE[78910]</value>
-	<value description="פאנארט פעיל" condition="Control.HasFocus(123)">$ADDON[script.featherence.service 72]</value>
-  </variable>
   
   <variable name="ShowClock">
     <value condition="!Skin.String(ShowClock) | Skin.String(ShowClock,0)">$INFO[System.Time] $INFO[System.Date]</value>
@@ -490,11 +485,11 @@
 	<value description="גרסה" condition="Window.IsVisible(Home.xml)">$INFO[System.AddonVersion(skin.featherence)]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[B]$ADDON[script.skin.helper.service 32011][/B]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(Custom1170.xml)">Choose $INFO[Window(home).Property(TEMP)]</value>
-	<value description="סרטים_he" condition="StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://movies,left) | SubString(Container.FolderPath,library://video/movies) | SubString(Container.FolderPath,special://userdata/library/movies/)] + !SubString(Container.FolderName,$LOCALIZE[20342])">($INFO[Container.NumItems]) [COLOR yellow]$VAR[GenreLabel2][/COLOR] $LOCALIZE[20342] $ADDON[script.featherence.service 77] </value>
-	<value description="סרטים_en" condition="!StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://movies,left) | SubString(Container.FolderPath,library://video/movies) | SubString(Container.FolderPath,special://userdata/library/movies/)] + !SubString(Container.FolderName,$LOCALIZE[20342])">$LOCALIZE[20342] $ADDON[script.featherence.service 77] [COLOR yellow]$VAR[GenreLabel2][/COLOR] ($INFO[Container.NumItems])</value>
-	<value description="סדרות טלוויזיה_he" condition="StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://tvshows,left) | SubString(Container.FolderPath,library://video/tvshows) | SubString(Container.FolderPath,special://userdata/library/tvshows/)] + !SubString(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] $LOCALIZE[20343] $ADDON[script.featherence.service 77] </value>
-	<value description="סדרות טלוויזיה_en" condition="!StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://tvshows,left) | SubString(Container.FolderPath,library://video/tvshows) | SubString(Container.FolderPath,special://userdata/library/tvshows/)] + !SubString(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) $LOCALIZE[20343] $ADDON[script.featherence.service 77] [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] </value>
-	<value description="מוזיקה" condition="Window.IsActive(MyMusicNav.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR] $LOCALIZE[2] $ADDON[script.featherence.service 77] [/B]</value> <!--SubString(Container.FolderPath,musicdb://,left)-->
+	<value description="סרטים_he" condition="StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://movies,left) | SubString(Container.FolderPath,library://video/movies) | SubString(Container.FolderPath,special://userdata/library/movies/)] + !SubString(Container.FolderName,$LOCALIZE[20342])">($INFO[Container.NumItems]) [COLOR yellow]$VAR[GenreLabel2][/COLOR] $LOCALIZE[20342] $LOCALIZE[31419] </value>
+	<value description="סרטים_en" condition="!StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://movies,left) | SubString(Container.FolderPath,library://video/movies) | SubString(Container.FolderPath,special://userdata/library/movies/)] + !SubString(Container.FolderName,$LOCALIZE[20342])">$LOCALIZE[20342] $LOCALIZE[31419] [COLOR yellow]$VAR[GenreLabel2][/COLOR] ($INFO[Container.NumItems])</value>
+	<value description="סדרות טלוויזיה_he" condition="StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://tvshows,left) | SubString(Container.FolderPath,library://video/tvshows) | SubString(Container.FolderPath,special://userdata/library/tvshows/)] + !SubString(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] $LOCALIZE[20343] $LOCALIZE[31419] </value>
+	<value description="סדרות טלוויזיה_en" condition="!StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://tvshows,left) | SubString(Container.FolderPath,library://video/tvshows) | SubString(Container.FolderPath,special://userdata/library/tvshows/)] + !SubString(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) $LOCALIZE[20343] $LOCALIZE[31419] [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] </value>
+	<value description="מוזיקה" condition="Window.IsActive(MyMusicNav.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR] $LOCALIZE[2] $LOCALIZE[31419] [/B]</value> <!--SubString(Container.FolderPath,musicdb://,left)-->
 	<value description="מנהל הרחבות" condition="Window.IsVisible(AddonBrowser.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR][/B]</value>
 	<value description="PVR" condition="Window.IsVisible(DialogPVRChannelManager.xml)">($INFO[Container.NumItems]) [COLOR white2][B]$LOCALIZE[19199] - $LOCALIZE[19023]/$LOCALIZE[19024][/B][/COLOR]</value>
 	<value description="PVR" condition="Window.IsVisible(DialogPVRGroupManager.xml)">($INFO[Container.NumItems]) [COLOR white2][B]$LOCALIZE[19143][/B][/COLOR]</value>
@@ -650,8 +645,8 @@
 	<variable name="DialogSelectTitle">
 	  <value condition="Control.IsVisible(3)">$INFO[Control.GetLabel(1)] ($INFO[Container(3).NumItems])</value>
 	  <value condition="Control.IsVisible(6)">$INFO[Control.GetLabel(1)] ($INFO[Container(6).NumItems])</value>
-	  <value condition="Control.IsVisible(3) + IsEmpty(Contol.GetLabel(1))">$ADDON[script.featherence.service 31] ($INFO[Container(3).NumItems])</value>
-	  <value condition="Control.IsVisible(6) + IsEmpty(Contol.GetLabel(1))">$ADDON[script.featherence.service 31] ($INFO[Container(6).NumItems])</value>
+	  <value condition="Control.IsVisible(3) + IsEmpty(Contol.GetLabel(1))">$ADDON[script.featherence.service 32423] ($INFO[Container(3).NumItems])</value>
+	  <value condition="Control.IsVisible(6) + IsEmpty(Contol.GetLabel(1))">$ADDON[script.featherence.service 32423] ($INFO[Container(6).NumItems])</value>
 	</variable>
 	<variable name="ManualColor">
 	  <value condition="!IsEmpty(Window(home).Property(SelectedColor))">$INFO[Window(home).Property(SelectedColor)]</value>

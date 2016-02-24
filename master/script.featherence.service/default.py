@@ -111,13 +111,9 @@ elif mode == 17:
 	#mode17(admin, name, printpoint)
 	'''---------------------------'''
 
-elif mode == 22:
-	'''------------------------------
-	---ScreenSaver_Music-------------
-	------------------------------'''
-	name = "ScreenSaver_Music"
-	mode22(value, admin, name, printpoint, ScreenSaver_Music)
-	'''---------------------------'''
+elif mode == 21: CreatePL(value, value2)
+	
+elif mode == 22: mode22(value, value2, value3, value4, value5, value6)
 
 elif mode == 23:
 	'''------------------------------
@@ -369,7 +365,7 @@ elif mode >= 200 and mode <= 249:
 		list = ['-> (Exit)', 'Save', 'Load', 'Templates'] ; list2 = [] ; custommediaL = []
 		
 		if list != []:
-			returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+			returned, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
 			
 			if returned == -1: printpoint = printpoint + "9"
 			elif returned == 0: printpoint = printpoint + "8"
@@ -405,7 +401,7 @@ elif mode >= 200 and mode <= 249:
 								#print extra 
 								'''---------------------------'''
 			
-			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list2_,0)
+			returned2, value2 = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list2_,0)
 			
 			if returned2 == -1: printpoint = printpoint + "9"
 			elif returned2 == 0: printpoint = printpoint + "8"

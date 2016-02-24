@@ -74,6 +74,33 @@ READ FROM FILE AND DISPLAY
 RunScript(script.featherence.service,,?mode=31&amp;value=header&amp;value2=message&amp;value3=filepath)
 ```
 
+* **CREATE PLAYLIST FROM PATH:**
+	```
+	path = 'special://userdata/library/videos/'
+	RunScript(script.featherence.service,,?mode=211&amp;value=path&amp;value2=video&amp;value3=10)
+	value2: video or music.
+	value3: level to go deep path's subdirs.
+	```
+
+* **CREATE PLAYLIST FROM PATH:**
+	```
+	path = 'special://userdata/library/videos/'
+	RunScript(script.featherence.service,,?mode=211&amp;value=path&amp;value2=video&amp;value3=10)
+	value2: video or music.
+	value3: level to go deep path's subdirs.
+	```
+
+* **DIALOG YES NO AND SET FILE OR PATH:**
+	```
+	RunScript(script.featherence.service,,?mode=22&amp;value=header&amp;value2=message&amp;value3=No!&amp;value4=Yes!&amp;value5=skinstring&amp;value6=type)
+	value1: header.
+	value2: message.
+	value3: No Label.
+	value4: Yes Label.
+	value5: SkinString (without $INFO)
+	value6: video or music.
+	```
+		
 # **Integrating Widget:**
 * [Match Skin Widgets Property](http://kodi.wiki/view/Add-on:Skin_Widgets)
 

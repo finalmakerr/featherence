@@ -343,20 +343,93 @@ def mode10(admin, name, printpoint):
 			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23)')
 		
 
-def mode22(value, admin, name, printpoint, ScreenSaver_Music):
-	'''------------------------------
-	---ScreenSaver_Music-------------
-	------------------------------'''
-	screensavermusic = xbmc.getInfoLabel('Skin.String(screensavermusic)')
-	returned = setPath(1,'.mp3|.flac|.wav|.m3u')
-	notification(returned,screensavermusic,'',4000)
+def mode22(header, message, nolabel, yeslabel, skinstring, type='video'):
+	skinstring_ = xbmc.getInfoLabel('Skin.String('+skinstring+')')
+	returned = dialogyesno(header, message, nolabel=nolabel, yeslabel=yeslabel)
+	if returned == 'ok': z = 0
+	else: z = 1
+	returned = setPath(z,type)
+	notification(returned,skinstring,'',4000)
 	if returned != "":
-		if returned != screensavermusic: setSkinSetting('0','screensavermusic',returned)
+		if returned != skinstring_: setSkinSetting('0',skinstring,returned)
 		else:
-			returned2 = dialogyesno('Remove Current Path?',screensavermusic)
-			if returned2 == 'ok': setSkinSetting('0','screensavermusic',"")
+			returned2 = dialogyesno('Remove Current Path?',skinstring)
+			if returned2 == 'ok': setSkinSetting('0',skinstring,"")
 			'''---------------------------'''
+			
+def CheckExtensions(x, mask='video'):
+	name = 'CheckExtensions' ; printpoint = "" ; returned = ""
+	if mask =='video': list = ['mp4', 'mov', 'avi']
+	elif mask =='picture': list = []
+	elif mask =='music': list = ['.mp3', 'flac', '.wav', 'm3u']
+	else: list = []
+	
+	extension = os.path.splitext(x)[1][1:].strip().lower()
+	if extension in list:
+		returned = 'ok'
+	
+	text = 'mask' + space2 + str(mask) + newline + \
+	'x' + space2 + str(x) + newline + \
+	'list' + space2 + str(list) + newline + \
+	'extension' + space2 + str(extension) + newline + \
+	'returned' + space2 + str(returned)
+	
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	
+	return returned
 
+def CreatePL2(x, type, playlist, level, levelmax):
+	name = 'CreatePL2' ; printpoint = "" ; x2 = ""
+	if os.path.isdir(x):
+		for x2 in os.listdir(x):
+			x2 = to_utf8(x2)
+			x2 = os.path.join(x, x2)
+			if os.path.isdir(x2) and level <= levelmax:
+				playlist = CreatePL2(x + x2, type, playlist, level + 1, levelmax)
+			else:
+				returned = CheckExtensions(x2, type)
+				if returned == 'ok': playlist.append(x2)
+	else:
+		returned = CheckExtensions(x, type)
+		if returned == 'ok': playlist.append(x)
+	
+	text = 'level' + space2 + str(level) + space + 'levelmax' + space2 + str(levelmax) + newline + \
+	'x' + space2 + str(x) + newline + \
+	'x2' + space2 + str(x2) + newline + \
+	'playlist' + space2 + str(playlist)
+	
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	
+	return playlist
+	
+def CreatePL(path, type='video', levelmax=10):
+	name = 'CreatePL' ; printpoint = "" ; extra = "" ; notexistsL= []
+	if type == 'music': pl = xbmc.PlayList(xbmc.PLAYLIST_MUSIC)
+	else: pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
+	
+	pl.clear()
+	playlist = []
+	for x in os.listdir(path):
+		x = os.path.join(path, x)
+		x = to_utf8(x)
+		if os.path.exists(x):
+			playlist = CreatePL2(x, type, playlist, 0, levelmax)
+		else: notexistsL.append(x)
+		
+	if playlist != []:
+		random.shuffle(playlist)
+		for x in playlist:
+			pl.add(x)
+			print x
+		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl)
+	
+	text = 'type' + space2 + str(type) + newline + \
+	'path' + space2 + str(path) + newline + \
+	'pl' + space2 + str(pl) + newline + \
+	'playlist' + space2 + str(playlist) + newline + \
+	'notexistsL' + space2 + str(notexistsL)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+		
 def mode25(value, admin, name, printpoint):
 	'''------------------------------
 	---Play-Random-Trailers----------
@@ -388,7 +461,7 @@ def mode28(value, admin, name, printpoint):
 	list.append(localize(31014)) #Poster
 	list.append(localize(31015)) #List
 
-	returned, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+	returned, value2 = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
 
 	if returned == -1: printpoint = printpoint + "9"
 	elif returned == 0: printpoint = printpoint + "8"
@@ -521,7 +594,7 @@ def mode32(value, admin, name, printpoint):
 		if containerfolderpath == "": nolabel = nolabel + space + '[Empty]'
 		if listitemfolderpath == "": yeslabel = yeslabel + space + '[Empty]'
 		
-		returned = dialogyesno(str(name), addonString_servicefeatherence(31).encode('utf-8'), nolabel=nolabel, yeslabel=yeslabel)
+		returned = dialogyesno(str(name), addonString_servicefeatherence(32423).encode('utf-8'), nolabel=nolabel, yeslabel=yeslabel)
 		
 		if returned != 'skip': text = listitemfolderpath ; printpoint = printpoint + '1'
 		else: text = containerfolderpath ; printpoint = printpoint + '2'
@@ -698,7 +771,7 @@ def mode70(value, admin, name, printpoint, property_temp):
 						list.append(x)
 					
 					if len(list) > 1:
-						returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+						returned, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
 						if returned == -1: printpoint = printpoint + "9"
 						else:
 							printpoint = printpoint + "7"
@@ -771,7 +844,7 @@ def mode200(value, admin, name, printpoint):
 	else: pass
 	
 	if "1" in printpoint:
-		returned, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+		returned, value2 = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
 	
 		if returned == -1: printpoint = printpoint + "9"
 		elif returned == 0: printpoint = printpoint + "8"
@@ -859,7 +932,7 @@ def mode201(value, admin, name, printpoint):
 	localize(10035) + space + "(" + localize(31825) + ")"]
 	
 	if value == "" or container50hasfocus390:
-		returned, value_ = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+		returned, value_ = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
 		
 		if returned == -1: printpoint = printpoint + "9"
 		elif returned == 0: printpoint = printpoint + "8"
@@ -1741,7 +1814,7 @@ def mode233(value, admin, name, printpoint):
 	
 	if x != "":
 		printpoint = printpoint + '1'
-		returned = dialogyesno(str(name), addonString_servicefeatherence(31).encode('utf-8'), nolabel=nolabel, yeslabel=yeslabel)
+		returned = dialogyesno(str(name), addonString_servicefeatherence(32423).encode('utf-8'), nolabel=nolabel, yeslabel=yeslabel)
 		if returned == 'ok':
 			printpoint = printpoint + '2'
 			returned2, value2 = getRandom(0, min=0, max=100, percent=40)
@@ -2053,8 +2126,8 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=Fals
 		number2N = int(number2S)
 		'''---------------------------'''
 		if number2N == 0: header = '[COLOR=yellow]' + localize(31418) + space + localize(33006) + " - " + Skin_Version + '[/COLOR]'
-		elif number2N == 1: header = '[COLOR=green]' + localize(31418) + space + addonString_servicefeatherence(5).encode('utf-8') + " - " + Skin_Version + '[/COLOR]'
-		elif number2N <= 7: header = '[COLOR=purple]' + localize(31418) + space + addonString_servicefeatherence(6).encode('utf-8') + " - " + Skin_Version + '[/COLOR]'
+		elif number2N == 1: header = '[COLOR=green]' + localize(31418) + space + addonString_servicefeatherence(32410).encode('utf-8') + " - " + Skin_Version + '[/COLOR]'
+		elif number2N <= 7: header = '[COLOR=purple]' + localize(31418) + space + addonString_servicefeatherence(32411).encode('utf-8') + " - " + Skin_Version + '[/COLOR]'
 		elif force == True: header = addonString(32091).encode('utf-8') + space + space5 + Skin_Version
 		else: header = ""
 		'''---------------------------'''

@@ -765,7 +765,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 		if 'r' in printpoint: printpoint = printpoint.replace('r',"")
 	if mode == 5:
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
-		if playlist == []: notification(addonString_servicefeatherence(1).encode('utf-8'), addonString_servicefeatherence(2).encode('utf-8'), "", 2000)
+		if playlist == []: notification(addonString_servicefeatherence(32408).encode('utf-8'), addonString_servicefeatherence(32409).encode('utf-8'), "", 2000)
 		#xbmc.executebuiltin('RunScript('+addonID+'/?mode=6&name='+name+'&url='+url+'&iconimage='+str(iconimage)+'&desc='+desc+'&num='+str(num)+'&viewtype='+str(viewtype)+')')
 		#MultiVideos(6, name, url, iconimage, desc, num, viewtype, fanart)
 		
@@ -1337,7 +1337,7 @@ def TVMode_check(admin, url, playlists):
 			---PLAYLIST->-1------------------
 			------------------------------'''
 			printpoint = printpoint + "5"
-			returned = dialogyesno(addonString_servicefeatherence(7).encode('utf-8'), addonString_servicefeatherence(8).encode('utf-8'))
+			returned = dialogyesno(addonString_servicefeatherence(32412).encode('utf-8'), addonString_servicefeatherence(32413).encode('utf-8'))
 			if returned == "ok": returned = TvMode(url)
 			'''---------------------------'''
 		else: printpoint = printpoint + "8"
@@ -1354,10 +1354,10 @@ def TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 		notification("no valid URL founds!", "...", "", 2000)
 	else:
 		if General_TVModeDialog == "true" or mode == 2 or scriptfeatherenceservice_random != "":
-			if General_TVModeShuffle == "true": extra = addonString_servicefeatherence(8).encode('utf-8')
+			if General_TVModeShuffle == "true": extra = addonString_servicefeatherence(32413).encode('utf-8')
 			else: extra = addonString_servicefeatherence(61).encode('utf-8') + '[CR]' + addonString_servicefeatherence(62).encode('utf-8')
 			if scriptfeatherenceservice_random != "": returned = 'ok'
-			else: returned = dialogyesno(addonString_servicefeatherence(7).encode('utf-8'), extra)
+			else: returned = dialogyesno(addonString_servicefeatherence(32412).encode('utf-8'), extra)
 			
 		if returned == 'ok': mode = 5
 		else: mode = 6
@@ -1890,8 +1890,8 @@ def setAddon_UpdateLog(admin, Addon_Version, Addon_UpdateDate, Addon_ShowLog, Ad
 			'''---------------------------'''
 			#header = '[COLOR=yellow]' + addonString(304).encode('utf-8') + " - " + addonVersion + '[/COLOR]'
 			if number2N == 0: header = '[COLOR=yellow]' + localize(24065) + space + localize(33006) + space5 + Addon_Version + '[/COLOR]'
-			elif number2N == 1: header = '[COLOR=green]' + localize(24065) + space + addonString_servicefeatherence(5).encode('utf-8') + space5 + Addon_Version + '[/COLOR]'
-			elif number2N <= 7: header = '[COLOR=purple]' + localize(24065) + space + addonString_servicefeatherence(6).encode('utf-8') + space5 + Addon_Version + '[/COLOR]'
+			elif number2N == 1: header = '[COLOR=green]' + localize(24065) + space + addonString_servicefeatherence(32410).encode('utf-8') + space5 + Addon_Version + '[/COLOR]'
+			elif number2N <= 7: header = '[COLOR=purple]' + localize(24065) + space + addonString_servicefeatherence(32411).encode('utf-8') + space5 + Addon_Version + '[/COLOR]'
 			else: header = ""
 			'''---------------------------'''
 			if number2N <= int(Addon_ShowLog2):
@@ -3451,7 +3451,7 @@ def listURLS(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	
 def CATEGORIES_RANDOM(background="", default="", custom=""):
 	'''אקראי'''
-	addDir('-' + localize(590),list,1,featherenceserviceicons_path + 'random.png',addonString_servicefeatherence(8).encode('utf-8'),'1',"", getAddonFanart(background, default=default, custom=custom))
+	addDir('-' + localize(590),list,1,featherenceserviceicons_path + 'random.png',addonString_servicefeatherence(32413).encode('utf-8'),'1',"", getAddonFanart(background, default=default, custom=custom))
 
 def CATEGORIES_SEARCH(mode=3, name='-' + localize(137), url="", num=""):
 	'''חיפוש'''

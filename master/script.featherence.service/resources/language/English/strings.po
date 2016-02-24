@@ -6,373 +6,110 @@
 msgid ""
 msgstr ""
 
-msgctxt "#1
-msgid "No TV Mode support for this content!"
-msgstr "אין תמיכה במצב טלוויזיה לתוכן זה!"
-
-msgctxt "#2
-msgid "Play it as normal instead"
-msgstr "יש לבצע ניגון רגיל"
-
-msgctxt "#3
-msgid "Enter featherence"
-msgstr "כנס ל-featherence"
-
-msgctxt "#4
-msgid "Would you like to return now?"
-msgstr "האם ברצונך לחזור כעת?"
-
-msgctxt "#5
-msgid "Yesterday"
-msgstr "אתמול"
-
-msgctxt "#6
-msgid "This Week"
-msgstr "השבוע"
-
-msgctxt "#7
-msgid "Activate TV Mode?"
-msgstr "הפעל מצב טלוויזיה?"
-
-msgctxt "#8
+#TEMP!
+msgctxt "#8#
 msgid "Choose this option to play contents at random and in sequence!"
 msgstr "בחר באפשרות זו בכדי לנגן תכנים באקראי וברצף!"
 
-msgctxt "#9
-msgid "Kids"
-msgstr "ילדים"
-
-msgctxt "#10
-msgid "Please Wait."
-msgstr "אנא המתן."
-
-msgctxt "#11
-msgid "processing"
-msgstr "בתהליך"
-
-msgctxt "#12
-msgid "Phone number"
-msgstr "מספר טלפון"
-
-msgctxt "#13
-msgid "Would you like to cancel autoplay?"
-msgstr "האם לבטל ניגון אוטומטי?"
-
-msgctxt "#14
-msgid "This will allow you to manually choose a source."
-msgstr "פעולה זו תאפשר לך לבחור שרת מרשימה."
-
-msgctxt "#15
-msgid "Hide untrusted contents (Recommend!)"
-msgstr "הסתר תכנים לא אמינים (מומלץ!)"
-
+#TEMP!
 msgctxt "#16
 msgid "Show TV Mode dialog"
 msgstr "הצג דיאלוג מצב טלוויזיה"
 
+#TEMP!
 msgctxt "#17
 msgid "Allow Random TV Mode"
 msgstr "אפשר מצב טלוויזיה אקראי"
 
-msgctxt "#18
-msgid "[CR][CR][COLOR=red]Changes will take effect upon reboot![/COLOR]"
-msgstr "[CR][CR][COLOR=red]השינויים יכנסו לתוקף בהפעלה מחדש![/COLOR]"
-
-msgctxt "#19
-msgid "No changes were made"
-msgstr "לא בוצעו שינויים"
-
+#TEMP!
 msgctxt "#20
 msgid "Auto View Mode"
 msgstr "מצב תצוגה אוטומטית"
 
-msgctxt "#21
-msgid "Would you like to try again?"
-msgstr "האם ברצונך לנסות שוב?"
-
-msgctxt "#22
-msgid "Your Name"
-msgstr "השם שלך"
-
+#TEMP!
 msgctxt "#23
 msgid "Search %s by name"
 msgstr "חפש %s לפי שם"
 
+#TEMP
 msgctxt "#24
 msgid "Show Changelog"
 msgstr "הצג עדכונים אחרונים"
 
+#TEMP
 msgctxt "#25
 msgid "ChangLog will appear once on every Kodi session[CR] (If recent update has occured)."
 msgstr "עדכונים אחרונים יופיעו פעם אחת בכל הפעלה של הקודי [CR](אם ההרחבה עודכנה לאחרונה)."
 
+#TEMP
 msgctxt "#26
 msgid "Total days for displaying Recent Updates"
 msgstr "מספר ימים להצגת עדכונים אחרונים"
 
-msgctxt "#27
-msgid "Choose your own background for each category."
-msgstr "בחר רקע משלך עבור כל קטגוריה."
-
+#TEMP
 msgctxt "#28
 msgid "Allow Backgrounds"
 msgstr "אפשר רקעים"
 
-msgctxt "#29
-msgid "Done Succesfully!"
-msgstr "בוצע בהצלחה!"
-
-msgctxt "#30
-msgid "Update Succesfully!"
-msgstr "עודכן בהצלחה!"
-
+#TEMP
 msgctxt "#31
 msgid "Choose an option from the list"
 msgstr "בחר אפשרות מהרשימה"
 
-msgctxt "#32
-msgid "Add Description"
-msgstr "הוסף תאור"
-
-msgctxt "#33
-msgid "Edit Description"
-msgstr "ערוך תאור"
-
-msgctxt "#34
-msgid "Add Fanart"
-msgstr "הוסף פאנארט"
-
-msgctxt "#35
-msgid "Remove Fanart"
-msgstr "הסר פאנארט"
-
-msgctxt "#36
-msgid "Add Thumb"
-msgstr "הוסף תמונה"
-
-msgctxt "#37
-msgid "Remove Thumb"
-msgstr "הסר תמונה"
-
-msgctxt "#38
-msgid "Edit URL"
-msgstr "ערוך קישור"
-
-msgctxt "#39
-msgid "Remove URL"
-msgstr "הסר קישור"
-
-msgctxt "#40
-msgid "Add URL"
-msgstr "הוסף קישור"
-
-msgctxt "#41
-msgid "Rename Button"
-msgstr "שנה שם כפתור"
-
-msgctxt "#42
-msgid "View URL"
-msgstr "עיין בקישור"
-
-msgctxt "#43
-msgid "Removed Succesfully!"
-msgstr "הוסר בהצלחה!"
-
-msgctxt "#44
-msgid "URL"
-msgstr "קישור"
-
-msgctxt "#45
-msgid "Button Name"
-msgstr "שם כפתור"
-
-msgctxt "#46
-msgid "New %s"
-msgstr "%s חדש"
-
-msgctxt "#47
-msgid "New %s"
-msgstr "%s חדשה"
-
-msgctxt "#48
-msgid "Added Succesfully!"
-msgstr "נוסף בהצלחה!"
-
-msgctxt "#49
-msgid "Added Succesfully!"
-msgstr "נוספה בהצלחה!"
-
-msgctxt "#50
-msgid "Button"
-msgstr "כפתור"
-
-msgctxt "#51
-msgid "Load"
-msgstr "טעינה"
-
-msgctxt "#52
-msgid "Check addon.xml for the current addon's source."
-msgstr "פתח קובץ addon.xml ובחר בנתיב מקור (source)."
-
-msgctxt "#53
-msgid "Enter the %s folder."
-msgstr "כנס לתיקייה %s"
-
-msgctxt "#54
-msgid "Click the + button (Create new file here)"
-msgstr "בחר בכפתור + (Create new file here)"
-
-msgctxt "#55
-msgid "Paste your configuration txt file in the large white box"
-msgstr "הדבק את הנתונים בקובץ הכפתור שלך בחלון הלבן הגדול"
-
-msgctxt "#56
-msgid "Click the %s button"
-msgstr "לחץ על הכפתור %s"
-
-msgctxt "#57
-msgid "One"
-msgstr "אחת"
-
-msgctxt "#58
-msgid "Saved Succesfully!"
-msgstr "נשמרו בהצלחה!"
-
-msgctxt "#59
-msgid "Saved Succesfully!"
-msgstr "נשמר בהצלחה!"
-
-msgctxt "#60
-msgid "Your input is empty!"
-msgstr "הכנסת נתון ריק!"
-
-msgctxt "#61
-msgid "Choose this option to play contents in sequence"
-msgstr "בחר באפשרות זו בכדי לנגן תכנים ברצף!"
-
+#TEMP
 msgctxt "#62
 msgid "Note: Random play isn't enabled!"
 msgstr "לתשומת לבך: האפשרות לניגון אקראי אינה מופעלת!"
 
-msgctxt "#63
-msgid "Join our group in Facebook!"
-msgstr "הצטרף לקבוצה שלנו בפייסבוק!"
-
-msgctxt "#64
-msgid "National Geographic"
-msgstr "נשיונל גאוגרפיק"
-
-msgctxt "#65
-msgid "English League"
-msgstr "ליגה אנגלית"
-
-msgctxt "#66
-msgid "Fix specific default buttons"
-msgstr "תיקון כפתורי ברירת מחדל ספציפיים"
-
-msgctxt "#67
-msgid "This amendment contributes to the full compatibility of your system"
-msgstr "תיקון זה תורם לתאימות מלאה של המערכת שלך"
-
-msgctxt "#68
-msgid "Spanish League"
-msgstr "ליגה ספרדית"
-
-msgctxt "#69
-msgid "Download Location"
-msgstr "מיקום הורדה"
-
-msgctxt "#70
-msgid "Download icons & fanart"
-msgstr "הורד סמלים ופאנארט"
-
-msgctxt "#71
-msgid "Choose this option to download varied kodi's media from Orna's collection"
-msgstr "בחר באפשרות זו בכדי להוריד מגוון רב של מדיה לקודי מהאוסף האדיר של אורנה"
-
-msgctxt "#72
-msgid "Enable secondary fanart for general use.[CR]Not related to movies/tvshows/home views."
-msgstr "הפעל פאנארט משני בשימוש כללי.[CR]לא קשור לסרטים/סדרות/תצוגת בית."
-
+#TEMP
 msgctxt "#77
 msgid "By"
 msgstr "לפי"
 
-msgctxt "#78
-msgid "Activate this option if you like to force your own system settings.[CR]If you choose NO, the system will overwrite most of the settings you change[CR].If it's clean installation or you're not an advance user, it's recommende that you Choose NO!"
-msgstr "הפעל אפשרות זאת אם ברצונך לכפות הגדרות מערכת משלך.[CR]אם תבחר באפשרות לא, המערכת תדרוס את רוב ההגדרות שתבצע.[CR]אם מדובר בהתקנה נקיה או משתמש לא מנוסה, מומלץ מאוד לא להפעיל אפשרות זו!"
-
+#TEMP
 msgctxt "#79
 msgid "Button Action"
 msgstr "פעולת כפתור"
 
+#TEMP
 msgctxt "#80
 msgid "Button"
 msgstr "כפתור"
 
+#TEMP
 msgctxt "#81
 msgid "Welcome"
 msgstr "ברוך הבא"
 
+#TEMP
 msgctxt "#82
 msgid "Choose a video file to be play on startup.[CR]Note: This feature trigger on AFK only."
 msgstr "בחר קובץ וידאו אשר יתנגן עם פתיחת המכשיר.[CR]הערה: פעולה זו אינה חלה במקרים בהם המשתמש נוגע במקשים."
 
+#TEMP
 msgctxt "#83
 msgid "Play video in a full screen."
 msgstr "נגן וידאו במסך מלא."
 
+#TEMP
 msgctxt "#86
 msgid "New %s Button.."
 msgstr "כפתור %s חדש.."
 
+#TEMP
 msgctxt "#87
 msgid "Choose this option to create a smart playlist of your own."
 msgstr "בחר באפשרות זאת בכדי ליצור רשימות השמעה חכמות משלך."
 
+#TEMP
 msgctxt "#88
 msgid "[CR][CR]You may also use the context menu button in order to save,load or reset your entire settings."
 msgstr "[CR][CR]באפשרותך להשתמש בכפתור תפריט בכדי לשמור, לטעון או לאפס את כלל הכפתורים האישיים בחלון זה."
 
+#TEMP
 msgctxt "#89
 msgid "[CR]Note: You may create unlimited number of links in a single playlist!"
 msgstr "[CR]לידיעתך: ניתן ליצור מספר בלתי מוגבל של קישורים ברשימת השמעה בודדת!"
-
-msgctxt "#90
-msgid "URL Error occured.[CR]You should remove the URL and Add new one."
-msgstr "נמצאה שגיאת קישור בכפתור זה.[CR]רצוי להסיר את הקישור ולהוסיף חדש."
-
-msgctxt "#91
-msgid "Otherwise you may add additionals links and remove the other one afterwards."
-msgstr "לחלופין הוסף קישורים נוספים ומחק את האחרון לאחר מכן."
-
-msgctxt "#92
-msgid "Warning: Choose YES to remove your button"
-msgstr "אזהרה: בחירה באפשרות כן תסיר את הכפתור שלך."
-
-msgctxt "#93
-msgid "Duplicated URL found!"
-msgstr "נמצאה כפילות בקישור זה!"
-
-msgctxt "#95
-msgid "Use the %s button."
-msgstr "השתמש בכפתור %s."
-
-msgctxt "#96
-msgid "Share %s buttons"
-msgstr "שיתוף כפתורי %s"
-
-msgctxt "#97
-msgid "Locate the saved file at the following path:"
-msgstr "אתר את קובץ השמירה בנתיב הבא:"
-
-msgctxt "#98
-msgid "Name your file in that pattern: Addon_SavedButton1.txt (The number should set +1 then the current)"
-msgstr "בשם הקובץ רשום: Addon_SavedButton1.txt[CR] (המספר צריך להיות גדול באחד מהקיים ברשימה)"
-
-msgctxt "#99
-msgid "Choose YES to learn how to share Your button"
-msgstr "בחר כן אם ברצונך ללמוד איך לשתף כפתור שלך"
 
 #Widget
 msgctxt "#32001"
@@ -563,8 +300,8 @@ msgid "Choose YES to continue"
 msgstr "בחר "כן" להמשך"
 
 msgctxt "#32066
-msgid ""
-msgstr ""
+msgid "configure TV remote"
+msgstr "הגדרת שלט טלוויזיה"
 
 msgctxt "#32067
 msgid ""
@@ -1927,6 +1664,216 @@ msgstr "הורדה פעילה ברקע"
 msgctxt "#32407
 msgid "No support for this OS"
 msgstr "אין תמיכה במערכת הפעלה זו"
+
+msgctxt "#32408
+msgid "No TV Mode support for this content!"
+msgstr "אין תמיכה במצב טלוויזיה לתוכן זה!"
+
+msgctxt "#32409
+msgid "Play it as normal instead"
+msgstr "יש לבצע ניגון רגיל"
+
+msgctxt "#32410
+msgid "Yesterday"
+msgstr "אתמול"
+
+msgctxt "#32411
+msgid "This Week"
+msgstr "השבוע"
+
+msgctxt "#32412
+msgid "Activate TV Mode?"
+msgstr "הפעל מצב טלוויזיה?"
+
+msgctxt "#32413
+msgid "Choose this option to play contents at random and in sequence!"
+msgstr "בחר באפשרות זו בכדי לנגן תכנים באקראי וברצף!"
+
+msgctxt "#32414
+msgid "Processing"
+msgstr "בתהליך"
+
+msgctxt "#32415
+msgid "No changes were made"
+msgstr "לא בוצעו שינויים"
+
+msgctxt "#32416
+msgid "Search %s by name"
+msgstr "חפש %s לפי שם"
+
+msgctxt "#32417
+msgid "Show TV Mode dialog"
+msgstr "הצג דיאלוג מצב טלוויזיה"
+
+msgctxt "#32418
+msgid "Allow Random TV Mode"
+msgstr "אפשר מצב טלוויזיה אקראי"
+
+msgctxt "#32419
+msgid "ChangLog will appear once on every Kodi session[CR] (If recent update has occured)."
+msgstr "עדכונים אחרונים יופיעו פעם אחת בכל הפעלה של הקודי [CR](אם ההרחבה עודכנה לאחרונה)."
+
+msgctxt "#32420
+msgid "Total days for displaying Recent Updates"
+msgstr "מספר ימים להצגת עדכונים אחרונים"
+
+msgctxt "#32421
+msgid "Update Succesfully!"
+msgstr "עודכן בהצלחה!"
+
+msgctxt "#32422
+msgid "Allow Backgrounds"
+msgstr "אפשר רקעים"
+
+msgctxt "#32423
+msgid "Choose an option from the list"
+msgstr "בחר אפשרות מהרשימה"
+
+msgctxt "#32424
+msgid "Add Description"
+msgstr "הוסף תאור"
+
+msgctxt "#32425
+msgid "Edit Description"
+msgstr "ערוך תאור"
+
+msgctxt "#32426
+msgid "Add Fanart"
+msgstr "הוסף פאנארט"
+
+msgctxt "#32427
+msgid "Remove Fanart"
+msgstr "הסר פאנארט"
+
+msgctxt "#32428
+msgid "Add Thumb"
+msgstr "הוסף תמונה"
+
+msgctxt "#32429
+msgid "Remove Thumb"
+msgstr "הסר תמונה"
+
+msgctxt "#32430
+msgid "Edit URL"
+msgstr "ערוך קישור"
+
+msgctxt "#32431
+msgid "Remove URL"
+msgstr "הסר קישור"
+
+msgctxt "#32432
+msgid "Add URL"
+msgstr "הוסף קישור"
+
+msgctxt "#32433
+msgid "Rename Button"
+msgstr "שנה שם כפתור"
+
+msgctxt "#32434
+msgid "View URL"
+msgstr "עיין בקישור"
+
+msgctxt "#32435
+msgid "Removed Succesfully!"
+msgstr "הוסר בהצלחה!"
+
+msgctxt "#32436
+msgid "URL"
+msgstr "קישור"
+
+msgctxt "#32437
+msgid "Button Name"
+msgstr "שם כפתור"
+
+msgctxt "#32438
+msgid "New %s"
+msgstr "%s חדש"
+
+msgctxt "#32439
+msgid "New %s"
+msgstr "%s חדשה"
+
+msgctxt "#32440
+msgid "Added Succesfully!"
+msgstr "נוסף בהצלחה!"
+
+msgctxt "#32441
+msgid "Added Succesfully!"
+msgstr "נוספה בהצלחה!"
+
+msgctxt "#32442
+msgid "Load"
+msgstr "טעינה"
+
+msgctxt "#32443
+msgid "One"
+msgstr "אחת"
+
+msgctxt "#32444
+msgid "Saved Succesfully!"
+msgstr "נשמרו בהצלחה!"
+
+msgctxt "#32445
+msgid "Note: Random play isn't enabled!"
+msgstr "לתשומת לבך: האפשרות לניגון אקראי אינה מופעלת!"
+
+msgctxt "#32446
+msgid "Your input is empty!"
+msgstr "הכנסת נתון ריק!"
+
+msgctxt "#32447
+msgid "Choose this option to play contents in sequence"
+msgstr "בחר באפשרות זו בכדי לנגן תכנים ברצף!"
+
+msgctxt "#32448
+msgid "Button Action"
+msgstr "פעולת כפתור"
+
+msgctxt "#32449
+msgid "Would you like to try again?"
+msgstr "האם ברצונך לנסות שוב?"
+
+msgctxt "#32450
+msgid "New %s Button.."
+msgstr "כפתור %s חדש.."
+
+msgctxt "#32451
+msgid "Choose this option to create a smart playlist of your own."
+msgstr "בחר באפשרות זאת בכדי ליצור רשימות השמעה חכמות משלך."
+
+msgctxt "#32452
+msgid "[CR][CR]You may also use the context menu button in order to save,load or reset your entire settings."
+msgstr "[CR][CR]באפשרותך להשתמש בכפתור תפריט בכדי לשמור, לטעון או לאפס את כלל הכפתורים האישיים בחלון זה."
+
+msgctxt "#32453
+msgid "[CR]Note: You may create unlimited number of links in a single playlist!"
+msgstr "[CR]לידיעתך: ניתן ליצור מספר בלתי מוגבל של קישורים ברשימת השמעה בודדת!"
+
+msgctxt "#32454
+msgid "URL Error occured.[CR]You should remove the URL and Add new one."
+msgstr "נמצאה שגיאת קישור בכפתור זה.[CR]רצוי להסיר את הקישור ולהוסיף חדש."
+
+msgctxt "#32455
+msgid "Otherwise you may add additionals links and remove the other one afterwards."
+msgstr "לחלופין הוסף קישורים נוספים ומחק את האחרון לאחר מכן."
+
+msgctxt "#32456
+msgid "Warning: Choose YES to remove your button"
+msgstr "אזהרה: בחירה באפשרות כן תסיר את הכפתור שלך."
+
+msgctxt "#32457
+msgid "Duplicated URL found!"
+msgstr "נמצאה כפילות בקישור זה!"
+
+msgctxt "#32458
+msgid "Choose YES to learn how to share Your button"
+msgstr "בחר כן אם ברצונך ללמוד איך לשתף כפתור שלך"
+
+msgctxt "#32459
+msgid "Share %s buttons"
+msgstr "שיתוף כפתורי %s"
+
+
 
 #Smart Playlist
 

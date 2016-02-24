@@ -209,7 +209,7 @@
 	  </item>
 	  
 	  <item id="203" description="צללית (כפתור)">
-		<label>$LOCALIZE[31851] $ADDON[script.featherence.service 80]</label>
+		<label>$LOCALIZE[31851] $LOCALIZE[31420]</label>
 		<label2>$VAR[203label2]</label2>
 		<thumb>buttons/effects/shadow.png</thumb>
 		<property name="rinfo">$LOCALIZE[31833]</property>
@@ -218,7 +218,7 @@
 	  </item>
 	  
 	  <item id="204" description="שקופית (כפתור)">
-		<label>$LOCALIZE[31850] $ADDON[script.featherence.service 80]</label>
+		<label>$LOCALIZE[31850] $LOCALIZE[31420]</label>
 		<label2>$VAR[204label2]</label2>
 		<thumb>buttons/effects/gardient.png</thumb>
 		<property name="rinfo">$LOCALIZE[31834]</property>
@@ -227,7 +227,7 @@
 	  </item>
 	  
 	  <item id="205" description="שפוע Bevel (כפתור)">
-		<label>$LOCALIZE[31823] $ADDON[script.featherence.service 80]</label>
+		<label>$LOCALIZE[31823] $LOCALIZE[31420]</label>
 		<label2>$VAR[205label2]</label2>
 		<thumb>buttons/effects/bevel.png</thumb>
 		<property name="rinfo"></property>
@@ -235,7 +235,7 @@
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>
 	  <item id="206" description="מסגרת Stroke (כפתור)">
-		<label>$LOCALIZE[31824] $ADDON[script.featherence.service 80]</label>
+		<label>$LOCALIZE[31824] $LOCALIZE[31420]</label>
 		<label2>$VAR[206label2]</label2>
 		<thumb>buttons/effects/stroke.png</thumb>
 		<property name="rinfo"></property>
@@ -1230,15 +1230,14 @@
 		<label2>$VAR[19label2]</label2>
 		<thumb>icons/music.png</thumb>
 		<property name="rinfo">$LOCALIZE[31816]</property>
-		<onclick condition="Skin.String(StartUpMusic)">Skin.SetString(StartUpMusic,)</onclick>
-		<onclick condition="!Skin.String(StartUpMusic)">Skin.SetFile(StartUpMusic,,special://userdata/library/music/)</onclick>
+		<onclick>RunScript(script.featherence.service,,?mode=22&amp;value=$LOCALIZE[2] $LOCALIZE[19107] $LOCALIZE[31856]+&amp;value2=Choose File for single audio or Path for multi audios&amp;value3=File&amp;value4=Path&amp;value5=StartUpMusic&amp;value6=music)</onclick>
 		<visible>Container(100).Hasfocus(1) + !Skin.HasSeting(StartUpMusic)</visible>
 	  </item>
 	  <item id="20" description="וידאו בהפעלה">
 		<label>$LOCALIZE[10025] $LOCALIZE[19107] $LOCALIZE[31856]</label>
 		<label2>$VAR[20label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/videos.png</thumb>
-		<property name="rinfo">$ADDON[script.featherence.service 82]</property>
+		<property name="rinfo">$LOCALIZE[31422]</property>
 		<onclick condition="Skin.String(StartUpVideo)">Skin.SetString(StartUpVideo,)</onclick>
 		<onclick condition="!Skin.String(StartUpVideo)">Skin.SetFile(StartUpVideo,,special://userdata/library/videos/)</onclick>
 		<onclick>Skin.SetString(StartUpVideo)</onclick>
@@ -1248,7 +1247,7 @@
 		<label>$LOCALIZE[10025] $LOCALIZE[19107] $LOCALIZE[31856] - $LOCALIZE[244]</label>
 		<label2>$VAR[21label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/fullscreen.png</thumb>
-		<property name="rinfo">$ADDON[script.featherence.service 83]</property>
+		<property name="rinfo">$LOCALIZE[31423]</property>
 		<onclick>Skin.ToggleSetting(StartUpVideoFullScreen)</onclick>
 		<visible>Container(100).Hasfocus(1) + Skin.String(StartUpVideo)</visible>
 	  </item>
@@ -1275,8 +1274,8 @@
 		<label>$LOCALIZE[10005] $LOCALIZE[19107] $LOCALIZE[13317] $LOCALIZE[1397] $LOCALIZE[360]</label>
 		<label2>$VAR[36label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/music.png</thumb>
-		<property name="rinfo"></property>
-		<onclick>RunScript(script.featherence.service,,?mode=22)</onclick>
+		<property name="rinfo">$INFO[Skin.String(screensavermusic)]</property>
+		<onclick>RunScript(script.featherence.service,,?mode=22&amp;value=$LOCALIZE[10005] $LOCALIZE[19107] $LOCALIZE[13317] $LOCALIZE[1397] $LOCALIZE[360]&amp;value2=Choose File for single audio or Path for multi audios&amp;value3=File&amp;value4=Path&amp;value5=screensavermusic&amp;value6=music)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
 		<visible></visible>
 	  </item>
