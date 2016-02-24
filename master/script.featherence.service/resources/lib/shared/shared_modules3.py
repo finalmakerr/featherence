@@ -1542,7 +1542,7 @@ def setCustomFanart(addon, mode, admin, name, printpoint):
 		yeslabel=localize(20441)
 	
 	if x != "":
-		returned = dialogyesno(str(name), addonString_servicefeatherence(31).encode('utf-8'), nolabel=nolabel, yeslabel=yeslabel)
+		returned = dialogyesno(str(name), addonString_servicefeatherence(32423).encode('utf-8'), nolabel=nolabel, yeslabel=yeslabel)
 		if returned == 'ok':
 			returned2, value = getRandom(0, min=0, max=100, percent=40)
 			if returned2 == 'ok': notification('O_o???','Copy & Paste an image URL','',4000)
@@ -2650,7 +2650,7 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 			elif x in Custom_Playlist_ID_L and x != "":
 				DuplicatedL.append(x)
 				if mode == 20 or mode == 21:
-					check = dialogyesno(addonString_servicefeatherence(93).encode('utf-8'), localize(19194)) # Duplicated URL found!, Continue?
+					check = dialogyesno(addonString_servicefeatherence(32457).encode('utf-8'), localize(19194)) # Duplicated URL found!, Continue?
 					if check == "ok": pass				
 					else: notification_common("9") ; printpoint = printpoint + "8"
 					break
@@ -2735,7 +2735,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		Custom_Playlist_Description = "Custom_Playlist" + num + "_Description"
 		Custom_Playlist_Fanart = "Custom_Playlist" + num + "_Fanart"
 		'''---------------------------'''
-	returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+	returned, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
 	
 	if returned == -1: printpoint = printpoint + "9"
 	elif returned == 0: printpoint = printpoint + "8"
@@ -2753,9 +2753,9 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			list2.append('New')
 			list2_.append('New')
 		elif returned == 3:
-			check = dialogyesno(addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8'), addonString_servicefeatherence(99).encode('utf-8')) #Share My button, Choose YES to learn how to share Your Music button
+			check = dialogyesno(addonString_servicefeatherence(32459).encode('utf-8') % addonString(100).encode('utf-8'), addonString_servicefeatherence(32458).encode('utf-8')) #Share My button, Choose YES to learn how to share Your Music button
 			if check == 'ok':
-				header = addonString_servicefeatherence(96).encode('utf-8') % addonString(100).encode('utf-8')
+				header = addonString_servicefeatherence(32459).encode('utf-8') % addonString(100).encode('utf-8')
 				msg1 = localize(190) + space + localize(592) ; msg1.decode('utf-8').encode('utf-8')
 				msg2 = os.path.join(addondata_path, addonID) ; msg2 = msg2.decode('utf-8').encode('utf-8')
 				message = "1. Save a button using the [B]Save One[/B] button.[CR]2. Locate the saved zip file in:[CR][B]special://userdata/addon_data/"+addonID+"/[/B][CR]3. Share the file with your friends."
@@ -2781,7 +2781,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 							#print extra 
 							'''---------------------------'''
 			
-			returned2, value2 = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list2_,0)
+			returned2, value2 = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list2_,0)
 			
 			if returned2 == -1: printpoint = printpoint + "9"
 			elif returned2 == 0: printpoint = printpoint + "8"
@@ -2970,7 +2970,7 @@ def AddCustom(mode, name, url, iconimage, desc, num, viewtype, fanart):
 				x2 = Custom_Playlist_NameT.get(x)
 				x2 = to_utf8(x2)
 				list.append(x2) #NAME
-		returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+		returned, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
 		
 		if returned == -1: pass
 		elif returned == 0: pass
@@ -3086,18 +3086,18 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 	
 	if printpoint != "9":
 		list = ['-> (Exit)']
-		list.append(addonString_servicefeatherence(38).encode('utf-8')) #Edit URL
+		list.append(addonString_servicefeatherence(32430).encode('utf-8')) #Edit URL
 		list.append(addonString_servicefeatherence(41).encode('utf-8')) #Rename Button
-		if thumb == "": list.append(addonString_servicefeatherence(36).encode('utf-8')) #Add Thumb
-		else: list.append(addonString_servicefeatherence(37).encode('utf-8')) #Remove Thumb
-		if desc == "": list.append(addonString_servicefeatherence(32).encode('utf-8')) #Add Description
-		else: list.append(addonString_servicefeatherence(33).encode('utf-8')) #Edit Description
+		if thumb == "": list.append(addonString_servicefeatherence(32428).encode('utf-8')) #Add Thumb
+		else: list.append(addonString_servicefeatherence(32429).encode('utf-8')) #Remove Thumb
+		if desc == "": list.append(addonString_servicefeatherence(32424).encode('utf-8')) #Add Description
+		else: list.append(addonString_servicefeatherence(32425).encode('utf-8')) #Edit Description
 		fanart = cleanfanartCustom(getsetting(Custom_Playlist_Fanart))
-		if fanart == "": list.append(addonString_servicefeatherence(34).encode('utf-8')) #Add Fanart
-		else: list.append(addonString_servicefeatherence(35).encode('utf-8')) #Remove Fanart
+		if fanart == "": list.append(addonString_servicefeatherence(32426).encode('utf-8')) #Add Fanart
+		else: list.append(addonString_servicefeatherence(32427).encode('utf-8')) #Remove Fanart
 		list.append(localize(13336)) #Remove Button
 
-		returned, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+		returned, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
 			
 		if returned == -1: printpoint = printpoint + "9"
 		elif returned == 0: printpoint = printpoint + "8"
@@ -3118,9 +3118,9 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		list = ['-> (Exit)']
 		list.append(addonString_servicefeatherence(42).encode('utf-8')) #View URL
 		list.append(addonString_servicefeatherence(40).encode('utf-8')) #Add URL
-		list.append(addonString_servicefeatherence(39).encode('utf-8')) #Remove URL
+		list.append(addonString_servicefeatherence(32431).encode('utf-8')) #Remove URL
 		
-		returned2, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+		returned2, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
 			
 		if returned2 == -1: printpoint = printpoint + "9"
 		elif returned2 == 0: printpoint = printpoint + "8"
@@ -3155,7 +3155,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				'''---------------------------'''
 			header = addonString_servicefeatherence(42).encode('utf-8') + space2 + str(name)
 			if message2 != "": message = message2 + '[CR][CR]' + addonString_servicefeatherence(89).encode('utf-8')
-			else: message = addonString_servicefeatherence(90).encode('utf-8') #URL Error occured.
+			else: message = addonString_servicefeatherence(32454).encode('utf-8') #URL Error occured.
 			diaogtextviewer(header,message)
 			'''---------------------------'''
 			
@@ -3170,7 +3170,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			list3.append('YouTube Channel ID') #
 			list3.append('YouTube Search') #
 			
-			returned3, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list3,0)
+			returned3, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list3,0)
 			if returned3 == -1: printpoint = printpoint + "9"
 			elif returned3 == 0: printpoint = printpoint + "8"
 			else:
@@ -3200,7 +3200,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				else:
 					list.append(x)
 
-			returned2, value = dialogselect(addonString_servicefeatherence(31).encode('utf-8'),list,0)
+			returned2, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
 				
 			if returned2 == -1: printpoint = printpoint + "9"
 			elif returned2 == 0: printpoint = printpoint + "8"
@@ -3210,7 +3210,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				
 				if i == 1:
 					'''Warning 1 URL found!'''
-					check = dialogyesno(localize(13336), addonString_servicefeatherence(92).encode('utf-8') + '[CR]' + addonString_servicefeatherence(91).encode('utf-8'))
+					check = dialogyesno(localize(13336), addonString_servicefeatherence(32456).encode('utf-8') + '[CR]' + addonString_servicefeatherence(32455).encode('utf-8'))
 					if check == "ok":
 						'''Remove Button'''
 						printpoint = printpoint + "F"
@@ -3236,7 +3236,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		------------------------------'''
 		New_Name = dialogkeyboard(name, addonString_servicefeatherence(41).encode('utf-8'), 0, "", Custom_Playlist_Name, "0")
 		if New_Name != "skip" and New_Name != name:
-			notification(addonString_servicefeatherence(45).encode('utf-8') + space + addonString_servicefeatherence(30).encode('utf-8'), str(name), "", 4000) #Button Name Update Succesfully!
+			notification(addonString_servicefeatherence(45).encode('utf-8') + space + addonString_servicefeatherence(32421).encode('utf-8'), str(name), "", 4000) #Button Name Update Succesfully!
 			'''---------------------------'''
 		
 	elif "C" in printpoint:
@@ -3245,7 +3245,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			---Add-Thumb---------------------
 			------------------------------'''
 			New_Thumb = ""
-			returned = dialogyesno(str(name), addonString_servicefeatherence(31).encode('utf-8'), nolabel=localize(20017), yeslabel=localize(20015))
+			returned = dialogyesno(str(name), addonString_servicefeatherence(32423).encode('utf-8'), nolabel=localize(20017), yeslabel=localize(20015))
 			if returned == 'ok':
 				'''remote'''
 				x = localize(20015) #Remote thumb
@@ -3274,7 +3274,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			
 			if New_Thumb != "":
 				setsetting(Custom_Playlist_Thumb, New_Thumb)
-				notification(str(x) + space + addonString_servicefeatherence(30).encode('utf-8'), str(name), "", 4000) #Thumb* Update Succesfully!
+				notification(str(x) + space + addonString_servicefeatherence(32421).encode('utf-8'), str(name), "", 4000) #Thumb* Update Succesfully!
 				'''---------------------------'''
 		else:
 			'''------------------------------
@@ -3296,13 +3296,13 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		elif int(value) <= 30: notification("Tip Color:", "[COLOR=X]text[/COLOR]", "", 4000)
 		elif int(value) <= 40: notification("Tip Italic:", "[I]text[/I]", "", 4000)
 		
-		if Custom_Playlist_Description == "": extra1 = addonString_servicefeatherence(32).encode('utf-8') #Add Description
-		else: extra1 = addonString_servicefeatherence(33).encode('utf-8') #Edit Description
+		if Custom_Playlist_Description == "": extra1 = addonString_servicefeatherence(32424).encode('utf-8') #Add Description
+		else: extra1 = addonString_servicefeatherence(32425).encode('utf-8') #Edit Description
 		
 		returned = dialogkeyboard(desc, extra1, 0, "", Custom_Playlist_Description, "0")
 		if returned != "skip":
 			if returned == "": extra2 = addonString_servicefeatherence(43).encode('utf-8') #Removed Succesfully!
-			else: extra2 = addonString_servicefeatherence(30).encode('utf-8') #Update Succesfully!
+			else: extra2 = addonString_servicefeatherence(32421).encode('utf-8') #Update Succesfully!
 			if returned != desc: notification(localize(21821) + space + extra2, str(name), "", 4000) #Description Update/Removed Succesfully!
 			'''---------------------------'''
 	
@@ -3313,7 +3313,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			---Add-Fanart----------------
 			------------------------------'''
 			New_Fanart = ""
-			returned = dialogyesno(str(name), addonString_servicefeatherence(31).encode('utf-8'), nolabel=localize(20438), yeslabel=localize(20441))
+			returned = dialogyesno(str(name), addonString_servicefeatherence(32423).encode('utf-8'), nolabel=localize(20438), yeslabel=localize(20441))
 			if returned == 'ok':
 				'''remote'''
 				x = localize(20441) #Remote fanart
@@ -3343,7 +3343,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			if New_Fanart != "":
 				setsetting(Custom_Playlist_Fanart, New_Fanart)
 				 
-				notification(str(x) + space + addonString_servicefeatherence(30).encode('utf-8'), str(New_Fanart), "", 2000) #Fanart* Update Succesfully!
+				notification(str(x) + space + addonString_servicefeatherence(32421).encode('utf-8'), str(New_Fanart), "", 2000) #Fanart* Update Succesfully!
 				xbmc.sleep(2000)
 				if Fanart_Enable != "true": notification(addonString_servicefeatherence(28).encode('utf-8') + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Allow Backgrounds disabled, ->Add-on settings
 				elif Fanart_EnableCustom != "true": notification(localize(21389) + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Enable custom background disabled, ->Add-on settings

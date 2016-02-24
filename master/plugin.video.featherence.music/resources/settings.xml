@@ -3,10 +3,10 @@
 	<category label="$LOCALIZE[128]" description="כללי">
 		<setting type="lsep" label=""/>
 		<setting type="lsep" label="Please note: AutoView is currently support only Featherence Skin!"/>
-		<setting id="General_AutoView" type="bool" default="true" label="$ADDON[script.featherence.service 20]" visible="true"/>
+		<setting id="General_AutoView" type="bool" default="true" label="$LOCALIZE[98]" visible="true"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32413]"/>
-		<setting id="General_TVModeDialog" type="bool" default="true" label="$ADDON[script.featherence.service 16]" visible="true"/>
-		<setting id="General_TVModeShuffle" type="bool" default="true" label="$ADDON[script.featherence.service 17]" visible="eq(-1,true)"/>
+		<setting id="General_TVModeDialog" type="bool" default="true" label="$ADDON[script.featherence.service 32417]" visible="true"/>
+		<setting id="General_TVModeShuffle" type="bool" default="true" label="$ADDON[script.featherence.service 32418]" visible="eq(-1,true)"/>
 		<setting id="General_TVModeQuality" type="enum" default="true" label="$ADDON[script.featherence.service 32050]" values="ALL|HD|SD" visible="eq(-2,true) + false"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 62]" visible="eq(-1,false)"/>
 		<setting type="lsep" label=""/>
@@ -14,9 +14,9 @@
 		<setting id="Search_Limit" type="slider" default="40" label="$ADDON[script.featherence.service 32047]" range="0,40" option="int" enable="eq(-1,true)" subsetting="true" visible="true"/>
 		<setting type="lsep" label=""/>
 		<setting id="Custom_10001" type="bool" default="true" label="10001" visible="true"/>
-		<setting id="Addon_ShowLog" type="bool" default="true" label="$ADDON[script.featherence.service 24]" visible="true"/>
-		<setting type="lsep" label="$ADDON[script.featherence.service 25]" visible="eq(-1,true)"/>
-		<setting id="Addon_ShowLog2" type="slider" default="1" label="$ADDON[script.featherence.service 26]" range="0,1,7" visible="eq(-2,true)" option="int" subsetting="true"/>
+		<setting id="Addon_ShowLog" type="bool" default="true" label="$LOCALIZE[33073]" visible="true"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32419]" visible="eq(-1,true)"/>
+		<setting id="Addon_ShowLog2" type="slider" default="1" label="$ADDON[script.featherence.service 32420]" range="0,1,7" visible="eq(-2,true)" option="int" subsetting="true"/>
 		<setting id="Addon_Update" type="text" default="false" label="Addon_Update" visible="false"/>
 		<setting id="Addon_UpdateDate" type="text" default="" label="Addon_UpdateDate" visible="false"/>
 		<setting id="Addon_UpdateLog" type="bool" default="false" label="Addon_UpdateLog" visible="false"/>
