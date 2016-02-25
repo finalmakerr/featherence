@@ -114,8 +114,6 @@
 		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(background2)</enable>
 		  <selected>!Skin.HasSetting(FullFanartTopVideoInformation)</selected>
 		  <onclick>Skin.ToggleSetting(FullFanartTopVideoInformation)</onclick>
-		  <!--<onclick>ActivateWindow(Home.xml)</onclick>
-		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>-->
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 		<control type="radiobutton" id="105" description="פאנארט מסך מלא - ZOOM OUT">
@@ -127,8 +125,6 @@
 		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(background2)</enable>
 		  <selected>Skin.HasSetting(FullFanartZoomOut)</selected>
 		  <onclick>Skin.ToggleSetting(FullFanartZoomOut)</onclick>
-		  <!--<onclick>ActivateWindow(Home.xml)</onclick>
-		  <onclick>AlarmClock(104,ReplaceWindow(videolibrary),00:00,silent)</onclick>-->
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 		<control type="button" id="106" description="שקיפות עטיפות">
@@ -233,7 +229,6 @@
 		  <onclick condition="Skin.String(Background2Overlay, 30)">Skin.SetString(Background2Overlay, 20)</onclick>
 		  <onclick condition="Skin.String(Background2Overlay, 20)">Skin.SetString(Background2Overlay, 10)</onclick>
 		  <onclick condition="Skin.String(Background2Overlay, 10)">Skin.SetString(Background2Overlay, )</onclick>
-		  <!--<onclick>AlarmClock(update,Container.Update($INFO[Container.FolderPath],replace),0,silent)</onclick>-->
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 		<control type="radiobutton" id="139" description="פאנארט תמיד">
@@ -885,10 +880,6 @@
 	  <enable>!Skin.HasSetting(background2)</enable>
 	  <onclick>Skin.ToggleSetting(FullFanartBackground2)</onclick>
 	  <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31013])</visible>
-	  <!--<onclick>ActivateWindow(Home.xml)</onclick>
-	  <onclick condition="Window.IsVisible(AddonBrowser.xml)">AlarmClock(138,ReplaceWindow(AddonBrowser.xml),00:00,silent)</onclick>
-	  <onclick condition="Window.IsVisible(MyPrograms.xml)">AlarmClock(138,ReplaceWindow(MyPrograms.xml),00:00,silent)</onclick>
-	  <onclick condition="Window.IsVisible(Home.xml)">AlarmClock(138,ReplaceWindow(Home.xml),00:00,silent)</onclick>-->
 	  <visible>false</visible>
 	</control>
   </include>

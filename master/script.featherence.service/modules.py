@@ -253,8 +253,7 @@ def ClearSubHisotry():
 	setProperty('DialogSubtitles2',"",type="home")
 	for i in range(1,11):
 		setProperty('DialogSubtitlesNA'+str(i),"",type="home")
-
-				
+			
 def setPlayerInfo(admin):
 	type = None
 	playertitle = xbmc.getInfoLabel('Player.Title')
@@ -341,7 +340,6 @@ def mode10(admin, name, printpoint):
 			'''refresh widget'''
 			xbmc.sleep(3000)
 			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23)')
-		
 
 def mode22(header, message, nolabel, yeslabel, skinstring, type='video'):
 	skinstring_ = xbmc.getInfoLabel('Skin.String('+skinstring+')')
@@ -647,7 +645,36 @@ def mode32(value, admin, name, printpoint):
 	elif value == '5':
 		ReloadSkin(admin,force=False)
 		#ReloadSkin(admin)
-	
+	elif value == '6':
+		custom1170W_ = xbmc.getCondVisibility('Window.IsVisible(Custom1170.xml)')
+		custom1173W_ = xbmc.getCondVisibility('Window.IsVisible(Custom1173.xml)')
+		if custom1170W_: xbmc.executebuiltin('Dialog.Close(1170)')
+		elif custom1173W_: xbmc.executebuiltin('Dialog.Close(1173)')
+		
+		xbmc.executebuiltin('Action(Close)')
+		xbmc.executebuiltin('ActivateWindow(1117)') ; xbmc.sleep(1000)
+		
+		
+		count = 0
+		property_buttonid = xbmc.getInfoLabel('Window(home).Property(Button.ID)') #DYNAMIC
+		property_buttonid_ = xbmc.getInfoLabel('Window(home).Property(Button.ID_)') #BASE
+		while count < 20 and property_buttonid == "" and property_buttonid_ == "" and not xbmc.abortRequested:
+			xbmc.sleep(50)
+			property_buttonid = xbmc.getInfoLabel('Window(home).Property(Button.ID)') #DYNAMIC
+			property_buttonid_ = xbmc.getInfoLabel('Window(home).Property(Button.ID_)') #BASE
+			count += 1
+		if count < 20:
+			xbmc.executebuiltin('ActivateWindow(1173)')
+			custom1173W = xbmc.getCondVisibility('Window.IsVisible(Custom1173.xml)')
+			while count < 20 and not custom1173W and not xbmc.abortRequested:
+				xbmc.sleep(50)
+				custom1173W = xbmc.getCondVisibility('Window.IsVisible(Custom1173.xml)')
+				count += 1
+			if custom1173W:
+				xbmc.executebuiltin('Action(Down)')
+		
+		setProperty('TEMP', '', type="home")
+		
 	elif value == '40':
 		addon = 'plugin.video.featherence.kids'
 		if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
@@ -1474,7 +1501,8 @@ def mode214(value, admin, name, printpoint):
 def mode215(value, admin, name, printpoint):
 	from variables2 import *
 	extra2 = "" ; id = ""
-				
+	exe = printlog(title="test", printpoint="", text="", level=0, option="")
+	
 	if value != "": notification_common("2")
 	
 	'''הגדרות'''
@@ -1590,7 +1618,7 @@ def mode215(value, admin, name, printpoint):
 	if value != "":
 		'''ראשי'''
 		x = '98' ; id = idT2.get(x)
-		if id != "" and id != None and 1 + 1 == 3:	
+		if id != "" and id != None and exe != "":
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(15016))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.program.featherence.emu,return)')

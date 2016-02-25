@@ -152,11 +152,7 @@
 		<onclick condition="Skin.String(MenuDesign,2)">Skin.SetString(MenuDesign,3)</onclick>
 		<onclick condition="Skin.String(MenuDesign,3)">Skin.SetString(MenuDesign,4)</onclick>
 		<onclick condition="Skin.String(MenuDesign,4)">Skin.SetString(MenuDesign,)</onclick>
-		<onclick>Close</onclick>
-		<onclick>Close</onclick>
-		
-		<onclick>ActivateWindow(1117)</onclick>
-		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
+		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>
 	  
@@ -171,11 +167,7 @@
 		<onclick condition="Skin.String(ButtonsDesign,2)">Skin.SetString(ButtonsDesign,3)</onclick>
 		<onclick condition="Skin.String(ButtonsDesign,3)">Skin.SetString(ButtonsDesign,4)</onclick>
 		<onclick condition="Skin.String(ButtonsDesign,4)">Skin.SetString(ButtonsDesign,)</onclick>
-		<onclick>Close</onclick>
-		<onclick>Close</onclick>
-		
-		<onclick>ActivateWindow(1117)</onclick>
-		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
+		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>
 	  
@@ -338,11 +330,7 @@
 		<onclick condition="Skin.String(SubMenuMarkOverlay, 40)">Skin.SetString(SubMenuMarkOverlay, 30)</onclick>
 		<onclick condition="Skin.String(SubMenuMarkOverlay, 30)">Skin.SetString(SubMenuMarkOverlay, 20)</onclick>
 		<onclick condition="Skin.String(SubMenuMarkOverlay, 20)">Skin.SetString(SubMenuMarkOverlay, )</onclick>
-		<onclick>Close</onclick>
-		<onclick>Close</onclick>
-		
-		<onclick>ActivateWindow(1117)</onclick>
-		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
+		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>
 	  
@@ -385,10 +373,7 @@
 		<onclick condition="Skin.String(BackgroundOverlay, 40)">Skin.SetString(BackgroundOverlay, 30)</onclick>
 		<onclick condition="Skin.String(BackgroundOverlay, 30)">Skin.SetString(BackgroundOverlay, 20)</onclick>
 		<onclick condition="Skin.String(BackgroundOverlay, 20)">Skin.SetString(BackgroundOverlay, )</onclick>
-		<onclick>Close</onclick>
-		<onclick>Close</onclick>
-		<onclick>ActivateWindow(1117)</onclick>
-		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
+		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(28)</visible>
 	  </item>
 	  
@@ -430,10 +415,7 @@
 		<onclick condition="Skin.String(TopMainBackgroundOverlay, 40)">Skin.SetString(TopMainBackgroundOverlay, 30)</onclick>
 		<onclick condition="Skin.String(TopMainBackgroundOverlay, 30)">Skin.SetString(TopMainBackgroundOverlay, 20)</onclick>
 		<onclick condition="Skin.String(TopMainBackgroundOverlay, 20)">Skin.SetString(TopMainBackgroundOverlay, )</onclick>
-		<onclick>Close</onclick>
-		<onclick>Close</onclick>
-		<onclick>ActivateWindow(1117)</onclick>
-		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
+		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(28)</visible>
 		<visible>Skin.HasSetting(HideTopMainBackground)</visible>
 	  </item>
@@ -489,10 +471,7 @@
 		<onclick condition="Skin.String(MainBackgroundOverlay, 40)">Skin.SetString(MainBackgroundOverlay, 30)</onclick>
 		<onclick condition="Skin.String(MainBackgroundOverlay, 30)">Skin.SetString(MainBackgroundOverlay, 20)</onclick>
 		<onclick condition="Skin.String(MainBackgroundOverlay, 20)">Skin.SetString(MainBackgroundOverlay, )</onclick>
-		<onclick>Close</onclick>
-		<onclick>Close</onclick>
-		<onclick>ActivateWindow(1117)</onclick>
-		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
+		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(28)</visible>
 		<visible>Skin.HasSetting(HideTopMainBackground)</visible>
 	  </item>
@@ -550,10 +529,7 @@
 		<onclick condition="Skin.String(MenuBackgroundOverlay, 40)">Skin.SetString(MenuBackgroundOverlay, 30)</onclick>
 		<onclick condition="Skin.String(MenuBackgroundOverlay, 30)">Skin.SetString(MenuBackgroundOverlay, 20)</onclick>
 		<onclick condition="Skin.String(MenuBackgroundOverlay, 20)">Skin.SetString(MenuBackgroundOverlay, )</onclick>
-		<onclick>Close</onclick>
-		<onclick>Close</onclick>
-		<onclick>ActivateWindow(1117)</onclick>
-		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
+		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(21)</visible>
 	  </item>
 	  <item id="272" description="צבע רקע תפריט">
@@ -658,10 +634,7 @@
 		<onclick condition="Skin.String(DialogBackgroundOverlay, 40)">Skin.SetString(DialogBackgroundOverlay, 30)</onclick>
 		<onclick condition="Skin.String(DialogBackgroundOverlay, 30)">Skin.SetString(DialogBackgroundOverlay, 20)</onclick>
 		<onclick condition="Skin.String(DialogBackgroundOverlay, 20)">Skin.SetString(DialogBackgroundOverlay, )</onclick>
-		<onclick>Close</onclick>
-		<onclick>Close</onclick>
-		<onclick>ActivateWindow(1117)</onclick>
-		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
+		<include>CustomizerExit</include>
 		<onclick condition="!Window.IsVisible(DialogKaiToast.xml)">RunScript(script.featherence.service,,?mode=32&amp;value=2)</onclick>
 		<visible>Container(100).Hasfocus(22)</visible>
 	  </item>
@@ -672,7 +645,7 @@
 		<property name="rinfo">$LOCALIZE[31844] $LOCALIZE[10100], $LOCALIZE[10101], $LOCALIZE[12000], $LOCALIZE[12002]..</property>
 		<onclick condition="!Window.IsVisible(DialogKaiToast.xml)">RunScript(script.featherence.service,,?mode=32&amp;value=2)</onclick>
 		<onclick>SetProperty(TEMP,MenuColor,home)</onclick>
-		<onclick>AlarmClock(menucolor,ActivateWindow(1170),00:01,silent)</onclick>
+		
 		<onclick condition="!Window.IsVisible(DialogKaiToast.xml)">RunScript(script.featherence.service,,?mode=32&amp;value=2)</onclick>
 		<visible>Container(100).Hasfocus(22)</visible>
 	  </item>
@@ -710,10 +683,7 @@
 		<onclick condition="Skin.String(TopInformationOverlay, 40)">Skin.SetString(TopInformationOverlay, 30)</onclick>
 		<onclick condition="Skin.String(TopInformationOverlay, 30)">Skin.SetString(TopInformationOverlay, 20)</onclick>
 		<onclick condition="Skin.String(TopInformationOverlay, 20)">Skin.SetString(TopInformationOverlay, )</onclick>
-		<onclick>Close</onclick>
-		<onclick>Close</onclick>
-		<onclick>ActivateWindow(1117)</onclick>
-		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
+		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(26)</visible>
 	  </item>
 	  <item id="322" description="צבע פס עליון">
@@ -743,10 +713,7 @@
 		<onclick condition="Skin.String(TopVideoInformationOverlay, 40)">Skin.SetString(TopVideoInformationOverlay, 30)</onclick>
 		<onclick condition="Skin.String(TopVideoInformationOverlay, 30)">Skin.SetString(TopVideoInformationOverlay, 20)</onclick>
 		<onclick condition="Skin.String(TopVideoInformationOverlay, 20)">Skin.SetString(TopVideoInformationOverlay, )</onclick>
-		<onclick>Close</onclick>
-		<onclick>Close</onclick>
-		<onclick>ActivateWindow(1117)</onclick>
-		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
+		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(26)</visible>
 	  </item>
 	  <item id="327" description="צבע פרטי וידאו">

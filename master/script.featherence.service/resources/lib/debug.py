@@ -14,6 +14,7 @@ class SendDebug:
 	if returned == 'skip': notification_common("3")
 	else:
 		emailprovider = regex_from_to(returned, '@', returned[-4:], excluding=False)
+		emailprovider = emailprovider.lower()
 		if emailprovider == "":
 			notification('Email is not valid!',"","",2000)
 		elif not emailprovider in Debug_EmailL:

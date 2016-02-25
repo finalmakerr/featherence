@@ -53,17 +53,19 @@ def sendMail(Debug_Email, Debug_Password, subject, text, *attachmentFilePaths):
 	TypeError = "" ; extra = "" ; gmailUser = "" ; count = 0
 	SMTP_SSL = False
 	#recipient = 'infohtpt@gmail.com'
-	#if 1 + 1 == 2:
-	try:
+	if 1 + 1 == 2:
+		#try:
 		dp = xbmcgui.DialogProgress()
 		dp.create(addonString(32095), addonString(10),"")
 		while count == 0 and not dp.iscanceled() and not xbmc.abortRequested:
-			if '@gmail.com' in Debug_Email: mailServer = smtplib.SMTP('smtp.gmail.com', 587) #, timeout=20
-			elif '@walla.com' in Debug_Email:
+			if '@gmail.com' in Debug_Email:
+				mailServer = smtplib.SMTP('smtp.gmail.com', 587) #, timeout=20
+			elif '@walla.com' in Debug_Email or '@walla.co.il' in Debug_Email:
 				mailServer = smtplib.SMTP_SSL('out.walla.co.il', 587)
 				SMTP_SSL = True
-			elif '@walla.co.il' in Debug_Email:
-				mailServer = smtplib.SMTP_SSL('out.walla.co.il', 587)
+			elif '@yahoo.com' in Debug_Email or '@yahoo.co.uk' in Debug_Email:
+				try: mailServer = smtplib.SMTP_SSL('smtp.mail.yahoo.com', 465)
+				except: mailServer = smtplib.SMTP_SSL('smtp.mail.yahoo.com', 587)
 				SMTP_SSL = True
 			else:
 				notification_common('27')
@@ -100,7 +102,7 @@ def sendMail(Debug_Email, Debug_Password, subject, text, *attachmentFilePaths):
 			notification(addonString(74483), localize(20186), "", 2000)
 			returned = 'ok'
 			'''---------------------------'''
-	#try: test = 'test'
+	try: test = 'test'
 	except Exception, TypeError:
 		try: mailServer.quit()
 		except: pass

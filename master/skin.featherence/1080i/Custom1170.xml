@@ -783,16 +783,9 @@
 				<posx>210</posx>
 				<width>270</width>
 				<include>ButtonC1</include>
-				<!--<font>Reg32</font>-->
-				<onclick>Notification(..,,1000)</onclick>
-				<onclick>AlarmClock(1,Notification(...,,1000),0,silent)</onclick>
-				<onclick>AlarmClock(2,Action(Close),00:01,silent)</onclick>
-				<onclick>AlarmClock(3,Action(Close),00:01,silent)</onclick>
-				<onclick>AlarmClock(4,ActivateWindow(1117),00:01,silent)</onclick>
+				<include>CustomizerExit</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(TEMP)],00FFFFFF)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(TEMP)].name,None)</onclick>
-				<onclick condition="Window.IsVisible(1173)">AlarmClock(5,ActivateWindow(1173),00:01,silent)</onclick>
-				<onclick>ClearProperty(TEMP,home)</onclick>
 				<label>$LOCALIZE[31838]</label>
 				<posy>5</posy>
 				<visible>!StringCompare(Window(home).Property(TEMP),IconFocusColor) + !StringCompare(Window(home).Property(TEMP),IconUnFocusColor) + !StringCompare(Window(home).Property(TEMP),MenuColor)</visible>

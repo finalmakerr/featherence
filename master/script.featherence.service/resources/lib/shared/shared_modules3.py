@@ -478,6 +478,8 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	
 	url2a = url2
 	url2 = url2.split(',')
+	try: test = General_TVModeShuffle
+	except: General_TVModeShuffle = 'true'
 	if General_TVModeShuffle == "true" and mode == 5: random.shuffle(url2) ; printpoint = printpoint + "0"
 	
 	if '&custom_se=' in url2a:

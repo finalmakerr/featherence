@@ -90,7 +90,7 @@ elif mode == 10:
 	name = "VideoPlayer demon"
 	mode10(admin, name, printpoint)
 	'''---------------------------'''
-
+	
 elif mode == 17:
 	'''------------------------------
 	---Random-Play-------------------

@@ -8,9 +8,11 @@ WIP - WORK IN PROGRESS
 - Widget auto refresh on condition.
 
 ------------------------
-Featherence v0.4.x (xx-Feb-16)
+Featherence v0.4.6 (25-Feb-16)
 ------------------------
 - Added Repeat to video OSD buttons.
+- Added Yahoo support for Post in Facebook button.
+- Major Jarvis bug black screen fix.
 - Minor update Checkerboard template.
 - Update Music and Video on startup and slideshow.
   You may now choose single file or path to be played randomly when triggered.

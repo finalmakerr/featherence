@@ -162,6 +162,17 @@
   <include name="AutoScrollText2" description="(Textbox) (הגדרות מעטפת/עזרה)">
 	<autoscroll tween="sine" easing="out" delay="7000" time="3000" repeat="7000">True</autoscroll>
   </include>
+  <include name="CustomizerExit">
+    <!--<onclick condition="!IsEmpty(Window(home).Property(Button.ID))">AlarmClock(buttonid,SetProperty(Button.ID,$INFO[Window(home).Property(Button.ID)],home),00:01,silent)</onclick>
+	<onclick condition="!IsEmpty(Window(home).Property(Button.ID))">Notification(1,1,1000)</onclick>
+	<onclick condition="!IsEmpty(Window(home).Property(Button.ID_))">AlarmClock(buttonid,SetProperty(Button.ID_,$INFO[Window(home).Property(Button.ID_)],home),00:01,silent)</onclick>
+	<onclick condition="!IsEmpty(Window(home).Property(Button.Name))">SetProperty(Button.Name,$INFO[Window(home).Property(Button.Name)],home)</onclick>
+    <onclick>dialog.close(1173)</onclick>
+	<onclick>Close</onclick>
+	<onclick>ActivateWindow(1117)</onclick>
+	<onclick>ActivateWindow(1173)</onclick>-->
+	<onclick>RunScript(script.featherence.service,,?mode=32&amp;value=6)</onclick>
+  </include>
   <include name="Backgrounds1" description="בית">
 	<control type="group">
 	  <include>Slide1.5</include>
