@@ -2588,12 +2588,12 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 			New_Type = 'Custom'
 		New_ID = url
 		New_ID_ = url
-		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
+		extra = addonString_servicefeatherence(32439).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(32440).encode('utf-8') #New %s, Update Succesfully!
 	
 	elif "list=" in New_ID or len(New_ID) == 10 or '&youtube_pl=' in New_ID:
 		'''Playlist'''
 		New_Type = localize(559) #Playlist
-		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
+		extra = addonString_servicefeatherence(32439).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(32440).encode('utf-8') #New %s, Update Succesfully!
 		if "list=" in New_ID:
 			New_ID = find_string(New_ID, "list=", "")
 			New_ID = New_ID.replace("list=","&youtube_pl=")
@@ -2638,7 +2638,7 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 		
 	elif New_ID == "None":
 		New_Type = localize(2080) #Empty list
-		extra = addonString_servicefeatherence(47).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(49).encode('utf-8') #New %s, Update Succesfully!
+		extra = addonString_servicefeatherence(32439).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(32440).encode('utf-8') #New %s, Update Succesfully!
 		New_ID_ = ""
 		
 	if New_Type != "":
