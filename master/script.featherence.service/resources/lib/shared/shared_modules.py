@@ -149,6 +149,8 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 def TranslatePath(x, filename=True, urlcheck_=False, force=False):
 	name = 'TranslatePath' ; printpoint = "" ; returned = "" ; returned2 = "" ; TypeError = "" ; extra = ""
 	if x == None: x = ""
+	
+	x = to_utf8(x)
 	returned = x
 	
 	if systemplatformwindows: slash = '\\'
@@ -192,6 +194,7 @@ def TranslatePath(x, filename=True, urlcheck_=False, force=False):
 			list2 = ['special://temp/', 'special://home/addons/', 'special://xbmc/',  'special://userdata/',  'special://thumbnails/',  'special://database/']
 			i = 0
 			for y in list:
+				y = to_utf8(y)
 				if y in returned:
 					returned2 = returned.replace(y, list2[i])
 					returned2 = returned2.replace('\\','/')
@@ -1413,18 +1416,21 @@ def setSkinSetting(custom,set1,set1v, force=False):
 		'''------------------------------
 		---SET-SKIN-SETTING-1------------
 		------------------------------'''
-		
+		#set1 = to_utf8(set1)
 		name = 'setSkinSetting' ; printpoint = "" ; admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)') ; admin2 = xbmc.getInfoLabel('Skin.HasSetting(Admin2)') ; setting1 = ""
 		
 		if '$LOCALIZE' in set1v or '$ADDON' in set1v: 
-			try: set1v = xbmc.getInfoLabel(set1v) ; printpoint = printpoint + "1"
+			try:
+				set1v = xbmc.getInfoLabel(set1v) ; printpoint = printpoint + "1"
 			except Exception, TypeError: printpoint = printpoint + "9"
 		''' custom: 0 = Skin.String, 1 = Skin.HasSetting'''
 		'''---------------------------'''
+		set1v = to_utf8(set1v)
 		printpoint = printpoint + "2"
 		if custom == "0":
 			printpoint = printpoint + "3"
 			setting1 = xbmc.getInfoLabel('Skin.String('+ set1 +')')
+			setting1 = to_utf8(setting1)
 			if setting1 != set1v: xbmc.executebuiltin('Skin.SetString('+ set1 +','+ set1v +')')
 			'''---------------------------'''
 			

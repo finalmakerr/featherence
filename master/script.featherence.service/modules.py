@@ -359,7 +359,7 @@ def CheckExtensions(x, mask='video'):
 	name = 'CheckExtensions' ; printpoint = "" ; returned = ""
 	if mask =='video': list = ['mp4', 'mov', 'avi']
 	elif mask =='picture': list = []
-	elif mask =='music': list = ['.mp3', 'flac', '.wav', 'm3u']
+	elif mask =='music': list = ['mp3', 'flac', 'wav', 'm3u']
 	else: list = []
 	
 	extension = os.path.splitext(x)[1][1:].strip().lower()
