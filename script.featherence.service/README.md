@@ -50,6 +50,11 @@ RunScript(script.featherence.service,,?mode=31&amp;value=header&amp;value2=messa
 ```
 
 ```
+OPEN OS WEB BROWSER
+RunScript(script.featherence.service,,?mode=512&value=0)
+```
+
+```
 LAUNCH EXTENDEDINFO MOVIES INFO
 RunScript(script.featherence.service,,?mode=70&amp;value=0)
 ```

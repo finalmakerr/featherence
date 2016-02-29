@@ -170,11 +170,11 @@ msgid "Buttons Shape"
 msgstr ""
 
 msgctxt "#31058"
-msgid ""
+msgid "Multi Fanart"
 msgstr ""
 
 msgctxt "#31059"
-msgid ""
+msgid "Choose this option in order to allow more fanart per button."
 msgstr ""
 
 msgctxt "#31060"
@@ -234,11 +234,11 @@ msgid "Number of items in the playlist"
 msgstr ""
 
 msgctxt "#31074"
-msgid ""
+msgid "Time per Image"
 msgstr ""
 
 msgctxt "#31075"
-msgid ""
+msgid "Cross Fade Time"
 msgstr ""
 
 msgctxt "#31076"

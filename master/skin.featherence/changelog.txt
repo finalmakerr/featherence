@@ -8,6 +8,11 @@ WIP - WORK IN PROGRESS
 - Widget auto refresh on condition.
 
 ------------------------
+Featherence v0.4.7 (xx-Mar-16)
+------------------------
+- Added multi fanart support for main/sub buttons.
+
+------------------------
 Featherence v0.4.6 (25-Feb-16)
 ------------------------
 - Added Repeat to video OSD buttons.

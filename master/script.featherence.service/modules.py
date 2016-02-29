@@ -720,7 +720,7 @@ def mode41(admin, name, printpoint):
 	------------------------------'''
 	if systemplatformandroid: terminal('am start -a android.intent.action.MAIN -n com.android.settings/.Settings',name)
 	elif systemplatformwindows: terminal('rundll32.exe van.dll,RunVAN',name)
-	elif systemplatformlinux and xbmc.getCondVisiblity('System.HasAddon(service.openelec.settings)'): xbmc.executebuiltin('RunScript(service.openelec.settings)')
+	elif systemplatformlinux and xbmc.getCondVisibility('System.HasAddon(service.openelec.settings)'): xbmc.executebuiltin('RunScript(service.openelec.settings)')
 	'''---------------------------'''
 
 def mode69(value, admin, name, printpoint):
@@ -1761,6 +1761,8 @@ def mode232(value, admin, name, printpoint):
 	id1 = "" ; id2 = "" ; extra = "" ; TypeError = ""
 	if printpoint != "": printpoint = printpoint + "_"
 	
+	if not os.path.exists(addons_path + 'script.module.unidecode'):
+		installaddon('script.module.unidecode', update=True)
 	if not xbmc.getCondVisibility('System.HasAddon(script.skinshortcuts)'):
 		addon1 = installaddon('script.skinshortcuts', update=True)
 	else:
@@ -1861,6 +1863,12 @@ def mode233(value, admin, name, printpoint):
 					setSkinSetting('0',x+y,str(url))
 		else:
 			printpoint = printpoint + '3'
+			if xbmc.getCondVisibility('Skin.HasSetting(MultiFanart)'):
+				returned = dialogyesno(str(name), addonString_servicefeatherence(32423).encode('utf-8'), nolabel='Single', yeslabel='Multi')
+				if returned == 'ok': type = 0
+				else: type = 2
+			else: type = 2
+			
 			'''local'''
 			if '1' in value:
 				printpoint = printpoint + '4'
@@ -1873,7 +1881,7 @@ def mode233(value, admin, name, printpoint):
 				elif os.path.exists(custombackgroundspath): path = custombackgroundspath
 				else: path = featherenceserviceicons_path_
 				#xbmc.executebuiltin('Skin.SetImage(background'+y+',,'+path+')')
-				returned_ = setPath(type=2,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
+				returned_ = setPath(type=type,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
 				if property_temp2 == 'ok': setSkinSetting('0','background'+y,str(returned_))
 				
 			elif '2' in value:
@@ -1887,7 +1895,7 @@ def mode233(value, admin, name, printpoint):
 				elif os.path.exists(customiconspath): path = customiconspath
 				else: path = featherenceserviceicons_path_
 				#xbmc.executebuiltin('Skin.SetImage(icon'+y+',,'+path+')')
-				returned_ = setPath(type=2,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
+				returned_ = setPath(type=type,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
 				if property_temp2 == 'ok': setSkinSetting('0','icon'+y,str(returned_))
 			else: printpoint = printpoint + '9'
 			

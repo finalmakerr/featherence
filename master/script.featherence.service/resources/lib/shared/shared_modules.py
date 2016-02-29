@@ -218,7 +218,7 @@ def TranslatePath(x, filename=True, urlcheck_=False, force=False):
 	return to_unicode(returned), to_unicode(returned2)
 
 def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[]):
-	name = 'GeneratePath' ; printpoint = "" ; formula_ = "" ; subdir = "" ; filename = "" ; subdir_filename = "" ; TypeError = "" ; extra = ""
+	name = 'GeneratePath' ; printpoint = "" ; formula_ = "" ; subdir = "" ; filename = "" ; subdir_filename = "" ; TypeError = "" ; extra = "" ; level = 1
 	if x2 == None: x2 = ""
 	
 	if systemplatformwindows: slash = '\\'
@@ -245,8 +245,12 @@ def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[]):
 			printpoint = printpoint + '7'
 			filename = os.path.basename(x2)
 			subdir = x2.split(slash)
-			#print 'test! ' + 'x2' + space2 + str(x2) + newline + str(subdir) + filename
-			subdir = subdir[-2]
+			try: subdir = subdir[-2]
+			except:
+				subdir = ""
+				level = 7
+				extra = extra + newline + 'subdir list error' + space2 + 'x2' + space2 + str(x2) + newline + str(subdir) + filename
+				
 			subdir_filename = to_unicode(subdir) + '_' + to_unicode(filename)
 			target = os.path.join(featherenceserviceaddondata_media_path, subdir_filename)
 			
@@ -254,13 +258,13 @@ def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[]):
 			custommediaL.append(subdir_filename)
 			
 			formula = formula + newline + custom + 'special://userdata/addon_data/script.featherence.service/media/' + to_utf8(subdir_filename)
-		
+	
 	text = 'custom' + space2 + str(custom) + newline + \
 	'ignoreL' + space2 + str(ignoreL) + newline + \
 	'x2' + space2 + to_utf8(x2) + newline + \
 	'x2_' + space2 + to_utf8(x2_) + newline + \
 	'subdir_filename' + space2 + to_utf8(subdir_filename) + extra
-	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=level, option="")
 	
 	return formula, custommediaL
 	
@@ -947,6 +951,14 @@ def installaddonP(addon, update=True):
 	elif addon == 'resource.images.weatherfanart.single': #FIXED PATH
 		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			DownloadFile("http://mirrors.xbmc.org/addons/jarvis/resource.images.weatherfanart.single/resource.images.weatherfanart.single-0.0.5.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'script.module.unidecode': #FIXED PATH
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("http://mirrors.kodi.tv/addons/frodo/script.module.unidecode/script.module.unidecode-0.4.16.zip", addon + ".zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass

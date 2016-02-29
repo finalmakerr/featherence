@@ -170,12 +170,12 @@ msgid "Buttons Shape"
 msgstr "צורת כפתורים"
 
 msgctxt "#31058"
-msgid ""
-msgstr ""
+msgid "Multi Fanart"
+msgstr "פאנארט מרובה"
 
 msgctxt "#31059"
-msgid ""
-msgstr ""
+msgid "Choose this option in order to allow more fanart per button."
+msgstr "בחר באפשרות זו בכדי לאפשר בחירה של נתיב עבור תמונות רקע מרובות."
 
 msgctxt "#31060"
 msgid "Show randomize tips on Dialog Busy window."
@@ -234,12 +234,12 @@ msgid "Number of items in the playlist"
 msgstr "כמות פריטים ברשימת ניגון"
 
 msgctxt "#31074"
-msgid ""
-msgstr ""
+msgid "Time per Image"
+msgstr "זמן להצגת כל תמונה"
 
 msgctxt "#31075"
-msgid ""
-msgstr ""
+msgid "Cross Fade Time"
+msgstr "זמן חפיפה בין תמונה לתמונה"
 
 msgctxt "#31076"
 msgid ""
