@@ -242,7 +242,7 @@ msgid "Cross Fade Time"
 msgstr ""
 
 msgctxt "#31076"
-msgid ""
+msgid "Your icons will be stretch on the entire button's frame."
 msgstr ""
 
 msgctxt "#31077"

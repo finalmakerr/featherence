@@ -242,8 +242,8 @@ msgid "Cross Fade Time"
 msgstr "זמן חפיפה בין תמונה לתמונה"
 
 msgctxt "#31076"
-msgid ""
-msgstr ""
+msgid "Your icons will be stretch on the entire button's frame."
+msgstr "הסמלים שלך יהיו בגודל של הכפתור עצמו."
 
 msgctxt "#31077"
 msgid ""

@@ -51,7 +51,7 @@ RunScript(script.featherence.service,,?mode=31&amp;value=header&amp;value2=messa
 
 ```
 OPEN OS WEB BROWSER
-RunScript(script.featherence.service,,?mode=512&value=0)
+RunScript(script.featherence.service,,?mode=512&value=url)
 ```
 
 ```

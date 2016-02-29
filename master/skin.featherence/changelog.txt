@@ -11,6 +11,8 @@ WIP - WORK IN PROGRESS
 Featherence v0.4.7 (xx-Mar-16)
 ------------------------
 - Added multi fanart support for main/sub buttons.
+- Added big icons feature to home buttons.
+  You may now enlarge your icons to fit one of 6 available shapes.
 - Minor bugs fix.
 
 ------------------------

@@ -6,6 +6,9 @@ from shared_modules import *
 
 def mode0(admin, name, printpoint):
 	'''test'''
+	path = "Z:/userdata/library/pictures/אלבום/"
+	if os.path.exists(to_unicode(path)):
+		notification('yes!','','',2000)
 	pass
 	
 def mode5(value, admin, name, printpoint):
@@ -1715,6 +1718,8 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + '---------------------------'
 			message = message + newline + "property_mode10" + space2 + property_mode10
 			message = message + newline + "ViewsSettings" + space2 + xbmc.getInfoLabel('Window(home).Property(ViewsSettings)')
+			message = message + newline + "HomeLastPos" + space2 + xbmc.getInfoLabel('Window(home).Property(HomeLastPos)')
+			message = message + newline + "HomeLastPos2" + space2 + xbmc.getInfoLabel('Window(home).Property(HomeLastPos2)')
 			message = message + newline + '---------------------------'
 			message = message + newline + "SelectedColor" + space2 + xbmc.getInfoLabel('Window(home).Property(SelectedColor)')
 			message = message + newline + "ListItemYear" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemYear)')
@@ -1822,6 +1827,9 @@ def mode232(value, admin, name, printpoint):
 def mode233(value, admin, name, printpoint):
 	printpoint = "" ; returned_ = ""
 	x = "" ; y = property_buttonid_ ; path = "" ; x2_ = ""
+	customiconspath = to_unicode(xbmc.getInfoLabel('Skin.String(CustomIconsPath)'))
+	custombackgroundspath = to_unicode(xbmc.getInfoLabel('Skin.String(CustomBackgroundsPath)'))
+	
 	if '0' in value:
 		printpoint = printpoint + '0'
 		y = property_subbuttonid_
@@ -1863,49 +1871,53 @@ def mode233(value, admin, name, printpoint):
 					setSkinSetting('0',x+y,str(url))
 		else:
 			printpoint = printpoint + '3'
-			if xbmc.getCondVisibility('Skin.HasSetting(MultiFanart)'):
-				returned = dialogyesno(str(name), addonString_servicefeatherence(32423).encode('utf-8'), nolabel='Single', yeslabel='Multi')
-				if returned == 'ok': type = 0
-				else: type = 2
-			else: type = 2
 			
 			'''local'''
 			if '1' in value:
+				if xbmc.getCondVisibility('Skin.HasSetting(MultiFanart)'):
+					returned = dialogyesno(str(name), addonString_servicefeatherence(32423).encode('utf-8'), nolabel='Single', yeslabel='Multi')
+					if returned == 'ok': type = 0
+					else: type = 2
+				else: type = 2
 				printpoint = printpoint + '4'
-				custombackgroundspath = xbmc.getInfoLabel('Skin.String(CustomBackgroundsPath)')
+				
 				x_ = xbmc.getInfoLabel('Skin.String(background'+y+')')
 				x2, x2_ = TranslatePath(x_, filename=False)
 				
-				if os.path.exists(x2_): path = x2_
+				if os.path.exists(custombackgroundspath): path = custombackgroundspath
+				elif os.path.exists(x2_): path = x2_
 				elif os.path.exists(x2): path = x2
-				elif os.path.exists(custombackgroundspath): path = custombackgroundspath
+				
 				else: path = featherenceserviceicons_path_
 				#xbmc.executebuiltin('Skin.SetImage(background'+y+',,'+path+')')
 				returned_ = setPath(type=type,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
-				if property_temp2 == 'ok': setSkinSetting('0','background'+y,str(returned_))
+				if property_temp2 == 'ok': setSkinSetting('0','background'+y,to_unicode(returned_))
 				
 			elif '2' in value:
 				printpoint = printpoint + '5'
-				customiconspath = xbmc.getInfoLabel('Skin.String(CustomIconsPath)')
+				
 				x_ = xbmc.getInfoLabel('Skin.String(icon'+y+')')
 				x2, x2_ = TranslatePath(x_, filename=False)
 				
-				if os.path.exists(x2_): path = x2_
+				if os.path.exists(customiconspath): path = customiconspath
+				elif os.path.exists(x2_): path = x2_
 				elif os.path.exists(x2): path = x2
-				elif os.path.exists(customiconspath): path = customiconspath
+				
 				else: path = featherenceserviceicons_path_
 				#xbmc.executebuiltin('Skin.SetImage(icon'+y+',,'+path+')')
-				returned_ = setPath(type=type,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
-				if property_temp2 == 'ok': setSkinSetting('0','icon'+y,str(returned_))
+				returned_ = setPath(type=2,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
+				if property_temp2 == 'ok': setSkinSetting('0','icon'+y,to_unicode(returned_))
 			else: printpoint = printpoint + '9'
 			
 			setProperty('TEMP', '', type="home")
 			setProperty('TEMP2', '', type="home")
 			
-	text = 'value' + space2 + str(value) + space + 'path' + space2 + str(path) + newline + \
-	'name' + space2 + str(name) + newline + \
-	'x2_' + space2 + str(x2_) + newline + \
-	'property_temp2' + space2 + str(property_temp2)
+	text = 'value' + space2 + to_utf8(value) + space + 'path' + space2 + to_utf8(path) + newline + \
+	'name' + space2 + to_utf8(name) + newline + \
+	'x2_' + space2 + to_utf8(x2_) + newline + \
+	'customiconspath' + space2 + to_utf8(customiconspath) + newline + \
+	'custombackgroundspath' + space2 + to_utf8(custombackgroundspath) + newline + \
+	'property_temp2' + space2 + to_utf8(property_temp2)
 	printlog(title='mode233', printpoint=printpoint, text=text, level=0, option="")
 
 def mode235(value, admin, name, printpoint):
@@ -1956,6 +1968,7 @@ def mode512(value):
 		elif value == '3': url = 'www.youtube.com'
 		elif value == '4': url = 'https://www.google.co.il/imghp?hl=iw&tab=wi' #Thumbnail
 		elif value == '5': url = 'https://www.google.co.il/imghp?hl=iw&tab=wi' #Fanart
+		else: url = value
 		
 		name = localize(443)
 		if systemplatformwindows: terminal('start /max '+url+'','')

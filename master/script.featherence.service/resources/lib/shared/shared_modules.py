@@ -548,6 +548,7 @@ def CleanString2(x, comma=False):
 		
 def setPath(type=0,mask="", folderpath="", original=True):
 	returned = "" ; count = 0
+	folderpath = to_utf8(folderpath)
 	if mask == 'pic': mask = '.jpg|.jpeg|.JPEG|.bmp|.gif|.GIF|.png|.PNG'
 	elif mask == 'music': mask = '.mp3|.flac|.wav|.m3u'
 	if type == 0: xbmc.executebuiltin('Skin.SetPath(TEMP)')
