@@ -294,16 +294,51 @@
 	<value condition="Skin.HasSetting(HideTopMainBackground)" description="">$LOCALIZE[106]</value>
   </variable>
   
+  <variable name="227label2">
+    <value condition="Skin.String(TopBackgroundTexture,NONE)">$LOCALIZE[106]</value>
+	<value condition="Skin.String(TopBackgroundTexture)">$LOCALIZE[107] $INFO[Skin.String(TopBackgroundTexture)]</value>
+  </variable>
+  
   <variable name="229label2">
     <value condition="!Skin.HasSetting(SubBackground)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(SubBackground)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="237label2">
-    <value condition="Skin.String(TopBackgroundTexture,NONE)">$LOCALIZE[106]</value>
-	<value condition="Skin.String(TopBackgroundTexture)">$LOCALIZE[107] $INFO[Skin.String(TopBackgroundTexture)]</value>
+    <value condition="!Skin.HasSetting(MultiFanart)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(MultiFanart)">$LOCALIZE[107]</value>
   </variable>
 
+  <variable name="238label2">
+	 <value condition="Skin.String(MultiFanart_TimePerImage,5)">5000</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,10)">10000</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,15)">15000</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,20)">20000</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,25)">25000</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,30)">30000</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,35)">35000</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,40)">40000</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,45)">45000</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,50)">50000</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,55)">55000</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,60)">60000</value>
+	 <value>10000</value>
+   </variable>
+   
+   <variable name="239label2">
+	 <value condition="Skin.String(MultiFanart_FadeTime,0)">0</value>
+	 <value condition="Skin.String(MultiFanart_FadeTime,0.2)">200</value>
+	 <value condition="Skin.String(MultiFanart_FadeTime,0.4)">400</value>
+	 <value condition="Skin.String(MultiFanart_FadeTime,0.6)">600</value>
+	 <value condition="Skin.String(MultiFanart_FadeTime,0.8)">800</value>
+	 <value condition="Skin.String(MultiFanart_FadeTime,1)">1000</value>
+	 <value condition="Skin.String(MultiFanart_FadeTime,1.2)">1200</value>
+	 <value condition="Skin.String(MultiFanart_FadeTime,1.4)">1400</value>
+	 <value condition="Skin.String(MultiFanart_FadeTime,1.6)">1600</value>
+	 <value condition="Skin.String(MultiFanart_FadeTime,1.8)">1800</value>
+	 <value condition="Skin.String(MultiFanart_FadeTime,2)">2000</value>
+	 <value>2000</value>
+   </variable>
   
   <variable name="252label2">
 	<value condition="Skin.String(MainBackgroundTexture,NONE)">$LOCALIZE[106]</value>

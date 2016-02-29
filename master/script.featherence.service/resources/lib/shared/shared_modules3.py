@@ -486,7 +486,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 		numTotal = int(len(url2))
 		numEnd = int(num) * 20
 		numStart = int(numEnd) - 20
-		notification('1',str(numStart),'',1000)
+		#notification('1',str(numStart),'',1000)
 		if numStart < numTotal:
 			if int(num) > 1:
 				for i__ in range(1,numStart):
@@ -993,11 +993,10 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		title2 = '[Video]'
 		x2 = x.replace('&youtube_id=',"")
 		url = 'https://www.googleapis.com/youtube/v3/videos?id='+x2+'&key='+api_youtube_featherence+'&part=snippet'
-	elif "&youtube_se=" in x or "&custom_se=" in x:
+	elif "&youtube_se=" in x:
 		title2 = '[Search]'
 		printpoint = printpoint + "2"
 		x2 = x.replace("&youtube_se=","")
-		x2 = x2.replace("&custom_se=","")
 		if 'commonsearch' in x:
 			x_ = clean_commonsearch(title)
 			x2 = x_ + space + x2

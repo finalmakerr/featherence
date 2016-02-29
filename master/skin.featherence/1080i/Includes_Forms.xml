@@ -755,6 +755,19 @@
 	</definition>
   </include>
   
+  <include name="MultiFanart_TimePerImage_">
+     <include condition="!Skin.String(MultiFanart_TimePerImage)">MultiFanart_TimePerImage__</include>
+	 <include condition="Skin.String(MultiFanart_TimePerImage)">MultiFanart_TimePerImage___</include>
+  </include>
+  
+  <include name="MultiFanart_TimePerImage__">
+	 <timeperimage>10000</timeperimage>
+  </include>
+  
+  <include name="MultiFanart_TimePerImage___">
+	 <timeperimage>$INFO[Skin.String(MultiFanart_TimePerImage)]</timeperimage>
+  </include>
+  
   <include name="MenuDesign4_Icon">
 	<include description="משולשים/משושים" condition="Skin.String(MenuDesign,4) + [Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)]">ImageC1</include>
 	<include condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)">ImageR1</include>

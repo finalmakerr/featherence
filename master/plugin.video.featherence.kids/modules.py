@@ -2275,12 +2275,6 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 	
 	CATEGORIES106G(General_LanguageL, background, background2) #דובוני אכפת לי (חדש)
 	
-	'''דינו דן'''
-	list = []
-	if 'Hebrew' in General_LanguageL:
-		list.append('&youtube_pl=PL0zAFNbEotfkBCaGmpE0PHyRDjk7yOkgv')
-	addDir('דינו דן',list,17,'','','1',50,getAddonFanart(background, custom="http://images.nickjr.com/nickjr/properties/dino-dan/property-header-dino-dan-desktop-portrait-2x.png?quality=0.75", default=background2))
-	
 	'''דובים ונהנים'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
@@ -2586,6 +2580,13 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&youtube_pl=EL1q_Il1879aRo4teP2it5Cg')
 		
 	addDir(addonString(10711).encode('utf-8'),list,17,'http://www.2bdaddy.co.il/wp-content/uploads/unnamed-25.jpg',addonString(107110).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://www.trbimg.com/img-53ee62bb/turbine/la-et-st-dora-and-friends-into-the-city-review-20140815"))
+	
+	
+	'''דינו דן'''
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&youtube_pl=PL0zAFNbEotfkBCaGmpE0PHyRDjk7yOkgv')
+	addDir('דינו דן',list,17,'','','1',50,getAddonFanart(background, custom="http://images.nickjr.com/nickjr/properties/dino-dan/property-header-dino-dan-desktop-portrait-2x.png?quality=0.75", default=background2))
 	
 	'''דן הדוור'''
 	list = []
