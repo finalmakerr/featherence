@@ -266,6 +266,18 @@
 			<param name="posy" value="45" />
 			<param name="width" value="312" />
 			
+			<param name="condition" value="!Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="type0" value="true" description="UnFocus" />
+			<param name="type1" value="false" description="Focus" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="$VAR[IconUnFocusColor]" />
+			<param name="height" value="180" />
+			<param name="posx" value="30" />
+			<param name="posy" value="30" />
+			<param name="width" value="312" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
 			<param name="type0" value="true" description="UnFocus" />
 			<param name="type1" value="false" description="Focus" />
 		</include>
@@ -424,6 +436,18 @@
 			<param name="posy" value="35" />
 			<param name="width" value="332" />
 			
+			<param name="condition" value="!Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="type0" value="false" description="UnFocus" />
+			<param name="type1" value="true" description="Focus" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="$VAR[IconUnFocusColor]" />
+			<param name="height" value="200" />
+			<param name="posx" value="20" />
+			<param name="posy" value="20" />
+			<param name="width" value="332" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
 			<param name="type0" value="false" description="UnFocus" />
 			<param name="type1" value="true" description="Focus" />
 		</include>
@@ -560,6 +584,18 @@
 			<param name="posy" value="45" />
 			<param name="width" value="312" />
 			
+			<param name="condition" value="!Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="type0" value="true" description="UnFocus" />
+			<param name="type1" value="false" description="Focus" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="$VAR[IconUnFocusColor]" />
+			<param name="height" value="180" />
+			<param name="posx" value="30" />
+			<param name="posy" value="30" />
+			<param name="width" value="312" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
 			<param name="type0" value="true" description="UnFocus" />
 			<param name="type1" value="false" description="Focus" />
 		</include>
@@ -718,6 +754,18 @@
 			<param name="posy" value="35" />
 			<param name="width" value="332" />
 			
+			<param name="condition" value="!Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="type0" value="false" description="UnFocus" />
+			<param name="type1" value="true" description="Focus" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="$VAR[IconUnFocusColor]" />
+			<param name="height" value="200" />
+			<param name="posx" value="20" />
+			<param name="posy" value="20" />
+			<param name="width" value="332" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
 			<param name="type0" value="false" description="UnFocus" />
 			<param name="type1" value="true" description="Focus" />
 		</include>
@@ -856,6 +904,18 @@
 			<param name="posy" value="60" />
 			<param name="width" value="190" />
 			
+			<param name="condition" value="!Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="type0" value="true" description="UnFocus" />
+			<param name="type1" value="false" description="Focus" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="$VAR[IconUnFocusColor]" />
+			<param name="height" value="100" />
+			<param name="posx" value="0" />
+			<param name="posy" value="20" />
+			<param name="width" value="212" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
 			<param name="type0" value="true" description="UnFocus" />
 			<param name="type1" value="false" description="Focus" />
 		</include>
@@ -1017,6 +1077,18 @@
 			<param name="posy" value="60" />
 			<param name="width" value="190" />
 			
+			<param name="condition" value="!Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="type0" value="false" description="UnFocus" />
+			<param name="type1" value="true" description="Focus" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="$VAR[IconUnFocusColor]" />
+			<param name="height" value="100" />
+			<param name="posx" value="0" />
+			<param name="posy" value="20" />
+			<param name="width" value="312" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
 			<param name="type0" value="false" description="UnFocus" />
 			<param name="type1" value="true" description="Focus" />
 		</include>

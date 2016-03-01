@@ -66,7 +66,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.extreme" version="0.1.5" name="Featherence Extreme" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.extreme" version="0.1.6" name="Featherence Extreme" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>

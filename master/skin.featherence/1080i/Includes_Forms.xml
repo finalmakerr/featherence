@@ -626,37 +626,37 @@
 			  <visible>Skin.HasSetting(ReshapeIcons)</visible>
 			  <control type="image">
 			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
-				<aspectratio>keep</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<texture diffuse="buttons/types/bd.png" colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
 				<visible>!Skin.String(ButtonsDesign)</visible>
 			  </control>
 			  <control type="image">
 			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
-				<aspectratio>keep</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<texture diffuse="buttons/types/bd0.png" colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
 				<visible>Skin.String(ButtonsDesign,0)</visible>
 			  </control>
 			  <control type="image">
 			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
-				<aspectratio>keep</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<texture diffuse="buttons/types/bd1.png" colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
 				<visible>Skin.String(ButtonsDesign,1)</visible>
 			  </control>
 			  <control type="image">
 			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
-				<aspectratio>keep</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<texture diffuse="buttons/types/bd2.png" colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
 				<visible>Skin.String(ButtonsDesign,2)</visible>
 			  </control>
 			  <control type="image">
 			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
-				<aspectratio>keep</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<texture diffuse="buttons/types/bd3.png" colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
 				<visible>Skin.String(ButtonsDesign,3)</visible>
 			  </control>
 			  <control type="image">
 			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
-				<aspectratio>keep</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<texture diffuse="buttons/types/bd4.png" colordiffuse="$PARAM[color]">$INFO[ListItem.Thumb]</texture>
 				<visible>Skin.String(ButtonsDesign,4)</visible>
 			  </control>

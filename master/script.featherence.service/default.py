@@ -48,14 +48,6 @@ elif mode == 5:
 	mode5(value, admin, name, printpoint)
 	'''---------------------------'''
 
-elif mode == 6:
-	'''------------------------------
-	---connectioncheck---------------
-	------------------------------'''
-	name = "connectioncheck"
-	connectioncheck(admin)
-	'''---------------------------'''
-
 elif mode == 7:
 	'''------------------------------
 	---SEND-DEBUG--------------------
@@ -199,7 +191,7 @@ elif mode == 27:
 	Remote_Support = setRemote_Support(value, Remote_Name, Remote_Support)
 
 	if Remote_Support != "true":
-		if value != '0': dialogok(addonString(32032).encode('utf-8'), "- Make sure you have IR adapter!", "-Make sure your OS is supported!","For Support see Facebook page or related forum!")
+		if value != '0': dialogok(addonString(32032).encode('utf-8'), addonString(32036).encode('utf-8'),addonString(32101).encode('utf-8'))
 		sys.exit()
 
 	if Remote_Name == "":
@@ -357,10 +349,10 @@ elif mode >= 200 and mode <= 249:
 	
 	elif mode == 203:
 		'''------------------------------
-		---Save and Load your skin design
+		---Save/Load---------------------
 		------------------------------'''
 		from variables2 import *
-		name = "Save and Load your skin design"
+		name = "Save/Load"
 		extra = "" ; formula = "" ; formula_ = "" ; path = "" ; filename = "" ; returned = "" ; returned2 = ""
 		list = ['-> (Exit)', 'Save', 'Load', 'Templates'] ; list2 = [] ; custommediaL = []
 		
@@ -417,7 +409,7 @@ elif mode >= 200 and mode <= 249:
 					------------------------------'''
 					if returned2 > 1:
 						printpoint = printpoint + 'o'
-						yesno = dialogyesno('Overwrite' + space + str(list2[returned2]) + '?','Choose YES to continue')
+						yesno = dialogyesno(localize(13206) + space + str(list2[returned2]) + '?',localize(19194))
 						if yesno == 'skip': printpoint = printpoint + '9'
 					if not '9' in printpoint:
 						Custom1000(str(list[returned]),0,str(list2[returned2]),5)
@@ -541,7 +533,7 @@ elif mode >= 200 and mode <= 249:
 								
 								if 'o' in printpoint:
 									if filename != str(list2[returned2]):
-										returned_ = dialogyesno('%s has been successfully saved!' % (filename), 'Would you like to remove %s save?' % (str(list2[returned2])))
+										returned_ = dialogyesno(addonString_servicefeatherence(32102).encode('utf-8') % (filename), addonString_servicefeatherence(32103).encode('utf-8') % (str(list2[returned2])))
 										if returned_ != 'skip':
 											removefiles(featherenceservice_addondata_path + 'Featherence_' + to_unicode(list2[returned2]) + '.zip')
 								Custom1000(str(list[returned]),100,str(list2[returned2]),4)
@@ -638,14 +630,14 @@ elif mode >= 200 and mode <= 249:
 					xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_)')
 					xbmc.executebuiltin('Action(Back)')
 					xbmc.sleep(500)
-					returned_ = dialogyesno('Your current language is %s' % (systemlanguage), 'Are the buttons in %s?' % (systemlanguage))
+					returned_ = dialogyesno(addonString_servicefeatherence(32104).encode('utf-8') % (systemlanguage), addonString_servicefeatherence(32105).encode('utf-8') % (systemlanguage))
 					if returned_ == 'skip':
 						xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=LABEL)')
 						
 					folder_ = 'Featherence'
 					path_ = os.path.join(featherenceserviceaddondata_media_path, folder_, '')
 					if os.path.exists(path_):
-						returned_ = dialogyesno('Extras folder found!', 'Choose YES to proceed (Optional)')
+						returned_ = dialogyesno(addonString_servicefeatherence(32106).encode('utf-8'), addonString_servicefeatherence(32107).encode('utf-8'))
 						if returned_ != 'skip':
 							copyfiles(path_, home_path)
 							xbmc.executebuiltin("UpdateLocalAddons")
@@ -780,4 +772,3 @@ else: printpoint = printpoint + "9"
 if TypeError != "": print printfirst + "Default.py" + space + "TypeError" + space2 + str(TypeError)
 if admin: print printfirst + "default.py_LV" + printpoint + space + "mode" + space2 + str(mode) + space + "value" + space2 + str(value)
 '''---------------------------'''
-	

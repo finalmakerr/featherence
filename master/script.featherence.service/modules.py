@@ -681,7 +681,7 @@ def mode32(value, admin, name, printpoint):
 	elif value == '40':
 		addon = 'plugin.video.featherence.kids'
 		if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
-			dialogok(addonString_servicefeatherence(32085).encode('utf-8'),addonString_servicefeatherence(32081).encode('utf-8'),"",'[B][COLOR=blue]Website[/COLOR][/B]: www.facebook.com/groups/featherence[CR]',line1c="yellow")
+			dialogok(addonString_servicefeatherence(32085).encode('utf-8'),addonString_servicefeatherence(32081).encode('utf-8'),"",addonString_servicefeatherence(32108).encode('utf-8'),line1c="yellow")
 			General_Language2 = xbmcaddon.Addon(addon).getSetting('General_Language2') ; General_Language2 = str(General_Language2)
 			dialogok(addonString_servicefeatherence(32086).encode('utf-8') % (General_Language2),addonString_servicefeatherence(32087).encode('utf-8'),"",addonString_servicefeatherence(32088).encode('utf-8'),line1c="yellow")
 		
@@ -1389,7 +1389,7 @@ def mode212(value, admin, name, printpoint):
 		if '0' in value:
 			'''main menu item'''
 			printpoint = printpoint + "0"
-			xbmc.sleep(100) ; returned = dialogyesno(y + space2 + str(property_buttonname), "Choose YES to proceed!" + extra2)
+			xbmc.sleep(100) ; returned = dialogyesno(y + space2 + str(property_buttonname), localize(19194) + extra2)
 			if returned == 'skip': printpoint = printpoint + "8"
 			else:
 				for i in range(0,two):
@@ -1428,7 +1428,7 @@ def mode212(value, admin, name, printpoint):
 				y = 'Remove item'
 				x = property_subbuttonid_
 				
-			xbmc.sleep(100) ; returned = dialogyesno(y + space2 + str(property_subbuttonname), "Choose YES to proceed!")
+			xbmc.sleep(100) ; returned = dialogyesno(y + space2 + str(property_subbuttonname), localize(19194))
 			if returned == 'skip': printpoint = printpoint + "8"
 			else:
 				setSkinSetting('1','off' + x,"false")
@@ -1463,12 +1463,12 @@ def mode214(value, admin, name, printpoint):
 	text = "value" + space2 + str(value)
 	
 	if value == '0':
-		returned = dialogkeyboard(property_buttonname,'Button Name',0,"",'label'+property_buttonid_,"")
+		returned = dialogkeyboard(property_buttonname,addonString_servicefeatherence(32110).encode('utf-8'),0,"",'label'+property_buttonid_,"")
 		if returned != 'skip':
 			if returned == "": setSkinSetting('0','label'+property_buttonid_, '...')
 	
 	if value == '1':
-		returned = dialogkeyboard(property_subbuttonname,'Sub Button Name',0,"",'label'+property_subbuttonid_,"")
+		returned = dialogkeyboard(property_subbuttonname,addonString_servicefeatherence(32109).encode('utf-8'),0,"",'label'+property_subbuttonid_,"")
 		if returned != 'skip':
 			if returned == "": setSkinSetting('0','label'+property_subbuttonid_, '...')
 	
@@ -1481,7 +1481,7 @@ def mode214(value, admin, name, printpoint):
 		if property_selectedcolor == "" and property_buttonid_ != "": value2 = currentbuttoncolor
 		else: value2 = property_selectedcolor
 		
-		returned = dialogkeyboard(value2,'Choose manual color code',0,"","","")
+		returned = dialogkeyboard(value2,addonString_servicefeatherence(32111).encode('utf-8'),0,"","","")
 		if returned != 'skip':
 			if returned != "":
 				returned_len = len(returned) ; returned1 = returned[:2]
@@ -1785,15 +1785,22 @@ def mode232(value, admin, name, printpoint):
 				else: id1 = property_subbuttonid_
 		except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "9D"
 		
-		if id1 != "":			
+		if id1 != "":
+			if xbmc.getInfoLabel('Skin.HasSetting(Action_Thumbnail)'):
+				Action_Thumbnail = '&skinThumbnail=icon'+id1
+				Action_Label = '&skinLabel=label'+id1
+			else:
+				Action_Thumbnail = ""
+				Action_Label = ""
+			
 			if custom1175W and not custom1138W:
 				'''Main Action'''
 				printpoint = printpoint + "x1"
-				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinLabel=label'+id1+'&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]&skinThumbnail=icon'+id1+')')
+				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]'+Action_Thumbnail+Action_Label+')')
 			elif custom1138W:	
 				'''Sub Action'''
 				printpoint = printpoint + "x2"
-				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinLabel=label'+id1+'&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]&skinThumbnail=icon'+id1+')')
+				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]'+Action_Thumbnail+Action_Label+')')
 				'''---------------------------'''
 			else: printpoint = printpoint + "8"	
 			
@@ -1875,7 +1882,7 @@ def mode233(value, admin, name, printpoint):
 			'''local'''
 			if '1' in value:
 				if xbmc.getCondVisibility('Skin.HasSetting(MultiFanart)'):
-					returned = dialogyesno(str(name), addonString_servicefeatherence(32423).encode('utf-8'), nolabel='Single', yeslabel='Multi')
+					returned = dialogyesno(str(name), addonString_servicefeatherence(32423).encode('utf-8'), nolabel=localize(20428), yeslabel=addonString_servicefeatherence(32112).encode('utf-8'))
 					if returned == 'ok': type = 0
 					else: type = 2
 				else: type = 2
@@ -2009,110 +2016,6 @@ def videoplayertweak(admin,playerhasvideo):
 				if xbmc.getCondVisibility('System.IdleTime(20)'): xbmc.executebuiltin('Dialog.Close(VideoOSD.xml)')
 				'''---------------------------'''
 
-def getPing(output):
-	'''------------------------------
-	---setPing-ms--------------------
-	------------------------------'''
-	output2 = output
-	output2len = len(output2)
-	output2lenS = str(output2len)
-	
-	if systemplatformlinux or systemplatformlinuxraspberrypi: start_len = output2.find("min/avg/max =", 0, output2len)
-	elif systemplatformwindows: start_len = output2.find("Average =", 0, output2len)
-	elif systemplatformandroid: start_len = output2.find("min/avg/max/mdev =", 0, output2len)
-	
-	start_lenS = str(start_len)
-	if systemplatformlinux or systemplatformlinuxraspberrypi: start_lenN = int(start_lenS) + 14
-	elif systemplatformwindows: start_lenN = int(start_lenS) + 10
-	elif systemplatformandroid: start_lenN = int(start_lenS) + 19
-	
-	if systemplatformlinux or systemplatformlinuxraspberrypi: end_len = output2.find("/", start_lenN, output2len)
-	elif systemplatformwindows: end_len = output2.find("ms", start_lenN, output2len)
-	elif systemplatformandroid: end_len = output2.find("/", start_lenN, output2len)
-	
-	end_lenS = str(end_len)
-	end_lenN = int(end_lenS)
-	found = output2[start_lenN:end_lenN]
-	foundS = str(found)
-	try: foundF = float(foundS)
-	except: foundF = ""
-	'''---------------------------'''
-	if not systemplatformwindows:
-		mid_len = output2.find(".", start_lenN, end_lenN)
-		mid_lenS = str(mid_len)
-		mid_lenN = int(mid_lenS)
-		totalnumN = mid_lenN - start_lenN
-		totalnumS = str(start_lenN)
-		'''---------------------------'''
-		if foundF != "":
-			found2 = round(foundF)
-			found2S = str(found2)
-		else:
-			found2S = foundS
-		if ".0" in found2S: found2S = found2S.replace(".0","",1)
-		'''---------------------------'''
-	else:
-		found2S = foundS
-		mid_lenS = ""
-		'''---------------------------'''
-	if admin: extra = newline + "output2len" + space2 + output2lenS + space + "start_len" + space2 + start_lenS + space + "end_len" + space2 + end_lenS + space + "found/2" + space2 + foundS + "/" + found2S + space + "mid_len" + space2 + mid_lenS
-	'''---------------------------'''
-	return found2S
-			
-def connectioncheck(admin):
-	'''------------------------------
-	---NETWORK-STATUS----------------
-	------------------------------'''
-	name = 'connectioncheck' ; printpoint = ""
-	list = ['-> (Exit)', 'Internet', 'Router'] ; returned = "" ; returned2 = "" ; totalL = []
-	
-	returned, type = dialogselect('Choose ping type',list,0)
-	if returned == -1: pass
-	elif returned == 0: pass
-	else:
-		if returned == 1:
-			'''Internet'''
-			list = ['-> (Exit)', 'www.google.com', 'www.google.co.il', 'en.wikipedia.org', 'www.facebook.com']
-			returned2, target = dialogselect('Choose ping target',list,0)
-			if returned == -1: pass
-			elif returned == 0: pass
-			else: printpoint = printpoint + '7'
-		
-		elif returned == 2:
-			'''Router'''
-			list = ['-> (Exit)', xbmc.getInfoLabel('Network.GatewayAddress'), 'Manual']
-			returned2, target = dialogselect('Choose ping target',list,0)
-			if returned2 == -1: pass
-			elif returned2 == 0: pass
-			elif returned2 == 1: printpoint = printpoint + '7'
-			elif returned2 == 2:
-				target = dialogkeyboard(xbmc.getInfoLabel('Network.GatewayAddress'), 'Choose local IP address', 0, '0', "", "")
-				if target != 'skip': printpoint = printpoint + '7'
-		
-		if '7' in printpoint:
-			dp = xbmcgui.DialogProgress() ; count = 0
-			dp.create('Pinging type: ' + str(type), 'target: ' + str(target), " ")
-			while count < 100 and not dp.iscanceled() and not xbmc.abortRequested:
-				if returned == 1 or returned == 2:
-					if systemplatformwindows: output = terminal('ping '+str(target)+' -n 1',"Connected")
-					elif systemplatformlinux or systemplatformlinuxraspberrypi: output = terminal('ping -W 1 -w 1 -4 -q '+str(target)+'',"Connected")
-					elif systemplatformandroid: output = terminal('ping -W 1 -w 1 -c 1 '+str(target)+'',"Connected")
-					else: output = ""
-
-					ping = getPing(output)
-					totalL.append(ping)
-					
-				count += 1
-				dp.update(count,'','Ping: ' + str(ping))
-				xbmc.sleep(1000)
-				
-			dp.close
-			message = 'Pinging type: ' + str(type) + newline + 'target: ' + str(target) + newline + 'pings: ' + str(totalL)
-			diaogtextviewer('Pinging summary',message)
-	
-	text = "returned" + space2 + str(returned) + space + space + "returned2" + space2 + str(returned2) + newline + \
-	'totalL' + space2 + str(totalL)
-	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog):
 	'''------------------------------

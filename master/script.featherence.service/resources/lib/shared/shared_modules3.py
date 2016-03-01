@@ -2795,7 +2795,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		
 				if "A" in printpoint:
 					if returned2 > 1:
-						yesno = dialogyesno('Overwrite' + space + str(list2[returned2]) + '?','Choose YES to continue')
+						yesno = dialogyesno(localize(13206) + space + str(list2[returned2]) + '?',localize(19194))
 						if yesno == 'skip': printpoint = printpoint + '9'
 					if not '9' in printpoint:
 						formula = ""
@@ -2887,10 +2887,10 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 							notification(AddonName + ".txt is missing!", "Check your zip file!", "", 4000)
 						else:
 							if y == 's':
-								yesno = dialogyesno('Overwrite All buttons?' + '?','Choose YES to continue')
+								yesno = dialogyesno(addonString_servicefeatherence(32122).encode('utf-8') + '?',localize(19194)) #Overwrite
 								if yesno == 'skip': printpoint = printpoint + '9'
 							else:
-								yesno = dialogyesno('Overwrite' + space + xbmc.getInfoLabel('ListItem.Label') + '?','Choose YES to continue')
+								yesno = dialogyesno(addonString_servicefeatherence(32122).encode('utf-8') + space + xbmc.getInfoLabel('ListItem.Label') + '?',localize(19194)) #Overwrite
 								if yesno == 'skip': printpoint = printpoint + '9'
 								
 							if not '9' in printpoint:
@@ -2921,7 +2921,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			---Remove-All-Buttons------------
 			------------------------------'''
 			Custom_Playlist_NameL = [Custom_Playlist1_Name, Custom_Playlist2_Name, Custom_Playlist3_Name, Custom_Playlist4_Name, Custom_Playlist5_Name, Custom_Playlist6_Name, Custom_Playlist7_Name, Custom_Playlist8_Name, Custom_Playlist9_Name, Custom_Playlist10_Name]
-			returned = dialogyesno('Remove ALL buttons' + '[CR]' + str(Custom_Playlist_NameL),localize(19194)) #Remove Button, Continue?
+			returned = dialogyesno(addonString_servicefeatherence(32123).encode('utf-8') + '[CR]' + str(Custom_Playlist_NameL),localize(19194)) #Remove All Buttons?
 			if returned == "ok":
 				for x in range(1,11):
 					setsetting('Custom_Playlist' + str(x) + '_ID', "")
@@ -2977,7 +2977,7 @@ def AddCustom(mode, name, url, iconimage, desc, num, viewtype, fanart):
 		elif returned == 0: pass
 		elif returned == 1:
 			printpoint = printpoint + "1"
-			New_Name = dialogkeyboard('My Button', "Button Name", 0, "",Custom_Playlist_Name, "0")
+			New_Name = dialogkeyboard(addonString_servicefeatherence(32124).encode('utf-8'), addonString_servicefeatherence(32110).encode('utf-8'), 0, "",Custom_Playlist_Name, "0")
 			setCustom_Playlist_ID(Custom_Playlist_ID, 'New Custom', mode, url, New_Name, num, viewtype)
 		else:
 			printpoint = printpoint + "2"
@@ -2987,9 +2987,9 @@ def AddCustom(mode, name, url, iconimage, desc, num, viewtype, fanart):
 			setCustom_Playlist_ID(Custom_Playlist_ID, url, mode, url, New_Name, num, viewtype)
 			
 	else:
-		New_ID = dialogkeyboard("", "Enter YouTube URL", 0, "5", "" , "")
+		New_ID = dialogkeyboard("", addonString_servicefeatherence(32125).encode('utf-8'), 0, "5", "" , "")
 		if New_ID != "skip":
-			New_Name = dialogkeyboard('My Button', "Button Name", 0, "",Custom_Playlist_Name, "0")
+			New_Name = dialogkeyboard(addonString_servicefeatherence(32124).encode('utf-8'), addonString_servicefeatherence(32110).encode('utf-8'), 0, "",Custom_Playlist_Name, "0")
 			if New_Name != "skip":
 				setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, New_Name, num, viewtype)
 				

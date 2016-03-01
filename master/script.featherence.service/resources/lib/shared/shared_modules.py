@@ -38,7 +38,7 @@ def CreateZip(src, dst, filteron=[], filteroff=[], level=10000, append=False, Zi
 		
 		if not os.path.exists(dst+temp_):
 			zf.close()
-			dialogok("Error Abort","","","")
+			dialogok(localize(2102, s=['1015']),"","","")
 			sys.exit()
 		
 		if subdir_level <= level:
@@ -1179,7 +1179,7 @@ def copyfiles(source, target):
 	
 def notification_common(custom):
 	if custom == "2": notification(addonString_servicefeatherence(32414).encode('utf-8'),localize(20186),"",4000) #processing, please wait
-	elif custom == "3": notification(localize(257),localize(106) + space + localize(504),"",2000) #Error, Not Empty!
+	elif custom == "3": notification(localize(2102, s=[localize(504)]),"","",2000) #Error, Not Empty!
 	elif custom == "4": notification('$ADDON[script.featherence.service 32401]','',"",2000) #Check network connection!...
 	elif custom == "5": notification('$ADDON[script.featherence.service 32400]','$LOCALIZE[21451]',"",2000) #Check internet connection!...
 	elif custom == "6": notification('Invalid Path','...',"",2000)

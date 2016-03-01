@@ -294,11 +294,11 @@ msgid ""
 msgstr ""
 
 msgctxt "#31089"
-msgid ""
+msgid "Choose YES and the thumbnail will be changed according to the selected action.[CR]In additional the button name will be change as well."
 msgstr ""
 
 msgctxt "#31090"
-msgid ""
+msgid "Action and Thumbnail"
 msgstr ""
 
 msgctxt "#31091"

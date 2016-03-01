@@ -279,6 +279,11 @@
 	<value condition="!Skin.HasSetting(SubMenuAction)">$LOCALIZE[106]</value>
   </variable>
   
+  <variable name="217label2" description="פעולת כפתור משני">
+    <value condition="Skin.HasSetting(BigHomeIcons)">$LOCALIZE[107]</value>
+	<value condition="!Skin.HasSetting(BigHomeIcons)">$LOCALIZE[106]</value>
+  </variable>
+  
   <variable name="220label2">
     <value condition="!Skin.HasSetting(background)">$LOCALIZE[107]</value>
 	<value condition="Skin.HasSetting(background)">$LOCALIZE[106]</value>
@@ -393,6 +398,11 @@
   <variable name="398label2">
     <value condition="!Skin.HasSetting(DefaultActionButtons)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(DefaultActionButtons)">$LOCALIZE[107]</value>
+  </variable>
+  
+  <variable name="399label2">
+    <value condition="!Skin.HasSetting(Action_Thumbnail)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(Action_Thumbnail)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="ReloadSkin_check">

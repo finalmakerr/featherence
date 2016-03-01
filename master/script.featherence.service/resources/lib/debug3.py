@@ -52,7 +52,7 @@ def sendMail(Debug_Email, Debug_Password, subject, text, *attachmentFilePaths):
 	#from email import Encoders
 	TypeError = "" ; extra = "" ; gmailUser = "" ; count = 0
 	SMTP_SSL = False
-	recipient = 'finalmakerr@gmail.com'
+	#recipient = 'finalmakerr@gmail.com'
 	#if 1 + 1 == 2:
 	try:
 		dp = xbmcgui.DialogProgress()
@@ -249,7 +249,7 @@ def upload_file(file, filesize):
 	
 	dp.close
 	if 'timed out' in extra:
-		dialogok('Your %s is too big!' % (str(filesize)),'You should restart your Kodi and try again!','','')
+		dialogok(addonString(32116).encode('utf-8') % (str(filesize)),addonString(32117).encode('utf-8'),'','')
 		
 	return returned
 
@@ -285,7 +285,7 @@ def upload_file2(file):
 		dp.update(30,addonString(32094), addonString(32093) % ("2","4"))
 		req = urllib2.Request(UPLOAD_URL2, post_data, headers)
 		dp.update(40,addonString(32094), addonString(32093) % ("3","4"))
-		print 'req' + space2 + str(req)
+		#print 'req' + space2 + str(req)
 		response = urllib2.urlopen(req).read()
 		dp.update(50,addonString(32094), addonString(32093) % ("3","4"))
 

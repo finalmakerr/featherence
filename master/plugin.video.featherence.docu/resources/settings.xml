@@ -32,15 +32,15 @@
 	
 	<category label="About" description="About">
 		<setting type="lsep" label=""/>
-		<setting type="lsep" label="[B][COLOR=yellow]Featherence[/COLOR][/B][CR]"/>
-		<setting type="lsep" label="[B][COLOR=blue]Facebook[/COLOR][/B]: www.facebook.com/groups/featherence[CR]"/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=1)" label="Featherence Facebook Group Website" option="close" visible="true"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32079]"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32108]"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=1)" label="$ADDON[script.featherence.service 32078]" option="close" visible="true"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32048] $ADDON[script.featherence.service 32049]" visible="true"/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=7)" label="Post on Facebook!" option="close" visible=""/>
-		<setting type="lsep" label="[B][COLOR=blue]YouTube[/COLOR][/B]: www.youtube.com/user/finalmakerr[CR]"/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=32&amp;value=3)" label="Featherence YouTube Channel" option="close" visible="true"/>
-		<setting type="lsep" label="[B][COLOR=blue]Github[/COLOR][/B]: www.github.com/finalmakerr/featherence[CR]"/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=2)" label="Featherence Github Server" option="close" visible="true"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=7)" label="$ADDON[script.featherence.service 32073]" option="close" visible=""/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32072]"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=32&amp;value=3)" label="$ADDON[script.featherence.service 32076]" option="close" visible="true"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32071]"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=2)" label="$ADDON[script.featherence.service 32077]" option="close" visible="true"/>
 		<setting type="lsep" label="[CR]$ADDON[script.featherence.service 32044]"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32045]"/>
 		<setting type="lsep" label=""/>

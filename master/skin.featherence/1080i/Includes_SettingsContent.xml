@@ -313,6 +313,15 @@
 		<visible>![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
 	  </item>
 	  
+	  <item id="217" description="סמלים גדולים">
+		<label>$LOCALIZE[538]</label>
+		<label2>$VAR[217label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/cubes.png</thumb>
+		<property name="rinfo"> $LOCALIZE[31093]</property>
+		<onclick>Skin.ToggleSetting(BigHomeIcons)</onclick>
+		<visible>Container(100).Hasfocus(20)</visible>
+	  </item>
+	  
 	  <item id="218" description="שקיפות (סמן תפריט משני)">
 		<label>$LOCALIZE[31849] ($LOCALIZE[31801])</label>
 		<label2>$INFO[Skin.String(SubMenuMarkOverlay)]</label2>
@@ -908,6 +917,15 @@
 		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
 		<property name="rinfo">$LOCALIZE[31068]</property>
 		<onclick>Skin.ToggleSetting(DefaultActionButtons)</onclick>
+		<visible>Container(100).Hasfocus(25)</visible>
+	  </item>
+	  
+	  <item id="399" description="Action and Thumbnail">
+		<label>$LOCALIZE[31090]</label>
+		<label2>$VAR[399label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
+		<property name="rinfo">$LOCALIZE[31089]</property>
+		<onclick>Skin.ToggleSetting(Action_Thumbnail)</onclick>
 		<visible>Container(100).Hasfocus(25)</visible>
 	  </item>
 	  

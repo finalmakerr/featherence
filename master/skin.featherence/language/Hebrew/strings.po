@@ -294,12 +294,12 @@ msgid ""
 msgstr ""
 
 msgctxt "#31089"
-msgid ""
-msgstr ""
+msgid "Choose YES and the thumbnail will be changed according to the selected action.[CR]In additional the button name will be change as well."
+msgstr "אם תבחר כן, כשתשנה פעולה לכפתור גם התמונה תשתנה בהתאם.[CR]בנוסף לתמונה גם השם כפתור ישתנה בהתאם."
 
 msgctxt "#31090"
-msgid ""
-msgstr ""
+msgid "Action and Thumbnail"
+msgstr "פעולה ותמונה"
 
 msgctxt "#31091"
 msgid "Choose this option in order to display fanart for sub menus's buttons."
