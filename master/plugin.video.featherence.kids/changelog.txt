@@ -3,17 +3,15 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
-Featherence Kids v0.2.4 (xx-Feb-16)
+Featherence Kids v0.2.4 (03-Mar-16)
 ------------------------
 - *Added Google Drive and direct links support.
   Those are also support TV Mode.
   *Send your URLS if you want to share.
-
 - Added 292 Dragon Ball Z episodes.
 - Added Play All menu button.
 - Added TV Mode menu button.
-
-- Major update of movies section.
+- Major update of movies section in Hebrew.
 - Major update of SDAROT-TV links.
 - Minor links update.
 - My Kids:

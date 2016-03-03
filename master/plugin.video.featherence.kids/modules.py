@@ -119,11 +119,11 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	'''עץ השירים'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&wallaNew=item_id%3D2538763')
-		list.append('&wallaNew=item_id%3D2538765')
-		list.append('&wallaNew=item_id%3D2538766')
-		list.append('&wallaNew=item_id%3D2538767')
-		list.append('&wallaNew=item_id%3D2538768')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2538763&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2538765&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2538766&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2538767&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2538768&mode=10&module=wallavod')
 	addDir('עץ השירים',list,17,'','','1',50,getAddonFanart(background, custom="", default=background2))
 
 	'''שירי דתיה בן דור''' 
@@ -137,7 +137,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	'''שירי עוזי חיטמן''' 
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&wallaNew=item_id%3D2538763')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2538763&mode=10&module=wallavod')
 		list.append('&youtube_pl=PLB58E216840771949')
 		list.append('&youtube_pl=PL0145D27A0D5E1810')
 		list.append('&youtube_pl=PLC740DFBAF8C3F893')
@@ -369,9 +369,9 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=3&module=wallavod&name=%d7%9e%d7%99%d7%9b%d7%9c%20%d7%94%d7%a7%d7%98%d7%a0%d7%94%20%d7%a8%d7%95%d7%a6%d7%94%20%d7%9c%d7%94%d7%99%d7%95%d7%aa%20%d7%92%d7%93%d7%95%d7%9c%d7%94&url=seasonId%3d2888149')
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=3&module=wallavod&name=%d7%9e%d7%99%d7%9b%d7%9c%20%d7%94%d7%a7%d7%98%d7%a0%d7%94%20%d7%95%d7%94%d7%98%d7%95%d7%a0%d7%98%d7%95%d7%a0%d7%99%d7%9d&url=seasonId%3d2890384')
-		list.append('&wallaNew=item_id%3D2567432')
-		list.append('&wallaNew=item_id%3D2698903')
-		list.append('&wallaNew=item_id%3D258362')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2567432&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2698903&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D258362&mode=10&module=wallavod')
 		list.append('&custom4=plugin://plugin.video.MakoTV/?url=http%3A%2F%2Fwww.mako.co.il%2Fmako-vod-kids%2FVOD-d04048a07975f31006.htm%3FsCh%3D131102642cecc310%26pId%3D540607453&mode=4&name=%D7%9E%D7%99%D7%9B%D7%9C+%D7%94%D7%A7%D7%98%D7%A0%D7%94+%22%D7%94%D7%A9%D7%99%D7%A8+%D7%A9%D7%91%D7%9C%D7%91%22&iconimage=http://img.mako.co.il/2013/06/24/michal_shir_f.jpg')
 		list.append('&youtube_id=IEeuv8mtRLI')
 	addDir(addonString(10245).encode('utf-8'),list,5,'http://www.pashbar.co.il/pictures/show_big_0523173001376412565.jpg',addonString(102450).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
@@ -460,7 +460,7 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 		list.append('&youtube_id=EKlFN3awN_w')
 		list.append('&youtube_id=UC64wDQFgTq9RpI1P8_p-SxA')
 		list.append('&custom4=plugin://plugin.video.MakoTV/?url=http%3A%2F%2Fwww.mako.co.il%2Fmako-vod-kids%2FVOD-be230098ac9a051006.htm%3FsCh%3D131102642cecc310%26pId%3D540607453&mode=4&name=%D7%A6%27%D7%A4%D7%A6%27%D7%95%D7%9C%D7%94+%D7%95%D7%94%D7%A8%D7%A4%D7%AA%D7%A7%D7%90%D7%95%D7%AA+%D7%94%D7%97%D7%99%D7%95%D7%AA&iconimage=http://img.mako.co.il/2015/10/27/kids_C_animal_adventure_f.jpg')
-		list.append('&wallaNew=item_id%3D2728550')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2728550&mode=10&module=wallavod')
 	addDir(addonString(10768).encode('utf-8'),list,17,'http://yt3.ggpht.com/-4Rd1GQEZnaM/AAAAAAAAAAI/AAAAAAAAAAA/pfQtiUaNjng/s88-c-k-no/photo.jpg',addonString(107680).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
 	
 	'''רובין הוד'''
@@ -1168,7 +1168,6 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f778.jpg&mode=3&name=%d7%9b%d7%9c%d7%91%20%d7%97%d7%a9%d7%90%d7%99%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%20%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&series_id=778&series_name=%d7%9b%d7%9c%d7%91%20%d7%97%d7%a9%d7%90%d7%99%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f778%2ftuff-puppy-%d7%9b%d7%9c%d7%91-%d7%97%d7%a9%d7%90%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nick&name=%eb%ec%e1%20%e7%f9%e0%e9&url=http%3a%2f%2fnick.walla.co.il%2f%3fw%3d%2f%2f2503183')
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nick&name=%ec%fa%f4%e5%f1%20%e0%fa%20%e1%ec%e9%e9%f7&url=http%3a%2f%2fnick.walla.co.il%2f%3fw%3d%2f%2f2853374')
-		list.append('&wallaNew2=http://nickjr.walla.co.il/')
 		list.append('&youtube_id=70mN9C1VigM')
 		list.append('&youtube_id=EZg4C1koHJE')
 	if 'English' in General_LanguageL:
@@ -2308,20 +2307,20 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 	'''הכבשה שושנה'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&wallaNew=item_id%3D2819037')
-		list.append('&wallaNew=item_id%3D2819043')
-		list.append('&wallaNew=item_id%3D2819050')
-		list.append('&wallaNew=item_id%3D2817560')
-		list.append('&wallaNew=item_id%3D2817583')
-		list.append('&wallaNew=item_id%3D2817533')
-		list.append('&wallaNew=item_id%3D2820067')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2819037&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2819043&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2819050&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2817560&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2817583&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2817533&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2820067&mode=10&module=wallavod')
 		list.append('&youtube_pl=PLC47880737B43FF96')
 	addDir(addonString(10619).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1487.jpg',addonString(106190).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
 	
 	'''הנימנונמים'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&wallaNew=seasonId%3d2556132')
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=3&module=wallavod&name=%d7%a4%d7%a8%d7%a7%d7%99%d7%9d%20%d7%9e%d7%9c%d7%90%d7%99%d7%9d&url=seasonId%3d2556132')
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f873.jpg&mode=5&name=%d7%a2%d7%95%d7%a0%d7%94%201&season_id=1&series_id=873&series_name=%d7%94%d7%a0%d7%99%d7%9e%d7%a0%d7%95%d7%9e%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91-hanimnumim%2fseason%2f1&summary=%d7%a1%d7%93%d7%a8%d7%94%20%d7%94%d7%9e%d7%99%d7%95%d7%a2%d7%93%d7%aa%20%d7%9c%d7%92%d7%99%d7%9c%20%d7%94%d7%a8%d7%9a.%20%d7%a9%d7%9c%d7%95%d7%a9%20%d7%91%d7%95%d7%91%d7%95%d7%aa%20%d7%9b%d7%95%d7%9b%d7%91%20(%d7%a0%d7%99%d7%9e%d7%95%2c%20%d7%9e%d7%95%d7%a0%d7%94%20%d7%95%d7%9e%d7%99%d7%9d)%20%d7%97%d7%99%d7%95%d7%aa%20%d7%91%d7%a9%d7%9e%d7%99%d7%99%d7%9d%20%d7%91%d7%99%d7%9f%20%d7%94%d7%a2%d7%a0%d7%a0%d7%99%d7%9d%2c%20%d7%95%d7%a2%d7%95%d7%a1%d7%a7%d7%95%d7%aa%20%d7%91%d7%a9%d7%90%d7%9c%d7%94%20%d7%94%d7%9e%d7%92%d7%99%d7%a2%d7%94%20%d7%9c%d7%90%d7%95%d7%96%d7%a0%d7%99%d7%94%d7%9d%20%d7%9e%d7%97%d7%93%d7%a8%d7%95%20%d7%a9%d7%9c%20%d7%99%d7%9c%d7%93%2c%20%d7%a9%d7%92%d7%a8%20%d7%91%d7%9b%d7%93%d7%95%d7%a8%20%d7%94%d7%90%d7%a8%d7%a5.%20%d7%90%d7%91%d7%99%d7%95%20%d7%a9%d7%9c%20%d7%94%d7%99%d7%9c%d7%93%20%d7%91%d7%93%d7%99%d7%95%d7%a7%20%d7%9e%d7%a1%d7%99%d7%99%d7%9d%20%d7%9c%d7%a1%d7%a4%d7%a8%20%d7%9c%d7%95%20%d7%a1%d7%99%d7%a4%d7%95%d7%a8%20-%20%d7%a9%d7%aa%d7%9e%d7%99%d7%93%20%d7%9e%d7%a1%d7%aa%d7%99%d7%99%d7%9d%20%d7%91%d7%a9%d7%90%d7%9c%d7%94%2c%20%d7%90%d7%99%d7%aa%d7%94%20%d7%9e%d7%aa%d7%9e%d7%95%d7%93%d7%93%d7%99%d7%9d%20%d7%94%d7%a0%d7%99%d7%9e%d7%a0%d7%95%d7%9e%d7%99%d7%9d.%20&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f873%2f%d7%94%d7%a0%d7%99%d7%9e%d7%a0%d7%95%d7%9e%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91-hanimnumim%2fseason%2f1')
 	addDir(addonString(10620).encode('utf-8'),list,6,'http://www.sdarot.pm/media/series/873.jpg',addonString(106200).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
 	
@@ -3089,8 +3088,8 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&youtube_ch=UC64wDQFgTq9RpI1P8_p-SxA')
 		list.append('&youtube_id=_Jsa4Ml77-I')
 		list.append('&youtube_id=BduVyZALCYs')
-		list.append('&wallaNew=item_id%3D2728301')
-		list.append('&wallaNew=item_id%3D2728353')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2728301&mode=10&module=wallavod')
+		list.append('&custom4=plugin://plugin.video.wallaNew.video/?url=item_id%3D2728353&mode=10&module=wallavod')
 	addDir(addonString(10768).encode('utf-8'),list,17,'https://lh5.googleusercontent.com/-4Rd1GQEZnaM/AAAAAAAAAAI/AAAAAAAAChQ/YOHq90H_OZk/photo.jpg',addonString(107680).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
 	
 	'''קאט דה רופ*'''
@@ -3255,7 +3254,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=3&module=wallavod&name=%d7%a4%d7%a8%d7%a7%d7%99%d7%9d%20%d7%9e%d7%9c%d7%90%d7%99%d7%9d&url=seasonId%3d2550328')
-		list.append('&wallaNew=seasonId%3d2710592') #Hebrew
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=3&module=wallavod&name=%d7%a4%d7%a8%d7%a7%d7%99%d7%9d%20%d7%9e%d7%9c%d7%90%d7%99%d7%9d&url=seasonId%3d2710592')
 		list.append('&youtube_pl=PLfcYs4SRZfuJgh8F-yrhcqKuQke6YbHLj') #Hebrew
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLGNVqRT1VxkJBlBVQFiF-FZuzPVRLhUXm') #English
@@ -4382,3 +4381,38 @@ def CATEGORIES200():
 	'''תאילנדית'''
 	addDir(addonString_servicefeatherence(32910).encode('utf-8'),'Thai',90,"http://flaglane.com/download/thai-flag/thai-flag-medium.png",addonString(1).encode('utf-8') % (addonString_servicefeatherence(32910).encode('utf-8')),'1',50, getAddonFanart(200, custom=""))
 
+	
+	
+def	CATEGORIES999():
+	'''testing'''
+	url2 = '0B4tub3thj86KRjhUWGJIMXhlQU0'
+	url2 = '&googledrive=0Bxnz_CSSq5-xVFNIVFZNY24xcTA'
+	url3 = '&googledrive2=http://dragonballz.co.il/%d7%93%d7%a8%d7%92%d7%95%d7%9f-%d7%91%d7%95%d7%9c-%d7%96%d7%99-%d7%9c%d7%a6%d7%a4%d7%99%d7%99%d7%94-%d7%99%d7%a9%d7%99%d7%a8%d7%94/'
+	#url3 = '&googledrive2=http://stackoverflow.com/questions/32575617/using-unicode-hebrew-characters-with-regular-expression'
+	#url2 = 'http://www.supercartoons.net/video/1208/jeepers-its-the-creeper.mp4'
+	image2 = 'http://dragonballz.co.il/wp-content/uploads/2015/03/1058-214x300.jpg'
+	title2 = 'דרגון בול זי פרק 1 – מדובב לעברית'
+	addDir('googledrive',url2,4,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True)) #Test
+	
+	url = os.path.join(templates2_path, '104', 'Dragon Ball Z.txt')
+	addDir('googledrive mode=11 custom_se2',url,11,image2,'testing','1',50, image2) #Test
+	
+	
+	addDir('moridim','http://www.moridim.tv/%D7%A1%D7%A8%D7%98%D7%99%D7%9D.html#types-4',40,'','testing','1',50, "") #Test
+	
+	list = []
+	#list.append('&direct4='+url2)
+	list.append('&googledrive2='+url3)
+	list.append('&googledrive='+url2)
+	#addDir(addonString(10420).encode('utf-8'),url3,40,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
+	
+	addDir('dragonball',url3,40,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
+	
+	
+	addDir('cartoons','http://www.supercartoons.net/cartoons/',40,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True))
+	
+	
+	'''הובוס ספר הקסמים הגדול'''
+	list = []
+	url = 'http://serethd.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fserethd.net%2F%25d7%2590%25d7%25a0%25d7%2599%25d7%259e%25d7%25a6%25d7%2599%25d7%2594%2F%25d7%25a6%25d7%25a2%25d7%25a6%25d7%2595%25d7%25a2-%25d7%25a9%25d7%259c-%25d7%25a1%25d7%2599%25d7%25a4%25d7%2595%25d7%25a8-%25d7%259e%25d7%2593%25d7%2595%25d7%2591%25d7%2591-%25d7%259c%25d7%25a6%25d7%25a4%25d7%2599%25d7%2599%25d7%2594-%25d7%2599%25d7%25a9%25d7%2599%25d7%25a8%25d7%2594.html'
+	addDir('direct8/44',url,44,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
