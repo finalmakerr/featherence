@@ -176,7 +176,6 @@ def CATEGORIES102A(General_LanguageL, background, background2): #עמוד הבא
 		list.append('&youtube_id=i5yQxLraENk') #האסופית
 		list.append('&youtube_id=yfEzE5V409k')
 		list.append('&youtube_pl=PLuDrdycU7c6gcx20C2zPrM87gMfaaoCov') #עוץ לי גוץ לי
-		#list.append('&wallaNew=item_id%3D2833366&name_=זרעים של מסטיק&')
 		
 	'''אנגלית'''
 	if 'English' in General_LanguageL:

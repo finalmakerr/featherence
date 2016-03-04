@@ -5,7 +5,7 @@ WIP (WORK IN PROGRESS)--
 - Add foreign singers, karaoke, liveshows.
 
 ------------------------
-Featherence Music v0.2.5 (xx-Feb-16)
+Featherence Music v0.2.5 (03-Mar-16)
 ------------------------
 - Added Play All menu button.
 - Added TV Mode menu button.
