@@ -916,7 +916,7 @@ def getRandom(custom, min=0, max=100, percent=50):
 	return returned, value
 
 def installaddon(addonid2, update=True):
-	printpoint = "" ; name = 'installaddon'
+	printpoint = "" ; name = 'installaddon' ; addonid2_ = addonid2
 	
 	if not xbmc.getCondVisibility('System.HasAddon('+ addonid2 +')') and not os.path.exists(addons_path + addonid2):
 		printpoint = printpoint + "1"
@@ -934,8 +934,11 @@ def installaddon(addonid2, update=True):
 		else:
 			printpoint = printpoint + '6'
 			if not 'resources.' in addonid2:
-				xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +')')
-	text = str(addonid2)
+				notification('Addon Required:',str(addonid2),'',4000)				
+				#xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +',return)')
+				xbmc.executebuiltin('RunPlugin('+ addonid2 +')')
+	text = 'addonid2_' + space2 + str(addonid2_) + newline + \
+	'addonid2' + space2 + str(addonid2)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	return printpoint

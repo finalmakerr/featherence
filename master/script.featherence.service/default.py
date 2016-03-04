@@ -191,7 +191,7 @@ elif mode == 27:
 	Remote_Support = setRemote_Support(value, Remote_Name, Remote_Support)
 
 	if Remote_Support != "true":
-		if value != '0': dialogok(addonString(32032).encode('utf-8'), addonString(32036).encode('utf-8'),addonString(32101).encode('utf-8'))
+		if value != '0': dialogok(addonString(32032).encode('utf-8'), addonString(32036).encode('utf-8'),addonString(32101).encode('utf-8'),"")
 		sys.exit()
 
 	if Remote_Name == "":
@@ -647,7 +647,8 @@ elif mode >= 200 and mode <= 249:
 					ReloadSkin(admin, force=True)
 				else:
 					pass
-					Custom1000(str(list[returned]),100,str(list2[returned2]),0)
+					xbmc.executebuiltin('Action(Back)')
+					#Custom1000(str(list[returned]),100,str(list2[returned2]),0)
 				
 		text = "path" + space2 + str(path) + newline + \
 		"list" + space2 + str(list) + space + 'returned' + space2 + str(returned) + newline + \

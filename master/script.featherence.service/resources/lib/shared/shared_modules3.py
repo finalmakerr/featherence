@@ -464,11 +464,6 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	url2 = url2.replace(" &googledrive=","&googledrive=")
 	url2 = url2.replace(" &dailymotion_id=","&dailymotion_id=")
 	url2 = url2.replace(" &dailymotion_pl=","&dailymotion_pl=")
-	url2 = url2.replace(" &hotVOD=","&hotVOD=")
-	url2 = url2.replace(" &sdarot=","&sdarot=")
-	url2 = url2.replace(" &seretil=","&seretil=")
-	url2 = url2.replace(" &wallaNew2=","&wallaNew2=")
-	url2 = url2.replace(" &wallaNew=","&wallaNew=")
 	
 	url2 = url2.replace(" &youtube_ch=","&youtube_ch=")
 	url2 = url2.replace(" &youtube_pl=","&youtube_pl=")
@@ -562,28 +557,6 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					finalurl='plugin://plugin.video.gdrive?mode=streamURL&url=https://docs.google.com/file/d/'+x2+'/preview'
 					'''---------------------------'''
 					
-				elif "&hotVOD=" in x:
-					x = x.replace("&hotVOD=","")
-					if "FCmmAppVideoApi_AjaxItems" in x:
-						finalurl="plugin://plugin.video.hotVOD.video/?url="+x+"&mode=4"
-						'''---------------------------'''
-				elif "&sdarot=" in x:
-					x, z, summary, mode_, series_name, season_id = sdarot_(x)
-					if mode_ == 10:
-						finalurl="plugin://plugin.video.sdarot.tv/?mode=4&"+x
-				elif "&seretil=" in x:
-					x = x.replace("&seretil=","")
-					#finalurl="plugin://plugin.video.sdarot.tv/?mode=4&"+x
-					'''---------------------------'''
-				elif "&wallaNew=" in x:
-					x = x.replace("&wallaNew=","")
-					if "item_id" in x: finalurl="plugin://plugin.video.wallaNew.video/?url="+x+"&mode=10&module=wallavod"
-					'''---------------------------'''
-				elif "&wallaNew2=" in x:
-					x = x.replace("&wallaNew2=","")
-					#z = '1'
-					#addDir(name + space + str(i), "plugin://plugin.video.wallaNew.video/?url="+x+"&mode="+z+"&module=nickjr", 8, iconimage, desc, num, viewtype)
-					'''---------------------------'''
 				elif "&youtube_ch=" in x:
 					#try:
 					if 1 + 1 == 2:
@@ -720,40 +693,6 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						mode = 3
 					else:
 						addDir(str(i) + '.' + space + title_L[0], x, 3, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
-				else:
-					if "&wallaNew=" in x:
-						x = x.replace("&wallaNew=","")
-						if "item_id" in x: z = '10' ; m = 4
-						elif "seriesId" in x: z = '5' ; m = 8
-						elif "seasonId" in x: z = '3' ; m = 8
-						elif "genreId" in x: z = '2' ; m = 8
-						else: z = '10' ; m = 8
-						
-						addDir(str(i) + '.' + space + title_L[0] + space + '[Walla]', "plugin://plugin.video.wallaNew.video/?url="+x+"&mode="+z+"&module=wallavod", m, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
-						'''---------------------------'''
-					elif "&wallaNew2=" in x:
-						x = x.replace("&wallaNew2=","")
-						z = '1'
-						addDir(str(i) + '.' + space + title_L[0] + space + '[Walla]', "plugin://plugin.video.wallaNew.video/?url="+x+"&mode="+z+"&module=nickjr", 8, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
-						'''---------------------------'''
-					elif "&sdarot=" in x:
-						x, z, summary, mode_, series_name, season_id = sdarot_(x)
-						addDir(str(i) + '.' + space + title_L[0] + space + '[Sdarot-TV]', "plugin://plugin.video.sdarot.tv/?mode="+z+summary+series_name+"&image="+thumb_L[0]+"&name="+season_id+title_L[0]+"&"+x, int(mode_), thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
-					elif "&seretil=" in x:
-						x = x.replace("&seretil=","")
-						if "?mode=211&url=http%3a%2f%2fseretil.me" in x: name2 = '[COLOR=red]' + title_L[0] + space + str(i) + '[/COLOR]'
-						else: name2 = title_L[0] + space + str(i)
-						addDir(name2, "plugin://plugin.video.seretil/"+x, 8, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
-						'''---------------------------'''
-					elif "&hotVOD=" in x:
-						x = x.replace("&hotVOD=","")
-						if "TopSeriesPlayer" in x: z = '3&module=%2fCmn%2fApp%2fVideo%2fCmmAppVideoApi_AjaxItems%2f0%2c13776%2c'
-						elif "FCmmAppVideoApi_AjaxItems" in x: z = '4'
-						else: z = '3&module=%2fCmn%2fApp%2fVideo%2fCmmAppVideoApi_AjaxItems%2f0%2c13776%2c'
-						addDir(str(i) + '.' + space + title_L[0], "plugin://plugin.video.hotVOD.video/?mode="+z+"&url="+x, 8, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
-						'''---------------------------'''	
-					
-					else: pass
 				
 				if 1 + 1 == 2:
 					if 'M' in printpoint:
@@ -882,41 +821,6 @@ def MultiVideos_play2(finalurl, pl, playlist, printpoint):
 	printlog(title="MultiVideos_play2", printpoint=printpoint, text=text, level=0, option="")
 	return pl, playlist, printpoint
 	
-def sdarot_(x):
-	'''get required data for &sdarot='''
-	x = x.replace("&sdarot=","")
-	if "episode_id=" in x: z = '4'
-	elif "season_id" in x: z = '5'
-	elif "series_id=" in x: z = '3'
-	else: z = '2'
-
-	if 1 + 1 == 2:
-		if not "summary=" in x:
-			if z == '3':
-				if not "summary" in x: summary = "&summary"
-				else: summary = ''
-			else: summary = "&summary="
-			#elif desc_ != "": summary = "&summary="+desc_
-		else: summary = ''
-	else: summary = ''
-
-	if not "series_name=" in x: series_name = "&series_name="
-	else: series_name = ''
-	if 'series_id' in x:
-		if not "season_id=" in x: season_id = "&season_id="
-		else: season_id = ''
-	else: season_id = ''
-	
-	if z == '4': mode_ = 10
-	else: mode_ = 8
-	
-	text = 'x' + space2 + str(x) + newline + \
-	'z' + space2 + str(z) + space + 'summary' + space2 + str(summary) + newline + \
-	'mode_' + space2 + str(mode_) + newline + \
-	'series_name' + space2 + str(series_name) + newline + \
-	'season_id' + space2 + str(season_id)
-	printlog(title='sdarot_', printpoint="", text=text, level=0, option="")
-	return x, z, summary, mode_, series_name, season_id
 	
 def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=addonID, onlydata=True):
 	'''return API information for YouTube and DailyMotion'''
@@ -1410,17 +1314,25 @@ def getAddonInfo(addon):
 	
 def update_view(url, num, viewtype, ok=True):
 	printpoint = ""
-	if 'plugin.' in num:
-		if not xbmc.getCondVisibility('System.HasAddon('+ num +')') or not os.path.exists(os.path.join(addons_path, num)):
+	if 'plugin.' in num or 'plugin://plugin.' in url:
+		if not 'plugin.' in num:
+			num_ = find_string(url, "plugin://", '/')
+		else:
+			num_ = num
+			
+		num_ = num_.replace("plugin://","")
+		num_ = num_.replace("/","")
+			
+		if not xbmc.getCondVisibility('System.HasAddon('+ num_ +')') or not os.path.exists(os.path.join(addons_path, num_)):
 			notification_common("24")
-			installaddon(num, update=True)
+			installaddon(num_, update=True)
 			xbmc.sleep(2000)
 	
 	if '&activatewindow=' in url:
 		printpoint = printpoint + '2'
 	if '&' in url and '=' in url:
 		url_ = find_string(url, "&", '=')
-		list = ['&youtube_pl=', '&youtube_id=', '&youtube_ch=', '&youtube_se=', '&sdarot=', '&activatewindow=']
+		list = ['&youtube_pl=', '&youtube_id=', '&youtube_ch=', '&youtube_se=', '&activatewindow=']
 		if url_ in list:
 			url = url.replace(url_,"",1)
 	
@@ -3088,7 +3000,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 	if printpoint != "9":
 		list = ['-> (Exit)']
 		list.append(addonString_servicefeatherence(32430).encode('utf-8')) #Edit URL
-		list.append(addonString_servicefeatherence(41).encode('utf-8')) #Rename Button
+		list.append(addonString_servicefeatherence(32433).encode('utf-8')) #Rename Button
 		if thumb == "": list.append(addonString_servicefeatherence(32428).encode('utf-8')) #Add Thumb
 		else: list.append(addonString_servicefeatherence(32429).encode('utf-8')) #Remove Thumb
 		if desc == "": list.append(addonString_servicefeatherence(32424).encode('utf-8')) #Add Description
@@ -3408,41 +3320,6 @@ def getLists(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	
 	setProperty('script.featherence.service_random', "", type="home")
 	xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=17&value='+addonID+')')
-	
-def	CATEGORIES999():
-	'''testing'''
-	url2 = '0B4tub3thj86KRjhUWGJIMXhlQU0'
-	url2 = '&googledrive=0Bxnz_CSSq5-xVFNIVFZNY24xcTA'
-	url3 = '&googledrive2=http://dragonballz.co.il/%d7%93%d7%a8%d7%92%d7%95%d7%9f-%d7%91%d7%95%d7%9c-%d7%96%d7%99-%d7%9c%d7%a6%d7%a4%d7%99%d7%99%d7%94-%d7%99%d7%a9%d7%99%d7%a8%d7%94/'
-	#url3 = '&googledrive2=http://stackoverflow.com/questions/32575617/using-unicode-hebrew-characters-with-regular-expression'
-	#url2 = 'http://www.supercartoons.net/video/1208/jeepers-its-the-creeper.mp4'
-	image2 = 'http://dragonballz.co.il/wp-content/uploads/2015/03/1058-214x300.jpg'
-	title2 = 'דרגון בול זי פרק 1 – מדובב לעברית'
-	addDir('googledrive',url2,4,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True)) #Test
-	
-	url = os.path.join(templates2_path, '104', 'Dragon Ball Z.txt')
-	addDir('googledrive mode=11 custom_se2',url,11,image2,'testing','1',50, image2) #Test
-	
-	
-	addDir('moridim','http://www.moridim.tv/%D7%A1%D7%A8%D7%98%D7%99%D7%9D.html#types-4',40,'','testing','1',50, "") #Test
-	
-	list = []
-	#list.append('&direct4='+url2)
-	list.append('&googledrive2='+url3)
-	list.append('&googledrive='+url2)
-	#addDir(addonString(10420).encode('utf-8'),url3,40,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
-	
-	addDir('dragonball',url3,40,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
-	
-	
-	addDir('cartoons','http://www.supercartoons.net/cartoons/',40,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True))
-	
-	
-	'''הובוס ספר הקסמים הגדול'''
-	list = []
-	url = 'http://serethd.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fserethd.net%2F%25d7%2590%25d7%25a0%25d7%2599%25d7%259e%25d7%25a6%25d7%2599%25d7%2594%2F%25d7%25a6%25d7%25a2%25d7%25a6%25d7%2595%25d7%25a2-%25d7%25a9%25d7%259c-%25d7%25a1%25d7%2599%25d7%25a4%25d7%2595%25d7%25a8-%25d7%259e%25d7%2593%25d7%2595%25d7%2591%25d7%2591-%25d7%259c%25d7%25a6%25d7%25a4%25d7%2599%25d7%2599%25d7%2594-%25d7%2599%25d7%25a9%25d7%2599%25d7%25a8%25d7%2594.html'
-	addDir('direct8/44',url,44,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
-
 	
 def listURLS(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	try: page  = int(num)

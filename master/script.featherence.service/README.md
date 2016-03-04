@@ -176,37 +176,32 @@ RunScript(script.featherence.service,,?mode=25)
 	```
 
 	 * **Available Modes:**
-		```
-		PLAY VIDEO
-		METHOD 1: MODE 4 | URL = text
-		METHOD 2: MODE 5/17 | URL = text
-			  - YOUTUBE VIDEO ID: URL = &youtube_id=text
-			  - YOUTUBE PLAYLIST ID: URL = &youtube_pl=text
-			  - DAILYMOTION VIDEO ID: URL = &dailymotion_id=text
-			  - DAILYMOTION PLAYLIST ID: URL = &dailymotion=text
-			  - GOOGLE DRIVE VIDEO ID: URL = &googledrive=text
-			  - *ANY VIDEO FROM ADDON: URL = &custom4=text
-			  *use ctrl+shift+P on the preferred location!
-			  
-			  EXAMPLES USAGE:
-			 * 
-			 * 
-		```
 		
+		* **MODE 4 - PLAY VIDEO / PLAYLIST:**
+			```
+			list = []
+		    list.append('&youtube_pl=PLGnTTJWIWt4dcv7Z_cLyZVERGWsuHIt18')
+		    list.append('&youtube_id=WFwHq6cY0403')
+			list.append('&dailymotion_pl=x3e520')
+		    list.append('&dailymotion_id=x26cyah')
+		    list.append('&googledrive=0B7-ya5fAYJHWS0RQS244LTh6akU')
+		    list.append('&custom4=plugin://plugin.video.youtube/play/?video_id=uwHQEpmRjhw')
+			addDir("MODE 4 - PLAY DIRECT VIDEO",list,44,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
+			  
+			- &custom4: ANY VIDEO FROM ADDON. See GET CURRENT PATH INFORMATION.
+			  
 		* **MODE 44 - PLAY DIRECT VIDEO:**
 			```
-			* addDir("MODE 44 - PLAY DIRECT VIDEO",<DIRECT URL>,44,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
-			* list = []
-			  list.append('&direct4=' + <DIRECT URL>)
-			  addDir("MODE 44 - PLAY DIRECT VIDEO",list,44,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
+			list = []
+			list.append('&direct4=' + <DIRECT URL>)
+			addDir("MODE 44 - PLAY DIRECT VIDEO",list,44,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
 			```		
 		
 		* **MODE 42 - LIST DIRECT VIDEO:**
 			```
-			* addDir("MODE 42 - PLAY DIRECT VIDEO",<DIRECT URL>,44,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
-			* list = []
-			  list.append('&direct4=' + <DIRECT URL>)
-			  addDir("MODE 42 - LIST DIRECT VIDEO",list,44,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
+			list = []
+			list.append('&direct4=' + <DIRECT URL>)
+			addDir("MODE 42 - LIST DIRECT VIDEO",list,44,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
 			```	
 		
 		* **MODE 8 - SHOW FROM ANOTHER ADDON:**
@@ -228,80 +223,59 @@ RunScript(script.featherence.service,,?mode=25)
 			  addDir("*MODE 13 - SHOW FROM PLAYLIST",list,6,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
 			```	
 		
-		```
-		SHOW FROM SPECIFIC WEBSITES
-		METHOD 1: MODE 40 | URL = text
-		METHOD 2: MODE 6/17 | URL = text | &direct8=text
-		EXAMPLES USAGE:
-			 * 
-			 *  
-		```
+		* **MODE 40 - SHOW FROM SPECIFIC WEBSITES: (WIP!!)**
+			```
+			list = []
+			list.append('&direct8=' + <URL>)
+			addDir("MODE 40 - SHOW FROM SPECIFIC WEBSITES",list,6,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
+			```
 		
-		```
-		SHOW FROM SPECIFIC WEBSITES
-		METHOD 1: MODE 40 | URL = text
-		METHOD 2: MODE 6/17 | URL = text | &direct8=text
-		EXAMPLES USAGE:
-			 * 
-			 *  
-		```
-		
-		```
-		LIST&PLAY FROM SPECIFIC WEBSITES
-		METHOD 1: MODE 41 | URL = text
-		METHOD 2: MODE 6/17 | URL = text | &direct8=text
-		EXAMPLES USAGE:
-			 * 
-			 *  
-		```
+		* **MODE 41 - LIST & PLAY FROM SPECIFIC WEBSITES: (WIP!!)**
+			```
+			list = []
+			list.append('&direct4=' + <URL>)
+			addDir("MODE 41 - LIST & PLAY FROM SPECIFIC WEBSITES",list,6,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
+			```	
 		
 		* **MODE 9 - SHOW FROM SHOW YOUTUBE CHANNEL:**
 			```
-			* addDir("*MODE 9 - SHOW FROM SHOW YOUTUBE CHANNEL",'finalmakerr',9,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
-			* list = []
-			  list.append('&youtube_ch=finalmakerr')
-			  list.append('&youtube_ch=finalmakerr/playlists')
-			  addDir("*MODE 9 - SHOW FROM SHOW YOUTUBE CHANNEL",list,6,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
+			list = []
+			list.append('&youtube_ch=finalmakerr')
+			list.append('&youtube_ch=finalmakerr/playlists')
+			addDir("*MODE 9 - SHOW FROM SHOW YOUTUBE CHANNEL",list,6,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
 			```	
 		
-		```
-		SEARCH YOUTUBE
-		OPEN: MODE 3 | URL = text
-		FEATHERENCE: MODE 5/6/17 | URL = &youtube_se=text
-		TIP: You may use:
-		"&videoDuration=text&" | text = short/medium/long
-		"&videoDefinition=text&" | text = standard/high
-
-		EXAMPLES USAGE:
-			 * addDir(localize(137),3,'song',featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % ('song'),'1',"", getAddonFanart(background="", default="", custom=""))
-			 * list = []
-				list.append('&youtube_se=Featherence')
-				list.append('&youtube_se=Kodi')
-				addDir(localize(137),list,17,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % ('Featherence & Kodi'),'1',"", getAddonFanart(background="", default="", custom=""))
-		```
+		* **MODE 3 - YOUTUBE SEARCH:**
+			```
+			list = []
+			list.append('&youtube_se=Featherence')
+			list.append('&youtube_se=Kodi')
+			addDir('MODE 3 - YOUTUBE SEARCH',list,17,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(23).encode('utf-8') % ('Featherence & Kodi'),'1',"", getAddonFanart(background="", default="", custom=""))
+			```	
 		
-		```
-		READ LINE BY LINE FROM FILE AND SEARCH IN YOUTUBE
-		PLAY ALL: MODE 2 | URL = <file path>
-		TIP: os.path.join(addonPath, 'resources', 'templates2', '')
-		addonPath = current addon
-		EXAMPLES USAGE:
-			 * 
-			 * 
-		```
-		
-		```
-		READ LINE BY LINE FROM FILE - VIEW AND PLAY
-		METHOD 1: MODE 11 | URL = <file path>
-		METHOD 2: MODE 5/6/17 | URL = &custom_se11=<file path>
-		FILE STRUCTURE: <url=""/><title=""/><thumb=""/><desc=""/>
-		URL EXAMPLES: <url="&googledrive=<ID>"/>
-		TIP: os.path.join(addonPath, 'resources', 'templates2', '')
-		addonPath = current addon
-		EXAMPLES USAGE:
-			 * 
-			 * 
-		```
+		* **MODE 2 - MULTI YOUTUBE SEARCH:**
+			```
+			file = os.path.join(addonPath, 'resources', 'templates2', 'Featherence.txt')
+			addDir('MODE 2 - MULTI YOUTUBE SEARCH',file,2,featherenceserviceicons_path + 'se.png','description','1',"", getAddonFanart(background="", default="", custom=""))
+			```
+			
+			* **File Structure:**
+			```
+			Featherence
+			```
+			
+		* **MODE 11 - MULTI COMMANDS FROM TXT:**
+			```
+			file = os.path.join(addonPath, 'resources', 'templates2', 'Featherence2.txt')
+			list = []
+			list.append('&custom_se11=' + file)
+			addDir('MODE 11 - MULTI COMMANDS FROM TXT',list,17,'http://i.imgur.com/ZVxYi7I.png','description','1',"", getAddonFanart(background="", default="", custom=""))
+			```
+			
+			* **File Structure:**
+			```
+			<url="&googledrive=0B7-ya5fAYJHWS0RQS244LTh6akU"/><title="Episode 1"/><thumb="http://i.imgur.com/ZVxYi7I.png"/><desc="description"/>
+			```
 		
 		```
 		GET INFO FROM API TO ADDDIR

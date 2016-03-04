@@ -6,10 +6,7 @@ from shared_modules import *
 
 def mode0(admin, name, printpoint):
 	'''test'''
-	path = "Z:/userdata/library/pictures/אלבום/"
-	if os.path.exists(to_unicode(path)):
-		notification('yes!','','',2000)
-	pass
+	xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
 	
 def mode5(value, admin, name, printpoint):
 	'''startup'''
@@ -42,8 +39,9 @@ def mode5(value, admin, name, printpoint):
 		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)')
 		setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
 		
-		installaddon('resource.images.weathericons.outline')
-		installaddon('resource.images.weatherfanart.single')
+		#installaddon('resource.images.weathericons.outline')
+		#installaddon('resource.images.weatherfanart.single')
+		#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
 	
 def mode8(admin, name, printpoint):
 	'''------------------------------

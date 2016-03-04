@@ -291,11 +291,11 @@ def listURLS_(mode, name, url, iconimage, desc, page, viewtype, fanart):
 	
 	try: test = page + 1
 	except: page = 1
-	if 'http://www.supercartoons.net/' in url: id_L, title_L, thumb_L, desc_L, extra, url, html, match, match_page, total, pageL = listURLS_1(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc, page, viewtype, fanart)
-	elif 'www.moridim.tv' in url: id_L, title_L, thumb_L, desc_L, extra, url, html, match, match_page, total, pageL = listURLS_3(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc, page, viewtype, fanart)
-	elif '&googledrive2=' in url:
+	if '' in url: id_L, title_L, thumb_L, desc_L, extra, url, html, match, match_page, total, pageL = listURLS_1(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc, page, viewtype, fanart)
+	elif '' in url: id_L, title_L, thumb_L, desc_L, extra, url, html, match, match_page, total, pageL = listURLS_3(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc, page, viewtype, fanart)
+	elif '' in url:
 		url = url.replace('&googledrive2=',"")
-		if 'http://dragonballz.co.il' in url:
+		if '' in url:
 			id_L, title_L, thumb_L, desc_L, extra, url, html, match, match_page, total, pageL = listURLS_2(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc, page, viewtype, fanart)
 	else: printpoint = '9'
 	

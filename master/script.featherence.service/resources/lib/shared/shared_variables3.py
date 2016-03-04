@@ -17,9 +17,6 @@ printfirst = addonName + ": !@# "
 try: pluginhandle = int(sys.argv[1])
 except: pluginhandle = ""
 
-import geturllib
-geturllib.SetCacheDir(xbmc.translatePath(os.path.join('special://profile', 'addon_data', addonID ,'cache')))
-
 templates2_path = os.path.join(addonPath, 'resources', 'templates2', '')
 
 '''---------------------------'''

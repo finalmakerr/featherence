@@ -1,111 +1,6 @@
 msgid ""
 msgstr ""
 
-#TEMP!"
-msgctxt "#8#"
-msgid "Choose this option to play contents at random and in sequence!"
-msgstr "בחר באפשרות זו בכדי לנגן תכנים באקראי וברצף!"
-
-#TEMP!"
-msgctxt "#16"
-msgid "Show TV Mode dialog"
-msgstr "הצג דיאלוג מצב טלוויזיה"
-
-#TEMP!"
-msgctxt "#17"
-msgid "Allow Random TV Mode"
-msgstr "אפשר מצב טלוויזיה אקראי"
-
-#TEMP!"
-msgctxt "#20"
-msgid "Auto View Mode"
-msgstr "מצב תצוגה אוטומטית"
-
-#TEMP!"
-msgctxt "#23"
-msgid "Search %s by name"
-msgstr "חפש %s לפי שם"
-
-#TEMP"
-msgctxt "#24"
-msgid "Show Changelog"
-msgstr "הצג עדכונים אחרונים"
-
-#TEMP"
-msgctxt "#25"
-msgid "ChangLog will appear once on every Kodi session[CR] (If recent update has occured)."
-msgstr "עדכונים אחרונים יופיעו פעם אחת בכל הפעלה של הקודי [CR](אם ההרחבה עודכנה לאחרונה)."
-
-#TEMP"
-msgctxt "#26"
-msgid "Total days for displaying Recent Updates"
-msgstr "מספר ימים להצגת עדכונים אחרונים"
-
-#TEMP"
-msgctxt "#28"
-msgid "Allow Backgrounds"
-msgstr "אפשר רקעים"
-
-#TEMP"
-msgctxt "#31"
-msgid "Choose an option from the list"
-msgstr "בחר אפשרות מהרשימה"
-
-#TEMP"
-msgctxt "#62"
-msgid "Note: Random play isn't enabled!"
-msgstr "לתשומת לבך: האפשרות לניגון אקראי אינה מופעלת!"
-
-#TEMP"
-msgctxt "#77"
-msgid "By"
-msgstr "לפי"
-
-#TEMP"
-msgctxt "#79"
-msgid "Button Action"
-msgstr "פעולת כפתור"
-
-#TEMP"
-msgctxt "#80"
-msgid "Button"
-msgstr "כפתור"
-
-#TEMP"
-msgctxt "#81"
-msgid "Welcome"
-msgstr "ברוך הבא"
-
-#TEMP"
-msgctxt "#82"
-msgid "Choose a video file to be play on startup.[CR]Note: This feature trigger on AFK only."
-msgstr "בחר קובץ וידאו אשר יתנגן עם פתיחת המכשיר.[CR]הערה: פעולה זו אינה חלה במקרים בהם המשתמש נוגע במקשים."
-
-#TEMP"
-msgctxt "#83"
-msgid "Play video in a full screen."
-msgstr "נגן וידאו במסך מלא."
-
-#TEMP"
-msgctxt "#86"
-msgid "New %s Button.."
-msgstr "כפתור %s חדש.."
-
-#TEMP"
-msgctxt "#87"
-msgid "Choose this option to create a smart playlist of your own."
-msgstr "בחר באפשרות זאת בכדי ליצור רשימות השמעה חכמות משלך."
-
-#TEMP"
-msgctxt "#88"
-msgid "[CR][CR]You may also use the context menu button in order to save,load or reset your entire settings."
-msgstr "[CR][CR]באפשרותך להשתמש בכפתור תפריט בכדי לשמור, לטעון או לאפס את כלל הכפתורים האישיים בחלון זה."
-
-#TEMP"
-msgctxt "#89"
-msgid "[CR]Note: You may create unlimited number of links in a single playlist!"
-msgstr "[CR]לידיעתך: ניתן ליצור מספר בלתי מוגבל של קישורים ברשימת השמעה בודדת!"
-
 #Widget"
 msgctxt "#32001"
 msgid "Recommended"
@@ -1741,7 +1636,7 @@ msgid "Allow Random TV Mode"
 msgstr "אפשר מצב טלוויזיה אקראי"
 
 msgctxt "#32419"
-msgid "ChangLog will appear once on every Kodi session[CR] (If recent update has occured)."
+msgid "ChangeLog will appear once on every Kodi session[CR] (If recent update has occured)."
 msgstr "עדכונים אחרונים יופיעו פעם אחת בכל הפעלה של הקודי [CR](אם ההרחבה עודכנה לאחרונה)."
 
 msgctxt "#32420"
@@ -2068,7 +1963,3 @@ msgstr ""
 msgctxt "#32999"
 msgid ""
 msgstr ""
-
-msgctxt "#33300"
-msgid "Action completed successfully"
-msgstr "הפעולה הסתיימה בהצלחה!"

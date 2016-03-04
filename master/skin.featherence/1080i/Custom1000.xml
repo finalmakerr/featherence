@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1000" description="">
-  <defaultcontrol always="true"></defaultcontrol>
+  <!--<defaultcontrol always="true"></defaultcontrol>-->
   <onload condition="!System.HasAlarm(timeout)">AlarmClock(timeout,Action(Back),00:10,silent)</onload>
   <onunload>CancelAlarm(timeout,true)</onunload>
   <onunload condition="!IsEmpty(Window(home).Property(1000progress))">ClearProperty(1000progress,home)</onunload>
