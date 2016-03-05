@@ -6,7 +6,10 @@ from shared_modules import *
 
 def mode0(admin, name, printpoint):
 	'''test'''
-	xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
+	pass
+	#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
+	#installaddon('resource.images.weathericons.outline')
+	#installaddon('resource.images.weatherfanart.single')
 	
 def mode5(value, admin, name, printpoint):
 	'''startup'''

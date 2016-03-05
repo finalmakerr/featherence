@@ -928,24 +928,7 @@ def installaddon(addonid2, update=True):
 def installaddonP(addon, update=True):
 	printpoint = "" ; name = 'installaddonP'
 		
-	if addon == 'resource.images.weathericons.outline': #FIXED PATH - *MASTER (PATH EXISTS!!)
-		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.outline/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
-			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
-			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
-			else: printpoint = printpoint + "9"
-		elif "9" in printpoint: pass
-		else: printpoint = printpoint + "7"
-
-	elif addon == 'resource.images.weatherfanart.single': #FIXED PATH
-		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("http://mirrors.xbmc.org/addons/jarvis/resource.images.weatherfanart.single/resource.images.weatherfanart.single-0.0.5.zip", addon + ".zip", packages_path, addons_path, silent=True)
-			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
-			else: printpoint = printpoint + "9"
-		elif "9" in printpoint: pass
-		else: printpoint = printpoint + "7"
-	
-	elif addon == 'script.module.unidecode': #FIXED PATH
+	if addon == 'script.module.unidecode': #FIXED PATH
 		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			DownloadFile("http://mirrors.kodi.tv/addons/frodo/script.module.unidecode/script.module.unidecode-0.4.16.zip", addon + ".zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
