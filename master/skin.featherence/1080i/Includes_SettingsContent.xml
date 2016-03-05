@@ -1066,7 +1066,8 @@
 		<property name="rinfo">$LOCALIZE[31847] $LOCALIZE[221].[CR][CR]Your IP: $INFO[Network.IPAddress]</property>
 		<onclick>RunScript(script.featherence.service,,?mode=41)</onclick>
 		<visible>Container(100).Hasfocus(2)</visible>
-		<visible></visible>
+		<visible>System.Platform.Linux | System.Platform.Linux.RaspberryPi</visible>
+		<visible>System.HasAddon(service.openelec.settings)</visible>
 	  </item>
 	  <item id="22" description="הגדרת שלט טלוויזיה">
 		<label>$ADDON[script.featherence.service 32066]</label>

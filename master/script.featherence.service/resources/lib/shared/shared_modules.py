@@ -365,34 +365,32 @@ def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percent
 	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = "" ; returned = ""
 	downloadpath2 = os.path.join(downloadpath, filename)
 	
-	if 'https://www.dropbox.com/s//' in url: printpoint = printpoint + '9'
+	scriptfeatherenceservice_downloading = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
+	printpoint = printpoint + "1"
+	from commondownloader import *
+	
+	if scriptfeatherenceservice_downloading != "":
+		returned = "skip"
+		notification_common("23")
+		xbmc.executebuiltin('AlarmClock(scriptfeatherenceservice_downloading,ClearProperty(script.featherence.service_downloading,home),10,silent)')
 	else:
-		scriptfeatherenceservice_downloading = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
-		printpoint = printpoint + "1"
-		from commondownloader import *
+		if xbmc.getCondVisibility('System.HasAlarm(scriptfeatherenceservice_downloading)'): xbmc.executebuiltin('CancelAlarm(scriptfeatherenceservice_downloading)')
+		setProperty('script.featherence.service_downloading', 'true', type="home")
+		returned = doDownload(url, downloadpath2, filename, "", "", "", silent=silent, percentinfo=percentinfo)
 		
-		if scriptfeatherenceservice_downloading != "":
-			returned = "skip"
-			notification_common("23")
-			xbmc.executebuiltin('AlarmClock(scriptfeatherenceservice_downloading,ClearProperty(script.featherence.service_downloading,home),10,silent)')
-		else:
-			if xbmc.getCondVisibility('System.HasAlarm(scriptfeatherenceservice_downloading)'): xbmc.executebuiltin('CancelAlarm(scriptfeatherenceservice_downloading)')
-			setProperty('script.featherence.service_downloading', 'true', type="home")
-			returned = doDownload(url, downloadpath2, filename, "", "", "", silent=silent, percentinfo=percentinfo)
-			
-			try: test = 1
-			except Exception, TypeError:
-				extra = extra + newline + "TypeError" + space2 + str(TypeError)
-				returned = str(TypeError)
-			
-			if returned == "ok":
-				printpoint = printpoint + "3"
-				ExtractAll(downloadpath2, extractpath)
-			if downloadpath2 != downloadpath:
-				printpoint = printpoint + "4"
-				removefiles(downloadpath2)
-			
-			setProperty('script.featherence.service_downloading', '', type="home")
+		try: test = 1
+		except Exception, TypeError:
+			extra = extra + newline + "TypeError" + space2 + str(TypeError)
+			returned = str(TypeError)
+		
+		if returned == "ok":
+			printpoint = printpoint + "3"
+			ExtractAll(downloadpath2, extractpath)
+		if downloadpath2 != downloadpath:
+			printpoint = printpoint + "4"
+			removefiles(downloadpath2)
+		
+		setProperty('script.featherence.service_downloading', '', type="home")
 		
 	'''------------------------------
 	---PRINT-END---------------------
@@ -406,22 +404,6 @@ def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percent
 	extra
 	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
 	'''---------------------------'''
-
-def terminal(command,desc="", remote=False):
-	'''Execute commands to OS terminal'''
-	import subprocess
-	name = 'terminal' ; printpoint = "" ; TypeError = "" ; extra = "" ; output = ""
-
-	process = subprocess.Popen(command,stdout=subprocess.PIPE,shell=True)
-	output = process.communicate()[0]
-				
-	text = desc + space2 + str(output) + extra
-	try: printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
-	except Exception, TypeError:
-		extra = extra + newline + "TypeError" + space2 + str(TypeError)
-		printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
-		'''---------------------------'''
-	return output
 
 def find_string(findin, findwhat, findwhat2):
 	'''Return a string in a variable from x to y'''

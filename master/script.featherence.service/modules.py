@@ -719,8 +719,8 @@ def mode41(admin, name, printpoint):
 	'''------------------------------
 	---Network-Settings--------------
 	------------------------------'''
-	if systemplatformandroid: terminal('am start -a android.intent.action.MAIN -n com.android.settings/.Settings',name)
-	elif systemplatformwindows: terminal('rundll32.exe van.dll,RunVAN',name)
+	if systemplatformandroid: pass
+	elif systemplatformwindows: pass
 	elif systemplatformlinux and xbmc.getCondVisibility('System.HasAddon(service.openelec.settings)'): xbmc.executebuiltin('RunScript(service.openelec.settings)')
 	'''---------------------------'''
 
@@ -1976,8 +1976,8 @@ def mode512(value):
 		else: url = value
 		
 		name = localize(443)
-		if systemplatformwindows: terminal('start /max '+url+'','')
-		elif systemplatformandroid: terminal('adb shell am start -a android.intent.action.VIEW -d '+url+'','')
+		if systemplatformwindows: os.system('start /max '+url+'')
+		elif systemplatformandroid: os.system('adb shell am start -a android.intent.action.VIEW -d '+url+'')
 		elif systemplatformlinux: xbmc.executebuiltin('RunAddon(browser.chromium)')
 		else: notification_common('25')
 
