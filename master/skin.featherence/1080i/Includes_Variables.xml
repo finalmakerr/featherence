@@ -269,7 +269,7 @@
 	<value description="Home-Movies" condition="Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(year))">$INFO[Container(311).ListItem.Property(Year)]</value>
 	<value description="Home-TV" condition="Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(year))">$INFO[Container(312).ListItem.Property(Year)]</value>
 	<value condition="[StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) | [Container.Content(Seasons) + SubString(Container.FolderPath,videodb://tvshows/)]] + !IsEmpty(Window(home).Property(ListItemYear))">$INFO[Window(home).Property(ListItemYear)]</value>
-	<value condition="!IsEmpty(MusicPlayer.Year)">$INFO[MusicPlayer.Year]</value>
+	<value condition="!IsEmpty(MusicPlayer.Year) + [Window.IsVisible(MyMusicNav.xml) | Window.IsVisible(MyMusicSongs.xml)]">$INFO[MusicPlayer.Year]</value>
 	<value condition="!IsEmpty(ListItem.Date) + !Window.IsVisible(MyPVRChannels.xml) + !Window.IsVisible(MyPVRGuide.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !ListItem.HasEpg">$INFO[ListItem.Date]</value>
   </variable>
   <variable name="TopVideoInformation3" description="דירוג וידאו/אודיו">
@@ -300,7 +300,7 @@
 	<value description="פוסטר סדרה - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Thumb)">$INFO[Container(312).ListItem.Thumb]</value>
 	<value condition="SubString(ListItem.Label,Next page) | SubString(ListItem.Label,$LOCALIZE[33078])">DefaultVideo2.png</value>
 	<value description="הרחבה" condition="Window.IsVisible(MyWeather.xml)">_</value>
-	<value description="כפתור מזג אוויר" condition="Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">special://home/addons/resource.images.weathericons.outline/resources/$INFO[Weather.fanartcode].png</value>
+	<value description="כפתור מזג אוויר" condition="Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">special://skin/extras/resource.images.weathericons.outline/resources/$INFO[Weather.fanartcode].png</value>
 	<value condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenrePic]</value>
 	<value condition="!IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
 	<value condition="!IsEmpty(Container(50).ListItem.Thumb)">$INFO[Container(50).ListItem.Thumb]</value>

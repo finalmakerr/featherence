@@ -968,7 +968,7 @@
 	<visible>!Skin.String(TopInformationIcons, 0)</visible>
 	<control type="image" id="820" description="Weather">
 	  <include>Control_Pos7</include>
-	  <texture>special://home/addons/resource.images.weathericons.outline/resources/$INFO[Weather.fanartcode].png</texture>
+	  <texture>special://skin/extras/resource.images.weathericons.outline/resources/$INFO[Weather.fanartcode].png</texture>
 	  <visible>!Skin.String(TopInformationIcons) | SubString(Skin.String(TopInformationIcons),1)</visible>
 	</control>
 	<control type="label" id="821" description="Weather">

@@ -8,13 +8,17 @@ WIP - WORK IN PROGRESS
 - Widget auto refresh on condition.
 
 ------------------------
-Featherence v0.4.7 (xx-Mar-16)
+Featherence v0.5.0 (xx-Mar-16)
 ------------------------
-- Added Action and Thumbnail toggle when selecting an action for a button.
-- Added multi fanart support for main/sub buttons.
 - Added big icons feature to home buttons.
   You may now enlarge your icons to fit one of 6 available shapes.
+- Added Action and Thumbnail toggle when selecting an action for a button.
+- Added multi fanart support for main/sub buttons.
+- Added weather resources addons in the skin folder - for Isengard only!
+- Last version of Isengard (Kodi 15) - We're moving to Jarvis now!
 - Minor bugs fix.
+- Skin has been removed from Featherence Repository!
+  Downloading and updates from the official Kodi repository only!
 - Update user path script for icons/fanart.
 
 ------------------------

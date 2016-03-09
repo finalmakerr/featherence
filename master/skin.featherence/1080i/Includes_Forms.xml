@@ -581,7 +581,7 @@
 		  <include condition="!Skin.String(MenuDesign) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)">Slide_MenuDesign_Home_Icons</include>
 		  <include condition="Skin.String(MenuDesign,4)">Slide_MenuDesign2_Home_Icons</include>
 		  <include condition="Skin.String(MenuDesign,4) + $PARAM[type1]">Slide_MenuDesign2_Home_Icons2</include>
-		  
+		  <animation condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(BigHomeIcons)" effect="slide" start="0,0" end="0,10">Conditional</animation>
 		  <control type="group">
 			  <visible>!Skin.HasSetting(ReshapeIcons)</visible>
 			  <control type="image">

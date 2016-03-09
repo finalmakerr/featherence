@@ -401,8 +401,8 @@
   </variable>
   
   <variable name="399label2">
-    <value condition="!Skin.HasSetting(Action_Thumbnail)">$LOCALIZE[106]</value>
-	<value condition="Skin.HasSetting(Action_Thumbnail)">$LOCALIZE[107]</value>
+    <value condition="Skin.HasSetting(Action_Thumbnail)">$LOCALIZE[106]</value>
+	<value condition="!Skin.HasSetting(Action_Thumbnail)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="ReloadSkin_check">

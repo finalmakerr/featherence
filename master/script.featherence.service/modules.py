@@ -1787,7 +1787,7 @@ def mode232(value, admin, name, printpoint):
 		except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "9D"
 		
 		if id1 != "":
-			if xbmc.getInfoLabel('Skin.HasSetting(Action_Thumbnail)'):
+			if not xbmc.getInfoLabel('Skin.HasSetting(Action_Thumbnail)'):
 				Action_Thumbnail = '&skinThumbnail=icon'+id1
 				Action_Label = '&skinLabel=label'+id1
 			else:
@@ -1966,11 +1966,12 @@ def mode512(value):
 	'''------------------------------
 	---INTERNET-BUTTON---------------
 	------------------------------'''
+	import webbrowser
 	name = 'INTERNET-BUTTON' ; TypeError = "" ; extra = "" ; printpoint = ""
 	xbmc.executebuiltin('ActivateWindow(busydialog)')
 	try:
 		url = ""
-		if value == '0': url = 'www.google.co.il'
+		if value == '0': url = 'www.google.com'
 		elif value == '1': url = 'www.facebook.com/groups/featherence'
 		elif value == '2': url = 'www.github.com/finalmakerr/featherence'
 		elif value == '3': url = 'www.youtube.com'
@@ -1979,9 +1980,19 @@ def mode512(value):
 		else: url = value
 		
 		name = localize(443)
-		if systemplatformwindows: os.system('start /max '+url+'')
-		elif systemplatformandroid: os.system('adb shell am start -a android.intent.action.VIEW -d '+url+'')
-		elif systemplatformlinux: xbmc.executebuiltin('RunAddon(browser.chromium)')
+		
+		
+		
+
+		if systemplatformwindows: webbrowser.open(url) #os.system('start /max '+url+'')
+		elif systemplatformandroid:
+			webbrowser.open(url)
+			StartAndroidActivity() 
+		elif systemplatformlinux:
+			if xbmc.getCondVisibility('System.HasAddon(service.openelec.settings)'): xbmc.executebuiltin('RunAddon(browser.chromium)')
+			else: webbrowser.open(url)
+		elif systemplatformosx: webbrowser.open(url)
+		elif systemplatformios: webbrowser.open(url)
 		else: notification_common('25')
 
 	except Exception, TypeError:

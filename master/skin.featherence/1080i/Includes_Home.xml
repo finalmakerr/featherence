@@ -195,6 +195,17 @@
 			<param name="posy" value="30" />
 			<param name="width" value="312" />
 		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="" />
+			<param name="height" value="180" />
+			<param name="posx" value="30" />
+			<param name="posy" value="30" />
+			<param name="width" value="312" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="type0" value="true" description="UnFocus" />
+			<param name="type1" value="false" description="Focus" />
+		</include>
 		<control type="image" description="אלמנט כפתור לא נבחר">
           <posx>30</posx>
           <posy>30</posy>
@@ -270,28 +281,6 @@
 			<param name="type0" value="true" description="UnFocus" />
 			<param name="type1" value="false" description="Focus" />
 		</include>
-		<include name="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="$VAR[IconUnFocusColor]" />
-			<param name="height" value="180" />
-			<param name="posx" value="30" />
-			<param name="posy" value="30" />
-			<param name="width" value="312" />
-			
-			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
-			<param name="type0" value="true" description="UnFocus" />
-			<param name="type1" value="false" description="Focus" />
-		</include>
-		<control type="image" description="סמל2">
-          <include>Fade_IconOverlayButton</include>
-		  <aspectratio>keep</aspectratio>
-          <height>180</height>
-		  <posx>30</posx>
-          <posy>30</posy>
-		  <texture diffuse="buttons/diffusehome.png">$INFO[ListItem.ActualIcon]</texture>
-		  <visible>!IsEmpty(Listitem.ActualIcon)</visible>
-		  <width>312</width>
-		  <visible>false</visible>
-        </control>
 		<control type="image" description="OFF">
           <aspectratio>keep</aspectratio>
 		  <height>180</height>
@@ -339,6 +328,17 @@
 			<param name="posx" value="20" />
 			<param name="posy" value="20" />
 			<param name="width" value="332" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="" />
+			<param name="height" value="200" />
+			<param name="posx" value="20" />
+			<param name="posy" value="20" />
+			<param name="width" value="332" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="type0" value="false" description="UnFocus" />
+			<param name="type1" value="true" description="Focus" />
 		</include>
 		<control type="image" description="אלמנט כפתור נבחר">
           <posx>20</posx>
@@ -440,28 +440,6 @@
 			<param name="type0" value="false" description="UnFocus" />
 			<param name="type1" value="true" description="Focus" />
 		</include>
-		<include name="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="$VAR[IconUnFocusColor]" />
-			<param name="height" value="200" />
-			<param name="posx" value="20" />
-			<param name="posy" value="20" />
-			<param name="width" value="332" />
-			
-			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
-			<param name="type0" value="false" description="UnFocus" />
-			<param name="type1" value="true" description="Focus" />
-		</include>
-		<control type="image" description="סמל2">
-          <include>Fade_IconOverlayButton</include>
-		  <aspectratio>keep</aspectratio>
-          <height>200</height>		  
-		  <posx>20</posx>
-          <posy>20</posy>
-		  <texture diffuse="buttons/diffusehome.png">$INFO[ListItem.ActualIcon]</texture>
-		  <visible>!IsEmpty(Listitem.ActualIcon)</visible>
-		  <width>332</width>
-		  <visible>false</visible>
-        </control>
 		<control type="image" description="OFF">
           <aspectratio>keep</aspectratio>
 		  <height>200</height>
@@ -506,12 +484,22 @@
     <itemlayout height="230" width="250">
 	  <control type="group">
 		<include>MenuDesign_Home_itemlayout</include>
-		
 		<include name="Buttons_Color" description="צבע">
 			<param name="height" value="180" />
 			<param name="posx" value="30" />
 			<param name="posy" value="30" />
 			<param name="width" value="312" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="" />
+			<param name="height" value="180" />
+			<param name="posx" value="30" />
+			<param name="posy" value="30" />
+			<param name="width" value="312" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="type0" value="true" description="UnFocus" />
+			<param name="type1" value="false" description="Focus" />
 		</include>
 		<control type="image" description="אלמנט כפתור לא נבחר">
           <posx>30</posx>
@@ -588,28 +576,6 @@
 			<param name="type0" value="true" description="UnFocus" />
 			<param name="type1" value="false" description="Focus" />
 		</include>
-		<include name="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="$VAR[IconUnFocusColor]" />
-			<param name="height" value="180" />
-			<param name="posx" value="30" />
-			<param name="posy" value="30" />
-			<param name="width" value="312" />
-			
-			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
-			<param name="type0" value="true" description="UnFocus" />
-			<param name="type1" value="false" description="Focus" />
-		</include>
-		<control type="image" description="סמל2">
-          <include>Fade_IconOverlayButton</include>
-		  <aspectratio>keep</aspectratio>
-          <height>180</height>
-		  <posx>30</posx>
-          <posy>30</posy>
-		  <texture diffuse="buttons/diffusehome.png">$INFO[ListItem.ActualIcon]</texture>
-		  <visible>!IsEmpty(Listitem.ActualIcon)</visible>
-		  <width>312</width>
-		  <visible>false</visible>
-        </control>
 		<control type="image" description="OFF">
           <aspectratio>keep</aspectratio>
 		  <height>180</height>
@@ -657,6 +623,17 @@
 			<param name="posx" value="20" />
 			<param name="posy" value="20" />
 			<param name="width" value="332" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="" />
+			<param name="height" value="200" />
+			<param name="posx" value="20" />
+			<param name="posy" value="20" />
+			<param name="width" value="332" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="type0" value="false" description="UnFocus" />
+			<param name="type1" value="true" description="Focus" />
 		</include>
 		<control type="image" description="אלמנט כפתור נבחר">
           <posx>20</posx>
@@ -758,28 +735,6 @@
 			<param name="type0" value="false" description="UnFocus" />
 			<param name="type1" value="true" description="Focus" />
 		</include>
-		<include name="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="$VAR[IconUnFocusColor]" />
-			<param name="height" value="200" />
-			<param name="posx" value="20" />
-			<param name="posy" value="20" />
-			<param name="width" value="332" />
-			
-			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
-			<param name="type0" value="false" description="UnFocus" />
-			<param name="type1" value="true" description="Focus" />
-		</include>
-		<control type="image" description="סמל2">
-          <include>Fade_IconOverlayButton</include>
-		  <aspectratio>keep</aspectratio>
-          <height>200</height>		  
-		  <posx>20</posx>
-          <posy>20</posy>
-		  <texture diffuse="buttons/diffusehome.png">$INFO[ListItem.ActualIcon]</texture>
-		  <visible>!IsEmpty(Listitem.ActualIcon)</visible>
-		  <width>332</width>
-		  <visible>false</visible>
-        </control>
 		<control type="image" description="OFF">
           <aspectratio>keep</aspectratio>
 		  <height>200</height>
@@ -832,6 +787,17 @@
 			<param name="posx" value="0" />
 			<param name="posy" value="20" />
 			<param name="width" value="212" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="" />
+			<param name="height" value="100" />
+			<param name="posx" value="0" />
+			<param name="posy" value="20" />
+			<param name="width" value="212" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="type0" value="true" description="UnFocus" />
+			<param name="type1" value="false" description="Focus" />
 		</include>
 		<control type="image" description="אלמנט כפתור לא נבחר">
           <posx>0</posx>
@@ -908,28 +874,6 @@
 			<param name="type0" value="true" description="UnFocus" />
 			<param name="type1" value="false" description="Focus" />
 		</include>
-		<include name="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="$VAR[IconUnFocusColor]" />
-			<param name="height" value="100" />
-			<param name="posx" value="0" />
-			<param name="posy" value="20" />
-			<param name="width" value="212" />
-			
-			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
-			<param name="type0" value="true" description="UnFocus" />
-			<param name="type1" value="false" description="Focus" />
-		</include>
-		<control type="image" description="סמל2">
-          <include>Fade_IconOverlayButton</include>
-		  <aspectratio>keep</aspectratio>
-          <height>100</height>
-		  <posx>0</posx>
-          <posy>20</posy>
-		  <texture diffuse="buttons/diffusehome.png">$INFO[ListItem.ActualIcon]</texture>
-		  <visible>!IsEmpty(Listitem.ActualIcon)</visible>
-		  <width>212</width>
-		  <visible>false</visible>
-        </control>
 		<control type="image" description="OFF">
           <aspectratio>keep</aspectratio>
 		  <height>100</height>
@@ -982,6 +926,17 @@
 			<param name="posx" value="0" />
 			<param name="posy" value="20" />
 			<param name="width" value="232" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="" />
+			<param name="height" value="100" />
+			<param name="posx" value="0" />
+			<param name="posy" value="20" />
+			<param name="width" value="312" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="type0" value="false" description="UnFocus" />
+			<param name="type1" value="true" description="Focus" />
 		</include>
 		<control type="image" description="אלמנט כפתור נבחר">
           <posx>0</posx>
@@ -1081,28 +1036,6 @@
 			<param name="type0" value="false" description="UnFocus" />
 			<param name="type1" value="true" description="Focus" />
 		</include>
-		<include name="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="$VAR[IconUnFocusColor]" />
-			<param name="height" value="100" />
-			<param name="posx" value="0" />
-			<param name="posy" value="20" />
-			<param name="width" value="312" />
-			
-			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
-			<param name="type0" value="false" description="UnFocus" />
-			<param name="type1" value="true" description="Focus" />
-		</include>
-		<control type="image" description="סמל2">
-          <include>Fade_IconOverlayButton</include>
-		  <aspectratio>keep</aspectratio>
-          <height>100</height>		  
-		  <posx>0</posx>
-          <posy>20</posy>
-		  <texture diffuse="buttons/diffusehome.png">$INFO[ListItem.ActualIcon]</texture>
-		  <visible>!IsEmpty(Listitem.ActualIcon)</visible>
-		  <width>232</width>
-		  <visible>false</visible>
-        </control>
 		<control type="image" description="OFF">
           <aspectratio>keep</aspectratio>
 		  <height>100</height>
