@@ -94,6 +94,11 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.wallpapersbyte.com/wp-content/uploads/2015/06/Downolad-HD-Wallpaper-France-Paris-City-Eiffel-Tower-Sunset-WallpapersByte-com-1920x1080.jpg'
 	addDir('Great French Collection',templates2_path + 'Great French Collection.txt',2,thumb,name + '','1',50, fanart)
 	
+	'''Greek Music''' 
+	thumb = 'http://www.bestarabicmusic.net/wp-content/uploads/2012/07/arab-oud-300x220.jpg'
+	fanart = 'https://aranui.com/wp-content/uploads/2014/11/borabora.jpg'
+	addDir('Greek Music',templates2_path + 'Greek Music.txt',2,thumb,name + 'העריכה והבקשה של חברינו לקבוצה Yehuda Belhasin','1',50, fanart) 
+	
 	'''Twilight Time'''
 	thumb = 'http://cps-static.rovicorp.com/3/JPG_400/MI0003/649/MI0003649662.jpg?partner=allrovi.com'
 	fanart = 'http://screencast.com/t/t85VTb1XCb'
