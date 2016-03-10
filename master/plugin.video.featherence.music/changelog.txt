@@ -5,6 +5,12 @@ WIP (WORK IN PROGRESS)--
 - Add foreign singers, karaoke, liveshows.
 
 ------------------------
+Featherence Music v0.2.6 (10-Mar-16)
+------------------------
+- Amir Elgazar patch:
+  - Added new playlist: Greek
+
+------------------------
 Featherence Music v0.2.5 (03-Mar-16)
 ------------------------
 - Added Play All menu button.
