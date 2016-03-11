@@ -178,7 +178,7 @@ def get_params():
 							
 	return param
 	
-def clean_commonsearch(x):
+def clean_commonsearch(x, match=False):
 	'''Used when searching in YouTube'''
 	y = x ; printpoint = ""
 	if "commonsearch" in y:
@@ -198,9 +198,14 @@ def clean_commonsearch(x):
 			
 		elif addonID == 'plugin.video.featherence.kids':
 			y = y.replace("commonsearch101", space + commonsearch101)
+		
+		elif addonID == 'plugin.video.featherence.rofl':
+			y = y.replace("commonsearch101", space + commonsearch101)
+			y = y.replace("commonsearch102", space + commonsearch102)
+			y = y.replace("commonsearch103", space + commonsearch103)
 		if 'commonsearch' in y:
 			y = y.replace('commonsearch',"",1)
-	
+		
 	count = 0
 	while count < 10 and not xbmc.abortRequested:
 		if count == 0:
@@ -234,7 +239,8 @@ def clean_commonsearch(x):
 	y = y.replace("]","")
 	y = y.replace(" ","%20")
 	y = y.replace("#","%23")
-	
+	if match == True:
+		y = '"' + y + '"'
 	text = "x" + space2 + str(x) + space + "y" + space2 + str(y)
 	printlog(title='clean_commonsearch', printpoint=printpoint, text=text, level=0, option="")
 	return y
@@ -901,10 +907,11 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		title2 = '[Search]'
 		printpoint = printpoint + "2"
 		x2 = x.replace("&youtube_se=","")
-		if 'commonsearch' in x:
+		if 'commonsearch' in x and 1 + 1 == 3:
 			x_ = clean_commonsearch(title)
 			x2 = x_ + space + x2
-		x2 = clean_commonsearch(x2)
+		x2 = clean_commonsearch(x2, match=False)
+
 			
 		url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+api_youtube_featherence+'&videoDuration='+videoDuration+'&videoDefinition='+videoDefinition+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults='+maxResults+'&pageToken='
 	elif "&youtube_se2=" in x:
