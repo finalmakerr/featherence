@@ -1089,6 +1089,22 @@ def copytree(source, target, symlinks=False, ignore=None):
 		
 		#print "item" + space2 + str(item)
 
+def terminal(command):
+	'''Execute commands to OS terminal'''
+	import subprocess
+	name = 'terminal' ; printpoint = "" ; TypeError = "" ; extra = "" ; output = ""
+
+	process = subprocess.Popen(command,stdout=subprocess.PIPE,shell=True)
+	output = process.communicate()[0]
+				
+	text = str(output) + extra
+	try: printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	except Exception, TypeError:
+		extra = extra + newline + "TypeError" + space2 + str(TypeError)
+		printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+		'''---------------------------'''
+	return output
+	
 def movefiles(source, target):
 	name = 'movefiles' ; printpoint = "" ; level=1
 	import shutil

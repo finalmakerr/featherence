@@ -7,7 +7,7 @@ def setRemote_Support(value, Remote_Name, Remote_Support):
 	name = 'setRemote_Support' ; output = ""
 	setProperty('Remote_Name', Remote_Name, type="home")
 	if not systemplatformwindows:
-		output = os.system('ir-keytable','ir-keytable')
+		output = terminal('ir-keytable')
 		if "No such file or directory" in output or output == "":
 			setsetting('Remote_Support','false')
 			Remote_Support = 'false'
@@ -97,7 +97,7 @@ def Activate(Remote_Name, Remote_Name2, Remote_TestingTime, remotes_path):
 		#print "wow" + space + str(path)
 		
 		if systemplatformlinux or systemplatformlinuxraspberrypi:
-			os.system('ir-keytable -p '+Remote_Type+' -w '+path+' -D 700 -P 200','ir-keytable')
+			os.system('ir-keytable -p '+Remote_Type+' -w '+path+' -D 700 -P 200')
 		
 		if "1" in printpoint: testRemote(Remote_Name, Remote_Name2, Remote_TestingTime)
 	

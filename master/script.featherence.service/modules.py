@@ -1987,7 +1987,7 @@ def mode512(value):
 		if systemplatformwindows: webbrowser.open(url) #os.system('start /max '+url+'')
 		elif systemplatformandroid:
 			webbrowser.open(url)
-			StartAndroidActivity() 
+			#StartAndroidActivity() 
 		elif systemplatformlinux:
 			if xbmc.getCondVisibility('System.HasAddon(service.openelec.settings)'): xbmc.executebuiltin('RunAddon(browser.chromium)')
 			else: webbrowser.open(url)

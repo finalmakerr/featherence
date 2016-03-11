@@ -31,7 +31,7 @@ def CATEGORIES():
 	addDir(addonString(104).encode('utf-8'),'',104,featherenceserviceicons_path + 'tvshows.png',addonString(1040).encode('utf-8'),'1',2, getAddonFanart(104, default="http://www.canadiananimationresources.ca/wp-content/uploads/2012/10/9-Story-Arthur-Couch.jpg", urlcheck_=True)) #TV SHOWS
 	addDir(addonString(105).encode('utf-8'),'',105,featherenceserviceicons_path + 'movies.png',addonString(1050).encode('utf-8'),'1',1, getAddonFanart(105, default="http://4.bp.blogspot.com/-Af2HcIQzlg8/UhwQ8lKPucI/AAAAAAAACIA/d7aY4RrxUfk/s1600/bambi-friends-disney-animated-movie-photo.jpg", urlcheck_=True)) #MOVIES
 	addDir(addonString(106).encode('utf-8'),'',106,featherenceserviceicons_path + 'toddlers.png',addonString(1060).encode('utf-8'),'1',58, getAddonFanart(106, default="http://1.bp.blogspot.com/-MnUXpmW1n1M/UKfOgAXUmXI/AAAAAAAAbBY/BfoQ1FNgNUk/s1600/duvcar1024x768_en_27.jpg", urlcheck_=True)) #Toddlers
-	addDir(addonString(107).encode('utf-8'),'',107,featherenceserviceicons_path + 'kids.png',addonString(1070).encode('utf-8'),'1',58, getAddonFanart(107, default="http://7-themes.com/data_images/out/63/6986632-dora-wallpaper-free.jpg", urlcheck_=True)) #Tiny
+	addDir(addonString(107).encode('utf-8'),'',107,featherenceserviceicons_path + 'kids.png',addonString(1070).encode('utf-8'),'1',58, getAddonFanart(107, default="http://i.imgur.com/cL52CfE.jpg", urlcheck_=True)) #Tiny
 	addDir(addonString(108).encode('utf-8'),'',108,featherenceserviceicons_path + 'kids2.png',addonString(1080).encode('utf-8'),'1',50, getAddonFanart(108, default="http://30k0u22sosp4xzag03cfogt1.wpengine.netdna-cdn.com/wp-content/uploads/2015/03/strika-3.jpg", urlcheck_=True)) #Kids and Young
 	addDir(addonString(109).encode('utf-8'),'',109,featherenceserviceicons_path + 'ud.png',addonString(1090).encode('utf-8'),'1',50, getAddonFanart(109, default="", urlcheck_=True)) #Learn Language
 	addDir(addonString(200).encode('utf-8') % (General_Language),'',200,featherenceserviceicons_path + 'ud.png','[COLOR=red]1: %s | 2: %s | 3: %s[/COLOR]' % (General_Language, General_Language2, General_Language3) + '[CR]' + addonString_servicefeatherence(32081).encode('utf-8'),'1',50, getAddonFanart(200, urlcheck_=True)) #Forigen Language
@@ -2481,7 +2481,7 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 	
 def CATEGORIES107(name, iconimage, desc, fanart):
 	background = 107
-	background2 = "" #http://7-themes.com/data_images/out/63/6986632-dora-wallpaper-free.jpg"
+	background2 = ""
 	
 	CATEGORIES_RANDOM(background,fanart) #אקראי
 	CATEGORIES107Z(General_LanguageL, background, background2) #ערוצי טלוויזיה
@@ -2861,7 +2861,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&youtube_id=rhduMp-AB7Y')
 		
 		
-	addDir(addonString(10740).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/855.jpg',addonString(107400).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://images5.fanpop.com/image/photos/28200000/dora-the-explorer-movies-and-tv-shows-28233860-1280-1024.jpg"))
+	addDir(addonString(10740).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/855.jpg',addonString(107400).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://i.imgur.com/cL52CfE.jpg"))
 	
 	'''מולי וצומי'''
 	list = []
