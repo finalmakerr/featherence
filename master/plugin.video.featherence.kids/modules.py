@@ -2327,7 +2327,8 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 	'''הפוני הקטן שלי'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&youtube_ch=UCrqoWeNzvpkTobP3DaNtdFA')
+		list.append('&youtube_pl=PLdzmRSlbGryE9L5scgIBO34txlYgb1Jk_')
+		list.append('&youtube_id=https://www.youtube.com/watch?v=MXn5_kRMums')
 	addDir('הפוני הקטן שלי',list,17,'http://www.hop.co.il/wp-content/uploads/2015/09/KT-E45238-%D7%90%D7%99%D7%A8%D7%95%D7%A2-%D7%94%D7%90%D7%97%D7%99%D7%95%D7%AA.jpg','','1',50,getAddonFanart(background, custom="https://i.ytimg.com/vi/dhehRAwr2KM/maxresdefault.jpg", default=background2))
 	
 	'''ויפו הכלב המעופף'''

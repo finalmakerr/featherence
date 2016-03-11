@@ -7,7 +7,7 @@ def setRemote_Support(value, Remote_Name, Remote_Support):
 	name = 'setRemote_Support' ; output = ""
 	setProperty('Remote_Name', Remote_Name, type="home")
 	if not systemplatformwindows:
-		output = terminal('ir-keytable','ir-keytable')
+		output = os.system('ir-keytable','ir-keytable')
 		if "No such file or directory" in output or output == "":
 			setsetting('Remote_Support','false')
 			Remote_Support = 'false'
@@ -75,7 +75,7 @@ def Activate(Remote_Name, Remote_Name2, Remote_TestingTime, remotes_path):
 		printpoint = printpoint + "1"
 		Remote_Type = getRemote_Type(Remote_Name2)
 		'''Test New Remote'''
-		if systemplatformlinux or systemplatformlinuxraspberrypi: terminal('ir-keytable -c','ir-keytable -c')
+		if systemplatformlinux or systemplatformlinuxraspberrypi: os.system('ir-keytable -c','ir-keytable -c')
 	
 	elif Remote_Name != "" and Remote_Name != "None":
 		'''Activate Current Remote'''
@@ -97,7 +97,7 @@ def Activate(Remote_Name, Remote_Name2, Remote_TestingTime, remotes_path):
 		#print "wow" + space + str(path)
 		
 		if systemplatformlinux or systemplatformlinuxraspberrypi:
-			terminal('ir-keytable -p '+Remote_Type+' -w '+path+' -D 700 -P 200','ir-keytable')
+			os.system('ir-keytable -p '+Remote_Type+' -w '+path+' -D 700 -P 200','ir-keytable')
 		
 		if "1" in printpoint: testRemote(Remote_Name, Remote_Name2, Remote_TestingTime)
 	
@@ -148,7 +148,7 @@ def cleartable():
 	setsetting('Remote_Name', 'None')
 	setProperty('Remote_Name', 'None', type="home")
 	setsetting('Remote_LastDate', datenowS)
-	if systemplatformlinux or systemplatformlinuxraspberrypi: terminal('ir-keytable -c', 'Old keytable cleared')
+	if systemplatformlinux or systemplatformlinuxraspberrypi: os.system('ir-keytable -c', 'Old keytable cleared')
 
 def getRemote_Type(value):
 	Remote_Type = ""

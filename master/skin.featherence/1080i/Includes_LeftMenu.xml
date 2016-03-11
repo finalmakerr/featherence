@@ -59,7 +59,7 @@
 	  </control>
       
 	  <control type="grouplist" id="9001">
-		<visible allowhiddenfocus="false">[[ControlGroup(9001).HasFocus() | !IsEmpty(Window(home).Property(SideMenuUp))] | StringCompare(Window(home).Property(ViewsSettings),9001)] + !Control.IsVisible(9000)</visible>
+		<visible allowhiddenfocus="false">[[ControlGroup(9001).HasFocus() | [!IsEmpty(Window(home).Property(SideMenuUp)) + StringCompare(Window(home).Property(ViewsSettings),9001)]] | StringCompare(Window(home).Property(ViewsSettings),9001)] + !Control.IsVisible(9000)</visible>
 		<visible>!Control.IsVisible(9003)</visible>
 		<include>4ways3</include>
 		
@@ -245,7 +245,7 @@
 	  </control>
 	  
 	  <control type="grouplist" id="9002">
-		<visible allowhiddenfocus="false">[[ControlGroup(9002).HasFocus() | !IsEmpty(Window(home).Property(SideMenuUp))] | StringCompare(Window(home).Property(ViewsSettings),9002)] + !Control.IsVisible(9000)</visible>
+		<visible allowhiddenfocus="false">[[ControlGroup(9002).HasFocus() | [!IsEmpty(Window(home).Property(SideMenuUp)) + StringCompare(Window(home).Property(ViewsSettings),9002)]] | StringCompare(Window(home).Property(ViewsSettings),9002)] + !Control.IsVisible(9000)</visible>
 		<visible>!Control.IsVisible(9003)</visible>
 		<include>4ways3</include>
 		
