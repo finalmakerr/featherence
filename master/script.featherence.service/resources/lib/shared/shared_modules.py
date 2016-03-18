@@ -742,7 +742,7 @@ def dialogok(heading,line1,line2,line3, line1c="", line2c="", line3c="", line4c=
 	'line3: ' + str(line3) + newline + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
-def dialogselect(heading, list, autoclose):
+def dialogselect(heading, list, autoclose=0):
 	'''------------------------------
 	---DIALOG-SELECT-----------------
 	------------------------------'''
@@ -757,7 +757,7 @@ def dialogselect(heading, list, autoclose):
 	
 	returned = dialog.select(str(heading),list,autoclose)
 	returned = int(returned)
-	
+
 	if returned == -1:
 		notification_common("9")
 		value = ""
@@ -903,7 +903,6 @@ def installaddon(addonid2, update=True):
 	if not xbmc.getCondVisibility('System.HasAddon('+ addonid2 +')') and not os.path.exists(addons_path + addonid2):
 		printpoint = printpoint + "1"
 		if update == True: notification_common("24")
-		printpoint2 = installaddonP(addonid2, update=update)
 			
 	else: printpoint = printpoint + '7'
 	if '1' in printpoint:
@@ -923,46 +922,6 @@ def installaddon(addonid2, update=True):
 	'addonid2' + space2 + str(addonid2)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
-	return printpoint
-
-def installaddonP(addon, update=True):
-	printpoint = "" ; name = 'installaddonP'
-		
-	if addon == 'script.module.unidecode': #FIXED PATH
-		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("http://mirrors.kodi.tv/addons/frodo/script.module.unidecode/script.module.unidecode-0.4.16.zip", addon + ".zip", packages_path, addons_path, silent=True)
-			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
-			else: printpoint = printpoint + "9"
-		elif "9" in printpoint: pass
-		else: printpoint = printpoint + "7"
-		
-	elif addon == 'plugin.video.dailymotion_com':
-		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("https://www.dropbox.com/s/fffcc2barlwyeuo/"+addon+".zip?dl=1", addon + ".zip", packages_path, addons_path, silent=True)
-			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
-			else: printpoint = printpoint + "9"
-		elif "9" in printpoint: pass
-		else: printpoint = printpoint + "7"
-	
-	elif addon == 'script.skinshortcuts': #FIXED PATH *MASTER
-		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("https://github.com/BigNoid/script.skinshortcuts/archive/master.zip", addon + "-master.zip", packages_path, addons_path, silent=True)
-			movefiles(os.path.join(addons_path, 'script.skinshortcuts-master'), os.path.join(addons_path, addon))
-			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
-			else: printpoint = printpoint + "9"
-		elif "9" in printpoint: pass
-		else: printpoint = printpoint + "7"
-	
-	if "5" in printpoint:
-		if update == True:
-			xbmc.executebuiltin("UpdateLocalAddons")
-			xbmc.sleep(1000)
-		if "repository" in addon: xbmc.executebuiltin("UpdateAddonRepos")
-		'''---------------------------'''
-	
-	text = ""
-	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")	
-
 	return printpoint
 
 def getVersion(addon, url):
@@ -1038,7 +997,7 @@ def removefiles(path, filteroff=[], dialogprogress=""):
 				if dialogprogress != "":
 					printpoint = printpoint + "B"
 					dp = xbmcgui.DialogProgress()
-					dp.create("Removing: " + path, "", " ")
+					dp.create(addonString_servicefeatherence(32141).encode('utf-8') + space2 + path, "", " ") #Removing
 					sumfolders = 0
 					for folder in os.listdir(path):
 						sumfolders += 1
@@ -1088,22 +1047,6 @@ def copytree(source, target, symlinks=False, ignore=None):
 			shutil.copy(s,t)
 		
 		#print "item" + space2 + str(item)
-
-def terminal(command):
-	'''Execute commands to OS terminal'''
-	import subprocess
-	name = 'terminal' ; printpoint = "" ; TypeError = "" ; extra = "" ; output = ""
-
-	process = subprocess.Popen(command,stdout=subprocess.PIPE,shell=True)
-	output = process.communicate()[0]
-				
-	text = str(output) + extra
-	try: printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
-	except Exception, TypeError:
-		extra = extra + newline + "TypeError" + space2 + str(TypeError)
-		printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
-		'''---------------------------'''
-	return output
 	
 def movefiles(source, target):
 	name = 'movefiles' ; printpoint = "" ; level=1
@@ -1181,8 +1124,8 @@ def notification_common(custom):
 	elif custom == "22": notification(addonString_servicefeatherence(32407).encode('utf-8'),'',"",4000) #The system is processing for solution...
 	elif custom == "23": notification(addonString_servicefeatherence(32406).encode('utf-8'), addonString_servicefeatherence(32405).encode('utf-8'),"",4000) #Active download in background
 	elif custom == "24": notification(addonString_servicefeatherence(32402).encode('utf-8'), addonString_servicefeatherence(32403).encode('utf-8'),"",2000) #Addon is missing! Trying to download addon
-	elif custom == "25": notification('OS not supported!','',2000) #Addon is missing! Trying to download addon
-	elif custom == "26": notification('File is missing!', "","",2000)
+	elif custom == "25": notification(addonString_servicefeatherence(32142).encode('utf-8'),'',2000)
+	elif custom == "26": notification(localize(13328, s=[localize(20331)]), "","",2000)
 	elif custom == "27": notification(addonString_servicefeatherence(32100).encode('utf-8'), addonString_servicefeatherence(32101).encode('utf-8'),"",2000) #Your email provider isn't supported.
 	elif custom == "100": pass
 	elif custom == "101": pass
@@ -1593,8 +1536,8 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 		if admin == 'true': exe = 3
 	else: exe = 'ALL'
 	
-	#print 'admin: ' + str(admin) + ' admin2: ' + str(admin2) + ' admin3: ' + str(admin3) + space + 'exe' + space2 + str(exe)
 	if exe != "":
-		print printfirst + to_utf8(title) + '_LV' + str(printpoint) + space + to_utf8(text)
+		message = printfirst + to_utf8(title) + '_LV' + str(printpoint) + space + to_utf8(text)
+		xbmc.log(msg=to_utf8(message), level=xbmc.LOGNOTICE)
 		
 	return exe

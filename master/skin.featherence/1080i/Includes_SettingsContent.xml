@@ -1227,6 +1227,14 @@
 		<onclick>RunScript(script.featherence.service,,?mode=29&amp;value=Enable-[]-|Disable-[0]-|Weather-[1]-|Internet-[2]-|Internet+Weather-[12]-&amp;value2=0.TopInformationIcons|0.TopInformationIcons_name&amp;value3=&amp;value4=1)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
+	  <item id="5" description="הפעל ו'ידגט">
+		<label>31081</label>
+		<label2>$VAR[5label2]</label2>
+		<thumb></thumb>
+		<property name="rinfo"></property>
+		<onclick>Skin.ToggleSetting(widget)</onclick>
+		<visible>Container(100).Hasfocus(1)</visible>
+	  </item>
 	  <item id="12" description="מילות שיר ברירת מחדל">
 		<label>$LOCALIZE[24013] $LOCALIZE[409]</label>
 		<label2>$INFO[Skin.String(LyricPath)]</label2>

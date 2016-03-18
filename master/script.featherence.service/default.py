@@ -141,7 +141,7 @@ elif mode == 24:
 				'''---------------------------'''
 			else:
 				xbmc.executebuiltin('ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search='+value_title+' '+value_year+' Movie Trailer;,return)')
-				notification('No trailer found.', value_title, '', 3000)
+				notification(addonString(32126).encode('utf-8'), value_title, '', 3000)
 		else:
 			xbmc.executebuiltin('PlayMedia('+value_file+')')
 				
@@ -172,61 +172,6 @@ elif mode == 25:
 	------------------------------'''
 	name = "Play-Random-Trailers"
 	mode25(value, admin, name, printpoint)
-	'''---------------------------'''
-
-elif mode == 27:
-	'''------------------------------
-	---Remote-Control----------------
-	------------------------------'''
-	from remote import *
-	name = "Remote-Control"
-	
-	Remote_Name = getsetting('Remote_Name')
-	Remote_Name2 = getsetting('Remote_Name2')
-	Remote_Support = getsetting('Remote_Support')
-	Remote_TestingTime = getsetting('Remote_TestingTime')
-	Remote_LastDate = getsetting('Remote_LastDate')
-	remotes_path = os.path.join(addonPath, 'resources', 'remotes', '')
-	
-	Remote_Support = setRemote_Support(value, Remote_Name, Remote_Support)
-
-	if Remote_Support != "true":
-		if value != '0': dialogok(addonString(32032).encode('utf-8'), addonString(32036).encode('utf-8'),addonString(32101).encode('utf-8'),"")
-		sys.exit()
-
-	if Remote_Name == "":
-		printpoint = printpoint + "1"
-		setProperty('Remote_Name', "", type="home")
-		returned = dialogyesno(addonString(32025).encode('utf-8'), addonString(32024).encode('utf-8') + '[CR]' + addonString(19194).encode('utf-8'))
-		if returned == 'skip': printpoint = printpoint + "9"
-	
-	if not "9" in printpoint:
-		if value != '0' or Remote_Name == "":
-			printpoint = printpoint + "2"
-			printpoint = setRemote_Name(Remote_Name, Remote_TestingTime, remotes_path)
-			
-		else:
-			if Remote_Name != "":
-				printpoint = printpoint + "3"
-				Activate(Remote_Name, Remote_Name2, Remote_TestingTime, remotes_path)
-				#if not systemplatformwindows: os.system('sh /storage/.kodi/addons/script.htpt.remote/remote.sh')
-				#print printfirst + "remote.sh; remote type: " + Remote_Name
-				if datenowS == Remote_LastDate:
-					dialogok(addonString(32025).encode('utf-8'), addonString(32034).encode('utf-8'), "", addonString(32035).encode('utf-8'))
-				
-	setsetting('Remote_Name2',"")
-	
-	if not "9" in printpoint and 1 + 1 == 3:
-		xbmc.sleep(1000)
-		if systemplatformlinux or systemplatformlinuxraspberrypi:
-			Remote_Name = getsetting('Remote_Name')
-			if Remote_Name != "None": os.system('sh /storage/.kodi/addons/script.htpt.remote/remote.sh')
-		
-		Remote_Name2 = getsetting('Remote_Name')
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	print printfirst + "default.py_LV" + printpoint + space + "Remote_Name" + space2 + Remote_Name + space + "Remote_Name2" + space2 + Remote_Name2
 	'''---------------------------'''
 
 elif mode == 28:
@@ -550,15 +495,18 @@ elif mode >= 200 and mode <= 249:
 						notification("Invalid file!", "", "", 4000)
 					elif not os.path.exists(path + file):
 						'''nothing to load'''
-						notification("There is no data to load!", "You should create a save session", "", 4000)
+						notification(localize(33077), addonString_servicefeatherence(32127).encode('utf-8'), "", 4000)
 					else:
 						if os.path.exists(featherenceserviceaddondata_media_path + 'Featherence_.txt'):
 							removefiles(featherenceserviceaddondata_media_path + 'Featherence_.txt')
 						Custom1000(str(list[returned]),10,str(list2[returned2]),5)
-						ExtractAll(path + file, featherenceserviceaddondata_media_path) ; Custom1000(str(list[returned]),20,str(list2[returned2]),10)
+						if 'C' in printpoint:
+							copyfiles(path + file, featherenceserviceaddondata_media_path) ; Custom1000(str(list[returned]),20,str(list2[returned2]),1)
+						else:
+							ExtractAll(path + file, featherenceserviceaddondata_media_path) ; Custom1000(str(list[returned]),20,str(list2[returned2]),10)
 						
 						if not os.path.exists(featherenceserviceaddondata_media_path + 'Featherence_.txt'):
-							notification("Featherence_.txt is missing!", "Check your zip file!", "", 4000)
+							notification(addonString_servicefeatherence(32128).encode('utf-8') % ('Featherence_.txt'), addonString_servicefeatherence(32129).encode('utf-8'), "", 4000) #Featherence_.txt is missing! , Check your zip file!
 						else:
 							Custom1000(str(list[returned]),0,str(list2[returned2]),5)
 							printpoint = printpoint + "V"
@@ -770,6 +718,6 @@ else: printpoint = printpoint + "9"
 '''------------------------------
 ---PRINT-END---------------------
 ------------------------------'''
-if TypeError != "": print printfirst + "Default.py" + space + "TypeError" + space2 + str(TypeError)
-if admin: print printfirst + "default.py_LV" + printpoint + space + "mode" + space2 + str(mode) + space + "value" + space2 + str(value)
+text = "default.py" + space + "TypeError" + space2 + str(TypeError)
+printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 '''---------------------------'''

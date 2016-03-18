@@ -165,9 +165,12 @@ def menu_list(custom, menu, addonID, name, url, mode, iconimage, desc, num, view
 def gettitle2(x):
 	title2 = ""
 	if '&custom' in x:
-		if 'plugin://plugin.video.sdarot.tv' in x: title2 = space + '[Sdarot-TV]'
+		if 1 + 1 == 3: title2 = ""
+		else: title2 = '[Custom]'
+		
 	
 	return title2
+	
 def getisFolder(name, url, mode, iconimage, desc, num, viewtype, fanart):
 	isFolder = True
 	modeL = [1,3,4,5,7,9,12,15,20,41,42,44]
@@ -357,7 +360,6 @@ def listURLS_2(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc,
 	pageN = int(page) + 1
 	html_ = GetHTML(url)
 
-	print 'bla ' + html_
 	if 1 + 1 == 3:
 		match_page = regex_from_to(html_, '<article class', '</article>', excluding=False)
 		match_page2 = re.compile('<a href="(.+?)">(.+?)</a>').findall(match_page)

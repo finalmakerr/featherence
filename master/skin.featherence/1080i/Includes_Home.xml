@@ -52,6 +52,7 @@
   <include name="Widget_Home">
     <control type="group" description="">
 		<visible>Container(9000).Row(0) + !Container(9000).Row(1) + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
+		<visible>!Skin.HasSetting(widget)</visible>
 		<control type="group" description="סמן חץ ימינה">
 			<visible>[Control.HasFocus(311) + Container(311).HasNext] | [Control.HasFocus(312) + Container(312).HasNext]</visible>
 			<posx>60r</posx>

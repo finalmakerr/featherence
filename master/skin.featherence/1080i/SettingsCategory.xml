@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window description="(12)">
   <defaultcontrol always="true">3</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
   <controls>
 	<include>Backgrounds3</include>
 	<control type="group" description="">
@@ -25,7 +24,7 @@
 		  <align>center</align>
 		  <height>100</height>
 		  <itemgap>5</itemgap>
-		  <onup>9009</onup>
+		  <onup condition="Control.IsVisible(7011)">7017</onup>	
 		  <onleft>noop</onleft>
 		  <onright>noop</onright>
 		  <ondown>5</ondown>

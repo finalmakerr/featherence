@@ -38,7 +38,7 @@ def CATEGORIES():
 	
 	#addDir('קלסיקלטת','plugin://plugin.video.wallaNew.video/?mode=1&module=338&name=קלסיקלטת&url=http://vod.walla.co.il/channel/338/clasicaletet',8,'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYE2VT8CR2O31MsqAhdaydYrqrCD--HCCdGcs7blBn3Zh92Kwq','','1',"", getAddonFanart(0))
 	#addDir('ניק','plugin://plugin.video.wallaNew.video/?mode=1&module=nick&name=ניק&url=http://nick.walla.co.il/',8,'http://www.karmieli.co.il/sites/default/files/images/nico.jpg','','1',"", getAddonFanart(0))
-	#addDir('גוניור','plugin://plugin.video.wallaNew.video/?mode=1&module=nickjr&name=גוניור&url=http://nickjr.walla.co.il/',8,'http://upload.wikimedia.org/wikipedia/he/1/19/%D7%A2%D7%A8%D7%95%D7%A5_%D7%92%27%D7%95%D7%A0%D7%99%D7%95%D7%A8.jpg','','1',"", getAddonFanart(0))
+	addDir('גוניור','plugin://plugin.video.wallaNew.video/?mode=1&module=nickjr&name=גוניור&url=http://nickjr.walla.co.il/',8,'http://upload.wikimedia.org/wikipedia/he/1/19/%D7%A2%D7%A8%D7%95%D7%A5_%D7%92%27%D7%95%D7%A0%D7%99%D7%95%D7%A8.jpg','','1',"", getAddonFanart(0))
 
 def CATEGORIES100(name, iconimage, desc, fanart):
 	'''------------------------------
@@ -2237,9 +2237,7 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 	'''בייבי איינשטיין*'''
 	list = []
 	
-	list.append('&youtube_pl=PLwxbE7ppBW4l1nxhAxPS7ZNkQQN3Z4_jr') #בייבי איינשטיין
-	list.append('&youtube_pl=PLvadvyUkv4iFxFnsG0i1mLhuvR5nQBUcf')
-	list.append('&dailymotion_pl=x377f1')
+	list.append('&youtube_ch=UCd_OgI9yXB1cZ5BER35mvIw') #בייבי איינשטיין
 	
 	addDir(addonString(10603).encode('utf-8'),list,17,'http://d202m5krfqbpi5.cloudfront.net/books/1170326163l/46377.jpg',addonString(106030).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://allwallpapersnew.com/wp-content/gallery/baby-einstein-images/05008612327.jpg"))
 	
@@ -2846,7 +2844,6 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f855.jpg&mode=5&name=%d7%a2%d7%95%d7%a0%d7%94%201&season_id=1&series_id=855&series_name=%d7%9e%d7%92%d7%9c%d7%99%d7%9d-%d7%a2%d7%9d-%d7%93%d7%95%d7%a8%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91-dora-the-explorer%2fseason%2f1&summary=%d7%93%d7%95%d7%a8%d7%94%20%d7%94%d7%99%d7%9c%d7%93%d7%94%20%d7%a9%d7%9e%d7%9c%d7%9e%d7%93%d7%aa%20%d7%90%d7%95%d7%aa%d7%a0%d7%95%20%d7%90%d7%a0%d7%92%d7%9c%d7%99%d7%aa%20%d7%91%d7%a6%d7%95%d7%a8%d7%94%20%d7%a9%d7%9b%d7%99%d7%a3%20%d7%9c%d7%9c%d7%9e%d7%95%d7%93%20%d7%91%d7%94.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f855%2f%d7%9e%d7%92%d7%9c%d7%99%d7%9d-%d7%a2%d7%9d-%d7%93%d7%95%d7%a8%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91-dora-the-explorer%2fseason%2f1')
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%ee%e2%ec%e9%ed%20%f2%ed%20%e3%e5%f8%e4&url=http%3a%2f%2fnickjr.walla.co.il%2f%3fw%3d%2f%2f1688309')
-		list.append('&youtube_pl=PLXgvSDrkXo6axLzoxsdy1t9bTWKOfF_uN')
 	
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLfy2Sf8Vtub1rlUM8x6knGI_U43pFFR2L')

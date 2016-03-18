@@ -133,8 +133,13 @@
   <variable name="4label2">
 	<value condition="!Skin.String(TopInformationIcons)">$LOCALIZE[107]</value>
 	<value condition="Skin.String(TopInformationIcons_name)">$INFO[Skin.String(TopInformationIcons_name)]</value>
-	
   </variable>
+  
+  <variable name="5label2">
+	<value condition="!Skin.HasSetting(widget)">$LOCALIZE[107]</value>
+	<value condition="Skin.HasSetting(widget)">$LOCALIZE[106]</value>
+  </variable>
+  
   <variable name="8label2">
 	<value condition="IsEmpty(Weather.plugin)">$LOCALIZE[106] $LOCALIZE[305]</value>
 	<value condition="!IsEmpty(Weather.plugin)">$LOCALIZE[305]</value>

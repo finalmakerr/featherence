@@ -529,32 +529,30 @@
 		  <visible>$PARAM[condition]</visible>
 		  <control type="group">
 			  <control type="image" description="צבע">
-				<texture diffuse="buttons/types/bd.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+				<texture diffuse="buttons/types/bd.png">$VAR[ButtonsDesignColor]</texture>
 				<visible>!Skin.String(ButtonsDesign)</visible>
 			  </control>
 			  <control type="image" description="צבע">
-				<texture diffuse="buttons/types/bd0.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+				<texture diffuse="buttons/types/bd0.png">$VAR[ButtonsDesignColor]</texture>
 				<visible>Skin.String(ButtonsDesign,0)</visible>
 			  </control>
 			  <control type="image" description="צבע">
-				<texture diffuse="buttons/types/bd1.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+				<texture diffuse="buttons/types/bd1.png">$VAR[ButtonsDesignColor]</texture>
 				<visible>Skin.String(ButtonsDesign,1)</visible>
 			  </control>
 			  <control type="image" description="צבע">
-				<texture diffuse="buttons/types/bd2.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+				<texture diffuse="buttons/types/bd2.png">$VAR[ButtonsDesignColor]</texture>
 				<visible>Skin.String(ButtonsDesign,2)</visible>
 			  </control>
 			  <control type="image" description="צבע">
-				<texture diffuse="buttons/types/bd3.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+				<texture diffuse="buttons/types/bd3.png">$VAR[ButtonsDesignColor]</texture>
 				<visible>Skin.String(ButtonsDesign,3)</visible>
 			  </control>
 			  <control type="image" description="צבע">
-				<texture diffuse="buttons/types/bd4.png">buttons/colors/$INFO[ListItem.Property(color)].png</texture>
+				<texture diffuse="buttons/types/bd4.png">$VAR[ButtonsDesignColor]</texture>
 				<visible>Skin.String(ButtonsDesign,4)</visible>
 			  </control>
 		  </control>
-		  
-		  
 		</control>
 	</definition>
   </include>

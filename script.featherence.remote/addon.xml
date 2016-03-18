@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.featherence.remote" name="Featherence Remote" version="0.1.0" provider-name="finalmakerr">
+  <requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py"/>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+    <summary>Control your OpenELEC with any standard Remote Control</summary>
+    <description></description>
+    <disclaimer></disclaimer>
+	<email>featherence@groups.facebook.com</email>
+	<forum></forum>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.remote</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
+  </extension>
+</addon>

@@ -262,7 +262,7 @@ msgid ""
 msgstr ""
 
 msgctxt "#31081"
-msgid ""
+msgid "Enable Widget"
 msgstr ""
 
 msgctxt "#31082"

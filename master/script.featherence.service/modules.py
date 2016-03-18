@@ -10,13 +10,10 @@ def mode0(admin, name, printpoint):
 	#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
 	#installaddon('resource.images.weathericons.outline')
 	#installaddon('resource.images.weatherfanart.single')
+	DownloadFile('asd', 'asd', 'qwe', 'zxc', silent=False, percentinfo="")
 	
 def mode5(value, admin, name, printpoint):
 	'''startup'''
-	Remote_Name = getsetting('Remote_Name')
-	Remote_Support = getsetting('Remote_Support')
-	if Remote_Name != "" and Remote_Name != 'None' and Remote_Support == 'true':
-		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=27&value=0)')
 	
 	try:
 		VolumeLevel = int(xbmcaddon.Addon(addonID).getSetting('VolumeLevel'))
@@ -422,14 +419,14 @@ def CreatePL(path, type='video', levelmax=10):
 		random.shuffle(playlist)
 		for x in playlist:
 			pl.add(x)
-			print x
+			extra = extra + newline + 'x' + space2 + str(x)
 		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl)
 	
 	text = 'type' + space2 + str(type) + newline + \
 	'path' + space2 + str(path) + newline + \
 	'pl' + space2 + str(pl) + newline + \
 	'playlist' + space2 + str(playlist) + newline + \
-	'notexistsL' + space2 + str(notexistsL)
+	'notexistsL' + space2 + str(notexistsL) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 		
 def mode25(value, admin, name, printpoint):
@@ -500,7 +497,7 @@ def mode29(value, command, header, exit, name, printpoint):
 	for x in valueL:
 		#x = to_utf8(x)
 		y = find_string(x, '-[', ']-')
-		print y
+		extra = extra + newline + 'y' + space2 + str(y)
 		if y != "":
 			y_ = x.replace(y, "")
 			list.append(y_)
@@ -611,8 +608,10 @@ def mode32(value, admin, name, printpoint):
 		
 		if listitemthumb != "":
 			text = text + newline + str(listitemthumb)
-		write_to_file(featherenceservice_addondata_path + "Container.FolderPath" + ".txt", str(text), append=False, silent=True, utf8=False)
-		notification('url saved!','Container.FolderPath.txt','',2000)
+		
+		dest = featherenceservice_addondata_path + "Container.FolderPath" + ".txt"
+		write_to_file(dest, str(text), append=False, silent=True, utf8=False)
+		notification(addonString(32130).encode('utf-8'),dest,'',2000)
 		'''---------------------------'''
 		
 		text2 = newline + 'text' + space2 + str(text) + newline + \
@@ -704,7 +703,7 @@ def mode40(value, admin, name, printpoint):
 	
 	if printpoint == '1':
 		xbmc.executebuiltin('Skin.ResetSettings') ; xbmc.sleep(500)
-		Custom1000(name,1,'This action may take a while.. be patient!',30)
+		Custom1000(name,1,addonString_servicefeatherence(32131).encode('utf-8'),30) #This action may take a while.. be patient!
 		playerhasmedia = xbmc.getCondVisibility('Player.HasMedia')
 		if playerhasmedia: xbmc.executebuiltin('Action(Stop)')
 		
@@ -986,7 +985,7 @@ def mode201(value, admin, name, printpoint):
 	if "A" in printpoint:
 		Custom1000(name,20,str(list[returned]),20)
 		xbmc.executebuiltin('SetProperty(1000title,'+name+',home)')
-		xbmc.executebuiltin('SetProperty(1000comment,This action may take a while be patient!,home)')
+		xbmc.executebuiltin('SetProperty(1000comment,'+addonString_servicefeatherence(32131).encode('utf-8')+',home)')
 		for x in list0: setSkinSetting('0',x,"")
 		for x in list1: setSkinSetting('1',x,"false")
 		'''---------------------------'''
@@ -1289,9 +1288,10 @@ def mode210(value, admin, name, printpoint):
 				
 				extra2 = extra2 + newline + "i" + space2 + str(i) + space + "x" + space2 + str(x) + space + "y" + space2 + str(y) + space + "y2" + space2 + str(y2) + space
 	#dp.close
-	if "9" in printpoint: notification("Error Occured!", '', '', 2000)
+	if "9" in printpoint: notification(localize(257) + space2 + '209', '', '', 2000)
 	else:
-		pass#ReloadSkin(admin)
+		pass
+		#ReloadSkin(admin)
 		xbmc.sleep(500) ; xbmc.executebuiltin('Action(Down)') ; xbmc.sleep(500) ; xbmc.executebuiltin('Action(Up)')
 	
 	text = "value" + space2 + str(value) + newline + \
@@ -1312,7 +1312,7 @@ def mode211(value, admin, name, printpoint):
 	extra = "" ; TypeError = "" ; x = "" ; y = ""
 	
 	#xbmc.executebuiltin('Action(Close)')
-	if not int(property_buttonid_) > 0: printpoint = printpoint + "1" ; notification("Error No.1", "", "", 1000)
+	if not int(property_buttonid_) > 0: printpoint = printpoint + "1" ; notification(localize(257) + space2 + '211', "", "", 1000)
 	else:
 		'''Get new control ID'''
 		if '0' in value:
@@ -1341,7 +1341,7 @@ def mode211(value, admin, name, printpoint):
 				else: pass
 
 					
-		if y == "": printpoint = printpoint + "9" ; notification("Cannot create new buttons","Delete some first","",2000)
+		if y == "": printpoint = printpoint + "9" ; notification(addonString_servicefeatherence(32132).encode('utf-8'),addonString_servicefeatherence(32133).encode('utf-8'),"",2000) #Cannot create new buttons, Delete some first!
 		else:
 			notification("...", "", "", 1000)
 			mode232(y, admin, 'ACTION-BUTTON', printpoint)
@@ -1377,7 +1377,7 @@ def mode212(value, admin, name, printpoint):
 			y = 'Reset item'
 			x = property_buttonid_
 			property_buttonname2 = labelT.get('label'+property_buttonid)
-			extra2 = extra2 + newline + "This action will also reset" + space2 + str(property_buttonname2) + space + "(" + str(property_buttonid) + ")"
+			extra2 = extra2 + newline + addonString_servicefeatherence(32134).encode('utf-8') + space2 + str(property_buttonname2) + space + "(" + str(property_buttonid) + ")" #This action will also reset
 		
 		else:
 			y = 'Remove item'
@@ -1492,7 +1492,7 @@ def mode214(value, admin, name, printpoint):
 					elif returned_len == 6: returned = 'ff' + returned
 				
 				setProperty('SelectedColor', str(returned), type="home")
-				notification('New color selected!', str(returned), '', 1000)
+				notification(addonString_servicefeatherence(32135).encode('utf-8'), str(returned), '', 1000) #New color selected!
 	
 		text = text + newline + 'returned' + space2 + str(returned) + space + 'returned_len' + space2 + str(returned_len) + space + 'returned1' + space2 + str(returned1) + newline + \
 		'path' + space2 + str(path) + newline + \
@@ -1622,7 +1622,7 @@ def mode215(value, admin, name, printpoint):
 	if value != "":
 		'''ראשי'''
 		x = '98' ; id = idT2.get(x)
-		if id != "" and id != None and exe != "":
+		if id != "" and id != None and ( systemplatformwindows or systemplatformlinux and xbmc.getCondVisibility('System.HasAddon(service.openelec.settings)') ):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(15016))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.program.featherence.emu,return)')
@@ -1871,9 +1871,9 @@ def mode233(value, admin, name, printpoint):
 				from shared_modules3 import urlcheck
 				returned2 = urlcheck(url, ping=False)
 				if returned2 != "ok":
-					notification("URL Error", "Try again..", "", 2000)
-					header = "URL Error"
-					message = "Examine your URL for errors:" + newline + '[B]' + str(url) + '[/B]'
+					notification(localize(2102, s=[addonString_servicefeatherence(32436).encode('utf-8')]), addonString_servicefeatherence(32801).encode('utf-8') + space + '..', "", 2000)
+					header = localize(2102, s=[addonString_servicefeatherence(32436).encode('utf-8')]) #"URL Error"
+					message = addonString_servicefeatherence(32802).encode('utf-8') + space2 + newline + '[B]' + str(value) + '[/B]'
 					diaogtextviewer(header,message)
 				else:
 					setSkinSetting('0',x+y,str(url))
@@ -1984,10 +1984,11 @@ def mode512(value):
 		
 		
 
-		if systemplatformwindows: webbrowser.open(url) #os.system('start /max '+url+'')
+		if systemplatformwindows: webbrowser.open(url)
 		elif systemplatformandroid:
 			webbrowser.open(url)
-			#StartAndroidActivity() 
+			#StartAndroidActivity('start -a', 'action', 'VIEW')
+			#terminal('adb shell am start -a android.intent.action.VIEW -d '+url+'','')
 		elif systemplatformlinux:
 			if xbmc.getCondVisibility('System.HasAddon(service.openelec.settings)'): xbmc.executebuiltin('RunAddon(browser.chromium)')
 			else: webbrowser.open(url)

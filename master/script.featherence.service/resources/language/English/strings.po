@@ -225,26 +225,6 @@ msgctxt "#32065"
 msgid "Choose YES to continue"
 msgstr ""
 
-msgctxt "#32066"
-msgid "configure TV remote"
-msgstr ""
-
-msgctxt "#32067"
-msgid "Setup Remote"
-msgstr ""
-
-msgctxt "#32068"
-msgid "Remote_Name"
-msgstr ""
-
-msgctxt "#32069"
-msgid "Remote_LastDate"
-msgstr ""
-
-msgctxt "#32070"
-msgid "Remote_Support"
-msgstr ""
-
 msgctxt "#32071"
 msgid "[B][COLOR=blue]Github[/COLOR][/B]: www.github.com/finalmakerr/featherence[CR]"
 msgstr ""
@@ -468,83 +448,83 @@ msgid "Enter YouTube URL"
 msgstr ""
 
 msgctxt "#32126"
-msgid ""
+msgid "No trailer found!"
 msgstr ""
 
 msgctxt "#32127"
-msgid ""
+msgid "Create a save session first!"
 msgstr ""
 
 msgctxt "#32128"
-msgid ""
+msgid "%s is missing!"
 msgstr ""
 
 msgctxt "#32129"
-msgid ""
+msgid "Check your zip file!"
 msgstr ""
 
 msgctxt "#32130"
-msgid ""
+msgid "Url saved!"
 msgstr ""
 
 msgctxt "#32131"
-msgid ""
+msgid "This action may take a while.. be patient!"
 msgstr ""
 
 msgctxt "#32132"
-msgid ""
+msgid "Cannot create new buttons"
 msgstr ""
 
 msgctxt "#32133"
-msgid ""
+msgid "Delete some first!"
 msgstr ""
 
 msgctxt "#32134"
-msgid ""
+msgid "This action will also reset"
 msgstr ""
 
 msgctxt "#32135"
-msgid ""
+msgid "New color selected!"
 msgstr ""
 
 msgctxt "#32136"
-msgid ""
+msgid "Widget Error"
 msgstr ""
 
 msgctxt "#32137"
-msgid ""
+msgid "Your OS is missing json module!"
 msgstr ""
 
 msgctxt "#32138"
-msgid ""
+msgid " - Confirm Download"
 msgstr ""
 
 msgctxt "#32139"
-msgid ""
+msgid "Complete file is %dMB"
 msgstr ""
 
 msgctxt "#32140"
-msgid ""
+msgid "Continue with download?"
 msgstr ""
 
 msgctxt "#32141"
-msgid ""
+msgid "Removing"
 msgstr ""
 
 msgctxt "#32142"
-msgid ""
+msgid "OS not supported!"
 msgstr ""
 
 msgctxt "#32143"
-msgid ""
+msgid "1. Save a button using the [B]Save One[/B] button.[CR]2. Locate the saved zip file in:[CR][B]special://userdata/addon_data/"+addonID+"/[/B][CR]3. Share the file with your friends."
 msgstr ""
 
 msgctxt "#32144"
-msgid ""
+msgid "Invalid File!"
 msgstr ""
 
 msgctxt "#32145"
-msgid ""
+msgid "Error ID"
 msgstr ""
 
 msgctxt "#32146"
@@ -1804,11 +1784,11 @@ msgid "Easily create " share your own addon.[CR]Support only YouTube links atm."
 msgstr ""
 
 msgctxt "#32801"
-msgid ""
+msgid "Try again"
 msgstr ""
 
 msgctxt "#32802"
-msgid ""
+msgid "Examine your URL for errors"
 msgstr ""
 
 msgctxt "#32803"

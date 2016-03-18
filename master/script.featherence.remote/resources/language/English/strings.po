@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+
+#Remote"
+msgctxt "#32021"
+msgid "Press to test the remote configuration"
+msgstr ""
+
+msgctxt "#32022"
+msgid "The new remote"
+msgstr ""
+
+msgctxt "#32023"
+msgid "Testing time in seconds"
+msgstr ""
+
+msgctxt "#32024"
+msgid "You didn't set your TV remote yet"
+msgstr ""
+
+msgctxt "#32025"
+msgid "configure TV remote"
+msgstr ""
+
+msgctxt "#32026"
+msgid "TV Remote type"
+msgstr ""
+
+msgctxt "#32027"
+msgid "Note: You may change this setting at anytime."
+msgstr ""
+
+msgctxt "#32028"
+msgid "The new remote"
+msgstr ""
+
+msgctxt "#32029"
+msgid "Would you like to save this setting?"
+msgstr ""
+
+msgctxt "#32030"
+msgid "TV remote not selected."
+msgstr ""
+
+msgctxt "#32031"
+msgid "The system has found out that your hardware support this service"
+msgstr ""
+
+msgctxt "#32032"
+msgid "The system has found out that your hardware doesn't support this service"
+msgstr ""
+
+msgctxt "#32033"
+msgid "Support tv remote (IR)"
+msgstr ""
+
+msgctxt "#32034"
+msgid "You have changed the TV remote settings today"
+msgstr ""
+
+msgctxt "#32035"
+msgid "Note: You may change this setting at anytime in the settings button"
+msgstr ""
+
+msgctxt "#32036"
+msgid "- Make sure you have IR adapter!", "-Make sure your OS is supported!"
+msgstr ""
+
+msgctxt "#32037"
+msgid "Control your OpenELEC with TV remote"
+msgstr ""
+
+msgctxt "#32038"
+msgid "Support Featherence Skin"
+msgstr ""
+
+msgctxt "#32066"
+msgid "configure TV remote"
+msgstr ""
+
+msgctxt "#32067"
+msgid "Setup Remote"
+msgstr ""
+
+msgctxt "#32068"
+msgid "Remote_Name"
+msgstr ""
+
+msgctxt "#32069"
+msgid "Remote_LastDate"
+msgstr ""
+
+msgctxt "#32070"
+msgid "Remote_Support"
+msgstr ""

@@ -8,7 +8,7 @@
 	<onunload>ClearProperty(SelectedColorName,home)</onunload>
 	<controls>
       <control type="group" description="חלון צבעים">
-        <posx>-18</posx>
+        <posx>232</posx>
         <posy>22</posy>
 		<animation description="1170" condition="StringCompare(Window(home).Property(TEMP),TopVideoInformationColor)" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,120" delay="0" time="700" reversible="false">Conditional</animation>
 		<!-- background panel -->
@@ -19,30 +19,17 @@
 			<param name="height" value="530" />
 			<param name="posx" value="0" />
 			<param name="posy" value="0" />
-			<param name="width" value="1955" />
+			<param name="width" value="1455" />
 			
 			<param name="condition" value="true"/>
 			<param name="type0" value="false" description="MenuBackground"/>
 			<param name="type1" value="true" description="DialogBackground"/>
 	    </include>
-        <!--Header-->
-        <control type="label">
-            <posx>61</posx>
-            <posy>60</posy>
-            <width min="80" max="1400">auto</width>
-            <height>100</height>
-            <font>font35_title</font>
-			<label>$ADDON[script.skin.helper.service 32011]</label>
-            <align>left</align>
-            <textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>false</visible>
-        </control>
 		<control type="panel" id="3110">
 			<viewtype label="31438">icons</viewtype>
 			<posx>40</posx>
 			<posy>10</posy>
-			<width>1880</width>
+			<width>1380</width>
 			<height>415</height>
 			<orientation>vertical</orientation>
 			<onleft>3110</onleft>
@@ -51,14 +38,13 @@
 			<ondown>3010</ondown>
 			<preloaditems>4</preloaditems>
 			<pagecontrol>60</pagecontrol>
-			<itemlayout height="140" width="140">
+			<itemlayout height="137" width="135">
 			  <control type="group">
-				<posx>20</posx>
-				<posy>10</posy>
+				<posx>0</posx>
+				<posy>5</posy>
 				<control type="image">
-				    <animation condition="StringCompare(ListItem.Label,Window(home).Property(SelectedColor))" effect="zoom" center="auto" start="100,100" end="122,122" time="220">Conditional</animation>
-					<width>135%</width>
-					<height>120%</height>
+					<width>120%</width>
+					<height>113%</height>
 					<include condition="!Skin.String(ButtonsDesign) + SubString(Window(home).Property(TEMP),color,left) | !SubString(Window(home).Property(TEMP),color,left)">ButtonsDesign_icon</include>
 				    <include condition="Skin.String(ButtonsDesign,0) + SubString(Window(home).Property(TEMP),color,left)">ButtonsDesign0_icon</include>
 				    <include condition="Skin.String(ButtonsDesign,1) + SubString(Window(home).Property(TEMP),color,left)">ButtonsDesign1_icon</include>
@@ -68,9 +54,8 @@
 					<texture border="40">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="image" description="סמן בחירה">
-				  <animation condition="StringCompare(ListItem.Label,Window(home).Property(SelectedColor))" effect="zoom" center="auto" start="100,100" end="122,122" time="220">Conditional</animation>
-				  <width>135%</width>
-				  <height>120%</height>
+				  <width>120%</width>
+				  <height>113%</height>
 				  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 				  <visible>StringCompare(ListItem.Label,Window(home).Property(SelectedColor))</visible>
 				</control>
@@ -96,15 +81,13 @@
 				</control>
 			  </control>
 			</itemlayout>
-			<focusedlayout height="140" width="140">
+			<focusedlayout height="137" width="135">
 		      <control type="group">
-				<posx>20</posx>
-				<posy>10</posy>
+				<posx>0</posx>
+				<posy>5</posy>
 				<control type="image">
-					<posx>-10%</posx>
-					<posy>-10%</posy>
-					<width>155%</width>
-					<height>140%</height>
+					<width>120%</width>
+					<height>113%</height>
 					<include condition="!Skin.String(ButtonsDesign) + SubString(Window(home).Property(TEMP),color,left) | !SubString(Window(home).Property(TEMP),color,left)">ButtonsDesign_icon</include>
 				    <include condition="Skin.String(ButtonsDesign,0) + SubString(Window(home).Property(TEMP),color,left)">ButtonsDesign0_icon</include>
 				    <include condition="Skin.String(ButtonsDesign,1) + SubString(Window(home).Property(TEMP),color,left)">ButtonsDesign1_icon</include>
@@ -114,11 +97,8 @@
 					<texture border="40">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="image" description="סמן בחירה">
-				  <animation condition="StringCompare(ListItem.Label,Window(home).Property(SelectedColor))" effect="zoom" center="auto" start="100,100" end="99,99" time="1000" loop="true">Conditional</animation>
-				  <posx>-10%</posx>
-				  <posy>-10%</posy>
-				  <width>155%</width>
-				  <height>140%</height>
+				  <width>120%</width>
+				  <height>113%</height>
 				  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 				  <visible>true</visible>
 				</control>
@@ -727,7 +707,7 @@
 			<orientation>horizontal</orientation>
 			<posx>40</posx>
 			<posy>435</posy>
-			<width>1876</width>
+			<width>1376</width>
 			<ondown>noop</ondown>
 			<onright>9000</onright>
 			<onup>SetFocus(3110,1)</onup>

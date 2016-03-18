@@ -329,12 +329,15 @@ def ListPlaylist2(name, url, iconimage, desc, num, viewtype, fanart):
 			addDir(str(title_L[x__count]), str(x__), 4, str(thumb_L[x__count]), str(desc_L[x__count]), num, viewtype, fanart)
 			
 			x__count += 1
-			print 'x__' + space2 + str(url)
+			extra = extra + newline + 'x__' + space2 + str(url)
 		#update_view('plugin://plugin.video.dailymotion_com/?url='+url+'&mode=listVideos', num, viewtype)
 	else:
 		default = 'plugin://plugin.video.youtube/'
 		update_view('plugin://plugin.video.youtube/playlist/' + url + '/', num, viewtype)
 		'''---------------------------'''
+	
+	text = extra
+	printlog(title='ListPlaylist2', printpoint=printpoint, text=text, level=0, option="")
 	
 def OPEN_URL(url):
     req = urllib2.Request(url)
@@ -366,30 +369,13 @@ def PlayVideos(name, mode, url, iconimage, desc, num, fanart):
 			xbmc.sleep(2000)
 	
 	if '&dailymotion_id=' in url:
-		addon = "plugin.video.dailymotion_com"
-		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(os.path.join(addons_path, addon)):
-			installaddon(addon) ; xbmc.sleep(1000)
-			
 		url = url.replace("&dailymotion_id=","")
 		xbmc.executebuiltin('PlayMedia(plugin://plugin.video.dailymotion_com/?url='+url+'&mode=playVideo)')
-		
-		if 1 + 1 == 3:
-			url = 'https://api.dailymotion.com/video/'+ url +''
-			link = OPEN_URL(url)
-			prms=json.loads(link)
-			
-			title = str(prms['title'].encode('utf-8'))#.decode('utf-8')
-			id = str(prms['id'].encode('utf-8'))#.decode('utf-8')
-			channel = str(prms['channel'].encode('utf-8'))#.decode('utf-8')
-			#name = str(prms['feed'][u'entry'][i][ u'media$group'][u'media$title'][u'$t'].encode('utf-8')).decode('utf-8')
-			finalurl='http://www.dailymotion.com/video/'+id+'_'+title+'_'+channel
-			finalurl = finalurl.replace(space,"-")
-			finalurl = 'http://www.dailymotion.com/video/x3bik3i_atlas-unfolded-new-york-city_music'
-			print 'link :' + str(link) + newline + 'prms:' + str(prms) + newline + 'title:' + str(title) + newline + 'id' + space2 + str(id) + newline + 'finalurl' + space2 + str(finalurl)
 				
 	elif '&youtube_id=' in url:
 		url = url.replace("&youtube_id=","")
 		xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/play/?video_id='+ url +')')
+		
 	elif '&youtube_pl=' in url or '&dailymotion_pl=' in url:
 		#xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/play/?playlist_id='+ url +')')
 		#try:
@@ -399,7 +385,8 @@ def PlayVideos(name, mode, url, iconimage, desc, num, fanart):
 	
 	elif '&googledrive=' in url:
 		url = url.replace("&googledrive=","")
-		xbmc.executebuiltin('PlayMedia(plugin://plugin.video.gdrive?mode=streamURL&promptquality=False&url=https://docs.google.com/file/d/'+url+'/preview)')
+		#shared_modules2
+		
 	else: xbmc.executebuiltin('PlayMedia('+ url +')')
 	
 	'''------------------------------
@@ -491,7 +478,8 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 		if numStart < numTotal:
 			if int(num) > 1:
 				for i__ in range(1,numStart):
-					print 'i__' + space2 + str(i__) + space + str(url2)
+					text = 'i__' + space2 + str(i__) + space + str(url2)
+					printlog(title="MultiVideos_numbering", printpoint=printpoint, text=text, level=0, option="")
 					try: del url2[i__]
 					except Exception, TypeError: break
 				
@@ -949,7 +937,6 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		else:
 			link = OPEN_URL(url)
 			prms=json.loads(link)
-			print url
 			try: id_ = str(prms['items'][i][u'id'])
 			except: id_ = str(prms['items'][i][u'snippet'][u'channelId'])
 			url = 'https://www.googleapis.com/youtube/v3/search?channelId='+id_+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
@@ -958,7 +945,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		title2 = '[Video]'
 		x2 = x.replace('&dailymotion_id=',"")
 		url = 'https://api.dailymotion.com/video/'+x2+'/?fields=description,duration,id,owner.username,taken_time,thumbnail_large_url,title,views_total&family_filter=1&localization=en'
-		print 'url: ' + url
+		
 	elif '&dailymotion_pl=' in x:
 		printpoint = printpoint + '7'
 		title2 = '[Playlist]'
@@ -979,7 +966,8 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		except Exception, TypeError:
 			printpoint = printpoint + '9'
 			extra = extra + newline + 'TypeError' + space2 + str(TypeError)
-			print printfirst + '***The following video ID is broken!' + space + str(title) + space + str(x) + space + 'Please report to Featherence in order to fix it!***'
+			text = '***The following video ID is broken!' + space + str(title) + space + str(x) + '***'
+			printlog(title='apimaster_video error!', printpoint=printpoint, text=text, level=1, option="")
 			title_L.append('[COLOR=red]' + title + space + '[Deleted!]' + '[/COLOR]')
 		if not '9' in printpoint:
 			prms=json.loads(link)
@@ -1472,9 +1460,9 @@ def setCustomFanart(addon, mode, admin, name, printpoint):
 				from shared_modules3 import urlcheck
 				returned2 = urlcheck(value, ping=False)
 				if returned2 != "ok":
-					notification("URL Error", "Try again..", "", 2000)
-					header = "URL Error"
-					message = "Examine your URL for errors:" + newline + '[B]' + str(value) + '[/B]'
+					notification(localize(2102, s=[addonString_servicefeatherence(32436).encode('utf-8')]), addonString_servicefeatherence(32801).encode('utf-8') + space + '..', "", 2000)
+					header = localize(2102, s=[addonString_servicefeatherence(32436).encode('utf-8')]) #"URL Error"
+					message = addonString_servicefeatherence(32802).encode('utf-8') + space2 + newline + '[B]' + str(value) + '[/B]'
 					diaogtextviewer(header,message)
 				else:
 					setsetting_custom1(addon, 'Fanart_Custom' + str(mode),str(value))
@@ -2649,7 +2637,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		y = ""
 		
 		Custom_Playlist_ID = "Custom_Playlist" + num + "_ID"
-		if Custom_Playlist_ID == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
+		if Custom_Playlist_ID == "": notification(addonString_servicefeatherence(32145).encode('utf-8'), addonString_servicefeatherence(32101).encode('utf-8'), "", 2000) ; printpoint = printpoint + "9"
 		Custom_Playlist_Name = "Custom_Playlist" + num + "_Name"
 		Custom_Playlist_Thumb = "Custom_Playlist" + num + "_Thumb"
 		Custom_Playlist_Description = "Custom_Playlist" + num + "_Description"
@@ -2678,7 +2666,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				header = addonString_servicefeatherence(32459).encode('utf-8') % addonString(100).encode('utf-8')
 				msg1 = localize(190) + space + localize(592) ; msg1.decode('utf-8').encode('utf-8')
 				msg2 = os.path.join(addondata_path, addonID) ; msg2 = msg2.decode('utf-8').encode('utf-8')
-				message = "1. Save a button using the [B]Save One[/B] button.[CR]2. Locate the saved zip file in:[CR][B]special://userdata/addon_data/"+addonID+"/[/B][CR]3. Share the file with your friends."
+				message = addonString_servicefeatherence(32143).encode('utf-8')
 				diaogtextviewer(header,message)
 				
 		if path != "":
@@ -2792,10 +2780,10 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 					file = filesT.get(filename)
 					
 					if file == "" or file == None:
-						notification("Invalid file!", "", "", 4000)
+						notification(addonString_servicefeatherence(32144).encode('utf-8'), "", "", 4000) #Invalid File!
 					elif not os.path.exists(path + file):
 						'''nothing to load'''
-						notification("There is no data to load!", "You should create a save session", "", 4000)
+						notification(localize(33077), addonString_servicefeatherence(32127).encode('utf-8'), "", 4000)
 					else:
 						if os.path.exists(featherenceserviceaddondata_media_path + AddonName + '.txt'):
 							removefiles(featherenceserviceaddondata_media_path + AddonName + '.txt')
@@ -2803,7 +2791,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 						ExtractAll(path + file, featherenceserviceaddondata_media_path) ; xbmc.sleep(200)
 						
 						if not os.path.exists(featherenceserviceaddondata_media_path + AddonName + '.txt'):
-							notification(AddonName + ".txt is missing!", "Check your zip file!", "", 4000)
+							notification(addonString_servicefeatherence(32128).encode('utf-8') % (AddonName), addonString_servicefeatherence(32129).encode('utf-8'), "", 4000) #AddonName is missing! , Check your zip file!
 						else:
 							if y == 's':
 								yesno = dialogyesno(addonString_servicefeatherence(32122).encode('utf-8') + '?',localize(19194)) #Overwrite
@@ -2881,7 +2869,7 @@ def AddCustom(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	printpoint = "" ; New_Type = "" ; New_ID = "" ; New_Name = "" ; value = "" ; value2 = ""
 	Custom_Playlist_ID = getCustom_Playlist(admin)
 	Custom_Playlist_Name = Custom_Playlist_ID.replace("_ID","_Name")
-	if Custom_Playlist_ID == "": notification("Playlist limit reached!", "You may delete some playlists and try again!", "", 4000)
+	if Custom_Playlist_ID == "": notification(addonString_servicefeatherence(32132).encode('utf-8'), addonString_servicefeatherence(32133).encode('utf-8'), "", 4000)
 	elif mode == 24:
 		'''from Menu'''
 		list = ['-> (Exit)', 'New']
@@ -2960,14 +2948,14 @@ def MoveCustom(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	if not "9" in printpoint:
 		printpoint = printpoint + "3"
 		Custom_Playlist_ID = "Custom_Playlist" + num1 + "_ID"
-		if Custom_Playlist_ID == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
+		if Custom_Playlist_ID == "": notification(addonString_servicefeatherence(32145).encode('utf-8'), addonString_servicefeatherence(32101).encode('utf-8'), "", 2000) ; printpoint = printpoint + "9"
 		Custom_Playlist_Name = "Custom_Playlist" + num1 + "_Name"
 		Custom_Playlist_Thumb = "Custom_Playlist" + num1 + "_Thumb"
 		Custom_Playlist_Description = "Custom_Playlist" + num1 + "_Description"
 		Custom_Playlist_Fanart = "Custom_Playlist" + num1 + "_Fanart"
 		'''---------------------------'''
 		Custom_Playlist_ID2 = "Custom_Playlist" + str(num2) + "_ID"
-		if Custom_Playlist_ID2 == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
+		if Custom_Playlist_ID2 == "": notification(addonString_servicefeatherence(32145).encode('utf-8'), addonString_servicefeatherence(32101).encode('utf-8'), "", 2000) ; printpoint = printpoint + "9"
 		Custom_Playlist_Name2 = "Custom_Playlist" + str(num2) + "_Name"
 		Custom_Playlist_Thumb2 = "Custom_Playlist" + str(num2) + "_Thumb"
 		Custom_Playlist_Description2 = "Custom_Playlist" + str(num2) + "_Description"
@@ -2998,7 +2986,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 	extra = "" ; printpoint = "" ; New_ID = ""
 	
 	Custom_Playlist_ID = "Custom_Playlist" + num + "_ID"
-	if Custom_Playlist_ID == "": notification("Error ID", "Use featherence Debug addon for support", "", 2000) ; printpoint = printpoint + "9"
+	if Custom_Playlist_ID == "": notification(addonString_servicefeatherence(32145).encode('utf-8'), addonString_servicefeatherence(32101).encode('utf-8'), "", 2000) ; printpoint = printpoint + "9"
 	Custom_Playlist_Name = "Custom_Playlist" + num + "_Name"
 	Custom_Playlist_Thumb = "Custom_Playlist" + num + "_Thumb"
 	Custom_Playlist_Description = "Custom_Playlist" + num + "_Description"
@@ -3173,9 +3161,9 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				if value != "skip":
 					returned = urlcheck(value, ping=False)
 					if returned != "ok":
-						notification("URL Error", "Try again..", "", 2000)
-						header = "URL Error"
-						message = "Examine your URL for errors:" + newline + '[B]' + str(value) + '[/B]'
+						notification(localize(2102, s=[addonString_servicefeatherence(32436).encode('utf-8')]), addonString_servicefeatherence(32801).encode('utf-8') + space + '..', "", 2000)
+						header = localize(2102, s=[addonString_servicefeatherence(32436).encode('utf-8')]) #"URL Error"
+						message = addonString_servicefeatherence(32802).encode('utf-8') + space2 + newline + '[B]' + str(value) + '[/B]'
 						diaogtextviewer(header,message)
 					else:
 						New_Thumb = value
@@ -3241,9 +3229,9 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				if value != "skip":
 					returned2 = urlcheck(value, ping=False)
 					if returned2 != "ok":
-						notification("URL Error", "Try again..", "", 2000)
-						header = "URL Error"
-						message = "Examine your URL for errors:" + newline + '[B]' + str(value) + '[/B]'
+						notification(localize(2102, s=[addonString_servicefeatherence(32436).encode('utf-8')]), addonString_servicefeatherence(32801).encode('utf-8') + space + '..', "", 2000)
+						header = localize(2102, s=[addonString_servicefeatherence(32436).encode('utf-8')]) #"URL Error"
+						message = addonString_servicefeatherence(32802).encode('utf-8') + space2 + newline + '[B]' + str(value) + '[/B]'
 						diaogtextviewer(header,message)
 					else:
 						New_Fanart = value

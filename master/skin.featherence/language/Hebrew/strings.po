@@ -262,8 +262,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#31081"
-msgid ""
-msgstr ""
+msgid "Enable Widget"
+msgstr "הפעל ו'ידגט"
 
 msgctxt "#31082"
 msgid "Effect icon and text only."

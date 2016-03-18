@@ -10,9 +10,11 @@ WIP - WORK IN PROGRESS
 ------------------------
 Featherence v0.5.0 (xx-Mar-16)
 ------------------------
+- Added option to disable default widget.
 - Last version of Isengard (Kodi 15) - We're moving to Jarvis only now!
 - Skin has been removed from Featherence Repository!
   Downloading and updates from the official Kodi repository only!
+- Update coloring menu.
 
 ------------------------
 Featherence v0.4.7 (11-Mar-16)

@@ -34,7 +34,7 @@
 	  <onup condition="!Player.HasMedia + StringCompare(Container.Viewmode,$LOCALIZE[31013])">57</onup>
 	  <onup condition="!Player.HasMedia + StringCompare(Container.Viewmode,$LOCALIZE[31014])">58</onup>
 	  <onup condition="!Player.HasMedia + Control.IsVisible(450)">450</onup>
-	  <ondown condition="Window.IsVisible(SettingsCategory.xml)">3</ondown>
+	  <ondown condition="Window.IsVisible(SettingsCategory.xml) + Control.IsVisible(3)">3</ondown>
 	  <ondown condition="[Control.IsVisible(7011) | Player.HasMedia]">noop</ondown>
 	  <ondown condition="!Player.HasMedia + StringCompare(Container.Viewmode,$LOCALIZE[31010])">51</ondown>
 	  <ondown condition="!Player.HasMedia + [StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(50)]">50</ondown>
@@ -492,6 +492,7 @@
 		
 		<!--Nav.xml-->
 		<onup condition="Control.HasFocus(7017)">ActivateWindow(12901)</onup>
+		<ondown condition="Window.IsVisible(SettingsCategory.xml) + Control.IsVisible(3)">3</ondown>
 		<ondown condition="Window.IsVisible(MyPVRGuide.xml) + Control.IsVisible(10)">10</ondown>
 		<ondown condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])">51</ondown>
 		<ondown condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(50)]">50</ondown>

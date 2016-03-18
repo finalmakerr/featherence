@@ -202,7 +202,25 @@
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.2.18" provider-name="finalmakerr">
+<addon id="script.featherence.remote" name="Featherence Remote" version="0.1.0" provider-name="finalmakerr">
+  <requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py"/>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+    <summary>Control your OpenELEC with any standard Remote Control</summary>
+    <description></description>
+    <disclaimer></disclaimer>
+	<email>featherence@groups.facebook.com</email>
+	<forum></forum>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.remote</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
+  </extension>
+</addon>
+
+<addon id="script.featherence.service" name="Featherence Service" version="0.2.19" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -212,8 +230,7 @@
   <extension point="xbmc.addon.metadata">
 	<platform>all</platform>
     <summary>Add-on for skins and video plugins to provide simple development</summary>
-    <description lang="en">_</description>
-	<description lang="he">_</description>
+    <description>Add-on features can be used on any addon (with the right touch). Check Featherence Be-Creative for more information!</description>
     <disclaimer></disclaimer>
 	<email>featherence@groups.facebook.com</email>
 	<forum></forum>

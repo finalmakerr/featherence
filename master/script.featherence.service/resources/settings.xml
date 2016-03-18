@@ -16,17 +16,6 @@
 		<setting type="lsep" label=""/>
 	</category>
 	
-	<category label="Remote">
-	  <setting type="lsep" label="32037"/>
-	  <setting type="action" action="RunScript(script.featherence.service,,?mode=27&amp;value=1)" label="32067" option="close" visible=""/>
-	  <setting id="Remote_Name" type="text" default="" label="32068" visible="true"/>
-	  <setting id="Remote_Name2" type="text" default="" label="32068 2" visible="false"/>
-	  
-	  <setting id="Remote_LastDate" type="text" default="" label="32069" visible="false"/>
-	  <setting id="Remote_Support" type="bool" default="" label="32070" visible="false"/>
-	  <setting id="Remote_TestingTime" type="slider" range="5,30" default="10" label="32023" option="int" visible="true"/>
-	</category>
-	
 	<category label="Widget">
 	  <setting type="lsep" label="32038"/>
 	  <setting id="widget_enable" type="bool" default="true" label="32016" visible="true"/>
