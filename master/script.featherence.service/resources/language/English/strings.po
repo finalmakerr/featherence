@@ -1792,8 +1792,8 @@ msgid "Examine your URL for errors"
 msgstr ""
 
 msgctxt "#32803"
-msgid ""
-msgstr ""
+msgid "Documentary"
+msgstr "דוקומנטרי"
 
 #Languages"
 msgctxt "#32900"

@@ -1792,7 +1792,7 @@ msgid "Examine your URL for errors"
 msgstr "בחן את הקישורים שלך לשגיאות"
 
 msgctxt "#32803"
-msgid ""
+msgid "Documentary"
 msgstr ""
 
 #Languages"
