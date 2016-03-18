@@ -10,7 +10,7 @@ def mode5(value):
 	Remote_Name = getsetting('Remote_Name')
 	Remote_Support = getsetting('Remote_Support')
 	if Remote_Name != "" and Remote_Name != 'None' and Remote_Support == 'true':
-		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=27&value=0)')
+		xbmc.executebuiltin('RunScript(script.featherence.remote,,?mode=27&value=0)')
 
 def terminal(command):
 	'''Execute commands to OS terminal'''

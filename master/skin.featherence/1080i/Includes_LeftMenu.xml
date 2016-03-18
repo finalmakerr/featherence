@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="SideMenuCommon">
-    <onfocus>SetProperty(SideMenuUp,True,home)</onfocus>
-	<onunfocus>AlarmClock(SideMenuUp,ClearProperty(SideMenuUp,home),00:03,silent)</onunfocus>
+    <!--<onfocus>SetProperty(SideMenuUp,True,home)</onfocus>
+	<onunfocus>AlarmClock(SideMenuUp,ClearProperty(SideMenuUp,home),00:01,silent)</onunfocus>-->
     <textoffsetx>45</textoffsetx>
 	<font>size28</font>
 	<include condition="StringCompare(System.Language,Hebrew)">SideMenuCommon2</include>

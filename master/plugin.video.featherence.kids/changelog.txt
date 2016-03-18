@@ -3,7 +3,7 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
-Featherence Kids v0.2.5 (xx-Mar-16)
+Featherence Kids v0.2.5 (18-Mar-16)
 ------------------------
 - Minor update of broken links.
 
