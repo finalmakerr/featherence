@@ -7,6 +7,11 @@ WIP (WORK IN PROGRESS)--
 - Add multi languages support.
 
 ------------------------
+Featherence Docu v0.1.9 (18-Mar-16)
+------------------------
+- Minor update of broken links.
+
+------------------------
 Featherence Docu v0.1.8 (03-Mar-16)
 ------------------------
 - *Added Google Drive and direct links support.

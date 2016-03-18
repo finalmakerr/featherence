@@ -203,6 +203,6 @@ def CATEGORIES10801A(name, iconimage, desc, fanart):
 	background = 10801
 	
 	list = []
-		
+	
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 	

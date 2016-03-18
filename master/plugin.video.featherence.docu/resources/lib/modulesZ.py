@@ -196,12 +196,6 @@ def CATEGORIES108Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_id=TOeT5DQSRDc')
 	list.append('&youtube_ch=VGVK6cqjoj6Aeyi2x7yQqo0S9Pq8CkZ')
 	list.append('&youtube_ch=PL51YAgTlfPj6s0QtcgOpIwKewkEeSN77e')
-	list.append('&youtube_id=PLEDEE611B09BB3800')
-	list.append('&youtube_ch=PL51YAgTlfPj7TAvhkV8c9UnnMHUpQy-Bx')
-	list.append('&youtube_ch=PL51YAgTlfPj474gCGLEUa7_Zo5Bxgy9fG')
-	list.append('&youtube_ch=PL51YAgTlfPj4v3ww2jfBb21LiJFh3XSIe')
-	list.append('&youtube_ch=PL51YAgTlfPj6zllZWhjkRCv95Q9LPhRZ2')
-	list.append('&youtube_ch=PL51YAgTlfPj4NGa6HC87lQQL5KfqQTqW3')
 		
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, default=fanart))
 
