@@ -44,7 +44,6 @@ elif mode == 27:
 	'''------------------------------
 	---Remote-Control----------------
 	------------------------------'''
-	from remote import *
 	name = "Remote-Control"
 	
 	Remote_Name = getsetting('Remote_Name')

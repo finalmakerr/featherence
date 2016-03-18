@@ -50,6 +50,3 @@ else:
 		else: xbmc.executebuiltin('Notification(Unknown Error, www.facebook.com/groups/featherence, 2000)')
 		print 'TypeError: ' + str(TypeError)
 		sys.exit(1)
-
-libDir = os.path.join(addonPath, 'resources', 'lib')
-sys.path.insert(1, libDir)

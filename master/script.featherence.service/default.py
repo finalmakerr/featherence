@@ -718,6 +718,6 @@ else: printpoint = printpoint + "9"
 '''------------------------------
 ---PRINT-END---------------------
 ------------------------------'''
-text = "default.py" + space + "TypeError" + space2 + str(TypeError)
-printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+text = "TypeError" + space2 + str(TypeError)
+printlog(title='default.py', printpoint=printpoint, text=text, level=1, option="")
 '''---------------------------'''
