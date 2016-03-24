@@ -1837,6 +1837,7 @@ def mode233(value, admin, name, printpoint):
 	x = "" ; y = property_buttonid_ ; path = "" ; x2_ = ""
 	customiconspath = to_unicode(xbmc.getInfoLabel('Skin.String(CustomIconsPath)'))
 	custombackgroundspath = to_unicode(xbmc.getInfoLabel('Skin.String(CustomBackgroundsPath)'))
+	property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
 	
 	if '0' in value:
 		printpoint = printpoint + '0'

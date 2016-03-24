@@ -14,6 +14,8 @@ Import the module and input the addDir in your addon module.py file.
 def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	url2 = url ; printpoint = "" ; returned = "" ; extra = "" ; name2 = "" ; iconimage2 = "" ; desc2 = ""
 	
+	text = 'fanart' + space2 + str(fanart)
+	printlog(title='addDir_test0', printpoint=printpoint, text=text, level=0, option="")
 	name = str(to_utf8(name))
 	desc = str(to_utf8(desc))
 	fanart = str(to_utf8(fanart))
@@ -23,6 +25,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	if num == None: num = ""
 	if '&getAPIdata=' in str(num):
 		finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(num, name, iconimage, desc, fanart, playlist=[], onlydata=True)
+		
 		if 'getAPIdata' in name and title_L != [] and not 'getAPIdata' in title_L: name = title_L[0]
 		if 'getAPIdata' in iconimage:
 			if 'getAPIdata' in thumb_L: iconimage = ""
@@ -33,6 +36,14 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		if 'getAPIdata' in fanart:
 			if 'getAPIdata' in fanart_L: fanart = ""
 			elif fanart_L != []: fanart = fanart_L[0]
+		
+		text = "name" + space2 + str(name) + newline + \
+		"title_L" + space2 + str(title_L) + newline + \
+		"thumb_L " + space2 + str(thumb_L) + newline + \
+		"desc_L" + space2 + str(desc_L) + newline + \
+		"fanart_L" + space2 + str(fanart_L) + newline + \
+		"fanart" + space2 + str(fanart)
+		printlog(title='addDir_test-getAPIdata', printpoint=printpoint, text=text, level=0, option="")
 		
 	
 		
@@ -223,7 +234,6 @@ def clean_commonsearch(x, match=False):
 		elif '[' in y and ']' in y:
 			printpoint = printpoint + '5'
 			y_ = regex_from_to(y, '[', ']', excluding=False)
-			#print 'wwwoot ' + y_
 			y = y.replace(y_,"", 1)
 		
 		elif y.count('&') > 1 and '=' in y:
@@ -1172,7 +1182,7 @@ def apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, titl
 		title_L.append(title_)
 		if thumb_L != "": thumb_L.append(thumb_)
 		if desc_ != "": desc_L.append(desc_)
-		if fanart == "": fanart_L.append(fanart_)
+		if fanart_ != "": fanart_L.append(fanart_)
 		
 		count += 1
 	else:
@@ -1183,6 +1193,8 @@ def apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, titl
 	
 	text = "i" + space2 + str(i) + space + "count" + space2 + str(count) + newline + \
 	'title_' + space2 + str(title_) + newline + \
+	'fanart_' + space2 + str(fanart_) + newline + \
+	'desc_' + space2 + str(desc_) + newline + \
 	"id_" + space2 + str(id_)
 
 	printlog(title='apimaster2', printpoint="", text=text, level=0, option="")
@@ -1628,10 +1640,13 @@ def getAddonFanart(category, custom="", default="", urlcheck_=False):
 					setsetting('Fanart_Custom'+str(category),"")
 					printpoint = printpoint + "9d"
 		
-		elif default != "" and default != 'getAPIdata' and not '7' in printpoint:
+		elif default != "" and not '7' in printpoint: #default != 'getAPIdata'
 			printpoint = printpoint + '5'
 			returned, returned2 = TranslatePath(default, filename=True, urlcheck_=True, force=True)
-			if returned == "": printpoint = printpoint + "9"
+			if default == 'getAPIdata':
+				printpoint = printpoint + 'A'
+				returned = default
+			elif returned == "": printpoint = printpoint + "9"
 		else:
 			printpoint = printpoint + "9"
 			
@@ -2661,9 +2676,9 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			list2.append('New')
 			list2_.append('New')
 		elif returned == 3:
-			check = dialogyesno(addonString_servicefeatherence(32459).encode('utf-8') % addonString(100).encode('utf-8'), addonString_servicefeatherence(32458).encode('utf-8')) #Share My button, Choose YES to learn how to share Your Music button
+			check = dialogyesno(addonString_servicefeatherence(32459).encode('utf-8') % addonString(30000).encode('utf-8'), addonString_servicefeatherence(32458).encode('utf-8')) #Share My button, Choose YES to learn how to share Your Music button
 			if check == 'ok':
-				header = addonString_servicefeatherence(32459).encode('utf-8') % addonString(100).encode('utf-8')
+				header = addonString_servicefeatherence(32459).encode('utf-8') % addonString(30000).encode('utf-8')
 				msg1 = localize(190) + space + localize(592) ; msg1.decode('utf-8').encode('utf-8')
 				msg2 = os.path.join(addondata_path, addonID) ; msg2 = msg2.decode('utf-8').encode('utf-8')
 				message = addonString_servicefeatherence(32143).encode('utf-8')

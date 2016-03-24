@@ -113,7 +113,7 @@ def doDownload(url, dest, title, referer, agent, cookie, silent=False, percentin
     if resumable:
         pass
 
-    if content < 1 or 1 + 1 == 2:
+    if content < 1:
         if silent != True or exe != "": dialogok(title, file, localize(1446) + space + localize(21802), localize(13036, s=[localize(33003)]))
         return "skip"
 

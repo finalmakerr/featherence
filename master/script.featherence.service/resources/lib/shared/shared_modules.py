@@ -794,6 +794,9 @@ def dialogyesno(heading,line1,yes=False, nolabel="", yeslabel="", autoclose=0):
 	returned = 'skip'
 	
 	if yes != False: xbmc.executebuiltin('AlarmClock(yes,Action(Down),0,silent)')
+	yeslabel = to_utf8(yeslabel)
+	nolabel = to_utf8(nolabel)
+
 	if dialog.yesno(heading,line1, nolabel=nolabel, yeslabel=yeslabel, autoclose=autoclose): returned = 'ok'
 	
 	try: heading = str(heading.encode('utf-8'))
@@ -1539,5 +1542,4 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 	if exe != "":
 		message = printfirst + to_utf8(title) + '_LV' + str(printpoint) + space + to_utf8(text)
 		xbmc.log(msg=to_utf8(message), level=xbmc.LOGNOTICE)
-		
 	return exe
