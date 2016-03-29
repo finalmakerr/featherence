@@ -1618,15 +1618,15 @@ def mode215(value, admin, name, printpoint):
 			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/weather.png')
 			'''---------------------------'''
 			
-	'''משחקים'''
+	''''''
 	if value != "":
 		'''ראשי'''
 		x = '98' ; id = idT2.get(x)
 		if id != "" and id != None and ( systemplatformwindows or systemplatformlinux and xbmc.getCondVisibility('System.HasAddon(service.openelec.settings)') ):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(15016))
-			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.program.featherence.emu,return)')
-			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/games.png')
+			setSkinSetting('0','label'+id,"")
+			setSkinSetting('0','action'+id,'')
+			setSkinSetting('0','icon'+id,'')
 			'''---------------------------'''	
 
 	'''דוקו'''

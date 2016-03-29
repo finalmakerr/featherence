@@ -555,7 +555,7 @@
 	  <icon fallback=""></icon>
 	  <label>$VAR[label19]</label>
 	  <label2>&quot;19&quot;</label2>
-	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + [!Skin.HasSetting(SubMenuAction) | [Skin.HasSetting(SubMenuAction) + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]]]">ActivateWindow(1138)</onclick>
+	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml)">ActivateWindow(1138)</onclick>
 	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
 	  <visible>!Window.IsVisible(CustomHomeCustomizer2.xml)</visible>
 	</item>

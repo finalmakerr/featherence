@@ -66,7 +66,7 @@
 					<posx></posx>
 					<posy>5</posy>
 					<shadowcolor>black</shadowcolor>
-					<width>130%</width>
+					<width>120%</width>
 					<visible>StringCompare(ListItem.Label,Window(home).Property(SelectedColor))</visible>
 				</control>
 				<control type="textbox">
@@ -76,7 +76,7 @@
 					<posx></posx>
 					<posy>45</posy>
 					<shadowcolor>black</shadowcolor>
-					<width>130%</width>
+					<width>120%</width>
 					<visible>StringCompare(ListItem.Label,Window(home).Property(SelectedColor)) | !IsEmpty(Window(home).Property(Custom1170_ShowInfo))</visible>
 				</control>
 			  </control>
@@ -109,7 +109,7 @@
 					<posx></posx>
 					<posy>5</posy>
 					<shadowcolor>black</shadowcolor>
-					<width>130%</width>
+					<width>120%</width>
 				</control>
 				<control type="textbox">
 					<include>LabelC2</include>
@@ -118,7 +118,7 @@
 					<posx></posx>
 					<posy>45</posy>
 					<shadowcolor>black</shadowcolor>
-					<width>130%</width>
+					<width>120%</width>
 				</control>
 			  </control>
 			</focusedlayout>

@@ -374,7 +374,7 @@ def CATEGORIES10103(name, iconimage, desc, fanart):
 	list.append('&youtube_id=3aY9Se-J2ww')
 	list.append('&youtube_id=QfmRf8iOBkI')
 	list.append('&youtube_pl=PL84lwJwmw23BiBnJwzzX1uuuHg5LM8F4A')
-	list.append('&youtube_pl=3KRTfKZfIp0&list=PLmoUtGEFm50dTvd_VwML9_sEVJAQ7t2xj')
+	list.append('&youtube_pl=PLmoUtGEFm50dTvd_VwML9_sEVJAQ7t2xj')
 	list.append('&youtube_pl=PL5P2pncIQpzCuoGHCF_PCudmHZ4wdUIEo')
 	list.append('&youtube_pl=PLdr2r9KsuBiteyDIaV_I8sb6kZCscO4kM')
 	list.append('&youtube_pl=PL9HOq0cGCaCQKoh6dWz1N3s9_H7HjxA5o')
