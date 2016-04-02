@@ -48,6 +48,12 @@
 		<label>10038</label>
 		<onclick>noop</onclick>
 	</item>
+	
+	<item id="29" description="מסך מגע">
+		<label>$LOCALIZE[31083]</label>
+		<onclick>noop</onclick>
+	</item>
+	
   </include>
   
   <include name="Content_Settings_100">
@@ -929,6 +935,14 @@
 		<visible>Container(100).Hasfocus(25)</visible>
 	  </item>
 	  
+	  <item id="410" description="תמיכה במסך מגע">
+		<label>$LOCALIZE[31084]</label>
+		<label2>$VAR[410label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/mobile.png</thumb>
+		<property name="rinfo"></property>
+		<onclick>Skin.ToggleSetting(Touch_Support)</onclick>
+		<visible>Container(100).Hasfocus(29)</visible>
+	  </item>
   </include> 
 
   <include name="Content_Settings_50" description="Settings.xml">

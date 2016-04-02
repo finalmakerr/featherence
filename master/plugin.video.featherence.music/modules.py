@@ -1121,7 +1121,7 @@ def CATEGORIES11101(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_se='+commonsearch)
 	list.append('&youtube_pl=PL595EC905D80443EB')
-	addDir(addonString(3035).encode('utf-8'),list,17,"http://guardianlv.com/wp-content/uploads/2013/12/Britney-Spears-Hits-Vegas-With-Piece-of-Me-Concert-Series-e1388228163153.jpg",addonString(30450).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30350).encode('utf-8'),list,17,"http://guardianlv.com/wp-content/uploads/2013/12/Britney-Spears-Hits-Vegas-With-Piece-of-Me-Concert-Series-e1388228163153.jpg",addonString(30450).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''Coldplay'''
 	list = []
@@ -1146,7 +1146,7 @@ def CATEGORIES11101(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_se='+commonsearch)
 	list.append('&youtube_pl=PLVsyHu2yDLkzdYcDjz8yqw84CmcYZGCIt')
-	addDir(addonString(3032).encode('utf-8'),list,17,"http://static.europosters.cz/image/750/plakatok/elvis-presley-portrait-i9038.jpg/375px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",addonString(30420).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30320).encode('utf-8'),list,17,"http://static.europosters.cz/image/750/plakatok/elvis-presley-portrait-i9038.jpg/375px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",addonString(30420).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''Eric Clapton'''
 	list = []
@@ -1188,7 +1188,7 @@ def CATEGORIES11101(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_se='+commonsearch)
 	list.append('&youtube_pl=PLvPrczMM8gz3y1Iboy6CsZ432HjCWUQgR&index=15')
-	addDir(addonString(3031).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/promo_650/public/stylus/1077939-roy-orbison-617-409.jpg",addonString(30410).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30310).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/promo_650/public/stylus/1077939-roy-orbison-617-409.jpg",addonString(30410).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''Rihanna'''
 	list = []
@@ -1252,7 +1252,7 @@ def CATEGORIES11102(name, iconimage, desc, fanart):
 	'''Britney Spears'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(3035).encode('utf-8'),list,17,"http://guardianlv.com/wp-content/uploads/2013/12/Britney-Spears-Hits-Vegas-With-Piece-of-Me-Concert-Series-e1388228163153.jpg",addonString(30450).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30350).encode('utf-8'),list,17,"http://guardianlv.com/wp-content/uploads/2013/12/Britney-Spears-Hits-Vegas-With-Piece-of-Me-Concert-Series-e1388228163153.jpg",addonString(30450).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''Coldplay'''
 	list = []
@@ -1267,7 +1267,7 @@ def CATEGORIES11102(name, iconimage, desc, fanart):
 	'''Elvis Presley'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(3032).encode('utf-8'),list,17,"http://static.europosters.cz/image/750/plakatok/elvis-presley-portrait-i9038.jpg/375px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",addonString(30420).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30320).encode('utf-8'),list,17,"http://static.europosters.cz/image/750/plakatok/elvis-presley-portrait-i9038.jpg/375px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",addonString(30420).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 
 	'''Eric Clapton'''
 	list = []
@@ -1305,7 +1305,7 @@ def CATEGORIES11102(name, iconimage, desc, fanart):
 	'''Roy Orbison'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(3031).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/promo_650/public/stylus/1077939-roy-orbison-617-409.jpg",addonString(30410).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30310).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/promo_650/public/stylus/1077939-roy-orbison-617-409.jpg",addonString(30410).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''Rihanna'''
 	list = []
@@ -1373,7 +1373,7 @@ def CATEGORIES11104(name, iconimage, desc, fanart):
 	'''Britney Spears'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(3035).encode('utf-8'),list,17,"http://guardianlv.com/wp-content/uploads/2013/12/Britney-Spears-Hits-Vegas-With-Piece-of-Me-Concert-Series-e1388228163153.jpg",addonString(30450).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30350).encode('utf-8'),list,17,"http://guardianlv.com/wp-content/uploads/2013/12/Britney-Spears-Hits-Vegas-With-Piece-of-Me-Concert-Series-e1388228163153.jpg",addonString(30450).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''Coldplay'''
 	list = []
@@ -1396,7 +1396,7 @@ def CATEGORIES11104(name, iconimage, desc, fanart):
 	'''Elvis Presley'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(3032).encode('utf-8'),list,17,"http://static.europosters.cz/image/750/plakatok/elvis-presley-portrait-i9038.jpg/375px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",addonString(30420).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30320).encode('utf-8'),list,17,"http://static.europosters.cz/image/750/plakatok/elvis-presley-portrait-i9038.jpg/375px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",addonString(30420).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 
 	'''Eric Clapton'''
 	list = []
@@ -1434,7 +1434,7 @@ def CATEGORIES11104(name, iconimage, desc, fanart):
 	'''Roy Orbison'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(3031).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/promo_650/public/stylus/1077939-roy-orbison-617-409.jpg",addonString(30410).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30310).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/promo_650/public/stylus/1077939-roy-orbison-617-409.jpg",addonString(30410).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''Rihanna'''
 	list = []

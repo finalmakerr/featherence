@@ -1,44 +1,44 @@
 msgid ""
 msgstr ""
 
-msgctxt "#30000
+msgctxt "#30000"
 msgid "My Music"
 msgstr "המוזיקה שלי"
 
-#SUB-CATEGORIES TITLE
-msgctxt "#30001
+#SUB-CATEGORIES TITLE"
+msgctxt "#30001"
 msgid "Israeli Music"
 msgstr "מוזיקה ישראלית"
 
-msgctxt "#30002
+msgctxt "#30002"
 msgid "Israeli Karaoke"
 msgstr "קריוקי ישראלי"
 
-msgctxt "#30003
+msgctxt "#30003"
 msgid ""
 msgstr ""
 
-msgctxt "#30004
+msgctxt "#30004"
 msgid "Israeli Liveshows"
 msgstr "הופעות חיות מישראל"
 
-msgctxt "#30005
+msgctxt "#30005"
 msgid "Israeli Djs"
 msgstr "די ג'יי ישראליים"
 
-msgctxt "#30006
+msgctxt "#30006"
 msgid "Mizrahit Music"
 msgstr "מוזיקה מזרחית"
 
-msgctxt "#30007
+msgctxt "#30007"
 msgid "Mizrahit Karaoke"
 msgstr "קריוקי מזרחי"
 
-msgctxt "#30008
+msgctxt "#30008"
 msgid ""
 msgstr ""
 
-msgctxt "#30009
+msgctxt "#30009"
 msgid "Mizrahit Liveshows"
 msgstr "הופעות חיות במזרחית"
 
@@ -46,1092 +46,1104 @@ msgstr "#30010"
 msgid ""
 msgstr ""
 
-msgctxt "#30011
+msgctxt "#30011"
 msgid "Foreign Music"
 msgstr "מוזיקה לועזית"
 
-msgctxt "#30012
+msgctxt "#30012"
 msgid "Foreign Karaoke"
 msgstr "קריוקי לועזי"
 
-msgctxt "#30013
+msgctxt "#30013"
 msgid ""
 msgstr ""
 
-msgctxt "#30014
+msgctxt "#30014"
 msgid "Foreign Liveshows"
 msgstr "הופעות חיות מחו"ל"
 
-msgctxt "#30015
+msgctxt "#30015"
 msgid "Foreign Djs"
 msgstr "די ג'יי מחו"ל"
 
-msgctxt "#30018
+msgctxt "#30018"
 msgid "Classical Music"
 msgstr "מוזיקה קלאסית"
 
-msgctxt "#30019
+msgctxt "#30019"
 msgid "$LOCALIZE[19021]"
 msgstr "$LOCALIZE[19021]"
 
-msgctxt "#30020
+msgctxt "#30020"
 msgid "Liveshow"
 msgstr "הופעה"
 
-msgctxt "#30021
+msgctxt "#30021"
 msgid "Singer"
 msgstr "זמר"
 
-msgctxt "#30050
+msgctxt "#30050"
 msgid "Amir Elgazar's Playlists"
 msgstr "אמיר אלגזר פלייליסטים"
 
-msgctxt "#30051
+msgctxt "#30051"
 msgid "Playlists private collection"
 msgstr "פלייליסטים אוסף אישי"
 
-msgctxt "#30101
+msgctxt "#30101"
 msgid "Eviatar Banai"
 msgstr "אביתר בנאי"
 
-msgctxt "#30102
+msgctxt "#30102"
 msgid "Avraham Tal"
 msgstr "אברהם טל"
 
-msgctxt "#30103
+msgctxt "#30103"
 msgid "Eyal Golan"
 msgstr "אייל גולן"
 
-msgctxt "#30104
+msgctxt "#30104"
 msgid "Aunt beehive trimmed"
 msgstr "כוורת דודה גזוז"
 
-msgctxt "#30105
+msgctxt "#30105"
 msgid "Ethnix"
 msgstr "אתניקס"
 
-msgctxt "#30107
+msgctxt "#30107"
 msgid "Dudu Aharon"
 msgstr "דודו אהרון"
 
-msgctxt "#30108
+msgctxt "#30108"
 msgid "Guy and Yahel"
 msgstr "גיא ויהל"
 
-msgctxt "#30109
+msgctxt "#30109"
 msgid ""
 msgstr ""
 
-msgctxt "#30110
+msgctxt "#30110"
 msgid ""
 msgstr ""
 
-msgctxt "#30111
+msgctxt "#30111"
 msgid "Danny Sanderson"
 msgstr "דני סנדרסון"
 
-msgctxt "#30148
+msgctxt "#30148"
 msgid "Israel Gurion and Dudaim"
 msgstr "הדודאים"
 
-msgctxt "#30112
+msgctxt "#30112"
 msgid "The Revivo Project"
 msgstr "הפרויקט של רביבו"
 
-msgctxt "#30113
+msgctxt "#30113"
 msgid "Harel Skaat"
 msgstr "הראל סקעת"
 
-msgctxt "#30114
+msgctxt "#30114"
 msgid "Haim Moshe"
 msgstr "חיים משה"
 
-msgctxt "#30116
+msgctxt "#30116"
 msgid "Yakov Hatan"
 msgstr "יעקב חתן"
 
-msgctxt "#30115
+msgctxt "#30115"
 msgid "Aunt beehive trimmed"
 msgstr "כוורת דודה גזוז"
 
-msgctxt "#30117
+msgctxt "#30117"
 msgid "Ishay Levi"
 msgstr "ישי לוי"
 
-msgctxt "#30118
+msgctxt "#30118"
 msgid "Lior Narkis"
 msgstr "ליאור נרקיס"
 
-msgctxt "#30119
+msgctxt "#30119"
 msgid ""
 msgstr ""
 
-msgctxt "#30120
+msgctxt "#30120"
 msgid "Mazi Cohen"
 msgstr "מזי כהן"
 
-msgctxt "#30121
+msgctxt "#30121"
 msgid "Mosh Ben Ari"
 msgstr "מוש בן ארי ולהקת שבע"
 
-msgctxt "#30122
+msgctxt "#30122"
 msgid "Moshik Afia"
 msgstr "מושיק עפיה"
 
-msgctxt "#30123
+msgctxt "#30123"
 msgid "Miri Mesika"
 msgstr "מירי מסיקה"
 
-msgctxt "#30124
+msgctxt "#30124"
 msgid "Maor Edri"
 msgstr "מאור אדרי"
 
-msgctxt "#30125
+msgctxt "#30125"
 msgid "Moshe Perez"
 msgstr "משה פרץ"
 
-msgctxt "#30126
+msgctxt "#30126"
 msgid "Mashina"
 msgstr "משינה"
 
-msgctxt "#30127
+msgctxt "#30127"
 msgid "Nathan Goshen"
 msgstr "נתן גושן"
 
-msgctxt "#30128
+msgctxt "#30128"
 msgid ""
 msgstr ""
 
-msgctxt "#30129
+msgctxt "#30129"
 msgid ""
 msgstr ""
 
-msgctxt "#30130
+msgctxt "#30130"
 msgid "Ivri Lider"
 msgstr "עברי לידר"
 
-msgctxt "#30131
+msgctxt "#30131"
 msgid ""
 msgstr ""
 
-msgctxt "#30132
+msgctxt "#30132"
 msgid "Idan Raichel"
 msgstr "עידן רייכל"
 
-msgctxt "#30133
+msgctxt "#30133"
 msgid "Omer Adam"
 msgstr "עומר אדם"
 
-msgctxt "#30134
+msgctxt "#30134"
 msgid ""
 msgstr ""
 
-msgctxt "#30135
+msgctxt "#30135"
 msgid "Peer Tasi"
 msgstr "פאר טסי"
 
-msgctxt "#30106
+msgctxt "#30106"
 msgid "Berry Sakharof"
 msgstr "פורטיסחרוף"
 
-msgctxt "#30136
+msgctxt "#30136"
 msgid "Kobi Aflalo"
 msgstr "קובי אפללו"
 
-msgctxt "#30137
+msgctxt "#30137"
 msgid "Kobi Peretz"
 msgstr "קובי פרץ"
 
-msgctxt "#30138
+msgctxt "#30138"
 msgid "Keren Peles"
 msgstr "קרן פלס"
 
-msgctxt "#30139
+msgctxt "#30139"
 msgid "Rita"
 msgstr "ריטה"
 
-msgctxt "#30140
+msgctxt "#30140"
 msgid "Rami Kleinshtein"
 msgstr "רמי קליינשטיין"
 
-msgctxt "#30141
+msgctxt "#30141"
 msgid "Shiri Maimon"
 msgstr "שירי מימון"
 
-msgctxt "#30142
+msgctxt "#30142"
 msgid "Shalom Hanoch"
 msgstr "שלום חנוך"
 
-msgctxt "#30143
+msgctxt "#30143"
 msgid "Shlomi Shabat"
 msgstr "שלומי שבת"
 
-msgctxt "#30144
+msgctxt "#30144"
 msgid "Shlomo Artzi"
 msgstr "שלמה ארצי"
 
-msgctxt "#30145
+msgctxt "#30145"
 msgid "Sarit Hadad"
 msgstr "שרית חדד"
 
-msgctxt "#30146
+msgctxt "#30146"
 msgid "Eden Ben Zaken"
 msgstr "עדן בן זקן"
 
-msgctxt "#30147
+msgctxt "#30147"
 msgid "shani yitshari"
 msgstr "שני יצהרי"
 
-msgctxt "#30149
+msgctxt "#30149"
 msgid "The Yarkon Trio"
 msgstr "שלישיית גשר הירקון"
 
-msgctxt "#30150
+msgctxt "#30150"
 msgid ""
 msgstr ""
 
-msgctxt "#30151
+msgctxt "#30151"
 msgid ""
 msgstr ""
 
-msgctxt "#30152
+msgctxt "#30152"
 msgid ""
 msgstr ""
 
-msgctxt "#30153
+msgctxt "#30153"
 msgid ""
 msgstr ""
 
-msgctxt "#30154
+msgctxt "#30154"
 msgid ""
 msgstr ""
 
-msgctxt "#30155
+msgctxt "#30155"
 msgid ""
 msgstr ""
 
-msgctxt "#30156
+msgctxt "#30156"
 msgid ""
 msgstr ""
 
-msgctxt "#30157
+msgctxt "#30157"
 msgid ""
 msgstr ""
 
-msgctxt "#30158
+msgctxt "#30158"
 msgid ""
 msgstr ""
 
-msgctxt "#30159
+msgctxt "#30159"
 msgid ""
 msgstr ""
 
-msgctxt "#30160
+msgctxt "#30160"
 msgid ""
 msgstr ""
 
-msgctxt "#30161
+msgctxt "#30161"
 msgid ""
 msgstr ""
 
-msgctxt "#30162
+msgctxt "#30162"
 msgid ""
 msgstr ""
 
-msgctxt "#30163
+msgctxt "#30163"
 msgid ""
 msgstr ""
 
-msgctxt "#30164
+msgctxt "#30164"
 msgid ""
 msgstr ""
 
-msgctxt "#30165
+msgctxt "#30165"
 msgid ""
 msgstr ""
 
-msgctxt "#30166
+msgctxt "#30166"
 msgid ""
 msgstr ""
 
-msgctxt "#30167
+msgctxt "#30167"
 msgid ""
 msgstr ""
 
-msgctxt "#30168
+msgctxt "#30168"
 msgid ""
 msgstr ""
 
-msgctxt "#30169
+msgctxt "#30169"
 msgid ""
 msgstr ""
 
-msgctxt "#30170
+msgctxt "#30170"
 msgid ""
 msgstr ""
 
-msgctxt "#30171
+msgctxt "#30171"
 msgid ""
 msgstr ""
 
-msgctxt "#30172
+msgctxt "#30172"
 msgid ""
 msgstr ""
 
-msgctxt "#30173
+msgctxt "#30173"
 msgid ""
 msgstr ""
 
-msgctxt "#30174
+msgctxt "#30174"
 msgid ""
 msgstr ""
 
-msgctxt "#30175
+msgctxt "#30175"
 msgid ""
 msgstr ""
 
-msgctxt "#30176
+msgctxt "#30176"
 msgid ""
 msgstr ""
 
-msgctxt "#30177
+msgctxt "#30177"
 msgid ""
 msgstr ""
 
-msgctxt "#30178
+msgctxt "#30178"
 msgid ""
 msgstr ""
 
-msgctxt "#30179
+msgctxt "#30179"
 msgid ""
 msgstr ""
 
-msgctxt "#30180
+msgctxt "#30180"
 msgid ""
 msgstr ""
 
-msgctxt "#30181
+msgctxt "#30181"
 msgid ""
 msgstr ""
 
-msgctxt "#30182
+msgctxt "#30182"
 msgid ""
 msgstr ""
 
-msgctxt "#30183
+msgctxt "#30183"
 msgid ""
 msgstr ""
 
-msgctxt "#30184
+msgctxt "#30184"
 msgid ""
 msgstr ""
 
-msgctxt "#30185
+msgctxt "#30185"
 msgid ""
 msgstr ""
 
-msgctxt "#30186
+msgctxt "#30186"
 msgid ""
 msgstr ""
 
-msgctxt "#30187
+msgctxt "#30187"
 msgid ""
 msgstr ""
 
-msgctxt "#30188
+msgctxt "#30188"
 msgid ""
 msgstr ""
 
-msgctxt "#30189
+msgctxt "#30189"
 msgid ""
 msgstr ""
 
-msgctxt "#30190
+msgctxt "#30190"
 msgid ""
 msgstr ""
 
-msgctxt "#30191
+msgctxt "#30191"
 msgid ""
 msgstr ""
 
-msgctxt "#30192
+msgctxt "#30192"
 msgid ""
 msgstr ""
 
-msgctxt "#30193
+msgctxt "#30193"
 msgid ""
 msgstr ""
 
-msgctxt "#30194
+msgctxt "#30194"
 msgid ""
 msgstr ""
 
-msgctxt "#30195
+msgctxt "#30195"
 msgid ""
 msgstr ""
 
-msgctxt "#30196
+msgctxt "#30196"
 msgid ""
 msgstr ""
 
-msgctxt "#30197
+msgctxt "#30197"
 msgid ""
 msgstr ""
 
-msgctxt "#30198
+msgctxt "#30198"
 msgid ""
 msgstr ""
 
-msgctxt "#30199
+msgctxt "#30199"
 msgid ""
 msgstr ""
 
-msgctxt "#30300
+msgctxt "#30300"
 msgid ""
 msgstr ""
 
-msgctxt "#30301
+msgctxt "#30301"
 msgid "Michael Jackson"
 msgstr "Michael Jackson"
 
-msgctxt "#30302
+msgctxt "#30302"
 msgid "Beyonce"
 msgstr "Beyonce"
 
-msgctxt "#30303
+msgctxt "#30303"
 msgid "Rihanna"
 msgstr "Rihanna"
 
-msgctxt "#30304
+msgctxt "#30304"
 msgid "Taylor Swift"
 msgstr "Taylor Swift"
 
-msgctxt "#30305
+msgctxt "#30305"
 msgid ""
 msgstr ""
 
-msgctxt "#30306
+msgctxt "#30306"
 msgid ""
 msgstr ""
 
-msgctxt "#30307
+msgctxt "#30307"
 msgid ""
 msgstr ""
 
-msgctxt "#30308
+msgctxt "#30308"
 msgid ""
 msgstr ""
 
-msgctxt "#30309
+msgctxt "#30309"
 msgid ""
 msgstr ""
 
-msgctxt "#30310
+msgctxt "#30310"
 msgid "Roy Orbison"
 msgstr "Roy Orbison"
 
-msgctxt "#30311
+msgctxt "#30311"
 msgid "Madonna"
 msgstr "Madonna"
 
-msgctxt "#30312
+msgctxt "#30312"
 msgid ""
 msgstr ""
 
-msgctxt "#30313
+msgctxt "#30313"
 msgid "Mariah Carey"
 msgstr "Mariah Carey"
 
-msgctxt "#30314
+msgctxt "#30314"
 msgid "Whitney Houston"
 msgstr "Whitney Houston"
 
-msgctxt "#30315
+msgctxt "#30315"
 msgid "Usher Raymond"
 msgstr "Usher Raymond"
 
-msgctxt "#30316
+msgctxt "#30316"
 msgid ""
 msgstr ""
 
-msgctxt "#30317
+msgctxt "#30317"
 msgid ""
 msgstr ""
 
-msgctxt "#30318
+msgctxt "#30318"
 msgid "Jennifer Lopez"
 msgstr "Jennifer Lopez"
 
-msgctxt "#30319
+msgctxt "#30319"
 msgid ""
 msgstr ""
 
-msgctxt "#30320
+msgctxt "#30320"
 msgid "Elvis Presley‏"
 msgstr "Elvis Presley"
 
-msgctxt "#30321
+msgctxt "#30321"
 msgid ""
 msgstr ""
 
-msgctxt "#30322
+msgctxt "#30322"
 msgid "Bob Marley"
 msgstr "Bob Marley"
 
-msgctxt "#30323
+msgctxt "#30323"
 msgid "Bob Dylan"
 msgstr "Bob Dylan"
 
-msgctxt "#30324
+msgctxt "#30324"
 msgid "Eric Clapton"
 msgstr "Eric Clapton"
 
-msgctxt "#30325
+msgctxt "#30325"
 msgid "Eric Clapton"
 msgstr "Eric Clapton"
 
-msgctxt "#30326
+msgctxt "#30326"
 msgid "Aretha Franklin"
 msgstr "Aretha Franklin"
 
-msgctxt "#30327
+msgctxt "#30327"
 msgid "Adele"
 msgstr "Adele"
 
-msgctxt "#30328
+msgctxt "#30328"
 msgid "Led zepelin"
 msgstr "Led zepelin"
 
-msgctxt "#30329
+msgctxt "#30329"
 msgid "Coldplay"
 msgstr "Coldplay"
 
-msgctxt "#30330
+msgctxt "#30330"
 msgid "Justin Bieber"
 msgstr "Justin Bieber"
 
-msgctxt "#30331
+msgctxt "#30331"
 msgid "Jean Michel Jarre "
 msgstr "Jean Michel Jarre "
 
-msgctxt "#30332
+msgctxt "#30332"
 msgid ""
 msgstr ""
 
-msgctxt "#30333
+msgctxt "#30333"
 msgid ""
 msgstr ""
 
-msgctxt "#30334
+msgctxt "#30334"
 msgid ""
 msgstr ""
 
-msgctxt "#30335
+msgctxt "#30335"
 msgid ""
 msgstr ""
 
-msgctxt "#30336
+msgctxt "#30336"
 msgid ""
 msgstr ""
 
-msgctxt "#30337
+msgctxt "#30337"
 msgid ""
 msgstr ""
 
-msgctxt "#30338
+msgctxt "#30338"
 msgid ""
 msgstr ""
 
-msgctxt "#30339
+msgctxt "#30339"
 msgid ""
 msgstr ""
 
-msgctxt "#30340
+msgctxt "#30340"
 msgid ""
 msgstr ""
 
-msgctxt "#30341
+msgctxt "#30341"
 msgid ""
 msgstr ""
 
-msgctxt "#30342
+msgctxt "#30342"
 msgid ""
 msgstr ""
 
-msgctxt "#30343
+msgctxt "#30343"
 msgid ""
 msgstr ""
 
-msgctxt "#30344
+msgctxt "#30344"
 msgid ""
 msgstr ""
 
-msgctxt "#30345
+msgctxt "#30345"
 msgid ""
 msgstr ""
 
-msgctxt "#30346
+msgctxt "#30346"
 msgid ""
 msgstr ""
 
-msgctxt "#30347
+msgctxt "#30347"
 msgid ""
 msgstr ""
 
-msgctxt "#30348
+msgctxt "#30348"
 msgid ""
 msgstr ""
 
-msgctxt "#30349
+msgctxt "#30349"
 msgid ""
 msgstr ""
 
-msgctxt "#30350
+msgctxt "#30350"
 msgid "Britney Spears"
 msgstr "Britney Spears"
 
-msgctxt "#30351
+msgctxt "#30351"
 msgid "David Bowie"
 msgstr "David Bowie"
 
-msgctxt "#30352
+msgctxt "#30352"
 msgid "Elton John"
 msgstr "Elton John"
 
-msgctxt "#30353
+msgctxt "#30353"
 msgid ""
 msgstr ""
 
-msgctxt "#30354
+msgctxt "#30354"
 msgid ""
 msgstr ""
 
-msgctxt "#30355
+msgctxt "#30355"
 msgid ""
 msgstr ""
 
-msgctxt "#30356
+msgctxt "#30356"
 msgid ""
 msgstr ""
 
-msgctxt "#30357
+msgctxt "#30357"
 msgid ""
 msgstr ""
 
-msgctxt "#30358
+msgctxt "#30358"
 msgid ""
 msgstr ""
 
-msgctxt "#30359
+msgctxt "#30359"
 msgid ""
 msgstr ""
 
-msgctxt "#30360
+msgctxt "#30360"
 msgid ""
 msgstr ""
 
-msgctxt "#30361
+msgctxt "#30361"
 msgid ""
 msgstr ""
 
-msgctxt "#30362
+msgctxt "#30362"
 msgid ""
 msgstr ""
 
-msgctxt "#30363
+msgctxt "#30363"
 msgid ""
 msgstr ""
 
-msgctxt "#30364
+msgctxt "#30364"
 msgid ""
 msgstr ""
 
-msgctxt "#30365
+msgctxt "#30365"
 msgid ""
 msgstr ""
 
-msgctxt "#30366
+msgctxt "#30366"
 msgid ""
 msgstr ""
 
-msgctxt "#30367
+msgctxt "#30367"
 msgid ""
 msgstr ""
 
-msgctxt "#30368
+msgctxt "#30368"
 msgid ""
 msgstr ""
 
-msgctxt "#30369
+msgctxt "#30369"
 msgid ""
 msgstr ""
 
-msgctxt "#30370
+msgctxt "#30370"
 msgid ""
 msgstr ""
 
-msgctxt "#30371
+msgctxt "#30371"
 msgid ""
 msgstr ""
 
-msgctxt "#30372
+msgctxt "#30372"
 msgid ""
 msgstr ""
 
-msgctxt "#30373
+msgctxt "#30373"
 msgid ""
 msgstr ""
 
-msgctxt "#30374
+msgctxt "#30374"
 msgid ""
 msgstr ""
 
-msgctxt "#30375
+msgctxt "#30375"
 msgid ""
 msgstr ""
 
-msgctxt "#30376
+msgctxt "#30376"
 msgid ""
 msgstr ""
 
-msgctxt "#30377
+msgctxt "#30377"
 msgid ""
 msgstr ""
 
-msgctxt "#30378
+msgctxt "#30378"
 msgid ""
 msgstr ""
 
-msgctxt "#30379
+msgctxt "#30379"
 msgid ""
 msgstr ""
 
-msgctxt "#30380
+msgctxt "#30380"
 msgid ""
 msgstr ""
 
-msgctxt "#30381
+msgctxt "#30381"
 msgid ""
 msgstr ""
 
-msgctxt "#30382
+msgctxt "#30382"
 msgid ""
 msgstr ""
 
-msgctxt "#30383
+msgctxt "#30383"
 msgid ""
 msgstr ""
 
-msgctxt "#30384
+msgctxt "#30384"
 msgid ""
 msgstr ""
 
-msgctxt "#30385
+msgctxt "#30385"
 msgid ""
 msgstr ""
 
-msgctxt "#30386
+msgctxt "#30386"
 msgid ""
 msgstr ""
 
-msgctxt "#30387
+msgctxt "#30387"
 msgid ""
 msgstr ""
 
-msgctxt "#30388
+msgctxt "#30388"
 msgid ""
 msgstr ""
 
-msgctxt "#30389
+msgctxt "#30389"
 msgid ""
 msgstr ""
 
-msgctxt "#30390
+msgctxt "#30390"
 msgid ""
 msgstr ""
 
-msgctxt "#30391
+msgctxt "#30391"
 msgid ""
 msgstr ""
 
-msgctxt "#30392
+msgctxt "#30392"
 msgid ""
 msgstr ""
 
-msgctxt "#30393
+msgctxt "#30393"
 msgid ""
 msgstr ""
 
-msgctxt "#30394
+msgctxt "#30394"
 msgid ""
 msgstr ""
 
-msgctxt "#30395
+msgctxt "#30395"
 msgid ""
 msgstr ""
 
-msgctxt "#30396
+msgctxt "#30396"
 msgid ""
 msgstr ""
 
-msgctxt "#30397
+msgctxt "#30397"
 msgid ""
 msgstr ""
 
-msgctxt "#30398
+msgctxt "#30398"
 msgid ""
 msgstr ""
 
-msgctxt "#30399
+msgctxt "#30399"
 msgid ""
 msgstr ""
 
-msgctxt "#30000
+msgctxt "#30000"
 msgid ""
 msgstr ""
 
-#אביתר בנאי
-msgctxt "#30201
+#אביתר בנאי"
+msgctxt "#30201"
 msgid "Eviatar Banai was born on February 8, 1973, is an Israeli singer-songwriter"
 msgstr "אביתר בנאי (נולד ב-8 בפברואר 1973, ו' באדר א' ה'תשל"ג) הוא זמר-יוצר ישראלי, בן למשפחת בנאי"
 
-#אברהם טל
-msgctxt "#30202
+#אברהם טל"
+msgctxt "#30202"
 msgid "Avraham Tal was born on November 28, 1976 is a singer, musician and record producer Israeli..."
 msgstr "אברהם טל (נולד ב-28 בנובמבר 1976) הוא זמר, מוזיקאי ומפיק מוזיקלי ישראלי..."
 
-#אייל גולן
-msgctxt "#30203
+#אייל גולן"
+msgctxt "#30203"
 msgid "Eyal Golan, born 12 April 1971 is an Israeli singer, considered one of the most successful singers in Israel. Most of his albums reached platinum album status ..."
 msgstr "אייל גולן (נולד ב-12 באפריל 1971) הוא זמר ישראלי, הנחשב לאחד הזמרים המצליחים בישראל. רוב אלבומיו הגיעו למעמד אלבום פלטינה.."
 
-msgctxt "#30204
+msgctxt "#30204"
 msgid ""
 msgstr ""
 
-#אתניX
-msgctxt "#30205
-msgid "
+#אתניX"
+msgctxt "#30205"
+msgid ""
 Ethnic X ("Etnix") is an Israeli-based band continuously from 1989 until today. The band was named seven times Band of the Year "in the" hit parade of the annual Hebrew, "more than any other band in Israel ...""
 msgstr "אתניX ("אתניקס") היא להקה ישראלית הפועלת ברציפות משנת 1989 עד היום. הלהקה הוכתרה שבע פעמים כ"להקת השנה" במסגרת "מצעד הפזמונים העברי השנתי", יותר מכל להקה אחרת בישראל..."
 
-#דודו אהרון
-msgctxt "#30207
+#דודו אהרון"
+msgctxt "#30207"
 msgid "Born on December 23, 1984 is a singer, creator, musician, composer, lyricist Israeli ..."
 msgstr "נולד ב 23 בדצמבר 1984  הוא זמר, יוצר, מוזיקאי, מלחין ופזמונאי ישראלי..."
 
-#גיא ויהל
-msgctxt "#30208
+#גיא ויהל"
+msgctxt "#30208"
 msgid "They are a pair of singer-songwriters, composed of Israeli and Guy Mensch Yahel Doron ..."
 msgstr "הם צמד זמרים-יוצרים ישראלים המורכב מגיא מנטש ויהל דורון..."
 
-msgctxt "#30209
+msgctxt "#30209"
 msgid ""
 msgstr ""
 
-msgctxt "#30210
+msgctxt "#30210"
 msgid ""
-msgstr "[COLOR=yellow][/COLOR]   " 
+msgstr "[COLOR=yellow][/COLOR]   " "
 
-#דני סנדרסון
-msgctxt "#30211
+#דני סנדרסון"
+msgctxt "#30211"
 msgid "Born on 30 November 1950 is a guitarist, singer, musician, writer, songwriter, composer and record producer Israeli ..."
 msgstr "(נולד ב-30 בנובמבר 1950) הוא גיטריסט, זמר, מוזיקאי, סופר, פזמונאי, מלחין ומפיק מוזיקלי ישראלי..."
 
-#הדודאים
-msgctxt "#30248
+#הדודאים"
+msgctxt "#30248"
 msgid "There were a couple of singers, Benny Amdurski and Israel Gurion, who between 1957-1993 was one of the leading pairs Hebrew song ..."
 msgstr "היו צמד זמרים, בני אמדורסקי וישראל גוריון, אשר בין השנים 1957-1993 היה אחד מהצמדים המובילים בזמר העברי..."
 
-#הפרוייקט של רביבו
-msgctxt "#30212
+#הפרוייקט של רביבו"
+msgctxt "#30212"
 msgid "Revivo is the project of a musical composition Israeli operation cover versions of songs released in the seventies and eighties ..."
 msgstr "הפרויקט של רביבו הוא הרכב מוזיקלי ישראלי המבצע גרסאות כיסוי של שירים שהתפרסמו בשנות השבעים והשמונים... "
 
-#הראל סקעת
-msgctxt "#30213
+#הראל סקעת"
+msgctxt "#30213"
 msgid "Born on August 8, 1981 in Kfar Saba is an Israeli singer and actor ..."
 msgstr "נולד ב-8 באוגוסט 1981 בכפר סבא הוא זמר ושחקן ישראלי..."
 
-#חיים משה
-msgctxt "#30214
+#חיים משה"
+msgctxt "#30214"
 msgid "Born on September 20, 1955 in Ramat Hasharon is an Israeli singer. His musical style includes singer Mediterranean, Israeli music, and pop ..."
 msgstr "נולד ב-20 בספטמבר 1955 ברמת השרון הוא זמר ישראלי. הסגנון המוזיקלי שלו כולל זמר ים-תיכוני, מוזיקה ישראלית, ופופ..."
 
-#כוורת דודה גזוז
-msgctxt "#30215
+#כוורת דודה גזוז"
+msgctxt "#30215"
 msgid "The band members are leading in all vehicles Gidi Gov and Danny Sanderson bands were in the seventies of the 20th century"
 msgstr "חברי הלהקה המובילים בכל ההרכבים הם גידי גוב ודני סנדרסון הלהקות פעלו בשנות השבעים של המאה ה 20"
 
-msgctxt "#30216
+msgctxt "#30216"
 msgid ""
 msgstr ""
 
-#ישי לוי
-msgctxt "#30217
+#ישי לוי"
+msgctxt "#30217"
 msgid "Yishai Levy was born on January 20, 1963 is an Israeli singer, considered one of the leaders of Mizrahi music in Israel and the Mediterranean ..."
 msgstr "ישי לוי (נולד ב-20 בינואר 1963) הוא זמר ישראלי, הנחשב לאחד ממובילי המוזיקה המזרחית והים תיכונית בישראל..."
 
-#ליאור נרקיס
-msgctxt "#30218
+#ליאור נרקיס"
+msgctxt "#30218"
 msgid "Born on November 8, 1976 is an Israeli singer. Previously he was minister of music and currently Minister of depression Eastern Mediterranean music and pop music ..."
 msgstr "(נולד ב-8 בנובמבר 1976) הוא זמר ישראלי. בעברו היה שר מוזיקת דיכאון וכיום שר מוזיקה מזרחית ים תיכונית וגם מוזיקת פופ..."
 
-msgctxt "#30219
+msgctxt "#30219"
 msgid ""
-msgstr " 
+msgstr " "
 
-#מזי כהן
-msgctxt "#30220
+#מזי כהן"
+msgctxt "#30220"
 msgid "She was born on April 29, 1959 is an Israeli singer and musician. At the beginning, appeared as a soloist of the band trimmed and since has worked with dozens of Israeli musicians ..."
 msgstr "(נולדה ב-29 באפריל 1959) היא זמרת ומוזיקאית ישראלית. התפרסמה בתחילת דרכה כסולנית של להקת גזוז ומאז שיתפה פעולה עם עשרות מוזיקאים ישראלים..."
 
-#מוש בן ארי ולהקת שבע
-msgctxt "#30221
+#מוש בן ארי ולהקת שבע"
+msgctxt "#30221"
 msgid "Born on September 26, 1970) is a singer, musician, songwriter and music composer ..."
 msgstr "נולד ב-26 בספטמבר 1970) הוא זמר, מוזיקאי, פזמונאי ומלחין ישראלי..."
 
-#מושיק עפיה
-msgctxt "#30222
+#מושיק עפיה"
+msgctxt "#30222"
 msgid "Born on October 3, 1974 in Holon is an Israeli singer who sang in oriental style..."
 msgstr "נולד ב-3 באוקטובר 1974 בחולון) הוא זמר ישראלי ששר בסגנון מזרחי..."
 
-#מירי מסיקה
-msgctxt "#30223
+#מירי מסיקה"
+msgctxt "#30223"
 msgid "Born on May 3, 1978 is a singer, actress and model Israeli ..."
 msgstr "נולדה ב-3 במאי  1978 היא זמרת, שחקנית ודוגמנית ישראלית..."
 
-#מאור אדרי
-msgctxt "#30224
+#מאור אדרי"
+msgctxt "#30224"
 msgid "Born on 17 April 1989, is a singer, writer and composer Israeli Oriental music ..."
 msgstr "נולד ב-17 באפריל 1989 הוא זמר, כותב ומלחין מוזיקה מזרחית ישראלי..."
 
-#משה פרץ
-msgctxt "#30225
+#משה פרץ"
+msgctxt "#30225"
 msgid "Born on 10 May 1983, is a singer, composer and songwriter Israeli ..."
 msgstr "נולד ב-10 במאי 1983, כ"ז באייר תשמ"ג הוא זמר, מלחין ופזמונאי ישראלי..."
 
-#משינה
-msgctxt "#30226
+#משינה"
+msgctxt "#30226"
 msgid "Israeli rock band, considered by many one of the most prominent bands operating in Israel ..."
 msgstr "להקת רוק ישראלית, הנחשבת בעיני רבים לאחת הלהקות הבולטות שפעלו בישראל‏..."
 
-#נתן גושן
-msgctxt "#30227
+#נתן גושן"
+msgctxt "#30227"
 msgid "Born on August 6, 1986 a singer, songwriter and music composer ..."
 msgstr "נולד ב  6 באוגוסט 1986 זמר, פזמונאי ומלחין ישראלי..."
 
-msgctxt "#30229
+msgctxt "#30229"
 msgid ""
 msgstr ""
 
-#עיברי לידר
-msgctxt "#30230
+#עיברי לידר"
+msgctxt "#30230"
 msgid "Born on 10 February 1974 is a singer-songwriter, composer and lyricist Acum Prize-winning Israeli Israeli singer first came out of the closet"
 msgstr "נולד ב  10 בפברואר 1974 הוא זמר-יוצר, מלחין ופזמונאי ישראלי זוכה פרס אקו"ם‏ ..."
 
-#עידן רייכל
-msgctxt "#30232
+#עידן רייכל"
+msgctxt "#30232"
 msgid "Born on September 12, 1977, is a musician, songwriter, composer, singer-songwriter, arranger and record producer Israel. Best known as a producer, "Idan Raichel Project ..."
 msgstr " (נולד ב-12 בספטמבר 1977), הוא מוזיקאי, פזמונאי, מלחין, זמר-יוצר, מעבד ומפיק מוזיקלי ישראלי. מוכר בעיקר כמפיק "הפרויקט של עידן רייכל ..."
 
-#עדן בן זקן
-msgctxt "#30246
+#עדן בן זקן"
+msgctxt "#30246"
 msgid "She was born on June 8, 1994 Israeli singer ..."
-msgstr "נולדה ב-8 ביוני 1994 היא זמרת ישראלית...
+msgstr "נולדה ב-8 ביוני 1994 היא זמרת ישראלית..."
 
-#עומר אדם
-msgctxt "#30233
+#עומר אדם"
+msgctxt "#30233"
 msgid "Born on 22 October 1993 in the United States is an Israeli singer Minister pop music Mediterranean. ..."
 msgstr "נולד ב-22 באוקטובר 1993 בארצות הברית הוא זמר ישראלי השר מוזיקת פופ ים-תיכוני ..."
 
-msgctxt "#30234
+msgctxt "#30234"
 msgid ""
 msgstr ""
 
-#פאר טסי
-msgctxt "#30235
+#פאר טסי"
+msgctxt "#30235"
 msgid "Born on May 10, 1984 is the singer-songwriter and music composer Israeli Mediterranean ..."
 msgstr "נולד ב-10 במאי 1984 הוא זמר, כותב ומלחין מוזיקה ים-תיכונית ישראלי..."
 
-#פורטיסחרוף
-msgctxt "#30206
+#פורטיסחרוף"
+msgctxt "#30206"
 msgid "Born July 7, 1957, is a singer, musician, songwriter, composer and record producer Israeli ..."
 msgstr "נולד ב-7 ביולי 1957, הוא זמר, מוזיקאי, פזמונאי, מלחין ומפיק מוזיקלי ישראלי..."
 
-msgctxt "#30236
+msgctxt "#30236"
 msgid ""
-msgstr "" 
+msgstr ""
 
-#קובי פרץ
-msgctxt "#30237
+#קובי פרץ"
+msgctxt "#30237"
 msgid "Born on 28 October 1975 an Israeli singer who sang pop music and oriental dance ..."
 msgstr "נולד ב-28 באוקטובר 1975 הוא זמר ישראלי השר מוזיקה מזרחית ופופ דאנס"
 
-#קרן פלס
-msgctxt "#30238
+#קרן פלס"
+msgctxt "#30238"
 msgid "Born on 11 March 1979 is a singer and generates pop-rock style and an Israeli actress, born Yavniel"
 msgstr "נולדה ב-11 במרץ 1979 היא זמרת ויוצרת בסיגנון פופ-רוק ושחקנית ישראלית, נולדה ביבניאל"
 
-#ריטה
-msgctxt "#30239
+#ריטה"
+msgctxt "#30239"
 msgid "Rita Jehan ex-porosity Kleinstein; Born on March 24, 1962, better known by her first name only, is an Israeli actress and singer ..."
 msgstr "ריטה יהאן-פרוז לשעבר קלינשטיין; נולדה ב-24 במרץ 1962, המוכרת יותר בשמה הפרטי בלבד, היא זמרת ושחקנית ישראלית..."
 
-#רמי קליינשטיין
-msgctxt "#30240
+#רמי קליינשטיין"
+msgctxt "#30240"
 msgid "Born on November 10, 1962 is singer-songwriter, composer and record producer Israel. Activities concentrate on writing original material itself and the past singer Rita, who was his wife ..."
-msgstr " נולד ב-10 בנובמבר 1962 הוא זמר-יוצר, מלחין ומפיק מוזיקלי ישראלי. פעילותו מתמקדת בכתיבת חומר מקורי לעצמו ובעבר גם לזמרת ריטה, מי שהייתה אשתו...
+msgstr " נולד ב-10 בנובמבר 1962 הוא זמר-יוצר, מלחין ומפיק מוזיקלי ישראלי. פעילותו מתמקדת בכתיבת חומר מקורי לעצמו ובעבר גם לזמרת ריטה, מי שהייתה אשתו..."
 
-#שירי מיימון
-msgctxt "#30241
+#שירי מיימון"
+msgctxt "#30241"
 msgid "She was born on 17 May 1981 is a singer, actress and TV anchor Israeli ..."
 msgstr "נולדה ב-17 במאי 1981 היא זמרת, שחקנית ומנחת טלוויזיה ישראלית ..."
 
-#שלום חנוך
-msgctxt "#30242
+#שלום חנוך"
+msgctxt "#30242"
 msgid "Born on 1 September 1946 is singer-songwriter, lyricist and music composer, considered one of the first Israeli rock artists. Work, both in collaboration with other artists initially and then as a soloist, greatly influenced popular music in Israel. Especially recognized for his collaboration with singer Arik Einstein, produced the first Israeli rock albums..."
 msgstr "נולד ב-1 בספטמבר 1946 הוא זמר-יוצר, פזמונאי ומלחין ישראלי, הנחשב לאחד מראשוני היוצרים ברוק הישראלי. יצירתו, הן במסגרת שיתופי פעולה עם אמנים אחרים בתחילת דרכו והן לאחר מכן כסולן, השפיעה רבות על המוזיקה הפופולרית בישראל. במיוחד מוכר שיתוף הפעולה שלו עם הזמר אריק איינשטיין, שהניב את אלבומי הרוק הישראליים הראשונים.‏.."
 
-#שלומי שבת
-msgctxt "#30243
+#שלומי שבת"
+msgctxt "#30243"
 msgid "Born on August 30, 1954 is an Israeli singer and composer ..."
 msgstr "נולד ב-30 באוגוסט 1954 הוא זמר ומלחין ישראלי..."
 
-#שלישיית גשר הירקון
-msgctxt "#30249
+#שלישיית גשר הירקון"
+msgctxt "#30249"
 msgid "Musical composition was held between the years 1964 to 1966 in two vehicles. The first band members were Arik Einstein, Yoram Gaon and his Amdurski. Its program replaced the trio's second Israel Gurion Yoram Gaon leaving ..."
-msgstr "הייתה הרכב מוזיקלי שהתקיים בין השנים 1964 - 1966 בשני הרכבים. חברי ההרכב הראשון היו אריק איינשטיין, יהורם גאון ובני אמדורסקי. בתוכניתה השנייה של השלישייה החליף ישראל גוריון את יהורם גאון שעזב...
+msgstr "הייתה הרכב מוזיקלי שהתקיים בין השנים 1964 - 1966 בשני הרכבים. חברי ההרכב הראשון היו אריק איינשטיין, יהורם גאון ובני אמדורסקי. בתוכניתה השנייה של השלישייה החליף ישראל גוריון את יהורם גאון שעזב..."
 
-#שלמה ארצי
-msgctxt "#30244
+#שלמה ארצי"
+msgctxt "#30244"
 msgid "Born on November 26, 1949, singer-songwriter, musician, composer and songwriter Israel. Considered one of the most successful singers in Israel ... ""
 msgstr " נולד ב-26 בנובמבר 1949 הוא זמר-יוצר, מוזיקאי, מלחין ופזמונאי ישראלי. נחשב לאחד הזמרים המצליחים בישראל..."
 
-msgctxt "#30245
+msgctxt "#30245"
 msgid ""
 msgstr "[COLOR=yellow]שרית חדד (בעבר שרה חודדטוב; נולדה ב-20 בספטמבר 1978, י"ח באלול התשל"ח) היא זמרת ומוזיקאית ישראלית.[/COLOR][CR][CR]הוציאה מעל 20 אלבומים, וזכתה מספר פעמים בתואר "זמרת השנה" וכן בתואר "זמרת העשור" במצעד הפזמונים העברי.[CR]שרית חדד מתמחה במוזיקה מזרחית, והיא הזמרת המושמעת ביותר בישראל..."
 
-msgctxt "#30247
+msgctxt "#30247"
 msgid ""
 msgstr ""
 
-msgctxt "#30401
+msgctxt "#30310"
+msgid "Roy Orbison"
+msgstr "Roy Orbison"
+
+msgctxt "#30401"
 msgid ""
 msgstr "[COLOR=yellow]מייקל ג'וזף ג'קסון (באנגלית: Michael Joseph Jackson;‏ 29 באוגוסט 1958 – 25 ביוני 2009) היה זמר, מוזיקאי, רב נגן, רקדן, כוריאוגרף, מפיק מוזיקלי, שחקן ופזמונאי אפרו אמריקאי מצליח. ג'קסון, שנודע בכינויו "מלך הפופ", נחשב לאחד הזמרים הפופולריים והמצליחים ביותר בכל הזמנים.[/COLOR][CR][CR]הקריירה המוזיקלית של ג'קסון החלה בשנת 1963 כאשר הצטרף לאחיו בתור החבר הצעיר ביותר בהרכב המוזיקלי המשפחתי "חמישיית הג'קסונים". בהמשך עזב את הלהקה והחל קריירת סולו מצליחה יותר. אלבומו Thriller משנת 1982 מכר מעל ל-110 מיליון עותקים ונשאר עד היום האלבום הנמכר ביותר בכל הזמנים, לצד ארבעה אלבומים נוספים של ג'קסון. הווידאוקליפים לשיריו "Beat It"‏, "Billie Jean" ו-"Thriller" נחשבו לפורצי דרך והשפיעו רבות על תעשיית המוזיקה בהמשך. באותה העת, ג'קסון הפך מספר טכניקות ריקוד מסובכות לפופולאריות במיוחד, המפורסם שבריקודים הוא ריקוד "הליכת הירח". הסגנון המוזיקלי, הסגנון הווקאלי והכוריאוגרפיה הייחודית של ג'קסון הצליחו לגשר על פערי הדורות, הגזעים והתרבויות. הקריירה המוזיקלית של ג'קסון היוותה השראה למיליוני אנשים ברחבי העולם ואמנים רבים בתחום המוזיקה והריקוד הושפעו ממנו.[CR]הישגים נוספים לג'קסון כוללים בין היתר שבירת מספר שיאים עולמיים שנכנסו לספר השיאים של גינס, זכייה ב-15 פרסי גראמי, זכייה ב-26 פרסי American Music Awards, והפקת 17 סינגלים אשר הגיעו למקום ראשון במצעד הפזמונים האמריקאי (כולל ארבעה אשר הופקו בעודו חבר בחמישיית הג'קסונים). סך מכירות אלבומיו - המוערך בכ-780 מיליון עותקים ברחבי העולם, דבר שהפך אותו לאחד האומנים המצליחים ביותר מבחינה מסחרית בהיסטוריה של המוזיקה.[CR]לאורך השנים בשל ההתעניינות הרבה בג'קסון, הצהובונים ברחבי העולם עסקו באינטנסיביות בחייו הפרטיים של ג'קסון והתמקדו בעיקר בשינויים הקיצוניים במראהו החיצוני של ג'קסון שכלל שינוי מבנה אפו וצבע עורו, בהאשמות בביצוע מעשים מגונים בילדים ובמערכות היחסים השונות של ג'קסון.[CR]ג'קסון מת ב-25 ביוני 2009 מדום לב בשל מנת יתר של הסם פרופופול, סוג של סם הרגעה. מותו אירע במהלך ההכנות לסבב ההופעות שלו "This Is It". רופאו האישי של ג'קסון, קונראד מארי, אשר היה זה שטיפל בו שלא כראוי בסם, הורשע בהריגתו ונדון לארבע שנות מאסר."
 
-msgctxt "#30402
+msgctxt "#30402"
 msgid "Beyonce"
 msgstr ""
 
-msgctxt "#30403
+msgctxt "#30403"
 msgid ""
 msgstr "[COLOR=yellow]רובין ריהאנה פנטי (באנגלית: Robyn Rihanna Fenty; נולדה ב-20 בפברואר 1988) המוכרת בשם הבמה ריהאנה, היא זמרת, שחקנית, ומעצבת אופנה ברבדית. היא נולדה בסיינט מייקל שבברבדוס והתגוררה שם עד גיל 15. היא החלה את הקריירה המוזיקלית שלה כשפגשה את המפיק המוזיקלי אוון רוג'רס ב-2003 והקליטה קלטות דמו תחת הדרכתו, שבסופו של דבר הגיעו לג'יי זי שהחליט לקחת אותה תחת חסותו.[/COLOR][CR][CR]מאז תחילת הקריירה שלה, הוציאה ריהאנה שבעה אלבומים; שבעתם הגיעו לעשרת הגדולים במצעד האלבומים האמריקאי בילבורד 200, ואלבומה השביעי אף הגיע למקום הראשון. 13 משיריה דורגו במקום הראשון במצעד הפזמונים האמריקאי בילבורד הוט 100, ובכך השוותה ריהאנה את שיאה לשיאו של מייקל ג'קסון וכעת היא ממוקמת במקום השלישי ברשימת אמני הסולו שהצליחו להכניס הכי הרבה שירים לצמרת המצעד.היא נחשבת לאחד מהאמנים הנמכרים ביותר בכל הזמנים. אלבומיה ושיריה נמכרו בכ-194.5 מיליון עותקים בכל העולם, מה שהופך אותה גם לאמנית הדיגיטלית הנמכרת ביותר בכל הזמנים.[CR]בשנת 2011 הגיעו עשרה משיריה לצמרת מצעד הבילבורד הוט 100 והייתה לאמן הצעיר ביותר שעשה זאת. בנוסף לכך נכון להיום היא האמן השלישי בהיסטוריה שצבר הכי הרבה שבועות במקום הראשון במצעד זה (עם 51 שבועות). ב-2012 דירג מגזין פורבס את ריהאנה כידוען הרביעי המשפיע של השנה, עם רווח של 53 מיליון דולר בין מאי 2011 למאי 2012. באותה שנה, הכריז טיים מגזין על ריהאנה כאחת מ-100 האנשים המשפיעים ביותר בעולם. בשנת 2013 דירג מגזין בילבורד את ריהאנה ברשימת "100 האמנים המצליחים ביותר בעשור הראשון של המאה ה-21" ולאמן המצליח ביותר בעשור השני של המאה ה-21. ב-2 ביוני 2014, הוצגה ריהאנה עם פרס אייקון האופנה על מפעל החיים ממועצת מעצבי האופנה של אמריקה, פרס מיוחד השמור לאדם שסגנונו הפך להשפעה משמעותית על התרבות הפופולרית על במה בינלאומית. ובאותה שנה נודע כי ריהאנה דורגה במקום ה-8 ברשימת "100 האנשים המשפיעים ביותר" של מגזין פורבס, עם רווח של 48 מיליון דולר בין יוני 2013 ליוני 2014, מה ששם אותה במקום ה-4 ברשימת ה"נשים המשפיעות ביותר" ובאותו מקום גם ברשימת ה"מוזיקאים המשפיעים ביותר". ריהאנה זכתה ב-311 פרסים, הבולטים מתוכם: 8 פרסי גראמי, 8 פרסי AMA ו-22 פרסי בילבורד. בטקס פרסי המוזיקה האמריקאית של שנת 2013, זכתה ריהאנה בפרס "אייקון" הראשון בהיסטוריה של הטקס, פרס אשר ניתן לאמן שתרם רבות לתעשיית המוזיקה."
 
-msgctxt "#30404
+msgctxt "#30404"
 msgid ""
 msgstr "[COLOR=yellow]Taylor Swift הוא אלבום הבכורה של הזמרת-היוצרת האמריקאית טיילור סוויפט. האלבום יצא לאור ב-24 באוקטובר 2006, על ידי Big Machine Records, כשסוויפט הייתה בת 16. סוויפט כתבה שירים לאלבום במהלך השנה הראשונה שלה בתיכון, חלק מהם במשותף עם ליז רוז וכותבים נוספים.‏ סוויפט התנסתה עם מספר מפיקי מוזיקה ותיקים בנאשוויל, אך בסוף החליטה לשכור את מפיק הדמואים שלה נתן צ'פמן.‏ מבחינה מוזיקלית, האלבום הוא בסגנון מוזיקת קאנטרי, ומבחינה מילולית, הוא עוסק במערכות יחסים רומנטיות, שכמה מהן כתבה סוויפט מהתבוננות במערכת יחסים לפני שחוותה אחת בעצמה, ונוגע במאבקיה האישיים של סוויפט בתיכון.[/COLOR][CR][CR]חמישה סינגלים יצאו מהאלבום, כולם הגיעו למעמד פלטינה מטעם איגוד תעשיית ההקלטות האמריקאי (RIAA).‏ "Tim McGraw" יצא כסינגל המוביל, והגיע לעשרת הגדולים במצעד הקאנטרי של בילבורד. "Teardrops on My Guitar" יצא כסינגל השני, והפך לשיר המצליח ביותר באלבום, כשהגיע למקום ה-13 במצעד הבילבורד הוט 100. "Our Song" יצא כסינגל השלישי מתוך האלבום, והפך לשיר הראשון של סוויפט שכבש את פסגת מצעד הקאנטרי של בילבורד, מה שהפך את סוויפט לאדם הצעיר ביותר שיצר וביצע לבדו שיר שהגיע למקום הראשון במצעד.‏ "Picture to Burn" ו-"Should've Said No" יצאו כסינגלים והרביעי והחמישי מהאלבום, והצליחו במצעדי הקאנטרי בארצות הברית. סוויפט קידמה את אלבומה על ידי הופעות חימום לראסקל פלאטס, ג'ורג' סטרייט, קני צ'סני ובראד פייזלי, טים מקגרו ופיית' היל.‏‏[CR]Taylor Swift התקבל באופן חיובי על ידי המבקרים, ששיבחו את הכישרון של סוויפט בגיל כה צעיר. האלבום זכה להצלחה מסחרית והשיק את הקריירה של סוויפט במוזיקת קאנטרי. בארצות הברית, שהה האלבום בפסגת מצעד אלבומי הקאנטרי במשך 24 שבועות, והגיע למעמד פלטינה מחומשת מטעם איגוד תעשיית ההקלטות האמריקאי (RIAA), עם מכירות של מעל 5 מיליון עותקים. Taylor Swift נשאר 277 שבועות במצעד הבילבורד 200, מה שהופך אותו לאחד מ-12 האלבומים שנשארו בזמן הארוך ביותר בהיסטוריה של המצעד. האלבום הצליח גם מחוץ למדינת האם של סוויפט, בעיקר בקנדה, באוסטרליה, ובבריטניה. האלבום מכר למעלה משישה מיליון עותקים.‏"
 
-msgctxt "#30405
+msgctxt "#30405"
 msgid ""
 msgstr "[COLOR=yellow]אריאנה גרנדה-בוטרה (באנגלית: Ariana Grande-Butera; נולדה ב-26 ביוני 1993), המוכרת בשם אריאנה גרנדה, היא זמרת ושחקנית אמריקאית.[/COLOR][CR][CR]היא התחילה את קריירת הבידור שלה בשנת 2010 כששיחקה בסדרת הנוער המצליחה "ויקטוריוס". בהמשך קיבלה תפקיד ראשי בסדרת הבת שלה "סאם וקאט" ששודרו בערוץ ניקלודיאון.[CR]ב-2013, זכתה גרנדה להצלחה רבה לאחר שיצא אלבום הבכורה שלה, Yours Truly, שדורג במקום הראשון במצעד האלבומים האמריקאי בילבורד 200. הסינגל הראשון מתוך האלבום, "The Way", הגיע לעשרת הגדולים במצעד הפזמונים האמריקאי בילבורד הוט 100 והגיע למעמד פלטינה משולשת בארצות הברית. האלבום זכה לשבחי ביקורת עם מבקרים שהשוו את מנעד קולה הרחב לזה של מריה קארי שמגיע למנעד קולי של 4 אוקטבות.[CR]ב-2014, הוצגה גרנדה על ידי אגודת עסקי המוזיקה כ"פריצת השנה", על הישגיה בשנת 2013.[CR]אלבום האולפן השני שלה, My Everything, שיצא ב-2014, העפיל אף הוא למקום הראשון במצעד האמריקאי וארבעה סינגלים ממנו נכנסו לעשירייה הפותחת במצעד, מה שהפך אותה לזמרת מיינסטרים לאחת הזמרות המצליחות ביותר באותה שנה."
+
+msgctxt "#30410"
+msgid ""
+msgstr ""
+
+msgctxt "#30450"
+msgid ""
+msgstr ""

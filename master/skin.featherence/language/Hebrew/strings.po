@@ -270,12 +270,12 @@ msgid "Effect icon and text only."
 msgstr "חל עך אייקון וטקסט בלבד."
 
 msgctxt "#31083"
-msgid ""
-msgstr ""
+msgid "Touch Screen"
+msgstr "מסך מגע"
 
 msgctxt "#31084"
-msgid ""
-msgstr ""
+msgid "Touch Screen support"
+msgstr "תמיכה במסך מגע"
 
 msgctxt "#31085"
 msgid ""

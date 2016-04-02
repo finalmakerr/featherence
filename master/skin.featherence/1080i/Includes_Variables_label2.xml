@@ -410,6 +410,11 @@
 	<value condition="!Skin.HasSetting(Action_Thumbnail)">$LOCALIZE[107]</value>
   </variable>
   
+  <variable name="410label2">
+    <value condition="Skin.HasSetting(Touch_Support)">$LOCALIZE[107]</value>
+	<value condition="!Skin.HasSetting(Touch_Support)">$LOCALIZE[106]</value>
+  </variable>
+  
   <variable name="ReloadSkin_check">
     <value>TEST</value>
 	<value condition="Skin.String(MainBackgroundTexture)">MainBackgroundTexture</value>

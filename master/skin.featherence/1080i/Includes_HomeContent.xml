@@ -561,6 +561,41 @@
 	</item>
   </include>
   
+  <include name="Content_Home3">
+    <item id="20">
+	  <visible>true</visible>
+	  <property name="id">&quot;20&quot;</property>
+	  <property name="temp1">temp1_20]</property>
+	  <property name="temp2">temp2_20]</property>
+	  <property name="off"></property>
+	  <property name="sub"></property>
+	  <property name="color">$INFO[Skin.String(color20)]</property>
+	  <thumb fallback="special://home/addons/script.featherence.service/resources/icons/back2.png">$INFO[Skin.String(icon20)]</thumb>
+	  <icon fallback=""></icon>
+	  <label>$VAR[label20]</label>
+	  <label2>&quot;20&quot;</label2>
+	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml)">Action(Back)</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <visible>!Window.IsVisible(CustomHomeCustomizer2.xml)</visible>
+	</item>
+	<item id="21">
+	  <visible>true</visible>
+	  <property name="id">&quot;21&quot;</property>
+	  <property name="temp1">temp1_21]</property>
+	  <property name="temp2">temp2_21]</property>
+	  <property name="off"></property>
+	  <property name="sub"></property>
+	  <property name="color">$INFO[Skin.String(color21)]</property>
+	  <thumb fallback="special://home/addons/script.featherence.service/resources/icons/home.png">$INFO[Skin.String(icon21)]</thumb>
+	  <icon fallback=""></icon>
+	  <label>$VAR[label21]</label>
+	  <label2>&quot;21&quot;</label2>
+	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml)">ActivateWindow(Home.xml)</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <visible>!Window.IsVisible(CustomHomeCustomizer2.xml)</visible>
+	</item>
+  </include>
+  
   <include name="Content_LoginScreen">
     <item id="100" description="מסך התחברות">
 	  <visible>true</visible>

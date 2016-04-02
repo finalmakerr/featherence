@@ -270,11 +270,11 @@ msgid "Effect icon and text only."
 msgstr ""
 
 msgctxt "#31083"
-msgid ""
+msgid "Touch Screen"
 msgstr ""
 
 msgctxt "#31084"
-msgid ""
+msgid "Touch Screen support"
 msgstr ""
 
 msgctxt "#31085"
