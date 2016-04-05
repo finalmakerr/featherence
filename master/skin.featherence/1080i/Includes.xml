@@ -264,7 +264,7 @@
 		  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
 		  <visible>Skin.HasSetting(Touch_Support)</visible>
 		  <posx>0</posx>
-		  <posy>140</posy>
+		  <posy>340</posy>
 		  <width>930</width>
 		  <height>300</height>
 		  <onleft>noop</onleft>

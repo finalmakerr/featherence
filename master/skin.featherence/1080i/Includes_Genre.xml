@@ -27,7 +27,7 @@
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Action.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31600]) | SubString(ListItem.Genre,Action) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Action)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31600]) | SubString(VideoPlayer.Genre,Action) | SubString(Window(home).Property(TopVideoInformation6),Action)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31600]) | SubString(ListItem.Genre,Action) | SubString(ListItem.Genre,אקשן) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Action)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31600]) | SubString(VideoPlayer.Genre,Action) | SubString(VideoPlayer.Genre,אקשן) | SubString(Window(home).Property(TopVideoInformation6),Action)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
@@ -416,7 +416,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31600]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31600]) | SubString(ListItem.Genre,Action) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Action)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31600]) | SubString(VideoPlayer.Genre,Action) | SubString(Window(home).Property(TopVideoInformation6),Action)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31600]) | SubString(ListItem.Genre,Action) | SubString(ListItem.Genre,אקשן) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Action)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31600]) | SubString(VideoPlayer.Genre,Action) | SubString(VideoPlayer.Genre,אקשן) | SubString(Window(home).Property(TopVideoInformation6),Action)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>

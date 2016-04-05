@@ -13,7 +13,6 @@ Import the module and input the addDir in your addon module.py file.
 '''
 def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	url2 = url ; printpoint = "" ; returned = "" ; extra = "" ; name2 = "" ; iconimage2 = "" ; desc2 = ""
-	
 	text = 'fanart' + space2 + str(fanart)
 	printlog(title='addDir_test0', printpoint=printpoint, text=text, level=0, option="")
 	name = str(to_utf8(name))
@@ -779,7 +778,6 @@ def MultiVideos_play(finalurl, pl, playlist, printpoint, General_TVModeShuffle, 
 def MultiVideos_play2(finalurl, pl, playlist, printpoint):
 	'''Play the first available video in the playlist'''
 	count = 0 ; printpoint2 = "" ; numOfItems2 = 0
-	
 	pl.add(finalurl)
 	playlist.append(finalurl)
 	if '606' in printpoint or '66' in printpoint:

@@ -10,7 +10,8 @@ def mode0(admin, name, printpoint):
 	#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
 	#installaddon('resource.images.weathericons.outline')
 	#installaddon('resource.images.weatherfanart.single')
-	DownloadFile('asd', 'asd', 'qwe', 'zxc', silent=False, percentinfo="")
+	
+	#DownloadFile('asd', 'asd', 'qwe', 'zxc', silent=False, percentinfo="")
 	
 def mode5(value, admin, name, printpoint):
 	'''startup'''
@@ -1746,6 +1747,7 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('ListItem.Art(Poster)') #CUSTOM TEST
 			message = message + newline + "custom2" + space2 + xbmc.getInfoLabel('ListItem.IsCollection') #CUSTOM TEST
 			message = message + newline + "custom3" + space2 + str(xbmc.getInfoLabel('System.InternetState')) #CUSTOM TEST
+			message = message + newline + "ListItem.Property(TotalEpisodes)" + space2 + str(xbmc.getInfoLabel('ListItem.Property(TotalEpisodes)')) #CUSTOM TEST
 			
 			
 
