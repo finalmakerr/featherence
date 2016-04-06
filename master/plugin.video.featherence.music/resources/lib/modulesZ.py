@@ -6,7 +6,7 @@ from shared_modules import *
 if "plugin." in addonID: from shared_modules3 import *
 '''---------------------------'''
 
-'''עמוד הבא'''
+'''ערוצי טלוויזיה'''
 
 def CATEGORIES10101Z(name, iconimage, desc, background, fanart):
 	background = 101

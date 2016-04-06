@@ -54,3 +54,4 @@ else:
 commonsearch101 = 'סטנד אפ'
 commonsearch102 = 'סטנד אפ'
 commonsearch103 = 'סטנד אפ'
+commonsearch104 = 'stand up'

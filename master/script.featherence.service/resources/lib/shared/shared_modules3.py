@@ -213,6 +213,7 @@ def clean_commonsearch(x, match=False):
 			y = y.replace("commonsearch101", space + commonsearch101)
 			y = y.replace("commonsearch102", space + commonsearch102)
 			y = y.replace("commonsearch103", space + commonsearch103)
+			y = y.replace("commonsearch104", space + commonsearch104)
 		if 'commonsearch' in y:
 			y = y.replace('commonsearch',"",1)
 		

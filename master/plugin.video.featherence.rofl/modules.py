@@ -20,8 +20,9 @@ def CATEGORIES():
 	addDir('-' + addonString(30000).encode('utf-8'),'',100,featherenceserviceicons_path + 'star.png',addonString_servicefeatherence(32800).encode('utf-8'),'1',50, getAddonFanart(100, urlcheck_=True)) #My ROFL
 	
 	addDir(addonString(30001).encode('utf-8'),'',101,featherenceserviceicons_path + 'fail.png','','1',58, getAddonFanart(101, default="https://i.ytimg.com/vi/y4ZmuJL1IMk/maxresdefault.jpg", urlcheck_=True)) #פספוסים
-	addDir(addonString(30002).encode('utf-8'),'',102,featherenceserviceicons_path + 'tvshows.png','','1',58, getAddonFanart(102, default="http://www.motovideo.eu/wp-content/uploads/2015/12/Motor-Fails-Comedy-Fail.jpg", urlcheck_=True)) #תוכניות
-	addDir(addonString(30003).encode('utf-8'),'',103,featherenceserviceicons_path + 'bank.png','','1',2, getAddonFanart(103, default="http://s1.dmcdn.net/FiK7p/1280x720-edX.jpg", urlcheck_=True)) #סטנדאפ
+	addDir(addonString(30002).encode('utf-8'),'',102,featherenceserviceicons_path + 'tvshows.png','','1',58, getAddonFanart(102, default="http://www.motovideo.eu/wp-content/uploads/2015/12/Motor-Fails-Comedy-Fail.jpg", urlcheck_=True)) #תוכניות ישראליות
+	addDir(addonString(30003).encode('utf-8'),'',103,featherenceserviceicons_path + 'bank.png','','1',2, getAddonFanart(103, default="https://miserylovescompanyuk.files.wordpress.com/2015/08/o-stage-microphone-facebook.jpg", urlcheck_=True)) #סטנדאפ ישראלי
+	addDir(addonString(30004).encode('utf-8'),'',104,featherenceserviceicons_path + 'bank.png','','1',2, getAddonFanart(104, default="https://miserylovescompanyuk.files.wordpress.com/2015/08/o-stage-microphone-facebook.jpg", urlcheck_=True)) #סטנדאפ לועזי
 	#addDir(addonString(200).encode('utf-8') % (General_Language),'',200,featherenceserviceicons_path + 'ud.png','[COLOR=red]1: %s | 2: %s | 3: %s[/COLOR]' % (General_Language, General_Language2, General_Language3) + '[CR]' + addonString_servicefeatherence(32081).encode('utf-8'),'1',50, getAddonFanart(200, urlcheck_=True)) #Forigen Language
 
 
@@ -58,14 +59,10 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 	addDir(localize(1036),"",32,featherenceserviceicons_path + 'star.png','','1',50, getAddonFanart(fanart, urlcheck_=True))
 
 def CATEGORIES101(name, iconimage, desc, fanart):
+	'''פספוסים'''
+	'''30400-30499'''
 	background = 101
 	background2 = fanart
-	'''--------פיספוסים------------------
-	-------------------------------------
-	-------------------------------------
-	-			פיספוסים				-
-	----------------------------------'''
-	'''מחרוזות מילים מ30400 עד30600'''
 	
 	'''failarmy''''''
 	fanart = '' #גדול
@@ -140,12 +137,11 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list.append('&youtube_ch=UCRvQ6H9unDQSOD0-qZ0EZog')
 	addDir(addonString(30408).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCRvQ6H9unDQSOD0-qZ0EZog',58, getAddonFanart(background, default='getAPIdata', custom=""))
 
-	
 def CATEGORIES102(name, iconimage, desc, fanart):
 	background = 102
 	background2 = fanart
 	commonsearch = 'commonsearch101'
-	'''החל מ30600 עד 30700'''
+	'''30600-30699'''
 
 	'''קומי קומי'''
 	fanart = 'http://f.frogi.co.il/pic/bidur/IT/RA.png?r=1442740388'
@@ -155,18 +151,16 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLzXQC1m6QYoWsA7rgCJkAL4bqPRSiDhiY')
 	list.append('&youtube_pl=PLX7Z5ey7NSDmmSPOEswfNedckidOnx1pS')
 	addDir(addonString(30601).encode('utf-8'),list,17,thumb,addonString(30602).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
-	
-	
-	#צריך לחפש
-	
+		
 def CATEGORIES103(name, iconimage, desc, fanart):
+	'''סטנדאפ ישראלי'''
+	'''30100-30299'''
+	
 	background = 103
 	background2 = fanart
-	commonsearch = 'commonsearch101'
+	commonsearch = 'commonsearch103'
 	
 	CATEGORIES_RANDOM(background,fanart) #אקראי
-	
-	'''סטנדאפיסטים'''
 	
 	'''אבי קושניר'''
 	fanart = 'http://megafon-news.co.il/asys/wp-content/uploads/2013/10/%D7%94%D7%97%D7%99%D7%99%D7%9C-%D7%94%D7%90%D7%9E%D7%99%D7%A5-%D7%A9%D7%95%D7%95%D7%99%D7%A7-%D7%90%D7%91%D7%99-%D7%A7%D7%95%D7%A9%D7%A0%D7%99%D7%A8-%D7%A6%D7%99%D7%9C%D7%95%D7%9D-%D7%96%D7%A8%D7%90%D7%A8-%D7%90%D7%9C%D7%95%D7%9F.jpg' #גדול
@@ -647,4 +641,95 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30220).encode('utf-8'),list,17,thumb,addonString(30221).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
+def CATEGORIES104(name, iconimage, desc, fanart):
+	'''סטנדאפ לועזי'''
+	'''30800-30999'''
+	
+	background = 104
+	background2 = fanart
+	commonsearch = 'commonsearch104'
+	
+	CATEGORIES_RANDOM(background,fanart) #אקראי
+	
+	
+	'''Bill Burr '''
+	fanart = '' #גדול
+	thumb = '' #בינוני
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30804).encode('utf-8'),list,17,thumb,addonString(30805).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
+	'''Brian Regan'''
+	fanart = '' #גדול
+	thumb = '' #בינוני
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30800).encode('utf-8'),list,17,thumb,addonString(30801).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
+	'''Chris Rock'''
+	fanart = '' #גדול
+	thumb = '' #בינוני
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30818).encode('utf-8'),list,17,thumb,addonString(30819).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
+	'''Dave Chappelle'''
+	fanart = '' #גדול
+	thumb = '' #בינוני
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30808).encode('utf-8'),list,17,thumb,addonString(30809).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
+	'''Esther Povitsky'''
+	fanart = '' #גדול
+	thumb = '' #בינוני
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30802).encode('utf-8'),list,17,thumb,addonString(30803).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
+	'''George Carlin'''
+	fanart = '' #גדול
+	thumb = '' #בינוני
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30806).encode('utf-8'),list,17,thumb,addonString(30807).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
+	'''Louis CK'''
+	fanart = '' #גדול
+	thumb = '' #בינוני
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30810).encode('utf-8'),list,17,thumb,addonString(30811).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
+	'''Lewis Black'''
+	fanart = '' #גדול
+	thumb = '' #בינוני
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30812).encode('utf-8'),list,17,thumb,addonString(30813).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
+	'''Jim Carrey'''
+	fanart = '' #גדול
+	thumb = '' #בינוני
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30814).encode('utf-8'),list,17,thumb,addonString(30815).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
+	'''Mitch Hedberg'''
+	fanart = '' #גדול
+	thumb = '' #בינוני
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30816).encode('utf-8'),list,17,thumb,addonString(30817).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
 	
