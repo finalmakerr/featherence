@@ -1990,7 +1990,11 @@ def mode512(value):
 		if systemplatformwindows: webbrowser.open(url)
 		elif systemplatformandroid:
 			webbrowser.open(url)
-			#StartAndroidActivity('start -a', 'action', 'VIEW')
+			app = 'com.android.chrome'
+			intent = 'android.intent.action.VIEW'
+			dataType = ''
+			cmd = 'StartAndroidActivity("%s", "%s", "%s", "%s")' % (app, intent, dataType, url)
+			xbmc.executebuiltin(cmd)
 			#terminal('adb shell am start -a android.intent.action.VIEW -d '+url+'','')
 		elif systemplatformlinux:
 			if xbmc.getCondVisibility('System.HasAddon(service.openelec.settings)'): xbmc.executebuiltin('RunAddon(browser.chromium)')
