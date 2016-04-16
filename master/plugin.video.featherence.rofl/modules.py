@@ -174,7 +174,6 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	fanart = 'http://cdn.maba.co.il/ckFiles/images/Tarbut/Events/Adir_Miller/Adir-Miller_1440x550.jpg'
 	thumb = 'http://bubblesfest.com/images/photos/face23.jpg'
 	list = []
-	list.append('&youtube_pl=PLx52KOUQbEMpwMmWa1auGhtajSr7y5gcz')
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30102).encode('utf-8'),list,17,thumb,addonString(30103).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
 	
@@ -732,4 +731,12 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30816).encode('utf-8'),list,17,thumb,addonString(30817).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
+	'''Russell Peters'''
+	fanart = 'https://media.livenation.com/artists/78217/78217-show-94014.jpg?1386819141' #גדול
+	thumb = 'http://www.metrocomedy.com/wp-content/uploads/2015/07/russell-peters.jpg' #בינוני
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30820).encode('utf-8'),list,17,thumb,addonString(30821).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
 	

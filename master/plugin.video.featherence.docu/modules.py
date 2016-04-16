@@ -1016,13 +1016,12 @@ def CATEGORIES108(name, iconimage, desc, fanart):
 	
 	'''דוקו סרטים'''
 	list = []
-	list.append('&youtube_id=Md3BQG4oWDU')
 	list.append('&youtube_id=jC5iaonGRCg')
 	list.append('&youtube_id=4pBLynGT5ZA')
 	list.append('&youtube_id=NEnRsTlSsxM')
-	list.append('&youtube_id=watch?v=JsPuREOKvPc')
-	list.append('&youtube_id=watch?v=Qw3lObBE8WE')
-	list.append('&youtube_id=watch?v=vYzxryWHVZs')
+	list.append('&youtube_id=JsPuREOKvPc')
+	list.append('&youtube_id=Qw3lObBE8WE')
+	list.append('&youtube_id=vYzxryWHVZs')
 	list.append('&youtube_id=uIotx1aGtKg')
 	addDir('דוקו סרטים',list,17,'http://www.wallpapergeeks.com/wp-content/uploads/2014/12/african-safari-zebras-wallpaper-800x600.jpg','','1',"", getAddonFanart(background, default=fanart, custom=""))
 					
@@ -1038,9 +1037,7 @@ def CATEGORIES108(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLHv0VZq_Hje7b_ZUanXVHHLtzoFe8zUsn')
 	list.append('&youtube_pl=PLZxxWjeQgN4s1cXnvkS6rWDGKCI1YYW8g')
 	list.append('&youtube_pl=PLTa6eP38rKWV9jW-XdavVcQtM72hIGPVF')
-	list.append('&youtube_pl=PLMOOIFFitzstfZJRTXIeirKr8V-UoUpsA')
 	list.append('&youtube_pl=PL6A2CaEev7b4vrILtDfeCszrTq1rsXl_c')
-	list.append('&youtube_pl=PL1PXZ56eQG-SGcBGlBXuokGz8O0Iogpzs')
 	list.append('&youtube_pl=PL762D7FD5B70D28C0')
 	addDir('טבע ישראלי',list,17,'http://www.israel-travel-secrets.com/images/Meshushim-pool3.jpg','','1',"", getAddonFanart(background, default=fanart, custom=""))
 	
@@ -1166,20 +1163,6 @@ def CATEGORIES10801(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_pl=PL43AC3544C5E17BEF')
 	addDir('חיות בספארי',list,17,'https://d3373c9sxdao7y.cloudfront.net/content/product/large/05328RAV.jpg','','1',"", getAddonFanart(background, default=fanart, custom=""))
-	
-	
-	'''חיות פראיות '''
-	list = []
-	list.append('&youtube_id=81Vh9FriKfc')
-	list.append('&youtube_pl=PLB781B8A94339CC67')
-	list.append('&youtube_id=RqLn1vCQVMo')
-	list.append('&youtube_id=fTTsZ1OGZV8')
-	list.append('&youtube_id=hqnv8qVOqLY')
-	list.append('&youtube_id=9GdWNAXvd0g')
-	list.append('&youtube_id=uhDjEYmF-oo')
-	list.append('&youtube_pl=PL2l4T5NjtOsrGnFacKHUc1m7F1Kojuisq')
-	list.append('&youtube_id=bI85XpkVTHg')
-	addDir('חיות פראיות ',list,17,'http://onmilwaukee.com/images/articles/ri/rio2review/rio2review_fullsize_story1.jpg','','1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''קטנטנים בטבע'''
 	list = []
