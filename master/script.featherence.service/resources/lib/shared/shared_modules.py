@@ -670,11 +670,11 @@ def dialognumeric(type,heading,input,custom,set1,addon):
 
 	set1v = xbmcgui.Dialog().numeric(type, heading, str(input))
 	
-	if set1v == "":
+	if set1v == "" and custom != '1':
 		notification_common("3")
 		sys.exit()
 		'''---------------------------'''
-		
+	
 	if custom == '0':
 		try:
 			if int(set1v) > 001000000 and int(set1v) < 9999999999: returned = 'ok'
@@ -685,14 +685,16 @@ def dialognumeric(type,heading,input,custom,set1,addon):
 			printpoint = printpoint + "6"
 			'''---------------------------'''
 			
-	if custom == '1':
+	elif custom == '1':
 		if set1v != "": returned = 'ok'
 		'''---------------------------'''
-	if custom == '2':
+	elif custom == '2':
 		if set1v == "": set1v = 0
 		elif set1v != 0: returned = 'ok'
 		'''---------------------------'''
-	
+	elif custom == "3":
+		returned = 'ok'
+		
 	if returned == 'ok':
 		if set1 != "" and addon != "":
 			if addonID == addon: setsetting(set1, set1v) ; printpoint = printpoint + "A"
@@ -918,7 +920,7 @@ def installaddon(addonid2, update=True):
 		else:
 			printpoint = printpoint + '6'
 			if not 'resources.' in addonid2:
-				notification('Addon Required:',str(addonid2),'',4000)				
+				notification('Addon Required:[CR]' + addonid2,'','',4000)				
 				#xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +',return)')
 				xbmc.executebuiltin('RunPlugin('+ addonid2 +')')
 	text = 'addonid2_' + space2 + str(addonid2_) + newline + \

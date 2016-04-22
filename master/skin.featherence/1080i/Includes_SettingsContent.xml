@@ -325,6 +325,7 @@
 		<thumb>special://home/addons/script.featherence.service/resources/icons/cubes.png</thumb>
 		<property name="rinfo"> $LOCALIZE[31093]</property>
 		<onclick>Skin.ToggleSetting(BigHomeIcons)</onclick>
+		<onclick condition="Skin.String(MenuDesign,4)">ReloadSkin()</onclick>
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>
 	  
@@ -898,6 +899,16 @@
 		<visible>Container(100).Hasfocus(25)</visible>
 	  </item>
 	  
+	  <item id="393" description="Use password protection">
+		<label>$LOCALIZE[1272]</label>
+		<label2>$INFO[Skin.String(PassProtect)]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/Key.png</thumb>
+		<property name="rinfo"></property>
+		<onclick condition="!Skin.String(PassProtect)">Skin.SetNumeric(PassProtect)</onclick>
+		<onclick condition="Skin.String(PassProtect)">Skin.SetString(PassProtect,)</onclick>
+		<visible>Container(100).Hasfocus(25)</visible>
+	  </item>
+	  
 	  <item id="395" description="נתיב ברירת מחדל (סמלים)">
 		<label>$VAR[395label] ($LOCALIZE[536])</label>
 		<label2>$INFO[Skin.String(CustomIconsPath)]</label2>
@@ -1084,10 +1095,10 @@
 		<visible>System.HasAddon(service.openelec.settings)</visible>
 	  </item>
 	  <item id="22" description="הגדרת שלט טלוויזיה">
-		<label>$ADDON[script.featherence.service 32066]</label>
+		<label>$ADDON[script.featherence.service 32025]</label>
 		<label2>$INFO[Window(home).Property(Remote_Name)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/remoteb.png</thumb>
-		<property name="rinfo">$LOCALIZE[78897][CR]$LOCALIZE[78898]</property>
+		<property name="rinfo">$LOCALIZE[32146]</property>
 		<onclick>RunScript(script.featherence.service,,?mode=27)</onclick>
 		<visible>Container(100).Hasfocus(2)</visible>
 		<visible>System.Platform.Linux + !System.Platform.Android + !System.Platform.Linux.RaspberryPi + System.HasAddon(service.openelec.settings) + System.HasAddon(script.featherence.service)</visible>

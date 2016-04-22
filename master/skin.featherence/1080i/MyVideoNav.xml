@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window description="(25)">
   <defaultcontrol always="true">50</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
   <views>50,51,54,56,57,58</views>
   <include>onunload_ClearProperty_ListItem</include>
   <include>onunload_ClearProperty_TopVideoInformation</include>
@@ -10,7 +9,7 @@
   <include>ReloadSkin_Check</include>
   <include>Fade6</include>
   <controls>
-    <include>Backgrounds3</include>
+	<include>Backgrounds3</include>
     <include>ViewDesign_50</include>
 	<include>ViewDesign_51</include>
 	<include>ViewDesign_54</include>
@@ -18,8 +17,9 @@
 	<include>ViewDesign_57</include>
 	<include>ViewDesign_58</include>
 	<include>MenuDesign_Left</include>
+	
 	<include>TopVideoInformation</include>
-	<include>ScrollBar</include>
 	<include>TopInformation</include>
+	<include>ScrollBar</include>
   </controls>
 </window>

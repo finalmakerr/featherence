@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="4ways">
 	  <onleft condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(9005) + StringCompare(System.Language,Hebrew)">9005</onleft>
@@ -50,7 +50,7 @@
 	  <ondown condition="Control.IsVisible(13) + [Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)]">13</ondown>
 	  <ondown condition="Control.IsVisible(14) + [Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)]">14</ondown>
 	  <preloaditems>2</preloaditems>
-	  <pagecontrol>60</pagecontrol>	  
+	  <pagecontrol>60</pagecontrol>
 	  <scrolltime tween="sine" easing="inout">200</scrolltime>
   </include>
   <include name="4ways2" description="IncludeShelf Top">
@@ -1073,7 +1073,7 @@
 		<onright condition="Control.IsVisible(12) + !StringCompare(System.Language,Hebrew)">12</onright>
 		<onright condition="Control.IsVisible(20)">20</onright>
 		<!--<visible>IntegerGreaterThan(Container.NumPages,2)</visible>-->
-		<visible>!Window.IsVisible(DialogTextViewer.xml)</visible>
+		<visible>!StringCompare(Container.Viewmode,$LOCALIZE[31015]) + !Window.IsVisible(DialogTextViewer.xml)</visible>
 	  </control>
 	  
 	  <control type="scrollbar" id="61" description="כלי גלילה">
@@ -1088,7 +1088,6 @@
 	  </control>
 	</control>
 	<control type="group" description="">
-	  <visible>Control.IsVisible(60)</visible>
 	  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015])</visible>
 	  <height>20</height>
 	  <width>1980</width>

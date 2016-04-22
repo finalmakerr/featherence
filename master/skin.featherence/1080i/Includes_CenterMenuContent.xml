@@ -124,6 +124,13 @@
 		<visible>!StringCompare(Window(home).Property(Button.ID),Window(home).Property(Button.ID_))</visible>
 		<visible>[!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + !IntegerGreaterThan(Window(home).Property(Button.ID),99)] | [Window.IsVisible(Custom1139.xml) + SubString(Window(home).Property(SubButton.ID),_9)]</visible>
 	  </item>
+	  <item id="722" description="שימוש בסיסמה להגנה">
+		<label>$LOCALIZE[1272]</label>
+		<onclick description="1175" condition="!IsEmpty(Window(home).Property(Button.ID_)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">Skin.ToggleSetting(pwd$INFO[Window(home).Property(Button.ID_)])</onclick>
+		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/bolt.png</thumb>
+		<visible>!Window.IsVisible(Custom1139.xml) + IntegerGreaterThan(Window(home).Property(Button.ID),80) | Window.IsVisible(Custom1139.xml)</visible>
+	  </item>
 	  <item id="723" description="">
 		<label>ADMIN</label>
 		<onclick>Skin.ToggleSetting(del74_94)</onclick>

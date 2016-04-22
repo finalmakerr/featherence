@@ -24,6 +24,9 @@
   <include name="ImageR1">
     <aspectratio align="right">keep</aspectratio>
   </include>
+  <include name="ImageC2">
+    <aspectratio align="center">stretch</aspectratio>
+  </include>
   <include name="ImageL2">
     <aspectratio align="left">stretch</aspectratio>
   </include>
@@ -665,6 +668,38 @@
 	</definition>
   </include>
   
+  <include name="LockButtons">
+    <control type="image" description="pwd_lock">
+	  <animation condition="true" effect="fade" start="50,50" end="50,50">Conditional</animation>
+	  <animation condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="30,10">Conditional</animation>
+	  <animation condition="Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="114,0">Conditional</animation>
+	  <animation condition="Skin.String(ButtonsDesign,4) + !Skin.String(MenuDesign,4)" effect="slide" start="0,0" end="144,20">Conditional</animation>
+	  <animation condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="120,23">Conditional</animation>
+	  <animation condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-32,23">Conditional</animation>
+	  <aspectratio>keep</aspectratio>
+	  <height>70</height>
+	  <posx>30</posx>
+	  <posy>30</posy>
+	  <texture>special://home/addons/script.featherence.service/resources/icons/Key.png</texture>
+	  <visible>!IsEmpty(ListItem.Property(pwd)) + IsEmpty(Window(home).Property(PassProtect))</visible>
+	  <width>70</width>
+	</control>
+	<control type="image" description="pwd_unlock">
+	  <animation condition="true" effect="fade" start="50,50" end="50,50">Conditional</animation>
+	  <animation condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="30,10">Conditional</animation>
+	  <animation condition="Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="114,0">Conditional</animation>
+	  <animation condition="Skin.String(ButtonsDesign,4) + !Skin.String(MenuDesign,4)" effect="slide" start="0,0" end="44,0">Conditional</animation>
+	  <animation condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="120,23">Conditional</animation>
+	  <animation condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-32,23">Conditional</animation>
+	  <aspectratio>keep</aspectratio>
+	  <height>70</height>
+	  <posx>20</posx>
+	  <posy>20</posy>
+	  <texture>special://home/addons/script.featherence.service/resources/icons/Unlock.png</texture>
+	  <visible>!IsEmpty(ListItem.Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))</visible>
+	  <width>70</width>
+	</control>
+  </include>
   <include name="SideMenu2">
     <control type="group" description="Side menu 9010 group">
 	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="400,0" delay="0" time="700" reversible="true">Conditional</animation>
@@ -767,9 +802,13 @@
   </include>
   
   <include name="MenuDesign4_Icon">
-	<include description="משולשים/משושים" condition="Skin.String(MenuDesign,4) + [Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)]">ImageC1</include>
-	<include condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)">ImageR1</include>
-	<include condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)">ImageL1</include>
+	<include description="משולשים/משושים" condition="Skin.String(MenuDesign,4) + [Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)] + !Skin.HasSetting(BigHomeIcons)">ImageC1</include>
+	<include condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew) + !Skin.HasSetting(BigHomeIcons)">ImageR1</include>
+	<include condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew) + !Skin.HasSetting(BigHomeIcons)">ImageL1</include>
+	
+	<include description="משולשים/משושים" condition="Skin.String(MenuDesign,4) + [Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)] + Skin.HasSetting(BigHomeIcons)">ImageC2</include>
+	<include condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew) + Skin.HasSetting(BigHomeIcons)">ImageR2</include>
+	<include condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew) + Skin.HasSetting(BigHomeIcons)">ImageL2</include>
   </include>
   <include name="Control_Pos1" description="50/55/58">
 	<posx>0</posx>
