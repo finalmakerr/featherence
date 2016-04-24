@@ -795,6 +795,15 @@ if property_buttonid != "" and property_buttonid_ != "" or 1 + 1 == 2:
 	'''---------------------------'''
 	
 	pwd90 = xbmc.getInfoLabel('Skin.HasSetting(pwd90)')
+	pwd91 = xbmc.getInfoLabel('Skin.HasSetting(pwd91)')
+	pwd92 = xbmc.getInfoLabel('Skin.HasSetting(pwd92)')
+	pwd93 = xbmc.getInfoLabel('Skin.HasSetting(pwd93)')
+	pwd94 = xbmc.getInfoLabel('Skin.HasSetting(pwd94)')
+	pwd95 = xbmc.getInfoLabel('Skin.HasSetting(pwd95)')
+	pwd96 = xbmc.getInfoLabel('Skin.HasSetting(pwd96)')
+	pwd97 = xbmc.getInfoLabel('Skin.HasSetting(pwd97)')
+	pwd98 = xbmc.getInfoLabel('Skin.HasSetting(pwd98)')
+	pwd99 = xbmc.getInfoLabel('Skin.HasSetting(pwd99)')
 	'''---------------------------'''
 	pwd100 = xbmc.getInfoLabel('Skin.HasSetting(pwd100)')
 	pwd101 = xbmc.getInfoLabel('Skin.HasSetting(pwd101)')
@@ -817,7 +826,7 @@ if property_buttonid != "" and property_buttonid_ != "" or 1 + 1 == 2:
 	pwd118 = xbmc.getInfoLabel('Skin.HasSetting(pwd118)')
 	pwd119 = xbmc.getInfoLabel('Skin.HasSetting(pwd119)')
 	'''---------------------------'''
-	pwdT = { 'pwd90': pwd90, 'pwd100': pwd100, 'pwd101': pwd101, 'pwd102': pwd102, 'pwd103': pwd103, 'pwd104': pwd104, 'pwd105': pwd105, 'pwd106': pwd106, 'pwd107': pwd107, 'pwd108': pwd108, 'pwd109': pwd109, 'pwd110': pwd110, 'pwd111': pwd111, 'pwd112': pwd112, 'pwd113': pwd113, 'pwd114': pwd114, 'pwd115': pwd115, 'pwd116': pwd116, 'pwd117': pwd117, 'pwd118': pwd118, 'pwd119': pwd119 }
+	pwdT = { 'pwd90': pwd90, 'pwd91': pwd91, 'pwd92': pwd92, 'pwd93': pwd93, 'pwd94': pwd94, 'pwd95': pwd95, 'pwd96': pwd96, 'pwd97': pwd97, 'pwd98': pwd98, 'pwd99': pwd99, 'pwd100': pwd100, 'pwd101': pwd101, 'pwd102': pwd102, 'pwd103': pwd103, 'pwd104': pwd104, 'pwd105': pwd105, 'pwd106': pwd106, 'pwd107': pwd107, 'pwd108': pwd108, 'pwd109': pwd109, 'pwd110': pwd110, 'pwd111': pwd111, 'pwd112': pwd112, 'pwd113': pwd113, 'pwd114': pwd114, 'pwd115': pwd115, 'pwd116': pwd116, 'pwd117': pwd117, 'pwd118': pwd118, 'pwd119': pwd119 }
 	'''---------------------------'''
 
 if property_subbuttonid_ != "" or property_temp != "" or property_temp2 != "" or 1 + 1 == 2:

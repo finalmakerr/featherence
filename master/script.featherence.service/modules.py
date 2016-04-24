@@ -10,8 +10,13 @@ def mode0(admin, name, printpoint):
 	#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
 	#installaddon('resource.images.weathericons.outline')
 	#installaddon('resource.images.weatherfanart.single')
-	
+	path = 'C:\Users\\finalmakerr\\AppData\\Roaming\\Kodi\\addons\\plugin.program.featherence.emu\\resources\\media\\2P.png'
+	xbmc.executebuiltin('ShowPicture('+path+')')
 	#DownloadFile('asd', 'asd', 'qwe', 'zxc', silent=False, percentinfo="")
+	#ShowPicture(path=path)
+	#mydisplay = ShowPicture(path=path)
+	#mydisplay .doModal()
+	#del mydisplay
 	
 def mode5(value, admin, name, printpoint):
 	'''startup'''
@@ -1260,7 +1265,7 @@ def mode210(value, admin, name, printpoint):
 					setSkinSetting('0','label'+x,str(labelT.get('label'+y)))
 					setSkinSetting('0','action'+x,str(actionT.get('action'+y)))
 					setSkinSetting('1','off'+x,str(offT.get('off'+y)))
-					setSkinSetting('1','pwd'+x,str(offT.get('pwd'+y)))
+					setSkinSetting('1','pwd'+x,str(pwdT.get('pwd'+y)))
 					setSkinSetting('0','color'+x,str(colorT.get('color'+y)))
 					setSkinSetting('0','icon'+x,str(iconT.get('icon'+y)))
 					#setSkinSetting('0','background'+y,str(backgroundT.get('background'+x)))
@@ -1302,7 +1307,7 @@ def mode210(value, admin, name, printpoint):
 					label_ = xbmc.getInfoLabel('$VAR['+label_T.get('label'+y)+']')
 					notification("...", "", "", 1000)
 					setSkinSetting('1','off'+x,str(off_T.get('off'+y)))
-					setSkinSetting('1','pwd'+x,str(off_T.get('pwd'+y)))
+					setSkinSetting('1','pwd'+x,str(pwd_T.get('pwd'+y)))
 					setSkinSetting('0','label'+x,label_T.get('label'+y))
 					setSkinSetting('0','action'+x,str(action_T.get('action'+y)))
 					setSkinSetting('0','icon'+x,str(icon_T.get('icon'+y)))
@@ -1704,6 +1709,7 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "TopVideoInformation7" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation7)')
 			message = message + newline + "VideoPlayer.Title" + space2 + xbmc.getInfoLabel('VideoPlayer.Title')
 			message = message + newline + "TopVideoInformation8" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation8)')
+			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('VideoPlayer.VideoCodec') #CUSTOM TEST
 			
 		elif myweatherW:
 			message = message + newline + "Day0 Title" + space2 + xbmc.getInfoLabel('Window.Property(Day0.Title)')
@@ -1776,7 +1782,7 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "ListItem.Duration" + space2 + xbmc.getInfoLabel('ListItem.Duration')
 			message = message + newline + "Container.Viewmode" + space2 + xbmc.getInfoLabel('Container.Viewmode')
 			message = message + newline + '---------------------------'
-			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('ListItem.Art(Poster)') #CUSTOM TEST
+			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('VideoPlayer.VideoCodec') #CUSTOM TEST
 			message = message + newline + "custom2" + space2 + xbmc.getInfoLabel('ListItem.IsCollection') #CUSTOM TEST
 			message = message + newline + "custom3" + space2 + str(xbmc.getInfoLabel('System.InternetState')) #CUSTOM TEST
 			message = message + newline + "ListItem.Property(TotalEpisodes)" + space2 + str(xbmc.getInfoLabel('ListItem.Property(TotalEpisodes)')) #CUSTOM TEST
