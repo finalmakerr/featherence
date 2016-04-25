@@ -2766,7 +2766,7 @@ if property_subbuttonid_ != "" or property_temp != "" or property_temp2 != "" or
 	off_T.update(off119_T)
 	
 if xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)') or 1 + 1 == 2:
-	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos', 'ButtonsDesign', 'DialogMenu', 'PassProtect'] #NO RANDOM SUPPORT
+	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos', 'ButtonsDesign', 'DialogMenu', 'PassProtect', 'StartUpVideo'] #NO RANDOM SUPPORT
 	list0c = ['MenuColor', 'SubMenuMarkColor', 'TopInformationColor', 'TopVideoInformationColor', 'MainBackgroundColor', 'TopBackgroundColor', 'IconUnFocusColor', 'IconFocusColor', 'ButtonUnFocusColor', 'ButtonFocusColor', 'KeyboardUnFocusColor', 'KeyboardFocusColor', 'keyboardbackgroundcolor', 'KeyboardEditColor', 'SelectedFrameColor', 'SubMenuMarkColor']
 	list0c2 = ['MainBackgroundTexture', 'TopBackgroundTexture'] #NO RANDOM SUPPORT
 	list0o = ['IconOverlayButton', 'MenuButtonsOverlay', 'MenuOverlay', 'DialogBackgroundOverlay', 'KeyboardBackgroundOverlay', 'TopVideoInformationOverlay', 'TopMainBackgroundOverlay', 'TopInformationOverlay', 'MainBackgroundOverlay', 'BackgroundOverlay', 'Background2Overlay']

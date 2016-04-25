@@ -10,13 +10,7 @@ def mode0(admin, name, printpoint):
 	#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
 	#installaddon('resource.images.weathericons.outline')
 	#installaddon('resource.images.weatherfanart.single')
-	path = 'C:\Users\\finalmakerr\\AppData\\Roaming\\Kodi\\addons\\plugin.program.featherence.emu\\resources\\media\\2P.png'
-	xbmc.executebuiltin('ShowPicture('+path+')')
-	#DownloadFile('asd', 'asd', 'qwe', 'zxc', silent=False, percentinfo="")
-	#ShowPicture(path=path)
-	#mydisplay = ShowPicture(path=path)
-	#mydisplay .doModal()
-	#del mydisplay
+	
 	
 def mode5(value, admin, name, printpoint):
 	'''startup'''
@@ -50,27 +44,46 @@ def mode5(value, admin, name, printpoint):
 		#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
 
 def mode6(value):
+	name = 'mode6 (pwd)' ; printpoint = ""
 	passprotect = xbmc.getInfoLabel('Skin.String(PassProtect)')
 	passprotect_property = xbmc.getInfoLabel('Window(home).Property(PassProtect)')
 	currentpwd = xbmc.getCondVisibility('Skin.HasSetting('+value+')')
+	#label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 	
 	if currentpwd:
+		printpoint = printpoint + '1'
 		if passprotect_property != "":
-			pass
+			printpoint = printpoint + '2'
+			
 		elif not passprotect:
 			'''This button is locked but you haven't set a password!'''
+			printpoint = printpoint + '3'
 			notification(addonString(32147).encode('utf-8'),"","",4000)
 			setProperty('PassProtect','','home')
 			xbmc.executebuiltin('ReplaceWindow(Home.xml)')
 		else:
+			printpoint = printpoint + '4'
 			returned, set1v = dialognumeric(0,localize(12326),"",'1','','')
 			if returned != passprotect:
+				printpoint = printpoint + '5'
 				notification(localize(12342),"","",2000)
 				setProperty('PassProtect','','home')
 				xbmc.executebuiltin('ReplaceWindow(Home.xml)')
 			else:
+				printpoint = printpoint + '6'
 				xbmc.executebuiltin('AlarmClock(PassProtect,ClearProperty(home,PassProtect),15,silent)')
 				setProperty('PassProtect','true', 'home')
+	else:
+		printpoint = printpoint + '9'
+	
+	passprotect_property_ = xbmc.getInfoLabel('Window(home).Property(PassProtect)')
+	text = 'value' + space2 + str(value) + newline + \
+	'passprotect' + space2 + str(passprotect) + newline + \
+	'passprotect_property' + space2 + str(passprotect_property) + newline + \
+	'passprotect_property_' + space2 + str(passprotect_property_) + newline + \
+	'currentpwd' + space2 + str(currentpwd) + newline
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+	
 def mode8(admin, name, printpoint):
 	'''------------------------------
 	---SMART-SUBTITLE-SEARCH---------

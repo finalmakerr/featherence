@@ -1468,30 +1468,6 @@ class TextViewer_Dialog(xbmcgui.WindowXMLDialog):
 
     def onFocus(self, controlID):
         pass
- 
-class ShowPicture(xbmcgui.Window):
-  def __init__(self, *arg, **kwargs):
-    self.path = kwargs.get('path')
-    print 'test : ' + self.path
-    self.addControl(xbmcgui.ControlImage(0,0,800,600, self.path))
-    self.strActionInfo = xbmcgui.ControlLabel(100, 120, 200, 200, '', 'font13', '0xFFFF00FF')
-    self.addControl(self.strActionInfo)
-    self.strActionInfo.setLabel('Push BACK to quit, A to display text and B to erase it')
-    #self.image =xbmcgui.ControlImage (0, 0, 1920, 1080, self.path, aspectRatio=2)
-    #self.addControl(self.image)
-    #self.image.setImage(self.path)
-	
-    xbmc.sleep(4000)
-    self.close()
-	
-  def onAction(self):
-    self.close()
-
-  def onClick(self):
-    self.close()
-
-  def onFocus(self):
-    self.close()
 
 
 class Custom1000_Dialog(xbmcgui.Window):
