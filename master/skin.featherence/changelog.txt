@@ -10,9 +10,10 @@ WIP - WORK IN PROGRESS
 Featherence v0.5.0 (xx-Apr-16)
 ------------------------
 - Last version of Isengard (Kodi 15) - We're moving to Jarvis only now!
+- Update Tips on wait.
 - Skin has been removed from Featherence Repository!
   Downloading and updates from the official Kodi repository only!
-  
+
 ------------------------
 Featherence v0.4.9 (22-Apr-16)
 ------------------------
