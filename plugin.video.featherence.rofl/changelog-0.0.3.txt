@@ -3,7 +3,12 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
-Featherence ROFL v0.0.1 (06-Apr-16)
+Featherence ROFL v0.0.3 (30-Apr-16)
+------------------------
+- Minor bugs fix.
+
+------------------------
+Featherence ROFL v0.0.2 (06-Apr-16)
 ------------------------
 - Added foreign stand-up.
 - Added english translation.

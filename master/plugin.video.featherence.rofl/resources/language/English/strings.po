@@ -639,6 +639,14 @@ msgctxt "#30819"
 msgid ""
 msgstr ""
 
+msgctxt "#30820"
+msgid "Russell Peters"
+msgstr "Russell Peters"
+
+msgctxt "#30821"
+msgid ""
+msgstr ""
+
 msgctxt "#39999"
 msgid "Not yet information available"
 msgstr "Not yet information available"
