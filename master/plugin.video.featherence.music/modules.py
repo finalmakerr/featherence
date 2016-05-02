@@ -59,7 +59,7 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	if name == None: name = ""
 	else: name = name + newline
 	
-	'''Easy Listening, Love songs & Bellads'''
+        '''Easy Listening, Love songs & Bellads'''
 	thumb = 'https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0PGGM81.png?v=1.0'
 	fanart = 'http://www.pavellevchenko.com/hard-rock-music-guitar.jpg'
 	addDir('Easy Listening, Love songs & Bellads',templates2_path + 'Easy Listening, Love songs & Bellads Personal Collection.txt',2,thumb,name + '','1',50, fanart)
@@ -94,15 +94,20 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.wallpapersbyte.com/wp-content/uploads/2015/06/Downolad-HD-Wallpaper-France-Paris-City-Eiffel-Tower-Sunset-WallpapersByte-com-1920x1080.jpg'
 	addDir('Great French Collection',templates2_path + 'Great French Collection.txt',2,thumb,name + '','1',50, fanart)
 	
-	'''Greek Music''' 
+	'''Greek party music''' 
 	thumb = 'http://www.bestarabicmusic.net/wp-content/uploads/2012/07/arab-oud-300x220.jpg'
 	fanart = 'https://aranui.com/wp-content/uploads/2014/11/borabora.jpg'
-	addDir('Greek Music',templates2_path + 'Greek Music.txt',2,thumb,name + 'העריכה והבקשה של חברינו לקבוצה Yehuda Belhasin','1',50, fanart) 
+	addDir('Greek party music',templates2_path + 'Greek party music.txt',2,thumb,name + 'העריכה והבקשה של חברינו לקבוצה Yehuda Belhasin','1',50, fanart) 
 	
-	'''Twilight Time'''
-	thumb = 'http://cps-static.rovicorp.com/3/JPG_400/MI0003/649/MI0003649662.jpg?partner=allrovi.com'
-	fanart = 'http://screencast.com/t/t85VTb1XCb'
-	addDir('Twilight Time - Oldies',templates2_path + 'Twilight Time.txt',2,thumb,name + '','1',50, fanart)
+	'''Greek Quiet music''' 
+	thumb = 'http://www.bestarabicmusic.net/wp-content/uploads/2012/07/arab-oud-300x220.jpg'
+	fanart = 'https://aranui.com/wp-content/uploads/2014/11/borabora.jpg'
+	addDir('Greek Quiet music',templates2_path + 'Greek Quiet music.txt',2,thumb,name + 'העריכה והבקשה של חברינו לקבוצה Yehuda Belhasin','1',50, fanart) 
+	
+	'''My Generation'''
+	thumb = 'http://cdn.scahw.com.au/cdn-1d0999afe8fe1c0/ImageVaultFiles/id_349131/cf_7/localworks_MyGeneration-628x387.JPG'
+	fanart = 'https://i.ytimg.com/vi/d88YGB4hZow/maxresdefault.jpg'
+	addDir('My Generation',templates2_path + 'My Generation.txt',2,thumb,name + '','1',50, fanart)
 	
 	'''The Beatles'''
 	thumb = 'http://img2-ak.lst.fm/i/u/ar0/6a122bb0665d4d8ca0cc4c31e245ff55'
@@ -112,7 +117,7 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	'''bob dylan'''
 	thumb = 'https://s3.amazonaws.com/rapgenius/600full-the-best-of-bob-dylan-cover.jpg'
 	fanart = 'http://zetaestaticos.com/cordoba/img/noticias/0/950/950919_1.jpg'
-	addDir('bob dylan',templates2_path + 'bob dylan.txt',2,thumb,desc + '','1',50, fanart)
+	addDir('Top Songs Of Bob Dylan',templates2_path + 'Top Songs Of Bob Dylan.txt',2,thumb,desc + '','1',50, fanart)
 	
 	'''love songs vol 1'''
 	thumb = 'http://fullhdpictures.com/wp-content/uploads/2015/04/Beauty-Love-Wallpapers.jpg'
@@ -129,6 +134,26 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.women-zone.com/wp-content/uploads/2015/08/israel.jpg' 
 	addDir('ארבע אחר הצהריים',templates2_path + 'Four in the afternoon.txt',2,thumb,name + 'מוקדש ל Oren Hagay חברינו לקבוצה Kodisrael.net','1',50, fanart)
 	
+	'''שירי יום השואה'''
+	thumb = 'http://www.rimonschool.co.il/wp-content/uploads/2015/04/yezkor-11.jpg'
+	fanart = 'http://blog.tapuz.co.il/momins/images/%7BF6AB614D-CC3F-45C2-97A8-9FB8C494FF16%7D.jpg'
+	addDir('יום השואה שירים וסיפורים',templates2_path + 'Holocaust Day songs.txt',2,thumb,name + 'לזכר 6 מיליון יהודים','1',50, fanart)
+	
+	'''עוד מעט נהפוך לשיר הפרוייקט'''
+	thumb = 'http://img2.timg.co.il/forums/1_116211607.jpg'
+	fanart = 'http://www.ayaskitchen.com/forum/uploads/4187.jpg'
+	addDir('עוד מעט נהפוך לשיר',templates2_path + 'Od Meat Nhafch Leshir.txt',2,thumb,name + 'ליום הזיכרון','1',50, fanart)
+	
+	'''שירי יום הזיכרון לחללי מערכות ישראל ולנפגעי פעולות האיבה'''
+	thumb = 'http://www.go4it.org.il/f/attachment.php?attachmentid=1787&stc=1&thumb=1&d=1240841639'
+	fanart = 'https://i.ytimg.com/vi/79UUYR1gd2k/maxresdefault.jpg'
+	addDir('שירי יום הזיכרון לחללי מערכות ישראל ולנפגעי פעולות האיבה',templates2_path + 'IDF memorial day.txt',2,thumb,name + 'מוקדש לכל מי שהקריב את נפשו למען הגנת המדינה','1',50, fanart)
+	
+	'''שירי הלהקות הצבאיות'''
+	thumb = 'http://blog.tapuz.co.il/charchanut/images/%7B8A174BD1-2035-45AF-B1D8-21ACA3646553%7D.jpg'
+	fanart = 'https://i.ytimg.com/vi/t0couQwmgbc/maxresdefault.jpg'
+	addDir('שירי הלהקות הצבאיות',templates2_path + 'The Israeli Army Song Collection.txt',2,thumb,name + 'ליום העצמאות','1',50, fanart)
+	
 	'''שלמה ארצי אוסף אישי'''
 	thumb = 'http://www.nrg.co.il/images/archive/465x349/1/077/947.jpg'
 	fanart = 'http://www.megapixel.co.il/mega/wp-content/uploads/2012/02/Shlomo-Artzi_so.jpg'
@@ -137,12 +162,12 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	'''פלייליסט מזרחי שקט ורגוע''' 
 	thumb = 'http://www.vehiclehi.com/thumbnails/detail/20121101/headphones%20women%20music%20headphones%20girl%201920x1080%20wallpaper_www.vehiclehi.com_28.jpg'
 	fanart = 'http://i.ytimg.com/vi/vaQiwOi8Afk/maxresdefault.jpg'
-	addDir('פלייליסט מזרחי שקט ורגוע',templates2_path + 'Eastern playlist sedate.txt',2,thumb,name + 'על פי בקשה של חברי הקבוצה (KODISRAEL.NET)','1',50, fanart) 
+	addDir('פלייליסט מזרחי שקט ורגוע',templates2_path + 'mizrahi Quiet playlist.txt',2,thumb,name + 'על פי בקשה של חברי הקבוצה (KODISRAEL.NET)','1',50, fanart) 
 	
 	'''פלייליסט מזרחי קיצבי דאנס'''
 	thumb = 'http://www.commentsyard.com/cy/01/9086_original.gif'
 	fanart = 'http://3.bp.blogspot.com/-_90x10bD8Xs/VIn8kUH4rwI/AAAAAAAAABo/Yif1L9eLyuE/s1600/music.jpg'
-	addDir('פלייליסט מזרחי קיצבי דאנס',templates2_path + 'mizrahi playlist rhythmic dance.txt',2,thumb,name + 'על פי בקשה של חברי הקבוצה (KODISRAEL.NET)','1',50, fanart) 
+	addDir('פלייליסט מזרחי קיצבי דאנס',templates2_path + 'mizrahi party playlist.txt',2,thumb,name + 'על פי בקשה של חברי הקבוצה (KODISRAEL.NET)','1',50, fanart) 
 	
 	'''אריק איינשטיין אוסף אישי'''
 	thumb = 'http://www.maariv.co.il/download/pictures/%D7%90%D7%A8%D7%99%D7%A7%20%D7%90%D7%99%D7%99%D7%A0%D7%A9%D7%98%D7%99%D7%9F%203%20-%20%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A9%D7%94%20%D7%A9%D7%99%20%D7%A4%D7%9C%D7%90%D7%A9%2090%20480_2.jpg'
