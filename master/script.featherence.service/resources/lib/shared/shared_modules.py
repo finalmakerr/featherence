@@ -361,50 +361,6 @@ def localize(value, s=[], addon=None):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	return returned
 
-def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percentinfo=""):
-	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = "" ; returned = ""
-	downloadpath2 = os.path.join(downloadpath, filename)
-	
-	scriptfeatherenceservice_downloading = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
-	printpoint = printpoint + "1"
-	from commondownloader import *
-	
-	if scriptfeatherenceservice_downloading != "":
-		returned = "skip"
-		notification_common("23")
-		xbmc.executebuiltin('AlarmClock(scriptfeatherenceservice_downloading,ClearProperty(script.featherence.service_downloading,home),10,silent)')
-	else:
-		if xbmc.getCondVisibility('System.HasAlarm(scriptfeatherenceservice_downloading)'): xbmc.executebuiltin('CancelAlarm(scriptfeatherenceservice_downloading)')
-		setProperty('script.featherence.service_downloading', 'true', type="home")
-		returned = doDownload(url, downloadpath2, filename, "", "", "", silent=silent, percentinfo=percentinfo)
-		
-		try: test = 1
-		except Exception, TypeError:
-			extra = extra + newline + "TypeError" + space2 + str(TypeError)
-			returned = str(TypeError)
-		
-		if returned == "ok":
-			printpoint = printpoint + "3"
-			ExtractAll(downloadpath2, extractpath)
-		if downloadpath2 != downloadpath:
-			printpoint = printpoint + "4"
-			removefiles(downloadpath2)
-		
-		setProperty('script.featherence.service_downloading', '', type="home")
-		
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	text = "returned" + space2 + str(returned) + newline + \
-	"url" + space2 + url + newline + \
-	'downloadpath' + space2 + str(downloadpath) + newline + \
-	'downloadpath2' + space2 + str(downloadpath2) + newline + \
-	'extractpath' + space2 + str(extractpath) + newline + \
-	'silent' + space2 + str(silent) + newline + \
-	extra
-	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
-	'''---------------------------'''
-
 def find_string(findin, findwhat, findwhat2):
 	'''Return a string in a variable from x to y'''
 	name = 'find_string' ; printpoint = ""

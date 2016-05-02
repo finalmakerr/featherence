@@ -48,6 +48,7 @@ def mode6(value):
 	passprotect = xbmc.getInfoLabel('Skin.String(PassProtect)')
 	passprotect_property = xbmc.getInfoLabel('Window(home).Property(PassProtect)')
 	currentpwd = xbmc.getCondVisibility('Skin.HasSetting('+value+')')
+	set1v = ""
 	#label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 	
 	if currentpwd:
@@ -64,7 +65,7 @@ def mode6(value):
 		else:
 			printpoint = printpoint + '4'
 			returned, set1v = dialognumeric(0,localize(12326),"",'1','','')
-			if returned != passprotect:
+			if set1v != passprotect:
 				printpoint = printpoint + '5'
 				notification(localize(12342),"","",2000)
 				setProperty('PassProtect','','home')
@@ -78,6 +79,7 @@ def mode6(value):
 	
 	passprotect_property_ = xbmc.getInfoLabel('Window(home).Property(PassProtect)')
 	text = 'value' + space2 + str(value) + newline + \
+	'set1v' + space2 + str(set1v) + newline + \
 	'passprotect' + space2 + str(passprotect) + newline + \
 	'passprotect_property' + space2 + str(passprotect_property) + newline + \
 	'passprotect_property_' + space2 + str(passprotect_property_) + newline + \
