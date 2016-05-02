@@ -129,6 +129,11 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.women-zone.com/wp-content/uploads/2015/08/israel.jpg' 
 	addDir('ארבע אחר הצהריים',templates2_path + 'Four in the afternoon.txt',2,thumb,name + 'מוקדש ל Oren Hagay חברינו לקבוצה Kodisrael.net','1',50, fanart)
 	
+	'''שירי הלהקות הצבאיות'''
+	thumb = 'http://www.artishuk.co.il/UserFiles/Store/Products/Products/230x634453006475603750_M.png'
+	fanart = 'http://www.pupic.co.il/UploadedImages/Original/%D7%9E%D7%95%D7%96%D7%99%D7%A7%D7%94%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%AA.jpg'
+	addDir('שירי הלהקות הצבאיות',templates2_path + 'songs collection.txt',2,thumb,name,'1',50, fanart)
+	
 	'''שלמה ארצי אוסף אישי'''
 	thumb = 'http://www.nrg.co.il/images/archive/465x349/1/077/947.jpg'
 	fanart = 'http://www.megapixel.co.il/mega/wp-content/uploads/2012/02/Shlomo-Artzi_so.jpg'
