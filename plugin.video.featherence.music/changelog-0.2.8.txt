@@ -5,6 +5,12 @@ WIP (WORK IN PROGRESS)--
 - Add foreign singers, karaoke, liveshows.
 
 ------------------------
+Featherence Music v0.2.8 (03-May-16)
+------------------------
+- Amir Elgazar patch:
+  - Added 4 new playlist.
+  
+------------------------
 Featherence Music v0.2.7 (05-Apr-16)
 ------------------------
 - Update translation to match up wih Kodi's rules.
