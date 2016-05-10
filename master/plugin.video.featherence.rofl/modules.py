@@ -369,6 +369,15 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30150).encode('utf-8'),list,17,thumb,addonString(30151).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
 	
+	'''יוסי טרבלוס'''
+	fanart = 'https://i.ytimg.com/vi/rGOEGV16J1A/maxresdefault.jpg'
+	thumb = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Yossi_Tarablus.JPG/250px-Yossi_Tarablus.JPG'
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	list.append('&youtube_ch=latenight100')
+	addDir(addonString(30218).encode('utf-8'),list,17,thumb,addonString(30219).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
 	'''ינאי בן נח'''
 	fanart = 'https://i.ytimg.com/vi/KfSwVOEMzSQ/maxresdefault.jpg'
 	thumb = 'http://comedychildren.com/wp-content/uploads/2013/07/a.jpg'

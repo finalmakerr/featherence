@@ -1540,7 +1540,7 @@ msgid ""
 msgstr ""
 
 msgctxt "#32399"
-msgid ""
+msgid "Force TV Mode"
 msgstr ""
 
 msgctxt "#32400"

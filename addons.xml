@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.featherence.be_creative" name="Featherence Be Creative" version="0.0.1" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.be_creative" name="Featherence Be Creative" version="0.0.2" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -25,7 +25,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.10" provider-name="finalmakerr, yoel guy">
+<addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.11" provider-name="finalmakerr, yoel guy">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -66,7 +66,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.extreme" version="0.1.6" name="Featherence Extreme" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.extreme" version="0.1.7" name="Featherence Extreme" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -100,7 +100,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.2.6" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.2.7" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="plugin.video.youtube" version="5.1.0"/>
@@ -144,7 +144,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.2.8" provider-name="finalmakerr, amir elgazar">
+<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.2.9" provider-name="finalmakerr, amir elgazar">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -185,7 +185,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.rofl" name="Featherence ROFL" version="0.0.3" provider-name="finalmakerr , Lidor Malich">
+<addon id="plugin.video.featherence.rofl" name="Featherence ROFL" version="0.0.5" provider-name="finalmakerr , Lidor Malich">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="plugin.video.youtube" version="5.1.0"/>
@@ -265,7 +265,7 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.2.29" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.2.30" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.1.0"/>

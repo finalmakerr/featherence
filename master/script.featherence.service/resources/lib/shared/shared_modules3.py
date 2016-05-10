@@ -440,7 +440,8 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 			#print 'testtt ' + 'z' + space2 + str(z) + newline + 'url' + space2 + str(url)
 	
 	else:
-		if '.' in name:
+		if name == None: pass
+		elif '.' in name:
 			'''check if x contain previous positions'''
 			name_ = find_string(name, name[:1], '. ')
 			name__ = name_.replace('. ',"")
@@ -1268,9 +1269,12 @@ def TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 	else:
 		if General_TVModeDialog == "true" or mode == 2 or scriptfeatherenceservice_random != "":
 			if General_TVModeShuffle == "true": extra = addonString_servicefeatherence(32413).encode('utf-8')
-			else: extra = addonString_servicefeatherence(61).encode('utf-8') + '[CR]' + addonString_servicefeatherence(62).encode('utf-8')
+			else: extra = ""
 			if scriptfeatherenceservice_random != "": returned = 'ok'
-			else: returned = dialogyesno(addonString_servicefeatherence(32412).encode('utf-8'), extra)
+			else:
+				if General_TVModeForce == "true": returned = 'ok'
+				else:
+					returned = dialogyesno(addonString_servicefeatherence(32412).encode('utf-8'), extra)
 			
 		if returned == 'ok': mode = 5
 		else: mode = 6

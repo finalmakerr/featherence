@@ -23,6 +23,11 @@ templates2_path = os.path.join(addonPath, 'resources', 'templates2', '')
 General_AutoView = getsetting('General_AutoView')
 General_TVModeShuffle = getsetting('General_TVModeShuffle')
 General_TVModeDialog = getsetting('General_TVModeDialog')
+
+try:
+	General_TVModeForce = getsetting('General_TVModeForce')
+except:
+	General_TVModeForce = "false"
 try:
 	General_Language = getsetting('General_Language')
 	General_Language2 = getsetting('General_Language2')

@@ -7,6 +7,7 @@
 		<setting type="lsep" label="$ADDON[script.featherence.service 32413]"/>
 		<setting id="General_TVModeDialog" type="bool" default="true" label="$ADDON[script.featherence.service 32417]" visible="true"/>
 		<setting id="General_TVModeShuffle" type="bool" default="true" label="$ADDON[script.featherence.service 32418]" enable="eq(-1,true)" subsetting="true"/>
+		<setting id="General_TVModeForce" type="bool" default="false" label="$ADDON[script.featherence.service 32399]" enable="eq(-2,true)" subsetting="true"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32445]" visible="eq(-1,false)"/>
 
 		<setting type="lsep" label=""/>

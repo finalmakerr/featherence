@@ -1540,8 +1540,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#32399"
-msgid ""
-msgstr ""
+msgid "Force TV Mode"
+msgstr "הפעל תמיד מצב טלוויזיה"
 
 msgctxt "#32400"
 msgid "Check internet connection!"

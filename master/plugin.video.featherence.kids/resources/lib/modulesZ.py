@@ -669,6 +669,7 @@ def CATEGORIES104Z(General_LanguageL, background, background2): #ערוצי טל
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_ch=malachiblum/playlists') #מלאכי בלום
+		list.append('&youtube_ch=UCl0jQT2Cj5brTRt5azL5E6g') #ג'וניור
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (addonString_servicefeatherence(32900).encode('utf-8')),list,17,"http://flaglane.com/download/israeli-flag/israeli-flag-medium.png",addonString_servicefeatherence(32082).encode('utf-8') % (addonString_servicefeatherence(32900).encode('utf-8')),'1',50, getAddonFanart(background, custom="http://pre15.deviantart.net/2dd4/th/pre/f/2015/166/3/2/israel_aph_by_wolf_kid1000-d8xdbyp.jpg"))
 		
 	'''אנגלית'''
@@ -1102,7 +1103,6 @@ def CATEGORIES106Z(General_LanguageL, background, background2): #ערוצי טל
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_ch=UCj10fKNd5h64J_M9YIQu0Zw/playlists')
 		list.append('&youtube_ch=UCcYc90JDakyeXGeZgPL1ejA/playlists') #לולי
-		list.append('&youtube_ch=UCl0jQT2Cj5brTRt5azL5E6g') #ג'וניור
 		list.append('&youtube_ch=HopIsraeliChildhood/playlists') #הופ ילדות ישראלית
 		list.append('&youtube_ch=UC8Zlrwmbc3-AjrjTxzqL7Uw/playlists') #צופי
 		#ערוץ ניקלודיאון גוניור

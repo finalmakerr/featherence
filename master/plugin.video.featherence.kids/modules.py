@@ -621,7 +621,6 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	'''בוב ספוג מכנס מרובע'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nick&name=%e1%e9%fa%20%e0%f0%e5%e1%e9%f1&url=http%3a%2f%2fnick.walla.co.il%2f%3fw%3d%2f%2f1810190')
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nick&name=%d7%a2%d7%95%d7%93%20%d7%a4%d7%a8%d7%a7%d7%99%d7%9d&url=http%3a%2f%2fnick.walla.co.il%2f%3fw%3d%2f%2f1688134%26page%3d2')
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nick&name=%e1%e5%e1%f1%f4%e5%e2%20%ee%eb%f0%f1%20%ee%f8%e5%e1%f2&url=http%3a%2f%2fnick.walla.co.il%2f%3fw%3d%2f%2f1688133')
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f490.jpg&mode=3&name=%d7%91%d7%95%d7%91%d7%a1%d7%a4%d7%95%d7%92%20%d7%9e%d7%9b%d7%a0%d7%a1%20%d7%9e%d7%a8%d7%95%d7%91%d7%a2%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%20%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&series_id=490&series_name=%d7%91%d7%95%d7%91%d7%a1%d7%a4%d7%95%d7%92%20%d7%9e%d7%9b%d7%a0%d7%a1%20%d7%9e%d7%a8%d7%95%d7%91%d7%a2%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2b%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f490%2fspongebob-squarepants-%d7%91%d7%95%d7%91%d7%a1%d7%a4%d7%95%d7%92-%d7%9e%d7%9b%d7%a0%d7%a1-%d7%9e%d7%a8%d7%95%d7%91%d7%a2-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
@@ -817,7 +816,6 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f236.jpg&mode=3&name=%d7%94%d7%93%d7%a8%d7%93%d7%a1%d7%99%d7%9d%20-%20%d7%9e%d7%93%d7%95%d7%91%d7%91&series_id=236&series_name=%d7%94%d7%93%d7%a8%d7%93%d7%a1%d7%99%d7%9d%20-%20%d7%9e%d7%93%d7%95%d7%91%d7%91&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f236%2fthe-smurfs-%d7%94%d7%93%d7%a8%d7%93%d7%a1%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 		list.append('&custom8=plugin://plugin.video.hotVOD.video/?mode=3&module=%2fCmn%2fApp%2fVideo%2fCmmAppVideoApi_AjaxItems%2f0%2c13776%2c&name=%d7%a4%d7%a8%d7%a7%d7%99%d7%9d%20%d7%9e%d7290%d7%99%d7%9d%20&url=http%3a%2f%2fhot.ynet.co.il%2fExt%2fComp%2fHot%2fTopSeriesPlayer_Hot%2fCdaTopSeriesPlayer_VidItems_Hot%2f0%2c13031%2cL-10842-525-0-0%2c00.html')
-		list.append('&youtube_pl=PL66F75CE8DFB7A2A2')
 		list.append('&youtube_pl=PLo3vmw8N0knb9tZuIy7AR9fMPTUzr1oiI')
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLaE8D0PEpUTtHl3NzB3VfscnmW68cZC58')
