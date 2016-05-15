@@ -413,7 +413,8 @@
   </variable> 
   <variable name="VideoInformation2" description="עונה/פרק/וידאו">
 	<value condition="SubString(ListItem.Label,Next page) | SubString(ListItem.Label,$LOCALIZE[33078])">DefaultVideo2.png</value>
-	<value condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/) | StringCompare(Container.FolderPath,plugin://plugin.video.genesis/?action=movieGenres) | StringCompare(Container.FolderPath,plugin://plugin.video.genesis/?action=tvGenres)">$VAR[GenrePic]</value>
+	<value condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenrePic]</value>
+	<value condition="StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres)">$VAR[GenrePic]</value>
 	<value condition="!IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
 	<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 	<value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
@@ -641,6 +642,18 @@
 	  <value condition="StringCompare(Window(home).Property(tips),28)">[B]Reset Design[/B][CR]Did you know?[CR]You can reset your skin design to default without effecting the buttons you have created or others skin settings - design only!</value>
 	  <value condition="StringCompare(Window(home).Property(tips),29)">[B]Random Design[/B][CR]Did you know?[CR]You can randomize your skin design to see a wide range of options in no time.</value>
 	  <value condition="StringCompare(Window(home).Property(tips),30)">[B]Have an idea for new addon?:[/B][CR]Is it that great?[CR]Come and share it with us![CR]send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>
+	  
+	  <value condition="StringCompare(Window(home).Property(tips),30)">[B]Password lock button:[/B][CR]Did you know?[CR]You can set a password for a button so it's be accessible for you only![CR]For more information visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>	  
+	  <value condition="StringCompare(Window(home).Property(tips),31)">[B]Multi fanart:[/B][CR]Did you know?[CR]You can set a multi fanart for a button.</value>
+	  <value condition="StringCompare(Window(home).Property(tips),32)">[B]Access Sub Menu in a different way:[/B][CR]Did you know?[CR]You can use the Sub Menu action option to open the sub menu by clicking the down arrow only!</value>
+	  <value condition="StringCompare(Window(home).Property(tips),33)">[B]Big icons:[/B][CR]Did you know?[CR]You can enlarge your prefered icons to be match your prefered buttons shapes.</value>
+	  <value condition="StringCompare(Window(home).Property(tips),34)">[B]Touch Screen support[/B][CR]Did you know?[CR]You can enable touch screen support for your touch devices![CR]For more information visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>
+	  <value condition="StringCompare(Window(home).Property(tips),35)">[B]Reset default buttons names/icons:[/B][CR]Did you know?[CR]You can change the language of the default buttons by clicking on that option in the skin design window!</value>
+	  <value condition="StringCompare(Window(home).Property(tips),36)">[B]Action and Thumbnail:[/B][CR]Did you know?[CR]You can setup this option in order to make any new action to appear with a label and icon instantly!</value>
+	  <value condition="StringCompare(Window(home).Property(tips),37)">[B]Fanart-Sub Menu:[/B][CR]Did you know?[CR]You can setup each sub to be with it's own fanart!</value>
+	  <value condition="StringCompare(Window(home).Property(tips),38)">[B]Fanart-Home Full Screen:[/B][CR]Did you know?[CR]You can setup your fanart for buttons to appear on the whole screen or just outside the buttons!</value>
+	  <value condition="StringCompare(Window(home).Property(tips),39)">[B]Reshape Icons:[/B][CR]Did you know?[CR]You can reshape your custom icons to match the current button's shape!</value>
+	  <value condition="StringCompare(Window(home).Property(tips),30)">[B]Menu Buttons 2D:[/B][CR]Did you know?[CR]You can setup the whole skin's buttons to appear in 2D mode!</value>
 	</variable>
 	<variable name="DialogSelectTitle">
 	  <value condition="Control.IsVisible(3)">$INFO[Control.GetLabel(1)] ($INFO[Container(3).NumItems])</value>

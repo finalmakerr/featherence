@@ -1,5 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+
+  <include name="Widget_Home">
+    <control type="group" description="">
+		<visible>Container(9000).Row(0) + !Container(9000).Row(1) + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
+		<visible>!Skin.HasSetting(widget)</visible>
+		<control type="group" description="סמן חץ ימינה">
+			<visible>[Control.HasFocus(311) + Container(311).HasNext] | [Control.HasFocus(312) + Container(312).HasNext]</visible>
+			<posx>60r</posx>
+			<posy>275</posy>
+			<control type="image" description="לא נבחר">
+			  <width>40</width>
+			  <height>40</height>
+			  <texture border="0">images/ArrowNF.png</texture>
+			  <visible>[Control.HasFocus(311) + !Container(311).Position(4)] | [Control.HasFocus(312) + !Container(312).Position(4)]</visible>
+			</control>
+			<control type="image" description="נבחר">
+			  <width>40</width>
+			  <height>40</height>
+			  <texture border="0">images/ArrowFO.png</texture>
+			  <visible>[Control.HasFocus(311) + Container(311).Position(4)] | [Control.HasFocus(312) + Container(312).Position(4)]</visible>
+			</control>
+		</control>
+		
+		<control type="group" description="סמן חץ שמאלה">
+			<visible>[Control.HasFocus(311) + Container(311).HasPrevious] | [Control.HasFocus(312) + Container(312).HasPrevious]</visible>
+			<posx>20l</posx>
+			<posy>275</posy>
+			<control type="image" description="לא נבחר">
+			  <width>40</width>
+			  <height>40</height>
+			  <texture border="0">images/Arrow2NF.png</texture>
+			  <visible>[Control.HasFocus(311) + !Container(311).Position(0)] | [Control.HasFocus(312) + !Container(312).Position(0)]</visible>
+			</control>
+			<control type="image" description="נבחר">
+			  <width>40</width>
+			  <height>40</height>
+			  <texture border="0">images/Arrow2FO.png</texture>
+			  <visible>[Control.HasFocus(311) + Container(311).Position(0)] | [Control.HasFocus(312) + Container(312).Position(0)]</visible>
+			</control>
+		</control>
+		<control type="group" id="700" description="Shelf items שורה עליונה בכחול">
+		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + Control.HasFocus(9000)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-300,0">Conditional</animation>
+		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + Control.HasFocus(9000)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="300,0">Conditional</animation>
+		  <include description="פנל מדף סרטים שנוספו לאחרונה" condition="!Skin.HasSetting(MoviesShelfWL)">Movies_RA</include>
+		  <include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include> 
+		  <include description="פנל מדף פרקים שנוספו לאחרונה" condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RAIR</include> 
+		  <include condition="Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
+		  <!--<include condition="true">Widget_All</include>-->
+		  <!--<include condition="Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)">MenuDesign_Widget</include>-->
+		  <onright condition="Control.IsVisible(9009) + !StringCompare(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onright>
+		  <onleft condition="Control.IsVisible(9009) + StringCompare(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onleft>
+		  <onup condition="Control.IsVisible(9009)">9009</onup>
+		  <onup condition="Control.IsVisible(7011)">7017</onup>
+		  <onup condition="Player.HasAudio + !Control.IsVisible(9009)">ActivateWindow(12901)</onup>
+		  <ondown>9000</ondown>
+		</control>
+	</control>
+  </include>
+  
+  <include name="Widget_All">
+    <control type="list">
+		<!--<include>widgetListPositioning</include>-->
+		<visible>StringCompare(Container(9000).ListItem.Property(widgetType),movies)</visible>
+		<itemlayout>
+			<control type="image">
+				<!--<include>widgetPosterLayout</include>-->
+				<texture>$INFO[ListItem.Art(poster)]</texture>
+			</control>
+		</itemlayout>
+		<focusedlayout>
+			<control type="image">
+				<!--<include>widgetPosterFocusedLayout</include>-->
+				<texture>$INFO[ListItem.Art(poster)]</texture>
+			</control>
+		</focusedlayout>
+		<content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>
+	</control>
+  </include>
+  
   <include name="MenuDesign_Widget" description="תפריט וידגט עליון">
     <control type="group">
 	  <visible description="חלון בית/הגדרות">Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)</visible>
@@ -112,5 +191,110 @@
       </control>
     </focusedlayout>
   </include>
-
+  
+  <include name="SquareShortcutsCommons_" description="מדף 3-5">
+    <include>Fade20</include>
+    <posx>40</posx>
+    <posy>108</posy>
+    <width>1920</width>
+    <height>500</height>
+    <orientation>horizontal</orientation>
+    <scrolltime>400</scrolltime>
+	<animation condition="Player.HasVideo" effect="zoom" end="40,40" center="950,568" time="700" reversible="false">Conditional</animation>
+	<include>4ways2</include>
+    <itemlayout height="368" width="368">
+	  <control type="group">
+		  <animation condition="!Container(313).Scrolling + Skin.HasSetting(background)" effect="fade" start="40" end="40">Conditional</animation>
+		  <animation condition="!Container(313).Scrolling + !Skin.HasSetting(background)" effect="fade" start="40" end="40">Conditional</animation>
+		  <control type="image" description="מסגרת">
+			<posx>50</posx>
+			<posy>80</posy>
+			<width>270</width>
+			<height>270</height>
+			<texture border="30">buttons/ButtonEF.png</texture>
+			<aspectratio>scale</aspectratio>
+		  </control>
+		  <control type="image" description="תמונה לא נבחר">
+			<posx>50</posx>
+			<posy>80</posy>
+			<width>270</width>
+			<height>270</height>
+			<texture fallback="special://home/addons/script.featherence.service/resources/icons/help.png" background="false">$INFO[ListItem.Thumb]</texture>
+			<aspectratio>scale</aspectratio>
+		  </control>
+		  <control type="label" description="שם">
+			  <align>center</align>
+			  <label>$INFO[ListItem.Label]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+			  <font>size28</font>
+			  <height>30</height>
+			  <posx>57</posx>
+			  <posy>377</posy>
+			  <textcolor>white2</textcolor>
+			  <scroll>false</scroll>
+			  <scrollspeed>1</scrollspeed>
+			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <width>265</width>
+		  </control>
+		  <control type="label">
+			<posx>5</posx>
+			<posy>170</posy>
+			<width>345</width>
+			<height>30</height>
+			<font>size26</font>
+			<textcolor>white2</textcolor>
+			<label>$INFO[ListItem.label2]</label>
+			<align>center</align>
+		  </control>
+		</control>
+    </itemlayout>
+    <focusedlayout height="368" width="368">
+      <control type="group">
+	    <control type="image" description="מסגרת">
+			<posx>50</posx>
+			<posy>80</posy>
+			<width>270</width>
+			<height>270</height>
+			<texture border="30">buttons/ButtonEF.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+        <control type="image" description="תמונה נבחר">
+          <posx>50</posx>
+          <posy>80</posy>
+          <width>270</width>
+          <height>270</height>
+          <texture fallback="special://home/addons/script.featherence.service/resources/icons/help.png" background="false">$INFO[ListItem.Thumb]</texture>
+          <aspectratio>scale</aspectratio>
+        </control>
+		<control type="image" description="סמן בחירה">
+          <posx>50</posx>
+          <posy>80</posy>
+          <width>270</width>
+          <height>270</height>
+          <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
+		  <visible>Skin.HasSetting(SelectionMarker)</visible>
+        </control>
+		<control type="label" description="שם">
+		  <align>center</align>
+		  <label>$INFO[ListItem.Label]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+		  <font>size28</font>
+		  <height>30</height>
+		  <posx>57</posx>
+		  <posy>377</posy>
+		  <textcolor>white2</textcolor>
+		  <scroll>false</scroll>
+		  <scrollspeed>1</scrollspeed>
+		  <visible>!IsEmpty(ListItem.Label)</visible>
+		  <width>265</width>
+		</control>
+		<control type="label">
+          <posx>5</posx>
+          <posy>170</posy>
+          <width>345</width>
+          <height>30</height>
+		  <include>LabelC12</include>
+          <label>$INFO[ListItem.Label2]</label>
+        </control>
+      </control>
+    </focusedlayout>
+  </include>
 </includes>

@@ -136,6 +136,14 @@
 		<onclick>Skin.ToggleSetting(del74_94)</onclick>
 		<visible>Skin.HasSetting(Admin) + Skin.HasSetting(Admin3) + !Skin.HasSetting(Admin2)</visible>
 	  </item>
+	  <item id="724" description="ו'ידגט">
+		<label>Widget</label>
+		<onclick>RunScript(script.skinshortcuts,type=widgets&amp;showNone=True&amp;grouping=default&amp;skinWidget=[skinWidget]&amp;skinWidgetType=[skinWidgetType]&amp;skinWidgetName=[skinWidgetName]&amp;skinWidgetTarget=[skinWidgetTarget]&amp;skinWidgetPath=[skinWidgetPath])</onclick>
+		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
+		<!--<visible>[!Window.IsVisible(Custom1138.xml) + [IntegerGreaterThan(Window(home).Property(Button.ID),99) | Skin.HasSetting(DefaultActionButtons) + IntegerGreaterThan(Window(home).Property(Button.ID),89)] + !IntegerGreaterThan(Window(home).Property(Button.ID),200)] | [Window.IsVisible(Custom1139.xml) + !SubString(Window(home).Property(SubButton.ID_),_90)]</visible>-->
+		<visible>false</visible>
+	  </item>
   </include>
   
   <include name="CenterMenuContent_1191" description="כיבוי">

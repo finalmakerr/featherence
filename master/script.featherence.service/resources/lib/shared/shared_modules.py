@@ -220,7 +220,7 @@ def TranslatePath(x, filename=True, urlcheck_=False, force=False):
 	
 	return to_unicode(returned), to_unicode(returned2)
 
-def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[]):
+def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[], save_=""):
 	name = 'GeneratePath' ; printpoint = "" ; formula_ = "" ; subdir = "" ; filename = "" ; subdir_filename = "" ; TypeError = "" ; extra = "" ; level = 1
 	if x2 == None: x2 = ""
 	
@@ -235,6 +235,12 @@ def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[]):
 	elif 'https://' in x2 or 'http://' in x2 or 'http:%2f' in x2:
 		printpoint = printpoint + '2'
 		formula = formula + newline + custom + str(x2)
+	elif os.path.isdir(x2):
+		printpoint = printpoint + '5'
+		if save_ == 'true' and x2_ != "":
+			formula = formula + newline + custom + str(x2_)
+		else:
+			formula = formula + newline + custom + str(x2)
 	else:
 		if ignoreL != []:
 			printpoint = printpoint + '3'

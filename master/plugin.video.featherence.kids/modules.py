@@ -2411,6 +2411,20 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 		list.append('&youtube_id=FKRVfhMczq8')
 	addDir(addonString(10647).encode('utf-8'),list,17,'http://i.ytimg.com/vi/Y02LzkHJ_Uk/hqdefault.jpg',addonString(106470).encode('utf-8'),'1',50,getAddonFanart(background, custom="", default=background2))
 	
+	'''צוות צבע'''
+	list = []
+	thumb = 'https://s-media-cache-ak0.pinimg.com/236x/cd/1b/b4/cd1bb434a41ed5449675dc8e3bc0b2fa.jpg'
+	fanart = 'https://i.ytimg.com/vi/5y4KQA2cUCQ/maxresdefault.jpg'
+	if 'Hebrew' in General_LanguageL:
+		fanart = 'https://i.ytimg.com/vi/A5A76OjQgkY/maxresdefault.jpg'
+		list.append('&youtube_pl=PLnraPnhPHcc5UHxWzmRs2Bk73ehPTfF6c')
+	if 'English' in General_LanguageL:
+		list.append('&youtube_pl=PLqsYSvVJ2b7FMUey_eHPu5KYhqdqJRERw')
+	if 'Spanish' in General_LanguageL:
+		list.append('&youtube_id=2kySIhYzIb4')
+		list.append('&youtube_id=3FgxKAIQfyU')
+	addDir(addonString(10656).encode('utf-8'),list,17,thumb,addonString(106560).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
+	
 	'''צ'רלי ודודו'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
@@ -4378,34 +4392,84 @@ def CATEGORIES200():
 	
 def	CATEGORIES999():
 	'''testing'''
-	url2 = '0B4tub3thj86KRjhUWGJIMXhlQU0'
-	url2 = '&googledrive=0Bxnz_CSSq5-xVFNIVFZNY24xcTA'
-	url3 = '&googledrive2=http://dragonballz.co.il/%d7%93%d7%a8%d7%92%d7%95%d7%9f-%d7%91%d7%95%d7%9c-%d7%96%d7%99-%d7%9c%d7%a6%d7%a4%d7%99%d7%99%d7%94-%d7%99%d7%a9%d7%99%d7%a8%d7%94/'
-	#url3 = '&googledrive2=http://stackoverflow.com/questions/32575617/using-unicode-hebrew-characters-with-regular-expression'
-	#url2 = 'http://www.supercartoons.net/video/1208/jeepers-its-the-creeper.mp4'
-	image2 = 'http://dragonballz.co.il/wp-content/uploads/2015/03/1058-214x300.jpg'
-	title2 = 'דרגון בול זי פרק 1 – מדובב לעברית'
-	addDir('googledrive',url2,4,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True)) #Test
-	
-	url = os.path.join(templates2_path, '104', 'Dragon Ball Z.txt')
-	addDir('googledrive mode=11 custom_se2',url,11,image2,'testing','1',50, image2) #Test
-	
-	
-	addDir('moridim','http://www.moridim.tv/%D7%A1%D7%A8%D7%98%D7%99%D7%9D.html#types-4',40,'','testing','1',50, "") #Test
+	background = 999
 	
 	list = []
-	#list.append('&direct4='+url2)
-	list.append('&googledrive2='+url3)
-	list.append('&googledrive='+url2)
-	#addDir(addonString(10420).encode('utf-8'),url3,40,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
-	
-	addDir('dragonball',url3,40,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
-	
-	
-	addDir('cartoons','http://www.supercartoons.net/cartoons/',40,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True))
-	
-	
-	'''הובוס ספר הקסמים הגדול'''
+	list.append('&youtube_ch=vicenews') #vicenews
+	list.append('&youtube_ch=UCMtFAi84ehTSYSE9XoHefig') #vicenews
+	addDir('Vice News',list,17,'http://a5.mzstatic.com/us/r30/Purple69/v4/8e/96/c7/8e96c725-6b07-6d16-877e-351b4ebcd5b6/icon175x175.png',"description",'1',50, getAddonFanart(background,custom="thumb.jpeg"))
+	list = []	
+	list.append('&youtube_pl=PLZ_hwG6UuEJYkYPqoeiV1lYTAF0E8CS5Y') #ViceLand
+	addDir('ViceLand',list,17,'https://pbs.twimg.com/profile_images/672122073465020416/Yr0DYmAB.jpg',"description",'1',50, getAddonFanart(background,custom="https://pbs.twimg.com/profile_images/672122073465020416/Yr0DYmAB.jpg"))
 	list = []
-	url = 'http://serethd.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fserethd.net%2F%25d7%2590%25d7%25a0%25d7%2599%25d7%259e%25d7%25a6%25d7%2599%25d7%2594%2F%25d7%25a6%25d7%25a2%25d7%25a6%25d7%2595%25d7%25a2-%25d7%25a9%25d7%259c-%25d7%25a1%25d7%2599%25d7%25a4%25d7%2595%25d7%25a8-%25d7%259e%25d7%2593%25d7%2595%25d7%2591%25d7%2591-%25d7%259c%25d7%25a6%25d7%25a4%25d7%2599%25d7%2599%25d7%2594-%25d7%2599%25d7%25a9%25d7%2599%25d7%25a8%25d7%2594.html'
-	addDir('direct8/44',url,44,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
+	list.append('&youtube_pl=PLw613M86o5o5BNP8ls1TNDLLHVEi1Mopg') #ViceOnHBO S1
+	list.append('&youtube_pl=PLDbSvEZka6GE6wL8MtEvaZzs1ghK4CGZC') #ViceOnHBO S2
+	list.append('&youtube_pl=PLDbSvEZka6GEZPMAxNvcWMW8OvuzNaN8J') #ViceOnHBO S3
+	addDir('Vice on HBO',list,17,'http://assets.vice.com/content-images/series/vice-on-hbo-outtakes/show_image/vice_on_HBO_extended_vice_220x220.jpg',"description",'1',50, getAddonFanart(background,custom="thumb.jpeg"))
+	list = []
+	list.append('&youtube_pl=PL5UsyVL1WN7hlV2wAdPzHWQY8QibeKA0L') #Xive History
+	list.append('&youtube_pl=PL5UsyVL1WN7gOiampy3Ha-nNyncfNofSK') #Xive Global	
+	addDir('Xive Documentaries',list,17,'https://superrepo.org/static/images/icons/original/xplugin.video.xivetv.png.pagespeed.ic.HsmZ7Ypju8.png',"description",'1',50, getAddonFanart(background,custom="thumb.jpeg"))
+	list = []
+	list.append('&youtube_pl=UCUR7DG5xaHpo1GyIPEGISIw') #RANDOM DOCS
+	addDir('Random Documentaries',list,17,'thumb.jpeg',"description",'1',50, getAddonFanart(background,custom="thumb.jpeg"))
+	list = []
+	list.append('&youtube_pl=PLFMWEb-q8eH5uC7uTNtO4kJ9COGE8_qgt') #DarkWing Duck S1
+	list.append('&youtube_pl=PLFMWEb-q8eH5bPJHF5T2zKd3Bhv7gtq8Q') #DarkWing Duck S2	
+	addDir('Dark Wing Duck',list,17,'thumb.jpeg',"description",'1',50, getAddonFanart(background,custom="thumb.jpeg"))
+	list = []
+	list.append('&youtube_pl=PLZxWJ6CTr63bL1Vc2qB6zyG_Gad4hpB9K') #
+	list.append('&youtube_pl=PLZxWJ6CTr63byWWhy_YgJGcks3yiUtDbl') #Top Punishments
+	list.append('&youtube_pl=PLZxWJ6CTr63bTvlXWaDgTyx2pZolLlGuy') #Funniest
+	list.append('&youtube_pl=PLZxWJ6CTr63aF3u-S_zcz2J7tME6eBXKw') #Top Moments
+	list.append('&youtube_pl=PLZxWJ6CTr63Z1imTZyROqVQnjFOPxso0D') #Deleted Scenes
+	list.append('&youtube_pl=PLZxWJ6CTr63ZwCGZg8cMhqyDOyWv3Om0U') #Bonus
+	list.append('&youtube_pl=PLZxWJ6CTr63a3W3sHmsYzQ3X6h02X7gzQ') #S1
+	list.append('&youtube_pl=PLZxWJ6CTr63YRCu7RIysdPIKBXA0-TNAP') #S2
+	addDir('Impractical Jokers',list,17,'thumb.jpeg',"description",'1',50, getAddonFanart(background,custom="thumb.jpeg"))
+	list = []
+	list.append('&youtube_ch=teamcoco') #conan
+	list.append('&youtube_ch=latenight') #fallon
+	list.append('&youtube_ch=JimmyKimmelLive') #kimmel
+	#list.append('&custom8=plugin://plugin.video.youtube/channel/UCMtFAi84ehTSYSE9XoHefig/') #colbert
+	#list.append('&youtube_id=UCMtFAi84ehTSYSE9XoHefig') #colbert
+	addDir('Late Night',list,17,'thumb.jpeg',"description",'1',50, getAddonFanart(background,custom="thumb.jpeg"))
+	list = []
+	list.append('&youtube_pl=PL4166A6B67CF5C6AE') #RELAXHD
+	addDir('Relax in HD',list,17,'thumb.jpeg',"description",'1',50, getAddonFanart(background,custom="thumb.jpeg"))
+	list = []
+	list.append('&youtube_se=RelaxHD') #random search HD
+	addDir('Random RelaxHD',list,17,'thumb.jpeg',"description",'1',50, getAddonFanart(background,custom="thumb.jpeg"))
+	
+	if 1 + 1 == 3:
+		url2 = '0B4tub3thj86KRjhUWGJIMXhlQU0'
+		url2 = '&googledrive=0Bxnz_CSSq5-xVFNIVFZNY24xcTA'
+		url3 = '&googledrive2=http://dragonballz.co.il/%d7%93%d7%a8%d7%92%d7%95%d7%9f-%d7%91%d7%95%d7%9c-%d7%96%d7%99-%d7%9c%d7%a6%d7%a4%d7%99%d7%99%d7%94-%d7%99%d7%a9%d7%99%d7%a8%d7%94/'
+		#url3 = '&googledrive2=http://stackoverflow.com/questions/32575617/using-unicode-hebrew-characters-with-regular-expression'
+		#url2 = 'http://www.supercartoons.net/video/1208/jeepers-its-the-creeper.mp4'
+		image2 = 'http://dragonballz.co.il/wp-content/uploads/2015/03/1058-214x300.jpg'
+		title2 = 'דרגון בול זי פרק 1 – מדובב לעברית'
+		addDir('googledrive',url2,4,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True)) #Test
+		
+		url = os.path.join(templates2_path, '104', 'Dragon Ball Z.txt')
+		addDir('googledrive mode=11 custom_se2',url,11,image2,'testing','1',50, image2) #Test
+		
+		
+		addDir('moridim','http://www.moridim.tv/%D7%A1%D7%A8%D7%98%D7%99%D7%9D.html#types-4',40,'','testing','1',50, "") #Test
+		
+		list = []
+		#list.append('&direct4='+url2)
+		list.append('&googledrive2='+url3)
+		list.append('&googledrive='+url2)
+		#addDir(addonString(10420).encode('utf-8'),url3,40,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
+		
+		addDir('dragonball',url3,40,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
+		
+		
+		addDir('cartoons','http://www.supercartoons.net/cartoons/',40,image2,'testing','1',50, getAddonFanart(200, urlcheck_=True))
+		
+		
+		'''הובוס ספר הקסמים הגדול'''
+		list = []
+		url = 'http://serethd.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fserethd.net%2F%25d7%2590%25d7%25a0%25d7%2599%25d7%259e%25d7%25a6%25d7%2599%25d7%2594%2F%25d7%25a6%25d7%25a2%25d7%25a6%25d7%2595%25d7%25a2-%25d7%25a9%25d7%259c-%25d7%25a1%25d7%2599%25d7%25a4%25d7%2595%25d7%25a8-%25d7%259e%25d7%2593%25d7%2595%25d7%2591%25d7%2591-%25d7%259c%25d7%25a6%25d7%25a4%25d7%2599%25d7%2599%25d7%2594-%25d7%2599%25d7%25a9%25d7%2599%25d7%25a8%25d7%2594.html'
+		addDir('direct8/44',url,44,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")

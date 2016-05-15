@@ -2415,8 +2415,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#10656
-msgid ""
-msgstr ""
+msgid "Crew Color"
+msgstr "צוות צבע"
 
 msgctxt "#10657
 msgid "צ'רלי ודודו"

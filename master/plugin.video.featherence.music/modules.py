@@ -288,7 +288,7 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_se='+commonsearch)
 	list.append('&youtube_pl=PLBDIuIv7lLh8rmjkHMsDgGGsr9HWTdGeE')
-	addDir(addonString(3012).encode('utf-8'),list,17,'https://i.ytimg.com/vi/3JAAD8Ptq00/maxresdefault.jpg',addonString(30220).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30120).encode('utf-8'),list,17,'https://i.ytimg.com/vi/3JAAD8Ptq00/maxresdefault.jpg',addonString(30220).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''מירי מסיקה'''
 	list = []
@@ -314,7 +314,7 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_se='+commonsearch)
 	list.append('&youtube_pl=PL4731BCED6938743B')
-	addDir(addonString(3013).encode('utf-8'),list,17,'http://media.shironet.mako.co.il/media/performers/heb/0/764/profile/764_t275.jpg?rnd=58',addonString(30230).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30130).encode('utf-8'),list,17,'http://media.shironet.mako.co.il/media/performers/heb/0/764/profile/764_t275.jpg?rnd=58',addonString(30230).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''עידן רייכל'''
 	list = []
@@ -340,7 +340,7 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_se='+commonsearch)
 	list.append('&youtube_pl=PLtH1TqrerKR1oLff98mr-svFZWIq2fjvO&index=3')
-	addDir(addonString(3014).encode('utf-8'),list,17,'http://images1.ynet.co.il/PicServer2/28102008/1770103/2_wh.jpg',addonString(30240).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30140).encode('utf-8'),list,17,'http://images1.ynet.co.il/PicServer2/28102008/1770103/2_wh.jpg',addonString(30240).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''שירי מימון'''
 	list = []
@@ -358,7 +358,8 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	'''שלמה ארצי'''
 	list = []
 	list.append('&youtube_se='+commonsearch)
-	list.append('&youtube_pl=PLTojoXqu-e3l-d7nqjHRGjxsF8W77L50f')
+	#list.append('&youtube_pl=PLTojoXqu-e3l-d7nqjHRGjxsF8W77L50f')
+	list.append('&youtube_ch=ShlomoArtziOfficial')
 	addDir(addonString(30144).encode('utf-8'),list,17,'http://www.nrg.co.il/images/archive/465x349/1/403/734.jpg',addonString(30244).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''שלישית גשר הירקון''' 
@@ -465,7 +466,7 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
 	list.append('&youtube_pl=PLBDIuIv7lLh8rmjkHMsDgGGsr9HWTdGeE')
-	addDir(addonString(3012).encode('utf-8'),list,17,'https://i.ytimg.com/vi/3JAAD8Ptq00/maxresdefault.jpg',addonString(30220).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30120).encode('utf-8'),list,17,'https://i.ytimg.com/vi/3JAAD8Ptq00/maxresdefault.jpg',addonString(30220).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''מירי מסיקה'''
 	list = []
@@ -491,7 +492,7 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
 	list.append('&youtube_pl=PL4731BCED6938743B')
-	addDir(addonString(3013).encode('utf-8'),list,17,'http://media.shironet.mako.co.il/media/performers/heb/0/764/profile/764_t275.jpg?rnd=58',addonString(30230).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30130).encode('utf-8'),list,17,'http://media.shironet.mako.co.il/media/performers/heb/0/764/profile/764_t275.jpg?rnd=58',addonString(30230).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''עידן רייכל'''
 	list = []
@@ -517,7 +518,7 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
 	list.append('&youtube_pl=PLtH1TqrerKR1oLff98mr-svFZWIq2fjvO&index=3')
-	addDir(addonString(3014).encode('utf-8'),list,17,'http://images1.ynet.co.il/PicServer2/28102008/1770103/2_wh.jpg',addonString(30240).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30140).encode('utf-8'),list,17,'http://images1.ynet.co.il/PicServer2/28102008/1770103/2_wh.jpg',addonString(30240).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''שירי מימון'''
 	list = []
@@ -635,7 +636,7 @@ def CATEGORIES10104(name, iconimage, desc, fanart):
 	'''עברי לידר'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(3013).encode('utf-8'),list,17,'http://media.shironet.mako.co.il/media/performers/heb/0/764/profile/764_t275.jpg?rnd=58',addonString(30230).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30130).encode('utf-8'),list,17,'http://media.shironet.mako.co.il/media/performers/heb/0/764/profile/764_t275.jpg?rnd=58',addonString(30230).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''עידן רייכל'''
 	list = []
@@ -675,7 +676,7 @@ def CATEGORIES10104(name, iconimage, desc, fanart):
 	'''רמי קליינשטיין'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(3014).encode('utf-8'),list,17,'http://images1.ynet.co.il/PicServer2/28102008/1770103/2_wh.jpg',addonString(30240).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30140).encode('utf-8'),list,17,'http://images1.ynet.co.il/PicServer2/28102008/1770103/2_wh.jpg',addonString(30240).encode('utf-8'),'1',"", getAddonFanart(background, default=fanart, custom=""))
 	
 	'''שירי מימון'''
 	list = []

@@ -1014,15 +1014,18 @@
 	<control type="group" description="">
 	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="zoom" center="auto" start="100,100" end="100,85">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="slide" start="0,0" end="1070,-130">Conditional</animation>
+	  <animation condition="Window.IsVisible(Custom1170.xml)" effect="zoom" center="auto" start="100,100" end="100,40">Conditional</animation>
+	  <animation condition="Window.IsVisible(Custom1170.xml)" effect="slide" start="0,0" end="1659,-890">Conditional</animation>
 	  <include condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(DialogTextViewer.xml) + !Window.IsVisible(DialogPVRChannelManager.xml)">Control_Pos49</include>
 	  <visible>Control.IsVisible(60) | Control.IsVisible(61)</visible>
 	  <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31015]) | Window.IsVisible(DialogTextViewer.xml)</visible>
-	  <visible>IntegerGreaterThan(Container.NumPages,1) | Window.IsVisible(FileBrowser.xml) | Window.IsVisible(DialogFavourites.xml) | Window.IsVisible(DialogTextViewer.xml) | Control.IsVisible(11) + IntegerGreaterThan(Container(11).NumPages,1)</visible>
+	  <visible>IntegerGreaterThan(Container.NumPages,1) | Window.IsVisible(FileBrowser.xml) | Window.IsVisible(DialogFavourites.xml) | Window.IsVisible(DialogTextViewer.xml) | Control.IsVisible(11) + IntegerGreaterThan(Container(11).NumPages,1) | Window.IsVisible(Custom1170.xml)</visible>
 	  <height>950</height>
 	  <width>20</width>
 	  <posx>0</posx>
 	  <posy>146.5</posy>
 	  <control type="image" description="מסגרת">
+	    <!--<animation condition="true" effect="fade" start="100" end="70" time="0">Conditional</animation>-->
 		<height>100%</height>
 		<posx>0</posx>
 		<bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
@@ -1031,6 +1034,7 @@
 		<visible></visible>
 	  </control>
 	  <control type="image" description="מסגרת">
+		<!--<animation condition="true" effect="fade" start="100" end="70" time="0">Conditional</animation>-->
 		<height>100%</height>
 		<posx>0</posx>
 		<bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
@@ -1041,8 +1045,10 @@
 	  <control type="scrollbar" id="60" description="כלי גלילה">
 		<height>99%</height>
 		<posy>1.5</posy>
+		<onright condition="Window.IsVisible(Custom1170.xml)">noop</onright>
 		<onright condition="Control.IsVisible(7011) + StringCompare(System.Language,Hebrew)">7017</onright>
 		<onright condition="Player.HasAudio + StringCompare(System.Language,Hebrew)">ActivateWindow(12901)</onright>
+		<onleft condition="Window.IsVisible(Custom1170.xml)">3110</onleft>
 		<onleft condition="[Window.IsVisible(DialogPeripheralSettings.xml) | Window.IsVisible(SettingsCategory.xml)] + Control.IsVisible(5) + StringCompare(System.Language,Hebrew)">5</onleft>
 		<onleft condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) + Control.IsVisible(50)] + StringCompare(System.Language,Hebrew)">50</onleft>
 		<onleft condition="StringCompare(Container.Viewmode,$LOCALIZE[31010]) + StringCompare(System.Language,Hebrew)">51</onleft>

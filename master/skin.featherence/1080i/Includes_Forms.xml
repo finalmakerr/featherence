@@ -680,7 +680,7 @@
 	  <height>70</height>
 	  <posx>30</posx>
 	  <posy>30</posy>
-	  <texture>special://home/addons/script.featherence.service/resources/icons/Key.png</texture>
+	  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/Key.png</texture>
 	  <visible>!IsEmpty(ListItem.Property(pwd)) + IsEmpty(Window(home).Property(PassProtect))</visible>
 	  <width>70</width>
 	</control>
@@ -688,14 +688,14 @@
 	  <animation condition="true" effect="fade" start="50,50" end="50,50">Conditional</animation>
 	  <animation condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="30,10">Conditional</animation>
 	  <animation condition="Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="114,0">Conditional</animation>
-	  <animation condition="Skin.String(ButtonsDesign,4) + !Skin.String(MenuDesign,4)" effect="slide" start="0,0" end="44,0">Conditional</animation>
+	  <animation condition="Skin.String(ButtonsDesign,4) + !Skin.String(MenuDesign,4)" effect="slide" start="0,0" end="144,20">Conditional</animation>
 	  <animation condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="120,23">Conditional</animation>
 	  <animation condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-32,23">Conditional</animation>
 	  <aspectratio>keep</aspectratio>
 	  <height>70</height>
-	  <posx>20</posx>
-	  <posy>20</posy>
-	  <texture>special://home/addons/script.featherence.service/resources/icons/Unlock.png</texture>
+	  <posx>30</posx>
+	  <posy>30</posy>
+	  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/Unlock.png</texture>
 	  <visible>!IsEmpty(ListItem.Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))</visible>
 	  <width>70</width>
 	</control>

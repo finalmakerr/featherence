@@ -49,62 +49,6 @@
 	</control>
   </include>
   
-  <include name="Widget_Home">
-    <control type="group" description="">
-		<visible>Container(9000).Row(0) + !Container(9000).Row(1) + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
-		<visible>!Skin.HasSetting(widget)</visible>
-		<control type="group" description="סמן חץ ימינה">
-			<visible>[Control.HasFocus(311) + Container(311).HasNext] | [Control.HasFocus(312) + Container(312).HasNext]</visible>
-			<posx>60r</posx>
-			<posy>275</posy>
-			<control type="image" description="לא נבחר">
-			  <width>40</width>
-			  <height>40</height>
-			  <texture border="0">images/ArrowNF.png</texture>
-			  <visible>[Control.HasFocus(311) + !Container(311).Position(4)] | [Control.HasFocus(312) + !Container(312).Position(4)]</visible>
-			</control>
-			<control type="image" description="נבחר">
-			  <width>40</width>
-			  <height>40</height>
-			  <texture border="0">images/ArrowFO.png</texture>
-			  <visible>[Control.HasFocus(311) + Container(311).Position(4)] | [Control.HasFocus(312) + Container(312).Position(4)]</visible>
-			</control>
-		</control>
-		
-		<control type="group" description="סמן חץ שמאלה">
-			<visible>[Control.HasFocus(311) + Container(311).HasPrevious] | [Control.HasFocus(312) + Container(312).HasPrevious]</visible>
-			<posx>20l</posx>
-			<posy>275</posy>
-			<control type="image" description="לא נבחר">
-			  <width>40</width>
-			  <height>40</height>
-			  <texture border="0">images/Arrow2NF.png</texture>
-			  <visible>[Control.HasFocus(311) + !Container(311).Position(0)] | [Control.HasFocus(312) + !Container(312).Position(0)]</visible>
-			</control>
-			<control type="image" description="נבחר">
-			  <width>40</width>
-			  <height>40</height>
-			  <texture border="0">images/Arrow2FO.png</texture>
-			  <visible>[Control.HasFocus(311) + Container(311).Position(0)] | [Control.HasFocus(312) + Container(312).Position(0)]</visible>
-			</control>
-		</control>
-		<control type="group" id="700" description="Shelf items שורה עליונה בכחול">
-		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + Control.HasFocus(9000)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-300,0">Conditional</animation>
-		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + Control.HasFocus(9000)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="300,0">Conditional</animation>
-		  <include description="פנל מדף סרטים שנוספו לאחרונה" condition="!Skin.HasSetting(MoviesShelfWL)">Movies_RA</include>
-		  <include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include> 
-		  <include description="פנל מדף פרקים שנוספו לאחרונה" condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RAIR</include> 
-		  <include condition="Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
-		  <!--<include condition="Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)">MenuDesign_Widget</include>-->
-		  <onright condition="Control.IsVisible(9009) + !StringCompare(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onright>
-		  <onleft condition="Control.IsVisible(9009) + StringCompare(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onleft>
-		  <onup condition="Control.IsVisible(9009)">9009</onup>
-		  <onup condition="Control.IsVisible(7011)">7017</onup>
-		  <onup condition="Player.HasAudio + !Control.IsVisible(9009)">ActivateWindow(12901)</onup>
-		  <ondown>9000</ondown>
-		</control>
-	</control>
-  </include>
   <include name="Menu_Home">
     <control type="panel" id="9000">
 	  <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,-551" time="220">Conditional</animation>
