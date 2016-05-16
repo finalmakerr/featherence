@@ -1,0 +1,48 @@
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_4P\ga2.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
+C:\Users\gal\AppData\Roaming\Kodi\userdata\addon_data\script.module.featherence.emu\rom\Sega Genesis\_1P\After Burner II.zip
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\cores\genesis_plus_gx_libretro.dll
+Genesis Plus GX
+C:\Users\gal\AppData\Roaming\Kodi\userdata\addon_data\script.module.featherence.emu\rom\Sega Genesis\_1P\Road Blasters.zip
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\genesis_plus_gx_libretro.dll
+Genesis Plus GX
+D:\rom\Nintendo DS\_1P\4225 - Kingdom Hearts - 358-2 Days (US)(M2)(XenoPhobia).zip
+Z:\addons\script.module.featherence.emu\emulator\w\cores\desmume_libretro_test.dll
+DeSmuME
+D:\rom\Nintendo DS\_1P\4225 - Kingdom Hearts - 358-2 Days (US)(M2)(XenoPhobia).zip
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\desmume_libretro.dll
+DeSmuME
+D:\rom\Nintendo DS\_1P\1062 - Picross DS (E)(Legacy).zip
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\desmume_libretro.dll
+DeSmuME
+D:\rom\Nintendo DS\_1P\4225 - Kingdom Hearts - 358-2 Days (US)(M2)(XenoPhobia).nds
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\desmume_libretro-future.dll
+DeSmuME
+D:\rom\Nintendo DS\_1P\4225 - Kingdom Hearts - 358-2 Days (US)(M2)(XenoPhobia).nds
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\desmume_libretro.dll
+DeSmuME
+D:\rom\Nintendo 64\#\_4P\Army Men - Sarge's Heroes.n64
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\mupen64plus_libretro.dll
+Mupen64plus
+C:\Users\gal\AppData\Roaming\Kodi\userdata\addon_data\script.module.featherence.emu\rom\Crash Bash\Crash Bash (E) [SCES-02834].cue
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\mednafen_psx_libretro.dll
+Mednafen PSX
+C:\Users\gal\AppData\Roaming\Kodi\userdata\addon_data\script.module.featherence.emu\rom\Crash Bash\Crash Bash (E) [SCES-02834].bin
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\genesis_plus_gx_libretro.dll
+Genesis Plus GX
+C:\Users\gal\AppData\Roaming\Kodi\userdata\addon_data\script.module.featherence.emu\rom\Crash Bash\Crash Bash (USA).cue
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\mednafen_psx_libretro.dll
+Mednafen PSX
+C:\Users\gal\AppData\Roaming\Kodi\userdata\addon_data\script.module.featherence.emu\rom\Crash Bash\Crash Bash.cue
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\mednafen_psx_libretro.dll
+Mednafen PSX
+C:\Users\gal\AppData\Roaming\Kodi\userdata\addon_data\script.module.featherence.emu\rom\Sega Genesis\_2P\Double Dragon 3.zip
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\genesis_plus_gx_libretro.dll
+Genesis Plus GX
+C:\Users\gal\AppData\Roaming\Kodi\userdata\addon_data\script.module.featherence.emu\rom\Sega Genesis\_1P\Alien Soldier.zip
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\genesis_plus_gx_libretro.dll
+Genesis Plus GX
+C:\Users\gal\AppData\Roaming\Kodi\userdata\addon_data\script.module.featherence.emu\rom\Sega Genesis\_1P\After Burner II.zip
+C:\Users\gal\AppData\Roaming\Kodi\addons\script.module.featherence.emu\emulator\w\cores\stella_libretro.dll
+Stella

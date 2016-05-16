@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <string id="30036">Enter the file title to search...</string>
+    <string id="30100">%s in-game keys</string>
+
+    <string id="30124">Miscellaneous</string>
+    <string id="30175">Disable LIRC (Linux)</string>
+    <string id="30176">Hide categories/launchers/items marked as finished</string>
+    <string id="30180">Delay (ms)</string>
+    <string id="30183">Advanced</string>
+    <string id="30349">Items list is empty : Add items first.</string>
+    
+    <string id="30400">Search items...</string>
+    <string id="30401">By Title</string>
+    <string id="30402">By Release Date</string>
+    <string id="30403">By Platform</string>
+    <string id="30404">By Studio</string>
+    <string id="30405">By Genre</string>
+    <string id="30406">Select a Release date...</string>
+    <string id="30407">Select a Platform...</string>
+    <string id="30408">Select a Studio...</string>
+    <string id="30409">Select a Genre...</string>
+    <string id="30410">Not Set</string>
+    <string id="30411">Audio Settings</string>
+
+    <string id="30608">Cannot update cached image.</string>
+    <string id="30609">Cannot start application.</string>
+    <string id="30610">Cannot list directory items.</string>
+    <string id="30611">File %s not found.</string>
+    <string id="30612">Error</string>
+    <string id="30613">Target category not found.</string>
+</strings>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+
+    <category label="30124">
+        <setting label="30175" type="bool" id="lirc_state" default="true" />
+        <setting label="30180" type="slider" id="start_tempo" default="1000" range="0,100,15000" option="int"/>
+    </category>
+
+    <category label="$LOCALIZE[5]" description="Settings">
+		<setting type="lsep" label="Use this option in order to determine better which game you would like to download."/>
+		<setting label="Download Posters and Fanarts" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%DOWNLOAD_ARTWORKS%%)"/>
+		<setting type="lsep" label="Download Arcade games requirement files"/>
+		<setting label="Download Arcade NVRAM and DIFF" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%DOWNLOAD_NVRAM%%)"/>
+		<setting type="lsep" label="Copy Featherence's keymap for PS3 Joystick."/>
+		<setting label="Copy Keymaps" type="action" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%COPY_KEYMAPS%%)"/>
+		<setting type="lsep" label="Use this option in order to create new data table for listing games information."/>
+		<setting label="Reset Lanuchers" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RESET_LANUCHER%%)"/>
+		<setting type="lsep" label="Recreate default settings for each console."/>
+		<setting label="Reset EMU Settings" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RESET_CONFIG%%)"/>
+		<setting type="lsep" label="Show a list of potential audio adapters." visible="System.Platform.Linux"/>
+		<setting label="Show Audio Adapters" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%AUDIO_DEVICES%%)" visible="System.Platform.Linux"/>
+		<setting type="lsep" label="Enable Adult content"/>
+		<setting label="Adult Content" type="bool" id="show_adult"/>
+    </category>
+	
+	<category label="$LOCALIZE[13395]" description="Video Settings">
+		<setting label="Apply Settings" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%SET_CONFIG%%)"/>
+		
+		<setting type="lsep" label="Inserts a black frame inbetween frames. Useful for 120 Hz monitors who want to play 60 Hz material with eliminated ghosting. video_refresh_rate should still be configured as if it is a 60 Hz monitor (divide refresh rate by 2)."/>
+		<setting id="video_black_frame_insertion" type="bool" default="" label="video_black_frame_insertion" visible="true"/>
+		<setting type="lsep" label="Video refresh rate of your monitor. Used to calculate a suitable audio input rate."/>
+		<setting id="video_refresh_rate" type="text" default="" label="video_refresh_rate" visible="true"/>
+		<setting type="lsep" label="Smoothens picture with bilinear filtering. Should be disabled if using pixel shaders."/>
+		<setting id="video_smooth" type="text" default="" label="video_smooth" visible="true"/>
+		<setting type="lsep" label=""/>
+	</category>
+	
+	<category label="30411" description="Audio Settings">
+		<setting label="Apply Settings" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%SET_CONFIG%%)"/>		
+		<setting type="lsep" label=""/>
+		<setting id="audio_driver" type="select" default="" values=" |alsa|alsathread|oss|openal|sdl" label="audio_driver" visible="true"/>
+		<setting type="lsep" label="Audio volume. Volume is expressed in dB. 0 dB is normal volume. No gain will be applied. Gain can be controlled in runtime with input_volume_up/input_volume_down."/>
+		<setting id="audio_volume" type="slider" default="-27" range="-40,10" option="int" label="audio_volume" visible="true"/>
+		<setting type="lsep" label="Override the default audio device the audio_driver uses. This is driver dependant. E.g. ALSA wants a PCM device, OSS wants a path (e.g. /dev/dsp), Jack wants portnames (e.g. system:playback1,system:playback_2), and so on ..."/>
+		<setting id="audio_device" type="text" default="" label="audio_device" visible="true"/>
+		<setting type="lsep" label="Desired audio latency in milliseconds. Might not be honored if driver can't provide given latency."/>
+		<setting id="audio_latency" type="text" default="" label="audio_latency" visible="true"/>
+		<setting type="lsep" label="Audio output samplerate."/>
+		<setting id="audio_out_rate" type="text" default="" label="audio_out_rate " visible="true"/>
+		<setting type="lsep" label="Will sync (block) on audio. Recommended."/>
+		<setting id="audio_sync" type="bool" default="" label="audio_sync" visible="true"/>
+	</category>
+	
+	<category label="About" description="About">
+		<setting type="lsep" label=""/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32079]"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32108]"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=1)" label="$ADDON[script.featherence.service 32078]" option="close" visible="true"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32048] $ADDON[script.featherence.service 32049]" visible="true"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=7)" label="$ADDON[script.featherence.service 32073]" option="close" visible=""/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32072]"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=32&amp;value=3)" label="$ADDON[script.featherence.service 32076]" option="close" visible="true"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32071]"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=2)" label="$ADDON[script.featherence.service 32077]" option="close" visible="true"/>
+		<setting type="lsep" label="[CR]$ADDON[script.featherence.service 32044]"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32045]"/>
+		<setting type="lsep" label=""/>
+	</category>
+</settings>
