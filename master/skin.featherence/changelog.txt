@@ -8,7 +8,7 @@ WIP - WORK IN PROGRESS
 - Last version of Isengard (Kodi 15) - We're moving to Jarvis only now!
 
 ------------------------
-Featherence v0.4.10 (xx-May-16)
+Featherence v0.4.10 (21-May-16)
 ------------------------
 - Added scroll bar to coloring window.
 - Added 600+ new colors!! (Patch by George)
