@@ -613,7 +613,8 @@ def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percent
 	
 	scriptfeatherenceservice_downloading = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
 	printpoint = printpoint + "1"
-	from commondownloader import *
+	#import resources.lib.commondownloader
+	from resources.lib.commondownloader import *
 	
 	if scriptfeatherenceservice_downloading != "":
 		returned = "skip"
@@ -889,6 +890,10 @@ def copylaunchers(force=False):
 	text = "force" + space2 + str(force)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
+def checkin():
+	if xbmc.getSkinDir() != 'skin.featherence':
+		notification('Featherence is missing!','','',2000)
+		sys.exit(0)
 def terminal(command):
 	'''Execute commands to OS terminal'''
 	import subprocess

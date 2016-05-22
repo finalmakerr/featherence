@@ -77,6 +77,8 @@ def __language__(string):
 from shared_variables import *
 from shared_modules import *
 from modules import *
+checkin()
+
 class Main:
     launchers = {}
     categories = {}
