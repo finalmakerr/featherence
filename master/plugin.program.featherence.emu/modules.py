@@ -725,7 +725,7 @@ def setconfig(force=False):
 		i = 0
 		for file in os.listdir(config_path):
 			extra = extra + newline + str(i) + space2 + str(file)
-			infile_ = read_from_file(config_path + file, silent=True, lines=False, retry=True, createlist=True, printpoint="", addlines="")
+			infile_ = read_from_file(to_unicode(config_path) + to_unicode(file), silent=True, lines=False, retry=True, createlist=True, printpoint="", addlines="")
 			
 			i2 = 0
 			for x in optionsL:
