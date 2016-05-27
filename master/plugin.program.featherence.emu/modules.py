@@ -725,7 +725,7 @@ def setconfig(force=False):
 		i = 0
 		for file in os.listdir(config_path):
 			extra = extra + newline + str(i) + space2 + str(file)
-			infile_ = read_from_file(to_unicode(config_path) + to_unicode(file), silent=True, lines=False, retry=True, createlist=True, printpoint="", addlines="")
+			infile_ = read_from_file(to_utf8(config_path) + to_utf8(file), silent=True, lines=False, retry=True, createlist=True, printpoint="", addlines="")
 			
 			i2 = 0
 			for x in optionsL:
@@ -740,7 +740,7 @@ def setconfig(force=False):
 				to_string = '\n'
 				y = regex_from_to(infile_, from_string, to_string, excluding=True)
 				if y != z:
-					replace_word(config_path + file,from_string + str(y),from_string + str(z) + '"', infile_="", LineR=False , LineClean=False)
+					replace_word(to_utf8(config_path) + to_utf8(file),from_string + to_utf8(y),from_string + to_utf8(z) + '"', infile_="", LineR=False , LineClean=False)
 					if file == 'retroarch.cfg' and x == 'audio_device' and systemplatformlinux:
 						extra = extra + newline + 'ad_' + space2
 						'''need to test!'''
@@ -774,7 +774,7 @@ def staticconfig(force=True):
 		i = 0
 		for file in os.listdir(config_path):
 			extra = extra + newline + str(i) + space2 + str(file)
-			infile_ = read_from_file(config_path + file, silent=True, lines=False, retry=True, createlist=True, printpoint="", addlines="")
+			infile_ = read_from_file(to_utf8(config_path) + to_utf8(file), silent=True, lines=False, retry=True, createlist=True, printpoint="", addlines="")
 			
 			i2 = 0
 			for x in staticL:
