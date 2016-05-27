@@ -131,7 +131,7 @@ def doDownload(url, dest, title, referer, agent, cookie, silent=False, percentin
     sleep   = 0
 
     if silent == False or exe != "":
-        returned = dialogyesno(to_utf8(title) + addonString_servicefeatherence(32138).encode('utf-8') + '[CR]' + to_utf8(file), addonString_servicefeatherence(32139).encode('utf-8') % (str(mb)) + '[CR]' + addonString_servicefeatherence(32140).encode('utf-8'), nolabel=localize(222),  yeslabel=localize(12321))
+        returned = dialogyesno(to_utf8(title) + addonString_servicefeatherence(32138).encode('utf-8') + '[CR]' + to_utf8(file), addonString_servicefeatherence(32139).encode('utf-8') % (to_utf8(mb)) + '[CR]' + addonString_servicefeatherence(32140).encode('utf-8'), nolabel=localize(222),  yeslabel=localize(12321))
         if returned != 'ok':
 			return "abort"
 

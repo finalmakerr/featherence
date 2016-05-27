@@ -619,7 +619,7 @@ def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percent
 	if scriptfeatherenceservice_downloading != "":
 		returned = "skip"
 		notification_common("23")
-		xbmc.executebuiltin('AlarmClock(scriptfeatherenceservice_downloading,ClearProperty(script.featherence.service_downloading,home),10,silent)')
+		xbmc.executebuiltin('AlarmClock(scriptfeatherenceservice_downloading,ClearProperty(script.featherence.service_downloading,home),7,silent)')
 	else:
 		if xbmc.getCondVisibility('System.HasAlarm(scriptfeatherenceservice_downloading)'): xbmc.executebuiltin('CancelAlarm(scriptfeatherenceservice_downloading)')
 		setProperty('script.featherence.service_downloading', 'true', type="home")
