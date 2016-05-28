@@ -46,6 +46,9 @@ SHORTCUT_FILE = os.path.join(PLUGIN_DATA_PATH,"shortcut.cut")
 # Addon paths creation
 if not os.path.exists(DEFAULT_THUMB_PATH): os.makedirs(DEFAULT_THUMB_PATH)
 if not os.path.isdir(PLUGIN_DATA_PATH): os.makedirs(PLUGIN_DATA_PATH)
+
+
+
 # Addon commands
 ADD_COMMAND = "%%ADD%%"
 DOWNLOAD_COMMAND = "%%DOWNLOAD%%"
@@ -77,6 +80,11 @@ def __language__(string):
 from shared_variables import *
 from shared_modules import *
 from modules import *
+
+emudata_launcher_file_size = getFileAttribute(2, emudata_launcher_file, option="1")
+if int(emudata_launcher_file_size) < 1000:
+	copylaunchers(force=True)
+	
 checkin()
 
 class Main:

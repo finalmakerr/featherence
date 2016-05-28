@@ -12,6 +12,8 @@ if systemplatformlinux:
 	fn = dialog.browse(1, 'retroarch', 'files')
 	os.system( "chmod a+rx " + emulator_file )
 	os.system( "%s '%s' "%(emulator_file,fn.replace("'", "'\\''")) )
+	os.system("chmod +x /storage/.kodi/addons/emulator.retroarch/bin/*")
+	os.system("export LD_LIBRARY_PATH='/storage/.kodi/addons/emulator.retroarch/lib'")
 
 elif systemplatformwindows:
 	os.system("start " + emulator_file + space + launcher_args + space + '--menu')

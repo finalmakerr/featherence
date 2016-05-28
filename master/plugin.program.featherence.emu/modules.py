@@ -1,4 +1,4 @@
-import xbmc, xbmcgui, xbmcaddon
+﻿import xbmc, xbmcgui, xbmcaddon
 import os, sys
 
 from variables import *
@@ -692,6 +692,8 @@ def copyconfig(force=False):
 		x = os.path.join(config_path, file)
 		if not os.path.exists(x) or force == True:
 			copyfiles(os.path.join(path,file), x)
+		if (file == 'retroarch.cfg' or file == 'retroarch-core-options.cfg') and systemplatformlinux:
+			copyfiles(os.path.join(path,file), '/storage/.config/retroarch/')
 		
 	if not os.path.exists(config_path) or force==True:
 		printpoint = printpoint + '1'
@@ -700,7 +702,7 @@ def copyconfig(force=False):
 		setconfig(force=True)
 
 	text = "extra" + space2 + str(extra)
-	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
 def copykeymaps():
 	returned = dialogyesno('Would you like to continue?','This action will overwrite your current related files!')
@@ -868,20 +870,20 @@ def copylaunchers(force=False):
 			else: _nintendods_args = 'desmume_libretro.dll'
 			replace_word(emudata_launcher_file,'_nintendods_args',_nintendods_args, infile_="", LineR=False , LineClean=False)
 			
-			if not systemplatformwindows: _segagenesis_args = 'genesis_plus_gx'
-			else: _segagenesis_args = 'genesis_plus_gx_libretro.dll'
+			if not systemplatformwindows: _segagenesis_args = 'genesis.plus.gx'
+			else: _segagenesis_args = 'genesis.plus.gx_libretro.dll'
 			replace_word(emudata_launcher_file,'_segagenesis_args',_segagenesis_args, infile_="", LineR=False , LineClean=False)
 			
-			if not systemplatformwindows: _ps1_args = 'mednafen_psx'
-			else: _ps1_args = 'mednafen_psx_libretro.dll'
+			if not systemplatformwindows: _ps1_args = 'mednafen.psx'
+			else: _ps1_args = 'mednafen.psx_libretro.dll'
 			replace_word(emudata_launcher_file,'_ps1_args',_ps1_args, infile_="", LineR=False , LineClean=False)
 			
-			if not systemplatformwindows: _supernintendo_args = 'snes9x_next'
-			else: _supernintendo_args = 'snes9x_next_libretro.dll'
+			if not systemplatformwindows: _supernintendo_args = 'snes9x.next'
+			else: _supernintendo_args = 'snes9x.next_libretro.dll'
 			replace_word(emudata_launcher_file,'_supernintendo_args',_supernintendo_args, infile_="", LineR=False , LineClean=False)
 			
-			if not systemplatformwindows: _turbografx16_args = 'mednafen_pce_fast'
-			else: _turbografx16_args = 'mednafen_pce_fast_libretro.dll'
+			if not systemplatformwindows: _turbografx16_args = 'mednafen.pce.fast'
+			else: _turbografx16_args = 'mednafen.pce.fast_libretro.dll'
 			replace_word(emudata_launcher_file,'_turbografx16_args',_turbografx16_args, infile_="", LineR=False , LineClean=False)
 
 			

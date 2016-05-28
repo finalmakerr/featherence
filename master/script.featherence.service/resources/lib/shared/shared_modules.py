@@ -324,7 +324,7 @@ def getFileAttribute(custom, file, option=""):
 	text = "custom" + space2 + str(custom) + space + "file" + space2 + str(file) + newline + \
 	"returned" + space2 + str(returned) + newline + \
 	'option' + space2 + str(option) + extra
-	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 	return returned
 
 def localize(value, s=[], addon=None):
