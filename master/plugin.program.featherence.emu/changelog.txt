@@ -5,6 +5,11 @@ WIP - WORK IN PROGRESS
 - Update keyboard keymaps.
 
 ------------------------
+Featherence v0.0.5 (03-Jun-16)
+------------------------
+- Minor sound bug fix.
+
+------------------------
 Featherence v0.0.4 (28-May-16)
 ------------------------
 - Update OpenELEC compatibility.

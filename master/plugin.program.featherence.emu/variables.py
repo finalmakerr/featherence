@@ -121,7 +121,7 @@ input_enable_hotkey =getsetting('input_enable_hotkey') ; optionsL.append('input_
 
 audio_driver =getsetting('audio_driver') ; optionsL.append('audio_driver')
 if systemplatformwindows: options_L.append('dsound')
-elif systemplatformlinux: options_L.append('alsathread')
+elif systemplatformlinux: options_L.append('alsathread') #alsathread
 
 video_driver =getsetting('video_driver') ; optionsL.append('video_driver')
 if systemplatformwindows: options_L.append('gl')
@@ -168,6 +168,7 @@ else:
 download1L = ['Arcade', 'Sony Playstation']
 
 emu_startup = xbmc.getInfoLabel('Window(home).Property(emu_startup)')
+
 if emu_startup == "":
 	from modules import startup
 	startup()

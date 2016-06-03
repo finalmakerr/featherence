@@ -221,7 +221,7 @@ class Main:
             else:
                 if ( os.path.exists(apppath) ) :
                     arguments = launcher["args"].replace("%apppath%" , apppath).replace("%APPPATH%" , apppath)
-                    if xbmc.Player().isPlaying():
+                    if xbmc.Player().isPlaying() or 1 + 1 == 2:
 						xbmc.Player().stop()
 						xbmc.sleep(self.settings[ "start_tempo" ]+100)
 						try:
@@ -357,8 +357,9 @@ class Main:
                         if ( os.path.basename(application).lower().replace(".exe" , "") == "xbmc" ):
                             xbmc.executebuiltin('XBMC.' + arguments)
                         else:
-                            if ( xbmc.Player().isPlaying() ):
+                            if ( xbmc.Player().isPlaying() ) or 1 + 1 == 2:
 								xbmc.Player().stop()
+								xbmc.sleep(self.settings[ "start_tempo" ]+100)
 								try:
 									xbmc.audioSuspend()
 								except:
@@ -603,6 +604,7 @@ class Main:
         commands.append((localize(137) + space + localize(20410), "XBMC.RunPlugin(%s?%s/%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, key, SEARCH_TRAILER_COMMAND) , ))
         #commands.append((localize(137) + space + localize(20410), "XBMC.RunPlugin(plugin://plugin.video.youtube/search/?q=%s)" % (name), ))
         commands.append((localize(33003), "XBMC.RunPlugin(%s?%s/%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, key, DOWNLOAD_COMMAND) , )) #ROM
+        commands.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
         listitem.addContextMenuItems( commands, replaceItems=True)
         xbmcplugin.addDirectoryItem( handle=int( self._handle ), url="%s?%s/%s/%s"  % (self._path, self.launchers[launcherID]["category"], launcherID, key), listitem=listitem, isFolder=False)
 
