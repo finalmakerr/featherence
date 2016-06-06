@@ -112,6 +112,19 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 						file = "Arcade_GEAR.zip"
 						fileID = getfileID(file)
 						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_GEAR.zip?dl=1", file, temp_path, rom_path)
+				
+				elif launcher == 'Featherence_arcadeADULT':
+					filename_ = filename.replace(':',"")
+					file = "Arcade_ADULT" + filename_ + ".zip"
+					fileID = getfileID(file)
+					notification('1',file,'',1000)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_ADULT" + filename__ + ".zip?dl=1", file, temp_path, rom_path)
+					else:
+						file = "Arcade_ADULT.zip"
+						fileID = getfileID(file)
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_ADULT.zip?dl=1", file, temp_path, rom_path)
 			
 			elif category == 'Featherence_nintendods':
 				if launcher == 'Featherence_nintendods1P':
@@ -606,57 +619,10 @@ def getfileID(file):
 			fileID = ""
 	return fileID
 
-
-def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percentinfo=""):
-	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = "" ; returned = ""
-	downloadpath2 = os.path.join(downloadpath, filename)
-	
-	scriptfeatherenceservice_downloading = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
-	printpoint = printpoint + "1"
-	#import resources.lib.commondownloader
-	from resources.lib.commondownloader import *
-	
-	if scriptfeatherenceservice_downloading != "":
-		returned = "skip"
-		notification_common("23")
-		xbmc.executebuiltin('AlarmClock(scriptfeatherenceservice_downloading,ClearProperty(script.featherence.service_downloading,home),7,silent)')
-	else:
-		if xbmc.getCondVisibility('System.HasAlarm(scriptfeatherenceservice_downloading)'): xbmc.executebuiltin('CancelAlarm(scriptfeatherenceservice_downloading)')
-		setProperty('script.featherence.service_downloading', 'true', type="home")
-		returned = doDownload(url, downloadpath2, filename, "", "", "", silent=silent, percentinfo=percentinfo)
-		
-		try: test = 1
-		except Exception, TypeError:
-			extra = extra + newline + "TypeError" + space2 + str(TypeError)
-			returned = str(TypeError)
-		
-		if returned == "ok":
-			printpoint = printpoint + "3"
-			ExtractAll(downloadpath2, extractpath)
-		if downloadpath2 != downloadpath:
-			printpoint = printpoint + "4"
-			removefiles(downloadpath2)
-		
-		setProperty('script.featherence.service_downloading', '', type="home")
-		
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	text = "returned" + space2 + str(returned) + newline + \
-	"url" + space2 + url + newline + \
-	'downloadpath' + space2 + str(downloadpath) + newline + \
-	'downloadpath2' + space2 + str(downloadpath2) + newline + \
-	'extractpath' + space2 + str(extractpath) + newline + \
-	'silent' + space2 + str(silent) + newline + \
-	extra
-	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
-	'''---------------------------'''
-
 def searchtrailer(filename):
 	from shared_modules3 import *
 	name = filename ; url = filename ; desc = "" ; num = "" ; viewtype = ""
 	YoutubeSearch(name, url, desc, num, viewtype)
-	notification('1','','',1000)
 	
 def copyarcade(force=False):
 	name = 'copyarcade' ; printpoint = ""
@@ -664,7 +630,7 @@ def copyarcade(force=False):
 	if not os.path.exists(os.path.join(emulatordata_path,'save','mame', 'cfg', '')) and os.path.exists(os.path.join(emulator_path,'save','mame', 'cfg', '')):
 		printpoint = printpoint + '1'
 	elif not os.path.exists(path): printpoint = printpoint + '8'
-	elif not os.path.exists(os.path.join(emulator_path,'save','mame', 'diff', '')) or not os.path.exists(os.path.join(emulator_path,'save','mame', 'nvram', '')):
+	elif not os.path.exists(os.path.join(emulatordata_path,'save','mame', 'diff', '')) or not os.path.exists(os.path.join(emulatordata_path,'save','mame', 'nvram', '')):
 		printpoint = printpoint + '2'
 		file = "nvram_diff.zip"
 		fileID = getfileID(file)
@@ -716,7 +682,13 @@ def copykeymaps():
 			filename = os.path.basename(file)
 			filename_ = filename_ + ', ' + filename
 		dialogok('Keymaps copied!', filename_, '', '')
-		
+
+def keys_help(filename):
+	from shared_modules3 import *
+	name = filename ; url = filename ; mode = 4 ; iconimage = "" ; desc = "" ; num = "" ; viewtype = "" ; fanart = ""
+	PlayVideos(name, mode, url, iconimage, desc, num, fanart)
+	#notification('1','','',1000)
+	
 def setconfig(force=False):
 	name = 'setconfig' ; printpoint = "" ; extra = ""
 	

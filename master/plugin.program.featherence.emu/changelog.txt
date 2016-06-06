@@ -5,16 +5,16 @@ WIP - WORK IN PROGRESS
 - Update keyboard keymaps.
 
 ------------------------
-Featherence v0.0.5 (03-Jun-16)
+Featherence Emu v0.0.5 (03-Jun-16)
 ------------------------
 - Minor sound bug fix.
 
 ------------------------
-Featherence v0.0.4 (28-May-16)
+Featherence Emu v0.0.4 (28-May-16)
 ------------------------
 - Update OpenELEC compatibility.
 
 ------------------------
-Featherence v0.0.1-3 (21-May-16)
+Featherence Emu v0.0.1-3 (21-May-16)
 ------------------------
 - Alpha release.
