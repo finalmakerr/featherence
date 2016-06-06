@@ -8,8 +8,8 @@ def mode0(admin, name, printpoint):
 	'''test'''
 	pass
 	#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
-	#installaddon('resource.images.weathericons.outline')
-	#installaddon('resource.images.weatherfanart.single')
+	installaddon('resource.images.weathericons.outline', update=False)
+	#installaddon('resource.images.weatherfanart.single,update=False')
 	
 	
 def mode5(value, admin, name, printpoint):
@@ -39,9 +39,11 @@ def mode5(value, admin, name, printpoint):
 		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)')
 		setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
 		
-		#installaddon('resource.images.weathericons.outline')
-		#installaddon('resource.images.weatherfanart.single')
-		#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
+		installaddon('resource.images.weathericons.outline', update=False)
+		installaddon('resource.images.weatherfanart.single', update=False)
+		installaddon('script.module.unidecode', update=False)
+		installaddon('script.skinshortcuts', update=True)
+		
 
 def mode6(value):
 	name = 'mode6 (pwd)' ; printpoint = ""

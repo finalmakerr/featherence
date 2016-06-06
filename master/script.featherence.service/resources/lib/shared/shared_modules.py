@@ -1508,3 +1508,235 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 		message = printfirst + to_utf8(title) + '_LV' + str(printpoint) + space + to_utf8(text)
 		xbmc.log(msg=to_utf8(message), level=xbmc.LOGNOTICE)
 	return exe
+
+'''Below CODES are against Kodi's rules'''
+
+def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percentinfo=""):
+	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = "" ; returned = ""
+	downloadpath2 = os.path.join(downloadpath, filename)
+	
+	scriptfeatherenceservice_downloading = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
+	alarm_downloading = xbmc.getCondVisibility('HasAlarm(scriptfeatherenceservice_downloading)')
+	printpoint = printpoint + "1"
+	#import resources.lib.commondownloader
+	#from resources.lib.commondownloader import *
+	from commondownloader import *
+	
+	
+	if scriptfeatherenceservice_downloading != "":
+		returned = "skip"
+		notification_common("23")
+		xbmc.executebuiltin('AlarmClock(scriptfeatherenceservice_downloading,ClearProperty(script.featherence.service_downloading,home),7,silent)')
+	else:
+		if alarm_downloading: xbmc.executebuiltin('CancelAlarm(scriptfeatherenceservice_downloading,silent)')
+		setProperty('script.featherence.service_downloading', 'true', type="home")
+		returned = doDownload(url, downloadpath2, filename, "", "", "", silent=silent, percentinfo=percentinfo)
+		
+		try: test = 1
+		except Exception, TypeError:
+			extra = extra + newline + "TypeError" + space2 + str(TypeError)
+			returned = str(TypeError)
+		
+		if returned == "ok":
+			printpoint = printpoint + "3"
+			ExtractAll(downloadpath2, extractpath)
+		if downloadpath2 != downloadpath:
+			printpoint = printpoint + "4"
+			removefiles(downloadpath2)
+		
+		setProperty('script.featherence.service_downloading', '', type="home")
+		
+	'''------------------------------
+	---PRINT-END---------------------
+	------------------------------'''
+	text = "returned" + space2 + str(returned) + newline + \
+	"url" + space2 + url + newline + \
+	'downloadpath' + space2 + str(downloadpath) + newline + \
+	'downloadpath2' + space2 + str(downloadpath2) + newline + \
+	'extractpath' + space2 + str(extractpath) + newline + \
+	'silent' + space2 + str(silent) + newline + \
+	extra
+	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
+	'''---------------------------'''
+	
+def installaddon(addonid2, update=True):
+	printpoint = "" ; name = 'installaddon'
+	
+	if not xbmc.getCondVisibility('System.HasAddon('+ addonid2 +')') or not os.path.exists(addons_path + addonid2):
+		printpoint = printpoint + "1"
+		if update == True: notification_common("24")
+		printpoint2 = installaddonP(addonid2, update=update)
+			
+	else: printpoint = printpoint + '7'
+	if '1' in printpoint:
+		if os.path.exists(addons_path + addonid2):
+			if update == True:
+				printpoint = printpoint + '5'
+				xbmc.executebuiltin("UpdateLocalAddons")
+			if 'repo' in addonid2: xbmc.executebuiltin("UpdateAddonRepos")
+			
+		else:
+			printpoint = printpoint + '6'
+			if not 'resources.' in addonid2:
+				if update != True: xbmc.executebuiltin('ActivateWindow(10025,special://userdata/library/,return)') ; xbmc.sleep(1000)
+				xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +'),returned')
+				if update != True:
+					xbmc.executebuiltin('Action(Down)')
+					xbmc.executebuiltin('Action(Select)')
+					
+	text = str(addonid2)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	'''---------------------------'''
+	return printpoint
+	
+def installaddonP(addon, update=True):
+	printpoint = "" ; name = 'installaddonP'
+		
+	if addon == 'script.module.unidecode': #FIXED PATH
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("http://mirrors.kodi.tv/addons/frodo/script.module.unidecode/script.module.unidecode-0.4.16.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+		
+	elif addon == 'plugin.video.dailymotion_com':
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://ftp.heanet.ie/mirrors/xbmc/addons/frodo/plugin.video.dailymotion_com/plugin.video.dailymotion_com-2.1.2.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'script.skinshortcuts': #FIXED PATH *MASTER
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/BigNoid/script.skinshortcuts/archive/master.zip", addon + "-master.zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, 'script.skinshortcuts-master'), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'resource.images.weathericons.outline': #FIXED PATH - *MASTER (PATH EXISTS!!)
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.outline/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+
+	elif addon == 'resource.images.weatherfanart.single': #FIXED PATH
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("http://mirrors.xbmc.org/addons/jarvis/resource.images.weatherfanart.single/resource.images.weatherfanart.single-0.0.5.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+		
+	elif addon == 'browser.chromium':
+		'''6.0'''
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			#LINK IS BROKEN!
+			DownloadFile("https://www.dropbox.com/sh/7rwud8jv5xu85ga/AABvIzzF-8w-H1IduFRgo_dNa/addons/chromium/browser.chromium-6.0.6.zip?dl=0", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'script.module.requests': #FIXED PATH *SPECIAL
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/beenje/script.module.requests/archive/gotham.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, 'script.module.requests-gotham'), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+
+	elif addon == 'plugin.video.smithsonian': #FIXED PATH *MASTER
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/learningit/plugin.video.smithsonian/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, 'plugin.video.smithsonian-master'), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'script.extendedinfo': #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/OpenELEQ/eqsperimental/blob/master/zips/script.extendedinfo/script.extendedinfo-4.7.4-dev.zip?raw=true", addon + ".zip", packages_path, addons_path, silent=False)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif 'repository.xbmc-israel' in addon: #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/cubicle-vdo/xbmc-israel/raw/master/repo/repository.xbmc-israel/repository.xbmc-israel-1.0.4.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif '.featherence' in addon: #GITHUB PATH
+		if not 'resource.' in addon and not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			version = getVersion(addon, 'https://raw.githubusercontent.com/finalmakerr/featherence/master/addons.xml')
+			file = addon + '-' + str(version) + '.zip'
+			DownloadFile(gh1+gh2+addon+'/'+file, file, packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif 'plugin.audio.jango' in addon: #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://offshoregit.com/kinkin-xbmc-repository/zips/plugin.audio.jango/plugin.audio.jango-0.8.6.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif 'plugin.audio.99fm-playlists' in addon: #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("http://www.abeksis.com/repo/plugin.audio.99fm-playlists/plugin.audio.99fm-playlists-0.1.8.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif 'plugin.video.seretil' in addon: #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/cubicle-vdo/xbmc-israel/blob/master/repo/plugin.video.seretil/plugin.video.seretil-2.1.8.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif 'plugin.video.supercartoons' in addon: #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://raw.github.com/spoyser/spoyser-repo/master/zips/plugin.video.supercartoons/plugin.video.supercartoons-1.0.14.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif 'plugin.video.supercartoons' in addon: #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("http://dmdsoftware.net/repository.ddurdle/plugin.video.gdrive-0.7.17.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	
+	if "5" in printpoint:
+		if update == True:
+			xbmc.executebuiltin("UpdateLocalAddons")
+			xbmc.sleep(1000)
+		if "repository" in addon: xbmc.executebuiltin("UpdateAddonRepos")
+		'''---------------------------'''
+	
+	text = ""
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")	
+
+	return printpoint

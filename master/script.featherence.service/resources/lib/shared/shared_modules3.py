@@ -274,6 +274,7 @@ def LocalSearch2(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	mode = TvMode2(addonID, mode, name, url2, iconimage, desc, num, viewtype, fanart)
 	
 	return mode
+	
 def YoutubeSearch(name, url, desc, num, viewtype):
 	'''Search in YouTube command'''
 	printpoint = "" ; value = ""
@@ -380,6 +381,7 @@ def PlayVideos(name, mode, url, iconimage, desc, num, fanart):
 	
 	if '&dailymotion_id=' in url:
 		url = url.replace("&dailymotion_id=","")
+		installaddonP('plugin.video.dailymotion_com', update=True)
 		xbmc.executebuiltin('PlayMedia(plugin://plugin.video.dailymotion_com/?url='+url+'&mode=playVideo)')
 				
 	elif '&youtube_id=' in url:
@@ -387,15 +389,13 @@ def PlayVideos(name, mode, url, iconimage, desc, num, fanart):
 		xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/play/?video_id='+ url +')')
 		
 	elif '&youtube_pl=' in url or '&dailymotion_pl=' in url:
-		#xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/play/?playlist_id='+ url +')')
-		#try:
+		if '&dailymotion_pl=' in url: installaddonP('plugin.video.dailymotion_com', update=True)
 		finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(x, name, iconimage, desc, fanart, playlist=playlist, onlydata=False)
 		pl, playlist, printpoint = MultiVideos_play(playlist_L, pl, playlist, printpoint, General_TVModeShuffle, mode)
-		#except Exception, TypeError: extra = extra + newline + "apimaster_TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
 	
 	elif '&googledrive=' in url:
+		installaddonP('plugin.video.gdrive', update=True)
 		url = url.replace("&googledrive=","")
-		#shared_modules2
 		
 	else: xbmc.executebuiltin('PlayMedia('+ url +')')
 	

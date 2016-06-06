@@ -178,3 +178,4 @@ View50_Plus2=1
 Show_Rating=1
 AlwaysFanart=1True
 MoviesTVCoversOverlay=040
+BigHomeIcons=1

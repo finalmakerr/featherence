@@ -22,7 +22,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.featherence.emu" name="Featherence Emulator" version="0.0.5" provider-name="finalmakerr, Angelscry">
+<addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.0.5" provider-name="finalmakerr, Angelscry">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.simplejson" version="2.0.9"/>
@@ -60,7 +60,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.11" provider-name="finalmakerr, yoel guy">
+<addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.12" provider-name="finalmakerr, yoel guy">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -300,7 +300,7 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.2.31" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.2.32" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -323,9 +323,6 @@
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
 	<import addon="script.featherence.service" version="0.2.14"/>
-	<!--<import addon="resource.images.weathericons.outline" version="0.0.4" optional="true"/>
-	<import addon="resource.images.weatherfanart.single" version="0.0.4" optional="true"/>-->
-	<!--<import addon="script.skinshortcuts" version="0.6.5" optional="true"/>-->
   </requires>
   <extension point="xbmc.gui.skin" effectslowdown="1.0" debugging="false">
     <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
