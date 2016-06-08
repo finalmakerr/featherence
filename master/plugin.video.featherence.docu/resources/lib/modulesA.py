@@ -39,8 +39,8 @@ def CATEGORIES10102A(name, iconimage, desc, fanart):
 	background = 10102
 	
 	list = []
-
-		
+	list.append('&youtube_ch=UCsSTiRba-BUnOk0PALOhsug/playlists')
+	
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 	
 def CATEGORIES10103A(name, iconimage, desc, fanart):
@@ -70,7 +70,9 @@ def CATEGORIES102A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLht3ColwII5rNwVkc7vJdCYkAUVr-1-uG')
 	list.append('&youtube_pl=PL6oforB7ir5Iq9DHVczSeQKYfmwl-zgY3')
 	list.append('&youtube_pl=PLw4zAzjwBP1d5annau67miUKlxoEERFKi')
-		
+	list.append('&custom8=plugin://plugin.video.eso/')
+	list.append('&custom8=plugin://plugin.video.esa/')
+	
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 	
 def CATEGORIES103A(name, iconimage, desc, fanart):
@@ -184,18 +186,24 @@ def CATEGORIES108A(name, iconimage, desc, fanart):
 	background = 108
 	
 	list = []
-
-	list.append('&youtube_id=eIOvF0MlMe0')
-	list.append('&youtube_id=TOeT5DQSRDc')
-	list.append('&youtube_pl=VGVK6cqjoj6Aeyi2x7yQqo0S9Pq8CkZ')
+	
 	list.append('&youtube_pl=PL51YAgTlfPj6s0QtcgOpIwKewkEeSN77e')
-	list.append('&youtube_id=PLEDEE611B09BB3800')
 	list.append('&youtube_pl=PL51YAgTlfPj7TAvhkV8c9UnnMHUpQy-Bx')
 	list.append('&youtube_pl=PL51YAgTlfPj474gCGLEUa7_Zo5Bxgy9fG')
 	list.append('&youtube_pl=PL51YAgTlfPj4v3ww2jfBb21LiJFh3XSIe')
 	list.append('&youtube_pl=PL51YAgTlfPj6zllZWhjkRCv95Q9LPhRZ2')
 	list.append('&youtube_pl=PL51YAgTlfPj4NGa6HC87lQQL5KfqQTqW3')
-		
+	list.append('&youtube_id=eIOvF0MlMe0')
+	list.append('&youtube_id=TOeT5DQSRDc')
+	list.append('&youtube_id=J1JIHh1ZEf0')
+	list.append('&youtube_pl=PLEDEE611B09BB3800')
+	list.append('&youtube_pl=PLth1a195qHsj20lXv4QqTQ7kb2RLoGxY8')
+	list.append('&youtube_pl=PL51YAgTlfPj59VvVLjLaAiGbFjbqv7sh3')
+	list.append('&youtube_pl=PL51YAgTlfPj4F8EkY07BfV1KhdjmtjX0P')
+	list.append('&youtube_pl=PL51YAgTlfPj4oR5aIC0Ru5JZA1a1TT-RN')
+	list.append('&youtube_pl=PL51YAgTlfPj6PWe7kECdyz6ToCjcmSd6z')
+	list.append('&youtube_pl=PLth1a195qHsi9fsrgjDzYTzqKSOF-Ky-N')
+	
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 
 def CATEGORIES10801A(name, iconimage, desc, fanart):
@@ -203,6 +211,15 @@ def CATEGORIES10801A(name, iconimage, desc, fanart):
 	background = 10801
 	
 	list = []
+	list.append('&youtube_ch=The23Kidz')
+	list.append('&youtube_ch=23language')
+	list.append('&youtube_pl=VGVK6cqjoj6Aeyi2x7yQqo0S9Pq8CkZ')
+	list.append('&youtube_id=l3fXEyLWCzI')
+	list.append('&youtube_pl=PL43AC3544C5E17BEF')
+	list.append('&youtube_id=QcANPfq5V7g')
+	list.append('&youtube_id=gO9hyX4s1ko')
+	list.append('&youtube_pl=PLTleo-h9TFqI2CFuWeFA-Q2Bu3BBHdXqv')
+	list.append('&youtube_id=jMIELC0KFs4')
 	
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 	

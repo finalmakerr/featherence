@@ -460,7 +460,7 @@
 	<value condition="Skin.String(background96)">$INFO[Skin.String(background96)]</value>
   </variable>
   <variable name="background97">
-    <value condition="!Skin.HasSetting(wbackground97) | Window.IsVisible(MyWeather.xml)">special://skin/extras/resource.images.weatherfanart.single/resources/$INFO[Weather.FanartCode].jpg</value>
+    <value condition="!Skin.HasSetting(wbackground97) | Window.IsVisible(MyWeather.xml)">special://home/addons/resource.images.weatherfanart.single/resources/$INFO[Weather.FanartCode].jpg</value>
 	<value condition="!Skin.String(background97) | SubString(Skin.String(background97),special://skin)">http://i.imgur.com/9LRnEqg.jpg</value>
 	<value condition="Skin.String(background97)">$INFO[Skin.String(background97)]</value>
   </variable>

@@ -795,7 +795,6 @@
 	  <font>size28</font>
 	</control>
 	<control type="spincontrolex" id="3" description="מיקום">
-	
 	  <include>SideMenuCommon2</include>
 	  <include>SideMenuCommon</include>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
@@ -803,7 +802,6 @@
 	  <font>size28</font>
 	  <width>480</width>
 	</control>
-	<include>button120_updatelibrary</include>
 	<!--<include>button123_enablefanart</include>-->
 	<control type="button" id="129" description="הגדרות">
 	  <include>SideMenuCommon</include>

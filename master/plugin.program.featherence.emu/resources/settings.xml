@@ -11,6 +11,7 @@
 		<setting label="Download Posters and Fanarts" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%DOWNLOAD_ARTWORKS%%)"/>
 		<setting type="lsep" label="Download Arcade games requirement files"/>
 		<setting label="Download Arcade NVRAM and DIFF" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%DOWNLOAD_NVRAM%%)"/>
+		<setting label="Download Arcade CFG" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%DOWNLOAD_CFG%%)"/>
 		<setting type="lsep" label="Copy Featherence's keymap for PS3 Joystick."/>
 		<setting label="Copy Keymaps" type="action" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%COPY_KEYMAPS%%)"/>
 		<setting type="lsep" label="Use this option in order to create new data table for listing games information."/>

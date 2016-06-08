@@ -54,6 +54,7 @@ ADD_COMMAND = "%%ADD%%"
 DOWNLOAD_COMMAND = "%%DOWNLOAD%%"
 DOWNLOAD_ARTWORKS = "%%DOWNLOAD_ARTWORKS%%"
 DOWNLOAD_NVRAM = "%%DOWNLOAD_NVRAM%%"
+DOWNLOAD_CFG = "%%DOWNLOAD_CFG%%"
 COMMAND_ARGS_SEPARATOR = "^^"
 RESET_LANUCHER = "%%RESET_LANUCHER%%"
 RESET_CONFIG = "%%RESET_CONFIG%%"
@@ -169,7 +170,7 @@ class Main:
                 elif (launcher == SEARCH_GENRE_COMMAND):
                     self._find_genre_add_roms(category)
                 elif (category == KEYS_HELP):
-                    showpicture(category)
+                    keys_help(launcher)
 					
                 else:
                     if (self.launchers[launcher]["rompath"] == ""):
@@ -192,6 +193,8 @@ class Main:
                     downloads2('_Artworks.zip')
                 elif (category == DOWNLOAD_NVRAM):
                     downloads2('nvram_diff.zip')
+                elif (category == DOWNLOAD_CFG):
+                    copyarcade(force=True)
                 elif (category == AUDIO_DEVICES):
                     AudioDevices()
                 elif (category == SET_CONFIG):
@@ -296,7 +299,7 @@ class Main:
                 romname = os.path.splitext(romfile)[0]
     
                 if ( os.path.exists(apppath) ) :
-                    if ( os.path.exists(rompath) ) :
+                    if ( os.path.exists(rom["filename"]) ) :
                         files = []
                         filesnames = []
                         ext3s = ['.cd1', '-cd1', '_cd1', ' cd1']
@@ -416,7 +419,7 @@ class Main:
                             except:
 								pass
                     else:
-                        xbmc_notify(addonName+" - "+__language__( 30612 ), __language__( 30611 ) % os.path.basename(rom["filename"]),3000)
+                        notification(addonString(30611).encode('utf-8') % os.path.basename(rom["filename"]),'You should download the game first!','',3000)
                 else:
                     xbmc_notify(addonName+" - "+__language__( 30612 ), __language__( 30611 ) % os.path.basename(launcher["application"]),3000)
 
@@ -535,9 +538,8 @@ class Main:
     def _add_category(self, name, thumb, fanart, genre, plot, total, key):
         commands = []
         commands.append((localize(137), "XBMC.RunPlugin(%s?%s)" % (self._path, SEARCH_COMMAND) , ))
+        commands.append((addonString(30100).encode('utf-8') % (name), "XBMC.RunPlugin(%s?%s/%s)" % (self._path, KEYS_HELP, name) , ))
         commands.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
-        path = os.path.join(emumedia_path, 'help', name + '.jpg')
-        if os.path.exists(path): commands.append((addonString(30100).encode('utf-8') % (name), 'ShowPicture('+path+')'))
 		
         folder = True
         icon = "DefaultFolder.png"
