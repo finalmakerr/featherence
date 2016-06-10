@@ -264,6 +264,7 @@ def LocalSearch(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	mode = TvMode2(addonID, mode, name, url2, iconimage, desc, num, viewtype, fanart)
 	
 	return mode
+	
 def LocalSearch2(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	'''Read lines of a file like .txt and use each line to create a folder or play'''
 	printpoint = "" ; admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)') ; value = "" ; url2 = ""
@@ -791,7 +792,7 @@ def MultiVideos_play2(finalurl, pl, playlist, printpoint):
 			printpoint = printpoint + '3'
 			plugin = regex_from_to(finalurl, 'plugin://', '/', excluding=True)
 			plugin = regex_from_to(plugin, 'plugin://', '?', excluding=True)
-			installaddon(plugin, update=True)
+			if plugin != "": installaddon(plugin, update=True)
 			
 		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl) ; xbmc.sleep(2000)
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo') ; dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)') ; dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)') ; dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)') ; dialogselectW = xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)')
@@ -824,8 +825,7 @@ def MultiVideos_play2(finalurl, pl, playlist, printpoint):
 	'count' + space2 + str(count)
 	printlog(title="MultiVideos_play2", printpoint=printpoint, text=text, level=0, option="")
 	return pl, playlist, printpoint
-	
-	
+		
 def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=addonID, onlydata=True):
 	'''return API information for YouTube and DailyMotion'''
 	'''playlist_L = store new videos from x'''

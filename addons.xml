@@ -23,16 +23,38 @@
 </addon>
 
 <addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.0.5" provider-name="finalmakerr, Angelscry">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.simplejson" version="2.0.9"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-    </extension>
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simplejson" version="2.0.9"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+	<summary lang="en">Nostalgia Games</summary>
+	<summary lang="he">משחקי נוסטלגיה</summary>
+    <description lang="en">Features:
+- 8 Consoles of choice.
+- Advanced customized settings are available trough addon settings.
+- Adult contents support.
+- Auto generate of predifined CFG, DIFF and NVRAM Arcade's settings.
+- Download any game directly! Up to 1000 games are available!
+- Fanart and Posters supports and are available as a download pack or per downloaded game.
+- Full PS3 Joystick support in-Kodi and in-Game.
+- Games are categorized by number of possible players.
+- Genre and Description support.
+- High performance modules with improved quality.
+- Smart search.
+- Smart self restore and update of contents.
+- Trailers support.
+    </description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+	<forum></forum>
+	<email>featherence@groups.facebook.com</email>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.program.featherence.emu</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
+  </extension>
 </addon>
 
 <addon id="plugin.video.featherence.be_creative" name="Featherence Be Creative" version="0.0.2" provider-name="finalmakerr">
@@ -300,7 +322,7 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.2.32" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.2.33" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.1.0"/>

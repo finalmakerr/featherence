@@ -259,8 +259,10 @@ def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[], save_=""):
 				subdir = ""
 				level = 7
 				extra = extra + newline + 'subdir list error' + space2 + 'x2' + space2 + str(x2) + newline + str(subdir) + filename
-				
-			subdir_filename = to_unicode(subdir) + '_' + to_unicode(filename)
+			
+			
+			if 'special://userdata/addon_data/script.featherence.service/media/' in x2_: subdir_filename = to_unicode(filename)
+			else: subdir_filename = to_unicode(subdir) + '_' + to_unicode(filename)
 			target = os.path.join(featherenceserviceaddondata_media_path, subdir_filename)
 			
 			copyfiles(x2, target)
@@ -272,6 +274,7 @@ def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[], save_=""):
 	'ignoreL' + space2 + str(ignoreL) + newline + \
 	'x2' + space2 + to_utf8(x2) + newline + \
 	'x2_' + space2 + to_utf8(x2_) + newline + \
+	'subdir' + space2 + to_utf8(subdir) + extra
 	'subdir_filename' + space2 + to_utf8(subdir_filename) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=level, option="")
 	
@@ -1720,7 +1723,7 @@ def installaddonP(addon, update=True):
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
 	
-	elif 'plugin.video.supercartoons' in addon: #FIXED PATH
+	elif 'plugin.video.gdrive' in addon: #FIXED PATH
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			DownloadFile("http://dmdsoftware.net/repository.ddurdle/plugin.video.gdrive-0.7.17.zip", addon + ".zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
