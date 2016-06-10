@@ -8,6 +8,16 @@ WIP - WORK IN PROGRESS
 - Last version of Isengard (Kodi 15) - We're moving to Jarvis only now!
 
 ------------------------
+Featherence v0.4.11 (xx-Jun-16)
+------------------------
+- Added download support for certain addons.
+- Added script.extendedinfo mod by Openeleq (Play/Add to library from various addons).
+- Major reduce of skin size.
+- Minor update of Video OSD buttons.
+- Update autocomplete feature.
+- Update subtitles dialog window.
+
+------------------------
 Featherence v0.4.10 (21-May-16)
 ------------------------
 - Added scroll bar to coloring window.

@@ -59,7 +59,7 @@
 					<usealttexture>Playlist.IsRepeat | Playlist.IsRepeatOne</usealttexture>
 					<onclick>PlayerControl(RepeatAll)</onclick>
 					<altclick>PlayerControl(RepeatOff)</altclick>
-					<visible>Player.HasAudio + !Pvr.IsPlayingRadio | Playlist.IsRepeat | Playlist.IsRepeatOne | !IsEmpty(Window(home).Property(OSDPlus))</visible>
+					<visible>Player.HasAudio + !Pvr.IsPlayingRadio | Playlist.IsRepeat | Playlist.IsRepeatOne | !IsEmpty(Window(home).Property(OSDPlus)) + IntegerGreaterThen(VideoPlayer.PlaylistLength,1)</visible>
 					<visible>!SubString(Player.FolderPath,rtmp://) + !SubString(Player.FolderPath,mms://)</visible>
 				</control>	
 				<control type="togglebutton" id="612" description="Audio">

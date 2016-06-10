@@ -71,7 +71,7 @@
 			  <posx>30</posx>
 			  <height>100</height>
 			  <width>100</width>
-			  <texture>special://skin/extras/resource.images.weathericons.outline/resources/$INFO[ListItem.Property(FanartCode)].png</texture>
+			  <texture>special://home/addons/resource.images.weathericons.outline/resources/$INFO[ListItem.Property(FanartCode)].png</texture>
 			  <!--<texture>weather/$INFO[ListItem.Property(FanartCode)].png</texture>-->
 			  <aspectratio align="center">keep</aspectratio>
 			</control>
@@ -130,7 +130,7 @@
 			  <posx>30</posx>
 			  <height>100</height>
 			  <width>100</width>
-			  <texture>special://skin/extras/resource.images.weathericons.outline/resources/$INFO[ListItem.Property(FanartCode)].png</texture>
+			  <texture>special://home/addons/resource.images.weathericons.outline/resources/$INFO[ListItem.Property(FanartCode)].png</texture>
 			  <!--<texture>weather/$INFO[ListItem.Property(FanartCode)].png</texture>-->
 			  <aspectratio align="center">keep</aspectratio>
 			</control>
