@@ -1057,7 +1057,7 @@
 	   <visible>false</visible>
      </control>
 	 <control type="group">
-	   <visible>IsEmpty(Control.GetLabel(11156))</visible>
+	   <visible>IsEmpty(Control.GetLabel(11156)) + Window.IsVisible(MyVideoNav.xml)</visible>
 	   <visible>!SubString(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)</visible>
 	   <control type="label" id="1103" description="***דירוג***">
           <label>$VAR[TopVideoInformation3]</label>

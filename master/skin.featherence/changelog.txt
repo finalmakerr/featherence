@@ -13,7 +13,9 @@ Featherence v0.4.11 (xx-Jun-16)
 - Added download support for certain addons.
 - Added script.extendedinfo mod by Openeleq (Play/Add to library from various addons).
 - Major reduce of skin size.
-- Minor update of Video OSD buttons.
+- Minor update of Featherence Emu's views.
+- Minor update of save build feature (including bug fix).
+- Minor update of video OSD buttons.
 - Update autocomplete feature.
 - Update subtitles dialog window.
 

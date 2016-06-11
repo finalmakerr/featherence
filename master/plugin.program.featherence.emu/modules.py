@@ -684,10 +684,29 @@ def copykeymaps():
 		dialogok('Keymaps copied!', filename_, '', '')
 
 def keys_help(filename):
+	name = 'keys_help' ; printpoint = ""
 	from shared_modules3 import *
-	name = filename ; url = filename ; mode = 4 ; iconimage = "" ; desc = "" ; num = "" ; viewtype = "" ; fanart = ""
-	PlayVideos(name, mode, url, iconimage, desc, num, fanart)
-	#notification('1','','',1000)
+	if filename == 'Arcade': url = '&youtube_id=L12S_XuO9kQ'
+	elif filename == 'Nintendo': url = '&youtube_id=HrxGGOB8W8M'
+	elif filename == 'Nintendo 64': url = '&youtube_id=6U6435hKBnI'
+	elif filename == 'Nintendo DS': url = '&youtube_id=OsTg_-3fAQk'
+	elif filename == 'Sega Genesis': url = '&youtube_id=H2tOwo4f0AE'
+	elif filename == 'Sega Master System': url = '&youtube_id=DcDqe4UmoJI'
+	elif filename == 'Sony Playstation': url = '&youtube_id=XHr-svFqDm0'
+	elif filename == 'Super Nintendo': url = '&youtube_id=zLHY2ImgHRM'
+	elif filename == 'TurboGrafx 16': url = '&youtube_id=evg1Q6Ly3AY'
+	else:
+		url = ''
+		printpoint = printpoint + '9'
+		notification(addonString(30035).encode('utf-8'),"","",3000)
+	name_ = filename ; mode = 4 ; iconimage = "" ; desc = "" ; num = "" ; viewtype = "" ; fanart = ""
+	if '9' in printpoint:
+		pass
+	else:
+		PlayVideos(name_, mode, url, iconimage, desc, num, fanart)
+	
+	text = "filename" + space2 + str(filename)
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 	
 def setconfig(force=False):
 	name = 'setconfig' ; printpoint = "" ; extra = ""

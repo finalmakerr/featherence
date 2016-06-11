@@ -671,7 +671,7 @@
 				  <height>35</height>
 				  <textcolor>white2</textcolor>
 				  <label>$VAR[VideoInformation1]</label>
-				  <visible>Skin.HasSetting(ShowDVDCases) | !IsEmpty(Control.GetLabel(11156))</visible>
+				  <visible>Skin.HasSetting(ShowDVDCases) | !IsEmpty(Control.GetLabel(11156)) | !Window.IsVisible(MyVideoNav.xml)</visible>
 				</control>
 			    <include>PVRprogress</include>
 			</control>
@@ -690,7 +690,7 @@
 				 <height>312</height>
 				 <width>237</width>
 				 <texture colordiffuse="yellow">misc/dvdcases/dvdcases.png</texture>
-				 <visible>IsEmpty(Control.GetLabel(11156))</visible>
+				 <visible>IsEmpty(Control.GetLabel(11156)) + Window.IsVisible(MyVideoNav.xml)</visible>
 				 <visible>!Skin.HasSetting(ShowDVDCases)</visible>
 				 <visible>!SubString(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)"</visible>
 				</control>
@@ -704,7 +704,7 @@
 				  <height>35</height>
 				  <textcolor>yellow</textcolor>
 				  <label>$VAR[VideoInformation1]</label>
-				  <visible>Skin.HasSetting(ShowDVDCases) | !IsEmpty(Control.GetLabel(11156))</visible>
+				  <visible>Skin.HasSetting(ShowDVDCases) | !IsEmpty(Control.GetLabel(11156)) | !Window.IsVisible(MyVideoNav.xml)</visible>
 				</control>
 			    <control type="group" description="מסגרת סמן בחירה">
 				  <control type="image">
@@ -768,7 +768,7 @@
 	  <texture colordiffuse="ff100c08">buttons/ButtonA0.png</texture>
 	  <aspectratio>scale</aspectratio>
 	  <visible>!IsEmpty(ListItem.Label) + !StringCompare(ListItem.Label,..)</visible>
-	  <visible>Skin.HasSetting(ShowDVDCases) | !IsEmpty(Control.GetLabel(11156))</visible>
+	  <visible>Skin.HasSetting(ShowDVDCases) | !IsEmpty(Control.GetLabel(11156)) | !Window.IsVisible(MyVideoNav.xml)</visible>
 	</control>
 	<control type="image" description="סמן מידע">
 	  <aspectratio>keep</aspectratio>
@@ -836,7 +836,7 @@
 			  <textcolor>white2</textcolor>
 			  <scroll>false</scroll>
 			  <label>$VAR[VideoInformation1]</label>
-			  <visible>!Skin.HasSetting(ShowDVDCases2) | !IsEmpty(Control.GetLabel(11156))</visible>
+			  <visible>!Skin.HasSetting(ShowDVDCases2) | !IsEmpty(Control.GetLabel(11156)) | !Window.IsVisible(MyVideoNav.xml)</visible>
 			</control>		
 			<control type="label" description="תאריך/שנה">
 			  <animation condition="true" effect="fade" end="50" time="200">Conditional</animation>
@@ -867,9 +867,9 @@
 			 <height>472</height>
 			 <width>380</width>
 			 <texture colordiffuse="yellow">misc/dvdcases/dvdcases.png</texture>
-			 <visible>IsEmpty(Control.GetLabel(11156))</visible>
+			 <visible>IsEmpty(Control.GetLabel(11156)) + Window.IsVisible(MyVideoNav.xml)</visible>
 			 <visible>Skin.HasSetting(ShowDVDCases2)</visible>
-			 <visible>!SubString(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)"</visible>
+			 <visible>!SubString(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)</visible>
 			</control>
 			<control type="label" description="כותרת">
 			  <animation condition="Skin.HasSetting(ShowDVDCases2)" effect="fade" start="90" end="90" time="0">Conditional</animation>
@@ -881,7 +881,7 @@
 			  <height>35</height>
 			  <scroll>false</scroll>
 			  <label>$VAR[VideoInformation1]</label>
-			  <visible>!Skin.HasSetting(ShowDVDCases2) | !IsEmpty(Control.GetLabel(11156))</visible>
+			  <visible>!Skin.HasSetting(ShowDVDCases2) | !IsEmpty(Control.GetLabel(11156)) | !Window.IsVisible(MyVideoNav.xml)</visible>
 			</control>
 			<control type="label" description="תאריך תמונה">
 			  <include>Fade3</include>
@@ -956,7 +956,7 @@
 	  <texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
 	  <visible>!IsEmpty(ListItem.Label) + !StringCompare(ListItem.Label,..)</visible>
 	  <width>308</width>
-	  <visible>!Skin.HasSetting(ShowDVDCases2) | !IsEmpty(Control.GetLabel(11156))</visible>
+	  <visible>!Skin.HasSetting(ShowDVDCases2) | !IsEmpty(Control.GetLabel(11156)) | !Window.IsVisible(MyVideoNav.xml)</visible>
 	</control>
 	<control type="image" description="אייקון">
 	  <include>Fade8</include>

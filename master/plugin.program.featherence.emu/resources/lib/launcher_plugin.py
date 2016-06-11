@@ -74,9 +74,6 @@ SEARCH_TRAILER_COMMAND = "%%SEARCH_TRAILER%%"
 __settings__ = Addon( id="plugin.program.featherence.emu" )
 __lang__ = __settings__.getLocalizedString
 
-def __language__(string):
-    return __lang__(string).encode('utf-8','ignore')
-
 # Main code
 from shared_variables import *
 from shared_modules import *
@@ -262,7 +259,7 @@ class Main:
                         elif (sys.platform.startswith('darwin')):
                             os.system("\"%s\" %s " % (launcher["application"], arguments))
                         else:
-                            xbmc_notify(addonName+" - "+__language__( 30612 ), __language__( 30609 ),3000)
+                            notification(addonName + " - " + addonString(30612).encode('utf-8'),addonString(30609).encode('utf-8'),"",3000)
                     xbmc.sleep(self.settings[ "start_tempo" ])
                     if (launcher["minimize"] == "true"):
                         _toogle_fullscreen()
@@ -276,7 +273,7 @@ class Main:
                     except:
 						pass
                 else:
-                    xbmc_notify(addonName+" - "+__language__( 30612 ), __language__( 30611 ) % os.path.basename(launcher["application"]),3000)
+                    notification(addonName + " - " + addonString(30612).encode('utf-8'),addonString(30611).encode('utf-8') % os.path.basename(launcher["application"]),"",3000)
 
     def _get_settings( self ):
         # get the users preference settings
@@ -310,7 +307,7 @@ class Main:
                                 try:
                                     filesnames = os.listdir(temprompath)
                                 except:
-                                    xbmc_notify(addonName+" - "+__language__( 30612 ), __language__( 30610 ),3000)
+                                    notification(addonName + " - " + addonString(30612).encode('utf-8'),addonString(30610).encode('utf-8'),"",3000)
                                 namestem = cleanromname[:-len(ext3)]
 
                                 for filesname in filesnames:
@@ -406,7 +403,7 @@ class Main:
                                 elif (sys.platform.startswith('darwin')):
                                     os.system("\"%s\" %s " % (application, arguments))
                                 else:
-                                    xbmc_notify(addonName+" - "+__language__( 30612 ), __language__( 30609 ),3000)
+                                    notification(addonName + " - " + addonString(30612).encode('utf-8'),addonString(30609).encode('utf-8'),"",3000)
                             xbmc.sleep(self.settings[ "start_tempo" ])
                             try:
                                 xbmc.enableNavSounds(True)                            
@@ -421,7 +418,7 @@ class Main:
                     else:
                         notification(addonString(30611).encode('utf-8') % os.path.basename(rom["filename"]),'You should download the game first!','',3000)
                 else:
-                    xbmc_notify(addonName+" - "+__language__( 30612 ), __language__( 30611 ) % os.path.basename(launcher["application"]),3000)
+                    notification(addonName + " - " + addonString(30612).encode('utf-8'),addonString(30611).encode('utf-8') % os.path.basename(launcher["application"]),"",3000)
 
     def get_xml_source( self, xmlpath ):
         try:
@@ -533,7 +530,7 @@ class Main:
 						self._add_rom(launcherID, rom_name, roms[key]["filename"], roms[key]["gamesys"], roms[key]["thumb"], defined_fanart, roms[key]["trailer"], roms[key]["custom"], roms[key]["genre"], roms[key]["release"], roms[key]["studio"], roms[key]["plot"], roms[key]["altapp"], roms[key]["altarg"], len(roms), key, False, "")
 					xbmcplugin.endOfDirectory( handle=int( self._handle ), succeeded=True, cacheToDisc=False )
 				else:
-					xbmc_notify(addonName, __language__( 30349 ),3000)
+					notification(addonName + " - " + addonString(30349).encode('utf-8'),"","",3000)
 
     def _add_category(self, name, thumb, fanart, genre, plot, total, key):
         commands = []
@@ -612,12 +609,12 @@ class Main:
 
     def _find_roms( self, is_launcher ):
         dialog = xbmcgui.Dialog()
-        type = dialog.select(__language__( 30400 ), [__language__( 30401 ),__language__( 30402 ),__language__( 30403 ),__language__( 30404 ),__language__( 30405 )])
+        type = dialog.select(addonString(30400).encode('utf-8'), [addonString(30401).encode('utf-8'),addonString(30402).encode('utf-8'),addonString(30403).encode('utf-8'),addonString(30404).encode('utf-8'),addonString(30405).encode('utf-8')])
         type_nb = 0
 
         #Search by Title
         if (type == type_nb ):
-            keyboard = xbmc.Keyboard("", __language__( 30036 ))
+            keyboard = xbmc.Keyboard("", addonString(30036).encode('utf-8'))
             keyboard.doModal()
             if (keyboard.isConfirmed()):
                 search = keyboard.getText()
@@ -632,7 +629,7 @@ class Main:
             search = []
             search = _search_category(self,"release")
             dialog = xbmcgui.Dialog()
-            selected = dialog.select(__language__( 30406 ), search)
+            selected = dialog.select(addonString(30406).encode('utf-8'), search)
             if (not selected == -1 ):
                 if (is_launcher):
                     return "%s?%s/%s" % (self._path, search[selected], SEARCH_DATE_COMMAND), search[selected]
@@ -645,7 +642,7 @@ class Main:
             search = []
             search = _search_category(self,"gamesys")
             dialog = xbmcgui.Dialog()
-            selected = dialog.select(__language__( 30407 ), search)
+            selected = dialog.select(addonString(30407).encode('utf-8'), search)
             if (not selected == -1 ):
                 if (is_launcher):
                     return "%s?%s/%s" % (self._path, search[selected], SEARCH_PLATFORM_COMMAND), search[selected]
@@ -658,7 +655,7 @@ class Main:
             search = []
             search = _search_category(self,"studio")
             dialog = xbmcgui.Dialog()
-            selected = dialog.select(__language__( 30408 ), search)
+            selected = dialog.select(addonString(30408).encode('utf-8'), search)
             if (not selected == -1 ):
                 if (is_launcher):
                     return "%s?%s/%s" % (self._path, search[selected], SEARCH_STUDIO_COMMAND), search[selected]
@@ -671,7 +668,7 @@ class Main:
             search = []
             search = _search_category(self,"genre")
             dialog = xbmcgui.Dialog()
-            selected = dialog.select(__language__( 30409 ), search)
+            selected = dialog.select(addonString(30409).encode('utf-8'), search)
             if (not selected == -1 ):
                 if (is_launcher):
                     return "%s?%s/%s" % (self._path, search[selected], SEARCH_GENRE_COMMAND), search[selected]
@@ -746,9 +743,6 @@ def MyDialog(img_list):
         return False
     del w
 
-def xbmc_notify(title,text,time):
-    xbmc.executebuiltin("XBMC.Notification(%s,%s,%s,%s)" % (title,text,time,os.path.join(addonPath,"icon.png")))
-    
 def get_encoding():
     try:
         return sys.getfilesystemencoding()
@@ -760,7 +754,7 @@ def _update_cache(file_path):
     try:
         shutil.copy2( file_path.decode(get_encoding(),'ignore'), cached_thumb.decode(get_encoding(),'ignore') )
     except OSError:
-        xbmc_notify(addonName+" - "+__language__( 30612 ), __language__( 30608 ),3000)
+        notification(addonName + " - " + addonString(30612).encode('utf-8'),addonString(30608).encode('utf-8'),"",3000)
     xbmc.executebuiltin("XBMC.ReloadSkin()")
 
 def title_format(self,title):
@@ -828,7 +822,7 @@ def _search_category(self,category):
             if (len(self.launchers[key]["roms"]) > 0) :
                 for keyr in sorted(self.launchers[key]["roms"].iterkeys()):
                     if ( self.launchers[key]["roms"][keyr][category] == "" ):
-                        search.append("[ %s ]" % __language__( 30410 ))
+                        search.append("[ %s ]" % addonString(30410).encode('utf-8'))
                     else:
                         search.append(self.launchers[key]["roms"][keyr][category])
     search = list(set(search))
@@ -853,7 +847,7 @@ def _find_category_roms( self, search, category ):
         for launcherID in sorted(self.launchers.iterkeys()):
             selectedLauncher = self.launchers[launcherID]
             roms = selectedLauncher["roms"]
-            notset = ("[ %s ]" % __language__( 30410 ))
+            notset = ("[ %s ]" % addonString(30410).encode('utf-8'))
             text = search.lower()
             empty = notset.lower()
             if (len(roms) > 0) :

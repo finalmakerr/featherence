@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+
+msgctxt "#30035"
+msgid "Video is missing!"
+msgstr "וידאו חסר!"
+
+msgctxt "#30036"
+msgid "Enter the file title to search..."
+msgstr "הזן שם משחק לחיפוש"
+
+msgctxt "#30100"
+msgid "%s in-game keys"
+msgstr "%s מספר מזהה משחק"
+
+msgctxt "#30124"
+msgid "Miscellaneous"
+msgstr "שונות"
+
+msgctxt "#30175"
+msgid "Disable LIRC (Linux)"
+msgstr "בטל LIRC (לינוקס)"
+
+msgctxt "#30180"
+msgid "Delay (ms)"
+msgstr "Delay (ms)"
+
+msgctxt "#30183"
+msgid "Advanced"
+msgstr "מתקדם"
+
+msgctxt "#30349"
+msgid "Items list is empty : Add items first."
+msgstr "פריטים ברשימה ריקים: יש להוסיף פריטים."
+
+msgctxt "#30400"
+msgid "Search items..."
+msgstr "חיפוש פריטים..."
+
+msgctxt "#30401"
+msgid "By Title"
+msgstr "לפי שם משחק"
+
+msgctxt "#30402"
+msgid "By Release Date"
+msgstr "לפי תאריך הוצאה"
+
+msgctxt "#30403"
+msgid "By Platform"
+msgstr "לפי פלטפורמה"
+
+msgctxt "#30404"
+msgid "By Studio"
+msgstr "לפי יוצר"
+
+msgctxt "#30405"
+msgid "By Genre"
+msgstr "לפי סגנון"
+
+msgctxt "#30406"
+msgid "Select a Release date..."
+msgstr "בחר תאריך הוצאה..."
+
+msgctxt "#30407"
+msgid "Select a Platform..."
+msgstr "בחר פלטפורמה..."
+
+msgctxt "#30408"
+msgid "Select a Studio..."
+msgstr "בחר יוצר..."
+
+msgctxt "#30409"
+msgid "Select a Genre..."
+msgstr "בחר סגנון משחק..."
+
+msgctxt "#30410"
+msgid "Not Set"
+msgstr "לא מוגדר"
+
+msgctxt "#30411"
+msgid "Audio Settings"
+msgstr "הגדרות אודיו"
+
+msgctxt "#30608"
+msgid "Cannot update cached image."
+msgstr "Cannot update cached image."
+
+msgctxt "#30609"
+msgid "Cannot start application."
+msgstr "Cannot start application."
+
+msgctxt "#30610"
+msgid "Cannot list directory items."
+msgstr "Cannot list directory items."
+
+msgctxt "#30611"
+msgid "File %s not found."
+msgstr "File %s not found."
+
+msgctxt "#30612"
+msgid "Error"
+msgstr "Error"
+
+msgctxt "#30613"
+msgid "Target category not found."
+msgstr "Target category not found."
+
+msgctxt "#30614"
+msgid ""
+msgstr ""
