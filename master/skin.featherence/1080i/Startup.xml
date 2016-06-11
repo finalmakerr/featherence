@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">2</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
   <onload condition="!Skin.String(StartUpVideo)">AlarmClock(startup,ReplaceWindow(0),00:01,silent)</onload>
   <onload condition="Skin.String(StartUpVideo)">ReplaceWindow(0)</onload>
   <onunload condition="Skin.String(StartUpVideo) + !Skin.HasSetting(StartUpVideoFullScreen)">PlayMedia($INFO[Skin.String(StartUpVideo)])</onunload>

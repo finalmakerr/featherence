@@ -7,6 +7,8 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
+	#xbmc.executebuiltin('ActivateWindow(MusicFiles,root)')
+	xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
 	#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
 	#installaddon('resource.images.weathericons.outline', update=False)
 	#installaddon('resource.images.weatherfanart.single,update=False')
@@ -32,7 +34,7 @@ def mode5(value, admin, name, printpoint):
 	if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
 	
 	if xbmc.getSkinDir() == 'skin.featherence':
-		mode215('_',admin,'','')
+		mode215('_','','','')
 		setsetting_custom1('script.featherence.service','Skin_UpdateLog',"true")
 		Skin_UpdateLog = 'true'
 		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)')
@@ -753,7 +755,7 @@ def mode40(value, admin, name, printpoint):
 		count = 0
 
 	if printpoint == '1':
-		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=RESET)') ; xbmc.sleep(7000)
+		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_&value2=reset)') ; xbmc.sleep(7000)
 		xbmc.executebuiltin('Action(Back)') ; xbmc.sleep(500) ; customhomecustomizerW = xbmc.getCondVisibility('Window.IsVisible(CustomHomeCustomizer.xml)')
 		if not customhomecustomizerW: xbmc.executebuiltin('ActivateWindow(1171)')
 	
@@ -1555,7 +1557,7 @@ def mode214(value, admin, name, printpoint):
 
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
-def mode215(value, admin, name, printpoint):
+def mode215(value, value2, name, printpoint):
 	from variables2 import *
 	extra2 = "" ; id = ""
 	exe = printlog(title="test", printpoint="", text="", level=0, option="")
@@ -1563,118 +1565,119 @@ def mode215(value, admin, name, printpoint):
 	if value != "": notification_common("2")
 	
 	'''הגדרות'''
-	if value != "":
+	x = '18' ; id = x
+	if value == "_" or value == x:
 		'''ראשי'''
-		x = '18' ; id = x
 		if id != "" and id != None:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(5))
-			if value == 'RESET': setSkinSetting('0','icon'+id,'')		
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(5))
+			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'')		
 			'''---------------------------'''
 	
 	'''כיבוי'''
-	if value != "":
+	x = '19' ; id = x
+	if value == "_" or value == x:
 		'''ראשי'''
-		x = '19' ; id = x
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(13005))
-			if value == 'RESET': setSkinSetting('0','icon'+id,'')
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(13005))
+			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'')		
 			'''---------------------------'''
 			
 	'''סרטים'''
-	if value != "":
+	x = '90' ; id = idT2.get(x)
+	if value == "_" or value == x:
 		'''ראשי'''
-		x = '90' ; id = idT2.get(x)
 		if id != "" and id != None:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(342))
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(342))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(Videos,MovieTitles,return)')
-			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/movies.png')		
+			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/movies.png')		
 			'''---------------------------'''
 	
 	'''סדרות'''
-	if value != "":
+	x = '91' ; id = idT2.get(x)
+	if value == "_" or value == x:
 		'''ראשי'''
-		x = '91' ; id = idT2.get(x)
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(20343))
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(20343))
 			
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(VideoLibrary,TVShowTitles,return)')
-			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/tvshows.png')
+			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/tvshows.png')
 			'''---------------------------'''
 
 	'''ערוצי טלוויזיה'''
-	if value != "":
+	x = '92' ; id = idT2.get(x)
+	if value == "_" or value == x:
 		'''ראשי'''
-		x = '92' ; id = idT2.get(x)
 		if id != "" and id != None:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(19023))
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(19023))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(TVChannels)')
-			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/LiveTV.png')
+			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/LiveTV.png')
 			'''---------------------------'''
 	
 	'''ילדים'''
-	if value != "":
+	x = '93' ; id = idT2.get(x)
+	if value == "_" or value == x:
 		'''ראשי'''
-		x = '93' ; id = idT2.get(x) ; background = backgroundT.get('icon'+x)
+		background = backgroundT.get('icon'+x)
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(31814))
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(31814))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.kids,return)')
-			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/kids.png')
+			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/kids.png')
 			'''---------------------------'''	
 			
 	'''מוזיקה'''
-	if value != "":
+	x = '94' ; id = idT2.get(x)
+	if value == "_" or value == x:
 		'''ראשי'''
-		x = '94' ; id = idT2.get(x)
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(2))
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(2))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.music,return)')
-			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/music.png')
+			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/music.png')
 			'''---------------------------'''
 	
 	'''מעודפים'''
-	if value != "":
+	x = '95' ; id = idT2.get(x)
+	if value == "_" or value == x:
 		'''ראשי'''
-		x = '95' ; id = idT2.get(x)
 		if id != "" and id != None and 1 + 1 == 2:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(1036))
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(1036))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(134)')
-			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/star.png')
+			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/star.png')
 			'''---------------------------'''	
 	
 	'''תמונות'''
-	if value != "":
+	x = '96' ; id = idT2.get(x)
+	if value == "_" or value == x:
 		'''ראשי'''
-		x = '96' ; id = idT2.get(x)
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(1))
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(1))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(Pictures)')
-			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/pictures.png')
+			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/pictures.png')
 			'''---------------------------'''
 	
 	'''מזג אוויר'''
-	if value != "":
+	x = '97' ; id = idT2.get(x)
+	if value == "_" or value == x:
 		'''ראשי'''
-		x = '97' ; id = idT2.get(x)
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,localize(8))
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(8))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(MyWeather.xml)')
-			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/weather.png')
+			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/weather.png')
 			'''---------------------------'''
 			
 	''''''
-	if value != "":
+	x = '98' ; id = idT2.get(x)
+	if value == "_" or value == x:
 		'''ראשי'''
-		x = '98' ; id = idT2.get(x)
 		if id != "" and id != None and ( systemplatformwindows or systemplatformlinux and xbmc.getCondVisibility('System.HasAddon(service.openelec.settings)') ):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			setSkinSetting('0','label'+id,"")
@@ -1683,14 +1686,14 @@ def mode215(value, admin, name, printpoint):
 			'''---------------------------'''	
 
 	'''דוקו'''
-	if value != "":
+	x = '99' ; id = idT2.get(x)
+	if value == "_" or value == x:
 		'''ראשי'''
-		x = '99' ; id = idT2.get(x)
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value == 'RESET' or value == 'LABEL': setSkinSetting('0','label'+id,addonString(32803).encode('utf-8'))
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,addonString(32803).encode('utf-8'))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.docu,return)')
-			if icon == "" or value == 'RESET': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/animals.png')
+			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/animals.png')
 			'''---------------------------'''
 	
 	text = "value" + space2 + str(value) + space + "id" + space2 + str(id) + newline + \
@@ -1985,10 +1988,11 @@ def mode233(value, admin, name, printpoint):
 	'property_temp2' + space2 + to_utf8(property_temp2)
 	printlog(title='mode233', printpoint=printpoint, text=text, level=0, option="")
 
-def mode235(value, admin, name, printpoint):
+def mode235(value, value2, name, printpoint):
 	'''------------------------------
 	---Default-Icon/Background-------
 	------------------------------'''
+	
 	setProperty('TEMP2', 'default', type="home") ; xbmc.executebuiltin('Dialog.Close(filebrowser)')
 	if property_temp == 'background':
 		printpoint = printpoint + '1'
@@ -2007,7 +2011,7 @@ def mode235(value, admin, name, printpoint):
 		elif property_buttonid_ != "":
 			printpoint = printpoint + '5'
 			setSkinSetting('0',property_temp+str(property_buttonid_),"")
-			mode215(property_buttonid_, admin, '', '')
+			mode215(property_buttonid_, 'RESET-ICON', '', '')
 	
 	else: printpoint = printpoint + '6'
 	
@@ -2018,7 +2022,7 @@ def mode235(value, admin, name, printpoint):
 	'property_temp2' + space2 + str(property_temp2)
 	
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
-
+	
 def mode512(value):
 	'''------------------------------
 	---INTERNET-BUTTON---------------

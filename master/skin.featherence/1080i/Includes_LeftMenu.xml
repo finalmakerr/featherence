@@ -52,7 +52,7 @@
 		<include condition="Window.IsVisible(MyPics.xml)">LeftMenuMyPics</include>
 		<include condition="Window.IsVisible(MyWeather.xml)">LeftMenuMyWeather</include>
 		<include condition="Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)">LeftMenuSettings</include>
-		<include condition="Window.IsVisible(MyMusicNav.xml) | Window.IsVisible(MyMusicSongs.xml)">LeftMenuMyMusicNav</include>
+		<include condition="Window.IsVisible(MyMusicNav.xml)">LeftMenuMyMusicNav</include>
 		<include condition="Window.IsVisible(AddonBrowser.xml)">LeftMenuAddonBrowser</include>
 		<include condition="Window.IsVisible(MyPrograms.xml)">LeftMenuMyPrograms</include>
 		<include condition="Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml)">LeftMenuMyPVR</include>

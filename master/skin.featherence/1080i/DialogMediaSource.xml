@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="129"> <!-- הוסף מקור -->
-  
   <defaultcontrol always="true">11</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
   <controls>
 	<include>TopInformation</include>
     <control type="group" description="">

@@ -886,7 +886,7 @@
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/magicwand.png</thumb>
 		<property name="rinfo">$LOCALIZE[31006]</property>
-		<onclick>RunScript(script.featherence.service,,?mode=215&amp;value=RESET)</onclick>
+		<onclick>RunScript(script.featherence.service,,?mode=215&amp;value=_&amp;value2=RESET)</onclick>
 		<visible>Container(100).Hasfocus(25)</visible>
 	  </item>
 	  
@@ -1194,7 +1194,7 @@
 		<visible>Container(100).Hasfocus(4)</visible>
 	  </item>
 	  <item id="42" description="תמונות">
-		<label>1038</label>
+		<label>1</label>
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/pictures.png</thumb>
 		<property name="rinfo"></property>
@@ -1214,7 +1214,7 @@
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/music.png</thumb>
 		<property name="rinfo"></property>
-		<onclick>ActivateWindow(MusicFiles,root)</onclick>
+		<onclick>ActivateWindow(MusicFiles,special://userdata/library/music/)</onclick>
 		<visible>Container(100).Hasfocus(4)</visible>
 	  </item>
 	  <item id="45" description="מנהל קבצים">

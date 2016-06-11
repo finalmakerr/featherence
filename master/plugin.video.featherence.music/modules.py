@@ -21,7 +21,7 @@ def CATEGORIES():
 	'''---------------------------'''
 	addDir(addonString(30018).encode('utf-8'),'',118,featherenceserviceicons_path + 'classical.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30018).encode('utf-8')),'1',50, getAddonFanart(118)) #Classical Music
 	addDir(addonString(30019).encode('utf-8'),'',119,featherenceserviceicons_path + 'radio.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30019).encode('utf-8')),'1',50, getAddonFanart(119)) #Radio
-	addDir(localize(10516),'ActivateWindow(MusicFiles,root)',201,featherenceserviceicons_path + 'music.png',"Local Kodi's music library",'1',50, getAddonFanart(100)) #
+	addDir(localize(10516),'ActivateWindow(MusicFiles,special://userdata/)',201,featherenceserviceicons_path + 'music.png',"Local Kodi's music library",'1',50, getAddonFanart(100)) #
 	
 def CATEGORIES100(name, iconimage, desc, fanart):
 	'''------------------------------

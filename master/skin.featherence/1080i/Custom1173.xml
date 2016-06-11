@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1173">
   <defaultcontrol always="true">100</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
   <!--<include condition="!StringCompare(Window(home).Property(TEMP2),SKIP)">onunload_ClearProperty_MainMenu</include>
   <include condition="!StringCompare(Window(home).Property(TEMP2),SKIP)">onunload_ClearProperty_SubMenu</include>-->
   <controls>

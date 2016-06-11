@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window description="(7)">
   <defaultcontrol always="true">9001</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
   <controls>
     <include>BlackBackground</include>
     <control type="image" description="Line Split"> <!--קו תחתון-->

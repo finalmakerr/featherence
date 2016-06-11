@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window description="(503)">
   <defaultcontrol allways="true">50</defaultcontrol>
-  
-  <allowoverlay>no</allowoverlay>
   <onload>close</onload>
   <views>50</views>
   <controls>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="3">
   <defaultcontrol always="true">20</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
   <onunload condition="Skin.String(FileManagerFocus)">Skin.SetString(FileManagerFocus,)</onunload>
   <controls>
     <include>BlackBackground</include>

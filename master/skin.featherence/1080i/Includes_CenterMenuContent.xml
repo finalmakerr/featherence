@@ -188,34 +188,34 @@
 	<content>plugin://script.extendedinfo?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=10</content>
   </include>
   
-  <include name="CenterMenuContent_DialogPVRGuideInfo" description="כיבוי">
+  <include name="CenterMenuContent_DialogPVRInfo" description="כיבוי">
 	<control type="button" id="7" description="Ok">
 	  <width>480</width>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
 	  <label>--></label>
-	  <visible>Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
+	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
 	</control>
 	<control type="button" id="4" description="מציאת דומים">
 	  <width>480</width>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
 	  <label>19003</label>
-	  <visible>Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
+	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
 	</control>
 	<control type="button" id="5" description="נגן ערוץ">
 	  <width>480</width>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
 	  <label>$LOCALIZE[208] $LOCALIZE[19029]</label>
-	  <visible>Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
+	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
 	</control>
 	<control type="button" id="6" description="הקלטה">
 	  <width>480</width>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
 	  <label>$LOCALIZE[264]</label>
-	  <visible>Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
+	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
 	</control>
 	<!--
 	<control type="button" description="Switch to channel button">
@@ -224,7 +224,7 @@
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
 	  <label>Switch to channel button</label>
 	  <visible>false</visible>
-	  <visible>Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
+	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
 	</control>
 	-->
   </include>

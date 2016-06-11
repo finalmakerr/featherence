@@ -42,7 +42,7 @@
 		  <onclick>Close</onclick>
 		  <visible>false</visible>
 		</control>
-		<include description="מידע PVR" condition="Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml)">CenterMenuContent_DialogPVRGuideInfo</include>
+		<include description="מידע PVR" condition="Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml)">CenterMenuContent_DialogPVRInfo</include>
 	  </control>
     </control>
   </include>

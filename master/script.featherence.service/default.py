@@ -109,7 +109,9 @@ elif mode == 17:
 	#mode17(admin, name, printpoint)
 	'''---------------------------'''
 
-elif mode == 21: CreatePL(value, value2)
+elif mode == 21:
+	xbmc.sleep(2000)
+	CreatePL(value, value2)
 	
 elif mode == 22: mode22(value, value2, value3, value4, value5, value6)
 
@@ -590,7 +592,7 @@ elif mode >= 200 and mode <= 249:
 					xbmc.sleep(500)
 					returned_ = dialogyesno(addonString_servicefeatherence(32104).encode('utf-8') % (systemlanguage), addonString_servicefeatherence(32105).encode('utf-8') % (systemlanguage))
 					if returned_ == 'skip':
-						xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=LABEL)')
+						xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_&value2=RESET-LABEL)')
 						
 					folder_ = 'Featherence'
 					path_ = os.path.join(featherenceserviceaddondata_media_path, folder_, '')
@@ -656,7 +658,7 @@ elif mode >= 200 and mode <= 249:
 		---SET-DEFAULT-BUTTONS-----------
 		------------------------------'''
 		name = "SET-DEFAULT-BUTTONS"
-		if property_reloadskin == "": mode215(value, admin, name, printpoint)
+		if property_reloadskin == "": mode215(value, value2, name, printpoint)
 		'''---------------------------'''
 	
 	elif mode == 216:

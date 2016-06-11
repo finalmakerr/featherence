@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="10035">
   <defaultcontrol always="true">100</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
   <controls>
   	<control type="group" description="">
 	  <include>Backgrounds3</include>

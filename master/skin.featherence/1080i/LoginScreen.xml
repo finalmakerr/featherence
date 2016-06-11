@@ -2,7 +2,6 @@
 <window id="29">
   <onload condition="Player.HasMedia">Action(Stop)</onload>
   <defaultcontrol always="true">9000</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
   <controls>
     <include>Backgrounds1</include>
 	<include>TopInformation</include>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1139" description="תפריט משני_כפתורים">
   <defaultcontrol always="true">9005</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
   <include>onload_CheckProperty_SubMenu</include>
   <include>onunload_ClearProperty_SubMenu</include>
   <controls>

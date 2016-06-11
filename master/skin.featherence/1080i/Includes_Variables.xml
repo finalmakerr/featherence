@@ -270,7 +270,7 @@
 	<value description="Home-Movies" condition="Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(year))">$INFO[Container(311).ListItem.Property(Year)]</value>
 	<value description="Home-TV" condition="Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(year))">$INFO[Container(312).ListItem.Property(Year)]</value>
 	<value condition="[StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) | [Container.Content(Seasons) + SubString(Container.FolderPath,videodb://tvshows/)]] + !IsEmpty(Window(home).Property(ListItemYear))">$INFO[Window(home).Property(ListItemYear)]</value>
-	<value condition="!IsEmpty(MusicPlayer.Year) + [Window.IsVisible(MyMusicNav.xml) | Window.IsVisible(MyMusicSongs.xml)]">$INFO[MusicPlayer.Year]</value>
+	<value condition="!IsEmpty(MusicPlayer.Year) + Window.IsVisible(MyMusicNav.xml)">$INFO[MusicPlayer.Year]</value>
 	<value condition="!IsEmpty(ListItem.Date) + !Window.IsVisible(MyPVRChannels.xml) + !Window.IsVisible(MyPVRGuide.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !ListItem.HasEpg">$INFO[ListItem.Date]</value>
   </variable>
   <variable name="TopVideoInformation3" description="דירוג וידאו/אודיו">
