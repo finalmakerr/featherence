@@ -494,13 +494,13 @@ def CleanString2(x, comma=False):
 	return x2
 		
 def setPath(type=0,mask="", folderpath="", original=True):
-	returned = "" ; count = 0
+	name = 'setPath' ; printpoint = '' ; returned = "" ; count = 0
 	folderpath = to_utf8(folderpath)
 	if mask == 'pic': mask = '.jpg|.jpeg|.JPEG|.bmp|.gif|.GIF|.png|.PNG'
 	elif mask == 'music': mask = '.mp3|.flac|.wav|.m3u'
 	if type == 0: xbmc.executebuiltin('Skin.SetPath(TEMP)')
 	elif type == 1: xbmc.executebuiltin('Skin.SetFile(TEMP,'+mask+','+folderpath+')')
-	elif type == 2: xbmc.executebuiltin('Skin.SetImage(TEMP,'+mask+','+folderpath+')')
+	elif type == 2: xbmc.executebuiltin('Skin.SetImage(TEMP,'+folderpath+')')
 	xbmc.sleep(500); dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
 	
 	while count < 10 and not dialogfilebrowserW and not xbmc.abortRequested:
@@ -520,6 +520,13 @@ def setPath(type=0,mask="", folderpath="", original=True):
 	elif original == True or x2_ == "": returned = x2
 	elif original == False: returned = x2_
 	
+	text = 'type' + space2 + str(type) + newline + \
+	'mask' + space2 + str(mask) + newline + \
+	'folderpath' + space2 + str(folderpath) + newline + \
+	'original' + space2 + str(original) + newline + \
+	'x2' + space2 + str(x2) + newline + \
+	'x2_' + space2 + str(x2_)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	return returned
 	
 def dialogkeyboard(input, heading, option, custom, set1, addon, force=False):

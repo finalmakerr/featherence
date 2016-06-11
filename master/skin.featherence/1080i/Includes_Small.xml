@@ -994,7 +994,7 @@
 	<control type="image" id="826" description="אינטרנט קווי / was bugged">
 	  <include>Control_Pos7</include>
 	  <visible>!Control.IsVisible(824) + !Control.IsVisible(825)</visible>
-	  <texture>badges/specials/lanmac.png</texture>
+	  <texture>badges/specials/wlan.png</texture>
 	  <visible>!Skin.String(TopInformationIcons) | SubString(Skin.String(TopInformationIcons),2)</visible>
 	</control>
 	<control type="image" id="829" description="TotalMouse">

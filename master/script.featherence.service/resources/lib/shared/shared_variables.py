@@ -60,7 +60,7 @@ featherenceservice_addondata_path = os.path.join(addondata_path,'script.feathere
 featherenceserviceaddondata_media_path = os.path.join(featherenceservice_addondata_path, 'media', '')
 featherenceservice_path = os.path.join(addons_path,'script.featherence.service','')
 featherenceserviceicons_path = os.path.join(featherenceservice_path, 'resources', 'icons', '')
-featherenceserviceicons_path_ = os.path.join(addons_path, 'script.featherence.service', 'resources', 'icons', '')
+featherenceservicebackgrounds_path = os.path.join(addons_path, 'resource.images.weatherfanart.single', 'resources', '')
 
 systemlanguage = xbmc.getInfoLabel('System.Language')
 containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')

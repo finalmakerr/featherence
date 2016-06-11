@@ -1793,7 +1793,7 @@ msgstr "בחן את הקישורים שלך לשגיאות"
 
 msgctxt "#32803"
 msgid "Documentary"
-msgstr ""
+msgstr "דוקומנטרי"
 
 #Languages"
 msgctxt "#32900"

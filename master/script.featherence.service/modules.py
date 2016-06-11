@@ -8,7 +8,8 @@ def mode0(admin, name, printpoint):
 	'''test'''
 	pass
 	#xbmc.executebuiltin('ActivateWindow(MusicFiles,root)')
-	xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
+	#xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
+	xbmc.executebuiltin('Skin.SetImage(TEMP,special://userdata/)')
 	#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
 	#installaddon('resource.images.weathericons.outline', update=False)
 	#installaddon('resource.images.weatherfanart.single,update=False')
@@ -755,7 +756,7 @@ def mode40(value, admin, name, printpoint):
 		count = 0
 
 	if printpoint == '1':
-		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_&value2=reset)') ; xbmc.sleep(7000)
+		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_&value2=RESET)') ; xbmc.sleep(7000)
 		xbmc.executebuiltin('Action(Back)') ; xbmc.sleep(500) ; customhomecustomizerW = xbmc.getCondVisibility('Window.IsVisible(CustomHomeCustomizer.xml)')
 		if not customhomecustomizerW: xbmc.executebuiltin('ActivateWindow(1171)')
 	
@@ -1956,7 +1957,7 @@ def mode233(value, admin, name, printpoint):
 				elif os.path.exists(x2_): path = x2_
 				elif os.path.exists(x2): path = x2
 				
-				else: path = featherenceserviceicons_path_
+				else: path = featherenceservicebackgrounds_path
 				#xbmc.executebuiltin('Skin.SetImage(background'+y+',,'+path+')')
 				returned_ = setPath(type=type,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
 				if property_temp2 == 'ok': setSkinSetting('0','background'+y,to_unicode(returned_))
@@ -1971,7 +1972,7 @@ def mode233(value, admin, name, printpoint):
 				elif os.path.exists(x2_): path = x2_
 				elif os.path.exists(x2): path = x2
 				
-				else: path = featherenceserviceicons_path_
+				else: path = featherenceserviceicons_path
 				#xbmc.executebuiltin('Skin.SetImage(icon'+y+',,'+path+')')
 				returned_ = setPath(type=2,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
 				if property_temp2 == 'ok': setSkinSetting('0','icon'+y,to_unicode(returned_))
