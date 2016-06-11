@@ -1,3 +1,42 @@
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_1P\ajax.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Sega Master System\_1P\Alex Kidd in Miracle World.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\genesis.plus.gx_libretro.dll
+Genesis Plus GX
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Sega Master System\_1P\After Burner.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\genesis.plus.gx_libretro.dll
+Genesis Plus GX
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_FUN\bublbobl.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_FUN\bublbob2.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_1P\congo.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_2P\2020bb.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_2P\aerofgt.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_2P\19xx.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_1P\aquajack.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_FUN\arkretrn.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_FUN\spuzbobl.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Nintendo\_1P\Adventures of Lolo 2.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\nestopia_libretro.dll
+Nestopia
 C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_4P\ga2.zip
 C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
 MAME 2014

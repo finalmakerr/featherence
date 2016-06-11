@@ -5,16 +5,17 @@ WIP - WORK IN PROGRESS
 - Horizontal view display position for multipages.
 - Return home preserve previous location.
 - Widget auto refresh on condition.
-- Last version of Isengard (Kodi 15) - We're moving to Jarvis only now!
 
 ------------------------
-Featherence v0.4.11 (xx-Jun-16)
+Featherence v0.5.0 (11-Jun-16)
 ------------------------
+***Jarvis (Kodi 16) will be supported now in Featherence Repo!
+Previous version of Kodi is available through http://offshore.git.com/finalmakerr***
 - Added download support for certain addons.
 - Added script.extendedinfo mod by Openeleq (Play/Add to library from various addons).
 - Major reduce of skin size.
 - Minor update of Featherence Emu's views.
-- Minor update of save build feature (including bug fix).
+- Minor update of save build feature.
 - Minor update of video OSD buttons.
 - Update autocomplete feature.
 - Update subtitles dialog window.

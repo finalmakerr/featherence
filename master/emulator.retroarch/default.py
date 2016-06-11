@@ -7,7 +7,7 @@ sys.path.insert(0, sharedlibDir2)
 
 from variables import *
 from modules import *
-
+	
 if systemplatformlinux:
 	fn = dialog.browse(1, 'retroarch', 'files')
 	os.system( "chmod a+rx " + emulator_file )

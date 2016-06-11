@@ -8,7 +8,9 @@ WIP - WORK IN PROGRESS
 Featherence Emu v0.0.6 (xx-Jun-16)
 ------------------------
 - Added adult contents.
+- Added hebrew translation.
 - Added keys help trailers per each console.
+- Code Aesthetic.
 - Update addon information.
 
 

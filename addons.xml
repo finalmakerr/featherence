@@ -341,9 +341,9 @@
   </extension>
 </addon>
 
-<addon id="skin.featherence" version="0.4.10" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.5.0" name="Featherence" provider-name="finalmakerr">
   <requires>
-    <import addon="xbmc.gui" version="5.9.0"/>
+    <import addon="xbmc.gui" version="5.10.0"/>
 	<import addon="script.featherence.service" version="0.2.14"/>
   </requires>
   <extension point="xbmc.gui.skin" effectslowdown="1.0" debugging="false">
