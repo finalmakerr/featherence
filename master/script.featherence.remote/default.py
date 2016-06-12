@@ -40,6 +40,9 @@ if mode == 5:
 	mode5(value)
 	'''---------------------------'''
 
+elif mode == 7:
+	copykeymaps()
+	
 elif mode == 27:
 	'''------------------------------
 	---Remote-Control----------------

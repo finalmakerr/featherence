@@ -10,6 +10,7 @@ WIP - WORK IN PROGRESS
 Featherence v0.5.1 (xx-Jun-16)
 ------------------------
 - Minor update of choosing icon/fanart method.
+- Minor update of skin's icons.
 
 ------------------------
 Featherence v0.5.0 (11-Jun-16)

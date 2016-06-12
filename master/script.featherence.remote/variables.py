@@ -50,3 +50,5 @@ else:
 		else: xbmc.executebuiltin('Notification(Unknown Error, www.facebook.com/groups/featherence, 2000)')
 		print 'TypeError: ' + str(TypeError)
 		sys.exit(1)
+		
+remotekeymaps_path = os.path.join(addonPath,'resources','keymaps','')

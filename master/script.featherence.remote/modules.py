@@ -193,3 +193,16 @@ def getRemote_Type(value):
 		Remote_Type = 'nec,rc-6'
 	
 	return Remote_Type
+	
+def copykeymaps():
+	returned = dialogyesno('Would you like to continue?','This action will overwrite your current related files!')
+	if returned == 'ok':
+		keymaps_path = os.path.join(userdata_path, 'keymaps', '')
+		copyfiles(remotekeymaps_path, keymaps_path)
+		xbmc.executebuiltin('Action(reloadkeymaps)')
+		
+		filename_ = ""
+		for file in os.listdir(remotekeymaps_path):
+			filename = os.path.basename(file)
+			filename_ = filename_ + ', ' + filename
+		dialogok('Keymaps copied!', filename_, '', '')

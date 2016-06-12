@@ -9,6 +9,8 @@
 	  <setting id="Remote_LastDate" type="text" default="" label="32069" visible="false"/>
 	  <setting id="Remote_Support" type="bool" default="" label="32070" visible="false"/>
 	  <setting id="Remote_TestingTime" type="slider" range="5,30" default="10" label="32023" option="int" visible="true"/>
+	  <setting type="lsep" label="Copy Featherence's keymap for TV Remote."/>
+	  <setting label="Copy Keymaps" type="action" action="RunScript(script.featherence.remote,,?mode=7)"/>
 	</category>
 	
     <category label="About" description="About">
