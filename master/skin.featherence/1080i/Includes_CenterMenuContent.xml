@@ -152,7 +152,7 @@
 	    <label>--></label>
 	</item>
 	<item id="1" description="יציאה">
-	    <visible>System.Platform.Windows | System.Platform.Android | System.Platform(OSX) | System.Platform(IOS)</visible>
+	    <visible>!System.Platform.Linux | System.Platform.Android</visible>
 	    <onclick>Quit</onclick>
 	    <label>13009</label>
 	</item>
