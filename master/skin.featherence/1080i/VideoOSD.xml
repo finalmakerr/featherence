@@ -3,8 +3,12 @@
 	<!--<onload condition="VideoPlayer.Content(livetv)">SetFocus(808)</onload>-->
 	<onload condition="Player.PauseEnabled">SetFocus(602)</onload>
 	<onload condition="!Control.IsVisible(602) + Control.IsVisible(603)">SetFocus(603)</onload>
+	<!--<onback>Notification(1,1,1000)</onback>-->
+	<!--<onback>ActivateWindow(VideoFullScreen.xml)</onback>-->
+    <!--<onunload condition="VideoPlayer.IsFullscreen">ActivateWindow(VideoFullScreen.xml)</onunload>-->
     <controls>
 	  <control type="group">
+	    <visible>!Window.IsVisible(DialogSubtitles.xml)</visible>
 		<control type="slider" description="מד ריצה תחתון">
 			<description>Seek Slider</description>
 			<left>0</left>
@@ -304,6 +308,10 @@
 				</control>
 			</control>
 		  </control>
-      </control>
+        <control type="group">
+		  <visible>Player.Paused</visible>
+		  <include>TopVideoInformation</include>
+		</control>
+	  </control>
 	</controls>
 </window>

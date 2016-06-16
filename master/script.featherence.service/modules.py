@@ -35,17 +35,17 @@ def mode5(value, admin, name, printpoint):
 	if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
 	
 	if xbmc.getSkinDir() == 'skin.featherence':
-		mode11(name, printpoint)
+		#mode12()
 		mode215('_','','','')
 		setsetting_custom1('script.featherence.service','Skin_UpdateLog',"true")
 		Skin_UpdateLog = 'true'
 		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)')
-		setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
-		
+		xbmc.sleep(500) ; mode11(name, printpoint)
 		installaddon('resource.images.weathericons.outline', update=False)
 		installaddon('resource.images.weatherfanart.single', update=False)
 		installaddon('script.module.unidecode', update=False)
 		installaddon('script.skinshortcuts', update=True)
+		setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
 
 def mode11(name, printpoint):
 	'''StartUp-Music/Video'''
@@ -54,15 +54,17 @@ def mode11(name, printpoint):
 	startupvideo0 = xbmc.getInfoLabel('Skin.String(StartUpVideo)')
 	startupmusic0 = xbmc.getInfoLabel('Skin.String(StartUpMusic)')
 	
-	startupvideo0_, startupvideo0__ = TranslatePath(startupvideo0, filename=True)
-	if not os.path.exists(startupvideo0_):
-		printpoint = printpoint + '1'
-		notification('Startup Video failed','File is not available!','',2000)
-	elif startupvideo0:
-		printpoint = printpoint + '2'
-		if not startupvideofullscreen1: xbmc.executebuiltin('PlayMedia('+startupvideo0_+')')
-		else: xbmc.executebuiltin('PlayMedia('+to_utf8(startupvideo0_)+'),1)')
-		xbmc.sleep(1000)
+	if startupvideo0 == "": pass
+	else:
+		startupvideo0_, startupvideo0__ = TranslatePath(startupvideo0, filename=True)
+		if not os.path.exists(startupvideo0_):
+			printpoint = printpoint + '1'
+			notification('Startup Video failed','File is not available!','',2000)
+		else:
+			printpoint = printpoint + '2'
+			if not startupvideofullscreen1: xbmc.executebuiltin('PlayMedia('+startupvideo0_+')')
+			else: xbmc.executebuiltin('PlayMedia('+to_utf8(startupvideo0_)+'),1)')
+			xbmc.sleep(1000)
 	if not startupmusic1:
 		printpoint = printpoint + '3'
 		count = 0
@@ -385,7 +387,9 @@ def setPlayerInfo(admin):
 		else: input = playertitle
 		
 		setProperty('VideoPlayer.Title', str(input), type="home")
-
+	
+	#xbmc.executebuiltin('Action(Info)')
+	
 def videostarttweak(admin):
 	playercache = xbmc.getInfoLabel('Player.CacheLevel')
 	playerpaused = xbmc.getCondVisibility('Player.Paused')
@@ -436,6 +440,31 @@ def mode10(admin, name, printpoint):
 			xbmc.sleep(3000)
 			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23)')
 
+def mode12():
+	name = 'mode12' ; printpoint = ''
+	path = 'special://skin/extras/featherence_.mp4'
+	x_, x__ = TranslatePath(path, filename=True)
+	videoplayertitle = ""
+	count = 0
+	if os.path.exists(x_):
+		printpoint = printpoint + '1'
+		xbmc.executebuiltin('PlayMedia('+ x_ +')')
+		while not xbmc.getCondVisibility('Player.HasVideo') and count < 20 and not xbmc.abortRequested:
+			xbmc.sleep(100)
+			if count == 0: printpoint = printpoint + '2'
+			count += 1
+		if xbmc.getCondVisibility('Player.HasVideo'):
+			printpoint = printpoint + '3'
+			videoplayertitle = xbmc.getInfoLabel('VideoPlayer.Title')
+			setProperty('script.featherence.service_Info', 'true', type="home")
+			xbmc.sleep(5000)
+			#ReloadSkin(admin,force=False)
+			
+	text = 'path' + space2 + str(to_utf8(path)) + newline + \
+	'count' + space2 + str(count) + newline + \
+	'videoplayertitle' + space2 + str(videoplayertitle)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	
 def mode22(header, message, nolabel, yeslabel, skinstring, type='video'):
 	skinstring_ = xbmc.getInfoLabel('Skin.String('+skinstring+')')
 	returned = dialogyesno(header, message, nolabel=nolabel, yeslabel=yeslabel)
@@ -2226,6 +2255,7 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=Fals
 				printpoint = printpoint + "6"
 				if number2N == 0 or xbmc.getCondVisibility('System.IdleTime(5)'):
 					printpoint = printpoint + "7"
+					if xbmc.getCondVisibility('Player.HasVideo'): xbmc.sleep(10000)
 					diaogtextviewer(header, message2)
 					'''---------------------------'''
 		else: printpoint = printpoint + '9'

@@ -7,14 +7,13 @@ WIP - WORK IN PROGRESS
 - Widget auto refresh on condition.
 
 ------------------------
-Featherence v0.5.1 (xx-Jun-16)
+Featherence v0.5.1 (16-Jun-16)
 ------------------------
-- Added 1.5 sec delay to startup video/music.
-- Minor performance update on startup.
+- Major bug fix with Video OSD on the subtitles window and on pause.
+- Major performance update on startup.
+- Major update of startup Music and Video.
 - Minor update of choosing icon/fanart method.
 - Minor update of skin's icons.
-- *Update Music and Video startup module.
-*You can now play both video and music right after!
 
 ------------------------
 Featherence v0.5.0 (11-Jun-16)

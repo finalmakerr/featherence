@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
-	<defaultcontrol always="true">120</defaultcontrol>
+	<defaultcontrol always="true">150</defaultcontrol>
 	<onload condition="System.HasAddon(script.featherence.service) + !Window.IsVisible(VideoOSD.xml)">RunScript(script.featherence.service,,?mode=9)</onload>
     <controls>
 	  <control type="group">
@@ -606,5 +606,6 @@
 		<param name="condition" value="true" />
 	  </include>
 	  <include>TopInformation</include>
+	  <include>TopVideoInformation</include>
 	</controls>
 </window>

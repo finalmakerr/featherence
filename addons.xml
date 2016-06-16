@@ -322,7 +322,7 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.2.35" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.2.36" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -341,7 +341,7 @@
   </extension>
 </addon>
 
-<addon id="skin.featherence" version="0.5.0" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.5.1" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
 	<import addon="script.featherence.service" version="0.2.14"/>
