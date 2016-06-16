@@ -3,7 +3,7 @@
   <include>Fade6</include>
   <visible>[Player.Paused + VideoPlayer.IsFullscreen] | Window.IsVisible(DialogPVRChannelsOSD.xml) | [Player.IsInternetStream] + [!StringCompare(System.InternetState,$LOCALIZE[15207]) + !IsEmpty(System.InternetState)]</visible>
   <visible>!Window.IsVisible(VideoOSD.xml) + !Window.IsVisible(DialogSubtitles.xml)</visible>
-  <!--<onback>ActivateWindow(VideoOSD.xml)</onback>-->
+  <visible>System.IdleTime(1)</visible>
   <!--<onunload>ActivateWindow(VideoFullScreen.xml)</onunload>-->
   <controls>
     <control type="group">
