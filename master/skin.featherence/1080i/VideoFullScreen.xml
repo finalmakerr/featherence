@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2005" description="חלון קידוד וידאו">
   <defaultcontrol>-</defaultcontrol>
-  <onload condition="true">Action(Info)</onload>
+  <onload condition="true">AlarmClock(info,Action(Info),00:02,silent)</onload>
   <onload condition="IsEmpty(Window(home).Property(mode10)) + !Pvr.IsPlayingTv + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !StringCompare(VideoPlayer.Title,featherence_.mp4)">AlarmClock(mode10,RunScript(script.featherence.service,,?mode=10),00:02,silent)</onload>
   <!--<onload condition="StringCompare(VideoPlayer.Title,featherence_.mp4)">AlarmClock(featherence_,Action(Stop),00:01,silent)</onload>
   <onload condition="StringCompare(VideoPlayer.Title,featherence_.mp4)">AlarmClock(featherence__,ReloadSkin(),00:01,silent)</onload>-->
