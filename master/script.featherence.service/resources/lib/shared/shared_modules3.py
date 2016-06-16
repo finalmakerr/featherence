@@ -197,6 +197,7 @@ def clean_commonsearch(x, match=False):
 			y = y.replace("commonsearch101", space + commonsearch101)
 			y = y.replace("commonsearch102", space + commonsearch102)
 			y = y.replace("commonsearch104", space + commonsearch104)
+			y = y.replace("commonsearch105", space + commonsearch105)
 			y = y.replace("commonsearch106", space + commonsearch106)
 			y = y.replace("commonsearch107", space + commonsearch107)
 			y = y.replace("commonsearch108", space + commonsearch108)
@@ -205,6 +206,8 @@ def clean_commonsearch(x, match=False):
 			y = y.replace("commonsearch111", space + commonsearch111)
 			y = y.replace("commonsearch112", space + commonsearch112)
 			y = y.replace("commonsearch114", space + commonsearch114)
+			y = y.replace("commonsearch115", space + commonsearch115)
+			y = y.replace("commonsearch118", space + commonsearch118)
 			
 		elif addonID == 'plugin.video.featherence.kids':
 			y = y.replace("commonsearch101", space + commonsearch101)

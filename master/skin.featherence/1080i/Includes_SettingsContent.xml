@@ -1316,10 +1316,10 @@
 		<label>$LOCALIZE[10025] $LOCALIZE[19107] $LOCALIZE[31856]</label>
 		<label2>$VAR[20label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/videos.png</thumb>
-		<property name="rinfo">$LOCALIZE[31422]</property>
+		<property name="rinfo">$LOCALIZE[31422][CR]$INFO[Skin.String(StartUpVideo)]</property>
 		<onclick condition="Skin.String(StartUpVideo)">Skin.SetString(StartUpVideo,)</onclick>
 		<onclick condition="!Skin.String(StartUpVideo)">Skin.SetFile(StartUpVideo,,special://userdata/library/videos/)</onclick>
-		<onclick>Skin.SetString(StartUpVideo)</onclick>
+		<onclick condition="!Skin.String(StartUpVideo)">AlarmClock(delay,Skin.SetString(StartUpVideo),0,silent)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
 	  <item id="21" description="וידאו בהפעלה - מסך מלא">

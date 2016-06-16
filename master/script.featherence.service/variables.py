@@ -5,7 +5,6 @@ import xbmcaddon, sys, os
 servicefeatherencePath          = xbmcaddon.Addon('script.featherence.service').getAddonInfo("path")
 sharedlibDir = os.path.join(servicefeatherencePath, 'resources', 'lib', 'shared')
 sys.path.insert(0, sharedlibDir)
-
 from shared_variables import *
 '''---------------------------'''
 

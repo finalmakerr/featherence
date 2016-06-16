@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window>
+<window type="dialog">
 	<defaultcontrol always="true">120</defaultcontrol>
-	<onload condition="System.HasAddon(script.featherence.service)">RunScript(script.featherence.service,,?mode=9)</onload>
+	<onload condition="System.HasAddon(script.featherence.service) + !Window.IsVisible(VideoOSD.xml)">RunScript(script.featherence.service,,?mode=9)</onload>
     <controls>
 	  <control type="group">
 	    <animation condition="[System.IdleTime(5)] + !Player.Paused + VideoPlayer.SubtitlesEnabled + VideoPlayer.HasSubtitles" effect="Fade" start="100" end="10" time="3000" reversible="false">Conditional</animation>

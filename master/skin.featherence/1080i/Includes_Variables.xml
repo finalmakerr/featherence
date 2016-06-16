@@ -528,8 +528,6 @@
 	<value description="מנגן ערוץ (PVR)_en" condition="!StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">$LOCALIZE[31071] $LOCALIZE[19078] [COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR]</value>
 	<value description="מקליט ערוץ (PVR)" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsRecording">[COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[264] $LOCALIZE[19078] </value>
 	<value description="מנגן הקלטה" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingRecording">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.ChannelName]) [/COLOR] $LOCALIZE[31071] $LOCALIZE[264]: </value>
-	<value description="מנגן וידאו_he" condition="StringCompare(System.Language,Hebrew) + !IsEmpty(VideoPlayer.Title)">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[157]: </value>
-	<value description="מנגן וידאו_en" condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(VideoPlayer.Title)">$LOCALIZE[31071] $LOCALIZE[157]: [COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR]</value>
 	<!--<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !IsEmpty(Slideshow.Filedate)]">[COLOR yellow][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + SubString(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות/וידאו מהאייפון/אייפד[/B][/COLOR]</value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>-->
@@ -543,6 +541,8 @@
 	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>	
 	<value description="מנגן שיר_he" condition="StringCompare(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>
 	<value description="מנגן שיר_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">$LOCALIZE[31071] $LOCALIZE[179]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR]</value>
+	<value description="מנגן וידאו_he" condition="StringCompare(System.Language,Hebrew) + !IsEmpty(VideoPlayer.Title)">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[157]: </value>
+	<value description="מנגן וידאו_en" condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(VideoPlayer.Title)">$LOCALIZE[31071] $LOCALIZE[157]: [COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR]</value>
   </variable>
   <variable name="TopInformation3.1" description="() אמצע">
 	<value description="בחר צבע" condition="Skin.HasSetting(Admin3) + Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[COLOR yellow]$INFO[Window.Property(colorname)][/COLOR]</value>

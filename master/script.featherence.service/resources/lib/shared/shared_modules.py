@@ -520,12 +520,12 @@ def setPath(type=0,mask="", folderpath="", original=True):
 	elif original == True or x2_ == "": returned = x2
 	elif original == False: returned = x2_
 	
-	text = 'type' + space2 + str(type) + newline + \
-	'mask' + space2 + str(mask) + newline + \
-	'folderpath' + space2 + str(folderpath) + newline + \
-	'original' + space2 + str(original) + newline + \
-	'x2' + space2 + str(x2) + newline + \
-	'x2_' + space2 + str(x2_)
+	text = 'type' + space2 + str(to_utf8(type)) + newline + \
+	'mask' + space2 + str(to_utf8(mask)) + newline + \
+	'folderpath' + space2 + str(to_utf8(folderpath)) + newline + \
+	'original' + space2 + str(to_utf8(original)) + newline + \
+	'x2' + space2 + str(to_utf8(x2)) + newline + \
+	'x2_' + space2 + str(to_utf8(x2_))
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	return returned
 	
@@ -1297,7 +1297,6 @@ def ReloadSkin(admin,force=True):
 		#xbmc.executebuiltin('ReplaceWindow(CustomHomeCustomizer.xml)')
 	else:
 		printpoint = printpoint + '9'
-		#xbmc.executebuiltin('RunScript(script.htpt.service,,?mode=215&value=_)')
 	
 	text = "property_reloadskin" + space2 + str(property_reloadskin)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")

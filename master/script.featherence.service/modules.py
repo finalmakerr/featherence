@@ -35,6 +35,7 @@ def mode5(value, admin, name, printpoint):
 	if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
 	
 	if xbmc.getSkinDir() == 'skin.featherence':
+		mode11(name, printpoint)
 		mode215('_','','','')
 		setsetting_custom1('script.featherence.service','Skin_UpdateLog',"true")
 		Skin_UpdateLog = 'true'
@@ -46,6 +47,51 @@ def mode5(value, admin, name, printpoint):
 		installaddon('script.module.unidecode', update=False)
 		installaddon('script.skinshortcuts', update=True)
 
+def mode11(name, printpoint):
+	'''StartUp-Music/Video'''
+	startupmusic1 = xbmc.getCondVisibility('Skin.HasSetting(StartUpMusic)')
+	startupvideofullscreen1 = xbmc.getCondVisibility('Skin.HasSetting(StartUpVideoFullScreen)')
+	startupvideo0 = xbmc.getInfoLabel('Skin.String(StartUpVideo)')
+	startupmusic0 = xbmc.getInfoLabel('Skin.String(StartUpMusic)')
+	
+	startupvideo0_, startupvideo0__ = TranslatePath(startupvideo0, filename=True)
+	if not os.path.exists(startupvideo0_):
+		printpoint = printpoint + '1'
+		notification('Startup Video failed','File is not available!','',2000)
+	elif startupvideo0:
+		printpoint = printpoint + '2'
+		if not startupvideofullscreen1: xbmc.executebuiltin('PlayMedia('+startupvideo0_+')')
+		else: xbmc.executebuiltin('PlayMedia('+to_utf8(startupvideo0_)+'),1)')
+		xbmc.sleep(1000)
+	if not startupmusic1:
+		printpoint = printpoint + '3'
+		count = 0
+		if xbmc.getCondVisibility('Player.HasVideo'):
+			printpoint = printpoint + '4'
+			while xbmc.getCondVisibility('Player.HasVideo') and count < 20 and not xbmc.abortRequested:
+				xbmc.sleep(1000)
+				count += 1
+		
+		if count >= 20: printpoint = printpoint + '5'
+		else:
+			printpoint = printpoint + '6'
+			if not startupmusic0: xbmc.executebuiltin('PlayMedia(special://skin/sounds/featherence.mp3)') ; printpoint = printpoint + '7'
+			else:
+				printpoint = printpoint + '8'
+				startupmusic0_, startupmusic0__ = TranslatePath(startupmusic0, filename=True)
+				if not os.path.exists(startupmusic0_): notification('Startup Music failed','File is not available!','',2000)
+				elif os.path.isfile(startupmusic0_): xbmc.executebuiltin('PlayMedia('+to_utf8(startupmusic0_)+')')
+				elif os.path.isdir(startupmusic0_):	CreatePL(startupmusic0_, 'music')
+				else: printpoint = printpoint + '9'
+				#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=21&amp;value='+ to_utf8(startupmusic0_) +'&amp;value2=music)')
+	
+	text = 'startupmusic1' + space2 + str(to_utf8(startupmusic1)) + newline + \
+	'startupmusic1' + space2 + str(to_utf8(startupmusic1)) + newline + \
+	'startupvideofullscreen1' + space2 + str(to_utf8(startupvideofullscreen1)) + newline + \
+	'startupvideo0' + space2 + str(to_utf8(startupvideo0)) + newline + \
+	'startupmusic0' + space2 + str(to_utf8(startupmusic0))
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+	
 def mode6(value):
 	name = 'mode6 (pwd)' ; printpoint = ""
 	passprotect = xbmc.getInfoLabel('Skin.String(PassProtect)')
@@ -135,6 +181,9 @@ def mode9(admin, name):
 	controlgroup70hasfocus0 = xbmc.getCondVisibility('ControlGroup(70).HasFocus(0)') #OSD BUTTONS
 	container120listitemlabel2 = xbmc.getInfoLabel('Container(120).ListItem.Label2')
 	container120numitems = 0
+	container120numitems2 = container120numitems
+	systemcurrentcontrol = xbmc.getInfoLabel('System.CurrentControl')
+	playerpaused = xbmc.getCondVisibility('Player.Paused')
 	tip = "true"
 	count = 0
 	count2 = 0 #container120numitems
@@ -146,7 +195,6 @@ def mode9(admin, name):
 		------------------------------'''
 		dialogsubtitlesW = xbmc.getCondVisibility('Window.IsVisible(DialogSubtitles.xml)')
 		if dialogsubtitlesW:
-			container120numitems2 = container120numitems
 			container120numitems = xbmc.getInfoLabel('Container(120).NumItems') #DialogSubtitles
 			try: container120numitems = int(container120numitems)
 			except: container120numitems = ""
@@ -393,7 +441,7 @@ def mode22(header, message, nolabel, yeslabel, skinstring, type='video'):
 	returned = dialogyesno(header, message, nolabel=nolabel, yeslabel=yeslabel)
 	if returned == 'ok': z = 0
 	else: z = 1
-	returned = setPath(z,type)
+	returned = setPath(z,type) ; xbmc.sleep(200)
 	notification(returned,skinstring,'',4000)
 	if returned != "":
 		if returned != skinstring_: setSkinSetting('0',skinstring,returned)
@@ -413,11 +461,11 @@ def CheckExtensions(x, mask='video'):
 	if extension in list:
 		returned = 'ok'
 	
-	text = 'mask' + space2 + str(mask) + newline + \
-	'x' + space2 + str(x) + newline + \
-	'list' + space2 + str(list) + newline + \
-	'extension' + space2 + str(extension) + newline + \
-	'returned' + space2 + str(returned)
+	text = 'mask' + space2 + str(to_utf8(mask)) + newline + \
+	'x' + space2 + str(to_utf8(x)) + newline + \
+	'list' + space2 + str(to_utf8(list)) + newline + \
+	'extension' + space2 + str(to_utf8(extension)) + newline + \
+	'returned' + space2 + str(to_utf8(returned))
 	
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
@@ -438,10 +486,10 @@ def CreatePL2(x, type, playlist, level, levelmax):
 		returned = CheckExtensions(x, type)
 		if returned == 'ok': playlist.append(x)
 	
-	text = 'level' + space2 + str(level) + space + 'levelmax' + space2 + str(levelmax) + newline + \
-	'x' + space2 + str(x) + newline + \
-	'x2' + space2 + str(x2) + newline + \
-	'playlist' + space2 + str(playlist)
+	text = 'level' + space2 + str(to_utf8(level)) + space + 'levelmax' + space2 + str(to_utf8(levelmax)) + newline + \
+	'x' + space2 + str(to_utf8(x)) + newline + \
+	'x2' + space2 + str(to_utf8(x2)) + newline + \
+	'playlist' + space2 + str(to_utf8(playlist))
 	
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
@@ -451,28 +499,30 @@ def CreatePL(path, type='video', levelmax=10):
 	name = 'CreatePL' ; printpoint = "" ; extra = "" ; notexistsL= []
 	if type == 'music': pl = xbmc.PlayList(xbmc.PLAYLIST_MUSIC)
 	else: pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
-	
 	pl.clear()
 	playlist = []
-	for x in os.listdir(path):
-		x = os.path.join(path, x)
-		x = to_utf8(x)
-		if os.path.exists(x):
-			playlist = CreatePL2(x, type, playlist, 0, levelmax)
-		else: notexistsL.append(x)
+	if path == "": printpoint = printpoint + '9'
+	if not '9' in printpoint:
+		for x in os.listdir(path):
+			x = os.path.join(path, x)
+			x_, x__ = TranslatePath(x, filename=True)
+			#x = to_utf8(x)
+			if os.path.exists(x_):
+				playlist = CreatePL2(x_, type, playlist, 0, levelmax)
+			else: notexistsL.append(x_)
 		
 	if playlist != []:
 		random.shuffle(playlist)
 		for x in playlist:
 			pl.add(x)
-			extra = extra + newline + 'x' + space2 + str(x)
+			extra = extra + newline + 'x' + space2 + str(to_utf8(x))
 		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl)
 	
-	text = 'type' + space2 + str(type) + newline + \
-	'path' + space2 + str(path) + newline + \
-	'pl' + space2 + str(pl) + newline + \
-	'playlist' + space2 + str(playlist) + newline + \
-	'notexistsL' + space2 + str(notexistsL) + extra
+	text = 'type' + space2 + str(to_utf8(type)) + newline + \
+	'path' + space2 + str(to_utf8(path)) + newline + \
+	'pl' + space2 + str(to_utf8(pl)) + newline + \
+	'playlist' + space2 + str(to_utf8(playlist)) + newline + \
+	'notexistsL' + space2 + str(to_utf8(notexistsL)) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 		
 def mode25(value, admin, name, printpoint):
@@ -1572,7 +1622,7 @@ def mode215(value, value2, name, printpoint):
 		if id != "" and id != None:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(5))
-			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'')		
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'')		
 			'''---------------------------'''
 	
 	'''כיבוי'''
@@ -1582,7 +1632,7 @@ def mode215(value, value2, name, printpoint):
 		if id != "" and id != None and 1 + 1 == 2:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(13005))
-			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'')		
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'')		
 			'''---------------------------'''
 			
 	'''סרטים'''
@@ -1593,7 +1643,7 @@ def mode215(value, value2, name, printpoint):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(342))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(Videos,MovieTitles,return)')
-			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/movies.png')		
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/movies.png')		
 			'''---------------------------'''
 	
 	'''סדרות'''
@@ -1605,7 +1655,7 @@ def mode215(value, value2, name, printpoint):
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(20343))
 			
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(VideoLibrary,TVShowTitles,return)')
-			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/tvshows.png')
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/tvshows.png')
 			'''---------------------------'''
 
 	'''ערוצי טלוויזיה'''
@@ -1616,7 +1666,7 @@ def mode215(value, value2, name, printpoint):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(19023))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(TVChannels)')
-			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/LiveTV.png')
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/LiveTV.png')
 			'''---------------------------'''
 	
 	'''ילדים'''
@@ -1628,7 +1678,7 @@ def mode215(value, value2, name, printpoint):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(31814))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.kids,return)')
-			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/kids.png')
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/kids.png')
 			'''---------------------------'''	
 			
 	'''מוזיקה'''
@@ -1639,7 +1689,7 @@ def mode215(value, value2, name, printpoint):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(2))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.music,return)')
-			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/music.png')
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/music.png')
 			'''---------------------------'''
 	
 	'''מעודפים'''
@@ -1650,7 +1700,7 @@ def mode215(value, value2, name, printpoint):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(1036))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(134)')
-			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/star.png')
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/star.png')
 			'''---------------------------'''	
 	
 	'''תמונות'''
@@ -1661,7 +1711,7 @@ def mode215(value, value2, name, printpoint):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(1))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(Pictures)')
-			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/pictures.png')
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/pictures.png')
 			'''---------------------------'''
 	
 	'''מזג אוויר'''
@@ -1672,7 +1722,7 @@ def mode215(value, value2, name, printpoint):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(8))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(MyWeather.xml)')
-			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/weather.png')
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/weather.png')
 			'''---------------------------'''
 			
 	''''''
@@ -1694,7 +1744,7 @@ def mode215(value, value2, name, printpoint):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,addonString(32803).encode('utf-8'))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.docu,return)')
-			if value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/animals.png')
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/animals.png')
 			'''---------------------------'''
 	
 	text = "value" + space2 + str(value) + space + "id" + space2 + str(id) + newline + \

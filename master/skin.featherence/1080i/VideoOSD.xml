@@ -26,7 +26,6 @@
 			<animation effect="slide" end="0,-438" start="0,0" time="220" tween="quadratic">WindowClose</animation>
 			<top>200</top>
 			<include>VideoOSDflag</include>
-			
 			<control type="grouplist" id="202" description="כפתורים וידאו/אודיו">
 				<top>100</top>
 				<height>144</height>

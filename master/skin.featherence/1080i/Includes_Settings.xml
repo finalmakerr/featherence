@@ -195,7 +195,7 @@
 		<animation condition="Window.IsVisible(Custom1173.xml)" effect="slide" start="0,0" end="0,-424" time="0">Conditional</animation>
 		<animation condition="Control.IsVisible(9005)" effect="slide" start="0,0" end="-733,-670" time="0">Conditional</animation>
 		<animation condition="Control.IsVisible(56)" effect="slide" start="0,0" end="-12.5,0" time="0">Conditional</animation>
-		<animation condition="Window.IsVisible(Settings.xml) | Window.IsVisible(SkinSettings.xml)" effect="slide" start="0,0" end="0,-82" time="0">Conditional</animation>
+		<animation condition="Window.IsVisible(Settings.xml) | Window.IsVisible(SkinSettings.xml)" effect="slide" start="0,0" end="0,-12" time="0">Conditional</animation>
 		<include>Fade4</include>
 		<visible>[Control.IsVisible(50) + Container(50).HasNext] | !Control.IsVisible(50)</visible>
 		<visible>[Control.IsVisible(5) + Container(5).HasNext] | !Control.IsVisible(5)</visible>

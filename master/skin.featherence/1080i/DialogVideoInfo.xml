@@ -126,7 +126,7 @@
 		  <onclick condition="!IsEmpty(ListItem.TVShowTitle)">RunScript(script.featherence.service,,?mode=70&amp;value=1)</onclick>
           <texturefocus colordiffuse="$VAR[IconFocusColor]">special://home/addons/script.featherence.service/resources/icons/information.png</texturefocus>
           <texturenofocus colordiffuse="ffa9a9a9">special://home/addons/script.featherence.service/resources/icons/information.png</texturenofocus>
-		  <visible>Container.Content(movies) | !IsEmpty(ListItem.TVShowTitle)</visible>
+		  <visible>Container.Content(movies) | Container.Content(tvshows) | !IsEmpty(ListItem.TVShowTitle)</visible>
         </control>
         <control type="button" id="10" description="Get Art">
 		  <height>130</height>

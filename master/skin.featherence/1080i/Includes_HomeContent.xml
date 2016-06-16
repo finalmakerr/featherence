@@ -632,7 +632,7 @@
 	  <thumb>special://home/addons/script.featherence.service/resources/icons/home.png</thumb>
 	  <icon>special://home/addons/script.featherence.service/resources/icons/home2.png</icon>
 	  <label>$LOCALIZE[20096]</label>
-	  <onclick condition="true">ReplaceWindow(0)</onclick>
+	  <onclick condition="true">ReplaceWindow(Home.xml)</onclick>
 	</item>
   </include>
   <include name="Content_TopButtons">
@@ -649,7 +649,7 @@
 		  <onclick condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
 		  <onclick condition="Control.IsVisible(312)">ActivateWindow(Videos,TVShowTitles)</onclick>
 		  
-		  <onclick>ReplaceWindow(0)</onclick>
+		  <onclick>ReplaceWindow(Home.xml)</onclick>
 		  <onclick>Control.SetFocus(9000)</onclick>
 		  <onclick>AlarmClock(1,Control.SetFocus(9090),00:01,silent)</onclick>
 		  
