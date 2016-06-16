@@ -79,10 +79,6 @@ from shared_variables import *
 from shared_modules import *
 from modules import *
 
-emudata_launcher_file_size = getFileAttribute(2, emudata_launcher_file, option="1")
-if int(emudata_launcher_file_size) < 1000:
-	copylaunchers(force=True)
-	
 checkin()
 
 class Main:
@@ -97,7 +93,11 @@ class Main:
         self._get_settings()
 
         # Load launchers
-        copylaunchers(force=False)
+        emudata_launcher_file_size = getFileAttribute(2, emudata_launcher_file, option="1")
+        if emudata_launcher_file_size == "": copylaunchers_ = True
+        elif int(emudata_launcher_file_size) < 1000: copylaunchers_ = True
+        else: copylaunchers_ = False
+        copylaunchers(force=copylaunchers_)
         self._load_launchers(self.get_xml_source(BASE_CURRENT_SOURCE_PATH))
 
         # get emulators preference

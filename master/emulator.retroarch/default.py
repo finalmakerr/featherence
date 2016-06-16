@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-import xbmc, xbmcgui, xbmcaddon, os, sys, subprocess, random
+import xbmc, xbmcgui, xbmcaddon, os, sys, subprocess
 
 pluginprogramfeatherenceemuPath          = xbmcaddon.Addon('plugin.program.featherence.emu').getAddonInfo("path")
 sharedlibDir2 = os.path.join(pluginprogramfeatherenceemuPath, '')

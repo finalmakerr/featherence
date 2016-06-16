@@ -1,18 +1,18 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
-- Added keymaps instructions for each console.
-- Update keyboard keymaps.
+
 
 ------------------------
 Featherence Emu v0.0.6 (xx-Jun-16)
 ------------------------
 - Added adult contents.
 - Added hebrew translation.
-- Added keys help trailers per each console.
+- Added keymaps instructions for each console.
 - Code Aesthetic.
+- Minor bugs fix.
 - Update addon information.
-
+- Update keyboard keymaps.
 
 ------------------------
 Featherence Emu v0.0.5 (03-Jun-16)

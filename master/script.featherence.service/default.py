@@ -88,6 +88,14 @@ elif mode == 10:
 	name = "VideoPlayer demon"
 	mode10(admin, name, printpoint)
 	'''---------------------------'''
+
+elif mode == 11:
+	'''------------------------------
+	---StartUp-Music/Video-----------
+	------------------------------'''
+	name = "StartUp-Music/Video"
+	mode11(name, printpoint)
+	'''---------------------------'''
 	
 elif mode == 17:
 	'''------------------------------
