@@ -1,8 +1,19 @@
 ------------------------
 WIP (WORK IN PROGRESS)--
 ------------------------
-- Update foreign singers translations.
-- Add foreign singers, karaoke, liveshows.
+
+------------------------
+Featherence Music v0.2.10 (xx-Jun-16)
+------------------------
+- Added biography for forgein singers.
+- Added fanart for forgein singers.
+- Added Foreign Djs category.
+- Added more links to next page sections.
+- Added new artists in classical category.
+- Added new popular forgein singers.
+- Added new TV Channels.
+- Minor links update.
+- Minor update of translation in English and Hebrew.
 
 ------------------------
 Featherence Music v0.2.9 (10-May-16)

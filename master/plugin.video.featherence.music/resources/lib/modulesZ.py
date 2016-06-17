@@ -14,9 +14,9 @@ def CATEGORIES10101Z(name, iconimage, desc, background, fanart):
 	'''מוזיקה ישראלית'''
 	list = []
 
-	list.append('&youtube_ch=')
-	list.append('&youtube_ch=')
-	list.append('&youtube_ch=')
+	list.append('&youtube_ch=NMCUnitedEntertaimen')
+	list.append('&youtube_ch=23music')
+	list.append('&youtube_ch=livni2')
 		
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
 
@@ -27,7 +27,7 @@ def CATEGORIES10102Z(name, iconimage, desc, background, fanart):
 	list = []
 
 	list.append('&youtube_ch=sharimkaraokeltd/playlists')
-	list.append('&youtube_ch=')
+	list.append('&youtube_ch=HarifKaraoke')
 	list.append('&youtube_ch=')
 		
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
@@ -38,7 +38,7 @@ def CATEGORIES10104Z(name, iconimage, desc, background, fanart):
 	'''הופעות חיות ישראליות'''
 	list = []
 
-	list.append('&youtube_ch=')
+	list.append('&youtube_ch=michalhecht')
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		

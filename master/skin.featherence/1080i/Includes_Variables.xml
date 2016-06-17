@@ -9,7 +9,7 @@
   
   <variable name="11156label" description="">
     <value condition="![!Skin.HasSetting(ShowDVDCases) | Skin.HasSetting(ShowDVDCases2)]">0</value>
-	<value condition="![!IsEmpty(Player.Art(tvshow.poster)) | !IsEmpty(Player.Art(poster)) | !IsEmpty(Control.GetLabel(1103)) | !IsEmpty(VideoPlayer.Cover) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Art(tvshow.poster)) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Thumb) | !IsEmpty(ListItem.Icon) | SubString(ListItem.path,videodb://movies/sets/)]">1</value>
+	<!--<value condition="![!IsEmpty(Player.Art(tvshow.poster)) | !IsEmpty(Player.Art(poster)) | !IsEmpty(Control.GetLabel(1103)) | !IsEmpty(VideoPlayer.Cover) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Art(tvshow.poster)) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Thumb) | !IsEmpty(ListItem.Icon) | SubString(ListItem.path,videodb://movies/sets/)]">1</value>-->
 	<value condition="![!SubString(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>
 	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
 	<value condition="![[StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(ShowDVDCases)] | !StringCompare(Container.Viewmode,$LOCALIZE[31013])]">5</value>

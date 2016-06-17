@@ -16,8 +16,6 @@ def CATEGORIES10101A(name, iconimage, desc, fanart):
 
 	list.append('&youtube_pl=PLjUpwHk7giaiaSeSzZ4Alqj8cGQB6rPEk')
 	list.append('&youtube_pl=PLjUpwHk7giaj910tIRA-XTqx6HJA7tPUi') 
-	#list.append('&youtube_pl=PL46129841F86EDCCB4')
-	list.append('&youtube_pl=FLw_JTl5vBNd_ILZsGOecXmQ')
 	list.append('&youtube_pl=PLB97405B96D068FC6')
 	list.append('&youtube_pl=PL8B8D8008EC2AEC94')
 	list.append('&youtube_pl=PL87E8D450A93CD471')
@@ -32,12 +30,14 @@ def CATEGORIES10101A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLD_zAoRa9UcA4U7jHXTx3hDF3om7zM5jd')
 	list.append('&youtube_pl=PLzzwAvFoE3KfG0eR0kCdUjEiEbOIUpvZb')
 	list.append('&youtube_pl=PL533AC0BFD30DA202')
+	list.append('&youtube_pl=PLWvtqTEJL_PecfYvYdEhXvijvSas9ocp5')
 	list.append('&youtube_pl=PLFcBFujWU-tB6op3uAj-eJiymuwsUt51T')
 	list.append('&youtube_pl=PLFcBFujWU-tDTP_OahLQ6CVvew_TElbHr')
 	list.append('&youtube_pl=PLLaB91oVoE-Cq3aJa7MElaf5i3JBILpit')
 	list.append('&youtube_pl=PLDMFOZKyoCX0EMCapcK2qW7X3mxjs52Xw')	
 	list.append('&youtube_pl=PL1sns8HoY1uKuGp9ze9f5W410VleGhAZ-')
 	list.append('&youtube_pl=PL6CcUVzFqqcVNcscz560ZsaxhWrQOrWXH')
+	list.append('&youtube_pl=PLB42AF7617D0814D2')
 		
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 
@@ -68,9 +68,14 @@ def CATEGORIES10104A(name, iconimage, desc, fanart):
 	
 	list = []
 
-	list.append('&youtube_pl=')
-	list.append('&youtube_pl=')
-	list.append('&youtube_pl=')
+	list.append('&youtube_pl=PLKIqRYpY39ifwx1ri1V7M7VTAblAF8CsE')
+	list.append('&youtube_pl=PLFA89WMFMcB1K9hxwOepQRJVhW-lrMPjM')
+	list.append('&youtube_pl=PLMwPZme_veqWQINmATvObYwPKS3cb5_Nm')
+	list.append('&youtube_pl=PLEB6243D778C2569F')
+	list.append('&youtube_pl=PL50697249A4878FDD')
+	list.append('&youtube_pl=PLmMwYXuNQYCj2-UJzQzDgvaRYSDkWTZtN')
+	list.append('&youtube_pl=PLQGx0XOoq2fvv1Sqhtk3mcYhYVkKhPC2p')
+	list.append('&youtube_pl=PLq3kSq7XTmPMysdOzY-9-lWzUxVLUacij')
 		
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 
@@ -80,9 +85,10 @@ def CATEGORIES10105A(name, iconimage, desc, fanart):
 	
 	list = []
 
-	list.append('&youtube_pl=')
-	list.append('&youtube_pl=')
-	list.append('&youtube_pl=')
+	list.append('&youtube_pl=PLFA89WMFMcB0rEAl97cPtYtaBXbi_17jI')
+	list.append('&youtube_pl=PLu0oMBI6tzUu_0EtzZ7XhBZijKPy_276g')
+	list.append('&youtube_pl=PLNL6cVMJqkHFuHeeOQ5lCzPvb3Rrw8wg8')
+	list.append('&youtube_pl=PLLgkjg98m5INnhyZDV-vLGMzMXbQdYrA6')
 		
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 	
@@ -92,6 +98,8 @@ def CATEGORIES10106A(name, iconimage, desc, fanart):
 	
 	list = []
 
+	list.append('&youtube_pl=PL5DEpNm9EvxlXBjHE2dbIQTsLoEba83x0')
+	list.append('&youtube_pl=PLFhqlkXfSkvJN_tq5MUZd_2ms8iSvnhCx')
 	list.append('&youtube_pl=PLTc0JNRljDnDGP78_AArd92uOID5cgXQ-')
 	list.append('&youtube_pl=PL76tprfc11flz1_awCcqXMU54HAKmU9hQ')
 	list.append('&youtube_pl=PL76C25ECA2C0A42D8')
@@ -112,9 +120,11 @@ def CATEGORIES10107A(name, iconimage, desc, fanart):
 	
 	list = []
 
-	list.append('&youtube_pl=')
-	list.append('&youtube_pl=')
-	list.append('&youtube_pl=')
+	list.append('&youtube_pl=PLHfj2MFrGpzct3Rym9_U3jG1n4H4xmJPe') #2015
+	list.append('&youtube_pl=PLv6KOe-zMNbK4Nuceb39mdQlFXgdmXiSH')
+	list.append('&youtube_pl=PLu57xoZ3keBcEEeFlr8NGgBCKIh-nzXNE')
+	list.append('&youtube_pl=PLjMlZAOscH-v8ZG7OhCmI8PepJtw8OM3x')
+	list.append('&youtube_pl=PLtm8IRX6612ofHw4vVeVg0XDSanSeLaEZ')
 		
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 
@@ -124,10 +134,11 @@ def CATEGORIES10109A(name, iconimage, desc, fanart):
 	
 	list = []
 
-	list.append('&youtube_pl=PL5MV8_qxHC5ufNt9OV-lyMTm_WU-xUFWV')
-	list.append('&youtube_pl=PLjHwF6MA1nycO4TXyQ0Di7ADrg9wTJ8XW')
-	list.append('&youtube_pl=PL6WvGFcuPjESeFQY0YyCzTy7qTofzMlaQ')
-	list.append('&youtube_pl=PL7302191F8A43E01C')
+	list.append('&youtube_pl=PLE4DED532FECA9BC4')
+	list.append('&youtube_pl=PLB2FEE0AC0BD2819C')
+	list.append('&youtube_pl=PLshzwVrSQVkjOFejcw0fQXKhQA3IcQOLV')
+	list.append('&youtube_pl=PL6RyS6EH1Xnx9vF1no4Ris_JM6TO7EHsn')
+	list.append('&youtube_pl=PLD088399863915B82')
 		
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 
@@ -150,6 +161,8 @@ def CATEGORIES11101A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL7BA598CBAF2745D9')
 	list.append('&youtube_pl=PL05E1623111A9A860')
 	list.append('&youtube_pl=PLpuDUpB0osJmZQ0a3n6imXirSu0QAZIqF')
+	list.append('&youtube_pl=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD')
+	list.append('&youtube_pl=PLz1ThN-w-t_zGtVNm9xtNXyPfwUJ1EfyZ')
 	
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 
@@ -159,9 +172,13 @@ def CATEGORIES11102A(name, iconimage, desc, fanart):
 	
 	list = []
 
-	list.append('&youtube_pl=')
-	list.append('&youtube_pl=')
-	list.append('&youtube_pl=')
+	list.append('&youtube_pl=PL7_nPoVWZlQ2OS8cBagc072Mzdx0V9uDR')
+	list.append('&youtube_pl=PLzhHScp_FPuvuOijzOQjFiTajZMQCFhKi')
+	list.append('&youtube_pl=PL1AC85D057F6825A9')
+	list.append('&youtube_pl=PL0562084654703201')
+	list.append('&youtube_pl=PL8D4Iby0Bmm-uQIcbRfHeUMd_YDSZDA39')
+	list.append('&youtube_pl=PL2dHcK1nJqU8zCIhqC6gFIIIEikLi3AvB')
+	list.append('&youtube_pl=PLqGkpApxFsX_jRp4sDFz9_gwztqqpDZ2U')
 		
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
 
@@ -171,7 +188,7 @@ def CATEGORIES11104A(name, iconimage, desc, fanart):
 	
 	list = []
 
-	list.append('&youtube_pl=')
+	list.append('&youtube_pl=PLJFSFauO5sHZbgRwOFlgk5a2PbniNQR7v')
 	list.append('&youtube_pl=')
 	list.append('&youtube_pl=')
 		
