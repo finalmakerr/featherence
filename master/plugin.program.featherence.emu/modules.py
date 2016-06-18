@@ -658,8 +658,6 @@ def copyconfig(force=False):
 		x = os.path.join(config_path, file)
 		if not os.path.exists(x) or force == True:
 			copyfiles(os.path.join(path,file), x)
-		if (file == 'retroarch.cfg' or file == 'retroarch-core-options.cfg') and systemplatformlinux:
-			copyfiles(os.path.join(path,file), '/storage/.config/retroarch/')
 		
 	if not os.path.exists(config_path) or force==True:
 		printpoint = printpoint + '1'
@@ -752,8 +750,16 @@ def setconfig(force=False):
 			
 			i += 1
 	
+	
 	staticconfig(force=True)
 	
+	if systemplatformandroid: pass
+	elif systemplatformlinux:
+		x = 'retroarch.cfg'
+		copyfiles(os.path.join(config_path,x), '/storage/.config/retroarch/')
+		x = '.retroarch-core-options.cfg'
+		copyfiles(os.path.join(config_path,x), '/storage/.config/retroarch/')
+		
 	text = 'force' + space2 + str(force) + newline + \
 	"extra" + space2 + str(extra)
 	printlog(title=name, printpoint=printpoint, text=text, level=7, option="")

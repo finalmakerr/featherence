@@ -1499,7 +1499,7 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 	
 	macaddress = xbmc.getInfoLabel('Network.MacAddress')
 	User_Name = xbmc.getInfoLabel('Skin.String(User_Name)')
-	if macaddress == '0C:8B:FD:9D:2F:CE' or User_Name == 'finalmakerr': admin3 = 'true'
+	if macaddress == '0C:8B:FD:9D:2F:CE' or User_Name == 'finalmakerr' or macaddress == 'C0:3F:D5:6B:10:41': admin3 = 'true'
 	elif macaddress != "": admin3 = 'false'
 	else: admin3 = 'false'
 	
