@@ -7,9 +7,10 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
+	setSkinSetting('0','TEMP',"5000")
 	#xbmc.executebuiltin('ActivateWindow(MusicFiles,root)')
 	#xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
-	xbmc.executebuiltin('Skin.SetImage(TEMP,special://userdata/)')
+	#xbmc.executebuiltin('Skin.SetImage(TEMP,special://userdata/)')
 	#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
 	#installaddon('resource.images.weathericons.outline', update=False)
 	#installaddon('resource.images.weatherfanart.single,update=False')
@@ -802,7 +803,10 @@ def mode32(value, admin, name, printpoint):
 				xbmc.executebuiltin('Action(Down)')
 		
 		setProperty('TEMP', '', type="home")
-		
+	
+	elif value == '7':
+		xbmc.sleep(500)
+		setProperty('DoubleClick', '', type="home")
 	elif value == '40':
 		addon = 'plugin.video.featherence.kids'
 		if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
@@ -881,6 +885,7 @@ def mode70(value, admin, name, printpoint, property_temp):
 			if listitemtitle != "":
 				input = 'info=extendedinfo,name=%s' % (listitemtitle)
 		elif value == '1':
+			if listitemtvshowtitle == "" and listitemlabel != "": listitemtvshowtitle = listitemlabel
 			if localize(20373) in listitemlabel and listitemseason != "":
 				'''seasoninfo'''
 				printpoint = printpoint + "1"
@@ -889,7 +894,7 @@ def mode70(value, admin, name, printpoint, property_temp):
 				'''extendedtvinfo'''
 				printpoint = printpoint + "2"
 				input = 'info=extendedtvinfo,name=%s' % (listitemtvshowtitle)
-
+				
 		elif value == '3':
 			if '&actor=' in property_temp:
 				'''Actor info'''
@@ -953,7 +958,7 @@ def mode70(value, admin, name, printpoint, property_temp):
 			
 		else: pass
 		
-		if input != "":
+		if input != "" and not '9' in printpoint:
 			dialogselectW = xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)')
 			if dialogselectW:
 				xbmc.executebuiltin('dialog.close(selectdialog)') ; xbmc.sleep(500)
@@ -974,7 +979,7 @@ def mode70(value, admin, name, printpoint, property_temp):
 		printpoint = printpoint + "9"
 		installaddon(addon, update=True)
 	
-	text = "input" + space2 + input + newline + \
+	text = "input" + space2 + input + space + 'value' + space2 + str(value) + newline + \
 	"INFO" + space2 + "listitemlabel" + space2 + listitemlabel + newline + "listitemtvshowtitle" + space2 + listitemtvshowtitle + newline + \
 	"listitemtitle" + space2 + listitemtitle + newline + "listitemdbid" + space2 + listitemdbid + newline + \
 	'listitemseason' + space2 + str(listitemseason) + newline + \
@@ -1880,9 +1885,9 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "ListItem.Duration" + space2 + xbmc.getInfoLabel('ListItem.Duration')
 			message = message + newline + "Container.Viewmode" + space2 + xbmc.getInfoLabel('Container.Viewmode')
 			message = message + newline + '---------------------------'
-			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('VideoPlayer.VideoCodec') #CUSTOM TEST
-			message = message + newline + "custom2" + space2 + xbmc.getInfoLabel('ListItem.IsCollection') #CUSTOM TEST
-			message = message + newline + "custom3" + space2 + str(xbmc.getInfoLabel('System.InternetState')) #CUSTOM TEST
+			message = message + newline + "custom" + space2 + str(xbmc.getInfoLabel('ListItem.Path')) #CUSTOM TEST
+			message = message + newline + "custom2" + space2 + str(xbmc.getInfoLabel('Container.Content(movies')) #CUSTOM TEST
+			message = message + newline + "custom3" + space2 + str(xbmc.getInfoLabel('Container.Content(tvshows')) #CUSTOM TEST
 			message = message + newline + "ListItem.Property(TotalEpisodes)" + space2 + str(xbmc.getInfoLabel('ListItem.Property(TotalEpisodes)')) #CUSTOM TEST
 			
 			
@@ -2215,7 +2220,7 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=Fals
 	'''------------------------------
 	---VARIABLES---------------------
 	------------------------------'''
-	name = 'setSkin_UpdateLog' ; printpoint = "" ; number2S = "" ; extra = "" ; TypeError = ""
+	name = 'setSkin_UpdateLog' ; printpoint = "" ; number2S = "" ; extra = "" ; TypeError = "" ; Skin_ShowLogN = ""
 	datenowD = stringtodate(datenowS,'%Y-%m-%d')
 	datedifferenceD = stringtodate(Skin_UpdateDate, '%Y-%m-%d')
 	if "error" in [datenowD, datedifferenceD]: printpoint = printpoint + "9"
@@ -2253,11 +2258,18 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=Fals
 			message3S = str(message3)
 			if header != "":
 				printpoint = printpoint + "6"
-				if number2N == 0 or xbmc.getCondVisibility('System.IdleTime(5)'):
+				if number2N == 0 or xbmc.getCondVisibility('System.IdleTime(0)'):
 					printpoint = printpoint + "7"
-					if xbmc.getCondVisibility('Player.HasVideo'): xbmc.sleep(10000)
-					diaogtextviewer(header, message2)
-					'''---------------------------'''
+					try: Skin_ShowLogN = int(Skin_ShowLog2)
+					except: Skin_ShowLogN = 7
+					
+					if Skin_ShowLog == 'true':
+						printpoint = printpoint + "A"
+						if Skin_ShowLogN - number2N >= 0:
+							printpoint = printpoint + "B"
+							if xbmc.getCondVisibility('Player.HasVideo'): xbmc.sleep(10000)
+							diaogtextviewer(header, message2)
+							'''---------------------------'''
 		else: printpoint = printpoint + '9'
 			
 	setsetting('Skin_UpdateLog',"false")
@@ -2267,6 +2279,8 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=Fals
 	"datenowS" + space2 + str(datenowS) + newline + \
 	"Skin_UpdateDate" + space2 + str(Skin_UpdateDate) + newline + \
 	"Skin_UpdateLog" + space2 + str(Skin_UpdateLog) + newline + \
+	"Skin_ShowLog" + space2 + str(Skin_ShowLog) + newline + \
+	"Skin_ShowLog2" + space2 + str(Skin_ShowLog2) + newline + \
 	"number2S" + space2 + str(number2S)
 	'''---------------------------'''
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")

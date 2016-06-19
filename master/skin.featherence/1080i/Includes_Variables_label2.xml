@@ -320,35 +320,27 @@
   </variable>
 
   <variable name="238label2">
-	 <value condition="Skin.String(MultiFanart_TimePerImage,5)">5000</value>
-	 <value condition="Skin.String(MultiFanart_TimePerImage,10)">10000</value>
-	 <value condition="Skin.String(MultiFanart_TimePerImage,15)">15000</value>
-	 <value condition="Skin.String(MultiFanart_TimePerImage,20)">20000</value>
-	 <value condition="Skin.String(MultiFanart_TimePerImage,25)">25000</value>
-	 <value condition="Skin.String(MultiFanart_TimePerImage,30)">30000</value>
-	 <value condition="Skin.String(MultiFanart_TimePerImage,35)">35000</value>
-	 <value condition="Skin.String(MultiFanart_TimePerImage,40)">40000</value>
-	 <value condition="Skin.String(MultiFanart_TimePerImage,45)">45000</value>
-	 <value condition="Skin.String(MultiFanart_TimePerImage,50)">50000</value>
-	 <value condition="Skin.String(MultiFanart_TimePerImage,55)">55000</value>
-	 <value condition="Skin.String(MultiFanart_TimePerImage,60)">60000</value>
-	 <value>10000</value>
-   </variable>
+	 <value condition="!Skin.String(MultiFanart_timeperimage)">10</value>
+	 <value condition="Skin.String(MultiFanart_timeperimage,1)">15</value>
+	 <value condition="Skin.String(MultiFanart_timeperimage,2)">20</value>
+	 <value condition="Skin.String(MultiFanart_timeperimage,3)">25</value>
+	 <value condition="Skin.String(MultiFanart_timeperimage,4)">30</value>
+	 <value condition="Skin.String(MultiFanart_timeperimage,5)">7</value>
+  </variable>
    
    <variable name="239label2">
-	 <value condition="Skin.String(MultiFanart_FadeTime,0)">0</value>
-	 <value condition="Skin.String(MultiFanart_FadeTime,0.2)">200</value>
-	 <value condition="Skin.String(MultiFanart_FadeTime,0.4)">400</value>
-	 <value condition="Skin.String(MultiFanart_FadeTime,0.6)">600</value>
-	 <value condition="Skin.String(MultiFanart_FadeTime,0.8)">800</value>
-	 <value condition="Skin.String(MultiFanart_FadeTime,1)">1000</value>
-	 <value condition="Skin.String(MultiFanart_FadeTime,1.2)">1200</value>
-	 <value condition="Skin.String(MultiFanart_FadeTime,1.4)">1400</value>
-	 <value condition="Skin.String(MultiFanart_FadeTime,1.6)">1600</value>
-	 <value condition="Skin.String(MultiFanart_FadeTime,1.8)">1800</value>
-	 <value condition="Skin.String(MultiFanart_FadeTime,2)">2000</value>
-	 <value>2000</value>
+	 <value condition="!Skin.String(MultiFanart_fadetime)">0.2</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,1)">0.5</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,2)">1</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,3)">1.5</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,4)">2</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,5)">2.5</value>
    </variable>
+  
+  <variable name="240label2">
+    <value condition="Skin.HasSetting(MultiFanart_randomize)">$LOCALIZE[106]</value>
+	<value condition="!Skin.HasSetting(MultiFanart_randomize)">$LOCALIZE[107]</value>
+  </variable>
   
   <variable name="252label2">
 	<value condition="Skin.String(MainBackgroundTexture,NONE)">$LOCALIZE[106]</value>

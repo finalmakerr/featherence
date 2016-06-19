@@ -334,12 +334,12 @@ msgid "Fanart Transperancy"
 msgstr "שקיפות פאנארט"
 
 msgctxt "#31099"
-msgid ""
-msgstr ""
+msgid "Shuffle Fanart (Randomize)"
+msgstr "ערבוב פאנארט (אקראי)"
 
 msgctxt "#31100"
-msgid ""
-msgstr ""
+msgid "Choose NO if you want the images to be always toggle in the same order."
+msgstr "בחר לא אם ברצונך שהתמונות ישתנו בסדר חוזר."
 
 msgctxt "#31101"
 msgid ""

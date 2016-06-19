@@ -530,51 +530,49 @@
 		<visible>Skin.HasSetting(MultiFanart)</visible>
 		
 		<label>$LOCALIZE[31074]</label>
-		<label2>$INFO[Skin.String(MultiFanart_TimePerImage)]</label2>
+		<label2>$VAR[238label2] $INFO[Skin.String(MultiFanart_timeperimage)]</label2>
 		<thumb></thumb>
 		<property name="rinfo">$VAR[238label2]</property>
-		<onclick condition="!Skin.String(MultiFanart_TimePerImage) | !IntegerGreatherThan(Skin.String(MultiFanart_TimePerImage),4000)">Skin.SetString(MultiFanart_TimePerImage, 5000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_TimePerImage, 5000)">Skin.SetString(MultiFanart_TimePerImage, 10000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_TimePerImage, 10000)">Skin.SetString(MultiFanart_TimePerImage, 15000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_TimePerImage, 15000)">Skin.SetString(MultiFanart_TimePerImage, 20000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_TimePerImage, 20000)">Skin.SetString(MultiFanart_TimePerImage, 25000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_TimePerImage, 25000)">Skin.SetString(MultiFanart_TimePerImage, 30000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_TimePerImage, 30000)">Skin.SetString(MultiFanart_TimePerImage, 35000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_TimePerImage, 35000)">Skin.SetString(MultiFanart_TimePerImage, 40000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_TimePerImage, 40000)">Skin.SetString(MultiFanart_TimePerImage, 45000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_TimePerImage, 45000)">Skin.SetString(MultiFanart_TimePerImage, 50000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_TimePerImage, 50000)">Skin.SetString(MultiFanart_TimePerImage, 55000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_TimePerImage, 55000)">Skin.SetString(MultiFanart_TimePerImage, 60000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_TimePerImage, 60000)">Skin.SetString(MultiFanart_TimePerImage, )</onclick>
+		<onclick condition="!Skin.String(MultiFanart_timeperimage)">Skin.SetString(MultiFanart_timeperimage,1)</onclick>
+		<onclick condition="Skin.String(MultiFanart_timeperimage,1)">Skin.SetString(MultiFanart_timeperimage,2)</onclick>
+		<onclick condition="Skin.String(MultiFanart_timeperimage,2)">Skin.SetString(MultiFanart_timeperimage,3)</onclick>
+		<onclick condition="Skin.String(MultiFanart_timeperimage,3)">Skin.SetString(MultiFanart_timeperimage,4)</onclick>
+		<onclick condition="Skin.String(MultiFanart_timeperimage,4)">Skin.SetString(MultiFanart_timeperimage,5)</onclick>
+		<onclick condition="Skin.String(MultiFanart_timeperimage,5)">Skin.SetString(MultiFanart_timeperimage,)</onclick>
+
 		<!--<include>CustomizerExit</include>-->
 		<visible>Container(100).Hasfocus(28)</visible>
-		<visible>false</visible>
 	  </item>
 	  
 	  <item id="239" description="זמן מעבר בין כל תמונה">
 		<visible>Skin.HasSetting(MultiFanart)</visible>
 		
 		<label>$LOCALIZE[31075]</label>
-		<label2>$INFO[Skin.String(MultiFanart_FadeTime)]</label2>
+		<label2>$VAR[239label2]</label2>
 		<thumb></thumb>
 		<property name="rinfo">$VAR[239label2]</property>
-		<onclick condition="!Skin.String(MultiFanart_FadeTime)">Skin.SetString(MultiFanart_FadeTime, 2000)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 10)">Skin.SetString(MultiFanart_FadeTime, 5)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 5)">Skin.SetString(MultiFanart_FadeTime, 10)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 10)">Skin.SetString(MultiFanart_FadeTime, 15)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 15)">Skin.SetString(MultiFanart_FadeTime, 20)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 20)">Skin.SetString(MultiFanart_FadeTime, 25)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 25)">Skin.SetString(MultiFanart_FadeTime, 30)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 30)">Skin.SetString(MultiFanart_FadeTime, 35)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 35)">Skin.SetString(MultiFanart_FadeTime, 40)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 40)">Skin.SetString(MultiFanart_FadeTime, 45)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 45)">Skin.SetString(MultiFanart_FadeTime, 50)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 50)">Skin.SetString(MultiFanart_FadeTime, 55)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 55)">Skin.SetString(MultiFanart_FadeTime, 60)</onclick>
-		<onclick condition="Skin.String(MultiFanart_FadeTime, 60)">Skin.SetString(MultiFanart_FadeTime, )</onclick>
+		<onclick condition="!Skin.String(MultiFanart_fadetime)">Skin.SetString(MultiFanart_fadetime,1)</onclick>
+		<onclick condition="Skin.String(MultiFanart_fadetime,1)">Skin.SetString(MultiFanart_fadetime,2)</onclick>
+		<onclick condition="Skin.String(MultiFanart_fadetime,2)">Skin.SetString(MultiFanart_fadetime,3)</onclick>
+		<onclick condition="Skin.String(MultiFanart_fadetime,3)">Skin.SetString(MultiFanart_fadetime,4)</onclick>
+		<onclick condition="Skin.String(MultiFanart_fadetime,4)">Skin.SetString(MultiFanart_fadetime,5)</onclick>
+		<onclick condition="Skin.String(MultiFanart_fadetime,5)">Skin.SetString(MultiFanart_fadetime,6)</onclick>
+		<onclick condition="Skin.String(MultiFanart_fadetime,6)">Skin.SetString(MultiFanart_fadetime,7)</onclick>
+		<onclick condition="Skin.String(MultiFanart_fadetime,7)">Skin.SetString(MultiFanart_fadetime,8)</onclick>
+		<onclick condition="Skin.String(MultiFanart_fadetime,8)">Skin.SetString(MultiFanart_fadetime,9)</onclick>
+		<onclick condition="Skin.String(MultiFanart_fadetime,9)">Skin.SetString(MultiFanart_fadetime,)</onclick>
 		<!--<include>CustomizerExit</include>-->
 		<visible>Container(100).Hasfocus(28)</visible>
-		<visible>false</visible>
+	  </item>
+	  
+	  <item id="240" description="Shuffle Fanart (Randomize)">
+	    <visible>Skin.HasSetting(MultiFanart)</visible>
+		<label>$LOCALIZE[31099]</label>
+		<label2>$VAR[240label2]</label2>
+		<thumb></thumb>
+		<property name="rinfo">$LOCALIZE[31100]</property>
+		<onclick>Skin.ToggleSetting(MultiFanart_randomize)</onclick>
+		<visible>Container(100).Hasfocus(28)</visible>
 	  </item>
 	  
 	  <!--270-289 כפתורי תפריט-->

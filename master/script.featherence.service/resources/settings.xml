@@ -34,6 +34,13 @@
 		<setting type="lsep" label="32041"/>
 	    <setting id="VolumeLevel" type="select" default="-" label="32015" values="-|40|50|60|70|80|90|100" visible="true"/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=31&amp;value=Custom)" label="32121" option="close" visible="true"/>
+		
+		<setting id="Skin_ShowLog" type="bool" default="true" label="$LOCALIZE[33073]" visible="true"/>
+	    <setting type="lsep" label="$ADDON[script.featherence.service 32419]" visible="eq(-1,true)"/>
+	    <setting id="Skin_ShowLog2" type="slider" default="7" label="$ADDON[script.featherence.service 32420]" range="0,1,7" visible="eq(-2,true)" option="int" subsetting="true"/>
+	    <setting id="Skin_UpdateDate" type="text" default="" label="Skin_UpdateDate" visible="false"/>
+	    <setting id="Skin_UpdateLog" type="bool" default="true" label="Skin_UpdateLog" visible="false"/>
+	    <setting id="Skin_Version" type="text" default="" label="Skin_Version" visible="false"/>
 	</category>
 	
 	<category label="Debug">
@@ -48,11 +55,6 @@
 	  <setting id="admin" type="bool" default="false" label="$LOCALIZE[20191]" visible="true"/>
 	  <setting type="lsep" label=""/>
 	  <!--<setting id="listappend" type="bool" default="false" label="Debug" visible="true"/>-->
-	  
-	  
-	  <setting id="Skin_UpdateDate" type="text" default="" label="Skin_UpdateDate" visible="false"/>
-	  <setting id="Skin_UpdateLog" type="bool" default="true" label="Skin_UpdateLog" visible="false"/>
-	  <setting id="Skin_Version" type="text" default="" label="Skin_Version" visible="false"/>
 		
 	  <setting type="lsep" label=""/>
 	</category>

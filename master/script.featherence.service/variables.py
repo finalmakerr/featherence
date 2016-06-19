@@ -33,6 +33,8 @@ printfirst = addonName + ": !@# "
 Skin_UpdateDate = getsetting('Skin_UpdateDate')
 Skin_UpdateLog = getsetting('Skin_UpdateLog')
 Skin_Version = getsetting('Skin_Version')
+Skin_ShowLog = getsetting('Skin_ShowLog')
+Skin_ShowLog2 = getsetting('Skin_ShowLog2')
 
 ScreenSaver_Music = getsetting('ScreenSaver_Music')
 '''---------------------------'''

@@ -1,5 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <include name="Backgrounds1" description="בית">
+	<control type="group">
+	  <include>Slide1.5</include>
+	  <height>552</height>
+	  <width>1920</width>
+	  <control type="label" id="700102" description="רקע נוסחא">
+	    <visible>false</visible>
+		<label>$VAR[background]</label>
+	  </control>
+	  <control type="label" id="700105" description="רקע נוסחא">
+	    <visible>false</visible>
+		<label>$VAR[ReloadSkin_check]</label>
+	  </control>
+	  <!--<control type="image" description="רקע בית תחתון (שחור)">
+		<height>1080</height>
+		<posy>552</posy>
+		<texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
+	  </control>-->
+	  <include>VideoPlayerWindow</include>
+	  <control type="largeimage" description="רקע פאנארט">
+	    <fadetime>200</fadetime>
+	    <animation condition="!Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]" effect="zoom" start="100,100" end="100,51" time="0">Conditional</animation>
+		<animation condition="!Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.1" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_he" condition="[!Skin.HasSetting(HomeFanartHalfScreen) + ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus + Window.IsVisible(Home.xml)]] + Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="[!Skin.HasSetting(HomeFanartHalfScreen) + ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus + Window.IsVisible(Home.xml)]] + Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
+	    <animation description="Slide-Panel" condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | [[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() + Player.HasVideo]]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
+		<animation description="Slide-Horizontal" condition="![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + Player.HasVideo" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
+		<animation condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + !Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditional</animation>
+		<aspectratio align="top">scale</aspectratio>
+		<visible>!Skin.HasSetting(background)</visible>
+		<!--<visible>[[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()] | [Container(50).Row(0) | Container(50).Row(1)] + !Container(50).HasPrevious()</visible>-->
+		<include>Fade_BackgroundOverlay</include>
+		<texture>$VAR[background]</texture>
+		<posy>0</posy>
+		<height>1080</height>
+		<width>1920</width>
+		<visible>!Player.HasVideo | [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + Skin.HasSetting(HomeFanartHalfScreen)</visible>
+		<visible>false</visible>
+	  </control>
+	  <control type="multiimage" description="רקע פאנארט">
+	    <animation condition="!Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]" effect="zoom" start="100,100" end="100,51" time="0">Conditional</animation>
+		<animation condition="!Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.1" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_he" condition="[!Skin.HasSetting(HomeFanartHalfScreen) + ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus + Window.IsVisible(Home.xml)]] + Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="[!Skin.HasSetting(HomeFanartHalfScreen) + ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus + Window.IsVisible(Home.xml)]] + Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
+	    <animation description="Slide-Panel" condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | [[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() + Player.HasVideo]]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
+		<animation description="Slide-Horizontal" condition="![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + Player.HasVideo" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
+		<animation condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + !Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditional</animation>
+		<aspectratio align="top">scale</aspectratio>
+		<imagepath>$VAR[background]</imagepath>
+		<include>MultiFanart_timeperimage</include>
+		<include>MultiFanart_fadetime</include>
+		<include>MultiFanart_randomize</include>
+		<include>Fade_BackgroundOverlay</include>
+		<posy>0</posy>
+		<height>1080</height>
+		<width>1920</width>
+		<visible>!Player.HasVideo | [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)] + Skin.HasSetting(HomeFanartHalfScreen)</visible>
+		<visible>!Skin.HasSetting(background)</visible>
+	  </control>
+	  <control type="image" description="רקע תחתון צבע">
+		<!--<visible>Skin.HasSetting(background)</visible>-->
+		<animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]" effect="slide" start="0,0" end="0,29" time="220">Conditional</animation>
+		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,250" time="0">Conditional</animation>
+		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1660,0" time="0">Conditional</animation>
+		<include condition="Skin.String(MenuDesign,4)">Control_Pos44</include>
+		<include>Fade_MainBackgroundOverlay</include>
+		<aspectratio>stretch</aspectratio>
+		<height>1080</height>
+		<width>1950</width>
+		<posx>-10</posx>
+		<posy>548</posy>
+		<texture border="40" colordiffuse="$VAR[MainBackgroundColor]">buttons/ButtonC0.png</texture>
+		<visible>[!Skin.String(MenuDesign,4) | Skin.String(MenuDesign,4) + [Window.IsVisible(CustomHomeCustomizer.xml) | ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]]]</visible>
+	  </control>
+	  <control type="image" description="רקע תחתון טקסטורה">
+		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,250" time="0">Conditional</animation>
+		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1660,0" time="0">Conditional</animation>
+		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-10,0" time="0">Conditional</animation>
+		<include>Fade_MainBackgroundOverlay</include>
+		<aspectratio>scale</aspectratio>
+		<include condition="Skin.String(MenuDesign,4)">Control_Pos43</include>
+		<height>1080</height>
+		<width>1920</width>
+		<posx>0</posx>
+		<posy>552</posy>
+		<texture border="30" colordiffuse="$VAR[MainBackgroundColor]">$VAR[MainBackgroundTexture]</texture>
+		<visible>[!Skin.String(MenuDesign,4) | Skin.String(MenuDesign,4) + [Window.IsVisible(CustomHomeCustomizer.xml) | ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]]]</visible>
+	  </control>
+	  <control type="image" description="צבע (רקע עליון)">
+		<include>Fade_TopMainBackgroundOverlay</include>
+		<include condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]">Control_Pos42</include>
+		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,0" time="0">Conditional</animation>
+		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-270,0" time="0">Conditional</animation>
+		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="270,0" time="0">Conditional</animation>
+		<aspectratio>stretch</aspectratio>
+		<posx>-20</posx>
+		<posy>-7</posy>
+		<width>1960</width>
+		<include condition="Skin.String(MenuDesign,4)">Control_Pos43</include>
+		<height>567</height>
+		<texture border="40" colordiffuse="$VAR[TopBackgroundColor]">buttons/ButtonC0.png</texture>
+		<visible>[!Skin.String(MenuDesign,4) | Skin.String(MenuDesign,4) + [Window.IsVisible(CustomHomeCustomizer.xml) | ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]]]</visible>
+		<!--<visible>Skin.HasSetting(HideTopMainBackground) | Skin.HasSetting(background) | IsEmpty(Control.GetLabel(700102)) | [Window.IsVisible(Custom1170.xml) + !IsEmpty(Window(home).Property(SelectedColor)) + StringCompare(Window(home).Property(TEMP),TopBackgroundColor)]</visible>-->
+	  </control>
+	  <control type="image" description="טקסטורה (רקע עליון)">
+		<include>Fade_TopMainBackgroundOverlay</include>
+		<include condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)| !Skin.String(MenuDesign)]">Control_Pos42</include>
+		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,-14" time="0">Conditional</animation>
+		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,0" time="0">Conditional</animation>
+		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="265,0" time="0">Conditional</animation>
+		<aspectratio>scale</aspectratio>
+		<posy>0</posy>
+		<width>1920</width>
+		<include condition="Skin.String(MenuDesign,4)">Control_Pos43</include>
+		<height>552</height>
+		<texture border="30" colordiffuse="$VAR[TopBackgroundColor]">$VAR[TopBackgroundTexture]</texture>
+		<visible>!Control.IsVisible(7011)</visible>
+		<visible>[[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()] | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
+		<!--<visible>Skin.HasSetting(HideTopMainBackground) | Skin.HasSetting(background) | IsEmpty(Control.GetLabel(700102))</visible>-->
+		<visible>[!Skin.String(MenuDesign,4) | Skin.String(MenuDesign,4) + [Window.IsVisible(CustomHomeCustomizer.xml) | ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]]]</visible>
+	  </control>
+	</control>
+  </include>
+  <include name="Backgrounds3" description="$LOCALIZE[31013] View">
+	<control type="group">
+	  <include>Slide1</include>
+	  <height>552</height>
+	  <width>1920</width>
+	  <include>VideoPlayerWindow</include>
+	  <control type="image" id="7021" description="רקע תחתון צבע">
+		<include>Fade_MainBackgroundOverlay</include>
+		<include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + !IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo">Slide1</include>
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="74.65,85.8" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75,85.8" time="0">Conditional</animation>
+		<aspectratio>stretch</aspectratio>
+		<height>1110</height>
+		<width>1957</width>
+		<posx>-20</posx>
+		<posy>-10</posy>
+		<texture border="20" colordiffuse="$VAR[MainBackgroundColor]">buttons/ButtonC0.png</texture>
+		<visible>![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] | IsEmpty(Control.GetLabel(70130)) | Skin.HasSetting(background2)</visible>
+		<visible>![[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Player.HasVideo + !Window.IsVisible(DialogAddonSettings.xml)]</visible>
+	  </control>
+	  <control type="image" description="רקע תחתון טקסטורה">
+	    <include>Fade_MainBackgroundOverlay</include>
+	    <include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + !IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo">Slide1</include>
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="74.4,85.8" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="74.7,85.8" time="0">Conditional</animation>
+		<aspectratio>stretch</aspectratio>
+		<height>1100</height>
+		<width>1957</width>
+		<posx>-20</posx>
+		<posy>-5</posy>
+		<texture border="20" colordiffuse="$VAR[MainBackgroundColor]">$VAR[MainBackgroundTexture]</texture>
+		<visible>![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] | IsEmpty(Control.GetLabel(70130)) | Skin.HasSetting(background2)</visible>
+		<visible>![[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Player.HasVideo + !Window.IsVisible(DialogAddonSettings.xml)]</visible>
+		<!--<visible>![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] | [StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Control.HasFocus(7017) + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)</visible>-->
+	  </control>
+	  <control type="largeimage" id="7013" description="פאנארט">
+		<fadetime>200</fadetime>
+		<include>Fade_Background2Overlay</include>
+		<posx>0</posx>
+		<posy>-1104</posy>
+	    <height>1080</height>
+		<width>1920</width>
+		<include>Slide2.1</include>
+		<include>Slide2.1f</include>
+		<texture background="true">$VAR[fanart]</texture>
+		<aspectratio align="top">stretch</aspectratio>
+		<visible>!IsEmpty(Control.GetLabel(70130))</visible>
+		<visible>!Skin.HasSetting(background2)</visible>
+		<visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+		<visible>!Skin.HasSetting(ShowTopVideoInformation) | Skin.HasSetting(AlwaysFanart) | Container.Content(Seasons) | Container.Content(Episodes)</visible>
+		<visible>!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))</visible>
+		<visible>!SubString(Container.FolderPath,plugin://plugin.video.youtube)</visible>
+	  </control>
+	  <control type="largeimage" id="7015" description="פאנארט">
+		<!--<include condition="!Window.IsVisible(MyPics.xml)">Fade_Background2Overlay</include>-->
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,86.15" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75.5,86.15" time="0">Conditional</animation>
+		<aspectratio align="top">stretch</aspectratio>
+		<!--<include>Slide2.7</include>-->
+		<fadetime>200</fadetime>
+		<posx>0</posx>
+	    <posy>0</posy>
+	    <height>1080</height>
+		<width>1920</width>
+		<texture background="true">$VAR[fanart]</texture>
+		<visible>!IsEmpty(Control.GetLabel(70130)) + !Control.IsVisible(7013)</visible>
+		<visible>!Skin.HasSetting(background2)</visible>
+		<visible>[!StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014])] | !Control.IsVisible(7013)</visible>
+		<visible>![Player.HasVideo + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml)]</visible>
+	  </control>
+	  <control type="largeimage" id="7014" description="רקע פאנארט">
+		<include>Fade_Background2Overlay</include>
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,86.15" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75.5,86.15" time="0">Conditional</animation>
+		<aspectratio align="top">scale</aspectratio>
+		<posy>0</posy>
+		<height>1080</height>
+		<texture background="true">$VAR[background2]</texture>
+		<width>1920</width>
+		<visible>!Skin.HasSetting(background2) | Window.IsVisible(MyWeather.xml)</visible>
+		<visible>!Control.IsVisible(7013) + !Control.IsVisible(7015) + !IsEmpty(Control.GetLabel(70140)) + IsEmpty(Control.GetLabel(70130))</visible>
+		<visible>[!StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014])]</visible>
+		<visible>![Player.HasVideo + StringCompare(Container.Viewmode,$LOCALIZE[31011])]</visible>
+	  </control>
+	  <control type="image" description="מסגרת (רקע תחתון)">
+	    <include>Slide2.1</include>
+		<include>Fade_MainBackgroundOverlay</include>
+		
+		<animation condition="!Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60)" effect="fade" start="0" delay="3500" end="100" time="220">Conditional</animation>
+		<aspectratio>stretch</aspectratio>
+		<height>552</height>
+		<width>1950</width>
+		<posx>-15</posx>
+		<posy>-15</posy>
+		<texture border="20">buttons/ButtonEF.png</texture>
+		<visible>!IsEmpty(Control.GetLabel(70130)) + [Player.HasVideo | !Container.Content(Seasons) + !Container.Content(Episodes)]</visible>
+		<visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) + [Player.HasVideo | !Skin.HasSetting(ShowTopVideoInformation) + Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(AlwaysFanart)]</visible>
+		<visible>false</visible>
+	  </control>
+	  <control type="label" id="700105" description="רקע נוסחא">
+	    <visible>false</visible>
+		<label>$VAR[ReloadSkin_check]</label>
+	  </control>
+	  <control type="label" id="70130" description="fake">
+	    <label>$VAR[fanart]</label>
+		<visible>false</visible>
+	  </control>
+	  <control type="label" id="70140" description="fake">
+	    <label>$VAR[background2]</label>
+		<visible>false</visible>
+	  </control>
+	  <control type="image" description="רקע שחור אחורי (TEMP?)">
+		<aspectratio>stretch</aspectratio>
+		<height>1080</height>
+		<posy>0</posy>
+		<texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
+		<visible>false</visible>
+	  </control>
+	</control>   
+  </include>
+ 
   <variable name="background">
     <value condition="Skin.HasSetting(SubBackground) + StringCompare(Window(home).Property(SubButton.ID_),90_100) + !IsEmpty(Skin.String(background90_100))">$INFO[Skin.String(background90_100)]</value>
 	<value condition="Skin.HasSetting(SubBackground) + StringCompare(Window(home).Property(SubButton.ID_),90_101) + !IsEmpty(Skin.String(background90_101))">$INFO[Skin.String(background90_101)]</value>
@@ -480,4 +724,92 @@
     <value condition="!Skin.String(background101) | SubString(Skin.String(background101),special://skin)">http://i.imgur.com/OGxTBvt.jpg</value>
 	<value condition="Skin.String(background101)">$INFO[Skin.String(background101)]</value>
   </variable>
+  
+  <include name="MultiFanart_timeperimage">
+    <include condition="!Skin.String(MultiFanart_timeperimage)">MultiFanart_timeperimage0</include>
+    <include condition="Skin.String(MultiFanart_timeperimage,1)">MultiFanart_timeperimage1</include>
+    <include condition="Skin.String(MultiFanart_timeperimage,2)">MultiFanart_timeperimage2</include>
+    <include condition="Skin.String(MultiFanart_timeperimage,3)">MultiFanart_timeperimage3</include>
+    <include condition="Skin.String(MultiFanart_timeperimage,4)">MultiFanart_timeperimage4</include>
+    <include condition="Skin.String(MultiFanart_timeperimage,5)">MultiFanart_timeperimage5</include>
+  </include>
+  
+  <include name="MultiFanart_timeperimage0">
+    <timeperimage>10000</timeperimage>
+  </include>
+  <include name="MultiFanart_timeperimage1">
+    <timeperimage>15000</timeperimage>
+  </include>
+  <include name="MultiFanart_timeperimage2">
+    <timeperimage>20000</timeperimage>
+  </include>
+  <include name="MultiFanart_timeperimage3">
+    <timeperimage>25000</timeperimage>
+  </include>
+  <include name="MultiFanart_timeperimage4">
+    <timeperimage>30000</timeperimage>
+  </include>
+  <include name="MultiFanart_timeperimage5">
+    <timeperimage>7000</timeperimage>
+  </include>
+  
+  
+  <include name="MultiFanart_fadetime">
+    <include condition="!Skin.String(MultiFanart_fadetime)">MultiFanart_fadetime0</include>
+    <include condition="Skin.String(MultiFanart_fadetime,1)">MultiFanart_fadetime1</include>
+    <include condition="Skin.String(MultiFanart_fadetime,2)">MultiFanart_fadetime2</include>
+    <include condition="Skin.String(MultiFanart_fadetime,3)">MultiFanart_fadetime3</include>
+    <include condition="Skin.String(MultiFanart_fadetime,4)">MultiFanart_fadetime4</include>
+    <include condition="Skin.String(MultiFanart_fadetime,5)">MultiFanart_fadetime5</include>
+    <include condition="Skin.String(MultiFanart_fadetime,6)">MultiFanart_fadetime6</include>
+    <include condition="Skin.String(MultiFanart_fadetime,7)">MultiFanart_fadetime7</include>
+    <include condition="Skin.String(MultiFanart_fadetime,8)">MultiFanart_fadetime8</include>
+    <include condition="Skin.String(MultiFanart_fadetime,9)">MultiFanart_fadetime9</include>
+  </include>
+  
+  <include name="MultiFanart_fadetime0">
+    <fadetime>200</fadetime>
+  </include>
+  <include name="MultiFanart_fadetime1">
+    <fadetime>500</fadetime>
+  </include>
+  <include name="MultiFanart_fadetime2">
+    <fadetime>1000</fadetime>
+  </include>
+  <include name="MultiFanart_fadetime3">
+    <fadetime>1500</fadetime>
+  </include>
+  <include name="MultiFanart_fadetime4">
+    <fadetime>2000</fadetime>
+  </include>
+  <include name="MultiFanart_fadetime5">
+    <fadetime>2500</fadetime>
+  </include>
+  <include name="MultiFanart_fadetime6">
+    <fadetime>3000</fadetime>
+  </include>
+  <include name="MultiFanart_fadetime7">
+    <fadetime>3500</fadetime>
+  </include>
+  <include name="MultiFanart_fadetime8">
+    <fadetime>4000</fadetime>
+  </include>
+  <include name="MultiFanart_fadetime9">
+    <fadetime>4500</fadetime>
+  </include>
+  <include name="MultiFanart_fadetime10">
+    <fadetime>5000</fadetime>
+  </include>
+  
+  <include name="MultiFanart_randomize">
+    <include condition="!Skin.HasSetting(MultiFanart_randomize)">MultiFanart_randomize0</include>
+    <include condition="Skin.HasSetting(MultiFanart_randomize,1)">MultiFanart_randomize1</include>
+  </include>
+  
+  <include name="MultiFanart_randomize0">
+    <randomize>True</randomize>
+  </include>
+  <include name="MultiFanart_randomize1">
+    <randomize>False</randomize>
+  </include>
 </includes>
