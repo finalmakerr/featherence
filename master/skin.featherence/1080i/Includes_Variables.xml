@@ -561,7 +561,7 @@
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + SubString(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות מהאייפון/אייפד[/B][/COLOR]</value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
 	<value condition="StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Skin.HasSetting(View50_Plus2)">•••••••</value>
-	<value condition="!IsEmpty(ListItem.Label) + [IsEmpty(Control.GetLabel(1105)) + IsEmpty(Control.GetLabel(1106))]">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value>
+	<value condition="!IsEmpty(ListItem.Label) + [[IsEmpty(Control.GetLabel(1105)) + IsEmpty(Control.GetLabel(1106))] | [StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])]]">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value>
   </variable>
   
   <variable name="TopVideoInformation1112a">

@@ -236,7 +236,6 @@
 			  </control>
 		  </control>
 		  <control type="group" description="(specials) ימין">
-		    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-990,0">Conditional</animation>
 			<include>IconsInformation</include>	
 			<visible>true</visible>	
 		  </control>

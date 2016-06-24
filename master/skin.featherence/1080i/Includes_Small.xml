@@ -706,10 +706,11 @@
   </include>
   <include name="IconsInformation">
    <control type="grouplist">
+    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-950,0">Conditional</animation>
 	<include condition="StringCompare(System.Language,Hebrew)">LabelL1</include>
 	<include condition="!StringCompare(System.Language,Hebrew)">LabelR1</include>
 	<height>35</height>
-	<posx>620r</posx>
+	<posx>660r</posx>
 	<itemgap>10</itemgap>
 	<orientation>horizontal</orientation>
 	<posy>-2</posy>
