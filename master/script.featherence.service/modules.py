@@ -1782,6 +1782,7 @@ def mode215(value, value2, name, printpoint):
 			'''---------------------------'''
 	
 	text = "value" + space2 + str(value) + space + "id" + space2 + str(id) + newline + \
+	"value2" + space2 + str(value2) + newline + \
 	"idT" + space2 + str(idT) + newline + \
 	extra2
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")

@@ -851,45 +851,45 @@ def copylaunchers(force=False):
 			replace_word(emudata_launcher_file,'emulator_file',emulator_file_, infile_="", LineR=False , LineClean=False)
 			replace_word(emudata_launcher_file,'lib_args',lib_args, infile_="", LineR=False , LineClean=False)
 			
-			if not systemplatformwindows: _arcade_args = 'mame2014'
-			elif systemplatformandroid: _arcade_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			else: _arcade_args = 'mame_libretro.dll'
+			if systemplatformandroid: _arcade_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
+			elif systemplatformlinux: _arcade_args = 'mame2014'
+			elif systemplatformwindows: _arcade_args = 'mame_libretro.dll'
 			replace_word(emudata_launcher_file,'_arcade_args',_arcade_args, infile_="", LineR=False , LineClean=False)
 			
-			if not systemplatformwindows: _nintendo_args = 'nestopia'
-			elif systemplatformandroid: _arcade_args = 'start -n com.explusalpha.NesEmu/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			else: _nintendo_args = 'nestopia_libretro.dll'
+			if systemplatformandroid: _nintendo_args = 'start -n com.explusalpha.NesEmu/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
+			elif systemplatformlinux: _nintendo_args = 'nestopia_libretro.dll'
+			elif systemplatformwindows: _nintendo_args = 'nestopia'
 			replace_word(emudata_launcher_file,'_nintendo_args',_nintendo_args, infile_="", LineR=False , LineClean=False)
-			
-			if not systemplatformwindows: _nintendo64_args = 'mupen64plus'
-			elif systemplatformandroid: _arcade_args = 'start -n paulscode.android.mupen64plus.free/paulscode.android.mupen64plusae.MainActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			else: _nintendo64_args = 'mupen64plus_libretro.dll'
+
+			if systemplatformandroid: _nintendo64_args = 'start -n paulscode.android.mupen64plus.free/paulscode.android.mupen64plusae.MainActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
+			elif systemplatformlinux: _nintendo64_args = 'mupen64plus'
+			elif systemplatformwindows: _nintendo64_args = 'mupen64plus_libretro.dll'
 			#start -n com.androidemu.n64/.EmulatorActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"
 			replace_word(emudata_launcher_file,'_nintendo64_args',_nintendo64_args, infile_="", LineR=False , LineClean=False)
-			
-			if not systemplatformwindows: _nintendods_args = 'desmume'
-			elif systemplatformandroid: _arcade_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			else: _nintendods_args = 'desmume_libretro.dll'
+
+			if systemplatformandroid: _nintendods_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
+			elif systemplatformlinux: _nintendods_args = 'desmume'
+			elif systemplatformwindows: _nintendods_args = 'desmume_libretro.dll'
 			replace_word(emudata_launcher_file,'_nintendods_args',_nintendods_args, infile_="", LineR=False , LineClean=False)
 			
-			if not systemplatformwindows: _segagenesis_args = 'genesis.plus.gx'
-			elif systemplatformandroid: _arcade_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			else: _segagenesis_args = 'genesis.plus.gx_libretro.dll'
+			if systemplatformandroid: _segagenesis_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
+			elif systemplatformlinux: _segagenesis_args = 'genesis.plus.gx'
+			elif systemplatformwindows: _segagenesis_args = 'genesis.plus.gx_libretro.dll'
 			replace_word(emudata_launcher_file,'_segagenesis_args',_segagenesis_args, infile_="", LineR=False , LineClean=False)
-			
-			if not systemplatformwindows: _ps1_args = 'mednafen.psx'
-			elif systemplatformandroid: _arcade_args = 'start -n org.ppsspp.ppsspp/.PpssppActivity -e org.ppsspp.ppsspp.Shortcuts "%rom%"'
-			else: _ps1_args = 'mednafen.psx_libretro.dll'
+
+			if systemplatformandroid: _ps1_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
+			elif systemplatformlinux: _ps1_args = 'mednafen.psx'
+			elif systemplatformwindows: _ps1_args = 'mednafen.psx_libretro.dll'
 			replace_word(emudata_launcher_file,'_ps1_args',_ps1_args, infile_="", LineR=False , LineClean=False)
-			
-			if not systemplatformwindows: _supernintendo_args = 'snes9x.next'
-			elif systemplatformandroid: _arcade_args = 'start -n com.explusalpha.Snes9xPlus/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			else: _supernintendo_args = 'snes9x.next_libretro.dll'
+
+			if systemplatformandroid: _supernintendo_args = 'start -n com.explusalpha.Snes9xPlus/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
+			elif systemplatformlinux: _supernintendo_args = 'snes9x.next'
+			elif systemplatformwindows: _supernintendo_args = 'snes9x.next_libretro.dll'
 			replace_word(emudata_launcher_file,'_supernintendo_args',_supernintendo_args, infile_="", LineR=False , LineClean=False)
-			
-			if not systemplatformwindows: _turbografx16_args = 'mednafen.pce.fast'
-			elif systemplatformandroid: _arcade_args = 'start -n com.PceEmu/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			else: _turbografx16_args = 'mednafen.pce.fast_libretro.dll'
+
+			if systemplatformandroid: _turbografx16_args = 'start -n com.explusalpha.Snes9xPlus/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
+			elif systemplatformlinux: _turbografx16_args = 'mednafen.pce.fast'
+			elif systemplatformwindows: _turbografx16_args = 'mednafen.pce.fast_libretro.dll'
 			replace_word(emudata_launcher_file,'_turbografx16_args',_turbografx16_args, infile_="", LineR=False , LineClean=False)
 
 			

@@ -3,6 +3,13 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence ROFL v0.0.5 (xx-xx-16)
+------------------------
+- Added new contents.
+- Update addon settings interface.
+- Update contents sort order.
+
+------------------------
 Featherence ROFL v0.0.4 (05-May-16)
 ------------------------
 - Added option to force TV Mode.

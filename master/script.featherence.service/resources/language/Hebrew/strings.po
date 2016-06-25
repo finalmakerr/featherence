@@ -1532,12 +1532,12 @@ msgid ""
 msgstr ""
 
 msgctxt "#32397"
-msgid ""
-msgstr ""
+msgid "Enable for forcing your preference view"
+msgstr "הפעל לכפיית מצב תצוגה מותאם אישי"
 
 msgctxt "#32398"
-msgid ""
-msgstr ""
+msgid "This View is now Default"
+msgstr "תצוגה זו היא בררת המחדל כעת"
 
 msgctxt "#32399"
 msgid "Force TV Mode"

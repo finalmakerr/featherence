@@ -559,6 +559,22 @@ msgctxt "#30408"
 msgid "Damn Fail"
 msgstr "Damn Fail"
 
+msgctxt "#30409"
+msgid "Cihan Kosif TV"
+msgstr "Cihan Kosif TV"
+
+msgctxt "#30600"
+msgid "קומי קומי"
+msgstr "קומי קומי"
+
+msgctxt "#30650"
+msgid "Anything Goes"
+msgstr "הכל הולך"
+
+msgctxt "#30651"
+msgid "Tzchok Meavoda"
+msgstr "צחוק מעבודה"
+
 msgctxt "#30800"
 msgid "Brian Regan"
 msgstr "Brian Regan"

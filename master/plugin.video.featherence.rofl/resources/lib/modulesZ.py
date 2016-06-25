@@ -18,7 +18,7 @@ def CATEGORIES10101Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))
 
 def CATEGORIES10102Z(name, iconimage, desc, background, fanart):
 	background = 102
@@ -30,7 +30,7 @@ def CATEGORIES10102Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))
 
 def CATEGORIES10103Z(name, iconimage, desc, background, fanart):
 	background = 103
@@ -42,7 +42,7 @@ def CATEGORIES10103Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))
 	
 	
 def CATEGORIES10104Z(name, iconimage, desc, background, fanart):
@@ -55,7 +55,7 @@ def CATEGORIES10104Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))
 
 def CATEGORIES10105Z(name, iconimage, desc, background, fanart):
 	'''די ג'י ישראליים'''
@@ -67,7 +67,7 @@ def CATEGORIES10105Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))
 	
 def CATEGORIES10106Z(name, iconimage, desc, background, fanart):
 	''''''
@@ -79,7 +79,7 @@ def CATEGORIES10106Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))
 
 def CATEGORIES10107Z(name, iconimage, desc, background, fanart):
 	''''''
@@ -91,7 +91,7 @@ def CATEGORIES10107Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))
 
 def CATEGORIES10109Z(name, iconimage, desc, background, fanart):
 	''''''
@@ -103,7 +103,7 @@ def CATEGORIES10109Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))
 
 def CATEGORIES11101Z(name, iconimage, desc, background, fanart):
 	''''''
@@ -115,7 +115,7 @@ def CATEGORIES11101Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))
 
 def CATEGORIES11102Z(name, iconimage, desc, background, fanart):
 	''''''
@@ -127,7 +127,7 @@ def CATEGORIES11102Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))
 
 def CATEGORIES11104Z(name, iconimage, desc, background, fanart):
 	''''''
@@ -138,7 +138,7 @@ def CATEGORIES11104Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))
 
 def CATEGORIES11105Z(name, iconimage, desc, background, fanart):
 	''''''
@@ -148,7 +148,7 @@ def CATEGORIES11105Z(name, iconimage, desc, background, fanart):
 
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))
 	
 def CATEGORIES118Z(name, iconimage, desc, background, fanart):
 	''''''
@@ -157,4 +157,4 @@ def CATEGORIES118Z(name, iconimage, desc, background, fanart):
 	list = []
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',50, getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0, getAddonFanart(background, custom=fanart))

@@ -11,6 +11,9 @@ addonID            = xbmcaddon.Addon().getAddonInfo("id")
 addonPath          = xbmcaddon.Addon().getAddonInfo("path")
 addonFanart        = xbmcaddon.Addon().getAddonInfo("fanart")
 addonVersion       = xbmcaddon.Addon().getAddonInfo("version")
+addonProfile       = xbmcaddon.Addon().getAddonInfo("profile")
+
+addonProfile = xbmc.translatePath(addonProfile).decode('utf-8')
 
 addonName2 = "Featherence"
 printfirst = addonName + ": !@# "

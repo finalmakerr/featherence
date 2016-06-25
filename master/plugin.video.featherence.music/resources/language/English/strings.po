@@ -486,6 +486,231 @@ msgctxt "#30199"
 msgid ""
 msgstr ""
 
+#אביתר בנאי"
+msgctxt "#30201"
+msgid "Eviatar Banai was born on February 8, 1973, is an Israeli singer-songwriter"
+msgstr "אביתר בנאי (נולד ב-8 בפברואר 1973, ו' באדר א' ה'תשל"ג) הוא זמר-יוצר ישראלי, בן למשפחת בנאי"
+
+#אברהם טל"
+msgctxt "#30202"
+msgid "Avraham Tal was born on November 28, 1976 is a singer, musician and record producer Israeli..."
+msgstr "אברהם טל (נולד ב-28 בנובמבר 1976) הוא זמר, מוזיקאי ומפיק מוזיקלי ישראלי..."
+
+#אייל גולן"
+msgctxt "#30203"
+msgid "Eyal Golan, born 12 April 1971 is an Israeli singer, considered one of the most successful singers in Israel. Most of his albums reached platinum album status ..."
+msgstr "אייל גולן (נולד ב-12 באפריל 1971) הוא זמר ישראלי, הנחשב לאחד הזמרים המצליחים בישראל. רוב אלבומיו הגיעו למעמד אלבום פלטינה.."
+
+msgctxt "#30204"
+msgid ""
+msgstr ""
+
+#אתניX"
+msgctxt "#30205"
+msgid "Ethnic X ("Etnix") is an Israeli-based band continuously from 1989 until today. The band was named seven times Band of the Year "in the" hit parade of the annual Hebrew, "more than any other band in Israel ...""
+msgstr "אתניX ("אתניקס") היא להקה ישראלית הפועלת ברציפות משנת 1989 עד היום. הלהקה הוכתרה שבע פעמים כ"להקת השנה" במסגרת "מצעד הפזמונים העברי השנתי", יותר מכל להקה אחרת בישראל..."
+
+#דודו אהרון"
+msgctxt "#30207"
+msgid "Born on December 23, 1984 is a singer, creator, musician, composer, lyricist Israeli ..."
+msgstr "נולד ב 23 בדצמבר 1984  הוא זמר, יוצר, מוזיקאי, מלחין ופזמונאי ישראלי..."
+
+#גיא ויהל"
+msgctxt "#30208"
+msgid "They are a pair of singer-songwriters, composed of Israeli and Guy Mensch Yahel Doron ..."
+msgstr "הם צמד זמרים-יוצרים ישראלים המורכב מגיא מנטש ויהל דורון..."
+
+msgctxt "#30209"
+msgid ""
+msgstr ""
+
+msgctxt "#30210"
+msgid ""
+msgstr "[COLOR=yellow][/COLOR]   " "
+
+#דני סנדרסון"
+msgctxt "#30211"
+msgid "Born on 30 November 1950 is a guitarist, singer, musician, writer, songwriter, composer and record producer Israeli ..."
+msgstr "(נולד ב-30 בנובמבר 1950) הוא גיטריסט, זמר, מוזיקאי, סופר, פזמונאי, מלחין ומפיק מוזיקלי ישראלי..."
+
+#הדודאים"
+msgctxt "#30248"
+msgid "There were a couple of singers, Benny Amdurski and Israel Gurion, who between 1957-1993 was one of the leading pairs Hebrew song ..."
+msgstr "היו צמד זמרים, בני אמדורסקי וישראל גוריון, אשר בין השנים 1957-1993 היה אחד מהצמדים המובילים בזמר העברי..."
+
+#הפרוייקט של רביבו"
+msgctxt "#30212"
+msgid "Revivo is the project of a musical composition Israeli operation cover versions of songs released in the seventies and eighties ..."
+msgstr "הפרויקט של רביבו הוא הרכב מוזיקלי ישראלי המבצע גרסאות כיסוי של שירים שהתפרסמו בשנות השבעים והשמונים... "
+
+#הראל סקעת"
+msgctxt "#30213"
+msgid "Born on August 8, 1981 in Kfar Saba is an Israeli singer and actor ..."
+msgstr "נולד ב-8 באוגוסט 1981 בכפר סבא הוא זמר ושחקן ישראלי..."
+
+#חיים משה"
+msgctxt "#30214"
+msgid "Born on September 20, 1955 in Ramat Hasharon is an Israeli singer. His musical style includes singer Mediterranean, Israeli music, and pop ..."
+msgstr "נולד ב-20 בספטמבר 1955 ברמת השרון הוא זמר ישראלי. הסגנון המוזיקלי שלו כולל זמר ים-תיכוני, מוזיקה ישראלית, ופופ..."
+
+#כוורת דודה גזוז"
+msgctxt "#30215"
+msgid "The band members are leading in all vehicles Gidi Gov and Danny Sanderson bands were in the seventies of the 20th century"
+msgstr "חברי הלהקה המובילים בכל ההרכבים הם גידי גוב ודני סנדרסון הלהקות פעלו בשנות השבעים של המאה ה 20"
+
+msgctxt "#30216"
+msgid ""
+msgstr ""
+
+#ישי לוי"
+msgctxt "#30217"
+msgid "Yishai Levy was born on January 20, 1963 is an Israeli singer, considered one of the leaders of Mizrahi music in Israel and the Mediterranean ..."
+msgstr "ישי לוי (נולד ב-20 בינואר 1963) הוא זמר ישראלי, הנחשב לאחד ממובילי המוזיקה המזרחית והים תיכונית בישראל..."
+
+#ליאור נרקיס"
+msgctxt "#30218"
+msgid "Born on November 8, 1976 is an Israeli singer. Previously he was minister of music and currently Minister of depression Eastern Mediterranean music and pop music ..."
+msgstr "(נולד ב-8 בנובמבר 1976) הוא זמר ישראלי. בעברו היה שר מוזיקת דיכאון וכיום שר מוזיקה מזרחית ים תיכונית וגם מוזיקת פופ..."
+
+msgctxt "#30219"
+msgid ""
+msgstr " "
+
+#מזי כהן"
+msgctxt "#30220"
+msgid "She was born on April 29, 1959 is an Israeli singer and musician. At the beginning, appeared as a soloist of the band trimmed and since has worked with dozens of Israeli musicians ..."
+msgstr "(נולדה ב-29 באפריל 1959) היא זמרת ומוזיקאית ישראלית. התפרסמה בתחילת דרכה כסולנית של להקת גזוז ומאז שיתפה פעולה עם עשרות מוזיקאים ישראלים..."
+
+#מוש בן ארי ולהקת שבע"
+msgctxt "#30221"
+msgid "Born on September 26, 1970) is a singer, musician, songwriter and music composer ..."
+msgstr "נולד ב-26 בספטמבר 1970) הוא זמר, מוזיקאי, פזמונאי ומלחין ישראלי..."
+
+#מושיק עפיה"
+msgctxt "#30222"
+msgid "Born on October 3, 1974 in Holon is an Israeli singer who sang in oriental style..."
+msgstr "נולד ב-3 באוקטובר 1974 בחולון) הוא זמר ישראלי ששר בסגנון מזרחי..."
+
+#מירי מסיקה"
+msgctxt "#30223"
+msgid "Born on May 3, 1978 is a singer, actress and model Israeli ..."
+msgstr "נולדה ב-3 במאי  1978 היא זמרת, שחקנית ודוגמנית ישראלית..."
+
+#מאור אדרי"
+msgctxt "#30224"
+msgid "Born on 17 April 1989, is a singer, writer and composer Israeli Oriental music ..."
+msgstr "נולד ב-17 באפריל 1989 הוא זמר, כותב ומלחין מוזיקה מזרחית ישראלי..."
+
+#משה פרץ"
+msgctxt "#30225"
+msgid "Born on 10 May 1983, is a singer, composer and songwriter Israeli ..."
+msgstr "נולד ב-10 במאי 1983, כ"ז באייר תשמ"ג הוא זמר, מלחין ופזמונאי ישראלי..."
+
+#משינה"
+msgctxt "#30226"
+msgid "Israeli rock band, considered by many one of the most prominent bands operating in Israel ..."
+msgstr "להקת רוק ישראלית, הנחשבת בעיני רבים לאחת הלהקות הבולטות שפעלו בישראל‏..."
+
+#נתן גושן"
+msgctxt "#30227"
+msgid "Born on August 6, 1986 a singer, songwriter and music composer ..."
+msgstr "נולד ב  6 באוגוסט 1986 זמר, פזמונאי ומלחין ישראלי..."
+
+msgctxt "#30229"
+msgid ""
+msgstr ""
+
+#עיברי לידר"
+msgctxt "#30230"
+msgid "Born on 10 February 1974 is a singer-songwriter, composer and lyricist Acum Prize-winning Israeli Israeli singer first came out of the closet"
+msgstr "נולד ב  10 בפברואר 1974 הוא זמר-יוצר, מלחין ופזמונאי ישראלי זוכה פרס אקו"ם‏ ..."
+
+#עידן רייכל"
+msgctxt "#30232"
+msgid "Born on September 12, 1977, is a musician, songwriter, composer, singer-songwriter, arranger and record producer Israel. Best known as a producer, "Idan Raichel Project ..."
+msgstr " (נולד ב-12 בספטמבר 1977), הוא מוזיקאי, פזמונאי, מלחין, זמר-יוצר, מעבד ומפיק מוזיקלי ישראלי. מוכר בעיקר כמפיק "הפרויקט של עידן רייכל ..."
+
+#עדן בן זקן"
+msgctxt "#30246"
+msgid "She was born on June 8, 1994 Israeli singer ..."
+msgstr "נולדה ב-8 ביוני 1994 היא זמרת ישראלית..."
+
+#עומר אדם"
+msgctxt "#30233"
+msgid "Born on 22 October 1993 in the United States is an Israeli singer Minister pop music Mediterranean. ..."
+msgstr "נולד ב-22 באוקטובר 1993 בארצות הברית הוא זמר ישראלי השר מוזיקת פופ ים-תיכוני ..."
+
+msgctxt "#30234"
+msgid ""
+msgstr ""
+
+#פאר טסי"
+msgctxt "#30235"
+msgid "Born on May 10, 1984 is the singer-songwriter and music composer Israeli Mediterranean ..."
+msgstr "נולד ב-10 במאי 1984 הוא זמר, כותב ומלחין מוזיקה ים-תיכונית ישראלי..."
+
+#פורטיסחרוף"
+msgctxt "#30206"
+msgid "Born July 7, 1957, is a singer, musician, songwriter, composer and record producer Israeli ..."
+msgstr "נולד ב-7 ביולי 1957, הוא זמר, מוזיקאי, פזמונאי, מלחין ומפיק מוזיקלי ישראלי..."
+
+msgctxt "#30236"
+msgid ""
+msgstr ""
+
+#קובי פרץ"
+msgctxt "#30237"
+msgid "Born on 28 October 1975 an Israeli singer who sang pop music and oriental dance ..."
+msgstr "נולד ב-28 באוקטובר 1975 הוא זמר ישראלי השר מוזיקה מזרחית ופופ דאנס"
+
+#קרן פלס"
+msgctxt "#30238"
+msgid "Born on 11 March 1979 is a singer and generates pop-rock style and an Israeli actress, born Yavniel"
+msgstr "נולדה ב-11 במרץ 1979 היא זמרת ויוצרת בסיגנון פופ-רוק ושחקנית ישראלית, נולדה ביבניאל"
+
+#ריטה"
+msgctxt "#30239"
+msgid "Rita Jehan ex-porosity Kleinstein; Born on March 24, 1962, better known by her first name only, is an Israeli actress and singer ..."
+msgstr "ריטה יהאן-פרוז לשעבר קלינשטיין; נולדה ב-24 במרץ 1962, המוכרת יותר בשמה הפרטי בלבד, היא זמרת ושחקנית ישראלית..."
+
+#רמי קליינשטיין"
+msgctxt "#30240"
+msgid "Born on November 10, 1962 is singer-songwriter, composer and record producer Israel. Activities concentrate on writing original material itself and the past singer Rita, who was his wife ..."
+msgstr " נולד ב-10 בנובמבר 1962 הוא זמר-יוצר, מלחין ומפיק מוזיקלי ישראלי. פעילותו מתמקדת בכתיבת חומר מקורי לעצמו ובעבר גם לזמרת ריטה, מי שהייתה אשתו..."
+
+#שירי מיימון"
+msgctxt "#30241"
+msgid "She was born on 17 May 1981 is a singer, actress and TV anchor Israeli ..."
+msgstr "נולדה ב-17 במאי 1981 היא זמרת, שחקנית ומנחת טלוויזיה ישראלית ..."
+
+#שלום חנוך"
+msgctxt "#30242"
+msgid "Born on 1 September 1946 is singer-songwriter, lyricist and music composer, considered one of the first Israeli rock artists. Work, both in collaboration with other artists initially and then as a soloist, greatly influenced popular music in Israel. Especially recognized for his collaboration with singer Arik Einstein, produced the first Israeli rock albums..."
+msgstr "נולד ב-1 בספטמבר 1946 הוא זמר-יוצר, פזמונאי ומלחין ישראלי, הנחשב לאחד מראשוני היוצרים ברוק הישראלי. יצירתו, הן במסגרת שיתופי פעולה עם אמנים אחרים בתחילת דרכו והן לאחר מכן כסולן, השפיעה רבות על המוזיקה הפופולרית בישראל. במיוחד מוכר שיתוף הפעולה שלו עם הזמר אריק איינשטיין, שהניב את אלבומי הרוק הישראליים הראשונים.‏.."
+
+#שלומי שבת"
+msgctxt "#30243"
+msgid "Born on August 30, 1954 is an Israeli singer and composer ..."
+msgstr "נולד ב-30 באוגוסט 1954 הוא זמר ומלחין ישראלי..."
+
+#שלישיית גשר הירקון"
+msgctxt "#30249"
+msgid "Musical composition was held between the years 1964 to 1966 in two vehicles. The first band members were Arik Einstein, Yoram Gaon and his Amdurski. Its program replaced the trio's second Israel Gurion Yoram Gaon leaving ..."
+msgstr "הייתה הרכב מוזיקלי שהתקיים בין השנים 1964 - 1966 בשני הרכבים. חברי ההרכב הראשון היו אריק איינשטיין, יהורם גאון ובני אמדורסקי. בתוכניתה השנייה של השלישייה החליף ישראל גוריון את יהורם גאון שעזב..."
+
+#שלמה ארצי"
+msgctxt "#30244"
+msgid "Born on November 26, 1949, singer-songwriter, musician, composer and songwriter Israel. Considered one of the most successful singers in Israel ... ""
+msgstr " נולד ב-26 בנובמבר 1949 הוא זמר-יוצר, מוזיקאי, מלחין ופזמונאי ישראלי. נחשב לאחד הזמרים המצליחים בישראל..."
+
+msgctxt "#30245"
+msgid ""
+msgstr "[COLOR=yellow]שרית חדד (בעבר שרה חודדטוב; נולדה ב-20 בספטמבר 1978, י"ח באלול התשל"ח) היא זמרת ומוזיקאית ישראלית.[/COLOR][CR][CR]הוציאה מעל 20 אלבומים, וזכתה מספר פעמים בתואר "זמרת השנה" וכן בתואר "זמרת העשור" במצעד הפזמונים העברי.[CR]שרית חדד מתמחה במוזיקה מזרחית, והיא הזמרת המושמעת ביותר בישראל..."
+
+msgctxt "#30247"
+msgid ""
+msgstr ""
+
 msgctxt "#30300"
 msgid ""
 msgstr ""
@@ -515,16 +740,16 @@ msgid ""
 msgstr ""
 
 msgctxt "#30307"
-msgid ""
-msgstr ""
+msgid "Christina Aguilera"
+msgstr "Christina Aguilera"
 
 msgctxt "#30308"
-msgid ""
-msgstr ""
+msgid "Maroon 5"
+msgstr "Maroon 5"
 
 msgctxt "#30309"
-msgid ""
-msgstr ""
+msgid "Eminem"
+msgstr "Eminem"
 
 msgctxt "#30310"
 msgid "Roy Orbison"
@@ -535,8 +760,8 @@ msgid "Madonna"
 msgstr "Madonna"
 
 msgctxt "#30312"
-msgid ""
-msgstr ""
+msgid "Pharrell Williams"
+msgstr "Pharrell Williams"
 
 msgctxt "#30313"
 msgid "Mariah Carey"
@@ -555,24 +780,24 @@ msgid ""
 msgstr ""
 
 msgctxt "#30317"
-msgid ""
-msgstr ""
+msgid "Enrique Iglesias"
+msgstr "Enrique Iglesias"
 
 msgctxt "#30318"
 msgid "Jennifer Lopez"
 msgstr "Jennifer Lopez"
 
 msgctxt "#30319"
-msgid ""
-msgstr ""
+msgid "Katy Perry"
+msgstr "Katy Perry"
 
 msgctxt "#30320"
 msgid "Elvis Presley‏"
 msgstr "Elvis Presley"
 
 msgctxt "#30321"
-msgid ""
-msgstr ""
+msgid "Meghan Trainor"
+msgstr "Meghan Trainor"
 
 msgctxt "#30322"
 msgid "Bob Marley"
@@ -615,12 +840,12 @@ msgid "Jean Michel Jarre "
 msgstr "Jean Michel Jarre "
 
 msgctxt "#30332"
-msgid ""
-msgstr ""
+msgid "Celine Dion"
+msgstr "Celine Dion"
 
 msgctxt "#30333"
-msgid ""
-msgstr ""
+msgid "Sam Smith"
+msgstr "Sam Smith"
 
 msgctxt "#30334"
 msgid ""
@@ -890,260 +1115,1558 @@ msgctxt "#30000"
 msgid ""
 msgstr ""
 
-#אביתר בנאי"
-msgctxt "#30201"
-msgid "Eviatar Banai was born on February 8, 1973, is an Israeli singer-songwriter"
-msgstr "אביתר בנאי (נולד ב-8 בפברואר 1973, ו' באדר א' ה'תשל"ג) הוא זמר-יוצר ישראלי, בן למשפחת בנאי"
-
-#אברהם טל"
-msgctxt "#30202"
-msgid "Avraham Tal was born on November 28, 1976 is a singer, musician and record producer Israeli..."
-msgstr "אברהם טל (נולד ב-28 בנובמבר 1976) הוא זמר, מוזיקאי ומפיק מוזיקלי ישראלי..."
-
-#אייל גולן"
-msgctxt "#30203"
-msgid "Eyal Golan, born 12 April 1971 is an Israeli singer, considered one of the most successful singers in Israel. Most of his albums reached platinum album status ..."
-msgstr "אייל גולן (נולד ב-12 באפריל 1971) הוא זמר ישראלי, הנחשב לאחד הזמרים המצליחים בישראל. רוב אלבומיו הגיעו למעמד אלבום פלטינה.."
-
-msgctxt "#30204"
-msgid ""
-msgstr ""
-
-#אתניX"
-msgctxt "#30205"
-msgid ""
-Ethnic X ("Etnix") is an Israeli-based band continuously from 1989 until today. The band was named seven times Band of the Year "in the" hit parade of the annual Hebrew, "more than any other band in Israel ...""
-msgstr "אתניX ("אתניקס") היא להקה ישראלית הפועלת ברציפות משנת 1989 עד היום. הלהקה הוכתרה שבע פעמים כ"להקת השנה" במסגרת "מצעד הפזמונים העברי השנתי", יותר מכל להקה אחרת בישראל..."
-
-#דודו אהרון"
-msgctxt "#30207"
-msgid "Born on December 23, 1984 is a singer, creator, musician, composer, lyricist Israeli ..."
-msgstr "נולד ב 23 בדצמבר 1984  הוא זמר, יוצר, מוזיקאי, מלחין ופזמונאי ישראלי..."
-
-#גיא ויהל"
-msgctxt "#30208"
-msgid "They are a pair of singer-songwriters, composed of Israeli and Guy Mensch Yahel Doron ..."
-msgstr "הם צמד זמרים-יוצרים ישראלים המורכב מגיא מנטש ויהל דורון..."
-
-msgctxt "#30209"
-msgid ""
-msgstr ""
-
-msgctxt "#30210"
-msgid ""
-msgstr "[COLOR=yellow][/COLOR]   " "
-
-#דני סנדרסון"
-msgctxt "#30211"
-msgid "Born on 30 November 1950 is a guitarist, singer, musician, writer, songwriter, composer and record producer Israeli ..."
-msgstr "(נולד ב-30 בנובמבר 1950) הוא גיטריסט, זמר, מוזיקאי, סופר, פזמונאי, מלחין ומפיק מוזיקלי ישראלי..."
-
-#הדודאים"
-msgctxt "#30248"
-msgid "There were a couple of singers, Benny Amdurski and Israel Gurion, who between 1957-1993 was one of the leading pairs Hebrew song ..."
-msgstr "היו צמד זמרים, בני אמדורסקי וישראל גוריון, אשר בין השנים 1957-1993 היה אחד מהצמדים המובילים בזמר העברי..."
-
-#הפרוייקט של רביבו"
-msgctxt "#30212"
-msgid "Revivo is the project of a musical composition Israeli operation cover versions of songs released in the seventies and eighties ..."
-msgstr "הפרויקט של רביבו הוא הרכב מוזיקלי ישראלי המבצע גרסאות כיסוי של שירים שהתפרסמו בשנות השבעים והשמונים... "
-
-#הראל סקעת"
-msgctxt "#30213"
-msgid "Born on August 8, 1981 in Kfar Saba is an Israeli singer and actor ..."
-msgstr "נולד ב-8 באוגוסט 1981 בכפר סבא הוא זמר ושחקן ישראלי..."
-
-#חיים משה"
-msgctxt "#30214"
-msgid "Born on September 20, 1955 in Ramat Hasharon is an Israeli singer. His musical style includes singer Mediterranean, Israeli music, and pop ..."
-msgstr "נולד ב-20 בספטמבר 1955 ברמת השרון הוא זמר ישראלי. הסגנון המוזיקלי שלו כולל זמר ים-תיכוני, מוזיקה ישראלית, ופופ..."
-
-#כוורת דודה גזוז"
-msgctxt "#30215"
-msgid "The band members are leading in all vehicles Gidi Gov and Danny Sanderson bands were in the seventies of the 20th century"
-msgstr "חברי הלהקה המובילים בכל ההרכבים הם גידי גוב ודני סנדרסון הלהקות פעלו בשנות השבעים של המאה ה 20"
-
-msgctxt "#30216"
-msgid ""
-msgstr ""
-
-#ישי לוי"
-msgctxt "#30217"
-msgid "Yishai Levy was born on January 20, 1963 is an Israeli singer, considered one of the leaders of Mizrahi music in Israel and the Mediterranean ..."
-msgstr "ישי לוי (נולד ב-20 בינואר 1963) הוא זמר ישראלי, הנחשב לאחד ממובילי המוזיקה המזרחית והים תיכונית בישראל..."
-
-#ליאור נרקיס"
-msgctxt "#30218"
-msgid "Born on November 8, 1976 is an Israeli singer. Previously he was minister of music and currently Minister of depression Eastern Mediterranean music and pop music ..."
-msgstr "(נולד ב-8 בנובמבר 1976) הוא זמר ישראלי. בעברו היה שר מוזיקת דיכאון וכיום שר מוזיקה מזרחית ים תיכונית וגם מוזיקת פופ..."
-
-msgctxt "#30219"
-msgid ""
-msgstr " "
-
-#מזי כהן"
-msgctxt "#30220"
-msgid "She was born on April 29, 1959 is an Israeli singer and musician. At the beginning, appeared as a soloist of the band trimmed and since has worked with dozens of Israeli musicians ..."
-msgstr "(נולדה ב-29 באפריל 1959) היא זמרת ומוזיקאית ישראלית. התפרסמה בתחילת דרכה כסולנית של להקת גזוז ומאז שיתפה פעולה עם עשרות מוזיקאים ישראלים..."
-
-#מוש בן ארי ולהקת שבע"
-msgctxt "#30221"
-msgid "Born on September 26, 1970) is a singer, musician, songwriter and music composer ..."
-msgstr "נולד ב-26 בספטמבר 1970) הוא זמר, מוזיקאי, פזמונאי ומלחין ישראלי..."
-
-#מושיק עפיה"
-msgctxt "#30222"
-msgid "Born on October 3, 1974 in Holon is an Israeli singer who sang in oriental style..."
-msgstr "נולד ב-3 באוקטובר 1974 בחולון) הוא זמר ישראלי ששר בסגנון מזרחי..."
-
-#מירי מסיקה"
-msgctxt "#30223"
-msgid "Born on May 3, 1978 is a singer, actress and model Israeli ..."
-msgstr "נולדה ב-3 במאי  1978 היא זמרת, שחקנית ודוגמנית ישראלית..."
-
-#מאור אדרי"
-msgctxt "#30224"
-msgid "Born on 17 April 1989, is a singer, writer and composer Israeli Oriental music ..."
-msgstr "נולד ב-17 באפריל 1989 הוא זמר, כותב ומלחין מוזיקה מזרחית ישראלי..."
-
-#משה פרץ"
-msgctxt "#30225"
-msgid "Born on 10 May 1983, is a singer, composer and songwriter Israeli ..."
-msgstr "נולד ב-10 במאי 1983, כ"ז באייר תשמ"ג הוא זמר, מלחין ופזמונאי ישראלי..."
-
-#משינה"
-msgctxt "#30226"
-msgid "Israeli rock band, considered by many one of the most prominent bands operating in Israel ..."
-msgstr "להקת רוק ישראלית, הנחשבת בעיני רבים לאחת הלהקות הבולטות שפעלו בישראל‏..."
-
-#נתן גושן"
-msgctxt "#30227"
-msgid "Born on August 6, 1986 a singer, songwriter and music composer ..."
-msgstr "נולד ב  6 באוגוסט 1986 זמר, פזמונאי ומלחין ישראלי..."
-
-msgctxt "#30229"
-msgid ""
-msgstr ""
-
-#עיברי לידר"
-msgctxt "#30230"
-msgid "Born on 10 February 1974 is a singer-songwriter, composer and lyricist Acum Prize-winning Israeli Israeli singer first came out of the closet"
-msgstr "נולד ב  10 בפברואר 1974 הוא זמר-יוצר, מלחין ופזמונאי ישראלי זוכה פרס אקו"ם‏ ..."
-
-#עידן רייכל"
-msgctxt "#30232"
-msgid "Born on September 12, 1977, is a musician, songwriter, composer, singer-songwriter, arranger and record producer Israel. Best known as a producer, "Idan Raichel Project ..."
-msgstr " (נולד ב-12 בספטמבר 1977), הוא מוזיקאי, פזמונאי, מלחין, זמר-יוצר, מעבד ומפיק מוזיקלי ישראלי. מוכר בעיקר כמפיק "הפרויקט של עידן רייכל ..."
-
-#עדן בן זקן"
-msgctxt "#30246"
-msgid "She was born on June 8, 1994 Israeli singer ..."
-msgstr "נולדה ב-8 ביוני 1994 היא זמרת ישראלית..."
-
-#עומר אדם"
-msgctxt "#30233"
-msgid "Born on 22 October 1993 in the United States is an Israeli singer Minister pop music Mediterranean. ..."
-msgstr "נולד ב-22 באוקטובר 1993 בארצות הברית הוא זמר ישראלי השר מוזיקת פופ ים-תיכוני ..."
-
-msgctxt "#30234"
-msgid ""
-msgstr ""
-
-#פאר טסי"
-msgctxt "#30235"
-msgid "Born on May 10, 1984 is the singer-songwriter and music composer Israeli Mediterranean ..."
-msgstr "נולד ב-10 במאי 1984 הוא זמר, כותב ומלחין מוזיקה ים-תיכונית ישראלי..."
-
-#פורטיסחרוף"
-msgctxt "#30206"
-msgid "Born July 7, 1957, is a singer, musician, songwriter, composer and record producer Israeli ..."
-msgstr "נולד ב-7 ביולי 1957, הוא זמר, מוזיקאי, פזמונאי, מלחין ומפיק מוזיקלי ישראלי..."
-
-msgctxt "#30236"
-msgid ""
-msgstr ""
-
-#קובי פרץ"
-msgctxt "#30237"
-msgid "Born on 28 October 1975 an Israeli singer who sang pop music and oriental dance ..."
-msgstr "נולד ב-28 באוקטובר 1975 הוא זמר ישראלי השר מוזיקה מזרחית ופופ דאנס"
-
-#קרן פלס"
-msgctxt "#30238"
-msgid "Born on 11 March 1979 is a singer and generates pop-rock style and an Israeli actress, born Yavniel"
-msgstr "נולדה ב-11 במרץ 1979 היא זמרת ויוצרת בסיגנון פופ-רוק ושחקנית ישראלית, נולדה ביבניאל"
-
-#ריטה"
-msgctxt "#30239"
-msgid "Rita Jehan ex-porosity Kleinstein; Born on March 24, 1962, better known by her first name only, is an Israeli actress and singer ..."
-msgstr "ריטה יהאן-פרוז לשעבר קלינשטיין; נולדה ב-24 במרץ 1962, המוכרת יותר בשמה הפרטי בלבד, היא זמרת ושחקנית ישראלית..."
-
-#רמי קליינשטיין"
-msgctxt "#30240"
-msgid "Born on November 10, 1962 is singer-songwriter, composer and record producer Israel. Activities concentrate on writing original material itself and the past singer Rita, who was his wife ..."
-msgstr " נולד ב-10 בנובמבר 1962 הוא זמר-יוצר, מלחין ומפיק מוזיקלי ישראלי. פעילותו מתמקדת בכתיבת חומר מקורי לעצמו ובעבר גם לזמרת ריטה, מי שהייתה אשתו..."
-
-#שירי מיימון"
-msgctxt "#30241"
-msgid "She was born on 17 May 1981 is a singer, actress and TV anchor Israeli ..."
-msgstr "נולדה ב-17 במאי 1981 היא זמרת, שחקנית ומנחת טלוויזיה ישראלית ..."
-
-#שלום חנוך"
-msgctxt "#30242"
-msgid "Born on 1 September 1946 is singer-songwriter, lyricist and music composer, considered one of the first Israeli rock artists. Work, both in collaboration with other artists initially and then as a soloist, greatly influenced popular music in Israel. Especially recognized for his collaboration with singer Arik Einstein, produced the first Israeli rock albums..."
-msgstr "נולד ב-1 בספטמבר 1946 הוא זמר-יוצר, פזמונאי ומלחין ישראלי, הנחשב לאחד מראשוני היוצרים ברוק הישראלי. יצירתו, הן במסגרת שיתופי פעולה עם אמנים אחרים בתחילת דרכו והן לאחר מכן כסולן, השפיעה רבות על המוזיקה הפופולרית בישראל. במיוחד מוכר שיתוף הפעולה שלו עם הזמר אריק איינשטיין, שהניב את אלבומי הרוק הישראליים הראשונים.‏.."
-
-#שלומי שבת"
-msgctxt "#30243"
-msgid "Born on August 30, 1954 is an Israeli singer and composer ..."
-msgstr "נולד ב-30 באוגוסט 1954 הוא זמר ומלחין ישראלי..."
-
-#שלישיית גשר הירקון"
-msgctxt "#30249"
-msgid "Musical composition was held between the years 1964 to 1966 in two vehicles. The first band members were Arik Einstein, Yoram Gaon and his Amdurski. Its program replaced the trio's second Israel Gurion Yoram Gaon leaving ..."
-msgstr "הייתה הרכב מוזיקלי שהתקיים בין השנים 1964 - 1966 בשני הרכבים. חברי ההרכב הראשון היו אריק איינשטיין, יהורם גאון ובני אמדורסקי. בתוכניתה השנייה של השלישייה החליף ישראל גוריון את יהורם גאון שעזב..."
-
-#שלמה ארצי"
-msgctxt "#30244"
-msgid "Born on November 26, 1949, singer-songwriter, musician, composer and songwriter Israel. Considered one of the most successful singers in Israel ... ""
-msgstr " נולד ב-26 בנובמבר 1949 הוא זמר-יוצר, מוזיקאי, מלחין ופזמונאי ישראלי. נחשב לאחד הזמרים המצליחים בישראל..."
-
-msgctxt "#30245"
-msgid ""
-msgstr "[COLOR=yellow]שרית חדד (בעבר שרה חודדטוב; נולדה ב-20 בספטמבר 1978, י"ח באלול התשל"ח) היא זמרת ומוזיקאית ישראלית.[/COLOR][CR][CR]הוציאה מעל 20 אלבומים, וזכתה מספר פעמים בתואר "זמרת השנה" וכן בתואר "זמרת העשור" במצעד הפזמונים העברי.[CR]שרית חדד מתמחה במוזיקה מזרחית, והיא הזמרת המושמעת ביותר בישראל..."
-
-msgctxt "#30247"
-msgid ""
-msgstr ""
-
-msgctxt "#30310"
-msgid "Roy Orbison"
-msgstr "Roy Orbison"
-
 msgctxt "#30401"
-msgid ""
-msgstr "[COLOR=yellow]מייקל ג'וזף ג'קסון (באנגלית: Michael Joseph Jackson;‏ 29 באוגוסט 1958 – 25 ביוני 2009) היה זמר, מוזיקאי, רב נגן, רקדן, כוריאוגרף, מפיק מוזיקלי, שחקן ופזמונאי אפרו אמריקאי מצליח. ג'קסון, שנודע בכינויו "מלך הפופ", נחשב לאחד הזמרים הפופולריים והמצליחים ביותר בכל הזמנים.[/COLOR][CR][CR]הקריירה המוזיקלית של ג'קסון החלה בשנת 1963 כאשר הצטרף לאחיו בתור החבר הצעיר ביותר בהרכב המוזיקלי המשפחתי "חמישיית הג'קסונים". בהמשך עזב את הלהקה והחל קריירת סולו מצליחה יותר. אלבומו Thriller משנת 1982 מכר מעל ל-110 מיליון עותקים ונשאר עד היום האלבום הנמכר ביותר בכל הזמנים, לצד ארבעה אלבומים נוספים של ג'קסון. הווידאוקליפים לשיריו "Beat It"‏, "Billie Jean" ו-"Thriller" נחשבו לפורצי דרך והשפיעו רבות על תעשיית המוזיקה בהמשך. באותה העת, ג'קסון הפך מספר טכניקות ריקוד מסובכות לפופולאריות במיוחד, המפורסם שבריקודים הוא ריקוד "הליכת הירח". הסגנון המוזיקלי, הסגנון הווקאלי והכוריאוגרפיה הייחודית של ג'קסון הצליחו לגשר על פערי הדורות, הגזעים והתרבויות. הקריירה המוזיקלית של ג'קסון היוותה השראה למיליוני אנשים ברחבי העולם ואמנים רבים בתחום המוזיקה והריקוד הושפעו ממנו.[CR]הישגים נוספים לג'קסון כוללים בין היתר שבירת מספר שיאים עולמיים שנכנסו לספר השיאים של גינס, זכייה ב-15 פרסי גראמי, זכייה ב-26 פרסי American Music Awards, והפקת 17 סינגלים אשר הגיעו למקום ראשון במצעד הפזמונים האמריקאי (כולל ארבעה אשר הופקו בעודו חבר בחמישיית הג'קסונים). סך מכירות אלבומיו - המוערך בכ-780 מיליון עותקים ברחבי העולם, דבר שהפך אותו לאחד האומנים המצליחים ביותר מבחינה מסחרית בהיסטוריה של המוזיקה.[CR]לאורך השנים בשל ההתעניינות הרבה בג'קסון, הצהובונים ברחבי העולם עסקו באינטנסיביות בחייו הפרטיים של ג'קסון והתמקדו בעיקר בשינויים הקיצוניים במראהו החיצוני של ג'קסון שכלל שינוי מבנה אפו וצבע עורו, בהאשמות בביצוע מעשים מגונים בילדים ובמערכות היחסים השונות של ג'קסון.[CR]ג'קסון מת ב-25 ביוני 2009 מדום לב בשל מנת יתר של הסם פרופופול, סוג של סם הרגעה. מותו אירע במהלך ההכנות לסבב ההופעות שלו "This Is It". רופאו האישי של ג'קסון, קונראד מארי, אשר היה זה שטיפל בו שלא כראוי בסם, הורשע בהריגתו ונדון לארבע שנות מאסר."
+msgid "Born in 1958 in Gary, Indiana, Michael Jackson became the lead singer of his family's popular Motown group, the Jackson 5. He went on to a solo career of astonishing success, delivering No. 1 hits from the albums Off the Wall, Thriller and Bad. The "King of Pop" was dogged by allegations of child molestation in his later years, and died just before launching a comeback tour in 2009."
+msgstr "מייקל ג'וזף ג'קסון היה זמר, מוזיקאי, רב נגן, רקדן, כוריאוגרף, מפיק מוזיקלי, שחקן ופזמונאי אפרו אמריקאי מצליח. ג'קסון, שנודע בכינויו "מלך הפופ", נחשב לאחד הזמרים המצליחים והמשפיעים ביותר בכל הזמנים."
 
 msgctxt "#30402"
-msgid "Beyonce"
-msgstr ""
+msgid "Born on September 4, 1981, in Houston, Texas, Beyoncé Knowles first captured the public's eye as lead vocalist of the R&B group Destiny's Child. She later established a solo career with her debut album Dangerously in Love, becoming one of music's top-selling artists with sold-out tours and a slew of awards. Knowles has also starred in several films, including Dream Girls. She married hip-hop recording artist Jay-Z in 2008. In December 2013, she surprised audiences by releasing her fifth studio album, self-titled Beyoncé, and has twice performed at the Super Bowl. In April 2016, she released her sixth studio album Lemonade after the airing of an HBO special."
+msgstr "ביונסה ג'יזל נואלס קרטר, המוכרת לרוב בשמה הפרטי, ביונסה, היא זמרת, רקדנית, דוגמנית ושחקנית אמריקאית. ביונסה שברה שיאים וזכתה בפרסים רבים על אלבומיה ושיריה שהגיעו לראשי המצעדים בעולם."
 
 msgctxt "#30403"
-msgid ""
-msgstr "[COLOR=yellow]רובין ריהאנה פנטי (באנגלית: Robyn Rihanna Fenty; נולדה ב-20 בפברואר 1988) המוכרת בשם הבמה ריהאנה, היא זמרת, שחקנית, ומעצבת אופנה ברבדית. היא נולדה בסיינט מייקל שבברבדוס והתגוררה שם עד גיל 15. היא החלה את הקריירה המוזיקלית שלה כשפגשה את המפיק המוזיקלי אוון רוג'רס ב-2003 והקליטה קלטות דמו תחת הדרכתו, שבסופו של דבר הגיעו לג'יי זי שהחליט לקחת אותה תחת חסותו.[/COLOR][CR][CR]מאז תחילת הקריירה שלה, הוציאה ריהאנה שבעה אלבומים; שבעתם הגיעו לעשרת הגדולים במצעד האלבומים האמריקאי בילבורד 200, ואלבומה השביעי אף הגיע למקום הראשון. 13 משיריה דורגו במקום הראשון במצעד הפזמונים האמריקאי בילבורד הוט 100, ובכך השוותה ריהאנה את שיאה לשיאו של מייקל ג'קסון וכעת היא ממוקמת במקום השלישי ברשימת אמני הסולו שהצליחו להכניס הכי הרבה שירים לצמרת המצעד.היא נחשבת לאחד מהאמנים הנמכרים ביותר בכל הזמנים. אלבומיה ושיריה נמכרו בכ-194.5 מיליון עותקים בכל העולם, מה שהופך אותה גם לאמנית הדיגיטלית הנמכרת ביותר בכל הזמנים.[CR]בשנת 2011 הגיעו עשרה משיריה לצמרת מצעד הבילבורד הוט 100 והייתה לאמן הצעיר ביותר שעשה זאת. בנוסף לכך נכון להיום היא האמן השלישי בהיסטוריה שצבר הכי הרבה שבועות במקום הראשון במצעד זה (עם 51 שבועות). ב-2012 דירג מגזין פורבס את ריהאנה כידוען הרביעי המשפיע של השנה, עם רווח של 53 מיליון דולר בין מאי 2011 למאי 2012. באותה שנה, הכריז טיים מגזין על ריהאנה כאחת מ-100 האנשים המשפיעים ביותר בעולם. בשנת 2013 דירג מגזין בילבורד את ריהאנה ברשימת "100 האמנים המצליחים ביותר בעשור הראשון של המאה ה-21" ולאמן המצליח ביותר בעשור השני של המאה ה-21. ב-2 ביוני 2014, הוצגה ריהאנה עם פרס אייקון האופנה על מפעל החיים ממועצת מעצבי האופנה של אמריקה, פרס מיוחד השמור לאדם שסגנונו הפך להשפעה משמעותית על התרבות הפופולרית על במה בינלאומית. ובאותה שנה נודע כי ריהאנה דורגה במקום ה-8 ברשימת "100 האנשים המשפיעים ביותר" של מגזין פורבס, עם רווח של 48 מיליון דולר בין יוני 2013 ליוני 2014, מה ששם אותה במקום ה-4 ברשימת ה"נשים המשפיעות ביותר" ובאותו מקום גם ברשימת ה"מוזיקאים המשפיעים ביותר". ריהאנה זכתה ב-311 פרסים, הבולטים מתוכם: 8 פרסי גראמי, 8 פרסי AMA ו-22 פרסי בילבורד. בטקס פרסי המוזיקה האמריקאית של שנת 2013, זכתה ריהאנה בפרס "אייקון" הראשון בהיסטוריה של הטקס, פרס אשר ניתן לאמן שתרם רבות לתעשיית המוזיקה."
+msgid "Born Robyn Rihanna Fenty, on February 20, 1988, in Barbados, Rihanna signed with Def Jam records at age 16 and in 2005 released her first album Music of the Sun, which sold more than two million copies worldwide. She went on to release more albums and an array of hit songs, including "Unfaithful," "Umbrella," "Disturbia," "Take a Bow," "Diamonds" and "We Found Love." A global pop star with an unrelentingly edgy image, Rihanna has also won multiple industry accolades, including Grammys and MTV awards."
+msgstr "רובין ריהאנה פנטי המוכרת בשם ריהאנה, היא זמרת, שחקנית, ומעצבת אופנה ברבדית. היא נולדה בסיינט מייקל שבברבדוס והתגוררה שם עד גיל 15."
 
 msgctxt "#30404"
-msgid ""
-msgstr "[COLOR=yellow]Taylor Swift הוא אלבום הבכורה של הזמרת-היוצרת האמריקאית טיילור סוויפט. האלבום יצא לאור ב-24 באוקטובר 2006, על ידי Big Machine Records, כשסוויפט הייתה בת 16. סוויפט כתבה שירים לאלבום במהלך השנה הראשונה שלה בתיכון, חלק מהם במשותף עם ליז רוז וכותבים נוספים.‏ סוויפט התנסתה עם מספר מפיקי מוזיקה ותיקים בנאשוויל, אך בסוף החליטה לשכור את מפיק הדמואים שלה נתן צ'פמן.‏ מבחינה מוזיקלית, האלבום הוא בסגנון מוזיקת קאנטרי, ומבחינה מילולית, הוא עוסק במערכות יחסים רומנטיות, שכמה מהן כתבה סוויפט מהתבוננות במערכת יחסים לפני שחוותה אחת בעצמה, ונוגע במאבקיה האישיים של סוויפט בתיכון.[/COLOR][CR][CR]חמישה סינגלים יצאו מהאלבום, כולם הגיעו למעמד פלטינה מטעם איגוד תעשיית ההקלטות האמריקאי (RIAA).‏ "Tim McGraw" יצא כסינגל המוביל, והגיע לעשרת הגדולים במצעד הקאנטרי של בילבורד. "Teardrops on My Guitar" יצא כסינגל השני, והפך לשיר המצליח ביותר באלבום, כשהגיע למקום ה-13 במצעד הבילבורד הוט 100. "Our Song" יצא כסינגל השלישי מתוך האלבום, והפך לשיר הראשון של סוויפט שכבש את פסגת מצעד הקאנטרי של בילבורד, מה שהפך את סוויפט לאדם הצעיר ביותר שיצר וביצע לבדו שיר שהגיע למקום הראשון במצעד.‏ "Picture to Burn" ו-"Should've Said No" יצאו כסינגלים והרביעי והחמישי מהאלבום, והצליחו במצעדי הקאנטרי בארצות הברית. סוויפט קידמה את אלבומה על ידי הופעות חימום לראסקל פלאטס, ג'ורג' סטרייט, קני צ'סני ובראד פייזלי, טים מקגרו ופיית' היל.‏‏[CR]Taylor Swift התקבל באופן חיובי על ידי המבקרים, ששיבחו את הכישרון של סוויפט בגיל כה צעיר. האלבום זכה להצלחה מסחרית והשיק את הקריירה של סוויפט במוזיקת קאנטרי. בארצות הברית, שהה האלבום בפסגת מצעד אלבומי הקאנטרי במשך 24 שבועות, והגיע למעמד פלטינה מחומשת מטעם איגוד תעשיית ההקלטות האמריקאי (RIAA), עם מכירות של מעל 5 מיליון עותקים. Taylor Swift נשאר 277 שבועות במצעד הבילבורד 200, מה שהופך אותו לאחד מ-12 האלבומים שנשארו בזמן הארוך ביותר בהיסטוריה של המצעד. האלבום הצליח גם מחוץ למדינת האם של סוויפט, בעיקר בקנדה, באוסטרליה, ובבריטניה. האלבום מכר למעלה משישה מיליון עותקים.‏"
+msgid "Born on December 13, 1989, in Reading, Pennsylvania, Taylor Swift's family moved to nearby Wyomissing where she started crafting songs at age 5, and at age 16, released her debut album. Hits like "Love Story" and "You Belong With Me" appealed to country and pop fans alike and helped fuel the multiplatinum success of her albums, with Fearless the 2009 top-seller. Swift later became a pop juggernaut with the 2014 album 1989. She has won many awards, including several Grammys, and modeled for Cover Girl."
+msgstr "טיילור אליסון סוויפט היא זמרת-יוצרת ושחקנית אמריקאית. סוויפט גדלה בוויומיסינג, פנסילבניה, ועברה לנאשוויל, טנסי, בגיל 14 כדי לפתח קריירה במוזיקת קאנטרי. היא מפרסמת את תקליטיה בחברת התקליטים העצמאית Big Machine Records, שאיתה התחילה את הקריירה."
 
 msgctxt "#30405"
 msgid ""
-msgstr "[COLOR=yellow]אריאנה גרנדה-בוטרה (באנגלית: Ariana Grande-Butera; נולדה ב-26 ביוני 1993), המוכרת בשם אריאנה גרנדה, היא זמרת ושחקנית אמריקאית.[/COLOR][CR][CR]היא התחילה את קריירת הבידור שלה בשנת 2010 כששיחקה בסדרת הנוער המצליחה "ויקטוריוס". בהמשך קיבלה תפקיד ראשי בסדרת הבת שלה "סאם וקאט" ששודרו בערוץ ניקלודיאון.[CR]ב-2013, זכתה גרנדה להצלחה רבה לאחר שיצא אלבום הבכורה שלה, Yours Truly, שדורג במקום הראשון במצעד האלבומים האמריקאי בילבורד 200. הסינגל הראשון מתוך האלבום, "The Way", הגיע לעשרת הגדולים במצעד הפזמונים האמריקאי בילבורד הוט 100 והגיע למעמד פלטינה משולשת בארצות הברית. האלבום זכה לשבחי ביקורת עם מבקרים שהשוו את מנעד קולה הרחב לזה של מריה קארי שמגיע למנעד קולי של 4 אוקטבות.[CR]ב-2014, הוצגה גרנדה על ידי אגודת עסקי המוזיקה כ"פריצת השנה", על הישגיה בשנת 2013.[CR]אלבום האולפן השני שלה, My Everything, שיצא ב-2014, העפיל אף הוא למקום הראשון במצעד האמריקאי וארבעה סינגלים ממנו נכנסו לעשירייה הפותחת במצעד, מה שהפך אותה לזמרת מיינסטרים לאחת הזמרות המצליחות ביותר באותה שנה."
+msgstr ""
+
+msgctxt "#30406"
+msgid ""
+msgstr ""
+
+msgctxt "#30407"
+msgid "Singer-songwriter Christina Aguilera was born on December 18, 1980, in Staten Island, New York. Aguilera began her career as a cast member on The All New Mickey Mouse Club. She rapidly rose to stardom following the release of her hit single, "Genie in a Bottle," which earned her a Grammy Award for best new artist. Her other hit singles include "What a Girl Wants," "Come on Over Baby," "Lady Marmalade" and the sexually charged "Dirrty." In recent years, Aguilera has served as a coach and mentor on the singing-competition show The Voice."
+msgstr "כריסטינה מריה אגילרה היא זמרת פופ ורית'ם אנד בלוז אמריקאית. התחילה את קריירת השירה שלה כשהופיע בתוכנית הילדים הפופולרית של דיסני בשנות ה-90 "מועדון מיקי מאוס" לצד בריטני ספירס וג'סטין טימברלייק."
+
+msgctxt "#30408"
+msgid "V BIOMaroon 5, born and bred in Los Angeles, with their catchy hook, soaring vocals, and signature sound, have solidified their position as one of pop music’s most enduring artists. The band captured their first of three Grammy Awards as “Best New Artist” of 2005 and have gone on to sell more than 17 million albums worldwide. Maroon 5’s releases have also gone gold and platinum in over 35 countries."
+msgstr "מארון 5 היא להקת פופ רוק מלוס אנג'לס, זוכת שלושה פרסי גראמי, המשלבת בשיריה אלמנטים של פאנק ומוזיקת נשמה. הפריצה של הלהקה הגיעה בעקבות הלהיט, "This Love". חברי הלהקה הם: אדם לוין, ג'יימס ולנטיין, ג'סי קרמייקל, פי ג'יי מורטון, מייקל מאדן ומאט פליין. "
+
+msgctxt "#30409"
+msgid "Born on October 17, 1972, in St. Joseph, Missouri, rap musician Eminem had a turbulent childhood. He released The Slim Shady LP in early 1999, and the album went multi-platinum, garnering Eminem two Grammy Awards and four MTV Video Music Awards. In 2000, the rapper released The Marshall Mathers LP, which was noted as the fastest-selling album in rap history. More recently, in 2010, Eminem released the Grammy-winning album Recovery, a highly autobiographical attempt to come to terms with his struggles with addiction and experience with rehabilitation. Eminem plans to release his eighth album, MMLP2, in 2013."
+msgstr "מרשל ברוס מאת'רס השלישי, המוכר בשם הבמה אמינם או האלטר אגו שלו סלים שיידי, הוא ראפר, שחקן, ומפיק מוזיקלי מדטרויט, מישיגן. אמינם התפרסם ב-1999 עם אלבומו פורץ הדרך, The Slim Shady LP, אשר זכה בפרס הגראמי בקטגוריית אלבום הראפ הטוב ביותר."
 
 msgctxt "#30410"
+msgid "Born on April 23, 1936, in Vernon, Texas, Roy Orbison formed his first band at age 13. The singer-songwriter dropped out of college to pursue music. He signed with Monument Records and recorded such ballads as "Only the Lonely" and "It's Over." Orbison was inducted into the Rock and Roll Hall of Fame in 1987. Nearly one year later, in December 1988, he died of a heart attack."
+msgstr "רוי קלטון אורביסון, אשר נודע בכינויו The Big O, היה זמר ופזמונאי אמריקאי רב השפעה וחלוץ בתחום הרוק אנד רול. רוי אורביסון שר והקליט במשך יותר מארבעה עשורים."
+
+msgctxt "#30411"
+msgid "Pop music singer Madonna was born in Bay City, Michigan on August 16, 1958. In 1981, she went solo as a pop singer and became a sensation on the then male-dominated '80s music scene. By 1991, she had achieved 21 Top 10 hits in the United States and sold more than 70 million albums internationally. In January 2008, she was named the world's wealthiest female musician by Forbes magazine."
+msgstr "מדונה לואיז צ'יקונה המוכרת בשמה הפרטי מדונה, היא זמרת-יוצרת, שחקנית, ואשת עסקים אמריקאית. ראשית פרסומה בתחילת שנות השמונים. היא נחשבת כיום לאחת האמנים המצליחים ביותר בכל הזמנים ומכונה בתקשורת "מלכת הפופ"."
+
+msgctxt "#30412"
+msgid "Born in 1973 in Virginia, Pharrell Williams started performing as a teen. He joined forces with his friend Chad Hugo and they became known as in-demand production team the Neptunes, working with such artists as Jay-Z, Gwen Stefani and Britney Spears. Returning to performing, Williams helped form the group N.E.R.D., which released albums like In Search Of... and Seeing Sounds. In 2013, he hit the pop charts in a major way, going to No. 1 with his solo effort "Happy" as well as helping to craft hits with Robin Thicke and Daft Punk. He joined the popular television competition The Voice in September 2014 as a coach. "
+msgstr "פארל ויליאמס, הידוע בשמו הפרטי פארל, הוא ראפר, זמר, מפיק מוזיקלי, מלחין, ומעצב אופנה אמריקאי. ויליאמס והמוזיקאי צ'אד הוגו, הקימו ביחד את צמד מפיקי הפופ, היפ הופ וה-רית'ם אנד בלוז, "הנפטונז"."
+
+msgctxt "#30413"
+msgid "Mariah Carey was born March 27, 1970, in Huntington, Long Island, New York, and began taking voice lessons at age four. At 18 she signed with Columbia records, and her first album had four No. 1 singles, including "Vision of Love" and "I Don't Wanna Cry." She went on to produce several more albums (later with other studios) and top singles, and is one of the best-selling female artists of all time."
+msgstr "מַרָיה קארי היא זמרת מוזיקת נשמה, פופ-אר אנד בי, פזמונאית, מלחינה, מפיקה מוזיקלית ושחקנית אמריקאית. מאז יצא לאור אלבומה הראשון בראשית שנות ה-90, הפכה לאחת הזמרות המצליחות והמפורסמות ביותר בעולם."
+
+msgctxt "#30414"
+msgid "Born on August 9, 1963, in Newark, New Jersey, Whitney Houston released her debut album at age 22 and scored three No. 1 singles. Whitney (1987) delivered four more No. 1s and earned Houston her first Grammy, with later albums including I'm Your Baby Tonight (1990) and My Love Is Your Love (1998) as well as soundtracks to The Bodyguard (1992) and Waiting to Exhale (1995). With her marriage to singer Bobby Brown in 1992 and ensuing drug use, Houston's career got off track. She eventually made a comeback with 2009's I Look to You and also co-starred in the the film remake Sparkle. Houston died from accidental drowning in a hotel on February 11, 2012."
+msgstr "ויטני אליזבת יוסטון הייתה זמרת פופ, רית'ם אנד בלוז, גוספל וסול, כותבת ומלחינת שירים, ושחקנית קולנוע אמריקאית. אחת הזמרות המצליחות והמפורסמות של סוף שנות ה-80 ושנות ה-90."
+
+msgctxt "#30415"
+msgid "Born on October 14, 1978, in Chattanooga, Tennessee, Usher entered the fame game at age 14, two years after he moved with his mother and brother to Atlanta. After performing on Star Search, Usher landed a recording contract with LaFace Records. He released his first album in 1994, at age 15. For more than 15 years, Usher has dominated the airwaves, releasing such albums as Confessions (2004), which sold more than 1 million copies in its first week. In June 2012, he produced the album Looking 4 Myself, which found a No. 1 spot on Billboard's albums chart. Usher's songs have repeatedly landed at No. 1 on the charts, earning him several Grammy and People's Choice awards, among other honors."
+msgstr "אשר ריימונד הרביעי המוכר בשם אשר בלבד, הוא זמר, רקדן ושחקן אמריקאי."
+
+msgctxt "#30416"
+msgid ""
+msgstr ""
+
+msgctxt "#30417"
+msgid "Born in Spain in 1975, Enrique Iglesias is the son of popular Spanish singer Julio Iglesias. Iglesias grew up largely in Miami and began singing as a teenager. He released his self-titled debut album in 1995 and, like his subsequent studio works, proved to be a huge success. By early 2012, Iglesias had sold more than 60 million records worldwide. His most successful songs include "Bailamos," "Rhythm Divine," "Be With You," "Escape," "Maybe," "Don't Turn Off The Lights" and "Hero.""
+msgstr "אנריקה מיגל איגלסיאס פרייסלר הוא זמר-יוצר ספרדי זוכה פרס הגראמי. מכירות אלבומיו עומדות על יותר מ-60 מיליון עותקים, מה שהופך אותו לזמר עם מכירת השירים בספרדית השנייה הכי גבוהה אחרי שאקירה."
+
+msgctxt "#30418"
+msgid "Born on July 24, 1969, in the Bronx, New York, Jennifer Lopez danced on the TV show In Living Color before her starring role in the film Selena. She turned to music and found major success on the pop and dance charts with hits like "Get Right" and "Play" while continuing to garner Hollywood film work. She married salsa icon Marc Anthony in 2006 and had twins; the couple split a few years later. Her recent projects include American Idol and Shades of Blue."
+msgstr "ג'ניפר לין לופז, המוכרת גם בכינוי ג'יי לו, היא שחקנית, זמרת ורקדנית אמריקאית."
+
+msgctxt "#30419"
+msgid "Katy Perry was born October 25, 1984, in Santa Barbara, California. After having three record deals fall apart, she signed with Capitol in 2007. Later that year, she released her first single, "Ur So Gay." Still, her career did not fully take off until the release of her next single, "I Kissed a Girl". Her album Teenage Dreams was released in August 2010."
+msgstr "קת'רין אליזבת' "קייטי" הדסון, הידועה בשם הבמה קייטי פרי, היא זמרת, פזמונאית ושחקנית אמריקאית. קייטי פרי משמשת כשגרירת קרן החירום הבינלאומית של האומות המאוחדות לילדים, ופועלת בשיתוף קרנות צדקה שונות."
+
+msgctxt "#30420"
+msgid "Born on January 8, 1935, in Tupelo, Mississippi, Elvis Presley came from very humble beginnings and grew up to become one of the biggest names in rock 'n' roll. By the mid-1950s, he appeared on the radio, television and the silver screen. On August 16, 1977, at age 42, he died of heart failure, which was related to his drug addiction. Since his death, Presley has remained one of the world's most popular music icons."
+msgstr "אלביס אהרון פרסלי היה זמר אמריקאי, מהזמרים המצליחים והמשפיעים בכל הזמנים. פעל במהלך שנות ה-50, ה-60 וה-70 של המאה ה-20. זכה לכינוי "מלך הרוק אנד רול", או בכינוי המקוצר "המלך". בנוסף היה שחקן קולנוע מצליח והשתתף ב-33 סרטים. "
+
+msgctxt "#30421"
+msgid "Born on December 22, 1993, Meghan Trainor was raised on Nantucket Island and spent her childhood surrounding herself with music, learning to play various instruments and writing her own songs. When she was 18, after having self-recorded three of her own albums, she was signed to a music publishing deal, which soon led to another with Epic Records. She then co-wrote "All About That Bass," a song that the young singer soon took to No. 1 around the world. With follow-up songs such as "Lips Are Moving" and "Dear Future Husband," Trainor's debut album also took the charts by storm."
+msgstr "מייגן אליזבת' טריינור היא זמרת, כותבת שירים, מוזיקאית ומפיקה מוזיקלית אמריקאית זוכת פרס גראמי. טריינור החלה את הקריירה המוזיקלית שלה בשנת 2009 כשהוציאה את אלבום הבכורה שלה באופן עצמאי, ובשנת 2011 הוציאה עוד שני אלבומים שיצאו באופן עצמאי."
+
+msgctxt "#30422"
+msgid "Bob Marley was born on February 6, 1945, in St. Ann Parish, Jamaica. In 1963, Marley and his friends formed the Wailing Wailers. The Wailers' big break came in 1972, when they landed a contract with Island Records. Marley went on to sell more than 20 million records throughout his career, making him the first international superstar to emerge from the so-called Third World. He died in Miami, Florida, on May 11, 1981."
+msgstr "נסטה רוברט מארלי או בוב מארלי ‏היה מוזיקאי ופעיל פוליטי ג'מייקני. מארלי הוא זמר הרגאיי המפורסם ביותר בעולם וזכה להכרה ולפרסים רבים על פועלו כמוזיקאי. לאחר מותו יצאו אלבומי אוסף ואלבומי גרסאות כיסוי רבים, שחלקם הגיעו למקומות הראשונים במצעדים."
+
+msgctxt "#30423"
+msgid "Bob Dylan is an American singer-songwriter, artist and writer (May 24, 1941). He has been influential in popular music and culture for more than five decades. Much of his most celebrated work dates from the 1960s when his songs chronicled social unrest, although Dylan repudiated suggestions from journalists that he was a spokesman for his generation. Nevertheless, early songs such as "Blowin' in the Wind" and "The Times They Are a-Changin'" became anthems for the American civil rights and anti-war movements. After he left his initial base in the American folk music revival, his six-minute single "Like a Rolling Stone" altered the range of popular music in 1965. His mid-1960s recordings, backed by rock musicians, reached the top end of the United States music charts while also attracting denunciation and criticism from others in the folk movement."
+msgstr "בוב דילן הוא זמר-יוצר יהודי אמריקאי, הנחשב לאחד מגדולי הכותבים במוזיקה הפופולרית האמריקאית. הצלחתו הגדולה של דילן הייתה בשנות ה-60 של המאה ה-20."
+
+msgctxt "#30424"
+msgid "Born on March 30, 1945, in Surrey, England, Eric Clapton is ranked among the greatest rock and roll guitarists of all time, with songs such as "Layla," "Crossroads" and "Wonderful Tonight.""
+msgstr "אריק פטריק קלפטון הוא גיטריסט, זמר ומלחין בריטי. נודע גם בכינוי Slowhand ונחשב אחד מהגיטריסטים המוערכים ביותר בזרמים המוזיקליים של הבלוז והרוק."
+
+msgctxt "#30425"
+msgid ""
+msgstr ""
+
+msgctxt "#30426"
+msgid "Aretha Franklin was born in Memphis, Tennessee, in 1942. A gifted singer and pianist, Franklin toured with her father's traveling revival show and later visited New York, where she signed with Columbia Records. Franklin went on to release several popular singles, many of which are now considered classics. In 1987, she became the first female artist to be inducted into the Rock and Roll Hall of Fame, and in 2008 she won her 18th Grammy Award, making her one of the most honored artists in Grammy history."
+msgstr "אריתה לואיז לטונדרה פרנקלין, היא זמרת גוספל, מוזיקת נשמה ורית'ם אנד בלוז אמריקאית שנולדה בממפיס שבטנסי, וגדלה בדטרויט שבמישיגן. היא כונתה במשך שנים "מלכת שירי הנשמה" או "גברת נשמה"."
+
+msgctxt "#30427"
+msgid "Adele was born in North London, England, on May 5, 1988, eventually attending the performing arts BRIT School. Her first two albums, 19 and 21, earned her critical praise and a level of commercial success unsurpassed among her peers, with the artist selling millions of albums worldwide and winning multiple Grammys. She also received a songwriting Oscar for the James Bond track "Skyfall." After becoming a mom, Adele returned to the charts in autumn 2015 with the ballad "Hello," the lead single for her forthcoming album 25."
+msgstr "אדל לורי בלו אדקינס MBE המוכרת בשמה הפרטי, אדל, היא זמרת, מלחינה, פזמונאית ומוזיקאית בריטית. זוכת פרס אוסקר, פרס גלובוס הזהב, 10 פרסי גראמי, 7 פרסי בריט ועוד עשרות פרסים נוספים אחרים."
+
+msgctxt "#30428"
+msgid ""
+msgstr ""
+
+msgctxt "#30429"
+msgid "Coldplay are a British rock band formed in 1996 by lead vocalist and pianist Chris Martin and lead guitarist Jonny Buckland at University College London (UCL)."
+msgstr "קולדפליי היא להקת פופ רוק בריטית מצליחה, שנוסדה בשנת 1998 ומכרה מעל ל-40 מיליון אלבומים. סגנון המוזיקה, השירה והלחנים של הלהקה מכילים מאפיינים רבים המזוהים עם תת-הז'אנר בריטפופ, פוסט-בריטפופ ורוק אלטרנטיבי."
+
+msgctxt "#30430"
+msgid ""
+msgstr ""
+
+msgctxt "#30431"
+msgid "Jean Michel Jarre (24 August 1948) is a French composer, performer, and music producer. He is a pioneer in the electronic, ambient, and new-age genres, and known as an organiser of outdoor spectacles of his music featuring lights, laser displays, and fireworks."
+msgstr "ז'אן-מישל אנדרה ז'אר הוא מלחין מוזיקה אלקטרונית צרפתי."
+
+msgctxt "#30432"
+msgid "Céline Marie Claudette Dion was born on 30 March 1968 in Canada.[CR]Dion first gained international recognition in the 1980s by winning both the 1982 Yamaha World Popular Song Festival and the 1988 Eurovision Song Contest where she represented Switzerland."
+msgstr "סלין דיון היא זמרת קנדית. דיון ייצגה את שווייץ במסגרת אירוויזיון 1988 וזכתה במקום הראשון. היא מכרה מעל ל-200 מיליון תקליטים ונחשבת לאחת הזמרות המצליחות ביותר בעולם, הונה האישי ב-2014 נאמד ב-630 מיליון דולר."
+
+msgctxt "#30433"
+msgid "Sam Smith was born in London in May 1992 and began singing at a young age. He first hit the charts as the featured singer on the 2012 Disclosure song "Latch," and he released his first single, "Lay Me Down," soon after. In 2014, Smith released In the Lonely Hour, his heartfelt debut full-length album. It contained the smash hit "Stay With Me," a radio staple over the course of the entire year. For his work on In the Lonely Hour, Smith was awarded four Grammys, among them Song of the Year and Record of the Year."
+msgstr "סמואל פרדריק "סם" סמית' הוא זמר אנגלי. הוא התפרסם לראשונה כשהוציא את השיר "Latch" שהגיע למקום ה-11 במצעד הסינגלים הבריטי. שיתוף הפעולה שלו עם הזמר Naugty Boy הוליד את השיר La La La שהוביל לפרסום בינלאומי, השיר הגיע למקומות הראשונים במצעדים העולמיים."
+
+msgctxt "#30434"
+msgid ""
+msgstr ""
+
+msgctxt "#30435"
+msgid ""
+msgstr ""
+
+msgctxt "#30436"
+msgid ""
+msgstr ""
+
+msgctxt "#30437"
+msgid ""
+msgstr ""
+
+msgctxt "#30438"
+msgid ""
+msgstr ""
+
+msgctxt "#30439"
 msgid ""
 msgstr ""
 
 msgctxt "#30450"
+msgid "Britney Jean Spears (born December 2, 1981) is an American singer, dancer and actress. Born in McComb, Mississippi, and raised in Kentwood, Louisiana, she performed acting roles in stage productions and television shows as a child before signing with Jive Records in 1997. Spears's first and second studio albums, ...Baby One More Time (1999) and Oops!... I Did It Again (2000), became international successes, with the former becoming the best-selling album by a teenage solo artist."
+msgstr "בריטני ג'ין ספירס, הנודעת בכינוייה נסיכת הפופ, היא זמרת ושחקנית אמריקאית. הקריירה של ספירס החלה בגיל 12 במועדון מיקי מאוס ופריצתה הגדולה ארעה עם שירה "Baby One More Time...", אותו הקליטה טרם היותה בת 17."
+
+msgctxt "#30451"
+msgid "David Bowie was born in South London's Brixton neighborhood on January 8, 1947. His first hit was the song "Space Oddity" in 1969. The original pop chameleon, Bowie became a fantastical sci-fi character for his breakout Ziggy Stardust album. He later co-wrote "Fame" with Carlos Alomar and John Lennon which became his first American No. 1 single in 1975. An accomplished actor, Bowie starred in The Man Who Fell to Earth in 1976. He was inducted into the Rock and Roll Hall of Fame in 1996. Bowie died on January 10, 2016, from cancer at the age of 69. "
+msgstr "דייוויד בואי היה מוזיקאי, זמר, שחקן ומפיק מוזיקלי אנגלי, זוכה פרס הגראמי למפעל חיים, פרס המוזיקה הבריטית ופרס אמי."
+
+msgctxt "#30452"
+msgid "Born on March 25, 1947, in England, Elton John's unique blend of pop and rock styles turned him into one of the biggest music icons of the 20th century. He excelled in music from a young age, and released his first self-titled American album in 1970, making him a huge international star. Some of his most famous hits include "Crocodile Rock," "Philadelphia Freedom" and "Candle in the Wind." He also found success on Broadway, composing the score for Billy Elliot (2008), which went on to win 10 Tony Awards. He was inducted into the Rock and Roll Hall of Fame in 1994 and was knighted in 1998."
+msgstr "סר אלטון הרקולס ג'ון, הוא שם הבמה של רג'ינלד קנת' דווייט, זמר-יוצר, מלחין ופסנתרן בריטי, אחד הזמרים המצליחים ביותר במאה ה-20."
+
+msgctxt "#30453"
+msgid ""
+msgstr ""
+
+msgctxt "#30454"
+msgid ""
+msgstr ""
+
+msgctxt "#30455"
+msgid ""
+msgstr ""
+
+msgctxt "#30456"
+msgid ""
+msgstr ""
+
+msgctxt "#30457"
+msgid ""
+msgstr ""
+
+msgctxt "#30458"
+msgid ""
+msgstr ""
+
+msgctxt "#30459"
+msgid ""
+msgstr ""
+
+msgctxt "#30460"
+msgid ""
+msgstr ""
+
+msgctxt "#30461"
+msgid ""
+msgstr ""
+
+msgctxt "#30462"
+msgid ""
+msgstr ""
+
+msgctxt "#30463"
+msgid ""
+msgstr ""
+
+msgctxt "#30464"
+msgid ""
+msgstr ""
+
+msgctxt "#30465"
+msgid ""
+msgstr ""
+
+msgctxt "#30466"
+msgid ""
+msgstr ""
+
+msgctxt "#30467"
+msgid ""
+msgstr ""
+
+msgctxt "#30468"
+msgid ""
+msgstr ""
+
+msgctxt "#30469"
+msgid ""
+msgstr ""
+
+msgctxt "#30470"
+msgid ""
+msgstr ""
+
+msgctxt "#30471"
+msgid ""
+msgstr ""
+
+msgctxt "#30472"
+msgid ""
+msgstr ""
+
+msgctxt "#30473"
+msgid ""
+msgstr ""
+
+msgctxt "#30474"
+msgid ""
+msgstr ""
+
+msgctxt "#30475"
+msgid ""
+msgstr ""
+
+msgctxt "#30476"
+msgid ""
+msgstr ""
+
+msgctxt "#30477"
+msgid ""
+msgstr ""
+
+msgctxt "#30478"
+msgid ""
+msgstr ""
+
+msgctxt "#30479"
+msgid ""
+msgstr ""
+
+msgctxt "#30480"
+msgid ""
+msgstr ""
+
+msgctxt "#30481"
+msgid ""
+msgstr ""
+
+msgctxt "#30482"
+msgid ""
+msgstr ""
+
+msgctxt "#30483"
+msgid ""
+msgstr ""
+
+msgctxt "#30484"
+msgid ""
+msgstr ""
+
+msgctxt "#30485"
+msgid ""
+msgstr ""
+
+msgctxt "#30486"
+msgid ""
+msgstr ""
+
+msgctxt "#30487"
+msgid ""
+msgstr ""
+
+msgctxt "#30488"
+msgid ""
+msgstr ""
+
+msgctxt "#30489"
+msgid ""
+msgstr ""
+
+msgctxt "#30490"
+msgid ""
+msgstr ""
+
+msgctxt "#30491"
+msgid ""
+msgstr ""
+
+msgctxt "#30492"
+msgid ""
+msgstr ""
+
+msgctxt "#30493"
+msgid ""
+msgstr ""
+
+msgctxt "#30494"
+msgid ""
+msgstr ""
+
+msgctxt "#30495"
+msgid ""
+msgstr ""
+
+msgctxt "#30496"
+msgid ""
+msgstr ""
+
+msgctxt "#30497"
+msgid ""
+msgstr ""
+
+msgctxt "#30498"
+msgid ""
+msgstr ""
+
+msgctxt "#30499"
+msgid ""
+msgstr ""
+
+msgctxt "#30500"
+msgid "Tiësto"
+msgstr "טייסטו"
+
+msgctxt "#30501"
+msgid "Tijs Michiel Verwest (17 January 1969), better known by his stage name Tiësto is a Dutch DJ and record producer."
+msgstr "טייס מק'יל ורווסט, הידוע בעיקר בשם טייסטו, הוא תקליטן הולנדי העוסק בסגנונות אלקטרו-האוס ופרוגרסיב האוס ולשעבר יוצר טראנס ופרוגרסיב טראנס."
+
+msgctxt "#30502"
+msgid "Hardwell"
+msgstr "הארדוול"
+
+msgctxt "#30503"
+msgid "Robbert van de Corput (born 7 January 1988), who performs under the stage name Hardwell, is a Dutch big room house and electro house[2] DJ, record producer and remixer. He was voted the World's No. 1 DJ on DJ Mag in 2013,[3] and again in 2014. Hardwell is known for his live sets at major music festivals such as Tomorrowland and Ultra. The video streams of his performances on his personal YouTube channel have collectively garnered more than 100 million views."
+msgstr "רוברט ואן דה קורפוט, מוכר בשם הבמה "הארדוול", הוא DJ הולנדי ומפיק מוזיקלי בסגנונות אלקטרו-האוס ופרוגרסיב האוס."
+
+msgctxt "#30504"
+msgid "Skrillex"
+msgstr "סקרילקס"
+
+msgctxt "#30505"
+msgid "Sonny John Moore (born January 15, 1988), known professionally as Skrillex, is an American electronic music producer, DJ, singer and songwriter. Growing up in Northeast Los Angeles and in Northern California."
+msgstr "סוני ג'ון מור המוכר בשם הבמה סקרילקס הוא תקליטן זוכה פרס הגראמי, מפיק מוזיקלי וזמר-יוצר אמריקאי. בשנים 2004-2007 היה מור חבר בלהקת From First To Last עד שפרש לקריירת סולו."
+
+msgctxt "#30506"
+msgid "Martin Garrix"
+msgstr "מרטין גריקס"
+
+msgctxt "#30507"
+msgid "Martijn Gerard Garritsen, better known by his stage name Martin Garrix (stylized Mar+in Garri×), is a Dutch DJ, record producer and musician. He is currently ranked number 3 on DJ Mag. He founded and owns the record label STMPD RCRDS."
+msgstr "מרטיין חריטסן, מוכר בשם הבמה "מרטין גריקס" או GRX, הוא DJ הולנדי ומפיק מוזיקלי בסגנונות האלקטרו-האוס והפרוגרסיב האוס."
+
+msgctxt "#30508"
+msgid "Afrojack"
+msgstr "אפרוג'ק"
+
+msgctxt "#30509"
+msgid "Nick van de Wall (born 9 September 1987), commonly known by his stage name Afrojack, is a Dutch DJ, record producer and remixer. In 2014, he released his debut album Forget the World. Afrojack regularly features in top 10 of DJ Mag Top 100 DJ's."
+msgstr "ניק ואן דה וול הידוע בעיקר בשם הבמה שלו אפרוג'ק הוא תקליטן ומפיק מוזיקלי ממוצא הולנדי."
+
+msgctxt "#30510"
+msgid "Armin Van Buuren"
+msgstr "ארמין ואן בורן"
+
+msgctxt "#30511"
+msgid "Armin van Buuren born 25 December 1976) is a Dutch remixer, music producer, DJ, musician, pianist and songwriter."
+msgstr "ארמין ואן בּוּרֶן הוא מפיק טראנס ו-DJ. בשנים 2007-2012 נבחר חמש מתוך שש פעמים למקום הראשון בדירוג 100 התקליטנים הטובים בעולם על פי מגזין DJ Mag. ב-2013 דורג במקום השני, ב-2014 במקום השלישי וב-2015 במקום הרביעי."
+
+msgctxt "#30512"
+msgid "Deadmau5"
+msgstr "Deadmau5"
+
+msgctxt "#30513"
+msgid "Joel Thomas Zimmerman (born January 5, 1981), known professionally as deadmau5 (pronounced "deadmouse"), is a Canadian progressive house music producer and performer from Toronto, Ontario."
+msgstr "Deadmau5 הוא שם הבמה של מפיק ההאוס הקנדי ג'ואל תומאס צימרמן. אלבום הבכורה שלו Get Scraped יצא לאור ב-2006. ב-28 באוקטובר 2009 נבחר ל-DJ השישי הטוב בעולם על פי מגזין המוזיקה הידוע DJ Magazine. בשנת 2011 נבחר למקום הרביעי באותה הקטגוריה."
+
+msgctxt "#30514"
+msgid "Steve Aoki"
+msgstr "סטיב אוקי"
+
+msgctxt "#30515"
+msgid "Steven Hiroyuki "Steve" Aoki (born November 30, 1977) is an American electro house musician, record producer, and music executive. In 2012 Pollstar designated Aoki as the highest grossing dance artist in North America from tours."
+msgstr "סטיבן הירויוקי "סטיב" איוקי הוא תקליטן, מפיק מוזיקלי בסגנון אלקטרו-האוס, מועמד לפרס גראמי בעבר ומייסד חברת ההקלטות Dim Mak Records."
+
+msgctxt "#30516"
+msgid "Calvin Harris"
+msgstr "קלווין האריס"
+
+msgctxt "#30517"
+msgid "Adam Richard Wiles (born 17 January 1984), known professionally as Calvin Harris, is a Scottish DJ, record producer, singer, songwriter and remixer. His debut studio album, I Created Disco, was released in 2007 and was the precursor to his top-10 singles "Acceptable in the 80s" and "The Girls"."
+msgstr "אדם ריצ'רד ויילס הידוע בשם הבמה שלו קלווין האריס, הוא זמר, כותב שירים, DJ ומפיק מוזיקלי סקוטי."
+
+msgctxt "#30518"
+msgid "Nick Rotteveel"
+msgstr "ניקי רומרו"
+
+msgctxt "#30519"
+msgid "Nick Rotteveel van Gotum (born 6 January 1989), better known by his stage name Nicky Romero, is a Dutch DJ and music producer. He has worked with, and received support from DJs, such as Tiësto, Fedde le Grand, Sander van Doorn, David Guetta, Calvin Harris, Armand Van Helden, Avicii and Hardwell."
+msgstr "ניק רוטוויל, מוכר בשם הבמה ניקי רומרו, הוא DJ הולנדי ומפיק מוזיקלי בסגנונות הפרוגרסיב האוס ואלקטרו-האוס. רומרו הרבה לעבוד עם תקליטנים כמו טייסטו, סאנדר ואן דורן, דייוויד גטה, קלווין האריס ואביצ'י."
+
+msgctxt "#30520"
+msgid ""
+msgstr ""
+
+msgctxt "#30521"
+msgid ""
+msgstr ""
+
+msgctxt "#30522"
+msgid ""
+msgstr ""
+
+msgctxt "#30523"
+msgid ""
+msgstr ""
+
+msgctxt "#30524"
+msgid ""
+msgstr ""
+
+msgctxt "#30525"
+msgid ""
+msgstr ""
+
+msgctxt "#30526"
+msgid ""
+msgstr ""
+
+msgctxt "#30527"
+msgid ""
+msgstr ""
+
+msgctxt "#30528"
+msgid ""
+msgstr ""
+
+msgctxt "#30529"
+msgid ""
+msgstr ""
+
+msgctxt "#30530"
+msgid ""
+msgstr ""
+
+msgctxt "#30531"
+msgid ""
+msgstr ""
+
+msgctxt "#30532"
+msgid ""
+msgstr ""
+
+msgctxt "#30533"
+msgid ""
+msgstr ""
+
+msgctxt "#30534"
+msgid ""
+msgstr ""
+
+msgctxt "#30535"
+msgid ""
+msgstr ""
+
+msgctxt "#30536"
+msgid ""
+msgstr ""
+
+msgctxt "#30537"
+msgid ""
+msgstr ""
+
+msgctxt "#30538"
+msgid ""
+msgstr ""
+
+msgctxt "#30539"
+msgid ""
+msgstr ""
+
+msgctxt "#30540"
+msgid ""
+msgstr ""
+
+msgctxt "#30541"
+msgid ""
+msgstr ""
+
+msgctxt "#30542"
+msgid ""
+msgstr ""
+
+msgctxt "#30543"
+msgid ""
+msgstr ""
+
+msgctxt "#30544"
+msgid ""
+msgstr ""
+
+msgctxt "#30545"
+msgid ""
+msgstr ""
+
+msgctxt "#30546"
+msgid ""
+msgstr ""
+
+msgctxt "#30547"
+msgid ""
+msgstr ""
+
+msgctxt "#30548"
+msgid ""
+msgstr ""
+
+msgctxt "#30549"
+msgid ""
+msgstr ""
+
+msgctxt "#30550"
+msgid ""
+msgstr ""
+
+msgctxt "#30551"
+msgid ""
+msgstr ""
+
+msgctxt "#30552"
+msgid ""
+msgstr ""
+
+msgctxt "#30553"
+msgid ""
+msgstr ""
+
+msgctxt "#30554"
+msgid ""
+msgstr ""
+
+msgctxt "#30555"
+msgid ""
+msgstr ""
+
+msgctxt "#30556"
+msgid ""
+msgstr ""
+
+msgctxt "#30557"
+msgid ""
+msgstr ""
+
+msgctxt "#30558"
+msgid ""
+msgstr ""
+
+msgctxt "#30559"
+msgid ""
+msgstr ""
+
+msgctxt "#30560"
+msgid ""
+msgstr ""
+
+msgctxt "#30561"
+msgid ""
+msgstr ""
+
+msgctxt "#30562"
+msgid ""
+msgstr ""
+
+msgctxt "#30563"
+msgid ""
+msgstr ""
+
+msgctxt "#30564"
+msgid ""
+msgstr ""
+
+msgctxt "#30565"
+msgid ""
+msgstr ""
+
+msgctxt "#30566"
+msgid ""
+msgstr ""
+
+msgctxt "#30567"
+msgid ""
+msgstr ""
+
+msgctxt "#30568"
+msgid ""
+msgstr ""
+
+msgctxt "#30569"
+msgid ""
+msgstr ""
+
+msgctxt "#30570"
+msgid ""
+msgstr ""
+
+msgctxt "#30571"
+msgid ""
+msgstr ""
+
+msgctxt "#30572"
+msgid ""
+msgstr ""
+
+msgctxt "#30573"
+msgid ""
+msgstr ""
+
+msgctxt "#30574"
+msgid ""
+msgstr ""
+
+msgctxt "#30575"
+msgid ""
+msgstr ""
+
+msgctxt "#30576"
+msgid ""
+msgstr ""
+
+msgctxt "#30577"
+msgid ""
+msgstr ""
+
+msgctxt "#30578"
+msgid ""
+msgstr ""
+
+msgctxt "#30579"
+msgid ""
+msgstr ""
+
+msgctxt "#30580"
+msgid ""
+msgstr ""
+
+msgctxt "#30581"
+msgid ""
+msgstr ""
+
+msgctxt "#30582"
+msgid ""
+msgstr ""
+
+msgctxt "#30583"
+msgid ""
+msgstr ""
+
+msgctxt "#30584"
+msgid ""
+msgstr ""
+
+msgctxt "#30585"
+msgid ""
+msgstr ""
+
+msgctxt "#30586"
+msgid ""
+msgstr ""
+
+msgctxt "#30587"
+msgid ""
+msgstr ""
+
+msgctxt "#30588"
+msgid ""
+msgstr ""
+
+msgctxt "#30589"
+msgid ""
+msgstr ""
+
+msgctxt "#30590"
+msgid ""
+msgstr ""
+
+msgctxt "#30591"
+msgid ""
+msgstr ""
+
+msgctxt "#30592"
+msgid ""
+msgstr ""
+
+msgctxt "#30593"
+msgid ""
+msgstr ""
+
+msgctxt "#30594"
+msgid ""
+msgstr ""
+
+msgctxt "#30595"
+msgid ""
+msgstr ""
+
+msgctxt "#30596"
+msgid ""
+msgstr ""
+
+msgctxt "#30597"
+msgid ""
+msgstr ""
+
+msgctxt "#30598"
+msgid ""
+msgstr ""
+
+msgctxt "#30599"
+msgid ""
+msgstr ""
+
+msgctxt "#30600"
+msgid ""
+msgstr ""
+
+msgctxt "#30601"
+msgid ""
+msgstr ""
+
+msgctxt "#30602"
+msgid ""
+msgstr ""
+
+msgctxt "#30603"
+msgid ""
+msgstr ""
+
+msgctxt "#30604"
+msgid ""
+msgstr ""
+
+msgctxt "#30605"
+msgid ""
+msgstr ""
+
+msgctxt "#30606"
+msgid ""
+msgstr ""
+
+msgctxt "#30607"
+msgid ""
+msgstr ""
+
+msgctxt "#30608"
+msgid ""
+msgstr ""
+
+msgctxt "#30609"
+msgid ""
+msgstr ""
+
+msgctxt "#30610"
+msgid ""
+msgstr ""
+
+msgctxt "#30611"
+msgid ""
+msgstr ""
+
+msgctxt "#30612"
+msgid ""
+msgstr ""
+
+msgctxt "#30613"
+msgid ""
+msgstr ""
+
+msgctxt "#30614"
+msgid ""
+msgstr ""
+
+msgctxt "#30615"
+msgid ""
+msgstr ""
+
+msgctxt "#30616"
+msgid ""
+msgstr ""
+
+msgctxt "#30617"
+msgid ""
+msgstr ""
+
+msgctxt "#30618"
+msgid ""
+msgstr ""
+
+msgctxt "#30619"
+msgid ""
+msgstr ""
+
+msgctxt "#30620"
+msgid ""
+msgstr ""
+
+msgctxt "#30621"
+msgid ""
+msgstr ""
+
+msgctxt "#30622"
+msgid ""
+msgstr ""
+
+msgctxt "#30623"
+msgid ""
+msgstr ""
+
+msgctxt "#30624"
+msgid ""
+msgstr ""
+
+msgctxt "#30625"
+msgid ""
+msgstr ""
+
+msgctxt "#30626"
+msgid ""
+msgstr ""
+
+msgctxt "#30627"
+msgid ""
+msgstr ""
+
+msgctxt "#30628"
+msgid ""
+msgstr ""
+
+msgctxt "#30629"
+msgid ""
+msgstr ""
+
+msgctxt "#30630"
+msgid ""
+msgstr ""
+
+msgctxt "#30631"
+msgid ""
+msgstr ""
+
+msgctxt "#30632"
+msgid ""
+msgstr ""
+
+msgctxt "#30633"
+msgid ""
+msgstr ""
+
+msgctxt "#30634"
+msgid ""
+msgstr ""
+
+msgctxt "#30635"
+msgid ""
+msgstr ""
+
+msgctxt "#30636"
+msgid ""
+msgstr ""
+
+msgctxt "#30637"
+msgid ""
+msgstr ""
+
+msgctxt "#30638"
+msgid ""
+msgstr ""
+
+msgctxt "#30639"
+msgid ""
+msgstr ""
+
+msgctxt "#30640"
+msgid ""
+msgstr ""
+
+msgctxt "#30641"
+msgid ""
+msgstr ""
+
+msgctxt "#30642"
+msgid ""
+msgstr ""
+
+msgctxt "#30643"
+msgid ""
+msgstr ""
+
+msgctxt "#30644"
+msgid ""
+msgstr ""
+
+msgctxt "#30645"
+msgid ""
+msgstr ""
+
+msgctxt "#30646"
+msgid ""
+msgstr ""
+
+msgctxt "#30647"
+msgid ""
+msgstr ""
+
+msgctxt "#30648"
+msgid ""
+msgstr ""
+
+msgctxt "#30649"
+msgid ""
+msgstr ""
+
+msgctxt "#30650"
+msgid ""
+msgstr ""
+
+msgctxt "#30651"
+msgid ""
+msgstr ""
+
+msgctxt "#30652"
+msgid ""
+msgstr ""
+
+msgctxt "#30653"
+msgid ""
+msgstr ""
+
+msgctxt "#30654"
+msgid ""
+msgstr ""
+
+msgctxt "#30655"
+msgid ""
+msgstr ""
+
+msgctxt "#30656"
+msgid ""
+msgstr ""
+
+msgctxt "#30657"
+msgid ""
+msgstr ""
+
+msgctxt "#30658"
+msgid ""
+msgstr ""
+
+msgctxt "#30659"
+msgid ""
+msgstr ""
+
+msgctxt "#30660"
+msgid ""
+msgstr ""
+
+msgctxt "#30661"
+msgid ""
+msgstr ""
+
+msgctxt "#30662"
+msgid ""
+msgstr ""
+
+msgctxt "#30663"
+msgid ""
+msgstr ""
+
+msgctxt "#30664"
+msgid ""
+msgstr ""
+
+msgctxt "#30665"
+msgid ""
+msgstr ""
+
+msgctxt "#30666"
+msgid ""
+msgstr ""
+
+msgctxt "#30667"
+msgid ""
+msgstr ""
+
+msgctxt "#30668"
+msgid ""
+msgstr ""
+
+msgctxt "#30669"
+msgid ""
+msgstr ""
+
+msgctxt "#30670"
+msgid ""
+msgstr ""
+
+msgctxt "#30671"
+msgid ""
+msgstr ""
+
+msgctxt "#30672"
+msgid ""
+msgstr ""
+
+msgctxt "#30673"
+msgid ""
+msgstr ""
+
+msgctxt "#30674"
+msgid ""
+msgstr ""
+
+msgctxt "#30675"
+msgid ""
+msgstr ""
+
+msgctxt "#30676"
+msgid ""
+msgstr ""
+
+msgctxt "#30677"
+msgid ""
+msgstr ""
+
+msgctxt "#30678"
+msgid ""
+msgstr ""
+
+msgctxt "#30679"
+msgid ""
+msgstr ""
+
+msgctxt "#30680"
+msgid ""
+msgstr ""
+
+msgctxt "#30681"
+msgid ""
+msgstr ""
+
+msgctxt "#30682"
+msgid ""
+msgstr ""
+
+msgctxt "#30683"
+msgid ""
+msgstr ""
+
+msgctxt "#30684"
+msgid ""
+msgstr ""
+
+msgctxt "#30685"
+msgid ""
+msgstr ""
+
+msgctxt "#30686"
+msgid ""
+msgstr ""
+
+msgctxt "#30687"
+msgid ""
+msgstr ""
+
+msgctxt "#30688"
+msgid ""
+msgstr ""
+
+msgctxt "#30689"
+msgid ""
+msgstr ""
+
+msgctxt "#30690"
+msgid ""
+msgstr ""
+
+msgctxt "#30691"
+msgid ""
+msgstr ""
+
+msgctxt "#30692"
+msgid ""
+msgstr ""
+
+msgctxt "#30693"
+msgid ""
+msgstr ""
+
+msgctxt "#30694"
+msgid ""
+msgstr ""
+
+msgctxt "#30695"
+msgid ""
+msgstr ""
+
+msgctxt "#30696"
+msgid ""
+msgstr ""
+
+msgctxt "#30697"
+msgid ""
+msgstr ""
+
+msgctxt "#30698"
+msgid ""
+msgstr ""
+
+msgctxt "#30699"
+msgid ""
+msgstr ""
+
+msgctxt "#30700"
+msgid ""
+msgstr ""
+
+msgctxt "#30701"
+msgid "Wolfgang Mozart"
+msgstr "וולפגנג אמדאוס מוצרט"
+
+msgctxt "#30702"
+msgid "Born on January 27, 1756, in Salzburg, Austria, Wolfgang Amadeus Mozart was a musician capable of playing multiple instruments who started playing in public at the age of 6. Over the years, Mozart aligned himself with a variety of European venues and patrons, composing hundreds of works that included sonatas, symphonies, masses, concertos and operas, marked by vivid emotion and sophisticated textures."
+msgstr "וולפגנג אמדאוס מוצרט היה מלחין אוסטרי. מספר היצירות שחיבר במהלך חייו הקצרים ואיכותן יוצאת הדופן מציבים אותו כאחד מגדולי המלחינים הקלאסיים של כל הזמנים. מוצרט הלחין במשך 35 שנות חייו מאות יצירות ידועות, אשר מקוטלגות ברשימת קכל מ-K.1a עד K.626."
+
+msgctxt "#30703"
+msgid "Ludwig van Beethoven"
+msgstr "לודוויג ואן בטהובן"
+
+msgctxt "#30704"
+msgid "Composer Ludwig van Beethoven was baptized on December 17, 1770, in Bonn, Germany. He was an innovator, widening the scope of sonata, symphony, concerto and quartet, and combining vocals and instruments in a new way. His personal life was marked by a struggle against deafness, and some of his most important works were composed during the last 10 years of his life, when he was quite unable to hear."
+msgstr "לודוויג ואן בטהובן היה מלחין ופסנתרן גרמני. נחשב לאחד מגדולי המלחינים במוזיקה הקלאסית והיה דמות בולטת בתקופה החולפת בין התקופה הקלאסית והתקופה הרומנטית."
+
+msgctxt "#30705"
+msgid "Luciano Pavarotti"
+msgstr "לוצ'אנו פבארוטי"
+
+msgctxt "#30706"
+msgid "Born on October 12, 1935, on the outskirts of Modena in north-central Italy, tenor Luciano Pavarotti made his operatic debut at the Teatro Reggio Emilia in 1961, performing as "Rodolfo" in La Boheme. He then made his international debut at the Royal Opera House in London in 1963, and, two years later, made his American debut in the Miami production of Donizetti's Lucia di Lammermoor. Pavarotti went on to become a hugely popular and internationally known opera star, achieving a large following due to his recordings and television appearances, and ultimately helping expand the popularity of opera worldwide. He died in Modena in 2007, at the age of 71."
+msgstr "Born on October 12, 1935, on the outskirts of Modena in north-central Italy, tenor Luciano Pavarotti made his operatic debut at the Teatro Reggio Emilia in 1961, performing as "Rodolfo" in La Boheme. He then made his international debut at the Royal Opera House in London in 1963, and, two years later, made his American debut in the Miami production of Donizetti's Lucia di Lammermoor. Pavarotti went on to become a hugely popular and internationally known opera star, achieving a large following due to his recordings and television appearances, and ultimately helping expand the popularity of opera worldwide. He died in Modena in 2007, at the age of 71."
+
+msgctxt "#30707"
+msgid "Antonin Dvorak"
+msgstr "אנטונין דבוז'אק"
+
+msgctxt "#30708"
+msgid "Antonín Leopold Dvořák (8 September 1841 – 1 May 1904) was a Czech composer. After Bedřich Smetana, he was the second Czech composer to achieve worldwide recognition. Following Smetana's nationalist example, Dvořák frequently employed aspects, specifically rhythms, of the folk music of Moravia and his native Bohemia. Dvořák’s own style has been described as ‘the fullest recreation of a national idiom with that of the symphonic tradition, absorbing folk influences and finding effective ways of using them’."
+msgstr "אנטונין לאופולד דבוז'אק, מלחין צ'כי, נולד ליד פראג ומת בה."
+
+msgctxt "#30709"
+msgid "Ennio Morricone"
+msgstr "אניו מוריקונה"
+
+msgctxt "#30710"
+msgid "Ennio Morricone, Grand Officer OMRI (Italian: [ˈɛnnjo morriˈkoːne]; born 10 November 1928) is an Italian composer, orchestrator, conductor, and former trumpet player, born in Rome. He composes a wide range of music styles, making him one of the most versatile, experimental and influential composers of all time, working in any medium."
+msgstr "אניו מוריקונה הוא מלחין איטלקי, זוכה פרס אוסקר על מפעל חיים ופרס אוסקר לפסקול הטוב ביותר. מוריקונה התפרסם בעיקר בשל פסי קול שכתב לסרטים. הוא כתב מוזיקה ליותר מ-500 סרטים וסדרות טלוויזיה, בהם כ-30 מערבונים."
+
+msgctxt "#30711"
+msgid "Antonio Vivaldi"
+msgstr "אנטוניו ויוואלדי"
+
+msgctxt "#30712"
+msgid "Born on March 4, 1678, in Venice, Italy, Antonio Vivaldi was ordained as a priest though he instead chose to follow his passion for music. A prolific composer who created hundreds of works, he became renowned for his concertos in Baroque style, becoming a highly influential innovator in form and pattern. He was also known for his operas, including Argippo and Bajazet. He died on July 28, 1741."
+msgstr "אַנְטוֹנִיוֹ לוּצ'וֹ וִיוַואלְדִי היה מגדולי המלחינים האיטלקים בתקופת הבארוק, כנר וירטואוז ובגיל 25 הוסמך לכמורה."
+
+msgctxt "#30713"
+msgid ""
+msgstr ""
+
+msgctxt "#30714"
+msgid ""
+msgstr ""
+
+msgctxt "#30715"
+msgid ""
+msgstr ""
+
+msgctxt "#30716"
+msgid ""
+msgstr ""
+
+msgctxt "#30717"
+msgid ""
+msgstr ""
+
+msgctxt "#30718"
+msgid ""
+msgstr ""
+
+msgctxt "#30719"
+msgid ""
+msgstr ""
+
+msgctxt "#30720"
+msgid ""
+msgstr ""
+
+msgctxt "#30721"
+msgid ""
+msgstr ""
+
+msgctxt "#30722"
+msgid ""
+msgstr ""
+
+msgctxt "#30723"
+msgid ""
+msgstr ""
+
+msgctxt "#30724"
+msgid ""
+msgstr ""
+
+msgctxt "#30725"
+msgid ""
+msgstr ""
+
+msgctxt "#30726"
+msgid ""
+msgstr ""
+
+msgctxt "#30727"
+msgid ""
+msgstr ""
+
+msgctxt "#30728"
+msgid ""
+msgstr ""
+
+msgctxt "#30729"
+msgid ""
+msgstr ""
+
+msgctxt "#30730"
+msgid ""
+msgstr ""
+
+msgctxt "#30731"
+msgid ""
+msgstr ""
+
+msgctxt "#30732"
+msgid ""
+msgstr ""
+
+msgctxt "#30733"
+msgid ""
+msgstr ""
+
+msgctxt "#30734"
+msgid ""
+msgstr ""
+
+msgctxt "#30735"
+msgid ""
+msgstr ""
+
+msgctxt "#30736"
+msgid ""
+msgstr ""
+
+msgctxt "#30737"
+msgid ""
+msgstr ""
+
+msgctxt "#30738"
+msgid ""
+msgstr ""
+
+msgctxt "#30739"
+msgid ""
+msgstr ""
+
+msgctxt "#30740"
+msgid ""
+msgstr ""
+
+msgctxt "#30741"
+msgid ""
+msgstr ""
+
+msgctxt "#30742"
+msgid ""
+msgstr ""
+
+msgctxt "#30743"
+msgid ""
+msgstr ""
+
+msgctxt "#30744"
+msgid ""
+msgstr ""
+
+msgctxt "#30745"
+msgid ""
+msgstr ""
+
+msgctxt "#30746"
+msgid ""
+msgstr ""
+
+msgctxt "#30747"
+msgid ""
+msgstr ""
+
+msgctxt "#30748"
+msgid ""
+msgstr ""
+
+msgctxt "#30749"
+msgid ""
+msgstr ""
+
+msgctxt "#30750"
+msgid ""
+msgstr ""
+
+msgctxt "#30751"
+msgid ""
+msgstr ""
+
+msgctxt "#30752"
+msgid ""
+msgstr ""
+
+msgctxt "#30753"
+msgid ""
+msgstr ""
+
+msgctxt "#30754"
+msgid ""
+msgstr ""
+
+msgctxt "#30755"
+msgid ""
+msgstr ""
+
+msgctxt "#30756"
+msgid ""
+msgstr ""
+
+msgctxt "#30757"
+msgid ""
+msgstr ""
+
+msgctxt "#30758"
+msgid ""
+msgstr ""
+
+msgctxt "#30759"
+msgid ""
+msgstr ""
+
+msgctxt "#30760"
+msgid ""
+msgstr ""
+
+msgctxt "#30761"
+msgid ""
+msgstr ""
+
+msgctxt "#30762"
+msgid ""
+msgstr ""
+
+msgctxt "#30763"
+msgid ""
+msgstr ""
+
+msgctxt "#30764"
+msgid ""
+msgstr ""
+
+msgctxt "#30765"
+msgid ""
+msgstr ""
+
+msgctxt "#30766"
+msgid ""
+msgstr ""
+
+msgctxt "#30767"
+msgid ""
+msgstr ""
+
+msgctxt "#30768"
+msgid ""
+msgstr ""
+
+msgctxt "#30769"
+msgid ""
+msgstr ""
+
+msgctxt "#30770"
+msgid ""
+msgstr ""
+
+msgctxt "#30771"
+msgid ""
+msgstr ""
+
+msgctxt "#30772"
+msgid ""
+msgstr ""
+
+msgctxt "#30773"
+msgid ""
+msgstr ""
+
+msgctxt "#30774"
+msgid ""
+msgstr ""
+
+msgctxt "#30775"
+msgid ""
+msgstr ""
+
+msgctxt "#30776"
+msgid ""
+msgstr ""
+
+msgctxt "#30777"
+msgid ""
+msgstr ""
+
+msgctxt "#30778"
+msgid ""
+msgstr ""
+
+msgctxt "#30779"
+msgid ""
+msgstr ""
+
+msgctxt "#30780"
+msgid ""
+msgstr ""
+
+msgctxt "#30781"
+msgid ""
+msgstr ""
+
+msgctxt "#30782"
+msgid ""
+msgstr ""
+
+msgctxt "#30783"
+msgid ""
+msgstr ""
+
+msgctxt "#30784"
+msgid ""
+msgstr ""
+
+msgctxt "#30785"
+msgid ""
+msgstr ""
+
+msgctxt "#30786"
+msgid ""
+msgstr ""
+
+msgctxt "#30587"
+msgid ""
+msgstr ""
+
+msgctxt "#30588"
+msgid ""
+msgstr ""
+
+msgctxt "#30589"
+msgid ""
+msgstr ""
+
+msgctxt "#30590"
+msgid ""
+msgstr ""
+
+msgctxt "#30591"
+msgid ""
+msgstr ""
+
+msgctxt "#30592"
+msgid ""
+msgstr ""
+
+msgctxt "#30593"
+msgid ""
+msgstr ""
+
+msgctxt "#30594"
+msgid ""
+msgstr ""
+
+msgctxt "#30595"
+msgid ""
+msgstr ""
+
+msgctxt "#30596"
+msgid ""
+msgstr ""
+
+msgctxt "#30597"
+msgid ""
+msgstr ""
+
+msgctxt "#30598"
+msgid ""
+msgstr ""
+
+msgctxt "#30599"
 msgid ""
 msgstr ""

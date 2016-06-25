@@ -1157,7 +1157,7 @@
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31012]) + IsEmpty(Control.GetLabel(11155))">SendClick(2)</onclick>
 	  <font>size28</font>
-	  <visible>!IsEmpty(Control.GetLabel(2))</visible>
+	  <!--<visible>!IsEmpty(Control.GetLabel(2))</visible>-->
 	</control>
   </include>
   <include name="button3_sort">

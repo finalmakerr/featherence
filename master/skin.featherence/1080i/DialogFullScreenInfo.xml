@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window description="חלון מידע כותרת עליונה (10142)">
-  <defaultcontrol always="true">10</defaultcontrol>
+  <defaultcontrol always="true">13</defaultcontrol>
   <include>Fade6</include>
   <visible>[Player.Paused + VideoPlayer.IsFullscreen] | Window.IsVisible(DialogPVRChannelsOSD.xml) | [Player.IsInternetStream] + [!StringCompare(System.InternetState,$LOCALIZE[15207]) + !IsEmpty(System.InternetState)]</visible>
   <visible>!Window.IsVisible(VideoOSD.xml) + !Window.IsVisible(DialogSubtitles.xml)</visible>
@@ -13,7 +13,7 @@
 	  <include>TopVideoInformation</include>
 	</control>
 	
-	<control type="button" id="10">
+	<control type="button" id="13">
 	  <visible>false</visible>
 	  <onclick>ActivateWindow(VideoOSD.xml)</onclick>
 	</control>

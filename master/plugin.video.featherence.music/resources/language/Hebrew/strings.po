@@ -844,8 +844,8 @@ msgid "Celine Dion"
 msgstr "Celine Dion"
 
 msgctxt "#30333"
-msgid ""
-msgstr ""
+msgid "Sam Smith"
+msgstr "Sam Smith"
 
 msgctxt "#30334"
 msgid ""

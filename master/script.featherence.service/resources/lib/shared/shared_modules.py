@@ -767,7 +767,7 @@ def dialogyesno(heading,line1,yes=False, nolabel="", yeslabel="", autoclose=0):
 	if '$LOCALIZE' in line1 or '$ADDON' in line1: line1 = xbmc.getInfoLabel(line1)
 	returned = 'skip'
 	
-	if yes != False: xbmc.executebuiltin('AlarmClock(yes,Action(Down),0,silent)')
+	if yes != False: xbmc.executebuiltin('AlarmClock(yes,Action(Down),00:00,silent)')
 	yeslabel = to_utf8(yeslabel)
 	nolabel = to_utf8(nolabel)
 
@@ -1285,12 +1285,11 @@ def ReloadSkin(admin,force=True):
 			playerhasmedia = xbmc.getCondVisibility('Player.HasMedia')
 			if playerhasmedia: xbmc.executebuiltin('Action(Stop)') ; notification('Video Stop',"","",1000) ; xbmc.sleep(1000)
 			notification("..","","",1000)
-		xbmc.sleep(200)
-		xbmc.executebuiltin('ReloadSkin()')
+		xbmc.sleep(200) ; xbmc.executebuiltin('ReloadSkin()') ; xbmc.sleep(200)
 		if force == True:
 			xbmc.sleep(1500)
 			xbmc.executebuiltin('AlarmClock(reloadskin,ClearProperty(ReloadSkin,home),00:05,silent)')
-		else: xbmc.executebuiltin('AlarmClock(reloadskin,ClearProperty(ReloadSkin,home),0,silent)')
+		else: xbmc.executebuiltin('AlarmClock(reloadskin,ClearProperty(ReloadSkin,home),00:01,silent)')
 		xbmc.executebuiltin('Action(Back)')
 		
 		

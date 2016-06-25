@@ -1536,8 +1536,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#32398"
-msgid ""
-msgstr ""
+msgid "This View is now Default"
+msgstr "תצוגה זו היא בררת המחדל כעת"
 
 msgctxt "#32399"
 msgid "Force TV Mode"

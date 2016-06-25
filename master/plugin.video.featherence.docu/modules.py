@@ -13,14 +13,14 @@ def CATEGORIES():
 	---MAIN--------------------------
 	------------------------------'''
 	CATEGORIES_SEARCH(mode=30, url="")
-	addDir(addonString(30000).encode('utf-8'),'MyDocu',100,featherenceserviceicons_path + 'star.png',addonString_servicefeatherence(32800).encode('utf-8'),'1',50, getAddonFanart(100, default="https://i.ytimg.com/vi/esMX5NIsHdk/maxresdefault.jpg")) #My Docu
-	addDir(addonString(30001).encode('utf-8'),'',101,'https://i.ytimg.com/vi/q4AQDDKglEE/maxresdefault.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30001).encode('utf-8')),'1',50, getAddonFanart(101, default="http://www.freedomwallpaper.com/wp-content/uploads/2015/02/Wild-animal-wallpaper-2.jpg")) #Nature
-	addDir(addonString(30002).encode('utf-8'),'',102,'http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2014/02/searching_for_exoplanetary_systems/14282306-1-eng-GB/Searching_for_exoplanetary_systems.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30002).encode('utf-8')),'1',50, getAddonFanart(102, default="http://infossible.com/infosdata/wp-content/uploads/2015/08/Earth-From-Space-Space-1080x1920.jpg")) #Space
-	addDir(addonString(30003).encode('utf-8'),'',103,'http://wsap.academy/wp-content/uploads/2015/03/1123676.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30003).encode('utf-8')),'1',50, getAddonFanart(103, default="https://d1ox703z8b11rg.cloudfront.net/uploads_image/3caff507-7d11-49ef-973a-c38a5fefe0e6/d01263ae1ef2e674b4920fecc6ddb625.png")) #History
-	addDir(addonString(30004).encode('utf-8'),'',104,'http://orig07.deviantart.net/ff1a/f/2009/033/1/3/science_wallpaper_by_hamdanzinha.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30004).encode('utf-8')),'1',50, getAddonFanart(104, default="http://wallpapercave.com/wp/582gycq.jpg")) #Science
-	addDir(addonString(30007).encode('utf-8'),'',107,'http://www.muralswallpaper.co.uk/sites/default/files/styles/full_lightbox/public/product_images/Cute-Animals-Kids-Wallpaper-Mural.jpg?itok=F5n249_x',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30007).encode('utf-8')),'1',50, getAddonFanart(107, default="")) #Kids
-	addDir(addonString(30008).encode('utf-8'),'',108,'http://in.bgu.ac.il/welcome/EventGalleries/%D7%9C%D7%A9%D7%95%D7%9F%20%D7%A2%D7%91%D7%A8%D7%99%D7%AA.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30008).encode('utf-8')),'1',50, getAddonFanart(108, default="https://i.ytimg.com/vi/JiRWesm6e04/maxresdefault.jpg")) #דוקומנטרי ישראלי
-	addDir(addonString(30009).encode('utf-8'),'',110,'http://crownheights.org/wp-content/uploads/2015/07/art.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30009).encode('utf-8')),'1',50, getAddonFanart(110, default="http://hdwallpapersd.com/wp-content/uploads/2015/08/amazing-street-art-best-3d-graffiti-hd-wallpaper-desktop.jpg")) #Art
+	addDir(addonString(30000).encode('utf-8'),'MyDocu',100,featherenceserviceicons_path + 'star.png',addonString_servicefeatherence(32800).encode('utf-8'),'1',0, getAddonFanart(100, default="https://i.ytimg.com/vi/esMX5NIsHdk/maxresdefault.jpg")) #My Docu
+	addDir(addonString(30001).encode('utf-8'),'',101,'https://i.ytimg.com/vi/q4AQDDKglEE/maxresdefault.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30001).encode('utf-8')),'1',0, getAddonFanart(101, default="http://www.freedomwallpaper.com/wp-content/uploads/2015/02/Wild-animal-wallpaper-2.jpg")) #Nature
+	addDir(addonString(30002).encode('utf-8'),'',102,'http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2014/02/searching_for_exoplanetary_systems/14282306-1-eng-GB/Searching_for_exoplanetary_systems.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30002).encode('utf-8')),'1',0, getAddonFanart(102, default="http://infossible.com/infosdata/wp-content/uploads/2015/08/Earth-From-Space-Space-1080x1920.jpg")) #Space
+	addDir(addonString(30003).encode('utf-8'),'',103,'http://wsap.academy/wp-content/uploads/2015/03/1123676.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30003).encode('utf-8')),'1',0, getAddonFanart(103, default="https://d1ox703z8b11rg.cloudfront.net/uploads_image/3caff507-7d11-49ef-973a-c38a5fefe0e6/d01263ae1ef2e674b4920fecc6ddb625.png")) #History
+	addDir(addonString(30004).encode('utf-8'),'',104,'http://orig07.deviantart.net/ff1a/f/2009/033/1/3/science_wallpaper_by_hamdanzinha.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30004).encode('utf-8')),'1',0, getAddonFanart(104, default="http://wallpapercave.com/wp/582gycq.jpg")) #Science
+	addDir(addonString(30007).encode('utf-8'),'',107,'http://www.muralswallpaper.co.uk/sites/default/files/styles/full_lightbox/public/product_images/Cute-Animals-Kids-Wallpaper-Mural.jpg?itok=F5n249_x',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30007).encode('utf-8')),'1',0, getAddonFanart(107, default="")) #Kids
+	addDir(addonString(30008).encode('utf-8'),'',108,'http://in.bgu.ac.il/welcome/EventGalleries/%D7%9C%D7%A9%D7%95%D7%9F%20%D7%A2%D7%91%D7%A8%D7%99%D7%AA.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30008).encode('utf-8')),'1',0, getAddonFanart(108, default="https://i.ytimg.com/vi/JiRWesm6e04/maxresdefault.jpg")) #דוקומנטרי ישראלי
+	addDir(addonString(30009).encode('utf-8'),'',110,'http://crownheights.org/wp-content/uploads/2015/07/art.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30009).encode('utf-8')),'1',0, getAddonFanart(110, default="http://hdwallpapersd.com/wp-content/uploads/2015/08/amazing-street-art-best-3d-graffiti-hd-wallpaper-desktop.jpg")) #Art
 	
 	addon = 'plugin.video.smithsonian'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
@@ -34,28 +34,28 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 	fanart = 100
 	
 	'''כפתור דוקו חדש..'''
-	addDir(addonString_servicefeatherence(32450).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',50, getAddonFanart(fanart))
+	addDir(addonString_servicefeatherence(32450).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',0, getAddonFanart(fanart))
 	
 	'''רשימת השמעה 1'''
-	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',50, getAddonFanart("Custom_Playlist1"))
+	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',0, getAddonFanart("Custom_Playlist1"))
 	'''רשימת השמעה 2'''
-	if Custom_Playlist2_ID != "": addDir(Custom_Playlist2_Name,Custom_Playlist2_ID,18,Custom_Playlist2_Thumb,Custom_Playlist2_Description,'2',50, getAddonFanart("Custom_Playlist2"))
+	if Custom_Playlist2_ID != "": addDir(Custom_Playlist2_Name,Custom_Playlist2_ID,18,Custom_Playlist2_Thumb,Custom_Playlist2_Description,'2',0, getAddonFanart("Custom_Playlist2"))
 	'''רשימת השמעה 3'''
-	if Custom_Playlist3_ID != "": addDir(Custom_Playlist3_Name,Custom_Playlist3_ID,18,Custom_Playlist3_Thumb,Custom_Playlist3_Description,'3',50, getAddonFanart("Custom_Playlist3"))
+	if Custom_Playlist3_ID != "": addDir(Custom_Playlist3_Name,Custom_Playlist3_ID,18,Custom_Playlist3_Thumb,Custom_Playlist3_Description,'3',0, getAddonFanart("Custom_Playlist3"))
 	'''רשימת השמעה 4'''
-	if Custom_Playlist4_ID != "": addDir(Custom_Playlist4_Name,Custom_Playlist4_ID,18,Custom_Playlist4_Thumb,Custom_Playlist4_Description,'4',50, getAddonFanart("Custom_Playlist4"))
+	if Custom_Playlist4_ID != "": addDir(Custom_Playlist4_Name,Custom_Playlist4_ID,18,Custom_Playlist4_Thumb,Custom_Playlist4_Description,'4',0, getAddonFanart("Custom_Playlist4"))
 	'''רשימת השמעה 5'''
-	if Custom_Playlist5_ID != "": addDir(Custom_Playlist5_Name,Custom_Playlist5_ID,18,Custom_Playlist5_Thumb,Custom_Playlist5_Description,'5',50, getAddonFanart("Custom_Playlist5"))
+	if Custom_Playlist5_ID != "": addDir(Custom_Playlist5_Name,Custom_Playlist5_ID,18,Custom_Playlist5_Thumb,Custom_Playlist5_Description,'5',0, getAddonFanart("Custom_Playlist5"))
 	'''רשימת השמעה 6'''
-	if Custom_Playlist6_ID != "": addDir(Custom_Playlist6_Name,Custom_Playlist6_ID,18,Custom_Playlist6_Thumb,Custom_Playlist6_Description,'6',50, getAddonFanart("Custom_Playlist6"))
+	if Custom_Playlist6_ID != "": addDir(Custom_Playlist6_Name,Custom_Playlist6_ID,18,Custom_Playlist6_Thumb,Custom_Playlist6_Description,'6',0, getAddonFanart("Custom_Playlist6"))
 	'''רשימת השמעה 7'''
-	if Custom_Playlist7_ID != "": addDir(Custom_Playlist7_Name,Custom_Playlist7_ID,18,Custom_Playlist7_Thumb,Custom_Playlist7_Description,'7',50, getAddonFanart("Custom_Playlist7"))
+	if Custom_Playlist7_ID != "": addDir(Custom_Playlist7_Name,Custom_Playlist7_ID,18,Custom_Playlist7_Thumb,Custom_Playlist7_Description,'7',0, getAddonFanart("Custom_Playlist7"))
 	'''רשימת השמעה 8'''
-	if Custom_Playlist8_ID != "": addDir(Custom_Playlist8_Name,Custom_Playlist8_ID,18,Custom_Playlist8_Thumb,Custom_Playlist8_Description,'8',50, getAddonFanart("Custom_Playlist8"))
+	if Custom_Playlist8_ID != "": addDir(Custom_Playlist8_Name,Custom_Playlist8_ID,18,Custom_Playlist8_Thumb,Custom_Playlist8_Description,'8',0, getAddonFanart("Custom_Playlist8"))
 	'''רשימת השמעה 9'''
-	if Custom_Playlist9_ID != "": addDir(Custom_Playlist9_Name,Custom_Playlist9_ID,18,Custom_Playlist9_Thumb,Custom_Playlist9_Description,'9',50, getAddonFanart("Custom_Playlist9"))
+	if Custom_Playlist9_ID != "": addDir(Custom_Playlist9_Name,Custom_Playlist9_ID,18,Custom_Playlist9_Thumb,Custom_Playlist9_Description,'9',0, getAddonFanart("Custom_Playlist9"))
 	'''רשימת השמעה 10'''
-	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',50, getAddonFanart("Custom_Playlist10"))
+	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',0, getAddonFanart("Custom_Playlist10"))
 	
 def CATEGORIES101(name, iconimage, desc, fanart):
 	'''טבע'''
@@ -83,7 +83,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	'''Earth Touch'''
 	list = []
 	list.append('&custom8=plugin://plugin.video.earthtouch/')
-	addDir(addonString(30102).encode('utf-8'),list,8,"http://www.earthtouchnews.com/media/1074524/earth-touch-insider_series-poster_2_GalleryLarge.jpg",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30102).encode('utf-8')),'',50, getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30102).encode('utf-8'),list,8,"http://www.earthtouchnews.com/media/1074524/earth-touch-insider_series-poster_2_GalleryLarge.jpg",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30102).encode('utf-8')),'',0, getAddonFanart(background, default=fanart, custom=""))
 	
 	'''בעלי חיים'''
 	addDir(addonString(30103).encode('utf-8'),'',10101,'http://3.bp.blogspot.com/-GmdLk2R6ahA/T55Ud9aXCcI/AAAAAAAABY4/4Z9aMnM0Ukc/s1600/Blue-Butterfuly-Latest-Animal-Wallpaper-2012.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30103).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
@@ -124,10 +124,8 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list.append('&youtube_id=zBUgaQrUBWQ')
 	list.append('&youtube_id=DRQmVSyvcKA')
 	list.append('&youtube_id=7HcYJKMxpcg')
-	list.append('&youtube_pl=PLVxXlr3XU-_VZwC1SOiaPBFaujWEFiTPh')
-	list.append('&youtube_pl=PLVxXlr3XU-_W_YnYr9wn_6ueFPH-O3Ltb') 
-	list.append('&youtube_pl=PLVxXlr3XU-_X9GwrrVOCDuTbJujU0r8_4') 
-	list.append('&youtube_pl=PLVxXlr3XU-_VGu-vKA7xMs_QlrBRHThS2') 
+	list.append('&youtube_id=vh3Rcl-2wDE')
+	list.append('&youtube_id=pg9bUkS87-Y') 
 	addDir(addonString(30111).encode('utf-8'),list,17,'http://ww2.valdosta.edu/~sybashlor/giraffe.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30111).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom="http://3.bp.blogspot.com/-BQNfb36zZmM/ULekrJYr-UI/AAAAAAAAAM4/548nRni_LTo/s1600/Giraffe-HD-Wallpapers.jpg"))
 	
 	'''דגים'''
@@ -370,9 +368,8 @@ def CATEGORIES10103(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLzEB0af6uUKY-C4hfcWqDI5o6P_Gbrycl')
 	list.append('&youtube_pl=PLD0rNDBsRxFOxysUhikCbhsGawiU50PMX')
 	list.append('&youtube_pl=PLG5mK0MTE_3GoOFcf7xKPXmcKTUnSvXW2')
-	addDir(addonString(30181).encode('utf-8'),list,17,'http://pix1.agoda.net/hotelimages/972/97258/97258_14012319470018139576.jpg?s=800x600',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30181).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30181).encode('utf-8'),list,17,'http://www.startau.co.il/uploads/Articles/Article_68_280420131143_1529886926.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30181).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom="http://awesomeocean.com/wp-content/uploads/2014/09/Flat-Ocean.jpeg"))
  
-	
 	'''כדור הארץ'''
 	list = []
 	list.append('&youtube_id=VNqNnUJVcVs')
@@ -470,12 +467,12 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	'''eso'''
 	addon = 'plugin.video.eso'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(addonString(30205).encode('utf-8'),'plugin://'+addon,8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30205).encode('utf-8'),'plugin://'+addon,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 	
 	'''ESA'''
 	addon = 'plugin.video.esa'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(addonString(30206).encode('utf-8'),'plugin://'+addon,8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30206).encode('utf-8'),'plugin://'+addon,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 
 	CATEGORIES102A(name, iconimage, desc, fanart) #עמוד הבא
 	
@@ -545,14 +542,14 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
 	list = []
 	list.append('&custom8=plugin://plugin.video.exodus/?action=movies&url=http%3a%2f%2fwww.imdb.com%2fsearch%2ftitle%3ftitle_type%3dfeature%2ctv_movie%26languages%3den%26num_votes%3d100%2c%26release_date%3ddate%5b730%5d%2cdate%5b30%5d%26genres%3dhistory%26sort%3dmoviemeter%2casc%26count%3d40%26start%3d1')
-	addDir('Exodus Movies',list,8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir('Exodus Movies',list,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 
 	'''Exodus TV shows'''
 	addon = 'plugin.video.exodus'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
 	list = []
 	list.append('&custom8=plugin://plugin.video.exodus/?action=tvshows&url=http%3a%2f%2fwww.imdb.com%2fsearch%2ftitle%3ftitle_type%3dtv_series%2cmini_series%26release_date%3d%2cdate%5b0%5d%26genres%3dhistory%26sort%3dmoviemeter%2casc%26count%3d40%26start%3d1')
-	addDir('Exodus TV shows',list,8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir('Exodus TV shows',list,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 
 	CATEGORIES103A(name, iconimage, desc, fanart) #עמוד הבא
 		
@@ -570,7 +567,7 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 
 	addon = 'plugin.video.ted.talks'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(addonString(30400).encode('utf-8'),'plugin://'+addon,8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30400).encode('utf-8'),'plugin://'+addon,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 	
 	'''טכנולוגיה'''
 	addDir(addonString(30403).encode('utf-8'),'',10403,'http://kommercialize.com/wp-content/uploads/2013/02/iStock_000020426012Small.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30403).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))
@@ -1059,48 +1056,48 @@ def CATEGORIES108(name, iconimage, desc, fanart):
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
 	list = []
 	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f545c3cefe4b0263200cf8bb7%2ft%2f5474d191e4b0dda9e3ce84e7%2f1416941970318%2flecture.jpg%3fformat%3d1500w&mode=0&name=%d7%94%d7%a8%d7%a6%d7%90%d7%95%d7%aa&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-more%2flectures')
-	addDir(addonString(30808).encode('utf-8'),list,8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30808).encode('utf-8'),list,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 	
 	'''מאקו דוקו'''
 	addon = 'plugin.video.MakoTV'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
 	list = []
 	list.append('&custom8=plugin://plugin.video.MakoTV//?iconimage=http%3a%2f%2fopendoclab.mit.edu%2fwp%2fwp-content%2fuploads%2f2011%2f09%2fcamera.jpg&mode=0&name=%d7%93%d7%95%d7%a7%d7%95&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-more%2fdocu_tv')
-	addDir(addonString(30809).encode('utf-8'),list,8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30809).encode('utf-8'),list,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 
 	'''וואלה דוקו'''
 	addon = 'plugin.video.wallaNew.video'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
 	list = []
 	list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=wallavod&name=%d7%93%d7%95%d7%a7%d7%95%20(56)&url=genre%3dmovies%26genreId%3d6263')
-	addDir(addonString(30810).encode('utf-8'),list,8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30810).encode('utf-8'),list,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 
 	'''ערוץ 8'''
 	addon = 'plugin.video.seretil'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
 	list = []
 	list.append('&custom8=plugin://plugin.video.hotVOD.video/?mode=5&name=%d7%a2%d7%a8%d7%95%d7%a5%208&url=http%3a%2f%2fhot.ynet.co.il%2fhome%2f0%2c7340%2cL-7461%2c00.html')
-	addDir(addonString(30811).encode('utf-8'),list,8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30811).encode('utf-8'),list,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 	
 	'''דוקו 10'''
 	addon = 'plugin.video.ilten'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(addonString(30812).encode('utf-8'),'plugin://'+addon+'/?category=2118',8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30812).encode('utf-8'),'plugin://'+addon+'/?category=2118',8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 	
 	'''sertil דוקו'''
 	addon = 'plugin.video.seretil'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(addonString(30813).encode('utf-8'),'plugin://'+addon+'/?iconimage=http%3a%2f%2fimages.nationalgeographic.com%2fwpf%2fsites%2fcommon%2fi%2fpresentation%2fNGLogo560x430-cb1343821768.png&mode=4&name=%d7%a0%d7%a9%d7%99%d7%95%d7%a0%d7%9c%20%d7%92%d7%90%d7%95%d7%92%d7%a8%d7%a4%d7%99%d7%a7&url=http%3a%2f%2fseretil.me%2fcategory%2f%25D7%25A0%25D7%25A9%25D7%2599%25D7%2595%25D7%25A0%25D7%259C-%25D7%2592%25D7%2599%25D7%2590%25D7%2595%25D7%2592%25D7%25A8%25D7%25A4%25D7%2599%25D7%25A7%2fpage1%2f',8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30813).encode('utf-8'),'plugin://'+addon+'/?iconimage=http%3a%2f%2fimages.nationalgeographic.com%2fwpf%2fsites%2fcommon%2fi%2fpresentation%2fNGLogo560x430-cb1343821768.png&mode=4&name=%d7%a0%d7%a9%d7%99%d7%95%d7%a0%d7%9c%20%d7%92%d7%90%d7%95%d7%92%d7%a8%d7%a4%d7%99%d7%a7&url=http%3a%2f%2fseretil.me%2fcategory%2f%25D7%25A0%25D7%25A9%25D7%2599%25D7%2595%25D7%25A0%25D7%259C-%25D7%2592%25D7%2599%25D7%2590%25D7%2595%25D7%2592%25D7%25A8%25D7%25A4%25D7%2599%25D7%25A7%2fpage1%2f',8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 	
 	'''movix דוקו'''
 	addon = 'plugin.video.movixws'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(addonString(30814).encode('utf-8'),'plugin://'+addon+'/?description&iconimage=http%3a%2f%2ficons.iconarchive.com%2ficons%2faaron-sinuhe%2ftv-movie-folder%2f512%2fDocumentaries-National-Geographic-icon.png&mode=2&name=Documentary%20-%20%d7%93%d7%95%d7%a7%d7%95%d7%9e%d7%a0%d7%98%d7%a8%d7%99&url=http%3a%2f%2fwww.movix.me%2fgenres%2fDocumentary',8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30814).encode('utf-8'),'plugin://'+addon+'/?description&iconimage=http%3a%2f%2ficons.iconarchive.com%2ficons%2faaron-sinuhe%2ftv-movie-folder%2f512%2fDocumentaries-National-Geographic-icon.png&mode=2&name=Documentary%20-%20%d7%93%d7%95%d7%a7%d7%95%d7%9e%d7%a0%d7%98%d7%a8%d7%99&url=http%3a%2f%2fwww.movix.me%2fgenres%2fDocumentary',8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 	
 	'''דוקו sdarot'''
 	addon = 'plugin.video.sdarot.tv'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir(addonString(30815).encode('utf-8'),'plugin://'+addon+'/?mode=2&module=http%3a%2f%2fwww.sdarot.wf%2fseries%2fgenre%2f11%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94&name=%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94&summary&url=all-heb',8,thumb,plot,addon,50, getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30815).encode('utf-8'),'plugin://'+addon+'/?mode=2&module=http%3a%2f%2fwww.sdarot.wf%2fseries%2fgenre%2f11%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94&name=%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94&summary&url=all-heb',8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 	
 	'''ילדים'''
 	addDir(addonString(30007).encode('utf-8'),'',10801,'http://www.disneywallpaper.net/data/media/7/Winnie_the_Pooh_kids.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30007).encode('utf-8')),'1',"", getAddonFanart(background, default=fanart, custom=""))

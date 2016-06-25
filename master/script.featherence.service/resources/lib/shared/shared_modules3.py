@@ -19,6 +19,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	desc = str(to_utf8(desc))
 	fanart = str(to_utf8(fanart))
 	
+	
 	if '$LOCALIZE' in name or '$ADDON' in name: name = xbmc.getInfoLabel(name)
 	
 	if num == None: num = ""
@@ -104,7 +105,6 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 			
 		menu = []
 		menu = menu_list(01, menu, addonID, name, url, mode, iconimage, desc, num, viewtype, fanart)
-		menu.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
 		
 		isFolder = getisFolder(name, url, mode, iconimage, desc, num, viewtype, fanart)
 		
@@ -1206,7 +1206,7 @@ def apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, titl
 	
 	return id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__
 
-def setView(content, viewType, containerfolderpath2):
+def setView_(content, viewType, containerfolderpath2):
 	'''set content type so library shows more views and info'''
 	name = 'setView' ; printpoint = ""
 	
@@ -2011,6 +2011,9 @@ def pluginend(admin):
 	elif mode == 44:
 		'''Play URL'''
 		playURL(mode, name, url, iconimage, desc, num, viewtype, fanart)
+	elif mode == 50:
+		'''Add View'''
+		addView(xbmc.getInfoLabel('Container.Content'))
 	elif mode == 90:
 		if General_Language != url and url != "":
 			setsetting('General_Language',url)
@@ -2452,9 +2455,18 @@ def pluginend2(admin, url, containerfolderpath, viewtype):
 		else: xbmc.sleep(500)
 		containerfolderpath2 = xbmc.getInfoLabel('Container.FolderPath')
 
-		if containerfolderpath != containerfolderpath2 or "4" in printpoint:
+		if containerfolderpath != containerfolderpath2 and General_AutoView == "true":
 			printpoint = printpoint + "5"
-			setView('', viewtype, containerfolderpath2)
+			if viewtype == '0': viewtype = 'movies'
+			
+			try: xbmcplugin.setContent(int(sys.argv[1]), viewtype)
+			except:
+				viewtype = 'movies'
+				xbmcplugin.setContent(int(sys.argv[1]), viewtype)
+
+			plugin = regex_from_to(containerfolderpath, 'plugin://', '/', excluding=False)
+			if containerfolderpath.replace(plugin,"") == "": viewtype = 'mainmenu'
+			setView(viewtype, {'skin.featherence': 50, 'skin.confluence': 500})
 			'''---------------------------'''
 	
 	'''------------------------------
@@ -2463,11 +2475,94 @@ def pluginend2(admin, url, containerfolderpath, viewtype):
 	text = "count" + space2 + str(count) + space + "containerfolderpath/2" + newline + \
 	str(containerfolderpath) + newline + \
 	str(containerfolderpath2) + newline + \
+	'viewtype' + space2 + str(viewtype) + newline + \
 	"url" + space2 + str(url)
 	printlog(title='pluginend2', printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
-
 	
+def addView(content):
+    name = 'addView' ; printpoint = "" ; TypeError = "" ; extra = ""
+    import xbmcvfs
+    try:
+		from sqlite3 import dbapi2 as database
+    except:
+		from pysqlite2 import dbapi2 as database
+    
+    try:
+        skin = xbmc.getSkinDir()
+        skinPath = xbmc.translatePath('special://skin/')
+        xml = os.path.join(skinPath,'addon.xml')
+        file = xbmcvfs.File(xml)
+        read = file.read().replace('\n','')
+        file.close()
+        try: src = re.compile('defaultresolution="(.+?)"').findall(read)[0]
+        except: src = re.compile('<res.+?folder="(.+?)"').findall(read)[0]
+        src = os.path.join(skinPath, src)
+        src = os.path.join(src, 'MyVideoNav.xml')
+        file = xbmcvfs.File(src)
+        read = file.read().replace('\n','')
+        file.close()
+        views = re.compile('<views>(.+?)</views>').findall(read)[0]
+        views = [int(x) for x in views.split(',')]
+        for view in views:
+            label = xbmc.getInfoLabel('Control.GetLabel(%s)' % (view))
+            if not (label == '' or label == None): break
+        record = (skin, content, str(view))
+        xbmcvfs.mkdir(addonProfile)
+        dbcon = database.connect(os.path.join(addonProfile, 'views.db'))
+        dbcur = dbcon.cursor()
+        dbcur.execute("CREATE TABLE IF NOT EXISTS views (""skin TEXT, ""view_type TEXT, ""view_id TEXT, ""UNIQUE(skin, view_type)"");")
+        dbcur.execute("DELETE FROM views WHERE skin = '%s' AND view_type = '%s'" % (record[0], record[1]))
+        dbcur.execute("INSERT INTO views Values (?, ?, ?)", record)
+        dbcon.commit()
+        viewName = xbmc.getInfoLabel('Container.Viewmode')
+
+        notification(addonString_servicefeatherence(32398).encode('utf-8'), viewName, '', 2000)
+    except Exception, TypeError:
+        extra = 'TypeError' + space2 + str(TypeError)
+        #return
+	
+	text = "content" + space2 + str(content) + space + newline + \
+	extra
+	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
+
+def setView(content, viewDict=None)	:
+	name = 'setView' ; printpoint = "" ; TypeError = "" ; extra = ""
+	try:
+		from sqlite3 import dbapi2 as database
+	except:
+		from pysqlite2 import dbapi2 as database
+	
+	for i in range(0,200):
+		if xbmc.getCondVisibility('Container.Content(%s)' % content) or content == 'mainmenu':
+			printpoint = printpoint + '3'
+			try:
+				skin = xbmc.getSkinDir()
+				record = (skin, content)
+				dcon = database.connect(os.path.join(addonProfile, 'views.db'))
+				dcur = dbcon.cursor()
+				dbcur.execute("SELECT * FROM views WHERE skin = '%s' AND view_type = '%s'" % (record[0], record[1]))
+				view = dbcur.fetchone()
+				view = view[2]
+				if view == None: raise Exception()
+				return xbmc.executebuiltin('Container.SetViewMode(%s)' % str(view))
+			except Exception, TypeError:
+				printpoint = printpoint + '9'
+				extra = 'TypeError' + space2 + str(TypeError)
+		else:
+			printpoint = printpoint + '4'
+		
+		xbmc.sleep(100)
+	
+	text = "content" + space2 + str(content) + space + newline + \
+	extra
+	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
+	
+	if '9' in printpoint:
+		try: return xbmc.executebuiltin('Container.SetViewMode(%s)' % str(viewDict[skin]))
+		except: return
+
+		
 def getCustom_Playlist(admin):
 	'''Get the next new Item ID of a user favourite'''
 	returned = "" ; printpoint = ""
