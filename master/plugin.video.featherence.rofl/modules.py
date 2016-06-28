@@ -17,13 +17,13 @@ def CATEGORIES():
 	except: General_Language = systemlanguage
 	
 	CATEGORIES_SEARCH(mode=30, url="")
-	addDir('-' + addonString(30000).encode('utf-8'),'',100,featherenceserviceicons_path + 'star.png',addonString_servicefeatherence(32800).encode('utf-8'),'1',0, getAddonFanart(100, urlcheck_=True)) #My ROFL
+	addDir('-' + addonString(30000).encode('utf-8'),'',100,featherenceserviceicons_path + 'star.png',addonString_servicefeatherence(32800).encode('utf-8'),'1',0,getAddonFanart(100, urlcheck_=True)) #My ROFL
 	
-	addDir(addonString(30001).encode('utf-8'),'',101,featherenceserviceicons_path + 'fail.png','','1',0, getAddonFanart(101, default="https://i.ytimg.com/vi/y4ZmuJL1IMk/maxresdefault.jpg", urlcheck_=True)) #פספוסים
-	addDir(addonString(30002).encode('utf-8'),'',102,featherenceserviceicons_path + 'tvshows.png','','1',0, getAddonFanart(102, default="http://www.motovideo.eu/wp-content/uploads/2015/12/Motor-Fails-Comedy-Fail.jpg", urlcheck_=True)) #תוכניות ישראליות
+	addDir(addonString(30001).encode('utf-8'),'',101,featherenceserviceicons_path + 'fail.png','','1',0,getAddonFanart(101, default="https://i.ytimg.com/vi/y4ZmuJL1IMk/maxresdefault.jpg", urlcheck_=True)) #פספוסים
+	addDir(addonString(30002).encode('utf-8'),'',102,featherenceserviceicons_path + 'tvshows.png','','1',0,getAddonFanart(102, default="http://www.motovideo.eu/wp-content/uploads/2015/12/Motor-Fails-Comedy-Fail.jpg", urlcheck_=True)) #תוכניות ישראליות
 	addDir(addonString(30003).encode('utf-8'),'',103,featherenceserviceicons_path + 'bank.png','','1',2, getAddonFanart(103, default="https://miserylovescompanyuk.files.wordpress.com/2015/08/o-stage-microphone-facebook.jpg", urlcheck_=True)) #סטנדאפ ישראלי
 	addDir(addonString(30004).encode('utf-8'),'',104,featherenceserviceicons_path + 'bank.png','','1',2, getAddonFanart(104, default="https://miserylovescompanyuk.files.wordpress.com/2015/08/o-stage-microphone-facebook.jpg", urlcheck_=True)) #סטנדאפ לועזי
-	#addDir(addonString(200).encode('utf-8') % (General_Language),'',200,featherenceserviceicons_path + 'ud.png','[COLOR=red]1: %s | 2: %s | 3: %s[/COLOR]' % (General_Language, General_Language2, General_Language3) + '[CR]' + addonString_servicefeatherence(32081).encode('utf-8'),'1',0, getAddonFanart(200, urlcheck_=True)) #Forigen Language
+	#addDir(addonString(200).encode('utf-8') % (General_Language),'',200,featherenceserviceicons_path + 'ud.png','[COLOR=red]1: %s | 2: %s | 3: %s[/COLOR]' % (General_Language, General_Language2, General_Language3) + '[CR]' + addonString_servicefeatherence(32081).encode('utf-8'),'1',0,getAddonFanart(200, urlcheck_=True)) #Forigen Language
 
 
 def CATEGORIES100(name, iconimage, desc, fanart):
@@ -32,31 +32,31 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 	------------------------------'''
 	fanart = 100
 	'''כפתור הילדים שלי חדש..'''
-	addDir(addonString_servicefeatherence(32450).encode('utf-8'),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',0, getAddonFanart(fanart, urlcheck_=True))
+	addDir(addonString_servicefeatherence(32450).encode('utf-8'),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',0,getAddonFanart(fanart, urlcheck_=True))
 	
 	'''רשימת השמעה 1'''
-	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',0, getAddonFanart("Custom_Playlist1", urlcheck_=True))
+	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',0,getAddonFanart("Custom_Playlist1", urlcheck_=True))
 	'''רשימת השמעה 2'''
-	if Custom_Playlist2_ID != "": addDir(Custom_Playlist2_Name,Custom_Playlist2_ID,18,Custom_Playlist2_Thumb,Custom_Playlist2_Description,'2',0, getAddonFanart("Custom_Playlist2", urlcheck_=True))
+	if Custom_Playlist2_ID != "": addDir(Custom_Playlist2_Name,Custom_Playlist2_ID,18,Custom_Playlist2_Thumb,Custom_Playlist2_Description,'2',0,getAddonFanart("Custom_Playlist2", urlcheck_=True))
 	'''רשימת השמעה 3'''
-	if Custom_Playlist3_ID != "": addDir(Custom_Playlist3_Name,Custom_Playlist3_ID,18,Custom_Playlist3_Thumb,Custom_Playlist3_Description,'3',0, getAddonFanart("Custom_Playlist3", urlcheck_=True))
+	if Custom_Playlist3_ID != "": addDir(Custom_Playlist3_Name,Custom_Playlist3_ID,18,Custom_Playlist3_Thumb,Custom_Playlist3_Description,'3',0,getAddonFanart("Custom_Playlist3", urlcheck_=True))
 	'''רשימת השמעה 4'''
-	if Custom_Playlist4_ID != "": addDir(Custom_Playlist4_Name,Custom_Playlist4_ID,18,Custom_Playlist4_Thumb,Custom_Playlist4_Description,'4',0, getAddonFanart("Custom_Playlist4", urlcheck_=True))
+	if Custom_Playlist4_ID != "": addDir(Custom_Playlist4_Name,Custom_Playlist4_ID,18,Custom_Playlist4_Thumb,Custom_Playlist4_Description,'4',0,getAddonFanart("Custom_Playlist4", urlcheck_=True))
 	'''רשימת השמעה 5'''
-	if Custom_Playlist5_ID != "": addDir(Custom_Playlist5_Name,Custom_Playlist5_ID,18,Custom_Playlist5_Thumb,Custom_Playlist5_Description,'5',0, getAddonFanart("Custom_Playlist5", urlcheck_=True))
+	if Custom_Playlist5_ID != "": addDir(Custom_Playlist5_Name,Custom_Playlist5_ID,18,Custom_Playlist5_Thumb,Custom_Playlist5_Description,'5',0,getAddonFanart("Custom_Playlist5", urlcheck_=True))
 	'''רשימת השמעה 6'''
-	if Custom_Playlist6_ID != "": addDir(Custom_Playlist6_Name,Custom_Playlist6_ID,18,Custom_Playlist6_Thumb,Custom_Playlist6_Description,'6',0, getAddonFanart("Custom_Playlist6", urlcheck_=True))
+	if Custom_Playlist6_ID != "": addDir(Custom_Playlist6_Name,Custom_Playlist6_ID,18,Custom_Playlist6_Thumb,Custom_Playlist6_Description,'6',0,getAddonFanart("Custom_Playlist6", urlcheck_=True))
 	'''רשימת השמעה 7'''
-	if Custom_Playlist7_ID != "": addDir(Custom_Playlist7_Name,Custom_Playlist7_ID,18,Custom_Playlist7_Thumb,Custom_Playlist7_Description,'7',0, getAddonFanart("Custom_Playlist7", urlcheck_=True))
+	if Custom_Playlist7_ID != "": addDir(Custom_Playlist7_Name,Custom_Playlist7_ID,18,Custom_Playlist7_Thumb,Custom_Playlist7_Description,'7',0,getAddonFanart("Custom_Playlist7", urlcheck_=True))
 	'''רשימת השמעה 8'''
-	if Custom_Playlist8_ID != "": addDir(Custom_Playlist8_Name,Custom_Playlist8_ID,18,Custom_Playlist8_Thumb,Custom_Playlist8_Description,'8',0, getAddonFanart("Custom_Playlist8", urlcheck_=True))
+	if Custom_Playlist8_ID != "": addDir(Custom_Playlist8_Name,Custom_Playlist8_ID,18,Custom_Playlist8_Thumb,Custom_Playlist8_Description,'8',0,getAddonFanart("Custom_Playlist8", urlcheck_=True))
 	'''רשימת השמעה 9'''
-	if Custom_Playlist9_ID != "": addDir(Custom_Playlist9_Name,Custom_Playlist9_ID,18,Custom_Playlist9_Thumb,Custom_Playlist9_Description,'9',0, getAddonFanart("Custom_Playlist9", urlcheck_=True))
+	if Custom_Playlist9_ID != "": addDir(Custom_Playlist9_Name,Custom_Playlist9_ID,18,Custom_Playlist9_Thumb,Custom_Playlist9_Description,'9',0,getAddonFanart("Custom_Playlist9", urlcheck_=True))
 	'''רשימת השמעה 10'''
-	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',0, getAddonFanart("Custom_Playlist10", urlcheck_=True))
+	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',0,getAddonFanart("Custom_Playlist10", urlcheck_=True))
 	
 	'''מעודפים'''
-	addDir(localize(1036),"",32,featherenceserviceicons_path + 'star.png','','1',0, getAddonFanart(fanart, urlcheck_=True))
+	addDir(localize(1036),"",32,featherenceserviceicons_path + 'star.png','','1',0,getAddonFanart(fanart, urlcheck_=True))
 
 def CATEGORIES101(name, iconimage, desc, fanart):
 	'''פספוסים'''
@@ -68,7 +68,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list = []
 	
 	list.append('&youtube_ch=failarmy')
-	addDir(addonString(30409).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCPgHR8p6lS1D5p-loVhk4xw',0, getAddonFanart(background, default='getAPIdata', custom=""))
+	addDir(addonString(30409).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCPgHR8p6lS1D5p-loVhk4xw',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
 	'''Damn Fail
 	fanart = '' 
@@ -76,7 +76,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list = []
 	
 	list.append('&youtube_ch=UCRvQ6H9unDQSOD0-qZ0EZog')
-	addDir(addonString(30408).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCRvQ6H9unDQSOD0-qZ0EZog',0, getAddonFanart(background, default='getAPIdata', custom=""))
+	addDir(addonString(30408).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCRvQ6H9unDQSOD0-qZ0EZog',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
 	'''DmPranksProductions
 	fanart = '' 
@@ -84,7 +84,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list = []
 	
 	list.append('&youtube_ch=DmPranksProductions')
-	addDir(addonString(30401).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=DmPranksProductions',0, getAddonFanart(background, default='getAPIdata', custom=""))
+	addDir(addonString(30401).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=DmPranksProductions',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
 	'''failarmy''''''
 	fanart = '' #גדול
@@ -92,7 +92,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list = []
 	
 	list.append('&youtube_ch=failarmy')
-	addDir(addonString(30400).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=failarmy',0, getAddonFanart(background, default='getAPIdata', custom=""))
+	addDir(addonString(30400).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=failarmy',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
 	'''FaiICity
 	fanart = '' 
@@ -100,7 +100,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list = []
 	
 	list.append('&youtube_ch=FaiICity')
-	addDir(addonString(30405).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=FaiICity',0, getAddonFanart(background, default='getAPIdata', custom=""))
+	addDir(addonString(30405).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=FaiICity',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
 	'''MegaFail
 	fanart = '' 
@@ -108,7 +108,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list = []
 	
 	list.append('&youtube_ch=UCo4XcrQ5zB3DUwqa7lvNUeQ')
-	addDir(addonString(30404).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCo4XcrQ5zB3DUwqa7lvNUeQ',0, getAddonFanart(background, default='getAPIdata', custom=""))
+	addDir(addonString(30404).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCo4XcrQ5zB3DUwqa7lvNUeQ',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
 	'''MonthlyFails
 	fanart = '' 
@@ -116,7 +116,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list = []
 	
 	list.append('&youtube_ch=UCEkZHiGsR4jvWeHunEB3Qaw')
-	addDir(addonString(30403).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCEkZHiGsR4jvWeHunEB3Qaw',0, getAddonFanart(background, default='getAPIdata', custom=""))
+	addDir(addonString(30403).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCEkZHiGsR4jvWeHunEB3Qaw',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
 	'''The Best Fails
 	fanart = '' 
@@ -124,7 +124,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list = []
 	
 	list.append('&youtube_ch=UCuunebfqIi8uCzAs_fO1D6Q')
-	addDir(addonString(30406).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCuunebfqIi8uCzAs_fO1D6Q',0, getAddonFanart(background, default='getAPIdata', custom=""))
+	addDir(addonString(30406).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCuunebfqIi8uCzAs_fO1D6Q',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
 	'''Top10Compilations
 	fanart = '' 
@@ -132,7 +132,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list = []
 	
 	list.append('&youtube_ch=UCZAtBTlxs-JzAagqGlWDpag')
-	addDir(addonString(30407).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCZAtBTlxs-JzAagqGlWDpag',0, getAddonFanart(background, default='getAPIdata', custom=""))
+	addDir(addonString(30407).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCZAtBTlxs-JzAagqGlWDpag',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
 	'''We Love Russia
 	fanart = '' 
@@ -140,7 +140,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list = []
 	
 	list.append('&youtube_ch=UCZQxEoRjVRXysRZ0vFPrlfw')
-	addDir(addonString(30402).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCZQxEoRjVRXysRZ0vFPrlfw',0, getAddonFanart(background, default='getAPIdata', custom=""))
+	addDir(addonString(30402).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCZQxEoRjVRXysRZ0vFPrlfw',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
 def CATEGORIES102(name, iconimage, desc, fanart):
 	background = 102
@@ -154,13 +154,13 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	list = []
 	
 	list.append('&youtube_pl=PLIuYAcnKhlM7yuZiCXJzSXNJvyVv8eXb0')
-	addDir(addonString(30650).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=AnythingGoesIsrael',0, getAddonFanart(background, default='getAPIdata', custom=""))
+	addDir(addonString(30650).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=AnythingGoesIsrael',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
 	'''צחוק מעבודה'''
 	list = []
 	
 	list.append('&youtube_ch=tzchokmeavoda')
-	addDir(addonString(30651).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=tzchokmeavoda',0, getAddonFanart(background, default='getAPIdata', custom=""))
+	addDir(addonString(30651).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=tzchokmeavoda',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
 	'''קומי קומי'''
 	fanart = 'http://f.frogi.co.il/pic/bidur/IT/RA.png?r=1442740388'

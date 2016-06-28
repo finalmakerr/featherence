@@ -159,7 +159,7 @@ def CATEGORIES104B(General_LanguageL, background, background2): #פריקבוי 
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10762).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Fanboy_and_Chum_Chum_logo.png/250px-Fanboy_and_Chum_Chum_logo.png",addonString(107620).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10762).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Fanboy_and_Chum_Chum_logo.png/250px-Fanboy_and_Chum_Chum_logo.png",addonString(107620).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES104C(General_LanguageL, background, background2): #פלאנט שין
 	'''סדרות'''
@@ -311,7 +311,7 @@ def CATEGORIES104C(General_LanguageL, background, background2): #פלאנט שי
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10483).encode('utf-8'),list,17,"http://www.gasmangroup.com/blog/wp-content/uploads/2015/05/Trial-by-jerry-2.jpg",addonString(104830).encode('utf-8'),'1',"", getAddonFanart(background, custom="https://caua1000.files.wordpress.com/2012/10/sc1_1024.jpg", default=background2))
+	addDir(addonString(10483).encode('utf-8'),list,17,"http://www.gasmangroup.com/blog/wp-content/uploads/2015/05/Trial-by-jerry-2.jpg",addonString(104830).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://caua1000.files.wordpress.com/2012/10/sc1_1024.jpg", default=background2))
 
 def CATEGORIES104D(General_LanguageL, background, background2): #ג'ימי ניוטרון
 	'''סדרות'''
@@ -463,7 +463,7 @@ def CATEGORIES104D(General_LanguageL, background, background2): #ג'ימי ני�
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10484).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/thumb/7/71/The_Adventures_of_Jimmy_Neutron_Boy_Genius_logo.png/250px-The_Adventures_of_Jimmy_Neutron_Boy_Genius_logo.png",addonString(104840).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10484).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/thumb/7/71/The_Adventures_of_Jimmy_Neutron_Boy_Genius_logo.png/250px-The_Adventures_of_Jimmy_Neutron_Boy_Genius_logo.png",addonString(104840).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES104E(General_LanguageL, background, background2): #משוגעגע
 	'''סדרות'''
@@ -616,7 +616,7 @@ def CATEGORIES104E(General_LanguageL, background, background2): #משוגעגע
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10485).encode('utf-8'),list,17,"http://www.gifmania.co.uk/Animated-Cartoons-Animated-Gifs/Animated-Nickelodeon/Breadwinners/Breadwinners-91014.gif",addonString(104850).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://www.awn.com/sites/default/files/image/featured/1024064-season-two-breadwinners-lands-nickelodeon-april-5.jpg", default=background2))
+	addDir(addonString(10485).encode('utf-8'),list,17,"http://www.gifmania.co.uk/Animated-Cartoons-Animated-Gifs/Animated-Nickelodeon/Breadwinners/Breadwinners-91014.gif",addonString(104850).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://www.awn.com/sites/default/files/image/featured/1024064-season-two-breadwinners-lands-nickelodeon-april-5.jpg", default=background2))
 
 def CATEGORIES104F(General_LanguageL, background, background2): #הנוקמים: לוחמי העל
 	'''סדרות'''
@@ -768,7 +768,7 @@ def CATEGORIES104F(General_LanguageL, background, background2): #הנוקמים:
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10488).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/he/thumb/5/5a/Avengers_2010_animated.jpg/300px-Avengers_2010_animated.jpg",addonString(104880).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10488).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/he/thumb/5/5a/Avengers_2010_animated.jpg/300px-Avengers_2010_animated.jpg",addonString(104880).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES104G(General_LanguageL, background, background2): #מלחמת הכוכבים: המורדים
 	'''סדרות'''
@@ -926,7 +926,7 @@ def CATEGORIES104G(General_LanguageL, background, background2): #מלחמת הכ
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10489).encode('utf-8'),list,17,"http://www.sdarot.pm/media/series/1362.jpg",addonString(104890).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10489).encode('utf-8'),list,17,"http://www.sdarot.pm/media/series/1362.jpg",addonString(104890).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES104H(General_LanguageL, background, background2): #צ'ימה
 	'''סדרות'''
@@ -1098,7 +1098,7 @@ def CATEGORIES104H(General_LanguageL, background, background2): #צ'ימה
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10490).encode('utf-8'),list,17,'http://www.watchcartoononline.com/thumbs/Lego-Legends-of-Chima-Season-3-Episode-14-Wings-of-Fire.jpg',addonString(104900).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://www.wallpapersforkids.com/wallpapers/1920x1080/lego_legends_of_chima_1.jpg"))
+	addDir(addonString(10490).encode('utf-8'),list,17,'http://www.watchcartoononline.com/thumbs/Lego-Legends-of-Chima-Season-3-Episode-14-Wings-of-Fire.jpg',addonString(104900).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://www.wallpapersforkids.com/wallpapers/1920x1080/lego_legends_of_chima_1.jpg"))
 	
 def CATEGORIES104I(General_LanguageL, background, background2): #דובוני אכפת לי
 	'''סדרות'''
@@ -1261,7 +1261,7 @@ def CATEGORIES104I(General_LanguageL, background, background2): #דובוני א
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10623).encode('utf-8'),list,17,'http://vignette4.wikia.nocookie.net/carebears/images/e/e5/Take_Care_Bear.jpg/revision/latest?cb=20120405172827',addonString(106230).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://7-themes.com/data_images/out/67/7001447-care-bears.jpg"))
+	addDir(addonString(10623).encode('utf-8'),list,17,'http://vignette4.wikia.nocookie.net/carebears/images/e/e5/Take_Care_Bear.jpg/revision/latest?cb=20120405172827',addonString(106230).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://7-themes.com/data_images/out/67/7001447-care-bears.jpg"))
 
 def CATEGORIES104J(General_LanguageL, background, background2): #נילס הולגרסון
 	'''סדרות'''
@@ -1416,7 +1416,7 @@ def CATEGORIES104J(General_LanguageL, background, background2): #נילס הול
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10468).encode('utf-8'),list,17,'http://www.sratim.co.il/contents/series/images/IL/2072.jpg',addonString(104680).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10468).encode('utf-8'),list,17,'http://www.sratim.co.il/contents/series/images/IL/2072.jpg',addonString(104680).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES104K(General_LanguageL, background, background2): #סיפורי מוש
 	'''סדרות'''
@@ -1566,7 +1566,7 @@ def CATEGORIES104K(General_LanguageL, background, background2): #סיפורי מ
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10491).encode('utf-8'),list,17,'http://www.m4e.de/media/2014/09/SG_9a_4-530x357.jpg',addonString(104910).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://datas.series-tv-shows.com/pic/tvdb/12063/fanart.jpg"))
+	addDir(addonString(10491).encode('utf-8'),list,17,'http://www.m4e.de/media/2014/09/SG_9a_4-530x357.jpg',addonString(104910).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://datas.series-tv-shows.com/pic/tvdb/12063/fanart.jpg"))
 
 def CATEGORIES104L(General_LanguageL, background, background2): #אגדות האחים גרים
 	'''סדרות'''
@@ -1725,7 +1725,7 @@ def CATEGORIES104L(General_LanguageL, background, background2): #אגדות הא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 	
-	addDir(addonString(10499).encode('utf-8'),list,17,thumb,addonString(104990).encode('utf-8'),'1',50, getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10499).encode('utf-8'),list,17,thumb,addonString(104990).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES104M(General_LanguageL, background, background2): #סאקורה לוכדת הקלפים
 	'''סדרות'''
@@ -1876,7 +1876,7 @@ def CATEGORIES104M(General_LanguageL, background, background2): #סאקורה ל
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10498).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Cardcaptor_Sakura_vol1_cover.jpg/230px-Cardcaptor_Sakura_vol1_cover.jpg",addonString(104980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10498).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Cardcaptor_Sakura_vol1_cover.jpg/230px-Cardcaptor_Sakura_vol1_cover.jpg",addonString(104980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES104N(General_LanguageL, background, background2): #נינג'גו - מאסטר הספינג'יצו
 	'''סדרות'''
@@ -2041,7 +2041,7 @@ def CATEGORIES104N(General_LanguageL, background, background2): #נינג'גו -
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10479).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1820.jpg',addonString(104790).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://s1.dmcdn.net/KJt5P/1280x720-F13.jpg"))
+	addDir(addonString(10479).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1820.jpg',addonString(104790).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://s1.dmcdn.net/KJt5P/1280x720-F13.jpg"))
 
 def CATEGORIES104O(General_LanguageL, background, background2): #אוטובוס הקסמים
 	'''סדרות'''
@@ -2199,7 +2199,7 @@ def CATEGORIES104O(General_LanguageL, background, background2): #אוטובוס 
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 	
-	addDir(addonString(10403).encode('utf-8'),list,17,thumb,addonString(104030).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://ecx.images-amazon.com/images/I/71HZ-fXNyYL._SL1094_.jpg", default=background2))
+	addDir(addonString(10403).encode('utf-8'),list,17,thumb,addonString(104030).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://ecx.images-amazon.com/images/I/71HZ-fXNyYL._SL1094_.jpg", default=background2))
 
 def CATEGORIES104P(General_LanguageL, background, background2): #דיגימון [אוסף]
 	'''סדרות'''
@@ -2357,7 +2357,7 @@ def CATEGORIES104P(General_LanguageL, background, background2): #דיגימון 
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10416).encode('utf-8') + space + '[Collection]',list,17,'http://forumsgallery.tapuz.co.il/ForumsGallery/galleryimages/medium/453gallery_13767.gif',addonString(104160).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://static.zerochan.net/Digimon.full.1707809.jpg", default=background2))
+	addDir(addonString(10416).encode('utf-8') + space + '[Collection]',list,17,'http://forumsgallery.tapuz.co.il/ForumsGallery/galleryimages/medium/453gallery_13767.gif',addonString(104160).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://static.zerochan.net/Digimon.full.1707809.jpg", default=background2))
 
 def CATEGORIES104Q(General_LanguageL, background, background2): #סיילור מון
 	'''סדרות'''
@@ -2670,7 +2670,7 @@ def CATEGORIES104R(General_LanguageL, background, background2): #דראגון ב
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10528).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/c/c9/DB_Tank%C5%8Dbon.png",addonString(105280).encode('utf-8'),'1',"", getAddonFanart(background, custom="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcgjkDHLJ4ACWCtBhZH26FgKJLYIRdxB78cQ4q6IF.U6653o1OT0agXq5.ZnKCFmU7bvbHELaozXVCQOViok21vpwKKwwrQbrXZb50ko8.OCSJKpL0ME9m.Tr7mQarxYUJ5ObQh.j88cLczQdiHbaO0hGXBnXon57ycbQ._bgfuFI-&format=jpg", default=background2))
+	addDir(addonString(10528).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/c/c9/DB_Tank%C5%8Dbon.png",addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcgjkDHLJ4ACWCtBhZH26FgKJLYIRdxB78cQ4q6IF.U6653o1OT0agXq5.ZnKCFmU7bvbHELaozXVCQOViok21vpwKKwwrQbrXZb50ko8.OCSJKpL0ME9m.Tr7mQarxYUJ5ObQh.j88cLczQdiHbaO0hGXBnXon57ycbQ._bgfuFI-&format=jpg", default=background2))
 
 def CATEGORIES104S(General_LanguageL, background, background2): #דראגון בול Z
 	'''סדרות'''
@@ -2830,7 +2830,7 @@ def CATEGORIES104S(General_LanguageL, background, background2): #דראגון ב
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10528).encode('utf-8') + space + 'Z',list,17,"http://www.sdarot.pm/media/series/293.jpg",addonString(105280).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://www.technobuffalo.com/wp-content/uploads/2015/10/Dragon-Ball-Z-Extreme-Budoten.jpg", default=background2))
+	addDir(addonString(10528).encode('utf-8') + space + 'Z',list,17,"http://www.sdarot.pm/media/series/293.jpg",addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://www.technobuffalo.com/wp-content/uploads/2015/10/Dragon-Ball-Z-Extreme-Budoten.jpg", default=background2))
 
 def CATEGORIES104T(General_LanguageL, background, background2): #דראגון בול S
 	'''סדרות'''
@@ -2984,7 +2984,7 @@ def CATEGORIES104T(General_LanguageL, background, background2): #דראגון ב
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10528).encode('utf-8') + space + 'S',list,17,"http://www.sdarot.pm/media/series/1813.jpg",addonString(105280).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://iheartcartoon.com/wp-content/uploads/2015/09/dragon-ball-super-poster-570x805.0.0.jpg", default=background2))
+	addDir(addonString(10528).encode('utf-8') + space + 'S',list,17,"http://www.sdarot.pm/media/series/1813.jpg",addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://iheartcartoon.com/wp-content/uploads/2015/09/dragon-ball-super-poster-570x805.0.0.jpg", default=background2))
 
 def CATEGORIES104U(General_LanguageL, background, background2): #דראגון בול GT
 	'''סדרות'''
@@ -3138,7 +3138,7 @@ def CATEGORIES104U(General_LanguageL, background, background2): #דראגון ב
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10528).encode('utf-8') + space + 'GT',list,17,"http://www.sdarot.pm/media/series/1552.jpg",addonString(105280).encode('utf-8'),'1',"", getAddonFanart(background, custom="https://i.ytimg.com/vi/ojTY3lhlieo/maxresdefault.jpg", default=background2))
+	addDir(addonString(10528).encode('utf-8') + space + 'GT',list,17,"http://www.sdarot.pm/media/series/1552.jpg",addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/ojTY3lhlieo/maxresdefault.jpg", default=background2))
 
 def CATEGORIES104V(General_LanguageL, background, background2): #דראגון בול K
 	'''סדרות'''
@@ -3292,7 +3292,7 @@ def CATEGORIES104V(General_LanguageL, background, background2): #דראגון ב
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10528).encode('utf-8') + space + 'K',list,17,"http://www.sdarot.pm/media/series/1275.jpg",addonString(105280).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10528).encode('utf-8') + space + 'K',list,17,"http://www.sdarot.pm/media/series/1275.jpg",addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES104W(General_LanguageL, background, background2): #
 	'''סדרות'''
@@ -3443,4 +3443,4 @@ def CATEGORIES104W(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(104980).encode('utf-8'),list,17,"",addonString(104980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(104980).encode('utf-8'),list,17,"",addonString(104980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))

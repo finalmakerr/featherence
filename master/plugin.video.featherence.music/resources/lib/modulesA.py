@@ -39,7 +39,7 @@ def CATEGORIES10101A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL6CcUVzFqqcVNcscz560ZsaxhWrQOrWXH')
 	list.append('&youtube_pl=PLB42AF7617D0814D2')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1','0',getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES10102A(name, iconimage, desc, fanart):
 	'''קריוקי ישראלי'''
@@ -60,7 +60,7 @@ def CATEGORIES10102A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLpUURqa-V9sg8RHi8M-sn3x9Kn6UB9aQs')
 	list.append('&youtube_pl=PL5MV8_qxHC5ufNt9OV-lyMTm_WU-xUFWV')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1','0',getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES10104A(name, iconimage, desc, fanart):
 	'''הופעות חיות ישראליות'''
@@ -77,7 +77,7 @@ def CATEGORIES10104A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLQGx0XOoq2fvv1Sqhtk3mcYhYVkKhPC2p')
 	list.append('&youtube_pl=PLq3kSq7XTmPMysdOzY-9-lWzUxVLUacij')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1','0',getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES10105A(name, iconimage, desc, fanart):
 	'''די ג'י ישראליים'''
@@ -90,7 +90,7 @@ def CATEGORIES10105A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLNL6cVMJqkHFuHeeOQ5lCzPvb3Rrw8wg8')
 	list.append('&youtube_pl=PLLgkjg98m5INnhyZDV-vLGMzMXbQdYrA6')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1','0',getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 	
 def CATEGORIES10106A(name, iconimage, desc, fanart):
 	'''מוזיקה מזרחית'''
@@ -112,7 +112,7 @@ def CATEGORIES10106A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLcTtnwINjBVetkyrXdlslnaB18-FGrIeB')
 	list.append('&youtube_pl=PLwc22f_a0ALr7yxtJfyMBL4UvghuPCyaW')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1','0',getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES10107A(name, iconimage, desc, fanart):
 	'''קריוקי מזרחי'''
@@ -126,7 +126,7 @@ def CATEGORIES10107A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLjMlZAOscH-v8ZG7OhCmI8PepJtw8OM3x')
 	list.append('&youtube_pl=PLtm8IRX6612ofHw4vVeVg0XDSanSeLaEZ')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1','0',getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES10109A(name, iconimage, desc, fanart):
 	'''הופעות חיות מזרחיות'''
@@ -140,7 +140,7 @@ def CATEGORIES10109A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL6RyS6EH1Xnx9vF1no4Ris_JM6TO7EHsn')
 	list.append('&youtube_pl=PLD088399863915B82')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1','0',getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES11101A(name, iconimage, desc, fanart):
 	'''מוזיקה לועזית'''
@@ -163,7 +163,7 @@ def CATEGORIES11101A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD')
 	list.append('&youtube_pl=PLz1ThN-w-t_zGtVNm9xtNXyPfwUJ1EfyZ')
 	
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1','0',getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES11102A(name, iconimage, desc, fanart):
 	'''קריוקי לועזי'''
@@ -179,7 +179,7 @@ def CATEGORIES11102A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL2dHcK1nJqU8zCIhqC6gFIIIEikLi3AvB')
 	list.append('&youtube_pl=PLqGkpApxFsX_jRp4sDFz9_gwztqqpDZ2U')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1','0',getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES11104A(name, iconimage, desc, fanart):
 	'''הופעות חיות לועזיות'''
@@ -191,7 +191,7 @@ def CATEGORIES11104A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=')
 	list.append('&youtube_pl=')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1','0',getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES11105A(name, iconimage, desc, fanart):
 	'''די ג'י לועזיים'''
@@ -203,7 +203,7 @@ def CATEGORIES11105A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=')
 	list.append('&youtube_pl=')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1','0',getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 	
 def CATEGORIES118A(name, iconimage, desc, fanart):
@@ -216,4 +216,4 @@ def CATEGORIES118A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=')
 	list.append('&youtube_pl=')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1','0',getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))

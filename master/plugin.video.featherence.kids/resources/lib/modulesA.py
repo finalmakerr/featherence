@@ -156,7 +156,7 @@ def CATEGORIES101A(General_LanguageL, background, background2): #עמוד הבא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom = "", default=background2))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom = "", default=background2))
 
 def CATEGORIES102A(General_LanguageL, background, background2): #עמוד הבא הצגות ילדים
 	'''עמוד הבא'''
@@ -323,7 +323,7 @@ def CATEGORIES102A(General_LanguageL, background, background2): #עמוד הבא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom = "", default=background2))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom = "", default=background2))
 
 def CATEGORIES104A(General_LanguageL, background, background2): #עמוד הבא סדרות
 	'''עמוד הבא'''
@@ -482,7 +482,7 @@ def CATEGORIES104A(General_LanguageL, background, background2): #עמוד הבא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom = "", default=background2))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom = "", default=background2))
 		
 def CATEGORIES105A(General_LanguageL, background, background2): #עמוד הבא סרטים
 	'''עמוד הבא'''
@@ -644,7 +644,7 @@ def CATEGORIES105A(General_LanguageL, background, background2): #עמוד הבא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom = "", default=background2))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom = "", default=background2))
 	
 def CATEGORIES106A(General_LanguageL, background, background2): #עמוד הבא פעוטות
 	'''עמוד הבא'''
@@ -804,7 +804,7 @@ def CATEGORIES106A(General_LanguageL, background, background2): #עמוד הבא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom = "", default=background2))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom = "", default=background2))
 
 def CATEGORIES107A(General_LanguageL, background, background2): #עמוד הבא קטנטנים
 	'''עמוד הבא'''
@@ -962,7 +962,7 @@ def CATEGORIES107A(General_LanguageL, background, background2): #עמוד הבא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom = "", default=background2))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom = "", default=background2))
 	
 def CATEGORIES108A(General_LanguageL, background, background2): #עמוד הבא ילדים ונוער
 	'''עמוד הבא'''
@@ -1122,7 +1122,7 @@ def CATEGORIES108A(General_LanguageL, background, background2): #עמוד הבא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom = "", default=background2))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom = "", default=background2))
 	
 def CATEGORIES109A(General_LanguageL, background, background2): #עמוד הבא לימוד שפה
 	'''עמוד הבא'''
@@ -1282,7 +1282,7 @@ def CATEGORIES109A(General_LanguageL, background, background2): #עמוד הבא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom = "", default=background2))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom = "", default=background2))
 
 def CATEGORIES110A(General_LanguageL, background, background2): #עמוד הבא ?
 	'''עמוד הבא'''
@@ -1442,6 +1442,6 @@ def CATEGORIES110A(General_LanguageL, background, background2): #עמוד הבא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom = "", default=background2))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom = "", default=background2))
 	
 	

@@ -162,7 +162,7 @@ def CATEGORIES108B(General_LanguageL, background, background2): #הארווי ב
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10848).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/he/thumb/7/7b/Harveybeackslogo.png/240px-Harveybeackslogo.png",addonString(108480).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://www.trbimg.com/img-55108765/turbine/la-et-st-harvey-beaks-review-20150323", default=background2))
+	addDir(addonString(10848).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/he/thumb/7/7b/Harveybeackslogo.png/240px-Harveybeackslogo.png",addonString(108480).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://www.trbimg.com/img-55108765/turbine/la-et-st-harvey-beaks-review-20150323", default=background2))
 
 def CATEGORIES108C(General_LanguageL, background, background2): #אחים וחיות אחרות
 	'''ילדים ונוער'''
@@ -326,7 +326,7 @@ def CATEGORIES108C(General_LanguageL, background, background2): #אחים וחי
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 	
-	addDir(addonString(10850).encode('utf-8'),list,17,'https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Wild_Kratts_Title_Screen.png/300px-Wild_Kratts_Title_Screen.png',addonString(108500).encode('utf-8'),'1',50, getAddonFanart(background, custom="http://extras.mnginteractive.com/live/media/site55/2014/1003/20141003_072002_Wild-Kratts.jpg", default=background2))
+	addDir(addonString(10850).encode('utf-8'),list,17,'https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Wild_Kratts_Title_Screen.png/300px-Wild_Kratts_Title_Screen.png',addonString(108500).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://extras.mnginteractive.com/live/media/site55/2014/1003/20141003_072002_Wild-Kratts.jpg", default=background2))
 
 def CATEGORIES108D(General_LanguageL, background, background2): #ביוויס ובאטהד
 	'''ילדים ונוער'''
@@ -479,7 +479,7 @@ def CATEGORIES108D(General_LanguageL, background, background2): #ביוויס ו
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10856).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/7/7d/The_Beavis_and_Butt-Head_Experience.jpg",addonString(108560).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://cartoon-characters.com/wp-content/uploads/2014/04/Beavis-Butthead.png", default=background2))
+	addDir(addonString(10856).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/7/7d/The_Beavis_and_Butt-Head_Experience.jpg",addonString(108560).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://cartoon-characters.com/wp-content/uploads/2014/04/Beavis-Butthead.png", default=background2))
 
 def CATEGORIES108E(General_LanguageL, background, background2): #שי-רה נסיכת הכוח
 	'''ילדים ונוער'''
@@ -632,7 +632,7 @@ def CATEGORIES108E(General_LanguageL, background, background2): #שי-רה נס�
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10857).encode('utf-8'),list,17,"http://images.zap2it.com/assets/p486602_n231499_cc_v4_aa/she-ra-princess-of-power.jpg",addonString(108570).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://ib.huluim.com/show_key_art/2389?size=1600x600&region=US", default=background2))
+	addDir(addonString(10857).encode('utf-8'),list,17,"http://images.zap2it.com/assets/p486602_n231499_cc_v4_aa/she-ra-princess-of-power.jpg",addonString(108570).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://ib.huluim.com/show_key_art/2389?size=1600x600&region=US", default=background2))
 
 def CATEGORIES108F(General_LanguageL, background, background2): #הילדים מחדר 402
 	'''ילדים ונוער'''
@@ -791,7 +791,7 @@ def CATEGORIES108F(General_LanguageL, background, background2): #הילדים מ
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10822).encode('utf-8'),list,17,'http://scorphotos.com/wp-content/uploads/the-kids-from-room-402-new-wallpaper-11.jpg',addonString(108220).encode('utf-8'),'1',50, getAddonFanart(background, custom="https://thumbs01.myvideo.ge/screens/227/2265298.jpg", default=background2))
+	addDir(addonString(10822).encode('utf-8'),list,17,'http://scorphotos.com/wp-content/uploads/the-kids-from-room-402-new-wallpaper-11.jpg',addonString(108220).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://thumbs01.myvideo.ge/screens/227/2265298.jpg", default=background2))
 
 def CATEGORIES108G(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -942,7 +942,7 @@ def CATEGORIES108G(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108H(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -1093,7 +1093,7 @@ def CATEGORIES108H(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108I(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -1244,7 +1244,7 @@ def CATEGORIES108I(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108J(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -1395,7 +1395,7 @@ def CATEGORIES108J(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108K(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -1546,7 +1546,7 @@ def CATEGORIES108K(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108L(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -1697,7 +1697,7 @@ def CATEGORIES108L(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108M(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -1848,7 +1848,7 @@ def CATEGORIES108M(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108N(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -1999,7 +1999,7 @@ def CATEGORIES108N(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108O(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -2150,7 +2150,7 @@ def CATEGORIES108O(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108P(General_LanguageL, background, background2): #פינגו
 	'''ילדים ונוער'''
@@ -2307,7 +2307,7 @@ def CATEGORIES108P(General_LanguageL, background, background2): #פינגו
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10847).encode('utf-8'),list,17,"http://www.ollysmith.com/wp-content/uploads/2010/07/pingu.jpg",addonString(108470).encode('utf-8'),'1',"", getAddonFanart(background, custom="http://wallpapercave.com/wp/RRwPJOF.jpg", default=background2))
+	addDir(addonString(10847).encode('utf-8'),list,17,"http://www.ollysmith.com/wp-content/uploads/2010/07/pingu.jpg",addonString(108470).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://wallpapercave.com/wp/RRwPJOF.jpg", default=background2))
 
 def CATEGORIES108Q(General_LanguageL, background, background2): #רחוב סומסום
 	'''ילדים ונוער'''
@@ -2486,7 +2486,7 @@ def CATEGORIES108Q(General_LanguageL, background, background2): #רחוב סומ
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10875).encode('utf-8'),list,17,thumb,addonString(108750).encode('utf-8'),'1',50, getAddonFanart(background, custom=fanart, default=background2))
+	addDir(addonString(10875).encode('utf-8'),list,17,thumb,addonString(108750).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES108R(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -2637,7 +2637,7 @@ def CATEGORIES108R(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108S(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -2788,7 +2788,7 @@ def CATEGORIES108S(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108T(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -2939,7 +2939,7 @@ def CATEGORIES108T(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108U(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -3090,7 +3090,7 @@ def CATEGORIES108U(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108V(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -3241,7 +3241,7 @@ def CATEGORIES108V(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
 def CATEGORIES108W(General_LanguageL, background, background2): #
 	'''ילדים ונוער'''
@@ -3392,4 +3392,4 @@ def CATEGORIES108W(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',"", getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))

@@ -23,7 +23,7 @@ def CATEGORIES101A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLcOr-eBi9or-I7knKXhhdihMqswzWJ7yo')
 	#list.append('&youtube_pl=PL3Ea6NwLKoMSArPBNWh-gMgKCX2cmJzCq') #Not working!
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES10101A(name, iconimage, desc, fanart):
 	'''טבע - חיות'''
@@ -32,7 +32,7 @@ def CATEGORIES10101A(name, iconimage, desc, fanart):
 	list = []
 
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES10102A(name, iconimage, desc, fanart):
 	'''טבע - חוקי טבע'''
@@ -41,7 +41,7 @@ def CATEGORIES10102A(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_ch=UCsSTiRba-BUnOk0PALOhsug/playlists')
 	
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 	
 def CATEGORIES10103A(name, iconimage, desc, fanart):
 	'''טבע - מקומות'''
@@ -53,7 +53,7 @@ def CATEGORIES10103A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=')
 	list.append('&youtube_pl=')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES102A(name, iconimage, desc, fanart):
 	'''חלל'''
@@ -73,7 +73,7 @@ def CATEGORIES102A(name, iconimage, desc, fanart):
 	list.append('&custom8=plugin://plugin.video.eso/')
 	list.append('&custom8=plugin://plugin.video.esa/')
 	
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 	
 def CATEGORIES103A(name, iconimage, desc, fanart):
 	'''היסטוריה'''
@@ -92,7 +92,7 @@ def CATEGORIES103A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLp-cIkvQ88-1_nvZZ2-i5j90J3llXJl1o')
 	list.append('&youtube_pl=PL47F868B521713645')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES104A(name, iconimage, desc, fanart):
 	'''מדע'''
@@ -103,7 +103,7 @@ def CATEGORIES104A(name, iconimage, desc, fanart):
 	list.append('&youtube_ch=UCWYeiNSo18bhZvI1pz39U6g')
 	list.append('&youtube_ch=UCWkOjdpqIcKZrnjefwWMKAQ')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES10401A(name, iconimage, desc, fanart):
 	'''מדע - חברתי'''
@@ -116,7 +116,7 @@ def CATEGORIES10401A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL0z0Pscrs45B0POHdpKhikbhjKU491-gL')
 	list.append('&youtube_pl=PLU8cnQEDNLyWeKlWxwj4aY8wDuAkxa06W')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES10402A(name, iconimage, desc, fanart):
 	'''מדע - טבע'''
@@ -124,7 +124,7 @@ def CATEGORIES10402A(name, iconimage, desc, fanart):
 	
 	list = []
 	
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES10403A(name, iconimage, desc, fanart):
 	'''מדע - טכנולוגיה'''
@@ -136,7 +136,7 @@ def CATEGORIES10403A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=')
 	list.append('&youtube_pl=')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES107A(name, iconimage, desc, fanart):
 	'''ילדים'''
@@ -148,7 +148,7 @@ def CATEGORIES107A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=')
 	list.append('&youtube_pl=')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES11105A(name, iconimage, desc, fanart):
 	''''''
@@ -160,7 +160,7 @@ def CATEGORIES11105A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=')
 	list.append('&youtube_pl=')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 	
 def CATEGORIES110A(name, iconimage, desc, fanart):
@@ -179,7 +179,7 @@ def CATEGORIES110A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLE8Rno1I66X84UJNGbpHEUkD5FR58xxMy')
 	list.append('&youtube_pl=PLwVO1qTdvxW2B7tvClvBoo_XwIY1FEhZw')
 		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 	
 def CATEGORIES108A(name, iconimage, desc, fanart):
 	'''בעברית'''
@@ -204,7 +204,7 @@ def CATEGORIES108A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL51YAgTlfPj6PWe7kECdyz6ToCjcmSd6z')
 	list.append('&youtube_pl=PLth1a195qHsi9fsrgjDzYTzqKSOF-Ky-N')
 	
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES10801A(name, iconimage, desc, fanart):
 	'''בעברית - ילדים'''
@@ -221,5 +221,5 @@ def CATEGORIES10801A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLTleo-h9TFqI2CFuWeFA-Q2Bu3BBHdXqv')
 	list.append('&youtube_id=jMIELC0KFs4')
 	
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',"", getAddonFanart(background, custom=""))
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 	

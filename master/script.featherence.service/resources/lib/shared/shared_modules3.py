@@ -2457,7 +2457,7 @@ def pluginend2(admin, url, containerfolderpath, viewtype):
 
 		if containerfolderpath != containerfolderpath2 and General_AutoView == "true":
 			printpoint = printpoint + "5"
-			if viewtype == '0': viewtype = 'movies'
+			if viewtype == 0: viewtype = 'movies'
 			
 			try: xbmcplugin.setContent(int(sys.argv[1]), viewtype)
 			except:
@@ -3442,7 +3442,7 @@ def listURLS(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	
 def CATEGORIES_RANDOM(background="", default="", custom=""):
 	'''אקראי'''
-	addDir('-' + localize(590),list,1,featherenceserviceicons_path + 'random.png',addonString_servicefeatherence(32413).encode('utf-8'),'1',"", getAddonFanart(background, default=default, custom=custom))
+	addDir('-' + localize(590),list,1,featherenceserviceicons_path + 'random.png',addonString_servicefeatherence(32413).encode('utf-8'),'1',0,getAddonFanart(background, default=default, custom=custom))
 
 def CATEGORIES_SEARCH(mode=3, name='-' + localize(137), url="", num=""):
 	'''חיפוש'''
