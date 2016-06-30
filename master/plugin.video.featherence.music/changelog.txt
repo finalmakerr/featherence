@@ -3,6 +3,11 @@ WIP (WORK IN PROGRESS)--
 ------------------------
 
 ------------------------
+Featherence Music v0.2.11 (30-Jun-16)
+------------------------
+- My Music button bug fix.
+
+------------------------
 Featherence Music v0.2.10 (28-Jun-16)
 ------------------------
 - Added biography for forgein singers.
