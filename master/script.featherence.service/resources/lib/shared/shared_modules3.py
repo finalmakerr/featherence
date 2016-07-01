@@ -327,7 +327,7 @@ def YoutubeSearch(name, url, desc, num, viewtype):
 	"desc" + space2 + str(desc) + newline + \
 	"value" + space2 + str(value) + newline + \
 	"url" + space2 + str(url) + newline
-	printlog(title='YoutubeSearch', printpoint=printpoint, text=text, level=0, option="")
+	printlog(title='YoutubeSearch', printpoint=printpoint, text=text, level=1, option="")
 	'''---------------------------'''
 	
 def ListPlaylist2(name, url, iconimage, desc, num, viewtype, fanart):
@@ -910,8 +910,8 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		x2 = x.replace("&youtube_se=","")
 		if 'commonsearch' in x:
 			printpoint = printpoint + 'c'
-			x2 = clean_commonsearch(x2, match=False)
-			#x2 = title + space + x2
+			x2 = to_utf8(title) + space + to_utf8(x2)
+			x2 = clean_commonsearch(x2, match=True)
 			
 		url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+api_youtube_featherence+'&videoDuration='+videoDuration+'&videoDefinition='+videoDefinition+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults='+maxResults+'&pageToken='
 	elif "&youtube_se2=" in x:
