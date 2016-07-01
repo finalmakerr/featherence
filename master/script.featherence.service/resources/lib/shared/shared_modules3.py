@@ -116,7 +116,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 			liz.setPath(url)
 
 		
-		liz.addContextMenuItems(items=menu, replaceItems=True)
+		liz.addContextMenuItems(items=menu, replaceItems=False)
 		ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=isFolder)
 		returned = ok
 		checkRandom(url)

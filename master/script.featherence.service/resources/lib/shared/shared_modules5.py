@@ -161,7 +161,8 @@ def menu_list(custom, menu, addonID, name, url, mode, iconimage, desc, num, view
 		menu.append((localize(16106), "XBMC.RunPlugin(plugin://%s/?url=%s&mode=21&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart))) #Manage....
 		menu.append((localize(33063), "XBMC.RunPlugin(plugin://%s/?url=%s&mode=22&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart))) #Options....
 	
-	menu.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
+	#menu.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
+	#menu.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
 	if (mode < 100 or mode > 140) and mode != 3:
 		#notification('Mode',str(mode),"",4000)
 		menu.append(('Set View', "XBMC.RunPlugin(plugin://%s/?url=%s&mode=50&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart)))
