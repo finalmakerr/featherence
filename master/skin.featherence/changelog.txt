@@ -7,6 +7,11 @@ WIP - WORK IN PROGRESS
 - Widget auto refresh on condition.
 
 ------------------------
+Featherence v0.5.6 (02-Jul-16)
+------------------------
+- Update playlist information during playback (Top Information Window).
+
+------------------------
 Featherence v0.5.5 (25-Jun-16)
 ------------------------
 - Major performance update on home screen when fanart is enabled.
