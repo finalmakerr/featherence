@@ -1,3 +1,6 @@
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_FUN\bublbob2.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
 C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_1P\ajax.zip
 C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
 MAME 2014
@@ -8,9 +11,6 @@ C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch
 C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\genesis.plus.gx_libretro.dll
 Genesis Plus GX
 C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_FUN\bublbobl.zip
-C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
-MAME 2014
-C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_FUN\bublbob2.zip
 C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
 MAME 2014
 C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_1P\congo.zip
