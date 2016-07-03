@@ -911,8 +911,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		if 'commonsearch' in x:
 			printpoint = printpoint + 'c'
 			x2 = to_utf8(title) + space + to_utf8(x2)
-			x2 = clean_commonsearch(x2, match=True)
-			
+			x2 = clean_commonsearch(x2, match=False)
 		url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+api_youtube_featherence+'&videoDuration='+videoDuration+'&videoDefinition='+videoDefinition+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults='+maxResults+'&pageToken='
 	elif "&youtube_se2=" in x:
 		'''WIP'''
