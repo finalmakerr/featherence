@@ -160,7 +160,7 @@
 <addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.2.7" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="plugin.video.youtube" version="5.1.0"/>
+	<import addon="script.featherence.service" version="0.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -204,6 +204,7 @@
 <addon id="plugin.video.featherence.music" name="Featherence Music" version="0.2.11" provider-name="finalmakerr, amir elgazar">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.featherence.service" version="0.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video audio</provides>
@@ -245,8 +246,7 @@
 <addon id="plugin.video.featherence.rofl" name="Featherence ROFL" version="0.0.5" provider-name="finalmakerr , Lidor Malich">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="plugin.video.youtube" version="5.1.0"/>
-	<import addon="script.featherence.service" version="0.2.5"/>
+	<import addon="script.featherence.service" version="0.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>

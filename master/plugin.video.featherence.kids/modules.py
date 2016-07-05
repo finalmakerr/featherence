@@ -2509,9 +2509,11 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	'''ג'ורג׳ הסקרן'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&youtube_pl=PLqjVAzhugdWLoyjj0vJz405G-hS74QL1P')
-		list.append('&youtube_id=LGiMNrwwH4Y')
-		list.append('&youtube_id=qHZGoxCrHDU')
+		pass
+		#list.append('&youtube_id=LGiMNrwwH4Y')
+	
+	if 'English' in General_LanguageL:
+		list.append('&youtube_id=dkegK4ETWsc')
 	addDir("ג'ורג׳ הסקרן",list,17,'http://www.seret.co.il/images/movies/curiousgeorge/curiousgeorge2.jpg','','1',0,getAddonFanart(background, custom="", default=background2))
 	
 	CATEGORIES107C(General_LanguageL, background, background2) #קטנטנים - בוב הבנאי
