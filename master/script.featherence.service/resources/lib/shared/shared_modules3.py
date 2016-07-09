@@ -2631,7 +2631,7 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 	elif "/user/" in New_ID or "/channel/" in New_ID or '&youtube_ch=' in New_ID:
 		'''Channel'''
 		New_Type = localize(19029) #Channel
-		extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8') #New %s, Update Succesfully!
+		extra = addonString_servicefeatherence(32438).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(32421).encode('utf-8') #New %s, Update Succesfully!
 		if "/channel/" in New_ID:
 			New_ID = find_string(New_ID, "/channel/", "")
 			New_ID = New_ID.replace("/channel/", "&youtube_ch=")
@@ -2646,7 +2646,7 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 	elif "watch?v=" in New_ID or '&youtube_id=' in New_ID:
 		'''Single Video'''
 		New_Type = localize(157) #Video
-		extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8') #New %s, Update Succesfully!
+		extra = addonString_servicefeatherence(32438).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(32421).encode('utf-8') #New %s, Update Succesfully!
 		if "watch?v=" in New_ID: New_ID = find_string(New_ID, "watch?v=", "")
 		else: New_ID = find_string(New_ID, "&youtube_id", "")
 		
@@ -2656,7 +2656,7 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 	elif "results?search_query=" in New_ID or '&youtube_se=' in New_ID:
 		'''Search Video'''
 		New_Type = localize(137) #Search
-		extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8') #New %s, Update Succesfully!
+		extra = addonString_servicefeatherence(32438).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(32421).encode('utf-8') #New %s, Update Succesfully!
 		if "results?search_query=" in New_ID: New_ID = find_string(New_ID, "results?search_query=", "")
 		else: New_ID = find_string(New_ID, "&youtube_se=", "")
 		New_ID = New_ID.replace("results?search_query=", "&youtube_se=")
@@ -2709,7 +2709,7 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 				setsetting(Custom_Playlist_ID, Custom_Playlist_ID_ + "," + New_ID)
 				
 			else: notification_common("17") ; printpoint = printpoint + "9"
-			#extra = addonString_servicefeatherence(46).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(48).encode('utf-8')
+			#extra = addonString_servicefeatherence(32438).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(32421).encode('utf-8')
 			if 'Custom' in New_Type: ID_Info = "" #'Source: ' + name
 			else: ID_Info = "ID: " + str(New_ID_)
 			
@@ -2744,17 +2744,17 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 	if num == 's':
 		list = ['-> (Exit)']
 		list.append(localize(190) + space + localize(593)) #Save All
-		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + localize(593) + space + "[LOCAL]") #Load All [LOCAL]
-		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + localize(593) + space + "[REMOTE]") #Load All [REMOTE] 
+		list.append(addonString_servicefeatherence(32442).encode('utf-8') + space + localize(593) + space + "[LOCAL]") #Load All [LOCAL]
+		list.append(addonString_servicefeatherence(32442).encode('utf-8') + space + localize(593) + space + "[REMOTE]") #Load All [REMOTE] 
 		list.append('Remove all buttons') #Remove-All-Buttons
 		
 		y = "s"
 		'''---------------------------'''
 	else:
 		list = ['-> (Exit)']
-		list.append(localize(190) + space + addonString_servicefeatherence(57).encode('utf-8')) #Save One
-		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + addonString_servicefeatherence(57).encode('utf-8') + space + "[LOCAL]") #Load One [LOCAL]
-		list.append(addonString_servicefeatherence(51).encode('utf-8') + space + addonString_servicefeatherence(57).encode('utf-8') + space + "[REMOTE]") #Load One [REMOTE]
+		list.append(localize(190) + space + addonString_servicefeatherence(32443).encode('utf-8')) #Save One
+		list.append(addonString_servicefeatherence(32442).encode('utf-8') + space + addonString_servicefeatherence(32443).encode('utf-8') + space + "[LOCAL]") #Load One [LOCAL]
+		list.append(addonString_servicefeatherence(32442).encode('utf-8') + space + addonString_servicefeatherence(32443).encode('utf-8') + space + "[REMOTE]") #Load One [REMOTE]
 		y = ""
 		
 		Custom_Playlist_ID = "Custom_Playlist" + num + "_ID"
@@ -2889,7 +2889,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 								else:
 									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=[AddonName + '.txt'], filteroff=[], level=10000, append=False, ZipFullPath=False, temp=True)
 									CreateZip(featherenceserviceaddondata_media_path, zipname, filteron=custommediaL, filteroff=[], level=10000, append='End', ZipFullPath=False, temp=True)
-								notification(addonString_servicefeatherence(58).encode('utf-8'), str(filename), "", 4000) #Saved Succesfully!, 
+								notification(addonString_servicefeatherence(32444).encode('utf-8'), str(filename), "", 4000) #Saved Succesfully!, 
 								'''---------------------------'''
 						else: notification_common('9') ; extra = extra + newline + 'filename is empty!'
 						
@@ -2960,7 +2960,7 @@ def AdvancedCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 					'''---------------------------'''
 				if desc != "": extra1 = localize(21821) + space2 + str(desc)
 				else: extra1 = ""
-				dialogok(localize(50) + space + addonString_servicefeatherence(43).encode('utf-8') + '[CR]' + str(name), "ID" + space2 + str(url), "", extra1)
+				dialogok(localize(50) + space + addonString_servicefeatherence(32435).encode('utf-8') + '[CR]' + str(name), "ID" + space2 + str(url), "", extra1)
 				'''---------------------------'''
 		else: printpoint = printpoint + '9'	
 				
@@ -3145,8 +3145,8 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		---Edit-URL----------------------
 		------------------------------'''
 		list = ['-> (Exit)']
-		list.append(addonString_servicefeatherence(42).encode('utf-8')) #View URL
-		list.append(addonString_servicefeatherence(40).encode('utf-8')) #Add URL
+		list.append(addonString_servicefeatherence(32434).encode('utf-8')) #View URL
+		list.append(addonString_servicefeatherence(32432).encode('utf-8')) #Add URL
 		list.append(addonString_servicefeatherence(32431).encode('utf-8')) #Remove URL
 		
 		returned2, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
@@ -3182,8 +3182,8 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 					'''---------------------------'''
 				if x2 != "": message2 = message2 + '[CR]' + str(i) + space2 + str(x) + str(x2)
 				'''---------------------------'''
-			header = addonString_servicefeatherence(42).encode('utf-8') + space2 + str(name)
-			if message2 != "": message = message2 + '[CR][CR]' + addonString_servicefeatherence(89).encode('utf-8')
+			header = addonString_servicefeatherence(32434).encode('utf-8') + space2 + str(name)
+			if message2 != "": message = message2 + '[CR][CR]' + addonString_servicefeatherence(32453).encode('utf-8')
 			else: message = addonString_servicefeatherence(32454).encode('utf-8') #URL Error occured.
 			diaogtextviewer(header,message)
 			'''---------------------------'''
@@ -3256,16 +3256,16 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 					if value2 == "": notification_common("17")
 					else:
 						setsetting(Custom_Playlist_ID, value2)
-						notification(addonString_servicefeatherence(44).encode('utf-8') + space + addonString_servicefeatherence(43).encode('utf-8'),str(name), "", 4000) #URL Removed Succesfully!
+						notification(addonString_servicefeatherence(32436).encode('utf-8') + space + addonString_servicefeatherence(32435).encode('utf-8'),str(name), "", 4000) #URL Removed Succesfully!
 						'''---------------------------'''
 				
 	elif "B" in printpoint:
 		'''------------------------------
 		---Rename-Button-----------------
 		------------------------------'''
-		New_Name = dialogkeyboard(name, addonString_servicefeatherence(41).encode('utf-8'), 0, "", Custom_Playlist_Name, "0")
+		New_Name = dialogkeyboard(name, addonString_servicefeatherence(32437).encode('utf-8'), 0, "", Custom_Playlist_Name, "0")
 		if New_Name != "skip" and New_Name != name:
-			notification(addonString_servicefeatherence(45).encode('utf-8') + space + addonString_servicefeatherence(32421).encode('utf-8'), str(name), "", 4000) #Button Name Update Succesfully!
+			notification(addonString_servicefeatherence(32110).encode('utf-8') + space + addonString_servicefeatherence(32421).encode('utf-8'), str(name), "", 4000) #Button Name Update Succesfully!
 			'''---------------------------'''
 		
 	elif "C" in printpoint:
@@ -3312,7 +3312,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			if os.path.exists(thumb): x = localize(20017) #Local thumb
 			else: x = localize(20015)
 			setsetting(Custom_Playlist_Thumb, "")
-			notification(str(x) + space + addonString_servicefeatherence(43).encode('utf-8'), str(name), "", 2000) #Thumb* Removed Succesfully!
+			notification(str(x) + space + addonString_servicefeatherence(32435).encode('utf-8'), str(name), "", 2000) #Thumb* Removed Succesfully!
 			'''---------------------------'''
 			
 	elif "D" in printpoint:
@@ -3330,7 +3330,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		
 		returned = dialogkeyboard(desc, extra1, 0, "", Custom_Playlist_Description, "0")
 		if returned != "skip":
-			if returned == "": extra2 = addonString_servicefeatherence(43).encode('utf-8') #Removed Succesfully!
+			if returned == "": extra2 = addonString_servicefeatherence(32435).encode('utf-8') #Removed Succesfully!
 			else: extra2 = addonString_servicefeatherence(32421).encode('utf-8') #Update Succesfully!
 			if returned != desc: notification(localize(21821) + space + extra2, str(name), "", 4000) #Description Update/Removed Succesfully!
 			'''---------------------------'''
@@ -3374,7 +3374,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				 
 				notification(str(x) + space + addonString_servicefeatherence(32421).encode('utf-8'), str(New_Fanart), "", 2000) #Fanart* Update Succesfully!
 				xbmc.sleep(2000)
-				if Fanart_Enable != "true": notification(addonString_servicefeatherence(28).encode('utf-8') + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Allow Backgrounds disabled, ->Add-on settings
+				if Fanart_Enable != "true": notification(addonString_servicefeatherence(32422).encode('utf-8') + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Allow Backgrounds disabled, ->Add-on settings
 				elif Fanart_EnableCustom != "true": notification(localize(21389) + space + localize(24023) + "!", "->" + localize(1045), "", 4000) # Enable custom background disabled, ->Add-on settings
 				'''---------------------------'''
 		else:
@@ -3400,7 +3400,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				'''---------------------------'''
 				if desc != "": extra1 = localize(21821) + space2 + str(desc)
 				else: extra1 = ""
-				dialogok(localize(50) + space + addonString_servicefeatherence(43).encode('utf-8') + '[CR]' + str(name), "ID" + space2 + str(url), "", extra1)
+				dialogok(localize(50) + space + addonString_servicefeatherence(32435).encode('utf-8') + '[CR]' + str(name), "ID" + space2 + str(url), "", extra1)
 				'''---------------------------'''
 				
 	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
