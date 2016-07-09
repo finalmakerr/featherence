@@ -1335,11 +1335,11 @@
 	  <label>$LOCALIZE[24069]</label>
 	  <visible>StringCompare(Control.GetLabel(7),$LOCALIZE[24021])</visible>
 	</control>		
-	<control type="button" id="11" description="rollback">
+	<control type="radiobutton" id="13" description="Auto-update">
 	  <include>SideMenuCommon</include>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-	  <label>$LOCALIZE[24048]</label>
+	  <label>Auto-update</label>
 	</control> 
   </include>  
   

@@ -1409,7 +1409,7 @@ def mode210(value, admin, name, printpoint):
 					label_ = xbmc.getInfoLabel('$VAR['+label_T.get('label'+y)+']')
 					notification("...", "", "", 1000)
 					setSkinSetting('1','off'+x,str(off_T.get('off'+y)))
-					setSkinSetting('1','pwd'+x,str(pwd_T.get('pwd'+y)))
+					setSkinSetting('1','pwd'+x,str(pwdT.get('pwd'+y)))
 					setSkinSetting('0','label'+x,label_T.get('label'+y))
 					setSkinSetting('0','action'+x,str(action_T.get('action'+y)))
 					setSkinSetting('0','icon'+x,str(icon_T.get('icon'+y)))
@@ -1832,6 +1832,7 @@ def mode218(value, admin, name, printpoint):
 				message = message + newline + 'DialogSubtitlesNA'+str(i) + space2 + xbmc.getInfoLabel('Window(home).Property(DialogSubtitlesNA'+str(i)+')')
 		else:
 			message = message + newline + "Current XML" + space2 + xbmc.getInfoLabel('Window.Property(xmlfile)')
+			message = message + newline + "Current Control" + space2 + xbmc.getInfoLabel('System.CurrentControl')
 			message = message + newline + "TEMP" + space2 + property_temp
 			message = message + newline + "TEMP2" + space2 + property_temp2
 			message = message + newline + "scriptfeatherenceservice_random" + space2 + scriptfeatherenceservice_random

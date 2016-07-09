@@ -1911,11 +1911,15 @@ def pluginend(admin):
 	---MODES-LIST--------------------
 	------------------------------'''
 	if mode == None or ((url == None or len(url)<1) and mode < 100) or 1 + 1 == 3:
-		if addonID == 'plugin.video.featherence.kids' and General_Language == "":
-			CATEGORIES200()
-			xbmc.executebuiltin('AlarmClock(firstrun,RunScript(script.featherence.service,,?mode=32&value=40),00:01,silent)')
+		if addonID == 'plugin.video.featherence.kids':
+			if General_Language == "":
+				CATEGORIES200()
+				xbmc.executebuiltin('AlarmClock(firstrun,RunScript(script.featherence.service,,?mode=32&value=40),00:01,silent)')
+			else: CATEGORIES()
 			
-		else: CATEGORIES()
+			if 'Hebrew' in General_LanguageL:
+				if mode == None:
+					installaddonP('repository.xbmc-israel', update=True)
 		
 		systemlanguage = xbmc.getInfoLabel('System.Language')
 		
