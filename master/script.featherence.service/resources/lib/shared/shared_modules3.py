@@ -1921,6 +1921,8 @@ def pluginend(admin):
 				if mode == None:
 					installaddonP('repository.xbmc-israel', update=True)
 		
+		else: CATEGORIES()
+		
 		systemlanguage = xbmc.getInfoLabel('System.Language')
 		
 		if 1 + 1 == 2:
