@@ -218,7 +218,8 @@ def TranslatePath(x, filename=True, urlcheck_=False, force=False):
 	'returned2' + space2 + to_utf8(returned2) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 	
-	return to_unicode(returned), to_unicode(returned2)
+	#return to_unicode(returned), to_unicode(returned2)
+	return to_utf8(returned), to_utf8(returned2)
 
 def GeneratePath(custom, formula, custommediaL, x2, x2_, ignoreL=[], save_=""):
 	name = 'GeneratePath' ; printpoint = "" ; formula_ = "" ; subdir = "" ; filename = "" ; subdir_filename = "" ; TypeError = "" ; extra = "" ; level = 1
@@ -1686,11 +1687,21 @@ def installaddonP(addon, update=True):
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
 	
+	elif 'repository.metalkettle' in addon: #GITHUB PATH
+		if not 'resource.' in addon and not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			version = getVersion(addon, 'https://raw.githubusercontent.com/Shani-08/MetalKettles-Addon-Repository-1/master/addons.xml')
+			file = addon + '-' + str(version) + '.zip'
+			DownloadFile('https://github.com/Shani-08/MetalKettles-Addon-Repository-1/raw/master/zips/'+addon+'/'+file, file, packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
 	elif '.featherence' in addon: #GITHUB PATH
 		if not 'resource.' in addon and not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			version = getVersion(addon, 'https://raw.githubusercontent.com/finalmakerr/featherence/master/addons.xml')
 			file = addon + '-' + str(version) + '.zip'
-			DownloadFile(gh1+gh2+addon+'/'+file, file, packages_path, addons_path, silent=True)
+			DownloadFile('https://raw.githubusercontent.com/finalmakerr/featherence/raw/master' + addon+'/'+file, file, packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass

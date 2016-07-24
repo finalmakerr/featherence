@@ -62,7 +62,7 @@
 					<usealttexture>Playlist.IsRepeat | Playlist.IsRepeatOne</usealttexture>
 					<onclick>PlayerControl(RepeatAll)</onclick>
 					<altclick>PlayerControl(RepeatOff)</altclick>
-					<visible>Player.HasAudio + !Pvr.IsPlayingRadio | Playlist.IsRepeat | Playlist.IsRepeatOne | !IsEmpty(Window(home).Property(OSDPlus)) + IntegerGreaterThen(VideoPlayer.PlaylistLength,1)</visible>
+					<visible>Player.HasAudio + !Pvr.IsPlayingRadio | Playlist.IsRepeat | Playlist.IsRepeatOne | !IsEmpty(Window(home).Property(OSDPlus)) + IntegerGreaterThen(Playlist.Length(video),1)</visible>
 					<visible>!SubString(Player.FolderPath,rtmp://) + !SubString(Player.FolderPath,mms://)</visible>
 				</control>	
 				<control type="togglebutton" id="612" description="Audio">
@@ -111,7 +111,7 @@
 					<height>100</height>
 					<onclick>Dialog.Close(videoosd)</onclick>
 					<onclick>ActivateWindow(videoplaylist)</onclick>
-					<visible>!IsEmpty(Window(home).Property(OSDPlus)) + IntegerGreaterThan(VideoPlayer.PlaylistLength,1)</visible>
+					<visible>!IsEmpty(Window(home).Property(OSDPlus)) + [IntegerGreaterThan(Playlist.Length(video),1) | IntegerGreaterThan(Playlist.Length(music),1)]</visible>
 				</control>
 				<control type="button" id="705" description="3D">
 					<texturefocus>osd/buttons/OSDStereoscopicFO.png</texturefocus>

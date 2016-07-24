@@ -173,7 +173,10 @@ def gettitle2(x):
 	title2 = ""
 	if '&custom' in x:
 		if 1 + 1 == 3: title2 = ""
-		else: title2 = '[Custom]'
+		elif 'plugin.video.sdarot.tv' in x: title2 = ' [sdarot]'
+		elif 'plugin.video.wallaNew.video' in x: title2 = ' [walla]'
+		elif 'plugin.video.cartoons8' in x: title2 = ' [cartoons8]'
+		else: title2 = ' [Custom]'
 		
 	
 	return title2

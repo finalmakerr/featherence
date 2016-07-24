@@ -7,6 +7,12 @@ WIP - WORK IN PROGRESS
 - Widget auto refresh on condition.
 
 ------------------------
+Featherence v0.5.7 (24-Jul-16)
+------------------------
+- Playlist OSD button is now visible again.
+- Update music on slideshow feature.
+
+------------------------
 Featherence v0.5.6 (02-Jul-16)
 ------------------------
 - Update playlist information during playback (Top Information Window).

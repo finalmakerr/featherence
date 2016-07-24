@@ -1,6 +1,9 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
+- Added cartoons8 contents.
+- Update auto download of required repositories.
+- Update custom sources names.
 
 ------------------------
 Featherence Kids v0.2.7 (10-May-16)

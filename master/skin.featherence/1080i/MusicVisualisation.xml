@@ -165,7 +165,7 @@
               <align>left</align>
               <textcolor>grey</textcolor>
               <animation effect="fade" time="200">VisibleChange</animation>
-              <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
+              <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[Playlist.Length(music)][/B]</label>
               <font>size26</font>
             </control>
             <control type="group">
@@ -310,7 +310,7 @@
               <align>right</align>
               <textcolor>grey</textcolor>
               <animation effect="fade" time="200">VisibleChange</animation>
-              <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
+              <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[Playlist.Length(music)][/B]</label>
               <font>size26</font>
               <shadowcolor>black</shadowcolor>
             </control>

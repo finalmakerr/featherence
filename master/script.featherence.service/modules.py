@@ -7,7 +7,7 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
-	setSkinSetting('0','TEMP',"5000")
+	
 	#xbmc.executebuiltin('ActivateWindow(MusicFiles,root)')
 	#xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
 	#xbmc.executebuiltin('Skin.SetImage(TEMP,special://userdata/)')
@@ -430,7 +430,7 @@ def mode10(admin, name, printpoint):
 			setProperty('TopVideoInformation' + str(i), "", type="home")
 		if xbmc.getInfoLabel('Window(home).Property(VideoPlayer.Title)') != "":
 			if xbmcaddon.Addon('script.featherence.service').getSetting('widget_enable') == 'true':
-				if not xbmc.getCondVisibility('IntegerGreatherThan(VideoPlayer.PlaylistLength,1)'):
+				if not xbmc.getCondVisibility('IntegerGreatherThan(Playlist.Length(video),1)'):
 					pass #printpoint = printpoint + "5"
 		
 		ClearSubHisotry()
@@ -713,6 +713,7 @@ def mode32(value, admin, name, printpoint):
 		listitemfolderpath = xbmc.getInfoLabel('ListItem.FolderPath')
 		containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
 		listitemthumb = xbmc.getInfoLabel('ListItem.Thumb')
+		listitemisfolder = xbmc.getCondVisibility('ListItem.IsFolder')
 		
 		nolabel = 'Container.FolderPath'
 		yeslabel = 'ListItem.Path'
@@ -729,12 +730,20 @@ def mode32(value, admin, name, printpoint):
 			text = text.replace('&amp;','&')
 			text = text.replace('&quot;',"")
 			
-			if '1' in printpoint: text = "list.append('&custom4=" + text + "')"
+			if '1' in printpoint:
+				if listitemisfolder: text = "list.append('&custom8=" + text + "')"
+				else: text = "list.append('&custom4=" + text + "')"
 			elif '2' in printpoint: text = "list.append('&custom8=" + text + "')"
 		
 		if listitemthumb != "":
 			text = text + newline + str(listitemthumb)
 		
+		if 'plugin.video.cartoons8' in text:
+			if 'description=' in text:
+				#y = find_string(text, 'description=', '&')
+				#text = text.replace(y,'description=&',1)
+				pass
+			
 		dest = featherenceservice_addondata_path + "Container.FolderPath" + ".txt"
 		write_to_file(dest, str(text), append=False, silent=True, utf8=False)
 		notification(addonString(32130).encode('utf-8'),dest,'',2000)
@@ -743,6 +752,7 @@ def mode32(value, admin, name, printpoint):
 		text2 = newline + 'text' + space2 + str(text) + newline + \
 		'containerfolderpath ' + space2 + str(xbmc.getInfoLabel('Container.FolderPath')) + newline + \
 		'containerfolderpath2' + space2 + containerfolderpath + newline + \
+		'listitemisfolder' + space2 + str(listitemisfolder) + newline + \
 		'listitemfolderpath  ' + space2 + str(xbmc.getInfoLabel('ListItem.FolderPath')) + newline + \
 		'listitemfolderpath2 ' + space2 + listitemfolderpath + newline + extra
 		printlog(title='MISCS (mode32) value: ' + str(value), printpoint=printpoint, text=text2, level=0, option="")

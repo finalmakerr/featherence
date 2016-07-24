@@ -449,7 +449,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 			'''check if x contain previous positions'''
 			name_ = find_string(name, name[:1], '. ')
 			name__ = name_.replace('. ',"")
-			notification(name_,name__,"",4000)
+			#notification(name_,name__,"",4000)
 			try:
 				test = int(name__) + 1
 				name = name.replace(name_,"",1)
@@ -1703,17 +1703,16 @@ def checkAddon_Update(admin, Addon_Update, Addon_Version, addonVersion, Addon_Up
 		'''------------------------------
 		---Addon_UpdateLog----------------
 		------------------------------'''
-		dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOk.xml)')
-		dialogselectW = xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)')
-		dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
-		dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)')
-		dialogtextviewerW = xbmc.getCondVisibility('Window.IsVisible(DialogTextViewer.xml)')
-		startupW = xbmc.getCondVisibility('Window.IsVisible(Startup.xml)')
-		custom1191W = xbmc.getCondVisibility('Window.IsVisible(Custom1191.xml)')
-		if not dialogokW and not dialogselectW and not dialogprogressW and not dialogbusyW and not startupW and not dialogtextviewerW and not custom1191W:
-			if datenowS != "":
-				setAddon_UpdateLog(admin, Addon_Version, Addon_UpdateDate, Addon_ShowLog, Addon_ShowLog2, datenowS)
-				'''---------------------------'''
+		#dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOk.xml)')
+		#dialogselectW = xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)')
+		#dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
+		#dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)')
+		#dialogtextviewerW = xbmc.getCondVisibility('Window.IsVisible(DialogTextViewer.xml)')
+		#startupW = xbmc.getCondVisibility('Window.IsVisible(Startup.xml)')
+		#custom1191W = xbmc.getCondVisibility('Window.IsVisible(Custom1191.xml)')
+		#if not dialogokW and not dialogselectW and not dialogprogressW and not dialogbusyW and not startupW and not dialogtextviewerW and not custom1191W:
+		#if datenowS != "":
+		setAddon_UpdateLog(admin, Addon_Version, Addon_UpdateDate, Addon_ShowLog, Addon_ShowLog2, datenowS)
 	
 	'''------------------------------
 	---PRINT-END---------------------
@@ -1917,9 +1916,6 @@ def pluginend(admin):
 				xbmc.executebuiltin('AlarmClock(firstrun,RunScript(script.featherence.service,,?mode=32&value=40),00:01,silent)')
 			else: CATEGORIES()
 			
-			if 'Hebrew' in General_LanguageL:
-				if mode == None:
-					installaddonP('repository.xbmc-israel', update=True)
 		
 		else: CATEGORIES()
 		
@@ -1936,7 +1932,7 @@ def pluginend(admin):
 			VerReset = ""
 			#if addonID == 'plugin.video.featherence.music' and Addon_Version == '0.0.17': VerReset = "true"
 			checkAddon_Update(admin, Addon_Update, Addon_Version, addonVersion, Addon_UpdateDate, Addon_UpdateLog, Addon_ShowLog, Addon_ShowLog2, VerReset)
-			if Addon_UpdateLog == "true" or 1 + 1 == 3:				
+			if Addon_UpdateLog == "true" or 1 + 1 == 3:
 				list = []
 				list.append(addonString_servicefeatherence(32060).encode('utf-8')) #Would you like thanks us? Would love to hear you!
 				list.append(addonString_servicefeatherence(32061).encode('utf-8')) #Do you want to contribute?
@@ -1946,6 +1942,14 @@ def pluginend(admin):
 				returned, value = getRandom(0, min=0, max=len(list), percent=50)
 				
 				notification(list[int(value)],'www.facebook.com/groups/featherence','',4000)
+			
+			if Addon_UpdateLog == "true":
+				if addonID == 'plugin.video.featherence.kids':
+					if 'Hebrew' in General_LanguageL:
+						installaddonP('repository.xbmc-israel', update=True)
+				
+					if 'English' in General_LanguageL:
+						installaddonP('repository.metalkettle', update=True)
 				
 		#except Exception, TypeError:
 			#extra = extra + newline + "TypeError" + space2 + str(TypeError)

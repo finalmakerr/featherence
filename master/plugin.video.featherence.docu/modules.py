@@ -491,7 +491,6 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	'''History Channel'''
 	list = []
 	list.append('&youtube_ch=historychannel')
-	list.append('&youtube_pl=PLRdJd67Hep8vhFvhGNyfnglC1N9urBdDy')
 	list.append('&youtube_pl=PLx5B22t2Ksu2jerdLdWvZ1JuYizKsnnzr')
 	list.append('&youtube_pl=PLonoXswioCfuGeOm4jbD_P6dF3BbMbsti')
 	list.append('&youtube_pl=PLMZhrNNj_z5tnKucoERFbWHB1zPoCHvYG')
@@ -509,7 +508,6 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	list.append('&youtube_ch=TheGreatWar')
 	list.append('&youtube_pl=PLC-0e1pjuxF9bc8e0cDsmj0tqGJ0Ss8tT')
 	list.append('&youtube_pl=PL-b6BqXQgEFo88XFZ2r-DQmN-c5W5W9u-')
-	list.append('&youtube_pl=PLtvqDUuIy5Ee5p_YVMoOfhCmkaLie32KB')
 	list.append('&youtube_pl=PL7eLCXTvueOvs67EDHnuKr7aXguRyuJ0S')
 	list.append('&youtube_pl=PLu7g1OfsO2vcKnzSXQiCHisyUIQcclbxr')
 	list.append('&youtube_pl=PL95DD3A12BDB77AF0')
@@ -518,7 +516,6 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLkJloWOsgyNlKNx-LhoAp50o5gqn5d8rp')
 	list.append('&youtube_pl=PLHbgAq4l2Bj7AwVk7R1SIuhqtki7fPLUL')
 	list.append('&youtube_pl=PL8dPuuaLjXtNjasccl-WajpONGX3zoY4M')
-	list.append('&youtube_pl=PLLvOGyTQQoqziO-Uobw49bDRT2Lel0t3R')
 	list.append('&youtube_pl=PL6oforB7ir5JDZaxy6017UJM-cvC-CpKy&index=1')
 	addDir(addonString(30301).encode('utf-8'),list,17,'http://cdn.usborne.com/catalogue/covers/eng/width_223px/87886.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30301).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom=""))
 	

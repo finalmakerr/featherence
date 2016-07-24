@@ -68,14 +68,23 @@ if systemplatformwindows:
 	emulator_file = os.path.join(emulator_path, 'retroarch.exe')
 	emulator_file_ = emulator_file + space + '-D'
 	retroarchcfg_file = os.path.join(emulator_path, 'retroarch.cfg')
+	
+elif systemplatformlinuxraspberrypi:
+	emulator_file = os.path.join(emulator_path, 'bin', 'rpi', 'retroarch.sh')	
+	emulator_file_ = emulator_file
+	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
+	
 else:
 	emulator_file = os.path.join(emulator_path, 'bin', 'retroarch.sh')	
 	emulator_file_ = emulator_file
 	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
 
 
-
-cores_path = os.path.join(emulator_path,'cores','')
+if systemplatformlinuxraspberrypi:
+	cores_path = os.path.join(emulator_path,'cores','rpi','')
+else:
+	cores_path = os.path.join(emulator_path,'cores','')
+	
 shader_path = os.path.join(emulator_path,'shaders','')
 system_path = os.path.join(emulator_path,'system','')
 coresinfo_path = cores_path

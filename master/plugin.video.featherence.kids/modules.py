@@ -1564,19 +1564,27 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 		list.append('&dailymotion_pl=x3m0wa') #English
 	addDir(addonString(10477).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/711.jpg',addonString(104770).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
 	
-	'''פוקימון'''
+	'''פוקימון (1998)'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f433.jpg&mode=3&name=%d7%a4%d7%95%d7%a7%d7%99%d7%9e%d7%95%d7%9f%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&series_id=433&series_name=%d7%a4%d7%95%d7%a7%d7%99%d7%9e%d7%95%d7%9f%20-%20%2a%d7%9e%d7%93%d7%95%d7%91%d7%91%2a&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f433%2fpokemon-%d7%a4%d7%95%d7%a7%d7%99%d7%9e%d7%95%d7%9f-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 		list.append('&dailymotion_pl=x34tag') #Hebrew
-		list.append('&youtube_pl=PLCvjpWBfw_7iaUfacUr7NRzsYOtyHJf0M') #Hebrew
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLYi30KTSgtG8xQtFGsYIiN4xX7NGq6sOK') #English
 		list.append('&dailymotion_pl=x30xbc') #English
+		list.append('&custom8=plugin://plugin.video.cartoons8/?description=&iconimage=http%3a%2f%2fcartoons8.me%2fuploads%2fthumbs%2f2015-04-06pokemon-1998b.jpg%7cUser-Agent%3dMozilla%2f5.0%20(Windows%20NT%206.1%3b%20rv%3a32.0)%20Gecko%2f20100101%20Firefox%2f32.0%26Cookie%3d__cfduid%3dd48ee3d5e8750d48c2c735e712c4476201468881294%3bcf_clearance%3d156f92cf27140312c3bfb0c74c8fa27432a697b4-1468881299-86400%3bPHPSESSID%3d0918e9805af889f932d3f1f7083de44b%3b&mode=2&name=Pokemon%20(1998)&url=http%3a%2f%2fcartoons8.me%2fcartoon%2f1585%2fpokemon-1998')
 	if 'Hindi' in General_LanguageL:
 		list.append('&youtube_id=x2kmbwv') #Hindi
 	
-	addDir(addonString(10478).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/433.jpg',addonString(104780).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10478).encode('utf-8') + space + '(1998)',list,17,'http://www.sdarot.pm/media/series/433.jpg',addonString(104780).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
+	
+	'''פוקימון (Black & White)'''
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		pass
+	if 'English' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.cartoons8/?description=C%3a%5cUsers%5cfinalmakerr%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.cartoons8%5cfanart.jpg&iconimage=http%3a%2f%2fcartoons8.me%2fuploads%2fthumbs%2f2015-07-06pokemon-black-amp-white-dubbedb.jpg%7cUser-Agent%3dMozilla%2f5.0%20(Windows%20NT%206.1%3b%20rv%3a32.0)%20Gecko%2f20100101%20Firefox%2f32.0%26Cookie%3d__cfduid%3dd48ee3d5e8750d48c2c735e712c4476201468881294%3bcf_clearance%3d156f92cf27140312c3bfb0c74c8fa27432a697b4-1468881299-86400%3bPHPSESSID%3d0918e9805af889f932d3f1f7083de44b%3b&mode=2&name=Pokemon%3a%20Black%20%26%20White%20(Dubbed)&url=http%3a%2f%2fcartoons8.me%2fcartoon%2f4051%2fpokemon-black-amp-white-dubbed')
+	addDir(addonString(10478).encode('utf-8') + space + '(Black & White)',list,6,'http://assets.pokemon.com/assets/cms2/img/watch-pokemon-tv/seasons/season14/season14_logo_169_en.jpg',addonString(104780).encode('utf-8'),'1',"",getAddonFanart(background, custom="http://gearnuke.com/wp-content/uploads/2014/02/pokemon-black-and-white-anime-1.png", default=background2))
 	
 	'''פיטר פן'''
 	list = []
