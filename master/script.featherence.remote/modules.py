@@ -164,8 +164,7 @@ def testRemote(Remote_Name, Remote_Name2, Remote_TestingTime):
 				printpoint = printpoint + "7"
 				notification_common("9")
 				setProperty('Remote_Name', Remote_Name, type="home")
-				if not remotebutton: dialogok(addonString(32025).encode('utf-8'), addonString_servicehtpt(32030).encode('utf-8'),'[CR]' + localize(74828),"")
-				'''---------------------------'''
+				dialogok(addonString(32025).encode('utf-8'), addonString_servicehtpt(32030).encode('utf-8'),'[CR]' + localize(74828),"")
 
 def cleartable():
 	#printpoint = printpoint + "1"
