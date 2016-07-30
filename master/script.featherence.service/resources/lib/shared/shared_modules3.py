@@ -835,8 +835,8 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 	'''playlist = store up to date videos for comparision'''
 	#addonID=addonID
 	printpoint = "" ; TypeError = "" ; extra = "" ; page = 1 ; count = 0 ; count_ = 0 ; i = 0 ; totalResults = 0 ; pagesize = 40
-	id_L = [] ; playlist_L = [] ; title_L = [] ; thumb_L = [] ; desc_L = [] ; fanart_L = []
-	id_ = ""   ; finalurl_ = ""   ; title_ = "" ; thumb_ = ""  ; desc_ = ""  ; fanart_ = ""
+	id_L = [] ; playlist_L = [] ; title_L = [] ; thumb_L = [] ; desc_L = [] ; fanart_L = [] ; nextpagetoken_L = [""]
+	id_ = ""   ; finalurl_ = ""   ; title_ = "" ; thumb_ = ""  ; desc_ = ""  ; fanart_ = "" ; nextpagetoken = ""
 	valid_ = "" ; invalid__ = "" ; duplicates__ = "" ; except__ = "" ; url = "" ; title2 = "" ; prms = "" ;  link = ""
 	resultsPerPage = pagesize
 	
@@ -900,6 +900,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 			url = 'https://www.googleapis.com/youtube/v3/playlists?id='+x2+'&key='+api_youtube_featherence+'&part=snippet&maxResults=1&pageToken='
 		else:
 			url = 'https://www.googleapis.com/youtube/v3/playlistItems?playlistId='+x2+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults+'&pageToken='
+		
 	elif '&youtube_id=' in x:
 		title2 = '[Video]'
 		x2 = x.replace('&youtube_id=',"")
@@ -1000,6 +1001,42 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 				else:
 					totalResults=int(prms['pageInfo'][u'totalResults']) #if bigger than pagesize needs to add more result
 					resultsPerPage = int(prms['pageInfo'][u'resultsPerPage'])
+					try:
+						nextpagetoken = str(prms['nextPageToken'])
+						nextpagetoken_L.append(nextpagetoken)
+					except:
+						pass
+						
+					if '&youtube_pl=' in x:
+						
+						count__ = 0
+						while count__ < 10 and not xbmc.abortRequested:
+							url_ = url.replace('&pageToken=', '&pageToken=' + nextpagetoken)
+							#try:
+							if 1 + 1 == 2:
+								notification(str(len(nextpagetoken_L) - 1) + space + '/' + space + str(totalResults / resultsPerPage),"","",2000)
+								link_ = OPEN_URL(url_)
+								prms_=json.loads(link_)
+								
+								
+								try:
+									nextpagetoken = str(prms_['nextPageToken'])
+									nextpagetoken_L.append(nextpagetoken)
+								except: count__ = 10
+								
+							text = 'nextpagetoken_L' + space2 + str(nextpagetoken_L) + newline + \
+							"url_" + space2 + str(url_) + newline + \
+							"link_" + space2 + str(link_) + newline + \
+							"prms_" + space2 + str(prms_)
+							printlog(title='apimaster_playlisttoken', printpoint=printpoint, text=text, level=0, option="")
+
+							count__ += 1
+						
+						
+						max = len(nextpagetoken_L) - 1
+						returned, value = getRandom(0, min=0, max=max, percent=50)
+						url = url.replace('&pageToken=', '&pageToken=' + nextpagetoken_L[int(value)])
+						
 				totalpagesN = (totalResults / pagesize) + 1
 				'''---------------------------'''
 

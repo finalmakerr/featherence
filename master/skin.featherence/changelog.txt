@@ -1,10 +1,14 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
-- Added clear fanart support.
-- Horizontal view display position for multipages.
-- Return home preserve previous location.
-- Widget auto refresh on condition.
+
+------------------------
+Featherence v0.5.8 (31-Jul-16)
+------------------------
+- Major bug fix of coloring virtual keyboard.
+- Minor bug fix of Video OSD buttons while playing live TV (PVR).
+- Minor bug fix of showing top information bar upon entering a fullscreen video.
+- Update video osd auto close feature.
 
 ------------------------
 Featherence v0.5.7 (24-Jul-16)

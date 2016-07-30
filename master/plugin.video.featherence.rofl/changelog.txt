@@ -3,7 +3,12 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
-Featherence ROFL v0.0.5 (xx-xx-16)
+Featherence ROFL v0.0.6 (xx-Aug-16)
+------------------------
+- Update TV Mode feature for long playlist.
+
+------------------------
+Featherence ROFL v0.0.5 (12-Jul-16)
 ------------------------
 - Added new contents.
 - Update addon settings interface.

@@ -6,6 +6,11 @@ WIP - WORK IN PROGRESS
 - Update custom sources names.
 
 ------------------------
+Featherence Kids v0.2.8 (xx-Aug-16)
+------------------------
+- Update TV Mode feature for long playlist.
+
+------------------------
 Featherence Kids v0.2.7 (10-May-16)
 ------------------------
 - Added option to force TV Mode.

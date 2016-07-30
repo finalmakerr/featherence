@@ -863,6 +863,8 @@ def getRandom(custom, min=0, max=100, percent=50):
 		printpoint = printpoint + "9"
 		extra = extra + newline + 'TypeError' + space2 + str(TypeError)
 	
+	if min == max: printpoint = printpoint + '9'
+	
 	if not "9" in printpoint:
 		'''---------------------------'''
 		if custom == 0: value = random.randrange(min,max)

@@ -14,7 +14,11 @@ def mode0(admin, name, printpoint):
 	#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
 	#installaddon('resource.images.weathericons.outline', update=False)
 	#installaddon('resource.images.weatherfanart.single,update=False')
-	
+
+def mode4(value, value2, value3, name, printpoint):
+	'''Action'''
+	xbmc.executebuiltin('ActivateWindow(1170)')
+		
 def mode5(value, admin, name, printpoint):
 	'''startup'''
 	
@@ -418,13 +422,15 @@ def mode10(admin, name, printpoint):
 	if property_mode10 == "":
 		setProperty('mode10', 'true', type="home")
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
+		dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy)')
 		setPlayerInfo(admin)
 		videostarttweak(admin)
 		if playerhasvideo and xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)'): xbmc.executebuiltin('Action(Info)')
-		while playerhasvideo and not xbmc.abortRequested:
+		while (playerhasvideo or dialogbusyW) and not xbmc.abortRequested:
 			xbmc.sleep(5000)
 			videoplayertweak(admin, playerhasvideo)
 			playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
+			dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy)')
 			'''---------------------------'''
 		for i in range(1,10):
 			setProperty('TopVideoInformation' + str(i), "", type="home")
@@ -667,7 +673,9 @@ def mode30(input, header, option, action, set1, addon, name, printpoint):
 	------------------------------'''
 	if action != "":
 		'''same time action (pre)'''
-		xbmc.executebuiltin('AlarmClock(mode30,'+action+',00:01,silent)')
+		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=4&amp;value=1&amp;value2='+action+'')
+		
+		#xbmc.executebuiltin('AlarmClock(mode30,'+action+',00:01,silent)')
 	try: option += 1
 	except: option = 0
 	dialogkeyboard(input, header, option, "", set1=set1, addon=addon, force=True)

@@ -3,6 +3,11 @@ WIP (WORK IN PROGRESS)--
 ------------------------
 
 ------------------------
+Featherence Docu v0.1.13 (xx-Aug-16)
+------------------------
+- Update TV Mode feature for long playlist.
+
+------------------------
 Featherence Docu v0.1.12 (06-Jun-16)
 ------------------------
 - Added download support for certain addons.

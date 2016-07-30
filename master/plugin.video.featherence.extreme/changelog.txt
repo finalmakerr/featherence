@@ -3,6 +3,11 @@ WIP (WORK IN PROGRESS)
 ------------------------
 
 ------------------------
+Featherence Extreme v0.1.8 (xx-Aug-16)
+------------------------
+- Update TV Mode feature for long playlist.
+
+------------------------
 Featherence Extreme v0.1.7 (05-May-16)
 ------------------------
 - Added option to force TV Mode.
