@@ -52,6 +52,50 @@ def mode5(value, admin, name, printpoint):
 		installaddon('script.skinshortcuts', update=True)
 		setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
 
+	
+def mode6(value):
+	name = 'mode6 (pwd)' ; printpoint = ""
+	passprotect = xbmc.getInfoLabel('Skin.String(PassProtect)')
+	passprotect_property = xbmc.getInfoLabel('Window(home).Property(PassProtect)')
+	currentpwd = xbmc.getCondVisibility('Skin.HasSetting('+value+')')
+	set1v = ""
+	#label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
+	
+	if currentpwd:
+		printpoint = printpoint + '1'
+		if passprotect_property != "":
+			printpoint = printpoint + '2'
+			
+		elif not passprotect:
+			'''This button is locked but you haven't set a password!'''
+			printpoint = printpoint + '3'
+			notification(addonString(32147).encode('utf-8'),"","",4000)
+			setProperty('PassProtect','','home')
+			xbmc.executebuiltin('ReplaceWindow(Home.xml)')
+		else:
+			printpoint = printpoint + '4'
+			returned, set1v = dialognumeric(0,localize(12326),"",'1','','')
+			if set1v != passprotect:
+				printpoint = printpoint + '5'
+				notification(localize(12342),"","",2000)
+				setProperty('PassProtect','','home')
+				xbmc.executebuiltin('ReplaceWindow(Home.xml)')
+			else:
+				printpoint = printpoint + '6'
+				xbmc.executebuiltin('AlarmClock(PassProtect,ClearProperty(home,PassProtect),15,silent)')
+				setProperty('PassProtect','true', 'home')
+	else:
+		printpoint = printpoint + '9'
+	
+	passprotect_property_ = xbmc.getInfoLabel('Window(home).Property(PassProtect)')
+	text = 'value' + space2 + str(value) + newline + \
+	'set1v' + space2 + str(set1v) + newline + \
+	'passprotect' + space2 + str(passprotect) + newline + \
+	'passprotect_property' + space2 + str(passprotect_property) + newline + \
+	'passprotect_property_' + space2 + str(passprotect_property_) + newline + \
+	'currentpwd' + space2 + str(currentpwd) + newline
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+	
 def mode11(name, printpoint):
 	'''StartUp-Music/Video'''
 	startupmusic1 = xbmc.getCondVisibility('Skin.HasSetting(StartUpMusic)')
@@ -98,50 +142,7 @@ def mode11(name, printpoint):
 	'startupvideo0' + space2 + str(to_utf8(startupvideo0)) + newline + \
 	'startupmusic0' + space2 + str(to_utf8(startupmusic0))
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
-	
-def mode6(value):
-	name = 'mode6 (pwd)' ; printpoint = ""
-	passprotect = xbmc.getInfoLabel('Skin.String(PassProtect)')
-	passprotect_property = xbmc.getInfoLabel('Window(home).Property(PassProtect)')
-	currentpwd = xbmc.getCondVisibility('Skin.HasSetting('+value+')')
-	set1v = ""
-	#label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-	
-	if currentpwd:
-		printpoint = printpoint + '1'
-		if passprotect_property != "":
-			printpoint = printpoint + '2'
-			
-		elif not passprotect:
-			'''This button is locked but you haven't set a password!'''
-			printpoint = printpoint + '3'
-			notification(addonString(32147).encode('utf-8'),"","",4000)
-			setProperty('PassProtect','','home')
-			xbmc.executebuiltin('ReplaceWindow(Home.xml)')
-		else:
-			printpoint = printpoint + '4'
-			returned, set1v = dialognumeric(0,localize(12326),"",'1','','')
-			if set1v != passprotect:
-				printpoint = printpoint + '5'
-				notification(localize(12342),"","",2000)
-				setProperty('PassProtect','','home')
-				xbmc.executebuiltin('ReplaceWindow(Home.xml)')
-			else:
-				printpoint = printpoint + '6'
-				xbmc.executebuiltin('AlarmClock(PassProtect,ClearProperty(home,PassProtect),15,silent)')
-				setProperty('PassProtect','true', 'home')
-	else:
-		printpoint = printpoint + '9'
-	
-	passprotect_property_ = xbmc.getInfoLabel('Window(home).Property(PassProtect)')
-	text = 'value' + space2 + str(value) + newline + \
-	'set1v' + space2 + str(set1v) + newline + \
-	'passprotect' + space2 + str(passprotect) + newline + \
-	'passprotect_property' + space2 + str(passprotect_property) + newline + \
-	'passprotect_property_' + space2 + str(passprotect_property_) + newline + \
-	'currentpwd' + space2 + str(currentpwd) + newline
-	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
-	
+
 def mode8(admin, name, printpoint):
 	'''------------------------------
 	---SMART-SUBTITLE-SEARCH---------
