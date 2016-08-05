@@ -1036,7 +1036,10 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 						max = len(nextpagetoken_L) - 1
 						returned, value = getRandom(0, min=0, max=max, percent=50)
 						if value == "": value = 0
-						url = url.replace('&pageToken=', '&pageToken=' + nextpagetoken_L[int(value)])
+						else:
+							url = url.replace('&pageToken=', '&pageToken=' + nextpagetoken_L[int(value)])
+							link = OPEN_URL(url)
+							prms=json.loads(link)
 						
 				totalpagesN = (totalResults / pagesize) + 1
 				'''---------------------------'''

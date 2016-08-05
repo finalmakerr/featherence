@@ -706,14 +706,14 @@
   </include>
   <include name="IconsInformation">
    <control type="grouplist">
-    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-950,0">Conditional</animation>
+    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-900,0">Conditional</animation>
 	<include condition="StringCompare(System.Language,Hebrew)">LabelL1</include>
 	<include condition="!StringCompare(System.Language,Hebrew)">LabelR1</include>
-	<height>35</height>
-	<posx>660r</posx>
+	<height>33</height>
+	<posx>670r</posx>
 	<itemgap>10</itemgap>
 	<orientation>horizontal</orientation>
-	<posy>-2</posy>
+	<posy>0</posy>
 	<width>250</width>
 	<visible>!Skin.String(TopInformationIcons, 0)</visible>
 	<control type="image" id="820" description="Weather">
