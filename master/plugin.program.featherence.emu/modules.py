@@ -652,18 +652,23 @@ def copyarcade(force=False):
 	
 def copyconfig(force=False):
 	name = 'copysettings' ; printpoint = "" ; extra = ""
+	
 	path = os.path.join(emulator_path,'config','')
-	for file in os.listdir(path):
-		#print file
-		x = os.path.join(config_path, file)
-		if not os.path.exists(x) or force == True:
-			copyfiles(os.path.join(path,file), x)
-		
-	if not os.path.exists(config_path) or force==True:
-		printpoint = printpoint + '1'
-		notification('Recreating configs','','',1000)
-		mkdirs()
-		setconfig(force=True)
+	if not os.path.exists(path):
+		notification('Featherence Emu Console addon is missing!',"","",4000)
+		installaddon('emulator.retroarch', update=True)
+	else:
+		for file in os.listdir(path):
+			#print file
+			x = os.path.join(config_path, file)
+			if not os.path.exists(x) or force == True:
+				copyfiles(os.path.join(path,file), x)
+			
+		if not os.path.exists(config_path) or force==True:
+			printpoint = printpoint + '1'
+			notification('Recreating configs','','',1000)
+			mkdirs()
+			setconfig(force=True)
 
 	text = "extra" + space2 + str(extra)
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
@@ -861,8 +866,8 @@ def copylaunchers(force=False):
 			
 			if systemplatformandroid: _nintendo_args = 'start -n com.explusalpha.NesEmu/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinuxraspberrypi: pass
-			elif systemplatformlinux: _nintendo_args = 'nestopia_libretro.dll'
-			elif systemplatformwindows: _nintendo_args = 'nestopia'
+			elif systemplatformlinux: _nintendo_args = 'nestopia'
+			elif systemplatformwindows: _nintendo_args = 'nestopia_libretro.dll'
 			replace_word(emudata_launcher_file,'_nintendo_args',_nintendo_args, infile_="", LineR=False , LineClean=False)
 
 			if systemplatformandroid: _nintendo64_args = 'start -n paulscode.android.mupen64plus.free/paulscode.android.mupen64plusae.MainActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'

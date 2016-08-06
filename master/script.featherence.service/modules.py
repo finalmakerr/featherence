@@ -2161,7 +2161,8 @@ def mode512(value):
 			xbmc.executebuiltin(cmd)
 			#terminal('adb shell am start -a android.intent.action.VIEW -d '+url+'','')
 		elif systemplatformlinux:
-			if xbmc.getCondVisibility('System.HasAddon(service.openelec.settings)'): xbmc.executebuiltin('RunAddon(browser.chromium)')
+			if xbmc.getCondVisibility('System.HasAddon(service.openelec.settings)'):
+				else: installaddon('browser.chromium', update=True)
 			else: webbrowser.open(url)
 		elif systemplatformosx: webbrowser.open(url)
 		elif systemplatformios: webbrowser.open(url)
