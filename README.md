@@ -8,7 +8,7 @@
 * Featherence Extreme:  Watch sport extreme videos.
 * Featherence Music:    For people who love Music!
 * Featherence:          Beauty, Light and Modern interface.
-* Featherence ROFL:     coming soon...
+* Featherence ROFL:     What's so funny? :)
 
 # **Links:**
 
