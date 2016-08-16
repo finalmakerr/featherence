@@ -1397,8 +1397,7 @@ def update_view(url, num, viewtype, ok=True):
 	url = url.replace("'","",1)
 	
 	if '2' in printpoint:
-		xbmc.executebuiltin('XBMC.Container.Update(%s)' % url ) ; xbmc.sleep(500)
-	xbmc.executebuiltin('XBMC.Container.Update(%s)' % url )
+		xbmc.executebuiltin('XBMC.Container.Update(%s)' % url )
 		
 	text = "url" + space2 + str(url) + space + 'viewtype' + space2 + str(viewtype)
 	printlog(title='update_view', printpoint=printpoint, text=text, level=0, option="")

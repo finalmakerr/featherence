@@ -170,14 +170,22 @@ def menu_list(custom, menu, addonID, name, url, mode, iconimage, desc, num, view
 	return menu
 
 def gettitle2(x):
-	title2 = ""
+	title2 = "" ; name = 'gettitle2' ; printpoint = "" ; y = "" ; z = "" ; r = ""
 	if '&custom' in x:
-		if 1 + 1 == 3: title2 = ""
-		elif 'plugin.video.sdarot.tv' in x: title2 = ' [sdarot]'
-		elif 'plugin.video.wallaNew.video' in x: title2 = ' [walla]'
-		elif 'plugin.video.cartoons8' in x: title2 = ' [cartoons8]'
-		else: title2 = ' [Custom]'
-		
+		y = find_string(x, 'plugin://', '/?')
+		if '.' in y:
+			z = y.split('.')
+			r = len(z)
+			r = z[r - 1]
+			r = r[:5]
+			title2 = space + '[' + str(r) + ']'
+	
+	text = "x" + space2 + str(x) + space2 + newline + \
+	"y" + space2 + str(y) + space2 + newline + \
+	"z" + space2 + str(z) + space2 + newline + \
+	"r" + space2 + str(r) + space2 + newline + \
+	"title2" + space2 + str(title2) + space2 + newline
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 	return title2
 	
@@ -247,7 +255,6 @@ def GetHTML(url, agent = 'Apple-iPhone/'):
     html = html.replace('title="Search', '')
     return html
 
-	
 def getUserAgent():
     agents = []
     agents.append('Mozilla/5.0 (Android; Mobile; rv:%d.0) Gecko/%d.0 Firefox/%d.0')

@@ -29,6 +29,8 @@ from variables import *
 from shared_modules import *
 
 def getResponse(url, size, referer, agent, cookie, silent):
+    resp = "" ; returned = "" ; printpoint = "" ; TypeError = ""
+    url = url.replace(" ","%20")
     try:
         req = urllib2.Request(url)
 
@@ -46,11 +48,20 @@ def getResponse(url, size, referer, agent, cookie, silent):
             req.add_header('Range',   'bytes=%d-' % size)
 
         resp = urllib2.urlopen(req, timeout=10)
-        return resp
-    except:
-        return None
+        returned = resp
+    except Exception, TypeError:
+        returned = None
+    
+    text = 'url' + space2 + str(url) + newline + \
+    'resp' + space2 + str(resp) + newline + \
+    'size' + space2 + str(size) + newline + \
+    'referer' + space2 + str(referer) + newline + \
+    'TypeError' + space2 + str(TypeError) + newline + \
+    'agent' + space2 + str(agent)
+    printlog(title="getResponse-commondownloader", printpoint=printpoint, text=text, level=1, option="")
 
-
+    return returned
+	
 def download(url, dest, title=None, referer=None, agent=None, cookie=None, silent=False):
     if not title:
         title  = 'Kodi Download'

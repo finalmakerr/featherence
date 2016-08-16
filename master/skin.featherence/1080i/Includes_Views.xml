@@ -690,7 +690,7 @@
 				 <height>312</height>
 				 <width>237</width>
 				 <texture colordiffuse="yellow">misc/dvdcases/dvdcases.png</texture>
-				 <visible>IsEmpty(Control.GetLabel(11156)) + Window.IsVisible(MyVideoNav.xml)</visible>
+				 <visible>IsEmpty(Control.GetLabel(11156)) + Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(DialogBusy.xml)</visible>
 				 <visible>!Skin.HasSetting(ShowDVDCases)</visible>
 				 <visible>!SubString(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)"</visible>
 				</control>

@@ -1527,6 +1527,7 @@ def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percent
 	downloadpath2 = os.path.join(downloadpath, filename)
 	
 	scriptfeatherenceservice_downloading = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
+	scriptfeatherenceservice_downloading = ""
 	alarm_downloading = xbmc.getCondVisibility('HasAlarm(scriptfeatherenceservice_downloading)')
 	printpoint = printpoint + "1"
 	#import resources.lib.commondownloader
