@@ -1,25 +1,30 @@
----------------------------
-Featherence Music v0.3 (16-Aug-16)
 ------------------------
-- Added Elvis Presley Full Discografia Songs - Amir Elgazar Playlist
-- Added Elvis Presley Mixes Song - Amir Elgazar Playlist
-- Added Hagasach hahever songs - Amir Elgazar Playlist
-- Added Leonard Cohen - Amir Elgazar Playlist
-- Added YEHORAM  GAON - Amir Elgazar Playlist
-- Added Aric Sinai - Amir Elgazar Playlist
-- Added Just Like A Woman - Amir Elgazar Playlist
------------------------------
 WIP (WORK IN PROGRESS)
 -----------------------
-- Oldies - Amir Elgazar Playlist
-- Love Songs Vol 2 - Amir Elgazar Playlist
-- more English and Hebrew specials
-- Disco music - Amir Elgazar Playlist
-- country music - Amir Elgazar Playlist
-- Pink Floyd - Amir Elgazar Playlist
-- world music - Amir Elgazar Playlist
-- Hagasach hahever Skits - Amir Elgazar Playlist
-- and more
+
+------------------------
+Featherence Music v0.3.0 (16-Aug-16)
+------------------------
+Added Amir Elgazar Playlist:
+- Elvis Presley Full Discografia Songs.
+- Added Elvis Presley Mixes Song.
+- Added Hagasach hahever songs.
+- Added Leonard Cohen.
+- Added YEHORAM  GAON.
+- Added Aric Sinai.
+- Added Just Like A Woman.
+
+Updated:
+- Oldies.
+- Love Songs Vol 2.
+- more English and Hebrew specials.
+- Disco music.
+- country music.
+- Pink Floyd.
+- world music.
+- Hagasach hahever Skits.
+- and more.
+
 ------------------------
 Featherence Music v0.2.11 (30-Jun-16)
 ------------------------

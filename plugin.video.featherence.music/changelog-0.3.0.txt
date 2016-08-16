@@ -1,11 +1,29 @@
 ------------------------
-WIP (WORK IN PROGRESS)--
-------------------------
+WIP (WORK IN PROGRESS)
+-----------------------
 
 ------------------------
-Featherence Music v0.2.12 (xx-Aug-16)
+Featherence Music v0.3.0 (16-Aug-16)
 ------------------------
-- Update TV Mode feature for long playlist.
+Added Amir Elgazar Playlist:
+- Elvis Presley Full Discografia Songs.
+- Added Elvis Presley Mixes Song.
+- Added Hagasach hahever songs.
+- Added Leonard Cohen.
+- Added YEHORAM  GAON.
+- Added Aric Sinai.
+- Added Just Like A Woman.
+
+Updated:
+- Oldies.
+- Love Songs Vol 2.
+- more English and Hebrew specials.
+- Disco music.
+- country music.
+- Pink Floyd.
+- world music.
+- Hagasach hahever Skits.
+- and more.
 
 ------------------------
 Featherence Music v0.2.11 (30-Jun-16)
