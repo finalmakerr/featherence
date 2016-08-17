@@ -74,6 +74,21 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.pavellevchenko.com/hard-rock-music-guitar.jpg'
 	addDir('billboard top 10 All The Time',templates2_path + 'billboard top 10 All The Time.txt',2,thumb,name + '','1',0,fanart)
 	
+	'''My Very First Playlist Ever'''
+	thumb = 'http://orig15.deviantart.net/03ff/f/2010/027/5/c/best_music_logo_by_graphics4fun.png'
+	fanart = 'http://allwallpapersnew.com/wp-content/gallery/i-love-music-wallpapers/__i_love_music___wallpaper_by_nnamefx-d48f0im.jpg'
+	addDir('My Very First Playlist Ever',templates2_path + 'My Very First Playlist Ever.txt',2,thumb,name + 'my Personal Collection','1',0,fanart)
+	
+	'''Elvis Presley Mixes Song''' 
+	thumb = 'http://the100.ru/images/lovers/id1473/elvis-aaron-presley-lovers-3626.jpg'
+	fanart = 'http://2.bp.blogspot.com/_UQwx9AN7V_Q/TFm3agCcnCI/AAAAAAAAAgg/Pi8rzmey-uA/s1600/elvis-presley.jpg'
+	addDir('Elvis Presley Mixes Song',templates2_path + 'Elvis Presley Mixes Song.txt',2,thumb,name + 'Elvis never left the building, turn on speakers and start to get excited','1',0,fanart) 
+	
+	'''Elvis Presley Full Discografia Songs''' 
+	thumb = 'http://the100.ru/images/lovers/id1473/elvis-aaron-presley-lovers-3626.jpg'
+	fanart = 'http://2.bp.blogspot.com/_UQwx9AN7V_Q/TFm3agCcnCI/AAAAAAAAAgg/Pi8rzmey-uA/s1600/elvis-presley.jpg'
+	addDir('Elvis Presley Full Discografia Songs',templates2_path + 'Elvis Presley Full Discografia Songs.txt',2,thumb,name + 'The first comprehensive collection in Kodi history','1',0,fanart) 
+	
 	'''Elton John Personal Collection'''
 	thumb = 'https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/GreatestHits19761986EltonJohn.jpg/220px-GreatestHits19761986EltonJohn.jpg'
 	fanart = 'http://www.kwiknews.my/sites/default/files/styles/kwik_inner_cover/public/elton.john_.jpg?itok=eUB3cG36'
@@ -88,6 +103,11 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	thumb = 'http://i234.photobucket.com/albums/ee136/suwarnaadi/hair/GeorgeMichaelshortsideshair.jpg'
 	fanart = 'http://www.golden80s.com/wp-content/uploads/2014/05/Wham-head.jpg'
 	addDir('George Michael & wham',templates2_path + 'George Michael & wham.txt',2,thumb,name + 'Personal Collection','1',0,fanart)
+	
+	'''bob dylan'''
+	thumb = 'https://s3.amazonaws.com/rapgenius/600full-the-best-of-bob-dylan-cover.jpg'
+	fanart = 'http://zetaestaticos.com/cordoba/img/noticias/0/950/950919_1.jpg'
+	addDir('Top Songs Of Bob Dylan',templates2_path + 'Top Songs Of Bob Dylan.txt',2,thumb,desc + '','1',0,fanart)
 	
 	'''Great French Collection'''
 	thumb = 'http://images.travelpod.com/tripwow/photos/ta-00b7-d4d4-11a6/arc-de-triomphe-paris-france+1152_12905284514-tpfil02aw-11867.jpg'
@@ -104,15 +124,30 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'https://aranui.com/wp-content/uploads/2014/11/borabora.jpg'
 	addDir('Greek Quiet music',templates2_path + 'Greek Quiet music.txt',2,thumb,name + 'העריכה והבקשה של חברינו לקבוצה Yehuda Belhasin','1',0,fanart) 
 	
+	'''Jast Like A Woman'''
+	thumb = 'http://www.libernia-magica.es/s/cc_images/cache_2458790013.jpg?t=1438345648'
+	fanart = 'http://cdn.paper4pc.com/images/beautiful-blonde-wallpaper-25.jpg'
+	addDir('Just Like A Woman',templates2_path + 'Just Like A Woman.txt',2,thumb,name + '','1',0,fanart)
+	
 	'''My Generation'''
 	thumb = 'http://cdn.scahw.com.au/cdn-1d0999afe8fe1c0/ImageVaultFiles/id_349131/cf_7/localworks_MyGeneration-628x387.JPG'
 	fanart = 'https://i.ytimg.com/vi/d88YGB4hZow/maxresdefault.jpg'
 	addDir('My Generation',templates2_path + 'My Generation.txt',2,thumb,name + '','1',0,fanart)
 	
+	'''Leonard Cohen'''
+	thumb = 'http://i.telegraph.co.uk/multimedia/archive/02120/leonardcohen_2120582b.jpg'
+	fanart = 'http://www.newyorker.com/wp-content/uploads/2015/02/Avishai-Cohen-Montreal-1189.jpg'
+	addDir('Leonard Cohen',templates2_path + 'Leonard Cohen.txt',2,thumb,desc + '','1',0,fanart)
+	
 	'''The Beatles'''
 	thumb = 'http://img2-ak.lst.fm/i/u/ar0/6a122bb0665d4d8ca0cc4c31e245ff55'
 	fanart = 'http://p1.pichost.me/i/70/1943195.jpg'
 	addDir('The Beatles',templates2_path + 'The Beatles.txt',2,thumb,name + '','1',0,fanart)
+	
+	'''אריק סיני'''
+	thumb = 'http://stereo-ve-mono.com/sleeves/42/4265501a.jpg'
+	fanart = 'https://i.ytimg.com/vi/eh6bNCq8vjE/maxresdefault.jpg'
+	addDir('אריק סיני אוסף',templates2_path + 'Aric Sinai.txt',2,thumb,name + '','1',0,fanart)
 	
 	'''bob dylan'''
 	thumb = 'https://s3.amazonaws.com/rapgenius/600full-the-best-of-bob-dylan-cover.jpg'
@@ -123,6 +158,11 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	thumb = 'http://fullhdpictures.com/wp-content/uploads/2015/04/Beauty-Love-Wallpapers.jpg'
 	fanart = 'http://www.hd-wallpapersdownload.com/upload/bulk-upload/hd-wallpaper-romantic-love.jpg'
 	addDir('love songs vol 1',templates2_path + 'love songs vol 1.txt',2,thumb,name + 'love songs vol 1 - Personal Collection','1',0,fanart)
+	
+	'''הגשש החיוור השירים'''
+	thumb = 'https://atmag-static-timeout.netdna-ssl.com/misc/prev_images/images/%D7%AA%D7%A8%D7%91%D7%95%D7%AA/gashash.jpg'
+	fanart = 'https://market.marmelada.co.il/photos/787481.jpg'
+	addDir('הגשש החיוור שירים',templates2_path + 'Hagasach hahever songs.txt',2,thumb,name + '','1',0,fanart)
 	
 	'''אוסף ישראלי'''
 	thumb = 'http://www.artishuk.co.il/UserFiles/Store/Products/Products/230x634453006475603750_M.png'
@@ -148,6 +188,11 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	thumb = 'http://www.go4it.org.il/f/attachment.php?attachmentid=1787&stc=1&thumb=1&d=1240841639'
 	fanart = 'https://i.ytimg.com/vi/79UUYR1gd2k/maxresdefault.jpg'
 	addDir('שירי יום הזיכרון לחללי מערכות ישראל ולנפגעי פעולות האיבה',templates2_path + 'IDF memorial day.txt',2,thumb,name + 'מוקדש לכל מי שהקריב את נפשו למען הגנת המדינה','1',0,fanart)
+	
+	'''יהורם גאון'''
+	thumb = 'http://www.srugim.co.il/wp-content/uploads/2016/06/50998baf638754820da8b0d28d313a4a.jpg'
+	fanart = 'https://market.marmelada.co.il/photos/787402.jpg'
+	addDir('יהורם גאון האוסף המחומש',templates2_path + 'YEHORAM  GAON.txt',2,thumb,name,'1',0,fanart)
 	
 	'''שירי הלהקות הצבאיות'''
 	thumb = 'http://blog.tapuz.co.il/charchanut/images/%7B8A174BD1-2035-45AF-B1D8-21ACA3646553%7D.jpg'

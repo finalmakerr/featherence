@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.3.0" provider-name="finalmakerr, amir elgazar">
+<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.3.1" provider-name="finalmakerr, amir elgazar">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.featherence.service" version="0.0.0"/>
