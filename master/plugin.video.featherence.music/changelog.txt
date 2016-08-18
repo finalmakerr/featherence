@@ -3,6 +3,11 @@ WIP (WORK IN PROGRESS)
 -----------------------
 
 ------------------------
+Featherence Music v0.3.3 (18-Aug-16)
+------------------------
+- Added Tomer Dror's playlist.
+
+------------------------
 Featherence Music v0.3.0-2 (16-Aug-16)
 ------------------------
 Added Amir Elgazar Playlist:

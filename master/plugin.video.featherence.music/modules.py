@@ -54,6 +54,13 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',0,getAddonFanart("Custom_Playlist10"))
 	
 	if Custom_10001 == "true": addDir(addonString(30050).encode('utf-8'),'',10001,featherenceserviceicons_path + 'star.png',addonString(30051).encode('utf-8'),'1',0,'') #AMIR ELGAZAR PLAYLISTS
+	if Custom_10002 == "true":
+		'''Tomer Dror's Playlists'''
+		thumb = os.path.join(addonPath,'icon.png')
+		fanart = os.path.join(featherenceservice_path,'fanart.jpg')
+		list = []
+		list.append('&youtube_pl=PL9aMpOzf_PLV_Jex7GIRlGNGC7Y6nPpm8')
+		addDir(addonString(30052).encode('utf-8'),list,17,thumb,'Thanks and credits to Tomer Dror.','1',0,fanart)
 
 def CATEGORIES10001(name, iconimage, desc, fanart):
 	if name == None: name = ""
@@ -209,7 +216,11 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	thumb = 'http://www.go4it.org.il/f/attachment.php?attachmentid=1787&stc=1&thumb=1&d=1240841639'
 	fanart = 'https://i.ytimg.com/vi/79UUYR1gd2k/maxresdefault.jpg'
 	addDir('שירי יום הזיכרון לחללי מערכות ישראל ולנפגעי פעולות האיבה',templates2_path + 'IDF memorial day.txt',2,thumb,name + 'מוקדש לכל מי שהקריב את נפשו למען הגנת המדינה','1',0,fanart)
-			
+
+def CATEGORIES10002(name, iconimage, desc, fanart):
+	if name == None: name = ""
+	else: name = name + newline
+	
 def CATEGORIES101(name, iconimage, desc, fanart):
 	'''Israeli Music'''
 	addDir(addonString(30001).encode('utf-8'),'',10101,featherenceserviceicons_path + "music.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30001).encode('utf-8')),'1',0, getAddonFanart(10101, default="")) #Israeli Music
