@@ -3,7 +3,7 @@ WIP (WORK IN PROGRESS)
 -----------------------
 
 ------------------------
-Featherence Music v0.3.0-1 (16-Aug-16)
+Featherence Music v0.3.0-2 (16-Aug-16)
 ------------------------
 Added Amir Elgazar Playlist:
 - Elvis Presley Full Discografia Songs.
