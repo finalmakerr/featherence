@@ -59,30 +59,11 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	if name == None: name = ""
 	else: name = name + newline
 	
-        '''Easy Listening, Love songs & Bellads'''
-	thumb = 'https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0PGGM81.png?v=1.0'
-	fanart = 'http://www.pavellevchenko.com/hard-rock-music-guitar.jpg'
-	addDir('Easy Listening, Love songs & Bellads',templates2_path + 'Easy Listening, Love songs & Bellads Personal Collection.txt',2,thumb,name + '','1',0,fanart)
 	
-	'''The Greatest Hits of All Times'''
-	thumb = 'https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0PGGM81.png?v=1.0'
-	fanart = 'http://www.pavellevchenko.com/hard-rock-music-guitar.jpg'
-	addDir('The Greatest Hits of All Times',templates2_path + 'The Greatest Hits of All Times.txt',2,thumb,name + 'Personal Collection','1',0,fanart)
-	
-	'''billboard top 10 All The Time'''
-	thumb = 'https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0PGGM81.png?v=1.0'
-	fanart = 'http://www.pavellevchenko.com/hard-rock-music-guitar.jpg'
-	addDir('billboard top 10 All The Time',templates2_path + 'billboard top 10 All The Time.txt',2,thumb,name + '','1',0,fanart)
-	
-	'''My Very First Playlist Ever'''
+	'''Easy Listening, Love songs & Bellads'''
 	thumb = 'http://orig15.deviantart.net/03ff/f/2010/027/5/c/best_music_logo_by_graphics4fun.png'
-	fanart = 'http://allwallpapersnew.com/wp-content/gallery/i-love-music-wallpapers/__i_love_music___wallpaper_by_nnamefx-d48f0im.jpg'
-	addDir('My Very First Playlist Ever',templates2_path + 'My Very First Playlist Ever.txt',2,thumb,name + 'my Personal Collection','1',0,fanart)
-	
-	'''Elvis Presley Mixes Song''' 
-	thumb = 'http://the100.ru/images/lovers/id1473/elvis-aaron-presley-lovers-3626.jpg'
-	fanart = 'http://2.bp.blogspot.com/_UQwx9AN7V_Q/TFm3agCcnCI/AAAAAAAAAgg/Pi8rzmey-uA/s1600/elvis-presley.jpg'
-	addDir('Elvis Presley Mixes Song',templates2_path + 'Elvis Presley Mixes Song.txt',2,thumb,name + 'Elvis never left the building, turn on speakers and start to get excited','1',0,fanart) 
+	fanart = 'http://ihdimages.com/wp-content/uploads/2014/11/dance_music_wallpaper_free_hd.jpg'
+	addDir('Easy Listening, Love songs & Bellads',templates2_path + 'Easy Listening, Love songs & Bellads Personal Collection.txt',2,thumb,name + '','1',0,fanart)
 	
 	'''Elvis Presley Full Discografia Songs''' 
 	thumb = 'http://the100.ru/images/lovers/id1473/elvis-aaron-presley-lovers-3626.jpg'
@@ -94,10 +75,20 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.kwiknews.my/sites/default/files/styles/kwik_inner_cover/public/elton.john_.jpg?itok=eUB3cG36'
 	addDir('Elton John Personal Collection',templates2_path + 'Elton John Personal Collection.txt',2,thumb,name + 'אלטון גון - אוסף אישי','1',0,fanart)
 	
-	'''Rain songs in a playlist'''
-	thumb = 'http://laughingsquid.com/wp-content/uploads/Rain.jpg'
-	fanart = 'http://www.artifacting.com/blog/wp-content/uploads/2012/10/Rain-Room.jpg'
-	addDir('Rain songs in a playlist',templates2_path + 'Rain songs in a playlist.txt',2,thumb,name + '','1',0,fanart) 
+	'''billboard top 10 All The Time'''
+	thumb = 'http://www.webgranth.com/wp-content/uploads/2013/07/Music-girl-WallPaper.jpg'
+	fanart = 'https://str.your-pictionary.com/2015/01/30/image-gallary-5-beautiful-cool-wallpaper-designs-for-girls-b-o-ibackgroundz.com.jpg'
+	addDir('billboard top 10 All The Time',templates2_path + 'billboard top 10 All The Time.txt',2,thumb,name + '','1',0,fanart)
+	
+	'''My Very First Playlist Ever'''
+	thumb = 'http://orig15.deviantart.net/03ff/f/2010/027/5/c/best_music_logo_by_graphics4fun.png'
+	fanart = 'http://allwallpapersnew.com/wp-content/gallery/i-love-music-wallpapers/__i_love_music___wallpaper_by_nnamefx-d48f0im.jpg'
+	addDir('My Very First Playlist Ever',templates2_path + 'My Very First Playlist Ever.txt',2,thumb,name + 'my Personal Collection','1',0,fanart)
+	
+	'''Elvis Presley Mixes Song''' 
+	thumb = 'http://the100.ru/images/lovers/id1473/elvis-aaron-presley-lovers-3626.jpg'
+	fanart = 'http://2.bp.blogspot.com/_UQwx9AN7V_Q/TFm3agCcnCI/AAAAAAAAAgg/Pi8rzmey-uA/s1600/elvis-presley.jpg'
+	addDir('Elvis Presley Mixes Song',templates2_path + 'Elvis Presley Mixes Song.txt',2,thumb,name + 'Elvis never left the building, turn on speakers and start to get excited','1',0,fanart) 
 	
 	'''George Michael & wham'''
 	thumb = 'http://i234.photobucket.com/albums/ee136/suwarnaadi/hair/GeorgeMichaelshortsideshair.jpg'
@@ -114,6 +105,16 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://www.wallpapersbyte.com/wp-content/uploads/2015/06/Downolad-HD-Wallpaper-France-Paris-City-Eiffel-Tower-Sunset-WallpapersByte-com-1920x1080.jpg'
 	addDir('Great French Collection',templates2_path + 'Great French Collection.txt',2,thumb,name + '','1',0,fanart)
 	
+	'''Rain songs in a playlist'''
+	thumb = 'http://laughingsquid.com/wp-content/uploads/Rain.jpg'
+	fanart = 'http://www.artifacting.com/blog/wp-content/uploads/2012/10/Rain-Room.jpg'
+	addDir('Rain songs in a playlist',templates2_path + 'Rain songs in a playlist.txt',2,thumb,name + '','1',0,fanart) 
+	
+	'''Jast Like A Woman'''
+	thumb = 'http://www.libernia-magica.es/s/cc_images/cache_2458790013.jpg?t=1438345648'
+	fanart = 'http://cdn.paper4pc.com/images/beautiful-blonde-wallpaper-25.jpg'
+	addDir('Just Like A Woman',templates2_path + 'Just Like A Woman.txt',2,thumb,name + '','1',0,fanart)
+	
 	'''Greek party music''' 
 	thumb = 'http://www.bestarabicmusic.net/wp-content/uploads/2012/07/arab-oud-300x220.jpg'
 	fanart = 'https://aranui.com/wp-content/uploads/2014/11/borabora.jpg'
@@ -124,10 +125,10 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'https://aranui.com/wp-content/uploads/2014/11/borabora.jpg'
 	addDir('Greek Quiet music',templates2_path + 'Greek Quiet music.txt',2,thumb,name + 'העריכה והבקשה של חברינו לקבוצה Yehuda Belhasin','1',0,fanart) 
 	
-	'''Jast Like A Woman'''
-	thumb = 'http://www.libernia-magica.es/s/cc_images/cache_2458790013.jpg?t=1438345648'
-	fanart = 'http://cdn.paper4pc.com/images/beautiful-blonde-wallpaper-25.jpg'
-	addDir('Just Like A Woman',templates2_path + 'Just Like A Woman.txt',2,thumb,name + '','1',0,fanart)
+	'''love songs vol 1'''
+	thumb = 'http://fullhdpictures.com/wp-content/uploads/2015/04/Beauty-Love-Wallpapers.jpg'
+	fanart = 'http://www.hd-wallpapersdownload.com/upload/bulk-upload/hd-wallpaper-romantic-love.jpg'
+	addDir('love songs vol 1',templates2_path + 'love songs vol 1.txt',2,thumb,name + 'love songs vol 1 - Personal Collection','1',0,fanart)
 	
 	'''My Generation'''
 	thumb = 'http://cdn.scahw.com.au/cdn-1d0999afe8fe1c0/ImageVaultFiles/id_349131/cf_7/localworks_MyGeneration-628x387.JPG'
@@ -143,57 +144,32 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	thumb = 'http://img2-ak.lst.fm/i/u/ar0/6a122bb0665d4d8ca0cc4c31e245ff55'
 	fanart = 'http://p1.pichost.me/i/70/1943195.jpg'
 	addDir('The Beatles',templates2_path + 'The Beatles.txt',2,thumb,name + '','1',0,fanart)
-	
+
 	'''אריק סיני'''
 	thumb = 'http://stereo-ve-mono.com/sleeves/42/4265501a.jpg'
 	fanart = 'https://i.ytimg.com/vi/eh6bNCq8vjE/maxresdefault.jpg'
 	addDir('אריק סיני אוסף',templates2_path + 'Aric Sinai.txt',2,thumb,name + '','1',0,fanart)
-	
-	'''bob dylan'''
-	thumb = 'https://s3.amazonaws.com/rapgenius/600full-the-best-of-bob-dylan-cover.jpg'
-	fanart = 'http://zetaestaticos.com/cordoba/img/noticias/0/950/950919_1.jpg'
-	addDir('Top Songs Of Bob Dylan',templates2_path + 'Top Songs Of Bob Dylan.txt',2,thumb,desc + '','1',0,fanart)
-	
-	'''love songs vol 1'''
-	thumb = 'http://fullhdpictures.com/wp-content/uploads/2015/04/Beauty-Love-Wallpapers.jpg'
-	fanart = 'http://www.hd-wallpapersdownload.com/upload/bulk-upload/hd-wallpaper-romantic-love.jpg'
-	addDir('love songs vol 1',templates2_path + 'love songs vol 1.txt',2,thumb,name + 'love songs vol 1 - Personal Collection','1',0,fanart)
+	 
+	'''אוסף ישראלי'''
+	thumb = 'http://www.artishuk.co.il/UserFiles/Store/Products/Products/230x634453006475603750_M.png'
+	fanart = 'http://www.pupic.co.il/UploadedImages/Original/%D7%9E%D7%95%D7%96%D7%99%D7%A7%D7%94%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%AA.jpg'
+	addDir('ישראלי אוסף אישי',templates2_path + 'Israeli Collection.txt',2,thumb,name,'1',0,fanart)
 	
 	'''הגשש החיוור השירים'''
 	thumb = 'https://atmag-static-timeout.netdna-ssl.com/misc/prev_images/images/%D7%AA%D7%A8%D7%91%D7%95%D7%AA/gashash.jpg'
 	fanart = 'https://market.marmelada.co.il/photos/787481.jpg'
 	addDir('הגשש החיוור שירים',templates2_path + 'Hagasach hahever songs.txt',2,thumb,name + '','1',0,fanart)
 	
-	'''אוסף ישראלי'''
-	thumb = 'http://www.artishuk.co.il/UserFiles/Store/Products/Products/230x634453006475603750_M.png'
-	fanart = 'http://www.pupic.co.il/UploadedImages/Original/%D7%9E%D7%95%D7%96%D7%99%D7%A7%D7%94%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%AA.jpg'
-	addDir('ישראלי אוסף אישי',templates2_path + 'Israeli Collection.txt',2,thumb,name,'1',0,fanart)
-	
 	'''ארבע אחר הצהריים'''
 	thumb = 'http://th-pro.co.il/SiteImages/SiteImage_c98e320c-2103-4fb8-9c91-b2e8e4aa416a.jpg'
 	fanart = 'http://www.women-zone.com/wp-content/uploads/2015/08/israel.jpg' 
 	addDir('ארבע אחר הצהריים',templates2_path + 'Four in the afternoon.txt',2,thumb,name + 'מוקדש ל Oren Hagay חברינו לקבוצה Kodisrael.net','1',0,fanart)
 	
-	'''שירי יום השואה'''
-	thumb = 'http://www.rimonschool.co.il/wp-content/uploads/2015/04/yezkor-11.jpg'
-	fanart = 'http://blog.tapuz.co.il/momins/images/%7BF6AB614D-CC3F-45C2-97A8-9FB8C494FF16%7D.jpg'
-	addDir('יום השואה שירים וסיפורים',templates2_path + 'Holocaust Day songs.txt',2,thumb,name + 'לזכר 6 מיליון יהודים','1',0,fanart)
-	
 	'''עוד מעט נהפוך לשיר הפרוייקט'''
 	thumb = 'http://img2.timg.co.il/forums/1_116211607.jpg'
 	fanart = 'http://www.ayaskitchen.com/forum/uploads/4187.jpg'
 	addDir('עוד מעט נהפוך לשיר',templates2_path + 'Od Meat Nhafch Leshir.txt',2,thumb,name + 'ליום הזיכרון','1',0,fanart)
-	
-	'''שירי יום הזיכרון לחללי מערכות ישראל ולנפגעי פעולות האיבה'''
-	thumb = 'http://www.go4it.org.il/f/attachment.php?attachmentid=1787&stc=1&thumb=1&d=1240841639'
-	fanart = 'https://i.ytimg.com/vi/79UUYR1gd2k/maxresdefault.jpg'
-	addDir('שירי יום הזיכרון לחללי מערכות ישראל ולנפגעי פעולות האיבה',templates2_path + 'IDF memorial day.txt',2,thumb,name + 'מוקדש לכל מי שהקריב את נפשו למען הגנת המדינה','1',0,fanart)
-	
-	'''יהורם גאון'''
-	thumb = 'http://www.srugim.co.il/wp-content/uploads/2016/06/50998baf638754820da8b0d28d313a4a.jpg'
-	fanart = 'https://market.marmelada.co.il/photos/787402.jpg'
-	addDir('יהורם גאון האוסף המחומש',templates2_path + 'YEHORAM  GAON.txt',2,thumb,name,'1',0,fanart)
-	
+
 	'''שירי הלהקות הצבאיות'''
 	thumb = 'http://blog.tapuz.co.il/charchanut/images/%7B8A174BD1-2035-45AF-B1D8-21ACA3646553%7D.jpg'
 	fanart = 'https://i.ytimg.com/vi/t0couQwmgbc/maxresdefault.jpg'
@@ -203,6 +179,21 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	thumb = 'http://www.nrg.co.il/images/archive/465x349/1/077/947.jpg'
 	fanart = 'http://www.megapixel.co.il/mega/wp-content/uploads/2012/02/Shlomo-Artzi_so.jpg'
 	addDir('שלמה ארצי אוסף אישי',templates2_path + 'Shlomo Artzi Personal Collection.txt',2,thumb,name + '','1',0,fanart)
+	 
+	'''אריק איינשטיין אוסף אישי'''
+	thumb = 'http://www.maariv.co.il/download/pictures/%D7%90%D7%A8%D7%99%D7%A7%20%D7%90%D7%99%D7%99%D7%A0%D7%A9%D7%98%D7%99%D7%9F%203%20-%20%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A9%D7%94%20%D7%A9%D7%99%20%D7%A4%D7%9C%D7%90%D7%A9%2090%20480_2.jpg'
+	fanart = 'http://www.haaretz.co.il/polopoly_fs/1.2490157.1416401072!/image/2643586370.jpg_gen/derivatives/size_936xAuto/2643586370.jpg'
+	addDir('אריק איינשטיין אוסף אישי',templates2_path + 'Arik Einstein.txt',2,thumb,name + '','1',0,fanart)
+
+	'''שירי יום השואה'''
+	thumb = 'http://www.rimonschool.co.il/wp-content/uploads/2015/04/yezkor-11.jpg'
+	fanart = 'http://blog.tapuz.co.il/momins/images/%7BF6AB614D-CC3F-45C2-97A8-9FB8C494FF16%7D.jpg'
+	addDir('יום השואה שירים וסיפורים',templates2_path + 'Holocaust Day songs.txt',2,thumb,name + 'לזכר 6 מיליון יהודים','1',0,fanart)
+	
+	'''יהורם גאון'''
+	thumb = 'http://www.srugim.co.il/wp-content/uploads/2016/06/50998baf638754820da8b0d28d313a4a.jpg'
+	fanart = 'https://market.marmelada.co.il/photos/787402.jpg'
+	addDir('יהורם גאון האוסף המחומש',templates2_path + 'YEHORAM  GAON.txt',2,thumb,name,'1',0,fanart)
 	
 	'''פלייליסט מזרחי שקט ורגוע''' 
 	thumb = 'http://www.vehiclehi.com/thumbnails/detail/20121101/headphones%20women%20music%20headphones%20girl%201920x1080%20wallpaper_www.vehiclehi.com_28.jpg'
@@ -214,11 +205,11 @@ def CATEGORIES10001(name, iconimage, desc, fanart):
 	fanart = 'http://3.bp.blogspot.com/-_90x10bD8Xs/VIn8kUH4rwI/AAAAAAAAABo/Yif1L9eLyuE/s1600/music.jpg'
 	addDir('פלייליסט מזרחי קיצבי דאנס',templates2_path + 'mizrahi party playlist.txt',2,thumb,name + 'על פי בקשה של חברי הקבוצה (KODISRAEL.NET)','1',0,fanart) 
 	
-	'''אריק איינשטיין אוסף אישי'''
-	thumb = 'http://www.maariv.co.il/download/pictures/%D7%90%D7%A8%D7%99%D7%A7%20%D7%90%D7%99%D7%99%D7%A0%D7%A9%D7%98%D7%99%D7%9F%203%20-%20%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A9%D7%94%20%D7%A9%D7%99%20%D7%A4%D7%9C%D7%90%D7%A9%2090%20480_2.jpg'
-	fanart = 'http://www.haaretz.co.il/polopoly_fs/1.2490157.1416401072!/image/2643586370.jpg_gen/derivatives/size_936xAuto/2643586370.jpg'
-	addDir('אריק איינשטיין אוסף אישי',templates2_path + 'Arik Einstein.txt',2,thumb,name + '','1',0,fanart)
-	
+	'''שירי יום הזיכרון לחללי מערכות ישראל ולנפגעי פעולות האיבה'''
+	thumb = 'http://www.go4it.org.il/f/attachment.php?attachmentid=1787&stc=1&thumb=1&d=1240841639'
+	fanart = 'https://i.ytimg.com/vi/79UUYR1gd2k/maxresdefault.jpg'
+	addDir('שירי יום הזיכרון לחללי מערכות ישראל ולנפגעי פעולות האיבה',templates2_path + 'IDF memorial day.txt',2,thumb,name + 'מוקדש לכל מי שהקריב את נפשו למען הגנת המדינה','1',0,fanart)
+			
 def CATEGORIES101(name, iconimage, desc, fanart):
 	'''Israeli Music'''
 	addDir(addonString(30001).encode('utf-8'),'',10101,featherenceserviceicons_path + "music.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30001).encode('utf-8')),'1',0, getAddonFanart(10101, default="")) #Israeli Music
@@ -373,6 +364,11 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list.append('&youtube_se='+commonsearch+'')
 	list.append('&youtube_pl=PLWkfrFkdyL1EL7x_uQAjucsf5fwcZTr43')
 	list.append('&youtube_pl=PLNilsFQExAqJsp71r_BAih7V-Ujfa3SCo')
+	list.append('&youtube_id=zfach4caheY')
+	list.append('&youtube_id=XEFxhDM8qoY')
+	list.append('&youtube_id=I8rzmXjDEgo')
+	list.append('&youtube_pl=PLjM5oL6_Ud1YzJQAmfCxBmcrofRvJYjr-')
+	list.append('&youtube_pl=PLqTfsBFeCu2dh53j3twu-zRcdf2Yub7c8')
 	addDir(addonString(30138).encode('utf-8'),list,17,'http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/KerenPelesNew.jpg/375px-KerenPelesNew.jpg',addonString(30238).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom=""))
 	
 	'''ריטה'''
