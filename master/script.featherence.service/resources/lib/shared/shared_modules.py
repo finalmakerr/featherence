@@ -1690,6 +1690,14 @@ def installaddonP(addon, update=True):
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
 	
+	elif 'repository.kodil' in addon: #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/kodil/kodil/raw/master/repository.kodil-1.0.1.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
 	elif 'repository.metalkettle' in addon: #GITHUB PATH
 		if not 'resource.' in addon and not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			version = getVersion(addon, 'https://raw.githubusercontent.com/Shani-08/MetalKettles-Addon-Repository-1/master/addons.xml')

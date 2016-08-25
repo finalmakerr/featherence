@@ -469,8 +469,9 @@ def CATEGORIES106F(General_LanguageL, background, background2): #אוליבר
 		list.append('&youtube_pl=')
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
-		list.append('&youtube_pl=PLHZqFx23JJe2dW5qAN3uee1DOJ7JbiS1t')
-		list.append('&youtube_pl=')
+		list.append('&youtube_pl=PLakLrQJOovvlJIBtjAS0GPu8NSZ9CNKUC')
+		list.append('&youtube_pl=PLakLrQJOovvmmFSUUJvxraSyDgO2WuBS8')
+		list.append('&youtube_pl=PLakLrQJOovvnCLGnhdJx9sifLgvQL4S_p')
 	'''אוזבקית'''
 	if 'Uzbek' in General_LanguageL:
 		list.append('&youtube_pl=')

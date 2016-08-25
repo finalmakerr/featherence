@@ -16,11 +16,13 @@ def CATEGORIES105B(General_LanguageL, background, background2): #סרטים לי
 	if 'Hebrew' in General_LanguageL:
 		check_movix_me = urlcheck('http://www.movix.me/series', ping=False)
 		if check_movix_me == 'ok':
+			addDir('-' + localize(137) + space + 'Movix','&activatewindow=plugin://plugin.video.movixws/?description&iconimage=https%3a%2f%2fencrypted-tbn1.gstatic.com%2fimages%3fq%3dtbn%3aANd9GcQlAUVuxDFwhHYzmwfhcUEBgQXkkWi5XnM4ZyKxGecol952w-Rp&mode=6&name=Search%20-%20%d7%97%d7%99%d7%a4%d7%95%d7%a9&url=%20',8,featherenceserviceicons_path + 'se.png','http://www.movix.me/','1',0,getAddonFanart(background, custom="", default=background2))
 			list.append('&custom8=plugin://plugin.video.movixws/?iconimage=http%3a%2f%2fwww.in-hebrew.co.il%2fimages%2flogo-s.jpg&mode=2&name=Kids%20-%20%d7%99%d7%9c%d7%93%d7%99%d7%9d&url=http%3a%2f%2fwww.movix.me%2fgenres%2fKids') ; 
 			list.append('&custom8=plugin://plugin.video.movixws/?iconimage=http%3a%2f%2ficons.iconarchive.com%2ficons%2fdesignbolts%2ffree-movie-folder%2f256%2fAnimated-icon.png&mode=2&name=Animation%20-%20%d7%90%d7%a0%d7%99%d7%9e%d7%a6%d7%99%d7%94&url=http%3a%2f%2fwww.movix.me%2fgenres%2fAnimation') ; 
 			
 		check_seretil_me = urlcheck('http://seretil.me', ping=False)
 		if check_seretil_me == 'ok':
+			addDir('-' + localize(137) + space + 'SeretIL','&activatewindow=plugin://plugin.video.seretil/?desc&iconimage=http%3a%2f%2f4.bp.blogspot.com%2f_ASd3nWdw8qI%2fTUkLNXmQwgI%2fAAAAAAAAAiE%2fXxYLicNBdqQ%2fs1600%2fSearch_Feb_02_Main.png&mode=18&name=%5bCOLOR%20blue%5d%d7%97%d7%99%d7%a4%d7%95%d7%a9%5b%2fCOLOR%5d&url=stam',8,featherenceserviceicons_path + 'se.png','http://seretil.me/','1',0,getAddonFanart(background, custom="", default=background2))
 			list.append('&custom8=plugin://plugin.video.seretil/?mode=4&name=%d7%9e%d7%93%d7%95%d7%91%d7%91%d7%99%d7%9d%20%d7%a8%d7%90%d7%a9%d7%99&url=http%3a%2f%2fseretil.me%2fcategory%2f%25D7%25A1%25D7%25A8%25D7%2598%25D7%2599%25D7%259D-%25D7%259E%25D7%2593%25D7%2595%25D7%2591%25D7%2591%25D7%2599%25D7%259D%2fpage1%2f')
 
 	addDir(addonString(5).encode('utf-8') % (addonString_servicefeatherence(32900).encode('utf-8')),list,6,"http://flaglane.com/download/israeli-flag/israeli-flag-medium.png",addonString(5).encode('utf-8') % (addonString_servicefeatherence(32900).encode('utf-8')),'1',0,getAddonFanart(background, custom="http://pre15.deviantart.net/2dd4/th/pre/f/2015/166/3/2/israel_aph_by_wolf_kid1000-d8xdbyp.jpg"))

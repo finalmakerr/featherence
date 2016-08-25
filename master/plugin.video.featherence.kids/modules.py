@@ -521,7 +521,8 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	background2 = "" #http://www.canadiananimationresources.ca/wp-content/uploads/2012/10/9-Story-Arthur-Couch.jpg"
 	
 	'''חיפוש'''
-	if 'Hebrew' in General_LanguageL: addDir(localize(137) + space + 'Sdarot TV','&activatewindow=plugin://plugin.video.sdarot.tv/?mode=6&name=%5bCOLOR%20red%5d%20%d7%97%d7%a4%d7%a9%20%20%5b%2fCOLOR%5d&summary&url=http%3a%2f%2fwww.sdarot.wf%2fsearch',8,featherenceserviceicons_path + 'se.png','חיפוש תוכן בהרחבת סדרות','1',0,getAddonFanart(background, custom="", default=background2))
+	if 'Hebrew' in General_LanguageL: addDir('-' + localize(137) + space + 'Sdarot TV','&activatewindow=plugin://plugin.video.sdarot.tv/?mode=6&name=%5bCOLOR%20red%5d%20%d7%97%d7%a4%d7%a9%20%20%5b%2fCOLOR%5d&summary&url=http%3a%2f%2fwww.sdarot.wf%2fsearch',8,featherenceserviceicons_path + 'se.png','http://www.sdarot.wf/','1',0,getAddonFanart(background, custom="", default=background2))
+	if 'English' in General_LanguageL: addDir('-' + localize(137) + space + 'cartoons8','&activatewindow=plugin://plugin.video.cartoons8/?description&iconimage=&mode=8&name=Anime%20-%20Search&url=http%3a%2f%2fchiaanime.co%2fSearch%3fs%3d',8,featherenceserviceicons_path + 'se.png','http://cartoons8.me/','1',0,getAddonFanart(background, custom="", default=background2))
 	
 	CATEGORIES_RANDOM(background,fanart) #אקראי
 	CATEGORIES104Z(General_LanguageL, background, background2) #ערוצי טלוויזיה
@@ -1816,6 +1817,12 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 	CATEGORIES105B(General_LanguageL, background, background2) #סרטים לילדים ב-
 	CATEGORIES105C(General_LanguageL, background, background2) #סרטים עם תרגום ב-
 	
+	addDir(localize(33078),'',115,featherenceserviceicons_path + 'movies.png',addonString(1050).encode('utf-8'),'1',0, getAddonFanart(105, default="http://4.bp.blogspot.com/-Af2HcIQzlg8/UhwQ8lKPucI/AAAAAAAACIA/d7aY4RrxUfk/s1600/bambi-friends-disney-animated-movie-photo.jpg", urlcheck_=True)) #MOVIES
+
+def CATEGORIES115(name, iconimage, desc, fanart):
+	background = 105
+	background2 = ""
+	
 	'''אוגי והמקקים (2014)*'''
 	list = []
 	list.append('&dailymotion_id=x2rirvo')
@@ -1927,8 +1934,6 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_id=jeN7D0jHjKQ') #Hebrew
 	addDir('גשם של פלאפל',list,17,'','','1',"",getAddonFanart(background, custom="", default=background2))
-	
-	CATEGORIES102B(General_LanguageL, background, background2) #דראגון בול [Collection]
 	
 	'''הדרדסים'''
 	list = []
@@ -2159,8 +2164,6 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 	if 'English' in General_LanguageL:
 		list.append('&youtube_id=T7DFGAukEU0') #English
 	addDir(addonString(10480).encode('utf-8') + space + '(1992)',list,6,'https://upload.wikimedia.org/wikipedia/he/thumb/b/ba/Pinocchio-1940-poster.jpg/250px-Pinocchio-1940-poster.jpg',addonString(104800).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
-	
-	CATEGORIES107M(General_LanguageL, background, background2) #קוסמות קטנות
 	
 	'''קסם של הורים'''
 	list = []

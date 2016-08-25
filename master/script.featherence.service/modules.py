@@ -7,7 +7,7 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
-	
+	xbmc.executebuiltin('AlarmClock(1173,ActivateWindow(1173),0,silent)')
 	#xbmc.executebuiltin('ActivateWindow(MusicFiles,root)')
 	#xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
 	#xbmc.executebuiltin('Skin.SetImage(TEMP,special://userdata/)')

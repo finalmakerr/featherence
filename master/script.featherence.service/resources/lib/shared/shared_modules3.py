@@ -1989,6 +1989,7 @@ def pluginend(admin):
 				if addonID == 'plugin.video.featherence.kids':
 					if 'Hebrew' in General_LanguageL:
 						installaddonP('repository.xbmc-israel', update=True)
+						installaddonP('repository.kodil', update=True)
 				
 					if 'English' in General_LanguageL:
 						installaddonP('repository.metalkettle', update=True)
@@ -2064,7 +2065,7 @@ def pluginend(admin):
 		playURL(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 50:
 		'''Add View'''
-		addView(xbmc.getInfoLabel('Container.Content'))
+		addView(viewtype)
 	elif mode == 90:
 		if General_Language != url and url != "":
 			setsetting('General_Language',url)
@@ -2531,8 +2532,8 @@ def pluginend2(admin, url, containerfolderpath, viewtype):
 	printlog(title='pluginend2', printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	
-def addView(content):
-    name = 'addView' ; printpoint = "" ; TypeError = "" ; extra = ""
+def addView(viewtype):
+    name = 'addView' ; printpoint = "" ; TypeError = "" ; extra = "" ; content = ""
     import xbmcvfs
     try:
 		from sqlite3 import dbapi2 as database
@@ -2558,7 +2559,7 @@ def addView(content):
         for view in views:
             label = xbmc.getInfoLabel('Control.GetLabel(%s)' % (view))
             if not (label == '' or label == None): break
-        record = (skin, content, str(view))
+        record = (skin, viewtype, str(view))
         xbmcvfs.mkdir(addonProfile)
         dbcon = database.connect(os.path.join(addonProfile, 'views.db'))
         dbcur = dbcon.cursor()
@@ -2568,44 +2569,46 @@ def addView(content):
         dbcon.commit()
         viewName = xbmc.getInfoLabel('Container.Viewmode')
 
-        notification(addonString_servicefeatherence(32398).encode('utf-8'), viewName, '', 2000)
+        notification(addonString_servicefeatherence(32398).encode('utf-8'), viewName + str(view) , '', 2000)
     except Exception, TypeError:
         extra = 'TypeError' + space2 + str(TypeError)
         #return
 	
 	text = "content" + space2 + str(content) + space + newline + \
+	'view' + space2 + str(view) + newline + \
 	extra
-	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=7, option="")
 
-def setView(content, viewDict=None)	:
-	name = 'setView' ; printpoint = "" ; TypeError = "" ; extra = ""
+def setView(viewtype, viewDict=None)	:
+	name = 'setView' ; printpoint = "" ; TypeError = "" ; extra = "" ; content = ""
 	try:
 		from sqlite3 import dbapi2 as database
 	except:
 		from pysqlite2 import dbapi2 as database
 	
-	for i in range(0,200):
-		if xbmc.getCondVisibility('Container.Content(%s)' % content) or content == 'mainmenu':
-			printpoint = printpoint + '3'
-			try:
-				skin = xbmc.getSkinDir()
-				record = (skin, content)
-				dcon = database.connect(os.path.join(addonProfile, 'views.db'))
-				dcur = dbcon.cursor()
-				dbcur.execute("SELECT * FROM views WHERE skin = '%s' AND view_type = '%s'" % (record[0], record[1]))
-				view = dbcur.fetchone()
-				view = view[2]
-				if view == None: raise Exception()
-				return xbmc.executebuiltin('Container.SetViewMode(%s)' % str(view))
-			except Exception, TypeError:
-				printpoint = printpoint + '9'
-				extra = 'TypeError' + space2 + str(TypeError)
-		else:
-			printpoint = printpoint + '4'
-		
-		xbmc.sleep(100)
+	#for i in range(0,200):
+	if viewtype != "":
+		printpoint = printpoint + '3'
+		try:
+			skin = xbmc.getSkinDir()
+			record = (skin, viewtype)
+			dcon = database.connect(os.path.join(addonProfile, 'views.db'))
+			dcur = dbcon.cursor()
+			dbcur.execute("SELECT * FROM views WHERE skin = '%s' AND view_type = '%s'" % (record[0], record[1]))
+			view = dbcur.fetchone()
+			view = view[2]
+			if view == None: raise Exception()
+			return xbmc.executebuiltin('Container.SetViewMode(%s)' % str(view))
+		except Exception, TypeError:
+			printpoint = printpoint + '9'
+			extra = 'TypeError' + space2 + str(TypeError)
+	else:
+		printpoint = printpoint + '4'
+	
+	xbmc.sleep(100)
 	
 	text = "content" + space2 + str(content) + space + newline + \
+	'viewtype' + space2 + str(viewtype) + newline + \
 	extra
 	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
 	

@@ -643,7 +643,7 @@ def CATEGORIES105A(General_LanguageL, background, background2): #עמוד הבא
 	'''תאילנדית'''
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
-
+	
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom = "", default=background2))
 	
 def CATEGORIES106A(General_LanguageL, background, background2): #עמוד הבא פעוטות
