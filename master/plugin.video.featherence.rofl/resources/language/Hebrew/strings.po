@@ -563,6 +563,10 @@ msgctxt "#30409"
 msgid "Cihan Kosif TV"
 msgstr "Cihan Kosif TV"
 
+msgctxt "#30410"
+msgid "Russian car crash"
+msgstr "Russian car crash"
+
 msgctxt "#30600"
 msgid "קומי קומי"
 msgstr "קומי קומי"
@@ -574,6 +578,50 @@ msgstr "הכל הולך"
 msgctxt "#30651"
 msgid "Tzchok Meavoda"
 msgstr "צחוק מעבודה"
+
+msgctxt "#30652"
+msgid "הסטנדאפיסטים"
+msgstr "הסטנדאפיסטים"
+
+msgctxt "#30653"
+msgid "צומת מילר"
+msgstr "צומת מילר"
+
+msgctxt "#30654"
+msgid "סברי מרנן"
+msgstr "סברי מרנן"
+
+msgctxt "#30655"
+msgid "נוקאאוט"
+msgstr "נוקאאוט"
+
+msgctxt "#30656"
+msgid "נראה אותך"
+msgstr "נראה אותך"
+
+msgctxt "#30657"
+msgid "הפרלמנט"
+msgstr "הפרלמנט"
+
+msgctxt "#30658"
+msgid "תכנית קיציס"
+msgstr "תכנית קיציס"
+
+msgctxt "#30659"
+msgid "Ramzor"
+msgstr "רמזור"
+
+msgctxt "#30660"
+msgid "עם סגולה"
+msgstr "עם סגולה"
+
+msgctxt "#30661"
+msgid "ביפ קומדי בר"
+msgstr "ביפ קומדי בר"
+
+msgctxt "#30662"
+msgid "החברים של נאור"
+msgstr "החברים של נאור"
 
 msgctxt "#30800"
 msgid "Brian Regan"

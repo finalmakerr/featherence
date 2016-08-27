@@ -721,6 +721,8 @@ def mode32(value, admin, name, printpoint):
 		text = "" ; extra = ""
 		listitemfolderpath = xbmc.getInfoLabel('ListItem.FolderPath')
 		containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
+		listitemlabel = xbmc.getInfoLabel('ListItem.Label')
+		listitemplot = xbmc.getInfoLabel('ListItem.Plot')
 		listitemthumb = xbmc.getInfoLabel('ListItem.Thumb')
 		listitemisfolder = xbmc.getCondVisibility('ListItem.IsFolder')
 		
@@ -744,9 +746,15 @@ def mode32(value, admin, name, printpoint):
 				else: text = "list.append('&custom4=" + text + "')"
 			elif '2' in printpoint: text = "list.append('&custom8=" + text + "')"
 		
+		if listitemlabel != "" and listitemlabel != "..":
+			text = text + newline + str(listitemlabel)
+			
 		if listitemthumb != "":
 			text = text + newline + str(listitemthumb)
 		
+		if listitemplot != "":
+			text = text + newline + str(listitemplot)
+			
 		if 'plugin.video.cartoons8' in text:
 			if 'description=' in text:
 				#y = find_string(text, 'description=', '&')

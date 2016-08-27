@@ -19,8 +19,8 @@ def CATEGORIES():
 	CATEGORIES_SEARCH(mode=30, url="")
 	addDir('-' + addonString(30000).encode('utf-8'),'',100,featherenceserviceicons_path + 'star.png',addonString_servicefeatherence(32800).encode('utf-8'),'1',0,getAddonFanart(100, urlcheck_=True)) #My ROFL
 	
-	addDir(addonString(30001).encode('utf-8'),'',101,featherenceserviceicons_path + 'fail.png','','1',0,getAddonFanart(101, default="https://i.ytimg.com/vi/y4ZmuJL1IMk/maxresdefault.jpg", urlcheck_=True)) #פספוסים
-	addDir(addonString(30002).encode('utf-8'),'',102,featherenceserviceicons_path + 'tvshows.png','','1',0,getAddonFanart(102, default="http://www.motovideo.eu/wp-content/uploads/2015/12/Motor-Fails-Comedy-Fail.jpg", urlcheck_=True)) #תוכניות ישראליות
+	addDir(addonString(30001).encode('utf-8'),'',101,featherenceserviceicons_path + 'fail.png','','1',0,getAddonFanart(101, default="http://funnyvtube.com/wp-content/uploads/2016/07/top-fails-march-2015-%E2%96%BA-best-funny-videos-%E2%96%BA-epic-fail-compilation-2015-%E2%84%961.jpg", urlcheck_=True)) #פספוסים
+	addDir(addonString(30002).encode('utf-8'),'',102,featherenceserviceicons_path + 'tvshows.png','','1',0,getAddonFanart(102, default="http://saloona.co.il/netta/wp-content/blogs.dir/300/files/2011/06/ramzor.jpg", urlcheck_=True)) #תוכניות ישראליות
 	addDir(addonString(30003).encode('utf-8'),'',103,featherenceserviceicons_path + 'bank.png','','1',2, getAddonFanart(103, default="https://miserylovescompanyuk.files.wordpress.com/2015/08/o-stage-microphone-facebook.jpg", urlcheck_=True)) #סטנדאפ ישראלי
 	addDir(addonString(30004).encode('utf-8'),'',104,featherenceserviceicons_path + 'bank.png','','1',2, getAddonFanart(104, default="https://miserylovescompanyuk.files.wordpress.com/2015/08/o-stage-microphone-facebook.jpg", urlcheck_=True)) #סטנדאפ לועזי
 	#addDir(addonString(200).encode('utf-8') % (General_Language),'',200,featherenceserviceicons_path + 'ud.png','[COLOR=red]1: %s | 2: %s | 3: %s[/COLOR]' % (General_Language, General_Language2, General_Language3) + '[CR]' + addonString_servicefeatherence(32081).encode('utf-8'),'1',0,getAddonFanart(200, urlcheck_=True)) #Forigen Language
@@ -66,79 +66,56 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	
 	'''Cihan Kosif TV'''
 	list = []
-	
-	list.append('&youtube_ch=failarmy')
+	list.append('&youtube_ch=UCPgHR8p6lS1D5p-loVhk4xw')
 	addDir(addonString(30409).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCPgHR8p6lS1D5p-loVhk4xw',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
-	'''Damn Fail
-	fanart = '' 
-	thumb = 'https://yt3.ggpht.com/-C4E_wtFI3-M/AAAAAAAAAAI/AAAAAAAAAAA/oyInSSW0sG8/s100-c-k-no/photo.jpg' '''
+	'''Damn Fail'''
 	list = []
-	
 	list.append('&youtube_ch=UCRvQ6H9unDQSOD0-qZ0EZog')
 	addDir(addonString(30408).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCRvQ6H9unDQSOD0-qZ0EZog',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
-	'''DmPranksProductions
-	fanart = '' 
-	thumb = 'https://yt3.ggpht.com/-6i6ixKuTIaA/AAAAAAAAAAI/AAAAAAAAAAA/x8qvkWK7t3M/s100-c-k-no/photo.jpg' '''
+	'''DmPranksProductions'''
 	list = []
-	
 	list.append('&youtube_ch=DmPranksProductions')
 	addDir(addonString(30401).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=DmPranksProductions',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
-	'''failarmy''''''
-	fanart = '' #גדול
-	thumb = 'https://yt3.ggpht.com/-_8lHSPO3nNI/AAAAAAAAAAI/AAAAAAAAAAA/-THVRONaQco/s176-c-k-no/photo.jpg' #בינוני'''
+	'''failarmy'''
 	list = []
-	
 	list.append('&youtube_ch=failarmy')
 	addDir(addonString(30400).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=failarmy',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
-	'''FaiICity
-	fanart = '' 
-	thumb = 'https://yt3.ggpht.com/-6179ETDJ21Q/AAAAAAAAAAI/AAAAAAAAAAA/u_bMJaCE4ng/s100-c-k-no/photo.jpg' '''
+	'''FaiICity'''
 	list = []
-	
 	list.append('&youtube_ch=FaiICity')
 	addDir(addonString(30405).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=FaiICity',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
-	'''MegaFail
-	fanart = '' 
-	thumb = 'https://yt3.ggpht.com/-0FZLL3YvDlA/AAAAAAAAAAI/AAAAAAAAAAA/ak1DMcFhIEk/s100-c-k-no/photo.jpg' '''
+	'''MegaFail'''
 	list = []
-	
 	list.append('&youtube_ch=UCo4XcrQ5zB3DUwqa7lvNUeQ')
 	addDir(addonString(30404).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCo4XcrQ5zB3DUwqa7lvNUeQ',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
-	'''MonthlyFails
-	fanart = '' 
-	thumb = 'https://yt3.ggpht.com/-CdJ60WGaoik/AAAAAAAAAAI/AAAAAAAAAAA/M7kVylzFWMM/s100-c-k-no/photo.jpg' '''
+	'''MonthlyFails'''
 	list = []
-	
 	list.append('&youtube_ch=UCEkZHiGsR4jvWeHunEB3Qaw')
 	addDir(addonString(30403).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCEkZHiGsR4jvWeHunEB3Qaw',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
-	'''The Best Fails
-	fanart = '' 
-	thumb = 'https://yt3.ggpht.com/-nCuxds8LyFU/AAAAAAAAAAI/AAAAAAAAAAA/3G4OdDze5Vo/s900-c-k-no/photo.jpg' '''
+	'''AvtoCrashCar'''
 	list = []
+	list.append('&youtube_ch=AvtoCrashCar')
+	addDir(addonString(30410).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=AvtoCrashCar',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
+	'''The Best Fails'''
+	list = []
 	list.append('&youtube_ch=UCuunebfqIi8uCzAs_fO1D6Q')
 	addDir(addonString(30406).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCuunebfqIi8uCzAs_fO1D6Q',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
-	'''Top10Compilations
-	fanart = '' 
-	thumb = 'https://yt3.ggpht.com/-q8lrzv9b78g/AAAAAAAAAAI/AAAAAAAAAAA/V0MQgR-0V1g/s900-c-k-no/photo.jpg' '''
+	'''Top10Compilations'''
 	list = []
-	
 	list.append('&youtube_ch=UCZAtBTlxs-JzAagqGlWDpag')
 	addDir(addonString(30407).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCZAtBTlxs-JzAagqGlWDpag',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
-	'''We Love Russia
-	fanart = '' 
-	thumb = 'https://yt3.ggpht.com/-VmJxWCgjfI8/AAAAAAAAAAI/AAAAAAAAAAA/Z3liqrc2QBM/s100-c-k-no/photo.jpg' '''
+	'''We Love Russia'''
 	list = []
-	
 	list.append('&youtube_ch=UCZQxEoRjVRXysRZ0vFPrlfw')
 	addDir(addonString(30402).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCZQxEoRjVRXysRZ0vFPrlfw',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
@@ -150,11 +127,85 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	
 	'''אחד העם'''
 	
+	'''ביפ קומדי בר'''
+	desc_ = 'הכשרונות החדשים והמפתיעים של עולם הסטנד אפ הישראלי עולים על במת מועדון ה"ביפ קומדי בר" ונותנים את החומרים הכי טובים שיש להם להציע. ההופעות מבוצעות בפני קהל חי.'
+	thumb = 'http://img.mako.co.il/2011/08/29/bip-comedy_b.jpg'
+	list = []
+	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fimg.mako.co.il%2f2011%2f08%2f29%2fbip-comedy_b.jpg&mode=1&name=%d7%91%d7%99%d7%a4%20%d7%a7%d7%95%d7%9e%d7%93%d7%99%20%d7%91%d7%a8&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-bip%2fcomedy-bar')
+	list.append('&youtube_ch=TLVComedyBar')
+	
+	addDir(addonString(30661).encode('utf-8'),list,17,thumb,desc_,'1',0,getAddonFanart(background, default=thumb, custom=""))
+	
+	'''החברים של נאור'''
+	desc_ = ''
+	thumb = 'http://www.sdarot.wf/media/series/8.jpg'
+	list = []
+	list.append('&youtube_pl=PL7v5SH1yPnx62P3_Khpr3lArK9dkmmpP7')
+	list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f8.jpg&mode=3&name=%d7%94%d7%97%d7%91%d7%a8%d7%99%d7%9d%20%d7%a9%d7%9c%20%d7%a0%d7%90%d7%95%d7%a8&series_id=8&series_name=%d7%94%d7%97%d7%91%d7%a8%d7%99%d7%9d%20%d7%a9%d7%9c%20%d7%a0%d7%90%d7%95%d7%a8&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f8%2fhachaverim-shel-naor-%d7%94%d7%97%d7%91%d7%a8%d7%99%d7%9d-%d7%a9%d7%9c-%d7%a0%d7%90%d7%95%d7%a8')
+	
+	addDir(addonString(30662).encode('utf-8'),list,17,thumb,desc_,'1',0,getAddonFanart(background, default=thumb, custom=""))
+	
 	'''הכל הולך'''
 	list = []
-	
 	list.append('&youtube_pl=PLIuYAcnKhlM7yuZiCXJzSXNJvyVv8eXb0')
+	
 	addDir(addonString(30650).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=AnythingGoesIsrael',0,getAddonFanart(background, default='getAPIdata', custom=""))
+	
+	'''הפרלמנט'''
+	desc_ = '"הפרלמנט" התחיל כמערכון בעונה השמינית של "ארץ נהדרת" , והפך לסדרה קומית בכיכובם של חמשת חבריו. הפרלמנט ימשיך להיפגש בבית הקפה השכונתי לדיונים על עניינים שברומו של עולם וגם שפחות ברומו, ובמהלך הסדרה נחשף גם לחיים הפרטיים וההזויים של שאולי, אמציה, הקטור, אבי וקרקו'
+	thumb = 'http://img.mako.co.il/2013/10/03/parlament_1.jpg'
+	list = []
+	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fimg.mako.co.il%2f2013%2f10%2f03%2fparlament_1.jpg&mode=1&name=%d7%94%d7%a4%d7%a8%d7%9c%d7%9e%d7%a0%d7%98&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-keshet%2fparliament')
+	
+	addDir(addonString(30657).encode('utf-8'),list,17,thumb,desc_,'1',0,getAddonFanart(background, default=thumb, custom=""))
+	
+	'''הסטנדאפיסטים'''
+	desc_ = 'רשף לוי מלווה את הסטנדאפיסטים המובילים בישראל להופעה. בדרך הם מספרים על מאחורי הקלעים של הקריירה וכותבים בדיחות חדשות'
+	thumb = 'http://img.mako.co.il/2016/08/25/stand-b.jpg'
+	list = []
+	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fimg.mako.co.il%2f2016%2f08%2f25%2fstand-b.jpg&mode=1&name=%d7%94%d7%a1%d7%98%d7%a0%d7%93%d7%90%d7%a4%d7%99%d7%a1%d7%98%d7%99%d7%9d&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-keshet%2fthe-comedians')
+	
+	addDir(addonString(30652).encode('utf-8'),list,17,thumb,desc_,'1',0,getAddonFanart(background, default=thumb, custom=""))
+	
+	'''נוקאאוט'''
+	desc_ = 'קרב המתיחות הראשון בטלוויזיה, בהנחיית עפר שכטר. שני מפורסמים נפגשים לתחרות ראשונה מסוגה – מי מותח הכי טוב'
+	thumb = 'http://img.mako.co.il/2015/08/09/knockout.jpg'
+	list = []
+	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fimg.mako.co.il%2f2015%2f08%2f09%2fknockout.jpg&mode=1&name=%d7%a0%d7%95%d7%a7%d7%90%d7%90%d7%95%d7%98&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-keshet%2fknockout')
+	
+	addDir(addonString(30655).encode('utf-8'),list,17,thumb,desc_,'1',0,getAddonFanart(background, default=thumb, custom=""))
+	
+	'''נראה אותך'''
+	desc_ = 'אבי נוסבאום ושי גולדשטיין בשעשועון מצלמה נסתרת שמשתתפיו נקלעים אליו לגמרי במקרה. עם הגעת המשתתף למקום הוא מופנה לחדר צדדי שם מציעים לו המנחים להשתתף במשחק, ללא ידיעת בת או בן זוגו. במהלך המשימה עליו להישמע להוראותיהם ולמלא אחריהם בקפידה. במידה שיעמוד במשימות שיוטלו עליו, יוכל המתמודד להרוויח אלפי שקלים.'
+	thumb = 'http://img.mako.co.il/2013/03/10/nire_otcha.jpg'
+	list = []
+	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fimg.mako.co.il%2f2013%2f03%2f10%2fnire_otcha.jpg&mode=1&name=%d7%a0%d7%a8%d7%90%d7%94%20%d7%90%d7%95%d7%aa%d7%9a&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-keshet%2fdare-you')
+	
+	addDir(addonString(30656).encode('utf-8'),list,17,thumb,desc_,'1',0,getAddonFanart(background, default=thumb, custom=""))
+	
+	'''סברי מרנן'''
+	desc_ = 'סיפורה של המשפחה הישראלית המוכרת: יש את "הצד שלו" ויש את "הצד שלה", והמושג "אמא פולניה" ו-"הכבוד המרוקאי" הם מושגים שכבר מזמן לא קשורים לעדה זו או אחרת, אלו סימפטומים... כאשר החוט המקשר בין כולנו הוא הקידוש וארוחות סוף השבוע.  כפי שנאמר בקזבלן פרק י"ג פסוק ז- "כולנו יהודים"'
+	thumb = 'http://img.mako.co.il/2014/07/30/savri_maranan.jpg'
+	list = []
+	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fimg.mako.co.il%2f2014%2f07%2f30%2fsavri_maranan.jpg&mode=1&name=%d7%a1%d7%91%d7%a8%d7%99%20%d7%9e%d7%a8%d7%a0%d7%9f&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-keshet%2fsabri-maranan')
+	
+	addDir(addonString(30654).encode('utf-8'),list,17,thumb,desc_,'1',0,getAddonFanart(background, default=thumb, custom=""))
+	
+	'''עם סגולה'''
+	desc_ = 'תכנית מערכונים בכיכובם של שלישיית "מה קשור": אסי ישראלוף, ציון ברוך ושלום מיכאשווילי, אשר מביאה למסך דמויות חדשות של ישראלים הפזורים בנקודות שונות על פני הגלובוס, דמויות שיוכיחו שאפשר להוציא את הבנאדם מישראל אבל אי אפשר להוציא את ישראל מהבנאדם'
+	thumb = 'http://img.mako.co.il/2011/09/01/am_sg2ula_b.jpg'
+	list = []
+	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fimg.mako.co.il%2f2011%2f09%2f01%2fam_sg2ula_b.jpg&mode=1&name=%d7%a2%d7%9d%20%d7%a1%d7%92%d7%95%d7%9c%d7%94&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-keshet%2fchosen-poeple')
+	
+	addDir(addonString(30660).encode('utf-8'),list,17,thumb,desc_,'1',0,getAddonFanart(background, default=thumb, custom=""))
+	
+	'''צומת מילר'''
+	desc_ = 'סדרת דרמה קומית חדשה על חייו של הסטאנדפיסט והקומיקאי אדיר מילר. לצידו של אדיר מילר משחקים גם מירי אלוני, גל זייד, אדווה בולה. בתפקידי אורח: שלמה ארצי, גורי אלפי, ליאור כלפון ואחרים'
+	thumb = 'http://img.mako.co.il/2016/06/23/miller-b.jpg'
+	list = []
+	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fimg.mako.co.il%2f2016%2f06%2f23%2fmiller-b.jpg&mode=1&name=%d7%a6%d7%95%d7%9e%d7%aa%20%d7%9e%d7%99%d7%9c%d7%a8&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-keshet%2fmilers-crossroads')
+	
+	addDir(addonString(30653).encode('utf-8'),list,17,thumb,desc_,'1',0,getAddonFanart(background, default=thumb, custom=""))
 	
 	'''צחוק מעבודה'''
 	list = []
@@ -169,8 +220,24 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.pm%2fmedia%2fseries%2f1837.jpg&mode=3&name=comy-comy-%d7%a7%d7%95%d7%9e%d7%99-%d7%a7%d7%95%d7%9e%d7%99&series_id=1837&series_name=comy-comy-%d7%a7%d7%95%d7%9e%d7%99-%d7%a7%d7%95%d7%9e%d7%99&summary&url=http%3a%2f%2fwww.sdarot.pm%2fwatch%2f1837%2fcomy-comy-%d7%a7%d7%95%d7%9e%d7%99-%d7%a7%d7%95%d7%9e%d7%99')
 	list.append('&youtube_pl=PLzXQC1m6QYoWsA7rgCJkAL4bqPRSiDhiY')
 	list.append('&youtube_pl=PLX7Z5ey7NSDmmSPOEswfNedckidOnx1pS')
+	
 	addDir(addonString(30600).encode('utf-8'),list,17,thumb,addonString(30601).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
+	'''רמזור'''
+	desc_ = 'סדרה קומית על שלושה חברים בשנות השלושים לחייהם שמוצאים את עצמם בשלושה מצבי זוגיות שונים המשולים לאורות הרמזור: איצקו הנשוי הוא האור האדום והסטטי, אמיר נמצא במערכת יחסים מחייבת - האור צהוב המתנדנד ואילו חפר הוא הרווק הנצחי שנוסע חופשי בירוק. איך משפיעים הבדלי הזוגיות על הדרך בה הם חיים את חייהם?'
+	thumb = 'http://img.mako.co.il/2014/03/27/ramzor_2014_b.jpg'
+	list = []
+	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fimg.mako.co.il%2f2014%2f03%2f27%2framzor_2014_b.jpg&mode=1&name=%d7%a8%d7%9e%d7%96%d7%95%d7%a8&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-keshet%2framzor')
+	
+	addDir(addonString(30659).encode('utf-8'),list,17,thumb,desc_,'1',0,getAddonFanart(background, default=thumb, custom=""))
+	
+	'''תכנית קיציס'''
+	desc_ = 'תכנית אירוח המסכמת את אירועי השבוע. כל תכנית מתארחים לשיחה אישית מרואיינים מובילים מתחומי הפוליטיקה, הבידור, הספורט והתרבות הישראלית ומשולבות בה פינות קומיות וסאטיריות'
+	thumb = 'http://img.mako.co.il/2014/07/17/B-kitzis_.jpg'
+	list = []
+	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fimg.mako.co.il%2f2014%2f07%2f17%2fB-kitzis_.jpg&mode=1&name=%d7%aa%d7%9b%d7%a0%d7%99%d7%aa%20%d7%a7%d7%99%d7%a6%d7%99%d7%a1&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-keshet%2fkitzis')
+	
+	addDir(addonString(30658).encode('utf-8'),list,17,thumb,desc_,'1',0,getAddonFanart(background, default=thumb, custom=""))
 	
 		
 def CATEGORIES103(name, iconimage, desc, fanart):

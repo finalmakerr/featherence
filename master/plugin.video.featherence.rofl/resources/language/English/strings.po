@@ -563,6 +563,10 @@ msgctxt "#30409"
 msgid "Cihan Kosif TV"
 msgstr "Cihan Kosif TV"
 
+msgctxt "#30410"
+msgid "Russian car crash"
+msgstr "Russian car crash"
+
 msgctxt "#30600"
 msgid "קומי קומי"
 msgstr "קומי קומי"
