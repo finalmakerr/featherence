@@ -304,6 +304,18 @@
 	</extension>
 </addon>
 
+<addon id="resource.uisounds.featherence" version="0.0.1" name="Featherence UI Sounds" provider-name="finalmakerr">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Featherence UI Sounds</summary>
+    <description lang="en">Featherence UI Sounds</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="script.featherence.remote" name="Featherence Remote" version="0.1.2" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -345,6 +357,7 @@
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
 	<import addon="script.featherence.service" version="0.2.14"/>
+	<import addon="resource.uisounds.featherence" version="0.0.1"/>
   </requires>
   <extension point="xbmc.gui.skin" effectslowdown="1.0" debugging="false">
     <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
