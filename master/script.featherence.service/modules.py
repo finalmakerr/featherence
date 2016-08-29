@@ -46,10 +46,11 @@ def mode5(value, admin, name, printpoint):
 		Skin_UpdateLog = 'true'
 		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)')
 		xbmc.sleep(500) ; mode11(name, printpoint)
-		installaddon('resource.images.weathericons.outline', update=False)
-		installaddon('resource.images.weatherfanart.single', update=False)
-		installaddon('script.module.unidecode', update=False)
-		installaddon('script.skinshortcuts', update=True)
+		installaddonP('resource.images.weathericons.outline', update=False)
+		installaddonP('resource.images.weatherfanart.single', update=False)
+		installaddonP('resource.uisounds.featherence', update=True)
+		installaddonP('script.module.unidecode', update=False)
+		installaddonP('script.skinshortcuts', update=True)
 		setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
 
 	

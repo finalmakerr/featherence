@@ -1645,6 +1645,14 @@ def installaddonP(addon, update=True):
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
+	
+	elif addon == 'resource.uisounds.featherence': #FIXED PATH
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/finalmakerr/featherence/raw/master/resource.uisounds.featherence/resource.uisounds.featherence-0.0.1.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
 		
 	elif addon == 'browser.chromium':
 		'''6.0'''
