@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1117">
-  <defaultcontrol always="true">9000</defaultcontrol>
+  <defaultcontrol always="false">9000</defaultcontrol>
   <onload condition="Window(home).Property(ReloadSkin)">AlarmClock(Hide,ClearProperty(ReloadSkin,home),00:02,silent)</onload>
   <include>ReloadSkin_Check</include>
   <onunload condition="true">RunScript(script.featherence.service,,?mode=215&amp;value=_)</onunload>

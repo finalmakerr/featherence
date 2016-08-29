@@ -3,9 +3,9 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
-Featherence ROFL v0.0.6 (27-Aug-16)
+Featherence ROFL v0.0.6-7 (27-Aug-16)
 ------------------------
-- Added Cihan Kosif TV, Russian car cras.
+- Added Cihan Kosif TV, Russian car crash.
 - Added a lots of Israeli TV Shows:
 הסטנדאפיסטים, צומת מילר, רמזור ועוד..
 - Update TV Mode feature for long playlist.

@@ -3,6 +3,12 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence v0.5.9 (29-Aug-16)
+------------------------
+- Update Color Fanart Background feature.
+- Update save/load feature and bug fix on some hardwares.
+
+------------------------
 Featherence v0.5.8 (31-Jul-16)
 ------------------------
 - Major bug fix of coloring virtual keyboard.

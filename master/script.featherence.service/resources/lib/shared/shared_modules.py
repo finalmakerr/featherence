@@ -1337,7 +1337,7 @@ def setSkinSetting(custom,set1,set1v, force=False):
 			printpoint = printpoint + "3"
 			setting1 = xbmc.getInfoLabel('Skin.String('+ set1 +')')
 			setting1 = to_utf8(setting1)
-			if setting1 != set1v: xbmc.executebuiltin('Skin.SetString('+ set1 +','+ set1v +')')
+			if setting1 != set1v or force == True: xbmc.executebuiltin('Skin.SetString('+ set1 +','+ set1v +')')
 			'''---------------------------'''
 			
 		elif custom == "1":
@@ -1571,7 +1571,7 @@ def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percent
 	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
 	'''---------------------------'''
 	
-def installaddon(addonid2, update=True):
+def installaddon____(addonid2, update=True):
 	printpoint = "" ; name = 'installaddon'
 	
 	if not xbmc.getCondVisibility('System.HasAddon('+ addonid2 +')') or not os.path.exists(addons_path + addonid2):

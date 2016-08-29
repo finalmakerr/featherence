@@ -1,0 +1,40 @@
+------------------------
+WIP - WORK IN PROGRESS
+------------------------
+
+------------------------
+Featherence ROFL v0.0.6-7 (27-Aug-16)
+------------------------
+- Added Cihan Kosif TV, Russian car crash.
+- Added a lots of Israeli TV Shows:
+הסטנדאפיסטים, צומת מילר, רמזור ועוד..
+- Update TV Mode feature for long playlist.
+
+------------------------
+Featherence ROFL v0.0.5 (12-Jul-16)
+------------------------
+- Added new contents.
+- Update addon settings interface.
+- Update contents sort order.
+
+------------------------
+Featherence ROFL v0.0.4 (05-May-16)
+------------------------
+- Added option to force TV Mode.
+
+------------------------
+Featherence ROFL v0.0.3 (30-Apr-16)
+------------------------
+- Minor bugs fix.
+
+------------------------
+Featherence ROFL v0.0.2 (06-Apr-16)
+------------------------
+- Added foreign stand-up.
+- Added english translation.
+- Code Cosmetic.
+
+------------------------
+Featherence ROFL v0.0.1 (02-Apr-16)
+------------------------
+- First Release.

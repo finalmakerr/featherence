@@ -25,7 +25,7 @@
 		<posy>60</posy>
 		<width>560</width>
 		<height>170</height>
-		<texture border="20" diffuse="buttons/types/bd.png">$VAR[banner]</texture>
+		<texture border="40" diffuse="buttons/types/bd.png">$VAR[banner]</texture>
 	  </control>
 	  <control type="image" description="תמונה מחרוזת חיפוש">
 	    <include>Fade_TopVideoInformationOverlay</include>

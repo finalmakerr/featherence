@@ -102,6 +102,7 @@
 		<height>567</height>
 		<texture border="40" colordiffuse="$VAR[TopBackgroundColor]">buttons/ButtonC0.png</texture>
 		<visible>[!Skin.String(MenuDesign,4) | Skin.String(MenuDesign,4) + [Window.IsVisible(CustomHomeCustomizer.xml) | ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]]]</visible>
+		<visible>!Player.HasVideo</visible>
 		<!--<visible>Skin.HasSetting(HideTopMainBackground) | Skin.HasSetting(background) | IsEmpty(Control.GetLabel(700102)) | [Window.IsVisible(Custom1170.xml) + !IsEmpty(Window(home).Property(SelectedColor)) + StringCompare(Window(home).Property(TEMP),TopBackgroundColor)]</visible>-->
 	  </control>
 	  <control type="image" description="טקסטורה (רקע עליון)">
@@ -120,6 +121,7 @@
 		<visible>[[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()] | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
 		<!--<visible>Skin.HasSetting(HideTopMainBackground) | Skin.HasSetting(background) | IsEmpty(Control.GetLabel(700102))</visible>-->
 		<visible>[!Skin.String(MenuDesign,4) | Skin.String(MenuDesign,4) + [Window.IsVisible(CustomHomeCustomizer.xml) | ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus]]]</visible>
+		<visible>!Player.HasVideo</visible>
 	  </control>
 	</control>
   </include>
