@@ -3,12 +3,9 @@
 # **Features:**
 
 * This addon is a core for every Featherence's addon.
-* Wide range of tools to be used from within Kodi.
-* Wide range of modules to be used by addons developers.
+* Wide range of modules to be used by addons developers and skinners.
 * Widget to be used on any supported skin.
-* IR remote control for OpenELEC os.
-* Please note that many modules are being used in Featherence skin and are not possible on others skins yet.
-
+* Create your own plugin with Featherence Be Creative.
 
 # **Available scripts commands:**
 
