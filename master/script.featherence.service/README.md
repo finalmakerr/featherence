@@ -318,6 +318,11 @@ RunScript(script.featherence.service,,?mode=25)
 				
 					* **GET CURRENT PATH INFORMATION:**
 					```
+					Simply activate: Add Container.FolderPath keymap
+					within Featherence Service's addon settings
+					```
+					
+					```
 					RunScript(script.featherence.service,,?mode=32&amp;value=1)
 					<keymap>
 						<global>

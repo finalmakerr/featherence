@@ -1110,7 +1110,7 @@ def notification_common(custom):
 	elif custom == "100": pass
 	elif custom == "101": pass
 
-def write_to_file(path, content, append=False, silent=True , utf8=False):
+def write_to_file(path, content, append=False, silent=True , utf8=False, eol=False):
 	'''``r/r+/w/w+/a/a+'''
 	name = 'write_to_file' ; printpoint = "" ; extra = "" ; TypeError = ""
 	if utf8 == True: import codecs
@@ -1120,7 +1120,8 @@ def write_to_file(path, content, append=False, silent=True , utf8=False):
 			else: f = open(path, 'ab')
 		else:
 			if utf8 == True: f = codecs.open(path, 'wb', 'utf-8')
-			else: f = open(path, 'wb')
+			elif eol == False: f = open(path, 'wb')
+			else: f = open(path, 'w') ; notification('22','','',2000)
 
 		f.write(content)
 		f.close()

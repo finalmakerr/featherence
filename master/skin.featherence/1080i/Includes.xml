@@ -350,10 +350,10 @@
 	  <control type="group" description="משפט סרט/נצפו/פרק+עונה">
 		<include>Fade4</include>
         <posy>-482</posy>
-		<visible>!IsEmpty(Control.GetLabel(1107))</visible>
+		<visible>!IsEmpty(Control.GetLabel(1107)) + !Window.IsVisible(FileBrowser.xml)</visible>
 		<!--<visible>!Window.IsVisible(AddonBrowser.xml)</visible>-->
 		<control type="label" id="1107" description="משפט סרט/נצפו/עונה+פרק/משפט הרחבה (1107)">
-	      <include condition="!IsEmpty(ListItem.Property(Addon.Description))">ScrollLabel</include>
+	      <!--<include condition="!IsEmpty(ListItem.Property(Addon.Description))">ScrollLabel</include>-->
           <posx>685</posx>
 		  <height>32</height>
           <font>size21</font>
@@ -361,7 +361,7 @@
           <textcolor>white</textcolor>
           <align>center</align>
           <label>$VAR[TopVideoInformation7]</label>
-		  <visible>!IsEmpty(Control.GetLabel(1107))</visible>
+		  <visible>!IsEmpty(Control.GetLabel(1107)) + !Window.IsVisible(FileBrowser.xml)</visible>
 		  <width>530</width>
         </control>
 		

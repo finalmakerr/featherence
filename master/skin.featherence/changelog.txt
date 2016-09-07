@@ -3,6 +3,16 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence v0.5.10 (07-Sep-16)
+------------------------
+- Added Featherence GUI sound.
+- Added option to choose delay time for Video and Audio intro.
+- Added option to force volume level on startup.
+- Added startup category in skin settings.
+- Major bug fix with FileBrowser.
+- Update auto close video/audio OSD feature.
+
+------------------------
 Featherence v0.5.9 (29-Aug-16)
 ------------------------
 - Update Color Fanart Background feature.

@@ -176,7 +176,7 @@
 	<value condition="Skin.HasSetting(Genre)">$LOCALIZE[106]</value>
 	<value condition="!Skin.HasSetting(Genre)">$LOCALIZE[107]</value>
   </variable>
-  
+
   <variable name="18label2">
 	<value condition="Skin.HasSetting(StartUpMusic)">$LOCALIZE[106]</value>
 	<value condition="!Skin.HasSetting(StartUpMusic)">$LOCALIZE[107]</value>
@@ -213,6 +213,15 @@
   <variable name="25label2">
 	<value condition="!Skin.HasSetting(AutoView)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(AutoView)">$LOCALIZE[107]</value>
+  </variable>
+  <variable name="28label2">
+    <value condition="!Skin.String(IntroDelay)" description="ברירת מחדל">DEFAULT</value>
+    <value condition="Skin.String(IntroDelay,0)" description="0">0</value>
+	<value condition="Skin.String(IntroDelay,1)" description="1">1</value>
+	<value condition="Skin.String(IntroDelay,2)" description="2">2</value>
+	<value condition="Skin.String(IntroDelay,3)" description="3">3</value>
+	<value condition="Skin.String(IntroDelay,4)" description="4">4</value>
+	<value condition="Skin.String(IntroDelay,5)" description="5">5</value>
   </variable>
   <variable name="36label2">
 	<value condition="!Skin.String(screensavermusic)">$LOCALIZE[106]</value>

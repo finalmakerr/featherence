@@ -58,7 +58,7 @@
   
   <include name="Content_Settings_100">
     <item id="2">
-		<label>featherence</label>
+		<label>Featherence</label>
 		<onclick>noop</onclick>
 	</item>
 	<item id="1" description="כללי">
@@ -133,10 +133,9 @@
 		<label>128</label>
 		<onclick>noop</onclick>
 	</item>
-	<item id="2" description="פס עליון">
-		<label>$LOCALIZE[31842]</label>
+	<item id="2" description="הפעלה">
+		<label>$LOCALIZE[31856]</label>
 		<onclick>noop</onclick>
-		<visible>false</visible>
 	</item>
 	<item id="4" description="Advanced">
 		<label>10038</label>
@@ -1294,21 +1293,36 @@
 		<onclick>Skin.ToggleSetting(Genre)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
+	  <item id="17" description="עוצמת קול בפתיחה">
+		<label>$LOCALIZE[31867]</label>
+		<label2>$INFO[Skin.String(VolumeLevel)]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/speaker.png</thumb>
+		<property name="rinfo">$LOCALIZE[31868]</property>
+		<onclick description="ברירת מחדל" condition="!Skin.String(VolumeLevel)">Skin.SetString(VolumeLevel,40)</onclick>
+		<onclick description="" condition="Skin.String(VolumeLevel,40)">Skin.SetString(VolumeLevel,50)</onclick>
+		<onclick description="" condition="Skin.String(VolumeLevel,50)">Skin.SetString(VolumeLevel,60)</onclick>
+		<onclick description="" condition="Skin.String(VolumeLevel,60)">Skin.SetString(VolumeLevel,70)</onclick>
+		<onclick description="" condition="Skin.String(VolumeLevel,70)">Skin.SetString(VolumeLevel,80)</onclick>
+		<onclick description="" condition="Skin.String(VolumeLevel,80)">Skin.SetString(VolumeLevel,90)</onclick>
+		<onclick description="" condition="Skin.String(VolumeLevel,90)">Skin.SetString(VolumeLevel,100)</onclick>
+		<onclick description="" condition="Skin.String(VolumeLevel,100)">Skin.SetString(VolumeLevel,)</onclick>
+		<visible>Container(100).Hasfocus(2)</visible>
+	  </item>
 	  <item id="18" description="מוזיקה בהפעלה">
 		<label>$LOCALIZE[2] $LOCALIZE[19107] $LOCALIZE[31856]</label>
 		<label2>$VAR[18label2]</label2>
-		<thumb>icons/music.png</thumb>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/music.png</thumb>
 		<property name="rinfo">$LOCALIZE[31817]</property>
 		<onclick>Skin.ToggleSetting(StartUpMusic)</onclick>
-		<visible>Container(100).Hasfocus(1)</visible>
+		<visible>Container(100).Hasfocus(2)</visible>
 	  </item>
 	  <item id="19" description="+מוזיקה בהפעלה">
 		<label>$LOCALIZE[2] $LOCALIZE[19107] $LOCALIZE[31856]+</label>
 		<label2>$VAR[19label2]</label2>
-		<thumb>icons/music.png</thumb>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/music.png</thumb>
 		<property name="rinfo">$LOCALIZE[31816]</property>
 		<onclick>RunScript(script.featherence.service,,?mode=22&amp;value=$LOCALIZE[2] $LOCALIZE[19107] $LOCALIZE[31856]+&amp;value2=Choose File for single audio or Path for multi audios&amp;value3=File&amp;value4=Path&amp;value5=StartUpMusic&amp;value6=music)</onclick>
-		<visible>Container(100).Hasfocus(1) + !Skin.HasSeting(StartUpMusic)</visible>
+		<visible>Container(100).Hasfocus(2) + !Skin.HasSeting(StartUpMusic)</visible>
 	  </item>
 	  <item id="20" description="וידאו בהפעלה">
 		<label>$LOCALIZE[10025] $LOCALIZE[19107] $LOCALIZE[31856]</label>
@@ -1318,7 +1332,7 @@
 		<onclick condition="Skin.String(StartUpVideo)">Skin.SetString(StartUpVideo,)</onclick>
 		<onclick condition="!Skin.String(StartUpVideo)">Skin.SetFile(StartUpVideo,,special://userdata/library/videos/)</onclick>
 		<onclick condition="!Skin.String(StartUpVideo)">AlarmClock(delay,Skin.SetString(StartUpVideo),0,silent)</onclick>
-		<visible>Container(100).Hasfocus(1)</visible>
+		<visible>Container(100).Hasfocus(2)</visible>
 	  </item>
 	  <item id="21" description="וידאו בהפעלה - מסך מלא">
 		<label>$LOCALIZE[10025] $LOCALIZE[19107] $LOCALIZE[31856] - $LOCALIZE[244]</label>
@@ -1326,7 +1340,21 @@
 		<thumb>special://home/addons/script.featherence.service/resources/icons/fullscreen.png</thumb>
 		<property name="rinfo">$LOCALIZE[31423]</property>
 		<onclick>Skin.ToggleSetting(StartUpVideoFullScreen)</onclick>
-		<visible>Container(100).Hasfocus(1) + Skin.String(StartUpVideo)</visible>
+		<visible>Container(100).Hasfocus(2) + Skin.String(StartUpVideo)</visible>
+	  </item>
+	  <item id="28" description="השהיית וידאו פתיחה">
+		<label>$LOCALIZE[31865]</label>
+		<label2>$VAR[28label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/clock.png</thumb>
+		<property name="rinfo">$LOCALIZE[31866]</property>
+		<onclick description="ברירת מחדל" condition="!Skin.String(IntroDelay)">Skin.SetString(IntroDelay,0)</onclick>
+		<onclick description="" condition="Skin.String(IntroDelay,0)">Skin.SetString(IntroDelay,1)</onclick>
+		<onclick description="" condition="Skin.String(IntroDelay,1)">Skin.SetString(IntroDelay,2)</onclick>
+		<onclick description="" condition="Skin.String(IntroDelay,2)">Skin.SetString(IntroDelay,3)</onclick>
+		<onclick description="" condition="Skin.String(IntroDelay,3)">Skin.SetString(IntroDelay,4)</onclick>
+		<onclick description="" condition="Skin.String(IntroDelay,4)">Skin.SetString(IntroDelay,5)</onclick>
+		<onclick description="" condition="Skin.String(IntroDelay,5)">Skin.SetString(IntroDelay,)</onclick>
+		<visible>Container(100).Hasfocus(2) + [!Skin.HasSetting(StartUpMusic) | Skin.String(StartUpVideo)]</visible>
 	  </item>
 	  <item id="22" description="הפעל תצוגת זמן">
 		<label>$LOCALIZE[31857]</label>

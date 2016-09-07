@@ -366,14 +366,14 @@
       <back>PreviousMenu</back>
     </remote>
   </Weather>
-  <TV>
+  <TVChannels>
     <remote>
       <red>Red</red>
       <green>Green</green>
       <yellow>Yellow</yellow>
       <blue>Blue</blue>
     </remote>
-  </TV>
+  </TVChannels>
   <Settings>
     <remote>
       <back>PreviousMenu</back>

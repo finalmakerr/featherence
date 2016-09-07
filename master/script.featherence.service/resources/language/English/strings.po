@@ -157,8 +157,8 @@ msgstr "Launch widget now"
 
 #Others addons settings"
 msgctxt "#32040"
-msgid ""
-msgstr ""
+msgid "Delay time for Intro Video and Music."
+msgstr "זמן השהייה לסרטון ומוזיקת פתיחה."
 
 msgctxt "#32041"
 msgid "Setup default volume level on startup."
@@ -536,8 +536,8 @@ msgid "This button is locked but you haven't set a password!"
 msgstr "כפתור זה נעול אך טרם הגדרת סיסמא!"
 
 msgctxt "#32148"
-msgid ""
-msgstr ""
+msgid "Add Container.FolderPath keymap"
+msgstr "Add Container.FolderPath keymap"
 
 msgctxt "#32149"
 msgid ""
@@ -1532,8 +1532,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#32397"
-msgid ""
-msgstr ""
+msgid "Enable for forcing your preference view"
+msgstr "הפעל לכפיית מצב תצוגה מותאם אישי"
 
 msgctxt "#32398"
 msgid "This View is now Default"

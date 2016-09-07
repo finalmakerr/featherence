@@ -7,7 +7,7 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
-	xbmc.executebuiltin('AlarmClock(1173,ActivateWindow(1173),0,silent)')
+	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=4)')
 	#xbmc.executebuiltin('ActivateWindow(MusicFiles,root)')
 	#xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
 	#xbmc.executebuiltin('Skin.SetImage(TEMP,special://userdata/)')
@@ -22,11 +22,6 @@ def mode4(value, value2, value3, name, printpoint):
 def mode5(value, admin, name, printpoint):
 	'''startup'''
 	
-	try:
-		VolumeLevel = int(xbmcaddon.Addon(addonID).getSetting('VolumeLevel'))
-		xbmc.executebuiltin('SetVolume('+str(VolumeLevel)+')')
-	except: pass
-	
 	addon = 'plugin.video.featherence.docu'
 	if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
 		
@@ -40,12 +35,16 @@ def mode5(value, admin, name, printpoint):
 	if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
 	
 	if xbmc.getSkinDir() == 'skin.featherence':
+		try:
+			VolumeLevel = int(xbmc.getInfoLabel('Skin.String(VolumeLevel)'))
+			xbmc.executebuiltin('SetVolume('+str(VolumeLevel)+')')
+		except: pass
+		mode11(name, printpoint)
 		#mode12()
 		mode215('_','','','')
 		setsetting_custom1('script.featherence.service','Skin_UpdateLog',"true")
 		Skin_UpdateLog = 'true'
-		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)')
-		xbmc.sleep(500) ; mode11(name, printpoint)
+		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)') #Widget
 		installaddonP('resource.images.weathericons.outline', update=False)
 		installaddonP('resource.images.weatherfanart.single', update=False)
 		installaddonP('resource.uisounds.featherence', update=True)
@@ -103,7 +102,17 @@ def mode11(name, printpoint):
 	startupvideofullscreen1 = xbmc.getCondVisibility('Skin.HasSetting(StartUpVideoFullScreen)')
 	startupvideo0 = xbmc.getInfoLabel('Skin.String(StartUpVideo)')
 	startupmusic0 = xbmc.getInfoLabel('Skin.String(StartUpMusic)')
+	IntroDelay = xbmc.getInfoLabel('Skin.String(IntroDelay)')
+	if IntroDelay == "" or IntroDelay == '-':
+		IntroDelay = 1
+	else:
+		try:
+			IntroDelay = int(IntroDelay)
+		except:
+			IntroDelay = 1
 	
+	xsleep = int(IntroDelay) * 1000
+	xbmc.sleep(xsleep)
 	if startupvideo0 == "": pass
 	else:
 		startupvideo0_, startupvideo0__ = TranslatePath(startupvideo0, filename=True)
@@ -141,7 +150,8 @@ def mode11(name, printpoint):
 	'startupmusic1' + space2 + str(to_utf8(startupmusic1)) + newline + \
 	'startupvideofullscreen1' + space2 + str(to_utf8(startupvideofullscreen1)) + newline + \
 	'startupvideo0' + space2 + str(to_utf8(startupvideo0)) + newline + \
-	'startupmusic0' + space2 + str(to_utf8(startupmusic0))
+	'startupmusic0' + space2 + str(to_utf8(startupmusic0)) + newline + \
+	'IntroDelay' + space2 + str(IntroDelay)
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
 def mode8(admin, name, printpoint):
@@ -424,15 +434,25 @@ def mode10(admin, name, printpoint):
 	if property_mode10 == "":
 		setProperty('mode10', 'true', type="home")
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
+		playerhasaudio = xbmc.getCondVisibility('Player.HasAudio')
 		dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy)')
+		dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress)')
 		setPlayerInfo(admin)
 		videostarttweak(admin)
+		ii = 0
 		if playerhasvideo and xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)'): xbmc.executebuiltin('Action(Info)')
-		while (playerhasvideo or dialogbusyW) and not xbmc.abortRequested:
+		while (playerhasvideo or playerhasaudio or dialogbusyW or dialogprogressW or ii < 2) and not xbmc.abortRequested:
 			xbmc.sleep(5000)
 			videoplayertweak(admin, playerhasvideo)
 			playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
+			playerhasaudio = xbmc.getCondVisibility('Player.HasAudio')
 			dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy)')
+			dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress)')
+			if xbmc.abortRequested:
+				ii = 9
+			elif not (playerhasvideo and not playerhasaudio and not dialogbusyW and not dialogprogressW):
+				ii += 1
+			elif ii > 0: ii -= 1
 			'''---------------------------'''
 		for i in range(1,10):
 			setProperty('TopVideoInformation' + str(i), "", type="home")
@@ -448,6 +468,9 @@ def mode10(admin, name, printpoint):
 			'''refresh widget'''
 			xbmc.sleep(3000)
 			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23)')
+		
+		text = 'ii' + space2 + str(ii) + newline
+		printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
 def mode12():
 	name = 'mode12' ; printpoint = ''
@@ -708,7 +731,6 @@ def mode32(value, admin, name, printpoint):
 	'''------------------------------
 	---MISCS-------------------------
 	------------------------------'''
-	
 	if value == '0':
 		if admin == 'false':
 			setsetting('admin','true')
@@ -797,7 +819,60 @@ def mode32(value, admin, name, printpoint):
 		xbmc.executebuiltin('ActivateWindow(10025,plugin://plugin.video.youtube/user/finalmakerr/),returned')			
 		setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=True)
 	elif value == '4':
-		pass
+		command = '<p mod="ctrl,shift" description="containerfolderpath">RunScript(script.featherence.service,,?mode=32&amp;value=1)</p>'
+		command_ = '<p mod="ctrl,shift"'
+		command__ = '</p>'
+		content = '<keymap>' + newline + '	' + '<global>' + newline + '		' + '<keyboard>' + newline + '			' + command + newline + \
+			'		</keyboard>' + newline + \
+			'	</global>' + newline + \
+			'</keymap>'
+		keymaps_path = os.path.join(userdata_path,'keymaps','')
+		keyboard_file = os.path.join(keymaps_path,'keyboard.xml')
+		
+		keyboard_file_ = read_from_file(keyboard_file, silent=True, lines=False, retry=True, createlist=False, printpoint="", addlines="")
+		keyboard_file__ = keyboard_file_
+		x = regex_from_to(keyboard_file_, '<global>', '</global>', excluding=False)
+		y = regex_from_to(x, '<keyboard>', '</keyboard>', excluding=False)
+		y_ = regex_from_to(x, '<keyboard>', '</keyboard>', excluding=True)
+		z = regex_from_to(x, command_, command__, excluding=False)
+		
+		if not os.path.exists(keyboard_file):
+			printpoint = printpoint + '0'
+			write_to_file(keyboard_file, content, append=False, silent=True , utf8=False, eol=True)
+			
+		elif not command in y:
+			printpoint = printpoint + '1'
+			if z != "" and z != command_ + command__:
+				printpoint = printpoint + '2'
+				keyboard_file__ = keyboard_file__.replace(z, command, 1)
+			
+			elif y_ != "":
+				printpoint = printpoint + '3'
+				keyboard_file__ = keyboard_file__.replace(y_, y_ + '	' + command + newline + '		', 1)
+			
+			else:
+				printpoint = printpoint + '4'
+				dialogok('keyboard.xml exist!', 'Click OK to view the current file','','')
+				diaogtextviewer('keyboard.xml', keyboard_file_)
+				returned = dialogyesno('Would you like to overwrite your current file?','Click YES to proceed')
+				if returned == 'ok':
+					printpoint = printpoint + '7'
+					write_to_file(keyboard_file, content, append=False, silent=True , utf8=False, eol=True)
+				else: printpoint = printpoint + '9'
+		
+		if '9' in printpoint:
+			notification_common("9")
+		elif ('0' in printpoint or '1' in printpoint):
+			xbmc.executebuiltin('Action(reloadkeymaps)')
+			notification('Keymap modified!','Use Ctrl+Shift+P','',4000)
+		else:
+			notification('Keymap already setup!','Use Ctrl+Shift+P','',4000)
+		
+		text = 'x' + space2 + str(x) + newline + \
+		'y' + space2 + str(y) + newline + \
+		'y_' + space2 + str(y_) + newline + \
+		'z' + space2 + str(z) + newline
+		printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 		
 	elif value == '5':
 		ReloadSkin(admin,force=False)

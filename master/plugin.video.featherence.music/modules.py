@@ -1151,6 +1151,8 @@ def CATEGORIES10109(name, iconimage, desc, fanart):
 	'''שלומי שבת'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_id=jD_8M4tteaM')
+	list.append('&youtube_id=_hblPZN_FDE')
 	addDir(addonString(30143).encode('utf-8'),list,17,'https://i.ytimg.com/i/GaHPMv8YIv_0HfRDQQ44cA/mq1.jpg?v=af5444',addonString(30243).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom=""))
 	
 	'''שרית חדד'''

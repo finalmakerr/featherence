@@ -1107,6 +1107,22 @@ msgctxt "#31864"
 msgid "Movies/Tvshows plot align"
 msgstr "כיוון טקסט עלילת סרט/סדרה"
 
+msgctxt "#31865"
+msgid "Startup video delay"
+msgstr "השהיית וידאו פתיחה"
+
+msgctxt "#31866"
+msgid "Choose a delay time in seconds for video intro on startup."
+msgstr "בחר משך זמן השהיית וידאו פתיחה."
+
+msgctxt "#31867"
+msgid "Volume level on startup"
+msgstr "עוצמת קול בפתיחה"
+
+msgctxt "#31868"
+msgid "Force volume level on startup. Leave empty to keep previous level of volume."
+msgstr "Force volume level on startup. Leave empty to keep previous level of volume."
+
 msgctxt "#31999"
 msgid ""
 msgstr ""
