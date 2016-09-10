@@ -6,6 +6,6 @@ import xbmcaddon
 from variables import *
 from modules import *
 
-xbmc.sleep(2000)
+xbmc.sleep(200)
 
 mode5('', admin, 'demon', '')

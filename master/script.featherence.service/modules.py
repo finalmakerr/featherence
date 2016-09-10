@@ -52,7 +52,6 @@ def mode5(value, admin, name, printpoint):
 		installaddonP('script.skinshortcuts', update=True)
 		setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
 
-	
 def mode6(value):
 	name = 'mode6 (pwd)' ; printpoint = ""
 	passprotect = xbmc.getInfoLabel('Skin.String(PassProtect)')
@@ -103,6 +102,7 @@ def mode11(name, printpoint):
 	startupvideo0 = xbmc.getInfoLabel('Skin.String(StartUpVideo)')
 	startupmusic0 = xbmc.getInfoLabel('Skin.String(StartUpMusic)')
 	IntroDelay = xbmc.getInfoLabel('Skin.String(IntroDelay)')
+	
 	if IntroDelay == "" or IntroDelay == '-':
 		IntroDelay = 1
 	else:
@@ -119,7 +119,8 @@ def mode11(name, printpoint):
 		if not os.path.exists(startupvideo0_):
 			printpoint = printpoint + '1'
 			notification('Startup Video failed','File is not available!','',2000)
-		else:
+		else: 
+			xbmc.executebuiltin('CancelAlarm(startup,silent)')
 			printpoint = printpoint + '2'
 			if not startupvideofullscreen1: xbmc.executebuiltin('PlayMedia('+startupvideo0_+')')
 			else: xbmc.executebuiltin('PlayMedia('+to_utf8(startupvideo0_)+'),1)')
@@ -606,7 +607,7 @@ def mode25(value, admin, name, printpoint):
 			pl.add(x)
 		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl)
 
-def mode28(value, admin, name, printpoint):
+def mode28(value, value2, value3, name, printpoint):
 	'''------------------------------
 	---AutoView----------------------
 	------------------------------'''
