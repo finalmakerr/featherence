@@ -315,7 +315,7 @@ def getFileAttribute(custom, file, option=""):
 		if option == '1':
 			timenow = dt.datetime.now()
 			returned = timenow.strftime("%d/%m/%y %H:%M") #date and time representation
-			
+		
 		else:
 			returned = time.ctime(os.path.getmtime(file))
 		

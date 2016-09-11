@@ -328,7 +328,6 @@
 	<value condition="Window.IsVisible(FileBrowser.xml) + !IsEmpty(Control.GetLabel(412))">$INFO[Control.GetLabel(412)]</value>
 	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.Path)">$INFO[ListItem.Path]</value>
 	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItemNoWrap(0).Plot)">$INFO[Container(11).ListItemNoWrap(0).Plot]</value>
-	<value condition="Control.IsVisible(11051)">•••••</value>
   </variable>
   <variable name="TopVideoInformation5.1" description="פרטי טלוויזיה חיה">
     <value condition="Control.IsVisible(10)">$INFO[ListItem.Duration] [COLOR=white]$LOCALIZE[180]:[/COLOR][CR][COLOR=yellow]$INFO[ListItem.Title][/COLOR][CR]$INFO[ListItem.Plot]</value>
@@ -409,13 +408,16 @@
 	<value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
 	<value condition="!IsEmpty(ListItem.Episode) + Container.Content(Episodes) + !IsEmpty(ListItem.Season) + !IsEmpty(ListItem.TVShowTitle)">$LOCALIZE[20359] $INFO[ListItem.Episode]</value>
 	<value condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenreLabel]</value>
+	<value description="Popcorn Time" condition="StringCompare(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | StringCompare(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)">$VAR[GenreLabel]</value>
+	<value description="Exodus" condition="StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres)">$VAR[GenreLabel]</value>
 	<value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
 	<value>...</value>
   </variable> 
   <variable name="VideoInformation2" description="עונה/פרק/וידאו">
 	<value condition="SubString(ListItem.Label,Next page) | SubString(ListItem.Label,$LOCALIZE[33078])">DefaultVideo2.png</value>
-	<value condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenrePic]</value>
-	<value condition="StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres)">$VAR[GenrePic]</value>
+	<value description="Popcorn Time" condition="StringCompare(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | StringCompare(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)">$VAR[GenrePic]</value>
+	<value description="Library" condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenrePic]</value>
+	<value description="Exodus" condition="StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres)">$VAR[GenrePic]</value>
 	<value condition="!IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
 	<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 	<value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
@@ -471,18 +473,6 @@
 	<value description="רענון" condition="Control.HasFocus(128)">$LOCALIZE[184]</value>
 	<value description="הגדרות" condition="Control.HasFocus(129)">$LOCALIZE[1390]</value>
   </variable>
-  <variable name="GamesImagePath">
-    <value condition="SubString(ListItem.Label,Arcade Gear)">misc/help/Arcade Gear/</value>
-    <value condition="SubString(ListItem.Label,Arcade)">misc/help/Arcade/</value>
-    <value condition="SubString(ListItem.Label,Nintendo 64)">misc/help/Nintendo 64/</value>
-    <value condition="SubString(ListItem.Label,Nintendo DS)">misc/help/Nintendo DS/</value>
-    <value condition="SubString(ListItem.Label,Nintendo)">misc/help/Nintendo/</value>
-    <value condition="SubString(ListItem.Label,Sega Genesis)">misc/help/Sega Genesis/</value>
-    <value condition="SubString(ListItem.Label,Sega Master System)">misc/help/Sega Master System/</value>
-    <value condition="SubString(ListItem.Label,Sony Playstation)">misc/help/Sony Playstation/</value>
-    <value condition="SubString(ListItem.Label,Super Nintendo)">misc/help/Super Nintendo/</value>
-    <value condition="SubString(ListItem.Label,TurboGrafx 16)">misc/help/TurboGrafx 16/</value>
-  </variable>
   <variable name="TopInformation2" description="שמאל1 (תיקייה)">
 	<value description="גרסה" condition="Window.IsVisible(Home.xml)">$INFO[System.AddonVersion(skin.featherence)]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[B]$ADDON[script.skin.helper.service 32011][/B]</value>
@@ -499,6 +489,7 @@
 	<value description="מזג אוויר" condition="Window.IsVisible(MyWeather.xml)">$INFO[System.CurrentWindow] ($INFO[Weather.Plugin])</value>
 	<value description="עיצוב מעטפת" condition="Window.IsVisible(CustomHomeCustomizer.xml)">$LOCALIZE[31830] ($INFO[Container.NumItems])</value>
 	<value description="הרחבה" condition="[SubString(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !IsEmpty(Container.FolderName) + !IsEmpty(Container.NumItems)">$INFO[Container.FolderName] ($INFO[Container.NumItems])</value>
+	<value description="הרחבה2" condition="Window.IsVisible(DialogAddonSettings.xml) + !IsEmpty(ListItem.Property(Addon.Name))">$INFO[System.CurrentWindow]: [COLOR=yellow][B]$INFO[ListItem.Property(Addon.Name)][/COLOR][/B]</value>
 	<value description="הרחבה2" condition="[SubString(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
 	<value>$INFO[System.CurrentWindow] ($INFO[Container.NumItems])</value>
   </variable>

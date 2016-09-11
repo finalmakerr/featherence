@@ -1,0 +1,60 @@
+------------------------
+Featherence Classico Plus (11-Sep-16)
+------------------------
+- Added Kodi Popcorn Time addon.
+- Added Subtitle.co.il addon's auto-login.
+- Minor bugs fix.
+- Removed Torrenter addon.
+- Update advancedsettings.xml
+
+
+This build is now auto-update and available through the load button (save/load), changelog included from within Kodi.
+
+------------------------
+Featherence Classico Plus (11-Aug-16)
+------------------------
+*Added repository.kodil
+*If you choose Yes when the dialog yes no window pop up.
+
+------------------------
+Featherence Classico Plus (11-Jun-16)
+------------------------
+- Added download support for certain addons.
+- Added Sdarot TV to Israeli TV button (Perior bugged!)
+
+------------------------
+Featherence Classico Plus (20-Apr-16)
+------------------------
+Minor bugs fix.
+
+------------------------
+Featherence Classico Plus (06-Apr-16)
+------------------------
+- Added Games button (WIP)
+- Added Featherence ROFL
+- Exodus Library support
+
+------------------------
+Featherence Classico Plus (14-Mar-16)
+------------------------
+- Removed Pulsar.
+- Added quasar, including settings and 3 providers.
+- Added a Repo for Torrenter.
+
+------------------------
+Featherence Classico Plus (10-Mar-16)
+------------------------
+- Added Exodus Trakt Library / Watchlist for Tv shows and Movies.
+- Added Featherence ROFL.
+- Some of you may notice a games button, it's won't work so ignore it for now.
+
+------------------------
+Featherence Classico Plus (15-Feb-16)
+------------------------
+- Added Exodus.
+- Update Specto, SALTS.
+
+------------------------
+Featherence Classico Plus (05-Feb-16)
+------------------------
+- First Release.

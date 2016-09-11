@@ -729,18 +729,6 @@
 			  <visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
 			</control>
 		</control>
-	    <control type="group" id="11051" description="משחקים">
-		  <posx>20</posx>
-		  <posy>-550</posy>
-		  <visible>SubString(Container.FolderName,Advanced Launcher) + IsEmpty(Control.GetLabel(1106))</visible>
-			<control type="multiimage" description="">
-			  <aspectratio align="left">keep</aspectratio>
-			  <height>300</height>
-			  <imagepath>$VAR[GamesImagePath]</imagepath>
-			  <timeperimage>10000</timeperimage>
-			  <width>300</width>
-			</control>		
-		</control>
 	  </control>
 	</control>
 	

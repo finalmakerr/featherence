@@ -1991,7 +1991,7 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "ListItem.Duration" + space2 + xbmc.getInfoLabel('ListItem.Duration')
 			message = message + newline + "Container.Viewmode" + space2 + xbmc.getInfoLabel('Container.Viewmode')
 			message = message + newline + '---------------------------'
-			message = message + newline + "custom" + space2 + str(xbmc.getInfoLabel('ListItem.UserRating')) #CUSTOM TEST
+			message = message + newline + "custom" + space2 + str(xbmc.getInfoLabel('ListItem.Genre')) #CUSTOM TEST
 			message = message + newline + "custom2" + space2 + str(xbmc.getInfoLabel('ListItem.Rating')) #CUSTOM TEST
 			message = message + newline + "custom3" + space2 + str(xbmc.getInfoLabel('ListItem.RatingAndVotes')) #CUSTOM TEST
 			message = message + newline + "ListItem.Property(TotalEpisodes)" + space2 + str(xbmc.getInfoLabel('ListItem.Property(TotalEpisodes)')) #CUSTOM TEST

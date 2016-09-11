@@ -898,7 +898,7 @@
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31619]) | SubString(ListItem.Label,Science Fiction) | SubString(ListItem.Label,Science-Fiction) | SubString(ListItem.Label,Sci-Fi)">$LOCALIZE[31619]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31620]) | SubString(ListItem.Label,Short)">$LOCALIZE[31620]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31621]) | SubString(ListItem.Label,Sport)">$LOCALIZE[31621]</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31622]) | SubString(ListItem.Label,Suspense)">$LOCALIZE[31622]</value>
+		<value condition="SubString(ListItem.Label,$LOCALIZE[31622]) | SubString(ListItem.Label,Suspense) | SubString(ListItem.Label,Suspence)">$LOCALIZE[31622]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31623]) | SubString(ListItem.Label,Thriller)">$LOCALIZE[31623]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31624]) | SubString(ListItem.Label,War)">$LOCALIZE[31624]</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31625]) | SubString(ListItem.Label,Western)">$LOCALIZE[31625]</value>
@@ -1065,7 +1065,7 @@
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31619]) | SubString(ListItem.Label,Science Fiction) | SubString(ListItem.Label,Science-Fiction) | SubString(ListItem.Label,Sci-Fi)">badges/genre/Sci-Fi.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31620]) | SubString(ListItem.Label,Short)">badges/genre/Short.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31621]) | SubString(ListItem.Label,Sport)">badges/genre/Sport.png</value>
-		<value condition="SubString(ListItem.Label,$LOCALIZE[31622]) | SubString(ListItem.Label,Suspense)">badges/genre/Suspense.png</value>
+		<value condition="SubString(ListItem.Label,$LOCALIZE[31622]) | SubString(ListItem.Label,Suspense) | SubString(ListItem.Label,Suspence)">badges/genre/Suspense.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31623]) | SubString(ListItem.Label,Thriller)">badges/genre/Thriller.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31624]) | SubString(ListItem.Label,War)">badges/genre/War.png</value>
 		<value condition="SubString(ListItem.Label,$LOCALIZE[31625]) | SubString(ListItem.Label,Western) | SubString(ListItem.Label,מערבון)">badges/genre/Western.png</value>
