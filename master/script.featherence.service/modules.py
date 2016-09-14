@@ -7,6 +7,7 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
+	xbmc.executebuiltin('ActivateWindow(Startup.xml)')
 	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=4)')
 	#xbmc.executebuiltin('ActivateWindow(MusicFiles,root)')
 	#xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
@@ -50,7 +51,7 @@ def mode5(value, admin, name, printpoint):
 		installaddonP('resource.uisounds.featherence', update=True)
 		installaddonP('script.module.unidecode', update=False)
 		installaddonP('script.skinshortcuts', update=True)
-		setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
+		xbmc.sleep(2000) ; setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
 
 def mode6(value):
 	name = 'mode6 (pwd)' ; printpoint = ""
@@ -70,6 +71,7 @@ def mode6(value):
 			printpoint = printpoint + '3'
 			notification(addonString(32147).encode('utf-8'),"","",4000)
 			setProperty('PassProtect','','home')
+			xbmc.executebuiltin('Dialog.Close(1138)')
 			xbmc.executebuiltin('ReplaceWindow(Home.xml)')
 		else:
 			printpoint = printpoint + '4'
@@ -78,6 +80,7 @@ def mode6(value):
 				printpoint = printpoint + '5'
 				notification(localize(12342),"","",2000)
 				setProperty('PassProtect','','home')
+				xbmc.executebuiltin('Dialog.Close(1138)')
 				xbmc.executebuiltin('ReplaceWindow(Home.xml)')
 			else:
 				printpoint = printpoint + '6'
