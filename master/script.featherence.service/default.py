@@ -126,8 +126,10 @@ elif mode == 17:
 	'''---------------------------'''
 
 elif mode == 21:
+	playerhasmedia = xbmc.getCondVisibility('Player.HasMedia')
 	xbmc.sleep(2000)
-	CreatePL(value, value2)
+	if not playerhasmedia:
+		CreatePL(value, value2)
 	
 elif mode == 22: mode22(value, value2, value3, value4, value5, value6)
 
@@ -151,6 +153,10 @@ elif mode == 24:
 	value_year = xbmc.getInfoLabel('Window(home).Property('+value+'.Year)')
 	systemlanguage = xbmc.getInfoLabel('System.Language')
 	value_file = xbmc.getInfoLabel('Window(home).Property('+value+'.File)')
+	if xbmc.getCondVisibility('!Window.IsVisible(Home.xml)'):
+		notification('Only active while in Home.xml window!','Press the back button first :)','',2000)
+		sys.exit(0)
+		
 	if 'Movie' in value:
 		'''movies'''
 		trailers = xbmc.getInfoLabel('Window(home).Property(Widget_Trailers)')
@@ -346,13 +352,18 @@ elif mode >= 200 and mode <= 249:
 			elif returned == 2:
 				pathf = os.path.join(addonPath, 'resources', 'skin_templates', '')
 				filef = 'Featherence_Classico Plus.zip'
-				filesname = '[COLOR=blue][B]Classico Plus[/COLOR][/B]'
-				filesT_ = { filesname: pathf + filef }
+				filesname = 'Classico Plus'
+				filesT_ = { filesname: filef }
 				filesT.update(filesT_)
 				list2.append(filesname)
 				filedate = getFileAttribute(1, pathf + filef, option="2")
-				list2_.append(filesname + space + '-(' + str(filedate) + ')')
+				list2_.append('[COLOR=blue][B]' + filesname + '[/COLOR][/B]' + space + '-(' + str(filedate) + ')')
 			
+			if not os.path.exists(path):
+				os.mkdir(path)
+			if not os.path.exists(featherenceserviceaddondata_media_path):
+				os.mkdir(featherenceserviceaddondata_media_path)
+				
 			if path != "":
 				'''read existing files'''
 				for files in os.listdir(path):
@@ -529,7 +540,7 @@ elif mode >= 200 and mode <= 249:
 						path = pathf
 						returned3 = dialogyesno('Continue Loading?','You may also view the changelog first!', nolabel="Load", yeslabel="Changelog")
 						
-						if returned == 'skip':
+						if returned3 == 'ok':
 							filefc = 'Featherence_Classico Plus.txt'
 							if os.path.exists(pathf + filefc):
 								filefc_ = read_from_file(pathf + filefc, silent=True, lines=False, retry=True, createlist=False, printpoint="", addlines="")
@@ -549,6 +560,7 @@ elif mode >= 200 and mode <= 249:
 							notification("Invalid file!", "", "", 4000)
 						elif not os.path.exists(path + file):
 							'''nothing to load'''
+							printpoint = printpoint + 'D'
 							notification(localize(33077), addonString_servicefeatherence(32127).encode('utf-8'), "", 4000) #Create a save session first!
 						else:
 							if os.path.exists(featherenceserviceaddondata_media_path + 'Featherence_.txt'):
@@ -657,6 +669,7 @@ elif mode >= 200 and mode <= 249:
 		"list2" + space2 + str(list2) + space + 'returned2' + space2 + str(returned2) + newline + \
 		"file" + space2 + to_utf8(str(file)) + newline + \
 		"filename" + space2 + to_utf8(str(filename)) + newline + \
+		"filesT" + space2 + to_utf8(str(filesT)) + newline + \
 		"formula" + space2 + str(formula) + space + "formula_" + space2 + str(formula_) + newline + \
 		"custommediaL" + space2 + str(custommediaL) + newline + \
 		"extra" + space2 + to_utf8(extra)

@@ -1,5 +1,5 @@
 import xbmc
-from variables import property_buttonid, property_buttonid_, property_subbuttonid_, property_temp, property_temp2
+from variables import property_buttonid, property_buttonid_, property_subbuttonid_, property_temp, property_temp2, property_widgetbuttonid, property_widgetbuttonid_
 property_temp = xbmc.getInfoLabel('Window(home).Property(TEMP)')
 if 1 + 1 == 2:
 	'''------------------------------
@@ -2764,9 +2764,1945 @@ if property_subbuttonid_ != "" or property_temp != "" or property_temp2 != "" or
 	'''---------------------------'''
 	off119_T = { 'off119_90': off119_90, 'off119_100': off119_100, 'off119_101': off119_101, 'off119_102': off119_102, 'off119_103': off119_103, 'off119_104': off119_104, 'off119_105': off119_105, 'off119_106': off119_106, 'off119_107': off119_107, 'off119_108': off119_108, 'off119_109': off119_109 }
 	off_T.update(off119_T)
+
+if property_widgetbuttonid_ != "" or property_temp != "" or property_temp2 != "" or 1 + 1 == 2:
+	
+	labelw_T = {}
+	'''---------------------------'''
+	labelw90_90 = xbmc.getInfoLabel('Skin.String(labelw90_90)')
+	'''---------------------------'''
+	labelw90_100 = xbmc.getInfoLabel('Skin.String(labelw90_100)')
+	labelw90_101 = xbmc.getInfoLabel('Skin.String(labelw90_101)')
+	labelw90_102 = xbmc.getInfoLabel('Skin.String(labelw90_102)')
+	labelw90_103 = xbmc.getInfoLabel('Skin.String(labelw90_103)')
+	labelw90_104 = xbmc.getInfoLabel('Skin.String(labelw90_104)')
+	labelw90_105 = xbmc.getInfoLabel('Skin.String(labelw90_105)')
+	labelw90_106 = xbmc.getInfoLabel('Skin.String(labelw90_106)')
+	labelw90_107 = xbmc.getInfoLabel('Skin.String(labelw90_107)')
+	labelw90_108 = xbmc.getInfoLabel('Skin.String(labelw90_108)')
+	labelw90_109 = xbmc.getInfoLabel('Skin.String(labelw90_109)')
+	'''---------------------------'''
+	labelw90_T = { 'labelw90_90': labelw90_90, 'labelw90_100': labelw90_100, 'labelw90_101': labelw90_101, 'labelw90_102': labelw90_102, 'labelw90_103': labelw90_103, 'labelw90_104': labelw90_104, 'labelw90_105': labelw90_105, 'labelw90_106': labelw90_106, 'labelw90_107': labelw90_107, 'labelw90_108': labelw90_108, 'labelw90_109': labelw90_109 }
+	labelw_T.update(labelw90_T)
+	'''---------------------------'''
+	labelw91_90 = xbmc.getInfoLabel('Skin.String(labelw91_90)')
+	'''---------------------------'''
+	labelw91_100 = xbmc.getInfoLabel('Skin.String(labelw91_100)')
+	labelw91_101 = xbmc.getInfoLabel('Skin.String(labelw91_101)')
+	labelw91_102 = xbmc.getInfoLabel('Skin.String(labelw91_102)')
+	labelw91_103 = xbmc.getInfoLabel('Skin.String(labelw91_103)')
+	labelw91_104 = xbmc.getInfoLabel('Skin.String(labelw91_104)')
+	labelw91_105 = xbmc.getInfoLabel('Skin.String(labelw91_105)')
+	labelw91_106 = xbmc.getInfoLabel('Skin.String(labelw91_106)')
+	labelw91_107 = xbmc.getInfoLabel('Skin.String(labelw91_107)')
+	labelw91_108 = xbmc.getInfoLabel('Skin.String(labelw91_108)')
+	labelw91_109 = xbmc.getInfoLabel('Skin.String(labelw91_109)')
+	'''---------------------------'''
+	labelw91_T = { 'labelw91_90': labelw91_90, 'labelw91_100': labelw91_100, 'labelw91_101': labelw91_101, 'labelw91_102': labelw91_102, 'labelw91_103': labelw91_103, 'labelw91_104': labelw91_104, 'labelw91_105': labelw91_105, 'labelw91_106': labelw91_106, 'labelw91_107': labelw91_107, 'labelw91_108': labelw91_108, 'labelw91_109': labelw91_109 }
+	labelw_T.update(labelw91_T)
+	'''---------------------------'''
+	labelw92_90 = xbmc.getInfoLabel('Skin.String(labelw92_90)')
+	'''---------------------------'''
+	labelw92_100 = xbmc.getInfoLabel('Skin.String(labelw92_100)')
+	labelw92_101 = xbmc.getInfoLabel('Skin.String(labelw92_101)')
+	labelw92_102 = xbmc.getInfoLabel('Skin.String(labelw92_102)')
+	labelw92_103 = xbmc.getInfoLabel('Skin.String(labelw92_103)')
+	labelw92_104 = xbmc.getInfoLabel('Skin.String(labelw92_104)')
+	labelw92_105 = xbmc.getInfoLabel('Skin.String(labelw92_105)')
+	labelw92_106 = xbmc.getInfoLabel('Skin.String(labelw92_106)')
+	labelw92_107 = xbmc.getInfoLabel('Skin.String(labelw92_107)')
+	labelw92_108 = xbmc.getInfoLabel('Skin.String(labelw92_108)')
+	labelw92_109 = xbmc.getInfoLabel('Skin.String(labelw92_109)')
+	'''---------------------------'''
+	labelw92_T = { 'labelw92_90': labelw92_90, 'labelw92_100': labelw92_100, 'labelw92_101': labelw92_101, 'labelw92_102': labelw92_102, 'labelw92_103': labelw92_103, 'labelw92_104': labelw92_104, 'labelw92_105': labelw92_105, 'labelw92_106': labelw92_106, 'labelw92_107': labelw92_107, 'labelw92_108': labelw92_108, 'labelw92_109': labelw92_109 }
+	labelw_T.update(labelw92_T)
+	'''---------------------------'''
+	labelw93_90 = xbmc.getInfoLabel('Skin.String(labelw93_90)')
+	'''---------------------------'''
+	labelw93_100 = xbmc.getInfoLabel('Skin.String(labelw93_100)')
+	labelw93_101 = xbmc.getInfoLabel('Skin.String(labelw93_101)')
+	labelw93_102 = xbmc.getInfoLabel('Skin.String(labelw93_102)')
+	labelw93_103 = xbmc.getInfoLabel('Skin.String(labelw93_103)')
+	labelw93_104 = xbmc.getInfoLabel('Skin.String(labelw93_104)')
+	labelw93_105 = xbmc.getInfoLabel('Skin.String(labelw93_105)')
+	labelw93_106 = xbmc.getInfoLabel('Skin.String(labelw93_106)')
+	labelw93_107 = xbmc.getInfoLabel('Skin.String(labelw93_107)')
+	labelw93_108 = xbmc.getInfoLabel('Skin.String(labelw93_108)')
+	labelw93_109 = xbmc.getInfoLabel('Skin.String(labelw93_109)')
+	'''---------------------------'''
+	labelw93_T = { 'labelw93_90': labelw93_90, 'labelw93_100': labelw93_100, 'labelw93_101': labelw93_101, 'labelw93_102': labelw93_102, 'labelw93_103': labelw93_103, 'labelw93_104': labelw93_104, 'labelw93_105': labelw93_105, 'labelw93_106': labelw93_106, 'labelw93_107': labelw93_107, 'labelw93_108': labelw93_108, 'labelw93_109': labelw93_109 }
+	labelw_T.update(labelw93_T)
+	'''---------------------------'''
+	labelw94_90 = xbmc.getInfoLabel('Skin.String(labelw94_90)')
+	'''---------------------------'''
+	labelw94_100 = xbmc.getInfoLabel('Skin.String(labelw94_100)')
+	labelw94_101 = xbmc.getInfoLabel('Skin.String(labelw94_101)')
+	labelw94_102 = xbmc.getInfoLabel('Skin.String(labelw94_102)')
+	labelw94_103 = xbmc.getInfoLabel('Skin.String(labelw94_103)')
+	labelw94_104 = xbmc.getInfoLabel('Skin.String(labelw94_104)')
+	labelw94_105 = xbmc.getInfoLabel('Skin.String(labelw94_105)')
+	labelw94_106 = xbmc.getInfoLabel('Skin.String(labelw94_106)')
+	labelw94_107 = xbmc.getInfoLabel('Skin.String(labelw94_107)')
+	labelw94_108 = xbmc.getInfoLabel('Skin.String(labelw94_108)')
+	labelw94_109 = xbmc.getInfoLabel('Skin.String(labelw94_109)')
+	'''---------------------------'''
+	labelw94_T = { 'labelw94_90': labelw94_90, 'labelw94_100': labelw94_100, 'labelw94_101': labelw94_101, 'labelw94_102': labelw94_102, 'labelw94_103': labelw94_103, 'labelw94_104': labelw94_104, 'labelw94_105': labelw94_105, 'labelw94_106': labelw94_106, 'labelw94_107': labelw94_107, 'labelw94_108': labelw94_108, 'labelw94_109': labelw94_109 }
+	labelw_T.update(labelw94_T)
+	'''---------------------------'''
+	labelw95_90 = xbmc.getInfoLabel('Skin.String(labelw95_90)')
+	'''---------------------------'''
+	labelw95_100 = xbmc.getInfoLabel('Skin.String(labelw95_100)')
+	labelw95_101 = xbmc.getInfoLabel('Skin.String(labelw95_101)')
+	labelw95_102 = xbmc.getInfoLabel('Skin.String(labelw95_102)')
+	labelw95_103 = xbmc.getInfoLabel('Skin.String(labelw95_103)')
+	labelw95_104 = xbmc.getInfoLabel('Skin.String(labelw95_104)')
+	labelw95_105 = xbmc.getInfoLabel('Skin.String(labelw95_105)')
+	labelw95_106 = xbmc.getInfoLabel('Skin.String(labelw95_106)')
+	labelw95_107 = xbmc.getInfoLabel('Skin.String(labelw95_107)')
+	labelw95_108 = xbmc.getInfoLabel('Skin.String(labelw95_108)')
+	labelw95_109 = xbmc.getInfoLabel('Skin.String(labelw95_109)')
+	'''---------------------------'''
+	labelw95_T = { 'labelw95_90': labelw95_90, 'labelw95_100': labelw95_100, 'labelw95_101': labelw95_101, 'labelw95_102': labelw95_102, 'labelw95_103': labelw95_103, 'labelw95_104': labelw95_104, 'labelw95_105': labelw95_105, 'labelw95_106': labelw95_106, 'labelw95_107': labelw95_107, 'labelw95_108': labelw95_108, 'labelw95_109': labelw95_109 }
+	labelw_T.update(labelw95_T)
+	'''---------------------------'''
+	labelw96_90 = xbmc.getInfoLabel('Skin.String(labelw96_90)')
+	'''---------------------------'''
+	labelw96_100 = xbmc.getInfoLabel('Skin.String(labelw96_100)')
+	labelw96_101 = xbmc.getInfoLabel('Skin.String(labelw96_101)')
+	labelw96_102 = xbmc.getInfoLabel('Skin.String(labelw96_102)')
+	labelw96_103 = xbmc.getInfoLabel('Skin.String(labelw96_103)')
+	labelw96_104 = xbmc.getInfoLabel('Skin.String(labelw96_104)')
+	labelw96_105 = xbmc.getInfoLabel('Skin.String(labelw96_105)')
+	labelw96_106 = xbmc.getInfoLabel('Skin.String(labelw96_106)')
+	labelw96_107 = xbmc.getInfoLabel('Skin.String(labelw96_107)')
+	labelw96_108 = xbmc.getInfoLabel('Skin.String(labelw96_108)')
+	labelw96_109 = xbmc.getInfoLabel('Skin.String(labelw96_109)')
+	'''---------------------------'''
+	labelw96_T = { 'labelw96_90': labelw96_90, 'labelw96_100': labelw96_100, 'labelw96_101': labelw96_101, 'labelw96_102': labelw96_102, 'labelw96_103': labelw96_103, 'labelw96_104': labelw96_104, 'labelw96_105': labelw96_105, 'labelw96_106': labelw96_106, 'labelw96_107': labelw96_107, 'labelw96_108': labelw96_108, 'labelw96_109': labelw96_109 }
+	labelw_T.update(labelw96_T)
+	'''---------------------------'''
+	labelw97_90 = xbmc.getInfoLabel('Skin.String(labelw97_90)')
+	'''---------------------------'''
+	labelw97_100 = xbmc.getInfoLabel('Skin.String(labelw97_100)')
+	labelw97_101 = xbmc.getInfoLabel('Skin.String(labelw97_101)')
+	labelw97_102 = xbmc.getInfoLabel('Skin.String(labelw97_102)')
+	labelw97_103 = xbmc.getInfoLabel('Skin.String(labelw97_103)')
+	labelw97_104 = xbmc.getInfoLabel('Skin.String(labelw97_104)')
+	labelw97_105 = xbmc.getInfoLabel('Skin.String(labelw97_105)')
+	labelw97_106 = xbmc.getInfoLabel('Skin.String(labelw97_106)')
+	labelw97_107 = xbmc.getInfoLabel('Skin.String(labelw97_107)')
+	labelw97_108 = xbmc.getInfoLabel('Skin.String(labelw97_108)')
+	labelw97_109 = xbmc.getInfoLabel('Skin.String(labelw97_109)')
+	'''---------------------------'''
+	labelw97_T = { 'labelw97_90': labelw97_90, 'labelw97_100': labelw97_100, 'labelw97_101': labelw97_101, 'labelw97_102': labelw97_102, 'labelw97_103': labelw97_103, 'labelw97_104': labelw97_104, 'labelw97_105': labelw97_105, 'labelw97_106': labelw97_106, 'labelw97_107': labelw97_107, 'labelw97_108': labelw97_108, 'labelw97_109': labelw97_109 }
+	labelw_T.update(labelw97_T)
+	'''---------------------------'''
+	labelw98_90 = xbmc.getInfoLabel('Skin.String(labelw98_90)')
+	'''---------------------------'''
+	labelw98_100 = xbmc.getInfoLabel('Skin.String(labelw98_100)')
+	labelw98_101 = xbmc.getInfoLabel('Skin.String(labelw98_101)')
+	labelw98_102 = xbmc.getInfoLabel('Skin.String(labelw98_102)')
+	labelw98_103 = xbmc.getInfoLabel('Skin.String(labelw98_103)')
+	labelw98_104 = xbmc.getInfoLabel('Skin.String(labelw98_104)')
+	labelw98_105 = xbmc.getInfoLabel('Skin.String(labelw98_105)')
+	labelw98_106 = xbmc.getInfoLabel('Skin.String(labelw98_106)')
+	labelw98_107 = xbmc.getInfoLabel('Skin.String(labelw98_107)')
+	labelw98_108 = xbmc.getInfoLabel('Skin.String(labelw98_108)')
+	labelw98_109 = xbmc.getInfoLabel('Skin.String(labelw98_109)')
+	'''---------------------------'''
+	labelw98_T = { 'labelw98_90': labelw98_90, 'labelw98_100': labelw98_100, 'labelw98_101': labelw98_101, 'labelw98_102': labelw98_102, 'labelw98_103': labelw98_103, 'labelw98_104': labelw98_104, 'labelw98_105': labelw98_105, 'labelw98_106': labelw98_106, 'labelw98_107': labelw98_107, 'labelw98_108': labelw98_108, 'labelw98_109': labelw98_109 }
+	labelw_T.update(labelw98_T)
+	'''---------------------------'''
+	labelw99_90 = xbmc.getInfoLabel('Skin.String(labelw99_90)')
+	'''---------------------------'''
+	labelw99_100 = xbmc.getInfoLabel('Skin.String(labelw99_100)')
+	labelw99_101 = xbmc.getInfoLabel('Skin.String(labelw99_101)')
+	labelw99_102 = xbmc.getInfoLabel('Skin.String(labelw99_102)')
+	labelw99_103 = xbmc.getInfoLabel('Skin.String(labelw99_103)')
+	labelw99_104 = xbmc.getInfoLabel('Skin.String(labelw99_104)')
+	labelw99_105 = xbmc.getInfoLabel('Skin.String(labelw99_105)')
+	labelw99_106 = xbmc.getInfoLabel('Skin.String(labelw99_106)')
+	labelw99_107 = xbmc.getInfoLabel('Skin.String(labelw99_107)')
+	labelw99_108 = xbmc.getInfoLabel('Skin.String(labelw99_108)')
+	labelw99_109 = xbmc.getInfoLabel('Skin.String(labelw99_109)')
+	'''---------------------------'''
+	labelw99_T = { 'labelw99_90': labelw99_90, 'labelw99_100': labelw99_100, 'labelw99_101': labelw99_101, 'labelw99_102': labelw99_102, 'labelw99_103': labelw99_103, 'labelw99_104': labelw99_104, 'labelw99_105': labelw99_105, 'labelw99_106': labelw99_106, 'labelw99_107': labelw99_107, 'labelw99_108': labelw99_108, 'labelw99_109': labelw99_109 }
+	labelw_T.update(labelw99_T)
+	'''---------------------------'''
+	
+	labelw100_90 = xbmc.getInfoLabel('Skin.String(labelw100_90)')
+	'''---------------------------'''
+	labelw100_100 = xbmc.getInfoLabel('Skin.String(labelw100_100)')
+	labelw100_101 = xbmc.getInfoLabel('Skin.String(labelw100_101)')
+	labelw100_102 = xbmc.getInfoLabel('Skin.String(labelw100_102)')
+	labelw100_103 = xbmc.getInfoLabel('Skin.String(labelw100_103)')
+	labelw100_104 = xbmc.getInfoLabel('Skin.String(labelw100_104)')
+	labelw100_105 = xbmc.getInfoLabel('Skin.String(labelw100_105)')
+	labelw100_106 = xbmc.getInfoLabel('Skin.String(labelw100_106)')
+	labelw100_107 = xbmc.getInfoLabel('Skin.String(labelw100_107)')
+	labelw100_108 = xbmc.getInfoLabel('Skin.String(labelw100_108)')
+	labelw100_109 = xbmc.getInfoLabel('Skin.String(labelw100_109)')
+	'''---------------------------'''
+	labelw100_T = { 'labelw100_90': labelw100_90, 'labelw100_100': labelw100_100, 'labelw100_101': labelw100_101, 'labelw100_102': labelw100_102, 'labelw100_103': labelw100_103, 'labelw100_104': labelw100_104, 'labelw100_105': labelw100_105, 'labelw100_106': labelw100_106, 'labelw100_107': labelw100_107, 'labelw100_108': labelw100_108, 'labelw100_109': labelw100_109 }
+	labelw_T.update(labelw100_T)
+	'''---------------------------'''
+	labelw101_90 = xbmc.getInfoLabel('Skin.String(labelw101_90)')
+	'''---------------------------'''
+	labelw101_100 = xbmc.getInfoLabel('Skin.String(labelw101_100)')
+	labelw101_101 = xbmc.getInfoLabel('Skin.String(labelw101_101)')
+	labelw101_102 = xbmc.getInfoLabel('Skin.String(labelw101_102)')
+	labelw101_103 = xbmc.getInfoLabel('Skin.String(labelw101_103)')
+	labelw101_104 = xbmc.getInfoLabel('Skin.String(labelw101_104)')
+	labelw101_105 = xbmc.getInfoLabel('Skin.String(labelw101_105)')
+	labelw101_106 = xbmc.getInfoLabel('Skin.String(labelw101_106)')
+	labelw101_107 = xbmc.getInfoLabel('Skin.String(labelw101_107)')
+	labelw101_108 = xbmc.getInfoLabel('Skin.String(labelw101_108)')
+	labelw101_109 = xbmc.getInfoLabel('Skin.String(labelw101_109)')
+	'''---------------------------'''
+	labelw101_T = { 'labelw101_90': labelw101_90, 'labelw101_100': labelw101_100, 'labelw101_101': labelw101_101, 'labelw101_102': labelw101_102, 'labelw101_103': labelw101_103, 'labelw101_104': labelw101_104, 'labelw101_105': labelw101_105, 'labelw101_106': labelw101_106, 'labelw101_107': labelw101_107, 'labelw101_108': labelw101_108, 'labelw101_109': labelw101_109 }
+	labelw_T.update(labelw101_T)
+	'''---------------------------'''
+	labelw102_90 = xbmc.getInfoLabel('Skin.String(labelw102_90)')
+	'''---------------------------'''
+	labelw102_100 = xbmc.getInfoLabel('Skin.String(labelw102_100)')
+	labelw102_101 = xbmc.getInfoLabel('Skin.String(labelw102_101)')
+	labelw102_102 = xbmc.getInfoLabel('Skin.String(labelw102_102)')
+	labelw102_103 = xbmc.getInfoLabel('Skin.String(labelw102_103)')
+	labelw102_104 = xbmc.getInfoLabel('Skin.String(labelw102_104)')
+	labelw102_105 = xbmc.getInfoLabel('Skin.String(labelw102_105)')
+	labelw102_106 = xbmc.getInfoLabel('Skin.String(labelw102_106)')
+	labelw102_107 = xbmc.getInfoLabel('Skin.String(labelw102_107)')
+	labelw102_108 = xbmc.getInfoLabel('Skin.String(labelw102_108)')
+	labelw102_109 = xbmc.getInfoLabel('Skin.String(labelw102_109)')
+	'''---------------------------'''
+	labelw102_T = { 'labelw102_90': labelw102_90, 'labelw102_100': labelw102_100, 'labelw102_101': labelw102_101, 'labelw102_102': labelw102_102, 'labelw102_103': labelw102_103, 'labelw102_104': labelw102_104, 'labelw102_105': labelw102_105, 'labelw102_106': labelw102_106, 'labelw102_107': labelw102_107, 'labelw102_108': labelw102_108, 'labelw102_109': labelw102_109 }
+	labelw_T.update(labelw102_T)
+	'''---------------------------'''
+	labelw103_90 = xbmc.getInfoLabel('Skin.String(labelw103_90)')
+	'''---------------------------'''
+	labelw103_100 = xbmc.getInfoLabel('Skin.String(labelw103_100)')
+	labelw103_101 = xbmc.getInfoLabel('Skin.String(labelw103_101)')
+	labelw103_102 = xbmc.getInfoLabel('Skin.String(labelw103_102)')
+	labelw103_103 = xbmc.getInfoLabel('Skin.String(labelw103_103)')
+	labelw103_104 = xbmc.getInfoLabel('Skin.String(labelw103_104)')
+	labelw103_105 = xbmc.getInfoLabel('Skin.String(labelw103_105)')
+	labelw103_106 = xbmc.getInfoLabel('Skin.String(labelw103_106)')
+	labelw103_107 = xbmc.getInfoLabel('Skin.String(labelw103_107)')
+	labelw103_108 = xbmc.getInfoLabel('Skin.String(labelw103_108)')
+	labelw103_109 = xbmc.getInfoLabel('Skin.String(labelw103_109)')
+	'''---------------------------'''
+	labelw103_T = { 'labelw103_90': labelw103_90, 'labelw103_100': labelw103_100, 'labelw103_101': labelw103_101, 'labelw103_102': labelw103_102, 'labelw103_103': labelw103_103, 'labelw103_104': labelw103_104, 'labelw103_105': labelw103_105, 'labelw103_106': labelw103_106, 'labelw103_107': labelw103_107, 'labelw103_108': labelw103_108, 'labelw103_109': labelw103_109 }
+	labelw_T.update(labelw103_T)
+	'''---------------------------'''
+	labelw104_90 = xbmc.getInfoLabel('Skin.String(labelw104_90)')
+	'''---------------------------'''
+	labelw104_100 = xbmc.getInfoLabel('Skin.String(labelw104_100)')
+	labelw104_101 = xbmc.getInfoLabel('Skin.String(labelw104_101)')
+	labelw104_102 = xbmc.getInfoLabel('Skin.String(labelw104_102)')
+	labelw104_103 = xbmc.getInfoLabel('Skin.String(labelw104_103)')
+	labelw104_104 = xbmc.getInfoLabel('Skin.String(labelw104_104)')
+	labelw104_105 = xbmc.getInfoLabel('Skin.String(labelw104_105)')
+	labelw104_106 = xbmc.getInfoLabel('Skin.String(labelw104_106)')
+	labelw104_107 = xbmc.getInfoLabel('Skin.String(labelw104_107)')
+	labelw104_108 = xbmc.getInfoLabel('Skin.String(labelw104_108)')
+	labelw104_109 = xbmc.getInfoLabel('Skin.String(labelw104_109)')
+	'''---------------------------'''
+	labelw104_T = { 'labelw104_90': labelw104_90, 'labelw104_100': labelw104_100, 'labelw104_101': labelw104_101, 'labelw104_102': labelw104_102, 'labelw104_103': labelw104_103, 'labelw104_104': labelw104_104, 'labelw104_105': labelw104_105, 'labelw104_106': labelw104_106, 'labelw104_107': labelw104_107, 'labelw104_108': labelw104_108, 'labelw104_109': labelw104_109 }
+	labelw_T.update(labelw104_T)
+	'''---------------------------'''
+	labelw105_90 = xbmc.getInfoLabel('Skin.String(labelw105_90)')
+	'''---------------------------'''
+	labelw105_100 = xbmc.getInfoLabel('Skin.String(labelw105_100)')
+	labelw105_101 = xbmc.getInfoLabel('Skin.String(labelw105_101)')
+	labelw105_102 = xbmc.getInfoLabel('Skin.String(labelw105_102)')
+	labelw105_103 = xbmc.getInfoLabel('Skin.String(labelw105_103)')
+	labelw105_104 = xbmc.getInfoLabel('Skin.String(labelw105_104)')
+	labelw105_105 = xbmc.getInfoLabel('Skin.String(labelw105_105)')
+	labelw105_106 = xbmc.getInfoLabel('Skin.String(labelw105_106)')
+	labelw105_107 = xbmc.getInfoLabel('Skin.String(labelw105_107)')
+	labelw105_108 = xbmc.getInfoLabel('Skin.String(labelw105_108)')
+	labelw105_109 = xbmc.getInfoLabel('Skin.String(labelw105_109)')
+	'''---------------------------'''
+	labelw105_T = { 'labelw105_90': labelw105_90, 'labelw105_100': labelw105_100, 'labelw105_101': labelw105_101, 'labelw105_102': labelw105_102, 'labelw105_103': labelw105_103, 'labelw105_104': labelw105_104, 'labelw105_105': labelw105_105, 'labelw105_106': labelw105_106, 'labelw105_107': labelw105_107, 'labelw105_108': labelw105_108, 'labelw105_109': labelw105_109 }
+	labelw_T.update(labelw105_T)
+	'''---------------------------'''
+	labelw106_90 = xbmc.getInfoLabel('Skin.String(labelw106_90)')
+	'''---------------------------'''
+	labelw106_100 = xbmc.getInfoLabel('Skin.String(labelw106_100)')
+	labelw106_101 = xbmc.getInfoLabel('Skin.String(labelw106_101)')
+	labelw106_102 = xbmc.getInfoLabel('Skin.String(labelw106_102)')
+	labelw106_103 = xbmc.getInfoLabel('Skin.String(labelw106_103)')
+	labelw106_104 = xbmc.getInfoLabel('Skin.String(labelw106_104)')
+	labelw106_105 = xbmc.getInfoLabel('Skin.String(labelw106_105)')
+	labelw106_106 = xbmc.getInfoLabel('Skin.String(labelw106_106)')
+	labelw106_107 = xbmc.getInfoLabel('Skin.String(labelw106_107)')
+	labelw106_108 = xbmc.getInfoLabel('Skin.String(labelw106_108)')
+	labelw106_109 = xbmc.getInfoLabel('Skin.String(labelw106_109)')
+	'''---------------------------'''
+	labelw106_T = { 'labelw106_90': labelw106_90, 'labelw106_100': labelw106_100, 'labelw106_101': labelw106_101, 'labelw106_102': labelw106_102, 'labelw106_103': labelw106_103, 'labelw106_104': labelw106_104, 'labelw106_105': labelw106_105, 'labelw106_106': labelw106_106, 'labelw106_107': labelw106_107, 'labelw106_108': labelw106_108, 'labelw106_109': labelw106_109 }
+	labelw_T.update(labelw106_T)
+	'''---------------------------'''
+	labelw107_90 = xbmc.getInfoLabel('Skin.String(labelw107_90)')
+	'''---------------------------'''
+	labelw107_100 = xbmc.getInfoLabel('Skin.String(labelw107_100)')
+	labelw107_101 = xbmc.getInfoLabel('Skin.String(labelw107_101)')
+	labelw107_102 = xbmc.getInfoLabel('Skin.String(labelw107_102)')
+	labelw107_103 = xbmc.getInfoLabel('Skin.String(labelw107_103)')
+	labelw107_104 = xbmc.getInfoLabel('Skin.String(labelw107_104)')
+	labelw107_105 = xbmc.getInfoLabel('Skin.String(labelw107_105)')
+	labelw107_106 = xbmc.getInfoLabel('Skin.String(labelw107_106)')
+	labelw107_107 = xbmc.getInfoLabel('Skin.String(labelw107_107)')
+	labelw107_108 = xbmc.getInfoLabel('Skin.String(labelw107_108)')
+	labelw107_109 = xbmc.getInfoLabel('Skin.String(labelw107_109)')
+	'''---------------------------'''
+	labelw107_T = { 'labelw107_90': labelw107_90, 'labelw107_100': labelw107_100, 'labelw107_101': labelw107_101, 'labelw107_102': labelw107_102, 'labelw107_103': labelw107_103, 'labelw107_104': labelw107_104, 'labelw107_105': labelw107_105, 'labelw107_106': labelw107_106, 'labelw107_107': labelw107_107, 'labelw107_108': labelw107_108, 'labelw107_109': labelw107_109 }
+	labelw_T.update(labelw107_T)
+	'''---------------------------'''
+	labelw108_90 = xbmc.getInfoLabel('Skin.String(labelw108_90)')
+	'''---------------------------'''
+	labelw108_100 = xbmc.getInfoLabel('Skin.String(labelw108_100)')
+	labelw108_101 = xbmc.getInfoLabel('Skin.String(labelw108_101)')
+	labelw108_102 = xbmc.getInfoLabel('Skin.String(labelw108_102)')
+	labelw108_103 = xbmc.getInfoLabel('Skin.String(labelw108_103)')
+	labelw108_104 = xbmc.getInfoLabel('Skin.String(labelw108_104)')
+	labelw108_105 = xbmc.getInfoLabel('Skin.String(labelw108_105)')
+	labelw108_106 = xbmc.getInfoLabel('Skin.String(labelw108_106)')
+	labelw108_107 = xbmc.getInfoLabel('Skin.String(labelw108_107)')
+	labelw108_108 = xbmc.getInfoLabel('Skin.String(labelw108_108)')
+	labelw108_109 = xbmc.getInfoLabel('Skin.String(labelw108_109)')
+	'''---------------------------'''
+	labelw108_T = { 'labelw108_90': labelw108_90, 'labelw108_100': labelw108_100, 'labelw108_101': labelw108_101, 'labelw108_102': labelw108_102, 'labelw108_103': labelw108_103, 'labelw108_104': labelw108_104, 'labelw108_105': labelw108_105, 'labelw108_106': labelw108_106, 'labelw108_107': labelw108_107, 'labelw108_108': labelw108_108, 'labelw108_109': labelw108_109 }
+	labelw_T.update(labelw108_T)
+	'''---------------------------'''
+	labelw109_90 = xbmc.getInfoLabel('Skin.String(labelw109_90)')
+	'''---------------------------'''
+	labelw109_100 = xbmc.getInfoLabel('Skin.String(labelw109_100)')
+	labelw109_101 = xbmc.getInfoLabel('Skin.String(labelw109_101)')
+	labelw109_102 = xbmc.getInfoLabel('Skin.String(labelw109_102)')
+	labelw109_103 = xbmc.getInfoLabel('Skin.String(labelw109_103)')
+	labelw109_104 = xbmc.getInfoLabel('Skin.String(labelw109_104)')
+	labelw109_105 = xbmc.getInfoLabel('Skin.String(labelw109_105)')
+	labelw109_106 = xbmc.getInfoLabel('Skin.String(labelw109_106)')
+	labelw109_107 = xbmc.getInfoLabel('Skin.String(labelw109_107)')
+	labelw109_108 = xbmc.getInfoLabel('Skin.String(labelw109_108)')
+	labelw109_109 = xbmc.getInfoLabel('Skin.String(labelw109_109)')
+	'''---------------------------'''
+	labelw109_T = { 'labelw109_90': labelw109_90, 'labelw109_100': labelw109_100, 'labelw109_101': labelw109_101, 'labelw109_102': labelw109_102, 'labelw109_103': labelw109_103, 'labelw109_104': labelw109_104, 'labelw109_105': labelw109_105, 'labelw109_106': labelw109_106, 'labelw109_107': labelw109_107, 'labelw109_108': labelw109_108, 'labelw109_109': labelw109_109 }
+	labelw_T.update(labelw109_T)
+	
+	labelw110_90 = xbmc.getInfoLabel('Skin.String(labelw110_90)')
+	'''---------------------------'''
+	labelw110_100 = xbmc.getInfoLabel('Skin.String(labelw110_100)')
+	labelw110_101 = xbmc.getInfoLabel('Skin.String(labelw110_101)')
+	labelw110_102 = xbmc.getInfoLabel('Skin.String(labelw110_102)')
+	labelw110_103 = xbmc.getInfoLabel('Skin.String(labelw110_103)')
+	labelw110_104 = xbmc.getInfoLabel('Skin.String(labelw110_104)')
+	labelw110_105 = xbmc.getInfoLabel('Skin.String(labelw110_105)')
+	labelw110_106 = xbmc.getInfoLabel('Skin.String(labelw110_106)')
+	labelw110_107 = xbmc.getInfoLabel('Skin.String(labelw110_107)')
+	labelw110_108 = xbmc.getInfoLabel('Skin.String(labelw110_108)')
+	labelw110_109 = xbmc.getInfoLabel('Skin.String(labelw110_109)')
+	'''---------------------------'''
+	labelw110_T = { 'labelw110_90': labelw110_90, 'labelw110_100': labelw110_100, 'labelw110_101': labelw110_101, 'labelw110_102': labelw110_102, 'labelw110_103': labelw110_103, 'labelw110_104': labelw110_104, 'labelw110_105': labelw110_105, 'labelw110_106': labelw110_106, 'labelw110_107': labelw110_107, 'labelw110_108': labelw110_108, 'labelw110_109': labelw110_109 }
+	labelw_T.update(labelw110_T)
+	'''---------------------------'''
+	labelw111_90 = xbmc.getInfoLabel('Skin.String(labelw111_90)')
+	'''---------------------------'''
+	labelw111_100 = xbmc.getInfoLabel('Skin.String(labelw111_100)')
+	labelw111_101 = xbmc.getInfoLabel('Skin.String(labelw111_101)')
+	labelw111_102 = xbmc.getInfoLabel('Skin.String(labelw111_102)')
+	labelw111_103 = xbmc.getInfoLabel('Skin.String(labelw111_103)')
+	labelw111_104 = xbmc.getInfoLabel('Skin.String(labelw111_104)')
+	labelw111_105 = xbmc.getInfoLabel('Skin.String(labelw111_105)')
+	labelw111_106 = xbmc.getInfoLabel('Skin.String(labelw111_106)')
+	labelw111_107 = xbmc.getInfoLabel('Skin.String(labelw111_107)')
+	labelw111_108 = xbmc.getInfoLabel('Skin.String(labelw111_108)')
+	labelw111_109 = xbmc.getInfoLabel('Skin.String(labelw111_109)')
+	'''---------------------------'''
+	labelw111_T = { 'labelw111_90': labelw111_90, 'labelw111_100': labelw111_100, 'labelw111_101': labelw111_101, 'labelw111_102': labelw111_102, 'labelw111_103': labelw111_103, 'labelw111_104': labelw111_104, 'labelw111_105': labelw111_105, 'labelw111_106': labelw111_106, 'labelw111_107': labelw111_107, 'labelw111_108': labelw111_108, 'labelw111_109': labelw111_109 }
+	labelw_T.update(labelw111_T)
+	'''---------------------------'''
+	labelw112_90 = xbmc.getInfoLabel('Skin.String(labelw112_90)')
+	'''---------------------------'''
+	labelw112_100 = xbmc.getInfoLabel('Skin.String(labelw112_100)')
+	labelw112_101 = xbmc.getInfoLabel('Skin.String(labelw112_101)')
+	labelw112_102 = xbmc.getInfoLabel('Skin.String(labelw112_102)')
+	labelw112_103 = xbmc.getInfoLabel('Skin.String(labelw112_103)')
+	labelw112_104 = xbmc.getInfoLabel('Skin.String(labelw112_104)')
+	labelw112_105 = xbmc.getInfoLabel('Skin.String(labelw112_105)')
+	labelw112_106 = xbmc.getInfoLabel('Skin.String(labelw112_106)')
+	labelw112_107 = xbmc.getInfoLabel('Skin.String(labelw112_107)')
+	labelw112_108 = xbmc.getInfoLabel('Skin.String(labelw112_108)')
+	labelw112_109 = xbmc.getInfoLabel('Skin.String(labelw112_109)')
+	'''---------------------------'''
+	labelw112_T = { 'labelw112_90': labelw112_90, 'labelw112_100': labelw112_100, 'labelw112_101': labelw112_101, 'labelw112_102': labelw112_102, 'labelw112_103': labelw112_103, 'labelw112_104': labelw112_104, 'labelw112_105': labelw112_105, 'labelw112_106': labelw112_106, 'labelw112_107': labelw112_107, 'labelw112_108': labelw112_108, 'labelw112_109': labelw112_109 }
+	labelw_T.update(labelw112_T)
+	'''---------------------------'''
+	labelw113_90 = xbmc.getInfoLabel('Skin.String(labelw113_90)')
+	'''---------------------------'''
+	labelw113_100 = xbmc.getInfoLabel('Skin.String(labelw113_100)')
+	labelw113_101 = xbmc.getInfoLabel('Skin.String(labelw113_101)')
+	labelw113_102 = xbmc.getInfoLabel('Skin.String(labelw113_102)')
+	labelw113_103 = xbmc.getInfoLabel('Skin.String(labelw113_103)')
+	labelw113_104 = xbmc.getInfoLabel('Skin.String(labelw113_104)')
+	labelw113_105 = xbmc.getInfoLabel('Skin.String(labelw113_105)')
+	labelw113_106 = xbmc.getInfoLabel('Skin.String(labelw113_106)')
+	labelw113_107 = xbmc.getInfoLabel('Skin.String(labelw113_107)')
+	labelw113_108 = xbmc.getInfoLabel('Skin.String(labelw113_108)')
+	labelw113_109 = xbmc.getInfoLabel('Skin.String(labelw113_109)')
+	'''---------------------------'''
+	labelw113_T = { 'labelw113_90': labelw113_90, 'labelw113_100': labelw113_100, 'labelw113_101': labelw113_101, 'labelw113_102': labelw113_102, 'labelw113_103': labelw113_103, 'labelw113_104': labelw113_104, 'labelw113_105': labelw113_105, 'labelw113_106': labelw113_106, 'labelw113_107': labelw113_107, 'labelw113_108': labelw113_108, 'labelw113_109': labelw113_109 }
+	labelw_T.update(labelw113_T)
+	'''---------------------------'''
+	labelw114_90 = xbmc.getInfoLabel('Skin.String(labelw114_90)')
+	'''---------------------------'''
+	labelw114_100 = xbmc.getInfoLabel('Skin.String(labelw114_100)')
+	labelw114_101 = xbmc.getInfoLabel('Skin.String(labelw114_101)')
+	labelw114_102 = xbmc.getInfoLabel('Skin.String(labelw114_102)')
+	labelw114_103 = xbmc.getInfoLabel('Skin.String(labelw114_103)')
+	labelw114_104 = xbmc.getInfoLabel('Skin.String(labelw114_104)')
+	labelw114_105 = xbmc.getInfoLabel('Skin.String(labelw114_105)')
+	labelw114_106 = xbmc.getInfoLabel('Skin.String(labelw114_106)')
+	labelw114_107 = xbmc.getInfoLabel('Skin.String(labelw114_107)')
+	labelw114_108 = xbmc.getInfoLabel('Skin.String(labelw114_108)')
+	labelw114_109 = xbmc.getInfoLabel('Skin.String(labelw114_109)')
+	'''---------------------------'''
+	labelw114_T = { 'labelw114_90': labelw114_90, 'labelw114_100': labelw114_100, 'labelw114_101': labelw114_101, 'labelw114_102': labelw114_102, 'labelw114_103': labelw114_103, 'labelw114_104': labelw114_104, 'labelw114_105': labelw114_105, 'labelw114_106': labelw114_106, 'labelw114_107': labelw114_107, 'labelw114_108': labelw114_108, 'labelw114_109': labelw114_109 }
+	labelw_T.update(labelw114_T)
+	'''---------------------------'''
+	labelw115_90 = xbmc.getInfoLabel('Skin.String(labelw115_90)')
+	'''---------------------------'''
+	labelw115_100 = xbmc.getInfoLabel('Skin.String(labelw115_100)')
+	labelw115_101 = xbmc.getInfoLabel('Skin.String(labelw115_101)')
+	labelw115_102 = xbmc.getInfoLabel('Skin.String(labelw115_102)')
+	labelw115_103 = xbmc.getInfoLabel('Skin.String(labelw115_103)')
+	labelw115_104 = xbmc.getInfoLabel('Skin.String(labelw115_104)')
+	labelw115_105 = xbmc.getInfoLabel('Skin.String(labelw115_105)')
+	labelw115_106 = xbmc.getInfoLabel('Skin.String(labelw115_106)')
+	labelw115_107 = xbmc.getInfoLabel('Skin.String(labelw115_107)')
+	labelw115_108 = xbmc.getInfoLabel('Skin.String(labelw115_108)')
+	labelw115_109 = xbmc.getInfoLabel('Skin.String(labelw115_109)')
+	'''---------------------------'''
+	labelw115_T = { 'labelw115_90': labelw115_90, 'labelw115_100': labelw115_100, 'labelw115_101': labelw115_101, 'labelw115_102': labelw115_102, 'labelw115_103': labelw115_103, 'labelw115_104': labelw115_104, 'labelw115_105': labelw115_105, 'labelw115_106': labelw115_106, 'labelw115_107': labelw115_107, 'labelw115_108': labelw115_108, 'labelw115_109': labelw115_109 }
+	labelw_T.update(labelw115_T)
+	'''---------------------------'''
+	labelw116_90 = xbmc.getInfoLabel('Skin.String(labelw116_90)')
+	'''---------------------------'''
+	labelw116_100 = xbmc.getInfoLabel('Skin.String(labelw116_100)')
+	labelw116_101 = xbmc.getInfoLabel('Skin.String(labelw116_101)')
+	labelw116_102 = xbmc.getInfoLabel('Skin.String(labelw116_102)')
+	labelw116_103 = xbmc.getInfoLabel('Skin.String(labelw116_103)')
+	labelw116_104 = xbmc.getInfoLabel('Skin.String(labelw116_104)')
+	labelw116_105 = xbmc.getInfoLabel('Skin.String(labelw116_105)')
+	labelw116_106 = xbmc.getInfoLabel('Skin.String(labelw116_106)')
+	labelw116_107 = xbmc.getInfoLabel('Skin.String(labelw116_107)')
+	labelw116_108 = xbmc.getInfoLabel('Skin.String(labelw116_108)')
+	labelw116_109 = xbmc.getInfoLabel('Skin.String(labelw116_109)')
+	'''---------------------------'''
+	labelw116_T = { 'labelw116_90': labelw116_90, 'labelw116_100': labelw116_100, 'labelw116_101': labelw116_101, 'labelw116_102': labelw116_102, 'labelw116_103': labelw116_103, 'labelw116_104': labelw116_104, 'labelw116_105': labelw116_105, 'labelw116_106': labelw116_106, 'labelw116_107': labelw116_107, 'labelw116_108': labelw116_108, 'labelw116_109': labelw116_109 }
+	labelw_T.update(labelw116_T)
+	'''---------------------------'''
+	labelw117_90 = xbmc.getInfoLabel('Skin.String(labelw117_90)')
+	'''---------------------------'''
+	labelw117_100 = xbmc.getInfoLabel('Skin.String(labelw117_100)')
+	labelw117_101 = xbmc.getInfoLabel('Skin.String(labelw117_101)')
+	labelw117_102 = xbmc.getInfoLabel('Skin.String(labelw117_102)')
+	labelw117_103 = xbmc.getInfoLabel('Skin.String(labelw117_103)')
+	labelw117_104 = xbmc.getInfoLabel('Skin.String(labelw117_104)')
+	labelw117_105 = xbmc.getInfoLabel('Skin.String(labelw117_105)')
+	labelw117_106 = xbmc.getInfoLabel('Skin.String(labelw117_106)')
+	labelw117_107 = xbmc.getInfoLabel('Skin.String(labelw117_107)')
+	labelw117_108 = xbmc.getInfoLabel('Skin.String(labelw117_108)')
+	labelw117_109 = xbmc.getInfoLabel('Skin.String(labelw117_109)')
+	'''---------------------------'''
+	labelw117_T = { 'labelw117_90': labelw117_90, 'labelw117_100': labelw117_100, 'labelw117_101': labelw117_101, 'labelw117_102': labelw117_102, 'labelw117_103': labelw117_103, 'labelw117_104': labelw117_104, 'labelw117_105': labelw117_105, 'labelw117_106': labelw117_106, 'labelw117_107': labelw117_107, 'labelw117_108': labelw117_108, 'labelw117_109': labelw117_109 }
+	labelw_T.update(labelw117_T)
+	'''---------------------------'''
+	labelw118_90 = xbmc.getInfoLabel('Skin.String(labelw118_90)')
+	'''---------------------------'''
+	labelw118_100 = xbmc.getInfoLabel('Skin.String(labelw118_100)')
+	labelw118_101 = xbmc.getInfoLabel('Skin.String(labelw118_101)')
+	labelw118_102 = xbmc.getInfoLabel('Skin.String(labelw118_102)')
+	labelw118_103 = xbmc.getInfoLabel('Skin.String(labelw118_103)')
+	labelw118_104 = xbmc.getInfoLabel('Skin.String(labelw118_104)')
+	labelw118_105 = xbmc.getInfoLabel('Skin.String(labelw118_105)')
+	labelw118_106 = xbmc.getInfoLabel('Skin.String(labelw118_106)')
+	labelw118_107 = xbmc.getInfoLabel('Skin.String(labelw118_107)')
+	labelw118_108 = xbmc.getInfoLabel('Skin.String(labelw118_108)')
+	labelw118_109 = xbmc.getInfoLabel('Skin.String(labelw118_109)')
+	'''---------------------------'''
+	labelw118_T = { 'labelw118_90': labelw118_90, 'labelw118_100': labelw118_100, 'labelw118_101': labelw118_101, 'labelw118_102': labelw118_102, 'labelw118_103': labelw118_103, 'labelw118_104': labelw118_104, 'labelw118_105': labelw118_105, 'labelw118_106': labelw118_106, 'labelw118_107': labelw118_107, 'labelw118_108': labelw118_108, 'labelw118_109': labelw118_109 }
+	labelw_T.update(labelw118_T)
+	'''---------------------------'''
+	labelw119_90 = xbmc.getInfoLabel('Skin.String(labelw119_90)')
+	'''---------------------------'''
+	labelw119_100 = xbmc.getInfoLabel('Skin.String(labelw119_100)')
+	labelw119_101 = xbmc.getInfoLabel('Skin.String(labelw119_101)')
+	labelw119_102 = xbmc.getInfoLabel('Skin.String(labelw119_102)')
+	labelw119_103 = xbmc.getInfoLabel('Skin.String(labelw119_103)')
+	labelw119_104 = xbmc.getInfoLabel('Skin.String(labelw119_104)')
+	labelw119_105 = xbmc.getInfoLabel('Skin.String(labelw119_105)')
+	labelw119_106 = xbmc.getInfoLabel('Skin.String(labelw119_106)')
+	labelw119_107 = xbmc.getInfoLabel('Skin.String(labelw119_107)')
+	labelw119_108 = xbmc.getInfoLabel('Skin.String(labelw119_108)')
+	labelw119_109 = xbmc.getInfoLabel('Skin.String(labelw119_109)')
+	'''---------------------------'''
+	labelw119_T = { 'labelw119_90': labelw119_90, 'labelw119_100': labelw119_100, 'labelw119_101': labelw119_101, 'labelw119_102': labelw119_102, 'labelw119_103': labelw119_103, 'labelw119_104': labelw119_104, 'labelw119_105': labelw119_105, 'labelw119_106': labelw119_106, 'labelw119_107': labelw119_107, 'labelw119_108': labelw119_108, 'labelw119_109': labelw119_109 }
+	labelw_T.update(labelw119_T)
+	
+	
+	actionw_T = {}
+	'''---------------------------'''
+	actionw90_90 = xbmc.getInfoLabel('Skin.String(actionw90_90)')
+	'''---------------------------'''
+	actionw90_100 = xbmc.getInfoLabel('Skin.String(actionw90_100)')
+	actionw90_101 = xbmc.getInfoLabel('Skin.String(actionw90_101)')
+	actionw90_102 = xbmc.getInfoLabel('Skin.String(actionw90_102)')
+	actionw90_103 = xbmc.getInfoLabel('Skin.String(actionw90_103)')
+	actionw90_104 = xbmc.getInfoLabel('Skin.String(actionw90_104)')
+	actionw90_105 = xbmc.getInfoLabel('Skin.String(actionw90_105)')
+	actionw90_106 = xbmc.getInfoLabel('Skin.String(actionw90_106)')
+	actionw90_107 = xbmc.getInfoLabel('Skin.String(actionw90_107)')
+	actionw90_108 = xbmc.getInfoLabel('Skin.String(actionw90_108)')
+	actionw90_109 = xbmc.getInfoLabel('Skin.String(actionw90_109)')
+	'''---------------------------'''
+	actionw90_T = { 'actionw90_90': actionw90_90, 'actionw90_100': actionw90_100, 'actionw90_101': actionw90_101, 'actionw90_102': actionw90_102, 'actionw90_103': actionw90_103, 'actionw90_104': actionw90_104, 'actionw90_105': actionw90_105, 'actionw90_106': actionw90_106, 'actionw90_107': actionw90_107, 'actionw90_108': actionw90_108, 'actionw90_109': actionw90_109 }
+	actionw_T.update(actionw90_T)
+	'''---------------------------'''
+	actionw91_90 = xbmc.getInfoLabel('Skin.String(actionw91_90)')
+	'''---------------------------'''
+	actionw91_100 = xbmc.getInfoLabel('Skin.String(actionw91_100)')
+	actionw91_101 = xbmc.getInfoLabel('Skin.String(actionw91_101)')
+	actionw91_102 = xbmc.getInfoLabel('Skin.String(actionw91_102)')
+	actionw91_103 = xbmc.getInfoLabel('Skin.String(actionw91_103)')
+	actionw91_104 = xbmc.getInfoLabel('Skin.String(actionw91_104)')
+	actionw91_105 = xbmc.getInfoLabel('Skin.String(actionw91_105)')
+	actionw91_106 = xbmc.getInfoLabel('Skin.String(actionw91_106)')
+	actionw91_107 = xbmc.getInfoLabel('Skin.String(actionw91_107)')
+	actionw91_108 = xbmc.getInfoLabel('Skin.String(actionw91_108)')
+	actionw91_109 = xbmc.getInfoLabel('Skin.String(actionw91_109)')
+	'''---------------------------'''
+	actionw91_T = { 'actionw91_90': actionw91_90, 'actionw91_100': actionw91_100, 'actionw91_101': actionw91_101, 'actionw91_102': actionw91_102, 'actionw91_103': actionw91_103, 'actionw91_104': actionw91_104, 'actionw91_105': actionw91_105, 'actionw91_106': actionw91_106, 'actionw91_107': actionw91_107, 'actionw91_108': actionw91_108, 'actionw91_109': actionw91_109 }
+	actionw_T.update(actionw91_T)
+	'''---------------------------'''
+	actionw92_90 = xbmc.getInfoLabel('Skin.String(actionw92_90)')
+	'''---------------------------'''
+	actionw92_100 = xbmc.getInfoLabel('Skin.String(actionw92_100)')
+	actionw92_101 = xbmc.getInfoLabel('Skin.String(actionw92_101)')
+	actionw92_102 = xbmc.getInfoLabel('Skin.String(actionw92_102)')
+	actionw92_103 = xbmc.getInfoLabel('Skin.String(actionw92_103)')
+	actionw92_104 = xbmc.getInfoLabel('Skin.String(actionw92_104)')
+	actionw92_105 = xbmc.getInfoLabel('Skin.String(actionw92_105)')
+	actionw92_106 = xbmc.getInfoLabel('Skin.String(actionw92_106)')
+	actionw92_107 = xbmc.getInfoLabel('Skin.String(actionw92_107)')
+	actionw92_108 = xbmc.getInfoLabel('Skin.String(actionw92_108)')
+	actionw92_109 = xbmc.getInfoLabel('Skin.String(actionw92_109)')
+	'''---------------------------'''
+	actionw92_T = { 'actionw92_90': actionw92_90, 'actionw92_100': actionw92_100, 'actionw92_101': actionw92_101, 'actionw92_102': actionw92_102, 'actionw92_103': actionw92_103, 'actionw92_104': actionw92_104, 'actionw92_105': actionw92_105, 'actionw92_106': actionw92_106, 'actionw92_107': actionw92_107, 'actionw92_108': actionw92_108, 'actionw92_109': actionw92_109 }
+	actionw_T.update(actionw92_T)
+	'''---------------------------'''
+	actionw93_90 = xbmc.getInfoLabel('Skin.String(actionw93_90)')
+	'''---------------------------'''
+	actionw93_100 = xbmc.getInfoLabel('Skin.String(actionw93_100)')
+	actionw93_101 = xbmc.getInfoLabel('Skin.String(actionw93_101)')
+	actionw93_102 = xbmc.getInfoLabel('Skin.String(actionw93_102)')
+	actionw93_103 = xbmc.getInfoLabel('Skin.String(actionw93_103)')
+	actionw93_104 = xbmc.getInfoLabel('Skin.String(actionw93_104)')
+	actionw93_105 = xbmc.getInfoLabel('Skin.String(actionw93_105)')
+	actionw93_106 = xbmc.getInfoLabel('Skin.String(actionw93_106)')
+	actionw93_107 = xbmc.getInfoLabel('Skin.String(actionw93_107)')
+	actionw93_108 = xbmc.getInfoLabel('Skin.String(actionw93_108)')
+	actionw93_109 = xbmc.getInfoLabel('Skin.String(actionw93_109)')
+	'''---------------------------'''
+	actionw93_T = { 'actionw93_90': actionw93_90, 'actionw93_100': actionw93_100, 'actionw93_101': actionw93_101, 'actionw93_102': actionw93_102, 'actionw93_103': actionw93_103, 'actionw93_104': actionw93_104, 'actionw93_105': actionw93_105, 'actionw93_106': actionw93_106, 'actionw93_107': actionw93_107, 'actionw93_108': actionw93_108, 'actionw93_109': actionw93_109 }
+	actionw_T.update(actionw93_T)
+	'''---------------------------'''
+	actionw94_90 = xbmc.getInfoLabel('Skin.String(actionw94_90)')
+	'''---------------------------'''
+	actionw94_100 = xbmc.getInfoLabel('Skin.String(actionw94_100)')
+	actionw94_101 = xbmc.getInfoLabel('Skin.String(actionw94_101)')
+	actionw94_102 = xbmc.getInfoLabel('Skin.String(actionw94_102)')
+	actionw94_103 = xbmc.getInfoLabel('Skin.String(actionw94_103)')
+	actionw94_104 = xbmc.getInfoLabel('Skin.String(actionw94_104)')
+	actionw94_105 = xbmc.getInfoLabel('Skin.String(actionw94_105)')
+	actionw94_106 = xbmc.getInfoLabel('Skin.String(actionw94_106)')
+	actionw94_107 = xbmc.getInfoLabel('Skin.String(actionw94_107)')
+	actionw94_108 = xbmc.getInfoLabel('Skin.String(actionw94_108)')
+	actionw94_109 = xbmc.getInfoLabel('Skin.String(actionw94_109)')
+	'''---------------------------'''
+	actionw94_T = { 'actionw94_90': actionw94_90, 'actionw94_100': actionw94_100, 'actionw94_101': actionw94_101, 'actionw94_102': actionw94_102, 'actionw94_103': actionw94_103, 'actionw94_104': actionw94_104, 'actionw94_105': actionw94_105, 'actionw94_106': actionw94_106, 'actionw94_107': actionw94_107, 'actionw94_108': actionw94_108, 'actionw94_109': actionw94_109 }
+	actionw_T.update(actionw94_T)
+	'''---------------------------'''
+	actionw95_90 = xbmc.getInfoLabel('Skin.String(actionw95_90)')
+	'''---------------------------'''
+	actionw95_100 = xbmc.getInfoLabel('Skin.String(actionw95_100)')
+	actionw95_101 = xbmc.getInfoLabel('Skin.String(actionw95_101)')
+	actionw95_102 = xbmc.getInfoLabel('Skin.String(actionw95_102)')
+	actionw95_103 = xbmc.getInfoLabel('Skin.String(actionw95_103)')
+	actionw95_104 = xbmc.getInfoLabel('Skin.String(actionw95_104)')
+	actionw95_105 = xbmc.getInfoLabel('Skin.String(actionw95_105)')
+	actionw95_106 = xbmc.getInfoLabel('Skin.String(actionw95_106)')
+	actionw95_107 = xbmc.getInfoLabel('Skin.String(actionw95_107)')
+	actionw95_108 = xbmc.getInfoLabel('Skin.String(actionw95_108)')
+	actionw95_109 = xbmc.getInfoLabel('Skin.String(actionw95_109)')
+	'''---------------------------'''
+	actionw95_T = { 'actionw95_90': actionw95_90, 'actionw95_100': actionw95_100, 'actionw95_101': actionw95_101, 'actionw95_102': actionw95_102, 'actionw95_103': actionw95_103, 'actionw95_104': actionw95_104, 'actionw95_105': actionw95_105, 'actionw95_106': actionw95_106, 'actionw95_107': actionw95_107, 'actionw95_108': actionw95_108, 'actionw95_109': actionw95_109 }
+	actionw_T.update(actionw95_T)
+	'''---------------------------'''
+	actionw96_90 = xbmc.getInfoLabel('Skin.String(actionw96_90)')
+	'''---------------------------'''
+	actionw96_100 = xbmc.getInfoLabel('Skin.String(actionw96_100)')
+	actionw96_101 = xbmc.getInfoLabel('Skin.String(actionw96_101)')
+	actionw96_102 = xbmc.getInfoLabel('Skin.String(actionw96_102)')
+	actionw96_103 = xbmc.getInfoLabel('Skin.String(actionw96_103)')
+	actionw96_104 = xbmc.getInfoLabel('Skin.String(actionw96_104)')
+	actionw96_105 = xbmc.getInfoLabel('Skin.String(actionw96_105)')
+	actionw96_106 = xbmc.getInfoLabel('Skin.String(actionw96_106)')
+	actionw96_107 = xbmc.getInfoLabel('Skin.String(actionw96_107)')
+	actionw96_108 = xbmc.getInfoLabel('Skin.String(actionw96_108)')
+	actionw96_109 = xbmc.getInfoLabel('Skin.String(actionw96_109)')
+	'''---------------------------'''
+	actionw96_T = { 'actionw96_90': actionw96_90, 'actionw96_100': actionw96_100, 'actionw96_101': actionw96_101, 'actionw96_102': actionw96_102, 'actionw96_103': actionw96_103, 'actionw96_104': actionw96_104, 'actionw96_105': actionw96_105, 'actionw96_106': actionw96_106, 'actionw96_107': actionw96_107, 'actionw96_108': actionw96_108, 'actionw96_109': actionw96_109 }
+	actionw_T.update(actionw96_T)
+	'''---------------------------'''
+	actionw97_90 = xbmc.getInfoLabel('Skin.String(actionw97_90)')
+	'''---------------------------'''
+	actionw97_100 = xbmc.getInfoLabel('Skin.String(actionw97_100)')
+	actionw97_101 = xbmc.getInfoLabel('Skin.String(actionw97_101)')
+	actionw97_102 = xbmc.getInfoLabel('Skin.String(actionw97_102)')
+	actionw97_103 = xbmc.getInfoLabel('Skin.String(actionw97_103)')
+	actionw97_104 = xbmc.getInfoLabel('Skin.String(actionw97_104)')
+	actionw97_105 = xbmc.getInfoLabel('Skin.String(actionw97_105)')
+	actionw97_106 = xbmc.getInfoLabel('Skin.String(actionw97_106)')
+	actionw97_107 = xbmc.getInfoLabel('Skin.String(actionw97_107)')
+	actionw97_108 = xbmc.getInfoLabel('Skin.String(actionw97_108)')
+	actionw97_109 = xbmc.getInfoLabel('Skin.String(actionw97_109)')
+	'''---------------------------'''
+	actionw97_T = { 'actionw97_90': actionw97_90, 'actionw97_100': actionw97_100, 'actionw97_101': actionw97_101, 'actionw97_102': actionw97_102, 'actionw97_103': actionw97_103, 'actionw97_104': actionw97_104, 'actionw97_105': actionw97_105, 'actionw97_106': actionw97_106, 'actionw97_107': actionw97_107, 'actionw97_108': actionw97_108, 'actionw97_109': actionw97_109 }
+	actionw_T.update(actionw97_T)
+	'''---------------------------'''
+	actionw98_90 = xbmc.getInfoLabel('Skin.String(actionw98_90)')
+	'''---------------------------'''
+	actionw98_100 = xbmc.getInfoLabel('Skin.String(actionw98_100)')
+	actionw98_101 = xbmc.getInfoLabel('Skin.String(actionw98_101)')
+	actionw98_102 = xbmc.getInfoLabel('Skin.String(actionw98_102)')
+	actionw98_103 = xbmc.getInfoLabel('Skin.String(actionw98_103)')
+	actionw98_104 = xbmc.getInfoLabel('Skin.String(actionw98_104)')
+	actionw98_105 = xbmc.getInfoLabel('Skin.String(actionw98_105)')
+	actionw98_106 = xbmc.getInfoLabel('Skin.String(actionw98_106)')
+	actionw98_107 = xbmc.getInfoLabel('Skin.String(actionw98_107)')
+	actionw98_108 = xbmc.getInfoLabel('Skin.String(actionw98_108)')
+	actionw98_109 = xbmc.getInfoLabel('Skin.String(actionw98_109)')
+	'''---------------------------'''
+	actionw98_T = { 'actionw98_90': actionw98_90, 'actionw98_100': actionw98_100, 'actionw98_101': actionw98_101, 'actionw98_102': actionw98_102, 'actionw98_103': actionw98_103, 'actionw98_104': actionw98_104, 'actionw98_105': actionw98_105, 'actionw98_106': actionw98_106, 'actionw98_107': actionw98_107, 'actionw98_108': actionw98_108, 'actionw98_109': actionw98_109 }
+	actionw_T.update(actionw98_T)
+	'''---------------------------'''
+	actionw99_90 = xbmc.getInfoLabel('Skin.String(actionw99_90)')
+	'''---------------------------'''
+	actionw99_100 = xbmc.getInfoLabel('Skin.String(actionw99_100)')
+	actionw99_101 = xbmc.getInfoLabel('Skin.String(actionw99_101)')
+	actionw99_102 = xbmc.getInfoLabel('Skin.String(actionw99_102)')
+	actionw99_103 = xbmc.getInfoLabel('Skin.String(actionw99_103)')
+	actionw99_104 = xbmc.getInfoLabel('Skin.String(actionw99_104)')
+	actionw99_105 = xbmc.getInfoLabel('Skin.String(actionw99_105)')
+	actionw99_106 = xbmc.getInfoLabel('Skin.String(actionw99_106)')
+	actionw99_107 = xbmc.getInfoLabel('Skin.String(actionw99_107)')
+	actionw99_108 = xbmc.getInfoLabel('Skin.String(actionw99_108)')
+	actionw99_109 = xbmc.getInfoLabel('Skin.String(actionw99_109)')
+	'''---------------------------'''
+	actionw99_T = { 'actionw99_90': actionw99_90, 'actionw99_100': actionw99_100, 'actionw99_101': actionw99_101, 'actionw99_102': actionw99_102, 'actionw99_103': actionw99_103, 'actionw99_104': actionw99_104, 'actionw99_105': actionw99_105, 'actionw99_106': actionw99_106, 'actionw99_107': actionw99_107, 'actionw99_108': actionw99_108, 'actionw99_109': actionw99_109 }
+	actionw_T.update(actionw99_T)
+	'''---------------------------'''
+	
+	actionw100_90 = xbmc.getInfoLabel('Skin.String(actionw100_90)')
+	'''---------------------------'''
+	actionw100_100 = xbmc.getInfoLabel('Skin.String(actionw100_100)')
+	actionw100_101 = xbmc.getInfoLabel('Skin.String(actionw100_101)')
+	actionw100_102 = xbmc.getInfoLabel('Skin.String(actionw100_102)')
+	actionw100_103 = xbmc.getInfoLabel('Skin.String(actionw100_103)')
+	actionw100_104 = xbmc.getInfoLabel('Skin.String(actionw100_104)')
+	actionw100_105 = xbmc.getInfoLabel('Skin.String(actionw100_105)')
+	actionw100_106 = xbmc.getInfoLabel('Skin.String(actionw100_106)')
+	actionw100_107 = xbmc.getInfoLabel('Skin.String(actionw100_107)')
+	actionw100_108 = xbmc.getInfoLabel('Skin.String(actionw100_108)')
+	actionw100_109 = xbmc.getInfoLabel('Skin.String(actionw100_109)')
+	'''---------------------------'''
+	actionw100_T = { 'actionw100_90': actionw100_90, 'actionw100_100': actionw100_100, 'actionw100_101': actionw100_101, 'actionw100_102': actionw100_102, 'actionw100_103': actionw100_103, 'actionw100_104': actionw100_104, 'actionw100_105': actionw100_105, 'actionw100_106': actionw100_106, 'actionw100_107': actionw100_107, 'actionw100_108': actionw100_108, 'actionw100_109': actionw100_109 }
+	actionw_T.update(actionw100_T)
+	'''---------------------------'''
+	actionw101_90 = xbmc.getInfoLabel('Skin.String(actionw101_90)')
+	'''---------------------------'''
+	actionw101_100 = xbmc.getInfoLabel('Skin.String(actionw101_100)')
+	actionw101_101 = xbmc.getInfoLabel('Skin.String(actionw101_101)')
+	actionw101_102 = xbmc.getInfoLabel('Skin.String(actionw101_102)')
+	actionw101_103 = xbmc.getInfoLabel('Skin.String(actionw101_103)')
+	actionw101_104 = xbmc.getInfoLabel('Skin.String(actionw101_104)')
+	actionw101_105 = xbmc.getInfoLabel('Skin.String(actionw101_105)')
+	actionw101_106 = xbmc.getInfoLabel('Skin.String(actionw101_106)')
+	actionw101_107 = xbmc.getInfoLabel('Skin.String(actionw101_107)')
+	actionw101_108 = xbmc.getInfoLabel('Skin.String(actionw101_108)')
+	actionw101_109 = xbmc.getInfoLabel('Skin.String(actionw101_109)')
+	'''---------------------------'''
+	actionw101_T = { 'actionw101_90': actionw101_90, 'actionw101_100': actionw101_100, 'actionw101_101': actionw101_101, 'actionw101_102': actionw101_102, 'actionw101_103': actionw101_103, 'actionw101_104': actionw101_104, 'actionw101_105': actionw101_105, 'actionw101_106': actionw101_106, 'actionw101_107': actionw101_107, 'actionw101_108': actionw101_108, 'actionw101_109': actionw101_109 }
+	actionw_T.update(actionw101_T)
+	'''---------------------------'''
+	actionw102_90 = xbmc.getInfoLabel('Skin.String(actionw102_90)')
+	'''---------------------------'''
+	actionw102_100 = xbmc.getInfoLabel('Skin.String(actionw102_100)')
+	actionw102_101 = xbmc.getInfoLabel('Skin.String(actionw102_101)')
+	actionw102_102 = xbmc.getInfoLabel('Skin.String(actionw102_102)')
+	actionw102_103 = xbmc.getInfoLabel('Skin.String(actionw102_103)')
+	actionw102_104 = xbmc.getInfoLabel('Skin.String(actionw102_104)')
+	actionw102_105 = xbmc.getInfoLabel('Skin.String(actionw102_105)')
+	actionw102_106 = xbmc.getInfoLabel('Skin.String(actionw102_106)')
+	actionw102_107 = xbmc.getInfoLabel('Skin.String(actionw102_107)')
+	actionw102_108 = xbmc.getInfoLabel('Skin.String(actionw102_108)')
+	actionw102_109 = xbmc.getInfoLabel('Skin.String(actionw102_109)')
+	'''---------------------------'''
+	actionw102_T = { 'actionw102_90': actionw102_90, 'actionw102_100': actionw102_100, 'actionw102_101': actionw102_101, 'actionw102_102': actionw102_102, 'actionw102_103': actionw102_103, 'actionw102_104': actionw102_104, 'actionw102_105': actionw102_105, 'actionw102_106': actionw102_106, 'actionw102_107': actionw102_107, 'actionw102_108': actionw102_108, 'actionw102_109': actionw102_109 }
+	actionw_T.update(actionw102_T)
+	'''---------------------------'''
+	actionw103_90 = xbmc.getInfoLabel('Skin.String(actionw103_90)')
+	'''---------------------------'''
+	actionw103_100 = xbmc.getInfoLabel('Skin.String(actionw103_100)')
+	actionw103_101 = xbmc.getInfoLabel('Skin.String(actionw103_101)')
+	actionw103_102 = xbmc.getInfoLabel('Skin.String(actionw103_102)')
+	actionw103_103 = xbmc.getInfoLabel('Skin.String(actionw103_103)')
+	actionw103_104 = xbmc.getInfoLabel('Skin.String(actionw103_104)')
+	actionw103_105 = xbmc.getInfoLabel('Skin.String(actionw103_105)')
+	actionw103_106 = xbmc.getInfoLabel('Skin.String(actionw103_106)')
+	actionw103_107 = xbmc.getInfoLabel('Skin.String(actionw103_107)')
+	actionw103_108 = xbmc.getInfoLabel('Skin.String(actionw103_108)')
+	actionw103_109 = xbmc.getInfoLabel('Skin.String(actionw103_109)')
+	'''---------------------------'''
+	actionw103_T = { 'actionw103_90': actionw103_90, 'actionw103_100': actionw103_100, 'actionw103_101': actionw103_101, 'actionw103_102': actionw103_102, 'actionw103_103': actionw103_103, 'actionw103_104': actionw103_104, 'actionw103_105': actionw103_105, 'actionw103_106': actionw103_106, 'actionw103_107': actionw103_107, 'actionw103_108': actionw103_108, 'actionw103_109': actionw103_109 }
+	actionw_T.update(actionw103_T)
+	'''---------------------------'''
+	actionw104_90 = xbmc.getInfoLabel('Skin.String(actionw104_90)')
+	'''---------------------------'''
+	actionw104_100 = xbmc.getInfoLabel('Skin.String(actionw104_100)')
+	actionw104_101 = xbmc.getInfoLabel('Skin.String(actionw104_101)')
+	actionw104_102 = xbmc.getInfoLabel('Skin.String(actionw104_102)')
+	actionw104_103 = xbmc.getInfoLabel('Skin.String(actionw104_103)')
+	actionw104_104 = xbmc.getInfoLabel('Skin.String(actionw104_104)')
+	actionw104_105 = xbmc.getInfoLabel('Skin.String(actionw104_105)')
+	actionw104_106 = xbmc.getInfoLabel('Skin.String(actionw104_106)')
+	actionw104_107 = xbmc.getInfoLabel('Skin.String(actionw104_107)')
+	actionw104_108 = xbmc.getInfoLabel('Skin.String(actionw104_108)')
+	actionw104_109 = xbmc.getInfoLabel('Skin.String(actionw104_109)')
+	'''---------------------------'''
+	actionw104_T = { 'actionw104_90': actionw104_90, 'actionw104_100': actionw104_100, 'actionw104_101': actionw104_101, 'actionw104_102': actionw104_102, 'actionw104_103': actionw104_103, 'actionw104_104': actionw104_104, 'actionw104_105': actionw104_105, 'actionw104_106': actionw104_106, 'actionw104_107': actionw104_107, 'actionw104_108': actionw104_108, 'actionw104_109': actionw104_109 }
+	actionw_T.update(actionw104_T)
+	'''---------------------------'''
+	actionw105_90 = xbmc.getInfoLabel('Skin.String(actionw105_90)')
+	'''---------------------------'''
+	actionw105_100 = xbmc.getInfoLabel('Skin.String(actionw105_100)')
+	actionw105_101 = xbmc.getInfoLabel('Skin.String(actionw105_101)')
+	actionw105_102 = xbmc.getInfoLabel('Skin.String(actionw105_102)')
+	actionw105_103 = xbmc.getInfoLabel('Skin.String(actionw105_103)')
+	actionw105_104 = xbmc.getInfoLabel('Skin.String(actionw105_104)')
+	actionw105_105 = xbmc.getInfoLabel('Skin.String(actionw105_105)')
+	actionw105_106 = xbmc.getInfoLabel('Skin.String(actionw105_106)')
+	actionw105_107 = xbmc.getInfoLabel('Skin.String(actionw105_107)')
+	actionw105_108 = xbmc.getInfoLabel('Skin.String(actionw105_108)')
+	actionw105_109 = xbmc.getInfoLabel('Skin.String(actionw105_109)')
+	'''---------------------------'''
+	actionw105_T = { 'actionw105_90': actionw105_90, 'actionw105_100': actionw105_100, 'actionw105_101': actionw105_101, 'actionw105_102': actionw105_102, 'actionw105_103': actionw105_103, 'actionw105_104': actionw105_104, 'actionw105_105': actionw105_105, 'actionw105_106': actionw105_106, 'actionw105_107': actionw105_107, 'actionw105_108': actionw105_108, 'actionw105_109': actionw105_109 }
+	actionw_T.update(actionw105_T)
+	'''---------------------------'''
+	actionw106_90 = xbmc.getInfoLabel('Skin.String(actionw106_90)')
+	'''---------------------------'''
+	actionw106_100 = xbmc.getInfoLabel('Skin.String(actionw106_100)')
+	actionw106_101 = xbmc.getInfoLabel('Skin.String(actionw106_101)')
+	actionw106_102 = xbmc.getInfoLabel('Skin.String(actionw106_102)')
+	actionw106_103 = xbmc.getInfoLabel('Skin.String(actionw106_103)')
+	actionw106_104 = xbmc.getInfoLabel('Skin.String(actionw106_104)')
+	actionw106_105 = xbmc.getInfoLabel('Skin.String(actionw106_105)')
+	actionw106_106 = xbmc.getInfoLabel('Skin.String(actionw106_106)')
+	actionw106_107 = xbmc.getInfoLabel('Skin.String(actionw106_107)')
+	actionw106_108 = xbmc.getInfoLabel('Skin.String(actionw106_108)')
+	actionw106_109 = xbmc.getInfoLabel('Skin.String(actionw106_109)')
+	'''---------------------------'''
+	actionw106_T = { 'actionw106_90': actionw106_90, 'actionw106_100': actionw106_100, 'actionw106_101': actionw106_101, 'actionw106_102': actionw106_102, 'actionw106_103': actionw106_103, 'actionw106_104': actionw106_104, 'actionw106_105': actionw106_105, 'actionw106_106': actionw106_106, 'actionw106_107': actionw106_107, 'actionw106_108': actionw106_108, 'actionw106_109': actionw106_109 }
+	actionw_T.update(actionw106_T)
+	'''---------------------------'''
+	actionw107_90 = xbmc.getInfoLabel('Skin.String(actionw107_90)')
+	'''---------------------------'''
+	actionw107_100 = xbmc.getInfoLabel('Skin.String(actionw107_100)')
+	actionw107_101 = xbmc.getInfoLabel('Skin.String(actionw107_101)')
+	actionw107_102 = xbmc.getInfoLabel('Skin.String(actionw107_102)')
+	actionw107_103 = xbmc.getInfoLabel('Skin.String(actionw107_103)')
+	actionw107_104 = xbmc.getInfoLabel('Skin.String(actionw107_104)')
+	actionw107_105 = xbmc.getInfoLabel('Skin.String(actionw107_105)')
+	actionw107_106 = xbmc.getInfoLabel('Skin.String(actionw107_106)')
+	actionw107_107 = xbmc.getInfoLabel('Skin.String(actionw107_107)')
+	actionw107_108 = xbmc.getInfoLabel('Skin.String(actionw107_108)')
+	actionw107_109 = xbmc.getInfoLabel('Skin.String(actionw107_109)')
+	'''---------------------------'''
+	actionw107_T = { 'actionw107_90': actionw107_90, 'actionw107_100': actionw107_100, 'actionw107_101': actionw107_101, 'actionw107_102': actionw107_102, 'actionw107_103': actionw107_103, 'actionw107_104': actionw107_104, 'actionw107_105': actionw107_105, 'actionw107_106': actionw107_106, 'actionw107_107': actionw107_107, 'actionw107_108': actionw107_108, 'actionw107_109': actionw107_109 }
+	actionw_T.update(actionw107_T)
+	'''---------------------------'''
+	actionw108_90 = xbmc.getInfoLabel('Skin.String(actionw108_90)')
+	'''---------------------------'''
+	actionw108_100 = xbmc.getInfoLabel('Skin.String(actionw108_100)')
+	actionw108_101 = xbmc.getInfoLabel('Skin.String(actionw108_101)')
+	actionw108_102 = xbmc.getInfoLabel('Skin.String(actionw108_102)')
+	actionw108_103 = xbmc.getInfoLabel('Skin.String(actionw108_103)')
+	actionw108_104 = xbmc.getInfoLabel('Skin.String(actionw108_104)')
+	actionw108_105 = xbmc.getInfoLabel('Skin.String(actionw108_105)')
+	actionw108_106 = xbmc.getInfoLabel('Skin.String(actionw108_106)')
+	actionw108_107 = xbmc.getInfoLabel('Skin.String(actionw108_107)')
+	actionw108_108 = xbmc.getInfoLabel('Skin.String(actionw108_108)')
+	actionw108_109 = xbmc.getInfoLabel('Skin.String(actionw108_109)')
+	'''---------------------------'''
+	actionw108_T = { 'actionw108_90': actionw108_90, 'actionw108_100': actionw108_100, 'actionw108_101': actionw108_101, 'actionw108_102': actionw108_102, 'actionw108_103': actionw108_103, 'actionw108_104': actionw108_104, 'actionw108_105': actionw108_105, 'actionw108_106': actionw108_106, 'actionw108_107': actionw108_107, 'actionw108_108': actionw108_108, 'actionw108_109': actionw108_109 }
+	actionw_T.update(actionw108_T)
+	'''---------------------------'''
+	actionw109_90 = xbmc.getInfoLabel('Skin.String(actionw109_90)')
+	'''---------------------------'''
+	actionw109_100 = xbmc.getInfoLabel('Skin.String(actionw109_100)')
+	actionw109_101 = xbmc.getInfoLabel('Skin.String(actionw109_101)')
+	actionw109_102 = xbmc.getInfoLabel('Skin.String(actionw109_102)')
+	actionw109_103 = xbmc.getInfoLabel('Skin.String(actionw109_103)')
+	actionw109_104 = xbmc.getInfoLabel('Skin.String(actionw109_104)')
+	actionw109_105 = xbmc.getInfoLabel('Skin.String(actionw109_105)')
+	actionw109_106 = xbmc.getInfoLabel('Skin.String(actionw109_106)')
+	actionw109_107 = xbmc.getInfoLabel('Skin.String(actionw109_107)')
+	actionw109_108 = xbmc.getInfoLabel('Skin.String(actionw109_108)')
+	actionw109_109 = xbmc.getInfoLabel('Skin.String(actionw109_109)')
+	'''---------------------------'''
+	actionw109_T = { 'actionw109_90': actionw109_90, 'actionw109_100': actionw109_100, 'actionw109_101': actionw109_101, 'actionw109_102': actionw109_102, 'actionw109_103': actionw109_103, 'actionw109_104': actionw109_104, 'actionw109_105': actionw109_105, 'actionw109_106': actionw109_106, 'actionw109_107': actionw109_107, 'actionw109_108': actionw109_108, 'actionw109_109': actionw109_109 }
+	actionw_T.update(actionw109_T)
+	
+	actionw110_90 = xbmc.getInfoLabel('Skin.String(actionw110_90)')
+	'''---------------------------'''
+	actionw110_100 = xbmc.getInfoLabel('Skin.String(actionw110_100)')
+	actionw110_101 = xbmc.getInfoLabel('Skin.String(actionw110_101)')
+	actionw110_102 = xbmc.getInfoLabel('Skin.String(actionw110_102)')
+	actionw110_103 = xbmc.getInfoLabel('Skin.String(actionw110_103)')
+	actionw110_104 = xbmc.getInfoLabel('Skin.String(actionw110_104)')
+	actionw110_105 = xbmc.getInfoLabel('Skin.String(actionw110_105)')
+	actionw110_106 = xbmc.getInfoLabel('Skin.String(actionw110_106)')
+	actionw110_107 = xbmc.getInfoLabel('Skin.String(actionw110_107)')
+	actionw110_108 = xbmc.getInfoLabel('Skin.String(actionw110_108)')
+	actionw110_109 = xbmc.getInfoLabel('Skin.String(actionw110_109)')
+	'''---------------------------'''
+	actionw110_T = { 'actionw110_90': actionw110_90, 'actionw110_100': actionw110_100, 'actionw110_101': actionw110_101, 'actionw110_102': actionw110_102, 'actionw110_103': actionw110_103, 'actionw110_104': actionw110_104, 'actionw110_105': actionw110_105, 'actionw110_106': actionw110_106, 'actionw110_107': actionw110_107, 'actionw110_108': actionw110_108, 'actionw110_109': actionw110_109 }
+	actionw_T.update(actionw110_T)
+	'''---------------------------'''
+	actionw111_90 = xbmc.getInfoLabel('Skin.String(actionw111_90)')
+	'''---------------------------'''
+	actionw111_100 = xbmc.getInfoLabel('Skin.String(actionw111_100)')
+	actionw111_101 = xbmc.getInfoLabel('Skin.String(actionw111_101)')
+	actionw111_102 = xbmc.getInfoLabel('Skin.String(actionw111_102)')
+	actionw111_103 = xbmc.getInfoLabel('Skin.String(actionw111_103)')
+	actionw111_104 = xbmc.getInfoLabel('Skin.String(actionw111_104)')
+	actionw111_105 = xbmc.getInfoLabel('Skin.String(actionw111_105)')
+	actionw111_106 = xbmc.getInfoLabel('Skin.String(actionw111_106)')
+	actionw111_107 = xbmc.getInfoLabel('Skin.String(actionw111_107)')
+	actionw111_108 = xbmc.getInfoLabel('Skin.String(actionw111_108)')
+	actionw111_109 = xbmc.getInfoLabel('Skin.String(actionw111_109)')
+	'''---------------------------'''
+	actionw111_T = { 'actionw111_90': actionw111_90, 'actionw111_100': actionw111_100, 'actionw111_101': actionw111_101, 'actionw111_102': actionw111_102, 'actionw111_103': actionw111_103, 'actionw111_104': actionw111_104, 'actionw111_105': actionw111_105, 'actionw111_106': actionw111_106, 'actionw111_107': actionw111_107, 'actionw111_108': actionw111_108, 'actionw111_109': actionw111_109 }
+	actionw_T.update(actionw111_T)
+	'''---------------------------'''
+	actionw112_90 = xbmc.getInfoLabel('Skin.String(actionw112_90)')
+	'''---------------------------'''
+	actionw112_100 = xbmc.getInfoLabel('Skin.String(actionw112_100)')
+	actionw112_101 = xbmc.getInfoLabel('Skin.String(actionw112_101)')
+	actionw112_102 = xbmc.getInfoLabel('Skin.String(actionw112_102)')
+	actionw112_103 = xbmc.getInfoLabel('Skin.String(actionw112_103)')
+	actionw112_104 = xbmc.getInfoLabel('Skin.String(actionw112_104)')
+	actionw112_105 = xbmc.getInfoLabel('Skin.String(actionw112_105)')
+	actionw112_106 = xbmc.getInfoLabel('Skin.String(actionw112_106)')
+	actionw112_107 = xbmc.getInfoLabel('Skin.String(actionw112_107)')
+	actionw112_108 = xbmc.getInfoLabel('Skin.String(actionw112_108)')
+	actionw112_109 = xbmc.getInfoLabel('Skin.String(actionw112_109)')
+	'''---------------------------'''
+	actionw112_T = { 'actionw112_90': actionw112_90, 'actionw112_100': actionw112_100, 'actionw112_101': actionw112_101, 'actionw112_102': actionw112_102, 'actionw112_103': actionw112_103, 'actionw112_104': actionw112_104, 'actionw112_105': actionw112_105, 'actionw112_106': actionw112_106, 'actionw112_107': actionw112_107, 'actionw112_108': actionw112_108, 'actionw112_109': actionw112_109 }
+	actionw_T.update(actionw112_T)
+	'''---------------------------'''
+	actionw113_90 = xbmc.getInfoLabel('Skin.String(actionw113_90)')
+	'''---------------------------'''
+	actionw113_100 = xbmc.getInfoLabel('Skin.String(actionw113_100)')
+	actionw113_101 = xbmc.getInfoLabel('Skin.String(actionw113_101)')
+	actionw113_102 = xbmc.getInfoLabel('Skin.String(actionw113_102)')
+	actionw113_103 = xbmc.getInfoLabel('Skin.String(actionw113_103)')
+	actionw113_104 = xbmc.getInfoLabel('Skin.String(actionw113_104)')
+	actionw113_105 = xbmc.getInfoLabel('Skin.String(actionw113_105)')
+	actionw113_106 = xbmc.getInfoLabel('Skin.String(actionw113_106)')
+	actionw113_107 = xbmc.getInfoLabel('Skin.String(actionw113_107)')
+	actionw113_108 = xbmc.getInfoLabel('Skin.String(actionw113_108)')
+	actionw113_109 = xbmc.getInfoLabel('Skin.String(actionw113_109)')
+	'''---------------------------'''
+	actionw113_T = { 'actionw113_90': actionw113_90, 'actionw113_100': actionw113_100, 'actionw113_101': actionw113_101, 'actionw113_102': actionw113_102, 'actionw113_103': actionw113_103, 'actionw113_104': actionw113_104, 'actionw113_105': actionw113_105, 'actionw113_106': actionw113_106, 'actionw113_107': actionw113_107, 'actionw113_108': actionw113_108, 'actionw113_109': actionw113_109 }
+	actionw_T.update(actionw113_T)
+	'''---------------------------'''
+	actionw114_90 = xbmc.getInfoLabel('Skin.String(actionw114_90)')
+	'''---------------------------'''
+	actionw114_100 = xbmc.getInfoLabel('Skin.String(actionw114_100)')
+	actionw114_101 = xbmc.getInfoLabel('Skin.String(actionw114_101)')
+	actionw114_102 = xbmc.getInfoLabel('Skin.String(actionw114_102)')
+	actionw114_103 = xbmc.getInfoLabel('Skin.String(actionw114_103)')
+	actionw114_104 = xbmc.getInfoLabel('Skin.String(actionw114_104)')
+	actionw114_105 = xbmc.getInfoLabel('Skin.String(actionw114_105)')
+	actionw114_106 = xbmc.getInfoLabel('Skin.String(actionw114_106)')
+	actionw114_107 = xbmc.getInfoLabel('Skin.String(actionw114_107)')
+	actionw114_108 = xbmc.getInfoLabel('Skin.String(actionw114_108)')
+	actionw114_109 = xbmc.getInfoLabel('Skin.String(actionw114_109)')
+	'''---------------------------'''
+	actionw114_T = { 'actionw114_90': actionw114_90, 'actionw114_100': actionw114_100, 'actionw114_101': actionw114_101, 'actionw114_102': actionw114_102, 'actionw114_103': actionw114_103, 'actionw114_104': actionw114_104, 'actionw114_105': actionw114_105, 'actionw114_106': actionw114_106, 'actionw114_107': actionw114_107, 'actionw114_108': actionw114_108, 'actionw114_109': actionw114_109 }
+	actionw_T.update(actionw114_T)
+	'''---------------------------'''
+	actionw115_90 = xbmc.getInfoLabel('Skin.String(actionw115_90)')
+	'''---------------------------'''
+	actionw115_100 = xbmc.getInfoLabel('Skin.String(actionw115_100)')
+	actionw115_101 = xbmc.getInfoLabel('Skin.String(actionw115_101)')
+	actionw115_102 = xbmc.getInfoLabel('Skin.String(actionw115_102)')
+	actionw115_103 = xbmc.getInfoLabel('Skin.String(actionw115_103)')
+	actionw115_104 = xbmc.getInfoLabel('Skin.String(actionw115_104)')
+	actionw115_105 = xbmc.getInfoLabel('Skin.String(actionw115_105)')
+	actionw115_106 = xbmc.getInfoLabel('Skin.String(actionw115_106)')
+	actionw115_107 = xbmc.getInfoLabel('Skin.String(actionw115_107)')
+	actionw115_108 = xbmc.getInfoLabel('Skin.String(actionw115_108)')
+	actionw115_109 = xbmc.getInfoLabel('Skin.String(actionw115_109)')
+	'''---------------------------'''
+	actionw115_T = { 'actionw115_90': actionw115_90, 'actionw115_100': actionw115_100, 'actionw115_101': actionw115_101, 'actionw115_102': actionw115_102, 'actionw115_103': actionw115_103, 'actionw115_104': actionw115_104, 'actionw115_105': actionw115_105, 'actionw115_106': actionw115_106, 'actionw115_107': actionw115_107, 'actionw115_108': actionw115_108, 'actionw115_109': actionw115_109 }
+	actionw_T.update(actionw115_T)
+	'''---------------------------'''
+	actionw116_90 = xbmc.getInfoLabel('Skin.String(actionw116_90)')
+	'''---------------------------'''
+	actionw116_100 = xbmc.getInfoLabel('Skin.String(actionw116_100)')
+	actionw116_101 = xbmc.getInfoLabel('Skin.String(actionw116_101)')
+	actionw116_102 = xbmc.getInfoLabel('Skin.String(actionw116_102)')
+	actionw116_103 = xbmc.getInfoLabel('Skin.String(actionw116_103)')
+	actionw116_104 = xbmc.getInfoLabel('Skin.String(actionw116_104)')
+	actionw116_105 = xbmc.getInfoLabel('Skin.String(actionw116_105)')
+	actionw116_106 = xbmc.getInfoLabel('Skin.String(actionw116_106)')
+	actionw116_107 = xbmc.getInfoLabel('Skin.String(actionw116_107)')
+	actionw116_108 = xbmc.getInfoLabel('Skin.String(actionw116_108)')
+	actionw116_109 = xbmc.getInfoLabel('Skin.String(actionw116_109)')
+	'''---------------------------'''
+	actionw116_T = { 'actionw116_90': actionw116_90, 'actionw116_100': actionw116_100, 'actionw116_101': actionw116_101, 'actionw116_102': actionw116_102, 'actionw116_103': actionw116_103, 'actionw116_104': actionw116_104, 'actionw116_105': actionw116_105, 'actionw116_106': actionw116_106, 'actionw116_107': actionw116_107, 'actionw116_108': actionw116_108, 'actionw116_109': actionw116_109 }
+	actionw_T.update(actionw116_T)
+	'''---------------------------'''
+	actionw117_90 = xbmc.getInfoLabel('Skin.String(actionw117_90)')
+	'''---------------------------'''
+	actionw117_100 = xbmc.getInfoLabel('Skin.String(actionw117_100)')
+	actionw117_101 = xbmc.getInfoLabel('Skin.String(actionw117_101)')
+	actionw117_102 = xbmc.getInfoLabel('Skin.String(actionw117_102)')
+	actionw117_103 = xbmc.getInfoLabel('Skin.String(actionw117_103)')
+	actionw117_104 = xbmc.getInfoLabel('Skin.String(actionw117_104)')
+	actionw117_105 = xbmc.getInfoLabel('Skin.String(actionw117_105)')
+	actionw117_106 = xbmc.getInfoLabel('Skin.String(actionw117_106)')
+	actionw117_107 = xbmc.getInfoLabel('Skin.String(actionw117_107)')
+	actionw117_108 = xbmc.getInfoLabel('Skin.String(actionw117_108)')
+	actionw117_109 = xbmc.getInfoLabel('Skin.String(actionw117_109)')
+	'''---------------------------'''
+	actionw117_T = { 'actionw117_90': actionw117_90, 'actionw117_100': actionw117_100, 'actionw117_101': actionw117_101, 'actionw117_102': actionw117_102, 'actionw117_103': actionw117_103, 'actionw117_104': actionw117_104, 'actionw117_105': actionw117_105, 'actionw117_106': actionw117_106, 'actionw117_107': actionw117_107, 'actionw117_108': actionw117_108, 'actionw117_109': actionw117_109 }
+	actionw_T.update(actionw117_T)
+	'''---------------------------'''
+	actionw118_90 = xbmc.getInfoLabel('Skin.String(actionw118_90)')
+	'''---------------------------'''
+	actionw118_100 = xbmc.getInfoLabel('Skin.String(actionw118_100)')
+	actionw118_101 = xbmc.getInfoLabel('Skin.String(actionw118_101)')
+	actionw118_102 = xbmc.getInfoLabel('Skin.String(actionw118_102)')
+	actionw118_103 = xbmc.getInfoLabel('Skin.String(actionw118_103)')
+	actionw118_104 = xbmc.getInfoLabel('Skin.String(actionw118_104)')
+	actionw118_105 = xbmc.getInfoLabel('Skin.String(actionw118_105)')
+	actionw118_106 = xbmc.getInfoLabel('Skin.String(actionw118_106)')
+	actionw118_107 = xbmc.getInfoLabel('Skin.String(actionw118_107)')
+	actionw118_108 = xbmc.getInfoLabel('Skin.String(actionw118_108)')
+	actionw118_109 = xbmc.getInfoLabel('Skin.String(actionw118_109)')
+	'''---------------------------'''
+	actionw118_T = { 'actionw118_90': actionw118_90, 'actionw118_100': actionw118_100, 'actionw118_101': actionw118_101, 'actionw118_102': actionw118_102, 'actionw118_103': actionw118_103, 'actionw118_104': actionw118_104, 'actionw118_105': actionw118_105, 'actionw118_106': actionw118_106, 'actionw118_107': actionw118_107, 'actionw118_108': actionw118_108, 'actionw118_109': actionw118_109 }
+	actionw_T.update(actionw118_T)
+	'''---------------------------'''
+	actionw119_90 = xbmc.getInfoLabel('Skin.String(actionw119_90)')
+	'''---------------------------'''
+	actionw119_100 = xbmc.getInfoLabel('Skin.String(actionw119_100)')
+	actionw119_101 = xbmc.getInfoLabel('Skin.String(actionw119_101)')
+	actionw119_102 = xbmc.getInfoLabel('Skin.String(actionw119_102)')
+	actionw119_103 = xbmc.getInfoLabel('Skin.String(actionw119_103)')
+	actionw119_104 = xbmc.getInfoLabel('Skin.String(actionw119_104)')
+	actionw119_105 = xbmc.getInfoLabel('Skin.String(actionw119_105)')
+	actionw119_106 = xbmc.getInfoLabel('Skin.String(actionw119_106)')
+	actionw119_107 = xbmc.getInfoLabel('Skin.String(actionw119_107)')
+	actionw119_108 = xbmc.getInfoLabel('Skin.String(actionw119_108)')
+	actionw119_109 = xbmc.getInfoLabel('Skin.String(actionw119_109)')
+	'''---------------------------'''
+	actionw119_T = { 'actionw119_90': actionw119_90, 'actionw119_100': actionw119_100, 'actionw119_101': actionw119_101, 'actionw119_102': actionw119_102, 'actionw119_103': actionw119_103, 'actionw119_104': actionw119_104, 'actionw119_105': actionw119_105, 'actionw119_106': actionw119_106, 'actionw119_107': actionw119_107, 'actionw119_108': actionw119_108, 'actionw119_109': actionw119_109 }
+	actionw_T.update(actionw119_T)
+	
+	iconw_T = {}
+	'''---------------------------'''
+	iconw90_90 = xbmc.getInfoLabel('Skin.String(iconw90_90)')
+	'''---------------------------'''
+	iconw90_100 = xbmc.getInfoLabel('Skin.String(iconw90_100)')
+	iconw90_101 = xbmc.getInfoLabel('Skin.String(iconw90_101)')
+	iconw90_102 = xbmc.getInfoLabel('Skin.String(iconw90_102)')
+	iconw90_103 = xbmc.getInfoLabel('Skin.String(iconw90_103)')
+	iconw90_104 = xbmc.getInfoLabel('Skin.String(iconw90_104)')
+	iconw90_105 = xbmc.getInfoLabel('Skin.String(iconw90_105)')
+	iconw90_106 = xbmc.getInfoLabel('Skin.String(iconw90_106)')
+	iconw90_107 = xbmc.getInfoLabel('Skin.String(iconw90_107)')
+	iconw90_108 = xbmc.getInfoLabel('Skin.String(iconw90_108)')
+	iconw90_109 = xbmc.getInfoLabel('Skin.String(iconw90_109)')
+	'''---------------------------'''
+	iconw90_T = { 'iconw90_90': iconw90_90, 'iconw90_100': iconw90_100, 'iconw90_101': iconw90_101, 'iconw90_102': iconw90_102, 'iconw90_103': iconw90_103, 'iconw90_104': iconw90_104, 'iconw90_105': iconw90_105, 'iconw90_106': iconw90_106, 'iconw90_107': iconw90_107, 'iconw90_108': iconw90_108, 'iconw90_109': iconw90_109 }
+	iconw_T.update(iconw90_T)
+	'''---------------------------'''
+	iconw91_90 = xbmc.getInfoLabel('Skin.String(iconw91_90)')
+	'''---------------------------'''
+	iconw91_100 = xbmc.getInfoLabel('Skin.String(iconw91_100)')
+	iconw91_101 = xbmc.getInfoLabel('Skin.String(iconw91_101)')
+	iconw91_102 = xbmc.getInfoLabel('Skin.String(iconw91_102)')
+	iconw91_103 = xbmc.getInfoLabel('Skin.String(iconw91_103)')
+	iconw91_104 = xbmc.getInfoLabel('Skin.String(iconw91_104)')
+	iconw91_105 = xbmc.getInfoLabel('Skin.String(iconw91_105)')
+	iconw91_106 = xbmc.getInfoLabel('Skin.String(iconw91_106)')
+	iconw91_107 = xbmc.getInfoLabel('Skin.String(iconw91_107)')
+	iconw91_108 = xbmc.getInfoLabel('Skin.String(iconw91_108)')
+	iconw91_109 = xbmc.getInfoLabel('Skin.String(iconw91_109)')
+	'''---------------------------'''
+	iconw91_T = { 'iconw91_90': iconw91_90, 'iconw91_100': iconw91_100, 'iconw91_101': iconw91_101, 'iconw91_102': iconw91_102, 'iconw91_103': iconw91_103, 'iconw91_104': iconw91_104, 'iconw91_105': iconw91_105, 'iconw91_106': iconw91_106, 'iconw91_107': iconw91_107, 'iconw91_108': iconw91_108, 'iconw91_109': iconw91_109 }
+	iconw_T.update(iconw91_T)
+	'''---------------------------'''
+	iconw92_90 = xbmc.getInfoLabel('Skin.String(iconw92_90)')
+	'''---------------------------'''
+	iconw92_100 = xbmc.getInfoLabel('Skin.String(iconw92_100)')
+	iconw92_101 = xbmc.getInfoLabel('Skin.String(iconw92_101)')
+	iconw92_102 = xbmc.getInfoLabel('Skin.String(iconw92_102)')
+	iconw92_103 = xbmc.getInfoLabel('Skin.String(iconw92_103)')
+	iconw92_104 = xbmc.getInfoLabel('Skin.String(iconw92_104)')
+	iconw92_105 = xbmc.getInfoLabel('Skin.String(iconw92_105)')
+	iconw92_106 = xbmc.getInfoLabel('Skin.String(iconw92_106)')
+	iconw92_107 = xbmc.getInfoLabel('Skin.String(iconw92_107)')
+	iconw92_108 = xbmc.getInfoLabel('Skin.String(iconw92_108)')
+	iconw92_109 = xbmc.getInfoLabel('Skin.String(iconw92_109)')
+	'''---------------------------'''
+	iconw92_T = { 'iconw92_90': iconw92_90, 'iconw92_100': iconw92_100, 'iconw92_101': iconw92_101, 'iconw92_102': iconw92_102, 'iconw92_103': iconw92_103, 'iconw92_104': iconw92_104, 'iconw92_105': iconw92_105, 'iconw92_106': iconw92_106, 'iconw92_107': iconw92_107, 'iconw92_108': iconw92_108, 'iconw92_109': iconw92_109 }
+	iconw_T.update(iconw92_T)
+	'''---------------------------'''
+	iconw93_90 = xbmc.getInfoLabel('Skin.String(iconw93_90)')
+	'''---------------------------'''
+	iconw93_100 = xbmc.getInfoLabel('Skin.String(iconw93_100)')
+	iconw93_101 = xbmc.getInfoLabel('Skin.String(iconw93_101)')
+	iconw93_102 = xbmc.getInfoLabel('Skin.String(iconw93_102)')
+	iconw93_103 = xbmc.getInfoLabel('Skin.String(iconw93_103)')
+	iconw93_104 = xbmc.getInfoLabel('Skin.String(iconw93_104)')
+	iconw93_105 = xbmc.getInfoLabel('Skin.String(iconw93_105)')
+	iconw93_106 = xbmc.getInfoLabel('Skin.String(iconw93_106)')
+	iconw93_107 = xbmc.getInfoLabel('Skin.String(iconw93_107)')
+	iconw93_108 = xbmc.getInfoLabel('Skin.String(iconw93_108)')
+	iconw93_109 = xbmc.getInfoLabel('Skin.String(iconw93_109)')
+	'''---------------------------'''
+	iconw93_T = { 'iconw93_90': iconw93_90, 'iconw93_100': iconw93_100, 'iconw93_101': iconw93_101, 'iconw93_102': iconw93_102, 'iconw93_103': iconw93_103, 'iconw93_104': iconw93_104, 'iconw93_105': iconw93_105, 'iconw93_106': iconw93_106, 'iconw93_107': iconw93_107, 'iconw93_108': iconw93_108, 'iconw93_109': iconw93_109 }
+	iconw_T.update(iconw93_T)
+	'''---------------------------'''
+	iconw94_90 = xbmc.getInfoLabel('Skin.String(iconw94_90)')
+	'''---------------------------'''
+	iconw94_100 = xbmc.getInfoLabel('Skin.String(iconw94_100)')
+	iconw94_101 = xbmc.getInfoLabel('Skin.String(iconw94_101)')
+	iconw94_102 = xbmc.getInfoLabel('Skin.String(iconw94_102)')
+	iconw94_103 = xbmc.getInfoLabel('Skin.String(iconw94_103)')
+	iconw94_104 = xbmc.getInfoLabel('Skin.String(iconw94_104)')
+	iconw94_105 = xbmc.getInfoLabel('Skin.String(iconw94_105)')
+	iconw94_106 = xbmc.getInfoLabel('Skin.String(iconw94_106)')
+	iconw94_107 = xbmc.getInfoLabel('Skin.String(iconw94_107)')
+	iconw94_108 = xbmc.getInfoLabel('Skin.String(iconw94_108)')
+	iconw94_109 = xbmc.getInfoLabel('Skin.String(iconw94_109)')
+	'''---------------------------'''
+	iconw94_T = { 'iconw94_90': iconw94_90, 'iconw94_100': iconw94_100, 'iconw94_101': iconw94_101, 'iconw94_102': iconw94_102, 'iconw94_103': iconw94_103, 'iconw94_104': iconw94_104, 'iconw94_105': iconw94_105, 'iconw94_106': iconw94_106, 'iconw94_107': iconw94_107, 'iconw94_108': iconw94_108, 'iconw94_109': iconw94_109 }
+	iconw_T.update(iconw94_T)
+	'''---------------------------'''
+	iconw95_90 = xbmc.getInfoLabel('Skin.String(iconw95_90)')
+	'''---------------------------'''
+	iconw95_100 = xbmc.getInfoLabel('Skin.String(iconw95_100)')
+	iconw95_101 = xbmc.getInfoLabel('Skin.String(iconw95_101)')
+	iconw95_102 = xbmc.getInfoLabel('Skin.String(iconw95_102)')
+	iconw95_103 = xbmc.getInfoLabel('Skin.String(iconw95_103)')
+	iconw95_104 = xbmc.getInfoLabel('Skin.String(iconw95_104)')
+	iconw95_105 = xbmc.getInfoLabel('Skin.String(iconw95_105)')
+	iconw95_106 = xbmc.getInfoLabel('Skin.String(iconw95_106)')
+	iconw95_107 = xbmc.getInfoLabel('Skin.String(iconw95_107)')
+	iconw95_108 = xbmc.getInfoLabel('Skin.String(iconw95_108)')
+	iconw95_109 = xbmc.getInfoLabel('Skin.String(iconw95_109)')
+	'''---------------------------'''
+	iconw95_T = { 'iconw95_90': iconw95_90, 'iconw95_100': iconw95_100, 'iconw95_101': iconw95_101, 'iconw95_102': iconw95_102, 'iconw95_103': iconw95_103, 'iconw95_104': iconw95_104, 'iconw95_105': iconw95_105, 'iconw95_106': iconw95_106, 'iconw95_107': iconw95_107, 'iconw95_108': iconw95_108, 'iconw95_109': iconw95_109 }
+	iconw_T.update(iconw95_T)
+	'''---------------------------'''
+	iconw96_90 = xbmc.getInfoLabel('Skin.String(iconw96_90)')
+	'''---------------------------'''
+	iconw96_100 = xbmc.getInfoLabel('Skin.String(iconw96_100)')
+	iconw96_101 = xbmc.getInfoLabel('Skin.String(iconw96_101)')
+	iconw96_102 = xbmc.getInfoLabel('Skin.String(iconw96_102)')
+	iconw96_103 = xbmc.getInfoLabel('Skin.String(iconw96_103)')
+	iconw96_104 = xbmc.getInfoLabel('Skin.String(iconw96_104)')
+	iconw96_105 = xbmc.getInfoLabel('Skin.String(iconw96_105)')
+	iconw96_106 = xbmc.getInfoLabel('Skin.String(iconw96_106)')
+	iconw96_107 = xbmc.getInfoLabel('Skin.String(iconw96_107)')
+	iconw96_108 = xbmc.getInfoLabel('Skin.String(iconw96_108)')
+	iconw96_109 = xbmc.getInfoLabel('Skin.String(iconw96_109)')
+	'''---------------------------'''
+	iconw96_T = { 'iconw96_90': iconw96_90, 'iconw96_100': iconw96_100, 'iconw96_101': iconw96_101, 'iconw96_102': iconw96_102, 'iconw96_103': iconw96_103, 'iconw96_104': iconw96_104, 'iconw96_105': iconw96_105, 'iconw96_106': iconw96_106, 'iconw96_107': iconw96_107, 'iconw96_108': iconw96_108, 'iconw96_109': iconw96_109 }
+	iconw_T.update(iconw96_T)
+	'''---------------------------'''
+	iconw97_90 = xbmc.getInfoLabel('Skin.String(iconw97_90)')
+	'''---------------------------'''
+	iconw97_100 = xbmc.getInfoLabel('Skin.String(iconw97_100)')
+	iconw97_101 = xbmc.getInfoLabel('Skin.String(iconw97_101)')
+	iconw97_102 = xbmc.getInfoLabel('Skin.String(iconw97_102)')
+	iconw97_103 = xbmc.getInfoLabel('Skin.String(iconw97_103)')
+	iconw97_104 = xbmc.getInfoLabel('Skin.String(iconw97_104)')
+	iconw97_105 = xbmc.getInfoLabel('Skin.String(iconw97_105)')
+	iconw97_106 = xbmc.getInfoLabel('Skin.String(iconw97_106)')
+	iconw97_107 = xbmc.getInfoLabel('Skin.String(iconw97_107)')
+	iconw97_108 = xbmc.getInfoLabel('Skin.String(iconw97_108)')
+	iconw97_109 = xbmc.getInfoLabel('Skin.String(iconw97_109)')
+	'''---------------------------'''
+	iconw97_T = { 'iconw97_90': iconw97_90, 'iconw97_100': iconw97_100, 'iconw97_101': iconw97_101, 'iconw97_102': iconw97_102, 'iconw97_103': iconw97_103, 'iconw97_104': iconw97_104, 'iconw97_105': iconw97_105, 'iconw97_106': iconw97_106, 'iconw97_107': iconw97_107, 'iconw97_108': iconw97_108, 'iconw97_109': iconw97_109 }
+	iconw_T.update(iconw97_T)
+	'''---------------------------'''
+	iconw98_90 = xbmc.getInfoLabel('Skin.String(iconw98_90)')
+	'''---------------------------'''
+	iconw98_100 = xbmc.getInfoLabel('Skin.String(iconw98_100)')
+	iconw98_101 = xbmc.getInfoLabel('Skin.String(iconw98_101)')
+	iconw98_102 = xbmc.getInfoLabel('Skin.String(iconw98_102)')
+	iconw98_103 = xbmc.getInfoLabel('Skin.String(iconw98_103)')
+	iconw98_104 = xbmc.getInfoLabel('Skin.String(iconw98_104)')
+	iconw98_105 = xbmc.getInfoLabel('Skin.String(iconw98_105)')
+	iconw98_106 = xbmc.getInfoLabel('Skin.String(iconw98_106)')
+	iconw98_107 = xbmc.getInfoLabel('Skin.String(iconw98_107)')
+	iconw98_108 = xbmc.getInfoLabel('Skin.String(iconw98_108)')
+	iconw98_109 = xbmc.getInfoLabel('Skin.String(iconw98_109)')
+	'''---------------------------'''
+	iconw98_T = { 'iconw98_90': iconw98_90, 'iconw98_100': iconw98_100, 'iconw98_101': iconw98_101, 'iconw98_102': iconw98_102, 'iconw98_103': iconw98_103, 'iconw98_104': iconw98_104, 'iconw98_105': iconw98_105, 'iconw98_106': iconw98_106, 'iconw98_107': iconw98_107, 'iconw98_108': iconw98_108, 'iconw98_109': iconw98_109 }
+	iconw_T.update(iconw98_T)
+	'''---------------------------'''
+	iconw99_90 = xbmc.getInfoLabel('Skin.String(iconw99_90)')
+	'''---------------------------'''
+	iconw99_100 = xbmc.getInfoLabel('Skin.String(iconw99_100)')
+	iconw99_101 = xbmc.getInfoLabel('Skin.String(iconw99_101)')
+	iconw99_102 = xbmc.getInfoLabel('Skin.String(iconw99_102)')
+	iconw99_103 = xbmc.getInfoLabel('Skin.String(iconw99_103)')
+	iconw99_104 = xbmc.getInfoLabel('Skin.String(iconw99_104)')
+	iconw99_105 = xbmc.getInfoLabel('Skin.String(iconw99_105)')
+	iconw99_106 = xbmc.getInfoLabel('Skin.String(iconw99_106)')
+	iconw99_107 = xbmc.getInfoLabel('Skin.String(iconw99_107)')
+	iconw99_108 = xbmc.getInfoLabel('Skin.String(iconw99_108)')
+	iconw99_109 = xbmc.getInfoLabel('Skin.String(iconw99_109)')
+	'''---------------------------'''
+	iconw99_T = { 'iconw99_90': iconw99_90, 'iconw99_100': iconw99_100, 'iconw99_101': iconw99_101, 'iconw99_102': iconw99_102, 'iconw99_103': iconw99_103, 'iconw99_104': iconw99_104, 'iconw99_105': iconw99_105, 'iconw99_106': iconw99_106, 'iconw99_107': iconw99_107, 'iconw99_108': iconw99_108, 'iconw99_109': iconw99_109 }
+	iconw_T.update(iconw99_T)
+	'''---------------------------'''
+	
+	iconw100_90 = xbmc.getInfoLabel('Skin.String(iconw100_90)')
+	'''---------------------------'''
+	iconw100_100 = xbmc.getInfoLabel('Skin.String(iconw100_100)')
+	iconw100_101 = xbmc.getInfoLabel('Skin.String(iconw100_101)')
+	iconw100_102 = xbmc.getInfoLabel('Skin.String(iconw100_102)')
+	iconw100_103 = xbmc.getInfoLabel('Skin.String(iconw100_103)')
+	iconw100_104 = xbmc.getInfoLabel('Skin.String(iconw100_104)')
+	iconw100_105 = xbmc.getInfoLabel('Skin.String(iconw100_105)')
+	iconw100_106 = xbmc.getInfoLabel('Skin.String(iconw100_106)')
+	iconw100_107 = xbmc.getInfoLabel('Skin.String(iconw100_107)')
+	iconw100_108 = xbmc.getInfoLabel('Skin.String(iconw100_108)')
+	iconw100_109 = xbmc.getInfoLabel('Skin.String(iconw100_109)')
+	'''---------------------------'''
+	iconw100_T = { 'iconw100_90': iconw100_90, 'iconw100_100': iconw100_100, 'iconw100_101': iconw100_101, 'iconw100_102': iconw100_102, 'iconw100_103': iconw100_103, 'iconw100_104': iconw100_104, 'iconw100_105': iconw100_105, 'iconw100_106': iconw100_106, 'iconw100_107': iconw100_107, 'iconw100_108': iconw100_108, 'iconw100_109': iconw100_109 }
+	iconw_T.update(iconw100_T)
+	'''---------------------------'''
+	iconw101_90 = xbmc.getInfoLabel('Skin.String(iconw101_90)')
+	'''---------------------------'''
+	iconw101_100 = xbmc.getInfoLabel('Skin.String(iconw101_100)')
+	iconw101_101 = xbmc.getInfoLabel('Skin.String(iconw101_101)')
+	iconw101_102 = xbmc.getInfoLabel('Skin.String(iconw101_102)')
+	iconw101_103 = xbmc.getInfoLabel('Skin.String(iconw101_103)')
+	iconw101_104 = xbmc.getInfoLabel('Skin.String(iconw101_104)')
+	iconw101_105 = xbmc.getInfoLabel('Skin.String(iconw101_105)')
+	iconw101_106 = xbmc.getInfoLabel('Skin.String(iconw101_106)')
+	iconw101_107 = xbmc.getInfoLabel('Skin.String(iconw101_107)')
+	iconw101_108 = xbmc.getInfoLabel('Skin.String(iconw101_108)')
+	iconw101_109 = xbmc.getInfoLabel('Skin.String(iconw101_109)')
+	'''---------------------------'''
+	iconw101_T = { 'iconw101_90': iconw101_90, 'iconw101_100': iconw101_100, 'iconw101_101': iconw101_101, 'iconw101_102': iconw101_102, 'iconw101_103': iconw101_103, 'iconw101_104': iconw101_104, 'iconw101_105': iconw101_105, 'iconw101_106': iconw101_106, 'iconw101_107': iconw101_107, 'iconw101_108': iconw101_108, 'iconw101_109': iconw101_109 }
+	iconw_T.update(iconw101_T)
+	'''---------------------------'''
+	iconw102_90 = xbmc.getInfoLabel('Skin.String(iconw102_90)')
+	'''---------------------------'''
+	iconw102_100 = xbmc.getInfoLabel('Skin.String(iconw102_100)')
+	iconw102_101 = xbmc.getInfoLabel('Skin.String(iconw102_101)')
+	iconw102_102 = xbmc.getInfoLabel('Skin.String(iconw102_102)')
+	iconw102_103 = xbmc.getInfoLabel('Skin.String(iconw102_103)')
+	iconw102_104 = xbmc.getInfoLabel('Skin.String(iconw102_104)')
+	iconw102_105 = xbmc.getInfoLabel('Skin.String(iconw102_105)')
+	iconw102_106 = xbmc.getInfoLabel('Skin.String(iconw102_106)')
+	iconw102_107 = xbmc.getInfoLabel('Skin.String(iconw102_107)')
+	iconw102_108 = xbmc.getInfoLabel('Skin.String(iconw102_108)')
+	iconw102_109 = xbmc.getInfoLabel('Skin.String(iconw102_109)')
+	'''---------------------------'''
+	iconw102_T = { 'iconw102_90': iconw102_90, 'iconw102_100': iconw102_100, 'iconw102_101': iconw102_101, 'iconw102_102': iconw102_102, 'iconw102_103': iconw102_103, 'iconw102_104': iconw102_104, 'iconw102_105': iconw102_105, 'iconw102_106': iconw102_106, 'iconw102_107': iconw102_107, 'iconw102_108': iconw102_108, 'iconw102_109': iconw102_109 }
+	iconw_T.update(iconw102_T)
+	'''---------------------------'''
+	iconw103_90 = xbmc.getInfoLabel('Skin.String(iconw103_90)')
+	'''---------------------------'''
+	iconw103_100 = xbmc.getInfoLabel('Skin.String(iconw103_100)')
+	iconw103_101 = xbmc.getInfoLabel('Skin.String(iconw103_101)')
+	iconw103_102 = xbmc.getInfoLabel('Skin.String(iconw103_102)')
+	iconw103_103 = xbmc.getInfoLabel('Skin.String(iconw103_103)')
+	iconw103_104 = xbmc.getInfoLabel('Skin.String(iconw103_104)')
+	iconw103_105 = xbmc.getInfoLabel('Skin.String(iconw103_105)')
+	iconw103_106 = xbmc.getInfoLabel('Skin.String(iconw103_106)')
+	iconw103_107 = xbmc.getInfoLabel('Skin.String(iconw103_107)')
+	iconw103_108 = xbmc.getInfoLabel('Skin.String(iconw103_108)')
+	iconw103_109 = xbmc.getInfoLabel('Skin.String(iconw103_109)')
+	'''---------------------------'''
+	iconw103_T = { 'iconw103_90': iconw103_90, 'iconw103_100': iconw103_100, 'iconw103_101': iconw103_101, 'iconw103_102': iconw103_102, 'iconw103_103': iconw103_103, 'iconw103_104': iconw103_104, 'iconw103_105': iconw103_105, 'iconw103_106': iconw103_106, 'iconw103_107': iconw103_107, 'iconw103_108': iconw103_108, 'iconw103_109': iconw103_109 }
+	iconw_T.update(iconw103_T)
+	'''---------------------------'''
+	iconw104_90 = xbmc.getInfoLabel('Skin.String(iconw104_90)')
+	'''---------------------------'''
+	iconw104_100 = xbmc.getInfoLabel('Skin.String(iconw104_100)')
+	iconw104_101 = xbmc.getInfoLabel('Skin.String(iconw104_101)')
+	iconw104_102 = xbmc.getInfoLabel('Skin.String(iconw104_102)')
+	iconw104_103 = xbmc.getInfoLabel('Skin.String(iconw104_103)')
+	iconw104_104 = xbmc.getInfoLabel('Skin.String(iconw104_104)')
+	iconw104_105 = xbmc.getInfoLabel('Skin.String(iconw104_105)')
+	iconw104_106 = xbmc.getInfoLabel('Skin.String(iconw104_106)')
+	iconw104_107 = xbmc.getInfoLabel('Skin.String(iconw104_107)')
+	iconw104_108 = xbmc.getInfoLabel('Skin.String(iconw104_108)')
+	iconw104_109 = xbmc.getInfoLabel('Skin.String(iconw104_109)')
+	'''---------------------------'''
+	iconw104_T = { 'iconw104_90': iconw104_90, 'iconw104_100': iconw104_100, 'iconw104_101': iconw104_101, 'iconw104_102': iconw104_102, 'iconw104_103': iconw104_103, 'iconw104_104': iconw104_104, 'iconw104_105': iconw104_105, 'iconw104_106': iconw104_106, 'iconw104_107': iconw104_107, 'iconw104_108': iconw104_108, 'iconw104_109': iconw104_109 }
+	iconw_T.update(iconw104_T)
+	'''---------------------------'''
+	iconw105_90 = xbmc.getInfoLabel('Skin.String(iconw105_90)')
+	'''---------------------------'''
+	iconw105_100 = xbmc.getInfoLabel('Skin.String(iconw105_100)')
+	iconw105_101 = xbmc.getInfoLabel('Skin.String(iconw105_101)')
+	iconw105_102 = xbmc.getInfoLabel('Skin.String(iconw105_102)')
+	iconw105_103 = xbmc.getInfoLabel('Skin.String(iconw105_103)')
+	iconw105_104 = xbmc.getInfoLabel('Skin.String(iconw105_104)')
+	iconw105_105 = xbmc.getInfoLabel('Skin.String(iconw105_105)')
+	iconw105_106 = xbmc.getInfoLabel('Skin.String(iconw105_106)')
+	iconw105_107 = xbmc.getInfoLabel('Skin.String(iconw105_107)')
+	iconw105_108 = xbmc.getInfoLabel('Skin.String(iconw105_108)')
+	iconw105_109 = xbmc.getInfoLabel('Skin.String(iconw105_109)')
+	'''---------------------------'''
+	iconw105_T = { 'iconw105_90': iconw105_90, 'iconw105_100': iconw105_100, 'iconw105_101': iconw105_101, 'iconw105_102': iconw105_102, 'iconw105_103': iconw105_103, 'iconw105_104': iconw105_104, 'iconw105_105': iconw105_105, 'iconw105_106': iconw105_106, 'iconw105_107': iconw105_107, 'iconw105_108': iconw105_108, 'iconw105_109': iconw105_109 }
+	iconw_T.update(iconw105_T)
+	'''---------------------------'''
+	iconw106_90 = xbmc.getInfoLabel('Skin.String(iconw106_90)')
+	'''---------------------------'''
+	iconw106_100 = xbmc.getInfoLabel('Skin.String(iconw106_100)')
+	iconw106_101 = xbmc.getInfoLabel('Skin.String(iconw106_101)')
+	iconw106_102 = xbmc.getInfoLabel('Skin.String(iconw106_102)')
+	iconw106_103 = xbmc.getInfoLabel('Skin.String(iconw106_103)')
+	iconw106_104 = xbmc.getInfoLabel('Skin.String(iconw106_104)')
+	iconw106_105 = xbmc.getInfoLabel('Skin.String(iconw106_105)')
+	iconw106_106 = xbmc.getInfoLabel('Skin.String(iconw106_106)')
+	iconw106_107 = xbmc.getInfoLabel('Skin.String(iconw106_107)')
+	iconw106_108 = xbmc.getInfoLabel('Skin.String(iconw106_108)')
+	iconw106_109 = xbmc.getInfoLabel('Skin.String(iconw106_109)')
+	'''---------------------------'''
+	iconw106_T = { 'iconw106_90': iconw106_90, 'iconw106_100': iconw106_100, 'iconw106_101': iconw106_101, 'iconw106_102': iconw106_102, 'iconw106_103': iconw106_103, 'iconw106_104': iconw106_104, 'iconw106_105': iconw106_105, 'iconw106_106': iconw106_106, 'iconw106_107': iconw106_107, 'iconw106_108': iconw106_108, 'iconw106_109': iconw106_109 }
+	iconw_T.update(iconw106_T)
+	'''---------------------------'''
+	iconw107_90 = xbmc.getInfoLabel('Skin.String(iconw107_90)')
+	'''---------------------------'''
+	iconw107_100 = xbmc.getInfoLabel('Skin.String(iconw107_100)')
+	iconw107_101 = xbmc.getInfoLabel('Skin.String(iconw107_101)')
+	iconw107_102 = xbmc.getInfoLabel('Skin.String(iconw107_102)')
+	iconw107_103 = xbmc.getInfoLabel('Skin.String(iconw107_103)')
+	iconw107_104 = xbmc.getInfoLabel('Skin.String(iconw107_104)')
+	iconw107_105 = xbmc.getInfoLabel('Skin.String(iconw107_105)')
+	iconw107_106 = xbmc.getInfoLabel('Skin.String(iconw107_106)')
+	iconw107_107 = xbmc.getInfoLabel('Skin.String(iconw107_107)')
+	iconw107_108 = xbmc.getInfoLabel('Skin.String(iconw107_108)')
+	iconw107_109 = xbmc.getInfoLabel('Skin.String(iconw107_109)')
+	'''---------------------------'''
+	iconw107_T = { 'iconw107_90': iconw107_90, 'iconw107_100': iconw107_100, 'iconw107_101': iconw107_101, 'iconw107_102': iconw107_102, 'iconw107_103': iconw107_103, 'iconw107_104': iconw107_104, 'iconw107_105': iconw107_105, 'iconw107_106': iconw107_106, 'iconw107_107': iconw107_107, 'iconw107_108': iconw107_108, 'iconw107_109': iconw107_109 }
+	iconw_T.update(iconw107_T)
+	'''---------------------------'''
+	iconw108_90 = xbmc.getInfoLabel('Skin.String(iconw108_90)')
+	'''---------------------------'''
+	iconw108_100 = xbmc.getInfoLabel('Skin.String(iconw108_100)')
+	iconw108_101 = xbmc.getInfoLabel('Skin.String(iconw108_101)')
+	iconw108_102 = xbmc.getInfoLabel('Skin.String(iconw108_102)')
+	iconw108_103 = xbmc.getInfoLabel('Skin.String(iconw108_103)')
+	iconw108_104 = xbmc.getInfoLabel('Skin.String(iconw108_104)')
+	iconw108_105 = xbmc.getInfoLabel('Skin.String(iconw108_105)')
+	iconw108_106 = xbmc.getInfoLabel('Skin.String(iconw108_106)')
+	iconw108_107 = xbmc.getInfoLabel('Skin.String(iconw108_107)')
+	iconw108_108 = xbmc.getInfoLabel('Skin.String(iconw108_108)')
+	iconw108_109 = xbmc.getInfoLabel('Skin.String(iconw108_109)')
+	'''---------------------------'''
+	iconw108_T = { 'iconw108_90': iconw108_90, 'iconw108_100': iconw108_100, 'iconw108_101': iconw108_101, 'iconw108_102': iconw108_102, 'iconw108_103': iconw108_103, 'iconw108_104': iconw108_104, 'iconw108_105': iconw108_105, 'iconw108_106': iconw108_106, 'iconw108_107': iconw108_107, 'iconw108_108': iconw108_108, 'iconw108_109': iconw108_109 }
+	iconw_T.update(iconw108_T)
+	'''---------------------------'''
+	iconw109_90 = xbmc.getInfoLabel('Skin.String(iconw109_90)')
+	'''---------------------------'''
+	iconw109_100 = xbmc.getInfoLabel('Skin.String(iconw109_100)')
+	iconw109_101 = xbmc.getInfoLabel('Skin.String(iconw109_101)')
+	iconw109_102 = xbmc.getInfoLabel('Skin.String(iconw109_102)')
+	iconw109_103 = xbmc.getInfoLabel('Skin.String(iconw109_103)')
+	iconw109_104 = xbmc.getInfoLabel('Skin.String(iconw109_104)')
+	iconw109_105 = xbmc.getInfoLabel('Skin.String(iconw109_105)')
+	iconw109_106 = xbmc.getInfoLabel('Skin.String(iconw109_106)')
+	iconw109_107 = xbmc.getInfoLabel('Skin.String(iconw109_107)')
+	iconw109_108 = xbmc.getInfoLabel('Skin.String(iconw109_108)')
+	iconw109_109 = xbmc.getInfoLabel('Skin.String(iconw109_109)')
+	'''---------------------------'''
+	iconw109_T = { 'iconw109_90': iconw109_90, 'iconw109_100': iconw109_100, 'iconw109_101': iconw109_101, 'iconw109_102': iconw109_102, 'iconw109_103': iconw109_103, 'iconw109_104': iconw109_104, 'iconw109_105': iconw109_105, 'iconw109_106': iconw109_106, 'iconw109_107': iconw109_107, 'iconw109_108': iconw109_108, 'iconw109_109': iconw109_109 }
+	iconw_T.update(iconw109_T)
+	
+	iconw110_90 = xbmc.getInfoLabel('Skin.String(iconw110_90)')
+	'''---------------------------'''
+	iconw110_100 = xbmc.getInfoLabel('Skin.String(iconw110_100)')
+	iconw110_101 = xbmc.getInfoLabel('Skin.String(iconw110_101)')
+	iconw110_102 = xbmc.getInfoLabel('Skin.String(iconw110_102)')
+	iconw110_103 = xbmc.getInfoLabel('Skin.String(iconw110_103)')
+	iconw110_104 = xbmc.getInfoLabel('Skin.String(iconw110_104)')
+	iconw110_105 = xbmc.getInfoLabel('Skin.String(iconw110_105)')
+	iconw110_106 = xbmc.getInfoLabel('Skin.String(iconw110_106)')
+	iconw110_107 = xbmc.getInfoLabel('Skin.String(iconw110_107)')
+	iconw110_108 = xbmc.getInfoLabel('Skin.String(iconw110_108)')
+	iconw110_109 = xbmc.getInfoLabel('Skin.String(iconw110_109)')
+	'''---------------------------'''
+	iconw110_T = { 'iconw110_90': iconw110_90, 'iconw110_100': iconw110_100, 'iconw110_101': iconw110_101, 'iconw110_102': iconw110_102, 'iconw110_103': iconw110_103, 'iconw110_104': iconw110_104, 'iconw110_105': iconw110_105, 'iconw110_106': iconw110_106, 'iconw110_107': iconw110_107, 'iconw110_108': iconw110_108, 'iconw110_109': iconw110_109 }
+	iconw_T.update(iconw110_T)
+	'''---------------------------'''
+	iconw111_90 = xbmc.getInfoLabel('Skin.String(iconw111_90)')
+	'''---------------------------'''
+	iconw111_100 = xbmc.getInfoLabel('Skin.String(iconw111_100)')
+	iconw111_101 = xbmc.getInfoLabel('Skin.String(iconw111_101)')
+	iconw111_102 = xbmc.getInfoLabel('Skin.String(iconw111_102)')
+	iconw111_103 = xbmc.getInfoLabel('Skin.String(iconw111_103)')
+	iconw111_104 = xbmc.getInfoLabel('Skin.String(iconw111_104)')
+	iconw111_105 = xbmc.getInfoLabel('Skin.String(iconw111_105)')
+	iconw111_106 = xbmc.getInfoLabel('Skin.String(iconw111_106)')
+	iconw111_107 = xbmc.getInfoLabel('Skin.String(iconw111_107)')
+	iconw111_108 = xbmc.getInfoLabel('Skin.String(iconw111_108)')
+	iconw111_109 = xbmc.getInfoLabel('Skin.String(iconw111_109)')
+	'''---------------------------'''
+	iconw111_T = { 'iconw111_90': iconw111_90, 'iconw111_100': iconw111_100, 'iconw111_101': iconw111_101, 'iconw111_102': iconw111_102, 'iconw111_103': iconw111_103, 'iconw111_104': iconw111_104, 'iconw111_105': iconw111_105, 'iconw111_106': iconw111_106, 'iconw111_107': iconw111_107, 'iconw111_108': iconw111_108, 'iconw111_109': iconw111_109 }
+	iconw_T.update(iconw111_T)
+	'''---------------------------'''
+	iconw112_90 = xbmc.getInfoLabel('Skin.String(iconw112_90)')
+	'''---------------------------'''
+	iconw112_100 = xbmc.getInfoLabel('Skin.String(iconw112_100)')
+	iconw112_101 = xbmc.getInfoLabel('Skin.String(iconw112_101)')
+	iconw112_102 = xbmc.getInfoLabel('Skin.String(iconw112_102)')
+	iconw112_103 = xbmc.getInfoLabel('Skin.String(iconw112_103)')
+	iconw112_104 = xbmc.getInfoLabel('Skin.String(iconw112_104)')
+	iconw112_105 = xbmc.getInfoLabel('Skin.String(iconw112_105)')
+	iconw112_106 = xbmc.getInfoLabel('Skin.String(iconw112_106)')
+	iconw112_107 = xbmc.getInfoLabel('Skin.String(iconw112_107)')
+	iconw112_108 = xbmc.getInfoLabel('Skin.String(iconw112_108)')
+	iconw112_109 = xbmc.getInfoLabel('Skin.String(iconw112_109)')
+	'''---------------------------'''
+	iconw112_T = { 'iconw112_90': iconw112_90, 'iconw112_100': iconw112_100, 'iconw112_101': iconw112_101, 'iconw112_102': iconw112_102, 'iconw112_103': iconw112_103, 'iconw112_104': iconw112_104, 'iconw112_105': iconw112_105, 'iconw112_106': iconw112_106, 'iconw112_107': iconw112_107, 'iconw112_108': iconw112_108, 'iconw112_109': iconw112_109 }
+	iconw_T.update(iconw112_T)
+	'''---------------------------'''
+	iconw113_90 = xbmc.getInfoLabel('Skin.String(iconw113_90)')
+	'''---------------------------'''
+	iconw113_100 = xbmc.getInfoLabel('Skin.String(iconw113_100)')
+	iconw113_101 = xbmc.getInfoLabel('Skin.String(iconw113_101)')
+	iconw113_102 = xbmc.getInfoLabel('Skin.String(iconw113_102)')
+	iconw113_103 = xbmc.getInfoLabel('Skin.String(iconw113_103)')
+	iconw113_104 = xbmc.getInfoLabel('Skin.String(iconw113_104)')
+	iconw113_105 = xbmc.getInfoLabel('Skin.String(iconw113_105)')
+	iconw113_106 = xbmc.getInfoLabel('Skin.String(iconw113_106)')
+	iconw113_107 = xbmc.getInfoLabel('Skin.String(iconw113_107)')
+	iconw113_108 = xbmc.getInfoLabel('Skin.String(iconw113_108)')
+	iconw113_109 = xbmc.getInfoLabel('Skin.String(iconw113_109)')
+	'''---------------------------'''
+	iconw113_T = { 'iconw113_90': iconw113_90, 'iconw113_100': iconw113_100, 'iconw113_101': iconw113_101, 'iconw113_102': iconw113_102, 'iconw113_103': iconw113_103, 'iconw113_104': iconw113_104, 'iconw113_105': iconw113_105, 'iconw113_106': iconw113_106, 'iconw113_107': iconw113_107, 'iconw113_108': iconw113_108, 'iconw113_109': iconw113_109 }
+	iconw_T.update(iconw113_T)
+	'''---------------------------'''
+	iconw114_90 = xbmc.getInfoLabel('Skin.String(iconw114_90)')
+	'''---------------------------'''
+	iconw114_100 = xbmc.getInfoLabel('Skin.String(iconw114_100)')
+	iconw114_101 = xbmc.getInfoLabel('Skin.String(iconw114_101)')
+	iconw114_102 = xbmc.getInfoLabel('Skin.String(iconw114_102)')
+	iconw114_103 = xbmc.getInfoLabel('Skin.String(iconw114_103)')
+	iconw114_104 = xbmc.getInfoLabel('Skin.String(iconw114_104)')
+	iconw114_105 = xbmc.getInfoLabel('Skin.String(iconw114_105)')
+	iconw114_106 = xbmc.getInfoLabel('Skin.String(iconw114_106)')
+	iconw114_107 = xbmc.getInfoLabel('Skin.String(iconw114_107)')
+	iconw114_108 = xbmc.getInfoLabel('Skin.String(iconw114_108)')
+	iconw114_109 = xbmc.getInfoLabel('Skin.String(iconw114_109)')
+	'''---------------------------'''
+	iconw114_T = { 'iconw114_90': iconw114_90, 'iconw114_100': iconw114_100, 'iconw114_101': iconw114_101, 'iconw114_102': iconw114_102, 'iconw114_103': iconw114_103, 'iconw114_104': iconw114_104, 'iconw114_105': iconw114_105, 'iconw114_106': iconw114_106, 'iconw114_107': iconw114_107, 'iconw114_108': iconw114_108, 'iconw114_109': iconw114_109 }
+	iconw_T.update(iconw114_T)
+	'''---------------------------'''
+	iconw115_90 = xbmc.getInfoLabel('Skin.String(iconw115_90)')
+	'''---------------------------'''
+	iconw115_100 = xbmc.getInfoLabel('Skin.String(iconw115_100)')
+	iconw115_101 = xbmc.getInfoLabel('Skin.String(iconw115_101)')
+	iconw115_102 = xbmc.getInfoLabel('Skin.String(iconw115_102)')
+	iconw115_103 = xbmc.getInfoLabel('Skin.String(iconw115_103)')
+	iconw115_104 = xbmc.getInfoLabel('Skin.String(iconw115_104)')
+	iconw115_105 = xbmc.getInfoLabel('Skin.String(iconw115_105)')
+	iconw115_106 = xbmc.getInfoLabel('Skin.String(iconw115_106)')
+	iconw115_107 = xbmc.getInfoLabel('Skin.String(iconw115_107)')
+	iconw115_108 = xbmc.getInfoLabel('Skin.String(iconw115_108)')
+	iconw115_109 = xbmc.getInfoLabel('Skin.String(iconw115_109)')
+	'''---------------------------'''
+	iconw115_T = { 'iconw115_90': iconw115_90, 'iconw115_100': iconw115_100, 'iconw115_101': iconw115_101, 'iconw115_102': iconw115_102, 'iconw115_103': iconw115_103, 'iconw115_104': iconw115_104, 'iconw115_105': iconw115_105, 'iconw115_106': iconw115_106, 'iconw115_107': iconw115_107, 'iconw115_108': iconw115_108, 'iconw115_109': iconw115_109 }
+	iconw_T.update(iconw115_T)
+	'''---------------------------'''
+	iconw116_90 = xbmc.getInfoLabel('Skin.String(iconw116_90)')
+	'''---------------------------'''
+	iconw116_100 = xbmc.getInfoLabel('Skin.String(iconw116_100)')
+	iconw116_101 = xbmc.getInfoLabel('Skin.String(iconw116_101)')
+	iconw116_102 = xbmc.getInfoLabel('Skin.String(iconw116_102)')
+	iconw116_103 = xbmc.getInfoLabel('Skin.String(iconw116_103)')
+	iconw116_104 = xbmc.getInfoLabel('Skin.String(iconw116_104)')
+	iconw116_105 = xbmc.getInfoLabel('Skin.String(iconw116_105)')
+	iconw116_106 = xbmc.getInfoLabel('Skin.String(iconw116_106)')
+	iconw116_107 = xbmc.getInfoLabel('Skin.String(iconw116_107)')
+	iconw116_108 = xbmc.getInfoLabel('Skin.String(iconw116_108)')
+	iconw116_109 = xbmc.getInfoLabel('Skin.String(iconw116_109)')
+	'''---------------------------'''
+	iconw116_T = { 'iconw116_90': iconw116_90, 'iconw116_100': iconw116_100, 'iconw116_101': iconw116_101, 'iconw116_102': iconw116_102, 'iconw116_103': iconw116_103, 'iconw116_104': iconw116_104, 'iconw116_105': iconw116_105, 'iconw116_106': iconw116_106, 'iconw116_107': iconw116_107, 'iconw116_108': iconw116_108, 'iconw116_109': iconw116_109 }
+	iconw_T.update(iconw116_T)
+	'''---------------------------'''
+	iconw117_90 = xbmc.getInfoLabel('Skin.String(iconw117_90)')
+	'''---------------------------'''
+	iconw117_100 = xbmc.getInfoLabel('Skin.String(iconw117_100)')
+	iconw117_101 = xbmc.getInfoLabel('Skin.String(iconw117_101)')
+	iconw117_102 = xbmc.getInfoLabel('Skin.String(iconw117_102)')
+	iconw117_103 = xbmc.getInfoLabel('Skin.String(iconw117_103)')
+	iconw117_104 = xbmc.getInfoLabel('Skin.String(iconw117_104)')
+	iconw117_105 = xbmc.getInfoLabel('Skin.String(iconw117_105)')
+	iconw117_106 = xbmc.getInfoLabel('Skin.String(iconw117_106)')
+	iconw117_107 = xbmc.getInfoLabel('Skin.String(iconw117_107)')
+	iconw117_108 = xbmc.getInfoLabel('Skin.String(iconw117_108)')
+	iconw117_109 = xbmc.getInfoLabel('Skin.String(iconw117_109)')
+	'''---------------------------'''
+	iconw117_T = { 'iconw117_90': iconw117_90, 'iconw117_100': iconw117_100, 'iconw117_101': iconw117_101, 'iconw117_102': iconw117_102, 'iconw117_103': iconw117_103, 'iconw117_104': iconw117_104, 'iconw117_105': iconw117_105, 'iconw117_106': iconw117_106, 'iconw117_107': iconw117_107, 'iconw117_108': iconw117_108, 'iconw117_109': iconw117_109 }
+	iconw_T.update(iconw117_T)
+	'''---------------------------'''
+	iconw118_90 = xbmc.getInfoLabel('Skin.String(iconw118_90)')
+	'''---------------------------'''
+	iconw118_100 = xbmc.getInfoLabel('Skin.String(iconw118_100)')
+	iconw118_101 = xbmc.getInfoLabel('Skin.String(iconw118_101)')
+	iconw118_102 = xbmc.getInfoLabel('Skin.String(iconw118_102)')
+	iconw118_103 = xbmc.getInfoLabel('Skin.String(iconw118_103)')
+	iconw118_104 = xbmc.getInfoLabel('Skin.String(iconw118_104)')
+	iconw118_105 = xbmc.getInfoLabel('Skin.String(iconw118_105)')
+	iconw118_106 = xbmc.getInfoLabel('Skin.String(iconw118_106)')
+	iconw118_107 = xbmc.getInfoLabel('Skin.String(iconw118_107)')
+	iconw118_108 = xbmc.getInfoLabel('Skin.String(iconw118_108)')
+	iconw118_109 = xbmc.getInfoLabel('Skin.String(iconw118_109)')
+	'''---------------------------'''
+	iconw118_T = { 'iconw118_90': iconw118_90, 'iconw118_100': iconw118_100, 'iconw118_101': iconw118_101, 'iconw118_102': iconw118_102, 'iconw118_103': iconw118_103, 'iconw118_104': iconw118_104, 'iconw118_105': iconw118_105, 'iconw118_106': iconw118_106, 'iconw118_107': iconw118_107, 'iconw118_108': iconw118_108, 'iconw118_109': iconw118_109 }
+	iconw_T.update(iconw118_T)
+	'''---------------------------'''
+	iconw119_90 = xbmc.getInfoLabel('Skin.String(iconw119_90)')
+	'''---------------------------'''
+	iconw119_100 = xbmc.getInfoLabel('Skin.String(iconw119_100)')
+	iconw119_101 = xbmc.getInfoLabel('Skin.String(iconw119_101)')
+	iconw119_102 = xbmc.getInfoLabel('Skin.String(iconw119_102)')
+	iconw119_103 = xbmc.getInfoLabel('Skin.String(iconw119_103)')
+	iconw119_104 = xbmc.getInfoLabel('Skin.String(iconw119_104)')
+	iconw119_105 = xbmc.getInfoLabel('Skin.String(iconw119_105)')
+	iconw119_106 = xbmc.getInfoLabel('Skin.String(iconw119_106)')
+	iconw119_107 = xbmc.getInfoLabel('Skin.String(iconw119_107)')
+	iconw119_108 = xbmc.getInfoLabel('Skin.String(iconw119_108)')
+	iconw119_109 = xbmc.getInfoLabel('Skin.String(iconw119_109)')
+	'''---------------------------'''
+	iconw119_T = { 'iconw119_90': iconw119_90, 'iconw119_100': iconw119_100, 'iconw119_101': iconw119_101, 'iconw119_102': iconw119_102, 'iconw119_103': iconw119_103, 'iconw119_104': iconw119_104, 'iconw119_105': iconw119_105, 'iconw119_106': iconw119_106, 'iconw119_107': iconw119_107, 'iconw119_108': iconw119_108, 'iconw119_109': iconw119_109 }
+	iconw_T.update(iconw119_T)
+	
+	
+	offw_T = {}
+	'''---------------------------'''
+	offw90_90 = xbmc.getInfoLabel('Skin.HasSetting(offw90_90)')
+	'''---------------------------'''
+	offw90_100 = xbmc.getInfoLabel('Skin.HasSetting(offw90_100)')
+	offw90_101 = xbmc.getInfoLabel('Skin.HasSetting(offw90_101)')
+	offw90_102 = xbmc.getInfoLabel('Skin.HasSetting(offw90_102)')
+	offw90_103 = xbmc.getInfoLabel('Skin.HasSetting(offw90_103)')
+	offw90_104 = xbmc.getInfoLabel('Skin.HasSetting(offw90_104)')
+	offw90_105 = xbmc.getInfoLabel('Skin.HasSetting(offw90_105)')
+	offw90_106 = xbmc.getInfoLabel('Skin.HasSetting(offw90_106)')
+	offw90_107 = xbmc.getInfoLabel('Skin.HasSetting(offw90_107)')
+	offw90_108 = xbmc.getInfoLabel('Skin.HasSetting(offw90_108)')
+	offw90_109 = xbmc.getInfoLabel('Skin.HasSetting(offw90_109)')
+	'''---------------------------'''
+	offw90_T = { 'offw90_90': offw90_90, 'offw90_100': offw90_100, 'offw90_101': offw90_101, 'offw90_102': offw90_102, 'offw90_103': offw90_103, 'offw90_104': offw90_104, 'offw90_105': offw90_105, 'offw90_106': offw90_106, 'offw90_107': offw90_107, 'offw90_108': offw90_108, 'offw90_109': offw90_109 }
+	offw_T.update(offw90_T)
+	'''---------------------------'''
+	offw91_90 = xbmc.getInfoLabel('Skin.HasSetting(offw91_90)')
+	'''---------------------------'''
+	offw91_100 = xbmc.getInfoLabel('Skin.HasSetting(offw91_100)')
+	offw91_101 = xbmc.getInfoLabel('Skin.HasSetting(offw91_101)')
+	offw91_102 = xbmc.getInfoLabel('Skin.HasSetting(offw91_102)')
+	offw91_103 = xbmc.getInfoLabel('Skin.HasSetting(offw91_103)')
+	offw91_104 = xbmc.getInfoLabel('Skin.HasSetting(offw91_104)')
+	offw91_105 = xbmc.getInfoLabel('Skin.HasSetting(offw91_105)')
+	offw91_106 = xbmc.getInfoLabel('Skin.HasSetting(offw91_106)')
+	offw91_107 = xbmc.getInfoLabel('Skin.HasSetting(offw91_107)')
+	offw91_108 = xbmc.getInfoLabel('Skin.HasSetting(offw91_108)')
+	offw91_109 = xbmc.getInfoLabel('Skin.HasSetting(offw91_109)')
+	'''---------------------------'''
+	offw91_T = { 'offw91_90': offw91_90, 'offw91_100': offw91_100, 'offw91_101': offw91_101, 'offw91_102': offw91_102, 'offw91_103': offw91_103, 'offw91_104': offw91_104, 'offw91_105': offw91_105, 'offw91_106': offw91_106, 'offw91_107': offw91_107, 'offw91_108': offw91_108, 'offw91_109': offw91_109 }
+	offw_T.update(offw91_T)
+	'''---------------------------'''
+	offw92_90 = xbmc.getInfoLabel('Skin.HasSetting(offw92_90)')
+	'''---------------------------'''
+	offw92_100 = xbmc.getInfoLabel('Skin.HasSetting(offw92_100)')
+	offw92_101 = xbmc.getInfoLabel('Skin.HasSetting(offw92_101)')
+	offw92_102 = xbmc.getInfoLabel('Skin.HasSetting(offw92_102)')
+	offw92_103 = xbmc.getInfoLabel('Skin.HasSetting(offw92_103)')
+	offw92_104 = xbmc.getInfoLabel('Skin.HasSetting(offw92_104)')
+	offw92_105 = xbmc.getInfoLabel('Skin.HasSetting(offw92_105)')
+	offw92_106 = xbmc.getInfoLabel('Skin.HasSetting(offw92_106)')
+	offw92_107 = xbmc.getInfoLabel('Skin.HasSetting(offw92_107)')
+	offw92_108 = xbmc.getInfoLabel('Skin.HasSetting(offw92_108)')
+	offw92_109 = xbmc.getInfoLabel('Skin.HasSetting(offw92_109)')
+	'''---------------------------'''
+	offw92_T = { 'offw92_90': offw92_90, 'offw92_100': offw92_100, 'offw92_101': offw92_101, 'offw92_102': offw92_102, 'offw92_103': offw92_103, 'offw92_104': offw92_104, 'offw92_105': offw92_105, 'offw92_106': offw92_106, 'offw92_107': offw92_107, 'offw92_108': offw92_108, 'offw92_109': offw92_109 }
+	offw_T.update(offw92_T)
+	'''---------------------------'''
+	offw93_90 = xbmc.getInfoLabel('Skin.HasSetting(offw93_90)')
+	'''---------------------------'''
+	offw93_100 = xbmc.getInfoLabel('Skin.HasSetting(offw93_100)')
+	offw93_101 = xbmc.getInfoLabel('Skin.HasSetting(offw93_101)')
+	offw93_102 = xbmc.getInfoLabel('Skin.HasSetting(offw93_102)')
+	offw93_103 = xbmc.getInfoLabel('Skin.HasSetting(offw93_103)')
+	offw93_104 = xbmc.getInfoLabel('Skin.HasSetting(offw93_104)')
+	offw93_105 = xbmc.getInfoLabel('Skin.HasSetting(offw93_105)')
+	offw93_106 = xbmc.getInfoLabel('Skin.HasSetting(offw93_106)')
+	offw93_107 = xbmc.getInfoLabel('Skin.HasSetting(offw93_107)')
+	offw93_108 = xbmc.getInfoLabel('Skin.HasSetting(offw93_108)')
+	offw93_109 = xbmc.getInfoLabel('Skin.HasSetting(offw93_109)')
+	'''---------------------------'''
+	offw93_T = { 'offw93_90': offw93_90, 'offw93_100': offw93_100, 'offw93_101': offw93_101, 'offw93_102': offw93_102, 'offw93_103': offw93_103, 'offw93_104': offw93_104, 'offw93_105': offw93_105, 'offw93_106': offw93_106, 'offw93_107': offw93_107, 'offw93_108': offw93_108, 'offw93_109': offw93_109 }
+	offw_T.update(offw93_T)
+	'''---------------------------'''
+	offw94_90 = xbmc.getInfoLabel('Skin.HasSetting(offw94_90)')
+	'''---------------------------'''
+	offw94_100 = xbmc.getInfoLabel('Skin.HasSetting(offw94_100)')
+	offw94_101 = xbmc.getInfoLabel('Skin.HasSetting(offw94_101)')
+	offw94_102 = xbmc.getInfoLabel('Skin.HasSetting(offw94_102)')
+	offw94_103 = xbmc.getInfoLabel('Skin.HasSetting(offw94_103)')
+	offw94_104 = xbmc.getInfoLabel('Skin.HasSetting(offw94_104)')
+	offw94_105 = xbmc.getInfoLabel('Skin.HasSetting(offw94_105)')
+	offw94_106 = xbmc.getInfoLabel('Skin.HasSetting(offw94_106)')
+	offw94_107 = xbmc.getInfoLabel('Skin.HasSetting(offw94_107)')
+	offw94_108 = xbmc.getInfoLabel('Skin.HasSetting(offw94_108)')
+	offw94_109 = xbmc.getInfoLabel('Skin.HasSetting(offw94_109)')
+	'''---------------------------'''
+	offw94_T = { 'offw94_90': offw94_90, 'offw94_100': offw94_100, 'offw94_101': offw94_101, 'offw94_102': offw94_102, 'offw94_103': offw94_103, 'offw94_104': offw94_104, 'offw94_105': offw94_105, 'offw94_106': offw94_106, 'offw94_107': offw94_107, 'offw94_108': offw94_108, 'offw94_109': offw94_109 }
+	offw_T.update(offw94_T)
+	'''---------------------------'''
+	offw95_90 = xbmc.getInfoLabel('Skin.HasSetting(offw95_90)')
+	'''---------------------------'''
+	offw95_100 = xbmc.getInfoLabel('Skin.HasSetting(offw95_100)')
+	offw95_101 = xbmc.getInfoLabel('Skin.HasSetting(offw95_101)')
+	offw95_102 = xbmc.getInfoLabel('Skin.HasSetting(offw95_102)')
+	offw95_103 = xbmc.getInfoLabel('Skin.HasSetting(offw95_103)')
+	offw95_104 = xbmc.getInfoLabel('Skin.HasSetting(offw95_104)')
+	offw95_105 = xbmc.getInfoLabel('Skin.HasSetting(offw95_105)')
+	offw95_106 = xbmc.getInfoLabel('Skin.HasSetting(offw95_106)')
+	offw95_107 = xbmc.getInfoLabel('Skin.HasSetting(offw95_107)')
+	offw95_108 = xbmc.getInfoLabel('Skin.HasSetting(offw95_108)')
+	offw95_109 = xbmc.getInfoLabel('Skin.HasSetting(offw95_109)')
+	'''---------------------------'''
+	offw95_T = { 'offw95_90': offw95_90, 'offw95_100': offw95_100, 'offw95_101': offw95_101, 'offw95_102': offw95_102, 'offw95_103': offw95_103, 'offw95_104': offw95_104, 'offw95_105': offw95_105, 'offw95_106': offw95_106, 'offw95_107': offw95_107, 'offw95_108': offw95_108, 'offw95_109': offw95_109 }
+	offw_T.update(offw95_T)
+	'''---------------------------'''
+	offw96_90 = xbmc.getInfoLabel('Skin.HasSetting(offw96_90)')
+	'''---------------------------'''
+	offw96_100 = xbmc.getInfoLabel('Skin.HasSetting(offw96_100)')
+	offw96_101 = xbmc.getInfoLabel('Skin.HasSetting(offw96_101)')
+	offw96_102 = xbmc.getInfoLabel('Skin.HasSetting(offw96_102)')
+	offw96_103 = xbmc.getInfoLabel('Skin.HasSetting(offw96_103)')
+	offw96_104 = xbmc.getInfoLabel('Skin.HasSetting(offw96_104)')
+	offw96_105 = xbmc.getInfoLabel('Skin.HasSetting(offw96_105)')
+	offw96_106 = xbmc.getInfoLabel('Skin.HasSetting(offw96_106)')
+	offw96_107 = xbmc.getInfoLabel('Skin.HasSetting(offw96_107)')
+	offw96_108 = xbmc.getInfoLabel('Skin.HasSetting(offw96_108)')
+	offw96_109 = xbmc.getInfoLabel('Skin.HasSetting(offw96_109)')
+	'''---------------------------'''
+	offw96_T = { 'offw96_90': offw96_90, 'offw96_100': offw96_100, 'offw96_101': offw96_101, 'offw96_102': offw96_102, 'offw96_103': offw96_103, 'offw96_104': offw96_104, 'offw96_105': offw96_105, 'offw96_106': offw96_106, 'offw96_107': offw96_107, 'offw96_108': offw96_108, 'offw96_109': offw96_109 }
+	offw_T.update(offw96_T)
+	'''---------------------------'''
+	offw97_90 = xbmc.getInfoLabel('Skin.HasSetting(offw97_90)')
+	'''---------------------------'''
+	offw97_100 = xbmc.getInfoLabel('Skin.HasSetting(offw97_100)')
+	offw97_101 = xbmc.getInfoLabel('Skin.HasSetting(offw97_101)')
+	offw97_102 = xbmc.getInfoLabel('Skin.HasSetting(offw97_102)')
+	offw97_103 = xbmc.getInfoLabel('Skin.HasSetting(offw97_103)')
+	offw97_104 = xbmc.getInfoLabel('Skin.HasSetting(offw97_104)')
+	offw97_105 = xbmc.getInfoLabel('Skin.HasSetting(offw97_105)')
+	offw97_106 = xbmc.getInfoLabel('Skin.HasSetting(offw97_106)')
+	offw97_107 = xbmc.getInfoLabel('Skin.HasSetting(offw97_107)')
+	offw97_108 = xbmc.getInfoLabel('Skin.HasSetting(offw97_108)')
+	offw97_109 = xbmc.getInfoLabel('Skin.HasSetting(offw97_109)')
+	'''---------------------------'''
+	offw97_T = { 'offw97_90': offw97_90, 'offw97_100': offw97_100, 'offw97_101': offw97_101, 'offw97_102': offw97_102, 'offw97_103': offw97_103, 'offw97_104': offw97_104, 'offw97_105': offw97_105, 'offw97_106': offw97_106, 'offw97_107': offw97_107, 'offw97_108': offw97_108, 'offw97_109': offw97_109 }
+	offw_T.update(offw97_T)
+	'''---------------------------'''
+	offw98_90 = xbmc.getInfoLabel('Skin.HasSetting(offw98_90)')
+	'''---------------------------'''
+	offw98_100 = xbmc.getInfoLabel('Skin.HasSetting(offw98_100)')
+	offw98_101 = xbmc.getInfoLabel('Skin.HasSetting(offw98_101)')
+	offw98_102 = xbmc.getInfoLabel('Skin.HasSetting(offw98_102)')
+	offw98_103 = xbmc.getInfoLabel('Skin.HasSetting(offw98_103)')
+	offw98_104 = xbmc.getInfoLabel('Skin.HasSetting(offw98_104)')
+	offw98_105 = xbmc.getInfoLabel('Skin.HasSetting(offw98_105)')
+	offw98_106 = xbmc.getInfoLabel('Skin.HasSetting(offw98_106)')
+	offw98_107 = xbmc.getInfoLabel('Skin.HasSetting(offw98_107)')
+	offw98_108 = xbmc.getInfoLabel('Skin.HasSetting(offw98_108)')
+	offw98_109 = xbmc.getInfoLabel('Skin.HasSetting(offw98_109)')
+	'''---------------------------'''
+	offw98_T = { 'offw98_90': offw98_90, 'offw98_100': offw98_100, 'offw98_101': offw98_101, 'offw98_102': offw98_102, 'offw98_103': offw98_103, 'offw98_104': offw98_104, 'offw98_105': offw98_105, 'offw98_106': offw98_106, 'offw98_107': offw98_107, 'offw98_108': offw98_108, 'offw98_109': offw98_109 }
+	offw_T.update(offw98_T)
+	'''---------------------------'''
+	offw99_90 = xbmc.getInfoLabel('Skin.HasSetting(offw99_90)')
+	'''---------------------------'''
+	offw99_100 = xbmc.getInfoLabel('Skin.HasSetting(offw99_100)')
+	offw99_101 = xbmc.getInfoLabel('Skin.HasSetting(offw99_101)')
+	offw99_102 = xbmc.getInfoLabel('Skin.HasSetting(offw99_102)')
+	offw99_103 = xbmc.getInfoLabel('Skin.HasSetting(offw99_103)')
+	offw99_104 = xbmc.getInfoLabel('Skin.HasSetting(offw99_104)')
+	offw99_105 = xbmc.getInfoLabel('Skin.HasSetting(offw99_105)')
+	offw99_106 = xbmc.getInfoLabel('Skin.HasSetting(offw99_106)')
+	offw99_107 = xbmc.getInfoLabel('Skin.HasSetting(offw99_107)')
+	offw99_108 = xbmc.getInfoLabel('Skin.HasSetting(offw99_108)')
+	offw99_109 = xbmc.getInfoLabel('Skin.HasSetting(offw99_109)')
+	'''---------------------------'''
+	offw99_T = { 'offw99_90': offw99_90, 'offw99_100': offw99_100, 'offw99_101': offw99_101, 'offw99_102': offw99_102, 'offw99_103': offw99_103, 'offw99_104': offw99_104, 'offw99_105': offw99_105, 'offw99_106': offw99_106, 'offw99_107': offw99_107, 'offw99_108': offw99_108, 'offw99_109': offw99_109 }
+	offw_T.update(offw99_T)
+	'''---------------------------'''
+	
+	offw100_90 = xbmc.getInfoLabel('Skin.HasSetting(offw100_90)')
+	'''---------------------------'''
+	offw100_100 = xbmc.getInfoLabel('Skin.HasSetting(offw100_100)')
+	offw100_101 = xbmc.getInfoLabel('Skin.HasSetting(offw100_101)')
+	offw100_102 = xbmc.getInfoLabel('Skin.HasSetting(offw100_102)')
+	offw100_103 = xbmc.getInfoLabel('Skin.HasSetting(offw100_103)')
+	offw100_104 = xbmc.getInfoLabel('Skin.HasSetting(offw100_104)')
+	offw100_105 = xbmc.getInfoLabel('Skin.HasSetting(offw100_105)')
+	offw100_106 = xbmc.getInfoLabel('Skin.HasSetting(offw100_106)')
+	offw100_107 = xbmc.getInfoLabel('Skin.HasSetting(offw100_107)')
+	offw100_108 = xbmc.getInfoLabel('Skin.HasSetting(offw100_108)')
+	offw100_109 = xbmc.getInfoLabel('Skin.HasSetting(offw100_109)')
+	'''---------------------------'''
+	offw100_T = { 'offw100_90': offw100_90, 'offw100_100': offw100_100, 'offw100_101': offw100_101, 'offw100_102': offw100_102, 'offw100_103': offw100_103, 'offw100_104': offw100_104, 'offw100_105': offw100_105, 'offw100_106': offw100_106, 'offw100_107': offw100_107, 'offw100_108': offw100_108, 'offw100_109': offw100_109 }
+	offw_T.update(offw100_T)
+	'''---------------------------'''
+	offw101_90 = xbmc.getInfoLabel('Skin.HasSetting(offw101_90)')
+	'''---------------------------'''
+	offw101_100 = xbmc.getInfoLabel('Skin.HasSetting(offw101_100)')
+	offw101_101 = xbmc.getInfoLabel('Skin.HasSetting(offw101_101)')
+	offw101_102 = xbmc.getInfoLabel('Skin.HasSetting(offw101_102)')
+	offw101_103 = xbmc.getInfoLabel('Skin.HasSetting(offw101_103)')
+	offw101_104 = xbmc.getInfoLabel('Skin.HasSetting(offw101_104)')
+	offw101_105 = xbmc.getInfoLabel('Skin.HasSetting(offw101_105)')
+	offw101_106 = xbmc.getInfoLabel('Skin.HasSetting(offw101_106)')
+	offw101_107 = xbmc.getInfoLabel('Skin.HasSetting(offw101_107)')
+	offw101_108 = xbmc.getInfoLabel('Skin.HasSetting(offw101_108)')
+	offw101_109 = xbmc.getInfoLabel('Skin.HasSetting(offw101_109)')
+	'''---------------------------'''
+	offw101_T = { 'offw101_90': offw101_90, 'offw101_100': offw101_100, 'offw101_101': offw101_101, 'offw101_102': offw101_102, 'offw101_103': offw101_103, 'offw101_104': offw101_104, 'offw101_105': offw101_105, 'offw101_106': offw101_106, 'offw101_107': offw101_107, 'offw101_108': offw101_108, 'offw101_109': offw101_109 }
+	offw_T.update(offw101_T)
+	'''---------------------------'''
+	offw102_90 = xbmc.getInfoLabel('Skin.HasSetting(offw102_90)')
+	'''---------------------------'''
+	offw102_100 = xbmc.getInfoLabel('Skin.HasSetting(offw102_100)')
+	offw102_101 = xbmc.getInfoLabel('Skin.HasSetting(offw102_101)')
+	offw102_102 = xbmc.getInfoLabel('Skin.HasSetting(offw102_102)')
+	offw102_103 = xbmc.getInfoLabel('Skin.HasSetting(offw102_103)')
+	offw102_104 = xbmc.getInfoLabel('Skin.HasSetting(offw102_104)')
+	offw102_105 = xbmc.getInfoLabel('Skin.HasSetting(offw102_105)')
+	offw102_106 = xbmc.getInfoLabel('Skin.HasSetting(offw102_106)')
+	offw102_107 = xbmc.getInfoLabel('Skin.HasSetting(offw102_107)')
+	offw102_108 = xbmc.getInfoLabel('Skin.HasSetting(offw102_108)')
+	offw102_109 = xbmc.getInfoLabel('Skin.HasSetting(offw102_109)')
+	'''---------------------------'''
+	offw102_T = { 'offw102_90': offw102_90, 'offw102_100': offw102_100, 'offw102_101': offw102_101, 'offw102_102': offw102_102, 'offw102_103': offw102_103, 'offw102_104': offw102_104, 'offw102_105': offw102_105, 'offw102_106': offw102_106, 'offw102_107': offw102_107, 'offw102_108': offw102_108, 'offw102_109': offw102_109 }
+	offw_T.update(offw102_T)
+	'''---------------------------'''
+	offw103_90 = xbmc.getInfoLabel('Skin.HasSetting(offw103_90)')
+	'''---------------------------'''
+	offw103_100 = xbmc.getInfoLabel('Skin.HasSetting(offw103_100)')
+	offw103_101 = xbmc.getInfoLabel('Skin.HasSetting(offw103_101)')
+	offw103_102 = xbmc.getInfoLabel('Skin.HasSetting(offw103_102)')
+	offw103_103 = xbmc.getInfoLabel('Skin.HasSetting(offw103_103)')
+	offw103_104 = xbmc.getInfoLabel('Skin.HasSetting(offw103_104)')
+	offw103_105 = xbmc.getInfoLabel('Skin.HasSetting(offw103_105)')
+	offw103_106 = xbmc.getInfoLabel('Skin.HasSetting(offw103_106)')
+	offw103_107 = xbmc.getInfoLabel('Skin.HasSetting(offw103_107)')
+	offw103_108 = xbmc.getInfoLabel('Skin.HasSetting(offw103_108)')
+	offw103_109 = xbmc.getInfoLabel('Skin.HasSetting(offw103_109)')
+	'''---------------------------'''
+	offw103_T = { 'offw103_90': offw103_90, 'offw103_100': offw103_100, 'offw103_101': offw103_101, 'offw103_102': offw103_102, 'offw103_103': offw103_103, 'offw103_104': offw103_104, 'offw103_105': offw103_105, 'offw103_106': offw103_106, 'offw103_107': offw103_107, 'offw103_108': offw103_108, 'offw103_109': offw103_109 }
+	offw_T.update(offw103_T)
+	'''---------------------------'''
+	offw104_90 = xbmc.getInfoLabel('Skin.HasSetting(offw104_90)')
+	'''---------------------------'''
+	offw104_100 = xbmc.getInfoLabel('Skin.HasSetting(offw104_100)')
+	offw104_101 = xbmc.getInfoLabel('Skin.HasSetting(offw104_101)')
+	offw104_102 = xbmc.getInfoLabel('Skin.HasSetting(offw104_102)')
+	offw104_103 = xbmc.getInfoLabel('Skin.HasSetting(offw104_103)')
+	offw104_104 = xbmc.getInfoLabel('Skin.HasSetting(offw104_104)')
+	offw104_105 = xbmc.getInfoLabel('Skin.HasSetting(offw104_105)')
+	offw104_106 = xbmc.getInfoLabel('Skin.HasSetting(offw104_106)')
+	offw104_107 = xbmc.getInfoLabel('Skin.HasSetting(offw104_107)')
+	offw104_108 = xbmc.getInfoLabel('Skin.HasSetting(offw104_108)')
+	offw104_109 = xbmc.getInfoLabel('Skin.HasSetting(offw104_109)')
+	'''---------------------------'''
+	offw104_T = { 'offw104_90': offw104_90, 'offw104_100': offw104_100, 'offw104_101': offw104_101, 'offw104_102': offw104_102, 'offw104_103': offw104_103, 'offw104_104': offw104_104, 'offw104_105': offw104_105, 'offw104_106': offw104_106, 'offw104_107': offw104_107, 'offw104_108': offw104_108, 'offw104_109': offw104_109 }
+	offw_T.update(offw104_T)
+	'''---------------------------'''
+	offw105_90 = xbmc.getInfoLabel('Skin.HasSetting(offw105_90)')
+	'''---------------------------'''
+	offw105_100 = xbmc.getInfoLabel('Skin.HasSetting(offw105_100)')
+	offw105_101 = xbmc.getInfoLabel('Skin.HasSetting(offw105_101)')
+	offw105_102 = xbmc.getInfoLabel('Skin.HasSetting(offw105_102)')
+	offw105_103 = xbmc.getInfoLabel('Skin.HasSetting(offw105_103)')
+	offw105_104 = xbmc.getInfoLabel('Skin.HasSetting(offw105_104)')
+	offw105_105 = xbmc.getInfoLabel('Skin.HasSetting(offw105_105)')
+	offw105_106 = xbmc.getInfoLabel('Skin.HasSetting(offw105_106)')
+	offw105_107 = xbmc.getInfoLabel('Skin.HasSetting(offw105_107)')
+	offw105_108 = xbmc.getInfoLabel('Skin.HasSetting(offw105_108)')
+	offw105_109 = xbmc.getInfoLabel('Skin.HasSetting(offw105_109)')
+	'''---------------------------'''
+	offw105_T = { 'offw105_90': offw105_90, 'offw105_100': offw105_100, 'offw105_101': offw105_101, 'offw105_102': offw105_102, 'offw105_103': offw105_103, 'offw105_104': offw105_104, 'offw105_105': offw105_105, 'offw105_106': offw105_106, 'offw105_107': offw105_107, 'offw105_108': offw105_108, 'offw105_109': offw105_109 }
+	offw_T.update(offw105_T)
+	'''---------------------------'''
+	offw106_90 = xbmc.getInfoLabel('Skin.HasSetting(offw106_90)')
+	'''---------------------------'''
+	offw106_100 = xbmc.getInfoLabel('Skin.HasSetting(offw106_100)')
+	offw106_101 = xbmc.getInfoLabel('Skin.HasSetting(offw106_101)')
+	offw106_102 = xbmc.getInfoLabel('Skin.HasSetting(offw106_102)')
+	offw106_103 = xbmc.getInfoLabel('Skin.HasSetting(offw106_103)')
+	offw106_104 = xbmc.getInfoLabel('Skin.HasSetting(offw106_104)')
+	offw106_105 = xbmc.getInfoLabel('Skin.HasSetting(offw106_105)')
+	offw106_106 = xbmc.getInfoLabel('Skin.HasSetting(offw106_106)')
+	offw106_107 = xbmc.getInfoLabel('Skin.HasSetting(offw106_107)')
+	offw106_108 = xbmc.getInfoLabel('Skin.HasSetting(offw106_108)')
+	offw106_109 = xbmc.getInfoLabel('Skin.HasSetting(offw106_109)')
+	'''---------------------------'''
+	offw106_T = { 'offw106_90': offw106_90, 'offw106_100': offw106_100, 'offw106_101': offw106_101, 'offw106_102': offw106_102, 'offw106_103': offw106_103, 'offw106_104': offw106_104, 'offw106_105': offw106_105, 'offw106_106': offw106_106, 'offw106_107': offw106_107, 'offw106_108': offw106_108, 'offw106_109': offw106_109 }
+	offw_T.update(offw106_T)
+	'''---------------------------'''
+	offw107_90 = xbmc.getInfoLabel('Skin.HasSetting(offw107_90)')
+	'''---------------------------'''
+	offw107_100 = xbmc.getInfoLabel('Skin.HasSetting(offw107_100)')
+	offw107_101 = xbmc.getInfoLabel('Skin.HasSetting(offw107_101)')
+	offw107_102 = xbmc.getInfoLabel('Skin.HasSetting(offw107_102)')
+	offw107_103 = xbmc.getInfoLabel('Skin.HasSetting(offw107_103)')
+	offw107_104 = xbmc.getInfoLabel('Skin.HasSetting(offw107_104)')
+	offw107_105 = xbmc.getInfoLabel('Skin.HasSetting(offw107_105)')
+	offw107_106 = xbmc.getInfoLabel('Skin.HasSetting(offw107_106)')
+	offw107_107 = xbmc.getInfoLabel('Skin.HasSetting(offw107_107)')
+	offw107_108 = xbmc.getInfoLabel('Skin.HasSetting(offw107_108)')
+	offw107_109 = xbmc.getInfoLabel('Skin.HasSetting(offw107_109)')
+	'''---------------------------'''
+	offw107_T = { 'offw107_90': offw107_90, 'offw107_100': offw107_100, 'offw107_101': offw107_101, 'offw107_102': offw107_102, 'offw107_103': offw107_103, 'offw107_104': offw107_104, 'offw107_105': offw107_105, 'offw107_106': offw107_106, 'offw107_107': offw107_107, 'offw107_108': offw107_108, 'offw107_109': offw107_109 }
+	offw_T.update(offw107_T)
+	'''---------------------------'''
+	offw108_90 = xbmc.getInfoLabel('Skin.HasSetting(offw108_90)')
+	'''---------------------------'''
+	offw108_100 = xbmc.getInfoLabel('Skin.HasSetting(offw108_100)')
+	offw108_101 = xbmc.getInfoLabel('Skin.HasSetting(offw108_101)')
+	offw108_102 = xbmc.getInfoLabel('Skin.HasSetting(offw108_102)')
+	offw108_103 = xbmc.getInfoLabel('Skin.HasSetting(offw108_103)')
+	offw108_104 = xbmc.getInfoLabel('Skin.HasSetting(offw108_104)')
+	offw108_105 = xbmc.getInfoLabel('Skin.HasSetting(offw108_105)')
+	offw108_106 = xbmc.getInfoLabel('Skin.HasSetting(offw108_106)')
+	offw108_107 = xbmc.getInfoLabel('Skin.HasSetting(offw108_107)')
+	offw108_108 = xbmc.getInfoLabel('Skin.HasSetting(offw108_108)')
+	offw108_109 = xbmc.getInfoLabel('Skin.HasSetting(offw108_109)')
+	'''---------------------------'''
+	offw108_T = { 'offw108_90': offw108_90, 'offw108_100': offw108_100, 'offw108_101': offw108_101, 'offw108_102': offw108_102, 'offw108_103': offw108_103, 'offw108_104': offw108_104, 'offw108_105': offw108_105, 'offw108_106': offw108_106, 'offw108_107': offw108_107, 'offw108_108': offw108_108, 'offw108_109': offw108_109 }
+	offw_T.update(offw108_T)
+	'''---------------------------'''
+	offw109_90 = xbmc.getInfoLabel('Skin.HasSetting(offw109_90)')
+	'''---------------------------'''
+	offw109_100 = xbmc.getInfoLabel('Skin.HasSetting(offw109_100)')
+	offw109_101 = xbmc.getInfoLabel('Skin.HasSetting(offw109_101)')
+	offw109_102 = xbmc.getInfoLabel('Skin.HasSetting(offw109_102)')
+	offw109_103 = xbmc.getInfoLabel('Skin.HasSetting(offw109_103)')
+	offw109_104 = xbmc.getInfoLabel('Skin.HasSetting(offw109_104)')
+	offw109_105 = xbmc.getInfoLabel('Skin.HasSetting(offw109_105)')
+	offw109_106 = xbmc.getInfoLabel('Skin.HasSetting(offw109_106)')
+	offw109_107 = xbmc.getInfoLabel('Skin.HasSetting(offw109_107)')
+	offw109_108 = xbmc.getInfoLabel('Skin.HasSetting(offw109_108)')
+	offw109_109 = xbmc.getInfoLabel('Skin.HasSetting(offw109_109)')
+	'''---------------------------'''
+	offw109_T = { 'offw109_90': offw109_90, 'offw109_100': offw109_100, 'offw109_101': offw109_101, 'offw109_102': offw109_102, 'offw109_103': offw109_103, 'offw109_104': offw109_104, 'offw109_105': offw109_105, 'offw109_106': offw109_106, 'offw109_107': offw109_107, 'offw109_108': offw109_108, 'offw109_109': offw109_109 }
+	offw_T.update(offw109_T)
+	
+	offw110_90 = xbmc.getInfoLabel('Skin.HasSetting(offw110_90)')
+	'''---------------------------'''
+	offw110_100 = xbmc.getInfoLabel('Skin.HasSetting(offw110_100)')
+	offw110_101 = xbmc.getInfoLabel('Skin.HasSetting(offw110_101)')
+	offw110_102 = xbmc.getInfoLabel('Skin.HasSetting(offw110_102)')
+	offw110_103 = xbmc.getInfoLabel('Skin.HasSetting(offw110_103)')
+	offw110_104 = xbmc.getInfoLabel('Skin.HasSetting(offw110_104)')
+	offw110_105 = xbmc.getInfoLabel('Skin.HasSetting(offw110_105)')
+	offw110_106 = xbmc.getInfoLabel('Skin.HasSetting(offw110_106)')
+	offw110_107 = xbmc.getInfoLabel('Skin.HasSetting(offw110_107)')
+	offw110_108 = xbmc.getInfoLabel('Skin.HasSetting(offw110_108)')
+	offw110_109 = xbmc.getInfoLabel('Skin.HasSetting(offw110_109)')
+	'''---------------------------'''
+	offw110_T = { 'offw110_90': offw110_90, 'offw110_100': offw110_100, 'offw110_101': offw110_101, 'offw110_102': offw110_102, 'offw110_103': offw110_103, 'offw110_104': offw110_104, 'offw110_105': offw110_105, 'offw110_106': offw110_106, 'offw110_107': offw110_107, 'offw110_108': offw110_108, 'offw110_109': offw110_109 }
+	offw_T.update(offw110_T)
+	'''---------------------------'''
+	offw111_90 = xbmc.getInfoLabel('Skin.HasSetting(offw111_90)')
+	'''---------------------------'''
+	offw111_100 = xbmc.getInfoLabel('Skin.HasSetting(offw111_100)')
+	offw111_101 = xbmc.getInfoLabel('Skin.HasSetting(offw111_101)')
+	offw111_102 = xbmc.getInfoLabel('Skin.HasSetting(offw111_102)')
+	offw111_103 = xbmc.getInfoLabel('Skin.HasSetting(offw111_103)')
+	offw111_104 = xbmc.getInfoLabel('Skin.HasSetting(offw111_104)')
+	offw111_105 = xbmc.getInfoLabel('Skin.HasSetting(offw111_105)')
+	offw111_106 = xbmc.getInfoLabel('Skin.HasSetting(offw111_106)')
+	offw111_107 = xbmc.getInfoLabel('Skin.HasSetting(offw111_107)')
+	offw111_108 = xbmc.getInfoLabel('Skin.HasSetting(offw111_108)')
+	offw111_109 = xbmc.getInfoLabel('Skin.HasSetting(offw111_109)')
+	'''---------------------------'''
+	offw111_T = { 'offw111_90': offw111_90, 'offw111_100': offw111_100, 'offw111_101': offw111_101, 'offw111_102': offw111_102, 'offw111_103': offw111_103, 'offw111_104': offw111_104, 'offw111_105': offw111_105, 'offw111_106': offw111_106, 'offw111_107': offw111_107, 'offw111_108': offw111_108, 'offw111_109': offw111_109 }
+	offw_T.update(offw111_T)
+	'''---------------------------'''
+	offw112_90 = xbmc.getInfoLabel('Skin.HasSetting(offw112_90)')
+	'''---------------------------'''
+	offw112_100 = xbmc.getInfoLabel('Skin.HasSetting(offw112_100)')
+	offw112_101 = xbmc.getInfoLabel('Skin.HasSetting(offw112_101)')
+	offw112_102 = xbmc.getInfoLabel('Skin.HasSetting(offw112_102)')
+	offw112_103 = xbmc.getInfoLabel('Skin.HasSetting(offw112_103)')
+	offw112_104 = xbmc.getInfoLabel('Skin.HasSetting(offw112_104)')
+	offw112_105 = xbmc.getInfoLabel('Skin.HasSetting(offw112_105)')
+	offw112_106 = xbmc.getInfoLabel('Skin.HasSetting(offw112_106)')
+	offw112_107 = xbmc.getInfoLabel('Skin.HasSetting(offw112_107)')
+	offw112_108 = xbmc.getInfoLabel('Skin.HasSetting(offw112_108)')
+	offw112_109 = xbmc.getInfoLabel('Skin.HasSetting(offw112_109)')
+	'''---------------------------'''
+	offw112_T = { 'offw112_90': offw112_90, 'offw112_100': offw112_100, 'offw112_101': offw112_101, 'offw112_102': offw112_102, 'offw112_103': offw112_103, 'offw112_104': offw112_104, 'offw112_105': offw112_105, 'offw112_106': offw112_106, 'offw112_107': offw112_107, 'offw112_108': offw112_108, 'offw112_109': offw112_109 }
+	offw_T.update(offw112_T)
+	'''---------------------------'''
+	offw113_90 = xbmc.getInfoLabel('Skin.HasSetting(offw113_90)')
+	'''---------------------------'''
+	offw113_100 = xbmc.getInfoLabel('Skin.HasSetting(offw113_100)')
+	offw113_101 = xbmc.getInfoLabel('Skin.HasSetting(offw113_101)')
+	offw113_102 = xbmc.getInfoLabel('Skin.HasSetting(offw113_102)')
+	offw113_103 = xbmc.getInfoLabel('Skin.HasSetting(offw113_103)')
+	offw113_104 = xbmc.getInfoLabel('Skin.HasSetting(offw113_104)')
+	offw113_105 = xbmc.getInfoLabel('Skin.HasSetting(offw113_105)')
+	offw113_106 = xbmc.getInfoLabel('Skin.HasSetting(offw113_106)')
+	offw113_107 = xbmc.getInfoLabel('Skin.HasSetting(offw113_107)')
+	offw113_108 = xbmc.getInfoLabel('Skin.HasSetting(offw113_108)')
+	offw113_109 = xbmc.getInfoLabel('Skin.HasSetting(offw113_109)')
+	'''---------------------------'''
+	offw113_T = { 'offw113_90': offw113_90, 'offw113_100': offw113_100, 'offw113_101': offw113_101, 'offw113_102': offw113_102, 'offw113_103': offw113_103, 'offw113_104': offw113_104, 'offw113_105': offw113_105, 'offw113_106': offw113_106, 'offw113_107': offw113_107, 'offw113_108': offw113_108, 'offw113_109': offw113_109 }
+	offw_T.update(offw113_T)
+	'''---------------------------'''
+	offw114_90 = xbmc.getInfoLabel('Skin.HasSetting(offw114_90)')
+	'''---------------------------'''
+	offw114_100 = xbmc.getInfoLabel('Skin.HasSetting(offw114_100)')
+	offw114_101 = xbmc.getInfoLabel('Skin.HasSetting(offw114_101)')
+	offw114_102 = xbmc.getInfoLabel('Skin.HasSetting(offw114_102)')
+	offw114_103 = xbmc.getInfoLabel('Skin.HasSetting(offw114_103)')
+	offw114_104 = xbmc.getInfoLabel('Skin.HasSetting(offw114_104)')
+	offw114_105 = xbmc.getInfoLabel('Skin.HasSetting(offw114_105)')
+	offw114_106 = xbmc.getInfoLabel('Skin.HasSetting(offw114_106)')
+	offw114_107 = xbmc.getInfoLabel('Skin.HasSetting(offw114_107)')
+	offw114_108 = xbmc.getInfoLabel('Skin.HasSetting(offw114_108)')
+	offw114_109 = xbmc.getInfoLabel('Skin.HasSetting(offw114_109)')
+	'''---------------------------'''
+	offw114_T = { 'offw114_90': offw114_90, 'offw114_100': offw114_100, 'offw114_101': offw114_101, 'offw114_102': offw114_102, 'offw114_103': offw114_103, 'offw114_104': offw114_104, 'offw114_105': offw114_105, 'offw114_106': offw114_106, 'offw114_107': offw114_107, 'offw114_108': offw114_108, 'offw114_109': offw114_109 }
+	offw_T.update(offw114_T)
+	'''---------------------------'''
+	offw115_90 = xbmc.getInfoLabel('Skin.HasSetting(offw115_90)')
+	'''---------------------------'''
+	offw115_100 = xbmc.getInfoLabel('Skin.HasSetting(offw115_100)')
+	offw115_101 = xbmc.getInfoLabel('Skin.HasSetting(offw115_101)')
+	offw115_102 = xbmc.getInfoLabel('Skin.HasSetting(offw115_102)')
+	offw115_103 = xbmc.getInfoLabel('Skin.HasSetting(offw115_103)')
+	offw115_104 = xbmc.getInfoLabel('Skin.HasSetting(offw115_104)')
+	offw115_105 = xbmc.getInfoLabel('Skin.HasSetting(offw115_105)')
+	offw115_106 = xbmc.getInfoLabel('Skin.HasSetting(offw115_106)')
+	offw115_107 = xbmc.getInfoLabel('Skin.HasSetting(offw115_107)')
+	offw115_108 = xbmc.getInfoLabel('Skin.HasSetting(offw115_108)')
+	offw115_109 = xbmc.getInfoLabel('Skin.HasSetting(offw115_109)')
+	'''---------------------------'''
+	offw115_T = { 'offw115_90': offw115_90, 'offw115_100': offw115_100, 'offw115_101': offw115_101, 'offw115_102': offw115_102, 'offw115_103': offw115_103, 'offw115_104': offw115_104, 'offw115_105': offw115_105, 'offw115_106': offw115_106, 'offw115_107': offw115_107, 'offw115_108': offw115_108, 'offw115_109': offw115_109 }
+	offw_T.update(offw115_T)
+	'''---------------------------'''
+	offw116_90 = xbmc.getInfoLabel('Skin.HasSetting(offw116_90)')
+	'''---------------------------'''
+	offw116_100 = xbmc.getInfoLabel('Skin.HasSetting(offw116_100)')
+	offw116_101 = xbmc.getInfoLabel('Skin.HasSetting(offw116_101)')
+	offw116_102 = xbmc.getInfoLabel('Skin.HasSetting(offw116_102)')
+	offw116_103 = xbmc.getInfoLabel('Skin.HasSetting(offw116_103)')
+	offw116_104 = xbmc.getInfoLabel('Skin.HasSetting(offw116_104)')
+	offw116_105 = xbmc.getInfoLabel('Skin.HasSetting(offw116_105)')
+	offw116_106 = xbmc.getInfoLabel('Skin.HasSetting(offw116_106)')
+	offw116_107 = xbmc.getInfoLabel('Skin.HasSetting(offw116_107)')
+	offw116_108 = xbmc.getInfoLabel('Skin.HasSetting(offw116_108)')
+	offw116_109 = xbmc.getInfoLabel('Skin.HasSetting(offw116_109)')
+	'''---------------------------'''
+	offw116_T = { 'offw116_90': offw116_90, 'offw116_100': offw116_100, 'offw116_101': offw116_101, 'offw116_102': offw116_102, 'offw116_103': offw116_103, 'offw116_104': offw116_104, 'offw116_105': offw116_105, 'offw116_106': offw116_106, 'offw116_107': offw116_107, 'offw116_108': offw116_108, 'offw116_109': offw116_109 }
+	offw_T.update(offw116_T)
+	'''---------------------------'''
+	offw117_90 = xbmc.getInfoLabel('Skin.HasSetting(offw117_90)')
+	'''---------------------------'''
+	offw117_100 = xbmc.getInfoLabel('Skin.HasSetting(offw117_100)')
+	offw117_101 = xbmc.getInfoLabel('Skin.HasSetting(offw117_101)')
+	offw117_102 = xbmc.getInfoLabel('Skin.HasSetting(offw117_102)')
+	offw117_103 = xbmc.getInfoLabel('Skin.HasSetting(offw117_103)')
+	offw117_104 = xbmc.getInfoLabel('Skin.HasSetting(offw117_104)')
+	offw117_105 = xbmc.getInfoLabel('Skin.HasSetting(offw117_105)')
+	offw117_106 = xbmc.getInfoLabel('Skin.HasSetting(offw117_106)')
+	offw117_107 = xbmc.getInfoLabel('Skin.HasSetting(offw117_107)')
+	offw117_108 = xbmc.getInfoLabel('Skin.HasSetting(offw117_108)')
+	offw117_109 = xbmc.getInfoLabel('Skin.HasSetting(offw117_109)')
+	'''---------------------------'''
+	offw117_T = { 'offw117_90': offw117_90, 'offw117_100': offw117_100, 'offw117_101': offw117_101, 'offw117_102': offw117_102, 'offw117_103': offw117_103, 'offw117_104': offw117_104, 'offw117_105': offw117_105, 'offw117_106': offw117_106, 'offw117_107': offw117_107, 'offw117_108': offw117_108, 'offw117_109': offw117_109 }
+	offw_T.update(offw117_T)
+	'''---------------------------'''
+	offw118_90 = xbmc.getInfoLabel('Skin.HasSetting(offw118_90)')
+	'''---------------------------'''
+	offw118_100 = xbmc.getInfoLabel('Skin.HasSetting(offw118_100)')
+	offw118_101 = xbmc.getInfoLabel('Skin.HasSetting(offw118_101)')
+	offw118_102 = xbmc.getInfoLabel('Skin.HasSetting(offw118_102)')
+	offw118_103 = xbmc.getInfoLabel('Skin.HasSetting(offw118_103)')
+	offw118_104 = xbmc.getInfoLabel('Skin.HasSetting(offw118_104)')
+	offw118_105 = xbmc.getInfoLabel('Skin.HasSetting(offw118_105)')
+	offw118_106 = xbmc.getInfoLabel('Skin.HasSetting(offw118_106)')
+	offw118_107 = xbmc.getInfoLabel('Skin.HasSetting(offw118_107)')
+	offw118_108 = xbmc.getInfoLabel('Skin.HasSetting(offw118_108)')
+	offw118_109 = xbmc.getInfoLabel('Skin.HasSetting(offw118_109)')
+	'''---------------------------'''
+	offw118_T = { 'offw118_90': offw118_90, 'offw118_100': offw118_100, 'offw118_101': offw118_101, 'offw118_102': offw118_102, 'offw118_103': offw118_103, 'offw118_104': offw118_104, 'offw118_105': offw118_105, 'offw118_106': offw118_106, 'offw118_107': offw118_107, 'offw118_108': offw118_108, 'offw118_109': offw118_109 }
+	offw_T.update(offw118_T)
+	'''---------------------------'''
+	offw119_90 = xbmc.getInfoLabel('Skin.HasSetting(offw119_90)')
+	'''---------------------------'''
+	offw119_100 = xbmc.getInfoLabel('Skin.HasSetting(offw119_100)')
+	offw119_101 = xbmc.getInfoLabel('Skin.HasSetting(offw119_101)')
+	offw119_102 = xbmc.getInfoLabel('Skin.HasSetting(offw119_102)')
+	offw119_103 = xbmc.getInfoLabel('Skin.HasSetting(offw119_103)')
+	offw119_104 = xbmc.getInfoLabel('Skin.HasSetting(offw119_104)')
+	offw119_105 = xbmc.getInfoLabel('Skin.HasSetting(offw119_105)')
+	offw119_106 = xbmc.getInfoLabel('Skin.HasSetting(offw119_106)')
+	offw119_107 = xbmc.getInfoLabel('Skin.HasSetting(offw119_107)')
+	offw119_108 = xbmc.getInfoLabel('Skin.HasSetting(offw119_108)')
+	offw119_109 = xbmc.getInfoLabel('Skin.HasSetting(offw119_109)')
+	'''---------------------------'''
+	offw119_T = { 'offw119_90': offw119_90, 'offw119_100': offw119_100, 'offw119_101': offw119_101, 'offw119_102': offw119_102, 'offw119_103': offw119_103, 'offw119_104': offw119_104, 'offw119_105': offw119_105, 'offw119_106': offw119_106, 'offw119_107': offw119_107, 'offw119_108': offw119_108, 'offw119_109': offw119_109 }
+	offw_T.update(offw119_T)
 	
 if xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)') or 1 + 1 == 2:
-	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos', 'ButtonsDesign', 'DialogMenu', 'PassProtect', 'StartUpVideo', 'AutoView.movies', 'AutoView.tvshows', 'AutoView.seasons', 'AutoView.episodes', 'AutoView.setmovies', 'AutoView.actors', 'AutoView.genres', 'AutoView.others', 'AutoView.pictures', 'screensavermusic','MultiFanart_fadetime', 'MultiFanart_timeperimage'] #NO RANDOM SUPPORT
+	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos', 'ButtonsDesign', 'DialogMenu', 'PassProtect', 'StartUpVideo', 'AutoView.movies', 'AutoView.tvshows', 'AutoView.seasons', 'AutoView.episodes', 'AutoView.setmovies', 'AutoView.actors', 'AutoView.genres', 'AutoView.others', 'AutoView.pictures', 'screensavermusic','MultiFanart_fadetime', 'MultiFanart_timeperimage', 'CustomStartupImage'] #NO RANDOM SUPPORT
 	list0c = ['MenuColor', 'SubMenuMarkColor', 'TopInformationColor', 'TopVideoInformationColor', 'MainBackgroundColor', 'TopBackgroundColor', 'IconUnFocusColor', 'IconFocusColor', 'ButtonUnFocusColor', 'ButtonFocusColor', 'KeyboardUnFocusColor', 'KeyboardFocusColor', 'keyboardbackgroundcolor', 'KeyboardEditColor', 'SelectedFrameColor', 'SubMenuMarkColor']
 	list0c2 = ['MainBackgroundTexture', 'TopBackgroundTexture'] #NO RANDOM SUPPORT
 	list0o = ['IconOverlayButton', 'MenuButtonsOverlay', 'MenuOverlay', 'DialogBackgroundOverlay', 'KeyboardBackgroundOverlay', 'TopVideoInformationOverlay', 'TopMainBackgroundOverlay', 'TopInformationOverlay', 'MainBackgroundOverlay', 'BackgroundOverlay', 'Background2Overlay']

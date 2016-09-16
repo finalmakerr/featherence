@@ -71,6 +71,9 @@ property_subbuttonname = xbmc.getInfoLabel('Window(home).Property(SubButton.Name
 property_previoussubbuttonid_ = xbmc.getInfoLabel('Window(home).Property(Previous_SubButton.ID_)')
 property_nextsubbuttonid_ = xbmc.getInfoLabel('Window(home).Property(Next_SubButton.ID_)')
 
+property_widgetbuttonid = xbmc.getInfoLabel('Window(home).Property(WidgetButton.ID)')
+property_widgetbuttonid_ = xbmc.getInfoLabel('Window(home).Property(WidgetButton.ID_)')
+property_widgetbuttonname = xbmc.getInfoLabel('Window(home).Property(WidgetButton.Name)')
 property_reloadskin = xbmc.getInfoLabel('Window(home).Property(ReloadSkin)')
 reloadskin_check = xbmc.getInfoLabel('Control.GetLabel(700105)')
 

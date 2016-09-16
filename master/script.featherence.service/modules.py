@@ -981,8 +981,6 @@ def mode70(value, admin, name, printpoint, property_temp):
 	listitemdirector = xbmc.getInfoLabel('ListItem.Director')
 	listitemyear = xbmc.getInfoLabel('ListItem.Year')
 	listitemwriter = xbmc.getInfoLabel('ListItem.Writer')
-	property_listitemyear = xbmc.getInfoLabel('Window(home).Property(ListItemYear)')
-	property_listitemtvshowtitle = xbmc.getInfoLabel('Window(home).Property(ListItemTVShowTitle)')
 	listitemtvshowtitle = xbmc.getInfoLabel('ListItem.TVShowTitle')
 	
 	addon = 'script.extendedinfo' ; input0 = "" ; input = "" ; input2 = "" ; container50listitemlabel2 = "" ; property_temp_ = ""
@@ -1529,6 +1527,37 @@ def mode210(value, admin, name, printpoint):
 				else: printpoint = printpoint + "9" ; break
 				
 				extra2 = extra2 + newline + "i" + space2 + str(i) + space + "x" + space2 + str(x) + space + "y" + space2 + str(y) + space + "y2" + space2 + str(y2) + space
+		elif '3' in value:
+			for i in range(0,2):
+				x = "" ; y = "" ; y2 = ""
+				extra = extra + "i" + space2 + str(i)
+				if i == 0:
+					'''property_buttonid -> property_temp'''
+					x = property_temp2
+					x2 = property_temp
+					y = property_widgetbuttonid_
+					y2 = property_widgetbuttonid
+					'''---------------------------'''
+				elif i == 1:
+					'''property_temp -> property_buttonid'''
+					x = property_widgetbuttonid_
+					x2 = property_widgetbuttonid_
+					y = property_temp2
+					y2 = property_temp
+					'''---------------------------'''
+				else: pass	
+				if x != "" and y != "":
+					'''continue'''
+					notification("...", str(labelwT.get('label'+x)) + ' -> ' + str(labelwT.get('label'+y)), "", 1000)
+					setSkinSetting('0','id'+x,str(idT.get('id'+y)))
+					setSkinSetting('0','label'+x,str(labelT.get('label'+y)))
+					setSkinSetting('0','action'+x,str(actionT.get('action'+y)))
+					setSkinSetting('1','off'+x,str(offT.get('off'+y)))
+					setSkinSetting('0','icon'+x,str(iconT.get('icon'+y)))
+					#setSkinSetting('0','background'+y,str(backgroundT.get('background'+x)))
+					'''---------------------------'''
+				else: notification("Error","","",2000) ; printpoint = printpoint + "8"
+
 	#dp.close
 	if "9" in printpoint: notification(localize(257) + space2 + '209', '', '', 2000)
 	else:
@@ -1720,6 +1749,11 @@ def mode214(value, admin, name, printpoint):
 		if returned != 'skip':
 			if returned == "": setSkinSetting('0','label'+property_subbuttonid_, '...')
 	
+	if value == '2':
+		returned = dialogkeyboard(property_widgetbuttonname,addonString_servicefeatherence(32149).encode('utf-8'),0,"",'label'+property_widgetbuttonid_,"")
+		if returned != 'skip':
+			if returned == "": setSkinSetting('0','label'+widgetproperty_buttonid_, '...')
+	
 	if value == '5':
 		'''SelectedColor'''
 		returned_len = "" ; returned1 = "" ; path = ""
@@ -1906,20 +1940,13 @@ def mode218(value, admin, name, printpoint):
 		playerpaused = xbmc.getCondVisibility('Player.Paused')
 		if dialogfullscreeninfoW and playerpaused:
 			message = message + newline + "VideoPlayer.Duration" + space2 + xbmc.getInfoLabel('VideoPlayer.Duration')
-			message = message + newline + "TopVideoInformation1" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation1)')
 			message = message + newline + "VideoPlayer.Year" + space2 + xbmc.getInfoLabel('VideoPlayer.Year')
-			message = message + newline + "TopVideoInformation2" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation2)')
 			message = message + newline + "VideoPlayer.Rating" + space2 + xbmc.getInfoLabel('VideoPlayer.Rating')
-			message = message + newline + "TopVideoInformation3" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation3)')
 			message = message + newline + "VideoPlayer.Plot" + space2 + xbmc.getInfoLabel('VideoPlayer.Plot')
-			message = message + newline + "TopVideoInformation5" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation5)')
 			
 			message = message + newline + "VideoPlayer.Genre" + space2 + xbmc.getInfoLabel('VideoPlayer.Genre')
-			message = message + newline + "TopVideoInformation6" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation6)')
 			message = message + newline + "VideoPlayer.Tagline" + space2 + xbmc.getInfoLabel('VideoPlayer.Tagline')
-			message = message + newline + "TopVideoInformation7" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation7)')
 			message = message + newline + "VideoPlayer.Title" + space2 + xbmc.getInfoLabel('VideoPlayer.Title')
-			message = message + newline + "TopVideoInformation8" + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation8)')
 			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('VideoPlayer.VideoCodec') #CUSTOM TEST
 			
 		elif myweatherW:
@@ -1962,6 +1989,9 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "Previous_SubButton.ID_" + space2 + property_previoussubbuttonid_
 			message = message + newline + "Next_SubButton.ID_" + space2 + property_nextsubbuttonid_
 			message = message + newline + '---------------------------'
+			message = message + newline + "WidgetButton.ID_" + space2 + property_widgetbuttonid_
+			message = message + newline + "WidgetButton.Name" + space2 + property_widgetbuttonname
+			message = message + newline + '---------------------------'
 			message = message + newline + "ReloadSkin" + space2 + property_reloadskin
 			message = message + newline + '---------------------------'
 			message = message + newline + "1000progress" + space2 + property_1000progress
@@ -1974,16 +2004,6 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "HomeLastPos2" + space2 + xbmc.getInfoLabel('Window(home).Property(HomeLastPos2)')
 			message = message + newline + '---------------------------'
 			message = message + newline + "SelectedColor" + space2 + xbmc.getInfoLabel('Window(home).Property(SelectedColor)')
-			message = message + newline + "ListItemYear" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemYear)')
-			message = message + newline + "ListItemGenre" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemGenre)')
-			message = message + newline + "ListItemRating" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemRating)')
-			message = message + newline + "ListItemUnWatchedEpisodes" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemUnWatchedEpisodes)')
-			message = message + newline + "ListItemTVShowTitle" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemTVShowTitle)')
-			message = message + newline + "ListItemDuration" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemDuration)')
-			message = message + newline + "ListItemPoster" + space2 + xbmc.getInfoLabel('Window(home).Property(ListItemPoster)')
-			message = message + newline + '---------------------------'
-			for i in range(1,9):
-				message = message + newline + "TopVideoInformation" + str(i) + space2 + xbmc.getInfoLabel('Window(home).Property(TopVideoInformation'+str(i)+')')
 			message = message + newline + '---------------------------'
 			message = message + newline + "tips" + space2 + xbmc.getInfoLabel('Window(home).Property(tips)')
 			message = message + newline + "ListItem.Path" + space2 + xbmc.getInfoLabel('ListItem.Path')
@@ -2031,7 +2051,8 @@ def mode232(value, admin, name, printpoint):
 				else: test = int(value) + 1
 				id1 = value
 			elif custom1175W and not custom1138W:
-				if property_buttonid_ == "": printpoint = printpoint + "9B"
+				if property_widgetbuttonid_ != "": id1 = property_widgetbuttonid_
+				elif property_buttonid_ == "": printpoint = printpoint + "9B"
 				else: test = int(property_buttonid) + 1 ; id1 = property_buttonid_
 			elif custom1138W:
 				if property_subbuttonid_ == "" or (not property_buttonid in property_subbuttonid_): printpoint = printpoint + "9C"
@@ -2087,7 +2108,9 @@ def mode232(value, admin, name, printpoint):
 			
 def mode233(value, admin, name, printpoint):
 	printpoint = "" ; returned_ = ""
-	x = "" ; y = property_buttonid_ ; path = "" ; x2_ = ""
+	x = "" ; path = "" ; x2_ = ""
+	if '3' in value: y = property_widgetbuttonid_
+	else: y = property_buttonid_
 	customiconspath = to_unicode(xbmc.getInfoLabel('Skin.String(CustomIconsPath)'))
 	custombackgroundspath = to_unicode(xbmc.getInfoLabel('Skin.String(CustomBackgroundsPath)'))
 	property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
@@ -2101,7 +2124,7 @@ def mode233(value, admin, name, printpoint):
 		'''Add-Fanart'''
 		name = localize(20441)
 		x = 'background'
-		if not '0' in printpoint: y = property_buttonid
+		if not '0' in printpoint and not '3' in printpoint: y = property_buttonid
 		nolabel=localize(20438)
 		yeslabel=localize(20441)
 	

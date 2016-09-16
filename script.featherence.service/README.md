@@ -211,6 +211,11 @@ RunScript(script.featherence.service,,?mode=25)
 			  list.append('&custom8=plugin://plugin.video.featherence.music/')
 			  addDir("MODE 8 - SHOW FROM ANOTHER ADDON",list,6,'http://i.imgur.com/ZVxYi7I.png','description','1','viewtype', getAddonFanart(background="", default="http://i.imgur.com/U2ufQo3.png", custom=""))
 			```	
+			
+			TIP:
+				- &activatewindow=
+					Use the above after the "=" in some cases it's required!
+	
 
 		* **MODE 13 - SHOW FROM PLAYLIST:**
 			```

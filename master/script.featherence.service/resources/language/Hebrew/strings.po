@@ -540,8 +540,8 @@ msgid "Add Container.FolderPath keymap"
 msgstr "Add Container.FolderPath keymap"
 
 msgctxt "#32149"
-msgid ""
-msgstr ""
+msgid "Widget Button Name"
+msgstr "שם כפתור ו'ידגט"
 
 msgctxt "#32150"
 msgid ""
