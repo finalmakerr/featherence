@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <include name="Backgrounds1" description="בית">
+  <include name="Backgrounds1" description="בית">
 	<control type="group">
 	  <include>Slide1.5</include>
 	  <height>552</height>
@@ -577,6 +577,336 @@
 	<value condition="Skin.HasSetting(SubBackground) + StringCompare(Window(home).Property(SubButton.ID_),119_108) + !IsEmpty(Skin.String(background119_108))">$INFO[Skin.String(background119_108)]</value>
 	<value condition="Skin.HasSetting(SubBackground) + StringCompare(Window(home).Property(SubButton.ID_),119_109) + !IsEmpty(Skin.String(background119_109))">$INFO[Skin.String(background119_109)]</value>
 	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w90_100) + !IsEmpty(Skin.String(backgroundw90_100))">$INFO[Skin.String(backgroundw90_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w90_101) + !IsEmpty(Skin.String(backgroundw90_101))">$INFO[Skin.String(backgroundw90_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w90_102) + !IsEmpty(Skin.String(backgroundw90_102))">$INFO[Skin.String(backgroundw90_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w90_103) + !IsEmpty(Skin.String(backgroundw90_103))">$INFO[Skin.String(backgroundw90_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w90_104) + !IsEmpty(Skin.String(backgroundw90_104))">$INFO[Skin.String(backgroundw90_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w90_105) + !IsEmpty(Skin.String(backgroundw90_105))">$INFO[Skin.String(backgroundw90_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w90_106) + !IsEmpty(Skin.String(backgroundw90_106))">$INFO[Skin.String(backgroundw90_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w90_107) + !IsEmpty(Skin.String(backgroundw90_107))">$INFO[Skin.String(backgroundw90_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w90_108) + !IsEmpty(Skin.String(backgroundw90_108))">$INFO[Skin.String(backgroundw90_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w90_109) + !IsEmpty(Skin.String(backgroundw90_109))">$INFO[Skin.String(backgroundw90_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w91_100) + !IsEmpty(Skin.String(backgroundw91_100))">$INFO[Skin.String(backgroundw91_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w91_101) + !IsEmpty(Skin.String(backgroundw91_101))">$INFO[Skin.String(backgroundw91_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w91_102) + !IsEmpty(Skin.String(backgroundw91_102))">$INFO[Skin.String(backgroundw91_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w91_103) + !IsEmpty(Skin.String(backgroundw91_103))">$INFO[Skin.String(backgroundw91_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w91_104) + !IsEmpty(Skin.String(backgroundw91_104))">$INFO[Skin.String(backgroundw91_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w91_105) + !IsEmpty(Skin.String(backgroundw91_105))">$INFO[Skin.String(backgroundw91_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w91_106) + !IsEmpty(Skin.String(backgroundw91_106))">$INFO[Skin.String(backgroundw91_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w91_107) + !IsEmpty(Skin.String(backgroundw91_107))">$INFO[Skin.String(backgroundw91_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w91_108) + !IsEmpty(Skin.String(backgroundw91_108))">$INFO[Skin.String(backgroundw91_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w91_109) + !IsEmpty(Skin.String(backgroundw91_109))">$INFO[Skin.String(backgroundw91_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w92_100) + !IsEmpty(Skin.String(backgroundw92_100))">$INFO[Skin.String(backgroundw92_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w92_101) + !IsEmpty(Skin.String(backgroundw92_101))">$INFO[Skin.String(backgroundw92_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w92_102) + !IsEmpty(Skin.String(backgroundw92_102))">$INFO[Skin.String(backgroundw92_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w92_103) + !IsEmpty(Skin.String(backgroundw92_103))">$INFO[Skin.String(backgroundw92_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w92_104) + !IsEmpty(Skin.String(backgroundw92_104))">$INFO[Skin.String(backgroundw92_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w92_105) + !IsEmpty(Skin.String(backgroundw92_105))">$INFO[Skin.String(backgroundw92_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w92_106) + !IsEmpty(Skin.String(backgroundw92_106))">$INFO[Skin.String(backgroundw92_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w92_107) + !IsEmpty(Skin.String(backgroundw92_107))">$INFO[Skin.String(backgroundw92_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w92_108) + !IsEmpty(Skin.String(backgroundw92_108))">$INFO[Skin.String(backgroundw92_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w92_109) + !IsEmpty(Skin.String(backgroundw92_109))">$INFO[Skin.String(backgroundw92_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w93_100) + !IsEmpty(Skin.String(backgroundw93_100))">$INFO[Skin.String(backgroundw93_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w93_101) + !IsEmpty(Skin.String(backgroundw93_101))">$INFO[Skin.String(backgroundw93_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w93_102) + !IsEmpty(Skin.String(backgroundw93_102))">$INFO[Skin.String(backgroundw93_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w93_103) + !IsEmpty(Skin.String(backgroundw93_103))">$INFO[Skin.String(backgroundw93_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w93_104) + !IsEmpty(Skin.String(backgroundw93_104))">$INFO[Skin.String(backgroundw93_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w93_105) + !IsEmpty(Skin.String(backgroundw93_105))">$INFO[Skin.String(backgroundw93_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w93_106) + !IsEmpty(Skin.String(backgroundw93_106))">$INFO[Skin.String(backgroundw93_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w93_107) + !IsEmpty(Skin.String(backgroundw93_107))">$INFO[Skin.String(backgroundw93_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w93_108) + !IsEmpty(Skin.String(backgroundw93_108))">$INFO[Skin.String(backgroundw93_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w93_109) + !IsEmpty(Skin.String(backgroundw93_109))">$INFO[Skin.String(backgroundw93_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w94_100) + !IsEmpty(Skin.String(backgroundw94_100))">$INFO[Skin.String(backgroundw94_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w94_101) + !IsEmpty(Skin.String(backgroundw94_101))">$INFO[Skin.String(backgroundw94_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w94_102) + !IsEmpty(Skin.String(backgroundw94_102))">$INFO[Skin.String(backgroundw94_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w94_103) + !IsEmpty(Skin.String(backgroundw94_103))">$INFO[Skin.String(backgroundw94_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w94_104) + !IsEmpty(Skin.String(backgroundw94_104))">$INFO[Skin.String(backgroundw94_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w94_105) + !IsEmpty(Skin.String(backgroundw94_105))">$INFO[Skin.String(backgroundw94_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w94_106) + !IsEmpty(Skin.String(backgroundw94_106))">$INFO[Skin.String(backgroundw94_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w94_107) + !IsEmpty(Skin.String(backgroundw94_107))">$INFO[Skin.String(backgroundw94_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w94_108) + !IsEmpty(Skin.String(backgroundw94_108))">$INFO[Skin.String(backgroundw94_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w94_109) + !IsEmpty(Skin.String(backgroundw94_109))">$INFO[Skin.String(backgroundw90_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w95_100) + !IsEmpty(Skin.String(backgroundw95_100))">$INFO[Skin.String(backgroundw95_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w95_101) + !IsEmpty(Skin.String(backgroundw95_101))">$INFO[Skin.String(backgroundw95_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w95_102) + !IsEmpty(Skin.String(backgroundw95_102))">$INFO[Skin.String(backgroundw95_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w95_103) + !IsEmpty(Skin.String(backgroundw95_103))">$INFO[Skin.String(backgroundw95_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w95_104) + !IsEmpty(Skin.String(backgroundw95_104))">$INFO[Skin.String(backgroundw95_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w95_105) + !IsEmpty(Skin.String(backgroundw95_105))">$INFO[Skin.String(backgroundw95_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w95_106) + !IsEmpty(Skin.String(backgroundw95_106))">$INFO[Skin.String(backgroundw95_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w95_107) + !IsEmpty(Skin.String(backgroundw95_107))">$INFO[Skin.String(backgroundw95_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w95_108) + !IsEmpty(Skin.String(backgroundw95_108))">$INFO[Skin.String(backgroundw95_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w95_109) + !IsEmpty(Skin.String(backgroundw95_109))">$INFO[Skin.String(backgroundw95_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w96_100) + !IsEmpty(Skin.String(backgroundw96_100))">$INFO[Skin.String(backgroundw96_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w96_101) + !IsEmpty(Skin.String(backgroundw96_101))">$INFO[Skin.String(backgroundw96_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w96_102) + !IsEmpty(Skin.String(backgroundw96_102))">$INFO[Skin.String(backgroundw96_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w96_103) + !IsEmpty(Skin.String(backgroundw96_103))">$INFO[Skin.String(backgroundw96_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w96_104) + !IsEmpty(Skin.String(backgroundw96_104))">$INFO[Skin.String(backgroundw96_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w96_105) + !IsEmpty(Skin.String(backgroundw96_105))">$INFO[Skin.String(backgroundw96_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w96_106) + !IsEmpty(Skin.String(backgroundw96_106))">$INFO[Skin.String(backgroundw96_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w96_107) + !IsEmpty(Skin.String(backgroundw96_107))">$INFO[Skin.String(backgroundw96_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w96_108) + !IsEmpty(Skin.String(backgroundw96_108))">$INFO[Skin.String(backgroundw96_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w96_109) + !IsEmpty(Skin.String(backgroundw96_109))">$INFO[Skin.String(backgroundw96_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w97_100) + !IsEmpty(Skin.String(backgroundw97_100))">$INFO[Skin.String(backgroundw97_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w97_101) + !IsEmpty(Skin.String(backgroundw97_101))">$INFO[Skin.String(backgroundw97_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w97_102) + !IsEmpty(Skin.String(backgroundw97_102))">$INFO[Skin.String(backgroundw97_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w97_103) + !IsEmpty(Skin.String(backgroundw97_103))">$INFO[Skin.String(backgroundw97_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w97_104) + !IsEmpty(Skin.String(backgroundw97_104))">$INFO[Skin.String(backgroundw97_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w97_105) + !IsEmpty(Skin.String(backgroundw97_105))">$INFO[Skin.String(backgroundw97_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w97_106) + !IsEmpty(Skin.String(backgroundw97_106))">$INFO[Skin.String(backgroundw97_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w97_107) + !IsEmpty(Skin.String(backgroundw97_107))">$INFO[Skin.String(backgroundw97_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w97_108) + !IsEmpty(Skin.String(backgroundw97_108))">$INFO[Skin.String(backgroundw97_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w97_109) + !IsEmpty(Skin.String(backgroundw97_109))">$INFO[Skin.String(backgroundw97_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w98_100) + !IsEmpty(Skin.String(backgroundw98_100))">$INFO[Skin.String(backgroundw98_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w98_101) + !IsEmpty(Skin.String(backgroundw98_101))">$INFO[Skin.String(backgroundw98_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w98_102) + !IsEmpty(Skin.String(backgroundw98_102))">$INFO[Skin.String(backgroundw98_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w98_103) + !IsEmpty(Skin.String(backgroundw98_103))">$INFO[Skin.String(backgroundw98_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w98_104) + !IsEmpty(Skin.String(backgroundw98_104))">$INFO[Skin.String(backgroundw98_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w98_105) + !IsEmpty(Skin.String(backgroundw98_105))">$INFO[Skin.String(backgroundw98_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w98_106) + !IsEmpty(Skin.String(backgroundw98_106))">$INFO[Skin.String(backgroundw98_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w98_107) + !IsEmpty(Skin.String(backgroundw98_107))">$INFO[Skin.String(backgroundw98_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w98_108) + !IsEmpty(Skin.String(backgroundw98_108))">$INFO[Skin.String(backgroundw98_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w98_109) + !IsEmpty(Skin.String(backgroundw98_109))">$INFO[Skin.String(backgroundw98_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w99_100) + !IsEmpty(Skin.String(backgroundw99_100))">$INFO[Skin.String(backgroundw99_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w99_101) + !IsEmpty(Skin.String(backgroundw99_101))">$INFO[Skin.String(backgroundw99_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w99_102) + !IsEmpty(Skin.String(backgroundw99_102))">$INFO[Skin.String(backgroundw99_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w99_103) + !IsEmpty(Skin.String(backgroundw99_103))">$INFO[Skin.String(backgroundw99_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w99_104) + !IsEmpty(Skin.String(backgroundw99_104))">$INFO[Skin.String(backgroundw99_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w99_105) + !IsEmpty(Skin.String(backgroundw99_105))">$INFO[Skin.String(backgroundw99_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w99_106) + !IsEmpty(Skin.String(backgroundw99_106))">$INFO[Skin.String(backgroundw99_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w99_107) + !IsEmpty(Skin.String(backgroundw99_107))">$INFO[Skin.String(backgroundw99_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w99_108) + !IsEmpty(Skin.String(backgroundw99_108))">$INFO[Skin.String(backgroundw99_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w99_109) + !IsEmpty(Skin.String(backgroundw99_109))">$INFO[Skin.String(backgroundw99_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w100_100) + !IsEmpty(Skin.String(backgroundw100_100))">$INFO[Skin.String(backgroundw100_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w100_101) + !IsEmpty(Skin.String(backgroundw100_101))">$INFO[Skin.String(backgroundw100_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w100_102) + !IsEmpty(Skin.String(backgroundw100_102))">$INFO[Skin.String(backgroundw100_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w100_103) + !IsEmpty(Skin.String(backgroundw100_103))">$INFO[Skin.String(backgroundw100_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w100_104) + !IsEmpty(Skin.String(backgroundw100_104))">$INFO[Skin.String(backgroundw100_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w100_105) + !IsEmpty(Skin.String(backgroundw100_105))">$INFO[Skin.String(backgroundw100_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w100_106) + !IsEmpty(Skin.String(backgroundw100_106))">$INFO[Skin.String(backgroundw100_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w100_107) + !IsEmpty(Skin.String(backgroundw100_107))">$INFO[Skin.String(backgroundw100_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w100_108) + !IsEmpty(Skin.String(backgroundw100_108))">$INFO[Skin.String(backgroundw100_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w100_109) + !IsEmpty(Skin.String(backgroundw100_109))">$INFO[Skin.String(backgroundw100_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w101_100) + !IsEmpty(Skin.String(backgroundw101_100))">$INFO[Skin.String(backgroundw101_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w101_101) + !IsEmpty(Skin.String(backgroundw101_101))">$INFO[Skin.String(backgroundw101_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w101_102) + !IsEmpty(Skin.String(backgroundw101_102))">$INFO[Skin.String(backgroundw101_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w101_103) + !IsEmpty(Skin.String(backgroundw101_103))">$INFO[Skin.String(backgroundw101_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w101_104) + !IsEmpty(Skin.String(backgroundw101_104))">$INFO[Skin.String(backgroundw101_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w101_105) + !IsEmpty(Skin.String(backgroundw101_105))">$INFO[Skin.String(backgroundw101_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w101_106) + !IsEmpty(Skin.String(backgroundw101_106))">$INFO[Skin.String(backgroundw101_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w101_107) + !IsEmpty(Skin.String(backgroundw101_107))">$INFO[Skin.String(backgroundw101_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w101_108) + !IsEmpty(Skin.String(backgroundw101_108))">$INFO[Skin.String(backgroundw101_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w101_109) + !IsEmpty(Skin.String(backgroundw101_109))">$INFO[Skin.String(backgroundw101_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w102_100) + !IsEmpty(Skin.String(backgroundw102_100))">$INFO[Skin.String(backgroundw102_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w102_101) + !IsEmpty(Skin.String(backgroundw102_101))">$INFO[Skin.String(backgroundw102_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w102_102) + !IsEmpty(Skin.String(backgroundw102_102))">$INFO[Skin.String(backgroundw102_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w102_103) + !IsEmpty(Skin.String(backgroundw102_103))">$INFO[Skin.String(backgroundw102_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w102_104) + !IsEmpty(Skin.String(backgroundw102_104))">$INFO[Skin.String(backgroundw102_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w102_105) + !IsEmpty(Skin.String(backgroundw102_105))">$INFO[Skin.String(backgroundw102_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w102_106) + !IsEmpty(Skin.String(backgroundw102_106))">$INFO[Skin.String(backgroundw102_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w102_107) + !IsEmpty(Skin.String(backgroundw102_107))">$INFO[Skin.String(backgroundw102_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w102_108) + !IsEmpty(Skin.String(backgroundw102_108))">$INFO[Skin.String(backgroundw102_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w102_109) + !IsEmpty(Skin.String(backgroundw102_109))">$INFO[Skin.String(backgroundw102_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w103_100) + !IsEmpty(Skin.String(backgroundw103_100))">$INFO[Skin.String(backgroundw103_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w103_101) + !IsEmpty(Skin.String(backgroundw103_101))">$INFO[Skin.String(backgroundw103_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w103_102) + !IsEmpty(Skin.String(backgroundw103_102))">$INFO[Skin.String(backgroundw103_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w103_103) + !IsEmpty(Skin.String(backgroundw103_103))">$INFO[Skin.String(backgroundw103_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w103_104) + !IsEmpty(Skin.String(backgroundw103_104))">$INFO[Skin.String(backgroundw103_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w103_105) + !IsEmpty(Skin.String(backgroundw103_105))">$INFO[Skin.String(backgroundw103_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w103_106) + !IsEmpty(Skin.String(backgroundw103_106))">$INFO[Skin.String(backgroundw103_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w103_107) + !IsEmpty(Skin.String(backgroundw103_107))">$INFO[Skin.String(backgroundw103_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w103_108) + !IsEmpty(Skin.String(backgroundw103_108))">$INFO[Skin.String(backgroundw103_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w103_109) + !IsEmpty(Skin.String(backgroundw103_109))">$INFO[Skin.String(backgroundw103_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w104_100) + !IsEmpty(Skin.String(backgroundw104_100))">$INFO[Skin.String(backgroundw104_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w104_101) + !IsEmpty(Skin.String(backgroundw104_101))">$INFO[Skin.String(backgroundw104_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w104_102) + !IsEmpty(Skin.String(backgroundw104_102))">$INFO[Skin.String(backgroundw104_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w104_103) + !IsEmpty(Skin.String(backgroundw104_103))">$INFO[Skin.String(backgroundw104_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w104_104) + !IsEmpty(Skin.String(backgroundw104_104))">$INFO[Skin.String(backgroundw104_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w104_105) + !IsEmpty(Skin.String(backgroundw104_105))">$INFO[Skin.String(backgroundw104_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w104_106) + !IsEmpty(Skin.String(backgroundw104_106))">$INFO[Skin.String(backgroundw104_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w104_107) + !IsEmpty(Skin.String(backgroundw104_107))">$INFO[Skin.String(backgroundw104_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w104_108) + !IsEmpty(Skin.String(backgroundw104_108))">$INFO[Skin.String(backgroundw104_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w104_109) + !IsEmpty(Skin.String(backgroundw104_109))">$INFO[Skin.String(backgroundw100_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w105_100) + !IsEmpty(Skin.String(backgroundw105_100))">$INFO[Skin.String(backgroundw105_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w105_101) + !IsEmpty(Skin.String(backgroundw105_101))">$INFO[Skin.String(backgroundw105_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w105_102) + !IsEmpty(Skin.String(backgroundw105_102))">$INFO[Skin.String(backgroundw105_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w105_103) + !IsEmpty(Skin.String(backgroundw105_103))">$INFO[Skin.String(backgroundw105_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w105_104) + !IsEmpty(Skin.String(backgroundw105_104))">$INFO[Skin.String(backgroundw105_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w105_105) + !IsEmpty(Skin.String(backgroundw105_105))">$INFO[Skin.String(backgroundw105_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w105_106) + !IsEmpty(Skin.String(backgroundw105_106))">$INFO[Skin.String(backgroundw105_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w105_107) + !IsEmpty(Skin.String(backgroundw105_107))">$INFO[Skin.String(backgroundw105_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w105_108) + !IsEmpty(Skin.String(backgroundw105_108))">$INFO[Skin.String(backgroundw105_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w105_109) + !IsEmpty(Skin.String(backgroundw105_109))">$INFO[Skin.String(backgroundw105_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w106_100) + !IsEmpty(Skin.String(backgroundw106_100))">$INFO[Skin.String(backgroundw106_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w106_101) + !IsEmpty(Skin.String(backgroundw106_101))">$INFO[Skin.String(backgroundw106_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w106_102) + !IsEmpty(Skin.String(backgroundw106_102))">$INFO[Skin.String(backgroundw106_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w106_103) + !IsEmpty(Skin.String(backgroundw106_103))">$INFO[Skin.String(backgroundw106_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w106_104) + !IsEmpty(Skin.String(backgroundw106_104))">$INFO[Skin.String(backgroundw106_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w106_105) + !IsEmpty(Skin.String(backgroundw106_105))">$INFO[Skin.String(backgroundw106_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w106_106) + !IsEmpty(Skin.String(backgroundw106_106))">$INFO[Skin.String(backgroundw106_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w106_107) + !IsEmpty(Skin.String(backgroundw106_107))">$INFO[Skin.String(backgroundw106_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w106_108) + !IsEmpty(Skin.String(backgroundw106_108))">$INFO[Skin.String(backgroundw106_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w106_109) + !IsEmpty(Skin.String(backgroundw106_109))">$INFO[Skin.String(backgroundw106_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w107_100) + !IsEmpty(Skin.String(backgroundw107_100))">$INFO[Skin.String(backgroundw107_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w107_101) + !IsEmpty(Skin.String(backgroundw107_101))">$INFO[Skin.String(backgroundw107_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w107_102) + !IsEmpty(Skin.String(backgroundw107_102))">$INFO[Skin.String(backgroundw107_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w107_103) + !IsEmpty(Skin.String(backgroundw107_103))">$INFO[Skin.String(backgroundw107_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w107_104) + !IsEmpty(Skin.String(backgroundw107_104))">$INFO[Skin.String(backgroundw107_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w107_105) + !IsEmpty(Skin.String(backgroundw107_105))">$INFO[Skin.String(backgroundw107_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w107_106) + !IsEmpty(Skin.String(backgroundw107_106))">$INFO[Skin.String(backgroundw107_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w107_107) + !IsEmpty(Skin.String(backgroundw107_107))">$INFO[Skin.String(backgroundw107_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w107_108) + !IsEmpty(Skin.String(backgroundw107_108))">$INFO[Skin.String(backgroundw107_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w107_109) + !IsEmpty(Skin.String(backgroundw107_109))">$INFO[Skin.String(backgroundw107_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w108_100) + !IsEmpty(Skin.String(backgroundw108_100))">$INFO[Skin.String(backgroundw108_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w108_101) + !IsEmpty(Skin.String(backgroundw108_101))">$INFO[Skin.String(backgroundw108_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w108_102) + !IsEmpty(Skin.String(backgroundw108_102))">$INFO[Skin.String(backgroundw108_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w108_103) + !IsEmpty(Skin.String(backgroundw108_103))">$INFO[Skin.String(backgroundw108_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w108_104) + !IsEmpty(Skin.String(backgroundw108_104))">$INFO[Skin.String(backgroundw108_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w108_105) + !IsEmpty(Skin.String(backgroundw108_105))">$INFO[Skin.String(backgroundw108_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w108_106) + !IsEmpty(Skin.String(backgroundw108_106))">$INFO[Skin.String(backgroundw108_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w108_107) + !IsEmpty(Skin.String(backgroundw108_107))">$INFO[Skin.String(backgroundw108_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w108_108) + !IsEmpty(Skin.String(backgroundw108_108))">$INFO[Skin.String(backgroundw108_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w108_109) + !IsEmpty(Skin.String(backgroundw108_109))">$INFO[Skin.String(backgroundw108_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w109_100) + !IsEmpty(Skin.String(backgroundw109_100))">$INFO[Skin.String(backgroundw109_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w109_101) + !IsEmpty(Skin.String(backgroundw109_101))">$INFO[Skin.String(backgroundw109_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w109_102) + !IsEmpty(Skin.String(backgroundw109_102))">$INFO[Skin.String(backgroundw109_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w109_103) + !IsEmpty(Skin.String(backgroundw109_103))">$INFO[Skin.String(backgroundw109_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w109_104) + !IsEmpty(Skin.String(backgroundw109_104))">$INFO[Skin.String(backgroundw109_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w109_105) + !IsEmpty(Skin.String(backgroundw109_105))">$INFO[Skin.String(backgroundw109_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w109_106) + !IsEmpty(Skin.String(backgroundw109_106))">$INFO[Skin.String(backgroundw109_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w109_107) + !IsEmpty(Skin.String(backgroundw109_107))">$INFO[Skin.String(backgroundw109_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w109_108) + !IsEmpty(Skin.String(backgroundw109_108))">$INFO[Skin.String(backgroundw109_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w109_109) + !IsEmpty(Skin.String(backgroundw109_109))">$INFO[Skin.String(backgroundw109_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w110_100) + !IsEmpty(Skin.String(backgroundw110_100))">$INFO[Skin.String(backgroundw110_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w110_101) + !IsEmpty(Skin.String(backgroundw110_101))">$INFO[Skin.String(backgroundw110_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w110_102) + !IsEmpty(Skin.String(backgroundw110_102))">$INFO[Skin.String(backgroundw110_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w110_103) + !IsEmpty(Skin.String(backgroundw110_103))">$INFO[Skin.String(backgroundw110_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w110_104) + !IsEmpty(Skin.String(backgroundw110_104))">$INFO[Skin.String(backgroundw110_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w110_105) + !IsEmpty(Skin.String(backgroundw110_105))">$INFO[Skin.String(backgroundw110_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w110_106) + !IsEmpty(Skin.String(backgroundw110_106))">$INFO[Skin.String(backgroundw110_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w110_107) + !IsEmpty(Skin.String(backgroundw110_107))">$INFO[Skin.String(backgroundw110_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w110_108) + !IsEmpty(Skin.String(backgroundw110_108))">$INFO[Skin.String(backgroundw110_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w110_109) + !IsEmpty(Skin.String(backgroundw110_109))">$INFO[Skin.String(backgroundw110_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w111_100) + !IsEmpty(Skin.String(backgroundw111_100))">$INFO[Skin.String(backgroundw111_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w111_101) + !IsEmpty(Skin.String(backgroundw111_101))">$INFO[Skin.String(backgroundw111_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w111_102) + !IsEmpty(Skin.String(backgroundw111_102))">$INFO[Skin.String(backgroundw111_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w111_103) + !IsEmpty(Skin.String(backgroundw111_103))">$INFO[Skin.String(backgroundw111_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w111_104) + !IsEmpty(Skin.String(backgroundw111_104))">$INFO[Skin.String(backgroundw111_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w111_105) + !IsEmpty(Skin.String(backgroundw111_105))">$INFO[Skin.String(backgroundw111_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w111_106) + !IsEmpty(Skin.String(backgroundw111_106))">$INFO[Skin.String(backgroundw111_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w111_107) + !IsEmpty(Skin.String(backgroundw111_107))">$INFO[Skin.String(backgroundw111_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w111_108) + !IsEmpty(Skin.String(backgroundw111_108))">$INFO[Skin.String(backgroundw111_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w111_109) + !IsEmpty(Skin.String(backgroundw111_109))">$INFO[Skin.String(backgroundw111_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w112_100) + !IsEmpty(Skin.String(backgroundw112_100))">$INFO[Skin.String(backgroundw112_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w112_101) + !IsEmpty(Skin.String(backgroundw112_101))">$INFO[Skin.String(backgroundw112_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w112_102) + !IsEmpty(Skin.String(backgroundw112_102))">$INFO[Skin.String(backgroundw112_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w112_103) + !IsEmpty(Skin.String(backgroundw112_103))">$INFO[Skin.String(backgroundw112_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w112_104) + !IsEmpty(Skin.String(backgroundw112_104))">$INFO[Skin.String(backgroundw112_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w112_105) + !IsEmpty(Skin.String(backgroundw112_105))">$INFO[Skin.String(backgroundw112_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w112_106) + !IsEmpty(Skin.String(backgroundw112_106))">$INFO[Skin.String(backgroundw112_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w112_107) + !IsEmpty(Skin.String(backgroundw112_107))">$INFO[Skin.String(backgroundw112_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w112_108) + !IsEmpty(Skin.String(backgroundw112_108))">$INFO[Skin.String(backgroundw112_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w112_109) + !IsEmpty(Skin.String(backgroundw112_109))">$INFO[Skin.String(backgroundw112_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w113_100) + !IsEmpty(Skin.String(backgroundw113_100))">$INFO[Skin.String(backgroundw113_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w113_101) + !IsEmpty(Skin.String(backgroundw113_101))">$INFO[Skin.String(backgroundw113_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w113_102) + !IsEmpty(Skin.String(backgroundw113_102))">$INFO[Skin.String(backgroundw113_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w113_103) + !IsEmpty(Skin.String(backgroundw113_103))">$INFO[Skin.String(backgroundw113_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w113_104) + !IsEmpty(Skin.String(backgroundw113_104))">$INFO[Skin.String(backgroundw113_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w113_105) + !IsEmpty(Skin.String(backgroundw113_105))">$INFO[Skin.String(backgroundw113_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w113_106) + !IsEmpty(Skin.String(backgroundw113_106))">$INFO[Skin.String(backgroundw113_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w113_107) + !IsEmpty(Skin.String(backgroundw113_107))">$INFO[Skin.String(backgroundw113_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w113_108) + !IsEmpty(Skin.String(backgroundw113_108))">$INFO[Skin.String(backgroundw113_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w113_109) + !IsEmpty(Skin.String(backgroundw113_109))">$INFO[Skin.String(backgroundw113_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w114_100) + !IsEmpty(Skin.String(backgroundw114_100))">$INFO[Skin.String(backgroundw114_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w114_101) + !IsEmpty(Skin.String(backgroundw114_101))">$INFO[Skin.String(backgroundw114_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w114_102) + !IsEmpty(Skin.String(backgroundw114_102))">$INFO[Skin.String(backgroundw114_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w114_103) + !IsEmpty(Skin.String(backgroundw114_103))">$INFO[Skin.String(backgroundw114_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w114_104) + !IsEmpty(Skin.String(backgroundw114_104))">$INFO[Skin.String(backgroundw114_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w114_105) + !IsEmpty(Skin.String(backgroundw114_105))">$INFO[Skin.String(backgroundw114_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w114_106) + !IsEmpty(Skin.String(backgroundw114_106))">$INFO[Skin.String(backgroundw114_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w114_107) + !IsEmpty(Skin.String(backgroundw114_107))">$INFO[Skin.String(backgroundw114_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w114_108) + !IsEmpty(Skin.String(backgroundw114_108))">$INFO[Skin.String(backgroundw114_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w114_109) + !IsEmpty(Skin.String(backgroundw114_109))">$INFO[Skin.String(backgroundw110_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w115_100) + !IsEmpty(Skin.String(backgroundw115_100))">$INFO[Skin.String(backgroundw115_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w115_101) + !IsEmpty(Skin.String(backgroundw115_101))">$INFO[Skin.String(backgroundw115_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w115_102) + !IsEmpty(Skin.String(backgroundw115_102))">$INFO[Skin.String(backgroundw115_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w115_103) + !IsEmpty(Skin.String(backgroundw115_103))">$INFO[Skin.String(backgroundw115_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w115_104) + !IsEmpty(Skin.String(backgroundw115_104))">$INFO[Skin.String(backgroundw115_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w115_105) + !IsEmpty(Skin.String(backgroundw115_105))">$INFO[Skin.String(backgroundw115_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w115_106) + !IsEmpty(Skin.String(backgroundw115_106))">$INFO[Skin.String(backgroundw115_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w115_107) + !IsEmpty(Skin.String(backgroundw115_107))">$INFO[Skin.String(backgroundw115_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w115_108) + !IsEmpty(Skin.String(backgroundw115_108))">$INFO[Skin.String(backgroundw115_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w115_109) + !IsEmpty(Skin.String(backgroundw115_109))">$INFO[Skin.String(backgroundw115_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w116_100) + !IsEmpty(Skin.String(backgroundw116_100))">$INFO[Skin.String(backgroundw116_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w116_101) + !IsEmpty(Skin.String(backgroundw116_101))">$INFO[Skin.String(backgroundw116_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w116_102) + !IsEmpty(Skin.String(backgroundw116_102))">$INFO[Skin.String(backgroundw116_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w116_103) + !IsEmpty(Skin.String(backgroundw116_103))">$INFO[Skin.String(backgroundw116_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w116_104) + !IsEmpty(Skin.String(backgroundw116_104))">$INFO[Skin.String(backgroundw116_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w116_105) + !IsEmpty(Skin.String(backgroundw116_105))">$INFO[Skin.String(backgroundw116_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w116_106) + !IsEmpty(Skin.String(backgroundw116_106))">$INFO[Skin.String(backgroundw116_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w116_107) + !IsEmpty(Skin.String(backgroundw116_107))">$INFO[Skin.String(backgroundw116_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w116_108) + !IsEmpty(Skin.String(backgroundw116_108))">$INFO[Skin.String(backgroundw116_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w116_109) + !IsEmpty(Skin.String(backgroundw116_109))">$INFO[Skin.String(backgroundw116_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w117_100) + !IsEmpty(Skin.String(backgroundw117_100))">$INFO[Skin.String(backgroundw117_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w117_101) + !IsEmpty(Skin.String(backgroundw117_101))">$INFO[Skin.String(backgroundw117_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w117_102) + !IsEmpty(Skin.String(backgroundw117_102))">$INFO[Skin.String(backgroundw117_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w117_103) + !IsEmpty(Skin.String(backgroundw117_103))">$INFO[Skin.String(backgroundw117_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w117_104) + !IsEmpty(Skin.String(backgroundw117_104))">$INFO[Skin.String(backgroundw117_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w117_105) + !IsEmpty(Skin.String(backgroundw117_105))">$INFO[Skin.String(backgroundw117_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w117_106) + !IsEmpty(Skin.String(backgroundw117_106))">$INFO[Skin.String(backgroundw117_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w117_107) + !IsEmpty(Skin.String(backgroundw117_107))">$INFO[Skin.String(backgroundw117_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w117_108) + !IsEmpty(Skin.String(backgroundw117_108))">$INFO[Skin.String(backgroundw117_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w117_109) + !IsEmpty(Skin.String(backgroundw117_109))">$INFO[Skin.String(backgroundw117_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w118_100) + !IsEmpty(Skin.String(backgroundw118_100))">$INFO[Skin.String(backgroundw118_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w118_101) + !IsEmpty(Skin.String(backgroundw118_101))">$INFO[Skin.String(backgroundw118_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w118_102) + !IsEmpty(Skin.String(backgroundw118_102))">$INFO[Skin.String(backgroundw118_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w118_103) + !IsEmpty(Skin.String(backgroundw118_103))">$INFO[Skin.String(backgroundw118_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w118_104) + !IsEmpty(Skin.String(backgroundw118_104))">$INFO[Skin.String(backgroundw118_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w118_105) + !IsEmpty(Skin.String(backgroundw118_105))">$INFO[Skin.String(backgroundw118_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w118_106) + !IsEmpty(Skin.String(backgroundw118_106))">$INFO[Skin.String(backgroundw118_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w118_107) + !IsEmpty(Skin.String(backgroundw118_107))">$INFO[Skin.String(backgroundw118_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w118_108) + !IsEmpty(Skin.String(backgroundw118_108))">$INFO[Skin.String(backgroundw118_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w118_109) + !IsEmpty(Skin.String(backgroundw118_109))">$INFO[Skin.String(backgroundw118_109)]</value>
+	
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w119_100) + !IsEmpty(Skin.String(backgroundw119_100))">$INFO[Skin.String(backgroundw119_100)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w119_101) + !IsEmpty(Skin.String(backgroundw119_101))">$INFO[Skin.String(backgroundw119_101)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w119_102) + !IsEmpty(Skin.String(backgroundw119_102))">$INFO[Skin.String(backgroundw119_102)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w119_103) + !IsEmpty(Skin.String(backgroundw119_103))">$INFO[Skin.String(backgroundw119_103)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w119_104) + !IsEmpty(Skin.String(backgroundw119_104))">$INFO[Skin.String(backgroundw119_104)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w119_105) + !IsEmpty(Skin.String(backgroundw119_105))">$INFO[Skin.String(backgroundw119_105)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w119_106) + !IsEmpty(Skin.String(backgroundw119_106))">$INFO[Skin.String(backgroundw119_106)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w119_107) + !IsEmpty(Skin.String(backgroundw119_107))">$INFO[Skin.String(backgroundw119_107)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w119_108) + !IsEmpty(Skin.String(backgroundw119_108))">$INFO[Skin.String(backgroundw119_108)]</value>
+	<value condition="Skin.HasSetting(WidgetBackground) + StringCompare(Window(home).Property(WidgetButton.ID_),w119_109) + !IsEmpty(Skin.String(backgroundw119_109))">$INFO[Skin.String(backgroundw119_109)]</value>
+	
 	<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(1) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.1.Art(fanart))]</value>
 	<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(2) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.2.Art(fanart))]</value>
 	<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(3) + !Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RecentMovie.3.Art(fanart))]</value>
@@ -599,27 +929,29 @@
 	<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(9) + Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RandomMovie.9.Art(fanart))]</value>
 	<value condition="[Control.IsVisible(311) + StringCompare(Window(home).Property(Button.ID),90) + [Control.HasFocus(311) | !Skin.HasSetting(wbackground90)] + Container(311).HasFocus(10) + Skin.HasSetting(MoviesShelfWL)]" description="סרטים">$INFO[Window(home).Property(RandomMovie.10.Art(fanart))]</value>
 	
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(1) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.1.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(2) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.2.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(3) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.3.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(4) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.4.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(5) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.5.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(6) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.6.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(7) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.7.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(8) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.8.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(9) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.9.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(10) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.10.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312)) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(1) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.1.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(2) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.2.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(3) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.3.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(4) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.4.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(5) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.5.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(6) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.6.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(7) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.7.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(8) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.8.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(9) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.9.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(10) + !Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecentEpisode.10.Art(tvshow.fanart))]</value>
 	
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(1) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(2) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.2.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(3) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.3.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(4) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.4.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(5) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.5.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(6) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.6.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(7) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.7.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(8) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.8.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(9) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.9.Art(tvshow.fanart))]</value>
-	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),91) + [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(10) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.10.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(1) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(2) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.2.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(3) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.3.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(4) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.4.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(5) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.5.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(6) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.6.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(7) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.7.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(8) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.8.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(9) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.9.Art(tvshow.fanart))]</value>
+	<value condition="[Control.IsVisible(312) + StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))+ [Control.HasFocus(312) | !Skin.HasSetting(wbackground91)] + Container(312).HasFocus(10) + Skin.HasSetting(TVShelf_Watchlist)]" description="סדרות">$INFO[Window(home).Property(RecommendedEpisode.10.Art(tvshow.fanart))]</value>
+	
+	<value description="מזג אוויר" condition="[StringCompare(Window(home).Property(Button.ID),Skin.String(widget317)) + !Skin.HasSetting(wbackground97)]">special://home/addons/resource.images.weatherfanart.single/resources/$INFO[Weather.FanartCode].jpg</value>
 	
 	<value condition="StringCompare(Window(home).Property(Button.ID),18) | Window.IsVisible(DialogAddonSettings.xml)">$VAR[background18]</value>
 	<value condition="StringCompare(Window(home).Property(Button.ID),19)">$VAR[background19]</value>
@@ -706,7 +1038,7 @@
 	<value condition="Skin.String(background96)">$INFO[Skin.String(background96)]</value>
   </variable>
   <variable name="background97">
-    <value condition="!Skin.HasSetting(wbackground97) | Window.IsVisible(MyWeather.xml)">special://home/addons/resource.images.weatherfanart.single/resources/$INFO[Weather.FanartCode].jpg</value>
+    <value condition="Window.IsVisible(MyWeather.xml)">special://home/addons/resource.images.weatherfanart.single/resources/$INFO[Weather.FanartCode].jpg</value>
 	<value condition="!Skin.String(background97) | SubString(Skin.String(background97),special://skin)">http://i.imgur.com/9LRnEqg.jpg</value>
 	<value condition="Skin.String(background97)">$INFO[Skin.String(background97)]</value>
   </variable>

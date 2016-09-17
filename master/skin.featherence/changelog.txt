@@ -3,6 +3,13 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence v0.5.12 (xx-Sep-16)
+------------------------
+- Minor bugs fix.
+- Update Music in Slideshow and Screensaver feature.
+- Update Featherence Classico auto-update feature.
+
+------------------------
 Featherence v0.5.11 (11-Sep-16)
 ------------------------
 - Add genres icons and multilanguage labels support for several addons.

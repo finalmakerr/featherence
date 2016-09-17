@@ -216,9 +216,9 @@
 		<animation description="No full Fanart-Vertical_en" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,30" start="100,100" end="86.3,200" time="0">Conditional</animation>
 		
 		<!--Nav.xml-->
-		<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml) + !Window.IsVisible(MyPVRChannels.xml)" effect="slide" start="0,0" end="-240,320" time="0">Conditional</animation>
-		<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml) + !Window.IsVisible(MyPVRChannels.xml)" effect="slide" start="0,0" end="230,320" time="0">Conditional</animation>
-		<animation description="slide-Vertical" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml) + !Window.IsVisible(MyPVRChannels.xml)" effect="zoom" center="auto" start="100,100" end="75,179" time="0">Conditional</animation>
+		<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-240,320" time="0">Conditional</animation>
+		<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="230,320" time="0">Conditional</animation>
+		<animation description="slide-Vertical" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="75,179" time="0">Conditional</animation>
 		<animation description="slide-others" condition="[Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyPVRChannels.xml)] + ![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)]" effect="slide" start="0,0" end="0,-552" time="0">Conditional</animation>
 		<animation description="slide-others" condition="Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)" effect="slide" start="0,0" end="0,-552" time="0">Conditional</animation>
 		
@@ -567,13 +567,11 @@
 	  <onfocus description="others-Wall" condition="Skin.String(AutoView.others,$LOCALIZE[31013]) + !StringCompare(Container.Viewmode,$LOCALIZE[31013]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | StringCompare(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
 	  <onfocus description="others-Poster" condition="Skin.String(AutoView.others,$LOCALIZE[31014]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | StringCompare(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
 	  
-	  <!--[ | SubString(Container.FolderPath,plugin://plugin.video.genesis/?) | SubString(Container.FolderPath,plugin://plugin.video.pulsar/)]] | [[Container.Content(TVshows) | Container.Content(Seasons) | Container.content(Episodes)] + [SubString(Container.FolderPath,videodb://tvshows/)-->
 	  <!--<onfocus description="For ID(57)" condition="Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + !StringCompare(Container.Viewmode,$LOCALIZE[31013]) + [Container.content(movies) | Container.Content(TVshows) | Container.Content(Seasons) | Container.content(Episodes)]">AlarmClock($LOCALIZE[31013],Container.SetViewMode(57),0,silent)</onfocus>
 	  <onfocus description="For ID(57)" condition="Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + !StringCompare(Container.Viewmode,$LOCALIZE[31013]) + [Container.content(movies) | Container.Content(TVshows) | Container.Content(Seasons) | Container.content(Episodes)]">AlarmClock($LOCALIZE[31013],Container.SetViewMode(57),0,silent)</onfocus>-->
 	  
 	  <!--<onfocus description="For ID(58) - Israel TV's Addons" condition="Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + !StringCompare(Container.Viewmode,$LOCALIZE[31014]) + [SubString(Container.FolderPath,plugin://plugin.video.sdarot.tv/?) + Container.Content(TVshows) + !Container.content(Episodes) + !Container.content(Seasons)]">AlarmClock($LOCALIZE[31014],Container.SetViewMode(58),0,silent)</onfocus>-->
 	  
-	  <!--<onfocus description="GenreVar" condition="Window.IsVisible(MyVideoNav.xml) + !Skin.HasSetting(Admin) StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,plugin://plugin.video.genesis/?action=genres_movies) | StringCompare(Container.FolderPath,plugin://plugin.video.genesis/?action=genres_shows)">Container.Update</onfocus>-->
 	  <!--MyPics-->
 	  <onfocus description="pictures-Center List" condition="Skin.String(AutoView.pictures,$LOCALIZE[31010]) + !StringCompare(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
 	  <onfocus description="pictures-Side List" condition="Skin.String(AutoView.pictures,$LOCALIZE[31011]) + !StringCompare(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + !IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
@@ -889,62 +887,6 @@
 	<onclick condition="!IsEmpty(Window(home).Property(DoubleClick))">Notification($INFO[Window(home).Property(SelectedColor),,1000)]</onclick>
   </include>
   
-  <include name="onunload_ClearProperty_ListItem">
-    <onunload condition="!IsEmpty(Window(home).Property(ListItemGenre)) + !Window.IsVisible(Custom1000.xml)">AlarmClock(ListItemGenre,ClearProperty(ListItemGenre,home),00:01,silent)</onunload> <!--!IsEmpty(Window(home).Property(ListItemGenre))-->
-    <onunload condition="!IsEmpty(Window(home).Property(ListItemDuration)) + !Window.IsVisible(Custom1000.xml)">AlarmClock(ListItemDuration,ClearProperty(ListItemDuration,home),00:01,silent)</onunload>
-    <onunload condition="!IsEmpty(Window(home).Property(ListItemRating)) + !Window.IsVisible(Custom1000.xml)">AlarmClock(ListItemRating,ClearProperty(ListItemRating,home),00:01,silent)</onunload>
-    <onunload condition="!IsEmpty(Window(home).Property(ListItemYear)) + !Window.IsVisible(Custom1000.xml)">AlarmClock(ListItemYear,ClearProperty(ListItemYear,home),00:01,silent)</onunload>
-    <onunload condition="!IsEmpty(Window(home).Property(ListItemUnWatchedEpisodes)) + !Window.IsVisible(Custom1000.xml)">AlarmClock(ListItemUnWatchedEpisodes,ClearProperty(ListItemUnWatchedEpisodes,home),00:01,silent)</onunload>
-    <onunload condition="!IsEmpty(Window(home).Property(ListItemTVShowTitle)) + !Window.IsVisible(Custom1000.xml)">AlarmClock(ListItemTVShowTitle,ClearProperty(ListItemTVShowTitle,home),00:01,silent)</onunload>
-	<onunload condition="!IsEmpty(Window(home).Property(ListItemPoster)) + !Window.IsVisible(Custom1000.xml)">AlarmClock(ListItemPoster,ClearProperty(ListItemPoster,home),00:01,silent)</onunload>
-  </include>
-  
-  <include name="onfocus_SetProperty_ListItem">
-    <control type="button" description="hidden">
-	  <onfocus condition="Container.Content(TVShows) + !IsEmpty(ListItem.Year) + [IsEmpty(Window(home).Property(ListItemYear)) | !StringCompare(ListItem.Year,Window(home).Property(ListItemYear))]">AlarmClock(ListItemYear,SetProperty(ListItemYear,$INFO[ListItem.Year],home),00:03,silent)</onfocus>
-	  <onfocus condition="Container.Content(TVShows) + !IsEmpty(ListItem.Genre) + [IsEmpty(Window(home).Property(ListItemGenre)) | !StringCompare(ListItem.Genre,Window(home).Property(ListItemGenre))]">AlarmClock(ListItemGenre,SetProperty(ListItemGenre,$INFO[ListItem.Genre],home),00:03,silent)</onfocus>
-	  <onfocus condition="Container.Content(TVShows) + !IsEmpty(ListItem.Rating) + [IsEmpty(Window(home).Property(ListItemRating)) | !StringCompare(ListItem.Rating,Window(home).Property(ListItemRating))]">AlarmClock(ListItemRating,SetProperty(ListItemRating,$INFO[ListItem.Rating],home),00:03,silent)</onfocus>
-	  <onfocus condition="Container.Content(TVShows) + !IsEmpty(ListItem.Property(UnWatchedEpisodes)) + [IsEmpty(Window(home).Property(ListItemUnWatchedEpisodes)) | !StringCompare(ListItem.Property(UnWatchedEpisodes),Window(home).Property(ListItemUnWatchedEpisodes))]">AlarmClock(ListItemUnWatchedEpisodes,SetProperty(ListItemUnWatchedEpisodes,$INFO[ListItem.Property(UnWatchedEpisodes)],home),00:03,silent)</onfocus>
-	  <onfocus condition="Container.Content(TVShows) + !IsEmpty(ListItem.TVShowTitle) + [IsEmpty(Window(home).Property(ListItemTVShowTitle)) | !StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle))]">AlarmClock(ListItemTVShowTitle,SetProperty(ListItemTVShowTitle,$INFO[ListItem.TVShowTitle],home),00:03,silent)</onfocus>
-	  <onfocus description="remove-only" condition="Container.Content(TVShows) + !IsEmpty(ListItem.TVShowTitle) + [IsEmpty(Window(home).Property(ListItemTVShowTitle)) | !StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle))]">AlarmClock(ListItemDuration,ClearProperty(ListItemDuration,home),00:03,silent)</onfocus>
-	  <!--<onfocus condition="Skin.HasSetting(Admin) + Container.Content(TVShows) + !StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle))">AlarmClock(Notification,Notification(Admin,New ListItemTVShowTitle,1000),00:03,silent)</onfocus>-->
-	  <onfocus condition="!Container.Content(episodes) + !IsEmpty(ListItem.Art(poster)) + [IsEmpty(Window(home).Property(ListItemPoster)) | !StringCompare(ListItem.Poster,Window(home).Property(ListItemPoster))]">AlarmClock(ListItemPoster,SetProperty(ListItemPoster,$INFO[ListItem.Art(poster)],home),00:10,silent)</onfocus>
-	  <visible>false</visible>
-	</control>
-  </include>
-  
-  <include name="onunload_ClearProperty_TopVideoInformation">
-    <onunload condition="!Player.HasVideo + !Window.IsVisible(Custom1000.xml)">AlarmClock(TopVideoInformation1,ClearProperty(TopVideoInformation1,home),00:03,silent)</onunload>
-    <onunload condition="!Player.HasVideo + !Window.IsVisible(Custom1000.xml)">AlarmClock(TopVideoInformation2,ClearProperty(TopVideoInformation2,home),00:03,silent)</onunload>
-    <onunload condition="!Player.HasVideo + !Window.IsVisible(Custom1000.xml)">AlarmClock(TopVideoInformation3,ClearProperty(TopVideoInformation3,home),00:03,silent)</onunload>
-    <onunload condition="!Player.HasVideo + !Window.IsVisible(Custom1000.xml)">AlarmClock(TopVideoInformation4,ClearProperty(TopVideoInformation4,home),00:03,silent)</onunload>
-    <onunload condition="!Player.HasVideo + !Window.IsVisible(Custom1000.xml)">AlarmClock(TopVideoInformation5,ClearProperty(TopVideoInformation5,home),00:03,silent)</onunload>
-    <onunload condition="!Player.HasVideo + !Window.IsVisible(Custom1000.xml)">AlarmClock(TopVideoInformation6,ClearProperty(TopVideoInformation6,home),00:03,silent)</onunload>
-	<onunload condition="!Player.HasVideo + !Window.IsVisible(Custom1000.xml)">AlarmClock(TopVideoInformation7,ClearProperty(TopVideoInformation7,home),00:03,silent)</onunload>
-	<onunload condition="!Player.HasVideo + !Window.IsVisible(Custom1000.xml)">AlarmClock(TopVideoInformation8,ClearProperty(TopVideoInformation8,home),00:03,silent)</onunload>
-	<onunload condition="!Player.HasVideo + !Window.IsVisible(Custom1000.xml)">AlarmClock(TopVideoInformation9,ClearProperty(TopVideoInformation9,home),00:03,silent)</onunload> <!--[!IsEmpty(Window(home).Property(TopVideoInformation9)) | System.HasAlarm(TopVideoInformation9)] + -->
-  </include>
-  <include name="onfocus_SetProperty_TopVideoInformation">
-    <control type="button" description="hidden">
-	  <onfocus condition="Container.Content(Episodes) + !Player.HasVideo + !IsEmpty(ListItem.Duration) + [IsEmpty(Window(home).Property(TopVideoInformation1)) | !StringCompare(ListItem.Duration,Window(home).Property(TopVideoInformation1))]">AlarmClock(TopVideoInformation1,SetProperty(TopVideoInformation1,$INFO[ListItem.Duration],home),00:03,silent)</onfocus>
-	  <onfocus condition="Container.Content(Episodes) + !Player.HasVideo + !IsEmpty(ListItem.Year) + [IsEmpty(Window(home).Property(TopVideoInformation2)) | !StringCompare(ListItem.Year,Window(home).Property(TopVideoInformation2))]">AlarmClock(TopVideoInformation2,SetProperty(TopVideoInformation2,$INFO[ListItem.Year],home),00:03,silent)</onfocus>
-	  <onfocus condition="Container.Content(Episodes) + !Player.HasVideo + !IsEmpty(ListItem.Rating) + [IsEmpty(Window(home).Property(TopVideoInformation3)) | !StringCompare(ListItem.Rating,Window(home).Property(TopVideoInformation3))]">AlarmClock(TopVideoInformation3,SetProperty(TopVideoInformation3,$INFO[ListItem.Rating],home),00:03,silent)</onfocus>
-	  <!--<onfocus condition="Container.Content(Episodes) + !Player.HasVideo + !IsEmpty(ListItem.Art(tvshow.poster)) + [IsEmpty(Window(home).Property(TopVideoInformation4)) | !StringCompare(ListItem.Art(tvshow.poster),Window(home).Property(TopVideoInformation4))]">AlarmClock(TopVideoInformation4,SetProperty(TopVideoInformation4,$INFO[ListItem.Art(tvshow.poster)],home),00:03,silent)</onfocus>-->
-	  <onfocus condition="Container.Content(Episodes) + !Player.HasVideo + !IsEmpty(ListItem.Plot) + [IsEmpty(Window(home).Property(TopVideoInformation5)) | !StringCompare(ListItem.Plot,Window(home).Property(TopVideoInformation5))]">SetProperty(TopVideoInformation5,$INFO[ListItem.Plot],home)</onfocus>
-	  <onfocus condition="Container.Content(Episodes) + !Player.HasVideo + [!IsEmpty(ListItem.Genre) | !IsEmpty(Window(home).Property(ListItemGenre))] + [[IsEmpty(Window(home).Property(TopVideoInformation6))] | [!IsEmpty(ListItem.Genre) + !StringCompare(ListItem.Genre,Window(home).Property(TopVideoInformation6))] | [!IsEmpty(Window(home).Property(ListItemGenre)) + !StringCompare(Window(home).Property(ListItemGenre),Window(home).Property(TopVideoInformation6))]]">AlarmClock(TopVideoInformation6,SetProperty(TopVideoInformation6,$VAR[TopVideoInformation6],home),00:03,silent)</onfocus>
-	  
-	  <!--<onfocus condition="Container.Content(Episodes) + !Player.HasVideo + [!IsEmpty(ListItem.Genre) | !IsEmpty(Window(home).Property(ListItemGenre))] + [[IsEmpty(Window(home).Property(TopVideoInformation6))] | [!IsEmpty(ListItem.Genre) + !StringCompare(ListItem.Genre,Window(home).Property(TopVideoInformation6))] | [!IsEmpty(Window(home).Property(ListItemGenre)) + !StringCompare(Window(home).Property(ListItemGenre),Window(home).Property(TopVideoInformation6))]]">Notification($VAR[TopVideoInformation6],1,1000)</onfocus>-->
-	  
-	  <onfocus description="7_he" condition="StringCompare(System.Language,Hebrew) + [Container.Content(Episodes) + !Player.HasVideo + !SubString(ListItem.Label,..,left) + !IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Season) + [IsEmpty(Window(home).Property(TopVideoInformation7)) | !StringCompare(ListItem.Genre,Window(home).Property(TopVideoInformation7))]]">AlarmClock(TopVideoInformation7,SetProperty(TopVideoInformation7,"[COLOR yellow][B]$INFO[ListItem.Episode][/B][/COLOR] $LOCALIZE[20452]: [COLOR yellow][B]$INFO[ListItem.Season][/B][/COLOR] $LOCALIZE[20373]: [COLOR yellow][B]$INFO[ListItem.Title] [/B][/COLOR] $LOCALIZE[31408]: ", home),00:03,silent)</onfocus>
-	  <onfocus description="7_en" condition="!StringCompare(System.Language,Hebrew) + [Container.Content(Episodes) + !Player.HasVideo + !SubString(ListItem.Label,..,left) + !IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Season) + [IsEmpty(Window(home).Property(TopVideoInformation7)) | !StringCompare(ListItem.Genre,Window(home).Property(TopVideoInformation7))]]">AlarmClock(TopVideoInformation7,SetProperty(TopVideoInformation7,"$LOCALIZE[31408]: [COLOR yellow][B]$INFO[ListItem.Title][/B][/COLOR] S: [COLOR yellow][B]$INFO[ListItem.Season][/B][/COLOR] E: [COLOR yellow][B]$INFO[ListItem.Episode][/B][/COLOR]", home),00:03,silent)</onfocus>
-	  <onfocus condition="Container.Content(Episodes) + !Player.HasVideo + !IsEmpty(ListItem.TVShowTitle) + [IsEmpty(Window(home).Property(TopVideoInformation8)) | !StringCompare(ListItem.TVShowTitle,Window(home).Property(TopVideoInformation8))]">AlarmClock(TopVideoInformation8,SetProperty(TopVideoInformation8,$INFO[ListItem.TVShowTitle],home),00:03,silent)</onfocus>
-	  <!--<onfocus condition="Skin.HasSetting(Admin) + !Player.HasVideo + !Window.IsVisible(DialogKaiToast.xml) + Container.Content(Episodes) + !StringCompare(ListItem.TVShowTitle,Window(home).Property(TopVideoInformation7))">AlarmClock(TopVideoInformation,Notification(Admin,New TopVideoInformation7,1000),00:03,silent)</onfocus>-->
-	  
-	  <onfocus condition="!IsEmpty(ListItem.Duration) + [IsEmpty(Window(home).Property(ListItemDuration)) | !StringCompare(ListItem.Duration,Window(home).Property(ListItemDuration))] + !IntegerGreaterThan(ListItem.Duration,1000)">AlarmClock(ListItemDuration,SetProperty(ListItemDuration,$INFO[ListItem.Duration],home),00:03,silent)</onfocus>
-	  <visible>false</visible>
-	</control>
-  </include>
-  
   <include name="ButtonsDesign_icon">
     <texture border="0" diffuse="buttons/types/bd.png">$INFO[ListItem.Icon]</texture>
   </include>
@@ -1038,6 +980,44 @@
   </include>
   <include name="ButtonsDesign4_shadow">
     <texture diffuse="buttons/types/bd4.png">buttons/effects/shadow4.png</texture>
+  </include>
+
+  <include name="ButtonsDesign_thumb">
+    <texture diffuse="buttons/types/bd.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+  </include>
+  <include name="ButtonsDesign0_thumb">
+    <texture diffuse="buttons/types/bd0.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+  </include>
+  <include name="ButtonsDesign1_thumb">
+    <texture diffuse="buttons/types/bd1.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+  </include>
+  <include name="ButtonsDesign2_thumb">
+    <texture diffuse="buttons/types/bd2.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+  </include>
+  <include name="ButtonsDesign3_thumb">
+    <texture diffuse="buttons/types/bd3.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+  </include>
+  <include name="ButtonsDesign4_thumb">
+    <texture diffuse="buttons/types/bd4.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+  </include>
+  
+  <include name="ButtonsDesign_thumb2">
+    <texture diffuse="buttons/types/bd.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+  </include>
+  <include name="ButtonsDesign0_thumb2">
+    <texture diffuse="buttons/types/bd0.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+  </include>
+  <include name="ButtonsDesign1_thumb2">
+    <texture diffuse="buttons/types/bd1.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+  </include>
+  <include name="ButtonsDesign2_thumb2">
+    <texture diffuse="buttons/types/bd2.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+  </include>
+  <include name="ButtonsDesign3_thumb2">
+    <texture diffuse="buttons/types/bd3.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+  </include>
+  <include name="ButtonsDesign4_thumb2">
+    <texture diffuse="buttons/types/bd4.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
   </include>
   
   <include name="ButtonsDesign_sub">

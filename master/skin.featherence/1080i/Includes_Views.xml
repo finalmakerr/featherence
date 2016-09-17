@@ -158,8 +158,6 @@
   </include>
   <include name="ViewDesign_50_FocusedLayout">
     <include>AutoView</include>
-	<include>onfocus_SetProperty_ListItem</include>
-	<include>onfocus_SetProperty_TopVideoInformation</include>
 	<control type="image" description="מסגרת">
 	  <animation condition="!Skin.HasSetting(View50_Plus)" effect="zoom" center="0,0" start="100,100" end="100,200">Conditional</animation>
 	  <posx>0</posx>
@@ -427,8 +425,6 @@
 	  </itemlayout>
 	  <focusedlayout description="(כללי)" condition="true" height="100" width="960">    
 		<include>AutoView</include>
-		<include>onfocus_SetProperty_ListItem</include>
-		<include>onfocus_SetProperty_TopVideoInformation</include>
 		<control type="image" description="מסגרת">
 		  <include>Fade41</include>
 		  <posx>500</posx>
@@ -577,8 +573,6 @@
 		  </itemlayout>
           <focusedlayout description="(Seasons/Episodes)" condition="!IsEmpty(Control.GetLabel(11155))" height="100" width="960">    
 			<include>AutoView</include>
-			<include>onfocus_SetProperty_ListItem</include>
-			<include>onfocus_SetProperty_TopVideoInformation</include>
 			<control type="image" description="מסגרת">
 			  <posx>760</posx>
               <posy>20</posy>
@@ -678,8 +672,6 @@
 		  </itemlayout>
           <focusedlayout description="(Movies+TVshows)" height="342" width="267">  <!-- + [!IsEmpty(Control.GetLabel(1105)) + !IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Container(57).ListItem(1).Plot) + !IsEmpty(Container(57).ListItem(1).Genre) | !IsEmpty(Container(57).ListItem(2).Plot) + !IsEmpty(Container(57).ListItem(2).Genre)]-->
 			<include>AutoView</include>
-			<include>onfocus_SetProperty_ListItem</include>
-			<include>onfocus_SetProperty_TopVideoInformation</include>
 			<control type="group">
 			   	<include>Slide2.3</include>
 				<animation condition="!Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
@@ -855,8 +847,6 @@
 	  </itemlayout>
 	  <focusedlayout description="(Plugins)" height="510" width="373">
 		<include>AutoView</include>
-		<include>onfocus_SetProperty_ListItem</include>
-		<include>onfocus_SetProperty_TopVideoInformation</include>
 		<control type="group">
 			<animation condition="!Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 			<include>Slide2.3</include>
@@ -945,7 +935,6 @@
 	  <width>310</width>
 	  <height>430</height>
 	  <texture background="true">$VAR[VideoInformation2]</texture>
-	  <!--<texture background="true">$VAR[TopVideoInformation4]</texture>-->
 	</control>
     <control type="image" description="רקע כיתוב">
 	  <animation condition="Skin.HasSetting(ShowDVDCases2)" effect="fade" start="90" end="90" time="0">Conditional</animation>

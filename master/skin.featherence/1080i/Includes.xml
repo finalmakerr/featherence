@@ -16,7 +16,6 @@
   <include file="Includes_LeftMenu.xml" />
   <include file="Includes_Settings.xml" />
   <include file="Includes_SettingsContent.xml" />
-  <include file="Includes_Shelf.xml" />
   <include file="Includes_Small.xml" />
   <include file="Includes_SubContent.xml" />
   <include file="Includes_Widget.xml" />

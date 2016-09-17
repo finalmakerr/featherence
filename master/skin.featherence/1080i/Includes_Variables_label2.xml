@@ -223,6 +223,12 @@
 	<value condition="Skin.String(IntroDelay,4)" description="4">4</value>
 	<value condition="Skin.String(IntroDelay,5)" description="5">5</value>
   </variable>
+  
+  <variable name="29label2">
+	<value condition="!Skin.String(CustomStartupImage)">$LOCALIZE[106]</value>
+	<value condition="Skin.String(CustomStartupImage)">$LOCALIZE[107]</value>
+  </variable>
+  
   <variable name="36label2">
 	<value condition="!Skin.String(screensavermusic)">$LOCALIZE[106]</value>
 	<value condition="Skin.String(screensavermusic)">$LOCALIZE[107]</value>
@@ -391,6 +397,9 @@
     <value condition="StringCompare(System.Language,Hebrew)">$LOCALIZE[19190] $LOCALIZE[590]</value>
 	<value condition="!StringCompare(System.Language,Hebrew)">$LOCALIZE[590] $LOCALIZE[19190]</value>
   </variable>
+  <variable name="label710">
+    <value>$LOCALIZE[31114]</value>
+  </variable>
   
   <variable name="297label2" description="">
     <value condition="!Skin.String(DialogPosition)">DEFAULT</value>
@@ -414,6 +423,34 @@
   <variable name="410label2">
     <value condition="Skin.HasSetting(Touch_Support)">$LOCALIZE[107]</value>
 	<value condition="!Skin.HasSetting(Touch_Support)">$LOCALIZE[106]</value>
+  </variable>
+  
+  <variable name="452label2">
+    <value condition="Skin.HasSetting(ButtonsDesignWidget)">$LOCALIZE[107]</value>
+	<value condition="!Skin.HasSetting(ButtonsDesignWidget)">$LOCALIZE[106]</value>
+  </variable>
+  
+  <variable name="459label2">
+    <value condition="!Skin.HasSetting(WidgetBackground)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(WidgetBackground)">$LOCALIZE[107]</value>
+  </variable>
+  
+  <variable name="460label2">
+    <value condition="Skin.String(widget311) + !IsEmpty(Skin.String(widget311_name))">$INFO[Skin.String(widget311_name)]</value>
+    <value condition="Skin.String(widget311) + IsEmpty(Skin.String(widget311_name))">$INFO[Skin.String(widget311)]</value>
+	<value condition="!Skin.String(widget311)">$INFO[Skin.String(label90)]</value>
+  </variable>
+  
+  <variable name="461label2">
+    <value condition="Skin.String(widget312) + !IsEmpty(Skin.String(widget312_name))">$INFO[Skin.String(widget312_name)]</value>
+    <value condition="Skin.String(widget312) + IsEmpty(Skin.String(widget312_name))">$INFO[Skin.String(widget312)]</value>
+	<value condition="!Skin.String(widget312)">$INFO[Skin.String(label91)]</value>
+  </variable>
+  
+  <variable name="462label2">
+    <value condition="Skin.String(widget317) + !IsEmpty(Skin.String(widget317_name))">$INFO[Skin.String(widget317_name)]</value>
+    <value condition="Skin.String(widget317) + IsEmpty(Skin.String(widget317_name))">$INFO[Skin.String(widget317)]</value>
+	<value condition="!Skin.String(widget317)">$INFO[Skin.String(label97)]</value>
   </variable>
   
   <variable name="ReloadSkin_check">

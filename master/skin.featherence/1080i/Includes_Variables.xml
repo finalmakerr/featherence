@@ -41,12 +41,12 @@
 	<value condition="Control.IsVisible(311) + !IsEmpty(Window(home).Property(Widget_Trailers)) + !Player.HasVideo">$LOCALIZE[31812]</value>
   </variable>
   <variable name="Button708" description="רקע אקראי לפי ו'ידגט">
-	<value description="סרטים-כן" condition="StringCompare(Window(home).Property(Button.ID),90) + Skin.HasSetting(wbackground90)">$LOCALIZE[106]</value>
-	<value description="סרטים-לא" condition="StringCompare(Window(home).Property(Button.ID),90) + !Skin.HasSetting(wbackground90)">$LOCALIZE[107]</value>
-	<value description="סדרות-כן" condition="StringCompare(Window(home).Property(Button.ID),91) + Skin.HasSetting(wbackground91)">$LOCALIZE[106]</value>
-	<value description="סדרות-לא" condition="StringCompare(Window(home).Property(Button.ID),91) + !Skin.HasSetting(wbackground91)">$LOCALIZE[107]</value>
-	<value description="מזג אוויר-כן" condition="StringCompare(Window(home).Property(Button.ID),97) + Skin.HasSetting(wbackground97)">$LOCALIZE[106]</value>
-	<value description="מזג אוויר-לא" condition="StringCompare(Window(home).Property(Button.ID),97) + !Skin.HasSetting(wbackground97)">$LOCALIZE[107]</value>
+	<value description="סרטים-כן" condition="[StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))] + Skin.HasSetting(wbackground90)">$LOCALIZE[106]</value>
+	<value description="סרטים-לא" condition="[StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))] + !Skin.HasSetting(wbackground90)">$LOCALIZE[107]</value>
+	<value description="סדרות-כן" condition="[StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))] + Skin.HasSetting(wbackground91)">$LOCALIZE[106]</value>
+	<value description="סדרות-לא" condition="[StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))] + !Skin.HasSetting(wbackground91)">$LOCALIZE[107]</value>
+	<value description="מזג אוויר-כן" condition="[StringCompare(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget317))] + Skin.HasSetting(wbackground97)">$LOCALIZE[106]</value>
+	<value description="מזג אוויר-לא" condition="[StringCompare(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget317))] + !Skin.HasSetting(wbackground97)">$LOCALIZE[107]</value>
   </variable>
   <variable name="Button11300" description="InProgressBadge">
     <value condition="[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]">$INFO[ListItem.Property(UnwatchedEpisodes)]</value>
@@ -250,9 +250,7 @@
   </variable>
   <variable name="TopVideoInformation1" description="אורך/מספר עונה(1101)/גרסה">
 	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Duration)">$INFO[VideoPlayer.Duration]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Window(home).Property(TopVideoInformation1))">$INFO[Window(home).Property(TopVideoInformation1)]</value>
     <value condition="!IsEmpty(ListItem.Duration) + [SubString(Container.FolderPath,plugin://plugin.video.youtube)]">$INFO[ListItem.Duration]</value>
-	<!--<value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows) | StringCompare(Container.FolderName,Genesis)]">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[33054]</value>-->
 	<value condition="!IsEmpty(ListItem.Duration) + !Container.Content(tvshows)">$INFO[ListItem.Duration]</value>
 	<value condition="!IsEmpty(ListItem.Property(runtime)) + Window.IsVisible(Home)">$INFO[ListItem.Property(runtime)]</value>
 	<value description="Home-Movies" condition="Control.IsVisible(311) + !IsEmpty(Container(311).ListItem.Property(runtime))">$INFO[Container(311).ListItem.Property(runtime)]</value>
@@ -265,11 +263,9 @@
   </variable>
   <variable name="TopVideoInformation2" description="שנה/יוצר הרחבה">
 	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Year)">$INFO[VideoPlayer.Year]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Window(home).Property(TopVideoInformation2))">$INFO[Window(home).Property(TopVideoInformation2)]</value>
 	<value condition="!IsEmpty(ListItem.Year)">$INFO[ListItem.Year]</value>
 	<value description="Home-Movies" condition="Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(year))">$INFO[Container(311).ListItem.Property(Year)]</value>
 	<value description="Home-TV" condition="Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(year))">$INFO[Container(312).ListItem.Property(Year)]</value>
-	<value condition="[StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) | [Container.Content(Seasons) + SubString(Container.FolderPath,videodb://tvshows/)]] + !IsEmpty(Window(home).Property(ListItemYear))">$INFO[Window(home).Property(ListItemYear)]</value>
 	<value condition="!IsEmpty(MusicPlayer.Year) + Window.IsVisible(MyMusicNav.xml)">$INFO[MusicPlayer.Year]</value>
 	<value condition="!IsEmpty(ListItem.Date) + !Window.IsVisible(MyPVRChannels.xml) + !Window.IsVisible(MyPVRGuide.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !ListItem.HasEpg">$INFO[ListItem.Date]</value>
   </variable>
@@ -279,7 +275,6 @@
 	<value description="Home2_TV" condition="Window.IsActive(home) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(rating))">$INFO[Container(312).ListItem.Property(rating),badges/rating/10/,.png]</value>
     <value description="בניגון יו-טיוב" condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Rating) + IntegerGreaterThan(VideoPlayer.Rating,0) + !IntegerGreaterThan(VideoPlayer.Rating,5) + [SubString(Player.FolderPath,.googlevideo.com) | SubString(Player.FolderPath,&amp;source=youtube&) | SubString(Player.FolderPath,plugin.video.youtube)]">$INFO[VideoPlayer.Rating,badges/rating/5/,.png]</value>
 	<value description="בניגון וידאו" condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Rating)">$INFO[VideoPlayer.Rating,badges/rating/10/,.png]</value>
-	<value description="בניגון וידאו3" condition="VideoPlayer.IsFullscreen + !IsEmpty(Window(home).Property(TopVideoInformation3))">$INFO[Window(home).Property(TopVideoInformation3),badges/rating/10/,.png]</value>
 	<value description="יו-טיוב" condition="!IsEmpty(ListItem.Rating) + SubString(Container.FolderPath,plugin://plugin.video.youtube)">$INFO[ListItem.Rating,badges/rating/5/,.png]</value>
 	<value description="מוזיקה" condition="!IsEmpty(ListItem.Rating) + Window.IsVisible(MyMusicNav.xml) + [Container.Content(songs) | Container.Content(artists) | Container.Content(albums)]">$VAR[MusicInformation3]</value>
 	<value description="הרחבות" condition="Window.IsVisible(DialogAddonInfo.xml) + !IsEmpty(ListItem.Property(Addon.StarRating))">$INFO[ListItem.Property(Addon.StarRating)]</value>
@@ -293,7 +288,6 @@
 	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
 	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Cover)">$INFO[VideoPlayer.Cover]</value>
 	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Window(home).Property(TopVideoInformation4))">$INFO[Window(home).Property(TopVideoInformation4)]</value>
 	<value condition="!IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
 	<value condition="!IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
 	<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
@@ -311,7 +305,6 @@
   <variable name="TopVideoInformation5" description="פרטי וידאו">
 	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
 	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Window(home).Property(TopVideoInformation5))">$INFO[Window(home).Property(TopVideoInformation5)]</value>
 	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Description)) + !IsEmpty(ListItem.Property(Addon.Summary))">[COLOR=yellow]$INFO[ListItem.Property(Addon.Summary)][/COLOR][CR][CR]$INFO[ListItem.Property(Addon.Description)]</value>
 	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Description)) + IsEmpty(ListItem.Property(Addon.Summary))">[COLOR=yellow]$INFO[ListItem.Property(Addon.Summary)][/COLOR][CR][CR]$INFO[ListItem.Property(Addon.Description)]</value>
 	<value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
@@ -335,7 +328,6 @@
   </variable>
   <variable name="TopVideoInformation6" description="סגנון">
     <value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Genre)">$INFO[VideoPlayer.Genre]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Window(home).Property(TopVideoInformation6))">$INFO[Window(home).Property(TopVideoInformation6)]</value>
 	<value condition="!IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
 	<value description="Home-Movies" condition="Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(genre))">$INFO[Container(311).ListItem.Property(Genre)]</value>
 	<value description="Home-TV" condition="Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(genre))">$INFO[Container(312).ListItem.Property(Genre)]</value>
@@ -348,7 +340,6 @@
   <variable name="TopVideoInformation7" description="משפט סרט/שם פרק(1107)">
     <value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Tagline)">$INFO[VideoPlayer.Tagline]</value>
 	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Title)">[B]$INFO[VideoPlayer.Title][/B]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Window(home).Property(TopVideoInformation7))">$INFO[Window(home).Property(TopVideoInformation7)]</value>
 	<value description="משפט סרט" condition="!IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
 	<value description="שם הפרק" condition="Container.Content(Episodes) + !StringCompare(ListItem.Label,..) + !IsEmpty(ListItem.Title) + !StringCompare(ListItem.Title,ListItem.TVShowTitle) + !StringCompare(ListItem.Title,System.CurrentControl)">[B]$INFO[ListItem.Title][/B]</value>
 	<value description="שם הפרק-בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(title))">[B]$INFO[Container(312).ListItem.Property(title)][/B]</value>
@@ -365,8 +356,6 @@
   </variable>
   <variable name="TopVideoInformation8" description="שם סרט/סדרה">
 	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.TVShowTitle]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Title) + [!IsEmpty(VideoPlayer.Genre) | IsEmpty(Window(home).Property(TopVideoInformation8))]">$INFO[VideoPlayer.Title]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Window(home).Property(TopVideoInformation8))">$INFO[Window(home).Property(TopVideoInformation8)]</value>
 	<value condition="[SubString(ListItem.Label,..)] + [Container.content(Episodes) | Container.content(Seasons)]">$INFO[Container.FolderName]</value>
 	<value condition="!IsEmpty(ListItem.TVShowTitle) + [Container.content(Seasons) | Container.content(Episodes)]">$INFO[ListItem.TVShowTitle]</value>
 	<value description="Home-Movies" condition="Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(title))">$INFO[Container(311).ListItem.Property(title)]</value>
@@ -385,7 +374,6 @@
   <variable name="TopVideoInformation9" description="תמונת פרק">
 	<!--<value condition="[VideoPlayer.IsFullscreen + VideoPlayer.Content(Episodes) + !IsEmpty(Player.Art(thumb))]">$INFO[Player.Art(thumb)]</value>-->
 	<value condition="Container.Content(Episodes) + !IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
-	<!--<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Window(home).Property(TopVideoInformation9))">$INFO[Window(home).Property(TopVideoInformation9)]</value>-->
   </variable>
   <variable name="TopVideoInformation10" description="עונה ופרק">
 	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [IntegerGreaterThan(VideoPlayer.Season,9) + IntegerGreaterThan(VideoPlayer.Episode,9)]">S[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
@@ -431,7 +419,7 @@
 	<value condition="[!IsEmpty(Container.ListItemNoWrap(-1).Label2) | !IsEmpty(Container.ListItemNoWrap(1).Label2)] + !Window.IsVisible(MyVideoNav.xml)"></value>
   </variable>
   <variable name="VideoInformation4">
-	<value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows) | StringCompare(Container.FolderName,Genesis)]">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[33054]</value>
+	<value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[33054]</value>
 	<value condition="IntegerGreaterThan(Control.GetLabel(1109),0) + !IsEmpty(Control.GetLabel(1109)) + !SubString(ListItem.path,videodb://movies/sets/) + !IsEmpty(ListItem.Duration)">$VAR[VideoInHours]h</value>
 	<value condition="IntegerGreaterThan(Control.GetLabel(1110),0) + !IsEmpty(Control.GetLabel(1110)) + !SubString(ListItem.path,videodb://movies/sets/) + !IsEmpty(ListItem.Duration)">$VAR[VideoInMins]m</value>
 	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.Size)">$INFO[ListItem.Size]</value>
@@ -494,8 +482,8 @@
 	<value>$INFO[System.CurrentWindow] ($INFO[Container.NumItems])</value>
   </variable>
   <variable name="TopInformation2.1" description="שמאל2 (ספרייה)">
-	<value condition="Container.content(movies) + [SubString(Container.FolderPath,videodb://movies/) | SubString(Container.FolderPath,plugin://plugin.video.genesis/?action=movieNavigator) | StringCompare(Container.FolderName,$LOCALIZE[20342])]">[COLOR yellow][B]$LOCALIZE[20342] $LOCALIZE[16102][/B][/COLOR] [COLOR yellow][B]$INFO[Window(Home).Property(Movies.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(Movies.Count)]</value> <!-- + SubString(Container.FolderPath,videodb://movies/)  StringCompare(Container.FolderName,$LOCALIZE[369]) | StringCompare(Container.FolderName,$LOCALIZE[20342])-->
-	<value condition="Container.content(tvshows) + [SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,plugin://plugin.video.genesis/?action=tvNavigator) | StringCompare(Container.FolderName,$LOCALIZE[20343])]">[COLOR yellow][B]$LOCALIZE[20343] $LOCALIZE[16102][/B][/COLOR] [COLOR yellow][B]$INFO[Window(Home).Property(TVShows.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(TVShows.Count)]</value> <!--  + SubString(Container.FolderPath,videodb://tvshows/) StringCompare(Container.FolderName,$LOCALIZE[369]) | StringCompare(Container.FolderName,$LOCALIZE[20343])-->
+	<value condition="Container.content(movies) + [SubString(Container.FolderPath,videodb://movies/) | StringCompare(Container.FolderName,$LOCALIZE[20342])]">[COLOR yellow][B]$LOCALIZE[20342] $LOCALIZE[16102][/B][/COLOR] [COLOR yellow][B]$INFO[Window(Home).Property(Movies.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(Movies.Count)]</value> <!-- + SubString(Container.FolderPath,videodb://movies/)  StringCompare(Container.FolderName,$LOCALIZE[369]) | StringCompare(Container.FolderName,$LOCALIZE[20342])-->
+	<value condition="Container.content(tvshows) + [SubString(Container.FolderPath,videodb://tvshows/) | StringCompare(Container.FolderName,$LOCALIZE[20343])]">[COLOR yellow][B]$LOCALIZE[20343] $LOCALIZE[16102][/B][/COLOR] [COLOR yellow][B]$INFO[Window(Home).Property(TVShows.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(TVShows.Count)]</value> <!--  + SubString(Container.FolderPath,videodb://tvshows/) StringCompare(Container.FolderName,$LOCALIZE[369]) | StringCompare(Container.FolderName,$LOCALIZE[20343])-->
 	<value condition="Window.IsActive(MyMusicNav.xml)">[COLOR yellow][B]$INFO[Window(Home).Property(Music.ArtistsCount)][/B][/COLOR] • $LOCALIZE[133]: [COLOR yellow][B]$INFO[Window(Home).Property(Music.AlbumsCount)][/B][/COLOR] • $LOCALIZE[132]: [COLOR yellow][B]$INFO[Window(Home).Property(Music.SongsCount)][/B][/COLOR] $LOCALIZE[134]: </value>
 	<!--<value condition="Window.IsActive(MyPics.xml)">[COLOR yellow][B]$INFO[ListItem.PictureResolution][/B][/COLOR] • רזולוציה: [COLOR yellow][B]$INFO[ListItem.PictureDate][/B][/COLOR] • תאריך: [COLOR yellow][B]$INFO[ListItem.PictureState][/B][/COLOR] מיקום: </value>-->
   </variable>
@@ -543,6 +531,7 @@
 	<value description="בחר צבע" condition="Skin.HasSetting(Admin3) + Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[COLOR yellow]$INFO[Window.Property(colorname)][/COLOR]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(Custom1170.xml)">CHOOSEN: $INFO[Window(home).Property(SelectedColorName)]</value>
     <value condition="Skin.HasSetting(Admin) + !SubString(Container.FolderName,Advanced Launcher)">$INFO[System.CpuUsage] • $INFO[System.CpuFrequency] • $INFO[System.CPUTemperature] • $INFO[System.FreeMemory] • $INFO[System.FPS]</value>
+	<value description="הזזת פריט" condition="Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Window(home).Property(WidgetButton.Name))">MOVING [B]$INFO[Window(home).Property(WidgetButton.Name)][/B]</value>
 	<value description="הזזת פריט" condition="Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Window(home).Property(Button.Name))">MOVING [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
 	<value description="עריכת כפתור בתפריט משני" condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(SubButton.Name))">SUB MENU [B]$INFO[Window(home).Property(SubButton.Name)][/B]</value>
 	<value description="עריכת כפתור בית" condition="Window.IsVisible(Custom1175.xml) + !IsEmpty(Window(home).Property(Button.Name))">EDIT [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
@@ -560,40 +549,64 @@
   </variable>
   
   <variable name="TopVideoInformation1112a">
-    <value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows) | StringCompare(Container.FolderName,Genesis)]">$INFO[ListItem.Property(TotalSeasons)] </value>
+    <value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$INFO[ListItem.Property(TotalSeasons)] </value>
   </variable>
   <variable name="TopVideoInformation1112b">
-    <value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows) | StringCompare(Container.FolderName,Genesis)]">$LOCALIZE[33054]</value>
+    <value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$LOCALIZE[33054]</value>
   </variable>
   <variable name="VideoInHours">
-    <value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,285)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),285)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,17100) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),285)]]">5</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,255)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),255)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,15300) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),255)]]">4.5</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,225)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),225)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,13500) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),225)]]">4</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,195)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),195)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,11700) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),195)]]">3.5</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,165)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),165)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,9900) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),165)]]">3</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,135)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),135)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,8100) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),135)]]">2.5</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,105)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),105)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,6300) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),105)]]">2</value>
-    <value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,75)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),75)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,4500) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),75)]]">1.5</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,55)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),55)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,3300) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),55)]]">1</value>
-	<value description="HOURS" condition="SubString(Container.FolderPath,plugin://plugin.video.genesis/?) + IntegerGreaterThan(ListItem.Duration,0) + !IntegerGreaterThan(ListItem.Duration,5)">1</value>
-	<!--<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(Window(home).Property(TopVideoInformation1),25) | IntegerGreaterThan(ListItem.Duration,25) | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + IntegerGreaterThan(Player.Duration,1500)]">0.5</value>-->
+    <value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,285)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,17100)]">5</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,255)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,15300)]">4.5</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,225)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,13500)]">4</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,195)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,11700)]">3.5</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,165)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,9900)]">3</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,135)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,8100)]">2.5</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,105)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,6300)]">2</value>
+    <value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,75)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,4500)]">1.5</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,55)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,3300)]">1</value>
+	
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),285)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),285)]">5</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),255)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),255)]">4.5</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),225)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),225)]">4</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),195)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),195)]">3.5</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),165)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),165)]">3</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),135)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),135)]">2.5</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),105)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),105)]">2</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),75)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),75)]">1.5</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),55)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),55)]">1</value>
   </variable>
   <variable name="VideoInMins">
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,47.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),47.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,2850) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),47.5)]]">50</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,42.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),42.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,2550) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),42.5)]]">45</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,37.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),37.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,2250) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),37.5)]]">40</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,32.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),32.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,1950) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),32.5)]]">35</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,27.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),27.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,1650) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),27.5)]]">30</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,22.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),22.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,1350) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),22.5)]]">25</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,17.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),17.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,1050) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),17.5)]]">20</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,12.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),12.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,750) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),12.5)]]">15</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,7.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),7.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,450) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),7.5)]]">10</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,4.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),4.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,270) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),4.5)]]">5</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,3.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),3.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,216) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),3.5)]]">4</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,2.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),2.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,162) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),2.5)]]">3</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,1.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),1.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,108) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),1.5)]]">2</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,0.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + IntegerGreaterThan(Window(home).Property(ListItemDuration),0.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [IntegerGreaterThan(Player.Duration,54) | IntegerGreaterThan(Window(home).Property(TopVideoInformation1),0.5)]]">1</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + !IntegerGreaterThan(ListItem.Duration,0.5)] | [!IsEmpty(ListItem.TVShowTitle) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + !IntegerGreaterThan(Window(home).Property(ListItemDuration),0.5)] | [[VideoPlayer.IsFullscreen | Control.HasFocus(311) | Control.HasFocus(312)] + [!IntegerGreaterThan(Player.Duration,54) | !IntegerGreaterThan(Window(home).Property(TopVideoInformation1),0.5)]]">0</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,47.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,2850)]">50</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,42.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,2550)]">45</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,37.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,2250)]">40</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,32.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,1950)]">35</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,27.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,1650)]">30</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,22.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,1350)]">25</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,17.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,1050)]">20</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,12.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,750)]">15</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,7.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,450)]">10</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,4.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,270)]">5</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,3.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,216)]">4</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,2.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,162)]">3</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,1.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,108)]">2</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,0.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,54)]">1</value>
+	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + !IntegerGreaterThan(ListItem.Duration,0.5)] | [VideoPlayer.IsFullscreen + !IntegerGreaterThan(Player.Duration,54)]">0</value>
+	
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),47.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),47.5)]">50</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),42.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),42.5)]">45</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),37.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),37.5)]">40</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),32.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),32.5)]">35</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),27.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),27.5)]">30</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),22.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),22.5)]">25</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),17.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),17.5)]">20</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),12.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),12.5)]">15</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),7.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),7.5)]">10</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),4.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),4.5)]">5</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),3.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),3.5)]">4</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),2.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),2.5)]">3</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),1.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),1.5)]">2</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),0.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),0.5)]">1</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + !IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),0.5)] | [Control.HasFocus(312) + !IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),0.5)]">0</value>
   </variable>
   
   <variable name="centermenu_color">
@@ -664,5 +677,10 @@
 	<variable name="colorTopVideoInformation3">
 	  <value condition="Skin.HasSetting(Rating)">red</value>
 	  <value></value>
+	</variable>
+	
+	<variable name="CustomStartupImage">
+	  <value condition="Skin.String(CustomStartupImage)">$INFO[Skin.String(CustomStartupImage)]</value>
+	  <value condition="!Skin.String(CustomStartupImage)">special://skin/fanart.jpg</value>
 	</variable>
 </includes>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="false">9000</defaultcontrol>
-  <onload condition="Window(home).Property(ReloadSkin)">AlarmClock(Hide,ClearProperty(ReloadSkin,home),00:01,silent)</onload>
+  <onload condition="!IsEmpty(Window(home).Property(ReloadSkin))">ClearProperty(ReloadSkin,home)</onload>
   <include>ReloadSkin_Check</include>
   <onload description="SideMenu" condition="!IsEmpty(Window(home).Property(ViewsSettings))">ClearProperty(ViewsSettings,home)</onload>
-  <onunload>SetProperty(HomeLastPos,$INFO[Container(9000).Position],home)</onunload>
-  <onunload>SetProperty(HomeLastPos2,$INFO[Container(9000).CurrentPage],home)</onunload>
+  <!--<onunload>SetProperty(HomeLastPos,$INFO[Container(9000).Position],home)</onunload>
+  <onunload>SetProperty(HomeLastPos2,$INFO[Container(9000).CurrentPage],home)</onunload>-->
   
   <!--<onload condition="IntegerGreaterThan(Window(home).Property(HomeLastPos2),1)">Action(PageDown)</onload>
   <onload condition="IntegerGreaterThan(Window(home).Property(HomeLastPos2),2)">Action(PageDown)</onload>

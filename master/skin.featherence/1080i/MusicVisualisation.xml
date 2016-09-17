@@ -4,10 +4,11 @@
   <controls>
 	<control type="button" id="10" description="כניסה">
 	  <onfocus>ReplaceWindow(Home.xml)</onfocus>
-	  <onclick>Action(Back)</onclick>
+	  <!--<onclick>Action(Back)</onclick>-->
 	  <visible>false</visible>
 	</control>
 	<control type="image" description="">
+	  <include>Fade40</include>
 	  <height>1080</height>
 	  <onclick>Action(Back)</onclick>
 	  <texture>special://skin/fanart.jpg</texture>

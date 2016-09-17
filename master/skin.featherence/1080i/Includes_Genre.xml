@@ -27,218 +27,218 @@
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Action.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31600]) | SubString(ListItem.Genre,Action) | SubString(ListItem.Genre,אקשן) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Action)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31600]) | SubString(VideoPlayer.Genre,Action) | SubString(VideoPlayer.Genre,אקשן) | SubString(Window(home).Property(TopVideoInformation6),Action)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31600]) | SubString(ListItem.Genre,Action) | SubString(ListItem.Genre,אקשן) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Action)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31600]) | SubString(VideoPlayer.Genre,Action) | SubString(VideoPlayer.Genre,אקשן)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Adventure.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31601]) | SubString(ListItem.Genre,Adventure) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Adventure)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31601]) | SubString(VideoPlayer.Genre,Adventure) | SubString(Window(home).Property(TopVideoInformation6),Adventure)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31601]) | SubString(ListItem.Genre,Adventure) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Adventure)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31601]) | SubString(VideoPlayer.Genre,Adventure)]]</visible>
 		</control>
 		<control type="image" description="אנימציה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Animation.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31602]) | SubString(ListItem.Genre,Animation) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Animation)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31602]) | SubString(VideoPlayer.Genre,Animation) | SubString(Window(home).Property(TopVideoInformation6),Animation)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31602]) | SubString(ListItem.Genre,Animation) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Animation)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31602]) | SubString(VideoPlayer.Genre,Animation)]]</visible>
 			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !SubString(ListItem.Genre,$LOCALIZE[31653]) + !SubString(ListItem.Genre,Film &amp; Animation)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + !SubString(VideoPlayer.Genre,$LOCALIZE[31653]) + !SubString(VideoPlayer.Genre,Film &amp; Animation)]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Biography.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31603]) | SubString(ListItem.Genre,Biography) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Biography)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31603]) | SubString(VideoPlayer.Genre,Biography) | SubString(Window(home).Property(TopVideoInformation6),Biography)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31603]) | SubString(ListItem.Genre,Biography) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Biography)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31603]) | SubString(VideoPlayer.Genre,Biography)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Children.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31604]) | SubString(ListItem.Genre,Children) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Children)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31604]) | SubString(VideoPlayer.Genre,Children) | SubString(Window(home).Property(TopVideoInformation6),Children)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31604]) | SubString(ListItem.Genre,Children) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Children)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31604]) | SubString(VideoPlayer.Genre,Children)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Comedy.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31605]) | SubString(ListItem.Genre,Comedy) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Comedy)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31605]) | SubString(VideoPlayer.Genre,Comedy) | SubString(Window(home).Property(TopVideoInformation6),Comedy)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31605]) | SubString(ListItem.Genre,Comedy) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Comedy)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31605]) | SubString(VideoPlayer.Genre,Comedy)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Crime.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31606]) | SubString(ListItem.Genre,Crime) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Crime)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31606]) | SubString(VideoPlayer.Genre,Crime) | SubString(Window(home).Property(TopVideoInformation6),Crime)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31606]) | SubString(ListItem.Genre,Crime) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Crime)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31606]) | SubString(VideoPlayer.Genre,Crime)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Disaster.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31607]) | SubString(ListItem.Genre,Disaster) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Disaster)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31607]) | SubString(VideoPlayer.Genre,Disaster) | SubString(Window(home).Property(TopVideoInformation6),Disaster)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31607]) | SubString(ListItem.Genre,Disaster) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Disaster)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31607]) | SubString(VideoPlayer.Genre,Disaster)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Document.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31608]) | SubString(ListItem.Genre,Document) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Document)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31608]) | SubString(VideoPlayer.Genre,Document) | SubString(Window(home).Property(TopVideoInformation6),Document)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31608]) | SubString(ListItem.Genre,Document) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Document)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31608]) | SubString(VideoPlayer.Genre,Document)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Drama.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31609]) | SubString(ListItem.Genre,Drama) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Drama)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31609]) | SubString(VideoPlayer.Genre,Drama) | SubString(Window(home).Property(TopVideoInformation6),Drama)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31609]) | SubString(ListItem.Genre,Drama) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Drama)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31609]) | SubString(VideoPlayer.Genre,Drama)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Family.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31610]) | SubString(ListItem.Genre,Family) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Family)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31610]) | SubString(VideoPlayer.Genre,Family) | SubString(Window(home).Property(TopVideoInformation6),Family)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31610]) | SubString(ListItem.Genre,Family) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Family)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31610]) | SubString(VideoPlayer.Genre,Family)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Fantasy.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31611]) | SubString(ListItem.Genre,Fantasy) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Fantasy)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31611]) | SubString(VideoPlayer.Genre,Fantasy) | SubString(Window(home).Property(TopVideoInformation6),Fantasy)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31611]) | SubString(ListItem.Genre,Fantasy) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Fantasy)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31611]) | SubString(VideoPlayer.Genre,Fantasy)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/History.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31612]) | SubString(ListItem.Genre,History) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),History)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31612]) | SubString(VideoPlayer.Genre,History) | SubString(Window(home).Property(TopVideoInformation6),History)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31612]) | SubString(ListItem.Genre,History) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),History)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31612]) | SubString(VideoPlayer.Genre,History)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Holiday.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31613]) | SubString(ListItem.Genre,Holiday) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Holiday)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,Christmas) | SubString(VideoPlayer.Genre,$LOCALIZE[31613]) | SubString(VideoPlayer.Genre,Holiday) | SubString(VideoPlayer.Genre,Christmas) | SubString(Window(home).Property(TopVideoInformation6),Holiday) | SubString(Window(home).Property(TopVideoInformation6),Christmas)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31613]) | SubString(ListItem.Genre,Holiday) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Holiday)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,Christmas) | SubString(VideoPlayer.Genre,$LOCALIZE[31613]) | SubString(VideoPlayer.Genre,Holiday) | SubString(VideoPlayer.Genre,Christmas)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Horror.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31614]) | SubString(ListItem.Genre,Horror) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Horror)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31614]) | SubString(VideoPlayer.Genre,Horror) | SubString(Window(home).Property(TopVideoInformation6),Horror)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31614]) | SubString(ListItem.Genre,Horror) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Horror)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31614]) | SubString(VideoPlayer.Genre,Horror)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Indie.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31615]) | SubString(ListItem.Genre,Indie) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Indie)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31615]) | SubString(VideoPlayer.Genre,Indie) | SubString(Window(home).Property(TopVideoInformation6),Indie)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31615]) | SubString(ListItem.Genre,Indie) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Indie)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31615]) | SubString(VideoPlayer.Genre,Indie)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<aspectratio aligny="bottom">keep</aspectratio>
 			<texture>badges/genre/Music.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31616]) | SubString(ListItem.Genre,Music) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Music)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31616]) | SubString(VideoPlayer.Genre,Music) | SubString(Window(home).Property(TopVideoInformation6),Music)]]</visible>
-			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !SubString(ListItem.Genre,$LOCALIZE[31646]) + !SubString(ListItem.Genre,Musical)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + !SubString(VideoPlayer.Genre,$LOCALIZE[31646]) + !SubString(VideoPlayer.Genre,Musical) + !SubString(Window(home).Property(TopVideoInformation6),Musical)]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31616]) | SubString(ListItem.Genre,Music) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Music)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31616]) | SubString(VideoPlayer.Genre,Music)]]</visible>
+			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !SubString(ListItem.Genre,$LOCALIZE[31646]) + !SubString(ListItem.Genre,Musical)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + !SubString(VideoPlayer.Genre,$LOCALIZE[31646]) + !SubString(VideoPlayer.Genre,Musical)]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Mystery.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31617]) | SubString(ListItem.Genre,Mystery) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Mystery)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31617]) | SubString(VideoPlayer.Genre,Mystery) | SubString(Window(home).Property(TopVideoInformation6),Mystery)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31617]) | SubString(ListItem.Genre,Mystery) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Mystery)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31617]) | SubString(VideoPlayer.Genre,Mystery)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Romance.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31618]) | SubString(ListItem.Genre,Romance) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Romance)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31618]) | SubString(VideoPlayer.Genre,Romance) | SubString(Window(home).Property(TopVideoInformation6),Romance)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31618]) | SubString(ListItem.Genre,Romance) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Romance)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31618]) | SubString(VideoPlayer.Genre,Romance)]]</visible>
 		</control>
 		<control type="image" description="מדע בדיוני">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Sci-Fi.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31619]) | SubString(ListItem.Genre,Science Fiction) | SubString(ListItem.Genre,Science-Fiction) | SubString(ListItem.Genre,Sci-Fi) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Science Fiction) | SubString(Window(home).Property(ListItemGenre),Science-Fiction) | SubString(Window(home).Property(ListItemGenre),Sci-Fi)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31619]) | SubString(VideoPlayer.Genre,Science Fiction) | SubString(VideoPlayer.Genre,Science-Fiction) | SubString(VideoPlayer.Genre,Sci-Fi) | SubString(Window(home).Property(TopVideoInformation6),Science Fiction) | SubString(Window(home).Property(TopVideoInformation6),Science-Fiction) | SubString(Window(home).Property(TopVideoInformation6),Sci-Fi)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31619]) | SubString(ListItem.Genre,Science Fiction) | SubString(ListItem.Genre,Science-Fiction) | SubString(ListItem.Genre,Sci-Fi) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Science Fiction) | SubString(Window(home).Property(ListItemGenre),Science-Fiction) | SubString(Window(home).Property(ListItemGenre),Sci-Fi)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31619]) | SubString(VideoPlayer.Genre,Science Fiction) | SubString(VideoPlayer.Genre,Science-Fiction) | SubString(VideoPlayer.Genre,Sci-Fi)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Short.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31620]) | SubString(ListItem.Genre,Short) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Short)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31620]) | SubString(VideoPlayer.Genre,Short) | SubString(Window(home).Property(TopVideoInformation6),Short)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31620]) | SubString(ListItem.Genre,Short) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Short)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31620]) | SubString(VideoPlayer.Genre,Short)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Sport.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31621]) | SubString(ListItem.Genre,Sport) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Sport)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31621]) | SubString(VideoPlayer.Genre,Sport) | SubString(Window(home).Property(TopVideoInformation6),Sport)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31621]) | SubString(ListItem.Genre,Sport) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Sport)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31621]) | SubString(VideoPlayer.Genre,Sport)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Suspense.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31622]) | SubString(ListItem.Genre,Suspense) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Suspense)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31622]) | SubString(VideoPlayer.Genre,Suspense) | SubString(Window(home).Property(TopVideoInformation6),Suspense)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31622]) | SubString(ListItem.Genre,Suspense) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Suspense)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31622]) | SubString(VideoPlayer.Genre,Suspense)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Thriller.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31623]) | SubString(ListItem.Genre,Thriller) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Thriller)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31623]) | SubString(VideoPlayer.Genre,Thriller) | SubString(Window(home).Property(TopVideoInformation6),Thriller)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31623]) | SubString(ListItem.Genre,Thriller) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Thriller)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31623]) | SubString(VideoPlayer.Genre,Thriller)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/War.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31624]) | SubString(ListItem.Genre,War) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),War)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31624]) | SubString(VideoPlayer.Genre,War) | SubString(Window(home).Property(TopVideoInformation6),War)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31624]) | SubString(ListItem.Genre,War) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),War)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31624]) | SubString(VideoPlayer.Genre,War)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Western.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31625]) | SubString(ListItem.Genre,Western) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Western)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31625]) | SubString(VideoPlayer.Genre,Western) | SubString(Window(home).Property(TopVideoInformation6),Western)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31625]) | SubString(ListItem.Genre,Western) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Western)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31625]) | SubString(VideoPlayer.Genre,Western)]]</visible>
 		</control>
 		
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Game-Show.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31625]) | SubString(ListItem.Genre,Game Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Game Show)]| [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31625]) | SubString(VideoPlayer.Genre,Game Show) | SubString(Window(home).Property(TopVideoInformation6),Game Show)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31625]) | SubString(ListItem.Genre,Game Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Game Show)]| [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31625]) | SubString(VideoPlayer.Genre,Game Show)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/News.png</texture>
-			<visible><visible>SubString(ListItem.Genre,$LOCALIZE[31627]) | SubString(ListItem.Genre,News) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),News)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31627]) | SubString(VideoPlayer.Genre,News) | SubString(Window(home).Property(TopVideoInformation6),News)]]</visible></visible>
+			<visible><visible>SubString(ListItem.Genre,$LOCALIZE[31627]) | SubString(ListItem.Genre,News) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),News)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31627]) | SubString(VideoPlayer.Genre,News)]]</visible></visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Reality.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31628]) | SubString(ListItem.Genre,Reality) | SubString(ListItem.Genre,Reality-TV) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Reality) | SubString(Window(home).Property(ListItemGenre),Reality-TV)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31628]) | SubString(VideoPlayer.Genre,Reality) | SubString(VideoPlayer.Genre,Reality-TV) | SubString(Window(home).Property(TopVideoInformation6),Reality)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31628]) | SubString(ListItem.Genre,Reality) | SubString(ListItem.Genre,Reality-TV) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Reality) | SubString(Window(home).Property(ListItemGenre),Reality-TV)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31628]) | SubString(VideoPlayer.Genre,Reality) | SubString(VideoPlayer.Genre,Reality-TV)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Sitcom.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31629]) | SubString(ListItem.Genre,Sitcom) | SubString(ListItem.Genre,sitcom) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Sitcom) | SubString(Window(home).Property(ListItemGenre),sitcom)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31629]) | SubString(VideoPlayer.Genre,Sitcom) | SubString(VideoPlayer.Genre,sitcom) | SubString(Window(home).Property(TopVideoInformation6),Sitcom)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31629]) | SubString(ListItem.Genre,Sitcom) | SubString(ListItem.Genre,sitcom) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Sitcom) | SubString(Window(home).Property(ListItemGenre),sitcom)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31629]) | SubString(VideoPlayer.Genre,Sitcom) | SubString(VideoPlayer.Genre,sitcom)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Talk-Show.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31630]) | SubString(ListItem.Genre,Talk Show) | SubString(ListItem.Genre,Talk-Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Talk Show) | SubString(Window(home).Property(ListItemGenre),Talk-Show)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31630]) | SubString(VideoPlayer.Genre,Talk Show) | SubString(VideoPlayer.Genre,Talk-Show) | SubString(Window(home).Property(TopVideoInformation6),Talk Show) | SubString(Window(home).Property(TopVideoInformation6),Talk-Show)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31630]) | SubString(ListItem.Genre,Talk Show) | SubString(ListItem.Genre,Talk-Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Talk Show) | SubString(Window(home).Property(ListItemGenre),Talk-Show)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31630]) | SubString(VideoPlayer.Genre,Talk Show) | SubString(VideoPlayer.Genre,Talk-Show)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Food.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31631]) | SubString(ListItem.Genre,Food) | SubString(ListItem.Genre,food) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Food) | SubString(Window(home).Property(ListItemGenre),food)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31631]) | SubString(VideoPlayer.Genre,Food) | SubString(VideoPlayer.Genre,food) | SubString(Window(home).Property(TopVideoInformation6),Food)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31631]) | SubString(ListItem.Genre,Food) | SubString(ListItem.Genre,food) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Food) | SubString(Window(home).Property(ListItemGenre),food)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31631]) | SubString(VideoPlayer.Genre,Food) | SubString(VideoPlayer.Genre,food)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Home-and-Garden.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31631]) | SubString(ListItem.Genre,Home and Garden) | SubString(ListItem.Genre,Home-and-Garden) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Home and Garden) | SubString(Window(home).Property(ListItemGenre),Home-and-Garden)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31631]) | SubString(VideoPlayer.Genre,Home and Garden) | SubString(VideoPlayer.Genre,Home-and-Garden) | SubString(Window(home).Property(TopVideoInformation6),Home and Garden) | SubString(Window(home).Property(TopVideoInformation6),Home-and-Garden)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31631]) | SubString(ListItem.Genre,Home and Garden) | SubString(ListItem.Genre,Home-and-Garden) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Home and Garden) | SubString(Window(home).Property(ListItemGenre),Home-and-Garden)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31631]) | SubString(VideoPlayer.Genre,Home and Garden) | SubString(VideoPlayer.Genre,Home-and-Garden)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Mini-Series.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31633]) | SubString(ListItem.Genre,Mini Series) | SubString(ListItem.Genre,Mini-Series) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Mini Series) | SubString(Window(home).Property(ListItemGenre),Mini-Series)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31633]) | SubString(VideoPlayer.Genre,Mini Series) | SubString(VideoPlayer.Genre,Mini-Series) | SubString(Window(home).Property(TopVideoInformation6),Mini-Series)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31633]) | SubString(ListItem.Genre,Mini Series) | SubString(ListItem.Genre,Mini-Series) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Mini Series) | SubString(Window(home).Property(ListItemGenre),Mini-Series)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31633]) | SubString(VideoPlayer.Genre,Mini Series) | SubString(VideoPlayer.Genre,Mini-Series)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Soap.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31634]) | SubString(ListItem.Genre,Soap) | SubString(ListItem.Genre,soap) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Soap) | SubString(Window(home).Property(ListItemGenre),soap)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31634]) | SubString(VideoPlayer.Genre,Soap) | SubString(VideoPlayer.Genre,soap) | SubString(Window(home).Property(TopVideoInformation6),Soap)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31634]) | SubString(ListItem.Genre,Soap) | SubString(ListItem.Genre,soap) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Soap) | SubString(Window(home).Property(ListItemGenre),soap)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31634]) | SubString(VideoPlayer.Genre,Soap) | SubString(VideoPlayer.Genre,soap)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Special-Interest.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31635]) | SubString(ListItem.Genre,Special Interest) | SubString(ListItem.Genre,Special-Interest) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Special Interest) | SubString(Window(home).Property(ListItemGenre),Special-Interest)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31635]) | SubString(VideoPlayer.Genre,Special Interest) | SubString(VideoPlayer.Genre,Special-Interest) | SubString(Window(home).Property(TopVideoInformation6),Special-Interest) | SubString(Window(home).Property(TopVideoInformation6),Special Interest)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31635]) | SubString(ListItem.Genre,Special Interest) | SubString(ListItem.Genre,Special-Interest) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Special Interest) | SubString(Window(home).Property(ListItemGenre),Special-Interest)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31635]) | SubString(VideoPlayer.Genre,Special Interest) | SubString(VideoPlayer.Genre,Special-Interest)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Travel.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31636]) | SubString(ListItem.Genre,Travel) | SubString(ListItem.Genre,travel) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Travel) | SubString(Window(home).Property(ListItemGenre),travel)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31636]) | SubString(VideoPlayer.Genre,Travel) | SubString(VideoPlayer.Genre,travel) | SubString(Window(home).Property(TopVideoInformation6),Travel) | SubString(Window(home).Property(TopVideoInformation6),travel)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31636]) | SubString(ListItem.Genre,Travel) | SubString(ListItem.Genre,travel) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Travel) | SubString(Window(home).Property(ListItemGenre),travel)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31636]) | SubString(VideoPlayer.Genre,Travel) | SubString(VideoPlayer.Genre,travel)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Film-Noir.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31637]) | SubString(ListItem.Genre,Film Noir) | SubString(ListItem.Genre,Film-Noir) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Film Noir) | SubString(Window(home).Property(ListItemGenre),Film-Noir)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31637]) | SubString(VideoPlayer.Genre,Film Noir) | SubString(VideoPlayer.Genre,Film-Noir) | SubString(Window(home).Property(TopVideoInformation6),Film Noir) | SubString(Window(home).Property(TopVideoInformation6),Film-Noir)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31637]) | SubString(ListItem.Genre,Film Noir) | SubString(ListItem.Genre,Film-Noir) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Film Noir) | SubString(Window(home).Property(ListItemGenre),Film-Noir)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31637]) | SubString(VideoPlayer.Genre,Film Noir) | SubString(VideoPlayer.Genre,Film-Noir)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<aspectratio aligny="bottom">keep</aspectratio>
 			<texture>badges/genre/Musical.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31646]) | SubString(ListItem.Genre,Musical) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Musical)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31646]) | SubString(VideoPlayer.Genre,Musical) | SubString(Window(home).Property(TopVideoInformation6),Musical)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31646]) | SubString(ListItem.Genre,Musical) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Musical)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31646]) | SubString(VideoPlayer.Genre,Musical)]]</visible>
 		</control>
 		
 		<control type="image" description="מדע וטכנולוגיה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Technology.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31650]) | SubString(ListItem.Genre,$LOCALIZE[19630]) | SubString(ListItem.Genre,Technology) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Technology)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31650]) | SubString(VideoPlayer.Genre,$LOCALIZE[19630]) | SubString(VideoPlayer.Genre,Technology) | SubString(Window(home).Property(TopVideoInformation6),Technology)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31650]) | SubString(ListItem.Genre,$LOCALIZE[19630]) | SubString(ListItem.Genre,Technology) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Technology)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31650]) | SubString(VideoPlayer.Genre,$LOCALIZE[19630]) | SubString(VideoPlayer.Genre,Technology)]]</visible>
 		</control>
 		<control type="image" description="אנשים ובלוג">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/People.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31651]) | SubString(ListItem.Genre,People) | SubString(ListItem.Genre,Blogs) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Blogs)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31651]) | SubString(VideoPlayer.Genre,People) | SubString(VideoPlayer.Genre,Blogs) | SubString(Window(home).Property(TopVideoInformation6),Blogs)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31651]) | SubString(ListItem.Genre,People) | SubString(ListItem.Genre,Blogs) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Blogs)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31651]) | SubString(VideoPlayer.Genre,People) | SubString(VideoPlayer.Genre,Blogs)]]</visible>
 		</control>
 		<control type="image" description="בידור">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Entertainment.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31652]) | SubString(ListItem.Genre,Entertain) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Entertain)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31652]) | SubString(VideoPlayer.Genre,Entertain) | SubString(Window(home).Property(TopVideoInformation6),Entertain)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31652]) | SubString(ListItem.Genre,Entertain) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Entertain)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31652]) | SubString(VideoPlayer.Genre,Entertain)]]</visible>
 		</control>
 		<control type="image" description="וידאו ואנימציה">
 			<include>MultiGenreFlag</include>
@@ -416,257 +416,257 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31600]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31600]) | SubString(ListItem.Genre,Action) | SubString(ListItem.Genre,אקשן) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Action)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31600]) | SubString(VideoPlayer.Genre,Action) | SubString(VideoPlayer.Genre,אקשן) | SubString(Window(home).Property(TopVideoInformation6),Action)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31600]) | SubString(ListItem.Genre,Action) | SubString(ListItem.Genre,אקשן) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Action)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31600]) | SubString(VideoPlayer.Genre,Action) | SubString(VideoPlayer.Genre,אקשן)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31601]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31601]) | SubString(ListItem.Genre,Adventure) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Adventure)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31601]) | SubString(VideoPlayer.Genre,Adventure) | SubString(Window(home).Property(TopVideoInformation6),Adventure)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31601]) | SubString(ListItem.Genre,Adventure) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Adventure)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31601]) | SubString(VideoPlayer.Genre,Adventure)]]</visible>
 		</control>
 		<control type="label" description="אנימציה">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31602]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31602]) | SubString(ListItem.Genre,Animation) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Animation)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31602]) | SubString(VideoPlayer.Genre,Animation) | SubString(Window(home).Property(TopVideoInformation6),Animation)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31602]) | SubString(ListItem.Genre,Animation) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Animation)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31602]) | SubString(VideoPlayer.Genre,Animation)]]</visible>
 			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !SubString(ListItem.Genre,$LOCALIZE[31653]) + !SubString(ListItem.Genre,Film &amp; Animation)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + !SubString(VideoPlayer.Genre,$LOCALIZE[31653]) + !SubString(VideoPlayer.Genre,Film &amp; Animation)]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31603]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31603]) | SubString(ListItem.Genre,Biography) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Biography)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31603]) | SubString(VideoPlayer.Genre,Biography) | SubString(Window(home).Property(TopVideoInformation6),Biography)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31603]) | SubString(ListItem.Genre,Biography) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Biography)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31603]) | SubString(VideoPlayer.Genre,Biography)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31604]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31604]) | SubString(ListItem.Genre,Children) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Children)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31604]) | SubString(VideoPlayer.Genre,Children) | SubString(Window(home).Property(TopVideoInformation6),Children)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31604]) | SubString(ListItem.Genre,Children) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Children)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31604]) | SubString(VideoPlayer.Genre,Children)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31605]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31605]) | SubString(ListItem.Genre,Comedy) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Comedy)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31605]) | SubString(VideoPlayer.Genre,Comedy) | SubString(Window(home).Property(TopVideoInformation6),Comedy)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31605]) | SubString(ListItem.Genre,Comedy) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Comedy)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31605]) | SubString(VideoPlayer.Genre,Comedy)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31606]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31606]) | SubString(ListItem.Genre,Crime) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Crime)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31606]) | SubString(VideoPlayer.Genre,Crime) | SubString(Window(home).Property(TopVideoInformation6),Crime)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31606]) | SubString(ListItem.Genre,Crime) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Crime)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31606]) | SubString(VideoPlayer.Genre,Crime)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31607]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31607]) | SubString(ListItem.Genre,Disaster) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Disaster)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31607]) | SubString(VideoPlayer.Genre,Disaster) | SubString(Window(home).Property(TopVideoInformation6),Disaster)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31607]) | SubString(ListItem.Genre,Disaster) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Disaster)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31607]) | SubString(VideoPlayer.Genre,Disaster)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31608]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31608]) | SubString(ListItem.Genre,Document) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Document)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31608]) | SubString(VideoPlayer.Genre,Document) | SubString(Window(home).Property(TopVideoInformation6),Document)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31608]) | SubString(ListItem.Genre,Document) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Document)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31608]) | SubString(VideoPlayer.Genre,Document)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31609]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31609]) | SubString(ListItem.Genre,Drama) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Drama)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31609]) | SubString(VideoPlayer.Genre,Drama) | SubString(Window(home).Property(TopVideoInformation6),Drama)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31609]) | SubString(ListItem.Genre,Drama) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Drama)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31609]) | SubString(VideoPlayer.Genre,Drama)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31610]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31610]) | SubString(ListItem.Genre,Family) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Family)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31610]) | SubString(VideoPlayer.Genre,Family) | SubString(Window(home).Property(TopVideoInformation6),Family)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31610]) | SubString(ListItem.Genre,Family) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Family)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31610]) | SubString(VideoPlayer.Genre,Family)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31611]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31611]) | SubString(ListItem.Genre,Fantasy) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Fantasy)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31611]) | SubString(VideoPlayer.Genre,Fantasy) | SubString(Window(home).Property(TopVideoInformation6),Fantasy)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31611]) | SubString(ListItem.Genre,Fantasy) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Fantasy)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31611]) | SubString(VideoPlayer.Genre,Fantasy)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31612]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31612]) | SubString(ListItem.Genre,History) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),History)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31612]) | SubString(VideoPlayer.Genre,History) | SubString(Window(home).Property(TopVideoInformation6),History)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31612]) | SubString(ListItem.Genre,History) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),History)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31612]) | SubString(VideoPlayer.Genre,History)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31614]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31613]) | SubString(ListItem.Genre,Holiday) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Holiday) | SubString(ListItem.Genre,Christmas)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31613]) | SubString(VideoPlayer.Genre,Holiday) | SubString(VideoPlayer.Genre,Christmas) | SubString(Window(home).Property(TopVideoInformation6),Holiday) | SubString(Window(home).Property(TopVideoInformation6),Christmas)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31613]) | SubString(ListItem.Genre,Holiday) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Holiday) | SubString(ListItem.Genre,Christmas)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31613]) | SubString(VideoPlayer.Genre,Holiday) | SubString(VideoPlayer.Genre,Christmas)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31614]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31614]) | SubString(ListItem.Genre,Horror) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Horror)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31614]) | SubString(VideoPlayer.Genre,Horror) | SubString(Window(home).Property(TopVideoInformation6),Horror)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31614]) | SubString(ListItem.Genre,Horror) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Horror)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31614]) | SubString(VideoPlayer.Genre,Horror)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31615]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31615]) | SubString(ListItem.Genre,Indie) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Indie)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31615]) | SubString(VideoPlayer.Genre,Indie) | SubString(Window(home).Property(TopVideoInformation6),Indie)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31615]) | SubString(ListItem.Genre,Indie) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Indie)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31615]) | SubString(VideoPlayer.Genre,Indie)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31616]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31616]) | SubString(ListItem.Genre,Music) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Music)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31616]) | SubString(VideoPlayer.Genre,Music) | SubString(Window(home).Property(TopVideoInformation6),Music)]]</visible>
-			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !SubString(ListItem.Genre,$LOCALIZE[31646]) + !SubString(ListItem.Genre,Musical)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + !SubString(VideoPlayer.Genre,$LOCALIZE[31646]) + !SubString(VideoPlayer.Genre,Musical) + !SubString(Window(home).Property(TopVideoInformation6),Musical)]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31616]) | SubString(ListItem.Genre,Music) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Music)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31616]) | SubString(VideoPlayer.Genre,Music)]]</visible>
+			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !SubString(ListItem.Genre,$LOCALIZE[31646]) + !SubString(ListItem.Genre,Musical)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + !SubString(VideoPlayer.Genre,$LOCALIZE[31646]) + !SubString(VideoPlayer.Genre,Musical)]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31617]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31617]) | SubString(ListItem.Genre,Mystery) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Mystery)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31617]) | SubString(VideoPlayer.Genre,Mystery) | SubString(Window(home).Property(TopVideoInformation6),Mystery)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31617]) | SubString(ListItem.Genre,Mystery) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Mystery)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31617]) | SubString(VideoPlayer.Genre,Mystery)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31618]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31618]) | SubString(ListItem.Genre,Romance) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Romance)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31618]) | SubString(VideoPlayer.Genre,Romance) | SubString(Window(home).Property(TopVideoInformation6),Romance)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31618]) | SubString(ListItem.Genre,Romance) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Romance)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31618]) | SubString(VideoPlayer.Genre,Romance)]]</visible>
 		</control>
 		<control type="label" description="מדע בדיוני">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31619]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31619]) | SubString(ListItem.Genre,Science Fiction) | [!Window.IsVisible(DialogFullScreenInfo.xml) + SubString(ListItem.Genre,Science-Fiction)] | SubString(ListItem.Genre,Sci-Fi) | SubString(Window(home).Property(ListItemGenre),Science Fiction) | SubString(Window(home).Property(ListItemGenre),Science-Fiction) | SubString(Window(home).Property(ListItemGenre),Sci-Fi) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31619]) | SubString(VideoPlayer.Genre,Science Fiction) | SubString(VideoPlayer.Genre,Science-Fiction) | SubString(VideoPlayer.Genre,Sci-Fi) | SubString(Window(home).Property(TopVideoInformation6),Science Fiction) | SubString(Window(home).Property(TopVideoInformation6),Science-Fiction) | SubString(Window(home).Property(TopVideoInformation6),Sci-Fi)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31619]) | SubString(ListItem.Genre,Science Fiction) | [!Window.IsVisible(DialogFullScreenInfo.xml) + SubString(ListItem.Genre,Science-Fiction)] | SubString(ListItem.Genre,Sci-Fi) | SubString(Window(home).Property(ListItemGenre),Science Fiction) | SubString(Window(home).Property(ListItemGenre),Science-Fiction) | SubString(Window(home).Property(ListItemGenre),Sci-Fi) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31619]) | SubString(VideoPlayer.Genre,Science Fiction) | SubString(VideoPlayer.Genre,Science-Fiction) | SubString(VideoPlayer.Genre,Sci-Fi)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31620]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31620]) | SubString(ListItem.Genre,Short) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Short)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31620]) | SubString(VideoPlayer.Genre,Short) | SubString(Window(home).Property(TopVideoInformation6),Short)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31620]) | SubString(ListItem.Genre,Short) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Short)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31620]) | SubString(VideoPlayer.Genre,Short)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31621]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31621]) | SubString(ListItem.Genre,Sport) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Sport)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31621]) | SubString(VideoPlayer.Genre,Sport) | SubString(Window(home).Property(TopVideoInformation6),Sport)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31621]) | SubString(ListItem.Genre,Sport) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Sport)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31621]) | SubString(VideoPlayer.Genre,Sport)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31622]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31622]) | SubString(ListItem.Genre,Suspense) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Suspense)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31622]) | SubString(VideoPlayer.Genre,Suspense) | SubString(Window(home).Property(TopVideoInformation6),Suspense)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31622]) | SubString(ListItem.Genre,Suspense) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Suspense)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31622]) | SubString(VideoPlayer.Genre,Suspense)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31623]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31623]) | SubString(ListItem.Genre,Thriller) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Thriller)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31623]) | SubString(VideoPlayer.Genre,Thriller) | SubString(Window(home).Property(TopVideoInformation6),Thriller)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31623]) | SubString(ListItem.Genre,Thriller) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Thriller)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31623]) | SubString(VideoPlayer.Genre,Thriller)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31624]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31624]) | SubString(ListItem.Genre,War) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),War)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31624]) | SubString(VideoPlayer.Genre,War) | SubString(Window(home).Property(TopVideoInformation6),War)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31624]) | SubString(ListItem.Genre,War) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),War)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31624]) | SubString(VideoPlayer.Genre,War)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31625]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31625]) | SubString(ListItem.Genre,Western) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Western)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31625]) | SubString(VideoPlayer.Genre,Western) | SubString(Window(home).Property(TopVideoInformation6),Western)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31625]) | SubString(ListItem.Genre,Western) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Western)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31625]) | SubString(VideoPlayer.Genre,Western)]]</visible>
 		</control>
 		
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31626]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31626]) | SubString(ListItem.Genre,Game Show) | SubString(ListItem.Genre,Game-Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Game Show)] | SubString(Window(home).Property(ListItemGenre),Game-Show) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31626]) | SubString(VideoPlayer.Genre,Game Show) | SubString(VideoPlayer.Genre,Game-Show) | SubString(Window(home).Property(TopVideoInformation6),Game Show) | SubString(Window(home).Property(TopVideoInformation6),Game-Show)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31626]) | SubString(ListItem.Genre,Game Show) | SubString(ListItem.Genre,Game-Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Game Show)] | SubString(Window(home).Property(ListItemGenre),Game-Show) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31626]) | SubString(VideoPlayer.Genre,Game Show) | SubString(VideoPlayer.Genre,Game-Show)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31627]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31627]) | SubString(ListItem.Genre,News) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),News)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31627]) | SubString(VideoPlayer.Genre,News) | SubString(Window(home).Property(TopVideoInformation6),News)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31627]) | SubString(ListItem.Genre,News) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),News)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31627]) | SubString(VideoPlayer.Genre,News)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31628]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31628]) | SubString(ListItem.Genre,Reality) | SubString(ListItem.Genre,Reality-TV) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Reality) | SubString(Window(home).Property(ListItemGenre),Reality-TV)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31628]) | SubString(VideoPlayer.Genre,Reality) | SubString(VideoPlayer.Genre,Reality-TV) | SubString(Window(home).Property(TopVideoInformation6),Reality)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31628]) | SubString(ListItem.Genre,Reality) | SubString(ListItem.Genre,Reality-TV) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Reality) | SubString(Window(home).Property(ListItemGenre),Reality-TV)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31628]) | SubString(VideoPlayer.Genre,Reality) | SubString(VideoPlayer.Genre,Reality-TV)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31629]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31629]) | SubString(ListItem.Genre,Sitcom) | SubString(ListItem.Genre,sitcom) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Sitcom) | SubString(Window(home).Property(ListItemGenre),sitcom)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31629]) | SubString(VideoPlayer.Genre,Sitcom) | SubString(VideoPlayer.Genre,sitcom) | SubString(Window(home).Property(TopVideoInformation6),Sitcom)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31629]) | SubString(ListItem.Genre,Sitcom) | SubString(ListItem.Genre,sitcom) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Sitcom) | SubString(Window(home).Property(ListItemGenre),sitcom)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31629]) | SubString(VideoPlayer.Genre,Sitcom) | SubString(VideoPlayer.Genre,sitcom)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31630]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31630]) | SubString(ListItem.Genre,Talk Show) | SubString(ListItem.Genre,Talk-Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) +  [SubString(Window(home).Property(ListItemGenre),Talk Show) | SubString(Window(home).Property(ListItemGenre),Talk-Show)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31630]) | SubString(VideoPlayer.Genre,Talk Show) | SubString(VideoPlayer.Genre,Talk-Show) | SubString(Window(home).Property(TopVideoInformation6),Talk Show) | SubString(Window(home).Property(TopVideoInformation6),Talk-Show)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31630]) | SubString(ListItem.Genre,Talk Show) | SubString(ListItem.Genre,Talk-Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) +  [SubString(Window(home).Property(ListItemGenre),Talk Show) | SubString(Window(home).Property(ListItemGenre),Talk-Show)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31630]) | SubString(VideoPlayer.Genre,Talk Show) | SubString(VideoPlayer.Genre,Talk-Show)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31631]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31631]) | SubString(ListItem.Genre,Food) | SubString(ListItem.Genre,food) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Food) | SubString(Window(home).Property(ListItemGenre),food)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31631]) | SubString(VideoPlayer.Genre,Food) | SubString(VideoPlayer.Genre,food) | SubString(Window(home).Property(TopVideoInformation6),Food)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31631]) | SubString(ListItem.Genre,Food) | SubString(ListItem.Genre,food) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Food) | SubString(Window(home).Property(ListItemGenre),food)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31631]) | SubString(VideoPlayer.Genre,Food) | SubString(VideoPlayer.Genre,food)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31632]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31631]) | SubString(ListItem.Genre,Home and Garden) | SubString(ListItem.Genre,Home-and-Garden) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Home and Garden) | SubString(Window(home).Property(ListItemGenre),Home-and-Garden)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31631]) | SubString(VideoPlayer.Genre,Home and Garden) | SubString(VideoPlayer.Genre,Home-and-Garden) | SubString(Window(home).Property(TopVideoInformation6),Home and Garden) | SubString(Window(home).Property(TopVideoInformation6),Home-and-Garden)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31631]) | SubString(ListItem.Genre,Home and Garden) | SubString(ListItem.Genre,Home-and-Garden) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Home and Garden) | SubString(Window(home).Property(ListItemGenre),Home-and-Garden)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31631]) | SubString(VideoPlayer.Genre,Home and Garden) | SubString(VideoPlayer.Genre,Home-and-Garden)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31633]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31633]) | SubString(ListItem.Genre,Mini Series) | SubString(ListItem.Genre,Mini-Series) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Mini Series) | SubString(Window(home).Property(ListItemGenre),Mini-Series)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31633]) | SubString(VideoPlayer.Genre,Mini Series) | SubString(VideoPlayer.Genre,Mini-Series) | SubString(Window(home).Property(TopVideoInformation6),Mini Series) | SubString(Window(home).Property(TopVideoInformation6),Mini-Series)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31633]) | SubString(ListItem.Genre,Mini Series) | SubString(ListItem.Genre,Mini-Series) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Mini Series) | SubString(Window(home).Property(ListItemGenre),Mini-Series)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31633]) | SubString(VideoPlayer.Genre,Mini Series) | SubString(VideoPlayer.Genre,Mini-Series)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31634]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31634]) | SubString(ListItem.Genre,Soap) | SubString(ListItem.Genre,soap) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Soap) | SubString(Window(home).Property(ListItemGenre),soap)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31634]) | SubString(VideoPlayer.Genre,Soap) | SubString(VideoPlayer.Genre,soap) | SubString(Window(home).Property(TopVideoInformation6),Soap) | SubString(Window(home).Property(TopVideoInformation6),soap)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31634]) | SubString(ListItem.Genre,Soap) | SubString(ListItem.Genre,soap) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Soap) | SubString(Window(home).Property(ListItemGenre),soap)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31634]) | SubString(VideoPlayer.Genre,Soap) | SubString(VideoPlayer.Genre,soap)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31635]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31635]) | SubString(ListItem.Genre,Special Interest) | SubString(ListItem.Genre,Special-Interest) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Special Interest) | SubString(Window(home).Property(ListItemGenre),Special-Interest)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31635]) | SubString(VideoPlayer.Genre,Special Interest) | SubString(VideoPlayer.Genre,Special-Interest) | SubString(Window(home).Property(TopVideoInformation6),Special Interest) | SubString(Window(home).Property(TopVideoInformation6),Special-Interest)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31635]) | SubString(ListItem.Genre,Special Interest) | SubString(ListItem.Genre,Special-Interest) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Special Interest) | SubString(Window(home).Property(ListItemGenre),Special-Interest)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31635]) | SubString(VideoPlayer.Genre,Special Interest) | SubString(VideoPlayer.Genre,Special-Interest)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31636]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31636]) | SubString(ListItem.Genre,Travel) | SubString(ListItem.Genre,travel) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Travel) | SubString(Window(home).Property(ListItemGenre),travel)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31636]) | SubString(VideoPlayer.Genre,Travel) | SubString(VideoPlayer.Genre,travel) | SubString(Window(home).Property(TopVideoInformation6),Travel)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31636]) | SubString(ListItem.Genre,Travel) | SubString(ListItem.Genre,travel) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Travel) | SubString(Window(home).Property(ListItemGenre),travel)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31636]) | SubString(VideoPlayer.Genre,Travel) | SubString(VideoPlayer.Genre,travel)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31637]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31637]) | SubString(ListItem.Genre,Film Noir) | SubString(ListItem.Genre,Film-Noir) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Film Noir) | SubString(Window(home).Property(ListItemGenre),Film-Noir)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31637]) | SubString(VideoPlayer.Genre,Film Noir) | SubString(VideoPlayer.Genre,Film-Noir) | SubString(Window(home).Property(TopVideoInformation6),Film Noir) | SubString(Window(home).Property(TopVideoInformation6),Film-Noir)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31637]) | SubString(ListItem.Genre,Film Noir) | SubString(ListItem.Genre,Film-Noir) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [SubString(Window(home).Property(ListItemGenre),Film Noir) | SubString(Window(home).Property(ListItemGenre),Film-Noir)]] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31637]) | SubString(VideoPlayer.Genre,Film Noir) | SubString(VideoPlayer.Genre,Film-Noir)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31646]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31646]) | SubString(ListItem.Genre,Musical) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Musical)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31646]) | SubString(VideoPlayer.Genre,Musical) | SubString(Window(home).Property(TopVideoInformation6),Musical)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31646]) | SubString(ListItem.Genre,Musical) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Musical)] | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31646]) | SubString(VideoPlayer.Genre,Musical)]]</visible>
 		</control>
 		
 		<control type="label" description="מדע וטכנולוגיה">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31650]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31650]) | SubString(ListItem.Genre,$LOCALIZE[19630]) | SubString(ListItem.Genre,Technology) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31650]) | SubString(VideoPlayer.Genre,$LOCALIZE[19630]) | SubString(VideoPlayer.Genre,Technology) | SubString(Window(home).Property(TopVideoInformation6),Technology)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31650]) | SubString(ListItem.Genre,$LOCALIZE[19630]) | SubString(ListItem.Genre,Technology) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31650]) | SubString(VideoPlayer.Genre,$LOCALIZE[19630]) | SubString(VideoPlayer.Genre,Technology)]]</visible>
 		</control>
 		<control type="label" description="אנשים ובלוג">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31651]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31651]) | SubString(ListItem.Genre,People) | SubString(ListItem.Genre,Blogs) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31651]) | SubString(VideoPlayer.Genre,People) | SubString(VideoPlayer.Genre,Blogs) | SubString(Window(home).Property(TopVideoInformation6),Blogs)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31651]) | SubString(ListItem.Genre,People) | SubString(ListItem.Genre,Blogs) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31651]) | SubString(VideoPlayer.Genre,People) | SubString(VideoPlayer.Genre,Blogs)]]</visible>
 		</control>
 		<control type="label" description="בידור">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31652]</label>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31652]) | SubString(ListItem.Genre,Entertain) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31652]) | SubString(VideoPlayer.Genre,Entertain) | SubString(Window(home).Property(TopVideoInformation6),Entertain)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31652]) | SubString(ListItem.Genre,Entertain) | [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31652]) | SubString(VideoPlayer.Genre,Entertain)]]</visible>
 		</control>
 		<control type="label" description="וידאו ואנימציה">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>

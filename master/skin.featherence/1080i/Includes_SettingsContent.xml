@@ -7,6 +7,11 @@
 		<onclick>noop</onclick>
 	</item>
 	
+	<item id="30" description="ו'ידגט">
+		<label>$LOCALIZE[31078]</label>
+		<onclick>noop</onclick>
+	</item>
+	
 	<item id="28" description="פאנארט">
 		<label>$LOCALIZE[20445]</label>
 		<onclick>noop</onclick>
@@ -859,7 +864,7 @@
 	  </item>
 	  
 	  
-	  
+	  <!--390-400 מתקדם-->
 	  <item id="392" description="איפוס הגדרות מעטפת">
 		<label>$LOCALIZE[31803]</label>
 		<label2></label2>
@@ -950,6 +955,49 @@
 		<property name="rinfo"></property>
 		<onclick>Skin.ToggleSetting(Touch_Support)</onclick>
 		<visible>Container(100).Hasfocus(29)</visible>
+	  </item>
+	  
+	  <!--450-500 ו'ידגט-->
+	  <item id="452" description="צורת כפתורים">
+		<label>$LOCALIZE[31057]</label>
+		<label2>$VAR[452label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/cubes.png</thumb>
+		<property name="rinfo">$LOCALIZE[31097]</property>
+		<onclick>Skin.ToggleSetting(ButtonsDesignWidget)</onclick>
+		<include>CustomizerExit</include>
+		<visible>Container(100).Hasfocus(30)</visible>
+	  </item>
+	  <item id="459" description="פאנארט-ו'ידגט">
+		<label>$LOCALIZE[20445]-$LOCALIZE[31078]</label>
+		<label2>$VAR[459label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/image.png</thumb>
+		<property name="rinfo">$LOCALIZE[31101]</property>
+		<onclick>Skin.ToggleSetting(WidgetBackground)</onclick>
+		<visible>Container(100).Hasfocus(30)</visible>
+	  </item>
+	  <item id="460" description="קביעת ו'ידגט סרטים">
+		<label>$LOCALIZE[31114]</label>
+		<label2>$VAR[460label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/movie.png</thumb>
+		<property name="rinfo">$LOCALIZE[31113]</property>
+		<onclick>RunScript(script.featherence.service,,?mode=217&amp;value=1)</onclick>
+		<visible>Container(100).Hasfocus(30)</visible>
+	  </item>
+	  <item id="461" description="קביעת ו'ידגט סדרות">
+		<label>$LOCALIZE[31115]</label>
+		<label2>$VAR[461label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/tvshows.png</thumb>
+		<property name="rinfo">$LOCALIZE[31113]</property>
+		<onclick>RunScript(script.featherence.service,,?mode=217&amp;value=2)</onclick>
+		<visible>Container(100).Hasfocus(30)</visible>
+	  </item>
+	  <item id="462" description="קביעת ו'ידגט סדרות">
+		<label>$LOCALIZE[31112]</label>
+		<label2>$VAR[462label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/weather.png</thumb>
+		<property name="rinfo">$LOCALIZE[31113]</property>
+		<onclick>RunScript(script.featherence.service,,?mode=217&amp;value=7)</onclick>
+		<visible>Container(100).Hasfocus(30)</visible>
 	  </item>
   </include> 
 
@@ -1356,6 +1404,15 @@
 		<onclick description="" condition="Skin.String(IntroDelay,5)">Skin.SetString(IntroDelay,)</onclick>
 		<visible>Container(100).Hasfocus(2) + [!Skin.HasSetting(StartUpMusic) | Skin.String(StartUpVideo)]</visible>
 	  </item>
+	   <item id="29" description="תמונה מותאמת אישית בהפעלה">
+		<label>$LOCALIZE[31869]</label>
+		<label2>$VAR[29label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/image.png</thumb>
+		<property name="rinfo">$LOCALIZE[31870][CR]$INFO[Skin.String(CustomStartupImage)]</property>
+		<onclick condition="!Skin.String(CustomStartupImage)">Skin.SetImage(CustomStartupImage)</onclick>
+		<onclick condition="Skin.String(CustomStartupImage)">Skin.SetString(CustomStartupImage,)</onclick>
+		<visible>Container(100).Hasfocus(2)</visible>
+	  </item>
 	  <item id="22" description="הפעל תצוגת זמן">
 		<label>$LOCALIZE[31857]</label>
 		<label2>$VAR[22label2]</label2>
@@ -1376,7 +1433,7 @@
 		<visible>Container(100).Hasfocus(1) + !Skin.HasSetting(ShowClock)</visible>
 	  </item>
 	  <item id="36" description="מוזיקה בצפייה במצגת ושומר מסך">
-		<label>$LOCALIZE[10005] $LOCALIZE[19107] $LOCALIZE[13317] $LOCALIZE[1397] $LOCALIZE[360]</label>
+		<label>$LOCALIZE[31077]</label>
 		<label2>$VAR[36label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/music.png</thumb>
 		<property name="rinfo">$INFO[Skin.String(screensavermusic)]</property>

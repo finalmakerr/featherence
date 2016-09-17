@@ -6,6 +6,7 @@
 	  <onfocus description="Previous_SubButton.ID_BASE" condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)">SetProperty(Previous_SubButton.ID_,$INFO[Container(9005).ListItemNoWrap(-1).Property(id)],home)</onfocus>
 	  <onfocus description="Next_SubButton.ID_BASE" condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)">SetProperty(Next_SubButton.ID_,$INFO[Container(9005).ListItemNoWrap(1).Property(id)],home)</onfocus>
 	  
+	  <onfocus description="WidgetButton.ID_BASE" condition="true">SetProperty(WidgetButton.ID_,$INFO[Container(315).ListItemNoWrap(0).Property(id)],home)</onfocus> <!--Control.HasFocus(315) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)-->
 	  <onfocus description="SubButton.Name" condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)">SetProperty(SubButton.Name,$INFO[System.CurrentControl],home)</onfocus>
 
 	  <visible>false</visible>
@@ -225,6 +226,7 @@
 	<onunload condition="!IsEmpty(Window(home).Property(Button.ID))">ClearProperty(Button.ID,home)</onunload>
 	<onunload condition="!IsEmpty(Window(home).Property(Button.ID_))">ClearProperty(Button.ID_,home)</onunload>
 	<onunload condition="!IsEmpty(Window(home).Property(Button.Name))">ClearProperty(Button.Name,home)</onunload>
+	<onunload condition="!IsEmpty(Window(home).Property(WidgetButton.ID_))">ClearProperty(WidgetButton.ID_,home)</onunload>
   </include>
     
   <include name="CheckProperty_Menus">
