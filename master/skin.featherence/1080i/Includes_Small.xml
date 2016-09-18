@@ -1020,6 +1020,25 @@
     <texture diffuse="buttons/types/bd4.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
   </include>
   
+  <include name="ButtonsDesign_black">
+    <texture diffuse="buttons/types/bd.png" colordiffuse="ff000000">buttons/ButtonA0.png</texture>
+  </include>
+  <include name="ButtonsDesign0_black">
+    <texture diffuse="buttons/types/bd0.png" colordiffuse="ff000000">buttons/ButtonA0.png</texture>
+  </include>
+  <include name="ButtonsDesign1_black">
+    <texture diffuse="buttons/types/bd1.png" colordiffuse="ff000000">buttons/ButtonA0.png</texture>
+  </include>
+  <include name="ButtonsDesign2_black">
+    <texture diffuse="buttons/types/bd2.png" colordiffuse="ff000000">buttons/ButtonA0.png</texture>
+  </include>
+  <include name="ButtonsDesign3_black">
+    <texture diffuse="buttons/types/bd3.png" colordiffuse="ff000000">buttons/ButtonA0.png</texture>
+  </include>
+  <include name="ButtonsDesign4_black">
+    <texture diffuse="buttons/types/bd4.png" colordiffuse="ff000000">buttons/ButtonA0.png</texture>
+  </include>
+  
   <include name="ButtonsDesign_sub">
     <texture diffuse="buttons/types/bd.png" colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
   </include>

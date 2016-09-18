@@ -758,6 +758,455 @@ if property_buttonid != "" and property_buttonid_ != "" or 1 + 1 == 2:
 	backgroundT.update(background119_T)
 	'''---------------------------'''
 	
+	backgroundw90_100 = xbmc.getInfoLabel('Skin.String(backgroundw90_100)')
+	backgroundw90_101 = xbmc.getInfoLabel('Skin.String(backgroundw90_101)')
+	backgroundw90_102 = xbmc.getInfoLabel('Skin.String(backgroundw90_102)')
+	backgroundw90_103 = xbmc.getInfoLabel('Skin.String(backgroundw90_103)')
+	backgroundw90_104 = xbmc.getInfoLabel('Skin.String(backgroundw90_104)')
+	backgroundw90_105 = xbmc.getInfoLabel('Skin.String(backgroundw90_105)')
+	backgroundw90_106 = xbmc.getInfoLabel('Skin.String(backgroundw90_106)')
+	backgroundw90_107 = xbmc.getInfoLabel('Skin.String(backgroundw90_107)')
+	backgroundw90_108 = xbmc.getInfoLabel('Skin.String(backgroundw90_108)')
+	backgroundw90_109 = xbmc.getInfoLabel('Skin.String(backgroundw90_109)')
+	'''---------------------------'''
+	backgroundw90_T = { 'backgroundw90_100': backgroundw90_100, 'backgroundw90_101': backgroundw90_101, 'backgroundw90_102': backgroundw90_102, 'backgroundw90_103': backgroundw90_103, 'backgroundw90_104': backgroundw90_104, 'backgroundw90_105': backgroundw90_105, 'backgroundw90_106': backgroundw90_106, 'backgroundw90_107': backgroundw90_107, 'backgroundw90_108': backgroundw90_108, 'backgroundw90_109': backgroundw90_109 }
+	backgroundT.update(backgroundw90_T)
+	'''---------------------------'''
+	
+	backgroundw91_100 = xbmc.getInfoLabel('Skin.String(backgroundw91_100)')
+	backgroundw91_101 = xbmc.getInfoLabel('Skin.String(backgroundw91_101)')
+	backgroundw91_102 = xbmc.getInfoLabel('Skin.String(backgroundw91_102)')
+	backgroundw91_103 = xbmc.getInfoLabel('Skin.String(backgroundw91_103)')
+	backgroundw91_104 = xbmc.getInfoLabel('Skin.String(backgroundw91_104)')
+	backgroundw91_105 = xbmc.getInfoLabel('Skin.String(backgroundw91_105)')
+	backgroundw91_106 = xbmc.getInfoLabel('Skin.String(backgroundw91_106)')
+	backgroundw91_107 = xbmc.getInfoLabel('Skin.String(backgroundw91_107)')
+	backgroundw91_108 = xbmc.getInfoLabel('Skin.String(backgroundw91_108)')
+	backgroundw91_109 = xbmc.getInfoLabel('Skin.String(backgroundw91_109)')
+	'''---------------------------'''
+	backgroundw91_T = { 'backgroundw91_100': backgroundw91_100, 'backgroundw91_101': backgroundw91_101, 'backgroundw91_102': backgroundw91_102, 'backgroundw91_103': backgroundw91_103, 'backgroundw91_104': backgroundw91_104, 'backgroundw91_105': backgroundw91_105, 'backgroundw91_106': backgroundw91_106, 'backgroundw91_107': backgroundw91_107, 'backgroundw91_108': backgroundw91_108, 'backgroundw91_109': backgroundw91_109 }
+	backgroundT.update(backgroundw91_T)
+	'''---------------------------'''
+	
+	backgroundw92_100 = xbmc.getInfoLabel('Skin.String(backgroundw92_100)')
+	backgroundw92_101 = xbmc.getInfoLabel('Skin.String(backgroundw92_101)')
+	backgroundw92_102 = xbmc.getInfoLabel('Skin.String(backgroundw92_102)')
+	backgroundw92_103 = xbmc.getInfoLabel('Skin.String(backgroundw92_103)')
+	backgroundw92_104 = xbmc.getInfoLabel('Skin.String(backgroundw92_104)')
+	backgroundw92_105 = xbmc.getInfoLabel('Skin.String(backgroundw92_105)')
+	backgroundw92_106 = xbmc.getInfoLabel('Skin.String(backgroundw92_106)')
+	backgroundw92_107 = xbmc.getInfoLabel('Skin.String(backgroundw92_107)')
+	backgroundw92_108 = xbmc.getInfoLabel('Skin.String(backgroundw92_108)')
+	backgroundw92_109 = xbmc.getInfoLabel('Skin.String(backgroundw92_109)')
+	'''---------------------------'''
+	backgroundw92_T = { 'backgroundw92_100': backgroundw92_100, 'backgroundw92_101': backgroundw92_101, 'backgroundw92_102': backgroundw92_102, 'backgroundw92_103': backgroundw92_103, 'backgroundw92_104': backgroundw92_104, 'backgroundw92_105': backgroundw92_105, 'backgroundw92_106': backgroundw92_106, 'backgroundw92_107': backgroundw92_107, 'backgroundw92_108': backgroundw92_108, 'backgroundw92_109': backgroundw92_109 }
+	backgroundT.update(backgroundw92_T)
+	'''---------------------------'''
+	
+	backgroundw93_100 = xbmc.getInfoLabel('Skin.String(backgroundw93_100)')
+	backgroundw93_101 = xbmc.getInfoLabel('Skin.String(backgroundw93_101)')
+	backgroundw93_102 = xbmc.getInfoLabel('Skin.String(backgroundw93_102)')
+	backgroundw93_103 = xbmc.getInfoLabel('Skin.String(backgroundw93_103)')
+	backgroundw93_104 = xbmc.getInfoLabel('Skin.String(backgroundw93_104)')
+	backgroundw93_105 = xbmc.getInfoLabel('Skin.String(backgroundw93_105)')
+	backgroundw93_106 = xbmc.getInfoLabel('Skin.String(backgroundw93_106)')
+	backgroundw93_107 = xbmc.getInfoLabel('Skin.String(backgroundw93_107)')
+	backgroundw93_108 = xbmc.getInfoLabel('Skin.String(backgroundw93_108)')
+	backgroundw93_109 = xbmc.getInfoLabel('Skin.String(backgroundw93_109)')
+	'''---------------------------'''
+	backgroundw93_T = { 'backgroundw93_100': backgroundw93_100, 'backgroundw93_101': backgroundw93_101, 'backgroundw93_102': backgroundw93_102, 'backgroundw93_103': backgroundw93_103, 'backgroundw93_104': backgroundw93_104, 'backgroundw93_105': backgroundw93_105, 'backgroundw93_106': backgroundw93_106, 'backgroundw93_107': backgroundw93_107, 'backgroundw93_108': backgroundw93_108, 'backgroundw93_109': backgroundw93_109 }
+	backgroundT.update(backgroundw93_T)
+	'''---------------------------'''
+	
+	backgroundw94_100 = xbmc.getInfoLabel('Skin.String(backgroundw94_100)')
+	backgroundw94_101 = xbmc.getInfoLabel('Skin.String(backgroundw94_101)')
+	backgroundw94_102 = xbmc.getInfoLabel('Skin.String(backgroundw94_102)')
+	backgroundw94_103 = xbmc.getInfoLabel('Skin.String(backgroundw94_103)')
+	backgroundw94_104 = xbmc.getInfoLabel('Skin.String(backgroundw94_104)')
+	backgroundw94_105 = xbmc.getInfoLabel('Skin.String(backgroundw94_105)')
+	backgroundw94_106 = xbmc.getInfoLabel('Skin.String(backgroundw94_106)')
+	backgroundw94_107 = xbmc.getInfoLabel('Skin.String(backgroundw94_107)')
+	backgroundw94_108 = xbmc.getInfoLabel('Skin.String(backgroundw94_108)')
+	backgroundw94_109 = xbmc.getInfoLabel('Skin.String(backgroundw94_109)')
+	'''---------------------------'''
+	backgroundw94_T = { 'backgroundw94_100': backgroundw94_100, 'backgroundw94_101': backgroundw94_101, 'backgroundw94_102': backgroundw94_102, 'backgroundw94_103': backgroundw94_103, 'backgroundw94_104': backgroundw94_104, 'backgroundw94_105': backgroundw94_105, 'backgroundw94_106': backgroundw94_106, 'backgroundw94_107': backgroundw94_107, 'backgroundw94_108': backgroundw94_108, 'backgroundw94_109': backgroundw94_109 }
+	backgroundT.update(backgroundw94_T)
+	'''---------------------------'''
+	
+	backgroundw95_100 = xbmc.getInfoLabel('Skin.String(backgroundw95_100)')
+	backgroundw95_101 = xbmc.getInfoLabel('Skin.String(backgroundw95_101)')
+	backgroundw95_102 = xbmc.getInfoLabel('Skin.String(backgroundw95_102)')
+	backgroundw95_103 = xbmc.getInfoLabel('Skin.String(backgroundw95_103)')
+	backgroundw95_104 = xbmc.getInfoLabel('Skin.String(backgroundw95_104)')
+	backgroundw95_105 = xbmc.getInfoLabel('Skin.String(backgroundw95_105)')
+	backgroundw95_106 = xbmc.getInfoLabel('Skin.String(backgroundw95_106)')
+	backgroundw95_107 = xbmc.getInfoLabel('Skin.String(backgroundw95_107)')
+	backgroundw95_108 = xbmc.getInfoLabel('Skin.String(backgroundw95_108)')
+	backgroundw95_109 = xbmc.getInfoLabel('Skin.String(backgroundw95_109)')
+	'''---------------------------'''
+	backgroundw95_T = { 'backgroundw95_100': backgroundw95_100, 'backgroundw95_101': backgroundw95_101, 'backgroundw95_102': backgroundw95_102, 'backgroundw95_103': backgroundw95_103, 'backgroundw95_104': backgroundw95_104, 'backgroundw95_105': backgroundw95_105, 'backgroundw95_106': backgroundw95_106, 'backgroundw95_107': backgroundw95_107, 'backgroundw95_108': backgroundw95_108, 'backgroundw95_109': backgroundw95_109 }
+	backgroundT.update(backgroundw95_T)
+	'''---------------------------'''
+	
+	backgroundw96_100 = xbmc.getInfoLabel('Skin.String(backgroundw96_100)')
+	backgroundw96_101 = xbmc.getInfoLabel('Skin.String(backgroundw96_101)')
+	backgroundw96_102 = xbmc.getInfoLabel('Skin.String(backgroundw96_102)')
+	backgroundw96_103 = xbmc.getInfoLabel('Skin.String(backgroundw96_103)')
+	backgroundw96_104 = xbmc.getInfoLabel('Skin.String(backgroundw96_104)')
+	backgroundw96_105 = xbmc.getInfoLabel('Skin.String(backgroundw96_105)')
+	backgroundw96_106 = xbmc.getInfoLabel('Skin.String(backgroundw96_106)')
+	backgroundw96_107 = xbmc.getInfoLabel('Skin.String(backgroundw96_107)')
+	backgroundw96_108 = xbmc.getInfoLabel('Skin.String(backgroundw96_108)')
+	backgroundw96_109 = xbmc.getInfoLabel('Skin.String(backgroundw96_109)')
+	'''---------------------------'''
+	backgroundw96_T = { 'backgroundw96_100': backgroundw96_100, 'backgroundw96_101': backgroundw96_101, 'backgroundw96_102': backgroundw96_102, 'backgroundw96_103': backgroundw96_103, 'backgroundw96_104': backgroundw96_104, 'backgroundw96_105': backgroundw96_105, 'backgroundw96_106': backgroundw96_106, 'backgroundw96_107': backgroundw96_107, 'backgroundw96_108': backgroundw96_108, 'backgroundw96_109': backgroundw96_109 }
+	backgroundT.update(backgroundw96_T)
+	'''---------------------------'''
+	
+	backgroundw97_100 = xbmc.getInfoLabel('Skin.String(backgroundw97_100)')
+	backgroundw97_101 = xbmc.getInfoLabel('Skin.String(backgroundw97_101)')
+	backgroundw97_102 = xbmc.getInfoLabel('Skin.String(backgroundw97_102)')
+	backgroundw97_103 = xbmc.getInfoLabel('Skin.String(backgroundw97_103)')
+	backgroundw97_104 = xbmc.getInfoLabel('Skin.String(backgroundw97_104)')
+	backgroundw97_105 = xbmc.getInfoLabel('Skin.String(backgroundw97_105)')
+	backgroundw97_106 = xbmc.getInfoLabel('Skin.String(backgroundw97_106)')
+	backgroundw97_107 = xbmc.getInfoLabel('Skin.String(backgroundw97_107)')
+	backgroundw97_108 = xbmc.getInfoLabel('Skin.String(backgroundw97_108)')
+	backgroundw97_109 = xbmc.getInfoLabel('Skin.String(backgroundw97_109)')
+	'''---------------------------'''
+	backgroundw97_T = { 'backgroundw97_100': backgroundw97_100, 'backgroundw97_101': backgroundw97_101, 'backgroundw97_102': backgroundw97_102, 'backgroundw97_103': backgroundw97_103, 'backgroundw97_104': backgroundw97_104, 'backgroundw97_105': backgroundw97_105, 'backgroundw97_106': backgroundw97_106, 'backgroundw97_107': backgroundw97_107, 'backgroundw97_108': backgroundw97_108, 'backgroundw97_109': backgroundw97_109 }
+	backgroundT.update(backgroundw97_T)
+	'''---------------------------'''
+	
+	backgroundw98_100 = xbmc.getInfoLabel('Skin.String(backgroundw98_100)')
+	backgroundw98_101 = xbmc.getInfoLabel('Skin.String(backgroundw98_101)')
+	backgroundw98_102 = xbmc.getInfoLabel('Skin.String(backgroundw98_102)')
+	backgroundw98_103 = xbmc.getInfoLabel('Skin.String(backgroundw98_103)')
+	backgroundw98_104 = xbmc.getInfoLabel('Skin.String(backgroundw98_104)')
+	backgroundw98_105 = xbmc.getInfoLabel('Skin.String(backgroundw98_105)')
+	backgroundw98_106 = xbmc.getInfoLabel('Skin.String(backgroundw98_106)')
+	backgroundw98_107 = xbmc.getInfoLabel('Skin.String(backgroundw98_107)')
+	backgroundw98_108 = xbmc.getInfoLabel('Skin.String(backgroundw98_108)')
+	backgroundw98_109 = xbmc.getInfoLabel('Skin.String(backgroundw98_109)')
+	'''---------------------------'''
+	backgroundw98_T = { 'backgroundw98_100': backgroundw98_100, 'backgroundw98_101': backgroundw98_101, 'backgroundw98_102': backgroundw98_102, 'backgroundw98_103': backgroundw98_103, 'backgroundw98_104': backgroundw98_104, 'backgroundw98_105': backgroundw98_105, 'backgroundw98_106': backgroundw98_106, 'backgroundw98_107': backgroundw98_107, 'backgroundw98_108': backgroundw98_108, 'backgroundw98_109': backgroundw98_109 }
+	backgroundT.update(backgroundw98_T)
+	'''---------------------------'''
+	
+	backgroundw99_100 = xbmc.getInfoLabel('Skin.String(backgroundw99_100)')
+	backgroundw99_101 = xbmc.getInfoLabel('Skin.String(backgroundw99_101)')
+	backgroundw99_102 = xbmc.getInfoLabel('Skin.String(backgroundw99_102)')
+	backgroundw99_103 = xbmc.getInfoLabel('Skin.String(backgroundw99_103)')
+	backgroundw99_104 = xbmc.getInfoLabel('Skin.String(backgroundw99_104)')
+	backgroundw99_105 = xbmc.getInfoLabel('Skin.String(backgroundw99_105)')
+	backgroundw99_106 = xbmc.getInfoLabel('Skin.String(backgroundw99_106)')
+	backgroundw99_107 = xbmc.getInfoLabel('Skin.String(backgroundw99_107)')
+	backgroundw99_108 = xbmc.getInfoLabel('Skin.String(backgroundw99_108)')
+	backgroundw99_109 = xbmc.getInfoLabel('Skin.String(backgroundw99_109)')
+	'''---------------------------'''
+	backgroundw99_T = { 'backgroundw99_100': backgroundw99_100, 'backgroundw99_101': backgroundw99_101, 'backgroundw99_102': backgroundw99_102, 'backgroundw99_103': backgroundw99_103, 'backgroundw99_104': backgroundw99_104, 'backgroundw99_105': backgroundw99_105, 'backgroundw99_106': backgroundw99_106, 'backgroundw99_107': backgroundw99_107, 'backgroundw99_108': backgroundw99_108, 'backgroundw99_109': backgroundw99_109 }
+	backgroundT.update(backgroundw99_T)
+	'''---------------------------'''
+	
+	backgroundw100_100 = xbmc.getInfoLabel('Skin.String(backgroundw100_100)')
+	backgroundw100_101 = xbmc.getInfoLabel('Skin.String(backgroundw100_101)')
+	backgroundw100_102 = xbmc.getInfoLabel('Skin.String(backgroundw100_102)')
+	backgroundw100_103 = xbmc.getInfoLabel('Skin.String(backgroundw100_103)')
+	backgroundw100_104 = xbmc.getInfoLabel('Skin.String(backgroundw100_104)')
+	backgroundw100_105 = xbmc.getInfoLabel('Skin.String(backgroundw100_105)')
+	backgroundw100_106 = xbmc.getInfoLabel('Skin.String(backgroundw100_106)')
+	backgroundw100_107 = xbmc.getInfoLabel('Skin.String(backgroundw100_107)')
+	backgroundw100_108 = xbmc.getInfoLabel('Skin.String(backgroundw100_108)')
+	backgroundw100_109 = xbmc.getInfoLabel('Skin.String(backgroundw100_109)')
+	'''---------------------------'''
+	backgroundw100_T = { 'backgroundw100_100': backgroundw100_100, 'backgroundw100_101': backgroundw100_101, 'backgroundw100_102': backgroundw100_102, 'backgroundw100_103': backgroundw100_103, 'backgroundw100_104': backgroundw100_104, 'backgroundw100_105': backgroundw100_105, 'backgroundw100_106': backgroundw100_106, 'backgroundw100_107': backgroundw100_107, 'backgroundw100_108': backgroundw100_108, 'backgroundw100_109': backgroundw100_109 }
+	backgroundT.update(backgroundw100_T)
+	'''---------------------------'''
+	
+	backgroundw101_100 = xbmc.getInfoLabel('Skin.String(backgroundw101_100)')
+	backgroundw101_101 = xbmc.getInfoLabel('Skin.String(backgroundw101_101)')
+	backgroundw101_102 = xbmc.getInfoLabel('Skin.String(backgroundw101_102)')
+	backgroundw101_103 = xbmc.getInfoLabel('Skin.String(backgroundw101_103)')
+	backgroundw101_104 = xbmc.getInfoLabel('Skin.String(backgroundw101_104)')
+	backgroundw101_105 = xbmc.getInfoLabel('Skin.String(backgroundw101_105)')
+	backgroundw101_106 = xbmc.getInfoLabel('Skin.String(backgroundw101_106)')
+	backgroundw101_107 = xbmc.getInfoLabel('Skin.String(backgroundw101_107)')
+	backgroundw101_108 = xbmc.getInfoLabel('Skin.String(backgroundw101_108)')
+	backgroundw101_109 = xbmc.getInfoLabel('Skin.String(backgroundw101_109)')
+	'''---------------------------'''
+	backgroundw101_T = { 'backgroundw101_100': backgroundw101_100, 'backgroundw101_101': backgroundw101_101, 'backgroundw101_102': backgroundw101_102, 'backgroundw101_103': backgroundw101_103, 'backgroundw101_104': backgroundw101_104, 'backgroundw101_105': backgroundw101_105, 'backgroundw101_106': backgroundw101_106, 'backgroundw101_107': backgroundw101_107, 'backgroundw101_108': backgroundw101_108, 'backgroundw101_109': backgroundw101_109 }
+	backgroundT.update(backgroundw101_T)
+	'''---------------------------'''
+	
+	backgroundw102_100 = xbmc.getInfoLabel('Skin.String(backgroundw102_100)')
+	backgroundw102_101 = xbmc.getInfoLabel('Skin.String(backgroundw102_101)')
+	backgroundw102_102 = xbmc.getInfoLabel('Skin.String(backgroundw102_102)')
+	backgroundw102_103 = xbmc.getInfoLabel('Skin.String(backgroundw102_103)')
+	backgroundw102_104 = xbmc.getInfoLabel('Skin.String(backgroundw102_104)')
+	backgroundw102_105 = xbmc.getInfoLabel('Skin.String(backgroundw102_105)')
+	backgroundw102_106 = xbmc.getInfoLabel('Skin.String(backgroundw102_106)')
+	backgroundw102_107 = xbmc.getInfoLabel('Skin.String(backgroundw102_107)')
+	backgroundw102_108 = xbmc.getInfoLabel('Skin.String(backgroundw102_108)')
+	backgroundw102_109 = xbmc.getInfoLabel('Skin.String(backgroundw102_109)')
+	'''---------------------------'''
+	backgroundw102_T = { 'backgroundw102_100': backgroundw102_100, 'backgroundw102_101': backgroundw102_101, 'backgroundw102_102': backgroundw102_102, 'backgroundw102_103': backgroundw102_103, 'backgroundw102_104': backgroundw102_104, 'backgroundw102_105': backgroundw102_105, 'backgroundw102_106': backgroundw102_106, 'backgroundw102_107': backgroundw102_107, 'backgroundw102_108': backgroundw102_108, 'backgroundw102_109': backgroundw102_109 }
+	backgroundT.update(backgroundw102_T)
+	'''---------------------------'''
+	
+	backgroundw103_100 = xbmc.getInfoLabel('Skin.String(backgroundw103_100)')
+	backgroundw103_101 = xbmc.getInfoLabel('Skin.String(backgroundw103_101)')
+	backgroundw103_102 = xbmc.getInfoLabel('Skin.String(backgroundw103_102)')
+	backgroundw103_103 = xbmc.getInfoLabel('Skin.String(backgroundw103_103)')
+	backgroundw103_104 = xbmc.getInfoLabel('Skin.String(backgroundw103_104)')
+	backgroundw103_105 = xbmc.getInfoLabel('Skin.String(backgroundw103_105)')
+	backgroundw103_106 = xbmc.getInfoLabel('Skin.String(backgroundw103_106)')
+	backgroundw103_107 = xbmc.getInfoLabel('Skin.String(backgroundw103_107)')
+	backgroundw103_108 = xbmc.getInfoLabel('Skin.String(backgroundw103_108)')
+	backgroundw103_109 = xbmc.getInfoLabel('Skin.String(backgroundw103_109)')
+	'''---------------------------'''
+	backgroundw103_T = { 'backgroundw103_100': backgroundw103_100, 'backgroundw103_101': backgroundw103_101, 'backgroundw103_102': backgroundw103_102, 'backgroundw103_103': backgroundw103_103, 'backgroundw103_104': backgroundw103_104, 'backgroundw103_105': backgroundw103_105, 'backgroundw103_106': backgroundw103_106, 'backgroundw103_107': backgroundw103_107, 'backgroundw103_108': backgroundw103_108, 'backgroundw103_109': backgroundw103_109 }
+	backgroundT.update(backgroundw103_T)
+	'''---------------------------'''
+	
+	backgroundw104_100 = xbmc.getInfoLabel('Skin.String(backgroundw104_100)')
+	backgroundw104_101 = xbmc.getInfoLabel('Skin.String(backgroundw104_101)')
+	backgroundw104_102 = xbmc.getInfoLabel('Skin.String(backgroundw104_102)')
+	backgroundw104_103 = xbmc.getInfoLabel('Skin.String(backgroundw104_103)')
+	backgroundw104_104 = xbmc.getInfoLabel('Skin.String(backgroundw104_104)')
+	backgroundw104_105 = xbmc.getInfoLabel('Skin.String(backgroundw104_105)')
+	backgroundw104_106 = xbmc.getInfoLabel('Skin.String(backgroundw104_106)')
+	backgroundw104_107 = xbmc.getInfoLabel('Skin.String(backgroundw104_107)')
+	backgroundw104_108 = xbmc.getInfoLabel('Skin.String(backgroundw104_108)')
+	backgroundw104_109 = xbmc.getInfoLabel('Skin.String(backgroundw104_109)')
+	'''---------------------------'''
+	backgroundw104_T = { 'backgroundw104_100': backgroundw104_100, 'backgroundw104_101': backgroundw104_101, 'backgroundw104_102': backgroundw104_102, 'backgroundw104_103': backgroundw104_103, 'backgroundw104_104': backgroundw104_104, 'backgroundw104_105': backgroundw104_105, 'backgroundw104_106': backgroundw104_106, 'backgroundw104_107': backgroundw104_107, 'backgroundw104_108': backgroundw104_108, 'backgroundw104_109': backgroundw104_109 }
+	backgroundT.update(backgroundw104_T)
+	'''---------------------------'''
+	
+	backgroundw105_100 = xbmc.getInfoLabel('Skin.String(backgroundw105_100)')
+	backgroundw105_101 = xbmc.getInfoLabel('Skin.String(backgroundw105_101)')
+	backgroundw105_102 = xbmc.getInfoLabel('Skin.String(backgroundw105_102)')
+	backgroundw105_103 = xbmc.getInfoLabel('Skin.String(backgroundw105_103)')
+	backgroundw105_104 = xbmc.getInfoLabel('Skin.String(backgroundw105_104)')
+	backgroundw105_105 = xbmc.getInfoLabel('Skin.String(backgroundw105_105)')
+	backgroundw105_106 = xbmc.getInfoLabel('Skin.String(backgroundw105_106)')
+	backgroundw105_107 = xbmc.getInfoLabel('Skin.String(backgroundw105_107)')
+	backgroundw105_108 = xbmc.getInfoLabel('Skin.String(backgroundw105_108)')
+	backgroundw105_109 = xbmc.getInfoLabel('Skin.String(backgroundw105_109)')
+	'''---------------------------'''
+	backgroundw105_T = { 'backgroundw105_100': backgroundw105_100, 'backgroundw105_101': backgroundw105_101, 'backgroundw105_102': backgroundw105_102, 'backgroundw105_103': backgroundw105_103, 'backgroundw105_104': backgroundw105_104, 'backgroundw105_105': backgroundw105_105, 'backgroundw105_106': backgroundw105_106, 'backgroundw105_107': backgroundw105_107, 'backgroundw105_108': backgroundw105_108, 'backgroundw105_109': backgroundw105_109 }
+	backgroundT.update(backgroundw105_T)
+	'''---------------------------'''
+	
+	backgroundw106_100 = xbmc.getInfoLabel('Skin.String(backgroundw106_100)')
+	backgroundw106_101 = xbmc.getInfoLabel('Skin.String(backgroundw106_101)')
+	backgroundw106_102 = xbmc.getInfoLabel('Skin.String(backgroundw106_102)')
+	backgroundw106_103 = xbmc.getInfoLabel('Skin.String(backgroundw106_103)')
+	backgroundw106_104 = xbmc.getInfoLabel('Skin.String(backgroundw106_104)')
+	backgroundw106_105 = xbmc.getInfoLabel('Skin.String(backgroundw106_105)')
+	backgroundw106_106 = xbmc.getInfoLabel('Skin.String(backgroundw106_106)')
+	backgroundw106_107 = xbmc.getInfoLabel('Skin.String(backgroundw106_107)')
+	backgroundw106_108 = xbmc.getInfoLabel('Skin.String(backgroundw106_108)')
+	backgroundw106_109 = xbmc.getInfoLabel('Skin.String(backgroundw106_109)')
+	'''---------------------------'''
+	backgroundw106_T = { 'backgroundw106_100': backgroundw106_100, 'backgroundw106_101': backgroundw106_101, 'backgroundw106_102': backgroundw106_102, 'backgroundw106_103': backgroundw106_103, 'backgroundw106_104': backgroundw106_104, 'backgroundw106_105': backgroundw106_105, 'backgroundw106_106': backgroundw106_106, 'backgroundw106_107': backgroundw106_107, 'backgroundw106_108': backgroundw106_108, 'backgroundw106_109': backgroundw106_109 }
+	backgroundT.update(backgroundw106_T)
+	'''---------------------------'''
+	
+	backgroundw107_100 = xbmc.getInfoLabel('Skin.String(backgroundw107_100)')
+	backgroundw107_101 = xbmc.getInfoLabel('Skin.String(backgroundw107_101)')
+	backgroundw107_102 = xbmc.getInfoLabel('Skin.String(backgroundw107_102)')
+	backgroundw107_103 = xbmc.getInfoLabel('Skin.String(backgroundw107_103)')
+	backgroundw107_104 = xbmc.getInfoLabel('Skin.String(backgroundw107_104)')
+	backgroundw107_105 = xbmc.getInfoLabel('Skin.String(backgroundw107_105)')
+	backgroundw107_106 = xbmc.getInfoLabel('Skin.String(backgroundw107_106)')
+	backgroundw107_107 = xbmc.getInfoLabel('Skin.String(backgroundw107_107)')
+	backgroundw107_108 = xbmc.getInfoLabel('Skin.String(backgroundw107_108)')
+	backgroundw107_109 = xbmc.getInfoLabel('Skin.String(backgroundw107_109)')
+	'''---------------------------'''
+	backgroundw107_T = { 'backgroundw107_100': backgroundw107_100, 'backgroundw107_101': backgroundw107_101, 'backgroundw107_102': backgroundw107_102, 'backgroundw107_103': backgroundw107_103, 'backgroundw107_104': backgroundw107_104, 'backgroundw107_105': backgroundw107_105, 'backgroundw107_106': backgroundw107_106, 'backgroundw107_107': backgroundw107_107, 'backgroundw107_108': backgroundw107_108, 'backgroundw107_109': backgroundw107_109 }
+	backgroundT.update(backgroundw107_T)
+	'''---------------------------'''
+	
+	backgroundw108_100 = xbmc.getInfoLabel('Skin.String(backgroundw108_100)')
+	backgroundw108_101 = xbmc.getInfoLabel('Skin.String(backgroundw108_101)')
+	backgroundw108_102 = xbmc.getInfoLabel('Skin.String(backgroundw108_102)')
+	backgroundw108_103 = xbmc.getInfoLabel('Skin.String(backgroundw108_103)')
+	backgroundw108_104 = xbmc.getInfoLabel('Skin.String(backgroundw108_104)')
+	backgroundw108_105 = xbmc.getInfoLabel('Skin.String(backgroundw108_105)')
+	backgroundw108_106 = xbmc.getInfoLabel('Skin.String(backgroundw108_106)')
+	backgroundw108_107 = xbmc.getInfoLabel('Skin.String(backgroundw108_107)')
+	backgroundw108_108 = xbmc.getInfoLabel('Skin.String(backgroundw108_108)')
+	backgroundw108_109 = xbmc.getInfoLabel('Skin.String(backgroundw108_109)')
+	'''---------------------------'''
+	backgroundw108_T = { 'backgroundw108_100': backgroundw108_100, 'backgroundw108_101': backgroundw108_101, 'backgroundw108_102': backgroundw108_102, 'backgroundw108_103': backgroundw108_103, 'backgroundw108_104': backgroundw108_104, 'backgroundw108_105': backgroundw108_105, 'backgroundw108_106': backgroundw108_106, 'backgroundw108_107': backgroundw108_107, 'backgroundw108_108': backgroundw108_108, 'backgroundw108_109': backgroundw108_109 }
+	backgroundT.update(backgroundw108_T)
+	'''---------------------------'''
+	
+	backgroundw109_100 = xbmc.getInfoLabel('Skin.String(backgroundw109_100)')
+	backgroundw109_101 = xbmc.getInfoLabel('Skin.String(backgroundw109_101)')
+	backgroundw109_102 = xbmc.getInfoLabel('Skin.String(backgroundw109_102)')
+	backgroundw109_103 = xbmc.getInfoLabel('Skin.String(backgroundw109_103)')
+	backgroundw109_104 = xbmc.getInfoLabel('Skin.String(backgroundw109_104)')
+	backgroundw109_105 = xbmc.getInfoLabel('Skin.String(backgroundw109_105)')
+	backgroundw109_106 = xbmc.getInfoLabel('Skin.String(backgroundw109_106)')
+	backgroundw109_107 = xbmc.getInfoLabel('Skin.String(backgroundw109_107)')
+	backgroundw109_108 = xbmc.getInfoLabel('Skin.String(backgroundw109_108)')
+	backgroundw109_109 = xbmc.getInfoLabel('Skin.String(backgroundw109_109)')
+	'''---------------------------'''
+	backgroundw109_T = { 'backgroundw109_100': backgroundw109_100, 'backgroundw109_101': backgroundw109_101, 'backgroundw109_102': backgroundw109_102, 'backgroundw109_103': backgroundw109_103, 'backgroundw109_104': backgroundw109_104, 'backgroundw109_105': backgroundw109_105, 'backgroundw109_106': backgroundw109_106, 'backgroundw109_107': backgroundw109_107, 'backgroundw109_108': backgroundw109_108, 'backgroundw109_109': backgroundw109_109 }
+	backgroundT.update(backgroundw109_T)
+	'''---------------------------'''
+	
+	backgroundw110_100 = xbmc.getInfoLabel('Skin.String(backgroundw110_100)')
+	backgroundw110_101 = xbmc.getInfoLabel('Skin.String(backgroundw110_101)')
+	backgroundw110_102 = xbmc.getInfoLabel('Skin.String(backgroundw110_102)')
+	backgroundw110_103 = xbmc.getInfoLabel('Skin.String(backgroundw110_103)')
+	backgroundw110_104 = xbmc.getInfoLabel('Skin.String(backgroundw110_104)')
+	backgroundw110_105 = xbmc.getInfoLabel('Skin.String(backgroundw110_105)')
+	backgroundw110_106 = xbmc.getInfoLabel('Skin.String(backgroundw110_106)')
+	backgroundw110_107 = xbmc.getInfoLabel('Skin.String(backgroundw110_107)')
+	backgroundw110_108 = xbmc.getInfoLabel('Skin.String(backgroundw110_108)')
+	backgroundw110_109 = xbmc.getInfoLabel('Skin.String(backgroundw110_109)')
+	'''---------------------------'''
+	backgroundw110_T = { 'backgroundw110_100': backgroundw110_100, 'backgroundw110_101': backgroundw110_101, 'backgroundw110_102': backgroundw110_102, 'backgroundw110_103': backgroundw110_103, 'backgroundw110_104': backgroundw110_104, 'backgroundw110_105': backgroundw110_105, 'backgroundw110_106': backgroundw110_106, 'backgroundw110_107': backgroundw110_107, 'backgroundw110_108': backgroundw110_108, 'backgroundw110_109': backgroundw110_109 }
+	backgroundT.update(backgroundw110_T)
+	'''---------------------------'''
+	
+	backgroundw111_100 = xbmc.getInfoLabel('Skin.String(backgroundw111_100)')
+	backgroundw111_101 = xbmc.getInfoLabel('Skin.String(backgroundw111_101)')
+	backgroundw111_102 = xbmc.getInfoLabel('Skin.String(backgroundw111_102)')
+	backgroundw111_103 = xbmc.getInfoLabel('Skin.String(backgroundw111_103)')
+	backgroundw111_104 = xbmc.getInfoLabel('Skin.String(backgroundw111_104)')
+	backgroundw111_105 = xbmc.getInfoLabel('Skin.String(backgroundw111_105)')
+	backgroundw111_106 = xbmc.getInfoLabel('Skin.String(backgroundw111_106)')
+	backgroundw111_107 = xbmc.getInfoLabel('Skin.String(backgroundw111_107)')
+	backgroundw111_108 = xbmc.getInfoLabel('Skin.String(backgroundw111_108)')
+	backgroundw111_109 = xbmc.getInfoLabel('Skin.String(backgroundw111_109)')
+	'''---------------------------'''
+	backgroundw111_T = { 'backgroundw111_100': backgroundw111_100, 'backgroundw111_101': backgroundw111_101, 'backgroundw111_102': backgroundw111_102, 'backgroundw111_103': backgroundw111_103, 'backgroundw111_104': backgroundw111_104, 'backgroundw111_105': backgroundw111_105, 'backgroundw111_106': backgroundw111_106, 'backgroundw111_107': backgroundw111_107, 'backgroundw111_108': backgroundw111_108, 'backgroundw111_109': backgroundw111_109 }
+	backgroundT.update(backgroundw111_T)
+	'''---------------------------'''
+	
+	backgroundw112_100 = xbmc.getInfoLabel('Skin.String(backgroundw112_100)')
+	backgroundw112_101 = xbmc.getInfoLabel('Skin.String(backgroundw112_101)')
+	backgroundw112_102 = xbmc.getInfoLabel('Skin.String(backgroundw112_102)')
+	backgroundw112_103 = xbmc.getInfoLabel('Skin.String(backgroundw112_103)')
+	backgroundw112_104 = xbmc.getInfoLabel('Skin.String(backgroundw112_104)')
+	backgroundw112_105 = xbmc.getInfoLabel('Skin.String(backgroundw112_105)')
+	backgroundw112_106 = xbmc.getInfoLabel('Skin.String(backgroundw112_106)')
+	backgroundw112_107 = xbmc.getInfoLabel('Skin.String(backgroundw112_107)')
+	backgroundw112_108 = xbmc.getInfoLabel('Skin.String(backgroundw112_108)')
+	backgroundw112_109 = xbmc.getInfoLabel('Skin.String(backgroundw112_109)')
+	'''---------------------------'''
+	backgroundw112_T = { 'backgroundw112_100': backgroundw112_100, 'backgroundw112_101': backgroundw112_101, 'backgroundw112_102': backgroundw112_102, 'backgroundw112_103': backgroundw112_103, 'backgroundw112_104': backgroundw112_104, 'backgroundw112_105': backgroundw112_105, 'backgroundw112_106': backgroundw112_106, 'backgroundw112_107': backgroundw112_107, 'backgroundw112_108': backgroundw112_108, 'backgroundw112_109': backgroundw112_109 }
+	backgroundT.update(backgroundw112_T)
+	'''---------------------------'''
+	
+	backgroundw113_100 = xbmc.getInfoLabel('Skin.String(backgroundw113_100)')
+	backgroundw113_101 = xbmc.getInfoLabel('Skin.String(backgroundw113_101)')
+	backgroundw113_102 = xbmc.getInfoLabel('Skin.String(backgroundw113_102)')
+	backgroundw113_103 = xbmc.getInfoLabel('Skin.String(backgroundw113_103)')
+	backgroundw113_104 = xbmc.getInfoLabel('Skin.String(backgroundw113_104)')
+	backgroundw113_105 = xbmc.getInfoLabel('Skin.String(backgroundw113_105)')
+	backgroundw113_106 = xbmc.getInfoLabel('Skin.String(backgroundw113_106)')
+	backgroundw113_107 = xbmc.getInfoLabel('Skin.String(backgroundw113_107)')
+	backgroundw113_108 = xbmc.getInfoLabel('Skin.String(backgroundw113_108)')
+	backgroundw113_109 = xbmc.getInfoLabel('Skin.String(backgroundw113_109)')
+	'''---------------------------'''
+	backgroundw113_T = { 'backgroundw113_100': backgroundw113_100, 'backgroundw113_101': backgroundw113_101, 'backgroundw113_102': backgroundw113_102, 'backgroundw113_103': backgroundw113_103, 'backgroundw113_104': backgroundw113_104, 'backgroundw113_105': backgroundw113_105, 'backgroundw113_106': backgroundw113_106, 'backgroundw113_107': backgroundw113_107, 'backgroundw113_108': backgroundw113_108, 'backgroundw113_109': backgroundw113_109 }
+	backgroundT.update(backgroundw113_T)
+	'''---------------------------'''
+	
+	backgroundw114_100 = xbmc.getInfoLabel('Skin.String(backgroundw114_100)')
+	backgroundw114_101 = xbmc.getInfoLabel('Skin.String(backgroundw114_101)')
+	backgroundw114_102 = xbmc.getInfoLabel('Skin.String(backgroundw114_102)')
+	backgroundw114_103 = xbmc.getInfoLabel('Skin.String(backgroundw114_103)')
+	backgroundw114_104 = xbmc.getInfoLabel('Skin.String(backgroundw114_104)')
+	backgroundw114_105 = xbmc.getInfoLabel('Skin.String(backgroundw114_105)')
+	backgroundw114_106 = xbmc.getInfoLabel('Skin.String(backgroundw114_106)')
+	backgroundw114_107 = xbmc.getInfoLabel('Skin.String(backgroundw114_107)')
+	backgroundw114_108 = xbmc.getInfoLabel('Skin.String(backgroundw114_108)')
+	backgroundw114_109 = xbmc.getInfoLabel('Skin.String(backgroundw114_109)')
+	'''---------------------------'''
+	backgroundw114_T = { 'backgroundw114_100': backgroundw114_100, 'backgroundw114_101': backgroundw114_101, 'backgroundw114_102': backgroundw114_102, 'backgroundw114_103': backgroundw114_103, 'backgroundw114_104': backgroundw114_104, 'backgroundw114_105': backgroundw114_105, 'backgroundw114_106': backgroundw114_106, 'backgroundw114_107': backgroundw114_107, 'backgroundw114_108': backgroundw114_108, 'backgroundw114_109': backgroundw114_109 }
+	backgroundT.update(backgroundw114_T)
+	'''---------------------------'''
+	
+	backgroundw115_100 = xbmc.getInfoLabel('Skin.String(backgroundw115_100)')
+	backgroundw115_101 = xbmc.getInfoLabel('Skin.String(backgroundw115_101)')
+	backgroundw115_102 = xbmc.getInfoLabel('Skin.String(backgroundw115_102)')
+	backgroundw115_103 = xbmc.getInfoLabel('Skin.String(backgroundw115_103)')
+	backgroundw115_104 = xbmc.getInfoLabel('Skin.String(backgroundw115_104)')
+	backgroundw115_105 = xbmc.getInfoLabel('Skin.String(backgroundw115_105)')
+	backgroundw115_106 = xbmc.getInfoLabel('Skin.String(backgroundw115_106)')
+	backgroundw115_107 = xbmc.getInfoLabel('Skin.String(backgroundw115_107)')
+	backgroundw115_108 = xbmc.getInfoLabel('Skin.String(backgroundw115_108)')
+	backgroundw115_109 = xbmc.getInfoLabel('Skin.String(backgroundw115_109)')
+	'''---------------------------'''
+	backgroundw115_T = { 'backgroundw115_100': backgroundw115_100, 'backgroundw115_101': backgroundw115_101, 'backgroundw115_102': backgroundw115_102, 'backgroundw115_103': backgroundw115_103, 'backgroundw115_104': backgroundw115_104, 'backgroundw115_105': backgroundw115_105, 'backgroundw115_106': backgroundw115_106, 'backgroundw115_107': backgroundw115_107, 'backgroundw115_108': backgroundw115_108, 'backgroundw115_109': backgroundw115_109 }
+	backgroundT.update(backgroundw115_T)
+	'''---------------------------'''
+	
+	backgroundw116_100 = xbmc.getInfoLabel('Skin.String(backgroundw116_100)')
+	backgroundw116_101 = xbmc.getInfoLabel('Skin.String(backgroundw116_101)')
+	backgroundw116_102 = xbmc.getInfoLabel('Skin.String(backgroundw116_102)')
+	backgroundw116_103 = xbmc.getInfoLabel('Skin.String(backgroundw116_103)')
+	backgroundw116_104 = xbmc.getInfoLabel('Skin.String(backgroundw116_104)')
+	backgroundw116_105 = xbmc.getInfoLabel('Skin.String(backgroundw116_105)')
+	backgroundw116_106 = xbmc.getInfoLabel('Skin.String(backgroundw116_106)')
+	backgroundw116_107 = xbmc.getInfoLabel('Skin.String(backgroundw116_107)')
+	backgroundw116_108 = xbmc.getInfoLabel('Skin.String(backgroundw116_108)')
+	backgroundw116_109 = xbmc.getInfoLabel('Skin.String(backgroundw116_109)')
+	'''---------------------------'''
+	backgroundw116_T = { 'backgroundw116_100': backgroundw116_100, 'backgroundw116_101': backgroundw116_101, 'backgroundw116_102': backgroundw116_102, 'backgroundw116_103': backgroundw116_103, 'backgroundw116_104': backgroundw116_104, 'backgroundw116_105': backgroundw116_105, 'backgroundw116_106': backgroundw116_106, 'backgroundw116_107': backgroundw116_107, 'backgroundw116_108': backgroundw116_108, 'backgroundw116_109': backgroundw116_109 }
+	backgroundT.update(backgroundw116_T)
+	'''---------------------------'''
+	
+	backgroundw117_100 = xbmc.getInfoLabel('Skin.String(backgroundw117_100)')
+	backgroundw117_101 = xbmc.getInfoLabel('Skin.String(backgroundw117_101)')
+	backgroundw117_102 = xbmc.getInfoLabel('Skin.String(backgroundw117_102)')
+	backgroundw117_103 = xbmc.getInfoLabel('Skin.String(backgroundw117_103)')
+	backgroundw117_104 = xbmc.getInfoLabel('Skin.String(backgroundw117_104)')
+	backgroundw117_105 = xbmc.getInfoLabel('Skin.String(backgroundw117_105)')
+	backgroundw117_106 = xbmc.getInfoLabel('Skin.String(backgroundw117_106)')
+	backgroundw117_107 = xbmc.getInfoLabel('Skin.String(backgroundw117_107)')
+	backgroundw117_108 = xbmc.getInfoLabel('Skin.String(backgroundw117_108)')
+	backgroundw117_109 = xbmc.getInfoLabel('Skin.String(backgroundw117_109)')
+	'''---------------------------'''
+	backgroundw117_T = { 'backgroundw117_100': backgroundw117_100, 'backgroundw117_101': backgroundw117_101, 'backgroundw117_102': backgroundw117_102, 'backgroundw117_103': backgroundw117_103, 'backgroundw117_104': backgroundw117_104, 'backgroundw117_105': backgroundw117_105, 'backgroundw117_106': backgroundw117_106, 'backgroundw117_107': backgroundw117_107, 'backgroundw117_108': backgroundw117_108, 'backgroundw117_109': backgroundw117_109 }
+	backgroundT.update(backgroundw117_T)
+	'''---------------------------'''
+	
+	backgroundw118_100 = xbmc.getInfoLabel('Skin.String(backgroundw118_100)')
+	backgroundw118_101 = xbmc.getInfoLabel('Skin.String(backgroundw118_101)')
+	backgroundw118_102 = xbmc.getInfoLabel('Skin.String(backgroundw118_102)')
+	backgroundw118_103 = xbmc.getInfoLabel('Skin.String(backgroundw118_103)')
+	backgroundw118_104 = xbmc.getInfoLabel('Skin.String(backgroundw118_104)')
+	backgroundw118_105 = xbmc.getInfoLabel('Skin.String(backgroundw118_105)')
+	backgroundw118_106 = xbmc.getInfoLabel('Skin.String(backgroundw118_106)')
+	backgroundw118_107 = xbmc.getInfoLabel('Skin.String(backgroundw118_107)')
+	backgroundw118_108 = xbmc.getInfoLabel('Skin.String(backgroundw118_108)')
+	backgroundw118_109 = xbmc.getInfoLabel('Skin.String(backgroundw118_109)')
+	'''---------------------------'''
+	backgroundw118_T = { 'backgroundw118_100': backgroundw118_100, 'backgroundw118_101': backgroundw118_101, 'backgroundw118_102': backgroundw118_102, 'backgroundw118_103': backgroundw118_103, 'backgroundw118_104': backgroundw118_104, 'backgroundw118_105': backgroundw118_105, 'backgroundw118_106': backgroundw118_106, 'backgroundw118_107': backgroundw118_107, 'backgroundw118_108': backgroundw118_108, 'backgroundw118_109': backgroundw118_109 }
+	backgroundT.update(backgroundw118_T)
+	'''---------------------------'''
+	
+	backgroundw119_100 = xbmc.getInfoLabel('Skin.String(backgroundw119_100)')
+	backgroundw119_101 = xbmc.getInfoLabel('Skin.String(backgroundw119_101)')
+	backgroundw119_102 = xbmc.getInfoLabel('Skin.String(backgroundw119_102)')
+	backgroundw119_103 = xbmc.getInfoLabel('Skin.String(backgroundw119_103)')
+	backgroundw119_104 = xbmc.getInfoLabel('Skin.String(backgroundw119_104)')
+	backgroundw119_105 = xbmc.getInfoLabel('Skin.String(backgroundw119_105)')
+	backgroundw119_106 = xbmc.getInfoLabel('Skin.String(backgroundw119_106)')
+	backgroundw119_107 = xbmc.getInfoLabel('Skin.String(backgroundw119_107)')
+	backgroundw119_108 = xbmc.getInfoLabel('Skin.String(backgroundw119_108)')
+	backgroundw119_109 = xbmc.getInfoLabel('Skin.String(backgroundw119_109)')
+	'''---------------------------'''
+	backgroundw119_T = { 'backgroundw119_100': backgroundw119_100, 'backgroundw119_101': backgroundw119_101, 'backgroundw119_102': backgroundw119_102, 'backgroundw119_103': backgroundw119_103, 'backgroundw119_104': backgroundw119_104, 'backgroundw119_105': backgroundw119_105, 'backgroundw119_106': backgroundw119_106, 'backgroundw119_107': backgroundw119_107, 'backgroundw119_108': backgroundw119_108, 'backgroundw119_109': backgroundw119_109 }
+	backgroundT.update(backgroundw119_T)
+	'''---------------------------'''
 	
 	sub90 = xbmc.getInfoLabel('Skin.HasSetting(sub90)')
 	sub91 = xbmc.getInfoLabel('Skin.HasSetting(sub91)')
@@ -4702,11 +5151,11 @@ if property_widgetbuttonid_ != "" or property_temp != "" or property_temp2 != ""
 	offw_T.update(offw119_T)
 	
 if xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)') or 1 + 1 == 2:
-	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos', 'ButtonsDesign', 'DialogMenu', 'PassProtect', 'StartUpVideo', 'AutoView.movies', 'AutoView.tvshows', 'AutoView.seasons', 'AutoView.episodes', 'AutoView.setmovies', 'AutoView.actors', 'AutoView.genres', 'AutoView.others', 'AutoView.pictures', 'screensavermusic','MultiFanart_fadetime', 'MultiFanart_timeperimage', 'CustomStartupImage'] #NO RANDOM SUPPORT
+	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos', 'ButtonsDesign', 'DialogMenu', 'PassProtect', 'StartUpVideo', 'AutoView.movies', 'AutoView.tvshows', 'AutoView.seasons', 'AutoView.episodes', 'AutoView.setmovies', 'AutoView.actors', 'AutoView.genres', 'AutoView.others', 'AutoView.pictures', 'screensavermusic','MultiFanart_fadetime', 'MultiFanart_timeperimage', 'CustomStartupImage','IntroDelay','widget311','widget311_name','widget312','widget312_name','widget317','widget317_name','CustomStartupImage'] #NO RANDOM SUPPORT
 	list0c = ['MenuColor', 'SubMenuMarkColor', 'TopInformationColor', 'TopVideoInformationColor', 'MainBackgroundColor', 'TopBackgroundColor', 'IconUnFocusColor', 'IconFocusColor', 'ButtonUnFocusColor', 'ButtonFocusColor', 'KeyboardUnFocusColor', 'KeyboardFocusColor', 'keyboardbackgroundcolor', 'KeyboardEditColor', 'SelectedFrameColor', 'SubMenuMarkColor']
 	list0c2 = ['MainBackgroundTexture', 'TopBackgroundTexture'] #NO RANDOM SUPPORT
 	list0o = ['IconOverlayButton', 'MenuButtonsOverlay', 'MenuOverlay', 'DialogBackgroundOverlay', 'KeyboardBackgroundOverlay', 'TopVideoInformationOverlay', 'TopMainBackgroundOverlay', 'TopInformationOverlay', 'MainBackgroundOverlay', 'BackgroundOverlay', 'Background2Overlay']
-	list1 = ['SelectionMarker', 'SelectionMarker2', 'ShadowButton', 'OverlayButton', 'BevelButton', 'StrokeButton', '2DButton2', 'MenuBackground', 'ShadowButton2', 'OverlayButton2', 'BevelButton2', 'StrokeButton2', 'background', 'HideTopMainBackground', 'FixedUnFocusButtonsTransperancy', 'HomeFanartHalfScreen', 'ReshapeIcons', 'SubBackground', 'DefaultActionButtons', 'SubMenuAction', 'Action_Thumbnail', 'MultiFanart', 'BigHomeIcons', 'wbackground90', 'wbackground91', 'wbackground97', 'Genre', 'ShowClock', 'StartUpMusic', 'Touch_Support','MultiFanart_randomize','IntroDelay']
+	list1 = ['SelectionMarker', 'SelectionMarker2', 'ShadowButton', 'OverlayButton', 'BevelButton', 'StrokeButton', '2DButton2', 'MenuBackground', 'ShadowButton2', 'OverlayButton2', 'BevelButton2', 'StrokeButton2', 'background', 'HideTopMainBackground', 'FixedUnFocusButtonsTransperancy', 'HomeFanartHalfScreen', 'ReshapeIcons', 'SubBackground', 'DefaultActionButtons', 'SubMenuAction', 'Action_Thumbnail', 'MultiFanart', 'BigHomeIcons', 'wbackground90', 'wbackground91', 'wbackground96', 'Genre', 'ShowClock', 'StartUpMusic', 'Touch_Support','MultiFanart_randomize','WidgetBackground','ButtonsDesignWidget']
 	
 	'''left menu'''
 	list0l = ['MoviesTVCoversOverlay']

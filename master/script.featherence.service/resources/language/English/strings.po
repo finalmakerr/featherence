@@ -544,8 +544,8 @@ msgid "Widget Button Name"
 msgstr "שם כפתור ו'ידגט"
 
 msgctxt "#32150"
-msgid ""
-msgstr ""
+msgid "Action completed successfully!"
+msgstr "הפעולה הסתיימה בהצלחה!"
 
 msgctxt "#32151"
 msgid ""

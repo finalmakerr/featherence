@@ -420,8 +420,8 @@
   </variable>
   <variable name="VideoInformation4">
 	<value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[33054]</value>
-	<value condition="IntegerGreaterThan(Control.GetLabel(1109),0) + !IsEmpty(Control.GetLabel(1109)) + !SubString(ListItem.path,videodb://movies/sets/) + !IsEmpty(ListItem.Duration)">$VAR[VideoInHours]h</value>
-	<value condition="IntegerGreaterThan(Control.GetLabel(1110),0) + !IsEmpty(Control.GetLabel(1110)) + !SubString(ListItem.path,videodb://movies/sets/) + !IsEmpty(ListItem.Duration)">$VAR[VideoInMins]m</value>
+	<value condition="IntegerGreaterThan(Control.GetLabel(1109),0) + !IsEmpty(Control.GetLabel(1109)) + !SubString(ListItem.path,videodb://movies/sets/) + [!IsEmpty(ListItem.Duration) | !IsEmpty(ListItem.Property(runtime))]">$VAR[VideoInHours]h</value>
+	<value condition="IntegerGreaterThan(Control.GetLabel(1110),0) + !IsEmpty(Control.GetLabel(1110)) + !SubString(ListItem.path,videodb://movies/sets/) + [!IsEmpty(ListItem.Duration) | !IsEmpty(ListItem.Property(runtime))]">$VAR[VideoInMins]m</value>
 	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.Size)">$INFO[ListItem.Size]</value>
   </variable>
   <variable name="VideoInformation5">

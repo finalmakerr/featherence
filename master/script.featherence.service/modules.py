@@ -1536,7 +1536,7 @@ def mode210(value, admin, name, printpoint):
 					x = property_temp2
 					x2 = property_temp
 					y = property_widgetbuttonid_
-					y2 = property_widgetbuttonid
+					y2 = property_widgetbuttonid_
 					'''---------------------------'''
 				elif i == 1:
 					'''property_temp -> property_buttonid'''
@@ -1548,12 +1548,12 @@ def mode210(value, admin, name, printpoint):
 				else: pass	
 				if x != "" and y != "":
 					'''continue'''
-					notification("...", str(labelwT.get('label'+x)) + ' -> ' + str(labelwT.get('label'+y)), "", 1000)
-					setSkinSetting('0','id'+x,str(idT.get('id'+y)))
-					setSkinSetting('0','label'+x,str(labelT.get('label'+y)))
-					setSkinSetting('0','action'+x,str(actionT.get('action'+y)))
-					setSkinSetting('1','off'+x,str(offT.get('off'+y)))
-					setSkinSetting('0','icon'+x,str(iconT.get('icon'+y)))
+					notification("...", str(labelw_T.get('label'+x)) + ' -> ' + str(labelw_T.get('label'+y)), "", 1000)
+					#setSkinSetting('0','id'+x,str(idT.get('id'+y)))
+					setSkinSetting('0','label'+x,str(labelw_T.get('label'+y)))
+					setSkinSetting('0','action'+x,str(actionw_T.get('action'+y)))
+					setSkinSetting('1','off'+x,str(offw_T.get('off'+y)))
+					setSkinSetting('0','icon'+x,str(iconw_T.get('icon'+y)))
 					#setSkinSetting('0','background'+y,str(backgroundT.get('background'+x)))
 					'''---------------------------'''
 				else: notification("Error","","",2000) ; printpoint = printpoint + "8"
@@ -1571,6 +1571,8 @@ def mode210(value, admin, name, printpoint):
 	"property_subbuttonid_" + space2 + str(property_subbuttonid_) + newline + \
 	"property_previoussubbuttonid_" + space2 + str(property_previoussubbuttonid_) + newline + \
 	"property_nextsubbuttonid_" + space2 + str(property_nextsubbuttonid_) + newline + \
+	"property_widgetbuttonid_" + space2 + str(property_widgetbuttonid_) + newline + \
+	"property_widgetbuttonid" + space2 + str(property_widgetbuttonid) + newline + \
 	extra + extra2
 	'''---------------------------'''
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
@@ -1928,6 +1930,91 @@ def mode215(value, value2, name, printpoint):
 	extra2
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
+def mode217(value, value2, name, printpoint):
+	'''------------------------------
+	---setWidgetButton---------------
+	------------------------------'''
+	from variables2 import labelT, idT, idT2
+	extra = "" ; TypeError = "" ; returned = "" ; x = ""
+	widget311 = xbmc.getInfoLabel('Skin.String(Widget311)')
+	widget311_name = xbmc.getInfoLabel('Skin.String(Widget311_name)')
+	if not widget311: widget311 = 90
+	try: widget311 = int(widget311)
+	except: pass
+	if not widget311_name: widget311_name = labelT.get('label90')
+	
+	widget312 = xbmc.getInfoLabel('Skin.String(Widget312)')
+	widget312_name = xbmc.getInfoLabel('Skin.String(Widget312_name)')
+	if not widget312: widget312 = 91
+	try: widget312 = int(widget312)
+	except: pass
+	if not widget312_name: widget312_name = labelT.get('label91')
+	
+	widget317 = xbmc.getInfoLabel('Skin.String(widget317)')
+	widget317_name = xbmc.getInfoLabel('Skin.String(widget317_name)')
+	if not widget317: widget317 = 97
+	try: widget317 = int(widget317)
+	except: pass
+	if not widget317_name: widget317_name = labelT.get('label97')
+	
+	list = ['-> (Exit)',''] #ID
+	list2 = ['-> (Exit)','Reset'] #NAME
+	
+	list.append('None')
+	if value == '1' and widget311_name == 'None': list2.append('[COLOR=yellow]' + 'None' + '[/COLOR]')
+	elif value == '2' and widget312_name == 'None': list2.append('[COLOR=yellow]' + 'None' + '[/COLOR]')
+	elif value == '7' and widget317_name == 'None': list2.append('[COLOR=yellow]' + 'None' + '[/COLOR]')
+	else: list2.append('None')
+	
+	for i in range(90,120):
+		x = idT.get('id'+str(i)) ; x2 = idT2.get('id'+str(x))
+		if x != "" and x != None:
+			x = int(x)
+			if value == '1' and (x == widget312 or x == widget317): continue
+			elif value == '2' and (x == widget311 or x == widget317): continue
+			elif value == '7' and (x == widget311 or x == widget312): continue
+			
+			y = labelT.get('label'+str(i))
+			if y != "" and y != None:
+				list.append(x)
+				if value == '1' and (widget311 == x or widget311_name == y): list2.append('[COLOR=yellow]' + to_utf8(y) + '[/COLOR]')
+				elif value == '2' and (widget312 == x2 or widget312_name == y): list2.append('[COLOR=yellow]' + to_utf8(y) + '[/COLOR]')
+				elif value == '7' and (widget317 == x2 or widget317_name == y): list2.append('[COLOR=yellow]' + to_utf8(y) + '[/COLOR]')
+				else: list2.append(to_utf8(y))
+		
+		
+	returned, dvalue = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list2,0)
+	dvalue2 = list[returned]
+	
+	if returned == -1: printpoint = printpoint + "9"
+	elif returned == 0: printpoint = printpoint + "8"
+	else: printpoint = printpoint + "7"
+	
+	if "7" in printpoint:
+		if value == '1': z = 'Widget311'
+		elif value == '2': z = 'Widget312'
+		elif value == '7': z = 'widget317'
+		else:
+			printpoint = printpoint + '9'
+			notification_common("17")
+		
+		if not '9' in printpoint:
+			setSkinSetting('0', z, str(dvalue2))
+			setSkinSetting('0', z + '_name', str(dvalue))
+			notification_common("13")
+	
+	text = 'value' + space2 + str(to_utf8(value)) + newline + \
+	'value2' + space2 + str(to_utf8(value2)) + newline + \
+	'widget311' + space2 + str(to_utf8(widget311)) + newline + \
+	'widget312' + space2 + str(to_utf8(widget312)) + newline + \
+	'list' + space2 + str(to_utf8(list)) + newline + \
+	'list2' + space2 + str(to_utf8(list2)) + newline + \
+	'returned' + space2 + str(to_utf8(returned)) + newline + \
+	'dvalue' + space2 + str(to_utf8(dvalue)) + newline + \
+	'dvalue2' + space2 + str(to_utf8(dvalue2)) + newline + \
+	'x' + space2 + str(to_utf8(x)) + newline
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	
 def mode218(value, admin, name, printpoint):
 	'''------------------------------
 	---editButtonProprties-----------
@@ -1992,6 +2079,8 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "WidgetButton.ID_" + space2 + property_widgetbuttonid_
 			message = message + newline + "WidgetButton.Name" + space2 + property_widgetbuttonname
 			message = message + newline + '---------------------------'
+			message = message + newline + "widget311" + space2 + xbmc.getInfoLabel('Skin.String(Widget311)')
+			message = message + newline + "widget312" + space2 + xbmc.getInfoLabel('Skin.String(Widget312)')
 			message = message + newline + "ReloadSkin" + space2 + property_reloadskin
 			message = message + newline + '---------------------------'
 			message = message + newline + "1000progress" + space2 + property_1000progress
@@ -2036,7 +2125,7 @@ def mode232(value, admin, name, printpoint):
 	'''------------------------------
 	---ACTION-BUTTON-----------------
 	------------------------------'''
-	id1 = "" ; id2 = "" ; extra = "" ; TypeError = ""
+	id1 = "" ; id2 = "" ; extra = "" ; TypeError = "" ; xicon = ""
 	if printpoint != "": printpoint = printpoint + "_"
 	
 	if not os.path.exists(addons_path + 'script.module.unidecode'):
@@ -2084,32 +2173,43 @@ def mode232(value, admin, name, printpoint):
 				xbmc.sleep(5000)
 				dialogselectW = xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)')
 				dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
-				while (dialogselectW or dialogprogressW) and not xbmc.abortRequested:
+				dialogyesnoW = xbmc.getCondVisibility('Window.IsVisible(DialogYesNo.xml)')
+				dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)')
+				while (dialogselectW or dialogprogressW or dialogyesnoW or dialogokW) and not xbmc.abortRequested:
 					xbmc.sleep(1000)
 					dialogselectW = xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)')
 					dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
+					dialogyesnoW = xbmc.getCondVisibility('Window.IsVisible(DialogYesNo.xml)')
+					dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)')
 					'''---------------------------'''
 				xbmc.sleep(500) ; xlabel = xbmc.getInfoLabel('Skin.String(label'+id1+')')
 				if xlabel == "":
 					setSkinSetting('0','label'+id1,'...')
-					if 'x1' in printpoint and not '_' in id1: setSkinSetting('0','label'+id1,'...')
+					if 'x1' in printpoint and not '_' in id1: setSkinSetting('0','label'+id1,'...', force=True)
 				else:
-					if 'x1' in printpoint and not '_' in id1: setSkinSetting('0','label'+id1,str(xlabel))
+					if 'x1' in printpoint and not '_' in id1: setSkinSetting('0','label'+id1,str(xlabel), force=True)
 				
 				xicon = xbmc.getInfoLabel('Skin.String(icon'+id1+')')
 				x, x_ = TranslatePath(xicon, filename=True, urlcheck_=False)
-				setSkinSetting('0','icon'+id1,x_)
+				if x_ != "": setSkinSetting('0','icon'+id1,x_, force=True)
+				else: setSkinSetting('0','icon'+id1,x, force=True)
 					
 	text = "value" + space2 + str(value) + space + "property_buttonid" + space2 + str(property_buttonid) + newline + \
 	"id1" + space2 + str(id1) + space + "id2" + space2 + str(id2) + newline + \
+	"xicon" + space2 + str(xicon) + newline + \
 	extra
 	'''---------------------------'''
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 			
 def mode233(value, admin, name, printpoint):
+	'''------------------------------
+	---Add-Thumb/Fanart--------------
+	------------------------------'''
 	printpoint = "" ; returned_ = ""
 	x = "" ; path = "" ; x2_ = ""
-	if '3' in value: y = property_widgetbuttonid_
+	if '3' in value:
+		printpoint = printpoint + 'C'
+		y = property_widgetbuttonid_
 	else: y = property_buttonid_
 	customiconspath = to_unicode(xbmc.getInfoLabel('Skin.String(CustomIconsPath)'))
 	custombackgroundspath = to_unicode(xbmc.getInfoLabel('Skin.String(CustomBackgroundsPath)'))
@@ -2124,7 +2224,7 @@ def mode233(value, admin, name, printpoint):
 		'''Add-Fanart'''
 		name = localize(20441)
 		x = 'background'
-		if not '0' in printpoint and not '3' in printpoint: y = property_buttonid
+		if not '0' in value and not '3' in value: y = property_buttonid
 		nolabel=localize(20438)
 		yeslabel=localize(20441)
 	
@@ -2200,6 +2300,8 @@ def mode233(value, admin, name, printpoint):
 	text = 'value' + space2 + to_utf8(value) + space + 'path' + space2 + to_utf8(path) + newline + \
 	'name' + space2 + to_utf8(name) + newline + \
 	'x2_' + space2 + to_utf8(x2_) + newline + \
+	'y' + space2 + to_utf8(y) + newline + \
+	'property_widgetbuttonid_' + space2 + to_utf8(property_widgetbuttonid_) + newline + \
 	'customiconspath' + space2 + to_utf8(customiconspath) + newline + \
 	'custombackgroundspath' + space2 + to_utf8(custombackgroundspath) + newline + \
 	'property_temp2' + space2 + to_utf8(property_temp2)

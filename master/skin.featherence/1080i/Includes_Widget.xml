@@ -5,6 +5,7 @@
     <control type="group" description="">
 		<visible>Container(9000).Row(0) + !Container(9000).Row(1) + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]</visible>
 		<visible>Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | IsEmpty(Container(9000).ListItem(0).Property(pwd)) | [!IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))]</visible>
+		<visible>!Window.IsVisible(Custom1173.xml)</visible>
 		<!--<visible>!Skin.HasSetting(widget) | ![StringCompare(Window(home).Property(Button.ID),90) | StringCompare(Window(home).Property(Button.ID),91)]</visible>-->
 		<control type="group" description="סמן חץ ימינה">
 			<visible>[Control.HasFocus(311) + Container(311).HasNext] | [Control.HasFocus(312) + Container(312).HasNext] | [Control.HasFocus(315) + Container(315).HasNext]</visible>
@@ -187,8 +188,9 @@
 		    <posx>25</posx>
 		    <posy>120</posy>
 		    <texture>misc/help/off.png</texture>
-		    <visible>Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(ListItem.Property(off))</visible>
-			<visible>Control.IsVisible(315)</visible>
+		    <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
+			<visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
+			<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		    <width>332</width>
           </control>
 		  <control type="image" description="דירוג">
@@ -215,14 +217,21 @@
 		    <width>265</width>
 		  </control>
 		  <control type="group" description="עונה ופרק">
-			<animation condition="true" effect="fade" start="100" end="60" time="220" reversible="false">Conditional</animation>
+			<animation condition="Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="60" end="60" time="0">Conditional</animation>
+		    <animation condition="!Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="90" end="90" time="0">Conditional</animation>
 			<posx>50</posx>
 			<posy>360</posy>
 			<control type="image" description="שחור">
 			  <height>30</height>
 			  <width>270</width>
+			  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
+		      <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
+		      <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
+		      <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_black</include>
+		      <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
+		      <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-			  <visible>!Skin.HasSetting(ButtonsDesignWidget)</visible>
+			  <!--<visible>!Skin.HasSetting(ButtonsDesignWidget)</visible>-->
 			</control>
 			<control type="label" description="עונה ופרק">
 			  <align>center</align>
@@ -337,8 +346,9 @@
 			  <posx>25</posx>
 			  <posy>120</posy>
 			  <texture>misc/help/off.png</texture>
-			  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(ListItem.Property(off))</visible>
-			  <visible>Control.IsVisible(315)</visible>
+			  <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
+			  <visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
+			  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 			  <width>332</width>
           </control>
 		  <control type="group" description="קבוצה כותרות">
@@ -421,13 +431,20 @@
 			  <width>170</width>
 			</control>
 			<control type="group" description="עונה ופרק">
+				<animation condition="Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="60" end="60" time="0">Conditional</animation>
+		        <animation condition="!Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="90" end="90" time="0">Conditional</animation>
 				<posx>50</posx>
 				<posy>360</posy>
 				<control type="image" description="שחור">
 				  <height>30</height>
 				  <width>270</width>
+				  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
+				  <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
+				  <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
+				  <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_black</include>
+				  <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
+				  <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 				  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-				  <visible>!Skin.HasSetting(ButtonsDesignWidget)</visible>
 				</control>
 				<control type="label" description="עונה ופרק">
 				  <align>center</align>
@@ -464,218 +481,6 @@
 	</focusedlayout>
   </include>
   
-  <include name="SquareShortcutsCommons" description="מדף 3-5">
-    <include>Fade20</include>
-    <posx>40</posx>
-    <posy>108</posy>
-    <width>1920</width>
-    <height>500</height>
-    <orientation>horizontal</orientation>
-    <scrolltime>400</scrolltime>
-	<animation condition="Player.HasVideo" effect="zoom" end="40,40" center="950,568" time="700" reversible="false">Conditional</animation>
-	<include>4ways2</include>
-    <itemlayout height="368" width="368">
-	  <control type="group">
-		  <animation condition="!Container(313).Scrolling + Skin.HasSetting(background)" effect="fade" start="40" end="40">Conditional</animation>
-		  <animation condition="!Container(313).Scrolling + !Skin.HasSetting(background)" effect="fade" start="40" end="40">Conditional</animation>
-		  <control type="image" description="מסגרת">
-			<posx>50</posx>
-			<posy>80</posy>
-			<width>270</width>
-			<height>270</height>
-			<texture border="30">buttons/ButtonEF.png</texture>
-			<aspectratio>scale</aspectratio>
-		  </control>
-		  <control type="image" description="תמונה לא נבחר">
-			<posx>50</posx>
-			<posy>80</posy>
-			<width>270</width>
-			<height>270</height>
-			<texture fallback="special://home/addons/script.featherence.service/resources/icons/help.png" background="false">$INFO[ListItem.Thumb]</texture>
-			<aspectratio>scale</aspectratio>
-		  </control>
-		  <control type="label" description="שם">
-			  <align>center</align>
-			  <label>$INFO[ListItem.Label]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-			  <font>size28</font>
-			  <height>30</height>
-			  <posx>57</posx>
-			  <posy>377</posy>
-			  <textcolor>white2</textcolor>
-			  <scroll>false</scroll>
-			  <scrollspeed>1</scrollspeed>
-			  <visible>!IsEmpty(ListItem.Label)</visible>
-			  <width>265</width>
-		  </control>
-		  <control type="label">
-			<posx>5</posx>
-			<posy>170</posy>
-			<width>345</width>
-			<height>30</height>
-			<font>size26</font>
-			<textcolor>white2</textcolor>
-			<label>$INFO[ListItem.label2]</label>
-			<align>center</align>
-		  </control>
-		</control>
-    </itemlayout>
-    <focusedlayout height="368" width="368">
-      <control type="group">
-	    <control type="image" description="מסגרת">
-			<posx>50</posx>
-			<posy>80</posy>
-			<width>270</width>
-			<height>270</height>
-			<texture border="30">buttons/ButtonEF.png</texture>
-			<aspectratio>scale</aspectratio>
-		</control>
-        <control type="image" description="תמונה נבחר">
-          <posx>50</posx>
-          <posy>80</posy>
-          <width>270</width>
-          <height>270</height>
-          <texture fallback="special://home/addons/script.featherence.service/resources/icons/help.png" background="false">$INFO[ListItem.Thumb]</texture>
-          <aspectratio>scale</aspectratio>
-        </control>
-		<control type="image" description="סמן בחירה">
-          <posx>50</posx>
-          <posy>80</posy>
-          <width>270</width>
-          <height>270</height>
-          <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		  <visible>Skin.HasSetting(SelectionMarker)</visible>
-        </control>
-		<control type="label" description="שם">
-		  <align>center</align>
-		  <label>$INFO[ListItem.Label]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-		  <font>size28</font>
-		  <height>30</height>
-		  <posx>57</posx>
-		  <posy>377</posy>
-		  <textcolor>white2</textcolor>
-		  <scroll>false</scroll>
-		  <scrollspeed>1</scrollspeed>
-		  <visible>!IsEmpty(ListItem.Label)</visible>
-		  <width>265</width>
-		</control>
-		<control type="label">
-          <posx>5</posx>
-          <posy>170</posy>
-          <width>345</width>
-          <height>30</height>
-		  <include>LabelC12</include>
-          <label>$INFO[ListItem.Label2]</label>
-        </control>
-      </control>
-    </focusedlayout>
-  </include>
-  
-  <include name="SquareShortcutsCommons_" description="מדף 3-5">
-    <include>Fade20</include>
-    <posx>40</posx>
-    <posy>108</posy>
-    <width>1920</width>
-    <height>500</height>
-    <orientation>horizontal</orientation>
-    <scrolltime>400</scrolltime>
-	<animation condition="Player.HasVideo" effect="zoom" end="40,40" center="950,568" time="700" reversible="false">Conditional</animation>
-	<include>4ways2</include>
-    <itemlayout height="368" width="368">
-	  <control type="group">
-		  <animation condition="!Container(313).Scrolling + Skin.HasSetting(background)" effect="fade" start="40" end="40">Conditional</animation>
-		  <animation condition="!Container(313).Scrolling + !Skin.HasSetting(background)" effect="fade" start="40" end="40">Conditional</animation>
-		  <control type="image" description="מסגרת">
-			<posx>50</posx>
-			<posy>80</posy>
-			<width>270</width>
-			<height>270</height>
-			<texture border="30">buttons/ButtonEF.png</texture>
-			<aspectratio>scale</aspectratio>
-		  </control>
-		  <control type="image" description="תמונה לא נבחר">
-			<posx>50</posx>
-			<posy>80</posy>
-			<width>270</width>
-			<height>270</height>
-			<texture fallback="special://home/addons/script.featherence.service/resources/icons/help.png" background="false">$INFO[ListItem.Thumb]</texture>
-			<aspectratio>scale</aspectratio>
-		  </control>
-		  <control type="label" description="שם">
-			  <align>center</align>
-			  <label>$INFO[ListItem.Label]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-			  <font>size28</font>
-			  <height>30</height>
-			  <posx>57</posx>
-			  <posy>377</posy>
-			  <textcolor>white2</textcolor>
-			  <scroll>false</scroll>
-			  <scrollspeed>1</scrollspeed>
-			  <visible>!IsEmpty(ListItem.Label)</visible>
-			  <width>265</width>
-		  </control>
-		  <control type="label">
-			<posx>5</posx>
-			<posy>170</posy>
-			<width>345</width>
-			<height>30</height>
-			<font>size26</font>
-			<textcolor>white2</textcolor>
-			<label>$INFO[ListItem.label2]</label>
-			<align>center</align>
-		  </control>
-		</control>
-    </itemlayout>
-    <focusedlayout height="368" width="368">
-      <control type="group">
-	    <control type="image" description="מסגרת">
-			<posx>50</posx>
-			<posy>80</posy>
-			<width>270</width>
-			<height>270</height>
-			<texture border="30">buttons/ButtonEF.png</texture>
-			<aspectratio>scale</aspectratio>
-		</control>
-        <control type="image" description="תמונה נבחר">
-          <posx>50</posx>
-          <posy>80</posy>
-          <width>270</width>
-          <height>270</height>
-          <texture fallback="special://home/addons/script.featherence.service/resources/icons/help.png" background="false">$INFO[ListItem.Thumb]</texture>
-          <aspectratio>scale</aspectratio>
-        </control>
-		<control type="image" description="סמן בחירה">
-          <posx>50</posx>
-          <posy>80</posy>
-          <width>270</width>
-          <height>270</height>
-          <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		  <visible>Skin.HasSetting(SelectionMarker)</visible>
-        </control>
-		<control type="label" description="שם">
-		  <align>center</align>
-		  <label>$INFO[ListItem.Label]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-		  <font>size28</font>
-		  <height>30</height>
-		  <posx>57</posx>
-		  <posy>377</posy>
-		  <textcolor>white2</textcolor>
-		  <scroll>false</scroll>
-		  <scrollspeed>1</scrollspeed>
-		  <visible>!IsEmpty(ListItem.Label)</visible>
-		  <width>265</width>
-		</control>
-		<control type="label">
-          <posx>5</posx>
-          <posy>170</posy>
-          <width>345</width>
-          <height>30</height>
-		  <include>LabelC12</include>
-          <label>$INFO[ListItem.Label2]</label>
-        </control>
-      </control>
-    </focusedlayout>
-  </include>
-	
   <variable name="WidgetLabel">
     <value condition="!IsEmpty(ListItem.Property(title)) + Control.IsVisible(311)">$INFO[ListItem.Property(title)]</value>
     <value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>

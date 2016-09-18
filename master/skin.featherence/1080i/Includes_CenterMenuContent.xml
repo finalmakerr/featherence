@@ -89,10 +89,10 @@
 		<label>$VAR[label709] - $VAR[Button708]</label>
 		<onclick condition="StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))" description="סרטים">Skin.ToggleSetting(wbackground90)</onclick>
 		<onclick condition="StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))" description="סדרות">Skin.ToggleSetting(wbackground91)</onclick>
-		<onclick condition="StringCompare(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget313))" description="מזג אוויר">Skin.ToggleSetting(wbackground97)</onclick>
+		<onclick condition="StringCompare(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget317))" description="מזג אוויר">Skin.ToggleSetting(wbackground97)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/presentation.png</thumb>
-		<visible>[StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))] | StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312)) | StringCompare(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget313))</visible>
+		<visible>[StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))] | StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312)) | StringCompare(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget317))</visible>
 		<visible>!Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="711" description="תפריט משני">

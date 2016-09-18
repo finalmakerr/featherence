@@ -88,6 +88,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	CATEGORIES101E(General_LanguageL, background, background2) #שירי דיסני
 	CATEGORIES101I(General_LanguageL, background, background2) #אוסף סיפורים
 	CATEGORIES101M(General_LanguageL, background, background2) #חגים
+	CATEGORIES101N(General_LanguageL, background, background2) #יום הולדת
 	
 	
 	'''עכבר העיר ועכבר הכפר'''
@@ -2931,7 +2932,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&youtube_pl=PLI-nQtOHVKRu0erW8Khquk1pRvEHDpR7i') #English
 		list.append('&youtube_pl=PLmC05rj_6ViYvReMLbUEmNgyrKWrmpA4c') #English
 		list.append('&youtube_pl=PL6hnqKp_bygo9OPZYYVy_h2rZ3lBzhNtU')
-	addDir(addonString(10744).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1656.jpg',addonString(107440).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://s2.dmcdn.net/IRKa_/1280x720-nzB.jpg"))
+	addDir(addonString(10744).encode('utf-8'),list,17,'https://goo.gl/images/tPu0qV',addonString(107440).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://s2.dmcdn.net/IRKa_/1280x720-nzB.jpg"))
 	
 	'''מועדון המאפים הטובים'''
 	list = []

@@ -159,12 +159,30 @@ def TranslatePath(x, filename=True, urlcheck_=False, force=False):
 	if 'image://' in x:
 		printpoint = printpoint + '1'
 		returned = x.replace('image://',"",1)
-		returned = returned.replace('%5c',slash)
+		
 		returned = returned.replace('%3a',':')
+		
 		if returned[-1:] == '/': returned = returned.replace(returned[-1:],"",1)
+		if 'https:' in returned or 'http:' in returned:
+			printpoint = printpoint + 'A'
+			returned = returned.replace('%5c','//')
+			returned = returned.replace('%2f','/')
+			if urlcheck_ == True:
+				from shared_modules3 import urlcheck
+				valid = urlcheck(returned, ping=False, timeout=1)
+				if 'ok' in valid:
+					printpoint = printpoint + "4"
+					returned = returned
+				else:
+					printpoint = printpoint + '9'
+					if force == True: returned = ""
+			else: returned = returned
 		
+		else:
+			returned = returned.replace('%5c',slash)
+			returned = returned.replace('%2f',slash)
 		
-	elif 'https://' in x or 'http://' in x or 'http:%2f' in x:
+	elif 'https://' in x or 'http://' in x:
 		printpoint = printpoint + '2'
 		if urlcheck_ == True:
 			from shared_modules3 import urlcheck
@@ -1092,7 +1110,7 @@ def notification_common(custom):
 	elif custom == "6": notification('Invalid Path','...',"",2000)
 	elif custom == "8": notification('$LOCALIZE[16200]',"","",2000) #HAPEULA BUTLA
 	elif custom == "9": notification('$LOCALIZE[16200]',addonString_servicefeatherence(32415).encode('utf-8'),"",2000) #HAPEULA BUTLA, LO BUTZHU SINUHIM
-	elif custom == "13": notification('$LOCALIZE[79072]',"...","",2000) #HAPEULA ISTAIMA BEHATZLAHA!
+	elif custom == "13": notification('$ADDON[script.featherence.service 32150]',"...","",2000) #Action completed successfully!
 	elif custom == "15":
 		playlistlength = xbmc.getInfoLabel('Playlist.Length(video)')
 		playlistposition = xbmc.getInfoLabel('Playlist.Position(video)')

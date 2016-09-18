@@ -697,6 +697,7 @@
 		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
 		<label>$LOCALIZE[31830]</label>
 		<onclick>Action(Down)</onclick>
+		<onclick>Action(Down)</onclick>
 		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
 		<selected>Window.IsVisible(1173)</selected>
 		<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
