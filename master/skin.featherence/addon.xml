@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="skin.featherence" version="0.5.11" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.5.12" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
 	<import addon="script.featherence.service" version="0.2.14"/>
@@ -37,9 +37,11 @@
 - Subtitles: The subtitles window display current and previously choosen subtitles, include a Smart Search button and even auto switch between hosts if required.
   Subtitle OSD show country language flag and can be used to offset subtitle.
 - User customized media: Choose your favourite startup music, video and pictures slideshow music.
+- Password Lock: Lock your prefered buttons with a password.
 - Web browser: Launch your default OS internet browser from within Kodi.
 - Widget: unwatched/recently added movies and inprogress/recently added TV shows (10 etc).
   Additionaly support: Play trailer or up to 20 random trailers, manual/auto refresh, random fanart from widgets..
+- Customized Widget: Create up to 10 widgets for each button.
     </description>
 	<description lang="he">מאפיינים:
 - 4 אפקטי דו-מימד לכפתורים: שפוע, צל, שקופית ומסגור, זמינים בכל חלון במעטפת.
@@ -66,9 +68,11 @@
 - תרגומים: חלון התרגומים מציג תרגום נוכחי והיסטוריית בחירה, מכיל כפתור חיפוש חכם ובנוסף מסוגל להחליף שרת תרגומים באופן אוטומטי ובמקרה הצורך.
   כפתור תרגום (בכפתורי הניגון) מציג שפה לפי דגל מדינה ומאפשר לתזמן תרגום באופן פשוט.
 - מדיה אישית: בחר במוזיקה או/ו וידאו המעודף עליך בעת הפעלת הקודי. בנוסף ניתן לבחור מוזיקה בהפעלת מצגת תמונות.
+- הגנת סיסמא: הגן על כפתורים רצויים באמצעות סיסמא.
 - דפדפן: הפעל את הדפדפן במערכת ההפעלה שלך מתוך הקודי.
 - ו'ידגט (קיר סרטים/סדרות): מכיל סרטים שלא נצפו/נוספו לאחרונה וסדרות בתהליך/נוספו לאחרונה (10 כל אחד).
   בנוסף תומך ב-: ניגון קדימון סרט או עד 20 קדימונים אקראיים מתוך הספרייה שלך, ריענון קיר ידני/אוטומטי, פאנארט אקראי מו'ידגט ועוד..
+- ו'ידגט מותאם אישית: צור עד 10 כפתורי ו'ידגט לכל כפתור.
 	</description>
     <disclaimer></disclaimer>
 	<email>featherence@groups.facebook.com</email>

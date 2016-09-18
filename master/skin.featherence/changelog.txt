@@ -3,11 +3,25 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
-Featherence v0.5.12 (xx-Sep-16)
+Featherence v0.5.12 (18-Sep-16)
 ------------------------
+- Added customized image on startup.
+Can work pretty good with video intro follow up.
+- Added full widget support.
+You may now add widget to any button with full actions support, icons, fanart etc..
+Moving widgets around is very user friendly.
+- Added internal widget support for movies, tvshows and weather.
+You may now decide which button carry those build-in widgets and see which one is with a special mark (When in the skin design window).
+- Added shapes and effects support for widgets.
+- Added widget category in skin design window.
 - Minor bugs fix.
-- Update Music in Slideshow and Screensaver feature.
+- Minor performance boost.
 - Update Featherence Classico auto-update feature.
+- Update Music in Slideshow and Screensaver feature.
+- Update pass protection feature.
+You won't be able to enter any locked button at all without the right password and widgets will remain hidden.
+- Update titles design in DVD Case mode for views: Wall, Poster and Line.
+- Update video intro feature.
 
 ------------------------
 Featherence v0.5.11 (11-Sep-16)
