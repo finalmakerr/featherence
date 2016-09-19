@@ -1108,6 +1108,7 @@ def notification_common(custom):
 	elif custom == "4": notification('$ADDON[script.featherence.service 32401]','',"",2000) #Check network connection!...
 	elif custom == "5": notification('$ADDON[script.featherence.service 32400]','$LOCALIZE[21451]',"",2000) #Check internet connection!...
 	elif custom == "6": notification('Invalid Path','...',"",2000)
+	elif custom == "7": pass
 	elif custom == "8": notification('$LOCALIZE[16200]',"","",2000) #HAPEULA BUTLA
 	elif custom == "9": notification('$LOCALIZE[16200]',addonString_servicefeatherence(32415).encode('utf-8'),"",2000) #HAPEULA BUTLA, LO BUTZHU SINUHIM
 	elif custom == "13": notification('$ADDON[script.featherence.service 32150]',"...","",2000) #Action completed successfully!

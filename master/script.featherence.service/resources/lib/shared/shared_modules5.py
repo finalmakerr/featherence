@@ -166,7 +166,8 @@ def menu_list(custom, menu, addonID, name, url, mode, iconimage, desc, num, view
 	if (mode < 100 or mode > 140) and mode != 3:
 		#notification('Mode',str(mode),"",4000)
 		'''Set View'''
-		menu.append(('Set View', "XBMC.RunPlugin(plugin://%s/?url=%s&mode=50&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart)))
+		pass
+		#menu.append(('Set View', "XBMC.RunPlugin(plugin://%s/?url=%s&mode=50&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart)))
 		
 	return menu
 

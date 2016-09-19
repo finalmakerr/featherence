@@ -56,8 +56,10 @@ def mode5(value, admin, name, printpoint):
 def mode6(value):
 	name = 'mode6 (pwd)' ; printpoint = ""
 	passprotect = xbmc.getInfoLabel('Skin.String(PassProtect)')
+	passprotectduration = xbmc.getInfoLabel('Skin.String(PassProtectDuration)')
 	passprotect_property = xbmc.getInfoLabel('Window(home).Property(PassProtect)')
 	currentpwd = xbmc.getCondVisibility('Skin.HasSetting('+value+')')
+	customhomecustomizerW = xbmc.getCondVisibility('Window.IsVisible(CustomHomeCustomizer.xml)')
 	set1v = ""
 	#label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 	
@@ -71,21 +73,30 @@ def mode6(value):
 			printpoint = printpoint + '3'
 			notification(addonString(32147).encode('utf-8'),"","",4000)
 			setProperty('PassProtect','','home')
-			xbmc.executebuiltin('Dialog.Close(1138)')
-			xbmc.executebuiltin('ReplaceWindow(Home.xml)')
+			if not customhomecustomizerW: xbmc.executebuiltin('ReplaceWindow(Home.xml)')
 		else:
 			printpoint = printpoint + '4'
-			returned, set1v = dialognumeric(0,localize(12326),"",'1','','')
+			returned, set1v = dialognumeric(0,localize(12326),"",'1','','') ; xbmc.sleep(500)
 			if set1v != passprotect:
 				printpoint = printpoint + '5'
 				notification(localize(12342),"","",2000)
 				setProperty('PassProtect','','home')
-				xbmc.executebuiltin('Dialog.Close(1138)')
-				xbmc.executebuiltin('ReplaceWindow(Home.xml)')
+				if not customhomecustomizerW: xbmc.executebuiltin('ReplaceWindow(Home.xml)')
 			else:
+				try:
+					passprotectduration = int(passprotectduration)
+					passprotectduration = str(passprotectduration)
+				except:
+					passprotectduration = '15'
 				printpoint = printpoint + '6'
-				xbmc.executebuiltin('AlarmClock(PassProtect,ClearProperty(home,PassProtect),15,silent)')
+				if passprotectduration != '0':
+					printpoint = printpoint + 'B'
+					xbmc.executebuiltin('AlarmClock(PassProtect,ClearProperty(PassProtect,home),'+passprotectduration+',silent)')
 				setProperty('PassProtect','true', 'home')
+				if value == 'PassProtect':
+					printpoint = printpoint + 'A'
+					xbmc.sleep(500)
+					xbmc.executebuiltin('ActivateWindow(1173)')
 	else:
 		printpoint = printpoint + '9'
 	
@@ -1790,7 +1801,7 @@ def mode215(value, value2, name, printpoint):
 	extra2 = "" ; id = ""
 	exe = printlog(title="test", printpoint="", text="", level=0, option="")
 	
-	if value != "": notification_common("2")
+	if value != "" and value != '_': notification_common("2")
 	
 	'''הגדרות'''
 	x = '18' ; id = x
