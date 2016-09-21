@@ -658,13 +658,12 @@ elif mode >= 200 and mode <= 249:
 				
 				if "V" in printpoint:
 					xbmc.sleep(500)
-					xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_)')
 					xbmc.executebuiltin('Action(Back)')
-					xbmc.sleep(500)
 					returned_ = dialogyesno(addonString_servicefeatherence(32104).encode('utf-8') % (systemlanguage), addonString_servicefeatherence(32105).encode('utf-8') % (systemlanguage))
 					if returned_ == 'skip':
 						xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_&value2=RESET-LABEL)')
-						
+					else: xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_)')
+					xbmc.sleep(500)
 					folder_ = 'Featherence'
 					path_ = os.path.join(featherenceserviceaddondata_media_path, folder_, '')
 					if os.path.exists(path_):
