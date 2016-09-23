@@ -254,8 +254,8 @@ msgid "Widget"
 msgstr "ו'ידגט"
 
 msgctxt "#31079"
-msgid ""
-msgstr ""
+msgid "Pass-Lock"
+msgstr "נעילת סיסמא"
 
 msgctxt "#31080"
 msgid ""
@@ -278,12 +278,12 @@ msgid "Touch Screen support"
 msgstr "תמיכה במסך מגע"
 
 msgctxt "#31085"
-msgid ""
-msgstr ""
+msgid "Always show video/audio settings in the Video OSD buttons"
+msgstr "הצג תמיד כפתור הגדרות וידאו/אודיו במצב ניגון"
 
 msgctxt "#31086"
-msgid ""
-msgstr ""
+msgid "Choose YES in order to always show video and audio settings in the OSD buttons.[CR]If you choose NO you can still show them by standing on the STOP button and press up."
+msgstr "בחר "כן" בכדי להציג תמיד כפתורי הגדרות וידאו ואודיו בכפתורי ה-OSD (בזמן ניגון).[CR]אם בחרת לא, תוכל עדיין לראות אותם כשתעמוד על כפתור העצירה ולחיצה למעלה."
 
 msgctxt "#31087"
 msgid ""
@@ -346,40 +346,40 @@ msgid "Choose this option in order to customize fanart for each widget button."
 msgstr "בחר באפשרות זו בכדי לאפשר בחירה והצגת רקעים אישיים לכל כפתור ו'ידגט."
 
 msgctxt "#31102"
-msgid ""
-msgstr ""
+msgid "Lock skin design window"
+msgstr "נעל חלון עיצוב מעטפת"
 
 msgctxt "#31103"
-msgid ""
-msgstr ""
+msgid "Choose YES in order to password lock the skin design window.[CR]If you ever forget your password, you should contact us in the Facebook group."
+msgstr "בחר כן בכדי לנעול בסיסמא את חלון עיצוב המעטפת.[CR]במידה ושכחת את הסיסמא, ניתן לקבל עזרה בקבוצת הפייסבוק."
 
 msgctxt "#31104"
-msgid ""
-msgstr ""
+msgid "Reschedule lock up"
+msgstr "תזמון נעילה מחדש"
 
 msgctxt "#31105"
-msgid ""
-msgstr ""
+msgid "Choose "0" For disable this feature.[CR]Choose higher number in order to relock your buttons after x minutes."
+msgstr "בחר "0" בכדי להשבית את האפשרות הזו.[CR]בחר מספר גדול מ-0 בכדי לנעול את הכפתורים מחדש לאחר x דקות."
 
 msgctxt "#31106"
-msgid ""
-msgstr ""
+msgid "Choose a password for locking your prefered buttons and windows."
+msgstr "בחר סיסמא שתשמש בעת נעילת כפתורים או/ו חלונות לפי העדפתך."
 
 msgctxt "#31107"
-msgid ""
-msgstr ""
+msgid "RSS delay time"
+msgstr "זמן השהיית RSS"
 
 msgctxt "#31108"
-msgid ""
-msgstr ""
+msgid "Choose how long should you be afk before RSS appear.[CR]Timing is in seconds. Choose 0 to always have RSS.[CR]Note: RSS take over some others valueable information such as focused button names, currently played video, songs etc.."
+msgstr "בחר משך זמן לדחיית הצגת RSS.[CR]התזמון הוא בזניות. בחר "0" בכדי לכפות תמיד תצוגת RSS.[CR]שים לב: RSS בא על חשבון מידע חיוני אחר כגון: שם הכפתור הנבחר, מידע על וידאו או אודיו ברקע וכו'.."
 
 msgctxt "#31109"
-msgid ""
-msgstr ""
+msgid "Button label position"
+msgstr "מיקום כותרת כפתור"
 
 msgctxt "#31110"
-msgid ""
-msgstr ""
+msgid "Toggle button labels inside or outside the button."
+msgstr "שנה את מיקום כותרת הכפתור בפנים או מחוץ לכפתור."
 
 msgctxt "#31111"
 msgid ""
@@ -532,6 +532,306 @@ msgstr "בחר קובץ וידאו אשר יתנגן עם פתיחת המכשי�
 msgctxt "#31423"
 msgid "Play video in a full screen."
 msgstr "נגן וידאו במסך מלא."
+
+msgctxt "#31424"
+msgid "RSS Visiblity"
+msgstr "ראות RSS"
+
+msgctxt "#31425"
+msgid "Choose if you want to have RSS across the entire skin or only at home screen."
+msgstr "בחר האם להציג RSS רק במסך הבית או גם בכל חלון אחר בסקין."
+
+msgctxt "#31426"
+msgid "Mini settings and power buttons"
+msgstr "כפתורי הגדרות וכיבוי מוקטנים"
+
+msgctxt "#31427"
+msgid "Show skin version"
+msgstr "הצג גרסת מעטפת"
+
+msgctxt "#31428"
+msgid "Choose YES in order to display the skin version in home window."
+msgstr "בחר "כן" בכדי להציג את גרסת המעטפת בחלון הבית."
+
+msgctxt "#31430"
+msgid "Rating method"
+msgstr "שיטת דירוג"
+
+msgctxt "#31431"
+msgid "Top Bar design"
+msgstr "עיצוב פס עליון"
+
+msgctxt "#31432"
+msgid "Choose this option in order to change the look of the Top bar."
+msgstr "בחר באפשרות זו בכדי לשנות את מראה הפס העליון."
+
+msgctxt "#31433"
+msgid "Top Bar size"
+msgstr "גודל פס עליון"
+
+msgctxt "#31434"
+msgid "Mouse icon"
+msgstr "סמן עכבר"
+
+msgctxt "#31435"
+msgid "Mouse color"
+msgstr "צבע סמן עכבר"
+
+msgctxt "#31436"
+msgid "Mouse"
+msgstr "עכבר"
+
+msgctxt "#31437"
+msgid "RSS in video/audio playback"
+msgstr "RSS בניגון וידאו/אודיו"
+
+msgctxt "#31438"
+msgid "Choose YES in order to allow RSS in video/audio playback.[CR]Note: RSS will come in place of currently playing information."
+msgstr "בחר "כן" בכדי לאפשר תצוגת RSS בזמן ניגון וידאו/אודיו.[CR]Note: RSS will come in place of currently playing information."
+
+msgctxt "#31439"
+msgid ""
+msgstr ""
+
+msgctxt "#31440"
+msgid ""
+msgstr ""
+
+msgctxt "#31441"
+msgid ""
+msgstr ""
+
+msgctxt "#31442"
+msgid ""
+msgstr ""
+
+msgctxt "#31443"
+msgid ""
+msgstr ""
+
+msgctxt "#31444"
+msgid ""
+msgstr ""
+
+msgctxt "#31445"
+msgid ""
+msgstr ""
+
+msgctxt "#31446"
+msgid ""
+msgstr ""
+
+msgctxt "#31447"
+msgid ""
+msgstr ""
+
+msgctxt "#31448"
+msgid ""
+msgstr ""
+
+msgctxt "#31449"
+msgid ""
+msgstr ""
+
+msgctxt "#31450"
+msgid ""
+msgstr ""
+
+msgctxt "#31451"
+msgid ""
+msgstr ""
+
+msgctxt "#31452"
+msgid ""
+msgstr ""
+
+msgctxt "#31453"
+msgid ""
+msgstr ""
+
+msgctxt "#31454"
+msgid ""
+msgstr ""
+
+msgctxt "#31455"
+msgid ""
+msgstr ""
+
+msgctxt "#31456"
+msgid ""
+msgstr ""
+
+msgctxt "#31457"
+msgid ""
+msgstr ""
+
+msgctxt "#31458"
+msgid ""
+msgstr ""
+
+msgctxt "#31459"
+msgid ""
+msgstr ""
+
+msgctxt "#31460"
+msgid ""
+msgstr ""
+
+msgctxt "#31461"
+msgid ""
+msgstr ""
+
+msgctxt "#31462"
+msgid ""
+msgstr ""
+
+msgctxt "#31463"
+msgid ""
+msgstr ""
+
+msgctxt "#31464"
+msgid ""
+msgstr ""
+
+msgctxt "#31465"
+msgid ""
+msgstr ""
+
+msgctxt "#31466"
+msgid ""
+msgstr ""
+
+msgctxt "#31467"
+msgid ""
+msgstr ""
+
+msgctxt "#31468"
+msgid ""
+msgstr ""
+
+msgctxt "#31469"
+msgid ""
+msgstr ""
+
+msgctxt "#31470"
+msgid ""
+msgstr ""
+
+msgctxt "#31471"
+msgid ""
+msgstr ""
+
+msgctxt "#31472"
+msgid ""
+msgstr ""
+
+msgctxt "#31473"
+msgid ""
+msgstr ""
+
+msgctxt "#31474"
+msgid ""
+msgstr ""
+
+msgctxt "#31475"
+msgid ""
+msgstr ""
+
+msgctxt "#31476"
+msgid ""
+msgstr ""
+
+msgctxt "#31477"
+msgid ""
+msgstr ""
+
+msgctxt "#31478"
+msgid ""
+msgstr ""
+
+msgctxt "#31479"
+msgid ""
+msgstr ""
+
+msgctxt "#31480"
+msgid ""
+msgstr ""
+
+msgctxt "#31481"
+msgid ""
+msgstr ""
+
+msgctxt "#31482"
+msgid ""
+msgstr ""
+
+msgctxt "#31483"
+msgid ""
+msgstr ""
+
+msgctxt "#31484"
+msgid ""
+msgstr ""
+
+msgctxt "#31485"
+msgid ""
+msgstr ""
+
+msgctxt "#31486"
+msgid ""
+msgstr ""
+
+msgctxt "#31487"
+msgid ""
+msgstr ""
+
+msgctxt "#31488"
+msgid ""
+msgstr ""
+
+msgctxt "#31489"
+msgid ""
+msgstr ""
+
+msgctxt "#31490"
+msgid ""
+msgstr ""
+
+msgctxt "#31491"
+msgid ""
+msgstr ""
+
+msgctxt "#31492"
+msgid ""
+msgstr ""
+
+msgctxt "#31493"
+msgid ""
+msgstr ""
+
+msgctxt "#31494"
+msgid ""
+msgstr ""
+
+msgctxt "#31495"
+msgid ""
+msgstr ""
+
+msgctxt "#31496"
+msgid ""
+msgstr ""
+
+msgctxt "#31497"
+msgid ""
+msgstr ""
+
+msgctxt "#31498"
+msgid ""
+msgstr ""
+
+msgctxt "#31499"
+msgid ""
+msgstr ""
 
 msgctxt "#31600"
 msgid "Action"

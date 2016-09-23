@@ -10,7 +10,7 @@
    </include>
    
    <include name="Slide1.5" description="Backgrounds-Home">
-     <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]" effect="slide" start="0,0" end="0,-552" time="220" reversible="false">Conditional</animation>
+     <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]" effect="slide" start="0,0" end="0,-552" time="220" reversible="false">Conditional</animation>
    </include>
 
    <include name="Slide2" description="(Zoom-Backgrounds)">
@@ -205,41 +205,41 @@
    </include>
    
    <include name="Fade_MainBackgroundOverlay">
-     <animation condition="!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]" effect="fade" start="100" end="20" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] + !Skin.String(MainBackgroundOverlay)" effect="fade" start="100" end="90" time="0">Conditional</animation>
+     <animation condition="!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]" effect="fade" start="20" end="20" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] + !Skin.String(MainBackgroundOverlay)" effect="fade" start="90" end="90" time="0">Conditional</animation>
 	 
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,10)" effect="fade" start="100" end="10" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,20)" effect="fade" start="100" end="20" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,30)" effect="fade" start="100" end="30" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,40)" effect="fade" start="100" end="40" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,50)" effect="fade" start="100" end="50" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,60)" effect="fade" start="100" end="60" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,65)" effect="fade" start="100" end="65" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,70)" effect="fade" start="100" end="70" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,80)" effect="fade" start="100" end="80" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,85)" effect="fade" start="100" end="85" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,90)" effect="fade" start="100" end="90" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,95)" effect="fade" start="100" end="95" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(MainBackgroundOverlay,100)" effect="fade" start="100" end="100" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,10)" effect="fade" start="10" end="10" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,20)" effect="fade" start="20" end="20" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,30)" effect="fade" start="30" end="30" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,40)" effect="fade" start="40" end="40" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,50)" effect="fade" start="50" end="50" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,60)" effect="fade" start="60" end="60" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,65)" effect="fade" start="65" end="65" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,70)" effect="fade" start="70" end="70" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,80)" effect="fade" start="80" end="80" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,85)" effect="fade" start="85" end="85" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,90)" effect="fade" start="90" end="90" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,95)" effect="fade" start="95" end="95" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(MainBackgroundOverlay,100)" effect="fade" start="100" end="100" time="0">Conditional</animation>
    </include>
    
    <include name="Fade_TopMainBackgroundOverlay">
-     <animation condition="!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]" effect="fade" start="100" end="20" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] + !Skin.String(TopBackgroundOverlay)" effect="fade" start="100" end="90" time="0">Conditional</animation>
+     <animation condition="!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]" effect="fade" start="20" end="20" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] + !Skin.String(TopMainBackgroundOverlay)" effect="fade" start="90" end="90" time="0">Conditional</animation>
 	 
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,10)" effect="fade" start="100" end="10" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,20)" effect="fade" start="100" end="20" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,30)" effect="fade" start="100" end="30" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,40)" effect="fade" start="100" end="40" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,50)" effect="fade" start="100" end="50" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,60)" effect="fade" start="100" end="60" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,65)" effect="fade" start="100" end="65" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,70)" effect="fade" start="100" end="70" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,80)" effect="fade" start="100" end="80" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,85)" effect="fade" start="100" end="85" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,90)" effect="fade" start="100" end="90" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,95)" effect="fade" start="100" end="95" time="0">Conditional</animation>
-	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer22.xml)]] +Skin.String(TopBackgroundOverlay,100)" effect="fade" start="100" end="100" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,10)" effect="fade" start="10" end="10" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,20)" effect="fade" start="20" end="20" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,30)" effect="fade" start="30" end="30" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,40)" effect="fade" start="40" end="40" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,50)" effect="fade" start="50" end="50" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,60)" effect="fade" start="60" end="60" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,65)" effect="fade" start="65" end="65" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,70)" effect="fade" start="70" end="70" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,80)" effect="fade" start="80" end="80" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,85)" effect="fade" start="85" end="85" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,90)" effect="fade" start="90" end="90" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,95)" effect="fade" start="95" end="95" time="0">Conditional</animation>
+	 <animation condition="![!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]] +Skin.String(TopMainBackgroundOverlay,100)" effect="fade" start="100" end="100" time="0">Conditional</animation>
    </include>
    
    <include name="Fade_TopInformationOverlay">
@@ -424,36 +424,38 @@
    </include>
    
    <include name="Slide_MenuDesign_Home_Labels" description="אופקי ופנל">
-     <animation description="עיגולים" condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="0,-23" time="0">Conditional</animation>
-	 <animation description="משולשים" condition="Skin.String(ButtonsDesign,2) + false" effect="slide" start="0,0" end="0,0" time="0">Conditional</animation>
-	 <animation description="משושים" condition="Skin.String(ButtonsDesign,4) + false" effect="slide" start="0,0" end="0,0" time="0">Conditional</animation>
+     <animation description="עיגולים" condition="!Skin.HasSetting(ButtonLabelPosition) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="0,-23" time="0">Conditional</animation>
+	 <animation description="משולשים" condition="!Skin.HasSetting(ButtonLabelPosition) + Skin.String(ButtonsDesign,2) + false" effect="slide" start="0,0" end="0,0" time="0">Conditional</animation>
+	 <animation description="משושים" condition="!Skin.HasSetting(ButtonLabelPosition) + Skin.String(ButtonsDesign,4) + false" effect="slide" start="0,0" end="0,0" time="0">Conditional</animation>
+	 
+	 <animation description="מיקום כותרת כפתור" condition="Skin.HasSetting(ButtonLabelPosition)" effect="slide" start="0,0" end="0,40" time="0" reversible="true">Conditional</animation>
    </include>
    
    <include name="Slide_MenuDesign2_Home_Icons" description="מאונך לא נבחר">
-     <animation description="עיגולים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="-68,8" time="0">Conditional</animation>
-	 <animation description="עיגולים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="68,8" time="0">Conditional</animation>
+     <animation description="עיגולים" condition="!Skin.HasSetting(BigHomeIcons) + StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="-68,0" time="0">Conditional</animation>
+	 <animation description="עיגולים" condition="!Skin.HasSetting(BigHomeIcons) + !StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="68,0" time="0">Conditional</animation>
 	  
-	 <animation description="משולשים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="0,-28" time="0">Conditional</animation>
-	 <animation description="משולשים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="0,-28" time="0">Conditional</animation>
-	 <animation description="משושים" condition="Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="0,8" time="0">Conditional</animation>
+	 <animation description="משולשים" condition="!Skin.HasSetting(BigHomeIcons) + StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="0,-28" time="0">Conditional</animation>
+	 <animation description="משולשים" condition="!Skin.HasSetting(BigHomeIcons) + !StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="0,-28" time="0">Conditional</animation>
+	 <!--<animation description="משושים" condition="Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="0,8" time="0">Conditional</animation>-->
    </include>
    
    <include name="Slide_MenuDesign2_Home_Icons2" description="מאונך נבחר">
-     <animation description="עיגולים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="-5,0" time="0">Conditional</animation>
-	 <animation description="עיגולים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="5,0" time="0">Conditional</animation>
+     <animation description="עיגולים" condition="!Skin.HasSetting(BigHomeIcons) + StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="-5,0" time="0">Conditional</animation>
+	 <animation description="עיגולים" condition="!Skin.HasSetting(BigHomeIcons) + !StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="5,0" time="0">Conditional</animation>
 	  
-	 <animation description="משולשים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="-10,0" time="0">Conditional</animation>
-	 <animation description="משולשים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="10,0" time="0">Conditional</animation>
-	 <animation description="משושים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="-10,0" time="0">Conditional</animation>
-	 <animation description="משושים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="10,0" time="0">Conditional</animation>
+	 <animation description="משולשים" condition="!Skin.HasSetting(BigHomeIcons) + StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="-10,0" time="0">Conditional</animation>
+	 <animation description="משולשים" condition="!Skin.HasSetting(BigHomeIcons) + !StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="10,0" time="0">Conditional</animation>
+	 <!--<animation description="משושים" condition="StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="-10,0" time="0">Conditional</animation>
+	 <animation description="משושים" condition="!StringCompare(System.Language,Hebrew) + Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="10,0" time="0">Conditional</animation>-->
 	  
 	 <animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
    </include>
    
    <include name="Slide_MenuDesign2_Home_Labels" description="מאונך לא נבחר">
-     <animation description="עיגולים" condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="0,17" time="0">Conditional</animation>
+     <!--<animation description="עיגולים" condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="0,17" time="0">Conditional</animation>-->
 	 <animation description="משולשים" condition="Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="0,55" time="0">Conditional</animation>
-	 <animation description="משושים" condition="Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="0,15" time="0">Conditional</animation>
+	 <!--<animation description="משושים" condition="Skin.String(ButtonsDesign,4)" effect="slide" start="0,0" end="0,15" time="0">Conditional</animation>-->
    </include>
    
    <include name="Slide_MenuDesign2_Home_Labels2" description="מאונך נבחר">
@@ -467,4 +469,29 @@
 	 
 	 <animation description="VerticalMenu" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
    </include>
+   
+   <include name="TopInformationSize0">
+     <animation condition="Skin.HasSetting(TopInformationSize)" effect="slide" start="0,0" end="0,7" time="0" reversible="true">Conditional</animation>
+   </include>
+   
+   <include name="TopInformationSize1">
+     <animation condition="Skin.HasSetting(TopInformationSize)" effect="zoom" center="0,700" start="100,99.5" end="100,99.5" time="0" reversible="false">Conditional</animation>
+   </include>
+   
+   <include name="TopInformationSize2">
+     <animation condition="Skin.HasSetting(TopInformationSize) + [ [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyPVRChannels.xml)] + ![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] ]" effect="zoom" center="0,-320" start="100,98" end="100,98" time="0" reversible="false">Conditional</animation>
+     <animation condition="Skin.HasSetting(TopInformationSize) + [ Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml) ]" effect="zoom" center="0,-320" start="100,98" end="100,98" time="0" reversible="false">Conditional</animation>
+   </include>
+   
+   <include name="TopInformationSize3" description="פאנארט-בית">
+     <animation description="Slide-Panel" condition="Skin.HasSetting(TopInformationSize) + [[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | [[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() + Player.HasVideo]]]" effect="slide" start="0,0" end="0,10" time="0" reversible="false">Conditional</animation>
+   </include>
+   
+   <include name="TopInformationSize4" description="רקע תחתון צבע">
+     <animation condition="Skin.HasSetting(TopInformationSize) + !Skin.String(MenuDesign,4)" effect="slide" start="0,0" end="0,7" time="0" reversible="true">Conditional</animation>
+   </include>
+   <include name="TopInformationSize7" description="פרטי וידאו">
+     <animation condition="Skin.HasSetting(TopInformationSize) + [Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(Custom1173.xml) | [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyPVRChannels.xml)] + ![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)]]" effect="zoom" center="0,-550" start="100,93" end="100,93" time="0" reversible="false">Conditional</animation>
+   </include>
+   
 </includes>

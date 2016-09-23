@@ -318,6 +318,33 @@
 	  <visible>!Skin.HasSetting(View50_Plus)</visible>
 	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
 	</control>
+	<control type="image" description="דירוג">
+	  
+	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos38</include>
+	  <posx>360</posx>
+	  <posy>23</posy>
+	  <width>72</width>
+	  <height>55</height>
+	  <include condition="StringCompare(System.Language,Hebrew)">ImageR2</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ImageL2</include>
+	  <texture border="1" background="true" colordiffuse="$VAR[MenuColor]">special://home/addons/script.featherence.service/resources/icons/star.png</texture>
+	  <visible>!Skin.HasSetting(Show_Rating) + !IsEmpty(ListItem.Rating)</visible>
+	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
+	</control>
+	<control type="label" description="דירוג">
+	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos37</include>
+	  <posx>385</posx>
+	  <posy>40</posy>
+	  <width>50</width>
+	  <height>30</height>
+	  <textcolor>grey2</textcolor>
+	  <include condition="StringCompare(System.Language,Hebrew)">LabelR7</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">LabelL7</include>
+	  <label>$INFO[ListItem.Rating]</label>
+	  <visible>!Skin.HasSetting(Show_Rating) + !IsEmpty(ListItem.Rating)</visible>
+	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
+	</control>
+	
 	<include>PVRprogress</include>
   </include>
   

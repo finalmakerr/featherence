@@ -5,7 +5,7 @@
       <description></description>
       <width>40</width>
       <height>40</height>
-      <texture>pointer/1.png</texture>
+      <texture colordiffuse="$VAR[MouseColor]">$VAR[MouseIcon_]</texture>
     </control>
   </controls>
 </window>

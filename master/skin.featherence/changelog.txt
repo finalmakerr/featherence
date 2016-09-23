@@ -1,6 +1,51 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
+4. כאשר משנים פעולת אריח, הוא מצמיד אייקון אחר ושם אחר במקום מה שבחרנו.
+6. במעבר בין מסכים במכשיר איטי יש מסך שחור במשך כמה שניות, אם ניתן לעשות מסך מעבר יותר נעים לעין.
+7 כאשר מתחברים לחשבון טראקט ונכנסים לרשימת ההתקדמות, אין ברשימה עצמה את שם הסדרה ושם הפרק.
+9. בווידגטים המסגרת של הכיתוב בורחת מהצדדים
+10. הסתרת סריקות ועדכונים בזמן ניגון סרט
+11. בבחירת פעולת כפתור כאשר נכנסים להרחבה לא כל התפריטים מופיעים בתוך ההרחבה
+12. במערכות אופן אלק ואנדרואיד נתקלתי במצב ניגון וידאו כאשר אני משהה את הסרט והתפריט עולה למעלה, הוא לא יורד בתזוזת עכבר או לחיצה בשלט.
+13. באופן אלק, כאשר עולה וידאו פתיחה, נעצר לבד כנראה בעקבות עליית הרחבה אחרת והמסך פשוט תקע. (לא קריטי - מצריך אותי להשתמש בתמונה במקום וידאו פתיחה)
+- Font Colouring option.
+- Added option to change the font size.
+*Change widget design
+
+------------------------
+Featherence v0.6.0 (23-Sep-16)
+------------------------
+- Added IMDB rating to Side List view (Can be toggle on/off).
+- Added pass-lock category in skin design window.
+- Added password lock setting for skin design window.
+You better remember your password now if this option is enable
+- Added option to always show video/audio settings in the Video OSD buttons.
+- Added option to toggle skin changelog on/off and tweak it to show for Today, two days or a one week.
+Default is now 2 days - The day of the update and the next day.
+- Added option to change mouse cursor icon and color.
+- Added option to have a bit larger Top Information bar.
+- Added option to reschedule lock up after x minutes.
+- Added option to toggle button's labels postion in/out of the button.
+- Added option to toggle skin version on/off in home window.
+- Added option to have a 3 smaller icons at the end of your Vertical/Horizontal layout (Favourite, Settings, Power).
+- Added option to set RSS visibility across the entire skin.
+- Added option to set RSS delay time.
+- Added RSS category in skin design window.
+- Added RSS support.
+- Added two new buttons layout views: Horizontal 3 (9) and Panel 3 (18).
+- Added two new widget layout: Horizontal 7/9
+- Default favourite button ID has been changed.
+If you have two buttons you may disable one.
+- Minor bug fix with Arial font when switching skins.
+- Major bug fix with Transperancy Colour Fanart Background feature.
+- Major update of lock/unlock design and position.
+- Minor bugs fix.
+- Minor update of big icons feature.
+- Minor update of DialogFavourites window.
+- Major update of Touch Screen feature.
+Useable in every dialog window, design tweaked, can change the icon etc..
+- Minor update of Vertical layout.
 
 ------------------------
 Featherence v0.5.12 (18-Sep-16)

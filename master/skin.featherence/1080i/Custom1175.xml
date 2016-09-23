@@ -8,5 +8,6 @@
       <visible>!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml)</visible>
       <include>MenuDesign_Center2</include>
 	</control>
+	
   </controls>
 </window>

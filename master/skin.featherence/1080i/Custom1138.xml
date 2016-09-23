@@ -9,5 +9,6 @@
 	  <animation condition="Window.IsVisible(Custom1139.xml)" effect="fade" start="100" end="40" time="1000">Conditional</animation>
       <include>MenuDesign_Center2</include>
 	</control>
+	<include>TouchSupport</include>
   </controls>
 </window>

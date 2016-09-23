@@ -6400,7 +6400,6 @@
 		  </control>
 	  </control>
 	  <include>TopInformation</include>
-	  <include>ScrollBar</include>  
-	  
+	  <include>ScrollBar</include>
 	</controls>
 </window>

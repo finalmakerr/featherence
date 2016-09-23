@@ -568,6 +568,8 @@
 	<param name="width" default="0"/>
 	
 	<param name="condition" default="true"/>
+	<param name="homeicons" default="true"/>
+	<param name="reshape" default="false"/>
 	<param name="type0" default="true" description="UnFocus"/>
 	<param name="type1" default="false" description="Focus"/>
 	<definition>
@@ -579,12 +581,12 @@
 		  <visible>$PARAM[condition]</visible>
 		  <visible>!IsEmpty(ListItem.Thumb)</visible>
 		  <include condition="$PARAM[type0]">Fade_IconOverlayButton</include>
-		  <include condition="!Skin.String(MenuDesign) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)">Slide_MenuDesign_Home_Icons</include>
-		  <include condition="Skin.String(MenuDesign,4)">Slide_MenuDesign2_Home_Icons</include>
-		  <include condition="Skin.String(MenuDesign,4) + $PARAM[type1]">Slide_MenuDesign2_Home_Icons2</include>
-		  <animation condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(BigHomeIcons)" effect="slide" start="0,0" end="0,10">Conditional</animation>
+		  <include condition="!Skin.String(MenuDesign) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7) | Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6)">Slide_MenuDesign_Home_Icons</include>
+		  <include condition="Skin.String(MenuDesign,4) + $PARAM[homeicons]">Slide_MenuDesign2_Home_Icons</include>
+		  <include condition="Skin.String(MenuDesign,4) + $PARAM[homeicons]">Slide_MenuDesign2_Home_Icons2</include>
+		  <!--<animation condition="Skin.String(ButtonsDesign,1) + [ Skin.HasSetting(BigHomeIcons) | ![$PARAM[type0] + $PARAM[type1]] ]" effect="slide" start="0,0" end="0,10">Conditional</animation>-->
 		  <control type="group">
-			  <visible>!Skin.HasSetting(ReshapeIcons)</visible>
+			  <visible>!Skin.HasSetting(ReshapeIcons) + !$PARAM[reshape]</visible>
 			  <control type="image">
 			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
 			    <aspectratio>keep</aspectratio>
@@ -624,7 +626,7 @@
 		  </control>
 		  
 		  <control type="group">
-			  <visible>Skin.HasSetting(ReshapeIcons)</visible>
+			  <visible>Skin.HasSetting(ReshapeIcons) | $PARAM[reshape]</visible>
 			  <control type="image">
 			    <include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
 				<aspectratio>stretch</aspectratio>
@@ -663,43 +665,85 @@
 			  </control>
 		  </control>
 		  
+		  <control type="image" description="pwd_lock">
+			<animation condition="true" effect="fade" start="30,30" end="30,30">Conditional</animation>
+			<include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+			<aspectratio align="center">keep</aspectratio>
+			<texture colordiffuse="$PARAM[color]">special://home/addons/script.featherence.service/resources/icons/Lock.png</texture>
+			<visible>!IsEmpty(ListItem.Property(pwd)) + IsEmpty(Window(home).Property(PassProtect))</visible>
+		  </control>
 		  
+		  <control type="image" description="pwd_unlock">
+			<animation condition="true" effect="fade" start="50,50" end="50,50">Conditional</animation>
+			<include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
+			<aspectratio align="center">keep</aspectratio>
+			<texture colordiffuse="$PARAM[color]">special://home/addons/script.featherence.service/resources/icons/Unlock.png</texture>
+			<visible>!IsEmpty(ListItem.Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))</visible>
+		  </control>
+		</control>
+		
+	</definition>
+  </include>
+  
+  <include name="RSS_1721" description="RSS FEED">
+	<param name="height" default="0"/>
+	<param name="posx" default="0"/>
+	<param name="posy" default="0"/>
+	<param name="width" default="0"/>
+	
+	<param name="condition" default="true"/>
+	<definition>
+		<control type="rss" id="1721" description="(RSS) אמצע">
+			<animation condition="!StringCompare(System.Language,Hebrew) + !Player.HasMedia" effect="slide" start="0,0" end="-350,0" delay="0" time="700" reversible="true">Conditional</animation>
+			<aligny>top</aligny>
+			<include>LabelC12</include>
+			<textcolor>white</textcolor>
+			<titlecolor>yellow</titlecolor>
+			<headlinecolor>white</headlinecolor>
+			<height>$PARAM[height]</height>
+			<posx>$PARAM[posx]</posx>
+			<posy>$PARAM[posy]</posy>
+			<scrollspeed>40</scrollspeed>
+			<width>$PARAM[width]</width>
+			<visible>System.GetBool(lookandfeel.enablerssfeeds) + [ [!Skin.String(RSSIdleTime) | Skin.String(RSSIdleTime,0)] | Skin.String(RSSIdleTime,3) + System.IdleTime(3) | Skin.String(RSSIdleTime,5) + System.IdleTime(5) | Skin.String(RSSIdleTime,7) + System.IdleTime(7) | Skin.String(RSSIdleTime,10) + System.IdleTime(10) | Skin.String(RSSIdleTime,15) + System.IdleTime(15) | Skin.String(RSSIdleTime,20) + System.IdleTime(20) | Skin.String(RSSIdleTime,25) + System.IdleTime(25) | Window.IsVisible(Home.xml)]</visible>
+			<visible>Window.IsVisible(Home.xml) + !Skin.HasSetting(RSSVisibility) | Skin.HasSetting(RSSVisibility)</visible>
+			<visible>!Player.HasMedia + !Skin.HasSetting(RSSOnMedia) | Skin.HasSetting(RSSOnMedia)</visible>
+			<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+			<visible>$PARAM[condition]</visible>
 		</control>
 	</definition>
   </include>
   
-  <include name="LockButtons">
-    <control type="image" description="pwd_lock">
-	  <animation condition="true" effect="fade" start="50,50" end="50,50">Conditional</animation>
-	  <animation condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="30,10">Conditional</animation>
-	  <animation condition="Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="114,0">Conditional</animation>
-	  <animation condition="Skin.String(ButtonsDesign,4) + !Skin.String(MenuDesign,4)" effect="slide" start="0,0" end="144,20">Conditional</animation>
-	  <animation condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="120,23">Conditional</animation>
-	  <animation condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-32,23">Conditional</animation>
-	  <aspectratio>keep</aspectratio>
-	  <height>70</height>
-	  <posx>30</posx>
-	  <posy>30</posy>
-	  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/Key.png</texture>
-	  <visible>!IsEmpty(ListItem.Property(pwd)) + IsEmpty(Window(home).Property(PassProtect))</visible>
-	  <width>70</width>
-	</control>
-	<control type="image" description="pwd_unlock">
-	  <animation condition="true" effect="fade" start="50,50" end="50,50">Conditional</animation>
-	  <animation condition="Skin.String(ButtonsDesign,1)" effect="slide" start="0,0" end="30,10">Conditional</animation>
-	  <animation condition="Skin.String(ButtonsDesign,2)" effect="slide" start="0,0" end="114,0">Conditional</animation>
-	  <animation condition="Skin.String(ButtonsDesign,4) + !Skin.String(MenuDesign,4)" effect="slide" start="0,0" end="144,20">Conditional</animation>
-	  <animation condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="120,23">Conditional</animation>
-	  <animation condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-32,23">Conditional</animation>
-	  <aspectratio>keep</aspectratio>
-	  <height>70</height>
-	  <posx>30</posx>
-	  <posy>30</posy>
-	  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/Unlock.png</texture>
-	  <visible>!IsEmpty(ListItem.Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))</visible>
-	  <width>70</width>
+  <include name="Rating_">
+    <control type="group" description="דירוג">
+	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="60,-38" start="100,100" end="80,80" time="0">Conditional</animation>
+	  <!--<animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
+	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
+	  <height>312</height>
+	  <posx>55</posx>
+	  <posy>37</posy>
+	  <width>135</width>	  
+	  <visible></visible>
+	  <visible>!IsEmpty(ListItem.Rating) + !Skin.HasSetting(Show_Rating)</visible>
+	  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31015])</visible>
+	  <control type="image" description="">
+		<animation condition="true" effect="fade" start="70" end="70" time="0">Conditional</animation>
+		<height>40</height>
+		<posy>4</posy>
+		<texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
+		<width>100%</width>
+	  </control>	  
+	  <control type="image" description="דירוג">
+		  <posy>8</posy>
+		  <width>100%</width>
+		  <height>30</height>
+		  <aspectratio align="center">keep</aspectratio>
+		  <texture background="true">$VAR[TopVideoInformation3]</texture>
+		  <visible>!IsEmpty(ListItem.Rating)</visible>
+	  </control>
 	</control>
   </include>
+
   <include name="SideMenu2">
     <control type="group" description="Side menu 9010 group">
 	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="400,0" delay="0" time="700" reversible="true">Conditional</animation>
@@ -873,7 +917,7 @@
 	 <posx>5</posx>
    </include>
    <include name="Control_Pos38" description="">
-	 <posx>250</posx>
+	 <posx>41</posx>
    </include>
    <include name="Control_Pos39" description="">
 	 <width>430</width>

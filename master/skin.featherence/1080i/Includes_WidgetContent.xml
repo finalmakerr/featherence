@@ -9,7 +9,9 @@
         <ondown>9000</ondown>
         <onleft>311</onleft>
         <onright>311</onright>
-        <include>MoviesShortcutsCommons</include>
+        <include condition="!Skin.String(WidgetDesign)">MoviesShortcutsCommons</include>
+		<include condition="Skin.String(WidgetDesign,0)">MoviesShortcutsCommons0</include>
+		<include condition="Skin.String(WidgetDesign,1)">MoviesShortcutsCommons1</include>
         <content>
           <item id="1" description="Movies">
             <visible>!IsEmpty(Window(home).Property(RecentMovie.1.Path))</visible>
@@ -166,7 +168,9 @@
         <ondown>9000</ondown>
         <onleft>311</onleft>
         <onright>311</onright>
-        <include>MoviesShortcutsCommons</include>
+        <include condition="!Skin.String(WidgetDesign)">MoviesShortcutsCommons</include>
+		<include condition="Skin.String(WidgetDesign,0)">MoviesShortcutsCommons0</include>
+		<include condition="Skin.String(WidgetDesign,1)">MoviesShortcutsCommons1</include>
         <content>
           <item id="1" description="Movies">
             <visible>!IsEmpty(Window(home).Property(RandomMovie.1.Path))</visible>
@@ -321,7 +325,9 @@
         <ondown>9000</ondown>
         <onleft>312</onleft>
         <onright>312</onright>
-        <include>MoviesShortcutsCommons</include>
+        <include condition="!Skin.String(WidgetDesign)">MoviesShortcutsCommons</include>
+		<include condition="Skin.String(WidgetDesign,0)">MoviesShortcutsCommons0</include>
+		<include condition="Skin.String(WidgetDesign,1)">MoviesShortcutsCommons1</include>
         <content>
           <item id="1" description="Episodes1">
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.Path))</visible>
@@ -496,8 +502,9 @@
         <ondown>9000</ondown>
         <onleft>312</onleft>
         <onright>312</onright>
-        <include>MoviesShortcutsCommons</include>
-        <!--<include>RecommendedEpisodes</include>-->
+        <include condition="!Skin.String(WidgetDesign)">MoviesShortcutsCommons</include>
+		<include condition="Skin.String(WidgetDesign,0)">MoviesShortcutsCommons0</include>
+		<include condition="Skin.String(WidgetDesign,1)">MoviesShortcutsCommons1</include>
 		<content>
           <item id="1" description="Episodes1">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))</visible>

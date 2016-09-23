@@ -8,5 +8,6 @@
 	<include>Menu_Home</include>
 	<include>Widget_Home</include>
 	<include>TopInformation</include>
+	<include>TouchSupport</include>
 </controls>
 </window>

@@ -14,6 +14,7 @@
 	  <texture>special://skin/fanart.jpg</texture>
 	  <width>1920</width>
 	</control>
+	<include>TouchSupport</include>
 	<!--<control type="group">
       <control type="visualisation" id="2" description="Visualisation">
         <posx>0</posx>

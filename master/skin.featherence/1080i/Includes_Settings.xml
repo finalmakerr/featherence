@@ -263,7 +263,7 @@
 		  <animation condition="Window.IsVisible(Custom1173.xml)" effect="slide" start="0,0" end="0,15" time="0">Conditional</animation>
 		  <posx>20</posx>
 		  <posy>250</posy>
-		  <width>1880</width>
+		  <width>1840</width>
 		  <include condition="Window.IsVisible(Custom1173.xml)">MenuDesign_Settings_height2</include>
 		  <height>775</height>
 		  <include>4ways4</include>
@@ -283,7 +283,7 @@
   </include>
 
   <include name="MenuDesign_Settings_Layout">
-	  <itemlayout description="(כללי)" height="70" width="960">
+	  <itemlayout description="(כללי)" height="70" width="1460">
 		<include name="Buttons_Frame">
 			<param name="id" value="" />
 			<param name="border" value="35" />
@@ -349,7 +349,7 @@
 		  <visible>!IsEmpty(ListItem.Label2)</visible>
 		</control>  				
 	  </itemlayout>
-	  <focusedlayout description="(כללי)" height="70" width="960">
+	  <focusedlayout description="(כללי)" height="70" width="1460">
 		
 		<include name="Buttons_Frame" description="רקע כפתור">
 			<param name="id" value="" />
@@ -418,4 +418,5 @@
 		</control>
 	  </focusedlayout>
   </include>
+
 </includes>

@@ -14,8 +14,6 @@
       <include>Design_TopButtons</include>
 	  <include>Menu_Home</include>
 	  <include>Widget_Home</include>
-	<!--<include condition="Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)">MenuDesign_Widget</include>-->
-	
 	  <include>TopInformation</include>
 	  <include>TopVideoInformation</include>
 	</control>

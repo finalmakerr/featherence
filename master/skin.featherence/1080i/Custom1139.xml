@@ -9,5 +9,6 @@
 	  <include>Slide6</include>
 	  <include>MenuDesign_Center2</include>
 	</control>
+	<include>TouchSupport</include>
   </controls>
 </window>

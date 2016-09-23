@@ -94,6 +94,7 @@ if property_buttonid != "" and property_buttonid_ != "" or 1 + 1 == 2:
 	idT = { 'id90': id90, 'id91': id91, 'id92': id92, 'id93': id93, 'id94': id94, 'id95': id95, 'id96': id96, 'id97': id97, 'id98': id98, 'id99': id99, 'id100': id100, 'id101': id101, 'id102': id102, 'id103': id103, 'id104': id104, 'id105': id105, 'id106': id106, 'id107': id107, 'id108': id108, 'id109': id109 }
 	idT2 = { id90: '90', id91: '91', id92: '92', id93: '93', id94: '94', id95: '95', id96: '96', id97: '97', id98: '98', id99: '99', id100: '100', id101: '101', id102: '102', id103: '103', id104: '104', id105: '105', id106: '106', id107: '107', id108: '108', id109: '109' }
 	'''---------------------------'''
+	label17 = xbmc.getInfoLabel('$VAR[label17]')
 	label18 = xbmc.getInfoLabel('$VAR[label18]')
 	label19 = xbmc.getInfoLabel('$VAR[label19]')
 	label90 = xbmc.getInfoLabel('Skin.String(label90)')
@@ -128,9 +129,11 @@ if property_buttonid != "" and property_buttonid_ != "" or 1 + 1 == 2:
 	label118 = xbmc.getInfoLabel('Skin.String(label118)')
 	label119 = xbmc.getInfoLabel('Skin.String(label119)')
 	'''---------------------------'''
-	labelT = { 'label18': label18, 'label19': label19, 'label90': label90, 'label91': label91, 'label92': label92, 'label93': label93, 'label94': label94, 'label95': label95, 'label96': label96, 'label97': label97, 'label98': label98, 'label99': label99, 'label100': label100, 'label101': label101, 'label102': label102, 'label103': label103, 'label104': label104, 'label105': label105, 'label106': label106, 'label107': label107, 'label108': label108, 'label109': label109, 'label110': label110, 'label111': label111, 'label112': label112, 'label113': label113, 'label114': label114, 'label115': label115, 'label116': label116, 'label117': label117, 'label118': label118, 'label119': label119 }
-	labelT2 = { label18: 'label18', label19: 'label19', label90: 'label90', label91: 'label91', label92: 'label92', label93: 'label93', label94: 'label94', label95: 'label95', label96: 'label96', label97: 'label97', label98: 'label98', label99: 'label99', label100: 'label100', label101: 'label101', label102: 'label102', label103: 'label103', label104: 'label104', label105: 'label105', label106: 'label106', label107: 'label107', label108: 'label108', label109: 'label109', label110: 'label110', label111: 'label111', label112: 'label112', label113: 'label113', label114: 'label114', label115: 'label115', label116: 'label116', label117: 'label117', label118: 'label118', label119: 'label119' }
+	labelT = { 'label17': label17, 'label18': label18, 'label19': label19, 'label90': label90, 'label91': label91, 'label92': label92, 'label93': label93, 'label94': label94, 'label95': label95, 'label96': label96, 'label97': label97, 'label98': label98, 'label99': label99, 'label100': label100, 'label101': label101, 'label102': label102, 'label103': label103, 'label104': label104, 'label105': label105, 'label106': label106, 'label107': label107, 'label108': label108, 'label109': label109, 'label110': label110, 'label111': label111, 'label112': label112, 'label113': label113, 'label114': label114, 'label115': label115, 'label116': label116, 'label117': label117, 'label118': label118, 'label119': label119 }
+	labelT2 = { label17: 'label17', label18: 'label18', label19: 'label19', label90: 'label90', label91: 'label91', label92: 'label92', label93: 'label93', label94: 'label94', label95: 'label95', label96: 'label96', label97: 'label97', label98: 'label98', label99: 'label99', label100: 'label100', label101: 'label101', label102: 'label102', label103: 'label103', label104: 'label104', label105: 'label105', label106: 'label106', label107: 'label107', label108: 'label108', label109: 'label109', label110: 'label110', label111: 'label111', label112: 'label112', label113: 'label113', label114: 'label114', label115: 'label115', label116: 'label116', label117: 'label117', label118: 'label118', label119: 'label119' }
 	'''---------------------------'''
+	action17 = xbmc.getInfoLabel('Skin.String(action17)')
+	
 	action90 = xbmc.getInfoLabel('Skin.String(action90)')
 	action91 = xbmc.getInfoLabel('Skin.String(action91)')
 	action92 = xbmc.getInfoLabel('Skin.String(action92)')
@@ -163,8 +166,10 @@ if property_buttonid != "" and property_buttonid_ != "" or 1 + 1 == 2:
 	action118 = xbmc.getInfoLabel('Skin.String(action118)')
 	action119 = xbmc.getInfoLabel('Skin.String(action119)')
 	'''---------------------------'''
-	actionT = { 'action90': action90, 'action91': action91, 'action92': action92, 'action93': action93, 'action94': action94, 'action95': action95, 'action96': action96, 'action97': action97, 'action98': action98, 'action99': action99, 'action100': action100, 'action101': action101, 'action102': action102, 'action103': action103, 'action104': action104, 'action105': action105, 'action106': action106, 'action107': action107, 'action108': action108, 'action109': action109 }
+	actionT = { 'action17': action17, 'action90': action90, 'action91': action91, 'action92': action92, 'action93': action93, 'action94': action94, 'action95': action95, 'action96': action96, 'action97': action97, 'action98': action98, 'action99': action99, 'action100': action100, 'action101': action101, 'action102': action102, 'action103': action103, 'action104': action104, 'action105': action105, 'action106': action106, 'action107': action107, 'action108': action108, 'action109': action109 }
 	'''---------------------------'''
+	off17 = xbmc.getInfoLabel('Skin.HasSetting(off17)')
+	
 	off90 = xbmc.getInfoLabel('Skin.HasSetting(off90)')
 	off91 = xbmc.getInfoLabel('Skin.HasSetting(off91)')
 	off92 = xbmc.getInfoLabel('Skin.HasSetting(off92)')
@@ -197,10 +202,15 @@ if property_buttonid != "" and property_buttonid_ != "" or 1 + 1 == 2:
 	off118 = xbmc.getInfoLabel('Skin.HasSetting(off118)')
 	off119 = xbmc.getInfoLabel('Skin.HasSetting(off119)')
 	'''---------------------------'''
-	offT = { 'off90': off90, 'off91': off91, 'off92': off92, 'off93': off93, 'off94': off94, 'off95': off95, 'off96': off96, 'off97': off97, 'off98': off98, 'off99': off99, 'off100': off100, 'off101': off101, 'off102': off102, 'off103': off103, 'off104': off104, 'off105': off105, 'off106': off106, 'off107': off107, 'off108': off108, 'off109': off109, 'off110': off110, 'off111': off111, 'off112': off112, 'off113': off113, 'off114': off114, 'off115': off115, 'off116': off116, 'off117': off117, 'off118': off118, 'off119': off119}
+	offT = { 'off17': off17, 'off90': off90, 'off91': off91, 'off92': off92, 'off93': off93, 'off94': off94, 'off95': off95, 'off96': off96, 'off97': off97, 'off98': off98, 'off99': off99, 'off100': off100, 'off101': off101, 'off102': off102, 'off103': off103, 'off104': off104, 'off105': off105, 'off106': off106, 'off107': off107, 'off108': off108, 'off109': off109, 'off110': off110, 'off111': off111, 'off112': off112, 'off113': off113, 'off114': off114, 'off115': off115, 'off116': off116, 'off117': off117, 'off118': off118, 'off119': off119}
 	'''---------------------------'''
+	color17 = xbmc.getInfoLabel('Skin.String(color17)')
 	color18 = xbmc.getInfoLabel('Skin.String(color18)')
 	color19 = xbmc.getInfoLabel('Skin.String(color19)')
+	
+	color20 = xbmc.getInfoLabel('Skin.String(color20)')
+	color21 = xbmc.getInfoLabel('Skin.String(color21)')
+	
 	color90 = xbmc.getInfoLabel('Skin.String(color90)')
 	color91 = xbmc.getInfoLabel('Skin.String(color91)')
 	color92 = xbmc.getInfoLabel('Skin.String(color92)')
@@ -233,10 +243,15 @@ if property_buttonid != "" and property_buttonid_ != "" or 1 + 1 == 2:
 	color118 = xbmc.getInfoLabel('Skin.String(color118)')
 	color119 = xbmc.getInfoLabel('Skin.String(color119)')
 	'''---------------------------'''
-	colorT = { 'color18': color18, 'color19': color19, 'color90': color90, 'color91': color91, 'color92': color92, 'color93': color93, 'color94': color94, 'color95': color95, 'color96': color96, 'color97': color97, 'color98': color98, 'color99': color99, 'color100': color100, 'color101': color101, 'color102': color102, 'color103': color103, 'color104': color104, 'color105': color105, 'color106': color106, 'color107': color107, 'color108': color108, 'color109': color109, 'color110': color110, 'color111': color111, 'color112': color112, 'color113': color113, 'color114': color114, 'color115': color115, 'color116': color116, 'color117': color117, 'color118': color118, 'color119': color119 }
+	colorT = { 'color17': color17, 'color18': color18, 'color19': color19, 'color20': color20, 'color21': color21, 'color90': color90, 'color91': color91, 'color92': color92, 'color93': color93, 'color94': color94, 'color95': color95, 'color96': color96, 'color97': color97, 'color98': color98, 'color99': color99, 'color100': color100, 'color101': color101, 'color102': color102, 'color103': color103, 'color104': color104, 'color105': color105, 'color106': color106, 'color107': color107, 'color108': color108, 'color109': color109, 'color110': color110, 'color111': color111, 'color112': color112, 'color113': color113, 'color114': color114, 'color115': color115, 'color116': color116, 'color117': color117, 'color118': color118, 'color119': color119 }
 	'''---------------------------'''
+	icon17 = xbmc.getInfoLabel('Skin.String(icon17)')
 	icon18 = xbmc.getInfoLabel('Skin.String(icon18)')
 	icon19 = xbmc.getInfoLabel('Skin.String(icon19)')
+	
+	icon20 = xbmc.getInfoLabel('Skin.String(icon20)')
+	icon21 = xbmc.getInfoLabel('Skin.String(icon21)')
+	
 	icon90 = xbmc.getInfoLabel('Skin.String(icon90)')
 	icon91 = xbmc.getInfoLabel('Skin.String(icon91)')
 	icon92 = xbmc.getInfoLabel('Skin.String(icon92)')
@@ -269,10 +284,12 @@ if property_buttonid != "" and property_buttonid_ != "" or 1 + 1 == 2:
 	icon118 = xbmc.getInfoLabel('Skin.String(icon118)')
 	icon119 = xbmc.getInfoLabel('Skin.String(icon119)')
 	'''---------------------------'''
-	iconT = { 'icon18': icon18, 'icon19': icon19, 'icon90': icon90, 'icon91': icon91, 'icon92': icon92, 'icon93': icon93, 'icon94': icon94, 'icon95': icon95, 'icon96': icon96, 'icon97': icon97, 'icon98': icon98, 'icon99': icon99, 'icon100': icon100, 'icon101': icon101, 'icon102': icon102, 'icon103': icon103, 'icon104': icon104, 'icon105': icon105, 'icon106': icon106, 'icon107': icon107, 'icon108': icon108, 'icon109': icon109, 'icon110': icon110, 'icon111': icon111, 'icon112': icon112, 'icon113': icon113, 'icon114': icon114, 'icon115': icon115, 'icon116': icon116, 'icon117': icon117, 'icon118': icon118, 'icon119': icon119 }
+	iconT = { 'icon17': icon17, 'icon18': icon18, 'icon19': icon19, 'icon20': icon20, 'icon21': icon21, 'icon90': icon90, 'icon91': icon91, 'icon92': icon92, 'icon93': icon93, 'icon94': icon94, 'icon95': icon95, 'icon96': icon96, 'icon97': icon97, 'icon98': icon98, 'icon99': icon99, 'icon100': icon100, 'icon101': icon101, 'icon102': icon102, 'icon103': icon103, 'icon104': icon104, 'icon105': icon105, 'icon106': icon106, 'icon107': icon107, 'icon108': icon108, 'icon109': icon109, 'icon110': icon110, 'icon111': icon111, 'icon112': icon112, 'icon113': icon113, 'icon114': icon114, 'icon115': icon115, 'icon116': icon116, 'icon117': icon117, 'icon118': icon118, 'icon119': icon119 }
 	'''---------------------------'''
+	background17 = xbmc.getInfoLabel('$VAR[background17]')
 	background18 = xbmc.getInfoLabel('$VAR[background18]')
 	background19 = xbmc.getInfoLabel('$VAR[background19]')
+	
 	background90 = xbmc.getInfoLabel('$VAR[background90]')
 	background91 = xbmc.getInfoLabel('$VAR[background91]')
 	background92 = xbmc.getInfoLabel('$VAR[background92]')
@@ -305,7 +322,7 @@ if property_buttonid != "" and property_buttonid_ != "" or 1 + 1 == 2:
 	background118 = xbmc.getInfoLabel('Skin.String(background118)')
 	background119 = xbmc.getInfoLabel('Skin.String(background119)')
 	'''---------------------------'''
-	backgroundT = { 'background18': background18, 'background19': background19, 'background90': background90, 'background91': background91, 'background92': background92, 'background93': background93, 'background94': background94, 'background95': background95, 'background96': background96, 'background97': background97, 'background98': background98, 'background99': background99, 'background100': background100, 'background101': background101, 'background102': background102, 'background103': background103, 'background104': background104, 'background105': background105, 'background106': background106, 'background107': background107, 'background108': background108, 'background109': background109, 'background110': background110, 'background111': background111, 'background112': background112, 'background113': background113, 'background114': background114, 'background115': background115, 'background116': background116, 'background117': background117, 'background118': background118, 'background119': background119 }
+	backgroundT = { 'background17': background17, 'background18': background18, 'background19': background19, 'background90': background90, 'background91': background91, 'background92': background92, 'background93': background93, 'background94': background94, 'background95': background95, 'background96': background96, 'background97': background97, 'background98': background98, 'background99': background99, 'background100': background100, 'background101': background101, 'background102': background102, 'background103': background103, 'background104': background104, 'background105': background105, 'background106': background106, 'background107': background107, 'background108': background108, 'background109': background109, 'background110': background110, 'background111': background111, 'background112': background112, 'background113': background113, 'background114': background114, 'background115': background115, 'background116': background116, 'background117': background117, 'background118': background118, 'background119': background119 }
 	'''---------------------------'''
 	
 	background90_100 = xbmc.getInfoLabel('Skin.String(background90_100)')
@@ -5151,11 +5168,11 @@ if property_widgetbuttonid_ != "" or property_temp != "" or property_temp2 != ""
 	offw_T.update(offw119_T)
 	
 if xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)') or 1 + 1 == 2:
-	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos', 'ButtonsDesign', 'DialogMenu', 'PassProtect', 'StartUpVideo', 'AutoView.movies', 'AutoView.tvshows', 'AutoView.seasons', 'AutoView.episodes', 'AutoView.setmovies', 'AutoView.actors', 'AutoView.genres', 'AutoView.others', 'AutoView.pictures', 'screensavermusic','MultiFanart_fadetime', 'MultiFanart_timeperimage', 'CustomStartupImage','IntroDelay','widget311','widget311_name','widget312','widget312_name','widget317','widget317_name','CustomStartupImage','PassProtectDuration','RSSIdleTime'] #NO RANDOM SUPPORT
-	list0c = ['MenuColor', 'SubMenuMarkColor', 'TopInformationColor', 'TopVideoInformationColor', 'MainBackgroundColor', 'TopBackgroundColor', 'IconUnFocusColor', 'IconFocusColor', 'ButtonUnFocusColor', 'ButtonFocusColor', 'KeyboardUnFocusColor', 'KeyboardFocusColor', 'keyboardbackgroundcolor', 'KeyboardEditColor', 'SelectedFrameColor', 'SubMenuMarkColor']
+	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos', 'ButtonsDesign', 'DialogMenu', 'PassProtect', 'StartUpVideo', 'AutoView.movies', 'AutoView.tvshows', 'AutoView.seasons', 'AutoView.episodes', 'AutoView.setmovies', 'AutoView.actors', 'AutoView.genres', 'AutoView.others', 'AutoView.pictures', 'screensavermusic','MultiFanart_fadetime', 'MultiFanart_timeperimage', 'CustomStartupImage','IntroDelay','widget311','widget311_name','widget312','widget312_name','widget317','widget317_name','CustomStartupImage','PassProtectDuration','RSSIdleTime','TopInformationDesign','MouseIcon','Skin_ShowLog2','WidgetDesign'] #NO RANDOM SUPPORT
+	list0c = ['MenuColor', 'SubMenuMarkColor', 'TopInformationColor', 'TopVideoInformationColor', 'MainBackgroundColor', 'TopBackgroundColor', 'IconUnFocusColor', 'IconFocusColor', 'ButtonUnFocusColor', 'ButtonFocusColor', 'KeyboardUnFocusColor', 'KeyboardFocusColor', 'keyboardbackgroundcolor', 'KeyboardEditColor', 'SelectedFrameColor', 'MouseColor']
 	list0c2 = ['MainBackgroundTexture', 'TopBackgroundTexture'] #NO RANDOM SUPPORT
 	list0o = ['IconOverlayButton', 'MenuButtonsOverlay', 'MenuOverlay', 'DialogBackgroundOverlay', 'KeyboardBackgroundOverlay', 'TopVideoInformationOverlay', 'TopMainBackgroundOverlay', 'TopInformationOverlay', 'MainBackgroundOverlay', 'BackgroundOverlay', 'Background2Overlay']
-	list1 = ['SelectionMarker', 'SelectionMarker2', 'ShadowButton', 'OverlayButton', 'BevelButton', 'StrokeButton', '2DButton2', 'MenuBackground', 'ShadowButton2', 'OverlayButton2', 'BevelButton2', 'StrokeButton2', 'background', 'HideTopMainBackground', 'FixedUnFocusButtonsTransperancy', 'HomeFanartHalfScreen', 'ReshapeIcons', 'SubBackground', 'DefaultActionButtons', 'SubMenuAction', 'Action_Thumbnail', 'MultiFanart', 'BigHomeIcons', 'wbackground90', 'wbackground91', 'wbackground96', 'Genre', 'ShowClock', 'StartUpMusic', 'Touch_Support','MultiFanart_randomize','WidgetBackground','ButtonsDesignWidget','PassProtect','ButtonLabelPosition','RSSVisibility','SPMiniButtons','ShowSkinVersion']
+	list1 = ['SelectionMarker', 'SelectionMarker2', 'ShadowButton', 'OverlayButton', 'BevelButton', 'StrokeButton', '2DButton2', 'MenuBackground', 'ShadowButton2', 'OverlayButton2', 'BevelButton2', 'StrokeButton2', 'background', 'HideTopMainBackground', 'FixedUnFocusButtonsTransperancy', 'HomeFanartHalfScreen', 'ReshapeIcons', 'SubBackground', 'DefaultActionButtons', 'SubMenuAction', 'Action_Thumbnail', 'MultiFanart', 'BigHomeIcons', 'wbackground90', 'wbackground91', 'wbackground96', 'Genre', 'ShowClock', 'StartUpMusic', 'Touch_Support','MultiFanart_randomize','WidgetBackground','ButtonsDesignWidget','PassProtect','ButtonLabelPosition','RSSVisibility','SPMiniButtons','ShowSkinVersion','RSSOnMedia','VideoAudioOSDAlwaysOn','Skin_ShowLog']
 	
 	'''left menu'''
 	list0l = ['MoviesTVCoversOverlay']

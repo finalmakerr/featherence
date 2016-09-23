@@ -5,5 +5,6 @@
     <include>BlackBackground</include>
     <include>BottomCenterDialogProfileSettings</include>
 	<include>TopInformation</include>
+	<include>TouchSupport</include>
   </controls>
 </window>

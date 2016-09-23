@@ -120,10 +120,12 @@
         <label>$LOCALIZE[180]: $INFO[ListItem.Duration] / $LOCALIZE[135]: $INFO[ListItem.Genre]</label>
       </control>
   </include>
+  
   <include name="TopInformation">
 	<control type="group" id="7016" description="">
 	  <height>45</height>
 	  <posy>-6</posy>
+	  <animation condition="Skin.HasSetting(TopInformationSize)" effect="zoom" center="0,0" start="100,121" end="100,121" time="0" reversible="false">Conditional</animation>
 	  <animation condition="System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
       <control type="image" description="מסגרת">
 		<include>Fade_TopInformationOverlay</include>
@@ -137,14 +139,6 @@
 		<texture colordiffuse="ff000000" border="40">buttons/types/bd.png</texture>
 		<visible>Skin.HasSetting(Admin)</visible>
 	    <width>2040</width>
-      </control>
-      <control type="image" description="(Admin) מסגרת">
-		<include>Fade_TopInformationOverlay</include>
-		<posx>-60</posx>
-		<texture border="20">buttons/ButtonC.png</texture>
-		<visible>!Skin.HasSetting(Admin) + Skin.HasSetting(Admin2) + System.IdleTime(10)</visible>
-	    <width>2040</width>
-		<visible>false</visible>
       </control>
 	  <control type="label" id="11010" description="">
 		  <label>$VAR[VideoInformation1]</label>
@@ -209,6 +203,7 @@
 				<width>720</width>
 				<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127)</visible>
 				<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+				<visible>!Control.IsVisible(1721)</visible>
 			  </control>
 			  <control type="label" id="1127" description="(HasMedia) אמצע">
 				<aligny>top</aligny>
@@ -222,6 +217,7 @@
 				<visible>!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(313) + !Control.HasFocus(314) + !Control.HasFocus(315)</visible>
 				<visible>!SubString(MusicPlayer.Title,featherence)</visible>
 				<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+				<visible>!Control.IsVisible(1721)</visible>
 			  </control>
 			  <control type="label" description="(Admin) אמצע">
 				<aligny>top</aligny>
@@ -232,7 +228,23 @@
 				<width>720</width>
 				<visible>Skin.HasSetting(Admin)</visible>
 				<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+				<visible>!Control.IsVisible(1721)</visible>
 			  </control>
+			  <include name="RSS_1721">
+				<param name="height" value="0" />
+				<param name="posx" value="600" />
+				<param name="posy" value="0" />
+				<param name="width" value="1020" />
+				<param name="condition" value="!Player.HasMedia" />
+			  </include>
+			  <include name="RSS_1721">
+				<param name="height" value="0" />
+				<param name="posx" value="600" />
+				<param name="posy" value="0" />
+				<param name="width" value="720" />
+				<param name="condition" value="Player.HasMedia" />
+			  </include>
+			  
 		  </control>
 		  <control type="group" description="(specials) ימין">
 			<include>IconsInformation</include>	
@@ -241,6 +253,7 @@
 		  <control type="label" description="() ימין">
 			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1900,0">Conditional</animation>
 			<aligny>top</aligny>
+			<!--<include condition="Skin.HasSetting(TopInformationSize) + StringCompare(System.Language,Hebrew)">LabelL1</include>-->
 			<include condition="StringCompare(System.Language,Hebrew)">LabelL2</include>
 			<include condition="!StringCompare(System.Language,Hebrew)">LabelR2</include>
 			<label>$VAR[ShowClock]</label>		
@@ -250,41 +263,15 @@
 		  </control>
 	  </control>
 	</control>
-	<control type="group" id="7017" description="Touch Support">
-	  <height>0</height>
-	  <posy>0</posy>
-	  <animation condition="System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
-	  
-	  <control type="list" id="9008" description="מאוזן">
-		  <animation condition="!StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1710,-0" time="220" reversible="false">Conditional</animation>
-		  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
-		  <visible>Skin.HasSetting(Touch_Support)</visible>
-		  <!--<visible>!Control.IsVisible(90000)</visible>-->
-		  <visible>![ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus() | ControlGroup(9002).HasFocus() | !IsEmpty(Window(home).Property(SideMenuUp))]</visible>
-		  <visible>!Window.IsVisible(DialogContextMenu.xml)</visible>
-		  <posx>0</posx>
-		  <posy>340</posy>
-		  <width>930</width>
-		  <height>300</height>
-		  <onleft>noop</onleft>
-		  <onright>noop</onright>
-		  <onup condition="Control.IsVisible(7011)">7017</onup>
-		  <onup condition="Control.IsVisible(700)">700</onup>
-		  <onup condition="Control.IsVisible(9009)">9009</onup>
-		  <onup>520</onup>
-		  <ondown condition="Control.IsVisible(9000)">9000</ondown>
-		  <orientation>vertical</orientation>
-		  <include description="מאוזן">MenuDesign_Touch</include>
-		  <content>
-			<include condition="true">Content_Home3</include>
-		  </content>
-	  </control>
-	</control>
+	<include>TouchSupport</include>
   </include>
+  
   <include name="TopVideoInformation">
 	<control type="group">
 	  <!--<animation condition="!System.IdleTime(3)" effect="fade" start="100" end="70" time="1000">Conditional</animation>-->
       <include>Slide3</include>
+	  <include>TopInformationSize0</include>
+	  <include>TopInformationSize7</include>
 	  <visible>[[Window.IsVisible(DialogFullScreenInfo.xml) | Window.IsVisible(VideoOSD.xml) | Window.IsVisible(DialogSubtitles.xml)] + VideoPlayer.IsFullscreen + Player.Paused] | Window.IsVisible(DialogVideoInfo.xml) | [Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | StringCompare(Window(home).Property(Button.ID),97)]] | [StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [Container.Content(Seasons) | Container.Content(Episodes) | [Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(Custom1175.xml)] | !Skin.HasSetting(ShowTopVideoInformation)] | StringCompare(Container.Viewmode,$LOCALIZE[31010]) | StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31015]) | Control.IsVisible(11) | Control.IsVisible(50) | Control.IsVisible(56) | Control.IsVisible(450) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),TopVideoInformationColor)</visible>
 	  <animation condition="System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
 	  <control type="image" description="מסגרת">

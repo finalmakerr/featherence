@@ -106,6 +106,12 @@
 	<value condition="Skin.String(TopVideoInformationColor)" description="מותאם אישי">$INFO[Skin.String(TopVideoInformationColor)]</value>
   </variable>
   
+  <variable name="MouseColor" description="בחירת צבע עכבר">
+    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),MouseColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="!Skin.String(MouseColor)" description="ברירת מחדל-smoky black">FFFFFFFF</value>
+	<value condition="Skin.String(MouseColor)" description="מותאם אישי">$INFO[Skin.String(MouseColor)]</value>
+  </variable>
+  
   <variable name="IconUnFocusColor" description="בחירת צבע סמל לא נבחר">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),IconUnFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(IconUnFocusColor)" description="ברירת מחדל">FFFFFFFF</value>
@@ -113,7 +119,21 @@
   </variable>
   
   <variable name="IconFocusColor" description="בחירת צבע סמל נבחר">
+    <!--Check if container 9020 have focus-->
+    <value condition="Control.HasFocus(9020) + !Skin.String(IconUnFocusColor)" description="">FFFFFFFF</value>
+	<value condition="Control.HasFocus(9020) + Skin.String(IconUnFocusColor)" description="">$INFO[Skin.String(IconUnFocusColor)]</value>
+	
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),IconFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="!Skin.String(IconFocusColor)" description="ברירת מחדל-light yellow">fffffacd</value>
+	<value condition="Skin.String(IconFocusColor)" description="מותאם אישי">$INFO[Skin.String(IconFocusColor)]</value>
+  </variable>
+  
+  <variable name="IconFocusColorSP" description="בחירת צבע סמל נבחרSP">
+    <!--Check if container 9000 have focus-->
+    <value condition="Control.HasFocus(9000) + !Skin.String(IconUnFocusColor)" description="">FFFFFFFF</value>
+	<value condition="Control.HasFocus(9000) + Skin.String(IconUnFocusColor)" description="">$INFO[Skin.String(IconUnFocusColor)]</value>
+	
+	<value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),IconFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(IconFocusColor)" description="ברירת מחדל-light yellow">fffffacd</value>
 	<value condition="Skin.String(IconFocusColor)" description="מותאם אישי">$INFO[Skin.String(IconFocusColor)]</value>
   </variable>
@@ -462,7 +482,7 @@
 	<value description="הגדרות" condition="Control.HasFocus(129)">$LOCALIZE[1390]</value>
   </variable>
   <variable name="TopInformation2" description="שמאל1 (תיקייה)">
-	<value description="גרסה" condition="Window.IsVisible(Home.xml)">$INFO[System.AddonVersion(skin.featherence)]</value>
+	<value description="גרסה" condition="Window.IsVisible(Home.xml) + !Skin.HasSetting(ShowSkinVersion)">$INFO[System.AddonVersion(skin.featherence)]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[B]$ADDON[script.skin.helper.service 32011][/B]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(Custom1170.xml)">Choose $INFO[Window(home).Property(TEMP)]</value>
 	<value description="סרטים_he" condition="StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://movies,left) | SubString(Container.FolderPath,library://video/movies) | SubString(Container.FolderPath,special://userdata/library/movies/)] + !SubString(Container.FolderName,$LOCALIZE[20342])">($INFO[Container.NumItems]) [COLOR yellow]$VAR[GenreLabel2][/COLOR] $LOCALIZE[20342] $LOCALIZE[31419] </value>
@@ -683,4 +703,13 @@
 	  <value condition="Skin.String(CustomStartupImage)">$INFO[Skin.String(CustomStartupImage)]</value>
 	  <value condition="!Skin.String(CustomStartupImage)">special://skin/fanart.jpg</value>
 	</variable>
+	
+	<variable name="MouseIcon_">
+	  <value condition="!Skin.String(MouseIcon)">pointer/1.png</value>
+	  <value condition="Skin.String(MouseIcon,0)">pointer/0.png</value>
+	  <value condition="Skin.String(MouseIcon,1)">pointer/1.png</value>
+	  <value condition="Skin.String(MouseIcon,2)">pointer/2.png</value>
+	  <value>pointer/1.png</value>
+	</variable>
+	
 </includes>

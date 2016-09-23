@@ -925,6 +925,7 @@ def mode32(value, admin, name, printpoint):
 	elif value == '7':
 		xbmc.sleep(500)
 		setProperty('DoubleClick', '', type="home")
+
 	elif value == '40':
 		addon = 'plugin.video.featherence.kids'
 		if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
@@ -932,8 +933,28 @@ def mode32(value, admin, name, printpoint):
 			General_Language2 = xbmcaddon.Addon(addon).getSetting('General_Language2') ; General_Language2 = str(General_Language2)
 			dialogok(addonString_servicefeatherence(32086).encode('utf-8') % (General_Language2),addonString_servicefeatherence(32087).encode('utf-8'),"",addonString_servicefeatherence(32088).encode('utf-8'),line1c="yellow")
 		
+
+def mode39(value, name, printpoint):
+	'''------------------------------
+	---Reset-default-buttons---------
+	------------------------------'''
+	extra = "" ; TypeError = "" ; value2 = "" ; returned = ""
+	list = ['-> (Exit)', 'Labels', 'Icons','Labels&Icons']
+
+	returned, value2 = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
+
+	if returned == -1: printpoint = printpoint + "9"
+	elif returned == 0: printpoint = printpoint + "8"
+	else: printpoint = printpoint + "7"
+	
+	if "7" in printpoint:
+		if returned == 1: mode215('_', 'RESET-LABEL', name, printpoint)
+		elif returned == 2: mode215('_', 'RESET-ICON', name, printpoint)
+		elif returned == 3: mode215('_', 'RESET', name, printpoint)
+		else: printpoint = printpoint + "8"
+		'''---------------------------'''
 		
-def mode40(value, admin, name, printpoint):
+def mode40(value, name, printpoint):
 	'''------------------------------
 	---Reset-Skin-Settings-----------
 	------------------------------'''
@@ -1247,7 +1268,7 @@ def mode201(value, admin, name, printpoint):
 	if "C" in printpoint:
 		Custom1000(name,40,str(list[returned]),20)
 		'''RESET-BUTTONS-COLORS'''
-		for i in range(18,20):
+		for i in range(17,22):
 			setSkinSetting('0','color'+str(i),"")
 			setSkinSetting('0','color'+str(i)+'.name',"")
 			'''---------------------------'''
@@ -1259,7 +1280,7 @@ def mode201(value, admin, name, printpoint):
 	if "D" in printpoint:
 		Custom1000(name,50,str(list[returned]),20)
 		value1, value1_, value2, value2_, value3, value3_, value4, value4_, value5, value5_ = getRandomColors(admin)
-		for i in range(18,20):
+		for i in range(17,22):
 			x = labelT.get('label'+str(i))
 			if x != "":
 				returnedx, count = getRandom("0", min=1, max=5, percent=50)
@@ -1357,7 +1378,7 @@ def mode201(value, admin, name, printpoint):
 		Custom1000(name,20,str(list[returned]),10)
 		'''RESET BUTTONS PROPERTIES'''
 		count = 0
-		for i in range(18,20):
+		for i in range(17,22):
 			setSkinSetting('0','label'+str(i),"")
 			setSkinSetting('0','color'+str(i),"")
 			setSkinSetting('0','icon'+str(i),"")
@@ -1815,13 +1836,23 @@ def mode215(value, value2, name, printpoint):
 	
 	if value != "" and value != '_': notification_common("2")
 	
+	'''מעודפים'''
+	x = '17' ; id = x
+	if value == "_" or value == x:
+		'''ראשי'''
+		if id != "" and id != None:
+			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(1036))
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'')		
+			'''---------------------------'''
+			
 	'''הגדרות'''
 	x = '18' ; id = x
 	if value == "_" or value == x:
 		'''ראשי'''
 		if id != "" and id != None:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(5),force=True)
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(5))
 			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'')		
 			'''---------------------------'''
 	
@@ -1841,7 +1872,7 @@ def mode215(value, value2, name, printpoint):
 		'''ראשי'''
 		if id != "" and id != None:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(342),force=True)
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(342))
 			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(Videos,MovieTitles,return)')
 			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/movies.png')		
 			'''---------------------------'''
@@ -1892,15 +1923,15 @@ def mode215(value, value2, name, printpoint):
 			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/music.png')
 			'''---------------------------'''
 	
-	'''מעודפים'''
+	'''ריק'''
 	x = '95' ; id = idT2.get(x)
 	if value == "_" or value == x:
 		'''ראשי'''
 		if id != "" and id != None and 1 + 1 == 2:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
-			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(1036))
-			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(134)')
-			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/star.png')
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,"")
+			if not defaultactionbuttons: setSkinSetting('0','action'+id,'')
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'')
 			'''---------------------------'''	
 	
 	'''תמונות'''
@@ -2152,9 +2183,9 @@ def mode232(value, admin, name, printpoint):
 	if printpoint != "": printpoint = printpoint + "_"
 	
 	if not os.path.exists(addons_path + 'script.module.unidecode'):
-		installaddon('script.module.unidecode', update=True)
+		installaddonP('script.module.unidecode', update=True)
 	if not xbmc.getCondVisibility('System.HasAddon(script.skinshortcuts)'):
-		addon1 = installaddon('script.skinshortcuts', update=True)
+		addon1 = installaddonP('script.skinshortcuts', update=True)
 	else:
 		printpoint = printpoint + "0"
 		try:
@@ -2524,11 +2555,19 @@ def setSkin_UpdateLog(admin, Skin_Version, Skin_UpdateDate, datenowS, force=Fals
 					
 					if Skin_ShowLog == 'true':
 						printpoint = printpoint + "A"
-						if Skin_ShowLogN - number2N >= 0:
-							printpoint = printpoint + "B"
-							if xbmc.getCondVisibility('Player.HasVideo'): xbmc.sleep(10000)
-							diaogtextviewer(header, message2)
-							'''---------------------------'''
+						skin_showlog = xbmc.getInfoLabel('Skin.HasSetting(Skin_ShowLog)')
+						if not skin_showlog:
+							skin_showlog2 = xbmc.getInfoLabel('Skin.String(Skin_ShowLog2)')
+							try:
+								skin_showlog2 = int(skin_showlog2)
+							except:
+								skin_showlog2 = 1
+								
+							if number2N <= int(skin_showlog2):
+								printpoint = printpoint + "B"
+								if xbmc.getCondVisibility('Player.HasVideo'): xbmc.sleep(10000)
+								diaogtextviewer(header, message2)
+								'''---------------------------'''
 		else: printpoint = printpoint + '9'
 			
 	setsetting('Skin_UpdateLog',"false")

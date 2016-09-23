@@ -3,5 +3,6 @@
   <defaultcontrol always="true">10</defaultcontrol>
   <controls>
     <include>DialogMenu</include>
+	<include>TouchSupport</include>
   </controls>
 </window>

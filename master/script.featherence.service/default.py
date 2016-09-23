@@ -260,13 +260,20 @@ elif mode == 35:
 	setsetting_custom1(value, 'Fanart_Custom' + str(value2),"")
 	xbmc.executebuiltin('XBMC.Container.Update(%s)' % containerfolderpath )
 	'''---------------------------'''
+
+elif mode == 39:
+	'''------------------------------
+	---Reset-default-buttons---------
+	------------------------------'''
+	name = 'Reset-default-buttons'
+	mode39(value, name, printpoint)
 	
 elif mode == 40:
 	'''------------------------------
 	---Reset-Skin-Settings-----------
 	------------------------------'''
 	name = localize(31803)
-	mode40(value, admin, name, printpoint)
+	mode40(value, name, printpoint)
 	'''---------------------------'''
 
 elif mode == 41:
@@ -405,7 +412,7 @@ elif mode >= 200 and mode <= 249:
 						
 						formula = ""
 						formula = "Skin.Theme=2" + skincurrenttheme
-						for i in range(18,20):
+						for i in range(17,22):
 							x = labelT.get('label'+str(i))
 							if x != "" and x != None:
 								formula = formula + newline + 'label'+str(i)+'=0' + str(x)

@@ -174,105 +174,6 @@
 	<onclick>RunScript(script.featherence.service,,?mode=32&amp;value=6)</onclick>
   </include>
  
-  <include name="VideoPlayerWindow">
-    <control type="group">
-	  <!--<include>Slide1</include>
-	  <height>552</height>
-	  <width>1920</width>-->
-	  <visible>!Window.IsVisible(DialogFavourites.xml)</visible>
-	  <visible>Player.HasVideo</visible>
-	  <control type="videowindow" id="7011" description="חלון וידאו">
-		  <animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-245,624" time="0">Conditional</animation>
-		  <animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="235,624" time="0">Conditional</animation>
-		  <animation description="zoom-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="86,85.5" time="0">Conditional</animation>
-		  <animation description="zoom-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="86,85.5" time="0">Conditional</animation>
-		  <!--<include condition="!StringCompare(Container.Viewmode,$LOCALIZE[31011]) + [!Control.IsVisible(11) | Window.IsVisible(MyPVRGuide.xml)]">Control_Pos6</include>-->
-		  
-		  <animation description="slide-Home-Vertical_he" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,0" time="0">Conditional</animation>
-		  
-		  <include condition="![Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)]">Control_Pos4</include>
-		  <include condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4)">Control_Pos45</include>
-		  <height>1080</height>
-		  <width>1920</width>
-		  <visible>Player.HasVideo</visible>
-	  </control>
-
-	  <control type="image" description="רקע שחור אחורי - מסתיר חלון וידאו על כל המסך">
-		<animation description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]" effect="slide" start="0,0" end="0,250" time="0">Conditional</animation>
-		<animation description="slide-Vertical_he" condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-265,552" time="0">Conditional</animation>
-		<animation description="slide-Vertical_en" condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="265,552" time="0">Conditional</animation>
-		<aspectratio>stretch</aspectratio>
-		<height>1080</height>
-		<width>1920</width>
-		<posy>552</posy>
-		<texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-		<visible>Control.IsVisible(7011)</visible>
-		<visible>[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + !Skin.String(MenuDesign,4)</visible>
-	  </control>
-	  
-	  <control type="button" id="7017">
-		<!--Home.xml-->
-		<animation description="No full Fanart-Vertical_he" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,30" start="100,100" end="86.3,200" time="0">Conditional</animation>
-		<animation description="No full Fanart-Vertical_en" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,30" start="100,100" end="86.3,200" time="0">Conditional</animation>
-		
-		<!--Nav.xml-->
-		<animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-240,320" time="0">Conditional</animation>
-		<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="230,320" time="0">Conditional</animation>
-		<animation description="slide-Vertical" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="75,179" time="0">Conditional</animation>
-		<animation description="slide-others" condition="[Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyPVRChannels.xml)] + ![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)]" effect="slide" start="0,0" end="0,-552" time="0">Conditional</animation>
-		<animation description="slide-others" condition="Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)" effect="slide" start="0,0" end="0,-552" time="0">Conditional</animation>
-		
-		<!--Home.xml-->
-		<include condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)]">Control_Pos33</include>
-		<!--Nav.xml-->
-		<posy>30</posy>
-		<height>522</height>
-		
-		<!--Home.xml-->
-		<onup condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Control.IsVisible(9009)">9009</onup>
-		<onup condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + !Control.IsVisible(9009)">ActivateWindow(12901)</onup>
-		<ondown condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Window.IsVisible(Home.xml) + Control.IsVisible(700)">700</ondown>
-		<ondown condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(9000)]">9000</ondown>
-		<onleft condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew)">9000</onleft>
-		<onleft condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)]">700</onleft>
-		<onright condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew)">9000</onright>
-		<onright condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)]">700</onright>
-		
-		<!--Nav.xml-->
-		<onup condition="Control.HasFocus(7017)">ActivateWindow(12901)</onup>
-		<ondown condition="Window.IsVisible(SettingsCategory.xml) + Control.IsVisible(3)">3</ondown>
-		<ondown condition="Window.IsVisible(MyPVRGuide.xml) + Control.IsVisible(10)">10</ondown>
-		<ondown condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])">51</ondown>
-		<ondown condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(50)]">50</ondown>
-		<ondown condition="StringCompare(Container.Viewmode,$LOCALIZE[31015])">54</ondown>
-		<ondown condition="Control.IsVisible(55)">55</ondown>
-		<ondown condition="Control.IsVisible(56)">56</ondown>
-		<ondown condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])">57</ondown>		  
-		<ondown condition="StringCompare(Container.Viewmode,$LOCALIZE[31014])">58</ondown>
-		
-		<onleft condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Control.IsVisible(90000) + !SubString(Window(home).Property(ViewsSettings),900) + StringCompare(System.Language,Hebrew)">9000</onleft>
-		<onleft condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9001) + StringCompare(System.Language,Hebrew)">9001</onleft>
-		<onleft condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9002) + StringCompare(System.Language,Hebrew)">9002</onleft>
-		<onright condition="StringCompare(Container.Viewmode,$LOCALIZE[31011]) + StringCompare(System.Language,Hebrew)">50</onright>
-		<onright condition="Control.IsVisible(11) + StringCompare(System.Language,Hebrew)">11</onright>
-		
-		<onright condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Control.IsVisible(90000) + !SubString(Window(home).Property(ViewsSettings),900) + !StringCompare(System.Language,Hebrew)">9000</onright>
-		<onright condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9001) + !StringCompare(System.Language,Hebrew)">9001</onright>
-		<onright condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9002) + !StringCompare(System.Language,Hebrew)">9002</onright>
-		<onleft condition="StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !StringCompare(System.Language,Hebrew)">50</onleft>
-		<onleft condition="Control.IsVisible(11) + !StringCompare(System.Language,Hebrew)">11</onleft>
-		
-		<!--All-->
-		<onclick condition="Player.HasVideo">Fullscreen</onclick>
-		<texturefocus border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texturefocus>
-		<texturenofocus colordiffuse="FFFFAAFF"></texturenofocus>
-		<width>1920</width>
-		<visible>Control.IsVisible(7011)</visible>
-	  </control>
-	  
-	  <include>ForwardingRewinding</include>
-	</control>
-  </include>
   <include name="VideoOSDflag">
 	<control type="image">
 	  <aspectratio>keep</aspectratio>
@@ -302,7 +203,7 @@
 	<control type="label">
 	  <posy>400</posy>
 	  <label>$INFO[VideoPlayer.SubtitlesLanguage,badges/countries/v2/,.png]</label>
-	  <visible>Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Skin.HasSetting(Admin3)</visible>
+	  <visible>Skin.HasSetting(Admin)</visible>
 	</control>
   </include>
   <include name="BlackBackground">
@@ -482,35 +383,6 @@
 	  </control>
 	</control>
   </include>
-  <include name="Rating_">
-    <control type="group" description="דירוג">
-	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="60,-38" start="100,100" end="80,80" time="0">Conditional</animation>
-	  <!--<animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
-	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
-	  <height>312</height>
-	  <posx>55</posx>
-	  <posy>37</posy>
-	  <width>135</width>	  
-	  <visible></visible>
-	  <visible>!IsEmpty(ListItem.Rating) + !Skin.HasSetting(Show_Rating)</visible>
-	  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31015])</visible>
-	  <control type="image" description="">
-		<animation condition="true" effect="fade" start="70" end="70" time="0">Conditional</animation>
-		<height>40</height>
-		<posy>4</posy>
-		<texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
-		<width>100%</width>
-	  </control>	  
-	  <control type="image" description="דירוג">
-		  <posy>8</posy>
-		  <width>100%</width>
-		  <height>30</height>
-		  <aspectratio align="center">keep</aspectratio>
-		  <texture background="true">$VAR[TopVideoInformation3]</texture>
-		  <visible>!IsEmpty(ListItem.Rating)</visible>
-	  </control>
-	</control>
-  </include>
   <include name="AutoView" description="Videoviews.xml">
     <control type="button">
 	  <onfocus description="For ID(50)"    condition="Skin.HasSetting(AutoView) + !StringCompare(Container.Viewmode,$LOCALIZE[31010]) + [IsEmpty(Container.FolderPath) + IsEmpty(ListItem.Path) | [StringCompare(ListItem.Path,library://video/) + [StringCompare(Container.FolderPath,library://video/) | IsEmpty(Container.FolderPath) + IsEmpty(Container.FolderName)]] | StringCompare(Container.FolderPath,library://video/tvshows/) + StringCompare(ListItem.Path,library://video/tvshows/) | StringCompare(Container.FolderPath,library://video/movies/) + StringCompare(ListItem.Path,library://video/movies/)]">AlarmClock($LOCALIZE[31010],Container.SetViewMode(50),0,silent)</onfocus>
@@ -591,9 +463,9 @@
   
   <include name="ForwardingRewinding">
     <control type="grouplist" description="תצוגה קדימה/אחורה">
-		<animation description="Horizontal" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [!Skin.String(MenuDesign) | Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3)]" effect="slide" start="0,0" end="0,-240" time="0">Conditional</animation>
+		<animation description="Horizontal" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [!Skin.String(MenuDesign) | Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6)]" effect="slide" start="0,0" end="0,-240" time="0">Conditional</animation>
 		<animation description="Vertical" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + !StringCompare(System.Language,Hebrew) + [Skin.String(MenuDesign,4)]" effect="slide" start="0,0" end="260,0" time="0">Conditional</animation>
-		<animation description="Panel" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1)]" effect="slide" start="0,0" end="0,-490" time="0">Conditional</animation>
+		<animation description="Panel" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]" effect="slide" start="0,0" end="0,-490" time="0">Conditional</animation>
 		<animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="460,0" time="0">Conditional</animation>
 		<left>30</left>
 		<top>950</top>

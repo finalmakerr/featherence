@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="134">
   <defaultcontrol always="true">450</defaultcontrol>
+  <onload condition="StringCompare(Container(450).NumItems,0)">Notification(There are no favourites items to display,Add some and try again!,4000)</onload>
+  <onload condition="StringCompare(Container(450).NumItems,0)">Dialog.Close(134)</onload>
   <controls>
 	<include>Backgrounds3</include>
     <include>ViewDesign_450</include>
@@ -8,5 +10,6 @@
 	<include>TopVideoInformation</include>
 	<include>ScrollBar</include>
 	<include>TopInformation</include>
+	<include>TouchSupport</include>
   </controls>
 </window>

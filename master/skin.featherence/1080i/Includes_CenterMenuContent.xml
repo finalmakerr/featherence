@@ -10,7 +10,7 @@
 		<onclick description="1139" condition="!IsEmpty(Window(home).Property(Button.ID_)) + !IsEmpty(Window(home).Property(SubButton.ID_)) + Window.IsVisible(Custom1139.xml)">Skin.ToggleSetting(off$INFO[Window(home).Property(SubButton.ID_)])</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/bolt.png</thumb>
-		<visible>!Window.IsVisible(Custom1139.xml) + IntegerGreaterThan(Window(home).Property(Button.ID),80) | Window.IsVisible(Custom1139.xml)</visible>
+		<visible>!Window.IsVisible(Custom1139.xml) + [IntegerGreaterThan(Window(home).Property(Button.ID),80) | !IntegerGreaterThan(Window(home).Property(Button.ID),17)] | Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="701" description="שינוי שם">
 		<label>118</label>
@@ -21,6 +21,7 @@
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/pencil.png</thumb>
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) | Window.IsVisible(Custom1139.xml)</visible>
+		<visible>![StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)]</visible>
 	  </item>
 	  <item id="702" description="בחירת סמל">
 		<label>19284</label>
@@ -38,7 +39,8 @@
 		<onclick>RunScript(script.featherence.service,,?mode=232&amp;value=)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
-		<visible>[!Window.IsVisible(Custom1138.xml) + [IntegerGreaterThan(Window(home).Property(Button.ID),99) | Skin.HasSetting(DefaultActionButtons) + IntegerGreaterThan(Window(home).Property(Button.ID),89)] + !IntegerGreaterThan(Window(home).Property(Button.ID),200)] | [Window.IsVisible(Custom1139.xml) + !SubString(Window(home).Property(SubButton.ID_),_90)] | !IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		<visible>[!Window.IsVisible(Custom1138.xml) + [IntegerGreaterThan(Window(home).Property(Button.ID),99) | Skin.HasSetting(DefaultActionButtons) + [IntegerGreaterThan(Window(home).Property(Button.ID),89) | !IntegerGreaterThan(Window(home).Property(Button.ID),17)] ] + !IntegerGreaterThan(Window(home).Property(Button.ID),200)] | [Window.IsVisible(Custom1139.xml) + !SubString(Window(home).Property(SubButton.ID_),_90)] | !IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		<visible>![StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)]</visible>
 	  </item>
 	  <item id="704" description="הזזת פריט">
 		<label>13251</label>
@@ -84,6 +86,7 @@
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/paintbucket.png</thumb>
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + IsEmpty(Window(home).Property(WidgetButton.ID_)) | Window.IsVisible(Custom1139.xml) + Skin.HasSetting(SubBackground) | !IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.HasSetting(WidgetBackground)</visible>
+		<visible>![StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)]</visible>
 	  </item>
 	  <item id="709" description="רקע אקראי">
 		<label>$VAR[label709] - $VAR[Button708]</label>
@@ -112,6 +115,7 @@
 		<thumb>special://home/addons/script.featherence.service/resources/icons/present.png</thumb>
 		<visible>[Window.IsVisible(Custom1175.xml) | Window.IsVisible(Custom1138.xml)] + !Window.IsVisible(Custom1139.xml)</visible>
 		<visible>IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		<visible>![StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)]</visible>
 	  </item>
 	  <item id="720" description="הסרת פריט">
 		<label>$LOCALIZE[31048]</label>
@@ -140,11 +144,6 @@
 		<thumb>special://home/addons/script.featherence.service/resources/icons/bolt.png</thumb>
 		<visible>!Window.IsVisible(Custom1139.xml) + IntegerGreaterThan(Window(home).Property(Button.ID),80) | Window.IsVisible(Custom1139.xml)</visible>
 		<visible>IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
-	  </item>
-	  <item id="723" description="">
-		<label>ADMIN</label>
-		<onclick>Skin.ToggleSetting(del74_94)</onclick>
-		<visible>Skin.HasSetting(Admin) + Skin.HasSetting(Admin3) + !Skin.HasSetting(Admin2)</visible>
 	  </item>
   </include>
   

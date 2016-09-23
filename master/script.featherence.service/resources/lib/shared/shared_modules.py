@@ -1343,7 +1343,7 @@ def setSkinSetting(custom,set1,set1v, force=False):
 		---SET-SKIN-SETTING-1------------
 		------------------------------'''
 		#set1 = to_utf8(set1)
-		name = 'setSkinSetting' ; printpoint = "" ; admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)') ; admin2 = xbmc.getInfoLabel('Skin.HasSetting(Admin2)') ; setting1 = ""
+		name = 'setSkinSetting' ; printpoint = "" ; setting1 = ""
 		
 		if '$LOCALIZE' in set1v or '$ADDON' in set1v: 
 			try:

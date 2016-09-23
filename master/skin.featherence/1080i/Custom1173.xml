@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1173">
   <defaultcontrol always="true">100</defaultcontrol>
+  <onload condition="IsEmpty(Window(home).Property(PassProtect)) + Skin.String(PassProtect) + Skin.HasSetting(PassProtect)">Dialog.Close(1173)</onload>
+  <onload condition="IsEmpty(Window(home).Property(PassProtect)) + Skin.String(PassProtect) + Skin.HasSetting(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=PassProtect)</onload>
   <!--<include condition="!StringCompare(Window(home).Property(TEMP2),SKIP)">onunload_ClearProperty_MainMenu</include>
   <include condition="!StringCompare(Window(home).Property(TEMP2),SKIP)">onunload_ClearProperty_SubMenu</include>-->
   <controls>
@@ -12,5 +14,6 @@
 	  </control>
 	<include>ScrollBar</include>
 	<include>TopVideoInformation</include>
+	<include>TouchSupport</include>
   </controls>
 </window>

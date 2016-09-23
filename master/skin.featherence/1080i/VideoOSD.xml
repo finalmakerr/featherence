@@ -94,7 +94,7 @@
                     <width>100</width>
 					<height>100</height>
 					<onclick>ActivateWindow(osdaudiosettings)</onclick>
-					<visible>!IsEmpty(Window(home).Property(OSDPlus))</visible>
+					<visible>!IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(VideoAudioOSDAlwaysOn)</visible>
 				</control>
 				<control type="button" id="702" description="הגדרות וידאו">
 					<texturefocus>osd/buttons/OSDVideoFO.png</texturefocus>
@@ -102,7 +102,7 @@
 					<width>100</width>
 					<height>100</height>
 					<onclick>ActivateWindow(osdvideosettings)</onclick>
-					<visible>!IsEmpty(Window(home).Property(OSDPlus))</visible>
+					<visible>!IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(VideoAudioOSDAlwaysOn)</visible>
 				</control>
 				<control type="button" id="709" description="רשימת השמעה">
 					<texturefocus>osd/buttons/OSDBookMarksFO.png</texturefocus>
@@ -316,5 +316,6 @@
 		  <include>TopVideoInformation</include>
 		</control>
 	  </control>
+	  <include>TouchSupport</include>
 	</controls>
 </window>

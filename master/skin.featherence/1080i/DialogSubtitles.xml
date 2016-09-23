@@ -607,5 +607,6 @@
 	  </include>
 	  <include>TopInformation</include>
 	  <include>TopVideoInformation</include>
+	  <include>TouchSupport</include>
 	</controls>
 </window>

@@ -207,7 +207,7 @@
 		  <label>$LOCALIZE[31047]</label>
 		  <selected>!Skin.HasSetting(Show_Rating)</selected>
 		  <onclick>Skin.ToggleSetting(Show_Rating)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
         </control>
 		<control type="button" id="113" description="שקיפות פאנארט">
 		  <include>SideMenuCommon</include>

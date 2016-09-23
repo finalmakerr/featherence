@@ -3,5 +3,6 @@
   <defaultcontrol always="true">9005</defaultcontrol>
   <controls>
     <include>MenuDesign_Center</include>
+	<include>TouchSupport</include>
   </controls>
 </window>
