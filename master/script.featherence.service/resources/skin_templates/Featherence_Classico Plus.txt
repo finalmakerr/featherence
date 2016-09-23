@@ -1,4 +1,9 @@
 ------------------------
+Featherence Classico Plus (23-Sep-16)
+------------------------
+- Update design to fit the new changes of Featherence 6.0
+
+------------------------
 Featherence Classico Plus (11-Sep-16)
 ------------------------
 - Added Kodi Popcorn Time addon.
@@ -6,7 +11,6 @@ Featherence Classico Plus (11-Sep-16)
 - Minor bugs fix.
 - Removed Torrenter addon.
 - Update advancedsettings.xml
-
 
 This build is now auto-update and available through the load button (save/load), changelog included from within Kodi.
 
