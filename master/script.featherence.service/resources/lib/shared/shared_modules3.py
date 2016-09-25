@@ -1246,36 +1246,55 @@ def apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, titl
 	
 	return id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__
 
-def setView_(content, viewType, containerfolderpath2):
-	'''set content type so library shows more views and info'''
-	name = 'setView' ; printpoint = ""
+def getView(x, viewtype, containerfolderpath, containerfolderpath2):
+	name = 'getView' ; printpoint = "" ; x = "" ; z = "" ; s = ""
 	
-	if content:
+	mainmenu = regex_from_to(containerfolderpath, 'plugin://' + addonID, '/', excluding=False)
+	submenu = regex_from_to(containerfolderpath2, 'plugin://' + addonID, '/', excluding=False)
+	if containerfolderpath2.replace(mainmenu,"") == "": x = General_AutoView0 ; printpoint = printpoint + "2" ; z = addonString_servicefeatherence(32151).encode('utf-8') ; s = 'General_AutoView0'
+	elif containerfolderpath.replace(submenu,"") == "": x = General_AutoView1 ; printpoint = printpoint + "3" ; z = addonString_servicefeatherence(32153).encode('utf-8') ; s = 'General_AutoView1'
+	else: x = General_AutoView9 ; printpoint = printpoint + "4" ; z = addonString_servicefeatherence(32152).encode('utf-8') ; s = 'General_AutoView9'
+	
+	'''------------------------------
+	---PRINT-END---------------------
+	------------------------------'''
+	text = "viewtype" + space2 + str(viewtype) + newline + \
+	"containerfolderpath" + space2 + str(containerfolderpath) + newline + \
+	"containerfolderpath2" + space2 + str(containerfolderpath2) + newline + \
+	"x" + space2 + str(x) + newline + \
+	"z" + space2 + str(z) + newline + \
+	"mainmenu" + space2 + str(mainmenu) + newline + \
+	"submenu" + space2 + str(submenu) + newline + \
+	"General_AutoView0" + space2 + str(General_AutoView0) + newline + \
+	"General_AutoView1" + space2 + str(General_AutoView1) + newline + \
+	"General_AutoView9" + space2 + str(General_AutoView9)
+	
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	
+	return x, z, s
+	
+def setView(viewtype, containerfolderpath, containerfolderpath2):
+	'''set content type so library shows more views and info'''
+	name = 'setView' ; printpoint = ""; x = "" ; z = ""
+	
+	if 1 + 1 == 3:
 		printpoint = printpoint + "1"
 		xbmcplugin.setContent(int(sys.argv[1]), content)
-	if viewType == None:
-		printpoint = printpoint + "2"
-		if containerfolderpath2 == 'plugin://' + addonID + "/": viewType = 50
-		elif viewType == None: pass
-		elif content == 'episodes': viewType = 50
-		elif content == 'seasons': viewType = 50
-		elif viewType == 1: content = 'movies'
-		elif viewType == 2: content = 'tvshows'
-		
-
-	if General_AutoView == "true" and viewType != None and 1 + 1 == 3:
-		if xbmc.getSkinDir() == 'skin.featherence':
-			xbmc.executebuiltin("Container.SetViewMode(%s)" % str(viewType) )
-			printpoint = printpoint + "7"
-			'''---------------------------'''
-		else: printpoint = printpoint + "8"
+	
+	x, z, s = getView(x, viewtype, containerfolderpath, containerfolderpath2)
+	
+	if x != "":
+		printpoint = printpoint + "7"
+		xbmc.executebuiltin("Container.SetViewMode(%s)" % str(x) )
+		'''---------------------------'''
 	else: printpoint = printpoint + "9"
 
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
-	text = "content" + space2 + str(content) + space + "viewType" + space2 + str(viewType) + newline + \
-	"containerfolderpath2" + space2 + containerfolderpath2
+	text = "viewtype" + space2 + str(viewtype) + newline + \
+	"x" + space2 + str(x) + newline + \
+	"z" + space2 + str(z)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 			
@@ -2490,7 +2509,7 @@ def pluginend(admin):
 	return url, name, mode, iconimage, desc, num, viewtype, fanart
 		
 def pluginend2(admin, url, containerfolderpath, viewtype):
-	printpoint = "" ; count = 0 ; countmax = 10 ; url = str(url) ; containerfolderpath2 = ""
+	printpoint = "" ; count = 0 ; countmax = 50 ; url = str(url) ; containerfolderpath2 = ""
 	
 	setProperty('script.featherence.service_resolved', '', type="home")
 	dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
@@ -2498,7 +2517,7 @@ def pluginend2(admin, url, containerfolderpath, viewtype):
 	while count < countmax and (dialogbusyW or dialogprogressW or count < 2) and not xbmc.abortRequested:
 		count += 1
 		if count == 1: printpoint = printpoint + "1"
-		xbmc.sleep(500)
+		xbmc.sleep(100)
 		dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
 		dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)')
 		'''---------------------------'''
@@ -2511,16 +2530,7 @@ def pluginend2(admin, url, containerfolderpath, viewtype):
 
 		if containerfolderpath != containerfolderpath2 and General_AutoView == "true":
 			printpoint = printpoint + "5"
-			if viewtype == 0: viewtype = 'movies'
-			
-			try: xbmcplugin.setContent(int(sys.argv[1]), viewtype)
-			except:
-				viewtype = 'movies'
-				xbmcplugin.setContent(int(sys.argv[1]), viewtype)
-
-			plugin = regex_from_to(containerfolderpath, 'plugin://', '/', excluding=False)
-			if containerfolderpath.replace(plugin,"") == "": viewtype = 'mainmenu'
-			setView(viewtype, {'skin.featherence': 50, 'skin.confluence': 500})
+			setView(viewtype, containerfolderpath, containerfolderpath2)
 			'''---------------------------'''
 	
 	'''------------------------------
@@ -2533,8 +2543,44 @@ def pluginend2(admin, url, containerfolderpath, viewtype):
 	"url" + space2 + str(url)
 	printlog(title='pluginend2', printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
-	
+
 def addView(viewtype):
+	name = 'addView' ; printpoint = "" ; TypeError = "" ; extra = "" ; x = ""
+	
+	containerfolderpath2 = containerfolderpath
+	x, z, s = getView(x, viewtype, containerfolderpath, containerfolderpath2)
+	
+	'''Get Viewmode number'''
+	import xbmcvfs
+	
+	skin = xbmc.getSkinDir()
+	skinPath = xbmc.translatePath('special://skin/')
+	xml = os.path.join(skinPath,'addon.xml')
+	file = xbmcvfs.File(xml)
+	read = file.read().replace('\n','')
+	file.close()
+	try: src = re.compile('defaultresolution="(.+?)"').findall(read)[0]
+	except: src = re.compile('<res.+?folder="(.+?)"').findall(read)[0]
+	src = os.path.join(skinPath, src)
+	src = os.path.join(src, 'MyVideoNav.xml')
+	file = xbmcvfs.File(src)
+	read = file.read().replace('\n','')
+	file.close()
+	views = re.compile('<views>(.+?)</views>').findall(read)[0]
+	views = [int(x) for x in views.split(',')]
+	for view in views:
+		label = xbmc.getInfoLabel('Control.GetLabel(%s)' % (view))
+		if not (label == '' or label == None): break
+	x = str(view)
+	
+	y = xbmc.getInfoLabel('Container.Viewmode')
+	if addonID != "" and addonID != 'script.featherence.service' and s != "":
+		setsetting_custom1(addonID, s, str(x))
+		notification('View Mode: ' + str(to_utf8(y)) + space + '(' + str(to_utf8(x)) + ')',str(to_utf8(z)),'',4000)
+	else:
+		notification_common('17')
+	
+def addView_(viewtype):
     name = 'addView' ; printpoint = "" ; TypeError = "" ; extra = "" ; content = ""
     import xbmcvfs
     try:
@@ -2580,45 +2626,7 @@ def addView(viewtype):
 	'view' + space2 + str(view) + newline + \
 	extra
 	printlog(title=name, printpoint=printpoint, text=text, level=7, option="")
-
-def setView(viewtype, viewDict=None)	:
-	name = 'setView' ; printpoint = "" ; TypeError = "" ; extra = "" ; content = ""
-	try:
-		from sqlite3 import dbapi2 as database
-	except:
-		from pysqlite2 import dbapi2 as database
 	
-	#for i in range(0,200):
-	if viewtype != "":
-		printpoint = printpoint + '3'
-		try:
-			skin = xbmc.getSkinDir()
-			record = (skin, viewtype)
-			dcon = database.connect(os.path.join(addonProfile, 'views.db'))
-			dcur = dbcon.cursor()
-			dbcur.execute("SELECT * FROM views WHERE skin = '%s' AND view_type = '%s'" % (record[0], record[1]))
-			view = dbcur.fetchone()
-			view = view[2]
-			if view == None: raise Exception()
-			return xbmc.executebuiltin('Container.SetViewMode(%s)' % str(view))
-		except Exception, TypeError:
-			printpoint = printpoint + '9'
-			extra = 'TypeError' + space2 + str(TypeError)
-	else:
-		printpoint = printpoint + '4'
-	
-	xbmc.sleep(100)
-	
-	text = "content" + space2 + str(content) + space + newline + \
-	'viewtype' + space2 + str(viewtype) + newline + \
-	extra
-	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
-	
-	if '9' in printpoint:
-		try: return xbmc.executebuiltin('Container.SetViewMode(%s)' % str(viewDict[skin]))
-		except: return
-
-		
 def getCustom_Playlist(admin):
 	'''Get the next new Item ID of a user favourite'''
 	returned = "" ; printpoint = ""

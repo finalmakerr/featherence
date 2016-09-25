@@ -139,7 +139,7 @@ elif mode == 23:
 	------------------------------'''
 	name = "Widget"
 	if xbmcaddon.Addon('script.featherence.service').getSetting('widget_enable') == 'true':
-		if value == '1': xbmc.executebuiltin('ActivateWindow(0)') ; xbmc.sleep(200) ; xbmc.executebuiltin('Action(PageUp)')
+		if value == '1': xbmc.executebuiltin('ActivateWindow(Home.xml)') ; xbmc.sleep(200) ; xbmc.executebuiltin('Action(PageUp)')
 		elif value == '2': pass
 		from widget import *
 		Main()
@@ -185,14 +185,6 @@ elif mode == 24:
 		value_episode = xbmc.getInfoLabel('Window(home).Property('+value+'.Episode)')
 		value_season = xbmc.getInfoLabel('Window(home).Property('+value+'.Season)')
 		'''---------------------------'''
-		setProperty('TopVideoInformation1', value_runtime, type="home")
-		setProperty('TopVideoInformation2', value_year, type="home")
-		setProperty('TopVideoInformation3', value_rating, type="home")
-		setProperty('TopVideoInformation5', value_plot, type="home")
-		setProperty('TopVideoInformation6', value_genre, type="home")
-		if systemlanguage == 'Hebrew': setProperty('TopVideoInformation7', '[COLOR yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Episode)][/B][/COLOR] $LOCALIZE[20452]: [COLOR yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Season)][/B][/COLOR] $LOCALIZE[20373]: [COLOR yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Title)][/B][/COLOR] $LOCALIZE[21442]: )', type="home")
-		else: setProperty('TopVideoInformation7', '$LOCALIZE[21442]: [COLOR yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Title)][/B][/COLOR] S: [COLOR yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Season)][/B][/COLOR] E: [COLOR yellow][B]$INFO[Window(Home).Property(RecentEpisode.1.Episode)][/B][/COLOR])', type="home")
-		setProperty('TopVideoInformation8', value_tvshowtitle, type="home")
 		xbmc.executebuiltin('PlayMedia('+value_file+')')
 		xbmc.executebuiltin('AlarmClock(mode10,RunScript(script.featherence.service,,?mode=10&amp;value=),1,silent)')
 		

@@ -89,7 +89,13 @@ class Main:
         self.WINDOW = xbmcgui.Window(10000)
        #self.Player = Widgets_Player(action = self._update)
         self.Monitor = Widgets_Monitor(update_listitems = self._update, update_settings = self._on_change)
-        self.LIMIT = 10
+        x = xbmc.getInfoLabel('Skin.String(MTWidgetItems)')
+        try:
+            x = int(x)
+        except:
+            x = 10
+        
+        self.LIMIT = x
 
     def _on_change(self):
         clearlist_groups = ['Recommended','Random','Recent']

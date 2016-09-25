@@ -28,6 +28,19 @@ General_TVModeShuffle = getsetting('General_TVModeShuffle')
 General_TVModeDialog = getsetting('General_TVModeDialog')
 
 try:
+	General_AutoView0 = getsetting('General_AutoView0')
+	General_AutoView1 = getsetting('General_AutoView1')
+	General_AutoView9 = getsetting('General_AutoView9')
+except:
+	General_AutoView0 = 50
+	General_AutoView1 = 50
+	General_AutoView9 = 50
+
+if General_AutoView0 == "": General_AutoView0 = 50
+if General_AutoView1 == "": General_AutoView1 = 50
+if General_AutoView9 == "": General_AutoView9 = 50
+	
+try:
 	General_TVModeForce = getsetting('General_TVModeForce')
 except:
 	General_TVModeForce = "false"

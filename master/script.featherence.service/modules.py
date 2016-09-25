@@ -173,6 +173,7 @@ def mode8(admin, name, printpoint):
 	'''------------------------------
 	---SMART-SUBTITLE-SEARCH---------
 	------------------------------'''
+	setPlayerInfo()
 	input = xbmc.getInfoLabel('Window(home).Property(VideoPlayer.Title)')
 	if input == "":
 		input = xbmc.getInfoLabel('VideoPlayer.Title')
@@ -206,7 +207,7 @@ def mode9(admin, name):
 	property_dialogsubtitlesna9 = xbmc.getInfoLabel('Window(home).Property(DialogSubtitlesNA9)')
 	property_dialogsubtitlesna10 = xbmc.getInfoLabel('Window(home).Property(DialogSubtitlesNA10)')
 	subL = [property_dialogsubtitles2, property_dialogsubtitlesna1, property_dialogsubtitlesna2, property_dialogsubtitlesna3, property_dialogsubtitlesna4, property_dialogsubtitlesna5, property_dialogsubtitlesna6, property_dialogsubtitlesna7, property_dialogsubtitlesna8, property_dialogsubtitlesna9, property_dialogsubtitlesna10]
-	listL = ['Subscenter.org', 'Subtitle.co.il', 'OpenSubtitles.org', 'Torec']
+	listL = ['Subscenter.org', 'Ktuvit.com', 'OpenSubtitles.org', 'Torec', 'Quasar']
 	dialogsubtitlesW = xbmc.getCondVisibility('Window.IsVisible(DialogSubtitles.xml)')
 	controlgetlabel100 = xbmc.getInfoLabel('Control.GetLabel(100)')
 	controlhasfocus120 = xbmc.getCondVisibility('Control.HasFocus(120)') #MAIN
@@ -304,7 +305,7 @@ def mode9(admin, name):
 					'''------------------------------
 					---REFRESH-----------------------
 					------------------------------'''
-					if controlgetlabel100 == "Subtitle.co.il": xbmc.sleep(1000)
+					if controlgetlabel100 == "Ktuvit.com": xbmc.sleep(1000)
 					notification('$LOCALIZE[31861]',"","",2000)
 					systemcurrentcontrol = findin_systemcurrentcontrol("0",controlgetlabel100,40,'Action(Down)','')
 					systemcurrentcontrol = findin_systemcurrentcontrol("0",controlgetlabel100,40,'Action(Down)','')
@@ -383,7 +384,9 @@ def ClearSubHisotry():
 	for i in range(1,11):
 		setProperty('DialogSubtitlesNA'+str(i),"",type="home")
 			
-def setPlayerInfo(admin):
+def setPlayerInfo():
+	name = 'setPlayerInfo' ; printpoint = ""
+	
 	type = None
 	playertitle = xbmc.getInfoLabel('Player.Title')
 	videoplayercontentEPISODE = xbmc.getCondVisibility('VideoPlayer.Content(episodes)')
@@ -394,17 +397,23 @@ def setPlayerInfo(admin):
 	videoplayertagline = xbmc.getInfoLabel('VideoPlayer.Tagline')
 	videoplayertitle = xbmc.getInfoLabel('VideoPlayer.Title')
 	videoplayertvshowtitle = xbmc.getInfoLabel('VideoPlayer.TVShowTitle')
+	playertitle = xbmc.getInfoLabel('Player.Title')
+	playerfilename = xbmc.getInfoLabel('Player.Filename')
 	videoplayeryear = xbmc.getInfoLabel('VideoPlayer.Year')
 	
 	if (videoplayertvshowtitle != "" and videoplayerseason != "" and videoplayerepisode != "" and videoplayertagline == ""): type = 1
-	elif (videoplayertitle != "" and (videoplayeryear != "" or videoplayercountry != "" or videoplayertagline != "")): type = 2
+	elif (videoplayertitle != "" and (videoplayeryear != "" or videoplayercountry != "" or videoplayertagline != "")): type = 0
 	elif videoplayercontentEPISODE: type = 1
 	elif videoplayercontentMOVIE: type = 0
-	else: type = 2
+	else: type = 2 ; printpoint = printpoint + '2'
 	
 	if type != "":
-		if type == 0: input = str(videoplayertitle) + space + videoplayeryear # + space + videoplayervideoresolution #+ space + videoplayervideocodec
+		printpoint = printpoint + '3'
+		if type == 0:
+			printpoint = printpoint + '4'
+			input = str(videoplayertitle) + space + str(videoplayeryear)
 		elif type == 1:
+			printpoint = printpoint + '5'
 			try: seasonN = int(videoplayerseason)
 			except: seasonN = ""
 			try: episodeN = int(videoplayerepisode)
@@ -418,9 +427,25 @@ def setPlayerInfo(admin):
 			'''---------------------------'''
 		else: input = playertitle
 		
+		printpoint = printpoint + '7'
 		setProperty('VideoPlayer.Title', str(input), type="home")
 	
-	#xbmc.executebuiltin('Action(Info)')
+	
+	text = 'input' + space2 + str(to_utf8(input)) + space + 'type' + space2 + str(type) + newline + \
+	'playertitle' + space2 + str(to_utf8(playertitle)) + newline + \
+	'videoplayercontentEPISODE' + space2 + str(to_utf8(videoplayercontentEPISODE)) + newline + \
+	'videoplayercontentMOVIE' + space2 + str(to_utf8(videoplayercontentMOVIE)) + newline + \
+	'videoplayercountry' + space2 + str(to_utf8(videoplayercountry)) + newline + \
+	'videoplayerseason' + space2 + str(to_utf8(videoplayerseason)) + newline + \
+	'videoplayerepisode' + space2 + str(to_utf8(videoplayerepisode)) + newline + \
+	'videoplayertagline' + space2 + str(to_utf8(videoplayertagline)) + newline + \
+	'videoplayertitle' + space2 + str(to_utf8(videoplayertitle)) + newline + \
+	'videoplayertvshowtitle' + space2 + str(to_utf8(videoplayertvshowtitle)) + newline + \
+	'playertitle' + space2 + str(to_utf8(playertitle)) + newline + \
+	'videoplayeryear' + space2 + str(to_utf8(videoplayeryear)) + newline + \
+	'playerfilename' + space2 + str(to_utf8(playerfilename))
+	
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def videostarttweak(admin):
 	playercache = xbmc.getInfoLabel('Player.CacheLevel')
@@ -445,14 +470,14 @@ def mode10(admin, name, printpoint):
 	'''------------------------------
 	---VideoPlayer demon-------------
 	------------------------------'''
-	#notification('mode10 start','','',2000)
+	xbmc.sleep(3000)
 	if property_mode10 == "":
 		setProperty('mode10', 'true', type="home")
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')
 		playerhasaudio = xbmc.getCondVisibility('Player.HasAudio')
 		dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy)')
 		dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress)')
-		setPlayerInfo(admin)
+		setPlayerInfo()
 		videostarttweak(admin)
 		ii = 0
 		if playerhasvideo and xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)'): xbmc.executebuiltin('Action(Info)')
@@ -469,12 +494,6 @@ def mode10(admin, name, printpoint):
 				ii += 1
 			elif ii > 0: ii -= 1
 			'''---------------------------'''
-		for i in range(1,10):
-			setProperty('TopVideoInformation' + str(i), "", type="home")
-		if xbmc.getInfoLabel('Window(home).Property(VideoPlayer.Title)') != "":
-			if xbmcaddon.Addon('script.featherence.service').getSetting('widget_enable') == 'true':
-				if not xbmc.getCondVisibility('IntegerGreatherThan(Playlist.Length(video),1)'):
-					pass #printpoint = printpoint + "5"
 		
 		ClearSubHisotry()
 		setProperty('mode10', "", type="home")

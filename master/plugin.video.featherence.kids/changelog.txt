@@ -3,6 +3,14 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence Kids v0.2.11 (25-Sep-16)
+------------------------
+- Added happy birthday songs in Hebrew and English.
+- Major update of autoview feature.
+Work on any skin now and you may add your default view for Main Menu, Sub Menu, and all others window from the addon settings or/and the context menu (Set View).
+- Minor links update.
+
+------------------------
 Featherence Kids v0.2.10 (25-Aug-16)
 ------------------------
 - Added repository.kodil support.

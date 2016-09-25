@@ -548,16 +548,16 @@ msgid "Action completed successfully!"
 msgstr "הפעולה הסתיימה בהצלחה!"
 
 msgctxt "#32151"
-msgid ""
-msgstr ""
+msgid "Main Menu"
+msgstr "תפריט ראשי"
 
 msgctxt "#32152"
-msgid ""
-msgstr ""
+msgid "All others"
+msgstr "כל האחרים"
 
 msgctxt "#32153"
-msgid ""
-msgstr ""
+msgid "Sub Menu"
+msgstr "תפריט משני"
 
 msgctxt "#32154"
 msgid ""
