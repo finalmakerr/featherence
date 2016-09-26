@@ -4,6 +4,9 @@
 		<setting type="lsep" label=""/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32397]"/>
 		<setting id="General_AutoView" type="bool" default="true" label="$LOCALIZE[98]" visible="true"/>
+		<setting id="General_AutoView0" type="number" default="" label="$ADDON[script.featherence.service 32151]" visible="eq(-1,true)"/>
+		<setting id="General_AutoView1" type="number" default="" label="$ADDON[script.featherence.service 32153]" visible="eq(-2,true)"/>
+		<setting id="General_AutoView9" type="number" default="" label="$ADDON[script.featherence.service 32152]" visible="eq(-3,true)"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32413]"/>
 		<setting id="General_TVModeDialog" type="bool" default="true" label="$ADDON[script.featherence.service 32417]" visible="true"/>
 		<setting id="General_TVModeShuffle" type="bool" default="true" label="$ADDON[script.featherence.service 32418]" enable="eq(-1,true)" subsetting="true"/>
