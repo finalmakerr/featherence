@@ -27,17 +27,19 @@ ___
 ------------------------
 Featherence v0.6.1 (xx-Sep-16)
 ------------------------
+- Added option to color font of Top Information bar and Top Video Information bar.
 - Added option to always hide library updating progress dialog when watching a video.
 - Added option to tweak maximum movies/tvshows widget items.
 - Added two news mouse icons.
 - Major update of DialogSubtitles window.
 Added option to show current subtitle (Yellow) and previous (Grey) subtitles (WIP).
 Added auto refresh for current subtitles provider and skip to next if none are found and user is idle.
-- Minor bug fix with VideoOSD window not closing properly on home screen.
 - Major update of Smart search string feature (subtitles).
-- Minor update of fanart position when browsing on some windows while video is playing.
+- Minor bug fix with VideoOSD window not closing properly on home screen.
 - Minor design update of the three additionals small buttons.
 Also added a sync for big icons feature between the standards and those small icons.
+- Minor update of fanart position when browsing on some windows while video is playing.
+- Minor update of save/load feature.
 
 ------------------------
 Featherence v0.6.0 (23-Sep-16)
