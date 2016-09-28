@@ -487,6 +487,9 @@ elif mode >= 200 and mode <= 249:
 						
 						for y in list0:
 							x = xbmc.getInfoLabel('Skin.String('+y+')')
+							if os.path.isdir(x) or os.path.isfile(x):
+								x2, x2_ = TranslatePath(x)
+								if x2_ != "": x = x2_
 							formula = formula + newline + y+'=0' + str(x)
 							'''---------------------------'''
 							

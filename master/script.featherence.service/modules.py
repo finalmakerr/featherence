@@ -22,6 +22,7 @@ def mode4(value, value2, value3, name, printpoint):
 		
 def mode5(value, admin, name, printpoint):
 	'''startup'''
+	setProperty('TEMP', 'startup', type="home")
 	
 	addon = 'plugin.video.featherence.docu'
 	if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
@@ -52,7 +53,9 @@ def mode5(value, admin, name, printpoint):
 		installaddonP('script.module.unidecode', update=False)
 		installaddonP('script.skinshortcuts', update=True)
 		xbmc.sleep(2000) ; setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
-
+	
+	setProperty('TEMP', '', type="home")
+	
 def mode6(value):
 	name = 'mode6 (pwd)' ; printpoint = ""
 	passprotect = xbmc.getInfoLabel('Skin.String(PassProtect)')
@@ -944,7 +947,11 @@ def mode32(value, admin, name, printpoint):
 	elif value == '7':
 		xbmc.sleep(500)
 		setProperty('DoubleClick', '', type="home")
-
+	
+	elif value == '8':
+		xbmc.sleep(500)
+		xbmc.executebuiltin('ActivateWindow(1170)')
+		
 	elif value == '40':
 		addon = 'plugin.video.featherence.kids'
 		if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
@@ -1853,7 +1860,7 @@ def mode215(value, value2, name, printpoint):
 	extra2 = "" ; id = ""
 	exe = printlog(title="test", printpoint="", text="", level=0, option="")
 	
-	if value != "" and value != '_': notification_common("2")
+	if value != "" and value != '_' or xbmc.getInfoLabel('Skin.HasSetting(Admin)'): notification_common("2")
 	
 	'''מעודפים'''
 	x = '17' ; id = x
@@ -1862,6 +1869,7 @@ def mode215(value, value2, name, printpoint):
 		if id != "" and id != None:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(1036))
+			if not defaultactionbuttons: setSkinSetting('0','action'+id,'ActivateWindow(134)')
 			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'')		
 			'''---------------------------'''
 			
