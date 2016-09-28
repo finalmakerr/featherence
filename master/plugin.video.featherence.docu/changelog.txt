@@ -3,8 +3,11 @@ WIP (WORK IN PROGRESS)--
 ------------------------
 
 ------------------------
-Featherence Docu v0.1.13 (xx-Aug-16)
+Featherence Docu v0.1.13 (28-Sep-16)
 ------------------------
+- Major update of autoview feature.
+Work on any skin now and you may add your default view for Main Menu, Sub Menu, and all others window from the addon settings or/and the context menu (Set View).
+- Fix Exodus Movies and tvshows.
 - Update TV Mode feature for long playlist.
 
 ------------------------

@@ -537,16 +537,14 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	'''Exodus Movies'''
 	addon = 'plugin.video.exodus'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	list = []
-	list.append('&custom8=plugin://plugin.video.exodus/?action=movies&url=http%3a%2f%2fwww.imdb.com%2fsearch%2ftitle%3ftitle_type%3dfeature%2ctv_movie%26languages%3den%26num_votes%3d100%2c%26release_date%3ddate%5b730%5d%2cdate%5b30%5d%26genres%3dhistory%26sort%3dmoviemeter%2casc%26count%3d40%26start%3d1')
-	addDir('Exodus Movies',list,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
+	url = '&activatewindow=plugin://plugin.video.exodus/?action=movies&url=http%3a%2f%2fwww.imdb.com%2fsearch%2ftitle%3ftitle_type%3dfeature%2ctv_movie%26languages%3den%26num_votes%3d100%2c%26release_date%3ddate%5b730%5d%2cdate%5b30%5d%26genres%3dhistory%26sort%3dmoviemeter%2casc%26count%3d40%26start%3d1'
+	addDir('Exodus Movies',url,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 
 	'''Exodus TV shows'''
 	addon = 'plugin.video.exodus'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	list = []
-	list.append('&custom8=plugin://plugin.video.exodus/?action=tvshows&url=http%3a%2f%2fwww.imdb.com%2fsearch%2ftitle%3ftitle_type%3dtv_series%2cmini_series%26release_date%3d%2cdate%5b0%5d%26genres%3dhistory%26sort%3dmoviemeter%2casc%26count%3d40%26start%3d1')
-	addDir('Exodus TV shows',list,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
+	url = '&activatewindow=plugin://plugin.video.exodus/?action=tvshows&url=http%3a%2f%2fwww.imdb.com%2fsearch%2ftitle%3ftitle_type%3dtv_series%2cmini_series%26release_date%3d%2cdate%5b0%5d%26genres%3dhistory%26sort%3dmoviemeter%2casc%26count%3d40%26start%3d1'
+	addDir('Exodus TV shows',url,8,thumb,plot,addon,0, getAddonFanart(background, default=fanart, custom=""))
 
 	CATEGORIES103A(name, iconimage, desc, fanart) #עמוד הבא
 		
