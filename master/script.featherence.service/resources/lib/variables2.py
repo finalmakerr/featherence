@@ -1305,6 +1305,55 @@ if property_subbuttonid_ != "" or property_temp != "" or property_temp2 != "" or
 	
 	label_T = {}
 	'''---------------------------'''
+	label17_17 = xbmc.getInfoLabel('Skin.String(label17_17)')
+	'''---------------------------'''
+	label17_100 = xbmc.getInfoLabel('Skin.String(label17_100)')
+	label17_101 = xbmc.getInfoLabel('Skin.String(label17_101)')
+	label17_102 = xbmc.getInfoLabel('Skin.String(label17_102)')
+	label17_103 = xbmc.getInfoLabel('Skin.String(label17_103)')
+	label17_104 = xbmc.getInfoLabel('Skin.String(label17_104)')
+	label17_105 = xbmc.getInfoLabel('Skin.String(label17_105)')
+	label17_106 = xbmc.getInfoLabel('Skin.String(label17_106)')
+	label17_107 = xbmc.getInfoLabel('Skin.String(label17_107)')
+	label17_108 = xbmc.getInfoLabel('Skin.String(label17_108)')
+	label17_109 = xbmc.getInfoLabel('Skin.String(label17_109)')
+	'''---------------------------'''
+	label17_T = { 'label17_17': label17_17, 'label17_100': label17_100, 'label17_101': label17_101, 'label17_102': label17_102, 'label17_103': label17_103, 'label17_104': label17_104, 'label17_105': label17_105, 'label17_106': label17_106, 'label17_107': label17_107, 'label17_108': label17_108, 'label17_109': label17_109 }
+	label_T.update(label17_T)
+	'''---------------------------'''
+	label18_18 = xbmc.getInfoLabel('Skin.String(label18_18)')
+	'''---------------------------'''
+	label18_100 = xbmc.getInfoLabel('Skin.String(label18_100)')
+	label18_101 = xbmc.getInfoLabel('Skin.String(label18_101)')
+	label18_102 = xbmc.getInfoLabel('Skin.String(label18_102)')
+	label18_103 = xbmc.getInfoLabel('Skin.String(label18_103)')
+	label18_104 = xbmc.getInfoLabel('Skin.String(label18_104)')
+	label18_105 = xbmc.getInfoLabel('Skin.String(label18_105)')
+	label18_106 = xbmc.getInfoLabel('Skin.String(label18_106)')
+	label18_107 = xbmc.getInfoLabel('Skin.String(label18_107)')
+	label18_108 = xbmc.getInfoLabel('Skin.String(label18_108)')
+	label18_109 = xbmc.getInfoLabel('Skin.String(label18_109)')
+	'''---------------------------'''
+	label18_T = { 'label18_18': label18_18, 'label18_100': label18_100, 'label18_101': label18_101, 'label18_102': label18_102, 'label18_103': label18_103, 'label18_104': label18_104, 'label18_105': label18_105, 'label18_106': label18_106, 'label18_107': label18_107, 'label18_108': label18_108, 'label18_109': label18_109 }
+	label_T.update(label18_T)
+	'''---------------------------'''
+	label19_19 = xbmc.getInfoLabel('Skin.String(label19_19)')
+	'''---------------------------'''
+	label19_100 = xbmc.getInfoLabel('Skin.String(label19_100)')
+	label19_101 = xbmc.getInfoLabel('Skin.String(label19_101)')
+	label19_102 = xbmc.getInfoLabel('Skin.String(label19_102)')
+	label19_103 = xbmc.getInfoLabel('Skin.String(label19_103)')
+	label19_104 = xbmc.getInfoLabel('Skin.String(label19_104)')
+	label19_105 = xbmc.getInfoLabel('Skin.String(label19_105)')
+	label19_106 = xbmc.getInfoLabel('Skin.String(label19_106)')
+	label19_107 = xbmc.getInfoLabel('Skin.String(label19_107)')
+	label19_108 = xbmc.getInfoLabel('Skin.String(label19_108)')
+	label19_109 = xbmc.getInfoLabel('Skin.String(label19_109)')
+	'''---------------------------'''
+	label19_T = { 'label19_19': label19_19, 'label19_100': label19_100, 'label19_101': label19_101, 'label19_102': label19_102, 'label19_103': label19_103, 'label19_104': label19_104, 'label19_105': label19_105, 'label19_106': label19_106, 'label19_107': label19_107, 'label19_108': label19_108, 'label19_109': label19_109 }
+	label_T.update(label19_T)
+	'''---------------------------'''
+	
 	label90_90 = xbmc.getInfoLabel('Skin.String(label90_90)')
 	'''---------------------------'''
 	label90_100 = xbmc.getInfoLabel('Skin.String(label90_100)')
@@ -1789,6 +1838,55 @@ if property_subbuttonid_ != "" or property_temp != "" or property_temp2 != "" or
 	
 	action_T = {}
 	'''---------------------------'''
+	action17_17 = xbmc.getInfoLabel('Skin.String(action17_17)')
+	'''---------------------------'''
+	action17_100 = xbmc.getInfoLabel('Skin.String(action17_100)')
+	action17_101 = xbmc.getInfoLabel('Skin.String(action17_101)')
+	action17_102 = xbmc.getInfoLabel('Skin.String(action17_102)')
+	action17_103 = xbmc.getInfoLabel('Skin.String(action17_103)')
+	action17_104 = xbmc.getInfoLabel('Skin.String(action17_104)')
+	action17_105 = xbmc.getInfoLabel('Skin.String(action17_105)')
+	action17_106 = xbmc.getInfoLabel('Skin.String(action17_106)')
+	action17_107 = xbmc.getInfoLabel('Skin.String(action17_107)')
+	action17_108 = xbmc.getInfoLabel('Skin.String(action17_108)')
+	action17_109 = xbmc.getInfoLabel('Skin.String(action17_109)')
+	'''---------------------------'''
+	action17_T = { 'action17_17': action17_17, 'action17_100': action17_100, 'action17_101': action17_101, 'action17_102': action17_102, 'action17_103': action17_103, 'action17_104': action17_104, 'action17_105': action17_105, 'action17_106': action17_106, 'action17_107': action17_107, 'action17_108': action17_108, 'action17_109': action17_109 }
+	action_T.update(action17_T)
+	'''---------------------------'''
+	action18_18 = xbmc.getInfoLabel('Skin.String(action18_18)')
+	'''---------------------------'''
+	action18_100 = xbmc.getInfoLabel('Skin.String(action18_100)')
+	action18_101 = xbmc.getInfoLabel('Skin.String(action18_101)')
+	action18_102 = xbmc.getInfoLabel('Skin.String(action18_102)')
+	action18_103 = xbmc.getInfoLabel('Skin.String(action18_103)')
+	action18_104 = xbmc.getInfoLabel('Skin.String(action18_104)')
+	action18_105 = xbmc.getInfoLabel('Skin.String(action18_105)')
+	action18_106 = xbmc.getInfoLabel('Skin.String(action18_106)')
+	action18_107 = xbmc.getInfoLabel('Skin.String(action18_107)')
+	action18_108 = xbmc.getInfoLabel('Skin.String(action18_108)')
+	action18_109 = xbmc.getInfoLabel('Skin.String(action18_109)')
+	'''---------------------------'''
+	action18_T = { 'action18_18': action18_18, 'action18_100': action18_100, 'action18_101': action18_101, 'action18_102': action18_102, 'action18_103': action18_103, 'action18_104': action18_104, 'action18_105': action18_105, 'action18_106': action18_106, 'action18_107': action18_107, 'action18_108': action18_108, 'action18_109': action18_109 }
+	action_T.update(action18_T)
+	'''---------------------------'''
+	action19_19 = xbmc.getInfoLabel('Skin.String(action19_19)')
+	'''---------------------------'''
+	action19_100 = xbmc.getInfoLabel('Skin.String(action19_100)')
+	action19_101 = xbmc.getInfoLabel('Skin.String(action19_101)')
+	action19_102 = xbmc.getInfoLabel('Skin.String(action19_102)')
+	action19_103 = xbmc.getInfoLabel('Skin.String(action19_103)')
+	action19_104 = xbmc.getInfoLabel('Skin.String(action19_104)')
+	action19_105 = xbmc.getInfoLabel('Skin.String(action19_105)')
+	action19_106 = xbmc.getInfoLabel('Skin.String(action19_106)')
+	action19_107 = xbmc.getInfoLabel('Skin.String(action19_107)')
+	action19_108 = xbmc.getInfoLabel('Skin.String(action19_108)')
+	action19_109 = xbmc.getInfoLabel('Skin.String(action19_109)')
+	'''---------------------------'''
+	action19_T = { 'action19_19': action19_19, 'action19_100': action19_100, 'action19_101': action19_101, 'action19_102': action19_102, 'action19_103': action19_103, 'action19_104': action19_104, 'action19_105': action19_105, 'action19_106': action19_106, 'action19_107': action19_107, 'action19_108': action19_108, 'action19_109': action19_109 }
+	action_T.update(action19_T)
+	'''---------------------------'''
+	
 	action90_90 = xbmc.getInfoLabel('Skin.String(action90_90)')
 	'''---------------------------'''
 	action90_100 = xbmc.getInfoLabel('Skin.String(action90_100)')
@@ -2272,6 +2370,55 @@ if property_subbuttonid_ != "" or property_temp != "" or property_temp2 != "" or
 	
 	icon_T = {}
 	'''---------------------------'''
+	icon17_17 = xbmc.getInfoLabel('Skin.String(icon17_17)')
+	'''---------------------------'''
+	icon17_100 = xbmc.getInfoLabel('Skin.String(icon17_100)')
+	icon17_101 = xbmc.getInfoLabel('Skin.String(icon17_101)')
+	icon17_102 = xbmc.getInfoLabel('Skin.String(icon17_102)')
+	icon17_103 = xbmc.getInfoLabel('Skin.String(icon17_103)')
+	icon17_104 = xbmc.getInfoLabel('Skin.String(icon17_104)')
+	icon17_105 = xbmc.getInfoLabel('Skin.String(icon17_105)')
+	icon17_106 = xbmc.getInfoLabel('Skin.String(icon17_106)')
+	icon17_107 = xbmc.getInfoLabel('Skin.String(icon17_107)')
+	icon17_108 = xbmc.getInfoLabel('Skin.String(icon17_108)')
+	icon17_109 = xbmc.getInfoLabel('Skin.String(icon17_109)')
+	'''---------------------------'''
+	icon17_T = { 'icon17_17': icon17_17, 'icon17_100': icon17_100, 'icon17_101': icon17_101, 'icon17_102': icon17_102, 'icon17_103': icon17_103, 'icon17_104': icon17_104, 'icon17_105': icon17_105, 'icon17_106': icon17_106, 'icon17_107': icon17_107, 'icon17_108': icon17_108, 'icon17_109': icon17_109 }
+	icon_T.update(icon17_T)
+	'''---------------------------'''
+	icon18_18 = xbmc.getInfoLabel('Skin.String(icon18_18)')
+	'''---------------------------'''
+	icon18_100 = xbmc.getInfoLabel('Skin.String(icon18_100)')
+	icon18_101 = xbmc.getInfoLabel('Skin.String(icon18_101)')
+	icon18_102 = xbmc.getInfoLabel('Skin.String(icon18_102)')
+	icon18_103 = xbmc.getInfoLabel('Skin.String(icon18_103)')
+	icon18_104 = xbmc.getInfoLabel('Skin.String(icon18_104)')
+	icon18_105 = xbmc.getInfoLabel('Skin.String(icon18_105)')
+	icon18_106 = xbmc.getInfoLabel('Skin.String(icon18_106)')
+	icon18_107 = xbmc.getInfoLabel('Skin.String(icon18_107)')
+	icon18_108 = xbmc.getInfoLabel('Skin.String(icon18_108)')
+	icon18_109 = xbmc.getInfoLabel('Skin.String(icon18_109)')
+	'''---------------------------'''
+	icon18_T = { 'icon18_18': icon18_18, 'icon18_100': icon18_100, 'icon18_101': icon18_101, 'icon18_102': icon18_102, 'icon18_103': icon18_103, 'icon18_104': icon18_104, 'icon18_105': icon18_105, 'icon18_106': icon18_106, 'icon18_107': icon18_107, 'icon18_108': icon18_108, 'icon18_109': icon18_109 }
+	icon_T.update(icon18_T)
+	'''---------------------------'''
+	icon19_19 = xbmc.getInfoLabel('Skin.String(icon19_19)')
+	'''---------------------------'''
+	icon19_100 = xbmc.getInfoLabel('Skin.String(icon19_100)')
+	icon19_101 = xbmc.getInfoLabel('Skin.String(icon19_101)')
+	icon19_102 = xbmc.getInfoLabel('Skin.String(icon19_102)')
+	icon19_103 = xbmc.getInfoLabel('Skin.String(icon19_103)')
+	icon19_104 = xbmc.getInfoLabel('Skin.String(icon19_104)')
+	icon19_105 = xbmc.getInfoLabel('Skin.String(icon19_105)')
+	icon19_106 = xbmc.getInfoLabel('Skin.String(icon19_106)')
+	icon19_107 = xbmc.getInfoLabel('Skin.String(icon19_107)')
+	icon19_108 = xbmc.getInfoLabel('Skin.String(icon19_108)')
+	icon19_109 = xbmc.getInfoLabel('Skin.String(icon19_109)')
+	'''---------------------------'''
+	icon19_T = { 'icon19_19': icon19_19, 'icon19_100': icon19_100, 'icon19_101': icon19_101, 'icon19_102': icon19_102, 'icon19_103': icon19_103, 'icon19_104': icon19_104, 'icon19_105': icon19_105, 'icon19_106': icon19_106, 'icon19_107': icon19_107, 'icon19_108': icon19_108, 'icon19_109': icon19_109 }
+	icon_T.update(icon19_T)
+	'''---------------------------'''
+	
 	icon90_90 = xbmc.getInfoLabel('Skin.String(icon90_90)')
 	'''---------------------------'''
 	icon90_100 = xbmc.getInfoLabel('Skin.String(icon90_100)')
@@ -2756,6 +2903,56 @@ if property_subbuttonid_ != "" or property_temp != "" or property_temp2 != "" or
 	
 	off_T = {}
 	'''---------------------------'''
+	off17_17 = xbmc.getInfoLabel('Skin.HasSetting(off17_17)')
+	'''---------------------------'''
+	off17_100 = xbmc.getInfoLabel('Skin.HasSetting(off17_100)')
+	off17_101 = xbmc.getInfoLabel('Skin.HasSetting(off17_101)')
+	off17_102 = xbmc.getInfoLabel('Skin.HasSetting(off17_102)')
+	off17_103 = xbmc.getInfoLabel('Skin.HasSetting(off17_103)')
+	off17_104 = xbmc.getInfoLabel('Skin.HasSetting(off17_104)')
+	off17_105 = xbmc.getInfoLabel('Skin.HasSetting(off17_105)')
+	off17_106 = xbmc.getInfoLabel('Skin.HasSetting(off17_106)')
+	off17_107 = xbmc.getInfoLabel('Skin.HasSetting(off17_107)')
+	off17_108 = xbmc.getInfoLabel('Skin.HasSetting(off17_108)')
+	off17_109 = xbmc.getInfoLabel('Skin.HasSetting(off17_109)')
+	'''---------------------------'''
+	off17_T = { 'off17_17': off17_17, 'off17_100': off17_100, 'off17_101': off17_101, 'off17_102': off17_102, 'off17_103': off17_103, 'off17_104': off17_104, 'off17_105': off17_105, 'off17_106': off17_106, 'off17_107': off17_107, 'off17_108': off17_108, 'off17_109': off17_109 }
+	off_T.update(off17_T)
+	'''---------------------------'''
+	off18_18 = xbmc.getInfoLabel('Skin.HasSetting(off18_18)')
+	'''---------------------------'''
+	off18_100 = xbmc.getInfoLabel('Skin.HasSetting(off18_100)')
+	off18_101 = xbmc.getInfoLabel('Skin.HasSetting(off18_101)')
+	off18_102 = xbmc.getInfoLabel('Skin.HasSetting(off18_102)')
+	off18_103 = xbmc.getInfoLabel('Skin.HasSetting(off18_103)')
+	off18_104 = xbmc.getInfoLabel('Skin.HasSetting(off18_104)')
+	off18_105 = xbmc.getInfoLabel('Skin.HasSetting(off18_105)')
+	off18_106 = xbmc.getInfoLabel('Skin.HasSetting(off18_106)')
+	off18_107 = xbmc.getInfoLabel('Skin.HasSetting(off18_107)')
+	off18_108 = xbmc.getInfoLabel('Skin.HasSetting(off18_108)')
+	off18_109 = xbmc.getInfoLabel('Skin.HasSetting(off18_109)')
+	'''---------------------------'''
+	off18_T = { 'off18_18': off18_18, 'off18_100': off18_100, 'off18_101': off18_101, 'off18_102': off18_102, 'off18_103': off18_103, 'off18_104': off18_104, 'off18_105': off18_105, 'off18_106': off18_106, 'off18_107': off18_107, 'off18_108': off18_108, 'off18_109': off18_109 }
+	off_T.update(off18_T)
+	'''---------------------------'''
+	off19_19 = xbmc.getInfoLabel('Skin.HasSetting(off19_19)')
+	'''---------------------------'''
+	off19_100 = xbmc.getInfoLabel('Skin.HasSetting(off19_100)')
+	off19_101 = xbmc.getInfoLabel('Skin.HasSetting(off19_101)')
+	off19_102 = xbmc.getInfoLabel('Skin.HasSetting(off19_102)')
+	off19_103 = xbmc.getInfoLabel('Skin.HasSetting(off19_103)')
+	off19_104 = xbmc.getInfoLabel('Skin.HasSetting(off19_104)')
+	off19_105 = xbmc.getInfoLabel('Skin.HasSetting(off19_105)')
+	off19_106 = xbmc.getInfoLabel('Skin.HasSetting(off19_106)')
+	off19_107 = xbmc.getInfoLabel('Skin.HasSetting(off19_107)')
+	off19_108 = xbmc.getInfoLabel('Skin.HasSetting(off19_108)')
+	off19_109 = xbmc.getInfoLabel('Skin.HasSetting(off19_109)')
+	'''---------------------------'''
+	off19_T = { 'off19_19': off19_19, 'off19_100': off19_100, 'off19_101': off19_101, 'off19_102': off19_102, 'off19_103': off19_103, 'off19_104': off19_104, 'off19_105': off19_105, 'off19_106': off19_106, 'off19_107': off19_107, 'off19_108': off19_108, 'off19_109': off19_109 }
+	off_T.update(off19_T)
+	'''---------------------------'''
+	
+	
 	off90_90 = xbmc.getInfoLabel('Skin.HasSetting(off90_90)')
 	'''---------------------------'''
 	off90_100 = xbmc.getInfoLabel('Skin.HasSetting(off90_100)')
@@ -3241,6 +3438,53 @@ if property_widgetbuttonid_ != "" or property_temp != "" or property_temp2 != ""
 	
 	labelw_T = {}
 	'''---------------------------'''
+	labelw17_17 = xbmc.getInfoLabel('Skin.String(labelw17_17)')
+	'''---------------------------'''
+	labelw17_100 = xbmc.getInfoLabel('Skin.String(labelw17_100)')
+	labelw17_101 = xbmc.getInfoLabel('Skin.String(labelw17_101)')
+	labelw17_102 = xbmc.getInfoLabel('Skin.String(labelw17_102)')
+	labelw17_103 = xbmc.getInfoLabel('Skin.String(labelw17_103)')
+	labelw17_104 = xbmc.getInfoLabel('Skin.String(labelw17_104)')
+	labelw17_105 = xbmc.getInfoLabel('Skin.String(labelw17_105)')
+	labelw17_106 = xbmc.getInfoLabel('Skin.String(labelw17_106)')
+	labelw17_107 = xbmc.getInfoLabel('Skin.String(labelw17_107)')
+	labelw17_108 = xbmc.getInfoLabel('Skin.String(labelw17_108)')
+	labelw17_109 = xbmc.getInfoLabel('Skin.String(labelw17_109)')
+	'''---------------------------'''
+	labelw17_T = { 'labelw17_17': labelw17_17, 'labelw17_100': labelw17_100, 'labelw17_101': labelw17_101, 'labelw17_102': labelw17_102, 'labelw17_103': labelw17_103, 'labelw17_104': labelw17_104, 'labelw17_105': labelw17_105, 'labelw17_106': labelw17_106, 'labelw17_107': labelw17_107, 'labelw17_108': labelw17_108, 'labelw17_109': labelw17_109 }
+	labelw_T.update(labelw17_T)
+	labelw18_18 = xbmc.getInfoLabel('Skin.String(labelw18_18)')
+	'''---------------------------'''
+	labelw18_100 = xbmc.getInfoLabel('Skin.String(labelw18_100)')
+	labelw18_101 = xbmc.getInfoLabel('Skin.String(labelw18_101)')
+	labelw18_102 = xbmc.getInfoLabel('Skin.String(labelw18_102)')
+	labelw18_103 = xbmc.getInfoLabel('Skin.String(labelw18_103)')
+	labelw18_104 = xbmc.getInfoLabel('Skin.String(labelw18_104)')
+	labelw18_105 = xbmc.getInfoLabel('Skin.String(labelw18_105)')
+	labelw18_106 = xbmc.getInfoLabel('Skin.String(labelw18_106)')
+	labelw18_107 = xbmc.getInfoLabel('Skin.String(labelw18_107)')
+	labelw18_108 = xbmc.getInfoLabel('Skin.String(labelw18_108)')
+	labelw18_109 = xbmc.getInfoLabel('Skin.String(labelw18_109)')
+	'''---------------------------'''
+	labelw18_T = { 'labelw18_18': labelw18_18, 'labelw18_100': labelw18_100, 'labelw18_101': labelw18_101, 'labelw18_102': labelw18_102, 'labelw18_103': labelw18_103, 'labelw18_104': labelw18_104, 'labelw18_105': labelw18_105, 'labelw18_106': labelw18_106, 'labelw18_107': labelw18_107, 'labelw18_108': labelw18_108, 'labelw18_109': labelw18_109 }
+	labelw_T.update(labelw18_T)
+	labelw19_19 = xbmc.getInfoLabel('Skin.String(labelw19_19)')
+	'''---------------------------'''
+	labelw19_100 = xbmc.getInfoLabel('Skin.String(labelw19_100)')
+	labelw19_101 = xbmc.getInfoLabel('Skin.String(labelw19_101)')
+	labelw19_102 = xbmc.getInfoLabel('Skin.String(labelw19_102)')
+	labelw19_103 = xbmc.getInfoLabel('Skin.String(labelw19_103)')
+	labelw19_104 = xbmc.getInfoLabel('Skin.String(labelw19_104)')
+	labelw19_105 = xbmc.getInfoLabel('Skin.String(labelw19_105)')
+	labelw19_106 = xbmc.getInfoLabel('Skin.String(labelw19_106)')
+	labelw19_107 = xbmc.getInfoLabel('Skin.String(labelw19_107)')
+	labelw19_108 = xbmc.getInfoLabel('Skin.String(labelw19_108)')
+	labelw19_109 = xbmc.getInfoLabel('Skin.String(labelw19_109)')
+	'''---------------------------'''
+	labelw19_T = { 'labelw19_19': labelw19_19, 'labelw19_100': labelw19_100, 'labelw19_101': labelw19_101, 'labelw19_102': labelw19_102, 'labelw19_103': labelw19_103, 'labelw19_104': labelw19_104, 'labelw19_105': labelw19_105, 'labelw19_106': labelw19_106, 'labelw19_107': labelw19_107, 'labelw19_108': labelw19_108, 'labelw19_109': labelw19_109 }
+	labelw_T.update(labelw19_T)
+	'''---------------------------'''
+	'''---------------------------'''
 	labelw90_90 = xbmc.getInfoLabel('Skin.String(labelw90_90)')
 	'''---------------------------'''
 	labelw90_100 = xbmc.getInfoLabel('Skin.String(labelw90_100)')
@@ -3725,6 +3969,55 @@ if property_widgetbuttonid_ != "" or property_temp != "" or property_temp2 != ""
 	
 	actionw_T = {}
 	'''---------------------------'''
+	actionw17_17 = xbmc.getInfoLabel('Skin.String(actionw17_17)')
+	'''---------------------------'''
+	actionw17_100 = xbmc.getInfoLabel('Skin.String(actionw17_100)')
+	actionw17_101 = xbmc.getInfoLabel('Skin.String(actionw17_101)')
+	actionw17_102 = xbmc.getInfoLabel('Skin.String(actionw17_102)')
+	actionw17_103 = xbmc.getInfoLabel('Skin.String(actionw17_103)')
+	actionw17_104 = xbmc.getInfoLabel('Skin.String(actionw17_104)')
+	actionw17_105 = xbmc.getInfoLabel('Skin.String(actionw17_105)')
+	actionw17_106 = xbmc.getInfoLabel('Skin.String(actionw17_106)')
+	actionw17_107 = xbmc.getInfoLabel('Skin.String(actionw17_107)')
+	actionw17_108 = xbmc.getInfoLabel('Skin.String(actionw17_108)')
+	actionw17_109 = xbmc.getInfoLabel('Skin.String(actionw17_109)')
+	'''---------------------------'''
+	actionw17_T = { 'actionw17_17': actionw17_17, 'actionw17_100': actionw17_100, 'actionw17_101': actionw17_101, 'actionw17_102': actionw17_102, 'actionw17_103': actionw17_103, 'actionw17_104': actionw17_104, 'actionw17_105': actionw17_105, 'actionw17_106': actionw17_106, 'actionw17_107': actionw17_107, 'actionw17_108': actionw17_108, 'actionw17_109': actionw17_109 }
+	actionw_T.update(actionw17_T)
+	'''---------------------------'''
+	actionw18_18 = xbmc.getInfoLabel('Skin.String(actionw18_18)')
+	'''---------------------------'''
+	actionw18_100 = xbmc.getInfoLabel('Skin.String(actionw18_100)')
+	actionw18_101 = xbmc.getInfoLabel('Skin.String(actionw18_101)')
+	actionw18_102 = xbmc.getInfoLabel('Skin.String(actionw18_102)')
+	actionw18_103 = xbmc.getInfoLabel('Skin.String(actionw18_103)')
+	actionw18_104 = xbmc.getInfoLabel('Skin.String(actionw18_104)')
+	actionw18_105 = xbmc.getInfoLabel('Skin.String(actionw18_105)')
+	actionw18_106 = xbmc.getInfoLabel('Skin.String(actionw18_106)')
+	actionw18_107 = xbmc.getInfoLabel('Skin.String(actionw18_107)')
+	actionw18_108 = xbmc.getInfoLabel('Skin.String(actionw18_108)')
+	actionw18_109 = xbmc.getInfoLabel('Skin.String(actionw18_109)')
+	'''---------------------------'''
+	actionw18_T = { 'actionw18_18': actionw18_18, 'actionw18_100': actionw18_100, 'actionw18_101': actionw18_101, 'actionw18_102': actionw18_102, 'actionw18_103': actionw18_103, 'actionw18_104': actionw18_104, 'actionw18_105': actionw18_105, 'actionw18_106': actionw18_106, 'actionw18_107': actionw18_107, 'actionw18_108': actionw18_108, 'actionw18_109': actionw18_109 }
+	actionw_T.update(actionw18_T)
+	'''---------------------------'''
+	actionw19_19 = xbmc.getInfoLabel('Skin.String(actionw19_19)')
+	'''---------------------------'''
+	actionw19_100 = xbmc.getInfoLabel('Skin.String(actionw19_100)')
+	actionw19_101 = xbmc.getInfoLabel('Skin.String(actionw19_101)')
+	actionw19_102 = xbmc.getInfoLabel('Skin.String(actionw19_102)')
+	actionw19_103 = xbmc.getInfoLabel('Skin.String(actionw19_103)')
+	actionw19_104 = xbmc.getInfoLabel('Skin.String(actionw19_104)')
+	actionw19_105 = xbmc.getInfoLabel('Skin.String(actionw19_105)')
+	actionw19_106 = xbmc.getInfoLabel('Skin.String(actionw19_106)')
+	actionw19_107 = xbmc.getInfoLabel('Skin.String(actionw19_107)')
+	actionw19_108 = xbmc.getInfoLabel('Skin.String(actionw19_108)')
+	actionw19_109 = xbmc.getInfoLabel('Skin.String(actionw19_109)')
+	'''---------------------------'''
+	actionw19_T = { 'actionw19_19': actionw19_19, 'actionw19_100': actionw19_100, 'actionw19_101': actionw19_101, 'actionw19_102': actionw19_102, 'actionw19_103': actionw19_103, 'actionw19_104': actionw19_104, 'actionw19_105': actionw19_105, 'actionw19_106': actionw19_106, 'actionw19_107': actionw19_107, 'actionw19_108': actionw19_108, 'actionw19_109': actionw19_109 }
+	actionw_T.update(actionw19_T)
+	'''---------------------------'''
+	
 	actionw90_90 = xbmc.getInfoLabel('Skin.String(actionw90_90)')
 	'''---------------------------'''
 	actionw90_100 = xbmc.getInfoLabel('Skin.String(actionw90_100)')
@@ -4207,6 +4500,55 @@ if property_widgetbuttonid_ != "" or property_temp != "" or property_temp2 != ""
 	actionw_T.update(actionw119_T)
 	
 	iconw_T = {}
+	'''---------------------------'''
+	iconw17_17 = xbmc.getInfoLabel('Skin.String(iconw17_17)')
+	'''---------------------------'''
+	iconw17_100 = xbmc.getInfoLabel('Skin.String(iconw17_100)')
+	iconw17_101 = xbmc.getInfoLabel('Skin.String(iconw17_101)')
+	iconw17_102 = xbmc.getInfoLabel('Skin.String(iconw17_102)')
+	iconw17_103 = xbmc.getInfoLabel('Skin.String(iconw17_103)')
+	iconw17_104 = xbmc.getInfoLabel('Skin.String(iconw17_104)')
+	iconw17_105 = xbmc.getInfoLabel('Skin.String(iconw17_105)')
+	iconw17_106 = xbmc.getInfoLabel('Skin.String(iconw17_106)')
+	iconw17_107 = xbmc.getInfoLabel('Skin.String(iconw17_107)')
+	iconw17_108 = xbmc.getInfoLabel('Skin.String(iconw17_108)')
+	iconw17_109 = xbmc.getInfoLabel('Skin.String(iconw17_109)')
+	'''---------------------------'''
+	iconw17_T = { 'iconw17_17': iconw17_17, 'iconw17_100': iconw17_100, 'iconw17_101': iconw17_101, 'iconw17_102': iconw17_102, 'iconw17_103': iconw17_103, 'iconw17_104': iconw17_104, 'iconw17_105': iconw17_105, 'iconw17_106': iconw17_106, 'iconw17_107': iconw17_107, 'iconw17_108': iconw17_108, 'iconw17_109': iconw17_109 }
+	iconw_T.update(iconw17_T)
+	'''---------------------------'''
+	iconw18_18 = xbmc.getInfoLabel('Skin.String(iconw18_18)')
+	'''---------------------------'''
+	iconw18_100 = xbmc.getInfoLabel('Skin.String(iconw18_100)')
+	iconw18_101 = xbmc.getInfoLabel('Skin.String(iconw18_101)')
+	iconw18_102 = xbmc.getInfoLabel('Skin.String(iconw18_102)')
+	iconw18_103 = xbmc.getInfoLabel('Skin.String(iconw18_103)')
+	iconw18_104 = xbmc.getInfoLabel('Skin.String(iconw18_104)')
+	iconw18_105 = xbmc.getInfoLabel('Skin.String(iconw18_105)')
+	iconw18_106 = xbmc.getInfoLabel('Skin.String(iconw18_106)')
+	iconw18_107 = xbmc.getInfoLabel('Skin.String(iconw18_107)')
+	iconw18_108 = xbmc.getInfoLabel('Skin.String(iconw18_108)')
+	iconw18_109 = xbmc.getInfoLabel('Skin.String(iconw18_109)')
+	'''---------------------------'''
+	iconw18_T = { 'iconw18_18': iconw18_18, 'iconw18_100': iconw18_100, 'iconw18_101': iconw18_101, 'iconw18_102': iconw18_102, 'iconw18_103': iconw18_103, 'iconw18_104': iconw18_104, 'iconw18_105': iconw18_105, 'iconw18_106': iconw18_106, 'iconw18_107': iconw18_107, 'iconw18_108': iconw18_108, 'iconw18_109': iconw18_109 }
+	iconw_T.update(iconw18_T)
+	'''---------------------------'''
+	iconw19_19 = xbmc.getInfoLabel('Skin.String(iconw19_19)')
+	'''---------------------------'''
+	iconw19_100 = xbmc.getInfoLabel('Skin.String(iconw19_100)')
+	iconw19_101 = xbmc.getInfoLabel('Skin.String(iconw19_101)')
+	iconw19_102 = xbmc.getInfoLabel('Skin.String(iconw19_102)')
+	iconw19_103 = xbmc.getInfoLabel('Skin.String(iconw19_103)')
+	iconw19_104 = xbmc.getInfoLabel('Skin.String(iconw19_104)')
+	iconw19_105 = xbmc.getInfoLabel('Skin.String(iconw19_105)')
+	iconw19_106 = xbmc.getInfoLabel('Skin.String(iconw19_106)')
+	iconw19_107 = xbmc.getInfoLabel('Skin.String(iconw19_107)')
+	iconw19_108 = xbmc.getInfoLabel('Skin.String(iconw19_108)')
+	iconw19_109 = xbmc.getInfoLabel('Skin.String(iconw19_109)')
+	'''---------------------------'''
+	iconw19_T = { 'iconw19_19': iconw19_19, 'iconw19_100': iconw19_100, 'iconw19_101': iconw19_101, 'iconw19_102': iconw19_102, 'iconw19_103': iconw19_103, 'iconw19_104': iconw19_104, 'iconw19_105': iconw19_105, 'iconw19_106': iconw19_106, 'iconw19_107': iconw19_107, 'iconw19_108': iconw19_108, 'iconw19_109': iconw19_109 }
+	iconw_T.update(iconw19_T)
+	
 	'''---------------------------'''
 	iconw90_90 = xbmc.getInfoLabel('Skin.String(iconw90_90)')
 	'''---------------------------'''
@@ -4692,6 +5034,55 @@ if property_widgetbuttonid_ != "" or property_temp != "" or property_temp2 != ""
 	
 	offw_T = {}
 	'''---------------------------'''
+	offw17_17 = xbmc.getInfoLabel('Skin.HasSetting(offw17_17)')
+	'''---------------------------'''
+	offw17_100 = xbmc.getInfoLabel('Skin.HasSetting(offw17_100)')
+	offw17_101 = xbmc.getInfoLabel('Skin.HasSetting(offw17_101)')
+	offw17_102 = xbmc.getInfoLabel('Skin.HasSetting(offw17_102)')
+	offw17_103 = xbmc.getInfoLabel('Skin.HasSetting(offw17_103)')
+	offw17_104 = xbmc.getInfoLabel('Skin.HasSetting(offw17_104)')
+	offw17_105 = xbmc.getInfoLabel('Skin.HasSetting(offw17_105)')
+	offw17_106 = xbmc.getInfoLabel('Skin.HasSetting(offw17_106)')
+	offw17_107 = xbmc.getInfoLabel('Skin.HasSetting(offw17_107)')
+	offw17_108 = xbmc.getInfoLabel('Skin.HasSetting(offw17_108)')
+	offw17_109 = xbmc.getInfoLabel('Skin.HasSetting(offw17_109)')
+	'''---------------------------'''
+	offw17_T = { 'offw17_17': offw17_17, 'offw17_100': offw17_100, 'offw17_101': offw17_101, 'offw17_102': offw17_102, 'offw17_103': offw17_103, 'offw17_104': offw17_104, 'offw17_105': offw17_105, 'offw17_106': offw17_106, 'offw17_107': offw17_107, 'offw17_108': offw17_108, 'offw17_109': offw17_109 }
+	offw_T.update(offw17_T)
+	'''---------------------------'''
+	offw18_18 = xbmc.getInfoLabel('Skin.HasSetting(offw18_18)')
+	'''---------------------------'''
+	offw18_100 = xbmc.getInfoLabel('Skin.HasSetting(offw18_100)')
+	offw18_101 = xbmc.getInfoLabel('Skin.HasSetting(offw18_101)')
+	offw18_102 = xbmc.getInfoLabel('Skin.HasSetting(offw18_102)')
+	offw18_103 = xbmc.getInfoLabel('Skin.HasSetting(offw18_103)')
+	offw18_104 = xbmc.getInfoLabel('Skin.HasSetting(offw18_104)')
+	offw18_105 = xbmc.getInfoLabel('Skin.HasSetting(offw18_105)')
+	offw18_106 = xbmc.getInfoLabel('Skin.HasSetting(offw18_106)')
+	offw18_107 = xbmc.getInfoLabel('Skin.HasSetting(offw18_107)')
+	offw18_108 = xbmc.getInfoLabel('Skin.HasSetting(offw18_108)')
+	offw18_109 = xbmc.getInfoLabel('Skin.HasSetting(offw18_109)')
+	'''---------------------------'''
+	offw18_T = { 'offw18_18': offw18_18, 'offw18_100': offw18_100, 'offw18_101': offw18_101, 'offw18_102': offw18_102, 'offw18_103': offw18_103, 'offw18_104': offw18_104, 'offw18_105': offw18_105, 'offw18_106': offw18_106, 'offw18_107': offw18_107, 'offw18_108': offw18_108, 'offw18_109': offw18_109 }
+	offw_T.update(offw18_T)
+	'''---------------------------'''
+	offw19_19 = xbmc.getInfoLabel('Skin.HasSetting(offw19_19)')
+	'''---------------------------'''
+	offw19_100 = xbmc.getInfoLabel('Skin.HasSetting(offw19_100)')
+	offw19_101 = xbmc.getInfoLabel('Skin.HasSetting(offw19_101)')
+	offw19_102 = xbmc.getInfoLabel('Skin.HasSetting(offw19_102)')
+	offw19_103 = xbmc.getInfoLabel('Skin.HasSetting(offw19_103)')
+	offw19_104 = xbmc.getInfoLabel('Skin.HasSetting(offw19_104)')
+	offw19_105 = xbmc.getInfoLabel('Skin.HasSetting(offw19_105)')
+	offw19_106 = xbmc.getInfoLabel('Skin.HasSetting(offw19_106)')
+	offw19_107 = xbmc.getInfoLabel('Skin.HasSetting(offw19_107)')
+	offw19_108 = xbmc.getInfoLabel('Skin.HasSetting(offw19_108)')
+	offw19_109 = xbmc.getInfoLabel('Skin.HasSetting(offw19_109)')
+	'''---------------------------'''
+	offw19_T = { 'offw19_19': offw19_19, 'offw19_100': offw19_100, 'offw19_101': offw19_101, 'offw19_102': offw19_102, 'offw19_103': offw19_103, 'offw19_104': offw19_104, 'offw19_105': offw19_105, 'offw19_106': offw19_106, 'offw19_107': offw19_107, 'offw19_108': offw19_108, 'offw19_109': offw19_109 }
+	offw_T.update(offw19_T)
+	'''---------------------------'''
+	
 	offw90_90 = xbmc.getInfoLabel('Skin.HasSetting(offw90_90)')
 	'''---------------------------'''
 	offw90_100 = xbmc.getInfoLabel('Skin.HasSetting(offw90_100)')
@@ -5174,11 +5565,11 @@ if property_widgetbuttonid_ != "" or property_temp != "" or property_temp2 != ""
 	offw_T.update(offw119_T)
 	
 if xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)') or 1 + 1 == 2:
-	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos', 'ButtonsDesign', 'DialogMenu', 'PassProtect', 'StartUpVideo', 'AutoView.movies', 'AutoView.tvshows', 'AutoView.seasons', 'AutoView.episodes', 'AutoView.setmovies', 'AutoView.actors', 'AutoView.genres', 'AutoView.others', 'AutoView.pictures', 'screensavermusic','MultiFanart_fadetime', 'MultiFanart_timeperimage', 'CustomStartupImage','IntroDelay','widget311','widget311_name','widget312','widget312_name','widget317','widget317_name','CustomStartupImage','PassProtectDuration','RSSIdleTime','TopInformationDesign','MouseIcon','Skin_ShowLog2','WidgetDesign','MTWidgetItems','TouchButtonsPosition', 'PassProtectOverlay','WindowsOpenClose'] #NO RANDOM SUPPORT
+	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogKaiToastPos', 'ButtonsDesign', 'DialogMenu', 'PassProtect', 'StartUpVideo', 'AutoView.movies', 'AutoView.tvshows', 'AutoView.seasons', 'AutoView.episodes', 'AutoView.setmovies', 'AutoView.actors', 'AutoView.genres', 'AutoView.others', 'AutoView.pictures', 'screensavermusic','MultiFanart_fadetime', 'MultiFanart_timeperimage', 'CustomStartupImage','IntroDelay','widget311','widget311_name','widget312','widget312_name','widget317','widget317_name','CustomStartupImage','PassProtectDuration','RSSIdleTime','TopInformationDesign','MouseIcon','Skin_ShowLog2','WidgetDesign','MTWidgetItems','TouchButtonsPosition', 'PassProtectOverlay','WindowsOpenClose', 'ButtonsColorOverlay'] #NO RANDOM SUPPORT
 	list0c = ['MenuColor', 'DialogMenuColor', 'SubMenuMarkColor', 'TopInformationColor', 'TopInformationFontColor', 'TopVideoInformationColor', 'TopVideoInformationFontColor', 'MainBackgroundColor', 'TopBackgroundColor', 'IconUnFocusColor', 'IconFocusColor', 'ButtonUnFocusColor', 'ButtonFocusColor', 'KeyboardUnFocusColor', 'KeyboardFocusColor', 'keyboardbackgroundcolor', 'KeyboardEditColor', 'KeyboardFontTitleColor', 'KeyboardEditFontColor', 'SelectedFrameColor', 'MouseColor', 'DialogFontTitleColor', 'DialogFontColor', 'WidgetUnFocusFontColor', 'WidgetFocusFontColor']
 	list0c2 = ['MainBackgroundTexture', 'TopBackgroundTexture'] #NO RANDOM SUPPORT
 	list0o = ['IconOverlayButton', 'MenuButtonsOverlay', 'MenuOverlay', 'DialogBackgroundOverlay', 'KeyboardBackgroundOverlay', 'TopVideoInformationOverlay', 'TopMainBackgroundOverlay', 'TopInformationOverlay', 'MainBackgroundOverlay', 'BackgroundOverlay', 'Background2Overlay']
-	list1 = ['SelectionMarker', 'SelectionMarker2', 'ShadowButton', 'OverlayButton', 'BevelButton', 'StrokeButton', '2DButton2', 'MenuBackground', 'ShadowButton2', 'OverlayButton2', 'BevelButton2', 'StrokeButton2', 'background', 'HideTopMainBackground', 'FixedUnFocusButtonsTransperancy', 'HomeFanartHalfScreen', 'ReshapeIcons', 'SubBackground', 'DefaultActionButtons', 'SubMenuAction', 'Action_Thumbnail', 'MultiFanart', 'BigHomeIcons', 'wbackground90', 'wbackground91', 'wbackground96', 'Genre', 'ShowClock', 'StartUpMusic', 'Touch_Support','MultiFanart_randomize','WidgetBackground','ButtonsDesignWidget','PassProtect','ButtonLabelPosition','RSSVisibility','SPMiniButtons','ShowSkinVersion','RSSOnMedia','VideoAudioOSDAlwaysOn','Skin_ShowLog', 'HideLibraryUpdates', 'WidgetLabelBackground', 'Touch_Orientation', 'ButtonsDesignTouch', 'ButtonsSizeTouch']
+	list1 = ['SelectionMarker', 'SelectionMarker2', 'ShadowButton', 'OverlayButton', 'BevelButton', 'StrokeButton', '2DButton2', 'MenuBackground', 'ShadowButton2', 'OverlayButton2', 'BevelButton2', 'StrokeButton2', 'background', 'HideTopMainBackground', 'FixedUnFocusButtonsTransperancy', 'HomeFanartHalfScreen', 'ReshapeIcons', 'SubBackground', 'DefaultActionButtons', 'SubMenuAction', 'Action_Thumbnail', 'MultiFanart', 'BigHomeIcons', 'wbackground90', 'wbackground91', 'wbackground96', 'Genre', 'ShowClock', 'StartUpMusic', 'Touch_Support','MultiFanart_randomize','WidgetBackground','ButtonsDesignWidget','PassProtect','ButtonLabelPosition','RSSVisibility','SPMiniButtons','ShowSkinVersion','RSSOnMedia','VideoAudioOSDAlwaysOn','Skin_ShowLog', 'HideLibraryUpdates', 'WidgetLabelBackground', 'Touch_Orientation', 'ButtonsDesignTouch', 'ButtonsSizeTouch', 'View50_BiggerIcon']
 	
 	'''left menu'''
 	list0l = ['MoviesTVCoversOverlay']

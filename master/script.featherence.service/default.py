@@ -422,6 +422,39 @@ elif mode >= 200 and mode <= 249:
 								x = backgroundT.get('background'+str(i))
 								x2, x2_ = TranslatePath(x)
 								formula, custommediaL, = GeneratePath('background'+str(i)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"], save_='true')
+								
+								for i2 in range(100,110):
+									'''Sub'''
+									x = label_T.get('label'+str(i)+'_'+str(i2))
+									if x != "" and x != None:
+										formula = formula + newline + 'label'+str(i)+'_'+str(i2)+'=0' + str(x)
+										x = action_T.get('action'+str(i)+'_'+str(i2))
+										formula = formula + newline + 'action'+str(i)+'_'+str(i2)+'=0' + str(x)
+										x = off_T.get('off'+str(i)+'_'+str(i2))
+										formula = formula + newline + 'off'+str(i)+'_'+str(i2)+'=1' + str(x)
+										x = icon_T.get('icon'+str(i)+'_'+str(i2))
+										x2, x2_ = TranslatePath(x)
+										formula, custommediaL, = GeneratePath('icon'+str(i)+'_'+str(i2)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"])
+										x = backgroundT.get('background'+str(i)+'_'+str(i2))
+										x2, x2_ = TranslatePath(x)
+										formula, custommediaL, = GeneratePath('background'+str(i)+'_'+str(i2)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"])
+								
+								for i2 in range(100,110):
+									'''Widget'''
+									x = labelw_T.get('labelw'+str(i)+'_'+str(i2))
+									if x != "" and x != None:
+										formula = formula + newline + 'labelw'+str(i)+'_'+str(i2)+'=0' + str(x)
+										x = actionw_T.get('actionw'+str(i)+'_'+str(i2))
+										formula = formula + newline + 'actionw'+str(i)+'_'+str(i2)+'=0' + str(x)
+										x = offw_T.get('offw'+str(i)+'_'+str(i2))
+										formula = formula + newline + 'offw'+str(i)+'_'+str(i2)+'=1' + str(x)
+										x = iconw_T.get('iconw'+str(i)+'_'+str(i2))
+										x2, x2_ = TranslatePath(x)
+										formula, custommediaL, = GeneratePath('iconw'+str(i)+'_'+str(i2)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"])
+										x = backgroundT.get('backgroundw'+str(i)+'_'+str(i2))
+										x2, x2_ = TranslatePath(x)
+										formula, custommediaL, = GeneratePath('backgroundw'+str(i)+'_'+str(i2)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"])
+										
 						for i in range(90,120):
 							x = idT.get('id'+str(i))
 							if x != "" and x != None:

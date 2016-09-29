@@ -1411,6 +1411,30 @@ def mode201(value, admin, name, printpoint):
 			setSkinSetting('0','background'+str(i),"")
 			setSkinSetting('1','off'+str(i),"")
 			setSkinSetting('1','pwd'+str(i),"")
+			setSkinSetting('1','sub'+str(i),"")
+			
+			for i2 in range(100,110):
+				'''subs'''
+				i2_ = xbmc.getInfoLabel('Skin.String(label'+str(i)+'_'+str(i2)+')')
+				if i2_ != "" and i != None:
+					#setSkinSetting('0','id'+str(i)+'_'+str(i2),"")
+					setSkinSetting('0','label'+str(i)+'_'+str(i2),"")
+					setSkinSetting('0','action'+str(i)+'_'+str(i2),"")
+					setSkinSetting('1','off'+str(i)+'_'+str(i2),"")
+					setSkinSetting('0','icon'+str(i)+'_'+str(i2),"")
+					setSkinSetting('0','background'+str(i)+'_'+str(i2),"")
+					'''---------------------------'''
+			for i2 in range(100,110):
+				'''widgets'''
+				i2_ = xbmc.getInfoLabel('Skin.String(labelw'+str(i)+'_'+str(i2)+')')
+				if i2_ != "" and i != None:
+					#setSkinSetting('0','id'+str(i)+'_'+str(i2),"")
+					setSkinSetting('0','labelw'+str(i)+'_'+str(i2),"")
+					setSkinSetting('0','actionw'+str(i)+'_'+str(i2),"")
+					setSkinSetting('1','offw'+str(i)+'_'+str(i2),"")
+					setSkinSetting('0','iconw'+str(i)+'_'+str(i2),"")
+					setSkinSetting('0','backgroundw'+str(i)+'_'+str(i2),"")
+					'''---------------------------'''
 		for i in range(90,120):
 			count += 2
 			i_ = xbmc.getInfoLabel('Skin.String(label'+str(i)+')')
