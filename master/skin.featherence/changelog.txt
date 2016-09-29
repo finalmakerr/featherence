@@ -1,35 +1,41 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
-3. במעבר בין מסכים במכשיר איטי יש מסך שחור במשך כמה שניות, אם ניתן לעשות מסך מעבר יותר נעים לעין.
-4.כאשר מתחברים לחשבון טראקט ונכנסים לרשימת ההתקדמות, אין ברשימה עצמה את שם הסדרה ושם הפרק.
-
-- Font Colouring option.
+- More font coloring options.
+- Krypton support.
 - Added option to change the font size.
 
 ------------------------
 Featherence v0.6.1 (xx-Sep-16)
 ------------------------
 - Added option to always hide library updating progress dialog when watching a video.
+- Added option to change button's colors overlay.
 - Added option to color font of Focus and Unfocus widget labels.
 - Added option to color font of Dialogs window title and content.
-- Added option to color font of Virtual Keyboard title.
+- Added option to color font of Virtual Keyboard title and text.
 - Added option to color font of Top Information bar and Top Video Information bar.
-- Major touch buttons update.
-orientation, reposition, enlarge, executing action from skin design window support.
 - Added option to toggle show widget label's background on/off.
 - Added option to tweak maximum movies/tvshows widget items.
+- Added option to tweak the fade time between different skin windows (useful for low-end hardware).
 - Added two news mouse icons.
+- Added option to change the transperancy level of the locking mark/icons.
+- Major bug fix with addons who use TrakTV when it's show only "Episode No.".
+- Major bug fix with locking a button and using Sub Menu action.
+- Major bug fix with new favourite button doesn't hide when set to and doesn't take an action.
+- Minor bug fix with VideoOSD window not closing properly on home screen.
+- Major touch buttons update.
+orientation, reposition, enlarge, executing action from skin design window support.
 - Major update of DialogSubtitles window.
 Added option to show current subtitle (Yellow) and previous (Grey) subtitles (WIP).
 Added auto refresh for current subtitles provider and skip to next if none are found and user is idle.
 - Major update of Color Background dialogues.
 - Major update of Smart search string feature (subtitles).
-- Minor bug fix with VideoOSD window not closing properly on home screen.
-- Major bug fix with new favourite button doesn't hide when set to and doesn't take an action.
+- Minor bug fix with Random Background from widgets not working properly.
 - Minor design update of the three additionals small buttons.
 Also added a sync for big icons feature between the standards and those small icons.
 - Minor update of fanart position when browsing on some windows while video is playing.
+- Minor update of Featherence Classico Plus.
+- Minor update of Horizontal 2 layout.
 - Minor update of save/load feature.
 - RSS category has been merged with Upper Design category.
 
