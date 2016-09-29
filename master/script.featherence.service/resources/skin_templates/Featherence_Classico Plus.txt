@@ -1,4 +1,9 @@
 ------------------------
+Featherence Classico Plus (29-Sep-16)
+------------------------
+- Update design and some variables.
+
+------------------------
 Featherence Classico Plus (23-Sep-16)
 ------------------------
 - Update design to fit the new changes of Featherence 6.0
