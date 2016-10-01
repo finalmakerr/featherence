@@ -76,30 +76,34 @@ def mode6(value):
 			printpoint = printpoint + '3'
 			notification(addonString(32147).encode('utf-8'),"","",4000)
 			setProperty('PassProtect','','home')
-			if not customhomecustomizerW: xbmc.executebuiltin('ReplaceWindow(Home.xml)')
+			xbmc.executebuiltin('ReplaceWindow(Home.xml)')
 		else:
 			printpoint = printpoint + '4'
 			returned, set1v = dialognumeric(0,localize(12326),"",'1','','') ; xbmc.sleep(500)
 			if set1v != passprotect:
 				printpoint = printpoint + '5'
-				notification(localize(12342),"","",2000)
+				notification(localize(12342),"","",1000)
 				setProperty('PassProtect','','home')
-				if not customhomecustomizerW: xbmc.executebuiltin('ReplaceWindow(Home.xml)')
+				xbmc.executebuiltin('ReplaceWindow(Home.xml)')
 			else:
+				x = ""
 				try:
 					passprotectduration = int(passprotectduration)
 					passprotectduration = str(passprotectduration)
 				except:
 					passprotectduration = '15'
-				printpoint = printpoint + '6'
-				if passprotectduration != '0':
+					
+				if passprotectduration == '0': pass
+				else:
 					printpoint = printpoint + 'B'
 					xbmc.executebuiltin('AlarmClock(PassProtect,ClearProperty(PassProtect,home),'+passprotectduration+',silent)')
+					x = addonString(32155).encode('utf-8') % (str(passprotectduration)) #Relocking is schedule in %s minutes
+				
+				notification(addonString(32154).encode('utf-8'),x,"",4000) #That's the right password :)
 				setProperty('PassProtect','true', 'home')
 				if value == 'PassProtect':
 					printpoint = printpoint + 'A'
-					xbmc.sleep(500)
-					xbmc.executebuiltin('ActivateWindow(1173)')
+				
 	else:
 		printpoint = printpoint + '9'
 	
@@ -274,7 +278,7 @@ def mode9(admin, name):
 					
 			elif controlhasfocus120 and container120numitems > 0:
 				if (container120listitemlabel2 in subL or container120listitemlabel2 == property_dialogsubtitles2):
-					if container120numitems2 != container120numitems:
+					if container120numitems2 != container120numitems and count < 3:
 						'''------------------------------
 						---Last_SubService---------------
 						------------------------------'''
@@ -507,7 +511,7 @@ def mode10(admin, name, printpoint):
 			xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23)')
 		
 		text = 'ii' + space2 + str(ii) + newline
-		printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+		printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
 
 def mode12():
 	name = 'mode12' ; printpoint = ''
