@@ -523,7 +523,9 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	
 	'''חיפוש'''
 	if 'Hebrew' in General_LanguageL: addDir('-' + localize(137) + space + 'Sdarot TV','&activatewindow=plugin://plugin.video.sdarot.tv/?mode=6&name=%5bCOLOR%20red%5d%20%d7%97%d7%a4%d7%a9%20%20%5b%2fCOLOR%5d&summary&url=http%3a%2f%2fwww.sdarot.wf%2fsearch',8,featherenceserviceicons_path + 'se.png','http://www.sdarot.wf/','1',0,getAddonFanart(background, custom="", default=background2))
-	if 'English' in General_LanguageL: addDir('-' + localize(137) + space + 'cartoons8','&activatewindow=plugin://plugin.video.cartoons8/?description&iconimage=&mode=8&name=Anime%20-%20Search&url=http%3a%2f%2fchiaanime.co%2fSearch%3fs%3d',8,featherenceserviceicons_path + 'se.png','http://cartoons8.me/','1',0,getAddonFanart(background, custom="", default=background2))
+	if 'English' in General_LanguageL: addDir('-' + localize(137) + space + 'cartoons8 Anime','plugin://plugin.video.cartoons8/?description&iconimage=&mode=8&name=Anime%20-%20Search&url=http%3a%2f%2fchiaanime.co%2fSearch%3fs%3d',8,featherenceserviceicons_path + 'se.png','http://cartoons8.me/','1',0,getAddonFanart(background, custom="", default=background2))
+	if 'English' in General_LanguageL: addDir('-' + localize(137) + space + 'cartoons8 Cartton','plugin://plugin.video.cartoons8/?description&iconimage=&mode=8&name=Cartoon%20-%20Search&url=http%3a%2f%2f9cartoon.me%2fSearch%3fs%3d',8,featherenceserviceicons_path + 'se.png','http://cartoons8.me/','1',0,getAddonFanart(background, custom="", default=background2))
+	
 	
 	CATEGORIES_RANDOM(background,fanart) #אקראי
 	CATEGORIES104Z(General_LanguageL, background, background2) #ערוצי טלוויזיה
@@ -2964,11 +2966,10 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f1990.jpg&mode=3&name=paw-patrol-%d7%9e%d7%a4%d7%a8%d7%a5-%d7%94%d7%94%d7%a8%d7%a4%d7%aa%d7%a7%d7%90%d7%95%d7%aa-%d7%9e%d7%93%d7%95%d7%91%d7%91&series_id=1990&series_name=paw-patrol-%d7%9e%d7%a4%d7%a8%d7%a5-%d7%94%d7%94%d7%a8%d7%a4%d7%aa%d7%a7%d7%90%d7%95%d7%aa-%d7%9e%d7%93%d7%95%d7%91%d7%91&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1990%2fpaw-patrol-%d7%9e%d7%a4%d7%a8%d7%a5-%d7%94%d7%94%d7%a8%d7%a4%d7%aa%d7%a7%d7%90%d7%95%d7%aa-%d7%9e%d7%93%d7%95%d7%91%d7%91')
 	
 	if 'English' in General_LanguageL:
-		list.append('&youtube_id=fJQR-Irhwi0') #English
-		list.append('&youtube_pl=PL3Mze8NB9uQVLmcBoehWyrkOvuH02R41G')
-		list.append('&youtube_pl=PLrMeN4frlTDweVXcqoi65z5CmTRyROUFt')
+		list.append('&custom8=plugin://plugin.video.cartoons8/?description&iconimage=http%3a%2f%2f9cartoon.me%2fuploads%2fthumbs%2f2015-03-25paw-patrol-season-1-20131.jpg%7cUser-Agent%3dMozilla%2f5.0%20(Windows%20NT%206.1%3b%20rv%3a32.0)%20Gecko%2f20100101%20Firefox%2f32.0%26Cookie%3d__cfduid%3dd050ec12fafe2c97100f5553b706772be1471118127%3bcf_clearance%3d9c4658d06500305d4041a897dfab38cfec5762d3-1475336188-86400%3b__cfduid%3dd48ee3d5e8750d48c2c735e712c4476201468881294%3b__cfduid%3dde0bb4156da99183db0cc6a7c8325a0041470303966%3bPHPSESSID%3d86f31d8264a864fcba222bbadb97477b%3bPHPSESSID%3d0918e9805af889f932d3f1f7083de44b%3bPHPSESSID%3d71nhps357p41n36mj2h76hs486%3b&mode=2&name=PAW%20Patrol%20Season%201%20(2013)&url=http%3a%2f%2f9cartoon.me%2fCartoon%2f1347%2fpaw-patrol-season-1-2013%2f') #S1
+		list.append('&custom8=plugin://plugin.video.cartoons8/?description&iconimage=http%3a%2f%2f9cartoon.me%2fuploads%2fthumbs%2f2015-03-27paw-patrol-season-2-20142.jpg%7cUser-Agent%3dMozilla%2f5.0%20(Windows%20NT%206.1%3b%20rv%3a32.0)%20Gecko%2f20100101%20Firefox%2f32.0%26Cookie%3d__cfduid%3dd050ec12fafe2c97100f5553b706772be1471118127%3bcf_clearance%3d9c4658d06500305d4041a897dfab38cfec5762d3-1475336188-86400%3b__cfduid%3dd48ee3d5e8750d48c2c735e712c4476201468881294%3b__cfduid%3dde0bb4156da99183db0cc6a7c8325a0041470303966%3bPHPSESSID%3d86f31d8264a864fcba222bbadb97477b%3bPHPSESSID%3d0918e9805af889f932d3f1f7083de44b%3bPHPSESSID%3d71nhps357p41n36mj2h76hs486%3b&mode=2&name=PAW%20Patrol%20Season%202%20(2014)&url=http%3a%2f%2f9cartoon.me%2fCartoon%2f1427%2fpaw-patrol-season-2-2014%2f') #S2
+		list.append('&custom8=plugin://plugin.video.cartoons8/?description&iconimage=http%3a%2f%2f9cartoon.me%2fuploads%2fthumbs%2f2015-11-27paw-patrol-season-3-20153.jpg%7cUser-Agent%3dMozilla%2f5.0%20(Windows%20NT%206.1%3b%20rv%3a32.0)%20Gecko%2f20100101%20Firefox%2f32.0%26Cookie%3d__cfduid%3dd050ec12fafe2c97100f5553b706772be1471118127%3bcf_clearance%3d9c4658d06500305d4041a897dfab38cfec5762d3-1475336188-86400%3b__cfduid%3dd48ee3d5e8750d48c2c735e712c4476201468881294%3b__cfduid%3dde0bb4156da99183db0cc6a7c8325a0041470303966%3bPHPSESSID%3d86f31d8264a864fcba222bbadb97477b%3bPHPSESSID%3d0918e9805af889f932d3f1f7083de44b%3bPHPSESSID%3d71nhps357p41n36mj2h76hs486%3b&mode=2&name=PAW%20Patrol%20Season%203%20(2015)&url=http%3a%2f%2f9cartoon.me%2fCartoon%2f9376%2fpaw-patrol-season-3-2015%2f') #S3
 		list.append('&youtube_pl=PLrMeN4frlTDwCITZsX0PS6EWw9OWTo_G6')
-		list.append('&youtube_pl=PLdpGrR3siRzmLzfP_DHcqUD7G0a7KkDxW')
 	
 	if 'Russian' in General_LanguageL:
 		list.append('&youtube_id=') #

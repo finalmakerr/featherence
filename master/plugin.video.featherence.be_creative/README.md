@@ -1,7 +1,6 @@
 ![](http://i.imgur.com/zfdrpSG.png)
 
 
-
 # **Create your own plugin:**
 
 * **plugin.video.featherence.be_creative:**

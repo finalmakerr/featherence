@@ -2,6 +2,14 @@
 WIP - WORK IN PROGRESS
 ------------------------
 
+
+------------------------
+Featherence Kids v0.2.12 (01-Oct-16)
+------------------------
+- Added Cartoons 8 search in TV shows category for anime and cartoons.
+- Bug fix with Cartoons 8 search.
+- Minor links update.
+
 ------------------------
 Featherence Kids v0.2.11 (25-Sep-16)
 ------------------------
