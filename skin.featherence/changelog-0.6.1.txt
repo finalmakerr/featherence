@@ -6,7 +6,7 @@ WIP - WORK IN PROGRESS
 - Added option to change the font size.
 
 ------------------------
-Featherence v0.6.1 (02-Sep-16)
+Featherence v0.6.1 (02-Oct-16)
 ------------------------
 - Added noification for unlocking a button with a password.
 - Added option to always hide library updating progress dialog when watching a video.
