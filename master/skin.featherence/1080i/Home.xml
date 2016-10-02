@@ -15,7 +15,7 @@
   <onload condition="!IsEmpty(Window(home).Property(HomeLastPos))">SetFocus(9000,$INFO[Window(home).Property(HomeLastPos)])</onload>-->
   <include>onunload_ClearProperty_MainMenu</include>
   <include>onunload_ClearProperty_SubMenu</include>
-  <include>Fade6</include>
+  <include>Fade_WindowsOpenClose</include>
   <controls>
 	<include>Backgrounds1</include>
 	<include>Design_TopButtons</include>

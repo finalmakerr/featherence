@@ -57,7 +57,7 @@
 			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.3.Tagline)]</property>
           </item>
           <item id="4" description="Movies">
-            <visible>!IsEmpty(Window(home).Property(RecentMovie.4.Path))</visible>
+			<visible>!IsEmpty(Window(home).Property(RecentMovie.4.Path))</visible>
             <label>$INFO[Window(home).Property(RecentMovie.4.Title)] ($INFO[Window(home).Property(RecentMovie.4.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RecentMovie.4.Year)] </property>
 			<thumb>$INFO[Window(home).Property(RecentMovie.4.Art(Poster))]</thumb>
@@ -71,6 +71,7 @@
 			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.4.Tagline)]</property>
           </item>
           <item id="5" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),4) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(home).Property(RecentMovie.5.Path))</visible>
             <label>$INFO[Window(home).Property(RecentMovie.5.Title)] ($INFO[Window(home).Property(RecentMovie.5.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RecentMovie.5.Year)] </property>
@@ -85,7 +86,8 @@
 			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.5.Tagline)]</property>
           </item>
           <item id="6" description="Movies">
-            <visible>!IsEmpty(Window(home).Property(RecentMovie.6.Path))</visible>
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),5) | !Skin.String(MTWidgetItems)</visible>
+			<visible>!IsEmpty(Window(home).Property(RecentMovie.6.Path))</visible>
             <label>$INFO[Window(home).Property(RecentMovie.6.Title)] ($INFO[Window(home).Property(RecentMovie.6.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RecentMovie.6.Year)] </property>
 			<thumb>$INFO[Window(home).Property(RecentMovie.6.Art(Poster))]</thumb>
@@ -99,6 +101,7 @@
 			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.6.Tagline)]</property>
           </item>
           <item id="7" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),6) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(home).Property(RecentMovie.7.Path))</visible>
             <label>$INFO[Window(home).Property(RecentMovie.7.Title)] ($INFO[Window(home).Property(RecentMovie.7.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RecentMovie.7.Year)] </property>
@@ -113,6 +116,7 @@
 			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.7.Tagline)]</property>
           </item>
           <item id="8" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),7) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(home).Property(RecentMovie.8.Path))</visible>
             <label>$INFO[Window(home).Property(RecentMovie.8.Title)] ($INFO[Window(home).Property(RecentMovie.8.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RecentMovie.8.Year)] </property>
@@ -127,6 +131,7 @@
 			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.8.Tagline)]</property>
           </item>
           <item id="9" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),8) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(home).Property(RecentMovie.9.Path))</visible>
             <label>$INFO[Window(home).Property(RecentMovie.9.Title)] ($INFO[Window(home).Property(RecentMovie.9.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RecentMovie.9.Year)] </property>
@@ -141,6 +146,7 @@
 			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.9.Tagline)]</property>
           </item>
           <item id="10" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),9) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(home).Property(RecentMovie.10.Path))</visible>
             <label>$INFO[Window(home).Property(RecentMovie.10.Title)] ($INFO[Window(home).Property(RecentMovie.10.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RecentMovie.10.Year)] </property>
@@ -153,7 +159,158 @@
 			<property name="runtime">$INFO[Window(Home).Property(RecentMovie.10.Runtime)]</property>
 			<property name="title">$INFO[Window(Home).Property(RecentMovie.10.Title)]</property>
 			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.10.Tagline)]</property>
-
+          </item>
+		  
+		  <item id="11" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),10)</visible>
+            <visible>!IsEmpty(Window(home).Property(RecentMovie.11.Path))</visible>
+            <label>$INFO[Window(home).Property(RecentMovie.11.Title)] ($INFO[Window(home).Property(RecentMovie.11.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RecentMovie.11.Year)] </property>
+            <thumb>$INFO[Window(home).Property(RecentMovie.11.Art(Poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentMovie.11)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RecentMovie.11.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentMovie.11.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentMovie.11.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RecentMovie.11.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RecentMovie.11.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentMovie.11.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.11.Tagline)]</property>
+			<property name="fanart">$INFO[Window(home).Property(RecentMovie.11.Art(fanart))]</property>
+          </item>
+          <item id="12" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),11)</visible>
+            <visible>!IsEmpty(Window(home).Property(RecentMovie.12.Path))</visible>
+            <label>$INFO[Window(home).Property(RecentMovie.12.Title)] ($INFO[Window(home).Property(RecentMovie.12.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RecentMovie.12.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RecentMovie.12.Art(Poster))]</thumb>
+            <onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentMovie.12)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RecentMovie.12.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentMovie.12.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentMovie.12.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RecentMovie.12.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RecentMovie.12.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentMovie.12.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.12.Tagline)]</property>
+          </item>
+          <item id="13" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),12)</visible>
+            <visible>!IsEmpty(Window(home).Property(RecentMovie.13.Path))</visible>
+            <label>$INFO[Window(home).Property(RecentMovie.13.Title)] ($INFO[Window(home).Property(RecentMovie.13.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RecentMovie.13.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RecentMovie.13.Art(Poster))]</thumb>
+            <onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentMovie.13)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RecentMovie.13.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentMovie.13.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentMovie.13.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RecentMovie.13.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RecentMovie.13.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentMovie.13.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.13.Tagline)]</property>
+          </item>
+          <item id="14" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),13)</visible>
+            <visible>!IsEmpty(Window(home).Property(RecentMovie.14.Path))</visible>
+            <label>$INFO[Window(home).Property(RecentMovie.14.Title)] ($INFO[Window(home).Property(RecentMovie.14.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RecentMovie.14.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RecentMovie.14.Art(Poster))]</thumb>
+            <onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentMovie.14)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RecentMovie.14.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentMovie.14.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentMovie.14.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RecentMovie.14.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RecentMovie.14.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentMovie.14.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.14.Tagline)]</property>
+          </item>
+          <item id="15" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),14)</visible>
+            <visible>!IsEmpty(Window(home).Property(RecentMovie.15.Path))</visible>
+            <label>$INFO[Window(home).Property(RecentMovie.15.Title)] ($INFO[Window(home).Property(RecentMovie.15.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RecentMovie.15.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RecentMovie.15.Art(Poster))]</thumb>
+            <onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentMovie.15)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RecentMovie.15.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentMovie.15.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentMovie.15.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RecentMovie.15.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RecentMovie.15.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentMovie.15.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.15.Tagline)]</property>
+          </item>
+          <item id="16" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),15)</visible>
+            <visible>!IsEmpty(Window(home).Property(RecentMovie.16.Path))</visible>
+            <label>$INFO[Window(home).Property(RecentMovie.16.Title)] ($INFO[Window(home).Property(RecentMovie.16.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RecentMovie.16.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RecentMovie.16.Art(Poster))]</thumb>
+            <onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentMovie.16)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RecentMovie.16.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentMovie.16.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentMovie.16.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RecentMovie.16.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RecentMovie.16.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentMovie.16.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.16.Tagline)]</property>
+          </item>
+          <item id="17" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),16)</visible>
+            <visible>!IsEmpty(Window(home).Property(RecentMovie.17.Path))</visible>
+            <label>$INFO[Window(home).Property(RecentMovie.17.Title)] ($INFO[Window(home).Property(RecentMovie.17.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RecentMovie.17.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RecentMovie.17.Art(Poster))]</thumb>
+            <onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentMovie.17)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RecentMovie.17.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentMovie.17.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentMovie.17.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RecentMovie.17.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RecentMovie.17.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentMovie.17.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.17.Tagline)]</property>
+          </item>
+          <item id="18" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),17)</visible>
+            <visible>!IsEmpty(Window(home).Property(RecentMovie.18.Path))</visible>
+            <label>$INFO[Window(home).Property(RecentMovie.18.Title)] ($INFO[Window(home).Property(RecentMovie.18.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RecentMovie.18.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RecentMovie.18.Art(Poster))]</thumb>
+            <onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentMovie.18)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RecentMovie.18.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentMovie.18.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentMovie.18.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RecentMovie.18.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RecentMovie.18.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentMovie.18.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.18.Tagline)]</property>
+          </item>
+          <item id="19" description="Movies">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),18)</visible>
+			<visible>!IsEmpty(Window(home).Property(RecentMovie.19.Path))</visible>
+            <label>$INFO[Window(home).Property(RecentMovie.19.Title)] ($INFO[Window(home).Property(RecentMovie.19.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RecentMovie.19.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RecentMovie.19.Art(Poster))]</thumb>
+            <onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentMovie.19)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RecentMovie.19.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentMovie.19.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentMovie.19.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RecentMovie.19.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RecentMovie.19.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentMovie.19.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.19.Tagline)]</property>
+          </item>
+          <item id="20" description="Movies">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),19)</visible>
+            <visible>!IsEmpty(Window(home).Property(RecentMovie.20.Path))</visible>
+            <label>$INFO[Window(home).Property(RecentMovie.20.Title)] ($INFO[Window(home).Property(RecentMovie.20.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RecentMovie.20.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RecentMovie.20.Art(Poster))]</thumb>
+            <onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentMovie.20)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RecentMovie.20.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentMovie.20.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentMovie.20.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RecentMovie.20.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RecentMovie.20.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentMovie.20.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RecentMovie.20.Tagline)]</property>
           </item>
         </content>
 	  </control>
@@ -229,6 +386,7 @@
 			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.4.Tagline)]</property>
           </item>
           <item id="5" description="Movies">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),4) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(home).Property(RandomMovie.5.Path))</visible>
             <label>$INFO[Window(home).Property(RandomMovie.5.Title)] ($INFO[Window(home).Property(RandomMovie.5.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RandomMovie.5.Year)] </property>
@@ -243,6 +401,7 @@
 			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.5.Tagline)]</property>
           </item>
           <item id="6" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),5) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(home).Property(RandomMovie.6.Path))</visible>
             <label>$INFO[Window(home).Property(RandomMovie.6.Title)] ($INFO[Window(home).Property(RandomMovie.6.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RandomMovie.6.Year)] </property>
@@ -257,7 +416,8 @@
 			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.6.Tagline)]</property>
           </item>
           <item id="7" description="Movies">
-            <visible>!IsEmpty(Window(home).Property(RandomMovie.7.Path))</visible>
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),6) | !Skin.String(MTWidgetItems)</visible>
+			<visible>!IsEmpty(Window(home).Property(RandomMovie.7.Path))</visible>
             <label>$INFO[Window(home).Property(RandomMovie.7.Title)] ($INFO[Window(home).Property(RandomMovie.7.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RandomMovie.7.Year)] </property>
 			<thumb>$INFO[Window(home).Property(RandomMovie.7.Art(poster))]</thumb>
@@ -271,7 +431,8 @@
 			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.7.Tagline)]</property>
           </item>
           <item id="8" description="Movies">
-            <visible>!IsEmpty(Window(home).Property(RandomMovie.8.Path))</visible>
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),7) | !Skin.String(MTWidgetItems)</visible>
+			<visible>!IsEmpty(Window(home).Property(RandomMovie.8.Path))</visible>
             <label>$INFO[Window(home).Property(RandomMovie.8.Title)] ($INFO[Window(home).Property(RandomMovie.8.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RandomMovie.8.Year)] </property>
 			<thumb>$INFO[Window(home).Property(RandomMovie.8.Art(poster))]</thumb>
@@ -285,7 +446,8 @@
 			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.8.Tagline)]</property>
           </item>
           <item id="9" description="Movies">
-            <visible>!IsEmpty(Window(home).Property(RandomMovie.9.Path))</visible>
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),8) | !Skin.String(MTWidgetItems)</visible>
+			<visible>!IsEmpty(Window(home).Property(RandomMovie.9.Path))</visible>
             <label>$INFO[Window(home).Property(RandomMovie.9.Title)] ($INFO[Window(home).Property(RandomMovie.9.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RandomMovie.9.Year)] </property>
 			<thumb>$INFO[Window(home).Property(RandomMovie.9.Art(poster))]</thumb>
@@ -299,7 +461,8 @@
 			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.9.Tagline)]</property>
           </item>
           <item id="10" description="Movies">
-            <visible>!IsEmpty(Window(home).Property(RandomMovie.10.Path))</visible>
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),9) | !Skin.String(MTWidgetItems)</visible>
+			<visible>!IsEmpty(Window(home).Property(RandomMovie.10.Path))</visible>
             <label>$INFO[Window(home).Property(RandomMovie.10.Title)] ($INFO[Window(home).Property(RandomMovie.10.Year)])</label>
 			<property name="year">$INFO[Window(home).Property(RandomMovie.10.Year)]</property>
 			<thumb>$INFO[Window(home).Property(RandomMovie.10.Art(poster))]</thumb>
@@ -311,6 +474,157 @@
 			<property name="runtime">$INFO[Window(Home).Property(RandomMovie.10.Runtime)]</property>
 			<property name="title">$INFO[Window(Home).Property(RandomMovie.10.Title)]</property>
 			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.10.Tagline)]</property>
+          </item>
+		  
+		  <item id="11" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),10)</visible>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.11.Path))</visible>
+            <label>$INFO[Window(home).Property(RandomMovie.11.Title)] ($INFO[Window(home).Property(RandomMovie.11.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RandomMovie.11.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RandomMovie.11.Art(poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RandomMovie.11)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RandomMovie.11.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RandomMovie.11.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RandomMovie.11.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RandomMovie.11.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RandomMovie.11.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RandomMovie.11.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.11.Tagline)]</property>
+          </item>
+          <item id="12" description="Movies">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),11)</visible>
+			<visible>!IsEmpty(Window(home).Property(RandomMovie.12.Path))</visible>
+            <label>$INFO[Window(home).Property(RandomMovie.12.Title)] ($INFO[Window(home).Property(RandomMovie.12.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RandomMovie.12.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RandomMovie.12.Art(poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RandomMovie.12)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RandomMovie.12.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RandomMovie.12.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RandomMovie.12.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RandomMovie.12.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RandomMovie.12.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RandomMovie.12.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.12.Tagline)]</property>
+          </item>
+          <item id="13" description="Movies">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),12)</visible>
+			<visible>!IsEmpty(Window(home).Property(RandomMovie.13.Path))</visible>
+            <label>$INFO[Window(home).Property(RandomMovie.13.Title)] ($INFO[Window(home).Property(RandomMovie.13.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RandomMovie.13.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RandomMovie.13.Art(poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RandomMovie.13)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RandomMovie.13.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RandomMovie.13.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RandomMovie.13.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RandomMovie.13.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RandomMovie.13.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RandomMovie.13.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.13.Tagline)]</property>
+          </item>
+          <item id="14" description="Movies">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),13)</visible>
+			<visible>!IsEmpty(Window(home).Property(RandomMovie.14.Path))</visible>
+            <label>$INFO[Window(home).Property(RandomMovie.14.Title)] ($INFO[Window(home).Property(RandomMovie.14.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RandomMovie.14.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RandomMovie.14.Art(poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RandomMovie.14)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RandomMovie.14.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RandomMovie.14.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RandomMovie.14.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RandomMovie.14.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RandomMovie.14.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RandomMovie.14.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.14.Tagline)]</property>
+          </item>
+          <item id="15" description="Movies">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),14)</visible>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.15.Path))</visible>
+            <label>$INFO[Window(home).Property(RandomMovie.15.Title)] ($INFO[Window(home).Property(RandomMovie.15.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RandomMovie.15.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RandomMovie.15.Art(poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RandomMovie.15)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RandomMovie.15.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RandomMovie.15.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RandomMovie.15.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RandomMovie.15.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RandomMovie.15.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RandomMovie.15.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.15.Tagline)]</property>
+          </item>
+          <item id="16" description="Movies">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),15)</visible>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.16.Path))</visible>
+            <label>$INFO[Window(home).Property(RandomMovie.16.Title)] ($INFO[Window(home).Property(RandomMovie.16.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RandomMovie.16.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RandomMovie.16.Art(poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RandomMovie.16)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RandomMovie.16.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RandomMovie.16.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RandomMovie.16.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RandomMovie.16.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RandomMovie.16.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RandomMovie.16.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.16.Tagline)]</property>
+          </item>
+          <item id="17" description="Movies">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),16)</visible>
+			<visible>!IsEmpty(Window(home).Property(RandomMovie.17.Path))</visible>
+            <label>$INFO[Window(home).Property(RandomMovie.17.Title)] ($INFO[Window(home).Property(RandomMovie.17.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RandomMovie.17.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RandomMovie.17.Art(poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RandomMovie.17)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RandomMovie.17.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RandomMovie.17.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RandomMovie.17.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RandomMovie.17.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RandomMovie.17.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RandomMovie.17.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.17.Tagline)]</property>
+          </item>
+          <item id="18" description="Movies">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),17)</visible>
+			<visible>!IsEmpty(Window(home).Property(RandomMovie.18.Path))</visible>
+            <label>$INFO[Window(home).Property(RandomMovie.18.Title)] ($INFO[Window(home).Property(RandomMovie.18.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RandomMovie.18.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RandomMovie.18.Art(poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RandomMovie.18)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RandomMovie.18.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RandomMovie.18.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RandomMovie.18.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RandomMovie.18.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RandomMovie.18.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RandomMovie.18.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.18.Tagline)]</property>
+          </item>
+          <item id="19" description="Movies">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),18)</visible>
+			<visible>!IsEmpty(Window(home).Property(RandomMovie.19.Path))</visible>
+            <label>$INFO[Window(home).Property(RandomMovie.19.Title)] ($INFO[Window(home).Property(RandomMovie.19.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RandomMovie.19.Year)] </property>
+			<thumb>$INFO[Window(home).Property(RandomMovie.19.Art(poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RandomMovie.19)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RandomMovie.19.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RandomMovie.19.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RandomMovie.19.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RandomMovie.19.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RandomMovie.19.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RandomMovie.19.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.19.Tagline)]</property>
+          </item>
+          <item id="20" description="Movies">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),19)</visible>
+			<visible>!IsEmpty(Window(home).Property(RandomMovie.20.Path))</visible>
+            <label>$INFO[Window(home).Property(RandomMovie.20.Title)] ($INFO[Window(home).Property(RandomMovie.20.Year)])</label>
+			<property name="year">$INFO[Window(home).Property(RandomMovie.20.Year)]</property>
+			<thumb>$INFO[Window(home).Property(RandomMovie.20.Art(poster))]</thumb>
+            <onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RandomMovie.20)</onclick>
+			<property name="genre">$INFO[Window(Home).Property(RandomMovie.20.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RandomMovie.20.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RandomMovie.20.Rating)]</property>
+			<property name="trailer">$INFO[Window(Home).Property(RandomMovie.20.Trailer)]</property>
+			<property name="runtime">$INFO[Window(Home).Property(RandomMovie.20.Runtime)]</property>
+			<property name="title">$INFO[Window(Home).Property(RandomMovie.20.Title)]</property>
+			<property name="tagline">$INFO[Window(Home).Property(RandomMovie.20.Tagline)]</property>
           </item>
         </content>
       </control> 
@@ -394,7 +708,8 @@
 			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.4.Episode)]</property>
           </item>
           <item id="5" description="Episodes5">
-            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.5.Path))</visible>
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),4) | !Skin.String(MTWidgetItems)</visible>
+			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.5.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.5.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.5.Season)] E$INFO[Window(Home).Property(RecentEpisode.5.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.5.Year)]</property>
             <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.5.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.5.Episode)][/COLOR]</property>
@@ -410,6 +725,7 @@
 			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.5.Episode)]</property>
           </item>
           <item id="6" description="Episodes6">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),5) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.6.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.6.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.6.Season)] E$INFO[Window(Home).Property(RecentEpisode.6.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.6.Year)]</property>
@@ -426,6 +742,7 @@
 			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.6.Episode)]</property>
           </item>
           <item id="7" description="Episodes7">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),6) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.7.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.7.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.7.Season)] E$INFO[Window(Home).Property(RecentEpisode.7.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.7.Year)]</property>
@@ -442,6 +759,7 @@
 			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.7.Episode)]</property>
           </item>
           <item id="8" description="Episodes8">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),7) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.8.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.8.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.8.Season)] E$INFO[Window(Home).Property(RecentEpisode.8.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.8.Year)]</property>
@@ -458,6 +776,7 @@
 			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.8.Episode)]</property>
           </item>
           <item id="9" description="Episodes9">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),8) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.9.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.9.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.9.Season)] E$INFO[Window(Home).Property(RecentEpisode.9.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.9.Year)]</property>
@@ -474,6 +793,7 @@
 			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.9.Episode)]</property>
           </item>
           <item id="10" description="Episodes10">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),9) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(Home).Property(RecentEpisode.10.Path))</visible>
             <label>$INFO[Window(Home).Property(RecentEpisode.10.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.10.Season)] E$INFO[Window(Home).Property(RecentEpisode.10.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecentEpisode.10.Year)]</property>
@@ -488,6 +808,177 @@
 			<property name="title">$INFO[Window(Home).Property(RecentEpisode.10.Title)]</property>
 			<property name="season">$INFO[Window(Home).Property(RecentEpisode.10.Season)]</property>
 			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.10.Episode)]</property>
+          </item>
+		  
+		  <item id="11" description="Episodes1">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),10)</visible>
+			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.11.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.11.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.11.Season)] E$INFO[Window(Home).Property(RecentEpisode.11.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecentEpisode.11.Year)]</property>
+			<property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.11.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.11.Episode)][/COLOR]</property>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.11.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.11)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.11.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecentEpisode.11.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentEpisode.11.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentEpisode.11.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecentEpisode.11.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentEpisode.11.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecentEpisode.11.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.11.Episode)]</property>
+          </item>
+          <item id="12" description="Episodes2">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),11)</visible>
+			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.12.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.12.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.12.Season)] E$INFO[Window(Home).Property(RecentEpisode.12.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecentEpisode.12.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.12.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.12.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecentEpisode.12.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.12)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.12.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecentEpisode.12.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentEpisode.12.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentEpisode.12.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecentEpisode.12.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentEpisode.12.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecentEpisode.12.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.12.Episode)]</property>
+          </item>
+          <item id="13" description="Episodes3">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),12)</visible>
+			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.13.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.13.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.13.Season)] E$INFO[Window(Home).Property(RecentEpisode.13.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecentEpisode.13.Year)]</property>
+			<property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.13.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.13.Episode)][/COLOR]</property>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.13.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.13)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.13.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecentEpisode.13.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentEpisode.13.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentEpisode.13.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecentEpisode.13.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentEpisode.13.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecentEpisode.13.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.13.Episode)]</property>
+          </item>
+          <item id="14" description="Episodes4">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),13)</visible>
+			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.14.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.14.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.14.Season)] E$INFO[Window(Home).Property(RecentEpisode.14.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecentEpisode.14.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.14.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.14.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecentEpisode.14.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.14)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.14.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecentEpisode.14.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentEpisode.14.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentEpisode.14.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecentEpisode.14.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentEpisode.14.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecentEpisode.14.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.14.Episode)]</property>
+          </item>
+          <item id="15" description="Episodes5">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),14)</visible>
+			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.15.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.15.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.15.Season)] E$INFO[Window(Home).Property(RecentEpisode.15.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecentEpisode.15.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.15.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.15.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecentEpisode.15.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.15)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.15.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecentEpisode.15.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentEpisode.15.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentEpisode.15.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecentEpisode.15.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentEpisode.15.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecentEpisode.15.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.15.Episode)]</property>
+          </item>
+          <item id="16" description="Episodes6">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),15)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.16.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.16.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.16.Season)] E$INFO[Window(Home).Property(RecentEpisode.16.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecentEpisode.16.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.16.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.16.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecentEpisode.16.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.16)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.16.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecentEpisode.16.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentEpisode.16.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentEpisode.16.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecentEpisode.16.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentEpisode.16.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecentEpisode.16.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.16.Episode)]</property>
+          </item>
+          <item id="17" description="Episodes7">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),16)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.17.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.17.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.17.Season)] E$INFO[Window(Home).Property(RecentEpisode.17.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecentEpisode.17.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.17.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.17.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecentEpisode.17.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.17)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.17.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecentEpisode.17.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentEpisode.17.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentEpisode.17.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecentEpisode.17.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentEpisode.17.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecentEpisode.17.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.17.Episode)]</property>
+          </item>
+          <item id="18" description="Episodes8">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),17)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.18.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.18.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.18.Season)] E$INFO[Window(Home).Property(RecentEpisode.18.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecentEpisode.18.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.18.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.18.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecentEpisode.18.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.18)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.18.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecentEpisode.18.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentEpisode.18.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentEpisode.18.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecentEpisode.18.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentEpisode.18.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecentEpisode.18.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.18.Episode)]</property>
+          </item>
+          <item id="19" description="Episodes9">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),18)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.19.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.19.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.19.Season)] E$INFO[Window(Home).Property(RecentEpisode.19.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecentEpisode.19.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.19.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.19.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecentEpisode.19.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.19)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.19.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecentEpisode.19.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentEpisode.19.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentEpisode.19.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecentEpisode.19.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentEpisode.19.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecentEpisode.19.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.19.Episode)]</property>
+          </item>
+          <item id="20" description="Episodes10">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),19)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.20.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.20.TVshowTitle)] S$INFO[Window(Home).Property(RecentEpisode.20.Season)] E$INFO[Window(Home).Property(RecentEpisode.20.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecentEpisode.20.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.20.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecentEpisode.20.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecentEpisode.20.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecentEpisode.20)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecentEpisode.20.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecentEpisode.20.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecentEpisode.20.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecentEpisode.20.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecentEpisode.20.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecentEpisode.20.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecentEpisode.20.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecentEpisode.20.Episode)]</property>
           </item>
         </content>
       </control>
@@ -571,6 +1062,7 @@
 			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.4.Episode)]</property>
           </item>
           <item id="5" description="Episodes5">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),4) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.5.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.5.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.5.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.5.Year)]</property>
@@ -587,6 +1079,7 @@
 			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.5.Episode)]</property>
           </item>
           <item id="6" description="Episodes6">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),5) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.6.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.6.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.6.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.6.Year)]</property>
@@ -603,6 +1096,7 @@
 			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.6.Episode)]</property>
           </item>
           <item id="7" description="Episodes7">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),6) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.7.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.7.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.7.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.7.Year)]</property>
@@ -619,6 +1113,7 @@
 			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.7.Episode)]</property>
           </item>
           <item id="8" description="Episodes8">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),7) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.8.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.8.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.8.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.8.Year)]</property>
@@ -635,6 +1130,7 @@
 			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.8.Episode)]</property>
           </item>
           <item id="9" description="Episodes9">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),8) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.9.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.9.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.9.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.9.Year)]</property>
@@ -651,6 +1147,7 @@
 			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.9.Episode)]</property>
           </item>
           <item id="10" description="Episodes10">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),9) | !Skin.String(MTWidgetItems)</visible>
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.10.Title))</visible>
             <label>$INFO[Window(Home).Property(RecommendedEpisode.10.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.10.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.10.Episode)]</label>
             <property name="year">$INFO[Window(home).Property(RecommendedEpisode.10.Year)]</property>
@@ -667,11 +1164,1117 @@
 			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.10.Episode)]</property>
 			<property name="episodename">$INFO[Window(Home).Property(RecommendedEpisode.10.Title)]</property>
           </item>
+		  
+		  <item id="11" description="Episodes1">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),10)</visible>
+			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.11.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.11.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.11.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.11.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecommendedEpisode.11.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.11.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.11.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.11.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.11)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.11.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecommendedEpisode.11.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecommendedEpisode.11.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecommendedEpisode.11.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.11.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecommendedEpisode.11.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecommendedEpisode.11.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.11.Episode)]</property>
+          </item>
+          <item id="12" description="Episodes12">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),11)</visible>
+			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.12.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.12.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.12.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.12.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecommendedEpisode.12.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.12.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.12.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.12.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.12)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.12.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecommendedEpisode.12.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecommendedEpisode.12.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecommendedEpisode.12.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.12.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecommendedEpisode.12.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecommendedEpisode.12.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.12.Episode)]</property>
+          </item>
+          <item id="13" description="Episodes13">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),12)</visible>
+			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.13.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.13.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.13.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.13.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecommendedEpisode.13.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.13.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.13.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.13.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.13)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.13.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecommendedEpisode.13.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecommendedEpisode.13.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecommendedEpisode.13.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.13.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecommendedEpisode.13.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecommendedEpisode.13.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.13.Episode)]</property>
+          </item>
+          <item id="14" description="Episodes14">
+            <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),13)</visible>
+			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.14.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.14.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.14.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.14.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecommendedEpisode.14.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.14.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.14.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.14.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.14)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.14.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecommendedEpisode.14.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecommendedEpisode.14.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecommendedEpisode.14.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.14.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecommendedEpisode.14.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecommendedEpisode.14.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.14.Episode)]</property>
+          </item>
+          <item id="15" description="Episodes15">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),14)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.15.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.15.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.15.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.15.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecommendedEpisode.15.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.15.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.15.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.15.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.15)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.15.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecommendedEpisode.15.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecommendedEpisode.15.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecommendedEpisode.15.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.15.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecommendedEpisode.15.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecommendedEpisode.15.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.15.Episode)]</property>
+          </item>
+          <item id="16" description="Episodes16">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),15)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.16.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.16.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.16.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.16.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecommendedEpisode.16.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.16.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.16.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.16.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.16)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.16.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecommendedEpisode.16.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecommendedEpisode.16.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecommendedEpisode.16.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.16.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecommendedEpisode.16.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecommendedEpisode.16.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.16.Episode)]</property>
+          </item>
+          <item id="17" description="Episodes7">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),16)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.17.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.17.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.17.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.17.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecommendedEpisode.17.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.17.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.17.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.17.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.17)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.17.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecommendedEpisode.17.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecommendedEpisode.17.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecommendedEpisode.17.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.17.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecommendedEpisode.17.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecommendedEpisode.17.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.17.Episode)]</property>
+          </item>
+          <item id="18" description="Episodes18">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),17)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.18.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.18.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.18.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.18.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecommendedEpisode.18.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.18.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.18.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.18.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.18)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.18.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecommendedEpisode.18.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecommendedEpisode.18.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecommendedEpisode.18.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.18.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecommendedEpisode.18.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecommendedEpisode.18.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.18.Episode)]</property>
+          </item>
+          <item id="19" description="Episodes19">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),18)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.19.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.19.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.19.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.19.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecommendedEpisode.19.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.19.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.19.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.19.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.19)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.19.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecommendedEpisode.19.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecommendedEpisode.19.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecommendedEpisode.19.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.19.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecommendedEpisode.19.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecommendedEpisode.19.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.19.Episode)]</property>
+          </item>
+          <item id="20" description="Episodes20">
+		    <visible>IntegerGreaterThan(Skin.String(MTWidgetItems),19)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.20.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.20.TVshowTitle)] S$INFO[Window(Home).Property(RecommendedEpisode.20.Season)] E$INFO[Window(Home).Property(RecommendedEpisode.20.Episode)]</label>
+            <property name="year">$INFO[Window(home).Property(RecommendedEpisode.20.Year)]</property>
+            <property name="se">S: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.20.Season)][/COLOR] • E: [COLOR yellow]$INFO[Window(Home).Property(RecommendedEpisode.20.Episode)][/COLOR]</property>
+			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.20.Art(tvshow.poster))]</thumb>
+			<onclick condition="true">RunScript(script.featherence.service,,?mode=24&amp;value=RecommendedEpisode.20)</onclick>
+			<property name="runtime">$INFO[Window(Home).Property(RecommendedEpisode.20.Runtime)]</property>
+			<property name="genre">$INFO[Window(Home).Property(RecommendedEpisode.20.Genre)]</property>
+			<property name="plot">$INFO[Window(Home).Property(RecommendedEpisode.20.Plot)]</property>
+			<property name="rating">$INFO[Window(Home).Property(RecommendedEpisode.20.Rating)]</property>
+			<property name="tvshowtitle">$INFO[Window(Home).Property(RecommendedEpisode.20.TVshowTitle)]</property>
+			<property name="title">$INFO[Window(Home).Property(RecommendedEpisode.20.Title)]</property>
+			<property name="season">$INFO[Window(Home).Property(RecommendedEpisode.20.Season)]</property>
+			<property name="episode">$INFO[Window(Home).Property(RecommendedEpisode.20.Episode)]</property>
+			<property name="episodename">$INFO[Window(Home).Property(RecommendedEpisode.20.Title)]</property>
+          </item>
         </content>
       </control>
     </control>
   </include>
   
+  <include name="WidgetContent_17">
+	<item id="100">
+   	  <visible>[Skin.HasSetting(offw17_100) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_100</property>
+	  <property name="temp1">temp1_17_100__</property>
+	  <property name="temp2">temp2_17_100__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_100)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_100)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_100)]</label>
+	  <label2>w17_100</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_100)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="101">
+ 	  <visible>[Skin.HasSetting(offw17_101) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_101</property>
+	  <property name="temp1">temp1_17_101__</property>
+	  <property name="temp2">temp2_17_101__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_101)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_101)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_101)]</label>
+	  <label2>w17_101</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_101)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="102">
+ 	  <visible>[Skin.HasSetting(offw17_102) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_102</property>
+	  <property name="temp1">temp1_17_102__</property>
+	  <property name="temp2">temp2_17_102__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_102)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_102)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_102)]</label>
+	  <label2>w17_102</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_102)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="103">
+ 	  <visible>[Skin.HasSetting(offw17_103) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_103</property>
+	  <property name="temp1">temp1_17_103__</property>
+	  <property name="temp2">temp2_17_103__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_103)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_103)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_103)]</label>
+	  <label2>w17_103</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_103)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="104">
+ 	  <visible>[Skin.HasSetting(offw17_104) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_104</property>
+	  <property name="temp1">temp1_17_104__</property>
+	  <property name="temp2">temp2_17_104__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_104)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_104)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_104)]</label>
+	  <label2>w17_104</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_104)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="105">
+ 	  <visible>[Skin.HasSetting(offw17_105) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_105</property>
+	  <property name="temp1">temp1_17_105__</property>
+	  <property name="temp2">temp2_17_105__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_105)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_105)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_105)]</label>
+	  <label2>w17_105</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_105)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="106">
+ 	  <visible>[Skin.HasSetting(offw17_106) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_106</property>
+	  <property name="temp1">temp1_17_106__</property>
+	  <property name="temp2">temp2_17_106__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_106)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_106)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_106)]</label>
+	  <label2>w17_106</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_106)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="107">
+ 	  <visible>[Skin.HasSetting(offw17_107) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_107</property>
+	  <property name="temp1">temp1_17_107__</property>
+	  <property name="temp2">temp2_17_107__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_107)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_107)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_107)]</label>
+	  <label2>w17_107</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_107)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="108">
+ 	  <visible>[Skin.HasSetting(offw17_108) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_108</property>
+	  <property name="temp1">temp1_17_108__</property>
+	  <property name="temp2">temp2_17_108__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_108)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_108)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_108)]</label>
+	  <label2>w17_108</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_108)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="109">
+ 	  <visible>[Skin.HasSetting(offw17_109) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_109</property>
+	  <property name="temp1">temp1_17_109__</property>
+	  <property name="temp2">temp2_17_109__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_109)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_109)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_109)]</label>
+	  <label2>w17_109</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_109)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="110">
+ 	  <visible>[Skin.HasSetting(offw17_110) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_110</property>
+	  <property name="temp1">temp1_17_110__</property>
+	  <property name="temp2">temp2_17_110__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_110)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_110)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_110)]</label>
+	  <label2>w17_110</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_110)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="111">
+ 	  <visible>[Skin.HasSetting(offw17_111) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_111</property>
+	  <property name="temp1">temp1_17_111__</property>
+	  <property name="temp2">temp2_17_111__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_111)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_111)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_111)]</label>
+	  <label2>w17_111</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_111)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="112">
+ 	  <visible>[Skin.HasSetting(offw17_112) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_112</property>
+	  <property name="temp1">temp1_17_112__</property>
+	  <property name="temp2">temp2_17_112__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_112)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_112)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_112)]</label>
+	  <label2>w17_112</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_112)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="113">
+ 	  <visible>[Skin.HasSetting(offw17_113) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_113</property>
+	  <property name="temp1">temp1_17_113__</property>
+	  <property name="temp2">temp2_17_113__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_113)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_113)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_113)]</label>
+	  <label2>w17_113</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_113)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="114">
+ 	  <visible>[Skin.HasSetting(offw17_114) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_114</property>
+	  <property name="temp1">temp1_17_114__</property>
+	  <property name="temp2">temp2_17_114__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_114)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_114)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_114)]</label>
+	  <label2>w17_114</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_114)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="115">
+ 	  <visible>[Skin.HasSetting(offw17_115) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_115</property>
+	  <property name="temp1">temp1_17_115__</property>
+	  <property name="temp2">temp2_17_115__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_115)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_115)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_115)]</label>
+	  <label2>w17_115</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_115)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="116">
+ 	  <visible>[Skin.HasSetting(offw17_116) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_116</property>
+	  <property name="temp1">temp1_17_116__</property>
+	  <property name="temp2">temp2_17_116__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_116)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_116)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_116)]</label>
+	  <label2>w17_116</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_116)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="117">
+ 	  <visible>[Skin.HasSetting(offw17_117) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_117</property>
+	  <property name="temp1">temp1_17_117__</property>
+	  <property name="temp2">temp2_17_117__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_117)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_117)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_117)]</label>
+	  <label2>w17_117</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_117)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="118">
+ 	  <visible>[Skin.HasSetting(offw17_118) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_118</property>
+	  <property name="temp1">temp1_17_118__</property>
+	  <property name="temp2">temp2_17_118__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_118)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_118)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_118)]</label>
+	  <label2>w17_118</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_118)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="119">
+ 	  <visible>[Skin.HasSetting(offw17_119) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),17)</visible>
+	  <property name="id">w17_119</property>
+	  <property name="temp1">temp1_17_119__</property>
+	  <property name="temp2">temp2_17_119__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw17_119)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw17_119)]</thumb>
+	  <label>$INFO[Skin.String(labelw17_119)]</label>
+	  <label2>w17_119</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_119)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+  </include>
+  <include name="WidgetContent_18">
+	<item id="100">
+   	  <visible>[Skin.HasSetting(offw18_100) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_100</property>
+	  <property name="temp1">temp1_18_100__</property>
+	  <property name="temp2">temp2_18_100__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_100)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_100)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_100)]</label>
+	  <label2>w18_100</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_100)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="101">
+ 	  <visible>[Skin.HasSetting(offw18_101) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_101</property>
+	  <property name="temp1">temp1_18_101__</property>
+	  <property name="temp2">temp2_18_101__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_101)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_101)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_101)]</label>
+	  <label2>w18_101</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_101)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="102">
+ 	  <visible>[Skin.HasSetting(offw18_102) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_102</property>
+	  <property name="temp1">temp1_18_102__</property>
+	  <property name="temp2">temp2_18_102__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_102)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_102)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_102)]</label>
+	  <label2>w18_102</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_102)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="103">
+ 	  <visible>[Skin.HasSetting(offw18_103) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_103</property>
+	  <property name="temp1">temp1_18_103__</property>
+	  <property name="temp2">temp2_18_103__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_103)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_103)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_103)]</label>
+	  <label2>w18_103</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_103)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="104">
+ 	  <visible>[Skin.HasSetting(offw18_104) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_104</property>
+	  <property name="temp1">temp1_18_104__</property>
+	  <property name="temp2">temp2_18_104__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_104)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_104)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_104)]</label>
+	  <label2>w18_104</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_104)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="105">
+ 	  <visible>[Skin.HasSetting(offw18_105) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_105</property>
+	  <property name="temp1">temp1_18_105__</property>
+	  <property name="temp2">temp2_18_105__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_105)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_105)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_105)]</label>
+	  <label2>w18_105</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_105)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="106">
+ 	  <visible>[Skin.HasSetting(offw18_106) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_106</property>
+	  <property name="temp1">temp1_18_106__</property>
+	  <property name="temp2">temp2_18_106__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_106)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_106)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_106)]</label>
+	  <label2>w18_106</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_106)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="107">
+ 	  <visible>[Skin.HasSetting(offw18_107) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_107</property>
+	  <property name="temp1">temp1_18_107__</property>
+	  <property name="temp2">temp2_18_107__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_107)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_107)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_107)]</label>
+	  <label2>w18_107</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_107)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="108">
+ 	  <visible>[Skin.HasSetting(offw18_108) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_108</property>
+	  <property name="temp1">temp1_18_108__</property>
+	  <property name="temp2">temp2_18_108__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_108)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_108)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_108)]</label>
+	  <label2>w18_108</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_108)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="109">
+ 	  <visible>[Skin.HasSetting(offw18_109) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_109</property>
+	  <property name="temp1">temp1_18_109__</property>
+	  <property name="temp2">temp2_18_109__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_109)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_109)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_109)]</label>
+	  <label2>w18_109</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_109)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="110">
+ 	  <visible>[Skin.HasSetting(offw18_110) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_110</property>
+	  <property name="temp1">temp1_18_110__</property>
+	  <property name="temp2">temp2_18_110__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_110)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_110)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_110)]</label>
+	  <label2>w18_110</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_110)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="111">
+ 	  <visible>[Skin.HasSetting(offw18_111) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_111</property>
+	  <property name="temp1">temp1_18_111__</property>
+	  <property name="temp2">temp2_18_111__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_111)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_111)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_111)]</label>
+	  <label2>w18_111</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_111)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="112">
+ 	  <visible>[Skin.HasSetting(offw18_112) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_112</property>
+	  <property name="temp1">temp1_18_112__</property>
+	  <property name="temp2">temp2_18_112__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_112)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_112)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_112)]</label>
+	  <label2>w18_112</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_112)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="113">
+ 	  <visible>[Skin.HasSetting(offw18_113) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_113</property>
+	  <property name="temp1">temp1_18_113__</property>
+	  <property name="temp2">temp2_18_113__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_113)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_113)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_113)]</label>
+	  <label2>w18_113</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_113)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="114">
+ 	  <visible>[Skin.HasSetting(offw18_114) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_114</property>
+	  <property name="temp1">temp1_18_114__</property>
+	  <property name="temp2">temp2_18_114__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_114)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_114)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_114)]</label>
+	  <label2>w18_114</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_114)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="115">
+ 	  <visible>[Skin.HasSetting(offw18_115) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_115</property>
+	  <property name="temp1">temp1_18_115__</property>
+	  <property name="temp2">temp2_18_115__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_115)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_115)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_115)]</label>
+	  <label2>w18_115</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_115)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="116">
+ 	  <visible>[Skin.HasSetting(offw18_116) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_116</property>
+	  <property name="temp1">temp1_18_116__</property>
+	  <property name="temp2">temp2_18_116__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_116)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_116)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_116)]</label>
+	  <label2>w18_116</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_116)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="117">
+ 	  <visible>[Skin.HasSetting(offw18_117) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_117</property>
+	  <property name="temp1">temp1_18_117__</property>
+	  <property name="temp2">temp2_18_117__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_117)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_117)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_117)]</label>
+	  <label2>w18_117</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_117)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="118">
+ 	  <visible>[Skin.HasSetting(offw18_118) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_118</property>
+	  <property name="temp1">temp1_18_118__</property>
+	  <property name="temp2">temp2_18_118__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_118)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_118)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_118)]</label>
+	  <label2>w18_118</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_118)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="119">
+ 	  <visible>[Skin.HasSetting(offw18_119) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),18)</visible>
+	  <property name="id">w18_119</property>
+	  <property name="temp1">temp1_18_119__</property>
+	  <property name="temp2">temp2_18_119__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw18_119)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw18_119)]</thumb>
+	  <label>$INFO[Skin.String(labelw18_119)]</label>
+	  <label2>w18_119</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_119)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+  </include>
+  <include name="WidgetContent_19">
+	<item id="100">
+   	  <visible>[Skin.HasSetting(offw19_100) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_100</property>
+	  <property name="temp1">temp1_19_100__</property>
+	  <property name="temp2">temp2_19_100__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_100)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_100)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_100)]</label>
+	  <label2>w19_100</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_100)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="101">
+ 	  <visible>[Skin.HasSetting(offw19_101) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_101</property>
+	  <property name="temp1">temp1_19_101__</property>
+	  <property name="temp2">temp2_19_101__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_101)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_101)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_101)]</label>
+	  <label2>w19_101</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_101)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="102">
+ 	  <visible>[Skin.HasSetting(offw19_102) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_102</property>
+	  <property name="temp1">temp1_19_102__</property>
+	  <property name="temp2">temp2_19_102__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_102)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_102)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_102)]</label>
+	  <label2>w19_102</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_102)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="103">
+ 	  <visible>[Skin.HasSetting(offw19_103) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_103</property>
+	  <property name="temp1">temp1_19_103__</property>
+	  <property name="temp2">temp2_19_103__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_103)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_103)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_103)]</label>
+	  <label2>w19_103</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_103)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="104">
+ 	  <visible>[Skin.HasSetting(offw19_104) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_104</property>
+	  <property name="temp1">temp1_19_104__</property>
+	  <property name="temp2">temp2_19_104__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_104)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_104)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_104)]</label>
+	  <label2>w19_104</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_104)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="105">
+ 	  <visible>[Skin.HasSetting(offw19_105) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_105</property>
+	  <property name="temp1">temp1_19_105__</property>
+	  <property name="temp2">temp2_19_105__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_105)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_105)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_105)]</label>
+	  <label2>w19_105</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_105)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="106">
+ 	  <visible>[Skin.HasSetting(offw19_106) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_106</property>
+	  <property name="temp1">temp1_19_106__</property>
+	  <property name="temp2">temp2_19_106__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_106)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_106)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_106)]</label>
+	  <label2>w19_106</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_106)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="107">
+ 	  <visible>[Skin.HasSetting(offw19_107) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_107</property>
+	  <property name="temp1">temp1_19_107__</property>
+	  <property name="temp2">temp2_19_107__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_107)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_107)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_107)]</label>
+	  <label2>w19_107</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_107)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="108">
+ 	  <visible>[Skin.HasSetting(offw19_108) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_108</property>
+	  <property name="temp1">temp1_19_108__</property>
+	  <property name="temp2">temp2_19_108__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_108)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_108)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_108)]</label>
+	  <label2>w19_108</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_108)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="109">
+ 	  <visible>[Skin.HasSetting(offw19_109) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_109</property>
+	  <property name="temp1">temp1_19_109__</property>
+	  <property name="temp2">temp2_19_109__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_109)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_109)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_109)]</label>
+	  <label2>w19_109</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_109)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="110">
+ 	  <visible>[Skin.HasSetting(offw19_110) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_110</property>
+	  <property name="temp1">temp1_19_110__</property>
+	  <property name="temp2">temp2_19_110__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_110)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_110)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_110)]</label>
+	  <label2>w19_110</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_110)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="111">
+ 	  <visible>[Skin.HasSetting(offw19_111) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_111</property>
+	  <property name="temp1">temp1_19_111__</property>
+	  <property name="temp2">temp2_19_111__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_111)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_111)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_111)]</label>
+	  <label2>w19_111</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_111)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="112">
+ 	  <visible>[Skin.HasSetting(offw19_112) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_112</property>
+	  <property name="temp1">temp1_19_112__</property>
+	  <property name="temp2">temp2_19_112__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_112)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_112)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_112)]</label>
+	  <label2>w19_112</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_112)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="113">
+ 	  <visible>[Skin.HasSetting(offw19_113) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_113</property>
+	  <property name="temp1">temp1_19_113__</property>
+	  <property name="temp2">temp2_19_113__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_113)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_113)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_113)]</label>
+	  <label2>w19_113</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_113)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="114">
+ 	  <visible>[Skin.HasSetting(offw19_114) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_114</property>
+	  <property name="temp1">temp1_19_114__</property>
+	  <property name="temp2">temp2_19_114__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_114)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_114)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_114)]</label>
+	  <label2>w19_114</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_114)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="115">
+ 	  <visible>[Skin.HasSetting(offw19_115) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_115</property>
+	  <property name="temp1">temp1_19_115__</property>
+	  <property name="temp2">temp2_19_115__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_115)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_115)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_115)]</label>
+	  <label2>w19_115</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_115)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="116">
+ 	  <visible>[Skin.HasSetting(offw19_116) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_116</property>
+	  <property name="temp1">temp1_19_116__</property>
+	  <property name="temp2">temp2_19_116__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_116)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_116)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_116)]</label>
+	  <label2>w19_116</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_116)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="117">
+ 	  <visible>[Skin.HasSetting(offw19_117) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_117</property>
+	  <property name="temp1">temp1_19_117__</property>
+	  <property name="temp2">temp2_19_117__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_117)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_117)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_117)]</label>
+	  <label2>w19_117</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_117)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="118">
+ 	  <visible>[Skin.HasSetting(offw19_118) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_118</property>
+	  <property name="temp1">temp1_19_118__</property>
+	  <property name="temp2">temp2_19_118__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_118)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_118)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_118)]</label>
+	  <label2>w19_118</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_118)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	  <visible>false</visible>
+	</item>
+	<item id="119">
+ 	  <visible>[Skin.HasSetting(offw19_119) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
+	  <visible>StringCompare(Window(home).Property(Button.ID),19)</visible>
+	  <property name="id">w19_119</property>
+	  <property name="temp1">temp1_19_119__</property>
+	  <property name="temp2">temp2_19_119__</property>
+	  <property name="off">$INFO[Skin.HasSetting(offw19_119)]</property>
+	  <thumb fallback="">$INFO[Skin.String(iconw19_119)]</thumb>
+	  <label>$INFO[Skin.String(labelw19_119)]</label>
+	  <label2>w19_119</label2>
+	  <onclick description="moveButton" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">RunScript(script.featherence.service,,?mode=210&amp;value=3)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_119)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+  </include>
+
   <include name="WidgetContent_90">
 	<item id="100">
    	  <visible>[Skin.HasSetting(offw90_100) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>

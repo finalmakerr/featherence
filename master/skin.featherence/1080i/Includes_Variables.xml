@@ -79,6 +79,24 @@
 	<value condition="Skin.String(MenuColor)" description="מותאם אישי">$INFO[Skin.String(MenuColor)]</value>
   </variable>
   
+  <variable name="DialogMenuColor" description="עיצוב גוון">
+    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),DialogMenuColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="!Skin.String(DialogMenuColor)" description="ברירת מחדל-payne's grey(100%)">ff40404f</value>
+	<value condition="Skin.String(DialogMenuColor)" description="מותאם אישי">$INFO[Skin.String(DialogMenuColor)]</value>
+  </variable>
+  
+  <variable name="DialogFontTitleColor" description="צבע פונט כותרת">
+    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),DialogFontTitleColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="!Skin.String(DialogFontTitleColor)" description="ברירת-מחדל">yellow</value>
+	<value condition="Skin.String(DialogFontTitleColor)" description="מותאם אישי">$INFO[Skin.String(DialogFontTitleColor)]</value>
+  </variable>
+  
+  <variable name="DialogFontColor" description="צבע פונט כותרת">
+    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),DialogFontColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="!Skin.String(DialogFontColor)" description="ברירת-מחדל">white</value>
+	<value condition="Skin.String(DialogFontColor)" description="מותאם אישי">$INFO[Skin.String(DialogFontColor)]</value>
+  </variable>
+  
   <variable name="ButtonsDesignColor" description="צבע כפתור בית">
     <value condition="Window.IsVisible(Custom1170.xml) + SubString(Window(home).Property(TEMP),color,left) + !IsEmpty(Window(home).Property(SelectedColor))" description="">buttons/colors/$INFO[Window(home).Property(SelectedColor)].png</value>
     <value condition="true" description="">buttons/colors/$INFO[ListItem.Property(color)].png</value>
@@ -100,10 +118,22 @@
 	<value condition="Skin.String(TopInformationColor)" description="מותאם אישי">$INFO[Skin.String(TopInformationColor)]</value>
   </variable>
   
+  <variable name="TopInformationFontColor" description="בחירת צבע פס עליון">
+    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),TopInformationFontColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+	<value condition="!Skin.String(TopInformationFontColor)" description="white">white</value>
+	<value condition="Skin.String(TopInformationFontColor)" description="מותאם אישי">$INFO[Skin.String(TopInformationFontColor)]</value>
+  </variable>
+  
   <variable name="TopVideoInformationColor" description="בחירת צבע פרטי וידאו">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),TopVideoInformationColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(TopVideoInformationColor)" description="ברירת מחדל-smoky black">ff100c08</value>
 	<value condition="Skin.String(TopVideoInformationColor)" description="מותאם אישי">$INFO[Skin.String(TopVideoInformationColor)]</value>
+  </variable>
+  
+  <variable name="TopVideoInformationFontColor" description="בחירת צבע גופן פרטי וידאו">
+    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),TopVideoInformationFontColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="!Skin.String(TopVideoInformationFontColor)" description="white">white</value>
+	<value condition="Skin.String(TopVideoInformationFontColor)" description="מותאם אישי">$INFO[Skin.String(TopVideoInformationFontColor)]</value>
   </variable>
   
   <variable name="MouseColor" description="בחירת צבע עכבר">
@@ -120,8 +150,8 @@
   
   <variable name="IconFocusColor" description="בחירת צבע סמל נבחר">
     <!--Check if container 9020 have focus-->
-    <value condition="Control.HasFocus(9020) + !Skin.String(IconUnFocusColor)" description="">FFFFFFFF</value>
-	<value condition="Control.HasFocus(9020) + Skin.String(IconUnFocusColor)" description="">$INFO[Skin.String(IconUnFocusColor)]</value>
+    <value condition="!Control.HasFocus(9000) + !Skin.String(IconUnFocusColor)" description="">FFFFFFFF</value>
+	<value condition="!Control.HasFocus(9000) + Skin.String(IconUnFocusColor)" description="">$INFO[Skin.String(IconUnFocusColor)]</value>
 	
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),IconFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(IconFocusColor)" description="ברירת מחדל-light yellow">fffffacd</value>
@@ -130,8 +160,8 @@
   
   <variable name="IconFocusColorSP" description="בחירת צבע סמל נבחרSP">
     <!--Check if container 9000 have focus-->
-    <value condition="Control.HasFocus(9000) + !Skin.String(IconUnFocusColor)" description="">FFFFFFFF</value>
-	<value condition="Control.HasFocus(9000) + Skin.String(IconUnFocusColor)" description="">$INFO[Skin.String(IconUnFocusColor)]</value>
+    <value condition="!Control.HasFocus(9020) + !Skin.String(IconUnFocusColor)" description="">FFFFFFFF</value>
+	<value condition="!Control.HasFocus(9020) + Skin.String(IconUnFocusColor)" description="">$INFO[Skin.String(IconUnFocusColor)]</value>
 	
 	<value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),IconFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(IconFocusColor)" description="ברירת מחדל-light yellow">fffffacd</value>
@@ -140,7 +170,7 @@
   
   <variable name="ButtonUnFocusColor" description="בחירת צבע כפתורי תפריט לא נבחר">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),ButtonUnFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
-	<value condition="!Skin.String(ButtonUnFocusColor)" description="ברירת מחדל">ff40404f-9</value>
+	<value condition="!Skin.String(ButtonUnFocusColor)" description="ברירת מחדל">ff40404f</value>
 	<value condition="Skin.String(ButtonUnFocusColor)" description="מותאם אישי">$INFO[Skin.String(ButtonUnFocusColor)]</value>
   </variable>
   
@@ -152,32 +182,56 @@
   
   <variable name="SubMenuMarkColor" description="בחירת צבע סמן תת-תפריט">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),SubMenuMarkColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
-    <value condition="!Skin.String(SubMenuMarkColor)" description="ברירת מחדל-payne's grey(100%)">ff40404f-9</value>
+    <value condition="!Skin.String(SubMenuMarkColor)" description="ברירת מחדל-payne's grey(100%)">ff40404f</value>
 	<value condition="Skin.String(SubMenuMarkColor)" description="מותאם אישי">$INFO[Skin.String(SubMenuMarkColor)]</value>
   </variable>
   
   <variable name="KeyboardUnFocusColor" description="בחירת צבע מקלדת וירטואלית">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),KeyboardUnFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
-	<value condition="!Skin.String(KeyboardUnFocusColor)" description="ברירת מחדל-payne's grey(100%)">ff40404f-9</value>
+	<value condition="!Skin.String(KeyboardUnFocusColor)" description="ברירת מחדל-payne's grey(100%)">ff40404f</value>
 	<value condition="Skin.String(KeyboardUnFocusColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardUnFocusColor)]</value>
   </variable>
   
   <variable name="KeyboardFocusColor" description="בחירת צבע מקלדת וירטואלית">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),KeyboardFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
-	<value condition="!Skin.String(KeyboardFocusColor)" description="">ff4f4f98</value>
+	<value condition="!Skin.String(KeyboardFocusColor)" description="ברירת-מחדל">ff4f4f98</value>
 	<value condition="Skin.String(KeyboardFocusColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardFocusColor)]</value>
   </variable>
   
   <variable name="KeyboardBackgroundColor" description="בחירת צבע מקלדת וירטואלית">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),KeyboardBackgroundColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
-	<value condition="!Skin.String(KeyboardBackgroundColor)" description="">ff40404f-9</value>
+	<value condition="!Skin.String(KeyboardBackgroundColor)" description="ברירת-מחדל">ff40404f</value>
 	<value condition="Skin.String(KeyboardBackgroundColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardBackgroundColor)]</value>
   </variable>
   
   <variable name="KeyboardEditColor" description="בחירת צבע מקלדת וירטואלית">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),KeyboardEditColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
-	<value condition="!Skin.String(KeyboardEditColor)" description="">ff96708f</value>
+	<value condition="!Skin.String(KeyboardEditColor)" description="ברירת-מחדל">ff96708f</value>
 	<value condition="Skin.String(KeyboardEditColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardEditColor)]</value>
+  </variable>
+  
+  <variable name="KeyboardEditFontColor" description="צבע פונט טקסט במקלדת">
+    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),KeyboardEditFontColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+	<value condition="!Skin.String(KeyboardEditFontColor)" description="ברירת-מחדל">white2</value>
+	<value condition="Skin.String(KeyboardEditFontColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardEditFontColor)]</value>
+  </variable>
+  
+  <variable name="KeyboardFontTitleColor" description="צבע פונט כותרת במקלדת">
+    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),KeyboardFontTitleColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+	<value condition="!Skin.String(KeyboardFontTitleColor)" description="ברירת-מחדל">yellow</value>
+	<value condition="Skin.String(KeyboardFontTitleColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardFontTitleColor)]</value>
+  </variable>
+  
+  <variable name="WidgetUnFocusFontColor" description="צבע פונט ו'ידגט לא נבחר">
+    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),WidgetUnFocusFontColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+	<value condition="!Skin.String(WidgetUnFocusFontColor)" description="ברירת-מחדל">white2</value>
+	<value condition="Skin.String(WidgetUnFocusFontColor)" description="מותאם אישי">$INFO[Skin.String(WidgetUnFocusFontColor)]</value>
+  </variable>
+  
+  <variable name="WidgetFocusFontColor" description="צבע פונט ו'ידגט נבחר">
+    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),WidgetFocusFontColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+	<value condition="!Skin.String(WidgetFocusFontColor)" description="ברירת-מחדל">yellow</value>
+	<value condition="Skin.String(WidgetFocusFontColor)" description="מותאם אישי">$INFO[Skin.String(WidgetFocusFontColor)]</value>
   </variable>
   
   <variable name="SelectedFrameColor" description="בחירת צבע (מסגרת בחירה)">
@@ -414,7 +468,7 @@
   <variable name="VideoInformation1" description="עונה/פרק/וידאו/סינון">
 	<value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Season)">$LOCALIZE[20373] $INFO[ListItem.Season]</value>
 	<value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
-	<value condition="!IsEmpty(ListItem.Episode) + Container.Content(Episodes) + !IsEmpty(ListItem.Season) + !IsEmpty(ListItem.TVShowTitle)">$LOCALIZE[20359] $INFO[ListItem.Episode]</value>
+	<value condition="!IsEmpty(ListItem.Episode) + Container.Content(Episodes) + !IsEmpty(ListItem.Season) + !IsEmpty(ListItem.TVShowTitle) + StringCompare(Container.Viewmode,$LOCALIZE[31012])">$LOCALIZE[20359] $INFO[ListItem.Episode]</value>
 	<value condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenreLabel]</value>
 	<value description="Popcorn Time" condition="StringCompare(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | StringCompare(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)">$VAR[GenreLabel]</value>
 	<value description="Exodus" condition="StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres)">$VAR[GenreLabel]</value>
@@ -709,6 +763,8 @@
 	  <value condition="Skin.String(MouseIcon,0)">pointer/0.png</value>
 	  <value condition="Skin.String(MouseIcon,1)">pointer/1.png</value>
 	  <value condition="Skin.String(MouseIcon,2)">pointer/2.png</value>
+	  <value condition="Skin.String(MouseIcon,3)">pointer/3.png</value>
+	  <value condition="Skin.String(MouseIcon,4)">pointer/4.png</value>
 	  <value>pointer/1.png</value>
 	</variable>
 	

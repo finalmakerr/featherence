@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
 	<defaultcontrol always="true">150</defaultcontrol>
-	<onload condition="System.HasAddon(script.featherence.service) + !Window.IsVisible(VideoOSD.xml)">RunScript(script.featherence.service,,?mode=9)</onload>
+	<onload condition="System.HasAddon(script.featherence.service)">RunScript(script.featherence.service,,?mode=9)</onload>
     <controls>
 	  <control type="group">
 	    <animation condition="[System.IdleTime(5)] + !Player.Paused + VideoPlayer.SubtitlesEnabled + VideoPlayer.HasSubtitles" effect="Fade" start="100" end="10" time="3000" reversible="false">Conditional</animation>
@@ -32,10 +32,11 @@
 			</control>
 			<control type="label" description="שם הקובץ">
 			  <align>left</align>
-			  <font>size18</font>
+			  <font>size24</font>
 			  <height>40</height>
 			  <label>$INFO[Player.Filename]</label>
 			  <posx>90</posx>
+			  <include>ScrollLabel</include>
 			  <width>500</width>
 			</control>			
 			<control type="image" id="110" description="תמונה שם האתר תרגומים">
@@ -152,7 +153,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>grey</textcolor>
+                        <textcolor>grey2</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label2</info>
@@ -259,7 +260,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>grey</textcolor>
+                        <textcolor>grey2</textcolor>
                         <align>left</align>
                         <info>ListItem.Label2</info>
 						<visible>StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA1)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA2)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA3)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA4)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA5)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA6)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA7)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA8)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA9)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA10))</visible>

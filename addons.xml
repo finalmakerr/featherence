@@ -353,7 +353,7 @@
   </extension>
 </addon>
 
-<addon id="skin.featherence" version="0.6.0" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.6.1" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
 	<import addon="script.featherence.service" version="0.2.14"/>
@@ -368,7 +368,7 @@
 	<summary lang="he">פדרנס סקין</summary>
     <description lang="en">Features:
 - 4 2D buttons effects: Bevel, Shadow, Overlay and Stroke effects are available across the entire skin.
-- 6 Layouts: Panel/2, Horizontal/2, Vertical RTL/LTR.
+- 8 Layouts: Panel/2/3, Horizontal/2/3, Vertical RTL/LTR.
 - 6 Buttons shapes: Rectangles, Rectangles R10, Pillows, Hexagons, Circles, Triangles.
 - 6 Views: Center List, Line, Poster, Small List, Side List, and Wall.
   Most views have about 10 different settings to fit your preference.
@@ -393,13 +393,13 @@
 - User customized media: Choose your favourite startup music, video and pictures slideshow music.
 - Password Lock: Lock your prefered buttons with a password.
 - Web browser: Launch your default OS internet browser from within Kodi.
-- Widget: unwatched/recently added movies and inprogress/recently added TV shows (10 etc).
+- Widget: unwatched/recently added movies and inprogress/recently added TV shows (10/15/20 etc).
   Additionaly support: Play trailer or up to 20 random trailers, manual/auto refresh, random fanart from widgets..
 - Customized Widget: Create up to 10 widgets for each button.
     </description>
 	<description lang="he">מאפיינים:
 - 4 אפקטי דו-מימד לכפתורים: שפוע, צל, שקופית ומסגור, זמינים בכל חלון במעטפת.
-- 6 פריסות: פנל, אופקי, אנכי (שתי גרסאות לכל אחת).
+- 8 פריסות: פנל, אופש אנכי (שלוש גרסאות לכל אחת).
 - 6 צורות לכפתורים: מלבנים, מלבנים R10, כריות, מעויינים, עיגולים ומשולשים.
 - 6 תצוגות: רשימה מרכזית, רשימה אופקית, פוסטר, רשימה קטנה, רשימה צידית וקיר.
   לרוב התצוגות קיימות למעלה מ-10 הגדרות שונות להתאמה אישית.
@@ -424,7 +424,7 @@
 - מדיה אישית: בחר במוזיקה או/ו וידאו המעודף עליך בעת הפעלת הקודי. בנוסף ניתן לבחור מוזיקה בהפעלת מצגת תמונות.
 - הגנת סיסמא: הגן על כפתורים רצויים באמצעות סיסמא.
 - דפדפן: הפעל את הדפדפן במערכת ההפעלה שלך מתוך הקודי.
-- ו'ידגט (קיר סרטים/סדרות): מכיל סרטים שלא נצפו/נוספו לאחרונה וסדרות בתהליך/נוספו לאחרונה (10 כל אחד).
+- ו'ידגט (קיר סרטים/סדרות): מכיל סרטים שלא נצפו/נוספו לאחרונה וסדרות בתהליך/נוספו לאחרונה (10/15/20 כל אחד).
   בנוסף תומך ב-: ניגון קדימון סרט או עד 20 קדימונים אקראיים מתוך הספרייה שלך, ריענון קיר ידני/אוטומטי, פאנארט אקראי מו'ידגט ועוד..
 - ו'ידגט מותאם אישית: צור עד 10 כפתורי ו'ידגט לכל כפתור.
 	</description>

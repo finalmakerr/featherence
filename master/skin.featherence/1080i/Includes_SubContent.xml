@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="SubContent_X90">
+    <item id="17">
+ 	  <visible>StringCompare(Window(home).Property(Button.ID_),17)</visible>
+	  <property name="id">17_90</property>
+	  <property name="temp1">temp1_90_90__</property>
+	  <property name="temp2">temp2_90_90__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17)]</thumb>
+	  <label>$INFO[Skin.String(label17)]</label>
+	  <label2>17_90</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="18">
+ 	  <visible>StringCompare(Window(home).Property(Button.ID_),18)</visible>
+	  <property name="id">18_90</property>
+	  <property name="temp1">temp1_90_90__</property>
+	  <property name="temp2">temp2_90_90__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18)]</thumb>
+	  <label>$INFO[Skin.String(label18)]</label>
+	  <label2>18_90</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="19" description="מיוחד!">
+ 	  <visible>StringCompare(Window(home).Property(Button.ID_),19) + Skin.HasSetting(sub19) + !StringCompare(Window(home).Property(TEMP),1191)</visible>
+	  <property name="id">19_90</property>
+	  <property name="temp1">temp1_90_90__</property>
+	  <property name="temp2">temp2_90_90__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19)]</thumb>
+	  <label>$INFO[Skin.String(label19)]</label>
+	  <label2>19_90</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">SetProperty(TEMP,1191,home)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">ActivateWindow(1138)</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
 	<item id="90">
  	  <visible>StringCompare(Window(home).Property(Button.ID_),90)</visible>
 	  <property name="id">90_90</property>
@@ -423,6 +466,853 @@
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id119])</onclick>
 	</item>
   </include>
+  <include name="SubContent_17">
+	<item id="100">
+ 	  <visible>[!Skin.HasSetting(off17_100) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_100)]</visible>
+	  <property name="id">17_100</property>
+	  <property name="temp1">temp1_17_100__</property>
+	  <property name="temp2">temp2_17_100__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_100)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_100)]</thumb>
+	  <label>$INFO[Skin.String(label17_100)]</label>
+	  <label2>$INFO[Skin.String(id17_100)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_100)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="101">
+ 	  <visible>[!Skin.HasSetting(off17_101) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_101)]</visible>
+	  <property name="id">17_101</property>
+	  <property name="temp1">temp1_17_101__</property>
+	  <property name="temp2">temp2_17_101__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_101)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_101)]</thumb>
+	  <label>$INFO[Skin.String(label17_101)]</label>
+	  <label2>$INFO[Skin.String(id17_101)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_101)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="102">
+ 	  <visible>[!Skin.HasSetting(off17_102) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_102)]</visible>
+	  <property name="id">17_102</property>
+	  <property name="temp1">temp1_17_102__</property>
+	  <property name="temp2">temp2_17_102__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_102)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_102)]</thumb>
+	  <label>$INFO[Skin.String(label17_102)]</label>
+	  <label2>$INFO[Skin.String(id17_102)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_102)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="103">
+ 	  <visible>[!Skin.HasSetting(off17_103) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_103)]</visible>
+	  <property name="id">17_103</property>
+	  <property name="temp1">temp1_17_103__</property>
+	  <property name="temp2">temp2_17_103__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_103)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_103)]</thumb>
+	  <label>$INFO[Skin.String(label17_103)]</label>
+	  <label2>$INFO[Skin.String(id17_103)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_103)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="104">
+ 	  <visible>[!Skin.HasSetting(off17_104) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_104)]</visible>
+	  <property name="id">17_104</property>
+	  <property name="temp1">temp1_17_104__</property>
+	  <property name="temp2">temp2_17_104__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_104)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_104)]</thumb>
+	  <label>$INFO[Skin.String(label17_104)]</label>
+	  <label2>$INFO[Skin.String(id17_104)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_104)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="105">
+ 	  <visible>[!Skin.HasSetting(off17_105) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_105)]</visible>
+	  <property name="id">17_105</property>
+	  <property name="temp1">temp1_17_105__</property>
+	  <property name="temp2">temp2_17_105__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_105)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_105)]</thumb>
+	  <label>$INFO[Skin.String(label17_105)]</label>
+	  <label2>$INFO[Skin.String(id17_105)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_105)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="106">
+ 	  <visible>[!Skin.HasSetting(off17_106) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_106)]</visible>
+	  <property name="id">17_106</property>
+	  <property name="temp1">temp1_17_106__</property>
+	  <property name="temp2">temp2_17_106__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_106)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_106)]</thumb>
+	  <label>$INFO[Skin.String(label17_106)]</label>
+	  <label2>$INFO[Skin.String(id17_106)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_106)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="107">
+ 	  <visible>[!Skin.HasSetting(off17_107) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_107)]</visible>
+	  <property name="id">17_107</property>
+	  <property name="temp1">temp1_17_107__</property>
+	  <property name="temp2">temp2_17_107__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_107)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_107)]</thumb>
+	  <label>$INFO[Skin.String(label17_107)]</label>
+	  <label2>$INFO[Skin.String(id17_107)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_107)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="108">
+ 	  <visible>[!Skin.HasSetting(off17_108) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_108)]</visible>
+	  <property name="id">17_108</property>
+	  <property name="temp1">temp1_17_108__</property>
+	  <property name="temp2">temp2_17_108__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_108)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_108)]</thumb>
+	  <label>$INFO[Skin.String(label17_108)]</label>
+	  <label2>$INFO[Skin.String(id17_108)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_108)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="109">
+ 	  <visible>[!Skin.HasSetting(off17_109) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_109)]</visible>
+	  <property name="id">17_109</property>
+	  <property name="temp1">temp1_17_109__</property>
+	  <property name="temp2">temp2_17_109__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_109)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_109)]</thumb>
+	  <label>$INFO[Skin.String(label17_109)]</label>
+	  <label2>$INFO[Skin.String(id17_109)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_109)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="110">
+ 	  <visible>[!Skin.HasSetting(off17_110) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_110)]</visible>
+	  <property name="id">17_110</property>
+	  <property name="temp1">temp1_17_110__</property>
+	  <property name="temp2">temp2_17_110__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_110)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_110)]</thumb>
+	  <label>$INFO[Skin.String(label17_110)]</label>
+	  <label2>$INFO[Skin.String(id17_110)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_110)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="111">
+ 	  <visible>[!Skin.HasSetting(off17_111) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_111)]</visible>
+	  <property name="id">17_111</property>
+	  <property name="temp1">temp1_17_111__</property>
+	  <property name="temp2">temp2_17_111__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_111)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_111)]</thumb>
+	  <label>$INFO[Skin.String(label17_111)]</label>
+	  <label2>$INFO[Skin.String(id17_111)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_111)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="112">
+ 	  <visible>[!Skin.HasSetting(off17_112) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_112)]</visible>
+	  <property name="id">17_112</property>
+	  <property name="temp1">temp1_17_112__</property>
+	  <property name="temp2">temp2_17_112__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_112)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_112)]</thumb>
+	  <label>$INFO[Skin.String(label17_112)]</label>
+	  <label2>$INFO[Skin.String(id17_112)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_112)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="113">
+ 	  <visible>[!Skin.HasSetting(off17_113) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_113)]</visible>
+	  <property name="id">17_113</property>
+	  <property name="temp1">temp1_17_113__</property>
+	  <property name="temp2">temp2_17_113__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_113)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_113)]</thumb>
+	  <label>$INFO[Skin.String(label17_113)]</label>
+	  <label2>$INFO[Skin.String(id17_113)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_113)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="114">
+ 	  <visible>[!Skin.HasSetting(off17_114) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_114)]</visible>
+	  <property name="id">17_114</property>
+	  <property name="temp1">temp1_17_114__</property>
+	  <property name="temp2">temp2_17_114__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_114)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_114)]</thumb>
+	  <label>$INFO[Skin.String(label17_114)]</label>
+	  <label2>$INFO[Skin.String(id17_114)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_114)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="115">
+ 	  <visible>[!Skin.HasSetting(off17_115) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_115)]</visible>
+	  <property name="id">17_115</property>
+	  <property name="temp1">temp1_17_115__</property>
+	  <property name="temp2">temp2_17_115__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_115)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_115)]</thumb>
+	  <label>$INFO[Skin.String(label17_115)]</label>
+	  <label2>$INFO[Skin.String(id17_115)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_115)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="116">
+ 	  <visible>[!Skin.HasSetting(off17_116) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_116)]</visible>
+	  <property name="id">17_116</property>
+	  <property name="temp1">temp1_17_116__</property>
+	  <property name="temp2">temp2_17_116__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_116)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_116)]</thumb>
+	  <label>$INFO[Skin.String(label17_116)]</label>
+	  <label2>$INFO[Skin.String(id17_116)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_116)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="117">
+ 	  <visible>[!Skin.HasSetting(off17_117) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_117)]</visible>
+	  <property name="id">17_117</property>
+	  <property name="temp1">temp1_17_117__</property>
+	  <property name="temp2">temp2_17_117__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_117)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_117)]</thumb>
+	  <label>$INFO[Skin.String(label17_117)]</label>
+	  <label2>$INFO[Skin.String(id17_117)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_117)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="118">
+ 	  <visible>[!Skin.HasSetting(off17_118) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_118)]</visible>
+	  <property name="id">17_118</property>
+	  <property name="temp1">temp1_17_118__</property>
+	  <property name="temp2">temp2_17_118__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_118)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_118)]</thumb>
+	  <label>$INFO[Skin.String(label17_118)]</label>
+	  <label2>$INFO[Skin.String(id17_118)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_118)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+	<item id="119">
+ 	  <visible>[!Skin.HasSetting(off17_119) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label17_119)]</visible>
+	  <property name="id">17_119</property>
+	  <property name="temp1">temp1_17_119__</property>
+	  <property name="temp2">temp2_17_119__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off17_119)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon17_119)]</thumb>
+	  <label>$INFO[Skin.String(label17_119)]</label>
+	  <label2>$INFO[Skin.String(id17_119)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action17_119)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	</item>
+  </include>
+  <include name="SubContent_18">
+	<item id="100">
+ 	  <visible>[!Skin.HasSetting(off18_100) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_100)]</visible>
+	  <property name="id">18_100</property>
+	  <property name="temp1">temp1_18_100__</property>
+	  <property name="temp2">temp2_18_100__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_100)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_100)]</thumb>
+	  <label>$INFO[Skin.String(label18_100)]</label>
+	  <label2>$INFO[Skin.String(id18_100)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_100)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="101">
+ 	  <visible>[!Skin.HasSetting(off18_101) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_101)]</visible>
+	  <property name="id">18_101</property>
+	  <property name="temp1">temp1_18_101__</property>
+	  <property name="temp2">temp2_18_101__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_101)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_101)]</thumb>
+	  <label>$INFO[Skin.String(label18_101)]</label>
+	  <label2>$INFO[Skin.String(id18_101)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_101)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="102">
+ 	  <visible>[!Skin.HasSetting(off18_102) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_102)]</visible>
+	  <property name="id">18_102</property>
+	  <property name="temp1">temp1_18_102__</property>
+	  <property name="temp2">temp2_18_102__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_102)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_102)]</thumb>
+	  <label>$INFO[Skin.String(label18_102)]</label>
+	  <label2>$INFO[Skin.String(id18_102)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_102)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="103">
+ 	  <visible>[!Skin.HasSetting(off18_103) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_103)]</visible>
+	  <property name="id">18_103</property>
+	  <property name="temp1">temp1_18_103__</property>
+	  <property name="temp2">temp2_18_103__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_103)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_103)]</thumb>
+	  <label>$INFO[Skin.String(label18_103)]</label>
+	  <label2>$INFO[Skin.String(id18_103)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_103)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="104">
+ 	  <visible>[!Skin.HasSetting(off18_104) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_104)]</visible>
+	  <property name="id">18_104</property>
+	  <property name="temp1">temp1_18_104__</property>
+	  <property name="temp2">temp2_18_104__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_104)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_104)]</thumb>
+	  <label>$INFO[Skin.String(label18_104)]</label>
+	  <label2>$INFO[Skin.String(id18_104)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_104)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="105">
+ 	  <visible>[!Skin.HasSetting(off18_105) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_105)]</visible>
+	  <property name="id">18_105</property>
+	  <property name="temp1">temp1_18_105__</property>
+	  <property name="temp2">temp2_18_105__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_105)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_105)]</thumb>
+	  <label>$INFO[Skin.String(label18_105)]</label>
+	  <label2>$INFO[Skin.String(id18_105)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_105)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="106">
+ 	  <visible>[!Skin.HasSetting(off18_106) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_106)]</visible>
+	  <property name="id">18_106</property>
+	  <property name="temp1">temp1_18_106__</property>
+	  <property name="temp2">temp2_18_106__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_106)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_106)]</thumb>
+	  <label>$INFO[Skin.String(label18_106)]</label>
+	  <label2>$INFO[Skin.String(id18_106)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_106)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="107">
+ 	  <visible>[!Skin.HasSetting(off18_107) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_107)]</visible>
+	  <property name="id">18_107</property>
+	  <property name="temp1">temp1_18_107__</property>
+	  <property name="temp2">temp2_18_107__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_107)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_107)]</thumb>
+	  <label>$INFO[Skin.String(label18_107)]</label>
+	  <label2>$INFO[Skin.String(id18_107)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_107)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="108">
+ 	  <visible>[!Skin.HasSetting(off18_108) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_108)]</visible>
+	  <property name="id">18_108</property>
+	  <property name="temp1">temp1_18_108__</property>
+	  <property name="temp2">temp2_18_108__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_108)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_108)]</thumb>
+	  <label>$INFO[Skin.String(label18_108)]</label>
+	  <label2>$INFO[Skin.String(id18_108)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_108)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="109">
+ 	  <visible>[!Skin.HasSetting(off18_109) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_109)]</visible>
+	  <property name="id">18_109</property>
+	  <property name="temp1">temp1_18_109__</property>
+	  <property name="temp2">temp2_18_109__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_109)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_109)]</thumb>
+	  <label>$INFO[Skin.String(label18_109)]</label>
+	  <label2>$INFO[Skin.String(id18_109)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_109)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="110">
+ 	  <visible>[!Skin.HasSetting(off18_110) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_110)]</visible>
+	  <property name="id">18_110</property>
+	  <property name="temp1">temp1_18_110__</property>
+	  <property name="temp2">temp2_18_110__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_110)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_110)]</thumb>
+	  <label>$INFO[Skin.String(label18_110)]</label>
+	  <label2>$INFO[Skin.String(id18_110)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_110)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="111">
+ 	  <visible>[!Skin.HasSetting(off18_111) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_111)]</visible>
+	  <property name="id">18_111</property>
+	  <property name="temp1">temp1_18_111__</property>
+	  <property name="temp2">temp2_18_111__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_111)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_111)]</thumb>
+	  <label>$INFO[Skin.String(label18_111)]</label>
+	  <label2>$INFO[Skin.String(id18_111)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_111)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="112">
+ 	  <visible>[!Skin.HasSetting(off18_112) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_112)]</visible>
+	  <property name="id">18_112</property>
+	  <property name="temp1">temp1_18_112__</property>
+	  <property name="temp2">temp2_18_112__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_112)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_112)]</thumb>
+	  <label>$INFO[Skin.String(label18_112)]</label>
+	  <label2>$INFO[Skin.String(id18_112)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_112)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="113">
+ 	  <visible>[!Skin.HasSetting(off18_113) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_113)]</visible>
+	  <property name="id">18_113</property>
+	  <property name="temp1">temp1_18_113__</property>
+	  <property name="temp2">temp2_18_113__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_113)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_113)]</thumb>
+	  <label>$INFO[Skin.String(label18_113)]</label>
+	  <label2>$INFO[Skin.String(id18_113)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_113)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="114">
+ 	  <visible>[!Skin.HasSetting(off18_114) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_114)]</visible>
+	  <property name="id">18_114</property>
+	  <property name="temp1">temp1_18_114__</property>
+	  <property name="temp2">temp2_18_114__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_114)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_114)]</thumb>
+	  <label>$INFO[Skin.String(label18_114)]</label>
+	  <label2>$INFO[Skin.String(id18_114)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_114)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="115">
+ 	  <visible>[!Skin.HasSetting(off18_115) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_115)]</visible>
+	  <property name="id">18_115</property>
+	  <property name="temp1">temp1_18_115__</property>
+	  <property name="temp2">temp2_18_115__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_115)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_115)]</thumb>
+	  <label>$INFO[Skin.String(label18_115)]</label>
+	  <label2>$INFO[Skin.String(id18_115)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_115)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="116">
+ 	  <visible>[!Skin.HasSetting(off18_116) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_116)]</visible>
+	  <property name="id">18_116</property>
+	  <property name="temp1">temp1_18_116__</property>
+	  <property name="temp2">temp2_18_116__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_116)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_116)]</thumb>
+	  <label>$INFO[Skin.String(label18_116)]</label>
+	  <label2>$INFO[Skin.String(id18_116)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_116)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="117">
+ 	  <visible>[!Skin.HasSetting(off18_117) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_117)]</visible>
+	  <property name="id">18_117</property>
+	  <property name="temp1">temp1_18_117__</property>
+	  <property name="temp2">temp2_18_117__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_117)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_117)]</thumb>
+	  <label>$INFO[Skin.String(label18_117)]</label>
+	  <label2>$INFO[Skin.String(id18_117)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_117)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="118">
+ 	  <visible>[!Skin.HasSetting(off18_118) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_118)]</visible>
+	  <property name="id">18_118</property>
+	  <property name="temp1">temp1_18_118__</property>
+	  <property name="temp2">temp2_18_118__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_118)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_118)]</thumb>
+	  <label>$INFO[Skin.String(label18_118)]</label>
+	  <label2>$INFO[Skin.String(id18_118)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_118)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+	<item id="119">
+ 	  <visible>[!Skin.HasSetting(off18_119) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label18_119)]</visible>
+	  <property name="id">18_119</property>
+	  <property name="temp1">temp1_18_119__</property>
+	  <property name="temp2">temp2_18_119__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off18_119)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon18_119)]</thumb>
+	  <label>$INFO[Skin.String(label18_119)]</label>
+	  <label2>$INFO[Skin.String(id18_119)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action18_119)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	</item>
+  </include>
+  <include name="SubContent_19">
+	<item id="100">
+ 	  <visible>[!Skin.HasSetting(off19_100) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_100)]</visible>
+	  <property name="id">19_100</property>
+	  <property name="temp1">temp1_19_100__</property>
+	  <property name="temp2">temp2_19_100__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_100)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_100)]</thumb>
+	  <label>$INFO[Skin.String(label19_100)]</label>
+	  <label2>$INFO[Skin.String(id19_100)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_100)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="101">
+ 	  <visible>[!Skin.HasSetting(off19_101) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_101)]</visible>
+	  <property name="id">19_101</property>
+	  <property name="temp1">temp1_19_101__</property>
+	  <property name="temp2">temp2_19_101__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_101)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_101)]</thumb>
+	  <label>$INFO[Skin.String(label19_101)]</label>
+	  <label2>$INFO[Skin.String(id19_101)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_101)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="102">
+ 	  <visible>[!Skin.HasSetting(off19_102) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_102)]</visible>
+	  <property name="id">19_102</property>
+	  <property name="temp1">temp1_19_102__</property>
+	  <property name="temp2">temp2_19_102__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_102)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_102)]</thumb>
+	  <label>$INFO[Skin.String(label19_102)]</label>
+	  <label2>$INFO[Skin.String(id19_102)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_102)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="103">
+ 	  <visible>[!Skin.HasSetting(off19_103) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_103)]</visible>
+	  <property name="id">19_103</property>
+	  <property name="temp1">temp1_19_103__</property>
+	  <property name="temp2">temp2_19_103__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_103)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_103)]</thumb>
+	  <label>$INFO[Skin.String(label19_103)]</label>
+	  <label2>$INFO[Skin.String(id19_103)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_103)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="104">
+ 	  <visible>[!Skin.HasSetting(off19_104) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_104)]</visible>
+	  <property name="id">19_104</property>
+	  <property name="temp1">temp1_19_104__</property>
+	  <property name="temp2">temp2_19_104__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_104)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_104)]</thumb>
+	  <label>$INFO[Skin.String(label19_104)]</label>
+	  <label2>$INFO[Skin.String(id19_104)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_104)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="105">
+ 	  <visible>[!Skin.HasSetting(off19_105) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_105)]</visible>
+	  <property name="id">19_105</property>
+	  <property name="temp1">temp1_19_105__</property>
+	  <property name="temp2">temp2_19_105__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_105)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_105)]</thumb>
+	  <label>$INFO[Skin.String(label19_105)]</label>
+	  <label2>$INFO[Skin.String(id19_105)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_105)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="106">
+ 	  <visible>[!Skin.HasSetting(off19_106) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_106)]</visible>
+	  <property name="id">19_106</property>
+	  <property name="temp1">temp1_19_106__</property>
+	  <property name="temp2">temp2_19_106__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_106)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_106)]</thumb>
+	  <label>$INFO[Skin.String(label19_106)]</label>
+	  <label2>$INFO[Skin.String(id19_106)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_106)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="107">
+ 	  <visible>[!Skin.HasSetting(off19_107) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_107)]</visible>
+	  <property name="id">19_107</property>
+	  <property name="temp1">temp1_19_107__</property>
+	  <property name="temp2">temp2_19_107__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_107)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_107)]</thumb>
+	  <label>$INFO[Skin.String(label19_107)]</label>
+	  <label2>$INFO[Skin.String(id19_107)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_107)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="108">
+ 	  <visible>[!Skin.HasSetting(off19_108) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_108)]</visible>
+	  <property name="id">19_108</property>
+	  <property name="temp1">temp1_19_108__</property>
+	  <property name="temp2">temp2_19_108__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_108)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_108)]</thumb>
+	  <label>$INFO[Skin.String(label19_108)]</label>
+	  <label2>$INFO[Skin.String(id19_108)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_108)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="109">
+ 	  <visible>[!Skin.HasSetting(off19_109) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_109)]</visible>
+	  <property name="id">19_109</property>
+	  <property name="temp1">temp1_19_109__</property>
+	  <property name="temp2">temp2_19_109__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_109)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_109)]</thumb>
+	  <label>$INFO[Skin.String(label19_109)]</label>
+	  <label2>$INFO[Skin.String(id19_109)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_109)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="110">
+ 	  <visible>[!Skin.HasSetting(off19_110) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_110)]</visible>
+	  <property name="id">19_110</property>
+	  <property name="temp1">temp1_19_110__</property>
+	  <property name="temp2">temp2_19_110__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_110)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_110)]</thumb>
+	  <label>$INFO[Skin.String(label19_110)]</label>
+	  <label2>$INFO[Skin.String(id19_110)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_110)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="111">
+ 	  <visible>[!Skin.HasSetting(off19_111) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_111)]</visible>
+	  <property name="id">19_111</property>
+	  <property name="temp1">temp1_19_111__</property>
+	  <property name="temp2">temp2_19_111__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_111)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_111)]</thumb>
+	  <label>$INFO[Skin.String(label19_111)]</label>
+	  <label2>$INFO[Skin.String(id19_111)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_111)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="112">
+ 	  <visible>[!Skin.HasSetting(off19_112) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_112)]</visible>
+	  <property name="id">19_112</property>
+	  <property name="temp1">temp1_19_112__</property>
+	  <property name="temp2">temp2_19_112__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_112)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_112)]</thumb>
+	  <label>$INFO[Skin.String(label19_112)]</label>
+	  <label2>$INFO[Skin.String(id19_112)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_112)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="113">
+ 	  <visible>[!Skin.HasSetting(off19_113) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_113)]</visible>
+	  <property name="id">19_113</property>
+	  <property name="temp1">temp1_19_113__</property>
+	  <property name="temp2">temp2_19_113__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_113)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_113)]</thumb>
+	  <label>$INFO[Skin.String(label19_113)]</label>
+	  <label2>$INFO[Skin.String(id19_113)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_113)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="114">
+ 	  <visible>[!Skin.HasSetting(off19_114) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_114)]</visible>
+	  <property name="id">19_114</property>
+	  <property name="temp1">temp1_19_114__</property>
+	  <property name="temp2">temp2_19_114__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_114)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_114)]</thumb>
+	  <label>$INFO[Skin.String(label19_114)]</label>
+	  <label2>$INFO[Skin.String(id19_114)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_114)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="115">
+ 	  <visible>[!Skin.HasSetting(off19_115) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_115)]</visible>
+	  <property name="id">19_115</property>
+	  <property name="temp1">temp1_19_115__</property>
+	  <property name="temp2">temp2_19_115__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_115)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_115)]</thumb>
+	  <label>$INFO[Skin.String(label19_115)]</label>
+	  <label2>$INFO[Skin.String(id19_115)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_115)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="116">
+ 	  <visible>[!Skin.HasSetting(off19_116) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_116)]</visible>
+	  <property name="id">19_116</property>
+	  <property name="temp1">temp1_19_116__</property>
+	  <property name="temp2">temp2_19_116__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_116)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_116)]</thumb>
+	  <label>$INFO[Skin.String(label19_116)]</label>
+	  <label2>$INFO[Skin.String(id19_116)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_116)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="117">
+ 	  <visible>[!Skin.HasSetting(off19_117) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_117)]</visible>
+	  <property name="id">19_117</property>
+	  <property name="temp1">temp1_19_117__</property>
+	  <property name="temp2">temp2_19_117__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_117)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_117)]</thumb>
+	  <label>$INFO[Skin.String(label19_117)]</label>
+	  <label2>$INFO[Skin.String(id19_117)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_117)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="118">
+ 	  <visible>[!Skin.HasSetting(off19_118) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_118)]</visible>
+	  <property name="id">19_118</property>
+	  <property name="temp1">temp1_19_118__</property>
+	  <property name="temp2">temp2_19_118__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_118)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_118)]</thumb>
+	  <label>$INFO[Skin.String(label19_118)]</label>
+	  <label2>$INFO[Skin.String(id19_118)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_118)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+	<item id="119">
+ 	  <visible>[!Skin.HasSetting(off19_119) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label19_119)]</visible>
+	  <property name="id">19_119</property>
+	  <property name="temp1">temp1_19_119__</property>
+	  <property name="temp2">temp2_19_119__</property>
+	  <property name="off">$INFO[Skin.HasSetting(off19_119)]</property>
+	  <thumb fallback="">$INFO[Skin.String(icon19_119)]</thumb>
+	  <label>$INFO[Skin.String(label19_119)]</label>
+	  <label2>$INFO[Skin.String(id19_119)]</label2>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">Dialog.Close(1138)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(action19_119)]</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1139)</onclick>
+	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	</item>
+  </include>
+
   <include name="SubContent_90">
 	<item id="100">
  	  <visible>[!Skin.HasSetting(off90_100) | Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))] + [Skin.String(label90_100)]</visible>

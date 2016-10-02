@@ -7,7 +7,7 @@
 	  <animation condition="Skin.String(DialogPosition,1)" effect="slide" start="0,0" end="0,-350">Conditional</animation>
 	  <include name="MenuBackground">
 		<param name="border" value="40" />
-		<param name="color" value="$VAR[MenuColor]" />
+		<param name="color" value="$VAR[DialogMenuColor]" />
 		<param name="height" value="410" />
 		<param name="posx" value="0" />
 		<param name="posy" value="0" />
@@ -19,7 +19,7 @@
       </include>
 	  <include name="MenuBackground">
 		<param name="border" value="40" />
-		<param name="color" value="$VAR[MenuColor]" />
+		<param name="color" value="$VAR[DialogMenuColor]" />
 		<param name="height" value="250" />
 		<param name="posx" value="20" />
 		<param name="posy" value="80" />

@@ -525,6 +525,7 @@
 	<param name="condition" default="true"/>
 	<definition>
 		<control type="group">
+		  <include>Fade_ButtonsColorOverlay</include>
 		  <height>$PARAM[height]</height>
 		  <posx>$PARAM[posx]</posx>
 		  <posy>$PARAM[posy]</posy>
@@ -666,7 +667,7 @@
 		  </control>
 		  
 		  <control type="image" description="pwd_lock">
-			<animation condition="true" effect="fade" start="30,30" end="30,30">Conditional</animation>
+			<include>Fade_PassProtectOverlay</include>
 			<include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
 			<aspectratio align="center">keep</aspectratio>
 			<texture colordiffuse="$PARAM[color]">special://home/addons/script.featherence.service/resources/icons/Lock.png</texture>
@@ -674,7 +675,7 @@
 		  </control>
 		  
 		  <control type="image" description="pwd_unlock">
-			<animation condition="true" effect="fade" start="50,50" end="50,50">Conditional</animation>
+			<include>Fade_PassProtectOverlay</include>
 			<include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
 			<aspectratio align="center">keep</aspectratio>
 			<texture colordiffuse="$PARAM[color]">special://home/addons/script.featherence.service/resources/icons/Unlock.png</texture>
@@ -696,10 +697,10 @@
 		<control type="rss" id="1721" description="(RSS) אמצע">
 			<animation condition="!StringCompare(System.Language,Hebrew) + !Player.HasMedia" effect="slide" start="0,0" end="-350,0" delay="0" time="700" reversible="true">Conditional</animation>
 			<aligny>top</aligny>
-			<include>LabelC12</include>
-			<textcolor>white</textcolor>
+			<textcolor>$VAR[TopInformationFontColor]</textcolor>
 			<titlecolor>yellow</titlecolor>
 			<headlinecolor>white</headlinecolor>
+			<include>LabelC12</include>
 			<height>$PARAM[height]</height>
 			<posx>$PARAM[posx]</posx>
 			<posy>$PARAM[posy]</posy>
@@ -710,6 +711,7 @@
 			<visible>!Player.HasMedia + !Skin.HasSetting(RSSOnMedia) | Skin.HasSetting(RSSOnMedia)</visible>
 			<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
 			<visible>$PARAM[condition]</visible>
+			<visible>!Skin.HasSetting(Admin)</visible>
 		</control>
 	</definition>
   </include>
@@ -900,6 +902,9 @@
    </include>
    <include name="Control_Pos14" description="">
      <height>230</height>
+   </include>
+   <include name="Control_Pos15" description="">
+	 <posx>53</posx>
    </include>
    <include name="Control_Pos33" description="">
 	 <height>773</height>

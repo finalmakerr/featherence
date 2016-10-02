@@ -129,7 +129,37 @@
 	
 	<control type="list" id="9000" description="מאוזן">
 	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
-	  <visible>Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign) | Skin.String(MenuDesign,6)</visible>
+	  <visible>Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)</visible>
+	  <visible>![Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Window(home).Property(WidgetButton.ID_))]</visible>
+	  <posx>0</posx>
+	  <posy>820</posy>
+	  <width>1920</width>
+	  <height>1040</height>
+	  <onleft condition="!Skin.HasSetting(SPMiniButtons)">9000</onleft>
+	  <onleft>noop</onleft>
+	  <onright condition="Control.IsVisible(9020)">9020</onright>
+	  <onright>9000</onright>
+	  <onup condition="Control.IsVisible(7011)">7017</onup>
+	  <onup condition="Control.IsVisible(700)">700</onup>
+	  <onup condition="Control.IsVisible(9009)">9009</onup>
+	  <onup>520</onup>
+	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + !StringCompare(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + [IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))]">ActivateWindow(1138)</ondown>
+	  <ondown>noop</ondown>
+	  <scrolltime tween="sine" easing="out">220</scrolltime>
+	  <orientation>horizontal</orientation>
+	  <include condition="Skin.String(MenuDesign,2)" description="מאוזן">MenuDesign_Home</include>
+	  <include condition="Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)" description="מאוזן2">MenuDesign_Home1</include>
+	  <include condition="Skin.String(MenuDesign,6)" description="מאוזן">MenuDesign_Home3</include>
+	  <content>
+		<include condition="!Window.IsVisible(LoginScreen)">Content_Home</include>
+		<include condition="Window.IsVisible(LoginScreen)">Content_LoginScreen</include>
+		<include condition="!Skin.HasSetting(SPMiniButtons)">Content_Home2</include>
+	  </content>
+	</control>
+	
+	<control type="list" id="9000" description="מאוזן3">
+	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
+	  <visible>Skin.String(MenuDesign,6)</visible>
 	  <visible>![Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Window(home).Property(WidgetButton.ID_))]</visible>
 	  <posx>30</posx>
 	  <posy>820</posy>
@@ -143,7 +173,7 @@
 	  <onup condition="Control.IsVisible(700)">700</onup>
 	  <onup condition="Control.IsVisible(9009)">9009</onup>
 	  <onup>520</onup>
-	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + !StringCompare(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction)">ActivateWindow(1138)</ondown>
+	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + !StringCompare(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + [IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))]">ActivateWindow(1138)</ondown>
 	  <ondown>noop</ondown>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
 	  <orientation>horizontal</orientation>
@@ -166,9 +196,9 @@
 	  <posx>1830</posx>
 	  <posy>824</posy>
 	  <width>100</width>
-	  <height>230</height>
+	  <height>225</height>
 	  <onleft>9000</onleft>
-	  <onright>noop</onright>
+	  <onright condition="Control.IsVisible(315)">315</onright>
 	  <onup>noop</onup>
 	  <ondown>noop</ondown>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
@@ -194,12 +224,12 @@
 	  <onup>noop</onup>
 	  <ondown condition="Control.IsVisible(9020)">9020</ondown>
 	  <ondown>9000</ondown>
-	  <onright description="openSUB-he" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + !StringCompare(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + StringCompare(System.Language,Hebrew)">ActivateWindow(1138)</onright>
+	  <onright description="openSUB-horizontal" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(CustomHomeCustomizer.xml) + !StringCompare(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + [IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))]">ActivateWindow(1138)</onright>
 	  <onright condition="Control.IsVisible(7011) + !StringCompare(System.Language,Hebrew)">7017</onright>
 	  <onright condition="Control.IsVisible(700) + !StringCompare(System.Language,Hebrew)">700</onright>
 	  <onright condition="Control.IsVisible(9009) + !StringCompare(System.Language,Hebrew)">9009</onright>
 	  <onright>520</onright>
-	  <onleft description="openSUB-he" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + !StringCompare(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + !StringCompare(System.Language,Hebrew)">ActivateWindow(1138)</onleft>
+	  <onleft description="openSUB-horizontal" condition="!StringCompare(System.Language,Hebrew) + !Window.IsVisible(CustomHomeCustomizer.xml) + !StringCompare(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + [IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))]">ActivateWindow(1138)</onleft>
 	  <onleft condition="Control.IsVisible(7011) + StringCompare(System.Language,Hebrew)">7017</onleft>
 	  <onleft condition="Control.IsVisible(700) + StringCompare(System.Language,Hebrew)">700</onleft>
 	  <onleft condition="Control.IsVisible(9009) + StringCompare(System.Language,Hebrew)">9009</onleft>
@@ -248,7 +278,7 @@
 			<param name="width" value="312" />
 		</include>
 		<include name="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="" />
+			<param name="color" value="$VAR[IconUnFocusColor]" />
 			<param name="height" value="170" />
 			<param name="posx" value="30" />
 			<param name="posy" value="34" />
@@ -415,7 +445,7 @@
 			<param name="width" value="332" />
 		</include>
 		<include name="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="" />
+			<param name="color" value="$VAR[IconFocusColor]" />
 			<param name="height" value="193" />
 			<param name="posx" value="20" />
 			<param name="posy" value="24" />
@@ -608,7 +638,7 @@
 			<param name="width" value="312" />
 		</include>
 		<include name="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="" />
+			<param name="color" value="$VAR[IconUnFocusColor]" />
 			<param name="height" value="170" />
 			<param name="posx" value="30" />
 			<param name="posy" value="34" />
@@ -1694,31 +1724,44 @@
   </include>
   
   <include name="MenuDesign_HomeSP3" description="מוקטנים">
-    <itemlayout height="70" width="70">
+    <itemlayout height="65" width="65">
 	  <control type="group">
-	    <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [[Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(315) | ControlGroup(9009).HasFocus]] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="200,0" delay="0" time="220" reversible="true">Conditional</animation>
-		<animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [[Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(315) | ControlGroup(9009).HasFocus]] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-170,0" delay="0" time="220" reversible="true">Conditional</animation>
+	    <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [[Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(315) | ControlGroup(9009).HasFocus]] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="22.50,0" delay="0" time="220" reversible="true">Conditional</animation>
+		<animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [[Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(315) | ControlGroup(9009).HasFocus]] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-165,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<animation condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | Skin.HasSetting(FixedUnFocusButtonsTransperancy) + [Control.HasFocus(311) | Control.HasFocus(312) | [IntegerGreaterThan(Container(9000).NumItems,7) + System.IdleTime(7)]]]" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
 		<include>MenuDesign_Home_itemlayout</include>
 		<include name="Buttons_Color" description="צבע">
-			<param name="height" value="70" />
-			<param name="posx" value="20" />
-			<param name="posy" value="20" />
-			<param name="width" value="70" />
+			<param name="height" value="65" />
+			<param name="posx" value="22.5" />
+			<param name="posy" value="22.5" />
+			<param name="width" value="65" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="$VAR[IconUnFocusColorSP]" />
+			<param name="height" value="65" />
+			<param name="posx" value="22.5" />
+			<param name="posy" value="22.5" />
+			<param name="width" value="65" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="homeicons" value="false" description="" />
+			<param name="reshape" value="true" description="" />
+			<param name="type0" value="true" description="UnFocus" />
+			<param name="type1" value="false" description="Focus" />
 		</include>
 		<control type="image" description="אלמנט כפתור לא נבחר">
-          <posx>20</posx>
-          <posy>20</posy>
-          <width>70</width>
-          <height>70</height>
+          <posx>22.5</posx>
+          <posy>22.5</posy>
+          <width>65</width>
+          <height>65</height>
           <texture>buttons/effects/black2.png</texture>
 		  <visible>Skin.String(ElementUButton)</visible>
         </control>
 		<control type="image" description="צללית">
-		  <posx>20</posx>
-          <posy>20</posy>
-          <width>70</width>
-          <height>70</height>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
+          <width>65</width>
+          <height>65</height>
 		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_shadow</include>
 		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_shadow</include>
 		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_shadow</include>
@@ -1729,10 +1772,10 @@
 		  <visible>Skin.HasSetting(ShadowButton)</visible>
         </control>
 		<control type="image" description="שקופית">
-          <posx>20</posx>
-          <posy>20</posy>
-          <width>70</width>
-          <height>70</height>
+          <posx>22.5</posx>
+          <posy>22.5</posy>
+          <width>65</width>
+          <height>65</height>
           <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_gardient</include>
 		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_gardient</include>
 		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_gardient</include>
@@ -1743,10 +1786,10 @@
 		  <visible>!Skin.HasSetting(OverlayButton)</visible>
         </control>
 		<control type="image" description="שפוע Bevel">
-          <posx>20</posx>
-          <posy>20</posy>
-          <width>70</width>
-          <height>70</height>
+          <posx>22.5</posx>
+          <posy>22.5</posy>
+          <width>65</width>
+          <height>65</height>
           <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_bevel</include>
 		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_bevel</include>
 		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_bevel</include>
@@ -1757,10 +1800,10 @@
 		  <visible>!Skin.HasSetting(BevelButton)</visible>
         </control>
 		<control type="image" description="מסגרת (Stroke)">
-          <posx>20</posx>
-          <posy>20</posy>
-          <width>70</width>
-          <height>70</height>
+          <posx>22.5</posx>
+          <posy>22.5</posy>
+          <width>65</width>
+          <height>65</height>
           <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_stroke</include>
 		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_stroke</include>
 		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_stroke</include>
@@ -1772,10 +1815,10 @@
         </control>
         <include name="Buttons_Icon" description="סמל">
 			<param name="color" value="$VAR[IconUnFocusColorSP]" />
-			<param name="height" value="70" />
-			<param name="posx" value="20" />
-			<param name="posy" value="22" />
-			<param name="width" value="70" />
+			<param name="height" value="60" />
+			<param name="posx" value="25" />
+			<param name="posy" value="24" />
+			<param name="width" value="60" />
 			
 			<param name="condition" value="true" description="" />
 			<param name="homeicons" value="false" description="" />
@@ -1785,18 +1828,18 @@
 		</include>
 		<control type="image" description="OFF">
           <aspectratio>keep</aspectratio>
-		  <height>70</height>
-		  <posx>20</posx>
-          <posy>20</posy>
+		  <height>65</height>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
 		  <texture>misc/help/off.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !IsEmpty(ListItem.Property(off))</visible>
-		  <width>70</width>
+		  <width>65</width>
         </control>
 		<control type="image" description="Movies Widget">
           <aspectratio>keep</aspectratio>
 		  <height>60</height>
-		  <posx>20</posx>
-          <posy>20</posy>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
 		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/movies.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>SubString(ListItem.Label2,90) + !Skin.String(widget311) | StringCompare(ListItem.Label2,Skin.String(widget311))</visible>
@@ -1805,8 +1848,8 @@
 		<control type="image" description="TVshows Widget">
           <aspectratio>keep</aspectratio>
 		  <height>60</height>
-		  <posx>20</posx>
-          <posy>20</posy>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
 		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/tvshows.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>SubString(ListItem.Label2,91) + !Skin.String(widget312) | StringCompare(ListItem.Label2,Skin.String(widget312))</visible>
@@ -1815,8 +1858,8 @@
 		<control type="image" description="Weather Widget">
           <aspectratio>keep</aspectratio>
 		  <height>60</height>
-		  <posx>20</posx>
-          <posy>20</posy>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
 		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/weather.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>SubString(ListItem.Label2,97) + !Skin.String(widget317) | StringCompare(ListItem.Label2,Skin.String(widget317))</visible>
@@ -1824,9 +1867,9 @@
         </control>
 		<control type="image" description="תפריט משני">
 		  <include>Fade_SubMenuMarkOverlay</include>
-		  <height>70</height>
-		  <posx>20</posx>
-          <posy>20</posy>
+		  <height>65</height>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
 		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_sub</include>
 		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_sub</include>
 		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_sub</include>
@@ -1835,35 +1878,48 @@
 		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_sub</include>
 		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
 		  <visible>!IsEmpty(ListItem.Property(sub))</visible>
-		  <width>70</width>
+		  <width>65</width>
         </control>
 	  </control>
     </itemlayout>
-    <focusedlayout height="70" width="70">
+    <focusedlayout height="65" width="65">
 	  <control type="group">
 	    <animation condition="true" effect="zoom" center="0,0" end="100,100" time="0" reversible="false">Conditional</animation>
 	    <include>SetProperty_HomeSP</include>
 		<animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="0,0" delay="0" time="0" reversible="true">Conditional</animation>
-		<animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [[Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(315) | ControlGroup(9009).HasFocus]] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="170,0" delay="0" time="220" reversible="true">Conditional</animation>
-		<animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [[Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(315) | ControlGroup(9009).HasFocus]] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-170,0" delay="0" time="220" reversible="true">Conditional</animation>
+		<animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [[Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(315) | ControlGroup(9009).HasFocus]] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="165,0" delay="0" time="220" reversible="true">Conditional</animation>
+		<animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [[Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(315) | ControlGroup(9009).HasFocus]] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-165,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<include name="Buttons_Color" description="צבע">
-			<param name="height" value="70" />
-			<param name="posx" value="20" />
-			<param name="posy" value="20" />
-			<param name="width" value="70" />
+			<param name="height" value="65" />
+			<param name="posx" value="22.5" />
+			<param name="posy" value="22.5" />
+			<param name="width" value="65" />
+		</include>
+		<include name="Buttons_Icon" description="סמלים גדולים">
+			<param name="color" value="$VAR[IconFocusColorSP]" />
+			<param name="height" value="65" />
+			<param name="posx" value="22.5" />
+			<param name="posy" value="22.5" />
+			<param name="width" value="65" />
+			
+			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
+			<param name="homeicons" value="false" description="" />
+			<param name="reshape" value="true" description="" />
+			<param name="type0" value="false" description="UnFocus" />
+			<param name="type1" value="true" description="Focus" />
 		</include>
 		<control type="image" description="אלמנט כפתור נבחר">
-          <posx>20</posx>
-          <posy>20</posy>
-          <width>209</width>
-          <height>209</height>
+          <posx>22.5</posx>
+          <posy>22.5</posy>
+          <width>22.59</width>
+          <height>22.59</height>
           <texture>buttons/effects/black2.png</texture>
 		  <visible>Skin.String(ElementFButton)</visible>
         </control>
 		<control type="image" description="סמן בחירה 2">
 		  <colordiffuse>BFFFFFFF</colordiffuse>
-		  <posx>20</posx>
-          <posy>20</posy>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
           <width>69</width>
           <height>69</height>
 		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_choosen</include>
@@ -1883,15 +1939,15 @@
 		  <width>81</width>
 		  <height>81</height>
 		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		  <visible>[Skin.HasSetting(SelectionMarker) + Control.HasFocus(9020)] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
+		  <visible>[Skin.HasSetting(SelectionMarker) + Control.HasFocus(9020)] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1165.xml) + StringCompare(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
 		  <visible>IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 		  <visible>[StringCompare(Window(home).Property(Button.ID_),17) | StringCompare(Window(home).Property(Button.ID_),18) | StringCompare(Window(home).Property(Button.ID_),19) + !StringCompare(Window(home).Property(Button.ID_),20) + !StringCompare(Window(home).Property(Button.ID_),21) | StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)]</visible>
         </control>
 		<control type="image" description="צללית">
-		  <posx>20</posx>
-          <posy>20</posy>
-          <width>70</width>
-          <height>70</height>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
+          <width>65</width>
+          <height>65</height>
 		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_shadow</include>
 		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_shadow</include>
 		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_shadow</include>
@@ -1902,10 +1958,10 @@
 		  <visible>Skin.HasSetting(ShadowButton)</visible>
         </control>
 		<control type="image" description="שקופית">
-          <posx>20</posx>
-          <posy>20</posy>
-          <width>70</width>
-          <height>70</height>
+          <posx>22.5</posx>
+          <posy>22.5</posy>
+          <width>65</width>
+          <height>65</height>
           <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_gardient</include>
 		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_gardient</include>
 		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_gardient</include>
@@ -1916,10 +1972,10 @@
 		  <visible>!Skin.HasSetting(OverlayButton)</visible>
         </control>
 		<control type="image" description="שפוע Bevel">
-          <posx>20</posx>
-          <posy>20</posy>
-          <width>70</width>
-          <height>70</height>
+          <posx>22.5</posx>
+          <posy>22.5</posy>
+          <width>65</width>
+          <height>65</height>
           <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_bevel</include>
 		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_bevel</include>
 		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_bevel</include>
@@ -1930,10 +1986,10 @@
 		  <visible>!Skin.HasSetting(BevelButton)</visible>
         </control>
 		<control type="image" description="מסגרת (Stroke)">
-          <posx>20</posx>
-          <posy>20</posy>
-          <width>70</width>
-          <height>70</height>
+          <posx>22.5</posx>
+          <posy>22.5</posy>
+          <width>65</width>
+          <height>65</height>
           <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_stroke</include>
 		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_stroke</include>
 		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_stroke</include>
@@ -1945,10 +2001,10 @@
         </control>
 		<include name="Buttons_Icon" description="סמל">
 			<param name="color" value="$VAR[IconFocusColorSP]" />
-			<param name="height" value="70" />
-			<param name="posx" value="20" />
-			<param name="posy" value="22" />
-			<param name="width" value="70" />
+			<param name="height" value="60" />
+			<param name="posx" value="25" />
+			<param name="posy" value="24" />
+			<param name="width" value="60" />
 			
 			<param name="condition" value="true" description="" />
 			<param name="homeicons" value="false" description="" />
@@ -1958,18 +2014,18 @@
 		</include>
 		<control type="image" description="OFF">
           <aspectratio>keep</aspectratio>
-		  <height>70</height>
-		  <posx>20</posx>
-          <posy>20</posy>
+		  <height>65</height>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
 		  <texture>misc/help/off.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !IsEmpty(ListItem.Property(off))</visible>
-		  <width>70</width>
+		  <width>65</width>
         </control>
 		<control type="image" description="Movies Widget">
 		  <aspectratio>keep</aspectratio>
 		  <height>60</height>
-		  <posx>20</posx>
-          <posy>20</posy>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
 		  <texture colordiffuse="$VAR[IconFocusColor]">special://home/addons/script.featherence.service/resources/icons/movies.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>SubString(ListItem.Label2,90) + !Skin.String(widget311) | StringCompare(ListItem.Label2,Skin.String(widget311))</visible>
@@ -1978,8 +2034,8 @@
 		<control type="image" description="TVshows Widget">
 		  <aspectratio>keep</aspectratio>
 		  <height>60</height>
-		  <posx>20</posx>
-          <posy>20</posy>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
 		  <texture colordiffuse="$VAR[IconFocusColor]">special://home/addons/script.featherence.service/resources/icons/tvshows.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>SubString(ListItem.Label2,91) + !Skin.String(widget312) | StringCompare(ListItem.Label2,Skin.String(widget312))</visible>
@@ -1988,8 +2044,8 @@
 		<control type="image" description="Weather Widget">
           <aspectratio>keep</aspectratio>
 		  <height>60</height>
-		  <posx>20</posx>
-          <posy>20</posy>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
 		  <texture colordiffuse="$VAR[IconFocusColor]">special://home/addons/script.featherence.service/resources/icons/weather.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>SubString(ListItem.Label2,97) + !Skin.String(widget317) | StringCompare(ListItem.Label2,Skin.String(widget317))</visible>
@@ -1997,9 +2053,9 @@
         </control>
 		<control type="image" description="תפריט משני">
 		  <include>Fade_SubMenuMarkOverlay</include>
-		  <height>70</height>
-		  <posx>20</posx>
-          <posy>20</posy>
+		  <height>65</height>
+		  <posx>22.5</posx>
+          <posy>22.5</posy>
 		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_sub</include>
 		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_sub</include>
 		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_sub</include>
@@ -2008,7 +2064,7 @@
 		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_sub</include>
 		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
 		  <visible>!IsEmpty(ListItem.Property(sub))</visible>
-		  <width>70</width>
+		  <width>65</width>
         </control>
 	  </control>
     </focusedlayout>
@@ -2211,6 +2267,7 @@
 		  <visible>Skin.HasSetting(StrokeButton)</visible>
         </control>
 		<include name="Buttons_Icon" description="סמל">
+			<param name="color" value="$VAR[IconUnFocusColorSP]" />
 			<param name="height" value="70" />
 			<param name="posx" value="20" />
 			<param name="posy" value="22" />
@@ -2219,8 +2276,8 @@
 			<param name="condition" value="true" description="" />
 			<param name="homeicons" value="false" description="" />
 			<param name="reshape" value="true" description="" />
-			<param name="type0" value="false" description="UnFocus" />
-			<param name="type1" value="true" description="Focus" />
+			<param name="type0" value="true" description="UnFocus" />
+			<param name="type1" value="false" description="Focus" />
 		</include>
 		<control type="image" description="OFF">
           <aspectratio>keep</aspectratio>
@@ -2252,31 +2309,90 @@
     <control type="group" id="7017" description="Touch Support">
 	  <height>0</height>
 	  <posy>0</posy>
-	  <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1850,0" delay="0" time="0">Conditional</animation>
+	  <animation description="VerticalMenu" condition="!Skin.String(TouchButtonsPosition) + [Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1850,0" delay="0" time="0">Conditional</animation>
+	  <animation description="SE" condition="Skin.String(TouchButtonsPosition,1)" effect="slide" start="0,0" end="1850,0" delay="0" time="0">Conditional</animation>
+	  <animation description="SW" condition="Skin.String(TouchButtonsPosition,2)" effect="slide" start="0,0" end="0,0" delay="0" time="0">Conditional</animation>
+	  <animation description="S-מאונך" condition="Skin.String(TouchButtonsPosition,3) + !Skin.HasSetting(Touch_Orientation)" effect="slide" start="0,0" end="925,20" delay="0" time="0">Conditional</animation>
+	  <animation description="S-מאוזן" condition="Skin.String(TouchButtonsPosition,3) + Skin.HasSetting(Touch_Orientation)" effect="slide" start="0,0" end="925,170" delay="0" time="0">Conditional</animation>
+	  <animation description="E" condition="Skin.String(TouchButtonsPosition,4)" effect="slide" start="0,0" end="1850,-200" delay="0" time="0">Conditional</animation>
+	  <animation description="W" condition="Skin.String(TouchButtonsPosition,5)" effect="slide" start="0,0" end="0,-200" delay="0" time="0">Conditional</animation>
+	  
+	  <animation description="מאוזן -מימין" condition="Skin.HasSetting(Touch_Orientation) + [Skin.String(TouchButtonsPosition,4) | Skin.String(TouchButtonsPosition,1) | !Skin.String(TouchButtonsPosition) + [Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + !StringCompare(System.Language,Hebrew)]" effect="slide" start="0,0" end="-68,0" delay="0" time="0">Conditional</animation>
 	  <animation condition="System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
 	  
-	  <control type="list" id="9008" description="Touch Support/מאוזן">
+	  
+	  <animation description="Medium-DEFAULT"condition="Skin.String(ButtonsSizeTouch,1) + !Skin.String(TouchButtonsPosition)" effect="zoom" center="0,860" start="100,100" end="150,150" time="0">Conditional</animation>
+	  <animation description="Medium-SE"condition="Skin.String(ButtonsSizeTouch,1) + Skin.String(TouchButtonsPosition,1)" effect="zoom" center="70,860" start="100,100" end="150,150" time="0">Conditional</animation>
+	  <animation description="Medium-SW"condition="Skin.String(ButtonsSizeTouch,1) + Skin.String(TouchButtonsPosition,2)" effect="zoom" center="0,860" start="100,100" end="150,150" time="0">Conditional</animation>
+	  <animation description="Medium-S"condition="Skin.String(ButtonsSizeTouch,1) + Skin.String(TouchButtonsPosition,3)" effect="zoom" center="0,860" start="100,100" end="150,150" time="0">Conditional</animation>
+	  <animation description="Medium-E"condition="Skin.String(ButtonsSizeTouch,1) + Skin.String(TouchButtonsPosition,4)" effect="zoom" center="70,860" start="100,100" end="150,150" time="0">Conditional</animation>
+	  <animation description="Medium-W"condition="Skin.String(ButtonsSizeTouch,1) + Skin.String(TouchButtonsPosition,5)" effect="zoom" center="0,860" start="100,100" end="150,150" time="0">Conditional</animation>
+	  
+	  <animation description="Large-DEFAULT"condition="Skin.String(ButtonsSizeTouch,2) + !Skin.String(TouchButtonsPosition)" effect="zoom" center="0,900" start="100,100" end="200,200" time="0">Conditional</animation>
+	  <animation description="Large-SE"condition="Skin.String(ButtonsSizeTouch,2) + Skin.String(TouchButtonsPosition,1)" effect="zoom" center="70,900" start="100,100" end="200,200" time="0">Conditional</animation>
+	  <animation description="Large-SW"condition="Skin.String(ButtonsSizeTouch,2) + Skin.String(TouchButtonsPosition,2)" effect="zoom" center="0,900" start="100,100" end="200,200" time="0">Conditional</animation>
+	  <animation description="Large-S"condition="Skin.String(ButtonsSizeTouch,2) + Skin.String(TouchButtonsPosition,3)" effect="zoom" center="0,900" start="100,100" end="200,200" time="0">Conditional</animation>
+	  <animation description="Large-E"condition="Skin.String(ButtonsSizeTouch,2) + Skin.String(TouchButtonsPosition,4)" effect="zoom" center="70,900" start="100,100" end="200,200" time="0">Conditional</animation>
+	  <animation description="Large-W"condition="Skin.String(ButtonsSizeTouch,2) + Skin.String(TouchButtonsPosition,5)" effect="zoom" center="0,900" start="100,100" end="200,200" time="0">Conditional</animation>
+	  
+	  <control type="list" id="9008" description="Touch Support/מאונך">
 		  <include>Fade20</include>
 		  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
-		  <visible>Skin.HasSetting(Touch_Support)</visible>
+		  <visible>Skin.HasSetting(Touch_Support) + !Skin.HasSetting(Touch_Orientation)</visible>
 		  <!--<visible>!Control.IsVisible(90000)</visible>-->
 		  <visible>![ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus() | ControlGroup(9002).HasFocus() | !IsEmpty(Window(home).Property(SideMenuUp))]</visible>
 		  <visible>!Window.IsVisible(DialogContextMenu.xml)</visible>
 		  <posx>-20</posx>
 		  <posy>824</posy>
-		  <width>100</width>
-		  <height>230</height>
+		  <width>160</width>
+		  <height>160</height>
 		  <scrolltime tween="sine" easing="out">220</scrolltime>
-		  <onleft>noop</onleft>
-		  <onright condition="Control.IsVisible(9000)">9000</onright>
-		  <onup>noop</onup>
-		  <ondown>noop</ondown>
-		  <orientation>vertical</orientation>
+		  <include>TouchSupport_Vertical</include>
 		  <include description="Touch Support">MenuDesign_Touch</include>
 		  <content>
 			<include condition="true">Content_Home3</include>
 		  </content>
 	  </control>
+	  
+	  <control type="list" id="9008" description="Touch Support/מאוזן">
+		  <include>Fade20</include>
+		  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
+		  <visible>Skin.HasSetting(Touch_Support) + Skin.HasSetting(Touch_Orientation)</visible>
+		  <!--<visible>!Control.IsVisible(90000)</visible>-->
+		  <visible>![ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus() | ControlGroup(9002).HasFocus() | !IsEmpty(Window(home).Property(SideMenuUp))]</visible>
+		  <visible>!Window.IsVisible(DialogContextMenu.xml)</visible>
+		  <posx>-20</posx>
+		  <posy>824</posy>
+		  <width>160</width>
+		  <height>160</height>
+		  <scrolltime tween="sine" easing="out">220</scrolltime>
+		  <include>TouchSupport_Horizontal</include>
+		  <include description="Touch Support">MenuDesign_Touch</include>
+		  <content>
+			<include condition="true">Content_Home3</include>
+		  </content>
+	  </control>
+	  
 	</control>
   </include>
+  
+  <include name="TouchSupport_Vertical">
+    <onleft condition="Control.IsVisible(9000)">9000</onleft>
+	<onright condition="Control.IsVisible(9000)">9000</onright>
+	<onleft condition="Control.IsVisible(50)">50</onleft>
+	<onright condition="Control.IsVisible(50)">50</onright>
+	<onup>noop</onup>
+	<ondown>noop</ondown>
+	<orientation>vertical</orientation>
+  </include>
+  <include name="TouchSupport_Horizontal">
+    <onup condition="Control.IsVisible(9000)">9000</onup>
+	<ondown condition="Control.IsVisible(9000)">9000</ondown>
+	<onup condition="Control.IsVisible(50)">50</onup>
+	<ondown condition="Control.IsVisible(50)">50</ondown>
+	<onleft>noop</onleft>
+	<onright>noop</onright>
+	<orientation>horizontal</orientation>
+  </include>
+  
 </includes>

@@ -5,7 +5,7 @@
   <!--<onload condition="System.HasAddon(script.tv.show.next.aired) + !Skin.HasSetting(NextAired)">RunScript(script.tv.show.next.aired,backend=True)</onload>-->
   <include>SetFocusView</include>
   <include>ReloadSkin_Check</include>
-  <include>Fade6</include>
+  <include>Fade_WindowsOpenClose</include>
   <controls>
 	<include>Backgrounds3</include>
     <include>ViewDesign_50</include>

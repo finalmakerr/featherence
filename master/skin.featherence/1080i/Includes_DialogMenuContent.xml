@@ -4,7 +4,7 @@
   <include name="BottomMenuDialogBusy">
 	  <control type="label" id="9" description="כותרת">
 	    <visible>!Window.IsVisible(DialogProgress.xml) + !Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogOK.xml)</visible>
-		<textcolor>yellow</textcolor>
+		<textcolor>$VAR[DialogFontTitleColor]</textcolor>
 	    <aligny>top</aligny>
 	    <include>LabelC1</include>
 	    <height>60</height>
@@ -16,7 +16,7 @@
 	    <animation condition="true" effect="slide" start="0,0" end="10,0">Conditional</animation>
 	    <visible>!Window.IsVisible(DialogProgress.xml) + !Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogOK.xml)</visible>
 		<visible>!IsEmpty(Window(home).Property(tips)) + System.IdleTime(2) + !Skin.HasSetting(tips)</visible>
-		<textcolor>grey2</textcolor>
+		<textcolor>$VAR[DialogFontColor]</textcolor>
 	    <include>LabelC2</include>
 	    <height>200</height>
 		<posx>0</posx>
@@ -36,7 +36,7 @@
 
   <include name="BottomMenuDialogYesNo">
       <control type="label" id="1" description="כותרת">
-		<textcolor>yellow</textcolor>
+		<textcolor>$VAR[DialogFontTitleColor]</textcolor>
 		<aligny>top</aligny>
 		<include>LabelC1</include>
 		<wrapmultiline>true</wrapmultiline>
@@ -44,6 +44,7 @@
 		<width>600</width>
 	  </control>
 	  <control type="textbox" id="9" description="תוכן">
+		<textcolor>$VAR[DialogFontColor]</textcolor>
 		<include>LabelC2</include>
 		<height>90</height>
 		<posx>10</posx>
@@ -68,7 +69,7 @@
   <include name="BottomMenuDialogOk" description="חלון שגיאה">
 	  <visible>!Window.IsVisible(DialogYesNo.xml)</visible>
 	  <control type="label" id="1" description="כותרת">
-		<textcolor>yellow</textcolor>
+		<textcolor>$VAR[DialogFontTitleColor]</textcolor>
 		<aligny>top</aligny>
 		<include>LabelC1</include>
 		<wrapmultiline>true</wrapmultiline>
@@ -79,6 +80,7 @@
 		<visible>false</visible>
 	  </control>
 	  <control type="textbox" description="תוכן">
+		<textcolor>$VAR[DialogFontColor]</textcolor>
 		<include>LabelC2</include>
 		<height>160</height>
 		<posx>10</posx>
@@ -93,7 +95,7 @@
     
   <include name="BottomMenuDialogProgress">
     <control type="label" id="1" description="כותרת">
-	  <textcolor>yellow</textcolor>
+	  <textcolor>$VAR[DialogFontTitleColor]</textcolor>
 	  <aligny>top</aligny>
 	  <include>LabelC1</include>
 	  <height>60</height>
@@ -102,6 +104,7 @@
 	</control>
     <control type="textbox" id="9" description="כותרת משנית - פותח זרימה">
 	  <posy>-10</posy>
+	  <textcolor>$VAR[DialogFontColor]</textcolor>
 	  <include>LabelC2</include>
 	  <height>100</height>
 	  <width>600</width>
@@ -642,14 +645,14 @@
           </control>
 		  <control type="label" description="Product ID Vendor ID">
             <include>LabelL7</include>
-            <label>$LOCALIZE[35504]:  [COLOR=grey2]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=grey2]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
+            <label>$LOCALIZE[35504]:  [COLOR=grey]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=grey]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
 			<posx>300</posx>
 			<posy>20</posy>
 			<width>700</width>
           </control>
 		  <control type="label" description="class">
             <include>LabelL7</include>
-            <label>$LOCALIZE[35501]:  [COLOR=grey2]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey2]$INFO[ListItem.Property(Version)][/COLOR]</label>
+            <label>$LOCALIZE[35501]:  [COLOR=grey]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey]$INFO[ListItem.Property(Version)][/COLOR]</label>
 			<posx>300</posx>
 			<posy>40</posy>
 			<width>700</width>
@@ -675,7 +678,7 @@
           </control>
 		  <control type="label" description="Product ID Vendor ID">
             <include>LabelL7</include>
-            <label>$LOCALIZE[35504]:  [COLOR=grey2]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=grey2]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
+            <label>$LOCALIZE[35504]:  [COLOR=grey]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=grey]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
 			<posx>300</posx>
 			<posy>20</posy>
 			<textcolor>yellow</textcolor>
@@ -683,7 +686,7 @@
           </control>
 		  <control type="label" description="class">
             <include>LabelL7</include>
-            <label>$LOCALIZE[35501]:  [COLOR=grey2]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey2]$INFO[ListItem.Property(Version)][/COLOR]</label>
+            <label>$LOCALIZE[35501]:  [COLOR=grey]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey]$INFO[ListItem.Property(Version)][/COLOR]</label>
 			<posx>300</posx>
 			<posy>40</posy>
 			<textcolor>yellow</textcolor>
@@ -1029,6 +1032,7 @@
   </include>
   <include name="TopDialogExtendedProgressBar" description="חלון עדכון ספרייה">
     <control type="group">
+		<visible>!Skin.HasSetting(HideLibraryUpdates) | [ Skin.HasSetting(HideLibraryUpdates) + [!VideoPlayer.IsFullscreen | Window.IsVisible(VideoOSD.xml)] ]</visible>
 		<posx>610</posx>
 		<posy>-6</posy>
 		<control type="image" description="Dialog BG_Down">
@@ -1072,7 +1076,7 @@
           <label>$INFO[Control.GetLabel(32)]%</label>
 		  <posx>55</posx>
 		  <posy>10</posy>
-		  <textcolor>grey2</textcolor>
+		  <textcolor>grey</textcolor>
 		  <width>50</width>
         </control>
     </control>

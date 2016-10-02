@@ -231,6 +231,27 @@
 		  <onclick condition="Skin.String(Background2Overlay, 10)">Skin.SetString(Background2Overlay, )</onclick>
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
+		<control type="radiobutton" id="114" description="תמונה גדולה">
+          <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31469]</label>
+		  <selected>Skin.HasSetting(View50_BiggerIcon)</selected>
+		  <onclick>Skin.ToggleSetting(View50_BiggerIcon)</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
+        </control>
+		<control type="radiobutton" id="115" description="מצב מניפה">
+          <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31472]</label>
+		  <selected>Skin.HasSetting(View56_Fan)</selected>
+		  <onclick>Skin.ToggleSetting(View56_Fan)</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(Admin)</visible>
+        </control>
+		
 		<control type="radiobutton" id="139" description="פאנארט תמיד">
 		  <include>SideMenuCommon</include>
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>

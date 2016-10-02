@@ -560,12 +560,12 @@ msgid "Sub Menu"
 msgstr "תפריט משני"
 
 msgctxt "#32154"
-msgid ""
-msgstr ""
+msgid "That's the right password :)"
+msgstr "סיסמא נכונה :)"
 
 msgctxt "#32155"
-msgid ""
-msgstr ""
+msgid "Relocking is schedule in %s minutes"
+msgstr "נעילה מחדש בעוד %s דק'"
 
 msgctxt "#32156"
 msgid ""

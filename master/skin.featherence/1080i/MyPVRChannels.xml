@@ -3,7 +3,7 @@
   <defaultcontrol always="true">50</defaultcontrol>
   <views>50,51,54,56,57,58</views>
   <onload condition="Control.IsVisible(50)">Control.SetFocus(50)</onload>
-  <include>Fade6</include>
+  <include>Fade_WindowsOpenClose</include>
   <controls>
     <include>Backgrounds3</include>
 	<include>ViewDesign_51</include>

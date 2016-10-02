@@ -247,6 +247,7 @@
 		<width>100%</width>
 	  </control>
 	  <control type="label" id="11300" description="">					
+		<textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 		<include>LabelC2</include>
 		<height>50%</height>
 		<label>$VAR[Button11300]</label>
@@ -589,18 +590,19 @@
 	<control type="image" id="820" description="Weather">
 	  <width>30</width>
 	  <include>Control_Pos7</include>
-	  <texture>special://home/addons/resource.images.weathericons.outline/resources/$INFO[Weather.fanartcode].png</texture>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">special://home/addons/resource.images.weathericons.outline/resources/$INFO[Weather.fanartcode].png</texture>
 	  <visible>!Skin.String(TopInformationIcons) | SubString(Skin.String(TopInformationIcons),1)</visible>
 	</control>
 	<control type="label" id="821" description="Weather">
 	  <include>Control_Pos7</include>
+	  <textcolor>$VAR[TopInformationFontColor]</textcolor>
 	  <include>LabelC4</include>
 	  <label>$INFO[Weather.Temperature]</label>
 	  <visible>!Skin.String(TopInformationIcons) | SubString(Skin.String(TopInformationIcons),1)</visible>
 	</control>
 	<control type="image" id="824" description="אין אינטרנט">
 	  <include>Control_Pos7</include>
-	  <texture>badges/specials/internet.png</texture>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">badges/specials/internet.png</texture>
 	  <visible>!Control.IsVisible(825)</visible>
 	  <visible>[!StringCompare(System.InternetState,$LOCALIZE[15207]) + !StringCompare(System.InternetState,$LOCALIZE[503]) + !IsEmpty(System.InternetState)]</visible>
 	  <visible>!Skin.String(TopInformationIcons) | SubString(Skin.String(TopInformationIcons),2)</visible>
@@ -608,18 +610,18 @@
 	<control type="image" id="825" description="אין רשת">
 	  <include>Control_Pos7</include>
 	  <visible>IsEmpty(Network.GatewayAddress) | IsEmpty(Network.IPAddress)</visible>
-	  <texture>badges/specials/lan.png</texture>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">badges/specials/lan.png</texture>
 	  <visible>!Skin.String(TopInformationIcons) | SubString(Skin.String(TopInformationIcons),2)</visible>
 	</control>
 	<control type="image" id="826" description="אינטרנט קווי / was bugged">
 	  <include>Control_Pos7</include>
 	  <visible>!Control.IsVisible(824) + !Control.IsVisible(825)</visible>
-	  <texture>badges/specials/wlan.png</texture>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">badges/specials/wlan.png</texture>
 	  <visible>!Skin.String(TopInformationIcons) | SubString(Skin.String(TopInformationIcons),2)</visible>
 	</control>
 	<control type="image" id="829" description="TotalMouse">
 	  <include>Control_Pos7</include>
-	  <texture>special://home/addons/script.featherence.service/resources/icons/mouse.png</texture>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">special://home/addons/script.featherence.service/resources/icons/mouse.png</texture>
 	  <visible>Skin.HasSetting(TotalMouse)</visible>
 	  <visible>System.Platform.Windows</visible>
 	</control>

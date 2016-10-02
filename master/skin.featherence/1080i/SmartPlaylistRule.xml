@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="129">
   <defaultcontrol always="true">9001</defaultcontrol>
-  <include>Fade6</include>
+  <include>Fade_WindowsOpenClose</include>
   <controls>
     <control type="image">
       <posx>195</posx>

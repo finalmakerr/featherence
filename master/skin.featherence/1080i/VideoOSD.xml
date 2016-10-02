@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window description="כפתורים נגן וידאו+לוגו עצירה+מד ריצה תחתון (12901)">
-	<!--<onload condition="VideoPlayer.Content(livetv)">SetFocus(808)</onload>-->
 	<onload condition="Player.PauseEnabled">SetFocus(602)</onload>
 	<onload condition="!Control.IsVisible(602) + Control.IsVisible(603)">SetFocus(603)</onload>
-	<!--<onback>Notification(1,1,1000)</onback>-->
-	<!--<onback>ActivateWindow(VideoFullScreen.xml)</onback>-->
-    <!--<onunload condition="VideoPlayer.IsFullscreen">ActivateWindow(VideoFullScreen.xml)</onunload>-->
     <controls>
 	  <control type="group">
 	    <visible>!Window.IsVisible(DialogSubtitles.xml)</visible>
@@ -38,7 +34,6 @@
 				<itemgap>0</itemgap>
 				<scrolltime tween="sine">200</scrolltime>
 				<orientation>horizontal</orientation>
-				<onup>noop</onup>
 				<ondown>close</ondown>
 				<ondown condition="Control.IsVisible(7011)">7017</ondown>
 				<onleft>202</onleft>
@@ -62,7 +57,7 @@
 					<usealttexture>Playlist.IsRepeat | Playlist.IsRepeatOne</usealttexture>
 					<onclick>PlayerControl(RepeatAll)</onclick>
 					<altclick>PlayerControl(RepeatOff)</altclick>
-					<visible>Player.HasAudio + !Pvr.IsPlayingRadio | Playlist.IsRepeat | Playlist.IsRepeatOne | !IsEmpty(Window(home).Property(OSDPlus)) + IntegerGreaterThen(Playlist.Length(video),1)</visible>
+					<visible>Player.HasAudio + !Pvr.IsPlayingRadio | Playlist.IsRepeat | Playlist.IsRepeatOne | !IsEmpty(Window(home).Property(OSDPlus)) + IntegerGreaterThan(Playlist.Length(video),1)</visible>
 					<visible>!SubString(Player.FolderPath,rtmp://) + !SubString(Player.FolderPath,mms://)</visible>
 				</control>	
 				<control type="togglebutton" id="612" description="Audio">

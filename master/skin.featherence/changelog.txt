@@ -6,19 +6,23 @@ WIP - WORK IN PROGRESS
 - Added option to change the font size.
 
 ------------------------
-Featherence v0.6.1 (xx-Sep-16)
+Featherence v0.6.1 (02-Sep-16)
 ------------------------
+- Added noification for unlocking a button with a password.
 - Added option to always hide library updating progress dialog when watching a video.
 - Added option to change button's colors overlay.
 - Added option to color font of Focus and Unfocus widget labels.
 - Added option to color font of Dialogs window title and content.
 - Added option to color font of Virtual Keyboard title and text.
 - Added option to color font of Top Information bar and Top Video Information bar.
+- Added option to enlarge icon in Side List view.
+- Added option to reset any single button to default state.
 - Added option to toggle show widget label's background on/off.
 - Added option to tweak maximum movies/tvshows widget items.
 - Added option to tweak the fade time between different skin windows (useful for low-end hardware).
-- Added two news mouse icons.
 - Added option to change the transperancy level of the locking mark/icons.
+- Added submenu and widget support for Favourite, Settings and power buttons.
+- Added two news mouse icons.
 - Major bug fix with addons who use TrakTV when it's show only "Episode No.".
 - Major bug fix with locking a button and using Sub Menu action.
 - Major bug fix with new favourite button doesn't hide when set to and doesn't take an action.
@@ -37,6 +41,7 @@ Also added a sync for big icons feature between the standards and those small ic
 - Minor update of Featherence Classico Plus.
 - Minor update of Horizontal 2 layout.
 - Minor update of save/load feature.
+- Minor update of widget labels and frame size.
 - RSS category has been merged with Upper Design category.
 
 ------------------------

@@ -5,7 +5,7 @@
     <control type="group" description="">
 		<visible>Container(9000).Row(0) + !Container(9000).Row(1) + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]</visible>
 		<visible>Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | IsEmpty(Container(9000).ListItem(0).Property(pwd)) | [!IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))]</visible>
-		<visible>!Window.IsVisible(Custom1173.xml)</visible>
+		<visible>!Window.IsVisible(Custom1173.xml) | Window.IsVisible(Custom1170.xml) + [StringCompare(Window(home).Property(TEMP),WidgetUnFocusFontColor) | StringCompare(Window(home).Property(TEMP),WidgetFocusFontColor)]</visible>
 		<!--<visible>!Skin.HasSetting(widget) | ![StringCompare(Window(home).Property(Button.ID),90) | StringCompare(Window(home).Property(Button.ID),91)]</visible>-->
 		<control type="group" description="סמן חץ ימינה">
 			<visible>[Control.HasFocus(311) + Container(311).HasNext] | [Control.HasFocus(312) + Container(312).HasNext] | [Control.HasFocus(315) + Container(315).HasNext]</visible>
@@ -104,6 +104,9 @@
 		<include condition="Skin.String(WidgetDesign,0)">MoviesShortcutsCommons0</include>
 		<include condition="Skin.String(WidgetDesign,1)">MoviesShortcutsCommons1</include>
 		<content>
+		  <include condition="true">WidgetContent_17</include>
+		  <include condition="true">WidgetContent_18</include>
+		  <include condition="true">WidgetContent_19</include>
 		  <include condition="true">WidgetContent_90</include>
 		  <include condition="true">WidgetContent_91</include>
 		  <include condition="true">WidgetContent_92</include>
@@ -245,7 +248,7 @@
 		    <height>30</height>
 		    <posx>57</posx>
 		    <posy>-2</posy>
-		    <textcolor>white2</textcolor>
+		    <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 		    <visible>!IsEmpty(ListItem.Property(year))</visible>
 		    <visible>false</visible>
 		    <width>265</width>
@@ -257,7 +260,8 @@
 			<posy>360</posy>
 			<control type="image" description="שחור">
 			  <height>30</height>
-			  <width>270</width>
+			  <posx>8</posx>
+			  <width>254</width>
 			  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
 		      <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
 		      <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
@@ -265,15 +269,16 @@
 		      <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
 		      <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-			  <!--<visible>!Skin.HasSetting(ButtonsDesignWidget)</visible>-->
+			  <visible>!Skin.HasSetting(WidgetLabelBackground) + !IsEmpty(ListItem.Label)</visible>
 			</control>
 			<control type="label" description="עונה ופרק">
 			  <align>center</align>
 			  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 			  <font>size28</font>
+			  <posx>8</posx>
 			  <height>30</height>
-			  <width>270</width>
-			  <textcolor>white2</textcolor>
+			  <width>254</width>
+			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
 			<control type="label" description="שם הסרט">
@@ -281,10 +286,11 @@
 			  <label>$VAR[WidgetLabel]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 			  <font>size18</font>
 			  <height>30</height>
-			  <textcolor>white2</textcolor>
+			  <posx>8</posx>
+			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
-			  <width>270</width>
+			  <width>254</width>
 			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			</control>
 		</control>
@@ -404,55 +410,6 @@
 			  <visible>!IsEmpty(ListItem.Property(trailer)) + Skin.HasSetting(trailers)</visible>
 			  <width>70</width>
 			</control>
-			<control type="group" description="אורך בשעות/דקות">
-				<visible>false</visible>
-				<control type="image" description="תמונה שעות/דקות">
-				  <height>90</height>		
-				  <posx>273</posx>
-				  <posy>43</posy>
-				  <texture>images/movieclock.png</texture>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),4.5)</visible>
-				  <width>90</width>
-				</control>
-				<control type="label" id="1109" description="אורך-בשעות">
-				  <include>LabelC5</include>
-				  <label>$VAR[VideoInHours]</label>
-				  <posx>285</posx>
-				  <posy>45</posy>
-				  <textcolor>black</textcolor>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
-				  <width>70</width>
-				</control>
-				<control type="label" id="1110" description="אורך-בדקות">
-				  <include>LabelC5</include> 
-				  <posx>285</posx>
-				  <posy>45</posy>
-				  <label>$VAR[VideoInMins]</label>
-				  <textcolor>black</textcolor>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),4.5) + !IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
-				  <width>70</width>
-				</control>			
-				<control type="label" description="שעות">
-				  <align>center</align>
-				  <label>$LOCALIZE[12392]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-				  <font>size18</font>
-				  <posx>285</posx>
-				  <posy>70</posy>
-				  <textcolor>black</textcolor>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
-				  <width>70</width>
-				</control>
-				<control type="label" description="דקות">
-				  <align>center</align>
-				  <label>$LOCALIZE[12391]</label>
-				  <font>size18</font>
-				  <posx>510</posx>
-				  <posy>-239</posy>
-				  <textcolor>white2</textcolor>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),4.5) + !IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
-				  <width>70</width>
-				</control>
-			</control>
 			<control type="image" description="דירוג">
 			  <animation condition="true" effect="rotate" end="-90" center="350,140" time="0">Conditional</animation>
 			  <aspectratio align="center">keep</aspectratio>
@@ -471,7 +428,8 @@
 				<posy>360</posy>
 				<control type="image" description="שחור">
 				  <height>30</height>
-				  <width>270</width>
+				  <posx>8</posx>
+				  <width>254</width>
 				  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
 				  <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
 				  <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
@@ -479,14 +437,16 @@
 				  <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
 				  <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 				  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
+				  <visible>!Skin.HasSetting(WidgetLabelBackground) + !IsEmpty(ListItem.Label)</visible>
 				</control>
 				<control type="label" description="עונה ופרק">
 				  <align>center</align>
 				  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 				  <font>size28</font>
 				  <height>30</height>
-				  <width>270</width>
-				  <textcolor>white2</textcolor>
+				  <posx>8</posx>
+				  <width>254</width>
+				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
 				<control type="label" description="שם הסרט">
@@ -494,10 +454,11 @@
 				  <label>$VAR[WidgetLabel]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 				  <font>size18</font>
 				  <height>30</height>
-				  <textcolor>yellow</textcolor>
+				  <posx>8</posx>
+				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
-				  <width>270</width>
+				  <width>254</width>
 				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				</control>
 			</control>
@@ -634,7 +595,8 @@
 			<posy>360</posy>
 			<control type="image" description="שחור">
 			  <height>30</height>
-			  <width>250</width>
+			  <posx>8</posx>
+			  <width>234</width>
 			  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
 		      <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
 		      <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
@@ -642,15 +604,16 @@
 		      <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
 		      <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-			  <!--<visible>!Skin.HasSetting(ButtonsDesignWidget)</visible>-->
+			  <visible>!Skin.HasSetting(WidgetLabelBackground) + !IsEmpty(ListItem.Label)</visible>
 			</control>
 			<control type="label" description="עונה ופרק">
 			  <align>center</align>
 			  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 			  <font>size28</font>
 			  <height>30</height>
-			  <width>250</width>
-			  <textcolor>white2</textcolor>
+			  <posx>8</posx>
+			  <width>234</width>
+			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
 			<control type="label" description="שם הסרט">
@@ -658,10 +621,11 @@
 			  <label>$VAR[WidgetLabel]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 			  <font>size18</font>
 			  <height>30</height>
-			  <textcolor>white2</textcolor>
+			  <posx>8</posx>
+			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
-			  <width>250</width>
+			  <width>234</width>
 			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			</control>
 		</control>
@@ -781,55 +745,6 @@
 			  <visible>!IsEmpty(ListItem.Property(trailer)) + Skin.HasSetting(trailers)</visible>
 			  <width>70</width>
 			</control>
-			<control type="group" description="אורך בשעות/דקות">
-				<visible>false</visible>
-				<control type="image" description="תמונה שעות/דקות">
-				  <height>90</height>		
-				  <posx>273</posx>
-				  <posy>43</posy>
-				  <texture>images/movieclock.png</texture>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),4.5)</visible>
-				  <width>90</width>
-				</control>
-				<control type="label" id="1109" description="אורך-בשעות">
-				  <include>LabelC5</include>
-				  <label>$VAR[VideoInHours]</label>
-				  <posx>285</posx>
-				  <posy>45</posy>
-				  <textcolor>black</textcolor>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
-				  <width>70</width>
-				</control>
-				<control type="label" id="1110" description="אורך-בדקות">
-				  <include>LabelC5</include> 
-				  <posx>285</posx>
-				  <posy>45</posy>
-				  <label>$VAR[VideoInMins]</label>
-				  <textcolor>black</textcolor>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),4.5) + !IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
-				  <width>70</width>
-				</control>			
-				<control type="label" description="שעות">
-				  <align>center</align>
-				  <label>$LOCALIZE[12392]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-				  <font>size18</font>
-				  <posx>285</posx>
-				  <posy>70</posy>
-				  <textcolor>black</textcolor>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
-				  <width>70</width>
-				</control>
-				<control type="label" description="דקות">
-				  <align>center</align>
-				  <label>$LOCALIZE[12391]</label>
-				  <font>size18</font>
-				  <posx>510</posx>
-				  <posy>-239</posy>
-				  <textcolor>white2</textcolor>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),4.5) + !IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
-				  <width>70</width>
-				</control>
-			</control>
 			<control type="image" description="דירוג">
 			  <animation condition="true" effect="rotate" end="-90" center="350,140" time="0">Conditional</animation>
 			  <aspectratio align="center">keep</aspectratio>
@@ -848,7 +763,8 @@
 				<posy>360</posy>
 				<control type="image" description="שחור">
 				  <height>30</height>
-				  <width>250</width>
+				  <posx>8</posx>
+				  <width>234</width>
 				  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
 				  <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
 				  <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
@@ -856,13 +772,16 @@
 				  <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
 				  <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 				  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
+				  <visible>!Skin.HasSetting(WidgetLabelBackground) + !IsEmpty(ListItem.Label)</visible>
 				</control>
 				<control type="label" description="עונה ופרק">
 				  <align>center</align>
 				  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 				  <font>size28</font>
+				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <height>30</height>
-				  <width>250</width>
+				  <posx>8</posx>
+				  <width>234</width>
 				  <textcolor>white2</textcolor>
 				  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
@@ -871,10 +790,11 @@
 				  <label>$VAR[WidgetLabel]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 				  <font>size18</font>
 				  <height>30</height>
-				  <textcolor>yellow</textcolor>
+				  <posx>8</posx>
+				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
-				  <width>250</width>
+				  <width>234</width>
 				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				</control>
 			</control>
@@ -999,7 +919,7 @@
 		    <height>30</height>
 		    <posx>57</posx>
 		    <posy>-2</posy>
-		    <textcolor>white2</textcolor>
+		    <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 		    <visible>!IsEmpty(ListItem.Property(year))</visible>
 		    <visible>false</visible>
 		    <width>265</width>
@@ -1011,7 +931,8 @@
 			<posy>360</posy>
 			<control type="image" description="שחור">
 			  <height>30</height>
-			  <width>220</width>
+			  <posx>8</posx>
+			  <width>204</width>
 			  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
 		      <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
 		      <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
@@ -1019,26 +940,28 @@
 		      <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
 		      <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-			  <!--<visible>!Skin.HasSetting(ButtonsDesignWidget)</visible>-->
+			  <visible>!Skin.HasSetting(WidgetLabelBackground) + !IsEmpty(ListItem.Label)</visible>
 			</control>
 			<control type="label" description="עונה ופרק">
 			  <align>center</align>
-			  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+			  <label>$INFO[ListItem.Property(se)]</label>
 			  <font>size28</font>
 			  <height>30</height>
-			  <width>220</width>
-			  <textcolor>white2</textcolor>
+			  <posx>8</posx>
+			  <width>204</width>
+			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
 			<control type="label" description="שם הסרט">
 			  <align>center</align>
-			  <label>$VAR[WidgetLabel]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+			  <label>$VAR[WidgetLabel]</label>
 			  <font>size18</font>
+			  <posx>8</posx>
 			  <height>30</height>
-			  <textcolor>white2</textcolor>
+			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
-			  <width>220</width>
+			  <width>204</width>
 			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			</control>
 		</control>
@@ -1158,55 +1081,6 @@
 			  <visible>!IsEmpty(ListItem.Property(trailer)) + Skin.HasSetting(trailers)</visible>
 			  <width>70</width>
 			</control>
-			<control type="group" description="אורך בשעות/דקות">
-				<visible>false</visible>
-				<control type="image" description="תמונה שעות/דקות">
-				  <height>90</height>		
-				  <posx>273</posx>
-				  <posy>43</posy>
-				  <texture>images/movieclock.png</texture>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),4.5)</visible>
-				  <width>90</width>
-				</control>
-				<control type="label" id="1109" description="אורך-בשעות">
-				  <include>LabelC5</include>
-				  <label>$VAR[VideoInHours]</label>
-				  <posx>285</posx>
-				  <posy>45</posy>
-				  <textcolor>black</textcolor>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
-				  <width>70</width>
-				</control>
-				<control type="label" id="1110" description="אורך-בדקות">
-				  <include>LabelC5</include> 
-				  <posx>285</posx>
-				  <posy>45</posy>
-				  <label>$VAR[VideoInMins]</label>
-				  <textcolor>black</textcolor>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),4.5) + !IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
-				  <width>70</width>
-				</control>			
-				<control type="label" description="שעות">
-				  <align>center</align>
-				  <label>$LOCALIZE[12392]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-				  <font>size18</font>
-				  <posx>285</posx>
-				  <posy>70</posy>
-				  <textcolor>black</textcolor>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
-				  <width>70</width>
-				</control>
-				<control type="label" description="דקות">
-				  <align>center</align>
-				  <label>$LOCALIZE[12391]</label>
-				  <font>size18</font>
-				  <posx>510</posx>
-				  <posy>-239</posy>
-				  <textcolor>white2</textcolor>
-				  <visible>IntegerGreaterThan(ListItem.Property(runtime),4.5) + !IntegerGreaterThan(ListItem.Property(runtime),55)</visible>
-				  <width>70</width>
-				</control>
-			</control>
 			<control type="image" description="דירוג">
 			  <animation condition="true" effect="rotate" end="-90" center="350,140" time="0">Conditional</animation>
 			  <aspectratio align="center">keep</aspectratio>
@@ -1225,7 +1099,8 @@
 				<posy>360</posy>
 				<control type="image" description="שחור">
 				  <height>30</height>
-				  <width>220</width>
+				  <posx>8</posx>
+				  <width>204</width>
 				  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
 				  <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
 				  <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
@@ -1233,14 +1108,16 @@
 				  <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
 				  <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 				  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
+				  <visible>!Skin.HasSetting(WidgetLabelBackground) + !IsEmpty(ListItem.Label)</visible>
 				</control>
 				<control type="label" description="עונה ופרק">
 				  <align>center</align>
 				  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 				  <font>size28</font>
 				  <height>30</height>
-				  <width>220</width>
-				  <textcolor>white2</textcolor>
+				  <posx>8</posx>
+				  <width>204</width>
+				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
 				<control type="label" description="שם הסרט">
@@ -1248,10 +1125,11 @@
 				  <label>$VAR[WidgetLabel]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 				  <font>size18</font>
 				  <height>30</height>
-				  <textcolor>yellow</textcolor>
+				  <posx>8</posx>
+				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
-				  <width>220</width>
+				  <width>204</width>
 				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				</control>
 			</control>

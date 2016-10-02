@@ -145,8 +145,13 @@
   </variable>
   
   <variable name="6label2">
-	<value condition="!Skin.HasSetting(VideoAudioOSDAlwaysOn)">$LOCALIZE[106]</value>
-	<value condition="Skin.HasSetting(VideoAudioOSDAlwaysOn)">$LOCALIZE[107]</value>
+	<value condition="!Skin.HasSetting(VideoAudioOSDAlwaysOn)">$LOCALIZE[107]</value>
+	<value condition="Skin.HasSetting(VideoAudioOSDAlwaysOn)">$LOCALIZE[106]</value>
+  </variable>
+  
+  <variable name="7label2">
+	<value condition="!Skin.HasSetting(HideLibraryUpdates)">$LOCALIZE[107]</value>
+	<value condition="Skin.HasSetting(HideLibraryUpdates)">$LOCALIZE[106]</value>
   </variable>
   
   <variable name="8label2">
@@ -224,7 +229,7 @@
 	<value condition="Skin.HasSetting(AutoView)">$LOCALIZE[107]</value>
   </variable>
   <variable name="28label2">
-    <value condition="!Skin.String(IntroDelay)" description="ברירת מחדל">DEFAULT</value>
+    <value condition="!Skin.String(IntroDelay)" description="ברירת מחדל">$LOCALIZE[13278]</value>
     <value condition="Skin.String(IntroDelay,0)" description="0">0</value>
 	<value condition="Skin.String(IntroDelay,1)" description="1">1</value>
 	<value condition="Skin.String(IntroDelay,2)" description="2">2</value>
@@ -267,7 +272,7 @@
   </variable>
 
   <variable name="198label2">
-    <value condition="!Skin.String(MenuDesign)" description="ברירת מחדל">DEFAULT</value>
+    <value condition="!Skin.String(MenuDesign)" description="ברירת מחדל">$LOCALIZE[13278]</value>
     <value condition="Skin.String(MenuDesign,0)" description="פנל">$LOCALIZE[31031]</value>
 	<value condition="Skin.String(MenuDesign,1)" description="פנל 2">$LOCALIZE[31031] 2</value>
 	<value condition="Skin.String(MenuDesign,2)" description="מאוזן">$LOCALIZE[31032]</value>
@@ -278,7 +283,7 @@
   </variable>
   
   <variable name="199label2">
-    <value condition="!Skin.String(ButtonsDesign)" description="ברירת מחדל">DEFAULT</value>
+    <value condition="!Skin.String(ButtonsDesign)" description="ברירת מחדל">$LOCALIZE[13278]</value>
     <value condition="Skin.String(ButtonsDesign,0)" description="מלבנים">$LOCALIZE[31051]</value>
 	<value condition="Skin.String(ButtonsDesign,1)" description="עיגולים">$LOCALIZE[31052]</value>
 	<value condition="Skin.String(ButtonsDesign,2)" description="משולשים">$LOCALIZE[31053]</value>
@@ -350,7 +355,7 @@
   </variable>
   
   <variable name="227label2">
-    <value condition="!Skin.String(TopBackgroundTexture)">DEFAULT</value>
+    <value condition="!Skin.String(TopBackgroundTexture)">$LOCALIZE[13278]</value>
     <value condition="Skin.String(TopBackgroundTexture,NONE)">$LOCALIZE[106]</value>
 	<value condition="Skin.String(TopBackgroundTexture)">$LOCALIZE[107] $INFO[Skin.String(TopBackgroundTexture)]</value>
   </variable>
@@ -421,13 +426,23 @@
   </variable>
   
   <variable name="324label2">
-    <value condition="!Skin.HasSetting(TopInformationSize)">DEFAULT</value>
+    <value condition="!Skin.HasSetting(TopInformationSize)">$LOCALIZE[13278]</value>
 	<value condition="Skin.HasSetting(TopInformationSize)">BIGGER</value>
   </variable>
   
   <variable name="325label2">
 	<value condition="!Skin.String(TopInformationIcons)">$LOCALIZE[107]</value>
 	<value condition="Skin.String(TopInformationIcons_name)">$INFO[Skin.String(TopInformationIcons_name)]</value>
+  </variable>
+    
+  <variable name="338label2">
+    <value condition="!Skin.HasSetting(RSSVisibility)">Home</value>
+	<value condition="Skin.HasSetting(RSSVisibility)">All</value>
+  </variable>
+  
+  <variable name="339label2">
+    <value condition="!Skin.HasSetting(RSSOnMedia)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(RSSOnMedia)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="395label">
@@ -443,12 +458,26 @@
   </variable>
   
   <variable name="297label2" description="">
-    <value condition="!Skin.String(DialogPosition)">DEFAULT</value>
+    <value condition="!Skin.String(DialogPosition)">$LOCALIZE[13278]</value>
 	<value condition="Skin.String(DialogPosition,1)">CENTER</value>
 	<!--<value condition="Skin.String(DialogKaiToastPos,2)">SE</value>
 	<value condition="Skin.String(DialogKaiToastPos,3)">N</value>
 	<value condition="Skin.String(DialogKaiToastPos,4)">NW</value>
 	<value condition="Skin.String(DialogKaiToastPos,5)">NE</value>-->
+  </variable>
+  
+  <variable name="393label2" description="">
+    <value condition="!Skin.String(WindowsOpenClose)">$LOCALIZE[13278]</value>
+	<value condition="Skin.String(WindowsOpenClose,0)">0</value>
+	<value condition="Skin.String(WindowsOpenClose,1)">300</value>
+	<value condition="Skin.String(WindowsOpenClose,2)">400</value>
+	<value condition="Skin.String(WindowsOpenClose,3)">500</value>
+	<value condition="Skin.String(WindowsOpenClose,4)">600</value>
+	<value condition="Skin.String(WindowsOpenClose,5)">700</value>
+	<value condition="Skin.String(WindowsOpenClose,6)">800</value>
+	<value condition="Skin.String(WindowsOpenClose,7)">900</value>
+	<value condition="Skin.String(WindowsOpenClose,8)">1000</value>
+	<value condition="Skin.String(WindowsOpenClose,9)">1100</value>
   </variable>
   
   <variable name="398label2">
@@ -465,6 +494,30 @@
     <value condition="Skin.HasSetting(Touch_Support)">$LOCALIZE[107]</value>
 	<value condition="!Skin.HasSetting(Touch_Support)">$LOCALIZE[106]</value>
   </variable>
+  <variable name="411label2">
+    <value condition="!Skin.HasSetting(ButtonsDesignTouch)">$LOCALIZE[107]</value>
+	<value condition="Skin.HasSetting(ButtonsDesignTouch)">$LOCALIZE[106]</value>
+  </variable>
+  <variable name="412label2" description="גודל כפתורי מגע">
+    <value condition="!Skin.String(ButtonsSizeTouch)">$LOCALIZE[13278]</value>
+	<value condition="Skin.String(ButtonsSizeTouch,0)">Small</value>
+	<value condition="Skin.String(ButtonsSizeTouch,1)">Medium</value>
+	<value condition="Skin.String(ButtonsSizeTouch,2)">Large</value>
+  </variable>
+  
+  <variable name="417label2" description="מיקום כפתורי מסך מגע">
+    <value condition="!Skin.String(TouchButtonsPosition)">$LOCALIZE[13278]</value>
+	<value condition="Skin.String(TouchButtonsPosition,1)">SE</value>
+	<value condition="Skin.String(TouchButtonsPosition,2)">SW</value>
+	<value condition="Skin.String(TouchButtonsPosition,3)">S</value>
+	<value condition="Skin.String(TouchButtonsPosition,4)">E</value>
+	<value condition="Skin.String(TouchButtonsPosition,5)">W</value>
+  </variable>
+  
+  <variable name="418label2">
+    <value condition="!Skin.HasSetting(Touch_Orientation)">$LOCALIZE[31033]</value>
+	<value condition="Skin.HasSetting(Touch_Orientation)">$LOCALIZE[31032]</value>
+  </variable>
   
   <variable name="451label2">
     <value condition="!Skin.String(WidgetDesign)">5</value>
@@ -480,6 +533,11 @@
   <variable name="459label2">
     <value condition="!Skin.HasSetting(WidgetBackground)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(WidgetBackground)">$LOCALIZE[107]</value>
+  </variable>
+  
+  <variable name="468label2">
+    <value condition="!Skin.HasSetting(WidgetLabelBackground)">$LOCALIZE[107]</value>
+	<value condition="Skin.HasSetting(WidgetLabelBackground)">$LOCALIZE[106]</value>
   </variable>
   
   <variable name="441label2">
@@ -503,16 +561,6 @@
     <value condition="Skin.String(widget317) + !IsEmpty(Skin.String(widget317_name))">$INFO[Skin.String(widget317_name)]</value>
     <value condition="Skin.String(widget317) + IsEmpty(Skin.String(widget317_name))">$INFO[Skin.String(widget317)]</value>
 	<value condition="!Skin.String(widget317)">$INFO[Skin.String(label97)]</value>
-  </variable>
-  
-  <variable name="501label2">
-    <value condition="!Skin.HasSetting(RSSVisibility)">Home</value>
-	<value condition="Skin.HasSetting(RSSVisibility)">All</value>
-  </variable>
-  
-  <variable name="502label2">
-    <value condition="!Skin.HasSetting(RSSOnMedia)">$LOCALIZE[106]</value>
-	<value condition="Skin.HasSetting(RSSOnMedia)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="ReloadSkin_check">

@@ -138,7 +138,7 @@
 		<textoffsety>5</textoffsety>
 		<scroll>false</scroll>
 		<shadowcolor>black</shadowcolor>
-		<textcolor>grey2</textcolor>
+		<textcolor>grey</textcolor>
 		<width>800</width>
 		<include>LabelL2</include>
 		<wrapmultiline>true</wrapmultiline>

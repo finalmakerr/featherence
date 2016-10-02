@@ -338,7 +338,7 @@
 		<control type="label" description="נתון">
 		  <align>center</align>
 		  <aligny>center</aligny>
-		  <textcolor>grey2</textcolor>
+		  <textcolor>grey</textcolor>
 		  <shadowcolor>black</shadowcolor>
 		  <include>LabelC2</include>
 		  <posx>525</posx>

@@ -226,7 +226,7 @@
                 <font>size26</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>grey2</textcolor>
+                <textcolor>grey</textcolor>
                 <selectedcolor>selected</selectedcolor>
                 <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
               </control>

@@ -84,6 +84,10 @@
 		<include condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)">CenterMenuContent_DialogKeyboard</include>
 		<content>
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(Button.ID_)) + !StringCompare(Window(home).Property(Button.ID),N/A)">SubContent_X90</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),17)">SubContent_17</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),18)">SubContent_18</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),19)">SubContent_19</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),19) + [!Skin.HasSetting(sub19) | StringCompare(Window(home).Property(TEMP),1191)]">CenterMenuContent_1191</include>
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),90)">SubContent_90</include>
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),91)">SubContent_91</include>
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),92)">SubContent_92</include>
@@ -114,7 +118,6 @@
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),117)">SubContent_117</include>
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),118)">SubContent_118</include>
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),119)">SubContent_119</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),19)">CenterMenuContent_1191</include>
 		  <include condition="Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(Custom1138.xml)]">CenterMenuContent_1175</include>
 		</content>
 		
@@ -240,7 +243,7 @@
   <include name="onload_CheckProperty_SubMenu">
 	 <onload condition="IsEmpty(Window(home).Property(SubButton.ID_)) | SubString(Window(home).Property(SubButton.ID_),_90)">Action(Close)</onload>
 	 <onload condition="IsEmpty(Window(home).Property(SubButton.ID_))">Notification(Error,,1000)</onload>
-	 <onload condition="SubString(Window(home).Property(SubButton.ID_),_90)">Notification($INFO[Window(home).Property(SubButton.Name)] $LOCALIZE[74996],$LOCALIZE[74997],1000)</onload>
+	 <onload condition="SubString(Window(home).Property(SubButton.ID_),_90)">Notification($INFO[Window(home).Property(SubButton.Name)] $LOCALIZE[31470],$LOCALIZE[31471],2000)</onload>
   </include>
   
   <include name="onunload_ClearProperty_SubMenu">

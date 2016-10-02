@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window description="(129)">
   <defaultcontrol always="true">22</defaultcontrol>
-  <include>Fade6</include>
+  <include>Fade_WindowsOpenClose</include>
   <controls>
     <include>BlackBackground</include>
 	<include>TopInformation</include>

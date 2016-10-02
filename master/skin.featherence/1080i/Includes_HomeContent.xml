@@ -558,11 +558,12 @@
   
   <include name="Content_Home2">
     <item id="17" description="מעודפים">
+	  <visible>!Skin.HasSetting(off17) | [Window.IsVisible(CustomHomeCustomizer.xml) + IsEmpty(Window(1117).Property(HideInactiveButtons))]</visible>
 	  <property name="id">&quot;17&quot;</property>
 	  <property name="pwd">$INFO[Skin.HasSetting(pwd17)]</property>
 	  <property name="temp2">temp2_17]</property>
 	  <property name="off">$INFO[Skin.HasSetting(off17)]</property>
-	  <property name="sub"></property>
+	  <property name="sub">$INFO[Skin.HasSetting(sub17)]</property>
 	  <property name="color">$INFO[Skin.String(color17)]</property>
 	  <thumb fallback="special://home/addons/script.featherence.service/resources/icons/star.png">$INFO[Skin.String(icon17)]</thumb>
 	  <icon fallback=""></icon>
@@ -578,7 +579,7 @@
 	  <property name="pwd">$INFO[Skin.HasSetting(pwd18)]</property>
 	  <property name="temp2">temp2_18]</property>
 	  <property name="off"></property>
-	  <property name="sub"></property>
+	  <property name="sub">$INFO[Skin.HasSetting(sub18)]</property>
 	  <property name="color">$INFO[Skin.String(color18)]</property>
 	  <thumb fallback="special://home/addons/script.featherence.service/resources/icons/settings.png">$INFO[Skin.String(icon18)]</thumb>
 	  <icon fallback=""></icon>
@@ -594,7 +595,7 @@
 	  <property name="pwd">$INFO[Skin.HasSetting(pwd19)]</property>
 	  <property name="temp2">temp2_19]</property>
 	  <property name="off"></property>
-	  <property name="sub"></property>
+	  <property name="sub">$INFO[Skin.HasSetting(sub19)]</property>
 	  <property name="color">$INFO[Skin.String(color19)]</property>
 	  <thumb fallback="special://home/addons/script.featherence.service/resources/icons/power.png">$INFO[Skin.String(icon19)]</thumb>
 	  <icon fallback=""></icon>
@@ -616,7 +617,7 @@
 	  <property name="sub"></property>
 	  <property name="color">$INFO[Skin.String(color20)]</property>
 	  <thumb fallback="special://home/addons/script.featherence.service/resources/icons/back2.png">$INFO[Skin.String(icon20)]</thumb>
-	  <label></label>
+	  <label>Back</label>
 	  <label2>&quot;20&quot;</label2>
 	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml)">Action(Back)</onclick>
 	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
@@ -632,9 +633,9 @@
 	  <property name="sub"></property>
 	  <property name="color">$INFO[Skin.String(color21)]</property>
 	  <thumb fallback="special://home/addons/script.featherence.service/resources/icons/home.png">$INFO[Skin.String(icon21)]</thumb>
-	  <label></label>
+	  <label>Home</label>
 	  <label2>&quot;21&quot;</label2>
-	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml)">Action(Back)</onclick>
+	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml)">ReplaceWindow(Home)</onclick>
 	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
 	  <visible>!Window.IsVisible(CustomHomeCustomizer2.xml)</visible>
 	  <visible>!Window.IsVisible(FileBrowser.xml)</visible>
@@ -713,7 +714,7 @@
 		<label>$LOCALIZE[31830]</label>
 		<onclick>Action(Down)</onclick>
 		<onclick>Action(Down)</onclick>
-		<onclick>AlarmClock(1173,ActivateWindow(1173),0,silent)</onclick>
+		<onclick>ActivateWindow(1173)</onclick>
 		<selected>Window.IsVisible(1173)</selected>
 		<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 	  </control>

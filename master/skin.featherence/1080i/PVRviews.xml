@@ -55,7 +55,7 @@
 			  <visible>!IsEmpty(ListItem.Label)</visible>
             </control>
 			<control type="label" description="משודר עכשיו">
-			  <textcolor>grey2</textcolor>
+			  <textcolor>grey</textcolor>
 			  <include>LabelL4</include>
 			  <posx>590</posx>
 			  <posy>30</posy>
@@ -388,7 +388,7 @@
 			  <font>size18</font>
 			  <align>left</align>
 			  <aligny>center</aligny>
-			  <textcolor>grey2</textcolor>
+			  <textcolor>grey</textcolor>
 			  <selectedcolor>yellow</selectedcolor>
 			  <info>ListItem.ChannelNumber</info>
 			</control>

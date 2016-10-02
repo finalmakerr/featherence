@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window description="חלון מידע כותרת עליונה (10142)">
   <defaultcontrol always="false">13</defaultcontrol>
-  <include>Fade6</include>
+  <include>Fade_WindowsOpenClose</include>
   <visible>[Player.Paused + VideoPlayer.IsFullscreen] | Window.IsVisible(DialogPVRChannelsOSD.xml) | [Player.IsInternetStream] + [!StringCompare(System.InternetState,$LOCALIZE[15207]) + !IsEmpty(System.InternetState)]</visible>
   <visible>!Window.IsVisible(VideoOSD.xml) + !Window.IsVisible(DialogSubtitles.xml)</visible>
   <visible>System.IdleTime(1)</visible>
