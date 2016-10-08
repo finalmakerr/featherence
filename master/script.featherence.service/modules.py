@@ -7,7 +7,7 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
-	xbmc.executebuiltin('ActivateWindow(Startup.xml)')
+	#xbmc.executebuiltin('ActivateWindow(10157)')
 	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=4)')
 	#xbmc.executebuiltin('ActivateWindow(MusicFiles,root)')
 	#xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
@@ -1530,7 +1530,6 @@ def mode210(value, admin, name, printpoint):
 	
 	xbmc.executebuiltin('Action(Close)')
 	'''---------------------------'''
-
 	if not int(property_buttonid) > 0 or not int(property_buttonid_) > 0: printpoint = printpoint + "9A"
 	if '0' in value:
 		printpoint = printpoint + "0"
@@ -1948,7 +1947,9 @@ def mode215(value, value2, name, printpoint):
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id)) ; action = actionT.get('action'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(20343))
 			
-			if not defaultactionbuttons or value2 == 'RESET' or action == "": setSkinSetting('0','action'+id,'ActivateWindow(VideoLibrary,TVShowTitles,return)')
+			if not defaultactionbuttons or value2 == 'RESET' or action == "":
+				if systembuildversion < 17: setSkinSetting('0','action'+id,'ActivateWindow(VideoLibrary,TVShowTitles,return)')
+				else: setSkinSetting('0','action'+id,'ActivateWindow(Videos,TVShowTitles,return)')
 			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/tvshows.png')
 			'''---------------------------'''
 
@@ -2222,7 +2223,7 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + '---------------------------'
 			message = message + newline + "custom" + space2 + str(xbmc.getInfoLabel('ListItem.Genre')) #CUSTOM TEST
 			message = message + newline + "custom2" + space2 + str(xbmc.getInfoLabel('ListItem.Rating')) #CUSTOM TEST
-			message = message + newline + "custom3" + space2 + str(xbmc.getInfoLabel('ListItem.RatingAndVotes')) #CUSTOM TEST
+			message = message + newline + "custom3" + space2 + str(xbmc.getInfoLabel('System.BuildVersion')) #CUSTOM TEST
 			message = message + newline + "ListItem.Property(TotalEpisodes)" + space2 + str(xbmc.getInfoLabel('ListItem.Property(TotalEpisodes)')) #CUSTOM TEST
 			
 			

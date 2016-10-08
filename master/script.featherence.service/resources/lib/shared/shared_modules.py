@@ -1358,6 +1358,7 @@ def setSkinSetting(custom,set1,set1v, force=False):
 			setting1 = xbmc.getInfoLabel('Skin.String('+ set1 +')')
 			setting1 = to_utf8(setting1)
 			if setting1 != set1v or force == True: xbmc.executebuiltin('Skin.SetString('+ set1 +','+ set1v +')')
+			else: printpoint = printpoint + '9'
 			'''---------------------------'''
 			
 		elif custom == "1":
@@ -1372,6 +1373,7 @@ def setSkinSetting(custom,set1,set1v, force=False):
 			else: set1v = "false"
 			'''---------------------------'''
 			if setting1 != set1v: xbmc.executebuiltin('Skin.ToggleSetting('+ set1 +')')
+			else: printpoint = printpoint + '9'
 			
 		'''------------------------------
 		---PRINT-END---------------------

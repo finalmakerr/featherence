@@ -90,6 +90,11 @@ except: pass
 try: property_temp2 = property_temp2.replace('"',"")
 except: pass
 
+systembuildversion = str(xbmc.getInfoLabel('System.BuildVersion'))
+systembuildversion = systembuildversion[:2]
+try: systembuildversion = int(systembuildversion)
+except: systembuildversion = 0
+
 if not os.path.exists(featherenceserviceaddondata_media_path):
 	try: os.mkdir(featherenceserviceaddondata_media_path)
 	except: pass

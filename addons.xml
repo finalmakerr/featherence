@@ -334,7 +334,7 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.3.30" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.3.33" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -355,7 +355,7 @@
 
 <addon id="skin.featherence" version="0.6.1" name="Featherence" provider-name="finalmakerr">
   <requires>
-    <import addon="xbmc.gui" version="5.10.0"/>
+    <import addon="xbmc.gui" version="5.12.0"/>
 	<import addon="script.featherence.service" version="0.2.14"/>
 	<!--<import addon="resource.uisounds.featherence" version="0.0.1"/>-->
   </requires>
@@ -363,6 +363,8 @@
     <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
   </extension>
   <extension point="xbmc.addon.metadata">
+	<icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
 	<platform>all</platform>
 	<summary lang="en">Featherence Skin</summary>
 	<summary lang="he">פדרנס סקין</summary>

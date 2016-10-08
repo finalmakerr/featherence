@@ -348,7 +348,7 @@ elif mode >= 200 and mode <= 249:
 			if returned == 1:
 				list2.append('New')
 				list2_.append('New')
-			elif returned == 2:
+			elif returned == 3:
 				pathf = os.path.join(addonPath, 'resources', 'skin_templates', '')
 				filef = 'Featherence_Classico Plus.zip'
 				filesname = 'Classico Plus'
@@ -370,7 +370,7 @@ elif mode >= 200 and mode <= 249:
 					if '.zip' in files and not '.txt' in files:
 						if 'Featherence_' in files:
 							filesname = regex_from_to(files, "Featherence_", ".zip", excluding=True)
-							if returned == 3 and filesname == 'Classico Plus': continue
+							if returned == 2 and filesname == 'Classico Plus': continue
 							if filesname != "" and filesname != None:
 								filesT_ = { filesname: files }
 								filesT.update(filesT_)
@@ -588,7 +588,7 @@ elif mode >= 200 and mode <= 249:
 					'''------------------------------
 					---Load/Templates----------------
 					------------------------------'''
-					if returned2 == 1 and "B" in printpoint:
+					if returned2 == 1 and "C" in printpoint:
 						path = pathf
 						returned3 = dialogyesno('Continue Loading?','You may also view the changelog first!', nolabel="Load", yeslabel="Changelog")
 						
@@ -618,7 +618,7 @@ elif mode >= 200 and mode <= 249:
 							if os.path.exists(featherenceserviceaddondata_media_path + 'Featherence_.txt'):
 								removefiles(featherenceserviceaddondata_media_path + 'Featherence_.txt')
 							Custom1000(str(list[returned]),10,str(list2[returned2]),5)
-							if 'C' in printpoint:
+							if 'C' in printpoint and os.path.isdir(path + file):
 								copyfiles(path + file, featherenceserviceaddondata_media_path) ; Custom1000(str(list[returned]),20,str(list2[returned2]),1)
 							else:
 								ExtractAll(path + file, featherenceserviceaddondata_media_path) ; Custom1000(str(list[returned]),20,str(list2[returned2]),10)
@@ -698,7 +698,7 @@ elif mode >= 200 and mode <= 249:
 					if returned_ == 'skip':
 						xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_&value2=RESET-LABEL)')
 					else: xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=215&value=_)')
-					xbmc.sleep(500)
+					xbmc.sleep(1000)
 					folder_ = 'Featherence'
 					path_ = os.path.join(featherenceserviceaddondata_media_path, folder_, '')
 					if os.path.exists(path_):
@@ -709,7 +709,7 @@ elif mode >= 200 and mode <= 249:
 							xbmc.executebuiltin("UpdateAddonRepos")
 						removefiles(path_)
 				    
-					ReloadSkin(admin, force=True)
+					#ReloadSkin(admin, force=True)
 				else:
 					pass
 					if not '9a' in printpoint: xbmc.executebuiltin('Action(Back)')
