@@ -159,6 +159,40 @@
 
   </include>
   
+  <include name="Content_SettingsSystemInfo_100">
+	  <control type="button" id="95" description="Summary">
+	    <height>70</height>
+		<posy>0</posy>
+	    <width>245</width>
+	    <label>20037</label>
+	  </control>
+	  <control type="button" id="94" description="Storage">
+	    <height>70</height>
+		<posy>0</posy>
+	    <width>245</width>
+	    <label>13277</label>
+	  </control>
+	  <control type="button" id="96" description="Network">
+	    <height>70</height>
+		<posy>0</posy>
+	    <width>245</width>
+	    <label>13279</label>
+	  </control>
+	  <control type="button" id="97" description="Video">
+	    <height>70</height>
+		<posy>0</posy>
+	    <width>245</width>
+	    <label>13280</label>
+	  </control>
+	  <control type="button" id="98" description="Hardware">
+	    <height>70</height>
+		<posy>0</posy>
+	    <width>245</width>
+	    <label>13281</label>
+	  </control>
+
+  </include>
+  
   <include name="Content_Custom1173_50">
 	  <!--150-159 עכבר-->
 	  <item id="150" description="סמן עכבר">
@@ -1360,14 +1394,108 @@
 	  <!--500-509 RSS-->
 	  
   </include> 
-
+  
+  <include name="Content_SettingsSystemInfo_50" description="SettingsSystemInfo.xml">
+	<control type="label" id="21">
+	  <description>CPU Text</description>
+	  <font>size26</font>
+	  <label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
+	</control>
+	<control type="progress" id="22" description="CPU BAR">
+	  <height>15</height>
+	  <texturebg border="0,5,5,0">MusicOSD/ProgressBG.png</texturebg>
+	  <midtexture border="0,5,0,5">MusicOSD/ProgressM.png</midtexture>
+	  <righttexture border="0,5,6,5">MusicOSD/ProgressR.png</righttexture>
+	  <lefttexture border="6,5,0,5">MusicOSD/ProgressL.png</lefttexture>
+	  <overlaytexture>-</overlaytexture>
+	  <info>System.CPUUsage</info>
+	</control>
+	<control type="label" id="23">
+	  <description>Memory Text</description>
+	  <font>size26</font>
+	  <label>$LOCALIZE[31021] $INFO[system.memory(used.percent)]</label>
+	</control>
+	<control type="progress" id="24">
+	  <description>Memory BAR</description>
+	  <height>15</height>
+	  
+	  <texturebg border="0,5,5,0">MusicOSD/ProgressBG.png</texturebg>
+	  <midtexture border="0,5,0,5">MusicOSD/ProgressM.png</midtexture>
+	  <righttexture border="0,5,6,5">MusicOSD/ProgressR.png</righttexture>
+	  <lefttexture border="6,5,0,5">MusicOSD/ProgressL.png</lefttexture>
+	  <overlaytexture>-</overlaytexture>
+	  <info>system.memory(used)</info>
+	</control>
+	<control type="label" id="2">
+	  <description>Label 2</description>
+	  <height>45</height>
+	  
+	  <font>size27</font>
+	</control>
+	<control type="label" id="3">
+	  <description>Label 3</description>
+	  <height>45</height>
+	  
+	  <font>size27</font>
+	</control>
+	<control type="label" id="4">
+	  <description>Label 4</description>
+	  <height>45</height>
+	  <font>size27</font>
+	  
+	</control>
+	<control type="label" id="5">
+	  <description>Label 5</description>
+	  <height>45</height>
+	  
+	  <font>size27</font>
+	</control>
+	<control type="label" id="6">
+	  <description>Label 6</description>
+	  <height>45</height>
+	  
+	  <font>size27</font>
+	</control>
+	<control type="label" id="7"> <!--זיכרון פנוי-->
+	  <description>Label 7</description>
+	  <height>45</height>
+	  
+	  <font>size27</font>
+	</control>
+	<control type="label" id="8"> <!--סה"כ זיכרון-->
+	  <description>Label 8</description>
+	  <height>45</height>
+	  
+	  <font>size27</font>
+	</control>
+	<control type="label" id="9">
+	  <description>Label 9</description>
+	  <height>45</height>
+	  
+	  <font>size27</font>
+	</control>
+	<control type="label" id="10">
+	  <description>Label 10</description>
+	  <height>45</height>
+	  
+	  <font>size27</font>
+	</control>
+	<control type="label" id="11">
+	  <description>Label 11</description>
+	  <height>45</height>
+	  
+	  <font>size27</font>
+	</control>
+  </include>
+  
   <include name="Content_Settings_50" description="Settings.xml">
 	   <item id="0" description="מראה">
 		<label>480</label>
-		<label2></label2>
+		<label2>$INFO[System.Language]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/image.png</thumb>
-		<property name="rinfo"></property>
+		<property name="rinfo">$LOCALIZE[166] | $LOCALIZE[14222] | $LOCALIZE[12900] | $LOCALIZE[12360] | $LOCALIZE[14224]</property>
 		<onclick>activatewindow(AppearanceSettings)</onclick>
+		<!--<onclick>activatewindow(InterfaceSettings)</onclick>-->
 		<thumb>special://home/addons/script.featherence.service/resources/icons/image.png</thumb>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
@@ -1380,6 +1508,14 @@
 		<thumb>special://home/addons/script.featherence.service/resources/icons/videos.png</thumb>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
+	  <!--<item id="3" description="Player Settings">
+		<label>14201</label>
+		<label2></label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/videos.png</thumb>
+		<property name="rinfo">$LOCALIZE[14215] | $LOCALIZE[14216] | $LOCALIZE[14087] | $LOCALIZE[14217] | $LOCALIZE[304] | $LOCALIZE[37032]</property>
+		<onclick>activatewindow(PlayerSettings)</onclick>
+		<visible>Container(100).Hasfocus(1)</visible>
+	  </item>-->
 	  <item id="4" description="Music">
 		<label>2</label>
 		<label2></label2>
@@ -1389,11 +1525,19 @@
 		<thumb>special://home/addons/script.featherence.service/resources/icons/music.png</thumb>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
+	  <!--<item id="4" description="Library Settings">
+		<label>14203</label>
+		<label2></label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/quickpar.png</thumb>
+		<property name="rinfo">$LOCALIZE[14022] | $LOCALIZE[128] | $LOCALIZE[10006] | $LOCALIZE[10005] | $LOCALIZE[10002]</property>
+		<onclick>activatewindow(MediaSettings)</onclick>
+		<visible>Container(100).Hasfocus(1)</visible>
+	  </item>-->
 	   <item id="14" description="ערוצי טלוויזיה">
 		<label>$LOCALIZE[19023]</label>
 		<label2>$VAR[14label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/LiveTV.png</thumb>
-		<property name="rinfo"></property>
+		<property name="rinfo">$LOCALIZE[128] | $LOCALIZE[19181] | $LOCALIZE[19069] | $LOCALIZE[14086] | $LOCALIZE[19043] | $LOCALIZE[14095] | $LOCALIZE[19259] | $LOCALIZE[19279]</property>
 		<onclick>activatewindow(PVRSettings)</onclick>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/LiveTV.png</thumb>
 		<visible>Container(100).Hasfocus(1)</visible>
@@ -1433,11 +1577,19 @@
 		<onclick>Activatewindow(servicesettings)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
+	  <!--<item id="9" description="Services & Weather">
+		<label>$LOCALIZE[14036] &amp; $LOCALIZE[8]</label>
+		<label2>$INFO[System.FriendlyName]</label2>
+		<thumb fallback="special://home/addons/script.featherence.service/resources/icons/weather.png">$INFO[Weather.Conditions]</thumb>
+		<property name="rinfo">Location: $INFO[Weather.Location][CR]Temperature: $INFO[Weather.Temperature][CR][CR]Addon: $INFO[Weather.plugin]</property>
+		<onclick>Activatewindow(servicesettings)</onclick>
+		<visible>Container(100).Hasfocus(1)</visible>
+	  </item>-->
 	  <item id="10" description="System">
 		<label>13000</label>
 		<label2>$INFO[System.ScreenResolution]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/settings.png</thumb>
-		<property name="rinfo"></property>
+		<property name="rinfo">$LOCALIZE[14220] | $LOCALIZE[14221] | $LOCALIZE[14125] | $LOCALIZE[798] | $LOCALIZE[14095] | $LOCALIZE[24001] | $LOCALIZE[14092]</property>
 		<onclick>activatewindow(SystemSettings)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>

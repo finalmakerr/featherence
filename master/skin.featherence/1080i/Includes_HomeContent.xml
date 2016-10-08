@@ -619,8 +619,10 @@
 	  <thumb fallback="special://home/addons/script.featherence.service/resources/icons/back2.png">$INFO[Skin.String(icon20)]</thumb>
 	  <label>Back</label>
 	  <label2>&quot;20&quot;</label2>
-	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml)">Action(Back)</onclick>
-	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(Custom1173.xml)">Action(Close)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(VideoOSD.xml)">AlarmClock(back,Action(Back),00:01,silent)</onclick>
+	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(Custom1173.xml)">Action(Back)</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml) + !Window.IsVisible(Custom1173.xml)">ActivateWindow(1175)</onclick>
 	  <visible>!Window.IsVisible(CustomHomeCustomizer2.xml)</visible>
 	  <visible>!Window.IsVisible(FileBrowser.xml)</visible>
 	</item>
@@ -635,8 +637,10 @@
 	  <thumb fallback="special://home/addons/script.featherence.service/resources/icons/home.png">$INFO[Skin.String(icon21)]</thumb>
 	  <label>Home</label>
 	  <label2>&quot;21&quot;</label2>
-	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml)">ReplaceWindow(Home)</onclick>
-	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">ActivateWindow(1175)</onclick>
+	  <onclick description="openButton" condition="Window.IsVisible(VideoOSD.xml)">Action(Close)</onclick>
+	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(Custom1173.xml)">Action(Close)</onclick>
+	  <onclick description="openButton" condition="!Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(Custom1173.xml)">ReplaceWindow(Home)</onclick>
+	  <onclick description="editButton" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml) + !Window.IsVisible(Custom1173.xml)">ActivateWindow(1175)</onclick>
 	  <visible>!Window.IsVisible(CustomHomeCustomizer2.xml)</visible>
 	  <visible>!Window.IsVisible(FileBrowser.xml)</visible>
 	</item>

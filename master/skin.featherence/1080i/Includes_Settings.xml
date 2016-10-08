@@ -5,7 +5,7 @@
 	    <animation condition="Window.IsVisible(SettingsCategory.xml)" effect="slide" start="0,0" end="100,0" time="0">Conditional</animation>
 		<animation condition="Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus" effect="slide" start="0,0" end="-938,22" time="0">Conditional</animation>
 		<animation condition="Window.IsVisible(DialogVideoInfo.xml) + Container(50).HasFocus + !ControlGroup(22).HasFocus" effect="slide" start="0,0" end="400,730" time="0">Conditional</animation>
-		<animation condition="Window.IsVisible(Settings.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Custom1173.xml)" effect="slide" start="0,0" end="0,77" time="0">Conditional</animation>
+		<animation condition="Window.IsVisible(Settings.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Custom1173.xml) | Window.IsVisible(SettingsSystemInfo.xml)" effect="slide" start="0,0" end="0,77" time="0">Conditional</animation>
 		<include>Fade4</include>
 		<visible>[Control.IsVisible(100) + Container(100).HasNext] | !Control.IsVisible(100)</visible>
 		<visible>Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus + Container(22).HasNext | !ControlGroup(22).HasFocus</visible>
@@ -37,7 +37,7 @@
 		<animation condition="Window.IsVisible(SettingsCategory.xml)" effect="slide" start="0,0" end="-100,0" time="0">Conditional</animation>
 		<animation condition="Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus" effect="slide" start="0,0" end="-434,22" time="0">Conditional</animation>
 		<animation condition="Window.IsVisible(DialogVideoInfo.xml) + Container(50).HasFocus + !ControlGroup(22).HasFocus" effect="slide" start="0,0" end="-1060,380" time="0">Conditional</animation>
-		<animation condition="Window.IsVisible(Settings.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Custom1173.xml)" effect="slide" start="0,0" end="0,77" time="0">Conditional</animation>
+		<animation condition="Window.IsVisible(Settings.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Custom1173.xml) | Window.IsVisible(SettingsSystemInfo.xml)" effect="slide" start="0,0" end="0,77" time="0">Conditional</animation>
 		<include>Fade4</include>
 		<visible>[Control.IsVisible(100) + Container(100).HasPrevious] | !Control.IsVisible(100)</visible>
 		<visible>Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus + Container(22).HasPrevious | !ControlGroup(22).HasFocus</visible>
@@ -155,6 +155,45 @@
 	</control>
   </include>
   
+  <include name="MenuDesign_TopSettings_" description="לשוניות">
+    <include>ArrowsLeftRight</include>
+
+	<include name="MenuBackground">
+		<param name="border" value="35" />
+		<param name="color" value="$VAR[MenuColor]" />
+		<param name="height" value="81" />
+		<param name="posx" value="460" />
+		<param name="posy" value="142" />
+		<param name="width" value="1005" />
+		<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
+		
+		<param name="type0" value="true" description="MenuBackground"/>
+		<param name="type1" value="false" description="DialogBackground"/>
+    </include>
+	
+    <control type="grouplist" id="100" description="TopMenu">
+	  <animation condition="[Control.IsVisible(50) + !IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(100).OnPrevious + !Container(100).OnNext" effect="fade" start="100" end="10" delay="3000" time="220" reversible="true">Conditional</animation>
+	  <posx>460</posx>
+	  <posy>142</posy>
+	  <align>center</align>
+	  <height>100</height>
+	  <itemgap>5</itemgap>
+	  <onup condition="!Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(7011)">7017</onup>
+	  <onup condition="!Window.IsVisible(CustomHomeCustomizer.xml) + Player.HasAudio">ActivateWindow(12901)</onup>
+	  <onleft>noop</onleft>
+	  <onright>noop</onright>
+	  <ondown>50</ondown>
+	  <preloaditems>2</preloaditems>
+	  <pagecontrol>60</pagecontrol>	  
+	  <scrolltime tween="sine" easing="inout">220</scrolltime>
+	  <orientation>horizontal</orientation>
+	  <width>1000</width>
+
+	  <include condition="Window.IsVisible(SettingsSystemInfo.xml)">Content_SettingsSystemInfo_100</include>
+		
+	</control>
+  </include>
+
   <include name="ArrowsUpDown">
     <control type="group" description="סמן חץ למעלה">
 		<animation condition="Control.IsVisible(9005)" effect="slide" start="0,0" end="-733,-152" time="0">Conditional</animation>
@@ -276,6 +315,51 @@
 			<include condition="Window.IsVisible(Custom1173.xml)">Content_Custom1173_50</include>
 			<include condition="Window.IsVisible(SkinSettings.xml)">Content_SkinSettings_50</include>
 		  </content>
+		</control>
+		<include>ArrowsUpDown</include>
+	</control>
+    
+  </include>
+  
+  <include name="MenuDesign_Settings_" description="Panel_Full">
+	<control type="group">
+		<animation condition="Window.IsVisible(Custom1173.xml)" effect="zoom" center="960,170" start="100,82" end="100,82" time="0">Conditional</animation>
+
+		<include name="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
+			<param name="border" value="40" />
+			<param name="color" value="$VAR[MenuColor]" />
+			<param name="height" value="809" />
+			<param name="posx" value="460" />
+			<param name="posy" value="218" />
+			<param name="width" value="1005" />
+			
+			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
+		</include>
+		<include name="MenuBackground" condition="Window.IsVisible(Custom1173.xml)">
+			<param name="border" value="40" />
+			<param name="color" value="$VAR[MenuColor]" />
+			<param name="height" value="392" />
+			<param name="posx" value="460" />
+			<param name="posy" value="230" />
+			<param name="width" value="1005" />
+			
+			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
+		</include>
+		
+		
+		<control type="grouplist" id="50">
+		  <animation condition="Window.IsVisible(Custom1173.xml)" effect="slide" start="0,0" end="0,15" time="0">Conditional</animation>
+		  <posx>490</posx>
+		  <posy>250</posy>
+		  <width>940</width>
+		  <include condition="Window.IsVisible(Custom1173.xml)">MenuDesign_Settings_height2</include>
+		  <height>775</height>
+		  <include>4ways4</include>
+		  <preloaditems>2</preloaditems>	  
+		  <scrolltime tween="sine" easing="inout">220</scrolltime>
+		  <pagecontrol>60</pagecontrol>
+		  
+		  <include condition="Window.IsVisible(SettingsSystemInfo.xml)">Content_SettingsSystemInfo_50</include>
 		</control>
 		<include>ArrowsUpDown</include>
 	</control>

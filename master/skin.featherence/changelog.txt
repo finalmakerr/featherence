@@ -2,8 +2,26 @@
 WIP - WORK IN PROGRESS
 ------------------------
 - More font coloring options.
-- Krypton support.
 - Added option to change the font size.
+- Added coloring support for DialogNumeric window.
+- Added Next Aired support.
+- Added option to change font size of plot information.
+- Added option to change font size of video/audio playback settings.
+
+------------------------
+Featherence v0.7.0 (xx-xx-16)
+------------------------
+- Added Krypton support.
+- Added ScrollBar support to PVR Guide window.
+- Added WINDOW_DIALOG_CMS_OSD_SETTINGS.
+
+------------------------
+Featherence v0.6.2 (xx-Sep-16)
+------------------------
+- Major bugs fix with touch buttons on some windows.
+- Major update of system information window.
+- Minor update of center menu / sub menu.
+- Minor update of Kodi's settings window.
 
 ------------------------
 Featherence v0.6.1 (02-Sep-16)
