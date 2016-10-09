@@ -726,20 +726,20 @@ msgid "Fan mode"
 msgstr "מצב מניפה"
 
 msgctxt "#31473"
-msgid ""
-msgstr ""
+msgid "Video information font size"
+msgstr "גודל גופן פרטי וידאו"
 
 msgctxt "#31474"
-msgid ""
-msgstr ""
+msgid "Choose YES if you need a glasses in order to read the video plot :)"
+msgstr "בחר "כן" אם אתה צריך משקפיים בכדי לקרוא את עלילת הסרט/פרק."
 
 msgctxt "#31475"
-msgid ""
-msgstr ""
+msgid "Addons lock"
+msgstr "נעילת הרחבות"
 
 msgctxt "#31476"
-msgid ""
-msgstr ""
+msgid "Write up the addon id to be locked no matter how it's been entered."
+msgstr "כתוב את השם המזהה של ההרחבה אותה ברצונך לנעול, לא משנה איך היא נפתחה."
 
 msgctxt "#31477"
 msgid ""

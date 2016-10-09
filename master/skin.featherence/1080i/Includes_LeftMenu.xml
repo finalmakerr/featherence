@@ -1343,24 +1343,24 @@
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <label>$LOCALIZE[5]</label>
 	</control>	
-	<control type="button" id="10" description="changelog">
+	<control type="button" id="10" description="יומן שינויים">
 	  <include>SideMenuCommon</include>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-	  <label>$LOCALIZE[24054]</label>
+	  <label>$LOCALIZE[24036]</label>
 	</control>
-	<control type="button" id="8" description="update">
+	<control type="button" id="8" description="עדכון">
 	  <include>SideMenuCommon</include>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <label>$LOCALIZE[24069]</label>
 	  <visible>StringCompare(Control.GetLabel(7),$LOCALIZE[24021])</visible>
 	</control>		
-	<control type="radiobutton" id="13" description="Auto-update">
+	<control type="radiobutton" id="13" description="עדכון אוטומטי">
 	  <include>SideMenuCommon</include>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-	  <label>Auto-update</label>
+	  <label>24063</label>
 	</control> 
   </include>  
   

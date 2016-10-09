@@ -285,7 +285,7 @@
 	  <animation condition="System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
 	  <control type="image" description="מסגרת">
 		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,256">Conditional</animation>
-		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-5">Conditional</animation>
+		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-4">Conditional</animation>
 		  <include>Fade_TopVideoInformationOverlay</include>
 		  <posx>-20</posx>
           <posy>-566</posy>
@@ -706,10 +706,9 @@
 		<control type="group" description="פרטי סרט">
 			<posx>10</posx>
 			<posy>-561</posy>
-			<control type="textbox" description="פרטי סרט">
+			<control type="textbox" description="פרטי סרט - גופן רגיל">
 			  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 			  <font>size24</font>
-			  <include condition="SubString(Container.FolderPath,plugin.program.advanced.launcher)">LabelL1</include>
 			  <include condition="[StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,1)">LabelR1</include>
 			  <include condition="[!StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,2)">LabelL1</include>
 			  <include condition="Skin.String(PlotAlign,3)">LabelJ1</include>
@@ -718,12 +717,24 @@
 			  <width>650</width>
 			  <height>115</height> <!--130-->
 			  <label>$VAR[TopVideoInformation5]</label>
-			  <visible>!Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(FileBrowser.xml)</visible>
+			  <visible>!Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(FileBrowser.xml) + !Skin.HasSetting(TopVideoInformationFontSize)</visible>
 			</control>
-			<control type="textbox" description="פרטי סרט">
+			<control type="textbox" description="פרטי סרט - גופן גדול">
 			  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 			  <font>size30</font>
-			  <include condition="SubString(Container.FolderPath,plugin.program.advanced.launcher)">LabelL1</include>
+			  <include condition="[StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,1)">LabelR1</include>
+			  <include condition="[!StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,2)">LabelL1</include>
+			  <include condition="Skin.String(PlotAlign,3)">LabelJ1</include>
+			  <include condition="Skin.String(PlotAlign,4)">LabelC1</include>
+			  <include>AutoScrollText2</include>
+			  <width>650</width>
+			  <height>115</height> <!--130-->
+			  <label>$VAR[TopVideoInformation5]</label>
+			  <visible>!Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(FileBrowser.xml) + Skin.HasSetting(TopVideoInformationFontSize)</visible>
+			</control>
+			<control type="textbox" description="פרטי סרט - חלון פרטי סרט">
+			  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
+			  <font>size30</font>
 			  <include condition="[StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,1)">LabelR1</include>
 			  <include condition="[!StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,2)">LabelL1</include>
 			  <include condition="Skin.String(PlotAlign,3)">LabelJ1</include>

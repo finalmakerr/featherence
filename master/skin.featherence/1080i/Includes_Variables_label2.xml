@@ -466,6 +466,11 @@
 	<value condition="Skin.String(DialogKaiToastPos,5)">NE</value>-->
   </variable>
   
+  <variable name="335label2">
+    <value condition="!Skin.HasSetting(TopVideoInformationFontSize)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(TopVideoInformationFontSize)">$LOCALIZE[107]</value>
+  </variable>
+  
   <variable name="393label2" description="">
     <value condition="!Skin.String(WindowsOpenClose)">$LOCALIZE[13278]</value>
 	<value condition="Skin.String(WindowsOpenClose,0)">0</value>

@@ -105,6 +105,7 @@
 		<thumb>special://home/addons/script.featherence.service/resources/icons/medal.png</thumb>
 		<!--<visible>IntegerGreaterThan(Window(home).Property(Button.ID),80)</visible>-->
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
+		<visible>![StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)]</visible>
 		<visible>IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 	  </item>
 	  <item id="719" description="פריט חדש">
@@ -147,7 +148,7 @@
 	  </item>
 	  <item id="729" description="Touch Buttons">
 		<label>Action -> $INFO[Window(home).Property(Button.Name)]</label>
-		<onclick description="Twice!" condition="StringCompare(Window(home).Property(Button.ID_),20)">Action(Back)</onclick>
+		<onclick description="Twice!" condition="StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)">Action(Close)</onclick>
 		<onclick description="Twice" condition="StringCompare(Window(home).Property(Button.ID_),20)">Action(Back)</onclick>
 		<onclick description="1175" condition="StringCompare(Window(home).Property(Button.ID_),21)">ReplaceWindow(Home)</onclick>
 		<include>CheckProperty_Menus</include>

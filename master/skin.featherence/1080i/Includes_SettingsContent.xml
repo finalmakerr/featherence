@@ -974,6 +974,14 @@
 		<onclick>ActivateWindow(1170)</onclick>
 		<visible>Container(100).Hasfocus(26)</visible>
 	  </item>
+	  <item id="335" description="גודל גופן פרטי וידאו">
+		<label>$LOCALIZE[31473]</label>
+		<label2>$VAR[335label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/se.png</thumb>
+		<property name="rinfo">$LOCALIZE[31474]</property>
+		<onclick>Skin.ToggleSetting(TopVideoInformationFontSize)</onclick>
+		<visible>Container(100).Hasfocus(26)</visible>
+	  </item>
 	  <item id="336" description="צבע גופן פרטי וידאו">
 		<label>$LOCALIZE[737] $LOCALIZE[31440] $LOCALIZE[20159]</label>
 		<label2>$INFO[Skin.String(TopVideoInformationFontColor.name)]</label2>
@@ -1289,6 +1297,14 @@
 		<onclick condition="Skin.String(PassProtectOverlay, 30)">Skin.SetString(PassProtectOverlay, 20)</onclick>
 		<onclick condition="Skin.String(PassProtectOverlay, 20)">Skin.SetString(PassProtectOverlay, )</onclick>
 		<include>CustomizerExit</include>
+		<visible>Container(100).Hasfocus(31)</visible>
+	  </item>
+	  <item id="444" description="נעילת הרחבות">
+		<label>$LOCALIZE[31475]</label>
+		<label2>$INFO[Skin.String(PassProtectAddon1)] | $INFO[Skin.String(PassProtectAddon2)] | $INFO[Skin.String(PassProtectAddon3)] | $INFO[Skin.String(PassProtectAddon4)] | $INFO[Skin.String(PassProtectAddon5)] | $INFO[Skin.String(PassProtectAddon6)] | $INFO[Skin.String(PassProtectAddon7)] | $INFO[Skin.String(PassProtectAddon8)] | $INFO[Skin.String(PassProtectAddon9)] | $INFO[Skin.String(PassProtectAddon10)]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/Lock.png</thumb>
+		<property name="rinfo">$LOCALIZE[31476]</property>
+		<onclick>RunScript(script.featherence.service,,?mode=33)</onclick>
 		<visible>Container(100).Hasfocus(31)</visible>
 	  </item>
 	  

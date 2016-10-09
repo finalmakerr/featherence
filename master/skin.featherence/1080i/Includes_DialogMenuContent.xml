@@ -914,7 +914,7 @@
       <height>570</height>
 	  <posx>-420</posx>
 	  <posy>250</posy>	  
-	  <width>485</width>	   	  
+	  <width>485</width> 	  
 
 	  <include name="MenuBackground">
 		<param name="border" value="40" />
@@ -923,7 +923,20 @@
 		<param name="posx" value="0" />
 		<param name="posy" value="0" />
 		<param name="width" value="0" />
-		<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
+		<param name="condition" value="!Skin.HasSetting(MenuBackground) + !StringCompare(Window(home).Property(DialogSelect.Wide),1)"/>
+		
+		<param name="type0" value="true" description="MenuBackground"/>
+		<param name="type1" value="false" description="DialogBackground"/>
+      </include>
+	  
+	  <include name="MenuBackground">
+		<param name="border" value="40" />
+		<param name="color" value="$VAR[MenuColor]" />
+		<param name="height" value="0" />
+		<param name="posx" value="0" />
+		<param name="posy" value="0" />
+		<param name="width" value="790" />
+		<param name="condition" value="!Skin.HasSetting(MenuBackground) + StringCompare(Window(home).Property(DialogSelect.Wide),1)"/>
 		
 		<param name="type0" value="true" description="MenuBackground"/>
 		<param name="type1" value="false" description="DialogBackground"/>
@@ -934,29 +947,56 @@
 		<include>LabelC1</include>
 		<posx>20</posx>
 		<posy>0</posy>
-        <width>440</width>
+        <include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">Control_Pos9</include>
+		<width>440</width>
       </control>
       <control type="grouplist" id="5" description="Settings">
-        <height>530</height>
-		<ondown>5</ondown>
-		<onleft>Close</onleft>
+		<height>530</height>
+		<ondown>1267</ondown>
+		<onleft>1267</onleft>
         <onright>Close</onright>
-        <onup>5</onup>
+        <onup>noop</onup>
+		<posx>2</posx>
 		<pagecontrol>60</pagecontrol>
 		<posy>40</posy>
-		<width>480</width>		
+		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">Control_Pos9</include>
+		<width>480</width>
 	  </control>
 	  <control type="button" id="7" description="ברירת מחדל slider">
-		<include>ButtonL4</include>
+		<include condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
+		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
 	  </control>
 	  <control type="radiobutton" id="8" description="ברירת מחדל">
-		<include>ButtonL4</include>	
+		<include condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
+		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
 	  </control>
 	  <control type="spincontrolex" id="9" description="ברירת מחדל arrows">
-		<include>ButtonL4</include>	
+		<include condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
+		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
 	  </control>
 	  <control type="sliderex" id="13" description="ברירת מחדל">
-		<include>ButtonL4</include>	
+		<include condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
+		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
+	  </control>
+	  <control type="button" id="1267" description="גודל">
+		<posy>563</posy>
+		<posx>2</posx>
+		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">Control_Pos12</include>
+		
+		<include condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
+		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
+		<onup>5</onup>
+		<ondown>noop</ondown>
+		<onleft>noop</onleft>
+		<onright>close</onright>
+		<label>$LOCALIZE[22031]</label>
+		<onclick>Action(Close)</onclick>
+		<onclick condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">SetProperty(DialogSelect.Wide,1,home)</onclick>
+		<onclick condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ClearProperty(DialogSelect.Wide,home)</onclick>
+		<onclick condition="Window.IsVisible(10123)">RunScript(script.featherence.service,,?mode=32&amp;value=9&amp;value2=10123)</onclick>
+		<onclick condition="Window.IsVisible(10124)">RunScript(script.featherence.service,,?mode=32&amp;value=9&amp;value2=10124)</onclick>
+		<visible>!StringCompare(Control.GetLabel(1),Choose shortcut) | StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
+		<visible>!Window.IsVisible(Custom1175.xml)</visible>
 	  </control>
     </control>
   </include>

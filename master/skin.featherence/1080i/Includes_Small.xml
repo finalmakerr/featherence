@@ -160,7 +160,7 @@
 	<autoscroll tween="sine" easing="out" delay="7000" time="3000" repeat="7000">True</autoscroll>
   </include>
   <include name="AutoScrollText2" description="(Textbox) (הגדרות מעטפת/עזרה)">
-	<autoscroll tween="sine" easing="out" delay="7000" time="3000" repeat="7000">True</autoscroll>
+	<autoscroll tween="sine" easing="out" delay="5000" time="3000" repeat="7000">True</autoscroll>
   </include>
   <include name="CustomizerExit">
     <!--<onclick condition="!IsEmpty(Window(home).Property(Button.ID))">AlarmClock(buttonid,SetProperty(Button.ID,$INFO[Window(home).Property(Button.ID)],home),00:01,silent)</onclick>
