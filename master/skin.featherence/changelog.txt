@@ -1,20 +1,15 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
-
+- More font coloring options.
+- Added option to change the font size.
+- Added coloring support for DialogNumeric window.
 1. אם ניתן להוסיף כפתור טריילר ליד כל סרט.
 2. חלון תפריט התקציר שנפתח מלמעלה  קטן, מומלץ להגדיל את כל החלון וגם את הכתב בפנים.
 3. באופן כללי להגדיל כתב, מה  שאני ראיתי (חלון כתוביות שנפתח משמאל, ווידגטים)
 4. כשערוצי רדיו עובדים אין כפתורי תפריט בכלל (נבדק דרך הרחבה)
-5. להוסיף לרענון מסך גם 1.5 - 2 - 2.5 - 3
-6. תפריט הכתוביות משמאל צמוד מדי, להזיז יותר ימינה.
 7. לבדוק אופציה של השהיית כתוביות בעזרת העכבר
 8. בזמן שהקודי חושב אפ ניתן להוסיף חלון התקדמות באחוזים או  לפחות איזה עיגול זז להראות שהוא חושב.
-
-- More font coloring options.
-- Added option to change the font size.
-- Added coloring support for DialogNumeric window.
-- Added Next Aired support.
 
 ------------------------
 Featherence v0.7.0 (xx-xx-16)
@@ -26,13 +21,21 @@ Featherence v0.7.0 (xx-xx-16)
 ------------------------
 Featherence v0.6.2 (xx-Sep-16)
 ------------------------
+- Added extra mouse support option (WIP).
+To be activate in the Mouse category.
+This feature is auto-enabled if touch support is also enabled.
 - Added option to change font size of plot information.
 - Added option to change size of video/audio playback settings.
+- Added option trailers buttons for Side List, Center List, Poster, Wall and List views.
+- Added option to enable zoom animation between different skin windows.
 - Added option to lock up to 10 specific addons.
+- Added Next Aired support.
 - Major bugs fix with touch buttons on some windows.
 - Major update of system information window.
 - Minor update of center menu / sub menu.
+- Minor update of DialogSubtitles window.
 - Minor update of Kodi's settings window.
+- Minor update of skin animation between different windows.
 
 ------------------------
 Featherence v0.6.1 (02-Sep-16)
