@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <include name="Trailer_50">
+    <control type="button" description="קדימון סרט 0">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(0).Trailer) | StringCompare(Container(50).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 1">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(1).Trailer)  | StringCompare(Container(50).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 2">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(2).Trailer) | StringCompare(Container(50).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 3">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(3).Trailer) | StringCompare(Container(50).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 4">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(4).Trailer) | StringCompare(Container(50).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 5">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(5).Trailer) | StringCompare(Container(50).ListItemPosition(5).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 6">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(6).Trailer) | StringCompare(Container(50).ListItemPosition(6).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 7">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(7).Trailer) | StringCompare(Container(50).ListItemPosition(7).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 8">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(8).Trailer) | StringCompare(Container(50).ListItemPosition(8).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 9">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(9).Trailer) | StringCompare(Container(50).ListItemPosition(9).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 10">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(10).Trailer) | StringCompare(Container(50).ListItemPosition(10).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+  </include>
+
+  <include name="Trailer_50_">
+    <animation condition="Container(50).Scrolling | Container(50).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+	<height>40</height>		
+	<posx>430</posx>	      
+	<width>40</width>
+	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
+	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+  </include>
+  
+  <include name="Trailer_51">
+    <control type="button" description="קדימון סרט 0">
+	  <animation condition="IsEmpty(Container(51).ListItemPosition(0).Trailer) | StringCompare(Container(51).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 1">
+	  <animation condition="IsEmpty(Container(51).ListItemPosition(1).Trailer)  | StringCompare(Container(51).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 2">
+	  <animation condition="IsEmpty(Container(51).ListItemPosition(2).Trailer) | StringCompare(Container(51).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 3">
+	  <animation condition="IsEmpty(Container(51).ListItemPosition(3).Trailer) | StringCompare(Container(51).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 4">
+	  <animation condition="IsEmpty(Container(51).ListItemPosition(4).Trailer) | StringCompare(Container(51).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 5">
+	  <animation condition="IsEmpty(Container(51).ListItemPosition(5).Trailer) | StringCompare(Container(51).ListItemPosition(5).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 6">
+	  <animation condition="IsEmpty(Container(51).ListItemPosition(6).Trailer) | StringCompare(Container(51).ListItemPosition(6).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 7">
+	  <animation condition="IsEmpty(Container(51).ListItemPosition(7).Trailer) | StringCompare(Container(51).ListItemPosition(7).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 8">
+	  <animation condition="IsEmpty(Container(51).ListItemPosition(8).Trailer) | StringCompare(Container(51).ListItemPosition(8).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+  </include>
+
+  <include name="Trailer_51_">
+    <animation condition="Container(51).Scrolling | Container(51).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+	<height>70</height>		
+	<posx>0</posx>	      
+	<width>70</width>
+	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
+	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+  </include>
+  
+  <include name="Trailer_50A">
+	<control type="button" description="קדימון סרט 11">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(11).Trailer)  | StringCompare(Container(50).ListItemPosition(11).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 12">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(12).Trailer) | StringCompare(Container(50).ListItemPosition(12).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 13">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(13).Trailer) | StringCompare(Container(50).ListItemPosition(13).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 14">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(14).Trailer) | StringCompare(Container(50).ListItemPosition(14).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 15">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(15).Trailer) | StringCompare(Container(50).ListItemPosition(15).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 16">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(16).Trailer) | StringCompare(Container(50).ListItemPosition(16).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 17">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(17).Trailer) | StringCompare(Container(50).ListItemPosition(17).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 18">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(18).Trailer) | StringCompare(Container(50).ListItemPosition(18).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 19">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(19).Trailer) | StringCompare(Container(50).ListItemPosition(19).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 20">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(20).Trailer) | StringCompare(Container(50).ListItemPosition(20).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 21">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(21).Trailer) | StringCompare(Container(50).ListItemPosition(21).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 22">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(22).Trailer) | StringCompare(Container(50).ListItemPosition(22).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+	<control type="button" description="קדימון סרט 23">
+	  <animation condition="IsEmpty(Container(50).ListItemPosition(23).Trailer) | StringCompare(Container(50).ListItemPosition(23).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_50_</include>
+    </control>
+  </include>
+  
+  <include name="Trailer_54A">
+    <control type="button" description="קדימון סרט 0">
+	  <animation condition="IsEmpty(Container(54).ListItemPosition(0).Trailer) | StringCompare(Container(54).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(0)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_54_</include>
+    </control>
+	<control type="button" description="קדימון סרט 1">
+	  <animation condition="IsEmpty(Container(54).ListItemPosition(1).Trailer)  | StringCompare(Container(54).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(1)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_54_</include>
+    </control>
+	<control type="button" description="קדימון סרט 2">
+	  <animation condition="IsEmpty(Container(54).ListItemPosition(2).Trailer) | StringCompare(Container(54).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(2)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_54_</include>
+    </control>
+	<control type="button" description="קדימון סרט 3">
+	  <animation condition="IsEmpty(Container(54).ListItemPosition(3).Trailer) | StringCompare(Container(54).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(3)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_54_</include>
+    </control>
+	<control type="button" description="קדימון סרט 4">
+	  <animation condition="IsEmpty(Container(54).ListItemPosition(4).Trailer) | StringCompare(Container(54).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(4)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_54_</include>
+    </control>
+  </include>
+  
+  <include name="Trailer_57_">
+    <animation condition="Container(57).Scrolling | Container(57).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+	<height>70</height>
+	<posx>55</posx>
+	<posy>24</posy>
+	<width>70</width>
+	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
+	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+  </include>
+  
+  <include name="Trailer_57A">
+    <control type="button" description="קדימון סרט 0">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(0).Trailer) | StringCompare(Container(57).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(0)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 1">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(1).Trailer)  | StringCompare(Container(57).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(1)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 2">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(2).Trailer) | StringCompare(Container(57).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(2)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 3">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(3).Trailer) | StringCompare(Container(57).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(3)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 4">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(4).Trailer) | StringCompare(Container(57).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(4)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 5">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(5).Trailer) | StringCompare(Container(57).ListItemPosition(5).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(5)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 6">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(6).Trailer) | StringCompare(Container(57).ListItemPosition(6).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(6)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+  </include>
+  
+  <include name="Trailer_57B">
+    <control type="button" description="קדימון סרט 7">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(7).Trailer) | StringCompare(Container(57).ListItemPosition(7).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(7)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 8">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(8).Trailer)  | StringCompare(Container(57).ListItemPosition(8).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(8)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 9">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(9).Trailer) | StringCompare(Container(57).ListItemPosition(9).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(9)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 10">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(10).Trailer) | StringCompare(Container(57).ListItemPosition(10).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(10)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 11">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(11).Trailer) | StringCompare(Container(57).ListItemPosition(11).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(11)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 12">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(12).Trailer) | StringCompare(Container(57).ListItemPosition(12).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(12)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 13">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(13).Trailer) | StringCompare(Container(57).ListItemPosition(13).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(13)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+  </include>
+    
+  <include name="Trailer_57C">
+    <control type="button" description="קדימון סרט 14">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(14).Trailer) | StringCompare(Container(57).ListItemPosition(14).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(14)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 15">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(15).Trailer)  | StringCompare(Container(57).ListItemPosition(15).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(15)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 16">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(16).Trailer) | StringCompare(Container(57).ListItemPosition(16).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(16)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 17">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(17).Trailer) | StringCompare(Container(57).ListItemPosition(17).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(17)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 18">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(18).Trailer) | StringCompare(Container(57).ListItemPosition(18).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(18)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 19">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(19).Trailer) | StringCompare(Container(57).ListItemPosition(19).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(19)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+	<control type="button" description="קדימון סרט 20">
+	  <animation condition="IsEmpty(Container(57).ListItemPosition(20).Trailer) | StringCompare(Container(57).ListItemPosition(20).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(20)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_57_</include>
+    </control>
+  </include>
+
+  <include name="Trailer_58_">
+    <animation condition="Container(58).Scrolling | Container(58).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+	<height>70</height>
+	<posx>55</posx>
+	<posy>24</posy>
+	<width>70</width>
+	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
+	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+  </include>
+  
+  <include name="Trailer_58A">
+    <control type="button" description="קדימון סרט 0">
+	  <animation condition="IsEmpty(Container(58).ListItemPosition(0).Trailer) | StringCompare(Container(58).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(58).Position(0)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_58_</include>
+    </control>
+	<control type="button" description="קדימון סרט 1">
+	  <animation condition="IsEmpty(Container(58).ListItemPosition(1).Trailer)  | StringCompare(Container(58).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(58).Position(1)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_58_</include>
+    </control>
+	<control type="button" description="קדימון סרט 2">
+	  <animation condition="IsEmpty(Container(58).ListItemPosition(2).Trailer) | StringCompare(Container(58).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(58).Position(2)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_58_</include>
+    </control>
+	<control type="button" description="קדימון סרט 3">
+	  <animation condition="IsEmpty(Container(58).ListItemPosition(3).Trailer) | StringCompare(Container(58).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(58).Position(3)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_58_</include>
+    </control>
+	<control type="button" description="קדימון סרט 4">
+	  <animation condition="IsEmpty(Container(58).ListItemPosition(4).Trailer) | StringCompare(Container(58).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(58).Position(4)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_58_</include>
+    </control>
+  </include>
+  
+  <include name="Trailer_58B">
+    <control type="button" description="קדימון סרט 5">
+	  <animation condition="IsEmpty(Container(58).ListItemPosition(5).Trailer) | StringCompare(Container(58).ListItemPosition(5).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(58).Position(5)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_58_</include>
+    </control>
+	<control type="button" description="קדימון סרט 6">
+	  <animation condition="IsEmpty(Container(58).ListItemPosition(6).Trailer)  | StringCompare(Container(58).ListItemPosition(6).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(58).Position(6)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_58_</include>
+    </control>
+	<control type="button" description="קדימון סרט 7">
+	  <animation condition="IsEmpty(Container(58).ListItemPosition(7).Trailer) | StringCompare(Container(58).ListItemPosition(7).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(58).Position(7)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_58_</include>
+    </control>
+	<control type="button" description="קדימון סרט 8">
+	  <animation condition="IsEmpty(Container(58).ListItemPosition(8).Trailer) | StringCompare(Container(58).ListItemPosition(8).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(58).Position(8)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_58_</include>
+    </control>
+	<control type="button" description="קדימון סרט 9">
+	  <animation condition="IsEmpty(Container(58).ListItemPosition(9).Trailer) | StringCompare(Container(58).ListItemPosition(9).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(58).Position(9)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <include>Trailer_58_</include>
+    </control>
+  </include>
+  
+  <include name="Trailer_58_">
+    <animation condition="Container(58).Scrolling | Container(58).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+	<height>70</height>
+	<posx>55</posx>
+	<posy>24</posy>
+	<width>70</width>
+	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
+	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+  </include>
+
+</includes>

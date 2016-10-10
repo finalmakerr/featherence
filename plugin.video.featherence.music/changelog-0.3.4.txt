@@ -3,6 +3,12 @@ WIP (WORK IN PROGRESS)
 -----------------------
 
 ------------------------
+Featherence Music v0.3.4 (10-Oct-16)
+------------------------
+- Major update of autoview feature.
+Work on any skin now and you may add your default view for Main Menu, Sub Menu, and all others window from the addon settings or/and the context menu (Set View).
+
+------------------------
 Featherence Music v0.3.3 (18-Aug-16)
 ------------------------
 - Added Tomer Dror's playlist.
