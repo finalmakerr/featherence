@@ -2656,8 +2656,8 @@ msgid "Uncale Haim"
 msgstr "הדוד חיים"
 
 msgctxt "#10716
-msgid ""
-msgstr ""
+msgid "Curious George"
+msgstr "ג'ורג הסקרן"
 
 msgctxt "#10717
 msgid "Parents and puppies"

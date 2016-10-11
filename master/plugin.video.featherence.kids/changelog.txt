@@ -2,6 +2,11 @@
 WIP - WORK IN PROGRESS
 ------------------------
 
+------------------------
+Featherence Kids v0.2.13 (12-Oct-16)
+------------------------
+- Added suprize party TV channels in Tiny category.
+- Minor links update.
 
 ------------------------
 Featherence Kids v0.2.12 (01-Oct-16)

@@ -2517,6 +2517,15 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	CATEGORIES_RANDOM(background,fanart) #אקראי
 	CATEGORIES107Z(General_LanguageL, background, background2) #ערוצי טלוויזיה
 	
+	'''***'''
+	list = []
+	list.append('&youtube_ch=UCTnJbX128x0hnK9f5ynC2tg') #DuckDuck Fun TV
+	list.append('&youtube_ch=UCDZgrBvmY6tXt8gb4Z-7w9A') #Jude Bryant
+	list.append('&youtube_ch=UCfEY-eCu-Pp7OfbDS2sJuIw') #jkidkidkid
+	list.append('&youtube_ch=UCvTHynhs6QldpcAJ_a3jl5g') #Kids Funny Cars Toons
+	list.append('&youtube_ch=UCtsIgvwaT1icVCi0Xbv1s0A') #Colors Kids TV
+	addDir('-' + 'Suprize Party :)',list,17,"http://www.bestsurpriseeggvideos.com/wp-content/uploads/2015/12/24-surprise-eggs-unboxing-LPS-My-Little-PONY-The-SMURFS-Party-Animals-Shrek-Disney-eggs-Compilatio-750x400.jpeg","I don't know why.. but kids are loving it :)",'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/iibZa2tbGEg/maxresdefault.jpg"))
+	
 	CATEGORIES107D(General_LanguageL, background, background2) #אדיבו
 	
 	CATEGORIES107I(General_LanguageL, background, background2) #צוות אומי זומי
@@ -2538,7 +2547,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	
 	if 'English' in General_LanguageL:
 		list.append('&youtube_id=dkegK4ETWsc')
-	addDir("ג'ורג׳ הסקרן",list,17,'http://www.seret.co.il/images/movies/curiousgeorge/curiousgeorge2.jpg','','1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10716).encode('utf-8'),list,17,'http://www.seret.co.il/images/movies/curiousgeorge/curiousgeorge2.jpg',addonString(107160).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 	
 	CATEGORIES107C(General_LanguageL, background, background2) #קטנטנים - בוב הבנאי
 	
