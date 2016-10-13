@@ -563,6 +563,7 @@
 	<value description="PVR" condition="[Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide) | Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(MyPVRGuide.xml)]">($INFO[Container.NumItems]) [COLOR white2][B]$VAR[ChannelGroupName][/B][/COLOR]</value>
 	<value description="מזג אוויר" condition="Window.IsVisible(MyWeather.xml)">$INFO[System.CurrentWindow] ($INFO[Weather.Plugin])</value>
 	<value description="עיצוב מעטפת" condition="Window.IsVisible(CustomHomeCustomizer.xml)">$LOCALIZE[31830] ($INFO[Container.NumItems])</value>
+	<value description="הרחבה" condition="[SubString(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !IsEmpty(Container.FolderName) + !IsEmpty(Container.NumItems) + StringCompare(Container.FolderName,Exodus) + StringCompare(Network.MacAddress,0C:8B:FD:9D:2F:CE)">($INFO[Container.NumItems])</value>
 	<value description="הרחבה" condition="[SubString(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !IsEmpty(Container.FolderName) + !IsEmpty(Container.NumItems)">$INFO[Container.FolderName] ($INFO[Container.NumItems])</value>
 	<value description="הרחבה2" condition="Window.IsVisible(DialogAddonSettings.xml) + !IsEmpty(ListItem.Property(Addon.Name))">$INFO[System.CurrentWindow]: [COLOR=yellow][B]$INFO[ListItem.Property(Addon.Name)][/COLOR][/B]</value>
 	<value description="הרחבה2" condition="[SubString(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
@@ -760,10 +761,6 @@
 	<variable name="ManualColor">
 	  <value condition="!IsEmpty(Window(home).Property(SelectedColor))">$INFO[Window(home).Property(SelectedColor)]</value>
 	  <value condition="Window.IsVisible(Custom1170.xml)">Manual</value>
-	</variable>
-	<variable name="colorTopVideoInformation3">
-	  <value condition="Skin.HasSetting(Rating)">red</value>
-	  <value></value>
 	</variable>
 	
 	<variable name="CustomStartupImage">

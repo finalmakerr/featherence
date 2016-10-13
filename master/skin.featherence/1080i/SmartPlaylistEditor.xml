@@ -230,5 +230,6 @@
         </control>
       </control>
     </control>
+    <include>WindowsBusy</include>
   </controls>
 </window>

@@ -858,8 +858,8 @@ msgid "Color the volume icon."
 msgstr "צבע את סמל עוצמת הקול."
 
 msgctxt "#31506"
-msgid ""
-msgstr ""
+msgid "Side video information"
+msgstr "מידע וידאו צדדי"
 
 msgctxt "#31507"
 msgid ""

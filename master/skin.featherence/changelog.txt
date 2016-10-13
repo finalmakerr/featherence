@@ -16,7 +16,7 @@ Featherence v0.7.0 (xx-xx-16)
 - Added WINDOW_DIALOG_CMS_OSD_SETTINGS.
 
 ------------------------
-Featherence v0.6.2 (xx-Sep-16)
+Featherence v0.6.2 (13-Oct-16)
 ------------------------
 - Added busy transition for skin windows.
 - Added extra coloring support for DialogNumeric window (Synced with DialogKeyboard).
@@ -59,7 +59,7 @@ Subtitles window will be auto faded also when there is no subtitle enable and no
 - Minor update of Topvideoinformation window.
 
 ------------------------
-Featherence v0.6.1 (02-Sep-16)
+Featherence v0.6.1 (02-Oct-16)
 ------------------------
 - Added noification for unlocking a button with a password.
 - Added option to always hide library updating progress dialog when watching a video.

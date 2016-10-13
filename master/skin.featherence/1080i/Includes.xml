@@ -568,8 +568,7 @@
 			  <height>24</height>
 			  <width>125</width>
 			  <aspectratio align="center">keep</aspectratio>
-			  <include>Fade_TopVideoInformationOverlay</include>
-			  <texture background="true" colordiffuse="$VAR[colorTopVideoInformation3]">$VAR[TopVideoInformation3]</texture>
+			  <texture background="true" colordiffuse="$VAR[TopVideoInformationFontColor]">$VAR[TopVideoInformation3]</texture>
 			  <visible>!IsEmpty(Control.GetLabel(1103))</visible>
 			  <visible>!Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(DialogVideoInfo.xml) + ![System.IdleTime(3) + !System.IdleTime(6)]</visible>
 		  </control>
