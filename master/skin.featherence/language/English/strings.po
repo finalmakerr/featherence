@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 
 msgctxt "#31000"
-msgid "Choose a default lyric addon."
+msgid "Choose a default lyrics addon."
 msgstr "בחר הרחבה ברירת מחדל למילים לשירים."
 
 msgctxt "#31001"
@@ -10,7 +10,7 @@ msgid "Featherence rating method"
 msgstr "Featherence שיטת דירוג"
 
 msgctxt "#31002"
-msgid "Enable this feature in order to have a better rating system for movies, tvshows and youtube videos.[CR][COLOR=red]If disable the rating will be as you familar, Movies and Tvshows rating will most likely be always above 2.5 stars.[/COLOR]"
+msgid "Enable this feature in order to have a better rating system for movies, tvshows and youtube videos.[CR][COLOR=red]If disabled the rating will be as you 're familiar with, Movies and Tvshows rating will most likely be always above 2.5 stars.[/COLOR]"
 msgstr "הפעל אפשרות זאת בכדי לכפות דירוג סרטים / סדרות / סרטונים(יו-טיוב) בתצורה מיטבית.[CR][COLOR=red]אם אפשרות זו מבוטלת... דירוג סרטים / סדרות יהיה בהכרח תמיד גבוהה מ-2.5 כוכבים.[/COLOR]"
 
 msgctxt "#31003"
@@ -18,7 +18,7 @@ msgid "Save/Load"
 msgstr "שמירה/טעינה"
 
 msgctxt "#31004"
-msgid "Choose this option for saving/loading/changing your skin design.[CR]The configuration files maybe used on any machine!"
+msgid "Choose this option for saving/loading/changing your skin design.[CR]The configuration files may be used on any machine!"
 msgstr "באחר באפשרות באם ברצונך לשמור/לטעון/לשנות את הגדרות העיצוב שלך.[CR]ניתן להשתמש בקובץ השמור על כל מכשיר או להעביר לחבר!"
 
 msgctxt "#31005"
@@ -26,7 +26,7 @@ msgid "Reset default buttons name/icons"
 msgstr "איפוס שמות/סמלים כפתורים ברירת מחדל"
 
 msgctxt "#31006"
-msgid "This button is useful when you have changed your system language or if icons are missing in the default buttons."
+msgid "This button is useful whenever your system language was changed or if icons are missing in the default buttons."
 msgstr "כפתור זה שימושי אם שינית את שפת המערכת או אם לא מופיעים סמלים בכפתורי ברירת מחדל."
 
 msgctxt "#31007"
@@ -90,7 +90,7 @@ msgid "When choosing button fanart."
 msgstr "כאשר בוחרים פאנארט לכפתור."
 
 msgctxt "#31038"
-msgid "Allow Tips on wait"
+msgid "Allow Tips while busy"
 msgstr "אפשר טיפים במצב המתנה"
 
 msgctxt "#31039"
@@ -98,7 +98,7 @@ msgid "Unfocus home buttons"
 msgstr "כפתורי בית לא נבחר"
 
 msgctxt "#31040"
-msgid "If you choose NO, the buttons will have thier transperancy increased on user idle or while navigating the widget.[CR]In some views the buttons may drop down for clearer fanart."
+msgid "If you choose NO, buttons will have their transperancy increased when idling or while navigating the widget.[CR]In some views the buttons may drop down for clearer fanart."
 msgstr "אם תבחר לא הכפתורים יקבלו שקיפות כאשר אין פעילות משתמש או בזמן ניווט בו'ידגט.[CR]בחלק מהתצוגות הכפתורים אף יצופו למטה בכדי להציג פאנארט נקי."
 
 msgctxt "#31041"
@@ -138,7 +138,7 @@ msgid "Create New Item"
 msgstr "צור פריט חדש"
 
 msgctxt "#31050"
-msgid "Fanart Transperancy"
+msgid "Fanart Transparency"
 msgstr "שקיפות פאנארט"
 
 msgctxt "#31051"
@@ -166,7 +166,7 @@ msgid ""
 msgstr ""
 
 msgctxt "#31057"
-msgid "Buttons Shape"
+msgid "Button Shape"
 msgstr "צורת כפתורים"
 
 msgctxt "#31058"
@@ -190,7 +190,7 @@ msgid "Dialogues"
 msgstr "דיאלוגים"
 
 msgctxt "#31063"
-msgid "Reposition effect many dialogs such as DialogYesNo, DialogOK, DialogProgress and more.."
+msgid "Reposition effect in many dialogs such as DialogYesNo, DialogOK, DialogProgress and more.."
 msgstr "מיקום מחדש חל על חלונות דיאלוגים רבים כגון:[CR]דיאלוג כן/לא, דיאלוג אישור, דיאלוג התקדמות ועוד.."
 
 msgctxt "#31064"
@@ -210,7 +210,7 @@ msgid "Allow action change for default buttons"
 msgstr "אפשר שינוי פעולת כפתורי ברירת מחדל"
 
 msgctxt "#31068"
-msgid "If you choose YES, you be able to change the action for default buttons.[CR]If you choose NO, default action will be triggered on all default buttons."
+msgid "If you choose YES, you 'll be able to change the action for default buttons.[CR]If you choose NO, default action will be triggered on all default buttons."
 msgstr "אם בחרת כן, תוכל לבחור לשנות פעולת כפתורי ברירת מחדל.[CR]אם בחרת לא, פעולת כפתורי ברירת מחדל תידרס למקור."
 
 msgctxt "#31069"
@@ -242,7 +242,7 @@ msgid "Cross Fade Time"
 msgstr "זמן חפיפה בין תמונה לתמונה"
 
 msgctxt "#31076"
-msgid "Your icons will be stretch on the entire button's frame."
+msgid "Your icons will be stretched to fill entire button frame."
 msgstr "הסמלים שלך יהיו בגודל של הכפתור עצמו."
 
 msgctxt "#31077"
@@ -290,11 +290,11 @@ msgid "Always hide library update during fullscreen playback."
 msgstr "הסתר תמיד עדכוני ספרייה בזמן ניגון במסך מלא."
 
 msgctxt "#31088"
-msgid "Choose NO in order to hide the library update dialog window when you're watching videos."
+msgid "Choose NO in order to hide the library update dialog window while watching videos."
 msgstr "בחר "לא" בכדי להסתיר את חלון עדכוני ספרייה בזמן שהינך צופה בוידאו."
 
 msgctxt "#31089"
-msgid "Choose YES and the thumbnail will be changed according to the selected action.[CR]In additional the button name will be change as well."
+msgid "Choose YES and the thumbnail will be changed according to the selected action.[CR]Additionally, the button name will be changed as well."
 msgstr "אם תבחר כן, כשתשנה פעולה לכפתור גם התמונה תשתנה בהתאם.[CR]בנוסף לתמונה גם השם כפתור ישתנה בהתאם."
 
 msgctxt "#31090"
@@ -310,7 +310,7 @@ msgid "Reshape icons"
 msgstr "חיתוך סמלים לפי צורה"
 
 msgctxt "#31093"
-msgid "Choose this option in order to change the shape of yours icons to match your choosen button's shapes."
+msgid "Choose this option in order to change the shape of your icons to match your choosen button shapes."
 msgstr "בחר באפשרות זו בכדי לחתוך סמלים מצורתם המקורית לצורה בה בחרת."
 
 msgctxt "#31094"
@@ -322,7 +322,7 @@ msgid "Choose this option in order to change the position for"
 msgstr "בחר באפשרות זו בכדי לשנות מיקום עבור"
 
 msgctxt "#31096"
-msgid "[CR][COLOR=green]Note: This option take effect on the entire skin.[/COLOR]"
+msgid "[CR][COLOR=green]Note: This option takes effect on the entire skin.[/COLOR]"
 msgstr "[CR][COLOR=green]שים לב: הגדרה זו משפיעה על המעטפת כולה.[/COLOR]"
 
 msgctxt "#31097"
@@ -338,7 +338,7 @@ msgid "Shuffle Fanart (Randomize)"
 msgstr "ערבוב פאנארט (אקראי)"
 
 msgctxt "#31100"
-msgid "Choose NO if you want the images to be always toggle in the same order."
+msgid "Choose NO if you want the images to be always toggled in the same order."
 msgstr "בחר לא אם ברצונך שהתמונות ישתנו בסדר חוזר."
 
 msgctxt "#31101"
@@ -358,7 +358,7 @@ msgid "Reschedule lock up"
 msgstr "תזמון נעילה מחדש"
 
 msgctxt "#31105"
-msgid "Choose "0" For disable this feature.[CR]Choose higher number in order to relock your buttons after x minutes."
+msgid "Choose "0" For disabling this feature.[CR]Choose higher number in order to relock your buttons after x minutes."
 msgstr "בחר "0" בכדי להשבית את האפשרות הזו.[CR]בחר מספר גדול מ-0 בכדי לנעול את הכפתורים מחדש לאחר x דקות."
 
 msgctxt "#31106"
@@ -434,7 +434,7 @@ msgid "Choose a color for your virtual keyboard."
 msgstr "בחר צבע עבור כפתורי מקלדת וירטואלית."
 
 msgctxt "#31124"
-msgid "Unocus Keyboards buttons"
+msgid "Unfocus Keyboards buttons"
 msgstr "כפתורי מקלדת לא נבחרים"
 
 msgctxt "#31125"
@@ -442,7 +442,7 @@ msgid "Focus keyboards buttons"
 msgstr "כפתורי מקלדת נבחרים"
 
 msgctxt "#31126"
-msgid "Choose color for all menu's buttons"
+msgid "Choose color for all menu buttons"
 msgstr "בחירת צבע עבור כל כפתורי התפריט."
 
 msgctxt "#31127"
@@ -458,7 +458,7 @@ msgid "Allow thumbnail fanart"
 msgstr "אפשר פאנארט מפוסטר"
 
 msgctxt "#31130"
-msgid "Hide colors and textures when fanart exist."
+msgid "Hide colors and textures when fanart exists."
 msgstr "הסתר צבעים וטקסטורות כאשר קיים פאנארט"
 
 msgctxt "#31131"
@@ -466,7 +466,7 @@ msgid "[CR][COLOR=red]Will not work when Clear Fanart is enabled and triggered.[
 msgstr "[CR][COLOR=red]אפשרות זו לא תעבוד עם פאנארט נקי מופעל ותקף.[/COLOR]"
 
 msgctxt "#31132"
-msgid "[CR][COLOR=green]This option effect the entire interface.[/COLOR]"
+msgid "[CR][COLOR=green]This option affects the entire interface.[/COLOR]"
 msgstr "[CR][COLOR=green]אפשרות זו משפיעה על הממשק כולו.[/COLOR]"
 
 msgctxt "#31133"
@@ -602,7 +602,7 @@ msgid "Color font dialog title"
 msgstr "צבע פונט כותרת דיאלוג"
 
 msgctxt "#31442"
-msgid "Choose this option in order to color the following windows's backgrounds: Yes/No, Ok, Busy, Progress."
+msgid "Choose this option in order to color the following windows' backgrounds: Yes/No, Ok, Busy, Progress."
 msgstr "בחר באפשרות זו בכדי לשנות את צבע הרקע של חלונות דיאלוגים: כן/לא, אוקיי, עסוק, טעינה."
 
 msgctxt "#31443"
@@ -690,7 +690,7 @@ msgid "Locking mark transperancy"
 msgstr "שקיפות סמן נעילה"
 
 msgctxt "#31464"
-msgid "Choose the transperancy level of the lock mark."
+msgid "Choose the transparency level of the lock mark."
 msgstr "בחר את רמת שקיפות הסמן נעילה."
 
 msgctxt "#31465"
@@ -730,7 +730,7 @@ msgid "Video information font size"
 msgstr "גודל גופן פרטי וידאו"
 
 msgctxt "#31474"
-msgid "Choose YES if you need a glasses in order to read the video plot :)"
+msgid "Choose YES if you need glasses in order to read the video plot :)"
 msgstr "בחר "כן" אם אתה צריך משקפיים בכדי לקרוא את עלילת הסרט/פרק."
 
 msgctxt "#31475"
@@ -786,7 +786,7 @@ msgid "Enable trailer button"
 msgstr "הצג כפתור קדימון"
 
 msgctxt "#31488"
-msgid "Trailer button display under each button that contain a trailer.[CR]To be activate by mouse or touch device."
+msgid "Trailer button display under each button that contains a trailer.[CR]To be activated by mouse or touch device."
 msgstr "כפתור קדימון יופיע על-יד כל כפתור המכיל קדימון.[CR]מיועד להפעלה עם העכבר/מסך מגע."
 
 msgctxt "#31489"
@@ -1692,11 +1692,11 @@ msgid "Choose this option to allow fanart view while browsing home menu."
 msgstr "בחר באפשרות זו בכדי לאפשר תצוגת פאנארט בזמן ניווט בחלון הבית."
 
 msgctxt "#31837"
-msgid "Choose a color for home menu and sub menu icons.[CR]Effect others buttons across the skin as well."
+msgid "Choose a color for home menu and sub menu icons.[CR]Affects other buttons across the skin as well."
 msgstr "בחר צבע עבור אייקונים בתפריט הבית ובתת תפריט.[CR]משפיע גם על כפתורים נוספים בסקין!"
 
 msgctxt "#31838"
-msgid "Transperancy"
+msgid "Transparency"
 msgstr "שקוף"
 
 msgctxt "#31839"
@@ -1720,11 +1720,11 @@ msgid "Choose this option in order to change color for"
 msgstr "בחר באפשרות זו בכדי לשנות צבע עבור"
 
 msgctxt "#31844"
-msgid "Choose this option in order to change the transperancy for"
+msgid "Choose this option in order to change transperancy for"
 msgstr "בחר באפשרות זו בכדי לשנות את רמת השקיפות עבור"
 
 msgctxt "#31845"
-msgid "Choose this option in order to change the texture for"
+msgid "Choose this option in order to change texture for"
 msgstr "בחר באפשרות זו אם ברצונך לשנות את הטקסטורה עבור"
 
 msgctxt "#31846"
@@ -1784,7 +1784,7 @@ msgid "Note: Current Subtitle in yellow."
 msgstr "הערה: תרגום נוכחי (צהוב)"
 
 msgctxt "#31859"
-msgid "Note: this subtitle has been previously choosen."
+msgid "Note: this subtitle has been previously chosen."
 msgstr "הערה: תרגום זה נבחר לאחרונה (אפור)."
 
 msgctxt "#31860"
