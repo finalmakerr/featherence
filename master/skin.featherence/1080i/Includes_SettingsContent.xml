@@ -37,10 +37,9 @@
 		<onclick>noop</onclick>
 	</item>
 	
-	<item id="23" description="">
-		<label></label>
+	<item id="23" description="עוצמה">
+		<label>13376</label>
 		<onclick>noop</onclick>
-		<visible>false</visible>
 	</item>
 	
 	<item id="22" description="דיאלוגים">
@@ -215,6 +214,15 @@
 		<property name="rinfo"></property>
 		<onclick>SetProperty(TEMP,MouseColor,home)</onclick>
 		<onclick>ActivateWindow(1170)</onclick>
+		<visible>Container(100).Hasfocus(24)</visible>
+	  </item>
+	  
+	  <item id="157" description="תמיכה נוספת בעכבר">
+		<label>$LOCALIZE[31477]</label>
+		<label2>$VAR[157label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/mouse.png</thumb>
+		<property name="rinfo">$LOCALIZE[31479]</property>
+		<onclick>Skin.ToggleSetting(ExtraMouseSupport)</onclick>
 		<visible>Container(100).Hasfocus(24)</visible>
 	  </item>
 	  
@@ -1106,6 +1114,134 @@
 		<visible>Container(100).Hasfocus(27)</visible>
 	  </item>
 	  
+	  <!--360-389 עוצמה-->
+	  <item id="361" description="הצג סמל עוצמת קול">
+		<label>$LOCALIZE[31490]</label>
+		<label2>$VAR[361label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/speaker.png</thumb>
+		<property name="rinfo">$LOCALIZE[31491]</property>
+		<onclick>Skin.ToggleSetting(VolumeIcon)</onclick>
+		<onclick>Action(VolumeUp)</onclick>
+		<onclick>Action(VolumeDown)</onclick>
+		<visible>Container(100).Hasfocus(23)</visible>
+	  </item>
+	  
+	  <item id="362" description="בחר סמל עוצמת קול">
+		<label>$LOCALIZE[31493]</label>
+		<label2>$INFO[Skin.String(VolumeIcon)]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/speaker.png</thumb>
+		<property name="rinfo">$LOCALIZE[31503]</property>
+		<onclick>Action(VolumeUp)</onclick>
+		<onclick>Action(VolumeDown)</onclick>
+		<onclick condition="!Skin.String(VolumeIcon)">Skin.SetImage(VolumeIcon)</onclick>
+		<onclick condition="Skin.String(VolumeIcon)">Skin.SetString(VolumeIcon,)</onclick>
+		<onclick>Action(VolumeUp)</onclick>
+		<onclick>Action(VolumeDown)</onclick>
+		<visible>Container(100).Hasfocus(23)</visible>
+	  </item>
+	  
+	  <item id="363" description="צבע רקע עוצמת קול">
+		<label>$LOCALIZE[31494]</label>
+		<label2>$INFO[Skin.String(VolumeBackgroundColor.name)]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/paintbucket.png</thumb>
+		<property name="rinfo">$LOCALIZE[31504]</property>
+		<onclick>SetProperty(TEMP,VolumeBackgroundColor,home)</onclick>
+		<onclick>ActivateWindow(1170)</onclick>
+		<visible>Container(100).Hasfocus(23)</visible>
+	  </item>
+	  
+	  <item id="364" description="צבע סמל עוצמת קול">
+		<label>$LOCALIZE[31495]</label>
+		<label2>$INFO[Skin.String(VolumeIconColor.name)]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/paintbrush.png</thumb>
+		<property name="rinfo">$LOCALIZE[31505]</property>
+		<onclick>SetProperty(TEMP,VolumeIconColor,home)</onclick>
+		<onclick>ActivateWindow(1170)</onclick>
+		<visible>Container(100).Hasfocus(23)</visible>
+	  </item>
+	  
+	  <item id="365" description="מיקום עוצמת קול">
+		<label>$LOCALIZE[31492]</label>
+		<label2>$VAR[365label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/ruler.png</thumb>
+		<property name="rinfo">$LOCALIZE[31500]</property>
+		<onclick condition="!Skin.String(VolumePosition)">Skin.SetString(VolumePosition,0)</onclick>
+		<onclick condition="Skin.String(VolumePosition,0)">Skin.SetString(VolumePosition,1)</onclick>
+		<onclick condition="Skin.String(VolumePosition,1)">Skin.SetString(VolumePosition,2)</onclick>
+		<onclick condition="Skin.String(VolumePosition,2)">Skin.SetString(VolumePosition,3)</onclick>
+		<onclick condition="Skin.String(VolumePosition,3)">Skin.SetString(VolumePosition,4)</onclick>
+		<onclick condition="Skin.String(VolumePosition,4)">Skin.SetString(VolumePosition,)</onclick>
+		<onclick condition="Skin.String(VolumePosition,4)">Skin.SetString(VolumePosition,)</onclick>
+		<onclick>Action(VolumeUp)</onclick>
+		<onclick>Action(VolumeDown)</onclick>
+		<visible>Container(100).Hasfocus(23)</visible>
+	  </item>
+	  
+	  <item id="366" description="שקיפות רקע עוצמת קול">
+		<label>$LOCALIZE[31496]</label>
+		<label2>$INFO[Skin.String(VolumeBackgroundOverlay)]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/eye.png</thumb>
+		<property name="rinfo">$LOCALIZE[31844] $LOCALIZE[31496]</property>
+		<onclick condition="Skin.String(VolumeBackgroundOverlay, )">Skin.SetString(VolumeBackgroundOverlay, 100)</onclick>
+		<onclick condition="Skin.String(VolumeBackgroundOverlay, 100)">Skin.SetString(VolumeBackgroundOverlay, 95)</onclick>
+		<onclick condition="Skin.String(VolumeBackgroundOverlay, 95)">Skin.SetString(VolumeBackgroundOverlay, 90)</onclick>
+		<onclick condition="Skin.String(VolumeBackgroundOverlay, 90)">Skin.SetString(VolumeBackgroundOverlay, 85)</onclick>
+		<onclick condition="Skin.String(VolumeBackgroundOverlay, 85)">Skin.SetString(VolumeBackgroundOverlay, 80)</onclick>
+		<onclick condition="Skin.String(VolumeBackgroundOverlay, 80)">Skin.SetString(VolumeBackgroundOverlay, 70)</onclick>
+		<onclick condition="Skin.String(VolumeBackgroundOverlay, 70)">Skin.SetString(VolumeBackgroundOverlay, 60)</onclick>
+		<onclick condition="Skin.String(VolumeBackgroundOverlay, 60)">Skin.SetString(VolumeBackgroundOverlay, 50)</onclick>
+		<onclick condition="Skin.String(VolumeBackgroundOverlay, 50)">Skin.SetString(VolumeBackgroundOverlay, 40)</onclick>
+		<onclick condition="Skin.String(VolumeBackgroundOverlay, 40)">Skin.SetString(VolumeBackgroundOverlay, 30)</onclick>
+		<onclick condition="Skin.String(VolumeBackgroundOverlay, 30)">Skin.SetString(VolumeBackgroundOverlay, 20)</onclick>
+		<onclick condition="Skin.String(VolumeBackgroundOverlay, 20)">Skin.SetString(VolumeBackgroundOverlay, )</onclick>
+		<onclick>Action(VolumeUp)</onclick>
+		<onclick>Action(VolumeDown)</onclick>
+		<visible>Container(100).Hasfocus(23)</visible>
+	  </item>
+	  
+	  <item id="367" description="שקיפות סמל עוצמת קול">
+		<label>$LOCALIZE[31497]</label>
+		<label2>$INFO[Skin.String(VolumeIconOverlay)]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/eye.png</thumb>
+		<property name="rinfo">$LOCALIZE[31844] $LOCALIZE[31497]</property>
+		<onclick condition="Skin.String(VolumeIconOverlay, )">Skin.SetString(VolumeIconOverlay, 100)</onclick>
+		<onclick condition="Skin.String(VolumeIconOverlay, 100)">Skin.SetString(VolumeIconOverlay, 95)</onclick>
+		<onclick condition="Skin.String(VolumeIconOverlay, 95)">Skin.SetString(VolumeIconOverlay, 90)</onclick>
+		<onclick condition="Skin.String(VolumeIconOverlay, 90)">Skin.SetString(VolumeIconOverlay, 85)</onclick>
+		<onclick condition="Skin.String(VolumeIconOverlay, 85)">Skin.SetString(VolumeIconOverlay, 80)</onclick>
+		<onclick condition="Skin.String(VolumeIconOverlay, 80)">Skin.SetString(VolumeIconOverlay, 70)</onclick>
+		<onclick condition="Skin.String(VolumeIconOverlay, 70)">Skin.SetString(VolumeIconOverlay, 60)</onclick>
+		<onclick condition="Skin.String(VolumeIconOverlay, 60)">Skin.SetString(VolumeIconOverlay, 50)</onclick>
+		<onclick condition="Skin.String(VolumeIconOverlay, 50)">Skin.SetString(VolumeIconOverlay, 40)</onclick>
+		<onclick condition="Skin.String(VolumeIconOverlay, 40)">Skin.SetString(VolumeIconOverlay, 30)</onclick>
+		<onclick condition="Skin.String(VolumeIconOverlay, 30)">Skin.SetString(VolumeIconOverlay, 20)</onclick>
+		<onclick condition="Skin.String(VolumeIconOverlay, 20)">Skin.SetString(VolumeIconOverlay, )</onclick>
+		<onclick>Action(VolumeUp)</onclick>
+		<onclick>Action(VolumeDown)</onclick>
+		<visible>Container(100).Hasfocus(23)</visible>
+	  </item>
+	  
+	  <item id="368" description="הצג רמת אחוז עוצמת קול">
+		<label>$LOCALIZE[31498]</label>
+		<label2>$VAR[368label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/speaker.png</thumb>
+		<property name="rinfo">$LOCALIZE[31499]</property>
+		<onclick>Skin.ToggleSetting(VolumePercent)</onclick>
+		<onclick>Action(VolumeUp)</onclick>
+		<onclick>Action(VolumeDown)</onclick>
+		<visible>Container(100).Hasfocus(23)</visible>
+	  </item>
+	  
+	  <item id="369" description="הצג תמיד עוצמת קול במצב השתקה">
+		<label>$LOCALIZE[31501]</label>
+		<label2>$VAR[369label2]</label2>
+		<thumb>images/speaker2.png</thumb>
+		<property name="rinfo">$LOCALIZE[31502]</property>
+		<onclick>Skin.ToggleSetting(VolumeMute)</onclick>
+		<onclick>Action(Mute)</onclick>
+		<onclick>Action(Mute)</onclick>
+		<visible>Container(100).Hasfocus(23)</visible>
+	  </item>
 	  
 	  <!--390-409 מתקדם-->
 	  <item id="392" description="איפוס הגדרות מעטפת">
@@ -1160,6 +1296,15 @@
 		<onclick condition="Skin.String(WindowsOpenClose, 7)">Skin.SetString(WindowsOpenClose, 8)</onclick>
 		<onclick condition="Skin.String(WindowsOpenClose, 8)">Skin.SetString(WindowsOpenClose, 9)</onclick>
 		<onclick condition="Skin.String(WindowsOpenClose, 9)">Skin.SetString(WindowsOpenClose, )</onclick>
+		<visible>Container(100).Hasfocus(25)</visible>
+	  </item>
+	  
+	  <item id="394" description="אפשר אנימציית זום בזמן מעבר בין חלונות">
+		<label>$LOCALIZE[31483]</label>
+		<label2>$VAR[399label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
+		<property name="rinfo">$LOCALIZE[31484]</property>
+		<onclick>Skin.ToggleSetting(WindowsOpenClose)</onclick>
 		<visible>Container(100).Hasfocus(25)</visible>
 	  </item>
 	  
@@ -1940,6 +2085,15 @@
 		<onclick description="" condition="Skin.String(IntroDelay,4)">Skin.SetString(IntroDelay,5)</onclick>
 		<onclick description="" condition="Skin.String(IntroDelay,5)">Skin.SetString(IntroDelay,)</onclick>
 		<visible>Container(100).Hasfocus(2) + [!Skin.HasSetting(StartUpMusic) | Skin.String(StartUpVideo)]</visible>
+	  </item>
+	  <item id="24" description="אפשר Next Aired">
+		<label>$LOCALIZE[31485]</label>
+		<label2>$VAR[24label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/tvshows.png</thumb>
+		<property name="rinfo">$LOCALIZE[31486]</property>
+		<onclick>Skin.ToggleSetting(EnableNextAired)</onclick>
+		<onclick condition="!System.HasAddon(script.tv.show.next.aired)">RunScript(script.featherence.service,,?mode=231&amp;value=script.tv.show.next.aired)</onclick>
+		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
 	   <item id="29" description="תמונה מותאמת אישית בהפעלה">
 		<label>$LOCALIZE[31869]</label>

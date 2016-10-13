@@ -17,6 +17,6 @@
 	  <visible>false</visible>
 	  <onclick>ActivateWindow(VideoOSD.xml)</onclick>
 	</control>
-    
+	<include>WindowsBusy</include>
   </controls>
 </window>

@@ -17,6 +17,7 @@
 	  <include>Widget_Home</include>
 	  <include>TopInformation</include>
 	  <include>TopVideoInformation</include>
+	  <include>WindowsBusy</include>
 	</control>
   </controls>
 

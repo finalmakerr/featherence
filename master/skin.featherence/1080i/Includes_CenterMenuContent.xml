@@ -240,4 +240,50 @@
 	</control>
 	-->
   </include>
+
+  <include name="CenterMenuContent_707" description="עוצמת קול">
+	<item id="0" description="">
+	    <onclick>Action(Close)</onclick>
+	    <label>--></label>
+	</item>
+	<item id="1" description="השתק">
+		<onclick>Action(Mute)</onclick>
+	    <label>$LOCALIZE[31478]</label>
+	    <visible></visible>
+	</item>
+	<item id="2" description="עוצמה +">
+	    <onclick>Action(VolumeUp)</onclick>
+	    <label>$LOCALIZE[13376] +</label>
+	</item>
+	<item id="3" description="עוצמה -">
+	    <onclick>Action(VolumeDown)</onclick>
+	    <label>$LOCALIZE[13376] -</label>
+	</item>
+  </include>
+  
+  <include name="CenterMenuContent_703" description="תרגום">
+	<item id="0" description="">
+	    <onclick>Action(Close)</onclick>
+	    <label>--></label>
+	</item>
+	<item id="1" description="בחירת תרגום">
+		<onclick>Dialog.Close(1175)</onclick>
+		<onclick>ActivateWindow(SubtitleSearch)</onclick>
+	    <label>$LOCALIZE[31480]</label>
+	    <visible></visible>
+	</item>
+	<item id="2" description="השהיית תרגום +">
+	    <onclick>Action(SubtitleDelayPlus)</onclick>
+	    <label>$LOCALIZE[31481] +</label>
+	</item>
+	<item id="3" description="השהיית תרגום -">
+	    <onclick>Action(SubtitleDelayMinus)</onclick>
+	    <label>$LOCALIZE[31481] -</label>
+	</item>
+	<item id="4" description="הצג/הסתר תרגום">
+	    <onclick>Action(ShowSubtitles)</onclick>
+	    <label>$LOCALIZE[31482]</label>
+	</item>
+  </include>
+  
 </includes>

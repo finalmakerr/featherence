@@ -187,7 +187,7 @@
 		  <label>$LOCALIZE[20445] $LOCALIZE[244]</label>
 		  <selected>Skin.HasSetting(View50_Plus2)</selected>
 		  <onclick>Skin.ToggleSetting(View50_Plus2)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Skin.HasSetting(View50_SideVideoInformation)</visible>
         </control>
 		<control type="radiobutton" id="111" description="אפשר פאנארט מפוסטר">
           <include>SideMenuCommon</include>
@@ -251,7 +251,47 @@
 		  <onclick>Skin.ToggleSetting(View56_Fan)</onclick>
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(Admin)</visible>
         </control>
-		
+		<control type="radiobutton" id="116" description="הצג כפתור קדימון">
+          <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31487]</label>
+		  <selected>!Skin.HasSetting(EnableTrailerButton)</selected>
+		  <onclick>Skin.ToggleSetting(EnableTrailerButton)</onclick>
+		  <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31012])</visible>
+		  <visible>Container.Content(movies) | !IsEmpty(ListItem.Trailer)</visible>
+        </control>
+		<control type="radiobutton" id="117" description="הצג פאנארט מתמונת פרק/עונה">
+          <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31489]</label>
+		  <selected>Skin.HasSetting(EpisodeFanart)</selected>
+		  <onclick>Skin.ToggleSetting(EpisodeFanart)</onclick>
+		  <visible>!IsEmpty(ListItem.Thumb) + [Container.Content(seasons) | Container.Content(episodes)] + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season)</visible>
+        </control>
+		<control type="radiobutton" id="118" description="מידע וידאו צדדי">
+          <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31506]</label>
+		  <selected>Skin.HasSetting(View50_SideVideoInformation)</selected>
+		  <onclick>Skin.ToggleSetting(View50_SideVideoInformation)</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(Admin)</visible>
+        </control>
+		<control type="radiobutton" id="119" description="גודל גופן פרטי וידאו">
+          <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31473]</label>
+		  <selected>Skin.HasSetting(TopVideoInformationFontSize)</selected>
+		  <onclick>Skin.ToggleSetting(TopVideoInformationFontSize)</onclick>
+		  <visible></visible>
+        </control>
 		<control type="radiobutton" id="139" description="פאנארט תמיד">
 		  <include>SideMenuCommon</include>
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
@@ -979,6 +1019,16 @@
 	  <onclick condition="Window.IsActive(TVGuide) + !IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
 	  <visible>true</visible>
 	</control>
+	<control type="button" id="33" description="Radio Channels">
+	  <include>SideMenuCommon</include>
+	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
+	  <label>$VAR[label33]</label>
+	  <onclick condition="Window.IsVisible(radiochannels)">ActivateWindow(tvchannels)</onclick>
+	  <onclick condition="Window.IsVisible(tvchannels)">ActivateWindow(RadioChannels)</onclick>
+	  <visible>true</visible>
+	</control>
 	<control type="button" id="31" description="מדריך טלוויזיה/ערוצי טלוויזיה">
 	  <include>SideMenuCommon</include>
 	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
@@ -991,15 +1041,6 @@
 	</control>
 	<include>button3_sort</include>
 	<include>button4_sortorder</include>
-	<control type="button" id="33" description="Radio Channels">
-	  <include>SideMenuCommon</include>
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-	  <font>size28</font>
-	  <label>$LOCALIZE[19024]</label>
-	  <onclick>ActivateWindow(RadioChannels)</onclick>
-	  <visible>false</visible>
-	</control>
 	<control type="button" id="34" description="הקלטות">
 	  <include>SideMenuCommon</include>
 	  <visible>Skin.HasSetting(Admin)</visible>
@@ -1036,7 +1077,7 @@
 	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 	  <font>size28</font>
 	  <label>19199</label>
-	  <onclick>ActivateWindow(pvrosdchannels)</onclick>
+	  <onclick>ActivateWindow(pvrchannelmanager)</onclick>
 	</control>
 	
 	<control type="radiobutton" id="5" description="Group recording items by folder structure">
@@ -1240,7 +1281,7 @@
 		  <selected>ControlGroup(9001).HasFocus() | StringCompare(Window(home).Property(ViewsSettings),9001)</selected>
 		  <onclick condition="true">SetProperty(ViewsSettings,9001,home)</onclick>
 		  <onclick>AlarmClock(0,SetFocus(9001),0,silent)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+		  <!--<visible>StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>-->
 	  </control>
   </include>
   

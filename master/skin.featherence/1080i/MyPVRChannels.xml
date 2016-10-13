@@ -17,6 +17,7 @@
 	<include>MenuDesign_Left</include>
 	<include>ScrollBar</include>
 	<include>TopInformation</include>
+	<include>WindowsBusy</include>
 	
 	<control type="label" id="29">
       <visible>false</visible>

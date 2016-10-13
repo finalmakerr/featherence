@@ -285,82 +285,89 @@
    
    <include name="Fade_WindowsOpenClose">
      <animation type="WindowOpen" reversible="false" condition="!Skin.String(WindowsOpenClose)">
-	   <effect type="fade" time="200"/>
+	   <effect type="fade" start="40" end="100" time="440" />
 	 </animation>
      <animation type="WindowClose" reversible="false" condition="!Skin.String(WindowsOpenClose)">
-	   <effect type="fade" time="200"/>
+	   <effect type="fade" start="100" end="40" time="440" />
 	 </animation>
 	 
 	 <animation type="WindowOpen" reversible="false" condition="Skin.String(WindowsOpenClose,0)">
-	   <effect type="fade" time="0"/>
+	   <effect type="fade" start="40" end="100" time="0" />
 	 </animation>
      <animation type="WindowClose" reversible="false" condition="Skin.String(WindowsOpenClose,0)">
-	   <effect type="fade" time="0"/>
+	   <effect type="fade" start="100" end="40" time="0" />
 	 </animation>
 	 
 	 <animation type="WindowOpen" reversible="false" condition="Skin.String(WindowsOpenClose,1)">
-	   <effect type="fade" time="300"/>
+	   <effect type="fade" start="40" end="100" time="400" />
 	 </animation>
      <animation type="WindowClose" reversible="false" condition="Skin.String(WindowsOpenClose,1)">
-	   <effect type="fade" time="300"/>
+	   <effect type="fade" start="100" end="40" time="400" />
 	 </animation>
 	 
 	 <animation type="WindowOpen" reversible="false" condition="Skin.String(WindowsOpenClose,2)">
-	   <effect type="fade" time="400"/>
+	   <effect type="fade" start="40" end="100" time="500"/>
 	 </animation>
      <animation type="WindowClose" reversible="false" condition="Skin.String(WindowsOpenClose,2)">
-	   <effect type="fade" time="400"/>
+	   <effect type="fade" start="100" end="40" time="500"/>
 	 </animation>
 	 
 	 <animation type="WindowOpen" reversible="false" condition="Skin.String(WindowsOpenClose,3)">
-	   <effect type="fade" time="500"/>
+	   <effect type="fade" start="40" end="100" time="750"/>
 	 </animation>
      <animation type="WindowClose" reversible="false" condition="Skin.String(WindowsOpenClose,3)">
-	   <effect type="fade" time="500"/>
+	   <effect type="fade" start="100" end="40" time="750"/>
 	 </animation>
 	 
 	 <animation type="WindowOpen" reversible="false" condition="Skin.String(WindowsOpenClose,4)">
-	   <effect type="fade" time="600"/>
+	   <effect type="fade" start="40" end="100" time="1000"/>
 	 </animation>
      <animation type="WindowClose" reversible="false" condition="Skin.String(WindowsOpenClose,4)">
-	   <effect type="fade" time="600"/>
+	   <effect type="fade" start="100" end="40" time="1000"/>
 	 </animation>
 	 
 	 <animation type="WindowOpen" reversible="false" condition="Skin.String(WindowsOpenClose,5)">
-	   <effect type="fade" time="700"/>
+	   <effect type="fade" start="40" end="100" time="1250"/>
 	 </animation>
      <animation type="WindowClose" reversible="false" condition="Skin.String(WindowsOpenClose,5)">
-	   <effect type="fade" time="700"/>
+	   <effect type="fade" start="100" end="40" time="1250"/>
 	 </animation>
 	 
 	 <animation type="WindowOpen" reversible="false" condition="Skin.String(WindowsOpenClose,6)">
-	   <effect type="fade" time="800"/>
+	   <effect type="fade" start="40" end="100" time="1500"/>
 	 </animation>
      <animation type="WindowClose" reversible="false" condition="Skin.String(WindowsOpenClose,6)">
-	   <effect type="fade" time="800"/>
+	   <effect type="fade" start="100" end="40" time="1500"/>
 	 </animation>
 	 
 	 <animation type="WindowOpen" reversible="false" condition="Skin.String(WindowsOpenClose,7)">
-	   <effect type="fade" time="900"/>
+	   <effect type="fade" start="40" end="100" time="2000"/>
 	 </animation>
      <animation type="WindowClose" reversible="false" condition="Skin.String(WindowsOpenClose,7)">
-	   <effect type="fade" time="900"/>
+	   <effect type="fade" start="100" end="40" time="2000"/>
 	 </animation>
 	 
 	 <animation type="WindowOpen" reversible="false" condition="Skin.String(WindowsOpenClose,8)">
-	   <effect type="fade" time="1000"/>
+	   <effect type="fade" start="40" end="100" time="2500"/>
 	 </animation>
      <animation type="WindowClose" reversible="false" condition="Skin.String(WindowsOpenClose,8)">
-	   <effect type="fade" time="1000"/>
+	   <effect type="fade" start="100" end="40" time="2500"/>
 	 </animation>
 	 
 	 <animation type="WindowOpen" reversible="false" condition="Skin.String(WindowsOpenClose,9)">
-	   <effect type="fade" time="1100"/>
+	   <effect type="fade" start="40" end="100" time="3000"/>
 	 </animation>
      <animation type="WindowClose" reversible="false" condition="Skin.String(WindowsOpenClose,9)">
-	   <effect type="fade" time="1100"/>
+	   <effect type="fade" start="100" end="40" time="3000"/>
 	 </animation>
-
+	 
+	 <animation type="WindowOpen" reversible="false" condition="!Skin.HasSetting(WindowsOpenClose)">
+	   <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
+	 </animation>
+	 <animation type="WindowClose" reversible="false" condition="!Skin.HasSetting(WindowsOpenClose)">
+	   <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
+	 </animation>
+	 
    </include>
    
    <include name="Fade_TopVideoInformationOverlay">
@@ -430,6 +437,42 @@
 	 <animation condition="Skin.String(KeyboardBackgroundOverlay,90)" effect="fade" end="90" time="0">Conditional</animation>
 	 <animation condition="Skin.String(KeyboardBackgroundOverlay,95)" effect="fade" end="95" time="0">Conditional</animation>
 	 <animation condition="Skin.String(KeyboardBackgroundOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   
+   <include name="Fade_VolumeBackgroundOverlay">
+     <animation condition="!Skin.String(VolumeBackgroundOverlay)" effect="fade" end="50" time="0">Conditional</animation>
+	 
+     <animation condition="Skin.String(VolumeBackgroundOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeBackgroundOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeBackgroundOverlay,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeBackgroundOverlay,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeBackgroundOverlay,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeBackgroundOverlay,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeBackgroundOverlay,65)" effect="fade" end="65" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeBackgroundOverlay,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeBackgroundOverlay,80)" effect="fade" end="80" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeBackgroundOverlay,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeBackgroundOverlay,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeBackgroundOverlay,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeBackgroundOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
+   </include>
+   
+   <include name="Fade_VolumeIconOverlay">
+     <animation condition="!Skin.String(VolumeIconOverlay)" effect="fade" end="70" time="0">Conditional</animation>
+	 
+     <animation condition="Skin.String(VolumeIconOverlay,10)" effect="fade" end="10" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeIconOverlay,20)" effect="fade" end="20" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeIconOverlay,30)" effect="fade" end="30" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeIconOverlay,40)" effect="fade" end="40" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeIconOverlay,50)" effect="fade" end="50" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeIconOverlay,60)" effect="fade" end="60" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeIconOverlay,65)" effect="fade" end="65" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeIconOverlay,70)" effect="fade" end="70" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeIconOverlay,80)" effect="fade" end="80" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeIconOverlay,85)" effect="fade" end="85" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeIconOverlay,90)" effect="fade" end="90" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeIconOverlay,95)" effect="fade" end="95" time="0">Conditional</animation>
+	 <animation condition="Skin.String(VolumeIconOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
    </include>
    
    <include name="Fade_SubMenuMarkOverlay">

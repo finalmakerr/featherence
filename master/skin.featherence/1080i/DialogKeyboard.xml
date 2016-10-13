@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">300</defaultcontrol>
-	<include>Fade_WindowsOpenClose</include>
+	<!--<include>Fade_WindowsOpenClose</include>-->
 	<coordinates>
 		<system>2</system>
 		<left>504</left>
@@ -808,5 +808,6 @@
 				</control>
 			</control>
 		</control>
+	  <include>WindowsBusy</include>
 	</controls>
 </window>

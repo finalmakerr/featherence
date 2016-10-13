@@ -3,5 +3,6 @@
   <defaultcontrol always="true">5</defaultcontrol>
   <controls>
     <include>LeftMenuVideoOSDSettings</include>
+	<include>TouchSupport</include>
   </controls>
 </window>

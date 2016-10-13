@@ -914,8 +914,8 @@ def installaddon(addonid2, update=True):
 			printpoint = printpoint + '6'
 			if not 'resources.' in addonid2:
 				notification('Addon Required:[CR]' + addonid2,'','',4000)				
-				#xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +',return)')
-				xbmc.executebuiltin('RunPlugin('+ addonid2 +')')
+				xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +',return)')
+				#xbmc.executebuiltin('RunPlugin('+ addonid2 +')')
 	text = 'addonid2_' + space2 + str(addonid2_) + newline + \
 	'addonid2' + space2 + str(addonid2)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
@@ -1323,15 +1323,18 @@ def ReloadSkin(admin,force=True):
 	text = "property_reloadskin" + space2 + str(property_reloadskin)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
-def setProperty(id, value, type="home"):
+def setProperty(id, value, type="home", force=True):
 
 	name = 'setProperty' ; printpoint = ""
-	if value != "": xbmc.executebuiltin('SetProperty('+str(id)+','+str(value)+','+str(type)+')')
-	else: xbmc.executebuiltin('ClearProperty('+str(id)+','+str(type)+')')
-	xbmc.sleep(10)
+	x = xbmc.getInfoLabel('Window(home).Property('+str(id)+')')
+	if force == True or str(x) != str(value):
+		if value != "": xbmc.executebuiltin('SetProperty('+str(id)+','+str(value)+','+str(type)+')')
+		else: xbmc.executebuiltin('ClearProperty('+str(id)+','+str(type)+')')
+		xbmc.sleep(10)
 	returned = xbmc.getInfoLabel('Window('+str(type)+').Property('+str(id)+')')
 	
 	text = 'id' + space2 + str(id) + newline + \
+	'x' + space2 + str(x) + newline + \
 	'value' + space2 + str(value) + newline + \
 	'type' + space2 + str(type) + newline + \
 	'returned' + space2 + str(returned)

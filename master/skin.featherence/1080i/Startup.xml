@@ -39,5 +39,6 @@
 	  <label>$LOCALIZE[31421] $INFO[Skin.String(User_Name)]</label>
 	  <visible>Skin.String(User_Name)</visible>
 	</control>
+	<include>WindowsBusy</include>
   </controls>
 </window>

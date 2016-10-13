@@ -134,6 +134,16 @@
 	<value condition="Skin.String(label19)">$INFO[Skin.String(label19)]</value>
   </variable>
   
+  <variable name="label33" description="ערוצי רדיו/טלוויזיה">
+    <value description="ערוצי רדיו" condition="Window.IsVisible(tvchannels)">$LOCALIZE[19024]</value>
+	<value description="ערוצי טלוויזיה" condition="Window.IsVisible(radiochannels)">$LOCALIZE[19023]</value>
+  </variable>
+  
+  <variable name="label1300">
+    <value condition="!IsEmpty(Window(home).Property(TEMP))">$INFO[Window(home).Property(TEMP)]</value>
+	<value condition="!IsEmpty(Control.GetLabel(1300)) + IntegerGreaterThan(Container(120).NumItems,0)">$INFO[Window(home).Property(DialogSubtitles2)]</value>
+  </variable>
+  
   <variable name="1label2">
 	<value condition="!Skin.HasSetting(ShowSkinVersion)">$LOCALIZE[107]</value>
 	<value condition="Skin.HasSetting(ShowSkinVersion)">$LOCALIZE[106]</value>
@@ -223,7 +233,12 @@
 	<value description="שעה" condition="Skin.String(ShowClock,1)">$LOCALIZE[12392]</value>
 	<value description="תאריך" condition="Skin.String(ShowClock,2)">$LOCALIZE[552]</value>
   </variable>
-
+  
+  <variable name="24label2">
+	<value condition="!Skin.HasSetting(EnableNextAired) | !System.HasAddon(script.tv.show.next.aired)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(EnableNextAired)">$LOCALIZE[107]</value>
+  </variable>
+  
   <variable name="25label2">
 	<value condition="!Skin.HasSetting(AutoView)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(AutoView)">$LOCALIZE[107]</value>
@@ -259,6 +274,11 @@
   <variable name="83label2">
 	<value condition="!Skin.String(Skin_ShowLog2)">1</value>
 	<value condition="Skin.String(Skin_ShowLog2)">$INFO[Skin.String(Skin_ShowLog2)]</value>
+  </variable>
+  
+  <variable name="157label2">
+    <value condition="!Skin.HasSetting(ExtraMouseSupport)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(ExtraMouseSupport)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="190label2">
@@ -434,7 +454,7 @@
 	<value condition="!Skin.String(TopInformationIcons)">$LOCALIZE[107]</value>
 	<value condition="Skin.String(TopInformationIcons_name)">$INFO[Skin.String(TopInformationIcons_name)]</value>
   </variable>
-    
+  
   <variable name="338label2">
     <value condition="!Skin.HasSetting(RSSVisibility)">Home</value>
 	<value condition="Skin.HasSetting(RSSVisibility)">All</value>
@@ -444,6 +464,31 @@
     <value condition="!Skin.HasSetting(RSSOnMedia)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(RSSOnMedia)">$LOCALIZE[107]</value>
   </variable>
+  
+  <variable name="361label2">
+    <value condition="!Skin.HasSetting(VolumeIcon)">$LOCALIZE[107]</value>
+	<value condition="Skin.HasSetting(VolumeIcon)">$LOCALIZE[106]</value>
+  </variable>
+  
+  <variable name="365label2">
+    <value condition="!Skin.String(VolumePosition)">DEFAULT</value>
+	<value condition="Skin.String(VolumePosition,0)">CENTER</value>
+	<value condition="Skin.String(VolumePosition,1)">N</value>
+	<value condition="Skin.String(VolumePosition,2)">S</value>
+	<value condition="Skin.String(VolumePosition,3)">NE</value>
+	<value condition="Skin.String(VolumePosition,4)">NW</value>
+  </variable>
+  
+  <variable name="368label2">
+    <value condition="!Skin.HasSetting(VolumePercent)">$LOCALIZE[107]</value>
+	<value condition="Skin.HasSetting(VolumePercent)">$LOCALIZE[106]</value>
+  </variable>
+  
+  <variable name="369label2">
+    <value condition="!Skin.HasSetting(VolumeMute)">$LOCALIZE[107]</value>
+	<value condition="Skin.HasSetting(VolumeMute)">$LOCALIZE[106]</value>
+  </variable>
+  
   
   <variable name="395label">
     <value condition="StringCompare(System.Language,Hebrew)">$LOCALIZE[573] $LOCALIZE[13278]</value>
@@ -474,15 +519,20 @@
   <variable name="393label2" description="">
     <value condition="!Skin.String(WindowsOpenClose)">$LOCALIZE[13278]</value>
 	<value condition="Skin.String(WindowsOpenClose,0)">0</value>
-	<value condition="Skin.String(WindowsOpenClose,1)">300</value>
-	<value condition="Skin.String(WindowsOpenClose,2)">400</value>
-	<value condition="Skin.String(WindowsOpenClose,3)">500</value>
-	<value condition="Skin.String(WindowsOpenClose,4)">600</value>
-	<value condition="Skin.String(WindowsOpenClose,5)">700</value>
-	<value condition="Skin.String(WindowsOpenClose,6)">800</value>
-	<value condition="Skin.String(WindowsOpenClose,7)">900</value>
-	<value condition="Skin.String(WindowsOpenClose,8)">1000</value>
-	<value condition="Skin.String(WindowsOpenClose,9)">1100</value>
+	<value condition="Skin.String(WindowsOpenClose,1)">400</value>
+	<value condition="Skin.String(WindowsOpenClose,2)">500</value>
+	<value condition="Skin.String(WindowsOpenClose,3)">750</value>
+	<value condition="Skin.String(WindowsOpenClose,4)">1000</value>
+	<value condition="Skin.String(WindowsOpenClose,5)">1250</value>
+	<value condition="Skin.String(WindowsOpenClose,6)">1500</value>
+	<value condition="Skin.String(WindowsOpenClose,7)">2000</value>
+	<value condition="Skin.String(WindowsOpenClose,8)">2500</value>
+	<value condition="Skin.String(WindowsOpenClose,9)">3000</value>
+  </variable>
+  
+  <variable name="394label2">
+    <value condition="Skin.HasSetting(WindowsOpenClose)">$LOCALIZE[106]</value>
+	<value condition="!Skin.HasSetting(WindowsOpenClose)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="398label2">

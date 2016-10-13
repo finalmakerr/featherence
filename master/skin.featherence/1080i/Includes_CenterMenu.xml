@@ -55,7 +55,8 @@
       <posy>340</posy>
 	  <animation condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)" effect="slide" start="0,0" end="35,-345" time="0,0">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)" effect="zoom" start="100,100" end="91,107" time="0,0">Conditional</animation>
-	  <visible>!SubString(Control.GetLabel(311),password) + !SubString(Control.GetLabel(311),$LOCALIZE[733]) + Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml) | ![Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)]</visible>
+	  <animation condition="Window.IsVisible(VideoOSD.xml)" effect="zoom" center="960,-160" start="50,50" end="50,50" time="0,0">Conditional</animation>
+	  <visible>!SubString(Control.GetLabel(311),password) + !SubString(Control.GetLabel(311),$LOCALIZE[733]) + Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml) | ![Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)] | Window.IsVisible(VideoOSD.xml)</visible>
 	  <include name="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
@@ -119,6 +120,8 @@
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),118)">SubContent_118</include>
 		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),119)">SubContent_119</include>
 		  <include condition="Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(Custom1138.xml)]">CenterMenuContent_1175</include>
+		  <include description="Volume" condition="StringCompare(Window(home).Property(TEMP2),707)">CenterMenuContent_707</include>
+		  <include description="Volume" condition="StringCompare(Window(home).Property(TEMP2),703)">CenterMenuContent_703</include>
 		</content>
 		
 	  </control>

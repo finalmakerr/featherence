@@ -745,7 +745,51 @@
 	  </control>
 	</control>
   </include>
-
+  
+  <include name="WindowsBusy">
+   <control type="group">
+     <animation type="WindowOpen" reversible="false" condition="!Window.IsVisible(Custom1000.xml)">
+	   <effect type="fade" start="100" end="0" time="0" />
+	 </animation>
+     <animation type="WindowClose" reversible="false" condition="!Window.IsVisible(Custom1000.xml)">
+	   <effect type="fade" start="0" end="100" time="0" />
+	 </animation>
+	 <posx>960</posx>
+	 <posy>540</posy>
+	 <width>70</width>
+	 <height>70</height>
+	<control type="image" description="רקע">
+	  <texture>busy/busybg.png</texture>
+	  <aspectratio align="center">keep</aspectratio>
+	  <visible>false</visible>
+	</control>
+	
+	<control type="multiimage">
+	  <width>70</width>
+	  <height>70</height>
+      <imagepath background="true">busy/multi</imagepath>
+      <timeperimage>200</timeperimage>
+	  <info>01.png</info>
+	  <info>02.png</info>
+	  <info>03.png</info>
+	  <info>04.png</info>
+	  <info>05.png</info>
+	  <info>06.png</info>
+	  <info>07.png</info>
+	  <info>08.png</info>
+	  <info>09.png</info>
+	  <info>10.png</info>
+	  <info>11.png</info>
+	  <info>12.png</info>
+      <fadetime>100</fadetime>
+      <pauseatend>0</pauseatend>
+      <randomize>false</randomize>
+      <loop>yes</loop>
+      <aspectratio align="center">keep</aspectratio>
+    </control>
+   </control>
+  </include>
+	
   <include name="SideMenu2">
     <control type="group" description="Side menu 9010 group">
 	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="400,0" delay="0" time="700" reversible="true">Conditional</animation>

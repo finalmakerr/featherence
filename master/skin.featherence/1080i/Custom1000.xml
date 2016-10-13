@@ -34,19 +34,6 @@
 	  <label>$INFO[Window(home).Property(1000comment)]</label>
 	  <visible>!IsEmpty(Window(home).Property(1000comment))</visible>
 	</control>
-	<control type="grouplist">
-	    <visible>false</visible>
-		<posx>40</posx>
-		<posy>80</posy>
-		<itemgap>0</itemgap>
-		<orientation>horizontal</orientation>
-		<height>50</height>
-		<width>1920</width>
-		<control type="label" description="זיכרון פנוי">
-		  <include>LabelL1</include>
-		  <label>System Free Memory: $INFO[System.FreeMemory]</label>
-		  <visible>!IsEmpty(System.FreeMemory)</visible>
-		</control>
-	</control>
+	<include>WindowsBusy</include>
   </controls>
 </window>

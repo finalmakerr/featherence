@@ -4,7 +4,8 @@
     <control type="group" description="">
 	  <visible>Control.IsVisible(50)</visible>
       <control type="group">
-	    <include condition="StringCompare(System.Language,Hebrew)">Control_Pos46</include>
+	    <animation condition="Skin.HasSetting(View50_SideVideoInformation)" effect="zoom" center="0,1150" start="100,111" end="100,111" time="0" reversible="false">Conditional</animation>
+		<include condition="StringCompare(System.Language,Hebrew)">Control_Pos46</include>
 		<control type="panel" id="50">
 		  <!--<animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>-->
 		  <posx>-10</posx>
@@ -15,9 +16,35 @@
 		  <viewtype label="31011">List</viewtype>
 		  <include>ViewDesign_50_Layout</include>
 		</control>
+		
+		<control type="grouplist" description="קדימונים-תפריט רחב">
+		  <visible>!Skin.HasSetting(View50_Plus)</visible>
+		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <posx>420</posx>
+		  <posy>149</posy>
+		  <width>480</width>
+		  <height>985</height>
+		  <orientation>vertical</orientation>
+		  <itemgap>45</itemgap>
+		  <include>Trailer_50</include>
+	    </control>
+		<control type="grouplist" description="קדימונים-תפריט צר">
+		  <visible>Skin.HasSetting(View50_Plus)</visible>
+		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <posx>420</posx>
+		  <posy>149</posy>
+		  <width>480</width>
+		  <height>985</height>
+		  <orientation>vertical</orientation>
+		  <itemgap>0</itemgap>
+		  <include>Trailer_50</include>
+		  <include>Trailer_50A</include>
+	    </control>
       </control>
+	  
     </control>
   </include>
+
   <include name="ViewDesign_11" description="Center List">
     <control type="group" description="">
 	  <visible>Control.IsVisible(11)</visible>
@@ -138,7 +165,7 @@
 	  <width>400</width>
 	  <height>40</height>
 	  <label>$VAR[VideoInformation1]</label>
-	  <visible>!Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)</visible>
+	  <visible>[!Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [IsEmpty(ListItem.Icon) + IsEmpty(ListItem.Art(poster)) + IsEmpty(ListItem.Thumb)]</visible>
 	</control>
 	<control type="label" description="שם עם תמונה מוגדלת">
 	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos47</include>
@@ -150,13 +177,23 @@
 	  <height>40</height>
 	  <label>$VAR[VideoInformation1]</label>
 	  <visible>Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus)</visible>
+	  <visible>[!IsEmpty(ListItem.Icon) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Thumb)] | StringCompare(Control.GetLabel(13055),DefaultFolderBack.png)</visible>
+	</control>
+	<control type="label" id="13055">
+	  <visible>false</visible>
+	  <scroll>true</scroll>
+	  <font>size18</font>
+	  <label>$VAR[VideoInformation2]</label>
 	</control>
 	<control type="label" description="סגנונות">
 	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos34</include>
+	  <animation description="slide_he" condition="Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
+	  <animation description="slide_he" condition="Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-60,0" time="0">Conditional</animation>
+	  <animation description="slide_he" condition="!Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-30,0" time="0">Conditional</animation>
 	  <animation description="slide_he" condition="Window.IsVisible(MyPics.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
-	  <posx>45</posx>
+	  <posx>85</posx>
 	  <posy>40</posy>
-	  <width>270</width>
+	  <width>250</width>
 	  <height>30</height>
 	  <textcolor>grey</textcolor>
 	  <include condition="StringCompare(System.Language,Hebrew)">LabelR7</include>
@@ -227,7 +264,7 @@
 	  <width>400</width>
 	  <height>40</height>
 	  <label>$VAR[VideoInformation1]</label>
-	  <visible>!Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)</visible>
+	  <visible>[!Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [IsEmpty(ListItem.Icon) + IsEmpty(ListItem.Art(poster)) + IsEmpty(ListItem.Thumb)]</visible>
 	</control>
 	<control type="label" description="שם עם תמונה מוגדלת">
 	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos47</include>
@@ -240,11 +277,14 @@
 	  <height>40</height>
 	  <label>$VAR[VideoInformation1]</label>
 	  <visible>Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus)</visible>
+	  <visible>[!IsEmpty(ListItem.Icon) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Thumb)] | StringCompare(Control.GetLabel(13055),DefaultFolderBack.png)</visible>
 	</control>
 	<control type="grouplist" description="תמונת סגנון">
 	    <animation condition="true" effect="zoom" center="auto" start="100,100" end="80,80">Conditional</animation>
-		<animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="140,0" time="0">Conditional</animation>
-	    <posx>-40</posx>
+		<animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
+		<animation description="slide_he" condition="Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="45,0" time="0">Conditional</animation>
+	    <animation description="slide_he" condition="Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-40,0" time="0">Conditional</animation>
+	    <posx>0</posx>
 		<posy>30</posy>
 		<include condition="StringCompare(System.Language,Hebrew)">LabelR7</include>
 		<include condition="!StringCompare(System.Language,Hebrew)">LabelL7</include>
@@ -259,8 +299,9 @@
 	</control>
 	<control type="label" description="סגנונות">
 	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos34</include>
+	  <animation description="slide_he" condition="Window.IsVisible(MyPics.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
 	  <animation description="slide_he" condition="Window.IsVisible(MyPics.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
-	  <posx>45</posx>
+	  <posx>50</posx>
 	  <posy>40</posy>
 	  <width>270</width>
 	  <height>30</height>
@@ -283,38 +324,61 @@
 	  <include condition="StringCompare(System.Language,Hebrew)">ImageL1</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ImageR1</include>
 	  <texture colordiffuse="grey2">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
-	  <visible>!ListItem.HasEpg</visible>
-	  <visible>[!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))] + !StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
-	  <visible description="Label2">![!IsEmpty(ListItem.Label2) + !StringCompare(ListItem.Label2,0 B) + !Window.IsVisible(MyVideoNav.xml)]</visible>
-	  <visible description="Progress">![IsEmpty(ListItem.ChannelNumber) + !IsEmpty(ListItem.Progress)]</visible>
-	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + !IsEmpty(ListItem.Property(UnWatchedEpisodes))] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
+	  <include>VisibilityInfoIcon</include>
     </control>
+	<control type="button" description="קדימון סרט">
+	  <height>40</height>		
+	  <posx>430</posx>
+	  <posy>-5</posy>	      
+	  <width>40</width>
+	  <texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
+	  <texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	  <onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+	  <onclick>Notification(1,1,1000)</onclick>
+	  <visible>!IsEmpty(ListItem.Trailer) + !StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	  <visible>false</visible>
+	</control>
   </include>
   <include name="View50_Plus">
     <control type="label" description="משודר עכשיו">
-	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos45</include>
-	  <posx>30</posx>
+	  <animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="182,0" time="0">Conditional</animation>
+	  <posx>75</posx>
 	  <posy>40</posy>
-	  <width>190</width>
+	  <width>145</width>
 	  <height>30</height>
 	  <textcolor>grey</textcolor>
 	  <include condition="StringCompare(System.Language,Hebrew)">LabelR7</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">LabelL7</include>
 	  <label>$VAR[TopVideoInformation7]</label>
 	  <visible>[[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
+	  <visible>[!Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [IsEmpty(ListItem.Icon) + IsEmpty(ListItem.Art(poster)) + IsEmpty(ListItem.Thumb)]</visible>
+	</control>
+	<control type="label" description="משודר עכשיו עם תמונה מוגדלת">
+	  <animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="142,0" time="0">Conditional</animation>
+	  <posx>112</posx>
+	  <posy>40</posy>
+	  <width>108</width>
+	  <height>30</height>
+	  <textcolor>grey</textcolor>
+	  <include condition="StringCompare(System.Language,Hebrew)">LabelR7</include>
+	  <include condition="!StringCompare(System.Language,Hebrew)">LabelL7</include>
+	  <label>$VAR[TopVideoInformation7]</label>
+	  <visible>[[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
+	  <visible>Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus)</visible>
+	  <visible>[!IsEmpty(ListItem.Icon) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Thumb)] | StringCompare(Control.GetLabel(13055),DefaultFolderBack.png)</visible>
 	</control>
 	<control type="image" description="תמונה">
-	  <animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="385,0" time="0">Conditional</animation>
-	  <posx>30</posx>
-	  <posy>30</posy>
+	  <animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="382,0" time="0">Conditional</animation>
+	  <posx>33</posx>
+	  <posy>33</posy>
 	  <height>40</height>
 	  <width>40</width>
 	  <include condition="StringCompare(System.Language,Hebrew)">ImageR2</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ImageL2</include>
 	  <texture background="true">$VAR[VideoInformation2]</texture>
-	  <visible>IsEmpty(ListItem.Genre)</visible>
-	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
-	  <visible>[!Container.Content(seasons) + !Container.Content(episodes) + !SubString(ListItem.path,videodb://movies/sets/)] | IsEmpty(ListItem.Genre)</visible>
+	  <!--<visible>IsEmpty(ListItem.Genre) | !IsEmpty(ListItem.Thumb)</visible>-->
+	  <!--<visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>-->
+	  <visible>[!SubString(ListItem.path,videodb://movies/sets/)] | IsEmpty(ListItem.Genre)</visible>
 	  <visible>!Skin.HasSetting(View50_BiggerIcon)</visible>
 	</control>
 	<control type="image" description="תמונה מוגדלת">
@@ -326,9 +390,9 @@
 	  <include condition="StringCompare(System.Language,Hebrew)">ImageR2</include>
 	  <include condition="!StringCompare(System.Language,Hebrew)">ImageL2</include>
 	  <texture background="true">$VAR[VideoInformation2]</texture>
-	  <visible>IsEmpty(ListItem.Genre)</visible>
-	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
-	  <visible>[!Container.Content(seasons) + !Container.Content(episodes) + !SubString(ListItem.path,videodb://movies/sets/)] | IsEmpty(ListItem.Genre)</visible>
+	  <!--<visible>IsEmpty(ListItem.Genre) | !IsEmpty(ListItem.Thumb)</visible>-->
+	  <!--<visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>-->
+	  <visible>!SubString(ListItem.path,videodb://movies/sets/) | IsEmpty(ListItem.Genre)</visible>
 	  <visible>Skin.HasSetting(View50_BiggerIcon)</visible>
 	</control>
 	<control type="label" description="שעות/דקות/עונות">
@@ -392,7 +456,7 @@
 	  <control type="group">
 		<animation description="50_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !Skin.HasSetting(View50_Plus) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="150,40" time="0">Conditional</animation>
 		<animation description="50_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !Skin.HasSetting(View50_Plus) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-70,40" time="0">Conditional</animation>
-		<animation description="51" condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="slide" start="0,0" end="740,85" time="0">Conditional</animation>
+		<animation description="51" condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="slide" start="0,0" end="-5,54" time="0">Conditional</animation>
 		<animation description="54/58" condition="StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])" effect="slide" start="0,0" end="20,405" time="0">Conditional</animation>
 		<animation description="57" condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])" effect="slide" start="0,0" end="-40,320" time="0">Conditional</animation>
 		<visible>ListItem.HasEpg</visible>
@@ -435,18 +499,29 @@
     <control type="group" description="">
 	  <visible>Control.IsVisible(51)</visible>
       <control type="group">
+	    <include>Slide1</include>
+		<include>Slide2</include>
+		<!--<animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>-->
 		<control type="panel" id="51">
-		  <include>Slide1</include>
-		  <include>Slide2</include>
-		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
-		  <posx>20</posx>
-		  <posy>150</posy>
-		  <width>1880</width>
-		  <height>920</height>
+		  <posx>520</posx>
+		  <posy>200</posy>
+		  <width>880</width>
+		  <height>812</height>
 		  <include>4ways</include>
 		  <viewtype label="31010">List</viewtype>
 		  <include>ViewDesign_51_Layout</include>
 		</control>
+		
+		<control type="grouplist" description="קדימונים">
+		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <posx>520</posx>
+		  <posy>208</posy>
+		  <width>485</width>
+		  <height>985</height>
+		  <orientation>vertical</orientation>
+		  <itemgap>19.7</itemgap>
+		  <include>Trailer_51</include>
+	    </control>
       </control>
     </control>
   </include>
@@ -470,34 +545,33 @@
     </control>
   </include>
   <include name="ViewDesign_51_Layout">
-	  <itemlayout description="(כללי)" condition="true" height="100" width="960"> <!--[Container.Content(files) | Container.Content(actors) | Container.Content(Sets) | ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | SubString(ListItem.path,plugin://plugin.video.youtube)]]-->
+	  <itemlayout description="(כללי)" condition="true" height="90" width="960"> <!--[Container.Content(files) | Container.Content(actors) | Container.Content(Sets) | ![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | SubString(ListItem.path,plugin://plugin.video.youtube)]]-->
 		<control type="image" description="מסגרת">
 		  <!--<include>Fade_MenuButtonsOverlay</include>-->
-		  <posx>500</posx>
-		  <posy>20</posy>
+		  <posx>0</posx>
+		  <posy>0</posy>
 		  <width>880</width>
-		  <height>100</height>
-		  <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
+		  <height>85</height>
+		  <texture border="40" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
 		</control>
 		<include>View51_Common</include>
 		<control type="label" description="שם">
-		  <include>LabelC5</include>
-		  <posx>600</posx>
-		  <posy>32</posy>
+		  <include>LabelC3</include>
+		  <posx>100</posx>
+		  <posy>9</posy>
 		  <width>700</width>
 		  <height>70</height>
 		  <label>$VAR[VideoInformation1]</label>
 		</control>
-		<include>PVRprogress</include>
 	  </itemlayout>
-	  <focusedlayout description="(כללי)" condition="true" height="100" width="960">    
+	  <focusedlayout description="(כללי)" condition="true" height="90" width="960">    
 		<include>AutoView</include>
 		<control type="image" description="מסגרת">
 		  <include>Fade41</include>
-		  <posx>500</posx>
-		  <posy>20</posy>
+		  <posx>0</posx>
+		  <posy>0</posy>
 		  <width>880</width>
-		  <height>100</height>
+		  <height>85</height>
 		  <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
 		</control>
 		<include>View51_Common</include>
@@ -505,61 +579,85 @@
 		<control type="label" description="שם">
 		  <textcolor>yellow</textcolor>
 		  <include>LabelC3</include>
-		  <posx>600</posx>
-		  <posy>32</posy>
+		  <posx>100</posx>
+		  <posy>9</posy>
 		  <width>700</width>
 		  <height>70</height>
 		  <scroll>true</scroll>
 		  <label>$VAR[VideoInformation1]</label>
 		</control>
-		<include>PVRprogress</include>
 	  </focusedlayout>	
   </include>
   
   <include name="View51_Common">
-    <control type="group" description="תמונה">
+    <control type="group" description="">
+		<animation description="" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-786,0" time="0">Conditional</animation>
 		<height>60</height>		
-		<posx>1310</posx>
-		<posy>40</posy>	      
+		<posx>810</posx>
+		<posy>15</posy>	      
 		<width>40</width>
 		<control type="image" description="תמונה לא נבחר">
 		  <texture background="true">$VAR[VideoInformation2]</texture>
 		  <visible>true</visible>
 		</control>
-		<include>InProgressBadge2</include>
 	</control>
-	<control type="image" description="סמן מידע">
-	  <aspectratio>keep</aspectratio>
-	  <height>40</height>		
-	  <posx>520</posx>
-	  <posy>49</posy>	      
-	  <width>60</width>
-	  <texture colordiffuse="grey2">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
-	  <visible>[!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))] + IsEmpty(Control.GetLabel(11153)) + !StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
-	  <visible>![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)]]</visible>
-	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
+	<control type="group" description="">
+	  <animation description="" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="786,0" time="0">Conditional</animation>
+	  <posx>-295</posx>
+	  <posy>-17</posy>
+	  <include>InProgressBadge2</include>
 	</control>
-	<control type="image" description="אייקון">
-	  <include>Fade40</include>
-	  <aspectratio align="center">keep</aspectratio>			  			  
-	  <height>40</height>
-	  <posx>390</posx>
-	  <posy>30</posy>
-	  <texture colordiffuse="grey2">$VAR[PhotoInformation1]</texture>
-	  <width>310</width>
-	  <visible>Window.IsVisible(MyPics.xml)</visible>
-	</control>
-	<control type="label" description="שם2">
-	  <include>Fade40</include>
-	  <include>LabelL4</include>
-	  <posx>530</posx>
-	  <posy>50</posy>
-	  <width>100</width>
-	  <height>70</height>
-	  <label>$VAR[VideoInformation3]</label>
+	
+	<control type="label" description="משודר עכשיו">
+	  <posx>75</posx>
+	  <posy>10</posy>
+	  <width>145</width>
+	  <height>30</height>
 	  <textcolor>grey</textcolor>
-	  <wrapmultiline>true</wrapmultiline>
-	  <visible>!IsEmpty(Control.GetLabel(11153)) | Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FileExtension)</visible>
+	  <include>LabelL7</include>
+	  <label>$VAR[TopVideoInformation7]</label>
+	  <visible>[[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
+	  <visible>[!Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [IsEmpty(ListItem.Icon) + IsEmpty(ListItem.Art(poster)) + IsEmpty(ListItem.Thumb)]</visible>
+	</control>
+	<include>PVRprogress</include>
+	<control type="group" description="">
+	  <animation description="" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="773,0" time="0">Conditional</animation>
+	  <posx>13</posx>
+	    <control type="image" description="סמן מידע">
+		  <aspectratio>keep</aspectratio>
+		  <height>70</height>		
+		  <posx>0</posx>
+		  <posy>7</posy>	      
+		  <width>70</width>
+		  <texture colordiffuse="grey2">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
+		  <include>VisibilityInfoIcon</include>
+		  <!--<visible>[!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))] + IsEmpty(Control.GetLabel(11153)) + !StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+		  <visible>![[Container.Content(tvshows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)] ]</visible>
+		  <visible>![[Container.Content(tvshows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>-->
+		</control>
+		<control type="image" description="אייקון">
+		  <include>Fade40</include>
+		  <aspectratio align="center">keep</aspectratio>			  			  
+		  <height>70</height>
+		  <posx>0</posx>
+		  <posy>7</posy>
+		  <texture colordiffuse="grey2">$VAR[PhotoInformation1]</texture>
+		  <width>70</width>
+		  <visible>Window.IsVisible(MyPics.xml)</visible>
+		</control>
+		<control type="label" description="שם2">
+		  <include>Fade40</include>
+		  <include>LabelL4</include>
+		  <posx>15</posx>
+		  <posy>7</posy>
+		  <width>100</width>
+		  <height>70</height>
+		  <label>$VAR[VideoInformation3]</label>
+		  <textcolor>grey</textcolor>
+		  <wrapmultiline>true</wrapmultiline>
+		  <visible>!IsEmpty(Control.GetLabel(11153)) | Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FileExtension)</visible>
+		</control>
+		
 	</control>
   </include>
   
@@ -716,7 +814,7 @@
           <height>1041</height>
 		  <include>4ways</include>
 		  <viewtype label="31013">Grid</viewtype>
-          <itemlayout description="(Movies+TVshows)" height="342" width="267"> <!-- + [!IsEmpty(Control.GetLabel(1105)) + !IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Container(57).ListItem(1).Plot) + !IsEmpty(Container(57).ListItem(1).Genre) | !IsEmpty(Container(57).ListItem(2).Plot) + !IsEmpty(Container(57).ListItem(2).Genre)-->
+          <itemlayout description="(Movies+TVshows)" height="342" width="267">
             <control type="group">
 			   	<include>Fade_MoviesTVCoversOverlay</include>
 				<include>Slide2.4</include>
@@ -737,7 +835,7 @@
 			    <include>PVRprogress</include>
 			</control>
 		  </itemlayout>
-          <focusedlayout description="(Movies+TVshows)" height="342" width="267">  <!-- + [!IsEmpty(Control.GetLabel(1105)) + !IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Container(57).ListItem(1).Plot) + !IsEmpty(Container(57).ListItem(1).Genre) | !IsEmpty(Container(57).ListItem(2).Plot) + !IsEmpty(Container(57).ListItem(2).Genre)]-->
+          <focusedlayout description="(Movies+TVshows)" height="342" width="267">
 			<include>AutoView</include>
 			<control type="group">
 			   	<include>Slide2.3</include>
@@ -795,7 +893,40 @@
 			</control>
 		  </focusedlayout>
 		</control>
-      </control>
+	  </control>
+	  <control type="grouplist" description="קדימונים שורה 1">
+          <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="0" delay="2700" time="700" reversible="false">Conditional</animation>
+		  <posx>210</posx>
+          <posy>75</posy>
+          <width>1800</width>
+          <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>197</itemgap>
+		  <include>Trailer_57A</include>
+	  </control>
+	  <control type="grouplist" description="קדימונים שורה 2">
+          <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="0" delay="2700" time="700" reversible="false">Conditional</animation>
+		  <posx>210</posx>
+          <posy>418</posy>
+          <width>1800</width>
+          <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>197</itemgap>
+		  <include>Trailer_57B</include>
+	  </control>
+	  <control type="grouplist" description="קדימונים שורה 3">
+          <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="0" delay="2700" time="700" reversible="false">Conditional</animation>
+		  <posx>210</posx>
+          <posy>761</posy>
+          <width>1800</width>
+          <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>197</itemgap>
+		  <include>Trailer_57C</include>
+	  </control>
     </control>
   </include>
   
@@ -840,9 +971,10 @@
 	  <posy>20</posy>	      
 	  <width>60</width>
 	  <texture colordiffuse="grey2">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
-	  <visible>[!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))] + IsEmpty(Control.GetLabel(11153)) + !StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	  <include>VisibilityInfoIcon</include>
+	  <!--<visible>[!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))] + IsEmpty(Control.GetLabel(11153)) + !StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	  <visible>![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)]]</visible>
-	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
+	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>-->
 	</control>
   </include>
   
@@ -862,6 +994,28 @@
 		  <include>ViewDesign_58_Layout</include>
         </control>
       </control>
+	  <control type="grouplist" description="קדימונים שורה 1">
+          <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="0" delay="2700" time="700" reversible="false">Conditional</animation>
+		  <posx>320</posx>
+          <posy>115</posy>
+          <width>1800</width>
+          <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>304</itemgap>
+		  <include>Trailer_58A</include>
+	  </control>
+	  <control type="grouplist" description="קדימונים שורה 2">
+          <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="0" delay="2700" time="700" reversible="false">Conditional</animation>
+		  <posx>320</posx>
+          <posy>625</posy>
+          <width>1800</width>
+          <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>304</itemgap>
+		  <include>Trailer_58B</include>
+	  </control>
     </control>
   </include>
   <include name="ViewDesign_451" description="Poster">
@@ -1063,9 +1217,7 @@
 	  <posy>40</posy>	      
 	  <width>60</width>
 	  <texture colordiffuse="grey2">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
-	  <visible>[!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))] + IsEmpty(Control.GetLabel(11153)) + !StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
-	  <visible>![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating)]]</visible>
-	  <visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
+	  <include>VisibilityInfoIcon</include>
 	</control>
   </include>
   <include name="ViewDesign_54" description="Line">
@@ -1092,6 +1244,16 @@
           <viewtype label="31015">List</viewtype>
 		  <include>ViewDesign_58_Layout</include>
         </control>
+		<control type="grouplist" description="קדימונים">
+		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <posx>322</posx>
+          <posy>633</posy>
+          <width>1800</width>
+          <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>303</itemgap>
+		  <include>Trailer_54A</include>
+	    </control>
       </control>
     </control>
   </include>

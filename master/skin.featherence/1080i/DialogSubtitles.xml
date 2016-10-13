@@ -4,7 +4,7 @@
 	<onload condition="System.HasAddon(script.featherence.service)">RunScript(script.featherence.service,,?mode=9)</onload>
     <controls>
 	  <control type="group">
-	    <animation condition="[System.IdleTime(5)] + !Player.Paused + VideoPlayer.SubtitlesEnabled + VideoPlayer.HasSubtitles" effect="Fade" start="100" end="10" time="3000" reversible="false">Conditional</animation>
+	    <animation condition="[System.IdleTime(5)] + !Player.Paused + [VideoPlayer.SubtitlesEnabled + VideoPlayer.HasSubtitles | StringCompare(Container(120).NumItems,0)]" effect="Fade" start="100" end="10" time="3000" reversible="false">Conditional</animation>
         <control type="group" id="250" description="ראשי">
           <posx>240</posx>
 		  <posy>810</posy>
@@ -59,7 +59,7 @@
 			  <font>size18</font>
 			  <height>40</height>
 			  <posx>1418</posx>
-			  <visible>IntegerGreaterThan(Container(120).NumItems,0) + !Control.IsVisible(131) + !Control.IsVisible(1300)</visible>
+			  <visible>IntegerGreaterThan(Container(120).NumItems,0) + IsEmpty(Control.GetLabel(1300))</visible>
 			  <width>500</width>
 			</control>
 			<control type="label" id="1300" description="תרגום נוכחי">
@@ -69,16 +69,17 @@
 			  <height>40</height>
 			  <posx>1418</posx>
 			  <textcolor>yellow</textcolor>
-			  <visible>!IsEmpty(Control.GetLabel(1300))</visible>
+			  <visible>IsEmpty(Window(home).Property(TEMP)) + IntegerGreaterThan(Container(120).NumItems,0)</visible>
 			  <width>500</width>
 			</control>
-			<control type="label" id="131" description="מוריד תרגום">
+			<control type="label" id="1301" description="הודעות">
 			  <align>right</align>
 			  <font>size18</font>
+			  <label>$INFO[Window(home).Property(TEMP)]</label>
 			  <height>40</height>
 			  <posx>1418</posx>
-			  <visible>IntegerGreaterThan(Container(120).NumItems,0)</visible>
-			  <visible>SubString(Window(home).Property(TEMP2),$LOCALIZE[24110])</visible>
+			  <textcolor>yellow</textcolor>
+			  <visible>!IsEmpty(Window(home).Property(TEMP))</visible>
 			  <width>500</width>
 			</control>
           </control>
@@ -298,13 +299,13 @@
 			</control>
         </control>
         <control type="group" id="251" description="כפתור צד">
-		  <animation condition="ControlGroup(251).HasFocus" effect="slide" start="0,0" end="355,0" delay="0" time="700" reversible="true">Conditional</animation>
+		  <animation condition="ControlGroup(251).HasFocus" effect="slide" start="0,0" end="330,0" delay="0" time="700" reversible="true">Conditional</animation>
 		  <height>500</height>	  
-		  <posx>-400</posx>
+		  <posx>-360</posx>
 		  <posy>385</posy>	  
 		  <width>450</width>
 			<control type="list" id="151">
-			  <posy>-60</posy>
+			  <posy>-61</posy>
 			  <width>450</width>
 			  <height>150</height>
 			  <onleft>120</onleft>

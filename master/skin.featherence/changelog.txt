@@ -3,13 +3,10 @@ WIP - WORK IN PROGRESS
 ------------------------
 - More font coloring options.
 - Added option to change the font size.
-- Added coloring support for DialogNumeric window.
-1. אם ניתן להוסיף כפתור טריילר ליד כל סרט.
-2. חלון תפריט התקציר שנפתח מלמעלה  קטן, מומלץ להגדיל את כל החלון וגם את הכתב בפנים.
 3. באופן כללי להגדיל כתב, מה  שאני ראיתי (חלון כתוביות שנפתח משמאל, ווידגטים)
 4. כשערוצי רדיו עובדים אין כפתורי תפריט בכלל (נבדק דרך הרחבה)
-7. לבדוק אופציה של השהיית כתוביות בעזרת העכבר
-8. בזמן שהקודי חושב אפ ניתן להוסיף חלון התקדמות באחוזים או  לפחות איזה עיגול זז להראות שהוא חושב.
+- Added option to hide Top Video Information on fullscreen video while skiping back/next.
+- Added option to toggle Top/Side Video Information for Side List view.
 
 ------------------------
 Featherence v0.7.0 (xx-xx-16)
@@ -21,21 +18,45 @@ Featherence v0.7.0 (xx-xx-16)
 ------------------------
 Featherence v0.6.2 (xx-Sep-16)
 ------------------------
+- Added busy transition for skin windows.
+- Added extra coloring support for DialogNumeric window (Synced with DialogKeyboard).
 - Added extra mouse support option (WIP).
 To be activate in the Mouse category.
 This feature is auto-enabled if touch support is also enabled.
+- Added Next Aired support.
 - Added option to change font size of plot information.
 - Added option to change size of video/audio playback settings.
-- Added option trailers buttons for Side List, Center List, Poster, Wall and List views.
+- Added option to display fanart from episode and season thumbnail.
 - Added option to enable zoom animation between different skin windows.
 - Added option to lock up to 10 specific addons.
-- Added Next Aired support.
+- Added option to show trailers buttons for Side List, Center List, Poster, Wall and List views.
+- Added radio/tv channels toggle button in PVR side menu.
+- Added trailers buttons to widget window.
+- Added View Options side-button to Center List and Small List views.
+- Added volume category in skin design window with the following options:
+Show volume icon, choose volume icon, volume background color, volume icon color, volume position, volume background overlay, volume icon overlay, show volume level percent, always show volume level on mute.
 - Major bugs fix with touch buttons on some windows.
+- Major update of Center List view.
+Added RTL support and improved design.
+- Major update of Side List view.
+Thumbnail support for any episodes, seasons, tvshows and movies.
+Enlarge icon overall update.
+- Major update of subtitles semi-auto search notification.
+Improve the search time duration and cycle between subtitles server.
+Added support for any subtitles service.
+Added status and timer notifications in the subtitles dialog window.
+Added user interrupting and no subtitles were found notifications.
+Overall script performance improved and bugs fix.
+Removed the previous notifications.
+Subtitles window will be auto faded also when there is no subtitle enable and no subs are currently found.
 - Major update of system information window.
 - Minor update of center menu / sub menu.
+- Minor update of DialogPVRChannelManager window.
 - Minor update of DialogSubtitles window.
+- Minor update of PVR window.
 - Minor update of Kodi's settings window.
-- Minor update of skin animation between different windows.
+- Minor update of skin windows transition.
+- Minor update of Topvideoinformation window.
 
 ------------------------
 Featherence v0.6.1 (02-Sep-16)

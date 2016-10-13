@@ -49,6 +49,7 @@
 
   <include name="Trailer_50_">
     <animation condition="Container(50).Scrolling | Container(50).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+	<animation description="" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-427,0" time="0">Conditional</animation>
 	<height>40</height>		
 	<posx>430</posx>	      
 	<width>40</width>
@@ -98,6 +99,7 @@
 
   <include name="Trailer_51_">
     <animation condition="Container(51).Scrolling | Container(51).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+	<animation description="" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="793,0" time="0">Conditional</animation>
 	<height>70</height>		
 	<posx>0</posx>	      
 	<width>70</width>
@@ -187,6 +189,17 @@
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(4)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 	  <include>Trailer_54_</include>
     </control>
+  </include>
+  
+  <include name="Trailer_54_">
+    <animation condition="Container(54).Scrolling | Container(54).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+	<height>70</height>
+	<posx>55</posx>
+	<posy>24</posy>
+	<width>70</width>
+	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
+	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
   </include>
   
   <include name="Trailer_57_">
@@ -390,6 +403,16 @@
 	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
 	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
 	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+  </include>
+  
+  <include name="VisibilityInfoIcon">
+    <visible>!ListItem.HasEpg</visible>
+    <visible>!StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+    <visible>IsEmpty(ListItem.Trailer)</visible>
+	<visible>[!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))]</visible>
+	<visible description="Label2">![!IsEmpty(ListItem.Label2) + !StringCompare(ListItem.Label2,0 B) + !Window.IsVisible(MyVideoNav.xml)]</visible>
+	<visible description="Progress">![IsEmpty(ListItem.ChannelNumber) + !IsEmpty(ListItem.Progress)]</visible>
+	<visible>![[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + !IsEmpty(ListItem.Property(UnWatchedEpisodes))] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
   </include>
 
 </includes>

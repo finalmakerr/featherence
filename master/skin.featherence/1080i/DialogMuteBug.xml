@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="113">
   <defaultcontrol always="true">901</defaultcontrol>
+  <animation effect="fade" start="100" end="0" time="400" reversible="false">WindowClose</animation>
   <controls>
     <control type="group">
-      <posx>855</posx>
-      <posy>666</posy>
-      <control type="image" id="901" description="Muted">
-        <width>210</width>
-        <height>206</height>
-        <aspectratio>keep</aspectratio>
-        <texture>osd/MutedSpeaker.png</texture>
-      </control>
-    </control>
+	  <visible>!Skin.HasSetting(VolumeMute)</visible>
+	  <include>VolumeBar</include>
+	</control>
   </controls>
 </window>

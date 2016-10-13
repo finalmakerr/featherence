@@ -119,8 +119,8 @@
 	  <control type="image" id="7021" description="רקע תחתון צבע">
 		<include>Fade_MainBackgroundOverlay</include>
 		<include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + !IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo">Slide1</include>
-		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="74.65,85.8" time="0">Conditional</animation>
-		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75,85.8" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + !Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="74.65,85.8" time="0" reversible="false">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + !Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75,85.8" time="0" reversible="false">Conditional</animation>
 		<aspectratio>stretch</aspectratio>
 		<height>1110</height>
 		<width>1957</width>
@@ -133,8 +133,8 @@
 	  <control type="image" description="רקע תחתון טקסטורה">
 	    <include>Fade_MainBackgroundOverlay</include>
 	    <include condition="!Skin.HasSetting(FullFanartTopVideoInformation) + !IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo">Slide1</include>
-		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="74.4,85.8" time="0">Conditional</animation>
-		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="74.7,85.8" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + !Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="74.4,85.8" time="0" reversible="false">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + !Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="74.7,85.8" time="0" reversible="false">Conditional</animation>
 		<aspectratio>stretch</aspectratio>
 		<height>1100</height>
 		<width>1957</width>
@@ -145,7 +145,7 @@
 		<visible>![[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Player.HasVideo + !Window.IsVisible(DialogAddonSettings.xml)]</visible>
 		<!--<visible>![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] | [StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Control.HasFocus(7017) + IsEmpty(Control.GetLabel(11155)) + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + [IsEmpty(Control.GetLabel(70130)) + !Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)</visible>-->
 	  </control>
-	  <control type="largeimage" id="7013" description="פאנארט">
+	  <control type="largeimage" id="7013" description="פאנארט - Wall/Poster">
 		<fadetime>200</fadetime>
 		<include>Slide1.2</include>
 		<include>Fade_Background2Overlay</include>
@@ -169,6 +169,7 @@
 		<!--<include condition="!Window.IsVisible(MyPics.xml)">Fade_Background2Overlay</include>-->
 		
 		<include>Slide1.2</include>
+		<animation description="No full Fanart-SideVideoInformation" condition="!Skin.HasSetting(View50_Plus2) + Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogAddonSettings.xml)" effect="zoom" center="0,1100" start="100,111.5" end="100,111.5" time="0" reversible="false">Conditional</animation>
 		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,86.15" time="0">Conditional</animation>
 		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75.5,86.15" time="0">Conditional</animation>
 		<aspectratio align="top">stretch</aspectratio>
@@ -188,6 +189,7 @@
 		<include>Fade_Background2Overlay</include>
 		<include>TopInformationSize1</include>
 		<include>Slide1.2</include>
+		<animation description="No full Fanart-SideVideoInformation" condition="!Skin.HasSetting(View50_Plus2) + Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogAddonSettings.xml)" effect="zoom" center="0,1100" start="100,111.5" end="100,111.5" time="0" reversible="false">Conditional</animation>
 		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,86.15" time="0">Conditional</animation>
 		<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75.5,86.15" time="0">Conditional</animation>
 		<aspectratio align="top">scale</aspectratio>
@@ -242,6 +244,7 @@
 	  <!--<include>Slide1</include>
 	  <height>552</height>
 	  <width>1920</width>-->
+	  <animation description="No full Fanart-SideVideoInformation" condition="!Skin.HasSetting(View50_Plus2) + Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogAddonSettings.xml)" effect="zoom" center="0,1100" start="100,111.5" end="100,111.5" time="0" reversible="false">Conditional</animation>
 	  <animation description="Home-Panel" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + [!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,-7" time="0" reversible="false">Conditional</animation>
 	  <include>TopInformationSize0</include>
 	  <visible>!Window.IsVisible(DialogFavourites.xml)</visible>

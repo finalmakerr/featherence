@@ -233,9 +233,17 @@ elif mode == 32:
 	---MISCS-------------------------
 	------------------------------'''
 	name = 'MISCS'
-	mode32(value, admin, name, printpoint)
+	mode32(value, value2, name, printpoint)
 	'''---------------------------'''
 
+elif mode == 33:
+	'''------------------------------
+	---ADDONS-LOCK-------------------
+	------------------------------'''
+	name = 'ADDONS-LOCK'
+	mode33(value, value2, name, printpoint)
+	'''---------------------------'''
+	
 elif mode == 34:
 	'''------------------------------
 	---?-----------------------------
@@ -370,7 +378,7 @@ elif mode >= 200 and mode <= 249:
 					if '.zip' in files and not '.txt' in files:
 						if 'Featherence_' in files:
 							filesname = regex_from_to(files, "Featherence_", ".zip", excluding=True)
-							if returned == 2 and filesname == 'Classico Plus': continue
+							if returned == 3 and filesname == 'Classico Plus': continue
 							if filesname != "" and filesname != None:
 								filesT_ = { filesname: files }
 								filesT.update(filesT_)

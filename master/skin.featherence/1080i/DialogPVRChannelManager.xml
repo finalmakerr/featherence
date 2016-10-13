@@ -39,16 +39,26 @@
 					<param name="width" value="820" />
 				  </include>
 				  <control type="label" description="Main Label">
-				  <posy>6</posy>
+				    <posy>6</posy>
 					<width>750</width>
-					<posx>45</posx>
+					<posx>90</posx>
 					<height>80</height>
-					<width>630</width>
+					<width>580</width>
 					<aligny>center</aligny>
 					<scroll>false</scroll>
 					<font>size36</font>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Label]</label>
+				  </control>
+				  <control type="image" description="סמל">
+					<width>65</width>
+					<height>65</height>
+					<posx>20</posx>
+					<posy>15</posy>
+					<include condition="StringCompare(System.Language,Hebrew)">ImageL1</include>
+					<include condition="!StringCompare(System.Language,Hebrew)">ImageR1</include>
+					
+					<texture border="0" diffuse="buttons/types/bd1.png">$INFO[ListItem.Property(Icon)]</texture>
 				  </control>
 				</itemlayout>
 				<focusedlayout width="820" height="75">
@@ -62,15 +72,25 @@
 					<param name="width" value="820" />
 				  </include>
 				  <control type="label" description="Main Label">
-					<posy>6</posy>
+				    <posy>6</posy>
 					<width>750</width>
-					<posx>45</posx>
+					<posx>90</posx>
 					<height>80</height>
-					<width>630</width>
+					<width>580</width>
 					<aligny>center</aligny>
+					<scroll>false</scroll>
 					<font>size36</font>
 					<textcolor>white2</textcolor>
 					<label>$INFO[ListItem.Label]</label>
+				  </control>
+				  <control type="image" description="סמל">
+					<width>65</width>
+					<height>65</height>
+					<posx>20</posx>
+					<posy>15</posy>
+					<include condition="StringCompare(System.Language,Hebrew)">ImageL1</include>
+					<include condition="!StringCompare(System.Language,Hebrew)">ImageR1</include>
+					<texture border="0" diffuse="buttons/types/bd1.png">$INFO[ListItem.Property(Icon)]</texture>
 				  </control>
 				</focusedlayout>
 			</control>
@@ -199,13 +219,13 @@
 		    <control type="image" id ="10">
 				<description>Current Channel Icon</description>
 				<width>680</width>
-				<height>70</height>
+				<height>65</height>
 				<posx>1055</posx>
-				<posy>354</posy>
+				<posy>352</posy>
 				<include condition="StringCompare(System.Language,Hebrew)">ImageL1</include>
 				<include condition="!StringCompare(System.Language,Hebrew)">ImageR1</include>
 				
-				<texture border="0" diffuse="buttons/types/bd.png">$INFO[ListItem.Property(Icon)]</texture>
+				<texture border="0" diffuse="buttons/types/bd1.png">$INFO[ListItem.Property(Icon)]</texture>
 			</control>
 		</control>
 		<control type="grouplist" id="9000">

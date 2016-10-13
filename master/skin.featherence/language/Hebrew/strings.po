@@ -694,7 +694,7 @@ msgid "Choose the transperancy level of the lock mark."
 msgstr "בחר את רמת שקיפות הסמן נעילה."
 
 msgctxt "#31465"
-msgid "Fade time between different skin windows"
+msgid "Fade time between different skin windows transition"
 msgstr "משך עמעום בזמן מעבר בין חלונות"
 
 msgctxt "#31466"
@@ -742,94 +742,494 @@ msgid "Write up the addon id to be locked no matter how it's been entered."
 msgstr "כתוב את השם המזהה של ההרחבה אותה ברצונך לנעול, לא משנה איך היא נפתחה."
 
 msgctxt "#31477"
-msgid ""
-msgstr ""
+msgid "Extra mouse support"
+msgstr "תמיכה נוספת בעכבר"
 
 msgctxt "#31478"
-msgid ""
-msgstr ""
+msgid "Mute"
+msgstr "השתק"
 
 msgctxt "#31479"
-msgid ""
-msgstr ""
+msgid "Choose YES in order to increase mouse support in the skin.[CR]For example: In the video OSD menu when you click on the volume icon you will be granted with an extra menu."
+msgstr "בחר באפשרות זו בכדי להגביר את תמיכת השימוש בעכבר בסקין.[CR]לדוגמא בכפתורי ניגון כשלוחצים על הכפתור עוצמת שמע, יפתח חלון אפשרויות."
 
 msgctxt "#31480"
-msgid ""
-msgstr ""
+msgid "Subtitle Selection"
+msgstr "בחירת תרגום"
 
 msgctxt "#31481"
-msgid ""
-msgstr ""
+msgid "Subtitle Delay"
+msgstr "השהיית תרגום"
 
 msgctxt "#31482"
-msgid ""
-msgstr ""
+msgid "Show/Hide Subtitle"
+msgstr "הצג/הסתר תרגום"
 
 msgctxt "#31483"
-msgid ""
-msgstr ""
+msgid "Enable zoom animation between different skin windows transition"
+msgstr "אפשר אנימציית זום בזמן מעבר בין חלונות"
 
 msgctxt "#31484"
-msgid ""
-msgstr ""
+msgid "Allow zoom in/out animation"
+msgstr "מאפשר זום במעבר בין חלונות"
 
 msgctxt "#31485"
-msgid ""
-msgstr ""
+msgid "Enable Next Aired"
+msgstr "אפשר Next Aired"
 
 msgctxt "#31486"
-msgid ""
-msgstr ""
+msgid "The script will scan your library and tries to fetch next aired info for every show."
+msgstr "The script will scan your library and tries to fetch next aired info for every show."
 
 msgctxt "#31487"
-msgid ""
-msgstr ""
+msgid "Enable trailer button"
+msgstr "הצג כפתור קדימון"
 
 msgctxt "#31488"
-msgid ""
-msgstr ""
+msgid "Trailer button display under each button that contain a trailer.[CR]To be activate by mouse or touch device."
+msgstr "כפתור קדימון יופיע על-יד כל כפתור המכיל קדימון.[CR]מיועד להפעלה עם העכבר/מסך מגע."
 
 msgctxt "#31489"
-msgid ""
-msgstr ""
+msgid "Show fanart from episode/season image"
+msgstr "הצג פאנארט מתמונת פרק/עונה"
 
 msgctxt "#31490"
-msgid ""
-msgstr ""
+msgid "Show volume icon"
+msgstr "הצג סמל עוצמת קול"
 
 msgctxt "#31491"
-msgid ""
-msgstr ""
+msgid "When volume up/down."
+msgstr "כשמגבירים/מנמיכים עוצמת קול."
 
 msgctxt "#31492"
-msgid ""
-msgstr ""
+msgid "Volume position"
+msgstr "מיקום עוצמת קול"
 
 msgctxt "#31493"
-msgid ""
-msgstr ""
+msgid "Choose volume icon"
+msgstr "בחר סמל עוצמת קול"
 
 msgctxt "#31494"
-msgid ""
-msgstr ""
+msgid "Volume background color"
+msgstr "צבע רקע עוצמת קול"
 
 msgctxt "#31495"
-msgid ""
-msgstr ""
+msgid "Volume icon color"
+msgstr "צבע סמל עוצמת קול"
 
 msgctxt "#31496"
-msgid ""
-msgstr ""
+msgid "Volume background overlay"
+msgstr "שקיפות רקע עוצמת קול"
 
 msgctxt "#31497"
-msgid ""
-msgstr ""
+msgid "Volume icon overlay"
+msgstr "שקיפות סמל עוצמת קול"
 
 msgctxt "#31498"
+msgid "Show volume level percent"
+msgstr "הצג רמת אחוז עוצמת קול"
+
+msgctxt "#31499"
+msgid "Choose YES in order to show the volume level in percents from 0-100%."
+msgstr "בחר כן בכדי להציג את את עוצמת הקול באחוזים מ-0-100%."
+
+msgctxt "#31500"
+msgid "Change the position of the volume display."
+msgstr "שנה את מיקום הצגת עוצמת הקול."
+
+msgctxt "#31501"
+msgid "Always show volume level on mute"
+msgstr "הצג תמיד עוצמת קול במצב השתקה"
+
+msgctxt "#31502"
+msgid "Choose yes in order to always show the volume level when it's on mute."
+msgstr "בחר כן בכדי להציג את מצב עוצמת קול תמיד כאשר עוצמת הקול על מצב השתק."
+
+msgctxt "#31503"
+msgid "Choose your own icon for the volume icon."
+msgstr "בחר בסמל משלך עבור עוצמת הקול."
+
+msgctxt "#31504"
+msgid "Color the volume background/border."
+msgstr "צבע את רקע/גבול עוצמת הקול."
+
+msgctxt "#31505"
+msgid "Color the volume icon."
+msgstr "צבע את סמל עוצמת הקול."
+
+msgctxt "#31506"
+msgid "Side video information"
+msgstr "מידע וידאו צדדי"
+
+msgctxt "#31507"
 msgid ""
 msgstr ""
 
-msgctxt "#31499"
+msgctxt "#31508"
+msgid ""
+msgstr ""
+
+msgctxt "#31509"
+msgid ""
+msgstr ""
+
+msgctxt "#31510"
+msgid ""
+msgstr ""
+
+msgctxt "#31511"
+msgid ""
+msgstr ""
+
+msgctxt "#31512"
+msgid ""
+msgstr ""
+
+msgctxt "#31513"
+msgid ""
+msgstr ""
+
+msgctxt "#31514"
+msgid ""
+msgstr ""
+
+msgctxt "#31515"
+msgid ""
+msgstr ""
+
+msgctxt "#31516"
+msgid ""
+msgstr ""
+
+msgctxt "#31517"
+msgid ""
+msgstr ""
+
+msgctxt "#31518"
+msgid ""
+msgstr ""
+
+msgctxt "#31519"
+msgid ""
+msgstr ""
+
+msgctxt "#31520"
+msgid ""
+msgstr ""
+
+msgctxt "#31521"
+msgid ""
+msgstr ""
+
+msgctxt "#31522"
+msgid ""
+msgstr ""
+
+msgctxt "#31523"
+msgid ""
+msgstr ""
+
+msgctxt "#31524"
+msgid ""
+msgstr ""
+
+msgctxt "#31525"
+msgid ""
+msgstr ""
+
+msgctxt "#31526"
+msgid ""
+msgstr ""
+
+msgctxt "#31527"
+msgid ""
+msgstr ""
+
+msgctxt "#31528"
+msgid ""
+msgstr ""
+
+msgctxt "#31529"
+msgid ""
+msgstr ""
+
+msgctxt "#31530"
+msgid ""
+msgstr ""
+
+msgctxt "#31531"
+msgid ""
+msgstr ""
+
+msgctxt "#31532"
+msgid ""
+msgstr ""
+
+msgctxt "#31533"
+msgid ""
+msgstr ""
+
+msgctxt "#31534"
+msgid ""
+msgstr ""
+
+msgctxt "#31535"
+msgid ""
+msgstr ""
+
+msgctxt "#31536"
+msgid ""
+msgstr ""
+
+msgctxt "#31537"
+msgid ""
+msgstr ""
+
+msgctxt "#31538"
+msgid ""
+msgstr ""
+
+msgctxt "#31539"
+msgid ""
+msgstr ""
+
+msgctxt "#31540"
+msgid ""
+msgstr ""
+
+msgctxt "#31541"
+msgid ""
+msgstr ""
+
+msgctxt "#31542"
+msgid ""
+msgstr ""
+
+msgctxt "#31543"
+msgid ""
+msgstr ""
+
+msgctxt "#31544"
+msgid ""
+msgstr ""
+
+msgctxt "#31545"
+msgid ""
+msgstr ""
+
+msgctxt "#31546"
+msgid ""
+msgstr ""
+
+msgctxt "#31547"
+msgid ""
+msgstr ""
+
+msgctxt "#31548"
+msgid ""
+msgstr ""
+
+msgctxt "#31549"
+msgid ""
+msgstr ""
+
+msgctxt "#31550"
+msgid ""
+msgstr ""
+
+msgctxt "#31551"
+msgid ""
+msgstr ""
+
+msgctxt "#31552"
+msgid ""
+msgstr ""
+
+msgctxt "#31553"
+msgid ""
+msgstr ""
+
+msgctxt "#31554"
+msgid ""
+msgstr ""
+
+msgctxt "#31555"
+msgid ""
+msgstr ""
+
+msgctxt "#31556"
+msgid ""
+msgstr ""
+
+msgctxt "#31557"
+msgid ""
+msgstr ""
+
+msgctxt "#31558"
+msgid ""
+msgstr ""
+
+msgctxt "#31559"
+msgid ""
+msgstr ""
+
+msgctxt "#31560"
+msgid ""
+msgstr ""
+
+msgctxt "#31561"
+msgid ""
+msgstr ""
+
+msgctxt "#31562"
+msgid ""
+msgstr ""
+
+msgctxt "#31563"
+msgid ""
+msgstr ""
+
+msgctxt "#31564"
+msgid ""
+msgstr ""
+
+msgctxt "#31565"
+msgid ""
+msgstr ""
+
+msgctxt "#31566"
+msgid ""
+msgstr ""
+
+msgctxt "#31567"
+msgid ""
+msgstr ""
+
+msgctxt "#31568"
+msgid ""
+msgstr ""
+
+msgctxt "#31569"
+msgid ""
+msgstr ""
+
+msgctxt "#31570"
+msgid ""
+msgstr ""
+
+msgctxt "#31571"
+msgid ""
+msgstr ""
+
+msgctxt "#31572"
+msgid ""
+msgstr ""
+
+msgctxt "#31573"
+msgid ""
+msgstr ""
+
+msgctxt "#31574"
+msgid ""
+msgstr ""
+
+msgctxt "#31575"
+msgid ""
+msgstr ""
+
+msgctxt "#31576"
+msgid ""
+msgstr ""
+
+msgctxt "#31577"
+msgid ""
+msgstr ""
+
+msgctxt "#31578"
+msgid ""
+msgstr ""
+
+msgctxt "#31579"
+msgid ""
+msgstr ""
+
+msgctxt "#31580"
+msgid ""
+msgstr ""
+
+msgctxt "#31581"
+msgid ""
+msgstr ""
+
+msgctxt "#31582"
+msgid ""
+msgstr ""
+
+msgctxt "#31583"
+msgid ""
+msgstr ""
+
+msgctxt "#31584"
+msgid ""
+msgstr ""
+
+msgctxt "#31585"
+msgid ""
+msgstr ""
+
+msgctxt "#31586"
+msgid ""
+msgstr ""
+
+msgctxt "#31587"
+msgid ""
+msgstr ""
+
+msgctxt "#31588"
+msgid ""
+msgstr ""
+
+msgctxt "#31589"
+msgid ""
+msgstr ""
+
+msgctxt "#31590"
+msgid ""
+msgstr ""
+
+msgctxt "#31591"
+msgid ""
+msgstr ""
+
+msgctxt "#31592"
+msgid ""
+msgstr ""
+
+msgctxt "#31593"
+msgid ""
+msgstr ""
+
+msgctxt "#31594"
+msgid ""
+msgstr ""
+
+msgctxt "#31595"
+msgid ""
+msgstr ""
+
+msgctxt "#31596"
+msgid ""
+msgstr ""
+
+msgctxt "#31597"
+msgid ""
+msgstr ""
+
+msgctxt "#31598"
+msgid ""
+msgstr ""
+
+msgctxt "#31599"
 msgid ""
 msgstr ""
 

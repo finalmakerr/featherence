@@ -2,6 +2,7 @@
 <window>
   <defaultcontrol always="true">50</defaultcontrol>
   <views>50,51,54,57,58</views>
+  <include>Fade_WindowsOpenClose</include>
   <include>SetFocusView</include>
   <controls>
     <include>Backgrounds3</include>
@@ -14,5 +15,6 @@
 	<include>TopVideoInformation</include>
 	<include>ScrollBar</include>
 	<include>TopInformation</include>
+	<include>WindowsBusy</include>
   </controls>
 </window>

@@ -79,6 +79,18 @@
 	<value condition="Skin.String(MenuColor)" description="מותאם אישי">$INFO[Skin.String(MenuColor)]</value>
   </variable>
   
+  <variable name="VolumeBackgroundColor" description="רקע עוצמה">
+    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),VolumeBackgroundColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="!Skin.String(VolumeBackgroundColor)" description="ברירת מחדל-smoky black">ff100c08</value>
+	<value condition="Skin.String(VolumeBackgroundColor)" description="מותאם אישי">$INFO[Skin.String(VolumeBackgroundColor)]</value>
+  </variable>
+  
+  <variable name="VolumeIconColor" description="סמל עוצמה">
+    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),VolumeIconColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="!Skin.String(VolumeIconColor)" description="ברירת מחדל">white</value>
+	<value condition="Skin.String(VolumeIconColor)" description="מותאם אישי">$INFO[Skin.String(VolumeIconColor)]</value>
+  </variable>
+  
   <variable name="DialogMenuColor" description="עיצוב גוון">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),DialogMenuColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(DialogMenuColor)" description="ברירת מחדל-payne's grey(100%)">ff40404f</value>
@@ -114,7 +126,7 @@
   </variable>
   <variable name="TopInformationColor" description="בחירת צבע פס עליון">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),TopInformationColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
-	<value condition="!Skin.String(TopInformationColor)" description="ברירת מחדל-smoky black">ff100c08</value>
+	<value condition="!Skin.String(TopInformationColor)" description="ברירת מחדל">ff100c08</value>
 	<value condition="Skin.String(TopInformationColor)" description="מותאם אישי">$INFO[Skin.String(TopInformationColor)]</value>
   </variable>
   
@@ -126,7 +138,7 @@
   
   <variable name="TopVideoInformationColor" description="בחירת צבע פרטי וידאו">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),TopVideoInformationColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
-    <value condition="!Skin.String(TopVideoInformationColor)" description="ברירת מחדל-smoky black">ff100c08</value>
+    <value condition="!Skin.String(TopVideoInformationColor)" description="ברירת מחדל">ff100c08</value>
 	<value condition="Skin.String(TopVideoInformationColor)" description="מותאם אישי">$INFO[Skin.String(TopVideoInformationColor)]</value>
   </variable>
   
@@ -138,7 +150,7 @@
   
   <variable name="MouseColor" description="בחירת צבע עכבר">
     <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),MouseColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
-    <value condition="!Skin.String(MouseColor)" description="ברירת מחדל-smoky black">FFFFFFFF</value>
+    <value condition="!Skin.String(MouseColor)" description="ברירת מחדל">FFFFFFFF</value>
 	<value condition="Skin.String(MouseColor)" description="מותאם אישי">$INFO[Skin.String(MouseColor)]</value>
   </variable>
   
@@ -280,6 +292,7 @@
 	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Premiered)">[COLOR=white]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Premiered]</value>
   </variable>
   <variable name="fanart" description="פאנארט">
+	<value condition="Skin.HasSetting(EpisodeFanart) + !IsEmpty(ListItem.Thumb) + [Container.Content(seasons) | Container.Content(episodes)] + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season)">$INFO[ListItem.Thumb]</value>
 	<value condition="!IsEmpty(ListItem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
 	<value condition="!IsEmpty(Fanart.Image)">$INFO[Fanart.Image]</value>
 	<value condition="!IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
@@ -756,6 +769,12 @@
 	<variable name="CustomStartupImage">
 	  <value condition="Skin.String(CustomStartupImage)">$INFO[Skin.String(CustomStartupImage)]</value>
 	  <value condition="!Skin.String(CustomStartupImage)">special://skin/fanart.jpg</value>
+	</variable>
+	
+	<variable name="VolumeIcon">
+	  <value condition="!Skin.String(VolumeIcon) + [Player.Muted | StringCompare(Player.Volume,-60.0 dB)]">images/speaker2.png</value>
+	  <value condition="!Skin.String(VolumeIcon)">images/speaker.png</value>
+	  <value condition="Skin.String(VolumeIcon)">$INFO[Skin.String(VolumeIcon)]</value>
 	</variable>
 	
 	<variable name="MouseIcon_">

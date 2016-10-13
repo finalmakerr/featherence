@@ -62,11 +62,12 @@ def mode6(value):
 	passprotectduration = xbmc.getInfoLabel('Skin.String(PassProtectDuration)')
 	passprotect_property = xbmc.getInfoLabel('Window(home).Property(PassProtect)')
 	currentpwd = xbmc.getCondVisibility('Skin.HasSetting('+value+')')
+	containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
 	customhomecustomizerW = xbmc.getCondVisibility('Window.IsVisible(CustomHomeCustomizer.xml)')
 	set1v = ""
 	#label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id)) ; action = actionT.get('action'+str(id))
 	
-	if currentpwd:
+	if currentpwd or value == 'PassProtectAddon':
 		printpoint = printpoint + '1'
 		if passprotect_property != "":
 			printpoint = printpoint + '2'
@@ -78,32 +79,51 @@ def mode6(value):
 			setProperty('PassProtect','','home')
 			xbmc.executebuiltin('ReplaceWindow(Home.xml)')
 		else:
-			printpoint = printpoint + '4'
-			returned, set1v = dialognumeric(0,localize(12326),"",'1','','') ; xbmc.sleep(500)
-			if set1v != passprotect:
-				printpoint = printpoint + '5'
-				notification(localize(12342),"","",1000)
-				setProperty('PassProtect','','home')
-				xbmc.executebuiltin('ReplaceWindow(Home.xml)')
+			if value == 'PassProtectAddon':
+				printpoint = printpoint + 'z'
+				passprotectaddon1 = xbmc.getInfoLabel('Skin.String(PassProtectAddon1)')
+				passprotectaddon2 = xbmc.getInfoLabel('Skin.String(PassProtectAddon2)')
+				passprotectaddon3 = xbmc.getInfoLabel('Skin.String(PassProtectAddon3)')
+				passprotectaddon4 = xbmc.getInfoLabel('Skin.String(PassProtectAddon4)')
+				passprotectaddon5 = xbmc.getInfoLabel('Skin.String(PassProtectAddon5)')
+				passprotectaddon6 = xbmc.getInfoLabel('Skin.String(PassProtectAddon6)')
+				passprotectaddon7 = xbmc.getInfoLabel('Skin.String(PassProtectAddon7)')
+				passprotectaddon8 = xbmc.getInfoLabel('Skin.String(PassProtectAddon8)')
+				passprotectaddon9 = xbmc.getInfoLabel('Skin.String(PassProtectAddon9)')
+				passprotectaddon10 = xbmc.getInfoLabel('Skin.String(PassProtectAddon10)')
+				passprotectaddonL = [passprotectaddon1, passprotectaddon2, passprotectaddon3, passprotectaddon4, passprotectaddon5, passprotectaddon6, passprotectaddon7, passprotectaddon8, passprotectaddon9, passprotectaddon10]
+				for z in passprotectaddonL:
+					if z in containerfolderpath and z != "" and '.' in z and containerfolderpath != "":
+						printpoint = printpoint + 'y'
+						break
+			if 'z' in printpoint and not 'y' in printpoint: pass
 			else:
-				x = ""
-				try:
-					passprotectduration = int(passprotectduration)
-					passprotectduration = str(passprotectduration)
-				except:
-					passprotectduration = '15'
-					
-				if passprotectduration == '0': pass
+				printpoint = printpoint + '4'
+				returned, set1v = dialognumeric(0,localize(12326),"",'1','','') ; xbmc.sleep(500)
+				if set1v != passprotect:
+					printpoint = printpoint + '5'
+					notification(localize(12342),"","",1000)
+					setProperty('PassProtect','','home')
+					xbmc.executebuiltin('ReplaceWindow(Home.xml)')
 				else:
-					printpoint = printpoint + 'B'
-					xbmc.executebuiltin('AlarmClock(PassProtect,ClearProperty(PassProtect,home),'+passprotectduration+',silent)')
-					x = addonString(32155).encode('utf-8') % (str(passprotectduration)) #Relocking is schedule in %s minutes
-				
-				notification(addonString(32154).encode('utf-8'),x,"",4000) #That's the right password :)
-				setProperty('PassProtect','true', 'home')
-				if value == 'PassProtect':
-					printpoint = printpoint + 'A'
-				
+					x = ""
+					try:
+						passprotectduration = int(passprotectduration)
+						passprotectduration = str(passprotectduration)
+					except:
+						passprotectduration = '15'
+						
+					if passprotectduration == '0': pass
+					else:
+						printpoint = printpoint + 'B'
+						xbmc.executebuiltin('AlarmClock(PassProtect,ClearProperty(PassProtect,home),'+passprotectduration+',silent)')
+						x = addonString(32155).encode('utf-8') % (str(passprotectduration)) #Relocking is schedule in %s minutes
+					
+					notification(addonString(32154).encode('utf-8'),x,"",4000) #That's the right password :)
+					setProperty('PassProtect','true', 'home')
+					if value == 'PassProtect':
+						printpoint = printpoint + 'A'
+					
 	else:
 		printpoint = printpoint + '9'
 	
@@ -113,6 +133,7 @@ def mode6(value):
 	'passprotect' + space2 + str(passprotect) + newline + \
 	'passprotect_property' + space2 + str(passprotect_property) + newline + \
 	'passprotect_property_' + space2 + str(passprotect_property_) + newline + \
+	'containerfolderpath' + space2 + str(containerfolderpath) + newline + \
 	'currentpwd' + space2 + str(currentpwd) + newline
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 	
@@ -214,24 +235,34 @@ def mode9(admin, name):
 	property_dialogsubtitlesna9 = xbmc.getInfoLabel('Window(home).Property(DialogSubtitlesNA9)')
 	property_dialogsubtitlesna10 = xbmc.getInfoLabel('Window(home).Property(DialogSubtitlesNA10)')
 	subL = [property_dialogsubtitles2, property_dialogsubtitlesna1, property_dialogsubtitlesna2, property_dialogsubtitlesna3, property_dialogsubtitlesna4, property_dialogsubtitlesna5, property_dialogsubtitlesna6, property_dialogsubtitlesna7, property_dialogsubtitlesna8, property_dialogsubtitlesna9, property_dialogsubtitlesna10]
-	listL = ['Subscenter.org', 'Ktuvit.com', 'OpenSubtitles.org', 'Torec', 'Quasar']
+	listL = []
+	for i in range(0,10):
+		x = xbmc.getInfoLabel('Container(150).ListItemAbsolute('+str(i)+').label')
+		if x == "": break
+		else: listL.append(x)
+	#dialogok(str(listL),'','','')
+	#listL = ['Subscenter.org', 'Ktuvit.com', 'OpenSubtitles.org', 'Torec', 'Quasar']
 	dialogsubtitlesW = xbmc.getCondVisibility('Window.IsVisible(DialogSubtitles.xml)')
 	controlgetlabel100 = xbmc.getInfoLabel('Control.GetLabel(100)')
 	controlhasfocus120 = xbmc.getCondVisibility('Control.HasFocus(120)') #MAIN
 	controlhasfocus150 = xbmc.getCondVisibility('Control.HasFocus(150)') #SIDE
+	controlhasfocus151 = xbmc.getCondVisibility('Control.HasFocus(151)') #SIDE
 	controlgetlabel100 = xbmc.getInfoLabel('Control.GetLabel(100)') #DialogSubtitles Service Name
+	controlgroup70hasfocus = xbmc.getCondVisibility('ControlGroup(70).HasFocus()') #OSD BUTTONS
 	controlgroup70hasfocus0 = xbmc.getCondVisibility('ControlGroup(70).HasFocus(0)') #OSD BUTTONS
 	container120listitemlabel2 = xbmc.getInfoLabel('Container(120).ListItem.Label2')
 	container120numitems = 0
 	container120numitems2 = container120numitems
 	systemcurrentcontrol = xbmc.getInfoLabel('System.CurrentControl')
 	playerpaused = xbmc.getCondVisibility('Player.Paused')
+	subject = ""
+	refresh = 'true'
 	tip = "true"
 	count = 0
 	count2 = 0 #container120numitems
 	countidle = 0
 	'''---------------------------'''
-	while countidle < 40 and dialogsubtitlesW and not xbmc.abortRequested:
+	while countidle < 70 and dialogsubtitlesW and listL != [] and not xbmc.abortRequested:
 		'''------------------------------
 		---VARIABLES---------------------
 		------------------------------'''
@@ -243,7 +274,9 @@ def mode9(admin, name):
 			'''---------------------------'''
 			controlhasfocus120 = xbmc.getCondVisibility('Control.HasFocus(120)') #MAIN
 			controlhasfocus150 = xbmc.getCondVisibility('Control.HasFocus(150)') #SIDE
+			controlhasfocus151 = xbmc.getCondVisibility('Control.HasFocus(151)') #SIDE
 			controlgetlabel100 = xbmc.getInfoLabel('Control.GetLabel(100)') #DialogSubtitles Service Name
+			controlgroup70hasfocus = xbmc.getCondVisibility('ControlGroup(70).HasFocus()') #OSD BUTTONS
 			controlgroup70hasfocus0 = xbmc.getCondVisibility('ControlGroup(70).HasFocus(0)') #OSD BUTTONS
 			'''---------------------------'''
 			systemcurrentcontrol = xbmc.getInfoLabel('System.CurrentControl')
@@ -260,14 +293,18 @@ def mode9(admin, name):
 		systemidle40 = xbmc.getCondVisibility('System.IdleTime(40)')
 		'''---------------------------'''
 		
-		if controlhasfocus120 and container120numitems > 0 and count2 != 0: count2 = 0
+		if controlhasfocus120 and container120numitems > 0 and count2 != 0:
+			count2 = 0
+			subject = ""
+			#setProperty('TEMP','', 'home')
 		
 		if not dialogkeyboardW and container120numitems != "" and controlgetlabel100 != "":
-			
 			if count == 0 and property_subtitleservice != "" and property_subtitleservice != controlgetlabel100 and controlgetlabel100 != "":
 				'''------------------------------
 				---Last_SubService---------------
 				------------------------------'''
+				subject = 'Choosing Last Subtitle Service'
+				#setProperty('TEMP',to_utf8(subject), 'home')
 				if controlhasfocus120: xbmc.executebuiltin('Action(Left)')
 				systemcurrentcontrol = findin_systemcurrentcontrol("0",property_subtitleservice,40,'Action(Down)','')
 				systemcurrentcontrol = findin_systemcurrentcontrol("0",property_subtitleservice,40,'Action(Down)','')
@@ -292,28 +329,38 @@ def mode9(admin, name):
 							'''---------------------------'''
 							
 					elif tip == "true" and countidle == 3:
-						if container120listitemlabel2 == property_dialogsubtitles2: notification('$LOCALIZE[31858]',property_dialogsubtitles2,"",3000)
-						elif container120listitemlabel2 in subL: notification('$LOCALIZE[31859]',property_dialogsubtitles2,"",3000)
+						if container120listitemlabel2 == property_dialogsubtitles2:
+							notification('$LOCALIZE[31858]',property_dialogsubtitles2,"",3000)
+						elif container120listitemlabel2 in subL:
+							notification('$LOCALIZE[31859]',property_dialogsubtitles2,"",3000)
 						
 						tip = "false"
 						'''---------------------------'''
 				
-			elif controlhasfocus150 and container120numitems == 0:
-				count2 += 1
+			elif (controlhasfocus150 or controlhasfocus151) and container120numitems == 0:
 				
-				if countidle >= 1 and count2 == 1:
+				count2 += 1
+				if admin: notification('1',str(countidle) + '/' + str(count) + '/' + str(count2),'',4000)
+				if ((countidle >= 1 or count <= 3) and count2 == 1) or subject == 'User interrupting...' and countidle >= 3 or subject == "":
 					'''------------------------------
 					---LOOKING-FOR-SUBTITLE----------
 					------------------------------'''
-					notification('$LOCALIZE[31862]',"","",4000)
+					#notification('$LOCALIZE[31862]',"","",4000)
+					subject = localize(31862)
+					#setProperty('TEMP',to_utf8(subject), 'home')
 					'''---------------------------'''
 				
-				elif countidle > 3 and count2 == 10 and systemcurrentcontrol == controlgetlabel100:
+				elif not countidle >= 3 and count2 > 10 and refresh == 'true':
+					subject = 'User interrupting...'
+					count2 -= 1
+				elif countidle > 3 and count2 >= 10 and refresh == 'true':
 					'''------------------------------
 					---REFRESH-----------------------
 					------------------------------'''
-					if controlgetlabel100 == "Ktuvit.com": xbmc.sleep(1000)
-					notification('$LOCALIZE[31861]',"","",2000)
+					refresh = 'false'
+					#notification('$LOCALIZE[31861]',"","",2000)
+					subject = localize(31861)
+					#setProperty('TEMP',to_utf8(subject), 'home')
 					systemcurrentcontrol = findin_systemcurrentcontrol("0",controlgetlabel100,40,'Action(Down)','')
 					systemcurrentcontrol = findin_systemcurrentcontrol("0",controlgetlabel100,40,'Action(Down)','')
 					systemcurrentcontrol = findin_systemcurrentcontrol("0",controlgetlabel100,40,'Action(Down)','')
@@ -322,34 +369,56 @@ def mode9(admin, name):
 					systemcurrentcontrol = findin_systemcurrentcontrol("0",controlgetlabel100,100,'Action(Down)','Action(Select)')
 					'''---------------------------'''
 					
-				elif countidle > 5 and count2 >= 20 and controlgetlabel100 != "":
-					'''------------------------------
-					---CHANGE-SUBTITLE-SERVICE-------
-					------------------------------'''
-					notification('$LOCALIZE[31860]',"","",2000)
-					if controlgetlabel100 in listL: listL.remove(controlgetlabel100) #listL = 
-					
-					systemcurrentcontrol = findin_systemcurrentcontrol("2",listL,40,'Action(Down)','')
-					systemcurrentcontrol = findin_systemcurrentcontrol("2",listL,100,'Action(Down)','')
-					systemcurrentcontrol = findin_systemcurrentcontrol("2",listL,200,'Action(Down)','Action(Select)')
-					
-					count2 = 0
-					'''---------------------------'''
-		
+				elif (countidle > 5 or refresh != 'true') and count2 >= 20 and controlgetlabel100 != "":
+					if controlgetlabel100 in listL: listL.remove(controlgetlabel100)
+					if listL != []:
+						'''------------------------------
+						---CHANGE-SUBTITLE-SERVICE-------
+						------------------------------'''
+						refresh = 'true'
+						#notification('$LOCALIZE[31860]',"","",2000)
+						subject = localize(31860)
+						#setProperty('TEMP',to_utf8(subject), 'home')
+						
+						systemcurrentcontrol = findin_systemcurrentcontrol("2",listL,40,'Action(Down)','')
+						systemcurrentcontrol = findin_systemcurrentcontrol("2",listL,100,'Action(Down)','')
+						systemcurrentcontrol = findin_systemcurrentcontrol("2",listL,200,'Action(Down)','')
+						systemcurrentcontrol = findin_systemcurrentcontrol("2",listL,300,'Action(Down)','Action(Select)')
+						
+						count2 = 0
+						'''---------------------------'''
+					else:
+						'''------------------------------
+						---NO-SUBTITLES-FOUND!-----------
+						------------------------------'''
+						subject = 'No subtitles found..'
+						#setProperty('TEMP',to_utf8(subject), 'home')
+						'''---------------------------'''
+			elif controlgroup70hasfocus and container120numitems == 0:
+				subject = 'Searching paused..'
+				#setProperty('TEMP',to_utf8(subject), 'home')
+			else:
+				pass
+				
 		dialogsubtitlesW = xbmc.getCondVisibility('Window.IsVisible(DialogSubtitles.xml)')
 		if dialogsubtitlesW:
+			if subject != "" or admin:
+				if subject == 'User interrupting...': setProperty('TEMP',to_utf8(subject) + space + str(countidle) + '/3', 'home', force=False)
+				elif count2 > 10: setProperty('TEMP',to_utf8(subject) + space + str(count2) + '/20', 'home', force=False)
+				else: setProperty('TEMP',to_utf8(subject) + space + str(count2) + '/10', 'home', force=False)
 			xbmc.sleep(1000)
 			'''---------------------------'''
 			count += 1
 			if systemidle1: countidle += 1
-			else: countidle = 0
+			else:
+				countidle = 0
 			'''---------------------------'''
 	
-	if xbmc.getCondVisibility('System.IdleTime(1)') and not xbmc.getCondVisibility('System.IdleTime(7)'):
+	if xbmc.getCondVisibility('System.IdleTime(1)') and not xbmc.getCondVisibility('System.IdleTime(7)') and container120numitems != 0:
 		'''------------------------------
 		---SET-NEW-SUBTITLE--------------
 		------------------------------'''
-		setProperty('TEMP2', localize(24110), type="home")
+		setProperty('TEMP', localize(24110), type="home")
 		property_dialogsubtitles = xbmc.getInfoLabel('Window(home).Property(DialogSubtitles)')
 		if property_dialogsubtitles != "": setSubHisotry(admin, property_dialogsubtitles, property_dialogsubtitles2, property_dialogsubtitlesna1, property_dialogsubtitlesna2, property_dialogsubtitlesna3, property_dialogsubtitlesna4, property_dialogsubtitlesna5, property_dialogsubtitlesna6, property_dialogsubtitlesna7, property_dialogsubtitlesna8, property_dialogsubtitlesna9, property_dialogsubtitlesna10, subL)
 		if property_subtitleservice != controlgetlabel100 and controlgetlabel100 != "": setProperty('Subtitle_Service', controlgetlabel100, type="home")
@@ -357,7 +426,7 @@ def mode9(admin, name):
 		
 	#if dialogsubtitlesW: xbmc.executebuiltin('Dialog.Close(subtitlesearch)')
 	setProperty('DialogSubtitles', "", type="home")
-	setProperty('TEMP2', "", type="home")
+	if listL != []: setProperty('TEMP', "", type="home")
 	
 	if xbmc.getCondVisibility('Player.Paused'): xbmc.executebuiltin('Action(Play)')
 	'''---------------------------'''
@@ -768,7 +837,7 @@ def mode31(value, value2, value3, value4, admin, name, printpoint):
 	diaogtextviewer(header, message)
 	'''---------------------------'''
 	
-def mode32(value, admin, name, printpoint):
+def mode32(value, value2, name, printpoint):
 	'''------------------------------
 	---MISCS-------------------------
 	------------------------------'''
@@ -955,6 +1024,11 @@ def mode32(value, admin, name, printpoint):
 	elif value == '8':
 		xbmc.sleep(500)
 		xbmc.executebuiltin('ActivateWindow(1170)')
+	
+	elif value == '9':
+		if value2 != "" and value2 != None:
+			xbmc.sleep(500)
+			xbmc.executebuiltin('ActivateWindow('+value2+')')
 		
 	elif value == '40':
 		addon = 'plugin.video.featherence.kids'
@@ -963,7 +1037,46 @@ def mode32(value, admin, name, printpoint):
 			General_Language2 = xbmcaddon.Addon(addon).getSetting('General_Language2') ; General_Language2 = str(General_Language2)
 			dialogok(addonString_servicefeatherence(32086).encode('utf-8') % (General_Language2),addonString_servicefeatherence(32087).encode('utf-8'),"",addonString_servicefeatherence(32088).encode('utf-8'),line1c="yellow")
 		
+def mode33(value, value2, name, printpoint):
+	'''------------------------------
+	---ADDONS-LOCK-------------------
+	------------------------------'''
+	extra = "" ; TypeError = "" ; value2 = "" ; returned = ""
+	passprotectaddon1 = xbmc.getInfoLabel('Skin.String(PassProtectAddon1)')
+	passprotectaddon2 = xbmc.getInfoLabel('Skin.String(PassProtectAddon2)')
+	passprotectaddon3 = xbmc.getInfoLabel('Skin.String(PassProtectAddon3)')
+	passprotectaddon4 = xbmc.getInfoLabel('Skin.String(PassProtectAddon4)')
+	passprotectaddon5 = xbmc.getInfoLabel('Skin.String(PassProtectAddon5)')
+	passprotectaddon6 = xbmc.getInfoLabel('Skin.String(PassProtectAddon6)')
+	passprotectaddon7 = xbmc.getInfoLabel('Skin.String(PassProtectAddon7)')
+	passprotectaddon8 = xbmc.getInfoLabel('Skin.String(PassProtectAddon8)')
+	passprotectaddon9 = xbmc.getInfoLabel('Skin.String(PassProtectAddon9)')
+	passprotectaddon10 = xbmc.getInfoLabel('Skin.String(PassProtectAddon10)')
+	list = ['-> (Exit)']
+	
+	list.append(to_utf8(passprotectaddon1) + '(1)')
+	list.append(to_utf8(passprotectaddon2) + '(2)')
+	list.append(to_utf8(passprotectaddon3) + '(3)')
+	list.append(to_utf8(passprotectaddon4) + '(4)')
+	list.append(to_utf8(passprotectaddon5) + '(5)')
+	list.append(to_utf8(passprotectaddon6) + '(6)')
+	list.append(to_utf8(passprotectaddon7) + '(7)')
+	list.append(to_utf8(passprotectaddon8) + '(8)')
+	list.append(to_utf8(passprotectaddon9) + '(9)')
+	list.append(to_utf8(passprotectaddon10) + '(10)')
 
+	returned, value2 = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
+
+	if returned == -1: printpoint = printpoint + "9"
+	elif returned == 0: printpoint = printpoint + "8"
+	else: printpoint = printpoint + "7"
+	
+	if "7" in printpoint:
+		if not xbmc.getInfoLabel('Skin.String(PassProtectAddon'+str(returned)+')'):
+			heading = localize(24000) + space + 'ID'
+			dialogkeyboard("", heading, 0, '1', 'PassProtectAddon'+str(returned), "", force=False)
+		else: xbmc.executebuiltin('Skin.SetString(PassProtectAddon'+str(returned)+',)')
+		
 def mode39(value, name, printpoint):
 	'''------------------------------
 	---Reset-default-buttons---------
@@ -1276,7 +1389,7 @@ def mode201(value, admin, name, printpoint):
 		elif returned == 8: printpoint = printpoint + "H" #RANDOM-ALL-TRANSPERANCY
 		elif (returned == 9 or value == "9"): returned = 9 ; printpoint = printpoint + "I" #RESET BUTTONS PROPERTIES
 		
-		from variables2 import labelT, list1, list0, list0c, list0c2, list0o
+		from variables2 import labelT, list1, list0, list0c, list0c2, list0o, list0l, list1l
 		Custom1000(name,0,str(list[returned]),20)
 		'''---------------------------'''
 	if "A" in printpoint:
@@ -1476,6 +1589,14 @@ def mode201(value, admin, name, printpoint):
 					setSkinSetting('0','backgroundw'+str(i)+'_'+str(i2),"")
 					'''---------------------------'''
 		
+		for y in list1l:
+			setSkinSetting('1',y,"")
+			'''---------------------------'''
+		
+		for y in list0l:
+			setSkinSetting('0',y,"")
+			'''---------------------------'''
+			
 	if ("7" in printpoint or value != "") and not "8" in printpoint and not "9" in printpoint:
 		if value != "9":
 			Custom1000(name,90,str(list[returned]),3)
@@ -1750,7 +1871,10 @@ def mode212(value, admin, name, printpoint):
 			x = property_buttonid_
 			property_buttonname2 = labelT.get('label'+property_buttonid)
 			extra2 = extra2 + newline + addonString_servicefeatherence(32134).encode('utf-8') + space2 + str(property_buttonname2) + space + "(" + str(property_buttonid) + ")" #This action will also reset
-		
+		elif int(property_buttonid_) < 100:
+			y = 'Reset item'
+			x = property_buttonid_
+			two = 1
 		else:
 			y = 'Remove item'
 			x = property_buttonid_
@@ -2164,6 +2288,13 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "Current day label (31)" + space2 + xbmc.getInfoLabel('Control.GetLabel(31)')
 		
 		elif dialogsubtitlesW:
+			message = message + newline + "TEMP" + space2 + property_temp
+			message = message + newline + "Container(120).NumItems" + space2 + xbmc.getInfoLabel('Container(120).NumItems')
+			message = message + newline + "Container(150).ListItemNoWrap(0).label" + space2 + xbmc.getInfoLabel('Container(150).ListItemAbsolute(0).label')
+			message = message + newline + "Container(150).ListItemNoWrap(1).label" + space2 + xbmc.getInfoLabel('Container(150).ListItemAbsolute(1).label')
+			message = message + newline + "Container(150).ListItemNoWrap(2).label" + space2 + xbmc.getInfoLabel('Container(150).ListItemAbsolute(2).label')
+			message = message + newline + "Container(150).ListItemNoWrap(3).label" + space2 + xbmc.getInfoLabel('Container(150).ListItemAbsolute(3).label')
+			message = message + newline + "Container(150).ListItemNoWrap(4).label" + space2 + xbmc.getInfoLabel('Container(150).ListItemAbsolute(4).label')
 			message = message + newline + "Subtitle_Service" + space2 + xbmc.getInfoLabel('Window(home).Property(Subtitle_Service)')
 			message = message + newline + "DialogSubtitles" + space2 + xbmc.getInfoLabel('Window(home).Property(DialogSubtitles)')
 			message = message + newline + "DialogSubtitles2" + space2 + xbmc.getInfoLabel('Window(home).Property(DialogSubtitles2)')
@@ -2221,8 +2352,20 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "ListItem.Duration" + space2 + xbmc.getInfoLabel('ListItem.Duration')
 			message = message + newline + "Container.Viewmode" + space2 + xbmc.getInfoLabel('Container.Viewmode')
 			message = message + newline + '---------------------------'
-			message = message + newline + "custom" + space2 + str(xbmc.getInfoLabel('ListItem.Genre')) #CUSTOM TEST
-			message = message + newline + "custom2" + space2 + str(xbmc.getInfoLabel('ListItem.Rating')) #CUSTOM TEST
+			if xbmc.getCondVisibility('System.HasAddon(script.tv.show.next.aired)'):
+				message = message + newline + "NextAired.NextDate" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.NextDate)'))
+				message = message + newline + "NextAired.NextTitle" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.NextTitle)'))
+				message = message + newline + "NextAired.0.Label" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.0.Label)'))
+				message = message + newline + "NextAired.0.AirTime" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.0.AirTime)'))
+				message = message + newline + "NextAired.0.NextDate" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.0.NextDate)'))
+				message = message + newline + "NextAired.0.NextTitle" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.0.NextTitle)'))
+				message = message + newline + "NextAired.1.Label" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.1.Label)'))
+				message = message + newline + "NextAired.1.AirTime" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.1.AirTime)'))
+				message = message + newline + "NextAired.1.NextDate" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.1.NextDate)'))
+				message = message + newline + "NextAired.1.NextTitle" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.1.NextTitle)'))
+				message = message + newline + '---------------------------'
+			message = message + newline + "custom" + space2 + str(xbmc.getInfoLabel('$INFO[Container(50).ListItemPosition(0).Trailer]')) #CUSTOM TEST
+			message = message + newline + "custom2" + space2 + str(xbmc.getInfoLabel('Container(50).ListItemPosition(0).Overlay')) #CUSTOM TEST
 			message = message + newline + "custom3" + space2 + str(xbmc.getInfoLabel('System.BuildVersion')) #CUSTOM TEST
 			message = message + newline + "ListItem.Property(TotalEpisodes)" + space2 + str(xbmc.getInfoLabel('ListItem.Property(TotalEpisodes)')) #CUSTOM TEST
 			
