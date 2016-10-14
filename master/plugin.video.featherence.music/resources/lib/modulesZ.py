@@ -134,8 +134,8 @@ def CATEGORIES11105Z(name, iconimage, desc, background, fanart):
 	
 	list = []
 
-	list.append('&youtube_ch=')
-	list.append('&youtube_ch=')
+	list.append('&youtube_ch=TomorrowlandChannel') #Tomorrowland
+	list.append('&youtube_ch=dimitrivegasonline') #Dimitri Vegas & Like Mike
 	list.append('&youtube_ch=')
 		
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))

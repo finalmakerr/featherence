@@ -2,6 +2,13 @@
 WIP (WORK IN PROGRESS)
 -----------------------
 
+
+------------------------
+Featherence Music v0.3.5 (14-Oct-16)
+------------------------
+- Added Tomorrowland and Dimitri Vegas & Like Mike in forgein djs tv channels.
+- Update Tomer Dror's playlists.
+
 ------------------------
 Featherence Music v0.3.4 (10-Oct-16)
 ------------------------
