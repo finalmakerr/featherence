@@ -7,6 +7,7 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
+	xbmc.executebuiltin('ActivateWindow(1212)')
 	#xbmc.executebuiltin('ActivateWindow(10157)')
 	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=4)')
 	#xbmc.executebuiltin('ActivateWindow(MusicFiles,root)')
@@ -49,9 +50,9 @@ def mode5(value, admin, name, printpoint):
 		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)') #Widget
 		installaddonP('resource.images.weathericons.outline', update=False)
 		installaddonP('resource.images.weatherfanart.single', update=False)
-		installaddonP('resource.uisounds.featherence', update=True)
+		installaddonP('resource.uisounds.featherence')
 		installaddonP('script.module.unidecode', update=False)
-		installaddonP('script.skinshortcuts', update=True)
+		installaddonP('script.skinshortcuts')
 		xbmc.sleep(2000) ; setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
 	
 	setProperty('TEMP', '', type="home")
@@ -221,6 +222,7 @@ def mode9(admin, name):
 	'''------------------------------
 	---SEMI-AUTO-SUBTITLE-FIND-------
 	------------------------------'''
+	admin = xbmc.getCondVisibility('Skin.HasSetting(Admin)')
 	property_subtitleservice = xbmc.getInfoLabel('Window(home).Property(Subtitle_Service)')
 	property_dialogsubtitles = xbmc.getInfoLabel('Window(home).Property(DialogSubtitles)')
 	property_dialogsubtitles2 = xbmc.getInfoLabel('Window(home).Property(DialogSubtitles2)')
@@ -2264,9 +2266,11 @@ def mode218(value, admin, name, printpoint):
 	message = ""
 	if "view" in value:
 		dialogfullscreeninfoW = xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)')
+		dialogvideoinfoW = xbmc.getCondVisibility('Window.IsVisible(DialogVideoInfo.xml)')
 		dialogsubtitlesW = xbmc.getCondVisibility('Window.IsVisible(DialogSubtitles.xml)')
 		myweatherW = xbmc.getCondVisibility('Window.IsVisible(MyWeather.xml)')
 		playerpaused = xbmc.getCondVisibility('Player.Paused')
+		
 		if dialogfullscreeninfoW and playerpaused:
 			message = message + newline + "VideoPlayer.Duration" + space2 + xbmc.getInfoLabel('VideoPlayer.Duration')
 			message = message + newline + "VideoPlayer.Year" + space2 + xbmc.getInfoLabel('VideoPlayer.Year')
@@ -2287,6 +2291,18 @@ def mode218(value, admin, name, printpoint):
 			
 			message = message + newline + "Current day label (31)" + space2 + xbmc.getInfoLabel('Control.GetLabel(31)')
 		
+		elif dialogvideoinfoW:
+			message = message + newline + "Window.Property(actor.Age)" + space2 + xbmc.getInfoLabel('$INFO[Window.Property(actor.Age)]')
+			message = message + newline + "Window(home).Property(Age)" + space2 + xbmc.getInfoLabel('$INFO[Window(home).Property(Age)]')
+			
+			message = message + newline + "Window.Property(current.actor.name)" + space2 + xbmc.getInfoLabel('Window.Property(current.actor.name)')
+			message = message + newline + "Window.Property(current.actor.biography)" + space2 + xbmc.getInfoLabel('Window.Property(current.actor.biography)')
+			message = message + newline + "Window.Property(current.actor.icon)" + space2 + xbmc.getInfoLabel('Window.Property(current.actor.icon)')
+			message = message + newline + "Window.Property(current.actor.fanart_image)" + space2 + xbmc.getInfoLabel('Window.Property(current.actor.fanart_image)')
+			message = message + newline + "Window.Property(current.actor.extrafanart)" + space2 + xbmc.getInfoLabel('Window.Property(current.actor.extrafanart)')
+			message = message + newline + "Window.Property(current.actor.extrathumb)" + space2 + xbmc.getInfoLabel('Window.Property(current.actor.extrathumb)')
+			message = message + newline + "Window.Property(current.actor.name)" + space2 + xbmc.getInfoLabel('Window.Property(current.actor.name)')
+			
 		elif dialogsubtitlesW:
 			message = message + newline + "TEMP" + space2 + property_temp
 			message = message + newline + "Container(120).NumItems" + space2 + xbmc.getInfoLabel('Container(120).NumItems')

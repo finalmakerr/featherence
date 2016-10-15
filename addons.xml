@@ -334,7 +334,7 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.3.34" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.3.35" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -390,6 +390,8 @@
   Movment of home buttons in the skin design window are matching the current layout 1:1.
 - Subtitles: The subtitles window display current and previously choosen subtitles, include a Smart Search button and even auto switch between hosts if required.
   Subtitle OSD show country language flag and can be used to offset subtitle.
+- Touce Devices: Full support across the skin.
+- Trailers buttons in click: Can be activated using mouse/touch from the widgets and any of the skin views.
 - User customized media: Choose your favourite startup music, video and pictures slideshow music.
 - Password Lock: Lock your prefered buttons with a password.
 - Web browser: Launch your default OS internet browser from within Kodi.
@@ -421,6 +423,8 @@
   שינוי מיקום של כפתורי הבית בחלון העיצוב תואמת 1:1 עם התצוגה האמיתית.
 - תרגומים: חלון התרגומים מציג תרגום נוכחי והיסטוריית בחירה, מכיל כפתור חיפוש חכם ובנוסף מסוגל להחליף שרת תרגומים באופן אוטומטי ובמקרה הצורך.
   כפתור תרגום (בכפתורי הניגון) מציג שפה לפי דגל מדינה ומאפשר לתזמן תרגום באופן פשוט.
+- מכשירי מגע: תמיכה מלאה.
+- כפתורי קדימונים בקליק: זמינים דרך הו'ידגט ו-כלל תצוגות הוידאו. לשימוש בעזרת עכבר/מכשיר ט'אצ.
 - מדיה אישית: בחר במוזיקה או/ו וידאו המעודף עליך בעת הפעלת הקודי. בנוסף ניתן לבחור מוזיקה בהפעלת מצגת תמונות.
 - הגנת סיסמא: הגן על כפתורים רצויים באמצעות סיסמא.
 - דפדפן: הפעל את הדפדפן במערכת ההפעלה שלך מתוך הקודי.

@@ -532,8 +532,9 @@ def setPath(type=0,mask="", folderpath="", original=True):
 		dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
 		
 	xbmc.sleep(500)
-	TEMP = xbmc.getInfoLabel('Skin.String(TEMP)')
-	x2, x2_ = TranslatePath(TEMP, filename=True)
+	TEMP = xbmc.getInfoLabel('Window(home).Property(TEMP)')
+	x2, x2_ = TranslatePath(folderpath, filename=True)
+	#x2, x2_ = TranslatePath(TEMP, filename=True)
 
 	if x2 == "": notification_common("6")
 	elif original == True or x2_ == "": returned = x2
