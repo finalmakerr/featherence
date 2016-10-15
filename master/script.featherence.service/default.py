@@ -518,8 +518,8 @@ elif mode >= 200 and mode <= 249:
 											x = backgroundT.get('backgroundw'+str(i)+'_'+str(i2))
 											x2, x2_ = TranslatePath(x)
 											formula, custommediaL, = GeneratePath('backgroundw'+str(i)+'_'+str(i2)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"])
-								else: extra = extra + newline + 'label not exists!' + space + 'x' + space2 + str(x)
-							else: extra = extra + newline + 'id not exists!' + space + 'x' + space2 + str(x)
+								else: extra = extra + newline + 'label not exists!' + space + 'x' + space2 + str(x) + space + 'i/i2' + space2 + str(i) + '/' + str(i2)
+							else: extra = extra + newline + 'id not exists!' + space + 'x' + space2 + str(x) + space + 'i/i2' + space2 + str(i) + '/' + str(i2)
 						Custom1000(str(list[returned]),50,str(list2[returned2]),5)
 						for y in list1:
 							x = xbmc.getInfoLabel('Skin.HasSetting('+y+')')

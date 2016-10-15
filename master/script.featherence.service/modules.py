@@ -263,6 +263,7 @@ def mode9(admin, name):
 	count = 0
 	count2 = 0 #container120numitems
 	countidle = 0
+	if xbmc.getSkinDir() != 'skin.featherence': listL = []
 	'''---------------------------'''
 	while countidle < 70 and dialogsubtitlesW and listL != [] and not xbmc.abortRequested:
 		'''------------------------------
@@ -338,6 +339,8 @@ def mode9(admin, name):
 						
 						tip = "false"
 						'''---------------------------'''
+				elif xbmc.getInfoLabel('Window(home).Property(DialogSubtitles2)') == "":
+					subject = 'Choose subtitle'
 				
 			elif (controlhasfocus150 or controlhasfocus151) and container120numitems == 0:
 				
@@ -404,10 +407,10 @@ def mode9(admin, name):
 				
 		dialogsubtitlesW = xbmc.getCondVisibility('Window.IsVisible(DialogSubtitles.xml)')
 		if dialogsubtitlesW:
-			if subject != "" or admin:
-				if subject == 'User interrupting...': setProperty('TEMP',to_utf8(subject) + space + str(countidle) + '/3', 'home', force=False)
-				elif count2 > 10: setProperty('TEMP',to_utf8(subject) + space + str(count2) + '/20', 'home', force=False)
-				else: setProperty('TEMP',to_utf8(subject) + space + str(count2) + '/10', 'home', force=False)
+			if subject == 'User interrupting...': setProperty('TEMP',to_utf8(subject) + space + str(countidle) + '/3', 'home', force=False)
+			elif container120numitems > 0: setProperty('TEMP',to_utf8(subject), 'home', force=False)
+			elif count2 > 10: setProperty('TEMP',to_utf8(subject) + space + str(count2) + '/20', 'home', force=False)
+			else: setProperty('TEMP',to_utf8(subject) + space + str(count2) + '/10', 'home', force=False)
 			xbmc.sleep(1000)
 			'''---------------------------'''
 			count += 1
@@ -724,7 +727,7 @@ def mode28(value, value2, value3, name, printpoint):
 	------------------------------'''
 	extra = "" ; TypeError = "" ; value2 = "" ; returned = ""
 	list = ['-> (Exit)', 'None', 'Default', localize(31010), localize(31011)] #Center List, Side List
-	if value == 'AutoView.episodes' or value == 'AutoView.seasons': list.append(localize(31012)) #Small List
+	if (value == 'AutoView.episodes' or value == 'AutoView.seasons') and value != 'Force_all': list.append(localize(31012)) #Small List
 	list.append(localize(31013)) #Wall
 	list.append(localize(31014)) #Poster
 	list.append(localize(31015)) #List
@@ -1801,7 +1804,6 @@ def mode211(value, admin, name, printpoint):
 	'''------------------------------
 	---Create-New-Item---------------
 	------------------------------'''
-	from variables2 import *
 	extra = "" ; TypeError = "" ; x = "" ; y = ""
 	
 	#xbmc.executebuiltin('Action(Close)')
@@ -1810,6 +1812,8 @@ def mode211(value, admin, name, printpoint):
 		'''Get new control ID'''
 		if '0' in value:
 			'''main menu item'''
+			#from variables2 import *
+			#label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id)) ; action = actionT.get('action'+str(id))
 			xbmc.executebuiltin('Dialog.Close(1175)')
 			for i in range(100,109):
 				x = xbmc.getInfoLabel('Skin.String(label'+str(i)+')')
@@ -1950,7 +1954,9 @@ def mode212(value, admin, name, printpoint):
 				printpoint = printpoint + "7"
 		
 	
-	if not "7" in printpoint and not "8" in printpoint:
+	if '8' in printpoint:
+		notification_common('9')
+	elif not "7" in printpoint and not "8" in printpoint:
 		'''Error'''
 		notification("Error...","","",1000)
 	else:
@@ -2553,7 +2559,7 @@ def mode233(value, admin, name, printpoint):
 				else: path = featherenceservicebackgrounds_path
 				#xbmc.executebuiltin('Skin.SetImage(background'+y+',,'+path+')')
 				returned_ = setPath(type=type,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
-				if property_temp2 == 'ok': setSkinSetting('0','background'+y,to_unicode(returned_))
+				if returned_ != "": setSkinSetting('0','background'+y,to_unicode(returned_))
 				
 			elif '2' in value:
 				printpoint = printpoint + '5'
@@ -2568,7 +2574,7 @@ def mode233(value, admin, name, printpoint):
 				else: path = featherenceserviceicons_path
 				#xbmc.executebuiltin('Skin.SetImage(icon'+y+',,'+path+')')
 				returned_ = setPath(type=2,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
-				if property_temp2 == 'ok': setSkinSetting('0','icon'+y,to_unicode(returned_))
+				if returned_ != "": setSkinSetting('0','icon'+y,to_unicode(returned_))
 			else: printpoint = printpoint + '9'
 			
 			setProperty('TEMP', '', type="home")

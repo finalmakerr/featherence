@@ -513,6 +513,7 @@ def CleanString2(x, comma=False):
 	return x2
 		
 def setPath(type=0,mask="", folderpath="", original=True):
+	setSkinSetting("0", 'TEMP', "")
 	name = 'setPath' ; printpoint = '' ; returned = "" ; count = 0
 	folderpath = to_utf8(folderpath)
 	if mask == 'pic': mask = '.jpg|.jpeg|.JPEG|.bmp|.gif|.GIF|.png|.PNG'
@@ -532,8 +533,9 @@ def setPath(type=0,mask="", folderpath="", original=True):
 		dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
 		
 	xbmc.sleep(500)
-	TEMP = xbmc.getInfoLabel('Window(home).Property(TEMP)')
-	x2, x2_ = TranslatePath(folderpath, filename=True)
+	#TEMP = xbmc.getInfoLabel('Window(home).Property(TEMP)')
+	TEMP = xbmc.getInfoLabel('Skin.String(TEMP)')
+	x2, x2_ = TranslatePath(TEMP, filename=True)
 	#x2, x2_ = TranslatePath(TEMP, filename=True)
 
 	if x2 == "": notification_common("6")
