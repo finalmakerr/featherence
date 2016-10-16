@@ -3,6 +3,11 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence BE CREATIVE v0.0.4 (16-Oct-16)
+------------------------
+- Minor bugs fix.
+
+------------------------
 Featherence BE CREATIVE v0.0.3 (26-Sep-16)
 ------------------------
 - Major update of autoview feature.
