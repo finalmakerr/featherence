@@ -161,7 +161,7 @@
 		<control type="image">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Game-Show.png</texture>
-			<visible>SubString(ListItem.Genre,$LOCALIZE[31625]) | SubString(ListItem.Genre,Game Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Game Show)]| [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31625]) | SubString(VideoPlayer.Genre,Game Show)]]</visible>
+			<visible>SubString(ListItem.Genre,$LOCALIZE[31626]) | SubString(ListItem.Genre,Game Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) + IsEmpty(ListItem.Genre) + SubString(Window(home).Property(ListItemGenre),Game Show)]| [[Window.IsActive(DialogFullScreenInfo.xml) | Control.HasFocus(311) | Control.HasFocus(312)] + [SubString(VideoPlayer.Genre,$LOCALIZE[31626]) | SubString(VideoPlayer.Genre,Game Show)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>

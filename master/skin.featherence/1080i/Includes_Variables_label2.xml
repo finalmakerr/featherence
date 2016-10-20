@@ -243,6 +243,10 @@
 	<value condition="!Skin.HasSetting(AutoView)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(AutoView)">$LOCALIZE[107]</value>
   </variable>
+  <variable name="26label2">
+	<value condition="!Skin.HasSetting(ForceView)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(ForceView)">$LOCALIZE[107]</value>
+  </variable>
   <variable name="28label2">
     <value condition="!Skin.String(IntroDelay)" description="ברירת מחדל">$LOCALIZE[13278]</value>
     <value condition="Skin.String(IntroDelay,0)" description="0">0</value>
@@ -256,6 +260,11 @@
   <variable name="29label2">
 	<value condition="!Skin.String(CustomStartupImage)">$LOCALIZE[106]</value>
 	<value condition="Skin.String(CustomStartupImage)">$LOCALIZE[107]</value>
+  </variable>
+  
+  <variable name="30label2">
+	<value condition="!Skin.HasSetting(ForceView)">for movies: $INFO[Skin.String(AutoView.movies)]</value>
+	<value condition="Skin.HasSetting(ForceView)">for anything: $INFO[Skin.String(ForceView.all)]</value>
   </variable>
   
   <variable name="36label2">
@@ -516,7 +525,7 @@
 	<value condition="Skin.HasSetting(TopVideoInformationFontSize)">$LOCALIZE[107]</value>
   </variable>
   
-  <variable name="393label2" description="">
+  <variable name="481label2" description="">
     <value condition="!Skin.String(WindowsOpenClose)">$LOCALIZE[13278]</value>
 	<value condition="Skin.String(WindowsOpenClose,0)">0</value>
 	<value condition="Skin.String(WindowsOpenClose,1)">400</value>
@@ -530,7 +539,7 @@
 	<value condition="Skin.String(WindowsOpenClose,9)">3000</value>
   </variable>
   
-  <variable name="394label2">
+  <variable name="482label2">
     <value condition="Skin.HasSetting(WindowsOpenClose)">$LOCALIZE[106]</value>
 	<value condition="!Skin.HasSetting(WindowsOpenClose)">$LOCALIZE[107]</value>
   </variable>
@@ -616,6 +625,26 @@
     <value condition="Skin.String(widget317) + !IsEmpty(Skin.String(widget317_name))">$INFO[Skin.String(widget317_name)]</value>
     <value condition="Skin.String(widget317) + IsEmpty(Skin.String(widget317_name))">$INFO[Skin.String(widget317)]</value>
 	<value condition="!Skin.String(widget317)">$INFO[Skin.String(label97)]</value>
+  </variable>
+  
+  <variable name="485label2" description="גודל לוגו מעבר">
+    <value condition="!Skin.String(TransitionLogoSize)">$LOCALIZE[13278]</value>
+	<value condition="Skin.String(TransitionLogoSize,0)">Small</value>
+	<value condition="Skin.String(TransitionLogoSize,1)">Medium</value>
+	<value condition="Skin.String(TransitionLogoSize,2)">Large</value>
+  </variable>
+  
+  <variable name="486label2" description="מיקום לוגו מעבר">
+    <value condition="!Skin.String(TransitionLogoPosition)">$LOCALIZE[13278]</value>
+	<value condition="Skin.String(TransitionLogoPosition,1)">SE</value>
+	<value condition="Skin.String(TransitionLogoPosition,2)">SW</value>
+	<value condition="Skin.String(TransitionLogoPosition,3)">S</value>
+	<value condition="Skin.String(TransitionLogoPosition,4)">E</value>
+	<value condition="Skin.String(TransitionLogoPosition,5)">CENTER</value>
+	<value condition="Skin.String(TransitionLogoPosition,6)">W</value>
+	<value condition="Skin.String(TransitionLogoPosition,7)">NE</value>
+	<value condition="Skin.String(TransitionLogoPosition,8)">N</value>
+	<value condition="Skin.String(TransitionLogoPosition,9)">NW</value>
   </variable>
   
   <variable name="ReloadSkin_check">

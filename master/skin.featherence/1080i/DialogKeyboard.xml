@@ -66,13 +66,13 @@
 				<label>$VAR[InternetKeyboardButton]</label>
 				<font>size18</font>
 				<onclick condition="SubString(Control.GetLabel(311),YouTube) | SubString(Control.GetLabel(311),Add URL)">RunScript(script.featherence.service,,?mode=512&amp;value=3)</onclick>
-				<onclick condition="SubString(Control.GetLabel(311),thumb)">RunScript(script.featherence.service,,?mode=512&amp;value=4)</onclick>
-				<onclick condition="SubString(Control.GetLabel(311),fanart)">RunScript(script.featherence.service,,?mode=512&amp;value=5)</onclick>
+				<onclick condition="SubString(Control.GetLabel(311),thumb) | SubString(Control.GetLabel(311),$LOCALIZE[20015])">RunScript(script.featherence.service,,?mode=512&amp;value=4)</onclick>
+				<onclick condition="SubString(Control.GetLabel(311),fanart) | SubString(Control.GetLabel(311),$LOCALIZE[20441])">RunScript(script.featherence.service,,?mode=512&amp;value=5)</onclick>
 				<onleft>701</onleft>
 				<onright>701</onright>
 				<onup>701</onup>
 				<ondown>701</ondown>
-				<visible>SubString(Control.GetLabel(311),YouTube) | SubString(Control.GetLabel(311),Add URL) | SubString(Control.GetLabel(311),thumb) | SubString(Control.GetLabel(311),fanart)</visible>
+				<visible>SubString(Control.GetLabel(311),YouTube) | SubString(Control.GetLabel(311),Add URL) | SubString(Control.GetLabel(311),thumb) | SubString(Control.GetLabel(311),$LOCALIZE[20015]) | SubString(Control.GetLabel(311),fanart) | SubString(Control.GetLabel(311),$LOCALIZE[20441])</visible>
 			</control>
 			<control type="image" description="תמונה מחרוזת חיפוש">
 				<bordertexture colordiffuse="ff000000" border="20">buttons/ButtonA0.png</bordertexture>

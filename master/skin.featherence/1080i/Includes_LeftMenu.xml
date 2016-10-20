@@ -241,15 +241,15 @@
 		  <onclick>Skin.ToggleSetting(View50_BiggerIcon)</onclick>
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
         </control>
-		<control type="radiobutton" id="115" description="מצב מניפה">
+		<control type="radiobutton" id="115" description="מצב סירה">
           <include>SideMenuCommon</include>
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31472]</label>
-		  <selected>Skin.HasSetting(View56_Fan)</selected>
-		  <onclick>Skin.ToggleSetting(View56_Fan)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(Admin)</visible>
+		  <selected>Skin.HasSetting(View54_Boat)</selected>
+		  <onclick>Skin.ToggleSetting(View54_Boat)</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015])</visible>
         </control>
 		<control type="radiobutton" id="116" description="הצג כפתור קדימון">
           <include>SideMenuCommon</include>
@@ -260,6 +260,7 @@
 		  <selected>!Skin.HasSetting(EnableTrailerButton)</selected>
 		  <onclick>Skin.ToggleSetting(EnableTrailerButton)</onclick>
 		  <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31012])</visible>
+		  <visible>![StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(View54_Boat)]</visible>
 		  <visible>Container.Content(movies) | !IsEmpty(ListItem.Trailer)</visible>
         </control>
 		<control type="radiobutton" id="117" description="הצג פאנארט מתמונת פרק/עונה">
@@ -280,7 +281,7 @@
 		  <label>$LOCALIZE[31506]</label>
 		  <selected>Skin.HasSetting(View50_SideVideoInformation)</selected>
 		  <onclick>Skin.ToggleSetting(View50_SideVideoInformation)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(Admin)</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
         </control>
 		<control type="radiobutton" id="119" description="גודל גופן פרטי וידאו">
           <include>SideMenuCommon</include>
@@ -321,25 +322,48 @@
 		  <onclick>SetFocus(9000)</onclick>
 		</control>
 		
-		<control type="radiobutton" id="25">
+		<control type="radiobutton" id="25" description="תצוגה אוטומטית:">
 			<include>SideMenuCommon</include>
 			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 			<font>size28</font>
-			<label>$LOCALIZE[98] $VAR[25label2]</label>
+			<label>$LOCALIZE[31509]: $VAR[25label2]</label>
 			<onclick>Skin.ToggleSetting(AutoView)</onclick>
 			<selected>Skin.HasSetting(AutoView)</selected>
+			<visible>!Skin.HasSetting(ForceView)</visible>
 		</control>
+		<control type="radiobutton" id="26" description="אילוץ תצוגה:">
+			<include>SideMenuCommon</include>
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<font>size28</font>
+			<label>$LOCALIZE[31508]: $VAR[26label2]</label>
+			<onclick>Skin.ToggleSetting(ForceView)</onclick>
+			<selected>Skin.HasSetting(ForceView)</selected>
+		</control>
+		
+		<control type="button" id="30" description="סרטים/כל חלון">
+			<include>SideMenuCommon</include>
+			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+			<onclick condition="!Skin.HasSetting(ForceView)">RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.movies)</onclick>
+			<onclick condition="Skin.HasSetting(ForceView)">RunScript(script.featherence.service,,?mode=28&amp;value=ForceView.all)</onclick>
+			<font>size28</font>
+			<label>$VAR[30label2]</label>
+			<visible>Skin.HasSetting(AutoView) | Skin.HasSetting(ForceView)</visible>
+			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+		</control>
+		
 		<control type="button" id="30">
 			<include>SideMenuCommon</include>
 			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-			<!--<onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=movies)</onclick>-->
 			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.movies)</onclick>
 			<font>size28</font>
 			<label>for movies: $INFO[Skin.String(AutoView.movies)]</label>
 			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+			<visible>!Skin.HasSetting(ForceView)</visible>
 		</control>
 		<control type="button" id="31">
 			<include>SideMenuCommon</include>
@@ -350,6 +374,7 @@
 			<label>for tv shows:  $INFO[Skin.String(AutoView.tvshows)]</label>
 			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+			<visible>!Skin.HasSetting(ForceView)</visible>
 		</control>
 		<control type="button" id="32">
 			<include>SideMenuCommon</include>
@@ -360,6 +385,7 @@
 			<label>for seasons:  $INFO[Skin.String(AutoView.seasons)]</label>
 			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+			<visible>!Skin.HasSetting(ForceView)</visible>
 		</control>
 		<control type="button" id="33">
 			<include>SideMenuCommon</include>
@@ -370,6 +396,7 @@
 			<label>for episodes: $INFO[Skin.String(AutoView.episodes)]</label>
 			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+			<visible>!Skin.HasSetting(ForceView)</visible>
 		</control>
 		<control type="button" id="34">
 			<include>SideMenuCommon</include>
@@ -380,6 +407,7 @@
 			<label>for movie sets: $INFO[Skin.String(AutoView.setmovies)]</label>
 			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+			<visible>!Skin.HasSetting(ForceView)</visible>
 		</control>
 		<control type="button" id="36">
 			<include>SideMenuCommon</include>
@@ -390,6 +418,7 @@
 			<label>for Actors: $INFO[Skin.String(AutoView.actors)]</label>
 			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+			<visible>!Skin.HasSetting(ForceView)</visible>
 		</control>
 		<control type="button" id="37">
 			<include>SideMenuCommon</include>
@@ -400,6 +429,7 @@
 			<label>for genres: $INFO[Skin.String(AutoView.genres)]</label>
 			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+			<visible>!Skin.HasSetting(ForceView)</visible>
 		</control>
 		<control type="button" id="38">
 			<include>SideMenuCommon</include>
@@ -410,6 +440,7 @@
 			<label>for years/countries/studios/directors: $INFO[Skin.String(AutoView.others)]</label>
 			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+			<visible>!Skin.HasSetting(ForceView)</visible>
 		</control>
 		
 		<control type="button" id="40">
@@ -421,6 +452,7 @@
 			<label>for pictures: $INFO[Skin.String(AutoView.pictures)]</label>
 			<visible>Skin.HasSetting(AutoView)</visible>
 			<visible>Window.IsVisible(MyPics.xml)</visible>
+			<visible>!Skin.HasSetting(ForceView)</visible>
 		</control>
 	  </control>
       
@@ -1114,12 +1146,12 @@
   
   
   <include name="ShowDVDCases">
-	 <control type="label" id="11156" description="דיסק">
+	 <!--<control type="label" id="11156" description="דיסק">
 	   <label>$VAR[11156label]</label>
 	   <visible>false</visible>
-     </control>
+     </control>-->
 	 <control type="group">
-	   <visible>IsEmpty(Control.GetLabel(11156)) + Window.IsVisible(MyVideoNav.xml)</visible>
+	   <visible>IsEmpty(Control.GetLabel(11156)) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(Home.xml)] | VideoPlayer.IsFullscreen</visible>
 	   <visible>!SubString(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)</visible>
 	   <control type="label" id="1103" description="***דירוג***">
           <label>$VAR[TopVideoInformation3]</label>
@@ -1127,14 +1159,16 @@
        </control>
 	   <control type="image" id="191" description="הטובים ביותר">
 		 <texture colordiffuse="ff6699cc">misc/dvdcases/dvdcases.png</texture>
-		 <visible>[[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + [IntegerGreaterThan(ListItem.Rating,8.9) + !IntegerGreaterThan(ListItem.Rating,9.9)]] | [Container.Content(movies) + IntegerGreaterThan(ListItem.Rating,7.6) + !IntegerGreaterThan(ListItem.Rating,9.9)]  |  [[VideoPlayer.Content(episodes) | !IsEmpty(VideoPlayer.Season) | !IsEmpty(VideoPlayer.Episode)] + Window.IsVisible(DialogFullScreenInfo.xml) + IntegerGreaterThan(VideoPlayer.Rating,8.9) + !IntegerGreaterThan(VideoPlayer.Rating,9.9)] | [[VideoPlayer.Content(movies) | !IsEmpty(VideoPlayer.Director) | !IsEmpty(VideoPlayer.Country) | !IsEmpty(VideoPlayer.mpaa) | !IsEmpty(VideoPlayer.Tagline) | !IsEmpty(VideoPlayer.Cast)] + Window.IsVisible(DialogFullScreenInfo.xml) + IntegerGreaterThan(VideoPlayer.Rating,7.6) + !IntegerGreaterThan(VideoPlayer.Rating,9.9)]</visible>
-		 <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
-		 <visible>IsEmpty(ListItem.VideoResolution) + IsEmpty(ListItem.VideoCodec)</visible>
+		 <visible description="listitem">SubString(ListItem.Rating,9.) + !VideoPlayer.IsFullscreen | VideoPlayer.IsFullscreen</visible>
+		 <visible description="videoplayer">VideoPlayer.IsFullscreen + SubString(VideoPlayer.Rating,9.) | !VideoPlayer.IsFullscreen</visible>
+		 <visible description="red">!SubString(ListItem.path,videodb://movies/sets/)</visible>
+		 <visible description="yellow">IsEmpty(ListItem.VideoResolution) + IsEmpty(ListItem.VideoCodec) | SubString(Container.FolderPath,videodb:) | VideoPlayer.IsFullscreen</visible>
 	   </control>
 	   <control type="image" id="1910" description="הטובים ביותר">
 		 <texture colordiffuse="ff6699cc">misc/dvdcases/dvdcases.png</texture>
 		 <visible>Window.IsVisible(Home.xml) + !Control.IsVisible(191)</visible>
-		 <visible>Control.HasFocus(311) + [IntegerGreaterThan(Container(311).ListItem.Property(rating),8.9) + !IntegerGreaterThan(Container(311).ListItem.Property(rating),9.9)] | Control.HasFocus(312) + [IntegerGreaterThan(Container(312).ListItem.Property(rating),8.9) + !IntegerGreaterThan(Container(312).ListItem.Property(rating),9.9)]</visible>
+		 <visible description="listitem">Control.HasFocus(311) + SubString(Container(311).ListItem.Property(rating),9.) | !Control.HasFocus(311)</visible>
+		 <visible description="listitem">Control.HasFocus(312) + SubString(Container(311).ListItem.Property(rating),9.) | !Control.HasFocus(312)</visible>
 	   </control>
 	   <control type="image" id="192" description="מארז סרטים">
 		 <texture colordiffuse="ffff0000">misc/dvdcases/dvdcases.png</texture>
@@ -1147,22 +1181,23 @@
 	   </control>
 	   <control type="image" id="190" description="רגיל">
 		 <texture>misc/dvdcases/dvdcases.png</texture>
-		 <!--<visible>[[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + [!IntegerGreaterThan(ListItem.Rating,8.9) | IntegerGreaterThan(ListItem.Rating,9.9)]] | [Container.Content(movies) + [!IntegerGreaterThan(ListItem.Rating,7.6) | IntegerGreaterThan(ListItem.Rating,9.9)]] | [VideoPlayer.Content(movies) | !IsEmpty(VideoPlayer.Director) | !IsEmpty(VideoPlayer.Country) | !IsEmpty(VideoPlayer.mpaa) | !IsEmpty(VideoPlayer.Tagline) | !IsEmpty(VideoPlayer.Cast)] + [!IsEmpty(Player.Art(tvshow.poster)) | !IsEmpty(Player.Art(poster)) | !IsEmpty(VideoPlayer.Cover) | Container.Content(Movies) | Container.Content(TVshows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Substring(ListItem.path,videodb://)]</visible>-->
-		 <visible>[[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + [!IntegerGreaterThan(ListItem.Rating,8.9) | IntegerGreaterThan(ListItem.Rating,9.9)]] | [Container.Content(movies) + [!IntegerGreaterThan(ListItem.Rating,7.6) | IntegerGreaterThan(ListItem.Rating,9.9)]] | [[VideoPlayer.Content(episodes) | !IsEmpty(VideoPlayer.Season) | !IsEmpty(VideoPlayer.Episode)] + Window.IsVisible(DialogFullScreenInfo.xml) + [!IntegerGreaterThan(VideoPlayer.Rating,8.9) | IntegerGreaterThan(VideoPlayer.Rating,9.9)]] | [[VideoPlayer.Content(movies) | !IsEmpty(VideoPlayer.Director) | !IsEmpty(VideoPlayer.Tagline) | !IsEmpty(VideoPlayer.mpaa)] + Window.IsVisible(DialogFullScreenInfo.xml) + [!IntegerGreaterThan(VideoPlayer.Rating,7.6) | IntegerGreaterThan(VideoPlayer.Rating,9.9)]]</visible>
-		 <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
-		 <visible>IsEmpty(ListItem.VideoResolution) + IsEmpty(ListItem.VideoCodec) | SubString(Container.FolderPath,videodb:)</visible>
-		 <!--<visible>false</visible>-->
+		 <visible description="listitem">!SubString(ListItem.Rating,9.) + !VideoPlayer.IsFullscreen | VideoPlayer.IsFullscreen</visible>
+		 <visible description="videoplayer">VideoPlayer.IsFullscreen + !SubString(VideoPlayer.Rating,9.) | !VideoPlayer.IsFullscreen</visible>
+		 <visible description="red">!SubString(ListItem.path,videodb://movies/sets/)</visible>
+		 <visible description="yellow">IsEmpty(ListItem.VideoResolution) + IsEmpty(ListItem.VideoCodec) | SubString(Container.FolderPath,videodb:) | VideoPlayer.IsFullscreen</visible>
 	   </control>
 	   <control type="image" id="1900" description="רגיל">
 		 <texture>misc/dvdcases/dvdcases.png</texture>
 		 <visible>Window.IsVisible(Home.xml) + !Control.IsVisible(190)</visible>
-		 <visible>Control.HasFocus(311) + [!IntegerGreaterThan(Container(311).ListItem.Property(rating),8.9) | IntegerGreaterThan(Container(311).ListItem.Property(rating),9.9)] | Control.HasFocus(312) + [!IntegerGreaterThan(Container(312).ListItem.Property(rating),8.9) | IntegerGreaterThan(Container(312).ListItem.Property(rating),9.9)]</visible>
+		 <visible description="listitem">Control.HasFocus(311) + !SubString(Container(311).ListItem.Property(rating),9.) | !Control.HasFocus(311)</visible>
+		 <visible description="listitem">Control.HasFocus(312) + !SubString(Container(311).ListItem.Property(rating),9.) | !Control.HasFocus(312)</visible>
 	   </control>
 	 </control>
    </include>
   <include name="ShowDVDdisc">
     <control type="group">
-	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster))" effect="slide" start="0,0" end="0,180" delay="4000" time="700">Conditional</animation>
+	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster)) + ![Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])]" effect="slide" start="0,0" end="0,180" delay="4000" time="700">Conditional</animation>
+	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster)) + [Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])]" effect="slide" start="0,0" end="0,-180" delay="4000" time="700">Conditional</animation>
 	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster))" effect="rotate" center="auto" start="0" end="360" time="10000" loop="true" delay="4000" reversible="false">Conditional</animation>
 	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster))" effect="fade" start="0" end="100" delay="4000" time="220">Conditional</animation>
 	  <height>160</height>

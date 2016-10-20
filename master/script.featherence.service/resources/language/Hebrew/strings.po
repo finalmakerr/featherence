@@ -568,8 +568,8 @@ msgid "Relocking is schedule in %s minutes"
 msgstr "נעילה מחדש בעוד %s דק'"
 
 msgctxt "#32156"
-msgid ""
-msgstr ""
+msgid "Create new button"
+msgstr "צור כפתור חדש"
 
 msgctxt "#32157"
 msgid ""

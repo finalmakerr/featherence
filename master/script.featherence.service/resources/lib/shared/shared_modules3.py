@@ -1329,7 +1329,8 @@ def TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 		'''Empty button'''
 		notification("no valid URL founds!", "...", "", 2000)
 	else:
-		if General_TVModeDialog == "true" or mode == 2 or scriptfeatherenceservice_random != "":
+		if not '&youtube_' in url and not '&dailymotion_' in url and not '&custom4=' in url: pass
+		elif General_TVModeDialog == "true" or mode == 2 or scriptfeatherenceservice_random != "":
 			if General_TVModeShuffle == "true": extra = addonString_servicefeatherence(32413).encode('utf-8')
 			else: extra = ""
 			if scriptfeatherenceservice_random != "": returned = 'ok'
@@ -1386,28 +1387,40 @@ def getAddonInfo(addon):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	return thumb, fanart, summary, description, plot
 	
-def update_view(url, num, viewtype, ok=True):
-	printpoint = ""
-	if 'plugin.' in num or 'plugin://plugin.' in url:
-		if not 'plugin.' in num:
-			num_ = find_string(url, "plugin://", '/')
-		else:
-			num_ = num
-			
-		num_ = num_.replace("plugin://","")
-		num_ = num_.replace("/","")
-			
-		if not xbmc.getCondVisibility('System.HasAddon('+ num_ +')') or not os.path.exists(os.path.join(addons_path, num_)):
-			notification_common("24")
-			installaddon(num_, update=True)
-			xbmc.sleep(2000)
+def update_view(url, num, viewtype, ok=True, installaddon=True):
+	printpoint = "" ; num_ = num
+	if installaddon == True:
+		printpoint = printpoint + '1'
+		if 'plugin.' in num or 'plugin://plugin.' in url:
+			printpoint = printpoint + 'a'
+			if not 'plugin.' in num:
+				printpoint = printpoint + 'b'
+				num_ = find_string(url, "plugin://", '/')
+				if num_ == "":
+					printpoint = printpoint + 'c'
+					num_ = url.replace('plugin://',"")
+				else: printpoint = printpoint + 'd'
+			else:
+				printpoint = printpoint + 'e'
+				num_ = num
+				
+			num_ = num_.replace("plugin://","")
+			num_ = num_.replace("/","")
+				
+			if not xbmc.getCondVisibility('System.HasAddon('+ num_ +')') or not os.path.exists(os.path.join(addons_path, num_)) and num_ != "":
+				printpoint = printpoint + 'f'
+				notification_common("24")
+				installaddon(num_, update=True)
+				xbmc.sleep(2000)
 	
 	if '&activatewindow=' in url:
 		printpoint = printpoint + '2'
 	if '&' in url and '=' in url:
+		printpoint = printpoint + '3'
 		url_ = find_string(url, "&", '=')
 		list = ['&youtube_pl=', '&youtube_id=', '&youtube_ch=', '&youtube_se=', '&activatewindow=']
 		if url_ in list:
+			printpoint = printpoint + '4'
 			url = url.replace(url_,"",1)
 	
 	url = url.replace('[',"",1)
@@ -1419,10 +1432,15 @@ def update_view(url, num, viewtype, ok=True):
 		#xbmc.sleep(500)
 		xbmc.executebuiltin('ActivateWindow(10025,%s,return)' % url )
 		#xbmc.executebuiltin('XBMC.Container.Update(%s)' % url )
+	elif 'ActivateWindow(' in url:
+		printpoint = printpoint + '5'
+		xbmc.executebuiltin(url)
 	else:
+		printpoint = printpoint + '7'
 		xbmc.executebuiltin('XBMC.Container.Update(%s)' % url )
 		
-	text = "url" + space2 + str(url) + space + 'viewtype' + space2 + str(viewtype)
+	text = "url" + space2 + str(url) + space + 'viewtype' + space2 + str(viewtype) + newline + \
+	'num_' + space2 + str(num_)
 	printlog(title='update_view', printpoint=printpoint, text=text, level=0, option="")
 	
 	return ok
@@ -2069,6 +2087,8 @@ def pluginend(admin):
 		MoveCustom(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 24:
 		AddCustom(mode, name, url, iconimage, desc, num, viewtype, fanart)
+	elif mode == 25:
+		RenameSubCustom(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 30:
 		CATEGORIES_SEARCH2(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 31:
@@ -2722,6 +2742,18 @@ def setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, view
 		else: New_ID = find_string(New_ID, "&youtube_se=", "")
 		New_ID = New_ID.replace("results?search_query=", "&youtube_se=")
 		New_ID_ = New_ID.replace("&youtube_se=","")
+		'''---------------------------'''
+	
+	elif "&custom4=" in New_ID:
+		'''Direct Video'''
+		New_Type = 'Direct Video' #Direct Video
+		extra = addonString_servicefeatherence(32439).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(32440).encode('utf-8') #New %s, Update Succesfully!
+		'''---------------------------'''	
+		
+	elif "&custom8=" in New_ID:
+		'''Add-on'''
+		New_Type = localize(24000) #Add-on
+		extra = addonString_servicefeatherence(32439).encode('utf-8') % (New_Type) + space + addonString_servicefeatherence(32440).encode('utf-8') #New %s, Update Succesfully!
 		'''---------------------------'''	
 		
 	elif New_ID == "None":
@@ -3076,11 +3108,15 @@ def AddCustom(mode, name, url, iconimage, desc, num, viewtype, fanart):
 			setCustom_Playlist_ID(Custom_Playlist_ID, url, mode, url, New_Name, num, viewtype)
 			
 	else:
-		New_ID = dialogkeyboard("", addonString_servicefeatherence(32125).encode('utf-8'), 0, "5", "" , "")
-		if New_ID != "skip":
-			New_Name = dialogkeyboard(addonString_servicefeatherence(32124).encode('utf-8'), addonString_servicefeatherence(32110).encode('utf-8'), 0, "",Custom_Playlist_Name, "0")
-			if New_Name != "skip":
-				setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, New_Name, num, viewtype)
+		num = Custom_Playlist_ID.replace('Custom_Playlist',"")
+		num = num.replace('_ID',"")
+		ManageCustom(mode, name, url, iconimage, desc, num, viewtype, fanart)
+		if 1 + 1 == 3:
+			New_ID = dialogkeyboard("", addonString_servicefeatherence(32125).encode('utf-8'), 0, "5", "" , "")
+			if New_ID != "skip":
+				New_Name = dialogkeyboard(addonString_servicefeatherence(32124).encode('utf-8'), addonString_servicefeatherence(32110).encode('utf-8'), 0, "",Custom_Playlist_Name, "0")
+				if New_Name != "skip":
+					setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, New_Name, num, viewtype)
 				
 	text = "mode" + space2 + str(mode) + space + "name" + space2 + str(name) + newline + \
 	"New_Type" + space2 + str(New_Type) + newline + \
@@ -3089,6 +3125,7 @@ def AddCustom(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	"value" + space2 + str(value) + newline + \
 	"value2" + space2 + str(value2) + newline + \
 	"url" + space2 + str(url) + newline + \
+	"num" + space2 + str(num) + newline + \
 	"iconimage" + space2 + str(iconimage) + newline
 	printlog(title="AddCustom", printpoint=printpoint, text=text, level=2, option="")
 	'''---------------------------'''
@@ -3174,7 +3211,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 	Custom_Playlist_Description = "Custom_Playlist" + num + "_Description"
 	Custom_Playlist_Fanart = "Custom_Playlist" + num + "_Fanart"
 	
-	if printpoint != "9":
+	if printpoint != "9" and not url == 'New':
 		list = ['-> (Exit)']
 		list.append(addonString_servicefeatherence(32430).encode('utf-8')) #Edit URL
 		list.append(addonString_servicefeatherence(32433).encode('utf-8')) #Rename Button
@@ -3193,7 +3230,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		elif returned == 0: printpoint = printpoint + "8"
 		else: printpoint = printpoint + "7"
 	
-	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
+	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint and not url == 'New':
 		if returned == 1: printpoint = printpoint + "A" #Edit URL
 		elif returned == 2: printpoint = printpoint + "B" #Rename
 		elif returned == 3: printpoint = printpoint + "C" #Add/Remove Thumb
@@ -3201,7 +3238,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		elif returned == 5: printpoint = printpoint + "E" #Add/Remove Fanart
 		elif returned == 6: printpoint = printpoint + "F" #Remove Button
 		'''---------------------------'''
-	if "A" in printpoint:
+	if "A" in printpoint or url == 'New':
 		'''------------------------------
 		---Edit-URL----------------------
 		------------------------------'''
@@ -3210,15 +3247,16 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 		list.append(addonString_servicefeatherence(32432).encode('utf-8')) #Add URL
 		list.append(addonString_servicefeatherence(32431).encode('utf-8')) #Remove URL
 		
-		returned2, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
+		if not url == 'New':
+			returned2, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
 			
-		if returned2 == -1: printpoint = printpoint + "9"
-		elif returned2 == 0: printpoint = printpoint + "8"
-		else: printpoint = printpoint + "7"
+			if returned2 == -1: printpoint = printpoint + "9"
+			elif returned2 == 0: printpoint = printpoint + "8"
+			else: printpoint = printpoint + "7"
 		
-		if returned2 == 1: printpoint = printpoint + "1" #View URL
-		elif returned2 == 2: printpoint = printpoint + "2" #Add URL
-		elif returned2 == 3: printpoint = printpoint + "3" #Remove URL
+			if returned2 == 1: printpoint = printpoint + "1" #View URL
+			elif returned2 == 2: printpoint = printpoint + "2" #Add URL
+			elif returned2 == 3: printpoint = printpoint + "3" #Remove URL
 		
 		if "1" in printpoint:
 			'''------------------------------
@@ -3241,6 +3279,18 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 					x = x.replace("&youtube_id=","")
 					x2 = space + "[" + "YouTube Video" + "]"
 					'''---------------------------'''
+				elif "&youtube_se=" in x:
+					x = x.replace("&youtube_se=","")
+					x2 = space + "[" + "YouTube Search" + "]"
+					'''---------------------------'''
+				elif "&custom8=" in x:
+					x = x.replace("&custom8=","")
+					x2 = space + "[" + "Add-on" + "]"
+					'''---------------------------'''
+				elif "&custom4=" in x:
+					x = x.replace("&custom4=","")
+					x2 = space + "[" + "Direct Video" + "]"
+					'''---------------------------'''
 				if x2 != "": message2 = message2 + '[CR]' + str(i) + space2 + str(x) + str(x2)
 				'''---------------------------'''
 			header = addonString_servicefeatherence(32434).encode('utf-8') + space2 + str(name)
@@ -3249,12 +3299,13 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			diaogtextviewer(header,message)
 			'''---------------------------'''
 			
-		elif "2" in printpoint:
+		elif "2" in printpoint or url == 'New':
 			'''------------------------------
 			---Add-URL-----------------------
 			------------------------------'''
 			list3 = ['-> (Exit)']
 			list3.append(localize(413)) #Manual
+			list3.append(localize(24000)) #Add-on
 			list3.append('YouTube Video ID') #
 			list3.append('YouTube Playlist ID') #
 			list3.append('YouTube Channel ID') #
@@ -3266,13 +3317,46 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 			else:
 				printpoint = printpoint + "7" ; x = ""			
 				if returned3 == 1: x = ""
-				elif returned3 == 2: x = "&youtube_id="
-				elif returned3 == 3: x = "&youtube_pl="
-				elif returned3 == 4: x = "&youtube_ch="
-				elif returned3 == 5: x = "&youtube_se="
+				elif returned3 == 2: x = "&custom8="
+				elif returned3 == 3: x = "&youtube_id="
+				elif returned3 == 4: x = "&youtube_pl="
+				elif returned3 == 5: x = "&youtube_ch="
+				elif returned3 == 6: x = "&youtube_se="
+				
+				if returned3 == 1:
+					New_ID = dialogkeyboard(x, value, 0, "1", "" , "")
+				elif returned3 == 2:
+					from modules import *
+					setSkinSetting('0','actionTEMP',"",force=True)
+					setSkinSetting('0','labelTEMP',"",force=True)
+					setSkinSetting('0','iconTEMP',"",force=True)
+					xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=232&value=TEMP)') ; xbmc.sleep(1000) ; mode232 = xbmc.getInfoLabel('Window(home).Property(mode232)')
 					
-				New_ID = dialogkeyboard(x, value, 0, "5", "" , "")
-				if New_ID != 'skip':
+					count = 0
+					while count < 200 and mode232 != "" and not xbmc.abortRequested:
+						xbmc.sleep(1000)
+						mode232 = xbmc.getInfoLabel('Window(home).Property(mode232)')
+						count += 1
+					
+					y = xbmc.getInfoLabel('Skin.String(actionTEMP)')
+					y = y.replace(',returned',"")
+					New_ID = x + y
+				else:
+					New_ID = dialogkeyboard(x, value, 0, "5", "" , "")
+					
+				if New_ID != 'skip' and New_ID != "":
+					if url == 'New':
+						labelTEMP = xbmc.getInfoLabel('Skin.String(labelTEMP)')
+						if labelTEMP != "": labelx = labelTEMP
+						else: labelx = addonString_servicefeatherence(32124).encode('utf-8')
+						New_Name = dialogkeyboard(labelx, addonString_servicefeatherence(32110).encode('utf-8'), 0, "",Custom_Playlist_Name, "0")
+						name = New_Name
+						
+						iconTEMP = xbmc.getInfoLabel('Skin.String(iconTEMP)')
+						if iconTEMP != "":
+							New_Thumb = iconTEMP
+							setsetting(Custom_Playlist_Thumb, New_Thumb)
+							
 					setCustom_Playlist_ID(Custom_Playlist_ID, New_ID, mode, url, name, num, viewtype)
 			
 				
@@ -3465,7 +3549,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				'''---------------------------'''
 				
 	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
-		update_view(url, num, viewtype)
+		update_view(url, num, viewtype, installaddon=False)
 		#xbmcplugin.endOfDirectory(int(sys.argv[1]))
 		
 	text = "name" + space2 + str(name) + newline + \
@@ -3477,10 +3561,74 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 	"Custom_Playlist_Fanart" + space2 + str(Custom_Playlist_Fanart) + newline + \
 	"fanart" + space2 + str(fanart) + newline + \
 	"New_ID" + space2 + str(New_ID) + newline + \
+	"num" + space2 + str(num) + newline + \
 	"url" + space2 + str(url) + newline
 	'''---------------------------'''
 	printlog(title="ManageCustom", printpoint=printpoint, text=text, level=2, option="")
 
+def RenameSubCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
+	'''------------------------------
+	---Rename-Sub-Button-------------
+	------------------------------'''
+	extra = "" ; printpoint = "" ; New_ID = "" ; Current_ID = "" ; Current_ID_ = "" ; Current_Name = name ; Current_Name_ = name ; containerfolderpath = xbmc.getInfoLabel('Container.FolderPath') ; containerfolderpath_ = ""
+	
+	Custom_Playlist_ID = "Custom_Playlist" + num + "_ID"
+	Custom_Playlist_ID_ = getsetting(Custom_Playlist_ID)
+	Custom_Playlist_ID_L = Custom_Playlist_ID_.split(',')
+	if Custom_Playlist_ID == "": notification(addonString_servicefeatherence(32145).encode('utf-8'), addonString_servicefeatherence(32101).encode('utf-8'), "", 2000) ; printpoint = printpoint + "9"
+	
+	#Custom_Playlist_Name = "Custom_Playlist" + num + "_Name"
+	#Custom_Playlist_Thumb = "Custom_Playlist" + num + "_Thumb"
+	#Custom_Playlist_Description = "Custom_Playlist" + num + "_Description"
+	#Custom_Playlist_Fanart = "Custom_Playlist" + num + "_Fanart"
+	
+	
+	for i in Custom_Playlist_ID_L:
+		if url in i:
+			printpoint = printpoint + '1'
+			Current_ID = i
+			Current_ID_ = Current_ID
+			break
+	if Current_ID == "":
+		printpoint = printpoint + '2'
+		notification('error!','','',2000)
+	else:
+		if '&name_=' in Current_ID:
+			'''Remove previous name'''
+			printpoint = printpoint + '3'
+			Current_Name = find_string(Current_ID, '&name_=', "&")
+			Current_Name_ = Current_Name.replace('&name_=',"")
+			Current_Name_ = Current_Name_.replace('&',"")
+			Current_ID_ = Current_ID.replace(Current_Name,"",1)
+		
+		New_Name = dialogkeyboard(Current_Name_, addonString_servicefeatherence(32437).encode('utf-8'), 0, "", "", "")
+		
+		if New_Name == "skip" and New_Name != Current_Name:
+			printpoint = printpoint + '4'
+			New_ID = Custom_Playlist_ID_.replace(Current_ID, Current_ID_ + '&name_='+New_Name + '&')
+			setsetting_custom1(addonID, Custom_Playlist_ID, str(New_ID))
+			notification(addonString_servicefeatherence(32110).encode('utf-8') + space + addonString_servicefeatherence(32421).encode('utf-8'), to_utf8(New_Name), "", 4000) #Button Name Update Succesfully!
+
+			xbmc.executebuiltin('Action(Back)')
+			#update_view(containerfolderpath_, num, viewtype, installaddon=False)
+			'''---------------------------'''
+		else:
+			printpoint = printpoint + '9'
+			#notification('error!','','',2000)
+	
+	text = 'New_Name' + space2 + str(New_Name) + newline + \
+	'Custom_Playlist_ID' + space2 + str(Custom_Playlist_ID) + newline + \
+	'Custom_Playlist_ID_' + space2 + str(Custom_Playlist_ID_) + newline + \
+	'name' + space2 + str(name) + newline + \
+	'Current_Name' + space2 + str(Current_Name) + newline + \
+	'Current_Name_' + space2 + str(Current_Name_) + newline + \
+	'url' + space2 + str(url) + newline + \
+	'url[-1:]' + space2 + str(url[-1:]) + newline + \
+	'Current_ID' + space2 + str(Current_ID) + newline + \
+	'Current_ID_' + space2 + str(Current_ID_) + newline + \
+	'New_ID' + space2 + str(New_ID) + newline
+	printlog(title="RenameSubCustom", printpoint=printpoint, text=text, level=1, option="")
+	
 def getLists(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	'''Gather videos in Play Random'''
 	count = 0

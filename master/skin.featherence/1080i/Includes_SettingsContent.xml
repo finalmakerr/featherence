@@ -47,10 +47,9 @@
 		<onclick>noop</onclick>
 	</item>
 	
-	<item id="32" description="">
-		<label></label>
+	<item id="32" description="מעברים">
+		<label>$LOCALIZE[31510]</label>
 		<onclick>noop</onclick>
-		<visible>false</visible>
 	</item>
 	
 	<item id="29" description="מסך מגע">
@@ -1280,34 +1279,6 @@
 		<visible>Container(100).Hasfocus(25)</visible>
 	  </item>
 	  
-	  <item id="393" description="משך עמעום בזמן מעבר בין חלונות">
-		<label>$LOCALIZE[31465]</label>
-		<label2>$VAR[393label2]</label2>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/eye.png</thumb>
-		<property name="rinfo">$LOCALIZE[31466]</property>
-		<onclick condition="!Skin.String(WindowsOpenClose)">Skin.SetString(WindowsOpenClose, 0)</onclick>
-		<onclick condition="Skin.String(WindowsOpenClose, 0)">Skin.SetString(WindowsOpenClose, 1)</onclick>
-		<onclick condition="Skin.String(WindowsOpenClose, 1)">Skin.SetString(WindowsOpenClose, 2)</onclick>
-		<onclick condition="Skin.String(WindowsOpenClose, 2)">Skin.SetString(WindowsOpenClose, 3)</onclick>
-		<onclick condition="Skin.String(WindowsOpenClose, 3)">Skin.SetString(WindowsOpenClose, 4)</onclick>
-		<onclick condition="Skin.String(WindowsOpenClose, 4)">Skin.SetString(WindowsOpenClose, 5)</onclick>
-		<onclick condition="Skin.String(WindowsOpenClose, 5)">Skin.SetString(WindowsOpenClose, 6)</onclick>
-		<onclick condition="Skin.String(WindowsOpenClose, 6)">Skin.SetString(WindowsOpenClose, 7)</onclick>
-		<onclick condition="Skin.String(WindowsOpenClose, 7)">Skin.SetString(WindowsOpenClose, 8)</onclick>
-		<onclick condition="Skin.String(WindowsOpenClose, 8)">Skin.SetString(WindowsOpenClose, 9)</onclick>
-		<onclick condition="Skin.String(WindowsOpenClose, 9)">Skin.SetString(WindowsOpenClose, )</onclick>
-		<visible>Container(100).Hasfocus(25)</visible>
-	  </item>
-	  
-	  <item id="394" description="אפשר אנימציית זום בזמן מעבר בין חלונות">
-		<label>$LOCALIZE[31483]</label>
-		<label2>$VAR[399label2]</label2>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
-		<property name="rinfo">$LOCALIZE[31484]</property>
-		<onclick>Skin.ToggleSetting(WindowsOpenClose)</onclick>
-		<visible>Container(100).Hasfocus(25)</visible>
-	  </item>
-	  
 	  <item id="395" description="נתיב ברירת מחדל (סמלים)">
 		<label>$VAR[395label] ($LOCALIZE[536])</label>
 		<label2>$INFO[Skin.String(CustomIconsPath)]</label2>
@@ -1453,7 +1424,7 @@
 		<visible>Container(100).Hasfocus(31)</visible>
 	  </item>
 	  
-	  <!--450-499 ו'ידגט-->
+	  <!--450-479 ו'ידגט-->
 	  <item id="451" description="פריסת כפתורים">
 		<label>$LOCALIZE[31117]</label>
 		<label2>$VAR[451label2]</label2>
@@ -1550,6 +1521,97 @@
 		<onclick>SetProperty(TEMP,WidgetFocusFontColor,home)</onclick>
 		<onclick>ActivateWindow(1170)</onclick>
 		<visible>Container(100).Hasfocus(30)</visible>
+	  </item>
+	  
+	  <!--480-499 מעברים-->
+	  <item id="481" description="משך עמעום בזמן מעבר בין חלונות">
+		<label>$LOCALIZE[31465]</label>
+		<label2>$VAR[481label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/eye.png</thumb>
+		<property name="rinfo">$LOCALIZE[31466]</property>
+		<onclick>SetProperty(TEMP,WindowsBusyOpen,home)</onclick>
+		<onclick condition="!Skin.String(WindowsOpenClose)">Skin.SetString(WindowsOpenClose, 0)</onclick>
+		<onclick condition="Skin.String(WindowsOpenClose, 0)">Skin.SetString(WindowsOpenClose, 1)</onclick>
+		<onclick condition="Skin.String(WindowsOpenClose, 1)">Skin.SetString(WindowsOpenClose, 2)</onclick>
+		<onclick condition="Skin.String(WindowsOpenClose, 2)">Skin.SetString(WindowsOpenClose, 3)</onclick>
+		<onclick condition="Skin.String(WindowsOpenClose, 3)">Skin.SetString(WindowsOpenClose, 4)</onclick>
+		<onclick condition="Skin.String(WindowsOpenClose, 4)">Skin.SetString(WindowsOpenClose, 5)</onclick>
+		<onclick condition="Skin.String(WindowsOpenClose, 5)">Skin.SetString(WindowsOpenClose, 6)</onclick>
+		<onclick condition="Skin.String(WindowsOpenClose, 6)">Skin.SetString(WindowsOpenClose, 7)</onclick>
+		<onclick condition="Skin.String(WindowsOpenClose, 7)">Skin.SetString(WindowsOpenClose, 8)</onclick>
+		<onclick condition="Skin.String(WindowsOpenClose, 8)">Skin.SetString(WindowsOpenClose, 9)</onclick>
+		<onclick condition="Skin.String(WindowsOpenClose, 9)">Skin.SetString(WindowsOpenClose, )</onclick>
+		<include>CustomizerExit</include>
+		<visible>Container(100).Hasfocus(32)</visible>
+	  </item>
+	  
+	  <item id="482" description="אפשר אנימציית זום בזמן מעבר בין חלונות">
+		<label>$LOCALIZE[31483]</label>
+		<label2>$VAR[482label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
+		<property name="rinfo">$LOCALIZE[31484]</property>
+		<onclick>SetProperty(TEMP,WindowsBusyOpen,home)</onclick>
+		<onclick>Skin.ToggleSetting(WindowsOpenClose)</onclick>
+		<include>CustomizerExit</include>
+		<visible>Container(100).Hasfocus(32)</visible>
+	  </item>
+	  
+	  <item id="484" description="לוגו מעבר">
+		<label>$LOCALIZE[31511]</label>
+		<label2>$INFO[Skin.String(TransitionLogo)]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/image.png</thumb>
+		<property name="rinfo">$LOCALIZE[31513][CR]$INFO[Skin.String(TransitionLogo)]</property>
+		<onclick>SetProperty(TEMP,WindowsBusyOpen,home)</onclick>
+		<onclick condition="!Skin.String(TransitionLogo)">Skin.SetImage(TransitionLogo)</onclick>
+		<onclick condition="Skin.String(TransitionLogo)">Skin.SetString(TransitionLogo,)</onclick>
+		<include>CustomizerExit</include>
+		<visible>Container(100).Hasfocus(32)</visible>
+	  </item>
+	  
+	  <item id="485" description="גודל לוגו מעבר">
+		<label>$LOCALIZE[31514]</label>
+		<label2>$VAR[485label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/cubes.png</thumb>
+		<property name="rinfo">$LOCALIZE[31516]</property>
+		<onclick>SetProperty(TEMP,WindowsBusyOpen,home)</onclick>
+		<onclick condition="!Skin.String(TransitionLogoSize)">Skin.SetString(TransitionLogoSize,0)</onclick>
+		<onclick condition="Skin.String(TransitionLogoSize,0)">Skin.SetString(TransitionLogoSize,1)</onclick>
+		<onclick condition="Skin.String(TransitionLogoSize,1)">Skin.SetString(TransitionLogoSize,2)</onclick>
+		<onclick condition="Skin.String(TransitionLogoSize,2)">Skin.SetString(TransitionLogoSize,)</onclick>
+		<include>CustomizerExit</include>
+		<visible>Container(100).Hasfocus(32)</visible>
+	  </item>
+	  
+	  <item id="486" description="מיקום לוגו מעבר">
+		<label>$LOCALIZE[31515]</label>
+		<label2>$VAR[486label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/ruler.png</thumb>
+		<property name="rinfo">$LOCALIZE[31517]</property>
+		<onclick>SetProperty(TEMP,WindowsBusyOpen,home)</onclick>
+		<onclick condition="!Skin.String(TransitionLogoPosition)">Skin.SetString(TransitionLogoPosition,1)</onclick>
+		<onclick condition="Skin.String(TransitionLogoPosition,1)">Skin.SetString(TransitionLogoPosition,2)</onclick>
+		<onclick condition="Skin.String(TransitionLogoPosition,2)">Skin.SetString(TransitionLogoPosition,3)</onclick>
+		<onclick condition="Skin.String(TransitionLogoPosition,3)">Skin.SetString(TransitionLogoPosition,4)</onclick>
+		<onclick condition="Skin.String(TransitionLogoPosition,4)">Skin.SetString(TransitionLogoPosition,5)</onclick>
+		<onclick condition="Skin.String(TransitionLogoPosition,5)">Skin.SetString(TransitionLogoPosition,6)</onclick>
+		<onclick condition="Skin.String(TransitionLogoPosition,6)">Skin.SetString(TransitionLogoPosition,7)</onclick>
+		<onclick condition="Skin.String(TransitionLogoPosition,7)">Skin.SetString(TransitionLogoPosition,8)</onclick>
+		<onclick condition="Skin.String(TransitionLogoPosition,8)">Skin.SetString(TransitionLogoPosition,9)</onclick>
+		<onclick condition="Skin.String(TransitionLogoPosition,9)">Skin.SetString(TransitionLogoPosition,)</onclick>
+		<include>CustomizerExit</include>
+		<visible>Container(100).Hasfocus(32)</visible>
+	  </item>
+	  
+	  <item id="487" description="רקע מעבר">
+		<label>$LOCALIZE[31512]</label>
+		<label2>$INFO[Skin.String(TransitionBackground)]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/image.png</thumb>
+		<property name="rinfo">$LOCALIZE[31513][CR]$INFO[Skin.String(TransitionBackground)]</property>
+		<onclick>SetProperty(TEMP,WindowsBusyOpen,home)</onclick>
+		<onclick condition="!Skin.String(TransitionBackground)">Skin.SetImage(TransitionBackground)</onclick>
+		<onclick condition="Skin.String(TransitionBackground)">Skin.SetString(TransitionBackground,)</onclick>
+		<include>CustomizerExit</include>
+		<visible>Container(100).Hasfocus(32)</visible>
 	  </item>
 	  
 	  <!--500-509 RSS-->
@@ -2095,7 +2157,7 @@
 		<onclick condition="!System.HasAddon(script.tv.show.next.aired)">RunScript(script.featherence.service,,?mode=231&amp;value=script.tv.show.next.aired)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
-	   <item id="29" description="תמונה מותאמת אישית בהפעלה">
+	  <item id="29" description="תמונה מותאמת אישית בהפעלה">
 		<label>$LOCALIZE[31869]</label>
 		<label2>$VAR[29label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/image.png</thumb>

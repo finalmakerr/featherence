@@ -342,7 +342,7 @@ def mode9(admin, name):
 				elif xbmc.getInfoLabel('Window(home).Property(DialogSubtitles2)') == "":
 					subject = 'Choose subtitle'
 				
-			elif (controlhasfocus150 or controlhasfocus151) and container120numitems == 0:
+			elif (controlhasfocus150) and container120numitems == 0:
 				
 				count2 += 1
 				if admin: notification('1',str(countidle) + '/' + str(count) + '/' + str(count2),'',4000)
@@ -399,9 +399,12 @@ def mode9(admin, name):
 						subject = 'No subtitles found..'
 						#setProperty('TEMP',to_utf8(subject), 'home')
 						'''---------------------------'''
-			elif controlgroup70hasfocus and container120numitems == 0:
+			elif (controlgroup70hasfocus) and container120numitems == 0:
 				subject = 'Searching paused..'
 				#setProperty('TEMP',to_utf8(subject), 'home')
+			elif (controlhasfocus151) and container120numitems == 0:
+				subject = 'Searching paused..'
+				count2 = 0
 			else:
 				pass
 				
@@ -994,9 +997,11 @@ def mode32(value, value2, name, printpoint):
 		#ReloadSkin(admin)
 	elif value == '6':
 		custom1170W_ = xbmc.getCondVisibility('Window.IsVisible(Custom1170.xml)')
+		custom1170W_ = xbmc.getCondVisibility('Window.IsVisible(Custom1170.xml)')
 		custom1173W_ = xbmc.getCondVisibility('Window.IsVisible(Custom1173.xml)')
 		if custom1170W_: xbmc.executebuiltin('Dialog.Close(1170)')
 		elif custom1173W_: xbmc.executebuiltin('Dialog.Close(1173)')
+		TEMP = xbmc.getInfoLabel('Window(home).Property(TEMP)')
 		
 		xbmc.executebuiltin('Action(Close)')
 		xbmc.executebuiltin('ActivateWindow(1117)') ; xbmc.sleep(1000)
@@ -1005,12 +1010,17 @@ def mode32(value, value2, name, printpoint):
 		count = 0
 		property_buttonid = xbmc.getInfoLabel('Window(home).Property(Button.ID)') #DYNAMIC
 		property_buttonid_ = xbmc.getInfoLabel('Window(home).Property(Button.ID_)') #BASE
-		while count < 20 and property_buttonid == "" and property_buttonid_ == "" and not xbmc.abortRequested:
+		while count < 10 and property_buttonid == "" and property_buttonid_ == "" and not xbmc.abortRequested:
 			xbmc.sleep(50)
 			property_buttonid = xbmc.getInfoLabel('Window(home).Property(Button.ID)') #DYNAMIC
 			property_buttonid_ = xbmc.getInfoLabel('Window(home).Property(Button.ID_)') #BASE
 			count += 1
-		if count < 20:
+		if 'WindowsBusy' in TEMP:
+			xbmc.sleep(500)
+			setProperty('TEMP', 'WindowsBusyClose', type="home")
+			xbmc.sleep(100)
+			setProperty('TEMP', '', type="home")
+		if count < 10 or 1 + 1 == 2:
 			xbmc.executebuiltin('ActivateWindow(1173)')
 			custom1173W = xbmc.getCondVisibility('Window.IsVisible(Custom1173.xml)')
 			while count < 20 and not custom1173W and not xbmc.abortRequested:
@@ -1034,7 +1044,7 @@ def mode32(value, value2, name, printpoint):
 		if value2 != "" and value2 != None:
 			xbmc.sleep(500)
 			xbmc.executebuiltin('ActivateWindow('+value2+')')
-		
+			
 	elif value == '40':
 		addon = 'plugin.video.featherence.kids'
 		if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
@@ -2277,6 +2287,11 @@ def mode218(value, admin, name, printpoint):
 		myweatherW = xbmc.getCondVisibility('Window.IsVisible(MyWeather.xml)')
 		playerpaused = xbmc.getCondVisibility('Player.Paused')
 		
+		message = message + newline + "Current XML" + space2 + xbmc.getInfoLabel('Window.Property(xmlfile)')
+		message = message + newline + "Current Control" + space2 + xbmc.getInfoLabel('System.CurrentControl')
+		message = message + newline + "TEMP" + space2 + property_temp
+		message = message + newline + "TEMP2" + space2 + property_temp2
+		
 		if dialogfullscreeninfoW and playerpaused:
 			message = message + newline + "VideoPlayer.Duration" + space2 + xbmc.getInfoLabel('VideoPlayer.Duration')
 			message = message + newline + "VideoPlayer.Year" + space2 + xbmc.getInfoLabel('VideoPlayer.Year')
@@ -2323,10 +2338,6 @@ def mode218(value, admin, name, printpoint):
 			for i in range(1,11):
 				message = message + newline + 'DialogSubtitlesNA'+str(i) + space2 + xbmc.getInfoLabel('Window(home).Property(DialogSubtitlesNA'+str(i)+')')
 		else:
-			message = message + newline + "Current XML" + space2 + xbmc.getInfoLabel('Window.Property(xmlfile)')
-			message = message + newline + "Current Control" + space2 + xbmc.getInfoLabel('System.CurrentControl')
-			message = message + newline + "TEMP" + space2 + property_temp
-			message = message + newline + "TEMP2" + space2 + property_temp2
 			message = message + newline + "scriptfeatherenceservice_random" + space2 + scriptfeatherenceservice_random
 			message = message + newline + "scriptfeatherenceservice_random1" + space2 + scriptfeatherenceservice_random1
 			message = message + newline + "scriptfeatherenceservice_random2" + space2 + scriptfeatherenceservice_random2
@@ -2411,6 +2422,8 @@ def mode232(value, admin, name, printpoint):
 	id1 = "" ; id2 = "" ; extra = "" ; TypeError = "" ; xicon = ""
 	if printpoint != "": printpoint = printpoint + "_"
 	
+	setProperty('mode232', 'true', type="home")
+	
 	if not os.path.exists(addons_path + 'script.module.unidecode'):
 		installaddonP('script.module.unidecode', update=True)
 	if not xbmc.getCondVisibility('System.HasAddon(script.skinshortcuts)'):
@@ -2419,7 +2432,7 @@ def mode232(value, admin, name, printpoint):
 		printpoint = printpoint + "0"
 		try:
 			if value != "":
-				if '_' in value: pass
+				if '_' in value or value == 'TEMP': pass
 				else: test = int(value) + 1
 				id1 = value
 			elif custom1175W and not custom1138W:
@@ -2440,7 +2453,14 @@ def mode232(value, admin, name, printpoint):
 				#Action_Label = ""
 			Action_Label = '&skinLabel=label'+id1
 			
-			if custom1175W and not custom1138W:
+			if value == 'TEMP':
+				'''add-on'''
+				printpoint = printpoint + 'x1'
+				Action_Thumbnail = '&skinThumbnail=icon'+id1
+				Action_Label = '&skinLabel=label'+id1
+				
+				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinAction=[skinAction]'+'&skinList=action'+id1+'&skinType=[skinType]'+Action_Thumbnail+Action_Label+')')
+			elif custom1175W and not custom1138W:
 				'''Main Action'''
 				printpoint = printpoint + "x1"
 				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]'+Action_Thumbnail+Action_Label+')')
@@ -2458,12 +2478,18 @@ def mode232(value, admin, name, printpoint):
 				dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
 				dialogyesnoW = xbmc.getCondVisibility('Window.IsVisible(DialogYesNo.xml)')
 				dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)')
-				while (dialogselectW or dialogprogressW or dialogyesnoW or dialogokW) and not xbmc.abortRequested:
+				dialogconfirmW = xbmc.getCondVisibility('Window.IsVisible(DialogConfirm.xml)')
+				count = 0
+				while ((dialogselectW or dialogprogressW or dialogyesnoW or dialogokW or dialogconfirmW) or count < 2) and not xbmc.abortRequested:
 					xbmc.sleep(1000)
 					dialogselectW = xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)')
 					dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
 					dialogyesnoW = xbmc.getCondVisibility('Window.IsVisible(DialogYesNo.xml)')
 					dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)')
+					dialogconfirmW = xbmc.getCondVisibility('Window.IsVisible(DialogConfirm.xml)')
+					if not dialogselectW and not dialogprogressW and not dialogyesnoW and not dialogokW and not dialogconfirmW:
+						count += 1
+					elif count > 0: count -= 1
 					'''---------------------------'''
 				xbmc.sleep(500) ; xlabel = xbmc.getInfoLabel('Skin.String(label'+id1+')')
 				if xlabel == "":
@@ -2476,13 +2502,19 @@ def mode232(value, admin, name, printpoint):
 				x, x_ = TranslatePath(xicon, filename=True, urlcheck_=False)
 				if x_ != "": setSkinSetting('0','icon'+id1,x_, force=True)
 				else: setSkinSetting('0','icon'+id1,x, force=True)
+				
+				xaction = xbmc.getInfoLabel('Skin.String(action'+id1+')')
+				xlabel = xbmc.getInfoLabel('Skin.String(label'+id1+')')
 					
 	text = "value" + space2 + str(value) + space + "property_buttonid" + space2 + str(property_buttonid) + newline + \
 	"id1" + space2 + str(id1) + space + "id2" + space2 + str(id2) + newline + \
+	"xaction" + space2 + str(xaction) + newline + \
 	"xicon" + space2 + str(xicon) + newline + \
+	"xlabel" + space2 + str(xlabel) + newline + \
 	extra
 	'''---------------------------'''
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	setProperty('mode232', '', type="home")
 			
 def mode233(value, admin, name, printpoint):
 	'''------------------------------

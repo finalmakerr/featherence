@@ -511,6 +511,22 @@ def CleanString2(x, comma=False):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	return x2
+
+def CleanString3(x):
+	'''Kodi XML - containerfolderpath'''
+	name = 'CleanString3' ; printpoint = ""
+	x2 = str(x)
+	x2 = x2.replace('&','%26')
+	x2 = x2.replace('=','%3d')
+	x2 = x2.replace("/",'%2f')
+	x2 = x2.replace(":",'%3a')
+	x2 = x2.replace(",",'%2c')
+	#x2 = x2.replace("|",'%2c')
+		
+	text = "x" + space2 + str(x) + newline + "x2" + space2 + str(x2)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	'''---------------------------'''
+	return x2
 		
 def setPath(type=0,mask="", folderpath="", original=True):
 	setSkinSetting("0", 'TEMP', "")
@@ -900,25 +916,29 @@ def getRandom(custom, min=0, max=100, percent=50):
 
 def installaddon(addonid2, update=True):
 	printpoint = "" ; name = 'installaddon' ; addonid2_ = addonid2
-	
-	if not xbmc.getCondVisibility('System.HasAddon('+ addonid2 +')') and not os.path.exists(addons_path + addonid2):
-		printpoint = printpoint + "1"
-		if update == True: notification_common("24")
-			
-	else: printpoint = printpoint + '7'
-	if '1' in printpoint:
-		if os.path.exists(addons_path + addonid2):
-			if update == True:
-				printpoint = printpoint + '5'
-				xbmc.executebuiltin("UpdateLocalAddons")
-			if 'repo' in addonid2: xbmc.executebuiltin("UpdateAddonRepos")
-			
-		else:
-			printpoint = printpoint + '6'
-			if not 'resources.' in addonid2:
-				notification('Addon Required:[CR]' + addonid2,'','',4000)				
-				xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +',return)')
-				#xbmc.executebuiltin('RunPlugin('+ addonid2 +')')
+	if addonid2 == "" or addonid2 == None: printpoint = printpoint + '9'
+	if not '9' in printpoint:
+		if 'plugin://' in addonid2:
+			addonid2 = addonid2.replace('plugin://',"")
+			addonid2 = addonid2.replace('&custom8=',"")
+		if not xbmc.getCondVisibility('System.HasAddon('+ addonid2 +')') and not os.path.exists(addons_path + addonid2):
+			printpoint = printpoint + "1"
+			if update == True: notification_common("24")
+				
+		else: printpoint = printpoint + '7'
+		if '1' in printpoint:
+			if os.path.exists(addons_path + addonid2):
+				if update == True:
+					printpoint = printpoint + '5'
+					xbmc.executebuiltin("UpdateLocalAddons")
+				if 'repo' in addonid2: xbmc.executebuiltin("UpdateAddonRepos")
+				
+			else:
+				printpoint = printpoint + '6'
+				if not 'resources.' in addonid2:
+					notification('Addon Required:[CR]' + addonid2,'','',4000)				
+					xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +',return)')
+					#xbmc.executebuiltin('RunPlugin('+ addonid2 +')')
 	text = 'addonid2_' + space2 + str(addonid2_) + newline + \
 	'addonid2' + space2 + str(addonid2)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
@@ -1600,7 +1620,7 @@ def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percent
 	'''---------------------------'''
 	
 def installaddon____(addonid2, update=True):
-	printpoint = "" ; name = 'installaddon'
+	printpoint = "" ; name = 'installaddon____'
 	
 	if not xbmc.getCondVisibility('System.HasAddon('+ addonid2 +')') or not os.path.exists(addons_path + addonid2):
 		printpoint = printpoint + "1"

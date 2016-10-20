@@ -48,7 +48,8 @@
   </include>
 
   <include name="Trailer_50_">
-    <animation condition="Container(50).Scrolling | Container(50).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+	<animation condition="Container(50).Scrolling | Container(50).OnScrollNext | Container(50).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
+	<animation condition="!Container(50).Scrolling + !Container(50).OnScrollNext + !Container(50).OnScrollPrevious" effect="fade" start="0" end="100" delay="500" time="1000" reversible="false">Conditional</animation>
 	<animation description="" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-427,0" time="0">Conditional</animation>
 	<height>40</height>		
 	<posx>430</posx>	      
@@ -98,7 +99,8 @@
   </include>
 
   <include name="Trailer_51_">
-    <animation condition="Container(51).Scrolling | Container(51).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+    <animation condition="Container(51).Scrolling | Container(51).OnScrollNext | Container(51).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
+	<animation condition="!Container(51).Scrolling + !Container(51).OnScrollNext + !Container(51).OnScrollPrevious" effect="fade" start="0" end="100" delay="510" time="1000" reversible="false">Conditional</animation>
 	<animation description="" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="793,0" time="0">Conditional</animation>
 	<height>70</height>		
 	<posx>0</posx>	      
@@ -167,32 +169,38 @@
     <control type="button" description="קדימון סרט 0">
 	  <animation condition="IsEmpty(Container(54).ListItemPosition(0).Trailer) | StringCompare(Container(54).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(0)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(0)" effect="rotatey" center="auto" start="0" end="-10" delay="1000" time="720" reversible="false">Conditional</animation>
 	  <include>Trailer_54_</include>
     </control>
 	<control type="button" description="קדימון סרט 1">
 	  <animation condition="IsEmpty(Container(54).ListItemPosition(1).Trailer)  | StringCompare(Container(54).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(1)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="-5" delay="1000" time="720" reversible="false">Conditional</animation>
 	  <include>Trailer_54_</include>
     </control>
 	<control type="button" description="קדימון סרט 2">
 	  <animation condition="IsEmpty(Container(54).ListItemPosition(2).Trailer) | StringCompare(Container(54).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(2)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(2)" effect="rotatey" center="auto" start="0" end="0" delay="1000" time="720" reversible="false">Conditional</animation>
 	  <include>Trailer_54_</include>
     </control>
 	<control type="button" description="קדימון סרט 3">
 	  <animation condition="IsEmpty(Container(54).ListItemPosition(3).Trailer) | StringCompare(Container(54).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(3)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(3)" effect="rotatey" center="auto" start="0" end="5" delay="1000" time="720" reversible="false">Conditional</animation>
 	  <include>Trailer_54_</include>
     </control>
 	<control type="button" description="קדימון סרט 4">
 	  <animation condition="IsEmpty(Container(54).ListItemPosition(4).Trailer) | StringCompare(Container(54).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(4)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(4)" effect="rotatey" center="auto" start="0" end="10" delay="1000" time="720" reversible="false">Conditional</animation>
 	  <include>Trailer_54_</include>
     </control>
   </include>
   
   <include name="Trailer_54_">
-    <animation condition="Container(54).Scrolling | Container(54).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+    <animation condition="Container(54).Scrolling | Container(54).OnScrollNext | Container(54).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
+	<animation condition="!Container(54).Scrolling + !Container(54).OnScrollNext + !Container(54).OnScrollPrevious" effect="fade" start="0" end="100" delay="540" time="1000" reversible="false">Conditional</animation>
 	<height>70</height>
 	<posx>55</posx>
 	<posy>24</posy>
@@ -202,8 +210,25 @@
 	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
   </include>
   
+  <include name="View54_Boat_Itemlayout_Animation">
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(0)" effect="rotatey" center="auto" start="0" end="10" time="220" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="5" time="220" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(2)" effect="rotatey" center="auto" start="0" end="0" time="220" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(3)" effect="rotatey" center="auto" start="0" end="-5" time="220" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(4)" effect="rotatey" center="auto" start="0" end="-10" time="220" reversible="false">Conditional</animation>
+  </include>
+  
+  <include name="View54_Boat_Focuslayout_Animation">
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(0)" effect="rotatey" center="auto" start="0" end="-10" delay="1000" time="720" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="-5" delay="1000" time="720" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="0" delay="1000" time="720" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(3)" effect="rotatey" center="auto" start="0" end="5" delay="1000" time="720" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(4)" effect="rotatey" center="auto" start="0" end="10" delay="1000" time="720" reversible="false">Conditional</animation>
+  </include>
+  
   <include name="Trailer_57_">
-    <animation condition="Container(57).Scrolling | Container(57).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+    <animation condition="Container(57).Scrolling | Container(57).OnScrollNext | Container(57).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
+	<animation condition="!Container(57).Scrolling + !Container(57).OnScrollNext + !Container(57).OnScrollPrevious" effect="fade" start="0" end="100" delay="570" time="1000" reversible="false">Conditional</animation>
 	<height>70</height>
 	<posx>55</posx>
 	<posy>24</posy>
@@ -328,7 +353,8 @@
   </include>
 
   <include name="Trailer_58_">
-    <animation condition="Container(58).Scrolling | Container(58).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+    <animation condition="Container(58).Scrolling | Container(58).OnScrollNext | Container(58).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
+	<animation condition="!Container(58).Scrolling + !Container(58).OnScrollNext + !Container(58).OnScrollPrevious" effect="fade" start="0" end="100" delay="580" time="1000" reversible="false">Conditional</animation>
 	<height>70</height>
 	<posx>55</posx>
 	<posy>24</posy>
@@ -392,17 +418,6 @@
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(58).Position(9)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 	  <include>Trailer_58_</include>
     </control>
-  </include>
-  
-  <include name="Trailer_58_">
-    <animation condition="Container(58).Scrolling | Container(58).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
-	<height>70</height>
-	<posx>55</posx>
-	<posy>24</posy>
-	<width>70</width>
-	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
-	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
-	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
   </include>
   
   <include name="VisibilityInfoIcon">

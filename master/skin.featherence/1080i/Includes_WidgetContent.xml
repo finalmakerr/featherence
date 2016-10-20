@@ -632,9 +632,9 @@
   </include>
   <include name="TV_RAIR" description="ייחוד כותרות עליונות-סדרות אחרונות">
     <control type="group">
-      <visible>Library.HasContent(TVShows)</visible>
       <control type="panel" id="312" description="פנל מדף פרקים שנוספו לאחרונה">
-        <visible>[Library.HasContent(TVShows) | !Skin.HasSetting(TVShelf_Watchlist)] + [SubString(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312)) | Control.HasFocus(312)] + !Player.HasVideo</visible>
+	    <visible>Library.HasContent(TVShows)</visible>
+        <visible>!Skin.HasSetting(TVShelf_Watchlist) + [SubString(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312)) | Control.HasFocus(312)] + !Player.HasVideo</visible>
         <onup>9009</onup>
         <ondown>9000</ondown>
         <onleft>312</onleft>
@@ -986,9 +986,9 @@
   </include>
   <include name="TV_WL" description="ייחוד כותרות עליונות-סדרות בתהליך">
     <control type="group">
-      <visible>Library.HasContent(TVShows)</visible>
       <control type="panel" id="312" description="פנל מדף סדרות בתהליך">
-		<visible>[Library.HasContent(TVShows) | Skin.HasSetting(TVShelf_Watchlist)] + [SubString(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312)) | Control.HasFocus(312)] + !Player.HasVideo</visible>
+		<visible>Library.HasContent(TVShows)</visible>
+		<visible>Skin.HasSetting(TVShelf_Watchlist) + [SubString(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312)) | Control.HasFocus(312)] + !Player.HasVideo</visible>
         <onup>9009</onup>
         <ondown>9000</ondown>
         <onleft>312</onleft>

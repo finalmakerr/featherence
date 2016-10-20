@@ -20,6 +20,7 @@
 		<control type="grouplist" description="קדימונים-תפריט רחב">
 		  <visible>!Skin.HasSetting(View50_Plus)</visible>
 		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
 		  <posx>420</posx>
 		  <posy>149</posy>
 		  <width>480</width>
@@ -31,6 +32,7 @@
 		<control type="grouplist" description="קדימונים-תפריט צר">
 		  <visible>Skin.HasSetting(View50_Plus)</visible>
 		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
 		  <posx>420</posx>
 		  <posy>149</posy>
 		  <width>480</width>
@@ -514,6 +516,7 @@
 		
 		<control type="grouplist" description="קדימונים">
 		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
 		  <posx>520</posx>
 		  <posy>208</posy>
 		  <width>485</width>
@@ -896,6 +899,7 @@
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 1">
           <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
 		  <animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="0" delay="2700" time="700" reversible="false">Conditional</animation>
 		  <posx>210</posx>
           <posy>75</posy>
@@ -907,6 +911,7 @@
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 2">
           <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
 		  <animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="0" delay="2700" time="700" reversible="false">Conditional</animation>
 		  <posx>210</posx>
           <posy>418</posy>
@@ -918,6 +923,7 @@
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 3">
           <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
 		  <animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="0" delay="2700" time="700" reversible="false">Conditional</animation>
 		  <posx>210</posx>
           <posy>761</posy>
@@ -996,6 +1002,7 @@
       </control>
 	  <control type="grouplist" description="קדימונים שורה 1">
           <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
 		  <animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="0" delay="2700" time="700" reversible="false">Conditional</animation>
 		  <posx>320</posx>
           <posy>115</posy>
@@ -1007,6 +1014,7 @@
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 2">
           <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
 		  <animation condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="0" delay="2700" time="700" reversible="false">Conditional</animation>
 		  <posx>320</posx>
           <posy>625</posy>
@@ -1039,7 +1047,7 @@
   <include name="ViewDesign_58_Layout">
 	  <itemlayout description="(Plugins)" height="510" width="373">
 		<control type="group">
-			<!--<animation condition="Skin.HasSetting(View56_Fan) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + StringCompare(Container(56).Position,1)" effect="rotatey" center="auto" start="55" end="55" time="0" reversible="false">Conditional</animation>-->
+			<include>View54_Boat_Itemlayout_Animation</include>
 			<include>Fade_MoviesTVCoversOverlay</include>
 			<include>Slide2.4</include>
 			<include>View58_Common</include>
@@ -1075,6 +1083,7 @@
 	  <focusedlayout description="(Plugins)" height="510" width="373">
 		<include>AutoView</include>
 		<control type="group">
+			<include>View54_Boat_Focuslayout_Animation</include>
 			<animation condition="!Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 			<include>Slide2.3</include>
 			<include>View58_Common</include>
@@ -1084,7 +1093,7 @@
 			 <height>472</height>
 			 <width>380</width>
 			 <texture colordiffuse="yellow">misc/dvdcases/dvdcases.png</texture>
-			 <visible>IsEmpty(Control.GetLabel(11156)) + Window.IsVisible(MyVideoNav.xml)</visible>
+			 <visible>IsEmpty(Control.GetLabel(11156)) + Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(DialogBusy.xml)</visible>
 			 <visible>Skin.HasSetting(ShowDVDCases2)</visible>
 			 <visible>!SubString(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)</visible>
 			</control>
@@ -1224,6 +1233,8 @@
     <control type="group" description="">
 	  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015])</visible>
       <control type="group">
+	    <!--<animation condition="Skin.HasSetting(View54_Boat) + StringCompare(Container.Viewmode,$LOCALIZE[31015]) + Container(54).OnNext + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="-10" time="220" reversible="false">Conditional</animation>-->
+		<include>View54_Boat_Itemlayout_Animation</include>
 		<control type="largeimage" id="70130" description="פאנארט">
 			<fadetime>200</fadetime>
 			<posx>0</posx>
@@ -1246,6 +1257,8 @@
         </control>
 		<control type="grouplist" description="קדימונים">
 		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Skin.HasSetting(View54_Boat)</visible>
+		  <visible>!Container.Content(episodes)</visible>
 		  <posx>322</posx>
           <posy>633</posy>
           <width>1800</width>

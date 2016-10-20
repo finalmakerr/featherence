@@ -283,6 +283,7 @@
 	<item id="4" description="הצג/הסתר תרגום">
 	    <onclick>Action(ShowSubtitles)</onclick>
 	    <label>$LOCALIZE[31482]</label>
+		<visible>false</visible>
 	</item>
   </include>
   

@@ -55,8 +55,9 @@
       <posy>340</posy>
 	  <animation condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)" effect="slide" start="0,0" end="35,-345" time="0,0">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)" effect="zoom" start="100,100" end="91,107" time="0,0">Conditional</animation>
-	  <animation condition="Window.IsVisible(VideoOSD.xml)" effect="zoom" center="960,-160" start="50,50" end="50,50" time="0,0">Conditional</animation>
-	  <visible>!SubString(Control.GetLabel(311),password) + !SubString(Control.GetLabel(311),$LOCALIZE[733]) + Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml) | ![Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)] | Window.IsVisible(VideoOSD.xml)</visible>
+	  <!--<animation condition="Window.IsVisible(VideoOSD.xml)" effect="zoom" center="960,-160" start="80,80" end="80,80" time="0,0">Conditional</animation>-->
+	  <animation condition="Window.IsVisible(VideoOSD.xml) | VideoPlayer.IsFullscreen" effect="slide" start="0,0" end="-720,-300" time="0">Conditional</animation>
+	  <visible>!SubString(Control.GetLabel(311),password) + !SubString(Control.GetLabel(311),$LOCALIZE[733]) + Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(DialogSubtitles.xml) + !Window.IsVisible(Custom1175.xml) | ![Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)] | Window.IsVisible(VideoOSD.xml)</visible>
 	  <include name="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
@@ -140,7 +141,7 @@
 				<param name="posx" value="0" />
 				<param name="posy" value="0" />
 				<param name="width" value="480" />
-			</include>
+		  </include>
 		  <control type="image" description="סמל">
 			<include>Fade_IconOverlayButton</include>
             <aspectratio align="center">stretch</aspectratio>
@@ -223,7 +224,7 @@
   
   <include name="onload_CheckProperty_MainMenu">
     <onload condition="IsEmpty(Window(home).Property(Button.ID)) | IsEmpty(Window(home).Property(Button.ID_))">Action(Close)</onload>
-	<onload condition="String(Window(home).Property(Button.ID),TEMP)">Notification(Error,,1000)</onload>
+	<onload condition="IsEmpty(Window(home).Property(Button.ID)) | IsEmpty(Window(home).Property(Button.ID_))">Notification(Error,,1000)</onload>
   </include>
   
   <include name="onunload_ClearProperty_MainMenu">
@@ -245,7 +246,7 @@
   
   <include name="onload_CheckProperty_SubMenu">
 	 <onload condition="IsEmpty(Window(home).Property(SubButton.ID_)) | SubString(Window(home).Property(SubButton.ID_),_90)">Action(Close)</onload>
-	 <onload condition="IsEmpty(Window(home).Property(SubButton.ID_))">Notification(Error,,1000)</onload>
+	 <onload condition="StringCompare(Window(home).Property(SubButton.ID_),TEMP)">Notification(Error,,1000)</onload>
 	 <onload condition="SubString(Window(home).Property(SubButton.ID_),_90)">Notification($INFO[Window(home).Property(SubButton.Name)] $LOCALIZE[31470],$LOCALIZE[31471],2000)</onload>
   </include>
   

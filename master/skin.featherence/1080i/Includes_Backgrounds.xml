@@ -187,7 +187,7 @@
 	  </control>
 	  <control type="largeimage" id="7014" description="רקע פאנארט">
 		<include>Fade_Background2Overlay</include>
-		<include>TopInformationSize1</include>
+		<!--<include>TopInformationSize1</include>-->
 		<include>Slide1.2</include>
 		<animation description="No full Fanart-SideVideoInformation" condition="!Skin.HasSetting(View50_Plus2) + Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogAddonSettings.xml)" effect="zoom" center="0,1100" start="100,111.5" end="100,111.5" time="0" reversible="false">Conditional</animation>
 		<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,86.15" time="0">Conditional</animation>

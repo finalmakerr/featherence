@@ -14,8 +14,8 @@
 	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
 	<value condition="![[StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(ShowDVDCases)] | !StringCompare(Container.Viewmode,$LOCALIZE[31013])]">5</value>
 	<value condition="![[[StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)] | !StringCompare(Container.Viewmode,$LOCALIZE[31015]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014])]">6</value>
-	<value condition="![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-3).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating) | !IsEmpty(Container.ListItemNoWrap(2).Rating) | !IsEmpty(Container.ListItemNoWrap(3).Rating)] | Window.IsVisible(Home.xml)]">7</value>
-	<!--<value condition="Window.IsVisible(MyPrograms.xml)">8</value>-->
+	<value condition="![[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + [!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-3).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating) | !IsEmpty(Container.ListItemNoWrap(2).Rating) | !IsEmpty(Container.ListItemNoWrap(3).Rating)] | Window.IsVisible(Home.xml)] + !SubString(Container.FolderPath,videodb://)">7</value>
+	<!--<value condition="Window.IsVisible(DialogBusy.xml)">8</value>-->
 	<!--<value condition="![!Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogContextMenu.xml)]">8</value>-->
 	<!--<value condition="!IsEmpty(ListItem.Rating)">8</value>-->
 	
@@ -27,8 +27,8 @@
   </variable>
   <variable name="InternetKeyboardButton">
     <value condition="SubString(Control.GetLabel(311),YouTube) | SubString(Control.GetLabel(311),Add URL)">YouTube</value>
-	<value condition="SubString(Control.GetLabel(311),thumb)">Google</value>
-	<value condition="SubString(Control.GetLabel(311),fanart)">Google</value>
+	<value condition="SubString(Control.GetLabel(311),thumb) | SubString(Control.GetLabel(311),$LOCALIZE[20015])">Google</value>
+	<value condition="SubString(Control.GetLabel(311),fanart) | SubString(Control.GetLabel(311),$LOCALIZE[20441])">Google</value>
   </variable>
   <variable name="Button9090" description="כפתור קצה">
   	<value description="סרטים שנוספו לאחרונה" condition="Control.IsVisible(311) + !Skin.HasSetting(MoviesShelfWL) + !Player.HasVideo">$LOCALIZE[20386]</value>
@@ -275,22 +275,6 @@
 	<value condition="StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Director)">$INFO[ListItem.Director] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
 	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Director)">[COLOR=white]$LOCALIZE[20339]:[/COLOR] $INFO[ListItem.Director]</value>
   </variable>
-  <variable name="RightMenuDialogVideoInfo2">
-    <value condition="StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Studio)">$INFO[ListItem.Studio] [COLOR=white]$LOCALIZE[572]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Studio)">[COLOR=white]$LOCALIZE[572]:[/COLOR] $INFO[ListItem.Studio] </value>
-  </variable>
-  <variable name="RightMenuDialogVideoInfo3">
-    <value condition="StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Writer)">$INFO[ListItem.Writer] [COLOR=white]$LOCALIZE[20418]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Writer)">[COLOR=white]$LOCALIZE[20418]:[/COLOR] $INFO[ListItem.Writer]</value>
-  </variable>
-  <variable name="RightMenuDialogVideoInfo4">
-    <value condition="StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Country)">$INFO[ListItem.Country] [COLOR=white]$LOCALIZE[21874]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Country)">[COLOR=white]$LOCALIZE[21874]:[/COLOR] $INFO[ListItem.Country]</value>
-  </variable>
-  <variable name="RightMenuDialogVideoInfo5">
-    <value condition="StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Premiered)">$INFO[ListItem.Premiered] [COLOR=white]$LOCALIZE[20416]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Premiered)">[COLOR=white]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Premiered]</value>
-  </variable>
   <variable name="fanart" description="פאנארט">
 	<value condition="Skin.HasSetting(EpisodeFanart) + !IsEmpty(ListItem.Thumb) + [Container.Content(seasons) | Container.Content(episodes)] + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season)">$INFO[ListItem.Thumb]</value>
 	<value condition="!IsEmpty(ListItem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
@@ -398,6 +382,7 @@
 	<value condition="Container.Content(Seasons) |  Container.Content(Episodes) + !IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
 	<value description="פרטי סרט - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(plot))">[B]$INFO[Container(311).ListItem.Property(plot)][/B]</value>
 	<value description="פרטי פרק - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(plot))">[B]$INFO[Container(312).ListItem.Property(plot)][/B]</value>
+	<!--<value description="בחר סמל/פאנארט עי לחיצה על כפתור OK." condition="Window.IsVisible(FileBrowser.xml) + [StringCompare(Window(home).Property(TEMP),icon) | StringCompare(Window(home).Property(TEMP),background)]">[B][COLOR=green]$LOCALIZE[31507][/COLOR][/B]</value>-->
 
 	<value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
 	<value condition="SubString(ListItem.Path,videodb://1/7) | SubString(ListItem.path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
@@ -463,15 +448,15 @@
 	<value condition="Container.Content(Episodes) + !IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
   </variable>
   <variable name="TopVideoInformation10" description="עונה ופרק">
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [IntegerGreaterThan(VideoPlayer.Season,9) + IntegerGreaterThan(VideoPlayer.Episode,9)]">S[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [IntegerGreaterThan(VideoPlayer.Season,9) + !IntegerGreaterThan(VideoPlayer.Episode,9)]">S[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E0[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [!IntegerGreaterThan(VideoPlayer.Season,9) + IntegerGreaterThan(VideoPlayer.Episode,9)]">S0[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [!IntegerGreaterThan(VideoPlayer.Season,9) + !IntegerGreaterThan(VideoPlayer.Episode,9)]">S0[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR]  E0[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
+	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [IntegerGreaterThan(VideoPlayer.Season,9) + IntegerGreaterThan(VideoPlayer.Episode,9)]">S[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] E[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
+	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [IntegerGreaterThan(VideoPlayer.Season,9) + !IntegerGreaterThan(VideoPlayer.Episode,9)]">S[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] E0[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
+	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [!IntegerGreaterThan(VideoPlayer.Season,9) + IntegerGreaterThan(VideoPlayer.Episode,9)]">S0[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] E[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
+	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [!IntegerGreaterThan(VideoPlayer.Season,9) + !IntegerGreaterThan(VideoPlayer.Episode,9)]">S0[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] E0[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
 	
-	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)]">S$INFO[ListItem.Season]  E$INFO[ListItem.Episode]</value>
-	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)]">S$INFO[ListItem.Season]  E0$INFO[ListItem.Episode]</value>
-	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [!IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)]">S0$INFO[ListItem.Season]  E$INFO[ListItem.Episode]</value>
-	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [!IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)]">S0$INFO[ListItem.Season]  E0$INFO[ListItem.Episode]</value>
+	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)]">S$INFO[ListItem.Season] E$INFO[ListItem.Episode]</value>
+	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)]">S$INFO[ListItem.Season] E0$INFO[ListItem.Episode]</value>
+	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [!IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)]">S0$INFO[ListItem.Season] E$INFO[ListItem.Episode]</value>
+	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [!IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)]">S0$INFO[ListItem.Season] E0$INFO[ListItem.Episode]</value>
 	
 	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Seasons) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Property(TotalEpisodes)) + !IsEmpty(ListItem.Season) + [!IntegerGreaterThan(ListItem.Season,9)]">S0$INFO[ListItem.Season]  E1-$INFO[ListItem.Property(TotalEpisodes)]</value>
 	
@@ -548,6 +533,10 @@
 	<value description="רענון" condition="Control.HasFocus(128)">$LOCALIZE[184]</value>
 	<value description="הגדרות" condition="Control.HasFocus(129)">$LOCALIZE[1390]</value>
   </variable>
+  <variable name="writerthumb">
+	  <value condition="!SubString(ListItem.Writer,/)">http://localhost:52307/getthumb&amp;title=$INFO[Listitem.Writer]</value>
+	  <value>DefaultActor2.png</value>
+  </variable>  
   <variable name="TopInformation2" description="שמאל1 (תיקייה)">
 	<value description="גרסה" condition="Window.IsVisible(Home.xml) + !Skin.HasSetting(ShowSkinVersion)">$INFO[System.AddonVersion(skin.featherence)]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[B]$ADDON[script.skin.helper.service 32011][/B]</value>

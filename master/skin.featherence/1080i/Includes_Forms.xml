@@ -748,45 +748,78 @@
   
   <include name="WindowsBusy">
    <control type="group">
-     <animation type="WindowOpen" reversible="false" condition="!Window.IsVisible(Custom1000.xml)">
+	 <animation condition="StringCompare(Window(home).Property(TEMP),WindowsBusyOpen)" effect="fade" start="0" end="100" time="0" reversible="false">Conditional</animation>
+	 <animation condition="StringCompare(Window(home).Property(TEMP),WindowsBusyClose)" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
+	 <animation type="WindowOpen" reversible="false" condition="!Window.IsVisible(Custom1000.xml) + !SubString(Window(home).Property(TEMP),WindowsBusy)">
 	   <effect type="fade" start="100" end="0" time="0" />
 	 </animation>
-     <animation type="WindowClose" reversible="false" condition="!Window.IsVisible(Custom1000.xml)">
+     <animation type="WindowClose" reversible="false" condition="!Window.IsVisible(Custom1000.xml) + !SubString(Window(home).Property(TEMP),WindowsBusy)">
 	   <effect type="fade" start="0" end="100" time="0" />
 	 </animation>
-	 <posx>960</posx>
-	 <posy>540</posy>
-	 <width>70</width>
-	 <height>70</height>
-	<control type="image" description="רקע">
-	  <texture>busy/busybg.png</texture>
-	  <aspectratio align="center">keep</aspectratio>
-	  <visible>false</visible>
-	</control>
-	
-	<control type="multiimage">
-	  <width>70</width>
-	  <height>70</height>
-      <imagepath background="true">busy/multi</imagepath>
-      <timeperimage>200</timeperimage>
-	  <info>01.png</info>
-	  <info>02.png</info>
-	  <info>03.png</info>
-	  <info>04.png</info>
-	  <info>05.png</info>
-	  <info>06.png</info>
-	  <info>07.png</info>
-	  <info>08.png</info>
-	  <info>09.png</info>
-	  <info>10.png</info>
-	  <info>11.png</info>
-	  <info>12.png</info>
-      <fadetime>100</fadetime>
-      <pauseatend>0</pauseatend>
-      <randomize>false</randomize>
-      <loop>yes</loop>
-      <aspectratio align="center">keep</aspectratio>
-    </control>
+	 
+	 
+	 
+	 <control type="image" description="רקע מעבר">
+	   <animation condition="StringCompare(Window(home).Property(TEMP),WindowsBusyClose)" effect="fade" start="0" end="40" time="0" reversible="false">Conditional</animation>
+	   <height>1080</height>
+	   <width>1920</width>
+	   <texture>$INFO[Skin.String(TransitionBackground)]</texture>
+	   <aspectratio align="center">stretch</aspectratio>
+	   <visible>Skin.String(TransitionBackground)</visible>
+	 </control>
+	 <control type="group">
+		 <posx>935</posx>
+		 <posy>510</posy>
+		 <width>70</width>
+		 <height>70</height>
+		 
+		 <control type="image" description="לוגו מעבר">
+		   <animation condition="Skin.String(TransitionLogoSize,0)" effect="zoom" center="auto" start="50,50" end="50,50">Conditional</animation>
+		   <animation condition="Skin.String(TransitionLogoSize,2)" effect="zoom" center="auto" start="200,200" end="200,200">Conditional</animation>
+		   
+		   <animation description="SE" condition="Skin.String(TransitionLogoPosition,1)" effect="slide" start="0,0" end="403,190">Conditional</animation>
+		   <animation description="SW" condition="Skin.String(TransitionLogoPosition,2)" effect="slide" start="0,0" end="-403,190">Conditional</animation>
+		   <animation description="S" condition="Skin.String(TransitionLogoPosition,3)" effect="slide" start="0,0" end="0,190">Conditional</animation>
+		   <animation description="E" condition="Skin.String(TransitionLogoPosition,4)" effect="slide" start="0,0" end="403,0">Conditional</animation>
+		   <animation description="W" condition="Skin.String(TransitionLogoPosition,6)" effect="slide" start="0,0" end="-403,0">Conditional</animation>
+		   <animation description="NE" condition="Skin.String(TransitionLogoPosition,7)" effect="slide" start="0,0" end="403,-190">Conditional</animation>
+		   <animation description="N" condition="Skin.String(TransitionLogoPosition,8)" effect="slide" start="0,0" end="0,-190">Conditional</animation>
+		   <animation description="NW" condition="Skin.String(TransitionLogoPosition,9)" effect="slide" start="0,0" end="-403,-190">Conditional</animation>
+		   
+		   <aspectratio>stretch</aspectratio>
+		   <posx>-50</posx>
+		   <posy>-40</posy>
+		   <width>150</width>
+		   <height>150</height>
+		   <texture>$INFO[Skin.String(TransitionLogo)]</texture>
+		   <visible>Skin.String(TransitionLogo)</visible>
+		 </control>
+		
+		<control type="multiimage">
+		  <width>70</width>
+		  <height>70</height>
+		  <imagepath background="true">busy/multi</imagepath>
+		  <timeperimage>200</timeperimage>
+		  <info>01.png</info>
+		  <info>02.png</info>
+		  <info>03.png</info>
+		  <info>04.png</info>
+		  <info>05.png</info>
+		  <info>06.png</info>
+		  <info>07.png</info>
+		  <info>08.png</info>
+		  <info>09.png</info>
+		  <info>10.png</info>
+		  <info>11.png</info>
+		  <info>12.png</info>
+		  <fadetime>100</fadetime>
+		  <pauseatend>0</pauseatend>
+		  <randomize>false</randomize>
+		  <loop>yes</loop>
+		  <aspectratio>keep</aspectratio>
+		</control>
+	 </control>
+		
    </control>
   </include>
 	

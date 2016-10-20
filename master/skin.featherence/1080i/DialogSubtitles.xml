@@ -24,7 +24,7 @@
 		    <posy>-40</posy>
  			<control type="label" id="107" description="כמות">
 			  <align>left</align>
-			  <font>size18</font>
+			  <font>size24</font>
 			  <height>40</height>
 			  <label>($INFO[Container(120).NumItems])</label>
 			  <posx>20</posx>
@@ -56,7 +56,7 @@
 			</control>
 			<control type="label" id="130" description="Local subtitle available">
 			  <align>right</align>
-			  <font>size18</font>
+			  <font>size24</font>
 			  <height>40</height>
 			  <posx>1418</posx>
 			  <visible>IntegerGreaterThan(Container(120).NumItems,0) + IsEmpty(Control.GetLabel(1300))</visible>
@@ -64,7 +64,7 @@
 			</control>
 			<control type="label" id="1300" description="תרגום נוכחי">
 			  <align>right</align>
-			  <font>size18</font>
+			  <font>size24</font>
 			  <label>$INFO[Window(home).Property(DialogSubtitles2)]</label>
 			  <height>40</height>
 			  <posx>1418</posx>
@@ -74,7 +74,7 @@
 			</control>
 			<control type="label" id="1301" description="הודעות">
 			  <align>right</align>
-			  <font>size18</font>
+			  <font>size24</font>
 			  <label>$INFO[Window(home).Property(TEMP)]</label>
 			  <height>40</height>
 			  <posx>1418</posx>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window description="כפתורים נגן וידאו+לוגו עצירה+מד ריצה תחתון (12901)">
+	<onload condition="IsEmpty(Window(home).Property(VideoPlayer.Info))">SetProperty(VideoPlayer.Info, true, home)</onload>
+    <onload condition="IsEmpty(Window(home).Property(mode10)) + !Pvr.IsPlayingTv + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !StringCompare(VideoPlayer.Title,featherence_.mp4) + !StringCompare(Window(home).Property(TEMP),startup)">RunScript(script.featherence.service,,?mode=10)</onload>
 	<onload condition="Player.PauseEnabled">SetFocus(602)</onload>
 	<onload condition="!Control.IsVisible(602) + Control.IsVisible(603)">SetFocus(603)</onload>
     <controls>
@@ -10,8 +12,25 @@
 			<!--<animation effect="slide" end="0,-438" time="240" tween="quadratic" condition="System.IdleTime(7)">Conditional</animation>-->
 			<animation effect="fade" start="100" end="20" time="220" condition="System.IdleTime(3) + Control.HasFocus(703) + VideoPlayer.HasSubtitles">Conditional</animation>
 			<animation effect="fade" start="100" end="50" time="220" condition="System.IdleTime(5) + [!Control.HasFocus(703) | !VideoPlayer.HasSubtitles]">Conditional</animation>
-			<animation effect="slide" start="0,-438" end="0,0" time="220" delay="240" reversibile="false" tween="quadratic">WindowOpen</animation>
-			<animation effect="slide" end="0,-438" start="0,0" time="220" tween="quadratic">WindowClose</animation>
+			<!--<animation effect="slide" start="0,-438" end="0,0" time="220" delay="240" reversibile="false" tween="quadratic">WindowOpen</animation>
+			<animation effect="slide" end="0,-438" start="0,0" time="220" tween="quadratic">WindowClose</animation>-->
+			
+			<animation type="WindowOpen" reversible="false" condition="!Skin.HasSetting(OSDPosition)">
+			   <effect type="slide" start="0,-438" end="0,0" time="220" tween="quadratic" />
+			</animation>
+			<animation type="WindowClose" condition="!Skin.HasSetting(OSDPosition)">
+			   <effect type="slide" start="0,0" end="0,-438" time="440" tween="quadratic" />
+			</animation>
+			
+			<animation type="WindowOpen" reversible="false" condition="Skin.HasSetting(OSDPosition)">
+			   <effect type="slide" start="0,1180" end="0,500" time="220" tween="quadratic" />
+			</animation>
+			<animation type="WindowClose" condition="Skin.HasSetting(OSDPosition)">
+			   <effect type="slide" start="0,500" end="0,1180" time="440" tween="quadratic" />
+			</animation>
+			 
+			 
+			<!--<animation condition="Skin.HasSetting(OSDPosition)" effect="slide" start="0,0" time="220" tween="quadratic">Conditional</animation>-->
 			<top>200</top>
 			<include>VideoOSDflag</include>
 			<control type="grouplist" id="202" description="כפתורים וידאו/אודיו">
@@ -27,9 +46,21 @@
 				<onleft>202</onleft>
 				<onright>202</onright>
 				<visible>Player.HasMedia</visible>
+				<control type="togglebutton" id="698" description="מיקום כפתורי OSD">
+					<texturefocus>osd/buttons/OSDChannelUPFO.png</texturefocus>
+					<texturenofocus>osd/buttons/OSDChannelUPNF.png</texturenofocus>
+					<alttexturefocus>osd/buttons/OSDChannelDownFO.png</alttexturefocus>
+					<alttexturenofocus>osd/buttons/OSDChannelDownNF.png</alttexturenofocus>
+					<usealttexture>Skin.HasSetting(OSDPosition)</usealttexture>
+                    <width>100</width>
+					<height>100</height>
+					<onclick>Skin.ToggleSetting(OSDPosition)</onclick>
+					<onclick>Action(Close)</onclick>
+					<visible>!IsEmpty(Window(home).Property(OSDPlus))</visible>
+				</control>
 				<control type="button" id="699" description="עדכון ספרייה">
-					<texturefocus>osd/buttons/OSDChannelDownFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDChannelDownNF.png</texturenofocus>
+					<texturefocus>osd/buttons/OSDMinusFO.png</texturefocus>
+					<texturenofocus>osd/buttons/OSDMinusNF.png</texturenofocus>
                     <width>100</width>
 					<height>100</height>
 					<onclick>UpdateLibrary(video)</onclick>

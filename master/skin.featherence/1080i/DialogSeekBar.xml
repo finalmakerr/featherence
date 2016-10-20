@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window description="(7009)">
-	<defaultcontrol>1</defaultcontrol>
+<window>
 	<visible>[Window.IsVisible(VideoOSD.xml) | Window.IsActive(fullscreeninfo) | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + VideoPlayer.IsFullscreen</visible>
 	<visible>!Window.IsVisible(DialogSubtitles.xml) + !Window.IsVisible(MusicOSD.xml)</visible>
 	<controls>
+		<include>featherencepause</include>
+		
+		<include>ForwardingRewinding</include>
+		
+		<include>TopInformation</include>
 		<control type="group" description="!VideoPlayer.Content(LiveTV)">
 			<animation effect="slide" start="0,90" end="0,0" time="200">WindowOpen</animation>
 			<animation effect="slide" start="0,90" end="0,0" time="200">VisibleChange</animation>
@@ -16,48 +20,46 @@
 				<height>70</height>
 				<texture border="1,32,1,1">osd/bottombar.png</texture>
 			</control>
+			<control type="label" id="402">
+			  <font>size24</font>
+			  <posx>7</posx>
+			  <posy>7</posy>
+			</control>
 			<control type="progress">
 				<left>0</left>
 				<top>27</top>
 				<width>1920</width>
-				<height>38</height>
-				<texturebg border="2">osd/texturebg.png</texturebg>
+				<height>35</height>
+				<texturebg>osd/texturebg.png</texturebg>
 				<lefttexture>-</lefttexture>
-				<midtexture border="2">osd/midtexture_cache.png</midtexture>
+				<midtexture>osd/midtexture_cache.png</midtexture>
 				<righttexture>-</righttexture>
 				<overlaytexture>-</overlaytexture>
 				<info>Player.ProgressCache</info>
 			</control>
-			<control type="progress">
+			<control type="progress" id="23">
 				<left>0</left>
-				<top>28</top>
+				<top>27</top>
 				<width>1920</width>
 				<height>35</height>
-				<texturebg border="1">osd/texturebg_cache.png</texturebg>
+				<texturebg>osd/texturebg_cache.png</texturebg>
 				<lefttexture>-</lefttexture>
-				<midtexture border="2">osd/midtexture.png</midtexture>
+				<midtexture>osd/midtexture.png</midtexture>
 				<righttexture>-</righttexture>
 				<overlaytexture>-</overlaytexture>
 				<info>Player.Progress</info>
-				<colordiffuse>AAffffff</colordiffuse>
 			</control>
 			<control type="slider" id="401">
-				<description>Seek Slider</description>
+				<!--<action>seek</action>-->
 				<left>0</left>
-				<top>0</top>
+				<top>27</top>
 				<width>1920</width>
-				<height>12</height>
-				<texturesliderbar>seekslider2.png</texturesliderbar>
-				<textureslidernib>osd_slider_nib.png</textureslidernib>
-				<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
+				<height>19</height>
+				<texturesliderbar>osd/texturebg.png</texturesliderbar>
+				<textureslidernib colordiffuse="BBBBBBBB">osd/midtexture.png</textureslidernib>
+				<textureslidernibfocus bordercolordiffuse="yellow">osd/midtexture.png</textureslidernibfocus>
 				<visible>Player.Seeking</visible>
 			</control>
 		</control>
-
-		<include>featherencepause</include>
-		
-		<include>ForwardingRewinding</include>
-		
-		<include>TopInformation</include>
 	</controls>
 </window>

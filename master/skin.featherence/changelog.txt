@@ -1,12 +1,14 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
-- More font coloring options.
-- Added option to change the font size.
-3. באופן כללי להגדיל כתב, מה  שאני ראיתי (חלון כתוביות שנפתח משמאל, ווידגטים)
 4. כשערוצי רדיו עובדים אין כפתורי תפריט בכלל (נבדק דרך הרחבה)
-- Added option to hide Top Video Information on fullscreen video while skiping back/next.
-- Added option to toggle Top/Side Video Information for Side List view.
+- ??Added option to hide Top Video Information on fullscreen video while skiping back/next.
+- Added option to display timing information in the dialog seek bar.
++ Added Premiered information to Side List view instead of year when available.
+- Home.xml container id="9000" issue: http://forum.kodi.tv/showthread.php?tid=294330
+- Added new design mode for Center List view.
+- Added option to add failsafe customized fanart image.
+- DialogSeekBar - Mouse click doesn't work: http://forum.kodi.tv/showthread.php?tid=294207
 
 ------------------------
 Featherence v0.7.0 (xx-xx-16)
@@ -16,13 +18,43 @@ Featherence v0.7.0 (xx-xx-16)
 - Added WINDOW_DIALOG_CMS_OSD_SETTINGS.
 
 ------------------------
+Featherence v0.6.3 (20-Oct-16)
+------------------------
+- Added ForceView feature.
+- Added new design mode for Side List view.
+- Added new effect: Boat mode for Line view.
+- Added option to change video/audio OSD position (Setting is hidden by the stop OSD button).
+- Added transitions category in skin settings.
++ Moved Fade and zoom transitions settings from advanced category.
++ Added option to choose a logo and background between windows transition.
++ Added option to choose size and position of transition logo.
++ Added realtime preview for easy setup.
+- Animation fade tweak of trailers buttons.
+- Assigning icon/fanart image to a button no longer require clicking the OK button - Can simply click on the image.
+- Minor update of semi-auto subtitles.
++ Increased font size for semi-auto subtitles script notification.
++ Smart/Manual subtitle search now properly interrupt the script.
+- Major bug fix with button's widget aren't visible when tvshows library is empty.
+- Major bug fix with some touch device unable to edit main menu buttons (WIP).
+- Major update of DialogVideoInfo window.
++ *Added actors, director and writers thumbnails support across any addon.
+*Require script.skin.helper.service and script.extendedinfo.
++ Added directors and writers selection panel, including all writers information.
++ Added extra information to DialogVideoInfo window: Director, Studio, Writer, Country, Premiered..
+- Minor bugs fix.
+- Minor update of auto-close video/audio OSD feature.
+- Minor update of DVDCases colors per rating: Blue = High Rated 9+, Yellow = Local, Red = Set.
+- Minor update of extra mouse support feature.
+- Update network connection icon.
+
+------------------------
 Featherence v0.6.2 (13-Oct-16)
 ------------------------
 - Added busy transition for skin windows.
 - Added extra coloring support for DialogNumeric window (Synced with DialogKeyboard).
 - Added extra mouse support option (WIP).
-To be activate in the Mouse category.
-This feature is auto-enabled if touch support is also enabled.
++ To be activate in the Mouse category.
++ This feature is auto-enabled if touch support is also enabled.
 - Added Next Aired support.
 - Added option to change font size of plot information.
 - Added option to change size of video/audio playback settings.
@@ -34,21 +66,21 @@ This feature is auto-enabled if touch support is also enabled.
 - Added trailers buttons to widget window.
 - Added View Options side-button to Center List and Small List views.
 - Added volume category in skin design window with the following options:
-Show volume icon, choose volume icon, volume background color, volume icon color, volume position, volume background overlay, volume icon overlay, show volume level percent, always show volume level on mute.
++ Show volume icon, choose volume icon, volume background color, volume icon color, volume position, volume background overlay, volume icon overlay, show volume level percent, always show volume level on mute.
 - Major bugs fix with touch buttons on some windows.
 - Major update of Center List view.
-Added RTL support and improved design.
++ Added RTL support and improved design.
 - Major update of Side List view.
-Thumbnail support for any episodes, seasons, tvshows and movies.
-Enlarge icon overall update.
++ Thumbnail support for any episodes, seasons, tvshows and movies.
++ Enlarge icon overall update.
 - Major update of subtitles semi-auto search notification.
-Improve the search time duration and cycle between subtitles server.
-Added support for any subtitles service.
-Added status and timer notifications in the subtitles dialog window.
-Added user interrupting and no subtitles were found notifications.
-Overall script performance improved and bugs fix.
-Removed the previous notifications.
-Subtitles window will be auto faded also when there is no subtitle enable and no subs are currently found.
++ Improve the search time duration and cycle between subtitles server.
++ Added support for any subtitles service.
++ Added status and timer notifications in the subtitles dialog window.
++ Added user interrupting and no subtitles were found notifications.
++ Overall script performance improved and bugs fix.
++ Removed the previous notifications.
++ Subtitles window will be auto faded also when there is no subtitle enable and no subs are currently found.
 - Major update of system information window.
 - Minor update of center menu / sub menu.
 - Minor update of DialogPVRChannelManager window.

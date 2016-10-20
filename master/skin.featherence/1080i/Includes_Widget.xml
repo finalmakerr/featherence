@@ -272,7 +272,8 @@
   </include>
 
   <include name="Trailer_311_5_">
-    <animation condition="Container(311).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+    <animation condition="Container(311).Scrolling | Container(311).OnScrollNext | Container(311).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
+	<animation condition="!Container(311).Scrolling + !Container(311).OnScrollNext + !Container(311).OnScrollPrevious" effect="fade" start="0" end="100" delay="220" time="1000" reversible="false">Conditional</animation>
 	<height>70</height>
 	<posx>430</posx>
 	<posy>430</posy>
@@ -283,7 +284,8 @@
   </include>
   
   <include name="Trailer_311_7_">
-    <animation condition="Container(311).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+    <animation condition="Container(311).Scrolling | Container(311).OnScrollNext | Container(311).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
+	<animation condition="!Container(311).Scrolling + !Container(311).OnScrollNext + !Container(311).OnScrollPrevious" effect="fade" start="0" end="100" delay="220" time="1000" reversible="false">Conditional</animation>
 	<height>70</height>
 	<posx>0</posx>
 	<posy>430</posy>
@@ -294,7 +296,8 @@
   </include>
   
   <include name="Trailer_311_9_">
-    <animation condition="Container(311).Scrolling" effect="fade" start="100" end="0" time="220" reversible="true">Conditional</animation>
+    <animation condition="Container(311).Scrolling | Container(311).OnScrollNext | Container(311).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
+	<animation condition="!Container(311).Scrolling + !Container(311).OnScrollNext + !Container(311).OnScrollPrevious" effect="fade" start="0" end="100" delay="220" time="1000" reversible="false">Conditional</animation>
 	<height>70</height>
 	<posx>0</posx>
 	<posy>430</posy>
@@ -403,6 +406,8 @@
 		    <texture>misc/help/off.png</texture>
 		    <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 			<visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
+			<visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			<visible>![StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
 			<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		    <width>332</width>
           </control>
@@ -564,6 +569,8 @@
 			  <texture>misc/help/off.png</texture>
 			  <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 			  <visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
+			  <visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			  <visible>![StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
 			  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 			  <width>332</width>
           </control>
@@ -738,6 +745,9 @@
 		    <texture>misc/help/off.png</texture>
 		    <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 			<visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
+			<visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			<visible>![StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
+			<visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
 			<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		    <width>250</width>
           </control>
@@ -899,6 +909,8 @@
 			  <texture>misc/help/off.png</texture>
 			  <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 			  <visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
+			  <visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			  <visible>![StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
 			  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 			  <width>250</width>
           </control>
@@ -1074,6 +1086,8 @@
 		    <texture>misc/help/off.png</texture>
 		    <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 			<visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
+			<visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			<visible>![StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
 			<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		    <width>250</width>
           </control>
@@ -1235,6 +1249,8 @@
 			  <texture>misc/help/off.png</texture>
 			  <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 			  <visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
+			  <visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			  <visible>![StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
 			  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 			  <width>250</width>
           </control>
