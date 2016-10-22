@@ -100,6 +100,13 @@
   </include>
   
   <include name="Menu_Home">
+    <include descripton="פנל" condition="Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)">Menu_Home9000_0</include>
+    <include descripton="מאוזן" condition="Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)">Menu_Home9000_1</include>
+    <include descripton="מאוזן3" condition="Skin.String(MenuDesign,6)">Menu_Home9000_2</include>
+    <include descripton="מאומך" condition="Skin.String(MenuDesign,4)">Menu_Home9000_3</include>
+  </include>
+  
+  <include name="Menu_Home9000_0">
     <control type="panel" id="9000" description="פנל">
 	  <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,-551" time="220">Conditional</animation>
 	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
@@ -109,7 +116,11 @@
 	  <posy>581</posy>
 	  <width>1850</width>
 	  <height>1040</height>
-	  <onleft>9000</onleft>
+	  <onleft condition="!Skin.HasSetting(SPMiniButtons)">9000</onleft>
+	  <onleft condition="Skin.HasSetting(SPMiniButtons)">Action(PageDown)</onleft>
+	  <onleft condition="Skin.HasSetting(SPMiniButtons)">Action(PageDown)</onleft>
+	  <onleft condition="Skin.HasSetting(SPMiniButtons)">9020</onleft>
+	  <onright condition="Control.IsVisible(9020)">9020</onright>
 	  <onright>9000</onright>
 	  <onup condition="Control.IsVisible(7011)">7017</onup>
 	  <onup condition="Control.IsVisible(700)">700</onup>
@@ -126,7 +137,9 @@
 		<include condition="true">Content_Home2</include>
 	  </content>
 	</control>
-	
+  </include>
+  
+  <include name="Menu_Home9000_1">
 	<control type="list" id="9000" description="מאוזן">
 	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
 	  <visible>Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)</visible>
@@ -136,7 +149,11 @@
 	  <width>1920</width>
 	  <height>1040</height>
 	  <onleft condition="!Skin.HasSetting(SPMiniButtons)">9000</onleft>
-	  <onleft>noop</onleft>
+	  <onleft condition="Skin.HasSetting(SPMiniButtons)">Action(PageDown)</onleft>
+	  <onleft condition="Skin.HasSetting(SPMiniButtons)">Action(PageDown)</onleft>
+	  <onleft condition="Skin.HasSetting(SPMiniButtons) + Skin.String(MenuDesign,2)">SetFocus(9000,4)</onleft>
+	  <onleft condition="Skin.HasSetting(SPMiniButtons) + Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)">SetFocus(9000,6)</onleft>
+	  <onleft condition="Skin.HasSetting(SPMiniButtons)">9020</onleft>
 	  <onright condition="Control.IsVisible(9020)">9020</onright>
 	  <onright>9000</onright>
 	  <onup condition="Control.IsVisible(7011)">7017</onup>
@@ -157,6 +174,10 @@
 	  </content>
 	</control>
 	
+	<include>Menu_Home9020_1</include>
+  </include>
+  
+  <include name="Menu_Home9000_2">
 	<control type="list" id="9000" description="מאוזן3">
 	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
 	  <visible>Skin.String(MenuDesign,6)</visible>
@@ -166,7 +187,10 @@
 	  <width>1821</width>
 	  <height>1040</height>
 	  <onleft condition="!Skin.HasSetting(SPMiniButtons)">9000</onleft>
-	  <onleft>noop</onleft>
+	  <onleft condition="Skin.HasSetting(SPMiniButtons)">Action(PageDown)</onleft>
+	  <onleft condition="Skin.HasSetting(SPMiniButtons)">Action(PageDown)</onleft>
+	  <onleft condition="Skin.HasSetting(SPMiniButtons)">SetFocus(9000,8)</onleft>
+	  <onleft condition="Skin.HasSetting(SPMiniButtons)">9020</onleft>
 	  <onright condition="Control.IsVisible(9020)">9020</onright>
 	  <onright>9000</onright>
 	  <onup condition="Control.IsVisible(7011)">7017</onup>
@@ -186,31 +210,11 @@
 		<include condition="!Skin.HasSetting(SPMiniButtons)">Content_Home2</include>
 	  </content>
 	</control>
+  
+    <include>Menu_Home9020_1</include>
+  </include>
 	
-	<control type="list" id="9020" description="מאוזןSP">
-	  <include>Fade20</include>
-	  <visible>!Container(9000).HasNext() + Skin.HasSetting(SPMiniButtons) + Control.IsVisible(9000)</visible>
-	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
-	  <visible>Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign) | Skin.String(MenuDesign,6)</visible>
-	  <visible>![Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Window(home).Property(WidgetButton.ID_))]</visible>
-	  <posx>1830</posx>
-	  <posy>824</posy>
-	  <width>100</width>
-	  <height>225</height>
-	  <onleft>9000</onleft>
-	  <onright condition="Control.IsVisible(315)">315</onright>
-	  <onup>noop</onup>
-	  <ondown>noop</ondown>
-	  <scrolltime tween="sine" easing="out">220</scrolltime>
-	  <orientation>vertical</orientation>
-	  <include condition="Skin.String(MenuDesign,2)" description="מאוזן">MenuDesign_HomeSP3</include>
-	  <include condition="Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)" description="מאוזן2">MenuDesign_HomeSP3</include>
-	  <include condition="Skin.String(MenuDesign,6)" description="מאוזן">MenuDesign_HomeSP3</include>
-	  <content>
-		<include condition="true">Content_Home2</include>
-	  </content>
-	</control>
-	
+  <include name="Menu_Home9000_3">
 	<control type="list" id="9000" description="מאונך">
 	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
 	  <visible>Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)</visible>
@@ -221,7 +225,10 @@
 	  <width>1850</width>
 	  <height>920</height>
 	  <onup condition="!Skin.HasSetting(SPMiniButtons)">9000</onup>
-	  <onup>noop</onup>
+	  <onup condition="Skin.HasSetting(SPMiniButtons)">Action(PageDown)</onup>
+	  <onup condition="Skin.HasSetting(SPMiniButtons)">Action(PageDown)</onup>
+	  <onup condition="Skin.HasSetting(SPMiniButtons)">SetFocus(9000,8)</onup>
+	  <onup condition="Skin.HasSetting(SPMiniButtons)">9020</onup>
 	  <ondown condition="Control.IsVisible(9020)">9020</ondown>
 	  <ondown>9000</ondown>
 	  <onright description="openSUB-horizontal" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(CustomHomeCustomizer.xml) + !StringCompare(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + [IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))]">ActivateWindow(1138)</onright>
@@ -243,10 +250,45 @@
 	  </content>
 	</control>
 	
+	<include>Menu_Home9020_2</include>
+  </include>
+  
+  <include name="Menu_Home9020_1">
+     <control type="list" id="9020" description="מאוזןSP">
+	  <!--<include>Fade20</include>-->
+	  <animation condition="!Container(9000).HasNext() | Control.HasFocus(9020)" effect="fade" start="0" end="100" delay="0" time="220" reversible="false">Conditional</animation>
+	  <animation condition="![!Container(9000).HasNext() | Control.HasFocus(9020)]" effect="fade" start="100" end="0" delay="0" time="220" reversible="false">Conditional</animation> 
+	  <visible>[!Container(9000).HasPrevious() | !Container(9000).HasNext()] + Skin.HasSetting(SPMiniButtons)</visible>
+	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
+	  <visible>Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign) | Skin.String(MenuDesign,6)</visible>
+	  <visible>![Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Window(home).Property(WidgetButton.ID_))]</visible>
+	  <posx>1830</posx>
+	  <posy>824</posy>
+	  <width>100</width>
+	  <height>225</height>
+	  <onleft>9000</onleft>
+	  <onright>SetFocus(9000,0)</onright>
+	  <onright>Action(PageUp)</onright>
+	  <onright>Action(PageUp)</onright>
+	  <onup condition="Control.IsVisible(315)">315</onup>
+	  <ondown>noop</ondown>
+	  <scrolltime tween="sine" easing="out">220</scrolltime>
+	  <orientation>vertical</orientation>
+	  <include condition="Skin.String(MenuDesign,2)" description="מאוזן">MenuDesign_HomeSP3</include>
+	  <include condition="Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)" description="מאוזן2">MenuDesign_HomeSP3</include>
+	  <include condition="Skin.String(MenuDesign,6)" description="מאוזן">MenuDesign_HomeSP3</include>
+	  <content>
+		<include condition="true">Content_Home2</include>
+	  </content>
+	</control>
+  </include>
+  
+  <include name="Menu_Home9020_2">
 	<control type="list" id="9020" description="מאונךSP">
-	  <include>Fade20</include>
+	  <animation condition="!Container(9000).HasNext() | Control.HasFocus(9020)" effect="fade" start="0" end="100" delay="0" time="220" reversible="false">Conditional</animation>
+	  <animation condition="![!Container(9000).HasNext() | Control.HasFocus(9020)]" effect="fade" start="100" end="0" delay="0" time="220" reversible="false">Conditional</animation>
 	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1680,0" time="0">Conditional</animation>
-	  <visible>!Container(9000).HasNext() + Skin.HasSetting(SPMiniButtons) + Control.IsVisible(9000)</visible>
+	  <visible>[!Container(9000).HasPrevious() | !Container(9000).HasNext()] + Skin.HasSetting(SPMiniButtons)</visible>
 	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
 	  <visible>Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)</visible>
 	  <visible>![Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Window(home).Property(WidgetButton.ID_))]</visible>
@@ -257,7 +299,10 @@
 	  <onleft>noop</onleft>
 	  <onright>noop</onright>
 	  <onup>9000</onup>
-	  <ondown>noop</ondown>
+	  <ondown>SetFocus(9000,0)</ondown>
+	  <ondown>Action(PageUp)</ondown>
+	  <ondown>Action(PageUp)</ondown>
+	  <ondown>SetFocus(9000,0)</ondown>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
 	  <orientation>horizontal</orientation>
 	  <include condition="Skin.String(MenuDesign,4)" description="מאונך">MenuDesign_HomeSP3</include>
@@ -265,8 +310,8 @@
 		<include condition="true">Content_Home2</include>
 	  </content>
 	</control>
-	
   </include>
+  
   <include name="MenuDesign_Home" description="פנל/מאוזן">
     <itemlayout height="230" width="368">
 	  <control type="group">

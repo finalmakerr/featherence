@@ -239,6 +239,8 @@
 		<onclick condition="Skin.String(MenuDesign,4)">Skin.SetString(MenuDesign,6)</onclick>
 		<onclick condition="Skin.String(MenuDesign,6)">Skin.SetString(MenuDesign,7)</onclick>
 		<onclick condition="Skin.String(MenuDesign,7)">Skin.SetString(MenuDesign,)</onclick>
+		<onclick>Action(Close)</onclick>
+		<onclick>Action(1000)</onclick>
 		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>

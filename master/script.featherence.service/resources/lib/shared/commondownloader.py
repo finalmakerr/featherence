@@ -29,7 +29,7 @@ from variables import *
 from shared_modules import *
 
 def getResponse(url, size, referer, agent, cookie, silent):
-    resp = "" ; returned = "" ; printpoint = "" ; TypeError = ""
+    resp = "" ; req = "" ; returned = "" ; printpoint = "" ; TypeError = ""
     url = url.replace(" ","%20")
     try:
         req = urllib2.Request(url)
@@ -53,6 +53,7 @@ def getResponse(url, size, referer, agent, cookie, silent):
         returned = None
     
     text = 'url' + space2 + str(url) + newline + \
+    'req' + space2 + str(req) + newline + \
     'resp' + space2 + str(resp) + newline + \
     'size' + space2 + str(size) + newline + \
     'referer' + space2 + str(referer) + newline + \

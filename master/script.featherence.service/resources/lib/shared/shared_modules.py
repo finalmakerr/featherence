@@ -1574,8 +1574,9 @@ def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percent
 	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = "" ; returned = ""
 	downloadpath2 = os.path.join(downloadpath, filename)
 	
+	admin = xbmc.getCondVisibility('Skin.HasSetting(Admin)')
 	scriptfeatherenceservice_downloading = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
-	scriptfeatherenceservice_downloading = ""
+	if admin: scriptfeatherenceservice_downloading = ""
 	alarm_downloading = xbmc.getCondVisibility('HasAlarm(scriptfeatherenceservice_downloading)')
 	printpoint = printpoint + "1"
 	#import resources.lib.commondownloader
@@ -1654,7 +1655,7 @@ def installaddonP(addon, update=True):
 		
 	if addon == 'script.module.unidecode': #FIXED PATH
 		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("http://mirrors.kodi.tv/addons/frodo/script.module.unidecode/script.module.unidecode-0.4.16.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			DownloadFile("https://www.dropbox.com/s/rprw7sexo9aefqu/script.module.unidecode-0.4.16.zip?dl=1", addon + ".zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
@@ -1706,7 +1707,7 @@ def installaddonP(addon, update=True):
 		'''6.0'''
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			#LINK IS BROKEN!
-			DownloadFile("https://www.dropbox.com/sh/7rwud8jv5xu85ga/AABvIzzF-8w-H1IduFRgo_dNa/addons/chromium/browser.chromium-6.0.6.zip?dl=0", addon + ".zip", packages_path, addons_path, silent=True)
+			DownloadFile("https://www.dropbox.com/sh/7rwud8jv5xu85ga/AABvIzzF-8w-H1IduFRgo_dNa/addons/chromium/browser.chromium-6.0.6.zip?dl=1", addon + ".zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass

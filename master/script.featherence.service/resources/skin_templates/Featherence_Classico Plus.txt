@@ -1,4 +1,9 @@
 ------------------------
+Featherence Classico Plus (22-Oct-16)
+------------------------
+- Update Israeli shows button.
+
+------------------------
 Featherence Classico Plus (29-Sep-16)
 ------------------------
 - Update design and some variables.

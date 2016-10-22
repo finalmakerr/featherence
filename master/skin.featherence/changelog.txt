@@ -5,10 +5,11 @@ WIP - WORK IN PROGRESS
 - ??Added option to hide Top Video Information on fullscreen video while skiping back/next.
 - Added option to display timing information in the dialog seek bar.
 + Added Premiered information to Side List view instead of year when available.
-- Home.xml container id="9000" issue: http://forum.kodi.tv/showthread.php?tid=294330
 - Added new design mode for Center List view.
 - Added option to add failsafe customized fanart image.
 - DialogSeekBar - Mouse click doesn't work: http://forum.kodi.tv/showthread.php?tid=294207
+- Major update of dialog local subtitle selection.
+- Skin design top buttons are now always visible.
 
 ------------------------
 Featherence v0.7.0 (xx-xx-16)
@@ -16,6 +17,15 @@ Featherence v0.7.0 (xx-xx-16)
 - Added Krypton support.
 - Added ScrollBar support to PVR Guide window.
 - Added WINDOW_DIALOG_CMS_OSD_SETTINGS.
+
+------------------------
+Featherence v0.6.4 (xx-Oct-16)
+------------------------
+- Home.xml container id="9000" issue: http://forum.kodi.tv/showthread.php?tid=294330
+- Minor bug fix with script.module.unidecode unable to auto-installed.
+- Minor update of Mini buttons.
++ Support scrolling back/forward in all layouts.
+
 
 ------------------------
 Featherence v0.6.3 (20-Oct-16)

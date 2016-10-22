@@ -7,7 +7,7 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
-	xbmc.executebuiltin('ActivateWindow(1212)')
+	installaddonP('script.module.unidecode', update=False)
 	#xbmc.executebuiltin('ActivateWindow(10157)')
 	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=4)')
 	#xbmc.executebuiltin('ActivateWindow(MusicFiles,root)')
@@ -2286,6 +2286,7 @@ def mode218(value, admin, name, printpoint):
 		dialogsubtitlesW = xbmc.getCondVisibility('Window.IsVisible(DialogSubtitles.xml)')
 		myweatherW = xbmc.getCondVisibility('Window.IsVisible(MyWeather.xml)')
 		playerpaused = xbmc.getCondVisibility('Player.Paused')
+		message = message + newline + "script.featherence.service_downloading" + space2 + xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
 		
 		message = message + newline + "Current XML" + space2 + xbmc.getInfoLabel('Window.Property(xmlfile)')
 		message = message + newline + "Current Control" + space2 + xbmc.getInfoLabel('System.CurrentControl')
