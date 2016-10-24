@@ -997,14 +997,13 @@ def mode32(value, value2, name, printpoint):
 		#ReloadSkin(admin)
 	elif value == '6':
 		custom1170W_ = xbmc.getCondVisibility('Window.IsVisible(Custom1170.xml)')
-		custom1170W_ = xbmc.getCondVisibility('Window.IsVisible(Custom1170.xml)')
 		custom1173W_ = xbmc.getCondVisibility('Window.IsVisible(Custom1173.xml)')
 		if custom1170W_: xbmc.executebuiltin('Dialog.Close(1170)')
 		elif custom1173W_: xbmc.executebuiltin('Dialog.Close(1173)')
 		TEMP = xbmc.getInfoLabel('Window(home).Property(TEMP)')
 		
-		xbmc.executebuiltin('Action(Close)')
-		xbmc.executebuiltin('ActivateWindow(1117)') ; xbmc.sleep(1000)
+		xbmc.executebuiltin('Action(Close)') ; xbmc.executebuiltin('ActivateWindow(1000)') ; xbmc.sleep(500)
+		xbmc.executebuiltin('ActivateWindow(1117)') ; xbmc.sleep(500)
 		
 		
 		count = 0
