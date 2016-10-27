@@ -17,7 +17,7 @@ Featherence v0.7.0 (xx-xx-16)
 - Minor update of DVDCases visibility.
 
 ------------------------
-Featherence v0.6.4 (27-Oct-16)
+Featherence v0.6.4-5 (27-Oct-16)
 ------------------------
 - Added new design mode for Center List view.
 - Added new design mode for Poster view.

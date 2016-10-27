@@ -111,8 +111,8 @@
 	</control>
   </include>
   <include name="fanart3form">
-    <animation description="Slide Up" condition="!Skin.HasSetting(ShowTopVideoInformation) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + !Container.OnNext + !Container.OnPrevious + !Control.HasFocus(60) + !Player.HasVideo" effect="slide" start="0,0" end="0,-552" delay="3000" time="700" reversible="false">Conditional</animation>
-	<animation description="FullFanartTopVideoInformation" condition="!Player.HasVideo + Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(ShowTopVideoInformation) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60)" effect="zoom" start="100,100" end="100,51" delay="3000" time="700" reversible="false">Conditional</animation>	 
+    <animation description="Slide Up_57/58" condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Skin.HasSetting(ShowTopVideoInformation) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + !Container.OnNext + !Container.OnPrevious + !Control.HasFocus(60) + !Player.HasVideo" effect="slide" start="0,0" end="0,-552" delay="3000" time="700" reversible="false">Conditional</animation>
+	<animation description="FullFanartTopVideoInformation_57/58" condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Player.HasVideo + Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(ShowTopVideoInformation) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60)" effect="zoom" start="100,100" end="100,51" delay="3000" time="700" reversible="false">Conditional</animation>	 
 	<animation description="No full Fanart-SideVideoInformation" condition="!Skin.HasSetting(View50_Plus2) + Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogAddonSettings.xml)" effect="zoom" center="0,1100" start="100,111.5" end="100,111.5" time="0" reversible="false">Conditional</animation>
 	<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,86.15" time="0">Conditional</animation>
 	<animation description="No full Fanart-Vertical_en" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1920,1080" start="100,100" end="75.5,86.15" time="0">Conditional</animation>
@@ -147,7 +147,7 @@
 		<visible>!Skin.HasSetting(background2)</visible>
 		<!--<visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
 		<visible>!Skin.HasSetting(ShowTopVideoInformation) | Container.Content(Seasons) | Container.Content(Episodes)</visible>-->
-		<visible>!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))</visible>
+		<!--<visible>!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))</visible>-->
 		
 	  </control>
 	  <control type="largeimage" id="7014" description="פאנארט 2">
