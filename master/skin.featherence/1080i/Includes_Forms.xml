@@ -276,6 +276,13 @@
   <include name="ButtonTopVideoInformation_" description="פרטי וידאו">
     <texture border="20">buttons/ButtonCF.png</texture>
   </include>
+  
+  <include name="ButtonTopVideoInformation2" description="פרטי וידאו">
+    <texture border="40" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonE0.png</texture>
+  </include>
+  <include name="ButtonTopVideoInformation2_" description="פרטי וידאו">
+    <texture border="40">buttons/ButtonEF.png</texture>
+  </include>
 
   <include name="statusbiglist">
   <control type="image">

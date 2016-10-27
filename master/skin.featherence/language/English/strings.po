@@ -602,7 +602,7 @@ msgid "Color font dialog title"
 msgstr "צבע פונט כותרת דיאלוג"
 
 msgctxt "#31442"
-msgid "Choose this option in order to color the following windows' backgrounds: Yes/No, Ok, Busy, Progress."
+msgid "Choose this option in order to color the following windows backgrounds: Yes/No, Ok, Busy, Progress."
 msgstr "בחר באפשרות זו בכדי לשנות את צבע הרקע של חלונות דיאלוגים: כן/לא, אוקיי, עסוק, טעינה."
 
 msgctxt "#31443"
@@ -862,8 +862,8 @@ msgid "Side video information"
 msgstr "מידע וידאו צדדי"
 
 msgctxt "#31507"
-msgid "Choose icon/fanart by clicking the OK button."
-msgstr "בחר סמל/פאנארט ע"י לחיצה על כפתור אישור."
+msgid ""
+msgstr ""
 
 msgctxt "#31508"
 msgid "Force View"
@@ -906,16 +906,16 @@ msgid "Change the customized logo position that's appearing between windows tran
 msgstr "שנה את מיקום הלוגו האישי המופיע בזמן מעבר בין חלונות בסקין."
 
 msgctxt "#31518"
-msgid ""
-msgstr ""
+msgid "Covers distance"
+msgstr "מרווח עטיפות"
 
 msgctxt "#31519"
-msgid ""
-msgstr ""
+msgid "Always use fanart outside home window"
+msgstr "השתמש תמיד בפאנארט מחוץ לחלון הבית"
 
 msgctxt "#31520"
-msgid ""
-msgstr ""
+msgid "Choose this option in order to show home button fanart when there is no fanart at the navigation (Failsafe fanart)."
+msgstr "הפעל אפשרות זו בכדי להציג פאנארט של הכפתור עליו לחצתם בחלון הבית כאשר אין פאנארט בניווט (Failsafe fanart)."
 
 msgctxt "#31521"
 msgid ""
@@ -1692,7 +1692,7 @@ msgid "Choose this option to allow fanart view while browsing home menu."
 msgstr "בחר באפשרות זו בכדי לאפשר תצוגת פאנארט בזמן ניווט בחלון הבית."
 
 msgctxt "#31837"
-msgid "Choose a color for home menu and sub menu icons.[CR]Affects other buttons across the skin as well."
+msgid "Choose a color for home menu and sub menu icons.[CR]Affects others buttons across the skin as well."
 msgstr "בחר צבע עבור אייקונים בתפריט הבית ובתת תפריט.[CR]משפיע גם על כפתורים נוספים בסקין!"
 
 msgctxt "#31838"
@@ -1720,7 +1720,7 @@ msgid "Choose this option in order to change color for"
 msgstr "בחר באפשרות זו בכדי לשנות צבע עבור"
 
 msgctxt "#31844"
-msgid "Choose this option in order to change transperancy for"
+msgid "Choose this option in order to change Transparency for"
 msgstr "בחר באפשרות זו בכדי לשנות את רמת השקיפות עבור"
 
 msgctxt "#31845"

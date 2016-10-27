@@ -48,21 +48,6 @@
 	</control>
   </include>
   
-  <include name="SetProperty_Widget" description="">
-    <control type="button">
-	  <onfocus description="WidgetButton.ID_BASE" condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(WidgetButton.ID_,$INFO[Container(315).ListItemNoWrap(0).Property(id)],home)</onfocus>
-	  <onfocus description="WidgetButton.Name-Home" condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(WidgetButton.Name,$INFO[System.CurrentControl],home)</onfocus>
-	  <!--<onfocus description="Button.ID_BASE-CustomHome" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.ID_,$INFO[Container(50).ListItemNoWrap(0).Property(id)],home)</onfocus>-->
-	  <!--<onfocus description="Button.ID-Home" condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.ID,$INFO[Container(9000).ListItem(0).Label2],home)</onfocus>
-	  <onfocus description="Button.Name-Home" condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.Name,$INFO[System.CurrentControl],home)</onfocus>-->
-	  
-	  <onfocus description="WidgetButton.ID_BASE-CustomHome2" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(TEMP2,$INFO[Container(315).ListItemNoWrap(0).Property(id)],home)</onfocus>
-	  <onfocus description="WidgetButton.ID-CustomHome2" condition="Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(TEMP,$INFO[Container(315).ListItem(0).Label2],home)</onfocus>
-	  
-	  <visible>false</visible>
-	</control>
-  </include>
-  
   <include name="ReloadSkin_Check">
     <!--<onload condition="Skin.HasSetting(Admin3) + Skin.HasSetting(Admin) + !Skin.HasSetting(Admin2) + Window.IsVisible(Home.xml) + Control.IsVisible(9000) + [!IntegerGreaterThan(Container(9000).NumItems,4) | StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,) | IsEmpty(Control.GetLabel(700105))]">Notification(TESTING,,2000)</onload>
 	<onload condition="Window.IsVisible(Home.xml) + Control.IsVisible(9000) + [!IntegerGreaterThan(Container(9000).NumItems,4) | StringCompare(Container(9000).NumItems,0) | StringCompare(Container(9000).ListItem(0).Label,) | IsEmpty(Control.GetLabel(700105))]">RunScript(script.featherence.service,,?mode=213&amp;value=1)</onload>
@@ -75,7 +60,7 @@
 	<control type="grouplist" id="9009" description="כפתורים עליונים">
 	  <include>Fade10</include>
 	  <include>TopInformationSize0</include>
-	  <animation condition="System.IdleTime(60)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
+	  <animation condition="System.IdleTime(60) + !Window.IsVisible(CustomHomeCustomizer.xml)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
 	  <visible>[Window.IsVisible(Home.xml) + !Skin.HasSetting(widget) + [Control.IsVisible(311) | Control.IsVisible(312) | Control.HasFocus(315)]] | !Window.IsVisible(Home.xml)</visible>
 	  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml) | !Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 	  <visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]</visible>

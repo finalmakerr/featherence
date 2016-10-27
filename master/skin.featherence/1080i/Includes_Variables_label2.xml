@@ -422,6 +422,11 @@
 	<value condition="!Skin.HasSetting(MultiFanart_randomize)">$LOCALIZE[107]</value>
   </variable>
   
+  <variable name="241label2">
+    <value condition="!Skin.HasSetting(FailsafeFanart)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(FailsafeFanart)">$LOCALIZE[107]</value>
+  </variable>
+  
   <variable name="252label2">
 	<value condition="Skin.String(MainBackgroundTexture,NONE)">$LOCALIZE[106]</value>
 	<value condition="Skin.String(MainBackgroundTexture)">$LOCALIZE[107] $INFO[Skin.String(MainBackgroundTexture)]</value>

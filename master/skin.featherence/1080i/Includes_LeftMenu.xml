@@ -279,9 +279,10 @@
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31506]</label>
-		  <selected>Skin.HasSetting(View50_SideVideoInformation)</selected>
-		  <onclick>Skin.ToggleSetting(View50_SideVideoInformation)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
+		  <selected>[StringCompare(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(View51_SideVideoInformation)] | [StringCompare(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(View50_SideVideoInformation)]</selected>
+		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31011])">Skin.ToggleSetting(View50_SideVideoInformation)</onclick>
+		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])">Skin.ToggleSetting(View51_SideVideoInformation)</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31010]) | StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
         </control>
 		<control type="radiobutton" id="119" description="גודל גופן פרטי וידאו">
           <include>SideMenuCommon</include>
@@ -293,15 +294,25 @@
 		  <onclick>Skin.ToggleSetting(TopVideoInformationFontSize)</onclick>
 		  <visible></visible>
         </control>
-		<control type="radiobutton" id="139" description="פאנארט תמיד">
+		<control type="radiobutton" id="124" description="מרווח עטיפות">
 		  <include>SideMenuCommon</include>
 		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
-		  <label>$LOCALIZE[20445] $LOCALIZE[34122]</label>
-		  <enable>!Skin.HasSetting(background2)</enable>
-		  <selected>Skin.HasSetting(AlwaysFanart)</selected>
-		  <onclick>Skin.ToggleSetting(AlwaysFanart)</onclick>
+		  <label>$LOCALIZE[31518]</label>
+		  <selected>StringCompare(Container.Viewmode,$LOCALIZE[31013]) + Skin.HasSetting(View57_Distance) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(View58_Distance)</selected>
+		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])">Skin.ToggleSetting(View57_Distance)</onclick>
+		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31014])">Skin.ToggleSetting(View58_Distance)</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+        </control>
+		<control type="radiobutton" id="125" description="הסתר פאנארט בזמן ניווט">
+		  <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31521]</label>
+		  <selected>Skin.HasSetting(HideFanartOnNav)</selected>
+		  <onclick>Skin.ToggleSetting(HideFanartOnNav)</onclick>
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
         </control>
 	  </control>
@@ -351,20 +362,9 @@
 			<font>size28</font>
 			<label>$VAR[30label2]</label>
 			<visible>Skin.HasSetting(AutoView) | Skin.HasSetting(ForceView)</visible>
-			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
+			<!--<visible>Window.IsVisible(MyVideoNav.xml)</visible>-->
 		</control>
-		
-		<control type="button" id="30">
-			<include>SideMenuCommon</include>
-			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-		    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-			<onclick>RunScript(script.featherence.service,,?mode=28&amp;value=AutoView.movies)</onclick>
-			<font>size28</font>
-			<label>for movies: $INFO[Skin.String(AutoView.movies)]</label>
-			<visible>Skin.HasSetting(AutoView)</visible>
-			<visible>Window.IsVisible(MyVideoNav.xml)</visible>
-			<visible>!Skin.HasSetting(ForceView)</visible>
-		</control>
+
 		<control type="button" id="31">
 			<include>SideMenuCommon</include>
 			<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
@@ -1146,10 +1146,10 @@
   
   
   <include name="ShowDVDCases">
-	 <!--<control type="label" id="11156" description="דיסק">
+	 <control type="label" id="11156" description="דיסק">
 	   <label>$VAR[11156label]</label>
 	   <visible>false</visible>
-     </control>-->
+     </control>
 	 <control type="group">
 	   <visible>IsEmpty(Control.GetLabel(11156)) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(Home.xml)] | VideoPlayer.IsFullscreen</visible>
 	   <visible>!SubString(ListItem.Label,$LOCALIZE[33078]) + !StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,Next Page)</visible>
@@ -1172,12 +1172,13 @@
 	   </control>
 	   <control type="image" id="192" description="מארז סרטים">
 		 <texture colordiffuse="ffff0000">misc/dvdcases/dvdcases.png</texture>
-		 <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
+		 <visible>SubString(ListItem.Path,videodb://1/7) | SubString(ListItem.path,videodb://movies/sets/)</visible>
 	   </control>
 	   <control type="image" id="193" description="מקומי">
 		 <texture colordiffuse="ffffff00">misc/dvdcases/dvdcases.png</texture>
 		 <visible>[IntegerGreaterThan(ListItem.Size,10) | !IsEmpty(ListItem.VideoResolution) | !IsEmpty(ListItem.VideoCodec)] | Window.IsVisible(DialogFullScreenInfo.xml) + [IntegerGreaterThan(VideoPlayer.Size,10)]</visible>
-		 <visible>!SubString(ListItem.path,videodb://movies/sets/) + !SubString(ListItem.Path,plugin://)</visible>
+		 <visible>![SubString(ListItem.Path,videodb://1/7) | SubString(ListItem.path,videodb://movies/sets/)]</visible>
+		 <visible>!SubString(ListItem.Path,plugin://)</visible>
 	   </control>
 	   <control type="image" id="190" description="רגיל">
 		 <texture>misc/dvdcases/dvdcases.png</texture>
@@ -1196,8 +1197,8 @@
    </include>
   <include name="ShowDVDdisc">
     <control type="group">
-	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster)) + ![Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])]" effect="slide" start="0,0" end="0,180" delay="4000" time="700">Conditional</animation>
-	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster)) + [Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])]" effect="slide" start="0,0" end="0,-180" delay="4000" time="700">Conditional</animation>
+	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster)) + ![Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + ![Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010])]" effect="slide" start="0,0" end="0,180" delay="4000" time="700">Conditional</animation>
+	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster)) + [ Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) ]" effect="slide" start="0,0" end="0,-180" delay="4000" time="700">Conditional</animation>
 	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster))" effect="rotate" center="auto" start="0" end="360" time="10000" loop="true" delay="4000" reversible="false">Conditional</animation>
 	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster))" effect="fade" start="0" end="100" delay="4000" time="220">Conditional</animation>
 	  <height>160</height>

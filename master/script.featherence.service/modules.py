@@ -222,7 +222,7 @@ def mode9(admin, name):
 	'''------------------------------
 	---SEMI-AUTO-SUBTITLE-FIND-------
 	------------------------------'''
-	admin = xbmc.getCondVisibility('Skin.HasSetting(Admin)')
+	admin = xbmc.getCondVisibility('Skin.HasSetting(Admin)') ; timeout = False
 	property_subtitleservice = xbmc.getInfoLabel('Window(home).Property(Subtitle_Service)')
 	property_dialogsubtitles = xbmc.getInfoLabel('Window(home).Property(DialogSubtitles)')
 	property_dialogsubtitles2 = xbmc.getInfoLabel('Window(home).Property(DialogSubtitles2)')
@@ -422,7 +422,8 @@ def mode9(admin, name):
 				countidle = 0
 			'''---------------------------'''
 	
-	if xbmc.getCondVisibility('System.IdleTime(1)') and not xbmc.getCondVisibility('System.IdleTime(7)') and container120numitems != 0:
+	if countidle >= 70 or listL == []: timeout = True
+	if xbmc.getCondVisibility('System.IdleTime(1)') and not xbmc.getCondVisibility('System.IdleTime(7)') and container120numitems != 0 and not timeout:
 		'''------------------------------
 		---SET-NEW-SUBTITLE--------------
 		------------------------------'''
@@ -436,7 +437,7 @@ def mode9(admin, name):
 	setProperty('DialogSubtitles', "", type="home")
 	if listL != []: setProperty('TEMP', "", type="home")
 	
-	if xbmc.getCondVisibility('Player.Paused'): xbmc.executebuiltin('Action(Play)')
+	if xbmc.getCondVisibility('Player.Paused') and not timeout: xbmc.executebuiltin('Action(Play)')
 	'''---------------------------'''
 	
 	setProperty('DialogSubtitles',"",type="home")
@@ -2384,6 +2385,8 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "VAR-11156label" + space2 + xbmc.getInfoLabel('$VAR[11156label]')
 			message = message + newline + "ListItem.Duration" + space2 + xbmc.getInfoLabel('ListItem.Duration')
 			message = message + newline + "Container.Viewmode" + space2 + xbmc.getInfoLabel('Container.Viewmode')
+			message = message + newline + "ListItem.SetId" + space2 + xbmc.getInfoLabel('ListItem.SetId')
+			message = message + newline + "ListItem.Set" + space2 + xbmc.getInfoLabel('ListItem.Set')
 			message = message + newline + '---------------------------'
 			if xbmc.getCondVisibility('System.HasAddon(script.tv.show.next.aired)'):
 				message = message + newline + "NextAired.NextDate" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.NextDate)'))

@@ -1,15 +1,12 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
-4. כשערוצי רדיו עובדים אין כפתורי תפריט בכלל (נבדק דרך הרחבה)
 - ??Added option to hide Top Video Information on fullscreen video while skiping back/next.
 - Added option to display timing information in the dialog seek bar.
 + Added Premiered information to Side List view instead of year when available.
-- Added new design mode for Center List view.
-- Added option to add failsafe customized fanart image.
-- DialogSeekBar - Mouse click doesn't work: http://forum.kodi.tv/showthread.php?tid=294207
+- Added option to show button fanart in the content if fanart is empty.
+For example: Entering Movies button and selecting an item without a fanart will display the movie's fanart of your homepage's button.
 - Major update of dialog local subtitle selection.
-- Skin design top buttons are now always visible.
 
 ------------------------
 Featherence v0.7.0 (xx-xx-16)
@@ -17,15 +14,32 @@ Featherence v0.7.0 (xx-xx-16)
 - Added Krypton support.
 - Added ScrollBar support to PVR Guide window.
 - Added WINDOW_DIALOG_CMS_OSD_SETTINGS.
+- Minor update of DVDCases visibility.
 
 ------------------------
-Featherence v0.6.4 (xx-Oct-16)
+Featherence v0.6.4 (27-Oct-16)
 ------------------------
-- Home.xml container id="9000" issue: http://forum.kodi.tv/showthread.php?tid=294330
-- Minor bug fix with script.module.unidecode unable to auto-installed.
+- Added new design mode for Center List view.
+- Added new design mode for Poster view.
+- Added new design mode for Wall view.
+- Added new video preview window for Center List view.
+- Added option to hide fanart on navigation for Wall and Poster views.
+- Added option to show fanart on half screen (in order to see it all in some users configurations).
+- Added play trailer in-full screen support for trailers button in all views.
+- Minors bugs fix.
++ DVDCases for movies sets / collections.
++ Home Buttons position are now saved when returning to home window.
++ script.module.unidecode unable to auto-installed.
++ Unable to edit custom widgets.
+- Minor performance update of animation during videoplayback.
+- Minor update of DialogSeekBar
++ Added seeking with mouse support.
++ Added time pass label.
++ Added seeking animation.
+- Minor update of English translation.
 - Minor update of Mini buttons.
 + Support scrolling back/forward in all layouts.
-
+- Skin design's top buttons are now always visible.
 
 ------------------------
 Featherence v0.6.3 (20-Oct-16)

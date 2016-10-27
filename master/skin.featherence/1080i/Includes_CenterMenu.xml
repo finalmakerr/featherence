@@ -2,16 +2,17 @@
 <includes>
   <include name="SetProperty_Center" description="">
     <control type="button">
-	  <onfocus description="SubButton.ID_BASE" condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)">SetProperty(SubButton.ID_,$INFO[Container(9005).ListItemNoWrap(0).Property(id)],home)</onfocus>
-	  <onfocus description="Previous_SubButton.ID_BASE" condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)">SetProperty(Previous_SubButton.ID_,$INFO[Container(9005).ListItemNoWrap(-1).Property(id)],home)</onfocus>
-	  <onfocus description="Next_SubButton.ID_BASE" condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)">SetProperty(Next_SubButton.ID_,$INFO[Container(9005).ListItemNoWrap(1).Property(id)],home)</onfocus>
+	  <onfocus description="SubButton.ID_BASE" condition="!Skin.HasSetting(Touch_Support) + Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)">SetProperty(SubButton.ID_,$INFO[Container(9005).ListItemNoWrap(0).Property(id)],home)</onfocus>
+	  <onfocus description="Previous_SubButton.ID_BASE" condition="!Skin.HasSetting(Touch_Support) + Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)">SetProperty(Previous_SubButton.ID_,$INFO[Container(9005).ListItemNoWrap(-1).Property(id)],home)</onfocus>
+	  <onfocus description="Next_SubButton.ID_BASE" condition="!Skin.HasSetting(Touch_Support) + Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)">SetProperty(Next_SubButton.ID_,$INFO[Container(9005).ListItemNoWrap(1).Property(id)],home)</onfocus>
 	  
-	  <onfocus description="WidgetButton.ID_BASE" condition="true">SetProperty(WidgetButton.ID_,$INFO[Container(315).ListItemNoWrap(0).Property(id)],home)</onfocus> <!--Control.HasFocus(315) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)-->
-	  <onfocus description="SubButton.Name" condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)">SetProperty(SubButton.Name,$INFO[System.CurrentControl],home)</onfocus>
+	  <onfocus description="WidgetButton.ID_BASE" condition="true">!Skin.HasSetting(Touch_Support) + SetProperty(WidgetButton.ID_,$INFO[Container(315).ListItemNoWrap(0).Property(id)],home)</onfocus> <!--Control.HasFocus(315) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)-->
+	  <onfocus description="SubButton.Name" condition="!Skin.HasSetting(Touch_Support) + Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)">SetProperty(SubButton.Name,$INFO[System.CurrentControl],home)</onfocus>
 
 	  <visible>false</visible>
 	</control>
   </include>
+
   <include name="MenuDesign_Center" description="ברירת מחדל"> 
 	<control type="group" description="חלון הגדרות כפתור">
       <posx>720</posx>

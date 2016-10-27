@@ -13,8 +13,8 @@
   <onload condition="IntegerGreaterThan(Window(home).Property(HomeLastPos2),4)">Action(PageDown)</onload>
   <onload condition="IntegerGreaterThan(Window(home).Property(HomeLastPos2),5)">Action(PageDown)</onload>
   <onload condition="!IsEmpty(Window(home).Property(HomeLastPos))">SetFocus(9000,$INFO[Window(home).Property(HomeLastPos)])</onload>-->
-  <include>onunload_ClearProperty_MainMenu</include>
-  <include>onunload_ClearProperty_SubMenu</include>
+  <!--<include>onunload_ClearProperty_MainMenu</include>
+  <include>onunload_ClearProperty_SubMenu</include>-->
   <include>Fade_WindowsOpenClose</include>
   <controls>
 	<include>Backgrounds1</include>

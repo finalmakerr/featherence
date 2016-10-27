@@ -4,6 +4,7 @@
     <onload condition="IsEmpty(Window(home).Property(mode10)) + !Pvr.IsPlayingTv + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !StringCompare(VideoPlayer.Title,featherence_.mp4) + !StringCompare(Window(home).Property(TEMP),startup)">RunScript(script.featherence.service,,?mode=10)</onload>
 	<onload condition="Player.PauseEnabled">SetFocus(602)</onload>
 	<onload condition="!Control.IsVisible(602) + Control.IsVisible(603)">SetFocus(603)</onload>
+	<depth>DepthOSD</depth>
     <controls>
 	  <control type="group">
 	    <visible>!Window.IsVisible(DialogSubtitles.xml)</visible>
@@ -334,6 +335,22 @@
         <control type="group">
 		  <visible>Player.Paused</visible>
 		  <include>TopVideoInformation</include>
+		</control>
+	  </control>
+	  
+	  <control type="group" description="!VideoPlayer.Content(LiveTV)">
+		<top>1014</top>
+		<visible>!VideoPlayer.Content(LiveTV)</visible>
+	    <control type="slider" id="87">
+		    <depth>DepthOSD+</depth>
+			<action>seek</action>
+			<left>0</left>
+			<top>27</top>
+			<width>1920</width>
+			<height>35</height>
+			<texturesliderbar colordiffuse="yellow">osd/texturebg_cache.png</texturesliderbar>
+			<textureslidernib colordiffuse="BBBBBBBB">osd/midtexture.png</textureslidernib>
+			<textureslidernibfocus bordercolordiffuse="yellow">osd/midtexture.png</textureslidernibfocus>
 		</control>
 	  </control>
 	  <include>TouchSupport</include>

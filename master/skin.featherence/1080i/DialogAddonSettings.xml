@@ -4,15 +4,6 @@
   <controls>
     <!--<include>BlackBackground</include>-->
 	<include>Backgrounds3</include>
-	<!--<control type="largeimage" id="7014" description="רקע פאנארט">
-		<include>Fade_Background2Overlay</include>
-		<aspectratio align="top">scale</aspectratio>
-		<posy>0</posy>
-		<height>1080</height>
-		<texture background="true">$VAR[background2]</texture>
-		<width>1920</width>
-		<visible>!Skin.HasSetting(background2)</visible>
-	</control>-->
     <control type="group" description="תפריט שמאל (9)">
 	  <include>Slide6</include>
       <height>530</height>

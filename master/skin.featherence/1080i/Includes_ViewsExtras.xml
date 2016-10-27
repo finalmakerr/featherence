@@ -56,7 +56,8 @@
 	<width>40</width>
 	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
 	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
-	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
+	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
   </include>
   
   <include name="Trailer_51">
@@ -107,7 +108,8 @@
 	<width>70</width>
 	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
 	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
-	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
+	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
   </include>
   
   <include name="Trailer_50A">
@@ -207,7 +209,8 @@
 	<width>70</width>
 	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
 	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
-	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
+	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
   </include>
   
   <include name="View54_Boat_Itemlayout_Animation">
@@ -235,7 +238,8 @@
 	<width>70</width>
 	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
 	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
-	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
+	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
   </include>
   
   <include name="Trailer_57A">
@@ -361,7 +365,8 @@
 	<width>70</width>
 	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
 	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
-	<onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
+	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
+	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
   </include>
   
   <include name="Trailer_58A">

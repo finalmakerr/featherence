@@ -239,8 +239,6 @@
 		<onclick condition="Skin.String(MenuDesign,4)">Skin.SetString(MenuDesign,6)</onclick>
 		<onclick condition="Skin.String(MenuDesign,6)">Skin.SetString(MenuDesign,7)</onclick>
 		<onclick condition="Skin.String(MenuDesign,7)">Skin.SetString(MenuDesign,)</onclick>
-		<onclick>Action(Close)</onclick>
-		<onclick>Action(1000)</onclick>
 		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>
@@ -696,6 +694,15 @@
 		<thumb></thumb>
 		<property name="rinfo">$LOCALIZE[31100]</property>
 		<onclick>Skin.ToggleSetting(MultiFanart_randomize)</onclick>
+		<visible>Container(100).Hasfocus(28)</visible>
+	  </item>
+	  
+	  <item id="241" description="אפשר אל-כשל פאנארט">
+		<label>$LOCALIZE[31519]</label>
+		<label2>$VAR[241label2]</label2>
+		<thumb></thumb>
+		<property name="rinfo">$LOCALIZE[31520]</property>
+		<onclick>Skin.ToggleSetting(FailsafeFanart)</onclick>
 		<visible>Container(100).Hasfocus(28)</visible>
 	  </item>
 	  

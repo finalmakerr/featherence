@@ -11,8 +11,8 @@
 	<include>ViewDesign_54</include>
 	<include>ViewDesign_57</include>
 	<include>ViewDesign_58</include>
-	<include>MenuDesign_Left</include>
 	<include>TopVideoInformation</include>
+	<include>MenuDesign_Left</include>
 	<include>ScrollBar</include>
 	<include>TopInformation</include>
 	<include>WindowsBusy</include>

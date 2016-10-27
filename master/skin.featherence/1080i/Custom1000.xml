@@ -7,6 +7,7 @@
   <onunload condition="!IsEmpty(Window(home).Property(1000title))">ClearProperty(1000title,home)</onunload>
   <onunload condition="!IsEmpty(Window(home).Property(1000comment))">ClearProperty(1000comment,home)</onunload>
   <controls>
+    <include>BlackBackground</include>
     <control type="label" description="אנא המתן">
 	  <include>LabelC11</include>
 	  <!--<posx>960</posx>
