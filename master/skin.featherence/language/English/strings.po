@@ -910,16 +910,16 @@ msgid "Covers distance"
 msgstr "מרווח עטיפות"
 
 msgctxt "#31519"
-msgid "Always use fanart outside home window"
-msgstr "השתמש תמיד בפאנארט מחוץ לחלון הבית"
+msgid "Enable failsafe fanart"
+msgstr "אפשר אל-כשל פאנארט"
 
 msgctxt "#31520"
 msgid "Choose this option in order to show home button fanart when there is no fanart at the navigation (Failsafe fanart)."
 msgstr "הפעל אפשרות זו בכדי להציג פאנארט של הכפתור עליו לחצתם בחלון הבית כאשר אין פאנארט בניווט (Failsafe fanart)."
 
 msgctxt "#31521"
-msgid ""
-msgstr ""
+msgid "Hide fanart on navigation"
+msgstr "הסתר פאנארט בזמן ניווט"
 
 msgctxt "#31522"
 msgid ""
