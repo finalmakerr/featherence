@@ -1407,10 +1407,11 @@ def update_view(url, num, viewtype, ok=True, installaddon=True):
 			num_ = num_.replace("plugin://","")
 			num_ = num_.replace("/","")
 				
-			if not xbmc.getCondVisibility('System.HasAddon('+ num_ +')') or not os.path.exists(os.path.join(addons_path, num_)) and num_ != "":
+			if not xbmc.getCondVisibility('System.HasAddon('+ num_ +')') or not os.path.exists(os.path.join(addons_path, num_)) and num_ != "" and num_ != None:
 				printpoint = printpoint + 'f'
 				notification_common("24")
-				installaddon(num_, update=True)
+				#notification(num_,"","",4000)
+				#installaddon(num_, update=True)
 				xbmc.sleep(2000)
 	
 	if '&activatewindow=' in url:
