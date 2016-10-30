@@ -334,7 +334,7 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.3.41" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.3.42" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.1.0"/>

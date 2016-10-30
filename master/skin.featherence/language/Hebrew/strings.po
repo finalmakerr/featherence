@@ -57,6 +57,10 @@ msgctxt "#31015"
 msgid "Line"
 msgstr "Line"
 
+msgctxt "#31016"
+msgid "Side Wall"
+msgstr "Side Wall"
+
 msgctxt "#31030"
 msgid "Covers Transperancy"
 msgstr "שקיפות עטיפות"
@@ -922,16 +926,16 @@ msgid "Hide fanart on navigation"
 msgstr "הסתר פאנארט בזמן ניווט"
 
 msgctxt "#31522"
-msgid ""
-msgstr ""
+msgid "Bigger labels"
+msgstr "תוויות גדולות"
 
 msgctxt "#31523"
-msgid ""
-msgstr ""
+msgid "Increase the font size of the widgets titles."
+msgstr "הגדל גופן עבור כותרות הו'ידגט."
 
 msgctxt "#31524"
-msgid ""
-msgstr ""
+msgid "Prefered view"
+msgstr "העדפת תצוגה"
 
 msgctxt "#31525"
 msgid ""
