@@ -32,7 +32,7 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 	------------------------------'''
 	fanart = 100
 	'''כפתור הילדים שלי חדש..'''
-	addDir(addonString_servicefeatherence(32450).encode('utf-8'),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',0,getAddonFanart(fanart, urlcheck_=True))
+	addDir(addonString_servicefeatherence(32450).encode('utf-8') % (addonString(30000)),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',0,getAddonFanart(fanart, urlcheck_=True))
 	
 	'''רשימת השמעה 1'''
 	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',0,getAddonFanart("Custom_Playlist1", urlcheck_=True))
