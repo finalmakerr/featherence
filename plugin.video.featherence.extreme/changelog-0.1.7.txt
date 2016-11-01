@@ -5,6 +5,8 @@ WIP (WORK IN PROGRESS)
 ------------------------
 Featherence Extreme v0.1.8 (xx-Aug-16)
 ------------------------
+- Major update of autoview feature.
+Work on any skin now and you may add your default view for Main Menu, Sub Menu, and all others window from the addon settings or/and the context menu (Set View).
 - Update TV Mode feature for long playlist.
 
 ------------------------
