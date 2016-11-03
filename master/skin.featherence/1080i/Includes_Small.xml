@@ -33,6 +33,7 @@
 	  <onup condition="!Player.HasMedia + Control.IsVisible(56)">56</onup>
 	  <onup condition="!Player.HasMedia + StringCompare(Container.Viewmode,$LOCALIZE[31013])">57</onup>
 	  <onup condition="!Player.HasMedia + StringCompare(Container.Viewmode,$LOCALIZE[31014])">58</onup>
+	  <onup condition="!Player.HasMedia + StringCompare(Container.Viewmode,$LOCALIZE[31016])">59</onup>
 	  <onup condition="!Player.HasMedia + Control.IsVisible(450)">450</onup>
 	  <ondown condition="Window.IsVisible(SettingsCategory.xml) + Control.IsVisible(3)">3</ondown>
 	  <ondown condition="[Control.IsVisible(7011) | Player.HasMedia]">noop</ondown>
@@ -42,6 +43,7 @@
 	  <ondown condition="!Player.HasMedia + Control.IsVisible(56)">56</ondown>
 	  <ondown condition="!Player.HasMedia + StringCompare(Container.Viewmode,$LOCALIZE[31013])">57</ondown>
 	  <ondown condition="!Player.HasMedia + StringCompare(Container.Viewmode,$LOCALIZE[31014])">58</ondown>
+	  <ondown condition="!Player.HasMedia + StringCompare(Container.Viewmode,$LOCALIZE[31016])">59</ondown>
 	  <ondown condition="!Player.HasMedia + StringCompare(Container.Viewmode,$LOCALIZE[31014])">450</ondown>
 	  <ondown condition="Control.IsVisible(450) + !Player.HasMedia">450</ondown>
 	  <ondown condition="Control.IsVisible(10) + [Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)]">10</ondown>
@@ -81,6 +83,7 @@
 	<onleft description="en" condition="Control.IsVisible(56) + !StringCompare(System.Language,Hebrew)">56</onleft>
 	<onleft description="en" condition="Control.IsVisible(57) + !StringCompare(System.Language,Hebrew)">57</onleft>
 	<onleft description="en" condition="Control.IsVisible(58) + !StringCompare(System.Language,Hebrew)">58</onleft>
+	<onleft description="en" condition="Control.IsVisible(59) + !StringCompare(System.Language,Hebrew)">59</onleft>
 	<onleft description="en" condition="Control.IsVisible(50) + !StringCompare(System.Language,Hebrew)">50</onleft>
 	<onleft description="en" condition="Control.IsVisible(450) + !StringCompare(System.Language,Hebrew)">450</onleft>
 	
@@ -94,6 +97,7 @@
 	<onright description="he" condition="Control.IsVisible(56) + StringCompare(System.Language,Hebrew)">56</onright>
 	<onright description="he" condition="Control.IsVisible(57) + StringCompare(System.Language,Hebrew)">57</onright>
 	<onright description="he" condition="Control.IsVisible(58) + StringCompare(System.Language,Hebrew)">58</onright>
+	<onright description="he" condition="Control.IsVisible(59) + StringCompare(System.Language,Hebrew)">59</onright>
 	<onright description="he" condition="Control.IsVisible(50) + StringCompare(System.Language,Hebrew)">50</onright>
 	<onright description="he" condition="Control.IsVisible(450) + StringCompare(System.Language,Hebrew)">450</onright>
   </include>
@@ -907,6 +911,7 @@
 		<onleft condition="Control.IsVisible(56) + StringCompare(System.Language,Hebrew)">56</onleft>
 		<onleft condition="StringCompare(Container.Viewmode,$LOCALIZE[31013]) + StringCompare(System.Language,Hebrew)">57</onleft>
 		<onleft condition="StringCompare(Container.Viewmode,$LOCALIZE[31014]) + StringCompare(System.Language,Hebrew)">58</onleft>
+		<onleft condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + StringCompare(System.Language,Hebrew)">59</onleft>
 		<onleft condition="Control.IsVisible(450) + StringCompare(System.Language,Hebrew)">450</onleft>
 		<onleft condition="Control.IsVisible(10) + StringCompare(System.Language,Hebrew)">10</onleft>
 		<onleft condition="Control.IsVisible(11) + StringCompare(System.Language,Hebrew)">11</onleft>
@@ -923,6 +928,7 @@
 		<onright condition="Control.IsVisible(56) + !StringCompare(System.Language,Hebrew)">56</onright>
 		<onright condition="StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !StringCompare(System.Language,Hebrew)">57</onright>
 		<onright condition="StringCompare(Container.Viewmode,$LOCALIZE[31014]) + !StringCompare(System.Language,Hebrew)">58</onright>
+		<onright condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !StringCompare(System.Language,Hebrew)">59</onright>
 		<onright condition="Control.IsVisible(450) + !StringCompare(System.Language,Hebrew)">450</onright>
 		<onright condition="Control.IsVisible(13) + Window.IsVisible(DialogPVRGroupManager.xml)">13</onright>
 		<onright condition="Control.IsVisible(10) + !StringCompare(System.Language,Hebrew)">10</onright>

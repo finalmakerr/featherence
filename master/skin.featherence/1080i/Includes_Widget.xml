@@ -486,9 +486,9 @@
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
-			<control type="label" description="שם הסרט">
+			<control type="label" description="כותרת">
 			  <align>center</align>
-			  <label>$VAR[WidgetLabel]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+			  <label>$VAR[WidgetLabel]</label>
 			  <font>size18</font>
 			  <height>30</height>
 			  <posx>8</posx>
@@ -497,6 +497,20 @@
 			  <scroll>false</scroll>
 			  <width>254</width>
 			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+			  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
+			</control>
+			<control type="label" description="כותרת מוגדלת">
+			  <align>center</align>
+			  <label>$VAR[WidgetLabel]</label>
+			  <font>size28</font>
+			  <height>30</height>
+			  <posx>8</posx>
+			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
+			  <shadowcolor>black</shadowcolor>
+			  <scroll>false</scroll>
+			  <width>254</width>
+			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+			  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
 		</control>
       </control>
@@ -656,9 +670,9 @@
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
-				<control type="label" description="שם הסרט">
+				<control type="label" description="כותרת">
 				  <align>center</align>
-				  <label>$VAR[WidgetLabel]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+				  <label>$VAR[WidgetLabel]</label>
 				  <font>size18</font>
 				  <height>30</height>
 				  <posx>8</posx>
@@ -667,6 +681,20 @@
 				  <scroll>false</scroll>
 				  <width>254</width>
 				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+				  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
+				</control>
+				<control type="label" description="כותרת מוגדלת">
+				  <align>center</align>
+				  <label>$VAR[WidgetLabel]</label>
+				  <font>size28</font>
+				  <height>30</height>
+				  <posx>8</posx>
+				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
+				  <shadowcolor>black</shadowcolor>
+				  <scroll>false</scroll>
+				  <width>254</width>
+				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+				  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
 			</control>
 		  </control>
@@ -826,9 +854,9 @@
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
-			<control type="label" description="שם הסרט">
+			<control type="label" description="כותרת">
 			  <align>center</align>
-			  <label>$VAR[WidgetLabel]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+			  <label>$VAR[WidgetLabel]</label>
 			  <font>size18</font>
 			  <height>30</height>
 			  <posx>8</posx>
@@ -837,6 +865,20 @@
 			  <scroll>false</scroll>
 			  <width>234</width>
 			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+			  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
+			</control>
+			<control type="label" description="כותרת מוגדלת">
+			  <align>center</align>
+			  <label>$VAR[WidgetLabel]</label>
+			  <font>size28</font>
+			  <height>30</height>
+			  <posx>8</posx>
+			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
+			  <shadowcolor>black</shadowcolor>
+			  <scroll>false</scroll>
+			  <width>234</width>
+			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+			  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
 		</control>
       </control>
@@ -997,9 +1039,9 @@
 				  <textcolor>white2</textcolor>
 				  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
-				<control type="label" description="שם הסרט">
+				<control type="label" description="כותרת">
 				  <align>center</align>
-				  <label>$VAR[WidgetLabel]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+				  <label>$VAR[WidgetLabel]</label>
 				  <font>size18</font>
 				  <height>30</height>
 				  <posx>8</posx>
@@ -1008,6 +1050,20 @@
 				  <scroll>false</scroll>
 				  <width>234</width>
 				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+				  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
+				</control>
+				<control type="label" description="כותרת מוגדלת">
+				  <align>center</align>
+				  <label>$VAR[WidgetLabel]</label>
+				  <font>size28</font>
+				  <height>30</height>
+				  <posx>8</posx>
+				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
+				  <shadowcolor>black</shadowcolor>
+				  <scroll>false</scroll>
+				  <width>234</width>
+				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+				  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
 			</control>
 		  </control>
@@ -1166,17 +1222,31 @@
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
-			<control type="label" description="שם הסרט">
+			<control type="label" description="כותרת">
 			  <align>center</align>
 			  <label>$VAR[WidgetLabel]</label>
 			  <font>size18</font>
-			  <posx>8</posx>
 			  <height>30</height>
+			  <posx>8</posx>
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
 			  <width>204</width>
 			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+			  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
+			</control>
+			<control type="label" description="כותרת מוגדלת">
+			  <align>center</align>
+			  <label>$VAR[WidgetLabel]</label>
+			  <font>size28</font>
+			  <height>30</height>
+			  <posx>8</posx>
+			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
+			  <shadowcolor>black</shadowcolor>
+			  <scroll>false</scroll>
+			  <width>204</width>
+			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+			  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
 		</control>
       </control>
@@ -1336,9 +1406,9 @@
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
-				<control type="label" description="שם הסרט">
+				<control type="label" description="כותרת">
 				  <align>center</align>
-				  <label>$VAR[WidgetLabel]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+				  <label>$VAR[WidgetLabel]</label>
 				  <font>size18</font>
 				  <height>30</height>
 				  <posx>8</posx>
@@ -1347,6 +1417,20 @@
 				  <scroll>false</scroll>
 				  <width>204</width>
 				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+				  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
+				</control>
+				<control type="label" description="כותרת מוגדלת">
+				  <align>center</align>
+				  <label>$VAR[WidgetLabel]</label>
+				  <font>size28</font>
+				  <height>30</height>
+				  <posx>8</posx>
+				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
+				  <shadowcolor>black</shadowcolor>
+				  <scroll>false</scroll>
+				  <width>204</width>
+				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+				  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
 			</control>
 		  </control>

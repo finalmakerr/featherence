@@ -2,10 +2,9 @@
 WIP - WORK IN PROGRESS
 ------------------------
 - ??Added option to hide Top Video Information on fullscreen video while skiping back/next.
-- Added option to display timing information in the dialog seek bar.
 + Added Premiered information to Side List view instead of year when available.
-- Major update of dialog local subtitle selection.
-- Added new design mode for Wall view.
+- Added new option to disable the auto close of the video/audio OSD.
+- Added next/previous buttons arrows to horizontal/2/3 layouts.
 
 ------------------------
 Featherence v0.7.0 (xx-xx-16)
@@ -13,15 +12,19 @@ Featherence v0.7.0 (xx-xx-16)
 - Added Krypton support.
 - Added ScrollBar support to PVR Guide window.
 - Added WINDOW_DIALOG_CMS_OSD_SETTINGS.
-- Minor update of DVDCases visibility.
 
 ------------------------
-Featherence v0.6.6 (xx-Nov-16)
+Featherence v0.6.6 (03-Nov-16)
 ------------------------
+- Added new view: Side Wall (WIP).
 - Added option to enable failsafe fanart.
 + For example: Entering Movies button and selecting an item without a fanart will display the movie's fanart of your homepage button.
 - Added option to enlarge widgets labels.
 - Added option to favour Center List over Side List view for some dialogs (FileBrowser for example).
+- Exit full screen video now always require one click only.
+- Minor bug fix with missing textures in dialogvideoinfo.
+- Minor update of DVDCases visibility.
+- Minor update of Covers Transperancy option.
 
 ------------------------
 Featherence v0.6.4-5 (27-Oct-16)

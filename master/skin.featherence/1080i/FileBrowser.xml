@@ -73,6 +73,29 @@
 		  <visible>StringCompare(Window(home).Property(TEMP),icon) | StringCompare(Window(home).Property(TEMP),background)</visible>
 		  <visible>Window.IsVisible(FileBrowser.xml)</visible>
 		</control>
+		
+		<control type="button" id="406" description="העדפת תצוגה: ">
+		  <include>SideMenuCommon</include>
+		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$VAR[406label]</label>
+		  <onclick>Skin.ToggleSetting(51over50)</onclick>
+		  <onclick>Dialog.Close(filebrowser)</onclick>
+		  <visible>Window.IsVisible(FileBrowser.xml)</visible>
+		</control>
+		
+		<!--
+		<item id="299" description="העדפת תצוגה Center List">
+		<label>$LOCALIZE[31524]</label>
+		<label2>$VAR[299label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/star.png</thumb>
+		<property name="rinfo">$LOCALIZE[31525]</property>
+		<onclick>Skin.ToggleSetting(51over50)</onclick>
+		<visible>Container(100).Hasfocus(22)</visible>
+		<visible>false</visible>
+	  </item>
+	  -->
       </control>
 	</control>
   

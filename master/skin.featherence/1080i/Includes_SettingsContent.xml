@@ -887,6 +887,15 @@
 		<onclick condition="!Window.IsVisible(DialogKaiToast.xml)">RunScript(script.featherence.service,,?mode=32&amp;value=2)</onclick>
 		<visible>Container(100).Hasfocus(22)</visible>
 	  </item>
+	  <item id="299" description="העדפת תצוגה Center List">
+		<label>$LOCALIZE[31524]</label>
+		<label2>$VAR[299label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/star.png</thumb>
+		<property name="rinfo">$LOCALIZE[31525]</property>
+		<onclick>Skin.ToggleSetting(51over50)</onclick>
+		<visible>Container(100).Hasfocus(22)</visible>
+		<visible>false</visible>
+	  </item>
 	  
 	  <!--320-330-->
 	  
@@ -1454,6 +1463,14 @@
 		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(30)</visible>
 	  </item>
+	  <item id="453" description="תוויות גדולות">
+		<label>$LOCALIZE[31522]</label>
+		<label2>$VAR[453label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/se.png</thumb>
+		<property name="rinfo">$LOCALIZE[31523]</property>
+		<onclick>Skin.ToggleSetting(BiggerWidgetLabels)</onclick>
+		<visible>Container(100).Hasfocus(30)</visible>
+	  </item>
 	  <item id="458" description="מקסימום פריטי ו'ידגט סרטים/סדרות">
 		<label>$LOCALIZE[31439]</label>
 		<label2>$INFO[Skin.String(MTWidgetItems)]</label2>
@@ -1908,6 +1925,7 @@
 		<property name="rinfo">$ADDON[script.featherence.service 32048] $ADDON[script.featherence.service 32049]</property>
 		<onclick>RunScript(script.featherence.service,,?mode=7)</onclick>
 		<visible>Container(100).Hasfocus(2)</visible>
+		<visible>Skin.HasSetting(Admin)</visible>
 	  </item>
 	  <item id="27" description="">
 		<label>Featherence YouTube Channel</label>

@@ -111,7 +111,9 @@
 	</control>
   </include>
   <include name="fanart3form">
-    <animation description="Slide Up_57/58" condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Skin.HasSetting(ShowTopVideoInformation) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + !Container.OnNext + !Container.OnPrevious + !Control.HasFocus(60) + !Player.HasVideo" effect="slide" start="0,0" end="0,-552" delay="3000" time="700" reversible="false">Conditional</animation>
+    <animation description="No full Fanart-59_en" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !Window.IsVisible(DialogVideoInfo.xml) + !Skin.HasSetting(FullFanart59) + !Player.HasVideo + !StringCompare(System.Language,Hebrew)" effect="zoom" center="1919,95" end="41.1,46" time="0" reversible="false">Conditional</animation>
+    <animation description="No full Fanart-59_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !Window.IsVisible(DialogVideoInfo.xml) + !Skin.HasSetting(FullFanart59) + !Player.HasVideo + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,95" end="41.1,46" time="0" reversible="false">Conditional</animation>
+	<animation description="Slide Up_57/58" condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Skin.HasSetting(ShowTopVideoInformation) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + !Container.OnNext + !Container.OnPrevious + !Control.HasFocus(60) + !Player.HasVideo" effect="slide" start="0,0" end="0,-552" delay="3000" time="700" reversible="false">Conditional</animation>
 	<animation description="FullFanartTopVideoInformation_57/58" condition="[Control.IsVisible(57) + StringCompare(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + StringCompare(Container.Viewmode,$LOCALIZE[31014])] + !Player.HasVideo + Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(ShowTopVideoInformation) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Control.HasFocus(60)" effect="zoom" start="100,100" end="100,51" delay="3000" time="700" reversible="false">Conditional</animation>	 
 	<animation description="No full Fanart-SideVideoInformation" condition="!Skin.HasSetting(View50_Plus2) + Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogAddonSettings.xml)" effect="zoom" center="0,1100" start="100,111.5" end="100,111.5" time="0" reversible="false">Conditional</animation>
 	<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogAddonSettings.xml) + StringCompare(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,86.15" time="0">Conditional</animation>
@@ -129,7 +131,7 @@
 	  <height>552</height>
 	  <width>1920</width>
 	  <control type="group">
-	    <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31010])</visible>
+	    <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
 	    <include>VideoPlayerWindow</include>
 	  </control>
 	  <include>MainBackground3</include>
@@ -180,7 +182,7 @@
 		<visible>false</visible>
 	  </control>
 	  <control type="group">
-	    <visible>StringCompare(Container.Viewmode,$LOCALIZE[31010])</visible>
+	    <visible>StringCompare(Container.Viewmode,$LOCALIZE[31010]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
 	    <include>VideoPlayerWindow</include>
 	  </control>
 	</control>   
@@ -228,7 +230,7 @@
 	  <control type="videowindow" id="7011" description="חלון וידאו">
 		  <animation description="slide-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-245,624" time="0">Conditional</animation>
 		  <animation description="slide-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="235,624" time="0">Conditional</animation>
-		  <animation description="54" condition="[Control.IsVisible(54) + StringCompare(Container.Viewmode,$LOCALIZE[31015])]" effect="slide" start="0,0" end="0,-252" delay="3000" time="700" reversible="false">Conditional</animation>
+		  <!--<animation description="54" condition="[Control.IsVisible(54) + StringCompare(Container.Viewmode,$LOCALIZE[31015])]" effect="slide" start="0,0" end="0,-252" delay="0" time="0" reversible="false">Conditional</animation>-->
 		  <animation description="zoom-Vertical_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="86,85.5" time="0">Conditional</animation>
 		  <animation description="zoom-Vertical_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="86,85.5" time="0">Conditional</animation>
 		  <!--<include condition="!StringCompare(Container.Viewmode,$LOCALIZE[31011]) + [!Control.IsVisible(11) | Window.IsVisible(MyPVRGuide.xml)]">Control_Pos6</include>-->
@@ -240,7 +242,7 @@
 		  <height>1080</height>
 		  <width>1920</width>
 		  <visible>Player.HasVideo</visible>
-		  <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31010])</visible>
+		  <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
 	  </control>
 	  <control type="videowindow" id="7011" description="חלון וידאו 51">
 		  <animation description="51-slide_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31010]) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1395,0" time="0">Conditional</animation>
@@ -250,6 +252,16 @@
 		  <width>470</width>
 		  <visible>Player.HasVideo</visible>
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31010])</visible>
+	  </control>
+	  
+	  <control type="videowindow" id="7011" description="חלון וידאו 59">
+		  <animation description="59-slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1131,0" time="0">Conditional</animation>
+		  <height>850</height>
+		  <posx>1130</posx>
+		  <posy>-116</posy>
+		  <width>790</width>
+		  <visible>Player.HasVideo</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
 	  </control>
 
 	  <control type="image" description="רקע שחור אחורי - מסתיר חלון וידאו על כל המסך">
@@ -276,7 +288,10 @@
 		<animation description="50_slide_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-240,320" time="0">Conditional</animation>
 		<animation description="50_slide_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="230,320" time="0">Conditional</animation>
 		<animation description="50_zoom" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="75,179" time="0">Conditional</animation>
-		<animation description="slide-others" condition="[Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyPVRChannels.xml)] + ![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)]" effect="slide" start="0,0" end="0,-552" time="0">Conditional</animation>
+		<animation description="59-slide_en" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="563,32" time="0">Conditional</animation>
+		<animation description="59-slide_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-563,32" time="0">Conditional</animation>
+		<animation description="59-slide_zoom" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016])" effect="zoom" center="auto" end="41.5,88" time="0">Conditional</animation>
+		<animation description="slide-others" condition="[Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyPVRChannels.xml)] + ![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(Container.Viewmode,$LOCALIZE[31016])" effect="slide" start="0,0" end="0,-552" time="0">Conditional</animation>
 		<animation description="slide-others" condition="Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)" effect="slide" start="0,0" end="0,-552" time="0">Conditional</animation>
 		
 		<!--Home.xml-->
@@ -305,7 +320,7 @@
 		<visible>Control.IsVisible(7011)</visible>
 		<visible>StringCompare(Container.Viewmode,$LOCALIZE[31010])</visible>
 	  </control>
-	  
+
 	  <include>ForwardingRewinding</include>
 	</control>
   </include>
@@ -332,6 +347,7 @@
 	<ondown condition="Control.IsVisible(56)">56</ondown>
 	<ondown condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])">57</ondown>		  
 	<ondown condition="StringCompare(Container.Viewmode,$LOCALIZE[31014])">58</ondown>
+	<ondown condition="StringCompare(Container.Viewmode,$LOCALIZE[31016])">59</ondown>
 	
 	<onleft condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Control.IsVisible(90000) + !SubString(Window(home).Property(ViewsSettings),900) + StringCompare(System.Language,Hebrew)">9000</onleft>
 	<onleft condition="[StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + Control.IsVisible(90000) + SubString(Window(home).Property(ViewsSettings),9001) + StringCompare(System.Language,Hebrew)">9001</onleft>

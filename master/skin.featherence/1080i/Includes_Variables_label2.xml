@@ -459,6 +459,8 @@
 	<value condition="!Skin.HasSetting(StrokeButton2)">$LOCALIZE[107]</value>
   </variable>
   
+  
+  
   <variable name="324label2">
     <value condition="!Skin.HasSetting(TopInformationSize)">$LOCALIZE[13278]</value>
 	<value condition="Skin.HasSetting(TopInformationSize)">BIGGER</value>
@@ -599,6 +601,11 @@
 	<value condition="!Skin.HasSetting(ButtonsDesignWidget)">$LOCALIZE[106]</value>
   </variable>
   
+  <variable name="453label2">
+    <value condition="!Skin.HasSetting(BiggerWidgetLabels)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(BiggerWidgetLabels)">$LOCALIZE[107]</value>
+  </variable>
+  
   <variable name="459label2">
     <value condition="!Skin.HasSetting(WidgetBackground)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(WidgetBackground)">$LOCALIZE[107]</value>
@@ -658,5 +665,10 @@
 	<value condition="Skin.String(TopBackgroundTexture)">TopBackgroundTexture</value>
 	<value condition="Skin.String(background)">background</value>
 	
+  </variable>
+  
+  <variable name="406label">
+    <value condition="!Skin.HasSetting(51over50)">$LOCALIZE[31524]: $LOCALIZE[31011]</value>
+	<value condition="Skin.HasSetting(51over50)">$LOCALIZE[31524]: $LOCALIZE[31010]</value>
   </variable>
 </includes>

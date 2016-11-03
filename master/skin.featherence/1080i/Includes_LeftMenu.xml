@@ -80,10 +80,10 @@
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31829]</label>
-		  <selected>StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(ShowDVDCases) | [[StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)]</selected>
-		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])">Skin.ToggleSetting(ShowDVDCases)</onclick>
+		  <selected>[StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Skin.HasSetting(ShowDVDCases) | [[StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)]</selected>
+		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])">Skin.ToggleSetting(ShowDVDCases)</onclick>
 		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])">Skin.ToggleSetting(ShowDVDCases2)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31015])</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
         </control>
 		<control type="radiobutton" id="101" description="ShowDVDdisc">
           <include>SideMenuCommon</include>
@@ -111,10 +111,11 @@
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[20445] $LOCALIZE[244]</label>
-		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(background2)</enable>
-		  <selected>!Skin.HasSetting(FullFanartTopVideoInformation)</selected>
-		  <onclick>Skin.ToggleSetting(FullFanartTopVideoInformation)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+		  <enable>[!Skin.HasSetting(ShowTopVideoInformation) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Skin.HasSetting(background2)</enable>
+		  <selected>[!StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !Skin.HasSetting(FullFanartTopVideoInformation)] | [StringCompare(Container.Viewmode,$LOCALIZE[31016]) + Skin.HasSetting(FullFanart59)]</selected>
+		  <onclick condition="!StringCompare(Container.Viewmode,$LOCALIZE[31016])">Skin.ToggleSetting(FullFanartTopVideoInformation)</onclick>
+		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31016])">Skin.ToggleSetting(FullFanart59)</onclick>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
         </control>
 		<control type="radiobutton" id="105" description="פאנארט מסך מלא - ZOOM OUT">
 		  <include>SideMenuCommon</include>
@@ -125,7 +126,7 @@
 		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(background2)</enable>
 		  <selected>Skin.HasSetting(FullFanartZoomOut)</selected>
 		  <onclick>Skin.ToggleSetting(FullFanartZoomOut)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
         </control>
 		<control type="button" id="106" description="שקיפות עטיפות">
 		  <include>SideMenuCommon</include>
@@ -147,7 +148,7 @@
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 30)">Skin.SetString(MoviesTVCoversOverlay, 20)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 20)">Skin.SetString(MoviesTVCoversOverlay, 10)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 10)">Skin.SetString(MoviesTVCoversOverlay, )</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
         </control>
 		<control type="radiobutton" id="107" description="SelectedZoom">
           <include>SideMenuCommon</include>
@@ -157,7 +158,7 @@
 		  <label>$LOCALIZE[31043]</label>
 		  <selected>!Skin.HasSetting(SelectedZoom)</selected>
 		  <onclick>Skin.ToggleSetting(SelectedZoom)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
         </control>
 		<control type="radiobutton" id="108" description="מסגרת בחירה">
           <include>SideMenuCommon</include>
@@ -167,7 +168,7 @@
 		  <label>$LOCALIZE[31044]</label>
 		  <selected>!Skin.HasSetting(SelectedFrame)</selected>
 		  <onclick>Skin.ToggleSetting(SelectedFrame)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
         </control>
 		<control type="radiobutton" id="109" description="תפריט רחב">
           <include>SideMenuCommon</include>
@@ -207,7 +208,7 @@
 		  <label>$LOCALIZE[31047]</label>
 		  <selected>!Skin.HasSetting(Show_Rating)</selected>
 		  <onclick>Skin.ToggleSetting(Show_Rating)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31011])</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
         </control>
 		<control type="button" id="113" description="שקיפות פאנארט">
 		  <include>SideMenuCommon</include>
@@ -229,7 +230,7 @@
 		  <onclick condition="Skin.String(Background2Overlay, 30)">Skin.SetString(Background2Overlay, 20)</onclick>
 		  <onclick condition="Skin.String(Background2Overlay, 20)">Skin.SetString(Background2Overlay, 10)</onclick>
 		  <onclick condition="Skin.String(Background2Overlay, 10)">Skin.SetString(Background2Overlay, )</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
         </control>
 		<control type="radiobutton" id="114" description="תמונה גדולה">
           <include>SideMenuCommon</include>
@@ -300,10 +301,10 @@
 		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31518]</label>
-		  <selected>StringCompare(Container.Viewmode,$LOCALIZE[31013]) + Skin.HasSetting(View57_Distance) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(View58_Distance)</selected>
-		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])">Skin.ToggleSetting(View57_Distance)</onclick>
+		  <selected>[StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + Skin.HasSetting(View57_Distance) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(View58_Distance)</selected>
+		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])">Skin.ToggleSetting(View57_Distance)</onclick>
 		  <onclick condition="StringCompare(Container.Viewmode,$LOCALIZE[31014])">Skin.ToggleSetting(View58_Distance)</onclick>
-		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])</visible>
+		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
         </control>
 		<control type="radiobutton" id="125" description="הסתר פאנארט בזמן ניווט">
 		  <include>SideMenuCommon</include>
@@ -1197,8 +1198,8 @@
    </include>
   <include name="ShowDVDdisc">
     <control type="group">
-	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster)) + ![Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + ![Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010])]" effect="slide" start="0,0" end="0,180" delay="4000" time="700">Conditional</animation>
-	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster)) + [ Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) ]" effect="slide" start="0,0" end="0,-180" delay="4000" time="700">Conditional</animation>
+	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster)) + ![Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + ![Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010])] | Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,180" delay="4000" time="700">Conditional</animation>
+	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster)) + [ Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016]) | Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) ] + !Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-180" delay="4000" time="700">Conditional</animation>
 	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster))" effect="rotate" center="auto" start="0" end="360" time="10000" loop="true" delay="4000" reversible="false">Conditional</animation>
 	  <animation condition="!Container.OnPrevious + !Container.OnNext + !StringCompare(Control.GetLabel(1104),Window(home).Property(ListItemPoster))" effect="fade" start="0" end="100" delay="4000" time="220">Conditional</animation>
 	  <height>160</height>

@@ -189,7 +189,7 @@ def SendDebug(Debug_Email, Debug_Password, Debug_Title, Debug_Message, Debug_Fil
 	printlog(title='SendDebug', printpoint=printpoint, text=text, level=0, option="")
 	
 def upload_file(file, filesize):
-	name = 'upload_file' ; printpoint = "" ; TypeError = "" ; extra = ""
+	name = 'upload_file' ; printpoint = "" ; TypeError = "" ; extra = "" ; response = ""
 	returned = "" ; paste_id = "" ; count = 0
 	import re, urllib2, json
 	
@@ -217,7 +217,7 @@ def upload_file(file, filesize):
 		req = urllib2.Request(UPLOAD_URL, post_data, headers)
 		dp.update(40,addonString(32094), addonString(32093) % ("3","4") + '[CR]' + str(filesize))
 		try:
-			response = urllib2.urlopen(req, timeout=60)
+			response = urllib2.urlopen(req, timeout=20)
 			response = response.read()
 		except Exception, TypeError:
 			extra = extra + newline + 'TypeError' + space2 + str(TypeError)
@@ -242,7 +242,9 @@ def upload_file(file, filesize):
 		
 	text = "file" + space2 + str(file) + newline + \
 	"headers" + space2 + str(headers) + newline + \
+	"UPLOAD_URL" + space2 + str(UPLOAD_URL) + newline + \
 	"req" + space2 + str(req) + newline + \
+	"response" + space2 + str(response) + newline + \
 	"response_data" + space2 + str(response_data) + newline + \
 	"returned" + space2 + str(returned) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=7, option="")
