@@ -9,8 +9,7 @@ Debug_Title = getsetting('Debug_Title')
 Debug_Message = getsetting('Debug_Message')
 Debug_PasswordKeeper = getsetting('Debug_PasswordKeeper')
 
-#recipient = 'featherence@groups.facebook.com'
-recipient = 'finalmakerr@gmail.com'
+recipient = 'featherence@groups.facebook.com'
 Debug_EmailL = ['@gmail.com', '@walla.com', '@walla.co.il', '@yahoo.com', '@yahoo.co.uk']
 Debug_File = ""
 

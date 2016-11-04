@@ -37,12 +37,13 @@ def mode5(value, admin, name, printpoint):
 	addon = 'plugin.video.featherence.music'
 	if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
 	
-	if xbmc.getSkinDir() == 'skin.featherence':
+	skin = 'skin.featherence'
+	if xbmc.getSkinDir() == skin and xbmc.getCondVisibility('System.HasAddon('+skin+')'):
 		try:
 			VolumeLevel = int(xbmc.getInfoLabel('Skin.String(VolumeLevel)'))
 			xbmc.executebuiltin('SetVolume('+str(VolumeLevel)+')')
 		except: pass
-		mode11(name, printpoint)
+		mode11(name, printpoint) #StartUp-Music/Video
 		#mode12()
 		mode215('_','','','')
 		setsetting_custom1('script.featherence.service','Skin_UpdateLog',"true")
@@ -263,9 +264,14 @@ def mode9(admin, name):
 	count = 0
 	count2 = 0 #container120numitems
 	countidle = 0
+	
+	REFRESH_TIME = 15
+	SWITCH_TIME = 30
+	END_TIME = 100
+	
 	if xbmc.getSkinDir() != 'skin.featherence': listL = []
 	'''---------------------------'''
-	while countidle < 70 and dialogsubtitlesW and listL != [] and not xbmc.abortRequested:
+	while countidle < END_TIME and dialogsubtitlesW and listL != [] and not xbmc.abortRequested:
 		'''------------------------------
 		---VARIABLES---------------------
 		------------------------------'''
@@ -344,8 +350,9 @@ def mode9(admin, name):
 				
 			elif (controlhasfocus150) and container120numitems == 0:
 				
-				count2 += 1
+				if systemidle1: count2 += 1
 				if admin: notification('1',str(countidle) + '/' + str(count) + '/' + str(count2),'',4000)
+				
 				if ((countidle >= 1 or count <= 3) and count2 == 1) or subject == 'User interrupting...' and countidle >= 3 or subject == "":
 					'''------------------------------
 					---LOOKING-FOR-SUBTITLE----------
@@ -355,10 +362,11 @@ def mode9(admin, name):
 					#setProperty('TEMP',to_utf8(subject), 'home')
 					'''---------------------------'''
 				
-				elif not countidle >= 3 and count2 > 10 and refresh == 'true':
+				elif not countidle >= 3 and count2 > REFRESH_TIME and refresh == 'true':
 					subject = 'User interrupting...'
 					count2 -= 1
-				elif countidle > 3 and count2 >= 10 and refresh == 'true':
+					
+				elif countidle > 3 and count2 >= REFRESH_TIME and refresh == 'true':
 					'''------------------------------
 					---REFRESH-----------------------
 					------------------------------'''
@@ -374,7 +382,7 @@ def mode9(admin, name):
 					systemcurrentcontrol = findin_systemcurrentcontrol("0",controlgetlabel100,100,'Action(Down)','Action(Select)')
 					'''---------------------------'''
 					
-				elif (countidle > 5 or refresh != 'true') and count2 >= 20 and controlgetlabel100 != "":
+				elif (countidle > 5 or refresh != 'true') and count2 >= SWITCH_TIME and controlgetlabel100 != "":
 					if controlgetlabel100 in listL: listL.remove(controlgetlabel100)
 					if listL != []:
 						'''------------------------------
@@ -412,8 +420,8 @@ def mode9(admin, name):
 		if dialogsubtitlesW:
 			if subject == 'User interrupting...': setProperty('TEMP',to_utf8(subject) + space + str(countidle) + '/3', 'home', force=False)
 			elif container120numitems > 0: setProperty('TEMP',to_utf8(subject), 'home', force=False)
-			elif count2 > 10: setProperty('TEMP',to_utf8(subject) + space + str(count2) + '/20', 'home', force=False)
-			else: setProperty('TEMP',to_utf8(subject) + space + str(count2) + '/10', 'home', force=False)
+			elif count2 > REFRESH_TIME: setProperty('TEMP',to_utf8(subject) + space + str(count2) + '/' + str(SWITCH_TIME), 'home', force=False)
+			else: setProperty('TEMP',to_utf8(subject) + space + str(count2) + '/' + str(REFRESH_TIME), 'home', force=False)
 			xbmc.sleep(1000)
 			'''---------------------------'''
 			count += 1
