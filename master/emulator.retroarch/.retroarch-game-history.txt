@@ -1,3 +1,6 @@
+C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_1P\digdug.zip
+C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
+MAME 2014
 C:\Users\finalmakerr\AppData\Roaming\Kodi\userdata\addon_data\emulator.retroarch\rom\Arcade\_FUN\bublbob2.zip
 C:\Users\finalmakerr\AppData\Roaming\Kodi\addons\emulator.retroarch\cores\mame_libretro.dll
 MAME 2014
