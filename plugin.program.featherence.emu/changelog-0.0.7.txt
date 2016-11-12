@@ -2,6 +2,12 @@
 WIP - WORK IN PROGRESS
 ------------------------
 
+------------------------
+Featherence Emu v0.0.7 (12-Nov-16)
+------------------------
+- Added auto installation script for Featherence Emu Console addon.
+- Arcade FUN category is now available for download.
+- Minor update of download progress notification.
 
 ------------------------
 Featherence Emu v0.0.6 (17-Jun-16)
