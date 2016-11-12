@@ -20,18 +20,18 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 			if category == 'Featherence_segamastersystem':
 				file = "Sega Master System.zip"
 				fileID = getfileID(file)
-				DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Master%20System.zip?dl=1", file, temp_path, rom_path)
+				DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Master%20System.zip?dl=1", file, temp_path, rom_path, percentinfo=5)
 		
 			elif category == 'Featherence_turbografx16':
 				file = "TurboGrafx 16.zip"
 				fileID = getfileID(file)
-				DownloadFile("https://www.dropbox.com/s/"+fileID+"/TurboGrafx%2016.zip?dl=1", file, temp_path, rom_path)
+				DownloadFile("https://www.dropbox.com/s/"+fileID+"/TurboGrafx%2016.zip?dl=1", file, temp_path, rom_path, percentinfo=5)
 				
 				
 			elif category == 'Featherence_segagenesis':
 				file = "Sega Genesis.zip"
 				fileID = getfileID(file)
-				DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Genesis.zip?dl=1", file, temp_path, rom_path)
+				DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Genesis.zip?dl=1", file, temp_path, rom_path, percentinfo=5)
 			
 			elif category == 'Featherence_nintendo':
 				file = "Nintendo.zip"
@@ -66,11 +66,11 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					fileID = getfileID(file)
 					if fileID != "":
 						filename__ = filename_.replace(" ", "%20")
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path)
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 					else:
 						file = "Arcade_1P.zip"
 						fileID = getfileID(file)
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_1P.zip?dl=1", file, temp_path, rom_path)
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_1P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 				
 				elif launcher == 'Featherence_arcade2P':
 					filename_ = filename.replace(':',"")
@@ -78,16 +78,16 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					fileID = getfileID(file)
 					if fileID != "":
 						filename__ = filename_.replace(" ", "%20")
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path)
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 					else:
 						file = "Arcade_2P.zip"
 						fileID = getfileID(file)
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_2P.zip?dl=1", file, temp_path, rom_path)
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_2P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 					
 				elif launcher == 'Featherence_arcade3P':
 					file = "Arcade_3P.zip"
 					fileID = getfileID(file)
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_3P.zip?dl=1", file, temp_path, rom_path)
+					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_3P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 				
 				elif launcher == 'Featherence_arcade4P':
 					filename_ = filename.replace(':',"")
@@ -95,11 +95,11 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					fileID = getfileID(file)
 					if fileID != "":
 						filename__ = filename_.replace(" ", "%20")
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_4P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path)
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_4P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 					else:
 						file = "Arcade_4P.zip"
 						fileID = getfileID(file)
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_4P.zip?dl=1", file, temp_path, rom_path)
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_4P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 				
 				elif launcher == 'Featherence_arcadeGEAR':
 					filename_ = filename.replace(':',"")
@@ -107,11 +107,23 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					fileID = getfileID(file)
 					if fileID != "":
 						filename__ = filename_.replace(" ", "%20")
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_GEAR_" + filename__ + ".zip?dl=1", file, temp_path, rom_path)
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_GEAR_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 					else:
 						file = "Arcade_GEAR.zip"
 						fileID = getfileID(file)
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_GEAR.zip?dl=1", file, temp_path, rom_path)
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_GEAR.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+				
+				elif launcher == 'Featherence_arcadeFUN':
+					filename_ = filename.replace(':',"")
+					file = "Arcade_FUN_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_FUN_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else:
+						file = "Arcade_FUN.zip"
+						fileID = getfileID(file)
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_FUN.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 				
 				elif launcher == 'Featherence_arcadeADULT':
 					filename_ = filename.replace(':',"")
@@ -120,11 +132,11 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					notification('1',file,'',1000)
 					if fileID != "":
 						filename__ = filename_.replace(" ", "%20")
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_ADULT" + filename__ + ".zip?dl=1", file, temp_path, rom_path)
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_ADULT" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 					else:
 						file = "Arcade_ADULT.zip"
 						fileID = getfileID(file)
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_ADULT.zip?dl=1", file, temp_path, rom_path)
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_ADULT.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 			
 			elif category == 'Featherence_nintendods':
 				if launcher == 'Featherence_nintendods1P':
@@ -134,7 +146,7 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					else: file = "Nintendo DS_1P.zip"
 					fileID = getfileID(file)
 					filename__ = file.replace(" ", "%20")
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/" + filename__ + ".zip?dl=1", file, temp_path, rom_path)
+					DownloadFile("https://www.dropbox.com/s/"+fileID+"/" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 					
 			elif category == 'Featherence_playstation':
 				if launcher == 'Featherence_playstation1P':
@@ -142,21 +154,21 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					file = "Sony Playstation_1P_" + filename_ + ".zip"
 					fileID = getfileID(file)
 					filename__ = filename_.replace(" ", "%20")
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sony%20Playstation_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path)
+					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sony%20Playstation_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 				
 				elif launcher == 'Featherence_playstation2P':
 					filename_ = filename.replace(':',"")
 					file = "Sony Playstation_2P_" + filename_ + ".zip"
 					fileID = getfileID(file)
 					filename__ = filename_.replace(" ", "%20")
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sony%20Playstation_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path)
+					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sony%20Playstation_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 				
 				elif launcher == 'Featherence_playstation4P':
 					filename_ = filename.replace(':',"")
 					file = "Sony Playstation_4P_" + filename_ + ".zip"
 					fileID = getfileID(file)
 					filename__ = filename_.replace(" ", "%20")
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sony%20Playstation_4P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path)
+					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sony%20Playstation_4P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 	
 	text = "category" + space2 + str(category) + newline + \
 	"launcher" + space2 + str(launcher) + newline + \
@@ -174,12 +186,13 @@ def downloads2(file):
 def startup():
 	setProperty('emu_startup', 'true', type="home")
 	returned, value = getRandom(0, min=0, max=100, percent=10)
-	notification(addonName + space + 'startup',str(value),'',1000)
+	#notification(addonName + space + 'startup',str(value),'',1000)
 	if returned == 'ok': value = True
 	else: value = False
 	chmod()
 	copyconfig(force=False)
 	copyarcade(force=value)
+	installaddon('emulator.retroarch', update=True)
 	
 def chmod():
 	if systemplatformlinux:
@@ -376,9 +389,9 @@ def getfileID(file):
 		fileName_L.append('Source 2')
 		
 	elif file == "Arcade_FUN.zip":
-		fileID_L.append('6s85n6ick5gd2n1') #user34
-		fileID_L.append('lgkhy137rwngwc6') #htpt
-		fileID_L.append('5yzfm7c8omyz48g') #info
+		fileID_L.append('p64howpq8a0p3yy') #user23
+		fileID_L.append('1q8f4gv6ra6ritp') #htpt
+		fileID_L.append('xp1k65cp1f9ltai') #info
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
@@ -629,6 +642,7 @@ def copyarcade(force=False):
 	path = os.path.join(rom_path, 'Arcade', '')
 	if not os.path.exists(os.path.join(emulatordata_path,'save','mame', 'cfg', '')) and os.path.exists(os.path.join(emulator_path,'save','mame', 'cfg', '')):
 		printpoint = printpoint + '1'
+		setconfig(force=True)
 	elif not os.path.exists(path): printpoint = printpoint + '8'
 	elif not os.path.exists(os.path.join(emulatordata_path,'save','mame', 'diff', '')) or not os.path.exists(os.path.join(emulatordata_path,'save','mame', 'nvram', '')):
 		printpoint = printpoint + '2'
