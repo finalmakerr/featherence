@@ -157,7 +157,6 @@ staticL.append('content_directory') ; static_L.append(rom_path)
 staticL.append('rgui_browser_directory') ; static_L.append(rom_path)
 staticL.append('overlay_directory') ; static_L.append(config_path)
 
-
 staticL.append('config_save_on_exit') ; static_L.append('true')
 staticL.append('fps_show') ; static_L.append('false')
 staticL.append('core_specific_config')
@@ -173,7 +172,8 @@ if systemplatformwindows:
 else:
 	static_L.append('linuxraw')
 
-
+filter_games =getsetting('filter_games')
+delete_games =getsetting('delete_games')
 download1L = ['Arcade', 'Sony Playstation']
 
 emu_startup = xbmc.getInfoLabel('Window(home).Property(emu_startup)')

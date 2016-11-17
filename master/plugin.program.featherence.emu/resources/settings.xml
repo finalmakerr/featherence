@@ -2,7 +2,9 @@
 <settings>
 
     <category label="30124">
-        <setting label="30175" type="bool" id="lirc_state" default="true" />
+        <setting label="30104" type="bool" id="filter_games" default="false" visible="Skin.HasSetting(Admin)" />
+        <setting label="30105" type="bool" id="delete_games" default="false" visible="" />
+		<setting label="30175" type="bool" id="lirc_state" default="true" />
         <setting label="30180" type="slider" id="start_tempo" default="1000" range="0,100,15000" option="int"/>
     </category>
 

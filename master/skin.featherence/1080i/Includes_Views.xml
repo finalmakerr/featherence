@@ -2,6 +2,7 @@
 <includes>
   <include name="ViewDesign_50" description="Side List">
     <control type="group" description="">
+	  <animation description="Slide-Panel" condition="Skin.HasSetting(TopInformationSize)" effect="slide" start="0,0" end="0,10" time="0" reversible="false">Conditional</animation>
 	  <visible>Control.IsVisible(50)</visible>
       <control type="group">
 	    <animation condition="Skin.HasSetting(View50_SideVideoInformation)" effect="zoom" center="0,1150" start="100,111" end="100,111" time="0" reversible="false">Conditional</animation>
@@ -912,7 +913,6 @@
   <include name="ViewDesign_57_FocusedLayout">
 	<include>AutoView</include>
 	<control type="group">
-		<include>Slide2.3</include>
 		<animation condition="!Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View57_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 		
 		<animation description="מרווח עטיפות+זום" condition="!Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="126.5,122" reversible="true">Conditional</animation>
@@ -1049,9 +1049,15 @@
 	  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
 	  <include>Background_Distance</include>
       <control type="group">
-		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View57_Distance) + !StringCompare(System.Language,Hebrew)" effect="slide" end="-12,12" reversible="true">Conditional</animation>
-		<animation description="מרווח_slide_he" condition="Skin.HasSetting(View57_Distance) + StringCompare(System.Language,Hebrew)" effect="slide" end="-12,12" reversible="true">Conditional</animation>
-		<animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" end="773,0">Conditional</animation>
+		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View57_Distance) + [!StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" end="-12,12" reversible="true">Conditional</animation>
+		<animation description="מרווח_slide_he" condition="Skin.HasSetting(View57_Distance) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="-12,12" reversible="true">Conditional</animation>
+
+		<animation description="slide_he" condition="[StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="773,0">Conditional</animation>
+		
+		<animation description="slide_en+" condition="!StringCompare(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
+		<animation description="slide_he+" condition="StringCompare(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
+		
+		
 		<control type="panel" id="59">
           <posx>40</posx>
           <posy>35</posy>
@@ -1063,7 +1069,9 @@
         </control>
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 1">
-          <animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" end="773,0">Conditional</animation>
+          <animation description="slide_he" condition="[StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="773,0">Conditional</animation>
+		  <animation description="slide_en+" condition="!StringCompare(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
+		  <animation description="slide_he+" condition="StringCompare(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
 		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
 		  <visible>!Container.Content(episodes)</visible>
 		  <include>TrailerFade</include>
@@ -1076,7 +1084,9 @@
 		  <include>Trailer_59A</include>
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 2">
-          <animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" end="773,0">Conditional</animation>
+          <animation description="slide_he" condition="[StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="773,0">Conditional</animation>
+		  <animation description="slide_en+" condition="!StringCompare(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
+		  <animation description="slide_he+" condition="StringCompare(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
 		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
 		  <visible>!Container.Content(episodes)</visible>
 		  <include>TrailerFade</include>
@@ -1089,7 +1099,9 @@
 		  <include>Trailer_59B</include>
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 3">
-		  <animation description="slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" end="773,0">Conditional</animation>
+		  <animation description="slide_he" condition="[StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="773,0">Conditional</animation>
+		  <animation description="slide_en+" condition="!StringCompare(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
+		  <animation description="slide_he+" condition="StringCompare(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
           <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
 		  <visible>!Container.Content(episodes)</visible>
 		  <include>TrailerFade</include>
@@ -1229,7 +1241,6 @@
 			<animation description="מרווח פוסטרים + זום" condition="Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="125,123.5" reversible="true">Conditional</animation>
 			<animation description="זום 54" condition="StringCompare(Container.Viewmode,$LOCALIZE[31015]) + !Skin.HasSetting(SelectedZoom)" effect="slide" end="0,-12">Conditional</animation>
 			
-			<include>Slide2.3</include>
 			<include>View58_Common</include>
 			<control type="image" description="סמן">
 			 <posx>3</posx>

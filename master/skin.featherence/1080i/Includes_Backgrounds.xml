@@ -131,7 +131,7 @@
 	  <height>552</height>
 	  <width>1920</width>
 	  <control type="group">
-	    <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
+	    <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !Window.IsVisible(SkinSettings.xml) + !Window.IsVisible(Settings.xml) + !Window.IsVisible(SettingsCategory.xml)</visible>
 	    <include>VideoPlayerWindow</include>
 	  </control>
 	  <include>MainBackground3</include>
@@ -182,7 +182,7 @@
 		<visible>false</visible>
 	  </control>
 	  <control type="group">
-	    <visible>StringCompare(Container.Viewmode,$LOCALIZE[31010]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
+	    <visible>StringCompare(Container.Viewmode,$LOCALIZE[31010]) | StringCompare(Container.Viewmode,$LOCALIZE[31016]) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)</visible>
 	    <include>VideoPlayerWindow</include>
 	  </control>
 	</control>   
@@ -243,6 +243,7 @@
 		  <width>1920</width>
 		  <visible>Player.HasVideo</visible>
 		  <visible>!StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
+		  <visible>![Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)]</visible>
 	  </control>
 	  <control type="videowindow" id="7011" description="חלון וידאו 51">
 		  <animation description="51-slide_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31010]) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1395,0" time="0">Conditional</animation>
@@ -262,6 +263,16 @@
 		  <width>790</width>
 		  <visible>Player.HasVideo</visible>
 		  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31016])</visible>
+	  </control>
+	  
+	  <control type="videowindow" id="7011" description="חלון וידאו הגדרות">
+		  <animation description="set-slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1455,0" time="0">Conditional</animation>
+		  <height>463</height>
+		  <posx>1457</posx>
+		  <posy>300</posy>
+		  <width>463</width>
+		  <visible>Player.HasVideo</visible>
+		  <visible>Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)</visible>
 	  </control>
 
 	  <control type="image" description="רקע שחור אחורי - מסתיר חלון וידאו על כל המסך">
@@ -291,10 +302,16 @@
 		<animation description="59-slide_en" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="563,32" time="0">Conditional</animation>
 		<animation description="59-slide_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-563,32" time="0">Conditional</animation>
 		<animation description="59-slide_zoom" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016])" effect="zoom" center="auto" end="41.5,88" time="0">Conditional</animation>
+		
+		<animation description="set-slide_en" condition="[Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="729,535" time="0">Conditional</animation>
+		<animation description="set-slide_he" condition="[Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-729,535" time="0">Conditional</animation>
+		<animation description="set-slide_zoom" condition="[Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)]" effect="zoom" center="auto" end="24,50" time="0">Conditional</animation>
+		
 		<animation description="slide-others" condition="[Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyPVRChannels.xml)] + ![StringCompare(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !StringCompare(Container.Viewmode,$LOCALIZE[31016])" effect="slide" start="0,0" end="0,-552" time="0">Conditional</animation>
-		<animation description="slide-others" condition="Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)" effect="slide" start="0,0" end="0,-552" time="0">Conditional</animation>
 		
 		<!--Home.xml-->
+		<animation description="Slide-Panel" condition="[[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | [[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() + Player.HasVideo]]]" effect="slide" start="0,0" end="0,5" time="0" reversible="false">Conditional</animation>
+		<animation description="Slide-Horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)] + Player.HasVideo" effect="slide" start="0,0" end="0,5" time="0" reversible="false">Conditional</animation>
 		<include condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)]">Control_Pos33</include>
 		<!--Nav.xml-->
 		<posy>27</posy>
@@ -1118,7 +1135,6 @@
 	<value description="מזג אוויר" condition="Window.IsVisible(MyWeather.xml)">$VAR[background97]</value>
 	<value description="משחקים" condition="Window.IsVisible(MyPrograms.xml) + SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher)">$VAR[background98]</value>
 	<value description="דוקו" condition="[SubString(Container.FolderPath,plugin://plugin.video.movixws/?) + SubString(Container.FolderPath,name=Documentary)]">$VAR[background99]</value>
-	<value condition="Skin.HasSetting(PosterFanart) + StringCompare(Container.Viewmode,$LOCALIZE[31011])">$INFO[ListItem.Thumb]</value>
 	<value condition="Skin.HasSetting(PosterFanart) + StringCompare(Container.Viewmode,$LOCALIZE[31011])">$INFO[ListItem.Thumb]</value>
   </variable>
   

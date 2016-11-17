@@ -58,6 +58,7 @@
 	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
+	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
   </include>
   
   <include name="Trailer_51">
@@ -110,6 +111,7 @@
 	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
+	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
   </include>
   
   <include name="Trailer_50A">
@@ -211,6 +213,7 @@
 	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
+	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
   </include>
   
   <include name="View54_Boat_Itemlayout_Animation">
@@ -240,6 +243,7 @@
 	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
+	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
   </include>
   
   <include name="Trailer_57A">
@@ -436,19 +440,7 @@
 	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-  </include>
-
-  <include name="Trailer_58_">
-    <animation condition="Container(58).Scrolling | Container(58).OnScrollNext | Container(58).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
-	<animation condition="!Container(58).Scrolling + !Container(58).OnScrollNext + !Container(58).OnScrollPrevious" effect="fade" start="0" end="100" delay="580" time="1000" reversible="false">Conditional</animation>
-	<height>70</height>
-	<posx>55</posx>
-	<posy>24</posy>
-	<width>70</width>
-	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
-	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
-	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
-	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
+	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
   </include>
   
   <include name="Trailer_58A">
@@ -505,6 +497,20 @@
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(58).Position(9)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 	  <include>Trailer_58_</include>
     </control>
+  </include>
+  
+  <include name="Trailer_58_">
+    <animation condition="Container(58).Scrolling | Container(58).OnScrollNext | Container(58).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
+	<animation condition="!Container(58).Scrolling + !Container(58).OnScrollNext + !Container(58).OnScrollPrevious" effect="fade" start="0" end="100" delay="580" time="1000" reversible="false">Conditional</animation>
+	<height>70</height>
+	<posx>55</posx>
+	<posy>24</posy>
+	<width>70</width>
+	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
+	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
+	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
+	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
   </include>
   
   <include name="VisibilityInfoIcon">

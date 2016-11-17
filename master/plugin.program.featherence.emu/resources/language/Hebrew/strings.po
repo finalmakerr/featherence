@@ -13,6 +13,30 @@ msgctxt "#30100"
 msgid "%s in-game keys"
 msgstr "%s מספר מזהה משחק"
 
+msgctxt "#30101"
+msgid "Delete Game"
+msgstr "מחיקת משחק"
+
+msgctxt "#30102"
+msgid "Delete %s?"
+msgstr "למחוק את %s?"
+
+msgctxt "#30103"
+msgid "Are you sure?"
+msgstr "האם אתה בטוח?"
+
+msgctxt "#30104"
+msgid "Show only existing games"
+msgstr "הצג רק משחקים קיימים"
+
+msgctxt "#30105"
+msgid "Allow game deletion"
+msgstr "אפשר מחיקת משחקים"
+
+msgctxt "#30106"
+msgid ""
+msgstr ""
+
 msgctxt "#30124"
 msgid "Miscellaneous"
 msgstr "שונות"

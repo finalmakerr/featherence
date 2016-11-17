@@ -19,15 +19,22 @@
 	  <animation description="SideVideoInformation51_he" condition="Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="893,240" time="0">Conditional</animation>
 	  <!--<animation description="SideVideoInformation51_zoom" condition="Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="auto" start="93,100" end="93,100" time="0">Conditional</animation>-->
 	  
-	  <animation description="SideVideoInformation59_en" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !Window.IsVisible(DialogVideoInfo.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="670,575" time="0">Conditional</animation>
-	  <animation description="SideVideoInformation59_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-660,575" time="0">Conditional</animation>
+	  <animation description="SideVideoInformation59_en" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !Window.IsVisible(DialogVideoInfo.xml) + [!StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" start="0,0" end="670,575" time="0">Conditional</animation>
+	  <animation description="SideVideoInformation59_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !Window.IsVisible(DialogVideoInfo.xml) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="-660,575" time="0">Conditional</animation>
+	  
+	  <animation description="slide_en+" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !StringCompare(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
+	  <animation description="slide_he+" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + StringCompare(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
 	  
 	  <include>TopVideoInformation_Frame</include>
 	  
 	  <control type="group" description="משפט סרט/נצפו/פרק+עונה">
-		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="10,0">Conditional</animation>
-		<animation description="SideVideoInformation50/59_en" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-200,685" time="0">Conditional</animation>
-		<animation description="SideVideoInformation50/59_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="202,685" time="0">Conditional</animation>
+		<animation description="Slide59_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="10,0">Conditional</animation>
+		<animation description="SlideOthers_he" condition="!StringCompare(Container.Viewmode,$LOCALIZE[31016]) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="10,0">Conditional</animation>
+		<animation description="SideVideoInformation50_en" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-200,685" time="0">Conditional</animation>
+		<animation description="SideVideoInformation50_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="202,685" time="0">Conditional</animation>
+		
+		<animation description="SideVideoInformation59_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [!StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" start="0,0" end="-200,685" time="0">Conditional</animation>
+		<animation description="SideVideoInformation59_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="202,685" time="0">Conditional</animation>
 		<animation description="SideVideoInformation51" condition="Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="-200,685" time="0">Conditional</animation>
 		<include>Fade4</include>
         <posy>-482</posy>
@@ -66,7 +73,8 @@
         </control>
 		<control type="grouplist" description="אמצע פרטים נוספים">
 		  <visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
-		  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="40,0">Conditional</animation>
+		  <animation description="Slide59_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="40,0">Conditional</animation>
+		  <animation description="SlideOthers_he" condition="!StringCompare(Container.Viewmode,$LOCALIZE[31016]) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="40,0">Conditional</animation>
 		  <posx>680</posx>
 		  <posy>45</posy>
 		  <width>520</width>
@@ -117,8 +125,11 @@
 	  </control>
 	  <control type="group" description="שם הוידאו">
 	    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="10,0">Conditional</animation>
-		<animation description="SideVideoInformation50/59_en" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-205,685" time="0">Conditional</animation>
-		<animation description="SideVideoInformation50/59_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="194,685" time="0">Conditional</animation>
+		<animation description="SideVideoInformation50_en" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-205,685" time="0">Conditional</animation>
+		<animation description="SideVideoInformation50_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="194,685" time="0">Conditional</animation>
+		
+		<animation description="SideVideoInformation59_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [!StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" start="0,0" end="-205,685" time="0">Conditional</animation><animation description="SideVideoInformation50/59_en" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-205,685" time="0">Conditional</animation>
+		<animation description="SideVideoInformation59_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="194,685" time="0">Conditional</animation>
 		<include>Fade4</include>
 		<visible>!IsEmpty(Control.GetLabel(1108))</visible>
 		<control type="label" id="1108" description="שם">
@@ -154,9 +165,14 @@
         </control>
 	  </control>
 	  <control type="group" description="Right side">
-	      <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="-960,0">Conditional</animation>
-		  <animation description="SideVideoInformation50/59_en" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-700,810" time="0">Conditional</animation>
-		  <animation description="SideVideoInformation50/59_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="690,810" time="0">Conditional</animation>
+	      <animation description="Slide59_he" condition="[StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)] + StringCompare(Container.Viewmode,$LOCALIZE[31016])" effect="slide" start="0,0" end="-1000,0">Conditional</animation>
+	      <animation description="SlideOthers_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml) + !StringCompare(Container.Viewmode,$LOCALIZE[31016])" effect="slide" start="0,0" end="-1000,0">Conditional</animation>
+		  
+		  <animation description="SideVideoInformation50_en" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-700,810" time="0">Conditional</animation>
+		  <animation description="SideVideoInformation50_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="690,810" time="0">Conditional</animation>
+		  
+		  <animation description="SideVideoInformation59_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [!StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" start="0,0" end="-700,810" time="0">Conditional</animation>
+		  <animation description="SideVideoInformation59_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="690,810" time="0">Conditional</animation>
 		  <animation description="SideVideoInformation51_en" condition="Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !Window.IsVisible(DialogVideoInfo.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-685,810" time="0">Conditional</animation>
 		  <animation description="SideVideoInformation51_he" condition="Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="265,810" time="0">Conditional</animation>
 		  <posx>-20</posx>
@@ -166,13 +182,16 @@
 			<posy>-448</posy>	      
 			<visible>!SubString(Container.FolderPath,plugin://)</visible>
 			<visible>!Skin.HasSetting(EpisodeFanart)</visible>
-		    <animation description="SideVideoInformation50/59_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1710,0" time="0">Conditional</animation>
+		    <animation description="SideVideoInformation50_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1710,0" time="0">Conditional</animation>
+		    <animation description="SideVideoInformation59_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="-1710,0" time="0">Conditional</animation>
 		    <animation description="SideVideoInformation51_he" condition="[Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-2755,0" time="0">Conditional</animation>
+			
 			<animation description="51_side_en" condition="[Control.IsVisible(51) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(View51_SideVideoInformation)] + !Control.HasFocus(7017) + !Control.HasFocus(60) + !Window.IsVisible(DialogVideoInfo.xml) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + !StringCompare(System.Language,Hebrew)" effect="slide" tween="Cubic" easing="out" start="580,0" end="0,0" delay="700" time="1500" reversible="false">Conditional</animation>
 		    <animation description="51_side_he" condition="[Control.IsVisible(51) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(View51_SideVideoInformation)] + !Control.HasFocus(7017) + !Control.HasFocus(60) + !Window.IsVisible(DialogVideoInfo.xml) + [!IsEmpty(Control.GetLabel(1106)) | !IsEmpty(Control.GetLabel(1105))] + StringCompare(System.Language,Hebrew)" effect="slide" tween="Cubic" easing="out" start="-580,0" end="0,0" delay="700" time="1500" reversible="false">Conditional</animation>
 		    <!--<animation description="SideVideoInformation50/59_zoom" condition="Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="auto" start="145,280" end="145,280" time="0">Conditional</animation>-->
 			<control type="image" description="מסגרת">
-			  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="-500,0">Conditional</animation>
+			  <animation description="Slide59_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="-500,0">Conditional</animation>
+			  <animation description="SlideOthers_he" condition="!StringCompare(Container.Viewmode,$LOCALIZE[31016]) + StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="-500,0">Conditional</animation>
 			  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" start="100,100" end="100,270">Conditional</animation>
 			  <animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="100,45">Conditional</animation>
 			  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-5">Conditional</animation>
@@ -220,8 +239,12 @@
 		  </control>
 		  
 		  <control type="group" description="">
-			  <animation description="SideVideoInformation50/59_zoom" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="1300,-550" start="110,120" end="110,120" time="0" reversible="false">Conditional</animation>
-			  <animation description="SideVideoInformation50/59_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-22,0" time="0">Conditional</animation>
+			  <animation description="SideVideoInformation50_zoom" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="1300,-550" start="110,120" end="110,120" time="0" reversible="false">Conditional</animation>
+			  <animation description="SideVideoInformation50_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-22,0" time="0">Conditional</animation>
+			  
+			  <animation description="SideVideoInformation59_zoom" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="1300,-550" start="110,120" end="110,120" time="0" reversible="false">Conditional</animation>
+			  <animation description="SideVideoInformation59_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="-22,0" time="0">Conditional</animation>
+			  
 			  <!--<animation description="SideVideoInformation51_zoom" condition="Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="1300,-551" start="110,120" end="110,120" time="0" reversible="false">Conditional</animation>
 			  <animation description="SideVideoInformation51_he" condition="Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-22,0" time="0">Conditional</animation>-->
 
@@ -257,7 +280,8 @@
 			  <control type="group" description="עונה ופרק/יוצר הרחבה">
 				<posx>1240</posx>
 				<posy>-483</posy>
-				<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="15,0">Conditional</animation>
+				<animation description="Slide59_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="15,0">Conditional</animation>
+				<animation description="SlideOthers_he" condition="!StringCompare(Container.Viewmode,$LOCALIZE[31016]) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="15,0">Conditional</animation>
 				<!--<visible>!IsEmpty(Control.GetLabel(1480))</visible>-->
 				<control type="label" id="1480" description="עונה ופרק">
 				  <align>left</align>
@@ -356,7 +380,8 @@
 				<posx>1165</posx>
 				<posy>0</posy>
 				<control type="label" id="1106" description="ג'אנר">
-				  <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="15,0">Conditional</animation>
+				  <animation description="Slide59_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="15,0">Conditional</animation>
+				  <animation description="SlideOthers_he" condition="!StringCompare(Container.Viewmode,$LOCALIZE[31016]) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="15,0">Conditional</animation>
 				  <posx>65</posx>
 				  <posy>-568</posy>
 				  <width>320</width>
@@ -500,8 +525,11 @@
 		  </control>
 	  </control>
 	  <control type="group" description="פרטי וידאו (1105)">
-		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="1250,0">Conditional</animation>
-		<animation description="SideVideoInformation50_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1070,0" time="0" reversible="false">Conditional</animation>
+		<animation description="Slide59_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="1250,0">Conditional</animation>
+		<animation description="SlideOthers_he" condition="!StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !Window.IsVisible(MyWeather.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1250,0">Conditional</animation>
+		
+		<animation description="SideVideoInformation50_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1070,0" time="0" reversible="false">Conditional</animation>
+		<animation description="SideVideoInformation59_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="-1070,0" time="0" reversible="false">Conditional</animation>
 		<animation description="SideVideoInformation51_he" condition="[Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1260,0" time="0" reversible="false">Conditional</animation>
 		<!--<animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="0,0" start="100,100" end="100,120" time="0">Conditional</animation>-->
 		<include>Fade4</include>
@@ -549,10 +577,15 @@
 	  </control>
 	  
 	   <control type="group" description="פוסטר">
-		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1690,0">Conditional</animation>
+		<animation description="SlideOthers_he" condition="!StringCompare(Container.Viewmode,$LOCALIZE[31016]) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1690,0">Conditional</animation>
+		<animation description="Slide59_he" condition="StringCompare(Container.Viewmode,$LOCALIZE[31016]) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="-1690,0">Conditional</animation>
 		<animation condition="Window.IsVisible(MyWeather.xml)" effect="zoom" start="100,100" end="150,150" time="3000">Conditional</animation>
-		<animation description="SideVideoInformation50/59_en" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-670,670" time="0">Conditional</animation>
-		<animation description="SideVideoInformation50/59_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="655,670" time="0">Conditional</animation>
+		<animation description="SideVideoInformation50_en" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-670,670" time="0">Conditional</animation>
+		<animation description="SideVideoInformation50_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="655,670" time="0">Conditional</animation>
+		
+		<animation description="SideVideoInformation59_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [!StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" start="0,0" end="-670,670" time="0">Conditional</animation>
+		<animation description="SideVideoInformation59_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="655,670" time="0">Conditional</animation>
+		
 		<animation description="SideVideoInformation51_en" condition="Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !Window.IsVisible(DialogVideoInfo.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-910,505" time="0" reversible="true">Conditional</animation>
 		<animation description="SideVideoInformation51_he" condition="Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="775,505" time="0" reversible="true">Conditional</animation>
 		<animation description="SideVideoInformation51_zoom" condition="Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010]) + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="auto" start="90,90" end="90,90" time="0" reversible="false">Conditional</animation>
@@ -685,11 +718,13 @@
 		  <visible>![Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + ![Skin.HasSetting(View51_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31010])] | Window.IsVisible(DialogVideoInfo.xml)</visible>
 	  </control>
 	  <control type="image" description="מסגרת - מיוחד /SideVideoInformation50/59">
-		  <animation description="SideVideoInformation50/59_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011]) | StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="190,0" time="0">Conditional</animation>
+		  <animation description="SideVideoInformation50_he" condition="[Skin.HasSetting(View50_SideVideoInformation) + StringCompare(Container.Viewmode,$LOCALIZE[31011])] + !Window.IsVisible(DialogVideoInfo.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="182,0" time="0">Conditional</animation>
+		  <animation description="SideVideoInformation59_en" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [!StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" start="0,0" end="-8,0" time="0">Conditional</animation>
+		  <animation description="SideVideoInformation59_he" condition="[StringCompare(Container.Viewmode,$LOCALIZE[31016])] + !Window.IsVisible(DialogVideoInfo.xml) + [StringCompare(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="190,0" time="0">Conditional</animation>
 		  <include>Fade_TopVideoInformationOverlay</include>
-		  <posx>460</posx>
+		  <posx>468</posx>
 		  <posy>111</posy>
-		  <width>800</width>
+		  <width>790</width>
 		  <height>530</height>
 		  
 		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation3</include>

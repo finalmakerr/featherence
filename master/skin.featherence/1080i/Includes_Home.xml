@@ -56,6 +56,46 @@
 	<onload condition="Window.IsVisible(MyVideoNav.xml) + IsEmpty(Control.GetLabel(111)) + !Control.IsVisible(7021) + IsEmpty(Control.GetLabel(700105))">RunScript(script.featherence.service,,?mode=213&amp;value=4)</onload>-->
   </include>
   
+  <include name="ArrowsLeftRight2">
+	  <control type="group" description="סמן חץ ימינה">
+			<include>Fade4</include>
+			<visible>Container(9000).HasNext</visible>
+			<posx>1870</posx>
+			<posy>920</posy>
+			<control type="image" description="לא נבחר">
+			  <width>40</width>
+			  <height>40</height>
+			  <texture border="0">images/ArrowNF.png</texture>
+			  <visible>!Container(9000).Position(8)</visible>
+			</control>
+			<control type="image" id="2051" description="נבחר">
+			  <width>40</width>
+			  <height>40</height>
+			  <texture border="0">images/ArrowFO.png</texture>
+			  <visible>Container(9000).Position(8)</visible>
+			</control>
+		</control>
+		
+		<control type="group" description="סמן חץ שמאלה">
+			<include>Fade4</include>
+			<visible>Container(9000).HasPrevious</visible>
+			<posx>5</posx>
+			<posy>920</posy>
+			<control type="image" description="לא נבחר">
+			  <width>40</width>
+			  <height>40</height>
+			  <texture border="0">images/Arrow2NF.png</texture>
+			  <visible>!Container(9000).Position(0)</visible>
+			</control>
+			<control type="image" id="2052" description="נבחר">
+			  <width>40</width>
+			  <height>40</height>
+			  <texture border="0">images/Arrow2FO.png</texture>
+			  <visible>Container(9000).Position(0)</visible>
+			</control>
+		</control>
+  </include>
+  
   <include name="Design_TopButtons">
 	<control type="grouplist" id="9009" description="כפתורים עליונים">
 	  <include>Fade10</include>
@@ -163,6 +203,7 @@
   </include>
   
   <include name="Menu_Home9000_2">
+    <include>ArrowsLeftRight2</include>
 	<control type="list" id="9000" description="מאוזן3">
 	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
 	  <visible>Skin.String(MenuDesign,6)</visible>

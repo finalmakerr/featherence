@@ -528,8 +528,8 @@
   </variable>
   
   <variable name="335label2">
-    <value condition="!Skin.HasSetting(TopVideoInformationFontSize)">$LOCALIZE[106]</value>
-	<value condition="Skin.HasSetting(TopVideoInformationFontSize)">$LOCALIZE[107]</value>
+    <value description="ברירת מחדל" condition="!Skin.HasSetting(TopVideoInformationFontSize)">$LOCALIZE[13278]</value>
+	<value condition="Skin.HasSetting(TopVideoInformationFontSize)">BIGGER</value>
   </variable>
   
   <variable name="481label2" description="">
@@ -657,6 +657,12 @@
 	<value condition="Skin.String(TransitionLogoPosition,7)">NE</value>
 	<value condition="Skin.String(TransitionLogoPosition,8)">N</value>
 	<value condition="Skin.String(TransitionLogoPosition,9)">NW</value>
+  </variable>
+  
+  <variable name="View59Align" description="יישור: ">
+    <value condition="!Skin.String(View59Align)">AUTO</value>
+	<value condition="Skin.String(View59Align,0)">LTR</value>
+	<value condition="Skin.String(View59Align,1)">RTL</value>
   </variable>
   
   <variable name="ReloadSkin_check">

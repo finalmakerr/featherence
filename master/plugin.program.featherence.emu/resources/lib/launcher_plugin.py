@@ -62,6 +62,7 @@ COPY_KEYMAPS = "%%COPY_KEYMAPS%%"
 SET_CONFIG = "%%SET_CONFIG%%"
 AUDIO_DEVICES = "%%AUDIO_DEVICES%%"
 KEYS_HELP = "%%KEYS_HELP%%"
+DEL_GAME = "%%DEL_GAME%%"
 SEARCH_COMMAND = "%%SEARCH%%"
 SEARCH_ITEM_COMMAND = "%%SEARCH_ITEM%%"
 SEARCH_DATE_COMMAND = "%%SEARCH_DATE%%"
@@ -139,6 +140,9 @@ class Main:
                     notification(str(filerelease),str(filename),"",4000)
                 elif (action == DOWNLOAD_COMMAND):
                     downloads(self._path, category, launcher, rom, filename, filepath)
+                elif (action == DEL_GAME):
+					del_game(self._path, category, launcher, rom, filename, filepath)
+					
             if ( len(command_part) == 3 ):
                 category = command_part[0]
                 launcher = command_part[1]
@@ -167,7 +171,7 @@ class Main:
                 elif (launcher == SEARCH_GENRE_COMMAND):
                     self._find_genre_add_roms(category)
                 elif (category == KEYS_HELP):
-                    keys_help(launcher)
+				    keys_help(launcher)
 					
                 else:
                     if (self.launchers[launcher]["rompath"] == ""):
@@ -527,7 +531,7 @@ class Main:
 							defined_fanart = roms[key]["fanart"]
 						rom_name = roms[key]["name"]
 						if not os.path.exists(roms[key]["filename"]): rom_name = '[COLOR=red]' + rom_name + '[/COLOR]'
-						self._add_rom(launcherID, rom_name, roms[key]["filename"], roms[key]["gamesys"], roms[key]["thumb"], defined_fanart, roms[key]["trailer"], roms[key]["custom"], roms[key]["genre"], roms[key]["release"], roms[key]["studio"], roms[key]["plot"], roms[key]["altapp"], roms[key]["altarg"], len(roms), key, False, "")
+						if os.path.exists(roms[key]["filename"]) or filter_games != 'true': self._add_rom(launcherID, rom_name, roms[key]["filename"], roms[key]["gamesys"], roms[key]["thumb"], defined_fanart, roms[key]["trailer"], roms[key]["custom"], roms[key]["genre"], roms[key]["release"], roms[key]["studio"], roms[key]["plot"], roms[key]["altapp"], roms[key]["altarg"], len(roms), key, False, "")
 					xbmcplugin.endOfDirectory( handle=int( self._handle ), succeeded=True, cacheToDisc=False )
 				else:
 					notification(addonName + " - " + addonString(30349).encode('utf-8'),"","",3000)
@@ -581,6 +585,8 @@ class Main:
         xbmcplugin.addDirectoryItem( handle=int( self._handle ), url="%s?%s/%s"  % (self._path, category, key), listitem=listitem, isFolder=folder)
 
     def _add_rom( self, launcherID, name, cmd , romgamesys, thumb, romfanart, romtrailer, romcustom, romgenre, romrelease, romstudio, romplot, altapp, altarg, total, key, search, search_url):
+        filepath = self.launchers[launcherID]["roms"][key]["filename"]
+
         if (int(xbmc.getInfoLabel("System.BuildVersion")[0:2]) < 12 ):
             # Dharma / Eden compatible
             display_date_format = "Date"
@@ -602,8 +608,10 @@ class Main:
 
         commands.append((localize(137) + space + localize(20410), "XBMC.RunPlugin(%s?%s/%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, key, SEARCH_TRAILER_COMMAND) , ))
         #commands.append((localize(137) + space + localize(20410), "XBMC.RunPlugin(plugin://plugin.video.youtube/search/?q=%s)" % (name), ))
-        commands.append((localize(33003), "XBMC.RunPlugin(%s?%s/%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, key, DOWNLOAD_COMMAND) , )) #ROM
+        commands.append((localize(33003), "XBMC.RunPlugin(%s?%s/%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, key, DOWNLOAD_COMMAND) , )) #DOWNLOAD
+        if os.path.exists(filepath) and delete_games == 'true': commands.append((addonString(30101).encode('utf-8'), "XBMC.RunPlugin(%s?%s/%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, key, DEL_GAME) , )) #DEL_GAME
         commands.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
+		
         listitem.addContextMenuItems( commands, replaceItems=True)
         xbmcplugin.addDirectoryItem( handle=int( self._handle ), url="%s?%s/%s/%s"  % (self._path, self.launchers[launcherID]["category"], launcherID, key), listitem=listitem, isFolder=False)
 

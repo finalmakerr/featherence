@@ -5,6 +5,25 @@ from variables import *
 from shared_variables import *
 from shared_modules import *
 
+def del_game(plugin, category, launcher, rom, filename, filepath):
+	name = 'del_game' ; printpoint = ""
+	if not os.path.exists(os.path.join(filepath)):
+		printpoint = printpoint + '9'
+		notification('Error!','Invalid Path','',2000)
+	else:
+		returned = dialogyesno(addonString(30102).encode('utf-8') % (filename), addonString(30103).encode('utf-8'))
+		if returned == 'ok':
+			removefiles(filepath, filteroff=[], dialogprogress="")
+			notification('ROM Deleted!', filename, "", 2000)
+			xbmc.executebuiltin('Container.Refresh')
+			
+	text = "category" + space2 + str(category) + newline + \
+	"launcher" + space2 + str(launcher) + newline + \
+	"rom" + space2 + str(rom) + newline + \
+	"filename" + space2 + str(filename) + newline + \
+	"filepath" + space2 + str(filepath) + newline
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	
 def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""):
 	name = 'downloads' ; printpoint = ""
 	

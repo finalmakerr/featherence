@@ -12,11 +12,13 @@
 	<!--<value condition="![!IsEmpty(Player.Art(tvshow.poster)) | !IsEmpty(Player.Art(poster)) | !IsEmpty(Control.GetLabel(1103)) | !IsEmpty(VideoPlayer.Cover) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Art(tvshow.poster)) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Thumb) | !IsEmpty(ListItem.Icon) | SubString(ListItem.path,videodb://movies/sets/)]">1</value>-->
 	<value condition="![!SubString(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>
 	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
+	<value condition="![StringCompare(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(ShowDVDCases2)]">14</value>
 	<value condition="![[StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(ShowDVDCases)] | !StringCompare(Container.Viewmode,$LOCALIZE[31013])]">5</value>
+	<value condition="![[StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !Skin.HasSetting(ShowDVDCases)] | !StringCompare(Container.Viewmode,$LOCALIZE[31016])]">15</value>
 	<value condition="![[[StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)] | !StringCompare(Container.Viewmode,$LOCALIZE[31015]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014])]">6</value>
 	<value condition="![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + !Window.IsVisible(Home.xml)">7</value>
 	<value condition="![!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-3).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating) | !IsEmpty(Container.ListItemNoWrap(2).Rating) | !IsEmpty(Container.ListItemNoWrap(3).Rating)] | Window.IsVisible(Home.xml)] + !SubString(Container.FolderPath,videodb://)">8</value>
-	<value condition="Window.IsVisible(DialogContextMenu.xml)">10</value>
+	<!--<value condition="Window.IsVisible(DialogContextMenu.xml)">10</value>-->
 	<!--<value condition="![!Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogContextMenu.xml)]">8</value>-->
 	<!--<value condition="!IsEmpty(ListItem.Rating)">8</value>-->
 	
@@ -285,6 +287,7 @@
 	<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 	<value condition="!IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
 	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FilenameAndPath)">$INFO[ListItem.FilenameAndPath]</value>
+	<value condition="Skin.HasSetting(PosterFanart) + StringCompare(Container.Viewmode,$LOCALIZE[31011])">$INFO[ListItem.Thumb]</value>
   </variable>
   <variable name="banner" description="פאנארט">
     <value condition="!IsEmpty(ListItem.Art(tvshow.banner))">$INFO[ListItem.Art(tvshow.banner)]</value>
