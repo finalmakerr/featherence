@@ -74,7 +74,7 @@
         <control type="list" id="10">
           <description>Rules List Control</description>
           <posx>15</posx>
-          <posy>381</posy>
+          <posy>390</posy>
           <width>840</width>
           <height>207</height>
           <onup>12</onup>
@@ -87,7 +87,7 @@
               <posy>0</posy>
               <width>840</width>
               <height>63</height>
-			  <texture border="20" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texture>
+			  <texture border="30" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texture>
             </control>
             <control type="label">
               <posx>30</posx>
@@ -104,7 +104,7 @@
               <posy>0</posy>
               <width>840</width>
               <height>63</height>
-              <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
+              <texture border="30" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
               <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(10)">Conditional</animation>
             </control>
             <control type="label">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="skin.featherence" version="0.6.6" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.6.7" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
 	<import addon="script.featherence.service" version="0.2.14"/>
@@ -16,7 +16,7 @@
 - 4 2D buttons effects: Bevel, Shadow, Overlay and Stroke effects are available across the entire skin.
 - 8 Layouts: Panel/2/3, Horizontal/2/3, Vertical RTL/LTR.
 - 6 Buttons shapes: Rectangles, Rectangles R10, Pillows, Hexagons, Circles, Triangles.
-- 6 Views: Center List, Line, Poster, Small List, Side List, and Wall.
+- 7 Views: Center List, Line, Poster, Small List, Side List, Side Wall and Wall.
   Most views have about 10 different settings to fit your preference.
 - 11 AutoView setup: Movies, TV shows, Seasons, Episodes, Movies Sets, Actors, Genres, Years, Countries, Studios and Directors.
 - 1:1 realtime home design capability. Customized is at the top level, superb easy and fun!
@@ -49,7 +49,7 @@
 - 4 אפקטי דו-מימד לכפתורים: שפוע, צל, שקופית ומסגור, זמינים בכל חלון במעטפת.
 - 8 פריסות: פנל, אופש אנכי (שלוש גרסאות לכל אחת).
 - 6 צורות לכפתורים: מלבנים, מלבנים R10, כריות, מעויינים, עיגולים ומשולשים.
-- 6 תצוגות: רשימה מרכזית, רשימה אופקית, פוסטר, רשימה קטנה, רשימה צידית וקיר.
+- 7 תצוגות: רשימה מרכזית, רשימה אופקית, פוסטר, רשימה קטנה, רשימה צידית, קיר צד וקיר.
   לרוב התצוגות קיימות למעלה מ-10 הגדרות שונות להתאמה אישית.
 - 11 תצוגות אוטומטיות: סרטים, סדרות, עונות, פרקים, מארזי סרטים, שחקנים, סגנונות, שנים, מדינות, סטודיו ובמאים.
 - עיצוב מעטפת 1:1: התאמה אישית ברמה גבוהה, קלה ומהנה במיוחד!

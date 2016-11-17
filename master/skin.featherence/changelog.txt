@@ -13,7 +13,7 @@ Featherence v0.7.0 (xx-xx-16)
 - Added WINDOW_DIALOG_CMS_OSD_SETTINGS.
 
 ------------------------
-Featherence v0.6.7 (xx-Nov-16)
+Featherence v0.6.7 (17-Nov-16)
 ------------------------
 - Added next/previous buttons arrows to horizontal3 layout.
 - Added show dvdcases option to Side View.
@@ -24,6 +24,7 @@ Featherence v0.6.7 (xx-Nov-16)
 + Added support for Programs, Pictures, music and addons view.
 + Fixed watched icons. 
 - Major bug fix with allow thumbnail fanart feature.
+- Major bug fix with edit button of SmartPlaylistRule window.
 - Minor update of Fanart Transperancy option for views: Wall, Side Wall and Posters.
 - Minor update of semi-auto subtitle script.
 + Increased timeout between refreshing and switching a server.
