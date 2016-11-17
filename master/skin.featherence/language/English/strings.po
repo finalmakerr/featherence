@@ -938,12 +938,12 @@ msgid "Prefered view"
 msgstr "העדפת תצוגה"
 
 msgctxt "#31525"
-msgid ""
-msgstr ""
+msgid "Enable sliding animation"
+msgstr "אפשר אנימציית גלישה"
 
 msgctxt "#31526"
-msgid ""
-msgstr ""
+msgid "Alignment"
+msgstr "יישור"
 
 msgctxt "#31527"
 msgid ""

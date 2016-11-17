@@ -4,7 +4,6 @@ WIP - WORK IN PROGRESS
 - ??Added option to hide Top Video Information on fullscreen video while skiping back/next.
 + Added Premiered information to Side List view instead of year when available.
 - Added new option to disable the auto close of the video/audio OSD.
-- Added next/previous buttons arrows to horizontal/2/3 layouts.
 
 ------------------------
 Featherence v0.7.0 (xx-xx-16)
@@ -12,6 +11,25 @@ Featherence v0.7.0 (xx-xx-16)
 - Added Krypton support.
 - Added ScrollBar support to PVR Guide window.
 - Added WINDOW_DIALOG_CMS_OSD_SETTINGS.
+
+------------------------
+Featherence v0.6.7 (xx-Nov-16)
+------------------------
+- Added next/previous buttons arrows to horizontal3 layout.
+- Added show dvdcases option to Side View.
+- Major update of Side Wall view.
++ Added autoview/forceview support.
++ Added option to toggle LTR and RTL versions without changing the language.
++ Added option to toggle sliding/fade animation of the video information.
++ Added support for Programs, Pictures, music and addons view.
++ Fixed watched icons. 
+- Major bug fix with allow thumbnail fanart feature.
+- Minor update of Fanart Transperancy option for views: Wall, Side Wall and Posters.
+- Minor update of semi-auto subtitle script.
++ Increased timeout between refreshing and switching a server.
+- Minor update of top video information alignment.
+- Minor update of preview videoplayer in settings window.
++ Window is full sized and video preview at the side.
 
 ------------------------
 Featherence v0.6.6 (03-Nov-16)

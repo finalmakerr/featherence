@@ -287,9 +287,7 @@
 					<onclick condition="Skin.HasSetting(Touch_Support) | Skin.HasSetting(ExtraMouseSupport)">ActivateWindow(1175)</onclick>
 					<onclick condition="Skin.HasSetting(Touch_Support) | Skin.HasSetting(ExtraMouseSupport)">ClearProperty(TEMP2,home)</onclick>
 					<onclick condition="!Skin.HasSetting(Touch_Support) + !Skin.HasSetting(ExtraMouseSupport)">ActivateWindow(SubtitleSearch)</onclick>
-					<visible>Skin.HasSetting(Admin) | SubString(VideoPlayer.Title, S0) | SubString(VideoPlayer.Title, S1) | !IsEmpty(VideoPlayer.TVShowTitle) | !IsEmpty(VideoPlayer.Season) | !IsEmpty(VideoPlayer.Year) | !IsEmpty(VideoPlayer.Country) | !IsEmpty(VideoPlayer.Tagline) | VideoPlayer.Content(episodes) | VideoPlayer.Content(movies) | IntegerGreaterThan(Player.Duration,2400) | !IsEmpty(Window(home).Property(OSDPlus)) | VideoPlayer.HasSubtitles</visible>
-					<visible>!StringCompare(Player.TimeRemaining,) + IntegerGreaterThan(Player.TimeRemaining,1)</visible>
-					<visible>!VideoPlayer.Content(LiveTV)</visible>
+					<visible>!VideoPlayer.Content(LiveTV) | !StringCompare(Player.TimeRemaining,) + IntegerGreaterThan(Player.TimeRemaining,1)</visible>
 				</control>
 				<control type="button" id="704" description="DVD">
 					<texturefocus>osd/buttons/OSDDvdFO.png</texturefocus>
