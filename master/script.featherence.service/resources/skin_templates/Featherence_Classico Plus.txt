@@ -1,4 +1,9 @@
 ------------------------
+Featherence Classico Plus (19-Nov-16)
+------------------------
+- Minor bug fix with YouTube sub buttons.
+
+------------------------
 Featherence Classico Plus (22-Oct-16)
 ------------------------
 - Update Israeli shows button.
