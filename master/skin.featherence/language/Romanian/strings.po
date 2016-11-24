@@ -1,0 +1,1857 @@
+msgid ""
+msgstr ""
+
+msgctxt "#31000"
+msgid "Choose a default lyrics addon."
+msgstr "Alege default pentru grupul de fisiere  cuvinte pentru cantece"
+
+msgctxt "#31001"
+msgid "Featherence rating method"
+msgstr "metoda de rating featherence"
+
+msgctxt "#31002"
+msgid "Enable this feature in order to have a better rating system for movies, tvshows and youtube videos.[CR][COLOR=red]If disabled the rating will be as you 're familiar with, Movies and Tvshows rating will most likely be always above 2.5 stars.[/COLOR]"
+ msgstr "Foloseste aceasta optie  penru a avea un system mai bun de rating pentru filme , serialeTV, youtube video . Daca  aceasta optie  este anulata ..ratingul filmelor/serialelorTV va fi asa cum esti familiarizat (CR)(COLOR=rosu) si va fi totdeauna mai mare de 2.5 stele.(/COLOR)"
+
+msgctxt "#31003"
+msgid "Save/Load"
+msgstr "salveaza/incarca"
+
+msgctxt "#31004"
+msgid "Choose this option for saving/loading/changing your skin design.[CR]The configuration files may be used on any machine!"
+msgstr "Foloseste aceasta optie pentru salvarea/incarcarea/schimbarea setarilor  dvs de skin.(CN) Configurarea fisierelor poate fi folosita pe orice calculator  si poate fi transmisa la un prieten!"
+
+msgctxt "#31005"
+msgid "Reset default buttons name/icons"
+msgstr "Resetarea butoanelor de nume/simboluri la forma implicita default"
+
+msgctxt "#31006"
+msgid "This button is useful whenever your system language was changed or if icons are missing in the default buttons."
+msgstr "Acest buton este folositor daca a fost modificata limba sistemului sau lipsesc butoane in default."
+
+msgctxt "#31007"
+msgid "Randomize slideshow"
+msgstr "Prezentare aleatorie"
+
+msgctxt "#31010"
+msgid "Center List"
+msgstr "lista centrata"
+
+msgctxt "#31011"
+msgid "Side List"
+ msgstr "lista laterala"
+
+msgctxt "#31012"
+msgid "Small List"
+msgstr "lista mica"
+
+
+msgctxt "#31013"
+msgid "Wall"
+msgstr "perete"
+
+msgctxt "#31014"
+msgid  "Poster"
+msgstr "Poster"
+
+msgctxt "#31015"
+msgid "Line"
+msgstr "linie"
+
+msgctxt "#31016"
+msgid "Side Wall"
+msgstr "perete lateral"
+
+msgctxt "#31030"
+msgid "Covers Transperancy"
+msgstr "transparenta copertelor"
+
+msgctxt "#31031"
+msgid "Panel"
+msgstr "panel"
+
+msgctxt "#31032"
+msgid "Horizontal"
+msgstr "echilibrat"
+
+msgctxt "#31033"
+msgid "Vertical"
+msgstr "vertical"
+
+msgctxt "#31034"
+msgid "Center Menu"
+msgstr "meniu central"
+
+msgctxt "#31035"
+msgid "Clear fanart"
+msgstr "fanart curat"
+
+msgctxt "#31036"
+msgid "When choosing button icon."
+msgstr "Atunci cand alegem un symbol pentru buton"
+
+msgctxt "#31037"
+msgid "When choosing button fanart."
+msgstr "atunci cand alegem un fanart pentru buton"
+
+msgctxt "#31038"
+msgid "Allow Tips while busy"
+msgstr "permite sfaturi cand esti in asteptare"
+
+msgctxt "#31039"
+msgid "Unfocus home buttons"
+msgstr "butonul de start nu este selectat"
+
+msgctxt "#31040"
+msgid "If you choose NO, buttons will have their transperancy increased when idling or while navigating the widget.[CR]In some views the buttons may drop down for clearer fanart."
+msgstr "Daca vei allege NU , butonii vor avea transparenta crescuta  atunci cand nu ai activitate  sau cand navighezi cu widget.(CR)In anumite situatii butonii vor cobora pentru un fanart mai clar."
+
+msgctxt "#31041"
+msgid "Static Transperancy"
+msgstr "Transparenta permanenta"
+
+msgctxt "#31042"
+msgid "Show disc art"
+msgstr "Arata disc  rotitor"
+
+msgctxt "#31043"
+msgid "Enlarge focused thumbnail"
+msgstr 'Mareste imaginea aleasa"
+
+msgctxt "#31044"
+msgid "Selector frame"
+msgstr "Cadru de selectare"
+
+msgctxt "#31045"
+msgid "Choose a color for the selector frame.[CR]Selector frame is an optional skin element."
+msgstr "Alege o culoare pentru cadrul de selectare.(CR) Cadrul de selectare este un element optional pentr skin."
+
+msgctxt "#31046"
+msgid "Wider Menu"
+msgstr "meniu larg"
+
+msgctxt "#31047"
+msgid "Show Rating"
+msgstr "Arata ratingul"
+
+msgctxt "#31048"
+msgid "Remove Item"
+msgstr "Sterge articolul"
+
+msgctxt "#31049"
+msgid "Create New Item"
+msgstr "Creaza un articol nou"
+
+msgctxt "#31050"
+msgid "Fanart Transparency"
+msgstr "Transparenta fanat"
+
+msgctxt "#31051"
+msgid "Rectangles"
+msgstr "dreptunghiuri"
+
+msgctxt "#31052"
+msgid "Circles"
+msgstr "cercuri"
+
+msgctxt "#31053"
+msgid "Triangles"
+msgstr "Triunghiuri"
+
+msgctxt "#31054"
+msgid "Pillows"
+msgstr "Perne"
+
+msgctxt "#31055"
+msgid "Hexagons"
+msgstr "Hexagoane"
+
+msgctxt "#31056"
+msgid ""
+msgstr ""
+
+msgctxt "#31057"
+msgid "Button Shape"
+msgstr "Forma butoanelor"
+
+msgctxt "#31058"
+msgid "Multi Fanart"
+msgstr "Multi fanart"
+
+msgctxt "#31059"
+msgid "Choose this option in order to allow more fanart per button."
+msgstr "Alege aceasta optiune pentru ca sa permiti alegerea unui traseu pentru multi fanart."
+
+msgctxt "#31060"
+msgid "Show randomize tips on Dialog Busy window."
+msgstr "Prezentare de sfaturi aleatorii pe timpul asteptaii."
+
+msgctxt "#31061"
+msgid "Menu Buttons"
+msgstr "Butoanele meniului"
+
+msgctxt "#31062"
+msgid "Dialogues"
+msgstr "Dialoguri"
+
+msgctxt "#31063"
+msgid "Reposition effect in many dialogs such as DialogYesNo, DialogOK, DialogProgress and more.."
+msgstr "Efect de repozitionare in multe dialoguri cum ar fi dialog DA/NU , dialog OK , dialog progress si altele."
+
+msgctxt "#31064"
+msgid "Upper Design"
+msgstr "design superior"
+
+msgctxt "#31065"
+msgid "Keyboard"
+msgstr 'Tastatura"
+
+msgctxt "#31066"
+msgid "Home Buttons"
+msgstr "Butonii casei"
+
+msgctxt "#31067"
+msgid "Allow action change for default buttons"
+msgstr "Permite schimbarea butoanelor default"
+
+msgctxt "#31068"
+msgid "If you choose YES, you 'll be able to change the action for default buttons.[CR]If you choose NO, default action will be triggered on all default buttons."
+msgstr "Daca alegi DA vei fi capabil sa schimbi actiunea pentru butonii default .(CR) Daca alegi NU actiunile default vor fi restabilite."
+
+msgctxt "#31069"
+msgid "Sub Menu action"
+msgstr "Actiuni pentru butoanele secundare"
+
+msgctxt "#31070"
+msgid "Choose YES in order to open the sub menu with a down/side click and the main button action using a regular click.[CR]If you choose NO sub menu will always be open on click (default).[CR]Not available on Panel layout."
+msgstr "Alege optia DA pentru a deschide submeniul prin o apasare in jos/lateral si butonul principal prin o apasare obisnuita.(CR) Daca alegi NU , prin apasare default  submeniul va fi totdeauna deschis.(CR)nu este accesibil pe dispunerea Panel."
+
+msgctxt "#31071"
+msgid "Playing"
+msgstr "joaca"
+
+msgctxt "#31072"
+msgid "Watched on"
+msgstr "vizionat ultima oara"
+
+msgctxt "#31073"
+msgid "Number of items in the playlist"
+msgstr "Numarul de articole pe lista de redare"
+
+msgctxt "#31074"
+msgid "Time per Image"
+msgstr "Timpul de redare pentru fiecare poza"
+
+msgctxt "#31075"
+msgid "Cross Fade Time"
+msgstr "Timpul de suprapunere intre poze"
+
+msgctxt "#31076"
+msgid "Your icons will be stretched to fill entire button frame."
+msgstr "Pictogramele tale vor fi solicitate sa umple butonul insusi"
+
+msgctxt "#31077"
+msgid "Music in Slideshow and Screensaver"
+msgstr "Muzica in timpul vizionarii prezentatiei si ptr Screensaver"
+
+msgctxt "#31078"
+msgid "Widget"
+msgstr "Widget"
+
+msgctxt "#31079"
+msgid "Pass-Lock"
+msgstr "blocare parola"
+
+msgctxt "#31080"
+msgid ""
+msgstr ""
+
+msgctxt "#31081"
+msgid "Enable Widget"
+msgstr "activeaza adaptorul Widget"
+
+msgctxt "#31082"
+msgid "Effect icon and text only."
+msgstr "Afecteaza numai pictograma si textul"
+
+msgctxt "#31083"
+msgid "Touch Screen"
+msgstr "Ecran  tactil"
+
+msgctxt "#31084"
+msgid "Touch Screen support"
+msgstr "Suport pentru ecran tactil"
+
+msgctxt "#31085"
+msgid "Always show video/audio settings in the Video OSD buttons"
+msgstr "Intotdeauna arata butonul de setari video/audio pe timpul redarii."
+
+msgctxt "#31086"
+msgid "Choose YES in order to always show video and audio settings in the OSD buttons.[CR]If you choose NO you can still show them by standing on the STOP button and press up."
+msgstr "Alege DA  astfel incat intotdeauna sa vezi setarile video si audio in timpul redarii. (CR) Daca alegi NU inca vei putea sa le vezi stand pe butonul stop si apasand UP."
+
+msgctxt "#31087"
+msgid "Always hide library update during fullscreen playback."
+msgstr "Ascunde intotdeauna actualizarea librariei pe redare in ecran plin."
+
+msgctxt "#31088"
+msgid "Choose NO in order to hide the library update dialog window while watching videos."
+msgstr "Alege NU ca sa ascunzi fereastra dialogului actualizarii librariei  atunci cand vezi video."
+
+msgctxt "#31089"
+msgid "Choose YES and the thumbnail will be changed according to the selected action.[CR]Additionally, the button name will be changed as well."
+msgstr "Alege DA si atunci cand se va schimba actiunea butonului si numelle pozei se va schimba in consecinta."
+
+msgctxt "#31090"
+msgid "Action and Thumbnail"
+msgstr Actiune si poza"
+
+msgctxt "#31091"
+msgid "Choose this option in order to display fanart for sub menus's buttons."
+msgstr "allege aceasta optie pentru afisarea fanart pentru butoanele submeniurilor."
+
+msgctxt "#31092"
+msgid "Reshape icons"
+msgstr "remodeleaza pictograma"
+
+msgctxt "#31093"
+msgid "Choose this option in order to change the shape of your icons to match your choosen button shapes."
+msgstr "Alege aceasta opti ca sa schinbi forma pictogramelor astfel incat sa corespunda cu forma butoanelor alese."
+
+msgctxt "#31094"
+msgid "Reposition"
+msgstr "repozitionare"
+
+msgctxt "#31095"
+msgid "Choose this option in order to change the position for"
+msgstr "Alege aceasta optie ca sa schimbi pozitia pentru"
+
+msgctxt "#31096"
+msgid "[CR][COLOR=green]Note: This option takes effect on the entire skin.[/COLOR]"
+msgstr "(CR)(COLOR=verde)observatie:Aceasta optie afecteaza tot Skinul.(/COLOR)"
+
+msgctxt "#31097"
+msgid "Choose this option in order to change the shapes of the buttons."
+msgstr "Alege aceasta optie ca sa schimbi forma butoanelor."
+
+msgctxt "#31098"
+msgid "Fanart Transperancy"
+msgstr "Transparenta fanart"
+
+msgctxt "#31099"
+msgid "Shuffle Fanart (Randomize)"
+msgstr "Amestec aleator  de fanart"
+
+msgctxt "#31100"
+msgid "Choose NO if you want the images to be always toggled in the same order."
+msgstr "Alege NU daca vrei ca pozele sa se mute intotdeauna in aceeas ordine"
+
+msgctxt "#31101"
+msgid "Choose this option in order to customize fanart for each widget button."
+msgstr "Alege aceasta optie ca sa permiti alegerea si afisarea de fundaluri personale pentru fiecare buton widget."
+
+msgctxt "#31102"
+msgid "Lock skin design window"
+msgstr "Inchide fereastra de proiectare a Skinului"
+
+msgctxt "#31103"
+msgid "Choose YES in order to password lock the skin design window.[CR]If you ever forget your password, you should contact us in the Facebook group."
+msgstr "Alege DA pentru a incuia cu parola fereasta de proiectare a Skinului .(CR) Daca vei uita parola poti capata intotdeauna ajutor de la grup pe Facebook."
+
+msgctxt "#31104"
+msgid "Reschedule lock up"
+msgstr "Reprogramare inchidere"
+
+msgctxt "#31105"
+msgid "Choose "0" For disabling this feature.[CR]Choose higher number in order to relock your buttons after x minutes."
+msgstr "Alege "0" pentru a anula aceasta optie.(CR)Alege un numar mai mare pentru a incuia butoanele tale dupa  x minute."
+
+msgctxt "#31106"
+msgid "Choose a password for locking your prefered buttons and windows."
+msgstr "Alege o parola pentru incuierea butoanelor tale preferate si a ferestrelor."
+
+
+msgctxt "#31107"
+msgid "RSS delay time"
+msgstr "RSS timp de intarziere"
+
+msgctxt "#31108"
+msgid "Choose how long should you be afk before RSS appear.[CR]Timing is in seconds. Choose 0 to always have RSS.[CR]Note: RSS take over some others valueable information such as focused button names, currently played video, songs etc.."
+msgstr "Alege cat timp vei fi in intarziere inainte de RSS sa apara.(CR) Timpul in secunde.Alege 0 pentru a avea intotdeauna RSS.(CR)Observatie :RSS preia ceva informatii valoroase precum subliniera numelor butoanelor, numele videourilor , cantecelor si altele"
+
+msgctxt "#31109"
+msgid "Button label position"
+msgstr "pozitia butonului titlu"
+
+msgctxt "#31110"
+msgid "Toggle button labels inside or outside the button."
+msgstr "Schimba pozitia etichetei in interiorul sau exteriorul butonului."
+
+msgctxt "#31111"
+msgid ""
+msgstr ""
+
+msgctxt "#31112"
+msgid "Set weather widget"
+msgstr "Stabilirea widget pentru starea vremii"
+
+msgctxt "#31113"
+msgid "Choose your prefered button to handle movies/tvshows widget."
+msgstr "Alege butonul tau preferat pentru manipularea widget la filme/tvshows"
+
+msgctxt "#31114"
+msgid "Set movies widget"
+msgstr "wairz e'icbh qxhim"
+"stabilirea widget pentru filme"
+
+msgctxt "#31115"
+msgid "Set tvshows widget"
+msgstr "Stabilirea widget ptr seriale"
+
+msgctxt "#31116"
+msgid "Choose this option for rearranging your home buttons layout.[CR]There are total of six available layouts![CR]Some of them are Horizontal, Vertical, Panel.."
+msgstr "Alege aceasta optie pentru rearanjarea dispunerii butoanelor .(CR) Sunt in total 6 feluri de dispunere!(CR) Unele orizontal,vertical,panel"
+
+msgctxt "#31117"
+msgid "Buttons Layout"
+msgstr "Dispunerea butoanelor"
+
+msgctxt "#31118"
+msgid "Enable 2D in any buttons across the skin."
+msgstr "Activeaza 2D pentru toate butoanele Skinului"
+
+msgctxt "#31119"
+msgid "Choose a text edit area color for your virtual keyboard."
+msgstr "Alege o zona de editare colora pentru tastatura ta virtuala."
+
+msgctxt "#31120"
+msgid "Edit keyboard text color"
+msgstr "Fundalul de editare text pentru tastatura"
+
+msgctxt "#31121"
+msgid "Choose a background color for your virtual keyboard."
+msgstr "Alege o culoare pentru fundalul tastaturii virtuale"
+
+msgctxt "#31122"
+msgid "Keyboard background"
+msgstr "Fundalul tastaturii"
+
+msgctxt "#31123"
+msgid "Choose a color for your virtual keyboard."
+msgstr "Alege o culoare pentru tastatura virtuala"
+
+ msgctxt "#31124"
+msgid "Unfocus Keyboards buttons"
+msgstr "Butoni de tastatura nealesi"
+
+msgctxt "#31125"
+msgid "Focus keyboards buttons"
+msgstr "Butoni de tastatura alesi"
+
+msgctxt "#31126"
+msgid "Choose color for all menu buttons"
+msgstr "Alege culoare pentru toti butonii meniului"
+
+msgctxt "#31127"
+msgid "UnFocus Menu Buttons"
+msgstr "Butoni de meniu nealesi"
+
+msgctxt "#31128"
+msgid "Focused Menu Buttons"
+msgstr "Butoni de meniu alesi"
+
+msgctxt "#31129"
+msgid "Allow thumbnail fanart"
+msgstr "Permite fanart din poster"
+
+msgctxt "#31130"
+msgid "Hide colors and textures when fanart exists."
+msgstr "Ascunde culoarea si textura cand exista fanart"
+
+msgctxt "#31131"
+msgid "[CR][COLOR=red]Will not work when Clear Fanart is enabled and triggered.[/COLOR]"
+msgstr "(CR)(COLOR=rosu)Aceasta optie nu va lucra cand  fannart curat este activat si in functiune.(/COLOR)"
+	
+msgctxt "#31132"
+msgid "[CR][COLOR=green]This option affects the entire interface.[/COLOR]"
+msgstr "[CR][COLOR=verde]Aceasta optie afecteaza intreaga interfata.(/COLOR)"
+
+msgctxt "#31133"
+msgid "[CR][COLOR=green]This window is[/COLOR]"
+msgstr '(CR)(COLOR=verde)Aceasta fereastra este(/COLOR)"
+
+
+msgctxt "#31134"
+msgid "Choose the level of fade for buttons."
+msgstr "Alege nivelul de transparenta pentru butoane"
+
+msgctxt "#31135"
+msgid "More movies of this writer"
+msgstr "Mai multe filme al aceluias autor"
+
+msgctxt "#31411"
+msgid "Our Channel"
+msgstr "Canalul nostru"
+
+msgctxt "#31412"
+msgid "No changes were made"
+msgstr "Nu sa-u facut schimbari"
+
+msgctxt "#31413"
+msgid "Director Info"
+msgstr "Informatii regizor"
+
+msgctxt "#31414"
+msgid "Selection marker"
+msgstr "Marcheaza alegerea"
+
+
+msgctxt "#31415"
+msgid "Focus Button"
+msgstr "Buton ales"
+
+msgctxt "#31416"
+msgid "Unfocus button"
+msgstr 'buton neales"
+
+msgctxt "#31417"
+msgid "Element"
+msgstr "Element"
+
+msgctxt "#31418"
+msgid "Skin Version Updated"
+msgstr "Versiunea  de Skin s-a actualizat"
+
+msgctxt "#31419"
+msgid "By"
+msgstr 'Precum"
+
+msgctxt "#31420"
+msgid "Button"
+msgstr "Buton"
+
+msgctxt "#31421"
+msgid "Welcome"
+msgstr 'Bine a-ti venit"
+
+msgctxt "#31422"
+msgid "Choose a video file to be play on startup.[CR]Note: This feature trigger on AFK only."
+msgstr "Alege o fila video sa fie jucata pe deschiderea aparatului.(CR)Observatie: Aceasta operatie nu se aplica cand utilizatorul atinge clapele."
+
+msgctxt "#31423"
+msgid "Play video in a full screen."
+msgstr "deschide video pe ecran plin"
+
+msgctxt "#31424"
+msgid "RSS Visiblity"
+msgstr "vizibilitate RSS"
+
+msgctxt "#31425"
+msgid "Choose if you want to have RSS across the entire skin or only at home screen."
+msgstr "Alege daca vrei sa ai RSS dealungul intregului Skin sau  numai pe ecranul home"
+
+msgctxt "#31426"
+msgid "Mini settings and power buttons"
+msgstr "Butoane de setare si inchidere miniaturizate"
+
+msgctxt "#31427"
+msgid "Show skin version"
+msgstr "Arata versiunea de Skin"
+
+msgctxt "#31428"
+msgid "Choose YES in order to display the skin version in home window."
+msgstr "Alege DA pentru ca sa afisezi versiunea in ecranul de pornire."
+
+msgctxt "#31430"
+msgid "Rating method"
+msgstr "Metoda de rating"
+
+msgctxt "#31431"
+msgid "Top Bar design"
+msgstr 'Crearea barei de sus"
+
+msgctxt "#31432"
+msgid "Choose this option in order to change the look of the Top bar."
+msgstr "Alege aceasta optie pentru a schimba aspectul barei superioare."
+
+msgctxt "#31433"
+msgid "Top Bar size"
+msgstr "Marimea barei superioare."
+
+msgctxt "#31434"
+msgid "Mouse icon"
+msgstr "pictograma mousului"
+
+msgctxt "#31435"
+msgid "Mouse color"
+msgstr 'Culoarea pictogramei mousului"
+
+msgctxt "#31436"
+msgid "Mouse"
+msgstr "mouse"
+
+msgctxt "#31437"
+msgid "RSS in video/audio playback"
+msgstr "RSS pe redare video/audio"
+
+msgctxt "#31438"
+msgid "Choose YES in order to allow RSS in video/audio playback.[CR]Note: RSS will come in place of currently playing information."
+msgstr "Alege DA pentru a permite redare RSS in video/audio.(CR)Observatie: RSS va veni pe locul current de redare a informatiei."
+
+msgctxt "#31439"
+msgid "Maximum movies/tvshows widget items"
+msgstr "Maximum de articole widget filme/tvshows"
+
+msgctxt "#31440"
+msgid "font"
+msgstr "font"
+
+msgctxt "#31441"
+msgid "Color font dialog title"
+msgstr "Culoarea fontului din titlul  dialog"
+
+msgctxt "#31442"
+msgid "Choose this option in order to color the following windows backgrounds: Yes/No, Ok, Busy, Progress."
+msgstr "Alege aceasta optie pentru a colora urmatoarele fundaluri de ferestre: DA/NU, OK, ocupat , incarcare."
+
+msgctxt "#31443"
+msgid "Choose this option in order to color the title font of the following dialog windows: Yes/No, Ok, Busy, Progress."
+msgstr 'Alege aceasta opyie pentru a colora fontul titlului pentru ferestrele de dialog:DA/NU,OK, ocupat, incarcare."
+
+msgctxt "#31444"
+msgid "color dialog background"
+msgstr "culoarea fundalului dialog"
+
+msgctxt "#31445"
+msgid "Color font dialog"
+msgstr "Culoarea fontului dialog"
+
+msgctxt "#31446"
+msgid "Choose this option in order to color the font of the following dialog windows: Yes/No, Ok, Busy, Progress."
+msgstr "Alege aceasta optie pentru a colora fontul din aceste ferestre de dialog: DA/NU, OK,ocupat,incarcare."
+
+msgctxt "#31447"
+msgid "Edit text keyboard font color"
+msgstr "Culoarea fontului text pe tatatura."
+
+msgctxt "#31448"
+msgid "Choose this option in order to color the font of the virtual keyboard's edit text control."
+msgstr "Alege aceasta optie pentru a colora fontul de editare text pe tastatura virtuala "
+
+msgctxt "#31449"
+msgid "Virtual keyboard's background color"
+msgstr "Culoarea fundalului tastaturii virtuale"
+
+msgctxt "#31450"
+msgid "Keyboard font title color"
+msgstr "var teph kezxz anwlcz"
+"Culoarea fontului de titlu pe tastatura"
+
+msgctxt "#31451"
+msgid "Choose this option in order to color the font of the virtual keyboard's title label."
+msgstr "Alege aceasta optie pentru a colora fontul etichetei titlu pe tastatura virtuala."
+
+
+msgctxt "#31452"
+msgid "Unfocus widget font color"
+msgstr "Culoarea  fontului widget nealeasa"
+
+msgctxt "#31453"
+msgid "Focused widget font color"
+msgstr "Culoarea font widget aleasa"
+
+msgctxt "#31454"
+msgid "Choose this option in order to change the-"
+msgstr "Alege aceasta optie pentru a schimba"
+
+msgctxt "#31455"
+msgid "Show widget label's background"
+msgstr 'Alege un cadru pentru titlu widget"
+
+msgctxt "#31456"
+msgid "Choose this option in order to show a background frame around the widget's labels."
+msgstr "Alege  optia aceasta pentru a vedea cadrul in jurul titlurilor widget"
+
+msgctxt "#31457"
+msgid "Main color"
+msgstr 'Culoarea principala"
+
+msgctxt "#31458"
+msgid "Choose the main skin color."
+msgstr "Alege culoarea principala pe Skin"
+
+msgctxt "#31459"
+msgid "Touch buttons position"
+msgstr "Locul butoanelor pe ecranul tactil"
+
+msgctxt "#31460"
+msgid "Change touch buttons position."
+msgstr "Schimba locul butoanelor pe ecranul tactil"
+
+msgctxt "#31461"
+msgid "Touch buttons orientation"
+msgstr "Orientatia butoanelor pe ecranul tactil"
+
+msgctxt "#31462"
+msgid "Touch buttons size"
+msgstr "Marimea butoanelor pe ecranul tactil"
+
+msgctxt "#31463"
+msgid "Locking mark transperancy"
+msgstr "Transparenta semnului de inchidere"
+
+msgctxt "#31464"
+msgid "Choose the transparency level of the lock mark."
+msgstr "Alege nivelul de transparenta al semnului de inchidere."
+
+msgctxt "#31465"
+msgid "Fade time between different skin windows transition"
+msgstr "durata de estompare pe perioada de tranzitie intre diferite ferestre de skin."
+
+msgctxt "#31466"
+msgid "Choose the fade time for when moving from one skin window to another.[CR]Different skin windows mean: Home, Video, Music, Programs etc..[CR]Tweak this setting according to your hardware![CR][COLOR=red]Setting this too high may cause serious lag/delay for high end hardwares![/COLOR]"
+msgstr "Alege durata de estompare cand treci de la o fereastra de skin la alta.(CR) Prin diferite ferestre de skin intelegem :Home, Video, Muzica, Programe etc(CR)Potrivesti aceasta stare in concordanta cu aparatura ta !(CR)(COLOR=rosu) Setand prea ridicata  poate cauza intarzieri mari pentru hardwares!(/COLOR)"
+
+msgctxt "#31467"
+msgid "Buttons color overlay"
+msgstr "Transparenta culorii butoanelor"
+
+msgctxt "#31468"
+msgid "Change the overlay for any button's colors."
+msgstr "Schimba transparenta stratului  acoperitor  pentru culorile butoanelor in general" 
+
+msgctxt "#31469"
+msgid "Larger Icon"
+msgstr "Pictograma marita"
+
+msgctxt "#31470"
+msgid "You can't edit button's action from this window."
+msgstr "Nu poti edita actiunea butoanelor din aceasta fereastra."
+
+msgctxt "#31471"
+msgid "Press back!"
+msgstr "Apasati inapoi"
+
+msgctxt "#31472"
+msgid "Boat mode"
+msgstr "Modul barca"
+
+msgctxt "#31473"
+msgid "Video information font size"
+msgstr "Informatie despre marimea fontului video"
+
+msgctxt "#31474"
+msgid "Choose YES if you need glasses in order to read the video plot :)"
+msgstr "Alege DA daca ai nevoie de ochelari pentru a citi continutul filmului/capitolului."
+
+msgctxt "#31475"
+msgid "Addons lock"
+msgstr "Blocare addon"
+
+msgctxt "#31476"
+msgid "Write up the addon id to be locked no matter how it's been entered."
+msgstr "Scrie numele addon pentru a fi inchis ,indiferntcum a fost deschis"
+
+msgctxt "#31477"
+msgid "Extra mouse support"
+msgstr "Suport suplimentar pentru mouse"
+
+msgctxt "#31478"
+msgid "Mute"
+msgstr "Inchide sonorul"
+
+msgctxt "#31479"
+msgid "Choose YES in order to increase mouse support in the skin.[CR]For example: In the video OSD menu when you click on the volume icon you will be granted with an extra menu."
+msgstr "Alege DA pentru a creste suportul pentru mouse in Skin.(CR)De exemplu :In meniul video OSD cand faci click pe pictograma volum, vei fi servit cu un extra meniu."
+
+msgctxt "#31480"
+msgid "Subtitle Selection"
+msgstr "alegerea traducerii"
+
+msgctxt "#31481"
+msgid "Subtitle Delay"
+msgstr "Intarzierea traducerii"
+
+msgctxt "#31482"
+msgid "Show/Hide Subtitle"
+msgstr "Arata/ascunde traducerea"
+
+msgctxt "#31483"
+msgid "Enable zoom animation between different skin windows transition"
+msgstr "Permite animatia zoom intre tranzitia diferitelor ferestre de skin.
+
+
+msgctxt "#31484"
+msgid "Allow zoom in/out animation"
+msgstr "Permite zoom la trecerea printre ferestre"
+
+msgctxt "#31485"
+msgid "Enable Next Aired"
+msgstr 'Permite  Difuzat in Continuare"
+
+msgctxt "#31486"
+msgid "The script will scan your library and tries to fetch next aired info for every show."
+msgstr "Scriptul va scana libraria ta si va incerca sa aduca urmatoarea informatie difuzata pentru fiecare show."
+
+msgctxt "#31487"
+msgid "Enable trailer button"
+msgstr "Activeaza butonul trailer"
+
+msgctxt "#31488"
+msgid "Trailer button display under each button that contains a trailer.[CR]To be activated by mouse or touch device."
+msgstr "Afisarea  butonului trailer apare sub fiecare buton care contine un trailer.(CR) Se activeaza de mouse sau tactil"
+
+
+msgctxt "#31489"
+msgid "Show fanart from episode/season image"
+msgstr "Arata fanart din poze capitol/sezon"
+
+msgctxt "#31490"
+msgid "Show volume icon"
+msgstr "Arata pictograma volumului sonorului"
+
+msgctxt "#31491"
+msgid "When volume up/down."
+msgstr "Atunci cand marim/reducem volumul sonorului"
+
+msgctxt "#31492"
+msgid "Volume position"
+msgstr "Locul volumului sonorului"
+
+msgctxt "#31493"
+msgid "Choose volume icon"
+msgstr "Alege pictograma volumului sonorului"
+
+msgctxt "#31494"
+msgid "Volume background color"
+msgstr "culoarea fundalului volumului sonorului"
+
+msgctxt "#31495"
+msgid "Volume icon color"
+msgstr "Culooarea pictogramei volumului sonorului"
+
+msgctxt "#31496"
+msgid "Volume background overlay"
+msgstr "Transparenta fundaluluivolumului sonorului"
+
+msgctxt "#31497"
+msgid "Volume icon overlay"
+msgstr 'Transparenta pictogramei volumului sonorului"
+
+msgctxt "#31498"
+msgid "Show volume level percent"
+msgstr "Arata procentual volumul sonorului"
+
+msgctxt "#31499"
+msgid "Choose YES in order to show the volume level in percents from 0-100%."
+msgstr "Alege DA pentru a arata nivelul volumului in procentede 0-100%"
+
+msgctxt "#31500"
+msgid "Change the position of the volume display."
+msgstr "Schimba locul de afisare al volumului sonorului"
+
+msgctxt "#31501"
+msgid "Always show volume level on mute"
+msgstr "Arata totdeauna volumul sonorului pe situatia mut"
+
+msgctxt "#31502"
+msgid "Choose yes in order to always show the volume level when it's on mute."
+msgstr "Alege DA pentru a arata totdeauna situatia volumului sonorului cand este mut"
+
+msgctxt "#31503"
+msgid "Choose your own icon for the volume icon."
+msgstr "Alege o pictograma proprie pentru volumul sonorului"
+
+msgctxt "#31504"
+msgid "Color the volume background/border."
+msgstr "Coloreaza marginile fundalului volumului sonorului"
+
+msgctxt "#31505"
+msgid "Color the volume icon."
+msgstr "Coloreaza pictograma volumului sonorului"
+
+msgctxt "#31506"
+msgid "Side video information"
+msgstr "Informatie video laterala"
+
+msgctxt "#31507"
+msgid ""
+msgstr ""
+
+msgctxt "#31508"
+msgid "Force View"
+msgstr "Forteaza afisarea"
+
+msgctxt "#31509"
+msgid "Auto View"
+msgstr "Afisare automata"
+
+msgctxt "#31510"
+msgid "Transitions"
+msgstr "Tranzitii"
+
+msgctxt "#31511"
+msgid "Transition logo"
+msgstr "Tranzitie logo"
+
+msgctxt "#31512"
+msgid "Transition background"
+msgstr "Tranzitie fundal"
+
+msgctxt "#31513"
+msgid "Choose a custom image between windows transitions."
+msgstr "Alege o imagine proprie pe timpul trecerii intre ferestrele de skin"
+
+msgctxt "#31514"
+msgid "Transition logo size"
+msgstr "Marimea logo de tranzitie"
+
+msgctxt "#31515"
+msgid "Transition logo position"
+msgstr 'Locul logo de tranzitie"
+
+
+msgctxt "#31516"
+msgid "Change the customized logo size that's appearing between windows transitions."
+msgstr "Schimba marimea logoului personal care apare intre ferestrele de tranzitie"
+
+msgctxt "#31517"
+msgid "Change the customized logo position that's appearing between windows transitions."
+msgstr "Schimba locul logoului personal ce apare intre ferestrele de tranzitie"
+
+msgctxt "#31518"
+msgid "Covers distance"
+msgstr "Distanta copertilor"
+
+msgctxt "#31519"
+msgid "Enable failsafe fanart"
+msgstr "Permite esec sigur pentru fanart"
+
+msgctxt "#31520"
+msgid "Choose this option in order to show home button fanart when there is no fanart at the navigation (Failsafe fanart)."
+msgstr "Alege aceasta optie pentru a aratabutonul fanart home , atunci cand nu este fanart la navigatie(esec fanart sigur)
+
+msgctxt "#31521"
+msgid "Hide fanart on navigation"
+msgstr "Ascunde fanart in timpul navigarii"
+
+msgctxt "#31522"
+msgid "Bigger labels"
+msgstr "Etichete mari"
+
+msgctxt "#31523"
+msgid "Increase the font size of the widgets titles."
+msgstr "Mareste dimensiunea fontului pentru titluri widget"
+
+msgctxt "#31524"
+msgid "Prefered view"
+msgstr "Imagine preferata"
+
+msgctxt "#31525"
+msgid ""
+msgstr ""
+
+msgctxt "#31526"
+msgid ""
+msgstr ""
+
+msgctxt "#31527"
+msgid ""
+msgstr ""
+
+msgctxt "#31528"
+msgid ""
+msgstr ""
+
+msgctxt "#31529"
+msgid ""
+msgstr ""
+
+msgctxt "#31530"
+msgid ""
+msgstr ""
+
+msgctxt "#31531"
+msgid ""
+msgstr ""
+
+msgctxt "#31532"
+msgid ""
+msgstr ""
+
+msgctxt "#31533"
+msgid ""
+msgstr ""
+
+msgctxt "#31534"
+msgid ""
+msgstr ""
+
+msgctxt "#31535"
+msgid ""
+msgstr ""
+
+msgctxt "#31536"
+msgid ""
+msgstr ""
+
+msgctxt "#31537"
+msgid ""
+msgstr ""
+
+msgctxt "#31538"
+msgid ""
+msgstr ""
+
+msgctxt "#31539"
+msgid ""
+msgstr ""
+
+msgctxt "#31540"
+msgid ""
+msgstr ""
+
+msgctxt "#31541"
+msgid ""
+msgstr ""
+
+msgctxt "#31542"
+msgid ""
+msgstr ""
+
+msgctxt "#31543"
+msgid ""
+msgstr ""
+
+msgctxt "#31544"
+msgid ""
+msgstr ""
+
+msgctxt "#31545"
+msgid ""
+msgstr ""
+
+msgctxt "#31546"
+msgid ""
+msgstr ""
+
+msgctxt "#31547"
+msgid ""
+msgstr ""
+
+msgctxt "#31548"
+msgid ""
+msgstr ""
+
+msgctxt "#31549"
+msgid ""
+msgstr ""
+
+msgctxt "#31550"
+msgid ""
+msgstr ""
+
+msgctxt "#31551"
+msgid ""
+msgstr ""
+
+msgctxt "#31552"
+msgid ""
+msgstr ""
+
+msgctxt "#31553"
+msgid ""
+msgstr ""
+
+msgctxt "#31554"
+msgid ""
+msgstr ""
+
+msgctxt "#31555"
+msgid ""
+msgstr ""
+
+msgctxt "#31556"
+msgid ""
+msgstr ""
+
+msgctxt "#31557"
+msgid ""
+msgstr ""
+
+msgctxt "#31558"
+msgid ""
+msgstr ""
+
+msgctxt "#31559"
+msgid ""
+msgstr ""
+
+msgctxt "#31560"
+msgid ""
+msgstr ""
+
+msgctxt "#31561"
+msgid ""
+msgstr ""
+
+msgctxt "#31562"
+msgid ""
+msgstr ""
+
+msgctxt "#31563"
+msgid ""
+msgstr ""
+
+msgctxt "#31564"
+msgid ""
+msgstr ""
+
+msgctxt "#31565"
+msgid ""
+msgstr ""
+
+msgctxt "#31566"
+msgid ""
+msgstr ""
+
+msgctxt "#31567"
+msgid ""
+msgstr ""
+
+msgctxt "#31568"
+msgid ""
+msgstr ""
+
+msgctxt "#31569"
+msgid ""
+msgstr ""
+
+msgctxt "#31570"
+msgid ""
+msgstr ""
+
+msgctxt "#31571"
+msgid ""
+msgstr ""
+
+msgctxt "#31572"
+msgid ""
+msgstr ""
+
+msgctxt "#31573"
+msgid ""
+msgstr ""
+
+msgctxt "#31574"
+msgid ""
+msgstr ""
+
+msgctxt "#31575"
+msgid ""
+msgstr ""
+
+msgctxt "#31576"
+msgid ""
+msgstr ""
+
+msgctxt "#31577"
+msgid ""
+msgstr ""
+
+msgctxt "#31578"
+msgid ""
+msgstr ""
+
+msgctxt "#31579"
+msgid ""
+msgstr ""
+
+msgctxt "#31580"
+msgid ""
+msgstr ""
+
+msgctxt "#31581"
+msgid ""
+msgstr ""
+
+msgctxt "#31582"
+msgid ""
+msgstr ""
+
+msgctxt "#31583"
+msgid ""
+msgstr ""
+
+msgctxt "#31584"
+msgid ""
+msgstr ""
+
+msgctxt "#31585"
+msgid ""
+msgstr ""
+
+msgctxt "#31586"
+msgid ""
+msgstr ""
+
+msgctxt "#31587"
+msgid ""
+msgstr ""
+
+msgctxt "#31588"
+msgid ""
+msgstr ""
+
+msgctxt "#31589"
+msgid ""
+msgstr ""
+
+msgctxt "#31590"
+msgid ""
+msgstr ""
+
+msgctxt "#31591"
+msgid ""
+msgstr ""
+
+msgctxt "#31592"
+msgid ""
+msgstr ""
+
+msgctxt "#31593"
+msgid ""
+msgstr ""
+
+msgctxt "#31594"
+msgid ""
+msgstr ""
+
+msgctxt "#31595"
+msgid ""
+msgstr ""
+
+msgctxt "#31596"
+msgid ""
+msgstr ""
+
+msgctxt "#31597"
+msgid ""
+msgstr ""
+
+msgctxt "#31598"
+msgid ""
+msgstr ""
+
+msgctxt "#31599"
+msgid ""
+msgstr ""
+msgctxt "#31600"
+msgid "Action"
+msgstr "Actiune"
+
+
+msgctxt "#31601"
+msgid "Adventure"
+msgstr "Aventura"
+
+msgctxt "#31602"
+msgid "Animation"
+msgstr "Animatie"
+
+msgctxt "#31603"
+msgid "Biography"
+msgstr "Biografie"
+
+msgctxt "#31604"
+msgid "Children"
+msgstr "Copii"
+
+msgctxt "#31605"
+msgid "Comedy"
+msgstr "Comedie"
+
+msgctxt "#31606"
+msgid "Crime"
+msgstr "Crima"
+
+msgctxt "#31607"
+msgid "Disaster"
+msgstr "Dezastre"
+
+msgctxt "#31608"
+msgid "Documentary"
+msgstr "Documentar'
+
+msgctxt "#31609"
+msgid "Drama"
+msgstr "Drama"
+
+msgctxt "#31610"
+msgid "Family"
+msgstr "Familie"
+
+msgctxt "#31611"
+msgid "Fantasy"
+msgstr "Fantezie"
+
+msgctxt "#31612"
+msgid "History"
+msgstr "Istorie"
+
+msgctxt "#31613"
+msgid "Holiday"
+msgstr "Vacanta"
+
+msgctxt "#31614"
+msgid "Horror"
+msgstr "Oroare"
+
+msgctxt "#31615"
+msgid "Indie"
+msgstr "Indian"
+
+msgctxt "#31616"
+msgid "Music"
+msgstr "Muzica"
+
+msgctxt "#31617"
+msgid "Mystery"
+msgstr "Mister"
+
+msgctxt "#31618"
+msgid "Romance"
+msgstr "Romantic"
+
+msgctxt "#31619"
+msgid "Sci-Fi"
+msgstr "Stintifico-fantastic"
+
+msgctxt "#31620"
+msgid "Short"
+msgstr "Scurt"
+
+msgctxt "#31621"
+msgid "Sport"
+msgstr "Sport"
+
+msgctxt "#31622"
+msgid "Suspense"
+msgstr "Suspence"
+
+msgctxt "#31623"
+msgid "Thriller"
+msgstr "Tensiune"
+
+msgctxt "#31624"
+msgid "War"
+msgstr "Razboi"
+
+msgctxt "#31625"
+msgid "Western"
+msgstr "Western"
+
+msgctxt "#31626"
+msgid "Game Show"
+msgstr "Spectacol joc"
+
+msgctxt "#31627"
+msgid "News"
+msgstr "Stiri"
+
+msgctxt "#31628"
+msgid "Reality"
+msgstr "Reality"
+
+msgctxt "#31629"
+msgid "Sitcom"
+msgstr "Situatii comice"
+
+msgctxt "#31630"
+msgid "Talk Show"
+msgstr "Talk Show'
+
+msgctxt "#31631"
+msgid "Food"
+msgstr "Mancare"
+
+msgctxt "#31632"
+msgid "Home and Garden"
+msgstr "Casa si gradina"
+
+msgctxt "#31633"
+msgid "Mini Series"
+msgstr "Mini serii"
+
+msgctxt "#31634"
+msgid "Soap"
+msgstr "Opera sapun"
+
+msgctxt "#31635"
+msgid "Special Interest"
+msgstr "De interes special"
+
+msgctxt "#31636"
+msgid "Travel"
+msgstr "Excursii"
+
+msgctxt "#31637"
+msgid "Film Noir"
+msgstr "Film Noir"
+
+msgctxt "#31638"
+msgid "Foreign"
+msgstr "Strain"
+
+msgctxt "#31646"
+msgid "Musical"
+msgstr "Muzical"
+
+#Custom
+msgctxt "#31650"
+msgid "Science & Technology"
+msgstr "Stiinta si tehnologie"
+
+msgctxt "#31651"
+msgid "People & Blogs"
+msgstr "Oameni si bloguri"
+
+msgctxt "#31652"
+msgid "Entertainment"
+msgstr "Distractii"
+
+msgctxt "#31653"
+msgid "Film & Animation"
+msgstr "Video si animatie"
+
+msgctxt "#31654"
+msgid "Autos & Vehicles"
+msgstr "Auto si vehicule"
+
+msgctxt "#31655"
+msgid "News & Politics"
+msgstr "Stiri si politica"
+
+msgctxt "#31656"
+msgid "Education"
+msgstr "Educatie"
+
+msgctxt "#31657"
+msgid "Pets & Animals"
+msgstr "arli giim"
+"Pets si animale"
+
+msgctxt "#31658"
+msgid "Travel & Events"
+msgstr "Excursii si evenimente"
+
+msgctxt "#31700"
+msgid "Driving"
+msgstr "Curse de masini"
+
+msgctxt "#31701"
+msgid "Platform"
+msgstr "Platforme"
+
+msgctxt "#31702"
+msgid "Run Jump"
+msgstr "Alearga/saritura"
+
+msgctxt "#31703"
+msgid "Maze"
+msgstr "labirint"
+
+msgctxt "#31704"
+msgid "Digging"
+msgstr "Sapare"
+
+msgctxt "#31705"
+msgid "Fighter"
+msgstr "Luptator"
+
+msgctxt "#31706"
+msgid "Miscellaneous"
+msgstr "Diverse"
+
+msgctxt "#31707"
+msgid "Shooter"
+msgstr "Impuscaturi"
+
+msgctxt "#31708"
+msgid "Puzzle"
+msgstr "Puzzle"
+
+msgctxt "#31709"
+msgid "Toss"
+msgstr "Debarasare"
+
+msgctxt "#31710"
+msgid "Hang Gliding"
+msgstr "Planare"
+
+
+msgctxt "#31711"
+msgid "1st Person"
+msgstr "Prima persoana"
+
+msgctxt "#31712"
+msgid "Gun"
+msgstr "Arma"
+
+msgctxt "#31713"
+msgid "Flying Vertical"
+msgstr "Zburand vertical"
+
+msgctxt "#31714"
+msgid "Flying Horizontal"
+msgstr "Zburand orizontal"
+
+msgctxt "#31715"
+msgid "Versus"
+msgstr "Opus"
+
+msgctxt "#31716"
+msgid "Multiplay"
+msgstr "Multi"
+
+msgctxt "#31717"
+msgid "2.5D"
+msgstr "Dimensiune 2.5D"
+
+msgctxt "#31718"
+msgid "Field"
+msgstr "Camp"
+
+msgctxt "#31719"
+msgid "3rd Person"
+msgstr "Persoana treia"
+
+msgctxt "#31720"
+msgid "Co-op"
+msgstr "Cooperare"
+
+msgctxt "#31721"
+msgid "Golf"
+msgstr "Golf"
+
+
+msgctxt "#31722"
+msgid "Wrestling"
+msgstr "Lupte libere"
+
+msgctxt "#31723"
+msgid "Hockey"
+msgstr "Hockey"
+
+msgctxt "#31724"
+msgid "Role-Playing"
+msgstr "Functii"
+
+msgctxt "#31725"
+msgid "Simulation"
+msgstr "Simulare"
+
+msgctxt "#31726"
+msgid "Strategy"
+msgstr "Strategie"
+
+msgctxt "#31727"
+msgid ""
+msgstr ""
+
+
+msgctxt "#31800"
+msgid "Sub Menu"
+msgstr "Submeniu"
+
+msgctxt "#31801"
+msgid "Sub Menu Mark"
+msgstr "Semn de submeniu"
+
+msgctxt "#31802"
+msgid "Choose this option in order to change the marker color when submenu is enable for a specific button.[CR][CR]The marker will be visible only if the button has color!"
+msgstr "Alege aceasta optie pentru a scimba semnul de colorare atunci cand submeniul este active pentru un anumit buton.(CR) Markerul va fi visibil numai daca butonul are culoare!"
+
+msgctxt "#31803"
+msgid "Reset Skin Settings"
+msgstr "Resetarea setarilor pentru Skin"
+
+msgctxt "#31804"
+msgid "Choose this option in order to reset your skin settings."
+msgstr "Alege aceasta optie pentru a restabili setarile tale de skin"
+
+msgctxt "#31805"
+msgid "Play Random Trailers"
+msgstr "Joaca trailere  aleatorii"
+
+msgctxt "#31806"
+msgid "Upper Information Window"
+msgstr "Fereastra de informare de sus"
+
+msgctxt "#31807"
+msgid "Addons Manager"
+msgstr "Administrator de addons"
+
+msgctxt "#31808"
+msgid "Smart search string"
+msgstr "Sir de cautare intelligent"
+
+msgctxt "#31809"
+msgid "Highlight"
+msgstr "Pune in evidenta"
+
+msgctxt "#31810"
+msgid "Background / Fanart"
+msgstr "Fundal/fanart"
+
+
+msgctxt "#31811"
+msgid "Unwatched Movies"
+msgstr "Filme nevizionate"
+
+msgctxt "#31812"
+msgid "Trailers"
+msgstr "Trailers"
+
+
+msgctxt "#31813"
+msgid "Inprogress TVshows"
+msgstr "Inprogress TVshows"
+
+msgctxt "#31814"
+msgid "Kids"
+msgstr "Copii"
+
+msgctxt "#31815"
+msgid "Change picture or background"
+msgstr "Scimba poza/fundalul"
+
+msgctxt "#31816"
+msgid "Choose your own Music File to be played upon startup.[CR][CR][COLOR=yellow]$INFO[Skin.String(StartUpMusic)][/COLOR]"
+msgstr "Alege fisierul de muzica personalcare safie cantat la startup.(CR) (CR)(COLOR=galben)$INFO[Skin.String(StartUpMusic)][/COLOR]"
+
+msgctxt "#31817"
+msgid "Choosing this option for playing music upon startup."
+msgstr "Alege aceasta optie pentru ca sa activezi muzicala pornirea aparatului"
+
+msgctxt "#31818"
+msgid "Choose this option to always watch trailers in fullscreen."
+msgstr "Alege aceasta optie pentru a viziona totdeauna trailrs pe ecran complet"
+
+msgctxt "#31819"
+msgid "Button color"
+msgstr "Culoarea butonului"
+
+msgctxt "#31820"
+msgid "Hide unactive buttons"
+msgstr "Ascunde butonii inactivi"
+
+msgctxt "#31821"
+msgid "Reset skin settings"
+msgstr "Reseteaza setarile skinului"
+
+msgctxt "#31822"
+msgid "Choose YES only if you know what you are doing!"
+msgstr "Alege DA numai daca stii ce faci"
+
+msgctxt "#31823"
+msgid "Bevel"
+msgstr "Inclinare"
+
+msgctxt "#31824"
+msgid "Stroke"
+msgstr "Cadru"
+
+msgctxt "#31825"
+msgid "Buttons Properties"
+msgstr "Proprietatile butoanelor"
+
+msgctxt "#31826"
+msgid "Menu Buttons"
+msgstr "Butoanele meniului"
+
+msgctxt "#31827"
+msgid "Reset colors"
+msgstr "Resetarea culorilor"
+
+msgctxt "#31828"
+msgid "Use this window in order to customize your system as you like."
+msgstr "Foloseste aceasta fereastra pentru a personalize sistemul tau asa cum iubesti."
+
+msgctxt "#31829"
+msgid "DVD Case"
+msgstr "Envelopa DVD"
+
+msgctxt "#31830"
+msgid "Skin Design"
+msgstr "Proiectarea skinului"
+
+msgctxt "#31831"
+msgid "Enable/Disable marker around your home buttons"
+msgstr "Activeaza/dezactiveaza semnul de alegereinjurul butonilor de acasa"
+
+msgctxt "#31832"
+msgid "Enable/Disable marker inside your home buttons.[CR][CR][COLOR=green]Fit well with coloring the buttons[/COLOR]"
+msgstr "Activeaza/dezactiveaza simbolul de alegere in interiorul butonilor tai de casa"(CR)(CR)(COLOR=verde)Se potriveste bine cu vopsitul butoanelor(/COLOR)"
+
+msgctxt "#31833"
+msgid "Enable/Disable shadow inside your home buttons.[CR][CR][COLOR=green]Fit well with coloring the buttons[/COLOR]"
+msgstr "Activeaza/Dezactiveaa umbra in interiorul butoanelor tale de casa.(CR)(CR)(COLOR=verde)Se potriveste binein special cu coratul butoanelor(/COLOR)."
+
+msgctxt "#31834"
+msgid "Enable/Disable clear frame button"
+msgstr "Activeaza/dezactiveaza    cadrul butonului transparent"
+
+msgctxt "#31835"
+msgid "Relocate the fanart position in the home screen by having a fanart on the entire screen or outside the home buttons area."
+msgstr "Relocheaza pozitia fanartului pe ecranul home incat sa apara fanart pe intregul ecran sau in afara zonei butoanelor home."
+
+msgctxt "#31836"
+msgid "Choose this option to allow fanart view while browsing home menu."
+msgstr "Alege aceasta optie pentru a permite expunere fanart in timpul navigarii pe fereastra home"
+
+
+msgctxt "#31837"
+msgid "Choose a color for home menu and sub menu icons.[CR]Affects others buttons across the skin as well."
+msgstr "Alege o culoare pentru meniul homesi pentru pictogramele submeniu.(CR)Afecteaza si alte butoane pe skin"
+
+msgctxt "#31838"
+msgid "Transparency"
+msgstr "Transparenta"
+
+msgctxt "#31839"
+msgid "UnFocus Icon/Label"
+msgstr "Pictograma/eticheta nealeasa"
+
+msgctxt "#31840"
+msgid "Focus Icon/Label"
+msgstr "Pictograma/eticheta aleasa"
+
+msgctxt "#31841"
+msgid "Texture"
+msgstr "Textura"
+
+msgctxt "#31842"
+msgid "Top bar"
+msgstr "Bara superioara"
+
+msgctxt "#31843"
+msgid "Choose this option in order to change color for"
+msgstr "Alege aceasta optie pentru a schimba culoarea pentru"
+
+msgctxt "#31844"
+msgid "Choose this option in order to change Transparency for"
+msgstr "Alege aceasta optie pentru a schimba transparenta pentru"
+
+msgctxt "#31845"
+msgid "Choose this option in order to change texture for"
+msgstr "Alege aceasta optie pentru a schimba textura pentru"
+
+msgctxt "#31846"
+msgid "Randomize and Reset lots of design aspects in the skin."
+msgstr "Alege aceasta optie daca vrei sa schimbi un numar mare de setari  prin apasare pe buton.(CR)ai posibilitatea sa restabilesti default, sa vopsesti butonii casei aleatoriu, sa vopsesti restul butonilor sis a schimbi nivelul de transparenta in mod aleatoriu , si altele prin apasare de buton."
+
+msgctxt "#31847"
+msgid "Choose this option when"
+msgstr "Alege optia asta atunci cand"
+
+msgctxt "#31848"
+msgid "Main background"
+msgstr ""Fundalul principal"
+
+msgctxt "#31849"
+msgid "Transperancy"
+msgstr "Transparenta"
+
+msgctxt "#31850"
+msgid "Overlay"
+msgstr "Diapozitif"
+
+msgctxt "#31851"
+msgid "Shadow"
+msgstr "Umbra"
+
+msgctxt "#31852"
+msgid "Enable/Disable a display of genres as icons in Movies, Tvshows and games."
+msgstr "Activeaza/Dezactiveaza o afisare degenuri de pictograme in Filme.tvshows si jocuri."
+
+msgctxt "#31853"
+msgid "Side menu"
+msgstr "Meniu lateral"
+
+msgctxt "#31854"
+msgid "Choose this option to set your prefered Clock settings.[CR]1. Date and Hour.[CR]2. Hour.[CR]3. Date."
+msgstr "Alege aceasta optie pentru a stabili setarile preferate pentru ceas.(CR)1.Data si Ora.(CR)2.Ora.(CR)3.Data."
+
+msgctxt "#31855"
+msgid "Change prefered clock"
+msgstr "Schimba ceasul preferat"
+
+msgctxt "#31856"
+msgid "Startup"
+msgstr "Startup"
+
+msgctxt "#31857"
+msgid "Enable time information"
+msgstr "Permite informative despre timp"
+
+msgctxt "#78939"
+msgid "Enable this option if you have"
+msgstr "Permita aceasta optie daca ai"
+
+msgctxt "#31858"
+msgid "Note: Current Subtitle in yellow."
+msgstr "Nota:Traducere in galben"
+
+msgctxt "#31859"
+msgid "Note: this subtitle has been previously chosen."
+msgstr "Nota:Aceasta traducere a fost aleasa dinainte."
+
+msgctxt "#31860"
+msgid "Changing server..."
+msgstr "Schimband serverul."
+
+msgctxt "#31861"
+msgid "Refreshing list..."
+msgstr "Reimprospatarea listei"
+
+msgctxt "#31862"
+msgid "Searching subtitle..."
+msgstr "Caut traducere"
+
+msgctxt "#31863"
+msgid "Choose one of the following options if you wish to change the reading direction for Movies and TVshows plot:[CR]1. AUTO (DEFAULT)[CR]2. RTL[CR]3. LTR[CR]4. JUSTIFY[CR]5. CENTER"
+msgstr "Alege una din urmatoarele optiuni dac vrei sa schimbi directia de citire pentru Filme si TVshows (CR)1.AUTO(DEFAULT)(CR)2. RTL[CR]3. LTR[CR]4. JUSTIFY[CR]5. CENTER"
+
+msgctxt "#31864"
+msgid "Movies/Tvshows plot align"
+msgstr "Directie text plot Filme/TVshows"
+
+msgctxt "#31865"
+msgid "Startup video delay"
+msgstr "Intarziere la deschidere video"
+
+msgctxt "#31866"
+msgid "Choose a delay time in seconds for video intro on startup."
+msgstr "Alege durata un timp de intarzierein secunde la deschidere"
+
+msgctxt "#31867"
+msgid "Volume level on startup"
+msgstr "Volumul sonorului la deschidere"
+
+msgctxt "#31868"
+msgid "Force volume level on startup. Leave empty to keep previous level of volume."
+msgstr "Forteaza nivelul volumului la startup. Lasa gol pentru a pastra nivelul volumului anterior."
+
+msgctxt "#31869"
+msgid "Custom fanart on startup"
+msgstr "Poze personalizate la startup"
+
+msgctxt "#31870"
+msgid "Choose an image file to appear on startup (Default is black screen with Please Wait message).[CR]You may want to sync your custom image with the video intro you're using!"
+msgstr "Alege o imagine sa apara la startup(Default este ecran negru cu mesajul Asteapt te rog mesajul).(CR)Poti dori sa sincronizezi imaginea dvs personalizata cu intro folosit de dvs."
+
+msgctxt "#31999"
+msgid ""
+msgstr ""
+
