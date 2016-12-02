@@ -22,7 +22,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.0.7" provider-name="finalmakerr, Angelscry">
+<addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.0.8" provider-name="finalmakerr, Angelscry">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simplejson" version="2.0.9"/>

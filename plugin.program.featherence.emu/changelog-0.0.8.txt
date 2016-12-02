@@ -3,6 +3,12 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence Emu v0.0.8 (02-Dec-16)
+------------------------
+- Added option to delete a game.
+- Added option to hide unavailable games.
+
+------------------------
 Featherence Emu v0.0.7 (12-Nov-16)
 ------------------------
 - Added auto installation script for Featherence Emu Console addon.

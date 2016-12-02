@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window description="כפתורים נגן וידאו+לוגו עצירה+מד ריצה תחתון (12901)">
-	<onload condition="IsEmpty(Window(home).Property(VideoPlayer.Info))">SetProperty(VideoPlayer.Info, true, home)</onload>
-    <onload condition="IsEmpty(Window(home).Property(mode10)) + !Pvr.IsPlayingTv + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !StringCompare(VideoPlayer.Title,featherence_.mp4) + !StringCompare(Window(home).Property(TEMP),startup)">RunScript(script.featherence.service,,?mode=10)</onload>
+	<onload condition="String.IsEmpty(Window(home).Property(VideoPlayer.Info))">SetProperty(VideoPlayer.Info, true, home)</onload>
+    <onload condition="String.IsEmpty(Window(home).Property(mode10)) + !Pvr.IsPlayingTv + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !String.IsEqual(VideoPlayer.Title,featherence_.mp4) + !String.IsEqual(Window(home).Property(TEMP),startup)">RunScript(script.featherence.service,,?mode=10)</onload>
 	<onload condition="Player.PauseEnabled">SetFocus(602)</onload>
 	<onload condition="!Control.IsVisible(602) + Control.IsVisible(603)">SetFocus(603)</onload>
 	<depth>DepthOSD</depth>
@@ -57,7 +57,7 @@
 					<height>100</height>
 					<onclick>Skin.ToggleSetting(OSDPosition)</onclick>
 					<onclick>Action(Close)</onclick>
-					<visible>!IsEmpty(Window(home).Property(OSDPlus))</visible>
+					<visible>!String.IsEmpty(Window(home).Property(OSDPlus))</visible>
 				</control>
 				<control type="button" id="699" description="עדכון ספרייה">
 					<texturefocus>osd/buttons/OSDMinusFO.png</texturefocus>
@@ -77,8 +77,8 @@
 					<usealttexture>Playlist.IsRepeat | Playlist.IsRepeatOne</usealttexture>
 					<onclick>PlayerControl(RepeatAll)</onclick>
 					<altclick>PlayerControl(RepeatOff)</altclick>
-					<visible>Player.HasAudio + !Pvr.IsPlayingRadio | Playlist.IsRepeat | Playlist.IsRepeatOne | !IsEmpty(Window(home).Property(OSDPlus)) + IntegerGreaterThan(Playlist.Length(video),1)</visible>
-					<visible>!SubString(Player.FolderPath,rtmp://) + !SubString(Player.FolderPath,mms://)</visible>
+					<visible>Player.HasAudio + !Pvr.IsPlayingRadio | Playlist.IsRepeat | Playlist.IsRepeatOne | !String.IsEmpty(Window(home).Property(OSDPlus)) + Integer.IsGreater(Playlist.Length(video),1)</visible>
+					<visible>!String.Contains(Player.FolderPath,rtmp://) + !String.Contains(Player.FolderPath,mms://)</visible>
 				</control>	
 				<control type="togglebutton" id="612" description="Audio">
 				    <enable>Player.HasAudio</enable>
@@ -109,7 +109,7 @@
                     <width>100</width>
 					<height>100</height>
 					<onclick>ActivateWindow(osdaudiosettings)</onclick>
-					<visible>!IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(VideoAudioOSDAlwaysOn)</visible>
+					<visible>!String.IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(VideoAudioOSDAlwaysOn)</visible>
 				</control>
 				<control type="button" id="702" description="הגדרות וידאו">
 					<texturefocus>osd/buttons/OSDVideoFO.png</texturefocus>
@@ -117,7 +117,7 @@
 					<width>100</width>
 					<height>100</height>
 					<onclick>ActivateWindow(osdvideosettings)</onclick>
-					<visible>!IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(VideoAudioOSDAlwaysOn)</visible>
+					<visible>!String.IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(VideoAudioOSDAlwaysOn)</visible>
 				</control>
 				<control type="button" id="709" description="רשימת השמעה">
 					<texturefocus>osd/buttons/OSDBookMarksFO.png</texturefocus>
@@ -126,7 +126,7 @@
 					<height>100</height>
 					<onclick>Dialog.Close(videoosd)</onclick>
 					<onclick>ActivateWindow(videoplaylist)</onclick>
-					<visible>!IsEmpty(Window(home).Property(OSDPlus)) + [IntegerGreaterThan(Playlist.Length(video),1) | IntegerGreaterThan(Playlist.Length(music),1)]</visible>
+					<visible>!String.IsEmpty(Window(home).Property(OSDPlus)) + [Integer.IsGreater(Playlist.Length(video),1) | Integer.IsGreater(Playlist.Length(music),1)]</visible>
 				</control>
 				<control type="button" id="705" description="3D">
 					<texturefocus>osd/buttons/OSDStereoscopicFO.png</texturefocus>
@@ -139,21 +139,21 @@
 					<onclick>ToggleStereoMode</onclick>
 					<!--<onclick>SetStereoMode(split_horizontal)</onclick>-->
 					<!--<onclick>SetStereoMode(split_horizontal)</onclick>-->
-					<visible>VideoPlayer.IsStereoscopic | !IsEmpty(VideoPlayer.StereoscopicMode) | StringCompare(VideoPlayer.VideoResolution,1080)</visible>
-					<visible>!IsEmpty(Window(home).Property(OSDPlus))</visible>
-					<!--<visible>StringCompare(VideoPlayer.VideoResolution,720) | StringCompare(VideoPlayer.VideoResolution,1080) | StringCompare(VideoPlayer.VideoResolution,4K)</visible>-->
+					<visible>VideoPlayer.IsStereoscopic | !String.IsEmpty(VideoPlayer.StereoscopicMode) | String.IsEqual(VideoPlayer.VideoResolution,1080)</visible>
+					<visible>!String.IsEmpty(Window(home).Property(OSDPlus))</visible>
+					<!--<visible>String.IsEqual(VideoPlayer.VideoResolution,720) | String.IsEqual(VideoPlayer.VideoResolution,1080) | String.IsEqual(VideoPlayer.VideoResolution,4K)</visible>-->
 				</control>				
 				<control type="togglebutton" id="603" description="הפסק">
 					<texturefocus>osd/buttons/OSDStopFO.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDStopNF.png</texturenofocus>
 					<alttexturefocus>osd/buttons/OSDStop2FO.png</alttexturefocus>
 					<alttexturenofocus>osd/buttons/OSDStop2NF.png</alttexturenofocus>
-					<usealttexture>!IsEmpty(Window(home).Property(OSDPlus))</usealttexture>
+					<usealttexture>!String.IsEmpty(Window(home).Property(OSDPlus))</usealttexture>
 					<width>100</width>
 					<height>100</height>
 					<onclick>PlayerControl(Stop)</onclick>
-					<onup condition="IsEmpty(Window(home).Property(OSDPlus))">SetProperty(OSDPlus,true,home)</onup>
-					<onup condition="!IsEmpty(Window(home).Property(OSDPlus))">ClearProperty(OSDPlus,home)</onup>
+					<onup condition="String.IsEmpty(Window(home).Property(OSDPlus))">SetProperty(OSDPlus,true,home)</onup>
+					<onup condition="!String.IsEmpty(Window(home).Property(OSDPlus))">ClearProperty(OSDPlus,home)</onup>
 				</control>
 				<control type="button" id="613" description="Audio">
 					<texturefocus>osd/buttons/OSDLyricsFO.png</texturefocus>
@@ -161,10 +161,10 @@
                     <width>100</width>
 					<height>100</height>
 					<!--<onclick>close</onclick>-->
-					<onclick condition="IsEmpty(Skin.String(LyricPath))">Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
-					<onclick condition="!IsEmpty(Skin.String(LyricPath))">XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
+					<onclick condition="String.IsEmpty(Skin.String(LyricPath))">Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
+					<onclick condition="!String.IsEmpty(Skin.String(LyricPath))">XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
 					<visible>Player.HasAudio</visible>
-					<visible>!IsEmpty(Window(home).Property(OSDPlus))</visible>
+					<visible>!String.IsEmpty(Window(home).Property(OSDPlus))</visible>
 				</control>
 				<control type="button" id="601" description="אחורה">
 					<texturefocus>osd/buttons/OSDRewindFO+.png</texturefocus>
@@ -175,8 +175,8 @@
 					<onclick condition="Player.Paused">PlayerControl(Play)</onclick>
 					<onclick>PlayerControl(Rewind)</onclick>
 					<visible>Player.SeekEnabled</visible>
-					<!--<visible>!SubString(Player.FolderPath,rtmp://) + !SubString(Player.FolderPath,mms://)</visible>-->
-					<visible>!StringCompare(Player.TimeRemaining,) + IntegerGreaterThan(Player.TimeRemaining,1)</visible>
+					<!--<visible>!String.Contains(Player.FolderPath,rtmp://) + !String.Contains(Player.FolderPath,mms://)</visible>-->
+					<visible>!String.IsEqual(Player.TimeRemaining,) + Integer.IsGreater(Player.TimeRemaining,1)</visible>
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="button" id="803" description="ערוץ קודם">
@@ -200,7 +200,7 @@
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 					<onclick>PlayerControl(Play)</onclick>
 					<visible>Player.PauseEnabled</visible>
-					<!--<visible>!SubString(Player.FolderPath,rtmp://) + !SubString(Player.FolderPath,mms://)</visible>-->
+					<!--<visible>!String.Contains(Player.FolderPath,rtmp://) + !String.Contains(Player.FolderPath,mms://)</visible>-->
 				</control>
 				<control type="button" id="802" description="ערוץ הבא">
 					<texturefocus>osd/buttons/OSDChannelUPFO.png</texturefocus>
@@ -266,8 +266,8 @@
 					<onclick condition="Player.Paused">PlayerControl(Play)</onclick>
 					<onclick>PlayerControl(Forward)</onclick>
 					<visible>Player.SeekEnabled</visible>
-					<!--<visible>!SubString(Player.FolderPath,rtmp://) + !SubString(Player.FolderPath,mms://)</visible>-->
-					<visible>!StringCompare(Player.TimeRemaining,) + IntegerGreaterThan(Player.TimeRemaining,1)</visible>
+					<!--<visible>!String.Contains(Player.FolderPath,rtmp://) + !String.Contains(Player.FolderPath,mms://)</visible>-->
+					<visible>!String.IsEqual(Player.TimeRemaining,) + Integer.IsGreater(Player.TimeRemaining,1)</visible>
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="togglebutton" id="703" description="תרגום">
@@ -287,7 +287,7 @@
 					<onclick condition="Skin.HasSetting(Touch_Support) | Skin.HasSetting(ExtraMouseSupport)">ActivateWindow(1175)</onclick>
 					<onclick condition="Skin.HasSetting(Touch_Support) | Skin.HasSetting(ExtraMouseSupport)">ClearProperty(TEMP2,home)</onclick>
 					<onclick condition="!Skin.HasSetting(Touch_Support) + !Skin.HasSetting(ExtraMouseSupport)">ActivateWindow(SubtitleSearch)</onclick>
-					<visible>!VideoPlayer.Content(LiveTV) | !StringCompare(Player.TimeRemaining,) + IntegerGreaterThan(Player.TimeRemaining,1)</visible>
+					<visible>!VideoPlayer.Content(LiveTV) | !String.IsEqual(Player.TimeRemaining,) + Integer.IsGreater(Player.TimeRemaining,1)</visible>
 				</control>
 				<control type="button" id="704" description="DVD">
 					<texturefocus>osd/buttons/OSDDvdFO.png</texturefocus>
@@ -317,15 +317,15 @@
 					<alttexturenofocus>osd/buttons/OSDAudio2NF.png</alttexturenofocus>
 					<width>100</width>
 					<height>100</height>
-					<usealttexture>Player.Muted | !IntegerGreaterThan(Player.Volume,1)</usealttexture>
+					<usealttexture>Player.Muted | Integer.IsLess(Player.Volume,1)</usealttexture>
 					<onup>Action(VolumeUp)</onup>
 					<ondown>Action(VolumeDown)</ondown>
 					<onclick condition="Skin.HasSetting(Touch_Support) | Skin.HasSetting(ExtraMouseSupport)">SetProperty(TEMP2,707,home)</onclick>
 					<onclick condition="Skin.HasSetting(Touch_Support) | Skin.HasSetting(ExtraMouseSupport)">ActivateWindow(1175)</onclick>
 					<onclick condition="Skin.HasSetting(Touch_Support) | Skin.HasSetting(ExtraMouseSupport)">ClearProperty(TEMP2,home)</onclick>
 					<onclick condition="!Skin.HasSetting(Touch_Support) + !Skin.HasSetting(ExtraMouseSupport)">Action(Mute)</onclick>
-					<altclick condition="IntegerGreaterThan(Player.Volume,1)">Action(Mute)</altclick>
-					<altclick condition="!IntegerGreaterThan(Player.Volume,1)">SetVolume(70)</altclick>
+					<altclick condition="Integer.IsGreater(Player.Volume,1)">Action(Mute)</altclick>
+					<altclick condition="Integer.IsLess(Player.Volume,1)">SetVolume(70)</altclick>
 					<!--<visible>Control.HasFocus(707) | Control.HasFocus(703) | Control.HasFocus(707) | Skin.HasSetting(Admin)</visible>-->
 				</control>
 			</control>
