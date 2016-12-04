@@ -1,9 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.featherence" name="Featherence repository" version="1.1.0" provider-name="finalmakerr">
+<addon id="repository.featherence" name="Featherence repository" version="1.2.0" provider-name="finalmakerr">
 	<extension point="xbmc.addon.repository" name="Featherence repository">
-		<info compressed="false">https://raw.githubusercontent.com/finalmakerr/featherence/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/finalmakerr/featherence/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/finalmakerr/featherence/master/</datadir>
+		<dir minversion="0.0.0">
+			<info compressed="false">https://raw.githubusercontent.com/finalmakerr/featherence/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/finalmakerr/featherence/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/finalmakerr/featherence/master/</datadir>
+		</dir>
+		<dir minversion="15.0.0">
+			<info compressed="false">https://raw.githubusercontent.com/finalmakerr/featherence/master/_Helix/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/finalmakerr/featherence/master/_Helix/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/finalmakerr/featherence/master/_Helix/</datadir>
+		</dir>
+		<dir minversion="15.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/finalmakerr/featherence/master/_Jarvis/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/finalmakerr/featherence/master/_Jarvis/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/finalmakerr/featherence/master/_Jarvis/</datadir>
+		</dir>
+		<dir minversion="16.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/finalmakerr/featherence/master/_Krypton/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/finalmakerr/featherence/master/_Krypton/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/finalmakerr/featherence/master/_Krypton/</datadir>
+		</dir>
     </extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>

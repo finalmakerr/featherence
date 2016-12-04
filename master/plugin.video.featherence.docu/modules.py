@@ -853,7 +853,7 @@ def CATEGORIES10403(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLyFDjajffaUAxX0JIB2bVlJL-r-Og3GhW')
 	list.append('&youtube_pl=PLwC75JJGC4SUavw0jxNw66mTHsaPyLMqY')
 	list.append('&youtube_pl=PLlxvC7vPiNHBfbJJGMdAi-8njhYGQHgGt')
-	addDir(addonString(30454).encode('utf-8'),list,17,'http://wallpaperbeta.com/wallpaper_800x600/porsche_plane_sun_airfield_machine_car_800x600_hd-wallpaper-342079.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30454).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30454).encode('utf-8'),list,17,'http://www.trdparts.jp/english/assets/img/rc-concept.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30454).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom="http://wallpaper.zone/img/1929799.jpg"))
    
 	'''מחשבים'''
 	list = []
@@ -861,7 +861,7 @@ def CATEGORIES10403(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL57quI9usf_uI8ZxI58Gc5ACnmbL7rxP-')
 	list.append('&youtube_pl=PL57quI9usf_so2Apomw8ap8jMm8e2-xTs')
 	list.append('&youtube_pl=PL57quI9usf_saUGUzSvs4909pfSaloLHS')
-	addDir(addonString(30452).encode('utf-8'),list,17,'http://7-themes.com/data_images/out/73/7022381-computer-keyboard-wallpaper.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30452).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30452).encode('utf-8'),list,17,'http://kaplancomputers.com/wp-content/uploads/2014/04/Happy-Computer.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30452).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom="http://www.hutui6.com/data/out/41/68116264-computers-wallpapers.jpg"))
     
 	'''סלולר'''
 	list = []
@@ -869,8 +869,17 @@ def CATEGORIES10403(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PL57quI9usf_us0KVzB8aZFPVmdvp1_sIh')
 	list.append('&youtube_pl=PLPBN-Ln1bNtxpgyoI2uVTAoD3VqHfe83c')
 	list.append('&youtube_pl=PL57quI9usf_ujAfHHeCUHuJDL9rMo2_kr')
-	addDir(addonString(30451).encode('utf-8'),list,17,'http://wallpapers.windowsace.com/pics/f/r/free-electronics-and-gadgets-iphone-wallpaper-voyager-cell-phone--a-e-ibackgroundz.com.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30451).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom=""))
+	addDir(addonString(30451).encode('utf-8'),list,17,'https://pixabay.com/static/uploads/photo/2012/04/26/12/57/cell-42409_960_720.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30451).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom="http://colecellulartyler.com/files/2013/06/157734-1920x10801.jpg"))
     
+	'''צבא'''
+	list = []
+	list.append('&youtube_ch=Mparovios3000')
+	list.append('&youtube_ch=epsil2')
+	list.append('&youtube_ch=vsbdefense')
+	list.append('&youtube_ch=UCXw6jajdMu7tBrpvZqVUAaQ')
+	list.append('&youtube_ch=UCzqZWekrxPTL2s8J_UMtS_A')
+	addDir(addonString(30456).encode('utf-8'),list,17,'http://www.yadlashiryon.com/VF/ib_items/2025/1.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30456).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom="https://i.ytimg.com/vi/BR3x-MV4neY/maxresdefault.jpg"))
+
 	'''קודי'''
 	list = []
 	list.append('&youtube_ch=hmemar22')	
@@ -896,7 +905,7 @@ def CATEGORIES10403(name, iconimage, desc, fanart):
 	list.append('&youtube_id=Bm6LzaxTX44')
 	list.append('&youtube_id=geW-geF5fa4')
 	addDir(addonString(30455).encode('utf-8'),list,17,'https://gyulchev.files.wordpress.com/2014/05/robot_blue.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30455).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom=""))
-
+	
 	CATEGORIES10403A(name, iconimage, desc, fanart) #עמוד הבא
 	
 def CATEGORIES107(name, iconimage, desc, fanart):

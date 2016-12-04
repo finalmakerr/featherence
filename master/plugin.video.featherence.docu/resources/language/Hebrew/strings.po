@@ -1471,8 +1471,8 @@ msgid "Robotics"
 msgstr "רובוטיקה"
 
 msgctxt "#30456"
-msgid ""
-msgstr ""
+msgid "Military"
+msgstr "צבא"
 
 msgctxt "#30457"
 msgid ""

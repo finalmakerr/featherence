@@ -59,7 +59,7 @@
 	  <posx>-470</posx>
 	  <posy>100</posy>	  
 	  <width>900</width> 	  
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="0" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="0" />
@@ -103,7 +103,7 @@
         <ondown>20</ondown>
         <pagecontrol>61</pagecontrol>
         <itemlayout height="60" width="900">
-		  <include name="Buttons_Frame0">
+		  <include content="Buttons_Frame0">
 			<param name="id" value="" />
 			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -139,7 +139,7 @@
 		    <onfocus condition="!Skin.String(FileManagerFocus,20)">Skin.SetString(FileManagerFocus,20)</onfocus>
 			<visible>false</visible>
 		  </control>
-		  <include name="Buttons_Frame0">
+		  <include content="Buttons_Frame0">
 			<param name="id" value="" />
 			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -180,7 +180,7 @@
 	  <posx>1490</posx>
 	  <posy>100</posy>	  
 	  <width>900</width>	  	  
-      <include name="MenuBackground">
+      <include content="MenuBackground">
 		<param name="border" value="0" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="0" />
@@ -224,7 +224,7 @@
         <ondown>21</ondown>
         <pagecontrol>60</pagecontrol>
         <itemlayout height="60" width="900">
-		  <include name="Buttons_Frame0">
+		  <include content="Buttons_Frame0">
 			<param name="id" value="" />
 			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -260,7 +260,7 @@
 		    <onfocus condition="!Skin.String(FileManagerFocus,21)">Skin.SetString(FileManagerFocus,21)</onfocus>
 			<visible>false</visible>
 		  </control>
-		  <include name="Buttons_Frame0">
+		  <include content="Buttons_Frame0">
 			<param name="id" value="" />
 			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -301,7 +301,7 @@
 	  <width>20</width>
 	  <posx>1900</posx>
 	  <posy>146.5</posy>
-	  <visible>IntegerGreaterThan(Container(21).NumPages,1)</visible>
+	  <visible>Integer.IsGreater(Container(21).NumPages,1)</visible>
 	  <control type="image" description="מסגרת">
 		<height>100%</height>
 		<posx>0</posx>
@@ -330,7 +330,7 @@
 	  <width>20</width>
 	  <posx>0</posx>
 	  <posy>146.5</posy>
-	  <visible>IntegerGreaterThan(Container(20).NumPages,1)</visible>
+	  <visible>Integer.IsGreater(Container(20).NumPages,1)</visible>
 	  <control type="image" description="מסגרת">
 		<height>100%</height>
 		<posx>0</posx>

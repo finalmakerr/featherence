@@ -3,6 +3,14 @@ WIP (WORK IN PROGRESS)--
 ------------------------
 
 ------------------------
+Featherence Docu v0.1.14 (04-Dec-16)
+------------------------
+- Added Discovery Documentary Channel in Space category.
+- Added Documentary Films Channel in Science category.
+- Added new category - Military in science-technology category.
+- Minor update of thumbnails and fanarts in technology category.
+
+------------------------
 Featherence Docu v0.1.13 (28-Sep-16)
 ------------------------
 - Major update of autoview feature.

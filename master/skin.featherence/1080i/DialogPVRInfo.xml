@@ -3,7 +3,7 @@
   <defaultcontrol always="true">9005</defaultcontrol>
   <controls>
     <control type="group">
-	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
+	  <visible>String.IsEmpty(Window(home).Property(ReloadSkin))</visible>
       <include>MenuDesign_Center</include>
 	</control>
   </controls>

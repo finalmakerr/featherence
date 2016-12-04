@@ -6,7 +6,7 @@
 		<control type="group">
 			<posx>88</posx>
 			<posy>140</posy>
-			<include name="MenuBackground">
+			<include content="MenuBackground">
 				<param name="border" value="40" />
 				<param name="color" value="$VAR[MenuColor]" />
 				<param name="height" value="890" />
@@ -29,7 +29,7 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>250</scrolltime>
 				<itemlayout width="820" height="75">
-				  <include name="Buttons_Frame">
+				  <include content="Buttons_Frame">
 					<param name="id" value="" />
 					<param name="border" value="40" />
 					<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -55,14 +55,14 @@
 					<height>65</height>
 					<posx>20</posx>
 					<posy>15</posy>
-					<include condition="StringCompare(System.Language,Hebrew)">ImageL1</include>
-					<include condition="!StringCompare(System.Language,Hebrew)">ImageR1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew)">ImageL1</include>
+					<include condition="!String.IsEqual(System.Language,Hebrew)">ImageR1</include>
 					
 					<texture border="0" diffuse="buttons/types/bd1.png">$INFO[ListItem.Property(Icon)]</texture>
 				  </control>
 				</itemlayout>
 				<focusedlayout width="820" height="75">
-				  <include name="Buttons_Frame">
+				  <include content="Buttons_Frame">
 					<param name="id" value="" />
 					<param name="border" value="40" />
 					<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -88,15 +88,15 @@
 					<height>65</height>
 					<posx>20</posx>
 					<posy>15</posy>
-					<include condition="StringCompare(System.Language,Hebrew)">ImageL1</include>
-					<include condition="!StringCompare(System.Language,Hebrew)">ImageR1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew)">ImageL1</include>
+					<include condition="!String.IsEqual(System.Language,Hebrew)">ImageR1</include>
 					<texture border="0" diffuse="buttons/types/bd1.png">$INFO[ListItem.Property(Icon)]</texture>
 				  </control>
 				</focusedlayout>
 			</control>
 		</control>
 		<control type="group" id="9002">
-			<include name="MenuBackground">
+			<include content="MenuBackground">
 				<param name="border" value="40" />
 				<param name="color" value="$VAR[MenuColor]" />
 				<param name="height" value="950" />
@@ -128,8 +128,8 @@
 				</control>
 				<control type="radiobutton" id ="7" description="Channel activated">
 					<width>740</width>
-					<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-				    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+				    <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 				    <font>size28</font>
 					<label>19074</label>
 				</control>
@@ -143,16 +143,16 @@
 				<control type="button" id ="9">
 					<description>Channel logo Button</description>
 					<width>740</width>
-					<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-				    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+				    <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 				    <font>size28</font>
 					<label>19202</label>
 				</control>
 				<control type="radiobutton" id ="12">
 					<description>EPG activated</description>
 					<width>740</width>
-					<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-				    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+				    <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 				    <font>size28</font>
 					<pulseonselect>no</pulseonselect>
 					<label>19206</label>
@@ -160,8 +160,8 @@
 				<control type="spincontrolex" id ="13">
 					<description>EPG source</description>
 					<width>740</width>
-					<include condition="StringCompare(System.Language,Hebrew)">ButtonSettingsCategory2_he</include>
-				    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew)">ButtonSettingsCategory2_he</include>
+				    <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 					
 				    <font>size28</font>
 					<label>19200</label>
@@ -169,8 +169,8 @@
 				<control type="radiobutton" id ="14">
 					<description>Parental locked</description>
 					<width>740</width>
-					<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-				    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+				    <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 				    <font>size28</font>
 					<pulseonselect>no</pulseonselect>
 					<label>19267</label>
@@ -178,40 +178,40 @@
 				<control type="button" id ="30">
 					<description>Group Manager Button</description>
 					<width>740</width>
-					<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-				    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+				    <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 				    <font>size28</font>
 					<label>19205</label>
 				</control>
 				<control type="button" id ="34">
 					<description>TV/Radio Button</description>
 					<width>740</width>
-					<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-				    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+				    <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 				    <font>size28</font>
 					<label>$LOCALIZE[19023] / $LOCALIZE[19024]</label>
 				</control>
 				<control type="button" id ="31">
 					<description>Edit channel Button</description>
 					<width>740</width>
-					<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-				    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+				    <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 				    <font>size28</font>
 					<label>19203</label>
 				</control>
 				<control type="button" id ="32">
 					<description>Delete channel Button</description>
 					<width>740</width>
-					<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-				    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+				    <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 				    <font>size28</font>
 					<label>19211</label>
 				</control>
 				<control type="button" id ="33">
 					<description>New channel Button</description>
 					<width>740</width>
-					<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-				    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+				    <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 				    <font>size28</font>
 					<label>19204</label>
 				</control>
@@ -222,8 +222,8 @@
 				<height>65</height>
 				<posx>1055</posx>
 				<posy>352</posy>
-				<include condition="StringCompare(System.Language,Hebrew)">ImageL1</include>
-				<include condition="!StringCompare(System.Language,Hebrew)">ImageR1</include>
+				<include condition="String.IsEqual(System.Language,Hebrew)">ImageL1</include>
+				<include condition="!String.IsEqual(System.Language,Hebrew)">ImageR1</include>
 				
 				<texture border="0" diffuse="buttons/types/bd1.png">$INFO[ListItem.Property(Icon)]</texture>
 			</control>

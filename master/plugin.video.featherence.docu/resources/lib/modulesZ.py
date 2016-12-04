@@ -59,6 +59,7 @@ def CATEGORIES102Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=scishowspace')
 	list.append('&youtube_ch=canadianspaceagency')
 	list.append('&youtube_ch=HubbleSiteChannel')
+	list.append('&youtube_ch=UCmBobPZzLEOQ71AtLwnuntw')
 	
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, default=fanart))
 	
@@ -123,7 +124,7 @@ def CATEGORIES10403Z(name, iconimage, desc, background, fanart):
 	
 	list = []
 
-	list.append('&youtube_ch=')
+	list.append('&youtube_ch=UC76oOi1L0BOsLome8P-mBnw')
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		

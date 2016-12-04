@@ -4,11 +4,11 @@
 	<onload condition="System.HasAddon(script.featherence.service)">RunScript(script.featherence.service,,?mode=9)</onload>
     <controls>
 	  <control type="group">
-	    <animation condition="[System.IdleTime(5)] + !Player.Paused + [VideoPlayer.SubtitlesEnabled + VideoPlayer.HasSubtitles | StringCompare(Container(120).NumItems,0)]" effect="Fade" start="100" end="10" time="3000" reversible="false">Conditional</animation>
+	    <animation condition="[System.IdleTime(5)] + !Player.Paused + [VideoPlayer.SubtitlesEnabled + VideoPlayer.HasSubtitles | String.IsEqual(Container(120).NumItems,0)]" effect="Fade" start="100" end="10" time="3000" reversible="false">Conditional</animation>
         <control type="group" id="250" description="ראשי">
           <posx>240</posx>
 		  <posy>810</posy>
-		  <include name="MenuBackground">
+		  <include content="MenuBackground">
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="570" />
@@ -59,7 +59,7 @@
 			  <font>size24</font>
 			  <height>40</height>
 			  <posx>1418</posx>
-			  <visible>IntegerGreaterThan(Container(120).NumItems,0) + IsEmpty(Control.GetLabel(1300))</visible>
+			  <visible>Integer.IsGreater(Container(120).NumItems,0) + String.IsEmpty(Control.GetLabel(1300))</visible>
 			  <width>500</width>
 			</control>
 			<control type="label" id="1300" description="תרגום נוכחי">
@@ -69,7 +69,7 @@
 			  <height>40</height>
 			  <posx>1418</posx>
 			  <textcolor>yellow</textcolor>
-			  <visible>IsEmpty(Window(home).Property(TEMP)) + IntegerGreaterThan(Container(120).NumItems,0)</visible>
+			  <visible>String.IsEmpty(Window(home).Property(TEMP)) + Integer.IsGreater(Container(120).NumItems,0)</visible>
 			  <width>500</width>
 			</control>
 			<control type="label" id="1301" description="הודעות">
@@ -79,7 +79,7 @@
 			  <height>40</height>
 			  <posx>1418</posx>
 			  <textcolor>yellow</textcolor>
-			  <visible>!IsEmpty(Window(home).Property(TEMP))</visible>
+			  <visible>!String.IsEmpty(Window(home).Property(TEMP))</visible>
 			  <width>500</width>
 			</control>
           </control>
@@ -93,7 +93,7 @@
                 <viewtype label="535">list</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <itemlayout width="1360" height="54">
-				    <include name="Buttons_Frame">
+				    <include content="Buttons_Frame">
 						<param name="id" value="" />
 						<param name="border" value="30" />
 						<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -158,7 +158,7 @@
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label2</info>
-						<visible>StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA1)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA2)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA3)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA4)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA5)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA6)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA7)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA8)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA9)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA10))</visible>
+						<visible>String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA1)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA2)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA3)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA4)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA5)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA6)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA7)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA8)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA9)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA10))</visible>
                     </control>
 					<control type="label" description="שם הקובץ2">
                         <posx>320</posx>
@@ -170,7 +170,7 @@
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label2</info>
-						<visible>StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitles2))</visible>
+						<visible>String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitles2))</visible>
                     </control>
                     <control type="image" description="דירוג">
                         <posx>1300</posx>
@@ -188,7 +188,7 @@
 					</control>
 					<control type="group">
 					  <visible>Control.HasFocus(120)</visible>
-					  <include name="Buttons_Frame">
+					  <include content="Buttons_Frame">
 						<param name="id" value="" />
 						<param name="border" value="30" />
 						<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -201,7 +201,7 @@
 					</control>
 					<control type="group">
 					  <visible>!Control.HasFocus(120)</visible>
-					  <include name="Buttons_Frame">
+					  <include content="Buttons_Frame">
 						<param name="id" value="" />
 						<param name="border" value="30" />
 						<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -264,7 +264,7 @@
                         <textcolor>grey2</textcolor>
                         <align>left</align>
                         <info>ListItem.Label2</info>
-						<visible>StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA1)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA2)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA3)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA4)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA5)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA6)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA7)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA8)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA9)) | StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitlesNA10))</visible>
+						<visible>String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA1)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA2)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA3)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA4)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA5)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA6)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA7)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA8)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA9)) | String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitlesNA10))</visible>
                     </control>
 					<control type="label" description="שם הקובץ2">
                         <posx>320</posx>
@@ -275,7 +275,7 @@
                         <textcolor>yellow</textcolor>
                         <align>left</align>
                         <info>ListItem.Label2</info>
-						<visible>StringCompare(ListItem.Label2,Window(home).Property(DialogSubtitles2))</visible>
+						<visible>String.IsEqual(ListItem.Label2,Window(home).Property(DialogSubtitles2))</visible>
                     </control>
                     <control type="image" description="דירוג">
                         <posx>1300</posx>
@@ -314,7 +314,7 @@
 			  <ondown>150</ondown>
 			  <viewtype label="535">list</viewtype>
 			  <itemlayout width="450" height="65">
-			    <include name="Buttons_Frame">
+			    <include content="Buttons_Frame">
 					<param name="id" value="" />
 					<param name="border" value="30" />
 					<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -331,7 +331,7 @@
 				  <height>62</height>
 				  <width>62</width>
 				  <texture diffuse="buttons/types/bd.png" background="false">$INFO[ListItem.Property(Addon.Path)]/icon.png</texture>
-				  <visible>!IsEmpty(ListItem.Property(Addon.Path))</visible>
+				  <visible>!String.IsEmpty(ListItem.Property(Addon.Path))</visible>
 				</control>
 				<control type="label">
 				  <include condition="true">LabelL1</include>
@@ -354,7 +354,7 @@
 			  <focusedlayout width="450" height="65">
 			    <control type="group">
 				  <visible>Control.HasFocus(151) + !Control.HasFocus(160) + !Control.HasFocus(161) + !Control.HasFocus(120)</visible>
-				  <include name="Buttons_Frame">
+				  <include content="Buttons_Frame">
 					<param name="id" value="" />
 					<param name="border" value="30" />
 					<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -367,7 +367,7 @@
 				</control>
 				<control type="group">
 				  <visible>![Control.HasFocus(151) + !Control.HasFocus(160) + !Control.HasFocus(161) + !Control.HasFocus(120)]</visible>
-				  <include name="Buttons_Frame">
+				  <include content="Buttons_Frame">
 					<param name="id" value="" />
 					<param name="border" value="30" />
 					<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -385,7 +385,7 @@
 				  <height>62</height>
 				  <width>62</width>
 				  <texture diffuse="buttons/types/bd.png" background="false">$INFO[ListItem.Property(Addon.Path)]/icon.png</texture>
-				  <visible>!IsEmpty(ListItem.Property(Addon.Path))</visible>
+				  <visible>!String.IsEmpty(ListItem.Property(Addon.Path))</visible>
 				</control>
 				<control type="label">
 				  <include condition="true">LabelL1</include>
@@ -407,7 +407,7 @@
 			  </focusedlayout>
 			  <content>
 			    <item id="1" description="חיפוש חכם">
-					<visible>!IsEmpty(Window(home).Property(VideoPlayer.Title)) | !Skin.HasSetting(Admin)</visible>
+					<visible>!String.IsEmpty(Window(home).Property(VideoPlayer.Title)) | !Skin.HasSetting(Admin)</visible>
 					<label>$LOCALIZE[31808]</label>
 					<thumb></thumb>
 					<onclick>RunScript(script.featherence.service,,?mode=8)</onclick>
@@ -436,7 +436,7 @@
 			  <ondown>150</ondown>
 			  <viewtype label="535">list</viewtype>
 			  <itemlayout width="450" height="65">
-			    <include name="Buttons_Frame">
+			    <include content="Buttons_Frame">
 					<param name="id" value="" />
 					<param name="border" value="30" />
 					<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -453,7 +453,7 @@
 				  <height>62</height>
 				  <width>62</width>
 				  <texture diffuse="buttons/types/bd.png" background="false">$INFO[ListItem.Property(Addon.Path)]/icon.png</texture>
-				  <visible>!IsEmpty(ListItem.Property(Addon.Path))</visible>
+				  <visible>!String.IsEmpty(ListItem.Property(Addon.Path))</visible>
 				</control>
 				<control type="label">
 				  <include condition="true">LabelL1</include>
@@ -476,7 +476,7 @@
 			  <focusedlayout width="450" height="65">
 			    <control type="group">
 				  <visible>Control.HasFocus(150) + !Control.HasFocus(160) + !Control.HasFocus(161) + !Control.HasFocus(120)</visible>
-				  <include name="Buttons_Frame">
+				  <include content="Buttons_Frame">
 					<param name="id" value="" />
 					<param name="border" value="30" />
 					<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -489,7 +489,7 @@
 				</control>
 				<control type="group">
 				  <visible>![Control.HasFocus(150) + !Control.HasFocus(160) + !Control.HasFocus(161) + !Control.HasFocus(120)]</visible>
-				  <include name="Buttons_Frame">
+				  <include content="Buttons_Frame">
 					<param name="id" value="" />
 					<param name="border" value="30" />
 					<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -507,7 +507,7 @@
 				  <height>62</height>
 				  <width>62</width>
 				  <texture diffuse="buttons/types/bd.png" background="false">$INFO[ListItem.Property(Addon.Path)]/icon.png</texture>
-				  <visible>!IsEmpty(ListItem.Property(Addon.Path))</visible>
+				  <visible>!String.IsEmpty(ListItem.Property(Addon.Path))</visible>
 				</control>
 				<control type="label">
 				  <include condition="true">LabelL1</include>
@@ -529,7 +529,7 @@
 			  </focusedlayout>
             </control>
 			
-			<include name="Arrows_UpDown">
+			<include content="Arrows_UpDown">
 				<param name="posx" value="400" />
 				<param name="posy" value="93" />
 				<param name="posx2" value="400" />
@@ -547,7 +547,7 @@
 		  <height>40</height>
 		  <width>40</width>
 		  <texture>$INFO[VideoPlayer.SubtitlesLanguage,badges/countries/v2/,.png]</texture>
-		  <visible>!IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+		  <visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
 		  <visible>VideoPlayer.HasSubtitles</visible>
 		</control>
 	  </control>
@@ -562,8 +562,8 @@
 		<scrolltime tween="sine">200</scrolltime>
 		<orientation>horizontal</orientation>
 		<onup>noop</onup>
-		<ondown condition="IntegerGreaterThan(Container(120).NumItems,0)">120</ondown>
-		<!--<ondown condition="!IntegerGreaterThan(Control.GetLabel(107),0)">250</ondown>-->
+		<ondown condition="Integer.IsGreater(Container(120).NumItems,0)">120</ondown>
+		<!--<ondown condition="Integer.IsLess(Control.GetLabel(107),0)">250</ondown>-->
 		<onleft>251</onleft>
 		<onright>noop</onright>
 		<visible allowhiddenfocus="true">!System.IdleTime(5) | ControlGroup(70).HasFocus</visible>
@@ -598,7 +598,7 @@
 		</control>
 	  </control>
 	  
-	  <include name="Arrows_UpDown">
+	  <include content="Arrows_UpDown">
 		<param name="posx" value="1450" />
 		<param name="posy" value="820" />
 		<param name="posx2" value="1450" />
