@@ -39,7 +39,7 @@
 				<posx>1310</posx>
 				<posy>40</posy>	      
 				<width>40</width>
-				<visible>!IsEmpty(ListItem.Plot)</visible>
+				<visible>!String.IsEmpty(ListItem.Plot)</visible>
 				<control type="image" description="">
 				  <aspectratio>keep</aspectratio>
 				  <texture background="true">special://home/addons/script.featherence.service/resources/icons/info.png</texture>
@@ -52,7 +52,7 @@
               <width>400</width>
               <height>70</height>
 			  <label>$INFO[ListItem.Label]</label>
-			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>!String.IsEmpty(ListItem.Label)</visible>
             </control>
 			<control type="label" description="משודר עכשיו">
 			  <textcolor>grey</textcolor>
@@ -62,7 +62,7 @@
 			  <width>270</width>
 			  <height>70</height>
 			  <label>$INFO[ListItem.Title]</label>
-			  <visible>!IsEmpty(ListItem.Title)</visible>
+			  <visible>!String.IsEmpty(ListItem.Title)</visible>
 			</control>
 			<control type="label" description="מס.הערוץ">
 			  <include>LabelR1</include>
@@ -97,7 +97,7 @@
 				<posx>1310</posx>
 				<posy>40</posy>	      
 				<width>40</width>
-				<visible>!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))</visible>
+				<visible>!String.IsEmpty(ListItem.Plot) | !String.IsEmpty(ListItem.AddonDescription)</visible>
 				<control type="image" description="">
 				  <aspectratio>keep</aspectratio>
 				  <texture>special://home/addons/script.featherence.service/resources/icons/info.png</texture>
@@ -115,7 +115,7 @@
               <height>70</height>
 			  <scroll>true</scroll>
 			  <label>$INFO[ListItem.Label]</label>
-			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>!String.IsEmpty(ListItem.Label)</visible>
             </control>
 			<control type="label" description="משודר עכשיו">
 			  <include>LabelL4</include>
@@ -125,7 +125,7 @@
               <width>270</width>
               <height>70</height>
 			  <label>$INFO[ListItem.Title]</label>
-			  <visible>!IsEmpty(ListItem.Title)</visible>
+			  <visible>!String.IsEmpty(ListItem.Title)</visible>
 			  <visible description="מידע קיים בגדול בצד ימין">true</visible>
             </control>
 			<control type="label" description="מס.הערוץ">
@@ -182,7 +182,7 @@
 				<posx>1310</posx>
 				<posy>40</posy>	      
 				<width>40</width>
-				<visible>!IsEmpty(ListItem.Plot)</visible>
+				<visible>!String.IsEmpty(ListItem.Plot)</visible>
 				<control type="image" description="">
 				  <aspectratio>keep</aspectratio>
 				  <texture background="true">special://home/addons/script.featherence.service/resources/icons/info.png</texture>
@@ -195,7 +195,7 @@
               <width>690</width>
               <height>70</height>
 			  <label>$INFO[ListItem.Label]</label>
-			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>!String.IsEmpty(ListItem.Label)</visible>
             </control>
 			<control type="label" description="שם 2">
 			  <textcolor>grey</textcolor>
@@ -206,7 +206,7 @@
 			  <width>500</width>
 			  <height>70</height>
 			  <label>$INFO[ListItem.Title]</label>
-			  <visible>!IsEmpty(ListItem.Title)</visible>
+			  <visible>!String.IsEmpty(ListItem.Title)</visible>
 			</control>
             <control type="label" description="Label2">
              <posx>45</posx>
@@ -260,7 +260,7 @@
 				<posx>1310</posx>
 				<posy>40</posy>	      
 				<width>40</width>
-				<visible>!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.Property(Addon.Description))</visible>
+				<visible>!String.IsEmpty(ListItem.Plot) | !String.IsEmpty(ListItem.AddonDescription)</visible>
 				<control type="image" description="">
 				  <aspectratio>keep</aspectratio>
 				  <texture>special://home/addons/script.featherence.service/resources/icons/info.png</texture>
@@ -275,7 +275,7 @@
               <height>70</height>
 			  <scroll>true</scroll>
 			  <label>$INFO[ListItem.Label]</label>
-			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>!String.IsEmpty(ListItem.Label)</visible>
             </control>
 			<control type="label" description="שם 2">
 			  <align>right</align>
@@ -285,7 +285,7 @@
               <width>500</width>
               <height>70</height>
 			  <label>$INFO[ListItem.Title]</label>
-			  <visible>!IsEmpty(ListItem.Title)</visible>
+			  <visible>!String.IsEmpty(ListItem.Title)</visible>
             </control>	
 			<control type="label" description="מס.הערוץ">
 			  <textcolor>yellow</textcolor>
@@ -476,7 +476,7 @@
 			  <!--<texture border="20">pvr/pvrbutton.png</texture>-->
 			  <!--<texture border="0">buttons/ButtonE4.png</texture>-->
 			  <texture border="20">buttons/ButtonE4.png</texture>
-			  <visible>!IsEmpty(ListItem.Plot)</visible>
+			  <visible>!String.IsEmpty(ListItem.Plot)</visible>
 			  <!--<colordiffuse>CCFFFFFF</colordiffuse>-->
 			</control>
 			<control type="label" id="1" description="שם התוכנית">

@@ -21,7 +21,7 @@ def CATEGORIES():
 	'''---------------------------'''
 	addDir(addonString(30018).encode('utf-8'),'',118,featherenceserviceicons_path + 'classical.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30018).encode('utf-8')),'1',0,getAddonFanart(118)) #Classical Music
 	addDir(addonString(30019).encode('utf-8'),'',119,featherenceserviceicons_path + 'radio.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30019).encode('utf-8')),'1',0,getAddonFanart(119)) #Radio
-	addDir(localize(10516),'ActivateWindow(MusicFiles,special://userdata/)',201,featherenceserviceicons_path + 'music.png',"Local Kodi's music library",'1',0,getAddonFanart(100)) #
+	addDir(localize(10516),'ActivateWindow(10502,special://userdata/)',201,featherenceserviceicons_path + 'music.png',"Local Kodi's music library",'1',0,getAddonFanart(100)) #Local Library
 	
 def CATEGORIES100(name, iconimage, desc, fanart):
 	'''------------------------------
@@ -229,7 +229,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	
 	addDir(addonString(30006).encode('utf-8'),'',10106,featherenceserviceicons_path + "music.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30006).encode('utf-8')),'1',0, getAddonFanart(10106)) #Mizrahit Music
 	addDir(addonString(30007).encode('utf-8'),'',10107,featherenceserviceicons_path + "karaoke.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30007).encode('utf-8')),'1',0, getAddonFanart(10107, default="http://www.totalsingersupport.com/wp-content/uploads/2012/11/Sexy_Singing_Amit_Friedman.jpg")) #Mizrahit Karaoke
-	addDir(addonString(30009).encode('utf-8'),'',10109,featherenceserviceicons_path + "guitar.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30009).encode('utf-8')),'1',0, getAddonFanart(10108, default="http://www.hdwallpapersnew.net/wp-content/uploads/2015/12/tomorrowland-full-hd-wallpaper-download-images-free.jpg")) #Mizrahit Liveshows
+	addDir(addonString(30009).encode('utf-8'),'',10109,featherenceserviceicons_path + "guitar.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30009).encode('utf-8')),'1',0, getAddonFanart(10108, default="https://i.ytimg.com/vi/089IRvkNAGg/maxresdefault.jpg")) #Mizrahit Liveshows
 	#addDir(addonString(30005).encode('utf-8'),'',10105,featherenceserviceicons_path + "microphone.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30005).encode('utf-8')),'1',0, getAddonFanart(10105)) #Israeli Djs
 
 def CATEGORIES111(name, iconimage, desc, fanart):
@@ -588,7 +588,8 @@ def CATEGORIES10102(name, iconimage, desc, fanart):
 	'''שלמה ארצי'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLTojoXqu-e3l-d7nqjHRGjxsF8W77L50f')
+	list.append('&youtube_pl=PLz-nEGHyTLyFUcqZr57ldrZR0DTHC0CzB')
+	list.append('&youtube_pl=PLBXWM0cJGzNMvQ0V6Z_WHLG_eMRSFVIeH')
 	addDir(addonString(30144).encode('utf-8'),list,17,'http://www.nrg.co.il/images/archive/465x349/1/403/734.jpg',addonString(30244).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="http://blinker.co.il/wp-content/uploads/2012/08/shlomo-artzi-1-e1345892186997.jpg"))
 	
 	'''שלישית גשר הירקון''' 
@@ -708,21 +709,31 @@ def CATEGORIES10104(name, iconimage, desc, fanart):
 	'''קובי אפללו'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_id=i8JnEwMd_Ag')
+	list.append('&youtube_id=yjq8n2Ck-So')
 	addDir(addonString(30136).encode('utf-8'),list,17,'https://yt3.ggpht.com/-W5wjK70SQ1U/AAAAAAAAAAI/AAAAAAAAAAA/Ibov9BPmodU/s100-c-k-no/photo.jpg',addonString(30236).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom=""))
 	
 	'''קובי פרץ'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_id=EEPA93FTp_8')
+	list.append('&youtube_id=zpNj0PUtsuo')
 	addDir(addonString(30137).encode('utf-8'),list,17,'https://i.ytimg.com/i/GYqX6zfso91VDawbH_Nukw/mq1.jpg?v=4f5f486f',addonString(30237).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom=""))
 	
 	'''קרן פלס'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_id=jEgwcaOmc2Q')
+	list.append('&youtube_id=cxXhGRgMb0I')
 	addDir(addonString(30138).encode('utf-8'),list,17,'http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/KerenPelesNew.jpg/375px-KerenPelesNew.jpg',addonString(30238).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom=""))
 	
 	'''ריטה'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_id=tkuVpoTcoTY')
+	list.append('&youtube_id=Jg0uf4w1MoY')
+	list.append('&youtube_id=-wToTSgQ-uU')
+	list.append('&youtube_id=2V2BAj9Da80')
 	addDir(addonString(30139).encode('utf-8'),list,17,'http://img.mako.co.il/2013/02/07/rita_promo_bww_c.jpg',addonString(30239).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom=""))
 	
 	'''רמי קליינשטיין'''
@@ -748,6 +759,15 @@ def CATEGORIES10104(name, iconimage, desc, fanart):
 	'''שלמה ארצי'''
 	list = []
 	list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_id=wM_dc7yYJmU')
+	list.append('&youtube_id=qbShKKAApHc')
+	list.append('&youtube_id=cbY5My8emls')
+	list.append('&youtube_id=fo5VpXORivk')
+	list.append('&youtube_id=5IyANO7NVUc')
+	list.append('&youtube_id=BQTTnxcZKK0')
+	list.append('&youtube_id=1wwyE2Hqgzs')
+	list.append('&youtube_id=vDBapmTsBd4')
+	
 	addDir(addonString(30144).encode('utf-8'),list,17,'http://www.nrg.co.il/images/archive/465x349/1/403/734.jpg',addonString(30244).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="http://blinker.co.il/wp-content/uploads/2012/08/shlomo-artzi-1-e1345892186997.jpg"))
 	
 	'''שרית חדד'''

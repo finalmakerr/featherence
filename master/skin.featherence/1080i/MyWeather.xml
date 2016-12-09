@@ -37,8 +37,8 @@
       <height>300</height>
       <onup>noop</onup>
       <ondown>9000</ondown>
-      <!--<onleft condition="StringCompare(System.Language,Hebrew)">9000</onleft>
-      <onright condition="!StringCompare(System.Language,Hebrew)">9000</onright>-->
+      <!--<onleft condition="String.IsEqual(System.Language,Hebrew)">9000</onleft>
+      <onright condition="!String.IsEqual(System.Language,Hebrew)">9000</onright>-->
       <orientation>horizontal</orientation>
       <itemlayout width="170">
 	    <control type="group">
@@ -229,7 +229,7 @@
 	<include>TopInformation</include>
 	<include>WindowsBusy</include>
 	<control type="image">
-	    <animation condition="!StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="540,0" time="0">Conditional</animation>
+	    <animation condition="!String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="540,0" time="0">Conditional</animation>
 		<left>20</left>
 		<top>30</top>
 		<width>100</width>

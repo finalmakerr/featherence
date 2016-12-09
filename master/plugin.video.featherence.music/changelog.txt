@@ -2,6 +2,11 @@
 WIP (WORK IN PROGRESS)
 -----------------------
 
+------------------------
+Featherence Music v0.3.6 (09-Dec-16)
+------------------------
+- Major performance boost when remote thumbnails/fanarts are unavailable.
+- Minor update of links, thumbnails and fanarts.
 
 ------------------------
 Featherence Music v0.3.5 (14-Oct-16)

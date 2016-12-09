@@ -79,6 +79,7 @@
 					<altclick>PlayerControl(RepeatOff)</altclick>
 					<visible>Player.HasAudio + !Pvr.IsPlayingRadio | Playlist.IsRepeat | Playlist.IsRepeatOne | !String.IsEmpty(Window(home).Property(OSDPlus)) + Integer.IsGreater(Playlist.Length(video),1)</visible>
 					<visible>!String.Contains(Player.FolderPath,rtmp://) + !String.Contains(Player.FolderPath,mms://)</visible>
+					<visible>!String.IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(Touch_Support)</visible>
 				</control>	
 				<control type="togglebutton" id="612" description="Audio">
 				    <enable>Player.HasAudio</enable>
@@ -92,6 +93,7 @@
 					<onclick>PlayerControl(Random)</onclick>
 					<altclick>PlayerControl(Random)</altclick>
 					<visible>Player.HasAudio + Playlist.IsRepeat + !Pvr.IsPlayingRadio</visible>
+					<visible>!String.IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(Touch_Support)</visible>
 				</control>
 			    <control type="button" id="700" description="Bookmark">
 					<textoffsety>60</textoffsety>
@@ -109,7 +111,7 @@
                     <width>100</width>
 					<height>100</height>
 					<onclick>ActivateWindow(osdaudiosettings)</onclick>
-					<visible>!String.IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(VideoAudioOSDAlwaysOn)</visible>
+					<visible>!String.IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(VideoAudioOSDAlwaysOn) + Player.HasVideo</visible>
 				</control>
 				<control type="button" id="702" description="הגדרות וידאו">
 					<texturefocus>osd/buttons/OSDVideoFO.png</texturefocus>
@@ -118,6 +120,7 @@
 					<height>100</height>
 					<onclick>ActivateWindow(osdvideosettings)</onclick>
 					<visible>!String.IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(VideoAudioOSDAlwaysOn)</visible>
+					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="button" id="709" description="רשימת השמעה">
 					<texturefocus>osd/buttons/OSDBookMarksFO.png</texturefocus>
@@ -287,7 +290,8 @@
 					<onclick condition="Skin.HasSetting(Touch_Support) | Skin.HasSetting(ExtraMouseSupport)">ActivateWindow(1175)</onclick>
 					<onclick condition="Skin.HasSetting(Touch_Support) | Skin.HasSetting(ExtraMouseSupport)">ClearProperty(TEMP2,home)</onclick>
 					<onclick condition="!Skin.HasSetting(Touch_Support) + !Skin.HasSetting(ExtraMouseSupport)">ActivateWindow(SubtitleSearch)</onclick>
-					<visible>!VideoPlayer.Content(LiveTV) | !String.IsEqual(Player.TimeRemaining,) + Integer.IsGreater(Player.TimeRemaining,1)</visible>
+					<visible>!VideoPlayer.Content(LiveTV)| !String.IsEqual(Player.TimeRemaining,) + Integer.IsGreater(Player.TimeRemaining,1)</visible>
+					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="button" id="704" description="DVD">
 					<texturefocus>osd/buttons/OSDDvdFO.png</texturefocus>
@@ -338,7 +342,7 @@
 	  
 	  <control type="group" description="!VideoPlayer.Content(LiveTV)">
 		<top>1014</top>
-		<visible>!VideoPlayer.Content(LiveTV)</visible>
+		<visible>!VideoPlayer.Content(LiveTV) + false</visible>
 	    <control type="slider" id="87">
 		    <depth>DepthOSD+</depth>
 			<action>seek</action>

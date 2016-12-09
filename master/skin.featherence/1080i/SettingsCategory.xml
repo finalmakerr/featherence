@@ -4,6 +4,7 @@
   <controls>
 	<include>Backgrounds3</include>
 	<control type="group" description="">
+	  <posy>73</posy>
 	  <include>Slide1</include>
 	  <include>Slide2</include>
 		<control type="label" id="2" description="Heading">
@@ -37,16 +38,16 @@
 		</control>
 		<control type="grouplist" id="5" description="Stage">
 		  <posx>350</posx>
-		  <posy>190</posy>
+		  <posy>170</posy>
 		  <width>1220</width>
-		  <height>830</height>
+		  <height>760</height>
 		  <onup>3</onup>
 		  <ondown>noop</ondown>
-		  <onright condition="!StringCompare(System.Language,Hebrew)">9000</onright>
-		  <onright condition="StringCompare(System.Language,Hebrew)">3</onright>
+		  <onright condition="!String.IsEqual(System.Language,Hebrew)">9000</onright>
+		  <onright condition="String.IsEqual(System.Language,Hebrew)">3</onright>
 		  
-		  <onleft condition="!StringCompare(System.Language,Hebrew)">3</onleft>
-		  <onleft condition="StringCompare(System.Language,Hebrew)">9000</onleft>
+		  <onleft condition="!String.IsEqual(System.Language,Hebrew)">3</onleft>
+		  <onleft condition="String.IsEqual(System.Language,Hebrew)">9000</onleft>
 		  
 		  <pagecontrol>60</pagecontrol>
 		  <orientation>vertical</orientation>
@@ -54,24 +55,24 @@
 		</control>
 		<control type="button" id="7" description="Button (רגיל)">
 		  <align>left</align>
-		  <include condition="StringCompare(System.Language,Hebrew)">ButtonSettingsCategory_he</include>
+		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonSettingsCategory_he</include>
 		  <textoffsetx>50</textoffsetx>
 		  <width>880</width>
 		</control>
 		<control type="radiobutton" id="8" description="Radio Button">
 		  <textoffsetx>50</textoffsetx>
-		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR2</include>
-		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL2</include>
+		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR2</include>
+		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL2</include>
 		</control>
 		<control type="spincontrolex" id="9" description="Spin control">
 		  <align>left</align>
-		  <include condition="StringCompare(System.Language,Hebrew)">ButtonSettingsCategory_he</include>
+		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonSettingsCategory_he</include>
 		  <width>1260</width>
 		</control>
 		<control type="sliderex" id="13" description="*חדש">
 		  <width>1260</width>
-		  <include condition="StringCompare(System.Language,Hebrew)">ButtonR2</include>
-		  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL2</include>
+		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR2</include>
+		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL2</include>
 		</control>
 		<control type="label" id="6" description="תאור הגדרה">
 		  <visible>false</visible>

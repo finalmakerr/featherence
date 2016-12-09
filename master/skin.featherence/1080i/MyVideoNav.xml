@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">50</defaultcontrol>
-  <onload condition="IsEmpty(Window(home).Property(PassProtect)) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=PassProtectAddon)</onload>
+  <onload condition="String.IsEmpty(Window(home).Property(PassProtect)) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=PassProtectAddon)</onload>
   <onload condition="System.HasAddon(script.tv.show.next.aired) + Skin.HasSetting(EnableNextAired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
   <views>50,51,54,56,57,58,59</views>
   <!--<onload condition="System.HasAddon(script.tv.show.next.aired) + !Skin.HasSetting(NextAired)">RunScript(script.tv.show.next.aired,backend=True)</onload>-->
   <include>SetFocusView</include>
-  <include>ReloadSkin_Check</include>
   <include>Fade_WindowsOpenClose</include>
   <controls>
 	<include>Backgrounds3</include>
