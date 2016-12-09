@@ -4,7 +4,7 @@
   <controls>
 	<include>TopInformation</include>
     <control type="group" description="">
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="35" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="80" />
@@ -16,7 +16,7 @@
 		<param name="type0" value="false" description="MenuBackground"/>
 		<param name="type1" value="true" description="DialogBackground"/>
       </include>
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="875" />
@@ -75,7 +75,7 @@
         <onright>noop</onright>
         <ondown>12</ondown>
         <itemlayout height="80">
-		  <include name="Buttons_Frame">
+		  <include content="Buttons_Frame">
 			<param name="id" value="" />
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -93,7 +93,7 @@
           </control>
         </itemlayout>
         <focusedlayout height="80">
-          <include name="Buttons_Frame">
+          <include content="Buttons_Frame">
 			<param name="id" value="" />
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -104,7 +104,7 @@
 			
 			<param name="condition" value="Control.HasFocus(10)"/>
 		  </include>
-		  <include name="Buttons_Frame">
+		  <include content="Buttons_Frame">
 			<param name="id" value="" />
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />

@@ -1458,7 +1458,7 @@ def play_view(url, num, viewtype):
 	printlog(title='update_view', printpoint="", text=text, level=0, option="")
 	return ok	
 
-def urlcheck(url, ping=False, timeout=7):
+def urlcheck(url, ping=False, timeout=1):
 	import urllib2
 	name = "urlcheck" ; printpoint = "" ; returned = "" ; extra = "" ; TypeError = "" ; response_ = ""
 	

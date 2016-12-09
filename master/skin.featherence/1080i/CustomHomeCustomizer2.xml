@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1127">
   <defaultcontrol always="false">9000</defaultcontrol>
-  <onload condition="!IsEmpty(Window(home).Property(WidgetButton.ID_))">SetFocus(315)</onload>
+  <onload condition="!String.IsEmpty(Window(home).Property(WidgetButton.ID_))">SetFocus(315)</onload>
   <controls>
     <include>Backgrounds1</include>
     <include>Design_TopButtons</include>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1117">
   <defaultcontrol always="false">9000</defaultcontrol>
-  <onload condition="Window(home).Property(ReloadSkin)">AlarmClock(Hide,ClearProperty(ReloadSkin,home),00:02,silent)</onload>
-  <onload condition="IsEmpty(Window(home).Property(PassProtect)) + Skin.String(PassProtect) + Skin.HasSetting(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=PassProtect)</onload>
-  <include>ReloadSkin_Check</include>
+  <onload condition="String.IsEmpty(Window(home).Property(PassProtect)) + Skin.String(PassProtect) + Skin.HasSetting(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=PassProtect)</onload>
   <onunload condition="true">RunScript(script.featherence.service,,?mode=215&amp;value=_)</onunload>
   <include>onunload_ClearProperty_MainMenu</include>
   <include>onunload_ClearProperty_SubMenu</include>

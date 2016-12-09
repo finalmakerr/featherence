@@ -3,9 +3,9 @@
   <!--<defaultcontrol always="true"></defaultcontrol>-->
   <onload condition="!System.HasAlarm(timeout)">AlarmClock(timeout,Action(Back),00:10,silent)</onload>
   <onunload>CancelAlarm(timeout,true)</onunload>
-  <onunload condition="!IsEmpty(Window(home).Property(1000progress))">ClearProperty(1000progress,home)</onunload>
-  <onunload condition="!IsEmpty(Window(home).Property(1000title))">ClearProperty(1000title,home)</onunload>
-  <onunload condition="!IsEmpty(Window(home).Property(1000comment))">ClearProperty(1000comment,home)</onunload>
+  <onunload condition="!String.IsEmpty(Window(home).Property(1000progress))">ClearProperty(1000progress,home)</onunload>
+  <onunload condition="!String.IsEmpty(Window(home).Property(1000title))">ClearProperty(1000title,home)</onunload>
+  <onunload condition="!String.IsEmpty(Window(home).Property(1000comment))">ClearProperty(1000comment,home)</onunload>
   <controls>
     <include>BlackBackground</include>
     <control type="label" description="אנא המתן">
@@ -24,7 +24,7 @@
 	  <height>1080</height>
 	  <width>1920</width>
 	  <label>$INFO[Window(home).Property(1000title)]   $INFO[Window(home).Property(1000progress)]</label>
-	  <visible>!IsEmpty(Window(home).Property(1000title)) | IntegerGreaterThan(Window(home).Property(1000progress),0)</visible>
+	  <visible>!String.IsEmpty(Window(home).Property(1000title)) | Integer.IsGreater(Window(home).Property(1000progress),0)</visible>
 	</control>
 	<control type="label" description="הערות">
 	  <include>LabelC5</include>
@@ -33,7 +33,7 @@
 	  <height>1080</height>
 	  <width>1920</width>
 	  <label>$INFO[Window(home).Property(1000comment)]</label>
-	  <visible>!IsEmpty(Window(home).Property(1000comment))</visible>
+	  <visible>!String.IsEmpty(Window(home).Property(1000comment))</visible>
 	</control>
 	<include>WindowsBusy</include>
   </controls>

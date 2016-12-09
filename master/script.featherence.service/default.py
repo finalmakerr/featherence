@@ -647,7 +647,7 @@ elif mode >= 200 and mode <= 249:
 										property_1000progress = xbmc.getInfoLabel('Window(home).Property(1000progress)')
 										try: test = int(property_1000progress) + 2
 										except: property_1000progress = 20
-										Custom1000(str(list[returned]),int(property_1000progress) + 2,str(list2[returned2]),5)
+										Custom1000(str(list[returned]),int(property_1000progress) + 1,str(list2[returned2]),5)
 									x = "" ; x1 = "" ; x2 = "" ; x3 = ""
 									if "=0" in line:
 										'''Skin.String'''

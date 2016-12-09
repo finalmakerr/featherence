@@ -3,6 +3,6 @@
   <type>dialog</type>
   <zorder>2</zorder>
   <controls>
-    <include>TopDialogKaiToast</include>
+    <include>TopDialogNotification</include>
   </controls>
 </window>

@@ -2,10 +2,9 @@
 <window type="dialog" id="1175" description="תפריט פעולות כפתורים">
   <defaultcontrol always="true">9005</defaultcontrol>
   <include condition="!Window.IsVisible(VideoOSD.xml)">onload_CheckProperty_MainMenu</include>
-  <include condition="IsEmpty(Window(home).Property(Button.ID)) + IsEmpty(Window(home).Property(Button.ID_))">onunload_ClearProperty_MainMenu</include>
+  <include condition="String.IsEmpty(Window(home).Property(Button.ID)) + String.IsEmpty(Window(home).Property(Button.ID_))">onunload_ClearProperty_MainMenu</include>
   <controls>
     <control type="group">
-	  <visible>IsEmpty(Window(home).Property(ReloadSkin))</visible>
       <visible>!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml)</visible>
       <include>MenuDesign_Center2</include>
 	</control>

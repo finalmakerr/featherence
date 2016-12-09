@@ -65,14 +65,14 @@
 				<include>Keyboard</include>
 				<label>$VAR[InternetKeyboardButton]</label>
 				<font>size18</font>
-				<onclick condition="SubString(Control.GetLabel(311),YouTube) | SubString(Control.GetLabel(311),Add URL)">RunScript(script.featherence.service,,?mode=512&amp;value=3)</onclick>
-				<onclick condition="SubString(Control.GetLabel(311),thumb) | SubString(Control.GetLabel(311),$LOCALIZE[20015])">RunScript(script.featherence.service,,?mode=512&amp;value=4)</onclick>
-				<onclick condition="SubString(Control.GetLabel(311),fanart) | SubString(Control.GetLabel(311),$LOCALIZE[20441])">RunScript(script.featherence.service,,?mode=512&amp;value=5)</onclick>
+				<onclick condition="String.Contains(Control.GetLabel(311),YouTube) | String.Contains(Control.GetLabel(311),Add URL)">RunScript(script.featherence.service,,?mode=512&amp;value=3)</onclick>
+				<onclick condition="String.Contains(Control.GetLabel(311),thumb) | String.Contains(Control.GetLabel(311),$LOCALIZE[20015])">RunScript(script.featherence.service,,?mode=512&amp;value=4)</onclick>
+				<onclick condition="String.Contains(Control.GetLabel(311),fanart) | String.Contains(Control.GetLabel(311),$LOCALIZE[20441])">RunScript(script.featherence.service,,?mode=512&amp;value=5)</onclick>
 				<onleft>701</onleft>
 				<onright>701</onright>
 				<onup>701</onup>
 				<ondown>701</ondown>
-				<visible>SubString(Control.GetLabel(311),YouTube) | SubString(Control.GetLabel(311),Add URL) | SubString(Control.GetLabel(311),thumb) | SubString(Control.GetLabel(311),$LOCALIZE[20015]) | SubString(Control.GetLabel(311),fanart) | SubString(Control.GetLabel(311),$LOCALIZE[20441])</visible>
+				<visible>String.Contains(Control.GetLabel(311),YouTube) | String.Contains(Control.GetLabel(311),Add URL) | String.Contains(Control.GetLabel(311),thumb) | String.Contains(Control.GetLabel(311),$LOCALIZE[20015]) | String.Contains(Control.GetLabel(311),fanart) | String.Contains(Control.GetLabel(311),$LOCALIZE[20441])</visible>
 			</control>
 			<control type="image" description="תמונה מחרוזת חיפוש">
 				<bordertexture colordiffuse="ff000000" border="20">buttons/ButtonA0.png</bordertexture>
@@ -106,7 +106,7 @@
 				<height>30</height>
 				<texture>osd/keyboard/dialogheader.png</texture>
 			</control>
-			<include condition="System.HasAddon(script.extendedinfo) + !SubString(Control.GetLabel(311),password) + !SubString(Control.GetLabel(311),$LOCALIZE[733]) + !Window.IsVisible(Custom1175.xml)">MenuDesign_Center2</include>
+			<include condition="System.HasAddon(script.extendedinfo) + !String.Contains(Control.GetLabel(311),password) + !String.Contains(Control.GetLabel(311),$LOCALIZE[733]) + !Window.IsVisible(Custom1175.xml)">MenuDesign_Center2</include>
 			<control type="group" id="701">
 				<left>30</left>
 				<top>140</top>
@@ -151,7 +151,7 @@
 					<onup>700</onup>
 					<ondown>730</ondown>
 					<ondown>128</ondown>
-					<visible>!IsEmpty(Control.GetLabel(110))</visible>
+					<visible>!String.IsEmpty(Control.GetLabel(110))</visible>
 				</control>
 				<control type="button" id="111" description="(0,11)">
 					<texturefocus flipx="true" border="5,25,25,5" colordiffuse="$VAR[KeyboardFocusColor]">osd/keyboard/KeyboardCornerTopNF.png</texturefocus>
@@ -165,7 +165,7 @@
 					<onup>700</onup>
 					<ondown>740</ondown>
 					<ondown>74</ondown>
-					<visible>!IsEmpty(Control.GetLabel(111))</visible>
+					<visible>!String.IsEmpty(Control.GetLabel(111))</visible>
 				</control>
 				<control type="button" id="100" description="(0,0)">
 					<include>Keyboard</include>
@@ -388,7 +388,7 @@
 						<onright>302</onright>
 						<onup>107</onup>
 						<ondown>149</ondown>
-						<!--<visible>!IsEmpty(Control.GetLabel(130))</visible>-->
+						<!--<visible>!String.IsEmpty(Control.GetLabel(130))</visible>-->
 					</control>
 					<control type="button" id="131" description="(1,11)">
 						<include>Keyboard</include>
@@ -398,7 +398,7 @@
 						<onright>302</onright>
 						<onup>107</onup>
 						<ondown>149</ondown>
-						<!--<visible>!IsEmpty(Control.GetLabel(131))</visible>-->
+						<!--<visible>!String.IsEmpty(Control.GetLabel(131))</visible>-->
 					</control>
 					<control type="button" id="140" description="(2,0)">
 						<description>k / ף</description>

@@ -10,7 +10,7 @@
 	  <posx>-435</posx>
 	  <posy>275</posy>
 	  <width>480</width>	  	  
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="" />
@@ -31,8 +31,8 @@
         <orientation>Vertical</orientation>
       </control>
 	  <control type="button" id="13" description="כפתור שמאל (9)">
-	    <include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+	    <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+		<include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
       </control>
 	</control>
     <control type="group" description="תפריט ימין (8999)">
@@ -40,7 +40,7 @@
 	  <posx>1475</posx>
 	  <posy>275</posy>	  
 	  <width>480</width>	  	  
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="" />
@@ -90,7 +90,7 @@
 	  <posx>500</posx>
       <posy>125</posy>  
 	  <width>880</width>
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="" />
@@ -118,9 +118,9 @@
 		<textoffsetx>20</textoffsetx>
 		<textwidth>680</textwidth>
 		<include>ButtonL2</include>
-		<!--<include condition="StringCompare(System.Language,Hebrew)">AddonSettings_he</include>
-		<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-	    <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>-->
+		<!--<include condition="String.IsEqual(System.Language,Hebrew)">AddonSettings_he</include>
+		<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+	    <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>-->
       </control>
       <control type="label" id="7" description="תאור כללי">
 		<aligny>center</aligny>
@@ -133,25 +133,25 @@
 		<width>800</width>
 		<include>LabelL2</include>
 		<wrapmultiline>true</wrapmultiline>
-		<!--<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
-	    <include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>-->
+		<!--<include condition="String.IsEqual(System.Language,Hebrew)">LabelR2</include>
+	    <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL2</include>-->
       </control>
 	</control>
     <control type="radiobutton" id="4" description="Radiobutton template עיצוב">
 	  <font>size30</font>
 	  <include>ButtonL2</include>
-	  <!--<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>-->
+	  <!--<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>-->
       <radioposx>0</radioposx>
     </control>
     <control type="spincontrolex" id="5" description="חץ למעלה/למטה">
 	  
 	  <font>size30</font>
-	  <!--<include condition="StringCompare(System.Language,Hebrew)">AddonSettings_he</include>
+	  <!--<include condition="String.IsEqual(System.Language,Hebrew)">AddonSettings_he</include>
 	  <textoffsetx>60</textoffsetx>-->
 	  <include>ButtonL2</include>
-      <!--<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>-->
+      <!--<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>-->
       <reverse>yes</reverse>
     </control>
     <control type="image" id="6" description="Default separator image">
@@ -162,8 +162,8 @@
 	  <width>100</width>
 	  <font>size30</font>
 	  <include>ButtonL2</include>
-	  <!--<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>-->
+	  <!--<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>-->
     </control>
     <include>TopInformation</include>
   </controls>

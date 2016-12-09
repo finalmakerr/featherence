@@ -5,16 +5,16 @@
     <include>SideMenu2</include>
 	<include>TopInformation</include>
     <control type="group" description="פרטי וידאו (1105)">
-		<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="1250,0">Conditional</animation>
+		<animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew) + !Window.IsVisible(MyWeather.xml)" effect="slide" start="0,0" end="1250,0">Conditional</animation>
 		<include>Fade4</include>
 		<posx>10</posx>
 		<posy>5</posy>
 		<control type="textbox" id="4" description="פרטי אלבום">
 		  <textcolor>white</textcolor>
 		  <font>size24</font>
-		  <include condition="SubString(Container.FolderPath,plugin.program.advanced.launcher)">LabelL1</include>
-		  <include condition="[StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,1)">LabelR1</include>
-		  <include condition="[!StringCompare(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,2)">LabelL1</include>
+		  <include condition="String.Contains(Container.FolderPath,plugin.program.advanced.launcher)">LabelL1</include>
+		  <include condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,1)">LabelR1</include>
+		  <include condition="[!String.IsEqual(System.Language,Hebrew) + !Skin.String(PlotAlign)] | Skin.String(PlotAlign,2)">LabelL1</include>
 		  <include condition="Skin.String(PlotAlign,3)">LabelJ1</include>
 		  <include condition="Skin.String(PlotAlign,4)">LabelC1</include>
 		  <include>AutoScrollText</include>

@@ -163,7 +163,8 @@ def menu_list(custom, menu, addonID, name, url, mode, iconimage, desc, num, view
 		menu.append((localize(33063), "XBMC.RunPlugin(plugin://%s/?url=%s&mode=22&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart))) #Options....
 	
 	if mode != 18 and mode != 20 and (num > 0 or num < 11):
-		menu.append(('Rename Button', "XBMC.RunPlugin(plugin://%s/?url=%s&mode=25&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart))) #Manage....
+		if not localize(137) in name and num != '1':
+			menu.append(('Rename Button', "XBMC.RunPlugin(plugin://%s/?url=%s&mode=25&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart))) #Manage....
 	#menu.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
 	#menu.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
 	if (mode < 100 or mode > 140) and mode != 3:

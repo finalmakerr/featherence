@@ -10,7 +10,7 @@ def mode0(admin, name, printpoint):
 	installaddonP('script.module.unidecode', update=False)
 	#xbmc.executebuiltin('ActivateWindow(10157)')
 	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=4)')
-	#xbmc.executebuiltin('ActivateWindow(MusicFiles,root)')
+	#xbmc.executebuiltin('ActivateWindow(Music,root)')
 	#xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
 	#xbmc.executebuiltin('Skin.SetImage(TEMP,special://userdata/)')
 	#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
@@ -1053,7 +1053,14 @@ def mode32(value, value2, name, printpoint):
 		if value2 != "" and value2 != None:
 			xbmc.sleep(500)
 			xbmc.executebuiltin('ActivateWindow('+value2+')')
-			
+	
+	elif value == '10':
+		containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
+		addon = find_string(containerfolderpath, 'plugin://', '/')
+		addon = addon.replace('plugin://',"",1)
+		addon = addon.replace('/',"")
+		notification(addon,'','',2000)
+		xbmc.executebuiltin('Addon.OpenSettings('+addon+')')
 	elif value == '40':
 		addon = 'plugin.video.featherence.kids'
 		if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
@@ -2099,8 +2106,8 @@ def mode215(value, value2, name, printpoint):
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(20343))
 			
 			if not defaultactionbuttons or value2 == 'RESET' or action == "":
-				if systembuildversion < 17: setSkinSetting('0','action'+id,'ActivateWindow(VideoLibrary,TVShowTitles,return)')
-				else: setSkinSetting('0','action'+id,'ActivateWindow(Videos,TVShowTitles,return)')
+				#if systembuildversion < 17: setSkinSetting('0','action'+id,'ActivateWindow(10025,TVShowTitles,return)')
+				setSkinSetting('0','action'+id,'ActivateWindow(10025,TVShowTitles,return)')
 			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/tvshows.png')
 			'''---------------------------'''
 
@@ -2142,7 +2149,7 @@ def mode215(value, value2, name, printpoint):
 	x = '95' ; id = idT2.get(x)
 	if value == "_" or value == x:
 		'''ראשי'''
-		if id != "" and id != None and 1 + 1 == 2:
+		if id != "" and id != None and 1 + 1 == 3:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id)) ; action = actionT.get('action'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,"")
 			if not defaultactionbuttons or value2 == 'RESET' or action == "": setSkinSetting('0','action'+id,'')
