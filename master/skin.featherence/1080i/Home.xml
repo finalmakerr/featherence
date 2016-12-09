@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="false">9000</defaultcontrol>
-  <onload condition="!String.IsEmpty(Window(home).Property(ReloadSkin))">ClearProperty(ReloadSkin,home)</onload>
   <onload description="SideMenu" condition="!String.IsEmpty(Window(home).Property(ViewsSettings))">ClearProperty(ViewsSettings,home)</onload>
   <!--<onunload>SetProperty(HomeLastPos,$INFO[Container(9000).Position],home)</onunload>
   <onunload>SetProperty(HomeLastPos2,$INFO[Container(9000).CurrentPage],home)</onunload>-->

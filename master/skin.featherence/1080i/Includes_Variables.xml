@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <variable name="11155label">
-    <value condition="[Container.Content(Seasons) | Container.Content(Episodes)] + !IsEmpty(Control.GetLabel(1105)) + [!IsEmpty(Control.GetLabel(1106)) | SubString(Control.GetLabel(11010),Episode) | SubString(Control.GetLabel(11010),$LOCALIZE[20359]) | SubString(ListItem.Label,$LOCALIZE(20366)) | StringCompare(ListItem.Label,..)] + [!SubString(Container.FolderPath,plugin://plugin.video.youtube) + !SubString(Container.FolderPath,plugin://plugin.video.smithsonian)]">0</value>
+    <value condition="[Container.Content(Seasons) | Container.Content(Episodes)] + !String.IsEmpty(Control.GetLabel(1105)) + [!String.IsEmpty(Control.GetLabel(1106)) | String.Contains(Control.GetLabel(11010),Episode) | String.Contains(Control.GetLabel(11010),$LOCALIZE[20359]) | String.Contains(ListItem.Label,$LOCALIZE(20366)) | String.IsEqual(ListItem.Label,..)] + [!String.Contains(Container.FolderPath,plugin://plugin.video.youtube) + !String.Contains(Container.FolderPath,plugin://plugin.video.smithsonian)]">0</value>
 	<value condition="false">4</value>
 	<value condition="false">5</value>
 	<!--<value>test</value>-->
@@ -9,29 +9,29 @@
   
   <variable name="11156label" description="">
     <value condition="![!Skin.HasSetting(ShowDVDCases) | Skin.HasSetting(ShowDVDCases2)]">0</value>
-	<!--<value condition="![!IsEmpty(Player.Art(tvshow.poster)) | !IsEmpty(Player.Art(poster)) | !IsEmpty(Control.GetLabel(1103)) | !IsEmpty(VideoPlayer.Cover) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Art(tvshow.poster)) | !IsEmpty(ListItem.Art(poster)) | !IsEmpty(ListItem.Thumb) | !IsEmpty(ListItem.Icon) | SubString(ListItem.path,videodb://movies/sets/)]">1</value>-->
-	<value condition="![!SubString(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>
+	<!--<value condition="![!String.IsEmpty(Player.Art(tvshow.poster)) | !String.IsEmpty(Player.Art(poster)) | !String.IsEmpty(Control.GetLabel(1103)) | !String.IsEmpty(VideoPlayer.Cover) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Art(tvshow.poster)) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Thumb) | !String.IsEmpty(ListItem.Icon) | String.Contains(ListItem.path,videodb://movies/sets/)]">1</value>-->
+	<value condition="![!String.Contains(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>
 	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
-	<value condition="![StringCompare(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(ShowDVDCases2)]">14</value>
-	<value condition="![[StringCompare(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(ShowDVDCases)] | !StringCompare(Container.Viewmode,$LOCALIZE[31013])]">5</value>
-	<value condition="![[StringCompare(Container.Viewmode,$LOCALIZE[31016]) + !Skin.HasSetting(ShowDVDCases)] | !StringCompare(Container.Viewmode,$LOCALIZE[31016])]">15</value>
-	<value condition="![[[StringCompare(Container.Viewmode,$LOCALIZE[31015]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)] | !StringCompare(Container.Viewmode,$LOCALIZE[31015]) + !StringCompare(Container.Viewmode,$LOCALIZE[31014])]">6</value>
+	<value condition="![String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(ShowDVDCases2)]">14</value>
+	<value condition="![[String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(ShowDVDCases)] | !String.IsEqual(Container.Viewmode,$LOCALIZE[31013])]">5</value>
+	<value condition="![[String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + !Skin.HasSetting(ShowDVDCases)] | !String.IsEqual(Container.Viewmode,$LOCALIZE[31016])]">15</value>
+	<value condition="![[[String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)] | !String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014])]">6</value>
 	<value condition="![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + !Window.IsVisible(Home.xml)">7</value>
-	<value condition="![!IsEmpty(ListItem.Rating) | !IsEmpty(Container.ListItemNoWrap(-3).Rating) | !IsEmpty(Container.ListItemNoWrap(-2).Rating) | !IsEmpty(Container.ListItemNoWrap(-1).Rating) | !IsEmpty(Container.ListItemNoWrap(1).Rating) | !IsEmpty(Container.ListItemNoWrap(2).Rating) | !IsEmpty(Container.ListItemNoWrap(3).Rating)] | Window.IsVisible(Home.xml)] + !SubString(Container.FolderPath,videodb://)">8</value>
+	<value condition="![[!String.IsEmpty(ListItem.Rating) | !String.IsEmpty(Container.ListItemNoWrap(-3).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(3).Rating)] | Window.IsVisible(Home.xml)] + !String.Contains(Container.FolderPath,videodb://)">8</value>
 	<!--<value condition="Window.IsVisible(DialogContextMenu.xml)">10</value>-->
 	<!--<value condition="![!Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogContextMenu.xml)]">8</value>-->
-	<!--<value condition="!IsEmpty(ListItem.Rating)">8</value>-->
+	<!--<value condition="!String.IsEmpty(ListItem.Rating)">8</value>-->
 	
 	<!--<value>test</value>-->
   </variable>
   <variable name="BorderTexture">
-    <value condition="StringCompare(ListItem.Label,..)">$VAR[VideoInformation2]</value>
+    <value condition="String.IsEqual(ListItem.Label,..)">$VAR[VideoInformation2]</value>
 	<value>buttons/ButtonA0.png</value>
   </variable>
   <variable name="InternetKeyboardButton">
-    <value condition="SubString(Control.GetLabel(311),YouTube) | SubString(Control.GetLabel(311),Add URL)">YouTube</value>
-	<value condition="SubString(Control.GetLabel(311),thumb) | SubString(Control.GetLabel(311),$LOCALIZE[20015])">Google</value>
-	<value condition="SubString(Control.GetLabel(311),fanart) | SubString(Control.GetLabel(311),$LOCALIZE[20441])">Google</value>
+    <value condition="String.Contains(Control.GetLabel(311),YouTube) | String.Contains(Control.GetLabel(311),Add URL)">YouTube</value>
+	<value condition="String.Contains(Control.GetLabel(311),thumb) | String.Contains(Control.GetLabel(311),$LOCALIZE[20015])">Google</value>
+	<value condition="String.Contains(Control.GetLabel(311),fanart) | String.Contains(Control.GetLabel(311),$LOCALIZE[20441])">Google</value>
   </variable>
   <variable name="Button9090" description="כפתור קצה">
   	<value description="סרטים שנוספו לאחרונה" condition="Control.IsVisible(311) + !Skin.HasSetting(MoviesShelfWL) + !Player.HasVideo">$LOCALIZE[20386]</value>
@@ -40,22 +40,22 @@
 	<value description="סדרות בתהליך" condition="Control.IsVisible(312) + Skin.HasSetting(TVShelf_Watchlist) + !Player.HasVideo">$LOCALIZE[31813]</value>
   </variable>
   <variable name="Button9091" description="כפתור קצה">
-  	<value condition="Control.IsVisible(311) + IsEmpty(Window(home).Property(Widget_Trailers)) + !Player.HasVideo">$LOCALIZE[342]</value>
-	<value condition="Control.IsVisible(311) + !IsEmpty(Window(home).Property(Widget_Trailers)) + !Player.HasVideo">$LOCALIZE[31812]</value>
+  	<value condition="Control.IsVisible(311) + String.IsEmpty(Window(home).Property(Widget_Trailers)) + !Player.HasVideo">$LOCALIZE[342]</value>
+	<value condition="Control.IsVisible(311) + !String.IsEmpty(Window(home).Property(Widget_Trailers)) + !Player.HasVideo">$LOCALIZE[31812]</value>
   </variable>
   <variable name="Button708" description="רקע אקראי לפי ו'ידגט">
-	<value description="סרטים-כן" condition="[StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))] + Skin.HasSetting(wbackground90)">$LOCALIZE[106]</value>
-	<value description="סרטים-לא" condition="[StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))] + !Skin.HasSetting(wbackground90)">$LOCALIZE[107]</value>
-	<value description="סדרות-כן" condition="[StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))] + Skin.HasSetting(wbackground91)">$LOCALIZE[106]</value>
-	<value description="סדרות-לא" condition="[StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))] + !Skin.HasSetting(wbackground91)">$LOCALIZE[107]</value>
-	<value description="מזג אוויר-כן" condition="[StringCompare(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget317))] + Skin.HasSetting(wbackground97)">$LOCALIZE[106]</value>
-	<value description="מזג אוויר-לא" condition="[StringCompare(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget317))] + !Skin.HasSetting(wbackground97)">$LOCALIZE[107]</value>
+	<value description="סרטים-כן" condition="[String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))] + Skin.HasSetting(wbackground90)">$LOCALIZE[106]</value>
+	<value description="סרטים-לא" condition="[String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))] + !Skin.HasSetting(wbackground90)">$LOCALIZE[107]</value>
+	<value description="סדרות-כן" condition="[String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))] + Skin.HasSetting(wbackground91)">$LOCALIZE[106]</value>
+	<value description="סדרות-לא" condition="[String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))] + !Skin.HasSetting(wbackground91)">$LOCALIZE[107]</value>
+	<value description="מזג אוויר-כן" condition="[String.IsEqual(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget317))] + Skin.HasSetting(wbackground97)">$LOCALIZE[106]</value>
+	<value description="מזג אוויר-לא" condition="[String.IsEqual(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget317))] + !Skin.HasSetting(wbackground97)">$LOCALIZE[107]</value>
   </variable>
   <variable name="Button11300" description="InProgressBadge">
-    <value condition="[Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]">$INFO[ListItem.Property(UnwatchedEpisodes)]</value>
-	<value condition="[Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]">$INFO[ListItem.Property(UnwatchedEpisodes)]</value>
-	<!--<value condition="[Container.Content(Episodes) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]">$INFO[ListItem.Property(UnwatchedEpisodes)]</value>-->
-	<value condition="[Container.Content(Episodes)] + !IsEmpty(Window(home).Property(ListItemUnWatchedEpisodes))">$INFO[Window(home).Property(ListItemUnWatchedEpisodes)]</value>
+    <value condition="[Container.Content(TVShows) + Integer.IsGreater(ListItem.Property(WatchedEpisodes),0) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)]">$INFO[ListItem.Property(UnwatchedEpisodes)]</value>
+	<value condition="[Container.Content(Seasons) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)]">$INFO[ListItem.Property(UnwatchedEpisodes)]</value>
+	<!--<value condition="[Container.Content(Episodes) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)]">$INFO[ListItem.Property(UnwatchedEpisodes)]</value>-->
+	<value condition="[Container.Content(Episodes)] + !String.IsEmpty(Window(home).Property(ListItemUnWatchedEpisodes))">$INFO[Window(home).Property(ListItemUnWatchedEpisodes)]</value>
   </variable>
   <variable name="Button31" description="מדריך טלוויזיה/ערוצי טלוויזיה">
     <value description="ערוצי טלוויזיה" condition="Window.IsVisible(MyPVRChannels.xml)">$LOCALIZE[4]</value>
@@ -77,88 +77,88 @@
 	<value description="פרקים שנוספו לאחרונה" condition="!Skin.HasSetting(TVShelf_Watchlist)">$LOCALIZE[20387]</value>
   </variable>  
   <variable name="MenuColor" description="עיצוב גוון">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),MenuColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),MenuColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(MenuColor)" description="ברירת מחדל-payne's grey(100%)">ff40404f</value>
 	<value condition="Skin.String(MenuColor)" description="מותאם אישי">$INFO[Skin.String(MenuColor)]</value>
   </variable>
   
   <variable name="VolumeBackgroundColor" description="רקע עוצמה">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),VolumeBackgroundColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),VolumeBackgroundColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(VolumeBackgroundColor)" description="ברירת מחדל-smoky black">ff100c08</value>
 	<value condition="Skin.String(VolumeBackgroundColor)" description="מותאם אישי">$INFO[Skin.String(VolumeBackgroundColor)]</value>
   </variable>
   
   <variable name="VolumeIconColor" description="סמל עוצמה">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),VolumeIconColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),VolumeIconColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(VolumeIconColor)" description="ברירת מחדל">white</value>
 	<value condition="Skin.String(VolumeIconColor)" description="מותאם אישי">$INFO[Skin.String(VolumeIconColor)]</value>
   </variable>
   
   <variable name="DialogMenuColor" description="עיצוב גוון">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),DialogMenuColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),DialogMenuColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(DialogMenuColor)" description="ברירת מחדל-payne's grey(100%)">ff40404f</value>
 	<value condition="Skin.String(DialogMenuColor)" description="מותאם אישי">$INFO[Skin.String(DialogMenuColor)]</value>
   </variable>
   
   <variable name="DialogFontTitleColor" description="צבע פונט כותרת">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),DialogFontTitleColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),DialogFontTitleColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(DialogFontTitleColor)" description="ברירת-מחדל">yellow</value>
 	<value condition="Skin.String(DialogFontTitleColor)" description="מותאם אישי">$INFO[Skin.String(DialogFontTitleColor)]</value>
   </variable>
   
   <variable name="DialogFontColor" description="צבע פונט כותרת">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),DialogFontColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),DialogFontColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(DialogFontColor)" description="ברירת-מחדל">white</value>
 	<value condition="Skin.String(DialogFontColor)" description="מותאם אישי">$INFO[Skin.String(DialogFontColor)]</value>
   </variable>
   
   <variable name="ButtonsDesignColor" description="צבע כפתור בית">
-    <value condition="Window.IsVisible(Custom1170.xml) + SubString(Window(home).Property(TEMP),color,left) + !IsEmpty(Window(home).Property(SelectedColor))" description="">buttons/colors/$INFO[Window(home).Property(SelectedColor)].png</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.StartsWith(Window(home).Property(TEMP),color) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">buttons/colors/$INFO[Window(home).Property(SelectedColor)].png</value>
     <value condition="true" description="">buttons/colors/$INFO[ListItem.Property(color)].png</value>
   </variable>
   
   <variable name="MainBackgroundColor" description="בחירת צבע רקע תחתון">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),MainBackgroundColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),MainBackgroundColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(MainBackgroundColor)" description="ברירת מחדל-white smoke(100%)">fff5f5f5</value>
 	<value condition="Skin.String(MainBackgroundColor)" description="מותאם אישי">$INFO[Skin.String(MainBackgroundColor)]</value>
   </variable>
   <variable name="TopBackgroundColor" description="בחירת צבע רקע עליון">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),TopBackgroundColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),TopBackgroundColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(TopBackgroundColor)" description="">00FFFFFF</value>
 	<value condition="Skin.String(TopBackgroundColor)" description="מותאם אישי">$INFO[Skin.String(TopBackgroundColor)]</value>
   </variable>
   <variable name="TopInformationColor" description="בחירת צבע פס עליון">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),TopInformationColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),TopInformationColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(TopInformationColor)" description="ברירת מחדל">ff100c08</value>
 	<value condition="Skin.String(TopInformationColor)" description="מותאם אישי">$INFO[Skin.String(TopInformationColor)]</value>
   </variable>
   
   <variable name="TopInformationFontColor" description="בחירת צבע פס עליון">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),TopInformationFontColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),TopInformationFontColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(TopInformationFontColor)" description="white">white</value>
 	<value condition="Skin.String(TopInformationFontColor)" description="מותאם אישי">$INFO[Skin.String(TopInformationFontColor)]</value>
   </variable>
   
   <variable name="TopVideoInformationColor" description="בחירת צבע פרטי וידאו">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),TopVideoInformationColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),TopVideoInformationColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(TopVideoInformationColor)" description="ברירת מחדל">ff100c08</value>
 	<value condition="Skin.String(TopVideoInformationColor)" description="מותאם אישי">$INFO[Skin.String(TopVideoInformationColor)]</value>
   </variable>
   
   <variable name="TopVideoInformationFontColor" description="בחירת צבע גופן פרטי וידאו">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),TopVideoInformationFontColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),TopVideoInformationFontColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(TopVideoInformationFontColor)" description="white">white</value>
 	<value condition="Skin.String(TopVideoInformationFontColor)" description="מותאם אישי">$INFO[Skin.String(TopVideoInformationFontColor)]</value>
   </variable>
   
   <variable name="MouseColor" description="בחירת צבע עכבר">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),MouseColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),MouseColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(MouseColor)" description="ברירת מחדל">FFFFFFFF</value>
 	<value condition="Skin.String(MouseColor)" description="מותאם אישי">$INFO[Skin.String(MouseColor)]</value>
   </variable>
   
   <variable name="IconUnFocusColor" description="בחירת צבע סמל לא נבחר">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),IconUnFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),IconUnFocusColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(IconUnFocusColor)" description="ברירת מחדל">FFFFFFFF</value>
 	<value condition="Skin.String(IconUnFocusColor)" description="מותאם אישי">$INFO[Skin.String(IconUnFocusColor)]</value>
   </variable>
@@ -168,7 +168,7 @@
     <value condition="!Control.HasFocus(9000) + !Skin.String(IconUnFocusColor)" description="">FFFFFFFF</value>
 	<value condition="!Control.HasFocus(9000) + Skin.String(IconUnFocusColor)" description="">$INFO[Skin.String(IconUnFocusColor)]</value>
 	
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),IconFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),IconFocusColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(IconFocusColor)" description="ברירת מחדל-light yellow">fffffacd</value>
 	<value condition="Skin.String(IconFocusColor)" description="מותאם אישי">$INFO[Skin.String(IconFocusColor)]</value>
   </variable>
@@ -178,86 +178,86 @@
     <value condition="!Control.HasFocus(9020) + !Skin.String(IconUnFocusColor)" description="">FFFFFFFF</value>
 	<value condition="!Control.HasFocus(9020) + Skin.String(IconUnFocusColor)" description="">$INFO[Skin.String(IconUnFocusColor)]</value>
 	
-	<value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),IconFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+	<value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),IconFocusColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(IconFocusColor)" description="ברירת מחדל-light yellow">fffffacd</value>
 	<value condition="Skin.String(IconFocusColor)" description="מותאם אישי">$INFO[Skin.String(IconFocusColor)]</value>
   </variable>
   
   <variable name="ButtonUnFocusColor" description="בחירת צבע כפתורי תפריט לא נבחר">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),ButtonUnFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),ButtonUnFocusColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(ButtonUnFocusColor)" description="ברירת מחדל">ff40404f</value>
 	<value condition="Skin.String(ButtonUnFocusColor)" description="מותאם אישי">$INFO[Skin.String(ButtonUnFocusColor)]</value>
   </variable>
   
   <variable name="ButtonFocusColor" description="בחירת צבע כפתורי תפריט נבחר">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),ButtonFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),ButtonFocusColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(ButtonFocusColor)" description="">ff4f4f98</value>
 	<value condition="Skin.String(ButtonFocusColor)" description="מותאם אישי">$INFO[Skin.String(ButtonFocusColor)]</value>
   </variable>
   
   <variable name="SubMenuMarkColor" description="בחירת צבע סמן תת-תפריט">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),SubMenuMarkColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SubMenuMarkColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(SubMenuMarkColor)" description="ברירת מחדל-payne's grey(100%)">ff40404f</value>
 	<value condition="Skin.String(SubMenuMarkColor)" description="מותאם אישי">$INFO[Skin.String(SubMenuMarkColor)]</value>
   </variable>
   
   <variable name="KeyboardUnFocusColor" description="בחירת צבע מקלדת וירטואלית">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),KeyboardUnFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),KeyboardUnFocusColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(KeyboardUnFocusColor)" description="ברירת מחדל-payne's grey(100%)">ff40404f</value>
 	<value condition="Skin.String(KeyboardUnFocusColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardUnFocusColor)]</value>
   </variable>
   
   <variable name="KeyboardFocusColor" description="בחירת צבע מקלדת וירטואלית">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),KeyboardFocusColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),KeyboardFocusColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(KeyboardFocusColor)" description="ברירת-מחדל">ff4f4f98</value>
 	<value condition="Skin.String(KeyboardFocusColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardFocusColor)]</value>
   </variable>
   
   <variable name="KeyboardBackgroundColor" description="בחירת צבע מקלדת וירטואלית">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),KeyboardBackgroundColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),KeyboardBackgroundColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(KeyboardBackgroundColor)" description="ברירת-מחדל">ff40404f</value>
 	<value condition="Skin.String(KeyboardBackgroundColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardBackgroundColor)]</value>
   </variable>
   
   <variable name="KeyboardEditColor" description="בחירת צבע מקלדת וירטואלית">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),KeyboardEditColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),KeyboardEditColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(KeyboardEditColor)" description="ברירת-מחדל">ff96708f</value>
 	<value condition="Skin.String(KeyboardEditColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardEditColor)]</value>
   </variable>
   
   <variable name="KeyboardEditFontColor" description="צבע פונט טקסט במקלדת">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),KeyboardEditFontColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),KeyboardEditFontColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(KeyboardEditFontColor)" description="ברירת-מחדל">white2</value>
 	<value condition="Skin.String(KeyboardEditFontColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardEditFontColor)]</value>
   </variable>
   
   <variable name="KeyboardFontTitleColor" description="צבע פונט כותרת במקלדת">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),KeyboardFontTitleColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),KeyboardFontTitleColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(KeyboardFontTitleColor)" description="ברירת-מחדל">yellow</value>
 	<value condition="Skin.String(KeyboardFontTitleColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardFontTitleColor)]</value>
   </variable>
   
   <variable name="WidgetUnFocusFontColor" description="צבע פונט ו'ידגט לא נבחר">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),WidgetUnFocusFontColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),WidgetUnFocusFontColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(WidgetUnFocusFontColor)" description="ברירת-מחדל">white2</value>
 	<value condition="Skin.String(WidgetUnFocusFontColor)" description="מותאם אישי">$INFO[Skin.String(WidgetUnFocusFontColor)]</value>
   </variable>
   
   <variable name="WidgetFocusFontColor" description="צבע פונט ו'ידגט נבחר">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),WidgetFocusFontColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),WidgetFocusFontColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(WidgetFocusFontColor)" description="ברירת-מחדל">yellow</value>
 	<value condition="Skin.String(WidgetFocusFontColor)" description="מותאם אישי">$INFO[Skin.String(WidgetFocusFontColor)]</value>
   </variable>
   
   <variable name="SelectedFrameColor" description="בחירת צבע (מסגרת בחירה)">
-    <value condition="Window.IsVisible(Custom1170.xml) + StringCompare(Window(home).Property(TEMP),SelectedFrameColor) + !IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(SelectedFrameColor)" description="light blue">ff9697cb</value>
 	<value condition="Skin.String(SelectedFrameColor)" description="מותאם אישי">$INFO[Skin.String(SelectedFrameColor)]</value>
   </variable>
   
   <variable name="ChannelGroupName" description="PVR">
-	<value condition="!IsEmpty(ListItem.ChannelGroup)">$INFO[ListItem.ChannelGroup]</value>
-	<value condition="!IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
+	<value condition="!String.IsEmpty(ListItem.ChannelGroup)">$INFO[ListItem.ChannelGroup]</value>
+	<value condition="!String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
   </variable>
   <variable name="DialogVideoInfoText" description="פרטי וידאו-טקסט לכפתורים">
     <value description="נגן וידאו" condition="Control.HasFocus(80) + !Container.Content(TVShows)">$LOCALIZE[208] $LOCALIZE[291]</value>
@@ -273,39 +273,39 @@
 	<value description="יציאה" condition="Control.HasFocus(27)">$LOCALIZE[13012]</value>
   </variable>
   <variable name="DirectorButton" description="סרטים נוספים של הבמאי">
-    <value condition="Control.HasFocus(7141) + StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Director)">[COLOR yellow][B]$INFO[ListItem.Director][/B][/COLOR] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
-	<value condition="Control.HasFocus(7141) + !StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Director)">[COLOR=white]$LOCALIZE[20339]:[/COLOR] [COLOR yellow][B]$INFO[ListItem.Director][/B][/COLOR] </value>
-	<value condition="StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Director)">$INFO[ListItem.Director] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
-	<value condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(ListItem.Director)">[COLOR=white]$LOCALIZE[20339]:[/COLOR] $INFO[ListItem.Director]</value>
+    <value condition="Control.HasFocus(7141) + String.IsEqual(System.Language,Hebrew) + !String.IsEmpty(ListItem.Director)">[COLOR yellow][B]$INFO[ListItem.Director][/B][/COLOR] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
+	<value condition="Control.HasFocus(7141) + !String.IsEqual(System.Language,Hebrew) + !String.IsEmpty(ListItem.Director)">[COLOR=white]$LOCALIZE[20339]:[/COLOR] [COLOR yellow][B]$INFO[ListItem.Director][/B][/COLOR] </value>
+	<value condition="String.IsEqual(System.Language,Hebrew) + !String.IsEmpty(ListItem.Director)">$INFO[ListItem.Director] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
+	<value condition="!String.IsEqual(System.Language,Hebrew) + !String.IsEmpty(ListItem.Director)">[COLOR=white]$LOCALIZE[20339]:[/COLOR] $INFO[ListItem.Director]</value>
   </variable>
   <variable name="fanart" description="פאנארט">
-	<value condition="Skin.HasSetting(EpisodeFanart) + !IsEmpty(ListItem.Thumb) + [Container.Content(seasons) | Container.Content(episodes)] + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season)">$INFO[ListItem.Thumb]</value>
-	<value condition="!IsEmpty(ListItem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
-	<value condition="!IsEmpty(Fanart.Image)">$INFO[Fanart.Image]</value>
-	<value condition="!IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
-    <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-	<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-	<value condition="!IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
-	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FilenameAndPath)">$INFO[ListItem.FilenameAndPath]</value>
-	<value condition="Skin.HasSetting(PosterFanart) + StringCompare(Container.Viewmode,$LOCALIZE[31011])">$INFO[ListItem.Thumb]</value>
+	<value condition="Skin.HasSetting(EpisodeFanart) + !String.IsEmpty(ListItem.Thumb) + [Container.Content(seasons) | Container.Content(episodes)] + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Season)">$INFO[ListItem.Thumb]</value>
+	<value condition="!String.IsEmpty(ListItem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
+	<value condition="!String.IsEmpty(Fanart.Image)">$INFO[Fanart.Image]</value>
+	<value condition="!String.IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
+    <value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+	<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+	<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+	<value condition="Window.IsVisible(MyPics.xml) + !String.IsEmpty(ListItem.FilenameAndPath)">$INFO[ListItem.FilenameAndPath]</value>
+	<value condition="Skin.HasSetting(PosterFanart) + String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + !String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
   </variable>
   <variable name="banner" description="פאנארט">
-    <value condition="!IsEmpty(ListItem.Art(tvshow.banner))">$INFO[ListItem.Art(tvshow.banner)]</value>
-	<value condition="!IsEmpty(ListItem.Art(season.banner))">$INFO[ListItem.Art(season.banner)]</value>
-    <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+    <value condition="!String.IsEmpty(ListItem.Art(tvshow.banner))">$INFO[ListItem.Art(tvshow.banner)]</value>
+	<value condition="!String.IsEmpty(ListItem.Art(season.banner))">$INFO[ListItem.Art(season.banner)]</value>
+    <value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
   </variable>
   <variable name="Overlay" description="status">
 	<value condition="VideoPlayer.IsFullscreen">overlay/OverlayWatched2.png</value>
-	<value condition="Container.Content(Seasons) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)">overlay/OverlayWatched2.png</value>
-	<value condition="Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),1) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)">overlay/OverlayWatched2.png</value>
+	<value condition="Container.Content(Seasons) + Integer.IsGreater(ListItem.Property(WatchedEpisodes),0) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)">overlay/OverlayWatched2.png</value>
+	<value condition="Container.Content(TVShows) + Integer.IsGreater(ListItem.Property(WatchedEpisodes),1) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)">overlay/OverlayWatched2.png</value>
     <value condition="ListItem.IsResumable">overlay/OverlayWatched2.png</value>
-    <value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay,overlay/]</value>
+    <value condition="!String.IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay,overlay/]</value>
   </variable>
   <variable name="Overlay2" description="status">
-	<value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(WatchedEpisodes),0) + !IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)">overlay/OverlayWatched3.png</value>
-	<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png)">overlay/OverlayWatched3.png</value>
+	<value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + Integer.IsGreater(ListItem.Property(WatchedEpisodes),0) + Integer.IsLess(ListItem.Property(UnWatchedEpisodes),0)">overlay/OverlayWatched3.png</value>
+	<value condition="String.IsEqual(ListItem.Overlay,OverlayWatched.png)">overlay/OverlayWatched3.png</value>
 	<value condition="ListItem.IsResumable"></value>
-    <value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay,overlay/]</value>
+    <value condition="!String.IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay,overlay/]</value>
   </variable>
   <variable name="MainBackgroundTexture">
 	<value condition="!Skin.String(MainBackgroundTexture)">backgrounds/BackgroundTexture5.png</value>
@@ -324,212 +324,220 @@
 	<value condition="Skin.String(TopBackgroundTexture,5)">backgrounds/BackgroundTexture5.png</value>
   </variable>
   <variable name="TopVideoInformation1" description="אורך/מספר עונה(1101)/גרסה">
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Duration)">$INFO[VideoPlayer.Duration]</value>
-    <value condition="!IsEmpty(ListItem.Duration) + [SubString(Container.FolderPath,plugin://plugin.video.youtube)]">$INFO[ListItem.Duration]</value>
-	<value condition="!IsEmpty(ListItem.Duration) + !Container.Content(tvshows)">$INFO[ListItem.Duration]</value>
-	<value condition="!IsEmpty(ListItem.Property(runtime)) + Window.IsVisible(Home)">$INFO[ListItem.Property(runtime)]</value>
-	<value description="Home-Movies" condition="Control.IsVisible(311) + !IsEmpty(Container(311).ListItem.Property(runtime))">$INFO[Container(311).ListItem.Property(runtime)]</value>
-	<value description="Home-TV" condition="Control.IsVisible(312) + !IsEmpty(Container(312).ListItem.Property(runtime))">$INFO[Container(312).ListItem.Property(runtime)]</value>
-	<value condition="Window(home).Property(ListItemDuration) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle))">$INFO[Window(home).Property(ListItemDuration)]</value>
-	<value description="בית" condition="Window.IsActive(home) + !IsEmpty(ListItem.Property(Runtime))">$INFO[ListItem.Property(Runtime)]</value>
-	<value description="גרסת הרחבה" condition="!IsEmpty(ListItem.Property(Addon.Version))">$INFO[ListItem.Property(Addon.Version)]</value>
-	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItemNoWrap(0).Duration)">$INFO[Container(11).ListItemNoWrap(0).Duration]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Duration)">$INFO[VideoPlayer.Duration]</value>
+	<value condition="Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Duration)">$INFO[MusicPlayer.Duration]</value>
+    <value condition="!String.IsEmpty(ListItem.Duration) + [String.Contains(Container.FolderPath,plugin://plugin.video.youtube)]">$INFO[ListItem.Duration]</value>
+	<value condition="!String.IsEmpty(ListItem.Duration) + !Container.Content(tvshows)">$INFO[ListItem.Duration]</value>
+	<value condition="!String.IsEmpty(ListItem.Property(runtime)) + Window.IsVisible(Home)">$INFO[ListItem.Property(runtime)]</value>
+	<value description="Home-Movies" condition="Control.IsVisible(311) + !String.IsEmpty(Container(311).ListItem.Property(runtime))">$INFO[Container(311).ListItem.Property(runtime)]</value>
+	<value description="Home-TV" condition="Control.IsVisible(312) + !String.IsEmpty(Container(312).ListItem.Property(runtime))">$INFO[Container(312).ListItem.Property(runtime)]</value>
+	<value condition="Window(home).Property(ListItemDuration) + String.IsEqual(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle))">$INFO[Window(home).Property(ListItemDuration)]</value>
+	<value description="בית" condition="Window.IsActive(home) + !String.IsEmpty(ListItem.Property(Runtime))">$INFO[ListItem.Property(Runtime)]</value>
+	<value description="גרסת הרחבה" condition="!String.IsEmpty(ListItem.AddonVersion)">$INFO[ListItem.AddonVersion]</value>
+	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !String.IsEmpty(Container(11).ListItemNoWrap(0).Duration)">$INFO[Container(11).ListItemNoWrap(0).Duration]</value>
 	<value condition="Skin.HasSetting(Admin)">...</value>
   </variable>
   <variable name="TopVideoInformation2" description="שנה/יוצר הרחבה">
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Year)">$INFO[VideoPlayer.Year]</value>
-	<value condition="!IsEmpty(ListItem.Year)">$INFO[ListItem.Year]</value>
-	<value description="Home-Movies" condition="Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(year))">$INFO[Container(311).ListItem.Property(Year)]</value>
-	<value description="Home-TV" condition="Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(year))">$INFO[Container(312).ListItem.Property(Year)]</value>
-	<value condition="!IsEmpty(MusicPlayer.Year) + Window.IsVisible(MyMusicNav.xml)">$INFO[MusicPlayer.Year]</value>
-	<value condition="!IsEmpty(ListItem.Date) + !Window.IsVisible(MyPVRChannels.xml) + !Window.IsVisible(MyPVRGuide.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !ListItem.HasEpg">$INFO[ListItem.Date]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Year)">$INFO[VideoPlayer.Year]</value>
+	<value condition="Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Year)">$INFO[MusicPlayer.Year]</value>
+	<value condition="!String.IsEmpty(ListItem.Year)">$INFO[ListItem.Year]</value>
+	<value description="Home-Movies" condition="Control.HasFocus(311) + !String.IsEmpty(Container(311).ListItem.Property(year))">$INFO[Container(311).ListItem.Property(Year)]</value>
+	<value description="Home-TV" condition="Control.HasFocus(312) + !String.IsEmpty(Container(312).ListItem.Property(year))">$INFO[Container(312).ListItem.Property(Year)]</value>
+	<value condition="!String.IsEmpty(MusicPlayer.Year) + Window.IsVisible(MyMusicNav.xml)">$INFO[MusicPlayer.Year]</value>
+	<value condition="!String.IsEmpty(ListItem.Date) + !Window.IsVisible(MyPVRChannels.xml) + !Window.IsVisible(MyPVRGuide.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !ListItem.HasEpg">$INFO[ListItem.Date]</value>
   </variable>
   <variable name="TopVideoInformation3" description="דירוג וידאו/אודיו">
-	<value description="Home" condition="Window.IsActive(home) + [Control.HasFocus(311) | Control.HasFocus(312)] + !IsEmpty(ListItem.Property(rating))">$INFO[ListItem.Property(rating),badges/rating/10/,.png]</value>
-	<value description="Home2_Movies" condition="Window.IsActive(home) + Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(rating))">$INFO[Container(311).ListItem.Property(rating),badges/rating/10/,.png]</value>
-	<value description="Home2_TV" condition="Window.IsActive(home) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(rating))">$INFO[Container(312).ListItem.Property(rating),badges/rating/10/,.png]</value>
-    <value description="בניגון יו-טיוב" condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Rating) + IntegerGreaterThan(VideoPlayer.Rating,0) + !IntegerGreaterThan(VideoPlayer.Rating,5) + [SubString(Player.FolderPath,.googlevideo.com) | SubString(Player.FolderPath,&amp;source=youtube&) | SubString(Player.FolderPath,plugin.video.youtube)]">$INFO[VideoPlayer.Rating,badges/rating/5/,.png]</value>
-	<value description="בניגון וידאו" condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Rating)">$INFO[VideoPlayer.Rating,badges/rating/10/,.png]</value>
-	<value description="יו-טיוב" condition="!IsEmpty(ListItem.Rating) + SubString(Container.FolderPath,plugin://plugin.video.youtube)">$INFO[ListItem.Rating,badges/rating/5/,.png]</value>
-	<value description="מוזיקה" condition="!IsEmpty(ListItem.Rating) + Window.IsVisible(MyMusicNav.xml) + [Container.Content(songs) | Container.Content(artists) | Container.Content(albums)]">$VAR[MusicInformation3]</value>
-	<value description="הרחבות" condition="Window.IsVisible(DialogAddonInfo.xml) + !IsEmpty(ListItem.Property(Addon.StarRating))">$INFO[ListItem.Property(Addon.StarRating)]</value>
-	<value description="אחר" condition="!IsEmpty(ListItem.Rating)">$INFO[ListItem.Rating,badges/rating/10/,.png]</value>
-	<value description="אחר2" condition="[StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) | [Container.Content(Seasons) + SubString(Container.FolderPath,videodb://tvshows/)]] + [!IsEmpty(Window(home).Property(ListItemRating)) + !VideoPlayer.IsFullscreen] + [!Container.Content(songs) + !Container.Content(artists) + !Container.Content(albums)]">$INFO[Window(home).Property(ListItemRating),badges/rating/10/,.png]</value>
+	<value description="Home" condition="Window.IsActive(home) + [Control.HasFocus(311) | Control.HasFocus(312)] + !String.IsEmpty(ListItem.Property(rating))">$INFO[ListItem.Property(rating),badges/rating/10/,.png]</value>
+	<value description="Home2_Movies" condition="Window.IsActive(home) + Control.HasFocus(311) + !String.IsEmpty(Container(311).ListItem.Property(rating))">$INFO[Container(311).ListItem.Property(rating),badges/rating/10/,.png]</value>
+	<value description="Home2_TV" condition="Window.IsActive(home) + Control.HasFocus(312) + !String.IsEmpty(Container(312).ListItem.Property(rating))">$INFO[Container(312).ListItem.Property(rating),badges/rating/10/,.png]</value>
+    <value description="בניגון יו-טיוב" condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Rating) + Integer.IsGreater(VideoPlayer.Rating,0) + Integer.IsLess(VideoPlayer.Rating,5) + [String.Contains(Player.FolderPath,.googlevideo.com) | String.Contains(Player.FolderPath,&amp;source=youtube&) | String.Contains(Player.FolderPath,plugin.video.youtube)]">$INFO[VideoPlayer.Rating,badges/rating/5/,.png]</value>
+	<value description="בניגון וידאו" condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Rating)">$INFO[VideoPlayer.Rating,badges/rating/10/,.png]</value>
+	<value description="בניגון מוזיקה" condition="Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Rating)">$INFO[MusicPlayer.Rating,badges/rating/10/,.png]</value>
+	<value description="יו-טיוב" condition="!String.IsEmpty(ListItem.Rating) + String.Contains(Container.FolderPath,plugin://plugin.video.youtube)">$INFO[ListItem.Rating,badges/rating/5/,.png]</value>
+	<value description="מוזיקה" condition="!String.IsEmpty(ListItem.Rating) + Window.IsVisible(MyMusicNav.xml) + [Container.Content(songs) | Container.Content(artists) | Container.Content(albums)]">$VAR[MusicInformation3]</value>
+	<value description="הרחבות" condition="Window.IsVisible(DialogAddonInfo.xml) + !String.IsEmpty(ListItem.Property(Addon.StarRating))">$INFO[ListItem.Property(Addon.StarRating)]</value>
+	<value description="אחר" condition="!String.IsEmpty(ListItem.Rating)">$INFO[ListItem.Rating,badges/rating/10/,.png]</value>
+	<value description="UserRating" condition="!String.IsEmpty(ListItem.UserRating)">$INFO[ListItem.UserRating,badges/rating/10/,.png]</value>
 	<!--<value></value>-->
   </variable>
   <variable name="TopVideoInformation4" description="פוסטר">
     <!--<value condition="Player.HasVideo + Pvr.IsPlayingTV">$INFO[]</value>-->
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Cover)">$INFO[VideoPlayer.Cover]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
-	<value condition="!IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
-	<value condition="!IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
-	<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-	<value description="פוסטר סרט - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Thumb)">$INFO[Container(311).ListItem.Thumb]</value>
-	<value description="פוסטר סדרה - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Thumb)">$INFO[Container(312).ListItem.Thumb]</value>
-	<value condition="SubString(ListItem.Label,Next page) | SubString(ListItem.Label,$LOCALIZE[33078])">DefaultVideo2.png</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Cover)">$INFO[VideoPlayer.Cover]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
+	<value condition="Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Cover)">$INFO[MusicPlayer.Cover]</value>
+	<value condition="!String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+	<value condition="!String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
+	<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+	<value description="פוסטר סרט - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(311) + !String.IsEmpty(Container(311).ListItem.Thumb)">$INFO[Container(311).ListItem.Thumb]</value>
+	<value description="פוסטר סדרה - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !String.IsEmpty(Container(312).ListItem.Thumb)">$INFO[Container(312).ListItem.Thumb]</value>
+	<value condition="String.Contains(ListItem.Label,Next page) | String.Contains(ListItem.Label,$LOCALIZE[33078])">DefaultVideo2.png</value>
 	<value description="הרחבה" condition="Window.IsVisible(MyWeather.xml)">_</value>
-	<value description="כפתור מזג אוויר" condition="Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">special://home/addons/resource.images.weathericons.outline/resources/$INFO[Weather.fanartcode].png</value>
-	<value condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenrePic]</value>
-	<value condition="!IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
-	<value condition="!IsEmpty(Container(50).ListItem.Thumb)">$INFO[Container(50).ListItem.Thumb]</value>
-	<value description="הרחבה" condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
-	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItem(0).Thumb)">$INFO[Container(11).ListItem(0).Thumb]</value>
+	<value description="כפתור מזג אוויר" condition="Window.IsVisible(Home.xml) + String.IsEqual(Window(home).Property(Button.ID),97)">special://home/addons/resource.images.weathericons.outline/resources/$INFO[Weather.fanartcode].png</value>
+	<value condition="String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenrePic]</value>
+	<value condition="!String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
+	<value condition="!String.IsEmpty(Container(50).ListItem.Thumb)">$INFO[Container(50).ListItem.Thumb]</value>
+	<value description="הרחבה" condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !String.IsEmpty(Container(11).ListItem(0).Thumb)">$INFO[Container(11).ListItem(0).Thumb]</value>
   </variable>
   <variable name="TopVideoInformation5" description="פרטי וידאו">
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
-	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Description)) + !IsEmpty(ListItem.Property(Addon.Summary))">[COLOR=yellow]$INFO[ListItem.Property(Addon.Summary)][/COLOR][CR][CR]$INFO[ListItem.Property(Addon.Description)]</value>
-	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !IsEmpty(ListItem.Property(Addon.Description)) + IsEmpty(ListItem.Property(Addon.Summary))">[COLOR=yellow]$INFO[ListItem.Property(Addon.Summary)][/COLOR][CR][CR]$INFO[ListItem.Property(Addon.Description)]</value>
-	<value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
-	<value condition="Container.Content(Seasons) |  Container.Content(Episodes) + !IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
-	<value description="פרטי סרט - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(plot))">[B]$INFO[Container(311).ListItem.Property(plot)][/B]</value>
-	<value description="פרטי פרק - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(plot))">[B]$INFO[Container(312).ListItem.Property(plot)][/B]</value>
-	<!--<value description="בחר סמל/פאנארט עי לחיצה על כפתור OK." condition="Window.IsVisible(FileBrowser.xml) + [StringCompare(Window(home).Property(TEMP),icon) | StringCompare(Window(home).Property(TEMP),background)]">[B][COLOR=green]$LOCALIZE[31507][/COLOR][/B]</value>-->
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
+	<value condition="Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Property(Artist_Description))">$INFO[MusicPlayer.Property(Artist_Description)]</value>
+	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !String.IsEmpty(ListItem.AddonDescription) + !String.IsEmpty(ListItem.AddonSummary)">[COLOR=yellow]$INFO[ListItem.AddonSummary][/COLOR][CR][CR]$INFO[ListItem.AddonDescription]</value>
+	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !String.IsEmpty(ListItem.AddonDescription) + String.IsEmpty(ListItem.AddonSummary)">[COLOR=yellow]$INFO[ListItem.AddonSummary][/COLOR][CR][CR]$INFO[ListItem.AddonDescription]</value>
+	<value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+	<value condition="Container.Content(Seasons) |  Container.Content(Episodes) + !String.IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
+	<value description="פרטי סרט - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(311) + !String.IsEmpty(Container(311).ListItem.Property(plot))">[B]$INFO[Container(311).ListItem.Property(plot)][/B]</value>
+	<value description="פרטי פרק - בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !String.IsEmpty(Container(312).ListItem.Property(plot))">[B]$INFO[Container(312).ListItem.Property(plot)][/B]</value>
+	<!--<value description="בחר סמל/פאנארט עי לחיצה על כפתור OK." condition="Window.IsVisible(FileBrowser.xml) + [String.IsEqual(Window(home).Property(TEMP),icon) | String.IsEqual(Window(home).Property(TEMP),background)]">[B][COLOR=green]$LOCALIZE[31507][/COLOR][/B]</value>-->
 
-	<value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
-	<value condition="SubString(ListItem.Path,videodb://1/7) | SubString(ListItem.path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
-	<value condition="!IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))">$INFO[Container(50).ListItemNoWrap(0).Property(rinfo)]</value>
-	<value condition="Window.IsVisible(SettingsCategory.xml) + !IsEmpty(Control.GetLabel(121))">$INFO[Control.GetLabel(121)]</value>
-	<value condition="Window.IsVisible(SettingsCategory.xml) + !IsEmpty(Control.GetLabel(6))">$INFO[Control.GetLabel(6)]</value>
+	<value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+	<value condition="String.Contains(ListItem.Path,videodb://1/7) | String.Contains(ListItem.path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
+	<value condition="!String.IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))">$INFO[Container(50).ListItemNoWrap(0).Property(rinfo)]</value>
+	<value condition="Window.IsVisible(SettingsCategory.xml) + !String.IsEmpty(Control.GetLabel(121))">$INFO[Control.GetLabel(121)]</value>
+	<value condition="Window.IsVisible(SettingsCategory.xml) + !String.IsEmpty(Control.GetLabel(6))">$INFO[Control.GetLabel(6)]</value>
 	<value description="הרחבה" condition="Window.IsVisible(MyWeather.xml)">$LOCALIZE[404]: $INFO[Window.Property(Current.Wind)]   |   $LOCALIZE[402]: $INFO[Window.Property(Current.FeelsLike)]°[CR]$LOCALIZE[405]: $INFO[Window.Property(Current.DewPoint)]   |   $LOCALIZE[406]: $INFO[Window.Property(Current.Humidity)]   |   $LOCALIZE[403]: $INFO[Window.Property(Current.UVIndex)]</value>
-	<value condition="Window.IsVisible(FileBrowser.xml) + !IsEmpty(Control.GetLabel(412))">$INFO[Control.GetLabel(412)]</value>
-	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.Path)">$INFO[ListItem.Path]</value>
-	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItemNoWrap(0).Plot)">$INFO[Container(11).ListItemNoWrap(0).Plot]</value>
+	<value condition="Window.IsVisible(FileBrowser.xml) + !String.IsEmpty(Control.GetLabel(412))">$INFO[Control.GetLabel(412)]</value>
+	<value condition="Window.IsVisible(MyPics.xml) + !String.IsEmpty(ListItem.Path)">$INFO[ListItem.Path]</value>
+	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !String.IsEmpty(Container(11).ListItemNoWrap(0).Plot)">$INFO[Container(11).ListItemNoWrap(0).Plot]</value>
   </variable>
   <variable name="TopVideoInformation5.1" description="פרטי טלוויזיה חיה">
     <value condition="Control.IsVisible(10)">$INFO[ListItem.Duration] [COLOR=white]$LOCALIZE[180]:[/COLOR][CR][COLOR=yellow]$INFO[ListItem.Title][/COLOR][CR]$INFO[ListItem.Plot]</value>
 	<value condition="!Control.IsVisible(10)">$INFO[ListItem.Duration] [COLOR=white]$LOCALIZE[180]:[/COLOR][CR][COLOR=yellow]$INFO[ListItem.Title][/COLOR][CR]$INFO[ListItem.Plot][CR][CR][COLOR=grey]$INFO[ListItem.NextTitle][/COLOR] [COLOR=white]$LOCALIZE[19031]:[/COLOR]</value>
   </variable>
   <variable name="TopVideoInformation6" description="סגנון">
-    <value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Genre)">$INFO[VideoPlayer.Genre]</value>
-	<value condition="!IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
-	<value description="Home-Movies" condition="Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(genre))">$INFO[Container(311).ListItem.Property(Genre)]</value>
-	<value description="Home-TV" condition="Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(genre))">$INFO[Container(312).ListItem.Property(Genre)]</value>
-	<value condition="SubString(ListItem.Path,videodb://1/7) | SubString(ListItem.path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
-	<value condition="Window.IsVisible(DialogAddonInfo.xml) + !IsEmpty(ListItem.Property(Addon.Type))">$INFO[ListItem.Property(Addon.Type)]</value>
-	<value condition="Window.IsVisible(FileBrowser.xml) + !IsEmpty(Control.GetLabel(412))">$INFO[Control.GetLabel(412)]</value>
+    <value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Genre)">$INFO[VideoPlayer.Genre]</value>
+	<value condition="Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Genre)">$INFO[MusicPlayer.Genre]</value>
+	<value condition="!String.IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
+	<value description="Home-Movies" condition="Control.HasFocus(311) + !String.IsEmpty(Container(311).ListItem.Property(genre))">$INFO[Container(311).ListItem.Property(Genre)]</value>
+	<value description="Home-TV" condition="Control.HasFocus(312) + !String.IsEmpty(Container(312).ListItem.Property(genre))">$INFO[Container(312).ListItem.Property(Genre)]</value>
+	<value condition="String.Contains(ListItem.Path,videodb://1/7) | String.Contains(ListItem.path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
+	<value condition="Window.IsVisible(DialogAddonInfo.xml) + !String.IsEmpty(ListItem.AddonType)">$INFO[ListItem.AddonType]</value>
+	<value condition="Window.IsVisible(FileBrowser.xml) + !String.IsEmpty(Control.GetLabel(412))">$INFO[Control.GetLabel(412)]</value>
 	<value condition="Window.IsVisible(MyPics.xml)">_</value>
-	<value condition="!VideoPlayer.IsFullscreen + !IsEmpty(Window(home).Property(ListItemGenre)) + StringCompare(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + [Window.IsVisible(Home.xml) | Window.IsVisible(MyVideoNav.xml)]">$INFO[Window(home).Property(ListItemGenre)]</value>
+	<value condition="!VideoPlayer.IsFullscreen + !String.IsEmpty(Window(home).Property(ListItemGenre)) + String.IsEqual(ListItem.TVShowTitle,Window(home).Property(ListItemTVShowTitle)) + [Window.IsVisible(Home.xml) | Window.IsVisible(MyVideoNav.xml)]">$INFO[Window(home).Property(ListItemGenre)]</value>
   </variable>
   <variable name="TopVideoInformation7" description="משפט סרט/שם פרק(1107)">
-    <value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Tagline)">$INFO[VideoPlayer.Tagline]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.Title)">[B]$INFO[VideoPlayer.Title][/B]</value>
-	<value description="משפט סרט" condition="!IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
-	<value description="שם הפרק" condition="Container.Content(Episodes) + !StringCompare(ListItem.Label,..) + !IsEmpty(ListItem.Title) + !StringCompare(ListItem.Title,ListItem.TVShowTitle) + !StringCompare(ListItem.Title,System.CurrentControl)">[B]$INFO[ListItem.Title][/B]</value>
-	<value description="שם הפרק-בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(title))">[B]$INFO[Container(312).ListItem.Property(title)][/B]</value>
-	<value description="משפט סרט-בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(tagline))">[B]$INFO[Container(311).ListItem.Property(tagline)][/B]</value>
-	<value description="PVR" condition="[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.EpisodeName]</value>
-	<value description="PVR" condition="[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
-	<!--<value description="משפט סרט אקראי - בית" condition="[Window.IsActive(home) + Control.HasFocus(311)] + !IsEmpty(Container(311).ListItem.Property(Tagline))">[B]$INFO[Container(311).Property(Tagline)][/B]</value>
-	<value description="שם הפרק-בית" condition="[Window.IsActive(home) + Control.HasFocus(312)] + !IsEmpty(Container(312).ListItem.Property(title))">[B]$INFO[Window(Home).Property(RandomMovie.2.Title)][/B]</value>-->
-	<value condition="Window.IsVisible(DialogAddonInfo.xml) + !IsEmpty(ListItem.Property(Addon.Disclaimer))">$INFO[ListItem.Property(Addon.Disclaimer)]</value>
-	<value condition="Window.IsVisible(MyWeather.xml) + !IsEmpty(Container(50).ListItem.Label2) | Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">$INFO[Window(Weather).Property(Current.Condition)]   |   $INFO[Window(Weather).Property(Day0.LowTemp)] - $INFO[Window(Weather).Property(Day0.HighTemp)]</value>
-	<value description="מספר פרקים שנצפו" condition="!SubString(Container.FolderPath,plugin://) + [Container.Content(tvshows) | Container.Content(seasons)]">$LOCALIZE[21457] $INFO[ListItem.Property(WatchedEpisodes)] $LOCALIZE[20163] $INFO[ListItem.Property(NumEpisodes)]</value>
-	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItem(0).Label2)">$INFO[Container(11).ListItem(0).Label2]</value>
-	<value condition="!IsEmpty(Container(50).ListItem.Label2) + !SubString(Container(50).ListItem.Label2,0 B) + !Container.Content(movies)">$INFO[Container(50).ListItem.Label2]</value>
+    <value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Tagline)">$INFO[VideoPlayer.Tagline]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Title)">[B]$INFO[VideoPlayer.Title][/B]</value>
+	<value condition="Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Comment)">$INFO[MusicPlayer.Comment]</value>
+	<value description="משפט סרט" condition="!String.IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
+	<value description="שם הפרק" condition="Container.Content(Episodes) + !String.IsEqual(ListItem.Label,..) + !String.IsEmpty(ListItem.Title) + !String.Contain(ListItem.Title,ListItem.TVShowTitle) + !String.IsEqual(ListItem.Title,System.CurrentControl) + !String.IsEqual(Container(50).ListItem.Label,ListItem.Title)">[B]$INFO[ListItem.Title][/B]</value>
+	<value description="שם הפרק-בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !String.IsEmpty(Container(312).ListItem.Property(title))">[B]$INFO[Container(312).ListItem.Property(title)][/B]</value>
+	<value description="משפט סרט-בית" condition="Window.IsVisible(Home.xml) + Control.HasFocus(311) + !String.IsEmpty(Container(311).ListItem.Property(tagline))">[B]$INFO[Container(311).ListItem.Property(tagline)][/B]</value>
+	<value description="PVR" condition="[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.EpisodeName]</value>
+	<value description="PVR" condition="[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
+	<!--<value description="משפט סרט אקראי - בית" condition="[Window.IsActive(home) + Control.HasFocus(311)] + !String.IsEmpty(Container(311).ListItem.Property(Tagline))">[B]$INFO[Container(311).Property(Tagline)][/B]</value>
+	<value description="שם הפרק-בית" condition="[Window.IsActive(home) + Control.HasFocus(312)] + !String.IsEmpty(Container(312).ListItem.Property(title))">[B]$INFO[Window(Home).Property(RandomMovie.2.Title)][/B]</value>-->
+	<value condition="Window.IsVisible(DialogAddonInfo.xml) + !String.IsEmpty(ListItem.AddonDisclaimer)">$INFO[ListItem.AddonDisclaimer]</value>
+	<value condition="Window.IsVisible(MyWeather.xml) + !String.IsEmpty(Container(50).ListItem.Label2) | Window.IsVisible(Home.xml) + String.IsEqual(Window(home).Property(Button.ID),97)">$INFO[Window(Weather).Property(Current.Condition)]   |   $INFO[Window(Weather).Property(Day0.LowTemp)] - $INFO[Window(Weather).Property(Day0.HighTemp)]</value>
+	<value description="מספר פרקים שנצפו" condition="!String.Contains(Container.FolderPath,plugin://) + [Container.Content(tvshows) | Container.Content(seasons)]">$LOCALIZE[21457] $INFO[ListItem.Property(WatchedEpisodes)] $LOCALIZE[20163] $INFO[ListItem.Property(NumEpisodes)]</value>
+	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !String.IsEmpty(Container(11).ListItem(0).Label2)">$INFO[Container(11).ListItem(0).Label2]</value>
+	<value condition="!String.IsEmpty(Container(50).ListItem.Label2) + !String.Contains(Container(50).ListItem.Label2,0 B) + !Container.Content(movies)">$INFO[Container(50).ListItem.Label2]</value>
   </variable>
   <variable name="TopVideoInformation8" description="שם סרט/סדרה">
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.TVShowTitle]</value>
-	<value condition="[SubString(ListItem.Label,..)] + [Container.content(Episodes) | Container.content(Seasons)]">$INFO[Container.FolderName]</value>
-	<value condition="!IsEmpty(ListItem.TVShowTitle) + [Container.content(Seasons) | Container.content(Episodes)]">$INFO[ListItem.TVShowTitle]</value>
-	<value description="Home-Movies" condition="Control.HasFocus(311) + !IsEmpty(Container(311).ListItem.Property(title))">$INFO[Container(311).ListItem.Property(title)]</value>
-	<value description="Home-TV" condition="Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(title))">$INFO[Container(312).ListItem.Property(tvshowtitle)]</value>
-	<value condition="Window.IsVisible(DialogAddonInfo.xml) + !IsEmpty(ListItem.Property(Addon.Name))">$INFO[ListItem.Property(Addon.Name)]</value>
-	<value description="תמונות" condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FileName)">$INFO[ListItem.FileName]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.TVShowTitle]</value>
+	<value condition="Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Title)">$INFO[MusicPlayer.Title]</value>
+	<value condition="[String.Contains(ListItem.Label,..)] + [Container.content(Episodes) | Container.content(Seasons)]">$INFO[Container.FolderName]</value>
+	<value condition="!String.IsEmpty(ListItem.TVShowTitle) + [Container.content(Seasons) | Container.content(Episodes)]">$INFO[ListItem.TVShowTitle]</value>
+	<value description="Home-Movies" condition="Control.HasFocus(311) + !String.IsEmpty(Container(311).ListItem.Property(title))">$INFO[Container(311).ListItem.Property(title)]</value>
+	<value description="Home-TV" condition="Control.HasFocus(312) + !String.IsEmpty(Container(312).ListItem.Property(title))">$INFO[Container(312).ListItem.Property(tvshowtitle)]</value>
+	<value condition="Window.IsVisible(DialogAddonInfo.xml) + !String.IsEmpty(ListItem.AddonName)">$INFO[ListItem.AddonName]</value>
+	<value description="תמונות" condition="Window.IsVisible(MyPics.xml) + !String.IsEmpty(ListItem.FileName)">$INFO[ListItem.FileName]</value>
 	<!--<value condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !Window.IsVisible(DialogAddonInfo.xml)"></value>-->
-	<value condition="Window.IsVisible(MyWeather.xml) + !IsEmpty(Container(50).ListItem.Label)">$INFO[Control.GetLabel(31)] - $INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</value>
-	<value condition="Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),97)">$INFO[System.Date(DDD)] - $INFO[Weather.Temperature]</value>
-	<value condition="!Window.IsVisible(DialogVideoInfo.xml) + !IsEmpty(Container(50).ListItem.Label)">$INFO[Container(50).ListItem.Label]</value>
+	<value condition="Window.IsVisible(MyWeather.xml) + !String.IsEmpty(Container(50).ListItem.Label)">$INFO[Control.GetLabel(31)] - $INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</value>
+	<value condition="Window.IsVisible(Home.xml) + String.IsEqual(Window(home).Property(Button.ID),97)">$INFO[System.Date(DDD)] - $INFO[Weather.Temperature]</value>
+	<value condition="!Window.IsVisible(DialogVideoInfo.xml) + !String.IsEmpty(Container(50).ListItem.Label)">$INFO[Container(50).ListItem.Label]</value>
 	<value condition="Window.IsVisible(SettingsCategory.xml) + [ControlGroup(3).HasFocus | ControlGroup(5).HasFocus]">$INFO[System.CurrentControl]</value>
-	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !IsEmpty(Container(11).ListItem(0).Label)">$INFO[Container(11).ListItem(0).Label]</value>
-	<value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
+	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !String.IsEmpty(Container(11).ListItem(0).Label)">$INFO[Container(11).ListItem(0).Label]</value>
+	<value condition="!String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
 	<value>...</value>
   </variable>
   <variable name="TopVideoInformation9" description="תמונת פרק">
-	<!--<value condition="[VideoPlayer.IsFullscreen + VideoPlayer.Content(Episodes) + !IsEmpty(Player.Art(thumb))]">$INFO[Player.Art(thumb)]</value>-->
-	<value condition="Container.Content(Episodes) + !IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+	<!--<value condition="[VideoPlayer.IsFullscreen + VideoPlayer.Content(Episodes) + !String.IsEmpty(Player.Art(thumb))]">$INFO[Player.Art(thumb)]</value>-->
+	<value condition="Container.Content(Episodes) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
   </variable>
   <variable name="TopVideoInformation10" description="עונה ופרק">
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [IntegerGreaterThan(VideoPlayer.Season,9) + IntegerGreaterThan(VideoPlayer.Episode,9)]">S[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] E[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [IntegerGreaterThan(VideoPlayer.Season,9) + !IntegerGreaterThan(VideoPlayer.Episode,9)]">S[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] E0[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [!IntegerGreaterThan(VideoPlayer.Season,9) + IntegerGreaterThan(VideoPlayer.Episode,9)]">S0[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] E[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
-	<value condition="VideoPlayer.IsFullscreen + !IsEmpty(VideoPlayer.TVShowTitle) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season) + [!IntegerGreaterThan(VideoPlayer.Season,9) + !IntegerGreaterThan(VideoPlayer.Episode,9)]">S0[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] E0[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.TVShowTitle) + !String.IsEmpty(VideoPlayer.Episode) + !String.IsEmpty(VideoPlayer.Season) + [Integer.IsGreater(VideoPlayer.Season,9) + Integer.IsGreater(VideoPlayer.Episode,9)]">S[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] E[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.TVShowTitle) + !String.IsEmpty(VideoPlayer.Episode) + !String.IsEmpty(VideoPlayer.Season) + [Integer.IsGreater(VideoPlayer.Season,9) + Integer.IsLess(VideoPlayer.Episode,9)]">S[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] E0[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.TVShowTitle) + !String.IsEmpty(VideoPlayer.Episode) + !String.IsEmpty(VideoPlayer.Season) + [Integer.IsLess(VideoPlayer.Season,9) + Integer.IsGreater(VideoPlayer.Episode,9)]">S0[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] E[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.TVShowTitle) + !String.IsEmpty(VideoPlayer.Episode) + !String.IsEmpty(VideoPlayer.Season) + [Integer.IsLess(VideoPlayer.Season,9) + Integer.IsLess(VideoPlayer.Episode,9)]">S0[COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] E0[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR]</value>
 	
-	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)]">S$INFO[ListItem.Season] E$INFO[ListItem.Episode]</value>
-	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)]">S$INFO[ListItem.Season] E0$INFO[ListItem.Episode]</value>
-	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [!IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)]">S0$INFO[ListItem.Season] E$INFO[ListItem.Episode]</value>
-	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Season) + [!IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)]">S0$INFO[ListItem.Season] E0$INFO[ListItem.Episode]</value>
+	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Season) + [Integer.IsGreater(ListItem.Season,9) + Integer.IsGreater(ListItem.Episode,9)]">S$INFO[ListItem.Season] E$INFO[ListItem.Episode]</value>
+	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Season) + [Integer.IsGreater(ListItem.Season,9) + Integer.IsLess(ListItem.Episode,9)]">S$INFO[ListItem.Season] E0$INFO[ListItem.Episode]</value>
+	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Season) + [Integer.IsLess(ListItem.Season,9) + Integer.IsGreater(ListItem.Episode,9)]">S0$INFO[ListItem.Season] E$INFO[ListItem.Episode]</value>
+	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Episodes) + !String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Season) + [Integer.IsLess(ListItem.Season,9) + Integer.IsLess(ListItem.Episode,9)]">S0$INFO[ListItem.Season] E0$INFO[ListItem.Episode]</value>
 	
-	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Seasons) + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(ListItem.Property(TotalEpisodes)) + !IsEmpty(ListItem.Season) + [!IntegerGreaterThan(ListItem.Season,9)]">S0$INFO[ListItem.Season]  E1-$INFO[ListItem.Property(TotalEpisodes)]</value>
+	<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(Seasons) + !String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(ListItem.Property(TotalEpisodes)) + !String.IsEmpty(ListItem.Season) + [Integer.IsLess(ListItem.Season,9)]">S0$INFO[ListItem.Season]  E1-$INFO[ListItem.Property(TotalEpisodes)]</value>
 	
-	<!--<value description="HomeTvshows_en" condition="Window.IsActive(home) + Control.HasFocus(312) + !StringCompare(System.Language,Hebrew)">$INFO[Container(312).ListItem.Property(top2)]</value>-->
-	<value condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !IsEmpty(Container(312).ListItem.Property(season)) + !IsEmpty(Container(312).ListItem.Property(episode))">S$INFO[Container(312).ListItem.Property(Season)]  E$INFO[Container(312).ListItem.Property(Episode)]</value>
+	<!--<value description="HomeTvshows_en" condition="Window.IsActive(home) + Control.HasFocus(312) + !String.IsEqual(System.Language,Hebrew)">$INFO[Container(312).ListItem.Property(top2)]</value>-->
+	<value condition="Window.IsVisible(Home.xml) + Control.HasFocus(312) + !String.IsEmpty(Container(312).ListItem.Property(season)) + !String.IsEmpty(Container(312).ListItem.Property(episode))">S$INFO[Container(312).ListItem.Property(Season)]  E$INFO[Container(312).ListItem.Property(Episode)]</value>
   </variable>
   <variable name="VideoInformation1" description="עונה/פרק/וידאו/סינון">
-	<value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Season)">$LOCALIZE[20373] $INFO[ListItem.Season]</value>
-	<value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
-	<value condition="!IsEmpty(ListItem.Episode) + Container.Content(Episodes) + !IsEmpty(ListItem.Season) + !IsEmpty(ListItem.TVShowTitle) + StringCompare(Container.Viewmode,$LOCALIZE[31012])">$LOCALIZE[20359] $INFO[ListItem.Episode]</value>
-	<value condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenreLabel]</value>
-	<value description="Popcorn Time" condition="StringCompare(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | StringCompare(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)">$VAR[GenreLabel]</value>
-	<value description="Exodus" condition="StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres)">$VAR[GenreLabel]</value>
-	<value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
+	<value condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Season)">$LOCALIZE[20373] $INFO[ListItem.Season]</value>
+	<value condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
+	<value condition="!String.IsEmpty(ListItem.Episode) + Container.Content(Episodes) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.TVShowTitle) + String.IsEqual(Container.Viewmode,$LOCALIZE[31012])">$LOCALIZE[20359] $INFO[ListItem.Episode]</value>
+	<value condition="String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenreLabel]</value>
+	<value description="Popcorn Time" condition="String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)">$VAR[GenreLabel]</value>
+	<value description="Exodus" condition="String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres)">$VAR[GenreLabel]</value>
+	<value condition="!String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
 	<value>...</value>
   </variable> 
   <variable name="VideoInformation2" description="עונה/פרק/וידאו">
-	<value condition="SubString(ListItem.Label,Next page) | SubString(ListItem.Label,$LOCALIZE[33078])">DefaultVideo2.png</value>
-	<value description="Popcorn Time" condition="StringCompare(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | StringCompare(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)">$VAR[GenrePic]</value>
-	<value description="Library" condition="StringCompare(Container.FolderPath,videodb://movies/genres/) | StringCompare(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenrePic]</value>
-	<value description="Exodus" condition="StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | StringCompare(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres)">$VAR[GenrePic]</value>
-	<value condition="!IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
-	<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-	<value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+	<value condition="String.Contains(ListItem.Label,Next page) | String.Contains(ListItem.Label,$LOCALIZE[33078])">DefaultVideo2.png</value>
+	<value description="Popcorn Time" condition="String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)">$VAR[GenrePic]</value>
+	<value description="Library" condition="String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenrePic]</value>
+	<value description="Exodus" condition="String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres)">$VAR[GenrePic]</value>
+	<value condition="!String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
+	<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+	<value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
   </variable>
   <variable name="VideoInformation3" description="מידע צדדי (11153)">
-	<value condition="!IsEmpty(ListItem.ChannelNumber) + !IsEmpty(ListItem.Progress)">$INFO[ListItem.ChannelNumber] $INFO[ListItem.Progress]</value>
-	<value condition="[Window.IsVisible(MyVideoNav.xml) | IsEmpty(Control.GetLabel(1101))]"></value>
-	<value condition="!IsEmpty(ListItem.ChannelNumber)">$INFO[ListItem.ChannelNumber]</value>
-	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
-	<value condition="!IsEmpty(ListItem.Label2) + !StringCompare(ListItem.Label2,0 B) + !Window.IsVisible(MyVideoNav.xml)">$INFO[ListItem.Label2]</value>
-	<value condition="[!IsEmpty(Container.ListItemNoWrap(-1).Label2) | !IsEmpty(Container.ListItemNoWrap(1).Label2)] + !Window.IsVisible(MyVideoNav.xml)"></value>
+	<value condition="!String.IsEmpty(ListItem.ChannelNumber) + !String.IsEmpty(ListItem.Progress)">$INFO[ListItem.ChannelNumber] $INFO[ListItem.Progress]</value>
+	<value condition="[Window.IsVisible(MyVideoNav.xml) | String.IsEmpty(Control.GetLabel(1101))]"></value>
+	<value condition="!String.IsEmpty(ListItem.ChannelNumber)">$INFO[ListItem.ChannelNumber]</value>
+	<value condition="Window.IsVisible(MyPics.xml) + !String.IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
+	<value condition="!String.IsEmpty(ListItem.Label2) + !String.IsEqual(ListItem.Label2,0 B) + !Window.IsVisible(MyVideoNav.xml)">$INFO[ListItem.Label2]</value>
+	<value condition="[!String.IsEmpty(Container.ListItemNoWrap(-1).Label2) | !String.IsEmpty(Container.ListItemNoWrap(1).Label2)] + !Window.IsVisible(MyVideoNav.xml)"></value>
   </variable>
   <variable name="VideoInformation4">
-	<value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[33054]</value>
-	<value condition="IntegerGreaterThan(Control.GetLabel(1109),0) + !IsEmpty(Control.GetLabel(1109)) + !SubString(ListItem.path,videodb://movies/sets/) + [!IsEmpty(ListItem.Duration) | !IsEmpty(ListItem.Property(runtime))]">$VAR[VideoInHours]h</value>
-	<value condition="IntegerGreaterThan(Control.GetLabel(1110),0) + !IsEmpty(Control.GetLabel(1110)) + !SubString(ListItem.path,videodb://movies/sets/) + [!IsEmpty(ListItem.Duration) | !IsEmpty(ListItem.Property(runtime))]">$VAR[VideoInMins]m</value>
-	<value condition="Window.IsVisible(MyPics.xml) + !IsEmpty(ListItem.Size)">$INFO[ListItem.Size]</value>
+	<value condition="Integer.IsGreater(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[33054]</value>
+	<value condition="Integer.IsGreater(Control.GetLabel(1109),0) + !String.IsEmpty(Control.GetLabel(1109)) + !String.Contains(ListItem.path,videodb://movies/sets/) + [!String.IsEmpty(ListItem.Duration) | !String.IsEmpty(ListItem.Property(runtime))]">$VAR[VideoInHours]h</value>
+	<value condition="Integer.IsGreater(Control.GetLabel(1110),0) + !String.IsEmpty(Control.GetLabel(1110)) + !String.Contains(ListItem.path,videodb://movies/sets/) + [!String.IsEmpty(ListItem.Duration) | !String.IsEmpty(ListItem.Property(runtime))]">$VAR[VideoInMins]m</value>
+	<value condition="Window.IsVisible(MyPics.xml) + !String.IsEmpty(ListItem.Size)">$INFO[ListItem.Size]</value>
   </variable>
   <variable name="VideoInformation5">
-    <value condition="!IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
-	<value condition="!IsEmpty(ListItem.Size) + !SubString(ListItem.Size,0 B)">$INFO[ListItem.Size]</value>
+    <value condition="!String.IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
+	<value condition="!String.IsEmpty(ListItem.Size) + !String.Contains(ListItem.Size,0 B)">$INFO[ListItem.Size]</value>
   </variable>
   <variable name="PhotoInformation1" description="סמל תמונה/תיקייה">
-	<value condition="!ListItem.IsFolder + !IsEmpty(ListItem.PicturePath)">special://home/addons/script.featherence.service/resources/icons/pictures.png</value>
+	<value condition="!ListItem.IsFolder + !String.IsEmpty(ListItem.PicturePath)">special://home/addons/script.featherence.service/resources/icons/pictures.png</value>
 	<value condition="ListItem.IsFolder">special://home/addons/script.featherence.service/resources/icons/folder.png</value>
-	<!--<value condition="!IsEmpty(ListItem.VideoResolution) | !IsEmpty(ListItem.VideoCodec) | !IsEmpty(ListItem.VideoAspect) | StringCompare(ListItem.FileExtension,mp4) | StringCompare(ListItem.FileExtension,flv) | StringCompare(ListItem.FileExtension,mov) | StringCompare(ListItem.FileExtension,MOV) | StringCompare(ListItem.FileExtension,MP4) | StringCompare(ListItem.FileExtension,Mov) | StringCompare(ListItem.FileExtension,avi) | StringCompare(ListItem.FileExtension,AVI) | StringCompare(ListItem.FileExtension,mkv) | StringCompare(ListItem.FileExtension,m4v)">special://home/addons/script.featherence.service/resources/icons/videos.png</value>	-->
-	<value condition="!ListItem.IsFolder + IsEmpty(ListItem.PicturePath)">special://home/addons/script.featherence.service/resources/icons/videos.png</value>	
+	<!--<value condition="!String.IsEmpty(ListItem.VideoResolution) | !String.IsEmpty(ListItem.VideoCodec) | !String.IsEmpty(ListItem.VideoAspect) | String.IsEqual(ListItem.FileExtension,mp4) | String.IsEqual(ListItem.FileExtension,flv) | String.IsEqual(ListItem.FileExtension,mov) | String.IsEqual(ListItem.FileExtension,MOV) | String.IsEqual(ListItem.FileExtension,MP4) | String.IsEqual(ListItem.FileExtension,Mov) | String.IsEqual(ListItem.FileExtension,avi) | String.IsEqual(ListItem.FileExtension,AVI) | String.IsEqual(ListItem.FileExtension,mkv) | String.IsEqual(ListItem.FileExtension,m4v)">special://home/addons/script.featherence.service/resources/icons/videos.png</value>	-->
+	<value condition="!ListItem.IsFolder + String.IsEmpty(ListItem.PicturePath)">special://home/addons/script.featherence.service/resources/icons/videos.png</value>	
   </variable>
   <variable name="PhotoInformation2" description="תאריך תמונה">
-	<value condition="!IsEmpty(ListItem.PictureDate)">$INFO[ListItem.PictureDate]</value>
-	<value condition="!IsEmpty(ListItem.Date)">[COLOR=red]$INFO[ListItem.Date][/COLOR]</value>
+	<value condition="!String.IsEmpty(ListItem.PictureDate)">$INFO[ListItem.PictureDate]</value>
+	<value condition="!String.IsEmpty(ListItem.Date)">[COLOR=red]$INFO[ListItem.Date][/COLOR]</value>
   </variable>
   <variable name="MusicInformation3" description="דירוג אודיו/יו-טיוב">
-	<value condition="IntegerGreaterThan(ListItem.Rating,218) | SubString(ListItem.Rating,5)">badges/rating/5+/5.0.png</value>
-	<value condition="IntegerGreaterThan(ListItem.Rating,167) | SubString(ListItem.Rating,4)">badges/rating/5+/4.0.png</value>
-	<value condition="IntegerGreaterThan(ListItem.Rating,113) | SubString(ListItem.Rating,3)">badges/rating/5+/3.0.png</value>
-	<value condition="IntegerGreaterThan(ListItem.Rating,49) | SubString(ListItem.Rating,2)">badges/rating/5+/2.0.png</value>
-	<value condition="IntegerGreaterThan(ListItem.Rating,1) | SubString(ListItem.Rating,1)">badges/rating/5+/1.0.png</value>
-	<value condition="!IntegerGreaterThan(ListItem.Rating,1) | SubString(ListItem.Rating,0)">badges/rating/5+/0.0.png</value>
+	<value condition="Integer.IsGreater(ListItem.Rating,218) | String.Contains(ListItem.Rating,5)">badges/rating/5+/5.0.png</value>
+	<value condition="Integer.IsGreater(ListItem.Rating,167) | String.Contains(ListItem.Rating,4)">badges/rating/5+/4.0.png</value>
+	<value condition="Integer.IsGreater(ListItem.Rating,113) | String.Contains(ListItem.Rating,3)">badges/rating/5+/3.0.png</value>
+	<value condition="Integer.IsGreater(ListItem.Rating,49) | String.Contains(ListItem.Rating,2)">badges/rating/5+/2.0.png</value>
+	<value condition="Integer.IsGreater(ListItem.Rating,1) | String.Contains(ListItem.Rating,1)">badges/rating/5+/1.0.png</value>
+	<value condition="Integer.IsLess(ListItem.Rating,1) | String.Contains(ListItem.Rating,0)">badges/rating/5+/0.0.png</value>
   </variable>
   <variable name="MusicInformation5" description="פרטי אודיו">
-	<value condition="!IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>		
-    <value condition="!IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>  
-	<value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>  
+	<value condition="!String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>		
+    <value condition="!String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>  
+	<value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>  
   </variable> 
   <variable name="AlignRtl">
-    <value condition="StringCompare(System.Language,Hebrew)">right</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">left</value>
+    <value condition="String.IsEqual(System.Language,Hebrew)">right</value>
+	<value condition="!String.IsEqual(System.Language,Hebrew)">left</value>
   </variable>
   <variable name="WeatherText">
     <value description="מצב תצוגה" condition="Control.HasFocus(121)">$LOCALIZE[240]</value>
@@ -538,161 +546,161 @@
 	<value description="הגדרות" condition="Control.HasFocus(129)">$LOCALIZE[1390]</value>
   </variable>
   <variable name="writerthumb">
-	  <value condition="!SubString(ListItem.Writer,/)">http://localhost:52307/getthumb&amp;title=$INFO[Listitem.Writer]</value>
+	  <value condition="!String.Contains(ListItem.Writer,/)">http://localhost:52307/getthumb&amp;title=$INFO[Listitem.Writer]</value>
 	  <value>DefaultActor2.png</value>
   </variable>  
   <variable name="TopInformation2" description="שמאל1 (תיקייה)">
 	<value description="גרסה" condition="Window.IsVisible(Home.xml) + !Skin.HasSetting(ShowSkinVersion)">$INFO[System.AddonVersion(skin.featherence)]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[B]$ADDON[script.skin.helper.service 32011][/B]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(Custom1170.xml)">Choose $INFO[Window(home).Property(TEMP)]</value>
-	<value description="סרטים_he" condition="StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://movies,left) | SubString(Container.FolderPath,library://video/movies) | SubString(Container.FolderPath,special://userdata/library/movies/)] + !SubString(Container.FolderName,$LOCALIZE[20342])">($INFO[Container.NumItems]) [COLOR yellow]$VAR[GenreLabel2][/COLOR] $LOCALIZE[20342] $LOCALIZE[31419] </value>
-	<value description="סרטים_en" condition="!StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://movies,left) | SubString(Container.FolderPath,library://video/movies) | SubString(Container.FolderPath,special://userdata/library/movies/)] + !SubString(Container.FolderName,$LOCALIZE[20342])">$LOCALIZE[20342] $LOCALIZE[31419] [COLOR yellow]$VAR[GenreLabel2][/COLOR] ($INFO[Container.NumItems])</value>
-	<value description="סדרות טלוויזיה_he" condition="StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://tvshows,left) | SubString(Container.FolderPath,library://video/tvshows) | SubString(Container.FolderPath,special://userdata/library/tvshows/)] + !SubString(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] $LOCALIZE[20343] $LOCALIZE[31419] </value>
-	<value description="סדרות טלוויזיה_en" condition="!StringCompare(System.Language,Hebrew) + [SubString(Container.FolderPath,videodb://tvshows,left) | SubString(Container.FolderPath,library://video/tvshows) | SubString(Container.FolderPath,special://userdata/library/tvshows/)] + !SubString(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) $LOCALIZE[20343] $LOCALIZE[31419] [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] </value>
-	<value description="מוזיקה" condition="Window.IsActive(MyMusicNav.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR] $LOCALIZE[2] $LOCALIZE[31419] [/B]</value> <!--SubString(Container.FolderPath,musicdb://,left)-->
+	<value description="סרטים_he" condition="String.IsEqual(System.Language,Hebrew) + [String.StartsWith(Container.FolderPath,videodb://movies) | String.Contains(Container.FolderPath,library://video/movies) | String.Contains(Container.FolderPath,special://userdata/library/movies/)] + !String.Contains(Container.FolderName,$LOCALIZE[20342])">($INFO[Container.NumItems]) [COLOR yellow]$VAR[GenreLabel2][/COLOR] $LOCALIZE[20342] $LOCALIZE[31419] </value>
+	<value description="סרטים_en" condition="!String.IsEqual(System.Language,Hebrew) + [String.StartsWith(Container.FolderPath,videodb://movies) | String.Contains(Container.FolderPath,library://video/movies) | String.Contains(Container.FolderPath,special://userdata/library/movies/)] + !String.Contains(Container.FolderName,$LOCALIZE[20342])">$LOCALIZE[20342] $LOCALIZE[31419] [COLOR yellow]$VAR[GenreLabel2][/COLOR] ($INFO[Container.NumItems])</value>
+	<value description="סדרות טלוויזיה_he" condition="String.IsEqual(System.Language,Hebrew) + [String.StartsWith(Container.FolderPath,videodb://tvshows) | String.Contains(Container.FolderPath,library://video/tvshows) | String.Contains(Container.FolderPath,special://userdata/library/tvshows/)] + !String.Contains(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] $LOCALIZE[20343] $LOCALIZE[31419] </value>
+	<value description="סדרות טלוויזיה_en" condition="!String.IsEqual(System.Language,Hebrew) + [String.StartsWith(Container.FolderPath,videodb://tvshows) | String.Contains(Container.FolderPath,library://video/tvshows) | String.Contains(Container.FolderPath,special://userdata/library/tvshows/)] + !String.Contains(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) $LOCALIZE[20343] $LOCALIZE[31419] [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] </value>
+	<value description="מוזיקה" condition="Window.IsActive(MyMusicNav.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR] $LOCALIZE[2] $LOCALIZE[31419] [/B]</value>
 	<value description="מנהל הרחבות" condition="Window.IsVisible(AddonBrowser.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR][/B]</value>
 	<value description="PVR" condition="Window.IsVisible(DialogPVRChannelManager.xml)">($INFO[Container.NumItems]) [COLOR white2][B]$LOCALIZE[19199] - $LOCALIZE[19023]/$LOCALIZE[19024][/B][/COLOR]</value>
 	<value description="PVR" condition="Window.IsVisible(DialogPVRGroupManager.xml)">($INFO[Container.NumItems]) [COLOR white2][B]$LOCALIZE[19143][/B][/COLOR]</value>
 	<value description="PVR" condition="[Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide) | Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(MyPVRGuide.xml)]">($INFO[Container.NumItems]) [COLOR white2][B]$VAR[ChannelGroupName][/B][/COLOR]</value>
 	<value description="מזג אוויר" condition="Window.IsVisible(MyWeather.xml)">$INFO[System.CurrentWindow] ($INFO[Weather.Plugin])</value>
 	<value description="עיצוב מעטפת" condition="Window.IsVisible(CustomHomeCustomizer.xml)">$LOCALIZE[31830] ($INFO[Container.NumItems])</value>
-	<value description="הרחבה" condition="[SubString(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !IsEmpty(Container.FolderName) + !IsEmpty(Container.NumItems) + StringCompare(Container.FolderName,Exodus) + StringCompare(Network.MacAddress,0C:8B:FD:9D:2F:CE)">($INFO[Container.NumItems])</value>
-	<value description="הרחבה" condition="[SubString(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !IsEmpty(Container.FolderName) + !IsEmpty(Container.NumItems)">$INFO[Container.FolderName] ($INFO[Container.NumItems])</value>
-	<value description="הרחבה2" condition="Window.IsVisible(DialogAddonSettings.xml) + !IsEmpty(ListItem.Property(Addon.Name))">$INFO[System.CurrentWindow]: [COLOR=yellow][B]$INFO[ListItem.Property(Addon.Name)][/COLOR][/B]</value>
-	<value description="הרחבה2" condition="[SubString(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
+	<value description="הרחבה" condition="[String.Contains(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !String.IsEmpty(Container.FolderName) + !String.IsEmpty(Container.NumItems) + String.IsEqual(Container.FolderName,Exodus) + String.IsEqual(Network.MacAddress,0C:8B:FD:9D:2F:CE)">($INFO[Container.NumItems])</value>
+	<value description="הרחבה" condition="[String.Contains(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !String.IsEmpty(Container.FolderName) + !String.IsEmpty(Container.NumItems)">$INFO[Container.FolderName] ($INFO[Container.NumItems])</value>
+	<value description="הרחבה2" condition="Window.IsVisible(DialogAddonSettings.xml) + !String.IsEmpty(ListItem.AddonName)">$INFO[System.CurrentWindow]: [COLOR=yellow][B]$INFO[ListItem.AddonName][/COLOR][/B]</value>
+	<value description="הרחבה2" condition="[String.Contains(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
 	<value>$INFO[System.CurrentWindow] ($INFO[Container.NumItems])</value>
   </variable>
   <variable name="TopInformation2.1" description="שמאל2 (ספרייה)">
-	<value condition="Container.content(movies) + [SubString(Container.FolderPath,videodb://movies/) | StringCompare(Container.FolderName,$LOCALIZE[20342])]">[COLOR yellow][B]$LOCALIZE[20342] $LOCALIZE[16102][/B][/COLOR] [COLOR yellow][B]$INFO[Window(Home).Property(Movies.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(Movies.Count)]</value> <!-- + SubString(Container.FolderPath,videodb://movies/)  StringCompare(Container.FolderName,$LOCALIZE[369]) | StringCompare(Container.FolderName,$LOCALIZE[20342])-->
-	<value condition="Container.content(tvshows) + [SubString(Container.FolderPath,videodb://tvshows/) | StringCompare(Container.FolderName,$LOCALIZE[20343])]">[COLOR yellow][B]$LOCALIZE[20343] $LOCALIZE[16102][/B][/COLOR] [COLOR yellow][B]$INFO[Window(Home).Property(TVShows.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(TVShows.Count)]</value> <!--  + SubString(Container.FolderPath,videodb://tvshows/) StringCompare(Container.FolderName,$LOCALIZE[369]) | StringCompare(Container.FolderName,$LOCALIZE[20343])-->
+	<value condition="Container.content(movies) + [String.Contains(Container.FolderPath,videodb://movies/) | String.IsEqual(Container.FolderName,$LOCALIZE[20342])]">[COLOR yellow][B]$LOCALIZE[20342] $LOCALIZE[16102][/B][/COLOR] [COLOR yellow][B]$INFO[Window(Home).Property(Movies.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(Movies.Count)]</value> <!-- + String.Contains(Container.FolderPath,videodb://movies/)  String.IsEqual(Container.FolderName,$LOCALIZE[369]) | String.IsEqual(Container.FolderName,$LOCALIZE[20342])-->
+	<value condition="Container.content(tvshows) + [String.Contains(Container.FolderPath,videodb://tvshows/) | String.IsEqual(Container.FolderName,$LOCALIZE[20343])]">[COLOR yellow][B]$LOCALIZE[20343] $LOCALIZE[16102][/B][/COLOR] [COLOR yellow][B]$INFO[Window(Home).Property(TVShows.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(TVShows.Count)]</value> <!--  + String.Contains(Container.FolderPath,videodb://tvshows/) String.IsEqual(Container.FolderName,$LOCALIZE[369]) | String.IsEqual(Container.FolderName,$LOCALIZE[20343])-->
 	<value condition="Window.IsActive(MyMusicNav.xml)">[COLOR yellow][B]$INFO[Window(Home).Property(Music.ArtistsCount)][/B][/COLOR] • $LOCALIZE[133]: [COLOR yellow][B]$INFO[Window(Home).Property(Music.AlbumsCount)][/B][/COLOR] • $LOCALIZE[132]: [COLOR yellow][B]$INFO[Window(Home).Property(Music.SongsCount)][/B][/COLOR] $LOCALIZE[134]: </value>
 	<!--<value condition="Window.IsActive(MyPics.xml)">[COLOR yellow][B]$INFO[ListItem.PictureResolution][/B][/COLOR] • רזולוציה: [COLOR yellow][B]$INFO[ListItem.PictureDate][/B][/COLOR] • תאריך: [COLOR yellow][B]$INFO[ListItem.PictureState][/B][/COLOR] מיקום: </value>-->
   </variable>
   <variable name="TopInformation2.2" description="(HasMedia) שמאל2">
-	<!--<value description="ריק" condition="SubString(Container.FolderPath,library://video/movies/) | SubString(Container.FolderPath,library://video/tvshows/) | SubString(Container.FolderPath,videodb://tvshows/) | SubString(Container.FolderPath,videodb://movies/)"></value>-->
-	<value description="" condition="SubString(MusicPlayer.Title,featherence)">•</value>
-	<value description="זמן לסיום מוזיקה_he" condition="StringCompare(System.Language,Hebrew) + Player.HasAudio + [!Pvr.IsPlayingRadio + !SubString(Player.FolderPath,pvr://)] + [IntegerGreaterThan(Player.TimeRemaining,1) | IntegerGreaterThan(Playlist.Length(music),1)] + !SubString(Player.FolderPath,mms://)">($INFO[MusicPlayer.PlaylistPosition]/$INFO[Playlist.Length(music)]) • [COLOR yellow][B]$INFO[MusicPlayer.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
-	<value description="זמן לסיום מוזיקה_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasAudio + [!Pvr.IsPlayingRadio + !SubString(Player.FolderPath,pvr://)] + [IntegerGreaterThan(Player.TimeRemaining,1) | IntegerGreaterThan(Playlist.Length(music),1)] + !SubString(Player.FolderPath,mms://)"> $LOCALIZE[19127]: [COLOR yellow][B]$INFO[MusicPlayer.TimeRemaining][/B][/COLOR] ($INFO[MusicPlayer.PlaylistPosition]/$INFO[Playlist.Length(music)])</value>
+	<!--<value description="ריק" condition="String.Contains(Container.FolderPath,library://video/movies/) | String.Contains(Container.FolderPath,library://video/tvshows/) | String.Contains(Container.FolderPath,videodb://tvshows/) | String.Contains(Container.FolderPath,videodb://movies/)"></value>-->
+	<value description="" condition="String.Contains(MusicPlayer.Title,featherence)">•</value>
+	<value description="זמן לסיום מוזיקה_he" condition="String.IsEqual(System.Language,Hebrew) + Player.HasAudio + [!Pvr.IsPlayingRadio + !String.Contains(Player.FolderPath,pvr://)] + [Integer.IsGreater(Player.TimeRemaining,1) | Integer.IsGreater(Playlist.Length(music),1)] + !String.Contains(Player.FolderPath,mms://)">($INFO[MusicPlayer.PlaylistPosition]/$INFO[Playlist.Length(music)]) • [COLOR yellow][B]$INFO[MusicPlayer.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
+	<value description="זמן לסיום מוזיקה_en" condition="!String.IsEqual(System.Language,Hebrew) + Player.HasAudio + [!Pvr.IsPlayingRadio + !String.Contains(Player.FolderPath,pvr://)] + [Integer.IsGreater(Player.TimeRemaining,1) | Integer.IsGreater(Playlist.Length(music),1)] + !String.Contains(Player.FolderPath,mms://)"> $LOCALIZE[19127]: [COLOR yellow][B]$INFO[MusicPlayer.TimeRemaining][/B][/COLOR] ($INFO[MusicPlayer.PlaylistPosition]/$INFO[Playlist.Length(music)])</value>
 	
-	<value description="זמן לסיום וידאו_he" condition="StringCompare(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">($INFO[Playlist.Position(video)]/$INFO[Playlist.Length(Video)]) • [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
-	<value description="זמן לסיום וידאו_en" condition="!StringCompare(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">$LOCALIZE[19127]: [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] • ($INFO[Playlist.Position(video)]/$INFO[Playlist.Length(Video)])</value>
-	<!--<value description="זמן לסיום וידאו_he" condition="StringCompare(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">($INFO[VideoPlayer.PlaylistPosition]/$INFO[Playlist.Length(video)]) • [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
-	<value description="זמן לסיום וידאו_en" condition="!StringCompare(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">$LOCALIZE[19127]: [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] • ($INFO[VideoPlayer.PlaylistPosition]/$INFO[Playlist.Length(video)])</value>-->
+	<value description="זמן לסיום וידאו_he" condition="String.IsEqual(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)]">($INFO[Playlist.Position(video)]/$INFO[Playlist.Length(Video)]) • [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
+	<value description="זמן לסיום וידאו_en" condition="!String.IsEqual(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)]">$LOCALIZE[19127]: [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] • ($INFO[Playlist.Position(video)]/$INFO[Playlist.Length(Video)])</value>
+	<!--<value description="זמן לסיום וידאו_he" condition="String.IsEqual(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)]">($INFO[VideoPlayer.PlaylistPosition]/$INFO[Playlist.Length(video)]) • [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
+	<value description="זמן לסיום וידאו_en" condition="!String.IsEqual(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)]">$LOCALIZE[19127]: [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] • ($INFO[VideoPlayer.PlaylistPosition]/$INFO[Playlist.Length(video)])</value>-->
 	
   </variable>
   <variable name="TopInformation3" description="(HasMedia) אמצע">
     <value condition="VideoPlayer.IsFullscreen + Skin.HasSetting(Admin)">A_$INFO[Player.CacheLevel] • B_$INFO[Player.ProgressCache]$ESCINFO[Player.ProgressCache]</value>
-	<value description="מנגן סדרה_he" condition="StringCompare(System.Language,Hebrew) + [[VideoPlayer.Content(episodes) + !IsEmpty(VideoPlayer.TVShowTitle)] + !IsEmpty(VideoPlayer.Title) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season)] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR] • $LOCALIZE[20452]: [COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] • $LOCALIZE[20373]: [COLOR yellow][B]$INFO[VideoPlayer.TVShowTitle][/B][/COLOR]$LOCALIZE[31071] $LOCALIZE[36902]: </value>
-	<value description="מנגן סדרה_en" condition="!StringCompare(System.Language,Hebrew) + [[VideoPlayer.Content(episodes) + !IsEmpty(VideoPlayer.TVShowTitle)] + !IsEmpty(VideoPlayer.Title) + !IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Season)] + [IntegerGreaterThan(Player.TimeRemaining,1) + !SubString(Player.FolderPath,rtmp://)]">$LOCALIZE[31071] $LOCALIZE[36902]: [COLOR yellow][B]$INFO[VideoPlayer.TVShowTitle][/B][/COLOR] S: [COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] • E: [COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR] </value>
-	<value description="מנגן סרט_he" condition="StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(movies) + [!IsEmpty(VideoPlayer.Tagline) | !IsEmpty(VideoPlayer.Year)]] + IsEmpty(VideoPlayer.Season) + IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Title)">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.Year]) [/COLOR] $LOCALIZE[31071] $LOCALIZE[36900]: </value>
-	<value description="מנגן סרט_en" condition="!StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(movies) + [!IsEmpty(VideoPlayer.Tagline) | !IsEmpty(VideoPlayer.Year)]] + IsEmpty(VideoPlayer.Season) + IsEmpty(VideoPlayer.Episode) + !IsEmpty(VideoPlayer.Title)"> $LOCALIZE[31071] $LOCALIZE[36900]: [COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.Year]) [/COLOR]</value>
-	<value description="מנגן ערוץ_he" condition="StringCompare(System.Language,Hebrew) + Player.HasVideo + [!IntegerGreaterThan(Player.TimeRemaining,1) | SubString(Player.FolderPath,rtmp://)] + !IsEmpty(Player.Title)">[COLOR yellow]$INFO[Player.Title][/COLOR] $LOCALIZE[31071] $LOCALIZE[19078] </value>
-	<value description="מנגן ערוץ_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasVideo + [!IntegerGreaterThan(Player.TimeRemaining,1) | SubString(Player.FolderPath,rtmp://)] + !IsEmpty(Player.Title)">$LOCALIZE[31071] $LOCALIZE[19078] [COLOR yellow]$INFO[Player.Title][/COLOR]</value>
-	<value description="מנגן ערוץ (PVR)_he" condition="StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">[COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[31071] $LOCALIZE[19078] </value>
-	<value description="מנגן ערוץ (PVR)_en" condition="!StringCompare(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">$LOCALIZE[31071] $LOCALIZE[19078] [COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR]</value>
-	<value description="מקליט ערוץ (PVR)" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsRecording">[COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[264] $LOCALIZE[19078] </value>
-	<value description="מנגן הקלטה" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !SubString(Player.FolderPath,pvr://)] + Pvr.IsPlayingRecording">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.ChannelName]) [/COLOR] $LOCALIZE[31071] $LOCALIZE[264]: </value>
-	<!--<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !IsEmpty(Slideshow.Filedate)]">[COLOR yellow][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
-	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + SubString(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות/וידאו מהאייפון/אייפד[/B][/COLOR]</value>
-	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>-->
-	<value description="מנגן רדיו" condition="Player.HasAudio + [!IntegerGreaterThan(Player.TimeRemaining,1) + !IntegerGreaterThan(MusicPlayer.PlaylistPosition,1) | SubString(Player.FolderPath,mms://)] + !IsEmpty(Player.Title)">[COLOR yellow]$INFO[Player.Title][/COLOR] $LOCALIZE[31071] $LOCALIZE[19021]: </value>
-	<value description="מנגן רדיו" condition="Player.HasAudio + [!IntegerGreaterThan(Player.TimeRemaining,1) + !IntegerGreaterThan(MusicPlayer.PlaylistPosition,1) | SubString(Player.FolderPath,mms://)] + !IsEmpty(Player.Filename)">[COLOR yellow]$INFO[Player.Filename][/COLOR] $LOCALIZE[31071] $LOCALIZE[19021]: </value>
-	<value description="מנגן רדיו (PVR)" condition="Pvr.IsPlayingRadio + !IsEmpty(MusicPlayer.ChannelName)">[COLOR yellow][B]$INFO[MusicPlayer.ChannelName][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[19021]: </value>
+	<value description="מנגן סדרה_he" condition="String.IsEqual(System.Language,Hebrew) + [[VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.TVShowTitle)] + !String.IsEmpty(VideoPlayer.Title) + !String.IsEmpty(VideoPlayer.Episode) + !String.IsEmpty(VideoPlayer.Season)] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)]">[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR] • $LOCALIZE[20452]: [COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] • $LOCALIZE[20373]: [COLOR yellow][B]$INFO[VideoPlayer.TVShowTitle][/B][/COLOR]$LOCALIZE[31071] $LOCALIZE[36902]: </value>
+	<value description="מנגן סדרה_en" condition="!String.IsEqual(System.Language,Hebrew) + [[VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.TVShowTitle)] + !String.IsEmpty(VideoPlayer.Title) + !String.IsEmpty(VideoPlayer.Episode) + !String.IsEmpty(VideoPlayer.Season)] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)]">$LOCALIZE[31071] $LOCALIZE[36902]: [COLOR yellow][B]$INFO[VideoPlayer.TVShowTitle][/B][/COLOR] S: [COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] • E: [COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR] </value>
+	<value description="מנגן סרט_he" condition="String.IsEqual(System.Language,Hebrew) + [VideoPlayer.Content(movies) + [!String.IsEmpty(VideoPlayer.Tagline) | !String.IsEmpty(VideoPlayer.Year)]] + String.IsEmpty(VideoPlayer.Season) + String.IsEmpty(VideoPlayer.Episode) + !String.IsEmpty(VideoPlayer.Title)">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.Year]) [/COLOR] $LOCALIZE[31071] $LOCALIZE[36900]: </value>
+	<value description="מנגן סרט_en" condition="!String.IsEqual(System.Language,Hebrew) + [VideoPlayer.Content(movies) + [!String.IsEmpty(VideoPlayer.Tagline) | !String.IsEmpty(VideoPlayer.Year)]] + String.IsEmpty(VideoPlayer.Season) + String.IsEmpty(VideoPlayer.Episode) + !String.IsEmpty(VideoPlayer.Title)"> $LOCALIZE[31071] $LOCALIZE[36900]: [COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.Year]) [/COLOR]</value>
+	<value description="מנגן ערוץ_he" condition="String.IsEqual(System.Language,Hebrew) + Player.HasVideo + [Integer.IsLess(Player.TimeRemaining,1) | String.Contains(Player.FolderPath,rtmp://)] + !String.IsEmpty(Player.Title)">[COLOR yellow]$INFO[Player.Title][/COLOR] $LOCALIZE[31071] $LOCALIZE[19078] </value>
+	<value description="מנגן ערוץ_en" condition="!String.IsEqual(System.Language,Hebrew) + Player.HasVideo + [Integer.IsLess(Player.TimeRemaining,1) | String.Contains(Player.FolderPath,rtmp://)] + !String.IsEmpty(Player.Title)">$LOCALIZE[31071] $LOCALIZE[19078] [COLOR yellow]$INFO[Player.Title][/COLOR]</value>
+	<value description="מנגן ערוץ (PVR)_he" condition="String.IsEqual(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !String.Contains(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">[COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[31071] $LOCALIZE[19078] </value>
+	<value description="מנגן ערוץ (PVR)_en" condition="!String.IsEqual(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !String.Contains(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">$LOCALIZE[31071] $LOCALIZE[19078] [COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR]</value>
+	<value description="מקליט ערוץ (PVR)" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !String.Contains(Player.FolderPath,pvr://)] + Pvr.IsRecording">[COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[264] $LOCALIZE[19078] </value>
+	<value description="מנגן הקלטה" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !String.Contains(Player.FolderPath,pvr://)] + Pvr.IsPlayingRecording">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.ChannelName]) [/COLOR] $LOCALIZE[31071] $LOCALIZE[264]: </value>
+	<!--<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !String.IsEmpty(Slideshow.Filedate)]">[COLOR yellow][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.Contains(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות/וידאו מהאייפון/אייפד[/B][/COLOR]</value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>-->
+	<value description="מנגן רדיו" condition="Player.HasAudio + [Integer.IsLess(Player.TimeRemaining,1) + Integer.IsLess(MusicPlayer.PlaylistPosition,1) | String.Contains(Player.FolderPath,mms://)] + !String.IsEmpty(Player.Title)">[COLOR yellow]$INFO[Player.Title][/COLOR] $LOCALIZE[31071] $LOCALIZE[19021]: </value>
+	<value description="מנגן רדיו" condition="Player.HasAudio + [Integer.IsLess(Player.TimeRemaining,1) + Integer.IsLess(MusicPlayer.PlaylistPosition,1) | String.Contains(Player.FolderPath,mms://)] + !String.IsEmpty(Player.Filename)">[COLOR yellow]$INFO[Player.Filename][/COLOR] $LOCALIZE[31071] $LOCALIZE[19021]: </value>
+	<value description="מנגן רדיו (PVR)" condition="Pvr.IsPlayingRadio + !String.IsEmpty(MusicPlayer.ChannelName)">[COLOR yellow][B]$INFO[MusicPlayer.ChannelName][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[19021]: </value>
 	<value description="מנגן רדיו (PVR)" condition="Pvr.IsPlayingRadio">[COLOR yellow][B]$INFO[Player.Filename][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[19021]: </value>
-	<value description="" condition="SubString(MusicPlayer.Title,featherence)">•••••</value>
-	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !IsEmpty(MusicPlayer.Artist) + !IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR yellow][B]$INFO[MusicPlayer.Album][/B][/COLOR] • $LOCALIZE[558]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>	
-	<value condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + !IsEmpty(MusicPlayer.Album)" description="">[COLOR yellow][B]$INFO[MusicPlayer.Album][/B][/COLOR] • $LOCALIZE[558]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>	
-	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>	
-	<value description="מנגן שיר_he" condition="StringCompare(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>
-	<value description="מנגן שיר_en" condition="!StringCompare(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">$LOCALIZE[31071] $LOCALIZE[179]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR]</value>
-	<value description="מנגן וידאו_he" condition="StringCompare(System.Language,Hebrew) + !IsEmpty(VideoPlayer.Title)">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[157]: </value>
-	<value description="מנגן וידאו_en" condition="!StringCompare(System.Language,Hebrew) + !IsEmpty(VideoPlayer.Title)">$LOCALIZE[31071] $LOCALIZE[157]: [COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR]</value>
+	<value description="" condition="String.Contains(MusicPlayer.Title,featherence)">•••••</value>
+	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !String.IsEmpty(MusicPlayer.Artist) + !String.IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR yellow][B]$INFO[MusicPlayer.Album][/B][/COLOR] • $LOCALIZE[558]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>	
+	<value condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + String.IsEmpty(MusicPlayer.Artist) + !String.IsEmpty(MusicPlayer.Album)" description="">[COLOR yellow][B]$INFO[MusicPlayer.Album][/B][/COLOR] • $LOCALIZE[558]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>	
+	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !String.IsEmpty(MusicPlayer.Artist) + String.IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>	
+	<value description="מנגן שיר_he" condition="String.IsEqual(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + String.IsEmpty(MusicPlayer.Artist) + String.IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>
+	<value description="מנגן שיר_en" condition="!String.IsEqual(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + String.IsEmpty(MusicPlayer.Artist) + String.IsEmpty(MusicPlayer.Album)">$LOCALIZE[31071] $LOCALIZE[179]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR]</value>
+	<value description="מנגן וידאו_he" condition="String.IsEqual(System.Language,Hebrew) + !String.IsEmpty(VideoPlayer.Title)">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[157]: </value>
+	<value description="מנגן וידאו_en" condition="!String.IsEqual(System.Language,Hebrew) + !String.IsEmpty(VideoPlayer.Title)">$LOCALIZE[31071] $LOCALIZE[157]: [COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR]</value>
   </variable>
   <variable name="TopInformation3.1" description="() אמצע">
 	<value description="בחר צבע" condition="Skin.HasSetting(Admin3) + Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[COLOR yellow]$INFO[Window.Property(colorname)][/COLOR]</value>
 	<value description="בחר צבע" condition="Window.IsVisible(Custom1170.xml)">CHOOSEN: $INFO[Window(home).Property(SelectedColorName)]</value>
-    <value condition="Skin.HasSetting(Admin) + !SubString(Container.FolderName,Advanced Launcher)">$INFO[System.CpuUsage] • $INFO[System.CpuFrequency] • $INFO[System.CPUTemperature] • $INFO[System.FreeMemory] • $INFO[System.FPS]</value>
-	<value description="הזזת פריט" condition="Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Window(home).Property(WidgetButton.Name))">MOVING [B]$INFO[Window(home).Property(WidgetButton.Name)][/B]</value>
-	<value description="הזזת פריט" condition="Window.IsVisible(CustomHomeCustomizer2.xml) + !IsEmpty(Window(home).Property(Button.Name))">MOVING [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
-	<value description="עריכת כפתור בתפריט משני" condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(SubButton.Name))">SUB MENU [B]$INFO[Window(home).Property(SubButton.Name)][/B]</value>
-	<value description="עריכת כפתור בית" condition="Window.IsVisible(Custom1175.xml) + !IsEmpty(Window(home).Property(Button.Name))">EDIT [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
-	<value description="מזג אוויר_he" condition="StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">[COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B] $LOCALIZE[35500]: </value>
-	<value description="מזג אוויר_en" condition="!StringCompare(System.Language,Hebrew) + [Window.IsVisible(home) + StringCompare(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">$LOCALIZE[35500]: [COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B]</value>	
-	<value description="Home" condition="Window.IsActive(home) + [Control.HasFocus(311) | Control.HasFocus(312)] + !IsEmpty(System.CurrentControl)">$INFO[System.CurrentControl]</value>	
+    <value condition="Skin.HasSetting(Admin) + !String.Contains(Container.FolderName,Advanced Launcher)">$INFO[System.CpuUsage] • $INFO[System.CpuFrequency] • $INFO[System.CPUTemperature] • $INFO[System.FreeMemory] • $INFO[System.FPS]</value>
+	<value description="הזזת פריט" condition="Window.IsVisible(CustomHomeCustomizer2.xml) + !String.IsEmpty(Window(home).Property(WidgetButton.Name))">MOVING [B]$INFO[Window(home).Property(WidgetButton.Name)][/B]</value>
+	<value description="הזזת פריט" condition="Window.IsVisible(CustomHomeCustomizer2.xml) + !String.IsEmpty(Window(home).Property(Button.Name))">MOVING [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
+	<value description="עריכת כפתור בתפריט משני" condition="Window.IsVisible(Custom1139.xml) + !String.IsEmpty(Window(home).Property(SubButton.Name))">SUB MENU [B]$INFO[Window(home).Property(SubButton.Name)][/B]</value>
+	<value description="עריכת כפתור בית" condition="Window.IsVisible(Custom1175.xml) + !String.IsEmpty(Window(home).Property(Button.Name))">EDIT [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
+	<value description="מזג אוויר_he" condition="String.IsEqual(System.Language,Hebrew) + [Window.IsVisible(home) + String.IsEqual(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">[COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B] $LOCALIZE[35500]: </value>
+	<value description="מזג אוויר_en" condition="!String.IsEqual(System.Language,Hebrew) + [Window.IsVisible(home) + String.IsEqual(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">$LOCALIZE[35500]: [COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B]</value>	
+	<value description="Home" condition="Window.IsActive(home) + [Control.HasFocus(311) | Control.HasFocus(312)] + !String.IsEmpty(System.CurrentControl)">$INFO[System.CurrentControl]</value>	
 	<value description="Home" condition="Window.IsActive(home)">•••••••</value>
 	<!--<value description="חלון מידע וידאו" condition="Window.IsVisible(DialogVideoInfo.xml)">$INFO[ListItem.Path]</value>-->
-	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !IsEmpty(Slideshow.EXIFDate)]">[COLOR yellow][B]$INFO[Slideshow.EXIFDate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
-	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.EXIFDate) + !IsEmpty(Slideshow.Filedate)]">[COLOR red][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
-	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + SubString(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות מהאייפון/אייפד[/B][/COLOR]</value>
-	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
-	<value condition="StringCompare(Container.Viewmode,$LOCALIZE[31011]) + !Skin.HasSetting(View50_Plus2)">•••••••</value>
-	<value condition="!IsEmpty(ListItem.Label) + [[IsEmpty(Control.GetLabel(1105)) + IsEmpty(Control.GetLabel(1106))] | [StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014])]]">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !String.IsEmpty(Slideshow.EXIFDate)]">[COLOR yellow][B]$INFO[Slideshow.EXIFDate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.IsEmpty(Slideshow.EXIFDate) + !String.IsEmpty(Slideshow.Filedate)]">[COLOR red][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.Contains(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות מהאייפון/אייפד[/B][/COLOR]</value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
+	<value condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + !Skin.HasSetting(View50_Plus2)">•••••••</value>
+	<value condition="!String.IsEmpty(ListItem.Label) + [[String.IsEmpty(Control.GetLabel(1105)) + String.IsEmpty(Control.GetLabel(1106))] | [String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])]]">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value>
   </variable>
   
   <variable name="TopVideoInformation1112a">
-    <value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$INFO[ListItem.Property(TotalSeasons)] </value>
+    <value condition="Integer.IsGreater(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$INFO[ListItem.Property(TotalSeasons)] </value>
   </variable>
   <variable name="TopVideoInformation1112b">
-    <value condition="IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$LOCALIZE[33054]</value>
+    <value condition="Integer.IsGreater(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$LOCALIZE[33054]</value>
   </variable>
   <variable name="VideoInHours">
-    <value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,285)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,17100)]">5</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,255)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,15300)]">4.5</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,225)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,13500)]">4</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,195)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,11700)]">3.5</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,165)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,9900)]">3</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,135)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,8100)]">2.5</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,105)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,6300)]">2</value>
-    <value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,75)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,4500)]">1.5</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,55)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,3300)]">1</value>
+    <value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,285)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,17100)]">5</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,255)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,15300)]">4.5</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,225)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,13500)]">4</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,195)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,11700)]">3.5</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,165)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,9900)]">3</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,135)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,8100)]">2.5</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,105)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,6300)]">2</value>
+    <value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,75)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,4500)]">1.5</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,55)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,3300)]">1</value>
 	
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),285)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),285)]">5</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),255)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),255)]">4.5</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),225)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),225)]">4</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),195)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),195)]">3.5</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),165)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),165)]">3</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),135)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),135)]">2.5</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),105)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),105)]">2</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),75)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),75)]">1.5</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),55)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),55)]">1</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),285)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),285)]">5</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),255)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),255)]">4.5</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),225)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),225)]">4</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),195)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),195)]">3.5</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),165)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),165)]">3</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),135)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),135)]">2.5</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),105)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),105)]">2</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),75)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),75)]">1.5</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),55)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),55)]">1</value>
   </variable>
   <variable name="VideoInMins">
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,47.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,2850)]">50</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,42.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,2550)]">45</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,37.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,2250)]">40</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,32.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,1950)]">35</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,27.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,1650)]">30</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,22.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,1350)]">25</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,17.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,1050)]">20</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,12.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,750)]">15</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,7.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,450)]">10</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,4.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,270)]">5</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,3.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,216)]">4</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,2.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,162)]">3</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,1.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,108)]">2</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + IntegerGreaterThan(ListItem.Duration,0.5)] | [VideoPlayer.IsFullscreen + IntegerGreaterThan(Player.Duration,54)]">1</value>
-	<value description="N/A" condition="[!SubString(ListItem.Duration,:) + !IntegerGreaterThan(ListItem.Duration,0.5)] | [VideoPlayer.IsFullscreen + !IntegerGreaterThan(Player.Duration,54)]">0</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,47.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,2850)]">50</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,42.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,2550)]">45</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,37.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,2250)]">40</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,32.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,1950)]">35</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,27.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,1650)]">30</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,22.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,1350)]">25</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,17.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,1050)]">20</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,12.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,750)]">15</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,7.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,450)]">10</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,4.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,270)]">5</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,3.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,216)]">4</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,2.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,162)]">3</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,1.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,108)]">2</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,0.5)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,54)]">1</value>
+	<value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsLess(ListItem.Duration,0.5)] | [VideoPlayer.IsFullscreen + Integer.IsLess(Player.Duration,54)]">0</value>
 	
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),47.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),47.5)]">50</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),42.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),42.5)]">45</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),37.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),37.5)]">40</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),32.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),32.5)]">35</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),27.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),27.5)]">30</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),22.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),22.5)]">25</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),17.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),17.5)]">20</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),12.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),12.5)]">15</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),7.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),7.5)]">10</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),4.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),4.5)]">5</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),3.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),3.5)]">4</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),2.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),2.5)]">3</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),1.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),1.5)]">2</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),0.5)] | [Control.HasFocus(312) + IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),0.5)]">1</value>
-	<value description="Widget" condition="[Control.HasFocus(311) + !IntegerGreaterThan(Container(311).ListItem(0).Property(runtime),0.5)] | [Control.HasFocus(312) + !IntegerGreaterThan(Container(312).ListItem(0).Property(runtime),0.5)]">0</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),47.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),47.5)]">50</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),42.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),42.5)]">45</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),37.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),37.5)]">40</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),32.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),32.5)]">35</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),27.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),27.5)]">30</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),22.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),22.5)]">25</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),17.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),17.5)]">20</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),12.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),12.5)]">15</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),7.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),7.5)]">10</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),4.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),4.5)]">5</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),3.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),3.5)]">4</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),2.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),2.5)]">3</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),1.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),1.5)]">2</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsGreater(Container(311).ListItem(0).Property(runtime),0.5)] | [Control.HasFocus(312) + Integer.IsGreater(Container(312).ListItem(0).Property(runtime),0.5)]">1</value>
+	<value description="Widget" condition="[Control.HasFocus(311) + Integer.IsLess(Container(311).ListItem(0).Property(runtime),0.5)] | [Control.HasFocus(312) + Integer.IsLess(Container(312).ListItem(0).Property(runtime),0.5)]">0</value>
   </variable>
   
   <variable name="centermenu_color">
-    <value condition="!SubString(ListItem.Property(id),_90) | Window.IsVisible(Home.xml)">yellow</value>
-	<value condition="SubString(ListItem.Property(id),_90) + !Window.IsVisible(Home.xml)">grey</value>
+    <value condition="!String.Contains(ListItem.Property(id),_90) | Window.IsVisible(Home.xml)">yellow</value>
+	<value condition="String.Contains(ListItem.Property(id),_90) + !Window.IsVisible(Home.xml)">grey</value>
   </variable>
   <variable name="VideoPlayerForwardRewindVar" description="(DialogSeekbar)">
 	  <value condition="Player.Forwarding2x | Player.Rewinding2x">2x</value>
@@ -702,67 +710,67 @@
 	  <value condition="Player.Forwarding32x | Player.Rewinding32x">32x</value>
   </variable>
 	<variable name="tips">
-	  <value condition="StringCompare(Window(home).Property(tips),1)">[B]Featherence Support Team[/B][CR]Did you know?[CR]We are offering support for all of our addons.[CR]For support send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook support group:[CR]https://www.facebook.com/groups/featherence</value>
-	  <value condition="StringCompare(Window(home).Property(tips),2)">[B]AutoView:[/B][CR]Did you know?[CR]You can force your preferred view for predefined categories such as: Movies/TVshows/Seasons/Episodes/Movies Set/Actors/Genre and more...</value>
-	  <value condition="StringCompare(Window(home).Property(tips),3)">[B]Save/Load skin design:[/B][CR]Did you know?[CR]You can save your skin design and use that as backup or even share it with your friends.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),4)">[B]Coloring:[/B][CR]Did you know?[CR]You can color every piece of aspect in the skin.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),5)">[B]Resposition home buttons:[/B][CR]Did you know?[CR]You can easily move your buttons in the order you like.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),6)">[B]Sub Menu:[/B][CR]Did you know?[CR]You can activate sub menu for each button on your home screen.[CR]sub menu buttons are visible by the a small line at the top right button corner.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),7)">[B]Home views:[/B][CR]Did you know?[CR]You can change the home buttons position to panel/horizontal/vertical.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),8)">[B]Movies widget:[/B][CR]Did you know?[CR]You can easily access random unwatched movies in your library or recently added movies.[CR]You may also play trailers directly from the widget.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),9)">[B]TVshows widget:[/B][CR]Did you know?[CR]You can easily access your in progress TVshows or recently added episodes.[CR]You may also force refresh for triggering the next episode if needed.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),10)">[B]Share your ideas:[/B][CR]Would like to see something different?[CR]We want to hear you![CR]For requests send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>
-	  <value condition="StringCompare(Window(home).Property(tips),11)">[B]Featherence Service:[/B][CR]Did you know?[CR]You can open Featherence Service addon for using prebuilt tools.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),12)">[B]Internet:[/B][CR]Did you know?[CR]You can open your web browser or network settings using Featherence settings's tab.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),13)">[B]Wall / Posters views:[/B][CR]Did you know?[CR]You can adjust those views settings using the View Settings in the left menu.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),14)">[B]Movies/TVshows/Actors/Directors Information:[/B][CR]Did you know?[CR]You can view extra information for those using the movies/tvshows information window and selecting the director/actor/more button information.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),15)">[B]Date and Hours:[/B][CR]Did you know?[CR]You can change the dates and hours display to your like.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),16)">[B]Transperancy:[/B][CR]Did you know?[CR]You can adjust the transperancy for every piece of aspect in the skin.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),17)">[B]Music &amp; Video on startup:[/B][CR]Did you know?[CR]You can choose your favourite song and/or video to be launch on startup</value>
-	  <value condition="StringCompare(Window(home).Property(tips),18)">[B]Align Plot[/B][CR]Did you know?[CR]You can adjust the plot align in the skin settings window.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),19)">[B]Rating method:[/B][CR]Did you know?[CR]You can tweak the rating method for videos/movies/tvshows in the skin settings window.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),20)">[B]Do you want to contribute?:[/B][CR]Want to start your way as developer?[CR]We welcome you to join us![CR]For joining the team send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>	  
-	  <value condition="StringCompare(Window(home).Property(tips),21)">[B]Custom icons/backgrounds path:[/B][CR]Did you know?[CR]You can setup a custom path to be used when changing a button's icon / fanart.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),22)">[B]Reset icons/backgrounds to default:[/B][CR]Did you know?[CR]You can easily reset a specific button's icon/fanart.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),23)">[B]Main color:[/B][CR]Did you know?[CR]You can setup main color to be used across the entire skin.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),24)">[B]Disable Buttons:[/B][CR]Did you know?[CR]You can disable buttons to be hidden.[CR]The buttons will appear on the skin design window but may be hidden there too!</value>
-	  <value condition="StringCompare(Window(home).Property(tips),25)">[B]Reposition Sub Buttons:[/B][CR]Did you know?[CR]You can instantly switch positions of sub buttons if there are more then two items.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),26)">[B]Video OSD extended:[/B][CR]Did you know?[CR]You can view extra buttons in the video OSD using the up key on the stop button.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),27)">[B]Subtitle button[/B][CR]Did you know?[CR]You can adjust the subtitle using the up/down arrows when standing on the subtitle button.[CR]You may also use the J / K buttons.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),28)">[B]Reset Design[/B][CR]Did you know?[CR]You can reset your skin design to default without effecting the buttons you have created or others skin settings - design only!</value>
-	  <value condition="StringCompare(Window(home).Property(tips),29)">[B]Random Design[/B][CR]Did you know?[CR]You can randomize your skin design to see a wide range of options in no time.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),30)">[B]Have an idea for new addon?:[/B][CR]Is it that great?[CR]Come and share it with us![CR]send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),1)">[B]Featherence Support Team[/B][CR]Did you know?[CR]We are offering support for all of our addons.[CR]For support send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook support group:[CR]https://www.facebook.com/groups/featherence</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),2)">[B]AutoView:[/B][CR]Did you know?[CR]You can force your preferred view for predefined categories such as: Movies/TVshows/Seasons/Episodes/Movies Set/Actors/Genre and more...</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),3)">[B]Save/Load skin design:[/B][CR]Did you know?[CR]You can save your skin design and use that as backup or even share it with your friends.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),4)">[B]Coloring:[/B][CR]Did you know?[CR]You can color every piece of aspect in the skin.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),5)">[B]Resposition home buttons:[/B][CR]Did you know?[CR]You can easily move your buttons in the order you like.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),6)">[B]Sub Menu:[/B][CR]Did you know?[CR]You can activate sub menu for each button on your home screen.[CR]sub menu buttons are visible by the a small line at the top right button corner.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),7)">[B]Home views:[/B][CR]Did you know?[CR]You can change the home buttons position to panel/horizontal/vertical.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),8)">[B]Movies widget:[/B][CR]Did you know?[CR]You can easily access random unwatched movies in your library or recently added movies.[CR]You may also play trailers directly from the widget.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),9)">[B]TVshows widget:[/B][CR]Did you know?[CR]You can easily access your in progress TVshows or recently added episodes.[CR]You may also force refresh for triggering the next episode if needed.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),10)">[B]Share your ideas:[/B][CR]Would like to see something different?[CR]We want to hear you![CR]For requests send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),11)">[B]Featherence Service:[/B][CR]Did you know?[CR]You can open Featherence Service addon for using prebuilt tools.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),12)">[B]Internet:[/B][CR]Did you know?[CR]You can open your web browser or network settings using Featherence settings's tab.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),13)">[B]Wall / Posters views:[/B][CR]Did you know?[CR]You can adjust those views settings using the View Settings in the left menu.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),14)">[B]Movies/TVshows/Actors/Directors Information:[/B][CR]Did you know?[CR]You can view extra information for those using the movies/tvshows information window and selecting the director/actor/more button information.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),15)">[B]Date and Hours:[/B][CR]Did you know?[CR]You can change the dates and hours display to your like.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),16)">[B]Transperancy:[/B][CR]Did you know?[CR]You can adjust the transperancy for every piece of aspect in the skin.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),17)">[B]Music &amp; Video on startup:[/B][CR]Did you know?[CR]You can choose your favourite song and/or video to be launch on startup</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),18)">[B]Align Plot[/B][CR]Did you know?[CR]You can adjust the plot align in the skin settings window.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),19)">[B]Rating method:[/B][CR]Did you know?[CR]You can tweak the rating method for videos/movies/tvshows in the skin settings window.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),20)">[B]Do you want to contribute?:[/B][CR]Want to start your way as developer?[CR]We welcome you to join us![CR]For joining the team send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>	  
+	  <value condition="String.IsEqual(Window(home).Property(tips),21)">[B]Custom icons/backgrounds path:[/B][CR]Did you know?[CR]You can setup a custom path to be used when changing a button's icon / fanart.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),22)">[B]Reset icons/backgrounds to default:[/B][CR]Did you know?[CR]You can easily reset a specific button's icon/fanart.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),23)">[B]Main color:[/B][CR]Did you know?[CR]You can setup main color to be used across the entire skin.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),24)">[B]Disable Buttons:[/B][CR]Did you know?[CR]You can disable buttons to be hidden.[CR]The buttons will appear on the skin design window but may be hidden there too!</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),25)">[B]Reposition Sub Buttons:[/B][CR]Did you know?[CR]You can instantly switch positions of sub buttons if there are more then two items.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),26)">[B]Video OSD extended:[/B][CR]Did you know?[CR]You can view extra buttons in the video OSD using the up key on the stop button.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),27)">[B]Subtitle button[/B][CR]Did you know?[CR]You can adjust the subtitle using the up/down arrows when standing on the subtitle button.[CR]You may also use the J / K buttons.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),28)">[B]Reset Design[/B][CR]Did you know?[CR]You can reset your skin design to default without effecting the buttons you have created or others skin settings - design only!</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),29)">[B]Random Design[/B][CR]Did you know?[CR]You can randomize your skin design to see a wide range of options in no time.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),30)">[B]Have an idea for new addon?:[/B][CR]Is it that great?[CR]Come and share it with us![CR]send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>
 	  
-	  <value condition="StringCompare(Window(home).Property(tips),30)">[B]Password lock button:[/B][CR]Did you know?[CR]You can set a password for a button so it's be accessible for you only![CR]For more information visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>	  
-	  <value condition="StringCompare(Window(home).Property(tips),31)">[B]Multi fanart:[/B][CR]Did you know?[CR]You can set a multi fanart for a button.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),32)">[B]Access Sub Menu in a different way:[/B][CR]Did you know?[CR]You can use the Sub Menu action option to open the sub menu by clicking the down arrow only!</value>
-	  <value condition="StringCompare(Window(home).Property(tips),33)">[B]Big icons:[/B][CR]Did you know?[CR]You can enlarge your prefered icons to be match your prefered buttons shapes.</value>
-	  <value condition="StringCompare(Window(home).Property(tips),34)">[B]Touch Screen support[/B][CR]Did you know?[CR]You can enable touch screen support for your touch devices![CR]For more information visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>
-	  <value condition="StringCompare(Window(home).Property(tips),35)">[B]Reset default buttons names/icons:[/B][CR]Did you know?[CR]You can change the language of the default buttons by clicking on that option in the skin design window!</value>
-	  <value condition="StringCompare(Window(home).Property(tips),36)">[B]Action and Thumbnail:[/B][CR]Did you know?[CR]You can setup this option in order to make any new action to appear with a label and icon instantly!</value>
-	  <value condition="StringCompare(Window(home).Property(tips),37)">[B]Fanart-Sub Menu:[/B][CR]Did you know?[CR]You can setup each sub to be with it's own fanart!</value>
-	  <value condition="StringCompare(Window(home).Property(tips),38)">[B]Fanart-Home Full Screen:[/B][CR]Did you know?[CR]You can setup your fanart for buttons to appear on the whole screen or just outside the buttons!</value>
-	  <value condition="StringCompare(Window(home).Property(tips),39)">[B]Reshape Icons:[/B][CR]Did you know?[CR]You can reshape your custom icons to match the current button's shape!</value>
-	  <value condition="StringCompare(Window(home).Property(tips),30)">[B]Menu Buttons 2D:[/B][CR]Did you know?[CR]You can setup the whole skin's buttons to appear in 2D mode!</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),30)">[B]Password lock button:[/B][CR]Did you know?[CR]You can set a password for a button so it's be accessible for you only![CR]For more information visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>	  
+	  <value condition="String.IsEqual(Window(home).Property(tips),31)">[B]Multi fanart:[/B][CR]Did you know?[CR]You can set a multi fanart for a button.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),32)">[B]Access Sub Menu in a different way:[/B][CR]Did you know?[CR]You can use the Sub Menu action option to open the sub menu by clicking the down arrow only!</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),33)">[B]Big icons:[/B][CR]Did you know?[CR]You can enlarge your prefered icons to be match your prefered buttons shapes.</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),34)">[B]Touch Screen support[/B][CR]Did you know?[CR]You can enable touch screen support for your touch devices![CR]For more information visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),35)">[B]Reset default buttons names/icons:[/B][CR]Did you know?[CR]You can change the language of the default buttons by clicking on that option in the skin design window!</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),36)">[B]Action and Thumbnail:[/B][CR]Did you know?[CR]You can setup this option in order to make any new action to appear with a label and icon instantly!</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),37)">[B]Fanart-Sub Menu:[/B][CR]Did you know?[CR]You can setup each sub to be with it's own fanart!</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),38)">[B]Fanart-Home Full Screen:[/B][CR]Did you know?[CR]You can setup your fanart for buttons to appear on the whole screen or just outside the buttons!</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),39)">[B]Reshape Icons:[/B][CR]Did you know?[CR]You can reshape your custom icons to match the current button's shape!</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),30)">[B]Menu Buttons 2D:[/B][CR]Did you know?[CR]You can setup the whole skin's buttons to appear in 2D mode!</value>
 	</variable>
 	<variable name="DialogSelectTitle">
 	  <value condition="Control.IsVisible(3)">$INFO[Control.GetLabel(1)] ($INFO[Container(3).NumItems])</value>
 	  <value condition="Control.IsVisible(6)">$INFO[Control.GetLabel(1)] ($INFO[Container(6).NumItems])</value>
-	  <value condition="Control.IsVisible(3) + IsEmpty(Contol.GetLabel(1))">$ADDON[script.featherence.service 32423] ($INFO[Container(3).NumItems])</value>
-	  <value condition="Control.IsVisible(6) + IsEmpty(Contol.GetLabel(1))">$ADDON[script.featherence.service 32423] ($INFO[Container(6).NumItems])</value>
+	  <value condition="Control.IsVisible(3) + String.IsEmpty(Contol.GetLabel(1))">$ADDON[script.featherence.service 32423] ($INFO[Container(3).NumItems])</value>
+	  <value condition="Control.IsVisible(6) + String.IsEmpty(Contol.GetLabel(1))">$ADDON[script.featherence.service 32423] ($INFO[Container(6).NumItems])</value>
 	</variable>
 	<variable name="ManualColor">
-	  <value condition="!IsEmpty(Window(home).Property(SelectedColor))">$INFO[Window(home).Property(SelectedColor)]</value>
+	  <value condition="!String.IsEmpty(Window(home).Property(SelectedColor))">$INFO[Window(home).Property(SelectedColor)]</value>
 	  <value condition="Window.IsVisible(Custom1170.xml)">Manual</value>
 	</variable>
 	
 	<variable name="CustomStartupImage">
 	  <value condition="Skin.String(CustomStartupImage)">$INFO[Skin.String(CustomStartupImage)]</value>
-	  <value condition="!Skin.String(CustomStartupImage)">special://skin/fanart.jpg</value>
+	  <value condition="!Skin.String(CustomStartupImage)">special://skin/resources/fanart.jpg</value>
 	</variable>
 	
 	<variable name="VolumeIcon">
-	  <value condition="!Skin.String(VolumeIcon) + [Player.Muted | StringCompare(Player.Volume,-60.0 dB)]">images/speaker2.png</value>
+	  <value condition="!Skin.String(VolumeIcon) + [Player.Muted | String.IsEqual(Player.Volume,-60.0 dB)]">images/speaker2.png</value>
 	  <value condition="!Skin.String(VolumeIcon)">images/speaker.png</value>
 	  <value condition="Skin.String(VolumeIcon)">$INFO[Skin.String(VolumeIcon)]</value>
 	</variable>

@@ -76,7 +76,7 @@
   <include name="MenuDesign_TopSettings" description="לשוניות">
     <include>ArrowsLeftRight</include>
 
-	<include name="MenuBackground">
+	<include content="MenuBackground">
 		<param name="border" value="35" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="81" />
@@ -107,9 +107,9 @@
 	  <width>1000</width>
 	  <itemlayout width="250" height="70">
 	    <control type="group">
-		    <animation condition="[Control.IsVisible(50) + !IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(100).OnPrevious + !Container(100).OnNext" effect="fade" start="100" end="10" delay="3000" time="220" reversible="true">Conditional</animation>
+		    <animation condition="[Control.IsVisible(50) + !String.IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(100).OnPrevious + !Container(100).OnNext" effect="fade" start="100" end="10" delay="3000" time="220" reversible="true">Conditional</animation>
 
-			<include name="Buttons_Frame">
+			<include content="Buttons_Frame">
 				<param name="id" value="" />
 				<param name="border" value="40" />
 				<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -125,12 +125,12 @@
 			  <width>230</width>
 			  <height>75</height>
 			  <label>$INFO[ListItem.Label]</label>
-			  <visible>!IsEmpty(ListItem.Label)</visible>
+			  <visible>!String.IsEmpty(ListItem.Label)</visible>
 			</control>
 		</control>
 	  </itemlayout>
 	  <focusedlayout height="75" width="250">
-		<include name="Buttons_Frame">
+		<include content="Buttons_Frame">
 			<param name="id" value="" />
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -148,7 +148,7 @@
 		  <height>75</height>
 		  <scroll>true</scroll>
 		  <label>$INFO[ListItem.Label]</label>
-		  <visible>!IsEmpty(ListItem.Label)</visible>
+		  <visible>!String.IsEmpty(ListItem.Label)</visible>
 		</control>
 	  </focusedlayout>
 	  <content>
@@ -165,7 +165,7 @@
   <include name="MenuDesign_TopSettings_" description="לשוניות">
     <include>ArrowsLeftRight</include>
 
-	<include name="MenuBackground">
+	<include content="MenuBackground">
 		<param name="border" value="35" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="81" />
@@ -179,7 +179,7 @@
     </include>
 	
     <control type="grouplist" id="100" description="TopMenu">
-	  <animation condition="[Control.IsVisible(50) + !IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(100).OnPrevious + !Container(100).OnNext" effect="fade" start="100" end="10" delay="3000" time="220" reversible="true">Conditional</animation>
+	  <animation condition="[Control.IsVisible(50) + !String.IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(100).OnPrevious + !Container(100).OnNext" effect="fade" start="100" end="10" delay="3000" time="220" reversible="true">Conditional</animation>
 	  <posx>460</posx>
 	  <posy>142</posy>
 	  <align>center</align>
@@ -205,6 +205,7 @@
     <control type="group" description="סמן חץ למעלה">
 		<animation condition="Control.IsVisible(9005)" effect="slide" start="0,0" end="-733,-152" time="0">Conditional</animation>
 		<animation condition="Control.IsVisible(56)" effect="slide" start="0,0" end="-12.5,0" time="0">Conditional</animation>
+		<animation condition="Window.IsVisible(SettingsCategory.xml)" effect="slide" start="0,0" end="0,-15" time="0">Conditional</animation>
 		<animation condition="Window.IsVisible(Settings.xml) | Window.IsVisible(SkinSettings.xml)" effect="slide" start="0,0" end="0,66" time="0">Conditional</animation>
 		<animation condition="Window.IsVisible(Custom1173.xml)" effect="slide" start="0,0" end="0,75" time="0">Conditional</animation>
 		<visible>[Control.IsVisible(50) + Container(50).HasPrevious] | !Control.IsVisible(50)</visible>
@@ -241,6 +242,7 @@
 		<animation condition="Window.IsVisible(Custom1173.xml)" effect="slide" start="0,0" end="0,-424" time="0">Conditional</animation>
 		<animation condition="Control.IsVisible(9005)" effect="slide" start="0,0" end="-733,-670" time="0">Conditional</animation>
 		<animation condition="Control.IsVisible(56)" effect="slide" start="0,0" end="-12.5,0" time="0">Conditional</animation>
+		<animation condition="Window.IsVisible(SettingsCategory.xml)" effect="slide" start="0,0" end="0,-90" time="0">Conditional</animation>
 		<animation condition="Window.IsVisible(Settings.xml) | Window.IsVisible(SkinSettings.xml)" effect="slide" start="0,0" end="0,-12" time="0">Conditional</animation>
 		<include>Fade4</include>
 		<visible>[Control.IsVisible(50) + Container(50).HasNext] | !Control.IsVisible(50)</visible>
@@ -283,7 +285,7 @@
 	<control type="group">
 		<animation condition="Window.IsVisible(Custom1173.xml)" effect="zoom" center="960,170" start="100,82" end="100,82" time="0">Conditional</animation>
 
-		<include name="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
+		<include content="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="809" />
@@ -293,7 +295,7 @@
 			
 			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
 		</include>
-		<include name="MenuBackground" condition="Window.IsVisible(Custom1173.xml)">
+		<include content="MenuBackground" condition="Window.IsVisible(Custom1173.xml)">
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="392" />
@@ -332,7 +334,7 @@
 	<control type="group">
 		<animation condition="Window.IsVisible(Custom1173.xml)" effect="zoom" center="960,170" start="100,82" end="100,82" time="0">Conditional</animation>
 
-		<include name="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
+		<include content="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="809" />
@@ -342,7 +344,7 @@
 			
 			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
 		</include>
-		<include name="MenuBackground" condition="Window.IsVisible(Custom1173.xml)">
+		<include content="MenuBackground" condition="Window.IsVisible(Custom1173.xml)">
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="392" />
@@ -375,7 +377,7 @@
 
   <include name="MenuDesign_Settings_Layout">
 	  <itemlayout description="(כללי)" height="70" width="1460">
-		<include name="Buttons_Frame">
+		<include content="Buttons_Frame">
 			<param name="id" value="" />
 			<param name="border" value="35" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -384,7 +386,7 @@
 			<param name="posy" value="0" />
 			<param name="width" value="1000" />
 		</include>
-		<include name="Buttons_Frame" description="מסגרת נתון">
+		<include content="Buttons_Frame" description="מסגרת נתון">
 			<param name="id" value="" />
 			<param name="border" value="35" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -406,7 +408,7 @@
 		  <width>40</width>
 		  <height>40</height>
 		  <texture>$INFO[ListItem.Thumb]</texture>
-		  <visible>!IsEmpty(ListItem.Thumb)</visible>
+		  <visible>!String.IsEmpty(ListItem.Thumb)</visible>
 		</control>
 		<control type="image" description="סמן מידע">
 		  <posx>460</posx>
@@ -414,17 +416,17 @@
 		  <width>40</width>
 		  <height>40</height>
 		  <texture background="true" colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
-		  <visible>!IsEmpty(ListItem.Property(rinfo))</visible>
+		  <visible>!String.IsEmpty(ListItem.Property(rinfo))</visible>
 		</control>
 		<control type="label" description="שם">
-		  <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
-		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
+		  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR1</include>
+		  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL1</include>
 		  <posx>700</posx>
 		  <posy>2</posy>
 		  <width>675</width>
 		  <height>70</height>
 		  <label>$INFO[ListItem.Label]</label>
-		  <visible>!IsEmpty(ListItem.Label)</visible>
+		  <visible>!String.IsEmpty(ListItem.Label)</visible>
 		</control>
 		<control type="label" description="נתון">
 		  <align>center</align>
@@ -437,12 +439,12 @@
 		  <width>150</width>
 		  <height>70</height>
 		  <label>$INFO[ListItem.Label2]</label>
-		  <visible>!IsEmpty(ListItem.Label2)</visible>
+		  <visible>!String.IsEmpty(ListItem.Label2)</visible>
 		</control>  				
 	  </itemlayout>
 	  <focusedlayout description="(כללי)" height="70" width="1460">
 		
-		<include name="Buttons_Frame" description="רקע כפתור">
+		<include content="Buttons_Frame" description="רקע כפתור">
 			<param name="id" value="" />
 			<param name="border" value="35" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -451,7 +453,7 @@
 			<param name="posy" value="0" />
 			<param name="width" value="1000" />
 		</include>
-		<include name="Buttons_Frame" description="רקע נתון">
+		<include content="Buttons_Frame" description="רקע נתון">
 			<param name="id" value="" />
 			<param name="border" value="35" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -472,7 +474,7 @@
 		  <width>40</width>
 		  <height>40</height>
 		  <texture>$INFO[ListItem.Thumb]</texture>
-		  <visible>!IsEmpty(ListItem.Thumb)</visible>
+		  <visible>!String.IsEmpty(ListItem.Thumb)</visible>
 		</control>
 		<control type="image" description="סמן מידע">
 		  <posx>460</posx>
@@ -480,19 +482,19 @@
 		  <width>40</width>
 		  <height>40</height>
 		  <texture background="true" colordiffuse="$VAR[IconFocusColor]">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
-		  <visible>!IsEmpty(ListItem.Property(rinfo))</visible>
+		  <visible>!String.IsEmpty(ListItem.Property(rinfo))</visible>
 		</control>
 		<control type="label" description="שם">
 		  <textcolor>yellow</textcolor>
-		  <include condition="StringCompare(System.Language,Hebrew)">LabelR1</include>
-		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL1</include>
+		  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR1</include>
+		  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL1</include>
 		  <posx>700</posx>
 		  <posy>2</posy>
 		  <width>675</width>
 		  <height>70</height>
 		  <scroll>true</scroll>
 		  <label>$INFO[ListItem.Label]</label>
-		  <visible>!IsEmpty(ListItem.Label)</visible>
+		  <visible>!String.IsEmpty(ListItem.Label)</visible>
 		</control>
 		<control type="label" description="נתון">
 		  <align>center</align>
@@ -505,9 +507,121 @@
 		  <height>70</height>
 		  <scroll>true</scroll>
 		  <label>$INFO[ListItem.Label2]</label>
-		  <visible>!IsEmpty(ListItem.Label2)</visible>
+		  <visible>!String.IsEmpty(ListItem.Label2)</visible>
 		</control>
 	  </focusedlayout>
   </include>
-
+  
+  <include name="DialogPVRTimerSettings">
+	<control type="image">
+	  <description>background image</description>
+	  <posx>230</posx>
+	  <posy>0</posy>
+	  <width>1460</width>
+	  <height>1080</height>
+	  <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
+	  <visible>![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]</visible>
+	</control>
+	<control type="label" id="2">
+	  <description>header label</description>
+	  <posx>110</posx>
+	  <posy>150</posy>
+	  <width>1700</width>
+	  <height>50</height>
+	  <label>-</label>
+	  <align>center</align>
+	</control>
+	<control type="grouplist" id="5">
+	  <description>control area</description>
+	  <posx>510</posx>
+	  <posy>250</posy>
+	  <width>900</width>
+	  <height>550</height>
+	  <itemgap>5</itemgap>
+	  <onup>9001</onup>
+	  <ondown>9001</ondown>
+	  <onleft>9001</onleft>
+	  <onright>9001</onright>
+	</control>
+	<control type="grouplist" id="9001">
+	  <posx>200</posx>
+	  <posy>850</posy>
+	  <width>1520</width>
+	  <align>center</align>
+	  <orientation>horizontal</orientation>
+	  <itemgap>20</itemgap>
+	  <control type="button" id="28">
+		<description>OK Button</description>
+		<width>200</width>
+		<height>40</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Size26</font>
+		<label>186</label>
+		<onleft>29</onleft>
+		<onright>29</onright>
+		<onup>5</onup>
+		<ondown>5</ondown>
+	  </control>
+	  <control type="button" id="29">
+		<description>Cancel Button</description>
+		<width>200</width>
+		<height>40</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Size26</font>
+		<label>222</label>
+		<onleft>28</onleft>
+		<onright>28</onright>
+		<onup>5</onup>
+		<ondown>5</ondown>
+	  </control>
+	</control>
+	<control type="button" id="7">
+	  <description>Default Button</description>
+	  <height>40</height>
+	  <font>Size26</font>
+	  <textcolor>grey2</textcolor>
+	  <focusedcolor>white</focusedcolor>
+	  <align>left</align>
+	</control>
+	<control type="radiobutton" id="8">
+	  <description>Default RadioButton</description>
+	  <height>40</height>
+	  <font>Size26</font>
+	  <textcolor>grey2</textcolor>
+	  <focusedcolor>white</focusedcolor>
+	  <align>left</align>
+	</control>
+	<control type="spincontrolex" id="9">
+	  <description>Default spincontrolex</description>
+	  <height>40</height>
+	  <textcolor>grey2</textcolor>
+	  <focusedcolor>white</focusedcolor>
+	  <font>Size26</font>
+	  <aligny>center</aligny>
+	  <reverse>yes</reverse>
+	</control>
+	<control type="sliderex" id="10">
+	  <description>Default Slider</description>
+	  <height>200</height>
+	  <font>Size26</font>
+	  <textcolor>grey2</textcolor>
+	  <focusedcolor>white</focusedcolor>
+	</control>
+	<control type="image" id="11">
+	  <description>Default Seperator</description>
+	  <width>1000</width>
+	  <height>2</height>
+	  <texture>images/line.png</texture>
+	</control>
+	<control type="edit" id="12">
+	  <description>Default Edit</description>
+	  <height>100</height>
+	  <font>Size26</font>
+	  <textcolor>grey2</textcolor>
+	  <focusedcolor>white</focusedcolor>
+	</control>
+  </include>
+	
 </includes>

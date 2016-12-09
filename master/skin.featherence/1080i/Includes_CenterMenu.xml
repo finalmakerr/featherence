@@ -17,9 +17,9 @@
 	<control type="group" description="חלון הגדרות כפתור">
       <posx>720</posx>
       <posy>340</posy>
-	  <!--<animation condition="Window.IsVisible(FileBrowser.xml) + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="700,100" time="0,0">Conditional</animation>
-	  <animation condition="Window.IsVisible(FileBrowser.xml) + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-700,100" time="0,0">Conditional</animation>-->
-      <include name="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
+	  <!--<animation condition="Window.IsVisible(FileBrowser.xml) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="700,100" time="0,0">Conditional</animation>
+	  <animation condition="Window.IsVisible(FileBrowser.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-700,100" time="0,0">Conditional</animation>-->
+      <include content="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="410" />
@@ -58,8 +58,8 @@
 	  <animation condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)" effect="zoom" start="100,100" end="91,107" time="0,0">Conditional</animation>
 	  <!--<animation condition="Window.IsVisible(VideoOSD.xml)" effect="zoom" center="960,-160" start="80,80" end="80,80" time="0,0">Conditional</animation>-->
 	  <animation condition="Window.IsVisible(VideoOSD.xml) | VideoPlayer.IsFullscreen" effect="slide" start="0,0" end="-720,-300" time="0">Conditional</animation>
-	  <visible>!SubString(Control.GetLabel(311),password) + !SubString(Control.GetLabel(311),$LOCALIZE[733]) + Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(DialogSubtitles.xml) + !Window.IsVisible(Custom1175.xml) | ![Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)] | Window.IsVisible(VideoOSD.xml)</visible>
-	  <include name="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
+	  <visible>!String.Contains(Control.GetLabel(311),password) + !String.Contains(Control.GetLabel(311),$LOCALIZE[733]) + Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(DialogSubtitles.xml) + !Window.IsVisible(Custom1175.xml) | ![Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)] | Window.IsVisible(VideoOSD.xml)</visible>
+	  <include content="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="410" />
@@ -86,44 +86,44 @@
 		
 		<include condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)">CenterMenuContent_DialogKeyboard</include>
 		<content>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(Button.ID_)) + !StringCompare(Window(home).Property(Button.ID),N/A)">SubContent_X90</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),17)">SubContent_17</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),18)">SubContent_18</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),19)">SubContent_19</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + Window.IsVisible(Home.xml) + StringCompare(Window(home).Property(Button.ID),19) + [!Skin.HasSetting(sub19) | StringCompare(Window(home).Property(TEMP),1191)]">CenterMenuContent_1191</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),90)">SubContent_90</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),91)">SubContent_91</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),92)">SubContent_92</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),93)">SubContent_93</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),94)">SubContent_94</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),95)">SubContent_95</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),96)">SubContent_96</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),97)">SubContent_97</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),98)">SubContent_98</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),99)">SubContent_99</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),100)">SubContent_100</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),101)">SubContent_101</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),102)">SubContent_102</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),103)">SubContent_103</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),104)">SubContent_104</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),105)">SubContent_105</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),106)">SubContent_106</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),107)">SubContent_107</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),108)">SubContent_108</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),109)">SubContent_109</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),110)">SubContent_110</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),111)">SubContent_111</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),112)">SubContent_112</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),113)">SubContent_113</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),114)">SubContent_114</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),115)">SubContent_115</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),116)">SubContent_116</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),117)">SubContent_117</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),118)">SubContent_118</include>
-		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + StringCompare(Window(home).Property(Button.ID),119)">SubContent_119</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + !String.IsEmpty(Window(home).Property(Button.ID_)) + !String.IsEqual(Window(home).Property(Button.ID),N/A)">SubContent_X90</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),17)">SubContent_17</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),18)">SubContent_18</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),19)">SubContent_19</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + Window.IsVisible(Home.xml) + String.IsEqual(Window(home).Property(Button.ID),19) + [!Skin.HasSetting(sub19) | String.IsEqual(Window(home).Property(TEMP),1191)]">CenterMenuContent_1191</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),90)">SubContent_90</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),91)">SubContent_91</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),92)">SubContent_92</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),93)">SubContent_93</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),94)">SubContent_94</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),95)">SubContent_95</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),96)">SubContent_96</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),97)">SubContent_97</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),98)">SubContent_98</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),99)">SubContent_99</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),100)">SubContent_100</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),101)">SubContent_101</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),102)">SubContent_102</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),103)">SubContent_103</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),104)">SubContent_104</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),105)">SubContent_105</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),106)">SubContent_106</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),107)">SubContent_107</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),108)">SubContent_108</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),109)">SubContent_109</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),110)">SubContent_110</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),111)">SubContent_111</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),112)">SubContent_112</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),113)">SubContent_113</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),114)">SubContent_114</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),115)">SubContent_115</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),116)">SubContent_116</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),117)">SubContent_117</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),118)">SubContent_118</include>
+		  <include condition="Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEqual(Window(home).Property(Button.ID),119)">SubContent_119</include>
 		  <include condition="Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(Custom1138.xml)]">CenterMenuContent_1175</include>
-		  <include description="Volume" condition="StringCompare(Window(home).Property(TEMP2),707)">CenterMenuContent_707</include>
-		  <include description="Volume" condition="StringCompare(Window(home).Property(TEMP2),703)">CenterMenuContent_703</include>
+		  <include description="Volume" condition="String.IsEqual(Window(home).Property(TEMP2),707)">CenterMenuContent_707</include>
+		  <include description="Volume" condition="String.IsEqual(Window(home).Property(TEMP2),703)">CenterMenuContent_703</include>
 		</content>
 		
 	  </control>
@@ -134,7 +134,7 @@
     <include>Fade20</include>
     <itemlayout height="70" width="480">
 	  <control type="group">
-		  <include name="Buttons_Frame">
+		  <include content="Buttons_Frame">
 				<param name="id" value="" />
 				<param name="border" value="30" />
 				<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -150,14 +150,14 @@
 			<posy>5.5</posy>
 			<posx>10</posx>
             <texture border="3" diffuse="buttons/types/bd1.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
-		    <visible>!IsEmpty(ListItem.Thumb)</visible>
+		    <visible>!String.IsEmpty(ListItem.Thumb)</visible>
 		    <width>60</width>
 		  </control>
 		  <control type="image" description="OFF">
             <aspectratio align="left">stretch</aspectratio>
 		    <height>70</height>
 		    <texture>misc/help/off.png</texture>
-		    <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !IsEmpty(ListItem.Property(off))</visible>
+		    <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(ListItem.Property(off))</visible>
 		    <width>70</width>
           </control>
 		  <control type="label" description="כותרת">
@@ -173,7 +173,7 @@
     <focusedlayout height="70" width="480">
       <control type="group">
 	    <include condition="Window.IsVisible(Custom1138.xml)">SetProperty_Center</include>
-	    <include name="Buttons_Frame">
+	    <include content="Buttons_Frame">
 			<param name="id" value="" />
 			<param name="border" value="30" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -188,14 +188,14 @@
 			<posy>5.5</posy>
 			<posx>10</posx>
             <texture border="3" diffuse="buttons/types/bd1.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
-		    <visible>!IsEmpty(ListItem.Thumb)</visible>
+		    <visible>!String.IsEmpty(ListItem.Thumb)</visible>
 		    <width>60</width>
 		</control>
 		<control type="image" description="OFF">
           <aspectratio align="left">stretch</aspectratio>
 		  <height>70</height>
 		  <texture>misc/help/off.png</texture>
-		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !IsEmpty(ListItem.Property(off))</visible>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(ListItem.Property(off))</visible>
 		  <width>70</width>
         </control>
 		<control type="label" description="כותרת">
@@ -224,40 +224,40 @@
   </include>
   
   <include name="onload_CheckProperty_MainMenu">
-    <onload condition="IsEmpty(Window(home).Property(Button.ID)) | IsEmpty(Window(home).Property(Button.ID_))">Action(Close)</onload>
-	<onload condition="IsEmpty(Window(home).Property(Button.ID)) | IsEmpty(Window(home).Property(Button.ID_))">Notification(Error,,1000)</onload>
+    <onload condition="String.IsEmpty(Window(home).Property(Button.ID)) | String.IsEmpty(Window(home).Property(Button.ID_))">Action(Close)</onload>
+	<onload condition="String.IsEmpty(Window(home).Property(Button.ID)) | String.IsEmpty(Window(home).Property(Button.ID_))">Notification(Error,,1000)</onload>
   </include>
   
   <include name="onunload_ClearProperty_MainMenu">
-    <onunload condition="!IsEmpty(Window(home).Property(TEMP))">ClearProperty(TEMP,home)</onunload>
-	<onunload condition="!IsEmpty(Window(home).Property(TEMP2))">ClearProperty(TEMP2,home)</onunload>
-	<onunload condition="!IsEmpty(Window(home).Property(Button.ID))">ClearProperty(Button.ID,home)</onunload>
-	<onunload condition="!IsEmpty(Window(home).Property(Button.ID_))">ClearProperty(Button.ID_,home)</onunload>
-	<onunload condition="!IsEmpty(Window(home).Property(Button.Name))">ClearProperty(Button.Name,home)</onunload>
-	<onunload condition="!IsEmpty(Window(home).Property(WidgetButton.ID_))">ClearProperty(WidgetButton.ID_,home)</onunload>
+    <onunload condition="!String.IsEmpty(Window(home).Property(TEMP))">ClearProperty(TEMP,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(home).Property(TEMP2))">ClearProperty(TEMP2,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(home).Property(Button.ID))">ClearProperty(Button.ID,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(home).Property(Button.ID_))">ClearProperty(Button.ID_,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(home).Property(Button.Name))">ClearProperty(Button.Name,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(home).Property(WidgetButton.ID_))">ClearProperty(WidgetButton.ID_,home)</onunload>
   </include>
     
   <include name="CheckProperty_Menus">
-    <onclick condition="IsEmpty(Window(home).Property(Button.ID)) | IsEmpty(Window(home).Property(Button.ID_))">Action(Close)</onclick>
-	<onclick condition="IsEmpty(Window(home).Property(Button.ID)) | IsEmpty(Window(home).Property(Button.ID_))">Notification(Error,,1000)</onclick>
+    <onclick condition="String.IsEmpty(Window(home).Property(Button.ID)) | String.IsEmpty(Window(home).Property(Button.ID_))">Action(Close)</onclick>
+	<onclick condition="String.IsEmpty(Window(home).Property(Button.ID)) | String.IsEmpty(Window(home).Property(Button.ID_))">Notification(Error,,1000)</onclick>
 	
-	<visible>!IsEmpty(Window(home).Property(Button.ID)) + !IsEmpty(Window(home).Property(Button.ID_))</visible>
-	<visible>!Window.IsVisible(Custom1139.xml) | Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(SubButton.ID_))</visible>
+	<visible>!String.IsEmpty(Window(home).Property(Button.ID)) + !String.IsEmpty(Window(home).Property(Button.ID_))</visible>
+	<visible>!Window.IsVisible(Custom1139.xml) | Window.IsVisible(Custom1139.xml) + !String.IsEmpty(Window(home).Property(SubButton.ID_))</visible>
   </include>
   
   <include name="onload_CheckProperty_SubMenu">
-	 <onload condition="IsEmpty(Window(home).Property(SubButton.ID_)) | SubString(Window(home).Property(SubButton.ID_),_90)">Action(Close)</onload>
-	 <onload condition="StringCompare(Window(home).Property(SubButton.ID_),TEMP)">Notification(Error,,1000)</onload>
-	 <onload condition="SubString(Window(home).Property(SubButton.ID_),_90)">Notification($INFO[Window(home).Property(SubButton.Name)] $LOCALIZE[31470],$LOCALIZE[31471],2000)</onload>
+	 <onload condition="String.IsEmpty(Window(home).Property(SubButton.ID_)) | String.Contains(Window(home).Property(SubButton.ID_),_90)">Action(Close)</onload>
+	 <onload condition="String.IsEqual(Window(home).Property(SubButton.ID_),TEMP)">Notification(Error,,1000)</onload>
+	 <onload condition="String.Contains(Window(home).Property(SubButton.ID_),_90)">Notification($INFO[Window(home).Property(SubButton.Name)] $LOCALIZE[31470],$LOCALIZE[31471],2000)</onload>
   </include>
   
   <include name="onunload_ClearProperty_SubMenu">
-    <onunload condition="!IsEmpty(Window(home).Property(TEMP))">ClearProperty(TEMP,home)</onunload>
-	<onunload condition="!IsEmpty(Window(home).Property(TEMP2))">ClearProperty(TEMP2,home)</onunload>
-	<onunload condition="!IsEmpty(Window(home).Property(SubButton.ID_))">ClearProperty(SubButton.ID_,home)</onunload>
-	<onunload condition="!IsEmpty(Window(home).Property(SubButton.Name))">ClearProperty(SubButton.Name,home)</onunload>
+    <onunload condition="!String.IsEmpty(Window(home).Property(TEMP))">ClearProperty(TEMP,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(home).Property(TEMP2))">ClearProperty(TEMP2,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(home).Property(SubButton.ID_))">ClearProperty(SubButton.ID_,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(home).Property(SubButton.Name))">ClearProperty(SubButton.Name,home)</onunload>
 	
-	<onunload condition="!IsEmpty(Window(home).Property(Previous_SubButton.ID_))">ClearProperty(Previous_SubButton.ID_,home)</onunload>
-	<onunload condition="!IsEmpty(Window(home).Property(Next_SubButton.ID_))">ClearProperty(Next_SubButton.ID_,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(home).Property(Previous_SubButton.ID_))">ClearProperty(Previous_SubButton.ID_,home)</onunload>
+	<onunload condition="!String.IsEmpty(Window(home).Property(Next_SubButton.ID_))">ClearProperty(Next_SubButton.ID_,home)</onunload>
   </include>
 </includes>

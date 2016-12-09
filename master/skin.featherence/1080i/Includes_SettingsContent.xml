@@ -840,7 +840,7 @@
 		<onclick condition="Skin.String(DialogBackgroundOverlay, 30)">Skin.SetString(DialogBackgroundOverlay, 20)</onclick>
 		<onclick condition="Skin.String(DialogBackgroundOverlay, 20)">Skin.SetString(DialogBackgroundOverlay, )</onclick>
 		<include>CustomizerExit</include>
-		<onclick condition="!Window.IsVisible(DialogKaiToast.xml)">RunScript(script.featherence.service,,?mode=32&amp;value=2)</onclick>
+		<onclick condition="!Window.IsVisible(DialogNotification.xml)">RunScript(script.featherence.service,,?mode=32&amp;value=2)</onclick>
 		<visible>Container(100).Hasfocus(22)</visible>
 	  </item>
 	  <item id="292" description="צבע רקע דיאלוג">
@@ -884,7 +884,7 @@
 		<onclick condition="Skin.String(DialogPosition,3)">Skin.SetString(DialogPosition,4)</onclick>
 		<onclick condition="Skin.String(DialogPosition,4)">Skin.SetString(DialogPosition,5)</onclick>
 		<onclick condition="Skin.String(DialogPosition,5)">Skin.SetString(DialogPosition,)</onclick>-->
-		<onclick condition="!Window.IsVisible(DialogKaiToast.xml)">RunScript(script.featherence.service,,?mode=32&amp;value=2)</onclick>
+		<onclick condition="!Window.IsVisible(DialogNotification.xml)">RunScript(script.featherence.service,,?mode=32&amp;value=2)</onclick>
 		<visible>Container(100).Hasfocus(22)</visible>
 	  </item>
 	  <item id="299" description="העדפת תצוגה Center List">
@@ -1739,101 +1739,45 @@
   
   <include name="Content_Settings_50" description="Settings.xml">
 	   <item id="0" description="מראה">
-		<label>480</label>
+		<label>14207</label>
 		<label2>$INFO[System.Language]</label2>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/image.png</thumb>
 		<property name="rinfo">$LOCALIZE[166] | $LOCALIZE[14222] | $LOCALIZE[12900] | $LOCALIZE[12360] | $LOCALIZE[14224]</property>
-		<onclick>activatewindow(AppearanceSettings)</onclick>
-		<!--<onclick>activatewindow(InterfaceSettings)</onclick>-->
+		<onclick>activatewindow(InterfaceSettings)</onclick>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/image.png</thumb>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
-	  <item id="3" description="Videos">
-		<label>3</label>
-		<label2></label2>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/videos.png</thumb>
-		<property name="rinfo"></property>
-		<onclick>activatewindow(VideosSettings)</onclick>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/videos.png</thumb>
-		<visible>Container(100).Hasfocus(1)</visible>
-	  </item>
-	  <!--<item id="3" description="Player Settings">
+	  <item id="3" description="Player Settings">
 		<label>14201</label>
 		<label2></label2>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/videos.png</thumb>
 		<property name="rinfo">$LOCALIZE[14215] | $LOCALIZE[14216] | $LOCALIZE[14087] | $LOCALIZE[14217] | $LOCALIZE[304] | $LOCALIZE[37032]</property>
 		<onclick>activatewindow(PlayerSettings)</onclick>
-		<visible>Container(100).Hasfocus(1)</visible>
-	  </item>-->
-	  <item id="4" description="Music">
-		<label>2</label>
-		<label2></label2>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/music.png</thumb>
-		<property name="rinfo"></property>
-		<onclick>activatewindow(MusicSettings)</onclick>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/music.png</thumb>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/videos.png</thumb>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
-	  <!--<item id="4" description="Library Settings">
+	  <item id="4" description="Library Settings">
 		<label>14203</label>
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/quickpar.png</thumb>
 		<property name="rinfo">$LOCALIZE[14022] | $LOCALIZE[128] | $LOCALIZE[10006] | $LOCALIZE[10005] | $LOCALIZE[10002]</property>
 		<onclick>activatewindow(MediaSettings)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
-	  </item>-->
+	  </item>
 	   <item id="14" description="ערוצי טלוויזיה">
 		<label>$LOCALIZE[19023]</label>
 		<label2>$VAR[14label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/LiveTV.png</thumb>
 		<property name="rinfo">$LOCALIZE[128] | $LOCALIZE[19181] | $LOCALIZE[19069] | $LOCALIZE[14086] | $LOCALIZE[19043] | $LOCALIZE[14095] | $LOCALIZE[19259] | $LOCALIZE[19279]</property>
 		<onclick>activatewindow(PVRSettings)</onclick>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/LiveTV.png</thumb>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
-	  <item id="5" description="Pictures">
-		<label>1</label>
-		<label2></label2>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/pictures.png</thumb>
-		<property name="rinfo"></property>
-		<onclick>activatewindow(PicturesSettings)</onclick>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/pictures.png</thumb>
-		<visible>Container(100).Hasfocus(1)</visible>
-	  </item>
-	  <item id="6" description="Addons">
-		<label>24001</label>
-		<label2></label2>
-		<thumb></thumb>
-		<property name="rinfo"></property>
-		<onclick>ActivateWindow(AddonBrowser,root)</onclick>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/addons.png</thumb>
-		<visible>Skin.HasSetting(Admin) + !Skin.HasSetting(Admin)</visible>
-		<visible>Container(100).Hasfocus(1)</visible>
-	  </item>
-	  <item id="8" description="Weather">
-		<label>8</label>
-		<label2>$VAR[8label2]</label2>
-		<thumb fallback="special://home/addons/script.featherence.service/resources/icons/weather.png">$INFO[Weather.Conditions]</thumb>
-		<property name="rinfo">Location: $INFO[Weather.Location][CR]Temperature: $INFO[Weather.Temperature][CR][CR]Addon: $INFO[Weather.plugin]</property>
-		<onclick>activatewindow(WeatherSettings)</onclick>
-		<visible>Container(100).Hasfocus(1)</visible>
-	  </item>
-	  <item id="9" description="Services">
-		<label>14036</label>
-		<label2>$INFO[System.FriendlyName]</label2>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/gears.png</thumb>
-		<property name="rinfo"></property>
-		<onclick>Activatewindow(servicesettings)</onclick>
-		<visible>Container(100).Hasfocus(1)</visible>
-	  </item>
-	  <!--<item id="9" description="Services & Weather">
+	  <item id="9" description="Services & Weather">
 		<label>$LOCALIZE[14036] &amp; $LOCALIZE[8]</label>
 		<label2>$INFO[System.FriendlyName]</label2>
 		<thumb fallback="special://home/addons/script.featherence.service/resources/icons/weather.png">$INFO[Weather.Conditions]</thumb>
 		<property name="rinfo">Location: $INFO[Weather.Location][CR]Temperature: $INFO[Weather.Temperature][CR][CR]Addon: $INFO[Weather.plugin]</property>
 		<onclick>Activatewindow(servicesettings)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
-	  </item>-->
+	  </item>
 	  <item id="10" description="System">
 		<label>13000</label>
 		<label2>$INFO[System.ScreenResolution]</label2>
@@ -1990,7 +1934,7 @@
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/bank.png</thumb>
 		<property name="rinfo"></property>
-		<onclick>ActivateWindow(video,"special://userdata/library/",return)</onclick>
+		<onclick>ActivateWindow(Videos,"special://userdata/library/",return)</onclick>
 		<visible>Container(100).Hasfocus(4)</visible>
 	  </item>
 	  <item id="42" description="תמונות">
@@ -2014,7 +1958,7 @@
 		<label2></label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/music.png</thumb>
 		<property name="rinfo"></property>
-		<onclick>ActivateWindow(MusicFiles,special://userdata/library/music/)</onclick>
+		<onclick>ActivateWindow(Music,special://userdata/library/music/)</onclick>
 		<visible>Container(100).Hasfocus(4)</visible>
 	  </item>
 	  <item id="45" description="מנהל קבצים">

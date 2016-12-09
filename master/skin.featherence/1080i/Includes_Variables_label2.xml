@@ -140,8 +140,8 @@
   </variable>
   
   <variable name="label1300">
-    <value condition="!IsEmpty(Window(home).Property(TEMP))">$INFO[Window(home).Property(TEMP)]</value>
-	<value condition="!IsEmpty(Control.GetLabel(1300)) + IntegerGreaterThan(Container(120).NumItems,0)">$INFO[Window(home).Property(DialogSubtitles2)]</value>
+    <value condition="!String.IsEmpty(Window(home).Property(TEMP))">$INFO[Window(home).Property(TEMP)]</value>
+	<value condition="!String.IsEmpty(Control.GetLabel(1300)) + Integer.IsGreater(Container(120).NumItems,0)">$INFO[Window(home).Property(DialogSubtitles2)]</value>
   </variable>
   
   <variable name="1label2">
@@ -165,8 +165,8 @@
   </variable>
   
   <variable name="8label2">
-	<value condition="IsEmpty(Weather.plugin)">$LOCALIZE[106] $LOCALIZE[305]</value>
-	<value condition="!IsEmpty(Weather.plugin)">$LOCALIZE[305]</value>
+	<value condition="String.IsEmpty(Weather.plugin)">$LOCALIZE[106] $LOCALIZE[305]</value>
+	<value condition="!String.IsEmpty(Weather.plugin)">$LOCALIZE[305]</value>
   </variable>
   
   <variable name="13label2">
@@ -192,8 +192,8 @@
   </variable>
   
   <variable name="14label2">
-	<value condition="!System.GetBool(pvrmanager.enabled)">$LOCALIZE[106] $LOCALIZE[305]</value>
-	<value condition="System.GetBool(pvrmanager.enabled)">$LOCALIZE[305]</value>
+	<value condition="!PVR.HasTVChannels">$LOCALIZE[106] $LOCALIZE[305]</value>
+	<value condition="PVR.HasTVChannels">$LOCALIZE[305]</value>
   </variable>
   
   <variable name="15label2">
@@ -507,12 +507,12 @@
   
   
   <variable name="395label">
-    <value condition="StringCompare(System.Language,Hebrew)">$LOCALIZE[573] $LOCALIZE[13278]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">$LOCALIZE[13278] $LOCALIZE[573]</value>
+    <value condition="String.IsEqual(System.Language,Hebrew)">$LOCALIZE[573] $LOCALIZE[13278]</value>
+	<value condition="!String.IsEqual(System.Language,Hebrew)">$LOCALIZE[13278] $LOCALIZE[573]</value>
   </variable>
   <variable name="label709">
-    <value condition="StringCompare(System.Language,Hebrew)">$LOCALIZE[19190] $LOCALIZE[590]</value>
-	<value condition="!StringCompare(System.Language,Hebrew)">$LOCALIZE[590] $LOCALIZE[19190]</value>
+    <value condition="String.IsEqual(System.Language,Hebrew)">$LOCALIZE[19190] $LOCALIZE[590]</value>
+	<value condition="!String.IsEqual(System.Language,Hebrew)">$LOCALIZE[590] $LOCALIZE[19190]</value>
   </variable>
   <variable name="label710">
     <value>$LOCALIZE[31114]</value>
@@ -521,10 +521,6 @@
   <variable name="297label2" description="">
     <value condition="!Skin.String(DialogPosition)">$LOCALIZE[13278]</value>
 	<value condition="Skin.String(DialogPosition,1)">CENTER</value>
-	<!--<value condition="Skin.String(DialogKaiToastPos,2)">SE</value>
-	<value condition="Skin.String(DialogKaiToastPos,3)">N</value>
-	<value condition="Skin.String(DialogKaiToastPos,4)">NW</value>
-	<value condition="Skin.String(DialogKaiToastPos,5)">NE</value>-->
   </variable>
   
   <variable name="335label2">
@@ -622,20 +618,20 @@
   </variable>
   
   <variable name="460label2">
-    <value condition="Skin.String(widget311) + !IsEmpty(Skin.String(widget311_name))">$INFO[Skin.String(widget311_name)]</value>
-    <value condition="Skin.String(widget311) + IsEmpty(Skin.String(widget311_name))">$INFO[Skin.String(widget311)]</value>
+    <value condition="Skin.String(widget311) + !String.IsEmpty(Skin.String(widget311_name))">$INFO[Skin.String(widget311_name)]</value>
+    <value condition="Skin.String(widget311) + String.IsEmpty(Skin.String(widget311_name))">$INFO[Skin.String(widget311)]</value>
 	<value condition="!Skin.String(widget311)">$INFO[Skin.String(label90)]</value>
   </variable>
   
   <variable name="461label2">
-    <value condition="Skin.String(widget312) + !IsEmpty(Skin.String(widget312_name))">$INFO[Skin.String(widget312_name)]</value>
-    <value condition="Skin.String(widget312) + IsEmpty(Skin.String(widget312_name))">$INFO[Skin.String(widget312)]</value>
+    <value condition="Skin.String(widget312) + !String.IsEmpty(Skin.String(widget312_name))">$INFO[Skin.String(widget312_name)]</value>
+    <value condition="Skin.String(widget312) + String.IsEmpty(Skin.String(widget312_name))">$INFO[Skin.String(widget312)]</value>
 	<value condition="!Skin.String(widget312)">$INFO[Skin.String(label91)]</value>
   </variable>
   
   <variable name="462label2">
-    <value condition="Skin.String(widget317) + !IsEmpty(Skin.String(widget317_name))">$INFO[Skin.String(widget317_name)]</value>
-    <value condition="Skin.String(widget317) + IsEmpty(Skin.String(widget317_name))">$INFO[Skin.String(widget317)]</value>
+    <value condition="Skin.String(widget317) + !String.IsEmpty(Skin.String(widget317_name))">$INFO[Skin.String(widget317_name)]</value>
+    <value condition="Skin.String(widget317) + String.IsEmpty(Skin.String(widget317_name))">$INFO[Skin.String(widget317)]</value>
 	<value condition="!Skin.String(widget317)">$INFO[Skin.String(label97)]</value>
   </variable>
   
@@ -663,14 +659,6 @@
     <value condition="!Skin.String(View59Align)">AUTO</value>
 	<value condition="Skin.String(View59Align,0)">LTR</value>
 	<value condition="Skin.String(View59Align,1)">RTL</value>
-  </variable>
-  
-  <variable name="ReloadSkin_check">
-    <value>TEST</value>
-	<value condition="Skin.String(MainBackgroundTexture)">MainBackgroundTexture</value>
-	<value condition="Skin.String(TopBackgroundTexture)">TopBackgroundTexture</value>
-	<value condition="Skin.String(background)">background</value>
-	
   </variable>
   
   <variable name="406label">

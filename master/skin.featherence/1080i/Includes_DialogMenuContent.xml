@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-  
   <include name="BottomMenuDialogBusy">
 	  <control type="label" id="9" description="כותרת">
 	    <visible>!Window.IsVisible(DialogProgress.xml) + !Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogOK.xml)</visible>
@@ -11,17 +10,19 @@
 	    <width>600</width>
 		<label>$LOCALIZE[20186]</label> <!--[CR][COLOR red]$INFO[Skin.String(DialogSelectSources)]-->
 		<wrapmultiline>true</wrapmultiline>
+		<visible>!Window.IsVisible(10100)</visible>
 	  </control>
 	  <control type="textbox" id="1500" description="טיפים">
 	    <animation condition="true" effect="slide" start="0,0" end="10,0">Conditional</animation>
 	    <visible>!Window.IsVisible(DialogProgress.xml) + !Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogOK.xml)</visible>
-		<visible>!IsEmpty(Window(home).Property(tips)) + System.IdleTime(2) + !Skin.HasSetting(tips)</visible>
+		<visible>!String.IsEmpty(Window(home).Property(tips)) + System.IdleTime(2) + !Skin.HasSetting(tips)</visible>
 		<textcolor>$VAR[DialogFontColor]</textcolor>
 	    <include>LabelC2</include>
 	    <height>200</height>
 		<posx>0</posx>
 	    <width>580</width>
 		<label>$VAR[tips]</label>
+		<visible>!Window.IsVisible(10100)</visible>
 	  </control>
 
 	  <control type="progress" id="10" description="Progressbar">
@@ -31,6 +32,7 @@
 		<midtexture border="0,1,0,1">progress/ProgressM.png</midtexture>
 		<righttexture border="1,1,5,1">progress/ProgressR.png</righttexture>
 		<lefttexture border="5,1,1,1">progress/ProgressL.png</lefttexture>
+		<visible>!Window.IsVisible(10100)</visible>
 	  </control>
   </include>
 
@@ -101,6 +103,7 @@
 	  <height>60</height>
 	  <width>600</width>
 	  <wrapmultiline>true</wrapmultiline>
+	  <visible>!Window.IsVisible(10100)</visible>
 	</control>
     <control type="textbox" id="9" description="כותרת משנית - פותח זרימה">
 	  <posy>-10</posy>
@@ -108,10 +111,12 @@
 	  <include>LabelC2</include>
 	  <height>100</height>
 	  <width>600</width>
+	  <visible>!Window.IsVisible(10100)</visible>
 	</control>
 	<control type="button" id="10" description="Cancel">
 	  <width>600</width>
 	  <label>222</label>
+	  <visible>!Window.IsVisible(10100)</visible>
 	</control>
 	<control type="label" description="כותרת">
 	  <textcolor>grey</textcolor>
@@ -119,6 +124,7 @@
 	  <height>15</height>
 	  <label>$INFO[System.Progressbar]</label>
 	  <width>600</width>
+	  <visible>!Window.IsVisible(10100)</visible>
 	</control>
 	<control type="progress" description="Progressbar">
 	  <posy>-10</posy>
@@ -128,6 +134,7 @@
 	  <righttexture border="1,1,5,1">progress/ProgressR.png</righttexture>
 	  <lefttexture border="5,1,1,1">progress/ProgressL.png</lefttexture>
 	  <info>System.Progressbar</info>
+	  <visible>!Window.IsVisible(10100)</visible>
 	</control>
   </include>
   
@@ -136,7 +143,7 @@
 	  <!--<visible allowhiddenfocus="true">ControlGroup(996).HasFocus()</visible>--> 
 	  <posx>720</posx>
       <posy>560</posy>
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="535" />
@@ -159,21 +166,21 @@
 		<!--<usecontrolcoords>true</usecontrolcoords>-->
 		<width>480</width>
 	  	  <control type="button" id="980" description="נגן קדימון">
-			<!--<enable>!IsEmpty(ListItem.Trailer)</enable>-->
+			<!--<enable>!String.IsEmpty(ListItem.Trailer)</enable>-->
 			<height>75</height>
 			<label>$LOCALIZE[208] $LOCALIZE[20410]</label>
 			<onclick>PlayMedia($ESCINFO[ListItem.Trailer],1)</onclick>
-			<visible>Container.Content(Movies) + !SubString(ListItem.Path,videodb://1/7) + !SubString(ListItem.path,videodb://movies/sets/) + !IsEmpty(ListItem.Trailer)</visible>
-			<!--<visible>!SubString(Container.ListItem(1).Label,Trailer)</visible>-->
-			<!--<visible>!SubString(Container.FolderPath,plugin://)</visible>-->
+			<visible>Container.Content(Movies) + !String.Contains(ListItem.Path,videodb://1/7) + !String.Contains(ListItem.path,videodb://movies/sets/) + !String.IsEmpty(ListItem.Trailer)</visible>
+			<!--<visible>!String.Contains(Container.ListItem(1).Label,Trailer)</visible>-->
+			<!--<visible>!String.Contains(Container.FolderPath,plugin://)</visible>-->
 		  </control>
 		  <control type="button" id="981" description="חיפוש קדימון">
 			<height>75</height>
 			<label>$LOCALIZE[137] $LOCALIZE[20410]</label>
 			<!--<onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Label] Trailer,return)</onclick>-->
 			<onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(LatestMovie.1.Title] $INFO[Window(home).Property(LatestMovie.1.Year)] Movie Trailer;,return)</onclick>
-			<visible>Container.Content(Movies) + !SubString(ListItem.Path,videodb://1/7) + !SubString(ListItem.path,videodb://movies/sets/) + IsEmpty(ListItem.Trailer)</visible>
-			<visible>!SubString(Container.FolderPath,plugin://)</visible>
+			<visible>Container.Content(Movies) + !String.Contains(ListItem.Path,videodb://1/7) + !String.Contains(ListItem.path,videodb://movies/sets/) + String.IsEmpty(ListItem.Trailer)</visible>
+			<visible>!String.Contains(Container.FolderPath,plugin://)</visible>
 		  </control>
 		  <control type="button" id="983" description="הדגש">
 			<height>75</height>
@@ -188,6 +195,13 @@
 			<textoffsetx>20</textoffsetx>
 			<visible>true</visible>
 		  </control>
+		  <control type="button" id="984" description="הגדרות הרחבה">
+			<height>75</height>
+			<onclick>RunScript(script.featherence.service,,?mode=32&amp;value=10)</onclick>
+			<label>10140</label>
+			<textoffsetx>20</textoffsetx>
+			<visible>String.Contains(Container.FolderPath,plugin://)</visible>
+		  </control>
 	  </control>
 	</control>
   </include>
@@ -196,7 +210,7 @@
     <control type="group">
       <posx>450</posx>
       <posy>225</posy>
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="875" />
@@ -250,9 +264,9 @@
 		<include>ButtonL2</include>
       </control>
       <control type="spincontrolex" description="Default SpinControlex (בתהליך/הכל)" id="9">
-		<!--<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
-		<include condition="StringCompare(System.Language,Hebrew)">spinposx</include>-->
+		<!--<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+		<include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+		<include condition="String.IsEqual(System.Language,Hebrew)">spinposx</include>-->
 		<height>70</height>
 		<include>ButtonL2</include>
       </control>
@@ -306,7 +320,7 @@
     <control type="group" description="קבוצה עליון">
 	  <posx>430</posx>
 	  <posy>220</posy>
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="875" />
@@ -370,7 +384,7 @@
         <onright>60</onright>
         <ondown>5</ondown>
 		<itemlayout height="70" width="1020">
-          <include name="Buttons_Frame">
+          <include content="Buttons_Frame">
 			<param name="id" value="" />
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -389,7 +403,7 @@
         </itemlayout>
         <focusedlayout height="70" width="1020">
  
-		  <include name="Buttons_Frame">
+		  <include content="Buttons_Frame">
 			<param name="id" value="" />
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -477,7 +491,7 @@
     <control type="group" description="קבוצה עליון">
 	  <posx>430</posx>
 	  <posy>220</posy>
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="875" />
@@ -544,8 +558,8 @@
 		<textoffsetx>20</textoffsetx>
 		<textcolor>white</textcolor>
 		<!--<width>1040</width>-->
-		<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+		<include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		<height>70</height>
       </control>
       <control type="radiobutton" id="8" description="???RadioButton">
@@ -604,7 +618,7 @@
     <control type="group" description="קבוצה עליון">
 	  <posx>430</posx>
 	  <posy>220</posy>
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="875" />
@@ -626,7 +640,7 @@
         <onright>60</onright>
         <ondown>9001</ondown>
 		<itemlayout height="70" width="1040">
-		  <include name="Buttons_Frame">
+		  <include content="Buttons_Frame">
 			<param name="id" value="" />
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
@@ -659,7 +673,7 @@
           </control>
         </itemlayout>
         <focusedlayout height="70" width="1040">
-          <include name="Buttons_Frame">
+          <include content="Buttons_Frame">
 			<param name="id" value="" />
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
@@ -725,7 +739,7 @@
     <control type="group" description="קבוצה עליון">
 	  <posx>450</posx>
 	  <posy>500</posy>
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="800" />
@@ -805,7 +819,7 @@
     <control type="group" description="קבוצה עליון">
 	  <posx>430</posx>
 	  <posy>220</posy>
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="875" />
@@ -844,8 +858,8 @@
 		<textcolor>white</textcolor>
 		<!--<width>1040</width>-->
 		<texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>
-		<include condition="StringCompare(System.Language,Hebrew)">ButtonR1</include>
-		<include condition="!StringCompare(System.Language,Hebrew)">ButtonL1</include>
+		<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+		<include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		<height>70</height>
       </control>
       <control type="radiobutton" id="8" description="">
@@ -916,27 +930,27 @@
 	  <posy>250</posy>	  
 	  <width>485</width> 	  
 
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="0" />
 		<param name="posx" value="0" />
 		<param name="posy" value="0" />
 		<param name="width" value="0" />
-		<param name="condition" value="!Skin.HasSetting(MenuBackground) + !StringCompare(Window(home).Property(DialogSelect.Wide),1)"/>
+		<param name="condition" value="!Skin.HasSetting(MenuBackground) + !String.IsEqual(Window(home).Property(DialogSelect.Wide),1)"/>
 		
 		<param name="type0" value="true" description="MenuBackground"/>
 		<param name="type1" value="false" description="DialogBackground"/>
       </include>
 	  
-	  <include name="MenuBackground">
+	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="0" />
 		<param name="posx" value="0" />
 		<param name="posy" value="0" />
 		<param name="width" value="790" />
-		<param name="condition" value="!Skin.HasSetting(MenuBackground) + StringCompare(Window(home).Property(DialogSelect.Wide),1)"/>
+		<param name="condition" value="!Skin.HasSetting(MenuBackground) + String.IsEqual(Window(home).Property(DialogSelect.Wide),1)"/>
 		
 		<param name="type0" value="true" description="MenuBackground"/>
 		<param name="type1" value="false" description="DialogBackground"/>
@@ -947,7 +961,7 @@
 		<include>LabelC1</include>
 		<posx>20</posx>
 		<posy>0</posy>
-        <include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">Control_Pos9</include>
+        <include condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">Control_Pos9</include>
 		<width>440</width>
       </control>
       <control type="grouplist" id="5" description="Settings">
@@ -959,53 +973,53 @@
 		<posx>2</posx>
 		<pagecontrol>60</pagecontrol>
 		<posy>40</posy>
-		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">Control_Pos9</include>
+		<include condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">Control_Pos9</include>
 		<width>480</width>
 	  </control>
 	  <control type="button" id="7" description="ברירת מחדל slider">
-		<include condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
-		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
+		<include condition="!String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
+		<include condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
 	  </control>
 	  <control type="radiobutton" id="8" description="ברירת מחדל">
-		<include condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
-		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
+		<include condition="!String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
+		<include condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
 	  </control>
 	  <control type="spincontrolex" id="9" description="ברירת מחדל arrows">
-		<include condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
-		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
+		<include condition="!String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
+		<include condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
 	  </control>
 	  <control type="sliderex" id="13" description="ברירת מחדל">
-		<include condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
-		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
+		<include condition="!String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
+		<include condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
 	  </control>
 	  <control type="button" id="1267" description="גודל">
 		<posy>563</posy>
 		<posx>2</posx>
-		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">Control_Pos12</include>
+		<include condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">Control_Pos12</include>
 		
-		<include condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
-		<include condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
+		<include condition="!String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ButtonL4</include>
+		<include condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ButtonL2</include>
 		<onup>5</onup>
 		<ondown>noop</ondown>
 		<onleft>noop</onleft>
 		<onright>close</onright>
 		<label>$LOCALIZE[22031]</label>
 		<onclick>Action(Close)</onclick>
-		<onclick condition="!StringCompare(Window(home).Property(DialogSelect.Wide),1)">SetProperty(DialogSelect.Wide,1,home)</onclick>
-		<onclick condition="StringCompare(Window(home).Property(DialogSelect.Wide),1)">ClearProperty(DialogSelect.Wide,home)</onclick>
+		<onclick condition="!String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">SetProperty(DialogSelect.Wide,1,home)</onclick>
+		<onclick condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ClearProperty(DialogSelect.Wide,home)</onclick>
 		<onclick condition="Window.IsVisible(10123)">RunScript(script.featherence.service,,?mode=32&amp;value=9&amp;value2=10123)</onclick>
 		<onclick condition="Window.IsVisible(10124)">RunScript(script.featherence.service,,?mode=32&amp;value=9&amp;value2=10124)</onclick>
-		<visible>!StringCompare(Control.GetLabel(1),Choose shortcut) | StringCompare(Window(home).Property(DialogSelect.Wide),1)</visible>
+		<visible>!String.IsEqual(Control.GetLabel(1),Choose shortcut) | String.IsEqual(Window(home).Property(DialogSelect.Wide),1)</visible>
 		<visible>!Window.IsVisible(Custom1175.xml)</visible>
 	  </control>
     </control>
   </include>
-  <include name="TopDialogKaiToast" description="חלון מידע">
+  <include name="TopDialogNotification" description="חלון מידע">
     <control type="group">
 	  <control type="group">
 		<posx>610</posx>
 		<posy>-6</posy>
-		<include name="MenuBackground">
+		<include content="MenuBackground">
 			<param name="border" value="20" />
 			<param name="color" value="$VAR[TopInformationColor]" />
 			<param name="height" value="80" />
@@ -1058,8 +1072,8 @@
         <control type="label" id="402" description="תוכן">
 		  <aligny>top</aligny>
 		  <include>LabelC13</include>
-		  <!--<include condition="StringCompare(System.Language,Hebrew)">LabelR4</include>
-		  <include condition="!StringCompare(System.Language,Hebrew)">LabelL4</include>-->
+		  <!--<include condition="String.IsEqual(System.Language,Hebrew)">LabelR4</include>
+		  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL4</include>-->
 		  <include>Fade7</include>
           <scroll>true</scroll>
           <label>-</label>

@@ -83,11 +83,11 @@
     <align>center</align>
 	<font>size21</font>
   </include>
-  <include name="LabelR4" description="PVR-משודר עכשיו/DialogKaiToast">
+  <include name="LabelR4" description="PVR-משודר עכשיו/DialogNotification">
     <align>right</align>
 	<font>size21</font>
   </include>
-  <include name="LabelL4" description="PVR-משודר עכשיו/DialogKaiToast">
+  <include name="LabelL4" description="PVR-משודר עכשיו/DialogNotification">
     <align>left</align>
 	<font>size21</font>
   </include>
@@ -594,7 +594,7 @@
 		  <posy>$PARAM[posy]</posy>
 		  <width>$PARAM[width]</width>
 		  <visible>$PARAM[condition]</visible>
-		  <visible>!IsEmpty(ListItem.Thumb)</visible>
+		  <visible>!String.IsEmpty(ListItem.Thumb)</visible>
 		  <include condition="$PARAM[type0]">Fade_IconOverlayButton</include>
 		  <include condition="!Skin.String(MenuDesign) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7) | Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6)">Slide_MenuDesign_Home_Icons</include>
 		  <include condition="Skin.String(MenuDesign,4) + $PARAM[homeicons]">Slide_MenuDesign2_Home_Icons</include>
@@ -685,7 +685,7 @@
 			<include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
 			<aspectratio align="center">keep</aspectratio>
 			<texture colordiffuse="$PARAM[color]">special://home/addons/script.featherence.service/resources/icons/Lock.png</texture>
-			<visible>!IsEmpty(ListItem.Property(pwd)) + IsEmpty(Window(home).Property(PassProtect))</visible>
+			<visible>!String.IsEmpty(ListItem.Property(pwd)) + String.IsEmpty(Window(home).Property(PassProtect))</visible>
 		  </control>
 		  
 		  <control type="image" description="pwd_unlock">
@@ -693,7 +693,7 @@
 			<include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
 			<aspectratio align="center">keep</aspectratio>
 			<texture colordiffuse="$PARAM[color]">special://home/addons/script.featherence.service/resources/icons/Unlock.png</texture>
-			<visible>!IsEmpty(ListItem.Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))</visible>
+			<visible>!String.IsEmpty(ListItem.Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect))</visible>
 		  </control>
 		</control>
 		
@@ -709,7 +709,7 @@
 	<param name="condition" default="true"/>
 	<definition>
 		<control type="rss" id="1721" description="(RSS) אמצע">
-			<animation condition="!StringCompare(System.Language,Hebrew) + !Player.HasMedia" effect="slide" start="0,0" end="-350,0" delay="0" time="700" reversible="true">Conditional</animation>
+			<animation condition="!String.IsEqual(System.Language,Hebrew) + !Player.HasMedia" effect="slide" start="0,0" end="-350,0" delay="0" time="700" reversible="true">Conditional</animation>
 			<aligny>top</aligny>
 			<textcolor>$VAR[TopInformationFontColor]</textcolor>
 			<titlecolor>yellow</titlecolor>
@@ -723,7 +723,7 @@
 			<visible>System.GetBool(lookandfeel.enablerssfeeds) + [ [!Skin.String(RSSIdleTime) | Skin.String(RSSIdleTime,0)] | Skin.String(RSSIdleTime,3) + System.IdleTime(3) | Skin.String(RSSIdleTime,5) + System.IdleTime(5) | Skin.String(RSSIdleTime,7) + System.IdleTime(7) | Skin.String(RSSIdleTime,10) + System.IdleTime(10) | Skin.String(RSSIdleTime,15) + System.IdleTime(15) | Skin.String(RSSIdleTime,20) + System.IdleTime(20) | Skin.String(RSSIdleTime,25) + System.IdleTime(25) | Window.IsVisible(Home.xml)]</visible>
 			<visible>Window.IsVisible(Home.xml) + !Skin.HasSetting(RSSVisibility) | Skin.HasSetting(RSSVisibility)</visible>
 			<visible>!Player.HasMedia + !Skin.HasSetting(RSSOnMedia) | Skin.HasSetting(RSSOnMedia)</visible>
-			<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+			<visible>!Window.IsVisible(DialogNotification.xml)</visible>
 			<visible>$PARAM[condition]</visible>
 			<visible>!Skin.HasSetting(Admin)</visible>
 		</control>
@@ -732,16 +732,16 @@
   
   <include name="Rating_">
     <control type="group" description="דירוג">
-	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="60,-38" start="100,100" end="80,80" time="0">Conditional</animation>
-	  <!--<animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
-	  <animation condition="StringCompare(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
+	  <animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="60,-38" start="100,100" end="80,80" time="0">Conditional</animation>
+	  <!--<animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
+	  <animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
 	  <height>312</height>
 	  <posx>55</posx>
 	  <posy>37</posy>
 	  <width>135</width>	  
 	  <visible></visible>
-	  <visible>!IsEmpty(ListItem.Rating) + !Skin.HasSetting(Show_Rating)</visible>
-	  <visible>StringCompare(Container.Viewmode,$LOCALIZE[31013]) | StringCompare(Container.Viewmode,$LOCALIZE[31014]) | StringCompare(Container.Viewmode,$LOCALIZE[31015])</visible>
+	  <visible>!String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(Show_Rating)</visible>
+	  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31015])</visible>
 	  <control type="image" description="">
 		<animation condition="true" effect="fade" start="70" end="70" time="0">Conditional</animation>
 		<height>40</height>
@@ -755,26 +755,26 @@
 		  <height>30</height>
 		  <aspectratio align="center">keep</aspectratio>
 		  <texture background="true">$VAR[TopVideoInformation3]</texture>
-		  <visible>!IsEmpty(ListItem.Rating)</visible>
+		  <visible>!String.IsEmpty(ListItem.Rating)</visible>
 	  </control>
 	</control>
   </include>
   
   <include name="WindowsBusy">
    <control type="group">
-	 <animation condition="StringCompare(Window(home).Property(TEMP),WindowsBusyOpen)" effect="fade" start="0" end="100" time="0" reversible="false">Conditional</animation>
-	 <animation condition="StringCompare(Window(home).Property(TEMP),WindowsBusyClose)" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
-	 <animation type="WindowOpen" reversible="false" condition="!Window.IsVisible(Custom1000.xml) + !SubString(Window(home).Property(TEMP),WindowsBusy)">
+	 <animation condition="String.IsEqual(Window(home).Property(TEMP),WindowsBusyOpen)" effect="fade" start="0" end="100" time="0" reversible="false">Conditional</animation>
+	 <animation condition="String.IsEqual(Window(home).Property(TEMP),WindowsBusyClose)" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
+	 <animation type="WindowOpen" reversible="false" condition="!Window.IsVisible(Custom1000.xml) + !String.Contains(Window(home).Property(TEMP),WindowsBusy)">
 	   <effect type="fade" start="100" end="0" time="0" />
 	 </animation>
-     <animation type="WindowClose" reversible="false" condition="!Window.IsVisible(Custom1000.xml) + !SubString(Window(home).Property(TEMP),WindowsBusy)">
+     <animation type="WindowClose" reversible="false" condition="!Window.IsVisible(Custom1000.xml) + !String.Contains(Window(home).Property(TEMP),WindowsBusy)">
 	   <effect type="fade" start="0" end="100" time="0" />
 	 </animation>
 	 
 	 
 	 
 	 <control type="image" description="רקע מעבר">
-	   <animation condition="StringCompare(Window(home).Property(TEMP),WindowsBusyClose)" effect="fade" start="0" end="40" time="0" reversible="false">Conditional</animation>
+	   <animation condition="String.IsEqual(Window(home).Property(TEMP),WindowsBusyClose)" effect="fade" start="0" end="40" time="0" reversible="false">Conditional</animation>
 	   <height>1080</height>
 	   <width>1920</width>
 	   <texture>$INFO[Skin.String(TransitionBackground)]</texture>
@@ -839,9 +839,9 @@
 	
   <include name="SideMenu2">
     <control type="group" description="Side menu 9010 group">
-	  <animation condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="400,0" delay="0" time="700" reversible="true">Conditional</animation>
-	  <animation condition="!StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-400,0" delay="0" time="700" reversible="true">Conditional</animation>
-	  <include condition="StringCompare(System.Language,Hebrew)">Control_Pos48</include>
+	  <animation condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="400,0" delay="0" time="700" reversible="true">Conditional</animation>
+	  <animation condition="!String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-400,0" delay="0" time="700" reversible="true">Conditional</animation>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos48</include>
       <height>525</height>
 	  <posx>1880</posx>
 	  <posy>340</posy>	  
@@ -940,12 +940,12 @@
   
   <include name="MenuDesign4_Icon">
 	<include description="משולשים/משושים" condition="Skin.String(MenuDesign,4) + [Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)] + !Skin.HasSetting(BigHomeIcons)">ImageC1</include>
-	<include condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew) + !Skin.HasSetting(BigHomeIcons)">ImageR1</include>
-	<include condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew) + !Skin.HasSetting(BigHomeIcons)">ImageL1</include>
+	<include condition="Skin.String(MenuDesign,4) + String.IsEqual(System.Language,Hebrew) + !Skin.HasSetting(BigHomeIcons)">ImageR1</include>
+	<include condition="Skin.String(MenuDesign,4) + !String.IsEqual(System.Language,Hebrew) + !Skin.HasSetting(BigHomeIcons)">ImageL1</include>
 	
 	<include description="משולשים/משושים" condition="Skin.String(MenuDesign,4) + [Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)] + Skin.HasSetting(BigHomeIcons)">ImageC2</include>
-	<include condition="Skin.String(MenuDesign,4) + StringCompare(System.Language,Hebrew) + Skin.HasSetting(BigHomeIcons)">ImageR2</include>
-	<include condition="Skin.String(MenuDesign,4) + !StringCompare(System.Language,Hebrew) + Skin.HasSetting(BigHomeIcons)">ImageL2</include>
+	<include condition="Skin.String(MenuDesign,4) + String.IsEqual(System.Language,Hebrew) + Skin.HasSetting(BigHomeIcons)">ImageR2</include>
+	<include condition="Skin.String(MenuDesign,4) + !String.IsEqual(System.Language,Hebrew) + Skin.HasSetting(BigHomeIcons)">ImageL2</include>
   </include>
   <include name="Control_Pos1" description="50/55/58">
 	<posx>0</posx>

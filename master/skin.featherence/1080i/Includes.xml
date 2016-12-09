@@ -127,7 +127,7 @@
 	<control type="group" id="7016" description="">
 	  <height>45</height>
 	  <posy>-6</posy>
-	  <animation condition="Skin.HasSetting(TopInformationSize)" effect="zoom" center="0,3" start="100,122" end="100,122" time="0" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(TopInformationSize) | String.IsEqual(Container.Viewmode,$LOCALIZE[31011])" effect="zoom" center="0,3" start="100,122" end="100,122" time="0" reversible="false">Conditional</animation>
 	  <animation condition="!Window.IsVisible(CustomHomeCustomizer.xml) + [System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)]" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
       <control type="image" description="מסגרת">
 		<include>Fade_TopInformationOverlay</include>
@@ -152,11 +152,11 @@
 			<posx>10</posx>
 			<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1124)</visible>
 			<width>600</width>
-			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1300,0">Conditional</animation>
+			<animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="1300,0">Conditional</animation>
 			<control type="label" id="1121" description="שמאל1 (תיקייה)">
 			  <aligny>top</aligny>
-			  <include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
-			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
+			  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR2</include>
+			  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL2</include>
 			  <haspath>false</haspath>
 			  <height>20</height>
 			  <label>$VAR[TopInformation2]</label>
@@ -166,14 +166,14 @@
 			</control>
 			<control type="label" id="1122" description="שמאל2 (ספרייה)">
 			  <aligny>top</aligny>
-			  <include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
-			  <include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
+			  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR2</include>
+			  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL2</include>
 			  <haspath>true</haspath>
 			  <height>20</height>
 			  <label>$VAR[TopInformation2.1]</label>
 			  <textcolor>$VAR[TopInformationFontColor]</textcolor>
-			  <visible>!IsEmpty(Control.GetLabel(1122))</visible>
-			  <visible>StringCompare(ListItem.Label,..) | StringCompare(ListItem.Label,עמוד)</visible>
+			  <visible>!String.IsEmpty(Control.GetLabel(1122))</visible>
+			  <visible>String.IsEqual(ListItem.Label,..) | String.IsEqual(ListItem.Label,עמוד)</visible>
 			</control>
 		  </control>
 		  <control type="group" description="(includes) שמאל">
@@ -181,22 +181,22 @@
 			<visible>!Skin.HasSetting(Admin)</visible>
 		  </control>
 		  <control type="label" id="1124" description="זמן לסיום(HasMedia) שמאל2">
-		    <animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="1910,0">Conditional</animation>
+		    <animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="1910,0">Conditional</animation>
 			<aligny>top</aligny>
-			<include condition="StringCompare(System.Language,Hebrew)">LabelR2</include>
-			<include condition="!StringCompare(System.Language,Hebrew)">LabelL2</include>
+			<include condition="String.IsEqual(System.Language,Hebrew)">LabelR2</include>
+			<include condition="!String.IsEqual(System.Language,Hebrew)">LabelL2</include>
 			<posx>10</posx>
 			<label>$VAR[TopInformation2.2]</label>
 			<textcolor>$VAR[TopInformationFontColor]</textcolor>
 			<visible>!Skin.HasSetting(Admin) + Player.HasMedia</visible>
-			<visible>!SubString(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
+			<visible>!String.Contains(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
 			<visible>!Window.IsVisible(MyPVRChannels.xml)</visible>
-			<visible>!SubString(Container.FolderPath,special://userdata/library/videos/) + !SubString(Container.FolderPath,/var/media/) + !SubString(Container.FolderPath,special://home/external/)</visible>
-			<visible>!SubString(MusicPlayer.Title,featherence)</visible>
+			<visible>!String.Contains(Container.FolderPath,special://userdata/library/videos/) + !String.Contains(Container.FolderPath,/var/media/) + !String.Contains(Container.FolderPath,special://home/external/)</visible>
+			<visible>!String.Contains(MusicPlayer.Title,featherence)</visible>
 			<width>360</width>
 		  </control>
 		  <control type="group">
-			  <visible>!Window.IsVisible(DialogExtendedProgressBar.xml) + !Window.IsVisible(DialogKaiToast.xml)</visible>
+			  <visible>!Window.IsVisible(DialogExtendedProgressBar.xml) + !Window.IsVisible(DialogNotification.xml)</visible>
 			  <control type="label" description="() אמצע">
 				<aligny>top</aligny>
 				<textcolor>$VAR[TopInformationFontColor]</textcolor>
@@ -209,7 +209,7 @@
 				<!--<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127) + [!Player.HasMedia | Window.IsVisible(MyPics.xml) | Window.IsVisible(SlideShow.xml) | Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(313) | Control.HasFocus(314) | Control.HasFocus(315)]</visible>-->
 				<width>720</width>
 				<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127)</visible>
-				<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+				<visible>!Window.IsVisible(DialogNotification.xml)</visible>
 				<visible>!Control.IsVisible(1721)</visible>
 			  </control>
 			  <control type="label" id="1127" description="(HasMedia) אמצע">
@@ -221,10 +221,10 @@
 				<scroll>true</scroll>
 				<width>715</width>
 				<visible>!Skin.HasSetting(Admin) + Player.HasMedia + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(SlideShow.xml)</visible>
-				<visible>!SubString(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
+				<visible>!String.Contains(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
 				<visible>!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(313) + !Control.HasFocus(314) + !Control.HasFocus(315)</visible>
-				<visible>!SubString(MusicPlayer.Title,featherence)</visible>
-				<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+				<visible>!String.Contains(MusicPlayer.Title,featherence)</visible>
+				<visible>!Window.IsVisible(DialogNotification.xml)</visible>
 				<visible>!Control.IsVisible(1721)</visible>
 			  </control>
 			  <control type="label" description="(Admin) אמצע">
@@ -237,17 +237,17 @@
 				<scroll>true</scroll>
 				<width>720</width>
 				<visible>Skin.HasSetting(Admin)</visible>
-				<visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+				<visible>!Window.IsVisible(DialogNotification.xml)</visible>
 				<visible>!Control.IsVisible(1721)</visible>
 			  </control>
-			  <include name="RSS_1721">
+			  <include content="RSS_1721">
 				<param name="height" value="0" />
 				<param name="posx" value="600" />
 				<param name="posy" value="0" />
 				<param name="width" value="1020" />
 				<param name="condition" value="!Player.HasMedia" />
 			  </include>
-			  <include name="RSS_1721">
+			  <include content="RSS_1721">
 				<param name="height" value="0" />
 				<param name="posx" value="600" />
 				<param name="posy" value="0" />
@@ -261,11 +261,11 @@
 			<visible>true</visible>	
 		  </control>
 		  <control type="label" description="() ימין">
-			<animation description="Slide_he" condition="StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-1900,0">Conditional</animation>
+			<animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-1900,0">Conditional</animation>
 			<aligny>top</aligny>
-			<!--<include condition="Skin.HasSetting(TopInformationSize) + StringCompare(System.Language,Hebrew)">LabelL1</include>-->
-			<include condition="StringCompare(System.Language,Hebrew)">LabelL2</include>
-			<include condition="!StringCompare(System.Language,Hebrew)">LabelR2</include>
+			<!--<include condition="Skin.HasSetting(TopInformationSize) + String.IsEqual(System.Language,Hebrew)">LabelL1</include>-->
+			<include condition="String.IsEqual(System.Language,Hebrew)">LabelL2</include>
+			<include condition="!String.IsEqual(System.Language,Hebrew)">LabelR2</include>
 			<label>$VAR[ShowClock]</label>		
 			<textcolor>$VAR[TopInformationFontColor]</textcolor>
 			<posx>10r</posx>

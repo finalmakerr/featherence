@@ -28,9 +28,9 @@
   <include name="Widget_Home">
     <control type="group" description="">
 		<visible>Container(9000).Row(0) + !Container(9000).Row(1) + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]</visible>
-		<visible>Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | IsEmpty(Container(9000).ListItem(0).Property(pwd)) | [!IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !IsEmpty(Window(home).Property(PassProtect))]</visible>
-		<visible>!Window.IsVisible(Custom1173.xml) | Window.IsVisible(Custom1170.xml) + [StringCompare(Window(home).Property(TEMP),WidgetUnFocusFontColor) | StringCompare(Window(home).Property(TEMP),WidgetFocusFontColor)]</visible>
-		<!--<visible>!Skin.HasSetting(widget) | ![StringCompare(Window(home).Property(Button.ID),90) | StringCompare(Window(home).Property(Button.ID),91)]</visible>-->
+		<visible>Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | [!String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect))]</visible>
+		<visible>!Window.IsVisible(Custom1173.xml) | Window.IsVisible(Custom1170.xml) + [String.IsEqual(Window(home).Property(TEMP),WidgetUnFocusFontColor) | String.IsEqual(Window(home).Property(TEMP),WidgetFocusFontColor)]</visible>
+		<!--<visible>!Skin.HasSetting(widget) | ![String.IsEqual(Window(home).Property(Button.ID),90) | String.IsEqual(Window(home).Property(Button.ID),91)]</visible>-->
 		<control type="group" description="סמן חץ ימינה">
 			<visible>[Control.HasFocus(311) + Container(311).HasNext] | [Control.HasFocus(312) + Container(312).HasNext] | [Control.HasFocus(315) + Container(315).HasNext]</visible>
 			<posx>60r</posx>
@@ -100,15 +100,15 @@
 		</control>
 		
 		<control type="group" id="700" description="Shelf items שורה עליונה בכחול">
-		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(315) + Control.HasFocus(9000)] + StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="-300,0">Conditional</animation>
-		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(315) + Control.HasFocus(9000)] + !StringCompare(System.Language,Hebrew)" effect="slide" start="0,0" end="300,0">Conditional</animation>
+		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(315) + Control.HasFocus(9000)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-300,0">Conditional</animation>
+		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(315) + Control.HasFocus(9000)] + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="300,0">Conditional</animation>
 		  <include description="פנל מדף סרטים שנוספו לאחרונה" condition="!Skin.HasSetting(MoviesShelfWL)">Movies_RA</include>
 		  <include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include> 
 		  <include description="פנל מדף פרקים שנוספו לאחרונה" condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RAIR</include> 
 		  <include condition="Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
 		  <include>MenuDesign_Widget</include>
-		  <onright condition="Control.IsVisible(9009) + !StringCompare(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onright>
-		  <onleft condition="Control.IsVisible(9009) + StringCompare(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onleft>
+		  <onright condition="Control.IsVisible(9009) + !String.IsEqual(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onright>
+		  <onleft condition="Control.IsVisible(9009) + String.IsEqual(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onleft>
 		  <onup condition="Control.IsVisible(9009)">9009</onup>
 		  <onup condition="Control.IsVisible(7011)">7017</onup>
 		  <onup condition="Player.HasAudio + !Control.IsVisible(9009)">ActivateWindow(12901)</onup>
@@ -204,93 +204,93 @@
   
   <include name="Trailer_311_5">
     <control type="button" description="קדימון סרט 0">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(0).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(0).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
 	  <include>Trailer_311_5_</include>
     </control>
 	<control type="button" description="קדימון סרט 1">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(1).Property(Trailer))  | StringCompare(Container(311).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(1).Property(Trailer))  | String.IsEqual(Container(311).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_5_</include>
     </control>
 	<control type="button" description="קדימון סרט 2">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(2).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(2).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_5_</include>
     </control>
 	<control type="button" description="קדימון סרט 3">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(3).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(3).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_5_</include>
     </control>
 	<control type="button" description="קדימון סרט 4">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(4).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(4).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_5_</include>
     </control>
   </include>
   
   <include name="Trailer_311_7">
     <control type="button" description="קדימון סרט 0">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(0).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(0).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
 	  <include>Trailer_311_7_</include>
     </control>
 	<control type="button" description="קדימון סרט 1">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(1).Property(Trailer))  | StringCompare(Container(311).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(1).Property(Trailer))  | String.IsEqual(Container(311).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_7_</include>
     </control>
 	<control type="button" description="קדימון סרט 2">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(2).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(2).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_7_</include>
     </control>
 	<control type="button" description="קדימון סרט 3">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(3).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(3).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_7_</include>
     </control>
 	<control type="button" description="קדימון סרט 4">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(4).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(4).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_7_</include>
     </control>
 	<control type="button" description="קדימון סרט 5">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(5).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(5).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(5).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(5).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_7_</include>
     </control>
 	<control type="button" description="קדימון סרט 6">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(6).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(6).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(6).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(6).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_7_</include>
     </control>
   </include>
   
   <include name="Trailer_311_9">
     <control type="button" description="קדימון סרט 0">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(0).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(0).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
 	  <include>Trailer_311_9_</include>
     </control>
 	<control type="button" description="קדימון סרט 1">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(1).Property(Trailer))  | StringCompare(Container(311).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(1).Property(Trailer))  | String.IsEqual(Container(311).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_9_</include>
     </control>
 	<control type="button" description="קדימון סרט 2">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(2).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(2).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_9_</include>
     </control>
 	<control type="button" description="קדימון סרט 3">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(3).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(3).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_9_</include>
     </control>
 	<control type="button" description="קדימון סרט 4">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(4).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(4).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_9_</include>
     </control>
 	<control type="button" description="קדימון סרט 5">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(5).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(5).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(5).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(5).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_9_</include>
     </control>
 	<control type="button" description="קדימון סרט 6">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(6).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(6).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(6).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(6).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_9_</include>
     </control>
 	<control type="button" description="קדימון סרט 7">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(7).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(7).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(7).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(7).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_9_</include>
     </control>
 	<control type="button" description="קדימון סרט 8">
-	  <animation condition="IsEmpty(Container(311).ListItemPosition(8).Property(Trailer)) | StringCompare(Container(311).ListItemPosition(8).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <animation condition="String.IsEmpty(Container(311).ListItemPosition(8).Property(Trailer)) | String.IsEqual(Container(311).ListItemPosition(8).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <include>Trailer_311_9_</include>
     </control>
   </include>
@@ -392,7 +392,7 @@
 		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
 		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
             <texture>buttons/effects/gardient0.png</texture>
-		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | IsEmpty(ListItem.Thumb)</visible>
+		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
           </control>
 		  <control type="image" description="שפוע Bevel">
             <posx>50</posx>
@@ -428,10 +428,10 @@
 		    <posx>25</posx>
 		    <posy>120</posy>
 		    <texture>misc/help/off.png</texture>
-		    <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
+		    <visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 			<visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
-			<visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			<visible>![StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
+			<visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			<visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
 			<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		    <width>332</width>
           </control>
@@ -442,7 +442,7 @@
 		    <posx>240</posx>   <!--למעלה/למטה-->
 		    <posy>390</posy>   <!--שמאלה/ימינה-->
 		    <texture>$VAR[TopVideoInformation3]</texture>
-		    <visible>!IsEmpty(Control.GetLabel(1103))</visible>
+		    <visible>!String.IsEmpty(Control.GetLabel(1103))</visible>
 		    <visible>false</visible>
 		    <width>170</width>
 		  </control>
@@ -454,7 +454,7 @@
 		    <posx>57</posx>
 		    <posy>-2</posy>
 		    <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-		    <visible>!IsEmpty(ListItem.Property(year))</visible>
+		    <visible>!String.IsEmpty(ListItem.Property(year))</visible>
 		    <visible>false</visible>
 		    <width>265</width>
 		  </control>
@@ -474,7 +474,7 @@
 		      <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
 		      <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-			  <visible>!Skin.HasSetting(WidgetLabelBackground) + !IsEmpty(ListItem.Label)</visible>
+			  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
 			</control>
 			<control type="label" description="עונה ופרק">
 			  <align>center</align>
@@ -484,7 +484,7 @@
 			  <height>30</height>
 			  <width>254</width>
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-			  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
+			  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
 			<control type="label" description="כותרת">
 			  <align>center</align>
@@ -496,7 +496,7 @@
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
 			  <width>254</width>
-			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
 			<control type="label" description="כותרת מוגדלת">
@@ -509,7 +509,7 @@
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
 			  <width>254</width>
-			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
 		</control>
@@ -569,7 +569,7 @@
 		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
 		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
             <texture diffuse="buttons/ButtonA0.png">buttons/effects/gardient0.png</texture>
-		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | IsEmpty(ListItem.Thumb)</visible>
+		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
           </control>
 		  <control type="image" description="שפוע Bevel">
             <posx>50</posx>
@@ -605,10 +605,10 @@
 			  <posx>25</posx>
 			  <posy>120</posy>
 			  <texture>misc/help/off.png</texture>
-			  <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
+			  <visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 			  <visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
-			  <visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			  <visible>![StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
+			  <visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			  <visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
 			  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 			  <width>332</width>
           </control>
@@ -619,7 +619,7 @@
 			  <posx>285</posx>
 			  <posy>0</posy>
 			  <texture>osd/buttons/OSDTrailerNF.png</texture>
-			  <visible>!IsEmpty(ListItem.Property(trailer)) + !Skin.HasSetting(trailers)</visible>
+			  <visible>!String.IsEmpty(ListItem.Property(trailer)) + !Skin.HasSetting(trailers)</visible>
 			  <width>70</width>
 			  <visible>false</visible>
 			</control>
@@ -628,7 +628,7 @@
 			  <posx>285</posx>
 			  <posy>0</posy>
 			  <texture>osd/buttons/OSDTrailerFO.png</texture>
-			  <visible>!IsEmpty(ListItem.Property(trailer)) + Skin.HasSetting(trailers)</visible>
+			  <visible>!String.IsEmpty(ListItem.Property(trailer)) + Skin.HasSetting(trailers)</visible>
 			  <width>70</width>
 			</control>
 			<control type="image" description="דירוג">
@@ -638,7 +638,7 @@
 			  <posx>240</posx> <!--למעלה/למטה-->
 			  <posy>390</posy> <!--שמאלה/ימינה-->
 			  <texture>$VAR[TopVideoInformation3]</texture>
-			  <visible>!IsEmpty(Listitem.Property(rating)) + IntegerGreaterThan(Listitem.Property(rating),0) + !IntegerGreaterThan(Listitem.Property(rating),9.9)</visible>
+			  <visible>!String.IsEmpty(Listitem.Property(rating)) + Integer.IsGreater(Listitem.Property(rating),0) + Integer.IsLess(Listitem.Property(rating),9.9)</visible>
 			  <visible>false</visible>
 			  <width>170</width>
 			</control>
@@ -658,7 +658,7 @@
 				  <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
 				  <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 				  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-				  <visible>!Skin.HasSetting(WidgetLabelBackground) + !IsEmpty(ListItem.Label)</visible>
+				  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
 				</control>
 				<control type="label" description="עונה ופרק">
 				  <align>center</align>
@@ -668,7 +668,7 @@
 				  <posx>8</posx>
 				  <width>254</width>
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
-				  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
+				  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
 				<control type="label" description="כותרת">
 				  <align>center</align>
@@ -680,7 +680,7 @@
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
 				  <width>254</width>
-				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
 				<control type="label" description="כותרת מוגדלת">
@@ -693,7 +693,7 @@
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
 				  <width>254</width>
-				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
 			</control>
@@ -704,8 +704,8 @@
 			<width>270</width>
 			<height>330</height>
 			<texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		    <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | IsEmpty(ListItem.Label)]]</visible>
-		    <visible>!IsEmpty(Window(home).Property(WidgetButton.ID_)) | Control.IsVisible(311) | Control.IsVisible(312)</visible>
+		    <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | String.IsEmpty(ListItem.Label)]]</visible>
+		    <visible>!String.IsEmpty(Window(home).Property(WidgetButton.ID_)) | Control.IsVisible(311) | Control.IsVisible(312)</visible>
 		  </control>
 	  </control>
 	</focusedlayout>
@@ -759,7 +759,7 @@
 		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
 		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
             <texture>buttons/effects/gardient0.png</texture>
-		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | IsEmpty(ListItem.Thumb)</visible>
+		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
           </control>
 		  <control type="image" description="שפוע Bevel">
             <posx>10</posx>
@@ -795,11 +795,11 @@
 		    <posx>15</posx>
 		    <posy>120</posy>
 		    <texture>misc/help/off.png</texture>
-		    <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
+		    <visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 			<visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
-			<visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			<visible>![StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
-			<visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			<visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			<visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
+			<visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
 			<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		    <width>250</width>
           </control>
@@ -810,7 +810,7 @@
 		    <posx>240</posx>   <!--למעלה/למטה-->
 		    <posy>390</posy>   <!--שמאלה/ימינה-->
 		    <texture>$VAR[TopVideoInformation3]</texture>
-		    <visible>!IsEmpty(Control.GetLabel(1103))</visible>
+		    <visible>!String.IsEmpty(Control.GetLabel(1103))</visible>
 		    <visible>false</visible>
 		    <width>170</width>
 		  </control>
@@ -822,7 +822,7 @@
 		    <posx>57</posx>
 		    <posy>-2</posy>
 		    <textcolor>white2</textcolor>
-		    <visible>!IsEmpty(ListItem.Property(year))</visible>
+		    <visible>!String.IsEmpty(ListItem.Property(year))</visible>
 		    <visible>false</visible>
 		    <width>265</width>
 		  </control>
@@ -842,7 +842,7 @@
 		      <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
 		      <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-			  <visible>!Skin.HasSetting(WidgetLabelBackground) + !IsEmpty(ListItem.Label)</visible>
+			  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
 			</control>
 			<control type="label" description="עונה ופרק">
 			  <align>center</align>
@@ -852,7 +852,7 @@
 			  <posx>8</posx>
 			  <width>234</width>
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-			  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
+			  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
 			<control type="label" description="כותרת">
 			  <align>center</align>
@@ -864,7 +864,7 @@
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
 			  <width>234</width>
-			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
 			<control type="label" description="כותרת מוגדלת">
@@ -877,7 +877,7 @@
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
 			  <width>234</width>
-			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
 		</control>
@@ -937,7 +937,7 @@
 		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
 		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
             <texture diffuse="buttons/ButtonA0.png">buttons/effects/gardient0.png</texture>
-		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | IsEmpty(ListItem.Thumb)</visible>
+		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
           </control>
 		  <control type="image" description="שפוע Bevel">
             <posx>10</posx>
@@ -973,10 +973,10 @@
 			  <posx>15</posx>
 			  <posy>120</posy>
 			  <texture>misc/help/off.png</texture>
-			  <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
+			  <visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 			  <visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
-			  <visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			  <visible>![StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
+			  <visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			  <visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
 			  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 			  <width>250</width>
           </control>
@@ -987,7 +987,7 @@
 			  <posx>285</posx>
 			  <posy>0</posy>
 			  <texture>osd/buttons/OSDTrailerNF.png</texture>
-			  <visible>!IsEmpty(ListItem.Property(trailer)) + !Skin.HasSetting(trailers)</visible>
+			  <visible>!String.IsEmpty(ListItem.Property(trailer)) + !Skin.HasSetting(trailers)</visible>
 			  <width>70</width>
 			  <visible>false</visible>
 			</control>
@@ -996,7 +996,7 @@
 			  <posx>285</posx>
 			  <posy>0</posy>
 			  <texture>osd/buttons/OSDTrailerFO.png</texture>
-			  <visible>!IsEmpty(ListItem.Property(trailer)) + Skin.HasSetting(trailers)</visible>
+			  <visible>!String.IsEmpty(ListItem.Property(trailer)) + Skin.HasSetting(trailers)</visible>
 			  <width>70</width>
 			</control>
 			<control type="image" description="דירוג">
@@ -1006,7 +1006,7 @@
 			  <posx>240</posx> <!--למעלה/למטה-->
 			  <posy>390</posy> <!--שמאלה/ימינה-->
 			  <texture>$VAR[TopVideoInformation3]</texture>
-			  <visible>!IsEmpty(Listitem.Property(rating)) + IntegerGreaterThan(Listitem.Property(rating),0) + !IntegerGreaterThan(Listitem.Property(rating),9.9)</visible>
+			  <visible>!String.IsEmpty(Listitem.Property(rating)) + Integer.IsGreater(Listitem.Property(rating),0) + Integer.IsLess(Listitem.Property(rating),9.9)</visible>
 			  <visible>false</visible>
 			  <width>170</width>
 			</control>
@@ -1026,7 +1026,7 @@
 				  <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
 				  <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 				  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-				  <visible>!Skin.HasSetting(WidgetLabelBackground) + !IsEmpty(ListItem.Label)</visible>
+				  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
 				</control>
 				<control type="label" description="עונה ופרק">
 				  <align>center</align>
@@ -1037,7 +1037,7 @@
 				  <posx>8</posx>
 				  <width>234</width>
 				  <textcolor>white2</textcolor>
-				  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
+				  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
 				<control type="label" description="כותרת">
 				  <align>center</align>
@@ -1049,7 +1049,7 @@
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
 				  <width>234</width>
-				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
 				<control type="label" description="כותרת מוגדלת">
@@ -1062,7 +1062,7 @@
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
 				  <width>234</width>
-				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
 			</control>
@@ -1073,8 +1073,8 @@
 			<width>250</width>
 			<height>330</height>
 			<texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		    <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | IsEmpty(ListItem.Label)]]</visible>
-		    <visible>!IsEmpty(Window(home).Property(WidgetButton.ID_)) | Control.IsVisible(311) | Control.IsVisible(312)</visible>
+		    <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | String.IsEmpty(ListItem.Label)]]</visible>
+		    <visible>!String.IsEmpty(Window(home).Property(WidgetButton.ID_)) | Control.IsVisible(311) | Control.IsVisible(312)</visible>
 		  </control>
 	  </control>
 	</focusedlayout>
@@ -1128,7 +1128,7 @@
 		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
 		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
             <texture>buttons/effects/gardient0.png</texture>
-		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | IsEmpty(ListItem.Thumb)</visible>
+		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
           </control>
 		  <control type="image" description="שפוע Bevel">
             <posx>10</posx>
@@ -1164,10 +1164,10 @@
 		    <posx>5</posx>
 		    <posy>120</posy>
 		    <texture>misc/help/off.png</texture>
-		    <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
+		    <visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 			<visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
-			<visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			<visible>![StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
+			<visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			<visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
 			<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		    <width>250</width>
           </control>
@@ -1178,7 +1178,7 @@
 		    <posx>240</posx>   <!--למעלה/למטה-->
 		    <posy>390</posy>   <!--שמאלה/ימינה-->
 		    <texture>$VAR[TopVideoInformation3]</texture>
-		    <visible>!IsEmpty(Control.GetLabel(1103))</visible>
+		    <visible>!String.IsEmpty(Control.GetLabel(1103))</visible>
 		    <visible>false</visible>
 		    <width>170</width>
 		  </control>
@@ -1190,7 +1190,7 @@
 		    <posx>57</posx>
 		    <posy>-2</posy>
 		    <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-		    <visible>!IsEmpty(ListItem.Property(year))</visible>
+		    <visible>!String.IsEmpty(ListItem.Property(year))</visible>
 		    <visible>false</visible>
 		    <width>265</width>
 		  </control>
@@ -1210,7 +1210,7 @@
 		      <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
 		      <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-			  <visible>!Skin.HasSetting(WidgetLabelBackground) + !IsEmpty(ListItem.Label)</visible>
+			  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
 			</control>
 			<control type="label" description="עונה ופרק">
 			  <align>center</align>
@@ -1220,7 +1220,7 @@
 			  <posx>8</posx>
 			  <width>204</width>
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-			  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
+			  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
 			<control type="label" description="כותרת">
 			  <align>center</align>
@@ -1232,7 +1232,7 @@
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
 			  <width>204</width>
-			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
 			<control type="label" description="כותרת מוגדלת">
@@ -1245,7 +1245,7 @@
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
 			  <width>204</width>
-			  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
 		</control>
@@ -1305,7 +1305,7 @@
 		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
 		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
             <texture diffuse="buttons/ButtonA0.png">buttons/effects/gardient0.png</texture>
-		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | IsEmpty(ListItem.Thumb)</visible>
+		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
           </control>
 		  <control type="image" description="שפוע Bevel">
             <posx>10</posx>
@@ -1341,10 +1341,10 @@
 			  <posx>5</posx>
 			  <posy>120</posy>
 			  <texture>misc/help/off.png</texture>
-			  <visible>IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + IsEmpty(Container(315).ListItem(0).Property(off))</visible>
+			  <visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 			  <visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
-			  <visible>![StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			  <visible>![StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
+			  <visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+			  <visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
 			  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 			  <width>250</width>
           </control>
@@ -1355,7 +1355,7 @@
 			  <posx>285</posx>
 			  <posy>0</posy>
 			  <texture>osd/buttons/OSDTrailerNF.png</texture>
-			  <visible>!IsEmpty(ListItem.Property(trailer)) + !Skin.HasSetting(trailers)</visible>
+			  <visible>!String.IsEmpty(ListItem.Property(trailer)) + !Skin.HasSetting(trailers)</visible>
 			  <width>70</width>
 			  <visible>false</visible>
 			</control>
@@ -1364,7 +1364,7 @@
 			  <posx>285</posx>
 			  <posy>0</posy>
 			  <texture>osd/buttons/OSDTrailerFO.png</texture>
-			  <visible>!IsEmpty(ListItem.Property(trailer)) + Skin.HasSetting(trailers)</visible>
+			  <visible>!String.IsEmpty(ListItem.Property(trailer)) + Skin.HasSetting(trailers)</visible>
 			  <width>70</width>
 			</control>
 			<control type="image" description="דירוג">
@@ -1374,7 +1374,7 @@
 			  <posx>240</posx> <!--למעלה/למטה-->
 			  <posy>390</posy> <!--שמאלה/ימינה-->
 			  <texture>$VAR[TopVideoInformation3]</texture>
-			  <visible>!IsEmpty(Listitem.Property(rating)) + IntegerGreaterThan(Listitem.Property(rating),0) + !IntegerGreaterThan(Listitem.Property(rating),9.9)</visible>
+			  <visible>!String.IsEmpty(Listitem.Property(rating)) + Integer.IsGreater(Listitem.Property(rating),0) + Integer.IsLess(Listitem.Property(rating),9.9)</visible>
 			  <visible>false</visible>
 			  <width>170</width>
 			</control>
@@ -1394,7 +1394,7 @@
 				  <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
 				  <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
 				  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-				  <visible>!Skin.HasSetting(WidgetLabelBackground) + !IsEmpty(ListItem.Label)</visible>
+				  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
 				</control>
 				<control type="label" description="עונה ופרק">
 				  <align>center</align>
@@ -1404,7 +1404,7 @@
 				  <posx>8</posx>
 				  <width>204</width>
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
-				  <visible>!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
+				  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
 				<control type="label" description="כותרת">
 				  <align>center</align>
@@ -1416,7 +1416,7 @@
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
 				  <width>204</width>
-				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
 				<control type="label" description="כותרת מוגדלת">
@@ -1429,7 +1429,7 @@
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
 				  <width>204</width>
-				  <visible>![!IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
 			</control>
@@ -1440,16 +1440,16 @@
 			<width>220</width>
 			<height>330</height>
 			<texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		    <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | IsEmpty(ListItem.Label)]]</visible>
-		    <visible>!IsEmpty(Window(home).Property(WidgetButton.ID_)) | Control.IsVisible(311) | Control.IsVisible(312)</visible>
+		    <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | String.IsEmpty(ListItem.Label)]]</visible>
+		    <visible>!String.IsEmpty(Window(home).Property(WidgetButton.ID_)) | Control.IsVisible(311) | Control.IsVisible(312)</visible>
 		  </control>
 	  </control>
 	</focusedlayout>
   </include>
   
   <variable name="WidgetLabel">
-    <value condition="!IsEmpty(ListItem.Property(title)) + Control.IsVisible(311)">$INFO[ListItem.Property(title)]</value>
-    <value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
+    <value condition="!String.IsEmpty(ListItem.Property(title)) + Control.IsVisible(311)">$INFO[ListItem.Property(title)]</value>
+    <value condition="!String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
 	
   </variable>
   

@@ -3,44 +3,44 @@
   <include name="CenterMenuContent_1175" description="ניהול תפריט כפתורים">
       <item id="700" description="הפעל/נטרל">
 		<label>$LOCALIZE[24021]/$LOCALIZE[24022]</label>
-		<onclick description="1175" condition="!IsEmpty(Window(home).Property(Button.ID_)) + IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">Skin.ToggleSetting(off$INFO[Window(home).Property(Button.ID_)])</onclick>
-		<onclick description="1175" condition="!IsEmpty(Window(home).Property(Button.ID_)) + IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">Skin.ToggleSetting(off$INFO[Window(home).Property(Button.ID)]_90)</onclick>
-		<onclick description="1175" condition="!IsEmpty(Window(home).Property(Button.ID_)) + !IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">Skin.ToggleSetting(off$INFO[Window(home).Property(WidgetButton.ID_)])</onclick>
-		<onclick description="1138" condition="!IsEmpty(Window(home).Property(Button.ID_)) + !Window.IsVisible(Custom1139.xml) + Window.IsVisible(Custom1138.xml)">Skin.ToggleSetting(sub$INFO[Window(home).Property(Button.ID_)])</onclick>
-		<onclick description="1139" condition="!IsEmpty(Window(home).Property(Button.ID_)) + !IsEmpty(Window(home).Property(SubButton.ID_)) + Window.IsVisible(Custom1139.xml)">Skin.ToggleSetting(off$INFO[Window(home).Property(SubButton.ID_)])</onclick>
+		<onclick description="1175" condition="!String.IsEmpty(Window(home).Property(Button.ID_)) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">Skin.ToggleSetting(off$INFO[Window(home).Property(Button.ID_)])</onclick>
+		<onclick description="1175" condition="!String.IsEmpty(Window(home).Property(Button.ID_)) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">Skin.ToggleSetting(off$INFO[Window(home).Property(Button.ID)]_90)</onclick>
+		<onclick description="1175" condition="!String.IsEmpty(Window(home).Property(Button.ID_)) + !String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">Skin.ToggleSetting(off$INFO[Window(home).Property(WidgetButton.ID_)])</onclick>
+		<onclick description="1138" condition="!String.IsEmpty(Window(home).Property(Button.ID_)) + !Window.IsVisible(Custom1139.xml) + Window.IsVisible(Custom1138.xml)">Skin.ToggleSetting(sub$INFO[Window(home).Property(Button.ID_)])</onclick>
+		<onclick description="1139" condition="!String.IsEmpty(Window(home).Property(Button.ID_)) + !String.IsEmpty(Window(home).Property(SubButton.ID_)) + Window.IsVisible(Custom1139.xml)">Skin.ToggleSetting(off$INFO[Window(home).Property(SubButton.ID_)])</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/bolt.png</thumb>
-		<visible>!Window.IsVisible(Custom1139.xml) + [IntegerGreaterThan(Window(home).Property(Button.ID),80) | !IntegerGreaterThan(Window(home).Property(Button.ID),17)] | Window.IsVisible(Custom1139.xml) | !IsEmpty(Window(home).Property(WidgetButton.ID_)) | Window.IsVisible(Custom1138.xml)</visible>
+		<visible>!Window.IsVisible(Custom1139.xml) + [Integer.IsGreater(Window(home).Property(Button.ID),80) | Integer.IsLess(Window(home).Property(Button.ID),17)] | Window.IsVisible(Custom1139.xml) | !String.IsEmpty(Window(home).Property(WidgetButton.ID_)) | Window.IsVisible(Custom1138.xml)</visible>
 	  </item>
 	  <item id="701" description="שינוי שם">
 		<label>118</label>
-		<!--<onclick condition="!IsEmpty(Window(home).Property(Button.ID_)) + Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1139.xml)">Skin.SetString(label$INFO[Window(home).Property(Button.ID_)])</onclick>-->
-		<onclick description="1175" condition="Window.IsVisible(Custom1175.xml) + IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=214&amp;value=0)</onclick>
+		<!--<onclick condition="!String.IsEmpty(Window(home).Property(Button.ID_)) + Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1139.xml)">Skin.SetString(label$INFO[Window(home).Property(Button.ID_)])</onclick>-->
+		<onclick description="1175" condition="Window.IsVisible(Custom1175.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=214&amp;value=0)</onclick>
 		<onclick description="1139" condition="Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=214&amp;value=1)</onclick>
-		<onclick description="Widget" condition="Window.IsVisible(Custom1175.xml) + !IsEmpty(Window(home).Property(WidgetButton.ID_))">RunScript(script.featherence.service,,?mode=214&amp;value=2)</onclick>
+		<onclick description="Widget" condition="Window.IsVisible(Custom1175.xml) + !String.IsEmpty(Window(home).Property(WidgetButton.ID_))">RunScript(script.featherence.service,,?mode=214&amp;value=2)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/pencil.png</thumb>
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) | Window.IsVisible(Custom1139.xml)</visible>
-		<visible>![StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)]</visible>
+		<visible>![String.IsEqual(Window(home).Property(Button.ID_),20) | String.IsEqual(Window(home).Property(Button.ID_),21)]</visible>
 	  </item>
 	  <item id="702" description="בחירת סמל">
 		<label>19284</label>
-		<onclick condition="!IsEmpty(Window(home).Property(Button.ID))">SetProperty(TEMP,icon,home)</onclick>
-		<onclick description="1175" condition="!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml) + IsEmpty(Window(home).Property(WidgetButton.ID_))">RunScript(script.featherence.service,,?mode=233&amp;value=2)</onclick>
-		<onclick description="Widget" condition="!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml) + !IsEmpty(Window(home).Property(WidgetButton.ID_))">RunScript(script.featherence.service,,?mode=233&amp;value=32)</onclick>
-		<onclick description="1139" condition="!IsEmpty(Window(home).Property(SubButton.ID_)) + Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=233&amp;value=02)</onclick>
+		<onclick condition="!String.IsEmpty(Window(home).Property(Button.ID))">SetProperty(TEMP,icon,home)</onclick>
+		<onclick description="1175" condition="!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_))">RunScript(script.featherence.service,,?mode=233&amp;value=2)</onclick>
+		<onclick description="Widget" condition="!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml) + !String.IsEmpty(Window(home).Property(WidgetButton.ID_))">RunScript(script.featherence.service,,?mode=233&amp;value=32)</onclick>
+		<onclick description="1139" condition="!String.IsEmpty(Window(home).Property(SubButton.ID_)) + Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=233&amp;value=02)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/avg.png</thumb>
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) | Window.IsVisible(Custom1139.xml)</visible>
-		<visible>!SubString(Window(home).Property(SubButton.ID),_90)</visible>
+		<visible>!String.Contains(Window(home).Property(SubButton.ID),_90)</visible>
 	  </item>
 	  <item id="703" description="פעולת כפתור">
 		<label>$ADDON[script.featherence.service 32448]</label>
 		<onclick>RunScript(script.featherence.service,,?mode=232&amp;value=)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
-		<visible>[!Window.IsVisible(Custom1138.xml) + [IntegerGreaterThan(Window(home).Property(Button.ID),99) | Skin.HasSetting(DefaultActionButtons) + [IntegerGreaterThan(Window(home).Property(Button.ID),89) | !IntegerGreaterThan(Window(home).Property(Button.ID),17)] ] + !IntegerGreaterThan(Window(home).Property(Button.ID),200)] | [Window.IsVisible(Custom1139.xml) + !SubString(Window(home).Property(SubButton.ID_),_90)] | !IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
-		<visible>![StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)]</visible>
+		<visible>[!Window.IsVisible(Custom1138.xml) + [Integer.IsGreater(Window(home).Property(Button.ID),99) | Skin.HasSetting(DefaultActionButtons) + [Integer.IsGreater(Window(home).Property(Button.ID),89) | Integer.IsLess(Window(home).Property(Button.ID),17)] ] + Integer.IsLess(Window(home).Property(Button.ID),200)] | [Window.IsVisible(Custom1139.xml) + !String.Contains(Window(home).Property(SubButton.ID_),_90)] | !String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		<visible>![String.IsEqual(Window(home).Property(Button.ID_),20) | String.IsEqual(Window(home).Property(Button.ID_),21)]</visible>
 	  </item>
 	  <item id="704" description="הזזת פריט">
 		<label>13251</label>
@@ -48,24 +48,24 @@
 		<onclick description="1175" condition="!Window.IsVisible(Custom1139.xml)">ActivateWindow(1127)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/ruler.png</thumb>
-		<visible>IntegerGreaterThan(Window(home).Property(Button.ID),80) | !IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		<visible>Integer.IsGreater(Window(home).Property(Button.ID),80) | !String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="705" description="הזז למעלה">
 		<label>$LOCALIZE[13251] UP</label>
-		<onclick description="1139-UP" condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(Previous_SubButton.ID_)) + !SubString(Window(home).Property(Previous_SubButton.ID_),_90)">RunScript(script.featherence.service,,?mode=210&amp;value=1)</onclick>
+		<onclick description="1139-UP" condition="Window.IsVisible(Custom1139.xml) + !String.IsEmpty(Window(home).Property(Previous_SubButton.ID_)) + !String.Contains(Window(home).Property(Previous_SubButton.ID_),_90)">RunScript(script.featherence.service,,?mode=210&amp;value=1)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/arrowup.png</thumb>
 		<visible>Window.IsVisible(Custom1139.xml)</visible>
-		<visible>!IsEmpty(Window(home).Property(Previous_SubButton.ID_)) + !SubString(Window(home).Property(Previous_SubButton.ID_),_90)</visible>
+		<visible>!String.IsEmpty(Window(home).Property(Previous_SubButton.ID_)) + !String.Contains(Window(home).Property(Previous_SubButton.ID_),_90)</visible>
 	  </item>
 	  <item id="706" description="הזז למטה">
 		<label>$LOCALIZE[13251] DOWN</label>
-		<onclick description="1139-DOWN" condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(Next_SubButton.ID_)) + !SubString(Window(home).Property(Next_SubButton.ID_),_90)">RunScript(script.featherence.service,,?mode=210&amp;value=2)</onclick>
+		<onclick description="1139-DOWN" condition="Window.IsVisible(Custom1139.xml) + !String.IsEmpty(Window(home).Property(Next_SubButton.ID_)) + !String.Contains(Window(home).Property(Next_SubButton.ID_),_90)">RunScript(script.featherence.service,,?mode=210&amp;value=2)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/arrowdown.png</thumb>
 		<visible>Window.IsVisible(Custom1139.xml)</visible>
-		<visible>!IsEmpty(Window(home).Property(Next_SubButton.ID_)) + !SubString(Window(home).Property(Next_SubButton.ID_),_90)</visible>
+		<visible>!String.IsEmpty(Window(home).Property(Next_SubButton.ID_)) + !String.Contains(Window(home).Property(Next_SubButton.ID_),_90)</visible>
 	  </item>
 	  <item id="707" description="צבע כפתור">
 		<label>$LOCALIZE[31819]</label>
@@ -74,28 +74,28 @@
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/colorpalette.png</thumb>
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
-		<visible>IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		<visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 	  </item>
 	  <item id="708" description="רקע / פאנארט">
 		<label>$LOCALIZE[31810]</label>
 		<textoffsetx>15</textoffsetx>
-		<onclick condition="!IsEmpty(Window(home).Property(Button.ID))">SetProperty(TEMP,background,home)</onclick>
-		<onclick condition="!Window.IsVisible(Custom1138.xml) + !IsEmpty(Window(home).Property(Button.ID)) + IsEmpty(Window(home).Property(WidgetButton.ID_))">RunScript(script.featherence.service,,?mode=233&amp;value=1)</onclick>
-		<onclick condition="Window.IsVisible(Custom1139.xml) + !IsEmpty(Window(home).Property(SubButton.ID_))">RunScript(script.featherence.service,,?mode=233&amp;value=01)</onclick>
-		<onclick condition="!Window.IsVisible(Custom1138.xml) + !IsEmpty(Window(home).Property(Button.ID)) + !IsEmpty(Window(home).Property(WidgetButton.ID_))">RunScript(script.featherence.service,,?mode=233&amp;value=31)</onclick>
+		<onclick condition="!String.IsEmpty(Window(home).Property(Button.ID))">SetProperty(TEMP,background,home)</onclick>
+		<onclick condition="!Window.IsVisible(Custom1138.xml) + !String.IsEmpty(Window(home).Property(Button.ID)) + String.IsEmpty(Window(home).Property(WidgetButton.ID_))">RunScript(script.featherence.service,,?mode=233&amp;value=1)</onclick>
+		<onclick condition="Window.IsVisible(Custom1139.xml) + !String.IsEmpty(Window(home).Property(SubButton.ID_))">RunScript(script.featherence.service,,?mode=233&amp;value=01)</onclick>
+		<onclick condition="!Window.IsVisible(Custom1138.xml) + !String.IsEmpty(Window(home).Property(Button.ID)) + !String.IsEmpty(Window(home).Property(WidgetButton.ID_))">RunScript(script.featherence.service,,?mode=233&amp;value=31)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/paintbucket.png</thumb>
-		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + IsEmpty(Window(home).Property(WidgetButton.ID_)) | Window.IsVisible(Custom1139.xml) + Skin.HasSetting(SubBackground) | !IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.HasSetting(WidgetBackground)</visible>
-		<visible>![StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)]</visible>
+		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) | Window.IsVisible(Custom1139.xml) + Skin.HasSetting(SubBackground) | !String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.HasSetting(WidgetBackground)</visible>
+		<visible>![String.IsEqual(Window(home).Property(Button.ID_),20) | String.IsEqual(Window(home).Property(Button.ID_),21)]</visible>
 	  </item>
 	  <item id="709" description="רקע אקראי">
 		<label>$VAR[label709] - $VAR[Button708]</label>
-		<onclick condition="StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))" description="סרטים">Skin.ToggleSetting(wbackground90)</onclick>
-		<onclick condition="StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312))" description="סדרות">Skin.ToggleSetting(wbackground91)</onclick>
-		<onclick condition="StringCompare(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget317))" description="מזג אוויר">Skin.ToggleSetting(wbackground97)</onclick>
+		<onclick condition="String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))" description="סרטים">Skin.ToggleSetting(wbackground90)</onclick>
+		<onclick condition="String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))" description="סדרות">Skin.ToggleSetting(wbackground91)</onclick>
+		<onclick condition="String.IsEqual(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget317))" description="מזג אוויר">Skin.ToggleSetting(wbackground97)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/presentation.png</thumb>
-		<visible>[StringCompare(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget311))] | StringCompare(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget312)) | StringCompare(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | StringCompare(Window(home).Property(Button.ID),Skin.String(widget317))</visible>
+		<visible>[String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))] | String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312)) | String.IsEqual(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget317))</visible>
 		<visible>!Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
 	  </item>
 	  <item id="711" description="תפריט משני">
@@ -103,20 +103,20 @@
 		<onclick>ActivateWindow(1138)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/medal.png</thumb>
-		<!--<visible>IntegerGreaterThan(Window(home).Property(Button.ID),80)</visible>-->
+		<!--<visible>Integer.IsGreater(Window(home).Property(Button.ID),80)</visible>-->
 		<visible>Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1138.xml) + !Window.IsVisible(Custom1139.xml)</visible>
-		<visible>![StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)]</visible>
-		<visible>IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		<visible>![String.IsEqual(Window(home).Property(Button.ID_),20) | String.IsEqual(Window(home).Property(Button.ID_),21)]</visible>
+		<visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 	  </item>
 	  <item id="719" description="פריט חדש">
 		<label>$LOCALIZE[31049]</label>
-		<onclick description="1175" condition="!IsEmpty(Window(home).Property(Button.ID)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">RunScript(script.featherence.service,,?mode=211&amp;value=0)</onclick>
-		<onclick description="1138" condition="!IsEmpty(Window(home).Property(Button.ID)) + !Window.IsVisible(Custom1139.xml) + Window.IsVisible(Custom1138.xml)">RunScript(script.featherence.service,,?mode=211&amp;value=1)</onclick>
+		<onclick description="1175" condition="!String.IsEmpty(Window(home).Property(Button.ID)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">RunScript(script.featherence.service,,?mode=211&amp;value=0)</onclick>
+		<onclick description="1138" condition="!String.IsEmpty(Window(home).Property(Button.ID)) + !Window.IsVisible(Custom1139.xml) + Window.IsVisible(Custom1138.xml)">RunScript(script.featherence.service,,?mode=211&amp;value=1)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/present.png</thumb>
 		<visible>[Window.IsVisible(Custom1175.xml) | Window.IsVisible(Custom1138.xml)] + !Window.IsVisible(Custom1139.xml)</visible>
-		<visible>IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
-		<visible>![StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)]</visible>
+		<visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		<visible>![String.IsEqual(Window(home).Property(Button.ID_),20) | String.IsEqual(Window(home).Property(Button.ID_),21)]</visible>
 	  </item>
 	  <item id="720" description="הסרת פריט">
 		<label>$LOCALIZE[31048]</label>
@@ -124,37 +124,37 @@
 		<onclick description="1139-Remove" condition="Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=212&amp;value=1)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/bin.png</thumb>
-		<visible>[!Window.IsVisible(Custom1138.xml) + IntegerGreaterThan(Window(home).Property(Button.ID),99)] | [Window.IsVisible(Custom1139.xml) + !SubString(Window(home).Property(SubButton.ID_),_9)]</visible>
-		<visible>IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		<visible>[!Window.IsVisible(Custom1138.xml) + Integer.IsGreater(Window(home).Property(Button.ID),99)] | [Window.IsVisible(Custom1139.xml) + !String.Contains(Window(home).Property(SubButton.ID_),_9)]</visible>
+		<visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 	  </item>
 	  <item id="721" description="איפוס פריט">
 		<label>$LOCALIZE[10035] $LOCALIZE[31420]</label>
-		<onclick description="1175-DEFAULT" condition="!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + !IntegerGreaterThan(Window(home).Property(Button.ID),99)">RunScript(script.featherence.service,,?mode=212&amp;value=02B)</onclick>
-		<onclick description="1139-DEFAULT" condition="Window.IsVisible(Custom1139.xml) + SubString(Window(home).Property(SubButton.ID),_9)">RunScript(script.featherence.service,,?mode=212&amp;value=1B)</onclick>
+		<onclick description="1175-DEFAULT" condition="!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Integer.IsLess(Window(home).Property(Button.ID),99)">RunScript(script.featherence.service,,?mode=212&amp;value=02B)</onclick>
+		<onclick description="1139-DEFAULT" condition="Window.IsVisible(Custom1139.xml) + String.Contains(Window(home).Property(SubButton.ID),_9)">RunScript(script.featherence.service,,?mode=212&amp;value=1B)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/pre.png</thumb>
-		<visible>!IsEmpty(Window(home).Property(Button.ID)) + !IsEmpty(Window(home).Property(Button.ID_)) + !Control.IsVisible(720)</visible>
-		<!--<visible>!StringCompare(Window(home).Property(Button.ID),Window(home).Property(Button.ID_)))</visible>-->
-		<visible>[!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + !IntegerGreaterThan(Window(home).Property(Button.ID),99)] | [Window.IsVisible(Custom1139.xml) + SubString(Window(home).Property(SubButton.ID),_9)]</visible>
-		<visible>IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		<visible>!String.IsEmpty(Window(home).Property(Button.ID)) + !String.IsEmpty(Window(home).Property(Button.ID_)) + !Control.IsVisible(720)</visible>
+		<!--<visible>!String.IsEqual(Window(home).Property(Button.ID),Window(home).Property(Button.ID_)))</visible>-->
+		<visible>[!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Integer.IsLess(Window(home).Property(Button.ID),99)] | [Window.IsVisible(Custom1139.xml) + String.Contains(Window(home).Property(SubButton.ID),_9)]</visible>
+		<visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 	  </item>
 	  <item id="722" description="שימוש בסיסמה להגנה">
 		<label>$LOCALIZE[1272]</label>
-		<onclick description="1175" condition="!IsEmpty(Window(home).Property(Button.ID_)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">Skin.ToggleSetting(pwd$INFO[Window(home).Property(Button.ID_)])</onclick>
+		<onclick description="1175" condition="!String.IsEmpty(Window(home).Property(Button.ID_)) + !Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml)">Skin.ToggleSetting(pwd$INFO[Window(home).Property(Button.ID_)])</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/bolt.png</thumb>
-		<visible>!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + IntegerGreaterThan(Window(home).Property(Button.ID),80)</visible>
-		<visible>IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		<visible>!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Integer.IsGreater(Window(home).Property(Button.ID),80)</visible>
+		<visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 	  </item>
 	  <item id="729" description="Touch Buttons">
 		<label>Action -> $INFO[Window(home).Property(Button.Name)]</label>
-		<onclick description="Twice!" condition="StringCompare(Window(home).Property(Button.ID_),20) | StringCompare(Window(home).Property(Button.ID_),21)">Action(Close)</onclick>
-		<onclick description="Twice" condition="StringCompare(Window(home).Property(Button.ID_),20)">Action(Back)</onclick>
-		<onclick description="1175" condition="StringCompare(Window(home).Property(Button.ID_),21)">ReplaceWindow(Home)</onclick>
+		<onclick description="Twice!" condition="String.IsEqual(Window(home).Property(Button.ID_),20) | String.IsEqual(Window(home).Property(Button.ID_),21)">Action(Close)</onclick>
+		<onclick description="Twice" condition="String.IsEqual(Window(home).Property(Button.ID_),20)">Action(Back)</onclick>
+		<onclick description="1175" condition="String.IsEqual(Window(home).Property(Button.ID_),21)">ReplaceWindow(Home)</onclick>
 		<include>CheckProperty_Menus</include>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/bolt.png</thumb>
-		<visible>IntegerGreaterThan(Window(home).Property(Button.ID),19) + !IntegerGreaterThan(Window(home).Property(Button.ID),30)</visible>
-		<visible>IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		<visible>Integer.IsGreater(Window(home).Property(Button.ID),19) + Integer.IsLess(Window(home).Property(Button.ID),30)</visible>
+		<visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 	  </item>
   </include>
   
@@ -203,37 +203,44 @@
   <include name="CenterMenuContent_DialogPVRInfo" description="כיבוי">
 	<control type="button" id="7" description="Ok">
 	  <width>480</width>
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR3</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL3</include>
 	  <label>--></label>
 	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
 	</control>
 	<control type="button" id="4" description="מציאת דומים">
 	  <width>480</width>
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR3</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL3</include>
 	  <label>19003</label>
 	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
 	</control>
 	<control type="button" id="5" description="נגן ערוץ">
 	  <width>480</width>
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR3</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL3</include>
 	  <label>$LOCALIZE[208] $LOCALIZE[19029]</label>
 	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
 	</control>
 	<control type="button" id="6" description="הקלטה">
 	  <width>480</width>
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR3</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL3</include>
 	  <label>$LOCALIZE[264]</label>
+	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
+	</control>
+	<control type="button" id="9" description="Timer">
+	  <width>480</width>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR3</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL3</include>
+	  <label>19061</label>
 	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
 	</control>
 	<!--
 	<control type="button" description="Switch to channel button">
 	  <width>480</width>
-	  <include condition="StringCompare(System.Language,Hebrew)">ButtonR3</include>
-	  <include condition="!StringCompare(System.Language,Hebrew)">ButtonL3</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR3</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL3</include>
 	  <label>Switch to channel button</label>
 	  <visible>false</visible>
 	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
