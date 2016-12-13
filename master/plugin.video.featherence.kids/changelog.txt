@@ -3,6 +3,13 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence Kids v0.2.14 (13-Dec-16)
+------------------------
+- Added some more links in English.
+- Major performance boost when remote thumbnails/fanarts are unavailable.
+- Minor update of links, thumbnails and fanarts.
+
+------------------------
 Featherence Kids v0.2.13 (12-Oct-16)
 ------------------------
 - Added suprize party TV channels in Tiny category.

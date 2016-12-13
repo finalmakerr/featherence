@@ -53,7 +53,7 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 	'''רשימת השמעה 10'''
 	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',0,getAddonFanart("Custom_Playlist10"))
 	
-	if Custom_10001 == "true": addDir(addonString(30050).encode('utf-8'),'',10001,featherenceserviceicons_path + 'star.png',addonString(30051).encode('utf-8'),'1',0,'') #AMIR ELGAZAR PLAYLISTS
+	if Custom_10001 == "true" and 1 + 1 == 3: addDir(addonString(30050).encode('utf-8'),'',10001,featherenceserviceicons_path + 'star.png',addonString(30051).encode('utf-8'),'1',0,'') #AMIR ELGAZAR PLAYLISTS
 	if Custom_10002 == "true":
 		'''Tomer Dror's Playlists'''
 		thumb = os.path.join(addonPath,'icon.png')

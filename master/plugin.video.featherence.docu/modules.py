@@ -92,7 +92,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	addDir(addonString(30104).encode('utf-8'),'',10102,'https://lh5.ggpht.com/rJg02fFypSfx2mL6BMWEN__3Je-E-sy2ZDgZs2PNnnFLawi2b1QtL9S_GtY5sPLXPw=h900',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30104).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom=""))
 	
 	'''כדור הארץ'''
-	addDir(addonString(30105).encode('utf-8'),'',10103,'https://s-media-cache-ak0.pinimg.com/originals/f6/7c/e8/f67ce86161d17cbde49bac13be0ea023.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30105).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom="http://copthornekuwait.com/wp-content/uploads/2016/01/most-beautiful-places-in-the-world-wallpapers.jpg"))
+	addDir(addonString(30105).encode('utf-8'),'',10103,'https://s-media-cache-ak0.pinimg.com/originals/f6/7c/e8/f67ce86161d17cbde49bac13be0ea023.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30105).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom="https://s-media-cache-ak0.pinimg.com/originals/99/db/19/99db19557aec73a897f07992cbc4d0c8.jpg"))
 
 	CATEGORIES101A(name, iconimage, desc, getAddonFanart(background, default=fanart, custom="")) # עמוד הבא
  

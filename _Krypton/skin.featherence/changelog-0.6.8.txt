@@ -6,6 +6,8 @@ WIP - WORK IN PROGRESS
 - Added new option to disable the auto close of the video/audio OSD.
 - Added detail of the current action of a button in skin design window.
 - Added auto-build widget feature.
+- Added music visualation support.
+- Added Artist Slideshow support.
 
 ------------------------
 Featherence v0.7.0 (xx-xx-16)

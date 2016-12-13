@@ -3,6 +3,11 @@ WIP (WORK IN PROGRESS)
 -----------------------
 
 ------------------------
+Featherence Music v0.3.7 (13-Dec-16)
+------------------------
+- Remove Amir Elgazar playlists section.
+
+------------------------
 Featherence Music v0.3.6 (09-Dec-16)
 ------------------------
 - Major performance boost when remote thumbnails/fanarts are unavailable.

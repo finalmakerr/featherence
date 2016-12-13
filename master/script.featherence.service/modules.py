@@ -2416,6 +2416,8 @@ def mode218(value, admin, name, printpoint):
 				message = message + newline + "NextAired.1.NextDate" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.1.NextDate)'))
 				message = message + newline + "NextAired.1.NextTitle" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.1.NextTitle)'))
 				message = message + newline + '---------------------------'
+			message = message + newline + "ListItem.Title" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.Title]'))
+			message = message + newline + "ListItem.TVShowTitle" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.TVShowTitle]'))
 			message = message + newline + "custom" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.Trailer]')) #CUSTOM TEST
 			message = message + newline + "custom2" + space2 + str(xbmc.getInfoLabel('Container(50).ListItemPosition(0).Overlay')) #CUSTOM TEST
 			message = message + newline + "custom3" + space2 + str(xbmc.getInfoLabel('System.BuildVersion')) #CUSTOM TEST

@@ -727,6 +727,9 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_pl=PL95CWWe9DuaJ6xtv1V8ZxDvoG_cB3z4bc')
+	if 'English' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.cartoons8/?description&iconimage=http%3A%2F%2F9cartoon.me%2Fuploads%2Fthumbs%2F2015-04-23doraemon-us-2014S.jpg%7CUser-Agent%3DMozilla%2F5.0%20(Windows%20NT%206.1%3B%20rv%3A32.0)%20Gecko%2F20100101%20Firefox%2F32.0%26Cookie%3D__cfduid%3Dd050ec12fafe2c97100f5553b706772be1471118127%3Bcf_clearance%3D43853389a93dbcf030c79b161177de52b6409c05-1481270506-86400%3B__cfduid%3Dd48ee3d5e8750d48c2c735e712c4476201468881294%3B__cfduid%3Dde0bb4156da99183db0cc6a7c8325a0041470303966%3BPHPSESSID%3D86f31d8264a864fcba222bbadb97477b%3BPHPSESSID%3D0918e9805af889f932d3f1f7083de44b%3BPHPSESSID%3D71nhps357p41n36mj2h76hs486%3B&mode=2&name=Doraemon%20US%20(2014)&url=http%3A%2F%2F9cartoon.me%2FCartoon%2F1872%2Fdoraemon-us-2014%2F&name_=Season1&')
+		list.append('&custom8=plugin://plugin.video.cartoons8/?description&iconimage=http%3A%2F%2F9cartoon.me%2Fuploads%2Fthumbs%2F2015-07-22doraemon-us-season-2-20152.jpg%7CUser-Agent%3DMozilla%2F5.0%20(Windows%20NT%206.1%3B%20rv%3A32.0)%20Gecko%2F20100101%20Firefox%2F32.0%26Cookie%3D__cfduid%3Dd050ec12fafe2c97100f5553b706772be1471118127%3Bcf_clearance%3D43853389a93dbcf030c79b161177de52b6409c05-1481270506-86400%3B__cfduid%3Dd48ee3d5e8750d48c2c735e712c4476201468881294%3B__cfduid%3Dde0bb4156da99183db0cc6a7c8325a0041470303966%3BPHPSESSID%3D86f31d8264a864fcba222bbadb97477b%3BPHPSESSID%3D0918e9805af889f932d3f1f7083de44b%3BPHPSESSID%3D71nhps357p41n36mj2h76hs486%3B&mode=2&name=Doraemon%20US%20Season%202%20(2015)&url=http%3A%2F%2F9cartoon.me%2FCartoon%2F4724%2Fdoraemon-us-season-2-2015%2F&name_=Season2&')
 	addDir(addonString(10415).encode('utf-8'),list,17,'http://www.animation-animagic.com/img/conteudo/2632008151425.jpg',addonString(104150).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
 	
 	CATEGORIES104P(General_LanguageL, background, background2) #דיגימון
@@ -2616,6 +2619,8 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&youtube_id=_CbY8wBblCw')
 		
 	if 'English' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.cartoons8/?description&iconimage=http%3A%2F%2F9cartoon.me%2Fuploads%2Fthumbs%2F2015-04-17dora-and-friends-into-the-city-y.jpg%7CUser-Agent%3DMozilla%2F5.0%20(Windows%20NT%206.1%3B%20rv%3A32.0)%20Gecko%2F20100101%20Firefox%2F32.0%26Cookie%3D__cfduid%3Dd050ec12fafe2c97100f5553b706772be1471118127%3Bcf_clearance%3D43853389a93dbcf030c79b161177de52b6409c05-1481270506-86400%3B__cfduid%3Dd48ee3d5e8750d48c2c735e712c4476201468881294%3B__cfduid%3Dde0bb4156da99183db0cc6a7c8325a0041470303966%3BPHPSESSID%3D86f31d8264a864fcba222bbadb97477b%3BPHPSESSID%3D0918e9805af889f932d3f1f7083de44b%3BPHPSESSID%3D71nhps357p41n36mj2h76hs486%3B&mode=2&name=Dora%20and%20Friends%3A%20Into%20the%20City!%20Season%201%20(2014)&url=http%3A%2F%2F9cartoon.me%2FCartoon%2F1771%2Fdora-and-friends-into-the-city-%2F&name_=Season 1&')
+		list.append('&custom8=plugin://plugin.video.cartoons8/?description&iconimage=http%3A%2F%2F9cartoon.me%2Fuploads%2Fthumbs%2F2016-02-05dora-and-friends-into-the-city-season-2-2016y.jpg%7CUser-Agent%3DMozilla%2F5.0%20(Windows%20NT%206.1%3B%20rv%3A32.0)%20Gecko%2F20100101%20Firefox%2F32.0%26Cookie%3D__cfduid%3Dd050ec12fafe2c97100f5553b706772be1471118127%3Bcf_clearance%3D43853389a93dbcf030c79b161177de52b6409c05-1481270506-86400%3B__cfduid%3Dd48ee3d5e8750d48c2c735e712c4476201468881294%3B__cfduid%3Dde0bb4156da99183db0cc6a7c8325a0041470303966%3BPHPSESSID%3D86f31d8264a864fcba222bbadb97477b%3BPHPSESSID%3D0918e9805af889f932d3f1f7083de44b%3BPHPSESSID%3D71nhps357p41n36mj2h76hs486%3B&mode=2&name=Dora%20and%20Friends%3A%20Into%20the%20City!%20Season%202%20(2016)&url=http%3A%2F%2F9cartoon.me%2FCartoon%2F9780%2Fdora-and-friends-into-the-city-season-2-2016%2F&name_Season 2&')
 		list.append('&youtube_id=3TQAy66Mpug')
 		list.append('&youtube_pl=PLYUPX95OFYmglVK0H8V6pQYWv7xCgCLwA')
 		list.append('&youtube_pl=PLwC1cnFbggP0lFxJboaw8moC5qj_P2V0f')
@@ -2890,8 +2895,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%ee%e2%ec%e9%ed%20%f2%ed%20%e3%e5%f8%e4&url=http%3a%2f%2fnickjr.walla.co.il%2f%3fw%3d%2f%2f1688309')
 	
 	if 'English' in General_LanguageL:
-		list.append('&youtube_pl=PLfy2Sf8Vtub1rlUM8x6knGI_U43pFFR2L')
-		list.append('&youtube_pl=PLrMeN4frlTDzhevY66QZVrjCOGHs84OjC')
+		pass
 		
 	if 'Japanese' in General_LanguageL:
 		list.append('&youtube_pl=PLLk0B1a2FT0apXz3ZVHdZ-QprLGuwrU_S')
@@ -3272,15 +3276,8 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		
 		list.append('&youtube_id=FrUVIyhhhkQ')
 		list.append('&youtube_id=5wko2ncDqmo')
-		list.append('&youtube_id=bBH0ele7qdw')
 	if 'English' in General_LanguageL:
-		list.append('&youtube_id=Twm_igTeias') #תומס הקטר #S1
-		list.append('&youtube_id=Q2FlQuQfDso') #תומס הקטר #S2
-		list.append('&youtube_id=ncXVNRl3JNo') #תומס הקטר #S3
-		list.append('&youtube_id=74S8SubJnig') #תומס הקטר #S4
-		list.append('&youtube_id=95QevK_1A4A') #תומס הקטר #S5
-		list.append('&youtube_pl=PLMcW4qao7rUVLfxzX7zYhSd7C1fl-R-di') #תומס הקטר #S17
-		list.append('&youtube_pl=PLI2i4PrLia3gAAYjMaVbAwdt1xrOsUaXS') #תומס הקטר
+		list.append('&youtube_pl=PLI2i4PrLia3gAAYjMaVbAwdt1xrOsUaXS')
 	
 	if 'Japanese' in General_LanguageL:
 		list.append('&youtube_pl=PLwGUVOoN_pI3QbBFmTHQ76uYtVS7c4yF9')
