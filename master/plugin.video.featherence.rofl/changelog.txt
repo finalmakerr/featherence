@@ -3,8 +3,10 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
-Featherence ROFL v0.0.8 (xx-xx-16)
+Featherence ROFL v0.0.8 (16-Dec-16)
 ------------------------
+- Added Adi Ashkenazi to stand ups comedy.
+- Minor update of links, names, description, thumbnails and fanart.
 - Major update of autoview feature.
 Work on any skin now and you may add your default view for Main Menu, Sub Menu, and all others window from the addon settings or/and the context menu (Set View).
 

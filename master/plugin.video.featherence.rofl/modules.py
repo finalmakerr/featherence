@@ -331,7 +331,7 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	
 	'''אסף מור יוסף'''
 	fanart = 'https://i.ytimg.com/vi/wCd1pJW7NZQ/maxresdefault.jpg'
-	thumb = 'http://asafmoryosef.com/2.jpg'
+	thumb = 'http://www.t-g.co.il/img/upload/66/6601_7048.jpg'
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
@@ -339,7 +339,7 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	
 	'''ארז בירנבוים'''
 	fanart = 'https://i.ytimg.com/vi/4AiastfNUd4/maxresdefault.jpg'
-	thumb = 'http://calcalist.the-insider.co.il/wp-content/uploads/2015/07/Erez-Birenboim-hp.jpg'
+	thumb = 'http://www.standupfactory.co.il/uploads/events/Pt1441896004o26578fc4c3dcbcdecc4e2c903e4aabb6370a405fd620da.jpg'
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
@@ -394,8 +394,8 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	addDir(addonString(30134).encode('utf-8'),list,17,thumb,addonString(30135).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''דניאל חן'''
-	fanart = ''
-	thumb = ''
+	fanart = 'https://i.ytimg.com/vi/K-E3kConLUA/maxresdefault.jpg'
+	thumb = 'http://images.wcdn.co.il/452272-54.jpg?crop=w450'
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
@@ -443,7 +443,7 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	
 	'''יוחאי ספונדר'''
 	fanart = 'https://i.ytimg.com/vi/nosdCc-6Mic/maxresdefault.jpg'
-	thumb = 'http://www.mesibot.co.il/com-serve/Images/yohay_sponder_standup/yohay_sponder_standup_1.jpg'
+	thumb = 'http://www.nrg.co.il/images/archive/465x349/1/648/337.jpg'
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
@@ -572,7 +572,7 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	
 	'''נאור ציון'''
 	fanart = 'http://i4.ytimg.com/vi/56GTTAHW1Wc/maxresdefault.jpg'
-	thumb = 'http://cdn.ashdodnet.com/dyncontent/t_post/wp-content/uploads/64561.jpg'
+	thumb = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Naor_Zion_portrait.jpg/345px-Naor_Zion_portrait.jpg'
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
@@ -586,6 +586,14 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30180).encode('utf-8'),list,17,thumb,addonString(30181).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
+	'''עדי אשכנזי'''
+	fanart = 'https://i.ytimg.com/vi/V99KX23RoEA/maxresdefault.jpg'
+	thumb = 'http://www.ynet.co.il/PicServer4/2016/02/24/6838498/7811037_7810567_rumble.jpg'
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30192).encode('utf-8'),list,17,thumb,addonString(30193).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
+	
 	'''צביקה הדר'''
 	fanart = 'http://www.habama-center.com/wp-content/uploads/2014/11/%D7%A6%D7%91%D7%99%D7%A7%D7%94-%D7%94%D7%93%D7%A8-%D7%97%D7%99-%D7%A2%D7%9C-%D7%94%D7%91%D7%9E%D7%94.jpg'
 	thumb = 'http://msc.wcdn.co.il/w/w-635/1872937-18.jpg'
@@ -596,7 +604,7 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	
 	'''קארין כהן'''
 	fanart = 'https://i.ytimg.com/vi/gkJP7UhaRHY/maxresdefault.jpg'
-	thumb = 'http://www.yitzug1.co.il/sites/default/files/styles/big_image/public/%D7%90%D7%9C%D7%9B%D7%A1%20%D7%9C%D7%99%D7%A4%D7%A7%D7%99%D7%9F%203.jpg?itok=UIiuA-P3'
+	thumb = 'http://images1.ynet.co.il/xnet//PicServer2/pic/20122006/134136/2_735a.jpg'
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
@@ -620,7 +628,7 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	
 	'''רועי כפרי''' #17
 	fanart = 'https://i.ytimg.com/vi/gkM2FBiajmc/maxresdefault.jpg'
-	thumb = 'http://albums.tapuz.co.il/flix/userPageDesign/userPicture2075228.bmp'
+	thumb = 'http://comedyclub.co.il/uploads/events/Pt1349002642o26306f2d8112fed459607c1e3d3cd037d056ec7250b7e6.jpg'
 	list = []
 
 	list.append('&youtube_se='+commonsearch)
@@ -628,7 +636,7 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	
 	'''רועי צברי'''
 	fanart = 'https://eventsimg.blob.core.windows.net/banners/bdbcc39a5501630c0d7f26041ec98d0e'
-	thumb = 'http://tarbutbanegev.merage.org.il/wp-content/uploads/2015/01/%D7%A8%D7%95%D7%A2%D7%99-%D7%A6%D7%91%D7%A8%D7%99-640x427.jpg'
+	thumb = 'http://comedyclub.co.il/uploads/events/Pt1349002642o26306f2d8112fed459607c1e3d3cd037d056ec7250b7e6.jpg'
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
@@ -668,7 +676,7 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	
 	'''שחר חסון'''
 	fanart = 'http://i4.ytimg.com/vi/w_DKHoHRdfo/maxresdefault.jpg'
-	thumb = 'http://ksn.co.il/wp-content/uploads/2016/01/%D7%A9%D7%97%D7%A8-%D7%97%D7%A1%D7%95%D7%9F.jpg'
+	thumb = 'https://upload.wikimedia.org/wikipedia/commons/7/70/%D7%94%D7%91%D7%93%D7%A8%D7%9F_%D7%A9%D7%97%D7%A8_%D7%97%D7%A1%D7%95%D7%9F.jpg'
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
@@ -676,11 +684,19 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	
 	'''שי יום טוב'''
 	fanart = 'https://i.ytimg.com/vi/oU2ft78YH8c/maxresdefault.jpg'
-	thumb = 'https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpt1/v/t1.0-9/12112311_889990854371116_259787581650902869_n.jpg?oh=ade582dd58df1909f9a31d336275da2e&oe=5763D21E&__gda__=1465167189_1ca7921d7b8a9625d5eb6e599842f398'
+	thumb = 'https://yt3.ggpht.com/-o0idF5jmgRM/AAAAAAAAAAI/AAAAAAAAAAA/-W2hlQpqgLI/s900-c-k-no-mo-rj-c0xffffff/photo.jpg'
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30206).encode('utf-8'),list,17,thumb,addonString(30207).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
+		
+	'''שלום אסייג'''
+	fanart = 'https://i.ytimg.com/vi/uUSoLE8kjrE/maxresdefault.jpg'
+	thumb = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/%D7%A9%D7%9C%D7%95%D7%9D_%D7%90%D7%A1%D7%99%D7%99%D7%92.jpg/375px-%D7%A9%D7%9C%D7%95%D7%9D_%D7%90%D7%A1%D7%99%D7%99%D7%92.jpg'
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30216).encode('utf-8'),list,17,thumb,addonString(30217).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''שלישית מה קשור'''
 	fanart = 'http://images1.ynet.co.il/PicServer2/02022009/1951658/DSC_2555_1280.jpg'
@@ -713,30 +729,22 @@ def CATEGORIES103(name, iconimage, desc, fanart):
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30214).encode('utf-8'),list,17,thumb,addonString(30215).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
-	
-	'''שלום אסייג'''
-	fanart = 'https://i.ytimg.com/vi/uUSoLE8kjrE/maxresdefault.jpg'
-	thumb = 'http://tin.tv/site/wp-content/uploads/2012/10/Shalom-asayag-Yahatz.jpg'
-	list = []
-	
-	list.append('&youtube_se='+commonsearch)
-	addDir(addonString(30216).encode('utf-8'),list,17,thumb,addonString(30217).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
-	
+
 	'''תום יער'''
-	fanart = ''
-	thumb = ''
-	list = []
-	
-	list.append('&youtube_se='+commonsearch)
-	addDir(addonString(30218).encode('utf-8'),list,17,thumb,addonString(30219).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
-	
-	'''תמיר בוסקילה'''
-	fanart = ''
-	thumb = ''
+	fanart = 'https://i.ytimg.com/vi/Psl2i15lQQ8/maxresdefault.jpg'
+	thumb = 'https://d2y7k8v5hknaqa.cloudfront.net/2016/05/tom_yaar_288X245.jpg'
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30220).encode('utf-8'),list,17,thumb,addonString(30221).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
+	
+	'''תמיר בוסקילה'''
+	fanart = 'https://yt3.ggpht.com/-9JzakxN1snY/AAAAAAAAAAI/AAAAAAAAAAA/PHyHlb2V3SM/s900-c-k-no-mo-rj-c0xffffff/photo.jpg'
+	thumb = 'http://tamirbuskila.index.org.il/sites/index.org.il/files/imagecache/layout_split/tamir-buskila_0.jpg'
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30222).encode('utf-8'),list,17,thumb,addonString(30223).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 def CATEGORIES104(name, iconimage, desc, fanart):
 	'''סטנדאפ לועזי'''
