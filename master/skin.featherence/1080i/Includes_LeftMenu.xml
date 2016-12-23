@@ -48,7 +48,7 @@
 		<include>4ways3</include>
 		<!--<include condition="Window.IsVisible(Home.xml)">LeftMenuHome</include>-->
 		<include condition="Window.IsVisible(MyVideoNav.xml)">LeftMenuMyVideoNav</include>
-		<include condition="Window.IsVisible(MyVideoPlaylist)">LeftMenuMyVideoPlaylist</include>
+		<include condition="Window.IsVisible(MyPlaylist.xml)">LeftMenuMyPlaylist</include>
 		<include condition="Window.IsVisible(MyPics.xml)">LeftMenuMyPics</include>
 		<include condition="Window.IsVisible(MyWeather.xml)">LeftMenuMyWeather</include>
 		<include condition="Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)">LeftMenuSettings</include>
@@ -481,6 +481,17 @@
 	    <visible>false</visible>
 	  </control>
 	</control>
+  
+    <control type="button">
+	  <animation condition="!String.IsEqual(System.Language,Hebrew)" effect="slide" start="0" end="1890">Conditional</animation>
+	  <visible allowhiddenfocus="false">![ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus() | ControlGroup(9002).HasFocus() | !String.IsEmpty(Window(home).Property(SideMenuUp))]</visible>
+	  <texturefocus colordiffuse="$VAR[ButtonFocusColor]">special://home/addons/script.featherence.service/resources/icons/settings.png</texturefocus>
+      <texturenofocus colordiffuse="$VAR[ButtonUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/settings.png</texturenofocus>
+	  <height>40</height>
+	  <width>40</width>
+	  <posx>-5</posx>
+	  <posy>575</posy>
+	</control>
   </include>
   
   <include name="LeftMenuSettings">
@@ -884,11 +895,43 @@
 	<include>button2_views</include>
 	<include>button3_sort</include>
 	<include>button4_sortorder</include>
+	
+	<control type="radiobutton" id="5" description="Switch to file mode">
+		<include>SideMenuCommon</include>
+		<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+		<include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+		<font>size28</font>
+		<label>File Mode</label>
+	</control>
 	<control type="button" id="8" description="search">
 	  <include>SideMenuCommon</include>
 	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 	  <label>137</label>
+	  <font>size28</font>
+	</control>
+	<control type="button" id="16" description="מצב מסיבה">
+	  <include>SideMenuCommon</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+	  <label>589</label>
+	  <font>size28</font>
+	  <visible></visible>
+	</control>
+	<control type="button" id="17" description="Manually enter artist and album name to lookup the artist and album information on the internet">
+	  <include>SideMenuCommon</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+	  <label>Web Search</label>
+	  <font>size28</font>
+	  <visible>Skin.HasSetting(Admin)</visible>
+	</control>
+
+	<control type="radiobutton" id="19" description="סינון">
+	  <include>SideMenuCommon</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+	  <label>587</label>
 	  <font>size28</font>
 	</control>
 	<control type="togglebutton" id="20">
@@ -1002,18 +1045,11 @@
 	  <visible>false</visible>
 	</control>
   </include>
-  <include name="LeftMenuMyVideoPlaylist">
+  <include name="LeftMenuMyPlaylist">
     <include>button2_views</include>
 	<include>button3_sort</include>
 	<include>button4_sortorder</include>
-	<control type="button" id="14" description="Number of items in the playlist">
-	  <include>SideMenuCommon</include>
-	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
-	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
-	  <font>size28</font>
-	  <label>$LOCALIZE[31073]</label>
-	  <visible>false</visible>
-	</control>
+	
 	<control type="radiobutton" id="20" description="Shuffle the playlist">
 	  <include>SideMenuCommon</include>
 	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>

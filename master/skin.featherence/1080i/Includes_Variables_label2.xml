@@ -155,13 +155,13 @@
   </variable>
   
   <variable name="6label2">
-	<value condition="!Skin.HasSetting(VideoAudioOSDAlwaysOn)">$LOCALIZE[107]</value>
-	<value condition="Skin.HasSetting(VideoAudioOSDAlwaysOn)">$LOCALIZE[106]</value>
+	<value condition="!Skin.HasSetting(VideoAudioOSDAlwaysOn)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(VideoAudioOSDAlwaysOn)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="7label2">
-	<value condition="!Skin.HasSetting(HideLibraryUpdates)">$LOCALIZE[107]</value>
-	<value condition="Skin.HasSetting(HideLibraryUpdates)">$LOCALIZE[106]</value>
+	<value condition="!Skin.HasSetting(HideLibraryUpdates)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(HideLibraryUpdates)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="8label2">

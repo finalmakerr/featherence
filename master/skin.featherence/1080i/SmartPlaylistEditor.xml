@@ -18,38 +18,53 @@
 	  <posx>780</posx>
 	  <include>LabelC1</include>
       <label>21432</label>
+	  <visible>false</visible>
     </control>
     <control type="group">
       <posx>390</posx>
       <posy>15</posy>
       <visible>!Window.IsVisible(smartplaylistrule)</visible>
-      <control type="spincontrolex" id="22">
-        <description>Set Playlist type</description>
+      <control type="button" id="22" description="Set Playlist type">
+		<include condition="String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+		<include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
         <posx>15</posx>
         <posy>105</posy>
-        <width>1110</width>
+        <width>550</width>
         <label>467</label>
-        <onright>22</onright>
+        <onright>23</onright>
+        <onleft>noop</onleft>
+        <onup>9001</onup>
+        <ondown>12</ondown>
+      </control>
+	  <control type="button" id="23" description="Group By">
+		<include condition="String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+		<include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+		<posx>645</posx>
+        <posy>105</posy>
+        <width>550</width>
+        <label>467</label>
+        <onright>noop</onright>
         <onleft>22</onleft>
         <onup>9001</onup>
         <ondown>12</ondown>
       </control>
-      <control type="label">
-        <description>Name Label</description>
+      <control type="label" description="Name Label">
         <posx>45</posx>
-        <posy>216</posy>
+        <posy>200</posy>
         <width>1110</width>
         <label>21433</label>
       </control>
-      <control type="edit" id="12">
-        <description>Name Button</description>
+      <control type="button" id="12" description="Name Button">
+	    <width>1110</width>
+		<include condition="String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+		<include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
         <posx>15</posx>
-        <posy>275</posy>
-        <width>1110</width>
+        <posy>260</posy>
+        
         <height>63</height>
-        <font>size33</font>
+        <font>size42</font>
         <align>left</align>
-        <aligny>top</aligny>
+        <aligny>center</aligny>
         <focusedcolor>white</focusedcolor>
         <selectedcolor>white</selectedcolor>
         <label>-</label>
@@ -162,7 +177,7 @@
       </control>
       <control type="group">
         <posy>38</posy>
-        <control type="spincontrolex" id="16">
+        <control type="button" id="16">
           <posx>15</posx>
           <posy>657</posy>
           <width>1110</width>
@@ -171,8 +186,10 @@
           <onleft>16</onleft>
           <onup>10</onup>
           <ondown>17</ondown>
+		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
         </control>
-        <control type="spincontrolex" id="17">
+        <control type="button" id="17">
           <posx>15</posx>
           <posy>735</posy>
           <width>1110</width>
@@ -181,8 +198,10 @@
           <onleft>17</onleft>
           <onup>16</onup>
           <ondown>18</ondown>
+		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
         </control>
-        <control type="spincontrolex" id="18">
+        <control type="button" id="18">
           <posx>15</posx>
           <posy>813</posy>
           <width>854</width>
@@ -191,17 +210,19 @@
           <onleft>19</onleft>
           <onup>17</onup>
           <ondown>9001</ondown>
+		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
         </control>
-        <control type="togglebutton" id="19">
+        <control type="button" id="19" description="Sort direction option (ascending / descending)">
           <posx>872</posx>
           <posy>813</posy>
           <width>254</width>
-          <label>21431</label>
-          <altlabel>21430</altlabel>
           <onright>18</onright>
           <onleft>18</onleft>
           <onup>17</onup>
           <ondown>9001</ondown>
+		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
         </control>
       </control>
       <control type="group" id="9001">

@@ -12,9 +12,13 @@ WIP - WORK IN PROGRESS
 ------------------------
 Featherence v0.7.0 (xx-xx-16)
 ------------------------
-- Added Krypton support.
+- ***Added Krypton support***.
+- Added feature to show video/audio OSD by mouse clicking the top information bar.
+- Added left menu settings icon for skin's views.
+- Added Party Mode feature to music library.
 - Added ScrollBar support to PVR Guide window.
 - Added WINDOW_DIALOG_CMS_OSD_SETTINGS.
+- Minor update of SmartPlaylistEditor window.
 
 ------------------------
 Featherence v0.6.8 (24-Nov-16)

@@ -89,7 +89,7 @@
 	    <width>580</width>
 		<label>$INFO[Control.GetLabel(9)]</label>
 	  </control>
-	  <control type="button" id="10" description="אישור">
+	  <control type="button" id="11" description="אישור">
 		<label>222</label>
 		<width>600</width>
 	  </control>
@@ -206,7 +206,7 @@
 	</control>
   </include>
   
-  <include name="BottomCenterDialogMediaFilter">	
+  <include name="DialogSettings">	
     <control type="group">
       <posx>450</posx>
       <posy>225</posy>
@@ -239,6 +239,18 @@
         <ondown>9001</ondown>
         <onleft>9001</onleft>
         <onright>6</onright>
+      </control>
+	  <control type="image" description="Addon Icon">
+        <posx>40</posx>
+        <posy>500</posy>
+        <width>130</width>
+        <height>130</height>
+        <texture background="false" fallback="DefaultAddonNone.png">$INFO[ListItem.Icon]</texture>
+        <aspectratio aligny="top">scale</aspectratio>
+        <bordertexture border="3">images/ThumbBorder3.png</bordertexture>
+        <bordersize>1</bordersize>
+		<visible>Window.IsVisible(10132)</visible>
+		<visible>false</visible>
       </control>
       <control type="scrollbar" description="?" id="6">
         <posx>220</posx>

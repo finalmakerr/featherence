@@ -17,5 +17,9 @@
 	<include>ScrollBar</include>
 	<include>TopInformation</include>
 	<include>WindowsBusy</include>
+	
+	<control type="label" id="18" description="Warning to the user to turn off library mode when no scanned media is found">
+	  <visible>false</visible>
+	</control>
   </controls>
 </window>

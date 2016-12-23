@@ -12,7 +12,7 @@
 	<!--<value condition="![!String.IsEmpty(Player.Art(tvshow.poster)) | !String.IsEmpty(Player.Art(poster)) | !String.IsEmpty(Control.GetLabel(1103)) | !String.IsEmpty(VideoPlayer.Cover) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Art(tvshow.poster)) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Thumb) | !String.IsEmpty(ListItem.Icon) | String.Contains(ListItem.path,videodb://movies/sets/)]">1</value>-->
 	<value condition="![!String.Contains(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>
 	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
-	<value condition="![String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(ShowDVDCases2)]">14</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])] + !Skin.HasSetting(ShowDVDCases2)">14</value>
 	<value condition="![[String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(ShowDVDCases)] | !String.IsEqual(Container.Viewmode,$LOCALIZE[31013])]">5</value>
 	<value condition="![[String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + !Skin.HasSetting(ShowDVDCases)] | !String.IsEqual(Container.Viewmode,$LOCALIZE[31016])]">15</value>
 	<value condition="![[[String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)] | !String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014])]">6</value>
@@ -385,6 +385,7 @@
 	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
 	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
 	<value condition="Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Property(Artist_Description))">$INFO[MusicPlayer.Property(Artist_Description)]</value>
+	<value condition="Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtistBiography))">$INFO[Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)]</value>
 	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !String.IsEmpty(ListItem.AddonDescription) + !String.IsEmpty(ListItem.AddonSummary)">[COLOR=yellow]$INFO[ListItem.AddonSummary][/COLOR][CR][CR]$INFO[ListItem.AddonDescription]</value>
 	<value description="הרחבה" condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !String.IsEmpty(ListItem.AddonDescription) + String.IsEmpty(ListItem.AddonSummary)">[COLOR=yellow]$INFO[ListItem.AddonSummary][/COLOR][CR][CR]$INFO[ListItem.AddonDescription]</value>
 	<value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
@@ -448,6 +449,7 @@
 	<value description="תמונות" condition="Window.IsVisible(MyPics.xml) + !String.IsEmpty(ListItem.FileName)">$INFO[ListItem.FileName]</value>
 	<!--<value condition="[Container.content(addons) | Window.IsVisible(AddonBrowser.xml)] + !Window.IsVisible(DialogAddonInfo.xml)"></value>-->
 	<value condition="Window.IsVisible(MyWeather.xml) + !String.IsEmpty(Container(50).ListItem.Label)">$INFO[Control.GetLabel(31)] - $INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</value>
+	<value condition="Window.IsVisible(MyMusicNav.xml) + !String.IsEmpty(Control.GetLabel(18))">$INFO[Control.GetLabel(18)]</value>
 	<value condition="Window.IsVisible(Home.xml) + String.IsEqual(Window(home).Property(Button.ID),97)">$INFO[System.Date(DDD)] - $INFO[Weather.Temperature]</value>
 	<value condition="!Window.IsVisible(DialogVideoInfo.xml) + !String.IsEmpty(Container(50).ListItem.Label)">$INFO[Container(50).ListItem.Label]</value>
 	<value condition="Window.IsVisible(SettingsCategory.xml) + [ControlGroup(3).HasFocus | ControlGroup(5).HasFocus]">$INFO[System.CurrentControl]</value>
@@ -642,6 +644,10 @@
   </variable>
   <variable name="TopVideoInformation1112b">
     <value condition="Integer.IsGreater(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$LOCALIZE[33054]</value>
+  </variable>
+  <variable name="fanartmv">
+    <value condition="!String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
+    <value>special://skin/resources/fanart.jpg</value>
   </variable>
   <variable name="VideoInHours">
     <value description="N/A" condition="[!String.Contains(ListItem.Duration,:) + Integer.IsGreater(ListItem.Duration,285)] | [VideoPlayer.IsFullscreen + Integer.IsGreater(Player.Duration,17100)]">5</value>

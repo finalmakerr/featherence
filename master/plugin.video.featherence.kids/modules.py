@@ -2524,7 +2524,6 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_ch=UCTnJbX128x0hnK9f5ynC2tg') #DuckDuck Fun TV
 	list.append('&youtube_ch=UCDZgrBvmY6tXt8gb4Z-7w9A') #Jude Bryant
-	list.append('&youtube_ch=UCfEY-eCu-Pp7OfbDS2sJuIw') #jkidkidkid
 	list.append('&youtube_ch=UCvTHynhs6QldpcAJ_a3jl5g') #Kids Funny Cars Toons
 	list.append('&youtube_ch=UCtsIgvwaT1icVCi0Xbv1s0A') #Colors Kids TV
 	addDir('-' + 'Suprize Party :)',list,17,"http://www.bestsurpriseeggvideos.com/wp-content/uploads/2015/12/24-surprise-eggs-unboxing-LPS-My-Little-PONY-The-SMURFS-Party-Animals-Shrek-Disney-eggs-Compilatio-750x400.jpeg","I don't know why.. but kids are loving it :)",'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/iibZa2tbGEg/maxresdefault.jpg"))

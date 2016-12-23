@@ -273,6 +273,14 @@
 			<width>370</width>
 		  </control>
 	  </control>
+	  <control type="button" id="7012">
+	    <animation condition="!Control.HasFocus(7012)" effect="fade" start="20" end="0" time="100" reversible="true">Conditional</animation>
+		<posy>-44</posy>
+		<posx>-60</posx>
+		<onclick>ActivateWindow(12901)</onclick>
+		<width>2040</width>
+		<visible>Player.HasMedia | Window.IsVisible(MusicVisualisation.xml)</visible>
+	  </control>
 	</control>
 	<include>TouchSupport</include>
   </include>

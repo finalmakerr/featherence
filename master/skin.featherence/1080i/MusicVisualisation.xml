@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2006" type="dialog">
-  <defaultcontrol always="true">10</defaultcontrol>
+  <defaultcontrol always="true">100</defaultcontrol>
   <onload condition="System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
   <controls>
     <control type="image" description="">
 	  <include>Fade40</include>
 	  <height>1080</height>
-	  <texture>special://skin/resources/fanart.jpg</texture>
+	  <texture>$VAR[fanartmv]</texture>
 	  <width>1920</width>
 	  <visible>String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
 	</control>
 	
-	<control type="button" id="10">
-	  <onup condition="Player.HasAudio">ActivateWindow(12901)</onup>
-	  <onclick>ReplaceWindow(Home.xml)</onclick>
-	  <visible>false</visible>
+	<control type="button" id="100">
+	  <animation condition="true" effect="fade" start="0" end="0">Conditional</animation>
+	  <height>1040</height>
+	  <posy>35</posy>
+	  <width>1920</width>
+	  <onclick>Action(Back)</onclick>
+	  <visible>true</visible>
 	</control>
-	<control type="visualisation">
-		<height>1080</height>
-		<width>1920</width>
-		<visible>Player.HasAudio</visible>
-	</control>
-	
 	<control type="multiimage">
 		<posx>0</posx>
-		<posy>50</posy>
-		<width>1280</width>
-		<height>720</height>
+		<posy>0</posy>
+		<width>1920</width>
+		<height>1080</height>
 		<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 		<aspectratio>keep</aspectratio>
 		<timeperimage>10000</timeperimage>
@@ -34,6 +31,23 @@
 		<randomize>true</randomize>
 		<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
 	</control>
+	
+	<control type="visualisation" id="2">
+		<height>1080</height>
+		<width>1920</width>
+		<visible>Player.HasAudio</visible>
+	</control>
+	
+	<control type="label">
+	  <label>$INFO[Window(Visualisation).Property(ArtistSlideshow)]</label>
+	  <height>100</height>
+	  <font>size28</font>
+	  <posy>150</posy>
+	  <posx>50</posx>
+	  <wrapmultiline>true</wrapmultiline>
+	  <visible>Skin.HasSetting(Admin)</visible>
+	</control>
+	
 	<include>TopVideoInformation</include>
 	<include>TopInformation</include>
 	<include>TouchSupport</include>

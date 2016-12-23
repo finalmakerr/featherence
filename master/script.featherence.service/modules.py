@@ -7,7 +7,8 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
-	installaddonP('script.module.unidecode', update=False)
+	xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
+	#installaddonP('script.module.unidecode', update=False)
 	#xbmc.executebuiltin('ActivateWindow(10157)')
 	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=4)')
 	#xbmc.executebuiltin('ActivateWindow(Music,root)')
@@ -1288,7 +1289,7 @@ def mode70(value, admin, name, printpoint, property_temp):
 			'''---------------------------'''
 	else:
 		printpoint = printpoint + "9"
-		installaddon(addon, update=True)
+		installaddonP(addon, update=True)
 	
 	text = "input" + space2 + input + space + 'value' + space2 + str(value) + newline + \
 	"INFO" + space2 + "listitemlabel" + space2 + listitemlabel + newline + "listitemtvshowtitle" + space2 + listitemtvshowtitle + newline + \

@@ -23,6 +23,15 @@
         <width>1800</width>
         <height>500</height>
         <itemgap>10</itemgap>
+		<control type="label" id="1" description="numpad seek time">
+          <width>1800</width>
+          <height>50</height>
+          <align>left</align>
+          <font>Size24</font>
+          <aligny>center</aligny>
+          <label>$INFO[Player.SeekNumeric]</label>
+		  <visible>Skin.HasSetting(Admin)</visible>
+        </control>
         <control type="label" id="10" description="row 1 sys label">
           <width>1800</width>
           <height>50</height>

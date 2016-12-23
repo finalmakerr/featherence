@@ -2,10 +2,10 @@
 <window>
   <defaultcontrol always="true">5</defaultcontrol>
   <controls>
-    <include condition="Window.IsVisible(10152)">BottomCenterDialogMediaFilter</include>
+    <include condition="Window.IsVisible(10152)" description="mediafilter">DialogSettings</include>
     <include condition="Window.IsVisible(10123) | Window.IsVisible(10124)">LeftMenuVideoOSDSettings</include>
     <!--<include description="DialogAudioDSPSettings" condition="Window.IsVisible(10124)"></include>-->
-    <include condition="Window.IsVisible(10132)">BottomCenterDialogContentSettings</include>
+    <include condition="Window.IsVisible(10132)" description="contentsettings">DialogSettings</include>
     <include condition="Window.IsVisible(10130)">BottomCenterDialogProfileSettings</include>
     <include condition="Window.IsVisible(10131)">BottomCenterDialogLockSettings</include>
     <include condition="Window.IsVisible(10602)">DialogPVRTimerSettings</include>

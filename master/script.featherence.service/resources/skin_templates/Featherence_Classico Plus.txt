@@ -1,4 +1,9 @@
 ------------------------
+Featherence Classico Plus (18-Dec-16)
+------------------------
+- Added OpenSubtitles login information.
+
+------------------------
 Featherence Classico Plus (19-Nov-16)
 ------------------------
 - Minor bug fix with YouTube sub buttons.

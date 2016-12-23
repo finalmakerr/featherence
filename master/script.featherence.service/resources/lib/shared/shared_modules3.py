@@ -797,7 +797,9 @@ def MultiVideos_play2(finalurl, pl, playlist, printpoint):
 			plugin = regex_from_to(plugin, 'plugin://', '?', excluding=True)
 			if plugin != "": installaddon(plugin, update=True)
 			
-		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl) ; xbmc.sleep(2000)
+		xbmc.Player().play(pl) ; xbmc.sleep(2000)
+		#xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl) ; xbmc.sleep(2000)
+		
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo') ; dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)') ; dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)') ; dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)') ; dialogselectW = xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)')
 		while count < 20 and not playerhasvideo and not dialogokW and not xbmc.abortRequested:
 			xbmc.sleep(200)

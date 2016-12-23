@@ -624,7 +624,7 @@
    </include>
    
    <include name="TopInformationSize2">
-     <animation condition="Skin.HasSetting(TopInformationSize) + [ [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml) | Window.IsVisible(MyPVRChannels.xml)] + ![String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] ]" effect="zoom" center="0,-320" start="100,98" end="100,98" time="0" reversible="false">Conditional</animation>
+     <animation condition="Skin.HasSetting(TopInformationSize) + [ [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyPlaylist.xml) | Window.IsVisible(MyPVRChannels.xml)] + ![String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] ]" effect="zoom" center="0,-320" start="100,98" end="100,98" time="0" reversible="false">Conditional</animation>
      <animation condition="Skin.HasSetting(TopInformationSize) + [ Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml) ]" effect="zoom" center="0,-320" start="100,98" end="100,98" time="0" reversible="false">Conditional</animation>
    </include>
    
