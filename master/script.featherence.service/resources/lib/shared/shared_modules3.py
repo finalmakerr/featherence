@@ -19,7 +19,6 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	desc = str(to_utf8(desc))
 	fanart = str(to_utf8(fanart))
 	
-	
 	if '$LOCALIZE' in name or '$ADDON' in name: name = xbmc.getInfoLabel(name)
 	
 	if num == None: num = ""
@@ -1056,14 +1055,17 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 				
 				if "&youtube_pl=" in x or "&youtube_ch=" in x or '&youtube_id=' in x:
 					if onlydata == True:
-						id_ = str(prms['items'][i][u'id'])
+						try: id_ = str(prms['items'][i][u'id'])
+						except: pass
 					else:
 						try: id_ = str(prms['items'][i][u'snippet'][u'resourceId'][u'videoId']) #Video ID (Playlist)
 						except:
 							try: playlistid_ = str(prms['items'][i][u'id'][u'playlistId'])
 							except:
 								try: id_ = str(prms['items'][i][u'id'][u'videoId'])
-								except: id_ = str(prms['items'][i][u'id'])
+								except:
+									try: id_ = str(prms['items'][i][u'id'])
+									except: id_ = ""
 								
 				elif "&youtube_se=" in x or '&custom_se=' in x:
 					if onlydata == True:
@@ -1337,6 +1339,7 @@ def TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 			else: extra = ""
 			if scriptfeatherenceservice_random != "": returned = 'ok'
 			else:
+				#if (xbmc.getCondVisibility('Window.Previous(VideoFullScreen.xml)') or xbmc.getCondVisibility('Window.Previous(DialogBusy.xml)') or xbmc.getCondVisibility('Window.Previous(VideoOSD.xml)')) and xbmc.getCondVisibility('Player.HasVideo'):
 				if General_TVModeForce == "true": returned = 'ok'
 				else:
 					returned = dialogyesno(addonString_servicefeatherence(32412).encode('utf-8'), extra)
