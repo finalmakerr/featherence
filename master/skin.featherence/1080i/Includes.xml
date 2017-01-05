@@ -206,11 +206,25 @@
 				
 				<posx>600</posx>
 				<scroll>false</scroll>
-				<!--<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127) + [!Player.HasMedia | Window.IsVisible(MyPics.xml) | Window.IsVisible(SlideShow.xml) | Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(313) | Control.HasFocus(314) | Control.HasFocus(315)]</visible>-->
+				<width>720</width>
+				<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127)</visible>
+				<visible>!Window.IsVisible(DialogNotification.xml)</visible>
+				<visible>!Control.IsVisible(1721) + String.IsEmpty(Control.GetLabel(3620))</visible>
+			  </control>
+			  <control type="label" id="3620" description="אמצע CustomHomeCustomizer">
+				<aligny>top</aligny>
+				<textcolor>$VAR[TopInformationFontColor]</textcolor>
+				<include>LabelC12</include>
+				<include>Fade7</include>
+				<label>$VAR[TopInformation3.2]</label>
+				
+				<posx>600</posx>
+				<scroll>true</scroll>
 				<width>720</width>
 				<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127)</visible>
 				<visible>!Window.IsVisible(DialogNotification.xml)</visible>
 				<visible>!Control.IsVisible(1721)</visible>
+				<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 			  </control>
 			  <control type="label" id="1127" description="(HasMedia) אמצע">
 				<aligny>top</aligny>

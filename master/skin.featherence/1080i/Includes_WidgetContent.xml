@@ -1650,6 +1650,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw17_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id17])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_18">
@@ -1961,6 +1962,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw18_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id18])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_19">
@@ -2272,6 +2274,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw19_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id19])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
 
@@ -2584,6 +2587,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw90_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id90])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_91">
@@ -2895,6 +2899,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw91_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id91])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_92">
@@ -3206,6 +3211,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw92_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.HasSetting(pwd90)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd92)</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_93">
@@ -3517,6 +3523,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw93_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id93])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_94">
@@ -3828,6 +3835,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw94_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id94])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_95">
@@ -4139,6 +4147,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw95_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id95])</onclick>
+	  <visible>false</visible>
 	</item>
   </include> 
   <include name="WidgetContent_96">
@@ -4450,6 +4459,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw96_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id96])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_97">
@@ -4761,6 +4771,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw97_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id97])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_98">
@@ -5072,6 +5083,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw98_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id98])</onclick>
+	  <visible>false</visible>
 	</item>
   </include> 
   <include name="WidgetContent_99">
@@ -5383,6 +5395,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw99_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id99])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   
@@ -5695,6 +5708,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw100_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id100])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_101">
@@ -6006,6 +6020,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw101_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id101])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_102">
@@ -6317,6 +6332,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw102_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id102])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_103">
@@ -6628,6 +6644,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw103_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id103])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_104">
@@ -6939,6 +6956,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw104_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id104])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_105">
@@ -7250,6 +7268,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw105_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id105])</onclick>
+	  <visible>false</visible>
 	</item>
   </include> 
   <include name="WidgetContent_106">
@@ -7561,6 +7580,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw106_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id106])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_107">
@@ -7872,6 +7892,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw107_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id107])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_108">
@@ -8183,6 +8204,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw108_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id108])</onclick>
+	  <visible>false</visible>
 	</item>
   </include> 
   <include name="WidgetContent_109">
@@ -8494,6 +8516,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw109_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id109])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
 	
@@ -8806,6 +8829,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw110_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id110])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_111">
@@ -9117,6 +9141,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw111_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id111])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_112">
@@ -9428,6 +9453,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw112_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id112])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_113">
@@ -9739,6 +9765,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw113_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id113])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_114">
@@ -10050,6 +10077,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw114_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id114])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_115">
@@ -10361,6 +10389,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw115_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id115])</onclick>
+	  <visible>false</visible>
 	</item>
   </include> 
   <include name="WidgetContent_116">
@@ -10672,6 +10701,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw116_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id116])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_117">
@@ -10983,6 +11013,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw117_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id117])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
   <include name="WidgetContent_118">
@@ -11294,6 +11325,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw118_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id118])</onclick>
+	  <visible>false</visible>
 	</item>
   </include> 
   <include name="WidgetContent_119">
@@ -11605,6 +11637,7 @@
 	  <onclick description="openButton" condition="Window.IsVisible(Home.xml)">$INFO[Skin.String(actionw119_119)]</onclick>
 	  <include>editButton_Widget</include>
 	  <onclick description="PassProtect" condition="Window.IsVisible(Home.xml) + Skin.String(PassProtect)">RunScript(script.featherence.service,,?mode=6&amp;value=pwd$VAR[id119])</onclick>
+	  <visible>false</visible>
 	</item>
   </include>
 </includes>

@@ -2441,7 +2441,7 @@ def mode232(value, admin, name, printpoint):
 	'''------------------------------
 	---ACTION-BUTTON-----------------
 	------------------------------'''
-	id1 = "" ; id2 = "" ; extra = "" ; TypeError = "" ; xicon = ""
+	id1 = "" ; id2 = "" ; extra = "" ; TypeError = "" ; xicon = "" ; count = 0
 	if printpoint != "": printpoint = printpoint + "_"
 	
 	setProperty('mode232', 'true', type="home")
@@ -2486,7 +2486,7 @@ def mode232(value, admin, name, printpoint):
 				'''Main Action'''
 				printpoint = printpoint + "x1"
 				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]'+Action_Thumbnail+Action_Label+')')
-			elif custom1138W:	
+			elif custom1138W:
 				'''Sub Action'''
 				printpoint = printpoint + "x2"
 				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]'+Action_Thumbnail+Action_Label+')')
@@ -2533,6 +2533,7 @@ def mode232(value, admin, name, printpoint):
 	"xaction" + space2 + str(xaction) + newline + \
 	"xicon" + space2 + str(xicon) + newline + \
 	"xlabel" + space2 + str(xlabel) + newline + \
+	"count" + space2 + str(count) + newline + \
 	extra
 	'''---------------------------'''
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")

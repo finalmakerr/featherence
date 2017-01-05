@@ -454,6 +454,11 @@
 	<value condition="!Window.IsVisible(DialogVideoInfo.xml) + !String.IsEmpty(Container(50).ListItem.Label)">$INFO[Container(50).ListItem.Label]</value>
 	<value condition="Window.IsVisible(SettingsCategory.xml) + [ControlGroup(3).HasFocus | ControlGroup(5).HasFocus]">$INFO[System.CurrentControl]</value>
 	<value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRGuideOSD.xml)] + !String.IsEmpty(Container(11).ListItem(0).Label)">$INFO[Container(11).ListItem(0).Label]</value>
+	<value condition="Window.IsVisible(SettingsSystemInfo.xml) + ControlGroup(100).HasFocus(95)">$LOCALIZE[20037]</value>
+	<value condition="Window.IsVisible(SettingsSystemInfo.xml) + ControlGroup(100).HasFocus(94)">$LOCALIZE[13277]</value>
+	<value condition="Window.IsVisible(SettingsSystemInfo.xml) + ControlGroup(100).HasFocus(96)">$LOCALIZE[13279]</value>
+	<value condition="Window.IsVisible(SettingsSystemInfo.xml) + ControlGroup(100).HasFocus(97)">$LOCALIZE[13280]</value>
+	<value condition="Window.IsVisible(SettingsSystemInfo.xml) + ControlGroup(100).HasFocus(98)">$LOCALIZE[13281]</value>
 	<value condition="!String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
 	<value>...</value>
   </variable>

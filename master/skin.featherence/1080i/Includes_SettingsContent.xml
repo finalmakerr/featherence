@@ -188,6 +188,12 @@
 	    <width>245</width>
 	    <label>13281</label>
 	  </control>
+	  <!--<control type="button" id="100" description="Privacy Policy">
+	    <height>70</height>
+		<posy>0</posy>
+	    <width>245</width>
+	    <label>12389</label>
+	  </control>-->
 
   </include>
   
@@ -1662,7 +1668,7 @@
 	<control type="label" id="23">
 	  <description>Memory Text</description>
 	  <font>size26</font>
-	  <label>$LOCALIZE[31021] $INFO[system.memory(used.percent)]</label>
+	  <label>Memory $INFO[system.memory(used.percent)]</label>
 	</control>
 	<control type="progress" id="24">
 	  <description>Memory BAR</description>
@@ -1674,6 +1680,14 @@
 	  <lefttexture border="6,5,0,5">MusicOSD/ProgressL.png</lefttexture>
 	  <overlaytexture>-</overlaytexture>
 	  <info>system.memory(used)</info>
+	</control>
+	
+	<control type="textbox" id="30" description="">
+	    <height>500</height>
+		<posy>-500</posy>
+	    <width>920</width>
+	    <label>-</label>
+		
 	</control>
 	<control type="label" id="2">
 	  <description>Label 2</description>
@@ -1735,6 +1749,7 @@
 	  
 	  <font>size27</font>
 	</control>
+
   </include>
   
   <include name="Content_Settings_50" description="Settings.xml">

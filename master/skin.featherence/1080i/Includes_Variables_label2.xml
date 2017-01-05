@@ -665,4 +665,739 @@
     <value condition="!Skin.HasSetting(51over50)">$LOCALIZE[31524]: $LOCALIZE[31011]</value>
 	<value condition="Skin.HasSetting(51over50)">$LOCALIZE[31524]: $LOCALIZE[31010]</value>
   </variable>
+  
+  <variable name="TopInformation3.2">
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),90)">$INFO[Skin.String(action90)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),91)">$INFO[Skin.String(action91)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),92)">$INFO[Skin.String(action92)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),93)">$INFO[Skin.String(action93)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),94)">$INFO[Skin.String(action94)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),95)">$INFO[Skin.String(action95)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),96)">$INFO[Skin.String(action96)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),97)">$INFO[Skin.String(action97)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),98)">$INFO[Skin.String(action98)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),99)">$INFO[Skin.String(action99)]</value>
+	
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),100)">$INFO[Skin.String(action100)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),101)">$INFO[Skin.String(action101)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),102)">$INFO[Skin.String(action102)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),103)">$INFO[Skin.String(action103)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),104)">$INFO[Skin.String(action104)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),105)">$INFO[Skin.String(action105)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),106)">$INFO[Skin.String(action106)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),107)">$INFO[Skin.String(action107)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),108)">$INFO[Skin.String(action108)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),109)">$INFO[Skin.String(action109)]</value>
+	
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),110)">$INFO[Skin.String(action110)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),111)">$INFO[Skin.String(action111)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),112)">$INFO[Skin.String(action112)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),113)">$INFO[Skin.String(action113)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),114)">$INFO[Skin.String(action114)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),115)">$INFO[Skin.String(action115)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),116)">$INFO[Skin.String(action116)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),117)">$INFO[Skin.String(action117)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),118)">$INFO[Skin.String(action118)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),119)">$INFO[Skin.String(action119)]</value>
+	
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),90_90)">$INFO[Skin.String(action90_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),90_100)">$INFO[Skin.String(action90_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),90_101)">$INFO[Skin.String(action90_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),90_102)">$INFO[Skin.String(action90_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),90_103)">$INFO[Skin.String(action90_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),90_104)">$INFO[Skin.String(action90_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),90_105)">$INFO[Skin.String(action90_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),90_106)">$INFO[Skin.String(action90_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),90_107)">$INFO[Skin.String(action90_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),90_108)">$INFO[Skin.String(action90_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),90_109)">$INFO[Skin.String(action90_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),91_90)">$INFO[Skin.String(action91_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),91_100)">$INFO[Skin.String(action91_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),91_101)">$INFO[Skin.String(action91_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),91_102)">$INFO[Skin.String(action91_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),91_103)">$INFO[Skin.String(action91_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),91_104)">$INFO[Skin.String(action91_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),91_105)">$INFO[Skin.String(action91_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),91_106)">$INFO[Skin.String(action91_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),91_107)">$INFO[Skin.String(action91_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),91_108)">$INFO[Skin.String(action91_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),91_109)">$INFO[Skin.String(action91_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),92_90)">$INFO[Skin.String(action92_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),92_100)">$INFO[Skin.String(action92_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),92_101)">$INFO[Skin.String(action92_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),92_102)">$INFO[Skin.String(action92_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),92_103)">$INFO[Skin.String(action92_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),92_104)">$INFO[Skin.String(action92_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),92_105)">$INFO[Skin.String(action92_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),92_106)">$INFO[Skin.String(action92_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),92_107)">$INFO[Skin.String(action92_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),92_108)">$INFO[Skin.String(action92_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),92_109)">$INFO[Skin.String(action92_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),93_90)">$INFO[Skin.String(action93_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),93_100)">$INFO[Skin.String(action93_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),93_101)">$INFO[Skin.String(action93_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),93_102)">$INFO[Skin.String(action93_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),93_103)">$INFO[Skin.String(action93_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),93_104)">$INFO[Skin.String(action93_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),93_105)">$INFO[Skin.String(action93_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),93_106)">$INFO[Skin.String(action93_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),93_107)">$INFO[Skin.String(action93_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),93_108)">$INFO[Skin.String(action93_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),93_109)">$INFO[Skin.String(action93_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),94_90)">$INFO[Skin.String(action94_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),94_100)">$INFO[Skin.String(action94_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),94_101)">$INFO[Skin.String(action94_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),94_102)">$INFO[Skin.String(action94_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),94_103)">$INFO[Skin.String(action94_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),94_104)">$INFO[Skin.String(action94_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),94_105)">$INFO[Skin.String(action94_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),94_106)">$INFO[Skin.String(action94_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),94_107)">$INFO[Skin.String(action94_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),94_108)">$INFO[Skin.String(action94_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),94_109)">$INFO[Skin.String(action94_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),95_90)">$INFO[Skin.String(action95_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),95_100)">$INFO[Skin.String(action95_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),95_101)">$INFO[Skin.String(action95_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),95_102)">$INFO[Skin.String(action95_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),95_103)">$INFO[Skin.String(action95_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),95_104)">$INFO[Skin.String(action95_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),95_105)">$INFO[Skin.String(action95_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),95_106)">$INFO[Skin.String(action95_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),95_107)">$INFO[Skin.String(action95_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),95_108)">$INFO[Skin.String(action95_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),95_109)">$INFO[Skin.String(action95_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),96_90)">$INFO[Skin.String(action96_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),96_100)">$INFO[Skin.String(action96_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),96_101)">$INFO[Skin.String(action96_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),96_102)">$INFO[Skin.String(action96_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),96_103)">$INFO[Skin.String(action96_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),96_104)">$INFO[Skin.String(action96_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),96_105)">$INFO[Skin.String(action96_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),96_106)">$INFO[Skin.String(action96_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),96_107)">$INFO[Skin.String(action96_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),96_108)">$INFO[Skin.String(action96_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),96_109)">$INFO[Skin.String(action96_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),97_90)">$INFO[Skin.String(action97_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),97_100)">$INFO[Skin.String(action97_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),97_101)">$INFO[Skin.String(action97_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),97_102)">$INFO[Skin.String(action97_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),97_103)">$INFO[Skin.String(action97_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),97_104)">$INFO[Skin.String(action97_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),97_105)">$INFO[Skin.String(action97_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),97_106)">$INFO[Skin.String(action97_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),97_107)">$INFO[Skin.String(action97_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),97_108)">$INFO[Skin.String(action97_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),97_109)">$INFO[Skin.String(action97_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),98_90)">$INFO[Skin.String(action98_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),98_100)">$INFO[Skin.String(action98_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),98_101)">$INFO[Skin.String(action98_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),98_102)">$INFO[Skin.String(action98_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),98_103)">$INFO[Skin.String(action98_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),98_104)">$INFO[Skin.String(action98_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),98_105)">$INFO[Skin.String(action98_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),98_106)">$INFO[Skin.String(action98_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),98_107)">$INFO[Skin.String(action98_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),98_108)">$INFO[Skin.String(action98_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),98_109)">$INFO[Skin.String(action98_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),99_90)">$INFO[Skin.String(action99_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),99_100)">$INFO[Skin.String(action99_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),99_101)">$INFO[Skin.String(action99_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),99_102)">$INFO[Skin.String(action99_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),99_103)">$INFO[Skin.String(action99_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),99_104)">$INFO[Skin.String(action99_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),99_105)">$INFO[Skin.String(action99_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),99_106)">$INFO[Skin.String(action99_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),99_107)">$INFO[Skin.String(action99_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),99_108)">$INFO[Skin.String(action99_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),99_109)">$INFO[Skin.String(action99_109)]</value>
+  
+  
+    <value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),100_90)">$INFO[Skin.String(action100_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),100_100)">$INFO[Skin.String(action100_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),100_101)">$INFO[Skin.String(action100_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),100_102)">$INFO[Skin.String(action100_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),100_103)">$INFO[Skin.String(action100_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),100_104)">$INFO[Skin.String(action100_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),100_105)">$INFO[Skin.String(action100_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),100_106)">$INFO[Skin.String(action100_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),100_107)">$INFO[Skin.String(action100_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),100_108)">$INFO[Skin.String(action100_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),100_109)">$INFO[Skin.String(action100_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),101_90)">$INFO[Skin.String(action101_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),101_100)">$INFO[Skin.String(action101_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),101_101)">$INFO[Skin.String(action101_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),101_102)">$INFO[Skin.String(action101_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),101_103)">$INFO[Skin.String(action101_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),101_104)">$INFO[Skin.String(action101_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),101_105)">$INFO[Skin.String(action101_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),101_106)">$INFO[Skin.String(action101_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),101_107)">$INFO[Skin.String(action101_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),101_108)">$INFO[Skin.String(action101_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),101_109)">$INFO[Skin.String(action101_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),102_90)">$INFO[Skin.String(action102_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),102_100)">$INFO[Skin.String(action102_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),102_101)">$INFO[Skin.String(action102_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),102_102)">$INFO[Skin.String(action102_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),102_103)">$INFO[Skin.String(action102_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),102_104)">$INFO[Skin.String(action102_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),102_105)">$INFO[Skin.String(action102_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),102_106)">$INFO[Skin.String(action102_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),102_107)">$INFO[Skin.String(action102_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),102_108)">$INFO[Skin.String(action102_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),102_109)">$INFO[Skin.String(action102_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),103_90)">$INFO[Skin.String(action103_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),103_100)">$INFO[Skin.String(action103_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),103_101)">$INFO[Skin.String(action103_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),103_102)">$INFO[Skin.String(action103_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),103_103)">$INFO[Skin.String(action103_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),103_104)">$INFO[Skin.String(action103_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),103_105)">$INFO[Skin.String(action103_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),103_106)">$INFO[Skin.String(action103_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),103_107)">$INFO[Skin.String(action103_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),103_108)">$INFO[Skin.String(action103_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),103_109)">$INFO[Skin.String(action103_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),104_90)">$INFO[Skin.String(action104_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),104_100)">$INFO[Skin.String(action104_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),104_101)">$INFO[Skin.String(action104_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),104_102)">$INFO[Skin.String(action104_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),104_103)">$INFO[Skin.String(action104_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),104_104)">$INFO[Skin.String(action104_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),104_105)">$INFO[Skin.String(action104_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),104_106)">$INFO[Skin.String(action104_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),104_107)">$INFO[Skin.String(action104_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),104_108)">$INFO[Skin.String(action104_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),104_109)">$INFO[Skin.String(action104_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),105_90)">$INFO[Skin.String(action105_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),105_100)">$INFO[Skin.String(action105_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),105_101)">$INFO[Skin.String(action105_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),105_102)">$INFO[Skin.String(action105_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),105_103)">$INFO[Skin.String(action105_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),105_104)">$INFO[Skin.String(action105_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),105_105)">$INFO[Skin.String(action105_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),105_106)">$INFO[Skin.String(action105_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),105_107)">$INFO[Skin.String(action105_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),105_108)">$INFO[Skin.String(action105_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),105_109)">$INFO[Skin.String(action105_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),106_90)">$INFO[Skin.String(action106_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),106_100)">$INFO[Skin.String(action106_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),106_101)">$INFO[Skin.String(action106_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),106_102)">$INFO[Skin.String(action106_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),106_103)">$INFO[Skin.String(action106_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),106_104)">$INFO[Skin.String(action106_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),106_105)">$INFO[Skin.String(action106_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),106_106)">$INFO[Skin.String(action106_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),106_107)">$INFO[Skin.String(action106_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),106_108)">$INFO[Skin.String(action106_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),106_109)">$INFO[Skin.String(action106_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),107_90)">$INFO[Skin.String(action107_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),107_100)">$INFO[Skin.String(action107_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),107_101)">$INFO[Skin.String(action107_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),107_102)">$INFO[Skin.String(action107_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),107_103)">$INFO[Skin.String(action107_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),107_104)">$INFO[Skin.String(action107_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),107_105)">$INFO[Skin.String(action107_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),107_106)">$INFO[Skin.String(action107_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),107_107)">$INFO[Skin.String(action107_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),107_108)">$INFO[Skin.String(action107_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),107_109)">$INFO[Skin.String(action107_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),108_90)">$INFO[Skin.String(action108_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),108_100)">$INFO[Skin.String(action108_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),108_101)">$INFO[Skin.String(action108_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),108_102)">$INFO[Skin.String(action108_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),108_103)">$INFO[Skin.String(action108_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),108_104)">$INFO[Skin.String(action108_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),108_105)">$INFO[Skin.String(action108_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),108_106)">$INFO[Skin.String(action108_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),108_107)">$INFO[Skin.String(action108_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),108_108)">$INFO[Skin.String(action108_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),108_109)">$INFO[Skin.String(action108_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),109_90)">$INFO[Skin.String(action109_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),109_100)">$INFO[Skin.String(action109_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),109_101)">$INFO[Skin.String(action109_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),109_102)">$INFO[Skin.String(action109_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),109_103)">$INFO[Skin.String(action109_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),109_104)">$INFO[Skin.String(action109_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),109_105)">$INFO[Skin.String(action109_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),109_106)">$INFO[Skin.String(action109_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),109_107)">$INFO[Skin.String(action109_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),109_108)">$INFO[Skin.String(action109_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),109_109)">$INFO[Skin.String(action109_109)]</value>
+  
+    
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),110_90)">$INFO[Skin.String(action110_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),110_100)">$INFO[Skin.String(action110_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),110_101)">$INFO[Skin.String(action110_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),110_102)">$INFO[Skin.String(action110_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),110_103)">$INFO[Skin.String(action110_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),110_104)">$INFO[Skin.String(action110_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),110_105)">$INFO[Skin.String(action110_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),110_106)">$INFO[Skin.String(action110_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),110_107)">$INFO[Skin.String(action110_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),110_108)">$INFO[Skin.String(action110_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),110_109)">$INFO[Skin.String(action110_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),111_90)">$INFO[Skin.String(action111_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),111_100)">$INFO[Skin.String(action111_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),111_101)">$INFO[Skin.String(action111_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),111_102)">$INFO[Skin.String(action111_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),111_103)">$INFO[Skin.String(action111_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),111_104)">$INFO[Skin.String(action111_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),111_105)">$INFO[Skin.String(action111_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),111_106)">$INFO[Skin.String(action111_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),111_107)">$INFO[Skin.String(action111_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),111_108)">$INFO[Skin.String(action111_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),111_109)">$INFO[Skin.String(action111_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),112_90)">$INFO[Skin.String(action112_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),112_100)">$INFO[Skin.String(action112_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),112_101)">$INFO[Skin.String(action112_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),112_102)">$INFO[Skin.String(action112_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),112_103)">$INFO[Skin.String(action112_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),112_104)">$INFO[Skin.String(action112_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),112_105)">$INFO[Skin.String(action112_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),112_106)">$INFO[Skin.String(action112_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),112_107)">$INFO[Skin.String(action112_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),112_108)">$INFO[Skin.String(action112_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),112_109)">$INFO[Skin.String(action112_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),113_90)">$INFO[Skin.String(action113_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),113_100)">$INFO[Skin.String(action113_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),113_101)">$INFO[Skin.String(action113_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),113_102)">$INFO[Skin.String(action113_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),113_103)">$INFO[Skin.String(action113_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),113_104)">$INFO[Skin.String(action113_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),113_105)">$INFO[Skin.String(action113_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),113_106)">$INFO[Skin.String(action113_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),113_107)">$INFO[Skin.String(action113_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),113_108)">$INFO[Skin.String(action113_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),113_109)">$INFO[Skin.String(action113_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),114_90)">$INFO[Skin.String(action114_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),114_100)">$INFO[Skin.String(action114_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),114_101)">$INFO[Skin.String(action114_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),114_102)">$INFO[Skin.String(action114_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),114_103)">$INFO[Skin.String(action114_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),114_104)">$INFO[Skin.String(action114_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),114_105)">$INFO[Skin.String(action114_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),114_106)">$INFO[Skin.String(action114_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),114_107)">$INFO[Skin.String(action114_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),114_108)">$INFO[Skin.String(action114_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),114_109)">$INFO[Skin.String(action114_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),115_90)">$INFO[Skin.String(action115_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),115_100)">$INFO[Skin.String(action115_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),115_101)">$INFO[Skin.String(action115_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),115_102)">$INFO[Skin.String(action115_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),115_103)">$INFO[Skin.String(action115_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),115_104)">$INFO[Skin.String(action115_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),115_105)">$INFO[Skin.String(action115_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),115_106)">$INFO[Skin.String(action115_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),115_107)">$INFO[Skin.String(action115_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),115_108)">$INFO[Skin.String(action115_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),115_109)">$INFO[Skin.String(action115_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),116_90)">$INFO[Skin.String(action116_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),116_100)">$INFO[Skin.String(action116_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),116_101)">$INFO[Skin.String(action116_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),116_102)">$INFO[Skin.String(action116_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),116_103)">$INFO[Skin.String(action116_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),116_104)">$INFO[Skin.String(action116_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),116_105)">$INFO[Skin.String(action116_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),116_106)">$INFO[Skin.String(action116_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),116_107)">$INFO[Skin.String(action116_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),116_108)">$INFO[Skin.String(action116_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),116_109)">$INFO[Skin.String(action116_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),117_90)">$INFO[Skin.String(action117_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),117_100)">$INFO[Skin.String(action117_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),117_101)">$INFO[Skin.String(action117_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),117_102)">$INFO[Skin.String(action117_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),117_103)">$INFO[Skin.String(action117_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),117_104)">$INFO[Skin.String(action117_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),117_105)">$INFO[Skin.String(action117_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),117_106)">$INFO[Skin.String(action117_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),117_107)">$INFO[Skin.String(action117_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),117_108)">$INFO[Skin.String(action117_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),117_109)">$INFO[Skin.String(action117_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),118_90)">$INFO[Skin.String(action118_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),118_100)">$INFO[Skin.String(action118_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),118_101)">$INFO[Skin.String(action118_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),118_102)">$INFO[Skin.String(action118_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),118_103)">$INFO[Skin.String(action118_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),118_104)">$INFO[Skin.String(action118_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),118_105)">$INFO[Skin.String(action118_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),118_106)">$INFO[Skin.String(action118_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),118_107)">$INFO[Skin.String(action118_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),118_108)">$INFO[Skin.String(action118_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),118_109)">$INFO[Skin.String(action118_109)]</value>
+	
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),119_90)">$INFO[Skin.String(action119_90)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),119_100)">$INFO[Skin.String(action119_100)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),119_101)">$INFO[Skin.String(action119_101)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),119_102)">$INFO[Skin.String(action119_102)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),119_103)">$INFO[Skin.String(action119_103)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),119_104)">$INFO[Skin.String(action119_104)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),119_105)">$INFO[Skin.String(action119_105)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),119_106)">$INFO[Skin.String(action119_106)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),119_107)">$INFO[Skin.String(action119_107)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),119_108)">$INFO[Skin.String(action119_108)]</value>
+	<value condition="Window.IsVisible(Custom1138.xml) + String.IsEqual(Window(home).Property(SubButton.ID_),119_109)">$INFO[Skin.String(action119_109)]</value>
+  
+    
+
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),90_100)">$INFO[Skin.String(actionw90_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),90_101)">$INFO[Skin.String(actionw90_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),90_102)">$INFO[Skin.String(actionw90_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),90_103)">$INFO[Skin.String(actionw90_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),90_104)">$INFO[Skin.String(actionw90_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),90_105)">$INFO[Skin.String(actionw90_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),90_106)">$INFO[Skin.String(actionw90_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),90_107)">$INFO[Skin.String(actionw90_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),90_108)">$INFO[Skin.String(actionw90_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),90_109)">$INFO[Skin.String(actionw90_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),91_100)">$INFO[Skin.String(actionw91_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),91_101)">$INFO[Skin.String(actionw91_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),91_102)">$INFO[Skin.String(actionw91_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),91_103)">$INFO[Skin.String(actionw91_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),91_104)">$INFO[Skin.String(actionw91_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),91_105)">$INFO[Skin.String(actionw91_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),91_106)">$INFO[Skin.String(actionw91_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),91_107)">$INFO[Skin.String(actionw91_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),91_108)">$INFO[Skin.String(actionw91_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),91_109)">$INFO[Skin.String(actionw91_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),92_100)">$INFO[Skin.String(actionw92_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),92_101)">$INFO[Skin.String(actionw92_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),92_102)">$INFO[Skin.String(actionw92_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),92_103)">$INFO[Skin.String(actionw92_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),92_104)">$INFO[Skin.String(actionw92_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),92_105)">$INFO[Skin.String(actionw92_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),92_106)">$INFO[Skin.String(actionw92_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),92_107)">$INFO[Skin.String(actionw92_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),92_108)">$INFO[Skin.String(actionw92_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),92_109)">$INFO[Skin.String(actionw92_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),93_100)">$INFO[Skin.String(actionw93_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),93_101)">$INFO[Skin.String(actionw93_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),93_102)">$INFO[Skin.String(actionw93_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),93_103)">$INFO[Skin.String(actionw93_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),93_104)">$INFO[Skin.String(actionw93_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),93_105)">$INFO[Skin.String(actionw93_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),93_106)">$INFO[Skin.String(actionw93_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),93_107)">$INFO[Skin.String(actionw93_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),93_108)">$INFO[Skin.String(actionw93_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),93_109)">$INFO[Skin.String(actionw93_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),94_100)">$INFO[Skin.String(actionw94_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),94_101)">$INFO[Skin.String(actionw94_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),94_102)">$INFO[Skin.String(actionw94_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),94_103)">$INFO[Skin.String(actionw94_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),94_104)">$INFO[Skin.String(actionw94_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),94_105)">$INFO[Skin.String(actionw94_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),94_106)">$INFO[Skin.String(actionw94_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),94_107)">$INFO[Skin.String(actionw94_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),94_108)">$INFO[Skin.String(actionw94_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),94_109)">$INFO[Skin.String(actionw94_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),95_100)">$INFO[Skin.String(actionw95_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),95_101)">$INFO[Skin.String(actionw95_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),95_102)">$INFO[Skin.String(actionw95_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),95_103)">$INFO[Skin.String(actionw95_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),95_104)">$INFO[Skin.String(actionw95_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),95_105)">$INFO[Skin.String(actionw95_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),95_106)">$INFO[Skin.String(actionw95_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),95_107)">$INFO[Skin.String(actionw95_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),95_108)">$INFO[Skin.String(actionw95_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),95_109)">$INFO[Skin.String(actionw95_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),96_100)">$INFO[Skin.String(actionw96_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),96_101)">$INFO[Skin.String(actionw96_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),96_102)">$INFO[Skin.String(actionw96_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),96_103)">$INFO[Skin.String(actionw96_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),96_104)">$INFO[Skin.String(actionw96_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),96_105)">$INFO[Skin.String(actionw96_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),96_106)">$INFO[Skin.String(actionw96_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),96_107)">$INFO[Skin.String(actionw96_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),96_108)">$INFO[Skin.String(actionw96_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),96_109)">$INFO[Skin.String(actionw96_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),97_100)">$INFO[Skin.String(actionw97_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),97_101)">$INFO[Skin.String(actionw97_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),97_102)">$INFO[Skin.String(actionw97_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),97_103)">$INFO[Skin.String(actionw97_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),97_104)">$INFO[Skin.String(actionw97_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),97_105)">$INFO[Skin.String(actionw97_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),97_106)">$INFO[Skin.String(actionw97_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),97_107)">$INFO[Skin.String(actionw97_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),97_108)">$INFO[Skin.String(actionw97_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),97_109)">$INFO[Skin.String(actionw97_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),98_100)">$INFO[Skin.String(actionw98_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),98_101)">$INFO[Skin.String(actionw98_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),98_102)">$INFO[Skin.String(actionw98_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),98_103)">$INFO[Skin.String(actionw98_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),98_104)">$INFO[Skin.String(actionw98_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),98_105)">$INFO[Skin.String(actionw98_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),98_106)">$INFO[Skin.String(actionw98_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),98_107)">$INFO[Skin.String(actionw98_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),98_108)">$INFO[Skin.String(actionw98_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),98_109)">$INFO[Skin.String(actionw98_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),99_100)">$INFO[Skin.String(actionw99_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),99_101)">$INFO[Skin.String(actionw99_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),99_102)">$INFO[Skin.String(actionw99_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),99_103)">$INFO[Skin.String(actionw99_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),99_104)">$INFO[Skin.String(actionw99_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),99_105)">$INFO[Skin.String(actionw99_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),99_106)">$INFO[Skin.String(actionw99_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),99_107)">$INFO[Skin.String(actionw99_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),99_108)">$INFO[Skin.String(actionw99_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),99_109)">$INFO[Skin.String(actionw99_109)]</value>
+  
+  
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),100_100)">$INFO[Skin.String(actionw100_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),100_101)">$INFO[Skin.String(actionw100_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),100_102)">$INFO[Skin.String(actionw100_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),100_103)">$INFO[Skin.String(actionw100_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),100_104)">$INFO[Skin.String(actionw100_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),100_105)">$INFO[Skin.String(actionw100_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),100_106)">$INFO[Skin.String(actionw100_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),100_107)">$INFO[Skin.String(actionw100_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),100_108)">$INFO[Skin.String(actionw100_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),100_109)">$INFO[Skin.String(actionw100_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),101_100)">$INFO[Skin.String(actionw101_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),101_101)">$INFO[Skin.String(actionw101_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),101_102)">$INFO[Skin.String(actionw101_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),101_103)">$INFO[Skin.String(actionw101_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),101_104)">$INFO[Skin.String(actionw101_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),101_105)">$INFO[Skin.String(actionw101_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),101_106)">$INFO[Skin.String(actionw101_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),101_107)">$INFO[Skin.String(actionw101_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),101_108)">$INFO[Skin.String(actionw101_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),101_109)">$INFO[Skin.String(actionw101_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),102_100)">$INFO[Skin.String(actionw102_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),102_101)">$INFO[Skin.String(actionw102_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),102_102)">$INFO[Skin.String(actionw102_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),102_103)">$INFO[Skin.String(actionw102_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),102_104)">$INFO[Skin.String(actionw102_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),102_105)">$INFO[Skin.String(actionw102_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),102_106)">$INFO[Skin.String(actionw102_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),102_107)">$INFO[Skin.String(actionw102_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),102_108)">$INFO[Skin.String(actionw102_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),102_109)">$INFO[Skin.String(actionw102_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),103_100)">$INFO[Skin.String(actionw103_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),103_101)">$INFO[Skin.String(actionw103_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),103_102)">$INFO[Skin.String(actionw103_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),103_103)">$INFO[Skin.String(actionw103_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),103_104)">$INFO[Skin.String(actionw103_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),103_105)">$INFO[Skin.String(actionw103_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),103_106)">$INFO[Skin.String(actionw103_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),103_107)">$INFO[Skin.String(actionw103_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),103_108)">$INFO[Skin.String(actionw103_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),103_109)">$INFO[Skin.String(actionw103_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),104_100)">$INFO[Skin.String(actionw104_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),104_101)">$INFO[Skin.String(actionw104_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),104_102)">$INFO[Skin.String(actionw104_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),104_103)">$INFO[Skin.String(actionw104_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),104_104)">$INFO[Skin.String(actionw104_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),104_105)">$INFO[Skin.String(actionw104_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),104_106)">$INFO[Skin.String(actionw104_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),104_107)">$INFO[Skin.String(actionw104_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),104_108)">$INFO[Skin.String(actionw104_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),104_109)">$INFO[Skin.String(actionw104_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),105_100)">$INFO[Skin.String(actionw105_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),105_101)">$INFO[Skin.String(actionw105_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),105_102)">$INFO[Skin.String(actionw105_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),105_103)">$INFO[Skin.String(actionw105_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),105_104)">$INFO[Skin.String(actionw105_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),105_105)">$INFO[Skin.String(actionw105_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),105_106)">$INFO[Skin.String(actionw105_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),105_107)">$INFO[Skin.String(actionw105_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),105_108)">$INFO[Skin.String(actionw105_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),105_109)">$INFO[Skin.String(actionw105_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),106_100)">$INFO[Skin.String(actionw106_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),106_101)">$INFO[Skin.String(actionw106_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),106_102)">$INFO[Skin.String(actionw106_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),106_103)">$INFO[Skin.String(actionw106_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),106_104)">$INFO[Skin.String(actionw106_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),106_105)">$INFO[Skin.String(actionw106_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),106_106)">$INFO[Skin.String(actionw106_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),106_107)">$INFO[Skin.String(actionw106_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),106_108)">$INFO[Skin.String(actionw106_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),106_109)">$INFO[Skin.String(actionw106_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),107_100)">$INFO[Skin.String(actionw107_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),107_101)">$INFO[Skin.String(actionw107_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),107_102)">$INFO[Skin.String(actionw107_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),107_103)">$INFO[Skin.String(actionw107_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),107_104)">$INFO[Skin.String(actionw107_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),107_105)">$INFO[Skin.String(actionw107_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),107_106)">$INFO[Skin.String(actionw107_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),107_107)">$INFO[Skin.String(actionw107_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),107_108)">$INFO[Skin.String(actionw107_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),107_109)">$INFO[Skin.String(actionw107_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),108_100)">$INFO[Skin.String(actionw108_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),108_101)">$INFO[Skin.String(actionw108_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),108_102)">$INFO[Skin.String(actionw108_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),108_103)">$INFO[Skin.String(actionw108_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),108_104)">$INFO[Skin.String(actionw108_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),108_105)">$INFO[Skin.String(actionw108_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),108_106)">$INFO[Skin.String(actionw108_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),108_107)">$INFO[Skin.String(actionw108_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),108_108)">$INFO[Skin.String(actionw108_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),108_109)">$INFO[Skin.String(actionw108_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),109_100)">$INFO[Skin.String(actionw109_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),109_101)">$INFO[Skin.String(actionw109_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),109_102)">$INFO[Skin.String(actionw109_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),109_103)">$INFO[Skin.String(actionw109_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),109_104)">$INFO[Skin.String(actionw109_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),109_105)">$INFO[Skin.String(actionw109_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),109_106)">$INFO[Skin.String(actionw109_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),109_107)">$INFO[Skin.String(actionw109_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),109_108)">$INFO[Skin.String(actionw109_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),109_109)">$INFO[Skin.String(actionw109_109)]</value>
+  
+    
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),110_100)">$INFO[Skin.String(actionw110_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),110_101)">$INFO[Skin.String(actionw110_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),110_102)">$INFO[Skin.String(actionw110_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),110_103)">$INFO[Skin.String(actionw110_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),110_104)">$INFO[Skin.String(actionw110_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),110_105)">$INFO[Skin.String(actionw110_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),110_106)">$INFO[Skin.String(actionw110_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),110_107)">$INFO[Skin.String(actionw110_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),110_108)">$INFO[Skin.String(actionw110_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),110_109)">$INFO[Skin.String(actionw110_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),111_100)">$INFO[Skin.String(actionw111_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),111_101)">$INFO[Skin.String(actionw111_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),111_102)">$INFO[Skin.String(actionw111_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),111_103)">$INFO[Skin.String(actionw111_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),111_104)">$INFO[Skin.String(actionw111_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),111_105)">$INFO[Skin.String(actionw111_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),111_106)">$INFO[Skin.String(actionw111_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),111_107)">$INFO[Skin.String(actionw111_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),111_108)">$INFO[Skin.String(actionw111_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),111_109)">$INFO[Skin.String(actionw111_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),112_100)">$INFO[Skin.String(actionw112_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),112_101)">$INFO[Skin.String(actionw112_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),112_102)">$INFO[Skin.String(actionw112_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),112_103)">$INFO[Skin.String(actionw112_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),112_104)">$INFO[Skin.String(actionw112_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),112_105)">$INFO[Skin.String(actionw112_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),112_106)">$INFO[Skin.String(actionw112_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),112_107)">$INFO[Skin.String(actionw112_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),112_108)">$INFO[Skin.String(actionw112_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),112_109)">$INFO[Skin.String(actionw112_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),113_100)">$INFO[Skin.String(actionw113_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),113_101)">$INFO[Skin.String(actionw113_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),113_102)">$INFO[Skin.String(actionw113_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),113_103)">$INFO[Skin.String(actionw113_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),113_104)">$INFO[Skin.String(actionw113_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),113_105)">$INFO[Skin.String(actionw113_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),113_106)">$INFO[Skin.String(actionw113_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),113_107)">$INFO[Skin.String(actionw113_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),113_108)">$INFO[Skin.String(actionw113_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),113_109)">$INFO[Skin.String(actionw113_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),114_100)">$INFO[Skin.String(actionw114_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),114_101)">$INFO[Skin.String(actionw114_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),114_102)">$INFO[Skin.String(actionw114_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),114_103)">$INFO[Skin.String(actionw114_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),114_104)">$INFO[Skin.String(actionw114_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),114_105)">$INFO[Skin.String(actionw114_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),114_106)">$INFO[Skin.String(actionw114_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),114_107)">$INFO[Skin.String(actionw114_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),114_108)">$INFO[Skin.String(actionw114_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),114_109)">$INFO[Skin.String(actionw114_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),115_100)">$INFO[Skin.String(actionw115_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),115_101)">$INFO[Skin.String(actionw115_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),115_102)">$INFO[Skin.String(actionw115_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),115_103)">$INFO[Skin.String(actionw115_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),115_104)">$INFO[Skin.String(actionw115_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),115_105)">$INFO[Skin.String(actionw115_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),115_106)">$INFO[Skin.String(actionw115_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),115_107)">$INFO[Skin.String(actionw115_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),115_108)">$INFO[Skin.String(actionw115_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),115_109)">$INFO[Skin.String(actionw115_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),116_100)">$INFO[Skin.String(actionw116_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),116_101)">$INFO[Skin.String(actionw116_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),116_102)">$INFO[Skin.String(actionw116_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),116_103)">$INFO[Skin.String(actionw116_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),116_104)">$INFO[Skin.String(actionw116_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),116_105)">$INFO[Skin.String(actionw116_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),116_106)">$INFO[Skin.String(actionw116_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),116_107)">$INFO[Skin.String(actionw116_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),116_108)">$INFO[Skin.String(actionw116_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),116_109)">$INFO[Skin.String(actionw116_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),117_100)">$INFO[Skin.String(actionw117_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),117_101)">$INFO[Skin.String(actionw117_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),117_102)">$INFO[Skin.String(actionw117_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),117_103)">$INFO[Skin.String(actionw117_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),117_104)">$INFO[Skin.String(actionw117_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),117_105)">$INFO[Skin.String(actionw117_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),117_106)">$INFO[Skin.String(actionw117_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),117_107)">$INFO[Skin.String(actionw117_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),117_108)">$INFO[Skin.String(actionw117_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),117_109)">$INFO[Skin.String(actionw117_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),118_100)">$INFO[Skin.String(actionw118_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),118_101)">$INFO[Skin.String(actionw118_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),118_102)">$INFO[Skin.String(actionw118_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),118_103)">$INFO[Skin.String(actionw118_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),118_104)">$INFO[Skin.String(actionw118_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),118_105)">$INFO[Skin.String(actionw118_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),118_106)">$INFO[Skin.String(actionw118_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),118_107)">$INFO[Skin.String(actionw118_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),118_108)">$INFO[Skin.String(actionw118_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),118_109)">$INFO[Skin.String(actionw118_109)]</value>
+	
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),119_100)">$INFO[Skin.String(actionw119_100)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),119_101)">$INFO[Skin.String(actionw119_101)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),119_102)">$INFO[Skin.String(actionw119_102)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),119_103)">$INFO[Skin.String(actionw119_103)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),119_104)">$INFO[Skin.String(actionw119_104)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),119_105)">$INFO[Skin.String(actionw119_105)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),119_106)">$INFO[Skin.String(actionw119_106)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),119_107)">$INFO[Skin.String(actionw119_107)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),119_108)">$INFO[Skin.String(actionw119_108)]</value>
+	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),119_109)">$INFO[Skin.String(actionw119_109)]</value>
+  
+  </variable>
+  
+  
 </includes>

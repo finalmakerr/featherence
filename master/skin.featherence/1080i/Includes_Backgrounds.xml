@@ -153,10 +153,13 @@
 	  </control>
 	  <control type="image" id="7014" description="פאנארט 2">
 	    <include>fanart3form</include>
-		<height>1080</height>
-		<posy>0</posy>
-		<texture background="true">$VAR[background]</texture>
+		
+		<posx>0</posx>
+		<posy>-1</posy>
+		<height>1081</height>
 		<width>1920</width>
+		<texture background="true">$VAR[background]</texture>
+		
 		<visible>!Skin.HasSetting(background2) | Window.IsVisible(MyWeather.xml)</visible>
 		<visible>!Control.IsVisible(7013) + !String.IsEmpty(Control.GetLabel(70140)) + String.IsEmpty(Control.GetLabel(70130))</visible>
 		<visible>Skin.HasSetting(FailsafeFanart)</visible>

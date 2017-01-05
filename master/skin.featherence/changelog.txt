@@ -2,19 +2,19 @@
 WIP - WORK IN PROGRESS
 ------------------------
 - ??Added option to hide Top Video Information on fullscreen video while skiping back/next.
-+ Added Premiered information to Side List view instead of year when available.
-- Added new option to disable the auto close of the video/audio OSD.
-- Added detail of the current action of a button in skin design window.
+- Added option to disable the auto close of the video/audio OSD.
 - Added auto-build widget feature.
-- Added music visualation support.
-- Added Artist Slideshow support.
 
 ------------------------
-Featherence v0.7.0 (xx-xx-16)
+Featherence v0.7.0 (xx-xx-17)
 ------------------------
 - ***Added Krypton support***.
+- Added action information in skin design window for Buttons, Sub Buttons and Widgets.
+- Added Artist Slideshow support (WIP).
 - Added feature to show video/audio OSD by mouse clicking the top information bar.
 - Added left menu settings icon for skin's views.
++ Added Premiered information to Side List view instead of year when available.
+- Added music visualation support.
 - Added Party Mode feature to music library.
 - Added ScrollBar support to PVR Guide window.
 - Added WINDOW_DIALOG_CMS_OSD_SETTINGS.

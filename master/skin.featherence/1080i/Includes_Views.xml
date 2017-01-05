@@ -437,7 +437,24 @@
 	  <label>$VAR[TopVideoInformation2]</label>
 	  <visible>!Skin.HasSetting(View50_Plus)</visible>
 	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
+	  <visible>![!String.IsEmpty(ListItem.Premiered) + Container.Content(episodes)] | [VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Year)]</visible>
 	</control>
+	
+	<control type="label" description="שנה">
+	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos37</include>
+	  <posx>365</posx>
+	  <posy>40</posy>
+	  <width>110</width>
+	  <height>30</height>
+	  <textcolor>grey</textcolor>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">LabelL8</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelR8</include>
+	  <label>$INFO[ListItem.Premiered]</label>
+	  <visible>!Skin.HasSetting(View50_Plus)</visible>
+	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
+	  <visible>[!String.IsEmpty(ListItem.Premiered) + Container.Content(episodes)] + ![VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Year)]</visible>
+	</control>
+
 	<control type="image" description="דירוג">
 	  
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos38</include>

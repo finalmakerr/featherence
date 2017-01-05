@@ -161,6 +161,9 @@ def TranslatePath(x, filename=True, urlcheck_=False, force=False):
 		returned = x.replace('image://',"",1)
 		
 		returned = returned.replace('%3a',':')
+		returned = returned.replace('%3A',':')
+		returned = returned.replace('%5c',slash)
+		returned = returned.replace('%5C',slash)
 		
 		if returned[-1:] == '/': returned = returned.replace(returned[-1:],"",1)
 		if 'https:' in returned or 'http:' in returned:

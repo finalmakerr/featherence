@@ -11,7 +11,7 @@
 		<visible>[Control.IsVisible(100) + Container(100).HasNext] | !Control.IsVisible(100)</visible>
 		<visible>Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus + Container(22).HasNext | !ControlGroup(22).HasFocus</visible>
 		<visible>[Container(50).HasFocus + Container(50).HasNext] | [Container(51).HasFocus + Container(51).HasNext] | !Window.IsVisible(DialogVideoInfo.xml) + !Container(50).HasFocus + !Container(51).HasFocus | Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus</visible>
-		<visible>[Control.IsVisible(3) + Container(3).HasNext] | !Control.IsVisible(3)</visible>
+		<visible>[Control.IsVisible(3) + Container(3).HasNext] | !Control.IsVisible(3) | Window.IsVisible(SettingsSystemInfo.xml)</visible>
 		<posx>1450</posx>
 		<posy>87</posy>
 		<control type="image" description="לא נבחר">
@@ -19,7 +19,7 @@
 		  <height>40</height>
 		  <texture border="0">images/ArrowNF.png</texture>
 		  <visible>[Control.IsVisible(100) + !Container(100).Position(3)] | !Control.IsVisible(100)</visible>
-		  <visible>[Control.IsVisible(3) + !Container(3).Position(3)] | !Control.IsVisible(3)</visible>
+		  <visible>[Control.IsVisible(3) + !Container(3).Position(3)] | !Control.IsVisible(3) | Window.IsVisible(SettingsSystemInfo.xml)</visible>
 		  <visible>Window.IsVisible(DialogVideoInfo.xml) + [Container(50).HasFocus + !Container(50).Position(4)] | !Container(50).HasFocus | ControlGroup(22).HasFocus</visible>
 		  <visible>Window.IsVisible(DialogVideoInfo.xml) + [Container(51).HasFocus + !Container(51).Position(4)] | !Container(51).HasFocus | ControlGroup(22).HasFocus</visible>
 		  <visible>!Control.IsVisible(2051)</visible>
@@ -32,7 +32,7 @@
 		  <visible>Window.IsVisible(DialogVideoInfo.xml) + [Container(50).HasFocus + Container(50).Position(4)] | !Container(50).HasFocus</visible>
 		  <visible>Window.IsVisible(DialogVideoInfo.xml) + [Container(51).HasFocus + Container(51).Position(4)] | !Container(51).HasFocus</visible>
 		  <visible>!ControlGroup(22).HasFocus</visible>
-		  <visible>!Control.IsVisible(3)</visible>
+		  <visible>!Control.IsVisible(3) | Window.IsVisible(SettingsSystemInfo.xml)</visible>
 		</control>
 	</control>
 	
@@ -47,7 +47,7 @@
 		<visible>Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus + Container(22).HasPrevious | !ControlGroup(22).HasFocus</visible>
 		<visible>Container(50).HasFocus + Container(50).HasPrevious | !Window.IsVisible(DialogVideoInfo.xml) + !Container(50).HasFocus | Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus</visible>
 		<visible>[Container(50).HasFocus + Container(50).HasPrevious] | [Container(51).HasFocus + Container(51).HasPrevious] | !Window.IsVisible(DialogVideoInfo.xml) + !Container(50).HasFocus + !Container(51).HasFocus | Window.IsVisible(DialogVideoInfo.xml) + ControlGroup(22).HasFocus</visible>
-		<visible>[Control.IsVisible(3) + Container(3).HasPrevious] | !Control.IsVisible(3)</visible>
+		<visible>[Control.IsVisible(3) + Container(3).HasPrevious] | !Control.IsVisible(3) | Window.IsVisible(SettingsSystemInfo.xml)</visible>
 		<posx>430</posx>
 		<posy>85</posy>
 		<control type="image" description="לא נבחר">
@@ -55,7 +55,7 @@
 		  <height>40</height>
 		  <texture border="0">images/Arrow2NF.png</texture>
 		  <visible>[Control.IsVisible(100) + !Container(100).Position(0)] | !Control.IsVisible(100)</visible>
-		  <visible>[Control.IsVisible(3) + !Container(3).Position(0)] | !Control.IsVisible(3)</visible>
+		  <visible>[Control.IsVisible(3) + !Container(3).Position(0)] | !Control.IsVisible(3) | Window.IsVisible(SettingsSystemInfo.xml)</visible>
 		  <visible>Window.IsVisible(DialogVideoInfo.xml) + [Container(50).HasFocus + !Container(50).Position(0)] | !Container(50).HasFocus | ControlGroup(22).HasFocus</visible>
 		  <visible>Window.IsVisible(DialogVideoInfo.xml) + [Container(51).HasFocus + !Container(51).Position(0)] | !Container(51).HasFocus | ControlGroup(22).HasFocus</visible>
 		  <visible>!Control.IsVisible(2052)</visible>
@@ -68,7 +68,7 @@
 		  <visible>Window.IsVisible(DialogVideoInfo.xml) + [Container(50).HasFocus + Container(50).Position(0)] | !Container(50).HasFocus</visible>
 		  <visible>Window.IsVisible(DialogVideoInfo.xml) + [Container(51).HasFocus + Container(51).Position(0)] | !Container(51).HasFocus</visible>
 		  <visible>!ControlGroup(22).HasFocus</visible>
-		  <visible>!Control.IsVisible(3)</visible>
+		  <visible>!Control.IsVisible(3) | Window.IsVisible(SettingsSystemInfo.xml)</visible>
 		</control>
 	</control>
   </include>
@@ -179,7 +179,7 @@
     </include>
 	
     <control type="grouplist" id="100" description="TopMenu">
-	  <animation condition="[Control.IsVisible(50) + !String.IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(100).OnPrevious + !Container(100).OnNext" effect="fade" start="100" end="10" delay="3000" time="220" reversible="true">Conditional</animation>
+	  
 	  <posx>460</posx>
 	  <posy>142</posy>
 	  <align>center</align>
@@ -197,8 +197,9 @@
 	  <width>1000</width>
 
 	  <include condition="Window.IsVisible(SettingsSystemInfo.xml)">Content_SettingsSystemInfo_100</include>
-		
+	  
 	</control>
+
   </include>
 
   <include name="ArrowsUpDown">

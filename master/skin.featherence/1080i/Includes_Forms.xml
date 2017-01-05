@@ -108,6 +108,18 @@
     <align>right</align>
 	<font>size18</font>
   </include>
+  <include name="LabelL8" description="">
+    <align>left</align>
+	<font>size13</font>
+  </include>
+  <include name="LabelC8">
+    <align>center</align>
+	<font>size13</font>
+  </include>
+  <include name="LabelR8" description="">
+    <align>right</align>
+	<font>size13</font>
+  </include>
   <include name="LabelC10" description="(כותרת1)">
     <align>center</align>
 	<aligny>center</aligny>

@@ -334,7 +334,7 @@
 			<param name="posy" value="30" />
 			<param name="width" value="312" />
 		</include>
-		<include name="Buttons_Icon" description="סמלים גדולים">
+		<include content="Buttons_Icon" description="סמלים גדולים">
 			<param name="color" value="$VAR[IconUnFocusColor]" />
 			<param name="height" value="170" />
 			<param name="posx" value="30" />
@@ -409,7 +409,7 @@
 		  <texture>buttons/effects/stroke.png</texture>
 		  <visible>Skin.HasSetting(StrokeButton)</visible>
         </control>
-		<include name="Buttons_Icon" description="סמל">
+		<include content="Buttons_Icon" description="סמל">
 			<param name="color" value="$VAR[IconUnFocusColor]" />
 			<param name="height" value="120" />
 			<param name="posx" value="30" />
@@ -533,7 +533,7 @@
 		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_choosen</include>
 		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_choosen</include>
 		  <texture border="0" diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen.png</texture>
-		  <visible>Skin.HasSetting(SelectionMarker2) + Control.HasFocus(9000)</visible>
+		  <visible>Skin.HasSetting(SelectionMarker2) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]</visible>
         </control>
 		<control type="image" description="סמן בחירה 3">
 		  <!--<animation condition="true" effect="fade" end="10" time="0">Conditional</animation>-->
@@ -543,7 +543,7 @@
 		  <width>335</width>
 		  <height>211</height>
 		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		  <visible>[Skin.HasSetting(SelectionMarker) + Control.HasFocus(9000)] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
+		  <visible>[Skin.HasSetting(SelectionMarker) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
 		  <visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 		  <visible>!String.IsEqual(Window(home).Property(Button.ID_),17) + !String.IsEqual(Window(home).Property(Button.ID_),18) + !String.IsEqual(Window(home).Property(Button.ID_),19) + !String.IsEqual(Window(home).Property(Button.ID_),20) + !String.IsEqual(Window(home).Property(Button.ID_),21) | !Skin.HasSetting(SPMiniButtons) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)</visible>
         </control>
@@ -893,7 +893,7 @@
 		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_choosen</include>
 		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_choosen</include>
 		  <texture diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen.png</texture>
-		  <visible>Skin.HasSetting(SelectionMarker2) + Control.HasFocus(9000)</visible>
+		  <visible>Skin.HasSetting(SelectionMarker2) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]</visible>
         </control>
 		<control type="image" description="סמן בחירה 3">
 		  <!--<animation condition="true" effect="fade" end="10" time="0">Conditional</animation>-->
@@ -903,7 +903,7 @@
 		  <width>335</width>
 		  <height>211</height>
 		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		  <visible>[Skin.HasSetting(SelectionMarker) + Control.HasFocus(9000)] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
+		  <visible>[Skin.HasSetting(SelectionMarker) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
 		  <visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 		  <visible>!String.IsEqual(Window(home).Property(Button.ID_),17) + !String.IsEqual(Window(home).Property(Button.ID_),18) + !String.IsEqual(Window(home).Property(Button.ID_),19) + !String.IsEqual(Window(home).Property(Button.ID_),20) + !String.IsEqual(Window(home).Property(Button.ID_),21) | !Skin.HasSetting(SPMiniButtons) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)</visible>
         </control>
@@ -1057,7 +1057,7 @@
 			<param name="posy" value="20" />
 			<param name="width" value="222" />
 		</include>
-		<include name="Buttons_Icon" description="סמלים גדולים">
+		<include content="Buttons_Icon" description="סמלים גדולים">
 			<param name="color" value="" />
 			<param name="height" value="98" />
 			<param name="posx" value="0" />
@@ -1226,13 +1226,13 @@
 		<animation description="VerticalMenu" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="20,0" delay="0" time="0" reversible="true">Conditional</animation>
 		<animation description="VerticalMenu" condition="[[Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(315) | ControlGroup(9009).HasFocus]] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="200,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<animation description="VerticalMenu" condition="[[Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(315) | ControlGroup(9009).HasFocus]] + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-170,0" delay="0" time="220" reversible="true">Conditional</animation>
-		<include name="Buttons_Color" description="צבע">
+		<include content="Buttons_Color" description="צבע">
 			<param name="height" value="100" />
 			<param name="posx" value="0" />
 			<param name="posy" value="20" />
 			<param name="width" value="222" />
 		</include>
-		<include name="Buttons_Icon" description="סמלים גדולים">
+		<include content="Buttons_Icon" description="סמלים גדולים">
 			<param name="color" value="" />
 			<param name="height" value="100" />
 			<param name="posx" value="0" />
@@ -1262,7 +1262,7 @@
 		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_choosen</include>
 		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_choosen</include>
 		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_choosen</include>
-		  <visible>Skin.HasSetting(SelectionMarker2) + Control.HasFocus(9000)</visible>
+		  <visible>Skin.HasSetting(SelectionMarker2) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]</visible>
         </control>
 		<control type="image" description="סמן בחירה 3">
 		  <!--<animation condition="true" effect="fade" end="10" time="0">Conditional</animation>-->
@@ -1272,7 +1272,7 @@
 		  <width>236</width>
 		  <height>115</height>
 		  <texture border="20" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		  <visible>[Skin.HasSetting(SelectionMarker) + Control.HasFocus(9000)] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
+		  <visible>[Skin.HasSetting(SelectionMarker) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
 		  <visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 		  <visible>!String.IsEqual(Window(home).Property(Button.ID_),17) + !String.IsEqual(Window(home).Property(Button.ID_),18) + !String.IsEqual(Window(home).Property(Button.ID_),19) + !String.IsEqual(Window(home).Property(Button.ID_),20) + !String.IsEqual(Window(home).Property(Button.ID_),21) | !Skin.HasSetting(SPMiniButtons) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)</visible>
         </control>
@@ -1429,7 +1429,7 @@
 			<param name="posy" value="20" />
 			<param name="width" value="200" />
 		</include>
-		<include name="Buttons_Icon" description="סמלים גדולים">
+		<include content="Buttons_Icon" description="סמלים גדולים">
 			<param name="color" value="" />
 			<param name="height" value="195" />
 			<param name="posx" value="22" />
@@ -1596,7 +1596,7 @@
 			<param name="posy" value="20" />
 			<param name="width" value="200" />
 		</include>
-		<include name="Buttons_Icon" description="סמלים גדולים">
+		<include content="Buttons_Icon" description="סמלים גדולים">
 			<param name="color" value="" />
 			<param name="height" value="195" />
 			<param name="posx" value="22" />
@@ -1628,7 +1628,7 @@
 		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_choosen</include>
 		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_choosen</include>
 		  <texture diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen.png</texture>
-		  <visible>Skin.HasSetting(SelectionMarker2) + Control.HasFocus(9000)</visible>
+		  <visible>Skin.HasSetting(SelectionMarker2) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]</visible>
         </control>
 		<control type="image" description="סמן בחירה 3">
 		  <!--<animation condition="true" effect="fade" end="10" time="0">Conditional</animation>-->
@@ -1638,7 +1638,7 @@
 		  <width>210</width>
 		  <height>214</height>
 		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		  <visible>[Skin.HasSetting(SelectionMarker) + Control.HasFocus(9000)] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
+		  <visible>[Skin.HasSetting(SelectionMarker) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
 		  <visible>!String.IsEqual(Window(home).Property(Button.ID_),17) + !String.IsEqual(Window(home).Property(Button.ID_),18) + !String.IsEqual(Window(home).Property(Button.ID_),19) + !String.IsEqual(Window(home).Property(Button.ID_),20) + !String.IsEqual(Window(home).Property(Button.ID_),21) | !Skin.HasSetting(SPMiniButtons) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)</visible>
 		  <visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
         </control>
@@ -1698,7 +1698,7 @@
 		  <texture>buttons/effects/stroke.png</texture>
 		  <visible>Skin.HasSetting(StrokeButton)</visible>
         </control>
-		<include name="Buttons_Icon" description="סמל">
+		<include content="Buttons_Icon" description="סמל">
 			<param name="color" value="$VAR[IconFocusColor]" />
 			<param name="height" value="170" />
 			<param name="posx" value="34" />
@@ -2131,7 +2131,7 @@
     <itemlayout height="70" width="70">
 	  <control type="group">
 		<include>MenuDesign_Home_itemlayout</include>
-		<include name="Buttons_Color" description="צבע">
+		<include content="Buttons_Color" description="צבע">
 			<param name="height" value="70" />
 			<param name="posx" value="20" />
 			<param name="posy" value="20" />
