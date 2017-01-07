@@ -146,6 +146,7 @@
 		<texture background="true">$VAR[fanart]</texture>
 		<visible>!String.IsEmpty(Control.GetLabel(70130))</visible>
 		<visible>!Skin.HasSetting(background2)</visible>
+		<visible>![String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Player.HasVideo + !Skin.HasSetting(FullFanart59)]</visible>
 		<!--<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])</visible>
 		<visible>!Skin.HasSetting(ShowTopVideoInformation) | Container.Content(Seasons) | Container.Content(Episodes)</visible>-->
 		<!--<visible>!String.IsEmpty(Control.GetLabel(1106)) | !String.IsEmpty(Control.GetLabel(1105))</visible>-->
@@ -163,6 +164,7 @@
 		<visible>!Skin.HasSetting(background2) | Window.IsVisible(MyWeather.xml)</visible>
 		<visible>!Control.IsVisible(7013) + !String.IsEmpty(Control.GetLabel(70140)) + String.IsEmpty(Control.GetLabel(70130))</visible>
 		<visible>Skin.HasSetting(FailsafeFanart)</visible>
+		<visible>![String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Player.HasVideo + !Skin.HasSetting(FullFanart59)]</visible>
 	  </control>
 	  <control type="label" id="70130" description="fake">
 	    <label>$VAR[fanart]</label>

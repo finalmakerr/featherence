@@ -179,7 +179,7 @@
     </include>
 	
     <control type="grouplist" id="100" description="TopMenu">
-	  
+	  <animation condition="[Control.IsVisible(50) + !String.IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(100).OnPrevious + !Container(100).OnNext" effect="fade" start="100" end="10" delay="3000" time="220" reversible="true">Conditional</animation>
 	  <posx>460</posx>
 	  <posy>142</posy>
 	  <align>center</align>
