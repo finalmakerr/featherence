@@ -1820,7 +1820,7 @@
 	  </item>
 	  <item id="13" description="Sys Info">
 		<label>$LOCALIZE[138]</label>
-		<label2>$INFO[System.FreeMemory]</label2>
+		<label2>$INFO[System.BuildVersion]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/information.png</thumb>
 		<property name="rinfo"></property>
 		<onclick>activatewindow(systeminfo)</onclick>
