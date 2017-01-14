@@ -213,10 +213,9 @@ class Main:
                     genre = str(item['genre'])
                     try: tagline = str(item['tagline'])
                     except: tagline = ""
-                    text = str(request) + " year: " + str(year) + " genre: " + str(genre) + " tagline: " + str(tagline)
-                    printlog(title="testing_", text=text, level=0)
                     
                     art = item['art']
+					
                     path = media_path(item['file'])
                     play = 'XBMC.RunScript(' + __addonid__ + ',movieid=' + str(item.get('movieid')) + ')'
                     streaminfo = media_streamdetails(item['file'].encode('utf-8').lower(),
@@ -245,7 +244,7 @@ class Main:
                     self.WINDOW.setProperty("%s.%d.Director"        % (request, count), " / ".join(item['director']))
                     self.WINDOW.setProperty("%s.%d.Trailer"         % (request, count), item['trailer'])
                     self.WINDOW.setProperty("%s.%d.Art(poster)"     % (request, count), art.get('poster',''))
-                    self.WINDOW.setProperty("%s.%d.Art(fanart)"     % (request, count), art.get('fanart',''))
+                    self.WINDOW.setProperty("%s.%d.Art(fanart)"     % (request, count), CleanString4(art.get('fanart','')))
                     self.WINDOW.setProperty("%s.%d.Art(clearlogo)"  % (request, count), art.get('clearlogo',''))
                     self.WINDOW.setProperty("%s.%d.Art(clearart)"   % (request, count), art.get('clearart',''))
                     self.WINDOW.setProperty("%s.%d.Art(landscape)"  % (request, count), art.get('landscape',''))
@@ -262,6 +261,9 @@ class Main:
                     self.WINDOW.setProperty("%s.%d.VideoAspect"     % (request, count), streaminfo['videoaspect'])
                     self.WINDOW.setProperty("%s.%d.AudioCodec"      % (request, count), streaminfo['audiocodec'])
                     self.WINDOW.setProperty("%s.%d.AudioChannels"   % (request, count), str(streaminfo['audiochannels']))
+                    
+                    text = str(request) + " year: " + str(year) + " genre: " + str(genre) + " tagline: " + str(tagline) + ' fanart: ' + str(art)
+                    printlog(title="testing_", text=text, level=0)
             del json_query
 
     def _fetch_tvshows_recommended(self, request):

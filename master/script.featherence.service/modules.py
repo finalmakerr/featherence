@@ -2423,6 +2423,8 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "custom2" + space2 + str(xbmc.getInfoLabel('Container(50).ListItemPosition(0).Overlay')) #CUSTOM TEST
 			message = message + newline + "custom3" + space2 + str(xbmc.getInfoLabel('System.BuildVersion')) #CUSTOM TEST
 			message = message + newline + "ListItem.Property(TotalEpisodes)" + space2 + str(xbmc.getInfoLabel('ListItem.Property(TotalEpisodes)')) #CUSTOM TEST
+			message = message + newline + "Window(home).Property(RecentMovie.1.Art(fanart))" + space2 + str(xbmc.getInfoLabel('Window(home).Property(RecentMovie.1.Art(fanart))')) #CUSTOM TEST
+			message = message + newline + "Window(home).Property(RecentMovie.2.Art(fanart))" + space2 + str(xbmc.getInfoLabel('Window(home).Property(RecentMovie.2.Art(fanart))')) #CUSTOM TEST
 			
 			
 

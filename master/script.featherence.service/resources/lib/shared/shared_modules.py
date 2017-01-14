@@ -530,7 +530,26 @@ def CleanString3(x):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	return x2
-		
+
+def CleanString4(x):
+	name = 'CleanString4'
+	returned = str(x)
+	#if systemplatformwindows: slash = '\\'
+	#else: slash = '/'
+	
+	returned = returned.replace('image://',"",1)
+	returned = returned.replace('%3a',':')
+	returned = returned.replace('%3A',':')
+	returned = returned.replace('%2F','/')
+	returned = returned.replace('%5c','/')
+	returned = returned.replace('%5C','/')
+	if returned[-1] == '/': returned = returned[:-1]
+	
+	text = "x" + space2 + str(x) + newline + "returned" + space2 + str(returned) + newline + \
+	'returned[:-1]' + space2 + str(returned[:-1]) + space + 'returned[-1]' + space2 + str(returned[-1])
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	return returned
+	
 def setPath(type=0,mask="", folderpath="", original=True):
 	setSkinSetting("0", 'TEMP', "")
 	name = 'setPath' ; printpoint = '' ; returned = "" ; count = 0
