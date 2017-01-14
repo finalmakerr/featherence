@@ -2552,6 +2552,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	addDir(addonString(10716).encode('utf-8'),list,17,'http://www.seret.co.il/images/movies/curiousgeorge/curiousgeorge2.jpg',addonString(107160).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 	
 	CATEGORIES107C(General_LanguageL, background, background2) #קטנטנים - בוב הבנאי
+	CATEGORIES107S(General_LanguageL, background, background2) #קטנטנים - בוב הבנאי+
 	
 	'''בומבה'''
 	list = []
@@ -2837,19 +2838,18 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&youtube_pl=')
 		list.append('&youtube_pl=')
 		list.append('&youtube_id=')
-
-		list.append('&youtube_id=AL0RVZMr-VY') #Hebrew
 	if 'English' in General_LanguageL:
-		list.append('&youtube_id=') #English
-		list.append('&youtube_id=') #English
+		list.append('&youtube_pl=PLdAOY_vKneiD-zz9puRKNW9G5_EVehxN0') #S1
+		list.append('&youtube_pl=PLdAOY_vKneiBrNRt-9m0-jkLhqMtwLQ3V') #S2
 		list.append('&youtube_id=')
 
 	if 'Dutch' in General_LanguageL:
 		list.append('&youtube_pl=PL7888E4250CBA46CA') #טום הטרקטור
 		list.append('&youtube_id=lPXDH3JRyuw')
+		list.append('&youtube_pl=PLdAOY_vKneiCyW2fL6qpc_Qkhiyr-BvPU')
 		
 	if 'French' in General_LanguageL:
-		list.append('&youtube_pl=') #טום הטרקטור
+		list.append('&youtube_pl=PLdAOY_vKneiA-HbHaL2Xh8V4FGz_oCZt3') #טום הטרקטור
 		list.append('&youtube_pl=')
 	if 'Polish' in General_LanguageL:
 		list.append('&youtube_id=HrozQ_qBqWk')

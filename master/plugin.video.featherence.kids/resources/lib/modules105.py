@@ -17,7 +17,8 @@ def CATEGORIES105B(General_LanguageL, background, background2): #סרטים לי
 		check_movix_me = urlcheck('http://www.movix.me/series', ping=False)
 		if check_movix_me == 'ok':
 			addDir('-' + localize(137) + space + 'Movix','&activatewindow=plugin://plugin.video.movixws/?description&iconimage=https%3a%2f%2fencrypted-tbn1.gstatic.com%2fimages%3fq%3dtbn%3aANd9GcQlAUVuxDFwhHYzmwfhcUEBgQXkkWi5XnM4ZyKxGecol952w-Rp&mode=6&name=Search%20-%20%d7%97%d7%99%d7%a4%d7%95%d7%a9&url=%20',8,featherenceserviceicons_path + 'se.png','http://www.movix.me/','1',0,getAddonFanart(background, custom="", default=background2))
-			list.append('&custom8=plugin://plugin.video.movixws/?iconimage=http%3a%2f%2fwww.in-hebrew.co.il%2fimages%2flogo-s.jpg&mode=2&name=Kids%20-%20%d7%99%d7%9c%d7%93%d7%99%d7%9d&url=http%3a%2f%2fwww.movix.me%2fgenres%2fKids') ; 
+			list.append('&custom8=plugin://plugin.video.movixws/?description&iconimage=http%3A%2F%2Fwww.afaqs.com%2Fall%2Fnews%2Fimages%2Fnews_story_grfx%2F2015%2F45297_1_home_big.jpg&mode=2&name=Dubbed%20-%20%D7%9E%D7%93%D7%95%D7%91%D7%91%D7%99%D7%9D&url=http%3A%2F%2Fwww.movix.me%2Fsearch_movies%3Fq%3D%25D7%259E%25D7%2593%25D7%2595%25D7%2591%25D7%2591%26sb%3D%26year%3D')
+			list.append('&custom8=plugin://plugin.video.movixws/?iconimage=http%3a%2f%2fwww.in-hebrew.co.il%2fimages%2flogo-s.jpg&mode=2&name=Kids%20-%20%d7%99%d7%9c%d7%93%d7%99%d7%9d&url=http%3a%2f%2fwww.movix.me%2fgenres%2fKids')
 			list.append('&custom8=plugin://plugin.video.movixws/?iconimage=http%3a%2f%2ficons.iconarchive.com%2ficons%2fdesignbolts%2ffree-movie-folder%2f256%2fAnimated-icon.png&mode=2&name=Animation%20-%20%d7%90%d7%a0%d7%99%d7%9e%d7%a6%d7%99%d7%94&url=http%3a%2f%2fwww.movix.me%2fgenres%2fAnimation') ; 
 			
 		check_seretil_me = urlcheck('http://seretil.me', ping=False)

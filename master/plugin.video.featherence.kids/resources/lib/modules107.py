@@ -2575,25 +2575,28 @@ def CATEGORIES107R(General_LanguageL, background, background2): #
 
 	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 
-def CATEGORIES107S(General_LanguageL, background, background2): #
+def CATEGORIES107S(General_LanguageL, background, background2): #בוב הבנאי
 	'''קטנטנים'''
 	list = []
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
-		list.append('&youtube_pl=')
+		list.append('&youtube_pl=PLfcYs4SRZfuK9TAppk-HTAKz5j1owAlaE')
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
-		list.append('&youtube_pl=')
-		list.append('&youtube_pl=')
+		list.append('&youtube_ch=bobthebuilderchannel')
+		list.append('&custom8=plugin://plugin.video.cartoons8/?description&iconimage=http%3A%2F%2F9cartoon.me%2Fuploads%2Fthumbs%2F2016-05-10bob-the-builder-construction-heroes-2015r.jpg%7CUser-Agent%3DMozilla%2F5.0%20(Windows%20NT%206.1%3B%20rv%3A32.0)%20Gecko%2F20100101%20Firefox%2F32.0%26Cookie%3D__cfduid%3Dd050ec12fafe2c97100f5553b706772be1471118127%3Bcf_clearance%3D0e975e4108a6438c67d99a6f5a87d50a10302f79-1483801877-86400%3B__cfduid%3Dd48ee3d5e8750d48c2c735e712c4476201468881294%3B__cfduid%3Dde0bb4156da99183db0cc6a7c8325a0041470303966%3BPHPSESSID%3D86f31d8264a864fcba222bbadb97477b%3BPHPSESSID%3D0918e9805af889f932d3f1f7083de44b%3BPHPSESSID%3D71nhps357p41n36mj2h76hs486%3B&mode=2&name=Bob%20the%20Builder%3A%20Construction%20Heroes!%20(2015)&url=http%3A%2F%2F9cartoon.me%2FCartoon%2F10189%2Fbob-the-builder-construction-heroes-2015%2F')
+		list.append('&custom8=plugin://plugin.video.cartoons8/?description&iconimage=http%3A%2F%2F9cartoon.me%2Fuploads%2Fthumbs%2F2015-11-11bob-the-builder-season-19-20159.jpg%7CUser-Agent%3DMozilla%2F5.0%20(Windows%20NT%206.1%3B%20rv%3A32.0)%20Gecko%2F20100101%20Firefox%2F32.0%26Cookie%3D__cfduid%3Dd050ec12fafe2c97100f5553b706772be1471118127%3Bcf_clearance%3D0e975e4108a6438c67d99a6f5a87d50a10302f79-1483801877-86400%3B__cfduid%3Dd48ee3d5e8750d48c2c735e712c4476201468881294%3B__cfduid%3Dde0bb4156da99183db0cc6a7c8325a0041470303966%3BPHPSESSID%3D86f31d8264a864fcba222bbadb97477b%3BPHPSESSID%3D0918e9805af889f932d3f1f7083de44b%3BPHPSESSID%3D71nhps357p41n36mj2h76hs486%3B&mode=2&name=Bob%20the%20Builder%20Season%2019%20(2015)&url=http%3A%2F%2F9cartoon.me%2FCartoon%2F8876%2Fbob-the-builder-season-19-2015%2F')
+		list.append('&youtube_id=h-5QPsTUQh4') #Episodes 11 - 20
+		list.append('&youtube_id=3Zs4Zv3otpY') #Season 19 Episodes 1-10
+		list.append('&youtube_id=msDQWiy5Bs4') #Season 19 Episode 21-30
 	'''אוזבקית'''
 	if 'Uzbek' in General_LanguageL:
 		list.append('&youtube_pl=')
 	
 	'''איטלקית'''
 	if 'Italian' in General_LanguageL:
-		list.append('&youtube_pl=')
-		list.append('&youtube_pl=')
+		list.append('&youtube_ch=UCHnky6FROOhC7-EhVNdGhRw')
 	
 	'''אוקראינית'''
 	if 'Ukrainian' in General_LanguageL:
@@ -2617,8 +2620,7 @@ def CATEGORIES107S(General_LanguageL, background, background2): #
 	
 	'''גרמנית'''
 	if 'German' in General_LanguageL:
-		list.append('&youtube_pl=')
-		list.append('&youtube_pl=')
+		list.append('&youtube_ch=UC1gSKVovUYLmXoDnsTY039Q')
 	
 	'''דנית'''
 	if 'Dansk' in General_LanguageL:
@@ -2669,7 +2671,7 @@ def CATEGORIES107S(General_LanguageL, background, background2): #
 	
 	'''פולנית'''
 	if 'Polish' in General_LanguageL:
-		list.append('&youtube_pl=')
+		list.append('&youtube_ch=UCeX7M-YZnZYNV3HMb2VqBGQ')
 	
 	'''פורטוגזית'''
 	if 'Portuguese' in General_LanguageL:
@@ -2690,6 +2692,7 @@ def CATEGORIES107S(General_LanguageL, background, background2): #
 		
 	'''צרפתית'''
 	if 'French' in General_LanguageL:
+		list.append('&youtube_ch=UC-mRe05y88F1seMgOvbHAEQ')
 		list.append('&youtube_id=')
 	
 	'''קוריאנית'''
@@ -2724,7 +2727,7 @@ def CATEGORIES107S(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10707).encode('utf-8') + space + '+',list,17,'http://www.hop.co.il/wp-content/uploads/2014/07/%D7%AA.%D7%96-%D7%91%D7%95%D7%91-%D7%94%D7%91%D7%A0%D7%90%D7%99.jpg',addonString(107070).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://cdn.awn.com/sites/default/files/styles/original/public/image/featured/1027370-new-int-l-deals-announced-bob-builder.jpg?itok=Qwec2np0"))
 
 def CATEGORIES107T(General_LanguageL, background, background2): #
 	'''קטנטנים'''
