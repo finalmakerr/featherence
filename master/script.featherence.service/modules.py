@@ -95,6 +95,10 @@ def mode6(value):
 				passprotectaddon9 = xbmc.getInfoLabel('Skin.String(PassProtectAddon9)')
 				passprotectaddon10 = xbmc.getInfoLabel('Skin.String(PassProtectAddon10)')
 				passprotectaddonL = [passprotectaddon1, passprotectaddon2, passprotectaddon3, passprotectaddon4, passprotectaddon5, passprotectaddon6, passprotectaddon7, passprotectaddon8, passprotectaddon9, passprotectaddon10]
+				containerfolderpath = xbmc.getInfoLabel('Container.FolderPath') ; containerfolderpath2 = containerfolderpath
+				while 'addons://' in containerfolderpath and containerfolderpath2 == containerfolderpath and not xbmc.abortRequested:
+					xbmc.sleep(2000) ; containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
+				
 				for z in passprotectaddonL:
 					if z in containerfolderpath and z != "" and '.' in z and containerfolderpath != "":
 						printpoint = printpoint + 'y'
@@ -2425,6 +2429,10 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "ListItem.Property(TotalEpisodes)" + space2 + str(xbmc.getInfoLabel('ListItem.Property(TotalEpisodes)')) #CUSTOM TEST
 			message = message + newline + "Window(home).Property(RecentMovie.1.Art(fanart))" + space2 + str(xbmc.getInfoLabel('Window(home).Property(RecentMovie.1.Art(fanart))')) #CUSTOM TEST
 			message = message + newline + "Window(home).Property(RecentMovie.2.Art(fanart))" + space2 + str(xbmc.getInfoLabel('Window(home).Property(RecentMovie.2.Art(fanart))')) #CUSTOM TEST
+			
+			
+			message = message + newline + "Skin.String(PassProtect)" + space2 + str(xbmc.getInfoLabel('Skin.String(PassProtect)')) #
+			message = message + newline + "Window(home).Property(PassProtect)" + space2 + str(xbmc.getInfoLabel('Window(home).Property(PassProtect)')) #
 			
 			
 

@@ -533,7 +533,7 @@ def CleanString3(x):
 
 def CleanString4(x):
 	name = 'CleanString4'
-	returned = str(x)
+	returned = str(x) ; extra = "" ; TypeError = ""
 	#if systemplatformwindows: slash = '\\'
 	#else: slash = '/'
 	
@@ -543,10 +543,13 @@ def CleanString4(x):
 	returned = returned.replace('%2F','/')
 	returned = returned.replace('%5c','/')
 	returned = returned.replace('%5C','/')
-	if returned[-1] == '/': returned = returned[:-1]
+	try:
+		if returned[-1] == '/': returned = returned[:-1]
+	except Exception, TypeError: extra = 'TypeError' + space2 + str(TypeError)
 	
 	text = "x" + space2 + str(x) + newline + "returned" + space2 + str(returned) + newline + \
-	'returned[:-1]' + space2 + str(returned[:-1]) + space + 'returned[-1]' + space2 + str(returned[-1])
+	'returned[:-1]' + space2 + str(returned[:-1]) + space + 'returned[-1]' + space2 + str(returned[-1]) + newline + extra
+	
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	return returned
 	
