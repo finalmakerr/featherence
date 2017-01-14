@@ -2570,7 +2570,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fimg.mako.co.il%2f2015%2f08%2f30%2fpupik_yard_f.jpg&mode=2&name=%d7%a2%d7%95%d7%a0%d7%94%201&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-23tv%2fpupik-yard-s1')
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f883.jpg&mode=5&name=%d7%a2%d7%95%d7%a0%d7%94%201&season_id=1&series_id=883&series_name=%d7%99%d7%a9-%d7%9c%d7%a0%d7%97%d7%a9-%d7%a2%d7%9d-%d7%97%d7%9f-%d7%9e%d7%93%d7%95%d7%91%d7%91-yesh-lenahesh%2fseason%2f1&summary=%d7%97%d7%9f%20%d7%94%d7%95%d7%90%20%d7%97%d7%aa%d7%9c%d7%aa%d7%95%d7%9c%20%d7%97%d7%9e%d7%95%d7%93%20%d7%95%d7%a1%d7%a7%d7%a8%d7%9f%2c%20%d7%a9%d7%99%d7%97%d7%93%20%d7%a2%d7%9d%20%d7%97%d7%91%d7%a8%d7%99%d7%95%20%d7%9e%d7%97%d7%a4%d7%a9%20%d7%aa%d7%a9%d7%95%d7%91%d7%95%d7%aa%20%d7%9c%d7%a9%d7%90%d7%9c%d7%95%d7%aa%20%d7%a2%d7%9c%20%d7%a4%d7%9c%d7%90%d7%99%20%d7%94%d7%a2%d7%95%d7%9c%d7%9d%20%d7%94%d7%a1%d7%95%d7%91%d7%91%20%d7%90%d7%95%d7%aa%d7%95.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f883%2f%d7%99%d7%a9-%d7%9c%d7%a0%d7%97%d7%a9-%d7%a2%d7%9d-%d7%97%d7%9f-%d7%9e%d7%93%d7%95%d7%91%d7%91-yesh-lenahesh%2fseason%2f1')
 		list.append('&youtube_pl=PLth1a195qHsiYX3v_ICFAlJtnG5Yr4J0-')
-	addDir('בחצר של פופיק',list,17,'http://www.sdarot.pm/media/series/1674.jpg',addonString(108990).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	addDir('בחצר של פופיק',list,17,'http://img.mako.co.il/2016/03/07/kids_420X600_pupik_yard.jpg',addonString(108990).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/pE28_ALY-lE/maxresdefault.jpg", default=background2))
 	
 	'''בלייז ומכוניות הענק'''
 	list = []
@@ -2633,14 +2633,14 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_pl=PL0zAFNbEotfkBCaGmpE0PHyRDjk7yOkgv')
-	addDir('דינו דן',list,17,'','','1',0,getAddonFanart(background, custom="http://images.nickjr.com/nickjr/properties/dino-dan/property-header-dino-dan-desktop-portrait-2x.png?quality=0.75", default=background2))
+	addDir('דינו דן',list,17,'http://www.hop.co.il/wp-content/uploads/2015/07/%D7%93%D7%99%D7%A0%D7%95%D7%96%D7%90%D7%95%D7%A8%D7%99%D7%9D-%D7%91%D7%94%D7%95%D7%A4.png','','1',0,getAddonFanart(background, custom="http://images.nickjr.com/nickjr/properties/dino-dan/property-header-dino-dan-desktop-portrait-2x.png?quality=0.75", default=background2))
 	
 	'''דן הדוור'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f1577.jpg&mode=5&name=%d7%a2%d7%95%d7%a0%d7%94%201&season_id=1&series_id=1577&series_name=%d7%93%d7%9f-%d7%94%d7%93%d7%95%d7%95%d7%a8-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94-postman-pat%2fseason%2f1&summary=%d7%a1%d7%93%d7%a8%d7%aa%20%d7%90%d7%a0%d7%99%d7%9e%d7%a6%d7%99%d7%94%20%d7%9e%d7%93%d7%95%d7%91%d7%91%d7%aa%2c%20%d7%95%d7%91%d7%9e%d7%a8%d7%9b%d7%96%d7%94%20%d7%94%d7%92%d7%99%d7%91%d7%95%d7%a8%20%d7%94%d7%a8%d7%90%d7%a9%d7%99%20-%20%d7%93%d7%9f%20%d7%a7%d7%9c%d7%99%d7%a4%d7%98%d7%95%d7%9f%2c%20%d7%94%d7%93%d7%95%d7%95%d7%a8%20%d7%a9%d7%9c%20%d7%9b%d7%a4%d7%a8%20%d7%94%d7%a2%d7%9e%d7%a7.%d7%93%d7%9f%2c%20%d7%90%d7%a9%d7%aa%d7%95%20%d7%a9%d7%a8%d7%94%2c%20%d7%91%d7%a0%d7%9d%20%d7%90%d7%95%d7%a8%d7%9f%20%d7%95%d7%97%d7%91%d7%a8%d7%99%d7%9d%20%d7%a0%d7%95%d7%a1%d7%a4%d7%99%d7%9d%20%d7%9e%d7%9b%d7%a4%d7%a8%20%d7%94%d7%a2%d7%9e%d7%a7%2c%20%d7%a4%d7%95%d7%aa%d7%a8%d7%99%d7%9d%20%d7%9b%d7%9c%20%d7%91%d7%a2%d7%99%d7%94%20%d7%94%d7%a0%d7%99%d7%a6%d7%91%d7%aa%20%d7%91%d7%a4%d7%a0%d7%99%d7%94%d7%9d%2c%20%d7%a2%d7%9c%20%d7%99%d7%93%d7%99%20%d7%97%d7%a9%d7%99%d7%91%d7%94%20%d7%97%d7%99%d7%95%d7%91%d7%99%d7%aa%2c%20%d7%95%d7%94%d7%aa%d7%97%d7%a9%d7%91%d7%95%d7%aa%20%d7%9e%d7%aa%d7%9e%d7%93%d7%aa%20%d7%91%d7%96%d7%95%d7%9c%d7%aa.%d7%93%d7%9f%20%d7%9e%d7%a2%d7%95%d7%a8%d7%91%20%d7%91%d7%97%d7%99%d7%99%20%d7%9b%d7%a4%d7%a8%20%d7%94%d7%a2%d7%9e%d7%a7%2c%20%d7%94%d7%95%d7%90%20%d7%95%d7%97%d7%91%d7%a8%d7%99%d7%95%20%d7%9e%d7%a0%d7%a1%d7%99%d7%9d%20%d7%9c%d7%a2%d7%96%d7%95%d7%a8%20%d7%96%d7%94%20%d7%9c%d7%96%d7%94%20%d7%91%d7%93%d7%a8%d7%9b%d7%99%d7%9d%20%d7%99%d7%a6%d7%99%d7%a8%d7%aa%d7%99%d7%95%d7%aa%2c%20%d7%94%d7%9d%20%d7%a0%d7%90%d7%9e%d7%a0%d7%99%d7%9d%20%d7%95%d7%a1%d7%95%d7%91%d7%9c%d7%a0%d7%99%d7%99%d7%9d%20%d7%90%d7%97%d7%93%20%d7%9b%d7%9c%d7%a4%d7%99%20%d7%94%d7%a9%d7%a0%d7%99.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1577%2f%d7%93%d7%9f-%d7%94%d7%93%d7%95%d7%95%d7%a8-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94-postman-pat%2fseason%2f1')
 		list.append('&youtube_pl=PL_8KXLhQVQMK05YV3wTQ4SZyEo2kWDvNH')
-	addDir(addonString(10712).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1577.jpg','','1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10712).encode('utf-8'),list,17,'http://msc.wcdn.co.il/w/w-184/1403985-41.jpg','','1',0,getAddonFanart(background, custom="http://2.bp.blogspot.com/_ogBAiu7Yj8M/TMB_mTpzTbI/AAAAAAAAAXg/vec2vxW-8hk/s1600/Pat+with+Jess+in+trolley.jpg", default=background2))
 
 	'''דן ומוזלי'''
 	list = []
@@ -2783,13 +2783,14 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	
 	'''טימותי הולך לבית הספר'''
 	list = []
+	thumb = 'http://www.musicaneto.com/wp-content/themes/musica-mod/js/timthumb.php?src=http://www.musicaneto.com/wp-content/uploads/2014/02/7290014697874.jpg&w=183&h=250'
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f1736.jpg&mode=3&name=%d7%98%d7%99%d7%9e%d7%95%d7%aa%d7%99-%d7%94%d7%95%d7%9c%d7%9a-%d7%9c%d7%91%d7%99%d7%aa-%d7%94%d7%a1%d7%a4%d7%a8-%d7%9e%d7%93%d7%95%d7%91%d7%91-timothy-goes-to-school%2fseason%2f1&series_id=1736&series_name=%d7%98%d7%99%d7%9e%d7%95%d7%aa%d7%99-%d7%94%d7%95%d7%9c%d7%9a-%d7%9c%d7%91%d7%99%d7%aa-%d7%94%d7%a1%d7%a4%d7%a8-%d7%9e%d7%93%d7%95%d7%91%d7%91-timothy-goes-to-school%2fseason%2f1&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1736%2f%d7%98%d7%99%d7%9e%d7%95%d7%aa%d7%99-%d7%94%d7%95%d7%9c%d7%9a-%d7%9c%d7%91%d7%99%d7%aa-%d7%94%d7%a1%d7%a4%d7%a8-%d7%9e%d7%93%d7%95%d7%91%d7%91-timothy-goes-to-school%2fseason%2f1')
 		list.append('&youtube_pl=PLtE3COCsPAWm5JRiKxtfQjUEVy7YiVUMO')
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLyJA77GdW64bIjAcK-N9oIEdqStHqjXLL') #English
 		list.append('&youtube_pl=PLyJA77GdW64YTdJSP4jIy1GclZ82KcSqq') #English
-	addDir(addonString(10728).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1736.jpg',addonString(107280).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))	
+	addDir(addonString(10728).encode('utf-8'),list,17,thumb,addonString(107280).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/JXHpZieVam8/maxresdefault.jpg", default=background2))	
 	
 	'''טימי טיים*'''
 	list = []
@@ -2798,7 +2799,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLnw_wYZBfzuNfTcbuUfPrDov2jC8APZk0')
 	list.append('&youtube_id=_vb2lCx36bA')
 	
-	addDir(addonString(10732).encode('utf-8'),list,17,'http://www.littleprince.co.il/pub/5897/timmy/timmy~big%20and%20cuddly~hr~21017.jpg',addonString(107320).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10732).encode('utf-8'),list,17,'http://blog.tapuz.co.il/drrd/images/662689_1158.jpg',addonString(107320).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://ichef.bbci.co.uk/childrens-responsive-ichef/r/720/1x/cbeebies/cbeebies-timmytime-img-timmytimegroup_432_243.jpg", default=background2))
 	
 	'''טלטאביז'''
 	list = []

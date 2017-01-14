@@ -3,9 +3,10 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
-Featherence Kids v0.2.15 (xx-xx-17)
+Featherence Kids v0.2.15 (14-01-17)
 ------------------------
 - Added Bob the Builder Junior.
+- Minor update of links, thumbnails and fanarts.
 
 
 ------------------------
