@@ -12,7 +12,7 @@
 	<!--<value condition="![!String.IsEmpty(Player.Art(tvshow.poster)) | !String.IsEmpty(Player.Art(poster)) | !String.IsEmpty(Control.GetLabel(1103)) | !String.IsEmpty(VideoPlayer.Cover) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Art(tvshow.poster)) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Thumb) | !String.IsEmpty(ListItem.Icon) | String.Contains(ListItem.path,videodb://movies/sets/)]">1</value>-->
 	<value condition="![!String.Contains(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>
 	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
-	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])] + !Skin.HasSetting(ShowDVDCases2)">14</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31011])] + !Skin.HasSetting(ShowDVDCases2)">14</value>
 	<value condition="![[String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + !Skin.HasSetting(ShowDVDCases)] | !String.IsEqual(Container.Viewmode,$LOCALIZE[31013])]">5</value>
 	<value condition="![[String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + !Skin.HasSetting(ShowDVDCases)] | !String.IsEqual(Container.Viewmode,$LOCALIZE[31016])]">15</value>
 	<value condition="![[[String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)] | !String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014])]">6</value>
@@ -772,7 +772,7 @@
 	</variable>
 	<variable name="ManualColor">
 	  <value condition="!String.IsEmpty(Window(home).Property(SelectedColor))">$INFO[Window(home).Property(SelectedColor)]</value>
-	  <value condition="Window.IsVisible(Custom1170.xml)">Manual</value>
+	  <value description="ידני" condition="Window.IsVisible(Custom1170.xml)">$LOCALIZE[413]</value>
 	</variable>
 	
 	<variable name="CustomStartupImage">

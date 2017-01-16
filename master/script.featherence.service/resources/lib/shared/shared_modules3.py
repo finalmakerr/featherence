@@ -1869,14 +1869,14 @@ def setAddon_UpdateDate(admin, addonVersion, Addon_Version, Addon_Update, Addon_
 	
 def setAddon_UpdateLog(admin, Addon_Version, Addon_UpdateDate, Addon_ShowLog, Addon_ShowLog2, datenowS):	
 	'''show a changelog if that option enabled'''
-	name = 'setAddon_UpdateLog' ; printpoint = ""
+	name = 'setAddon_UpdateLog' ; printpoint = "" ; TypeError = "" ; extra = ""
+	from variables import addonID, addonName2
+	number2S = ""
+	datenowD = stringtodate(datenowS,'%Y-%m-%d')
+	datedifferenceD = stringtodate(Addon_UpdateDate,'%Y-%m-%d')
+	datedifferenceS = str(datedifferenceD)
+	
 	if Addon_ShowLog == "true":
-		from variables import addonID, addonName2
-		printpoint = "" ; TypeError = "" ; extra = ""
-		number2S = ""
-		datenowD = stringtodate(datenowS,'%Y-%m-%d')
-		datedifferenceD = stringtodate(Addon_UpdateDate,'%Y-%m-%d')
-		datedifferenceS = str(datedifferenceD)
 		if "error" in [datenowD, datedifferenceD]: printpoint = printpoint + "9"
 		try:
 			number2 = datenowD - datedifferenceD
@@ -1925,7 +1925,8 @@ def setAddon_UpdateLog(admin, Addon_Version, Addon_UpdateDate, Addon_ShowLog, Ad
 					'''---------------------------'''
 			else: printpoint = printpoint + "8"
 	#setsetting('Addon_UpdateLog',"false")
-	setsetting_custom1(addonID, 'Addon_UpdateLog', "false")
+	try: setsetting_custom1(addonID, 'Addon_UpdateLog', "false")
+	except: pass
 		
 	text = "Addon_UpdateDate" + space2 + str(Addon_UpdateDate) + newline + \
 	"datenowS" + space2 + str(datenowS) + newline + \

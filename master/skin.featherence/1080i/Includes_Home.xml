@@ -175,7 +175,7 @@
 	  <onup condition="Control.IsVisible(700)">700</onup>
 	  <onup condition="Control.IsVisible(9009)">9009</onup>
 	  <onup>520</onup>
-	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEqual(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + [String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect))]">ActivateWindow(1138)</ondown>
+	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + String.IsEqual(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + [String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect)) | !Skin.String(PassProtect)]">ActivateWindow(1138)</ondown>
 	  <ondown>noop</ondown>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
 	  <orientation>horizontal</orientation>
@@ -212,7 +212,7 @@
 	  <onup condition="Control.IsVisible(700)">700</onup>
 	  <onup condition="Control.IsVisible(9009)">9009</onup>
 	  <onup>520</onup>
-	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEqual(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + [String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect))]">ActivateWindow(1138)</ondown>
+	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + String.IsEqual(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + [String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect)) | !Skin.String(PassProtect)]">ActivateWindow(1138)</ondown>
 	  <ondown>noop</ondown>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
 	  <orientation>horizontal</orientation>
@@ -280,9 +280,10 @@
 	  <width>100</width>
 	  <height>225</height>
 	  <onleft>9000</onleft>
-	  <onright>SetFocus(9000,0)</onright>
-	  <onright>Action(PageUp)</onright>
-	  <onright>Action(PageUp)</onright>
+	  <onright condition="Control.IsVisible(315)">315</onright>
+	  <onright condition="Window.IsVisible(Home.xml)">SetFocus(9000,0)</onright>
+	  <onright condition="Window.IsVisible(Home.xml)">Action(PageUp)</onright>
+	  <onright condition="Window.IsVisible(Home.xml)">Action(PageUp)</onright>
 	  <onup condition="Control.IsVisible(315)">315</onup>
 	  <ondown>noop</ondown>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
@@ -862,7 +863,7 @@
 			<param name="width" value="332" />
 		</include>
 		<include content="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="" />
+			<param name="color" value="$VAR[IconFocusColor]" />
 			<param name="height" value="193" />
 			<param name="posx" value="20" />
 			<param name="posy" value="24" />
@@ -1058,11 +1059,11 @@
 			<param name="width" value="222" />
 		</include>
 		<include content="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="" />
-			<param name="height" value="98" />
+			<param name="color" value="$VAR[IconUnFocusColor]" />
+			<param name="height" value="100" />
 			<param name="posx" value="0" />
-			<param name="posy" value="22" />
-			<param name="width" value="209" />
+			<param name="posy" value="20" />
+			<param name="width" value="222" />
 			
 			<param name="condition" value="Skin.HasSetting(BigHomeIcons)" description="" />
 			<param name="type0" value="true" description="UnFocus" />
@@ -1233,7 +1234,7 @@
 			<param name="width" value="222" />
 		</include>
 		<include content="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="" />
+			<param name="color" value="$VAR[IconFocusColor]" />
 			<param name="height" value="100" />
 			<param name="posx" value="0" />
 			<param name="posy" value="20" />
@@ -1430,7 +1431,7 @@
 			<param name="width" value="200" />
 		</include>
 		<include content="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="" />
+			<param name="color" value="$VAR[IconUnFocusColor]" />
 			<param name="height" value="195" />
 			<param name="posx" value="22" />
 			<param name="posy" value="23" />
@@ -1597,7 +1598,7 @@
 			<param name="width" value="200" />
 		</include>
 		<include content="Buttons_Icon" description="סמלים גדולים">
-			<param name="color" value="" />
+			<param name="color" value="$VAR[IconFocusColor]" />
 			<param name="height" value="195" />
 			<param name="posx" value="22" />
 			<param name="posy" value="23" />

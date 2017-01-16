@@ -1105,41 +1105,41 @@
   </include>
 
   <include name="ButtonsDesign_thumb">
-    <texture diffuse="buttons/types/bd.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+    <texture diffuse="buttons/types/bd.png">$INFO[ListItem.Thumb]</texture>
   </include>
   <include name="ButtonsDesign0_thumb">
-    <texture diffuse="buttons/types/bd0.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+    <texture diffuse="buttons/types/bd0.png">$INFO[ListItem.Thumb]</texture>
   </include>
   <include name="ButtonsDesign1_thumb">
-    <texture diffuse="buttons/types/bd1.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+    <texture diffuse="buttons/types/bd1.png">$INFO[ListItem.Thumb]</texture>
   </include>
   <include name="ButtonsDesign2_thumb">
-    <texture diffuse="buttons/types/bd2.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+    <texture diffuse="buttons/types/bd2.png">$INFO[ListItem.Thumb]</texture>
   </include>
   <include name="ButtonsDesign3_thumb">
-    <texture diffuse="buttons/types/bd3.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+    <texture diffuse="buttons/types/bd3.png">$INFO[ListItem.Thumb]</texture>
   </include>
   <include name="ButtonsDesign4_thumb">
-    <texture diffuse="buttons/types/bd4.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+    <texture diffuse="buttons/types/bd4.png">$INFO[ListItem.Thumb]</texture>
   </include>
   
   <include name="ButtonsDesign_thumb2">
-    <texture diffuse="buttons/types/bd.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+    <texture diffuse="buttons/types/bd.png">$INFO[ListItem.Thumb]</texture>
   </include>
   <include name="ButtonsDesign0_thumb2">
-    <texture diffuse="buttons/types/bd0.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+    <texture diffuse="buttons/types/bd0.png">$INFO[ListItem.Thumb]</texture>
   </include>
   <include name="ButtonsDesign1_thumb2">
-    <texture diffuse="buttons/types/bd1.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+    <texture diffuse="buttons/types/bd1.png">$INFO[ListItem.Thumb]</texture>
   </include>
   <include name="ButtonsDesign2_thumb2">
-    <texture diffuse="buttons/types/bd2.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+    <texture diffuse="buttons/types/bd2.png">$INFO[ListItem.Thumb]</texture>
   </include>
   <include name="ButtonsDesign3_thumb2">
-    <texture diffuse="buttons/types/bd3.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+    <texture diffuse="buttons/types/bd3.png">$INFO[ListItem.Thumb]</texture>
   </include>
   <include name="ButtonsDesign4_thumb2">
-    <texture diffuse="buttons/types/bd4.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+    <texture diffuse="buttons/types/bd4.png">$INFO[ListItem.Thumb]</texture>
   </include>
   
   <include name="ButtonsDesign_black">

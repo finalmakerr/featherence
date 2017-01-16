@@ -200,7 +200,7 @@
 			<onclick>RunScript(script.featherence.service,,?mode=32&amp;value=10)</onclick>
 			<label>10140</label>
 			<textoffsetx>20</textoffsetx>
-			<visible>String.Contains(Container.FolderPath,plugin://)</visible>
+			<visible>String.Contains(Container.FolderPath,plugin://) + Window.IsVisible(MyVideoNav.xml)</visible>
 		  </control>
 	  </control>
 	</control>

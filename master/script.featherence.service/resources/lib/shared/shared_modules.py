@@ -1848,6 +1848,7 @@ def installaddonP(addon, update=True):
 	
 	if "5" in printpoint:
 		if update == True:
+			xbmc.sleep(1000)
 			xbmc.executebuiltin("UpdateLocalAddons")
 			xbmc.sleep(1000)
 		if "repository" in addon: xbmc.executebuiltin("UpdateAddonRepos")

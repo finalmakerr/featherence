@@ -125,7 +125,7 @@
 		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(background2)</enable>
 		  <selected>Skin.HasSetting(FullFanartZoomOut)</selected>
 		  <onclick>Skin.ToggleSetting(FullFanartZoomOut)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])</visible> <!-- | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])-->
         </control>
 		<control type="button" id="106" description="שקיפות עטיפות">
 		  <include>SideMenuCommon</include>

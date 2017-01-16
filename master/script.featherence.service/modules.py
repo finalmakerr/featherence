@@ -38,6 +38,9 @@ def mode5(value, admin, name, printpoint):
 	addon = 'plugin.video.featherence.music'
 	if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
 	
+	addon = 'plugin.program.featherence.emu'
+	if xbmc.getCondVisibility('System.HasAddon('+addon+')'): setsetting_custom1(addon, 'Addon_UpdateLog', "true")
+	
 	skin = 'skin.featherence'
 	if xbmc.getSkinDir() == skin and xbmc.getCondVisibility('System.HasAddon('+skin+')'):
 		try:
@@ -1401,11 +1404,16 @@ def mode201(value, admin, name, printpoint):
 	returned = ""
 	container50hasfocus390 = xbmc.getCondVisibility('Container(50).HasFocus(390)') #BUTTONS
 
-	list = ['-> (Exit)', localize(10035) + space + "(" + localize(593) + ")", localize(590) + space + "(" + localize(593) + ")", \
-	localize(31827) + space + "(" + localize(80,addon='script.featherence.service') + ")", localize(31827) + space + localize(590) + space + "(" + localize(80,addon='script.featherence.service') + ")", \
-	localize(31827) + space + "(" + localize(593) + ")", localize(31827) + space + localize(590) + space + "(" + localize(593) + ")", \
-	localize(10035) + space + localize(31849) + space + "(" + localize(593) + ")", localize(10035) + space + localize(31849) + space + localize(590) + space + "(" + localize(593) + ")", \
-	localize(10035) + space + "(" + localize(31825) + ")"]
+	list = ['-> (Exit)', \
+	localize(10035) + "-" + localize(593), \
+	localize(590) + "-" + localize(593), \
+	localize(31827) + "-" + localize(31420), \
+	localize(31531) + "-" + localize(31420), \
+	localize(31827) + "-" + localize(593), \
+	localize(590) + "-" + localize(593), \
+	localize(31827) + space + localize(31849) + "-" + localize(593), \
+	localize(590) + space + localize(31849) + "-" + localize(593), \
+	localize(10035) + space + localize(31825)]
 	
 	if value == "" or container50hasfocus390:
 		returned, value_ = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
@@ -1419,10 +1427,10 @@ def mode201(value, admin, name, printpoint):
 		elif returned == 2: printpoint = printpoint + "BDFH" #RANDOM-ALL
 		elif returned == 3: printpoint = printpoint + "C" #RESET-BUTTONS-COLORS
 		elif returned == 4: printpoint = printpoint + "D" #RANDOM-BUTTONS-COLORS
-		elif returned == 5: printpoint = printpoint + "CE" #RESET-ALL-COLORS
-		elif returned == 6: printpoint = printpoint + "DF" #RANDOM-ALL-COLORS
-		elif returned == 7: printpoint = printpoint + "G" #RESET-ALL-TRANSPERANCY
-		elif returned == 8: printpoint = printpoint + "H" #RANDOM-ALL-TRANSPERANCY
+		elif returned == 5: printpoint = printpoint + "CE" #RESET COLORS-ALL
+		elif returned == 6: printpoint = printpoint + "DF" #RANDOM COLORS-ALL
+		elif returned == 7: printpoint = printpoint + "G" #RESET-TRANSPERANCY-ALL
+		elif returned == 8: printpoint = printpoint + "H" #RANDOM TRANSPERANCY-ALL
 		elif (returned == 9 or value == "9"): returned = 9 ; printpoint = printpoint + "I" #RESET BUTTONS PROPERTIES
 		
 		from variables2 import labelT, list1, list0, list0c, list0c2, list0o, list0l, list1l
@@ -2347,7 +2355,6 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "Window.Property(current.actor.name)" + space2 + xbmc.getInfoLabel('Window.Property(current.actor.name)')
 			
 		elif dialogsubtitlesW:
-			message = message + newline + "TEMP" + space2 + property_temp
 			message = message + newline + "Container(120).NumItems" + space2 + xbmc.getInfoLabel('Container(120).NumItems')
 			message = message + newline + "Container(150).ListItemNoWrap(0).label" + space2 + xbmc.getInfoLabel('Container(150).ListItemAbsolute(0).label')
 			message = message + newline + "Container(150).ListItemNoWrap(1).label" + space2 + xbmc.getInfoLabel('Container(150).ListItemAbsolute(1).label')
@@ -2359,6 +2366,8 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "DialogSubtitles2" + space2 + xbmc.getInfoLabel('Window(home).Property(DialogSubtitles2)')
 			for i in range(1,11):
 				message = message + newline + 'DialogSubtitlesNA'+str(i) + space2 + xbmc.getInfoLabel('Window(home).Property(DialogSubtitlesNA'+str(i)+')')
+		elif xbmc.getCondVisibility('Window.IsVisible(Custom1170.xml)'):
+			message = message + newline + "SelectedColor" + space2 + xbmc.getInfoLabel('Window(home).Property(SelectedColor)')
 		else:
 			message = message + newline + "scriptfeatherenceservice_random" + space2 + scriptfeatherenceservice_random
 			message = message + newline + "scriptfeatherenceservice_random1" + space2 + scriptfeatherenceservice_random1
@@ -2451,7 +2460,7 @@ def mode232(value, admin, name, printpoint):
 	'''------------------------------
 	---ACTION-BUTTON-----------------
 	------------------------------'''
-	id1 = "" ; id2 = "" ; extra = "" ; TypeError = "" ; xicon = "" ; count = 0
+	id1 = "" ; id2 = "" ; extra = "" ; TypeError = "" ; xaction = "" ; xlabel = "" ; xicon = "" ; count = 0
 	if printpoint != "": printpoint = printpoint + "_"
 	
 	setProperty('mode232', 'true', type="home")

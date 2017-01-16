@@ -602,6 +602,11 @@
 	<value condition="Skin.HasSetting(BiggerWidgetLabels)">$LOCALIZE[107]</value>
   </variable>
   
+  <variable name="458label2">
+    <value condition="Skin.HasSetting(WidgetFanart)">$LOCALIZE[106]</value>
+	<value condition="!Skin.HasSetting(WidgetFanart)">$LOCALIZE[107]</value>
+  </variable>
+  
   <variable name="459label2">
     <value condition="!Skin.HasSetting(WidgetBackground)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(WidgetBackground)">$LOCALIZE[107]</value>

@@ -364,7 +364,7 @@
 		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb</include>
 		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb</include>
 		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb</include>
-		    <texture colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+		    <texture>$INFO[ListItem.Thumb]</texture>
 		  </control>
 		  <control type="image" description="צללית">
 		    <posx>50</posx>
@@ -465,8 +465,8 @@
 			<posy>360</posy>
 			<control type="image" description="שחור">
 			  <height>30</height>
-			  <posx>8</posx>
-			  <width>254</width>
+			  <posx>0</posx>
+			  <width>270</width>
 			  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
 		      <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
 		      <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
@@ -480,9 +480,9 @@
 			  <align>center</align>
 			  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 			  <font>size28</font>
-			  <posx>8</posx>
+			  <posx>0</posx>
 			  <height>30</height>
-			  <width>254</width>
+			  <width>270</width>
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
@@ -491,11 +491,11 @@
 			  <label>$VAR[WidgetLabel]</label>
 			  <font>size18</font>
 			  <height>30</height>
-			  <posx>8</posx>
+			  <posx>0</posx>
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
-			  <width>254</width>
+			  <width>270</width>
 			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
@@ -541,7 +541,7 @@
 		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb2</include>
 		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb2</include>
 		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb2</include>
-		    <texture colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+		    <texture>$INFO[ListItem.Thumb]</texture>
 		  </control>
 		  <control type="image" description="צללית">
 		    <posx>50</posx>
@@ -649,8 +649,8 @@
 				<posy>360</posy>
 				<control type="image" description="שחור">
 				  <height>30</height>
-				  <posx>8</posx>
-				  <width>254</width>
+				  <posx>0</posx>
+				  <width>270</width>
 				  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
 				  <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
 				  <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
@@ -665,8 +665,8 @@
 				  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 				  <font>size28</font>
 				  <height>30</height>
-				  <posx>8</posx>
-				  <width>254</width>
+				  <posx>0</posx>
+				  <width>270</width>
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
@@ -675,11 +675,11 @@
 				  <label>$VAR[WidgetLabel]</label>
 				  <font>size18</font>
 				  <height>30</height>
-				  <posx>8</posx>
+				  <posx>0</posx>
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
-				  <width>254</width>
+				  <width>270</width>
 				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
@@ -688,11 +688,11 @@
 				  <label>$VAR[WidgetLabel]</label>
 				  <font>size28</font>
 				  <height>30</height>
-				  <posx>8</posx>
+				  <posx>0</posx>
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
-				  <width>254</width>
+				  <width>270</width>
 				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
@@ -731,7 +731,7 @@
 		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb</include>
 		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb</include>
 		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb</include>
-		    <texture colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+		    <texture>$INFO[ListItem.Thumb]</texture>
 		  </control>
 		  <control type="image" description="צללית">
 		    <posx>10</posx>
@@ -833,8 +833,8 @@
 			<posy>360</posy>
 			<control type="image" description="שחור">
 			  <height>30</height>
-			  <posx>8</posx>
-			  <width>234</width>
+			  <posx>0</posx>
+			  <width>250</width>
 			  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
 		      <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
 		      <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
@@ -849,8 +849,8 @@
 			  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 			  <font>size28</font>
 			  <height>30</height>
-			  <posx>8</posx>
-			  <width>234</width>
+			  <posx>0</posx>
+			  <width>250</width>
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
@@ -859,11 +859,11 @@
 			  <label>$VAR[WidgetLabel]</label>
 			  <font>size18</font>
 			  <height>30</height>
-			  <posx>8</posx>
+			  <posx>0</posx>
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
-			  <width>234</width>
+			  <width>250</width>
 			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
@@ -872,11 +872,11 @@
 			  <label>$VAR[WidgetLabel]</label>
 			  <font>size28</font>
 			  <height>30</height>
-			  <posx>8</posx>
+			  <posx>0</posx>
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
-			  <width>234</width>
+			  <width>250</width>
 			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
@@ -909,7 +909,7 @@
 		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb2</include>
 		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb2</include>
 		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb2</include>
-		    <texture colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+		    <texture>$INFO[ListItem.Thumb]</texture>
 		  </control>
 		  <control type="image" description="צללית">
 		    <posx>10</posx>
@@ -1017,8 +1017,8 @@
 				<posy>360</posy>
 				<control type="image" description="שחור">
 				  <height>30</height>
-				  <posx>8</posx>
-				  <width>234</width>
+				  <posx>0</posx>
+				  <width>250</width>
 				  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
 				  <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
 				  <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
@@ -1034,8 +1034,8 @@
 				  <font>size28</font>
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <height>30</height>
-				  <posx>8</posx>
-				  <width>234</width>
+				  <posx>0</posx>
+				  <width>250</width>
 				  <textcolor>white2</textcolor>
 				  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
@@ -1044,11 +1044,11 @@
 				  <label>$VAR[WidgetLabel]</label>
 				  <font>size18</font>
 				  <height>30</height>
-				  <posx>8</posx>
+				  <posx>0</posx>
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
-				  <width>234</width>
+				  <width>250</width>
 				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
@@ -1057,11 +1057,11 @@
 				  <label>$VAR[WidgetLabel]</label>
 				  <font>size28</font>
 				  <height>30</height>
-				  <posx>8</posx>
+				  <posx>0</posx>
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
-				  <width>234</width>
+				  <width>250</width>
 				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
@@ -1100,7 +1100,7 @@
 		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb</include>
 		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb</include>
 		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb</include>
-		    <texture colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+		    <texture>$INFO[ListItem.Thumb]</texture>
 		  </control>
 		  <control type="image" description="צללית">
 		    <posx>10</posx>
@@ -1201,8 +1201,8 @@
 			<posy>360</posy>
 			<control type="image" description="שחור">
 			  <height>30</height>
-			  <posx>8</posx>
-			  <width>204</width>
+			  <posx>0</posx>
+			  <width>220</width>
 			  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
 		      <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
 		      <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
@@ -1217,8 +1217,8 @@
 			  <label>$INFO[ListItem.Property(se)]</label>
 			  <font>size28</font>
 			  <height>30</height>
-			  <posx>8</posx>
-			  <width>204</width>
+			  <posx>0</posx>
+			  <width>220</width>
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 			</control>
@@ -1227,11 +1227,11 @@
 			  <label>$VAR[WidgetLabel]</label>
 			  <font>size18</font>
 			  <height>30</height>
-			  <posx>8</posx>
+			  <posx>0</posx>
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
-			  <width>204</width>
+			  <width>220</width>
 			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
@@ -1240,11 +1240,11 @@
 			  <label>$VAR[WidgetLabel]</label>
 			  <font>size28</font>
 			  <height>30</height>
-			  <posx>8</posx>
+			  <posx>0</posx>
 			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
 			  <shadowcolor>black</shadowcolor>
 			  <scroll>false</scroll>
-			  <width>204</width>
+			  <width>220</width>
 			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 			  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 			</control>
@@ -1277,7 +1277,7 @@
 		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb2</include>
 		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb2</include>
 		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb2</include>
-		    <texture colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+		    <texture>$INFO[ListItem.Thumb]</texture>
 		  </control>
 		  <control type="image" description="צללית">
 		    <posx>10</posx>
@@ -1385,8 +1385,8 @@
 				<posy>360</posy>
 				<control type="image" description="שחור">
 				  <height>30</height>
-				  <posx>8</posx>
-				  <width>204</width>
+				  <posx>0</posx>
+				  <width>220</width>
 				  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
 				  <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
 				  <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
@@ -1401,8 +1401,8 @@
 				  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
 				  <font>size28</font>
 				  <height>30</height>
-				  <posx>8</posx>
-				  <width>204</width>
+				  <posx>0</posx>
+				  <width>220</width>
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
 				</control>
@@ -1411,11 +1411,11 @@
 				  <label>$VAR[WidgetLabel]</label>
 				  <font>size18</font>
 				  <height>30</height>
-				  <posx>8</posx>
+				  <posx>0</posx>
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
-				  <width>204</width>
+				  <width>220</width>
 				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>
@@ -1424,11 +1424,11 @@
 				  <label>$VAR[WidgetLabel]</label>
 				  <font>size28</font>
 				  <height>30</height>
-				  <posx>8</posx>
+				  <posx>0</posx>
 				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
 				  <shadowcolor>black</shadowcolor>
 				  <scroll>false</scroll>
-				  <width>204</width>
+				  <width>220</width>
 				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
 				  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
 				</control>

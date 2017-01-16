@@ -375,7 +375,7 @@ msgstr "זמן השהיית RSS"
 
 msgctxt "#31108"
 msgid "Choose how long should you be afk before RSS appear.[CR]Timing is in seconds. Choose 0 to always have RSS.[CR]Note: RSS take over some others valueable information such as focused button names, currently played video, songs etc.."
-msgstr "בחר משך זמן לדחיית הצגת RSS.[CR]התזמון הוא בזניות. בחר "0" בכדי לכפות תמיד תצוגת RSS.[CR]שים לב: RSS בא על חשבון מידע חיוני אחר כגון: שם הכפתור הנבחר, מידע על וידאו או אודיו ברקע וכו'.."
+msgstr "בחר משך זמן לדחיית הצגת RSS.[CR]התזמון הוא בשניות. בחר "0" בכדי לכפות תמיד תצוגת RSS.[CR]שים לב: RSS בא על חשבון מידע חיוני אחר כגון: שם הכפתור הנבחר, מידע על וידאו או אודיו ברקע וכו'.."
 
 msgctxt "#31109"
 msgid "Button label position"
@@ -946,24 +946,24 @@ msgid "Alignment"
 msgstr "יישור"
 
 msgctxt "#31527"
-msgid ""
-msgstr ""
+msgid "Allow Widget's fanart"
+msgstr "אפשר פאנארט ו'ידגט"
 
 msgctxt "#31528"
-msgid ""
-msgstr ""
+msgid "Choose Yes in order to disable fanart for movies and tvshows widgets."
+msgstr "בחר באפשרות כן בכדי לבטל פאנארט עבור התכנים בקיר הסרטים/סדרות."
 
 msgctxt "#31529"
 msgid ""
 msgstr ""
 
 msgctxt "#31530"
-msgid ""
-msgstr ""
+msgid "Control the maximum items for movies and tvshows widgets."
+msgstr "בחר מספר פריטים מקסימלי עבור קיר סרטים וסדרות."
 
 msgctxt "#31531"
-msgid ""
-msgstr ""
+msgid "Random colors"
+msgstr "צבעים אקראיים"
 
 msgctxt "#31532"
 msgid ""

@@ -1481,7 +1481,7 @@
 		<label>$LOCALIZE[31439]</label>
 		<label2>$INFO[Skin.String(MTWidgetItems)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/application.png</thumb>
-		<property name="rinfo"></property>
+		<property name="rinfo">$LOCALIZE[31530]</property>
 		<onclick condition="!Skin.String(MTWidgetItems)">Skin.SetString(MTWidgetItems,5)</onclick>
 		<onclick condition="Skin.String(MTWidgetItems,5)">Skin.SetString(MTWidgetItems,7)</onclick>
 		<onclick condition="Skin.String(MTWidgetItems,7)">Skin.SetString(MTWidgetItems,9)</onclick>
@@ -1494,6 +1494,15 @@
 		<onclick>RunScript(script.featherence.service,,?mode=23)</onclick>
 		<visible>Container(100).Hasfocus(30)</visible>
 	  </item>
+	  <item id="458" description="אפשר פאנארט ו'ידגט">
+		<label>$LOCALIZE[31527]</label>
+		<label2>$VAR[458label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/cubes.png</thumb>
+		<property name="rinfo">$LOCALIZE[31528]</property>
+		<onclick>Skin.ToggleSetting(WidgetFanart)</onclick>
+		<include>CustomizerExit</include>
+		<visible>Container(100).Hasfocus(30)</visible>
+	  </item>
 	  <item id="459" description="פאנארט-ו'ידגט">
 		<label>$LOCALIZE[20445]-$LOCALIZE[31078]</label>
 		<label2>$VAR[459label2]</label2>
@@ -1501,6 +1510,7 @@
 		<property name="rinfo">$LOCALIZE[31101]</property>
 		<onclick>Skin.ToggleSetting(WidgetBackground)</onclick>
 		<visible>Container(100).Hasfocus(30)</visible>
+		<visible>!Skin.HasSetting(WidgetFanart)</visible>
 	  </item>
 	  <item id="460" description="קביעת ו'ידגט סרטים">
 		<label>$LOCALIZE[31114]</label>

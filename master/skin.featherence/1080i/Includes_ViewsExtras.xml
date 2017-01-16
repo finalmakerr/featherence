@@ -522,5 +522,34 @@
 	<visible description="Progress">![String.IsEmpty(ListItem.ChannelNumber) + !String.IsEmpty(ListItem.Progress)]</visible>
 	<visible>![[Container.Content(TVShows) + Integer.IsGreater(ListItem.Property(WatchedEpisodes),0) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + !String.IsEmpty(ListItem.Property(UnWatchedEpisodes))] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>
   </include>
-
+  
+  <include name="Rating_">
+    <control type="group" description="דירוג">
+	  <animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])" effect="zoom" center="60,-38" start="100,100" end="80,80" time="0">Conditional</animation>
+	  <!--<animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
+	  <animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
+	  <height>312</height>
+	  <posx>55</posx>
+	  <posy>37</posy>
+	  <width>135</width>	  
+	  <visible></visible>
+	  <visible>!String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(Show_Rating)</visible>
+	  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+	  <control type="image" description="">
+		<animation condition="true" effect="fade" start="70" end="70" time="0">Conditional</animation>
+		<height>40</height>
+		<posy>4</posy>
+		<texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
+		<width>100%</width>
+	  </control>	  
+	  <control type="image" description="דירוג">
+		  <posy>8</posy>
+		  <width>100%</width>
+		  <height>30</height>
+		  <aspectratio align="center">keep</aspectratio>
+		  <texture background="true">$VAR[TopVideoInformation3]</texture>
+		  <visible>!String.IsEmpty(ListItem.Rating)</visible>
+	  </control>
+	</control>
+  </include>
 </includes>

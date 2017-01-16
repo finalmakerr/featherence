@@ -9,7 +9,7 @@
 	<controls>
       <control type="group" description="חלון צבעים">
         <posx>232</posx>
-        <posy>22</posy>
+        <posy>32</posy>
 		<animation description="1170" condition="String.IsEqual(Window(home).Property(TEMP),TopVideoInformationColor)" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,120" delay="0" time="700" reversible="false">Conditional</animation>
 		<!-- background panel -->
 		<include content="MenuBackground">
@@ -6333,7 +6333,6 @@
 				<posx>210</posx>
 				<width>180</width>
 				<include>ButtonC1</include>
-				<!--<font>Reg32</font>-->
 				<enable>!String.IsEmpty(Window(home).Property(SelectedColor))</enable>
 				<onclick>Skin.SetString($INFO[Window(home).Property(TEMP)],$INFO[Window(home).Property(SelectedColor)])</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(TEMP)].name,$INFO[Window(home).Property(SelectedColorName)])</onclick>
@@ -6352,7 +6351,6 @@
 			<control type="button" id="3010" description="edit manual">
 				<width>170</width>
 				<include>ButtonC1</include>
-				<font>Reg32</font>
 				<label>$VAR[ManualColor]</label>
 				<label2></label2>
 				<posy>5</posy>
@@ -6361,9 +6359,8 @@
 			<control type="button" id="30110" description="ברירת מחדל">
 				<posx>210</posx>
 				<textoffsetx>25</textoffsetx>
-				<width>200</width>
+				<width>230</width>
 				<include>ButtonC1</include>
-				<!--<font>Reg32</font>-->
 				<onclick>Skin.SetString($INFO[Window(home).Property(TEMP)],)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(TEMP)].name,)</onclick>
 				<onclick>Dialog.Close(1173)</onclick>

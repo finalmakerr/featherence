@@ -6,19 +6,27 @@ WIP - WORK IN PROGRESS
 - Added auto-build widget feature.
 
 ------------------------
-Featherence v0.7.0 (xx-xx-17)
+Featherence v0.7.0 (16-01-17)
 ------------------------
 - ***Added Krypton support***.
 - Added action information in skin design window for Buttons, Sub Buttons and Widgets.
 - Added Artist Slideshow support (WIP).
+- Added auto-skin resolution support for touch devices and new TV with high resolution.
 - Added feature to show video/audio OSD by mouse clicking the top information bar.
 - Added left menu settings icon for skin's views.
-+ Added Premiered information to Side List view instead of year when available.
+- Added option to ignore fanart for movies/tvshows widget.
 - Added music visualation support.
 - Added Party Mode feature to music library.
+- Added Premiered information to Side List view instead of year when available.
 - Added ScrollBar support to PVR Guide window.
+- Added show ratings feature to Side Wall view.
+- Added Topvideoinformation layer for DialogFavourites window.
 - Added WINDOW_DIALOG_CMS_OSD_SETTINGS.
+- Major update of skin animation performance (Less slow down!).
+- Minor bugs fix.
+- Minor update of skin layouts.
 - Minor update of SmartPlaylistEditor window.
+- Minor update of widget's labels design.
 
 ------------------------
 Featherence v0.6.8 (24-Nov-16)

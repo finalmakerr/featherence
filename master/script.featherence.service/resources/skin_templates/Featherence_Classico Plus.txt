@@ -1,9 +1,7 @@
 ------------------------
-Featherence Classico Plus (xx-Jan-17)
+Featherence Classico Plus (15-Jan-17)
 ------------------------
-- Added Zen Movies/Tvshows.'
-
-
+- Added Zen Movies/Tvshows.
 
 ------------------------
 Featherence Classico Plus (18-Dec-16)

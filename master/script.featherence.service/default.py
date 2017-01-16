@@ -625,7 +625,7 @@ elif mode >= 200 and mode <= 249:
 						else:
 							if os.path.exists(featherenceserviceaddondata_media_path + 'Featherence_.txt'):
 								removefiles(featherenceserviceaddondata_media_path + 'Featherence_.txt')
-							Custom1000(str(list[returned]),10,str(list2[returned2]),5)
+							Custom1000(str(list[returned]),0,str(list2[returned2]),5)
 							if 'C' in printpoint and os.path.isdir(path + file):
 								copyfiles(path + file, featherenceserviceaddondata_media_path) ; Custom1000(str(list[returned]),20,str(list2[returned2]),1)
 							else:
@@ -642,11 +642,11 @@ elif mode >= 200 and mode <= 249:
 								count = 0
 								for line in fileinput.input(featherenceserviceaddondata_media_path + 'Featherence_.txt'):
 									count += 1
-									if count >= 10:
+									if count >= 6:
 										count = 0
 										property_1000progress = xbmc.getInfoLabel('Window(home).Property(1000progress)')
-										try: test = int(property_1000progress) + 2
-										except: property_1000progress = 20
+										try: test = int(property_1000progress) + 1
+										except: property_1000progress = 10
 										Custom1000(str(list[returned]),int(property_1000progress) + 1,str(list2[returned2]),5)
 									x = "" ; x1 = "" ; x2 = "" ; x3 = ""
 									if "=0" in line:
