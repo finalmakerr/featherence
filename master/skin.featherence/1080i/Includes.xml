@@ -127,7 +127,7 @@
 	<control type="group" id="7016" description="">
 	  <height>45</height>
 	  <posy>-6</posy>
-	  <animation condition="Skin.HasSetting(TopInformationSize) | String.IsEqual(Container.Viewmode,$LOCALIZE[31011])" effect="zoom" center="0,3" start="100,122" end="100,122" time="0" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(TopInformationSize)" effect="zoom" center="0,3" start="100,122" end="100,122" time="0" reversible="false">Conditional</animation>
 	  <animation condition="!Window.IsVisible(CustomHomeCustomizer.xml) + [System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)]" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
       <control type="image" description="מסגרת">
 		<include>Fade_TopInformationOverlay</include>

@@ -20,7 +20,8 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	fanart = str(to_utf8(fanart))
 	
 	if '$LOCALIZE' in name or '$ADDON' in name: name = xbmc.getInfoLabel(name)
-	
+	if 'www.sdarot.pm' in iconimage:
+		iconimage = iconimage.replace('www.sdarot.pm','www.sdarot.wf',1)
 	if num == None: num = ""
 	if '&getAPIdata=' in str(num):
 		finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(num, name, iconimage, desc, fanart, playlist=[], onlydata=True)
