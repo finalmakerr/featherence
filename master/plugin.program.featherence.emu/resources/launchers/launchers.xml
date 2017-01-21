@@ -2,15 +2,6 @@
 <advanced_launcher version="1.0">
 	<categories>
 		<category>
-			<id>Featherence_arcade</id>
-			<name>Arcade</name>
-			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/mame.jpg</thumb>
-			<fanart></fanart>
-			<genre></genre>
-			<description></description>
-			<finished>false</finished>
-		</category>
-		<category>
 			<id>default</id>
 			<name>Default</name>
 			<thumb></thumb>
@@ -20,9 +11,27 @@
 			<finished>false</finished>
 		</category>
 		<category>
+			<id>Featherence_arcade</id>
+			<name>Arcade</name>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/arcade.jpg</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<description></description>
+			<finished>false</finished>
+		</category>
+		<category>
+			<id>Featherence_dreamcast</id>
+			<name>Dreamcast</name>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/dreamcast.jpg</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<description></description>
+			<finished>false</finished>
+		</category>
+		<category>
 			<id>Featherence_nintendo</id>
 			<name>Nintendo</name>
-			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/nintendo.jpg</thumb>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/nintendo.png</thumb>
 			<fanart></fanart>
 			<genre></genre>
 			<description></description>
@@ -40,7 +49,7 @@
 		<category>
 			<id>Featherence_nintendods</id>
 			<name>Nintendo DS</name>
-			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/nintendo_ds.jpg</thumb>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/nintendo_ds.png</thumb>
 			<fanart></fanart>
 			<genre></genre>
 			<description></description>
@@ -58,7 +67,7 @@
 		<category>
 			<id>Featherence_segamastersystem</id>
 			<name>Sega Master System</name>
-			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/sms.jpg</thumb>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/sms.png</thumb>
 			<fanart></fanart>
 			<genre></genre>
 			<description></description>
@@ -156,7 +165,7 @@
 					<custom></custom>
 					<genre>Platform / Run Jump</genre>
 					<release>1983</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Congo Bongo is an isometric platform game and is Sega's take on Nintendo's legendary "Donkey Kong". The game begins with an animated cut-scene showing Bongo the gorilla as approaches the campsite of a sleeping safari hunter and sets fire to his tent. The player takes on the role of the hunter who has vowed revenge on Bongo for this cruel prank. The game consists of four different scenes. Each is timed by a bonus counter in the upper left corner of the screen. As time passes, the bonus decreases. If the bonus counter reaches zero, a player life is lost. Congo Bongo's four scenes are as follows:</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -246,7 +255,7 @@
 					<custom></custom>
 					<genre>Shooter / Flying 1st Person</genre>
 					<release>1990</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>A direct sequel to 1987's "After Burner", G-loc adopts its predecessor's action-packed, if somewhat limited, gameplay, although the game's pace has been noticeably reduced, making survival more a matter of skill than the shoot-and-hope gameplay of "After Burner". The bulk of G-Loc's action is viewed from a first-person, in-cockpit view, but, at certain points of the game, the viewpoint switches to the familiar third-person perspective of "After Burner", as the player's jet fighter is tailed by an enemy fighter. The player must roll and turn to shake off the pursuer, once this is achieved the game switches back to first-person perspective. The object of the game is to shoot a set number of enemy planes as they approach from front and behind; rolling and swerving to avoid incoming enemy fire. Certain stages feature ground-based enemy installations which must also be destroyed. The player's jet fighter is armed with both a machine gun, and a limited supply of missiles which can be 'locked-on' to enemy targets. G-Loc's levels take the player through a variety of different landscapes, including wide, rolling plains and rock-strewn canyons. Later in the game, the player must attempt to land their fighter onto an aircraft carrier. Failure to do so results in the game ending.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -426,7 +435,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1982</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Go skating on thin ice! Race Pengo, the lovable penguin, around a frozen lake. Rearrange huge blocks of ice. Your goal: line up three jewel-embedded blocks for dazzling points! Your enemies: SNO-BEES! Their touch puts you in deep freeze.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -531,7 +540,7 @@
 					<custom></custom>
 					<genre>Shooter / Flying (chase view)</genre>
 					<release>1985</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Space Harrier is a sprite-scaling 3D shoot-em-up set in the 'Fantasy Zone'; a surreal world composed of abstract structures and a checkerboard landscape. The game's enemies are as abstract as its setting; with creatures including prehistoric Mammoths, alien pods, giant mushrooms and, at the end of most stages, a huge, fireball-spitting Chinese Dragon. The player's on-screen counterpart carries a portable jetpack under his arm which allows him to fly. The player can also run along the ground to avoid overhead structures and enemies. In addition to its flight capability, the jetpack is also equipped with a laser, used to destroy both the game's many enemies as well as some (but not all) obstructions, such as the trees and floating rocks on the first stage. Space Harrier has a total of 18 stages, each with a boss fight at the end. Three exceptions are the bonus stages (5th and 12th) and the 18th stage, which is a 'boss rush' featuring some of the bosses encountered up to that point.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -931,7 +940,7 @@
 					<custom></custom>
 					<genre>Shooter / Gun</genre>
 					<release>1993</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>A shooter game.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -1186,7 +1195,7 @@
 					<custom></custom>
 					<genre>Fighter / Versus</genre>
 					<release>1992</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>A cartoon-like fighting game with pleasing animation and a sense of humor. 8 selectable characters.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -1604,7 +1613,7 @@
 					<fanart>rom_pathArcade/_2P/_Artwork/screenshot/fbfrenzy.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Sports / Football Amer.</genre>
+					<genre>Sports / Football</genre>
 					<release>1992</release>
 					<publisher>SNK</publisher>
 					<gameplot>A football game where 8 teams (10 in all) take part in a single-elimination tournament to decide who is the best.</gameplot>
@@ -1711,7 +1720,7 @@
 					<custom></custom>
 					<genre>Fighter / 2.5D</genre>
 					<release>1989</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>1 to 3 warriors take up arms to save the King from the evil Death Adder. The 3 different player characters are an Amazonian warrior, a barbarian hero and a viking dwarf. Each hero uses a different kind of magic : the barbarian uses earth magic, the amazon uses fire magic and the viking dwarf uses lightning magic. In addition : each player character also carried a different weapon : the amazonian warrior and the barbarian both use swords while the viking dwarf uses the Golden Axe itself.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -1751,7 +1760,7 @@
 					<name>Gunbird 2</name>
 					<filename>rom_pathArcade/_2P/gunbird2.zip</filename>
 					<thumb>rom_pathArcade/_2P/_Artwork/boxfront/gunbird2.png</thumb>
-					<fanart>rom_pathArcade/_2P/_Artwork/screenshot/gunbird2.jpg</fanart>
+					<fanart>rom_pathArcade/_2P/_Artwork/screenshot/gunbird2.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Shooter / Flying Vertical</genre>
@@ -1876,7 +1885,7 @@
 					<custom></custom>
 					<genre>Shooter / Gun</genre>
 					<release>1993</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Plunge into a heart-wrenching race for survival! On a tropical island, a violent hurricane rips through the dinosaur preserve, trapping the tourists and freeing the most terrifying animals in prehistory! Two bigger-than-life ways to play: Be a dinosaur!  As a Raptor, rampage across the island battling other beasts and eluding the traps and weapons of your human enemies. As Grant, the paleontologist, arm yourself with tranquilizer guns, and sleeping-gas grenades. Dodge the slashing jaws of the Tyrannosaurus Rex and the paralyzing spit of the Dilophosaurs! 16 mammoth megs of nerve-shredding action!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -2746,7 +2755,7 @@
 					<custom></custom>
 					<genre>Mini-Games</genre>
 					<release>1997</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>A game that includes puzzle, quiz and action games within.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -3059,7 +3068,7 @@
 					<fanart>rom_pathArcade/_2P/_Artwork/screenshot/rushhero.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Sports / Football Amer.</genre>
+					<genre>Sports / Football</genre>
 					<release>1996</release>
 					<publisher>Konami</publisher>
 					<gameplot>Features real-time fully animated CG rendering-large characters and a 3-D filed perspective view.</gameplot>
@@ -3361,7 +3370,7 @@
 					<custom></custom>
 					<genre>Platform / Fighter Scrolling</genre>
 					<release>1991</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>A sideways scrolling beat-em-up for 1 to 4 players; choosing from Spider-Man, Black-Cat, Hawkeye or Sub-Mariner. The heroes must fight their way through four levels of Dr. Doom's villains; including Venom, The Scorpion, The Lizard, The Green Goblin, The Sandman, The Kingpin, The Hobgoblin, Electro, Dr. Octopus and, of course, Dr. Doom himself. Each player character has a different weapon or power that can be used throughout the game while fighting. Spider-Man uses his webs, The Black Cat uses her 'cat's claw' grappling hook and cable, Hawkeye uses his bow and arrows and The Sub-Mariner uses his hydro-electric charges. The game's viewpoint pans in and out between alternate large and small scale (4-way scrolling) sections. The game's 'camera' zooms out on alternate levels with the zoomed-out view introducing four-way scrolling platform sections to the gameplay. The game ends when the fourth and final chapter has been completed.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -4111,7 +4120,7 @@
 					<custom></custom>
 					<genre>Fighter / Versus</genre>
 					<release>1993</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>In this 3-D fighting game, the game's battle system is simple, yet complex. There are 3 buttons : Punch, Kick and Guard. Movement is strictly confined to a horizontal plane. Battles are won by draining the energy bar of your opponent or by pushing your opponent off the edges of the ring (known as a 'Ring-out'). When a 'Draw' is declared (timer reaches zero with both fighters having an equal amount of energy), a Sudden Death match is held on a very small platform, making a win by Ring-out that much more probable. The game favours tactical play over mindless button bashing, and the gameplay is balanced accordingly to reflect this.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -4321,7 +4330,7 @@
 					<custom></custom>
 					<genre>Sports / Wrestling</genre>
 					<release>1989</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Export release. Game developed in Japan. For more information about the game itself, please see the original Japanese release entry; "Wrestle War [Model 317-0090]"</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -4451,7 +4460,7 @@
 					<custom></custom>
 					<genre>Platform / Shooter Scrolling</genre>
 					<release>1990</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Shape-changing alien scum take over your city. Fry the slimy horrors and smash their bid for global conquest. Blast into action with ray guns, flame throwers, power-whips, and more! But watch your step! Harmless objects might transform into vicious aliens. A trash can erupts with spiked tentacles that slash at the helpless! Only quick reflexes and precision weaponry can keep you off the aliens' menu.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -4556,7 +4565,7 @@
 					<custom></custom>
 					<genre>Fighter / 2.5D</genre>
 					<release>1991</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>A multi-player side-scrolling beat'em up.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -4586,7 +4595,7 @@
 					<custom></custom>
 					<genre>Shooter / Walking</genre>
 					<release>1988</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>A one or two player shoot-em-up featuring single screen levels, in which players must rescue lost troops before making their way to the exit. Players can choose to play as any one of three different characters; each with their own unique weapons, strengths and weaknesses. Time is a factor in this game and all troops that do not enter the exit will be lost. All rescued troops will join the player's ranks as bonus players. The levels take players through fields, castles, forests, forts etc.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -4601,7 +4610,7 @@
 					<custom></custom>
 					<genre>Driving / Race</genre>
 					<release>1988</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Up to four players race each other over a variety of different surfaces on a selection of narrow, twisting roads, in this scrolling top-down racing game from Sega. Each player's vehicle has a fuel (gas) meter that constantly depletes as the race progresses. Extra fuel (and bonus pick-ups) are placed at regular intervals on each track and can be collected by driving over them. If a car runs out of fuel it is automatically disqualified from the race. During races the track scrolls to follow the current race leader. If the last-placed driver falls too far behind the leader and allows the scrolling area to catch up with them, their car is automatically transported further up the track, resulting in a fuel penalty. There are always four cars competing in each race (with computer-controlled cars replacing any positions not filled by human players). Any driver finishing in the Top three is awarded bonus points, with the amount determined on whether they have finished 1st, 2nd or 3rd. These points can be used to buy a variety of car upgrades in the garage shop that appears at the end of every race. The upgrades available are; engine, tyre, wing and bumper. These affect speed, handling and durability. Particular attention should be paid to tyre choice, as different tyres are suited to specific race surfaces.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -4646,7 +4655,7 @@
 					<custom></custom>
 					<genre>Maze / Fighter</genre>
 					<release>1990</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Based on the movie of the same name, Moonwalker is a scrolling, isometric beat' em up in which Michael Jackson (1958-2009), along with his chimp Bubbles, attempts to save children and defeat the evil 'Mr. Big'. During each round, the player must defeat each and every one of Mr. Big's henchmen and the deadly enemy machines that patrol the levels. This is achieved either by shooting them with Michael Jackson's 'magical energy', or by using his Dance Magic - the game's equivalent of a smart bomb. Some enemies take only one shot to defeat whereas others take several shots before they are destroyed. The longer the player holds down on the fire button, the greater the amount of magical energy Michael can inflict. At the start of each round, the player is given 2 dance magic smart bombs. Towards the end of each round, Michael's pet chimpanzee, Bubbles, will be seen moving about. If Michael touches Bubbles, he will turn into a powerful robot (the 'Moonwalker' of the game's title). After Michael has become Moonwalker, he will be able to shoot lasers and fire missiles. Michael must defeat every boss enemy at the end of each round in order to proceed to the next. Each player's Michael Jackson character looks identical but wears a different colour : white (left player), red (middle player), and black (right player).</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -4676,7 +4685,7 @@
 					<custom></custom>
 					<genre>Platform / Run Jump Scrolling</genre>
 					<release>1992</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>A scrolling, isometric racing game for one to three players featuring Sega's legendary mascot, 'Sonic the Hedgehog'. Sonic's nemesis, 'Dr. Robotnik', is once again intent on World domination and is preparing to launch his latest attack from his new island base, Eggman Island. When 'Sonic', 'Ray', and 'Mighty' drop in to thwart his plans, Robotnik catches them with one of his devious machines. After finding themselves imprisoned in a tower, the trio break free onto the island, and proceed to make their escape and try to defeat Robotnik and his evil plans. Sega Sonic's gameplay retains elements of the original console games, such as Sonic's ability to jump on the heads of enemies to kill them. The golden rings that Sonic collects are also included. Each level is littered with Dr Robotnik's devious traps; with lava flows, collapsible platforms, locked gates etc. all serving to hamper Sonic's progress.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -5031,7 +5040,7 @@
 					<custom></custom>
 					<genre>Fighter / 2.5D</genre>
 					<release>1992</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Like it's legendary prequel, 1989's "Golden Axe"; 'Revenge' is sideways scrolling beat-em-up set in a traditional fantasy world, in which the evil 'Death Adder' has arisen to take over the lands. The game supports simultaneous four-player gameplay, with each player taking on one of the game's characters. The four available characters are 'Sternblade' (a barbarian warrior), 'Dora' (a female centaurian), 'Goah' (a giant with a dwarf sitting atop his shoulders) and 'Little Trix' (an agile, oriental-style warrior). As with 'Golden Axe', as well as standard weapon attacks, each character has a special attack move that is activated by pressing both JUMP and ATTACK at the same time. Also, double-tapping the joystick right or left will cause the player to charge and smash into opponents. At certain points during the game, players will come across certain creatures and contraptions (such as dragons, giant scorpions and catapults) which, once the original occupier has been removed from the saddle, can be mounted and ridden/utilized to attack the enemy. At certain points during a level, as well as at the end of each level, dwarfs appears carrying a sack on their back. Players can hit the dwarfs causing them to drop food and magic potions. During the course of the game, players will also come across numerous trapped prisoners. These can be released by either opening their cages (by pulling a rope or similar) or hacking at their foot manacles. Unlike the linear level layout of its prequel, 'Revenge' offers the player a branching route through the game, adding to its variety and longevity.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -5271,7 +5280,7 @@
 					<custom></custom>
 					<genre>Sports / Tennis</genre>
 					<release>1988</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Passing Shot is a Sports game, developed and published by Sega,  which was released in 1988.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -5404,7 +5413,7 @@
 					<fanart>rom_pathArcade/_4P/_Artwork/screenshot/shimpact.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Sports / Football Amer.</genre>
+					<genre>Sports / Football</genre>
 					<release>1991</release>
 					<publisher>Midway</publisher>
 					<gameplot>This isn't just football; it's SUPER HIGH IMPACT! Quick-Action play selections get you into the action before you can say "WICKED HIT!" Choose from 18 hard-charging teams and over 30 plays, from a red-dog blitz to a never-say-die superfly! "YER TOAST" if the HIT-O-METER rates your tackle "DWEEB", but you can settle the score the ol' fashioned way with an all-out team brawl. When you're tired of watching football from the sidelines... get into the button-pounding arcade action of SUPER HIGH IMPACT!</gameplot>
@@ -5686,7 +5695,7 @@
 					<custom></custom>
 					<genre>Driving / Race (chase view)</genre>
 					<release>1986</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Out Run is a ground-breaking racing game in which the player drives a red Ferrari Testarossa through a number of colourful European locations, trying to reach each end-of-level checkpoint before the tight time limit expires. Each of the game's stages is packed with civilian traffic that must be carefully avoided, as players try to negotiate the game's twisting, hilly roads. At the end of every stage players are presented with a fork in the road, allowing them to chose which route they wish to take next. This was not the first time this feature had appeared (Tatsumi's 1983 racer, TX-1, was the first to introduce forked roads). As well as being able to choose routes, players could also - via the game's "in-car radio" - choose one of three different catchy tunes to listen to while driving. The songs are 'Magical Sound Shower', 'Passing Breeze' and 'Splash Wave'.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -5701,7 +5710,7 @@
 					<custom></custom>
 					<genre>Driving / Race (chase view)</genre>
 					<release>1988</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>In Power Drift, a single player races against eleven other drivers over any one of five abstract and hugely demanding courses. The game's 25 stages (separated into five different races, only ONE of which can be played per game) are constructed of undulating, tilting, roller coaster-esque tracks; featuring jumps, drops and chicanes. On most of the stages, it's possible to 'fall off' the higher sections of the track, crashing to the ground below and losing valuable seconds. Power Drift's superb Roller Coaster effect was enhanced further with the introduction of a 'tilting axis'; as the player steers left and right, the screen display mirrors the controller's movements and tilts on its axis, in a similar fashion to another Sega game, "After Burner". Power Drift was yet another visually superb 3-D "sprite-scaling" racing game from Sega and, having already perfected the racing genre with 1986's "Out Run" and the "Hang-on" series; the company charged Yu Suzuki and his team to take the arcade racer in a wholly new direction.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -5716,7 +5725,7 @@
 					<custom></custom>
 					<genre>Driving / Race (chase view) Bike</genre>
 					<release>1989</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Race a motorcycle against other bikes, cars, trucks and the obligatory tight time limit. Racing Hero is the spiritual successor both to Sega's wonderful "Hang-On" series, and to their most famous racing game, "Out Run". Some of Racing Hero's stages mirrored the racing-through-traffic gameplay of the Ferrari-based racer, for example perhaps the biggest similarity to Out Run is that at the end of each stage, the player can choose which route he or she wishes to take next. This differs somewhat from "Out Run"'s highly impressive forked-road method. In Racing Hero, the player is presented with a seperate stage-select screen and simply highlights the flag of whichever country they wish to tackle next.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -5836,7 +5845,7 @@
 					<custom></custom>
 					<genre>Driving</genre>
 					<release>1997</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Scud Race Plus is a Driving game, developed and published by Sega,  which was released in Japan in 1997.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -5851,7 +5860,7 @@
 					<custom></custom>
 					<genre>Driving</genre>
 					<release>1995</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>At an incredible 30 frames a second AM#3 delivers the most gruelling driving experience yet! Skill and technique are essential as one or two players navigate their way around four courses of the most arduous terrain ever to soil your living room carpet!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -5896,7 +5905,7 @@
 					<custom></custom>
 					<genre>Driving</genre>
 					<release>1992</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Stadium Cross is a Driving game, developed and published by Sega,  which was released in 1992.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -10396,7 +10405,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1990</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>You scream off the carrier, there's no time to think! You're caught in a swarm of enemy aircraft and more are dead ahead. They're closing at Mach 5, as your machine guns start blasting. Burn through a sky of flying metal! Radar-lock on the frontal attackers and respond with missiles. Your enemies are specks on the horizon, then instantly they're in your face, launching even faster missiles! Nothing can prepare you for the incredible speed of the attack. Hit your afterburner! Dive and twist! Throw your plane into a 360 roll as the enemy spins by so close you almost touch wing tips. Day or night, dog fight or missile duel - the terrifying speed of battle never lets up. The sky shrieks with metal menace. The intercept officer is screaming "Look out!"</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -10441,7 +10450,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1989</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Enter a time when men were warriors and Gods ruled the world. A time of good against evil, a place of danger. Summoned by Zeus to rescue Athena, you will infiltrate the Underworld with the power to transform into mythical creatures with supernatural strength. Level 1: Become a savage Werewolf and use teeth and nails to shred your enemies to pieces. Capture 3 of the elusive Spirit Balls and you'll be transformed into a ferocious, fireball throwing Werewolf. Levels 2 &amp; 3: Take flight as Weredragon and use fiery force to fry the followers of Neff. Creep across slippery crevasses inside a deep cavern as the crafty Werebear. Levels 4 &amp; 5: Stalk the gates of the Underworld fortress as a man-eating Weretiger, a predator with no pity. Inside the inner sanctum call on Golden Werewolf's might to demolish Neff the demon - forever!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -10741,7 +10750,7 @@
 					<custom></custom>
 					<genre>Role-Playing</genre>
 					<release>1992</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>The chill of danger... the sweat of combat... the rush of discovery. It's dynamite D&amp;D on Sega Genesis - alive with sizzling color, graphics and sound. Create your own unique characters from seven classes, including Fighter, Magic User and Elf. Gear up for combat, intrigue, magic - enough for a lifetime! It's the richness of the D&amp;D game, with the power of Sega Genesis. All at once. Your characters have been transported to an inescapable valley. There are mysteries to unravel... risks to face... an evil to be destroyed! Outside, plan the battle tactics from 3-D overhead view. Underground, thrash through hand-to-hand combat in blazing 3-D first-person perspective. Are your characters chased? Lost? Trapped? Find the way out with an auto-mapper that updates their progress. Master the D&amp;D universe. Because now you have the power of Sega Genesis!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -10916,7 +10925,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1989</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>In Turtle Village the children are fleeing for their lives! The invaders are brutal, ugly, and 12 feet tall, with huge arms and bellowing laughs. They love pounding you into the dirt! It's a spellbinding age of magic, fire-spewing dragons, and skeletons in armor! Fight on the back of a giant turtle! Battle on the wings of an enchanted eagle! Vanquish and ride flame-breathing monsters to victory! As the Warrior, swing a mighty sword and shatter your enemies with clouds of mushroom magic. As the Amazon, kick, smash, and blast your enemies with curtains of fire.  As the Dwarf, strike with the Golden Axe, somersault, and scorch the invaders with lightning! Find the prison of the King and Princess, save them, and return peace to the world. So far, the score is Death Adder - thousands; You - zero. It's time to change the score!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -10931,7 +10940,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1991</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Chop down the forces of evil in this intense sequel to Golden Axe. Battle the dreaded Dark Guld with the Barbarian, the Amazon and the Dwarf. Use tough new warrior skills and dazzling magic. Kick, hack, and hurl away enemies in the struggle to recapture that legendary symbol of peace, the Golden Axe. So let the battle begin! Lift your mighty blade high to crush the demon Dark Guld!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -10946,7 +10955,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>2007</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>The once-peaceful kingdom so familiar to fans of the original Golden Axe is under threat once again. The Prince of Darkness has stolen the invaluable Golden Axe, taken over the kingdom, and rendered all its warriors harmless thanks to an evil curse. One warrior, however, breaks free from the curse and must defeat the prince and regain the Golden Axe to save the kingdom. In this one- or two-player action game, play as a giant, a panther, or a sword-wielding human and fight your way to victory once again!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -10976,7 +10985,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1994</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Swing from vines, launch new attacks, survive deadly traps and summon Tails to airlift Sonic out of danger.  Discover hidden rooms and passageways in the mega-sized Zones.  Transform into Super Sonic and experience the ultimate in speed and ultra-sonic power.  Save your progress using the new Game Save Feature.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -10991,7 +11000,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1991</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Axel, Adam and Blaze - ex-cops, the solution to punk pollution. The city's a war zone, and they're going out two at a time to give the gangs a kick in the guts. This is the ultimate in street combat. These city fighters are martial arts maniacs with a battery of 40 individually controllable attacks - including jabs, head butts, and overhead kicks. They're up against a mob of Kung-Fu creeps and axe-hurling fiends. On the streets it's only two of them against hordes of attacking scum. Slam into pipe-wielding weirdos and bash 'em with their own metal. Throw an uppercut or an elbow smash - these goons keep comin'!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -11006,7 +11015,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1992</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Original rumblers Axel and Blaze slam the asphalt with bigger, better, totally devastating attacks! Skull-crushing ex-wrestler Max Thunder joins up with earth-shattering body slams and spinning fist attacks. New thrasher Skate slices punks with high speed in-line skate attacks and spinning jump kicks. Go maniac with jaw-shattering, bone-busting punches, head-cracking jump kicks and secret weapons. Gangs of dirt bikers dive into you from every side. Smash 'em with a pipe as they speed by. 16 gigantic megs of compound fractures! All new moves, and more of 'em! Bust knuckles with a friend in an all-new 2-player head-to-head mode!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -11021,7 +11030,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1994</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Snatch the Police Chief and replace him with a robot? Bomb city streets to splinters? Mr. X and the Syndicate surface once again to hatch the ultimate evil plot! Blaze Fielding launches a furious counterattack with Axel, Skate and cyborg newcomer Dr. Zan! Totally new moves including jump kicks, power slams and spin punches and secret attacks! Out-RAGE-ous 2-player combo attacks and head-to-head battles! Four bone-busting endings - the better you get, the more you see! Thrashing digitized sound FX and incredible street tunes!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -11091,7 +11100,7 @@
 					<custom></custom>
 					<genre>Simulation</genre>
 					<release>1988</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>You're a Navy Air Captain. At your control is the most advanced fighter jet ever to set the sky on fire! You supply the skill, reflexes, and guts. Your F-14 Thunder Cat gives you Mach 2+ speeds, unlimited firepower and a state-of-the-art battle computer which targets your enemies for destruction. Fire guided missiles, then blast away with your Vulcan cannon. Roll your F-14 left and right! Enemy missiles slide under your wings. Your afterburners roar as you dive for the wave tops! In this sky battle you're outnumbered. But that's O.K. When it comes to flying the unfriendly skies, you're the one they call "The Ace."</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -11106,7 +11115,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1986</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Your name is Alex Kidd. You have courage. A karate chop that shatters rocks. And a big job to do. You learn that the mysterious city Radactian is in great danger. All your skills and talents are desperately needed to help. But there's a catch: how do you get there? Your only clues are a puzzling map and a medallion made of Sunstone. Will that be enough to solve the riddle of the pathway? You face the obstacles. Solve the mysteries. learn the secrets as you go along. but there's high adventure around every corner. it takes a Kidd like you handle a challenge like this.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -11136,7 +11145,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1991</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Getafix, the Druid whose magic potion has kept his village from falling into Caesar's hands, has been kidnapped! Join Asterix and Obelix as they try to rescue the druid and save the village!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -11256,7 +11265,7 @@
 					<custom></custom>
 					<genre>Driving</genre>
 					<release>1987</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Brace yourself for the most realistic racing experience yet. And to play, you've got to have what it takes: NERVE, SKILL and BRAINS. NERVE - you're behind the wheel of a supertuned race car with one speed only: fast. SKILL - you're maneuvering a car that can nearly reach a simulated 270 KMH. BRAINS - because you're in control of your car's speed and handling at a dangerous pace, you have to use your head and not just your hands to survive. So get geared for the ride of your life and stay alert. The track may look terrific, but at these speeds anything can turn into a danger zone.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -11391,7 +11400,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1988</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>You're Jo-Musashi, a mild-mannered martial arts instructor. But you have another job as well. When duty calls, you're a Master Ninja! Your mission: An evil terrorist network, the Ring of Five, has kidnapped the children of the world's leaders! You must get the hostages back... and defeat the Ring of Five! They're waiting for you with gunmen, thugs, mongos and green ninjas. But you alone have the power of Ninja Magic!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -11451,7 +11460,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>2009</release>
-					<publisher>Sega</publisher>
+					<publisher>SEGA</publisher>
 					<gameplot>Dr. Robotnik's stolen the red Chaos Emerald, and it's up to Sonic The Hedgehog to get it back!  As Sonic or "Tails" the two-tailed fox, you'll zip through the Zones, using your quick moves and quicker thinking to collect rings and evade Robotnik's latest batch of badniks!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -12044,7 +12053,7 @@
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Mega Man Legends.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Action Role-Playing</genre>
+					<genre>Action / Role-Playing</genre>
 					<release>1998</release>
 					<publisher>Capcom</publisher>
 					<gameplot>Mega Man Legends is a 3rd person, Action-RPG which takes place in a free-roaming world. The player explores 'digs' sites in which Mega Man just venture into Ruins to find parts that will help restore his ship and get them off the crashed island. Upon exploring these ruins the player will come across many different items that help power-up Mega Man in different ways. The main thing the player will come across will be "Zenny", which the currency used in the Mega Man franchise, as well as many other games with Japanese origins. Zenny comes in the form of crystals that are dropped when enemies are defeated and certain objects are destroyed. Zenny can be used in the towns market to buy items like Health upgrades, buster parts and other power-ups.</gameplot>
@@ -12104,7 +12113,7 @@
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Metal Gear Solid.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Action Adventure</genre>
+					<genre>Action / Adventure</genre>
 					<release>1998</release>
 					<publisher>Konami</publisher>
 					<gameplot>You are Snake, a government agent on a mission to regain control of a secret nuclear weapons base from terrorist hands. Lightly armed and facing an army of foes, Snake must avoid firefights in order to survive. If Snake can locate them he can utilize advanced hardware, ranging from silenced pistols to ground-to-air missiles. Enemies react to sight and sound - so stay quiet and stay in the shadows. State-of-the-art graphics: textures, transparencies, models and explosions. Taut, gripping story with multiple endings - a truly cinematic experience.</gameplot>
@@ -12119,7 +12128,7 @@
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Metal Gear Solid VR Missions.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Action Puzzle</genre>
+					<genre>Action / Puzzle</genre>
 					<release>1999</release>
 					<publisher>Konami</publisher>
 					<gameplot>The game consists of 300 VR missions, similar to the 10 included in the North American release of Metal Gear Solid. Most modes involve a 'Practice' mode where there is no time limit and a 'Time Attack' where the player has a limit and can aim for a best time in first, second or third.</gameplot>
@@ -12239,7 +12248,7 @@
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Resident Evil 2.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Action Adventure</genre>
+					<genre>Action / Adventure</genre>
 					<release>1998</release>
 					<publisher>Capcom</publisher>
 					<gameplot>Ready or not, the terror of Resident Evil 2 is here.  In chapter one, the case of the disastrous T-virus outbreak--a mutagenic toxin designed for biological weapons--was eventually closed but the experiments were far from over.  Control the destiny of Leon Kennedy or Claire Redfield as their nightmare begins when a biotech terror runs rampant in Raccoon City.  Relentless zombies and hideous monsters are all out for a taste of your blood.  If the suspense doesn't kill you, something else will.</gameplot>
@@ -12254,7 +12263,7 @@
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Resident Evil 3.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Action Adventure</genre>
+					<genre>Action / Adventure</genre>
 					<release>1999</release>
 					<publisher>Capcom</publisher>
 					<gameplot>In the third installment of the survival horror series, Jill Valentine must escape the zombie-infected Raccoon City while being hunted down by a genetically-engineered monster called Nemesis.</gameplot>
@@ -12686,7 +12695,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1997</release>
-					<publisher>Crave</publisher>
+					<publisher>Crave Entertainment</publisher>
 					<gameplot>Fighting Force was released in 1997 for the PlayStation by Core Design, the creators of Tomb Raider. You have four characters to pick from, Hawk, Smasher, Alana, and Mace. They all have pretty much the same moves but each character has different aerial and special moves. You fight through 7 stages, with 22 levels. One memorable feature is the option to tear street posts and railings from their foundations and use them as weaponry. Car trunks can also be hit open to drop numerous other weapons.In structure, the game is a return to the form of classic brawlers like Final Fight. The game implemented the classic mechanics of old-school brawlers where when a certain button is pushed, health is sacrificed to perform a special move. The game, like most brawlers, is pretty much devoid of plot, with the only real purpose to get to the end of the level where the boss is.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -13331,7 +13340,7 @@
 					<genre>Strategy</genre>
 					<release>1998</release>
 					<publisher>Runecraft</publisher>
-					<gameplot>Aspects of the classic game, like building armies and seizing territories, are brought to life through animation and graphics. The version also offers a variation on the classic game, titled Ultimate Risk, which further enhances gameplay by including weather, terrain, POWs, and more, features not possible with the limitations of the board version. These features add a new dynamic to the already challenging game by forcing users to consider alternate strategies from the original board game version.Five maps are available for strategizing, including the classic world map with six continents and the American map, with 14 additional countries and 153 territories. If playing the classic version, players choose from three varying game objectives. In World Domination, the last player standing wins the game, while the Capital Risk module establishes a goal of conquering the opposing player's secretly designated capital. The last objective, Mission Risk, involves completing a mission designated by drawing a random card.</gameplot>
+					<gameplot>Aspects of the classic game, like building armies and seizing territories, are brought to life through animation and graphics. The version also offers a variation on the classic game, titled Ultimate Risk, which further enhances gameplay by including weather, terrain, POWs, and more, features not possible with the limitations of the board version. These features add a new dynamic to the already challenging game by forcing users to consider alternate strategies from the original fbme version.Five maps are available for strategizing, including the classic world map with six continents and the American map, with 14 additional countries and 153 territories. If playing the classic version, players choose from three varying game objectives. In World Domination, the last player standing wins the game, while the Capital Risk module establishes a goal of conquering the opposing player's secretly designated capital. The last objective, Mission Risk, involves completing a mission designated by drawing a random card.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -15297,5 +15306,1389 @@
 				</rom>
 			</roms>
 		</launcher>
+		
+		<launcher>
+			<id>Featherence_dreamcast1P</id>
+			<name>Dreamcast 1P</name>
+			<category>Featherence_dreamcast</category>
+			<application>emulator_file</application>
+			<args>lib_args_dreamcast_args "%rom%"</args>
+			<rompath>rom_pathDreamcast/_1P/</rompath>
+			<thumbpath>rom_pathDreamcast/_1P/_Artwork/boxfront/</thumbpath>
+			<fanartpath>rom_pathDreamcast/_1P/_Artwork/screenshot/</fanartpath>
+			<trailerpath>rom_pathDreamcast/_1P/_Artwork/gameplay(video)/</trailerpath>
+			<custompath></custompath>
+			<romext>gdi</romext>
+			<platform>Dreamcast</platform>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/1P.png</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<release></release>
+			<publisher></publisher>
+			<launcherplot></launcherplot>
+			<finished>false</finished>
+			<minimize>false</minimize>
+			<lnk></lnk>
+			<roms>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0054</id>
+					<name>AeroWings 2 - Airstrike</name>
+					<filename>rom_pathDreamcast/_1P/AeroWings 2 - Airstrike/AeroWings 2 - Airstrike.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/AeroWings 2 - Airstrike.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/AeroWings 2 - Airstrike.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Simulation / Flight Simulator</genre>
+					<release>2000</release>
+					<publisher>Crave Entertainment</publisher>
+					<gameplot>AeroWings 2: Airstrike, known in Japan as Aero Dancing F (エアロダンシング F?), is a combat flight simulator developed by CRI and Crave Entertainment and published by Sega for the Dreamcast console. It is the sequel to AeroWings.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0050</id>
+					<name>Airforce Delta</name>
+					<filename>rom_pathDreamcast/_1P/Airforce Delta/Airforce Delta.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Airforce Delta.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Airforce Delta.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Simulation</genre>
+					<release>1999</release>
+					<publisher>Konami</publisher>
+					<gameplot>As a mercenary jet fighter pilot flying during a middle-eastern conflict of some sort, you'll take to the skies in a variety of air objectives and earn money for your efforts. The money can then be can be used to purchase new planes and upgrades for those planes. Altogether you have a choice of 30 different types of aircraft and 20 different different missions.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0051</id>
+					<name>Alone in the Dark - The New Nightmare</name>
+					<filename>rom_pathDreamcast/_1P/Alone in the Dark - The New Nightmare/Alone in the Dark - The New Nightmare_cd1.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Alone in the Dark - The New Nightmare.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Alone in the Dark - The New Nightmare.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0056</id>
+					<name>Blue Stinger</name>
+					<filename>rom_pathDreamcast/_1P/Blue Stinger/Blue Stinger.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Blue Stinger.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Blue Stinger.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure / Strategy</genre>
+					<release>1999</release>
+					<publisher>Activision</publisher>
+					<gameplot>Awakening shipwrecked just after a meteor collides with a remote biotech research island, you begin to discover an uncontrollable madness unleashed in the meteor's wake. As one secret uncovers another, you piece together a horrifying revelation that could lead to the end of life on Earth.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0070</id>
+					<name>Buzz Lightyear of Star Command</name>
+					<filename>rom_pathDreamcast/_1P/Buzz Lightyear of Star Command/Buzz Lightyear of Star Command.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Buzz Lightyear of Star Command.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Buzz Lightyear of Star Command.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>2000</release>
+					<publisher>Activision</publisher>
+					<gameplot>Buzz Lightyear is based on an animated movie and television series of the same name. Buzz Lightyear is an elite space ranger, who travels from planet to planet hunting down supervillians. [CR]In this game, you control Buzz through 14 missions on eight different planets. In each mission, your goal is to race to the end of the level before the bad guy does. If you do so successfully, you face off against the villian, and hopefully capture them. In addition to capturing the villain, there are secondary objectives like collecting robot parts and getting the fastest time through the level.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0071</id>
+					<name>Chicken Run</name>
+					<filename>rom_pathDreamcast/_1P/Chicken Run/Chicken Run.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Chicken Run.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Chicken Run.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure</genre>
+					<release>2000</release>
+					<publisher>Eidos</publisher>
+					<gameplot>Tweedy's Farm is home to a bunch of chickens, who are falling behind on their work load (laying eggs). So Mrs Tweedy decides to go into a new business, Chicken Pie making. The chickens leader, Ginger, is in desperate need of a good escape plan, and when Rocky flys in from the US to lend them a hand, the gang decide that the only way out of the farm is to fly out. But of course, chickens can't fly!! So it is up to you to collect the pieces for the flying machine so you and your fellow chickens can escape.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0001</id>
+					<name>Crazy Taxi</name>
+					<filename>rom_pathDreamcast/_1P/Crazy Taxi/Crazy Taxi.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Crazy Taxi.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Crazy Taxi.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>1999</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Crazy Taxi is an arcade-like racer where the player takes the role of a taxi driver who weaves his way through crowded streets, across sidewalks and even under water, in a wild and frantic race to deliver passengers on time. The courses are largely set inside cities crowded with general traffic and pedestrians (which can't be run over, they dive away). The main goal is to bring as many customers as possible to their destination in time. Available customers are marked through circles and the colour represents the distance and the fare they offer. Green means long rides with plenty of money, and red ones are very short.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0052</id>
+					<name>Crazy Taxi 2</name>
+					<filename>rom_pathDreamcast/_1P/Crazy Taxi 2/Crazy Taxi 2.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Crazy Taxi 2.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Crazy Taxi 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Racing / Driving</genre>
+					<release>2001</release>
+					<publisher>SEGA</publisher>
+					<gameplot>The sequel to the smash hit Crazy Taxi puts you in the drivers seat once again with 4 new drivers to choose from, and a brand new city to wreck havoc with, New York City.[CR]In Crazy Taxi, you crashed your taxi through the streets as fast as possible, making money by performing stunts and picking up/dropping off passengers to certain destinations. For Crazy Taxi 2, you can pick up more then one passenger at a time, meaning more money faster, new stunts including the 'hop', which allows you to hop over buildings and take the quick route past the traffic, and plenty of mini games, such as Crazy Golf.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0057</id>
+					<name>Donald Duck - Goin' Quackers</name>
+					<filename>rom_pathDreamcast/_1P/Donald Duck - Goin' Quackers/Donald Duck - Goin' Quackers.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Donald Duck - Goin' Quackers.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Donald Duck - Goin' Quackers.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Platform</genre>
+					<release>2000</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>Donald Duck: Goin' Qu@ckers*, known as Donald Duck: Qu@ck Att@ck in Europe, is a platform game developed by Ubisoft Montreal and published by Disney Interactive for various consoles and Windows-based personal computers. A completely different game with the same title was released for the Game Boy Color, as well as on Game Boy Advance, the latter being given the title Donald Duck Advance.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0072</id>
+					<name>Draconus - Cult of the Wyrm</name>
+					<filename>rom_pathDreamcast/_1P/Draconus - Cult of the Wyrm/Draconus - Cult of the Wyrm.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Draconus - Cult of the Wyrm.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Draconus - Cult of the Wyrm.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Crave Entertainment</publisher>
+					<gameplot>Draconus: Cult of the Wyrm is a hack and slash game developed by Treyarch and published by Crave Entertainment for the Dreamcast. Draconus, or Dragon Blood as it was named in Europe, is considered a spiritual sequel to Treyarch's swordfighting PC game Die by the Sword.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0013</id>
+					<name>ECCO the Dolphin - Defender of the Future</name>
+					<filename>rom_pathDreamcast/_1P/ECCO the Dolphin - Defender of the Future/ECCO the Dolphin - Defender of the Future.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/ECCO the Dolphin - Defender of the Future.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/ECCO the Dolphin - Defender of the Future.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Acclaim Entertainment</publisher>
+					<gameplot>In a future world were mankind and dolphins live together as equals, an alien force known as the Foe seeks to end this happy existence. The Foe damages the Earth's defense system, and alters history for the worse. One extraordinary dolphin, Ecco, must travel through time to set things right.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0014</id>
+					<name>Evolution 2 - Far Off Promise</name>
+					<filename>rom_pathDreamcast/_1P/Evolution 2 - Far Off Promise/Evolution 2 - Far Off Promise.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Evolution 2 - Far Off Promise.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Evolution 2 - Far Off Promise.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure / Role-Playing</genre>
+					<release>2000</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>Evolution 2: Far Off Promise is a role-playing video game for the Dreamcast console. It is a sequel to Evolution: The World of Sacred Device. It was developed by Sting and published by Ubisoft in North America. In Japan it was published by ESP (Entertainment Software Publishers).[CR]Evolution 2 Far Off Promise was also released for the European market in 2002 as one of the last European Dreamcast games. In the UK the game was exclusive to the video game chain Game.[CR]Like the first Evolution game, Evolution 2 is a dungeon crawler. Unlike the first, Evolution 2 has both random and predetermined dungeon maps.[CR]This game and Evolution: The World of the Sacred Device were remade into Evolution Worlds on the Nintendo GameCube.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0034</id>
+					<name>Fighting Force 2</name>
+					<filename>rom_pathDreamcast/_1P/Fighting Force 2/Fighting Force 2.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Fighting Force 2.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Fighting Force 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Fighting</genre>
+					<release>1999</release>
+					<publisher>Eidos</publisher>
+					<gameplot>Fighting Force 2 is a beat-em-up/adventure game set in the not-to-distant future. Human cloning has become a real possibility, but has been banned by an international treaty. The Knackmiche Corporation has been suspected of researching cloning, and you, Hawk Manson, are sent in on a covert mission to investigate.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0002</id>
+					<name>Grandia II</name>
+					<filename>rom_pathDreamcast/_1P/Grandia II/Grandia II.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Grandia II.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Grandia II.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure, Role-Playing</genre>
+					<release>2000</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>The story focuses on Ryudo the Geohound (a kind of mercenary) and his talking bird, Skye. Together they accept a mission from the town of Carbo's church as bodyguards for Elena, a Songstress of Granas, who is on her way to Garmia Tower. The job turns into something much more after an incident at the tower, and Ryudo and Elena find themselves travelling all over the world, meeting some new friends and some new enemies.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0003</id>
+					<name>Headhunter</name>
+					<filename>rom_pathDreamcast/_1P/Headhunter/Headhunter_cd1.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Headhunter.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Headhunter.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>2001</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Welcome to the future. In the early 21st century, gang warfare and crime have lead to the creation of privatised law enforcement. The Anti-Crime Network (ACN) employs bounty hunters known as ‘Headhunters’ to track down the most wanted criminals, using combat skills and high-tech weaponry. You are Jack Wade, an ex-cop turned Headhunter. At the beginning of the game you find yourself strapped to an operating table and manage to escape. After passing out in an alley, you awake in hospital from a coma. With your license revoked and few memories, you are hired by Angela Stern, to find her fathers murderer. Maybe you’ll even find out what happened to yourself if you can stay alive long enough… Headhunter is an action adventure viewed from over the shoulder. In the top right of the screen you have a radar which will track your movements and those of the enemy. Jack has a few moves at his disposal. He can duck and roll, push, pull and climb objects as well as flatten himself up against a wall. Using this technique he can peek around corners for a better view of the action, and then attack from this position, using the wall as protection. Between levels, Jack has a motorcycle that he uses to transport himself between various locations in the city according to the clues he receives. You will need to earn skill points however before you can arrive at a destination. Certain parts of the city are unavailable until you have gained the appropriate Headhunter license. As you have no recollection of your past, you have to take a series of licenses that will grant you access to greater parts of the city, weaponry and gadgets. These are taken in a VR simulator known as the Law Enforcement Intelligence and Licence Approval (LEILA). At various times in the game you will need to go to the LEILA building and upgrade your licence by practising your combat, stealth and driving skills.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0058</id>
+					<name>Illbleed</name>
+					<filename>rom_pathDreamcast/_1P/Illbleed/Illbleed.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Illbleed.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Illbleed.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>2001</release>
+					<publisher>Amusement</publisher>
+					<gameplot>illBleed is an over-the-top comedic horror game developed by Climax Graphics and released for the Sega Dreamcast in 2001. The game has players take control of horror fan Eriko Christy and, later, her classmates, as they try and survive a horror-themed amusement park filled with booby traps in order to win a hundred million dollar prize.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0004</id>
+					<name>Ikaruga</name>
+					<filename>rom_pathDreamcast/_1P/Ikaruga/Ikaruga.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Ikaruga.png</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Ikaruga.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2002</release>
+					<publisher>ESP</publisher>
+					<gameplot>Vertical shoot-em-up ported from the Naomi Arcade version. Ikaruga is more or less a sequel to Radiant Silvergun by Treasure, on the Sega Saturn.[CR]Based on a two-colors system, the player has to switch between the black & white sides of his ship during gameplay. The black side is immune to black enemy bullets which it consider as bonus, and dies on impact with a white enemy bullets. Your own black bullets damages white enemies twice as more as white bullets. And vice-versa for the white side. Those properties makes a balance between protecting yourself well and killing enemies fast.[CR]This aspect, combined with specific enemy patterns and a combo system makes Ikaruga an original shoot-em-up with a dose of strategy.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0005</id>
+					<name>Jet Grind Radio</name>
+					<filename>rom_pathDreamcast/_1P/Jet Grind Radio/Jet Grind Radio.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Jet Grind Radio.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Jet Grind Radio.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Sports</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Tokyo-to, a city not unlike Tokyo, somewhere in Asia, in the near future. This is the story about the GG's, one of three rival teenage gangs who ride motorised inline skates and are tagging the streets with graffiti. There is a turf war going on between the gangs GG's, the Poison Jam, and the high-tech freaks, the Noise Tanks. The evil Rokkaku Corporation has the corrupt police in their grasp, and, headed by Captain Onishima, the cops are hell-bent on subduing the unruly teen protagonists. But there is light in the darkness: the underground DJ, "Professor K," and his Jet Set Radio station keep tabs on what is happening on the streets of Tokyo-to, and soon our teens will have something much darker than the police to worry about.[CR]As one of the GG's, you skate through a variety of different levels, from busy streets to run-down rooftops and smelly sewers where you learn new moves, collect spray cans, and tag the streets with graffiti. New graffiti designs can be unlocked by finding "Graffiti Souls" in levels, by designing new graffiti yourself, or by going online and downloading any images you find while browsing the internet. Fight the rival gangs "Poison Jam" and the "Noise Tanks", the evil mega-corporation Rokkaku and their police cronies in this fresh take on the platform genre, mixing traditional platform elements with skating similar to that of the Tony Hawk's Pro Skater games. Players are scored on their performance in a level, both on the level of graffiti attempted as well as optional tags and skating tricks. As the game progresses challenge maps open that test the player's ability to do larger tags, more tricks, or race against an opponent.[CR]The American and European release contained two new levels based on New York. The story and order that you meet characters was modified to include these two levels. Both releases also have different unique soundtracks for these levels.[CR][CR]The 2012 HD version has widescreen HD graphics and a new camera system, as well as all the original songs but one.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0073</id>
+					<name>KAO the Kangaroo</name>
+					<filename>rom_pathDreamcast/_1P/KAO the Kangaroo/KAO the Kangaroo.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/KAO the Kangaroo.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/KAO the Kangaroo.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Platformer</genre>
+					<release>2001</release>
+					<publisher>Sold Out Sales</publisher>
+					<gameplot>A cartoonish platform game about a wacky kangaroo.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0059</id>
+					<name>Legacy of Kain - Soul Reaver</name>
+					<filename>rom_pathDreamcast/_1P/Legacy of Kain - Soul Reaver/Legacy of Kain - Soul Reaver.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Legacy of Kain - Soul Reaver.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Legacy of Kain - Soul Reaver.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>2000</release>
+					<publisher>Eidos</publisher>
+					<gameplot>Soul Reaver is a third-person perspective action game with puzzle-solving and some platforming elements. The game follows Raziel on his quest to purge the land of vampires and take revenge on Kain and his brothers, leaders of the six clans. The player views the environments from behind Raziel's shoulder, moving him in any direction, climbing, attacking, jumping and using specific abilities. Raziel's can grip onto the edge of ledges and his torn wings allow him to glide gently downwards. He can also shift through the "material" world into the "spectral" realm at will, but must find specific locations in order to shift back. The two realms mirror one another, with distortions which give access to new areas and platforms. Existing in the material world drains Raziel's life energy at a constant rate.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0074</id>
+					<name>Maken X</name>
+					<filename>rom_pathDreamcast/_1P/Maken X/Maken X.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Maken X.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Maken X.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>1999</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Maken X was a first person action game for the Dreamcast developed by Atlus, and published in the United States by Sega. Specifically, the game was developed by many members of Atlus who have been responsible for the modern titles in the Megami Tensei franchise, notably series director Katsura Hashino, art director Kazuma Kaneko, and composer Shoji Meguro. It is considered a part of the Megami Tensei universe, despite not bearing the moniker.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0060</id>
+					<name>Max Steel - Covert Missions</name>
+					<filename>rom_pathDreamcast/_1P/Max Steel - Covert Missions/Max Steel - Covert Missions.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Max Steel - Covert Missions.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Max Steel - Covert Missions.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2001</release>
+					<publisher>Mattel Interactive</publisher>
+					<gameplot>Max Steel: Covert Missions is an action game developed by Treyarch and published by Mattel Interactive for the Dreamcast platform.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0053</id>
+					<name>Metropolis Street Racer</name>
+					<filename>rom_pathDreamcast/_1P/Metropolis Street Racer/Metropolis Street Racer.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Metropolis Street Racer.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Metropolis Street Racer.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>2001</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Gameplay in MSR is centred around the single-player mode, with tracks and cars in the multiplayer mode being unlocked at the same time as in the single-player game. The premise is that, as a street racer, the player must impress other drivers with quick but stylish driving in a series of challenges. These challenges are in sets of ten (called Chapters - there are 25 in total), with completion of all challenges opening the next chapter (assuming the player has enough Kudos, see below) and unlocking a new car. Each challenge is on a different track, and unlocking a challenge unlocks that track in the time-attack and multiplayer modes.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0061</id>
+					<name>Prince of Persia - Arabian Nights</name>
+					<filename>rom_pathDreamcast/_1P/Prince of Persia - Arabian Nights/Prince of Persia - Arabian Nights.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Prince of Persia - Arabian Nights.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Prince of Persia - Arabian Nights.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>1999</release>
+					<publisher>Mattel Interactive</publisher>
+					<gameplot>The game's plot revolves around the betrayal of the Sultan of Persia by his brother Assad and the resulting kidnap of the Princess of Persia. The Prince must chase down the evil half-tiger half-man Prince Rugnor who wishes to wed the Princess. The chase takes the Prince through various levels filled with traps and architecturally baffling chasms. During the course of the Prince's journey the main plot is told by cutscenes. In these the player discovers that unsurprisingly the Princess is unwilling to submit to Rugnor. Once the Prince finally chases down Rugnor a climatic final battle ensues in which the Princess is tied to a massive gear heading towards a squishy demise. The Prince must kill Rugnor before the Princess meets her fate.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0006</id>
+					<name>Rayman 2 - The Great Escape</name>
+					<filename>rom_pathDreamcast/_1P/Rayman 2 - The Great Escape/Rayman 2 - The Great Escape.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Rayman 2 - The Great Escape.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Rayman 2 - The Great Escape.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Ubi Soft</publisher>
+					<gameplot>Admiral Razorbeard and his gang of robot pirates have enslaved all the creatures in Rayman's world, including the peaceful Teensies and the Lums, which give life to the earth. Rayman has been captured by the pirates as well and is lamenting his troubles in his prison cell, when he meets his good friend, Globox. Globox has smuggled in a silver Lum, given to him by the great fairy, Ly. With the power of the silver Lum, Rayman is able to once more shoot his fists. With his power restored, the pair escape the flying prison ship and embark on another adventure to save the entire world![CR]Rayman 2: The Great Escape is the sequel to Rayman, a 2D side-scrolling platform game. Unlike the previous game, Rayman 2 is entirely in free-roaming 3D environments, similar to Super Mario 64. Rayman has many unique abilities that can help him get around the world. In addition to being able to shoot his fists, he can use his hair to hover like a helicopter, and even glide on air currents in certain places. He can climb certain walls and ceilings and can even use his fists to swing from special purple Lums which are shaped like rings. Rayman also has many unique items at his disposal, such as powder kegs which can be carried or fly like jets, strange warheads with legs that he can ride and steer like bucking mules, and gigantic plums that can be thrown into the water to create new paths.[CR]Rayman's goal is to find the four masks of the world, which allow the owner to reawaken Polokus, the spirit of the world. These masks are scattered far and wide, and are well hidden and guarded, so it is not an easy task. By gathering the yellow Lums, Rayman will gain access to new worlds, which will take him to the locations of new masks. Collecting yellow Lums also rewards him with new powers and life meter extensions.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0007</id>
+					<name>Resident Evil 3 - Nemesis</name>
+					<filename>rom_pathDreamcast/_1P/Resident Evil 3 - Nemesis/Resident Evil 3 - Nemesis.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Resident Evil 3 - Nemesis.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Resident Evil 3 - Nemesis.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Resident Evil 3 takes place during the events of Resident Evil 2. The midwestern town of Raccoon City is in ruins, having been overrun with the undead creating T-virus thanks to the wacky hijinks of William Birkin and Umbrella Inc. The player must guide Jill "master of unlocking" Valentine (one of the two main protagonists of the original Resident Evil) out of the city alive. Along the way, Jill will interact with and receive help from (or hindered by) three Umbrella mercenaries who are also stranded in Raccoon City. Standing in the way of your group's last escape are a horde of flesh-eating zombified citizens, homicidal mutants, and a relentless killing machine known only as Nemesis who is determined to hunt down and kill the survivors of the original Resident Evil, including Jill.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0062</id>
+					<name>Rez</name>
+					<filename>rom_pathDreamcast/_1P/Rez/Rez.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Rez.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Rez.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Shooter</genre>
+					<release>2002</release>
+					<publisher>United Game Artists</publisher>
+					<gameplot>If you like a little style and originality in your first-person shooters, look no further than REZ. Taking the genre to its most viscerally extremes, the game gets most of its luster from its incredible storyline: The information age comes to a deadly halt when the core of society's technological memory an AI unit called Eden begins to feel the strain of too much data. Struggling to keep up, the technology actually begins to question its own existence and goes into a futuristic freak out. Now, you must journey deep into the realm of 3D cyberspace in order to fix the system, a task that will require hacking codes and battling fierce creatures. Your goal is to get all the way to the system's core, but that's a journey that only the bravest and most dedicated adventurers will be able to survive. The game features an incredible array of music samples (you can actually create your own sounds and rhythms to accompany to you on your trip), a plethora of stages, and a list of modes that includes: Score Attack, Beyond, Boss Rush, and Trance Mission. In addition, there are more than 20 hidden features that can be unlocked.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0008</id>
+					<name>Shenmue</name>
+					<filename>rom_pathDreamcast/_1P/Shenmue/Shenmue_cd1.cdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Shenmue.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Shenmue.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>On a November day when the snow turned to rain, Ryu Hazuki arrives home just in time to see his father killed by Lan Di, a man Ryu's father obviously knew very well. Ryu attempts to stop Lan Di, but is effortlessly beaten to within an inch of his life. After recovering from his injuries Ryu sets out to track down his father's murderer, as well as uncover his family's secrets and the mystery of the Phoenix and Dragon mirrors that Lan Di seeks.[CR]Shenmue is a hybrid game that incorporates elements of adventure and fighting with light role-playing. The game is set in a 3D environment that can be freely explored by the player. Much of the gameplay involves talking to Ryu's friends and the various people around town, hoping to find hints or clues that lead to the next step in the story. Any details Ryu learns are written down in his notebook for future review. Ryu can buy items from stores or try his luck with capsule toy machines, but most items that can be bought have no purpose outside of filling his inventory. Ryu can also visit an arcade and play accurate versions of Hang-On and Space Harrier, as well as games like darts and pool.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0063</id>
+					<name>Spider-Man</name>
+					<filename>rom_pathDreamcast/_1P/Spider-Man/Spider-Man.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Spider-Man.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Spider-Man.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2001</release>
+					<publisher>Neversoft Entertainment</publisher>
+					<gameplot>If you like a little style and originality in your first-person shooters, look no further than Spider-Man. Taking the genre to its most viscerally extremes, the game gets most of its luster from its incredible storyline: The information age comes to a deadly halt when the core of society's technological memory an AI unit called Eden begins to feel the strain of too much data. Struggling to keep up, the technology actually begins to question its own existence and goes into a futuristic freak out. Now, you must journey deep into the realm of 3D cyberspace in order to fix the system, a task that will require hacking codes and battling fierce creatures. Your goal is to get all the way to the system's core, but that's a journey that only the bravest and most dedicated adventurers will be able to survive. The game features an incredible array of music samples (you can actually create your own sounds and rhythms to accompany to you on your trip), a plethora of stages, and a list of modes that includes: Score Attack, Beyond, Boss Rush, and Trance Mission. In addition, there are more than 20 hidden features that can be unlocked.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0009</id>
+					<name>Skies of Arcadia</name>
+					<filename>rom_pathDreamcast/_1P/Skies of Arcadia/Skies of Arcadia_cd1.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Skies of Arcadia.png</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Skies of Arcadia.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Role-Playing</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Arcadia is a world where continents float high above, and people travel by airships. Among the countries of this world, the most powerful one is the Empire of Valua. Guided by its greedy admirals, Valua strives to possess all the power in Arcadia. The boy Vyse and the girl Aika are members of the Blue Rogues - noble pirates who attack only Valuan war ships. During one of their confrontations with a battle ship, they encounter a girl named Fina, who is on an important mission whose secret she cannot tell yet. Involved in the conflict with the Empire of Valua, the trio of the heroes must explore the whole world of Arcadia in order to defeat the admirals.[CR]Skies of Arcadia is a traditional Japanese role-playing game with turn-based combat and randomly appearing enemies. Player-controlled party contains up to four active combatants. During battles, characters attack physically, use items, or cast magic spells, which deplete magic points as well as spirit points (SP). Each character is also able to "focus", which restores spirit points. Once the common spirit bar is filled, characters can unleash powerful special attacks. Enemies may be resilient or vulnerable to particular elements; elemental affinities of weapons can be switched at any time during battles.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0010</id>
+					<name>Sonic Adventure</name>
+					<filename>rom_pathDreamcast/_1P/Sonic Adventure/Sonic Adventure.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Sonic Adventure.png</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Sonic Adventure.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>1999</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Yet again Sonic and friends find themselves wrapped up in the schemes of Dr. Robotnik. This time he plans to exploit the power of Chaos, a malevolent being that feeds upon the power of the Chaos Emeralds. In their own ways five heroes will do what they can to save Station Square and, perhaps, the entire world.[CR]The player can select from which character to play after meeting them with Sonic, and each has their own unique version of each level. Sonic's levels involve racing through a level as quickly as possible, destroying any robots along the way. Tails can hover over distances, and his levels are similar to Sonic's except that he must beat an opponent to the finish line. Amy can't charge up ramps or run as quickly as Sonic and Tails, but she does have a giant hammer she can break obstacles with. The goal of her levels is to avoid being captured by a robot sent after her by Dr. Robotnik. E102 Gamma is a slow, difficult to maneuver robot, but it has guns and missiles that can lock on to several targets at once, chaining together attacks and earning a higher score and more time on the clock. The goal of its levels is to reach a boss enemy and destroy it before time runs out. The final character is Big the Cat, a fisherman searching for his lost frog. Big's levels are almost entirely devoid of action or fighting; he just fishes. Each character can find items that increase their abilities as the story progresses, such as a ring for Sonic that lets him home along lines of rings, or improved lures for Big. A final chapter wrapping up the story is unlocked after all other characters have been completed.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0011</id>
+					<name>Sword of the Berserk - Guts Rage</name>
+					<filename>rom_pathDreamcast/_1P/Sword of the Berserk - Guts Rage/Sword of the Berserk - Guts Rage.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Sword of the Berserk - Guts Rage.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Sword of the Berserk - Guts Rage.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Eidos</publisher>
+					<gameplot>Based on popular Japanese manga, Sword of the Berserk: Guts' Rage is an action-adventure with a medieval fantasy setting. A mysterious plague-like evil is revealed in the course of the one-eyed warrior Gattsu's personal quest to cure his love Casca of her demented state and exact revenge on the evil God Hand warriors responsible for their fate.[CR]The story unfolds in between gory action sequences in which Gattsu uses his 7-foot-long sword and other assorted weapons to battle with countless and varied foes.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0012</id>
+					<name>Tokyo Xtreme Racer 2</name>
+					<filename>rom_pathDreamcast/_1P/Tokyo Xtreme Racer 2/Tokyo Xtreme Racer 2.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Tokyo Xtreme Racer 2.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Tokyo Xtreme Racer 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Driving / Racing</genre>
+					<release>2000</release>
+					<publisher>Crave Entertainment</publisher>
+					<gameplot>Tokyo Xtreme Racer 2, known as Shutokō Battle 2 (首都高バトル 2) in Japan and Tokyo Highway Challenge 2 in Europe, is the sequel to Tokyo Xtreme Racer, which is also on the Sega Dreamcast. Tokyo Xtreme Racer 2 has been enhanced with better sound quality and graphics over its predecessor. The game managed to produce two more sequels. It is the last game in the series that was produced for Sega Dreamcast. Some of the game's mechanics were implemented into Daytona USA 2001.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0015</id>
+					<name>Record of Lodoss War</name>
+					<filename>rom_pathDreamcast/_1P/Record of Lodoss War/Record of Lodoss War.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Record of Lodoss War.png</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Record of Lodoss War.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure / Strategy</genre>
+					<release>2001</release>
+					<publisher>Conspiracy Entertainment</publisher>
+					<gameplot>Experience the world of Record of Lodoss War up close and personal in an epic 3D Action/RPG only for Sega Dreamcast. Take control of a mysterious warrior from the past, resurrected to save the future, on a colossal quest filled with pulse-pounding action and high adventure. Join forces with popular characters from the Lodoss universe and combat hundreds of vicious enemies with dozens of spectacular spells</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0016</id>
+					<name>Time Stalkers</name>
+					<filename>rom_pathDreamcast/_1P/Time Stalkers/Time Stalkers.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Time Stalkers.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Time Stalkers.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure / Role-Playing</genre>
+					<release>1999</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Known in Japan as Climax Landers. Its an RPG game where there are worlds within worlds in which you can travel. The main character Sword who comes from another world. You collect new characters you can play as you journey through the worlds.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+			</roms>
+		</launcher>
+		
+		<launcher>
+			<id>Featherence_dreamcast2P</id>
+			<name>Dreamcast 2P</name>
+			<category>Featherence_dreamcast</category>
+			<application>emulator_file</application>
+			<args>lib_args_dreamcast_args "%rom%"</args>
+			<rompath>rom_pathDreamcast/_2P/</rompath>
+			<thumbpath>rom_pathDreamcast/_2P/_Artwork/boxfront/</thumbpath>
+			<fanartpath>rom_pathDreamcast/_2P/_Artwork/screenshot/</fanartpath>
+			<trailerpath>rom_pathDreamcast/_2P/_Artwork/gameplay(video)/</trailerpath>
+			<custompath></custompath>
+			<romext>gdi</romext>
+			<platform>Dreamcast</platform>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/2P.png</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<release></release>
+			<publisher></publisher>
+			<launcherplot></launcherplot>
+			<finished>false</finished>
+			<minimize>false</minimize>
+			<lnk></lnk>
+			<roms>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0015</id>
+					<name>4 Wheel Thunder</name>
+					<filename>rom_pathDreamcast/_2P/4 Wheel Thunder/4 Wheel Thunder.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/4 Wheel Thunder.png</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/4 Wheel Thunder.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing / Driving</genre>
+					<release>2000</release>
+					<publisher>Midway Games</publisher>
+					<gameplot>4 Wheel Thunder is the off-road racing sequel to the power-boat racing game Hydro Thunder. [CR]In this game, players race around two types of courses; huge outdoor tracks and smaller indoor tracks. All in all, there are 24 areas in which to race, including various day/night and rain/sunshine variations. The game includes the standard championship, practice race, and two player modes.[CR]The Thunder series of games is unique in that the key to winning the race lies not in careful steering and braking, instead focusing more in finding the boost power-ups that lie around the tracks. Each boost icon adds a few seconds of time to your boost meter. The player then can press a boost button to increase the speed of the truck dramatically. Without using boost power-ups, the player has no chance of winning a race.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0070</id>
+					<name>Buggy Heat</name>
+					<filename>rom_pathDreamcast/_2P/Buggy Heat/Buggy Heat.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Buggy Heat.png</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Buggy Heat.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>1999</release>
+					<publisher>ASC Games</publisher>
+					<gameplot>Ladies and Gentlemen, get ready for the biggest and wildest race of your life... Get behind the wheel of a 4x4 off road vehicle and prepare to battle your way through various challenging courses from all over the world. Save your 'Artificial Intelligence' skill level and challenge your opponents' best times, or simply go head to head on the toughest maddest, off road racer to hit any console ever.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0005</id>
+					<name>Capcom vs. SNK</name>
+					<filename>rom_pathDreamcast/_2P/Capcom vs. SNK/Capcom vs. SNK.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Capcom vs. SNK.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Capcom vs. SNK.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Two of the worlds greatest arcade fighter developers, Capcom and SNK, join forces to finally answer the question asked by many for years: Who is the dominant fighter?[CR]A range of fighters from both worlds are available to choose from, with two different fighting styles (Capcom and SNK, of course) meaning that players of both worlds can fit into the game easily, while new gamers can try Ryu using the SNK format.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0009</id>
+					<name>Capcom vs. SNK 2</name>
+					<filename>rom_pathDreamcast/_2P/Capcom vs. SNK 2/Capcom vs. SNK 2.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Capcom vs. SNK 2.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Capcom vs. SNK 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2001</release>
+					<publisher>Capcom</publisher>
+					<gameplot>A beat'em'up with characters taken from many Capcom and SNK games. The game system is centered around "grooves" which are selected before any battle. These different grooves alter the character's abilities to resemble different Capcom or SNK games. There are three grooves dedicated for each company, and even the option to define a custom groove.[CR]The "EO" of the GameCube and Xbox titles refers to a new groove: Easy Operation. Instead of the normal inputs needed to do special and super moves, these moves are instead done automatically by tapping the right thumb-stick in specific directions. Only a small part of each character's moveset can be accessed this way, however, and if the player does not select EO then the game will play the same as the arcade and previous releases.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0071</id>
+					<name>Confidential Mission</name>
+					<filename>rom_pathDreamcast/_2P/Confidential Mission/Confidential Mission.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Confidential Mission.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Confidential Mission.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Shooter</genre>
+					<release>2001</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Confidential Mission is a light-gun compatible shooting game most easily likened to Sega's Virtua Cop series. You play as either Howard Gibson or Jean Clifford, both super-agents a la James Bond, and you are taken through scenarios shooting enemies and attempting to avoid civilian casualties.[CR]The game is a home version of the coin operated arcade machine, and is playable by one or two players. The game includes the popular features of the Virtua Cop series "Justice Shot" (in which you shoot an enemy's gun or gun arm instead of killing them) and the "Combo Shot" in which you can hit an enemy with up to three shots before they expire. The home version does include some mini-games and training modes that were not in the arcade version of the game.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0040</id>
+					<name>Cyber Troopers Virtual On - Oratorio Tangram</name>
+					<filename>rom_pathDreamcast/_2P/Cyber Troopers Virtual On - Oratorio Tangram/Cyber Troopers Virtual On - Oratorio Tangram.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Cyber Troopers Virtual On - Oratorio Tangram.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Cyber Troopers Virtual On - Oratorio Tangram.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Cyber Troopers Virtual-On: Oratorio Tangram M.S.B.S. Ver. 5.4, known as Dennou Senki Virtual-On Oratorio Tangram M.S.B.S. Ver. 5.4 (電脳戦機バーチャロン オラトリオ・タングラム M.S.B.S. Ver.5.4) in Japan is an update to Dennou Senki Virtual-On Oratorio Tangram M.S.B.S. Ver. 5.2 and one of three major revisions of Cyber Troopers Virtual-On: Oratorio Tangram. Ver. 5.4 is often considered to be the de facto version of Oratorio Tangram - it was originally released for Sega Model 3 hardware in 1999, then ported to the Sega Dreamcast later in the year.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0010</id>
+					<name>Daytona USA 2001</name>
+					<filename>rom_pathDreamcast/_2P/Daytona USA 2001/Daytona USA 2001.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Daytona USA 2001.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Daytona USA 2001.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing / Driving</genre>
+					<release>2001</release>
+					<publisher>Hasbro</publisher>
+					<gameplot>Just like the arcade version, pick one of three tracks (beginner, advanced, or expert) and either automatic or standard transmission. A pounding music soundtrack kicks in as you are slapped into your car to await the green light. The game offers both a traditional arcade mode with checkpoint time splits and a special PC mode that pits you against the other cars over different race distances. The PC mode also offers more car choices, with a variety of speed, acceleration, and grip characteristics. It even rewards successful players (meaning those finishing first, second, or third in the difficult setting) by offering up to ten more upgraded cars to drive. Once underway, the goal is to work from last to first as smoothly and quickly as possible</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0008</id>
+					<name>Dead or Alive 2</name>
+					<filename>rom_pathDreamcast/_2P/Dead or Alive 2/Dead or Alive 2.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Dead or Alive 2.png</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Dead or Alive 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Temco</publisher>
+					<gameplot>The arcade conversion adds an improved tag feature, with new stadiums to fight in, new character moves to play with, and plenty of windows, walls and ledges to fall over and crash through. Unlike Tekken Tag Tournament, however, DOA2 also includes a single player mode, a dodge button (allowing you to move left and right away from attacks), and multi-level arenas.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0072</id>
+					<name>Expendable</name>
+					<filename>rom_pathDreamcast/_2P/Expendable/Expendable.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Expendable.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Expendable.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Shooter</genre>
+					<release>1999</release>
+					<publisher>Infogrames</publisher>
+					<gameplot>Expendable is a light-gun compatible shooting game most easily likened to Sega's Virtua Cop series. You play as either Howard Gibson or Jean Clifford, both super-agents a la James Bond, and you are taken through scenarios shooting enemies and attempting to avoid civilian casualties.[CR]The game is a home version of the coin operated arcade machine, and is playable by one or two players. The game includes the popular features of the Virtua Cop series "Justice Shot" (in which you shoot an enemy's gun or gun arm instead of killing them) and the "Combo Shot" in which you can hit an enemy with up to three shots before they expire. The home version does include some mini-games and training modes that were not in the arcade version of the game.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0073</id>
+					<name>Flag to Flag</name>
+					<filename>rom_pathDreamcast/_2P/Flag to Flag/Flag to Flag.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Flag to Flag.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Flag to Flag.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>1999</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Flag to Flag, known as Super Speed Racing in Japan, is a racing video game developed by ZOOM Inc. and published by Sega for the Dreamcast console. Flag to Flag is licensed by the Championship Auto Racing Teams racing league.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0074</id>
+					<name>Frogger 2 - Swampy's Revenge</name>
+					<filename>rom_pathDreamcast/_2P/Frogger 2 - Swampy's Revenge/Frogger 2 - Swampy's Revenge.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Frogger 2 - Swampy's Revenge.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Frogger 2 - Swampy's Revenge.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Hasbro Interactive</publisher>
+					<gameplot>Frogger 2: Swampy's Revenge is a video game released in 2000. The game is part of the Frogger series, and the sequel to the 1997 remake of Frogger, featuring similar 4-way movement gameplay in a 3D world and 6 different environments.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0041</id>
+					<name>Garou Mark of the Wolves</name>
+					<filename>rom_pathDreamcast/_2P/Garou Mark of the Wolves/Garou Mark of the Wolves.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Garou Mark of the Wolves.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Garou Mark of the Wolves.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting</genre>
+					<release>2001</release>
+					<publisher>SNK</publisher>
+					<gameplot>It's been several years since Geese Howard was defeated in a battle with Terry Bogard, a young man looking to avenge his father. Rather than looking to be saved from death after falling off his office balcony, Geese instead decided to die, and left behind his young son, Rock. Terry took Rock in and became like a big brother to him, raising the boy throughout his life.[CR]Now Rock is a teenager, and Terry is a man in his 30s, and both are about to come together in a new clash...new faces and old come together for the greatest battle yet!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0075</id>
+					<name>Gunbird 2</name>
+					<filename>rom_pathDreamcast/_2P/Gunbird 2/Gunbird 2.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Gunbird 2.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Gunbird 2.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Shooter / Flying Vertical</genre>
+					<release>1998</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Seven warriors are challenged to head on a quest to find three powerful elements of Sun, Moon and Stars. Whoever brings the elements to the Potion God will be rewarded the legendary Almighty Potion and all its magical powers.[3][CR]Through gameplay cutscenes (and endings) it appears that the zany, uproarious (and at times rather adult) humor has considerably increased since the original Gunbird. The game has numerous similarities to the Parodius series, including the final boss in the game, a cartoon elephant playing a trumpet.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0046</id>
+					<name>Iron Aces</name>
+					<filename>rom_pathDreamcast/_2P/Iron Aces/Iron Aces.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Iron Aces.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Iron Aces.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Flight Simulator</genre>
+					<release>2001</release>
+					<publisher>Marionette</publisher>
+					<gameplot>Iron Aces is fictional World War 2 flight simulator. What that "fictional" means is that great liberties have been taken with the historical accuracy of the world and events. The most obvious point is that although most planes come from real World War 2 aircraft, the theatre of operations is a bit unique; The four major sides to the conflict (American, British, German, Japanese) are all fighting one another over a group of islands somewhere in the Pacific. Thus each of these nations is represented in close proximity and in direct conflict to one another.[CR]The gameplay takes place over a series of single-player flight missions in which your American pilot will fight against the Axis forces and ally with the British. The majority of the missions take place in the air against other aerial targets.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0007</id>
+					<name>Marvel vs. Capcom 2</name>
+					<filename>rom_pathDreamcast/_2P/Marvel vs. Capcom 2/Marvel vs. Capcom 2.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Marvel vs. Capcom 2.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Marvel vs. Capcom 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Marvel vs. Capcom 2: New Age of Heroes is a fighting game, developed and published by Capcom. It is the fourth game in the Marvel vs. Capcom series of fighting games. With the fourth installment of this series, Capcom simplified the player controls to make the gameplay more accessible to the wider audience of casual players. The button configuration was trimmed down to 4 main buttons and 2 assist buttons. The game also features a different air-combo system and 3 on 3 tag, compared to the 2 on 2 tag from previous games in the series.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0076</id>
+					<name>Plasma Sword - Nightmare of Bilstein</name>
+					<filename>rom_pathDreamcast/_2P/Plasma Sword - Nightmare of Bilstein/Plasma Sword - Nightmare of Bilstein.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Plasma Sword - Nightmare of Bilstein.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Plasma Sword - Nightmare of Bilstein.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting</genre>
+					<release>1998</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Plasma Sword: Nightmare of Bilstein, released in Japan as Star Gladiator 2: Nightmare of Bilstein, is a 1998 3D weapon-based fighting video game released by Capcom for the arcades</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0077</id>
+					<name>Power Stone</name>
+					<filename>rom_pathDreamcast/_2P/Power Stone/Power Stone.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Power Stone.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Power Stone.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting</genre>
+					<release>1999</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Power Stone is a fully 3D arena fighting game series made by Capcom. Power Stone was initially released on the Sega NAOMI hardware and later ported to the Dreamcast.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0047</id>
+					<name>Psychic Force 2012</name>
+					<filename>rom_pathDreamcast/_2P/Psychic Force 2012/Psychic Force 2012.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Psychic Force 2012.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Psychic Force 2012.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Fighting</genre>
+					<release>1999</release>
+					<publisher>Taito</publisher>
+					<gameplot>Psychic Force 2012, the sequel to Psychic Force, is a one-on-one fighting game with a twist. The matches take place inside a giant floating cube. You are able to fly, using your psychic abilities, around a 3D arena with six walls. Each of the ten available characters, Might, Regina, Wendy, Emilio, Setsuna, Patty, Gudeath, Genshin, Carlo, and Gates, are controlled with three buttons: guard, weak attack and strong attack. The effect varies with the distance. Next to the regular life meter, there is also a power meter. By using special moves, the meter is drained and your moves are limited. It is possible to recharge, and the capacity of the power meter expands when you lose a lot of health.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0006</id>
+					<name>Project Justice - Rival Schools 2</name>
+					<filename>rom_pathDreamcast/_2P/Project Justice - Rival Schools 2/Project Justice - Rival Schools 2.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Project Justice - Rival Schools 2.png</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Project Justice - Rival Schools 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2001</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Project Justice is the sequel to Shiritsu Justice Gakuen: Nekketsu Seishun Nikki 2. It once more thrusts you into the shoes of a team of students, trying to find out what is causing all the bizarre events.[CR]Players pick a school to fight for and smash their way through the other schools, questioning them until you find out what is happening. The gameplay is very similar in style to the original Rival Schools, featuring bombastic special moves and team-up attacks, along with the same, highly caricatured students.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0042</id>
+					<name>Ready 2 Rumble Boxing</name>
+					<filename>rom_pathDreamcast/_2P/Ready 2 Rumble Boxing/Ready 2 Rumble Boxing.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Ready 2 Rumble Boxing.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Ready 2 Rumble Boxing.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting / Boxing</genre>
+					<release>1999</release>
+					<publisher>Midway Games</publisher>
+					<gameplot>Ready 2 Rumble Boxing was Midway's 1999 take on the arcade boxing game, channeling the spirit of Nintendo's classic Punch-Out!! It featured a roster of colorful characters, each with a distinct personality and fighting style, such as Afro Thunder or Boris "The Bear" Knokimov. If a player could land enough hits to spell out the word "RUMBLE," then they would be able to unleash a powerful special move called a "Rumble Flurry."</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0004</id>
+					<name>Samba De Amigo</name>
+					<filename>rom_pathDreamcast/_2P/Samba De Amigo/Samba De Amigo.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Samba De Amigo.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Samba De Amigo.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Music</genre>
+					<release>1999</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Samba de Amigo is a rhythm game developed by Sonic Team and published by Sega. The game was released in arcades in December 1999, and for the Dreamcast video game console in 2000.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0043</id>
+					<name>Sega GT</name>
+					<filename>rom_pathDreamcast/_2P/Sega GT/Sega GT.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Sega GT.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Sega GT.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>With a nod towards GT2, Sega tosses in their entry in the race-career-category, meaning that this game is all about racing. Racing to win competitions, cars, money and other prizes (such as licenses for bigger cars), buying new cars to race in, upgrading cars to race in and gaining licenses to race with.[CR]It features realistic controls, graphic and physics, and spans over career, multiplayer or arcade modes, and hundreds of cars to boot.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0001</id>
+					<name>Sonic Adventure 2</name>
+					<filename>rom_pathDreamcast/_2P/Sonic Adventure 2/Sonic Adventure 2.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Sonic Adventure 2.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Sonic Adventure 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Samba De Amigo is a highly unique game: a maracas simulation. Game play is based around a special maracas controller that you use to interact with the music. The controller senses which region in space out of a possible 6 that the maracas are in. It also senses when the player shakes the maracas. As the music plays, the player must shake the maracas in the appropriate region with proper timing to progress. A standard controller can also be used if you do not have the maracas controller, which is sold separately.[CR]The music in the game comes from a wide variety of sources. Some of the songs are traditional samba music, while others are recognizable pop tunes, like "Macarena" and "Tequila."</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0002</id>
+					<name>Soul Calibur</name>
+					<filename>rom_pathDreamcast/_2P/Soul Calibur/Soul Calibur.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Soul Calibur.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Soul Calibur.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>1999</release>
+					<publisher>Namco</publisher>
+					<gameplot>A fighting game to end all fighting games. A sequel to Soul Blade, Soul Calibur takes place in a time inspired by a mixture of 16th-century ancient China and oriental medieval fantasies and legends.[CR]All characters have weapons and distinct fighting styles with over 100 individual moves per character. In addition to high, mid, and low attacks, characters can hold/throw, block, and perform special attacks -- one or more of which is deemed "un-blockable" and must be avoided by ducking, jumping, or rotating around your attacker.[CR]In addition to several locales in which to fight and alternate models/costumes per character, the Dreamcast conversion of Soul Calibur contains many additional features over the arcade coin-op, including hidden characters and locales, a campaign mode, and tournament mode. There is also a "museum" where you can view character profiles and view motion-captured martial arts demonstrations.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0003</id>
+					<name>Street Fighter III - 3rd Strike</name>
+					<filename>rom_pathDreamcast/_2P/Street Fighter III - 3rd Strike/Street Fighter III - 3rd Strike.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Street Fighter III - 3rd Strike.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Street Fighter III - 3rd Strike.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Capcom</publisher>
+					<gameplot>3rd update to Street Fighter 3, Capcom's classic 2D fighter. The new version includes new music and artwork, more super arts for each character, a grading system, a manual throw system, path selection and new characters including (YES!) Chun-Li. The Dreamcast port also offers a training record option were you can record a certain move or combo and have it play against you over and over to see how you can parry it, plus a "system direction" option which allows you to modify practically every aspect of the game (air-blocking, combo limits, etc.) to customize it to your liking.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0078</id>
+					<name>Tech Romancer</name>
+					<filename>rom_pathDreamcast/_2P/Tech Romancer/Tech Romancer.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Tech Romancer.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Tech Romancer.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting</genre>
+					<release>1998</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Tech Romancer is a 1998 3D fighting arcade game by Capcom that draws heavily from the various subgenres of mecha anime. It has been ported to the Dreamcast console.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0044</id>
+					<name>Test Drive 6</name>
+					<filename>rom_pathDreamcast/_2P/Test Drive 6/Test Drive 6.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Test Drive 6.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Test Drive 6.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Driving / Racing</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Test Drive 6 from Infogrames is a racing game featuring a newer physics model than the previous Test Drive games. It now allows each car to feel like its real-life counterpart. The game also has interactive backgrounds, wherein players can break objects, avoid obstacles or find shortcuts.[CR]The game features 34 tracks throughout exotic locales such as Switzerland, Italy, Jordan and Maui. Also included are over 40 fully licensed vehicles including the Dodge '69 Charger, the '99 Dodge Viper GTS, the Aston Martin '99 DB7 Vantage Coupe and the Toyota '99 GT-One.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0079</id>
+					<name>Tony Hawk's Pro Skater</name>
+					<filename>rom_pathDreamcast/_2P/Tony Hawk's Pro Skater/Tony Hawk's Pro Skater.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Tony Hawk's Pro Skater.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Tony Hawk's Pro Skater.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports</genre>
+					<release>1998</release>
+					<publisher>Activision</publisher>
+					<gameplot>Tony Hawk's is a skateboarding video game series endorsed by professional skateboarder Tony Hawk and published by Activision.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0080</id>
+					<name>Ultimate Fighting Championship</name>
+					<filename>rom_pathDreamcast/_2P/Ultimate Fighting Championship/Ultimate Fighting Championship.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Ultimate Fighting Championship.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Ultimate Fighting Championship.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting / Sports</genre>
+					<release>2000</release>
+					<publisher>Crave Entertainment</publisher>
+					<gameplot>Ultimate Fighting Championship is the first video game based on the Ultimate Fighting Championship mixed martial arts tournament.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0048</id>
+					<name>Under Defeat</name>
+					<filename>rom_pathDreamcast/_2P/Under Defeat/Under Defeat.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Under Defeat.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Under Defeat.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Shooter / Flying Vertical</genre>
+					<release>2005</release>
+					<publisher></publisher>
+					<gameplot>Under Defeat is a shoot 'em up developed by G.rev.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0045</id>
+					<name>Virtua Fighter 3tb</name>
+					<filename>rom_pathDreamcast/_2P/Virtua Fighter 3tb/Virtua Fighter 3tb.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Virtua Fighter 3tb.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Virtua Fighter 3tb.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting</genre>
+					<release>1999</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Look out -- Wham! Bam! And a full-body Slam! This Dreamcast version of Sega's revolutionary fighting game packs a one-two-three punch. As one of 12 fierce characters, you have a single deadly goal: to kick some 3D ass 'til you win the World Fighting Tournament. Incredible 3D environments, fluid gameplay, and lifelike graphics enhance the smooth fighting moves you're used to in the mega-hit arcade original. An exclusive feature of the Dreamcast version is Team Battle Mode, in which your custom three-person team goes head-to-head with an opponent's custom team. Virtua Fighter 3tb is so realistic that characters actually watch their opponents' every life-like move, like when they fall forward FROM behind or lose their balance when pushed. Focus your razor-sharp reflexes and take lethal aim as you deliver bone-crunching blows to your reeling opponents. When the dust settles, you'll still be standing.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0049</id>
+					<name>Zombie Revenge</name>
+					<filename>rom_pathDreamcast/_2P/Zombie Revenge/Zombie Revenge.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Zombie Revenge.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Zombie Revenge.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>1999</release>
+					<publisher>SEGA</publisher>
+					<gameplot>A top secret government plan to use undead soldiers has gone horribly wrong. Just before it was ready to be put into operation, someone unknown interfered. Now a year later the city is the home for the undead. Three agents, Stick Breitling, Linda Rotta and Rikiya Busujima, who have come together from various paths of fate, now join together to do battle against the army of the undead and rid the streets of the zombie scum!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+			</roms>
+		</launcher>
+	
+		<launcher>
+			<id>Featherence_dreamcast4P</id>
+			<name>Dreamcast 4P</name>
+			<category>Featherence_dreamcast</category>
+			<application>emulator_file</application>
+			<args>lib_args_dreamcast_args "%rom%"</args>
+			<rompath>rom_pathDreamcast/_4P/</rompath>
+			<thumbpath>rom_pathDreamcast/_4P/_Artwork/boxfront/</thumbpath>
+			<fanartpath>rom_pathDreamcast/_4P/_Artwork/screenshot/</fanartpath>
+			<trailerpath>rom_pathDreamcast/_4P/_Artwork/gameplay(video)/</trailerpath>
+			<custompath></custompath>
+			<romext>gdi</romext>
+			<platform>Dreamcast</platform>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/4P.png</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<release></release>
+			<publisher></publisher>
+			<launcherplot></launcherplot>
+			<finished>false</finished>
+			<minimize>false</minimize>
+			<lnk></lnk>
+			<roms>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0001</id>
+					<name>90 Minutes - Sega Championship Football</name>
+					<filename>rom_pathDreamcast/_4P/90 Minutes - Sega Championship Football/90 Minutes - Sega Championship Football.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/90 Minutes - Sega Championship Football.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/90 Minutes - Sega Championship Football.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0002</id>
+					<name>Bomberman Online</name>
+					<filename>rom_pathDreamcast/_4P/Bomberman Online/Bomberman Online.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Bomberman Online.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Bomberman Online.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Strategy / Puzzle</genre>
+					<release>2001</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Bomberman Online brings gamers the same addictive battles as in other Bomberman games in the form of online multiplayer puzzles. Players progress through different levels attempting to destroy their opponents by strategically planting bombs and running for cover. Each playing field is constructed out of both destructible and indestructible walls, and it's up to you to position bombs in the right place at the right time. The action gets frantic as alliances and rivalries are made and then broken. Intense battles unfold online when you connect to the Internet and play other Bomberman Online users in Internet battle mode. The new screen-scroll option displays a larger map, making it possible for numerous players to skillfully battle it out at the same time. Five new stages and four new ways to play add to the fun, creating an endless chain reaction of unique and dramatic battles!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0003</id>
+					<name>ChuChu Rocket!</name>
+					<filename>rom_pathDreamcast/_4P/ChuChu Rocket!/ChuChu Rocket!.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/ChuChu Rocket!.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/ChuChu Rocket!.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Puzzle / Strategy</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>ChuChu Rocket is an action puzzler, designed predominantly as a multi-player game. You have indirect control over mice, and must guide them to the safety of a rocket, and away from a cat. You do this by placing arrows on the ground, which they will follow. The multi-player game is a frantic all-against-all duel, in which each player's mice will only follow instructions of their own colour. You can play this mode on your own against CPU opponents, or take on a series of predefined puzzles</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0004</id>
+					<name>GigaWing 2</name>
+					<filename>rom_pathDreamcast/_4P/GigaWing 2/GigaWing 2.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/GigaWing 2.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/GigaWing 2.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Shooter / Flying Vertical</genre>
+					<release>2000</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Giga Wing 2 is a 2000 vertical scrolling shooter arcade game developed by Takumi and published by Capcom on Sega's NAOMI arcade system board and later ported in 2001 to the Dreamcast console.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0019</id>
+					<name>NFL Blitz 2001</name>
+					<filename>rom_pathDreamcast/_4P/NFL Blitz 2001/NFL Blitz 2001.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/NFL Blitz 2001.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/NFL Blitz 2001.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports / Football</genre>
+					<release>2000</release>
+					<publisher>Midway Games</publisher>
+					<gameplot>Building on the same format used in previous NFL Blitz games, Midway released NFL Blitz 2001 on September 12, 2000. The game was released on a handful of platforms, notably the first and only NFL Blitz release for the Sega Dreamcast. The game was also the first of the series to not be released in arcade-cabinet format, wherein the game has not been released since. Blitz 2001 was the last Blitz release for the original Playstation. A slightly modified version of NFL Blitz 2001 was re-released on the Nintendo 64 as "NFL Blitz: Special Edition".</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0005</id>
+					<name>Power Stone 2</name>
+					<filename>rom_pathDreamcast/_4P/Power Stone 2/Power Stone 2.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Power Stone 2.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Power Stone 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting</genre>
+					<release>1999</release>
+					<publisher>SEGA</publisher>
+					<gameplot>In Power Stone, 2 fighters take to multi-level arenas with Power Stones and other weapons lying around for use.[CR]Each game contains Power Stones. When you have enough stones (between three to five), your character transforms into an almost unbeatable warrior, with an all-new range of moves (although this does not last for long).</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0006</id>
+					<name>Propeller Arena</name>
+					<filename>rom_pathDreamcast/_4P/Propeller Arena/Propeller Arena.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Propeller Arena.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Propeller Arena.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Flight Simulator</genre>
+					<release>2001</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Propeller Arena: Aviation Battle Championship is a video game for the Dreamcast console. It was originally titled Propeller Head Online,[1] and was to be released on 9/19/2001.[2] The game was trademarked on 8/14/2001.[3] It was developed and completed by the development team Sega AM2,[4] but the game was never officially released.[5] The release was cancelled[6] just days after the September 11 attacks,[7] citing both similarities in game packaging and design to the events of that day[8][9][10][11] as well as the Dreamcast's declining market share[12] resulting in projected low sales numbers.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0007</id>
+					<name>Quake III Arena</name>
+					<filename>rom_pathDreamcast/_4P/Quake III Arena/Quake III Arena.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Quake III Arena.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Quake III Arena.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Shooter</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Unlike its predecessors, Q3A does not have a plot-based single-player campaign. Instead, it simulates the multiplayer experience with computer controlled players known as bots. The game's story is brief - 'the greatest warriors of all time fight for the amusement of a race called the Vadrigar in the Arena Eternal.'</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0008</id>
+					<name>Red Dog - Superior Firepower</name>
+					<filename>rom_pathDreamcast/_4P/Red Dog - Superior Firepower/Red Dog - Superior Firepower.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Red Dog - Superior Firepower.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Red Dog - Superior Firepower.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Crave Entertainment</publisher>
+					<gameplot>Red Dog Released in 1999 in Europe (2000 for the USA) for the Sega Dreamcast is an vechile based shooter placing players in command of the Red Dog assault vechile, A heavely armored buggy, equiped with various lazer cannons, missile systems and a shield system for defence.[CR]Red Dog was developed by the now closed Argonaut Games and was one of the dreamcasts more well received shooters, The game boasted six single player missions in which the player under the command of the Red Dog attempted to defeat the Haak an alien race that had been invited to earth but after many years of living in peace have turned hostile.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0009</id>
+					<name>Sega Worldwide Soccer 2000 - Euro Edition</name>
+					<filename>rom_pathDreamcast/_4P/Sega Worldwide Soccer 2000 - Euro Edition/Sega Worldwide Soccer 2000 - Euro Edition.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Sega Worldwide Soccer 2000 - Euro Edition.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Sega Worldwide Soccer 2000 - Euro Edition.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports / Soccer</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Sega Worldwide Soccer 2000, appeared on the Sega Dreamcast. However, instead of being developed in-house, Silicon Dreams (who previously worked with Eidos on the UEFA Champions League series and also World League Soccer) was given the rights to produce a game bearing the Worldwide Soccer name.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0010</id>
+					<name>Sonic Shuffle</name>
+					<filename>rom_pathDreamcast/_4P/Sonic Shuffle/Sonic Shuffle.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Sonic Shuffle.png</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Sonic Shuffle.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Mini-Games / Puzzle</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Sonic Shuffle is a multiplayer party game, similar to the Mario Party style of games on Nintendo consoles, which was released on the Dreamcast. Sonic Shuffle is a bright colorful game that uses a cel-shaded style for the characters and animations.[CR]Sonic Shuffle is played out on a board between four characters, which can be either player or computer controlled. Player's must work their way around the game board in order to earn emblems, which are automatically awarded for finding the Precious Stones, completing events, collecting the most rings and other tasks. The player at the end of the game with the most emblem's wins. However, the main focus of the game is to be the player that finds the five Precious Stones that are randomly placed around the board in turn for the player to find.[CR]Each player is given a stack of numbered cards which are hidden from the view of other players, and are used to move around the board. Two other cards are also hidden in a player's deck, including the S card, which grants the player extra options such as stealing the cards off other players, and the Eggman card, which when accidentally picked will summon a roulette that will randomly pick punishments as devised by Dr Eggman, such as making ring spaces smaller, or dropping an anvil on a player so that they lose rings, and so on.[CR]Spread across the board are different spaces which activate different events and bonuses. These are ring spaces, which earn you rings, minus-ring spaces, which cause you to lose rings, Event spaces which will trigger and event or mini-game where certain tasks are given to each player, Shop spaces where player's can trade their rings for useful items, and Battle spaces, where players use their cards to battle an enemy by selecting a card that is equal to, or higher than the enemy's card number. When landing on a Precious Stone space, the enemy guarding the Precious Stone must be defeated in this way in order to acquire the Precious Stone.[CR]There are a wide variety of mini-games and events, which are not only triggered by landing on an Event space, but each stage also has their own stage mini-game which is randomly triggered during the stage, known as 'Accidents' and is played at the end of each stage in order to earn an extra emblem. Multiplayer events that are triggered by other player's or computer controlled character's are played out by everyone and usually give the player an opportunity to earn extra rings.[CR]Sonic Shuffle also has a section called 'Sonic's Room' which is used to access bonuses such as artwork and music, and can be used as a record of completed events. Rings that are collected at the end of each stage are totalled and used to buy extras and artwork within Sonic's Room, and is thus used to unlock extra characters.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0011</id>
+					<name>Spawn - In the Demon's Hand</name>
+					<filename>rom_pathDreamcast/_4P/Spawn - In the Demon's Hand/Spawn - In the Demon's Hand.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Spawn - In the Demon's Hand.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Spawn - In the Demon's Hand.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Capcom</publisher>
+					<gameplot>The legendary hellbound comic anti-hero comes to life. Straight from the blockbuster arcade game, this home version kicks it up a notch with ever more features and modes of play. Up to 4 players can battle in the "death match-style" Battle Royal Mode or choose a computer controlled teammate to take on Team Battle Mode. All your favorite characters from the Spawn series are faithfully recreated in the ultimate death match challenge.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0012</id>
+					<name>Striker Pro 2000</name>
+					<filename>rom_pathDreamcast/_4P/Striker Pro 2000/Striker Pro 2000.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Striker Pro 2000.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Striker Pro 2000.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports / Football</genre>
+					<release>1999</release>
+					<publisher>Infogrames</publisher>
+					<gameplot>Striker Pro 2000 features nine mode of play, including Knockout, Super Trophy, and International Cup. Training modes are here as well allowing users to take part in soccer drills and win access to secret competitions and modes. There are 130 teams to choose from and they can be edited in areas like player names and sock color. Players can perform all of the moves that real soccer players can too, such as bicycle kicks, diving headers, sliding shots, and tackles.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0013</id>
+					<name>Tee Off</name>
+					<filename>rom_pathDreamcast/_4P/Tee Off/Tee Off.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Tee Off.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Tee Off.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports / Golf</genre>
+					<release>1999</release>
+					<publisher>Acclaim</publisher>
+					<gameplot>Tee Off Golf is a surprisingly satisfying sleeper hit golf game for the Dreamcast from the folks at Bottom Up. Although it does not have the realism of lets say, the "Tiger Woods" series, it still holds up pretty well without real life professional golfers. The cartoon-like characters and overly obscure body models seem to work quite well with its overall loose and subtle comical tone. Tee Off never takes itself too seriously. For example, the quirky comments after a hole in one or when simply hitting the ball vary from character to character. Not only are the characters physically distinct from one another, but also have vocal distinctions. Each character has a special tone of voice that matches the characters age, and possibly social status. For example, Randy, has a brute voice that reflects his muscular appearance, but also has a gentle softness that finishes smoothly with each word of dialogue.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0014</id>
+					<name>Tetris 4D</name>
+					<filename>rom_pathDreamcast/_4P/Tetris 4D/Tetris 4D.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Tetris 4D.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Tetris 4D.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Puzzle</genre>
+					<release>1998</release>
+					<publisher>Bullet-Proof Software</publisher>
+					<gameplot>Tetris in four dimensions! Which, as it turns out, is rather similar to Tetris in two dimensions.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0015</id>
+					<name>Toy Commander</name>
+					<filename>rom_pathDreamcast/_4P/Toy Commander/Toy Commander.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Toy Commander.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Toy Commander.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>1999</release>
+					<publisher>SEGA</publisher>
+					<gameplot>In each mission, the player controls one or more toy vehicles to accomplish certain objectives. The objectives in each mission vary widely. In some missions, the player must drive an army truck and shoot things, in some it is necessary to fly helicopters to pick up and drop off objects, and in some the player races against computer-controlled vehicles.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0016</id>
+					<name>Virtua Tennis</name>
+					<filename>rom_pathDreamcast/_4P/Virtua Tennis/Virtua Tennis.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Virtua Tennis.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Virtua Tennis.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports / Tennis</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Directly translated from the popular arcade stand-up, Virtua Tennis offers a light-year jump from the Pong-style tennis of yesteryear. Sporting rich 3-D graphics, crisp animation, and realistic sound effects, you'll swear you're courtside at a grand slam. But, thanks to the game's simple controls, you won't have to spend years at a tennis camp just learning a backhand. The game features hard-top, grass, and clay surfaces, all with distinct ball-bounce and sound responses. Choose one of eight internationally ranked tennis pros and play against advanced computer opponents, or plug an extra controller in and play a friend head to head. Just as in real championships, ball boys, chair umps, and even spectators react to your game.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0017</id>
+					<name>V-Rally 2 - Expert Edition</name>
+					<filename>rom_pathDreamcast/_4P/V-Rally 2 - Expert Edition/V-Rally 2 - Expert Edition.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/V-Rally 2 - Expert Edition.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/V-Rally 2 - Expert Edition.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>2000</release>
+					<publisher>Infogrames</publisher>
+				    <gameplot>V-Rally 2 is a rally racing video game and the sequel to V-Rally. It was succeeded by V-Rally 3.[CR]The game features rally cars that competed in the 1999 World Rally Championship season (16 in Championship Edition and 26 in Expert Edition). There are over 80 original tracks which represent all of the rallies of the 1999 season, excluding Greece and Safari. The game modes include a time trial mode, an arcade mode which follows the traditional style of arcade games, V-Rally Trophy Where The Player Completes Against 3 AI Opponents to see who can get the least time in all of the rallies. The championship mode follows the real-life example of Rallying with different stages in the rallies featured in the game. V-Rally Trophy and Championship Mode Feature Three Distinct Championships: European, World and Expert.Weather Conditions Such As Snow, Rain and Rallying in Daytime, Sunset and Night Are Included.There is also a track editor where the player designs his/her own rally tracks. There is Multiplayer mode which supports up to 4 Players. The PlayStation version of the Game Features Support For DualShock Analog Controllers.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0018</id>
+					<name>Walt Disney World Quest - Magical Racing Tour</name>
+					<filename>rom_pathDreamcast/_4P/Walt Disney World Quest - Magical Racing Tour/Walt Disney World Quest - Magical Racing Tour.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Walt Disney World Quest - Magical Racing Tour.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Walt Disney World Quest - Magical Racing Tour.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Driving / Racing</genre>
+					<release>2000</release>
+					<publisher>Eidos Interactive</publisher>
+					<gameplot>Walt Disney World Quest Magical Racing Tour features various locations from the Disney World resort to race on including Space Mountain, Big Thunder Mountain, Typhoon Lagoon, Blizzard Beach and more.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0060</id>
+					<name>WWF Royal Rumble</name>
+					<filename>rom_pathDreamcast/_4P/WWF Royal Rumble/WWF Royal Rumble.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/WWF Royal Rumble.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/WWF Royal Rumble.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting / Sports</genre>
+					<release>2000</release>
+					<publisher>THQ</publisher>
+					<gameplot>WWF Royal Rumble is a professional wrestling video game released in 2000 for arcades and the Dreamcast. THQ published the title for the Dreamcast while Sega released it for arcades.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+			</roms>
+		</launcher>
+		
 	</launchers>
 </advanced_launcher>

@@ -203,6 +203,7 @@ def downloads2(file):
 	DownloadFile("https://www.dropbox.com/s/"+fileID+"/"+file_+"?dl=1", file, temp_path, rom_path)
 	
 def startup():
+	name = 'startup' ; printpoint = ""
 	setProperty('emu_startup', 'true', type="home")
 	returned, value = getRandom(0, min=0, max=100, percent=10)
 	#notification(addonName + space + 'startup',str(value),'',1000)
@@ -211,7 +212,30 @@ def startup():
 	chmod()
 	copyconfig(force=False)
 	copyarcade(force=value)
+	copydreamcastmem(force=True)
 	installaddon('emulator.retroarch', update=True)
+	from shared_modules3 import *
+	getsetting('Addon_Update')
+	getsetting('Addon_Version')
+	getsetting('Addon_UpdateDate')
+	getsetting('Addon_UpdateLog')
+	getsetting('Addon_ShowLog')
+	getsetting('Addon_ShowLog2')
+	VerReset = ""
+	checkAddon_Update("", Addon_Update, Addon_Version, addonVersion, Addon_UpdateDate, Addon_UpdateLog, Addon_ShowLog, Addon_ShowLog2, VerReset)
+	if Addon_UpdateLog == "true" or 1 + 1 == 3:
+		list = []
+		list.append(addonString_servicefeatherence(32060).encode('utf-8')) #Would you like thanks us? Would love to hear you!
+		list.append(addonString_servicefeatherence(32061).encode('utf-8')) #Do you want to contribute?
+		list.append(addonString_servicefeatherence(32062).encode('utf-8')) #Have an idea for new addon?
+		list.append(addonString_servicefeatherence(32063).encode('utf-8')) #Looking for support?
+		list.append(addonString_servicefeatherence(32064).encode('utf-8')) #Having a question?
+		returned, value = getRandom(0, min=0, max=len(list), percent=50)
+		
+		notification(list[int(value)],'www.facebook.com/groups/featherence','',4000)
+	
+	text = ""
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def chmod():
 	if systemplatformlinux:
@@ -632,15 +656,93 @@ def getfileID(file):
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 
-	elif file == "?": fileID = "" #user16
+		
+	elif file == "Dreamcast_2P_Project Justice - Rival Schools 2": fileID = "n9mnlaffe27f3h1" #featherence.user1
+	elif file == "Dreamcast_2P_Sonic Adventure 2": fileID = "gyehvme4ky3bo93" #featherence.user1
+	elif file == "Dreamcast_1P_Headhunter": fileID = "" #featherence.user2 #NEED TO FILL!!!
+	elif file == "Dreamcast_2P_Street Fighter III - 3rd Strike": fileID = "tew77v2lqhybj2j" #featherence.user2
+	elif file == "Dreamcast_1P_Skies of Arcadia": fileID = "" #featherence.user3
 	
-	elif file == "?": fileID = "" #
+	elif file == "Dreamcast_2P_Capcom vs. SNK": fileID = "7373ygc3fk66rtq" #featherence.user4
+	elif file == "Dreamcast_2P_Samba De Amigo": fileID = "2407wbot7t6alzr" #featherence.user4
 	
-	elif file == "?": fileID = "" #user18
+	elif file == "Dreamcast_1P_Sonic Adventure": fileID = "7p877gb0zfsclzl" #featherence.user5
+	elif file == "Dreamcast_1P_Rayman 2 - The Great Escape": fileID = "sy884basx1e9fdm" #featherence.user5
+	elif file == "Dreamcast_1P_Crazy Taxi": fileID = "o7ps9hb7iyn7v73" #featherence.user5
 	
-	elif file == "?": fileID = "" #user19 #
+	elif file == "Dreamcast_1P_Jet Grind Radio": fileID = "d9vrc7jll590gby" #featherence.user6
+	elif file == "Dreamcast_1P_Resident Evil 3 - Nemesis": fileID = "763t2fmkl6xoqxd" #featherence.user6
+	elif file == "Dreamcast_2P_Daytona USA 2001": fileID = "40jl8wu4iatjw7f" #featherence.user6
 	
-	elif file == "?": fileID = "" #user20
+	elif file == "Dreamcast_1P_Grandia II": fileID = "hwfzizwyg8n1fwd" #featherence.user7
+	elif file == "Dreamcast_4P_90 Minutes - Sega Championship Football": fileID = "wjv6tz7k330tzru" #featherence.user7
+	elif file == "Dreamcast_4P_NFL Blitz 2001": fileID = "sg7nv9jz2jjklpe" #featherence.user7
+	
+	elif file == "Dreamcast_1P_Airforce Delta": fileID = "qp9ni9hwtiejn04" #featherence.user9 (Possibly disc2 missing!)
+	elif file == "Dreamcast_2P_4 Wheel Thunder": fileID = "tvk2crtgpv50la7" #featherence.user9
+	elif file == "Dreamcast_1P_Illbleed": fileID = "stbpzbrtmofinox" #featherence.user9
+	
+	elif file == "Dreamcast_1P_Alone in the Dark - The New Nightmare": fileID = "8fle779l57z4kf5" #featherence.user11
+	
+	elif file == "Dreamcast_1P_Sword of the Berserk - Guts Rage": fileID = "nlxzy78c9bsy1oh" #featherence.user12 #1.35GB FREE
+	
+	elif file == "Dreamcast_1P_Skies of Arcadia": fileID = "ans8hoynble9s7s" #featherence.user13
+	elif file == "Dreamcast_1P_Evolution 2 - Far Off Promise": fileID = "jvwyia29ys2hmkt" #featherence.user13
+	
+	elif file == "Dreamcast_1P_Headhunter": fileID = "6yl549o5zyts48t" #featherence.user14
+	elif file == "Dreamcast_2P_Dead or Alive 2": fileID = "8ahdxi4zw0d4hy5" #featherence.user14
+	
+	elif file == "Dreamcast_2P_Cyber Troopers Virtual On - Oratorio Tangram": fileID = "pusgq1cl8hqzbud" #featherence.user15
+	elif file == "Dreamcast_2P_Marvel vs. Capcom 2": fileID = "vxgcov3dfud8sil" #featherence.user15
+	elif file == "Dreamcast_2P_Sega GT": fileID = "pq5mxuo045ctygj" #featherence.user15
+	
+	elif file == "Dreamcast_1P_Blue Stinger": fileID = "yw72w512amnkf6f" #featherence.user16
+	elif file == "Dreamcast_1P_Metropolis Street Racer": fileID = "yjlglju05dyh0ck" #featherence.user16
+	elif file == "Dreamcast_2P_Ready 2 Rumble Boxing": fileID = "klfpbqlx7mmjrs1" #featherence.user16
+	
+	elif file == "Dreamcast_1P_AeroWings 2 - Airstrike": fileID = "cmgiv70684dgdio" #featherence.user17
+	elif file == "Dreamcast_4P_V-Rally 2 - Expert Edition": fileID = "4s8z1ya5rgnfm3a" #featherence.user17
+	
+	elif file == "Dreamcast_2P_Confidential Mission": fileID = "f00lw5iu8slv5ks" #featherence.user18
+	elif file == "Dreamcast_2P_Flag to Flag": fileID = "6ggdjke6uq1aq3q" #featherence.user18
+	elif file == "Dreamcast_2P_Plasma Sword - Nightmare of Bilstein": fileID = "ray1fhclvn23rlf" #featherence.user18
+	
+	elif file == "Dreamcast_2P_Expendable": fileID = "t1nokjtgb76uqch" #featherence.user19
+	elif file == "Dreamcast_1P_Prince of Persia - Arabian Nights": fileID = "6in3lc79e7hiw4h" #featherence.user19
+	elif file == "Dreamcast_1P_Tokyo Xtreme Racer 2": fileID = "0g74y3q1ou8nmsr" #featherence.user19
+	
+	elif file == "Dreamcast_4P_Striker Pro 2000": fileID = "6yml24yioziii8j" #featherence.user20
+	elif file == "Dreamcast_4P_Tee Off": fileID = "9rj00cxbcthxsib" #featherence.user20
+	elif file == "Dreamcast_2P_Dead or Alive 2": fileID = "5ypl35mj4bysuci" #featherence.user20
+	elif file == "Dreamcast_4P_Walt Disney World Quest - Magical Racing Tour": fileID = "drp9hemxgm0wxzb" #featherence.user20
+	
+	elif file == "Dreamcast_1P_ECCO the Dolphin - Defender of the Future": fileID = "hheupvn8sik5f2q" #featherence.user21
+	elif file == "Dreamcast_1P_Record of Lodoss War": fileID = "12rdubuwm8fo51l" #featherence.user21
+	elif file == "Dreamcast_2P_Soul Calibur": fileID = "7to98uj6iwgl657" #featherence.user21
+	
+	elif file == "Dreamcast_1P_Legacy of Kain - Soul Reaver": fileID = "ylhvvpcftm7kxbg" #featherence.guser1
+	elif file == "Dreamcast_1P_Chicken Run": fileID = "tfptc1k2gyek83z" #featherence.guser1
+	elif file == "Dreamcast_2P_Virtua Fighter 3tb": fileID = "nsvr0pe2hbsqffw" #featherence.guser1
+	
+	elif file == "Dreamcast_1P_KAO the Kangaroo": fileID = "2z1mlgks35y8upf" #featherence.guser3
+	elif file == "Dreamcast_1P_Maken X": fileID = "vx81423u25uvb65" #featherence.guser3
+	elif file == "Dreamcast_4P_Spawn - In the Demon's Hand": fileID = "tlwo34jfiu4xy61" #featherence.guser3
+	
+	elif file == "Dreamcast_1P_Donald Duck - Goin' Quackers": fileID = "9ddwvsyxvonbdof" #featherence.guser4
+	elif file == "Dreamcast_2P_Power Stone": fileID = "y6n6uhe8fgsacw6" #featherence.guser4
+	elif file == "Dreamcast_4P_Bomberman Online": fileID = "58wve2p4xeznrba" #featherence.guser4
+	elif file == "Dreamcast_4P_Quake III Arena": fileID = "gitt8vkzijg5ud2" #featherence.guser4
+	
+	elif file == "Dreamcast_4P_ChuChu Rocket!": fileID = "heeb8qqagnphxzl" #featherence.guser6
+	elif file == "Dreamcast_4P_Virtua Tennis": fileID = "wu843fsy9eql7wt" #featherence.guser6
+	elif file == "Dreamcast_4P_WWF Royal Rumble": fileID = "4o0q92vuewas1s3" #featherence.guser6
+	elif file == "Dreamcast_4P_Red Dog - Superior Firepower": fileID = "lahkk5xhkppo9q1" #featherence.guser6 #850MB FREE
+	
+	
+	
+	
+	
+	
 	
 	if fileID_L != [""] and fileName_L != ['--> (Exit)'] and fileID == "":
 		returned, value = dialogselect('Choose a file to download', fileName_L)
@@ -780,6 +882,10 @@ def setconfig(force=False):
 							ad = regex_from_to(infile, 'pcm "', '"', excluding=True)
 							extra = extra + ad
 							#replace_word(infile,ad,z, infile_="", LineR=False , LineClean=False)
+					
+					elif file == 'retroarch.cfg' and systemplatformwindows:
+						extra = extra + newline + 'ad_' + space2
+						copyfiles(retroarchcfg_file2, retroarchcfg_file) ; xbmc.sleep(100)
 							
 				extra = extra + space + 'y' + space2 + str(y) + space + 'z' + space2 + str(z)
 				
@@ -862,6 +968,23 @@ def mkdirs():
 			try: os.mkdir(x)
 			except: pass
 
+def copydreamcastmem(force=False):
+	returned = ''
+	source = os.path.join(emulator_path,'system', 'dc','formatted_vmu','')
+	target = os.path.join(emulator_path,'system', 'dc','')
+	if not os.path.exists(source) and force == True:
+		notification('Source dir is missing!',str(source),4000)
+	else:
+		if force == False and (os.path.exists(os.path.join(target,'vmu_save_A1.bin')) or os.path.exists(os.path.join(target,'vmu_save_B1.bin')) or os.path.exists(os.path.join(target,'vmu_save_C1.bin')) or os.path.exists(os.path.join(target,'vmu_save_D1.bin'))):
+			returned = dialogyesno('Dreamcast memory cards exists!','Are you sure you want to proceed?')
+		elif force == True and not (os.path.exists(os.path.join(target,'vmu_save_A1.bin')) or not os.path.exists(os.path.join(target,'vmu_save_B1.bin')) or not os.path.exists(os.path.join(target,'vmu_save_C1.bin')) or not os.path.exists(os.path.join(target,'vmu_save_D1.bin'))):
+			returned = 'ok'
+		if returned == 'ok':
+			notification('Formating Dreamcast memory slots','','',1000)
+			copyfiles(source,target)
+			xbmc.sleep(1000)
+			notification('Formating done!','','',1000)
+	
 def copylaunchers(force=False):
 	
 	name = 'copylaunchers' ; printpoint = ""
@@ -939,17 +1062,25 @@ def copylaunchers(force=False):
 			elif systemplatformlinux: _turbografx16_args = 'mednafen.pce.fast'
 			elif systemplatformwindows: _turbografx16_args = 'mednafen.pce.fast_libretro.dll'
 			replace_word(emudata_launcher_file,'_turbografx16_args',_turbografx16_args, infile_="", LineR=False , LineClean=False)
+			
+			if systemplatformandroid: _dreamcast_args = 'start -n com.explusalpha.Snes9xPlus/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
+			elif systemplatformlinuxraspberrypi: pass
+			elif systemplatformlinux: _dreamcast_args = 'reicast'
+			elif systemplatformwindows: _dreamcast_args = 'reicast_libretro.dll'
+			replace_word(emudata_launcher_file,'_dreamcast_args',_dreamcast_args, infile_="", LineR=False , LineClean=False)
 
 			
 			
 	
-	text = "force" + space2 + str(force)
+	text = "force" + space2 + str(force) + newline + \
+	'emudata_launcher_file' + space2 + str(emudata_launcher_file)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
 def checkin():
 	if xbmc.getSkinDir() != 'skin.featherence':
-		notification('Featherence is missing!','','',2000)
-		sys.exit(0)
+		pass
+		#notification('Featherence is missing!','','',2000)
+		#sys.exit(0)
 		
 def terminal(command):
 	'''Execute commands to OS terminal'''

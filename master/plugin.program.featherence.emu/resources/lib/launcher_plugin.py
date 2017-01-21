@@ -26,6 +26,7 @@ import subprocess_hack
 from user_agent import getUserAgent
 from file_item import Thumbnails
 from xml.dom.minidom import parse
+#from variables import *
 
 # Dharma compatibility (import md5)
 try:
@@ -57,6 +58,7 @@ DOWNLOAD_NVRAM = "%%DOWNLOAD_NVRAM%%"
 DOWNLOAD_CFG = "%%DOWNLOAD_CFG%%"
 COMMAND_ARGS_SEPARATOR = "^^"
 RESET_LANUCHER = "%%RESET_LANUCHER%%"
+RESET_DREAMCAST_MEM = "%%RESET_DREAMCAST_MEM%%"
 RESET_CONFIG = "%%RESET_CONFIG%%"
 COPY_KEYMAPS = "%%COPY_KEYMAPS%%"
 SET_CONFIG = "%%SET_CONFIG%%"
@@ -86,6 +88,11 @@ class Main:
     launchers = {}
     categories = {}
     def __init__( self, *args, **kwargs ):
+        command_part = ""
+        launcher = ""
+        category = ""
+        
+        
         # store an handle pointer
         self._handle = int(sys.argv[ 1 ])
         self._path = sys.argv[ 0 ]
@@ -121,6 +128,7 @@ class Main:
         # If parameters are passed...
         if param:
             param = param[1:]
+            param = param.replace('%2F',"/")
             command = param.split(COMMAND_ARGS_SEPARATOR)
             command_part = command[0].split("/")
 
@@ -181,11 +189,14 @@ class Main:
 
             if ( len(command_part) == 1 ):
                 category = command_part[0]
+                launcher = ""
 
                 if (category == SEARCH_COMMAND):
                     self._find_roms(False)
                 elif (category == RESET_LANUCHER):
                     copylaunchers(force=True)
+                elif (category == RESET_DREAMCAST_MEM):
+                    copydreamcastmem(force=True)
                 elif (category == RESET_CONFIG):
                     copyconfig(force=True)
                 elif (category == COPY_KEYMAPS):
@@ -215,6 +226,12 @@ class Main:
                     self._get_launchers('default')
             else:
                 self._get_categories()
+        
+        text = "len(command_part)" + space2 + str(len(command_part)) + newline + \
+        'param' + space2 + str(param) + newline + \
+        'category' + space2 + str(category) + newline + \
+        'launcher' + space2 + str(launcher)
+        printlog(title='__init__', printpoint="", text=text, level=0, option="")
 
     def _run_launcher(self, launcherID):
         if (self.launchers.has_key(launcherID)):
@@ -515,11 +532,17 @@ class Main:
                 else:
 			        self._add_launcher(self.launchers[key]["name"], self.launchers[key]["category"], self.launchers[key]["application"], self.launchers[key]["rompath"], self.launchers[key]["thumbpath"], self.launchers[key]["fanartpath"], self.launchers[key]["trailerpath"], self.launchers[key]["custompath"], self.launchers[key]["romext"], self.launchers[key]["gamesys"], self.launchers[key]["thumb"], self.launchers[key]["fanart"], self.launchers[key]["genre"], self.launchers[key]["release"], self.launchers[key]["studio"], self.launchers[key]["plot"], self.launchers[key]["lnk"], self.launchers[key]["minimize"], self.launchers[key]["roms"], len(self.launchers), key)
         xbmcplugin.endOfDirectory( handle=int( self._handle ), succeeded=True, cacheToDisc=False )
+        
+        text = "categoryID" + space2 + str(categoryID) + newline + \
+        'self.launchers[key]' + space2 + str(self.launchers[key]) + newline + \
+        'self.launchers[key]["id"]' + space2 + str(self.launchers[key]["id"])
+        printlog(title='_get_launchers', printpoint="", text=text, level=0, option="")
 
     def _get_roms( self, launcherID ):
         if (self.launchers.has_key(launcherID)):
             selectedLauncher = self.launchers[launcherID]
             roms = selectedLauncher["roms"]
+            
 			
             if launcherID == 'Featherence_arcadeADULT' and show_adult != 'true': pass
             else:
@@ -530,7 +553,7 @@ class Main:
 						else:
 							defined_fanart = roms[key]["fanart"]
 						rom_name = roms[key]["name"]
-						if not os.path.exists(roms[key]["filename"]): rom_name = '[COLOR=red]' + rom_name + '[/COLOR]'
+						#if not os.path.exists(roms[key]["filename"]): rom_name = '[COLOR=red]' + rom_name + '[/COLOR]'
 						if os.path.exists(roms[key]["filename"]) or filter_games != 'true': self._add_rom(launcherID, rom_name, roms[key]["filename"], roms[key]["gamesys"], roms[key]["thumb"], defined_fanart, roms[key]["trailer"], roms[key]["custom"], roms[key]["genre"], roms[key]["release"], roms[key]["studio"], roms[key]["plot"], roms[key]["altapp"], roms[key]["altarg"], len(roms), key, False, "")
 					xbmcplugin.endOfDirectory( handle=int( self._handle ), succeeded=True, cacheToDisc=False )
 				else:
@@ -540,7 +563,7 @@ class Main:
         commands = []
         commands.append((localize(137), "XBMC.RunPlugin(%s?%s)" % (self._path, SEARCH_COMMAND) , ))
         commands.append((addonString(30100).encode('utf-8') % (name), "XBMC.RunPlugin(%s?%s/%s)" % (self._path, KEYS_HELP, name) , ))
-        commands.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
+        commands.append((localize(10140), 'Addon.OpenSettings('+addonID+')'))
 		
         folder = True
         icon = "DefaultFolder.png"
@@ -563,7 +586,7 @@ class Main:
             display_date_format = "Year"
         commands = []
         commands.append((localize(137), "XBMC.RunPlugin(%s?%s/%s)" % (self._path, category, SEARCH_COMMAND) , ))
-        commands.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
+        commands.append((localize(10140), 'Addon.OpenSettings('+addonID+')'))
 
         if (path == ""):
             folder = False
@@ -610,7 +633,7 @@ class Main:
         #commands.append((localize(137) + space + localize(20410), "XBMC.RunPlugin(plugin://plugin.video.youtube/search/?q=%s)" % (name), ))
         commands.append((localize(33003), "XBMC.RunPlugin(%s?%s/%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, key, DOWNLOAD_COMMAND) , )) #DOWNLOAD
         if os.path.exists(filepath) and delete_games == 'true': commands.append((addonString(30101).encode('utf-8'), "XBMC.RunPlugin(%s?%s/%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, key, DEL_GAME) , )) #DEL_GAME
-        commands.append((localize(1045), 'Addon.OpenSettings('+addonID+')'))
+        commands.append((localize(10140), 'Addon.OpenSettings('+addonID+')'))
 		
         listitem.addContextMenuItems( commands, replaceItems=True)
         xbmcplugin.addDirectoryItem( handle=int( self._handle ), url="%s?%s/%s/%s"  % (self._path, self.launchers[launcherID]["category"], launcherID, key), listitem=listitem, isFolder=False)

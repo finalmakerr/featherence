@@ -337,7 +337,7 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.remote" name="Featherence Remote" version="0.1.2" provider-name="finalmakerr">
+<addon id="script.featherence.remote" name="Featherence Remote" version="0.1.3" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
