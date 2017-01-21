@@ -1,12 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-
-    <category label="30124">
-        <setting label="30104" type="bool" id="filter_games" default="false" visible="Skin.HasSetting(Admin)" />
-        <setting label="30105" type="bool" id="delete_games" default="false" visible="" />
+	
+	<category label="$LOCALIZE[128]" description="כללי">
+		<setting type="lsep" label="Enable in order to hide undownloaded games."/>
+		<setting label="30104" type="bool" id="filter_games" default="false" visible="" />
+        <setting type="lsep" label="Enable in order to have an option to delete downloaded games."/>
+		<setting label="30105" type="bool" id="delete_games" default="false" visible="" />
 		<setting label="30175" type="bool" id="lirc_state" default="true" />
-        <setting label="30180" type="slider" id="start_tempo" default="1000" range="0,100,15000" option="int"/>
-    </category>
+        <setting type="lsep" label="Opening game time in ms."/>
+		<setting label="30180" type="slider" id="start_tempo" default="1000" range="0,100,15000" option="int"/>
+		<setting type="lsep" label="Enable Adult content"/>
+		<setting label="Adult Content" type="bool" id="show_adult"/>
+		
+		<setting type="lsep" label=""/>
+		<setting id="Addon_ShowLog" type="bool" default="true" label="$LOCALIZE[33073]" visible="true"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32419]" visible="eq(-1,true)"/>
+		<setting id="Addon_ShowLog2" type="slider" default="1" label="$ADDON[script.featherence.service 32420]" range="0,1,7" visible="eq(-2,true)" option="int" subsetting="true"/>
+		<setting id="Addon_Update" type="text" default="false" label="Addon_Update" visible="false"/>
+		<setting id="Addon_UpdateDate" type="text" default="" label="Addon_UpdateDate" visible="false"/>
+		<setting id="Addon_UpdateLog" type="bool" default="false" label="Addon_UpdateLog" visible="false"/>
+		<setting id="Addon_Version" type="text" default="" label="Addon_Version" visible="false"/>
+		<setting type="lsep" label=""/>
+	</category>
 
     <category label="$LOCALIZE[5]" description="Settings">
 		<setting type="lsep" label="Use this option in order to determine better which game you would like to download."/>
@@ -20,10 +35,10 @@
 		<setting label="Reset Lanuchers" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RESET_LANUCHER%%)"/>
 		<setting type="lsep" label="Recreate default settings for each console."/>
 		<setting label="Reset EMU Settings" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RESET_CONFIG%%)"/>
+		<setting type="lsep" label="Use this option in order to create new formatted virtual memory cards slots for Dreamcast console."/>
+		<setting label="Reset Dreamcast Memory slots" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RESET_DREAMCAST_MEM%%)"/>
 		<setting type="lsep" label="Show a list of potential audio adapters." visible="System.Platform.Linux"/>
 		<setting label="Show Audio Adapters" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%AUDIO_DEVICES%%)" visible="System.Platform.Linux"/>
-		<setting type="lsep" label="Enable Adult content"/>
-		<setting label="Adult Content" type="bool" id="show_adult"/>
     </category>
 	
 	<category label="$LOCALIZE[13395]" description="Video Settings">
@@ -57,6 +72,8 @@
 	<category label="About" description="About">
 		<setting type="lsep" label=""/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32079]"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32157]"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=7)" label="$ADDON[script.featherence.service 32158]" option="close" visible="true"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32108]"/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=1)" label="$ADDON[script.featherence.service 32078]" option="close" visible="true"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32048] $ADDON[script.featherence.service 32049]" visible="true"/>

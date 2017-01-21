@@ -1,0 +1,55 @@
+------------------------
+WIP - WORK IN PROGRESS
+------------------------
+- Added Dreamcast console support.
+- Added Dreamcast disc swap support.
+- Added Dreamcast memory slots support (preformat included!)
+- Added optimal settings for Dreamcast, converting original games to FULL HD.
+
+------------------------
+Featherence Emu v0.1.0 (21-01-17)
+------------------------
+- Added changelog information.
+- Added Dreamcast roms (gdi only!) about 100GB so far.
+- Now support all Kodi skins.
+- Update consoles images.
+- Update configuration file for windows platforms.
+
+------------------------
+Featherence Emu v0.0.8 (02-Dec-16)
+------------------------
+- Added option to delete a game.
+- Added option to hide unavailable games.
+
+------------------------
+Featherence Emu v0.0.7 (12-Nov-16)
+------------------------
+- Added auto installation script for Featherence Emu Console addon.
+- Arcade FUN category is now available for download.
+- Minor update of download progress notification.
+
+------------------------
+Featherence Emu v0.0.6 (17-Jun-16)
+------------------------
+- Added adult contents.
+- Added hebrew translation.
+- Added keymaps instructions for each console.
+- Code Aesthetic.
+- Minor bugs fix.
+- Update addon information.
+- Update keyboard keymaps.
+
+------------------------
+Featherence Emu v0.0.5 (03-Jun-16)
+------------------------
+- Minor sound bug fix.
+
+------------------------
+Featherence Emu v0.0.4 (28-May-16)
+------------------------
+- Update OpenELEC compatibility.
+
+------------------------
+Featherence Emu v0.0.1-3 (21-May-16)
+------------------------
+- Alpha release.

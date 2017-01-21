@@ -91,6 +91,7 @@ coresinfo_path = cores_path
 
 '''Emulator userdata'''
 emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')
+retroarchcfg_file2 = os.path.join(emulatordata_path, 'config', 'retroarch.cfg')
 rom_path = os.path.join(emulatordata_path,'rom','')
 config_path = os.path.join(emulatordata_path,'config','')
 
@@ -178,6 +179,6 @@ download1L = ['Arcade', 'Sony Playstation']
 
 emu_startup = xbmc.getInfoLabel('Window(home).Property(emu_startup)')
 
-if emu_startup == "":
+if emu_startup == "" or 1 + 1 == 3:
 	from modules import startup
 	startup()

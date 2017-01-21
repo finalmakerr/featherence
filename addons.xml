@@ -15,14 +15,14 @@
     <description lang="en">_</description>
 	<description lang="he">_</description>
     <disclaimer></disclaimer>
-	<email>featherence@groups.facebook.com</email>
+	<email>finalmakerr@gmail.com</email>
 	<forum></forum>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/emulator.retroarch</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+	<website>www.featherence.com</website>
   </extension>
 </addon>
 
-<addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.0.8" provider-name="finalmakerr, Angelscry">
+<addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.1.0" provider-name="finalmakerr, Angelscry">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
     <import addon="script.module.simplejson" version="2.0.9"/>
@@ -36,7 +36,7 @@
 	<summary lang="he">משחקי נוסטלגיה</summary>
     <description lang="en">Features:
 - 9 Consoles of choice.
-- Advanced customized settings are available trough addon settings.
+- Advanced customized settings in addon settings.
 - Adult contents support.
 - Auto generate of predifined CFG, DIFF and NVRAM Arcade's settings.
 - Download any game directly! Up to 1000 games are available!
@@ -52,9 +52,9 @@
     </description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<forum></forum>
-	<email>featherence@groups.facebook.com</email>
+	<email>finalmakerr@gmail.com</email>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.program.featherence.emu</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+	<website>www.featherence.com</website>
   </extension>
 </addon>
 
@@ -78,9 +78,9 @@
 	</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<forum></forum>
-	<email>featherence@groups.facebook.com</email>
+	<email>finalmakerr@gmail.com</email>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.be_creative</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+	<website>www.featherence.com</website>
   </extension>
 </addon>
 
@@ -120,9 +120,9 @@
 	</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<forum></forum>
-	<email>featherence@groups.facebook.com</email>
+	<email>finalmakerr@gmail.com</email>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.docu</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+	<website>www.featherence.com</website>
   </extension>
 </addon>
 
@@ -154,10 +154,10 @@
 - תכנים מגוונים ואין סופיים: תמיכה במגוון עצום של מקורות לתוכן בודד.
 	</description>
     <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	<email>featherence@groups.facebook.com</email>
+	<email>finalmakerr@gmail.com</email>
 	<forum></forum>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.extreme</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+	<website>www.featherence.com</website>
   </extension>
 </addon>
 
@@ -199,9 +199,9 @@
 	</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<forum>http://forum.kodi.tv/showthread.php?tid=252567</forum>
-	<email>featherence@groups.facebook.com</email>
+	<email>finalmakerr@gmail.com</email>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.kids</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+	<websitewww.featherence.com</website>
   </extension>
 </addon>
 
@@ -241,9 +241,9 @@
 	</description>
     <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<forum></forum>
-	<email>featherence@groups.facebook.com</email>
+	<email>finalmakerr@gmail.com</email>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.music</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+	<website>www.featherence.com</website>
   </extension>
 </addon>
 
@@ -285,9 +285,9 @@
 	</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<forum></forum>
-	<email>featherence@groups.facebook.com</email>
+	<email>finalmakerr@gmail.com</email>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.rofl</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+	<website>www.featherence.com</website>
   </extension>
 </addon>
 
@@ -348,14 +348,14 @@
     <summary>Control your OpenELEC with any standard Remote Control</summary>
     <description></description>
     <disclaimer></disclaimer>
-	<email>featherence@groups.facebook.com</email>
+	<email>finalmakerr@gmail.com</email>
 	<forum></forum>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.remote</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+	<website>www.featherence.com</website>
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.3.57" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.3.58" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.24.0"/>
@@ -367,10 +367,10 @@
     <summary>Add-on for skins and video plugins to provide simple development</summary>
     <description>Add-on features can be used on any addon (with the right touch). Check Featherence Be-Creative for more information!</description>
     <disclaimer></disclaimer>
-	<email>featherence@groups.facebook.com</email>
+	<email>finalmakerr@gmail.com</email>
 	<forum></forum>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.service</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+	<website>www.featherence.com</website>
   </extension>
 </addon>
 </addons>

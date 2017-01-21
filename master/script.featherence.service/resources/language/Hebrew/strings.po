@@ -572,12 +572,12 @@ msgid "Create new button"
 msgstr "צור כפתור חדש"
 
 msgctxt "#32157"
-msgid ""
-msgstr ""
+msgid "[B][COLOR=blue]Featherence Website[/COLOR][/B]: www.featherence.com[CR]"
+msgstr "[B][COLOR=blue]Featherence Website[/COLOR][/B]: www.featherence.com[CR]"
 
 msgctxt "#32158"
-msgid ""
-msgstr ""
+msgid "www.featherence.com"
+msgstr "www.featherence.com"
 
 msgctxt "#32159"
 msgid ""

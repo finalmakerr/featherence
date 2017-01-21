@@ -2310,9 +2310,11 @@ def mode218(value, admin, name, printpoint):
 	------------------------------'''	
 	message = ""
 	if "view" in value:
+		customhomecustomizerW = xbmc.getCondVisibility('Window.IsVisible(CustomHomeCustomizer.xml)')
 		dialogfullscreeninfoW = xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)')
 		dialogvideoinfoW = xbmc.getCondVisibility('Window.IsVisible(DialogVideoInfo.xml)')
 		dialogsubtitlesW = xbmc.getCondVisibility('Window.IsVisible(DialogSubtitles.xml)')
+		homeW = xbmc.getCondVisibility('Window.IsVisible(Home.xml)')
 		myweatherW = xbmc.getCondVisibility('Window.IsVisible(MyWeather.xml)')
 		playerpaused = xbmc.getCondVisibility('Player.Paused')
 		message = message + newline + "script.featherence.service_downloading" + space2 + xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
@@ -2444,6 +2446,11 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "Window(home).Property(PassProtect)" + space2 + str(xbmc.getInfoLabel('Window(home).Property(PassProtect)')) #
 			
 			
+		if homeW or customhomecustomizerW:
+			message = message + newline + "Container(9000).ListItem(0).Property(id)" + space2 + xbmc.getInfoLabel('Container(9000).ListItem(0).Property(id)')
+			message = message + newline + "Container(9000).ListItem(0).Property(pwd)" + space2 + xbmc.getInfoLabel('Container(9000).ListItem(0).Property(pwd)')
+			message = message + newline + "Container(9000).ListItem(0).Property(off)" + space2 + xbmc.getInfoLabel('Container(9000).ListItem(0).Property(off)')
+			message = message + newline + "Container(9000).ListItem(0).Property(sub)" + space2 + xbmc.getInfoLabel('Container(9000).ListItem(0).Property(sub)')
 
 		header = name
 		diaogtextviewer(header,message)
@@ -2714,6 +2721,7 @@ def mode512(value):
 		elif value == '3': url = 'www.youtube.com'
 		elif value == '4': url = 'https://www.google.co.il/imghp?hl=iw&tab=wi' #Thumbnail
 		elif value == '5': url = 'https://www.google.co.il/imghp?hl=iw&tab=wi' #Fanart
+		elif value == '7': url = 'www.featherence.com' #Website
 		else: url = value
 		
 		name = localize(443)
