@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <expression name="!Button.ID_17-21">!String.IsEqual(Window(home).Property(Button.ID_),17) + !String.IsEqual(Window(home).Property(Button.ID_),18) + !String.IsEqual(Window(home).Property(Button.ID_),19) + !String.IsEqual(Window(home).Property(Button.ID_),20) + !String.IsEqual(Window(home).Property(Button.ID_),21)</expression>
+  <expression name="Fade_MoviesTVCoversOverlay">Control.IsVisible(7013) + [!String.IsEmpty(Control.GetLabel(1106)) | !String.IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container.OnNext + !Container.OnPrevious + !Control.HasFocus(60)</expression>
+  <expression name="Fade_MainBackgroundOverlay">!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!String.IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]</expression>
+  <expression name="Fade_Background2Overlay">[String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])]</expression>
+</includes>

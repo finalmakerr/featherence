@@ -197,7 +197,6 @@
 		  <label>$LOCALIZE[31129]</label>
 		  <selected>Skin.HasSetting(PosterFanart)</selected>
 		  <onclick>Skin.ToggleSetting(PosterFanart)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31011])</visible>
         </control>
 		<control type="radiobutton" id="112" description="הצג דירוג">
           <include>SideMenuCommon</include>

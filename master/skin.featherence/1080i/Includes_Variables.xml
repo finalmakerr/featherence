@@ -287,7 +287,7 @@
 	<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 	<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
 	<value condition="Window.IsVisible(MyPics.xml) + !String.IsEmpty(ListItem.FilenameAndPath)">$INFO[ListItem.FilenameAndPath]</value>
-	<value condition="Skin.HasSetting(PosterFanart) + String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + !String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+	<value condition="Skin.HasSetting(PosterFanart) + !String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
   </variable>
   <variable name="banner" description="פאנארט">
     <value condition="!String.IsEmpty(ListItem.Art(tvshow.banner))">$INFO[ListItem.Art(tvshow.banner)]</value>

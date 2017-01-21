@@ -178,7 +178,7 @@ msgid "Multi Fanart"
 msgstr "פאנארט מרובה"
 
 msgctxt "#31059"
-msgid "Choose this option in order to allow more fanart per button."
+msgid "Choose this option in order to allow more fanart per button.[CR]When enable, go set a fanart to a button and choose Multi."
 msgstr "בחר באפשרות זו בכדי לאפשר בחירה של נתיב עבור תמונות רקע מרובות."
 
 msgctxt "#31060"
@@ -966,16 +966,16 @@ msgid "Random colors"
 msgstr "צבעים אקראיים"
 
 msgctxt "#31532"
-msgid ""
-msgstr ""
+msgid "Use this option in order to enable touch buttons for usage with touch devices or mouse.[CR]Note: You may experience bugs when configuarting buttons while this option is enabled and your device is not touch supported."
+msgstr "בחר באפשרות זו בכדי להפעיל כפתורי מגע לשימוש ע"י מכשירי טאצ או עכבר.[CR]שים לב! יתכנו באגים בהגדרות כפתורים כאשר אפשרות זו פועלת ומכשירך אינו טאצ."
 
 msgctxt "#31533"
-msgid ""
-msgstr ""
+msgid "Choose the touch buttons size."
+msgstr "בחר את גודל כפתורי המגע."
 
 msgctxt "#31534"
-msgid ""
-msgstr ""
+msgid "Choose the touch buttons orientation: Vertical / Horizontal."
+msgstr "בחר את פריסת כפתורי המגע: מאונך / מאוזן."
 
 msgctxt "#31535"
 msgid ""

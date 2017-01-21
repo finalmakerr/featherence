@@ -175,7 +175,7 @@
 	  <onup condition="Control.IsVisible(700)">700</onup>
 	  <onup condition="Control.IsVisible(9009)">9009</onup>
 	  <onup>520</onup>
-	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + String.IsEqual(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + [String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect)) | !Skin.String(PassProtect)]">ActivateWindow(1138)</ondown>
+	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + String.IsEqual(Container(9000).ListItemNoWrap(0).Property(sub),$LOCALIZE[20122]) + Skin.HasSetting(SubMenuAction) + [String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect)) | !Skin.String(PassProtect)]">ActivateWindow(1138)</ondown>
 	  <ondown>noop</ondown>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
 	  <orientation>horizontal</orientation>
@@ -212,7 +212,7 @@
 	  <onup condition="Control.IsVisible(700)">700</onup>
 	  <onup condition="Control.IsVisible(9009)">9009</onup>
 	  <onup>520</onup>
-	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + String.IsEqual(Container(9000).ListItemNoWrap(0).Property(sub),true) + Skin.HasSetting(SubMenuAction) + [String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect)) | !Skin.String(PassProtect)]">ActivateWindow(1138)</ondown>
+	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + String.IsEqual(Container(9000).ListItem(0).Property(sub),$LOCALIZE[20122]) + Skin.HasSetting(SubMenuAction) + [String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect)) | !Skin.String(PassProtect)]">ActivateWindow(1138)</ondown>
 	  <ondown>noop</ondown>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
 	  <orientation>horizontal</orientation>
@@ -546,7 +546,7 @@
 		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 		  <visible>[Skin.HasSetting(SelectionMarker) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
 		  <visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
-		  <visible>!String.IsEqual(Window(home).Property(Button.ID_),17) + !String.IsEqual(Window(home).Property(Button.ID_),18) + !String.IsEqual(Window(home).Property(Button.ID_),19) + !String.IsEqual(Window(home).Property(Button.ID_),20) + !String.IsEqual(Window(home).Property(Button.ID_),21) | !Skin.HasSetting(SPMiniButtons) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)</visible>
+		  <visible>$EXP[!Button.ID_17-21] | !Skin.HasSetting(SPMiniButtons)</visible>
         </control>
 		<control type="image" description="צללית">
 		  <posx>20</posx>
@@ -906,7 +906,7 @@
 		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 		  <visible>[Skin.HasSetting(SelectionMarker) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
 		  <visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
-		  <visible>!String.IsEqual(Window(home).Property(Button.ID_),17) + !String.IsEqual(Window(home).Property(Button.ID_),18) + !String.IsEqual(Window(home).Property(Button.ID_),19) + !String.IsEqual(Window(home).Property(Button.ID_),20) + !String.IsEqual(Window(home).Property(Button.ID_),21) | !Skin.HasSetting(SPMiniButtons) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)</visible>
+		  <visible>$EXP[!Button.ID_17-21] | !Skin.HasSetting(SPMiniButtons)</visible>
         </control>
 		<control type="image" description="צללית">
 		  <posx>20</posx>
@@ -1275,7 +1275,7 @@
 		  <texture border="20" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 		  <visible>[Skin.HasSetting(SelectionMarker) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
 		  <visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
-		  <visible>!String.IsEqual(Window(home).Property(Button.ID_),17) + !String.IsEqual(Window(home).Property(Button.ID_),18) + !String.IsEqual(Window(home).Property(Button.ID_),19) + !String.IsEqual(Window(home).Property(Button.ID_),20) + !String.IsEqual(Window(home).Property(Button.ID_),21) | !Skin.HasSetting(SPMiniButtons) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)</visible>
+		  <visible>$EXP[!Button.ID_17-21] | !Skin.HasSetting(SPMiniButtons)</visible>
         </control>
 		<control type="image" description="צללית">
 		  <posx>0</posx>
@@ -1640,7 +1640,7 @@
 		  <height>214</height>
 		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 		  <visible>[Skin.HasSetting(SelectionMarker) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]]</visible>
-		  <visible>!String.IsEqual(Window(home).Property(Button.ID_),17) + !String.IsEqual(Window(home).Property(Button.ID_),18) + !String.IsEqual(Window(home).Property(Button.ID_),19) + !String.IsEqual(Window(home).Property(Button.ID_),20) + !String.IsEqual(Window(home).Property(Button.ID_),21) | !Skin.HasSetting(SPMiniButtons) | Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)</visible>
+		  <visible>$EXP[!Button.ID_17-21] | !Skin.HasSetting(SPMiniButtons)</visible>
 		  <visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
         </control>
 		<control type="image" description="צללית">

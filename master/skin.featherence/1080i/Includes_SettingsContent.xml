@@ -265,7 +265,6 @@
 	  </item>
 	  
 	  <item id="200" description="סמן בחירה כפתור נבחר">
-		<visible></visible> <!--Skin.HasSetting(SelectionMarker)-->
 		<label>$LOCALIZE[31414] $LOCALIZE[31415]</label>
 		<label2>$VAR[200label2]</label2>
 		<thumb>misc/frames/selector.png</thumb>
@@ -448,7 +447,6 @@
 	  </item>
 	  
 	  <item id="190" description="מיקום כותרת כפתור">
-		<visible></visible> <!--Skin.HasSetting(SelectionMarker)-->
 		<label>$LOCALIZE[31109]</label>
 		<label2>$VAR[190label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/align.png</thumb>
@@ -649,7 +647,7 @@
 		<label>$LOCALIZE[31058]</label>
 		<label2>$VAR[237label2]</label2>
 		<thumb></thumb>
-		<property name="rinfo">$LOCALIZE[31059] $VAR[229label2]</property>
+		<property name="rinfo">$LOCALIZE[31059]</property>
 		<onclick>Skin.ToggleSetting(MultiFanart)</onclick>
 		<visible>Container(100).Hasfocus(28)</visible>
 	  </item>
@@ -886,10 +884,6 @@
 		<property name="rinfo">$LOCALIZE[31095] $LOCALIZE[10100], $LOCALIZE[10101], $LOCALIZE[12000], $LOCALIZE[12002]..</property>
 		<onclick condition="!Skin.String(DialogPosition)">Skin.SetString(DialogPosition,1)</onclick>
 		<onclick condition="Skin.String(DialogPosition,1)">Skin.SetString(DialogPosition,)</onclick>
-		<!--<onclick condition="Skin.String(DialogPosition,2)">Skin.SetString(DialogPosition,3)</onclick>
-		<onclick condition="Skin.String(DialogPosition,3)">Skin.SetString(DialogPosition,4)</onclick>
-		<onclick condition="Skin.String(DialogPosition,4)">Skin.SetString(DialogPosition,5)</onclick>
-		<onclick condition="Skin.String(DialogPosition,5)">Skin.SetString(DialogPosition,)</onclick>-->
 		<onclick condition="!Window.IsVisible(DialogNotification.xml)">RunScript(script.featherence.service,,?mode=32&amp;value=2)</onclick>
 		<visible>Container(100).Hasfocus(22)</visible>
 	  </item>
@@ -903,8 +897,8 @@
 		<visible>false</visible>
 	  </item>
 	  
-	  <!--320-330-->
 	  
+	  <!--320-330-->
 	  <item id="321" description="שקיפות פס עליון">
 		<label>$LOCALIZE[31849] $LOCALIZE[31842]</label>
 		<label2>$INFO[Skin.String(TopInformationOverlay)]</label2>
@@ -1270,7 +1264,7 @@
 	  <item id="392" description="איפוס הגדרות מעטפת">
 		<label>$LOCALIZE[31803]</label>
 		<label2></label2>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/so.png</thumb> <!--misc/help/ResetSetting20Button.png-->
+		<thumb>special://home/addons/script.featherence.service/resources/icons/so.png</thumb>
 		<property name="rinfo">$LOCALIZE[31804]</property>
 		<onclick>RunScript(script.featherence.service,,?mode=40&amp;value=1)</onclick>
 		<visible>Container(100).Hasfocus(25)</visible>
@@ -1279,7 +1273,7 @@
 	  <item id="390" description="איפוס הגדרות">
 		<label>$LOCALIZE[10035] $LOCALIZE[10507]</label>
 		<label2></label2>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/magicwand.png</thumb> <!--misc/help/ResetSetting20Button.png-->
+		<thumb>special://home/addons/script.featherence.service/resources/icons/magicwand.png</thumb>
 		<property name="rinfo">$LOCALIZE[31846]</property>
 		<onclick>RunScript(script.featherence.service,,?mode=201)</onclick>
 		<visible>Container(100).Hasfocus(25)</visible>
@@ -1344,7 +1338,7 @@
 		<label>$LOCALIZE[31084]</label>
 		<label2>$VAR[410label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/mobile.png</thumb>
-		<property name="rinfo"></property>
+		<property name="rinfo">$LOCALIZE[31532]</property>
 		<onclick>Skin.ToggleSetting(Touch_Support)</onclick>
 		<visible>Container(100).Hasfocus(29)</visible>
 	  </item>
@@ -1362,7 +1356,7 @@
 		<label>$LOCALIZE[31462]</label>
 		<label2>$VAR[412label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/cubes.png</thumb>
-		<property name="rinfo"></property>
+		<property name="rinfo">$LOCALIZE[31533]</property>
 		<onclick condition="!Skin.String(ButtonsSizeTouch)">Skin.SetString(ButtonsSizeTouch,0)</onclick>
 		<onclick condition="Skin.String(ButtonsSizeTouch,0)">Skin.SetString(ButtonsSizeTouch,1)</onclick>
 		<onclick condition="Skin.String(ButtonsSizeTouch,1)">Skin.SetString(ButtonsSizeTouch,2)</onclick>
@@ -1386,10 +1380,11 @@
 		<label>$LOCALIZE[31461]</label>
 		<label2>$VAR[418label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/mobile.png</thumb>
-		<property name="rinfo"></property>
+		<property name="rinfo">$LOCALIZE[31534]</property>
 		<onclick>Skin.ToggleSetting(Touch_Orientation)</onclick>
 		<visible>Container(100).Hasfocus(29)</visible>
 	  </item>
+	  
 	  
 	  <!--440-449 הגנת סיסמא-->
 	  <item id="440" description="Use password protection">
@@ -1447,6 +1442,7 @@
 		<onclick>RunScript(script.featherence.service,,?mode=33)</onclick>
 		<visible>Container(100).Hasfocus(31)</visible>
 	  </item>
+	  
 	  
 	  <!--450-479 ו'ידגט-->
 	  <item id="451" description="פריסת כפתורים">
@@ -1565,6 +1561,7 @@
 		<visible>Container(100).Hasfocus(30)</visible>
 	  </item>
 	  
+	  
 	  <!--480-499 מעברים-->
 	  <item id="481" description="משך עמעום בזמן מעבר בין חלונות">
 		<label>$LOCALIZE[31465]</label>
@@ -1655,8 +1652,6 @@
 		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(32)</visible>
 	  </item>
-	  
-	  <!--500-509 RSS-->
 	  
   </include> 
   
