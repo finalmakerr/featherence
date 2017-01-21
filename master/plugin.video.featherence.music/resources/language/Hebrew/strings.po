@@ -71,8 +71,8 @@ msgid "Classical Music"
 msgstr "מוזיקה קלאסית"
 
 msgctxt "#30019"
-msgid "$LOCALIZE[19021]"
-msgstr "$LOCALIZE[19021]"
+msgid "Radio"
+msgstr "רדיו"
 
 msgctxt "#30020"
 msgid "Liveshow"
@@ -81,6 +81,10 @@ msgstr "הופעה"
 msgctxt "#30021"
 msgid "Singer"
 msgstr "זמר"
+
+msgctxt "#30022"
+msgid "Fashion Shows"
+msgstr "תצוגות אופנה"
 
 msgctxt "#30050"
 msgid "Amir Elgazar's Playlists"
@@ -2674,3 +2678,11 @@ msgstr ""
 msgctxt "#30599"
 msgid ""
 msgstr ""
+
+msgctxt "#30900"
+msgid "Victoria Secret"
+msgstr "Victoria Secret"
+
+msgctxt "#30902"
+msgid "Gucci"
+msgstr "Gucci"

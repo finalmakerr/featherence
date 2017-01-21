@@ -101,7 +101,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	
 	'''AvtoCrashCar'''
 	list = []
-	list.append('&youtube_ch=AvtoCrashCar')
+	list.append('&youtube_ch=UCeFC1sbi2HcicqpCvCgjLFA')
 	addDir(addonString(30410).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=AvtoCrashCar',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
 	'''The Best Fails'''
@@ -758,16 +758,16 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	
 	
 	'''Bill Burr '''
-	fanart = '' #גדול
-	thumb = '' #בינוני
+	fanart = 'http://nowstreamingpod.com/wp-content/uploads/2014/12/Bill-Burr-Im-Sorry-You-Feel-That-Way.png' #גדול
+	thumb = 'https://i.ytimg.com/vi/VbGnaCNEgg0/hqdefault.jpg' #בינוני
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30804).encode('utf-8'),list,17,thumb,addonString(30805).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''Brian Regan'''
-	fanart = '' #גדול
-	thumb = '' #בינוני
+	fanart = 'http://i.huffpost.com/gen/957640/images/o-BRIAN-REGAN-facebook.jpg' #גדול
+	thumb = 'http://funny-business.com/wp-content/uploads/2016/07/Brian-Reagn-3.jpg' #בינוני
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)

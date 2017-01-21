@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.featherence.rofl" name="Featherence ROFL" version="0.0.7" provider-name="finalmakerr , Lidor Malich">
+<addon id="plugin.video.featherence.rofl" name="Featherence ROFL" version="0.0.8" provider-name="finalmakerr , Lidor Malich">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.featherence.service" version="0.0.0"/>
+    <import addon="xbmc.python" version="2.24.0" />
+	<import addon="script.featherence.service" version="0.3.46"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -37,8 +37,8 @@
 	</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<forum></forum>
-	<email>featherence@groups.facebook.com</email>
+	<email>finalmakerr@gmail.com</email>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.rofl</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+	<website>www.featherence.com</website>
   </extension>
 </addon>

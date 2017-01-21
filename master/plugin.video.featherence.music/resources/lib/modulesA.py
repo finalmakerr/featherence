@@ -205,6 +205,17 @@ def CATEGORIES11105A(name, iconimage, desc, fanart):
 		
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
+def CATEGORIES11109A(name, iconimage, desc, fanart):
+	''''''
+	background = 119
+	
+	list = []
+
+	list.append('&youtube_pl=')
+	list.append('&youtube_pl=')
+	list.append('&youtube_pl=')
+		
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 	
 def CATEGORIES118A(name, iconimage, desc, fanart):
 	'''מוזיקה קלאסית'''
@@ -214,6 +225,17 @@ def CATEGORIES118A(name, iconimage, desc, fanart):
 
 	list.append('&youtube_pl=PLcGkkXtask_fpbK9YXSzlJC4f0nGms1mI')
 	list.append('&youtube_pl=')
+	list.append('&youtube_pl=')
+		
+	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
+	
+
+def CATEGORIES114A(name, iconimage, desc, fanart):
+	'''תצוגות אופנה'''
+	background = 114
+	
+	list = []
+
 	list.append('&youtube_pl=')
 		
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))

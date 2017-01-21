@@ -164,34 +164,40 @@
 	    <label>--></label>
 	</item>
 	<item id="1" description="יציאה">
-	    <visible>!System.Platform.Linux | System.Platform.Android</visible>
-	    <onclick>Quit</onclick>
 	    <label>13009</label>
+	    <onclick>Quit</onclick>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/exit.png</thumb>
+		<visible>!System.Platform.Linux | System.Platform.Android</visible>
 	</item>
 	<item id="3" description="השהייה">
 	    <description>Enable ACPI S1/S3 Suspend in your BIOS</description>
 		<onclick>Suspend</onclick>
 	    <label>13011</label>
-	    <visible>System.CanSuspend</visible>
+	    <thumb>special://home/addons/script.featherence.service/resources/icons/bolt.png</thumb>
+		<visible>System.CanSuspend</visible>
 	</item>
 	<item id="4" description="מצב שינה">
-	    <visible>System.CanHibernate</visible>
 	    <onclick>Hibernate</onclick>
 	    <label>13010</label>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/sleep.png</thumb>
+		<visible>System.CanHibernate</visible>
 	</item>
 	<item id="6" description="LogOff">
-	  <visible>System.HasLoginScreen</visible>
-	  <onclick>System.LogOff</onclick>
 	  <label>20126</label>
+	  <onclick>System.LogOff</onclick>
+	  <thumb>special://home/addons/script.featherence.service/resources/icons/ud.png</thumb>
+	  <visible>System.HasLoginScreen</visible>
 	</item>
 	<item id="8" description="הפעלה מחדש">
-	    <visible>System.CanReboot</visible>
 	    <onclick>Reboot</onclick>
 	    <label>13013</label>
+		
+		<visible>System.CanReboot</visible>
 	</item>
 	<item id="9" description="כיבוי">
 	    <label>13005</label>
 	    <onclick>Powerdown</onclick>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/power.png</thumb>
 		<visible>System.CanPowerDown</visible>
 	</item>
   </include>

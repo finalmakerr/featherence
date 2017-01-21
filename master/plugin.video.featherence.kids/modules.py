@@ -24,17 +24,17 @@ def CATEGORIES():
 	except: General_Language = systemlanguage
 	
 	CATEGORIES_SEARCH(mode=30, url="")
-	addDir('-' + addonString(100).encode('utf-8'),'',100,featherenceserviceicons_path + 'star.png',addonString_servicefeatherence(32800).encode('utf-8'),'1',0,getAddonFanart(100, urlcheck_=True)) #My Kids
+	addDir('-' + addonString(100).encode('utf-8'),'',100,featherenceserviceicons_path + 'star.png',addonString_servicefeatherence(32800).encode('utf-8'),'1',0,getAddonFanart(100, urlcheck_=False)) #My Kids
 	
-	addDir(addonString(101).encode('utf-8'),'',101,featherenceserviceicons_path + 'music.png',addonString(1010).encode('utf-8'),'1',58, getAddonFanart(101, default="http://p1.pichost.me/i/28/1509965.jpg", urlcheck_=True)) #SONGS AND STORIES
-	addDir(addonString(102).encode('utf-8'),'',102,featherenceserviceicons_path + 'bank.png',addonString(1020).encode('utf-8'),'1',58, getAddonFanart(102, default="http://2.bp.blogspot.com/-Dz3-VwZZryE/Uh5ZXg7zCMI/AAAAAAAAdCQ/OmLVkdWI47c/s1600/Disney+Junior+Live+Pirate+and+Princess+Adventure+-+Jake%252C+Izzy+%2526+Cubby.jpg", urlcheck_=True)) #SHOWS
-	addDir(addonString(104).encode('utf-8'),'',104,featherenceserviceicons_path + 'tvshows.png',addonString(1040).encode('utf-8'),'1',2, getAddonFanart(104, default="http://www.canadiananimationresources.ca/wp-content/uploads/2012/10/9-Story-Arthur-Couch.jpg", urlcheck_=True)) #TV SHOWS
-	addDir(addonString(105).encode('utf-8'),'',105,featherenceserviceicons_path + 'movies.png',addonString(1050).encode('utf-8'),'1',1, getAddonFanart(105, default="http://4.bp.blogspot.com/-Af2HcIQzlg8/UhwQ8lKPucI/AAAAAAAACIA/d7aY4RrxUfk/s1600/bambi-friends-disney-animated-movie-photo.jpg", urlcheck_=True)) #MOVIES
-	addDir(addonString(106).encode('utf-8'),'',106,featherenceserviceicons_path + 'toddlers.png',addonString(1060).encode('utf-8'),'1',58, getAddonFanart(106, default="http://1.bp.blogspot.com/-MnUXpmW1n1M/UKfOgAXUmXI/AAAAAAAAbBY/BfoQ1FNgNUk/s1600/duvcar1024x768_en_27.jpg", urlcheck_=True)) #Toddlers
-	addDir(addonString(107).encode('utf-8'),'',107,featherenceserviceicons_path + 'kids.png',addonString(1070).encode('utf-8'),'1',58, getAddonFanart(107, default="http://i.imgur.com/cL52CfE.jpg", urlcheck_=True)) #Tiny
-	addDir(addonString(108).encode('utf-8'),'',108,featherenceserviceicons_path + 'kids2.png',addonString(1080).encode('utf-8'),'1',0,getAddonFanart(108, default="http://30k0u22sosp4xzag03cfogt1.wpengine.netdna-cdn.com/wp-content/uploads/2015/03/strika-3.jpg", urlcheck_=True)) #Kids and Young
-	addDir(addonString(109).encode('utf-8'),'',109,featherenceserviceicons_path + 'ud.png',addonString(1090).encode('utf-8'),'1',0,getAddonFanart(109, default="", urlcheck_=True)) #Learn Language
-	addDir(addonString(200).encode('utf-8') % (General_Language),'',200,featherenceserviceicons_path + 'ud.png','[COLOR=red]1: %s | 2: %s | 3: %s[/COLOR]' % (General_Language, General_Language2, General_Language3) + '[CR]' + addonString_servicefeatherence(32081).encode('utf-8'),'1',0,getAddonFanart(200, urlcheck_=True)) #Forigen Language
+	addDir(addonString(101).encode('utf-8'),'',101,featherenceserviceicons_path + 'music.png',addonString(1010).encode('utf-8'),'1',58, getAddonFanart(101, default="http://p1.pichost.me/i/28/1509965.jpg", urlcheck_=False)) #SONGS AND STORIES
+	addDir(addonString(102).encode('utf-8'),'',102,featherenceserviceicons_path + 'bank.png',addonString(1020).encode('utf-8'),'1',58, getAddonFanart(102, default="http://2.bp.blogspot.com/-Dz3-VwZZryE/Uh5ZXg7zCMI/AAAAAAAAdCQ/OmLVkdWI47c/s1600/Disney+Junior+Live+Pirate+and+Princess+Adventure+-+Jake%252C+Izzy+%2526+Cubby.jpg", urlcheck_=False)) #SHOWS
+	addDir(addonString(104).encode('utf-8'),'',104,featherenceserviceicons_path + 'tvshows.png',addonString(1040).encode('utf-8'),'1',2, getAddonFanart(104, default="http://www.canadiananimationresources.ca/wp-content/uploads/2012/10/9-Story-Arthur-Couch.jpg", urlcheck_=False)) #TV SHOWS
+	addDir(addonString(105).encode('utf-8'),'',105,featherenceserviceicons_path + 'movies.png',addonString(1050).encode('utf-8'),'1',1, getAddonFanart(105, default="http://4.bp.blogspot.com/-Af2HcIQzlg8/UhwQ8lKPucI/AAAAAAAACIA/d7aY4RrxUfk/s1600/bambi-friends-disney-animated-movie-photo.jpg", urlcheck_=False)) #MOVIES
+	addDir(addonString(106).encode('utf-8'),'',106,featherenceserviceicons_path + 'toddlers.png',addonString(1060).encode('utf-8'),'1',58, getAddonFanart(106, default="http://1.bp.blogspot.com/-MnUXpmW1n1M/UKfOgAXUmXI/AAAAAAAAbBY/BfoQ1FNgNUk/s1600/duvcar1024x768_en_27.jpg", urlcheck_=False)) #Toddlers
+	addDir(addonString(107).encode('utf-8'),'',107,featherenceserviceicons_path + 'kids.png',addonString(1070).encode('utf-8'),'1',58, getAddonFanart(107, default="http://i.imgur.com/cL52CfE.jpg", urlcheck_=False)) #Tiny
+	addDir(addonString(108).encode('utf-8'),'',108,featherenceserviceicons_path + 'kids2.png',addonString(1080).encode('utf-8'),'1',0,getAddonFanart(108, default="http://30k0u22sosp4xzag03cfogt1.wpengine.netdna-cdn.com/wp-content/uploads/2015/03/strika-3.jpg", urlcheck_=False)) #Kids and Young
+	addDir(addonString(109).encode('utf-8'),'',109,featherenceserviceicons_path + 'ud.png',addonString(1090).encode('utf-8'),'1',0,getAddonFanart(109, default="", urlcheck_=False)) #Learn Language
+	addDir(addonString(200).encode('utf-8') % (General_Language),'',200,featherenceserviceicons_path + 'ud.png','[COLOR=red]1: %s | 2: %s | 3: %s[/COLOR]' % (General_Language, General_Language2, General_Language3) + '[CR]' + addonString_servicefeatherence(32081).encode('utf-8'),'1',0,getAddonFanart(200, urlcheck_=False)) #Forigen Language
 	
 	#addDir('קלסיקלטת','plugin://plugin.video.wallaNew.video/?mode=1&module=338&name=קלסיקלטת&url=http://vod.walla.co.il/channel/338/clasicaletet',8,'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYE2VT8CR2O31MsqAhdaydYrqrCD--HCCdGcs7blBn3Zh92Kwq','','1',0,getAddonFanart(0))
 	#addDir('ניק','plugin://plugin.video.wallaNew.video/?mode=1&module=nick&name=ניק&url=http://nick.walla.co.il/',8,'http://www.karmieli.co.il/sites/default/files/images/nico.jpg','','1',0,getAddonFanart(0))
@@ -47,28 +47,28 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 	fanart = 100
 	
 	'''כפתור הילדים שלי חדש..'''
-	addDir(addonString_servicefeatherence(32450).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',50, getAddonFanart(fanart, urlcheck_=True))
+	addDir(addonString_servicefeatherence(32450).encode('utf-8') % (addonString(100).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',50, getAddonFanart(fanart, urlcheck_=False))
 		
 	'''רשימת השמעה 1'''
-	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',0,getAddonFanart("Custom_Playlist1", urlcheck_=True))
+	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',0,getAddonFanart("Custom_Playlist1", urlcheck_=False))
 	'''רשימת השמעה 2'''
-	if Custom_Playlist2_ID != "": addDir(Custom_Playlist2_Name,Custom_Playlist2_ID,18,Custom_Playlist2_Thumb,Custom_Playlist2_Description,'2',50, getAddonFanart("Custom_Playlist2", urlcheck_=True))
+	if Custom_Playlist2_ID != "": addDir(Custom_Playlist2_Name,Custom_Playlist2_ID,18,Custom_Playlist2_Thumb,Custom_Playlist2_Description,'2',50, getAddonFanart("Custom_Playlist2", urlcheck_=False))
 	'''רשימת השמעה 3'''
-	if Custom_Playlist3_ID != "": addDir(Custom_Playlist3_Name,Custom_Playlist3_ID,18,Custom_Playlist3_Thumb,Custom_Playlist3_Description,'3',50, getAddonFanart("Custom_Playlist3", urlcheck_=True))
+	if Custom_Playlist3_ID != "": addDir(Custom_Playlist3_Name,Custom_Playlist3_ID,18,Custom_Playlist3_Thumb,Custom_Playlist3_Description,'3',50, getAddonFanart("Custom_Playlist3", urlcheck_=False))
 	'''רשימת השמעה 4'''
-	if Custom_Playlist4_ID != "": addDir(Custom_Playlist4_Name,Custom_Playlist4_ID,18,Custom_Playlist4_Thumb,Custom_Playlist4_Description,'4',50, getAddonFanart("Custom_Playlist4", urlcheck_=True))
+	if Custom_Playlist4_ID != "": addDir(Custom_Playlist4_Name,Custom_Playlist4_ID,18,Custom_Playlist4_Thumb,Custom_Playlist4_Description,'4',50, getAddonFanart("Custom_Playlist4", urlcheck_=False))
 	'''רשימת השמעה 5'''
-	if Custom_Playlist5_ID != "": addDir(Custom_Playlist5_Name,Custom_Playlist5_ID,18,Custom_Playlist5_Thumb,Custom_Playlist5_Description,'5',50, getAddonFanart("Custom_Playlist5", urlcheck_=True))
+	if Custom_Playlist5_ID != "": addDir(Custom_Playlist5_Name,Custom_Playlist5_ID,18,Custom_Playlist5_Thumb,Custom_Playlist5_Description,'5',50, getAddonFanart("Custom_Playlist5", urlcheck_=False))
 	'''רשימת השמעה 6'''
-	if Custom_Playlist6_ID != "": addDir(Custom_Playlist6_Name,Custom_Playlist6_ID,18,Custom_Playlist6_Thumb,Custom_Playlist6_Description,'6',50, getAddonFanart("Custom_Playlist6", urlcheck_=True))
+	if Custom_Playlist6_ID != "": addDir(Custom_Playlist6_Name,Custom_Playlist6_ID,18,Custom_Playlist6_Thumb,Custom_Playlist6_Description,'6',50, getAddonFanart("Custom_Playlist6", urlcheck_=False))
 	'''רשימת השמעה 7'''
-	if Custom_Playlist7_ID != "": addDir(Custom_Playlist7_Name,Custom_Playlist7_ID,18,Custom_Playlist7_Thumb,Custom_Playlist7_Description,'7',50, getAddonFanart("Custom_Playlist7", urlcheck_=True))
+	if Custom_Playlist7_ID != "": addDir(Custom_Playlist7_Name,Custom_Playlist7_ID,18,Custom_Playlist7_Thumb,Custom_Playlist7_Description,'7',50, getAddonFanart("Custom_Playlist7", urlcheck_=False))
 	'''רשימת השמעה 8'''
-	if Custom_Playlist8_ID != "": addDir(Custom_Playlist8_Name,Custom_Playlist8_ID,18,Custom_Playlist8_Thumb,Custom_Playlist8_Description,'8',50, getAddonFanart("Custom_Playlist8", urlcheck_=True))
+	if Custom_Playlist8_ID != "": addDir(Custom_Playlist8_Name,Custom_Playlist8_ID,18,Custom_Playlist8_Thumb,Custom_Playlist8_Description,'8',50, getAddonFanart("Custom_Playlist8", urlcheck_=False))
 	'''רשימת השמעה 9'''
-	if Custom_Playlist9_ID != "": addDir(Custom_Playlist9_Name,Custom_Playlist9_ID,18,Custom_Playlist9_Thumb,Custom_Playlist9_Description,'9',50, getAddonFanart("Custom_Playlist9", urlcheck_=True))
+	if Custom_Playlist9_ID != "": addDir(Custom_Playlist9_Name,Custom_Playlist9_ID,18,Custom_Playlist9_Thumb,Custom_Playlist9_Description,'9',50, getAddonFanart("Custom_Playlist9", urlcheck_=False))
 	'''רשימת השמעה 10'''
-	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',50, getAddonFanart("Custom_Playlist10", urlcheck_=True))
+	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',50, getAddonFanart("Custom_Playlist10", urlcheck_=False))
 	
 	'''test'''
 	exe = printlog(title="test", printpoint="", text="", level=0, option="")
@@ -1823,7 +1823,7 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 	CATEGORIES105B(General_LanguageL, background, background2) #סרטים לילדים ב-
 	CATEGORIES105C(General_LanguageL, background, background2) #סרטים עם תרגום ב-
 	
-	addDir(localize(33078),'',115,featherenceserviceicons_path + 'movies.png',addonString(1050).encode('utf-8'),'1',0, getAddonFanart(105, default="http://4.bp.blogspot.com/-Af2HcIQzlg8/UhwQ8lKPucI/AAAAAAAACIA/d7aY4RrxUfk/s1600/bambi-friends-disney-animated-movie-photo.jpg", urlcheck_=True)) #MOVIES
+	addDir(localize(33078),'',115,featherenceserviceicons_path + 'movies.png',addonString(1050).encode('utf-8'),'1',0, getAddonFanart(105, default="http://4.bp.blogspot.com/-Af2HcIQzlg8/UhwQ8lKPucI/AAAAAAAACIA/d7aY4RrxUfk/s1600/bambi-friends-disney-animated-movie-photo.jpg", urlcheck_=False)) #MOVIES
 
 def CATEGORIES115(name, iconimage, desc, fanart):
 	background = 105
@@ -4480,7 +4480,7 @@ def	CATEGORIES999():
 		#url2 = 'http://www.supercartoons.net/video/1208/jeepers-its-the-creeper.mp4'
 		image2 = 'http://dragonballz.co.il/wp-content/uploads/2015/03/1058-214x300.jpg'
 		title2 = 'דרגון בול זי פרק 1 – מדובב לעברית'
-		addDir('googledrive',url2,4,image2,'testing','1',0,getAddonFanart(200, urlcheck_=True)) #Test
+		addDir('googledrive',url2,4,image2,'testing','1',0,getAddonFanart(200, urlcheck_=False)) #Test
 		
 		url = os.path.join(templates2_path, '104', 'Dragon Ball Z.txt')
 		addDir('googledrive mode=11 custom_se2',url,11,image2,'testing','1',50, image2) #Test
@@ -4497,7 +4497,7 @@ def	CATEGORIES999():
 		addDir('dragonball',url3,40,'http://www.sdarot.pm/media/series/1532.jpg',addonString(104200).encode('utf-8'),'1',50,"")
 		
 		
-		addDir('cartoons','http://www.supercartoons.net/cartoons/',40,image2,'testing','1',0,getAddonFanart(200, urlcheck_=True))
+		addDir('cartoons','http://www.supercartoons.net/cartoons/',40,image2,'testing','1',0,getAddonFanart(200, urlcheck_=False))
 		
 		
 		'''הובוס ספר הקסמים הגדול'''

@@ -82,6 +82,10 @@ msgctxt "#30021"
 msgid "Singer"
 msgstr "זמר"
 
+msgctxt "#30022"
+msgid "Fashion Shows"
+msgstr "תצוגות אופנה"
+
 msgctxt "#30050"
 msgid "Amir Elgazar's Playlists"
 msgstr "אמיר אלגזר פלייליסטים"
@@ -2674,3 +2678,7 @@ msgstr ""
 msgctxt "#30599"
 msgid ""
 msgstr ""
+
+msgctxt "#30900"
+msgid "Victoria Secret"
+msgstr "Victoria Secret"

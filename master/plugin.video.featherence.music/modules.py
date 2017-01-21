@@ -15,9 +15,9 @@ def CATEGORIES():
 	CATEGORIES_SEARCH(mode=30, url="") #חיפוש
 	addDir(addonString(30000).encode('utf-8'),'MyMusic',100,featherenceserviceicons_path + 'star.png',addonString_servicefeatherence(32800).encode('utf-8'),'1',0,getAddonFanart(100)) #My Music
 	addDir(addonString(30001).encode('utf-8'),'',101,featherenceserviceicons_path + 'sod.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30001).encode('utf-8')),'1',0,getAddonFanart(101)) #Israeli Music
-	addDir(addonString(30011).encode('utf-8'),'',111,featherenceserviceicons_path + 'us.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30011).encode('utf-8')),'1',0,getAddonFanart(101)) #Foreign Music
+	addDir(addonString(30011).encode('utf-8'),'',111,featherenceserviceicons_path + 'us.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30011).encode('utf-8')),'1',0,getAddonFanart(111)) #Foreign Music
 	'''---------------------------'''
-	
+	addDir(addonString(30022).encode('utf-8'),'',114,featherenceserviceicons_path + 'director.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30022).encode('utf-8')),'1',0,getAddonFanart(114)) #Fashion Shows
 	'''---------------------------'''
 	addDir(addonString(30018).encode('utf-8'),'',118,featherenceserviceicons_path + 'classical.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30018).encode('utf-8')),'1',0,getAddonFanart(118)) #Classical Music
 	addDir(addonString(30019).encode('utf-8'),'',119,featherenceserviceicons_path + 'radio.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30019).encode('utf-8')),'1',0,getAddonFanart(119)) #Radio
@@ -238,6 +238,7 @@ def CATEGORIES111(name, iconimage, desc, fanart):
 	addDir(addonString(30012).encode('utf-8'),'',11102,featherenceserviceicons_path + "karaoke.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30012).encode('utf-8')),'1',0, getAddonFanart(11102, default="http://www.totalsingersupport.com/wp-content/uploads/2012/11/Sexy_Singing_Amit_Friedman.jpg")) #Foreign Karaoke
 	addDir(addonString(30014).encode('utf-8'),'',11104,featherenceserviceicons_path + "guitar.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30014).encode('utf-8')),'1',0, getAddonFanart(11104, default="https://cbsampradio.files.wordpress.com/2012/12/neyogrammynoms1.jpg")) #Foreign Liveshows
 	addDir(addonString(30015).encode('utf-8'),'',11105,featherenceserviceicons_path + "microphone.png",addonString(30015).encode('utf-8'),'1',0, getAddonFanart(11105, default="https://tiestoclublife.files.wordpress.com/2014/05/dj_tiesto_club_life_2014_img372.jpg")) #Foreign Djs
+	addDir(addonString(30022).encode('utf-8'),'',11109,featherenceserviceicons_path + "colorpalette.png",addonString(30022).encode('utf-8'),'1',0, getAddonFanart(11109, default="https://s-media-cache-ak0.pinimg.com/originals/3f/be/f1/3fbef1cae14dea30c181f1f008839a1d.jpg")) #Fashion Shows
 
 def CATEGORIES10101(name, iconimage, desc, fanart):
 	'''------------------------------
@@ -1857,6 +1858,52 @@ def CATEGORIES11105(name, iconimage, desc, fanart):
 	addDir(addonString(30500).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/DJ_Tiesto2005.jpg/800px-DJ_Tiesto2005.jpg",addonString(30501).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="http://www.shauntmax30.com/data/out/42/1308824-ruisufang-music-tiesto.jpg"))
 	
 	CATEGORIES11105A(name, iconimage, desc, fanart) #דף הבא
+
+def CATEGORIES114(name, iconimage, desc, fanart):
+	'''תצוגות אופנה'''
+	background = 114
+	commonsearch = 'commonsearch114'
+	
+	CATEGORIES_RANDOM(background,fanart)
+	CATEGORIES114Z(name, iconimage, desc, background, fanart) #ערוצי טלוויזיה
+	
+	'''Victoria Secret'''
+	list = []
+	list.append('&youtube_id=yv1CwJjSr7U') #2003
+	list.append('&youtube_id=hQP71fV1N6Q') #2005-7-8
+	list.append('&youtube_id=B17x7_9lAHw') #2006
+	list.append('&youtube_id=7BJIsuX2HzU') #2007
+	list.append('&youtube_id=_TmXwQxADgc') #2009
+	list.append('&youtube_id=COvFvxOnd_0') #2010
+	list.append('&youtube_id=N-Or4pxF64I') #2011
+	list.append('&youtube_id=bYNhMnmraUE') #2011-2013
+	list.append('&youtube_id=ljTQf5qcDh8') #2013
+	list.append('&youtube_id=fpMo-aLnEEc') #2013
+	list.append('&youtube_id=B8EMextFa5k') #2014
+	list.append('&youtube_id=BjIaEwlnQz4') #2014
+	list.append('&youtube_id=J3JN0LZB6hk') #2015
+	list.append('&youtube_id=dWut7QA7jX8') #2015-2016
+	list.append('&youtube_id=hmhZJg6KqSs') #2016
+	list.append('&youtube_id=86mF928ZgFs') #2016
+	list.append('&youtube_id=0rj0cFRvowU') #2016
+	list.append('&youtube_id=0GNVS68g52Q') #2016
+	list.append('&youtube_id=KffZEnYEK2s') #2016
+	list.append('&youtube_id=hkgSTk0_DjM') #2016
+	list.append('&youtube_id=TER4Mc1tVzQ') #2015
+	list.append('&youtube_id=Vq9jmchquwQ') #2016-17
+	addDir(addonString(30900).encode('utf-8'),list,17,"https://pbs.twimg.com/profile_images/542675764026429440/gPXHFroZ.png",addonString(30509).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://s-media-cache-ak0.pinimg.com/originals/3f/be/f1/3fbef1cae14dea30c181f1f008839a1d.jpg"))
+	
+	'''Gucci'''
+	list = []
+	list.append('&youtube_id=KpKUmZcUKRA') #2017
+	list.append('&youtube_id=Cioa-jes2Ls') #2016
+	list.append('&youtube_id=CZUJD5UdVzU') #
+	list.append('&youtube_id=YucJfazpfoU') #
+	list.append('&youtube_id=eZXHUBjcOVk') #
+	addDir(addonString(30902).encode('utf-8'),list,17,"https://pbs.twimg.com/profile_images/542675764026429440/gPXHFroZ.png",addonString(30509).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://s-media-cache-ak0.pinimg.com/originals/3f/be/f1/3fbef1cae14dea30c181f1f008839a1d.jpg"))
+	
+	CATEGORIES114A(name, iconimage, desc, fanart) #דף הבא
+
 	
 def CATEGORIES118(name, iconimage, desc, fanart):
 	'''------------------------------

@@ -8,6 +8,7 @@
   <include file="Includes_CenterMenuContent.xml" />
   <include file="Includes_DialogMenu.xml" />
   <include file="Includes_DialogMenuContent.xml" />
+  <include file="Includes_Expressions.xml" />
   <include file="Includes_Forms.xml" />  
   <include file="Includes_Home.xml" />
   <include file="Includes_HomeContent.xml" />

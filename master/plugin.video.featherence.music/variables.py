@@ -75,4 +75,5 @@ commonsearch112 = "Karaoke"
 commonsearch114 = "LiveShow"
 commonsearch115 = "Dj"
 commonsearch118 = "Classical"
+commonsearch119 = ""
 sefilter = ['עונת ההופעות']

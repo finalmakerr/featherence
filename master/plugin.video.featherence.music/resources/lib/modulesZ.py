@@ -123,8 +123,6 @@ def CATEGORIES11104Z(name, iconimage, desc, background, fanart):
 	list = []
 
 	list.append('&youtube_ch=')
-	list.append('&youtube_ch=')
-	list.append('&youtube_ch=')
 		
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
 
@@ -139,6 +137,18 @@ def CATEGORIES11105Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 		
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+
+def CATEGORIES11109Z(name, iconimage, desc, background, fanart):
+	''''''
+	background = 119
+	
+	list = []
+
+	list.append('&youtube_ch=') #
+	list.append('&youtube_ch=') #
+	list.append('&youtube_ch=')
+		
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
 	
 def CATEGORIES118Z(name, iconimage, desc, background, fanart):
 	'''מוזיקה קלאסית'''
@@ -150,4 +160,17 @@ def CATEGORIES118Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=TopClassicalMusic/playlists')
 	list.append('&youtube_ch=ClassicalMusicOn/playlists')
 		
+	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+
+def CATEGORIES114Z(name, iconimage, desc, background, fanart):
+	'''תצוגות אופנה'''
+	background = 114
+	
+	list = []
+
+	list.append('&youtube_ch=FashionChannel')
+	list.append('&youtube_ch=FatalefashionIII')
+	list.append('&youtube_ch=MultiSabrown')
+	list.append('&youtube_ch=StylebyAnna')
+	list.append('&youtube_ch=SHOWstudio')
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
