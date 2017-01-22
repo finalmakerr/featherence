@@ -845,22 +845,38 @@ def mode31(value, value2, value3, value4, admin, name, printpoint):
 	'''------------------------------
 	---diaogtextviewer---------------
 	------------------------------'''
+	name = 'diaogtextviewer-mode31' ; printpoint = ""
 	header = "" ; message = ""
 	try: header = str(value).encode('utf-8')
 	except: pass
 	try: message = str(value2).encode('utf-8')
 	except: pass
 	if value == 'Custom':
+		printpoint = printpoint + '1'
 		value3 = setPath(type=1,mask="", folderpath="")
 		if value3 != "":
+			printpoint = printpoint + '2'
 			'''get file name only'''
 			header = os.path.basename(value3)
 	
 	if value3 != "" and value3 != None:
+		printpoint = printpoint + '3'
+		if not os.path.exists(value3) and '.' in value3:
+			printpoint = printpoint + '4'
+			x = os.path.join(addons_path, value3, 'changelog.txt')
+			if os.path.exists(x):
+				printpoint = printpoint + '5'
+				value3 = x
 		value3 = read_from_file(value3, silent=True, lines=False, retry=True, createlist=True, printpoint="", addlines="")
 		message = message + newline + str(value3)
 	message = message + newline + str(value4).encode('utf-8')
 	diaogtextviewer(header, message)
+
+	text = 'value' + space2 + str(value) + newline + \
+	'value2' + space2 + str(value2) + newline + \
+	'value3' + space2 + str(value3) + newline + \
+	'value4' + space2 + str(value4) + newline
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	
 def mode32(value, value2, name, printpoint):

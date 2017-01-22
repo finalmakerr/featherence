@@ -7,6 +7,17 @@ WIP - WORK IN PROGRESS
 - Added optimal settings for Dreamcast, converting original games to FULL HD.
 
 ------------------------
+Featherence Emu v0.1.1 (xx-01-17)
+------------------------
+- Added filter for unavailable consoles for some platforms such as Dreamcast, Nintendo 64, Nintendo DS for RPI.
+- Added support for RPI (WIP).
+- Added support for Windows x86 (WIP).
+- Featherence Emu Console addon is now splitted for each OS and common modules are stored in Featherence Emu Module addon.
+- Fixed bug: No red label on undownloaded games.
+
+http://forum.kodi.tv/showthread.php?tid=304610&pid=2505603#pid2505603 
+
+------------------------
 Featherence Emu v0.1.0 (21-01-17)
 ------------------------
 - Added changelog information.

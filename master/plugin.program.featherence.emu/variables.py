@@ -60,34 +60,45 @@ printfirst = addonName + ": !@# "
 '''---------------------------'''
 
 show_adult = getsetting('show_adult')
+OS = getsetting('OS')
 addonuserdata_path = os.path.join(addondata_path, addonID, '')
 
 '''Emulator'''
-emulator_path = os.path.join(addons_path, 'emulator.retroarch', '')
 if systemplatformwindows:
+	if getsetting('OS') != "":
+		if getsetting('OS') == "win64": emulator_path = os.path.join(addons_path, 'emulator.retroarch_win64', '')
+		elif getsetting('OS') == "win32": emulator_path = os.path.join(addons_path, 'emulator.retroarch_win32', '')
+		else: emulator_path = os.path.join(addons_path, 'emulator.retroarch_win64', '')
+	else: emulator_path = os.path.join(addons_path, 'emulator.retroarch_win64', '')
+	
 	emulator_file = os.path.join(emulator_path, 'retroarch.exe')
 	emulator_file_ = emulator_file + space + '-D'
 	retroarchcfg_file = os.path.join(emulator_path, 'retroarch.cfg')
 	
 elif systemplatformlinuxraspberrypi:
-	emulator_file = os.path.join(emulator_path, 'bin', 'rpi', 'retroarch.sh')	
-	emulator_file_ = emulator_file
-	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
+	emulator_path = os.path.join(addons_path, 'emulator.tool.retroarch', '')
 	
-else:
 	emulator_file = os.path.join(emulator_path, 'bin', 'retroarch.sh')	
 	emulator_file_ = emulator_file
 	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
-
-
-if systemplatformlinuxraspberrypi:
-	cores_path = os.path.join(emulator_path,'cores','rpi','')
-else:
-	cores_path = os.path.join(emulator_path,'cores','')
 	
-shader_path = os.path.join(emulator_path,'shaders','')
-system_path = os.path.join(emulator_path,'system','')
+else:
+	emulator_path = os.path.join(addons_path, 'emulator.retroarch', '')
+	
+	emulator_file = os.path.join(emulator_path, 'bin', 'retroarch.sh')	
+	emulator_file_ = emulator_file
+	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
+	
+#subprocess.call("adb install path-to-file.apk ")
+
+cores_path = os.path.join(emulator_path,'cores','')	
 coresinfo_path = cores_path
+
+'''Featherence Emu Module'''
+featherence_emu_module_path = os.path.join(addons_path, 'script.module.featherence.emu', '')
+system_path = os.path.join(featherence_emu_module_path, 'system','')
+shader_path = os.path.join(featherence_emu_module_path,'shaders','')
+config_path2 = os.path.join(featherence_emu_module_path,'config','')
 
 '''Emulator userdata'''
 emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')

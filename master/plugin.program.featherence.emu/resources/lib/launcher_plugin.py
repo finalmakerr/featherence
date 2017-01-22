@@ -520,8 +520,10 @@ class Main:
                 self.launchers[launcherdata["id"]] = launcherdata
 
     def _get_categories( self ):
+        from modules import filterbyos
         for key in sorted(self.categories, key= lambda x : self.categories[x]["name"]):
-            if ( self.categories[key]['id'] != "default" ):
+            returned = filterbyos(self.categories[key]['id'])
+            if ( self.categories[key]['id'] != "default" ) and returned == "":
                 self._add_category(self.categories[key]["name"], self.categories[key]["thumb"], self.categories[key]["fanart"], self.categories[key]["genre"], self.categories[key]["plot"], len(self.categories), key)
         xbmcplugin.endOfDirectory( handle=int( self._handle ), succeeded=True, cacheToDisc=False )
 
@@ -553,7 +555,7 @@ class Main:
 						else:
 							defined_fanart = roms[key]["fanart"]
 						rom_name = roms[key]["name"]
-						#if not os.path.exists(roms[key]["filename"]): rom_name = '[COLOR=red]' + rom_name + '[/COLOR]'
+						if not os.path.exists(roms[key]["filename"]): rom_name = '[COLOR=red]' + rom_name + '[/COLOR]'
 						if os.path.exists(roms[key]["filename"]) or filter_games != 'true': self._add_rom(launcherID, rom_name, roms[key]["filename"], roms[key]["gamesys"], roms[key]["thumb"], defined_fanart, roms[key]["trailer"], roms[key]["custom"], roms[key]["genre"], roms[key]["release"], roms[key]["studio"], roms[key]["plot"], roms[key]["altapp"], roms[key]["altarg"], len(roms), key, False, "")
 					xbmcplugin.endOfDirectory( handle=int( self._handle ), succeeded=True, cacheToDisc=False )
 				else:

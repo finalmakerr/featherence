@@ -27,8 +27,6 @@ def del_game(plugin, category, launcher, rom, filename, filepath):
 def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""):
 	name = 'downloads' ; printpoint = ""
 	
-	
-	
 	if category != "" and filename != "" and filepath != "":
 		if not os.path.exists(os.path.join(filepath)): printpoint = '1'
 		else:
@@ -204,14 +202,14 @@ def downloads2(file):
 	
 def startup():
 	name = 'startup' ; printpoint = ""
-	setProperty('emu_startup', 'true', type="home")
 	returned, value = getRandom(0, min=0, max=100, percent=10)
 	#notification(addonName + space + 'startup',str(value),'',1000)
 	if returned == 'ok': value = True
 	else: value = False
 	chmod()
-	copyconfig(force=False)
+	installemuconsole()
 	copyarcade(force=value)
+	copyconfig(force=False)
 	copydreamcastmem(force=True)
 	installaddon('emulator.retroarch', update=True)
 	from shared_modules3 import *
@@ -233,6 +231,8 @@ def startup():
 		returned, value = getRandom(0, min=0, max=len(list), percent=50)
 		
 		notification(list[int(value)],'www.facebook.com/groups/featherence','',4000)
+	
+	setProperty('emu_startup', 'true', type="home")
 	
 	text = ""
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
@@ -732,15 +732,15 @@ def getfileID(file):
 	elif file == "Dreamcast_2P_Power Stone": fileID = "y6n6uhe8fgsacw6" #featherence.guser4
 	elif file == "Dreamcast_4P_Bomberman Online": fileID = "58wve2p4xeznrba" #featherence.guser4
 	elif file == "Dreamcast_4P_Quake III Arena": fileID = "gitt8vkzijg5ud2" #featherence.guser4
+
+	elif file == "Dreamcast_2P_Tony Hawk's Pro Skater": fileID = "vioqjp3wvhidwjr" #featherence.guser5
 	
 	elif file == "Dreamcast_4P_ChuChu Rocket!": fileID = "heeb8qqagnphxzl" #featherence.guser6
 	elif file == "Dreamcast_4P_Virtua Tennis": fileID = "wu843fsy9eql7wt" #featherence.guser6
 	elif file == "Dreamcast_4P_WWF Royal Rumble": fileID = "4o0q92vuewas1s3" #featherence.guser6
-	elif file == "Dreamcast_4P_Red Dog - Superior Firepower": fileID = "lahkk5xhkppo9q1" #featherence.guser6 #850MB FREE
-	
-	
-	
-	
+	elif file == "Dreamcast_4P_Red Dog - Superior Firepower": fileID = "lahkk5xhkppo9q1" #featherence.guser6
+	elif file == "Dreamcast_2P_Gunbird 2": fileID = "4j3dilb8yxkdxdn" #featherence.guser6
+	elif file == "Dreamcast_2P_Psychic Force 2012": fileID = "esnf4i1p55dtnmo" #featherence.guser6
 	
 	
 	
@@ -761,7 +761,7 @@ def searchtrailer(filename):
 def copyarcade(force=False):
 	name = 'copyarcade' ; printpoint = ""
 	path = os.path.join(rom_path, 'Arcade', '')
-	if not os.path.exists(os.path.join(emulatordata_path,'save','mame', 'cfg', '')) and os.path.exists(os.path.join(emulator_path,'save','mame', 'cfg', '')):
+	if not os.path.exists(os.path.join(emulatordata_path,'save','mame', 'cfg', '')) and os.path.exists(os.path.join(featherence_emu_module_path,'save','mame', 'cfg', '')):
 		printpoint = printpoint + '1'
 		setconfig(force=True)
 	elif not os.path.exists(path): printpoint = printpoint + '8'
@@ -784,14 +784,22 @@ def copyarcade(force=False):
 	
 	text = "force" + space2 + str(force)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+
+def installemuconsole():
+	notification('Featherence Emu Console addon is missing!',"","",4000)
+	if systemplatformwindows and OS == 'win32': installaddon('emulator.retroarch_win32', update=True)
+	elif systemplatformwindows: installaddon('emulator.retroarch_win64', update=True)
+	elif systemplatformlinuxraspberrypi: installaddon('emulator.tool.retroarch', update=True)
+	elif systemplatformlinux and not systemplatformandroid: installaddon('emulator.retroarch', update=True)
+	
+	installaddon('script.module.featherence.emu', update=True)
 	
 def copyconfig(force=False):
 	name = 'copysettings' ; printpoint = "" ; extra = ""
 	
-	path = os.path.join(emulator_path,'config','')
+	path = config_path2
 	if not os.path.exists(path):
-		notification('Featherence Emu Console addon is missing!',"","",4000)
-		installaddon('emulator.retroarch', update=True)
+		installemuconsole()
 	else:
 		for file in os.listdir(path):
 			#print file
@@ -970,8 +978,8 @@ def mkdirs():
 
 def copydreamcastmem(force=False):
 	returned = ''
-	source = os.path.join(emulator_path,'system', 'dc','formatted_vmu','')
-	target = os.path.join(emulator_path,'system', 'dc','')
+	source = os.path.join(featherence_emu_module_path,'system', 'dc','formatted_vmu','')
+	target = os.path.join(featherence_emu_module_path,'system', 'dc','')
 	if not os.path.exists(source) and force == True:
 		notification('Source dir is missing!',str(source),4000)
 	else:
@@ -1021,7 +1029,7 @@ def copylaunchers(force=False):
 			replace_word(emudata_launcher_file,'_arcade_args',_arcade_args, infile_="", LineR=False , LineClean=False)
 			
 			if systemplatformandroid: _nintendo_args = 'start -n com.explusalpha.NesEmu/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			elif systemplatformlinuxraspberrypi: pass
+			elif systemplatformlinuxraspberrypi: 'fceumm'
 			elif systemplatformlinux: _nintendo_args = 'nestopia'
 			elif systemplatformwindows: _nintendo_args = 'nestopia_libretro.dll'
 			replace_word(emudata_launcher_file,'_nintendo_args',_nintendo_args, infile_="", LineR=False , LineClean=False)
@@ -1075,7 +1083,26 @@ def copylaunchers(force=False):
 	text = "force" + space2 + str(force) + newline + \
 	'emudata_launcher_file' + space2 + str(emudata_launcher_file)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
-
+	
+def filterbyos(x):
+	name = 'filterbyos' ; printpoint = "" ; returned = ""
+	
+	if systemplatformwindows:
+		pass
+		#if x == 'Featherence_nintendo64': returned = "filter"
+	elif systemplatformlinuxraspberrypi:
+		if x == 'Featherence_nintendo64': returned = "filter"
+		if x == 'Featherence_nintendods': returned = "filter"
+		if x == 'Featherence_turbografx16': pass
+		if x == 'Featherence_dreamcast': pass
+	elif systemplatformlinux and not systemplatformandroid: pass
+	
+	text = "x" + space2 + str(x) + newline + \
+	'returned' + space2 + str(returned)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	
+	return returned
+	
 def checkin():
 	if xbmc.getSkinDir() != 'skin.featherence':
 		pass

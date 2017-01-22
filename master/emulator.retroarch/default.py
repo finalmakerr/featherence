@@ -14,5 +14,4 @@ if systemplatformlinux:
 	os.system("chmod +x /storage/.kodi/addons/emulator.retroarch/bin/*")
 	os.system("export LD_LIBRARY_PATH='/storage/.kodi/addons/emulator.retroarch/lib'")
 
-elif systemplatformwindows:
-	os.system("start " + emulator_file + space + launcher_args + space + '--menu')
+else: notification_common("18","OS is not linux?")

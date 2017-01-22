@@ -1,0 +1,12 @@
+display_name = "Game Boy Advance (Mednafen VBA)"
+authors = "Forgotten|Ryphecha"
+supported_extensions = "gba"
+corename = "Mednafen VBA"
+manufacturer = "Nintendo"
+systemname = "Game Boy Advance"
+license = "GPLv2"
+permissions = ""
+firmware_count = 1
+firmware0_desc = "gba_bios.bin (GBA BIOS)"
+firmware0_path = "gba_bios.bin"
+firmware0_opt = "true"

@@ -24,6 +24,8 @@
 	</category>
 
     <category label="$LOCALIZE[5]" description="Settings">
+		<setting type="lsep" label="Choose your OS manually." visible="System.Platform.Windows"/>
+		<setting label="Operation System" type="select" option="close" id="OS" default="" values=" |win64|win32" visible="System.Platform.Windows"/>
 		<setting type="lsep" label="Use this option in order to determine better which game you would like to download."/>
 		<setting label="Download Posters and Fanarts" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%DOWNLOAD_ARTWORKS%%)"/>
 		<setting type="lsep" label="Download Arcade games requirement files"/>

@@ -1155,7 +1155,7 @@ def copyfiles(source, target):
 	text = "source" + space2 + to_utf8(source) + space + "target" + space2 + to_utf8(target) + space + "source1" + space2 + to_utf8(source1) + space + 'targetdir' + space2 + to_utf8(targetdir) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
-def notification_common(custom):
+def notification_common(custom, message2=""):
 	if custom == "2": notification(addonString_servicefeatherence(32414).encode('utf-8'),localize(20186),"",4000) #processing, please wait
 	elif custom == "3": notification(localize(2102, s=[localize(504)]),"","",2000) #Error, Not Empty!
 	elif custom == "4": notification('$ADDON[script.featherence.service 32401]','',"",2000) #Check network connection!...
@@ -1173,6 +1173,7 @@ def notification_common(custom):
 	elif custom == "16": notification("Downloading Files...","","",4000) #
 	
 	elif custom == "17": notification(localize(257),'$LOCALIZE[1446]',"",2000) #Error, Unknown
+	elif custom == "18": notification(localize(257),message2,"",3000) #Error, Unknown
 	elif custom == "22": notification(addonString_servicefeatherence(32407).encode('utf-8'),'',"",4000) #The system is processing for solution...
 	elif custom == "23": notification(addonString_servicefeatherence(32406).encode('utf-8'), addonString_servicefeatherence(32405).encode('utf-8'),"",4000) #Active download in background
 	elif custom == "24": notification(addonString_servicefeatherence(32402).encode('utf-8'), addonString_servicefeatherence(32403).encode('utf-8'),"",2000) #Addon is missing! Trying to download addon

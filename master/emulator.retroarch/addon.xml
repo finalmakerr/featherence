@@ -11,7 +11,7 @@
   <extension point="xbmc.addon.metadata">
 	<platform>all</platform>
     <summary>Multi-emulator frontend based on libretro</summary>
-    <description lang="en">_</description>
+    <description lang="en">i386 Generic</description>
 	<description lang="he">_</description>
     <disclaimer></disclaimer>
 	<email>finalmakerr@gmail.com</email>

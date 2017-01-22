@@ -1485,6 +1485,8 @@
 	</control>	
 	<control type="button" id="10" description="יומן שינויים">
 	  <include>SideMenuCommon</include>
+	  <onclick>RunScript(script.featherence.service,,?mode=31&amp;value=$INFO[ListItem.AddonName]&amp;value3=$INFO[ListItem.Property(Addon.ID)])</onclick>
+	  <!--<onclick>ListItem.AddonNews</onclick>-->
 	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 	  <label>$LOCALIZE[24036]</label>
