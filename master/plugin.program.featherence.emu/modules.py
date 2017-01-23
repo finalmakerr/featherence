@@ -743,12 +743,17 @@ def getfileID(file):
 	
 	elif file == "Dreamcast_2P_Under Defeat": fileID = "mgsvwb0brxdazyr" #featherence.guser7
 	elif file == "Dreamcast_1P_Spider-Man": fileID = "6djdeqnm2sr5z51" #featherence.guser7
+	elif file == "Dreamcast_2P_Garou Mark of the Wolves": fileID = "mhz7v5x6vbaoviy" #featherence.guser7
+	elif file == "Dreamcast_4P_Sega Worldwide Soccer 2000 - Euro Edition": fileID = "5vjlyqk2ihrzpxp" #featherence.guser7
 	
-	elif file == "Dreamcast_2P_Iron Aces": fileID = "" #featherence.guser8
+	elif file == "Dreamcast_2P_Iron Aces": fileID = "lql3v266oymp0w3" #featherence.guser8
 	elif file == "Dreamcast_2P_Under Defeat": fileID = "oxuyfp1thzd294m" #featherence.guser8
 	elif file == "Dreamcast_2P_Zombie Revenge": fileID = "341gpnc1qvhc6ps" #featherence.guser8
 	elif file == "Dreamcast_4P_GigaWing 2": fileID = "gec0iw3mw712lwe" #featherence.guser8
 	elif file == "Dreamcast_4P_Toy Commander": fileID = "3mch97gzj160x29" #featherence.guser8
+	
+	elif file == "Dreamcast_1P_Fighting Force 2": fileID = "" #featherence.guser12
+	elif file == "Dreamcast_2P_Capcom vs. SNK 2": fileID = "" #featherence.guser12
 	
 	
 	
@@ -801,7 +806,8 @@ def installemuconsole(force=False):
 	elif systemplatformlinuxraspberrypi: installaddon('emulator.tool.retroarch', update=True)
 	elif systemplatformlinux and not systemplatformandroid: installaddon('emulator.retroarch', update=True)
 	
-	installaddon('script.module.featherence.emu', update=True)
+	#installaddon('script.module.featherence.emu', update=True)
+	installaddonP('script.module.featherence.emu', update=True)
 	if not os.path.exists(emulator_path): notification('Featherence Emu Console addon is missing!',"Manual download from addon settings","",4000)
 
 def copyconfig(force=False):

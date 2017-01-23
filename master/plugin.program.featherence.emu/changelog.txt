@@ -1,3 +1,7 @@
+-------------------------
+---www.featherence.com---
+-------------------------
+
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
@@ -23,7 +27,7 @@ Featherence Emu v0.1.1 (xx-01-17)
 + No red label on undownloaded games.
 + No changelog appear when update occur.
 
-http://forum.kodi.tv/showthread.php?tid=304610&pid=2505603#pid2505603 
+http://forum.kodi.tv/showthread.php?tid=304634
 
 ------------------------
 Featherence Emu v0.1.0 (21-01-17)
