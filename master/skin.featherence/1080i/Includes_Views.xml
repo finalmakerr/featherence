@@ -311,6 +311,7 @@
 	    <include condition="!Skin.HasSetting(Genre)">MultiVideoGenreFlagging</include>
 		<include condition="Skin.HasSetting(Genre)">GenreText</include>
 		<visible>!Skin.HasSetting(Genre) + !String.Contains(ListItem.path,videodb://movies/sets/) + !String.IsEmpty(ListItem.Genre)</visible>
+		<visible>!Skin.HasSetting(View50_Plus)</visible>
 		<visible>!Container.Content(seasons) + !Container.Content(episodes)</visible>
 	</control>
 	<control type="label" description="סגנונות">
