@@ -976,75 +976,75 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 	
 	if url != "":
 		if 'A' in printpoint: title2 = ""
-		if not 'c' in printpoint or 1 + 1 == 2:
-			try: link = OPEN_URL(url)
-			except Exception, TypeError:
-				printpoint = printpoint + '9'
-				extra = extra + newline + 'TypeError' + space2 + str(TypeError)
-				text = '***The following video ID is broken!' + space + str(title) + space + str(x) + '***'
-				printlog(title='apimaster_video error!', printpoint=printpoint, text=text, level=1, option="")
-				title_L.append('[COLOR=red]' + title + space + '[Deleted!]' + '[/COLOR]')
-			if not '9' in printpoint:
-				
-				prms=json.loads(link)
-				text = "url" + space2 + str(url) + newline + \
-				"link" + space2 + str(link) + newline + \
-				"prms" + space2 + str(prms) + newline #+ \ + "totalResults" + space2 + str(totalResults)
-				'''---------------------------'''
-				printlog(title='apimaster_test2', printpoint=printpoint, text=text, level=0, option="")
+		#if not 'c' in printpoint or 1 + 1 == 2:
+		try: link = OPEN_URL(url)
+		except Exception, TypeError:
+			printpoint = printpoint + '9'
+			extra = extra + newline + 'TypeError' + space2 + str(TypeError)
+			text = '***The following video ID is broken!' + space + str(title) + space + str(x) + '***'
+			printlog(title='apimaster_video error!', printpoint=printpoint, text=text, level=1, option="")
+			title_L.append('[COLOR=red]' + title + space + '[Deleted!]' + '[/COLOR]')
+		if not '9' in printpoint:
 			
-				if '&dailymotion_pl=' in x:
-					if prms[u'has_more']:
-						totalResults = int(prms[u'limit'])
-					else: totalResults = prms[u'total']
-				elif '&dailymotion_id=' in x:
-					if prms[u'id']:
-						totalResults = len(prms[u'id'])
-				else:
-					totalResults=int(prms['pageInfo'][u'totalResults']) #if bigger than pagesize needs to add more result
-					resultsPerPage = int(prms['pageInfo'][u'resultsPerPage'])
-					try:
-						nextpagetoken = str(prms['nextPageToken'])
-						nextpagetoken_L.append(nextpagetoken)
-					except:
-						pass
-						
-					if '&youtube_pl=' in x:
-						
-						count__ = 0
-						while count__ < 10 and not xbmc.abortRequested:
-							url_ = url.replace('&pageToken=', '&pageToken=' + nextpagetoken)
-							#try:
-							if 1 + 1 == 2:
-								if totalResults / resultsPerPage > 1: notification(str(len(nextpagetoken_L) - 1) + space + '/' + space + str(totalResults / resultsPerPage),"","",2000)
-								link_ = OPEN_URL(url_)
-								prms_=json.loads(link_)
-								
-								
-								try:
-									nextpagetoken = str(prms_['nextPageToken'])
-									nextpagetoken_L.append(nextpagetoken)
-								except: count__ = 10
-								
-							text = 'nextpagetoken_L' + space2 + str(nextpagetoken_L) + newline + \
-							"url_" + space2 + str(url_) + newline + \
-							"link_" + space2 + str(link_) + newline + \
-							"prms_" + space2 + str(prms_)
-							printlog(title='apimaster_playlisttoken', printpoint=printpoint, text=text, level=0, option="")
+			prms=json.loads(link)
+			text = "url" + space2 + str(url) + newline + \
+			"link" + space2 + str(link) + newline + \
+			"prms" + space2 + str(prms) + newline #+ \ + "totalResults" + space2 + str(totalResults)
+			'''---------------------------'''
+			printlog(title='apimaster_test2', printpoint=printpoint, text=text, level=0, option="")
+		
+			if '&dailymotion_pl=' in x:
+				if prms[u'has_more']:
+					totalResults = int(prms[u'limit'])
+				else: totalResults = prms[u'total']
+			elif '&dailymotion_id=' in x:
+				if prms[u'id']:
+					totalResults = len(prms[u'id'])
+			else:
+				totalResults=int(prms['pageInfo'][u'totalResults']) #if bigger than pagesize needs to add more result
+				resultsPerPage = int(prms['pageInfo'][u'resultsPerPage'])
+				try:
+					nextpagetoken = str(prms['nextPageToken'])
+					nextpagetoken_L.append(nextpagetoken)
+				except:
+					pass
+					
+				if '&youtube_pl=' in x:
+					
+					count__ = 0
+					while count__ < 10 and not xbmc.abortRequested:
+						url_ = url.replace('&pageToken=', '&pageToken=' + nextpagetoken)
+						#try:
+						if 1 + 1 == 2:
+							if totalResults / resultsPerPage > 1: notification(str(len(nextpagetoken_L) - 1) + space + '/' + space + str(totalResults / resultsPerPage),"","",2000)
+							link_ = OPEN_URL(url_)
+							prms_=json.loads(link_)
+							
+							
+							try:
+								nextpagetoken = str(prms_['nextPageToken'])
+								nextpagetoken_L.append(nextpagetoken)
+							except: count__ = 10
+							
+						text = 'nextpagetoken_L' + space2 + str(nextpagetoken_L) + newline + \
+						"url_" + space2 + str(url_) + newline + \
+						"link_" + space2 + str(link_) + newline + \
+						"prms_" + space2 + str(prms_)
+						printlog(title='apimaster_playlisttoken', printpoint=printpoint, text=text, level=0, option="")
 
-							count__ += 1
-						
-						
-						max = len(nextpagetoken_L) - 1
-						returned, value = getRandom(0, min=0, max=max, percent=50)
-						if value == "": value = 0
-						else:
-							url = url.replace('&pageToken=', '&pageToken=' + nextpagetoken_L[int(value)])
-							link = OPEN_URL(url)
-							prms=json.loads(link)
-						
-				totalpagesN = (totalResults / pagesize) + 1
-				'''---------------------------'''
+						count__ += 1
+					
+					
+					max = len(nextpagetoken_L) - 1
+					returned, value = getRandom(0, min=0, max=max, percent=50)
+					if value == "": value = 0
+					else:
+						url = url.replace('&pageToken=', '&pageToken=' + nextpagetoken_L[int(value)])
+						link = OPEN_URL(url)
+						prms=json.loads(link)
+					
+			totalpagesN = (totalResults / pagesize) + 1
+			'''---------------------------'''
 
 		i = 0
 		while i < pagesize and i < totalResults and i < resultsPerPage and not "8" in printpoint and ((count + count_) < pagesize) and not xbmc.abortRequested: #h<totalResults
@@ -1925,7 +1925,7 @@ def setAddon_UpdateLog(admin, Addon_Version, Addon_UpdateDate, Addon_ShowLog, Ad
 					w.doModal()
 					'''---------------------------'''
 			else: printpoint = printpoint + "8"
-	#setsetting('Addon_UpdateLog',"false")
+
 	try: setsetting_custom1(addonID, 'Addon_UpdateLog', "false")
 	except: pass
 		

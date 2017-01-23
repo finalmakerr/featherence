@@ -1791,7 +1791,7 @@ def installaddonP(addon, update=True):
 		if not 'resource.' in addon and not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			version = getVersion(addon, 'https://raw.githubusercontent.com/finalmakerr/featherence/master/addons.xml')
 			file = addon + '-' + str(version) + '.zip'
-			DownloadFile('https://raw.githubusercontent.com/finalmakerr/featherence/raw/master' + addon+'/'+file, file, packages_path, addons_path, silent=True)
+			DownloadFile('https://github.com/finalmakerr/featherence/raw/master/' + addon+'/'+file, file, packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
