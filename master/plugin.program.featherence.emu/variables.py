@@ -61,6 +61,14 @@ printfirst = addonName + ": !@# "
 
 show_adult = getsetting('show_adult')
 OS = getsetting('OS')
+
+Addon_ShowLog = getsetting('Addon_ShowLog')
+Addon_ShowLog2 = getsetting('Addon_ShowLog2')
+Addon_Update = getsetting('Addon_Update')
+Addon_UpdateDate = getsetting('Addon_UpdateDate')
+Addon_UpdateLog = getsetting('Addon_UpdateLog')
+Addon_Version = getsetting('Addon_Version')
+
 addonuserdata_path = os.path.join(addondata_path, addonID, '')
 
 '''Emulator'''
@@ -74,6 +82,7 @@ if systemplatformwindows:
 	emulator_file = os.path.join(emulator_path, 'retroarch.exe')
 	emulator_file_ = emulator_file + space + '-D'
 	retroarchcfg_file = os.path.join(emulator_path, 'retroarch.cfg')
+	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
 	
 elif systemplatformlinuxraspberrypi:
 	emulator_path = os.path.join(addons_path, 'emulator.tool.retroarch', '')
@@ -81,6 +90,7 @@ elif systemplatformlinuxraspberrypi:
 	emulator_file = os.path.join(emulator_path, 'bin', 'retroarch.sh')	
 	emulator_file_ = emulator_file
 	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
+	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
 	
 else:
 	emulator_path = os.path.join(addons_path, 'emulator.retroarch', '')
@@ -88,6 +98,7 @@ else:
 	emulator_file = os.path.join(emulator_path, 'bin', 'retroarch.sh')	
 	emulator_file_ = emulator_file
 	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
+	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
 	
 #subprocess.call("adb install path-to-file.apk ")
 
@@ -103,6 +114,7 @@ config_path2 = os.path.join(featherence_emu_module_path,'config','')
 '''Emulator userdata'''
 emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')
 retroarchcfg_file2 = os.path.join(emulatordata_path, 'config', 'retroarch.cfg')
+retroarchcoreoptionscfg_file2 = os.path.join(emulatordata_path, 'config', '.retroarch-core-options.cfg')
 rom_path = os.path.join(emulatordata_path,'rom','')
 config_path = os.path.join(emulatordata_path,'config','')
 
@@ -190,6 +202,6 @@ download1L = ['Arcade', 'Sony Playstation']
 
 emu_startup = xbmc.getInfoLabel('Window(home).Property(emu_startup)')
 
-if emu_startup == "" or 1 + 1 == 3:
+if emu_startup == "" or Addon_Version != addonVersion or Addon_Update == "true":
 	from modules import startup
 	startup()

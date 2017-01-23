@@ -59,6 +59,7 @@ DOWNLOAD_CFG = "%%DOWNLOAD_CFG%%"
 COMMAND_ARGS_SEPARATOR = "^^"
 RESET_LANUCHER = "%%RESET_LANUCHER%%"
 RESET_DREAMCAST_MEM = "%%RESET_DREAMCAST_MEM%%"
+OS_INSTALL = "%%OS_INSTALL%%"
 RESET_CONFIG = "%%RESET_CONFIG%%"
 COPY_KEYMAPS = "%%COPY_KEYMAPS%%"
 SET_CONFIG = "%%SET_CONFIG%%"
@@ -81,8 +82,6 @@ __lang__ = __settings__.getLocalizedString
 from shared_variables import *
 from shared_modules import *
 from modules import *
-
-checkin()
 
 class Main:
     launchers = {}
@@ -197,6 +196,8 @@ class Main:
                     copylaunchers(force=True)
                 elif (category == RESET_DREAMCAST_MEM):
                     copydreamcastmem(force=True)
+                elif (category == OS_INSTALL):
+					installemuconsole(force=True)
                 elif (category == RESET_CONFIG):
                     copyconfig(force=True)
                 elif (category == COPY_KEYMAPS):

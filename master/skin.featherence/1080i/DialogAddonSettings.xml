@@ -39,7 +39,8 @@
       <height>530</height>	  
 	  <posx>1475</posx>
 	  <posy>275</posy>	  
-	  <width>480</width>	  	  
+	  <width>480</width>
+	
 	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
@@ -83,7 +84,32 @@
 		  <width>480</width>
 		  <include>ButtonL2</include>
         </control>
+		<control type="radiobutton" id="120" description="Scroll">
+          <align>center</align>
+		  <label>Description Scroll</label>
+		  <selected>Skin.HasSetting(AddonSettingsScroll)</selected>
+		  <onclick>Skin.ToggleSetting(AddonSettingsScroll)</onclick>
+		  <onclick condition="Skin.HasSetting(AddonSettingsScroll)">Notification(Exit and Enter again, for scroll to take effect,2000)</onclick>
+		  <radioposx>40</radioposx>
+		  <radiowidth>40</radiowidth>
+		  <radioheight>40</radioheight>
+		  <font>size28</font>
+		  <height>80</height>
+		  <width>480</width>
+		  <include>ButtonL2</include>
+        </control>
       </control>
+	
+	  <include content="Arrows_UpDown">
+		<param name="posx" value="225"/>
+		<param name="posy" value="-40"/>
+		<param name="posx2" value="225"/>
+		<param name="posy2" value="530"/>
+		 
+		<param name="container" value="8999"/>
+		<param name="position" value="2"/>
+		<param name="condition" value="true"/>
+	  </include>
 	</control>
     <control type="group" description="קבוצה תפריט ראשי (2)">
       <height>830</height>	  
@@ -123,18 +149,17 @@
 	    <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>-->
       </control>
       <control type="label" id="7" description="תאור כללי">
-		<aligny>center</aligny>
-		<height>80</height>
+		<!--<aligny>center</aligny>-->
+		<height>30</height>
 		<textoffsetx>20</textoffsetx>
-		<textoffsety>5</textoffsety>
+		<textoffsety>0</textoffsety>
+		<include condition="Skin.HasSetting(AddonSettingsScroll)">AddonSettingsScroll</include>
 		<scroll>false</scroll>
 		<shadowcolor>black</shadowcolor>
 		<textcolor>grey</textcolor>
 		<width>800</width>
 		<include>LabelL2</include>
-		<wrapmultiline>true</wrapmultiline>
-		<!--<include condition="String.IsEqual(System.Language,Hebrew)">LabelR2</include>
-	    <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL2</include>-->
+		<wrapmultiline>false</wrapmultiline>
       </control>
 	</control>
     <control type="radiobutton" id="4" description="Radiobutton template עיצוב">

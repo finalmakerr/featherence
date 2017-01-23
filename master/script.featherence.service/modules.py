@@ -7,7 +7,12 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
-	xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
+	from datetime import datetime
+	dt_str = '2016-01-30'
+	
+	x = stringtodate(dt_str, dt_func='%Y-%m-%d')
+	notification(str(x),"","",2000)
+	#xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
 	#installaddonP('script.module.unidecode', update=False)
 	#xbmc.executebuiltin('ActivateWindow(10157)')
 	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=4)')

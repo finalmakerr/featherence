@@ -1464,41 +1464,32 @@ def setsetting_custom1(addon,set1,set1v):
 	text = 'addon' + space2 + str(addon) + space + 'set1' + space2 + str(set1) + space + 'set1v' + space2 + str(set1v) + newline + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
-
-def stringtodate(dt_str, dt_func):
-	#from datetime import datetime
-	name = 'stringtodate' ; printpoint = "" ; TypeError = "" ; extra = "" ; count = 0
+def stringtodate(dt_str, dt_func='%Y-%m-%d'):
+	from datetime import datetime
+	name = 'stringtodate' ; printpoint = "" ; TypeError = "" ; extra = "" ; count = 0 ; dt_obj = ""
+	
 	dt_str = str(dt_str)
-	dt_str = dt_str.replace(" ","",1)
-	dt_obj = ""
-	#dt_str = '9/24/2010 5:03:29 PM'
-	#dt_func = '%m/%d/%Y %I:%M:%S %p'
+	dt_str = dt_str.replace(" ","")
+	
 	if dt_str == "" or dt_func == "" or dt_str == None or dt_func == None:
 		printpoint = printpoint + "9"
-		#if admin: notification("stringtodate_ERROR!","isEMPTY","",1000)
 	else:
-		while count < 3 and not "7" in printpoint and not xbmc.abortRequested:
-			try:
-				if count == 0: from datetime import datetime
-				dt_obj = datetime.strptime(dt_str, dt_func)
-				printpoint = printpoint + "7"
-			except Exception, TypeError:
-				dt_obj = "error"
-
-			count += 1
-			xbmc.sleep(100)
-
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
-	dt_objS = str(dt_obj)
-	if TypeError != "": extra = newline + "TypeError" + space2 + str(TypeError) + space + "count" + space2 + str(count)
-
-	text = 'dt_str' + space2 + str(dt_str) + space + 'dt_objS' + space2 + str(dt_objS) + newline + \
-	extra
-	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
-	return dt_obj
+		try:
+			#dt_obj = datetime.strptime(dt_str, dt_func)
+			dt_obj = datetime(*(time.strptime(dt_str, dt_func)[0:6]))
+			printpoint = printpoint + "7"
+		except TypeError:
+			printpoint = printpoint + "8"
 	
+	if TypeError != "": extra = newline + "TypeError" + space2 + str(TypeError) + space + "count" + space2 + str(count)
+	
+	text = 'dt_str' + space2 + str(dt_str) + newline + \
+	'dt_func' + space2 + str(dt_func) + newline + \
+	'dt_obj' + space2 + str(dt_obj) + newline + \
+	extra
+	printlog(title=name, printpoint=printpoint, text=text, level=0)
+	return dt_obj
+
 class TextViewer_Dialog(xbmcgui.WindowXMLDialog):
     ACTION_PREVIOUS_MENU = [9, 92, 10]
 

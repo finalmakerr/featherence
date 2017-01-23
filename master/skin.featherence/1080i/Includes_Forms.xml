@@ -1058,4 +1058,8 @@
    <include name="Control_Pos53" description="">
 	 <posx>0</posx>
    </include>
+   
+   <include name="AddonSettingsScroll">
+     <scroll>true</scroll>
+   </include>
 </includes>

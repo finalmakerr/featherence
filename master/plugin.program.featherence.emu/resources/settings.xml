@@ -6,7 +6,6 @@
 		<setting label="30104" type="bool" id="filter_games" default="false" visible="" />
         <setting type="lsep" label="Enable in order to have an option to delete downloaded games."/>
 		<setting label="30105" type="bool" id="delete_games" default="false" visible="" />
-		<setting label="30175" type="bool" id="lirc_state" default="true" />
         <setting type="lsep" label="Opening game time in ms."/>
 		<setting label="30180" type="slider" id="start_tempo" default="1000" range="0,100,15000" option="int"/>
 		<setting type="lsep" label="Enable Adult content"/>
@@ -21,24 +20,19 @@
 		<setting id="Addon_UpdateLog" type="bool" default="false" label="Addon_UpdateLog" visible="false"/>
 		<setting id="Addon_Version" type="text" default="" label="Addon_Version" visible="false"/>
 		<setting type="lsep" label=""/>
+		<setting label="30175" type="bool" id="lirc_state" default="true" />
 	</category>
 
     <category label="$LOCALIZE[5]" description="Settings">
 		<setting type="lsep" label="Choose your OS manually." visible="System.Platform.Windows"/>
-		<setting label="Operation System" type="select" option="close" id="OS" default="" values=" |win64|win32" visible="System.Platform.Windows"/>
-		<setting type="lsep" label="Use this option in order to determine better which game you would like to download."/>
-		<setting label="Download Posters and Fanarts" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%DOWNLOAD_ARTWORKS%%)"/>
-		<setting type="lsep" label="Download Arcade games requirement files"/>
-		<setting label="Download Arcade NVRAM and DIFF" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%DOWNLOAD_NVRAM%%)"/>
-		<setting label="Download Arcade CFG" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%DOWNLOAD_CFG%%)"/>
-		<setting type="lsep" label="Copy Featherence's keymap for PS3 Joystick."/>
-		<setting label="Copy Keymaps" type="action" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%COPY_KEYMAPS%%)"/>
+		<setting label="Operation System" type="select" id="OS" default="" values=" |win64|win32" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%OS_INSTALL%%)" visible="System.Platform.Windows"/>
+		<setting label="Download OS Emulator" type="action" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%OS_INSTALL%%)"/>
 		<setting type="lsep" label="Use this option in order to create new data table for listing games information."/>
 		<setting label="Reset Lanuchers" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RESET_LANUCHER%%)"/>
 		<setting type="lsep" label="Recreate default settings for each console."/>
 		<setting label="Reset EMU Settings" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RESET_CONFIG%%)"/>
 		<setting type="lsep" label="Use this option in order to create new formatted virtual memory cards slots for Dreamcast console."/>
-		<setting label="Reset Dreamcast Memory slots" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RESET_DREAMCAST_MEM%%)"/>
+		<setting label="Reset Dreamcast Memory slots" type="action" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RESET_DREAMCAST_MEM%%)"/>
 		<setting type="lsep" label="Show a list of potential audio adapters." visible="System.Platform.Linux"/>
 		<setting label="Show Audio Adapters" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%AUDIO_DEVICES%%)" visible="System.Platform.Linux"/>
     </category>
@@ -71,6 +65,31 @@
 		<setting id="audio_sync" type="bool" default="" label="audio_sync" visible="true"/>
 	</category>
 	
+	<category label="Controllers" description="Controllers">
+		<setting type="lsep" label="Kind note!"/>
+		<setting type="lsep" label="Control within consoles atm are default for PS3 Joystick (Player1-8)"/>
+		<setting type="lsep" label="and Keyboard (Player1)."/>
+		<setting type="lsep" label="In order to add more controllers please contact me."/>
+		<setting type="lsep" label="Also don't forget to check the controls video per console"/>
+		<setting type="lsep" label="Right click on a console and select in-game keys."/>
+		<setting type="lsep" label=""/>
+		<setting type="lsep" label="Download Featherence's keymap for PS3 Joystick (Usage for controlling Kodi interface)."/>
+		<setting label="Copy Keymaps" type="action" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%COPY_KEYMAPS%%)"/>
+    </category>
+	
+	<category label="$LOCALIZE[33003]" description="Download">
+		<setting type="lsep" label="How to download game?[CR]Right click (Context Menu) on a game and choose DOWNLOAD."/>
+		<setting type="lsep" label=""/>
+		<setting type="lsep" label=""/>
+		<setting type="lsep" label="Use this option in order to determine better which game you would like to download.[CR] Keep in mind that after downloading a game you will also have it's poster and fanart anyway."/>
+		<setting type="lsep" label=""/>
+		<setting type="lsep" label=""/>
+		<setting label="Download Posters and Fanarts" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%DOWNLOAD_ARTWORKS%%)"/>
+		<setting type="lsep" label="Download Arcade games requirement files"/>
+		<setting label="Download Arcade NVRAM and DIFF" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%DOWNLOAD_NVRAM%%)"/>
+		<setting label="Download Arcade CFG" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%DOWNLOAD_CFG%%)"/>
+    </category>
+	
 	<category label="About" description="About">
 		<setting type="lsep" label=""/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32079]"/>
@@ -88,4 +107,5 @@
 		<setting type="lsep" label="$ADDON[script.featherence.service 32045]"/>
 		<setting type="lsep" label=""/>
 	</category>
+	
 </settings>

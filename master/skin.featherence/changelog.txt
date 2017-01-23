@@ -8,12 +8,14 @@ WIP - WORK IN PROGRESS
 ------------------------
 Featherence v0.7.1 (xx-01-17)
 ------------------------
-- Added icons to power sub buttons.
+- Added icons to power off sub buttons.
 - Added addons changelog button from previous Kodi versions.
 - Minor bugs fix:
 + Sub Menu action feature (in different language then English).
 + Widgets actions information in skin design window.
 + Others..
+- Minor update of addon settings window.
++ Description are smaller in height and can be auto scroll by demand.
 - Minor update of Allow thumbnail fanart feature to support all skin views.
 - Minor update of skin design settings information.
 

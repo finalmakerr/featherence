@@ -201,27 +201,14 @@ def downloads2(file):
 	DownloadFile("https://www.dropbox.com/s/"+fileID+"/"+file_+"?dl=1", file, temp_path, rom_path)
 	
 def startup():
-	name = 'startup' ; printpoint = ""
-	returned, value = getRandom(0, min=0, max=100, percent=10)
-	#notification(addonName + space + 'startup',str(value),'',1000)
-	if returned == 'ok': value = True
-	else: value = False
-	chmod()
-	installemuconsole()
-	copyarcade(force=value)
-	copyconfig(force=False)
-	copydreamcastmem(force=True)
-	installaddon('emulator.retroarch', update=True)
-	from shared_modules3 import *
-	getsetting('Addon_Update')
-	getsetting('Addon_Version')
-	getsetting('Addon_UpdateDate')
-	getsetting('Addon_UpdateLog')
-	getsetting('Addon_ShowLog')
-	getsetting('Addon_ShowLog2')
-	VerReset = ""
+	name = 'startup' ; printpoint = "" ; VerReset = "" ; value = False
+	
+	setProperty('emu_startup', 'true', type="home")
+	
+	from shared_modules3 import checkAddon_Update
 	checkAddon_Update("", Addon_Update, Addon_Version, addonVersion, Addon_UpdateDate, Addon_UpdateLog, Addon_ShowLog, Addon_ShowLog2, VerReset)
-	if Addon_UpdateLog == "true" or 1 + 1 == 3:
+	
+	if Addon_UpdateLog == "true":
 		list = []
 		list.append(addonString_servicefeatherence(32060).encode('utf-8')) #Would you like thanks us? Would love to hear you!
 		list.append(addonString_servicefeatherence(32061).encode('utf-8')) #Do you want to contribute?
@@ -230,9 +217,21 @@ def startup():
 		list.append(addonString_servicefeatherence(32064).encode('utf-8')) #Having a question?
 		returned, value = getRandom(0, min=0, max=len(list), percent=50)
 		
-		notification(list[int(value)],'www.facebook.com/groups/featherence','',4000)
+		notification(list[int(value)],'www.featherence.com','',4000)
 	
-	setProperty('emu_startup', 'true', type="home")
+	chmod()
+	copydreamcastmem(force=False)
+	
+	if Addon_Update == "true":
+		notification("Received new update!","Check www.featherence.com for support","",4000)
+		value = True
+	
+	copylaunchers(force=value)
+	copyarcade(force=value)
+	copyconfig(force=value)
+	
+	
+	installemuconsole()
 	
 	text = ""
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
@@ -742,6 +741,15 @@ def getfileID(file):
 	elif file == "Dreamcast_2P_Gunbird 2": fileID = "4j3dilb8yxkdxdn" #featherence.guser6
 	elif file == "Dreamcast_2P_Psychic Force 2012": fileID = "esnf4i1p55dtnmo" #featherence.guser6
 	
+	elif file == "Dreamcast_2P_Under Defeat": fileID = "mgsvwb0brxdazyr" #featherence.guser7
+	elif file == "Dreamcast_1P_Spider-Man": fileID = "6djdeqnm2sr5z51" #featherence.guser7
+	
+	elif file == "Dreamcast_2P_Iron Aces": fileID = "" #featherence.guser8
+	elif file == "Dreamcast_2P_Under Defeat": fileID = "oxuyfp1thzd294m" #featherence.guser8
+	elif file == "Dreamcast_2P_Zombie Revenge": fileID = "341gpnc1qvhc6ps" #featherence.guser8
+	elif file == "Dreamcast_4P_GigaWing 2": fileID = "gec0iw3mw712lwe" #featherence.guser8
+	elif file == "Dreamcast_4P_Toy Commander": fileID = "3mch97gzj160x29" #featherence.guser8
+	
 	
 	
 	if fileID_L != [""] and fileName_L != ['--> (Exit)'] and fileID == "":
@@ -785,15 +793,17 @@ def copyarcade(force=False):
 	text = "force" + space2 + str(force)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
-def installemuconsole():
-	notification('Featherence Emu Console addon is missing!',"","",4000)
+def installemuconsole(force=False):
+	if force == True:
+		if os.path.exists(emulator_path): notification('Emulator already exists!',emulator_path,"",7000)
 	if systemplatformwindows and OS == 'win32': installaddon('emulator.retroarch_win32', update=True)
 	elif systemplatformwindows: installaddon('emulator.retroarch_win64', update=True)
 	elif systemplatformlinuxraspberrypi: installaddon('emulator.tool.retroarch', update=True)
 	elif systemplatformlinux and not systemplatformandroid: installaddon('emulator.retroarch', update=True)
 	
 	installaddon('script.module.featherence.emu', update=True)
-	
+	if not os.path.exists(emulator_path): notification('Featherence Emu Console addon is missing!',"Manual download from addon settings","",4000)
+
 def copyconfig(force=False):
 	name = 'copysettings' ; printpoint = "" ; extra = ""
 	
@@ -856,18 +866,25 @@ def keys_help(filename):
 	
 def setconfig(force=False):
 	name = 'setconfig' ; printpoint = "" ; extra = ""
-	
+	dp = xbmcgui.DialogProgress()
+	dp.create('setup consoles configuration files',"","")
 	if os.path.exists(config_path):
 		printpoint = printpoint + '1'
 		notification('set configs','','',1000)
 		
 		i = 0
+		progress_ = 0
+		dp_total = len(os.listdir(config_path))
 		for file in os.listdir(config_path):
+			progress_ = i * 90 / dp_total
+			dp.update(progress_,str(file)," ")
+			
 			extra = extra + newline + str(i) + space2 + str(file)
 			infile_ = read_from_file(to_utf8(config_path) + to_utf8(file), silent=True, lines=False, retry=True, createlist=True, printpoint="", addlines="")
 			
 			i2 = 0
 			for x in optionsL:
+				dp.update(progress_+ (i2 / 2),str(file),str(x))
 				extra = extra + newline + str(i2) + space2 + 'x' + space2 + str(x)
 				z = getsetting(x)
 				z2 = options_L[i2]
@@ -892,9 +909,13 @@ def setconfig(force=False):
 							#replace_word(infile,ad,z, infile_="", LineR=False , LineClean=False)
 					
 					elif file == 'retroarch.cfg' and systemplatformwindows:
-						extra = extra + newline + 'ad_' + space2
+						extra = extra + newline + 'retroarch.cfg' + space2
 						copyfiles(retroarchcfg_file2, retroarchcfg_file) ; xbmc.sleep(100)
-							
+					
+					elif file == '.retroarch-core-options.cfg' and systemplatformwindows:
+						extra = extra + newline + '.retroarch-core-options.cfg' + space2
+						copyfiles(retroarchcoreoptionscfg_file2, retroarchcoreoptionscfg_file) ; xbmc.sleep(100)
+					
 				extra = extra + space + 'y' + space2 + str(y) + space + 'z' + space2 + str(z)
 				
 				i2 += 1
@@ -902,9 +923,10 @@ def setconfig(force=False):
 			
 			i += 1
 	
-	
+	dp.update(95,"staticconfig..", "")
 	staticconfig(force=True)
-	
+	dp.update(100,"Finishing Configuration...", "")
+
 	if systemplatformandroid: pass
 	elif systemplatformlinuxraspberrypi: pass
 	elif systemplatformlinux:
@@ -912,7 +934,9 @@ def setconfig(force=False):
 		copyfiles(os.path.join(config_path,x), '/storage/.config/retroarch/')
 		x = '.retroarch-core-options.cfg'
 		copyfiles(os.path.join(config_path,x), '/storage/.config/retroarch/')
-		
+	
+	xbmc.sleep(200) ; dp.close
+
 	text = 'force' + space2 + str(force) + newline + \
 	"extra" + space2 + str(extra)
 	printlog(title=name, printpoint=printpoint, text=text, level=7, option="")
@@ -977,38 +1001,63 @@ def mkdirs():
 			except: pass
 
 def copydreamcastmem(force=False):
-	returned = ''
+	name = 'copydreamcastmem' ; returned = '' ; printpoint = ""
 	source = os.path.join(featherence_emu_module_path,'system', 'dc','formatted_vmu','')
-	target = os.path.join(featherence_emu_module_path,'system', 'dc','')
+	target = os.path.join(featherence_emu_module_path,'system', 'dc')
 	if not os.path.exists(source) and force == True:
 		notification('Source dir is missing!',str(source),4000)
+		printpoint = printpoint + '9'
 	else:
-		if force == False and (os.path.exists(os.path.join(target,'vmu_save_A1.bin')) or os.path.exists(os.path.join(target,'vmu_save_B1.bin')) or os.path.exists(os.path.join(target,'vmu_save_C1.bin')) or os.path.exists(os.path.join(target,'vmu_save_D1.bin'))):
-			returned = dialogyesno('Dreamcast memory cards exists!','Are you sure you want to proceed?')
-		elif force == True and not (os.path.exists(os.path.join(target,'vmu_save_A1.bin')) or not os.path.exists(os.path.join(target,'vmu_save_B1.bin')) or not os.path.exists(os.path.join(target,'vmu_save_C1.bin')) or not os.path.exists(os.path.join(target,'vmu_save_D1.bin'))):
-			returned = 'ok'
+		if force == True:
+			if os.path.exists(os.path.join(target,'vmu_save_A1.bin')) or os.path.exists(os.path.join(target,'vmu_save_B1.bin')) or os.path.exists(os.path.join(target,'vmu_save_C1.bin')) or os.path.exists(os.path.join(target,'vmu_save_D1.bin')):
+				returned = dialogyesno('Dreamcast memory cards exists!','Are you sure you want to proceed?')
+				printpoint = printpoint + '1'
+			else:
+				returned = 'ok'
+				printpoint = printpoint + '2'
+		else:
+			if not ( os.path.exists(os.path.join(target,'vmu_save_A1.bin')) or os.path.exists(os.path.join(target,'vmu_save_B1.bin')) or os.path.exists(os.path.join(target,'vmu_save_C1.bin')) or os.path.exists(os.path.join(target,'vmu_save_D1.bin')) ):
+				returned = 'ok'
+				printpoint = printpoint + '3'
+			else: printpoint = printpoint + '8'
+
 		if returned == 'ok':
+			printpoint = printpoint + '7'
 			notification('Formating Dreamcast memory slots','','',1000)
 			copyfiles(source,target)
 			xbmc.sleep(1000)
 			notification('Formating done!','','',1000)
 	
+	test = os.path.join(target,'vmu_save_A1.bin')
+	text = "force" + space2 + str(force) + newline + \
+	'source' + space2 + str(source) + newline + \
+	'target' + space2 + str(target) + newline + \
+	'returned' + space2 + str(returned) + newline + \
+	'test' + space2 + str(test)
+	
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	
 def copylaunchers(force=False):
 	
 	name = 'copylaunchers' ; printpoint = ""
 	if not os.path.exists(emudata_launcher_file) or force==True:
+		
+		dp = xbmcgui.DialogProgress()
+		dp.create('Generating Launchers file',emudata_launcher_file,"")
 		printpoint = printpoint + '1'
-		notification('Recreating launcher','','',1000)
 		if not os.path.exists(emudata_launcher_file):
 			copyconfig(force=False)
+		dp.update(5,'Generating Launchers file',"Copying emulanuncher_file...")
 		copyfiles(emulanuncher_file, emudata_launcher_file) ; xbmc.sleep(500)
 		
-		if not os.path.exists(emulanuncher_file): notification('Error file is missing!','','',1000)
+		if not os.path.exists(emulanuncher_file):
+			dp.update(95,'Generating Launchers file',"Error emulanuncher_file is missing!") ; xbmc.sleep(1000)
 		else:
 			if systemplatformandroid: pass
 			elif systemplatformlinuxraspberrypi: pass
 			elif systemplatformlinux: pass
 			elif systemplatformwindows:
+				dp.update(10,'Generating Launchers file',"Setting windows symbols")
 				if 1 + 1 == 2:
 					#replace_word(emudata_launcher_file,old_word,new_word, infile_="", LineR=False , LineClean=False)
 					replace_word(emudata_launcher_file,'rom/','rom\\', infile_="", LineR=False , LineClean=False)
@@ -1018,20 +1067,28 @@ def copylaunchers(force=False):
 					replace_word(emudata_launcher_file,'screenshot/','screenshot\\', infile_="", LineR=False , LineClean=False)
 					replace_word(emudata_launcher_file,'P/','P\\', infile_="", LineR=False , LineClean=False)
 			
+			dp.update(15,'Generating Launchers file',"Setting rom_path..")
 			replace_word(emudata_launcher_file,'rom_path',rom_path, infile_="", LineR=False , LineClean=False)
+			dp.update(25,'Generating Launchers file',"Setting emulator_file..")
 			replace_word(emudata_launcher_file,'emulator_file',emulator_file_, infile_="", LineR=False , LineClean=False)
+			dp.update(35,'Generating Launchers file',"Setting lib_args..")
 			replace_word(emudata_launcher_file,'lib_args',lib_args, infile_="", LineR=False , LineClean=False)
 			
 			if systemplatformandroid: _arcade_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinuxraspberrypi: 'imame4all'
 			elif systemplatformlinux: _arcade_args = 'mame2014'
-			elif systemplatformwindows: _arcade_args = 'mame_libretro.dll'
+			elif systemplatformwindows:
+				if getsetting('OS') == "win32": _arcade_args = 'mame2010_libretro.dll'
+				else: _arcade_args = 'mame2014_libretro.dll'
+			dp.update(40,'Generating Launchers file',"Setting _arcade_args..")
 			replace_word(emudata_launcher_file,'_arcade_args',_arcade_args, infile_="", LineR=False , LineClean=False)
+			
 			
 			if systemplatformandroid: _nintendo_args = 'start -n com.explusalpha.NesEmu/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinuxraspberrypi: 'fceumm'
 			elif systemplatformlinux: _nintendo_args = 'nestopia'
 			elif systemplatformwindows: _nintendo_args = 'nestopia_libretro.dll'
+			dp.update(45,'Generating Launchers file',"Setting _nintendo_args..")
 			replace_word(emudata_launcher_file,'_nintendo_args',_nintendo_args, infile_="", LineR=False , LineClean=False)
 
 			if systemplatformandroid: _nintendo64_args = 'start -n paulscode.android.mupen64plus.free/paulscode.android.mupen64plusae.MainActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
@@ -1039,57 +1096,65 @@ def copylaunchers(force=False):
 			elif systemplatformlinux: _nintendo64_args = 'mupen64plus'
 			elif systemplatformwindows: _nintendo64_args = 'mupen64plus_libretro.dll'
 			#start -n com.androidemu.n64/.EmulatorActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"
+			dp.update(50,'Generating Launchers file',"Setting _nintendo64_args..")
 			replace_word(emudata_launcher_file,'_nintendo64_args',_nintendo64_args, infile_="", LineR=False , LineClean=False)
 
 			if systemplatformandroid: _nintendods_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinuxraspberrypi: pass
 			elif systemplatformlinux: _nintendods_args = 'desmume'
 			elif systemplatformwindows: _nintendods_args = 'desmume_libretro.dll'
+			dp.update(55,'Generating Launchers file',"Setting _nintendo_args..")
 			replace_word(emudata_launcher_file,'_nintendods_args',_nintendods_args, infile_="", LineR=False , LineClean=False)
 			
 			if systemplatformandroid: _segagenesis_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinuxraspberrypi: pass
 			elif systemplatformlinux: _segagenesis_args = 'genesis.plus.gx'
 			elif systemplatformwindows: _segagenesis_args = 'genesis.plus.gx_libretro.dll'
+			dp.update(60,'Generating Launchers file',"Setting _segagenesis_args..")
 			replace_word(emudata_launcher_file,'_segagenesis_args',_segagenesis_args, infile_="", LineR=False , LineClean=False)
 
 			if systemplatformandroid: _ps1_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinuxraspberrypi: 'pcsx.rearmed'
 			elif systemplatformlinux: _ps1_args = 'mednafen.psx'
 			elif systemplatformwindows: _ps1_args = 'mednafen.psx_libretro.dll'
+			dp.update(65,'Generating Launchers file',"Setting _ps1_args..")
 			replace_word(emudata_launcher_file,'_ps1_args',_ps1_args, infile_="", LineR=False , LineClean=False)
 
 			if systemplatformandroid: _supernintendo_args = 'start -n com.explusalpha.Snes9xPlus/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinuxraspberrypi: 'pocketsnes'
 			elif systemplatformlinux: _supernintendo_args = 'snes9x.next'
 			elif systemplatformwindows: _supernintendo_args = 'snes9x.next_libretro.dll'
+			dp.update(70,'Generating Launchers file',"Setting _supernintendo_args..")
 			replace_word(emudata_launcher_file,'_supernintendo_args',_supernintendo_args, infile_="", LineR=False , LineClean=False)
 
 			if systemplatformandroid: _turbografx16_args = 'start -n com.explusalpha.Snes9xPlus/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinuxraspberrypi: pass
 			elif systemplatformlinux: _turbografx16_args = 'mednafen.pce.fast'
 			elif systemplatformwindows: _turbografx16_args = 'mednafen.pce.fast_libretro.dll'
+			dp.update(90,'Generating Launchers file',"Setting _segagenesis_args..")
 			replace_word(emudata_launcher_file,'_turbografx16_args',_turbografx16_args, infile_="", LineR=False , LineClean=False)
 			
 			if systemplatformandroid: _dreamcast_args = 'start -n com.explusalpha.Snes9xPlus/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinuxraspberrypi: pass
 			elif systemplatformlinux: _dreamcast_args = 'reicast'
 			elif systemplatformwindows: _dreamcast_args = 'reicast_libretro.dll'
+			dp.update(95,'Generating Launchers file',"Setting _dreamcast_args..")
 			replace_word(emudata_launcher_file,'_dreamcast_args',_dreamcast_args, infile_="", LineR=False , LineClean=False)
-
+			dp.update(100,'Generating Launchers file',"Finising..") ; xbmc.sleep(500)
 			
-			
+		dp.close
 	
 	text = "force" + space2 + str(force) + newline + \
 	'emudata_launcher_file' + space2 + str(emudata_launcher_file)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def filterbyos(x):
+	'''Simply hide some consoles for specific OS'''
 	name = 'filterbyos' ; printpoint = "" ; returned = ""
 	
 	if systemplatformwindows:
-		pass
-		#if x == 'Featherence_nintendo64': returned = "filter"
+		if getsetting('OS') == "win32":
+			if x == 'Featherence_nintendods': returned = "filter"
 	elif systemplatformlinuxraspberrypi:
 		if x == 'Featherence_nintendo64': returned = "filter"
 		if x == 'Featherence_nintendods': returned = "filter"
@@ -1102,12 +1167,6 @@ def filterbyos(x):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 	return returned
-	
-def checkin():
-	if xbmc.getSkinDir() != 'skin.featherence':
-		pass
-		#notification('Featherence is missing!','','',2000)
-		#sys.exit(0)
 		
 def terminal(command):
 	'''Execute commands to OS terminal'''
