@@ -12,7 +12,29 @@
   <extension point="xbmc.addon.metadata">
 	<platform>all</platform>
     <summary>Multi-emulator frontend based on libretro</summary>
-    <description lang="en">i386 Generic</description>
+    <description lang="en">generic-x86_64</description>
+	<description lang="he">_</description>
+    <disclaimer></disclaimer>
+	<email>finalmakerr@gmail.com</email>
+	<forum></forum>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/emulator.retroarch</source>
+	<website>www.featherence.com</website>
+  </extension>
+</addon>
+
+<addon id="emulator.retroarch_i386" name="Featherence Emu Console - OpenELEC i386" version="1.0.0" provider-name="zaggash, finalmakerr">
+  <requires>
+    <import addon="os.openelec.tv" version="3.2" optional="true"/>
+	<import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+    <summary>Multi-emulator frontend based on libretro</summary>
+    <description lang="en">generic-i386</description>
 	<description lang="he">_</description>
     <disclaimer></disclaimer>
 	<email>finalmakerr@gmail.com</email>
@@ -64,9 +86,9 @@
   </extension>
 </addon>
 
-<addon id="emulator.tool.retroarch" name="Featherence Emu Console - RPI (OpenELEC)" version="1.0.0" provider-name="Mezo, finalmakerr">
+<addon id="emulator.tool.retroarch" name="Featherence Emu Console - OpenELEC2" version="1.0.0" provider-name="Mezo, finalmakerr">
   <requires>
-	<import addon="xbmc.python" version="2.24.0"/>
+	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script"
              library="default.py">
@@ -75,8 +97,7 @@
   <extension point="xbmc.addon.metadata">
 	<platform>linux</platform>
     <summary>Multi-emulator frontend based on libretro</summary>
-    <description lang="en">_</description>
-	<description lang="he">_</description>
+    <description>For RPI/WETEK</description>
     <disclaimer></disclaimer>
 	<email>finalmakerr@gmail.com</email>
 	<forum></forum>
@@ -419,7 +440,7 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.3.60" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.3.61" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.24.0"/>

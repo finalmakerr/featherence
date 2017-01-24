@@ -91,6 +91,15 @@ elif systemplatformlinuxraspberrypi:
 	emulator_file_ = emulator_file
 	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
 	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
+
+elif systemplatformlinux and not systemplatformandroid:
+	if getsetting('OS') == "i386": emulator_path = os.path.join(addons_path, 'emulator.retroarch_i386', '')
+	else: emulator_path = os.path.join(addons_path, 'emulator.retroarch', '')
+	
+	emulator_file = os.path.join(emulator_path, 'bin', 'retroarch.sh')	
+	emulator_file_ = emulator_file
+	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
+	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
 	
 else:
 	emulator_path = os.path.join(addons_path, 'emulator.retroarch', '')

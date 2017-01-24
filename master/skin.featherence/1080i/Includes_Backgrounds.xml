@@ -27,7 +27,7 @@
 		<animation condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + !Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditional</animation>
 		<aspectratio align="top">scale</aspectratio>
 		<imagepath background="true">$VAR[background]</imagepath>
-		<include>MultiFanart_timeperimage</include>
+		<include>MultiFanart_TimePerImage</include>
 		<include>MultiFanart_fadetime</include>
 		<include>MultiFanart_randomize</include>
 		<include>Fade_BackgroundOverlay</include>
@@ -1202,31 +1202,31 @@
 	<value condition="Skin.String(background101)">$INFO[Skin.String(background101)]</value>
   </variable>
   
-  <include name="MultiFanart_timeperimage">
-    <include condition="!Skin.String(MultiFanart_timeperimage)">MultiFanart_timeperimage0</include>
-    <include condition="Skin.String(MultiFanart_timeperimage,1)">MultiFanart_timeperimage1</include>
-    <include condition="Skin.String(MultiFanart_timeperimage,2)">MultiFanart_timeperimage2</include>
-    <include condition="Skin.String(MultiFanart_timeperimage,3)">MultiFanart_timeperimage3</include>
-    <include condition="Skin.String(MultiFanart_timeperimage,4)">MultiFanart_timeperimage4</include>
-    <include condition="Skin.String(MultiFanart_timeperimage,5)">MultiFanart_timeperimage5</include>
+  <include name="MultiFanart_TimePerImage">
+    <include condition="!Skin.String(MultiFanart_TimePerImage)">MultiFanart_TimePerImage0</include>
+    <include condition="Skin.String(MultiFanart_TimePerImage,1)">MultiFanart_TimePerImage1</include>
+    <include condition="Skin.String(MultiFanart_TimePerImage,2)">MultiFanart_TimePerImage2</include>
+    <include condition="Skin.String(MultiFanart_TimePerImage,3)">MultiFanart_TimePerImage3</include>
+    <include condition="Skin.String(MultiFanart_TimePerImage,4)">MultiFanart_TimePerImage4</include>
+    <include condition="Skin.String(MultiFanart_TimePerImage,5)">MultiFanart_TimePerImage5</include>
   </include>
   
-  <include name="MultiFanart_timeperimage0">
+  <include name="MultiFanart_TimePerImage0">
     <timeperimage>10000</timeperimage>
   </include>
-  <include name="MultiFanart_timeperimage1">
+  <include name="MultiFanart_TimePerImage1">
     <timeperimage>15000</timeperimage>
   </include>
-  <include name="MultiFanart_timeperimage2">
+  <include name="MultiFanart_TimePerImage2">
     <timeperimage>20000</timeperimage>
   </include>
-  <include name="MultiFanart_timeperimage3">
+  <include name="MultiFanart_TimePerImage3">
     <timeperimage>25000</timeperimage>
   </include>
-  <include name="MultiFanart_timeperimage4">
+  <include name="MultiFanart_TimePerImage4">
     <timeperimage>30000</timeperimage>
   </include>
-  <include name="MultiFanart_timeperimage5">
+  <include name="MultiFanart_TimePerImage5">
     <timeperimage>7000</timeperimage>
   </include>
   
@@ -1248,31 +1248,31 @@
     <fadetime>200</fadetime>
   </include>
   <include name="MultiFanart_fadetime1">
-    <fadetime>500</fadetime>
+    <fadetime>400</fadetime>
   </include>
   <include name="MultiFanart_fadetime2">
-    <fadetime>1000</fadetime>
+    <fadetime>600</fadetime>
   </include>
   <include name="MultiFanart_fadetime3">
-    <fadetime>1500</fadetime>
+    <fadetime>800</fadetime>
   </include>
   <include name="MultiFanart_fadetime4">
-    <fadetime>2000</fadetime>
+    <fadetime>1000</fadetime>
   </include>
   <include name="MultiFanart_fadetime5">
-    <fadetime>2500</fadetime>
+    <fadetime>1250</fadetime>
   </include>
   <include name="MultiFanart_fadetime6">
-    <fadetime>3000</fadetime>
+    <fadetime>1500</fadetime>
   </include>
   <include name="MultiFanart_fadetime7">
-    <fadetime>3500</fadetime>
+    <fadetime>2000</fadetime>
   </include>
   <include name="MultiFanart_fadetime8">
-    <fadetime>4000</fadetime>
+    <fadetime>2500</fadetime>
   </include>
   <include name="MultiFanart_fadetime9">
-    <fadetime>4500</fadetime>
+    <fadetime>3000</fadetime>
   </include>
   <include name="MultiFanart_fadetime10">
     <fadetime>5000</fadetime>

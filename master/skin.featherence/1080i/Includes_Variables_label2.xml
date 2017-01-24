@@ -400,22 +400,26 @@
   </variable>
 
   <variable name="238label2">
-	 <value condition="!Skin.String(MultiFanart_timeperimage)">10</value>
-	 <value condition="Skin.String(MultiFanart_timeperimage,1)">15</value>
-	 <value condition="Skin.String(MultiFanart_timeperimage,2)">20</value>
-	 <value condition="Skin.String(MultiFanart_timeperimage,3)">25</value>
-	 <value condition="Skin.String(MultiFanart_timeperimage,4)">30</value>
-	 <value condition="Skin.String(MultiFanart_timeperimage,5)">7</value>
+	 <value condition="!Skin.String(MultiFanart_TimePerImage)">$LOCALIZE[13278]</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,1)">15</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,2)">20</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,3)">25</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,4)">30</value>
+	 <value condition="Skin.String(MultiFanart_TimePerImage,5)">7</value>
   </variable>
-   
-   <variable name="239label2">
-	 <value condition="!Skin.String(MultiFanart_fadetime)">0.2</value>
-	 <value condition="Skin.String(MultiFanart_fadetime,1)">0.5</value>
-	 <value condition="Skin.String(MultiFanart_fadetime,2)">1</value>
-	 <value condition="Skin.String(MultiFanart_fadetime,3)">1.5</value>
-	 <value condition="Skin.String(MultiFanart_fadetime,4)">2</value>
-	 <value condition="Skin.String(MultiFanart_fadetime,5)">2.5</value>
-   </variable>
+
+  <variable name="239label2">
+	 <value condition="!Skin.String(MultiFanart_fadetime)">$LOCALIZE[13278]</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,1)">0.4</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,2)">0.6</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,3)">0.8</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,4)">1</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,5)">1.25</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,6)">1.5</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,7)">2</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,8)">2.5</value>
+	 <value condition="Skin.String(MultiFanart_fadetime,9)">3</value>
+  </variable>
   
   <variable name="240label2">
     <value condition="Skin.HasSetting(MultiFanart_randomize)">$LOCALIZE[106]</value>

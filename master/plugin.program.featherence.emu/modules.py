@@ -752,8 +752,8 @@ def getfileID(file):
 	elif file == "Dreamcast_4P_GigaWing 2": fileID = "gec0iw3mw712lwe" #featherence.guser8
 	elif file == "Dreamcast_4P_Toy Commander": fileID = "3mch97gzj160x29" #featherence.guser8
 	
-	elif file == "Dreamcast_1P_Fighting Force 2": fileID = "" #featherence.guser12
-	elif file == "Dreamcast_2P_Capcom vs. SNK 2": fileID = "" #featherence.guser12
+	elif file == "Dreamcast_1P_Fighting Force 2": fileID = "owp5a3e8sxj0sh3" #featherence.guser12
+	elif file == "Dreamcast_2P_Capcom vs. SNK 2": fileID = "ue73pbxrffpwf3c" #featherence.guser12 #MORE!
 	
 	
 	
@@ -799,16 +799,23 @@ def copyarcade(force=False):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
 def installemuconsole(force=False):
+	printpoint = ""
 	if force == True:
 		if os.path.exists(emulator_path): notification('Emulator already exists!',emulator_path,"",7000)
 	if systemplatformwindows and OS == 'win32': installaddon('emulator.retroarch_win32', update=True)
 	elif systemplatformwindows: installaddon('emulator.retroarch_win64', update=True)
 	elif systemplatformlinuxraspberrypi: installaddon('emulator.tool.retroarch', update=True)
-	elif systemplatformlinux and not systemplatformandroid: installaddon('emulator.retroarch', update=True)
+	elif systemplatformlinux and not systemplatformandroid:
+		if OS == 'i386': installaddon('emulator.retroarch_i386', update=True)
+		elif OS == 'oe2': installaddon('emulator.tool.retroarch', update=True)
+		else: installaddon('emulator.retroarch', update=True)
+	else:
+		printpoint = printpoint + '6'
+		notification("OS and hardware are not supported!","www.featherence.com","",2000)
 	
 	#installaddon('script.module.featherence.emu', update=True)
 	installaddonP('script.module.featherence.emu', update=True)
-	if not os.path.exists(emulator_path): notification('Featherence Emu Console addon is missing!',"Manual download from addon settings","",4000)
+	if not os.path.exists(emulator_path) and not '6' in printpoint: notification('Featherence Emu Console addon is missing!',"Manual download from addon settings","",4000)
 
 def copyconfig(force=False):
 	name = 'copysettings' ; printpoint = "" ; extra = ""
@@ -934,8 +941,7 @@ def setconfig(force=False):
 	dp.update(100,"Finishing Configuration...", "")
 
 	if systemplatformandroid: pass
-	elif systemplatformlinuxraspberrypi: pass
-	elif systemplatformlinux:
+	elif systemplatformlinux or systemplatformlinuxraspberrypi:
 		x = 'retroarch.cfg'
 		copyfiles(os.path.join(config_path,x), '/storage/.config/retroarch/')
 		x = '.retroarch-core-options.cfg'
@@ -1081,68 +1087,86 @@ def copylaunchers(force=False):
 			replace_word(emudata_launcher_file,'lib_args',lib_args, infile_="", LineR=False , LineClean=False)
 			
 			if systemplatformandroid: _arcade_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			elif systemplatformlinuxraspberrypi: 'imame4all'
-			elif systemplatformlinux: _arcade_args = 'mame2014'
+			elif systemplatformlinux:
+				if OS == "oe2" or systemplatformlinuxraspberrypi: _arcade_args = 'imame4all'
+				elif OS == "i386": _arcade_args = 'fb.alpha'
+				else: _arcade_args = 'mame2014'
 			elif systemplatformwindows:
-				if getsetting('OS') == "win32": _arcade_args = 'mame2010_libretro.dll'
+				if OS == "win32": _arcade_args = 'mame2010_libretro.dll'
 				else: _arcade_args = 'mame2014_libretro.dll'
 			dp.update(40,'Generating Launchers file',"Setting _arcade_args..")
 			replace_word(emudata_launcher_file,'_arcade_args',_arcade_args, infile_="", LineR=False , LineClean=False)
 			
 			
 			if systemplatformandroid: _nintendo_args = 'start -n com.explusalpha.NesEmu/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			elif systemplatformlinuxraspberrypi: 'fceumm'
-			elif systemplatformlinux: _nintendo_args = 'nestopia'
+			elif systemplatformlinux:
+				if systemplatformlinuxraspberrypi or OS == "oe2": _nintendo_args = 'fceumm'
+				elif OS == "i386": _nintendo_args = 'nestopia'
+				else: _nintendo_args = 'nestopia'
 			elif systemplatformwindows: _nintendo_args = 'nestopia_libretro.dll'
 			dp.update(45,'Generating Launchers file',"Setting _nintendo_args..")
 			replace_word(emudata_launcher_file,'_nintendo_args',_nintendo_args, infile_="", LineR=False , LineClean=False)
 
 			if systemplatformandroid: _nintendo64_args = 'start -n paulscode.android.mupen64plus.free/paulscode.android.mupen64plusae.MainActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			elif systemplatformlinuxraspberrypi: pass
-			elif systemplatformlinux: _nintendo64_args = 'mupen64plus'
+			elif systemplatformlinux:
+				if systemplatformlinuxraspberrypi or OS == "oe2": _nintendo64_args = 'mupen64plus'
+				elif OS == "i386": _nintendo64_args = 'mupen64plus'
+				else: _nintendo64_args = 'mupen64plus'
 			elif systemplatformwindows: _nintendo64_args = 'mupen64plus_libretro.dll'
 			#start -n com.androidemu.n64/.EmulatorActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"
 			dp.update(50,'Generating Launchers file',"Setting _nintendo64_args..")
 			replace_word(emudata_launcher_file,'_nintendo64_args',_nintendo64_args, infile_="", LineR=False , LineClean=False)
 
 			if systemplatformandroid: _nintendods_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			elif systemplatformlinuxraspberrypi: pass
-			elif systemplatformlinux: _nintendods_args = 'desmume'
+			elif systemplatformlinux:
+				if systemplatformlinuxraspberrypi or OS == "oe2": _nintendods_args = ""
+				elif OS == "i386": _nintendods_args = 'desmume'
+				else: _nintendods_args = 'desmume'
 			elif systemplatformwindows: _nintendods_args = 'desmume_libretro.dll'
-			dp.update(55,'Generating Launchers file',"Setting _nintendo_args..")
+			dp.update(55,'Generating Launchers file',"Setting _nintendods_args..")
 			replace_word(emudata_launcher_file,'_nintendods_args',_nintendods_args, infile_="", LineR=False , LineClean=False)
 			
 			if systemplatformandroid: _segagenesis_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			elif systemplatformlinuxraspberrypi: pass
-			elif systemplatformlinux: _segagenesis_args = 'genesis.plus.gx'
+			elif systemplatformlinux:
+				if systemplatformlinuxraspberrypi or OS == "oe2": _segagenesis_args = 'genesis_plus.gx'
+				elif OS == "i386": _segagenesis_args = 'genesis.plus.gx'
+				else: _segagenesis_args = 'genesis.plus.gx'
 			elif systemplatformwindows: _segagenesis_args = 'genesis.plus.gx_libretro.dll'
 			dp.update(60,'Generating Launchers file',"Setting _segagenesis_args..")
 			replace_word(emudata_launcher_file,'_segagenesis_args',_segagenesis_args, infile_="", LineR=False , LineClean=False)
 
 			if systemplatformandroid: _ps1_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			elif systemplatformlinuxraspberrypi: 'pcsx.rearmed'
-			elif systemplatformlinux: _ps1_args = 'mednafen.psx'
+			elif systemplatformlinux:
+				if systemplatformlinuxraspberrypi or OS == "oe2": _ps1_args = 'pcsx.rearmed'
+				elif OS == "i386": _ps1_args = 'mednafen.psx'
+				else: _ps1_args = 'mednafen.psx'
 			elif systemplatformwindows: _ps1_args = 'mednafen.psx_libretro.dll'
 			dp.update(65,'Generating Launchers file',"Setting _ps1_args..")
 			replace_word(emudata_launcher_file,'_ps1_args',_ps1_args, infile_="", LineR=False , LineClean=False)
 
 			if systemplatformandroid: _supernintendo_args = 'start -n com.explusalpha.Snes9xPlus/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			elif systemplatformlinuxraspberrypi: 'pocketsnes'
-			elif systemplatformlinux: _supernintendo_args = 'snes9x.next'
+			elif systemplatformlinux:
+				if systemplatformlinuxraspberrypi or OS == "oe2": _supernintendo_args = 'pocketsnes'
+				elif OS == "i386": _supernintendo_args = 'snes9x.next'
+				else: _supernintendo_args = 'snes9x.next'
 			elif systemplatformwindows: _supernintendo_args = 'snes9x.next_libretro.dll'
 			dp.update(70,'Generating Launchers file',"Setting _supernintendo_args..")
 			replace_word(emudata_launcher_file,'_supernintendo_args',_supernintendo_args, infile_="", LineR=False , LineClean=False)
 
 			if systemplatformandroid: _turbografx16_args = 'start -n com.explusalpha.Snes9xPlus/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			elif systemplatformlinuxraspberrypi: pass
-			elif systemplatformlinux: _turbografx16_args = 'mednafen.pce.fast'
+			elif systemplatformlinux:
+				if systemplatformlinuxraspberrypi or OS == "oe2": _turbografx16_args = 'mednafen.pce.fast'
+				elif OS == "i386": _turbografx16_args = 'mednafen.pce.fast'
+				else: _turbografx16_args = 'mednafen.pce.fast'
 			elif systemplatformwindows: _turbografx16_args = 'mednafen.pce.fast_libretro.dll'
 			dp.update(90,'Generating Launchers file',"Setting _segagenesis_args..")
 			replace_word(emudata_launcher_file,'_turbografx16_args',_turbografx16_args, infile_="", LineR=False , LineClean=False)
 			
 			if systemplatformandroid: _dreamcast_args = 'start -n com.explusalpha.Snes9xPlus/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
-			elif systemplatformlinuxraspberrypi: pass
-			elif systemplatformlinux: _dreamcast_args = 'reicast'
+			elif systemplatformlinux:
+				if systemplatformlinuxraspberrypi or OS == "oe2": _dreamcast_args = ""
+				elif OS == "i386": _dreamcast_args = 'reicast'
+				else: _dreamcast_args = 'reicast'
 			elif systemplatformwindows: _dreamcast_args = 'reicast_libretro.dll'
 			dp.update(95,'Generating Launchers file',"Setting _dreamcast_args..")
 			replace_word(emudata_launcher_file,'_dreamcast_args',_dreamcast_args, infile_="", LineR=False , LineClean=False)
@@ -1159,14 +1183,21 @@ def filterbyos(x):
 	name = 'filterbyos' ; printpoint = "" ; returned = ""
 	
 	if systemplatformwindows:
-		if getsetting('OS') == "win32":
+		if OS == "win32":
 			if x == 'Featherence_nintendods': returned = "filter"
-	elif systemplatformlinuxraspberrypi:
-		if x == 'Featherence_nintendo64': returned = "filter"
-		if x == 'Featherence_nintendods': returned = "filter"
-		if x == 'Featherence_turbografx16': pass
-		if x == 'Featherence_dreamcast': pass
-	elif systemplatformlinux and not systemplatformandroid: pass
+	
+	elif systemplatformandroid: pass
+	
+	elif systemplatformlinux:
+		if systemplatformlinuxraspberrypi or OS == "oe2":
+			if x == 'Featherence_nintendods': returned = "filter"
+			if x == 'Featherence_dreamcast': returned = "filter"
+		elif OS == "i386":
+			if x == 'Featherence_nintendods': returned = "filter"
+			if x == 'Featherence_dreamcast': returned = "filter"
+			
+	
+	
 	
 	text = "x" + space2 + str(x) + newline + \
 	'returned' + space2 + str(returned)
@@ -1189,6 +1220,7 @@ def terminal(command):
 		printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 		'''---------------------------'''
 	return output
+
 	
 def AudioDevices():
 	'''------------------------------

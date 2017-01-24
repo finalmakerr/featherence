@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="emulator.retroarch_i386" name="Featherence Emu Console - OpenELEC i386" version="1.0.0" provider-name="zaggash, finalmakerr">
+  <requires>
+    <import addon="os.openelec.tv" version="3.2" optional="true"/>
+	<import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+    <summary>Multi-emulator frontend based on libretro</summary>
+    <description lang="en">generic-i386</description>
+	<description lang="he">_</description>
+    <disclaimer></disclaimer>
+	<email>finalmakerr@gmail.com</email>
+	<forum></forum>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/emulator.retroarch</source>
+	<website>www.featherence.com</website>
+  </extension>
+</addon>

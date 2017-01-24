@@ -702,8 +702,8 @@
 	  <control type="button" id="9090" description="ו'ידגט סרטים/סדרות">
 		  <include>Fade_TopInformationOverlay</include>
 		  <width>350</width>
-		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
-		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
+		  <include condition="!Skin.String(TopVideoInformationColor.Name,None)">ButtonC10</include>
+		  <include condition="Skin.String(TopVideoInformationColor.Name,None)">ButtonC10_</include>
 		  <label>$VAR[Button9090]</label>
 		  <onclick condition="Control.IsVisible(311)">Skin.ToggleSetting(MoviesShelfWL)</onclick>
 		  <onclick condition="Control.IsVisible(311)">ActivateWindow(Videos,MovieTitles)</onclick>
@@ -721,8 +721,8 @@
 	  <control type="button" id="9091" description="קדימונים/סרטים">
 		  <include>Fade_TopInformationOverlay</include>
 		  <width>150</width>
-		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
-		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
+		  <include condition="!Skin.String(TopVideoInformationColor.Name,None)">ButtonC10</include>
+		  <include condition="Skin.String(TopVideoInformationColor.Name,None)">ButtonC10_</include>
 		  <label>$VAR[Button9091]</label>	  
 		  <posx>-10</posx>
 		  <onclick condition="String.IsEmpty(Window(home).Property(Widget_Trailers))">SetProperty(Widget_Trailers,true,home)</onclick>
@@ -733,8 +733,8 @@
 	  <control type="button" id="9092" description="רענן">
 		  <include>Fade_TopInformationOverlay</include>
 		  <width>150</width>
-		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
-		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
+		  <include condition="!Skin.String(TopVideoInformationColor.Name,None)">ButtonC10</include>
+		  <include condition="Skin.String(TopVideoInformationColor.Name,None)">ButtonC10_</include>
 		  <label>$LOCALIZE[184]</label>
 		  <onclick>RunScript(script.featherence.service,,?mode=23)</onclick>
 		  <posx>-10</posx>
@@ -744,8 +744,8 @@
 	  <control type="button" id="9094" description="נגן קדימונים אקראיים">
 		  <include>Fade_TopInformationOverlay</include>
 		  <width min="250" max="310">auto</width>
-		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
-		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
+		  <include condition="!Skin.String(TopVideoInformationColor.Name,None)">ButtonC10</include>
+		  <include condition="Skin.String(TopVideoInformationColor.Name,None)">ButtonC10_</include>
 		  <label>$LOCALIZE[31805]</label>
 		  <onclick>RunScript(script.featherence.service,,?mode=25&amp;value=)</onclick>
 		  <posx>-10</posx>
@@ -755,8 +755,8 @@
 
 	  <control type="radiobutton" id="9100" description="עיצוב מעטפת">
 	    <include>Fade_TopInformationOverlay</include>
-		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
-		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
+		<include condition="!Skin.String(TopVideoInformationColor.Name,None)">ButtonC10</include>
+		<include condition="Skin.String(TopVideoInformationColor.Name,None)">ButtonC10_</include>
 		<label>$LOCALIZE[31830]</label>
 		<onclick>Action(Down)</onclick>
 		<onclick>Action(Down)</onclick>
@@ -767,8 +767,8 @@
 	  
 	  <control type="radiobutton" id="9103" description="הגדרות מעטפת">
 	    <include>Fade_TopInformationOverlay</include>
-		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
-		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
+		<include condition="!Skin.String(TopVideoInformationColor.Name,None)">ButtonC10</include>
+		<include condition="Skin.String(TopVideoInformationColor.Name,None)">ButtonC10_</include>
 		<label>$LOCALIZE[20077]</label>
 		<onclick>ActivateWindow(SkinSettings.xml)</onclick>
 		<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
@@ -777,8 +777,8 @@
 	  <control type="radiobutton" id="9101" description="הסתר כפתורים לא פעילים">
 		<include>Fade_TopInformationOverlay</include>
 		<width>370</width>
-		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
-		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
+		<include condition="!Skin.String(TopVideoInformationColor.Name,None)">ButtonC10</include>
+		<include condition="Skin.String(TopVideoInformationColor.Name,None)">ButtonC10_</include>
 		<label>$LOCALIZE[31820]</label>
 		<onclick condition="String.IsEmpty(Window(1117).Property(HideInactiveButtons))">SetProperty(HideInactiveButtons,true,1117)</onclick>
 		<onclick condition="!String.IsEmpty(Window(1117).Property(HideInactiveButtons))">ClearProperty(HideInactiveButtons,1117)</onclick>
@@ -788,8 +788,8 @@
 	  
 	  <control type="radiobutton" id="9105" description="שמירה/טעינה">
 	    <include>Fade_TopInformationOverlay</include>
-		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
-		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
+		<include condition="!Skin.String(TopVideoInformationColor.Name,None)">ButtonC10</include>
+		<include condition="Skin.String(TopVideoInformationColor.Name,None)">ButtonC10_</include>
 		<label>$LOCALIZE[31003]</label>
 		<selected>Window.IsVisible(DialogSelect.xml)</selected>
 		<onclick>RunScript(script.featherence.service,,?mode=203)</onclick>
@@ -799,8 +799,8 @@
 	  <control type="radiobutton" id="9109" description="TEST">
 		<include>Fade_TopInformationOverlay</include>
 		<onleft>520</onleft>
-		<include condition="!Skin.String(TopVideoInformationColor,None)">ButtonC10</include>
-		<include condition="Skin.String(TopVideoInformationColor,None)">ButtonC10_</include>
+		<include condition="!Skin.String(TopVideoInformationColor.Name,None)">ButtonC10</include>
+		<include condition="Skin.String(TopVideoInformationColor.Name,None)">ButtonC10_</include>
 		<label>$INFO[Window(Home).Property(SkinHelper.ListItemDuration)]</label>
 		<onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;group=mainmenu)</onclick>
 		<selected>Window.IsVisible(1173)</selected>

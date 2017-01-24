@@ -2609,7 +2609,7 @@ def mode233(value, admin, name, printpoint):
 		'''Add-Fanart'''
 		name = localize(20441)
 		x = 'background'
-		if not '0' in value and not '3' in value: y = property_buttonid
+		if not '0' in printpoint and not 'C' in printpoint: y = property_buttonid
 		nolabel=localize(20438)
 		yeslabel=localize(20441)
 	
@@ -2689,6 +2689,7 @@ def mode233(value, admin, name, printpoint):
 	'property_widgetbuttonid_' + space2 + to_utf8(property_widgetbuttonid_) + newline + \
 	'customiconspath' + space2 + to_utf8(customiconspath) + newline + \
 	'custombackgroundspath' + space2 + to_utf8(custombackgroundspath) + newline + \
+	'property_subbuttonid_' + space2 + to_utf8(property_subbuttonid_) + newline + \
 	'property_temp2' + space2 + to_utf8(property_temp2)
 	printlog(title='mode233', printpoint=printpoint, text=text, level=0, option="")
 
