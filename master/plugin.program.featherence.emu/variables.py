@@ -119,6 +119,7 @@ featherence_emu_module_path = os.path.join(addons_path, 'script.module.featheren
 system_path = os.path.join(featherence_emu_module_path, 'system','')
 shader_path = os.path.join(featherence_emu_module_path,'shaders','')
 config_path2 = os.path.join(featherence_emu_module_path,'config','')
+autoconfig_path2 = os.path.join(featherence_emu_module_path,'autoconfig','')
 
 '''Emulator userdata'''
 emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')

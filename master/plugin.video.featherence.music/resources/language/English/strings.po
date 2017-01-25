@@ -71,8 +71,8 @@ msgid "Classical Music"
 msgstr "מוזיקה קלאסית"
 
 msgctxt "#30019"
-msgid "$LOCALIZE[19021]"
-msgstr "$LOCALIZE[19021]"
+msgid "Radio"
+msgstr "רדיו"
 
 msgctxt "#30020"
 msgid "Liveshow"
@@ -207,8 +207,8 @@ msgid "Nathan Goshen"
 msgstr "נתן גושן"
 
 msgctxt "#30128"
-msgid ""
-msgstr ""
+msgid "Zohar Argov"
+msgstr "זוהר ארגוב"
 
 msgctxt "#30129"
 msgid ""
@@ -599,29 +599,34 @@ msgctxt "#30222"
 msgid "Born on October 3, 1974 in Holon is an Israeli singer who sang in oriental style..."
 msgstr "נולד ב-3 באוקטובר 1974 בחולון) הוא זמר ישראלי ששר בסגנון מזרחי..."
 
-#מירי מסיקה"
+#מירי מסיקה
 msgctxt "#30223"
 msgid "Born on May 3, 1978 is a singer, actress and model Israeli ..."
 msgstr "נולדה ב-3 במאי  1978 היא זמרת, שחקנית ודוגמנית ישראלית..."
 
-#מאור אדרי"
+#מאור אדרי
 msgctxt "#30224"
 msgid "Born on 17 April 1989, is a singer, writer and composer Israeli Oriental music ..."
 msgstr "נולד ב-17 באפריל 1989 הוא זמר, כותב ומלחין מוזיקה מזרחית ישראלי..."
 
-#משה פרץ"
+#משה פרץ
 msgctxt "#30225"
 msgid "Born on 10 May 1983, is a singer, composer and songwriter Israeli ..."
 msgstr "נולד ב-10 במאי 1983, כ"ז באייר תשמ"ג הוא זמר, מלחין ופזמונאי ישראלי..."
 
-#משינה"
+#משינה
 msgctxt "#30226"
 msgid "Israeli rock band, considered by many one of the most prominent bands operating in Israel ..."
 msgstr "להקת רוק ישראלית, הנחשבת בעיני רבים לאחת הלהקות הבולטות שפעלו בישראל‏..."
 
-#נתן גושן"
+#נתן גושן
 msgctxt "#30227"
 msgid "Born on August 6, 1986 a singer, songwriter and music composer ..."
+msgstr "נולד ב  6 באוגוסט 1986 זמר, פזמונאי ומלחין ישראלי..."
+
+#זוהר ארגוב
+msgctxt "#30228"
+msgid "Zohar Argov was the Israeli singer who was active in the years 1977-1987. Is still regarded as one of the largest and most important Israeli singers, leaders of Eastern music and one of those responsible for the recognition of Mediterranean music as part of the Israeli experience."
 msgstr "נולד ב  6 באוגוסט 1986 זמר, פזמונאי ומלחין ישראלי..."
 
 msgctxt "#30229"
@@ -1880,84 +1885,84 @@ msgid ""
 msgstr ""
 
 msgctxt "#30600"
-msgid ""
-msgstr ""
+msgid "Leibo"
+msgstr "Leibo"
 
 msgctxt "#30601"
 msgid ""
 msgstr ""
 
 msgctxt "#30602"
-msgid ""
-msgstr ""
+msgid "Dor Dekel"
+msgstr "Dor Dekel"
 
 msgctxt "#30603"
 msgid ""
 msgstr ""
 
 msgctxt "#30604"
-msgid ""
-msgstr ""
+msgid "Omri Guetta"
+msgstr "Omri Guetta"
 
 msgctxt "#30605"
 msgid ""
 msgstr ""
 
 msgctxt "#30606"
-msgid ""
-msgstr ""
+msgid "Skazi"
+msgstr "Skazi"
 
 msgctxt "#30607"
 msgid ""
 msgstr ""
 
 msgctxt "#30608"
-msgid ""
-msgstr ""
+msgid "Offer Nissim"
+msgstr "Offer Nissim"
 
 msgctxt "#30609"
 msgid ""
 msgstr ""
 
 msgctxt "#30610"
-msgid ""
-msgstr ""
+msgid "Itay Galo"
+msgstr "Itay Galo"
 
 msgctxt "#30611"
 msgid ""
 msgstr ""
 
 msgctxt "#30612"
-msgid ""
-msgstr ""
+msgid "Elon Matana"
+msgstr "Elon Matana"
 
 msgctxt "#30613"
 msgid ""
 msgstr ""
 
 msgctxt "#30614"
-msgid ""
-msgstr ""
+msgid "Astrix"
+msgstr "Astrix"
 
 msgctxt "#30615"
-msgid ""
-msgstr ""
+msgid "Avi Shmailov (Hebrew: אבי שמיילוב) under his stage name Astrix, is an international trance music dj and producer specializing in the subgenre of Full On psychedelic trance.[CR]In 2006 Astrix reached #41 (+34 rise) in DJMag's "Top 100 DJs" yearly rank along with a rise of several other Israeli musicians (the highest being Infected Mushroom ranked #9) marking a significant worldwide popularisation of the Israeli electronic music scene. In 2007 Astrix reached #18 on the list."
+msgstr "אסטריקס (באנגלית: Astrix) הוא שם הבמה של אבי שמיילוב, יליד 1981 שעלה לישראל מחבל הקווקז שבדרום רוסיה, מפיק ויוצר טראנס ישראלי שיצירתו מתמקדת בסוגת הטראנס פסיכדלי והפול-און ובשנים האחרונות גם בפרוגרסיב טראנס."
 
 msgctxt "#30616"
-msgid ""
-msgstr ""
+msgid "Yahel"
+msgstr "Yahel"
 
 msgctxt "#30617"
-msgid ""
-msgstr ""
+msgid "יהל שרמן (נולד במעלות ב-12 במאי 1976) הוא די ג'יי ויוצר מוזיקה אלקטרונית מסוג טראנס מישראל. מוכר בשם הבמה "DJ Yahel"."
+msgstr "יהל שרמן (נולד במעלות ב-12 במאי 1976) הוא די ג'יי ויוצר מוזיקה אלקטרונית מסוג טראנס מישראל. מוכר בשם הבמה "DJ Yahel"."
 
 msgctxt "#30618"
-msgid ""
-msgstr ""
+msgid "Guy Gerber"
+msgstr "Guy Gerber"
 
 msgctxt "#30619"
-msgid ""
-msgstr ""
+msgid "Guy Gerber (born in 1974 in Holon, near Tel Aviv) is an Israeli electronic DJ/producer and musician who has set a landmark in the underground techno scene and beyond. His projects range from collaborating with one of hip hop's biggest figures, Puff Daddy, to starting a left-field night at one of Ibiza's most renowned clubs, the Pacha."
+msgstr "Guy Gerber (born in 1974 in Holon, near Tel Aviv) is an Israeli electronic DJ/producer and musician who has set a landmark in the underground techno scene and beyond. His projects range from collaborating with one of hip hop's biggest figures, Puff Daddy, to starting a left-field night at one of Ibiza's most renowned clubs, the Pacha."
 
 msgctxt "#30620"
 msgid ""
@@ -2682,3 +2687,79 @@ msgstr ""
 msgctxt "#30900"
 msgid "Victoria Secret"
 msgstr "Victoria Secret"
+
+msgctxt "#30901"
+msgid "Victoria's Secret is an American company for the production and distribution of lingerie, the largest in the United States. The company was founded by businessman Roy Raymond on June 12, 1977, sales in 2012 amounted to more than $ 6 billion."
+msgstr "ויקטוריה'ס סיקרט היא חברה אמריקנית לייצור והפצת מוצרי הלבשה תחתונה, הגדולה ביותר בארצות הברית. החברה נוסדה על ידי איש העסקים רוי ריימונד ב-12 ביוני 1977. מכירותיה בשנת 2012 הסתכמו ביותר מ-6 מיליארד דולר."
+
+msgctxt "#30902"
+msgid "Gucci"
+msgstr "Gucci"
+
+msgctxt "#30903"
+msgid "Gucci is an Italian brand for fashion and leather. Brand was founded by Gucci Gucci city of Naples, in 1921, Gucci is one of the most famous and recognized brands in the world. Gucci belongs to the French corporation Pino-Printemps-Rdot."
+msgstr "ית גוצ'י, הוא מותג איטלקי למוצרי אופנה ועור. המותג נוסד על ידי גוצ'יו גוצ'י בעיר נפולי, בשנת 1921. גוצ'י הוא אחד המותגים המפורסמים והמוכרים ביותר בעולם. בית גוצ'י שייך לתאגיד הצרפתי פינו-פרינטמפ-רדוט."
+
+msgctxt "#30904"
+msgid "Pronovias"
+msgstr "Pronovias"
+
+msgctxt "#30905"
+msgid ""
+msgstr ""
+
+msgctxt "#30906"
+msgid "Elisabetta Franchi"
+msgstr "Elisabetta Franchi"
+
+msgctxt "#30907"
+msgid "Elisabetta Franchi is a brand fashionable Italian properties of Betty Blue SpA and led by the eponymous designer.[CR]Elisabetta Franchi offers various lines of clothing, accessories, handbags and shoes. The brand is present in approximately 60 single-brand boutiques in many places in the world."
+msgstr "Elisabetta Franchi is a brand fashionable Italian properties of Betty Blue SpA and led by the eponymous designer.[CR]Elisabetta Franchi offers various lines of clothing, accessories, handbags and shoes. The brand is present in approximately 60 single-brand boutiques in many places in the world."
+
+msgctxt "#30908"
+msgid ""
+msgstr ""
+
+msgctxt "#30909"
+msgid ""
+msgstr ""
+
+msgctxt "#30910"
+msgid ""
+msgstr ""
+
+msgctxt "#30911"
+msgid ""
+msgstr ""
+
+msgctxt "#30912"
+msgid ""
+msgstr ""
+
+msgctxt "#30913"
+msgid ""
+msgstr ""
+
+msgctxt "#30914"
+msgid ""
+msgstr ""
+
+msgctxt "#30915"
+msgid ""
+msgstr ""
+
+msgctxt "#30916"
+msgid ""
+msgstr ""
+
+msgctxt "#30917"
+msgid ""
+msgstr ""
+
+msgctxt "#30918"
+msgid ""
+msgstr ""
+
+msgctxt "#30919"
+msgid ""
+msgstr ""

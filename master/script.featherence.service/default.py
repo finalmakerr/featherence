@@ -233,7 +233,7 @@ elif mode == 32:
 	---MISCS-------------------------
 	------------------------------'''
 	name = 'MISCS'
-	mode32(value, value2, name, printpoint)
+	mode32(value, value2, value3, name, printpoint)
 	'''---------------------------'''
 
 elif mode == 33:

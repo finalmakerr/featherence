@@ -11,7 +11,7 @@ WIP - WORK IN PROGRESS
 - Added optimal settings for Dreamcast, converting original games to FULL HD.
 
 ------------------------
-Featherence Emu v0.1.1 (xx-01-17)
+Featherence Emu v0.1.1 (25-01-17)
 ------------------------
 - Added filter for unavailable consoles for some platforms such as Dreamcast, Nintendo 64, Nintendo DS for RPI or Nintendo DS for Windows 32bits.
 - Added dialog progress support for some heavy duty settings.
@@ -21,6 +21,7 @@ Featherence Emu v0.1.1 (xx-01-17)
 - Featherence Emu Console addon is now splitted for each OS and common modules are stored in Featherence Emu Module addon.
 - Major update of addon settings:
 + Added new categories Controllers and Download.
++ Added 142 Joysticks in-game keys support (WIP).
 + Added Operation System and Download OS Emulator in addon settings for some OS.
 + Better sort and description of settings.
 - Minor bugs fix:
@@ -28,6 +29,7 @@ Featherence Emu v0.1.1 (xx-01-17)
 + No changelog appear when update occur.
 
 http://forum.kodi.tv/showthread.php?tid=304634
+Kind Note: This patch is very big and some contents may not work for some reasons, please share your information and be patient.
 
 ------------------------
 Featherence Emu v0.1.0 (21-01-17)

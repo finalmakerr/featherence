@@ -850,12 +850,13 @@ def mode31(value, value2, value3, value4, admin, name, printpoint):
 	'''------------------------------
 	---diaogtextviewer---------------
 	------------------------------'''
-	name = 'diaogtextviewer-mode31' ; printpoint = ""
+	name = 'diaogtextviewer-mode31' ; printpoint = "" ; TypeError = "" ; extra = ""
 	header = "" ; message = ""
 	try: header = str(value).encode('utf-8')
-	except: pass
+	except Exception, TypeError: extra = extra + newline + 'TypeError-header' + space2 + str(TypeError)
 	try: message = str(value2).encode('utf-8')
-	except: pass
+	except Exception, TypeError: extra = extra + newline + 'TypeError-message' + space2 + str(TypeError)
+
 	if value == 'Custom':
 		printpoint = printpoint + '1'
 		value3 = setPath(type=1,mask="", folderpath="")
@@ -880,11 +881,11 @@ def mode31(value, value2, value3, value4, admin, name, printpoint):
 	text = 'value' + space2 + str(value) + newline + \
 	'value2' + space2 + str(value2) + newline + \
 	'value3' + space2 + str(value3) + newline + \
-	'value4' + space2 + str(value4) + newline
+	'value4' + space2 + str(value4) + newline + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	
-def mode32(value, value2, name, printpoint):
+def mode32(value, value2, value3, name, printpoint):
 	'''------------------------------
 	---MISCS-------------------------
 	------------------------------'''
@@ -1080,7 +1081,9 @@ def mode32(value, value2, name, printpoint):
 	
 	elif value == '9':
 		if value2 != "" and value2 != None:
-			xbmc.sleep(500)
+			try:
+				xbmc.sleep(int(value3))
+			except: xbmc.sleep(500)
 			xbmc.executebuiltin('ActivateWindow('+value2+')')
 	
 	elif value == '10':

@@ -62,6 +62,7 @@ RESET_DREAMCAST_MEM = "%%RESET_DREAMCAST_MEM%%"
 OS_INSTALL = "%%OS_INSTALL%%"
 RESET_CONFIG = "%%RESET_CONFIG%%"
 COPY_KEYMAPS = "%%COPY_KEYMAPS%%"
+COPY_AUTOCONFIG = "%%COPY_AUTOCONFIG%%"
 SET_CONFIG = "%%SET_CONFIG%%"
 AUDIO_DEVICES = "%%AUDIO_DEVICES%%"
 KEYS_HELP = "%%KEYS_HELP%%"
@@ -200,6 +201,8 @@ class Main:
 					installemuconsole(force=True)
                 elif (category == RESET_CONFIG):
                     copyconfig(force=True)
+                elif (category == COPY_AUTOCONFIG):
+					copyautoconfig(force=True)
                 elif (category == COPY_KEYMAPS):
                     copykeymaps()
                 elif (category == DOWNLOAD_ARTWORKS):

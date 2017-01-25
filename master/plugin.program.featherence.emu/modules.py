@@ -839,18 +839,53 @@ def copyconfig(force=False):
 	text = "extra" + space2 + str(extra)
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
-def copykeymaps():
-	returned = dialogyesno('Would you like to continue?','This action will overwrite your current related files!')
-	if returned == 'ok':
-		keymaps_path = os.path.join(userdata_path, 'keymaps', '')
-		copyfiles(emukeymaps_path, keymaps_path)
-		xbmc.executebuiltin('Action(reloadkeymaps)')
+def copyautoconfig(force=False):
+	name = 'copyautoconfig' ; printpoint = "" ; returned = 'ok'
+	
+	try: autoconfig_path2_ = os.listdir(autoconfig_path2)
+	except: autoconfig_path2_ = "" ; printpoint = printpoint + '9' ; notification("Error! Folder not found!",str(autoconfig_path2),"",4000)
+
+	if not '9' in printpoint:
 		
-		filename_ = ""
-		for file in os.listdir(emukeymaps_path):
-			filename = os.path.basename(file)
-			filename_ = filename_ + ', ' + filename
-		dialogok('Keymaps copied!', filename_, '', '')
+		if force == True: returned = dialogyesno('Would you like to continue?','This action will overwrite your current related files!')
+		else: returned = 'ok'
+
+		if returned == 'ok':
+			copyfiles(autoconfig_path2, autoconfig_path)
+			if force == True:
+				header = 'Joysticks in-game keys (autoconfig)'
+				message = str(autoconfig_path2_)
+				message = message.replace("u'","")
+				message = message.replace("'","")
+				message = message.replace(",","[CR]")
+				xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=31&value='+header+'&value2='+message+')')
+	
+	text = "autoconfig_path2" + space2 + str(autoconfig_path2) + newline + \
+	"autoconfig_path2_" + space2 + str(autoconfig_path2_) + newline + \
+	"autoconfig_path" + space2 + str(autoconfig_path) + newline
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+
+def copyconfig(force=False):
+	name = 'copysettings' ; printpoint = "" ; extra = ""
+	
+	path = config_path2
+	if not os.path.exists(path):
+		installemuconsole()
+	else:
+		for file in os.listdir(path):
+			#print file
+			x = os.path.join(config_path, file)
+			if not os.path.exists(x) or force == True:
+				copyfiles(os.path.join(path,file), x)
+			
+		if not os.path.exists(config_path) or force==True:
+			printpoint = printpoint + '1'
+			notification('Recreating configs','','',1000)
+			mkdirs()
+			setconfig(force=True)
+
+	text = "extra" + space2 + str(extra)
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
 def keys_help(filename):
 	name = 'keys_help' ; printpoint = ""
@@ -1088,7 +1123,7 @@ def copylaunchers(force=False):
 			
 			if systemplatformandroid: _arcade_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinux:
-				if OS == "oe2" or systemplatformlinuxraspberrypi: _arcade_args = 'imame4all'
+				if OS == "oe2" or systemplatformlinuxraspberrypi: _arcade_args = 'mame2010'
 				elif OS == "i386": _arcade_args = 'fb.alpha'
 				else: _arcade_args = 'mame2014'
 			elif systemplatformwindows:
@@ -1096,7 +1131,6 @@ def copylaunchers(force=False):
 				else: _arcade_args = 'mame2014_libretro.dll'
 			dp.update(40,'Generating Launchers file',"Setting _arcade_args..")
 			replace_word(emudata_launcher_file,'_arcade_args',_arcade_args, infile_="", LineR=False , LineClean=False)
-			
 			
 			if systemplatformandroid: _nintendo_args = 'start -n com.explusalpha.NesEmu/com.imagine.BaseActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinux:
@@ -1119,7 +1153,7 @@ def copylaunchers(force=False):
 
 			if systemplatformandroid: _nintendods_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinux:
-				if systemplatformlinuxraspberrypi or OS == "oe2": _nintendods_args = ""
+				if systemplatformlinuxraspberrypi or OS == "oe2": _nintendods_args = "desmume"
 				elif OS == "i386": _nintendods_args = 'desmume'
 				else: _nintendods_args = 'desmume'
 			elif systemplatformwindows: _nintendods_args = 'desmume_libretro.dll'
@@ -1190,7 +1224,7 @@ def filterbyos(x):
 	
 	elif systemplatformlinux:
 		if systemplatformlinuxraspberrypi or OS == "oe2":
-			if x == 'Featherence_nintendods': returned = "filter"
+			#if x == 'Featherence_nintendods': returned = "filter"
 			if x == 'Featherence_dreamcast': returned = "filter"
 		elif OS == "i386":
 			if x == 'Featherence_nintendods': returned = "filter"

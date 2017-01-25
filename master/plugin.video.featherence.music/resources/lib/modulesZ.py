@@ -50,7 +50,7 @@ def CATEGORIES10105Z(name, iconimage, desc, background, fanart):
 	
 	list = []
 
-	list.append('&youtube_ch=')
+	list.append('&youtube_ch=UC4XhqoxGQ1oTifJ8yRsjKnA') #The Best Sets On The Net
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
@@ -173,4 +173,6 @@ def CATEGORIES114Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=MultiSabrown')
 	list.append('&youtube_ch=StylebyAnna')
 	list.append('&youtube_ch=SHOWstudio')
+	list.append('&youtube_ch=FatalefashionIII') #FF Channel
+	list.append('&youtube_ch=UCkxPf1eZSpKxY3veCPE6uNw')
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))

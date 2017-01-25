@@ -226,11 +226,12 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	addDir(addonString(30001).encode('utf-8'),'',10101,featherenceserviceicons_path + "music.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30001).encode('utf-8')),'1',0, getAddonFanart(10101, default="")) #Israeli Music
 	addDir(addonString(30002).encode('utf-8'),'',10102,featherenceserviceicons_path + "karaoke.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30002).encode('utf-8')),'1',0, getAddonFanart(10102, default="http://www.totalsingersupport.com/wp-content/uploads/2012/11/Sexy_Singing_Amit_Friedman.jpg")) #Israeli Karaoke
 	addDir(addonString(30004).encode('utf-8'),'',10104,featherenceserviceicons_path + "guitar.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30004).encode('utf-8')),'1',0, getAddonFanart(10104, default="https://upload.wikimedia.org/wikipedia/commons/7/72/Flickr_-_Government_Press_Office_(GPO)_-_Shlomo_Artzi_performing_at_a_rock_festival_in_the_Red_Sea.jpg")) #Israeli Liveshows
+	addDir(addonString(30005).encode('utf-8'),'',10105,featherenceserviceicons_path + "microphone.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30005).encode('utf-8')),'1',0, getAddonFanart(10105, default="http://telavivparty.com/wp-content/uploads/2016/08/Light-House-Club-Tel-Aviv.jpg")) #Israeli Djs
 	
-	addDir(addonString(30006).encode('utf-8'),'',10106,featherenceserviceicons_path + "music.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30006).encode('utf-8')),'1',0, getAddonFanart(10106)) #Mizrahit Music
+	addDir(addonString(30006).encode('utf-8'),'',10106,featherenceserviceicons_path + "music.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30006).encode('utf-8')),'1',0, getAddonFanart(10106, default="http://haflla.com/wp-content/uploads/2014/10/pic4.jpg")) #Mizrahit Music
 	addDir(addonString(30007).encode('utf-8'),'',10107,featherenceserviceicons_path + "karaoke.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30007).encode('utf-8')),'1',0, getAddonFanart(10107, default="http://www.totalsingersupport.com/wp-content/uploads/2012/11/Sexy_Singing_Amit_Friedman.jpg")) #Mizrahit Karaoke
 	addDir(addonString(30009).encode('utf-8'),'',10109,featherenceserviceicons_path + "guitar.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30009).encode('utf-8')),'1',0, getAddonFanart(10108, default="https://i.ytimg.com/vi/089IRvkNAGg/maxresdefault.jpg")) #Mizrahit Liveshows
-	#addDir(addonString(30005).encode('utf-8'),'',10105,featherenceserviceicons_path + "microphone.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30005).encode('utf-8')),'1',0, getAddonFanart(10105)) #Israeli Djs
+	
 
 def CATEGORIES111(name, iconimage, desc, fanart):
 	'''Foreign Music'''
@@ -786,6 +787,71 @@ def CATEGORIES10105(name, iconimage, desc, fanart):
 	
 	CATEGORIES_RANDOM(background,fanart)
 	CATEGORIES10105Z(name, iconimage, desc, background, fanart) #ערוצי טלוויזיה
+	
+	'''Astrix'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_ch=ASTRIXtv')
+	addDir(addonString(30614).encode('utf-8'),list,17,'https://static.djguide.nl/image/djfotos/astrix.jpg',addonString(30615).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="http://mixing.dj/wp-content/uploads/2016/02/astrix.jpg"))
+	
+	'''Dor Dekel'''
+	list = []
+	list.append('&youtube_pl=PL836BAF6EB6F903BF')
+	list.append('&youtube_pl=PL525196B53E11F4E7')
+	addDir(addonString(30602).encode('utf-8'),list,17,'https://pbs.twimg.com/profile_images/3391613680/c69b693265bf51f1293c71ef3ef9bf77.jpeg',addonString(30603).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://pbs.twimg.com/profile_images/3391613680/c69b693265bf51f1293c71ef3ef9bf77.jpeg"))
+	
+	'''Elon Matana'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_ch=ElonMatanaOfficial')
+	addDir(addonString(30612).encode('utf-8'),list,17,'https://yt3.ggpht.com/-go0RRo59atU/AAAAAAAAAAI/AAAAAAAAAAA/lkZwlOgFbnI/s100-c-k-no-mo-rj-c0xffffff/photo.jpg',addonString(30613).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://i.ytimg.com/vi/8BDh-wDN1vA/maxresdefault.jpg"))
+	
+	'''Itay Galo'''
+	list = []
+	#list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_id=8B32a1T8YAs')
+	list.append('&youtube_id=4x9SnLNoDow')
+	addDir(addonString(30610).encode('utf-8'),list,17,'https://i1.sndcdn.com/avatars-000068050274-lxbtnx-t500x500.jpg',addonString(30611).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://i.ytimg.com/vi/WHzyA-POMzQ/maxresdefault.jpg"))
+	
+	'''Leibo'''
+	list = []
+	#list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_ch=LEIBOTV')
+	list.append('&youtube_id=gMm2YXv7kTA')
+	list.append('&youtube_id=vrHW1DO9Shs')
+	addDir(addonString(30600).encode('utf-8'),list,17,'https://yt3.ggpht.com/-6soiuKo5St8/AAAAAAAAAAI/AAAAAAAAAAA/G1GBvGCLKeI/s100-c-k-no-mo-rj-c0xffffff/photo.jpg',addonString(30601).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="http://eco99fm.maariv.co.il/download/Sets/pictures/dj_set_leibo_02.jpg"))
+	
+	'''Offer Nissim'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_ch=OfferNissimOfficial')
+	addDir(addonString(30608).encode('utf-8'),list,17,'http://bemynextsong.com/images/artists/174/thmb/20090327110019_offer_nissim-2-5cd1b-800.jpg',addonString(30609).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://i.ytimg.com/vi/vkQuE86rvng/maxresdefault.jpg"))
+	
+	'''Omri Guetta'''
+	list = []
+	#list.append('&youtube_se='+commonsearch+'')
+	#list.append('&youtube_pl=')
+	#addDir(addonString(30604).encode('utf-8'),list,17,'http://scontent.cdninstagram.com/t51.2885-15/s750x750/sh0.08/e35/13707368_868781096559186_1918315964_n.jpg',addonString(30605).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="http://scontent.cdninstagram.com/t51.2885-15/s750x750/sh0.08/e35/13707368_868781096559186_1918315964_n.jpg"))
+	
+	'''Skazi'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_ch=DJSkaziOfficial')
+	list.append('&youtube_pl=PLKJzkJ4iq1UF6ehyyPjOPKcG44mUn-9Uq')
+	addDir(addonString(30606).encode('utf-8'),list,17,'http://www.radioandmusic.com/sites/www.radioandmusic.com/files/images/entertainment/2015/11/28/Skazi.jpg',addonString(30607).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://i.ytimg.com/vi/c7RmAuD88-w/maxresdefault.jpg"))
+	
+	'''Guy Gerber'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	addDir(addonString(30618).encode('utf-8'),list,17,'https://en.wikipedia.org/wiki/File:Guy-gerber5.jpg',addonString(30619).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://upload.wikimedia.org/wikipedia/en/9/9f/Guy-gerber5.jpg"))
+	
+	'''Yahel'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_ch=shermanyahel')
+	addDir(addonString(30616).encode('utf-8'),list,17,'https://static.djguide.nl/image/djfotos/astrix.jpg',addonString(30617).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="http://mixing.dj/wp-content/uploads/2016/02/astrix.jpg"))
+	
+	
 	CATEGORIES10105A(name, iconimage, desc, fanart) #דף הבא
 	
 def CATEGORIES10106(name, iconimage, desc, fanart):
@@ -829,6 +895,12 @@ def CATEGORIES10106(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLiKPpxNRa3vIZZ4F9OMTeMFKqfJ6GaBal')
 	list.append('&youtube_pl=PLiKPpxNRa3vK7rlUimO50nG-kXvyrdxQG')
 	addDir(addonString(30112).encode('utf-8'),list,17,'http://img.mako.co.il/2012/08/23/revivo_project_purple_c.jpg',addonString(30212).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom=""))
+	
+	'''זוהר ארגוב'''
+	list = []
+	list.append('&youtube_se='+commonsearch+'')
+	list.append('&youtube_ch=UCCECnCTYIhqWZPeVjnNv24w')
+	addDir(addonString(30128).encode('utf-8'),list,17,'https://upload.wikimedia.org/wikipedia/he/thumb/6/67/Argov.jpg/200px-Argov.jpg',addonString(30228).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://i.ytimg.com/vi/nM8XuZZQnt4/maxresdefault.jpg"))
 	
 	'''חיים משה'''
 	list = []
@@ -1891,7 +1963,7 @@ def CATEGORIES114(name, iconimage, desc, fanart):
 	list.append('&youtube_id=hkgSTk0_DjM') #2016
 	list.append('&youtube_id=TER4Mc1tVzQ') #2015
 	list.append('&youtube_id=Vq9jmchquwQ') #2016-17
-	addDir(addonString(30900).encode('utf-8'),list,17,"https://pbs.twimg.com/profile_images/542675764026429440/gPXHFroZ.png",addonString(30509).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://s-media-cache-ak0.pinimg.com/originals/3f/be/f1/3fbef1cae14dea30c181f1f008839a1d.jpg"))
+	addDir(addonString(30900).encode('utf-8'),list,17,"https://pbs.twimg.com/profile_images/542675764026429440/gPXHFroZ.png",addonString(30901).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://s-media-cache-ak0.pinimg.com/originals/3f/be/f1/3fbef1cae14dea30c181f1f008839a1d.jpg"))
 	
 	'''Gucci'''
 	list = []
@@ -1900,7 +1972,25 @@ def CATEGORIES114(name, iconimage, desc, fanart):
 	list.append('&youtube_id=CZUJD5UdVzU') #
 	list.append('&youtube_id=YucJfazpfoU') #
 	list.append('&youtube_id=eZXHUBjcOVk') #
-	addDir(addonString(30902).encode('utf-8'),list,17,"https://pbs.twimg.com/profile_images/542675764026429440/gPXHFroZ.png",addonString(30509).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://s-media-cache-ak0.pinimg.com/originals/3f/be/f1/3fbef1cae14dea30c181f1f008839a1d.jpg"))
+	addDir(addonString(30902).encode('utf-8'),list,17,"https://pbs.twimg.com/profile_images/542675764026429440/gPXHFroZ.png",addonString(30903).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://s-media-cache-ak0.pinimg.com/originals/3f/be/f1/3fbef1cae14dea30c181f1f008839a1d.jpg"))
+	
+	'''Pronovias'''
+	list = []
+	list.append('&youtube_ch=PronoviasTV')
+	list.append('&youtube_id=zGczrEQytDY') #2017
+	list.append('&youtube_id=rW14fQBpu5k') #2016
+	list.append('&youtube_id=strsVGVi5OM') #2015
+	list.append('&youtube_id=XfsXd3nlWyo') #2014
+	addDir(addonString(30904).encode('utf-8'),list,17,"http://www.elopeinparis.com/wp-content/uploads/2014/05/pronovias-team-2015.jpg",addonString(30905).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="http://www.elopeinparis.com/wp-content/uploads/2014/05/pronovias-team-2015.jpg"))
+	
+	'''Elisabetta Franchi'''
+	list = []
+	list.append('&youtube_ch=ELISABETTAFRANCHI')
+	list.append('&youtube_id=96SVkZhSOoE') #2017
+	list.append('&youtube_id=hgqA-JHUNWs') #2016
+	list.append('&youtube_id=u3bqUZua49s') #2015
+	addDir(addonString(30906).encode('utf-8'),list,17,"http://www.wikifame.org/thumb.php?src=/photos/fb/37140.jpg",addonString(30907).encode('utf-8'),'1',0,getAddonFanart(background, default=fanart, custom="https://pmcwwd.files.wordpress.com/2016/09/elisabetta-franchi-spring-2017-collection-milan-fashion-week-mfw-ss17-068.jpg"))
+	
 	
 	CATEGORIES114A(name, iconimage, desc, fanart) #דף הבא
 
