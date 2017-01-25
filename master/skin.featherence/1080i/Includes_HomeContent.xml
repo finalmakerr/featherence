@@ -758,9 +758,8 @@
 		<include condition="!Skin.String(TopVideoInformationColor.Name,None)">ButtonC10</include>
 		<include condition="Skin.String(TopVideoInformationColor.Name,None)">ButtonC10_</include>
 		<label>$LOCALIZE[31830]</label>
-		<onclick>Action(Down)</onclick>
-		<onclick>Action(Down)</onclick>
-		<onclick>ActivateWindow(1173)</onclick>
+		<onclick>RunScript(script.featherence.service,,?mode=32&amp;value=9&amp;value2=1173&amp;value3=0)</onclick>
+		<onclick>SetFocus(9000)</onclick>
 		<selected>Window.IsVisible(1173)</selected>
 		<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 	  </control>

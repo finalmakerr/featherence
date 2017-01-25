@@ -163,7 +163,7 @@
 		
 		<visible>!Skin.HasSetting(background2) | Window.IsVisible(MyWeather.xml)</visible>
 		<visible>!Control.IsVisible(7013) + !String.IsEmpty(Control.GetLabel(70140)) + String.IsEmpty(Control.GetLabel(70130))</visible>
-		<visible>Skin.HasSetting(FailsafeFanart)</visible>
+		<visible>Skin.HasSetting(FailsafeFanart) + !Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		<visible>![String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Player.HasVideo + !Skin.HasSetting(FullFanart59)]</visible>
 	  </control>
 	  <control type="label" id="70130" description="fake">
