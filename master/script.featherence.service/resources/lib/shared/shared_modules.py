@@ -966,11 +966,13 @@ def installaddon(addonid2, update=True):
 			else:
 				printpoint = printpoint + '6'
 				if not 'resources.' in addonid2:
-					notification('Addon Required:[CR]' + addonid2,'','',4000)				
-					xbmc.executebuiltin('InstallAddon('+ addonid2 +')')
-					#xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +',return)')
+					notification('Addon Required:[CR]' + addonid2,'','',4000)
+					if (int(xbmc.getInfoLabel("System.BuildVersion")[0:2]) >=17 ): xbmc.executebuiltin('InstallAddon('+ addonid2 +')')
+					else: xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +',return)')
 					#xbmc.executebuiltin('RunPlugin('+ addonid2 +')')
+					
 	text = 'addonid2_' + space2 + str(addonid2_) + newline + \
+	'System.BuildVersion' + space2 + str(xbmc.getInfoLabel("System.BuildVersion")[0:2])
 	'addonid2' + space2 + str(addonid2)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''

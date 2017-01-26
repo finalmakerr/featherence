@@ -7,7 +7,7 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
-	xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=6)')
+	installaddon('plugin.video.MakoTV')
 	#from datetime import datetime
 	#dt_str = '2016-01-30'
 	
