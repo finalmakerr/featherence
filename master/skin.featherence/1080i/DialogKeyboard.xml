@@ -784,7 +784,7 @@
 					<onright>9005</onright>
 					<onup>306</onup>
 					<ondown>400</ondown>
-					<visible>!Control.IsVisible(168)</visible>
+					<visible>!Control.IsVisible(168) | Window.IsVisible(Custom1170.xml)</visible>
 				</control>
 				<control type="button" id="300" description="DEFAULT סיים">
 					<font>size28</font>
@@ -804,7 +804,7 @@
 					<onright>9005</onright>
 					<onup>305</onup>
 					<ondown>noop</ondown>
-					<visible>Control.IsVisible(168)</visible>
+					<visible>Control.IsVisible(168) + !Window.IsVisible(Custom1170.xml)</visible>
 				</control>
 			</control>
 		</control>

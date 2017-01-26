@@ -752,6 +752,9 @@ def getfileID(file):
 	elif file == "Dreamcast_4P_GigaWing 2": fileID = "gec0iw3mw712lwe" #featherence.guser8
 	elif file == "Dreamcast_4P_Toy Commander": fileID = "3mch97gzj160x29" #featherence.guser8
 	
+	elif file == "Dreamcast_2P_Tech Romancer": fileID = "m6342fmoz0x18fa" #featherence.guser11
+	elif file == "Dreamcast_2P_Ultimate Fighting Championship": fileID = "3ztpdgjeiglgxzp" #featherence.guser11
+
 	elif file == "Dreamcast_1P_Fighting Force 2": fileID = "owp5a3e8sxj0sh3" #featherence.guser12
 	elif file == "Dreamcast_2P_Capcom vs. SNK 2": fileID = "ue73pbxrffpwf3c" #featherence.guser12 #MORE!
 	

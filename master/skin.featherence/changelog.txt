@@ -15,8 +15,14 @@ Featherence v0.7.1 (xx-01-17)
 - Added icons to power off sub buttons.
 - Added addons changelog button from previous Kodi versions.
 - Bugs fix:
++ Always show volume level on mute.
++ Circles shapes + reshape/bigger icons features.
 + Clear fanart preview.
++ Colour focus keyboards buttons.
++ Fade time between different skin windows transition.
 + Issue with setting fanart to a single sub menu.
++ MyPVRGuide + DialogPVRInfo topvideoinformation.
++ Play random trailers (from widget).
 + Texture fanart background.
 + Sub Menu action feature (in different language then English).
 + Widgets actions information in skin design window.
@@ -26,7 +32,8 @@ Featherence v0.7.1 (xx-01-17)
 + Description are smaller in height and can be auto scroll by demand.
 - Minor update of skin design pop up.
 + 0.5 sec delay added in order to see the current fanart when editing.
-+ Remeber last fanart for preview purpose.
++ Improved please wait screen and preview.
++ Remember last fanart for preview purpose.
 - Minor update of Allow thumbnail fanart feature to support all skin views.
 - Minor update of skin design settings information.
 

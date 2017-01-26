@@ -7,11 +7,12 @@ from shared_modules import *
 def mode0(admin, name, printpoint):
 	'''test'''
 	pass
-	from datetime import datetime
-	dt_str = '2016-01-30'
+	xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=6)')
+	#from datetime import datetime
+	#dt_str = '2016-01-30'
 	
-	x = stringtodate(dt_str, dt_func='%Y-%m-%d')
-	notification(str(x),"","",2000)
+	#x = stringtodate(dt_str, dt_func='%Y-%m-%d')
+	#notification(str(x),"","",2000)
 	#xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
 	#installaddonP('script.module.unidecode', update=False)
 	#xbmc.executebuiltin('ActivateWindow(10157)')
@@ -717,7 +718,8 @@ def CreatePL(path, type='video', levelmax=10):
 		for x in playlist:
 			pl.add(x)
 			extra = extra + newline + 'x' + space2 + str(to_utf8(x))
-		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl)
+		#xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl)
+		xbmc.Player().play(pl)
 	
 	text = 'type' + space2 + str(to_utf8(type)) + newline + \
 	'path' + space2 + str(to_utf8(path)) + newline + \
@@ -744,7 +746,8 @@ def mode25(value, admin, name, printpoint):
 		random.shuffle(playlist)
 		for x in playlist:
 			pl.add(x)
-		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl)
+		xbmc.Player().play(pl)
+		#xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(pl)
 
 def mode28(value, value2, value3, name, printpoint):
 	'''------------------------------
@@ -1042,8 +1045,8 @@ def mode32(value, value2, value3, name, printpoint):
 		elif custom1173W_: xbmc.executebuiltin('Dialog.Close(1173)')
 		TEMP = xbmc.getInfoLabel('Window(home).Property(TEMP)')
 		
-		xbmc.executebuiltin('Action(Close)') ; xbmc.executebuiltin('ActivateWindow(1000)') ; xbmc.sleep(500)
-		xbmc.executebuiltin('ActivateWindow(1117)') ; xbmc.sleep(500)
+		xbmc.executebuiltin('Action(Close)') ; xbmc.executebuiltin('ActivateWindow(1000)') ; xbmc.sleep(400) ; xbmc.executebuiltin('Action(Back)') ; xbmc.sleep(200)
+		xbmc.executebuiltin('ActivateWindow(1117)') ; xbmc.sleep(300)
 		
 		
 		count = 0
@@ -1222,7 +1225,7 @@ def mode70(value, admin, name, printpoint, property_temp):
 	listitemtvshowtitle = xbmc.getInfoLabel('ListItem.TVShowTitle')
 	
 	addon = 'script.extendedinfo' ; input0 = "" ; input = "" ; input2 = "" ; container50listitemlabel2 = "" ; property_temp_ = ""
-	if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
+	if xbmc.getCondVisibility('System.HasAddon('+ addon +')') and os.path.exists(addons_path + addon):
 		if value == '0':
 			'''movie info'''
 			if listitemtitle != "":
@@ -1299,7 +1302,7 @@ def mode70(value, admin, name, printpoint, property_temp):
 		elif value == '40':
 			input0 = 'comingsoon'
 			
-		else: pass
+		else: printpoint = printpoint + '9'
 		
 		if input != "" and not '9' in printpoint:
 			dialogselectW = xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)')
@@ -1320,7 +1323,8 @@ def mode70(value, admin, name, printpoint, property_temp):
 			'''---------------------------'''
 	else:
 		printpoint = printpoint + "9"
-		installaddonP(addon, update=True)
+		installaddon(addon, update=True)
+		#installaddonP(addon, update=True)
 	
 	text = "input" + space2 + input + space + 'value' + space2 + str(value) + newline + \
 	"INFO" + space2 + "listitemlabel" + space2 + listitemlabel + newline + "listitemtvshowtitle" + space2 + listitemtvshowtitle + newline + \
@@ -1329,7 +1333,7 @@ def mode70(value, admin, name, printpoint, property_temp):
 	"containerfolderpath" + space2 + containerfolderpath + newline + "property_temp" + space2 + property_temp + space + "property_temp_" + space2 + str(property_temp_) + newline + \
 	"listitemdirector" + space2 + listitemdirector + newline + \
 	"listitemwriter" + space2 + listitemwriter
-	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
 	'''---------------------------'''
 	
 def mode200(value, admin, name, printpoint):
@@ -1960,11 +1964,11 @@ def mode212(value, admin, name, printpoint):
 			else:
 				for i in range(0,two):
 					if i == 1: x = str(property_buttonid) ; y = str(property_buttonid_)
+
+					if int(property_buttonid) > 99 and not 'B' in value:
+						setSkinSetting('0','label' + x,"")
 					else:
-						if int(property_buttonid) > 99 and not 'B' in value:
-							setSkinSetting('0','label' + x,"")
-						else:
-							setSkinSetting('0','label' + x,"...")
+						setSkinSetting('0','label' + x,"...")
 							
 					setSkinSetting('1','off' + x,"false")
 					setSkinSetting('1','pwd' + x,"false")

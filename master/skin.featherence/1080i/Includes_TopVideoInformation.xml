@@ -75,47 +75,47 @@
 		  <visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
 		  <animation description="Slide59_he" condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="40,0">Conditional</animation>
 		  <animation description="SlideOthers_he" condition="!String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="40,0">Conditional</animation>
-		  <posx>680</posx>
+		  <posx>700</posx>
 		  <posy>45</posy>
 		  <width>520</width>
-		  <height>400</height>
+		  <height>160</height>
 		  <itemgap>5</itemgap>
 		  <control type="label" description="במאי">
-			  <height>32</height>
-			  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL1</include>
+			  <height>28</height>
+			  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR2</include>
+			  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL2</include>
 			  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 			  <label>$VAR[DirectorButton]</label>
 			  <visible>!String.IsEmpty(ListItem.Director)</visible>
           </control>
 		  <control type="label" description="אולפן">
-			  <height>32</height>
-			  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL1</include>
+			  <height>28</height>
+			  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR2</include>
+			  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL2</include>
 			  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 			  <label>$LOCALIZE[572]: $INFO[ListItem.Studio]</label>
 			  <visible>!String.IsEmpty(ListItem.Studio)</visible>
           </control>
 		  <control type="label" description="כותבים">
-			  <height>32</height>
-			  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL1</include>
+			  <height>28</height>
+			  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR2</include>
+			  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL2</include>
 			  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 			  <label>$LOCALIZE[20418]: $INFO[ListItem.Writer]</label>
 			  <visible>!String.IsEmpty(ListItem.Writer)</visible>
           </control>
 		  <control type="label" description="מדינה">
-			  <height>32</height>
-			  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL1</include>
+			  <height>28</height>
+			  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR2</include>
+			  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL2</include>
 			  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 			  <label>$LOCALIZE[21874]: $INFO[ListItem.Country]</label>
 			  <visible>!String.IsEmpty(ListItem.Country)</visible>
           </control>
 		  <control type="label" description="תאריך שידור">
-			  <height>32</height>
-			  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR1</include>
-			  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL1</include>
+			  <height>28</height>
+			  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR2</include>
+			  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL2</include>
 			  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 			  <label>$LOCALIZE[20416]: $INFO[ListItem.Premiered]</label>
 			  <visible>!String.IsEmpty(ListItem.Premiered)</visible>

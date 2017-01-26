@@ -967,7 +967,8 @@ def installaddon(addonid2, update=True):
 				printpoint = printpoint + '6'
 				if not 'resources.' in addonid2:
 					notification('Addon Required:[CR]' + addonid2,'','',4000)				
-					xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +',return)')
+					xbmc.executebuiltin('InstallAddon('+ addonid2 +')')
+					#xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +',return)')
 					#xbmc.executebuiltin('RunPlugin('+ addonid2 +')')
 	text = 'addonid2_' + space2 + str(addonid2_) + newline + \
 	'addonid2' + space2 + str(addonid2)
@@ -1756,6 +1757,7 @@ def installaddonP(addon, update=True):
 	elif addon == 'script.extendedinfo': #FIXED PATH
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			DownloadFile("https://github.com/OpenELEQ/eqsperimental/blob/master/zips/script.extendedinfo/script.extendedinfo-4.7.4-dev.zip?raw=true", addon + ".zip", packages_path, addons_path, silent=False)
+			DownloadFile("https://github.com/OpenELEQ/eqsperimental/blob/master/zips/script.extendedinfo/script.extendedinfo-4.7.4-dev.zip?raw=true", addon + ".zip", packages_path, addons_path, silent=False) #resources.lib.process
 			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
@@ -1846,7 +1848,7 @@ def installaddonP(addon, update=True):
 		if "repository" in addon: xbmc.executebuiltin("UpdateAddonRepos")
 		'''---------------------------'''
 	
-	text = ""
+	text = "update" + space2 + str(update)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")	
 
 	return printpoint

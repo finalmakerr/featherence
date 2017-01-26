@@ -722,7 +722,7 @@
 		<visible>Container(100).Hasfocus(21)</visible>
 	  </item>
 	  <item id="271" description="שקיפות רקע כפתורי תפריט">
-		<visible>!Skin.String(MenuBackground)</visible>
+		<visible>!Skin.HasSetting(MenuBackground)</visible>
 		
 		<label>$LOCALIZE[31849] $LOCALIZE[19190] $LOCALIZE[33061]</label>
 		<label2>$INFO[Skin.String(MenuBackgroundOverlay)]</label2>
@@ -1583,7 +1583,7 @@
 		<onclick condition="Skin.String(WindowsOpenClose, 7)">Skin.SetString(WindowsOpenClose, 8)</onclick>
 		<onclick condition="Skin.String(WindowsOpenClose, 8)">Skin.SetString(WindowsOpenClose, 9)</onclick>
 		<onclick condition="Skin.String(WindowsOpenClose, 9)">Skin.SetString(WindowsOpenClose, )</onclick>
-		<include>CustomizerExit</include>
+		<!--<include>CustomizerExit</include>-->
 		<visible>Container(100).Hasfocus(32)</visible>
 	  </item>
 	  
@@ -1594,7 +1594,6 @@
 		<property name="rinfo">$LOCALIZE[31484]</property>
 		<onclick>SetProperty(TEMP,WindowsBusyOpen,home)</onclick>
 		<onclick>Skin.ToggleSetting(WindowsOpenClose)</onclick>
-		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(32)</visible>
 	  </item>
 	  
@@ -1606,7 +1605,6 @@
 		<onclick>SetProperty(TEMP,WindowsBusyOpen,home)</onclick>
 		<onclick condition="!Skin.String(TransitionLogo)">Skin.SetImage(TransitionLogo)</onclick>
 		<onclick condition="Skin.String(TransitionLogo)">Skin.SetString(TransitionLogo,)</onclick>
-		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(32)</visible>
 	  </item>
 	  

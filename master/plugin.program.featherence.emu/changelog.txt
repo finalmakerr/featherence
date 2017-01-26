@@ -11,10 +11,10 @@ WIP - WORK IN PROGRESS
 - Added optimal settings for Dreamcast, converting original games to FULL HD.
 
 ------------------------
-Featherence Emu v0.1.1 (25-01-17)
+Featherence Emu v0.1.1 (26-01-17)
 ------------------------
 - Added filter for unavailable consoles for some platforms such as Dreamcast, Nintendo 64, Nintendo DS for RPI or Nintendo DS for Windows 32bits.
-- Added dialog progress support for some heavy duty settings.
+- Added dialog progress to some heavy duty settings.
 - Added support for RPI (WIP-Need testers!).
 - Added support for Windows x86 (WIP-Need testers!).
 - Addon updates now auto refreshing the launcher and consoles configuration files.

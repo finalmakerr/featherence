@@ -2,9 +2,9 @@
 <includes>
   <include name="Keyboard">
 	<texturenofocus border="3" colordiffuse="$VAR[KeyboardUnFocusColor]">osd/keyboard/KeyboardKeyNF.png</texturenofocus>
-	<texturefocus border="5" colordiffuse="$VAR[ButtonFocusColor]">osd/keyboard/KeyboardKeyNF.png</texturefocus>
+	<texturefocus border="5" colordiffuse="$VAR[KeyboardFocusColor]">osd/keyboard/KeyboardKeyNF.png</texturefocus>
 	<alttexturenofocus border="3" colordiffuse="$VAR[KeyboardUnFocusColor]">osd/keyboard/KeyboardKeyNF.png</alttexturenofocus>
-	<alttexturefocus border="5" colordiffuse="$VAR[ButtonFocusColor]">osd/keyboard/KeyboardKeyNF.png</alttexturefocus>
+	<alttexturefocus border="5" colordiffuse="$VAR[KeyboardFocusColor]">osd/keyboard/KeyboardKeyNF.png</alttexturefocus>
     <align>center</align>
     <aligny>center</aligny>
 	<width>50</width>

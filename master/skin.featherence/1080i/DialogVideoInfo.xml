@@ -191,7 +191,7 @@
 		</control>
 		<control type="list" id="50" description="שחקנים">
 		  <visible>!String.Contains(ListItem.Path,plugin://)</visible>
-		  <animation condition="[Control.HasFocus(7141) | Control.HasFocus(15) | Control.HasFocus(52)] + !String.IsEmpty(ListItem.Director)" effect="slide" start="0,0" end="1840,0" time="420" reversible="true">Conditional</animation>
+		  <animation condition="[Control.HasFocus(7141) | Control.HasFocus(15) | Control.HasFocus(52)] + !String.IsEmpty(ListItem.Director)" effect="slide" start="0,0" end="1840,0" time="220" reversible="true">Conditional</animation>
 		  <animation condition="Container(50).IsUpdating" effect="fade" start="100" end="40" time="0">Conditional</animation>
 		  <animation condition="!Container(50).IsUpdating + [String.IsEmpty(Control.GetLabel(1190)) | !Container(50).HasFocus]" effect="fade" start="70" end="100" time="220">Conditional</animation>
 		  <posx>60</posx>
@@ -215,7 +215,7 @@
 	      <!-- extendedinfo cast list -->
 		<control type="list" id="51" description="שחקנים2">
 			<visible>String.Contains(ListItem.Path,plugin://)</visible>
-			<animation condition="[Control.HasFocus(7141) | Control.HasFocus(15) | Control.HasFocus(52)] + !String.IsEmpty(ListItem.Director)" effect="slide" start="0,0" end="1840,0" time="420" reversible="true">Conditional</animation>
+			<animation condition="[Control.HasFocus(7141) | Control.HasFocus(15) | Control.HasFocus(52)] + !String.IsEmpty(ListItem.Director)" effect="slide" start="0,0" end="1840,0" time="220" reversible="true">Conditional</animation>
 			<animation condition="Container(51).IsUpdating" effect="fade" start="100" end="40" time="0">Conditional</animation>
 		    <animation condition="!Container(51).IsUpdating + [String.IsEmpty(Control.GetLabel(1190)) | !Container(51).HasFocus]" effect="fade" start="70" end="100" time="220">Conditional</animation>
 		    <animation effect="fade" start="0" end="100" delay="1200" time="420">WindowOpen</animation>
@@ -238,7 +238,7 @@
 		</control>
 	
 		<control type="panel" id="52" description="במאי/כותבים">
-			<animation condition="[Control.HasFocus(7141) | Control.HasFocus(15) | Control.HasFocus(52)] + !String.IsEmpty(ListItem.Director)" effect="slide" start="0,0" end="2000,0" time="420" reversible="true">Conditional</animation>
+			<animation condition="[Control.HasFocus(7141) | Control.HasFocus(15) | Control.HasFocus(52)] + !String.IsEmpty(ListItem.Director)" effect="slide" start="0,0" end="2000,0" time="220" reversible="true">Conditional</animation>
 			<animation condition="Container(52).IsUpdating" effect="fade" start="100" end="40" time="0">Conditional</animation>
 		    <animation condition="!Container(52).IsUpdating + [String.IsEmpty(Control.GetLabel(1190)) | !Container(52).HasFocus]" effect="fade" start="70" end="100" time="220">Conditional</animation>
 		    <animation effect="fade" start="0" end="100" delay="1200" time="420">WindowOpen</animation>

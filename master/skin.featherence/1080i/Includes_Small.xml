@@ -547,6 +547,7 @@
       <posx>855</posx>
       <posy>666</posy>
       <animation effect="fade" start="0" end="100" time="100" reversible="false">Visible</animation>
+      <animation condition="[Player.Muted | String.IsEqual(Player.Volume,-60.0 dB)] + Skin.HasSetting(VolumeMute)" effect="fade" start="1000" end="0" time="500" delay="2000" reversible="false">Conditional</animation>
 	  <animation description="N" condition="Skin.String(VolumePosition,1)" effect="slide" start="0,0" end="0,-640">Conditional</animation>
 	  <animation description="S" condition="Skin.String(VolumePosition,2)" effect="slide" start="0,0" end="0,190">Conditional</animation>
 	  <animation description="NE" condition="Skin.String(VolumePosition,3)" effect="slide" start="0,0" end="870,-640">Conditional</animation>

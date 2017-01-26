@@ -165,8 +165,8 @@
   
   <variable name="IconFocusColor" description="בחירת צבע סמל נבחר">
     <!--Check if container 9020 have focus-->
-    <value condition="!Control.HasFocus(9000) + !Skin.String(IconUnFocusColor)" description="">FFFFFFFF</value>
-	<value condition="!Control.HasFocus(9000) + Skin.String(IconUnFocusColor)" description="">$INFO[Skin.String(IconUnFocusColor)]</value>
+    <value condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + !Control.HasFocus(9000) + !Skin.String(IconUnFocusColor)" description="">FFFFFFFF</value>
+	<value condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + !Control.HasFocus(9000) + Skin.String(IconUnFocusColor)" description="">$INFO[Skin.String(IconUnFocusColor)]</value>
 	
     <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),IconFocusColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(IconFocusColor)" description="ברירת מחדל-light yellow">fffffacd</value>
@@ -208,7 +208,7 @@
   </variable>
   
   <variable name="KeyboardFocusColor" description="בחירת צבע מקלדת וירטואלית">
-    <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),KeyboardFocusColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
+    <value condition="[Window.IsVisible(Custom1170.xml) | Window.IsVisible(DialogKeyboard.xml)] + String.IsEqual(Window(home).Property(TEMP),KeyboardFocusColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
 	<value condition="!Skin.String(KeyboardFocusColor)" description="ברירת-מחדל">ff4f4f98</value>
 	<value condition="Skin.String(KeyboardFocusColor)" description="מותאם אישי">$INFO[Skin.String(KeyboardFocusColor)]</value>
   </variable>

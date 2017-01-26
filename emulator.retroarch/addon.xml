@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="emulator.retroarch" name="Featherence Emu Console" version="1.0.4" provider-name="zaggash, finalmakerr">
+<addon id="emulator.retroarch" name="Featherence Emu Console - OpenELEC" version="1.0.5" provider-name="zaggash, finalmakerr">
   <requires>
     <import addon="os.openelec.tv" version="3.2" optional="true"/>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -11,7 +11,7 @@
   <extension point="xbmc.addon.metadata">
 	<platform>all</platform>
     <summary>Multi-emulator frontend based on libretro</summary>
-    <description lang="en">_</description>
+    <description lang="en">generic-x86_64</description>
 	<description lang="he">_</description>
     <disclaimer></disclaimer>
 	<email>finalmakerr@gmail.com</email>
