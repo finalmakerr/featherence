@@ -13,8 +13,8 @@ WIP - WORK IN PROGRESS
 ------------------------
 Featherence Emu v0.1.1 (26-01-17)
 ------------------------
-- Added filter for unavailable consoles for some platforms such as Dreamcast, Nintendo 64, Nintendo DS for RPI or Nintendo DS for Windows 32bits.
 - Added dialog progress to some heavy duty settings.
+- Added filter for unavailable consoles for some platforms such as Dreamcast, Nintendo 64, Nintendo DS for RPI or Nintendo DS for Windows 32bits.
 - Added support for RPI (WIP-Need testers!).
 - Added support for Windows x86 (WIP-Need testers!).
 - Addon updates now auto refreshing the launcher and consoles configuration files.

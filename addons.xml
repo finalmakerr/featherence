@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="emulator.retroarch" name="Featherence Emu Console - OpenELEC" version="1.0.5" provider-name="zaggash, finalmakerr">
+<addon id="emulator.retroarch" name="Featherence Emu Console - OpenELEC" version="1.0.6" provider-name="zaggash, finalmakerr">
   <requires>
     <import addon="os.openelec.tv" version="3.2" optional="true"/>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -87,6 +87,26 @@
 </addon>
 
 <addon id="emulator.tool.retroarch" name="Featherence Emu Console - OpenELEC2" version="1.0.0" provider-name="Mezo, finalmakerr">
+  <requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<platform>linux</platform>
+    <summary>Multi-emulator frontend based on libretro</summary>
+    <description>For RPI/WETEK</description>
+    <disclaimer></disclaimer>
+	<email>finalmakerr@gmail.com</email>
+	<forum></forum>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/emulator.tool.retroarch</source>
+	<website>www.featherence.com</website>
+  </extension>
+</addon>
+
+<addon id="emulator.tools.retroarch" name="Featherence Emu Console - OpenELEC2" version="1.0.0" provider-name="Mezo, finalmakerr">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
   </requires>

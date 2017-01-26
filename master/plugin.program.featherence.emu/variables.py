@@ -164,10 +164,12 @@ input_enable_hotkey =getsetting('input_enable_hotkey') ; optionsL.append('input_
 
 audio_driver =getsetting('audio_driver') ; optionsL.append('audio_driver')
 if systemplatformwindows: options_L.append('dsound')
+elif systemplatformlinuxraspberrypi or OS == 'oe2': options_L.append('sdl')
 elif systemplatformlinux: options_L.append('alsathread') #alsathread
 
 video_driver =getsetting('video_driver') ; optionsL.append('video_driver')
 if systemplatformwindows: options_L.append('gl')
+elif systemplatformlinuxraspberrypi or OS == 'oe2': options_L.append('gl')
 elif systemplatformlinux: options_L.append('gl')
 
 
@@ -203,6 +205,7 @@ staticL.append('input_autodetect_enable') ; static_L.append('true')
 staticL.append('input_driver')
 if systemplatformwindows:
 	static_L.append('dinput')
+elif systemplatformlinuxraspberrypi or OS == 'oe2': options_L.append('sdl')
 else:
 	static_L.append('linuxraw')
 
