@@ -807,10 +807,10 @@ def installemuconsole(force=False):
 		if os.path.exists(emulator_path): notification('Emulator already exists!',emulator_path,"",7000)
 	if systemplatformwindows and OS == 'win32': installaddon('emulator.retroarch_win32', update=True)
 	elif systemplatformwindows: installaddon('emulator.retroarch_win64', update=True)
-	elif systemplatformlinuxraspberrypi: installaddon('emulator.tool.retroarch', update=True)
+	elif systemplatformlinuxraspberrypi: installaddon('emulator.tools.retroarch', update=True)
 	elif systemplatformlinux and not systemplatformandroid:
 		if OS == 'i386': installaddon('emulator.retroarch_i386', update=True)
-		elif OS == 'oe2': installaddon('emulator.tool.retroarch', update=True)
+		elif OS == 'oe2': installaddon('emulator.tools.retroarch', update=True)
 		else: installaddon('emulator.retroarch', update=True)
 	else:
 		printpoint = printpoint + '6'
@@ -1165,7 +1165,7 @@ def copylaunchers(force=False):
 			
 			if systemplatformandroid: _segagenesis_args = 'start -n com.reicast.emulator/.GL2JNIActivity -a android.intent.action.VIEW -eu Uri "file://%rom%"'
 			elif systemplatformlinux:
-				if systemplatformlinuxraspberrypi or OS == "oe2": _segagenesis_args = 'genesis_plus.gx'
+				if systemplatformlinuxraspberrypi or OS == "oe2": _segagenesis_args = 'genesis.plus.gx'
 				elif OS == "i386": _segagenesis_args = 'genesis.plus.gx'
 				else: _segagenesis_args = 'genesis.plus.gx'
 			elif systemplatformwindows: _segagenesis_args = 'genesis.plus.gx_libretro.dll'

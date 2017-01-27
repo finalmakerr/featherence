@@ -84,8 +84,8 @@ if systemplatformwindows:
 	retroarchcfg_file = os.path.join(emulator_path, 'retroarch.cfg')
 	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
 	
-elif systemplatformlinuxraspberrypi:
-	emulator_path = os.path.join(addons_path, 'emulator.tool.retroarch', '')
+elif systemplatformlinuxraspberrypi or OS == 'oe2':
+	emulator_path = os.path.join(addons_path, 'emulator.tools.retroarch', '')
 	
 	emulator_file = os.path.join(emulator_path, 'bin', 'retroarch.sh')	
 	emulator_file_ = emulator_file
@@ -111,14 +111,17 @@ else:
 	
 #subprocess.call("adb install path-to-file.apk ")
 
-cores_path = os.path.join(emulator_path,'cores','')	
+if systemplatformlinuxraspberrypi or OS == 'oe2': cores_path = os.path.join(emulator_path,'lib','libretro','')
+else: cores_path = os.path.join(emulator_path,'cores','')	
+
 coresinfo_path = cores_path
 
 '''Featherence Emu Module'''
 featherence_emu_module_path = os.path.join(addons_path, 'script.module.featherence.emu', '')
 system_path = os.path.join(featherence_emu_module_path, 'system','')
 shader_path = os.path.join(featherence_emu_module_path,'shaders','')
-config_path2 = os.path.join(featherence_emu_module_path,'config','')
+if systemplatformlinuxraspberrypi or OS == 'oe2': config_path2 = os.path.join(featherence_emu_module_path,'config2','')
+else: config_path2 = os.path.join(featherence_emu_module_path,'config','')
 autoconfig_path2 = os.path.join(featherence_emu_module_path,'autoconfig','')
 
 '''Emulator userdata'''
