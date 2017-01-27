@@ -11,6 +11,12 @@ WIP - WORK IN PROGRESS
 - Added optimal settings for Dreamcast, converting original games to FULL HD.
 
 ------------------------
+Featherence Emu v0.1.2 (27-01-17)
+------------------------
+- Bugs fix for RPI -OPENELEC (WIP).
+- Bug fix for x64 generic - OPENELEC.
+
+------------------------
 Featherence Emu v0.1.1 (26-01-17)
 ------------------------
 - Added dialog progress to some heavy duty settings.
