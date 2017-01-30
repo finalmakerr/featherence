@@ -2030,7 +2030,7 @@ def pluginend(admin):
 				list.append(addonString_servicefeatherence(32064).encode('utf-8')) #Having a question?
 				returned, value = getRandom(0, min=0, max=len(list), percent=50)
 				
-				notification(list[int(value)],'www.facebook.com/groups/featherence','',4000)
+				notification(list[int(value)],'www.featherence.com','',4000)
 			
 			if Addon_UpdateLog == "true":
 				if addonID == 'plugin.video.featherence.kids':
