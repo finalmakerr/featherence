@@ -60,6 +60,7 @@ printfirst = addonName + ": !@# "
 '''---------------------------'''
 
 show_adult = getsetting('show_adult')
+custom_emu = getsetting('custom_emu')
 OS = getsetting('OS')
 
 Addon_ShowLog = getsetting('Addon_ShowLog')
@@ -100,6 +101,14 @@ elif systemplatformlinux and not systemplatformandroid:
 	emulator_file_ = emulator_file
 	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
 	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
+
+elif systemplatformandroid:
+	emulator_path = '/data/data/com.retroarch/'
+	
+	emulator_file = '/system/bin/am'
+	emulator_file_ = emulator_file
+	retroarchcfg_file = "/data/data/com.retroarch/retroarch.cfg"
+	retroarchcoreoptionscfg_file = "/data/data/com.retroarch/.retroarch-core-options.cfg"
 	
 else:
 	emulator_path = os.path.join(addons_path, 'emulator.retroarch', '')
@@ -112,16 +121,20 @@ else:
 #subprocess.call("adb install path-to-file.apk ")
 
 if systemplatformlinuxraspberrypi or OS == 'oe2': cores_path = os.path.join(emulator_path,'lib','libretro','')
-else: cores_path = os.path.join(emulator_path,'cores','')	
+elif systemplatformandroid: cores_path = os.path.join(emulator_path,'cores','')
+else: cores_path = os.path.join(emulator_path,'cores','')
 
-coresinfo_path = cores_path
+if systemplatformandroid: coresinfo_path = os.path.join(emulator_path,'info','')
+else: coresinfo_path = cores_path
 
 '''Featherence Emu Module'''
 featherence_emu_module_path = os.path.join(addons_path, 'script.module.featherence.emu', '')
 system_path = os.path.join(featherence_emu_module_path, 'system','')
-shader_path = os.path.join(featherence_emu_module_path,'shaders','')
+if systemplatformandroid: shader_path = os.path.join(featherence_emu_module_path,'shaders','')
+else: shader_path = os.path.join(emulator_path,'shaders_glsl','')
 if systemplatformlinuxraspberrypi or OS == 'oe2': config_path2 = os.path.join(featherence_emu_module_path,'config2','')
 else: config_path2 = os.path.join(featherence_emu_module_path,'config','')
+
 autoconfig_path2 = os.path.join(featherence_emu_module_path,'autoconfig','')
 
 '''Emulator userdata'''
@@ -146,7 +159,9 @@ emudata_launcher_file = os.path.join(addonuserdata_path + 'launchers.xml')
 
 launcher_args = '--config' + space + os.path.join(emulator_path, 'retroarch.cfg') + space + '--appendconfig' + space + os.path.join(config_path, 'retroarch.cfg')
 if systemplatformwindows:
-	lib_args = launcher_args + space + '-L' + space + os.path.join(emulator_path, 'cores','')
+	lib_args = launcher_args + space + '-L' + space + cores_path
+elif systemplatformandroid:
+	lib_args = launcher_args + space + '-e CONFIGFILE /data/data/com.retroarch/retroarch.cfg -e IME tv.ouya.console.ime.keyboard/.OUYAKeyboard -n com.retroarch/.browser.retroactivity.RetroActivityFuture'
 else:
 	lib_args = ""
 
@@ -154,7 +169,10 @@ else:
 optionsL = [] ; options_L = []
 video_black_frame_insertion = getsetting('video_black_frame_insertion') ; optionsL.append('video_black_frame_insertion') ; options_L.append('false')
 video_refresh_rate =getsetting('video_refresh_rate') ; optionsL.append('video_refresh_rate') ; options_L.append('59.950001')
+video_hard_sync =getsetting('video_hard_sync') ; optionsL.append('video_hard_sync') ; options_L.append('false')
+video_hard_sync_frames =getsetting('video_hard_sync_frames') ; optionsL.append('video_hard_sync_frames') ; options_L.append('')
 video_smooth =getsetting('video_smooth') ; optionsL.append('video_smooth') ; options_L.append('true')
+video_vsync =getsetting('video_vsync') ; optionsL.append('video_vsync') ; options_L.append('true')
 audio_device =getsetting('audio_device') ; optionsL.append('audio_device')
 if systemplatformwindows: options_L.append('')
 elif systemplatformlinux: options_L.append('hw:0,3')
@@ -169,11 +187,13 @@ audio_driver =getsetting('audio_driver') ; optionsL.append('audio_driver')
 if systemplatformwindows: options_L.append('dsound')
 elif systemplatformlinuxraspberrypi or OS == 'oe2': options_L.append('sdl')
 elif systemplatformlinux: options_L.append('alsathread') #alsathread
+else: options_L.append('')
 
 video_driver =getsetting('video_driver') ; optionsL.append('video_driver')
 if systemplatformwindows: options_L.append('gl')
 elif systemplatformlinuxraspberrypi or OS == 'oe2': options_L.append('gl')
 elif systemplatformlinux: options_L.append('gl')
+else: options_L.append('')
 
 
 audio_volume =getsetting('')

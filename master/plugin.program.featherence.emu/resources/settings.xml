@@ -24,7 +24,7 @@
 	</category>
 
     <category label="$LOCALIZE[5]" description="Settings">
-		<setting type="lsep" label="Choose your OS manually." visible="System.Platform.Windows"/>
+		<setting type="lsep" label="Choose your OS manually." visible="System.Platform.Windows | System.Platform.Linux + !System.Platform.Android + !System.Platform.Linux.RaspberryPi"/>
 		<setting label="Windows Operation System" type="select" id="OS" default="" values=" |win64|win32" visible="System.Platform.Windows"/>
 		<setting label="OpenELEC Operation System" type="select" id="OS" default="" values=" |x86_64|i386" visible="System.Platform.Linux + !System.Platform.Android + !System.Platform.Linux.RaspberryPi"/>
 		<setting type="lsep" label="script.module.featherence.emu v$INFO[System.AddonVersion(script.module.featherence.emu)]"/>
@@ -38,6 +38,8 @@
 		<setting label="Reset Lanuchers" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RESET_LANUCHER%%)"/>
 		<setting type="lsep" label="Recreate default settings for each console."/>
 		<setting label="Reset EMU Settings" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RESET_CONFIG%%)"/>
+		<setting type="lsep" label="Enable for advance users. Reset EMU Settings will not be auto-trigger on updates anymore."/>
+		<setting label="Custom EMU Settings" type="bool" default="" id="custom_emu"/>
 		<setting type="lsep" label="Use this option in order to create new formatted virtual memory cards slots for Dreamcast console."/>
 		<setting label="Reset Dreamcast Memory slots" type="action" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RESET_DREAMCAST_MEM%%)"/>
 		<setting type="lsep" label="Show a list of potential audio adapters." visible="System.Platform.Linux"/>
@@ -49,10 +51,16 @@
 		
 		<setting type="lsep" label="Inserts a black frame inbetween frames. Useful for 120 Hz monitors who want to play 60 Hz material with eliminated ghosting. video_refresh_rate should still be configured as if it is a 60 Hz monitor (divide refresh rate by 2)."/>
 		<setting id="video_black_frame_insertion" type="bool" default="" label="video_black_frame_insertion" visible="true"/>
+		<setting type="lsep" label="Attempts to hard-synchronize CPU and GPU. Can reduce latency at cost of performance."/>
+		<setting id="video_hard_sync" type="bool" default="false" label="video_hard_sync" visible="true"/>
+		<setting type="lsep" label="Sets how many frames CPU can run ahead of GPU when using video_hard_sync. Maximum is 3."/>
+		<setting id="video_hard_sync_frames" type="select" default="" values=" |0|1|2|3" label="video_hard_sync_frames" visible="true"/>
 		<setting type="lsep" label="Video refresh rate of your monitor. Used to calculate a suitable audio input rate."/>
 		<setting id="video_refresh_rate" type="text" default="" label="video_refresh_rate" visible="true"/>
+		<setting type="lsep" label="Video vsync."/>
+		<setting id="video_vsync" type="bool" default="true" label="Video vsync" visible="true"/>
 		<setting type="lsep" label="Smoothens picture with bilinear filtering. Should be disabled if using pixel shaders."/>
-		<setting id="video_smooth" type="text" default="" label="video_smooth" visible="true"/>
+		<setting id="video_smooth" type="bool" default="true" label="video_smooth" visible="true"/>
 		<setting type="lsep" label=""/>
 	</category>
 	

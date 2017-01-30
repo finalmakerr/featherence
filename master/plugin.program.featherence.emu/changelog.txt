@@ -11,6 +11,13 @@ WIP - WORK IN PROGRESS
 - Added optimal settings for Dreamcast, converting original games to FULL HD.
 
 ------------------------
+Featherence Emu v0.1.3 (xx-02-17)
+------------------------
+- Added 20-30 more games to Dreamcast console.
+- Added Android support (WIP) - untested!.
+- Added Custom EMU Settings for advanced users who want to customise the consoles cfg files.
+
+------------------------
 Featherence Emu v0.1.2 (27-01-17)
 ------------------------
 - Bugs fix for RPI -OPENELEC (WIP).
