@@ -1422,6 +1422,8 @@
 		<label2>$INFO[Skin.String(PassProtectOverlay)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/eye.png</thumb>
 		<property name="rinfo">$LOCALIZE[31464]</property>
+		<!--<onclick>RunScript(script.featherence.service,,?mode=13&amp;value=PassProtectOverlay)</onclick>-->
+		<onclick condition="true">Skin.Reset(PassProtectOverlay)</onclick>
 		<onclick condition="Skin.String(PassProtectOverlay, )">Skin.SetString(PassProtectOverlay, 100)</onclick>
 		<onclick condition="Skin.String(PassProtectOverlay, 100)">Skin.SetString(PassProtectOverlay, 95)</onclick>
 		<onclick condition="Skin.String(PassProtectOverlay, 95)">Skin.SetString(PassProtectOverlay, 90)</onclick>
@@ -1434,7 +1436,6 @@
 		<onclick condition="Skin.String(PassProtectOverlay, 40)">Skin.SetString(PassProtectOverlay, 30)</onclick>
 		<onclick condition="Skin.String(PassProtectOverlay, 30)">Skin.SetString(PassProtectOverlay, 20)</onclick>
 		<onclick condition="Skin.String(PassProtectOverlay, 20)">Skin.SetString(PassProtectOverlay, )</onclick>
-		<!--<include>CustomizerExit</include>-->
 		<visible>Container(100).Hasfocus(31)</visible>
 	  </item>
 	  <item id="444" description="נעילת הרחבות">

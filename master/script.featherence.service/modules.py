@@ -6,8 +6,12 @@ from shared_modules import *
 
 def mode0(admin, name, printpoint):
 	'''test'''
-	pass
-	installaddon('plugin.video.MakoTV')
+	xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/play/?video_id=WFwHq6cY040)')
+	if 1 + 1 == 3:
+		finalurl = 'plugin://plugin.video.youtube/play/?video_id=WFwHq6cY040'
+		pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO) ; pl.add(finalurl)
+		playlist = [] ; playlist.append(finalurl)
+		xbmc.Player().play(pl)
 	#from datetime import datetime
 	#dt_str = '2016-01-30'
 	
@@ -151,66 +155,6 @@ def mode6(value):
 	'passprotect_property_' + space2 + str(passprotect_property_) + newline + \
 	'containerfolderpath' + space2 + str(containerfolderpath) + newline + \
 	'currentpwd' + space2 + str(currentpwd) + newline
-	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
-	
-def mode11(name, printpoint):
-	'''StartUp-Music/Video'''
-	startupmusic1 = xbmc.getCondVisibility('Skin.HasSetting(StartUpMusic)')
-	startupvideofullscreen1 = xbmc.getCondVisibility('Skin.HasSetting(StartUpVideoFullScreen)')
-	startupvideo0 = xbmc.getInfoLabel('Skin.String(StartUpVideo)')
-	startupmusic0 = xbmc.getInfoLabel('Skin.String(StartUpMusic)')
-	IntroDelay = xbmc.getInfoLabel('Skin.String(IntroDelay)')
-	
-	if IntroDelay == "" or IntroDelay == '-':
-		IntroDelay = 1
-	else:
-		try:
-			IntroDelay = int(IntroDelay)
-		except:
-			IntroDelay = 1
-	
-	xsleep = int(IntroDelay) * 1000
-	xbmc.sleep(xsleep)
-	if startupvideo0 == "": pass
-	else:
-		startupvideo0_, startupvideo0__ = TranslatePath(startupvideo0, filename=True)
-		if not os.path.exists(startupvideo0_):
-			printpoint = printpoint + '1'
-			notification('Startup Video failed','File is not available!','',2000)
-		else: 
-			xbmc.executebuiltin('CancelAlarm(startup,silent)')
-			printpoint = printpoint + '2'
-			if not startupvideofullscreen1: xbmc.executebuiltin('PlayMedia('+startupvideo0_+')')
-			else: xbmc.executebuiltin('PlayMedia('+to_utf8(startupvideo0_)+'),1)')
-			xbmc.sleep(1000)
-	if not startupmusic1:
-		printpoint = printpoint + '3'
-		count = 0
-		if xbmc.getCondVisibility('Player.HasVideo'):
-			printpoint = printpoint + '4'
-			while xbmc.getCondVisibility('Player.HasVideo') and count < 20 and not xbmc.abortRequested:
-				xbmc.sleep(1000)
-				count += 1
-		
-		if count >= 20: printpoint = printpoint + '5'
-		else:
-			printpoint = printpoint + '6'
-			if not startupmusic0: xbmc.executebuiltin('PlayMedia(special://skin/sounds/featherence.mp3)') ; printpoint = printpoint + '7'
-			else:
-				printpoint = printpoint + '8'
-				startupmusic0_, startupmusic0__ = TranslatePath(startupmusic0, filename=True)
-				if not os.path.exists(startupmusic0_): notification('Startup Music failed','File is not available!','',2000)
-				elif os.path.isfile(startupmusic0_): xbmc.executebuiltin('PlayMedia('+to_utf8(startupmusic0_)+')')
-				elif os.path.isdir(startupmusic0_):	CreatePL(startupmusic0_, 'music')
-				else: printpoint = printpoint + '9'
-				#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=21&amp;value='+ to_utf8(startupmusic0_) +'&amp;value2=music)')
-	
-	text = 'startupmusic1' + space2 + str(to_utf8(startupmusic1)) + newline + \
-	'startupmusic1' + space2 + str(to_utf8(startupmusic1)) + newline + \
-	'startupvideofullscreen1' + space2 + str(to_utf8(startupvideofullscreen1)) + newline + \
-	'startupvideo0' + space2 + str(to_utf8(startupvideo0)) + newline + \
-	'startupmusic0' + space2 + str(to_utf8(startupmusic0)) + newline + \
-	'IntroDelay' + space2 + str(IntroDelay)
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
 def mode8(admin, name, printpoint):
@@ -613,6 +557,67 @@ def mode10(admin, name, printpoint):
 		text = 'ii' + space2 + str(ii) + newline
 		printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
 
+
+def mode11(name, printpoint):
+	'''StartUp-Music/Video'''
+	startupmusic1 = xbmc.getCondVisibility('Skin.HasSetting(StartUpMusic)')
+	startupvideofullscreen1 = xbmc.getCondVisibility('Skin.HasSetting(StartUpVideoFullScreen)')
+	startupvideo0 = xbmc.getInfoLabel('Skin.String(StartUpVideo)')
+	startupmusic0 = xbmc.getInfoLabel('Skin.String(StartUpMusic)')
+	IntroDelay = xbmc.getInfoLabel('Skin.String(IntroDelay)')
+	
+	if IntroDelay == "" or IntroDelay == '-':
+		IntroDelay = 1
+	else:
+		try:
+			IntroDelay = int(IntroDelay)
+		except:
+			IntroDelay = 1
+	
+	xsleep = int(IntroDelay) * 1000
+	xbmc.sleep(xsleep)
+	if startupvideo0 == "": pass
+	else:
+		startupvideo0_, startupvideo0__ = TranslatePath(startupvideo0, filename=True)
+		if not os.path.exists(startupvideo0_):
+			printpoint = printpoint + '1'
+			notification('Startup Video failed','File is not available!','',2000)
+		else: 
+			xbmc.executebuiltin('CancelAlarm(startup,silent)')
+			printpoint = printpoint + '2'
+			if not startupvideofullscreen1: xbmc.executebuiltin('PlayMedia('+startupvideo0_+')')
+			else: xbmc.executebuiltin('PlayMedia('+to_utf8(startupvideo0_)+'),1)')
+			xbmc.sleep(1000)
+	if not startupmusic1:
+		printpoint = printpoint + '3'
+		count = 0
+		if xbmc.getCondVisibility('Player.HasVideo'):
+			printpoint = printpoint + '4'
+			while xbmc.getCondVisibility('Player.HasVideo') and count < 20 and not xbmc.abortRequested:
+				xbmc.sleep(1000)
+				count += 1
+		
+		if count >= 20: printpoint = printpoint + '5'
+		else:
+			printpoint = printpoint + '6'
+			if not startupmusic0: xbmc.executebuiltin('PlayMedia(special://skin/sounds/featherence.mp3)') ; printpoint = printpoint + '7'
+			else:
+				printpoint = printpoint + '8'
+				startupmusic0_, startupmusic0__ = TranslatePath(startupmusic0, filename=True)
+				if not os.path.exists(startupmusic0_): notification('Startup Music failed','File is not available!','',2000)
+				elif os.path.isfile(startupmusic0_): xbmc.executebuiltin('PlayMedia('+to_utf8(startupmusic0_)+')')
+				elif os.path.isdir(startupmusic0_):	CreatePL(startupmusic0_, 'music')
+				else: printpoint = printpoint + '9'
+				#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=21&amp;value='+ to_utf8(startupmusic0_) +'&amp;value2=music)')
+	
+	text = 'startupmusic1' + space2 + str(to_utf8(startupmusic1)) + newline + \
+	'startupmusic1' + space2 + str(to_utf8(startupmusic1)) + newline + \
+	'startupvideofullscreen1' + space2 + str(to_utf8(startupvideofullscreen1)) + newline + \
+	'startupvideo0' + space2 + str(to_utf8(startupvideo0)) + newline + \
+	'startupmusic0' + space2 + str(to_utf8(startupmusic0)) + newline + \
+	'IntroDelay' + space2 + str(IntroDelay)
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+
 def mode12():
 	name = 'mode12' ; printpoint = ''
 	path = 'special://skin/extras/featherence_.mp4'
@@ -637,7 +642,31 @@ def mode12():
 	'count' + space2 + str(count) + newline + \
 	'videoplayertitle' + space2 + str(videoplayertitle)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+
+def mode13(value, name, printpoint):
+	'''skinsettings 20-100'''
+	Custom1000(title="Please Wait", progress="90", comment=str(value), autoclose="3")
+	if value != "":
+		skinsetting = value
+		skinsetting_ = xbmc.getInfoLabel('Skin.String('+ skinsetting +')')
+		if skinsetting != "":
+			if skinsetting_ == "": setSkinSetting('0', skinsetting, '100')
+			elif skinsetting_ == "100": setSkinSetting('0', skinsetting, '95')
+			elif skinsetting_ == "95": setSkinSetting('0', skinsetting, '90')
+			elif skinsetting_ == "90": setSkinSetting('0', skinsetting, '85')
+			elif skinsetting_ == "85": setSkinSetting('0', skinsetting, '80')
+			elif skinsetting_ == "80": setSkinSetting('0', skinsetting, '70')
+			elif skinsetting_ == "70": setSkinSetting('0', skinsetting, '60')
+			elif skinsetting_ == "60": setSkinSetting('0', skinsetting, '50')
+			elif skinsetting_ == "50": setSkinSetting('0', skinsetting, '40')
+			elif skinsetting_ == "40": setSkinSetting('0', skinsetting, '30')
+			elif skinsetting_ == "30": setSkinSetting('0', skinsetting, '20')
+			elif skinsetting_ == "20": setSkinSetting('0', skinsetting, )
+			else: setSkinSetting('0', skinsetting, )
 	
+	xbmc.sleep(1000)
+	mode32(value='6')
+			
 def mode22(header, message, nolabel, yeslabel, skinstring, type='video'):
 	skinstring_ = xbmc.getInfoLabel('Skin.String('+skinstring+')')
 	returned = dialogyesno(header, message, nolabel=nolabel, yeslabel=yeslabel)
@@ -888,7 +917,7 @@ def mode31(value, value2, value3, value4, admin, name, printpoint):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 	
-def mode32(value, value2, value3, name, printpoint):
+def mode32(value, value2="", value3="", name="", printpoint=""):
 	'''------------------------------
 	---MISCS-------------------------
 	------------------------------'''

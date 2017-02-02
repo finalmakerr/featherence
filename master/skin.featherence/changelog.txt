@@ -10,10 +10,10 @@ WIP - WORK IN PROGRESS
 - Added auto-build widget feature.
 
 ------------------------
-Featherence v0.7.1 (xx-01-17)
+Featherence v0.7.1 (02-Feb-17)
 ------------------------
 - Added icons to power off sub buttons.
-- Added addons changelog button from previous Kodi versions.
+- Added view addons changelog button for Krypton.
 - Bugs fix:
 + Always show volume level on mute.
 + Circles shapes + reshape/bigger icons features.
@@ -38,7 +38,7 @@ Featherence v0.7.1 (xx-01-17)
 - Minor update of skin design settings information.
 
 ------------------------
-Featherence v0.7.0 (16-01-17)
+Featherence v0.7.0 (16-Jan-17)
 ------------------------
 - ***Added Krypton support***.
 - Added action information in skin design window for Buttons, Sub Buttons and Widgets.

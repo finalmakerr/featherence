@@ -104,6 +104,14 @@ elif mode == 11:
 	name = "StartUp-Music/Video"
 	mode11(name, printpoint)
 	'''---------------------------'''
+
+elif mode == 13:
+	'''------------------------------
+	---StartUp-Music/Video-----------
+	------------------------------'''
+	name = "skinsettings 20-100"
+	mode13(value, name, printpoint)
+	'''---------------------------'''
 	
 elif mode == 17:
 	'''------------------------------
