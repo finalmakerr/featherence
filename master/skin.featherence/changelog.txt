@@ -10,6 +10,11 @@ WIP - WORK IN PROGRESS
 - Added auto-build widget feature.
 
 ------------------------
+Featherence v0.7.2 (xx-Feb-17)
+------------------------
+- Added DialogGameControllers window.
+
+------------------------
 Featherence v0.7.1 (02-Feb-17)
 ------------------------
 - Added icons to power off sub buttons.

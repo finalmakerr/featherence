@@ -61,6 +61,11 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 		list = []
 		list.append('&youtube_pl=PL9aMpOzf_PLV_Jex7GIRlGNGC7Y6nPpm8')
 		addDir(addonString(30052).encode('utf-8'),list,17,thumb,'Thanks and credits to Tomer Dror.','1',0,fanart)
+	
+	if xbmc.getCondVisibility('Skin.HasSetting(Admin)'):
+		list = []
+		list.append('&youtube_ch=ShlomoArtziOfficial')
+		addDir('test',list,17,"",'test','1',0,"")
 
 def CATEGORIES10001(name, iconimage, desc, fanart):
 	if name == None: name = ""
@@ -784,6 +789,7 @@ def CATEGORIES10105(name, iconimage, desc, fanart):
 	---Israeli-Djs-------------------
 	------------------------------'''
 	background = 105
+	commonsearch = 'commonsearch115'
 	
 	CATEGORIES_RANDOM(background,fanart)
 	CATEGORIES10105Z(name, iconimage, desc, background, fanart) #ערוצי טלוויזיה

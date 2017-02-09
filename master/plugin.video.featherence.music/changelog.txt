@@ -7,7 +7,7 @@ WIP (WORK IN PROGRESS)
 -----------------------
 
 ------------------------
-Featherence Music v0.3.8 (xx-Dec-16)
+Featherence Music v0.3.8 (09-Feb-17)
 ------------------------
 - Added Fashion Shows category.
 - Added Israeli Djs category.
