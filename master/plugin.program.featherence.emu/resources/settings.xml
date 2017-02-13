@@ -10,7 +10,8 @@
 		<setting label="30180" type="slider" id="start_tempo" default="1000" range="0,100,15000" option="int"/>
 		<setting type="lsep" label="Enable Adult content"/>
 		<setting label="Adult Content" type="bool" id="show_adult"/>
-		
+		<setting type="lsep" label="The color of missing games. Default is red."/>
+		<setting id="Games_Color2" type="text" default="" label="Missing games color"/>
 		<setting type="lsep" label=""/>
 		<setting id="Addon_ShowLog" type="bool" default="true" label="$LOCALIZE[33073]" visible="true"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32419]" visible="eq(-1,true)"/>
@@ -52,9 +53,11 @@
 		<setting type="lsep" label="Inserts a black frame inbetween frames. Useful for 120 Hz monitors who want to play 60 Hz material with eliminated ghosting. video_refresh_rate should still be configured as if it is a 60 Hz monitor (divide refresh rate by 2)."/>
 		<setting id="video_black_frame_insertion" type="bool" default="" label="video_black_frame_insertion" visible="true"/>
 		<setting type="lsep" label="Attempts to hard-synchronize CPU and GPU. Can reduce latency at cost of performance."/>
-		<setting id="video_hard_sync" type="bool" default="false" label="video_hard_sync" visible="true"/>
+		<setting id="video_hard_sync" type="bool" default="" label="video_hard_sync" visible="true"/>
 		<setting type="lsep" label="Sets how many frames CPU can run ahead of GPU when using video_hard_sync. Maximum is 3."/>
 		<setting id="video_hard_sync_frames" type="select" default="" values=" |0|1|2|3" label="video_hard_sync_frames" visible="true"/>
+		<setting type="lsep" label="Use threaded video driver. Using this might improve performance at possible cost of latency and more video stuttering."/>
+		<setting id="video_threaded" type="text" default="" label="video_threaded" visible="true"/>
 		<setting type="lsep" label="Video refresh rate of your monitor. Used to calculate a suitable audio input rate."/>
 		<setting id="video_refresh_rate" type="text" default="" label="video_refresh_rate" visible="true"/>
 		<setting type="lsep" label="Video vsync."/>

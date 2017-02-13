@@ -1328,7 +1328,7 @@ def TVMode_check(admin, url, playlists):
 	return returned
 
 def TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
-	returned = ""
+	returned = "" ; printpoint = ""
 	scriptfeatherenceservice_random = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_random)')
 	if url == "None":
 		'''Empty button'''
@@ -1349,6 +1349,12 @@ def TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 		else: mode = 6
 		
 		mode = MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart)
+		
+		text = 'General_TVModeShuffle' + space2 + str(General_TVModeShuffle) + newline + \
+		'scriptfeatherenceservice_random' + space2 + str(scriptfeatherenceservice_random) + newline + \
+		'General_TVModeDialog' + space2 + str(General_TVModeDialog) + newline + \
+		'url' + space2 + str(url)
+		printlog(title='TvMode2', printpoint=printpoint, text=text, level=1, option="")
 		
 		return mode
 

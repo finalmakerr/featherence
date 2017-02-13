@@ -61,6 +61,7 @@ printfirst = addonName + ": !@# "
 
 show_adult = getsetting('show_adult')
 custom_emu = getsetting('custom_emu')
+games_color2 = getsetting('Games_Color2')
 OS = getsetting('OS')
 
 Addon_ShowLog = getsetting('Addon_ShowLog')
@@ -130,8 +131,8 @@ else: coresinfo_path = cores_path
 '''Featherence Emu Module'''
 featherence_emu_module_path = os.path.join(addons_path, 'script.module.featherence.emu', '')
 system_path = os.path.join(featherence_emu_module_path, 'system','')
-if systemplatformandroid: shader_path = os.path.join(featherence_emu_module_path,'shaders','')
-else: shader_path = os.path.join(emulator_path,'shaders_glsl','')
+if systemplatformandroid: shader_path = os.path.join(emulator_path,'shaders_glsl','')
+else: shader_path = os.path.join(featherence_emu_module_path,'shaders','')
 if systemplatformlinuxraspberrypi or OS == 'oe2': config_path2 = os.path.join(featherence_emu_module_path,'config2','')
 else: config_path2 = os.path.join(featherence_emu_module_path,'config','')
 
@@ -170,7 +171,8 @@ optionsL = [] ; options_L = []
 video_black_frame_insertion = getsetting('video_black_frame_insertion') ; optionsL.append('video_black_frame_insertion') ; options_L.append('false')
 video_refresh_rate =getsetting('video_refresh_rate') ; optionsL.append('video_refresh_rate') ; options_L.append('59.950001')
 video_hard_sync =getsetting('video_hard_sync') ; optionsL.append('video_hard_sync') ; options_L.append('false')
-video_hard_sync_frames =getsetting('video_hard_sync_frames') ; optionsL.append('video_hard_sync_frames') ; options_L.append('')
+video_hard_sync_frames =getsetting('video_hard_sync_frames') ; optionsL.append('video_hard_sync_frames') ; options_L.append('*')
+video_threaded =getsetting('video_threaded') ; optionsL.append('video_threaded') ; options_L.append('*')
 video_smooth =getsetting('video_smooth') ; optionsL.append('video_smooth') ; options_L.append('true')
 video_vsync =getsetting('video_vsync') ; optionsL.append('video_vsync') ; options_L.append('true')
 audio_device =getsetting('audio_device') ; optionsL.append('audio_device')

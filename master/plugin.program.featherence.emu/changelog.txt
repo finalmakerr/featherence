@@ -5,17 +5,25 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
-- Added Dreamcast console support.
 - Added Dreamcast disc swap support.
-- Added Dreamcast memory slots support (preformat included!)
-- Added optimal settings for Dreamcast, converting original games to FULL HD.
+
 
 ------------------------
 Featherence Emu v0.1.3 (xx-02-17)
 ------------------------
-- Added 20-30 more games to Dreamcast console.
+- Added new games:
++ 20-30 more games to Dreamcast console.
++ Comix Zone to Sega Genesis console.
 - Added Android support (WIP) - untested!.
 - Added Custom EMU Settings for advanced users who want to customise the consoles cfg files.
+- Added extra Video and Audio settings in the addon settings.
+- Added Customised color for undownloaded games.
+- Added Dreamcast memory slots support (preformat included!)
+- Added optimal settings for Dreamcast, converting original games to FULL HD.
+- Added option to change default roms path.
+- Bug fix when trying to download Dreamcast games.
+- Minor update of download modules.
+- Updated Dreamcast console support.
 
 ------------------------
 Featherence Emu v0.1.2 (27-01-17)

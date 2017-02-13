@@ -25,7 +25,7 @@ def del_game(plugin, category, launcher, rom, filename, filepath):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""):
-	name = 'downloads' ; printpoint = ""
+	name = 'downloads' ; printpoint = "" ; filename_ = ""
 	
 	if category != "" and filename != "" and filepath != "":
 		if not os.path.exists(os.path.join(filepath)): printpoint = '1'
@@ -35,46 +35,170 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 		
 		if printpoint != "":
 			if category == 'Featherence_segamastersystem':
-				file = "Sega Master System.zip"
-				fileID = getfileID(file)
-				DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Master%20System.zip?dl=1", file, temp_path, rom_path, percentinfo=5)
+				if launcher == 'Featherence_segamastersystem1P':
+					filename_ = filename.replace(':',"")
+					file = "Sega Master System_1P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Master%20System_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else: printpoint = printpoint + 'D'
+				
+				if 'D' in printpoint:
+					file = "Sega Master System.zip"
+					fileID = getfileID(file)
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Master%20System.zip?dl=1", file, temp_path, rom_path, percentinfo=5)
+				
 		
 			elif category == 'Featherence_turbografx16':
-				file = "TurboGrafx 16.zip"
-				fileID = getfileID(file)
-				DownloadFile("https://www.dropbox.com/s/"+fileID+"/TurboGrafx%2016.zip?dl=1", file, temp_path, rom_path, percentinfo=5)
+				if launcher == 'Featherence_turbografx161P':
+					filename_ = filename.replace(':',"")
+					file = "TurboGrafx 16_1P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/TurboGrafx%2016_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else: printpoint = printpoint + 'D'
+				
+				elif launcher == 'Featherence_turbografx162P':
+					filename_ = filename.replace(':',"")
+					file = "TurboGrafx 16_2P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/TurboGrafx%2016_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else: printpoint = printpoint + 'D'
+				else: printpoint = printpoint + 'D'
+				
+				if 'D' in printpoint:
+					file = "TurboGrafx 16.zip"
+					fileID = getfileID(file)
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/TurboGrafx%2016.zip?dl=1", file, temp_path, rom_path, percentinfo=5)
 				
 				
 			elif category == 'Featherence_segagenesis':
-				file = "Sega Genesis.zip"
-				fileID = getfileID(file)
-				DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Genesis.zip?dl=1", file, temp_path, rom_path, percentinfo=5)
+				if launcher == 'Featherence_segagenesis1P':
+					filename_ = filename.replace(':',"")
+					file = "Sega Genesis_1P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Genesis_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else: printpoint = printpoint + 'D'
+				
+				elif launcher == 'Featherence_segagenesis2P':
+					filename_ = filename.replace(':',"")
+					file = "Sega Genesis_2P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Genesis_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else: printpoint = printpoint + 'D'
+				else: printpoint = printpoint + 'D'
+				
+				if 'D' in printpoint:
+					file = "Sega Genesis.zip"
+					fileID = getfileID(file)
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Genesis.zip?dl=1", file, temp_path, rom_path, percentinfo=5)
+				
 			
 			elif category == 'Featherence_nintendo':
-				file = "Nintendo.zip"
-				fileID = getfileID(file)
-				DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+				if launcher == 'Featherence_nintendo1P':
+					filename_ = filename.replace(':',"")
+					file = "Nintendo_1P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else: printpoint = printpoint + 'D'
+				
+				elif launcher == 'Featherence_nintendo2P':
+					filename_ = filename.replace(':',"")
+					file = "Nintendo_2P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else: printpoint = printpoint + 'D'
+				else: printpoint = printpoint + 'D'
+				
+				if 'D' in printpoint:
+					file = "Nintendo.zip"
+					fileID = getfileID(file)
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 			
 			elif category == 'Featherence_supernintendo':
-				file = "Super Nintendo.zip"
-				fileID = getfileID(file)
-				DownloadFile("https://www.dropbox.com/s/"+fileID+"/Super%20Nintendo.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+				if launcher == 'Featherence_supernintendo1P':
+					filename_ = filename.replace(':',"")
+					file = "Super Nintendo_1P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Super%20Nintendo_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else: printpoint = printpoint + 'D'
+				
+				elif launcher == 'Featherence_supernintendo2P':
+					filename_ = filename.replace(':',"")
+					file = "Super Nintendo_2P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Super%20Nintendo_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else: printpoint = printpoint + 'D'
+				else: printpoint = printpoint + 'D'
+				
+				if 'D' in printpoint:
+					file = "Super Nintendo.zip"
+					fileID = getfileID(file)
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Super%20Nintendo.zip?dl=1", file, temp_path, rom_path, percentinfo=2)				
 		
 			elif category == 'Featherence_nintendo64':
 				if launcher == 'Featherence_nintendo641P':
-					file = "Nintendo 64_1P.zip"
+					filename_ = filename.replace(':',"")
+					file = "Nintendo 64_1P_" + filename_ + ".zip"
 					fileID = getfileID(file)
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo%2064_1P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo%2064_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else: printpoint = printpoint + 'D'
 				
 				elif launcher == 'Featherence_nintendo642P':
-					file = "Nintendo 64_2P.zip"
+					filename_ = filename.replace(':',"")
+					file = "Nintendo 64_2P_" + filename_ + ".zip"
 					fileID = getfileID(file)
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo%2064_2P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo%2064_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else: printpoint = printpoint + 'D'
 				
 				elif launcher == 'Featherence_nintendo644P':
-					file = "Nintendo 64_4P.zip"
+					filename_ = filename.replace(':',"")
+					file = "Nintendo 64_4P_" + filename_ + ".zip"
 					fileID = getfileID(file)
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo%2064_4P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					if fileID != "":
+						filename__ = filename_.replace(" ", "%20")
+						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo%2064_4P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					else: printpoint = printpoint + 'D'
+				else: printpoint = printpoint + 'D'
+				
+				if 'D' in printpoint:
+					if launcher == 'Featherence_nintendo641P':
+						file = "Nintendo 64_1P.zip"
+						fileID = getfileID(file)
+						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo%2064_1P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					
+					elif launcher == 'Featherence_nintendo642P':
+						file = "Nintendo 64_2P.zip"
+						fileID = getfileID(file)
+						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo%2064_2P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					
+					elif launcher == 'Featherence_nintendo644P':
+						file = "Nintendo 64_4P.zip"
+						fileID = getfileID(file)
+						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Nintendo%2064_4P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					
+					
+				
 						
 			elif category == 'Featherence_arcade':
 				if launcher == 'Featherence_arcade1P':
@@ -99,12 +223,12 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					else:
 						file = "Arcade_2P.zip"
 						fileID = getfileID(file)
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_2P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_2P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 					
 				elif launcher == 'Featherence_arcade3P':
 					file = "Arcade_3P.zip"
 					fileID = getfileID(file)
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_3P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_3P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 				
 				elif launcher == 'Featherence_arcade4P':
 					filename_ = filename.replace(':',"")
@@ -116,7 +240,7 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					else:
 						file = "Arcade_4P.zip"
 						fileID = getfileID(file)
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_4P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_4P.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 				
 				elif launcher == 'Featherence_arcadeGEAR':
 					filename_ = filename.replace(':',"")
@@ -128,7 +252,7 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					else:
 						file = "Arcade_GEAR.zip"
 						fileID = getfileID(file)
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_GEAR.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_GEAR.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 				
 				elif launcher == 'Featherence_arcadeFUN':
 					filename_ = filename.replace(':',"")
@@ -140,7 +264,7 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					else:
 						file = "Arcade_FUN.zip"
 						fileID = getfileID(file)
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_FUN.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_FUN.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 				
 				elif launcher == 'Featherence_arcadeADULT':
 					filename_ = filename.replace(':',"")
@@ -153,7 +277,7 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					else:
 						file = "Arcade_ADULT.zip"
 						fileID = getfileID(file)
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_ADULT.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Arcade_ADULT.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 			
 			elif category == 'Featherence_nintendods':
 				if launcher == 'Featherence_nintendods1P':
@@ -163,7 +287,7 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					else: file = "Nintendo DS_1P.zip"
 					fileID = getfileID(file)
 					filename__ = file.replace(" ", "%20")
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 					
 			elif category == 'Featherence_playstation':
 				if launcher == 'Featherence_playstation1P':
@@ -171,26 +295,49 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					file = "Sony Playstation_1P_" + filename_ + ".zip"
 					fileID = getfileID(file)
 					filename__ = filename_.replace(" ", "%20")
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sony%20Playstation_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sony%20Playstation_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 				
 				elif launcher == 'Featherence_playstation2P':
 					filename_ = filename.replace(':',"")
 					file = "Sony Playstation_2P_" + filename_ + ".zip"
 					fileID = getfileID(file)
 					filename__ = filename_.replace(" ", "%20")
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sony%20Playstation_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sony%20Playstation_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 				
 				elif launcher == 'Featherence_playstation4P':
 					filename_ = filename.replace(':',"")
 					file = "Sony Playstation_4P_" + filename_ + ".zip"
 					fileID = getfileID(file)
 					filename__ = filename_.replace(" ", "%20")
-					DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sony%20Playstation_4P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sony%20Playstation_4P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+			
+			elif category == 'Featherence_dreamcast':
+				if launcher == 'Featherence_dreamcast1P':
+					filename_ = filename.replace(':',"")
+					file = "Dreamcast_1P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					filename__ = filename_.replace(" ", "%20")
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Dreamcast_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+				
+				elif launcher == 'Featherence_dreamcast2P':
+					filename_ = filename.replace(':',"")
+					file = "Dreamcast_2P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					filename__ = filename_.replace(" ", "%20")
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Dreamcast_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+				
+				elif launcher == 'Featherence_dreamcast4P':
+					filename_ = filename.replace(':',"")
+					file = "Dreamcast_4P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					filename__ = filename_.replace(" ", "%20")
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Dreamcast_4P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 	
 	text = "category" + space2 + str(category) + newline + \
 	"launcher" + space2 + str(launcher) + newline + \
 	"rom" + space2 + str(rom) + newline + \
 	"filename" + space2 + str(filename) + newline + \
+	"filename_" + space2 + str(filename_) + newline + \
 	"filepath" + space2 + str(filepath) + newline
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
@@ -235,7 +382,10 @@ def startup():
 	installemuconsole()
 	
 	text = "Force" + space2 + str(value) + newline + \
-	'Addon_Update' + space2 + str(Addon_Update)
+	'Addon_Update' + space2 + str(Addon_Update) + newline + \
+	'emu_startup' + space2 + str(emu_startup) + newline + \
+	'Addon_Version' + space2 + str(Addon_Version) + newline + \
+	'addonVersion' + space2 + str(addonVersion) + newline
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def chmod():
@@ -487,6 +637,13 @@ def getfileID(file):
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
+	
+	elif file == "Sega Genesis_1P_Comix Zone.zip":
+		fileID_L.append('mqqeq63yqrj7tjy') #featherence.guser14
+		fileID_L.append('onxt95lnodlcz1j') #featherence.guser1
+		fileName_L.append('Source 1')
+		fileName_L.append('Source 2')
+		
 	elif file == "Sega Master System.zip":
 		fileID_L.append('c5ingtyhgkwjmx7') #user1
 		fileID_L.append('3v6kt7hcj4udnrq') #htpt
@@ -658,116 +815,146 @@ def getfileID(file):
 		fileName_L.append('Source 2')
 
 		
-	elif file == "Dreamcast_2P_Project Justice - Rival Schools 2": fileID = "n9mnlaffe27f3h1" #featherence.user1
-	elif file == "Dreamcast_2P_Sonic Adventure 2": fileID = "gyehvme4ky3bo93" #featherence.user1
-	elif file == "Dreamcast_1P_Headhunter": fileID = "" #featherence.user2 #NEED TO FILL!!!
-	elif file == "Dreamcast_2P_Street Fighter III - 3rd Strike": fileID = "tew77v2lqhybj2j" #featherence.user2
-	elif file == "Dreamcast_1P_Skies of Arcadia": fileID = "" #featherence.user3
+	elif file == "Dreamcast_2P_Project Justice - Rival Schools 2.zip": fileID = "n9mnlaffe27f3h1" #featherence.user1
+	elif file == "Dreamcast_2P_Sonic Adventure 2.zip": fileID = "gyehvme4ky3bo93" #featherence.user1
+	elif file == "Dreamcast_1P_Headhunter.zip": fileID = "" #featherence.user2 #NEED TO FILL!!!
+	elif file == "Dreamcast_2P_Street Fighter III - 3rd Strike.zip": fileID = "tew77v2lqhybj2j" #featherence.user2
+	elif file == "Dreamcast_1P_Skies of Arcadia.zip": fileID = "" #featherence.user3
 	
-	elif file == "Dreamcast_2P_Capcom vs. SNK": fileID = "7373ygc3fk66rtq" #featherence.user4
-	elif file == "Dreamcast_2P_Samba De Amigo": fileID = "2407wbot7t6alzr" #featherence.user4
+	elif file == "Dreamcast_2P_Capcom vs. SNK.zip": fileID = "7373ygc3fk66rtq" #featherence.user4
+	elif file == "Dreamcast_2P_Samba De Amigo.zip": fileID = "2407wbot7t6alzr" #featherence.user4
 	
-	elif file == "Dreamcast_1P_Sonic Adventure": fileID = "7p877gb0zfsclzl" #featherence.user5
-	elif file == "Dreamcast_1P_Rayman 2 - The Great Escape": fileID = "sy884basx1e9fdm" #featherence.user5
-	elif file == "Dreamcast_1P_Crazy Taxi": fileID = "o7ps9hb7iyn7v73" #featherence.user5
+	elif file == "Dreamcast_1P_Sonic Adventure.zip": fileID = "7p877gb0zfsclzl" #featherence.user5
+	elif file == "Dreamcast_1P_Rayman 2 - The Great Escape.zip": fileID = "sy884basx1e9fdm" #featherence.user5
+	elif file == "Dreamcast_1P_Crazy Taxi.zip": fileID = "o7ps9hb7iyn7v73" #featherence.user5
 	
-	elif file == "Dreamcast_1P_Jet Grind Radio": fileID = "d9vrc7jll590gby" #featherence.user6
-	elif file == "Dreamcast_1P_Resident Evil 3 - Nemesis": fileID = "763t2fmkl6xoqxd" #featherence.user6
-	elif file == "Dreamcast_2P_Daytona USA 2001": fileID = "40jl8wu4iatjw7f" #featherence.user6
+	elif file == "Dreamcast_1P_Jet Grind Radio.zip": fileID = "d9vrc7jll590gby" #featherence.user6
+	elif file == "Dreamcast_1P_Resident Evil 3 - Nemesis.zip": fileID = "763t2fmkl6xoqxd" #featherence.user6
+	elif file == "Dreamcast_2P_Daytona USA 2001.zip": fileID = "40jl8wu4iatjw7f" #featherence.user6
 	
-	elif file == "Dreamcast_1P_Grandia II": fileID = "hwfzizwyg8n1fwd" #featherence.user7
-	elif file == "Dreamcast_4P_90 Minutes - Sega Championship Football": fileID = "wjv6tz7k330tzru" #featherence.user7
-	elif file == "Dreamcast_4P_NFL Blitz 2001": fileID = "sg7nv9jz2jjklpe" #featherence.user7
+	elif file == "Dreamcast_1P_Grandia II.zip": fileID = "hwfzizwyg8n1fwd" #featherence.user7
+	elif file == "Dreamcast_4P_90 Minutes - Sega Championship Football.zip": fileID = "wjv6tz7k330tzru" #featherence.user7
+	elif file == "Dreamcast_4P_NFL Blitz 2001.zip": fileID = "sg7nv9jz2jjklpe" #featherence.user7
 	
-	elif file == "Dreamcast_1P_Airforce Delta": fileID = "qp9ni9hwtiejn04" #featherence.user9 (Possibly disc2 missing!)
-	elif file == "Dreamcast_2P_4 Wheel Thunder": fileID = "tvk2crtgpv50la7" #featherence.user9
-	elif file == "Dreamcast_1P_Illbleed": fileID = "stbpzbrtmofinox" #featherence.user9
+	elif file == "Dreamcast_1P_Airforce Delta.zip": fileID = "qp9ni9hwtiejn04" #featherence.user9 (Possibly disc2 missing!)
+	elif file == "Dreamcast_2P_4 Wheel Thunder.zip": fileID = "tvk2crtgpv50la7" #featherence.user9
+	elif file == "Dreamcast_1P_Illbleed.zip": fileID = "stbpzbrtmofinox" #featherence.user9
 	
-	elif file == "Dreamcast_1P_Alone in the Dark - The New Nightmare": fileID = "8fle779l57z4kf5" #featherence.user11
+	elif file == "Dreamcast_1P_Alone in the Dark - The New Nightmare.zip": fileID = "8fle779l57z4kf5" #featherence.user11
 	
-	elif file == "Dreamcast_1P_Sword of the Berserk - Guts Rage": fileID = "nlxzy78c9bsy1oh" #featherence.user12 #1.35GB FREE
+	elif file == "Dreamcast_1P_Sword of the Berserk - Guts Rage.zip": fileID = "nlxzy78c9bsy1oh" #featherence.user12 #1.35GB FREE
 	
-	elif file == "Dreamcast_1P_Skies of Arcadia": fileID = "ans8hoynble9s7s" #featherence.user13
-	elif file == "Dreamcast_1P_Evolution 2 - Far Off Promise": fileID = "jvwyia29ys2hmkt" #featherence.user13
+	elif file == "Dreamcast_1P_Skies of Arcadia.zip": fileID = "ans8hoynble9s7s" #featherence.user13
+	elif file == "Dreamcast_1P_Evolution 2 - Far Off Promise.zip": fileID = "jvwyia29ys2hmkt" #featherence.user13
 	
-	elif file == "Dreamcast_1P_Headhunter": fileID = "6yl549o5zyts48t" #featherence.user14
-	elif file == "Dreamcast_2P_Dead or Alive 2": fileID = "8ahdxi4zw0d4hy5" #featherence.user14
+	elif file == "Dreamcast_1P_Headhunter.zip": fileID = "6yl549o5zyts48t" #featherence.user14
+	elif file == "Dreamcast_2P_Dead or Alive 2.zip": fileID = "8ahdxi4zw0d4hy5" #featherence.user14
 	
-	elif file == "Dreamcast_2P_Cyber Troopers Virtual On - Oratorio Tangram": fileID = "pusgq1cl8hqzbud" #featherence.user15
-	elif file == "Dreamcast_2P_Marvel vs. Capcom 2": fileID = "vxgcov3dfud8sil" #featherence.user15
-	elif file == "Dreamcast_2P_Sega GT": fileID = "pq5mxuo045ctygj" #featherence.user15
+	elif file == "Dreamcast_2P_Cyber Troopers Virtual On - Oratorio Tangram.zip": fileID = "pusgq1cl8hqzbud" #featherence.user15
+	elif file == "Dreamcast_2P_Marvel vs. Capcom 2.zip": fileID = "vxgcov3dfud8sil" #featherence.user15
+	elif file == "Dreamcast_2P_Sega GT.zip": fileID = "pq5mxuo045ctygj" #featherence.user15
 	
-	elif file == "Dreamcast_1P_Blue Stinger": fileID = "yw72w512amnkf6f" #featherence.user16
-	elif file == "Dreamcast_1P_Metropolis Street Racer": fileID = "yjlglju05dyh0ck" #featherence.user16
-	elif file == "Dreamcast_2P_Ready 2 Rumble Boxing": fileID = "klfpbqlx7mmjrs1" #featherence.user16
+	elif file == "Dreamcast_1P_Blue Stinger.zip": fileID = "yw72w512amnkf6f" #featherence.user16
+	elif file == "Dreamcast_1P_Metropolis Street Racer.zip": fileID = "yjlglju05dyh0ck" #featherence.user16
+	elif file == "Dreamcast_2P_Ready 2 Rumble Boxing.zip": fileID = "klfpbqlx7mmjrs1" #featherence.user16
 	
-	elif file == "Dreamcast_1P_AeroWings 2 - Airstrike": fileID = "cmgiv70684dgdio" #featherence.user17
-	elif file == "Dreamcast_4P_V-Rally 2 - Expert Edition": fileID = "4s8z1ya5rgnfm3a" #featherence.user17
+	elif file == "Dreamcast_1P_AeroWings 2 - Airstrike.zip": fileID = "cmgiv70684dgdio" #featherence.user17
+	elif file == "Dreamcast_4P_V-Rally 2 - Expert Edition.zip": fileID = "4s8z1ya5rgnfm3a" #featherence.user17
 	
-	elif file == "Dreamcast_2P_Confidential Mission": fileID = "f00lw5iu8slv5ks" #featherence.user18
-	elif file == "Dreamcast_2P_Flag to Flag": fileID = "6ggdjke6uq1aq3q" #featherence.user18
-	elif file == "Dreamcast_2P_Plasma Sword - Nightmare of Bilstein": fileID = "ray1fhclvn23rlf" #featherence.user18
+	elif file == "Dreamcast_2P_Confidential Mission.zip": fileID = "f00lw5iu8slv5ks" #featherence.user18
+	elif file == "Dreamcast_2P_Flag to Flag.zip": fileID = "6ggdjke6uq1aq3q" #featherence.user18
+	elif file == "Dreamcast_2P_Plasma Sword - Nightmare of Bilstein.zip": fileID = "ray1fhclvn23rlf" #featherence.user18
 	
-	elif file == "Dreamcast_2P_Expendable": fileID = "t1nokjtgb76uqch" #featherence.user19
-	elif file == "Dreamcast_1P_Prince of Persia - Arabian Nights": fileID = "6in3lc79e7hiw4h" #featherence.user19
-	elif file == "Dreamcast_1P_Tokyo Xtreme Racer 2": fileID = "0g74y3q1ou8nmsr" #featherence.user19
+	elif file == "Dreamcast_2P_Expendable.zip": fileID = "t1nokjtgb76uqch" #featherence.user19
+	elif file == "Dreamcast_1P_Prince of Persia - Arabian Nights.zip": fileID = "6in3lc79e7hiw4h" #featherence.user19
+	elif file == "Dreamcast_1P_Tokyo Xtreme Racer 2.zip": fileID = "0g74y3q1ou8nmsr" #featherence.user19
 	
-	elif file == "Dreamcast_4P_Striker Pro 2000": fileID = "6yml24yioziii8j" #featherence.user20
-	elif file == "Dreamcast_4P_Tee Off": fileID = "9rj00cxbcthxsib" #featherence.user20
-	elif file == "Dreamcast_2P_Dead or Alive 2": fileID = "5ypl35mj4bysuci" #featherence.user20
-	elif file == "Dreamcast_4P_Walt Disney World Quest - Magical Racing Tour": fileID = "drp9hemxgm0wxzb" #featherence.user20
+	elif file == "Dreamcast_4P_Striker Pro 2000.zip": fileID = "6yml24yioziii8j" #featherence.user20
+	elif file == "Dreamcast_4P_Tee Off.zip": fileID = "9rj00cxbcthxsib" #featherence.user20
+	elif file == "Dreamcast_2P_Dead or Alive 2.zip": fileID = "5ypl35mj4bysuci" #featherence.user20
+	elif file == "Dreamcast_4P_Walt Disney World Quest - Magical Racing Tour.zip": fileID = "drp9hemxgm0wxzb" #featherence.user20
 	
-	elif file == "Dreamcast_1P_ECCO the Dolphin - Defender of the Future": fileID = "hheupvn8sik5f2q" #featherence.user21
-	elif file == "Dreamcast_1P_Record of Lodoss War": fileID = "12rdubuwm8fo51l" #featherence.user21
-	elif file == "Dreamcast_2P_Soul Calibur": fileID = "7to98uj6iwgl657" #featherence.user21
+	elif file == "Dreamcast_1P_ECCO the Dolphin - Defender of the Future.zip": fileID = "hheupvn8sik5f2q" #featherence.user21
+	elif file == "Dreamcast_1P_Record of Lodoss War.zip": fileID = "12rdubuwm8fo51l" #featherence.user21
+	elif file == "Dreamcast_2P_Soul Calibur.zip": fileID = "7to98uj6iwgl657" #featherence.user21
 	
-	elif file == "Dreamcast_1P_Legacy of Kain - Soul Reaver": fileID = "ylhvvpcftm7kxbg" #featherence.guser1
-	elif file == "Dreamcast_1P_Chicken Run": fileID = "tfptc1k2gyek83z" #featherence.guser1
-	elif file == "Dreamcast_2P_Virtua Fighter 3tb": fileID = "nsvr0pe2hbsqffw" #featherence.guser1
+	elif file == "Dreamcast_1P_Legacy of Kain - Soul Reaver.zip": fileID = "ylhvvpcftm7kxbg" #featherence.guser1
+	elif file == "Dreamcast_1P_Chicken Run.zip": fileID = "tfptc1k2gyek83z" #featherence.guser1
+	elif file == "Dreamcast_2P_Virtua Fighter 3tb.zip": fileID = "nsvr0pe2hbsqffw" #featherence.guser1
 	
-	elif file == "Dreamcast_1P_KAO the Kangaroo": fileID = "2z1mlgks35y8upf" #featherence.guser3
-	elif file == "Dreamcast_1P_Maken X": fileID = "vx81423u25uvb65" #featherence.guser3
-	elif file == "Dreamcast_4P_Spawn - In the Demon's Hand": fileID = "tlwo34jfiu4xy61" #featherence.guser3
+	elif file == "Dreamcast_1P_KAO the Kangaroo.zip": fileID = "2z1mlgks35y8upf" #featherence.guser3
+	elif file == "Dreamcast_1P_Maken X.zip": fileID = "vx81423u25uvb65" #featherence.guser3
+	elif file == "Dreamcast_4P_Spawn - In the Demon's Hand.zip": fileID = "tlwo34jfiu4xy61" #featherence.guser3
 	
-	elif file == "Dreamcast_1P_Donald Duck - Goin' Quackers": fileID = "9ddwvsyxvonbdof" #featherence.guser4
-	elif file == "Dreamcast_2P_Power Stone": fileID = "y6n6uhe8fgsacw6" #featherence.guser4
-	elif file == "Dreamcast_4P_Bomberman Online": fileID = "58wve2p4xeznrba" #featherence.guser4
-	elif file == "Dreamcast_4P_Quake III Arena": fileID = "gitt8vkzijg5ud2" #featherence.guser4
+	elif file == "Dreamcast_1P_Donald Duck - Goin' Quackers.zip": fileID = "9ddwvsyxvonbdof" #featherence.guser4
+	elif file == "Dreamcast_2P_Power Stone.zip": fileID = "y6n6uhe8fgsacw6" #featherence.guser4
+	elif file == "Dreamcast_4P_Bomberman Online.zip": fileID = "58wve2p4xeznrba" #featherence.guser4
+	elif file == "Dreamcast_4P_Quake III Arena.zip": fileID = "gitt8vkzijg5ud2" #featherence.guser4
 
-	elif file == "Dreamcast_2P_Tony Hawk's Pro Skater": fileID = "vioqjp3wvhidwjr" #featherence.guser5
+	elif file == "Dreamcast_2P_Tony Hawk's Pro Skater.zip": fileID = "vioqjp3wvhidwjr" #featherence.guser5
 	
-	elif file == "Dreamcast_4P_ChuChu Rocket!": fileID = "heeb8qqagnphxzl" #featherence.guser6
-	elif file == "Dreamcast_4P_Virtua Tennis": fileID = "wu843fsy9eql7wt" #featherence.guser6
-	elif file == "Dreamcast_4P_WWF Royal Rumble": fileID = "4o0q92vuewas1s3" #featherence.guser6
-	elif file == "Dreamcast_4P_Red Dog - Superior Firepower": fileID = "lahkk5xhkppo9q1" #featherence.guser6
-	elif file == "Dreamcast_2P_Gunbird 2": fileID = "4j3dilb8yxkdxdn" #featherence.guser6
-	elif file == "Dreamcast_2P_Psychic Force 2012": fileID = "esnf4i1p55dtnmo" #featherence.guser6
+	elif file == "Dreamcast_4P_ChuChu Rocket!.zip": fileID = "heeb8qqagnphxzl" #featherence.guser6
+	elif file == "Dreamcast_4P_Virtua Tennis.zip": fileID = "wu843fsy9eql7wt" #featherence.guser6
+	elif file == "Dreamcast_4P_WWF Royal Rumble.zip": fileID = "4o0q92vuewas1s3" #featherence.guser6
+	elif file == "Dreamcast_4P_Red Dog - Superior Firepower.zip": fileID = "lahkk5xhkppo9q1" #featherence.guser6
+	elif file == "Dreamcast_2P_Gunbird 2.zip": fileID = "4j3dilb8yxkdxdn" #featherence.guser6
+	elif file == "Dreamcast_2P_Psychic Force 2012.zip": fileID = "esnf4i1p55dtnmo" #featherence.guser6
 	
-	elif file == "Dreamcast_2P_Under Defeat": fileID = "mgsvwb0brxdazyr" #featherence.guser7
-	elif file == "Dreamcast_1P_Spider-Man": fileID = "6djdeqnm2sr5z51" #featherence.guser7
-	elif file == "Dreamcast_2P_Garou Mark of the Wolves": fileID = "mhz7v5x6vbaoviy" #featherence.guser7
-	elif file == "Dreamcast_4P_Sega Worldwide Soccer 2000 - Euro Edition": fileID = "5vjlyqk2ihrzpxp" #featherence.guser7
+	elif file == "Dreamcast_2P_Under Defeat.zip": fileID = "mgsvwb0brxdazyr" #featherence.guser7
+	elif file == "Dreamcast_1P_Spider-Man.zip": fileID = "6djdeqnm2sr5z51" #featherence.guser7
+	elif file == "Dreamcast_2P_Garou Mark of the Wolves.zip": fileID = "mhz7v5x6vbaoviy" #featherence.guser7
+	elif file == "Dreamcast_4P_Sega Worldwide Soccer 2000 - Euro Edition.zip": fileID = "5vjlyqk2ihrzpxp" #featherence.guser7
 	
-	elif file == "Dreamcast_2P_Iron Aces": fileID = "lql3v266oymp0w3" #featherence.guser8
-	elif file == "Dreamcast_2P_Under Defeat": fileID = "oxuyfp1thzd294m" #featherence.guser8
-	elif file == "Dreamcast_2P_Zombie Revenge": fileID = "341gpnc1qvhc6ps" #featherence.guser8
-	elif file == "Dreamcast_4P_GigaWing 2": fileID = "gec0iw3mw712lwe" #featherence.guser8
-	elif file == "Dreamcast_4P_Toy Commander": fileID = "3mch97gzj160x29" #featherence.guser8
+	elif file == "Dreamcast_2P_Iron Aces.zip": fileID = "lql3v266oymp0w3" #featherence.guser8
+	elif file == "Dreamcast_2P_Under Defeat.zip": fileID = "oxuyfp1thzd294m" #featherence.guser8
+	elif file == "Dreamcast_2P_Zombie Revenge.zip": fileID = "341gpnc1qvhc6ps" #featherence.guser8
+	elif file == "Dreamcast_4P_GigaWing 2.zip": fileID = "gec0iw3mw712lwe" #featherence.guser8
+	elif file == "Dreamcast_4P_Toy Commander.zip": fileID = "3mch97gzj160x29" #featherence.guser8
 	
-	elif file == "": fileID = "" #featherence.guser9
+	elif file == "Dreamcast_1P_Super Magnetic Neo.zip":
+		fileID_L.append('e5y0na0wxub395u') #featherence.guser9
+		fileID_L.append('pr2f65l4sgyb5mx') #featherence.guser14
+		fileName_L.append('Source 1')
+		fileName_L.append('Source 2')
+	elif file == "Dreamcast_4P_Tetris 4D.zip":
+		fileID_L.append('gkw2qyvgqnbvjxh') #featherence.guser9
+		fileID_L.append('00058przunx5ss9') #featherence.guser14
+		fileName_L.append('Source 1')
+		fileName_L.append('Source 2')
+	elif file == "Dreamcast_2P_World Series Baseball 2K1.zip":
+		fileID_L.append('vl84nsaxl8ub3x4') #featherence.guser9
+		#fileID_L.append('') #featherence.guser14
+		fileName_L.append('Source 1')
+		#fileName_L.append('Source 2')
+	elif file == "Dreamcast_2P_TrickStyle.zip":
+		fileID_L.append('75ig1in12omssr9') #featherence.guser9
+		#fileID_L.append('') #featherence.guser14
+		fileName_L.append('Source 1')
+		#fileName_L.append('Source 2')
+	elif file == "Dreamcast_1P_Time Stalkers.zip": fileID = "ajshhv8ju30i4hh" #featherence.guser9
+	elif file == "Dreamcast_4P_Sonic Shuffle.zip": fileID = "vf2466gbp4oyn0v" #featherence.guser9 #500MB FREE
 	
-	elif file == "Dreamcast_1P_Draconus - Cult of the Wyrm": fileID = "hnqwsz9ojd5jmz4" #featherence.guser10
-	elif file == "Dreamcast_4P_Power Stone 2": fileID = "ind1zhr75zspyy8" #featherence.guser10
+	elif file == "Dreamcast_1P_Draconus - Cult of the Wyrm.zip": fileID = "hnqwsz9ojd5jmz4" #featherence.guser10
+	elif file == "Dreamcast_4P_Power Stone 2.zip": fileID = "ind1zhr75zspyy8" #featherence.guser10
+	elif file == "Dreamcast_1P_Crazy Taxi 2": fileID = "zf4uaiyavw7j249" #featherence.guser10
+	elif file == "Dreamcast_1P_Buzz Lightyear of Star Command": fileID = "q60nlnq5nnezwl1" #featherence.guser10
 	
-	elif file == "Dreamcast_2P_Tech Romancer": fileID = "m6342fmoz0x18fa" #featherence.guser11
-	elif file == "Dreamcast_2P_Ultimate Fighting Championship": fileID = "3ztpdgjeiglgxzp" #featherence.guser11
+	elif file == "Dreamcast_2P_Tech Romancer.zip": fileID = "m6342fmoz0x18fa" #featherence.guser11
+	elif file == "Dreamcast_2P_Ultimate Fighting Championship.zip": fileID = "3ztpdgjeiglgxzp" #featherence.guser11
 
-	elif file == "Dreamcast_1P_Fighting Force 2": fileID = "owp5a3e8sxj0sh3" #featherence.guser12
-	elif file == "Dreamcast_2P_Capcom vs. SNK 2": fileID = "ue73pbxrffpwf3c" #featherence.guser12
-	elif file == "Dreamcast_1P_Crazy Taxi 2": fileID = "abgr81mdxxmvex9" #featherence.guser12
-	elif file == "Dreamcast_1P_Rez": fileID = "vraq5mgqsd0sqx2" #featherence.guser12
-	elif file == "Dreamcast_2P_Test Drive 6": fileID = "ja583d5z77lbvn9" #featherence.guser12
-	elif file == "Dreamcast_4P_Propeller Arena": fileID = "41h77xde159helg" #featherence.guser12
+	elif file == "Dreamcast_1P_Fighting Force 2.zip": fileID = "owp5a3e8sxj0sh3" #featherence.guser12
+	elif file == "Dreamcast_2P_Capcom vs. SNK 2.zip": fileID = "ue73pbxrffpwf3c" #featherence.guser12
+	elif file == "Dreamcast_1P_Crazy Taxi 2.zip": fileID = "abgr81mdxxmvex9" #featherence.guser12
+	elif file == "Dreamcast_1P_Rez.zip": fileID = "vraq5mgqsd0sqx2" #featherence.guser12
+	elif file == "Dreamcast_2P_Test Drive 6.zip": fileID = "ja583d5z77lbvn9" #featherence.guser12
+	elif file == "Dreamcast_4P_Propeller Arena.zip": fileID = "41h77xde159helg" #featherence.guser12
+	
+	elif file == "Dreamcast_2P_Buggy Heat": fileID = "fh0j7lpyyh3ep89" #featherence.guser14
+	
+	elif file == "Dreamcast_1P_Industrial Spy - Operation Espionage.zip": fileID = "6hk44eq154qohpo" #featherence.guser16
+	elif file == "Dreamcast_1P_MDK 2.zip": fileID = "hg1ogro1tv0twq4" #featherence.guser16
+	elif file == "Dreamcast_1P_Mr Driller.zip": fileID = "qya7f8ezviyuuty" #featherence.guser16
+	elif file == "Dreamcast_2P_The King of Fighters '99.zip": fileID = "8e83i6xwnai5pme" #featherence.guser16
 	
 	
 	
@@ -776,8 +963,8 @@ def getfileID(file):
 		if returned > 0 and not '-1' in str(returned):
 			fileID = fileID_L[int(returned)]
 			'''---------------------------'''
-		else:
-			fileID = ""
+		else: fileID = ""
+		
 	return fileID
 
 def searchtrailer(filename):
@@ -894,7 +1081,7 @@ def keys_help(filename):
 	elif filename == 'Sega Master System': url = '&youtube_id=DcDqe4UmoJI'
 	elif filename == 'Sony Playstation': url = '&youtube_id=XHr-svFqDm0'
 	elif filename == 'Super Nintendo': url = '&youtube_id=zLHY2ImgHRM'
-	elif filename == 'TurboGrafx 16': url = '&youtube_id=evg1Q6Ly3AY'
+	elif filename == 'TurboGrafx 16': url = '&youtube_id=DLZwdLiPzqc'
 	else:
 		url = ''
 		printpoint = printpoint + '9'

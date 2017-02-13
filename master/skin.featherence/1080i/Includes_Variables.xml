@@ -575,6 +575,7 @@
 	<value description="הרחבה" condition="[String.Contains(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !String.IsEmpty(Container.FolderName) + !String.IsEmpty(Container.NumItems)">$INFO[Container.FolderName] ($INFO[Container.NumItems])</value>
 	<value description="הרחבה2" condition="Window.IsVisible(DialogAddonSettings.xml) + !String.IsEmpty(ListItem.AddonName)">$INFO[System.CurrentWindow]: [COLOR=yellow][B]$INFO[ListItem.AddonName][/COLOR][/B]</value>
 	<value description="הרחבה2" condition="[String.Contains(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
+	<value description="DialogGameControllers" condition="Window.IsVisible(DialogGameControllers.xml)">$LOCALIZE[35050]</value>
 	<value>$INFO[System.CurrentWindow] ($INFO[Container.NumItems])</value>
   </variable>
   <variable name="TopInformation2.1" description="שמאל2 (ספרייה)">

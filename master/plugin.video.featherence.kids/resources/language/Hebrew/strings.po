@@ -2347,8 +2347,8 @@ msgid "Pim and Pimba"
 msgstr "פים ופימבה"
 
 msgctxt "#10639
-msgid ""
-msgstr ""
+msgid "Fables of the Green Forest"
+msgstr "סיפורי היער הירוק"
 
 msgctxt "#10640
 msgid ""
@@ -5580,8 +5580,8 @@ msgid "Pim & Pimba play imaginative games with an object they have uncovered in 
 msgstr "Pim & Pimba play imaginative games with an object they have uncovered in the snow."
 
 msgctxt "#106390
-msgid ""
-msgstr ""
+msgid "Fables of the Green Forest (山ねずみロッキーチャック Yama Nezumi Rokkī Chakku?, lit. "Rocky Chuck, the Mountain Rat", also known as Rocky Chuck the Woodchuck, Chuck the Beaver and Johnny Chuck)[1] is an animé television series based on a series of books published in the 1910s and 1920s by Thornton W. Burgess which ran on the Japanese network Fuji Television from 7 January 1973 to 30 December 1973. It consists of 52 episodes and was created by the animation studio Zuiyo Eizo (the predecessor to Nippon Animation).[CR]The series has been aired in many countries outside Japan, such as Germany (on Bayerischer Rundfunk), Spain (TVE), Romania (TVR 1), Portugal (RTP), Venezuela (VTV), Canada (TVOntario, dubbed in both English and French), and Hong Kong. The release of the series into Canada was done through ZIV International in 1978."
+msgstr "יפורי היער הירוק (ביפנית: 山ねずみロッキーチャック, בתרגום מילולי לעברית: "רוקי צ'אק, עכבר ההרים") היא סדרת אנימה המבוססת על סדרת ספרים שפורסמה בעשורים השני והשלישי של המאה ה-20 על ידי ת'ורנטון בורגס (Thornton W. Burgess), סופר ילדים אמריקאי.[CR]הסדרה שודרה ברשת הטלוויזיה היפנית "Fuji TV" בשנת 1973, החל ב-7 בינואר ועד 30 בדצמבר. הסדרה כוללת 52 פרקים, ועוסקת בהרפתקאותיהן של חיות היער השונות.[CR]מאוחר יותר שודרה הסדרה במדינות שונות מחוץ ליפן. בישראל נקלטה הסדרה בשנות השמונים בשידורי ערוץ המזרח התיכון (ערוץ "לבנון"), ומאוחר יותר שודרה בדיבוב לעברית בשידורי הניסיון של ערוץ 2. הסדרה דובבה על ידי גיורא קנת, שדיבב את כל הדמויות הגבריות, ועל ידי דנה יחזקאלי, שדיבבה את כל הדמויות הנשיות."
 
 msgctxt "#106400
 msgid ""

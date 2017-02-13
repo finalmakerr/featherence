@@ -1937,8 +1937,8 @@ msgid "Czech"
 msgstr "צ'כית"
 
 msgctxt "#32935"
-msgid ""
-msgstr ""
+msgid "Persian"
+msgstr "פרסית"
 
 msgctxt "#32999"
 msgid ""

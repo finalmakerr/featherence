@@ -583,9 +583,6 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f1104.jpg&mode=3&name=%d7%90%d7%a0%d7%99%d7%9e%d7%a0%d7%99%d7%90%d7%a7%d7%a1%20%2a%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&series_id=1104&series_name=%d7%90%d7%a0%d7%99%d7%9e%d7%a0%d7%99%d7%90%d7%a7%d7%a1%20%2a%d7%aa%d7%a8%d7%92%d7%95%d7%9d%20%d7%9e%d7%95%d7%91%d7%a0%d7%94%2a&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1104%2fanimaniacs-%d7%90%d7%a0%d7%99%d7%9e%d7%a0%d7%99%d7%90%d7%a7%d7%a1-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94')
 		list.append('&youtube_pl=PLN0EJVTzRDL9ObPf7m4GCN2BL6Ayreybh')
-		list.append('&youtube_pl=PL240D6E0D52552316') #Broken
-		list.append('&youtube_pl=PL8D5045D1EA3AA091') #Broken
-		list.append('&youtube_pl=PLE69A961D0351E331') #Broken
 	addDir(addonString(10405).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1434.jpg',addonString(104050).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
 							  
 	'''אקס-מן: הדור הבא'''
@@ -846,6 +843,41 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLS4APdRj5MZdhdNEmwWUcZL_Tx_skioQX') #English
 	addDir(addonString(10424).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1147.jpg',addonString(104240).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	
+	'''סיפורי היער הירוק'''
+	list = []
+	thumb = 'https://upload.wikimedia.org/wikipedia/en/8/86/Fables_of_the_Green_Forest.jpg'
+	fanart = 'http://q8animeshop.com/media/[CT]%2002%20-%20Fables%20of%20The%20Green%20Forest%20[DVD]%20BY-%20Messi10.avi_001224923.jpg'
+	if 'Hebrew' in General_LanguageL:
+		list.append('&youtube_pl=PLGnTTJWIWt4c29JQVtq4KGqIurcstibnt')
+	
+	if 'English' in General_LanguageL:
+		list.append('&youtube_pl=PLmNp3u5r93jaT6gqMq8-hZqYoL2z5U9sY')
+	
+	if 'Arabic' in General_LanguageL:
+		list.append('&youtube_pl=PLo9BPxZp4fUeUK5lrAHqTDsaoLeoRMR6F')
+	
+	if 'Persian' in General_LanguageL:
+		list.append('&youtube_pl=PLo9BPxZp4fUeUK5lrAHqTDsaoLeoRMR6F')
+		
+	if 'Spanish' in General_LanguageL:
+		list.append('&youtube_pl=PLZ4POPAfakSGuNfFkFX3SvkrkOHVfDXNt')
+		
+	if 'Italian' in General_LanguageL:
+		list.append('&youtube_pl=PLKY9qcuiW3a2Hl3yeVPalp3tFKoHSXjvF')
+		
+
+	if 'Japanish' in General_LanguageL:
+		list.append('&youtube_pl=PL47D11FE0DE4DAAA8')
+		
+	if 'Portuguese' in General_LanguageL:
+		list.append('&youtube_pl=PLqocpp7Qra0k7vJQAtsT_tlzJY-FuAFOh')
+		
+	if 'French' in General_LanguageL:
+		list.append('&youtube_pl=PLLNbiNjUM-8BMvNcsPSgmmKh12w02TWmg')
+
+
+	addDir(addonString(10639).encode('utf-8'),list,17,thumb,addonString(106390).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart))
 	
 	'''היתקליף'''
 	list = []
@@ -2522,7 +2554,6 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	
 	'''***'''
 	list = []
-	list.append('&youtube_ch=UCTnJbX128x0hnK9f5ynC2tg') #DuckDuck Fun TV
 	list.append('&youtube_ch=UCDZgrBvmY6tXt8gb4Z-7w9A') #Jude Bryant
 	list.append('&youtube_ch=UCvTHynhs6QldpcAJ_a3jl5g') #Kids Funny Cars Toons
 	list.append('&youtube_ch=UCtsIgvwaT1icVCi0Xbv1s0A') #Colors Kids TV
@@ -4385,6 +4416,9 @@ def CATEGORIES200():
 	
 	'''פינית'''
 	addDir(addonString_servicefeatherence(32925).encode('utf-8'),'Finnish',90,"http://flaglane.com/download/finnish-flag/finnish-flag-medium.png",addonString(1).encode('utf-8') % (addonString_servicefeatherence(32925).encode('utf-8')),'1',0,getAddonFanart(200, custom=""))
+	
+	'''פרסית'''
+	addDir(addonString_servicefeatherence(32935).encode('utf-8'),'Persian',90,"http://flaglane.com/download/iranian-flag/iranian-flag-graphic.png",addonString(1).encode('utf-8') % (addonString_servicefeatherence(32935).encode('utf-8')),'1',0,getAddonFanart(200, custom=""))
 
 	'''ערבית'''
 	addDir(addonString_servicefeatherence(32926).encode('utf-8'),'Arabic',90,"http://flaglane.com/download/emirian-flag/emirian-flag-medium.png",addonString(1).encode('utf-8') % (addonString_servicefeatherence(32926).encode('utf-8')),'1',0,getAddonFanart(200, custom=""))

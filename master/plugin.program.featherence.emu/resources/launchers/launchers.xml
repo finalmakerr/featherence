@@ -10471,6 +10471,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>4171b36114cd2dcf45312a0b51dd1711</id>
+					<name>Comix Zone</name>
+					<filename>rom_pathSega Genesis/_1P/Comix Zone.zip</filename>
+					<thumb>rom_pathSega Genesis/_1P/_Artwork/boxfront/Comix Zone.png</thumb>
+					<fanart>rom_pathSega Genesis/_1P/_Artwork/screenshot/Comix Zone.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Fighting</genre>
+					<release>1995</release>
+					<publisher>SEGA</publisher>
+					<gameplot>ENTER THE COMIX ZONE: THE FIRST TRULY INTERACTIVE COMIC BOOK! Play as Sketch Turner, a street-wise comic book artist who gets trapped in the comic book world of his own creation. Warp into the Comix Zone with all the action and adventure of your favorite comics! Battle panel by panel through full comic book pages drawn by real comic book artists! Sharpen your fighting skills to defeat mutant enemies drawn in by Mortus, public enemy no. 1. Rip up the page with superhero power-ups and tons of intense fighting moves!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>617713aa81906fb25a76fdf5c53a40e7</id>
 					<name>Desert Strike: Return to the Gulf</name>
 					<filename>rom_pathSega Genesis/_1P/Desert Strike - Return to the Gulf.zip</filename>
@@ -15586,6 +15601,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0020</id>
+					<name>Industrial Spy - Operation Espionage</name>
+					<filename>rom_pathDreamcast/_1P/Industrial Spy - Operation Espionage/Industrial Spy - Operation Espionage.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Industrial Spy - Operation Espionage.png</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Industrial Spy - Operation Espionage.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>UFO Interactive Games</publisher>
+					<gameplot>The year is 2000.[CR]Giant corporations have taken the place of governments, creating a worldwide economy. Power depends on the theft of industrial secrets.[CR]In the brutal world of industrial espionage, Blitzstrahl rises above its competition by assembling espionage agents with specialized abilities and training--the Espion Agents.[CR]Welcome to the world of Blitzstrahl, the crack industrial espionage team with seven primary agents that you will utilize to crack some of the toughest industrial espionage challenges the world has ever seen.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2b1d81ea61668385a37ed78fde0005</id>
 					<name>Jet Grind Radio</name>
 					<filename>rom_pathDreamcast/_1P/Jet Grind Radio/Jet Grind Radio.gdi</filename>
@@ -15672,6 +15702,36 @@
 					<release>2001</release>
 					<publisher>SEGA</publisher>
 					<gameplot>Gameplay in MSR is centred around the single-player mode, with tracks and cars in the multiplayer mode being unlocked at the same time as in the single-player game. The premise is that, as a street racer, the player must impress other drivers with quick but stylish driving in a series of challenges. These challenges are in sets of ten (called Chapters - there are 25 in total), with completion of all challenges opening the next chapter (assuming the player has enough Kudos, see below) and unlocking a new car. Each challenge is on a different track, and unlocking a challenge unlocks that track in the time-attack and multiplayer modes.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0021</id>
+					<name>MDK 2</name>
+					<filename>rom_pathDreamcast/_1P/MDK 2/MDK 2.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/MDK 2.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/MDK 2.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Interplay</publisher>
+					<gameplot>After Kurt Hectic, the janitor extraordinaire, has bravely ventured into the perilous minecrawlers and averted the alien threat to the Earth, he returns to his friends, the genius scientist Dr. Fluke Hawkins, and his invention, the six-legged robotic dog Max, to celebrate their great victory. However, they find out that one minecrawler in Canada still hasn't been destroyed. Kurt is sent to complete the mission, but as a result gets kidnapped by an alien being known as Shwang Shwing. Doc and Max rush to his rescue, and soon realize that they are up against a much bigger threat, involving an alien empire and galactic conquest. The fate of the Earth is in their hands!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0022</id>
+					<name>Mr Driller</name>
+					<filename>rom_pathDreamcast/_1P/Mr Driller/Mr Driller.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Mr Driller.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Mr Driller.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Puzzle</genre>
+					<release>1999</release>
+					<publisher>Namco</publisher>
+					<gameplot>Mr Driller is a real-time puzzle game that relies solely on quick-thinking and a bit of planning. Gameplay is a combination of Tetris and Boulder Dash: You have to drill down through multi-colored blocks to reach the bottom while avoiding the consequences of reckless drilling (blocks may fall on you and crush you).</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -15792,6 +15852,21 @@
 					<release>1999</release>
 					<publisher>SEGA</publisher>
 					<gameplot>Yet again Sonic and friends find themselves wrapped up in the schemes of Dr. Robotnik. This time he plans to exploit the power of Chaos, a malevolent being that feeds upon the power of the Chaos Emeralds. In their own ways five heroes will do what they can to save Station Square and, perhaps, the entire world.[CR]The player can select from which character to play after meeting them with Sonic, and each has their own unique version of each level. Sonic's levels involve racing through a level as quickly as possible, destroying any robots along the way. Tails can hover over distances, and his levels are similar to Sonic's except that he must beat an opponent to the finish line. Amy can't charge up ramps or run as quickly as Sonic and Tails, but she does have a giant hammer she can break obstacles with. The goal of her levels is to avoid being captured by a robot sent after her by Dr. Robotnik. E102 Gamma is a slow, difficult to maneuver robot, but it has guns and missiles that can lock on to several targets at once, chaining together attacks and earning a higher score and more time on the clock. The goal of its levels is to reach a boss enemy and destroy it before time runs out. The final character is Big the Cat, a fisherman searching for his lost frog. Big's levels are almost entirely devoid of action or fighting; he just fishes. Each character can find items that increase their abilities as the story progresses, such as a ring for Sonic that lets him home along lines of rings, or improved lures for Big. A final chapter wrapping up the story is unlocked after all other characters have been completed.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0023</id>
+					<name>Super Magnetic Neo</name>
+					<filename>rom_pathDreamcast/_1P/Super Magnetic Neo/Super Magnetic Neo.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Super Magnetic Neo.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Super Magnetic Neo.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure / Platform</genre>
+					<release>2000</release>
+					<publisher>Crave Entertainment</publisher>
+					<gameplot>Super Magnetic Neo, known as Super Magnetic NiuNiu in Japan, is a 3D platform game for the Dreamcast console. It was developed by Genki and published by Crave Entertainment in North America.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -16287,6 +16362,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0034</id>
+					<name>The King of Fighters '99</name>
+					<filename>rom_pathDreamcast/_2P/The King of Fighters '99/The King of Fighters '99.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/The King of Fighters '99.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/The King of Fighters '99.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting</genre>
+					<release>2001</release>
+					<publisher>SNK</publisher>
+					<gameplot>The King of Fighters '99: Millennium Battle is a 1999 head-to-head fighting game by SNK released for the Neo Geo arcade and home platform. It is the sixth installment in the company's The King of Fighters series. The game was ported to the Neo-Geo CD and the PlayStation as the final KOF game released for both platforms. A Dreamcast version was also released under the title The King of Fighters '99 Evolution in which the stages look exactly the same as compared with the arcade counterpart only to be exclusively, remodeled into 3D rendered. Both the Neo Geo and Dreamcast versions are included in The Kings of Fighters NESTS Hen compilation released for the PlayStation 2 in Japan. The game introduces several changes to the established KOF format, as well as a new story arc that would later be dubbed the "NESTS Chronicles".</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2b2d51ea61668385a37ed78fde0079</id>
 					<name>Tony Hawk's Pro Skater</name>
 					<filename>rom_pathDreamcast/_2P/Tony Hawk's Pro Skater/Tony Hawk's Pro Skater.gdi</filename>
@@ -16298,6 +16388,21 @@
 					<release>1998</release>
 					<publisher>Activision</publisher>
 					<gameplot>Tony Hawk's is a skateboarding video game series endorsed by professional skateboarder Tony Hawk and published by Activision.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0039</id>
+					<name>TrickStyle</name>
+					<filename>rom_pathDreamcast/_2P/TrickStyle/TrickStyle.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/TrickStyle.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/TrickStyle.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports</genre>
+					<release>1999</release>
+					<publisher>Acclaim Entertainment</publisher>
+					<gameplot>The game is set in the future and based around the sport of Hoverboarding. The player can race or do stunts through metropolis versions of London, Tokyo, and Manhattan Island, or in a massive practice arena called the Velodrome.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -16343,6 +16448,21 @@
 					<release>1999</release>
 					<publisher>SEGA</publisher>
 					<gameplot>Look out -- Wham! Bam! And a full-body Slam! This Dreamcast version of Sega's revolutionary fighting game packs a one-two-three punch. As one of 12 fierce characters, you have a single deadly goal: to kick some 3D ass 'til you win the World Fighting Tournament. Incredible 3D environments, fluid gameplay, and lifelike graphics enhance the smooth fighting moves you're used to in the mega-hit arcade original. An exclusive feature of the Dreamcast version is Team Battle Mode, in which your custom three-person team goes head-to-head with an opponent's custom team. Virtua Fighter 3tb is so realistic that characters actually watch their opponents' every life-like move, like when they fall forward FROM behind or lose their balance when pushed. Focus your razor-sharp reflexes and take lethal aim as you deliver bone-crunching blows to your reeling opponents. When the dust settles, you'll still be standing.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0038</id>
+					<name>World Series Baseball 2K1</name>
+					<filename>rom_pathDreamcast/_2P/World Series Baseball 2K1/World Series Baseball 2K1.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/World Series Baseball 2K1.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/World Series Baseball 2K1.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports</genre>
+					<release>2000</release>
+					<publisher>SEGA</publisher>
+					<gameplot>World Series Baseball 2K1 is a sports video game developed by Wow Entertainment and published by Sega for the Dreamcast. It was the first game in the modern series to be featured on the Dreamcast, and was the spiritual successor to World Series Baseball for the Sega Genesis.[citation needed] It was released in July 2000 to coincide with the 2000 Major League Baseball All-Star Game in Atlanta.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>

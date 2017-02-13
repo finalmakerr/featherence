@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol>3</defaultcontrol>
+	<include>Fade_WindowsOpenClose</include>
+	<controls>
+		<include>BlackBackground</include>
+		<control type="group">
+			<centertop>50%</centertop>
+			<centerleft>50%</centerleft>
+			<width>1820</width>
+			<height>690</height>
+			<include content="MenuBackground">
+				<param name="border" value="35" />
+				<param name="color" value="$VAR[MenuColor]" />
+				<param name="height" value="80" />
+				<param name="posx" value="449" />
+				<param name="posy" value="145" />
+				<param name="width" value="1022" />
+				<param name="condition" value="true"/>
+				
+				<param name="type0" value="false" description="MenuBackground"/>
+				<param name="type1" value="true" description="DialogBackground"/>
+			</include>
+			<include content="MenuBackground">
+				<param name="border" value="35" />
+				<param name="color" value="$VAR[MenuColor]" />
+				<param name="height" value="80" />
+				<param name="posx" value="449" />
+				<param name="posy" value="225" />
+				<param name="width" value="1022" />
+				<param name="condition" value="true"/>
+				
+				<param name="type0" value="false" description="MenuBackground"/>
+				<param name="type1" value="true" description="DialogBackground"/>
+			</include>
+			  <include content="MenuBackground">
+				<param name="border" value="40" />
+				<param name="color" value="$VAR[MenuColor]" />
+				<param name="height" value="875" />
+				<param name="posx" value="449" />
+				<param name="posy" value="220" />
+				<param name="width" value="1022" />
+				<param name="condition" value="true"/>
+				
+				<param name="type0" value="false" description="MenuBackground"/>
+				<param name="type1" value="true" description="DialogBackground"/>
+			</include>
+			<control type="grouplist" id="3" description="Controller profiles grouplist">
+				<posx>449</posx>
+				<posy>223</posy>
+				<width>940</width>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<align>left</align>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<onup>9001</onup>
+				<ondown>5</ondown>
+			</control>
+			<control type="button" id="10" description="Default controller button">
+				<width>200</width>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="gamecontroller" id="31" description="תמונה">
+				<left>470</left>
+				<top>330</top>
+				<width>600</width>
+				<height>400</height>
+			</control>
+			<control type="group">
+				<left>1150</left>
+				<width>410</width>
+				<top>260</top>
+				<height>652</height>
+				<control type="image">
+					<top>20</top>
+					<bottom>0</bottom>
+					<right>0</right>
+				</control>
+				<control type="grouplist" id="5" description="מקשים">
+					<description>Features grouplist</description>
+					<left>20</left>
+					<right>20</right>
+					<top>40</top>
+					<itemgap>20</itemgap>
+					<height>565</height>
+					<bottom>20</bottom>
+					<onleft>3</onleft>
+					<onright>61</onright>
+					<onup>3</onup>
+					<ondown>noop</ondown>
+					<pagecontrol>61</pagecontrol>
+				</control>
+				<control type="button" id="7">
+					<description>Default feature button</description>
+					<height>50</height>
+					<width>250</width>
+					<left>20</left>
+					<right>20</right>
+					<align>center</align>
+					<aligny>bottom</aligny>
+					<textoffsety>10</textoffsety>
+				</control>
+				<control type="label" id="8">
+					<description>Feature group title</description>
+					<left>20</left>
+					<right>20</right>
+					<align>center</align>
+					<top>0</top>
+					<height>40</height>
+					<aligny>center</aligny>
+					<font>font20_title</font>
+					<textcolor>grey</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>false</visible>
+				</control>
+			</control>
+			<control type="image" id="9">
+				<description>Feature separator image</description>
+				<height>1</height>
+				<width>1</width>
+			</control>
+			<control type="grouplist" id="9001">
+				<posx>449</posx>
+				<posy>143</posy>
+				<width>1022</width>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<onleft>9001</onleft>
+				<onright>9001</onright>
+				<ondown>3</ondown>
+				<align>left</align>
+				<control type="button" id="18" description="">
+				  <width>200</width>
+				  <label>$LOCALIZE[186]</label>
+				</control>
+				<control type="button" id="19" description="">
+				  <width>200</width>
+				  <label>$LOCALIZE[10035]</label>
+				</control>
+				<control type="button" id="20" description="">
+				  <width>200</width>
+				  <label>$LOCALIZE[21452]</label>
+				</control>
+				<control type="button" id="17" description="">
+				  <width>200</width>
+				  <label>$LOCALIZE[10043]</label>
+				</control>
+				<control type="button" id="21" description="">
+				  <width>200</width>
+				  <label>$LOCALIZE[35013]</label>
+				</control>
+			</control>
+		</control>
+		<include>TopVideoInformation</include>
+		<include>ScrollBar</include>
+		<include>TopInformation</include>
+		<include>WindowsBusy</include>
+	</controls>
+</window>

@@ -1631,7 +1631,11 @@ def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percent
 			removefiles(downloadpath2)
 		
 		setProperty('script.featherence.service_downloading', '', type="home")
-		
+	
+	temp_path = os.path.join(addons_path, 'temp', '')
+	if os.path.exists(temp_path):
+		printpoint = printpoint + 'T'
+		removefiles(temp_path)
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''

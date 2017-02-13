@@ -2529,10 +2529,13 @@ def mode232(value, admin, name, printpoint):
 	
 	setProperty('mode232', 'true', type="home")
 	
-	if not os.path.exists(addons_path + 'script.module.unidecode'):
-		installaddonP('script.module.unidecode', update=True)
-	if not xbmc.getCondVisibility('System.HasAddon(script.skinshortcuts)'):
+	if not xbmc.getCondVisibility('System.HasAddon(script.skinshortcuts)') or not os.path.exists(addons_path + 'script.skinshortcuts'):
 		addon1 = installaddonP('script.skinshortcuts', update=True)
+		if not xbmc.getCondVisibility('System.HasAddon(script.skinshortcuts)'):
+			notification('script.skinshortcuts is disable?','','',4000)
+	elif not os.path.exists(addons_path + 'script.module.unidecode'):
+		installaddonP('script.module.unidecode', update=True)
+	
 	else:
 		printpoint = printpoint + "0"
 		try:

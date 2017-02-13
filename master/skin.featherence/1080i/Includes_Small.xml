@@ -880,13 +880,15 @@
 	  <animation condition="Skin.HasSetting(View50_SideVideoInformation) + String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="0,1120" start="100,110.5" end="100,110.5" time="0" reversible="false">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="zoom" center="auto" start="100,100" end="100,85">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="slide" start="0,0" end="1070,-130">Conditional</animation>
+	  <animation condition="Window.IsVisible(DialogGameControllers.xml)" effect="zoom" center="auto" start="100,100" end="100,55">Conditional</animation>
+	  <animation condition="Window.IsVisible(DialogGameControllers.xml)" effect="slide" start="0,0" end="1490,280">Conditional</animation>
 	  <animation condition="Window.IsVisible(Custom1170.xml)" effect="zoom" center="auto" start="100,100" end="100,40">Conditional</animation>
 	  <animation condition="Window.IsVisible(Custom1170.xml)" effect="slide" start="0,0" end="1659,-890">Conditional</animation>
 	  
 	  <animation description="SlideOthers_he" condition="!Window.IsVisible(DialogTextViewer.xml) + !Window.IsVisible(DialogPVRChannelManager.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="1900,0">Conditional</animation>
 	  <visible>Control.IsVisible(60) | Control.IsVisible(61)</visible>
 	  <visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | Window.IsVisible(DialogTextViewer.xml)</visible>
-	  <visible>Integer.IsGreater(Container.NumPages,1) | Window.IsVisible(FileBrowser.xml) | Window.IsVisible(DialogFavourites.xml) | Window.IsVisible(DialogTextViewer.xml) | Control.IsVisible(11) + Integer.IsGreater(Container(11).NumPages,1) | Window.IsVisible(Custom1170.xml)</visible>
+	  <visible>Integer.IsGreater(Container.NumPages,1) | Window.IsVisible(FileBrowser.xml) | Window.IsVisible(DialogFavourites.xml) | Window.IsVisible(DialogTextViewer.xml) | Window.IsVisible(DialogGameControllers.xml) | Control.IsVisible(11) + Integer.IsGreater(Container(11).NumPages,1) | Window.IsVisible(Custom1170.xml)</visible>
 	  <height>950</height>
 	  <width>20</width>
 	  <posx>0</posx>
@@ -948,7 +950,7 @@
 		<onright condition="Control.IsVisible(11) + !String.IsEqual(System.Language,Hebrew)">11</onright>
 		<onright condition="Control.IsVisible(12) + !String.IsEqual(System.Language,Hebrew)">12</onright>
 		<!--<visible>Integer.IsGreater(Container.NumPages,2)</visible>-->
-		<visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + !Window.IsVisible(DialogTextViewer.xml)</visible>
+		<visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + !Window.IsVisible(DialogTextViewer.xml) + !Window.IsVisible(DialogGameControllers.xml)</visible>
 	  </control>
 	  
 	  <control type="scrollbar" id="61" description="כלי גלילה">
@@ -956,10 +958,11 @@
 		<posy>1.5</posy>
 		<onleft condition="Control.IsVisible(700)">700</onleft>
         <onright condition="Control.IsVisible(700)">700</onright>
+		<onleft condition="Control.IsVisible(5)">5</onleft>
 		
         <ondown>61</ondown>
         <onup condition="Control.IsVisible(700)">700</onup>
-		<visible>Window.IsVisible(DialogTextViewer.xml)</visible>
+		<visible>Window.IsVisible(DialogTextViewer.xml) | Window.IsVisible(DialogGameControllers.xml)</visible>
 	  </control>
 	</control>
 	<control type="group" description="">
