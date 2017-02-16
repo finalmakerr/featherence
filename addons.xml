@@ -287,7 +287,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.2.15" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.2.16" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.24.0" />
 	<import addon="script.featherence.service" version="0.3.46"/>
@@ -543,7 +543,7 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.3.66" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.3.67" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.24.0"/>

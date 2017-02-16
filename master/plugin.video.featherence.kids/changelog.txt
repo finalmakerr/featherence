@@ -7,7 +7,7 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
-Featherence Kids v0.2.16 (xx-Feb-17)
+Featherence Kids v0.2.16 (16-Feb-17)
 ------------------------
 - Added TV shows contents.
 + Fables of the Green Forest - 9 languages.
