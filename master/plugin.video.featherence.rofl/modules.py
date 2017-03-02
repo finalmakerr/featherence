@@ -64,6 +64,11 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	background = 101
 	background2 = fanart
 	
+	'''AvtoCrashCar'''
+	list = []
+	list.append('&youtube_ch=UCeFC1sbi2HcicqpCvCgjLFA')
+	addDir(addonString(30410).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=AvtoCrashCar',0,getAddonFanart(background, default='getAPIdata', custom=""))
+	
 	'''Cihan Kosif TV'''
 	list = []
 	list.append('&youtube_ch=UCPgHR8p6lS1D5p-loVhk4xw')
@@ -88,21 +93,26 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list = []
 	list.append('&youtube_ch=FaiICity')
 	addDir(addonString(30405).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=FaiICity',0,getAddonFanart(background, default='getAPIdata', custom=""))
-
+	
+	'''Lama Faché'''
+	list = []
+	list.append('&youtube_ch=UCH0XvUpYcxn4V0iZGnZXMnQ')
+	addDir(addonString(30412).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCH0XvUpYcxn4V0iZGnZXMnQ',0,getAddonFanart(background, default='getAPIdata', custom=""))
+	
 	'''MegaFail'''
 	list = []
 	list.append('&youtube_ch=UCo4XcrQ5zB3DUwqa7lvNUeQ')
-	addDir(addonString(30404).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCo4XcrQ5zB3DUwqa7lvNUeQ',0,getAddonFanart(background, default='getAPIdata', custom=""))
+	#addDir(addonString(30404).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCo4XcrQ5zB3DUwqa7lvNUeQ',0,getAddonFanart(background, default='getAPIdata', custom=""))
 
 	'''MonthlyFails'''
 	list = []
 	list.append('&youtube_ch=UCEkZHiGsR4jvWeHunEB3Qaw')
 	addDir(addonString(30403).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCEkZHiGsR4jvWeHunEB3Qaw',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
-	'''AvtoCrashCar'''
+	'''Remi Gillard'''
 	list = []
-	list.append('&youtube_ch=UCeFC1sbi2HcicqpCvCgjLFA')
-	addDir(addonString(30410).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=AvtoCrashCar',0,getAddonFanart(background, default='getAPIdata', custom=""))
+	list.append('&youtube_ch=nqtv')
+	addDir(addonString(30411).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=nqtv',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
 	'''The Best Fails'''
 	list = []
@@ -759,7 +769,7 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	
 	'''Bill Burr '''
 	fanart = 'http://nowstreamingpod.com/wp-content/uploads/2014/12/Bill-Burr-Im-Sorry-You-Feel-That-Way.png' #גדול
-	thumb = 'https://i.ytimg.com/vi/VbGnaCNEgg0/hqdefault.jpg' #בינוני
+	thumb = 'http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/12/08/billburr_color.jpg?' #בינוני
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
@@ -774,64 +784,64 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	addDir(addonString(30800).encode('utf-8'),list,17,thumb,addonString(30801).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''Chris Rock'''
-	fanart = '' #גדול
-	thumb = '' #בינוני
+	fanart = 'http://adadha.com/wp-content/uploads/2016/01/2011-topic-celeb-chris-rock.png' #גדול
+	thumb = 'http://rollingout.com/wp-content/uploads/2014/02/Chris-Rock-Rolling-Out-8.jpeg' #בינוני
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30818).encode('utf-8'),list,17,thumb,addonString(30819).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''Dave Chappelle'''
-	fanart = '' #גדול
-	thumb = '' #בינוני
+	fanart = 'http://mizhollywood.com/wp-content/uploads/2014/06/119747432-e1371518463818.jpg' #גדול
+	thumb = 'http://media.hollywood.com/images/l/Dave_Chappelle_300.jpg' #בינוני
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30808).encode('utf-8'),list,17,thumb,addonString(30809).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''Esther Povitsky'''
-	fanart = '' #גדול
-	thumb = '' #בינוני
+	fanart = 'https://i.ytimg.com/vi/QpO3059Zses/maxresdefault.jpg' #גדול
+	thumb = 'https://images-na.ssl-images-amazon.com/images/M/MV5BMjAwNDk1OTY0OF5BMl5BanBnXkFtZTgwNzc0MjgyODE@._V1_UY317_CR13,0,214,317_AL_.jpg' #בינוני
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30802).encode('utf-8'),list,17,thumb,addonString(30803).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''George Carlin'''
-	fanart = '' #גדול
-	thumb = '' #בינוני
+	fanart = 'http://i.lv3.hbo.com/assets/images/comedy/george-carlin-its-bad-for-ya/george-carlin-its-bad-for-ya-1920.jpg' #גדול
+	thumb = 'https://s-media-cache-ak0.pinimg.com/originals/8a/cc/1b/8acc1bded9c43b1c939c3bbadecfce78.jpg' #בינוני
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30806).encode('utf-8'),list,17,thumb,addonString(30807).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''Jim Carrey'''
-	fanart = '' #גדול
-	thumb = '' #בינוני
+	fanart = 'http://wallpapersdsc.net/wp-content/uploads/2016/01/Jim-Carrey-Pictures.jpg' #גדול
+	thumb = 'https://s-media-cache-ak0.pinimg.com/originals/3a/3c/f8/3a3cf8fdb7ad810b93a9c5103f21970c.jpg' #בינוני
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30814).encode('utf-8'),list,17,thumb,addonString(30815).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''Lewis Black'''
-	fanart = '' #גדול
-	thumb = '' #בינוני
+	fanart = 'https://media.livenation.com/artists/78194/78194-show-94013.jpg?1386819138' #גדול
+	thumb = 'http://my.xfinity.com/blogs/tv/files/2013/08/Lewis-Black300.jpg' #בינוני
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30812).encode('utf-8'),list,17,thumb,addonString(30813).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''Louis CK'''
-	fanart = '' #גדול
-	thumb = '' #בינוני
+	fanart = 'https://i.ytimg.com/vi/VOwjtNEoRYg/maxresdefault.jpg' #גדול
+	thumb = 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTM4OTkwNzg3NF5BMl5BanBnXkFtZTcwMjc5NjcyNw@@._V1_UX214_CR0,0,214,317_AL_.jpg' #בינוני
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30810).encode('utf-8'),list,17,thumb,addonString(30811).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''Mitch Hedberg'''
-	fanart = '' #גדול
-	thumb = '' #בינוני
+	fanart = 'https://i.ytimg.com/vi/ax0MGlIVjiY/maxresdefault.jpg' #גדול
+	thumb = 'https://pbs.twimg.com/profile_images/1164297354/mitch1.jpg' #בינוני
 	list = []
 	
 	list.append('&youtube_se='+commonsearch)

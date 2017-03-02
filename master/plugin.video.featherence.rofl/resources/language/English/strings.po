@@ -583,6 +583,14 @@ msgctxt "#30410"
 msgid "Russian car crash"
 msgstr "Russian car crash"
 
+msgctxt "#30411"
+msgid "Remi Gillard"
+msgstr "Remi Gillard"
+
+msgctxt "#30412"
+msgid "Lama Faché"
+msgstr "Lama Faché"
+
 msgctxt "#30600"
 msgid "קומי קומי"
 msgstr "קומי קומי"
@@ -644,89 +652,85 @@ msgid "Brian Regan"
 msgstr "Brian Regan"
 
 msgctxt "#30801"
-msgid ""
-msgstr ""
+msgid "Brian Joseph Regan is an American stand-up comedian who uses observational, sarcastic, and self-deprecating humor. His performances are relatively clean as he refrains from profanity and off-color humor."
+msgstr "Brian Joseph Regan is an American stand-up comedian who uses observational, sarcastic, and self-deprecating humor. His performances are relatively clean as he refrains from profanity and off-color humor."
 
 msgctxt "#30802"
 msgid "Esther Povitsky"
 msgstr "Esther Povitsky"
 
 msgctxt "#30803"
-msgid ""
-msgstr ""
+msgid "Esther Lauren Povitsky, also known as "Little Esther," is an American actress, writer, and producer living in Los Angeles, California"
+msgstr "Esther Lauren Povitsky, also known as "Little Esther," is an American actress, writer, and producer living in Los Angeles, California"
 
 msgctxt "#30804"
 msgid "Bill Burr"
 msgstr "Bill Burr"
 
 msgctxt "#30805"
-msgid ""
-msgstr ""
+msgid "William Frederic "Bill" Burr is an American stand-up comedian, writer, actor, and podcaster who has released several stand-up comedy specials."
+msgstr "William Frederic "Bill" Burr is an American stand-up comedian, writer, actor, and podcaster who has released several stand-up comedy specials."
 
 msgctxt "#30806"
 msgid "George Carlin"
 msgstr "George Carlin"
 
 msgctxt "#30807"
-msgid ""
-msgstr ""
+msgid "George Denis Patrick Carlin was an American stand-up comedian, social critic, actor, and author. Carlin was noted for his black comedy and thoughts on politics, the English language, psychology, religion, and various taboo subjects."
+msgstr "George Denis Patrick Carlin was an American stand-up comedian, social critic, actor, and author. Carlin was noted for his black comedy and thoughts on politics, the English language, psychology, religion, and various taboo subjects."
 
 msgctxt "#30808"
 msgid "Dave Chappelle"
 msgstr "Dave Chappelle"
 
 msgctxt "#30809"
-msgid ""
-msgstr ""
+msgid "David Khari "Dave" Webber Chappelle is an American stand-up comedian, screenwriter, producer, and actor."
+msgstr "David Khari "Dave" Webber Chappelle is an American stand-up comedian, screenwriter, producer, and actor."
 
 msgctxt "#30810"
 msgid "Louis CK"
 msgstr "Louis CK"
 
 msgctxt "#30811"
-msgid ""
-msgstr ""
+msgid "Louis Székely, known professionally as Louis C.K., is an American comedian, actor, writer, producer, director, and editor."
+msgstr "Louis Székely, known professionally as Louis C.K., is an American comedian, actor, writer, producer, director, and editor."
 
 msgctxt "#30812"
 msgid "Lewis Black"
 msgstr "Lewis Black"
 
 msgctxt "#30813"
-msgid ""
-msgstr ""
+msgid "Lewis Niles Black is an American stand-up comedian, author, playwright, social critic and actor. He is known for his angry face and his belligerent comedic style, in which he often simulates having a mental breakdown."
+msgstr "Lewis Niles Black is an American stand-up comedian, author, playwright, social critic and actor. He is known for his angry face and his belligerent comedic style, in which he often simulates having a mental breakdown."
 
 msgctxt "#30814"
 msgid "Jim Carrey"
 msgstr "Jim Carrey"
 
 msgctxt "#30815"
-msgid ""
-msgstr ""
+msgid "James Eugene "Jim" Carrey is a Canadian-American actor, comedian, impressionist, screenwriter, and producer. He is known for his highly energetic slapstick performances."
+msgstr "James Eugene "Jim" Carrey is a Canadian-American actor, comedian, impressionist, screenwriter, and producer. He is known for his highly energetic slapstick performances."
 
 msgctxt "#30816"
 msgid "Mitch Hedberg"
 msgstr "Mitch Hedberg"
 
 msgctxt "#30817"
-msgid ""
-msgstr ""
+msgid "Mitchell Lee "Mitch" Hedberg was an American stand-up comedian known for his surreal humor and unconventional comedic delivery. His comedy typically featured short, sometimes one-line jokes mixed with absurd elements and non sequiturs."
+msgstr "Mitchell Lee "Mitch" Hedberg was an American stand-up comedian known for his surreal humor and unconventional comedic delivery. His comedy typically featured short, sometimes one-line jokes mixed with absurd elements and non sequiturs."
 
 msgctxt "#30818"
 msgid "Chris Rock"
 msgstr "Chris Rock"
 
 msgctxt "#30819"
-msgid ""
-msgstr ""
+msgid "Christopher Julius Rock III is an American comedian, actor, writer, producer, and director. After working as a standup comic and appearing in small film roles, Rock came to wider prominence as a cast member of Saturday Night Live in the early 1990s."
+msgstr "Christopher Julius Rock III is an American comedian, actor, writer, producer, and director. After working as a standup comic and appearing in small film roles, Rock came to wider prominence as a cast member of Saturday Night Live in the early 1990s."
 
 msgctxt "#30820"
 msgid "Russell Peters"
 msgstr "Russell Peters"
 
 msgctxt "#30821"
-msgid ""
-msgstr ""
-
-msgctxt "#39999"
-msgid "Not yet information available"
-msgstr "Not yet information available"
+msgid "Russell Dominic Peters is a Canadian comedian and actor of Indian descent. He began performing in Toronto in 1989 and won a Gemini Award in 2008. He currently lives in Los Angeles."
+msgstr "Russell Dominic Peters is a Canadian comedian and actor of Indian descent. He began performing in Toronto in 1989 and won a Gemini Award in 2008. He currently lives in Los Angeles."
