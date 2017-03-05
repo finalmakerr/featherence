@@ -2,7 +2,7 @@
 <includes>
   <include name="4ways">
 	  <onleft condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(9005) + String.IsEqual(System.Language,Hebrew)">9005</onleft>
-	  <onleft condition="Control.IsVisible(7011) + Control.IsVisible(7017) + String.IsEqual(System.Language,Hebrew) + !Control.HasFocus(7017) + [!Control.IsVisible(90000) | String.IsEqual(Container.Viewmode,$LOCALIZE[31011])]">7017</onleft>
+	  <onleft condition="Control.IsVisible(7011) + Control.IsVisible(7017) + String.IsEqual(System.Language,Hebrew) + !Control.HasFocus(7017) + [!Control.IsVisible(90000) | $EXP[View50]]">7017</onleft>
 	  <onleft condition="Control.IsVisible(90000) + !String.Contains(Window(home).Property(ViewsSettings),900) + [String.IsEqual(System.Language,Hebrew) | Window.IsVisible(MyPVRGuide.xml)]">9000</onleft>
 	  <onleft condition="Control.IsVisible(90000) + String.Contains(Window(home).Property(ViewsSettings),9001) + [String.IsEqual(System.Language,Hebrew) | Window.IsVisible(MyPVRGuide.xml)]">9001</onleft>
 	  <onleft condition="Control.IsVisible(90000) + String.Contains(Window(home).Property(ViewsSettings),9002) + [String.IsEqual(System.Language,Hebrew) | Window.IsVisible(MyPVRGuide.xml)]">9002</onleft>
@@ -10,41 +10,41 @@
 
 	  <onright condition="Window.IsVisible(FileBrowser.xml) + Control.IsVisible(9005) + !String.IsEqual(System.Language,Hebrew)">9005</onright>
 	  <onright condition="Control.IsVisible(60) + String.IsEqual(System.Language,Hebrew)">60</onright>
-	  <onright condition="!Control.IsVisible(60) + Control.IsVisible(7011) + String.IsEqual(System.Language,Hebrew) + !Control.HasFocus(7017) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31011])">7017</onright>
+	  <onright condition="!Control.IsVisible(60) + Control.IsVisible(7011) + String.IsEqual(System.Language,Hebrew) + !Control.HasFocus(7017) + !$EXP[View50]">7017</onright>
 	  <onright condition="!Control.IsVisible(60) + Player.HasAudio + String.IsEqual(System.Language,Hebrew)">ActivateWindow(12901)</onright>
 	  <onright condition="Control.IsVisible(90000) + [Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)] + String.IsEqual(System.Language,Hebrew)">9000</onright>
 	  
-	  <onright condition="Control.IsVisible(7011) + Control.IsVisible(7017) + !String.IsEqual(System.Language,Hebrew) + !Control.HasFocus(7017) + [!Control.IsVisible(90000) | String.IsEqual(Container.Viewmode,$LOCALIZE[31011])]">7017</onright>
+	  <onright condition="Control.IsVisible(7011) + Control.IsVisible(7017) + !String.IsEqual(System.Language,Hebrew) + !Control.HasFocus(7017) + [!Control.IsVisible(90000) | $EXP[View50]]">7017</onright>
 	  <onright condition="Control.IsVisible(90000) + !String.Contains(Window(home).Property(ViewsSettings),900) + [!String.IsEqual(System.Language,Hebrew) | Window.IsVisible(MyPVRGuide.xml)]">9000</onright>
 	  <onright condition="Control.IsVisible(90000) + String.Contains(Window(home).Property(ViewsSettings),9001) + [!String.IsEqual(System.Language,Hebrew) | Window.IsVisible(MyPVRGuide.xml)]">9001</onright>
 	  <onright condition="Control.IsVisible(90000) + String.Contains(Window(home).Property(ViewsSettings),9002) + [!String.IsEqual(System.Language,Hebrew) | Window.IsVisible(MyPVRGuide.xml)]">9002</onright>
 	  <onright condition="!Control.IsVisible(90000) + Player.HasAudio + !String.IsEqual(System.Language,Hebrew)">ActivateWindow(12901)</onright>
 	  
 	  <onleft condition="Control.IsVisible(60) + !String.IsEqual(System.Language,Hebrew)">60</onleft>
-	  <onleft condition="!Control.IsVisible(60) + Control.IsVisible(7011) + !String.IsEqual(System.Language,Hebrew) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31011])">7017</onleft>
+	  <onleft condition="!Control.IsVisible(60) + Control.IsVisible(7011) + !String.IsEqual(System.Language,Hebrew) + !$EXP[View50]">7017</onleft>
 	  <onleft condition="!Control.IsVisible(60) + Player.HasAudio + !String.IsEqual(System.Language,Hebrew)">ActivateWindow(12901)</onleft>
 	  <onleft condition="Control.IsVisible(90000) + [Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)] + !String.IsEqual(System.Language,Hebrew)">9000</onleft>
 	  
 	  <onup condition="Control.IsVisible(7011)">7017</onup>			  
 	  <onup condition="Player.HasAudio">ActivateWindow(12901)</onup>
 	  <onup condition="Control.IsVisible(90000) + [Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)]">9000</onup>
-	  <onup condition="!Player.HasMedia + String.IsEqual(Container.Viewmode,$LOCALIZE[31010])">51</onup>
-	  <onup condition="!Player.HasMedia + [String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(50)]">50</onup>
+	  <onup condition="!Player.HasMedia + $EXP[View51]">51</onup>
+	  <onup condition="!Player.HasMedia + [$EXP[View50] | Control.IsVisible(50)]">50</onup>
 	  <onup condition="!Player.HasMedia + Control.IsVisible(56)">56</onup>
-	  <onup condition="!Player.HasMedia + String.IsEqual(Container.Viewmode,$LOCALIZE[31013])">57</onup>
-	  <onup condition="!Player.HasMedia + String.IsEqual(Container.Viewmode,$LOCALIZE[31014])">58</onup>
-	  <onup condition="!Player.HasMedia + String.IsEqual(Container.Viewmode,$LOCALIZE[31016])">59</onup>
+	  <onup condition="!Player.HasMedia + $EXP[View57]">57</onup>
+	  <onup condition="!Player.HasMedia + $EXP[View58]">58</onup>
+	  <onup condition="!Player.HasMedia + $EXP[View59]">59</onup>
 	  <onup condition="!Player.HasMedia + Control.IsVisible(450)">450</onup>
 	  <ondown condition="Window.IsVisible(SettingsCategory.xml) + Control.IsVisible(3)">3</ondown>
 	  <ondown condition="[Control.IsVisible(7011) | Player.HasMedia]">noop</ondown>
-	  <ondown condition="!Player.HasMedia + String.IsEqual(Container.Viewmode,$LOCALIZE[31010])">51</ondown>
-	  <ondown condition="!Player.HasMedia + [String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(50)]">50</ondown>
-	  <ondown condition="!Player.HasMedia + String.IsEqual(Container.Viewmode,$LOCALIZE[31015])">54</ondown>
+	  <ondown condition="!Player.HasMedia + $EXP[View51]">51</ondown>
+	  <ondown condition="!Player.HasMedia + [$EXP[View50] | Control.IsVisible(50)]">50</ondown>
+	  <ondown condition="!Player.HasMedia + $EXP[View54]">54</ondown>
 	  <ondown condition="!Player.HasMedia + Control.IsVisible(56)">56</ondown>
-	  <ondown condition="!Player.HasMedia + String.IsEqual(Container.Viewmode,$LOCALIZE[31013])">57</ondown>
-	  <ondown condition="!Player.HasMedia + String.IsEqual(Container.Viewmode,$LOCALIZE[31014])">58</ondown>
-	  <ondown condition="!Player.HasMedia + String.IsEqual(Container.Viewmode,$LOCALIZE[31016])">59</ondown>
-	  <ondown condition="!Player.HasMedia + String.IsEqual(Container.Viewmode,$LOCALIZE[31014])">450</ondown>
+	  <ondown condition="!Player.HasMedia + $EXP[View57]">57</ondown>
+	  <ondown condition="!Player.HasMedia + $EXP[View58]">58</ondown>
+	  <ondown condition="!Player.HasMedia + $EXP[View59]">59</ondown>
+	  <ondown condition="!Player.HasMedia + $EXP[View58]">450</ondown>
 	  <ondown condition="Control.IsVisible(450) + !Player.HasMedia">450</ondown>
 	  <ondown condition="Control.IsVisible(10) + [Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)]">10</ondown>
 	  <ondown condition="Control.IsVisible(11) + [Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)]">11</ondown>
@@ -279,7 +279,7 @@
 	  <!--<visible>Container.Content(TVShows) + Integer.IsGreater(ListItem.Property(WatchedEpisodes),0)</visible>-->
 	  <visible>!String.IsEmpty(Control.GetLabel(11300)) | String.IsEqual(ListItem.Overlay,OverlayWatched.png) | Integer.IsGreater(ListItem.Property(WatchedEpisodes),0) + Integer.IsLess(ListItem.Property(UnWatchedEpisodes),0)</visible> 
 	  <control type="image" description="סמן נצפה">
-	  <!--<animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="60,-10" start="100,100" end="70,70" time="0">Conditional</animation>-->
+	  <!--<animation condition="$EXP[View57]" effect="zoom" center="60,-10" start="100,100" end="70,70" time="0">Conditional</animation>-->
 		  <aspectratio align="left">keep</aspectratio>
 		  <height>285</height>
 		  <posx>-165</posx>
@@ -293,8 +293,8 @@
   
   <include name="InProgressBadge2">
     <control type="group" description="סדרות בתהליך">
-	  <animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="-203,-38" start="100,100" end="80,80" time="0">Conditional</animation>
-	  <animation description="slide59" condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31016])" effect="slide" end="-113,-16">Conditional</animation>
+	  <animation condition="$EXP[View57]" effect="zoom" center="-203,-38" start="100,100" end="80,80" time="0">Conditional</animation>
+	  <animation description="slide59" condition="$EXP[View59]" effect="slide" end="-113,-16">Conditional</animation>
 	  
 	  <height>312</height>
 	  <posx>137</posx>
@@ -309,7 +309,7 @@
 		<!--<texture diffuse="buttons/types/bd.png" colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>-->
 		<texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
 		<width>60</width>
-		<visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[31010])</visible>
+		<visible>!$EXP[View51]</visible>
 	  </control>		  
 	  <control type="label" description="">					
 		<angle>0</angle>
@@ -333,25 +333,25 @@
       </control>
 	</control>
     <control type="image" description="סמן נצפה">
-	  <!--<animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="60,-10" start="100,100" end="70,70" time="0">Conditional</animation>-->
+	  <!--<animation condition="$EXP[View57]" effect="zoom" center="60,-10" start="100,100" end="70,70" time="0">Conditional</animation>-->
 	  <aspectratio align="left">keep</aspectratio>
 	  <height>460</height>
 	  <posx>7</posx>
 	  <posy>30</posy>
 	  <width>350</width>
 	  <texture>$VAR[Overlay]</texture>
-	  <visible>[[String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)]</visible>
+	  <visible>[[$EXP[View54] | $EXP[View58]] + Skin.HasSetting(ShowDVDCases2)]</visible>
 	  <visible>String.IsEmpty(Control.GetLabel(11156))</visible>
     </control>
 	<control type="image" description="סמן נצפה">
-	  <!--<animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="60,-10" start="100,100" end="70,70" time="0">Conditional</animation>-->
+	  <!--<animation condition="$EXP[View57]" effect="zoom" center="60,-10" start="100,100" end="70,70" time="0">Conditional</animation>-->
 	  <aspectratio align="left">keep</aspectratio>
 	  <height>305</height>
 	  <posx>24</posx>
 	  <posy>19</posy>
 	  <width>345</width>
 	  <texture>$VAR[Overlay]</texture>
-	  <visible>[String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])] + !Skin.HasSetting(ShowDVDCases)</visible>
+	  <visible>[$EXP[View57] | $EXP[View59]] + !Skin.HasSetting(ShowDVDCases)</visible>
 	  <visible>String.IsEmpty(Control.GetLabel(11156))</visible>
     </control>
   </include>
@@ -415,16 +415,16 @@
 	  
   <include name="Duration_">
     <control type="group" description="זמן">
-	  <animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013])" effect="zoom" center="-203,-38" start="100,100" end="80,80" time="0">Conditional</animation>
-	  <!--<animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
-	  <animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
+	  <animation condition="$EXP[View57]" effect="zoom" center="-203,-38" start="100,100" end="80,80" time="0">Conditional</animation>
+	  <!--<animation condition="$EXP[View51]" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
+	  <animation condition="$EXP[View51]" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
 	  <height>312</height>
 	  <posx>137</posx>
 	  <posy>37</posy>
 	  <width>237</width>	  
 	  <visible>![Container.Content(TVShows) + Integer.IsGreater(ListItem.Property(WatchedEpisodes),0) | String.IsEqual(ListItem.Overlay,OverlayWatched.png)]</visible>
 	  <visible>!String.IsEmpty(ListItem.Duration) + Container.Content(movies)</visible>
-	  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31015])</visible>
+	  <visible>$EXP[View57] | $EXP[View58] | $EXP[View54]</visible>
 	  <control type="image" description="">
 		<animation condition="true" effect="fade" start="70" end="70" time="0">Conditional</animation>
 		<height>40</height>
@@ -450,92 +450,92 @@
   <include name="AutoView" description="Videoviews.xml">
     <control type="button">
 	  <!--ForceView-->
-	  <onfocus description="All-Center List" condition="Skin.HasSetting(ForceView) + Skin.String(ForceView.all,$LOCALIZE[31010]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010])">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
-	  <onfocus description="All-Side List" condition="Skin.HasSetting(ForceView) + Skin.String(ForceView.all,$LOCALIZE[31011]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31011])">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
-	  <onfocus description="All-Line" condition="Skin.HasSetting(ForceView) + Skin.String(ForceView.all,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31015])">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
-	  <onfocus description="All-Wall" condition="Skin.HasSetting(ForceView) + Skin.String(ForceView.all,$LOCALIZE[31013]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31013])">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
-	  <onfocus description="All-Poster" condition="Skin.HasSetting(ForceView) + Skin.String(ForceView.all,$LOCALIZE[31014]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014])">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
-	  <onfocus description="All-Side Wall" condition="Skin.HasSetting(ForceView) + Skin.String(ForceView.all,$LOCALIZE[31016]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31016])">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
+	  <onfocus description="All-Center List" condition="Skin.HasSetting(ForceView) + Skin.String(ForceView.all,$LOCALIZE[31010]) + !$EXP[View51]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
+	  <onfocus description="All-Side List" condition="Skin.HasSetting(ForceView) + Skin.String(ForceView.all,$LOCALIZE[31011]) + !$EXP[View50]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
+	  <onfocus description="All-Line" condition="Skin.HasSetting(ForceView) + Skin.String(ForceView.all,$LOCALIZE[31015]) + !$EXP[View54]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
+	  <onfocus description="All-Wall" condition="Skin.HasSetting(ForceView) + Skin.String(ForceView.all,$LOCALIZE[31013]) + !$EXP[View57]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
+	  <onfocus description="All-Poster" condition="Skin.HasSetting(ForceView) + Skin.String(ForceView.all,$LOCALIZE[31014]) + !$EXP[View58]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
+	  <onfocus description="All-Side Wall" condition="Skin.HasSetting(ForceView) + Skin.String(ForceView.all,$LOCALIZE[31016]) + !$EXP[View59]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
 	  
-	  <!--<onfocus description="For ID(50)"    condition="!Skin.HasSetting(ForceView) + [ Skin.HasSetting(AutoView) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + [String.IsEmpty(Container.FolderPath) + String.IsEmpty(ListItem.Path) | [String.IsEqual(ListItem.Path,library://video/) + [String.IsEqual(Container.FolderPath,library://video/) | String.IsEmpty(Container.FolderPath) + String.IsEmpty(Container.FolderName)]] | String.IsEqual(Container.FolderPath,library://video/tvshows/) + String.IsEqual(ListItem.Path,library://video/tvshows/) | String.IsEqual(Container.FolderPath,library://video/movies/) + String.IsEqual(ListItem.Path,library://video/movies/)] ]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>-->
+	  <!--<onfocus description="For ID(50)"    condition="!Skin.HasSetting(ForceView) + [ Skin.HasSetting(AutoView) + !$EXP[View51] + [String.IsEmpty(Container.FolderPath) + String.IsEmpty(ListItem.Path) | [String.IsEqual(ListItem.Path,library://video/) + [String.IsEqual(Container.FolderPath,library://video/) | String.IsEmpty(Container.FolderPath) + String.IsEmpty(Container.FolderName)]] | String.IsEqual(Container.FolderPath,library://video/tvshows/) + String.IsEqual(ListItem.Path,library://video/tvshows/) | String.IsEqual(Container.FolderPath,library://video/movies/) + String.IsEqual(ListItem.Path,library://video/movies/)] ]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>-->
 	  <!--MyVideoNav-->
-	  <!--<onfocus description="For ID(50)" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010])| String.IsEqual(Container.FolderName,$LOCALIZE[345]) | String.IsEqual(Container.FolderName,$LOCALIZE[20348]) | String.IsEqual(Container.FolderName,$LOCALIZE[20388]) | String.IsEqual(Container.FolderName,$LOCALIZE[20451]) | String.IsEqual(Container.FolderName,$LOCALIZE[20459]) | String.IsEqual(Container.FolderPath,special://userdata/library/) | String.IsEqual(ListItem.Path,library://video/)]">AlarmClock($LOCALIZE[31010],Container.SetViewMode(50),0,silent)</onfocus>-->
+	  <!--<onfocus description="For ID(50)" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + !$EXP[View51]| String.IsEqual(Container.FolderName,$LOCALIZE[345]) | String.IsEqual(Container.FolderName,$LOCALIZE[20348]) | String.IsEqual(Container.FolderName,$LOCALIZE[20388]) | String.IsEqual(Container.FolderName,$LOCALIZE[20451]) | String.IsEqual(Container.FolderName,$LOCALIZE[20459]) | String.IsEqual(Container.FolderPath,special://userdata/library/) | String.IsEqual(ListItem.Path,library://video/)]">AlarmClock($LOCALIZE[31010],Container.SetViewMode(50),0,silent)</onfocus>-->
 
-	  <onfocus description="Movies-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.movies,$LOCALIZE[31010]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(movies) | String.Contains(Container.FolderPath,videodb://movies/)] + !Container.Content(sets) + !String.Contains(Container.FolderPath,videodb://movies/sets/) + !Container.Content(actors) + [!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
-	  <onfocus description="Movies-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.movies,$LOCALIZE[31011]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(movies) | String.Contains(Container.FolderPath,videodb://movies/)] + !Container.Content(sets) + !String.Contains(Container.FolderPath,videodb://movies/sets/) + !Container.Content(actors) + [!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
-	  <onfocus description="Movies-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.movies,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(movies) | String.Contains(Container.FolderPath,videodb://movies/)] + !Container.Content(sets) + !String.Contains(Container.FolderPath,videodb://movies/sets/) + !Container.Content(actors) + [!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
-	  <onfocus description="Movies-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.movies,$LOCALIZE[31013]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(movies) | String.Contains(Container.FolderPath,videodb://movies/)] + !Container.Content(sets) + !String.Contains(Container.FolderPath,videodb://movies/sets/) + !Container.Content(actors) + [!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
-	  <onfocus description="Movies-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.movies,$LOCALIZE[31016]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(movies) | String.Contains(Container.FolderPath,videodb://movies/)] + !Container.Content(sets) + !String.Contains(Container.FolderPath,videodb://movies/sets/) + !Container.Content(actors) + [!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
-	  <onfocus description="Movies-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.movies,$LOCALIZE[31014]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(movies) | String.Contains(Container.FolderPath,videodb://movies/)] + !Container.Content(sets) + !String.Contains(Container.FolderPath,videodb://movies/sets/) + !Container.Content(actors) + [!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
+	  <onfocus description="Movies-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.movies,$LOCALIZE[31010]) + !$EXP[View51] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(movies) | String.Contains(Container.FolderPath,videodb://movies/)] + !Container.Content(sets) + !String.Contains(Container.FolderPath,videodb://movies/sets/) + !Container.Content(actors) + $EXP[Contents]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
+	  <onfocus description="Movies-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.movies,$LOCALIZE[31011]) + !$EXP[View50] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(movies) | String.Contains(Container.FolderPath,videodb://movies/)] + !Container.Content(sets) + !String.Contains(Container.FolderPath,videodb://movies/sets/) + !Container.Content(actors) + $EXP[Contents]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
+	  <onfocus description="Movies-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.movies,$LOCALIZE[31015]) + !$EXP[View54] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(movies) | String.Contains(Container.FolderPath,videodb://movies/)] + !Container.Content(sets) + !String.Contains(Container.FolderPath,videodb://movies/sets/) + !Container.Content(actors) + $EXP[Contents]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
+	  <onfocus description="Movies-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.movies,$LOCALIZE[31013]) + !$EXP[View57] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(movies) | String.Contains(Container.FolderPath,videodb://movies/)] + !Container.Content(sets) + !String.Contains(Container.FolderPath,videodb://movies/sets/) + !Container.Content(actors) + $EXP[Contents]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
+	  <onfocus description="Movies-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.movies,$LOCALIZE[31016]) + !$EXP[View59] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(movies) | String.Contains(Container.FolderPath,videodb://movies/)] + !Container.Content(sets) + !String.Contains(Container.FolderPath,videodb://movies/sets/) + !Container.Content(actors) + $EXP[Contents]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
+	  <onfocus description="Movies-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.movies,$LOCALIZE[31014]) + !$EXP[View58] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(movies) | String.Contains(Container.FolderPath,videodb://movies/)] + !Container.Content(sets) + !String.Contains(Container.FolderPath,videodb://movies/sets/) + !Container.Content(actors) + $EXP[Contents]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
 	  
-	  <onfocus description="TVshows-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.tvshows,$LOCALIZE[31010]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(tvshows) | String.Contains(Container.FolderPath,videodb://tvshows/)] + !Container.Content(Seasons) + !Container.content(Episodes) + [!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
-	  <onfocus description="TVshows-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.tvshows,$LOCALIZE[31011]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(tvshows) | String.Contains(Container.FolderPath,videodb://tvshows/)] + !Container.Content(Seasons) + !Container.content(Episodes) + [!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
-	  <onfocus description="TVshows-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.tvshows,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(tvshows) | String.Contains(Container.FolderPath,videodb://tvshows/)] + !Container.Content(Seasons) + !Container.content(Episodes) + [!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
-	  <onfocus description="TVshows-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.tvshows,$LOCALIZE[31013]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(tvshows) | String.Contains(Container.FolderPath,videodb://tvshows/)] + !Container.Content(Seasons) + !Container.content(Episodes) + [!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
-	  <onfocus description="TVshows-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.tvshows,$LOCALIZE[31016]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(tvshows) | String.Contains(Container.FolderPath,videodb://tvshows/)] + !Container.Content(Seasons) + !Container.content(Episodes) + [!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
-	  <onfocus description="TVshows-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.tvshows,$LOCALIZE[31014]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(tvshows) | String.Contains(Container.FolderPath,videodb://tvshows/)] + !Container.Content(Seasons) + !Container.content(Episodes) + [!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
+	  <onfocus description="TVshows-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.tvshows,$LOCALIZE[31010]) + !$EXP[View51] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(tvshows) | String.Contains(Container.FolderPath,videodb://tvshows/)] + !Container.Content(Seasons) + !Container.content(Episodes) + $EXP[Contents]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
+	  <onfocus description="TVshows-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.tvshows,$LOCALIZE[31011]) + !$EXP[View50] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(tvshows) | String.Contains(Container.FolderPath,videodb://tvshows/)] + !Container.Content(Seasons) + !Container.content(Episodes) + $EXP[Contents]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
+	  <onfocus description="TVshows-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.tvshows,$LOCALIZE[31015]) + !$EXP[View54] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(tvshows) | String.Contains(Container.FolderPath,videodb://tvshows/)] + !Container.Content(Seasons) + !Container.content(Episodes) + $EXP[Contents]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
+	  <onfocus description="TVshows-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.tvshows,$LOCALIZE[31013]) + !$EXP[View57] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(tvshows) | String.Contains(Container.FolderPath,videodb://tvshows/)] + !Container.Content(Seasons) + !Container.content(Episodes) + $EXP[Contents]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
+	  <onfocus description="TVshows-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.tvshows,$LOCALIZE[31016]) + !$EXP[View59] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(tvshows) | String.Contains(Container.FolderPath,videodb://tvshows/)] + !Container.Content(Seasons) + !Container.content(Episodes) + $EXP[Contents]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
+	  <onfocus description="TVshows-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.tvshows,$LOCALIZE[31014]) + !$EXP[View58] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(tvshows) | String.Contains(Container.FolderPath,videodb://tvshows/)] + !Container.Content(Seasons) + !Container.content(Episodes) + $EXP[Contents]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
 	  
-	  <onfocus description="seasons-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31010]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
-	  <onfocus description="seasons-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31011]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
+	  <onfocus description="seasons-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31010]) + !$EXP[View51] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
+	  <onfocus description="seasons-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31011]) + !$EXP[View50] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
 	  <onfocus description="seasons-Small List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31012]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31012]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(56),0,silent)</onfocus>
-	  <onfocus description="seasons-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
-	  <onfocus description="seasons-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31013]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
-	  <onfocus description="seasons-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31016]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
-	  <onfocus description="seasons-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31014]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
+	  <onfocus description="seasons-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31015]) + !$EXP[View54] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
+	  <onfocus description="seasons-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31013]) + !$EXP[View57] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
+	  <onfocus description="seasons-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31016]) + !$EXP[View59] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
+	  <onfocus description="seasons-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.seasons,$LOCALIZE[31014]) + !$EXP[View58] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(seasons) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
 	  
-	  <onfocus description="episodes-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31010]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
-	  <onfocus description="episodes-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31011]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
+	  <onfocus description="episodes-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31010]) + !$EXP[View51] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
+	  <onfocus description="episodes-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31011]) + !$EXP[View50] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
 	  <onfocus description="episodes-Small List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31012]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31012]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(56),0,silent)</onfocus>
-	  <onfocus description="episodes-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
-	  <onfocus description="episodes-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31013]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
-	  <onfocus description="episodes-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31016]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
-	  <onfocus description="episodes-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31014]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
+	  <onfocus description="episodes-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31015]) + !$EXP[View54] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
+	  <onfocus description="episodes-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31013]) + !$EXP[View57] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
+	  <onfocus description="episodes-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31016]) + !$EXP[View59] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
+	  <onfocus description="episodes-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.episodes,$LOCALIZE[31014]) + !$EXP[View58] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + Container.Content(episodes) + !String.IsEmpty(Control.GetLabel(11155))">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
 	  
-	  <onfocus description="setmovies-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.setmovies,$LOCALIZE[31010]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(sets) | String.Contains(Container.FolderPath,videodb://movies/sets/) | String.IsEqual(Container.FolderName,$LOCALIZE[20434])]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
-	  <onfocus description="setmovies-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.setmovies,$LOCALIZE[31011]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(sets) | String.Contains(Container.FolderPath,videodb://movies/sets/) | String.IsEqual(Container.FolderName,$LOCALIZE[20434])]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
-	  <onfocus description="setmovies-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.setmovies,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(sets) | String.Contains(Container.FolderPath,videodb://movies/sets/) | String.IsEqual(Container.FolderName,$LOCALIZE[20434])]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
-	  <onfocus description="setmovies-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.setmovies,$LOCALIZE[31013]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(sets) | String.Contains(Container.FolderPath,videodb://movies/sets/) | String.IsEqual(Container.FolderName,$LOCALIZE[20434])]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
-	  <onfocus description="setmovies-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.setmovies,$LOCALIZE[31016]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(sets) | String.Contains(Container.FolderPath,videodb://movies/sets/) | String.IsEqual(Container.FolderName,$LOCALIZE[20434])]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
-	  <onfocus description="setmovies-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.setmovies,$LOCALIZE[31014]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(sets) | String.Contains(Container.FolderPath,videodb://movies/sets/) | String.IsEqual(Container.FolderName,$LOCALIZE[20434])]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
+	  <onfocus description="setmovies-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.setmovies,$LOCALIZE[31010]) + !$EXP[View51] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(sets) | String.Contains(Container.FolderPath,videodb://movies/sets/) | String.IsEqual(Container.FolderName,$LOCALIZE[20434])]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
+	  <onfocus description="setmovies-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.setmovies,$LOCALIZE[31011]) + !$EXP[View50] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(sets) | String.Contains(Container.FolderPath,videodb://movies/sets/) | String.IsEqual(Container.FolderName,$LOCALIZE[20434])]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
+	  <onfocus description="setmovies-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.setmovies,$LOCALIZE[31015]) + !$EXP[View54] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(sets) | String.Contains(Container.FolderPath,videodb://movies/sets/) | String.IsEqual(Container.FolderName,$LOCALIZE[20434])]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
+	  <onfocus description="setmovies-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.setmovies,$LOCALIZE[31013]) + !$EXP[View57] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(sets) | String.Contains(Container.FolderPath,videodb://movies/sets/) | String.IsEqual(Container.FolderName,$LOCALIZE[20434])]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
+	  <onfocus description="setmovies-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.setmovies,$LOCALIZE[31016]) + !$EXP[View59] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(sets) | String.Contains(Container.FolderPath,videodb://movies/sets/) | String.IsEqual(Container.FolderName,$LOCALIZE[20434])]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
+	  <onfocus description="setmovies-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.setmovies,$LOCALIZE[31014]) + !$EXP[View58] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(sets) | String.Contains(Container.FolderPath,videodb://movies/sets/) | String.IsEqual(Container.FolderName,$LOCALIZE[20434])]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
 	  
-	  <onfocus description="actors-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.actors,$LOCALIZE[31010]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(actors) | String.Contains(Container.FolderPath,videodb://movies/actors/) | String.IsEqual(Container.FolderName,$LOCALIZE[344])]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
-	  <onfocus description="actors-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.actors,$LOCALIZE[31011]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(actors) | String.Contains(Container.FolderPath,videodb://movies/actors/) | String.IsEqual(Container.FolderName,$LOCALIZE[344])]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
-	  <onfocus description="actors-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.actors,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(actors) | String.Contains(Container.FolderPath,videodb://movies/actors/) | String.IsEqual(Container.FolderName,$LOCALIZE[344])]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
-	  <onfocus description="actors-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.actors,$LOCALIZE[31013]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(actors) | String.Contains(Container.FolderPath,videodb://movies/actors/) | String.IsEqual(Container.FolderName,$LOCALIZE[344])]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
-	  <onfocus description="actors-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.actors,$LOCALIZE[31016]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(actors) | String.Contains(Container.FolderPath,videodb://movies/actors/) | String.IsEqual(Container.FolderName,$LOCALIZE[344])]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
-	  <onfocus description="actors-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.actors,$LOCALIZE[31014]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(actors) | String.Contains(Container.FolderPath,videodb://movies/actors/) | String.IsEqual(Container.FolderName,$LOCALIZE[344])]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
+	  <onfocus description="actors-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.actors,$LOCALIZE[31010]) + !$EXP[View51] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(actors) | String.Contains(Container.FolderPath,videodb://movies/actors/) | String.IsEqual(Container.FolderName,$LOCALIZE[344])]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
+	  <onfocus description="actors-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.actors,$LOCALIZE[31011]) + !$EXP[View50] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(actors) | String.Contains(Container.FolderPath,videodb://movies/actors/) | String.IsEqual(Container.FolderName,$LOCALIZE[344])]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
+	  <onfocus description="actors-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.actors,$LOCALIZE[31015]) + !$EXP[View54] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(actors) | String.Contains(Container.FolderPath,videodb://movies/actors/) | String.IsEqual(Container.FolderName,$LOCALIZE[344])]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
+	  <onfocus description="actors-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.actors,$LOCALIZE[31013]) + !$EXP[View57] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(actors) | String.Contains(Container.FolderPath,videodb://movies/actors/) | String.IsEqual(Container.FolderName,$LOCALIZE[344])]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
+	  <onfocus description="actors-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.actors,$LOCALIZE[31016]) + !$EXP[View59] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(actors) | String.Contains(Container.FolderPath,videodb://movies/actors/) | String.IsEqual(Container.FolderName,$LOCALIZE[344])]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
+	  <onfocus description="actors-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.actors,$LOCALIZE[31014]) + !$EXP[View58] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(actors) | String.Contains(Container.FolderPath,videodb://movies/actors/) | String.IsEqual(Container.FolderName,$LOCALIZE[344])]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
 	  
-	  <onfocus description="genres-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.genres,$LOCALIZE[31010]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(genres) | String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderName,$LOCALIZE[135]) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
-	  <onfocus description="genres-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.genres,$LOCALIZE[31011]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(genres) | String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderName,$LOCALIZE[135]) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
-	  <onfocus description="genres-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.genres,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(genres) | String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderName,$LOCALIZE[135]) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
-	  <onfocus description="genres-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.genres,$LOCALIZE[31013]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(genres) | String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderName,$LOCALIZE[135]) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
-	  <onfocus description="genres-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.genres,$LOCALIZE[31016]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(genres) | String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderName,$LOCALIZE[135]) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
-	  <onfocus description="genres-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.genres,$LOCALIZE[31014]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(genres) | String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderName,$LOCALIZE[135]) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
+	  <onfocus description="genres-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.genres,$LOCALIZE[31010]) + !$EXP[View51] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(genres) | String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderName,$LOCALIZE[135]) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
+	  <onfocus description="genres-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.genres,$LOCALIZE[31011]) + !$EXP[View50] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(genres) | String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderName,$LOCALIZE[135]) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
+	  <onfocus description="genres-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.genres,$LOCALIZE[31015]) + !$EXP[View54] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(genres) | String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderName,$LOCALIZE[135]) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
+	  <onfocus description="genres-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.genres,$LOCALIZE[31013]) + !$EXP[View57] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(genres) | String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderName,$LOCALIZE[135]) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
+	  <onfocus description="genres-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.genres,$LOCALIZE[31016]) + !$EXP[View59] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(genres) | String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderName,$LOCALIZE[135]) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
+	  <onfocus description="genres-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.genres,$LOCALIZE[31014]) + !$EXP[View58] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(genres) | String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderName,$LOCALIZE[135]) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
 	  
-	  <onfocus description="others-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.others,$LOCALIZE[31010]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | String.IsEqual(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
-	  <onfocus description="others-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.others,$LOCALIZE[31011]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | String.IsEqual(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
-	  <onfocus description="others-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.others,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | String.IsEqual(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
-	  <onfocus description="others-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.others,$LOCALIZE[31013]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | String.IsEqual(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
-	  <onfocus description="others-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.others,$LOCALIZE[31016]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | String.IsEqual(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
-	  <onfocus description="others-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.others,$LOCALIZE[31014]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | String.IsEqual(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
+	  <onfocus description="others-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.others,$LOCALIZE[31010]) + !$EXP[View51] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | String.IsEqual(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
+	  <onfocus description="others-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.others,$LOCALIZE[31011]) + !$EXP[View50] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | String.IsEqual(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
+	  <onfocus description="others-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.others,$LOCALIZE[31015]) + !$EXP[View54] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | String.IsEqual(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
+	  <onfocus description="others-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.others,$LOCALIZE[31013]) + !$EXP[View57] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | String.IsEqual(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
+	  <onfocus description="others-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.others,$LOCALIZE[31016]) + !$EXP[View59] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | String.IsEqual(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
+	  <onfocus description="others-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.others,$LOCALIZE[31014]) + !$EXP[View58] + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + [Container.Content(years) | Container.Content(studios) | Container.Content(directors) | String.IsEqual(Container.FolderName,$LOCALIZE[20451])]">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
 	  
-	  <!--<onfocus description="For ID(57)" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + [Container.content(movies) | Container.Content(TVshows) | Container.Content(Seasons) | Container.content(Episodes)]">AlarmClock($LOCALIZE[31013],Container.SetViewMode(57),0,silent)</onfocus>
-	  <onfocus description="For ID(57)" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + [Container.content(movies) | Container.Content(TVshows) | Container.Content(Seasons) | Container.content(Episodes)]">AlarmClock($LOCALIZE[31013],Container.SetViewMode(57),0,silent)</onfocus>-->
+	  <!--<onfocus description="For ID(57)" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + !$EXP[View57] + [Container.content(movies) | Container.Content(TVshows) | Container.Content(Seasons) | Container.content(Episodes)]">AlarmClock($LOCALIZE[31013],Container.SetViewMode(57),0,silent)</onfocus>
+	  <onfocus description="For ID(57)" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + !$EXP[View57] + [Container.content(movies) | Container.Content(TVshows) | Container.Content(Seasons) | Container.content(Episodes)]">AlarmClock($LOCALIZE[31013],Container.SetViewMode(57),0,silent)</onfocus>-->
 	  
-	  <!--<onfocus description="For ID(58) - Israel TV's Addons" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + [String.Contains(Container.FolderPath,plugin://plugin.video.sdarot.tv/?) + Container.Content(TVshows) + !Container.content(Episodes) + !Container.content(Seasons)]">AlarmClock($LOCALIZE[31014],Container.SetViewMode(58),0,silent)</onfocus>-->
+	  <!--<onfocus description="For ID(58) - Israel TV's Addons" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyVideoNav.xml) + !$EXP[View58] + [String.Contains(Container.FolderPath,plugin://plugin.video.sdarot.tv/?) + Container.Content(TVshows) + !Container.content(Episodes) + !Container.content(Seasons)]">AlarmClock($LOCALIZE[31014],Container.SetViewMode(58),0,silent)</onfocus>-->
 	  
 	  <!--MyPics-->
-	  <onfocus description="pictures-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.pictures,$LOCALIZE[31010]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !String.IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
-	  <onfocus description="pictures-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.pictures,$LOCALIZE[31011]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !String.IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
-	  <onfocus description="pictures-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.pictures,$LOCALIZE[31015]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !String.IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
-	  <onfocus description="pictures-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.pictures,$LOCALIZE[31013]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !String.IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
-	  <onfocus description="pictures-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.pictures,$LOCALIZE[31016]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !String.IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
-	  <onfocus description="pictures-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.pictures,$LOCALIZE[31014]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !String.IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
+	  <onfocus description="pictures-Center List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.pictures,$LOCALIZE[31010]) + !$EXP[View51] + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !String.IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(51),0,silent)</onfocus>
+	  <onfocus description="pictures-Side List" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.pictures,$LOCALIZE[31011]) + !$EXP[View50] + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !String.IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(50),0,silent)</onfocus>
+	  <onfocus description="pictures-Line" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.pictures,$LOCALIZE[31015]) + !$EXP[View54] + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !String.IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(54),0,silent)</onfocus>
+	  <onfocus description="pictures-Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.pictures,$LOCALIZE[31013]) + !$EXP[View57] + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !String.IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(57),0,silent)</onfocus>
+	  <onfocus description="pictures-Side Wall" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.pictures,$LOCALIZE[31016]) + !$EXP[View59] + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !String.IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(59),0,silent)</onfocus>
+	  <onfocus description="pictures-Poster" condition="!Skin.HasSetting(ForceView) + Skin.String(AutoView.pictures,$LOCALIZE[31014]) + !$EXP[View58] + Skin.HasSetting(AutoView) + Window.IsVisible(MyPics.xml) + !String.IsEmpty(Container.FolderPath)">AlarmClock(AutoView,Container.SetViewMode(58),0,silent)</onfocus>
 
 	  <!--MyPrograms-->
-	  <!--<onfocus description="For ID(50) - משחקים" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPrograms.xml) + String.IsEqual(Container.FolderName,Advanced Launcher) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + Integer.IsLess(Container.NumItems,13) + [String.Contains(ListItem.Label,Arcade) | String.Contains(ListItem.Label,Nintendo) | String.Contains(ListItem.Label,Sega) | String.Contains(ListItem.Label,Sony Playstation) | String.Contains(ListItem.Label,TurboGrafx)] + [[String.IsEmpty(ListItem.Plot) + String.IsEmpty(ListItem.Genre) + String.IsEmpty(ListItem.Art(fanart))]]">AlarmClock($LOCALIZE[31010],Container.SetViewMode(50),0,silent)</onfocus>
-	  <onfocus description="For ID(50) - כללי" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPrograms.xml) + !String.IsEqual(Container.FolderName,Advanced Launcher) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + [String.Contains(Container.FolderPath,addons://outdated/)]">AlarmClock($LOCALIZE[31010],Container.SetViewMode(50),0,silent)</onfocus>
-	  <onfocus description="For ID(58) - משחקים" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPrograms.xml) + String.IsEqual(Container.FolderName,Advanced Launcher) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + [[!String.IsEmpty(ListItem.Plot) + !String.IsEmpty(ListItem.Genre) + !String.IsEmpty(ListItem.Art(fanart))] | Integer.IsGreater(Container.NumItems,13)]">AlarmClock($LOCALIZE[31014],Container.SetViewMode(58),0,silent)</onfocus>
+	  <!--<onfocus description="For ID(50) - משחקים" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPrograms.xml) + String.IsEqual(Container.FolderName,Advanced Launcher) + !$EXP[View51] + Integer.IsLess(Container.NumItems,13) + [String.Contains(ListItem.Label,Arcade) | String.Contains(ListItem.Label,Nintendo) | String.Contains(ListItem.Label,Sega) | String.Contains(ListItem.Label,Sony Playstation) | String.Contains(ListItem.Label,TurboGrafx)] + [[String.IsEmpty(ListItem.Plot) + String.IsEmpty(ListItem.Genre) + String.IsEmpty(ListItem.Art(fanart))]]">AlarmClock($LOCALIZE[31010],Container.SetViewMode(50),0,silent)</onfocus>
+	  <onfocus description="For ID(50) - כללי" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPrograms.xml) + !String.IsEqual(Container.FolderName,Advanced Launcher) + !$EXP[View51] + [String.Contains(Container.FolderPath,addons://outdated/)]">AlarmClock($LOCALIZE[31010],Container.SetViewMode(50),0,silent)</onfocus>
+	  <onfocus description="For ID(58) - משחקים" condition="!Skin.HasSetting(ForceView) + Skin.HasSetting(AutoView) + Window.IsVisible(MyPrograms.xml) + String.IsEqual(Container.FolderName,Advanced Launcher) + !$EXP[View58] + [[!String.IsEmpty(ListItem.Plot) + !String.IsEmpty(ListItem.Genre) + !String.IsEmpty(ListItem.Art(fanart))] | Integer.IsGreater(Container.NumItems,13)]">AlarmClock($LOCALIZE[31014],Container.SetViewMode(58),0,silent)</onfocus>
 	  <onfocus description="*For All ID" condition="!Skin.HasSetting(ForceView) + Window.IsVisible(MyPrograms.xml) + !Skin.HasSetting(Admin) + String.IsEqual(ListItem.Path,addons://sources/) + String.IsEmpty(ListItem.FolderName) + String.IsEmpty(Container.FolderName)">Action(Back)</onfocus>
 	  <onfocus description="*For All ID - Addons" condition="!Skin.HasSetting(ForceView) + Window.IsVisible(MyPrograms.xml) + !Skin.HasSetting(Admin) + [String.IsEqual(Container.FolderPath,plugin://plugin.programm.featherencemail/)]">Action(Back)</onfocus>-->
 	  <visible>false</visible>
@@ -620,7 +620,7 @@
 		<animation description="Horizontal" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [!Skin.String(MenuDesign) | Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6)]" effect="slide" start="0,0" end="0,-240" time="0">Conditional</animation>
 		<animation description="Vertical" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + !String.IsEqual(System.Language,Hebrew) + [Skin.String(MenuDesign,4)]" effect="slide" start="0,0" end="260,0" time="0">Conditional</animation>
 		<animation description="Panel" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]" effect="slide" start="0,0" end="0,-490" time="0">Conditional</animation>
-		<animation description="slide-Vertical_en" condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11)] + !String.IsEqual(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="460,0" time="0">Conditional</animation>
+		<animation description="slide-Vertical_en" condition="[$EXP[View50] | Control.IsVisible(11)] + !String.IsEqual(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="460,0" time="0">Conditional</animation>
 		<left>30</left>
 		<top>950</top>
 		<width>748</width>
@@ -673,124 +673,7 @@
 		</control>
 	</control>
   </include>
-  
-  <include name="Badges">
-  <control type="grouplist">
-	<include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos50</include>
-	<height>24</height>
-	<itemgap>10</itemgap>
-	<align>left</align>
-	<orientation>horizontal</orientation>
-	<posx>360</posx>
-	<posy>5</posy>
-	<visible>Player.HasVideo</visible>
-	<visible>!String.Contains(MusicPlayer.Title,featherence)</visible>
-	<control type="image">
-	  <texture>$INFO[VideoPlayer.VideoResolution,badges/video/,.png]</texture>
-	  <visible>!String.IsEmpty(VideoPlayer.VideoResolution)</visible>
-	  <width>50</width>
-	</control>
-	<control type="image">
-	  <texture>$INFO[VideoPlayer.VideoCodec,badges/video/,.png]</texture>
-	  <visible>!String.IsEmpty(VideoPlayer.VideoCodec)</visible>
-	  <width>50</width>
-	</control>
-	<control type="image">
-	  <texture>$INFO[VideoPlayer.AudioChannels,badges/channels/channels,.png]</texture>
-	  <visible>[!String.IsEmpty(VideoPlayer.AudioChannels) | !String.IsEmpty(MusicPlayer.Channels)]</visible>
-	  <width>50</width>
-	</control>
-	<control type="image">
-	  <texture>$INFO[VideoPlayer.AudioCodec,badges/audio/,.png]</texture>
-	  <visible>[!String.IsEmpty(VideoPlayer.AudioCodec) | !String.IsEmpty(MusicPlayer.Codec)]</visible>
-	  <width>50</width>
-	</control>
-   </control>
    
-  <control type="grouplist" id="1132">
-    <include>Slide1</include>
-	<animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-1000,0">Conditional</animation>
-	<height>24</height>
-	<itemgap>10</itemgap>
-	<align>left</align>
-	<orientation>horizontal</orientation>
-	<posx>1240</posx>
-	<posy>-432</posy>
-	<visible>!Player.HasVideo + !String.IsEmpty(ListItem.VideoResolution) + !String.IsEmpty(ListItem.VideoCodec)</visible>
-	<control type="image">
-	  <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
-	  <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
-	  <width>50</width>
-	</control>
-	<control type="image">
-	  <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
-	  <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
-	  <width>50</width>
-	</control>
-	<control type="image">
-	  <texture>$INFO[ListItem.AudioChannels,badges/channels/channels,.png]</texture>
-	  <visible>!String.IsEmpty(ListItem.AudioChannels) | !String.IsEmpty(MusicPlayer.Channels)</visible>
-	  <width>50</width>
-	</control>
-	<control type="image">
-	  <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
-	  <visible>!String.IsEmpty(ListItem.AudioCodec) | !String.IsEmpty(MusicPlayer.Codec)</visible>
-	  <width>50</width>
-	</control>
-   </control>
-  </include>
-  <include name="IconsInformation">
-   <control type="grouplist">
-    <animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-900,0">Conditional</animation>
-	<include condition="String.IsEqual(System.Language,Hebrew)">LabelL1</include>
-	<include condition="!String.IsEqual(System.Language,Hebrew)">LabelR1</include>
-	<height>33</height>
-	<posx>670r</posx>
-	<itemgap>10</itemgap>
-	<orientation>horizontal</orientation>
-	<posy>0</posy>
-	<width>250</width>
-	<visible>!Skin.String(TopInformationIcons, 0)</visible>
-	<control type="image" id="820" description="Weather">
-	  <width>30</width>
-	  <include>Control_Pos7</include>
-	  <texture colordiffuse="$VAR[TopInformationFontColor]">special://home/addons/resource.images.weathericons.outline/resources/$INFO[Weather.fanartcode].png</texture>
-	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),1)</visible>
-	</control>
-	<control type="label" id="821" description="Weather">
-	  <include>Control_Pos7</include>
-	  <textcolor>$VAR[TopInformationFontColor]</textcolor>
-	  <include>LabelC4</include>
-	  <label>$INFO[Weather.Temperature]</label>
-	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),1)</visible>
-	</control>
-	<control type="image" id="824" description="אין אינטרנט">
-	  <include>Control_Pos7</include>
-	  <texture colordiffuse="$VAR[TopInformationFontColor]">badges/specials/internet.png</texture>
-	  <visible>!Control.IsVisible(825)</visible>
-	  <visible>[!String.IsEqual(System.InternetState,$LOCALIZE[15207]) + !String.IsEqual(System.InternetState,$LOCALIZE[503]) + !String.IsEmpty(System.InternetState)]</visible>
-	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),2)</visible>
-	</control>
-	<control type="image" id="825" description="אין רשת">
-	  <include>Control_Pos7</include>
-	  <visible>String.IsEmpty(Network.GatewayAddress) | String.IsEmpty(Network.IPAddress)</visible>
-	  <texture colordiffuse="$VAR[TopInformationFontColor]">badges/specials/lan.png</texture>
-	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),2)</visible>
-	</control>
-	<control type="image" id="826" description="אינטרנט קווי / was bugged">
-	  <include>Control_Pos7</include>
-	  <visible>!Control.IsVisible(824) + !Control.IsVisible(825)</visible>
-	  <texture colordiffuse="$VAR[TopInformationFontColor]">badges/specials/wlan.png</texture>
-	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),2)</visible>
-	</control>
-	<control type="image" id="829" description="TotalMouse">
-	  <include>Control_Pos7</include>
-	  <texture colordiffuse="$VAR[TopInformationFontColor]">special://home/addons/script.featherence.service/resources/icons/mouse.png</texture>
-	  <visible>Skin.HasSetting(TotalMouse)</visible>
-	  <visible>System.Platform.Windows</visible>
-	</control>
-   </control>
-  </include>
   <include name="ScrollLabel" description="()">
 	<scroll>true</scroll>
 	<scrollspeed>100</scrollspeed>
@@ -877,7 +760,17 @@
   
   <include name="ScrollBar">
 	<control type="group" description="">
-	  <animation condition="Skin.HasSetting(View50_SideVideoInformation) + String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="0,1120" start="100,110.5" end="100,110.5" time="0" reversible="false">Conditional</animation>
+	  <include>TopInformationSize1</include>
+	  <include>Slide1</include>
+	  <include>Slide2</include>
+	  <animation description="View50-SideInformation" condition="$EXP[View50s]" effect="zoom" center="0,1220" start="100,110.5" end="100,110.5" time="0" reversible="false">Conditional</animation>
+	  <animation description="View50" condition="$EXP[View50t]" effect="zoom" center="0,350" start="100,99" end="100,99" time="0" reversible="false">Conditional</animation>
+	  
+	  <animation description="View51" condition="$EXP[View51]" effect="zoom" center="0,850" start="100,93" end="100,93" time="0" reversible="false">Conditional</animation>
+	  <animation description="View57" condition="$EXP[View57]" effect="zoom" center="0,1280" start="100,108.5" end="100,108.5" time="0" reversible="false">Conditional</animation>
+	  <animation description="View58" condition="$EXP[View58]" effect="zoom" center="0,1720" start="100,104" end="100,104" time="0" reversible="false">Conditional</animation>
+	  <animation description="View57/58" condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [$EXP[Contents] | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-77" delay="3000" time="700" reversible="false">Conditional</animation>
+	  <animation description="View59" condition="$EXP[View59]" effect="zoom" center="0,1240" start="100,109" end="100,109" time="0" reversible="false">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="zoom" center="auto" start="100,100" end="100,85">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="slide" start="0,0" end="1070,-130">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogGameControllers.xml)" effect="zoom" center="auto" start="100,100" end="100,55">Conditional</animation>
@@ -887,7 +780,7 @@
 	  
 	  <animation description="SlideOthers_he" condition="!Window.IsVisible(DialogTextViewer.xml) + !Window.IsVisible(DialogPVRChannelManager.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="1900,0">Conditional</animation>
 	  <visible>Control.IsVisible(60) | Control.IsVisible(61)</visible>
-	  <visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | Window.IsVisible(DialogTextViewer.xml)</visible>
+	  <visible>!$EXP[View54] | Window.IsVisible(DialogTextViewer.xml)</visible>
 	  <visible>Integer.IsGreater(Container.NumPages,1) | Window.IsVisible(FileBrowser.xml) | Window.IsVisible(DialogFavourites.xml) | Window.IsVisible(DialogTextViewer.xml) | Window.IsVisible(DialogGameControllers.xml) | Control.IsVisible(11) + Integer.IsGreater(Container(11).NumPages,1) | Window.IsVisible(Custom1170.xml)</visible>
 	  <height>950</height>
 	  <width>20</width>
@@ -919,14 +812,14 @@
 		<onright condition="Player.HasAudio + String.IsEqual(System.Language,Hebrew)">ActivateWindow(12901)</onright>
 		<onleft condition="Window.IsVisible(Custom1170.xml)">3110</onleft>
 		<onleft condition="[Window.IsVisible(DialogPeripheralSettings.xml) | Window.IsVisible(SettingsCategory.xml)] + Control.IsVisible(5) + String.IsEqual(System.Language,Hebrew)">5</onleft>
-		<onleft condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Control.IsVisible(50)] + String.IsEqual(System.Language,Hebrew)">50</onleft>
-		<onleft condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + String.IsEqual(System.Language,Hebrew)">51</onleft>
+		<onleft condition="[$EXP[View50] + Control.IsVisible(50)] + String.IsEqual(System.Language,Hebrew)">50</onleft>
+		<onleft condition="$EXP[View51] + String.IsEqual(System.Language,Hebrew)">51</onleft>
 		<onleft condition="Control.IsVisible(52) + String.IsEqual(System.Language,Hebrew)">52</onleft>
 		<onleft condition="Control.IsVisible(55) + String.IsEqual(System.Language,Hebrew)">55</onleft>
 		<onleft condition="Control.IsVisible(56) + String.IsEqual(System.Language,Hebrew)">56</onleft>
-		<onleft condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + String.IsEqual(System.Language,Hebrew)">57</onleft>
-		<onleft condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + String.IsEqual(System.Language,Hebrew)">58</onleft>
-		<onleft condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + String.IsEqual(System.Language,Hebrew)">59</onleft>
+		<onleft condition="$EXP[View57] + String.IsEqual(System.Language,Hebrew)">57</onleft>
+		<onleft condition="$EXP[View58] + String.IsEqual(System.Language,Hebrew)">58</onleft>
+		<onleft condition="$EXP[View59] + String.IsEqual(System.Language,Hebrew)">59</onleft>
 		<onleft condition="Control.IsVisible(450) + String.IsEqual(System.Language,Hebrew)">450</onleft>
 		<onleft condition="Control.IsVisible(10) + String.IsEqual(System.Language,Hebrew)">10</onleft>
 		<onleft condition="Control.IsVisible(11) + String.IsEqual(System.Language,Hebrew)">11</onleft>
@@ -936,21 +829,21 @@
 		<onleft condition="Player.HasAudio+ !String.IsEqual(System.Language,Hebrew)">ActivateWindow(12901)</onleft>
 		<onright condition="[Window.IsVisible(DialogPeripheralSettings.xml) | Window.IsVisible(SettingsCategory.xml)] + Control.IsVisible(5) + !String.IsEqual(System.Language,Hebrew)">5</onright>
 		<onright condition="Control.IsVisible(20) + !Window.IsVisible(MyVideoNav.xml)">20</onright>
-		<onright condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Control.IsVisible(50)] + !String.IsEqual(System.Language,Hebrew)">50</onright>
-		<onright condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + !String.IsEqual(System.Language,Hebrew)">51</onright>
+		<onright condition="[$EXP[View50] + Control.IsVisible(50)] + !String.IsEqual(System.Language,Hebrew)">50</onright>
+		<onright condition="$EXP[View51] + !String.IsEqual(System.Language,Hebrew)">51</onright>
 		<onright condition="Control.IsVisible(52) + !String.IsEqual(System.Language,Hebrew)">52</onright>
 		<onright condition="Control.IsVisible(55) + !String.IsEqual(System.Language,Hebrew)">55</onright>
 		<onright condition="Control.IsVisible(56) + !String.IsEqual(System.Language,Hebrew)">56</onright>
-		<onright condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + !String.IsEqual(System.Language,Hebrew)">57</onright>
-		<onright condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + !String.IsEqual(System.Language,Hebrew)">58</onright>
-		<onright condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + !String.IsEqual(System.Language,Hebrew)">59</onright>
+		<onright condition="$EXP[View57] + !String.IsEqual(System.Language,Hebrew)">57</onright>
+		<onright condition="$EXP[View58] + !String.IsEqual(System.Language,Hebrew)">58</onright>
+		<onright condition="$EXP[View59] + !String.IsEqual(System.Language,Hebrew)">59</onright>
 		<onright condition="Control.IsVisible(450) + !String.IsEqual(System.Language,Hebrew)">450</onright>
 		<onright condition="Control.IsVisible(13) + Window.IsVisible(DialogPVRGroupManager.xml)">13</onright>
 		<onright condition="Control.IsVisible(10) + !String.IsEqual(System.Language,Hebrew)">10</onright>
 		<onright condition="Control.IsVisible(11) + !String.IsEqual(System.Language,Hebrew)">11</onright>
 		<onright condition="Control.IsVisible(12) + !String.IsEqual(System.Language,Hebrew)">12</onright>
 		<!--<visible>Integer.IsGreater(Container.NumPages,2)</visible>-->
-		<visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + !Window.IsVisible(DialogTextViewer.xml) + !Window.IsVisible(DialogGameControllers.xml)</visible>
+		<visible>!$EXP[View54] + !Window.IsVisible(DialogTextViewer.xml) + !Window.IsVisible(DialogGameControllers.xml)</visible>
 	  </control>
 	  
 	  <control type="scrollbar" id="61" description="כלי גלילה">
@@ -966,7 +859,7 @@
 	  </control>
 	</control>
 	<control type="group" description="">
-	  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31015])</visible>
+	  <visible>$EXP[View54]</visible>
 	  <height>20</height>
 	  <width>1980</width>
 	  <posx>0</posx>
@@ -994,7 +887,7 @@
 		<height>100%</height>
 		<width>1920</width>
 		<onup condition="[Window.IsVisible(DialogPeripheralSettings.xml) | Window.IsVisible(SettingsCategory.xml)] + Control.IsVisible(5)">5</onup>
-		<onup condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31015])">54</onup>
+		<onup condition="$EXP[View54]">54</onup>
 	  </control>
 	</control>
   </include>

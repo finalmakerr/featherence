@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-  
   <include name="SetProperty_Widget" description="">
     <control type="button">
 	  <onfocus description="WidgetButton.ID_BASE" condition="!Skin.HasSetting(Touch_Support) + !Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(WidgetButton.ID_,$INFO[Container(315).ListItemNoWrap(0).Property(id)],home)</onfocus>
 	  <onfocus description="WidgetButton.Name-Home" condition="!Skin.HasSetting(Touch_Support) + !Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(WidgetButton.Name,$INFO[System.CurrentControl],home)</onfocus>
-	  <!--<onfocus description="Button.ID_BASE-CustomHome" condition="Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.ID_,$INFO[Container(50).ListItemNoWrap(0).Property(id)],home)</onfocus>-->
-	  <!--<onfocus description="Button.ID-Home" condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.ID,$INFO[Container(9000).ListItem(0).Label2],home)</onfocus>
-	  <onfocus description="Button.Name-Home" condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(Button.Name,$INFO[System.CurrentControl],home)</onfocus>-->
-	  
 	  <onfocus description="WidgetButton.ID_BASE-CustomHome2" condition="!Skin.HasSetting(Touch_Support) + Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(TEMP2,$INFO[Container(315).ListItemNoWrap(0).Property(id)],home)</onfocus>
 	  <onfocus description="WidgetButton.ID-CustomHome2" condition="!Skin.HasSetting(Touch_Support) + Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(TEMP,$INFO[Container(315).ListItem(0).Label2],home)</onfocus>
-	  
 	  <visible>false</visible>
 	</control>
   </include>
-  
   <include name="editButton_Widget">
 	  <onclick description="WidgetButton.ID_BASE" condition="Skin.HasSetting(Touch_Support) + !Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(WidgetButton.ID_,$INFO[Container(315).ListItemNoWrap(0).Property(id)],home)</onclick>
 	  <onclick description="WidgetButton.Name-Home" condition="Skin.HasSetting(Touch_Support) + !Window.IsVisible(CustomHomeCustomizer2.xml)">SetProperty(WidgetButton.Name,$INFO[System.CurrentControl],home)</onclick>
@@ -29,24 +22,27 @@
     <control type="group" description="">
 		<visible>Container(9000).Row(0) + !Container(9000).Row(1) + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]</visible>
 		<visible>Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | [!String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect))]</visible>
-		<visible>!Window.IsVisible(Custom1173.xml) | Window.IsVisible(Custom1170.xml) + [String.IsEqual(Window(home).Property(TEMP),WidgetUnFocusFontColor) | String.IsEqual(Window(home).Property(TEMP),WidgetFocusFontColor)]</visible>
-		<!--<visible>!Skin.HasSetting(widget) | ![String.IsEqual(Window(home).Property(Button.ID),90) | String.IsEqual(Window(home).Property(Button.ID),91)]</visible>-->
+		<include>TopInformationSize8</include>
+
 		<control type="group" description="סמן חץ ימינה">
-			<visible>[Control.HasFocus(311) + Container(311).HasNext] | [Control.HasFocus(312) + Container(312).HasNext] | [Control.HasFocus(315) + Container(315).HasNext]</visible>
+			<visible>[Control.HasFocus(311) + Container(311).HasNext] | [Control.HasFocus(312) + Container(312).HasNext] | [Control.HasFocus(315) + Container(315).HasNext] | [Control.HasFocus(31) + Container(316).HasNext]</visible>
+			<include>Animation_WidgetPosition</include>
 			<posx>60r</posx>
 			<posy>275</posy>
 			<control type="image" description="לא נבחר5">
+			  <posx>-20</posx>
 			  <width>40</width>
 			  <height>40</height>
 			  <texture border="0">images/ArrowNF.png</texture>
-			  <visible>[Control.HasFocus(311) + !Container(311).Position(4)] | [Control.HasFocus(312) + !Container(312).Position(4)] | [Control.HasFocus(315) + !Container(315).Position(4)]</visible>
+			  <visible>[Control.HasFocus(311) + !Container(311).Position(4)] | [Control.HasFocus(312) + !Container(312).Position(4)] | [Control.HasFocus(315) + !Container(315).Position(4)] | [Control.HasFocus(316) + !Container(316).Position(4)]</visible>
 			  <visible>!Skin.String(WidgetDesign)</visible>
 			</control>
 			<control type="image" description="נבחר5">
+			  <posx>-20</posx>
 			  <width>40</width>
 			  <height>40</height>
 			  <texture border="0">images/ArrowFO.png</texture>
-			  <visible>[Control.HasFocus(311) + Container(311).Position(4)] | [Control.HasFocus(312) + Container(312).Position(4)] | [Control.HasFocus(315) + Container(315).Position(4)]</visible>
+			  <visible>[Control.HasFocus(311) + Container(311).Position(4)] | [Control.HasFocus(312) + Container(312).Position(4)] | [Control.HasFocus(315) + Container(315).Position(4)] | [Control.HasFocus(316) + Container(316).Position(4)]</visible>
 			  <visible>!Skin.String(WidgetDesign)</visible>
 			</control>
 			
@@ -54,14 +50,14 @@
 			  <width>40</width>
 			  <height>40</height>
 			  <texture border="0">images/ArrowNF.png</texture>
-			  <visible>[Control.HasFocus(311) + !Container(311).Position(6)] | [Control.HasFocus(312) + !Container(312).Position(6)] | [Control.HasFocus(315) + !Container(315).Position(6)]</visible>
+			  <visible>[Control.HasFocus(311) + !Container(311).Position(6)] | [Control.HasFocus(312) + !Container(312).Position(6)] | [Control.HasFocus(315) + !Container(315).Position(6)] | [Control.HasFocus(316) + !Container(316).Position(6)]</visible>
 			  <visible>Skin.String(WidgetDesign,0)</visible>
 			</control>
 			<control type="image" description="נבחר7">
 			  <width>40</width>
 			  <height>40</height>
 			  <texture border="0">images/ArrowFO.png</texture>
-			  <visible>[Control.HasFocus(311) + Container(311).Position(6)] | [Control.HasFocus(312) + Container(312).Position(6)] | [Control.HasFocus(315) + Container(315).Position(6)]</visible>
+			  <visible>[Control.HasFocus(311) + Container(311).Position(6)] | [Control.HasFocus(312) + Container(312).Position(6)] | [Control.HasFocus(315) + Container(315).Position(6)] | [Control.HasFocus(316) + Container(316).Position(6)]</visible>
 			  <visible>Skin.String(WidgetDesign,0)</visible>
 			</control>
 			
@@ -69,61 +65,83 @@
 			  <width>40</width>
 			  <height>40</height>
 			  <texture border="0">images/ArrowNF.png</texture>
-			  <visible>[Control.HasFocus(311) + !Container(311).Position(8)] | [Control.HasFocus(312) + !Container(312).Position(8)] | [Control.HasFocus(315) + !Container(315).Position(8)]</visible>
+			  <visible>[Control.HasFocus(311) + !Container(311).Position(8)] | [Control.HasFocus(312) + !Container(312).Position(8)] | [Control.HasFocus(315) + !Container(315).Position(8)] | [Control.HasFocus(316) + !Container(316).Position(8)]</visible>
 			  <visible>Skin.String(WidgetDesign,1)</visible>
 			</control>
 			<control type="image" description="נבחר9">
 			  <width>40</width>
 			  <height>40</height>
 			  <texture border="0">images/ArrowFO.png</texture>
-			  <visible>[Control.HasFocus(311) + Container(311).Position(8)] | [Control.HasFocus(312) + Container(312).Position(8)] | [Control.HasFocus(315) + Container(315).Position(8)]</visible>
+			  <visible>[Control.HasFocus(311) + Container(311).Position(8)] | [Control.HasFocus(312) + Container(312).Position(8)] | [Control.HasFocus(315) + Container(315).Position(8)] | [Control.HasFocus(316) + Container(316).Position(8)]</visible>
 			  <visible>Skin.String(WidgetDesign,1)</visible>
 			</control>
 		</control>
-		
 		<control type="group" description="סמן חץ שמאלה">
-			<visible>[Control.HasFocus(311) + Container(311).HasPrevious] | [Control.HasFocus(312) + Container(312).HasPrevious] | [Control.HasFocus(315) + Container(315).HasPrevious]</visible>
-			<posx>20l</posx>
+			<include>Animation_WidgetPosition</include>
+			<visible>[Control.HasFocus(311) + Container(311).HasPrevious] | [Control.HasFocus(312) + Container(312).HasPrevious] | [Control.HasFocus(315) + Container(315).HasPrevious] | [Control.HasFocus(316) + Container(316).HasPrevious]</visible>
+			<posx>10l</posx>
 			<posy>275</posy>
 			<control type="image" description="לא נבחר5">
+			  <posx>20</posx>
 			  <width>40</width>
 			  <height>40</height>
 			  <texture border="0">images/Arrow2NF.png</texture>
-			  <visible>[Control.HasFocus(311) + !Container(311).Position(0)] | [Control.HasFocus(312) + !Container(312).Position(0)] | [Control.HasFocus(315) + !Container(315).Position(0)]</visible>
+			  <visible>[Control.HasFocus(311) + !Container(311).Position(0)] | [Control.HasFocus(312) + !Container(312).Position(0)] | [Control.HasFocus(315) + !Container(315).Position(0)] | [Control.HasFocus(316) + !Container(316).Position(0)]</visible>
 			</control>
 			<control type="image" description="נבחר5">
+			  <posx>20</posx>
 			  <width>40</width>
 			  <height>40</height>
 			  <texture border="0">images/Arrow2FO.png</texture>
-			  <visible>[Control.HasFocus(311) + Container(311).Position(0)] | [Control.HasFocus(312) + Container(312).Position(0)] | [Control.HasFocus(315) + Container(315).Position(0)]</visible>
+			  <visible>[Control.HasFocus(311) + Container(311).Position(0)] | [Control.HasFocus(312) + Container(312).Position(0)] | [Control.HasFocus(315) + Container(315).Position(0)] | [Control.HasFocus(316) + Container(316).Position(0)]</visible>
 			</control>
 		</control>
-		
 		<control type="group" id="700" description="Shelf items שורה עליונה בכחול">
-		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(315) + Control.HasFocus(9000)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-300,0">Conditional</animation>
-		  <animation condition="[Skin.String(MenuDesign,4)] + [!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(315) + Control.HasFocus(9000)] + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="300,0">Conditional</animation>
+		  <include>Fade_WidgetOverlay</include>
+		  <!--<animation description="Slide-NoShrink_he" condition="[Skin.String(MenuDesign,4)] + Skin.HasSetting(WidgetShrink) + [!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(315) + Control.HasFocus(9000)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-300,0">Conditional</animation>
+		  <animation description="Slide-NoShrink_en" condition="[Skin.String(MenuDesign,4)] + Skin.HasSetting(WidgetShrink) + [!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(315) + Control.HasFocus(9000)] + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="50,0">Conditional</animation>-->
+		  <animation decription="WidgetShrink_Horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign) | Skin.String(MenuDesign,6)] + !Skin.HasSetting(WidgetShrink) + [ Player.HasVideo | !$EXP[ContentsWidget]]" effect="zoom" tween="Cubic" easing="out" center="960,800" start="100,100" end="50,50" delay="220" time="440" reversible="true">Conditional</animation>
+		  <animation decription="WidgetShrink_Panel" condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + !Skin.HasSetting(WidgetShrink) + [ Player.HasVideo | !$EXP[ContentsWidget]]" effect="zoom" tween="Cubic" easing="out" center="960,600" start="100,100" end="50,50" delay="220" time="440" reversible="true">Conditional</animation>
+		  <animation decription="WidgetShrink_Vertical" condition="[Skin.String(MenuDesign,4)] + !Skin.HasSetting(WidgetShrink) + [ Player.HasVideo | !$EXP[ContentsWidget]]" effect="zoom" tween="Cubic" easing="out" center="960,1050" start="100,100" end="50,50" delay="220" time="440" reversible="true">Conditional</animation>
+		  
 		  <include description="פנל מדף סרטים שנוספו לאחרונה" condition="!Skin.HasSetting(MoviesShelfWL)">Movies_RA</include>
 		  <include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include> 
 		  <include description="פנל מדף פרקים שנוספו לאחרונה" condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RAIR</include> 
 		  <include condition="Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
 		  <include>MenuDesign_Widget</include>
-		  <onright condition="Control.IsVisible(9009) + !String.IsEqual(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onright>
-		  <onleft condition="Control.IsVisible(9009) + String.IsEqual(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onleft>
-		  <onup condition="Control.IsVisible(9009)">9009</onup>
-		  <onup condition="Control.IsVisible(7011)">7017</onup>
-		  <onup condition="Player.HasAudio + !Control.IsVisible(9009)">ActivateWindow(12901)</onup>
-		  <ondown>9000</ondown>
+		  
 		</control>
 	</control>
   </include>
   
+  <include name="Widget_Movement" description="Widget">
+	<onup condition="Control.IsVisible(7011)">7017</onup>
+	<onup condition="Control.IsVisible(9009)">9009</onup>
+	<onup condition="Player.HasAudio + !Control.IsVisible(9009)">ActivateWindow(12901)</onup>
+	<onright condition="Control.IsVisible(9009) + !String.IsEqual(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onright>
+	<onleft condition="Control.IsVisible(9009) + String.IsEqual(System.Language,Hebrew) + Skin.String(MenuDesign,4)">9009</onleft>
+	<onleft condition="Control.IsVisible(312)">312</onleft>
+	<onright condition="Control.IsVisible(312)">312</onright>
+	<onleft condition="Control.IsVisible(311)">311</onleft>
+	<onright condition="Control.IsVisible(311)">311</onright>
+	<onleft condition="Control.IsVisible(315)">315</onleft>
+	<onright condition="Control.IsVisible(315)">315</onright>
+	<onleft condition="Control.IsVisible(316)">316</onleft>
+	<onright condition="Control.IsVisible(316)">316</onright>
+	<ondown condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">9000</ondown>
+  </include>
+  
+  <include name="Widget316">
+    <include>Widget_Movement</include>
+	<include condition="!Skin.String(WidgetDesign)">MoviesShortcutsCommons</include>
+	<include condition="Skin.String(WidgetDesign,0)">MoviesShortcutsCommons0</include>
+	<include condition="Skin.String(WidgetDesign,1)">MoviesShortcutsCommons1</include>
+  </include>
+  
   <include name="MenuDesign_Widget" description="תפריט וידגט עליון">
     <control type="panel" id="315">
-		<visible>!Control.IsVisible(311) + !Control.IsVisible(312)</visible>
-		<onright>315</onright>
-		<onleft>315</onleft>
-		<onup>9009</onup>
-		<ondown condition="!Window.IsVisible(CustomHomeCustomizer2.xml)">9000</ondown>
+		<visible>!Control.IsVisible(311) + !Control.IsVisible(312) + !Control.IsVisible(316)</visible>
+		<include>Widget_Movement</include>
 		<include condition="!Skin.String(WidgetDesign)">MoviesShortcutsCommons</include>
 		<include condition="Skin.String(WidgetDesign,0)">MoviesShortcutsCommons0</include>
 		<include condition="Skin.String(WidgetDesign,1)">MoviesShortcutsCommons1</include>
@@ -164,11 +182,132 @@
 		</content>
 	</control>
 	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw90)]&amp;reload=$INFO[Skin.String(sw90)]</content>
+		<visible>Skin.String(sw90) + String.IsEqual(Window(home).Property(Button.ID),90)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw91)]&amp;reload=$INFO[Skin.String(sw91)]</content>
+		<visible>Skin.String(sw91) + String.IsEqual(Window(home).Property(Button.ID),91)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw92)]&amp;reload=$INFO[Skin.String(sw92)]</content>
+		<visible>Skin.String(sw92) + String.IsEqual(Window(home).Property(Button.ID),92)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw93)]&amp;reload=$INFO[Skin.String(sw93)]</content>
+		<visible>Skin.String(sw93) + String.IsEqual(Window(home).Property(Button.ID),93)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw94)]&amp;reload=$INFO[Skin.String(sw94)]</content>
+		<visible>Skin.String(sw94) + String.IsEqual(Window(home).Property(Button.ID),94)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw95)]&amp;reload=$INFO[Skin.String(sw95)]</content>
+		<visible>Skin.String(sw95) + String.IsEqual(Window(home).Property(Button.ID),95)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw96)]&amp;reload=$INFO[Skin.String(sw96)]</content>
+		<visible>Skin.String(sw96) + String.IsEqual(Window(home).Property(Button.ID),96)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw97)]&amp;reload=$INFO[Skin.String(sw97)]</content>
+		<visible>Skin.String(sw97) + String.IsEqual(Window(home).Property(Button.ID),97)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw98)]&amp;reload=$INFO[Skin.String(sw98)]</content>
+		<visible>Skin.String(sw98) + String.IsEqual(Window(home).Property(Button.ID),98)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw99)]&amp;reload=$INFO[Skin.String(sw99)]</content>
+		<visible>Skin.String(sw99) + String.IsEqual(Window(home).Property(Button.ID),99)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw100)]&amp;reload=$INFO[Skin.String(sw100)]</content>
+		<visible>Skin.String(sw100) + String.IsEqual(Window(home).Property(Button.ID),100)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw101)]&amp;reload=$INFO[Skin.String(sw101)]</content>
+		<visible>Skin.String(sw101) + String.IsEqual(Window(home).Property(Button.ID),101)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw102)]&amp;reload=$INFO[Skin.String(sw102)]</content>
+		<visible>Skin.String(sw102) + String.IsEqual(Window(home).Property(Button.ID),102)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw103)]&amp;reload=$INFO[Skin.String(sw103)]</content>
+		<visible>Skin.String(sw103) + String.IsEqual(Window(home).Property(Button.ID),103)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw104)]&amp;reload=$INFO[Skin.String(sw104)]</content>
+		<visible>Skin.String(sw104) + String.IsEqual(Window(home).Property(Button.ID),104)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw105)]&amp;reload=$INFO[Skin.String(sw105)]</content>
+		<visible>Skin.String(sw105) + String.IsEqual(Window(home).Property(Button.ID),105)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw106)]&amp;reload=$INFO[Skin.String(sw106)]</content>
+		<visible>Skin.String(sw106) + String.IsEqual(Window(home).Property(Button.ID),106)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw107)]&amp;reload=$INFO[Skin.String(sw107)]</content>
+		<visible>Skin.String(sw107) + String.IsEqual(Window(home).Property(Button.ID),107)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw108)]&amp;reload=$INFO[Skin.String(sw108)]</content>
+		<visible>Skin.String(sw108) + String.IsEqual(Window(home).Property(Button.ID),108)</visible>
+	</control>
+	
+	<control type="panel" id="316">
+		<include>Widget316</include>
+		<content target="videos">$INFO[Skin.String(sw109)]&amp;reload=$INFO[Skin.String(sw109)]</content>
+		<visible>Skin.String(sw109) + String.IsEqual(Window(home).Property(Button.ID),109)</visible>
+	</control>
+	
 	<control type="grouplist" description="קדימונים 5">
 	  <include>Fade10</include>
 	  <visible>!Skin.HasSetting(EnableTrailerButton2) + !Skin.String(WidgetDesign) + Control.IsVisible(311)</visible>
+	  <include>Animation_WidgetPosition</include>
 	  <posx>275</posx>
-	  <posy>155</posy>
+	  <posy>190</posy>
 	  <width>1900</width>
 	  <height>985</height>
 	  <orientation>horizontal</orientation>
@@ -179,8 +318,9 @@
 	<control type="grouplist" description="קדימונים 7">
 	  <include>Fade10</include>
 	  <visible>!Skin.HasSetting(EnableTrailerButton2) + Skin.String(WidgetDesign,0) + Control.IsVisible(311)</visible>
+	  <include>Animation_WidgetPosition</include>
 	  <posx>218</posx>
-	  <posy>155</posy>
+	  <posy>190</posy>
 	  <width>1900</width>
 	  <height>985</height>
 	  <orientation>horizontal</orientation>
@@ -191,8 +331,9 @@
 	<control type="grouplist" description="קדימונים 9">
 	  <include>Fade10</include>
 	  <visible>!Skin.HasSetting(EnableTrailerButton2) + Skin.String(WidgetDesign,1) + Control.IsVisible(311)</visible>
+	  <include>Animation_WidgetPosition</include>
 	  <posx>188</posx>
-	  <posy>155</posy>
+	  <posy>190</posy>
 	  <width>1900</width>
 	  <height>985</height>
 	  <orientation>horizontal</orientation>
@@ -302,8 +443,8 @@
 	<posx>430</posx>
 	<posy>430</posy>
 	<width>70</width>
-	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
-	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<texturefocus colordiffuse="$VAR[WidgetFocusFontColor]">osd/buttons/OSDTrailer_.png</texturefocus>
+	<texturenofocus colordiffuse="$VAR[WidgetUnFocusFontColor]">osd/buttons/OSDTrailer_.png</texturenofocus>
 	<include>Trailers_311_Onclick</include>
   </include>
   
@@ -314,8 +455,8 @@
 	<posx>0</posx>
 	<posy>430</posy>
 	<width>70</width>
-	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
-	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<texturefocus colordiffuse="$VAR[WidgetFocusFontColor]">osd/buttons/OSDTrailer_.png</texturefocus>
+	<texturenofocus colordiffuse="$VAR[WidgetUnFocusFontColor]">osd/buttons/OSDTrailer_.png</texturenofocus>
 	<include>Trailers_311_Onclick</include>
   </include>
   
@@ -326,8 +467,8 @@
 	<posx>0</posx>
 	<posy>430</posy>
 	<width>70</width>
-	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
-	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<texturefocus colordiffuse="$VAR[WidgetFocusFontColor]">osd/buttons/OSDTrailer_.png</texturefocus>
+	<texturenofocus colordiffuse="$VAR[WidgetUnFocusFontColor]">osd/buttons/OSDTrailer_.png</texturenofocus>
 	<include>Trailers_311_Onclick</include>
   </include>
   
@@ -344,737 +485,106 @@
 	<onclick condition="Container(311).HasFocus(10)">RunScript(script.featherence.service,,?mode=24&amp;value=RecentMovie.10&amp;value2=trailers)</onclick>
   </include>
   
+  <include name="Animation_WidgetPosition">
+	  <animation condition="Skin.String(WidgetPosition,1) + $EXP[MenuDesignH]" effect="slide" start="0,0" end="0,50" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,2) + $EXP[MenuDesignH]" effect="slide" start="0,0" end="0,100" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,3) + $EXP[MenuDesignH]" effect="slide" start="0,0" end="0,150" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,4) + $EXP[MenuDesignH]" effect="slide" start="0,0" end="0,250" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,5) + $EXP[MenuDesignH]" effect="slide" start="0,0" end="0,285" time="0">Conditional</animation>
+	  
+	  <animation condition="Skin.String(WidgetPosition,1) + $EXP[MenuDesignP]" effect="slide" start="0,0" end="0,10" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,2) + $EXP[MenuDesignP]" effect="slide" start="0,0" end="0,25" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,3) + $EXP[MenuDesignP]" effect="slide" start="0,0" end="0,40" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,4) + $EXP[MenuDesignP]" effect="slide" start="0,0" end="0,60" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,5) + $EXP[MenuDesignP]" effect="slide" start="0,0" end="0,70" time="0">Conditional</animation>
+	  
+	  <animation condition="Skin.String(WidgetPosition,1) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,100" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,2) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,200" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,3) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,300" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,4) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,400" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,5) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,550" time="0">Conditional</animation>
+	  
+	  <animation condition="[Skin.String(MenuDesign,4)] + Skin.HasSetting(WidgetShrink) + !$EXP[ContentsWidget] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-300,0">Conditional</animation>
+	  <animation condition="[Skin.String(MenuDesign,4)] + Skin.HasSetting(WidgetShrink) + !$EXP[ContentsWidget] + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="300,0">Conditional</animation>
+  </include>
+	
   <include name="MoviesShortcutsCommons" description="מדף סרטים/סדרות5">
 	<posx>40</posx>
-    <posy>90</posy>
+    <posy>125</posy>
     <width>1920</width>
     <height>500</height>
     <orientation>horizontal</orientation>
+	<include>Animation_WidgetPosition</include>
+	
     <itemlayout height="350" width="368">
       <control type="group">
+		  <animation condition="true" effect="fade" start="80" end="80" time="0">Conditional</animation>
 		  <include>Fade10</include>
-		  <control type="image" description="תמונה לא נבחר">
-		    <posx>50</posx>
-		    <posy>60</posy>
-		    <width>270</width>
-		    <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb</include>
-		    <texture>$INFO[ListItem.Thumb]</texture>
-		  </control>
-		  <control type="image" description="צללית">
-		    <posx>50</posx>
-            <posy>60</posy>
-            <width>270</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_shadow</include>
-            <texture>buttons/effects/shadow0.png</texture>
-		    <visible>Skin.HasSetting(ShadowButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-          </control>
-		  <control type="image" description="שקופית">
-            <posx>50</posx>
-            <posy>60</posy>
-            <width>270</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
-            <texture>buttons/effects/gardient0.png</texture>
-		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
-          </control>
-		  <control type="image" description="שפוע Bevel">
-            <posx>50</posx>
-            <posy>60</posy>
-            <width>270</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_bevel</include>
-            <texture border="-10" diffuse="buttons/ButtonA0.png">buttons/effects/bevel0.png</texture>
-		    <visible>!Skin.HasSetting(BevelButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-          </control>
-		  <control type="image" description="מסגרת (Stroke)">
-		    <posx>50</posx>
-            <posy>60</posy>
-            <width>270</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_stroke</include>
-		    <texture diffuse="buttons/ButtonA0.png">buttons/effects/stroke0.png</texture>
-		    <visible>Skin.HasSetting(StrokeButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-		  </control>
-		  <control type="image" description="OFF">
-		    <aspectratio>keep</aspectratio>
-		    <height>200</height>
-		    <posx>25</posx>
-		    <posy>120</posy>
-		    <texture>misc/help/off.png</texture>
-		    <visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
-			<visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
-			<visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			<visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
-			<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
-		    <width>332</width>
-          </control>
-		  <control type="image" description="דירוג">
-		    <animation condition="true" effect="rotate" end="-90" center="350,140" time="0">Conditional</animation>
-		    <aspectratio align="center">keep</aspectratio>
-		    <height>140</height>
-		    <posx>240</posx>   <!--למעלה/למטה-->
-		    <posy>390</posy>   <!--שמאלה/ימינה-->
-		    <texture>$VAR[TopVideoInformation3]</texture>
-		    <visible>!String.IsEmpty(Control.GetLabel(1103))</visible>
-		    <visible>false</visible>
-		    <width>170</width>
-		  </control>
-		  <control type="label" description="שנה">
-		    <align>center</align>
-		    <label>$INFO[ListItem.Property(year)]</label>   <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-		    <font>size28</font>
-		    <height>30</height>
-		    <posx>57</posx>
-		    <posy>-2</posy>
-		    <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-		    <visible>!String.IsEmpty(ListItem.Property(year))</visible>
-		    <visible>false</visible>
-		    <width>265</width>
-		  </control>
-		  <control type="group" description="עונה ופרק">
-			<animation condition="Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="60" end="60" time="0">Conditional</animation>
-		    <animation condition="!Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="90" end="90" time="0">Conditional</animation>
-			<posx>50</posx>
-			<posy>360</posy>
-			<control type="image" description="שחור">
-			  <height>30</height>
-			  <posx>0</posx>
-			  <width>270</width>
-			  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
-		      <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
-		      <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
-		      <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_black</include>
-		      <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
-		      <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
-			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-			  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
-			</control>
-			<control type="label" description="עונה ופרק">
-			  <align>center</align>
-			  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-			  <font>size28</font>
-			  <posx>0</posx>
-			  <height>30</height>
-			  <width>270</width>
-			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-			  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
-			</control>
-			<control type="label" description="כותרת">
-			  <align>center</align>
-			  <label>$VAR[WidgetLabel]</label>
-			  <font>size18</font>
-			  <height>30</height>
-			  <posx>0</posx>
-			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-			  <shadowcolor>black</shadowcolor>
-			  <scroll>false</scroll>
-			  <width>270</width>
-			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
-			  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
-			</control>
-			<control type="label" description="כותרת מוגדלת">
-			  <align>center</align>
-			  <label>$VAR[WidgetLabel]</label>
-			  <font>size28</font>
-			  <height>30</height>
-			  <posx>8</posx>
-			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-			  <shadowcolor>black</shadowcolor>
-			  <scroll>false</scroll>
-			  <width>254</width>
-			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
-			  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
-			</control>
-		</control>
+		  <include content="WidgetDesign">
+		    <param name="height" value="330"/>
+			<param name="posx" value="50"/>
+			<param name="posy" value="60"/>
+			<param name="width" value="270"/>
+			<param name="posx2" value="25"/>
+		  </include>
       </control>
     </itemlayout>
     <focusedlayout height="350" width="368">
 	  <include>SetProperty_Widget</include>
 	  <control type="group">
 	      <animation condition="Control.HasFocus(312) + !Container(312).OnPrevious + !Container(312).OnNext | Control.HasFocus(311) + !Container(311).OnPrevious + !Container(311).OnNext" effect="fade" start="100" end="70" delay="5000" time="3000" reversible="false">Conditional</animation>
-		  <control type="image" description="רקע פאנארט">
-			<animation condition="Window.IsVisible(Home.xml) + [!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
-			<animation condition="Window.IsVisible(CustomHomeCustomizer.xml) + [!Container(50).Row(0) + !Container(50).Row(1) | Container(50).HasPrevious()]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
-			<visible>!Skin.HasSetting(background) + [Control.HasFocus(311) | Control.HasFocus(312)]</visible>
-			<include>Fade_BackgroundOverlay</include>
-			<animation effect="fade" time="1000">WindowOpen</animation>
-			<texture>$INFO[ListItem.Property(fanart)]</texture>
-			<height>1080</height>
-			<width>1920</width>
-			<visible>false</visible>
-		  </control>
-		  <control type="image" description="תמונה נבחר">
-			<posx>50</posx>
-			<posy>60</posy>
-			<width>270</width>
-			<height>330</height>
-			<include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb2</include>
-		    <texture>$INFO[ListItem.Thumb]</texture>
-		  </control>
-		  <control type="image" description="צללית">
-		    <posx>50</posx>
-            <posy>60</posy>
-            <width>270</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_shadow</include>
-            <texture diffuse="buttons/ButtonA0.png">buttons/effects/shadow0.png</texture>
-		    <visible>Skin.HasSetting(ShadowButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-          </control>
-		  <control type="image" description="שקופית">
-            <posx>50</posx>
-            <posy>60</posy>
-            <width>270</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
-            <texture diffuse="buttons/ButtonA0.png">buttons/effects/gardient0.png</texture>
-		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
-          </control>
-		  <control type="image" description="שפוע Bevel">
-            <posx>50</posx>
-            <posy>60</posy>
-            <width>270</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_bevel</include>
-            <texture diffuse="buttons/ButtonA0.png">buttons/effects/bevel0.png</texture>
-		    <visible>!Skin.HasSetting(BevelButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-          </control>
-		  <control type="image" description="מסגרת (Stroke)">
-		    <posx>50</posx>
-            <posy>60</posy>
-            <width>270</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_stroke</include>
-		    <texture diffuse="buttons/ButtonA0.png">buttons/effects/stroke0.png</texture>
-		    <visible>Skin.HasSetting(StrokeButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-		  </control>
-		  <control type="image" description="OFF">
-			  <aspectratio>keep</aspectratio>
-			  <height>200</height>
-			  <posx>25</posx>
-			  <posy>120</posy>
-			  <texture>misc/help/off.png</texture>
-			  <visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
-			  <visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
-			  <visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			  <visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
-			  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
-			  <width>332</width>
-          </control>
-		  <control type="group" description="קבוצה כותרות">
-			<!--<include>Fade3</include>-->
-			<control type="image" description="קדימון">
-			  <height>70</height>		
-			  <posx>285</posx>
-			  <posy>0</posy>
-			  <texture>osd/buttons/OSDTrailerNF.png</texture>
-			  <visible>!String.IsEmpty(ListItem.Property(trailer)) + !Skin.HasSetting(trailers)</visible>
-			  <width>70</width>
-			  <visible>false</visible>
-			</control>
-			<control type="image" description="קדימון">
-			  <height>70</height>		
-			  <posx>285</posx>
-			  <posy>0</posy>
-			  <texture>osd/buttons/OSDTrailerFO.png</texture>
-			  <visible>!String.IsEmpty(ListItem.Property(trailer)) + Skin.HasSetting(trailers)</visible>
-			  <width>70</width>
-			</control>
-			<control type="image" description="דירוג">
-			  <animation condition="true" effect="rotate" end="-90" center="350,140" time="0">Conditional</animation>
-			  <aspectratio align="center">keep</aspectratio>
-			  <height>140</height>
-			  <posx>240</posx> <!--למעלה/למטה-->
-			  <posy>390</posy> <!--שמאלה/ימינה-->
-			  <texture>$VAR[TopVideoInformation3]</texture>
-			  <visible>!String.IsEmpty(Listitem.Property(rating)) + Integer.IsGreater(Listitem.Property(rating),0) + Integer.IsLess(Listitem.Property(rating),9.9)</visible>
-			  <visible>false</visible>
-			  <width>170</width>
-			</control>
-			<control type="group" description="עונה ופרק">
-				<animation condition="Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="60" end="60" time="0">Conditional</animation>
-		        <animation condition="!Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="90" end="90" time="0">Conditional</animation>
-				<posx>50</posx>
-				<posy>360</posy>
-				<control type="image" description="שחור">
-				  <height>30</height>
-				  <posx>0</posx>
-				  <width>270</width>
-				  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
-				  <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
-				  <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
-				  <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_black</include>
-				  <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
-				  <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
-				  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-				  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
-				</control>
-				<control type="label" description="עונה ופרק">
-				  <align>center</align>
-				  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-				  <font>size28</font>
-				  <height>30</height>
-				  <posx>0</posx>
-				  <width>270</width>
-				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
-				  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
-				</control>
-				<control type="label" description="כותרת">
-				  <align>center</align>
-				  <label>$VAR[WidgetLabel]</label>
-				  <font>size18</font>
-				  <height>30</height>
-				  <posx>0</posx>
-				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
-				  <shadowcolor>black</shadowcolor>
-				  <scroll>false</scroll>
-				  <width>270</width>
-				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
-				  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
-				</control>
-				<control type="label" description="כותרת מוגדלת">
-				  <align>center</align>
-				  <label>$VAR[WidgetLabel]</label>
-				  <font>size28</font>
-				  <height>30</height>
-				  <posx>0</posx>
-				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
-				  <shadowcolor>black</shadowcolor>
-				  <scroll>false</scroll>
-				  <width>270</width>
-				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
-				  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
-				</control>
-			</control>
-		  </control>
-		  <control type="image" description="סמן בחירה">
-			<posx>50</posx>
-			<posy>60</posy>
-			<width>270</width>
-			<height>330</height>
-			<texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		    <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | String.IsEmpty(ListItem.Label)]]</visible>
-		    <visible>!String.IsEmpty(Window(home).Property(WidgetButton.ID_)) | Control.IsVisible(311) | Control.IsVisible(312)</visible>
-		  </control>
+		  <include content="WidgetDesign">
+		    <param name="focus" value="true"/>
+			<param name="height" value="330"/>
+			<param name="posx" value="50"/>
+			<param name="posy" value="60"/>
+			<param name="width" value="270"/>
+			<param name="posx2" value="25"/>
+		  </include>
 	  </control>
 	</focusedlayout>
   </include>
-  
+  	
   <include name="MoviesShortcutsCommons0" description="מדף סרטים/סדרות7">
 	<posx>40</posx>
-    <posy>90</posy>
+    <posy>125</posy>
     <width>1830</width>
     <height>500</height>
     <orientation>horizontal</orientation>
+	<include>Animation_WidgetPosition</include>
     <itemlayout height="350" width="260">
       <control type="group">
+		  <animation condition="true" effect="fade" start="80" end="80" time="0">Conditional</animation>
 		  <include>Fade10</include>
-		  <control type="image" description="תמונה לא נבחר">
-		    <posx>10</posx>
-		    <posy>60</posy>
-		    <width>250</width>
-		    <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb</include>
-		    <texture>$INFO[ListItem.Thumb]</texture>
-		  </control>
-		  <control type="image" description="צללית">
-		    <posx>10</posx>
-            <posy>60</posy>
-            <width>250</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_shadow</include>
-            <texture>buttons/effects/shadow0.png</texture>
-		    <visible>Skin.HasSetting(ShadowButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-          </control>
-		  <control type="image" description="שקופית">
-            <posx>10</posx>
-            <posy>60</posy>
-            <width>250</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
-            <texture>buttons/effects/gardient0.png</texture>
-		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
-          </control>
-		  <control type="image" description="שפוע Bevel">
-            <posx>10</posx>
-            <posy>60</posy>
-            <width>250</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_bevel</include>
-            <texture border="-10" diffuse="buttons/ButtonA0.png">buttons/effects/bevel0.png</texture>
-		    <visible>!Skin.HasSetting(BevelButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-          </control>
-		  <control type="image" description="מסגרת (Stroke)">
-		    <posx>10</posx>
-            <posy>60</posy>
-            <width>250</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_stroke</include>
-		    <texture diffuse="buttons/ButtonA0.png">buttons/effects/stroke0.png</texture>
-		    <visible>Skin.HasSetting(StrokeButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-		  </control>
-		  <control type="image" description="OFF">
-		    <aspectratio>keep</aspectratio>
-		    <height>200</height>
-		    <posx>15</posx>
-		    <posy>120</posy>
-		    <texture>misc/help/off.png</texture>
-		    <visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
-			<visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
-			<visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			<visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
-			<visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
-		    <width>250</width>
-          </control>
-		  <control type="image" description="דירוג">
-		    <animation condition="true" effect="rotate" end="-90" center="350,140" time="0">Conditional</animation>
-		    <aspectratio align="center">keep</aspectratio>
-		    <height>140</height>
-		    <posx>240</posx>   <!--למעלה/למטה-->
-		    <posy>390</posy>   <!--שמאלה/ימינה-->
-		    <texture>$VAR[TopVideoInformation3]</texture>
-		    <visible>!String.IsEmpty(Control.GetLabel(1103))</visible>
-		    <visible>false</visible>
-		    <width>170</width>
-		  </control>
-		  <control type="label" description="שנה">
-		    <align>center</align>
-		    <label>$INFO[ListItem.Property(year)]</label>   <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-		    <font>size28</font>
-		    <height>30</height>
-		    <posx>57</posx>
-		    <posy>-2</posy>
-		    <textcolor>white2</textcolor>
-		    <visible>!String.IsEmpty(ListItem.Property(year))</visible>
-		    <visible>false</visible>
-		    <width>265</width>
-		  </control>
-		  <control type="group" description="עונה ופרק">
-			<animation condition="Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="60" end="60" time="0">Conditional</animation>
-		    <animation condition="!Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="90" end="90" time="0">Conditional</animation>
-			<posx>10</posx>
-			<posy>360</posy>
-			<control type="image" description="שחור">
-			  <height>30</height>
-			  <posx>0</posx>
-			  <width>250</width>
-			  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
-		      <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
-		      <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
-		      <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_black</include>
-		      <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
-		      <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
-			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-			  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
-			</control>
-			<control type="label" description="עונה ופרק">
-			  <align>center</align>
-			  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-			  <font>size28</font>
-			  <height>30</height>
-			  <posx>0</posx>
-			  <width>250</width>
-			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-			  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
-			</control>
-			<control type="label" description="כותרת">
-			  <align>center</align>
-			  <label>$VAR[WidgetLabel]</label>
-			  <font>size18</font>
-			  <height>30</height>
-			  <posx>0</posx>
-			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-			  <shadowcolor>black</shadowcolor>
-			  <scroll>false</scroll>
-			  <width>250</width>
-			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
-			  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
-			</control>
-			<control type="label" description="כותרת מוגדלת">
-			  <align>center</align>
-			  <label>$VAR[WidgetLabel]</label>
-			  <font>size28</font>
-			  <height>30</height>
-			  <posx>0</posx>
-			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-			  <shadowcolor>black</shadowcolor>
-			  <scroll>false</scroll>
-			  <width>250</width>
-			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
-			  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
-			</control>
-		</control>
+		  <include content="WidgetDesign">
+		    <param name="height" value="330"/>
+			<param name="posx" value="10"/>
+			<param name="posy" value="60"/>
+			<param name="width" value="250"/>
+			<param name="posx2" value="15"/>
+		  </include>
       </control>
     </itemlayout>
     <focusedlayout height="350" width="260">
 	  <include>SetProperty_Widget</include>
 	  <control type="group">
-	      <animation condition="Control.HasFocus(312) + !Container(312).OnPrevious + !Container(312).OnNext | Control.HasFocus(311) + !Container(311).OnPrevious + !Container(311).OnNext" effect="fade" start="100" end="70" delay="5000" time="3000" reversible="false">Conditional</animation>
-		  <control type="image" description="רקע פאנארט">
-			<animation condition="Window.IsVisible(Home.xml) + [!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
-			<animation condition="Window.IsVisible(CustomHomeCustomizer.xml) + [!Container(50).Row(0) + !Container(50).Row(1) | Container(50).HasPrevious()]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
-			<visible>!Skin.HasSetting(background) + [Control.HasFocus(311) | Control.HasFocus(312)]</visible>
-			<include>Fade_BackgroundOverlay</include>
-			<animation effect="fade" time="1000">WindowOpen</animation>
-			<texture>$INFO[ListItem.Property(fanart)]</texture>
-			<height>1080</height>
-			<width>1920</width>
-			<visible>false</visible>
-		  </control>
-		  <control type="image" description="תמונה נבחר">
-			<posx>10</posx>
-			<posy>60</posy>
-			<width>250</width>
-			<height>330</height>
-			<include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb2</include>
-		    <texture>$INFO[ListItem.Thumb]</texture>
-		  </control>
-		  <control type="image" description="צללית">
-		    <posx>10</posx>
-            <posy>60</posy>
-            <width>250</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_shadow</include>
-            <texture diffuse="buttons/ButtonA0.png">buttons/effects/shadow0.png</texture>
-		    <visible>Skin.HasSetting(ShadowButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-          </control>
-		  <control type="image" description="שקופית">
-            <posx>10</posx>
-            <posy>60</posy>
-            <width>250</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
-            <texture diffuse="buttons/ButtonA0.png">buttons/effects/gardient0.png</texture>
-		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
-          </control>
-		  <control type="image" description="שפוע Bevel">
-            <posx>10</posx>
-            <posy>60</posy>
-            <width>250</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_bevel</include>
-            <texture diffuse="buttons/ButtonA0.png">buttons/effects/bevel0.png</texture>
-		    <visible>!Skin.HasSetting(BevelButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-          </control>
-		  <control type="image" description="מסגרת (Stroke)">
-		    <posx>10</posx>
-            <posy>60</posy>
-            <width>250</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_stroke</include>
-		    <texture diffuse="buttons/ButtonA0.png">buttons/effects/stroke0.png</texture>
-		    <visible>Skin.HasSetting(StrokeButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-		  </control>
-		  <control type="image" description="OFF">
-			  <aspectratio>keep</aspectratio>
-			  <height>200</height>
-			  <posx>15</posx>
-			  <posy>120</posy>
-			  <texture>misc/help/off.png</texture>
-			  <visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
-			  <visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
-			  <visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			  <visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
-			  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
-			  <width>250</width>
-          </control>
-		  <control type="group" description="קבוצה כותרות">
-			<!--<include>Fade3</include>-->
-			<control type="image" description="קדימון">
-			  <height>70</height>		
-			  <posx>285</posx>
-			  <posy>0</posy>
-			  <texture>osd/buttons/OSDTrailerNF.png</texture>
-			  <visible>!String.IsEmpty(ListItem.Property(trailer)) + !Skin.HasSetting(trailers)</visible>
-			  <width>70</width>
-			  <visible>false</visible>
-			</control>
-			<control type="image" description="קדימון">
-			  <height>70</height>		
-			  <posx>285</posx>
-			  <posy>0</posy>
-			  <texture>osd/buttons/OSDTrailerFO.png</texture>
-			  <visible>!String.IsEmpty(ListItem.Property(trailer)) + Skin.HasSetting(trailers)</visible>
-			  <width>70</width>
-			</control>
-			<control type="image" description="דירוג">
-			  <animation condition="true" effect="rotate" end="-90" center="350,140" time="0">Conditional</animation>
-			  <aspectratio align="center">keep</aspectratio>
-			  <height>140</height>
-			  <posx>240</posx> <!--למעלה/למטה-->
-			  <posy>390</posy> <!--שמאלה/ימינה-->
-			  <texture>$VAR[TopVideoInformation3]</texture>
-			  <visible>!String.IsEmpty(Listitem.Property(rating)) + Integer.IsGreater(Listitem.Property(rating),0) + Integer.IsLess(Listitem.Property(rating),9.9)</visible>
-			  <visible>false</visible>
-			  <width>170</width>
-			</control>
-			<control type="group" description="עונה ופרק">
-				<animation condition="Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="60" end="60" time="0">Conditional</animation>
-		        <animation condition="!Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="90" end="90" time="0">Conditional</animation>
-				<posx>10</posx>
-				<posy>360</posy>
-				<control type="image" description="שחור">
-				  <height>30</height>
-				  <posx>0</posx>
-				  <width>250</width>
-				  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
-				  <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
-				  <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
-				  <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_black</include>
-				  <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
-				  <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
-				  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-				  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
-				</control>
-				<control type="label" description="עונה ופרק">
-				  <align>center</align>
-				  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-				  <font>size28</font>
-				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
-				  <height>30</height>
-				  <posx>0</posx>
-				  <width>250</width>
-				  <textcolor>white2</textcolor>
-				  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
-				</control>
-				<control type="label" description="כותרת">
-				  <align>center</align>
-				  <label>$VAR[WidgetLabel]</label>
-				  <font>size18</font>
-				  <height>30</height>
-				  <posx>0</posx>
-				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
-				  <shadowcolor>black</shadowcolor>
-				  <scroll>false</scroll>
-				  <width>250</width>
-				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
-				  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
-				</control>
-				<control type="label" description="כותרת מוגדלת">
-				  <align>center</align>
-				  <label>$VAR[WidgetLabel]</label>
-				  <font>size28</font>
-				  <height>30</height>
-				  <posx>0</posx>
-				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
-				  <shadowcolor>black</shadowcolor>
-				  <scroll>false</scroll>
-				  <width>250</width>
-				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
-				  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
-				</control>
-			</control>
-		  </control>
+		  <animation condition="Control.HasFocus(312) + !Container(312).OnPrevious + !Container(312).OnNext | Control.HasFocus(311) + !Container(311).OnPrevious + !Container(311).OnNext" effect="fade" start="100" end="70" delay="5000" time="3000" reversible="false">Conditional</animation>
+		  <include content="WidgetDesign">
+		    <param name="focus" value="true"/>
+			<param name="height" value="330"/>
+			<param name="posx" value="10"/>
+			<param name="posy" value="60"/>
+			<param name="width" value="250"/>
+			<param name="posx2" value="15"/>
+		  </include>
 		  <control type="image" description="סמן בחירה">
-			<posx>10</posx>
-			<posy>60</posy>
-			<width>250</width>
-			<height>330</height>
+			<posx>5</posx>
+			<posy>57</posy>
+			<width>258</width>
+			<height>337</height>
 			<texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		    <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | String.IsEmpty(ListItem.Label)]]</visible>
-		    <visible>!String.IsEmpty(Window(home).Property(WidgetButton.ID_)) | Control.IsVisible(311) | Control.IsVisible(312)</visible>
+		    <visible>Skin.HasSetting(SelectionMarker) | Window.IsVisible(CustomHomeCustomizer.xml)</visible>
+		    <visible>!String.IsEmpty(Window(home).Property(WidgetButton.ID_)) | Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(316)</visible>
 		  </control>
 	  </control>
 	</focusedlayout>
@@ -1082,366 +592,44 @@
   
   <include name="MoviesShortcutsCommons1" description="מדף סרטים/סדרות9">
 	<posx>40</posx>
-    <posy>90</posy>
+    <posy>125</posy>
     <width>1838</width>
     <height>500</height>
     <orientation>horizontal</orientation>
+	<include>Animation_WidgetPosition</include>
     <itemlayout height="350" width="202">
       <control type="group">
+		  <animation condition="true" effect="fade" start="80" end="80" time="0">Conditional</animation>
 		  <include>Fade10</include>
-		  <control type="image" description="תמונה לא נבחר">
-		    <posx>10</posx>
-		    <posy>60</posy>
-		    <width>220</width>
-		    <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb</include>
-		    <texture>$INFO[ListItem.Thumb]</texture>
-		  </control>
-		  <control type="image" description="צללית">
-		    <posx>10</posx>
-            <posy>60</posy>
-            <width>220</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_shadow</include>
-            <texture>buttons/effects/shadow0.png</texture>
-		    <visible>Skin.HasSetting(ShadowButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-          </control>
-		  <control type="image" description="שקופית">
-            <posx>10</posx>
-            <posy>60</posy>
-            <width>220</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
-            <texture>buttons/effects/gardient0.png</texture>
-		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
-          </control>
-		  <control type="image" description="שפוע Bevel">
-            <posx>10</posx>
-            <posy>60</posy>
-            <width>220</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_bevel</include>
-            <texture border="-10" diffuse="buttons/ButtonA0.png">buttons/effects/bevel0.png</texture>
-		    <visible>!Skin.HasSetting(BevelButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-          </control>
-		  <control type="image" description="מסגרת (Stroke)">
-		    <posx>10</posx>
-            <posy>60</posy>
-            <width>220</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_stroke</include>
-		    <texture diffuse="buttons/ButtonA0.png">buttons/effects/stroke0.png</texture>
-		    <visible>Skin.HasSetting(StrokeButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-		  </control>
-		  <control type="image" description="OFF">
-		    <aspectratio>keep</aspectratio>
-		    <height>200</height>
-		    <posx>5</posx>
-		    <posy>120</posy>
-		    <texture>misc/help/off.png</texture>
-		    <visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
-			<visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
-			<visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			<visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
-			<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
-		    <width>250</width>
-          </control>
-		  <control type="image" description="דירוג">
-		    <animation condition="true" effect="rotate" end="-90" center="350,140" time="0">Conditional</animation>
-		    <aspectratio align="center">keep</aspectratio>
-		    <height>140</height>
-		    <posx>240</posx>   <!--למעלה/למטה-->
-		    <posy>390</posy>   <!--שמאלה/ימינה-->
-		    <texture>$VAR[TopVideoInformation3]</texture>
-		    <visible>!String.IsEmpty(Control.GetLabel(1103))</visible>
-		    <visible>false</visible>
-		    <width>170</width>
-		  </control>
-		  <control type="label" description="שנה">
-		    <align>center</align>
-		    <label>$INFO[ListItem.Property(year)]</label>   <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-		    <font>size28</font>
-		    <height>30</height>
-		    <posx>57</posx>
-		    <posy>-2</posy>
-		    <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-		    <visible>!String.IsEmpty(ListItem.Property(year))</visible>
-		    <visible>false</visible>
-		    <width>265</width>
-		  </control>
-		  <control type="group" description="עונה ופרק">
-			<animation condition="Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="60" end="60" time="0">Conditional</animation>
-		    <animation condition="!Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="90" end="90" time="0">Conditional</animation>
-			<posx>10</posx>
-			<posy>360</posy>
-			<control type="image" description="שחור">
-			  <height>30</height>
-			  <posx>0</posx>
-			  <width>220</width>
-			  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
-		      <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
-		      <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
-		      <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_black</include>
-		      <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
-		      <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
-			  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-			  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
-			</control>
-			<control type="label" description="עונה ופרק">
-			  <align>center</align>
-			  <label>$INFO[ListItem.Property(se)]</label>
-			  <font>size28</font>
-			  <height>30</height>
-			  <posx>0</posx>
-			  <width>220</width>
-			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-			  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
-			</control>
-			<control type="label" description="כותרת">
-			  <align>center</align>
-			  <label>$VAR[WidgetLabel]</label>
-			  <font>size18</font>
-			  <height>30</height>
-			  <posx>0</posx>
-			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-			  <shadowcolor>black</shadowcolor>
-			  <scroll>false</scroll>
-			  <width>220</width>
-			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
-			  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
-			</control>
-			<control type="label" description="כותרת מוגדלת">
-			  <align>center</align>
-			  <label>$VAR[WidgetLabel]</label>
-			  <font>size28</font>
-			  <height>30</height>
-			  <posx>0</posx>
-			  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
-			  <shadowcolor>black</shadowcolor>
-			  <scroll>false</scroll>
-			  <width>220</width>
-			  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
-			  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
-			</control>
-		</control>
+		  <include content="WidgetDesign">
+			<param name="height" value="330"/>
+			<param name="posx" value="10"/>
+			<param name="posy" value="60"/>
+			<param name="width" value="220"/>
+			<param name="posx2" value="5"/>
+		  </include>
       </control>
     </itemlayout>
     <focusedlayout height="350" width="240">
 	  <include>SetProperty_Widget</include>
 	  <control type="group">
 	      <animation condition="Control.HasFocus(312) + !Container(312).OnPrevious + !Container(312).OnNext | Control.HasFocus(311) + !Container(311).OnPrevious + !Container(311).OnNext" effect="fade" start="100" end="70" delay="5000" time="3000" reversible="false">Conditional</animation>
-		  <control type="image" description="רקע פאנארט">
-			<animation condition="Window.IsVisible(Home.xml) + [!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
-			<animation condition="Window.IsVisible(CustomHomeCustomizer.xml) + [!Container(50).Row(0) + !Container(50).Row(1) | Container(50).HasPrevious()]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
-			<visible>!Skin.HasSetting(background) + [Control.HasFocus(311) | Control.HasFocus(312)]</visible>
-			<include>Fade_BackgroundOverlay</include>
-			<animation effect="fade" time="1000">WindowOpen</animation>
-			<texture>$INFO[ListItem.Property(fanart)]</texture>
-			<height>1080</height>
-			<width>1920</width>
-			<visible>false</visible>
-		  </control>
-		  <control type="image" description="תמונה נבחר">
-			<posx>10</posx>
-			<posy>60</posy>
-			<width>220</width>
-			<height>330</height>
-			<include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb2</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb2</include>
-		    <texture>$INFO[ListItem.Thumb]</texture>
-		  </control>
-		  <control type="image" description="צללית">
-		    <posx>10</posx>
-            <posy>60</posy>
-            <width>220</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_shadow</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_shadow</include>
-            <texture diffuse="buttons/ButtonA0.png">buttons/effects/shadow0.png</texture>
-		    <visible>Skin.HasSetting(ShadowButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-          </control>
-		  <control type="image" description="שקופית">
-            <posx>10</posx>
-            <posy>60</posy>
-            <width>220</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
-            <texture diffuse="buttons/ButtonA0.png">buttons/effects/gardient0.png</texture>
-		    <visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
-          </control>
-		  <control type="image" description="שפוע Bevel">
-            <posx>10</posx>
-            <posy>60</posy>
-            <width>220</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_bevel</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_bevel</include>
-            <texture diffuse="buttons/ButtonA0.png">buttons/effects/bevel0.png</texture>
-		    <visible>!Skin.HasSetting(BevelButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-          </control>
-		  <control type="image" description="מסגרת (Stroke)">
-		    <posx>10</posx>
-            <posy>60</posy>
-            <width>220</width>
-            <height>330</height>
-		    <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_stroke</include>
-		    <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_stroke</include>
-		    <texture diffuse="buttons/ButtonA0.png">buttons/effects/stroke0.png</texture>
-		    <visible>Skin.HasSetting(StrokeButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
-		  </control>
-		  <control type="image" description="OFF">
-			  <aspectratio>keep</aspectratio>
-			  <height>200</height>
-			  <posx>5</posx>
-			  <posy>120</posy>
-			  <texture>misc/help/off.png</texture>
-			  <visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
-			  <visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
-			  <visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
-			  <visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
-			  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
-			  <width>250</width>
-          </control>
-		  <control type="group" description="קבוצה כותרות">
-			<!--<include>Fade3</include>-->
-			<control type="image" description="קדימון">
-			  <height>70</height>		
-			  <posx>285</posx>
-			  <posy>0</posy>
-			  <texture>osd/buttons/OSDTrailerNF.png</texture>
-			  <visible>!String.IsEmpty(ListItem.Property(trailer)) + !Skin.HasSetting(trailers)</visible>
-			  <width>70</width>
-			  <visible>false</visible>
-			</control>
-			<control type="image" description="קדימון">
-			  <height>70</height>		
-			  <posx>285</posx>
-			  <posy>0</posy>
-			  <texture>osd/buttons/OSDTrailerFO.png</texture>
-			  <visible>!String.IsEmpty(ListItem.Property(trailer)) + Skin.HasSetting(trailers)</visible>
-			  <width>70</width>
-			</control>
-			<control type="image" description="דירוג">
-			  <animation condition="true" effect="rotate" end="-90" center="350,140" time="0">Conditional</animation>
-			  <aspectratio align="center">keep</aspectratio>
-			  <height>140</height>
-			  <posx>240</posx> <!--למעלה/למטה-->
-			  <posy>390</posy> <!--שמאלה/ימינה-->
-			  <texture>$VAR[TopVideoInformation3]</texture>
-			  <visible>!String.IsEmpty(Listitem.Property(rating)) + Integer.IsGreater(Listitem.Property(rating),0) + Integer.IsLess(Listitem.Property(rating),9.9)</visible>
-			  <visible>false</visible>
-			  <width>170</width>
-			</control>
-			<control type="group" description="עונה ופרק">
-				<animation condition="Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="60" end="60" time="0">Conditional</animation>
-		        <animation condition="!Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="90" end="90" time="0">Conditional</animation>
-				<posx>10</posx>
-				<posy>360</posy>
-				<control type="image" description="שחור">
-				  <height>30</height>
-				  <posx>0</posx>
-				  <width>220</width>
-				  <include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
-				  <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
-				  <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
-				  <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_black</include>
-				  <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
-				  <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>
-				  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-				  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
-				</control>
-				<control type="label" description="עונה ופרק">
-				  <align>center</align>
-				  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
-				  <font>size28</font>
-				  <height>30</height>
-				  <posx>0</posx>
-				  <width>220</width>
-				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
-				  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
-				</control>
-				<control type="label" description="כותרת">
-				  <align>center</align>
-				  <label>$VAR[WidgetLabel]</label>
-				  <font>size18</font>
-				  <height>30</height>
-				  <posx>0</posx>
-				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
-				  <shadowcolor>black</shadowcolor>
-				  <scroll>false</scroll>
-				  <width>220</width>
-				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
-				  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
-				</control>
-				<control type="label" description="כותרת מוגדלת">
-				  <align>center</align>
-				  <label>$VAR[WidgetLabel]</label>
-				  <font>size28</font>
-				  <height>30</height>
-				  <posx>0</posx>
-				  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
-				  <shadowcolor>black</shadowcolor>
-				  <scroll>false</scroll>
-				  <width>220</width>
-				  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
-				  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
-				</control>
-			</control>
-		  </control>
+		  <include content="WidgetDesign">
+		    <param name="focus" value="true"/>
+		    <param name="height" value="330"/>
+			<param name="posx" value="10"/>
+			<param name="posy" value="60"/>
+			<param name="width" value="220"/>
+			<param name="posx2" value="5"/>
+		  </include>
 		  <control type="image" description="סמן בחירה">
-			<posx>10</posx>
-			<posy>60</posy>
-			<width>220</width>
-			<height>330</height>
+			<posx>5</posx>
+			<posy>57</posy>
+			<width>228</width>
+			<height>338</height>
 			<texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
 		    <visible>Skin.HasSetting(SelectionMarker) | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | String.IsEmpty(ListItem.Label)]]</visible>
-		    <visible>!String.IsEmpty(Window(home).Property(WidgetButton.ID_)) | Control.IsVisible(311) | Control.IsVisible(312)</visible>
+		    <visible>!String.IsEmpty(Window(home).Property(WidgetButton.ID_)) | Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(316)</visible>
 		  </control>
 	  </control>
 	</focusedlayout>
@@ -1450,7 +638,241 @@
   <variable name="WidgetLabel">
     <value condition="!String.IsEmpty(ListItem.Property(title)) + Control.IsVisible(311)">$INFO[ListItem.Property(title)]</value>
     <value condition="!String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
-	
   </variable>
+  
+  <include name="WidgetDesign" description="Layouts">
+	<param name="focus" default="false"/>
+	<param name="height" default="0"/>
+	<param name="posx" default="0"/>
+	<param name="posy" default="0"/>
+	<param name="width" default="0"/>
+	<param name="posx2" default="0"/>
+	<definition>
+	  <control type="image" description="תמונה לא נבחר">
+		<include>BorderFrame</include>
+		<posx>$PARAM[posx]</posx>
+		<posy>$PARAM[posy]</posy>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<texture>$INFO[ListItem.Thumb]</texture>
+		<visible>!Skin.HasSetting(ButtonsDesignWidget)</visible>
+	  </control>
+	  <control type="image" description="תמונה לא נבחר">
+		<posx>$PARAM[posx]</posx>
+		<posy>$PARAM[posy]</posy>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_thumb</include>
+		<include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_thumb</include>
+		<include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_thumb</include>
+		<include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_thumb</include>
+		<include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_thumb</include>
+		<include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_thumb</include>
+		<texture>$INFO[ListItem.Thumb]</texture>
+		<visible>Skin.HasSetting(ButtonsDesignWidget)</visible>
+	  </control>
+	  <control type="image" description="צללית">
+		<posx>$PARAM[posx]</posx>
+		<posy>$PARAM[posy]</posy>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_shadow</include>
+		<include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_shadow</include>
+		<include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_shadow</include>
+		<include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_shadow</include>
+		<include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_shadow</include>
+		<include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_shadow</include>
+		<texture>buttons/effects/shadow0.png</texture>
+		<visible>Skin.HasSetting(ShadowButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
+	  </control>
+	  <control type="image" description="שקופית">
+		<posx>$PARAM[posx]</posx>
+		<posy>$PARAM[posy]</posy>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_gardient</include>
+		<include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_gardient</include>
+		<include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_gardient</include>
+		<include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_gardient</include>
+		<include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_gardient</include>
+		<include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_gardient</include>
+		<texture>buttons/effects/gardient0.png</texture>
+		<visible>!Skin.HasSetting(OverlayButton) + Skin.HasSetting(ButtonsDesignWidget) | String.IsEmpty(ListItem.Thumb)</visible>
+	  </control>
+	  <control type="image" description="שפוע Bevel">
+		<posx>$PARAM[posx]</posx>
+		<posy>$PARAM[posy]</posy>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_bevel</include>
+		<include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_bevel</include>
+		<include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_bevel</include>
+		<include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_bevel</include>
+		<include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_bevel</include>
+		<include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_bevel</include>
+		<texture border="-10" diffuse="buttons/ButtonA0.png">buttons/effects/bevel0.png</texture>
+		<visible>!Skin.HasSetting(BevelButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
+	  </control>
+	  <control type="image" description="מסגרת (Stroke)">
+		<posx>$PARAM[posx]</posx>
+		<posy>$PARAM[posy]</posy>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_stroke</include>
+		<include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_stroke</include>
+		<include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_stroke</include>
+		<include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_stroke</include>
+		<include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_stroke</include>
+		<include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_stroke</include>
+		<texture diffuse="buttons/ButtonA0.png">buttons/effects/stroke0.png</texture>
+		<visible>Skin.HasSetting(StrokeButton) + Skin.HasSetting(ButtonsDesignWidget)</visible>
+	  </control>
+	  <control type="image" description="OFF">
+		<aspectratio>keep</aspectratio>
+		<height>200</height>
+		<posx>$PARAM[posx2]</posx>
+		<posy>120</posy>
+		<texture>misc/help/off.png</texture>
+		<visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
+		<visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
+		<visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
+		<visible>![String.IsEqual(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
+		<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
+		<visible>!Control.IsVisible(316)</visible>
+		<width>$PARAM[width]</width>
+	  </control>
+	  <control type="image" description="דירוג">
+		<bordertexture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</bordertexture>
+	    <bordersize>2</bordersize>
+		<height>28</height>
+		<posx>12</posx>
+		<posy>62</posy>
+		<animation decription="תצורה-5" condition="!Skin.String(WidgetDesign)" effect="slide" start="0,0" end="40,0">Conditional</animation>
+		
+		<animation decription="צורות-ברירת מחדל" condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)" effect="slide" start="0,0" end="25,9">Conditional</animation>
+		<animation decription="צורות-ריבועים" condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)" effect="slide" start="0,0" end="2,9">Conditional</animation>
+		<animation decription="צורות-עיגולים" condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)" effect="zoom" center="185,110" start="0,0" end="60,60">Conditional</animation>
+		<animation decription="" condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)" effect="slide" start="0,0" end="100,0">Conditional</animation>
+		<animation decription="" condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)" effect="slide" start="0,0" end="100,0">Conditional</animation>
+		<animation decription="צורות-משושים" condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)" effect="zoom" center="335,110" start="0,0" end="83,83">Conditional</animation>
+		<texture background="true" colordiffuse="$VAR[TopVideoInformationFontColor]">$INFO[ListItem.Property(rating),badges/rating/10/,.png]</texture>
+		<width>125</width>
+		<visible>!IsEmpty(ListItem.Property(rating)) + Integer.IsGreater(ListItem.Property(rating),0)</visible>
+		<visible>Skin.HasSetting(WidgetRating)</visible>
+	  </control>
+	  <control type="label" description="שנה">
+		<align>center</align>
+		<label>$INFO[ListItem.Property(year)]</label>   <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+		<font>size28</font>
+		<height>30</height>
+		<posx>57</posx>
+		<posy>-2</posy>
+		<textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
+		<visible>!String.IsEmpty(ListItem.Property(year))</visible>
+		<visible>false</visible>
+		<width>265</width>
+	  </control>
+	  
+	  <control type="group" description="עונה ופרק">
+		<animation condition="Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="60" end="60" time="0">Conditional</animation>
+		<animation condition="!Skin.HasSetting(ButtonsDesignWidget)" effect="fade" start="90" end="90" time="0">Conditional</animation>
+		<posx>$PARAM[posx]</posx>
+		<posy>360</posy>
+		<control type="image" description="שחור">
+		  <aspectratio align="top">stretch</aspectratio>
+		  <height>30</height>
+		  <posx>0</posx>
+		  <width>$PARAM[width]</width>
+		  <!--<include condition="!Skin.String(ButtonsDesign) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign_black</include>
+		  <include condition="Skin.String(ButtonsDesign,0) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign0_black</include>
+		  <include condition="Skin.String(ButtonsDesign,1) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign1_black</include>
+		  <include condition="Skin.String(ButtonsDesign,2) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign2_black</include>
+		  <include condition="Skin.String(ButtonsDesign,3) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign3_black</include>
+		  <include condition="Skin.String(ButtonsDesign,4) + Skin.HasSetting(ButtonsDesignWidget)">ButtonsDesign4_black</include>-->
+		  <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
+		  <visible>!Skin.HasSetting(WidgetLabelBackground) + !String.IsEmpty(ListItem.Label)</visible>
+		</control>
+		<control type="label" description="עונה ופרק">
+		  <align>center</align>
+		  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+		  <font>size28</font>
+		  <posx>0</posx>
+		  <height>30</height>
+		  <width>$PARAM[width]</width>
+		  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
+		  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
+		  <visible>!$PARAM[focus]</visible>
+		</control>
+		<control type="label" description="כותרת">
+		  <align>center</align>
+		  <label>$VAR[WidgetLabel]</label>
+		  <font>size18</font>
+		  <height>30</height>
+		  <posx>0</posx>
+		  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
+		  <shadowcolor>black</shadowcolor>
+		  <scroll>false</scroll>
+		  <width>$PARAM[width]</width>
+		  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+		  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
+		  <visible>!$PARAM[focus]</visible>
+		</control>
+		<control type="label" description="כותרת מוגדלת">
+		  <align>center</align>
+		  <label>$VAR[WidgetLabel]</label>
+		  <font>size28</font>
+		  <height>30</height>
+		  <posx>0</posx>
+		  <textcolor>$VAR[WidgetUnFocusFontColor]</textcolor>
+		  <shadowcolor>black</shadowcolor>
+		  <scroll>false</scroll>
+		  <width>$PARAM[width]</width>
+		  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+		  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
+		  <visible>!$PARAM[focus]</visible>
+		</control>
+		
+		<control type="label" description="עונה ופרק">
+		  <align>center</align>
+		  <label>$INFO[ListItem.Property(se)]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+		  <font>size28</font>
+		  <posx>0</posx>
+		  <height>30</height>
+		  <width>$PARAM[width]</width>
+		  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
+		  <visible>!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)</visible>
+		  <visible>$PARAM[focus]</visible>
+		</control>
+		<control type="label" description="כותרת">
+		  <align>center</align>
+		  <label>$VAR[WidgetLabel]</label>
+		  <font>size18</font>
+		  <height>30</height>
+		  <posx>0</posx>
+		  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
+		  <shadowcolor>black</shadowcolor>
+		  <scroll>false</scroll>
+		  <width>$PARAM[width]</width>
+		  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+		  <visible>!Skin.HasSetting(BiggerWidgetLabels)</visible>
+		  <visible>$PARAM[focus]</visible>
+		</control>
+		<control type="label" description="כותרת מוגדלת">
+		  <align>center</align>
+		  <label>$VAR[WidgetLabel]</label>
+		  <font>size28</font>
+		  <height>30</height>
+		  <posx>0</posx>
+		  <textcolor>$VAR[WidgetFocusFontColor]</textcolor>
+		  <shadowcolor>black</shadowcolor>
+		  <scroll>false</scroll>
+		  <width>$PARAM[width]</width>
+		  <visible>![!String.IsEmpty(ListItem.Property(se)) + Control.IsVisible(312)]</visible>
+		  <visible>Skin.HasSetting(BiggerWidgetLabels)</visible>
+		  <visible>$PARAM[focus]</visible>
+		</control>
+	  </control>
+	</definition>
+  </include>
   
 </includes>

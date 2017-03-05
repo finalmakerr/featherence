@@ -54,8 +54,8 @@
 	<height>40</height>		
 	<posx>430</posx>	      
 	<width>40</width>
-	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
-	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<texturefocus>osd/buttons/OSDTrailer_.png</texturefocus>
+	<texturenofocus colordiffuse="BBBBBBFF">osd/buttons/OSDTrailer_.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
 	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
@@ -107,8 +107,8 @@
 	<height>70</height>		
 	<posx>0</posx>	      
 	<width>70</width>
-	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
-	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<texturefocus>osd/buttons/OSDTrailer_.png</texturefocus>
+	<texturenofocus colordiffuse="BBBBBBFF">osd/buttons/OSDTrailer_.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
 	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
@@ -173,31 +173,31 @@
     <control type="button" description="קדימון סרט 0">
 	  <animation condition="String.IsEmpty(Container(54).ListItemPosition(0).Trailer) | String.IsEqual(Container(54).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(0)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(0)" effect="rotatey" center="auto" start="0" end="-10" delay="1000" time="720" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(0)" effect="rotatey" center="auto" start="0" end="-10" delay="1000" time="720" reversible="false">Conditional</animation>
 	  <include>Trailer_54_</include>
     </control>
 	<control type="button" description="קדימון סרט 1">
 	  <animation condition="String.IsEmpty(Container(54).ListItemPosition(1).Trailer)  | String.IsEqual(Container(54).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(1)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="-5" delay="1000" time="720" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="-5" delay="1000" time="720" reversible="false">Conditional</animation>
 	  <include>Trailer_54_</include>
     </control>
 	<control type="button" description="קדימון סרט 2">
 	  <animation condition="String.IsEmpty(Container(54).ListItemPosition(2).Trailer) | String.IsEqual(Container(54).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(2)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(2)" effect="rotatey" center="auto" start="0" end="0" delay="1000" time="720" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(2)" effect="rotatey" center="auto" start="0" end="0" delay="1000" time="720" reversible="false">Conditional</animation>
 	  <include>Trailer_54_</include>
     </control>
 	<control type="button" description="קדימון סרט 3">
 	  <animation condition="String.IsEmpty(Container(54).ListItemPosition(3).Trailer) | String.IsEqual(Container(54).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(3)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(3)" effect="rotatey" center="auto" start="0" end="5" delay="1000" time="720" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(3)" effect="rotatey" center="auto" start="0" end="5" delay="1000" time="720" reversible="false">Conditional</animation>
 	  <include>Trailer_54_</include>
     </control>
 	<control type="button" description="קדימון סרט 4">
 	  <animation condition="String.IsEmpty(Container(54).ListItemPosition(4).Trailer) | String.IsEqual(Container(54).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(54).Position(4)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(4)" effect="rotatey" center="auto" start="0" end="10" delay="1000" time="720" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(4)" effect="rotatey" center="auto" start="0" end="10" delay="1000" time="720" reversible="false">Conditional</animation>
 	  <include>Trailer_54_</include>
     </control>
   </include>
@@ -209,27 +209,27 @@
 	<posx>55</posx>
 	<posy>24</posy>
 	<width>70</width>
-	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
-	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<texturefocus>osd/buttons/OSDTrailer_.png</texturefocus>
+	<texturenofocus colordiffuse="BBBBBBFF">osd/buttons/OSDTrailer_.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
 	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
   </include>
   
   <include name="View54_Boat_Itemlayout_Animation">
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(0)" effect="rotatey" center="auto" start="0" end="10" time="220" reversible="false">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="5" time="220" reversible="false">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(2)" effect="rotatey" center="auto" start="0" end="0" time="220" reversible="false">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(3)" effect="rotatey" center="auto" start="0" end="-5" time="220" reversible="false">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(4)" effect="rotatey" center="auto" start="0" end="-10" time="220" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(0)" effect="rotatey" center="auto" start="0" end="10" time="220" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="5" time="220" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(2)" effect="rotatey" center="auto" start="0" end="0" time="220" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(3)" effect="rotatey" center="auto" start="0" end="-5" time="220" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(4)" effect="rotatey" center="auto" start="0" end="-10" time="220" reversible="false">Conditional</animation>
   </include>
   
   <include name="View54_Boat_Focuslayout_Animation">
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(0)" effect="rotatey" center="auto" start="0" end="-10" delay="1000" time="720" reversible="false">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="-5" delay="1000" time="720" reversible="false">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="0" delay="1000" time="720" reversible="false">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(3)" effect="rotatey" center="auto" start="0" end="5" delay="1000" time="720" reversible="false">Conditional</animation>
-	  <animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).Position(4)" effect="rotatey" center="auto" start="0" end="10" delay="1000" time="720" reversible="false">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(0)" effect="rotatey" center="auto" start="0" end="-10" delay="1000" time="720" reversible="true">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="-5" delay="1000" time="720" reversible="true">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="0" delay="1000" time="720" reversible="true">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(3)" effect="rotatey" center="auto" start="0" end="5" delay="1000" time="720" reversible="true">Conditional</animation>
+	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(4)" effect="rotatey" center="auto" start="0" end="10" delay="1000" time="720" reversible="true">Conditional</animation>
   </include>
   
   <include name="Trailer_57_">
@@ -239,8 +239,8 @@
 	<posx>55</posx>
 	<posy>24</posy>
 	<width>70</width>
-	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
-	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<texturefocus>osd/buttons/OSDTrailer_.png</texturefocus>
+	<texturenofocus colordiffuse="BBBBBBFF">osd/buttons/OSDTrailer_.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
 	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
@@ -436,8 +436,8 @@
 	<posx>55</posx>
 	<posy>24</posy>
 	<width>70</width>
-	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
-	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<texturefocus>osd/buttons/OSDTrailer_.png</texturefocus>
+	<texturenofocus colordiffuse="BBBBBBFF">osd/buttons/OSDTrailer_.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
 	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
@@ -506,8 +506,8 @@
 	<posx>55</posx>
 	<posy>24</posy>
 	<width>70</width>
-	<texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
-	<texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
+	<texturefocus>osd/buttons/OSDTrailer_.png</texturefocus>
+	<texturenofocus colordiffuse="BBBBBBFF">osd/buttons/OSDTrailer_.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
 	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
@@ -525,16 +525,16 @@
   
   <include name="Rating_">
     <control type="group" description="דירוג">
-	  <animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])" effect="zoom" center="60,-38" start="100,100" end="80,80" time="0">Conditional</animation>
-	  <!--<animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
-	  <animation condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31010])" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
+	  <animation condition="$EXP[View57] | $EXP[View59]" effect="zoom" center="60,-38" start="100,100" end="80,80" time="0">Conditional</animation>
+	  <!--<animation condition="$EXP[View51]" effect="zoom" center="1413,-30" start="100,100" end="80,80" time="0">Conditional</animation>-->
+	  <animation condition="$EXP[View51]" effect="zoom" center="-650,-127" start="100,100" end="68,68" time="0">Conditional</animation>
 	  <height>312</height>
 	  <posx>55</posx>
 	  <posy>37</posy>
 	  <width>135</width>	  
 	  <visible></visible>
 	  <visible>!String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(Show_Rating)</visible>
-	  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+	  <visible>$EXP[View57] | $EXP[View58] | $EXP[View54] | $EXP[View59]</visible>
 	  <control type="image" description="">
 		<animation condition="true" effect="fade" start="70" end="70" time="0">Conditional</animation>
 		<height>40</height>

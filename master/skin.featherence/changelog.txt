@@ -7,12 +7,56 @@ WIP - WORK IN PROGRESS
 ------------------------
 - ??Added option to hide Top Video Information on fullscreen video while skiping back/next.
 - Added option to disable the auto close of the video/audio OSD.
-- Added auto-build widget feature.
+- Increase maximum customised buttons by 10.
+- Added 8 different weather icons packages (Skin Settings).
+- Added option to choose highlight font color.
 
 ------------------------
 Featherence v0.7.2 (xx-Feb-17)
 ------------------------
 - Added DialogGameControllers window.
+- Added new category Add-in in skin settings (Easily install and manage Featherence's dependencies).
+- Minor bugs fix.
+
+Dialogues:
+- Major design update.
+- Minor update of some dialogues windows.
+- Position has been slightly improved.
+
+Home:
+- Major update of Vertical layout.
+
+Overall Design:
+- Added light black frame to every poster image.
+- Main Color now effect thumbnails border and fill them up when needed.
+- Major overall design updates (A lots of design prespective as been updated!).
+- Major update of Dialogs windows.
+- Major update trailers OSD buttons.
+
+Top Information Bar:
+- Added MPAA, Ratings and Votes to DialogVideoInfo window.
+- Added two more sizes for top information bar.
+- Icons are now auto trigger on idle in the position of the time information.
+- Major design update.
+- Video Information is now triggered only when there are enough info.
+
+Views:
+- Added Covers Distance and Full Fanart features to Line view.
+- Added Sliding/Fade Animation for some views.
+- Fade Animation is set to default for some views.
+- Major design update.
+
+Widget:
+- Added full genres support.
+- Added Super Widget feature. You may now assign a path for a button which will generate a complete dynamic widget.
+- Added Widget Position, Show Rating, Widget Shrink and Widget Fade features.
+- Added widget preview for easier configuration.
+- Major design update.
+- Major update of Widget animations and overall design.
+- Minor update of widget script.
+- Selected widget is more noticeable.
+- Widgets are now available during video playback (Size reduced!)
+
 
 ------------------------
 Featherence v0.7.1 (02-Feb-17)

@@ -24,7 +24,7 @@
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">Slide7</include>
 	  
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos48</include>
-      <height>525</height>
+      <height>529</height>
 	  <posx>1880</posx>
 	  <posy>340</posy>	  
 	  <width>480</width>
@@ -32,7 +32,7 @@
 			<param name="id" value="" />
 			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
-			<param name="height" value="570" />
+			<param name="height" value="574" />
 			<param name="posx" value="0" />
 			<param name="posy" value="-20" />
 			<param name="width" value="483" />
@@ -80,10 +80,10 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31829]</label>
-		  <selected>[String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])] + !Skin.HasSetting(ShowDVDCases) | [[String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] + Skin.HasSetting(ShowDVDCases2)]</selected>
-		  <onclick condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])">Skin.ToggleSetting(ShowDVDCases)</onclick>
-		  <onclick condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])">Skin.ToggleSetting(ShowDVDCases2)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+		  <selected>[$EXP[View57] | $EXP[View59]] + !Skin.HasSetting(ShowDVDCases) | [[$EXP[View50] | $EXP[View54] | $EXP[View58]] + Skin.HasSetting(ShowDVDCases2)]</selected>
+		  <onclick condition="$EXP[View57] | $EXP[View59]">Skin.ToggleSetting(ShowDVDCases)</onclick>
+		  <onclick condition="$EXP[View50] | $EXP[View54] | $EXP[View58]">Skin.ToggleSetting(ShowDVDCases2)</onclick>
+		  <visible>$EXP[View50] | $EXP[View57] | $EXP[View58] | $EXP[View54] | $EXP[View59]</visible>
         </control>
 		<control type="radiobutton" id="101" description="ShowDVDdisc">
           <include>SideMenuCommon</include>
@@ -101,8 +101,8 @@
 		  <font>size28</font>
 		  <label>$LOCALIZE[31806]</label>
 		  <selected>!Skin.HasSetting(ShowTopVideoInformation)</selected>
-		  <onclick condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])">Skin.ToggleSetting(ShowTopVideoInformation)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])</visible>
+		  <onclick condition="$EXP[View57] | $EXP[View58]">Skin.ToggleSetting(ShowTopVideoInformation)</onclick>
+		  <visible>$EXP[View57] | $EXP[View58]</visible>
         </control>
 		<control type="radiobutton" id="104" description="פאנארט מסך מלא">
           <include>SideMenuCommon</include>
@@ -110,11 +110,12 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[20445] $LOCALIZE[244]</label>
-		  <enable>[!Skin.HasSetting(ShowTopVideoInformation) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])] + !Skin.HasSetting(background2)</enable>
-		  <selected>[!String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + !Skin.HasSetting(FullFanartTopVideoInformation)] | [String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) + Skin.HasSetting(FullFanart59)]</selected>
-		  <onclick condition="!String.IsEqual(Container.Viewmode,$LOCALIZE[31016])">Skin.ToggleSetting(FullFanartTopVideoInformation)</onclick>
-		  <onclick condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31016])">Skin.ToggleSetting(FullFanart59)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+		  <enable>[!Skin.HasSetting(ShowTopVideoInformation) | $EXP[View59]] + !Skin.HasSetting(background2)</enable>
+		  <selected>[!$EXP[View59] + !$EXP[View54] + !Skin.HasSetting(FullFanartTopVideoInformation)] | [$EXP[View59] + Skin.HasSetting(FullFanart59)] | [$EXP[View54] + !Skin.HasSetting(FullFanart54)]</selected>
+		  <onclick condition="!$EXP[View59] + !$EXP[View54]">Skin.ToggleSetting(FullFanartTopVideoInformation)</onclick>
+		  <onclick condition="$EXP[View54]">Skin.ToggleSetting(FullFanart54)</onclick>
+		  <onclick condition="$EXP[View59]">Skin.ToggleSetting(FullFanart59)</onclick>
+		  <visible>$EXP[View57] | $EXP[View58] | $EXP[View54] | $EXP[View59]</visible>
         </control>
 		<control type="radiobutton" id="105" description="פאנארט מסך מלא - ZOOM OUT">
 		  <include>SideMenuCommon</include>
@@ -125,7 +126,7 @@
 		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(background2)</enable>
 		  <selected>Skin.HasSetting(FullFanartZoomOut)</selected>
 		  <onclick>Skin.ToggleSetting(FullFanartZoomOut)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])</visible> <!-- | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])-->
+		  <visible>$EXP[View57] | $EXP[View58]</visible> <!-- | $EXP[View59]-->
         </control>
 		<control type="button" id="106" description="שקיפות עטיפות">
 		  <include>SideMenuCommon</include>
@@ -133,7 +134,7 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31030]: $INFO[Skin.String(MoviesTVCoversOverlay)]</label>
-		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] | String.IsEqual(Container.Viewmode,$LOCALIZE[31015])</enable>
+		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] | $EXP[View54]</enable>
 		  <onclick condition="!Skin.String(MoviesTVCoversOverlay)">Skin.SetString(MoviesTVCoversOverlay, 100)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 100)">Skin.SetString(MoviesTVCoversOverlay, 95)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 95)">Skin.SetString(MoviesTVCoversOverlay, 90)</onclick>
@@ -147,7 +148,7 @@
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 30)">Skin.SetString(MoviesTVCoversOverlay, 20)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 20)">Skin.SetString(MoviesTVCoversOverlay, 10)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 10)">Skin.SetString(MoviesTVCoversOverlay, )</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+		  <visible>$EXP[View54] | $EXP[View57] | $EXP[View58] | $EXP[View59]</visible>
         </control>
 		<control type="radiobutton" id="107" description="SelectedZoom">
           <include>SideMenuCommon</include>
@@ -157,7 +158,7 @@
 		  <label>$LOCALIZE[31043]</label>
 		  <selected>!Skin.HasSetting(SelectedZoom)</selected>
 		  <onclick>Skin.ToggleSetting(SelectedZoom)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+		  <visible>$EXP[View54] | $EXP[View57] | $EXP[View58] | $EXP[View59]</visible>
         </control>
 		<control type="radiobutton" id="108" description="מסגרת בחירה">
           <include>SideMenuCommon</include>
@@ -167,7 +168,7 @@
 		  <label>$LOCALIZE[31044]</label>
 		  <selected>!Skin.HasSetting(SelectedFrame)</selected>
 		  <onclick>Skin.ToggleSetting(SelectedFrame)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+		  <visible>$EXP[View54] | $EXP[View57] | $EXP[View58] | $EXP[View59]</visible>
         </control>
 		<control type="radiobutton" id="109" description="תפריט רחב">
           <include>SideMenuCommon</include>
@@ -177,7 +178,7 @@
 		  <label>$LOCALIZE[31046]</label>
 		  <selected>!Skin.HasSetting(View50_Plus)</selected>
 		  <onclick>Skin.ToggleSetting(View50_Plus)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31011])</visible>
+		  <visible>$EXP[View50]</visible>
         </control>
 		<control type="radiobutton" id="110" description="פאנארט מסך מלא">
           <include>SideMenuCommon</include>
@@ -187,7 +188,7 @@
 		  <label>$LOCALIZE[20445] $LOCALIZE[244]</label>
 		  <selected>Skin.HasSetting(View50_Plus2)</selected>
 		  <onclick>Skin.ToggleSetting(View50_Plus2)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31011])</visible>
+		  <visible>$EXP[View50]</visible>
         </control>
 		<control type="radiobutton" id="111" description="אפשר פאנארט מפוסטר">
           <include>SideMenuCommon</include>
@@ -206,7 +207,7 @@
 		  <label>$LOCALIZE[31047]</label>
 		  <selected>!Skin.HasSetting(Show_Rating)</selected>
 		  <onclick>Skin.ToggleSetting(Show_Rating)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+		  <visible>$EXP[View54] | $EXP[View57] | $EXP[View58] | $EXP[View50] | $EXP[View59]</visible>
         </control>
 		<control type="button" id="113" description="שקיפות פאנארט">
 		  <include>SideMenuCommon</include>
@@ -228,7 +229,7 @@
 		  <onclick condition="Skin.String(Background2Overlay, 30)">Skin.SetString(Background2Overlay, 20)</onclick>
 		  <onclick condition="Skin.String(Background2Overlay, 20)">Skin.SetString(Background2Overlay, 10)</onclick>
 		  <onclick condition="Skin.String(Background2Overlay, 10)">Skin.SetString(Background2Overlay, )</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+		  <visible>$EXP[View57] | $EXP[View58] | $EXP[View59]</visible>
         </control>
 		<control type="radiobutton" id="114" description="תמונה גדולה">
           <include>SideMenuCommon</include>
@@ -238,7 +239,7 @@
 		  <label>$LOCALIZE[31469]</label>
 		  <selected>Skin.HasSetting(View50_BiggerIcon)</selected>
 		  <onclick>Skin.ToggleSetting(View50_BiggerIcon)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31011])</visible>
+		  <visible>$EXP[View50]</visible>
         </control>
 		<control type="radiobutton" id="115" description="מצב סירה">
           <include>SideMenuCommon</include>
@@ -248,7 +249,7 @@
 		  <label>$LOCALIZE[31472]</label>
 		  <selected>Skin.HasSetting(View54_Boat)</selected>
 		  <onclick>Skin.ToggleSetting(View54_Boat)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31015])</visible>
+		  <visible>$EXP[View54]</visible>
         </control>
 		<control type="radiobutton" id="116" description="הצג כפתור קדימון">
           <include>SideMenuCommon</include>
@@ -259,7 +260,7 @@
 		  <selected>!Skin.HasSetting(EnableTrailerButton)</selected>
 		  <onclick>Skin.ToggleSetting(EnableTrailerButton)</onclick>
 		  <visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[31012])</visible>
-		  <visible>![String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Skin.HasSetting(View54_Boat)]</visible>
+		  <visible>![$EXP[View54] + Skin.HasSetting(View54_Boat)]</visible>
 		  <visible>Container.Content(movies) | !String.IsEmpty(ListItem.Trailer)</visible>
         </control>
 		<control type="radiobutton" id="117" description="הצג פאנארט מתמונת פרק/עונה">
@@ -278,10 +279,10 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31506]</label>
-		  <selected>[String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(View51_SideVideoInformation)] | [String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(View50_SideVideoInformation)]</selected>
-		  <onclick condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31011])">Skin.ToggleSetting(View50_SideVideoInformation)</onclick>
-		  <onclick condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31010])">Skin.ToggleSetting(View51_SideVideoInformation)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31011])</visible>
+		  <selected>$EXP[View51s] | $EXP[View50s]</selected>
+		  <onclick condition="$EXP[View50]">Skin.ToggleSetting(View50_SideVideoInformation)</onclick>
+		  <onclick condition="$EXP[View51]">Skin.ToggleSetting(View51_SideVideoInformation)</onclick>
+		  <visible>$EXP[View51] | $EXP[View50]</visible>
         </control>
 		<control type="radiobutton" id="119" description="גודל גופן פרטי וידאו">
           <include>SideMenuCommon</include>
@@ -299,10 +300,12 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31518]</label>
-		  <selected>[String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])] + Skin.HasSetting(View57_Distance) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(View58_Distance)</selected>
-		  <onclick condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])">Skin.ToggleSetting(View57_Distance)</onclick>
-		  <onclick condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31014])">Skin.ToggleSetting(View58_Distance)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+		  <selected>$EXP[View57] + Skin.HasSetting(View57_Distance) | $EXP[View58] + Skin.HasSetting(View58_Distance) | $EXP[View59] + Skin.HasSetting(View59_Distance) | $EXP[View54] + Skin.HasSetting(View54_Distance)</selected>
+		  <onclick condition="$EXP[View57]">Skin.ToggleSetting(View57_Distance)</onclick>
+		  <onclick condition="$EXP[View59]">Skin.ToggleSetting(View59_Distance)</onclick>
+		  <onclick condition="$EXP[View58]">Skin.ToggleSetting(View58_Distance)</onclick>
+		  <onclick condition="$EXP[View54]">Skin.ToggleSetting(View54_Distance)</onclick>
+		  <visible>$EXP[View57] | $EXP[View58] | $EXP[View54] | $EXP[View59]</visible>
         </control>
 		<control type="radiobutton" id="125" description="הסתר פאנארט בזמן ניווט">
 		  <include>SideMenuCommon</include>
@@ -312,7 +315,7 @@
 		  <label>$LOCALIZE[31521]</label>
 		  <selected>Skin.HasSetting(HideFanartOnNav)</selected>
 		  <onclick>Skin.ToggleSetting(HideFanartOnNav)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])</visible>
+		  <visible>$EXP[View57] | $EXP[View58]</visible>
         </control>
 		<control type="radiobutton" id="126" description="אפשר אנימציית גלישה">
 		  <include>SideMenuCommon</include>
@@ -320,9 +323,9 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31525]</label>
-		  <selected>!Skin.HasSetting(SideVideoInformationAnimation)</selected>
+		  <selected>Skin.HasSetting(SideVideoInformationAnimation)</selected>
 		  <onclick>Skin.ToggleSetting(SideVideoInformationAnimation)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+		  <visible>$EXP[View51] | $EXP[View50] | $EXP[View59]</visible>
         </control>
 		<control type="button" id="127" description="יישור: ">
 		  <include>SideMenuCommon</include>
@@ -333,7 +336,7 @@
 		  <onclick condition="!Skin.String(View59Align)">Skin.SetString(View59Align,0)</onclick>
 		  <onclick description="en" condition="Skin.String(View59Align,0)">Skin.SetString(View59Align,1)</onclick>
 		  <onclick description="he" condition="Skin.String(View59Align,1)">Skin.SetString(View59Align,)</onclick>
-		  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+		  <visible>$EXP[View59]</visible>
         </control>
 	  </control>
 	  
@@ -484,6 +487,7 @@
     <control type="button">
 	  <animation condition="!String.IsEqual(System.Language,Hebrew)" effect="slide" start="0" end="1890">Conditional</animation>
 	  <visible allowhiddenfocus="false">![ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus() | ControlGroup(9002).HasFocus() | !String.IsEmpty(Window(home).Property(SideMenuUp))]</visible>
+	  <visible>!Window.IsVisible(SettingsSystemInfo.xml)</visible>
 	  <texturefocus colordiffuse="$VAR[ButtonFocusColor]">special://home/addons/script.featherence.service/resources/icons/settings.png</texturefocus>
       <texturenofocus colordiffuse="$VAR[ButtonUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/settings.png</texturenofocus>
 	  <height>40</height>
@@ -802,67 +806,14 @@
             </control>
         </focusedlayout>        		
 	  </control>
-	  <control type="grouplist" id="30" description="Button 5">
-		<animation condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
-		<posx>0</posx>
-	    <posy>520</posy>
-		<height>200</height>
-		<width>580</width>
-		<onleft>3</onleft>
-		<onright>3</onright>
-		<onup>6</onup>
-		<ondown>6</ondown>
-		<visible>Control.IsVisible(5) | Control.IsVisible(1265) | Control.IsVisible(1266) | Control.IsVisible(1267)</visible>
-		<control type="button" id="5" description="Manual Get more button">
-			<width>580</width>
-			<include condition="true">LabelL1</include>
-			<height>66</height>
-			<label>-</label>
-			<textoffsetx>45</textoffsetx>
-		</control>
-		<control type="button" id="7" description="Cancel">
-			<width>580</width>
-			<include condition="true">LabelL1</include>
-			<height>66</height>
-			<label>-</label>
-			<textoffsetx>45</textoffsetx>
-		</control>
-		<control type="button" id="1265" description="עוד...">
-			<width>580</width>
-			<include condition="true">LabelL1</include>
-			<font>size28</font>
-			<height>66</height>
-			<label>$LOCALIZE[22082]</label>
-			<onclick>RunScript(script.featherence.service,,?mode=70&amp;value=3)</onclick>
-			<textoffsetx>45</textoffsetx>
-			<visible>!String.IsEmpty(Window(home).Property(TEMP)) + Window.IsVisible(DialogVideoInfo.xml)</visible>
-		</control>
-		<control type="button" id="1266" description="מקורות מדיה">
-			<width>580</width>
-			<include condition="true">LabelL1</include>
-			<font>size28</font>
-			<height>66</height>
-			<label>$LOCALIZE[22082]</label>
-			<onclick>Close</onclick>
-			<onclick>ActivateWindow(AddonBrowser,root)</onclick>
-			<textoffsetx>45</textoffsetx>
-			<visible>Window.IsVisible(CustomHomeCustomizer.xml) + !Control.IsVisible(5) + !Control.IsVisible(1265)</visible>
-			<visible>Control.IsVisible(6) + String.IsEqual(Control.GetLabel(1),$LOCALIZE[20094])</visible>
-		</control>
-	    <control type="button" id="1267" description="גודל">
-			<width>580</width>
-			<height>66</height>
-			<textoffsetx>45</textoffsetx>
-			<include condition="true">LabelL1</include>
-			<font>size28</font>
-			<label>$LOCALIZE[22031]</label>
-			<onclick condition="!String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">SetProperty(DialogSelect.Wide,1,home)</onclick>
-			<onclick condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ClearProperty(DialogSelect.Wide,home)</onclick>
-			<visible>!String.IsEqual(Control.GetLabel(1),Choose shortcut) | String.IsEqual(Window(home).Property(DialogSelect.Wide),1)</visible>
-			<visible>!Window.IsVisible(Custom1175.xml)</visible>
-		</control>
-	  </control>
-    </control>
+      <include content="LeftMenuDialogSelect_30">
+	    <param name="condition" value="!String.IsEqual(Window(home).Property(DialogSelect.Wide),1)" />
+	  </include>
+	  <include content="LeftMenuDialogSelect_30">
+	    <param name="width" value="855" />
+	    <param name="condition" value="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)" />
+	  </include>
+	</control>
   </include>
   
   <include name="LeftMenuMyPics" description="חלון צד תצוגת תמונות">
@@ -1040,7 +991,7 @@
 	  <selected>!Skin.HasSetting(FullFanartBackground2)</selected>
 	  <enable>!Skin.HasSetting(background2)</enable>
 	  <onclick>Skin.ToggleSetting(FullFanartBackground2)</onclick>
-	  <visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[31013])</visible>
+	  <visible>!$EXP[View57]</visible>
 	  <visible>false</visible>
 	</control>
   </include>
@@ -1260,10 +1211,10 @@
    </include>
   <include name="ShowDVDdisc">
     <control type="group">
-	  <animation condition="!Container.OnPrevious + !Container.OnNext + !String.IsEqual(Control.GetLabel(1104),Window(home).Property(ListItemPoster)) + ![Skin.HasSetting(View50_SideVideoInformation) + String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])] + ![Skin.HasSetting(View51_SideVideoInformation) + String.IsEqual(Container.Viewmode,$LOCALIZE[31010])] | Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,180" delay="4000" time="700">Conditional</animation>
-	  <animation condition="!Container.OnPrevious + !Container.OnNext + !String.IsEqual(Control.GetLabel(1104),Window(home).Property(ListItemPoster)) + [ Skin.HasSetting(View50_SideVideoInformation) + String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016]) | Skin.HasSetting(View51_SideVideoInformation) + String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) ] + !Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-180" delay="4000" time="700">Conditional</animation>
-	  <animation condition="!Container.OnPrevious + !Container.OnNext + !String.IsEqual(Control.GetLabel(1104),Window(home).Property(ListItemPoster))" effect="rotate" center="auto" start="0" end="360" time="10000" loop="true" delay="4000" reversible="false">Conditional</animation>
-	  <animation condition="!Container.OnPrevious + !Container.OnNext + !String.IsEqual(Control.GetLabel(1104),Window(home).Property(ListItemPoster))" effect="fade" start="0" end="100" delay="4000" time="220">Conditional</animation>
+	  <animation condition="!Container.OnPrevious + !Container.OnNext + ![$EXP[View50s] | $EXP[View59]] + !$EXP[View51s] | Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,180" delay="4000" time="700">Conditional</animation>
+	  <animation condition="!Container.OnPrevious + !Container.OnNext + [$EXP[View50s] | $EXP[View59] | $EXP[View51s] ] + !Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-180" delay="4000" time="700">Conditional</animation>
+	  <animation condition="!Container.OnPrevious + !Container.OnNext" effect="rotate" center="auto" start="0" end="360" time="10000" loop="true" delay="4000" reversible="false">Conditional</animation>
+	  <animation condition="!Container.OnPrevious + !Container.OnNext" effect="fade" start="0" end="100" delay="4000" time="220">Conditional</animation>
 	  <height>160</height>
 	  <posx>13</posx>
 	  <posy>60</posy>
@@ -1353,7 +1304,7 @@
 		<label>$LOCALIZE[20445] $LOCALIZE[305]</label>
 	    <selected>!Skin.HasSetting(background2)</selected>
 	    <onclick>Skin.ToggleSetting(background2)</onclick>
-		<!--<visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) + Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart) | !Control.IsVisible(7013)</visible>-->
+		<!--<visible>!$EXP[View57] + !$EXP[View58] | $EXP[View58] + Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(AlwaysFanart) | !Control.IsVisible(7013)</visible>-->
 	  </control>
   </include>
   
@@ -1380,7 +1331,7 @@
 		  <selected>ControlGroup(9001).HasFocus() | String.IsEqual(Window(home).Property(ViewsSettings),9001)</selected>
 		  <onclick condition="true">SetProperty(ViewsSettings,9001,home)</onclick>
 		  <onclick>AlarmClock(0,SetFocus(9001),0,silent)</onclick>
-		  <!--<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])</visible>-->
+		  <!--<visible>$EXP[View50] | $EXP[View54] | $EXP[View57] | $EXP[View58]</visible>-->
 	  </control>
   </include>
   

@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <include name="IconsInformation">
+    <param name="height" default="45"/>
+    <param name="iconheight" default="35"/>
+	<param name="condition" default="false"/>
+	<param name="d" default="false"/>
+    <param name="d0" default="false"/>
+    <param name="d1" default="false"/>
+    <param name="d2" default="false"/>
+	<definition>
+   <control type="grouplist">
+    <animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="245,0">Conditional</animation>
+	<include condition="String.IsEqual(System.Language,Hebrew)">LeftC</include>
+	<include condition="!String.IsEqual(System.Language,Hebrew)">RightC</include>
+	<height>$PARAM[height]</height>
+	<posx>-250</posx>
+	<itemgap>5</itemgap>
+	<orientation>horizontal</orientation>
+	<posy>5</posy>
+	<width min="100" max="250">auto</width>
+	<visible>!Skin.String(TopInformationIcons, 0) | Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]</visible>
+	<visible>!Skin.String(TopInformationIcons,0) + System.IdleTime(5)</visible>
+	<control type="image">
+	  <aspectratio aligny="center">keep</aspectratio>
+	  <include>Slide1</include>
+	  <aligny>center</aligny>
+	  <posx>420</posx>
+	  <posy>3</posy>
+	  <texture colordiffuse="$VAR[TopInformationColor]">$VAR[Badges]</texture>
+	  <height>$PARAM[iconheight]</height>
+	  <width>$PARAM[height]</width>
+	  <visible>Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]</visible>
+	</control>
+	<control type="image">
+	  <aspectratio aligny="center">keep</aspectratio>
+	  <include>Slide1</include>
+	  <aligny>center</aligny>
+	  <posx>420</posx>
+	  <posy>3</posy>
+	  <texture colordiffuse="$VAR[TopInformationColor]">$VAR[Badges2]</texture>
+	  <height>$PARAM[iconheight]</height>
+	  <width>$PARAM[height]</width>
+	  <visible>Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]</visible>
+	</control>
+	<control type="label" id="821" description="Weather">
+	  <width min="75" max="100">auto</width>
+	  <height>$PARAM[iconheight]</height>
+	  <textcolor>$VAR[TopInformationFontColor]</textcolor>
+	  <include condition="$PARAM[d]">LabelC2</include>
+	  <include condition="$PARAM[d0]">LabelC1</include>
+	  <include condition="$PARAM[d1]">LabelC3</include>
+	  <include condition="$PARAM[d2]">LabelC31</include>
+	  <label>$INFO[Weather.Temperature]</label>
+	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),1)</visible>
+	  <visible>!IsEmpty(Weather.Temperature) + !String.IsEqual(Weather.Temperature,°C)</visible>
+	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
+	</control>
+	<control type="image" id="820" description="Weather">
+	  <width>30</width>
+	  <height>$PARAM[iconheight]</height>
+	  <width>$PARAM[iconheight]</width>
+	  <aspectratio aligny="center">stretch</aspectratio>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">resource://resource.images.weathericons.transparent/resources/$INFO[Weather.fanartcode].jpg</texture>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">$VAR[WeatherIcons]</texture>
+	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),1)</visible>
+	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
+	</control>
+	<control type="multiimage" id="830" description="Weather">
+	  <width>30</width>
+	  <height>$PARAM[iconheight]</height>
+	  <width>$PARAM[iconheight]</width>
+	  <aspectratio aligny="center">stretch</aspectratio>
+	  <imagepath background="true">special://home/addons/resource.images.weathericons.animated/resources/0</imagepath>
+	  <timeperimage>1000</timeperimage>
+	  <fadetime>1000</fadetime>
+	  <loop>yes</loop>
+	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),1)</visible>
+	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
+	  <visible>false</visible>
+	</control>
+	<control type="image" id="824" description="אין אינטרנט">
+	  <height>$PARAM[iconheight]</height>
+	  <width>$PARAM[iconheight]</width>
+	  <aspectratio aligny="center">keep</aspectratio>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">badges/specials/internet.png</texture>
+	  <visible>!Control.IsVisible(825)</visible>
+	  <visible>[!String.IsEqual(System.InternetState,$LOCALIZE[15207]) + !String.IsEqual(System.InternetState,$LOCALIZE[503]) + !String.IsEmpty(System.InternetState)]</visible>
+	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),2)</visible>
+	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
+	</control>
+	<control type="image" id="825" description="אין רשת">
+	  <height>$PARAM[iconheight]</height>
+	  <width>$PARAM[iconheight]</width>
+	  <aspectratio aligny="center">stretch</aspectratio>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">badges/specials/lan.png</texture>
+	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),2)</visible>
+	  <visible>String.IsEmpty(Network.GatewayAddress) | String.IsEmpty(Network.IPAddress)</visible>
+	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
+	</control>
+	<control type="image" id="826" description="אינטרנט קווי / was bugged">
+	  <height>$PARAM[iconheight]</height>
+	  <width>$PARAM[iconheight]</width>
+	  <aspectratio aligny="center">stretch</aspectratio>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">badges/specials/wlan.png</texture>
+	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),2)</visible>
+	  <visible>!Control.IsVisible(824) + !Control.IsVisible(825)</visible>
+	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
+	</control>
+   </control>
+    </definition>
+  </include>
+  
+  <include name="TopInformation_7016">
+    <param name="height" default="0"/>
+	<param name="iconheight" default="0" />
+    <param name="condition" default="false"/>
+    <param name="d" default="false"/>
+    <param name="d0" default="false"/>
+    <param name="d1" default="false"/>
+    <param name="d2" default="false"/>
+	<definition>
+		<control type="group" id="7016" description="">
+		  <visible>$PARAM[condition]</visible>
+		  <!--<height>$PARAM[height]</height>-->
+		  <posy>-6</posy>
+		  <animation condition="!Window.IsVisible(CustomHomeCustomizer.xml) + [System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)]" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
+		  <control type="image" description="מסגרת">
+			<include>Fade_TopInformationOverlay</include>
+			<height>$PARAM[height]</height>
+			<posx>-60</posx>
+			<texture border="20" colordiffuse="$VAR[TopInformationColor]">buttons/ButtonA0C.png</texture>
+			<width>2040</width>
+		  </control>
+		  <control type="label" id="11010" description="">
+			  <label>$VAR[VideoInformation1]</label>
+			  <visible>false</visible>
+		  </control>
+		  <control type="group" description="הכל">
+			  <posy>0</posy>
+			  <control type="group" description="שמאל_en">
+				<posx>10</posx>
+				<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1124)</visible>
+				<width>600</width>
+				<animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="1300,0">Conditional</animation>
+				<control type="label" id="1121" description="שמאל1 (תיקייה)">
+				  <aligny>center</aligny>
+				  <height>$PARAM[height]</height>
+				  <include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d]">LabelR2</include>
+				  <include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d]">LabelL2</include>
+				  <include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d0]">LabelR1</include>
+				  <include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d0]">LabelL1</include>
+				  <include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d1]">LabelR3</include>
+				  <include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d1]">LabelL3</include>
+				  <include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d2]">LabelR31</include>
+				  <include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d2]">LabelL31</include>
+				  <haspath>false</haspath>
+				  <label>$VAR[TopInformation2]</label>
+				  <textcolor>$VAR[TopInformationFontColor]</textcolor>
+				  <scroll>true</scroll>
+				  <visible>!Control.IsVisible(1122) + !Control.IsVisible(1123) + !Control.IsVisible(1132)</visible>
+				</control>
+				<control type="label" id="1122" description="שמאל2 (ספרייה)">
+				  <aligny>center</aligny>
+				  <include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d]">LabelR2</include>
+				  <include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d]">LabelL2</include>
+				  <include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d0]">LabelR1</include>
+				  <include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d0]">LabelL1</include>
+				  <include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d1]">LabelR3</include>
+				  <include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d1]">LabelL3</include>
+				  <include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d2]">LabelR31</include>
+				  <include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d2]">LabelL31</include>
+				  <haspath>true</haspath>
+				  <height>$PARAM[height]</height>
+				  <label>$VAR[TopInformation2.1]</label>
+				  <textcolor>$VAR[TopInformationFontColor]</textcolor>
+				  <visible>!String.IsEmpty(Control.GetLabel(1122))</visible>
+				  <visible>String.IsEqual(ListItem.Label,..) | String.IsEqual(ListItem.Label,עמוד)</visible>
+				</control>
+				<control type="label" id="1123" description="SuperWidget">
+				  <aligny>center</aligny>
+				  <include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d]">LabelR2</include>
+				  <include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d]">LabelL2</include>
+				  <include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d0]">LabelR1</include>
+				  <include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d0]">LabelL1</include>
+				  <include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d1]">LabelR3</include>
+				  <include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d1]">LabelL3</include>
+				  <include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d2]">LabelR31</include>
+				  <include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d2]">LabelL31</include>
+				  <haspath>true</haspath>
+				  <height>$PARAM[height]</height>
+				  <label>$VAR[SuperWidget_Name]</label>
+				  <textcolor>$VAR[TopInformationFontColor]</textcolor>
+				  <visible>!String.IsEmpty(Control.GetLabel(1123))</visible>
+				  <visible>!Control.IsVisible(1122) + !Control.IsVisible(1132)</visible>
+				  <visible>Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)</visible>
+				</control>
+			  </control>
+			 
+			  <control type="label" id="1124" description="זמן לסיום(HasMedia) שמאל2">
+				<animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="1910,0">Conditional</animation>
+				<aligny>center</aligny>
+				<include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d]">LabelR2</include>
+				<include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d]">LabelL2</include>
+				<include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d0]">LabelR1</include>
+				<include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d0]">LabelL1</include>
+				<include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d1]">LabelR3</include>
+				<include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d1]">LabelL3</include>
+				<include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d2]">LabelR31</include>
+				<include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d2]">LabelL31</include>
+				<height>$PARAM[height]</height>
+				<posx>10</posx>
+				<label>$VAR[TopInformation2.2]</label>
+				<textcolor>$VAR[TopInformationFontColor]</textcolor>
+				<visible>!Skin.HasSetting(Admin) + Player.HasMedia</visible>
+				<visible>!String.Contains(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
+				<visible>!Window.IsVisible(MyPVRChannels.xml)</visible>
+				<visible>!String.Contains(Container.FolderPath,special://userdata/library/videos/) + !String.Contains(Container.FolderPath,/var/media/) + !String.Contains(Container.FolderPath,special://home/external/)</visible>
+				<visible>!String.Contains(MusicPlayer.Title,featherence)</visible>
+				<width>400</width>
+			  </control>
+			  <control type="group">
+				  <visible>!Window.IsVisible(DialogExtendedProgressBar.xml) + !Window.IsVisible(DialogNotification.xml)</visible>
+				  <control type="label" description="() אמצע">
+					<aligny>center</aligny>
+					<textcolor>$VAR[TopInformationFontColor]</textcolor>
+					<include condition="$PARAM[d]">LabelC12</include>
+					<include condition="$PARAM[d0]">LabelC16</include>
+					<include condition="$PARAM[d1]">LabelC3</include>
+				    <include condition="$PARAM[d2]">LabelC31</include>
+					<include>Fade7</include>
+					<height>$PARAM[height]</height>
+					<label>$VAR[TopInformation3.1]</label>
+					<posx>600</posx>
+					<scroll>false</scroll>
+					<width>720</width>
+					<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127) + !Control.IsVisible(3620)</visible>
+					<visible>!Window.IsVisible(DialogNotification.xml)</visible>
+					
+				  </control>
+				  <control type="label" id="3620" description="אמצע CustomHomeCustomizer">
+					<aligny>center</aligny>
+					<height>$PARAM[height]</height>
+					<textcolor>$VAR[TopInformationFontColor]</textcolor>
+					<include condition="$PARAM[d]">LabelC12</include>
+					<include condition="$PARAM[d0]">LabelC16</include>
+					<include condition="$PARAM[d1]">LabelC3</include>
+				    <include condition="$PARAM[d2]">LabelC31</include>
+					<include>Fade7</include>
+					<label>$VAR[TopInformation3.2]</label>
+					
+					<posx>600</posx>
+					<scroll>true</scroll>
+					<width>720</width>
+					<visible>!Skin.HasSetting(Admin) + !Control.IsVisible(1127) + !Window.IsVisible(Custom1173.xml)</visible>
+					<visible>!Window.IsVisible(DialogNotification.xml)</visible>
+					<visible>!Control.IsVisible(1721)</visible>
+					<visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
+				  </control>
+				  <control type="label" id="1127" description="(HasMedia) אמצע">
+					<aligny>center</aligny>
+					<textcolor>$VAR[TopInformationFontColor]</textcolor>
+					<include condition="$PARAM[d]">LabelC12</include>
+					<include condition="$PARAM[d0]">LabelC16</include>
+					<include condition="$PARAM[d1]">LabelC3</include>
+				    <include condition="$PARAM[d2]">LabelC31</include>
+					<height>$PARAM[height]</height>
+					<label>$VAR[TopInformation3]</label>
+					<posx>600</posx>
+					<scroll>true</scroll>
+					<width>715</width>
+					<visible>!Skin.HasSetting(Admin) + Player.HasMedia + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(SlideShow.xml)</visible>
+					<visible>!String.Contains(Player.Folderpath,special://userdata/addon_data/skin.featherence/music/)</visible>
+					<visible>!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(313) + !Control.HasFocus(314) + !Control.HasFocus(315)</visible>
+					<visible>!String.Contains(MusicPlayer.Title,featherence)</visible>
+					<visible>!Window.IsVisible(DialogNotification.xml)</visible>
+					<visible>!Control.IsVisible(1721)</visible>
+				  </control>
+				  <control type="label" description="(Admin) אמצע">
+					<aligny>center</aligny>
+					<height>$PARAM[height]</height>
+					<textcolor>$VAR[TopInformationFontColor]</textcolor>
+					<include condition="$PARAM[d]">LabelC12</include>
+					<include condition="$PARAM[d0]">LabelC16</include>
+					<include condition="$PARAM[d1]">LabelC3</include>
+				    <include condition="$PARAM[d2]">LabelC31</include>
+					<label>$INFO[System.CpuUsage] • $INFO[System.CpuFrequency] • $INFO[System.CPUTemperature] • $INFO[System.FreeMemory] • $INFO[System.FPS]</label>
+					
+					<posx>600</posx>
+					<scroll>true</scroll>
+					<width>720</width>
+					<visible>Skin.HasSetting(Admin)</visible>
+					<visible>!Window.IsVisible(DialogNotification.xml)</visible>
+					<visible>!Control.IsVisible(1721)</visible>
+				  </control>
+				  <include content="RSS_1721">
+					<param name="height" value="$PARAM[height]" />
+					<param name="posx" value="600" />
+					<param name="posy" value="0" />
+					<param name="width" value="1020" />
+					<param name="condition" value="!Player.HasMedia" />
+					<param name="d" value="$PARAM[d]" />
+					<param name="d0" value="$PARAM[d0]" />
+					<param name="d1" value="$PARAM[d1]" />
+					<param name="d2" value="$PARAM[d2]" />
+				  </include>
+				  <include content="RSS_1721">
+					<param name="height" value="$PARAM[height]" />
+					<param name="posx" value="600" />
+					<param name="posy" value="0" />
+					<param name="width" value="720" />
+					<param name="condition" value="Player.HasMedia" />
+					<param name="d" value="$PARAM[d]" />
+					<param name="d0" value="$PARAM[d0]" />
+					<param name="d1" value="$PARAM[d1]" />
+					<param name="d2" value="$PARAM[d2]" />
+				  </include>
+				  
+			  </control>
+			  <control type="group" description="ימין (שעון)">
+			    <animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-1900,0">Conditional</animation>
+				<posx>10r</posx>
+				<control type="group" description="ימין סמלים">
+					<visible>true</visible>	
+					<include content="IconsInformation">
+					  <param name="condition" value="$PARAM[condition]" />
+					  <param name="height" value="$PARAM[height]" />
+					  <param name="iconheight" value="$PARAM[iconheight]" />
+					  <param name="d" value="$PARAM[d]" />
+					  <param name="d0" value="$PARAM[d0]" />
+					  <param name="d1" value="$PARAM[d1]" />
+					  <param name="d2" value="$PARAM[d2]" />
+					</include>	
+			    </control>
+				<control type="label" description="() ימין">
+					<aligny>center</aligny>
+					<height>$PARAM[height]</height>
+					<!--<include condition="Skin.HasSetting(TopInformationSize) + String.IsEqual(System.Language,Hebrew)">LabelL1</include>-->
+					<include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d]">LabelL2</include>
+					<include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d]">LabelR2</include>
+					<include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d0]">LabelL1</include>
+					<include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d0]">LabelR1</include>
+					<include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d1]">LabelL3</include>
+					<include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d1]">LabelR3</include>
+					<include condition="String.IsEqual(System.Language,Hebrew) + $PARAM[d2]">LabelL31</include>
+					<include condition="!String.IsEqual(System.Language,Hebrew) + $PARAM[d2]">LabelR31</include>
+					<label>$VAR[ShowClock]</label>		
+					<textcolor>$VAR[TopInformationFontColor]</textcolor>
+					
+					<visible>Window.IsActive(LoginScreen.xml) | !Skin.HasSetting(ShowClock)</visible> <!--Window.IsActive(home) | -->
+					<visible>Skin.String(TopInformationIcons,0) | !Skin.String(TopInformationIcons,0) + !System.IdleTime(5)</visible>
+					<width>560</width>
+			    </control>
+			  </control>			 
+		  </control>
+		  <control type="button" id="7012">
+			<animation condition="!Control.HasFocus(7012)" effect="fade" start="20" end="0" time="100" reversible="true">Conditional</animation>
+			<posy>-44</posy>
+			<posx>-60</posx>
+			<onclick>ActivateWindow(12901)</onclick>
+			<width>2040</width>
+			<visible>Player.HasMedia | Window.IsVisible(MusicVisualisation.xml)</visible>
+		  </control>
+		</control>
+	</definition>
+  </include>
+  
+  <include name="TopInformation">
+	<include content="TopInformation_7016">
+	  <param name="condition" value="!Skin.String(TopInformationSize)" />
+	  <param name="height" value="42.5" />
+	  <param name="iconheight" value="35" />
+	  <param name="d" value="true" />
+      <param name="d0" value="false" />
+      <param name="d1" value="false" />
+      <param name="d2" value="false" />
+	</include>
+	
+	<include content="TopInformation_7016">
+	  <param name="condition" value="Skin.String(TopInformationSize,0)" />
+	  <param name="height" value="52" />
+	  <param name="iconheight" value="40" />
+	  <param name="d" value="false" />
+      <param name="d0" value="true" />
+      <param name="d1" value="false" />
+      <param name="d2" value="false" />
+	</include>
+	
+	<include content="TopInformation_7016">
+	  <param name="condition" value="Skin.String(TopInformationSize,1)" />
+	  <param name="height" value="70" />
+	  <param name="iconheight" value="60" />
+	  <param name="d" value="false" />
+      <param name="d0" value="false" />
+      <param name="d1" value="true" />
+      <param name="d2" value="false" />
+	</include>
+	
+	<include content="TopInformation_7016">
+	  <param name="condition" value="Skin.String(TopInformationSize,2)" />
+	  <param name="height" value="90" />
+	  <param name="iconheight" value="80" />
+	  <param name="d" value="false" />
+      <param name="d0" value="false" />
+      <param name="d1" value="false" />
+      <param name="d2" value="true" />
+	</include>
+	<include>TouchSupport</include>
+  </include>
+  
+  <variable name="Badges">
+    <value condition="!String.IsEmpty(VideoPlayer.VideoResolution) + [!System.IdleTime(3) | System.IdleTime(6)]">$INFO[VideoPlayer.VideoResolution,badges/video/,.png]</value>
+    <value condition="!String.IsEmpty(VideoPlayer.AudioChannels) + [System.IdleTime(3) + !System.IdleTime(6)]">$INFO[VideoPlayer.AudioChannels,badges/video/,.png]</value>
+	
+	<value condition="!String.IsEmpty(ListItem.VideoResolution) + [!System.IdleTime(3) | System.IdleTime(6)]">$INFO[ListItem.VideoResolution,badges/video/,.png]</value>
+    <value condition="!String.IsEmpty(ListItem.AudioChannels) + [System.IdleTime(3) + !System.IdleTime(6)]">$INFO[ListItem.AudioChannels,badges/video/,.png]</value>
+    
+  </variable>
+  
+  <variable name="Badges2">
+    <value condition="!String.IsEmpty(VideoPlayer.VideoCodec) + [!System.IdleTime(3) | System.IdleTime(6)]">$INFO[VideoPlayer.VideoCodec,badges/video/,.png]</value>
+    <value condition="!String.IsEmpty(VideoPlayer.AudioCodec) + [System.IdleTime(3) + !System.IdleTime(6)]">$INFO[VideoPlayer.AudioCodec,badges/video/,.png]</value>
+	
+    <value condition="!String.IsEmpty(ListItem.VideoCodec) + [!System.IdleTime(3) | System.IdleTime(6)]">$INFO[ListItem.VideoCodec,badges/video/,.png]</value>
+    <value condition="!String.IsEmpty(ListItem.AudioCodec) + [System.IdleTime(3) + !System.IdleTime(6)]">$INFO[ListItem.AudioCodec,badges/video/,.png]</value>
+    
+  </variable>
+  
+  <variable name="TopInformation2" description="שמאל1 (תיקייה)">
+	<value description="גרסה" condition="Window.IsVisible(Home.xml) + !Skin.HasSetting(ShowSkinVersion)">$INFO[System.AddonVersion(skin.featherence)]</value>
+	<value description="בחר צבע" condition="Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">[B]$ADDON[script.skin.helper.service 32011][/B]</value>
+	<value description="בחר צבע" condition="Window.IsVisible(Custom1170.xml)">Choose $INFO[Window(home).Property(TEMP)]</value>
+	<value description="סרטים_he" condition="String.IsEqual(System.Language,Hebrew) + [String.StartsWith(Container.FolderPath,videodb://movies) | String.Contains(Container.FolderPath,library://video/movies) | String.Contains(Container.FolderPath,special://userdata/library/movies/)] + !String.Contains(Container.FolderName,$LOCALIZE[20342])">($INFO[Container.NumItems]) [COLOR yellow]$VAR[GenreLabel2][/COLOR] $LOCALIZE[20342] $LOCALIZE[31419] </value>
+	<value description="סרטים_en" condition="!String.IsEqual(System.Language,Hebrew) + [String.StartsWith(Container.FolderPath,videodb://movies) | String.Contains(Container.FolderPath,library://video/movies) | String.Contains(Container.FolderPath,special://userdata/library/movies/)] + !String.Contains(Container.FolderName,$LOCALIZE[20342])">$LOCALIZE[20342] $LOCALIZE[31419] [COLOR yellow]$VAR[GenreLabel2][/COLOR] ($INFO[Container.NumItems])</value>
+	<value description="סדרות טלוויזיה_he" condition="String.IsEqual(System.Language,Hebrew) + [String.StartsWith(Container.FolderPath,videodb://tvshows) | String.Contains(Container.FolderPath,library://video/tvshows) | String.Contains(Container.FolderPath,special://userdata/library/tvshows/)] + !String.Contains(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] $LOCALIZE[20343] $LOCALIZE[31419] </value>
+	<value description="סדרות טלוויזיה_en" condition="!String.IsEqual(System.Language,Hebrew) + [String.StartsWith(Container.FolderPath,videodb://tvshows) | String.Contains(Container.FolderPath,library://video/tvshows) | String.Contains(Container.FolderPath,special://userdata/library/tvshows/)] + !String.Contains(Container.FolderName,$LOCALIZE[20343])">($INFO[Container.NumItems]) $LOCALIZE[20343] $LOCALIZE[31419] [B][COLOR yellow]$VAR[GenreLabel2][/COLOR][/B] </value>
+	<value description="מוזיקה" condition="Window.IsActive(MyMusicNav.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR] $LOCALIZE[2] $LOCALIZE[31419] [/B]</value>
+	<value description="מנהל הרחבות" condition="Window.IsVisible(AddonBrowser.xml)">($INFO[Container.NumItems]) [B][COLOR yellow]$INFO[Container.FolderName][/COLOR][/B]</value>
+	<value description="PVR" condition="Window.IsVisible(DialogPVRChannelManager.xml)">($INFO[Container.NumItems]) [COLOR white2][B]$LOCALIZE[19199] - $LOCALIZE[19023]/$LOCALIZE[19024][/B][/COLOR]</value>
+	<value description="PVR" condition="Window.IsVisible(DialogPVRGroupManager.xml)">($INFO[Container.NumItems]) [COLOR white2][B]$LOCALIZE[19143][/B][/COLOR]</value>
+	<value description="PVR" condition="[Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide) | Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(MyPVRGuide.xml)]">($INFO[Container.NumItems]) [COLOR white2][B]$VAR[ChannelGroupName][/B][/COLOR]</value>
+	<value description="מזג אוויר" condition="Window.IsVisible(MyWeather.xml)">$INFO[System.CurrentWindow] ($INFO[Weather.Plugin])</value>
+	<value description="עיצוב מעטפת" condition="Window.IsVisible(CustomHomeCustomizer.xml)">$LOCALIZE[31830] ($INFO[Container.NumItems])</value>
+	<value description="הרחבה" condition="[String.Contains(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !String.IsEmpty(Container.FolderName) + !String.IsEmpty(Container.NumItems) + [String.IsEqual(Container.FolderName,Exodus) | String.IsEqual(Container.FolderName,Stream All The Sources)] + String.IsEqual(Network.MacAddress,0C:8B:FD:9D:2F:CE)">($INFO[Container.NumItems])</value>
+	<value description="הרחבה" condition="[String.Contains(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !String.IsEmpty(Container.FolderName) + !String.IsEmpty(Container.NumItems)">$INFO[Container.FolderName] ($INFO[Container.NumItems])</value>
+	<value description="הרחבה2" condition="Window.IsVisible(DialogAddonSettings.xml) + !String.IsEmpty(ListItem.AddonName)">$INFO[System.CurrentWindow]: [COLOR=yellow][B]$INFO[ListItem.AddonName][/COLOR][/B]</value>
+	<value description="הרחבה2" condition="[String.Contains(Container.FolderPath,plugin://) | Window.IsVisible(MyPics.xml)] + !String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
+	<value description="DialogGameControllers" condition="Window.IsVisible(DialogGameControllers.xml)">$LOCALIZE[35050]</value>
+	<value>$INFO[System.CurrentWindow] ($INFO[Container.NumItems])</value>
+  </variable>
+  <variable name="TopInformation2.1" description="שמאל2 (ספרייה)">
+	<value condition="Container.content(movies) + [String.Contains(Container.FolderPath,videodb://movies/) | String.IsEqual(Container.FolderName,$LOCALIZE[20342])]">[COLOR yellow][B]$LOCALIZE[20342] $LOCALIZE[16102][/B][/COLOR] [COLOR yellow][B]$INFO[Window(Home).Property(Movies.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(Movies.Count)]</value> <!-- + String.Contains(Container.FolderPath,videodb://movies/)  String.IsEqual(Container.FolderName,$LOCALIZE[369]) | String.IsEqual(Container.FolderName,$LOCALIZE[20342])-->
+	<value condition="Container.content(tvshows) + [String.Contains(Container.FolderPath,videodb://tvshows/) | String.IsEqual(Container.FolderName,$LOCALIZE[20343])]">[COLOR yellow][B]$LOCALIZE[20343] $LOCALIZE[16102][/B][/COLOR] [COLOR yellow][B]$INFO[Window(Home).Property(TVShows.Watched)][/B][/COLOR]  /  $INFO[Window(Home).Property(TVShows.Count)]</value> <!--  + String.Contains(Container.FolderPath,videodb://tvshows/) String.IsEqual(Container.FolderName,$LOCALIZE[369]) | String.IsEqual(Container.FolderName,$LOCALIZE[20343])-->
+	<value condition="Window.IsActive(MyMusicNav.xml)">[COLOR yellow][B]$INFO[Window(Home).Property(Music.ArtistsCount)][/B][/COLOR] • $LOCALIZE[133]: [COLOR yellow][B]$INFO[Window(Home).Property(Music.AlbumsCount)][/B][/COLOR] • $LOCALIZE[132]: [COLOR yellow][B]$INFO[Window(Home).Property(Music.SongsCount)][/B][/COLOR] $LOCALIZE[134]: </value>
+	<!--<value condition="Window.IsActive(MyPics.xml)">[COLOR yellow][B]$INFO[ListItem.PictureResolution][/B][/COLOR] • רזולוציה: [COLOR yellow][B]$INFO[ListItem.PictureDate][/B][/COLOR] • תאריך: [COLOR yellow][B]$INFO[ListItem.PictureState][/B][/COLOR] מיקום: </value>-->
+  </variable>
+  <variable name="TopInformation2.2" description="(HasMedia) שמאל2">
+	<!--<value description="ריק" condition="String.Contains(Container.FolderPath,library://video/movies/) | String.Contains(Container.FolderPath,library://video/tvshows/) | String.Contains(Container.FolderPath,videodb://tvshows/) | String.Contains(Container.FolderPath,videodb://movies/)"></value>-->
+	<value description="" condition="String.Contains(MusicPlayer.Title,featherence)">•</value>
+	<value description="זמן לסיום מוזיקה_he" condition="String.IsEqual(System.Language,Hebrew) + Player.HasAudio + [!Pvr.IsPlayingRadio + !String.Contains(Player.FolderPath,pvr://)] + [Integer.IsGreater(Player.TimeRemaining,1) | Integer.IsGreater(Playlist.Length(music),1)] + !String.Contains(Player.FolderPath,mms://)">($INFO[MusicPlayer.PlaylistPosition]/$INFO[Playlist.Length(music)]) • [COLOR yellow][B]$INFO[MusicPlayer.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
+	<value description="זמן לסיום מוזיקה_en" condition="!String.IsEqual(System.Language,Hebrew) + Player.HasAudio + [!Pvr.IsPlayingRadio + !String.Contains(Player.FolderPath,pvr://)] + [Integer.IsGreater(Player.TimeRemaining,1) | Integer.IsGreater(Playlist.Length(music),1)] + !String.Contains(Player.FolderPath,mms://)"> $LOCALIZE[19127]: [COLOR yellow][B]$INFO[MusicPlayer.TimeRemaining][/B][/COLOR] ($INFO[MusicPlayer.PlaylistPosition]/$INFO[Playlist.Length(music)])</value>
+	
+	<value description="זמן לסיום וידאו_he" condition="String.IsEqual(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)] + Integer.IsGreater(Playlist.Length(Video),1)">($INFO[Playlist.Position(video)]/$INFO[Playlist.Length(Video)]) • [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
+	<value description="זמן לסיום וידאו_he" condition="String.IsEqual(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)] + !Integer.IsGreater(Playlist.Length(Video),1)">[COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
+	<value description="זמן לסיום וידאו_en" condition="!String.IsEqual(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)] + Integer.IsGreater(Playlist.Length(Video),1)">$LOCALIZE[19127]: [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] • ($INFO[Playlist.Position(video)]/$INFO[Playlist.Length(Video)])</value>
+	<value description="זמן לסיום וידאו_en" condition="!String.IsEqual(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)] + !Integer.IsGreater(Playlist.Length(Video),1)">$LOCALIZE[19127]: [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR]</value>
+	<!--<value description="זמן לסיום וידאו_he" condition="String.IsEqual(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)]">($INFO[VideoPlayer.PlaylistPosition]/$INFO[Playlist.Length(video)]) • [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] $LOCALIZE[19127]: </value>
+	<value description="זמן לסיום וידאו_en" condition="!String.IsEqual(System.Language,Hebrew) + [Player.HasVideo | Slideshow.IsVideo] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)]">$LOCALIZE[19127]: [COLOR yellow][B]$INFO[Player.TimeRemaining][/B][/COLOR] • ($INFO[VideoPlayer.PlaylistPosition]/$INFO[Playlist.Length(video)])</value>-->
+	
+  </variable>
+  <variable name="TopInformation3" description="(HasMedia) אמצע">
+    <value condition="VideoPlayer.IsFullscreen + Skin.HasSetting(Admin)">A_$INFO[Player.CacheLevel] • B_$INFO[Player.ProgressCache]$ESCINFO[Player.ProgressCache]</value>
+	<value description="מנגן סדרה_he" condition="String.IsEqual(System.Language,Hebrew) + [[VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.TVShowTitle)] + !String.IsEmpty(VideoPlayer.Title) + !String.IsEmpty(VideoPlayer.Episode) + !String.IsEmpty(VideoPlayer.Season)] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)]">[COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR] • $LOCALIZE[20452]: [COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] • $LOCALIZE[20373]: [COLOR yellow][B]$INFO[VideoPlayer.TVShowTitle][/B][/COLOR]$LOCALIZE[31071] $LOCALIZE[36902]: </value>
+	<value description="מנגן סדרה_en" condition="!String.IsEqual(System.Language,Hebrew) + [[VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.TVShowTitle)] + !String.IsEmpty(VideoPlayer.Title) + !String.IsEmpty(VideoPlayer.Episode) + !String.IsEmpty(VideoPlayer.Season)] + [Integer.IsGreater(Player.TimeRemaining,1) + !String.Contains(Player.FolderPath,rtmp://)]">$LOCALIZE[31071] $LOCALIZE[36902]: [COLOR yellow][B]$INFO[VideoPlayer.TVShowTitle][/B][/COLOR] S: [COLOR yellow][B]$INFO[VideoPlayer.Season][/B][/COLOR] • E: [COLOR yellow][B]$INFO[VideoPlayer.Episode][/B][/COLOR] </value>
+	<value description="מנגן סרט_he" condition="String.IsEqual(System.Language,Hebrew) + [VideoPlayer.Content(movies) + [!String.IsEmpty(VideoPlayer.Tagline) | !String.IsEmpty(VideoPlayer.Year)]] + String.IsEmpty(VideoPlayer.Season) + String.IsEmpty(VideoPlayer.Episode) + !String.IsEmpty(VideoPlayer.Title)">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.Year]) [/COLOR] $LOCALIZE[31071] $LOCALIZE[36900]: </value>
+	<value description="מנגן סרט_en" condition="!String.IsEqual(System.Language,Hebrew) + [VideoPlayer.Content(movies) + [!String.IsEmpty(VideoPlayer.Tagline) | !String.IsEmpty(VideoPlayer.Year)]] + String.IsEmpty(VideoPlayer.Season) + String.IsEmpty(VideoPlayer.Episode) + !String.IsEmpty(VideoPlayer.Title)"> $LOCALIZE[31071] $LOCALIZE[36900]: [COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.Year]) [/COLOR]</value>
+	<value description="מנגן ערוץ_he" condition="String.IsEqual(System.Language,Hebrew) + Player.HasVideo + [Integer.IsLess(Player.TimeRemaining,1) | String.Contains(Player.FolderPath,rtmp://)] + !String.IsEmpty(Player.Title)">[COLOR yellow]$INFO[Player.Title][/COLOR] $LOCALIZE[31071] $LOCALIZE[19078] </value>
+	<value description="מנגן ערוץ_en" condition="!String.IsEqual(System.Language,Hebrew) + Player.HasVideo + [Integer.IsLess(Player.TimeRemaining,1) | String.Contains(Player.FolderPath,rtmp://)] + !String.IsEmpty(Player.Title)">$LOCALIZE[31071] $LOCALIZE[19078] [COLOR yellow]$INFO[Player.Title][/COLOR]</value>
+	<value description="מנגן ערוץ (PVR)_he" condition="String.IsEqual(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !String.Contains(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">[COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[31071] $LOCALIZE[19078] </value>
+	<value description="מנגן ערוץ (PVR)_en" condition="!String.IsEqual(System.Language,Hebrew) + [VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !String.Contains(Player.FolderPath,pvr://)] + Pvr.IsPlayingTv">$LOCALIZE[31071] $LOCALIZE[19078] [COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR]</value>
+	<value description="מקליט ערוץ (PVR)" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !String.Contains(Player.FolderPath,pvr://)] + Pvr.IsRecording">[COLOR yellow][B]$INFO[VideoPlayer.ChannelName][/B] [/COLOR] $LOCALIZE[264] $LOCALIZE[19078] </value>
+	<value description="מנגן הקלטה" condition="[VideoPlayer.Content(livetv) | VideoPlayer.HasEpg | !String.Contains(Player.FolderPath,pvr://)] + Pvr.IsPlayingRecording">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B] ($INFO[VideoPlayer.ChannelName]) [/COLOR] $LOCALIZE[31071] $LOCALIZE[264]: </value>
+	<!--<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !String.IsEmpty(Slideshow.Filedate)]">[COLOR yellow][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.Contains(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות/וידאו מהאייפון/אייפד[/B][/COLOR]</value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>-->
+	<value description="מנגן רדיו" condition="Player.HasAudio + [Integer.IsLess(Player.TimeRemaining,1) + Integer.IsLess(MusicPlayer.PlaylistPosition,1) | String.Contains(Player.FolderPath,mms://)] + !String.IsEmpty(Player.Title)">[COLOR yellow]$INFO[Player.Title][/COLOR] $LOCALIZE[31071] $LOCALIZE[19021]: </value>
+	<value description="מנגן רדיו" condition="Player.HasAudio + [Integer.IsLess(Player.TimeRemaining,1) + Integer.IsLess(MusicPlayer.PlaylistPosition,1) | String.Contains(Player.FolderPath,mms://)] + !String.IsEmpty(Player.Filename)">[COLOR yellow]$INFO[Player.Filename][/COLOR] $LOCALIZE[31071] $LOCALIZE[19021]: </value>
+	<value description="מנגן רדיו (PVR)" condition="Pvr.IsPlayingRadio + !String.IsEmpty(MusicPlayer.ChannelName)">[COLOR yellow][B]$INFO[MusicPlayer.ChannelName][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[19021]: </value>
+	<value description="מנגן רדיו (PVR)" condition="Pvr.IsPlayingRadio">[COLOR yellow][B]$INFO[Player.Filename][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[19021]: </value>
+	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !String.IsEmpty(MusicPlayer.Artist) + !String.IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR yellow][B]$INFO[MusicPlayer.Album][/B][/COLOR] • $LOCALIZE[558]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>	
+	<value condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + String.IsEmpty(MusicPlayer.Artist) + !String.IsEmpty(MusicPlayer.Album)" description="">[COLOR yellow][B]$INFO[MusicPlayer.Album][/B][/COLOR] • $LOCALIZE[558]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>	
+	<value description="" condition="Player.HasAudio + !Window.IsVisible(MyPics.xml) + !String.IsEmpty(MusicPlayer.Artist) + String.IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Artist][/B][/COLOR] • $LOCALIZE[557]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>	
+	<value description="מנגן שיר_he" condition="String.IsEqual(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + String.IsEmpty(MusicPlayer.Artist) + String.IsEmpty(MusicPlayer.Album)">[COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[179]: </value>
+	<value description="מנגן שיר_en" condition="!String.IsEqual(System.Language,Hebrew) + Player.HasAudio + !Window.IsVisible(MyPics.xml) + String.IsEmpty(MusicPlayer.Artist) + String.IsEmpty(MusicPlayer.Album)">$LOCALIZE[31071] $LOCALIZE[179]: [COLOR yellow][B]$INFO[MusicPlayer.Title][/B][/COLOR]</value>
+	<value description="מנגן וידאו_he" condition="String.IsEqual(System.Language,Hebrew) + !String.IsEmpty(VideoPlayer.Title)">[COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR] $LOCALIZE[31071] $LOCALIZE[157]: </value>
+	<value description="מנגן וידאו_en" condition="!String.IsEqual(System.Language,Hebrew) + !String.IsEmpty(VideoPlayer.Title)">$LOCALIZE[31071] $LOCALIZE[157]: [COLOR yellow][B]$INFO[VideoPlayer.Title][/B][/COLOR]</value>
+  </variable>
+  <variable name="TopInformation3.1" description="() אמצע">
+	<value description="בחר צבע" condition="Window.IsVisible(Custom1170.xml)">CHOOSEN: $INFO[Window(home).Property(SelectedColorName)]</value>
+	<value description="הזזת פריט" condition="Window.IsVisible(CustomHomeCustomizer2.xml) + !String.IsEmpty(Window(home).Property(WidgetButton.Name))">MOVING [B]$INFO[Window(home).Property(WidgetButton.Name)][/B]</value>
+	<value description="הזזת פריט" condition="Window.IsVisible(CustomHomeCustomizer2.xml) + !String.IsEmpty(Window(home).Property(Button.Name))">MOVING [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
+	<value description="עריכת כפתור בתפריט משני" condition="Window.IsVisible(Custom1139.xml) + !String.IsEmpty(Window(home).Property(SubButton.Name))">SUB MENU [B]$INFO[Window(home).Property(SubButton.Name)][/B]</value>
+	<value description="עריכת כפתור בית" condition="Window.IsVisible(Custom1175.xml) + !String.IsEmpty(Window(home).Property(Button.Name))">EDIT [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
+	<value description="מזג אוויר_he" condition="String.IsEqual(System.Language,Hebrew) + [Window.IsVisible(home) + String.IsEqual(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">[COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B] $LOCALIZE[35500]: </value>
+	<value description="מזג אוויר_en" condition="!String.IsEqual(System.Language,Hebrew) + [Window.IsVisible(home) + String.IsEqual(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">$LOCALIZE[35500]: [COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B]</value>	
+	<!--<value description="חלון מידע וידאו" condition="Window.IsVisible(DialogVideoInfo.xml)">$INFO[ListItem.Path]</value>-->
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !String.IsEmpty(Slideshow.EXIFDate)]">[COLOR yellow][B]$INFO[Slideshow.EXIFDate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.IsEmpty(Slideshow.EXIFDate) + !String.IsEmpty(Slideshow.Filedate)]">[COLOR red][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.Contains(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות מהאייפון/אייפד[/B][/COLOR]</value>
+	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
+	<value condition="!String.IsEmpty(ListItem.Label) + [[String.IsEmpty(Control.GetLabel(1105)) + String.IsEmpty(Control.GetLabel(1106))] | [$EXP[View57] | $EXP[View58]]] + !System.IdleTime(3)">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value>
+  </variable>
+ 
+</includes>

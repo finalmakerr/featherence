@@ -15,6 +15,14 @@
     <width>75</width>	
   </include>  
   
+  <include name="LeftC">
+    <align>left</align>
+	<aligny>center</aligny>
+  </include>
+  <include name="RightC">
+    <align>right</align>
+	<aligny>center</aligny>
+  </include>
   <include name="ImageC1">
     <aspectratio align="center">keep</aspectratio>
   </include>
@@ -61,7 +69,7 @@
 	<font>size24</font>
   </include>
   <include name="LabelL2" description="(טקסט1-מיוחד)">
-	<aligny>top</aligny>
+	<align>left</align>
 	<font>size24</font>
 	<radioposx>1350</radioposx>
   </include>
@@ -76,8 +84,23 @@
   </include>
   <include name="LabelR3" description="?">
     <align>right</align>
-	<!--<aligny>top</aligny>-->
 	<font>size36</font>
+  </include>
+  <include name="LabelL3" description="?">
+    <align>left</align>
+	<font>size36</font>
+  </include>
+  <include name="LabelC31" description="(טקסט3/DEFAULT)">
+    <align>center</align>
+	<font>size42</font>
+  </include>
+  <include name="LabelR31" description="?">
+    <align>right</align>
+	<font>size42</font>
+  </include>
+  <include name="LabelL31" description="?">
+    <align>left</align>
+	<font>size42</font>
   </include>
   <include name="LabelC4" description="(טקסט4)">
     <align>center</align>
@@ -176,7 +199,13 @@
 	<shadowcolor>black</shadowcolor>
 	<textcolor>white2</textcolor>
   </include>
-  
+  <include name="LabelC16" description="(כותרת3)">
+    <align>center</align>
+	<aligny>center</aligny>
+	<font>size28B</font>
+	<shadowcolor>black</shadowcolor>
+	<textcolor>white2</textcolor>
+  </include>
   
   <include name="ButtonC1" description="(DEFAULT)">
 	<width>480</width>
@@ -283,10 +312,10 @@
   </include>
   
   <include name="ButtonTopVideoInformation" description="פרטי וידאו">
-    <texture border="20" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonC0.png</texture>
+    <texture border="20" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonA0C.png</texture>
   </include>
   <include name="ButtonTopVideoInformation_" description="פרטי וידאו">
-    <texture border="20">buttons/ButtonCF.png</texture>
+    <texture border="20" colordiffuse="FFFFFFFF">buttons/ButtonA0C.png</texture>
   </include>
   
   <include name="ButtonTopVideoInformation2" description="פרטי וידאו">
@@ -712,6 +741,74 @@
 	</definition>
   </include>
   
+  <include name="LeftMenuDialogSelect_30" description="גודל">
+	<param name="width" default="580"/>
+	<param name="condition" default="true"/>
+	<definition>
+		<control type="grouplist" id="30" description="Button 5">
+			<posx>0</posx>
+			<posy>520</posy>
+			<height>225</height>
+			<width>$PARAM[width]</width>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>6</onup>
+			<ondown>6</ondown>
+			<itemgap>5</itemgap>
+			<visible>Control.IsVisible(5) | Control.IsVisible(1265) | Control.IsVisible(1266) | Control.IsVisible(1267)</visible>
+			<visible>$PARAM[condition]</visible>
+			<control type="button" id="5" description="Manual Get more button">
+				<width>$PARAM[width]</width>
+				<include condition="true">LabelL1</include>
+				<height>66</height>
+				<label>-</label>
+				<textoffsetx>45</textoffsetx>
+			</control>
+			<control type="button" id="7" description="Cancel">
+				<width>$PARAM[width]</width>
+				<include condition="true">LabelL1</include>
+				<height>66</height>
+				<label>-</label>
+				<textoffsetx>45</textoffsetx>
+			</control>
+			<control type="button" id="1265" description="עוד...">
+				<width>$PARAM[width]</width>
+				<include condition="true">LabelL1</include>
+				<font>size28</font>
+				<height>66</height>
+				<label>$LOCALIZE[22082]</label>
+				<onclick>RunScript(script.featherence.service,,?mode=70&amp;value=3)</onclick>
+				<textoffsetx>45</textoffsetx>
+				<visible>!String.IsEmpty(Window(home).Property(TEMP)) + Window.IsVisible(DialogVideoInfo.xml)</visible>
+			</control>
+			<control type="button" id="1266" description="מקורות מדיה">
+				<width>$PARAM[width]</width>
+				<include condition="true">LabelL1</include>
+				<font>size28</font>
+				<height>66</height>
+				<label>$LOCALIZE[22082]</label>
+				<onclick>Close</onclick>
+				<onclick>ActivateWindow(AddonBrowser,root)</onclick>
+				<textoffsetx>45</textoffsetx>
+				<visible>Window.IsVisible(CustomHomeCustomizer.xml) + !Control.IsVisible(5) + !Control.IsVisible(1265)</visible>
+				<visible>Control.IsVisible(6) + String.IsEqual(Control.GetLabel(1),$LOCALIZE[20094])</visible>
+			</control>
+			<control type="button" id="1267" description="גודל">
+				<width>$PARAM[width]</width>
+				<height>66</height>
+				<textoffsetx>45</textoffsetx>
+				<include condition="true">LabelL1</include>
+				<font>size28</font>
+				<label>$LOCALIZE[22031]</label>
+				<onclick condition="!String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">SetProperty(DialogSelect.Wide,1,home)</onclick>
+				<onclick condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)">ClearProperty(DialogSelect.Wide,home)</onclick>
+				<visible>!String.IsEqual(Control.GetLabel(1),Choose shortcut) | String.IsEqual(Window(home).Property(DialogSelect.Wide),1)</visible>
+				<visible>!Window.IsVisible(Custom1175.xml)</visible>
+			</control>
+	  </control>
+	</definition>
+  </include>
+	
   <include name="RSS_1721" description="RSS FEED">
 	<param name="height" default="0"/>
 	<param name="posx" default="0"/>
@@ -726,7 +823,10 @@
 			<textcolor>$VAR[TopInformationFontColor]</textcolor>
 			<titlecolor>yellow</titlecolor>
 			<headlinecolor>white</headlinecolor>
-			<include>LabelC12</include>
+			<include condition="$PARAM[d]">LabelC12</include>
+			<include condition="$PARAM[d0]">LabelC16</include>
+			<include condition="$PARAM[d1]">LabelC3</include>
+			<include condition="$PARAM[d2]">LabelC31</include>
 			<height>$PARAM[height]</height>
 			<posx>$PARAM[posx]</posx>
 			<posy>$PARAM[posy]</posy>
@@ -818,7 +918,16 @@
 		
    </control>
   </include>
-	
+  
+  <include name="AlignRtl">
+    <align>right</align>
+  </include>
+  
+  <include name="BorderFrame">
+    <bordertexture colordiffuse="$VAR[MenuColor]" border="2">buttons/ButtonA0.png</bordertexture>
+    <bordersize>2</bordersize>
+  </include>
+
   <include name="SideMenu2">
     <control type="group" description="Side menu 9010 group">
 	  <animation condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="400,0" delay="0" time="700" reversible="true">Conditional</animation>
@@ -958,11 +1067,6 @@
 	 <posy>0</posy>
 	 <height>552</height>
    </include>
-   <include name="Control_Pos7" description="">
-     <aspectratio aligny="top">stretch</aspectratio>
-	 <height>30</height>
-	 <width>50</width>
-   </include>
    <include name="Control_Pos8" description="">
      <height>522</height>
 	 <posx>0</posx>
@@ -1020,13 +1124,13 @@
    </include>
    <include name="Control_Pos43" description="">
 	 <posx>0</posx>
-	 <posy>0</posy>
-	 <height>1100</height>
+	 <posy>35</posy>
+	 <height>1050</height>
 	 <width>270</width>
    </include>
    <include name="Control_Pos44" description="">
-     <height>1100</height>
-	 <posy>0</posy>
+     <height>1050</height>
+	 <posy>30</posy>
 	 <width>280</width>
    </include>
    <include name="Control_Pos45" description="">

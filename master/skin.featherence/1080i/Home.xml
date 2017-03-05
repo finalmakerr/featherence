@@ -2,15 +2,10 @@
 <window>
   <defaultcontrol always="false">9000</defaultcontrol>
   <onload description="SideMenu" condition="!String.IsEmpty(Window(home).Property(ViewsSettings))">ClearProperty(ViewsSettings,home)</onload>
-  <!--<onunload>SetProperty(HomeLastPos,$INFO[Container(9000).Position],home)</onunload>
-  <onunload>SetProperty(HomeLastPos2,$INFO[Container(9000).CurrentPage],home)</onunload>-->
-  
-  <!--<onload condition="Integer.IsGreater(Window(home).Property(HomeLastPos2),1)">Action(PageDown)</onload>
-  <onload condition="Integer.IsGreater(Window(home).Property(HomeLastPos2),2)">Action(PageDown)</onload>
-  <onload condition="Integer.IsGreater(Window(home).Property(HomeLastPos2),3)">Action(PageDown)</onload>
-  <onload condition="Integer.IsGreater(Window(home).Property(HomeLastPos2),4)">Action(PageDown)</onload>
-  <onload condition="Integer.IsGreater(Window(home).Property(HomeLastPos2),5)">Action(PageDown)</onload>
-  <onload condition="!String.IsEmpty(Window(home).Property(HomeLastPos))">SetFocus(9000,$INFO[Window(home).Property(HomeLastPos)])</onload>-->
+  <onload>SetProperty(SkinHelper.WidgetContainer,316,home)</onload>
+  <!--<onload>SetProperty(widgetreload,plugin://plugin.video.exodus/?action=movies&amp;url=popular,Home)</onload>-->
+  <onunload>ClearProperty(SkinHelper.WidgetContainer,home)</onunload>
+
   <!--<include>onunload_ClearProperty_MainMenu</include>
   <include>onunload_ClearProperty_SubMenu</include>-->
   <include>Fade_WindowsOpenClose</include>

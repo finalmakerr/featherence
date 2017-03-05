@@ -86,6 +86,12 @@
       <filename>arial.ttf</filename>
       <size>28</size>
     </font>
+	<font>
+      <name>size28B</name>
+      <filename>arial.ttf</filename>
+      <size>28</size>
+	  <style>bold</style>
+    </font>
     <font>
       <name>size30</name>
       <filename>arial.ttf</filename>

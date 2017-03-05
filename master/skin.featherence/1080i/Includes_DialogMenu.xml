@@ -3,8 +3,8 @@
   <include name="DialogMenu" description="חלון תחתון">
     <control type="group">  			
       <posx>640</posx>
-      <posy>700</posy>
-	  <animation condition="Skin.String(DialogPosition,1)" effect="slide" start="0,0" end="0,-350">Conditional</animation>
+      <posy>665</posy>
+	  <animation condition="Skin.String(DialogPosition,1)" effect="slide" start="0,0" end="0,-315">Conditional</animation>
 	  <include content="MenuBackground">
 		<param name="border" value="40" />
 		<param name="color" value="$VAR[DialogMenuColor]" />

@@ -968,7 +968,9 @@ def installaddon(addonid2, update=True):
 				if not 'resources.' in addonid2:
 					notification('Addon Required:[CR]' + addonid2,'','',4000)
 					if (int(xbmc.getInfoLabel("System.BuildVersion")[0:2]) >=17 ): xbmc.executebuiltin('InstallAddon('+ addonid2 +')')
-					else: xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +',return)')
+					else:
+						xbmc.executebuiltin('Action(Back)')
+						xbmc.executebuiltin('ActivateWindow(10025,plugin://'+ addonid2 +',return)')
 					#xbmc.executebuiltin('RunPlugin('+ addonid2 +')')
 					
 	text = 'addonid2_' + space2 + str(addonid2_) + newline + \
@@ -1636,6 +1638,7 @@ def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percent
 	if os.path.exists(temp_path):
 		printpoint = printpoint + 'T'
 		removefiles(temp_path)
+		
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
@@ -1756,15 +1759,6 @@ def installaddonP(addon, update=True):
 			DownloadFile("https://github.com/learningit/plugin.video.smithsonian/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
 			movefiles(os.path.join(addons_path, 'plugin.video.smithsonian-master'), os.path.join(addons_path, addon))
 			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
-			else: printpoint = printpoint + "9"
-		elif "9" in printpoint: pass
-		else: printpoint = printpoint + "7"
-	
-	elif addon == 'script.extendedinfo': #FIXED PATH
-		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("https://github.com/OpenELEQ/eqsperimental/blob/master/zips/script.extendedinfo/script.extendedinfo-4.7.4-dev.zip?raw=true", addon + ".zip", packages_path, addons_path, silent=False)
-			DownloadFile("https://github.com/OpenELEQ/eqsperimental/blob/master/zips/script.extendedinfo/script.extendedinfo-4.7.4-dev.zip?raw=true", addon + ".zip", packages_path, addons_path, silent=False) #resources.lib.process
-			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"

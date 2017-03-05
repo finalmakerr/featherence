@@ -150,6 +150,10 @@
 		<label>$LOCALIZE[31856]</label>
 		<onclick>noop</onclick>
 	</item>
+	<item id="3" description="Add-in">
+		<label>Add-in</label>
+		<onclick>noop</onclick>
+	</item>
 	<item id="4" description="Advanced">
 		<label>10038</label>
 		<onclick>noop</onclick>
@@ -891,7 +895,7 @@
 	  </item>
 	  <item id="299" description="העדפת תצוגה Center List">
 		<label>$LOCALIZE[31524]</label>
-		<label2>$VAR[299label2]</label2>
+		<!--<label2>$VAR[299label2]</label2>-->
 		<thumb>special://home/addons/script.featherence.service/resources/icons/star.png</thumb>
 		<property name="rinfo">$LOCALIZE[31525]</property>
 		<onclick>Skin.ToggleSetting(51over50)</onclick>
@@ -948,7 +952,10 @@
 		<label2>$VAR[324label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/cubes.png</thumb>
 		<property name="rinfo">$LOCALIZE[31432]</property>
-		<onclick>Skin.ToggleSetting(TopInformationSize)</onclick>
+		<onclick condition="!Skin.String(TopInformationSize)">Skin.SetString(TopInformationSize,0)</onclick>
+		<onclick condition="Skin.String(TopInformationSize,0)">Skin.SetString(TopInformationSize,1)</onclick>
+		<onclick condition="Skin.String(TopInformationSize,1)">Skin.SetString(TopInformationSize,2)</onclick>
+		<onclick condition="Skin.String(TopInformationSize,2)">Skin.SetString(TopInformationSize,)</onclick>
 		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(26)</visible>
 	  </item>
@@ -1477,7 +1484,20 @@
 		<onclick>Skin.ToggleSetting(BiggerWidgetLabels)</onclick>
 		<visible>Container(100).Hasfocus(30)</visible>
 	  </item>
-	  <item id="458" description="מקסימום פריטי ו'ידגט סרטים/סדרות">
+	  <item id="454" description="מיקום ו'ידגט">
+		<label>$LOCALIZE[31535]</label>
+		<label2>$VAR[454label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/ruler.png</thumb>
+		<property name="rinfo">$LOCALIZE[31536]</property>
+		<onclick condition="!Skin.String(WidgetPosition)">Skin.SetString(WidgetPosition,1)</onclick>
+		<onclick condition="Skin.String(WidgetPosition,1)">Skin.SetString(WidgetPosition,2)</onclick>
+		<onclick condition="Skin.String(WidgetPosition,2)">Skin.SetString(WidgetPosition,3)</onclick>
+		<onclick condition="Skin.String(WidgetPosition,3)">Skin.SetString(WidgetPosition,4)</onclick>
+		<onclick condition="Skin.String(WidgetPosition,4)">Skin.SetString(WidgetPosition,5)</onclick>
+		<onclick condition="Skin.String(WidgetPosition,5)">Skin.SetString(WidgetPosition,)</onclick>
+		<visible>Container(100).Hasfocus(30)</visible>
+	  </item>
+	  <item id="457" description="מקסימום פריטי ו'ידגט סרטים/סדרות">
 		<label>$LOCALIZE[31439]</label>
 		<label2>$INFO[Skin.String(MTWidgetItems)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/application.png</thumb>
@@ -1537,6 +1557,42 @@
 		<visible>Container(100).Hasfocus(30)</visible>
 	  </item>
 	  
+	  <item id="465" description="ו'ידגט - עמעום">
+		<label>$LOCALIZE[31078] $LOCALIZE[31080]</label>
+		<label2>$INFO[Skin.String(WidgetOverlay)]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/eye.png</thumb>
+		<property name="rinfo">$LOCALIZE[31540]</property>
+		<onclick condition="Skin.String(WidgetOverlay, )">Skin.SetString(WidgetOverlay, 100)</onclick>
+		<onclick condition="Skin.String(WidgetOverlay, 100)">Skin.SetString(WidgetOverlay, 95)</onclick>
+		<onclick condition="Skin.String(WidgetOverlay, 95)">Skin.SetString(WidgetOverlay, 90)</onclick>
+		<onclick condition="Skin.String(WidgetOverlay, 90)">Skin.SetString(WidgetOverlay, 85)</onclick>
+		<onclick condition="Skin.String(WidgetOverlay, 85)">Skin.SetString(WidgetOverlay, 80)</onclick>
+		<onclick condition="Skin.String(WidgetOverlay, 80)">Skin.SetString(WidgetOverlay, 70)</onclick>
+		<onclick condition="Skin.String(WidgetOverlay, 70)">Skin.SetString(WidgetOverlay, 60)</onclick>
+		<onclick condition="Skin.String(WidgetOverlay, 60)">Skin.SetString(WidgetOverlay, 50)</onclick>
+		<onclick condition="Skin.String(WidgetOverlay, 50)">Skin.SetString(WidgetOverlay, 40)</onclick>
+		<onclick condition="Skin.String(WidgetOverlay, 40)">Skin.SetString(WidgetOverlay, 30)</onclick>
+		<onclick condition="Skin.String(WidgetOverlay, 30)">Skin.SetString(WidgetOverlay, 20)</onclick>
+		<onclick condition="Skin.String(WidgetOverlay, 20)">Skin.SetString(WidgetOverlay, )</onclick>
+		<include>CustomizerExit</include>
+		<visible>Container(100).Hasfocus(30)</visible>
+	  </item>
+	  <item id="466" description="כיווץ ו'ידגט">
+		<label>$LOCALIZE[31538]</label>
+		<label2>$VAR[466label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/quickpar.png</thumb>
+		<property name="rinfo">$LOCALIZE[31539]</property>
+		<onclick>Skin.ToggleSetting(WidgetShrink)</onclick>
+		<visible>Container(100).Hasfocus(30)</visible>
+	  </item>
+	  <item id="467" description="הצג דירוג">
+		<label>$LOCALIZE[31047]</label>
+		<label2>$VAR[467label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/star.png</thumb>
+		<property name="rinfo">$LOCALIZE[31537]</property>
+		<onclick>Skin.ToggleSetting(WidgetRating)</onclick>
+		<visible>Container(100).Hasfocus(30)</visible>
+	  </item>
 	  <item id="468" description="הצג מסגרת לכותרת ו'ידגט">
 		<label>$LOCALIZE[31455]</label>
 		<label2>$VAR[468label2]</label2>
@@ -2233,5 +2289,71 @@
 		<visible>Container(100).Hasfocus(1)</visible>
 		<visible>!Skin.HasSetting(Skin_ShowLog)</visible>
 	  </item>
+	  
+	  <!--150-Add-in-200-->
+	   <item id="150" description="סמלים - מזג אוויר">
+		<label>$LOCALIZE[536] - $LOCALIZE[12600]</label>
+		<label2>$VAR[150label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/weather.png</thumb>
+		<property name="rinfo">$LOCALIZE[31111]</property>
+		<onclick condition="!Skin.String(WeatherIcons)">Skin.SetString(WeatherIcons,0)</onclick>
+		<onclick condition="!Skin.String(WeatherIcons) + !System.HasAddon(resource.images.weathericons.flat)">InstallAddon(resource.images.weathericons.flat)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,0)">Skin.SetString(WeatherIcons,1)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,0) + !System.HasAddon(resource.images.weathericons.white)">InstallAddon(resource.images.weathericons.white)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,1)">Skin.SetString(WeatherIcons,2)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,1) + !System.HasAddon(resource.images.weathericons.transparent)">InstallAddon(resource.images.weathericons.transparent)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,2)">Skin.SetString(WeatherIcons,3)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,2) + !System.HasAddon(resource.images.weathericons.outline)">InstallAddon(resource.images.weathericons.outline)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,3)">Skin.SetString(WeatherIcons,4)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,3) + !System.HasAddon(resource.images.weathericons.flat)">InstallAddon(resource.images.weathericons.flat)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,4)">Skin.SetString(WeatherIcons,5)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,4) + !System.HasAddon(resource.images.weathericons.grey)">InstallAddon(resource.images.weathericons.grey)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,5)">Skin.SetString(WeatherIcons,6)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,5) + !System.HasAddon(resource.images.weathericons.coloured)">InstallAddon(resource.images.weathericons.coloured)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,6)">Skin.SetString(WeatherIcons,7)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,6) + !System.HasAddon(resource.images.weathericons.animated)">InstallAddon(resource.images.weathericons.animated)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,7)">Skin.SetString(WeatherIcons,8)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,7) + !System.HasAddon(resource.images.weathericons.3d-white)">InstallAddon(resource.images.weathericons.3d-white)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,8)">Skin.SetString(WeatherIcons,)</onclick>
+		<onclick condition="Skin.String(WeatherIcons,8) + !System.HasAddon(resource.images.weathericons.3d-coloured)">InstallAddon(resource.images.weathericons.3d-coloured)</onclick>
+		<visible>Container(100).Hasfocus(3)</visible>
+	  </item>
+	  
+	  <item id="155" description="resource.uisounds.featherence">
+		<label>resource.uisounds.featherence</label>
+		<label2>$INFO[System.AddonVersion(resource.uisounds.featherence)]</label2>
+		<thumb>special://home/addons/resource.uisounds.featherence/icon.png</thumb>
+		<property name="rinfo">Featherence UI Sounds</property>
+		<onclick condition="!System.HasAddon(resource.uisounds.featherence)">InstallAddon(resource.uisounds.featherence)</onclick>
+		<visible>Container(100).Hasfocus(3)</visible>
+	  </item>
+	  
+	  <item id="165" description="script.skinshortcuts">
+		<label>script.skinshortcuts</label>
+		<label2>$INFO[System.AddonVersion(script.skinshortcuts)]</label2>
+		<thumb>special://home/addons/script.skinshortcuts/icon.png</thumb>
+		<property name="rinfo">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</property>
+		<onclick condition="!System.HasAddon(script.skinshortcuts)">InstallAddon(script.skinshortcuts)</onclick>
+		<visible>Container(100).Hasfocus(3)</visible>
+	  </item>
+	  
+	  <item id="166" description="script.module.unidecode">
+		<label>script.module.unidecode</label>
+		<label2>$INFO[System.AddonVersion(script.module.unidecode)]</label2>
+		<thumb>special://home/addons/script.module.unidecode/icon.png</thumb>
+		<property name="rinfo">ASCII transliterations of Unicode text by Sean M. Burke and Tomaz Solc</property>
+		<onclick condition="!System.HasAddon(script.module.unidecode)">InstallAddon(script.module.unidecode)</onclick>
+		<visible>Container(100).Hasfocus(3)</visible>
+	  </item>
+	  
+	  <item id="167" description="script.extendedinfo">
+		<label>script.extendedinfo</label>
+		<label2>$INFO[System.AddonVersion(script.extendedinfo)]</label2>
+		<thumb>special://home/addons/script.extendedinfo/icon.png</thumb>
+		<property name="rinfo">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</property>
+		<onclick condition="!System.HasAddon(script.extendedinfo)">InstallAddon(script.extendedinfo)</onclick>
+		<visible>Container(100).Hasfocus(3)</visible>
+	  </item>
+	  
   </include>
 </includes>

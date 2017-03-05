@@ -2,16 +2,16 @@
 <includes>
   <include name="ViewDesign_50" description="Side List">
     <control type="group" description="">
-	  
+	  <include>TopInformationSize1</include>
 	  <visible>Control.IsVisible(50)</visible>
       <control type="group">
-	    <animation condition="Skin.HasSetting(View50_SideVideoInformation)" effect="zoom" center="0,1150" start="100,111" end="100,111" time="0" reversible="false">Conditional</animation>
+	    <animation condition="Skin.HasSetting(View50_SideVideoInformation)" effect="zoom" center="0,1100" start="100,112" end="100,112" time="0" reversible="false">Conditional</animation>
 		<include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos46</include>
 		<control type="panel" id="50">
 		  <posx>-10</posx>
-		  <posy>149</posy>
+		  <posy>150</posy>
 		  <width>480</width>
-		  <height>935</height>
+		  <height>934</height>
 		  <include>4ways</include>
 		  <viewtype label="31011">List</viewtype>
 		  <include>ViewDesign_50_Layout</include>
@@ -385,6 +385,7 @@
 	  <visible>[!String.IsEmpty(ListItem.Icon) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Thumb)] | String.IsEqual(Control.GetLabel(13055),DefaultFolderBack.png)</visible>
 	</control>
 	<control type="image" description="תמונה">
+	  <include>BorderFrame</include>
 	  <animation description="slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="382,0" time="0">Conditional</animation>
 	  <posx>33</posx>
 	  <posy>33</posy>
@@ -399,7 +400,8 @@
 	  <visible>!Skin.HasSetting(View50_BiggerIcon)</visible>
 	</control>
 	<control type="image" description="תמונה מוגדלת">
-	  <animation description="slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="348,0" time="0">Conditional</animation>
+	  <include>BorderFrame</include>
+      <animation description="slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="348,0" time="0">Conditional</animation>
 	  <posx>33</posx>
 	  <posy>-3</posy>
 	  <height>76</height>
@@ -488,13 +490,13 @@
   
   <include name="PVRprogress">
 	  <control type="group">
-		<animation description="50_en" condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !Skin.HasSetting(View50_Plus) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="150,40" time="0">Conditional</animation>
-		<animation description="50_he" condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | Control.IsVisible(11) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !Skin.HasSetting(View50_Plus) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-70,40" time="0">Conditional</animation>
-		<animation description="51" condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31010])" effect="slide" start="0,0" end="-5,54" time="0">Conditional</animation>
-		<animation description="54/58" condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014])" effect="slide" start="0,0" end="20,405" time="0">Conditional</animation>
-		<animation description="57" condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31013])" effect="slide" start="0,0" end="-40,320" time="0">Conditional</animation>
+		<animation description="50_en" condition="[$EXP[View50] | Control.IsVisible(11) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !Skin.HasSetting(View50_Plus) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="150,40" time="0">Conditional</animation>
+		<animation description="50_he" condition="[$EXP[View50] | Control.IsVisible(11) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + !Skin.HasSetting(View50_Plus) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-70,40" time="0">Conditional</animation>
+		<animation description="51" condition="$EXP[View51]" effect="slide" start="0,0" end="-5,54" time="0">Conditional</animation>
+		<animation description="54/58" condition="$EXP[View54] | $EXP[View58]" effect="slide" start="0,0" end="20,405" time="0">Conditional</animation>
+		<animation description="57" condition="$EXP[View57]" effect="slide" start="0,0" end="-40,320" time="0">Conditional</animation>
 		<visible>ListItem.HasEpg</visible>
-		<visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + !Skin.HasSetting(View50_Plus)</visible>
+		<visible>!$EXP[View50] | $EXP[View50] + !Skin.HasSetting(View50_Plus)</visible>
 		<control type="label" description="StartTime">
 		  <posx>80</posx>
 		  <posy>0</posy>
@@ -629,6 +631,7 @@
 		<posy>15</posy>	      
 		<width>40</width>
 		<control type="image" description="תמונה לא נבחר">
+          <include>BorderFrame</include>
 		  <texture background="true">$VAR[VideoInformation2]</texture>
 		  <visible>true</visible>
 		</control>
@@ -702,7 +705,7 @@
 		<include>Slide2</include>
 		<include>ArrowsUpDown</include>
         <control type="panel" id="56">
-          <posx>20</posx>
+		  <posx>20</posx>
           <posy>210</posy>
           <width>1880</width>
           <height>825</height>
@@ -835,20 +838,22 @@
   </include>
   <include name="ViewDesign_57" description="Wall">
     <control type="group" description="">
-	  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31013])</visible>
+	  <visible>$EXP[View57]</visible>
 	  <include>Background_Distance</include>
       <control type="group">
 		<animation condition="Control.HasFocus(7017) + Player.HasVideo" effect="slide" start="0,0" end="0,-100" time="700" reversible="false">Conditional</animation>
 		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View57_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,12" reversible="true">Conditional</animation>
 		<animation description="מרווח_slide_he" condition="Skin.HasSetting(View57_Distance) + String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,12" reversible="true">Conditional</animation>
-		<animation condition="Skin.HasSetting(View57_Distance) + !Container(57).OnNext + !Container(57).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation) + !Control.HasFocus(7017) + [!String.IsEmpty(Control.GetLabel(1106)) | !String.IsEmpty(Control.GetLabel(1105)) | Player.HasVideo]" effect="slide" start="0,0" end="0,-40" delay="3000" time="700" reversible="false">Conditional</animation>
-		<animation condition="!Skin.HasSetting(View57_Distance) + !Container(57).OnNext + !Container(57).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation) + !Control.HasFocus(7017) + [!String.IsEmpty(Control.GetLabel(1106)) | !String.IsEmpty(Control.GetLabel(1105)) | Player.HasVideo]" effect="slide" start="0,0" end="0,-30" delay="3000" time="700" reversible="false">Conditional</animation>
+		<animation description="slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" end="-10,0" reversible="true">Conditional</animation>
+		<animation condition="Skin.HasSetting(View57_Distance) + !Container(57).OnNext + !Container(57).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation) + !Control.HasFocus(7017) + [$EXP[Contents] | Player.HasVideo]" effect="slide" start="0,0" end="0,-40" delay="3000" time="700" reversible="false">Conditional</animation>
+		<animation condition="!Skin.HasSetting(View57_Distance) + !Container(57).OnNext + !Container(57).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation) + !Control.HasFocus(7017) + [$EXP[Contents] | Player.HasVideo]" effect="slide" start="0,0" end="0,-30" delay="3000" time="700" reversible="false">Conditional</animation>
 		<animation condition="Skin.HasSetting(View57_Distance) + Control.HasFocus(7017)" effect="slide" start="0,0" end="0,60" delay="0" time="700" reversible="false">Conditional</animation>
 		<animation condition="!Skin.HasSetting(View57_Distance) + Control.HasFocus(7017)" effect="slide" start="0,0" end="0,80" delay="0" time="700" reversible="false">Conditional</animation>
 		<control type="panel" id="57">
+		  <include>TopInformationSize1</include>
 		  <include>Slide1</include>
 		  <include>Slide2</include>
-          <posx>20</posx>
+          <posx>30</posx>
           <posy>35</posy>
           <width>2000</width>
           <height>1041</height>
@@ -861,8 +866,8 @@
           <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
 		  <visible>!Container.Content(episodes)</visible>
 		  <include>TrailerFade</include>
-		  <posx>210</posx>
-          <posy>75</posy>
+		  <posx>220</posx>
+          <posy>85</posy>
           <width>1800</width>
           <height>300</height>
 		  <orientation>horizontal</orientation>
@@ -873,7 +878,7 @@
           <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
 		  <visible>!Container.Content(episodes)</visible>
 		  <include>TrailerFade</include>
-		  <posx>210</posx>
+		  <posx>220</posx>
           <posy>418</posy>
           <width>1800</width>
           <height>300</height>
@@ -885,7 +890,7 @@
           <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
 		  <visible>!Container.Content(episodes)</visible>
 		  <include>TrailerFade</include>
-		  <posx>210</posx>
+		  <posx>220</posx>
           <posy>761</posy>
           <width>1800</width>
           <height>300</height>
@@ -909,8 +914,10 @@
 		<include>Fade_MoviesTVCoversOverlay</include>
 		<include>Slide2.4</include>
 		
-		<animation description="מרווח עטיפות" condition="Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
-		<animation description="מרווח פוסטרים" condition="Skin.HasSetting(View57_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
+		<animation description="מרווח עטיפות" condition="$EXP[View57] + Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
+		<animation description="מרווח פוסטרים" condition="$EXP[View57] + Skin.HasSetting(View57_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
+		<animation description="מרווח עטיפות" condition="$EXP[View59] + Skin.HasSetting(View59_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
+		<animation description="מרווח פוסטרים" condition="$EXP[View59] + Skin.HasSetting(View59_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
 		<include>View57_Common</include>
 		<control type="label" description="כותרת">
 		  <animation condition="Skin.HasSetting(ShowDVDCases2)" effect="fade" start="60" end="60" time="0">Conditional</animation>
@@ -931,13 +938,21 @@
   <include name="ViewDesign_57_FocusedLayout">
 	<include>AutoView</include>
 	<control type="group">
-		<animation condition="!Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View57_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+		<animation condition="$EXP[View57] + !Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View57_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 		
-		<animation description="מרווח עטיפות+זום" condition="!Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="126.5,122" reversible="true">Conditional</animation>
-		<animation description="מרווח עטיפות" condition="Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
+		<animation description="מרווח עטיפות+זום" condition="$EXP[View57] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="126.5,122" reversible="true">Conditional</animation>
+		<animation description="מרווח עטיפות" condition="$EXP[View57] + Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
 
-		<animation description="מרווח פוסטרים+זום" condition="!Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="144,126.5" reversible="true">Conditional</animation>
-		<animation description="מרווח פוסטרים" condition="Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
+		<animation description="מרווח פוסטרים+זום" condition="$EXP[View57] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="144,126.5" reversible="true">Conditional</animation>
+		<animation description="מרווח פוסטרים" condition="$EXP[View57] + Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
+		
+		<animation condition="$EXP[View59] + !Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View59_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+		
+		<animation description="מרווח עטיפות+זום" condition="$EXP[View59] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View59_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="126.5,122" reversible="true">Conditional</animation>
+		<animation description="מרווח עטיפות" condition="$EXP[View59] + Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View59_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
+
+		<animation description="מרווח פוסטרים+זום" condition="$EXP[View59] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View59_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="144,126.5" reversible="true">Conditional</animation>
+		<animation description="מרווח פוסטרים" condition="$EXP[View59] + Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View59_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
 		
 		<include>View57_Common</include>
 		<control type="image" description="סמן">
@@ -994,6 +1009,7 @@
   
   <include name="View57_Common">
     <control type="image" description="תמונה">
+	  <include>BorderFrame</include>
 	  <posx>55</posx>
 	  <posy>24</posy>
 	  <width>197</width>
@@ -1005,6 +1021,7 @@
 	  <visible>!Skin.HasSetting(View57_Distance)</visible>
 	</control>
 	<control type="image" description="תמונה">
+	  <include>BorderFrame</include>
 	  <posx>55</posx>
 	  <posy>24</posy>
 	  <width>197</width>
@@ -1053,7 +1070,7 @@
   <include name="Background_Distance">
     <control type="group">
 	  <visible>Skin.HasSetting(HideFanartOnNav)</visible>
-	  <animation description="Fade 57/78" condition="[Control.IsVisible(57) + String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | Control.IsVisible(58) + String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [!String.IsEmpty(Control.GetLabel(1106)) | !String.IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="40" delay="3000" time="700" reversible="false">Conditional</animation>
+	  <animation description="Fade 57/78" condition="[Control.IsVisible(57) + $EXP[View57] | Control.IsVisible(58) + $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [$EXP[Contents] | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="40" delay="3000" time="700" reversible="false">Conditional</animation>
 	  <include>Slide1</include>
 	  <height>552</height>
 	  <width>1920</width>
@@ -1064,20 +1081,21 @@
   
   <include name="ViewDesign_59" description="Side Wall">
     <control type="group" description="">
-	  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</visible>
+	  <visible>$EXP[View59]</visible>
 	  <include>Background_Distance</include>
       <control type="group">
 		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View57_Distance) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" end="-12,12" reversible="true">Conditional</animation>
 		<animation description="מרווח_slide_he" condition="Skin.HasSetting(View57_Distance) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="-12,12" reversible="true">Conditional</animation>
 
-		<animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="773,0">Conditional</animation>
+		<animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
 		
 		<animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
 		<animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
 		
 		
 		<control type="panel" id="59">
-          <posx>40</posx>
+          <include>TopInformationSize1</include>
+		  <posx>30</posx>
           <posy>35</posy>
           <width>1199</width>
           <height>1041</height>
@@ -1087,14 +1105,15 @@
         </control>
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 1">
-          <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="773,0">Conditional</animation>
+          <animation description="" condition="Skin.HasSetting(View57_Distance)" effect="slide" end="20,-10">Conditional</animation>
+          <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
 		  <animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
 		  <animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
 		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
 		  <visible>!Container.Content(episodes)</visible>
 		  <include>TrailerFade</include>
 		  <posx>210</posx>
-          <posy>75</posy>
+          <posy>129</posy>
           <width>1028</width>
           <height>300</height>
 		  <orientation>horizontal</orientation>
@@ -1102,14 +1121,15 @@
 		  <include>Trailer_59A</include>
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 2">
-          <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="773,0">Conditional</animation>
+          <animation description="" condition="Skin.HasSetting(View57_Distance)" effect="slide" end="20,-10">Conditional</animation>
+		  <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
 		  <animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
 		  <animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
 		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
 		  <visible>!Container.Content(episodes)</visible>
 		  <include>TrailerFade</include>
 		  <posx>210</posx>
-          <posy>418</posy>
+          <posy>446</posy>
           <width>1028</width>
           <height>300</height>
 		  <orientation>horizontal</orientation>
@@ -1117,14 +1137,15 @@
 		  <include>Trailer_59B</include>
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 3">
-		  <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="773,0">Conditional</animation>
+		  <animation description="" condition="Skin.HasSetting(View57_Distance)" effect="slide" end="20,-10">Conditional</animation>
+		  <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
 		  <animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
 		  <animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
           <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
 		  <visible>!Container.Content(episodes)</visible>
 		  <include>TrailerFade</include>
 		  <posx>210</posx>
-          <posy>761</posy>
+          <posy>773</posy>
           <width>1028</width>
           <height>300</height>
 		  <orientation>horizontal</orientation>
@@ -1145,16 +1166,17 @@
   
   <include name="ViewDesign_58" description="Poster">
     <control type="group" description="">
-	  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31014])</visible>
+	  <visible>$EXP[View58]</visible>
 	  <include>Background_Distance</include>
       <control type="group">
 	    <animation condition="Control.HasFocus(7017) + Player.HasVideo" effect="slide" start="0,0" end="0,-45" time="700" reversible="false">Conditional</animation>
 		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View58_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,0" reversible="true">Conditional</animation>
 	    <animation description="מרווח_slide_he" condition="Skin.HasSetting(View58_Distance) + String.IsEqual(System.Language,Hebrew)" effect="slide" end="-32,0" reversible="true">Conditional</animation>
-	    <animation condition="Skin.HasSetting(View58_Distance) + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation) + !Control.HasFocus(7017) + [!String.IsEmpty(Control.GetLabel(1106)) | !String.IsEmpty(Control.GetLabel(1105)) | Player.HasVideo]" effect="slide" start="0,0" end="0,-42" delay="3000" time="700" reversible="false">Conditional</animation>
-	    <animation condition="!Skin.HasSetting(View58_Distance) + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation) + !Control.HasFocus(7017) + [!String.IsEmpty(Control.GetLabel(1106)) | !String.IsEmpty(Control.GetLabel(1105)) | Player.HasVideo]" effect="slide" start="0,0" end="0,-42" delay="3000" time="700" reversible="false">Conditional</animation>
+	    <animation condition="Skin.HasSetting(View58_Distance) + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation) + !Control.HasFocus(7017) + [$EXP[Contents] | Player.HasVideo]" effect="slide" start="0,0" end="0,-42" delay="3000" time="700" reversible="false">Conditional</animation>
+	    <animation condition="!Skin.HasSetting(View58_Distance) + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation) + !Control.HasFocus(7017) + [$EXP[Contents] | Player.HasVideo]" effect="slide" start="0,0" end="0,-42" delay="3000" time="700" reversible="false">Conditional</animation>
 
         <control type="panel" id="58">
+		  <include>TopInformationSize1</include>
 		  <include>Slide1</include>
 		  <include>Slide2</include>
           <posx>20</posx>
@@ -1167,11 +1189,12 @@
         </control>
       </control>
 	  <control type="grouplist" description="קדימונים שורה 1">
+          <animation description="מרווח_slide_en" condition="Skin.HasSetting(View58_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="15,0" reversible="true">Conditional</animation>
           <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
 		  <visible>!Container.Content(episodes)</visible>
 		  <include>TrailerFade</include>
-		  <posx>320</posx>
-          <posy>115</posy>
+		  <posx>317</posx>
+          <posy>137</posy>
           <width>1800</width>
           <height>300</height>
 		  <orientation>horizontal</orientation>
@@ -1179,11 +1202,12 @@
 		  <include>Trailer_58A</include>
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 2">
-          <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+          <animation description="מרווח_slide_en" condition="Skin.HasSetting(View58_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="15,0" reversible="true">Conditional</animation>
+		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
 		  <visible>!Container.Content(episodes)</visible>
 		  <include>TrailerFade</include>
-		  <posx>320</posx>
-          <posy>625</posy>
+		  <posx>317</posx>
+          <posy>645</posy>
           <width>1800</width>
           <height>300</height>
 		  <orientation>horizontal</orientation>
@@ -1215,8 +1239,10 @@
 		<control type="group">
 			<include>View54_Boat_Itemlayout_Animation</include>
 			<include>Fade_MoviesTVCoversOverlay</include>
-			<animation description="מרווח עטיפות" condition="Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
-			<animation description="מרווח פוסטרים" condition="Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
+			<animation description="מרווח עטיפות" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
+			<animation description="מרווח פוסטרים" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
+			<animation description="מרווח עטיפות" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
+			<animation description="מרווח פוסטרים" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + !Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
 			<include>Slide2.4</include>
 			<include>View58_Common</include>
 			<control type="label" description="כותרת">
@@ -1252,12 +1278,19 @@
 		<include>AutoView</include>
 		<control type="group">
 			<include>View54_Boat_Focuslayout_Animation</include>
-			<animation condition="!Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View58_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
-			<animation description="מרווח עטיפות" condition="Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
-			<animation description="מרווח עטיפות + זום" condition="Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="112,119" reversible="true">Conditional</animation>
-			<animation description="מרווח פוסטרים" condition="Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
-			<animation description="מרווח פוסטרים + זום" condition="Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="125,123.5" reversible="true">Conditional</animation>
-			<animation description="זום 54" condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + !Skin.HasSetting(SelectedZoom)" effect="slide" end="0,-12">Conditional</animation>
+			<animation condition="$EXP[View58] + !Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View58_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+			<animation description="מרווח עטיפות" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
+			<animation description="מרווח עטיפות + זום" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="112,119" reversible="true">Conditional</animation>
+			<animation description="מרווח פוסטרים" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
+			<animation description="מרווח פוסטרים + זום" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="125,123.5" reversible="true">Conditional</animation>
+			
+			<animation condition="$EXP[View54] + !Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View54_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+			<animation description="מרווח עטיפות" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
+			<animation description="מרווח עטיפות + זום" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="112,119" reversible="true">Conditional</animation>
+			<animation description="מרווח פוסטרים" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + !Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
+			<animation description="מרווח פוסטרים + זום" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + !Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="125,123.5" reversible="true">Conditional</animation>
+			
+			<animation description="זום 54" condition="$EXP[View54] + !Skin.HasSetting(SelectedZoom)" effect="slide" end="0,-12">Conditional</animation>
 			
 			<include>View58_Common</include>
 			<control type="image" description="סמן">
@@ -1340,8 +1373,8 @@
   </include>
   <include name="View58_Common">
     <control type="image" description="תמונה לא נבחר">
-	  <bordertexture colordiffuse="$VAR[MenuColor]" border="0">buttons/ButtonA0.png</bordertexture>
-	  <bordersize>1</bordersize>
+	  
+	  <include>BorderFrame</include>
 	  <posx>55</posx>
 	  <posy>40</posy>
 	  <width>310</width>
@@ -1409,9 +1442,9 @@
   </include>
   <include name="ViewDesign_54" description="Line">
     <control type="group" description="">
-	  <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31015])</visible>
+	  <visible>$EXP[View54]</visible>
       <control type="group">
-	    <!--<animation condition="Skin.HasSetting(View54_Boat) + String.IsEqual(Container.Viewmode,$LOCALIZE[31015]) + Container(54).OnNext + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="-10" time="220" reversible="false">Conditional</animation>-->
+	    <!--<animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).OnNext + Container(54).Position(1)" effect="rotatey" center="auto" start="0" end="-10" time="220" reversible="false">Conditional</animation>-->
 		<include>View54_Boat_Itemlayout_Animation</include>
 		<control type="image" id="70132" description="פאנארט">
 			<fadetime>200</fadetime>
@@ -1424,8 +1457,9 @@
 			<aspectratio align="top">keep</aspectratio>
 	    </control>
         <control type="panel" id="54">
+		  <animation description="54" condition="true" effect="slide" start="0,0" end="-20,0">Conditional</animation>
           <posx>20</posx>
-          <posy>565</posy>
+          <posy>545</posy>
           <width>1900</width>
           <height>515</height>
 		  <include>2ways</include>
@@ -1437,7 +1471,7 @@
 		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
 		  <visible>!Skin.HasSetting(View54_Boat)</visible>
 		  <visible>!Container.Content(episodes)</visible>
-		  <posx>322</posx>
+		  <posx>300</posx>
           <posy>633</posy>
           <width>1800</width>
           <height>300</height>

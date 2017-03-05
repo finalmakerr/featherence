@@ -292,6 +292,47 @@ if property_buttonid != "" and property_buttonid_ != "" or 1 + 1 == 2:
 	'''---------------------------'''
 	iconT = { 'icon17': icon17, 'icon18': icon18, 'icon19': icon19, 'icon20': icon20, 'icon21': icon21, 'icon90': icon90, 'icon91': icon91, 'icon92': icon92, 'icon93': icon93, 'icon94': icon94, 'icon95': icon95, 'icon96': icon96, 'icon97': icon97, 'icon98': icon98, 'icon99': icon99, 'icon100': icon100, 'icon101': icon101, 'icon102': icon102, 'icon103': icon103, 'icon104': icon104, 'icon105': icon105, 'icon106': icon106, 'icon107': icon107, 'icon108': icon108, 'icon109': icon109, 'icon110': icon110, 'icon111': icon111, 'icon112': icon112, 'icon113': icon113, 'icon114': icon114, 'icon115': icon115, 'icon116': icon116, 'icon117': icon117, 'icon118': icon118, 'icon119': icon119 }
 	'''---------------------------'''
+	sw17 = xbmc.getInfoLabel('Skin.String(sw17)')
+	sw18 = xbmc.getInfoLabel('Skin.String(sw18)')
+	sw19 = xbmc.getInfoLabel('Skin.String(sw19)')
+	
+	sw20 = xbmc.getInfoLabel('Skin.String(sw20)')
+	sw21 = xbmc.getInfoLabel('Skin.String(sw21)')
+	
+	sw90 = xbmc.getInfoLabel('Skin.String(sw90)')
+	sw91 = xbmc.getInfoLabel('Skin.String(sw91)')
+	sw92 = xbmc.getInfoLabel('Skin.String(sw92)')
+	sw93 = xbmc.getInfoLabel('Skin.String(sw93)')
+	sw94 = xbmc.getInfoLabel('Skin.String(sw94)')
+	sw95 = xbmc.getInfoLabel('Skin.String(sw95)')
+	sw96 = xbmc.getInfoLabel('Skin.String(sw96)')
+	sw97 = xbmc.getInfoLabel('Skin.String(sw97)')
+	sw98 = xbmc.getInfoLabel('Skin.String(sw98)')
+	sw99 = xbmc.getInfoLabel('Skin.String(sw99)')
+	'''---------------------------'''
+	sw100 = xbmc.getInfoLabel('Skin.String(sw100)')
+	sw101 = xbmc.getInfoLabel('Skin.String(sw101)')
+	sw102 = xbmc.getInfoLabel('Skin.String(sw102)')
+	sw103 = xbmc.getInfoLabel('Skin.String(sw103)')
+	sw104 = xbmc.getInfoLabel('Skin.String(sw104)')
+	sw105 = xbmc.getInfoLabel('Skin.String(sw105)')
+	sw106 = xbmc.getInfoLabel('Skin.String(sw106)')
+	sw107 = xbmc.getInfoLabel('Skin.String(sw107)')
+	sw108 = xbmc.getInfoLabel('Skin.String(sw108)')
+	sw109 = xbmc.getInfoLabel('Skin.String(sw109)')
+	sw110 = xbmc.getInfoLabel('Skin.String(sw110)')
+	sw111 = xbmc.getInfoLabel('Skin.String(sw111)')
+	sw112 = xbmc.getInfoLabel('Skin.String(sw112)')
+	sw113 = xbmc.getInfoLabel('Skin.String(sw113)')
+	sw114 = xbmc.getInfoLabel('Skin.String(sw114)')
+	sw115 = xbmc.getInfoLabel('Skin.String(sw115)')
+	sw116 = xbmc.getInfoLabel('Skin.String(sw116)')
+	sw117 = xbmc.getInfoLabel('Skin.String(sw117)')
+	sw118 = xbmc.getInfoLabel('Skin.String(sw118)')
+	sw119 = xbmc.getInfoLabel('Skin.String(sw119)')
+	'''---------------------------'''
+	swT = { 'sw17': sw17, 'sw18': sw18, 'sw19': sw19, 'sw20': sw20, 'sw21': sw21, 'sw90': sw90, 'sw91': sw91, 'sw92': sw92, 'sw93': sw93, 'sw94': sw94, 'sw95': sw95, 'sw96': sw96, 'sw97': sw97, 'sw98': sw98, 'sw99': sw99, 'sw100': sw100, 'sw101': sw101, 'sw102': sw102, 'sw103': sw103, 'sw104': sw104, 'sw105': sw105, 'sw106': sw106, 'sw107': sw107, 'sw108': sw108, 'sw109': sw109, 'sw110': sw110, 'sw111': sw111, 'sw112': sw112, 'sw113': sw113, 'sw114': sw114, 'sw115': sw115, 'sw116': sw116, 'sw117': sw117, 'sw118': sw118, 'sw119': sw119 }
+	'''---------------------------'''
 	background17 = xbmc.getInfoLabel('$VAR[background17]')
 	background18 = xbmc.getInfoLabel('$VAR[background18]')
 	background19 = xbmc.getInfoLabel('$VAR[background19]')
@@ -5565,8 +5606,8 @@ if property_widgetbuttonid_ != "" or property_temp != "" or property_temp2 != ""
 	offw_T.update(offw119_T)
 	
 if xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)') or 1 + 1 == 2:
-	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogNotificationPos', 'ButtonsDesign', 'DialogMenu', 'PassProtect', 'StartUpVideo', 'screensavermusic','MultiFanart_fadetime', 'MultiFanart_timeperimage', 'CustomStartupImage','IntroDelay','widget311','widget311_name','widget312','widget312_name','widget317','widget317_name','CustomStartupImage','PassProtectDuration','RSSIdleTime','TopInformationDesign','MouseIcon','Skin_ShowLog2','WidgetDesign','MTWidgetItems','TouchButtonsPosition', 'PassProtectOverlay','WindowsOpenClose', 'ButtonsColorOverlay', 'PassProtectAddon1', 'PassProtectAddon2', 'PassProtectAddon3', 'PassProtectAddon4', 'PassProtectAddon5', 'PassProtectAddon6', 'PassProtectAddon7', 'PassProtectAddon8', 'PassProtectAddon9', 'PassProtectAddon10', 'VolumeIcon', 'VolumePosition', 'TransitionLogo', 'TransitionLogoSize', 'TransitionLogoPosition', 'TransitionBackground', 'View59Align'] #NO RANDOM SUPPORT
-	list1 = ['SelectionMarker', 'SelectionMarker2', 'ShadowButton', 'OverlayButton', 'BevelButton', 'StrokeButton', '2DButton2', 'MenuBackground', 'ShadowButton2', 'OverlayButton2', 'BevelButton2', 'StrokeButton2', 'background', 'HideTopMainBackground', 'FixedUnFocusButtonsTransperancy', 'HomeFanartHalfScreen', 'ReshapeIcons', 'SubBackground', 'DefaultActionButtons', 'SubMenuAction', 'Action_Thumbnail', 'MultiFanart', 'BigHomeIcons', 'wbackground90', 'wbackground91', 'wbackground96', 'Genre', 'ShowClock', 'StartUpMusic', 'Touch_Support','MultiFanart_randomize','WidgetBackground','ButtonsDesignWidget','PassProtect','ButtonLabelPosition','RSSVisibility','SPMiniButtons','ShowSkinVersion','RSSOnMedia','VideoAudioOSDAlwaysOn','Skin_ShowLog', 'HideLibraryUpdates', 'WidgetLabelBackground', 'Touch_Orientation', 'ButtonsDesignTouch', 'ButtonsSizeTouch', 'View50_BiggerIcon', 'Skin.HasSetting(View54_Boat)', 'TopVideoInformationFontSize', 'ExtraMouseSupport', 'WindowsOpenClose', 'EnableNextAired', 'VolumeIcon', 'VolumePercent', 'VolumeMute', 'FailsafeFanart', 'HideFanartOnNav', 'BiggerWidgetLabels', '51over50', 'FullFanart59', 'SideVideoInformationAnimation', 'WidgetFanart', 'AddonSettingsScroll']
+	list0 = ['ElementUButton', 'ElementFButton', 'MenuDesign', 'DialogNotificationPos', 'ButtonsDesign', 'DialogMenu', 'PassProtect', 'StartUpVideo', 'screensavermusic','MultiFanart_fadetime', 'MultiFanart_timeperimage', 'CustomStartupImage','IntroDelay','widget311','widget311_name','widget312','widget312_name','widget317','widget317_name','CustomStartupImage','PassProtectDuration','RSSIdleTime','TopInformationDesign','MouseIcon','Skin_ShowLog2','WidgetDesign','MTWidgetItems','TouchButtonsPosition', 'PassProtectOverlay','WindowsOpenClose', 'ButtonsColorOverlay', 'PassProtectAddon1', 'PassProtectAddon2', 'PassProtectAddon3', 'PassProtectAddon4', 'PassProtectAddon5', 'PassProtectAddon6', 'PassProtectAddon7', 'PassProtectAddon8', 'PassProtectAddon9', 'PassProtectAddon10', 'VolumeIcon', 'VolumePosition', 'TransitionLogo', 'TransitionLogoSize', 'TransitionLogoPosition', 'TransitionBackground', 'View59Align', 'WidgetPosition', 'TopInformationSize', 'WeatherIcons', 'WidgetOverlay'] #NO RANDOM SUPPORT
+	list1 = ['SelectionMarker', 'SelectionMarker2', 'ShadowButton', 'OverlayButton', 'BevelButton', 'StrokeButton', '2DButton2', 'MenuBackground', 'ShadowButton2', 'OverlayButton2', 'BevelButton2', 'StrokeButton2', 'background', 'HideTopMainBackground', 'FixedUnFocusButtonsTransperancy', 'HomeFanartHalfScreen', 'ReshapeIcons', 'SubBackground', 'DefaultActionButtons', 'SubMenuAction', 'Action_Thumbnail', 'MultiFanart', 'BigHomeIcons', 'wbackground90', 'wbackground91', 'wbackground96', 'Genre', 'ShowClock', 'StartUpMusic', 'Touch_Support','MultiFanart_randomize','WidgetBackground','ButtonsDesignWidget','PassProtect','ButtonLabelPosition','RSSVisibility','SPMiniButtons','ShowSkinVersion','RSSOnMedia','VideoAudioOSDAlwaysOn','Skin_ShowLog', 'HideLibraryUpdates', 'WidgetLabelBackground', 'Touch_Orientation', 'ButtonsDesignTouch', 'ButtonsSizeTouch', 'View50_BiggerIcon', 'Skin.HasSetting(View54_Boat)', 'TopVideoInformationFontSize', 'ExtraMouseSupport', 'WindowsOpenClose', 'EnableNextAired', 'VolumeIcon', 'VolumePercent', 'VolumeMute', 'FailsafeFanart', 'HideFanartOnNav', 'BiggerWidgetLabels', '51over50', 'FullFanart54', 'FullFanart59', 'SideVideoInformationAnimation', 'WidgetFanart', 'AddonSettingsScroll', 'WidgetRating', 'View54_Distance', 'WidgetShrink']
 	
 	list0c = ['MenuColor', 'DialogMenuColor', 'SubMenuMarkColor', 'TopInformationColor', 'TopInformationFontColor', 'TopVideoInformationColor', 'TopVideoInformationFontColor', 'MainBackgroundColor', 'TopBackgroundColor', 'IconUnFocusColor', 'IconFocusColor', 'ButtonUnFocusColor', 'ButtonFocusColor', 'KeyboardUnFocusColor', 'KeyboardFocusColor', 'keyboardbackgroundcolor', 'KeyboardEditColor', 'KeyboardFontTitleColor', 'KeyboardEditFontColor', 'SelectedFrameColor', 'MouseColor', 'DialogFontTitleColor', 'DialogFontColor', 'WidgetUnFocusFontColor', 'WidgetFocusFontColor', 'VolumeBackgroundColor', 'VolumeIconColor']
 	list0c2 = ['MainBackgroundTexture', 'TopBackgroundTexture'] #NO RANDOM SUPPORT
@@ -5576,4 +5617,4 @@ if xbmc.getCondVisibility('Window.IsVisible(DialogSelect.xml)') or 1 + 1 == 2:
 	
 	'''left menu'''
 	list0l = ['MoviesTVCoversOverlay', 'AutoView.movies', 'AutoView.tvshows', 'AutoView.seasons', 'AutoView.episodes', 'AutoView.setmovies', 'AutoView.actors', 'AutoView.genres', 'AutoView.others', 'AutoView.pictures', 'ForceView.all']
-	list1l = ['AutoView', 'ForceView', 'FullFanartBackground2', 'background2', 'ShowDVDCases', 'ShowDVDdisc', 'ShowTopVideoInformation', 'FullFanartTopVideoInformation', 'FullFanartZoomOut', 'SelectedZoom', 'SelectedFrame', 'View50_Plus', 'View50_Plus2', 'Show_Rating', 'AlwaysFanart', 'View50_SideVideoInformation', 'View51_SideVideoInformation', 'EnableTrailerButton', 'EpisodeFanart', 'View57_Distance', 'View58_Distance']
+	list1l = ['AutoView', 'ForceView', 'FullFanartBackground2', 'background2', 'ShowDVDCases', 'ShowDVDdisc', 'ShowTopVideoInformation', 'FullFanartTopVideoInformation', 'FullFanartZoomOut', 'SelectedZoom', 'SelectedFrame', 'View50_Plus', 'View50_Plus2', 'Show_Rating', 'AlwaysFanart', 'View50_SideVideoInformation', 'View51_SideVideoInformation', 'EnableTrailerButton', 'EpisodeFanart', 'View57_Distance', 'View58_Distance', 'View54_Distance', 'View59_Distance']

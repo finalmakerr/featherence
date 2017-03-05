@@ -1,4 +1,12 @@
 ------------------------
+Featherence Classico Plus (15-Mar-17)
+------------------------
+Extras Contents (When you click yes after load):
+- Added Opensubtitles and thewiz subtitles.
+- Added Quasar providers: thepiratebay and kickass.
+- Removed some repos.
+
+------------------------
 Featherence Classico Plus (15-Jan-17)
 ------------------------
 - Added Zen Movies/Tvshows.

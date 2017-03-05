@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+  <expression name="HomesW">[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)]</expression>
   <expression name="!Button.ID_17-21">!String.IsEqual(Window(home).Property(Button.ID_),17) + !String.IsEqual(Window(home).Property(Button.ID_),18) + !String.IsEqual(Window(home).Property(Button.ID_),19) + !String.IsEqual(Window(home).Property(Button.ID_),20) + !String.IsEqual(Window(home).Property(Button.ID_),21)</expression>
   <expression name="Fade_MoviesTVCoversOverlay">Control.IsVisible(7013) + [!String.IsEmpty(Control.GetLabel(1106)) | !String.IsEmpty(Control.GetLabel(1105)) | Player.HasVideo] + !Container.OnNext + !Container.OnPrevious + !Control.HasFocus(60)</expression>
   <expression name="Fade_MainBackgroundOverlay">!Skin.HasSetting(HideTopMainBackground) + !Skin.HasSetting(background) + [!String.IsEmpty(Control.GetLabel(700102)) | Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)]</expression>
   <expression name="Fade_Background2Overlay">[String.IsEqual(Container.Viewmode,$LOCALIZE[31013]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31014]) | String.IsEqual(Container.Viewmode,$LOCALIZE[31016])]</expression>
+  <expression name="Contents">[!String.IsEmpty(Control.GetLabel(1105)) | !String.IsEmpty(Control.GetLabel(1106))] + !Container().Scrolling</expression>
+  <expression name="Contents57_58">[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + [!Control.HasFocus(60) + [$EXP[Contents] | Window.IsVisible(AddonBrowser.xml)] + !Container.OnNext + !Container.OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)]</expression>
+  <expression name="ContentsWidget">[  [ Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(315) | Control.HasFocus(316) ] + !Container().Scrolling + !Container().OnNext + !Container().OnPrevious | [ [Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(312) | Control.IsVisible(315) | Control.IsVisible(316)] + Window.IsVisible(Home.xml) + [ControlGroup(9009).HasFocus() | !Control.HasFocus(9000) + !Control.HasFocus(9020)] ] ]</expression>
+  <expression name="WidgetFocus">[  [ Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(315) | Control.HasFocus(316) ] + !Container().Scrolling + !Container().OnNext + !Container().OnPrevious | [ [Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(312) | Control.IsVisible(315) | Control.IsVisible(316)] + Window.IsVisible(Home.xml) + [ControlGroup(9009).HasFocus() | !Control.HasFocus(9000) + !Control.HasFocus(9020)] ] ]</expression>
+  <expression name="MenuDesignH">[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)]</expression>
+  <expression name="MenuDesignP">[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]</expression>
+  <expression name="MenuDesignV">[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)]</expression>
+  <expression name="View50">String.IsEqual(Container.Viewmode,$LOCALIZE[31011])</expression>
+  <expression name="View50p">[String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(View50_Plus2)]</expression>
+  <expression name="View50t">[String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + !Skin.HasSetting(View50_SideVideoInformation)]</expression>
+  <expression name="View50s">[String.IsEqual(Container.Viewmode,$LOCALIZE[31011]) + Skin.HasSetting(View50_SideVideoInformation)]</expression>
+  <expression name="View51">String.IsEqual(Container.Viewmode,$LOCALIZE[31010])</expression>
+  <expression name="View51t">[String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + !Skin.HasSetting(View51_SideVideoInformation)]</expression>
+  <expression name="View51s">[String.IsEqual(Container.Viewmode,$LOCALIZE[31010]) + Skin.HasSetting(View51_SideVideoInformation)]</expression>
+  <expression name="View54">String.IsEqual(Container.Viewmode,$LOCALIZE[31015])</expression>
+  <expression name="View56">String.IsEqual(Container.Viewmode,$LOCALIZE[31012])</expression>
+  <expression name="View57">String.IsEqual(Container.Viewmode,$LOCALIZE[31013])</expression>
+  <expression name="View58">String.IsEqual(Container.Viewmode,$LOCALIZE[31014])</expression>
+  <expression name="View59">String.IsEqual(Container.Viewmode,$LOCALIZE[31016])</expression>
 </includes>

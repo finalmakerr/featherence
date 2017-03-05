@@ -74,132 +74,139 @@
   </include>
   
   <include name="MenuDesign_TopSettings" description="לשוניות">
-    <include>ArrowsLeftRight</include>
+    <control type="group">
+		<include>TopInformationSize0</include>
+		<animation description="slide_he" condition="String.IsEqual(System.Language,Hebrew) + Player.HasVideo" effect="slide" end="30,0">Conditional</animation>
+		<animation description="slide_en" condition="!String.IsEqual(System.Language,Hebrew) + Player.HasVideo" effect="slide" end="-30,0">Conditional</animation>
+		<include>ArrowsLeftRight</include>
 
-	<include content="MenuBackground">
-		<param name="border" value="35" />
-		<param name="color" value="$VAR[MenuColor]" />
-		<param name="height" value="81" />
-		<param name="posx" value="460" />
-		<param name="posy" value="142" />
-		<param name="width" value="1005" />
-		<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
+		<include content="MenuBackground">
+			<param name="border" value="35" />
+			<param name="color" value="$VAR[MenuColor]" />
+			<param name="height" value="81" />
+			<param name="posx" value="460" />
+			<param name="posy" value="145" />
+			<param name="width" value="1005" />
+			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
+			
+			<param name="type0" value="true" description="MenuBackground"/>
+			<param name="type1" value="false" description="DialogBackground"/>
+		</include>
 		
-		<param name="type0" value="true" description="MenuBackground"/>
-		<param name="type1" value="false" description="DialogBackground"/>
-    </include>
-	
-    <control type="list" id="100" description="TopMenu">
-	  <posx>460</posx>
-	  <posy>122</posy>
-	  <align>center</align>
-	  <height>100</height>
-	  <itemgap>5</itemgap>
-	  <onup condition="!Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(7011)">7017</onup>
-	  <onup condition="!Window.IsVisible(CustomHomeCustomizer.xml) + Player.HasAudio">ActivateWindow(12901)</onup>
-	  <onleft>noop</onleft>
-	  <onright>noop</onright>
-	  <ondown>50</ondown>
-	  <preloaditems>2</preloaditems>
-	  <pagecontrol>60</pagecontrol>	  
-	  <scrolltime tween="sine" easing="inout">220</scrolltime>
-	  <orientation>horizontal</orientation>
-	  <width>1000</width>
-	  <itemlayout width="250" height="70">
-	    <control type="group">
-		    <animation condition="[Control.IsVisible(50) + !String.IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(100).OnPrevious + !Container(100).OnNext" effect="fade" start="100" end="10" delay="3000" time="220" reversible="true">Conditional</animation>
+		<control type="list" id="100" description="TopMenu">
+		  <posx>460</posx>
+		  <posy>125</posy>
+		  <align>center</align>
+		  <height>100</height>
+		  <itemgap>5</itemgap>
+		  <onup condition="!Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(7011)">7017</onup>
+		  <onup condition="!Window.IsVisible(CustomHomeCustomizer.xml) + Player.HasAudio">ActivateWindow(12901)</onup>
+		  <onleft>noop</onleft>
+		  <onright>noop</onright>
+		  <ondown>50</ondown>
+		  <preloaditems>2</preloaditems>
+		  <pagecontrol>60</pagecontrol>	  
+		  <scrolltime tween="sine" easing="inout">220</scrolltime>
+		  <orientation>horizontal</orientation>
+		  <width>1000</width>
+		  <itemlayout width="250" height="70">
+			<control type="group">
+				<animation condition="[Control.IsVisible(50) + !String.IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(100).OnPrevious + !Container(100).OnNext" effect="fade" start="100" end="10" delay="3000" time="220" reversible="true">Conditional</animation>
 
+				<include content="Buttons_Frame">
+					<param name="id" value="" />
+					<param name="border" value="40" />
+					<param name="color" value="$VAR[ButtonUnFocusColor]" />
+					<param name="height" value="80" />
+					<param name="posx" value="0" />
+					<param name="posy" value="20" />
+					<param name="width" value="250" />
+				</include>
+				<control type="label" description="שם">
+				  <include>LabelC3</include>
+				  <posx>10</posx>
+				  <posy>20</posy>
+				  <width>230</width>
+				  <height>75</height>
+				  <label>$INFO[ListItem.Label]</label>
+				  <visible>!String.IsEmpty(ListItem.Label)</visible>
+				</control>
+			</control>
+		  </itemlayout>
+		  <focusedlayout height="75" width="250">
 			<include content="Buttons_Frame">
 				<param name="id" value="" />
 				<param name="border" value="40" />
-				<param name="color" value="$VAR[ButtonUnFocusColor]" />
+				<param name="color" value="$VAR[ButtonFocusColor]" />
 				<param name="height" value="80" />
 				<param name="posx" value="0" />
 				<param name="posy" value="20" />
 				<param name="width" value="250" />
 			</include>
 			<control type="label" description="שם">
+			  <textcolor>yellow</textcolor>
 			  <include>LabelC3</include>
 			  <posx>10</posx>
 			  <posy>20</posy>
 			  <width>230</width>
 			  <height>75</height>
+			  <scroll>true</scroll>
 			  <label>$INFO[ListItem.Label]</label>
 			  <visible>!String.IsEmpty(ListItem.Label)</visible>
 			</control>
+		  </focusedlayout>
+		  <content>
+			<include condition="Window.IsVisible(Custom1173.xml)">Content_Custom1173_100</include>
+			<include condition="Window.IsVisible(Settings.xml)">Content_Settings_100</include>
+			<include condition="Window.IsVisible(Custom1170.xml)">Content_Custom1170_100</include>
+			<include condition="Window.IsVisible(Custom1172.xml)">Content_Custom1172_100</include>
+			<include condition="Window.IsVisible(SkinSettings.xml)">Content_SkinSettings_100</include>
+			
+		  </content>
 		</control>
-	  </itemlayout>
-	  <focusedlayout height="75" width="250">
-		<include content="Buttons_Frame">
-			<param name="id" value="" />
-			<param name="border" value="40" />
-			<param name="color" value="$VAR[ButtonFocusColor]" />
-			<param name="height" value="80" />
-			<param name="posx" value="0" />
-			<param name="posy" value="20" />
-			<param name="width" value="250" />
-		</include>
-		<control type="label" description="שם">
-		  <textcolor>yellow</textcolor>
-		  <include>LabelC3</include>
-		  <posx>10</posx>
-		  <posy>20</posy>
-		  <width>230</width>
-		  <height>75</height>
-		  <scroll>true</scroll>
-		  <label>$INFO[ListItem.Label]</label>
-		  <visible>!String.IsEmpty(ListItem.Label)</visible>
-		</control>
-	  </focusedlayout>
-	  <content>
-	    <include condition="Window.IsVisible(Custom1173.xml)">Content_Custom1173_100</include>
-	    <include condition="Window.IsVisible(Settings.xml)">Content_Settings_100</include>
-		<include condition="Window.IsVisible(Custom1170.xml)">Content_Custom1170_100</include>
-		<include condition="Window.IsVisible(Custom1172.xml)">Content_Custom1172_100</include>
-		<include condition="Window.IsVisible(SkinSettings.xml)">Content_SkinSettings_100</include>
-		
-	  </content>
 	</control>
   </include>
   
   <include name="MenuDesign_TopSettings_" description="לשוניות">
-    <include>ArrowsLeftRight</include>
+    <control type="group">
+		<include>TopInformationSize0</include>
+		<include>ArrowsLeftRight</include>
 
-	<include content="MenuBackground">
-		<param name="border" value="35" />
-		<param name="color" value="$VAR[MenuColor]" />
-		<param name="height" value="81" />
-		<param name="posx" value="460" />
-		<param name="posy" value="142" />
-		<param name="width" value="1005" />
-		<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
+		<include content="MenuBackground">
+			<param name="border" value="35" />
+			<param name="color" value="$VAR[MenuColor]" />
+			<param name="height" value="81" />
+			<param name="posx" value="460" />
+			<param name="posy" value="145" />
+			<param name="width" value="1005" />
+			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
+			
+			<param name="type0" value="true" description="MenuBackground"/>
+			<param name="type1" value="false" description="DialogBackground"/>
+		</include>
 		
-		<param name="type0" value="true" description="MenuBackground"/>
-		<param name="type1" value="false" description="DialogBackground"/>
-    </include>
-	
-    <control type="grouplist" id="100" description="TopMenu">
-	  <animation condition="[Control.IsVisible(50) + !String.IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(100).OnPrevious + !Container(100).OnNext" effect="fade" start="100" end="10" delay="3000" time="220" reversible="true">Conditional</animation>
-	  <posx>460</posx>
-	  <posy>142</posy>
-	  <align>center</align>
-	  <height>100</height>
-	  <itemgap>5</itemgap>
-	  <onup condition="!Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(7011)">7017</onup>
-	  <onup condition="!Window.IsVisible(CustomHomeCustomizer.xml) + Player.HasAudio">ActivateWindow(12901)</onup>
-	  <onleft>noop</onleft>
-	  <onright>noop</onright>
-	  <ondown>50</ondown>
-	  <preloaditems>2</preloaditems>
-	  <pagecontrol>60</pagecontrol>	  
-	  <scrolltime tween="sine" easing="inout">220</scrolltime>
-	  <orientation>horizontal</orientation>
-	  <width>1000</width>
+		<control type="grouplist" id="100" description="TopMenu">
+		  <animation condition="[Control.IsVisible(50) + !String.IsEmpty(Container(50).ListItemNoWrap(0).Property(rinfo))] + !Container(50).OnNext + !Container(50).OnPrevious + !Container(100).OnPrevious + !Container(100).OnNext" effect="fade" start="100" end="10" delay="3000" time="220" reversible="true">Conditional</animation>
+		  <posx>460</posx>
+		  <posy>145</posy>
+		  <align>center</align>
+		  <height>100</height>
+		  <itemgap>5</itemgap>
+		  <onup condition="!Window.IsVisible(CustomHomeCustomizer.xml) + Control.IsVisible(7011)">7017</onup>
+		  <onup condition="!Window.IsVisible(CustomHomeCustomizer.xml) + Player.HasAudio">ActivateWindow(12901)</onup>
+		  <onleft>noop</onleft>
+		  <onright>noop</onright>
+		  <ondown>50</ondown>
+		  <preloaditems>2</preloaditems>
+		  <pagecontrol>60</pagecontrol>	  
+		  <scrolltime tween="sine" easing="inout">220</scrolltime>
+		  <orientation>horizontal</orientation>
+		  <width>1000</width>
 
-	  <include condition="Window.IsVisible(SettingsSystemInfo.xml)">Content_SettingsSystemInfo_100</include>
-	  
+		  <include condition="Window.IsVisible(SettingsSystemInfo.xml)">Content_SettingsSystemInfo_100</include>
+		  
+		</control>
 	</control>
-
   </include>
 
   <include name="ArrowsUpDown">
@@ -284,6 +291,9 @@
   </include>
   <include name="MenuDesign_Settings" description="Panel_Full">
 	<control type="group">
+		<include>TopInformationSize0</include>
+		<animation description="slide_he" condition="String.IsEqual(System.Language,Hebrew) + Player.HasVideo" effect="slide" end="30,0">Conditional</animation>
+		<animation description="slide_en" condition="!String.IsEqual(System.Language,Hebrew) + Player.HasVideo" effect="slide" end="-30,0">Conditional</animation>
 		<animation condition="Window.IsVisible(Custom1173.xml)" effect="zoom" center="960,170" start="100,82" end="100,82" time="0">Conditional</animation>
 
 		<include content="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
@@ -291,7 +301,7 @@
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="809" />
 			<param name="posx" value="460" />
-			<param name="posy" value="218" />
+			<param name="posy" value="221" />
 			<param name="width" value="1005" />
 			
 			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
@@ -301,7 +311,7 @@
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="392" />
 			<param name="posx" value="460" />
-			<param name="posy" value="230" />
+			<param name="posy" value="233" />
 			<param name="width" value="1005" />
 			
 			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
@@ -311,8 +321,8 @@
 		<control type="panel" id="50">
 		  <animation condition="Window.IsVisible(Custom1173.xml)" effect="slide" start="0,0" end="0,15" time="0">Conditional</animation>
 		  <posx>20</posx>
-		  <posy>250</posy>
-		  <width>1840</width>
+		  <posy>253</posy>
+		  <width>1440</width>
 		  <include condition="Window.IsVisible(Custom1173.xml)">MenuDesign_Settings_height2</include>
 		  <height>775</height>
 		  <include>4ways4</include>
@@ -333,6 +343,7 @@
   
   <include name="MenuDesign_Settings_" description="Panel_Full">
 	<control type="group">
+		<include>TopInformationSize0</include>
 		<animation condition="Window.IsVisible(Custom1173.xml)" effect="zoom" center="960,170" start="100,82" end="100,82" time="0">Conditional</animation>
 
 		<include content="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
@@ -340,7 +351,7 @@
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="809" />
 			<param name="posx" value="460" />
-			<param name="posy" value="218" />
+			<param name="posy" value="221" />
 			<param name="width" value="1005" />
 			
 			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
@@ -350,7 +361,7 @@
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="392" />
 			<param name="posx" value="460" />
-			<param name="posy" value="230" />
+			<param name="posy" value="233" />
 			<param name="width" value="1005" />
 			
 			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
@@ -360,7 +371,7 @@
 		<control type="grouplist" id="50">
 		  <animation condition="Window.IsVisible(Custom1173.xml)" effect="slide" start="0,0" end="0,15" time="0">Conditional</animation>
 		  <posx>490</posx>
-		  <posy>250</posy>
+		  <posy>253</posy>
 		  <width>940</width>
 		  <include condition="Window.IsVisible(Custom1173.xml)">MenuDesign_Settings_height2</include>
 		  <height>775</height>

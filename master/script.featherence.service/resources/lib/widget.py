@@ -262,8 +262,6 @@ class Main:
                     self.WINDOW.setProperty("%s.%d.AudioCodec"      % (request, count), streaminfo['audiocodec'])
                     self.WINDOW.setProperty("%s.%d.AudioChannels"   % (request, count), str(streaminfo['audiochannels']))
                     
-                    text = str(request) + " year: " + str(year) + " genre: " + str(genre) + " tagline: " + str(tagline) + ' fanart: ' + str(art)
-                    printlog(title="testing_", text=text, level=0)
             del json_query
 
     def _fetch_tvshows_recommended(self, request):
@@ -280,9 +278,8 @@ class Main:
                         break
                     count += 1
                     year = str(item['year'])
-                    genre = str(item['genre'])
+                    genre = str(item['genre']) ; genre = genre.replace("u'","'")
 					
-                    printlog(title="testing_2", text='+ str(genre) + "\n" + "year: " + str(year)', level=0)
                     json_query2 = xbmc.executeJSONRPC('{"jsonrpc": "2.0", "method": "VideoLibrary.GetEpisodes", "params": {"tvshowid": %d, "properties": ["title", "playcount", "plot", "season", "episode", "showtitle", "file", "lastplayed", "rating", "resume", "art", "streamdetails", "firstaired", "runtime"], "sort": {"method": "episode"}, "filter": {"field": "playcount", "operator": "is", "value": "0"}, "limits": {"end": 1}}, "id": 1}' %item['tvshowid'])
                     json_query2 = unicode(json_query2, 'utf-8', errors='ignore')
                     json_query2 = simplejson.loads(json_query2)
@@ -305,11 +302,21 @@ class Main:
                     else:
                         watched = "false"
                     if not self.PLOT_ENABLE and watched == "false":
+                        '''Hide Spoilers'''
                         plot = addonString(32014).encode('utf-8')
                     else:
-                        plot = item2['plot']
-                        plot = '"' + plot + '"' #featherence
-                        #plot = plot.replace(",",",amp;") #featherence
+                        plot_ = item2['plot']
+                        plot__ = '"' + plot_ + '"' #featherence
+                        plot___ = plot__.replace(",",",amp;") #featherence
+                        
+                        plot = plot_
+                        
+                        textP = 'plot: ' + to_utf8(plot) + newline + \
+                        'plot_: ' + to_utf8(plot_) + newline + \
+                        'plot__: ' + to_utf8(plot__) + newline + \
+                        'plot___: ' + to_utf8(plot___)
+                        
+                        printlog(title="testing_plot", text=str(textP), level=0)
                     art = item['art']
                     path = media_path(item['file'])
                     play = 'XBMC.RunScript(' + __addonid__ + ',episodeid=' + str(item2.get('episodeid')) + ')'
@@ -384,6 +391,9 @@ class Main:
                     #studio = json_query2['result']['tvshowdetails']['studio'][0]
                     genre = json_query2['result']['tvshowdetails']['genre']
                     year = json_query2['result']['tvshowdetails']['year']
+                    #try: plot = json_query['result']['episodes']['plot']
+                    #except: plot = ""
+                    #year = str(item['year']) <-------plot from json query (not 2!)
                     #year = str(item['year'])
                     text = "json_query: " + str(json_query) + newline + "json_query2: " + str(json_query2) + newline + "test_widget" + " " + str(genre) + "\n" + "year: " + str(year)
                     printlog(title="testing_2", text=text, level=0)
@@ -410,8 +420,9 @@ class Main:
                     if not self.PLOT_ENABLE and watched == "false":
                         plot = addonString(32014).encode('utf-8')
                     else:
-                        plot = item['plot']
-                        plot = '"' + plot + '"' #featherence
+                       plot = item['plot']
+                       #if plot != "": plot = '"' + plot + '"' #featherence
+							
                     art = item['art']
                     path = media_path(item['file'])
                     play = 'XBMC.RunScript(' + __addonid__ + ',episodeid=' + str(item.get('episodeid')) + ')'

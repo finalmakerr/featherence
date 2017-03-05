@@ -42,6 +42,13 @@
 		<visible>[!Window.IsVisible(Custom1138.xml) + [Integer.IsGreater(Window(home).Property(Button.ID),99) | Skin.HasSetting(DefaultActionButtons) + [Integer.IsGreater(Window(home).Property(Button.ID),89) | Integer.IsLess(Window(home).Property(Button.ID),17)] ] + Integer.IsLess(Window(home).Property(Button.ID),200)] | [Window.IsVisible(Custom1139.xml) + !String.Contains(Window(home).Property(SubButton.ID_),_90)] | !String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 		<visible>![String.IsEqual(Window(home).Property(Button.ID_),20) | String.IsEqual(Window(home).Property(Button.ID_),21)]</visible>
 	  </item>
+	  <item id="730" description="Super Widget">
+		<label>$VAR[SuperWidget]</label>
+		<onclick>RunScript(script.featherence.service,,?mode=232&amp;value=sw)</onclick>
+		<include>CheckProperty_Menus</include>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
+		<visible>!Window.IsVisible(Custom1139.xml) + !Window.IsVisible(Custom1138.xml) + Window.IsVisible(Custom1175.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+	  </item>
 	  <item id="704" description="הזזת פריט">
 		<label>13251</label>
 		<onclick>Dialog.Close(1175)</onclick>

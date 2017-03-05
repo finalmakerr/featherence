@@ -275,7 +275,6 @@
 	<value condition="!Skin.HasSetting(trailer2)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(trailer2)">$LOCALIZE[107]</value>
   </variable>
-  
   <variable name="82label2">
 	<value condition="!Skin.HasSetting(Skin_ShowLog)">$LOCALIZE[107]</value>
 	<value condition="Skin.HasSetting(Skin_ShowLog)">$LOCALIZE[106]</value>
@@ -283,6 +282,32 @@
   <variable name="83label2">
 	<value condition="!Skin.String(Skin_ShowLog2)">1</value>
 	<value condition="Skin.String(Skin_ShowLog2)">$INFO[Skin.String(Skin_ShowLog2)]</value>
+  </variable>
+  
+  <variable name="150label2">
+    <value description="resource.images.weathericons.flat" condition="!Skin.String(WeatherIcons)">$LOCALIZE[13278]</value>
+    <value description="resource.images.weathericons.white" condition="Skin.String(WeatherIcons,0)">white</value>
+	<value description="resource.images.weathericons.transparent" condition="Skin.String(WeatherIcons,1)">transparent</value>
+	<value description="resource.images.weathericons.outline" condition="Skin.String(WeatherIcons,2)">outline</value>
+	<value description="resource.images.weathericons.flat" condition="Skin.String(WeatherIcons,3)">flat</value>
+	<value description="resource.images.weathericons.grey" condition="Skin.String(WeatherIcons,4)">grey</value>
+	<value description="resource.images.weathericons.coloured" condition="Skin.String(WeatherIcons,5)">coloured</value>
+	<value description="resource.images.weathericons.animated" condition="Skin.String(WeatherIcons,6)">animated</value>
+	<value description="resource.images.weathericons.3d-white" condition="Skin.String(WeatherIcons,7)">3d-white</value>
+	<value description="resource.images.weathericons.3d-coloured" condition="Skin.String(WeatherIcons,8)">3d-coloured</value>
+  </variable>
+  
+  <variable name="WeatherIcons">
+    <value condition="!Skin.String(WeatherIcons)">special://home/addons/resource.images.weathericons.flat/resources/$INFO[Weather.fanartcode].png</value>
+    <value condition="Skin.String(WeatherIcons,0)">special://home/addons/resource.images.weathericons.white/resources/$INFO[Weather.fanartcode].png</value>
+    <value condition="Skin.String(WeatherIcons,1)">special://home/addons/resource.images.weathericons.transparent/resources/$INFO[Weather.fanartcode].png</value>
+    <value condition="Skin.String(WeatherIcons,2)">special://home/addons/resource.images.weathericons.outline/resources/$INFO[Weather.fanartcode].png</value>
+    <value condition="Skin.String(WeatherIcons,3)">special://home/addons/resource.images.weathericons.flat/resources/$INFO[Weather.fanartcode].png</value>
+    <value condition="Skin.String(WeatherIcons,4)">special://home/addons/resource.images.weathericons.grey/resources/$INFO[Weather.fanartcode].png</value>
+    <value condition="Skin.String(WeatherIcons,5)">special://home/addons/resource.images.weathericons.coloured/resources/$INFO[Weather.fanartcode].png</value>
+    <value condition="Skin.String(WeatherIcons,6)">special://home/addons/resource.images.weathericons.animated/resources/$INFO[Weather.fanartcode].png</value>
+    <value condition="Skin.String(WeatherIcons,7)">special://home/addons/resource.images.weathericons.3d-white/resources/$INFO[Weather.fanartcode].png</value>
+    <value condition="Skin.String(WeatherIcons,8)">special://home/addons/resource.images.weathericons.3d-coloured/resources/$INFO[Weather.fanartcode].png</value>
   </variable>
   
   <variable name="157label2">
@@ -458,16 +483,17 @@
     <value condition="Skin.HasSetting(BevelButton2)">$LOCALIZE[106]</value>
 	<value condition="!Skin.HasSetting(BevelButton2)">$LOCALIZE[107]</value>
   </variable>
+  
   <variable name="286label2">
     <value condition="Skin.HasSetting(StrokeButton2)">$LOCALIZE[106]</value>
 	<value condition="!Skin.HasSetting(StrokeButton2)">$LOCALIZE[107]</value>
   </variable>
   
-  
-  
   <variable name="324label2">
-    <value condition="!Skin.HasSetting(TopInformationSize)">$LOCALIZE[13278]</value>
-	<value condition="Skin.HasSetting(TopInformationSize)">BIGGER</value>
+    <value condition="!Skin.String(TopInformationSize)">$LOCALIZE[13278]</value>
+	<value condition="Skin.String(TopInformationSize,0)">SMALL</value>
+	<value condition="Skin.String(TopInformationSize,1)">MEDIUM</value>
+	<value condition="Skin.String(TopInformationSize,2)">LARGE</value>
   </variable>
   
   <variable name="325label2">
@@ -606,6 +632,15 @@
 	<value condition="Skin.HasSetting(BiggerWidgetLabels)">$LOCALIZE[107]</value>
   </variable>
   
+  <variable name="454label2" description="מיקום ו'ידגט">
+    <value condition="!Skin.String(WidgetPosition)">$LOCALIZE[13278]</value>
+	<value condition="Skin.String(WidgetPosition,1)">1</value>
+	<value condition="Skin.String(WidgetPosition,2)">2</value>
+	<value condition="Skin.String(WidgetPosition,3)">3</value>
+	<value condition="Skin.String(WidgetPosition,4)">4</value>
+	<value condition="Skin.String(WidgetPosition,5)">5</value>
+  </variable>
+  
   <variable name="458label2">
     <value condition="Skin.HasSetting(WidgetFanart)">$LOCALIZE[106]</value>
 	<value condition="!Skin.HasSetting(WidgetFanart)">$LOCALIZE[107]</value>
@@ -614,6 +649,16 @@
   <variable name="459label2">
     <value condition="!Skin.HasSetting(WidgetBackground)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(WidgetBackground)">$LOCALIZE[107]</value>
+  </variable>
+  
+  <variable name="466label2">
+    <value condition="Skin.HasSetting(WidgetShrink)">$LOCALIZE[106]</value>
+	<value condition="!Skin.HasSetting(WidgetShrink)">$LOCALIZE[107]</value>
+  </variable>
+  
+  <variable name="467label2">
+    <value condition="!Skin.HasSetting(WidgetRating)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(WidgetRating)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="468label2">
@@ -675,7 +720,111 @@
 	<value condition="Skin.HasSetting(51over50)">$LOCALIZE[31524]: $LOCALIZE[31010]</value>
   </variable>
   
+  <variable name="SuperWidget">
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw90) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),90)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw91) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),91)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw92) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),92)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw93) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),93)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw94) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),94)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw95) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),95)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw96) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),96)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw97) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),97)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw98) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),98)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw99) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),99)">Super Widget - Enable</value>
+	
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw100) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),100)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw101) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),101)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw102) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),102)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw103) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),103)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw104) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),104)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw105) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),105)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw106) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),106)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw107) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),107)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw108) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),108)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw109) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),109)">Super Widget - Enable</value>
+	
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw110) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),110)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw111) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),111)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw112) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),112)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw113) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),113)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw114) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),114)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw115) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),115)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw116) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),116)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw117) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),117)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw118) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),118)">Super Widget - Enable</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw119) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),119)">Super Widget - Enable</value>
+	<value>Super Widget - Disable</value>
+  </variable>
+  
+  <variable name="SuperWidget_Name">
+    <value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw90) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),90)">$INFO[Skin.String(sw90_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw91) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),91)">$INFO[Skin.String(sw91_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw92) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),92)">$INFO[Skin.String(sw92_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw93) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),93)">$INFO[Skin.String(sw93_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw94) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),94)">$INFO[Skin.String(sw94_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw95) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),95)">$INFO[Skin.String(sw95_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw96) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),96)">$INFO[Skin.String(sw96_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw97) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),97)">$INFO[Skin.String(sw97_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw98) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),98)">$INFO[Skin.String(sw98_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw99) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),99)">$INFO[Skin.String(sw99_name)]</value>
+	
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw100) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),100)">$INFO[Skin.String(sw100_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw101) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),101)">$INFO[Skin.String(sw101_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw102) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),102)">$INFO[Skin.String(sw102_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw103) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),103)">$INFO[Skin.String(sw103_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw104) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),104)">$INFO[Skin.String(sw104_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw105) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),105)">$INFO[Skin.String(sw105_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw106) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),106)">$INFO[Skin.String(sw106_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw107) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),107)">$INFO[Skin.String(sw107_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw108) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),108)">$INFO[Skin.String(sw108_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw109) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),109)">$INFO[Skin.String(sw109_name)]</value>
+	
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw110) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),110)">$INFO[Skin.String(sw110_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw111) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),111)">$INFO[Skin.String(sw111_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw112) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),112)">$INFO[Skin.String(sw112_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw113) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),113)">$INFO[Skin.String(sw113_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw114) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),114)">$INFO[Skin.String(sw114_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw115) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),115)">$INFO[Skin.String(sw115_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw116) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),116)">$INFO[Skin.String(sw116_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw117) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),117)">$INFO[Skin.String(sw117_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw118) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),118)">$INFO[Skin.String(sw118_name)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw119) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),119)">$INFO[Skin.String(sw119_name)]</value>
+  </variable>
+  
   <variable name="TopInformation3.2">
+    <value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw90) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),90)">$INFO[Skin.String(sw90)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw91) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),91)">$INFO[Skin.String(sw91)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw92) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),92)">$INFO[Skin.String(sw92)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw93) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),93)">$INFO[Skin.String(sw93)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw94) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),94)">$INFO[Skin.String(sw94)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw95) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),95)">$INFO[Skin.String(sw95)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw96) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),96)">$INFO[Skin.String(sw96)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw97) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),97)">$INFO[Skin.String(sw97)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw98) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),98)">$INFO[Skin.String(sw98)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw99) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),99)">$INFO[Skin.String(sw99)]</value>
+	
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw100) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),100)">$INFO[Skin.String(sw100)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw101) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),101)">$INFO[Skin.String(sw101)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw102) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),102)">$INFO[Skin.String(sw102)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw103) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),103)">$INFO[Skin.String(sw103)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw104) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),104)">$INFO[Skin.String(sw104)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw105) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),105)">$INFO[Skin.String(sw105)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw106) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),106)">$INFO[Skin.String(sw106)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw107) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),107)">$INFO[Skin.String(sw107)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw108) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),108)">$INFO[Skin.String(sw108)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw109) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),109)">$INFO[Skin.String(sw109)]</value>
+	
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw110) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),110)">$INFO[Skin.String(sw110)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw111) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),111)">$INFO[Skin.String(sw111)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw112) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),112)">$INFO[Skin.String(sw112)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw113) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),113)">$INFO[Skin.String(sw113)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw114) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),114)">$INFO[Skin.String(sw114)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw115) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),115)">$INFO[Skin.String(sw115)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw116) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),116)">$INFO[Skin.String(sw116)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw117) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),117)">$INFO[Skin.String(sw117)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw118) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),118)">$INFO[Skin.String(sw118)]</value>
+	<value condition="!Window.IsVisible(Custom1138.xml) + [String.Contains(System.CurrentControl,Super Widget) | Control.HasFocus(316)] + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + Skin.String(sw119) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),119)">$INFO[Skin.String(sw119)]</value>
+	
 	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),90)">$INFO[Skin.String(action90)]</value>
 	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),91)">$INFO[Skin.String(action91)]</value>
 	<value condition="!Window.IsVisible(Custom1138.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Control.HasFocus(311) + !Control.HasFocus(312) + String.IsEqual(Window(home).Property(Button.ID),92)">$INFO[Skin.String(action92)]</value>
@@ -1405,7 +1554,7 @@
 	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),w119_107)">$INFO[Skin.String(actionw119_107)]</value>
 	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),w119_108)">$INFO[Skin.String(actionw119_108)]</value>
 	<value condition="String.IsEqual(Window(home).Property(WidgetButton.ID_),w119_109)">$INFO[Skin.String(actionw119_109)]</value>
-  
+
   </variable>
   
   
