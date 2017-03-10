@@ -152,6 +152,7 @@ elif mode == 23:
 		from widget import *
 		Main()
 		'''---------------------------'''
+	else: notification('Widget is disabled?','',1000)
 
 elif mode == 24:
 	'''------------------------------
@@ -376,6 +377,8 @@ elif mode >= 200 and mode <= 249:
 			
 			if not os.path.exists(path):
 				os.mkdir(path)
+			if not os.path.exists(featherenceservice_addondata_path):
+				os.mkdir(featherenceservice_addondata_path)
 			if not os.path.exists(featherenceserviceaddondata_media_path):
 				os.mkdir(featherenceserviceaddondata_media_path)
 				
@@ -438,7 +441,10 @@ elif mode >= 200 and mode <= 249:
 								x = backgroundT.get('background'+str(i))
 								x2, x2_ = TranslatePath(x)
 								formula, custommediaL, = GeneratePath('background'+str(i)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"], save_='true')
-								
+								x = swT.get('sw'+str(i))
+								formula = formula + newline + 'sw'+str(i)+'=0' + str(x)
+								formula = formula + newline + 'sw'+str(i)+'_name=0' + str(xbmc.getInfoLabel('Skin.String(sw'+str(i)+'_name'))
+																
 								for i2 in range(100,110):
 									'''Sub'''
 									x = label_T.get('label'+str(i)+'_'+str(i2))
@@ -494,6 +500,9 @@ elif mode >= 200 and mode <= 249:
 									x = backgroundT.get('background'+str(i))
 									x2, x2_ = TranslatePath(x)
 									formula, custommediaL, = GeneratePath('background'+str(i)+'=0', formula, custommediaL, x2, x2_, ignoreL=["special://home/addons/", "special://skin/"], save_='true')
+									x = swT.get('sw'+str(i))
+									formula = formula + newline + 'sw'+str(i)+'=0' + str(x)
+									formula = formula + newline + 'sw'+str(i)+'_name=0' + str(xbmc.getInfoLabel('Skin.String(sw'+str(i)+'_name'))
 									
 									for i2 in range(100,110):
 										'''Sub'''

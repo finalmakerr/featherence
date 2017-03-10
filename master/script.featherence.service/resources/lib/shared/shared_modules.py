@@ -954,6 +954,7 @@ def installaddon(addonid2, update=True):
 		if not xbmc.getCondVisibility('System.HasAddon('+ addonid2 +')') and not os.path.exists(addons_path + addonid2):
 			printpoint = printpoint + "1"
 			if update == True: notification_common("24")
+			#installaddonP(addonid2, update=update)
 				
 		else: printpoint = printpoint + '7'
 		if '1' in printpoint:

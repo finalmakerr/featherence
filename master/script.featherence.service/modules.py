@@ -6,27 +6,26 @@ from shared_modules import *
 
 def mode0(admin, name, printpoint):
 	'''test'''
-	xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/play/?video_id=WFwHq6cY040)')
+	for i in range(90,120):
+		i_ = xbmc.getInfoLabel('Skin.String(label'+str(i)+')')
+		if i_ != "" and i_ != None:
+			setSkinSetting('0','id'+str(i),"")
+			setSkinSetting('0','label'+str(i),"")
+			setSkinSetting('0','action'+str(i),"")
+			setSkinSetting('0','color'+str(i),"")
+			setSkinSetting('0','icon'+str(i),"")
+			setSkinSetting('0','background'+str(i),"")
+			setSkinSetting('1','off'+str(i),"")
+			setSkinSetting('1','pwd'+str(i),"")
+			setSkinSetting('1','sub'+str(i),"")
+			setSkinSetting('0','sw'+str(i),"")
+			setSkinSetting('0','sw'+str(i)+'_name',"")
+	#xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/play/?video_id=WFwHq6cY040)')
 	if 1 + 1 == 3:
 		finalurl = 'plugin://plugin.video.youtube/play/?video_id=WFwHq6cY040'
 		pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO) ; pl.add(finalurl)
 		playlist = [] ; playlist.append(finalurl)
 		xbmc.Player().play(pl)
-	#from datetime import datetime
-	#dt_str = '2016-01-30'
-	
-	#x = stringtodate(dt_str, dt_func='%Y-%m-%d')
-	#notification(str(x),"","",2000)
-	#xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
-	#installaddonP('script.module.unidecode', update=False)
-	#xbmc.executebuiltin('ActivateWindow(10157)')
-	#xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=4)')
-	#xbmc.executebuiltin('ActivateWindow(Music,root)')
-	#xbmc.executebuiltin('ActivateWindow(MyMusicLibrary)')
-	#xbmc.executebuiltin('Skin.SetImage(TEMP,special://userdata/)')
-	#xbmc.executebuiltin('RunPlugin(resource.images.weathericons.outline)')
-	#installaddon('resource.images.weathericons.outline', update=False)
-	#installaddon('resource.images.weatherfanart.single,update=False')
 
 def mode4(value, value2, value3, name, printpoint):
 	'''Action'''
@@ -63,11 +62,12 @@ def mode5(value, admin, name, printpoint):
 		setsetting_custom1('script.featherence.service','Skin_UpdateLog',"true")
 		Skin_UpdateLog = 'true'
 		xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=23&value=)') #Widget
-		installaddonP('resource.images.weathericons.outline', update=False)
-		installaddonP('resource.images.weatherfanart.single', update=False)
-		installaddonP('resource.uisounds.featherence')
-		installaddonP('script.module.unidecode', update=False)
-		installaddonP('script.skinshortcuts')
+		if systembuildversion < 17:
+			installaddonP('resource.images.weathericons.outline', update=False)
+			installaddonP('resource.images.weatherfanart.single', update=False)
+			installaddonP('resource.uisounds.featherence')
+			installaddonP('script.module.unidecode', update=False)
+			installaddonP('script.skinshortcuts')
 		xbmc.sleep(2000) ; setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
 	
 	setProperty('TEMP', '', type="home")
@@ -1458,7 +1458,7 @@ def mode201(value, admin, name, printpoint):
 	---RESET-TO-DEFAULT--------------
 	------------------------------'''
 	#from variables2 import *
-	returned = ""
+	returned = "" ; extra = ""
 	container50hasfocus390 = xbmc.getCondVisibility('Container(50).HasFocus(390)') #BUTTONS
 
 	list = ['-> (Exit)', \
@@ -1630,6 +1630,8 @@ def mode201(value, admin, name, printpoint):
 			setSkinSetting('1','off'+str(i),"")
 			setSkinSetting('1','pwd'+str(i),"")
 			setSkinSetting('1','sub'+str(i),"")
+			setSkinSetting('0','sw'+str(i),"")
+			setSkinSetting('0','sw'+str(i)+'_name',"")
 			
 			for i2 in range(100,110):
 				'''subs'''
@@ -1666,6 +1668,9 @@ def mode201(value, admin, name, printpoint):
 				setSkinSetting('1','off'+str(i),"")
 				setSkinSetting('1','pwd'+str(i),"")
 				setSkinSetting('1','sub'+str(i),"")
+				setSkinSetting('0','sw'+str(i),"")
+				setSkinSetting('0','sw'+str(i)+'_name',"")
+				extra = extra + str(i) + '|'
 				'''---------------------------'''
 			for i2 in range(100,110):
 				'''subs'''
@@ -1707,7 +1712,7 @@ def mode201(value, admin, name, printpoint):
 			xbmc.executebuiltin('ActivateWindow(1117)') ; xbmc.sleep(2000) ; xbmc.executebuiltin('ActivateWindow(1173)')
 		
 	text = "list" + space2 + str(list) + newline + \
-	"returned" + space2 + str(returned)
+	"returned" + space2 + str(returned) + newline + 'extra: ' + str(extra)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	'''---------------------------'''
 
@@ -1903,8 +1908,11 @@ def mode211(value, admin, name, printpoint):
 	extra = "" ; TypeError = "" ; x = "" ; y = ""
 	
 	#xbmc.executebuiltin('Action(Close)')
-	if not int(property_buttonid_) > 0: printpoint = printpoint + "1" ; notification(localize(257) + space2 + '211', "", "", 1000)
-	else:
+	try:
+		if not int(property_buttonid_) > 0: printpoint = printpoint + "1" ; notification(localize(257) + space2 + '211', "", "", 1000)
+	except: printpoint = printpoint + 'q'
+	
+	if not '1' in printpoint and not 'q' in printpoint:
 		'''Get new control ID'''
 		if '0' in value:
 			'''main menu item'''
@@ -2378,6 +2386,8 @@ def mode218(value, admin, name, printpoint):
 		
 		message = message + newline + "Current XML" + space2 + xbmc.getInfoLabel('Window.Property(xmlfile)')
 		message = message + newline + "Current Control" + space2 + xbmc.getInfoLabel('System.CurrentControl')
+		message = message + newline + "Container(9000).ListItem(0).Label" + space2 + xbmc.getInfoLabel('Container(9000).ListItem(0).Label')
+		message = message + newline + "Container(9000).ListItem(0).Label2" + space2 + xbmc.getInfoLabel('Container(9000).ListItem(0).Label2')
 		message = message + newline + "TEMP" + space2 + property_temp
 		message = message + newline + "TEMP2" + space2 + property_temp2
 		
@@ -2451,6 +2461,9 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "WidgetButton.ID_" + space2 + property_widgetbuttonid_
 			message = message + newline + "WidgetButton.Name" + space2 + property_widgetbuttonname
 			message = message + newline + '---------------------------'
+			message = message + newline + "sw" + space2 + 'sw' + property_buttonid
+			message = message + newline + "sw_" + space2 + xbmc.getInfoLabel('Skin.String(sw'+property_buttonid+'')
+			message = message + newline + '---------------------------'
 			message = message + newline + "widget311" + space2 + xbmc.getInfoLabel('Skin.String(Widget311)')
 			message = message + newline + "widget312" + space2 + xbmc.getInfoLabel('Skin.String(Widget312)')
 			message = message + newline + "ReloadSkin" + space2 + property_reloadskin
@@ -2489,6 +2502,7 @@ def mode218(value, admin, name, printpoint):
 				message = message + newline + "NextAired.1.NextDate" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.1.NextDate)'))
 				message = message + newline + "NextAired.1.NextTitle" + space2 + str(xbmc.getInfoLabel('Window(Home).Property(NextAired.1.NextTitle)'))
 				message = message + newline + '---------------------------'
+			message = message + newline + "ListItem.Label" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.Label]'))
 			message = message + newline + "ListItem.Title" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.Title]'))
 			message = message + newline + "ListItem.TVShowTitle" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.TVShowTitle]'))
 			message = message + newline + "custom" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.Trailer]')) #CUSTOM TEST
@@ -2511,6 +2525,7 @@ def mode218(value, admin, name, printpoint):
 
 		header = name
 		diaogtextviewer(header,message)
+		printlog(title="views", printpoint="", text=message, level=0, option="")
 							
 def mode231(value, admin, name, printpoint):
 	'''------------------------------
@@ -2526,6 +2541,7 @@ def mode232(value, admin, name, printpoint):
 	------------------------------'''
 	id1 = "" ; id2 = "" ; extra = "" ; TypeError = "" ; xaction = "" ; xlabel = "" ; xicon = "" ; count = 0
 	if printpoint != "": printpoint = printpoint + "_"
+	if value == "sw": printpoint = printpoint + "sw" ; value = ""
 	
 	setProperty('mode232', 'true', type="home")
 	
@@ -2544,7 +2560,10 @@ def mode232(value, admin, name, printpoint):
 				else: test = int(value) + 1
 				id1 = value
 			elif custom1175W and not custom1138W:
-				if property_widgetbuttonid_ != "": id1 = property_widgetbuttonid_
+				if property_widgetbuttonid_ != "":
+					id1 = property_widgetbuttonid_
+				elif "sw" in printpoint:
+					id1 = 'sw' + str(property_buttonid)
 				elif property_buttonid_ == "": printpoint = printpoint + "9B"
 				else: test = int(property_buttonid) + 1 ; id1 = property_buttonid_
 			elif custom1138W:
@@ -2567,15 +2586,19 @@ def mode232(value, admin, name, printpoint):
 				Action_Thumbnail = '&skinThumbnail=icon'+id1
 				Action_Label = '&skinLabel=label'+id1
 				
-				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinAction=[skinAction]'+'&skinList=action'+id1+'&skinType=[skinType]'+Action_Thumbnail+Action_Label+')')
+				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True'+'&skinList=action'+id1+Action_Thumbnail+Action_Label+')')
 			elif custom1175W and not custom1138W:
 				'''Main Action'''
 				printpoint = printpoint + "x1"
-				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]'+Action_Thumbnail+Action_Label+')')
+				if 'sw' in printpoint:
+					xbmc.executebuiltin('RunScript(script.skinshortcuts,type=widgets&showNone=True&skinWidgetPath='+id1+'&skinWidgetName='+id1+'_name)')
+					#xbmc.executebuiltin('RunScript(script.skinshortcuts,type=widgets&amp;showNone=True/False]&amp;grouping=[grouping]&amp;skinWidget=[skinWidget]&amp;skinWidgetType=[skinWidgetType]&amp;skinWidgetName=[skinWidgetName]&amp;skinWidgetTarget=[skinWidgetTarget]&amp;skinWidgetPath=[skinWidgetPath])')
+				else:
+					xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinAction=action'+id1+Action_Thumbnail+Action_Label+')')
 			elif custom1138W:
 				'''Sub Action'''
 				printpoint = printpoint + "x2"
-				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinAction=action'+id1+'&skinList=[skinList]&skinType=[skinType]'+Action_Thumbnail+Action_Label+')')
+				xbmc.executebuiltin('RunScript(script.skinshortcuts,type=shortcuts&custom=True&showNone=True&skinAction=action'+id1+Action_Thumbnail+Action_Label+')')
 				'''---------------------------'''
 			else: printpoint = printpoint + "8"	
 			
@@ -2600,18 +2623,23 @@ def mode232(value, admin, name, printpoint):
 					elif count > 0: count -= 1
 					'''---------------------------'''
 				xbmc.sleep(500) ; xlabel = xbmc.getInfoLabel('Skin.String(label'+id1+')')
-				if xlabel == "":
-					setSkinSetting('0','label'+id1,'...')
-					if 'x1' in printpoint and not '_' in id1: setSkinSetting('0','label'+id1,'...', force=True)
-				else:
-					if 'x1' in printpoint and not '_' in id1: setSkinSetting('0','label'+id1,str(xlabel), force=True)
+				if not 'sw' in printpoint:
+					if xlabel == "":
+						setSkinSetting('0','label'+id1,'...')
+						if 'x1' in printpoint and not '_' in id1: setSkinSetting('0','label'+id1,'...', force=True)
+					else:
+						if 'x1' in printpoint and not '_' in id1: setSkinSetting('0','label'+id1,str(xlabel), force=True)
 				
 				xicon = xbmc.getInfoLabel('Skin.String(icon'+id1+')')
-				x, x_ = TranslatePath(xicon, filename=True, urlcheck_=False)
-				if x_ != "": setSkinSetting('0','icon'+id1,x_, force=True)
-				else: setSkinSetting('0','icon'+id1,x, force=True)
+				if not 'sw' in printpoint:
+					x, x_ = TranslatePath(xicon, filename=True, urlcheck_=False)
+					if x_ != "": setSkinSetting('0','icon'+id1,x_, force=True)
+					else: setSkinSetting('0','icon'+id1,x, force=True)
 				
-				xaction = xbmc.getInfoLabel('Skin.String(action'+id1+')')
+				if 'sw' in printpoint:
+					xaction = xbmc.getInfoLabel('Skin.String('+id1+')')
+				else:
+					xaction = xbmc.getInfoLabel('Skin.String(action'+id1+')')
 				xlabel = xbmc.getInfoLabel('Skin.String(label'+id1+')')
 					
 	text = "value" + space2 + str(value) + space + "property_buttonid" + space2 + str(property_buttonid) + newline + \
@@ -2630,7 +2658,7 @@ def mode233(value, admin, name, printpoint):
 	---Add-Thumb/Fanart--------------
 	------------------------------'''
 	printpoint = "" ; returned_ = ""
-	x = "" ; path = "" ; x2_ = ""
+	x = "" ; path = "" ; x2_ = "" ; x_ = "" ; xf = "" ; xf_ = ""
 	if '3' in value:
 		printpoint = printpoint + 'C'
 		y = property_widgetbuttonid_
@@ -2691,12 +2719,13 @@ def mode233(value, admin, name, printpoint):
 				printpoint = printpoint + '4'
 				
 				x_ = xbmc.getInfoLabel('Skin.String(background'+y+')')
+				xf, xf_ = TranslatePath(x_, filename=True)
 				x2, x2_ = TranslatePath(x_, filename=False)
 				
 				if os.path.exists(custombackgroundspath): path = custombackgroundspath
-				elif os.path.exists(x2_): path = x2_
-				elif os.path.exists(x2): path = x2
-				
+				elif os.path.isfile(xf):
+					if os.path.exists(x2_): path = x2_
+					elif os.path.exists(x2): path = x2
 				else: path = featherenceservicebackgrounds_path
 				#xbmc.executebuiltin('Skin.SetImage(background'+y+',,'+path+')')
 				returned_ = setPath(type=type,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
@@ -2706,12 +2735,13 @@ def mode233(value, admin, name, printpoint):
 				printpoint = printpoint + '5'
 				
 				x_ = xbmc.getInfoLabel('Skin.String(icon'+y+')')
+				xf, xf_ = TranslatePath(x_, filename=True)
 				x2, x2_ = TranslatePath(x_, filename=False)
 				
 				if os.path.exists(customiconspath): path = customiconspath
-				elif os.path.exists(x2_): path = x2_
-				elif os.path.exists(x2): path = x2
-				
+				elif os.path.isfile(xf):
+					if os.path.exists(x2_): path = x2_
+					elif os.path.exists(x2): path = x2
 				else: path = featherenceserviceicons_path
 				#xbmc.executebuiltin('Skin.SetImage(icon'+y+',,'+path+')')
 				returned_ = setPath(type=2,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
@@ -2723,6 +2753,10 @@ def mode233(value, admin, name, printpoint):
 			
 	text = 'value' + space2 + to_utf8(value) + space + 'path' + space2 + to_utf8(path) + newline + \
 	'name' + space2 + to_utf8(name) + newline + \
+	'x_' + space2 + to_utf8(x_) + newline + \
+	'xf' + space2 + to_utf8(xf) + newline + \
+	'xf_' + space2 + to_utf8(xf_) + newline + \
+	'x2' + space2 + to_utf8(x2) + newline + \
 	'x2_' + space2 + to_utf8(x2_) + newline + \
 	'y' + space2 + to_utf8(y) + newline + \
 	'property_widgetbuttonid_' + space2 + to_utf8(property_widgetbuttonid_) + newline + \
