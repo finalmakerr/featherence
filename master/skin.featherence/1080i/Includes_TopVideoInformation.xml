@@ -3,22 +3,23 @@
 
   <include name="TopVideoInformation">
 	<control type="group">
-	  <include>Slide3</include>
+	  <include condition="!Skin.HasSetting(Performance)">Slide3</include>
 	  <include>Slide3f</include>
 	  <include>TopInformationSize01</include>
-	  <!--<visible>[[Window.IsVisible(DialogFullScreenInfo.xml) | Window.IsVisible(DialogFavourites.xml) |  Window.IsVisible(VideoOSD.xml) | Window.IsVisible(DialogSubtitles.xml)] + VideoPlayer.IsFullscreen + Player.Paused] | Window.IsVisible(DialogVideoInfo.xml) | [Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | String.IsEqual(Window(home).Property(Button.ID),97)]] | [$EXP[View57] | $EXP[View58]] + [Container.Content(Seasons) | Container.Content(Episodes) | [Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(Custom1175.xml)] | !Skin.HasSetting(ShowTopVideoInformation)] | $EXP[View51] | $EXP[View50] | $EXP[View54] | $EXP[View59] | Control.IsVisible(11) | Control.IsVisible(50) | Control.IsVisible(56) | Control.IsVisible(450) | Window.IsVisible(MusicVisualisation.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(Custom1170.xml) + [String.IsEqual(Window(home).Property(TEMP),TopVideoInformationColor) | String.IsEqual(Window(home).Property(TEMP),TopVideoInformationFontColor)] | [Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312)]]</visible>-->
-	  <animation condition="System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
+	  <!--<visible>[[Window.IsVisible(DialogFullScreenInfo.xml) | Window.IsVisible(DialogFavourites.xml) |  Window.IsVisible(VideoOSD.xml) | Window.IsVisible(DialogSubtitles.xml)] + VideoPlayer.IsFullscreen + Player.Paused] | Window.IsVisible(DialogVideoInfo.xml) | [Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | String.IsEqual(Window(home).Property(Button.ID),97)]] | [$EXP[View57] | $EXP[View58]] + [Container.Content(Seasons) | Container.Content(Episodes) | [Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(Custom1175.xml)] | !Skin.HasSetting(ShowTopVideoInformation)] | $EXP[View51] | $EXP[View50] | $EXP[View54] | $EXP[View59] | Control.IsVisible(11) | Control.IsVisible(50) | Control.IsVisible(56) | Control.IsVisible(450) | Window.IsVisible(MusicVisualisation.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(Custom1170.xml) + [String.IsEqual(Window(home).Property(TEMP),TopVideoInformationColor) | String.IsEqual(Window(home).Property(TEMP),TopVideoInformationFontColor)]</visible>-->
+	  <visible>!Window.IsVisible(Home.xml) + $EXP[Contents] | Window.IsVisible(Home.xml) + $EXP[ContentsWidget]</visible>
+	  <visible>![ [ $EXP[View57] |  $EXP[View58] ] + [Control.HasFocus(7017) | Control.HasFocus(60) | Container.OnNext | Container.OnPrevious | Container.Scrolling] ]</visible>
+	  <visible>![Window.IsVisible(MyPVRGuide.xml) + !System.IdleTime(3) + !Window.IsVisible(DialogPVRInfo.xml]</visible>
+	  <animation condition="[System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)] + !Skin.HasSetting(Performance)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
+	  <animation condition="[System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)] + Skin.HasSetting(Performance)" effect="fade" start="100" end="0" time="220" reversible="false">Conditional</animation>
 	  
-	  <animation description="SideVideoInformation50/59_all" condition="[$EXP[View50s] + !Skin.HasSetting(SideVideoInformationAnimation) | $EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="1,440" time="0">Conditional</animation>
-	  <animation description="SideVideoInformation50_Slide" condition="$EXP[View50s] + Skin.HasSetting(SideVideoInformationAnimation) + !Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="1,1020" time="0">Conditional</animation>
-	  <animation description="SideVideoInformation50/59_he" condition="$EXP[View50s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-1,0" time="0">Conditional</animation>
+	  <animation description="SideVideoInformation50/59_all" condition="[$EXP[View50s] | $EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="1,-172" time="0">Conditional</animation>
 	  
-	  <animation description="SideVideoInformation51_en" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-480,245" time="0">Conditional</animation>
-	  <animation description="SideVideoInformation51_he" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="895,245" time="0">Conditional</animation>
-	  <!--<animation description="SideVideoInformation51_zoom" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="auto" start="93,100" end="93,100" time="0">Conditional</animation>-->
+	  <animation description="SideVideoInformation51_en" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-480,-347" time="0">Conditional</animation>
+	  <animation description="SideVideoInformation51_he" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="895,-347" time="0">Conditional</animation>
 	  
-	  <animation description="SideVideoInformation59_en" condition="$EXP[View59] + !Window.IsVisible(DialogVideoInfo.xml) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" start="0,0" end="670,575" time="0">Conditional</animation>
-	  <animation description="SideVideoInformation59_he" condition="$EXP[View59] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="-660,575" time="0">Conditional</animation>
+	  <animation description="SideVideoInformation59_en" condition="$EXP[View59] + !Window.IsVisible(DialogVideoInfo.xml) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" start="0,0" end="670,17" time="0">Conditional</animation>
+	  <animation description="SideVideoInformation59_he" condition="$EXP[View59] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="-660,17" time="0">Conditional</animation>
 	  
 	  <include>TopVideoInformation_Frame</include>
 	  
@@ -31,8 +32,7 @@
 		<animation description="SideVideoInformation59_en" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" start="0,0" end="-200,685" time="0">Conditional</animation>
 		<animation description="SideVideoInformation59_he" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="202,685" time="0">Conditional</animation>
 		<animation description="SideVideoInformation51" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="-200,685" time="0">Conditional</animation>
-		<include>Fade4</include>
-        <posy>-482</posy>
+        <posy>110</posy>
 		<visible>!String.IsEmpty(Control.GetLabel(1107)) + !Window.IsVisible(FileBrowser.xml)</visible>
 		<!--<visible>!Window.IsVisible(AddonBrowser.xml)</visible>-->
 		<control type="label" id="1107" description="משפט סרט/נצפו/עונה+פרק/משפט הרחבה (1107)">
@@ -125,7 +125,6 @@
 		<animation description="SideVideoInformation59_en" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" start="0,0" end="-205,685" time="0">Conditional</animation>
 		<!--<animation description="SideVideoInformation50/59_en" condition="[$EXP[View50s] | $EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-205,685" time="0">Conditional</animation>-->
 		<animation description="SideVideoInformation59_he" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="194,685" time="0">Conditional</animation>
-		<include>Fade4</include>
 		<visible>!String.IsEmpty(Control.GetLabel(1108))</visible>
 		<control type="label" id="1108" description="שם">
 		  <label>$VAR[TopVideoInformation8]</label>
@@ -134,7 +133,7 @@
 	    <control type="label" description="שם">
 		  <scroll>false</scroll>
 		  <posx>690</posx>
-          <posy>-561</posy>
+          <posy>31</posy>
           <height>70</height>
           <font>size34</font>
           <textcolor>yellow</textcolor>
@@ -145,10 +144,10 @@
 		  <visible>!$EXP[View51s]</visible>
         </control>
 		<control type="label" description="שם /SideVideoInformation51">
-		  <animation description="SideVideoInformation51" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="-205,685" time="0">Conditional</animation>
+		  <animation description="SideVideoInformation51" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="-205,440" time="0">Conditional</animation>
 		  <scroll>false</scroll>
 		  <posx>705</posx>
-          <posy>-711</posy>
+          <posy>119</posy>
           <height>90</height>
           <font>size34</font>
           <textcolor>yellow</textcolor>
@@ -169,12 +168,11 @@
 		  <animation description="SideVideoInformation59_en" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" start="0,0" end="-700,810" time="0">Conditional</animation>
 		  <animation description="SideVideoInformation59_he" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="690,810" time="0">Conditional</animation>
 		  <animation description="SideVideoInformation51_en" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-685,810" time="0">Conditional</animation>
-		  <animation description="SideVideoInformation51_he" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="265,810" time="0">Conditional</animation>
+		  <animation description="SideVideoInformation51_he" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="305,810" time="0">Conditional</animation>
 		  <posx>-20</posx>
 		  <control type="group" description="תמונת פרק">
-			<include>Fade4</include>
 			<posx>1225</posx>
-			<posy>-448</posy>	      
+			<posy>144</posy>	      
 			<visible>!String.Contains(Container.FolderPath,plugin://)</visible>
 			<visible>!Skin.HasSetting(EpisodeFanart)</visible>
 		    <animation description="SideVideoInformation50_he" condition="$EXP[View50s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-1710,0" time="0">Conditional</animation>
@@ -195,8 +193,7 @@
 			  <posy>0</posy>
 			  <width>1000</width>
 			  <height>191</height>
-			  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation</include>
-			  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation_</include>
+			  <texture border="20" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonA0C.png</texture>
 			  <visible>!String.IsEmpty(ListItem.Art(thumb)) + Container.content(Episodes) + !Window.IsActive(VideoFullScreen.xml) | !String.IsEmpty(Container(50).ListItem.Property(FanartCode))</visible>
 			  <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
 			  <visible>![$EXP[View50s] | $EXP[View59]]</visible>
@@ -210,7 +207,7 @@
 				<param name="posy" value="-7" />
 				<param name="width" value="207" />
 				<param name="condition" value="!Window.IsVisible(DialogVideoInfo.xml) + ![$EXP[View50s] | $EXP[View59]] + ![$EXP[View51s]] + !$EXP[View56]" />
-				<param name="diffuse" value="buttons/ButtonC0.png" />
+				<param name="diffuse" value="buttons/ButtonA0.png" />
 			</include>
 			
 			<include content="TopVideoInformation9" description="Episode Thumbnail - View56">
@@ -245,20 +242,15 @@
 		  </control>
 		  
 		  <control type="group" description="">
-			  <animation description="SideVideoInformation50_zoom" condition="[$EXP[View50s]] + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="1300,-550" start="110,120" end="110,120" time="0" reversible="false">Conditional</animation>
-			  <animation description="SideVideoInformation50_he" condition="[$EXP[View50s]] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-22,0" time="0">Conditional</animation>
-			  
-			  <animation description="SideVideoInformation59_zoom" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="1300,-550" start="110,120" end="110,120" time="0" reversible="false">Conditional</animation>
-			  <animation description="SideVideoInformation59_he" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="-22,0" time="0">Conditional</animation>
+			  <animation description="SideVideoInformation59_zoom" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="1300,42" start="110,120" end="110,120" time="0" reversible="false">Conditional</animation>
 			  
 			  <!--<animation description="SideVideoInformation51_zoom" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="1300,-551" start="110,120" end="110,120" time="0" reversible="false">Conditional</animation>
 			  <animation description="SideVideoInformation51_he" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-22,0" time="0">Conditional</animation>-->
 
 			  <control type="group" description="שנה/יוצר הרחבה">
 				<animation description="SideVideoInformation59_he" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="-13,0" time="0">Conditional</animation>
-				<include>Fade4</include>
 				<posx>1600</posx>
-				<posy>-499</posy>
+				<posy>93</posy>
 				<visible>!String.IsEmpty(Control.GetLabel(1102)) | !String.IsEmpty(Control.GetLabel(1103))</visible> <!--Window.IsVisible(DialogFullScreenInfo.xml) | -->
 				<control type="label" id="1102" description="שנה">
 				  <align>right</align>
@@ -286,7 +278,7 @@
 			  </control>
 			  <control type="group" description="עונה ופרק/יוצר הרחבה">
 				<posx>1240</posx>
-				<posy>-483</posy>
+				<posy>109</posy>
 				<animation description="Slide59_he" condition="$EXP[View59] + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="15,0">Conditional</animation>
 				<animation description="SlideOthers_he" condition="!$EXP[View59] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="15,0">Conditional</animation>
 				<!--<visible>!String.IsEmpty(Control.GetLabel(1480))</visible>-->
@@ -346,7 +338,7 @@
 			  </control>
 			  <control type="image" description="דירוג">
 				  <posx>1450</posx>
-				  <posy>-478</posy>
+				  <posy>114</posy>
 				  <height>24</height>
 				  <width>125</width>
 				  <aspectratio align="center">keep</aspectratio>
@@ -356,7 +348,7 @@
 			  </control>
 			  <control type="group" description="דירוג והצבעות/mpaa/נצפה לאחרונה">
 				<posx>1368</posx>
-				<posy>-483</posy>
+				<posy>109</posy>
 				<animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,40">Conditional</animation>
 				<control type="label" id="1143" description="דירוג והצבעות">
 				  <align>right</align>
@@ -382,7 +374,6 @@
 				</control>
 			  </control>  
 			  <control type="group" description="+סגנון (1106)">
-				<include>Fade4</include>
 				<visible>$EXP[Contents] | $EXP[ContentsWidget]</visible>
 				<visible>!Window.IsVisible(MyWeather.xml) + !Window.IsVisible(AddonBrowser.xml)</visible>
 				<posx>1165</posx>
@@ -391,7 +382,7 @@
 				  <animation description="Slide59_he" condition="$EXP[View59] + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="25,0">Conditional</animation>
 				  <animation description="SlideOthers_he" condition="!$EXP[View59] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="25,0">Conditional</animation>
 				  <posx>65</posx>
-				  <posy>-568</posy>
+				  <posy>24</posy>
 				  <width>320</width>
 				  <height>70</height>
 				  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
@@ -402,7 +393,7 @@
 				</control>
 				<control type="grouplist" description="תמונת הסגנון">
 					<posx>65</posx>
-					<posy>-559</posy>
+					<posy>33</posy>
 					<height>50</height>
 					<width>360</width>
 					<align>left</align>
@@ -414,7 +405,7 @@
 				</control>
 				<control type="grouplist" description="שם הסגנון">
 					<posx>65</posx>
-					<posy>-517</posy>
+					<posy>75</posy>
 					<height>40</height>
 					<width>360</width>
 					<align>left</align>
@@ -427,7 +418,7 @@
 				</control>
 				<control type="grouplist" description="שם הסגנון2">
 					<posx>80</posx>
-					<posy>-517</posy>
+					<posy>75</posy>
 					<height>50</height>
 					<width>370</width>
 					<itemgap>20</itemgap>
@@ -444,7 +435,7 @@
 				  <align>center</align>
 				  <height>50</height>
 				  <posx>513</posx>
-				  <posy>-559</posy>
+				  <posy>33</posy>
 				  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 				  <label>$VAR[TopVideoInformation1112a]</label>
 				  <visible>!String.IsEmpty(Control.GetLabel(1112))</visible>
@@ -453,7 +444,7 @@
 				<control type="label" description="טקסט">
 				  <posx>479</posx>
 				  <include>GenreTextPlace</include>
-				  <posy>-517</posy>
+				  <posy>75</posy>
 				  <label>$VAR[TopVideoInformation1112b]</label>
 				  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 				  <visible>Control.IsVisible(1112)</visible>
@@ -468,7 +459,7 @@
 				  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 				  <include>LabelR12</include> 
 				  <posx>565</posx>
-				  <posy>-571</posy>
+				  <posy>21</posy>
 				  <width>120</width>
 				  <label>$VAR[TopVideoInformation1]</label>
 				  <scroll>false</scroll>
@@ -479,7 +470,7 @@
 				  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 				  <include>LabelC12</include> 
 				  <posx>519</posx>
-				  <posy>-571</posy>
+				  <posy>21</posy>
 				  <width>50</width>
 				  <label>$VAR[VideoInHours]</label>
 				  <visible>Integer.IsGreater(Control.GetLabel(1109),0) + !String.IsEmpty(Control.GetLabel(1109))</visible> <!--!Window.IsActive(VideoFullScreen.xml) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !String.Contains(Container.FolderPath,shows)] | [Window.IsActive(VideoFullScreen.xml) + !VideoPlayer.Content(episodes)] + -->
@@ -490,45 +481,34 @@
 				  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 				  <include>LabelC12</include> 
 				  <posx>519</posx>
-				  <posy>-571</posy>
+				  <posy>21</posy>
 				  <width>50</width>
 				  <label>$VAR[VideoInMins]</label>
 				  <visible>Integer.IsGreater(Control.GetLabel(1110),0) + !String.IsEmpty(Control.GetLabel(1110)) + !Control.IsVisible(1109)</visible> <!--!Window.IsActive(VideoFullScreen.xml) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !String.Contains(Container.FolderPath,shows)] | [Window.IsActive(VideoFullScreen.xml) + !VideoPlayer.Content(episodes)] + -->
 				  <visible>[Integer.IsLess(ListItem.Property(TotalSeasons),1) + Container.Content(tvshows)] | !Container.Content(tvshows)</visible>
 				  <visible>!String.Contains(ListItem.path,videodb://movies/sets/)</visible>
 				</control>
-				<control type="label" description="שעות">
+				<control type="label" description="שעות/דקות">
 				  <align>center</align>
-				  <label>$LOCALIZE[12392]</label>
+				  <label>$VAR[HvsM]</label>
 				  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
 				  <font>size18</font>
 				  <posx>510</posx>
-				  <posy>-539</posy>
-				  <visible>Control.IsVisible(1109)</visible>
-				  <width>70</width>
-				</control>
-				<control type="label" description="דקות">
-				  <align>center</align>
-				  <label>$LOCALIZE[12391]</label>
-				  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
-				  <font>size18</font>
-				  <posx>510</posx>
-				  <posy>-539</posy>
-				  <visible>Control.IsVisible(1110)</visible>
+				  <posy>53</posy>
+				  <visible></visible>
 				  <width>70</width>
 				</control>
 			  </control>
 		  </control>
 	  </control>
 	  <control type="group" description="פרטי וידאו (1105)">
-		<animation description="Slide59_he" condition="$EXP[View59] + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="1250,0">Conditional</animation>
+		<animation description="Slide59_he" condition="$EXP[View59] + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="180,0">Conditional</animation>
 		<animation description="SlideOthers_he" condition="!$EXP[View59] + !Window.IsVisible(MyWeather.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="1240,0">Conditional</animation>
 		
 		<animation description="SideVideoInformation50_he" condition="$EXP[View50s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-1070,0" time="0" reversible="false">Conditional</animation>
-		<animation description="SideVideoInformation59_he" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="-1070,0" time="0" reversible="false">Conditional</animation>
-		<animation description="SideVideoInformation51_he" condition="[$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-1260,0" time="0" reversible="false">Conditional</animation>
+		
+		<animation description="SideVideoInformation51_he" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-1250,0" time="0" reversible="false">Conditional</animation>
 		<!--<animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="0,0" start="100,100" end="100,120" time="0">Conditional</animation>-->
-		<include>Fade4</include>
 		<visible>!String.IsEmpty(Control.GetLabel(1105)) + !String.Contains(Control.GetLabel(1105),$LOCALIZE[20457])</visible>
 		<control type="label" id="1105" description="***פרטי סרט***">
 		  <label>$VAR[TopVideoInformation5]</label>
@@ -536,7 +516,7 @@
 		</control>
 		<control type="group" description="פרטי סרט">
 			<posx>10</posx>
-			<posy>-561</posy>
+			<posy>31</posy>
 			<include content="TopVideoInformation5" description="פרטי סרט">
 				<param name="height" value="112" />
 				<param name="posx" value="0" />
@@ -585,10 +565,9 @@
 		<animation description="SideVideoInformation51_en" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-910,505" time="0" reversible="true">Conditional</animation>
 		<animation description="SideVideoInformation51_he" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="775,505" time="0" reversible="true">Conditional</animation>
 		<animation description="SideVideoInformation51_zoom" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml)" effect="zoom" center="auto" start="90,90" end="90,90" time="0" reversible="false">Conditional</animation>
-		<include>Fade4</include>
 		<height>270</height>
 		<posx>1720</posx>
-		<posy>-550</posy>
+		<posy>42</posy>
 		<width>197</width>
 		<include>ShowDVDdisc</include>
 		<control type="image" description="פוסטר -ללא מסגרת">
@@ -684,7 +663,7 @@
 	<param name="width" default="590"/>
 	
 	<param name="condition" default="true"/>
-	<param name="diffuse" default="buttons/ButtonC0.png"/>
+	<param name="diffuse" default="buttons/ButtonA0.png"/>
 	<param name="border" default="0"/>
 	<definition>
 		<control type="image" description="">
@@ -710,12 +689,11 @@
 		  <animation condition="Window.IsVisible(DialogVideoInfo.xml)" effect="slide" start="0,0" end="0,-2.6">Conditional</animation>
 		  <include>Fade_TopVideoInformationOverlay</include>
 		  <posx>-20</posx>
-		  <posy>-563</posy>
+		  <posy>29</posy>
 		  <width>1960</width>
 		  <height>123</height>
 		  
-		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation</include>
-		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation_</include>
+		  <texture border="20" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonA0C.png</texture>
 		  <visible>![$EXP[View50s] | $EXP[View59]] + !$EXP[View51s] | Window.IsVisible(DialogVideoInfo.xml)</visible>
 	  </control>
 	  <control type="image" description="מסגרת - מיוחד /SideVideoInformation50/59">	  
@@ -724,12 +702,11 @@
 		  <animation description="SideVideoInformation59_he" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="190,0" time="0">Conditional</animation>
 		  <include>Fade_TopVideoInformationOverlay</include>
 		  <posx>468</posx>
-		  <posy>111</posy>
+		  <posy>703</posy>
 		  <width>790</width>
 		  <height>530</height>
 		  
-		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation</include>
-		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation_</include>
+		  <texture border="20" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonA0C.png</texture>
 		  <visible>[$EXP[View50s] | $EXP[View59]]</visible>
 		  <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
 	  </control>
@@ -737,11 +714,10 @@
 		  <!--<animation description="SideVideoInformation51_he" condition="$EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="190,0" time="0">Conditional</animation>-->
 		  <include>Fade_TopVideoInformationOverlay</include>
 		  <posx>492</posx>
-		  <posy>-50</posy>
+		  <posy>542</posy>
 		  <width>520</width>
 		  <height>815</height>
-		  <include condition="!Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation2</include>
-		  <include condition="Skin.String(TopVideoInformationColor,None)">ButtonTopVideoInformation2_</include>
+		  <texture border="40" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonE0.png</texture>
 		  <visible>$EXP[View51s]</visible>
 		  <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
 	  </control>
@@ -845,7 +821,6 @@
   </variable>
   <variable name="TopVideoInformation7" description="משפט סרט/שם פרק(1107)">
     <value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Tagline)">$INFO[VideoPlayer.Tagline]</value>
-	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Title)">[B]$INFO[VideoPlayer.Title][/B]</value>
 	<value condition="Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Comment)">$INFO[MusicPlayer.Comment]</value>
 	<value description="משפט סרט" condition="!String.IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
 	<value description="שם הפרק" condition="Container.Content(Episodes) + !String.IsEqual(ListItem.Label,..) + !String.IsEmpty(ListItem.Title) + !String.Contain(ListItem.Title,ListItem.TVShowTitle) + !String.IsEqual(ListItem.Title,System.CurrentControl) + !String.IsEqual(Container(50).ListItem.Label,ListItem.Title)">[B]$INFO[ListItem.Title][/B]</value>
@@ -863,6 +838,7 @@
   </variable>
   <variable name="TopVideoInformation8" description="שם סרט/סדרה">
 	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.TVShowTitle]</value>
+	<value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Title)">$INFO[VideoPlayer.Title]</value>
 	<value condition="Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Title)">$INFO[MusicPlayer.Title]</value>
 	<value condition="[String.Contains(ListItem.Label,..)] + [Container.content(Episodes) | Container.content(Seasons)]">$INFO[Container.FolderName]</value>
 	<value condition="!String.IsEmpty(ListItem.TVShowTitle) + [Container.content(Seasons) | Container.content(Episodes)]">$INFO[ListItem.TVShowTitle]</value>

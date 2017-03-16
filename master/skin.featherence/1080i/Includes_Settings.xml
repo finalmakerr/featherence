@@ -215,7 +215,7 @@
 		<animation condition="Control.IsVisible(56)" effect="slide" start="0,0" end="-12.5,0" time="0">Conditional</animation>
 		<animation condition="Window.IsVisible(SettingsCategory.xml)" effect="slide" start="0,0" end="0,-15" time="0">Conditional</animation>
 		<animation condition="Window.IsVisible(Settings.xml) | Window.IsVisible(SkinSettings.xml)" effect="slide" start="0,0" end="0,66" time="0">Conditional</animation>
-		<animation condition="Window.IsVisible(Custom1173.xml)" effect="slide" start="0,0" end="0,75" time="0">Conditional</animation>
+		<animation condition="Window.IsVisible(Custom1173.xml)" effect="slide" start="0,0" end="0,80" time="0">Conditional</animation>
 		<visible>[Control.IsVisible(50) + Container(50).HasPrevious] | !Control.IsVisible(50)</visible>
 		<visible>[Control.IsVisible(5) + Container(5).HasPrevious] | !Control.IsVisible(5)</visible>
 		<visible>[Control.IsVisible(450) + Container(450).HasPrevious] | !Control.IsVisible(450)</visible>
@@ -391,7 +391,7 @@
 	  <itemlayout description="(כללי)" height="70" width="1460">
 		<include content="Buttons_Frame">
 			<param name="id" value="" />
-			<param name="border" value="35" />
+			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
 			<param name="height" value="75" />
 			<param name="posx" value="440" />
@@ -400,7 +400,7 @@
 		</include>
 		<include content="Buttons_Frame" description="מסגרת נתון">
 			<param name="id" value="" />
-			<param name="border" value="35" />
+			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
 			<param name="height" value="75" />
 			<param name="posx" value="500" />
@@ -458,7 +458,7 @@
 		
 		<include content="Buttons_Frame" description="רקע כפתור">
 			<param name="id" value="" />
-			<param name="border" value="35" />
+			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
 			<param name="height" value="75" />
 			<param name="posx" value="440" />
@@ -467,7 +467,7 @@
 		</include>
 		<include content="Buttons_Frame" description="רקע נתון">
 			<param name="id" value="" />
-			<param name="border" value="35" />
+			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
 			<param name="height" value="75" />
 			<param name="posx" value="500" />
@@ -625,7 +625,7 @@
 	  <description>Default Seperator</description>
 	  <width>1000</width>
 	  <height>2</height>
-	  <texture>images/line.png</texture>
+	  <texture colordiffuse="black">images/LineH.png</texture>
 	</control>
 	<control type="edit" id="12">
 	  <description>Default Edit</description>

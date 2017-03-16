@@ -7,6 +7,13 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence Kids v0.2.17 (16-Mar-17)
+------------------------
+- Added jksp movies addon (Hebrew).
+- Minor bugs fix.
+- Minor fanart, posters and translation update.
+
+------------------------
 Featherence Kids v0.2.16 (16-Feb-17)
 ------------------------
 - Added TV shows contents.

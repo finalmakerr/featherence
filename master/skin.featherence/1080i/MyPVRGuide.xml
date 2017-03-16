@@ -11,10 +11,10 @@
     </control>
 	<include>VideoPlayerWindow</include>
 	<control type="group" id="50">
-		<include description="10">EPGTimelineView</include>
-		<include description="11 (15)">LiveTVGuideNowNextView</include>
-		<include description="12 (15)">LiveTVGuideNowNextView</include>
-		<include description="13 (14)">LiveTVGuideChannelView</include>
+		<include description="10 	EPG Guide Timeline">EPGTimelineView</include>
+		<!--<include description="11 	EPG Guide Now">LiveTVGuideNowNextView</include>
+		<include description="12 	EPG Guide Next">LiveTVGuideNowNextView</include>
+		<include description="13 	EPG Guide Channel">LiveTVGuideChannelView</include>-->
 	</control>
 	<include>MenuDesign_Left</include>
 	<include>TopVideoInformation</include>

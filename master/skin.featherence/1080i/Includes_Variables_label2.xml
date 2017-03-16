@@ -174,8 +174,8 @@
 	<value condition="!Skin.HasSetting(Rating)">$LOCALIZE[107]</value>
   </variable>
   <variable name="13linfo">
-	<value condition="Skin.HasSetting(Rating)">misc/help/rating1.png</value>
-	<value condition="!Skin.HasSetting(Rating)">misc/help/rating2.png</value>
+	<value condition="Skin.HasSetting(Rating)">images/rating1.png</value>
+	<value condition="!Skin.HasSetting(Rating)">images/rating2.png</value>
   </variable>
   
   <variable name="14alabel2">
@@ -283,6 +283,10 @@
 	<value condition="!Skin.String(Skin_ShowLog2)">1</value>
 	<value condition="Skin.String(Skin_ShowLog2)">$INFO[Skin.String(Skin_ShowLog2)]</value>
   </variable>
+  <variable name="84label2">
+	<value condition="!Skin.HasSetting(Performance)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(Performance)">$LOCALIZE[107]</value>
+  </variable>
   
   <variable name="150label2">
     <value description="resource.images.weathericons.flat" condition="!Skin.String(WeatherIcons)">$LOCALIZE[13278]</value>
@@ -295,6 +299,21 @@
 	<value description="resource.images.weathericons.animated" condition="Skin.String(WeatherIcons,6)">animated</value>
 	<value description="resource.images.weathericons.3d-white" condition="Skin.String(WeatherIcons,7)">3d-white</value>
 	<value description="resource.images.weathericons.3d-coloured" condition="Skin.String(WeatherIcons,8)">3d-coloured</value>
+  </variable>
+  
+  <variable name="151label2">
+    <value description="resource.images.weatherfanart.single" condition="!Skin.String(WeatherFanart)">$LOCALIZE[13278]</value>
+    <value description="resource.images.weatherfanart.prairie" condition="Skin.String(WeatherFanart,0)">prairie</value>
+	<value description="resource.images.weatherfanart.multi" condition="Skin.String(WeatherFanart,1)">multi</value>
+	<value description="resource.images.weatherfanart.single" condition="Skin.String(WeatherFanart,2)">single</value>
+  </variable>
+  
+  <variable name="WeatherFanart">
+    <value condition="!Skin.String(WeatherFanart)">special://home/addons/resource.images.weatherfanart.single/resources/$INFO[Weather.fanartcode].jpg</value>
+    <value condition="Skin.String(WeatherFanart,0)">special://home/addons/resource.images.weatherfanart.prairie/resources/$INFO[Weather.fanartcode].jpg</value>
+    <value condition="Skin.String(WeatherFanart,1) + [Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)]">special://home/addons/resource.images.weatherfanart.multi/resources/$INFO[Weather.fanartcode]</value>
+    <value condition="Skin.String(WeatherFanart,1)">special://home/addons/resource.images.weatherfanart.multi/resources/$INFO[Weather.fanartcode]/weather-$INFO[Weather.fanartcode]-00.jpg</value>
+    <value condition="Skin.String(WeatherFanart,2)">special://home/addons/resource.images.weatherfanart.single/resources/$INFO[Weather.fanartcode].jpg</value>
   </variable>
   
   <variable name="WeatherIcons">
@@ -718,6 +737,12 @@
   <variable name="406label">
     <value condition="!Skin.HasSetting(51over50)">$LOCALIZE[31524]: $LOCALIZE[31011]</value>
 	<value condition="Skin.HasSetting(51over50)">$LOCALIZE[31524]: $LOCALIZE[31010]</value>
+  </variable>
+  
+  <variable name="824label2" description="">
+    <value condition="String.IsEmpty(Network.GatewayAddress) | String.IsEmpty(Network.IPAddress)">badges/specials/lan.png</value>
+	<value condition="[!String.IsEqual(System.InternetState,$LOCALIZE[15207]) + !String.IsEqual(System.InternetState,$LOCALIZE[503]) + !String.IsEmpty(System.InternetState)]">badges/specials/internet.png</value>
+	<value>badges/specials/wlan.png</value>
   </variable>
   
   <variable name="SuperWidget">
@@ -1557,5 +1582,8 @@
 
   </variable>
   
-  
+  <variable name="HvsM">
+    <value description="שעות" condition="Control.IsVisible(1109)">$LOCALIZE[12392]</value>
+    <value description="דקות" condition="Control.IsVisible(1110)">$LOCALIZE[12391]</value>
+  </variable>
 </includes>

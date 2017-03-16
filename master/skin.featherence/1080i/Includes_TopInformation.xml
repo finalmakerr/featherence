@@ -10,15 +10,15 @@
     <param name="d2" default="false"/>
 	<definition>
    <control type="grouplist">
-    <animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="245,0">Conditional</animation>
+    <animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="300,0">Conditional</animation>
 	<include condition="String.IsEqual(System.Language,Hebrew)">LeftC</include>
 	<include condition="!String.IsEqual(System.Language,Hebrew)">RightC</include>
 	<height>$PARAM[height]</height>
-	<posx>-250</posx>
+	<posx>-300</posx>
 	<itemgap>5</itemgap>
 	<orientation>horizontal</orientation>
 	<posy>5</posy>
-	<width min="100" max="250">auto</width>
+	<width min="100" max="300">auto</width>
 	<visible>!Skin.String(TopInformationIcons, 0) | Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]</visible>
 	<visible>!Skin.String(TopInformationIcons,0) + System.IdleTime(5)</visible>
 	<control type="image">
@@ -61,50 +61,25 @@
 	  <height>$PARAM[iconheight]</height>
 	  <width>$PARAM[iconheight]</width>
 	  <aspectratio aligny="center">stretch</aspectratio>
-	  <texture colordiffuse="$VAR[TopInformationFontColor]">resource://resource.images.weathericons.transparent/resources/$INFO[Weather.fanartcode].jpg</texture>
 	  <texture colordiffuse="$VAR[TopInformationFontColor]">$VAR[WeatherIcons]</texture>
 	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),1)</visible>
 	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
-	</control>
-	<control type="multiimage" id="830" description="Weather">
-	  <width>30</width>
-	  <height>$PARAM[iconheight]</height>
-	  <width>$PARAM[iconheight]</width>
-	  <aspectratio aligny="center">stretch</aspectratio>
-	  <imagepath background="true">special://home/addons/resource.images.weathericons.animated/resources/0</imagepath>
-	  <timeperimage>1000</timeperimage>
-	  <fadetime>1000</fadetime>
-	  <loop>yes</loop>
-	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),1)</visible>
-	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
-	  <visible>false</visible>
 	</control>
 	<control type="image" id="824" description="אין אינטרנט">
 	  <height>$PARAM[iconheight]</height>
 	  <width>$PARAM[iconheight]</width>
 	  <aspectratio aligny="center">keep</aspectratio>
-	  <texture colordiffuse="$VAR[TopInformationFontColor]">badges/specials/internet.png</texture>
-	  <visible>!Control.IsVisible(825)</visible>
-	  <visible>[!String.IsEqual(System.InternetState,$LOCALIZE[15207]) + !String.IsEqual(System.InternetState,$LOCALIZE[503]) + !String.IsEmpty(System.InternetState)]</visible>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">$VAR[824label2]</texture>
 	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),2)</visible>
 	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
 	</control>
-	<control type="image" id="825" description="אין רשת">
+	<control type="image" id="825" description="ביצועים גבוהים">
 	  <height>$PARAM[iconheight]</height>
 	  <width>$PARAM[iconheight]</width>
-	  <aspectratio aligny="center">stretch</aspectratio>
-	  <texture colordiffuse="$VAR[TopInformationFontColor]">badges/specials/lan.png</texture>
-	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),2)</visible>
-	  <visible>String.IsEmpty(Network.GatewayAddress) | String.IsEmpty(Network.IPAddress)</visible>
-	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
-	</control>
-	<control type="image" id="826" description="אינטרנט קווי / was bugged">
-	  <height>$PARAM[iconheight]</height>
-	  <width>$PARAM[iconheight]</width>
-	  <aspectratio aligny="center">stretch</aspectratio>
-	  <texture colordiffuse="$VAR[TopInformationFontColor]">badges/specials/wlan.png</texture>
-	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),2)</visible>
-	  <visible>!Control.IsVisible(824) + !Control.IsVisible(825)</visible>
+	  <aspectratio aligny="center">keep</aspectratio>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">special://home/addons/script.featherence.service/resources/icons/q3r.png</texture>
+	  <visible>Skin.HasSetting(Performance)</visible>
+	  <visible>!Skin.String(TopInformationIcons)</visible>
 	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
 	</control>
    </control>
@@ -321,7 +296,6 @@
 			    <animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-1900,0">Conditional</animation>
 				<posx>10r</posx>
 				<control type="group" description="ימין סמלים">
-					<visible>true</visible>	
 					<include content="IconsInformation">
 					  <param name="condition" value="$PARAM[condition]" />
 					  <param name="height" value="$PARAM[height]" />
@@ -357,6 +331,7 @@
 			<animation condition="!Control.HasFocus(7012)" effect="fade" start="20" end="0" time="100" reversible="true">Conditional</animation>
 			<posy>-44</posy>
 			<posx>-60</posx>
+			<onclick>Control.SetFocus(7017)</onclick>
 			<onclick>ActivateWindow(12901)</onclick>
 			<width>2040</width>
 			<visible>Player.HasMedia | Window.IsVisible(MusicVisualisation.xml)</visible>
@@ -501,8 +476,8 @@
 	<value description="הזזת פריט" condition="Window.IsVisible(CustomHomeCustomizer2.xml) + !String.IsEmpty(Window(home).Property(Button.Name))">MOVING [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
 	<value description="עריכת כפתור בתפריט משני" condition="Window.IsVisible(Custom1139.xml) + !String.IsEmpty(Window(home).Property(SubButton.Name))">SUB MENU [B]$INFO[Window(home).Property(SubButton.Name)][/B]</value>
 	<value description="עריכת כפתור בית" condition="Window.IsVisible(Custom1175.xml) + !String.IsEmpty(Window(home).Property(Button.Name))">EDIT [B]$INFO[Window(home).Property(Button.Name)][/B]</value>
-	<value description="מזג אוויר_he" condition="String.IsEqual(System.Language,Hebrew) + [Window.IsVisible(home) + String.IsEqual(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">[COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B] $LOCALIZE[35500]: </value>
-	<value description="מזג אוויר_en" condition="!String.IsEqual(System.Language,Hebrew) + [Window.IsVisible(home) + String.IsEqual(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">$LOCALIZE[35500]: [COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B]</value>	
+	<value description="מזג אוויר_he" condition="String.IsEqual(System.Language,Hebrew) + [Window.IsVisible(home) + String.IsEqual(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">[COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B] $LOCALIZE[12600]: </value>
+	<value description="מזג אוויר_en" condition="!String.IsEqual(System.Language,Hebrew) + [Window.IsVisible(home) + String.IsEqual(Window(home).Property(Button.ID),97) | Window.IsVisible(MyWeather.xml)]">$LOCALIZE[12600]: [COLOR yellow][B]$INFO[Weather.Location][/COLOR][/B]</value>	
 	<!--<value description="חלון מידע וידאו" condition="Window.IsVisible(DialogVideoInfo.xml)">$INFO[ListItem.Path]</value>-->
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + !String.IsEmpty(Slideshow.EXIFDate)]">[COLOR yellow][B]$INFO[Slideshow.EXIFDate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.IsEmpty(Slideshow.EXIFDate) + !String.IsEmpty(Slideshow.Filedate)]">[COLOR red][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>

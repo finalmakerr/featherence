@@ -1002,8 +1002,8 @@ msgid "Choose the amount of fade to be apply when the widget is not on focus."
 msgstr "בחר את אחוז העמעום שיופעל כאשר הו'ידגט אינו בפוקוס."
 
 msgctxt "#31541"
-msgid ""
-msgstr ""
+msgid "Choose your favourite fanart package for weather information."
+msgstr "Choose your favourite fanart package for weather information."
 
 msgctxt "#31542"
 msgid ""

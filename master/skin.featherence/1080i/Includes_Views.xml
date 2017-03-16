@@ -16,43 +16,19 @@
 		  <viewtype label="31011">List</viewtype>
 		  <include>ViewDesign_50_Layout</include>
 		</control>
-		
-		<control type="grouplist" description="קדימונים-תפריט רחב">
-		  <visible>!Skin.HasSetting(View50_Plus)</visible>
-		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
-		  <visible>!Container.Content(episodes)</visible>
-		  <posx>420</posx>
-		  <posy>149</posy>
-		  <width>480</width>
-		  <height>985</height>
-		  <orientation>vertical</orientation>
-		  <itemgap>45</itemgap>
-		  <include>Trailer_50</include>
-	    </control>
-		<control type="grouplist" description="קדימונים-תפריט צר">
-		  <visible>Skin.HasSetting(View50_Plus)</visible>
-		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
-		  <visible>!Container.Content(episodes)</visible>
-		  <posx>420</posx>
-		  <posy>149</posy>
-		  <width>480</width>
-		  <height>985</height>
-		  <orientation>vertical</orientation>
-		  <itemgap>0</itemgap>
-		  <include>Trailer_50</include>
-		  <include>Trailer_50A</include>
-	    </control>
+		<include condition="!Skin.HasSetting(Performance)">Trailer_50</include>
       </control>
 	  
     </control>
   </include>
 
-  <include name="ViewDesign_11" description="Center List">
+  <include name="ViewDesign_11" description="Side List">
     <control type="group" description="">
 	  <visible>Control.IsVisible(11)</visible>
       <control type="group">
 	    <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos46</include>
 		<control type="list" id="11">
+		  <include>TopInformationSize1</include>
 		  <posx>-10</posx>
 		  <posy>149</posy>
 		  <width>480</width>
@@ -69,6 +45,7 @@
 	  <visible>Control.IsVisible(450)</visible>
       <control type="group">
 		<control type="list" id="450">
+		  <include>TopInformationSize1</include>
 		  <include condition="!Skin.HasSetting(51over50)">450_50</include>
 		  <include condition="Skin.HasSetting(51over50)">450_51</include>
 		</control>
@@ -545,17 +522,7 @@
 		  <include>ViewDesign_51_Layout</include>
 		</control>
 		
-		<control type="grouplist" description="קדימונים">
-		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
-		  <visible>!Container.Content(episodes)</visible>
-		  <posx>520</posx>
-		  <posy>208</posy>
-		  <width>485</width>
-		  <height>985</height>
-		  <orientation>vertical</orientation>
-		  <itemgap>19.7</itemgap>
-		  <include>Trailer_51</include>
-	    </control>
+		<include condition="!Skin.HasSetting(Performance)">Trailer_51</include>		
       </control>
     </control>
   </include>
@@ -565,6 +532,7 @@
 	  <visible>Control.IsVisible(570)</visible>
       <control type="group">
 		<control type="list" id="570">
+		  <include>TopInformationSize1</include>
 		  <include>Slide1</include>
 		  <include>Slide2</include>
 		  <animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>
@@ -839,7 +807,6 @@
   <include name="ViewDesign_57" description="Wall">
     <control type="group" description="">
 	  <visible>$EXP[View57]</visible>
-	  <include>Background_Distance</include>
       <control type="group">
 		<animation condition="Control.HasFocus(7017) + Player.HasVideo" effect="slide" start="0,0" end="0,-100" time="700" reversible="false">Conditional</animation>
 		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View57_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,12" reversible="true">Conditional</animation>
@@ -862,42 +829,7 @@
 		  <include>ViewDesign_57_Layout</include>
         </control>
 	  </control>
-	  <control type="grouplist" description="קדימונים שורה 1">
-          <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
-		  <visible>!Container.Content(episodes)</visible>
-		  <include>TrailerFade</include>
-		  <posx>220</posx>
-          <posy>85</posy>
-          <width>1800</width>
-          <height>300</height>
-		  <orientation>horizontal</orientation>
-		  <itemgap>197</itemgap>
-		  <include>Trailer_57A</include>
-	  </control>
-	  <control type="grouplist" description="קדימונים שורה 2">
-          <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
-		  <visible>!Container.Content(episodes)</visible>
-		  <include>TrailerFade</include>
-		  <posx>220</posx>
-          <posy>418</posy>
-          <width>1800</width>
-          <height>300</height>
-		  <orientation>horizontal</orientation>
-		  <itemgap>197</itemgap>
-		  <include>Trailer_57B</include>
-	  </control>
-	  <control type="grouplist" description="קדימונים שורה 3">
-          <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
-		  <visible>!Container.Content(episodes)</visible>
-		  <include>TrailerFade</include>
-		  <posx>220</posx>
-          <posy>761</posy>
-          <width>1800</width>
-          <height>300</height>
-		  <orientation>horizontal</orientation>
-		  <itemgap>197</itemgap>
-		  <include>Trailer_57C</include>
-	  </control>
+	  <include condition="!Skin.HasSetting(Performance)">Trailer_57</include>
     </control>
   </include>
   
@@ -1067,25 +999,12 @@
 	</control>
   </include>
   
-  <include name="Background_Distance">
-    <control type="group">
-	  <visible>Skin.HasSetting(HideFanartOnNav)</visible>
-	  <animation description="Fade 57/78" condition="[Control.IsVisible(57) + $EXP[View57] | Control.IsVisible(58) + $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [$EXP[Contents] | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="fade" start="100" end="40" delay="3000" time="700" reversible="false">Conditional</animation>
-	  <include>Slide1</include>
-	  <height>552</height>
-	  <width>1920</width>
-	  <include>MainBackground3</include>
-	</control>
-	
-  </include>
-  
   <include name="ViewDesign_59" description="Side Wall">
     <control type="group" description="">
 	  <visible>$EXP[View59]</visible>
-	  <include>Background_Distance</include>
       <control type="group">
-		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View57_Distance) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" end="-12,12" reversible="true">Conditional</animation>
-		<animation description="מרווח_slide_he" condition="Skin.HasSetting(View57_Distance) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="-12,12" reversible="true">Conditional</animation>
+		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View59_Distance) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" end="-12,12" reversible="true">Conditional</animation>
+		<animation description="מרווח_slide_he" condition="Skin.HasSetting(View59_Distance) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="-12,12" reversible="true">Conditional</animation>
 
 		<animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
 		
@@ -1104,54 +1023,7 @@
 		  <include>ViewDesign_59_Layout</include>
         </control>
 	  </control>
-	  <control type="grouplist" description="קדימונים שורה 1">
-          <animation description="" condition="Skin.HasSetting(View57_Distance)" effect="slide" end="20,-10">Conditional</animation>
-          <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
-		  <animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
-		  <animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
-		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
-		  <visible>!Container.Content(episodes)</visible>
-		  <include>TrailerFade</include>
-		  <posx>210</posx>
-          <posy>129</posy>
-          <width>1028</width>
-          <height>300</height>
-		  <orientation>horizontal</orientation>
-		  <itemgap>197</itemgap>
-		  <include>Trailer_59A</include>
-	  </control>
-	  <control type="grouplist" description="קדימונים שורה 2">
-          <animation description="" condition="Skin.HasSetting(View57_Distance)" effect="slide" end="20,-10">Conditional</animation>
-		  <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
-		  <animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
-		  <animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
-		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
-		  <visible>!Container.Content(episodes)</visible>
-		  <include>TrailerFade</include>
-		  <posx>210</posx>
-          <posy>446</posy>
-          <width>1028</width>
-          <height>300</height>
-		  <orientation>horizontal</orientation>
-		  <itemgap>197</itemgap>
-		  <include>Trailer_59B</include>
-	  </control>
-	  <control type="grouplist" description="קדימונים שורה 3">
-		  <animation description="" condition="Skin.HasSetting(View57_Distance)" effect="slide" end="20,-10">Conditional</animation>
-		  <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
-		  <animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
-		  <animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
-          <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
-		  <visible>!Container.Content(episodes)</visible>
-		  <include>TrailerFade</include>
-		  <posx>210</posx>
-          <posy>773</posy>
-          <width>1028</width>
-          <height>300</height>
-		  <orientation>horizontal</orientation>
-		  <itemgap>197</itemgap>
-		  <include>Trailer_59C</include>
-	  </control>
+	  <include condition="!Skin.HasSetting(Performance)">Trailer_59</include>
     </control>
   </include>
   
@@ -1167,7 +1039,6 @@
   <include name="ViewDesign_58" description="Poster">
     <control type="group" description="">
 	  <visible>$EXP[View58]</visible>
-	  <include>Background_Distance</include>
       <control type="group">
 	    <animation condition="Control.HasFocus(7017) + Player.HasVideo" effect="slide" start="0,0" end="0,-45" time="700" reversible="false">Conditional</animation>
 		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View58_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,0" reversible="true">Conditional</animation>
@@ -1188,32 +1059,7 @@
 		  <include>ViewDesign_58_Layout</include>
         </control>
       </control>
-	  <control type="grouplist" description="קדימונים שורה 1">
-          <animation description="מרווח_slide_en" condition="Skin.HasSetting(View58_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="15,0" reversible="true">Conditional</animation>
-          <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
-		  <visible>!Container.Content(episodes)</visible>
-		  <include>TrailerFade</include>
-		  <posx>317</posx>
-          <posy>137</posy>
-          <width>1800</width>
-          <height>300</height>
-		  <orientation>horizontal</orientation>
-		  <itemgap>304</itemgap>
-		  <include>Trailer_58A</include>
-	  </control>
-	  <control type="grouplist" description="קדימונים שורה 2">
-          <animation description="מרווח_slide_en" condition="Skin.HasSetting(View58_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="15,0" reversible="true">Conditional</animation>
-		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
-		  <visible>!Container.Content(episodes)</visible>
-		  <include>TrailerFade</include>
-		  <posx>317</posx>
-          <posy>645</posy>
-          <width>1800</width>
-          <height>300</height>
-		  <orientation>horizontal</orientation>
-		  <itemgap>304</itemgap>
-		  <include>Trailer_58B</include>
-	  </control>
+	  <include condition="!Skin.HasSetting(Performance)">Trailer_58</include>
     </control>
   </include>
   <include name="ViewDesign_451" description="Poster">
@@ -1221,6 +1067,7 @@
 	  <visible>Control.IsVisible(451)</visible>
       <control type="group">
         <control type="panel" id="451">
+		  <include>TopInformationSize1</include>
 		  <include>Slide1</include>
 		  <include>Slide2</include>
           <posx>20</posx>
@@ -1467,268 +1314,9 @@
           <viewtype label="31015">List</viewtype>
 		  <include>ViewDesign_58_Layout</include>
         </control>
-		<control type="grouplist" description="קדימונים">
-		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
-		  <visible>!Skin.HasSetting(View54_Boat)</visible>
-		  <visible>!Container.Content(episodes)</visible>
-		  <posx>300</posx>
-          <posy>633</posy>
-          <width>1800</width>
-          <height>300</height>
-		  <orientation>horizontal</orientation>
-		  <itemgap>303</itemgap>
-		  <include>Trailer_54A</include>
-	    </control>
+		<include condition="!Skin.HasSetting(Performance)">Trailer_54</include>
       </control>
     </control>
   </include>
 
-  <include name="ViewDesign_111" description="PVR">
-    <control type="group" id="250" description="ראשי">
-	  <posx>240</posx>
-	  <posy>810</posy>
-	  <control type="image" description="מסגרת">
-		<aspectratio>stretch</aspectratio>
-		<height>350</height>
-		<posy>-50</posy>
-		<width>1440</width>
-		<texture border="20" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
-	  </control>
-
-	  <control type="group" description="כותרות">
-		<control type="label" description="קבוצת ערוצים">
-		  <posx>520</posx>
-		  <posy>-25</posy>
-		  <include>LabelC2</include>
-		  <height>5</height>
-	      <width>400</width>
-	      <textcolor>white</textcolor>
-	      <label>$INFO[VideoPlayer.ChannelGroup]</label>
-		  <visible>!pvr.IsPlayingRadio</visible>
-		</control>
-		<control type="label" description="קבוצת רדיו">
-		  <posx>520</posx>
-		  <posy>-25</posy>
-		  <include>LabelC2</include>
-		  <height>5</height>
-	      <width>400</width>
-	      <textcolor>white</textcolor>
-	      <label>$INFO[MusicPlayer.ChannelGroup]</label>
-		  <visible>pvr.IsPlayingRadio</visible>
-		</control>
-	  </control>
-      <control type="list" id="11">
-        <posx>0</posx>
-        <posy>-5</posy>
-        <width>1440</width>
-        <height>300</height>
-        <onup>11</onup>
-        <ondown>11</ondown>
-        <onleft>PreviousChannelGroup</onleft>
-        <onright>NextChannelGroup</onright>
-        <pagecontrol>60</pagecontrol>
-        <itemlayout width="1360" height="54">
-          <control type="image" description="הקלטה">
-            <posx>10</posx>
-            <posy>5</posy>
-            <width>40</width>
-            <height>40</height>
-            <texture>pvr/rec.png</texture>
-			<aspectratio>keep</aspectratio>
-            <visible>ListItem.IsRecording</visible>
-          </control>
-		  <control type="image" description="תזמון הקלטה">
-            <posx>10</posx>
-            <posy>5</posy>
-            <width>40</width>
-            <height>40</height>
-            <texture>pvr/timer.png</texture>
-			<aspectratio>keep</aspectratio>
-            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-          </control>
-		  <control type="label" description="מספר הערוץ">
-            <posx>50</posx>
-			<posy>5</posy>
-            <width>60</width>
-            <height>40</height>
-            <include>LabelL1</include>
-            <textcolor>white</textcolor>
-            <selectedcolor>yellow</selectedcolor>
-            <info>ListItem.ChannelNumber</info>
-          </control>
-		  <control type="image" description="אייקון">
-			<posx>120</posx>
-			<posy>5</posy>
-			<top></top>
-			<width>40</width>
-			<height>40</height>
-			<texture>$INFO[ListItem.Icon]</texture>
-			<aspectratio>keep</aspectratio>
-		  </control>
-		  <control type="label" description="שעה">
-            <posx>170</posx>
-			<posy>5</posy>
-            <width>145</width>
-            <height>40</height>
-            <include>LabelL1</include>
-            <textcolor>white</textcolor>
-            <selectedcolor>yellow</selectedcolor>
-            <info>ListItem.StartTime</info>
-          </control>
-		  <control type="image" description="קו">
-			<aspectratio>keep</aspectratio>
-			<height>280</height>
-			<posx>280</posx>
-			<posy>10</posy>
-			<top>4</top>
-			<width>40</width>
-			<texture border="5" colordiffuse="$VAR[MenuColor]">images/LineV.png</texture>
-		  </control>
-          <control type="label" description="שם הערוץ">
-            <posx>310</posx>
-            <posy>5</posy>
-            <width>400</width>
-            <height>40</height>
-            <include>LabelL1</include>
-            <textcolor>white2</textcolor>
-            <selectedcolor>yellow</selectedcolor>
-            <info>ListItem.Label</info>
-          </control>
-		  <control type="image" description="קו">
-			<aspectratio>keep</aspectratio>
-			<height>280</height>
-			<posx>690</posx>
-			<posy>10</posy>
-			<top>4</top>
-			<width>40</width>
-			<texture border="5" colordiffuse="$VAR[MenuColor]">images/LineV.png</texture>
-		  </control>
-		  <control type="label" description="שם התוכנית">
-            <posx>740</posx>
-            <posy>5</posy>
-            <width>1000</width>
-            <height>40</height>
-            <include>LabelL1</include>
-            <textcolor>white</textcolor>
-            <selectedcolor>yellow</selectedcolor>
-            <info>ListItem.Title</info>
-          </control>
-		  <control type="image" description="קו">
-			<posx>955</posx>
-			<posy>10</posy>
-			<top>4</top>
-			<width>40</width>
-			<height>280</height>
-			<texture>images/LineV.png</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>false</visible>
-		  </control>
-		  <control type="textbox" description="פרטי תוכנית">
-            <posx>980</posx>
-            <posy>5</posy>
-            <width>400</width>
-            <height>40</height>
-            <include>LabelL1</include>
-            <textcolor>white</textcolor>
-            <label>$INFO[ListItem.Plot]</label>
-			<visible>false</visible>
-          </control>
-        </itemlayout>
-        <focusedlayout width="1360" height="54">
-          <control type="image" description="כפתור">
-		    <posy>-5</posy>
-            <width>1440</width>
-            <height>70</height>
-            <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
-          </control>
-          <control type="image" description="הקלטה">
-            <posx>10</posx>
-            <posy>5</posy>
-            <width>40</width>
-            <height>40</height>
-            <texture>pvr/rec.png</texture>
-			<aspectratio>keep</aspectratio>
-            <visible>ListItem.IsRecording</visible>
-          </control>
-		  <control type="image" description="תזמון הקלטה">
-            <posx>10</posx>
-            <posy>5</posy>
-            <width>40</width>
-            <height>40</height>
-            <texture>pvr/timer.png</texture>
-			<aspectratio>keep</aspectratio>
-            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-          </control>
-		  <control type="label" description="מספר הערוץ">
-            <posx>50</posx>
-			<posy>5</posy>
-            <width>60</width>
-            <height>40</height>
-            <include>LabelL1</include>
-            <textcolor>yellow</textcolor>
-            <selectedcolor>yellow</selectedcolor>
-            <info>ListItem.ChannelNumber</info>
-          </control>
-		  <control type="image" description="אייקון">
-			<posx>120</posx>
-			<top>5</top>
-			<width>40</width>
-			<height>40</height>
-			<texture>$INFO[ListItem.Icon]</texture>
-			<aspectratio>keep</aspectratio>
-		  </control>
-		  <control type="label" description="שעה">
-            <posx>170</posx>
-			<posy>5</posy>
-            <width>145</width>
-            <height>40</height>
-            <include>LabelL1</include>
-            <textcolor>yellow</textcolor>
-            <selectedcolor>yellow</selectedcolor>
-            <info>ListItem.StartTime</info>
-          </control>
-          <control type="label" description="שם הערוץ">
-            <posx>310</posx>
-            <posy>5</posy>
-            <width>400</width>
-            <height>40</height>
-            <include>LabelL1</include>
-            <textcolor>white2</textcolor>
-            <selectedcolor>yellow</selectedcolor>
-            <info>ListItem.Label</info>
-          </control>
-		  <control type="label" description="שם התוכנית">
-            <posx>740</posx>
-            <posy>5</posy>
-            <width>1000</width>
-            <height>40</height>
-            <include>LabelL1</include>
-            <textcolor>yellow</textcolor>
-            <selectedcolor>yellow</selectedcolor>
-            <info>ListItem.Title</info>
-          </control>
-		  <control type="image" description="קו">
-			<posx>955</posx>
-			<posy>10</posy>
-			<top>4</top>
-			<width>40</width>
-			<height>280</height>
-			<texture>images/LineV.png</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>false</visible>
-		  </control>
-		  <control type="textbox" description="פרטי תוכנית">
-            <posx>980</posx>
-            <posy>5</posy>
-            <width>400</width>
-            <height>40</height>
-            <include>LabelL1</include>
-            <textcolor>yellow</textcolor>
-            <label>$INFO[ListItem.Plot]</label>
-			<visible>false</visible>
-          </control>
-        </focusedlayout>
-      </control>
-    </control>
-  </include>
-</includes>
+  </includes>

@@ -156,7 +156,7 @@
 		  <control type="image" description="OFF">
             <aspectratio align="left">stretch</aspectratio>
 		    <height>70</height>
-		    <texture>misc/help/off.png</texture>
+		    <texture>images/off.png</texture>
 		    <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(ListItem.Property(off))</visible>
 		    <width>70</width>
           </control>
@@ -194,7 +194,7 @@
 		<control type="image" description="OFF">
           <aspectratio align="left">stretch</aspectratio>
 		  <height>70</height>
-		  <texture>misc/help/off.png</texture>
+		  <texture>images/off.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(ListItem.Property(off))</visible>
 		  <width>70</width>
         </control>

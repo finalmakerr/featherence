@@ -9,21 +9,15 @@
   
   <variable name="11156label" description="">
     <value condition="![!Skin.HasSetting(ShowDVDCases) | Skin.HasSetting(ShowDVDCases2)]">0</value>
-	<!--<value condition="![!String.IsEmpty(Player.Art(tvshow.poster)) | !String.IsEmpty(Player.Art(poster)) | !String.IsEmpty(Control.GetLabel(1103)) | !String.IsEmpty(VideoPlayer.Cover) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Art(tvshow.poster)) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Thumb) | !String.IsEmpty(ListItem.Icon) | String.Contains(ListItem.path,videodb://movies/sets/)]">1</value>-->
 	<value condition="![!String.Contains(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>
 	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
 	<value condition="$EXP[View50] + !Skin.HasSetting(ShowDVDCases2)">14</value>
 	<value condition="![ $EXP[View57] + !Skin.HasSetting(ShowDVDCases) ] | !$EXP[View57]">5</value>
-	<value condition="![ [$EXP[View59] + !Skin.HasSetting(ShowDVDCases) ] | !$EXP[View59]">15</value>
+	<value condition="![ $EXP[View59] + !Skin.HasSetting(ShowDVDCases) ] | !$EXP[View59]">15</value>
 	<value condition="![ [ [ $EXP[View54] | $EXP[View58] ] + Skin.HasSetting(ShowDVDCases2) ] | !$EXP[View54] + !$EXP[View58] ]">6</value>
 	<value condition="![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + !Window.IsVisible(Home.xml)">7</value>
 	<value condition="![[!String.IsEmpty(ListItem.Rating) | !String.IsEmpty(Container.ListItemNoWrap(-3).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(3).Rating)] | Window.IsVisible(Home.xml)] + !String.Contains(Container.FolderPath,videodb://)">8</value>
 	<value condition="Window.IsVisible(Home.xml) + [String.IsEqual(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget317))]">12</value>
-	<!--<value condition="Window.IsVisible(DialogContextMenu.xml)">10</value>-->
-	<!--<value condition="![!Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogContextMenu.xml)]">8</value>-->
-	<!--<value condition="!String.IsEmpty(ListItem.Rating)">8</value>-->
-	
-	<!--<value>test</value>-->
   </variable>
   <variable name="BorderTexture">
     <value condition="String.IsEqual(ListItem.Label,..)">$VAR[VideoInformation2]</value>
@@ -33,16 +27,17 @@
     <value condition="String.Contains(Control.GetLabel(311),YouTube) | String.Contains(Control.GetLabel(311),Add URL)">YouTube</value>
 	<value condition="String.Contains(Control.GetLabel(311),thumb) | String.Contains(Control.GetLabel(311),$LOCALIZE[20015])">Google</value>
 	<value condition="String.Contains(Control.GetLabel(311),fanart) | String.Contains(Control.GetLabel(311),$LOCALIZE[20441])">Google</value>
+	<value condition="Skin.HasSetting(Admin)">Google</value>
   </variable>
   <variable name="Button9090" description="כפתור קצה">
-  	<value description="סרטים שנוספו לאחרונה" condition="Control.IsVisible(311) + !Skin.HasSetting(MoviesShelfWL) + !Player.HasVideo">$LOCALIZE[20386]</value>
-	<value description="סרטים שלא נצפו" condition="Control.IsVisible(311) + Skin.HasSetting(MoviesShelfWL) + !Player.HasVideo">$LOCALIZE[31811]</value>
-	<value description="פרקים שנוספו לאחרונה" condition="Control.IsVisible(312) + !Skin.HasSetting(TVShelf_Watchlist) + !Player.HasVideo">$LOCALIZE[20387]</value>
-	<value description="סדרות בתהליך" condition="Control.IsVisible(312) + Skin.HasSetting(TVShelf_Watchlist) + !Player.HasVideo">$LOCALIZE[31813]</value>
+  	<value description="סרטים שנוספו לאחרונה" condition="Control.IsVisible(311) + !Skin.HasSetting(MoviesShelfWL)">$LOCALIZE[20386]</value>
+	<value description="סרטים שלא נצפו" condition="Control.IsVisible(311) + Skin.HasSetting(MoviesShelfWL)">$LOCALIZE[31811]</value>
+	<value description="פרקים שנוספו לאחרונה" condition="Control.IsVisible(312) + !Skin.HasSetting(TVShelf_Watchlist)">$LOCALIZE[20387]</value>
+	<value description="סדרות בתהליך" condition="Control.IsVisible(312) + Skin.HasSetting(TVShelf_Watchlist)">$LOCALIZE[31813]</value>
   </variable>
   <variable name="Button9091" description="כפתור קצה">
-  	<value condition="Control.IsVisible(311) + String.IsEmpty(Window(home).Property(Widget_Trailers)) + !Player.HasVideo">$LOCALIZE[342]</value>
-	<value condition="Control.IsVisible(311) + !String.IsEmpty(Window(home).Property(Widget_Trailers)) + !Player.HasVideo">$LOCALIZE[31812]</value>
+  	<value condition="Control.IsVisible(311) + String.IsEmpty(Window(home).Property(Widget_Trailers))">$LOCALIZE[342]</value>
+	<value condition="Control.IsVisible(311) + !String.IsEmpty(Window(home).Property(Widget_Trailers))">$LOCALIZE[31812]</value>
   </variable>
   <variable name="Button708" description="רקע אקראי לפי ו'ידגט">
 	<value description="סרטים-כן" condition="[String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))] + Skin.HasSetting(wbackground90)">$LOCALIZE[106]</value>
@@ -279,17 +274,6 @@
 	<value condition="String.IsEqual(System.Language,Hebrew) + !String.IsEmpty(ListItem.Director)">$INFO[ListItem.Director] [COLOR=white]$LOCALIZE[20339]:[/COLOR]</value>
 	<value condition="!String.IsEqual(System.Language,Hebrew) + !String.IsEmpty(ListItem.Director)">[COLOR=white]$LOCALIZE[20339]:[/COLOR] $INFO[ListItem.Director]</value>
   </variable>
-  <variable name="fanart" description="פאנארט">
-	<value condition="Skin.HasSetting(EpisodeFanart) + !String.IsEmpty(ListItem.Thumb) + [Container.Content(seasons) | Container.Content(episodes)] + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Season)">$INFO[ListItem.Thumb]</value>
-	<value condition="!String.IsEmpty(ListItem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
-	<value condition="!String.IsEmpty(Fanart.Image)">$INFO[Fanart.Image]</value>
-	<value condition="!String.IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
-    <value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-	<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-	<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
-	<value condition="Window.IsVisible(MyPics.xml) + !String.IsEmpty(ListItem.FilenameAndPath)">$INFO[ListItem.FilenameAndPath]</value>
-	<value condition="Skin.HasSetting(PosterFanart) + !String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
-  </variable>
   <variable name="banner" description="פאנארט">
     <value condition="!String.IsEmpty(ListItem.Art(tvshow.banner))">$INFO[ListItem.Art(tvshow.banner)]</value>
 	<value condition="!String.IsEmpty(ListItem.Art(season.banner))">$INFO[ListItem.Art(season.banner)]</value>
@@ -327,7 +311,7 @@
   <variable name="VideoInformation1" description="עונה/פרק/וידאו/סינון">
 	<value condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Season)">$LOCALIZE[20373] $INFO[ListItem.Season]</value>
 	<value condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
-	<value condition="!String.IsEmpty(ListItem.Episode) + Container.Content(Episodes) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.TVShowTitle) + String.IsEqual(Container.Viewmode,$LOCALIZE[31012])">$LOCALIZE[20359] $INFO[ListItem.Episode]</value>
+	<value condition="!String.IsEmpty(ListItem.Episode) + Container.Content(Episodes) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.TVShowTitle) + $EXP[View56]">$LOCALIZE[20359] $INFO[ListItem.Episode]</value>
 	<value condition="String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenreLabel]</value>
 	<value description="Popcorn Time" condition="String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)">$VAR[GenreLabel]</value>
 	<value description="Exodus" condition="String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres)">$VAR[GenreLabel]</value>

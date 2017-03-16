@@ -272,23 +272,11 @@
 	<textoffsetx>10</textoffsetx>
 	<font>size24B</font>
 	<radioposy>7</radioposy>
-	<texturenofocus border="23" colordiffuse="$VAR[TopInformationColor]">buttons/ButtonC0.png</texturenofocus>
-	<alttexturenofocus border="23" colordiffuse="$VAR[TopInformationColor]">buttons/ButtonC0.png</alttexturenofocus>
-	<texturefocus border="23" colordiffuse="$VAR[ButtonFocusColor]">buttons/ButtonC0.png</texturefocus>
-	<alttexturefocus border="23" colordiffuse="$VAR[ButtonFocusColor]">buttons/ButtonC0.png</alttexturefocus>
+	<texturenofocus border="11" colordiffuse="$VAR[TopInformationColor]">buttons/ButtonA0.png</texturenofocus>
+	<alttexturenofocus border="11" colordiffuse="$VAR[TopInformationColor]">buttons/ButtonA0.png</alttexturenofocus>
+	<texturefocus border="11" colordiffuse="$VAR[ButtonFocusColor]">buttons/ButtonA0.png</texturefocus>
+	<alttexturefocus border="11" colordiffuse="$VAR[ButtonFocusColor]">buttons/ButtonA0.png</alttexturefocus>
   </include>
-  <include name="ButtonC10_" description="מדף עליון">
-	<height>40</height>
-	<width>300</width>
-	<textcolor>white2</textcolor>
-	<textoffsetx>10</textoffsetx>
-	<font>size24B</font>
-	<texturenofocus border="23">buttons/ButtonCF.png</texturenofocus>
-	<alttexturenofocus border="23">buttons/ButtonCF.png</alttexturenofocus>
-    <texturefocus border="23" colordiffuse="$VAR[ButtonFocusColor]">buttons/ButtonC0.png</texturefocus>
-	<alttexturefocus border="23" colordiffuse="$VAR[ButtonFocusColor]">buttons/ButtonC0.png</alttexturefocus>
-  </include>
-  
   <include name="spinposx">
     <spinposx>950</spinposx>
   </include>
@@ -310,54 +298,6 @@
 	<textoffsetx>40</textoffsetx>
 	<textwidth>500</textwidth>
   </include>
-  
-  <include name="ButtonTopVideoInformation" description="פרטי וידאו">
-    <texture border="20" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonA0C.png</texture>
-  </include>
-  <include name="ButtonTopVideoInformation_" description="פרטי וידאו">
-    <texture border="20" colordiffuse="FFFFFFFF">buttons/ButtonA0C.png</texture>
-  </include>
-  
-  <include name="ButtonTopVideoInformation2" description="פרטי וידאו">
-    <texture border="40" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonE0.png</texture>
-  </include>
-  <include name="ButtonTopVideoInformation2_" description="פרטי וידאו">
-    <texture border="40">buttons/ButtonEF.png</texture>
-  </include>
-  
-  <include name="ButtonTopVideoInformation3" description="פרטי וידאו">
-    <texture border="0" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonA0.png</texture>
-  </include>
-  <include name="ButtonTopVideoInformation3_" description="פרטי וידאו">
-    <texture border="0">buttons/ButtonAF.png</texture>
-  </include>
-
-  <include name="statusbiglist">
-  <control type="image">
-            <posx>710</posx>
-            <posy>15</posy>
-            <width>81</width>
-            <height>81</height>
-            <texture>$INFO[ListItem.Icon]</texture>
-			<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-          </control>
-          <control type="image" description="rec">
-          <posx>720</posx>
-		  <posy>15</posy>
-		  <height>81</height>
-		  <width>81</width>
-          <texture>pvr/rec.png</texture>
-		  <visible>ListItem.IsRecording</visible>
-        </control>
-		<control type="image" description="timer">
-          <posx>720</posx>
-		  <posy>15</posy>
-		  <height>81</height>
-		  <width>81</width>
-          <texture>pvr/timer.png</texture>
-		  <visible>!ListItem.IsRecording + ListItem.HasTimer</visible>
-        </control>
-  </include>
    
   <include name="Border_Common">
     <bordertexture colordiffuse="ff000000" border="40">buttons/types/bd.png</bordertexture>
@@ -377,6 +317,471 @@
   <include name="Border_Common4">
     <bordertexture colordiffuse="ff000000" border="40">buttons/types/bd.png</bordertexture>
 	<bordersize>1</bordersize>
+  </include>
+  
+  <include name="MenuDesign_ItemLayout">
+	<param name="height" default="0"/>
+	<param name="posx" default="0"/>
+	<param name="posy" default="0"/>
+	<param name="width" default="0"/>
+	<param name="height2" default="0"/>
+	<param name="posx2" default="0"/>
+	<param name="posy2" default="0"/>
+	<param name="width2" default="0"/>
+	<param name="homeicons" default="true"/>
+	<param name="reshape" default="false"/>
+	<param name="height3" default="0"/>
+	<param name="posx3" default="0"/>
+	<param name="posy3" default="0"/>
+	<param name="width3" default="0"/>
+	<param name="height4" default="0"/>
+	<param name="posx4" default="0"/>
+	<param name="posy4" default="0"/>
+	<param name="width4" default="0"/>
+	<param name="height5" default="0"/>
+	<param name="posx5" default="0"/>
+	<param name="posy5" default="0"/>
+	<param name="width5" default="0"/>
+	<definition>
+	  <include>MenuDesign_Home_itemlayout</include>
+	  
+	  <include content="Buttons_Color" description="צבע">
+		<param name="height" value="$PARAM[height]" />
+		<param name="posx" value="$PARAM[posx]" />
+		<param name="posy" value="$PARAM[posy]" />
+		<param name="width" value="$PARAM[width]" />
+	  </include>
+	  
+	  <include content="Buttons_Icon" description="סמלים גדולים">
+		<param name="color" value="$VAR[IconUnFocusColor]" />
+		<param name="height" value="$PARAM[height2]" />
+		<param name="posx" value="$PARAM[posx2]" />
+		<param name="posy" value="$PARAM[posy2]" />
+		<param name="width" value="$PARAM[width2]" />
+		
+		<param name="homeicons" value="$PARAM[homeicons]"/>
+		<param name="reshape" value="$PARAM[reshape]"/>
+		<param name="condition" value="Skin.HasSetting(BigHomeIcons) + $PARAM[homeicons]" description="" />
+		<param name="type0" value="true" description="UnFocus" />
+		<param name="type1" value="false" description="Focus" />
+	  </include>
+	  
+	  <control type="image" description="אלמנט כפתור לא נבחר">
+          <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+          <texture>buttons/effects/black2.png</texture>
+		  <visible>Skin.String(ElementUButton)</visible>
+      </control>
+	  <control type="image" description="צללית">
+		  <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_shadow</include>
+          <texture>buttons/effects/shadow.png</texture>
+		  <visible>Skin.HasSetting(ShadowButton)</visible>
+      </control>
+	  <control type="image" description="שקופית">
+          <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_gardient</include>
+		  <texture>buttons/effects/gardient.png</texture>
+		  <visible>!Skin.HasSetting(OverlayButton)</visible>
+      </control>
+	  <control type="image" description="שפוע Bevel">
+          <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_bevel</include>
+		  <texture>buttons/effects/bevel.png</texture>
+		  <visible>!Skin.HasSetting(BevelButton)</visible>
+      </control>
+	  <control type="image" description="מסגרת (Stroke)">
+          <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_stroke</include>
+		  <texture>buttons/effects/stroke.png</texture>
+		  <visible>Skin.HasSetting(StrokeButton)</visible>
+      </control>
+      <include content="Buttons_Icon" description="סמל">
+		<param name="color" value="$VAR[IconUnFocusColor]" />
+		<param name="height" value="$PARAM[height3]" />
+		<param name="posx" value="$PARAM[posx3]" />
+		<param name="posy" value="$PARAM[posy3]" />
+		<param name="width" value="$PARAM[width3]" />
+		
+		<param name="homeicons" value="$PARAM[homeicons]"/>
+		<param name="reshape" value="$PARAM[reshape]"/>
+		<param name="condition" value="!Skin.HasSetting(BigHomeIcons) + $PARAM[homeicons]" description="" />
+		<param name="type0" value="true" description="UnFocus" />
+		<param name="type1" value="false" description="Focus" />
+      </include>
+	  <include content="Buttons_Icon" description="סמלSP">
+		<param name="color" value="$VAR[IconUnFocusColorSP]" />
+		<param name="height" value="$PARAM[height3]" />
+		<param name="posx" value="$PARAM[posx3]" />
+		<param name="posy" value="$PARAM[posy3]" />
+		<param name="width" value="$PARAM[width3]" />
+		
+		<param name="homeicons" value="$PARAM[homeicons]"/>
+		<param name="reshape" value="$PARAM[reshape]"/>
+		<param name="condition" value="!$PARAM[homeicons]" description="" />
+		<param name="type0" value="true" description="UnFocus" />
+		<param name="type1" value="false" description="Focus" />
+      </include>
+	  <control type="image" description="OFF">
+          <include>Fade_IconOverlayButton</include>
+		  <posx>$PARAM[posx3]</posx>
+          <posy>$PARAM[posy3]</posy>
+          <width>$PARAM[width3]</width>
+          <height>$PARAM[height3]</height>
+		  <aspectratio>keep</aspectratio>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">images/off.png</texture>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(ListItem.Property(off))</visible>
+      </control>
+	  <control type="image" description="Movies Widget">
+          <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-180,0" delay="0" time="0" reversible="false">Conditional</animation>
+		  <include>Fade_IconOverlayButton</include>
+		  <aspectratio>keep</aspectratio>
+		  <posx>$PARAM[posx4]</posx>
+          <posy>$PARAM[posy4]</posy>
+          <width>$PARAM[width4]</width>
+          <height>$PARAM[height4]</height>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/movies.png</texture>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
+		  <visible>String.Contains(ListItem.Label2,90) + !Skin.String(widget311) | String.IsEqual(ListItem.Label2,Skin.String(widget311))</visible>
+      </control>
+	  <control type="image" description="TVshows Widget">
+          <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-180,0" delay="0" time="0" reversible="false">Conditional</animation>
+		  <include>Fade_IconOverlayButton</include>
+		  <aspectratio>keep</aspectratio>
+		  <posx>$PARAM[posx4]</posx>
+          <posy>$PARAM[posy4]</posy>
+          <width>$PARAM[width4]</width>
+          <height>$PARAM[height4]</height>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/tvshows.png</texture>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
+		  <visible>String.Contains(ListItem.Label2,91) + !Skin.String(widget312) | String.IsEqual(ListItem.Label2,Skin.String(widget312))</visible>
+      </control>
+	  <control type="image" description="Weather Widget">
+          <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-180,0" delay="0" time="0" reversible="false">Conditional</animation>
+		  <include>Fade_IconOverlayButton</include>
+		  <aspectratio>keep</aspectratio>
+		  <posx>$PARAM[posx4]</posx>
+          <posy>$PARAM[posy4]</posy>
+          <width>$PARAM[width4]</width>
+          <height>$PARAM[height4]</height>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/weather.png</texture>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
+		  <visible>String.Contains(ListItem.Label2,97) + !Skin.String(widget317) | String.IsEqual(ListItem.Label2,Skin.String(widget317))</visible>
+      </control>
+	  <control type="image" description="תפריט משני">
+		  <include>Fade_SubMenuMarkOverlay</include>
+		  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + Skin.String(ButtonsDesign,2)">Control_Pos51</include>
+		  <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_sub</include>
+		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
+		  <visible>!String.IsEmpty(ListItem.Property(sub))</visible>
+      </control>
+      <control type="label" description="כותרת">
+          <include>Slide_MenuDesign_Home_Labels</include>
+		  <include>Fade_IconOverlayButton</include>
+		  <textcolor>$VAR[IconUnFocusColor]</textcolor>
+		  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [Skin.String(ButtonsDesign,1) | Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)]">LabelC2</include>
+		  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">LabelR1</include>
+		  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + !String.IsEqual(System.Language,Hebrew)">LabelL1</include>
+		  <include>LabelC1</include>
+		  <posx>$PARAM[posx5]</posx>
+          <posy>$PARAM[posy5]</posy>
+          <width>$PARAM[width5]</width>
+          <height>$PARAM[height5]</height>
+          <label>[B]$INFO[ListItem.Label][/B]</label>
+		  <shadowcolor>black</shadowcolor>
+		  <visible>$PARAM[homeicons]</visible>
+      </control>
+	</definition>
+  </include>
+  
+  <include name="MenuDesign_focusedlayout">
+	<param name="height" default="0"/>
+	<param name="posx" default="0"/>
+	<param name="posy" default="0"/>
+	<param name="width" default="0"/>
+	<param name="height2" default="0"/>
+	<param name="posx2" default="0"/>
+	<param name="posy2" default="0"/>
+	<param name="width2" default="0"/>
+	<param name="homeicons" default="true"/>
+	<param name="reshape" default="false"/>
+	<param name="height3" default="0"/>
+	<param name="posx3" default="0"/>
+	<param name="posy3" default="0"/>
+	<param name="width3" default="0"/>
+	<param name="height4" default="0"/>
+	<param name="posx4" default="0"/>
+	<param name="posy4" default="0"/>
+	<param name="width4" default="0"/>
+	<param name="height5" default="0"/>
+	<param name="posx5" default="0"/>
+	<param name="posy5" default="0"/>
+	<param name="width5" default="0"/>
+	<param name="height6" default="0"/>
+	<param name="posx6" default="0"/>
+	<param name="posy6" default="0"/>
+	<param name="width6" default="0"/>
+	<definition>
+	  <include content="Buttons_Color" description="צבע">
+		<param name="height" value="$PARAM[height]" />
+		<param name="posx" value="$PARAM[posx]" />
+		<param name="posy" value="$PARAM[posy]" />
+		<param name="width" value="$PARAM[width]" />
+	  </include>
+	  
+	  <include content="Buttons_Icon" description="סמלים גדולים">
+		<param name="color" value="$VAR[IconFocusColor]" />
+		<param name="height" value="$PARAM[height2]" />
+		<param name="posx" value="$PARAM[posx2]" />
+		<param name="posy" value="$PARAM[posy2]" />
+		<param name="width" value="$PARAM[width2]" />
+		
+		<param name="homeicons" value="$PARAM[homeicons]"/>
+		<param name="reshape" value="$PARAM[reshape]"/>
+		<param name="condition" value="Skin.HasSetting(BigHomeIcons) + $PARAM[homeicons]" description="" />
+		<param name="type0" value="false" description="UnFocus" />
+		<param name="type1" value="true" description="Focus" />
+	  </include>
+	  
+	  <control type="image" description="אלמנט כפתור נבחר">
+          <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+          <texture>buttons/effects/black2.png</texture>
+		  <visible>Skin.String(ElementUButton)</visible>
+      </control>
+	  
+	  <control type="image" description="סמן בחירה 2">
+		  <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_choosen</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_choosen</include>
+		  <texture diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen.png</texture>
+		  <visible>Skin.HasSetting(SelectionMarker2) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]</visible>
+      </control>
+	  <control type="image" description="סמן בחירה 3">
+		  <bordersize>1</bordersize>
+		  <posx>$PARAM[posx6]</posx>
+          <posy>$PARAM[posy6]</posy>
+          <width>$PARAM[width6]</width>
+          <height>$PARAM[height6]</height>
+		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
+		  <visible>!$PARAM[homeicons] + [ [Skin.HasSetting(SelectionMarker) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]] ] | $PARAM[homeicons]</visible>
+		  <visible>!$PARAM[homeicons] + [$EXP[!Button.ID_17-21] | !Skin.HasSetting(SPMiniButtons)] | $PARAM[homeicons]</visible>
+		  <visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
+		  <visible>$PARAM[homeicons] + [ [Skin.HasSetting(SelectionMarker) + Control.HasFocus(9020)] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1165.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]] ] | !$PARAM[homeicons]</visible>
+		  <visible>$PARAM[homeicons] + [ [String.IsEqual(Window(home).Property(Button.ID_),17) | String.IsEqual(Window(home).Property(Button.ID_),18) | String.IsEqual(Window(home).Property(Button.ID_),19) + !String.IsEqual(Window(home).Property(Button.ID_),20) + !String.IsEqual(Window(home).Property(Button.ID_),21) | String.IsEqual(Window(home).Property(Button.ID_),20) | String.IsEqual(Window(home).Property(Button.ID_),21)] ] | !$PARAM[homeicon]</visible>
+      </control>
+		
+	  <control type="image" description="צללית">
+		  <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_shadow</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_shadow</include>
+          <texture>buttons/effects/shadow.png</texture>
+		  <visible>Skin.HasSetting(ShadowButton)</visible>
+      </control>
+	  <control type="image" description="שקופית">
+          <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_gardient</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_gardient</include>
+		  <texture>buttons/effects/gardient.png</texture>
+		  <visible>!Skin.HasSetting(OverlayButton)</visible>
+      </control>
+	  <control type="image" description="שפוע Bevel">
+          <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_bevel</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_bevel</include>
+		  <texture>buttons/effects/bevel.png</texture>
+		  <visible>!Skin.HasSetting(BevelButton)</visible>
+      </control>
+	  <control type="image" description="מסגרת (Stroke)">
+          <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+          <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_stroke</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_stroke</include>
+		  <texture>buttons/effects/stroke.png</texture>
+		  <visible>Skin.HasSetting(StrokeButton)</visible>
+      </control>
+      <include content="Buttons_Icon" description="סמל">
+		<param name="color" value="$VAR[IconFocusColor]" />
+		<param name="height" value="$PARAM[height3]" />
+		<param name="posx" value="$PARAM[posx3]" />
+		<param name="posy" value="$PARAM[posy3]" />
+		<param name="width" value="$PARAM[width3]" />
+		
+		<param name="homeicons" value="$PARAM[homeicons]"/>
+		<param name="reshape" value="$PARAM[reshape]"/>
+		<param name="condition" value="!Skin.HasSetting(BigHomeIcons) + $PARAM[homeicons]" description="" />
+		<param name="type0" value="false" description="UnFocus" />
+		<param name="type1" value="true" description="Focus" />
+      </include>
+	  <include content="Buttons_Icon" description="סמלSP">
+		<param name="color" value="$VAR[IconFocusColorSP]" />
+		<param name="height" value="$PARAM[height3]" />
+		<param name="posx" value="$PARAM[posx3]" />
+		<param name="posy" value="$PARAM[posy3]" />
+		<param name="width" value="$PARAM[width3]" />
+		
+		<param name="homeicons" value="$PARAM[homeicons]"/>
+		<param name="reshape" value="$PARAM[reshape]"/>
+		<param name="condition" value="!$PARAM[homeicons]" description="" />
+		<param name="type0" value="false" description="UnFocus" />
+		<param name="type1" value="true" description="Focus" />
+      </include>
+	  <control type="image" description="OFF">
+          <include>Fade_IconOverlayButton</include>
+		  <posx>$PARAM[posx3]</posx>
+          <posy>$PARAM[posy3]</posy>
+          <width>$PARAM[width3]</width>
+          <height>$PARAM[height3]</height>
+		  <aspectratio>keep</aspectratio>
+		  <texture colordiffuse="$VAR[IconFocusColor]">images/off.png</texture>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(ListItem.Property(off))</visible>
+      </control>
+	  <control type="image" description="Movies Widget">
+          <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-180,0" delay="0" time="0" reversible="false">Conditional</animation>
+		  <include>Fade_IconOverlayButton</include>
+		  <aspectratio>keep</aspectratio>
+		  <posx>$PARAM[posx4]</posx>
+          <posy>$PARAM[posy4]</posy>
+          <width>$PARAM[width4]</width>
+          <height>$PARAM[height4]</height>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/movies.png</texture>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
+		  <visible>String.Contains(ListItem.Label2,90) + !Skin.String(widget311) | String.IsEqual(ListItem.Label2,Skin.String(widget311))</visible>
+      </control>
+	  <control type="image" description="TVshows Widget">
+          <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-180,0" delay="0" time="0" reversible="false">Conditional</animation>
+		  <include>Fade_IconOverlayButton</include>
+		  <aspectratio>keep</aspectratio>
+		  <posx>$PARAM[posx4]</posx>
+          <posy>$PARAM[posy4]</posy>
+          <width>$PARAM[width4]</width>
+          <height>$PARAM[height4]</height>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/tvshows.png</texture>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
+		  <visible>String.Contains(ListItem.Label2,91) + !Skin.String(widget312) | String.IsEqual(ListItem.Label2,Skin.String(widget312))</visible>
+      </control>
+	  <control type="image" description="Weather Widget">
+          <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-180,0" delay="0" time="0" reversible="false">Conditional</animation>
+		  <include>Fade_IconOverlayButton</include>
+		  <aspectratio>keep</aspectratio>
+		  <posx>$PARAM[posx4]</posx>
+          <posy>$PARAM[posy4]</posy>
+          <width>$PARAM[width4]</width>
+          <height>$PARAM[height4]</height>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/weather.png</texture>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
+		  <visible>String.Contains(ListItem.Label2,97) + !Skin.String(widget317) | String.IsEqual(ListItem.Label2,Skin.String(widget317))</visible>
+      </control>
+	  <control type="image" description="תפריט משני">
+		  <include>Fade_SubMenuMarkOverlay</include>
+		  <posx>$PARAM[posx]</posx>
+          <posy>$PARAM[posy]</posy>
+          <width>$PARAM[width]</width>
+          <height>$PARAM[height]</height>
+		  <include condition="!Skin.String(ButtonsDesign)">ButtonsDesign_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,0)">ButtonsDesign0_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,1)">ButtonsDesign1_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,2)">ButtonsDesign2_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,3)">ButtonsDesign3_sub</include>
+		  <include condition="Skin.String(ButtonsDesign,4)">ButtonsDesign4_sub</include>
+		  <texture colordiffuse="$VAR[SubMenuMarkColor]">buttons/effects/sub.png</texture>
+		  <visible>!String.IsEmpty(ListItem.Property(sub))</visible>
+      </control>
+      <control type="label" description="כותרת">
+          <include>Slide_MenuDesign_Home_Labels</include>
+		  <textcolor>$VAR[IconFocusColor]</textcolor>
+		  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [Skin.String(ButtonsDesign,1) | Skin.String(ButtonsDesign,2) | Skin.String(ButtonsDesign,4)]">LabelC2</include>
+		  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">LabelR1</include>
+		  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + !String.IsEqual(System.Language,Hebrew)">LabelL1</include>
+		  <include>LabelC1</include>
+		  <posx>$PARAM[posx5]</posx>
+          <posy>$PARAM[posy5]</posy>
+          <width>$PARAM[width5]</width>
+          <height>$PARAM[height5]</height>
+          <label>[B]$INFO[ListItem.Label][/B]</label>
+		  <shadowcolor>black</shadowcolor>
+		  <visible>$PARAM[homeicons]</visible>
+      </control>
+	</definition>
   </include>
   
    <include name="MenuBackground">

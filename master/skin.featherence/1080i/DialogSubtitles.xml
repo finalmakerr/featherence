@@ -424,7 +424,7 @@
                 <description>separator</description>
                 <posy>140</posy>
                 <height>1</height>
-                <texture>images/Line.png</texture>
+                <texture colordiffuse="black">images/LineH.png</texture>
             </control>
             <control type="list" id="150">
 			  <posy>75</posy>

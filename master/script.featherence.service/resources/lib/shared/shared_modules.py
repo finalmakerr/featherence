@@ -1711,6 +1711,14 @@ def installaddonP(addon, update=True):
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
 	
+	elif addon == 'plugin.video.jksp':
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://www.dropbox.com/s/ois8fzb6ylsdfjt/plugin.video.jksp.zip?dl=1", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
 	elif addon == 'resource.images.weathericons.outline': #FIXED PATH - *MASTER (PATH EXISTS!!)
 		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.outline/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
@@ -1719,11 +1727,102 @@ def installaddonP(addon, update=True):
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
-
-	elif addon == 'resource.images.weatherfanart.single': #FIXED PATH
+	
+	elif addon == 'resource.images.weathericons.animated': #FIXED PATH - *MASTER
 		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("http://mirrors.xbmc.org/addons/jarvis/resource.images.weatherfanart.single/resource.images.weatherfanart.single-0.0.5.zip", addon + ".zip", packages_path, addons_path, silent=True)
-			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.animated/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'resource.images.weathericons.white': #FIXED PATH - *MASTER
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.white/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'resource.images.weathericons.transparent': #FIXED PATH - *MASTER
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.transparent/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'resource.images.weathericons.grey': #FIXED PATH - *MASTER
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.grey/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'resource.images.weathericons.flat': #FIXED PATH - *MASTER
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.grey/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'resource.images.weathericons.coloured': #FIXED PATH - *MASTER
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.coloured/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'resource.images.weathericons.3d-white': #FIXED PATH - *MASTER
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.3d-white/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'resource.images.weathericons.3d-coloured': #FIXED PATH - *MASTER
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weathericons.3d-coloured/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'resource.images.weatherfanart.single': #FIXED PATH - *MASTER
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weatherfanart.single/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'resource.images.weatherfanart.prairie': #FIXED PATH - *MASTER
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weatherfanart.prairie/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'resource.images.weatherfanart.multi': #FIXED PATH - *MASTER
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/XBMC-Addons/resource.images.weatherfanart.multi/archive/master.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			movefiles(os.path.join(addons_path, addon + "-master"), os.path.join(addons_path, addon))
+			if os.path.exists(addons_path + addon + "-master") or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"

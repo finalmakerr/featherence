@@ -8,14 +8,17 @@ WIP - WORK IN PROGRESS
 - ??Added option to hide Top Video Information on fullscreen video while skiping back/next.
 - Added option to disable the auto close of the video/audio OSD.
 - Increase maximum customised buttons by 10.
-- Added 8 different weather icons packages (Skin Settings).
 - Added option to choose highlight font color.
 
 ------------------------
 Featherence v0.7.2 (xx-Feb-17)
 ------------------------
+- Added 3 different weather fanart packages (Skin Settings).
+- Added 8 different weather icons packages (Skin Settings).
 - Added DialogGameControllers window.
+- Added High Performance option (Skin Settings).
 - Added new category Add-in in skin settings (Easily install and manage Featherence's dependencies).
+- Clicking on the Top Bar while video is playing will open it up and the video OSD.
 - Minor bugs fix.
 
 Dialogues:

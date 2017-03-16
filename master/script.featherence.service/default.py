@@ -829,7 +829,7 @@ elif mode >= 200 and mode <= 249:
 		---INSTALL-ADDON-----------------
 		------------------------------'''
 		name = "INSTALL-ADDON"
-		mode231(value, admin, name, printpoint)
+		mode231(value, value2, admin, name, printpoint)
 		'''---------------------------'''
 	
 	elif mode == 232:

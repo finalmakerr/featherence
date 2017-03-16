@@ -854,6 +854,7 @@ def mode29(value, command, header, exit, name, printpoint):
 					setSkinSetting('0', x_, list2[returned], force=True)
 			elif x[:2] == '1.':
 				setSkinSetting('1', str(returned2), list2[returned], force=True)
+				
 			else:
 				xbmc.executebuiltin(x) ; xbmc.sleep(10)
 	
@@ -1125,6 +1126,18 @@ def mode32(value, value2="", value3="", name="", printpoint=""):
 		addon = addon.replace('/',"")
 		notification(addon,'','',2000)
 		xbmc.executebuiltin('Addon.OpenSettings('+addon+')')
+	
+	elif value == '11':
+		xbmc.executebuiltin('ActivateWindow(1000)') ; xbmc.sleep(200)
+		xbmc.executebuiltin('ReplaceWindow(Home.xml)') ; xbmc.sleep(300)
+		count = 0 ; homeW = xbmc.getCondVisibility('Window.IsVisible(Home.xml)')
+		while count < 10 and not homeW and not xbmc.abortRequested():
+			count += 1
+			homeW = xbmc.getCondVisibility('Window.IsVisible(Home.xml)')
+			xbmc.sleep(200)
+		xbmc.executebuiltin('Control.SetFocus(9000)')
+		xbmc.executebuiltin('Control.SetFocus(9090)')
+		
 	elif value == '40':
 		addon = 'plugin.video.featherence.kids'
 		if xbmc.getCondVisibility('System.HasAddon('+ addon +')'):
@@ -2527,12 +2540,14 @@ def mode218(value, admin, name, printpoint):
 		diaogtextviewer(header,message)
 		printlog(title="views", printpoint="", text=message, level=0, option="")
 							
-def mode231(value, admin, name, printpoint):
+def mode231(value, value2, admin, name, printpoint):
 	'''------------------------------
 	---INSTALL-ADDON-----------------
 	------------------------------'''
-	notification_common("24")
-	installaddon(value, update=True)
+	if not 'resource.' in value: notification_common("24")
+	if value2 == "": installaddon(value, update=True)
+	else: installaddonP(value, update=True)
+	
 	'''---------------------------'''
 
 def mode232(value, admin, name, printpoint):

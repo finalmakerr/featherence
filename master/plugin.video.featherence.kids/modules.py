@@ -2810,7 +2810,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLYpg2jvVNY-PfH6fm_Erv0aIn-BPhnL5x&index')
 				
-	addDir(addonString(10738).encode('utf-8'),list,17,'https://i.ytimg.com/vi/LXhoQcLeyt0/mqdefault.jpg','','1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/jOYv12AcqMA/maxresdefault.jpg"))
+	addDir(addonString(10739).encode('utf-8'),list,17,'https://i.ytimg.com/vi/LXhoQcLeyt0/mqdefault.jpg',addonString(107390).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/jOYv12AcqMA/maxresdefault.jpg"))
 	
 	'''טימותי הולך לבית הספר'''
 	list = []
@@ -2955,7 +2955,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&youtube_pl=PL1fY_FCMpjVKjqfzzwqrRgJH_9M7C-Vnj')
 		
 		
-	addDir(addonString(10759).encode('utf-8'),list,17,'http://milesfromtomorrowlandtoys.com/wp-content/uploads/2015/09/Miles_from_tomorrowlan_render1.png',addonString(107590).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://cdnvideo.dolimg.com/cdn_assets/30d9ad46a7c968160f425855f200136ab610fb3e.jpg"))
+	addDir(addonString(10759).encode('utf-8'),list,17,'https://lumiere-a.akamaihd.net/v1/images/il_dj_props_miles_n_f4577f7d.png',addonString(107590).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://cdnvideo.dolimg.com/cdn_assets/30d9ad46a7c968160f425855f200136ab610fb3e.jpg"))
 	
 	'''לונטיק'''
 	list = []
@@ -2978,7 +2978,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&youtube_pl=PLI-nQtOHVKRu0erW8Khquk1pRvEHDpR7i') #English
 		list.append('&youtube_pl=PLmC05rj_6ViYvReMLbUEmNgyrKWrmpA4c') #English
 		list.append('&youtube_pl=PL6hnqKp_bygo9OPZYYVy_h2rZ3lBzhNtU')
-	addDir(addonString(10744).encode('utf-8'),list,17,'https://goo.gl/images/tPu0qV',addonString(107440).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://s2.dmcdn.net/IRKa_/1280x720-nzB.jpg"))
+	addDir(addonString(10744).encode('utf-8'),list,17,'http://aretheyoldenough.com/wp-content/uploads/2014/12/mickey-mouse-clubhouse-2.jpg',addonString(107440).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://s2.dmcdn.net/IRKa_/1280x720-nzB.jpg"))
 	
 	'''מועדון המאפים הטובים'''
 	list = []
@@ -2986,7 +2986,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%ee%f8%20%ec%ee%e4%20%e5%e2%e1%f8%fa%20%eb%eb%e4&url=http%3a%2f%2fnickjr.walla.co.il%2f%3fw%3d%2f%2f2743907')
 		list.append('&youtube_pl=PLPWc8VdaIIsDUd9awquJznDcL_aSyi00T')
 		list.append('&youtube_pl=PLPWc8VdaIIsCfrHCUj7XKDG_rvLwE9V-p')
-	addDir('מועדון המאפים הטובים',list,17,'http://www.erezdvd.co.il/sites/default/files/imagecache/product_full/products/gilisip.jpg',addonString(107450).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
+	addDir('מועדון המאפים הטובים',list,17,'https://i.ytimg.com/vi/WyDNForq6b8/hqdefault.jpg',addonString(107450).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
 	
 	'''מיכל הקטנה'''
 	list = []
@@ -3046,7 +3046,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom4=http://62.90.90.56/walla_vod/_definst_/mp4:media/020/504/2050413-40.mp4/playlist.m3u8')
 		list.append('&custom4=http://62.90.90.56/walla_vod/_definst_/mp4:media/020/504/2050418-40.mp4/playlist.m3u8')
-	addDir(addonString(10750).encode('utf-8'),list,17,'http://isc.wcdn.co.il/w9/v/tps/nick/lobbies/general_02.png',addonString(107500).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10750).encode('utf-8'),list,17,'http://www.ronithinkinggames.com/uploads/5/0/2/9/50295455/2504889.png',addonString(107500).encode('utf-8'),'1',"",getAddonFanart(background, custom="", default=background2))
 	
 	'''משפחת יומולדת'''
 	list = []

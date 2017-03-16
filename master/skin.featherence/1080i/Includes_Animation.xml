@@ -8,18 +8,13 @@
 	 <animation description="No Fanart" condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + $EXP[Contents] + [IsEmpty(Control.GetLabel(70130)) | Skin.HasSetting(background2)] + !Container.OnNext + !Container.OnPrevious + !Player.HasVideo + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-252" delay="3000" time="700" reversible="false">Conditional</animation>
    </include>
    
-   <include name="Slide1.2" description="Fanart fix for internal windows while video player is visible">
-     <animation condition="[Control.IsVisible(50) | $EXP[View54] | Control.IsVisible(56) | [Control.HasFocus(7017)] | Window.IsVisible(SettingsCategory.xml)] + Player.HasVideo + !$EXP[View50] + !Control.IsVisible(11) + !$EXP[View51] + !$EXP[View59]" effect="slide" start="0,0" end="0,-7" time="0" reversible="false">Conditional</animation>
-	 <animation condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + Player.HasVideo" effect="slide" start="0,0" end="0,-7" delay="3000" time="700" reversible="false">Conditional</animation>
-   </include>
-   
    <include name="Slide1.5" description="Backgrounds-Home">
      <animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]" effect="slide" start="0,0" end="0,-552" time="220" reversible="false">Conditional</animation>
    </include>
 
    <include name="Slide2" description="(Zoom-Backgrounds)">
      <animation condition="[Control.IsVisible(56) | [Control.HasFocus(7017) + [$EXP[View57] | $EXP[View58]]] ] + Player.HasVideo + !$EXP[View50] + !Control.IsVisible(11) + !$EXP[View51] + !$EXP[View59]" effect="zoom" end="100,50" time="700" reversible="false">Conditional</animation>
-	 <animation description="MyPVRGuide" condition="Player.HasVideo + Control.IsVisible(11) + [Window.IsVisible(MyPVRGuide.xml)]" effect="zoom" end="100,60" time="700" reversible="false">Conditional</animation>
+	 <animation description="MyPVRGuide" condition="Player.HasVideo + Control.IsVisible(11) + [Window.IsVisible(MyPVRGuide.xml)]" effect="zoom" end="100,50" time="700" reversible="false">Conditional</animation>
 	 <animation condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [$EXP[Contents] | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="100,50" delay="3000" time="700" reversible="false">Conditional</animation>
 	 <animation description="No Fanart" condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + $EXP[Contents] + [IsEmpty(Control.GetLabel(70130)) | Skin.HasSetting(background2)] + !Container.OnNext + !Container.OnPrevious + !Player.HasVideo + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="100,150" delay="3000" time="700" reversible="false">Conditional</animation>
    </include>
@@ -50,21 +45,18 @@
    </include>
    
    <include name="Slide3" description="(TopVideoInformation)">
-     <animation description="ALL EXCEPT!" condition="[!Window.IsVisible(MyPVRGuide.xml) + !Window.IsVisible(DialogPVRInfo.xml) + !Window.IsVisible(Home.xml) | Window.IsVisible(DialogFavourites.xml)] + !Window.IsVisible(VideoFullScreen.xml) + !$EXP[View50s] + !$EXP[View51s] + [ ![$EXP[View57] | $EXP[View58] | $EXP[View59]] ] + $EXP[Contents] | Window.IsVisible(DialogVideoInfo.xml)" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" delay="220" time="700" reversible="true">Conditional</animation>
-	 <animation description="50/59_side"      condition="Skin.HasSetting(SideVideoInformationAnimation) + [$EXP[View50s] | $EXP[View59]] + [!Control.HasFocus(7017) | $EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + $EXP[Contents]" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,-580" delay="700" time="1500" reversible="true">Conditional</animation>
-     <animation description="59_side_fade" condition="!Skin.HasSetting(SideVideoInformationAnimation)  + $EXP[View59] + !Window.IsVisible(DialogVideoInfo.xml) + $EXP[Contents]" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,-580" delay="700" time="0" reversible="true">Conditional</animation>
-     <animation description="51_side_en" condition="Skin.HasSetting(SideVideoInformationAnimation) + $EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + !$EXP[Contents] + !String.IsEqual(System.Language,Hebrew)" effect="slide" tween="Cubic" easing="out" start="0,0" end="-580,0" delay="220" time="700" reversible="true">Conditional</animation>
-     <animation description="51_side_he" condition="Skin.HasSetting(SideVideoInformationAnimation) + $EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + !$EXP[Contents] + String.IsEqual(System.Language,Hebrew)" effect="slide" tween="Cubic" easing="out" start="0,0" end="580,0" delay="220" time="700" reversible="true">Conditional</animation>
-     <animation description="מסך ניגון מלא" condition="[[Window.IsVisible(DialogFullScreenInfo.xml) | Window.IsVisible(VideoOSD.xml) | Window.IsVisible(DialogSubtitles.xml)] + VideoPlayer.IsFullscreen + Player.Paused]" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" delay="0" time="700" reversible="false">Conditional</animation>
-	 <animation description="" condition="[Window.IsVisible(MyPVRGuide.xml)] + [System.IdleTime(3) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogPVRInfo.xml)]" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" delay="0" time="700" reversible="true">Conditional</animation>
-	 <animation description="57/58" condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + [!Control.HasFocus(60) + [$EXP[Contents] | Window.IsVisible(AddonBrowser.xml)] + !Container.OnNext + !Container.OnPrevious + !Container.OnNext + !Container.OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)]" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" delay="3000" time="700" reversible="false">Conditional</animation>
-	 <animation description="בית-ו'ידגט" condition="Window.IsVisible(Home.xml) + [Control.IsVisible(311) | Control.IsVisible(312)] + [$EXP[ContentsWidget] | ControlGroup(9009).HasFocus()]" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" delay="220" time="700" reversible="true">Conditional</animation>
+     <!--<animation description="ALL EXCEPT!" condition="[!Window.IsVisible(MyPVRGuide.xml) + !Window.IsVisible(DialogPVRInfo.xml) + !Window.IsVisible(Home.xml) | Window.IsVisible(DialogFavourites.xml)] + !Window.IsVisible(VideoFullScreen.xml) + !$EXP[View50s] + !$EXP[View51s] + [ ![$EXP[View57] | $EXP[View58] | $EXP[View59]] ] + [$EXP[Contents] | Window.IsVisible(DialogVideoInfo.xml)]" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,592" delay="220" time="700" reversible="false">Conditional</animation>-->
+     
+	 <animation description="51_side_en" condition="Skin.HasSetting(SideVideoInformationAnimation) + $EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + $EXP[Contents] + !String.IsEqual(System.Language,Hebrew)" effect="slide" tween="Cubic" easing="out" start="-580,0" end="0,0" delay="220" time="700" reversible="false">Conditional</animation>
+     <animation description="51_side_he" condition="Skin.HasSetting(SideVideoInformationAnimation) + $EXP[View51s] + !Window.IsVisible(DialogVideoInfo.xml) + $EXP[Contents] + String.IsEqual(System.Language,Hebrew)" effect="slide" tween="Cubic" easing="out" start="580,0" end="0,0" delay="220" time="700" reversible="false">Conditional</animation>
+	 <animation description="50" condition="Skin.HasSetting(SideVideoInformationAnimation) + [ $EXP[View50] ] + !Window.IsVisible(DialogVideoInfo.xml) + $EXP[Contents]" effect="slide" tween="Cubic" easing="out" start="0,-580" end="0,0" delay="220" time="700" reversible="false">Conditional</animation>
+	 <animation description="59" condition="Skin.HasSetting(SideVideoInformationAnimation) + [ $EXP[View59] ] + !Window.IsVisible(DialogVideoInfo.xml) + $EXP[Contents]" effect="slide" tween="Cubic" easing="out" start="0,580" end="0,0" delay="220" time="700" reversible="false">Conditional</animation>
    </include>
    
    <include name="Slide3f" description="(TopVideoInformation)">
-	 <animation description="ALL EXCEPT!_fade" condition="!Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(Home.xml) + !$EXP[View57] + !$EXP[View58] + $EXP[Contents]" effect="fade" start="0" end="100" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation description="57/58" condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + [!Control.HasFocus(60) + [$EXP[Contents] | Window.IsVisible(AddonBrowser.xml)] + !Container.OnNext + !Container.OnPrevious + !Container.OnNext + !Container.OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)]" effect="fade" start="0" end="100" delay="3000" time="700" reversible="false">Conditional</animation>
-	 <animation description="בית-ו'ידגט" condition="Window.IsVisible(Home.xml) + [$EXP[ContentsWidget] | ControlGroup(9009).HasFocus()]" effect="fade" start="0" end="100" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation description="ALL EXCEPT!_fade" condition="!Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(Home.xml) + !$EXP[View57] + !$EXP[View58] + $EXP[Contents]" effect="fade" start="0" end="100" delay="220" time="440" reversible="false">Conditional</animation>
+	 <animation description="57/58" condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + [!Control.HasFocus(60) + [$EXP[Contents] | Window.IsVisible(AddonBrowser.xml)] + !Container.OnNext + !Container.OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)]" effect="fade" start="0" end="100" delay="3000" time="700" reversible="false">Conditional</animation>
+	 <animation description="בית-ו'ידגט" condition="Window.IsVisible(Home.xml) + [$EXP[ContentsWidget] | ControlGroup(9009).HasFocus()]" effect="fade" start="0" end="100" delay="220" time="440" reversible="false">Conditional</animation>
    </include>
    
    <include name="Slide5" description="LeftMenu2">
@@ -97,7 +89,7 @@
      <animation effect="fade" end="0" time="100">Unfocus</animation>
    </include>
    <include name="Fade4">
-	  <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+	  <animation effect="fade" start="0" end="100" delay="220" time="440">VisibleChange</animation>
    </include>
   <include name="Fade5">
     <control type="image" description="BG">
@@ -135,6 +127,7 @@
   </include>  
   
   <include name="Fade10" description="9009/311/312">
+     <!--<animation condition="!Window.IsVisible(CustomHomeCustomizer.xml) + [ Control.HasFocus(312) + !Container(312).OnPrevious + !Container(312).OnNext | Control.HasFocus(311) + !Container(311).OnPrevious + !Container(311).OnNext | Control.HasFocus(9000) + !Container(9000).OnPrevious + !Container(9000).OnNext ]" effect="fade" start="100" end="0" delay="5000" time="3000" reversible="false">Conditional</animation>-->
      <animation condition="!Window.IsVisible(CustomHomeCustomizer.xml) + [ Control.HasFocus(312) + !Container(312).OnPrevious + !Container(312).OnNext | Control.HasFocus(311) + !Container(311).OnPrevious + !Container(311).OnNext | Control.HasFocus(9000) + !Container(9000).OnPrevious + !Container(9000).OnNext ]" effect="fade" start="100" end="0" delay="5000" time="3000" reversible="false">Conditional</animation>
   </include>
    <include name="Fade11" description="">
@@ -472,21 +465,21 @@
    </include>
    
    <include name="Fade_WidgetOverlay">
-     <animation condition="!Skin.String(WidgetOverlay) + Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2]" effect="fade" start="100" end="70" delay="220" time="440" reversible="true">Conditional</animation>
+     <animation condition="!Skin.String(WidgetOverlay) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="70" delay="220" time="440" reversible="true">Conditional</animation>
 	 
-     <animation condition="Skin.String(WidgetOverlay,10) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="10" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation condition="Skin.String(WidgetOverlay,20) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="20" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation condition="Skin.String(WidgetOverlay,30) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="30" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation condition="Skin.String(WidgetOverlay,40) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="40" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation condition="Skin.String(WidgetOverlay,50) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="50" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation condition="Skin.String(WidgetOverlay,60) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="60" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation condition="Skin.String(WidgetOverlay,65) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="65" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation condition="Skin.String(WidgetOverlay,70) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="70" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation condition="Skin.String(WidgetOverlay,80) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="80" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation condition="Skin.String(WidgetOverlay,85) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="85" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation condition="Skin.String(WidgetOverlay,90) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="90" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation condition="Skin.String(WidgetOverlay,95) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="95" delay="220" time="440" reversible="true">Conditional</animation>
-	 <animation condition="Skin.String(WidgetOverlay,100) + [ Player.HasVideo | !$EXP[ContentsWidget] |  !$EXP[ContentsWidget2] ]" effect="fade" start="100" end="100" delay="220" time="440" reversible="true">Conditional</animation>
+     <animation condition="Skin.String(WidgetOverlay,10) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="10" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(WidgetOverlay,20) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="20" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(WidgetOverlay,30) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="30" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(WidgetOverlay,40) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="40" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(WidgetOverlay,50) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="50" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(WidgetOverlay,60) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="60" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(WidgetOverlay,65) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="65" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(WidgetOverlay,70) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="70" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(WidgetOverlay,80) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="80" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(WidgetOverlay,85) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="85" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(WidgetOverlay,90) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="90" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(WidgetOverlay,95) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="95" delay="220" time="440" reversible="true">Conditional</animation>
+	 <animation condition="Skin.String(WidgetOverlay,100) + [ Player.HasVideo | !$EXP[ContentsWidget] ]" effect="fade" start="100" end="100" delay="220" time="440" reversible="true">Conditional</animation>
    </include>
    
    <include name="Fade_BackgroundOverlay">

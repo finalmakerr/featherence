@@ -2042,7 +2042,8 @@ def pluginend(admin):
 				if addonID == 'plugin.video.featherence.kids':
 					if 'Hebrew' in General_LanguageL:
 						installaddonP('repository.xbmc-israel', update=True)
-						installaddonP('repository.kodil', update=True)
+						#installaddonP('repository.kodil', update=True)
+						installaddonP('plugin.video.jksp', update=True)
 				
 					if 'English' in General_LanguageL:
 						installaddonP('repository.metalkettle', update=True)

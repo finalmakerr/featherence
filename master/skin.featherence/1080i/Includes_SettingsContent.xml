@@ -565,6 +565,7 @@
 		<onclick condition="Skin.String(TopMainBackgroundOverlay, 20)">Skin.SetString(TopMainBackgroundOverlay, )</onclick>
 		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(28)</visible>
+		<visible>!Skin.HasSetting(Performance)</visible>
 		<visible>Skin.HasSetting(HideTopMainBackground)</visible>
 	  </item>
 	  
@@ -575,6 +576,7 @@
 		<property name="rinfo">$LOCALIZE[31844] $LOCALIZE[31848]</property>
 		<onclick>SetProperty(TEMP,TopBackgroundColor,home)</onclick>
 		<onclick>ActivateWindow(1170)</onclick>
+		<visible>!Skin.HasSetting(Performance)</visible>
 		<visible>Container(100).Hasfocus(28)</visible>
 	  </item>
 	  
@@ -590,6 +592,7 @@
 		<onclick condition="Skin.String(TopBackgroundTexture,4)">Skin.SetString(TopBackgroundTexture,5)</onclick>
 		<onclick condition="Skin.String(TopBackgroundTexture,5)">Skin.SetString(TopBackgroundTexture,)</onclick>
 		<visible>Container(100).Hasfocus(28)</visible>
+		<visible>!Skin.HasSetting(Performance)</visible>
 		<visible>!Skin.String(TopBackgroundColor,00FFFFFF)</visible>
 	  </item>
 	  	  	  
@@ -646,6 +649,7 @@
 		<onclick condition="Skin.String(MainBackgroundTexture,4)">Skin.SetString(MainBackgroundTexture,5)</onclick>
 		<onclick condition="Skin.String(MainBackgroundTexture,5)">Skin.SetString(MainBackgroundTexture,NONE)</onclick>
 		<onclick condition="Skin.String(MainBackgroundTexture,NONE)">Skin.SetString(MainBackgroundTexture,)</onclick>
+		<visible>!Skin.HasSetting(Performance)</visible>
 		<visible>Container(100).Hasfocus(28)</visible>
 	  </item>
 	  
@@ -1495,6 +1499,7 @@
 		<onclick condition="Skin.String(WidgetPosition,3)">Skin.SetString(WidgetPosition,4)</onclick>
 		<onclick condition="Skin.String(WidgetPosition,4)">Skin.SetString(WidgetPosition,5)</onclick>
 		<onclick condition="Skin.String(WidgetPosition,5)">Skin.SetString(WidgetPosition,)</onclick>
+		<visible>!$EXP[MenuDesignP]</visible>
 		<visible>Container(100).Hasfocus(30)</visible>
 	  </item>
 	  <item id="457" description="מקסימום פריטי ו'ידגט סרטים/סדרות">
@@ -2129,7 +2134,7 @@
 	  <item id="15" description="סגנונות עם תמונות">
 		<label>$LOCALIZE[135] $LOCALIZE[1411] $LOCALIZE[1]</label>
 		<label2>$VAR[15label2]</label2>
-		<thumb>misc/help/genre.png</thumb>
+		<thumb>images/genre.png</thumb>
 		<property name="rinfo">$LOCALIZE[31852]</property>
 		<onclick>Skin.ToggleSetting(Genre)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
@@ -2275,7 +2280,7 @@
 		<thumb>special://home/addons/script.featherence.service/resources/icons/information.png</thumb>
 		<property name="rinfo"></property>
 		<onclick>Skin.ToggleSetting(Skin_ShowLog)</onclick>
-		<visible>Container(100).Hasfocus(1)</visible>
+		<visible>Container(100).Hasfocus(4)</visible>
 	  </item>
 	  <item id="83" description="מספר ימים להצגת עדכונים אחרונים">
 		<label>$ADDON[script.featherence.service 32420]</label>
@@ -2286,37 +2291,41 @@
 		<onclick condition="Skin.String(Skin_ShowLog2,0)">Skin.SetString(Skin_ShowLog2,1)</onclick>
 		<onclick condition="Skin.String(Skin_ShowLog2,1)">Skin.SetString(Skin_ShowLog2,7)</onclick>
 		<onclick condition="Skin.String(Skin_ShowLog2,7)">Skin.SetString(Skin_ShowLog2,)</onclick>
-		<visible>Container(100).Hasfocus(1)</visible>
+		<visible>Container(100).Hasfocus(4)</visible>
 		<visible>!Skin.HasSetting(Skin_ShowLog)</visible>
+	  </item>
+	  <item id="84" description="ביצועים גבוהים">
+		<label>$LOCALIZE[31542]</label>
+		<label2>$VAR[84label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
+		<property name="rinfo">$LOCALIZE[31543]</property>
+		<onclick>Skin.ToggleSetting(Performance)</onclick>
+		<visible>Container(100).Hasfocus(4)</visible>
 	  </item>
 	  
 	  <!--150-Add-in-200-->
-	   <item id="150" description="סמלים - מזג אוויר">
+	  <!--<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=studiologos&amp;type=resource.images.studios)</onclick>-->
+	  <item id="150" description="סמלים - מזג אוויר">
 		<label>$LOCALIZE[536] - $LOCALIZE[12600]</label>
 		<label2>$VAR[150label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/weather.png</thumb>
 		<property name="rinfo">$LOCALIZE[31111]</property>
-		<onclick condition="!Skin.String(WeatherIcons)">Skin.SetString(WeatherIcons,0)</onclick>
-		<onclick condition="!Skin.String(WeatherIcons) + !System.HasAddon(resource.images.weathericons.flat)">InstallAddon(resource.images.weathericons.flat)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,0)">Skin.SetString(WeatherIcons,1)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,0) + !System.HasAddon(resource.images.weathericons.white)">InstallAddon(resource.images.weathericons.white)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,1)">Skin.SetString(WeatherIcons,2)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,1) + !System.HasAddon(resource.images.weathericons.transparent)">InstallAddon(resource.images.weathericons.transparent)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,2)">Skin.SetString(WeatherIcons,3)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,2) + !System.HasAddon(resource.images.weathericons.outline)">InstallAddon(resource.images.weathericons.outline)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,3)">Skin.SetString(WeatherIcons,4)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,3) + !System.HasAddon(resource.images.weathericons.flat)">InstallAddon(resource.images.weathericons.flat)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,4)">Skin.SetString(WeatherIcons,5)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,4) + !System.HasAddon(resource.images.weathericons.grey)">InstallAddon(resource.images.weathericons.grey)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,5)">Skin.SetString(WeatherIcons,6)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,5) + !System.HasAddon(resource.images.weathericons.coloured)">InstallAddon(resource.images.weathericons.coloured)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,6)">Skin.SetString(WeatherIcons,7)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,6) + !System.HasAddon(resource.images.weathericons.animated)">InstallAddon(resource.images.weathericons.animated)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,7)">Skin.SetString(WeatherIcons,8)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,7) + !System.HasAddon(resource.images.weathericons.3d-white)">InstallAddon(resource.images.weathericons.3d-white)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,8)">Skin.SetString(WeatherIcons,)</onclick>
-		<onclick condition="Skin.String(WeatherIcons,8) + !System.HasAddon(resource.images.weathericons.3d-coloured)">InstallAddon(resource.images.weathericons.3d-coloured)</onclick>
+		<onclick>RunScript(script.featherence.service,,?mode=29&amp;value=Default-[]-|White-[0]-|Transparent-[1]-|Outline-[2]-|Flat-[3]-|Grey-[4]-|Coloured-[5]-|Animated-[6]-|3D-White-[7]-|ED-Coloured-[8]-&amp;value2=0.WeatherIcons&amp;value3=&amp;value4=1)</onclick>
+		<onclick condition="Skin.String(WeatherIcons)">RunScript(script.featherence.service,,?mode=231&amp;value=resource.images.weathericons.$VAR[150label2]&amp;value2=1)</onclick>
+		<onclick condition="!Skin.String(WeatherIcons)">RunScript(script.featherence.service,,?mode=231&amp;value=resource.images.weathericons.flat&amp;value2=1)</onclick>
 		<visible>Container(100).Hasfocus(3)</visible>
+		<visible>Skin.HasSetting(Admin)</visible>
+	  </item>
+	  <item id="151" description="פאנארט - מזג אוויר">
+		<label>$LOCALIZE[20445] - $LOCALIZE[12600]</label>
+		<label2>$VAR[151label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/weather.png</thumb>
+		<property name="rinfo">$LOCALIZE[31541]</property>
+		<onclick>RunScript(script.featherence.service,,?mode=29&amp;value=Default-[]-|Prairie-[0]-|Multi-[1]-|Single-[2]-&amp;value2=0.WeatherFanart&amp;value3=&amp;value4=1)</onclick>
+		<onclick condition="Skin.String(WeatherFanart)">RunScript(script.featherence.service,,?mode=231&amp;value=resource.images.weatherfanart.$VAR[151label2]&amp;value2=1)</onclick>
+		<onclick condition="!Skin.String(WeatherFanart)">RunScript(script.featherence.service,,?mode=231&amp;value=resource.images.weatherfanart.single&amp;value2=1)</onclick>
+		<visible>Container(100).Hasfocus(3)</visible>
+		<visible>Skin.HasSetting(Admin)</visible>
 	  </item>
 	  
 	  <item id="155" description="resource.uisounds.featherence">

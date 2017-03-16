@@ -1002,16 +1002,16 @@ msgid "Choose the amount of fade to be apply when the widget is not on focus."
 msgstr "בחר את אחוז העמעום שיופעל כאשר הו'ידגט אינו בפוקוס."
 
 msgctxt "#31541"
-msgid ""
-msgstr ""
+msgid "Choose your favourite fanart package for weather information."
+msgstr "Choose your favourite fanart package for weather information."
 
 msgctxt "#31542"
-msgid ""
-msgstr ""
+msgid "High Performance"
+msgstr "ביצועים גבוהים"
 
 msgctxt "#31543"
-msgid ""
-msgstr ""
+msgid "Enable this option in order to speed up your Kodi by using less animation and skin's features."
+msgstr "הפעל אפשרות זו בכדי לשפר את מהירות הקודי בעזרת הפחתת אנימציות ואפשרויות בסקין."
 
 msgctxt "#31544"
 msgid ""

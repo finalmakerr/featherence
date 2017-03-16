@@ -1,0 +1,181 @@
+-------------------------
+---www.featherence.com---
+-------------------------
+
+------------------------
+WIP - WORK IN PROGRESS
+------------------------
+
+------------------------
+Featherence Kids v0.2.17 (16-Mar-17)
+------------------------
+- Added jksp movies addon (Hebrew).
+- Minor bugs fix.
+- Minor fanart, posters and translation update.
+
+------------------------
+Featherence Kids v0.2.16 (16-Feb-17)
+------------------------
+- Added TV shows contents.
++ Fables of the Green Forest - 9 languages.
+- Added Persian language option.
+- Minor links update.
+
+------------------------
+Featherence Kids v0.2.15 (14-Jan-17)
+------------------------
+- Added Bob the Builder Junior.
+- Minor update of links, thumbnails and fanarts.
+
+
+------------------------
+Featherence Kids v0.2.14 (13-Dec-16)
+------------------------
+- Added some more links in English.
+- Major performance boost when remote thumbnails/fanarts are unavailable.
+- Minor update of links, thumbnails and fanarts.
+
+------------------------
+Featherence Kids v0.2.13 (12-Oct-16)
+------------------------
+- Added suprize party TV channels in Tiny category.
+- Minor links update.
+
+------------------------
+Featherence Kids v0.2.12 (01-Oct-16)
+------------------------
+- Added Cartoons 8 search in TV shows category for anime and cartoons.
+- Bug fix with Cartoons 8 search.
+- Minor links update.
+
+------------------------
+Featherence Kids v0.2.11 (25-Sep-16)
+------------------------
+- Added happy birthday songs in Hebrew and English.
+- Major update of autoview feature.
+Work on any skin now and you may add your default view for Main Menu, Sub Menu, and all others window from the addon settings or/and the context menu (Set View).
+- Minor links update.
+
+------------------------
+Featherence Kids v0.2.10 (25-Aug-16)
+------------------------
+- Added repository.kodil support.
+- Added search function for movies addons: seretil, movix.
+- Added search function for tvshows addons: cartoon8.
+- Update information of links to other addons.
+- Update movies category.
+
+------------------------
+Featherence Kids v0.2.8-9 (05-Aug-16)
+------------------------
+- Added auto download feature for external addons.
+- Added Cartoon8 support (English).
+- Added Pokemon - full seasons (wip).
+- Update custom sources description.
+- Update TV Mode feature for long playlist.
+
+------------------------
+Featherence Kids v0.2.7 (10-May-16)
+------------------------
+- Added option to force TV Mode.
+- Minor update of broken links.
+
+------------------------
+Featherence Kids v0.2.6 (16-Apr-16)
+------------------------
+- Minor update of broken links.
+
+------------------------
+Featherence Kids v0.2.5 (18-Mar-16)
+------------------------
+- Minor update of broken links.
+
+------------------------
+Featherence Kids v0.2.4 (03-Mar-16)
+------------------------
+- *Added Google Drive and direct links support.
+  Those are also support TV Mode.
+  *Send your URLS if you want to share.
+- Added 292 Dragon Ball Z episodes.
+- Added Play All menu button.
+- Added TV Mode menu button.
+- Major update of movies section in Hebrew.
+- Major update of SDAROT-TV links.
+- Minor links update.
+- My Kids:
+  - Add URL: Added option to add the following URLS: Manual, ID, Playlist, Channel, Search.
+  - Search: Added option to add search strings, aka: "Featherence".
+- Update broken posters.
+
+------------------------
+Featherence Kids v0.2.3 (03-Feb-16)
+------------------------
+- Added some more contents and links.
+- minor bugs fix.
+- Update addon information.
+
+------------------------
+Featherence Kids v0.2.2 (24-Jan-16)
+------------------------
+- Major bugs fix.
+
+------------------------
+Featherence Kids v0.2.1 (20-Jan-16)
+------------------------
+- Added about us section with useful information and contact tools.
+- Added contents in varied languages.
+- Added Remove-All-Buttons to My Kids script.
+- Added Search History option to smart search button.
+- Minor bugs fix.
+- My kids button now support adding favourites items as well.
+- Update default sorting.
+- Update English language.
+- *Update saving/loading script to include local media when sharing.
+*Previous backups will not work!
+
+------------------------
+Featherence Kids v0.2.0 (15-Jan-16)
+------------------------
+- Added new method of choosing up to 3 prefered languages.
+- Added thumbnails for main and sub categories.
+- Added description to some contents in English and Hebrew.
+- Added fanart for some contents.
+- Added TV Mode support for over 100 series.
+- TV mode now occur also inside container.
+- Added thousands of new videos.
+- Added SdarotTV search.
+- Update English translation.
+- Update Hebrew translation.
+- Update all links to be available per choosens languages only.
+- Major bugs fix.
+- Major resorting of contents.
+- Major update of broken links.
+- Major update of random play button.
+- Reduce addon size.
+
+------------------------
+Featherence Kids v0.1.6 (25-Dec-15)
+------------------------
+- Added about 60 new tvshows.
+- Update TV Mode shuffle function.
+- Update TV Mode accuracy.
+- Minor bugs fix.
+- *Extra attempt to play another video if the first has failed.
+*Failing is an issue of the Youtube plugin.
+
+------------------------
+Featherence Kids v0.1.2-4 (17-Dec-15)
+------------------------
+- Minor bugs fix.
+- Added new contents.
+
+------------------------
+Featherence Kids v0.1.1 (13-Dec-15)
+------------------------
+- add search button.
+- add some video for kids.
+
+------------------------
+Featherence Kids v0.1.0 (08-Dec-15)
+------------------------
+- First release.

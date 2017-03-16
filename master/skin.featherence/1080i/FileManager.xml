@@ -5,20 +5,6 @@
   <controls>
     <include>BlackBackground</include>
     <include>TopInformation</include>
-    <control type="image" description="קו הפרדה">
-      <posx>960</posx>
-      <posy>150</posy>
-      <height>410</height>
-      <width>1</width>
-      <texture>images/LineV.png</texture>
-    </control>
-	<control type="image" description="קו הפרדה2">
-      <posx>960</posx>
-      <posy>560</posy>
-      <height>410</height>
-      <width>1</width>
-      <texture>images/LineV.png</texture>
-    </control>
 	<control type="image" description="חץ לימין">
       <posx>907</posx>
       <posy>490</posy>
