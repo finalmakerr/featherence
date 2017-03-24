@@ -17,7 +17,7 @@
 		  <visible>false</visible>
 		</control>
 		<include>ArrowsLeftRight</include>
-		<include>ArrowsUpDown</include>
+		<include condition="!Skin.HasSetting(Performance)">ArrowsUpDown</include>
 		<control type="grouplist" id="3" description="TopMenu">
 		  <posx>350</posx>
 		  <posy>70</posy>

@@ -92,7 +92,7 @@
   <include name="ViewDesign_50_ItemLayout">
     <control type="image" description="מסגרת">
 	  <animation condition="!Skin.HasSetting(View50_Plus)" effect="zoom" center="0,0" start="100,100" end="100,200">Conditional</animation>
-	  <!--<include>Fade_MenuButtonsOverlay</include>-->
+	  <!--<include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>-->
 	  <posx>0</posx>
 	  <posy>-5</posy>
 	  <width>480</width>
@@ -178,7 +178,11 @@
 	  <font>size18</font>
 	  <label>$VAR[VideoInformation2]</label>
 	</control>
-	<control type="label" description="סגנונות">
+	<include>View50_Genre</include>
+	<include>View50_Common</include>
+  </include>
+  <include name="View50_Genre">
+    <control type="label" description="סגנונות">
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos34</include>
 	  <animation description="slide_he" condition="Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
 	  <animation description="slide_he" condition="Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-60,0" time="0">Conditional</animation>
@@ -196,8 +200,8 @@
 	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
 	  <visible>!Container.Content(seasons) + !Container.Content(episodes) + !String.Contains(ListItem.path,videodb://movies/sets/)</visible>
 	</control>
-	<include>View50_Common</include>
   </include>
+  
   <include name="ViewDesign_50_FocusedLayout">
     <include>AutoView</include>
 	<control type="image" description="מסגרת">
@@ -272,6 +276,7 @@
 	  <visible>Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus)</visible>
 	  <visible>[!String.IsEmpty(ListItem.Icon) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Thumb)] | String.IsEqual(Control.GetLabel(13055),DefaultFolderBack.png)</visible>
 	</control>
+	<include condition="Skin.HasSetting(Performance) | Skin.HasSetting(Genre)">View50_Genre</include>
 	<control type="grouplist" description="תמונת סגנון">
 	    <animation condition="true" effect="zoom" center="auto" start="100,100" end="80,80">Conditional</animation>
 		<animation description="slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
@@ -290,6 +295,7 @@
 		<visible>!Skin.HasSetting(Genre) + !String.Contains(ListItem.path,videodb://movies/sets/) + !String.IsEmpty(ListItem.Genre)</visible>
 		<visible>!Skin.HasSetting(View50_Plus)</visible>
 		<visible>!Container.Content(seasons) + !Container.Content(episodes)</visible>
+		<visible>!Skin.HasSetting(Performance)</visible>
 	</control>
 	<control type="label" description="סגנונות">
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos34</include>
@@ -319,19 +325,8 @@
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">ImageR1</include>
 	  <texture colordiffuse="grey2">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
 	  <include>VisibilityInfoIcon</include>
+	  <include>!Skin.HasSetting(Performance)</include>
     </control>
-	<control type="button" description="קדימון סרט">
-	  <height>40</height>		
-	  <posx>430</posx>
-	  <posy>-5</posy>	      
-	  <width>40</width>
-	  <texturefocus>osd/buttons/OSDTrailerFO.png</texturefocus>
-	  <texturenofocus>osd/buttons/OSDTrailerNF.png</texturenofocus>
-	  <onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
-	  <onclick>Notification(1,1,1000)</onclick>
-	  <visible>!String.IsEmpty(ListItem.Trailer) + !String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
-	  <visible>false</visible>
-	</control>
   </include>
   <include name="View50_Plus">
     <control type="label" description="משודר עכשיו">
@@ -363,7 +358,7 @@
 	</control>
 	<control type="image" description="תמונה">
 	  <include>BorderFrame</include>
-	  <animation description="slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="382,0" time="0">Conditional</animation>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos52</include>
 	  <posx>33</posx>
 	  <posy>33</posy>
 	  <height>40</height>
@@ -371,8 +366,6 @@
 	  <include condition="String.IsEqual(System.Language,Hebrew)">ImageR2</include>
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">ImageL2</include>
 	  <texture background="true">$VAR[VideoInformation2]</texture>
-	  <!--<visible>String.IsEmpty(ListItem.Genre) | !String.IsEmpty(ListItem.Thumb)</visible>-->
-	  <!--<visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>-->
 	  <visible>[!String.Contains(ListItem.path,videodb://movies/sets/)] | String.IsEmpty(ListItem.Genre)</visible>
 	  <visible>!Skin.HasSetting(View50_BiggerIcon)</visible>
 	</control>
@@ -386,24 +379,22 @@
 	  <include condition="String.IsEqual(System.Language,Hebrew)">ImageR2</include>
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">ImageL2</include>
 	  <texture background="true">$VAR[VideoInformation2]</texture>
-	  <!--<visible>String.IsEmpty(ListItem.Genre) | !String.IsEmpty(ListItem.Thumb)</visible>-->
-	  <!--<visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>-->
 	  <visible>!String.Contains(ListItem.path,videodb://movies/sets/) | String.IsEmpty(ListItem.Genre)</visible>
 	  <visible>Skin.HasSetting(View50_BiggerIcon)</visible>
 	</control>
 	<control type="label" description="שעות/דקות/עונות">
-	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos35</include>
-	  <posx>320</posx>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos37</include>
+	  <posx>365</posx>
 	  <posy>40</posy>
-	  <width>170</width>
+	  <width>110</width>
 	  <height>30</height>
 	  <textcolor>grey</textcolor>
-	  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR7</include>
-	  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL7</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">LabelL7</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelR7</include>
 	  <label>$VAR[VideoInformation4]</label>
 	  <visible>!Skin.HasSetting(View50_Plus)</visible>
 	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
-	  <visible>false</visible>
+	  <visible>Skin.HasSetting(Show_Duration) + Container.Content(movies) + System.IdleTime(3) + !System.IdleTime(6)</visible>
 	</control>
 	<control type="label" description="שנה">
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos37</include>
@@ -417,22 +408,7 @@
 	  <label>$VAR[TopVideoInformation2]</label>
 	  <visible>!Skin.HasSetting(View50_Plus)</visible>
 	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
-	  <visible>![!String.IsEmpty(ListItem.Premiered) + Container.Content(episodes)] | [VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Year)]</visible>
-	</control>
-	
-	<control type="label" description="שנה">
-	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos37</include>
-	  <posx>365</posx>
-	  <posy>40</posy>
-	  <width>110</width>
-	  <height>30</height>
-	  <textcolor>grey</textcolor>
-	  <include condition="String.IsEqual(System.Language,Hebrew)">LabelL8</include>
-	  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelR8</include>
-	  <label>$INFO[ListItem.Premiered]</label>
-	  <visible>!Skin.HasSetting(View50_Plus)</visible>
-	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
-	  <visible>[!String.IsEmpty(ListItem.Premiered) + Container.Content(episodes)] + ![VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.Year)]</visible>
+	  <visible>![Skin.HasSetting(Show_Duration) + Container.Content(movies) + System.IdleTime(3) + !System.IdleTime(6)]</visible>
 	</control>
 
 	<control type="image" description="דירוג">
@@ -447,6 +423,7 @@
 	  <texture border="1" background="true" colordiffuse="$VAR[MenuColor]">special://home/addons/script.featherence.service/resources/icons/star.png</texture>
 	  <visible>!Skin.HasSetting(Show_Rating) + !String.IsEmpty(ListItem.Rating)</visible>
 	  <visible>![[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
+	  <visible>!Skin.HasSetting(Performance)</visible>
 	</control>
 	<control type="label" description="דירוג">
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos37</include>
@@ -549,7 +526,7 @@
   <include name="ViewDesign_51_Layout">
 	  <itemlayout description="(כללי)" condition="true" height="90" width="960">
 		<control type="image" description="מסגרת">
-		  <!--<include>Fade_MenuButtonsOverlay</include>-->
+		  <!--<include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>-->
 		  <posx>0</posx>
 		  <posy>0</posy>
 		  <width>880</width>
@@ -634,9 +611,6 @@
 		  <width>70</width>
 		  <texture colordiffuse="grey2">special://home/addons/script.featherence.service/resources/icons/information.png</texture>
 		  <include>VisibilityInfoIcon</include>
-		  <!--<visible>[!String.IsEmpty(ListItem.Plot) | !String.IsEmpty(ListItem.AddonDescription)] + String.IsEmpty(Control.GetLabel(11153)) + !String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
-		  <visible>![[Container.Content(tvshows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(movies)] + [!String.IsEmpty(ListItem.Rating) | !String.IsEmpty(Container.ListItemNoWrap(-1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(1).Rating)] ]</visible>
-		  <visible>![[Container.Content(tvshows) + Integer.IsGreater(ListItem.Property(WatchedEpisodes),0) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)]</visible>-->
 		</control>
 		<control type="image" description="אייקון">
 		  <include>Fade40</include>
@@ -671,7 +645,7 @@
 	    <!--<animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>-->
 	    <include>Slide1</include>
 		<include>Slide2</include>
-		<include>ArrowsUpDown</include>
+		<include condition="!Skin.HasSetting(Performance)">ArrowsUpDown</include>
         <control type="panel" id="56">
 		  <posx>20</posx>
           <posy>210</posy>
@@ -681,7 +655,7 @@
 		  <viewtype label="31012">Grid</viewtype>
 		  <itemlayout description="(Seasons/Episodes)" condition="!String.IsEmpty(Control.GetLabel(11155))" height="100" width="960"> <!--String.Contains(Container.FolderName,Mako)-->
 			<control type="image" description="מסגרת">
-			  <!--<include>Fade_MenuButtonsOverlay</include>-->
+			  <!--<include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>-->
               <posx>760</posx>
               <posy>20</posy>
               <width>360</width>
@@ -843,7 +817,7 @@
   </include>
   <include name="ViewDesign_57_ItemLayout">
 	<control type="group">
-		<include>Fade_MoviesTVCoversOverlay</include>
+		<include condition="!Skin.HasSetting(Performance)">Fade_MoviesTVCoversOverlay</include>
 		<include>Slide2.4</include>
 		
 		<animation description="מרווח עטיפות" condition="$EXP[View57] + Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
@@ -909,7 +883,6 @@
 		  <height>35</height>
 		  <textcolor>yellow</textcolor>
 		  <label>$VAR[VideoInformation1]</label>
-		  <!--<visible>Skin.HasSetting(ShowDVDCases) | !String.IsEmpty(Control.GetLabel(11156)) | !Window.IsVisible(MyVideoNav.xml)</visible>-->
 		</control>
 		<control type="group" description="מסגרת סמן בחירה">
 		  <control type="image">
@@ -1085,7 +1058,7 @@
 	  <itemlayout description="(Plugins)" height="510" width="373">
 		<control type="group">
 			<include>View54_Boat_Itemlayout_Animation</include>
-			<include>Fade_MoviesTVCoversOverlay</include>
+			<include condition="!Skin.HasSetting(Performance)">Fade_MoviesTVCoversOverlay</include>
 			<animation description="מרווח עטיפות" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
 			<animation description="מרווח פוסטרים" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
 			<animation description="מרווח עטיפות" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
@@ -1104,7 +1077,6 @@
 			  <textcolor>white2</textcolor>
 			  <scroll>false</scroll>
 			  <label>$VAR[VideoInformation1]</label>
-			  <!--<visible>!Skin.HasSetting(ShowDVDCases2) | !String.IsEmpty(Control.GetLabel(11156)) | !Window.IsVisible(MyVideoNav.xml)</visible>-->
 			</control>		
 			<control type="label" description="תאריך/שנה">
 			  <animation condition="true" effect="fade" end="50" time="200">Conditional</animation>
@@ -1163,7 +1135,6 @@
 			  <height>35</height>
 			  <scroll>false</scroll>
 			  <label>$VAR[VideoInformation1]</label>
-			  <!--<visible>!Skin.HasSetting(ShowDVDCases2) | !String.IsEmpty(Control.GetLabel(11156)) | !Window.IsVisible(MyVideoNav.xml)</visible>-->
 			</control>
 			<control type="label" description="תאריך תמונה">
 			  <include>Fade3</include>
@@ -1239,7 +1210,6 @@
 	  <texture colordiffuse="ff100c08" border="0">buttons/ButtonA0.png</texture>
 	  <visible>!String.IsEmpty(ListItem.Label) + !String.IsEqual(ListItem.Label,..)</visible>
 	  <width>308</width>
-	  <!--<visible>!Skin.HasSetting(ShowDVDCases2) | !String.IsEmpty(Control.GetLabel(11156)) | !Window.IsVisible(MyVideoNav.xml)</visible>-->
 	</control>
 	<control type="image" description="אייקון">
 	  <include>Fade8</include>

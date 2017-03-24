@@ -7,7 +7,6 @@
 			<posx>88</posx>
 			<posy>140</posy>
 			<include content="MenuBackground">
-				<param name="border" value="40" />
 				<param name="color" value="$VAR[MenuColor]" />
 				<param name="height" value="890" />
 				<param name="posx" value="-2" />
@@ -31,7 +30,7 @@
 				<itemlayout width="820" height="75">
 				  <include content="Buttons_Frame">
 					<param name="id" value="" />
-					<param name="border" value="40" />
+					<param name="border" value="0" />
 					<param name="color" value="$VAR[ButtonUnFocusColor]" />
 					<param name="height" value="80" />
 					<param name="posx" value="0" />
@@ -64,7 +63,7 @@
 				<focusedlayout width="820" height="75">
 				  <include content="Buttons_Frame">
 					<param name="id" value="" />
-					<param name="border" value="40" />
+					<param name="border" value="0" />
 					<param name="color" value="$VAR[ButtonFocusColor]" />
 					<param name="height" value="80" />
 					<param name="posx" value="0" />
@@ -97,7 +96,6 @@
 		</control>
 		<control type="group" id="9002">
 			<include content="MenuBackground">
-				<param name="border" value="40" />
 				<param name="color" value="$VAR[MenuColor]" />
 				<param name="height" value="950" />
 				<param name="posx" value="1018" />

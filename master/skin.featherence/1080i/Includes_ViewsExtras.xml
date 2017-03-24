@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="Trailer_50">
+    <control type="grouplist" description="קדימונים-תפריט רחב">
+	  <visible>!Skin.HasSetting(View50_Plus)</visible>
+	  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+	  <visible>!Container.Content(episodes)</visible>
+	  <posx>420</posx>
+	  <posy>149</posy>
+	  <width>480</width>
+	  <height>985</height>
+	  <orientation>vertical</orientation>
+	  <itemgap>45</itemgap>
+	  <include>Trailer_50S</include>
+	</control>
+	<control type="grouplist" description="קדימונים-תפריט צר">
+	  <visible>Skin.HasSetting(View50_Plus)</visible>
+	  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+	  <visible>!Container.Content(episodes)</visible>
+	  <posx>420</posx>
+	  <posy>149</posy>
+	  <width>480</width>
+	  <height>985</height>
+	  <orientation>vertical</orientation>
+	  <itemgap>0</itemgap>
+	  <include>Trailer_50S</include>
+	  <include>Trailer_50A</include>
+	</control>
+  </include>  
+  <include name="Trailer_50S">
     <control type="button" description="קדימון סרט 0">
 	  <animation condition="String.IsEmpty(Container(50).ListItemPosition(0).Trailer) | String.IsEqual(Container(50).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
 	  <include>Trailer_50_</include>
@@ -46,7 +73,6 @@
 	  <include>Trailer_50_</include>
     </control>
   </include>
-
   <include name="Trailer_50_">
 	<animation condition="Container(50).Scrolling | Container(50).OnScrollNext | Container(50).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
 	<animation condition="!Container(50).Scrolling + !Container(50).OnScrollNext + !Container(50).OnScrollPrevious" effect="fade" start="0" end="100" delay="500" time="1000" reversible="false">Conditional</animation>
@@ -60,60 +86,6 @@
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
 	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
   </include>
-  
-  <include name="Trailer_51">
-    <control type="button" description="קדימון סרט 0">
-	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(0).Trailer) | String.IsEqual(Container(51).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
-	  <include>Trailer_51_</include>
-    </control>
-	<control type="button" description="קדימון סרט 1">
-	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(1).Trailer)  | String.IsEqual(Container(51).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
-	  <include>Trailer_51_</include>
-    </control>
-	<control type="button" description="קדימון סרט 2">
-	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(2).Trailer) | String.IsEqual(Container(51).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
-	  <include>Trailer_51_</include>
-    </control>
-	<control type="button" description="קדימון סרט 3">
-	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(3).Trailer) | String.IsEqual(Container(51).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
-	  <include>Trailer_51_</include>
-    </control>
-	<control type="button" description="קדימון סרט 4">
-	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(4).Trailer) | String.IsEqual(Container(51).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
-	  <include>Trailer_51_</include>
-    </control>
-	<control type="button" description="קדימון סרט 5">
-	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(5).Trailer) | String.IsEqual(Container(51).ListItemPosition(5).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
-	  <include>Trailer_51_</include>
-    </control>
-	<control type="button" description="קדימון סרט 6">
-	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(6).Trailer) | String.IsEqual(Container(51).ListItemPosition(6).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
-	  <include>Trailer_51_</include>
-    </control>
-	<control type="button" description="קדימון סרט 7">
-	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(7).Trailer) | String.IsEqual(Container(51).ListItemPosition(7).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
-	  <include>Trailer_51_</include>
-    </control>
-	<control type="button" description="קדימון סרט 8">
-	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(8).Trailer) | String.IsEqual(Container(51).ListItemPosition(8).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
-	  <include>Trailer_51_</include>
-    </control>
-  </include>
-
-  <include name="Trailer_51_">
-    <animation condition="Container(51).Scrolling | Container(51).OnScrollNext | Container(51).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
-	<animation condition="!Container(51).Scrolling + !Container(51).OnScrollNext + !Container(51).OnScrollPrevious" effect="fade" start="0" end="100" delay="510" time="1000" reversible="false">Conditional</animation>
-	<animation description="" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="793,0" time="0">Conditional</animation>
-	<height>70</height>		
-	<posx>0</posx>	      
-	<width>70</width>
-	<texturefocus>osd/buttons/OSDTrailer_.png</texturefocus>
-	<texturenofocus colordiffuse="BBBBBBFF">osd/buttons/OSDTrailer_.png</texturenofocus>
-	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
-	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
-  </include>
-  
   <include name="Trailer_50A">
 	<control type="button" description="קדימון סרט 11">
 	  <animation condition="String.IsEmpty(Container(50).ListItemPosition(11).Trailer)  | String.IsEqual(Container(50).ListItemPosition(11).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
@@ -169,6 +141,85 @@
     </control>
   </include>
   
+  <include name="Trailer_51">
+    <control type="grouplist" description="קדימונים">
+	  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+	  <visible>!Container.Content(episodes)</visible>
+	  <posx>520</posx>
+	  <posy>208</posy>
+	  <width>485</width>
+	  <height>985</height>
+	  <orientation>vertical</orientation>
+	  <itemgap>19.7</itemgap>
+	  <include>Trailer_51S</include>
+	</control>
+  </include>
+  <include name="Trailer_51S">
+    <control type="button" description="קדימון סרט 0">
+	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(0).Trailer) | String.IsEqual(Container(51).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 1">
+	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(1).Trailer)  | String.IsEqual(Container(51).ListItemPosition(1).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 2">
+	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(2).Trailer) | String.IsEqual(Container(51).ListItemPosition(2).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 3">
+	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(3).Trailer) | String.IsEqual(Container(51).ListItemPosition(3).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 4">
+	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(4).Trailer) | String.IsEqual(Container(51).ListItemPosition(4).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 5">
+	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(5).Trailer) | String.IsEqual(Container(51).ListItemPosition(5).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 6">
+	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(6).Trailer) | String.IsEqual(Container(51).ListItemPosition(6).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 7">
+	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(7).Trailer) | String.IsEqual(Container(51).ListItemPosition(7).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+	<control type="button" description="קדימון סרט 8">
+	  <animation condition="String.IsEmpty(Container(51).ListItemPosition(8).Trailer) | String.IsEqual(Container(51).ListItemPosition(8).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0">Conditional</animation>
+	  <include>Trailer_51_</include>
+    </control>
+  </include>
+  <include name="Trailer_51_">
+    <animation condition="Container(51).Scrolling | Container(51).OnScrollNext | Container(51).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
+	<animation condition="!Container(51).Scrolling + !Container(51).OnScrollNext + !Container(51).OnScrollPrevious" effect="fade" start="0" end="100" delay="510" time="1000" reversible="false">Conditional</animation>
+	<animation description="" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="793,0" time="0">Conditional</animation>
+	<height>70</height>		
+	<posx>0</posx>	      
+	<width>70</width>
+	<texturefocus>osd/buttons/OSDTrailer_.png</texturefocus>
+	<texturenofocus colordiffuse="BBBBBBFF">osd/buttons/OSDTrailer_.png</texturenofocus>
+	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
+	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
+  </include>
+
+  <include name="Trailer_54">
+	<control type="grouplist" description="קדימונים">
+	  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+	  <visible>!Skin.HasSetting(View54_Boat)</visible>
+	  <visible>!Container.Content(episodes)</visible>
+	  <posx>300</posx>
+	  <posy>633</posy>
+	  <width>1800</width>
+	  <height>300</height>
+	  <orientation>horizontal</orientation>
+	  <itemgap>303</itemgap>
+	  <include>Trailer_54A</include>
+	</control>
+  </include>
+		
   <include name="Trailer_54A">
     <control type="button" description="קדימון סרט 0">
 	  <animation condition="String.IsEmpty(Container(54).ListItemPosition(0).Trailer) | String.IsEqual(Container(54).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
@@ -232,6 +283,44 @@
 	  <animation condition="Skin.HasSetting(View54_Boat) + $EXP[View54] + Container(54).Position(4)" effect="rotatey" center="auto" start="0" end="10" delay="1000" time="720" reversible="true">Conditional</animation>
   </include>
   
+  <include name="Trailer_57">
+      <control type="grouplist" description="קדימונים שורה 1">
+          <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
+		  <include>TrailerFade</include>
+		  <posx>220</posx>
+          <posy>125</posy>
+          <width>1800</width>
+          <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>197</itemgap>
+		  <include>Trailer_57A</include>
+	  </control>
+	  <control type="grouplist" description="קדימונים שורה 2">
+		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
+		  <include>TrailerFade</include>
+		  <posx>220</posx>
+		  <posy>448</posy>
+		  <width>1800</width>
+		  <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>197</itemgap>
+		  <include>Trailer_57B</include>
+	  </control>
+	  <control type="grouplist" description="קדימונים שורה 3">
+		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
+		  <include>TrailerFade</include>
+		  <posx>220</posx>
+		  <posy>770</posy>
+		  <width>1800</width>
+		  <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>197</itemgap>
+		  <include>Trailer_57C</include>
+	  </control>
+  </include>
   <include name="Trailer_57_">
     <animation condition="Container(57).Scrolling | Container(57).OnScrollNext | Container(57).OnScrollPrevious" effect="fade" start="100" end="0" time="0" reversible="false">Conditional</animation>
 	<animation condition="!Container(57).Scrolling + !Container(57).OnScrollNext + !Container(57).OnScrollPrevious" effect="fade" start="0" end="100" delay="570" time="1000" reversible="false">Conditional</animation>
@@ -243,9 +332,7 @@
 	<texturenofocus colordiffuse="BBBBBBFF">osd/buttons/OSDTrailer_.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
   </include>
-  
   <include name="Trailer_57A">
     <control type="button" description="קדימון סרט 0">
 	  <animation condition="String.IsEmpty(Container(57).ListItemPosition(0).Trailer) | String.IsEqual(Container(57).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
@@ -282,8 +369,7 @@
 	  <animation condition="!Skin.HasSetting(SelectedZoom) + Container(57).Position(6)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 	  <include>Trailer_57_</include>
     </control>
-  </include>
-  
+  </include> 
   <include name="Trailer_57B">
     <control type="button" description="קדימון סרט 7">
 	  <animation condition="String.IsEmpty(Container(57).ListItemPosition(7).Trailer) | String.IsEqual(Container(57).ListItemPosition(7).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
@@ -321,7 +407,6 @@
 	  <include>Trailer_57_</include>
     </control>
   </include>
-    
   <include name="Trailer_57C">
     <control type="button" description="קדימון סרט 14">
 	  <animation condition="String.IsEmpty(Container(57).ListItemPosition(14).Trailer) | String.IsEqual(Container(57).ListItemPosition(14).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
@@ -360,6 +445,57 @@
     </control>
   </include>
   
+  <include name="Trailer_59">
+	  <control type="grouplist" description="קדימונים שורה 1">
+		  <animation description="" condition="Skin.HasSetting(View59_Distance)" effect="slide" end="20,-10">Conditional</animation>
+		  <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
+		  <animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
+		  <animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
+		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
+		  <include>TrailerFade</include>
+		  <posx>210</posx>
+		  <posy>70</posy>
+		  <width>1028</width>
+		  <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>197</itemgap>
+		  <include>Trailer_59A</include>
+	  </control>
+	  <control type="grouplist" description="קדימונים שורה 2">
+		  <animation description="" condition="Skin.HasSetting(View59_Distance)" effect="slide" end="20,-10">Conditional</animation>
+		  <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
+		  <animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
+		  <animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
+		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
+		  <include>TrailerFade</include>
+		  <posx>210</posx>
+		  <posy>416</posy>
+		  <width>1028</width>
+		  <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>197</itemgap>
+		  <include>Trailer_59B</include>
+	  </control>
+	  <control type="grouplist" description="קדימונים שורה 3">
+		  <animation description="" condition="Skin.HasSetting(View59_Distance)" effect="slide" end="20,-10">Conditional</animation>
+		  <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
+		  <animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
+		  <animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
+		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
+		  <include>TrailerFade</include>
+		  <posx>210</posx>
+		  <posy>743</posy>
+		  <width>1028</width>
+		  <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>197</itemgap>
+		  <include>Trailer_59C</include>
+	  </control>
+  </include>
+	  
   <include name="Trailer_59A">
     <control type="button" description="קדימון סרט 0">
 	  <animation condition="String.IsEmpty(Container(59).ListItemPosition(0).Trailer) | String.IsEqual(Container(59).ListItemPosition(0).Overlay,OverlayWatched.png)" effect="fade" start="100" end="0" reversible="true">Conditional</animation>
@@ -440,7 +576,36 @@
 	<texturenofocus colordiffuse="BBBBBBFF">osd/buttons/OSDTrailer_.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
+	<visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+  </include>
+  
+  <include name="Trailer_58">
+	  <control type="grouplist" description="קדימונים שורה 1">
+		  <animation description="מרווח_slide_en" condition="Skin.HasSetting(View58_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="15,0" reversible="true">Conditional</animation>
+		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
+		  <include>TrailerFade</include>
+		  <posx>317</posx>
+		  <posy>137</posy>
+		  <width>1800</width>
+		  <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>304</itemgap>
+		  <include>Trailer_58A</include>
+	  </control>
+	  <control type="grouplist" description="קדימונים שורה 2">
+		  <animation description="מרווח_slide_en" condition="Skin.HasSetting(View58_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="15,0" reversible="true">Conditional</animation>
+		  <visible>!Skin.HasSetting(EnableTrailerButton)</visible>
+		  <visible>!Container.Content(episodes)</visible>
+		  <include>TrailerFade</include>
+		  <posx>317</posx>
+		  <posy>645</posy>
+		  <width>1800</width>
+		  <height>300</height>
+		  <orientation>horizontal</orientation>
+		  <itemgap>304</itemgap>
+		  <include>Trailer_58B</include>
+	  </control>
   </include>
   
   <include name="Trailer_58A">
@@ -510,7 +675,7 @@
 	<texturenofocus colordiffuse="BBBBBBFF">osd/buttons/OSDTrailer_.png</texturenofocus>
 	<onclick condition="Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer])</onclick>
 	<onclick condition="!Skin.HasSetting(trailers2)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-	<visible>!Window.IsVisible(MyPrograms.xml)</visible>
+	<visible>!Skin.HasSetting(EnableTrailerButton)</visible>
   </include>
   
   <include name="VisibilityInfoIcon">

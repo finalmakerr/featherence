@@ -5,7 +5,6 @@
 	<include>TopInformation</include>
     <control type="group" description="">
 	  <include content="MenuBackground">
-		<param name="border" value="35" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="80" />
 		<param name="posx" value="449" />
@@ -17,7 +16,6 @@
 		<param name="type1" value="true" description="DialogBackground"/>
       </include>
 	  <include content="MenuBackground">
-		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="875" />
 		<param name="posx" value="449" />
@@ -40,7 +38,7 @@
         <posy>110</posy>
         <height>1</height>
         <width>1920</width>
-        <texture>images/line.png</texture>
+        <texture colordiffuse="black">images/LineH.png</texture>
       </control>
       <control type="grouplist" id="9001">
         <posx>490</posx>
@@ -77,7 +75,7 @@
         <itemlayout height="80">
 		  <include content="Buttons_Frame">
 			<param name="id" value="" />
-			<param name="border" value="40" />
+			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
 			<param name="height" value="75" />
 			<param name="posx" value="0" />
@@ -95,7 +93,7 @@
         <focusedlayout height="80">
           <include content="Buttons_Frame">
 			<param name="id" value="" />
-			<param name="border" value="40" />
+			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
 			<param name="height" value="75" />
 			<param name="posx" value="0" />
@@ -106,7 +104,7 @@
 		  </include>
 		  <include content="Buttons_Frame">
 			<param name="id" value="" />
-			<param name="border" value="40" />
+			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
 			<param name="height" value="75" />
 			<param name="posx" value="0" />

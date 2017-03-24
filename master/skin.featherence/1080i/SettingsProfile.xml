@@ -23,12 +23,20 @@
 	  <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>
 	  <include>ButtonC1</include>
     </control>
+	<control type="image" description="ProfileThumb">
+      <posy>160</posy>
+      <posx>550</posx>
+      <width>81</width>
+      <height>81</height>
+      <texture>$INFO[System.ProfileThumb]</texture>
+      <aspectratio>stretch</aspectratio>
+    </control>
     <control type="image">
       <animation effect="fade" time="300">VisibleChange</animation>
       <posy>256</posy>
       <width>1920</width>
       <height>1</height>
-      <texture>images/Line.png</texture>
+      <texture colordiffuse="black">images/LineH.png</texture>
       <aspectratio>stretch</aspectratio>
     </control>
     <control type="group" description="List">
@@ -60,7 +68,7 @@
             <font>size36</font>
             <textcolor>white</textcolor>
             <label>$INFO[ListItem.Label]</label>
-          </control>	  
+          </control>
         </itemlayout>
         <focusedlayout height="81">
           <control type="image">
@@ -80,14 +88,6 @@
           </control>
         </focusedlayout>
       </control>
-    </control>
-    <control type="image">
-      <posy>30</posy>
-      <posx>30</posx>
-      <width>80</width>
-      <height>80</height>
-      <texture diffuse="images/logindiffuse.png">$INFO[System.ProfileThumb]</texture>
-      <aspectratio>stretch</aspectratio>
     </control>
   </controls>
 </window>

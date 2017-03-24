@@ -16,7 +16,7 @@
 	<value condition="![ $EXP[View59] + !Skin.HasSetting(ShowDVDCases) ] | !$EXP[View59]">15</value>
 	<value condition="![ [ [ $EXP[View54] | $EXP[View58] ] + Skin.HasSetting(ShowDVDCases2) ] | !$EXP[View54] + !$EXP[View58] ]">6</value>
 	<value condition="![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + !Window.IsVisible(Home.xml)">7</value>
-	<value condition="![[!String.IsEmpty(ListItem.Rating) | !String.IsEmpty(Container.ListItemNoWrap(-3).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(3).Rating)] | Window.IsVisible(Home.xml)] + !String.Contains(Container.FolderPath,videodb://)">8</value>
+	<value condition="![ [!String.IsEmpty(ListItem.Rating) | !String.IsEmpty(Container.ListItemNoWrap(-3).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(3).Rating)] | Window.IsVisible(Home.xml) ] + !String.Contains(Container.FolderPath,videodb://)">8</value>
 	<value condition="Window.IsVisible(Home.xml) + [String.IsEqual(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget317))]">12</value>
   </variable>
   <variable name="BorderTexture">

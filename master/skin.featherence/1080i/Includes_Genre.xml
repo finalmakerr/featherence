@@ -27,7 +27,7 @@
 		<control type="image" description="אקשן">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Action.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31600]) | String.Contains(ListItem.Genre,Action) | String.Contains(ListItem.Genre,אקשן) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31600]) | String.Contains(VideoPlayer.Genre,Action) | String.Contains(VideoPlayer.Genre,אקשן)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31600]) | String.Contains(ListItem.Genre,Action) | String.Contains(ListItem.Genre,אקשן) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31600]) | String.Contains(VideoPlayer.Genre,Action) | String.Contains(VideoPlayer.Genre,אקשן)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -44,7 +44,7 @@
 		<control type="image" description="הרפתקאות">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Adventure.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31601]) | String.Contains(ListItem.Genre,Adventure) | String.Contains(ListItem.Genre,הרפתקאות) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31601]) | String.Contains(VideoPlayer.Genre,Adventure) | String.Contains(VideoPlayer.Genre,הרפתקאות)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31601]) | String.Contains(ListItem.Genre,Adventure) | String.Contains(ListItem.Genre,הרפתקאות) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31601]) | String.Contains(VideoPlayer.Genre,Adventure) | String.Contains(VideoPlayer.Genre,הרפתקאות)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -61,8 +61,8 @@
 		<control type="image" description="אנימציה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Animation.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31602]) | String.Contains(ListItem.Genre,Animation) | String.Contains(ListItem.Genre,אנימציה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31602]) | String.Contains(VideoPlayer.Genre,Animation)]]</visible>
-			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !String.Contains(ListItem.Genre,$LOCALIZE[31653]) + !String.Contains(ListItem.Genre,Film &amp; Animation)] | [Window.IsActive(DialogFullScreenInfo.xml) + !String.Contains(VideoPlayer.Genre,$LOCALIZE[31653]) + !String.Contains(VideoPlayer.Genre,Film &amp; Animation)]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31602]) | String.Contains(ListItem.Genre,Animation) | String.Contains(ListItem.Genre,אנימציה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31602]) | String.Contains(VideoPlayer.Genre,Animation)]]</visible>
+			<visible>[!VideoPlayer.IsFullscreen + !String.Contains(ListItem.Genre,$LOCALIZE[31653]) + !String.Contains(ListItem.Genre,Film &amp; Animation)] | [VideoPlayer.IsFullscreen + !String.Contains(VideoPlayer.Genre,$LOCALIZE[31653]) + !String.Contains(VideoPlayer.Genre,Film &amp; Animation)]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -81,7 +81,7 @@
 		<control type="image" description="ביוגרפיה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Biography.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31603]) | String.Contains(ListItem.Genre,Biography) | String.Contains(ListItem.Genre,ביוגרפיה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31603]) | String.Contains(VideoPlayer.Genre,Biography) | String.Contains(VideoPlayer.Genre,ביוגרפיה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31603]) | String.Contains(ListItem.Genre,Biography) | String.Contains(ListItem.Genre,ביוגרפיה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31603]) | String.Contains(VideoPlayer.Genre,Biography) | String.Contains(VideoPlayer.Genre,ביוגרפיה)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -98,7 +98,7 @@
 		<control type="image" description="ילדים">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Children.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31604]) | String.Contains(ListItem.Genre,Children) | String.Contains(ListItem.Genre,ילדים) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31604]) | String.Contains(VideoPlayer.Genre,Children) | String.Contains(VideoPlayer.Genre,ילדים)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31604]) | String.Contains(ListItem.Genre,Children) | String.Contains(ListItem.Genre,ילדים) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31604]) | String.Contains(VideoPlayer.Genre,Children) | String.Contains(VideoPlayer.Genre,ילדים)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -116,7 +116,7 @@
 		<control type="image" description="קומדיה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Comedy.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31605]) | String.Contains(ListItem.Genre,Comedy) | String.Contains(ListItem.Genre,קומדיה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31605]) | String.Contains(VideoPlayer.Genre,Comedy) | String.Contains(VideoPlayer.Genre,קומדיה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31605]) | String.Contains(ListItem.Genre,Comedy) | String.Contains(ListItem.Genre,קומדיה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31605]) | String.Contains(VideoPlayer.Genre,Comedy) | String.Contains(VideoPlayer.Genre,קומדיה)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -134,7 +134,7 @@
 		<control type="image" description="פשע">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Crime.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31606]) | String.Contains(ListItem.Genre,Crime) | String.Contains(ListItem.Genre,פשע) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31606]) | String.Contains(VideoPlayer.Genre,Crime) | String.Contains(VideoPlayer.Genre,פשע)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31606]) | String.Contains(ListItem.Genre,Crime) | String.Contains(ListItem.Genre,פשע) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31606]) | String.Contains(VideoPlayer.Genre,Crime) | String.Contains(VideoPlayer.Genre,פשע)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -152,7 +152,7 @@
 		<control type="image" description="אסונות">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Disaster.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31607]) | String.Contains(ListItem.Genre,Disaster) | String.Contains(ListItem.Genre,אסונות) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31607]) | String.Contains(VideoPlayer.Genre,Disaster) | String.Contains(VideoPlayer.Genre,אסונות)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31607]) | String.Contains(ListItem.Genre,Disaster) | String.Contains(ListItem.Genre,אסונות) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31607]) | String.Contains(VideoPlayer.Genre,Disaster) | String.Contains(VideoPlayer.Genre,אסונות)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -170,7 +170,7 @@
 		<control type="image" description="דוקו">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Document.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31608]) | String.Contains(ListItem.Genre,Document) | String.Contains(ListItem.Genre,דוקו) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31608]) | String.Contains(VideoPlayer.Genre,Document) | String.Contains(VideoPlayer.Genre,דוקו)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31608]) | String.Contains(ListItem.Genre,Document) | String.Contains(ListItem.Genre,דוקו) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31608]) | String.Contains(VideoPlayer.Genre,Document) | String.Contains(VideoPlayer.Genre,דוקו)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -188,7 +188,7 @@
 		<control type="image" description="דרמה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Drama.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31609]) | String.Contains(ListItem.Genre,Drama) | String.Contains(ListItem.Genre,דרמה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31609]) | String.Contains(VideoPlayer.Genre,Drama) | String.Contains(VideoPlayer.Genre,דרמה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31609]) | String.Contains(ListItem.Genre,Drama) | String.Contains(ListItem.Genre,דרמה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31609]) | String.Contains(VideoPlayer.Genre,Drama) | String.Contains(VideoPlayer.Genre,דרמה)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -206,7 +206,7 @@
 		<control type="image" description="משפחה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Family.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31610]) | String.Contains(ListItem.Genre,Family) | String.Contains(ListItem.Genre,משפחה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31610]) | String.Contains(VideoPlayer.Genre,Family) | String.Contains(VideoPlayer.Genre,משפחה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31610]) | String.Contains(ListItem.Genre,Family) | String.Contains(ListItem.Genre,משפחה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31610]) | String.Contains(VideoPlayer.Genre,Family) | String.Contains(VideoPlayer.Genre,משפחה)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -224,7 +224,7 @@
 		<control type="image" description="פנטזיה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Fantasy.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31611]) | String.Contains(ListItem.Genre,Fantasy) | String.Contains(ListItem.Genre,פנטזיה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31611]) | String.Contains(VideoPlayer.Genre,Fantasy) | String.Contains(VideoPlayer.Genre,פנטזיה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31611]) | String.Contains(ListItem.Genre,Fantasy) | String.Contains(ListItem.Genre,פנטזיה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31611]) | String.Contains(VideoPlayer.Genre,Fantasy) | String.Contains(VideoPlayer.Genre,פנטזיה)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -242,7 +242,7 @@
 		<control type="image" description="היסטורי">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/History.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31612]) | String.Contains(ListItem.Genre,History) | String.Contains(ListItem.Genre,היסטורי) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31612]) | String.Contains(VideoPlayer.Genre,History) | String.Contains(VideoPlayer.Genre,היסטורי)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31612]) | String.Contains(ListItem.Genre,History) | String.Contains(ListItem.Genre,היסטורי) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31612]) | String.Contains(VideoPlayer.Genre,History) | String.Contains(VideoPlayer.Genre,היסטורי)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -260,7 +260,7 @@
 		<control type="image" description="חגים">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Holiday.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31613]) | String.Contains(ListItem.Genre,Holiday) | String.Contains(ListItem.Genre,חגים) | String.Contains(ListItem.Genre,Christmas) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,Christmas) | String.Contains(VideoPlayer.Genre,$LOCALIZE[31613]) | String.Contains(VideoPlayer.Genre,Holiday) | String.Contains(VideoPlayer.Genre,חגים) | String.Contains(VideoPlayer.Genre,Christmas)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31613]) | String.Contains(ListItem.Genre,Holiday) | String.Contains(ListItem.Genre,חגים) | String.Contains(ListItem.Genre,Christmas) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,Christmas) | String.Contains(VideoPlayer.Genre,$LOCALIZE[31613]) | String.Contains(VideoPlayer.Genre,Holiday) | String.Contains(VideoPlayer.Genre,חגים) | String.Contains(VideoPlayer.Genre,Christmas)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -278,7 +278,7 @@
 		<control type="image" description="אימה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Horror.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31614]) | String.Contains(ListItem.Genre,Horror) | String.Contains(ListItem.Genre,אימה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31614]) | String.Contains(VideoPlayer.Genre,Horror) | String.Contains(VideoPlayer.Genre,אימה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31614]) | String.Contains(ListItem.Genre,Horror) | String.Contains(ListItem.Genre,אימה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31614]) | String.Contains(VideoPlayer.Genre,Horror) | String.Contains(VideoPlayer.Genre,אימה)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -296,7 +296,7 @@
 		<control type="image" description="הודי">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Indie.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31615]) | String.Contains(ListItem.Genre,Indie) | String.Contains(ListItem.Genre,הודי) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31615]) | String.Contains(VideoPlayer.Genre,Indie) | String.Contains(VideoPlayer.Genre,הודי)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31615]) | String.Contains(ListItem.Genre,Indie) | String.Contains(ListItem.Genre,הודי) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31615]) | String.Contains(VideoPlayer.Genre,Indie) | String.Contains(VideoPlayer.Genre,הודי)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -315,8 +315,8 @@
 			<include>MultiGenreFlag</include>
 			<aspectratio aligny="bottom">keep</aspectratio>
 			<texture>badges/genre/Music.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31616]) | String.Contains(ListItem.Genre,Music) | String.Contains(ListItem.Genre,מוזיקה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31616]) | String.Contains(VideoPlayer.Genre,Music) | String.Contains(VideoPlayer.Genre,מוזיקה)]]</visible>
-			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !String.Contains(ListItem.Genre,$LOCALIZE[31646]) + !String.Contains(ListItem.Genre,Musical)] | [Window.IsActive(DialogFullScreenInfo.xml) + !String.Contains(VideoPlayer.Genre,$LOCALIZE[31646]) + !String.Contains(VideoPlayer.Genre,Musical)]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31616]) | String.Contains(ListItem.Genre,Music) | String.Contains(ListItem.Genre,מוזיקה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31616]) | String.Contains(VideoPlayer.Genre,Music) | String.Contains(VideoPlayer.Genre,מוזיקה)]]</visible>
+			<visible>[!VideoPlayer.IsFullscreen + !String.Contains(ListItem.Genre,$LOCALIZE[31646]) + !String.Contains(ListItem.Genre,Musical)] | [VideoPlayer.IsFullscreen + !String.Contains(VideoPlayer.Genre,$LOCALIZE[31646]) + !String.Contains(VideoPlayer.Genre,Musical)]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -336,7 +336,7 @@
 		<control type="image" description="מסתורין">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Mystery.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31617]) | String.Contains(ListItem.Genre,Mystery) | String.Contains(ListItem.Genre,מסתורין) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31617]) | String.Contains(VideoPlayer.Genre,Mystery) | String.Contains(VideoPlayer.Genre,מסתורין)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31617]) | String.Contains(ListItem.Genre,Mystery) | String.Contains(ListItem.Genre,מסתורין) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31617]) | String.Contains(VideoPlayer.Genre,Mystery) | String.Contains(VideoPlayer.Genre,מסתורין)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -354,7 +354,7 @@
 		<control type="image" description="רומנטי">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Romance.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31618]) | String.Contains(ListItem.Genre,Romance) | String.Contains(ListItem.Genre,רומנטי) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31618]) | String.Contains(VideoPlayer.Genre,Romance) | String.Contains(VideoPlayer.Genre,רומנטי)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31618]) | String.Contains(ListItem.Genre,Romance) | String.Contains(ListItem.Genre,רומנטי) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31618]) | String.Contains(VideoPlayer.Genre,Romance) | String.Contains(VideoPlayer.Genre,רומנטי)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -372,7 +372,7 @@
 		<control type="image" description="מדע בדיוני">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Sci-Fi.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31619]) | String.Contains(ListItem.Genre,Science Fiction) | String.Contains(ListItem.Genre,Science-Fiction) | String.Contains(ListItem.Genre,Sci-Fi) | String.Contains(ListItem.Genre,מדע בדיוני) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Science Fiction) | String.Contains(Window(home).Property(ListItemGenre),Science-Fiction) | String.Contains(Window(home).Property(ListItemGenre),Sci-Fi)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31619]) | String.Contains(VideoPlayer.Genre,Science Fiction) | String.Contains(VideoPlayer.Genre,Science-Fiction) | String.Contains(VideoPlayer.Genre,Sci-Fi) | String.Contains(VideoPlayer.Genre,מדע בדיוני)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31619]) | String.Contains(ListItem.Genre,Science Fiction) | String.Contains(ListItem.Genre,Science-Fiction) | String.Contains(ListItem.Genre,Sci-Fi) | String.Contains(ListItem.Genre,מדע בדיוני) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Science Fiction) | String.Contains(Window(home).Property(ListItemGenre),Science-Fiction) | String.Contains(Window(home).Property(ListItemGenre),Sci-Fi)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31619]) | String.Contains(VideoPlayer.Genre,Science Fiction) | String.Contains(VideoPlayer.Genre,Science-Fiction) | String.Contains(VideoPlayer.Genre,Sci-Fi) | String.Contains(VideoPlayer.Genre,מדע בדיוני)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -390,7 +390,7 @@
 		<control type="image" description="קצרים">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Short.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31620]) | String.Contains(ListItem.Genre,Short) | String.Contains(ListItem.Genre,קצרים) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31620]) | String.Contains(VideoPlayer.Genre,Short) | String.Contains(VideoPlayer.Genre,קצרים)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31620]) | String.Contains(ListItem.Genre,Short) | String.Contains(ListItem.Genre,קצרים) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31620]) | String.Contains(VideoPlayer.Genre,Short) | String.Contains(VideoPlayer.Genre,קצרים)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -408,7 +408,7 @@
 		<control type="image" description="ספורט">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Sport.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31621]) | String.Contains(ListItem.Genre,Sport) | String.Contains(ListItem.Genre,ספורט) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31621]) | String.Contains(VideoPlayer.Genre,Sport) | String.Contains(VideoPlayer.Genre,ספורט)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31621]) | String.Contains(ListItem.Genre,Sport) | String.Contains(ListItem.Genre,ספורט) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31621]) | String.Contains(VideoPlayer.Genre,Sport) | String.Contains(VideoPlayer.Genre,ספורט)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -426,7 +426,7 @@
 		<control type="image" description="מתח">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Suspense.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31622]) | String.Contains(ListItem.Genre,Suspense) | String.Contains(ListItem.Genre,מתח) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31622]) | String.Contains(VideoPlayer.Genre,Suspense) | String.Contains(VideoPlayer.Genre,מתח)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31622]) | String.Contains(ListItem.Genre,Suspense) | String.Contains(ListItem.Genre,מתח) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31622]) | String.Contains(VideoPlayer.Genre,Suspense) | String.Contains(VideoPlayer.Genre,מתח)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -444,7 +444,7 @@
 		<control type="image" description="מותחן">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Thriller.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31623]) | String.Contains(ListItem.Genre,Thriller) | String.Contains(ListItem.Genre,מותחן) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31623]) | String.Contains(VideoPlayer.Genre,Thriller) | String.Contains(VideoPlayer.Genre,מותחן)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31623]) | String.Contains(ListItem.Genre,Thriller) | String.Contains(ListItem.Genre,מותחן) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31623]) | String.Contains(VideoPlayer.Genre,Thriller) | String.Contains(VideoPlayer.Genre,מותחן)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -462,7 +462,7 @@
 		<control type="image" description="מלחמה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/War.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31624]) | String.Contains(ListItem.Genre,War) | String.Contains(ListItem.Genre,מלחמה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31624]) | String.Contains(VideoPlayer.Genre,War) | String.Contains(VideoPlayer.Genre,מלחמה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31624]) | String.Contains(ListItem.Genre,War) | String.Contains(ListItem.Genre,מלחמה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31624]) | String.Contains(VideoPlayer.Genre,War) | String.Contains(VideoPlayer.Genre,מלחמה)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -480,7 +480,7 @@
 		<control type="image" description="מערב פרוע">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Western.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31625]) | String.Contains(ListItem.Genre,Western) | String.Contains(ListItem.Genre,מערב פרוע) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31625]) | String.Contains(VideoPlayer.Genre,Western) | String.Contains(VideoPlayer.Genre,מערב פרוע)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31625]) | String.Contains(ListItem.Genre,Western) | String.Contains(ListItem.Genre,מערב פרוע) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31625]) | String.Contains(VideoPlayer.Genre,Western) | String.Contains(VideoPlayer.Genre,מערב פרוע)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -498,7 +498,7 @@
 		<control type="image" description="">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Game-Show.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31626]) | String.Contains(ListItem.Genre,Game Show) | String.Contains(ListItem.Genre,שעשועון) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31626]) | String.Contains(VideoPlayer.Genre,Game Show) | String.Contains(VideoPlayer.Genre,שעשועון)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31626]) | String.Contains(ListItem.Genre,Game Show) | String.Contains(ListItem.Genre,שעשועון) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31626]) | String.Contains(VideoPlayer.Genre,Game Show) | String.Contains(VideoPlayer.Genre,שעשועון)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -516,7 +516,7 @@
 		<control type="image" description="חדשות">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/News.png</texture>
-			<visible><visible>String.Contains(ListItem.Genre,$LOCALIZE[31627]) | String.Contains(ListItem.Genre,News) | String.Contains(ListItem.Genre,חדשות) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31627]) | String.Contains(VideoPlayer.Genre,News) | String.Contains(VideoPlayer.Genre,חדשות)]]</visible></visible>
+			<visible><visible>String.Contains(ListItem.Genre,$LOCALIZE[31627]) | String.Contains(ListItem.Genre,News) | String.Contains(ListItem.Genre,חדשות) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31627]) | String.Contains(VideoPlayer.Genre,News) | String.Contains(VideoPlayer.Genre,חדשות)]]</visible></visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -534,7 +534,7 @@
 		<control type="image" description="ריאליטי">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Reality.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31628]) | String.Contains(ListItem.Genre,Reality) | String.Contains(ListItem.Genre,ריאליטי) | String.Contains(ListItem.Genre,Reality-TV) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Reality) | String.Contains(Window(home).Property(ListItemGenre),Reality-TV)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31628]) | String.Contains(VideoPlayer.Genre,Reality) | String.Contains(VideoPlayer.Genre,Reality-TV) | String.Contains(VideoPlayer.Genre,ריאליטי)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31628]) | String.Contains(ListItem.Genre,Reality) | String.Contains(ListItem.Genre,ריאליטי) | String.Contains(ListItem.Genre,Reality-TV) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Reality) | String.Contains(Window(home).Property(ListItemGenre),Reality-TV)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31628]) | String.Contains(VideoPlayer.Genre,Reality) | String.Contains(VideoPlayer.Genre,Reality-TV) | String.Contains(VideoPlayer.Genre,ריאליטי)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -552,27 +552,27 @@
 		<control type="image" description="קומדיית מצבים">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Sitcom.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31629]) | String.Contains(ListItem.Genre,Sitcom) | String.Contains(ListItem.Genre,קומדיית מצבים) | String.Contains(ListItem.Genre,sitcom) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Sitcom) | String.Contains(Window(home).Property(ListItemGenre),sitcom)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31629]) | String.Contains(VideoPlayer.Genre,Sitcom) | String.Contains(VideoPlayer.Genre,sitcom) | String.Contains(VideoPlayer.Genre,קומדיית מצבים)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31629]) | String.Contains(ListItem.Genre,Sitcom) | String.Contains(ListItem.Genre,קומדיית מצבים) | String.Contains(ListItem.Genre,sitcom) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Sitcom) | String.Contains(Window(home).Property(ListItemGenre),sitcom)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31629]) | String.Contains(VideoPlayer.Genre,Sitcom) | String.Contains(VideoPlayer.Genre,sitcom) | String.Contains(VideoPlayer.Genre,קומדיית מצבים)]]</visible>
 		</control>
 		<control type="image" description="">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Talk-Show.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31630]) | String.Contains(ListItem.Genre,Talk Show) | String.Contains(ListItem.Genre,Talk-Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Talk Show) | String.Contains(Window(home).Property(ListItemGenre),Talk-Show)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31630]) | String.Contains(VideoPlayer.Genre,Talk Show) | String.Contains(VideoPlayer.Genre,Talk-Show)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31630]) | String.Contains(ListItem.Genre,Talk Show) | String.Contains(ListItem.Genre,Talk-Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Talk Show) | String.Contains(Window(home).Property(ListItemGenre),Talk-Show)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31630]) | String.Contains(VideoPlayer.Genre,Talk Show) | String.Contains(VideoPlayer.Genre,Talk-Show)]]</visible>
 		</control>
 		<control type="image" description="">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Food.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31631]) | String.Contains(ListItem.Genre,Food) | String.Contains(ListItem.Genre,food) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Food) | String.Contains(Window(home).Property(ListItemGenre),food)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31631]) | String.Contains(VideoPlayer.Genre,Food) | String.Contains(VideoPlayer.Genre,food)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31631]) | String.Contains(ListItem.Genre,Food) | String.Contains(ListItem.Genre,food) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Food) | String.Contains(Window(home).Property(ListItemGenre),food)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31631]) | String.Contains(VideoPlayer.Genre,Food) | String.Contains(VideoPlayer.Genre,food)]]</visible>
 		</control>
 		<control type="image" description="">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Home-and-Garden.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31631]) | String.Contains(ListItem.Genre,Home and Garden) | String.Contains(ListItem.Genre,Home-and-Garden) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Home and Garden) | String.Contains(Window(home).Property(ListItemGenre),Home-and-Garden)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31631]) | String.Contains(VideoPlayer.Genre,Home and Garden) | String.Contains(VideoPlayer.Genre,Home-and-Garden)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31631]) | String.Contains(ListItem.Genre,Home and Garden) | String.Contains(ListItem.Genre,Home-and-Garden) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Home and Garden) | String.Contains(Window(home).Property(ListItemGenre),Home-and-Garden)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31631]) | String.Contains(VideoPlayer.Genre,Home and Garden) | String.Contains(VideoPlayer.Genre,Home-and-Garden)]]</visible>
 		</control>
 		<control type="image" description="מיני סדרה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Mini-Series.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31633]) | String.Contains(ListItem.Genre,Mini Series) | String.Contains(ListItem.Genre,Mini-Series) | String.Contains(ListItem.Genre,מיני סדרה) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Mini Series) | String.Contains(Window(home).Property(ListItemGenre),Mini-Series)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31633]) | String.Contains(VideoPlayer.Genre,Mini Series) | String.Contains(VideoPlayer.Genre,Mini-Series) | String.Contains(VideoPlayer.Genre,מיני סדרה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31633]) | String.Contains(ListItem.Genre,Mini Series) | String.Contains(ListItem.Genre,Mini-Series) | String.Contains(ListItem.Genre,מיני סדרה) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Mini Series) | String.Contains(Window(home).Property(ListItemGenre),Mini-Series)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31633]) | String.Contains(VideoPlayer.Genre,Mini Series) | String.Contains(VideoPlayer.Genre,Mini-Series) | String.Contains(VideoPlayer.Genre,מיני סדרה)]]</visible>
 		</control>
 		<control type="image" description="311">
 			<include>MultiGenreFlag</include>
@@ -590,79 +590,79 @@
 		<control type="image" description="אופרת סבון">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Soap.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31634]) | String.Contains(ListItem.Genre,Soap) | String.Contains(ListItem.Genre,soap) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Soap) | String.Contains(Window(home).Property(ListItemGenre),soap)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31634]) | String.Contains(VideoPlayer.Genre,Soap) | String.Contains(VideoPlayer.Genre,soap)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31634]) | String.Contains(ListItem.Genre,Soap) | String.Contains(ListItem.Genre,soap) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Soap) | String.Contains(Window(home).Property(ListItemGenre),soap)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31634]) | String.Contains(VideoPlayer.Genre,Soap) | String.Contains(VideoPlayer.Genre,soap)]]</visible>
 		</control>
 		<control type="image" description="">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Special-Interest.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31635]) | String.Contains(ListItem.Genre,Special Interest) | String.Contains(ListItem.Genre,Special-Interest) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Special Interest) | String.Contains(Window(home).Property(ListItemGenre),Special-Interest)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31635]) | String.Contains(VideoPlayer.Genre,Special Interest) | String.Contains(VideoPlayer.Genre,Special-Interest)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31635]) | String.Contains(ListItem.Genre,Special Interest) | String.Contains(ListItem.Genre,Special-Interest) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Special Interest) | String.Contains(Window(home).Property(ListItemGenre),Special-Interest)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31635]) | String.Contains(VideoPlayer.Genre,Special Interest) | String.Contains(VideoPlayer.Genre,Special-Interest)]]</visible>
 		</control>
 		<control type="image" description="">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Travel.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31636]) | String.Contains(ListItem.Genre,Travel) | String.Contains(ListItem.Genre,travel) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Travel) | String.Contains(Window(home).Property(ListItemGenre),travel)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31636]) | String.Contains(VideoPlayer.Genre,Travel) | String.Contains(VideoPlayer.Genre,travel)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31636]) | String.Contains(ListItem.Genre,Travel) | String.Contains(ListItem.Genre,travel) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Travel) | String.Contains(Window(home).Property(ListItemGenre),travel)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31636]) | String.Contains(VideoPlayer.Genre,Travel) | String.Contains(VideoPlayer.Genre,travel)]]</visible>
 		</control>
 		<control type="image" description="">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Film-Noir.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31637]) | String.Contains(ListItem.Genre,Film Noir) | String.Contains(ListItem.Genre,Film-Noir) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Film Noir) | String.Contains(Window(home).Property(ListItemGenre),Film-Noir)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31637]) | String.Contains(VideoPlayer.Genre,Film Noir) | String.Contains(VideoPlayer.Genre,Film-Noir)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31637]) | String.Contains(ListItem.Genre,Film Noir) | String.Contains(ListItem.Genre,Film-Noir) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Film Noir) | String.Contains(Window(home).Property(ListItemGenre),Film-Noir)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31637]) | String.Contains(VideoPlayer.Genre,Film Noir) | String.Contains(VideoPlayer.Genre,Film-Noir)]]</visible>
 		</control>
 		<control type="image" description="מוזיקלי">
 			<include>MultiGenreFlag</include>
 			<aspectratio aligny="bottom">keep</aspectratio>
 			<texture>badges/genre/Musical.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31646]) | String.Contains(ListItem.Genre,Musical) | String.Contains(ListItem.Genre,מוזיקלי) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31646]) | String.Contains(VideoPlayer.Genre,Musical) | String.Contains(VideoPlayer.Genre,מוזיקלי)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31646]) | String.Contains(ListItem.Genre,Musical) | String.Contains(ListItem.Genre,מוזיקלי) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31646]) | String.Contains(VideoPlayer.Genre,Musical) | String.Contains(VideoPlayer.Genre,מוזיקלי)]]</visible>
 		</control>
 		
 		<control type="image" description="מדע וטכנולוגיה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Technology.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31650]) | String.Contains(ListItem.Genre,$LOCALIZE[19630]) | String.Contains(ListItem.Genre,Technology) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31650]) | String.Contains(VideoPlayer.Genre,$LOCALIZE[19630]) | String.Contains(VideoPlayer.Genre,Technology)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31650]) | String.Contains(ListItem.Genre,$LOCALIZE[19630]) | String.Contains(ListItem.Genre,Technology) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31650]) | String.Contains(VideoPlayer.Genre,$LOCALIZE[19630]) | String.Contains(VideoPlayer.Genre,Technology)]]</visible>
 		</control>
 		<control type="image" description="אנשים ובלוג">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/People.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31651]) | String.Contains(ListItem.Genre,People) | String.Contains(ListItem.Genre,Blogs) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31651]) | String.Contains(VideoPlayer.Genre,People) | String.Contains(VideoPlayer.Genre,Blogs)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31651]) | String.Contains(ListItem.Genre,People) | String.Contains(ListItem.Genre,Blogs) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31651]) | String.Contains(VideoPlayer.Genre,People) | String.Contains(VideoPlayer.Genre,Blogs)]]</visible>
 		</control>
 		<control type="image" description="בידור">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Entertainment.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31652]) | String.Contains(ListItem.Genre,Entertain) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31652]) | String.Contains(VideoPlayer.Genre,Entertain)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31652]) | String.Contains(ListItem.Genre,Entertain) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31652]) | String.Contains(VideoPlayer.Genre,Entertain)]]</visible>
 		</control>
 		<control type="image" description="וידאו ואנימציה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Entertainment.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31653]) | String.Contains(ListItem.Genre,Film &amp; Animation) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31653]) | String.Contains(VideoPlayer.Genre,Film &amp; Animation)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31653]) | String.Contains(ListItem.Genre,Film &amp; Animation) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31653]) | String.Contains(VideoPlayer.Genre,Film &amp; Animation)]]</visible>
 		</control>
 		<control type="image" description="אוטו' ורכב">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Driving.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31654]) | String.Contains(ListItem.Genre,Autos &amp; Vehicles) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31654]) | String.Contains(VideoPlayer.Genre,Autos &amp; Vehicles)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31654]) | String.Contains(ListItem.Genre,Autos &amp; Vehicles) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31654]) | String.Contains(VideoPlayer.Genre,Autos &amp; Vehicles)]]</visible>
 		</control>
 		<control type="image" description="חדשות ופוליטיקה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/News.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31655]) | String.Contains(ListItem.Genre,News &amp; Politics) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31655]) | String.Contains(VideoPlayer.Genre,News &amp; Politics)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31655]) | String.Contains(ListItem.Genre,News &amp; Politics) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31655]) | String.Contains(VideoPlayer.Genre,News &amp; Politics)]]</visible>
 		</control>
 		<control type="image" description="השכלה">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Biography.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31656]) | String.Contains(ListItem.Genre,Education) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31656]) | String.Contains(VideoPlayer.Genre,Education)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31656]) | String.Contains(ListItem.Genre,Education) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31656]) | String.Contains(VideoPlayer.Genre,Education)]]</visible>
 		</control>
 		<control type="image" description="בעלי חיים">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Animals.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31657]) | String.Contains(ListItem.Genre,Pets &amp; Animals) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31657]) | String.Contains(VideoPlayer.Genre,Pets &amp; Animals)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31657]) | String.Contains(ListItem.Genre,Pets &amp; Animals) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31657]) | String.Contains(VideoPlayer.Genre,Pets &amp; Animals)]]</visible>
 		</control>
 		<control type="image" description="טיולים ואירועים">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Travel.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31658]) | String.Contains(ListItem.Genre,Travel &amp; Events) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31658]) | String.Contains(VideoPlayer.Genre,Travel &amp; Events)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31658]) | String.Contains(ListItem.Genre,Travel &amp; Events) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31658]) | String.Contains(VideoPlayer.Genre,Travel &amp; Events)]]</visible>
 		</control>
 		<control type="image" description="משחקים">
 			<include>MultiGenreFlag</include>
 			<texture>badges/genre/Platform.png</texture>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[15016]) | String.Contains(ListItem.Genre,Gaming) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[15016]) | String.Contains(VideoPlayer.Genre,Gaming)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[15016]) | String.Contains(ListItem.Genre,Gaming) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[15016]) | String.Contains(VideoPlayer.Genre,Gaming)]]</visible>
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
@@ -805,7 +805,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31600]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31600]) | String.Contains(ListItem.Genre,Action) | String.Contains(ListItem.Genre,אקשן) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31600]) | String.Contains(VideoPlayer.Genre,Action) | String.Contains(VideoPlayer.Genre,אקשן)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31600]) | String.Contains(ListItem.Genre,Action) | String.Contains(ListItem.Genre,אקשן) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31600]) | String.Contains(VideoPlayer.Genre,Action) | String.Contains(VideoPlayer.Genre,אקשן)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -826,29 +826,29 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31601]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31601]) | String.Contains(ListItem.Genre,Adventure) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31601]) | String.Contains(VideoPlayer.Genre,Adventure)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31601]) | String.Contains(ListItem.Genre,Adventure) | String.Contains(ListItem.Genre,הרפתקאות) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31601]) | String.Contains(VideoPlayer.Genre,Adventure) | String.Contains(VideoPlayer.Genre,הרפתקאות)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31601]</label>
 			<visible>Window.IsVisible(Home.xml) + Control.IsVisible(311)</visible>
-			<visible>String.Contains(Container(311).ListItem.Property(Genre),$LOCALIZE[31601]) | String.Contains(Container(311).ListItem.Property(Genre),Adventure) | String.Contains(Container(311).ListItem.Property(Genre),הרפתקאות)</visible>
+			<visible>String.Contains(Container(311).ListItem.Property(Genre),$LOCALIZE[31601]) | String.Contains(Container(311).ListItem.Property(Genre),Adventure) | String.Contains(Container(311).ListItem.Property(Genre),הרפתקאות) | String.Contains(Container(311).ListItem.Property(Genre),הרפתקאות)</visible>
 		</control>
 		<control type="label" description="312">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31601]</label>
 			<visible>Window.IsVisible(Home.xml) + Control.IsVisible(312)</visible>
-			<visible>String.Contains(Container(312).ListItem.Property(Genre),$LOCALIZE[31601]) | String.Contains(Container(312).ListItem.Property(Genre),Adventure) | String.Contains(Container(312).ListItem.Property(Genre),הרפתקאות)</visible>
+			<visible>String.Contains(Container(312).ListItem.Property(Genre),$LOCALIZE[31601]) | String.Contains(Container(312).ListItem.Property(Genre),Adventure) | String.Contains(Container(312).ListItem.Property(Genre),הרפתקאות) | String.Contains(Container(312).ListItem.Property(Genre),הרפתקאות)</visible>
 		</control>
 		
 		<control type="label" description="אנימציה">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31602]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31602]) | String.Contains(ListItem.Genre,Animation) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31602]) | String.Contains(VideoPlayer.Genre,Animation)]]</visible>
-			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !String.Contains(ListItem.Genre,$LOCALIZE[31653]) + !String.Contains(ListItem.Genre,Film &amp; Animation)] | [Window.IsActive(DialogFullScreenInfo.xml) + !String.Contains(VideoPlayer.Genre,$LOCALIZE[31653]) + !String.Contains(VideoPlayer.Genre,Film &amp; Animation)]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31602]) | String.Contains(ListItem.Genre,Animation) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31602]) | String.Contains(VideoPlayer.Genre,Animation)]]</visible>
+			<visible>[!VideoPlayer.IsFullscreen + !String.Contains(ListItem.Genre,$LOCALIZE[31653]) + !String.Contains(ListItem.Genre,Film &amp; Animation)] | [VideoPlayer.IsFullscreen + !String.Contains(VideoPlayer.Genre,$LOCALIZE[31653]) + !String.Contains(VideoPlayer.Genre,Film &amp; Animation)]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -871,7 +871,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31603]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31603]) | String.Contains(ListItem.Genre,Biography) | String.Contains(ListItem.Genre,ביוגרפיה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31603]) | String.Contains(VideoPlayer.Genre,Biography) | String.Contains(VideoPlayer.Genre,ביוגרפיה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31603]) | String.Contains(ListItem.Genre,Biography) | String.Contains(ListItem.Genre,ביוגרפיה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31603]) | String.Contains(VideoPlayer.Genre,Biography) | String.Contains(VideoPlayer.Genre,ביוגרפיה)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -892,7 +892,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31604]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31604]) | String.Contains(ListItem.Genre,Children) | String.Contains(ListItem.Genre,ילדים) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31604]) | String.Contains(VideoPlayer.Genre,Children) | String.Contains(VideoPlayer.Genre,ילדים)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31604]) | String.Contains(ListItem.Genre,Children) | String.Contains(ListItem.Genre,ילדים) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31604]) | String.Contains(VideoPlayer.Genre,Children) | String.Contains(VideoPlayer.Genre,ילדים)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -913,7 +913,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31605]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31605]) | String.Contains(ListItem.Genre,Comedy) | String.Contains(ListItem.Genre,קומדיה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31605]) | String.Contains(VideoPlayer.Genre,Comedy) | String.Contains(VideoPlayer.Genre,קומדיה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31605]) | String.Contains(ListItem.Genre,Comedy) | String.Contains(ListItem.Genre,קומדיה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31605]) | String.Contains(VideoPlayer.Genre,Comedy) | String.Contains(VideoPlayer.Genre,קומדיה)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -934,7 +934,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31606]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31606]) | String.Contains(ListItem.Genre,Crime) | String.Contains(ListItem.Genre,פשע) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31606]) | String.Contains(VideoPlayer.Genre,Crime) | String.Contains(VideoPlayer.Genre,פשע)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31606]) | String.Contains(ListItem.Genre,Crime) | String.Contains(ListItem.Genre,פשע) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31606]) | String.Contains(VideoPlayer.Genre,Crime) | String.Contains(VideoPlayer.Genre,פשע)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -955,7 +955,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31607]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31607]) | String.Contains(ListItem.Genre,Disaster) | String.Contains(ListItem.Genre,אסונות) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31607]) | String.Contains(VideoPlayer.Genre,Disaster) | String.Contains(VideoPlayer.Genre,אסונות)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31607]) | String.Contains(ListItem.Genre,Disaster) | String.Contains(ListItem.Genre,אסונות) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31607]) | String.Contains(VideoPlayer.Genre,Disaster) | String.Contains(VideoPlayer.Genre,אסונות)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -976,7 +976,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31608]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31608]) | String.Contains(ListItem.Genre,Document) | String.Contains(ListItem.Genre,דוקו) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31608]) | String.Contains(VideoPlayer.Genre,Document) | String.Contains(VideoPlayer.Genre,דוקו)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31608]) | String.Contains(ListItem.Genre,Document) | String.Contains(ListItem.Genre,דוקו) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31608]) | String.Contains(VideoPlayer.Genre,Document) | String.Contains(VideoPlayer.Genre,דוקו)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -997,7 +997,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31609]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31609]) | String.Contains(ListItem.Genre,Drama) | String.Contains(ListItem.Genre,דרמה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31609]) | String.Contains(VideoPlayer.Genre,Drama) | String.Contains(VideoPlayer.Genre,דרמה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31609]) | String.Contains(ListItem.Genre,Drama) | String.Contains(ListItem.Genre,דרמה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31609]) | String.Contains(VideoPlayer.Genre,Drama) | String.Contains(VideoPlayer.Genre,דרמה)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1018,7 +1018,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31610]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31610]) | String.Contains(ListItem.Genre,Family) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31610]) | String.Contains(VideoPlayer.Genre,Family)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31610]) | String.Contains(ListItem.Genre,Family) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31610]) | String.Contains(VideoPlayer.Genre,Family)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1039,7 +1039,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31611]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31611]) | String.Contains(ListItem.Genre,Fantasy) | String.Contains(ListItem.Genre,פנטזיה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31611]) | String.Contains(VideoPlayer.Genre,Fantasy) | String.Contains(VideoPlayer.Genre,פנטזיה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31611]) | String.Contains(ListItem.Genre,Fantasy) | String.Contains(ListItem.Genre,פנטזיה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31611]) | String.Contains(VideoPlayer.Genre,Fantasy) | String.Contains(VideoPlayer.Genre,פנטזיה)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1060,7 +1060,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31612]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31612]) | String.Contains(ListItem.Genre,History) | String.Contains(ListItem.Genre,היסטוריה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31612]) | String.Contains(VideoPlayer.Genre,History) | String.Contains(VideoPlayer.Genre,היסטוריה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31612]) | String.Contains(ListItem.Genre,History) | String.Contains(ListItem.Genre,היסטוריה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31612]) | String.Contains(VideoPlayer.Genre,History) | String.Contains(VideoPlayer.Genre,היסטוריה)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1081,13 +1081,13 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31614]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31613]) | String.Contains(ListItem.Genre,Holiday) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31613]) | String.Contains(VideoPlayer.Genre,Holiday) | String.Contains(VideoPlayer.Genre,Christmas)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31613]) | String.Contains(ListItem.Genre,Holiday) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31613]) | String.Contains(VideoPlayer.Genre,Holiday) | String.Contains(VideoPlayer.Genre,Christmas)]]</visible>
 		</control>
 		<control type="label" description="אימה">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31614]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31614]) | String.Contains(ListItem.Genre,Horror) | String.Contains(ListItem.Genre,אימה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31614]) | String.Contains(VideoPlayer.Genre,Horror) | String.Contains(VideoPlayer.Genre,אימה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31614]) | String.Contains(ListItem.Genre,Horror) | String.Contains(ListItem.Genre,אימה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31614]) | String.Contains(VideoPlayer.Genre,Horror) | String.Contains(VideoPlayer.Genre,אימה)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1108,7 +1108,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31615]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31615]) | String.Contains(ListItem.Genre,Indie) | String.Contains(ListItem.Genre,הודית) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31615]) | String.Contains(VideoPlayer.Genre,Indie) | String.Contains(VideoPlayer.Genre,הודית)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31615]) | String.Contains(ListItem.Genre,Indie) | String.Contains(ListItem.Genre,הודית) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31615]) | String.Contains(VideoPlayer.Genre,Indie) | String.Contains(VideoPlayer.Genre,הודית)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1129,8 +1129,8 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31616]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31616]) | String.Contains(ListItem.Genre,Music) | String.Contains(ListItem.Genre,מוזיקלי) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31616]) | String.Contains(VideoPlayer.Genre,Music) | String.Contains(VideoPlayer.Genre,מוזיקלי)]]</visible>
-			<visible>[!Window.IsActive(DialogFullScreenInfo.xml) + !String.Contains(ListItem.Genre,$LOCALIZE[31646]) + !String.Contains(ListItem.Genre,Musical)] | [Window.IsActive(DialogFullScreenInfo.xml) + !String.Contains(VideoPlayer.Genre,$LOCALIZE[31646]) + !String.Contains(VideoPlayer.Genre,Musical)]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31616]) | String.Contains(ListItem.Genre,Music) | String.Contains(ListItem.Genre,מוזיקלי) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31616]) | String.Contains(VideoPlayer.Genre,Music) | String.Contains(VideoPlayer.Genre,מוזיקלי)]]</visible>
+			<visible>[!VideoPlayer.IsFullscreen + !String.Contains(ListItem.Genre,$LOCALIZE[31646]) + !String.Contains(ListItem.Genre,Musical)] | [VideoPlayer.IsFullscreen + !String.Contains(VideoPlayer.Genre,$LOCALIZE[31646]) + !String.Contains(VideoPlayer.Genre,Musical)]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1153,7 +1153,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31617]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31617]) | String.Contains(ListItem.Genre,Mystery) | String.Contains(ListItem.Genre,מסתורין) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31617]) | String.Contains(VideoPlayer.Genre,Mystery) | String.Contains(VideoPlayer.Genre,מסתורין)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31617]) | String.Contains(ListItem.Genre,Mystery) | String.Contains(ListItem.Genre,מסתורין) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31617]) | String.Contains(VideoPlayer.Genre,Mystery) | String.Contains(VideoPlayer.Genre,מסתורין)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1174,7 +1174,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31618]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31618]) | String.Contains(ListItem.Genre,Romance) | String.Contains(ListItem.Genre,רומנטי) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31618]) | String.Contains(VideoPlayer.Genre,Romance) | String.Contains(VideoPlayer.Genre,רומנטי)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31618]) | String.Contains(ListItem.Genre,Romance) | String.Contains(ListItem.Genre,רומנטי) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31618]) | String.Contains(VideoPlayer.Genre,Romance) | String.Contains(VideoPlayer.Genre,רומנטי)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1195,7 +1195,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31619]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31619]) | String.Contains(ListItem.Genre,Science Fiction) | String.Contains(ListItem.Genre,Science-Fiction) | String.Contains(ListItem.Genre,Sci-Fi) | String.Contains(ListItem.Genre,מדע בדיוני) | [!Window.IsVisible(DialogFullScreenInfo.xml) + String.Contains(ListItem.Genre,Science-Fiction)] | String.Contains(ListItem.Genre,Sci-Fi) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31619]) | String.Contains(VideoPlayer.Genre,Science Fiction) | String.Contains(VideoPlayer.Genre,Science-Fiction) | String.Contains(VideoPlayer.Genre,Sci-Fi) | String.Contains(VideoPlayer.Genre,מדע בדיוני)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31619]) | String.Contains(ListItem.Genre,Science Fiction) | String.Contains(ListItem.Genre,Science-Fiction) | String.Contains(ListItem.Genre,Sci-Fi) | String.Contains(ListItem.Genre,מדע בדיוני) | [!Window.IsVisible(DialogFullScreenInfo.xml) + String.Contains(ListItem.Genre,Science-Fiction)] | String.Contains(ListItem.Genre,Sci-Fi) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31619]) | String.Contains(VideoPlayer.Genre,Science Fiction) | String.Contains(VideoPlayer.Genre,Science-Fiction) | String.Contains(VideoPlayer.Genre,Sci-Fi) | String.Contains(VideoPlayer.Genre,מדע בדיוני)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1216,7 +1216,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31620]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31620]) | String.Contains(ListItem.Genre,Short) | String.Contains(ListItem.Genre,קצרים) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31620]) | String.Contains(VideoPlayer.Genre,Short) | String.Contains(VideoPlayer.Genre,קצרים)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31620]) | String.Contains(ListItem.Genre,Short) | String.Contains(ListItem.Genre,קצרים) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31620]) | String.Contains(VideoPlayer.Genre,Short) | String.Contains(VideoPlayer.Genre,קצרים)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1237,7 +1237,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31621]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31621]) | String.Contains(ListItem.Genre,Sport) | String.Contains(ListItem.Genre,ספורט) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31621]) | String.Contains(VideoPlayer.Genre,Sport) | String.Contains(VideoPlayer.Genre,ספורט)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31621]) | String.Contains(ListItem.Genre,Sport) | String.Contains(ListItem.Genre,ספורט) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31621]) | String.Contains(VideoPlayer.Genre,Sport) | String.Contains(VideoPlayer.Genre,ספורט)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1258,7 +1258,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31622]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31622]) | String.Contains(ListItem.Genre,Suspense) | String.Contains(ListItem.Genre,מתח) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31622]) | String.Contains(VideoPlayer.Genre,Suspense) | String.Contains(VideoPlayer.Genre,מתח)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31622]) | String.Contains(ListItem.Genre,Suspense) | String.Contains(ListItem.Genre,מתח) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31622]) | String.Contains(VideoPlayer.Genre,Suspense) | String.Contains(VideoPlayer.Genre,מתח)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1279,7 +1279,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31623]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31623]) | String.Contains(ListItem.Genre,Thriller) | String.Contains(ListItem.Genre,מותחן) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31623]) | String.Contains(VideoPlayer.Genre,Thriller) | String.Contains(VideoPlayer.Genre,מותחן)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31623]) | String.Contains(ListItem.Genre,Thriller) | String.Contains(ListItem.Genre,מותחן) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31623]) | String.Contains(VideoPlayer.Genre,Thriller) | String.Contains(VideoPlayer.Genre,מותחן)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1300,7 +1300,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31624]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31624]) | String.Contains(ListItem.Genre,War) | String.Contains(ListItem.Genre,מלחמה) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31624]) | String.Contains(VideoPlayer.Genre,War) | String.Contains(VideoPlayer.Genre,מלחמה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31624]) | String.Contains(ListItem.Genre,War) | String.Contains(ListItem.Genre,מלחמה) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31624]) | String.Contains(VideoPlayer.Genre,War) | String.Contains(VideoPlayer.Genre,מלחמה)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1321,7 +1321,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31625]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31625]) | String.Contains(ListItem.Genre,Western) | String.Contains(ListItem.Genre,מערב פרוע) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31625]) | String.Contains(VideoPlayer.Genre,Western) | String.Contains(VideoPlayer.Genre,מערב פרוע)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31625]) | String.Contains(ListItem.Genre,Western) | String.Contains(ListItem.Genre,מערב פרוע) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31625]) | String.Contains(VideoPlayer.Genre,Western) | String.Contains(VideoPlayer.Genre,מערב פרוע)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1342,7 +1342,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31626]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31626]) | String.Contains(ListItem.Genre,Game Show) | String.Contains(ListItem.Genre,Game-Show) | String.Contains(ListItem.Genre,שעשועון) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31626]) | String.Contains(VideoPlayer.Genre,Game Show) | String.Contains(VideoPlayer.Genre,Game-Show) | String.Contains(VideoPlayer.Genre,שעשועון)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31626]) | String.Contains(ListItem.Genre,Game Show) | String.Contains(ListItem.Genre,Game-Show) | String.Contains(ListItem.Genre,שעשועון) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31626]) | String.Contains(VideoPlayer.Genre,Game Show) | String.Contains(VideoPlayer.Genre,Game-Show) | String.Contains(VideoPlayer.Genre,שעשועון)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1363,7 +1363,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31627]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31627]) | String.Contains(ListItem.Genre,News) | String.Contains(ListItem.Genre,חדשות) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31627]) | String.Contains(VideoPlayer.Genre,News) | String.Contains(VideoPlayer.Genre,חדשות)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31627]) | String.Contains(ListItem.Genre,News) | String.Contains(ListItem.Genre,חדשות) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31627]) | String.Contains(VideoPlayer.Genre,News) | String.Contains(VideoPlayer.Genre,חדשות)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1384,7 +1384,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31628]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31628]) | String.Contains(ListItem.Genre,Reality) | String.Contains(ListItem.Genre,ריאליטי) | String.Contains(ListItem.Genre,Reality-TV) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Reality) | String.Contains(Window(home).Property(ListItemGenre),Reality-TV)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31628]) | String.Contains(VideoPlayer.Genre,Reality) | String.Contains(VideoPlayer.Genre,Reality-TV) | String.Contains(VideoPlayer.Genre,ריאליטי)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31628]) | String.Contains(ListItem.Genre,Reality) | String.Contains(ListItem.Genre,ריאליטי) | String.Contains(ListItem.Genre,Reality-TV) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Reality) | String.Contains(Window(home).Property(ListItemGenre),Reality-TV)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31628]) | String.Contains(VideoPlayer.Genre,Reality) | String.Contains(VideoPlayer.Genre,Reality-TV) | String.Contains(VideoPlayer.Genre,ריאליטי)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1405,7 +1405,7 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31629]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31629]) | String.Contains(ListItem.Genre,Sitcom) | String.Contains(ListItem.Genre,sitcom) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Sitcom) | String.Contains(Window(home).Property(ListItemGenre),sitcom)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31629]) | String.Contains(VideoPlayer.Genre,Sitcom) | String.Contains(VideoPlayer.Genre,sitcom)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31629]) | String.Contains(ListItem.Genre,Sitcom) | String.Contains(ListItem.Genre,sitcom) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Sitcom) | String.Contains(Window(home).Property(ListItemGenre),sitcom)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31629]) | String.Contains(VideoPlayer.Genre,Sitcom) | String.Contains(VideoPlayer.Genre,sitcom)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1426,25 +1426,25 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31630]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31630]) | String.Contains(ListItem.Genre,Talk Show) | String.Contains(ListItem.Genre,Talk-Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) +  [String.Contains(Window(home).Property(ListItemGenre),Talk Show) | String.Contains(Window(home).Property(ListItemGenre),Talk-Show)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31630]) | String.Contains(VideoPlayer.Genre,Talk Show) | String.Contains(VideoPlayer.Genre,Talk-Show)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31630]) | String.Contains(ListItem.Genre,Talk Show) | String.Contains(ListItem.Genre,Talk-Show) | [!Window.IsVisible(DialogFullScreenInfo.xml) +  [String.Contains(Window(home).Property(ListItemGenre),Talk Show) | String.Contains(Window(home).Property(ListItemGenre),Talk-Show)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31630]) | String.Contains(VideoPlayer.Genre,Talk Show) | String.Contains(VideoPlayer.Genre,Talk-Show)]]</visible>
 		</control>
 		<control type="label" description="">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31631]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31631]) | String.Contains(ListItem.Genre,Food) | String.Contains(ListItem.Genre,food) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Food) | String.Contains(Window(home).Property(ListItemGenre),food)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31631]) | String.Contains(VideoPlayer.Genre,Food) | String.Contains(VideoPlayer.Genre,food)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31631]) | String.Contains(ListItem.Genre,Food) | String.Contains(ListItem.Genre,food) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Food) | String.Contains(Window(home).Property(ListItemGenre),food)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31631]) | String.Contains(VideoPlayer.Genre,Food) | String.Contains(VideoPlayer.Genre,food)]]</visible>
 		</control>
 		<control type="label" description="">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31632]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31631]) | String.Contains(ListItem.Genre,Home and Garden) | String.Contains(ListItem.Genre,Home-and-Garden) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Home and Garden) | String.Contains(Window(home).Property(ListItemGenre),Home-and-Garden)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31631]) | String.Contains(VideoPlayer.Genre,Home and Garden) | String.Contains(VideoPlayer.Genre,Home-and-Garden)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31631]) | String.Contains(ListItem.Genre,Home and Garden) | String.Contains(ListItem.Genre,Home-and-Garden) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Home and Garden) | String.Contains(Window(home).Property(ListItemGenre),Home-and-Garden)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31631]) | String.Contains(VideoPlayer.Genre,Home and Garden) | String.Contains(VideoPlayer.Genre,Home-and-Garden)]]</visible>
 		</control>
 		<control type="label" description="מיני סדרה">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31633]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31633]) | String.Contains(ListItem.Genre,Mini Series) | String.Contains(ListItem.Genre,Mini-Series) | String.Contains(ListItem.Genre,מיני סדרה) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Mini Series) | String.Contains(Window(home).Property(ListItemGenre),Mini-Series)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31633]) | String.Contains(VideoPlayer.Genre,Mini Series) | String.Contains(VideoPlayer.Genre,Mini-Series) | String.Contains(VideoPlayer.Genre,מיני סדרה)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31633]) | String.Contains(ListItem.Genre,Mini Series) | String.Contains(ListItem.Genre,Mini-Series) | String.Contains(ListItem.Genre,מיני סדרה) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Mini Series) | String.Contains(Window(home).Property(ListItemGenre),Mini-Series)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31633]) | String.Contains(VideoPlayer.Genre,Mini Series) | String.Contains(VideoPlayer.Genre,Mini-Series) | String.Contains(VideoPlayer.Genre,מיני סדרה)]]</visible>
 		</control>
 		<control type="label" description="311">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
@@ -1465,93 +1465,93 @@
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31634]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31634]) | String.Contains(ListItem.Genre,Soap) | String.Contains(ListItem.Genre,soap) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Soap) | String.Contains(Window(home).Property(ListItemGenre),soap)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31634]) | String.Contains(VideoPlayer.Genre,Soap) | String.Contains(VideoPlayer.Genre,soap)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31634]) | String.Contains(ListItem.Genre,Soap) | String.Contains(ListItem.Genre,soap) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Soap) | String.Contains(Window(home).Property(ListItemGenre),soap)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31634]) | String.Contains(VideoPlayer.Genre,Soap) | String.Contains(VideoPlayer.Genre,soap)]]</visible>
 		</control>
 		
 		<control type="label" description="">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31635]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31635]) | String.Contains(ListItem.Genre,Special Interest) | String.Contains(ListItem.Genre,Special-Interest) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Special Interest) | String.Contains(Window(home).Property(ListItemGenre),Special-Interest)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31635]) | String.Contains(VideoPlayer.Genre,Special Interest) | String.Contains(VideoPlayer.Genre,Special-Interest)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31635]) | String.Contains(ListItem.Genre,Special Interest) | String.Contains(ListItem.Genre,Special-Interest) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Special Interest) | String.Contains(Window(home).Property(ListItemGenre),Special-Interest)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31635]) | String.Contains(VideoPlayer.Genre,Special Interest) | String.Contains(VideoPlayer.Genre,Special-Interest)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31636]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31636]) | String.Contains(ListItem.Genre,Travel) | String.Contains(ListItem.Genre,travel) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Travel) | String.Contains(Window(home).Property(ListItemGenre),travel)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31636]) | String.Contains(VideoPlayer.Genre,Travel) | String.Contains(VideoPlayer.Genre,travel)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31636]) | String.Contains(ListItem.Genre,Travel) | String.Contains(ListItem.Genre,travel) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Travel) | String.Contains(Window(home).Property(ListItemGenre),travel)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31636]) | String.Contains(VideoPlayer.Genre,Travel) | String.Contains(VideoPlayer.Genre,travel)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31637]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31637]) | String.Contains(ListItem.Genre,Film Noir) | String.Contains(ListItem.Genre,Film-Noir) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Film Noir) | String.Contains(Window(home).Property(ListItemGenre),Film-Noir)]] | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31637]) | String.Contains(VideoPlayer.Genre,Film Noir) | String.Contains(VideoPlayer.Genre,Film-Noir)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31637]) | String.Contains(ListItem.Genre,Film Noir) | String.Contains(ListItem.Genre,Film-Noir) | [!Window.IsVisible(DialogFullScreenInfo.xml) + [String.Contains(Window(home).Property(ListItemGenre),Film Noir) | String.Contains(Window(home).Property(ListItemGenre),Film-Noir)]] | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31637]) | String.Contains(VideoPlayer.Genre,Film Noir) | String.Contains(VideoPlayer.Genre,Film-Noir)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31646]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31646]) | String.Contains(ListItem.Genre,Musical) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31646]) | String.Contains(VideoPlayer.Genre,Musical)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31646]) | String.Contains(ListItem.Genre,Musical) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31646]) | String.Contains(VideoPlayer.Genre,Musical)]]</visible>
 		</control>
 		
 		<control type="label" description="מדע וטכנולוגיה">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31650]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31650]) | String.Contains(ListItem.Genre,$LOCALIZE[19630]) | String.Contains(ListItem.Genre,Technology) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31650]) | String.Contains(VideoPlayer.Genre,$LOCALIZE[19630]) | String.Contains(VideoPlayer.Genre,Technology)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31650]) | String.Contains(ListItem.Genre,$LOCALIZE[19630]) | String.Contains(ListItem.Genre,Technology) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31650]) | String.Contains(VideoPlayer.Genre,$LOCALIZE[19630]) | String.Contains(VideoPlayer.Genre,Technology)]]</visible>
 		</control>
 		<control type="label" description="אנשים ובלוג">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31651]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31651]) | String.Contains(ListItem.Genre,People) | String.Contains(ListItem.Genre,Blogs) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31651]) | String.Contains(VideoPlayer.Genre,People) | String.Contains(VideoPlayer.Genre,Blogs)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31651]) | String.Contains(ListItem.Genre,People) | String.Contains(ListItem.Genre,Blogs) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31651]) | String.Contains(VideoPlayer.Genre,People) | String.Contains(VideoPlayer.Genre,Blogs)]]</visible>
 		</control>
 		<control type="label" description="בידור">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31652]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31652]) | String.Contains(ListItem.Genre,Entertain) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31652]) | String.Contains(VideoPlayer.Genre,Entertain)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31652]) | String.Contains(ListItem.Genre,Entertain) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31652]) | String.Contains(VideoPlayer.Genre,Entertain)]]</visible>
 		</control>
 		<control type="label" description="וידאו ואנימציה">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31653]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31653]) | String.Contains(ListItem.Genre,Film &amp; Animation) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31653]) | String.Contains(VideoPlayer.Genre,Film &amp; Animation)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31653]) | String.Contains(ListItem.Genre,Film &amp; Animation) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31653]) | String.Contains(VideoPlayer.Genre,Film &amp; Animation)]]</visible>
 		</control>
 		<control type="label" description="אוטו' ורכב">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31654]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31654]) | String.Contains(ListItem.Genre,Autos &amp; Vehicles) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31654]) | String.Contains(VideoPlayer.Genre,Autos &amp; Vehicles)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31654]) | String.Contains(ListItem.Genre,Autos &amp; Vehicles) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31654]) | String.Contains(VideoPlayer.Genre,Autos &amp; Vehicles)]]</visible>
 		</control>
 		<control type="label" description="חדשות ופוליטיקה">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31655]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31655]) | String.Contains(ListItem.Genre,News &amp; Politics) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31655]) | String.Contains(VideoPlayer.Genre,News &amp; Politics)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31655]) | String.Contains(ListItem.Genre,News &amp; Politics) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31655]) | String.Contains(VideoPlayer.Genre,News &amp; Politics)]]</visible>
 		</control>
 		<control type="label" description="השכלה">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31656]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31656]) | String.Contains(ListItem.Genre,Education) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31656]) | String.Contains(VideoPlayer.Genre,Education)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31656]) | String.Contains(ListItem.Genre,Education) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31656]) | String.Contains(VideoPlayer.Genre,Education)]]</visible>
 		</control>
 		<control type="label" description="בעלי חיים">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31657]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31657]) | String.Contains(ListItem.Genre,Pets &amp; Animals) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31657]) | String.Contains(VideoPlayer.Genre,Pets &amp; Animals)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31657]) | String.Contains(ListItem.Genre,Pets &amp; Animals) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31657]) | String.Contains(VideoPlayer.Genre,Pets &amp; Animals)]]</visible>
 		</control>
 		<control type="label" description="טיולים ואירועים">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[31658]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31658]) | String.Contains(ListItem.Genre,Travel &amp; Events) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31658]) | String.Contains(VideoPlayer.Genre,Travel &amp; Events)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[31658]) | String.Contains(ListItem.Genre,Travel &amp; Events) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[31658]) | String.Contains(VideoPlayer.Genre,Travel &amp; Events)]]</visible>
 		</control>
 		<control type="label" description="משחקים">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>
 			<include condition="Skin.HasSetting(Genre)">GenreTextPlace2</include>
 			<label>$LOCALIZE[15016]</label>
-			<visible>String.Contains(ListItem.Genre,$LOCALIZE[15016]) | String.Contains(ListItem.Genre,Gaming) | [Window.IsActive(DialogFullScreenInfo.xml) + [String.Contains(VideoPlayer.Genre,$LOCALIZE[15016]) | String.Contains(VideoPlayer.Genre,Gaming)]]</visible>
+			<visible>String.Contains(ListItem.Genre,$LOCALIZE[15016]) | String.Contains(ListItem.Genre,Gaming) | [VideoPlayer.IsFullscreen + [String.Contains(VideoPlayer.Genre,$LOCALIZE[15016]) | String.Contains(VideoPlayer.Genre,Gaming)]]</visible>
 		</control>
 		<control type="label">
 			<include condition="!Skin.HasSetting(Genre)">GenreTextPlace</include>

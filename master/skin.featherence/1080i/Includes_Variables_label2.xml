@@ -671,8 +671,8 @@
   </variable>
   
   <variable name="466label2">
-    <value condition="Skin.HasSetting(WidgetShrink)">$LOCALIZE[106]</value>
-	<value condition="!Skin.HasSetting(WidgetShrink)">$LOCALIZE[107]</value>
+    <value condition="Skin.HasSetting(WidgetShrink)">$LOCALIZE[107]</value>
+	<value condition="!Skin.HasSetting(WidgetShrink)">$LOCALIZE[106]</value>
   </variable>
   
   <variable name="467label2">

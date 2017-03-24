@@ -18,6 +18,8 @@ Featherence v0.7.2 (xx-Feb-17)
 - Added DialogGameControllers window.
 - Added High Performance option (Skin Settings).
 - Added new category Add-in in skin settings (Easily install and manage Featherence's dependencies).
+- Buttons Layout is now selectable.
+- Clicking on the left menu icon will pop it up.
 - Clicking on the Top Bar while video is playing will open it up and the video OSD.
 - Minor bugs fix.
 
@@ -27,10 +29,13 @@ Dialogues:
 - Position has been slightly improved.
 
 Home:
+- Added support for additional 10 main buttons (total of 20+7).
+- Added auto ID fix for bugged main buttons.
 - Major update of Vertical layout.
 
 Overall Design:
 - Added light black frame to every poster image.
+- 2D Buttons are now perfect squared with no radius (Across the skin).
 - Main Color now effect thumbnails border and fill them up when needed.
 - Major overall design updates (A lots of design prespective as been updated!).
 - Major update of Dialogs windows.
@@ -45,6 +50,7 @@ Top Information Bar:
 
 Views:
 - Added Covers Distance and Full Fanart features to Line view.
+- Added option to show video duration for Side List view.
 - Added Sliding/Fade Animation for some views.
 - Fade Animation is set to default for some views.
 - Major design update.

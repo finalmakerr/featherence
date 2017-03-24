@@ -241,15 +241,16 @@
 		<label2>$VAR[198label2]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/ofx.png</thumb>
 		<property name="rinfo">$LOCALIZE[31116]</property>
-		<onclick condition="!Skin.String(MenuDesign)">Skin.SetString(MenuDesign,0)</onclick>
+		<onclick>RunScript(script.featherence.service,,?mode=29&amp;value=Default-[]-|$LOCALIZE[31031]-[0]-|$LOCALIZE[31031] 2-[1]-|$LOCALIZE[31032]-[2]-|$LOCALIZE[31032] 2-[3]-|$LOCALIZE[31033]-[4]-|$LOCALIZE[31032] 3-[6]-|$LOCALIZE[31031] 3-[7]-&amp;value2=0.MenuDesign|s.32_6&amp;value3=&amp;value4=1)</onclick>
+		<!--<onclick condition="!Skin.String(MenuDesign)">Skin.SetString(MenuDesign,0)</onclick>
 		<onclick condition="Skin.String(MenuDesign,0)">Skin.SetString(MenuDesign,1)</onclick>
 		<onclick condition="Skin.String(MenuDesign,1)">Skin.SetString(MenuDesign,2)</onclick>
 		<onclick condition="Skin.String(MenuDesign,2)">Skin.SetString(MenuDesign,3)</onclick>
 		<onclick condition="Skin.String(MenuDesign,3)">Skin.SetString(MenuDesign,4)</onclick>
 		<onclick condition="Skin.String(MenuDesign,4)">Skin.SetString(MenuDesign,6)</onclick>
 		<onclick condition="Skin.String(MenuDesign,6)">Skin.SetString(MenuDesign,7)</onclick>
-		<onclick condition="Skin.String(MenuDesign,7)">Skin.SetString(MenuDesign,)</onclick>
-		<include>CustomizerExit</include>
+		<onclick condition="Skin.String(MenuDesign,7)">Skin.SetString(MenuDesign,)</onclick>-->
+		<!--<include>CustomizerExit</include>-->
 		<visible>Container(100).Hasfocus(20)</visible>
 	  </item>
 	  
@@ -749,6 +750,7 @@
 		<onclick condition="Skin.String(MenuBackgroundOverlay, 30)">Skin.SetString(MenuBackgroundOverlay, 20)</onclick>
 		<onclick condition="Skin.String(MenuBackgroundOverlay, 20)">Skin.SetString(MenuBackgroundOverlay, )</onclick>
 		<include>CustomizerExit</include>
+		<visible>!Skin.HasSetting(Performance)</visible>
 		<visible>Container(100).Hasfocus(21)</visible>
 	  </item>
 	  <item id="272" description="צבע ראשי">
@@ -768,6 +770,7 @@
 		<property name="rinfo">$LOCALIZE[31118]</property>
 		<onclick>Skin.ToggleSetting(2DButton2)</onclick>
 		<visible>Container(100).Hasfocus(21)</visible>
+		<visible>!Skin.HasSetting(Performance)</visible>
 	  </item>
 	  <item id="283" description="צללית (כפתור)">
 		<label>2D $LOCALIZE[31851]</label>
@@ -831,6 +834,7 @@
 		<property name="rinfo">$LOCALIZE[31134]$LOCALIZE[31132]</property>
 		<onclick>RunScript(script.featherence.service,,?mode=200&amp;value=MenuButtonsOverlay)</onclick>
 		<visible>Container(100).Hasfocus(21)</visible>
+		<visible>!Skin.HasSetting(Performance)</visible>
 	  </item>
 	  
 	  <!--290-300-->
@@ -854,6 +858,7 @@
 		<onclick condition="Skin.String(DialogBackgroundOverlay, 30)">Skin.SetString(DialogBackgroundOverlay, 20)</onclick>
 		<onclick condition="Skin.String(DialogBackgroundOverlay, 20)">Skin.SetString(DialogBackgroundOverlay, )</onclick>
 		<include>CustomizerExit</include>
+		<visible>!Skin.HasSetting(Performance)</visible>
 		<onclick condition="!Window.IsVisible(DialogNotification.xml)">RunScript(script.featherence.service,,?mode=32&amp;value=2)</onclick>
 		<visible>Container(100).Hasfocus(22)</visible>
 	  </item>
@@ -1084,6 +1089,7 @@
 		<onclick condition="Skin.String(KeyboardBackgroundOverlay, 40)">Skin.SetString(KeyboardBackgroundOverlay, 30)</onclick>
 		<onclick condition="Skin.String(KeyboardBackgroundOverlay, 30)">Skin.SetString(KeyboardBackgroundOverlay, 20)</onclick>
 		<onclick condition="Skin.String(KeyboardBackgroundOverlay, 20)">Skin.SetString(KeyboardBackgroundOverlay, )</onclick>
+		<visible>!Skin.HasSetting(Performance)</visible>
 		<visible>Container(100).Hasfocus(27)</visible>
 	  </item>
 	  <item id="342" description="צבע רקע מקלדת">
@@ -1448,6 +1454,7 @@
 		<onclick condition="Skin.String(PassProtectOverlay, 30)">Skin.SetString(PassProtectOverlay, 20)</onclick>
 		<onclick condition="Skin.String(PassProtectOverlay, 20)">Skin.SetString(PassProtectOverlay, )</onclick>
 		<visible>Container(100).Hasfocus(31)</visible>
+		<visible>!Skin.HasSetting(Performance)</visible>
 	  </item>
 	  <item id="444" description="נעילת הרחבות">
 		<label>$LOCALIZE[31475]</label>
@@ -1588,6 +1595,7 @@
 		<thumb>special://home/addons/script.featherence.service/resources/icons/quickpar.png</thumb>
 		<property name="rinfo">$LOCALIZE[31539]</property>
 		<onclick>Skin.ToggleSetting(WidgetShrink)</onclick>
+		<visible>!$EXP[MenuDesignV]</visible>
 		<visible>Container(100).Hasfocus(30)</visible>
 	  </item>
 	  <item id="467" description="הצג דירוג">

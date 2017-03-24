@@ -60,13 +60,13 @@
    </include>
    
    <include name="Slide5" description="LeftMenu2">
-	  <animation effect="slide" start="0,0" end="400,0" delay="0" time="700" reversible="true">VisibleChange</animation>
+	  <animation effect="slide" start="0,0" end="400,0" delay="0" time="0" reversible="true">VisibleChange</animation>
    </include>
    <include name="Slide6" description="LeftMenu">
 	  <animation effect="slide" start="0,0" end="400,0" delay="0" time="700" reversible="true">WindowOpen</animation>
    </include>
    <include name="Slide7" description="RightMenu">
-	  <animation effect="slide" start="0,0" end="-400,0" delay="0" time="700" reversible="true">VisibleChange</animation>
+	  <animation effect="slide" start="0,0" end="-400,0" delay="0" time="0" reversible="true">VisibleChange</animation>
    </include>
    <include name="Slide7.5" description="RightMenu">
 	  <animation effect="slide" start="0,0" end="-400,0" delay="0" time="700" reversible="true">WindowOpen</animation>
@@ -127,7 +127,6 @@
   </include>  
   
   <include name="Fade10" description="9009/311/312">
-     <!--<animation condition="!Window.IsVisible(CustomHomeCustomizer.xml) + [ Control.HasFocus(312) + !Container(312).OnPrevious + !Container(312).OnNext | Control.HasFocus(311) + !Container(311).OnPrevious + !Container(311).OnNext | Control.HasFocus(9000) + !Container(9000).OnPrevious + !Container(9000).OnNext ]" effect="fade" start="100" end="0" delay="5000" time="3000" reversible="false">Conditional</animation>-->
      <animation condition="!Window.IsVisible(CustomHomeCustomizer.xml) + [ Control.HasFocus(312) + !Container(312).OnPrevious + !Container(312).OnNext | Control.HasFocus(311) + !Container(311).OnPrevious + !Container(311).OnNext | Control.HasFocus(9000) + !Container(9000).OnPrevious + !Container(9000).OnNext ]" effect="fade" start="100" end="0" delay="5000" time="3000" reversible="false">Conditional</animation>
   </include>
    <include name="Fade11" description="">

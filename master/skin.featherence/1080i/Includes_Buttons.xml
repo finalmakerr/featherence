@@ -2,24 +2,26 @@
 <includes>
   
   <include name="Buttons_2D_texturenofocus" description="Layouts">
-    <include description="הכל-1" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD1</include>
-	<include description="הכל-1" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD2</include>
-	<include description="הכל-1" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD3</include>
-	<include description="הכל-1" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD4</include>
+    <description>DEFAULT NO: OverlayButton2</description>
+    <description>DEFAULT YES: BevelButton2 | StrokeButton2 | ShadowButton2</description>
+    <include description="הכל-1 (Overlay)" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD1</include>
+	<include description="הכל-1 (Bevel)" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD2</include>
+	<include description="הכל-1 (Shadow)" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD3</include>
+	<include description="הכל-1 (Stroke)" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD4</include>
 	
-	<include description="הכל-2" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD11</include>
-	<include description="הכל-2" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD12</include>
-	<include description="הכל-2" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD13</include>
-	<include description="הכל-2" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD14</include>
-	<include description="הכל-2" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD15</include>
-	<include description="הכל-2" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD16</include>
+	<include description="הכל-2 (Overlay|Bevel)" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD11</include>
+	<include description="הכל-2 (Overlay|Shadow)" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD12</include>
+	<include description="הכל-2 (Overlay|Stroke)" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD13</include>
+	<include description="הכל-2 (Bevel|Shadow)" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD14</include>
+	<include description="הכל-2 (Bevel|Stroke)" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD15</include>
+	<include description="הכל-2 (Shadow|Stroke)" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD16</include>
 	
-	<include description="הכל-3" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD21</include>
-	<include description="הכל-3" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD22</include>
-	<include description="הכל-3" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD23</include>
+	<include description="הכל-3 (Overlay|Bevel|Shadow)" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD21</include>
+	<include description="הכל-3 (Overlay|Bevel|Stroke)" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD22</include>
+	<include description="הכל-3 (Bevel|Shadow|Stroke)" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD23</include>
 	
 	<include description="הכל-4" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturenofocus_ButtonD</include>
-	<include description="כלום" condition="!Skin.HasSetting(2DButton2)">Buttons_2D_texturenofocus_ButtonD</include>
+	<include description="כלום" condition="!Skin.HasSetting(2DButton2)">Buttons_2D_texturenofocus_ButtonD0</include>
   </include>
   
   <include name="Buttons_2D_texturenofocus_ButtonD1">
@@ -65,11 +67,11 @@
   </include>
   
   <include name="Buttons_2D_texturenofocus_ButtonD">
-    <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/mixed/D/ButtonD4.png</texturenofocus>
+    <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/mixed/D/ButtonD.png</texturenofocus>
   </include>
   
   <include name="Buttons_2D_texturenofocus_ButtonD0">
-    <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>
+    <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/mixed/D/ButtonD0.png</texturenofocus>
   </include>
   
   
@@ -91,7 +93,7 @@
 	<include description="הכל-3" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturefocus_ButtonD23</include>
 	
 	<include description="הכל-4" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texturefocus_ButtonD</include>
-	<include description="כלום" condition="!Skin.HasSetting(2DButton2)">Buttons_2D_texturefocus_ButtonD4</include> <!--Buttons_2D_texturefocus_ButtonD0-->
+	<include description="כלום" condition="!Skin.HasSetting(2DButton2)">Buttons_2D_texturefocus_ButtonD0</include>
   </include>
   
   <include name="Buttons_2D_texturefocus_ButtonD1">
@@ -137,11 +139,11 @@
   </include>
   
   <include name="Buttons_2D_texturefocus_ButtonD">
-    <texturefocus border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/mixed/D/ButtonD4.png</texturefocus>
+    <texturefocus border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/mixed/D/ButtonD.png</texturefocus>
   </include>
   
   <include name="Buttons_2D_texturefocus_ButtonD0">
-    <texturefocus border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texturefocus>
+    <texturefocus border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/mixed/D/ButtonD0.png</texturefocus>
   </include>
   
   
@@ -163,7 +165,7 @@
 	<include description="הכל-3" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_alttexturefocus_ButtonD23</include>
 	
 	<include description="הכל-4" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_alttexturefocus_ButtonD</include>
-	<include description="כלום" condition="!Skin.HasSetting(2DButton2)">Buttons_2D_alttexturefocus_ButtonD4</include>
+	<include description="כלום" condition="!Skin.HasSetting(2DButton2)">Buttons_2D_alttexturefocus_ButtonD0</include>
   </include>
   
   <include name="Buttons_2D_alttexturefocus_ButtonD1">
@@ -209,11 +211,11 @@
   </include>
   
   <include name="Buttons_2D_alttexturefocus_ButtonD">
-    <alttexturefocus border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/mixed/D/ButtonD4.png</alttexturefocus>
+    <alttexturefocus border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/mixed/D/ButtonD.png</alttexturefocus>
   </include>
   
   <include name="Buttons_2D_alttexturefocus_ButtonD0">
-    <alttexturefocus border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</alttexturefocus>
+    <alttexturefocus border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/mixed/D/ButtonD0.png</alttexturefocus>
   </include>
   
   
@@ -236,7 +238,7 @@
 	<include description="הכל-3" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_alttexturenofocus_ButtonD23</include>
 	
 	<include description="הכל-4" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_alttexturenofocus_ButtonD</include>
-	<include description="כלום" condition="!Skin.HasSetting(2DButton2)">Buttons_2D_alttexturenofocus_ButtonD4</include>
+	<include description="כלום" condition="!Skin.HasSetting(2DButton2)">Buttons_2D_alttexturenofocus_ButtonD0</include>
   </include>
   
   <include name="Buttons_2D_alttexturenofocus_ButtonD1">
@@ -282,11 +284,11 @@
   </include>
   
   <include name="Buttons_2D_alttexturenofocus_ButtonD">
-    <alttexturenofocus border="40" colordiffuse="ff96708f">buttons/mixed/D/ButtonD4.png</alttexturenofocus>
+    <alttexturenofocus border="40" colordiffuse="ff96708f">buttons/mixed/D/ButtonD.png</alttexturenofocus>
   </include>
   
   <include name="Buttons_2D_alttexturenofocus_ButtonD0">
-    <alttexturenofocus border="40" colordiffuse="ff96708f">buttons/types/bd.png</alttexturenofocus>
+    <alttexturenofocus border="40" colordiffuse="ff96708f">buttons/mixed/D/ButtonD0.png</alttexturenofocus>
   </include>
   
   
@@ -308,7 +310,7 @@
 	<include description="הכל-3" condition="Skin.HasSetting(2DButton2) + !Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texture_ButtonD23</include>
 	
 	<include description="הכל-4" condition="Skin.HasSetting(2DButton2) + Skin.HasSetting(OverlayButton2) + !Skin.HasSetting(BevelButton2) + !Skin.HasSetting(ShadowButton2) + !Skin.HasSetting(StrokeButton2)">Buttons_2D_texture_ButtonD</include>
-	<include description="כלום" condition="!Skin.HasSetting(2DButton2)">Buttons_2D_texture_ButtonD4</include>
+	<include description="כלום" condition="!Skin.HasSetting(2DButton2)">Buttons_2D_texture_ButtonD0</include>
   </include>
   
   <include name="Buttons_2D_texture_ButtonD1">
@@ -354,11 +356,11 @@
   </include>
   
   <include name="Buttons_2D_texture_ButtonD">
-    <texture border="40" colordiffuse="ff96708f">buttons/mixed/D/ButtonD4.png</texture>
+    <texture border="40" colordiffuse="ff96708f">buttons/mixed/D/ButtonD.png</texture>
   </include>
   
   <include name="Buttons_2D_texture_ButtonD0">
-    <texture border="40" colordiffuse="ff96708f">buttons/types/bd.png</texture>
+    <texture border="40" colordiffuse="ff96708f">buttons/mixed/D/ButtonD0.png</texture>
   </include>
   
 </includes>

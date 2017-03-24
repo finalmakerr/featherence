@@ -177,10 +177,10 @@
 		<animation type="WindowClose" reversible="false">
 			<effect type="fade" start="100" end="0" time="0" delay="500" />
 		</animation>
-		<left>0</left>
-		<top>0</top>
-		<width>186</width>
-		<height>186</height>
+		<left>30</left>
+		<top>30</top>
+		<width>114</width>
+		<height>114</height>
 		<texture diffuse="BBBBBBBB">osd/featherence_pause4.png</texture>
 	  </control>
 	  <control type="image" description="pause">

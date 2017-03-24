@@ -457,7 +457,6 @@
 		<param name="type1" value="false" description="Focus" />
       </include>
 	  <control type="image" description="OFF">
-          <include>Fade_IconOverlayButton</include>
 		  <posx>$PARAM[posx3]</posx>
           <posy>$PARAM[posy3]</posy>
           <width>$PARAM[width3]</width>
@@ -467,38 +466,35 @@
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(ListItem.Property(off))</visible>
       </control>
 	  <control type="image" description="Movies Widget">
-          <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-180,0" delay="0" time="0" reversible="false">Conditional</animation>
-		  <include>Fade_IconOverlayButton</include>
+          <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">Control_Pos41</include>
 		  <aspectratio>keep</aspectratio>
 		  <posx>$PARAM[posx4]</posx>
           <posy>$PARAM[posy4]</posy>
           <width>$PARAM[width4]</width>
           <height>$PARAM[height4]</height>
-		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/movies.png</texture>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">buttons/icons/moviesf.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>String.Contains(ListItem.Label2,90) + !Skin.String(widget311) | String.IsEqual(ListItem.Label2,Skin.String(widget311))</visible>
       </control>
 	  <control type="image" description="TVshows Widget">
-          <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-180,0" delay="0" time="0" reversible="false">Conditional</animation>
-		  <include>Fade_IconOverlayButton</include>
+          <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">Control_Pos41</include>
 		  <aspectratio>keep</aspectratio>
 		  <posx>$PARAM[posx4]</posx>
           <posy>$PARAM[posy4]</posy>
           <width>$PARAM[width4]</width>
           <height>$PARAM[height4]</height>
-		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/tvshows.png</texture>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">buttons/icons/tvshowsf.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>String.Contains(ListItem.Label2,91) + !Skin.String(widget312) | String.IsEqual(ListItem.Label2,Skin.String(widget312))</visible>
       </control>
 	  <control type="image" description="Weather Widget">
-          <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-180,0" delay="0" time="0" reversible="false">Conditional</animation>
-		  <include>Fade_IconOverlayButton</include>
+          <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">Control_Pos41</include>
 		  <aspectratio>keep</aspectratio>
 		  <posx>$PARAM[posx4]</posx>
           <posy>$PARAM[posy4]</posy>
           <width>$PARAM[width4]</width>
           <height>$PARAM[height4]</height>
-		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/weather.png</texture>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">buttons/icons/weatherf.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>String.Contains(ListItem.Label2,97) + !Skin.String(widget317) | String.IsEqual(ListItem.Label2,Skin.String(widget317))</visible>
       </control>
@@ -706,7 +702,6 @@
 		<param name="type1" value="true" description="Focus" />
       </include>
 	  <control type="image" description="OFF">
-          <include>Fade_IconOverlayButton</include>
 		  <posx>$PARAM[posx3]</posx>
           <posy>$PARAM[posy3]</posy>
           <width>$PARAM[width3]</width>
@@ -716,38 +711,35 @@
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(ListItem.Property(off))</visible>
       </control>
 	  <control type="image" description="Movies Widget">
-          <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-180,0" delay="0" time="0" reversible="false">Conditional</animation>
-		  <include>Fade_IconOverlayButton</include>
+		  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">Control_Pos41</include>
 		  <aspectratio>keep</aspectratio>
 		  <posx>$PARAM[posx4]</posx>
           <posy>$PARAM[posy4]</posy>
           <width>$PARAM[width4]</width>
           <height>$PARAM[height4]</height>
-		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/movies.png</texture>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">buttons/icons/moviesf.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>String.Contains(ListItem.Label2,90) + !Skin.String(widget311) | String.IsEqual(ListItem.Label2,Skin.String(widget311))</visible>
       </control>
 	  <control type="image" description="TVshows Widget">
-          <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-180,0" delay="0" time="0" reversible="false">Conditional</animation>
-		  <include>Fade_IconOverlayButton</include>
+          <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">Control_Pos41</include>
 		  <aspectratio>keep</aspectratio>
 		  <posx>$PARAM[posx4]</posx>
           <posy>$PARAM[posy4]</posy>
           <width>$PARAM[width4]</width>
           <height>$PARAM[height4]</height>
-		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/tvshows.png</texture>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">buttons/icons/tvshowsf.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>String.Contains(ListItem.Label2,91) + !Skin.String(widget312) | String.IsEqual(ListItem.Label2,Skin.String(widget312))</visible>
       </control>
 	  <control type="image" description="Weather Widget">
-          <animation description="VerticalMenu" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-180,0" delay="0" time="0" reversible="false">Conditional</animation>
-		  <include>Fade_IconOverlayButton</include>
+          <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">Control_Pos41</include>
 		  <aspectratio>keep</aspectratio>
 		  <posx>$PARAM[posx4]</posx>
           <posy>$PARAM[posy4]</posy>
           <width>$PARAM[width4]</width>
           <height>$PARAM[height4]</height>
-		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/weather.png</texture>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">buttons/icons/weatherf.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>String.Contains(ListItem.Label2,97) + !Skin.String(widget317) | String.IsEqual(ListItem.Label2,Skin.String(widget317))</visible>
       </control>
@@ -785,12 +777,11 @@
   </include>
   
    <include name="MenuBackground">
-     <param name="border" value="40" />
 	 <param name="color" default="$VAR[MenuColor]"/>
 	 <param name="height" default="0"/>
 	 <param name="posx" default="0"/>
 	 <param name="posy" default="0"/>
-	 <param name="texture" default="buttons/types/bd.png"/>
+	 <param name="texture" default="buttons/types/bd0.png"/>
 	 <param name="width" default="0"/>
 	 
 	 <param name="condition" default="!Skin.HasSetting(MenuBackground)"/>
@@ -806,23 +797,21 @@
 		  <visible>$PARAM[condition]</visible>
 		  
 		  <control type="image" description="type0"> 
-			<include>Border_Common</include>
-			<include>Fade_MenuBackgroundOverlay</include>
+			<include condition="!Skin.HasSetting(Performance)">Fade_MenuBackgroundOverlay</include>
 			<height></height>
 			<posx></posx>
 			<width></width>
 			<texture border="$PARAM[border]" colordiffuse="$PARAM[color]">$PARAM[texture]</texture>
-			<visible>$PARAM[type0]</visible>
+			<visible>$PARAM[type0] + !$PARAM[type1]</visible>
 		  </control>
 		  
 		  <control type="image" description="type1"> 
-			<include>Border_Common</include>
-			<include>Fade_DialogBackgroundOverlay</include>
+			<include condition="!Skin.HasSetting(Performance)">Fade_DialogBackgroundOverlay</include>
 			<height></height>
 			<posx></posx>
 			<width></width>
 			<texture border="$PARAM[border]" colordiffuse="$PARAM[color]">$PARAM[texture]</texture>
-			<visible>$PARAM[type1]</visible>
+			<visible>$PARAM[type1] + !$PARAM[type0]</visible>
 		  </control>
 		</control>
 	</definition>
@@ -830,7 +819,7 @@
   
   <include name="Buttons_Frame" description="Layouts">
     <param name="id" default="0"/>
-	<param name="border" value="40" />
+	<param name="border" default="0" />
 	<param name="color" default="ff000000"/>
 	<param name="height" default="0"/>
 	<param name="posx" default="0"/>
@@ -838,7 +827,7 @@
 	<param name="width" default="0"/>
 	
 	<param name="condition" default="true"/>
-	<param name="condition2" default="Skin.HasSetting(2DButton2)"/>
+	<param name="condition2" default="Skin.HasSetting(2DButton2) + !Skin.HasSetting(Performance)"/>
 	<param name="bevel" default="!Skin.HasSetting(BevelButton2)"/>
 	<param name="overlay" default="Skin.HasSetting(OverlayButton2)"/>
 	<param name="shadow" default="!Skin.HasSetting(ShadowButton2)"/>
@@ -851,11 +840,11 @@
 		  <width>$PARAM[width]</width>
 		  <visible>$PARAM[condition]</visible>
 		  <control type="image" description="מסגרת נבחר"> 
-			<include>Fade_MenuButtonsOverlay</include>
+			<include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>
 			<height></height>
 			<posx></posx>
 			<width></width>
-			<texture border="$PARAM[border]" colordiffuse="$PARAM[color]">buttons/types/bd.png</texture>
+			<texture border="$PARAM[border]" colordiffuse="$PARAM[color]">buttons/types/bd0.png</texture>
 		  </control>
 		  <control type="group">
 			  <visible>$PARAM[condition2]</visible>
@@ -863,28 +852,28 @@
 				<posx></posx>
 				<width></width>
 				<height></height>
-				<texture border="$PARAM[border]">buttons/effects/gardient.png</texture>
+				<texture border="$PARAM[border]">buttons/effects/gardient0.png</texture>
 				<visible>$PARAM[overlay]</visible>
 			  </control>
 			  <control type="image" description="נפח">
 				<posx></posx>
 				<width></width>
 				<height></height>
-				<texture border="$PARAM[border]">buttons/effects/bevel.png</texture>
+				<texture border="$PARAM[border]">buttons/effects/bevel0.png</texture>
 				<visible>$PARAM[bevel]</visible>
 			  </control>
 			  <control type="image" description="צל">
 				<posx></posx>
 				<width></width>
 				<height></height>
-				<texture border="$PARAM[border]">buttons/effects/shadow.png</texture>
+				<texture border="$PARAM[border]">buttons/effects/shadow0.png</texture>
 				<visible>$PARAM[shadow]</visible>
 			  </control>
 			  <control type="image" description="מסגרת">
 				<posx></posx>
 				<width></width>
 				<height></height>
-				<texture border="$PARAM[border]" colordiffuse="black">buttons/effects/stroke.png</texture>
+				<texture border="$PARAM[border]" colordiffuse="black">buttons/effects/stroke0.png</texture>
 				<visible>$PARAM[stroke] | ![$PARAM[condition2]]</visible>
 			  </control>
 		  </control>
@@ -894,7 +883,7 @@
 				<posx></posx>
 				<width></width>
 				<height></height>
-				<texture border="$PARAM[border]" colordiffuse="black">buttons/effects/stroke.png</texture>
+				<texture border="$PARAM[border]" colordiffuse="$PARAM[color]">buttons/effects/stroke0.png</texture>
 				<visible>true</visible>
 			  </control>
 		  </control>
@@ -925,7 +914,7 @@
 		  <width>$PARAM[width]</width>
 		  <visible>$PARAM[condition]</visible>
 		  <control type="image" description="מסגרת נבחר"> 
-			<include>Fade_MenuButtonsOverlay</include>
+			<include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>
 			<height></height>
 			<posx></posx>
 			<width></width>
@@ -1127,7 +1116,7 @@
 		  </control>
 		  
 		  <control type="image" description="pwd_lock">
-			<include>Fade_PassProtectOverlay</include>
+			<include condition="!Skin.HasSetting(Performance)">Fade_PassProtectOverlay</include>
 			<include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
 			<aspectratio align="center">keep</aspectratio>
 			<texture colordiffuse="$PARAM[color]">special://home/addons/script.featherence.service/resources/icons/Lock.png</texture>
@@ -1135,7 +1124,7 @@
 		  </control>
 		  
 		  <control type="image" description="pwd_unlock">
-			<include>Fade_PassProtectOverlay</include>
+			<include condition="!Skin.HasSetting(Performance)">Fade_PassProtectOverlay</include>
 			<include condition="Skin.String(MenuDesign,4)">MenuDesign4_Icon</include>
 			<aspectratio align="center">keep</aspectratio>
 			<texture colordiffuse="$PARAM[color]">special://home/addons/script.featherence.service/resources/icons/Unlock.png</texture>
@@ -1342,9 +1331,8 @@
 	  <posx>1880</posx>
 	  <posy>340</posy>	  
 	  <width>480</width>
-      <include name="MenuBackground">
+      <include content="MenuBackground">
 			<param name="id" value="" />
-			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="570" />
 			<param name="posx" value="0" />
@@ -1472,13 +1460,20 @@
 	 <posy>0</posy>
 	 <height>552</height>
    </include>
+   <include name="Control_Pos7" description="">
+	 <posx>1665</posx>
+   </include>
    <include name="Control_Pos8" description="">
-     <height>522</height>
-	 <posx>0</posx>
-	 <posy>30</posy>
+     <posy>205</posy>
    </include>
    <include name="Control_Pos9" description="">
      <width>784.4</width>
+   </include>
+   <include name="Control_Pos10" description="">
+     <posx>40r</posx>
+   </include>
+   <include name="Control_Pos11" description="">
+     <posx>270r</posx>
    </include>
    <include name="Control_Pos12" description="">
      <width>784.4</width>
@@ -1486,15 +1481,22 @@
 	 <textoffsetx>20</textoffsetx>
    </include>
    <include name="Control_Pos13" description="">
-     <posx>0</posx>
-	 <posy>-552</posy>
-	 <height>276</height>
+     <posx>10</posx>
    </include>
    <include name="Control_Pos14" description="">
-     <height>230</height>
+     
    </include>
    <include name="Control_Pos15" description="">
-	 <posx>53</posx>
+	 <posx>220</posx>
+   </include>
+   <include name="Control_Pos30" description="">
+	 
+   </include>
+   <include name="Control_Pos31" description="">
+	 <posx>-210</posx>
+   </include>
+   <include name="Control_Pos32" description="">
+	 <posx>250</posx>
    </include>
    <include name="Control_Pos33" description="">
 	 <height>773</height>
@@ -1506,7 +1508,7 @@
 	 <posx>-35</posx>
    </include>
    <include name="Control_Pos36" description="">
-	 <posx>135</posx>
+	 <posy>802</posy>
    </include>
    <include name="Control_Pos37" description="">
 	 <posx>5</posx>
@@ -1518,10 +1520,10 @@
 	 <width>430</width>
    </include>
    <include name="Control_Pos40" description="">
-	 <posy>546</posy>
+     <posx>1670</posx>
    </include>
    <include name="Control_Pos41" description="">
-	 <posy>26</posy>
+	 <posx>0</posx>
    </include>
    
    <include name="Control_Pos42" description="">
@@ -1529,14 +1531,12 @@
    </include>
    <include name="Control_Pos43" description="">
 	 <posx>0</posx>
-	 <posy>35</posy>
-	 <height>1050</height>
-	 <width>270</width>
+	 <posy>0</posy>
+	 <height>1080</height>
+	 <width>250</width>
    </include>
    <include name="Control_Pos44" description="">
-     <height>1050</height>
-	 <posy>30</posy>
-	 <width>280</width>
+     <height>1150</height>
    </include>
    <include name="Control_Pos45" description="">
 	 <posx>270</posx>
@@ -1563,11 +1563,11 @@
 	 <height>100</height>
    </include>
    <include name="Control_Pos52" description="">
+     <posx>415</posx>
    </include>
    <include name="Control_Pos53" description="">
-	 <posx>0</posx>
+	 <posx>-7</posx>
    </include>
-   
    <include name="AddonSettingsScroll">
      <scroll>true</scroll>
    </include>

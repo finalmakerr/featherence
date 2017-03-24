@@ -10,7 +10,6 @@
 			<width>1820</width>
 			<height>690</height>
 			<include content="MenuBackground">
-				<param name="border" value="35" />
 				<param name="color" value="$VAR[MenuColor]" />
 				<param name="height" value="80" />
 				<param name="posx" value="449" />
@@ -22,7 +21,6 @@
 				<param name="type1" value="true" description="DialogBackground"/>
 			</include>
 			<include content="MenuBackground">
-				<param name="border" value="35" />
 				<param name="color" value="$VAR[MenuColor]" />
 				<param name="height" value="80" />
 				<param name="posx" value="449" />
@@ -34,7 +32,6 @@
 				<param name="type1" value="true" description="DialogBackground"/>
 			</include>
 			  <include content="MenuBackground">
-				<param name="border" value="40" />
 				<param name="color" value="$VAR[MenuColor]" />
 				<param name="height" value="875" />
 				<param name="posx" value="449" />

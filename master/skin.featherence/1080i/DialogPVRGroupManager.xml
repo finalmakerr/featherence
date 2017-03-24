@@ -14,7 +14,6 @@
           <posx>60</posx>
 		  
 		  <include content="MenuBackground">
-			<param name="border" value="35" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="960" />
 			<param name="posx" value="-2" />
@@ -45,7 +44,7 @@
             <itemlayout height="70">
 			  <include content="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="35" />
+				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonUnFocusColor]" />
 				<param name="height" value="75" />
 				<param name="posx" value="0" />
@@ -67,7 +66,7 @@
             <focusedlayout height="70">
               <include content="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="35" />
+				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonFocusColor]" />
 				<param name="height" value="75" />
 				<param name="posx" value="0" />
@@ -92,7 +91,6 @@
           <animation condition="Control.HasFocus(11)" effect="fade" start="40" end="100" time="220">Conditional</animation>
           <posx>560</posx>
 		  <include content="MenuBackground">
-			<param name="border" value="35" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="960" />
 			<param name="posx" value="-2" />
@@ -124,7 +122,7 @@
             <itemlayout height="70">
 			  <include content="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="35" />
+				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonUnFocusColor]" />
 				<param name="height" value="75" />
 				<param name="posx" value="0" />
@@ -145,13 +143,13 @@
                 <height>40</height>
                 <posx>470</posx>
                 <posy>10</posy>
-                <texture fallback="images/ThumbBorder3.png" border="3">$INFO[ListItem.Icon]</texture>
+                <texture border="3">$INFO[ListItem.Icon]</texture>
               </control>
             </itemlayout>
             <focusedlayout height="70">
               <include content="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="35" />
+				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonFocusColor]" />
 				<param name="height" value="75" />
 				<param name="posx" value="0" />
@@ -172,7 +170,7 @@
                 <height>40</height>
                 <posx>470</posx>
                 <posy>10</posy>
-                <texture fallback="images/ThumbBorder3.png" border="3">$INFO[ListItem.Icon]</texture>
+                <texture border="3">$INFO[ListItem.Icon]</texture>
               </control>
             </focusedlayout>
           </control>
@@ -181,7 +179,6 @@
           <animation condition="Control.HasFocus(12)" effect="fade" start="40" end="100" time="220">Conditional</animation>
 		  <posx>1060</posx>
 		  <include content="MenuBackground">
-			<param name="border" value="35" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="960" />
 			<param name="posx" value="-2" />
@@ -212,7 +209,7 @@
             <itemlayout height="70">
 			  <include content="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="35" />
+				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonUnFocusColor]" />
 				<param name="height" value="75" />
 				<param name="posx" value="0" />
@@ -235,13 +232,13 @@
                 <height>40</height>
                 <posx>470</posx>
                 <posy>10</posy>
-                <texture fallback="images/ThumbBorder3.png" border="3">$INFO[ListItem.Icon]</texture>
+                <texture border="3">$INFO[ListItem.Icon]</texture>
               </control>
             </itemlayout>
             <focusedlayout height="70">
               <include content="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="35" />
+				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonFocusColor]" />
 				<param name="height" value="75" />
 				<param name="posx" value="0" />
@@ -263,7 +260,7 @@
                 <height>40</height>
                 <posx>470</posx>
                 <posy>10</posy>
-                <texture fallback="images/SliderWL.png" border="3">$INFO[ListItem.Icon]</texture>
+                <texture border="3">$INFO[ListItem.Icon]</texture>
               </control>
             </focusedlayout>
           </control>
@@ -276,7 +273,6 @@
 	  <posy>275</posy>	  
 	  <width>400</width>
       <include content="MenuBackground">
-		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="0" />
 		<param name="posx" value="0" />

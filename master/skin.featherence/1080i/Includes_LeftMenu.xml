@@ -28,9 +28,8 @@
 	  <posx>1880</posx>
 	  <posy>340</posy>	  
 	  <width>480</width>
-      <include name="MenuBackground">
+      <include content="MenuBackground">
 			<param name="id" value="" />
-			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="574" />
 			<param name="posx" value="0" />
@@ -149,6 +148,7 @@
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 20)">Skin.SetString(MoviesTVCoversOverlay, 10)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 10)">Skin.SetString(MoviesTVCoversOverlay, )</onclick>
 		  <visible>$EXP[View54] | $EXP[View57] | $EXP[View58] | $EXP[View59]</visible>
+		  <visible>!Skin.HasSetting(Performance)</visible>
         </control>
 		<control type="radiobutton" id="107" description="SelectedZoom">
           <include>SideMenuCommon</include>
@@ -230,6 +230,7 @@
 		  <onclick condition="Skin.String(Background2Overlay, 20)">Skin.SetString(Background2Overlay, 10)</onclick>
 		  <onclick condition="Skin.String(Background2Overlay, 10)">Skin.SetString(Background2Overlay, )</onclick>
 		  <visible>$EXP[View57] | $EXP[View58] | $EXP[View59]</visible>
+		  <visible>!Skin.HasSetting(Performance)</visible>
         </control>
 		<control type="radiobutton" id="114" description="תמונה גדולה">
           <include>SideMenuCommon</include>
@@ -259,7 +260,7 @@
 		  <label>$LOCALIZE[31487]</label>
 		  <selected>!Skin.HasSetting(EnableTrailerButton)</selected>
 		  <onclick>Skin.ToggleSetting(EnableTrailerButton)</onclick>
-		  <visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[31012])</visible>
+		  <visible>!$EXP[View56] + !Skin.HasSetting(Performance)</visible>
 		  <visible>![$EXP[View54] + Skin.HasSetting(View54_Boat)]</visible>
 		  <visible>Container.Content(movies) | !String.IsEmpty(ListItem.Trailer)</visible>
         </control>
@@ -294,6 +295,16 @@
 		  <onclick>Skin.ToggleSetting(TopVideoInformationFontSize)</onclick>
 		  <visible></visible>
         </control>
+		<control type="radiobutton" id="120" description="הצג משך זמן">
+          <include>SideMenuCommon</include>
+		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+		  <font>size28</font>
+		  <label>$LOCALIZE[31544]</label>
+		  <selected>Skin.HasSetting(Show_Duration)</selected>
+		  <onclick>Skin.ToggleSetting(Show_Duration)</onclick>
+		  <visible>$EXP[View50]</visible>
+        </control>
 		<control type="radiobutton" id="124" description="מרווח עטיפות">
 		  <include>SideMenuCommon</include>
 		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
@@ -316,6 +327,7 @@
 		  <selected>Skin.HasSetting(HideFanartOnNav)</selected>
 		  <onclick>Skin.ToggleSetting(HideFanartOnNav)</onclick>
 		  <visible>$EXP[View57] | $EXP[View58]</visible>
+		  <visible>false</visible>
         </control>
 		<control type="radiobutton" id="126" description="אפשר אנימציית גלישה">
 		  <include>SideMenuCommon</include>
@@ -326,6 +338,7 @@
 		  <selected>Skin.HasSetting(SideVideoInformationAnimation)</selected>
 		  <onclick>Skin.ToggleSetting(SideVideoInformationAnimation)</onclick>
 		  <visible>$EXP[View51] | $EXP[View50] | $EXP[View59]</visible>
+		  <visible>!Skin.HasSetting(Performance)</visible>
         </control>
 		<control type="button" id="127" description="יישור: ">
 		  <include>SideMenuCommon</include>
@@ -490,6 +503,8 @@
 	  <visible>!Window.IsVisible(SettingsSystemInfo.xml)</visible>
 	  <texturefocus colordiffuse="$VAR[ButtonFocusColor]">special://home/addons/script.featherence.service/resources/icons/settings.png</texturefocus>
       <texturenofocus colordiffuse="$VAR[ButtonUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/settings.png</texturenofocus>
+	  <onclick>SetProperty(SideMenuUp,True,home)</onclick>
+	  <onclick>AlarmClock(SideMenuUp,ClearProperty(SideMenuUp,home),00:03,silent)</onclick>
 	  <height>40</height>
 	  <width>40</width>
 	  <posx>-5</posx>
@@ -571,7 +586,6 @@
 	  <control type="group">
 		  <animation condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 		  <include content="MenuBackground">
-			<param name="border" value="30" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="672" />
 			<param name="posx" value="0" />
@@ -615,7 +629,7 @@
 			  <animation condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 			  <include content="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="30" />
+				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonUnFocusColor]" />
 				<param name="height" value="66" />
 				<param name="posx" value="-30" />
@@ -653,7 +667,7 @@
 			  <animation condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 			  <include content="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="30" />
+				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonFocusColor]" />
 				<param name="height" value="66" />
 				<param name="posx" value="-30" />
@@ -706,7 +720,7 @@
 			  <animation condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 			  <include content="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="30" />
+				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonUnFocusColor]" />
 				<param name="condition" default="true"/>
 				<param name="height" value="70" />
@@ -752,7 +766,7 @@
 			  <animation condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 			  <include content="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="30" />
+				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonFocusColor]" />
 				<param name="height" value="70" />
 				<param name="posx" value="-30" />
@@ -1267,7 +1281,7 @@
 	  <include>SideMenuCommon</include>
 	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
-	  <onclick condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31012]) + String.IsEmpty(Control.GetLabel(11155))">SendClick(2)</onclick>
+	  <onclick condition="$EXP[View56] + String.IsEmpty(Control.GetLabel(11155))">SendClick(2)</onclick>
 	  <font>size28</font>
 	  <!--<visible>!String.IsEmpty(Control.GetLabel(2))</visible>-->
 	</control>

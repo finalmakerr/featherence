@@ -84,7 +84,7 @@
     <itemgap>0</itemgap>
   </default>  
   <default type="button">
-    <include>Fade_MenuButtonsOverlay</include>
+    <include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>
     <align>center</align>
     <aligny>center</aligny>
 	<disabledcolor>grey</disabledcolor>
@@ -99,8 +99,10 @@
 	<selectedcolor>white2</selectedcolor>    
 	<textcolor>white2</textcolor>
 	<textoffsetx>-</textoffsetx>
-    <include>Buttons_2D_texturenofocus</include>
-    <include>Buttons_2D_texturefocus</include>
+    <include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturenofocus</include>
+    <include condition="Skin.HasSetting(Performance)">Buttons_2D_texturenofocus_ButtonD0</include>
+    <include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturefocus</include>
+	<include condition="Skin.HasSetting(Performance)">Buttons_2D_texturefocus_ButtonD0</include>
 	<width>480</width>	
   </default>
   <default type="edit">
@@ -119,12 +121,14 @@
 	<shadowcolor>shadow</shadowcolor>	
     <textoffsetx>20</textoffsetx>
     <textcolor>white</textcolor>
-    <include>Buttons_2D_texturenofocus</include>
-	<include>Buttons_2D_texturefocus</include>
+    <include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturenofocus</include>
+    <include condition="Skin.HasSetting(Performance)">Buttons_2D_texturenofocus_ButtonD0</include>
+	<include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturefocus</include>
+	<include condition="Skin.HasSetting(Performance)">Buttons_2D_texturefocus_ButtonD0</include>
 	<width>880</width>
   </default>
   <default type="togglebutton">
-    <include>Fade_MenuButtonsOverlay</include>
+    <include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>
     <align>center</align>
     <aligny>center</aligny>
 	<altselectedcolor>yellow</altselectedcolor>
@@ -140,14 +144,18 @@
 	<selectedcolor>white2</selectedcolor>    
 	<textcolor>white2</textcolor>
 	<textoffsetx>20</textoffsetx>
-    <include>Buttons_2D_texturenofocus</include>
-    <include>Buttons_2D_texturefocus</include>
-	<include>Buttons_2D_alttexturefocus</include>
-	<include>Buttons_2D_alttexturenofocus</include>
+    <include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturenofocus</include>
+    <include condition="Skin.HasSetting(Performance)">Buttons_2D_texturenofocus_ButtonD0</include>
+    <include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturefocus</include>
+	<include condition="Skin.HasSetting(Performance)">Buttons_2D_texturefocus_ButtonD0</include>
+	<include condition="!Skin.HasSetting(Performance)">Buttons_2D_alttexturefocus</include>
+	<include condition="Skin.HasSetting(Performance)">Buttons_2D_alttexturefocus_ButtonD0</include>
+	<include condition="!Skin.HasSetting(Performance)">Buttons_2D_alttexturenofocus</include>
+	<include condition="Skin.HasSetting(Performance)">Buttons_2D_alttexturenofocus_ButtonD0</include>
 	<width>480</width>
   </default>
   <default type="radiobutton">
-    <include>Fade_MenuButtonsOverlay</include>
+    <include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>
     <align>center</align>
     <aligny>center</aligny>
 	<altselectedcolor>yellow</altselectedcolor>
@@ -163,8 +171,10 @@
 	<selectedcolor>white2</selectedcolor>    
 	<textcolor>white2</textcolor>
 	<textoffsetx>20</textoffsetx>
-    <include>Buttons_2D_texturenofocus</include>
-	<include>Buttons_2D_texturefocus</include>
+    <include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturenofocus</include>
+    <include condition="Skin.HasSetting(Performance)">Buttons_2D_texturenofocus_ButtonD0</include>
+	<include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturefocus</include>
+	<include condition="Skin.HasSetting(Performance)">Buttons_2D_texturefocus_ButtonD0</include>
 	<!--<texturefocus colordiffuse="ff4f4f98" border="40">buttons/types/bd.png</texturefocus>-->
 	<width>480</width>
     <radiowidth>30</radiowidth>
@@ -175,15 +185,17 @@
     <!--<radioposx>262</radioposx>-->
   </default>
   <default type="spincontrol">
-    <include>Fade_MenuButtonsOverlay</include>
+    <include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>
     <posx>0</posx>
     <posy>0</posy>
     <textureup>images/ArrowUpNF.png</textureup>
     <textureupfocus>images/ArrowUpFO.png</textureupfocus>
     <texturedown>images/ArrowDownNF.png</texturedown>
     <texturedownfocus>images/ArrowDownFO.png</texturedownfocus>
-    <include>Buttons_2D_texturefocus</include>
-	<include>Buttons_2D_texturenofocus</include>
+    <include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturefocus</include>
+	<include condition="Skin.HasSetting(Performance)">Buttons_2D_texturefocus_ButtonD0</include>
+	<include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturenofocus</include>
+    <include condition="Skin.HasSetting(Performance)">Buttons_2D_texturenofocus_ButtonD0</include>
     <spinwidth>14</spinwidth>
     <spinheight>14</spinheight>
     <font>size34</font>
@@ -199,7 +211,7 @@
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="spincontrolex">
-    <include>Fade_MenuButtonsOverlay</include>
+    <include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>
     <posx>0</posx>
     <posy>0</posy>
     <width>450</width>
@@ -210,8 +222,10 @@
     <textureupfocus>images/ArrowUpFO.png</textureupfocus>
     <texturedown>images/ArrowDownNF.png</texturedown>
     <texturedownfocus>images/ArrowDownFO.png</texturedownfocus>
-	<include>Buttons_2D_texturenofocus</include>
-    <include>Buttons_2D_texturefocus</include>
+	<include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturenofocus</include>
+    <include condition="Skin.HasSetting(Performance)">Buttons_2D_texturenofocus_ButtonD0</include>
+    <include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturefocus</include>
+	<include condition="Skin.HasSetting(Performance)">Buttons_2D_texturefocus_ButtonD0</include>
     <spinposx>20</spinposx>
 	<spinposy>0</spinposy>
 	<spinwidth>14</spinwidth>
@@ -228,15 +242,15 @@
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="slider" description="Seek Slider">
-    <include>Fade_MenuButtonsOverlay</include>
+    <include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>
     <width>1000</width>
-    <height>40</height>
-    <texturesliderbar border="0">buttons/LineH2.png</texturesliderbar>
+    <height>4</height>
+    <texturesliderbar border="0">images/LineH2.png</texturesliderbar>
     <textureslidernibfocus border="10">buttons/ButtonE3S.png</textureslidernibfocus>
 	<textureslidernib border="10">buttons/ButtonEFS.png</textureslidernib>
   </default>
   <default type="sliderex" description="Default Slider">
-    <include>Fade_MenuButtonsOverlay</include>
+    <include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>
 	<aligny>center</aligny>
 	<posx>795</posx>
     <posy>225</posy>
@@ -247,8 +261,10 @@
 	<texturesliderbar border="0" colordiffuse="BBBBBBBB">buttons/ButtonA0.png</texturesliderbar>
     <textureslidernib border="0">buttons/ButtonAF.png</textureslidernib>
     <textureslidernibfocus colordiffuse="ffeeb13f" border="0">buttons/ButtonA0.png</textureslidernibfocus>
-	<include>Buttons_2D_texturenofocus</include>
-	<include>Buttons_2D_texturefocus</include>
+	<include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturenofocus</include>
+    <include condition="Skin.HasSetting(Performance)">Buttons_2D_texturenofocus_ButtonD0</include>
+	<include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturefocus</include>
+	<include condition="Skin.HasSetting(Performance)">Buttons_2D_texturefocus_ButtonD0</include>
     <texturenofocus>-</texturenofocus>
     <font>size33</font>
     <textcolor>white2</textcolor>
@@ -271,15 +287,19 @@
   <default type="mover">
 	<left>60</left>
 	<top>192</top>
-	<include>Buttons_2D_texturenofocus</include>
-	<include>Buttons_2D_texturefocus</include>
+	<include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturenofocus</include>
+    <include condition="Skin.HasSetting(Performance)">Buttons_2D_texturenofocus_ButtonD0</include>
+	<include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturefocus</include>
+	<include condition="Skin.HasSetting(Performance)">Buttons_2D_texturefocus_ButtonD0</include>
 	<texturenofocus>-</texturenofocus>
   </default>
   <default type="resize">
 	<left>60</left>
 	<top>192</top>
-	<include>Buttons_2D_texturenofocus</include>
-	<include>Buttons_2D_texturefocus</include>
+	<include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturenofocus</include>
+    <include condition="Skin.HasSetting(Performance)">Buttons_2D_texturenofocus_ButtonD0</include>
+	<include condition="!Skin.HasSetting(Performance)">Buttons_2D_texturefocus</include>
+	<include condition="Skin.HasSetting(Performance)">Buttons_2D_texturefocus_ButtonD0</include>
 	<texturenofocus>-</texturenofocus>
   </default>
 </includes>

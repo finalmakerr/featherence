@@ -14,7 +14,6 @@
 	  </item>
 	  <item id="701" description="שינוי שם">
 		<label>118</label>
-		<!--<onclick condition="!String.IsEmpty(Window(home).Property(Button.ID_)) + Window.IsVisible(Custom1175.xml) + !Window.IsVisible(Custom1139.xml)">Skin.SetString(label$INFO[Window(home).Property(Button.ID_)])</onclick>-->
 		<onclick description="1175" condition="Window.IsVisible(Custom1175.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_)) + !Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=214&amp;value=0)</onclick>
 		<onclick description="1139" condition="Window.IsVisible(Custom1139.xml)">RunScript(script.featherence.service,,?mode=214&amp;value=1)</onclick>
 		<onclick description="Widget" condition="Window.IsVisible(Custom1175.xml) + !String.IsEmpty(Window(home).Property(WidgetButton.ID_))">RunScript(script.featherence.service,,?mode=214&amp;value=2)</onclick>
@@ -249,16 +248,6 @@
 	  <label>19061</label>
 	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
 	</control>
-	<!--
-	<control type="button" description="Switch to channel button">
-	  <width>480</width>
-	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR3</include>
-	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL3</include>
-	  <label>Switch to channel button</label>
-	  <visible>false</visible>
-	  <visible>Window.IsVisible(DialogPVRInfo.xml)</visible>
-	</control>
-	-->
   </include>
 
   <include name="CenterMenuContent_707" description="עוצמת קול">

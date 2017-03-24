@@ -98,6 +98,8 @@
 	  <visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]</visible>
 	  <visible>!Window.IsVisible(Custom1173.xml)</visible>
 	  <height>40</height>
+	  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + !String.IsEqual(System.Language,Hebrew)">Control_Pos32</include>
+	  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">Control_Pos31</include>
 	  <posx>20</posx>
 	  <posy>35.4</posy>
 	  <width>1880</width>
@@ -231,12 +233,13 @@
 	
   <include name="Menu_Home9000_3">
 	<control type="list" id="9000" description="מאונך">
+	  <include>TopInformationSize0</include>
 	  <include>TopInformationSize1</include>
 	  <visible>Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)</visible>
 	  <visible>![Window.IsVisible(CustomHomeCustomizer2.xml) + !String.IsEmpty(Window(home).Property(WidgetButton.ID_))]</visible>
-	  <animation condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="1665,0" time="0">Conditional</animation>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos7</include>
 	  <posx>0</posx>
-	  <posy>80</posy>
+	  <posy>60</posy>
 	  <width>1850</width>
 	  <height>927</height>
 	  <onup condition="!Skin.HasSetting(SPMiniButtons)">9000</onup>
@@ -270,7 +273,6 @@
   
   <include name="Menu_Home9020_1">
      <control type="list" id="9020" description="מאוזןSP">
-	  <!--<include>Fade20</include>-->
 	  <animation condition="!Container(9000).HasNext() | Control.HasFocus(9020)" effect="fade" start="0" end="100" delay="0" time="220" reversible="false">Conditional</animation>
 	  <animation condition="![!Container(9000).HasNext() | Control.HasFocus(9020)]" effect="fade" start="100" end="0" delay="0" time="220" reversible="false">Conditional</animation> 
 	  <visible>[!Container(9000).HasPrevious() | !Container(9000).HasNext()] + Skin.HasSetting(SPMiniButtons)</visible>
@@ -433,34 +435,31 @@
 		  <width>312</width>
         </control>
 		<control type="image" description="Movies Widget">
-          <include>Fade_IconOverlayButton</include>
 		  <aspectratio>keep</aspectratio>
 		  <height>60</height>
 		  <posx>30</posx>
           <posy>30</posy>
-		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/movies.png</texture>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">buttons/icons/moviesf.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>String.Contains(ListItem.Label2,90) + !Skin.String(widget311) | String.IsEqual(ListItem.Label2,Skin.String(widget311))</visible>
 		  <width>104</width>
         </control>
 		<control type="image" description="TVshows Widget">
-          <include>Fade_IconOverlayButton</include>
 		  <aspectratio>keep</aspectratio>
 		  <height>60</height>
 		  <posx>30</posx>
           <posy>30</posy>
-		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/tvshows.png</texture>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">buttons/icons/tvshowsf.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>String.Contains(ListItem.Label2,91) + !Skin.String(widget312) | String.IsEqual(ListItem.Label2,Skin.String(widget312))</visible>
 		  <width>104</width>
         </control>
 		<control type="image" description="Weather Widget">
-          <include>Fade_IconOverlayButton</include>
 		  <aspectratio>keep</aspectratio>
 		  <height>60</height>
 		  <posx>30</posx>
           <posy>30</posy>
-		  <texture colordiffuse="$VAR[IconUnFocusColor]">special://home/addons/script.featherence.service/resources/icons/weather.png</texture>
+		  <texture colordiffuse="$VAR[IconUnFocusColor]">buttons/icons/weatherf.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>String.Contains(ListItem.Label2,97) + !Skin.String(widget317) | String.IsEqual(ListItem.Label2,Skin.String(widget317))</visible>
 		  <width>104</width>
@@ -631,7 +630,7 @@
 		  <height>60</height>
 		  <posx>30</posx>
           <posy>30</posy>
-		  <texture colordiffuse="$VAR[IconFocusColor]">special://home/addons/script.featherence.service/resources/icons/movies.png</texture>
+		  <texture colordiffuse="$VAR[IconFocusColor]">buttons/icons/moviesf.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>String.Contains(ListItem.Label2,90) + !Skin.String(widget311) | String.IsEqual(ListItem.Label2,Skin.String(widget311))</visible>
 		  <width>104</width>
@@ -641,7 +640,7 @@
 		  <height>60</height>
 		  <posx>30</posx>
           <posy>30</posy>
-		  <texture colordiffuse="$VAR[IconFocusColor]">special://home/addons/script.featherence.service/resources/icons/tvshows.png</texture>
+		  <texture colordiffuse="$VAR[IconFocusColor]">buttons/icons/tvshowsf.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>String.Contains(ListItem.Label2,91) + !Skin.String(widget312) | String.IsEqual(ListItem.Label2,Skin.String(widget312))</visible>
 		  <width>104</width>
@@ -651,7 +650,7 @@
 		  <height>60</height>
 		  <posx>30</posx>
           <posy>30</posy>
-		  <texture colordiffuse="$VAR[IconFocusColor]">special://home/addons/script.featherence.service/resources/icons/weather.png</texture>
+		  <texture colordiffuse="$VAR[IconFocusColor]">buttons/icons/weatherf.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 		  <visible>String.Contains(ListItem.Label2,97) + !Skin.String(widget317) | String.IsEqual(ListItem.Label2,Skin.String(widget317))</visible>
 		  <width>104</width>
@@ -763,7 +762,7 @@
   <include name="MenuDesign_Home2" description="מאונך2">
     <itemlayout height="100" width="222">
 	  <control type="group">
-		<animation description="VerticalMenu" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="10,0" delay="0" time="0" reversible="true">Conditional</animation>
+	    <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos13</include>
 		<animation condition="[Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | Skin.HasSetting(FixedUnFocusButtonsTransperancy) + [$EXP[ContentsWidget] | [Integer.IsGreater(Container(9000).NumItems,7) + System.IdleTime(7)]]]" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
 		<include content="MenuDesign_ItemLayout">
 			<param name="height" value="100" description="כללי"/>
@@ -798,7 +797,7 @@
     <focusedlayout height="100" width="222">
 	  <control type="group">
 	    <include>SetProperty_Home</include>
-		<animation description="VerticalMenu" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="10,0" delay="0" time="0" reversible="true">Conditional</animation>
+		<include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos13</include>
 		<include content="MenuDesign_focusedlayout">
 			<param name="height" value="100" description="כללי"/>
 			<param name="posx" value="10" />
@@ -911,8 +910,6 @@
   <include name="MenuDesign_HomeSP3" description="מוקטנים">
     <itemlayout height="65" width="65">
 	  <control type="group">
-	    <animation description="VerticalMenu" condition="$EXP[ContentsWidget] + [Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="188,0" delay="0" time="220" reversible="true">Conditional</animation>
-		<animation description="VerticalMenu" condition="$EXP[ContentsWidget] + [Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-170,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<animation condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + [Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(CustomHomeCustomizer2.xml) | Skin.HasSetting(FixedUnFocusButtonsTransperancy) + [$EXP[ContentsWidget] | [Integer.IsGreater(Container(9000).NumItems,7) + System.IdleTime(7)]]]" effect="fade" start="100" end="40" time="220" reversible="true">Conditional</animation>
 		<include content="MenuDesign_ItemLayout">
 			<param name="height" value="65" description="כללי"/>
@@ -920,18 +917,19 @@
 			<param name="posy" value="22.5" />
 			<param name="width" value="65" />
 			
-			<param name="height2" value="60" description="סמלים גדולים"/>
+			<param name="height2" value="65" description="סמלים גדולים"/>
 			<param name="posx2" value="22.5" />
 			<param name="posy2" value="22.5" />
-			<param name="width2" value="60" />
+			<param name="width2" value="65" />
 			<param name="homeicons" value="false" />
 			<param name="reshape" value="true" />
 			
 			
-			<param name="height3" value="60" description="סמלים, OFF"/>
+			<param name="height3" value="65" description="סמלים, OFF"/>
 			<param name="posx3" value="22.5" />
 			<param name="posy3" value="22.5" />
-			<param name="width3" value="60" />
+			<param name="width3" value="65" />
+			<param name="homeicons" value="false" />
 			
 			<param name="height4" value="60" description="Widget"/>
 			<param name="posx4" value="22.5" />
@@ -949,25 +947,24 @@
 	  <control type="group">
 	    <animation condition="true" effect="zoom" center="0,0" end="100,100" time="0" reversible="false">Conditional</animation>
 	    <include>SetProperty_HomeSP</include>
-		<animation description="VerticalMenu" condition="$EXP[ContentsWidget] + [Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="188,0" delay="0" time="220" reversible="true">Conditional</animation>
-		<animation description="VerticalMenu" condition="$EXP[ContentsWidget] + [Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-170,0" delay="0" time="220" reversible="true">Conditional</animation>
 		<include content="MenuDesign_focusedlayout">
 			<param name="height" value="65" description="כללי"/>
 			<param name="posx" value="22.5" />
 			<param name="posy" value="22.5" />
 			<param name="width" value="65" />
 			
-			<param name="height2" value="60" description="סמלים גדולים"/>
+			<param name="height2" value="65" description="סמלים גדולים"/>
 			<param name="posx2" value="22.5" />
 			<param name="posy2" value="22.5" />
-			<param name="width2" value="60" />
+			<param name="width2" value="65" />
 			<param name="homeicons" value="false" />
 			<param name="reshape" value="true" />
 			
-			<param name="height3" value="60" description="סמלים, OFF"/>
+			<param name="height3" value="65" description="סמלים, OFF"/>
 			<param name="posx3" value="22.5" />
 			<param name="posy3" value="22.5" />
-			<param name="width3" value="60" />
+			<param name="width3" value="65" />
+			<param name="homeicons" value="false" />
 			
 			<param name="height4" value="60" description="Widget"/>
 			<param name="posx4" value="22.5" />
@@ -1058,7 +1055,7 @@
 			<param name="color" value="$VAR[IconUnFocusColor]" />
 			<param name="height" value="70" />
 			<param name="posx" value="20" />
-			<param name="posy" value="22" />
+			<param name="posy" value="20" />
 			<param name="width" value="70" />
 			
 			<param name="condition" value="true" description="" />
@@ -1188,7 +1185,7 @@
 			<param name="color" value="$VAR[IconUnFocusColorSP]" />
 			<param name="height" value="70" />
 			<param name="posx" value="20" />
-			<param name="posy" value="22" />
+			<param name="posy" value="20" />
 			<param name="width" value="70" />
 			
 			<param name="condition" value="true" description="" />
@@ -1274,7 +1271,6 @@
 	  <control type="list" id="9008" description="Touch Support/מאוזן">
 		  <include>Fade20</include>
 		  <visible>Skin.HasSetting(Touch_Support) + Skin.HasSetting(Touch_Orientation)</visible>
-		  <!--<visible>!Control.IsVisible(90000)</visible>-->
 		  <visible>![ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus() | ControlGroup(9002).HasFocus() | !String.IsEmpty(Window(home).Property(SideMenuUp))]</visible>
 		  <visible>!Window.IsVisible(DialogContextMenu.xml)</visible>
 		  <posx>-20</posx>

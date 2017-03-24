@@ -10,7 +10,7 @@
     <param name="d2" default="false"/>
 	<definition>
    <control type="grouplist">
-    <animation description="Slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="300,0">Conditional</animation>
+    <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos41</include>
 	<include condition="String.IsEqual(System.Language,Hebrew)">LeftC</include>
 	<include condition="!String.IsEqual(System.Language,Hebrew)">RightC</include>
 	<height>$PARAM[height]</height>
@@ -104,7 +104,7 @@
 			<include>Fade_TopInformationOverlay</include>
 			<height>$PARAM[height]</height>
 			<posx>-60</posx>
-			<texture border="20" colordiffuse="$VAR[TopInformationColor]">buttons/ButtonA0C.png</texture>
+			<texture border="0" colordiffuse="$VAR[TopInformationColor]">buttons/ButtonA0.png</texture>
 			<width>2040</width>
 		  </control>
 		  <control type="label" id="11010" description="">

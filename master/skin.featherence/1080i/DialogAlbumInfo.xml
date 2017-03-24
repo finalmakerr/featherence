@@ -28,36 +28,34 @@
 	    <height>180</height>
 	    <width>200</width>  
 		<itemlayout width="224" height="236">
-						<control type="image">
-							<posx>5</posx>
-							<posy>17</posy>
-							<width>200</width>
-							<height>200</height>
-							<aspectratio>strech</aspectratio>
-							<texture fallback="defaultmusicalbums.png">$INFO[ListItem.Icon]</texture>
-							<bordertexture colordiffuse="grey_a">white.png</bordertexture>
-							<bordersize>3</bordersize>
-							<animation effect="fade" start="0" end="40" time="200" condition="true">Conditional</animation>
-						</control>
-						<control type="image">
-							<posx>8</posx>
-							<posy>175</posy>
-							<width>194</width>
-							<height>40</height>
-							<texture>main/widget_title.png</texture>
-						</control>	
-						<control type="label">
-							<posx>8</posx>
-							<posy>172</posy>
-							<description>Disc No-Focus</description>
-							<height>40</height>
-							<width>194</width>
-							<textcolor>grey_a</textcolor>
-							<align>center</align>
-							<label>$INFO[ListItem.Label]</label>
-							<font>font-20</font>
-						</control>
-					</itemlayout>
+			<control type="image">
+				<posx>5</posx>
+				<posy>17</posy>
+				<width>200</width>
+				<height>200</height>
+				<aspectratio>strech</aspectratio>
+				<texture fallback="DefaultMusicAlbums.png">$INFO[ListItem.Icon]</texture>
+				<animation effect="fade" start="0" end="40" time="200" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>8</posx>
+				<posy>175</posy>
+				<width>194</width>
+				<height>40</height>
+				<texture>main/widget_title.png</texture>
+			</control>	
+			<control type="label">
+				<posx>8</posx>
+				<posy>172</posy>
+				<description>Disc No-Focus</description>
+				<height>40</height>
+				<width>194</width>
+				<textcolor>grey_a</textcolor>
+				<align>center</align>
+				<label>$INFO[ListItem.Label]</label>
+				<font>font-20</font>
+			</control>
+		</itemlayout>
 		<focusedlayout width="224" height="236">
 			<control type="image">
 				<posx>5</posx>
@@ -65,9 +63,7 @@
 				<width>200</width>
 				<height>200</height>
 				<aspectratio scalediffuse="false">strech</aspectratio>
-				<texture fallback="defaultmusicalbums.png">$INFO[ListItem.Icon]</texture>
-				<bordertexture colordiffuse="$VAR[ButtonFocusColor]">white.png</bordertexture>
-				<bordersize>3</bordersize>
+				<texture fallback="DefaultMusicAlbums.png">$INFO[ListItem.Icon]</texture>
 				<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
 			</control>
 			<control type="image">

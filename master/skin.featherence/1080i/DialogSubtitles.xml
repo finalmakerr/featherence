@@ -9,7 +9,6 @@
           <posx>240</posx>
 		  <posy>810</posy>
 		  <include content="MenuBackground">
-			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="570" />
 			<param name="posx" value="0" />
@@ -95,7 +94,7 @@
                 <itemlayout width="1360" height="54">
 				    <include content="Buttons_Frame">
 						<param name="id" value="" />
-						<param name="border" value="30" />
+						<param name="border" value="0" />
 						<param name="color" value="$VAR[ButtonUnFocusColor]" />
 						<param name="condition" default="true"/>
 						<param name="height" value="60" />
@@ -190,7 +189,7 @@
 					  <visible>Control.HasFocus(120)</visible>
 					  <include content="Buttons_Frame">
 						<param name="id" value="" />
-						<param name="border" value="30" />
+						<param name="border" value="0" />
 						<param name="color" value="$VAR[ButtonFocusColor]" />
 						<param name="condition" default=""/>
 						<param name="height" value="60" />
@@ -203,7 +202,7 @@
 					  <visible>!Control.HasFocus(120)</visible>
 					  <include content="Buttons_Frame">
 						<param name="id" value="" />
-						<param name="border" value="30" />
+						<param name="border" value="0" />
 						<param name="color" value="$VAR[ButtonUnFocusColor]" />
 						<param name="condition" default=""/>
 						<param name="height" value="60" />
@@ -316,7 +315,7 @@
 			  <itemlayout width="450" height="65">
 			    <include content="Buttons_Frame">
 					<param name="id" value="" />
-					<param name="border" value="30" />
+					<param name="border" value="0" />
 					<param name="color" value="$VAR[ButtonUnFocusColor]" />
 					<param name="condition" default="true"/>
 					<param name="height" value="70" />
@@ -356,7 +355,7 @@
 				  <visible>Control.HasFocus(151) + !Control.HasFocus(160) + !Control.HasFocus(161) + !Control.HasFocus(120)</visible>
 				  <include content="Buttons_Frame">
 					<param name="id" value="" />
-					<param name="border" value="30" />
+					<param name="border" value="0" />
 					<param name="color" value="$VAR[ButtonFocusColor]" />
 					<param name="condition" default="true"/>
 					<param name="height" value="70" />
@@ -369,7 +368,7 @@
 				  <visible>![Control.HasFocus(151) + !Control.HasFocus(160) + !Control.HasFocus(161) + !Control.HasFocus(120)]</visible>
 				  <include content="Buttons_Frame">
 					<param name="id" value="" />
-					<param name="border" value="30" />
+					<param name="border" value="0" />
 					<param name="color" value="$VAR[ButtonUnFocusColor]" />
 					<param name="condition" default="true"/>
 					<param name="height" value="70" />
@@ -438,7 +437,7 @@
 			  <itemlayout width="450" height="65">
 			    <include content="Buttons_Frame">
 					<param name="id" value="" />
-					<param name="border" value="30" />
+					<param name="border" value="0" />
 					<param name="color" value="$VAR[ButtonUnFocusColor]" />
 					<param name="condition" default="true"/>
 					<param name="height" value="70" />
@@ -478,7 +477,7 @@
 				  <visible>Control.HasFocus(150) + !Control.HasFocus(160) + !Control.HasFocus(161) + !Control.HasFocus(120)</visible>
 				  <include content="Buttons_Frame">
 					<param name="id" value="" />
-					<param name="border" value="30" />
+					<param name="border" value="0" />
 					<param name="color" value="$VAR[ButtonFocusColor]" />
 					<param name="condition" default="true"/>
 					<param name="height" value="70" />
@@ -491,7 +490,7 @@
 				  <visible>![Control.HasFocus(150) + !Control.HasFocus(160) + !Control.HasFocus(161) + !Control.HasFocus(120)]</visible>
 				  <include content="Buttons_Frame">
 					<param name="id" value="" />
-					<param name="border" value="30" />
+					<param name="border" value="0" />
 					<param name="color" value="$VAR[ButtonUnFocusColor]" />
 					<param name="condition" default="true"/>
 					<param name="height" value="70" />

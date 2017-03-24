@@ -1014,8 +1014,8 @@ msgid "Enable this option in order to speed up your Kodi by using less animation
 msgstr "הפעל אפשרות זו בכדי לשפר את מהירות הקודי בעזרת הפחתת אנימציות ואפשרויות בסקין."
 
 msgctxt "#31544"
-msgid ""
-msgstr ""
+msgid "Show Duration"
+msgstr "הצג משך זמן"
 
 msgctxt "#31545"
 msgid ""

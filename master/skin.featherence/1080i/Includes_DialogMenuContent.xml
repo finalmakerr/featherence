@@ -144,7 +144,6 @@
 	  <posx>720</posx>
       <posy>560</posy>
 	  <include content="MenuBackground">
-		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="535" />
 		<param name="posx" value="0" />
@@ -211,7 +210,6 @@
       <posx>450</posx>
       <posy>225</posy>
 	  <include content="MenuBackground">
-		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="875" />
 		<param name="posx" value="0" />
@@ -328,7 +326,6 @@
 	  <posx>430</posx>
 	  <posy>220</posy>
 	  <include content="MenuBackground">
-		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="875" />
 		<param name="posx" value="0" />
@@ -383,7 +380,7 @@
 		<itemlayout height="70" width="1020">
           <include content="Buttons_Frame">
 			<param name="id" value="" />
-			<param name="border" value="40" />
+			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
 			<param name="condition" default="true"/>
 			<param name="height" value="70" />
@@ -402,7 +399,7 @@
  
 		  <include content="Buttons_Frame">
 			<param name="id" value="" />
-			<param name="border" value="40" />
+			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
 			<param name="condition" default="Control.HasFocus(21)"/>
 			<param name="height" value="70" />
@@ -489,7 +486,6 @@
 	  <posx>430</posx>
 	  <posy>220</posy>
 	  <include content="MenuBackground">
-		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="875" />
 		<param name="posx" value="0" />
@@ -614,7 +610,6 @@
 	  <posx>430</posx>
 	  <posy>220</posy>
 	  <include content="MenuBackground">
-		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="875" />
 		<param name="posx" value="0" />
@@ -637,7 +632,7 @@
 		<itemlayout height="70" width="1040">
 		  <include content="Buttons_Frame">
 			<param name="id" value="" />
-			<param name="border" value="40" />
+			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonUnFocusColor]" />
 			<param name="condition" default="true"/>
 			<param name="height" value="80" />
@@ -670,7 +665,7 @@
         <focusedlayout height="70" width="1040">
           <include content="Buttons_Frame">
 			<param name="id" value="" />
-			<param name="border" value="40" />
+			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
 			<param name="condition" default="true"/>
 			<param name="height" value="80" />
@@ -735,7 +730,6 @@
 	  <posx>450</posx>
 	  <posy>500</posy>
 	  <include content="MenuBackground">
-		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="800" />
 		<param name="posx" value="0" />
@@ -815,7 +809,6 @@
 	  <posx>430</posx>
 	  <posy>220</posy>
 	  <include content="MenuBackground">
-		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="875" />
 		<param name="posx" value="0" />
@@ -926,7 +919,6 @@
 	  <width>485</width> 	  
 
 	  <include content="MenuBackground">
-		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="0" />
 		<param name="posx" value="0" />
@@ -939,7 +931,6 @@
       </include>
 	  
 	  <include content="MenuBackground">
-		<param name="border" value="40" />
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="0" />
 		<param name="posx" value="0" />
@@ -1087,6 +1078,7 @@
   <include name="TopDialogExtendedProgressBar" description="חלון עדכון ספרייה">
     <control type="group">
 		<visible>!Skin.HasSetting(HideLibraryUpdates) | [ Skin.HasSetting(HideLibraryUpdates) + [!VideoPlayer.IsFullscreen | Window.IsVisible(VideoOSD.xml)] ]</visible>
+		<visible>!Window.IsVisible(DialogNotification.xml)</visible>
 		<posx>610</posx>
 		<posy>-6</posy>
 		<include content="Notification_Frame">

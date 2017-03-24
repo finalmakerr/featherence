@@ -20,7 +20,6 @@
 	  <!--<animation condition="Window.IsVisible(FileBrowser.xml) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="700,100" time="0,0">Conditional</animation>
 	  <animation condition="Window.IsVisible(FileBrowser.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-700,100" time="0,0">Conditional</animation>-->
       <include content="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
-			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="410" />
 			<param name="posx" value="0" />
@@ -31,7 +30,7 @@
 			<param name="type0" value="true" description="MenuBackground"/>
 			<param name="type1" value="false" description="DialogBackground"/>
 	  </include>
-	  <include>ArrowsUpDown</include>
+	  <include condition="!Skin.HasSetting(Performance)">ArrowsUpDown</include>
 	  <control type="grouplist" id="9005">
 		<onup>9005</onup>
 		<ondown>9005</ondown>
@@ -60,7 +59,6 @@
 	  <animation condition="Window.IsVisible(VideoOSD.xml) | VideoPlayer.IsFullscreen" effect="slide" start="0,0" end="-720,-300" time="0">Conditional</animation>
 	  <visible>!String.Contains(Control.GetLabel(311),password) + !String.Contains(Control.GetLabel(311),$LOCALIZE[733]) + Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(DialogSubtitles.xml) + !Window.IsVisible(Custom1175.xml) | ![Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)] | Window.IsVisible(VideoOSD.xml)</visible>
 	  <include content="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
-			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="410" />
 			<param name="posx" value="0" />
@@ -71,7 +69,7 @@
 			<param name="type0" value="true" description="MenuBackground"/>
 			<param name="type1" value="false" description="DialogBackground"/>
 	  </include>
-	  <include>ArrowsUpDown</include>
+	  <include condition="!Skin.HasSetting(Performance)">ArrowsUpDown</include>
 	  <control type="list" id="9005">
 		<onright condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)">309</onright>
 		<onleft condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)">300</onleft>
@@ -136,7 +134,7 @@
 	  <control type="group">
 		  <include content="Buttons_Frame">
 				<param name="id" value="" />
-				<param name="border" value="30" />
+				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonUnFocusColor]" />
 				<param name="height" value="70" />
 				<param name="posx" value="0" />
@@ -149,13 +147,14 @@
 		    <height>60</height>
 			<posy>5.5</posy>
 			<posx>10</posx>
-            <texture border="3" diffuse="buttons/types/bd1.png" colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
+            <texture colordiffuse="$VAR[IconUnFocusColor]">$INFO[ListItem.Thumb]</texture>
 		    <visible>!String.IsEmpty(ListItem.Thumb)</visible>
 		    <width>60</width>
 		  </control>
 		  <control type="image" description="OFF">
             <aspectratio align="left">stretch</aspectratio>
 		    <height>70</height>
+			<posx>5</posx>
 		    <texture>images/off.png</texture>
 		    <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(ListItem.Property(off))</visible>
 		    <width>70</width>
@@ -175,7 +174,7 @@
 	    <include condition="Window.IsVisible(Custom1138.xml)">SetProperty_Center</include>
 	    <include content="Buttons_Frame">
 			<param name="id" value="" />
-			<param name="border" value="30" />
+			<param name="border" value="0" />
 			<param name="color" value="$VAR[ButtonFocusColor]" />
 			<param name="height" value="70" />
 			<param name="posx" value="0" />
@@ -187,13 +186,14 @@
 		    <height>60</height>
 			<posy>5.5</posy>
 			<posx>10</posx>
-            <texture border="3" diffuse="buttons/types/bd1.png" colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
+            <texture colordiffuse="$VAR[IconFocusColor]">$INFO[ListItem.Thumb]</texture>
 		    <visible>!String.IsEmpty(ListItem.Thumb)</visible>
 		    <width>60</width>
 		</control>
 		<control type="image" description="OFF">
           <aspectratio align="left">stretch</aspectratio>
 		  <height>70</height>
+		  <posx>5</posx>
 		  <texture>images/off.png</texture>
 		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(ListItem.Property(off))</visible>
 		  <width>70</width>

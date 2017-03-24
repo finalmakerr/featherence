@@ -14,7 +14,7 @@
 		    <animation effect="zoom" end="120,120" delay="0" center="80,80" time="700" reversible="false">WindowOpen</animation>
 			<visible>!Window.IsVisible(numericinput)</visible>
 			<control type="image" description="מסגרת ראשי">
-				<include>Fade_KeyboardBackgroundOverlay</include>
+				<include condition="!Skin.HasSetting(Performance)">Fade_KeyboardBackgroundOverlay</include>
 				<left>0</left>
 				<top>0</top>
 				<width>760</width>
@@ -60,8 +60,8 @@
 				<top>10</top>
 				<width>164</width>
 				<height>40</height>
-				<texturenofocus border="3" diffuse="buttons/ButtonC0.png" colordiffuse="$VAR[KeyboardUnFocusColor]">osd/keyboard/KeyboardKeyNF.png</texturenofocus>
-				<texturefocus border="5" diffuse="buttons/ButtonC0.png" colordiffuse="$VAR[KeyboardUnFocusColor]">osd/keyboard/KeyboardKeyNF.png</texturefocus>
+				<texturenofocus border="3" diffuse="buttons/ButtonA0.png" colordiffuse="$VAR[KeyboardUnFocusColor]">osd/keyboard/KeyboardKeyNF.png</texturenofocus>
+				<texturefocus border="5" diffuse="buttons/ButtonA0.png" colordiffuse="$VAR[KeyboardUnFocusColor]">osd/keyboard/KeyboardKeyNF.png</texturefocus>
 				<include>Keyboard</include>
 				<label>$VAR[InternetKeyboardButton]</label>
 				<font>size18</font>
@@ -72,7 +72,7 @@
 				<onright>701</onright>
 				<onup>701</onup>
 				<ondown>701</ondown>
-				<visible>String.Contains(Control.GetLabel(311),YouTube) | String.Contains(Control.GetLabel(311),Add URL) | String.Contains(Control.GetLabel(311),thumb) | String.Contains(Control.GetLabel(311),$LOCALIZE[20015]) | String.Contains(Control.GetLabel(311),fanart) | String.Contains(Control.GetLabel(311),$LOCALIZE[20441])</visible>
+				<visible>String.Contains(Control.GetLabel(311),YouTube) | String.Contains(Control.GetLabel(311),Add URL) | String.Contains(Control.GetLabel(311),thumb) | String.Contains(Control.GetLabel(311),$LOCALIZE[20015]) | String.Contains(Control.GetLabel(311),fanart) | String.Contains(Control.GetLabel(311),$LOCALIZE[20441]) | Skin.HasSetting(Admin)</visible>
 			</control>
 			<control type="image" description="תמונה מחרוזת חיפוש">
 				<bordertexture colordiffuse="ff000000" border="20">buttons/ButtonA0.png</bordertexture>

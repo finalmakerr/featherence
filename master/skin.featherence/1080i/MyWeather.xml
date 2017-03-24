@@ -33,7 +33,7 @@
 	<control type="list" id="50" description="DAYS">
       <posx>1225</posx>
       <posy>30</posy>
-      <width>670</width>
+      <width>700</width>
       <height>300</height>
       <onup>noop</onup>
       <ondown>9000</ondown>
@@ -44,6 +44,15 @@
 	    <control type="group">
 		  <posy>10</posy>
 		  <posx>10</posx>
+		    <control type="image">
+			  <animation condition="ControlGroup(9009).HasFocus" effect="fade" start="100" end="40" delay="0" time="700">Conditional</animation>
+			  <include>Fade_TopVideoInformationOverlay</include>
+			  <height>220</height>
+			  <posx>-13</posx>
+			  <posy>-27</posy>
+			  <width>185</width>
+			  <texture border="40" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonA0.png</texture>
+			</control>
 			<control type="label" description="ימים">
 			  <include>LabelC2</include>
 			  <height>20</height>
@@ -77,12 +86,12 @@
 			</control>
 			<control type="image" description="קו לאורך">
 			  <include>Fade_TopVideoInformationOverlay</include>
-			  <aspectratio align="left">keep</aspectratio>
+			  <aspectratio align="left">stretch</aspectratio>
 			  <posx>160</posx>
 			  <posy>0</posy>
-			  <width>150</width>
+			  <width>10</width>
 			  <height>188</height>
-			  <texture border="5" colordiffuse="$VAR[TopVideoInformationColor]">images/LineV.png</texture>
+			  <texture border="1" colordiffuse="$VAR[TopVideoInformationColor]">images/LineV.png</texture>
 			</control>
 		</control>
       </itemlayout>
@@ -101,7 +110,7 @@
 			  <posx>-13</posx>
 			  <posy>-27</posy>
 			  <width>185</width>
-			  <texture border="40">buttons/ButtonC.png</texture>
+			  <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/ButtonA0.png</texture>
 			</control>
 			<control type="label" description="ימים">
 			  <include>LabelC2</include>

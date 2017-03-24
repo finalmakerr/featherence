@@ -21,14 +21,18 @@
   <include name="Widget_Home">
     <control type="group" description="">
 		<visible>Container(9000).Row(0) + !Container(9000).Row(1) + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]</visible>
-		<visible>Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | [!String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect))]</visible>
+		<visible>![Window.IsVisible(CustomHomeCustomizer2.xml) + String.IsEmpty(Window(home).Property(WidgetButton.ID_))]</visible>
+		<visible>String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | [!String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect))]</visible>
 		<include>TopInformationSize8</include>
+		
 
 		<control type="group" description="סמן חץ ימינה">
 			<visible>[Control.HasFocus(311) + Container(311).HasNext] | [Control.HasFocus(312) + Container(312).HasNext] | [Control.HasFocus(315) + Container(315).HasNext] | [Control.HasFocus(31) + Container(316).HasNext]</visible>
 			<include>Animation_WidgetPosition</include>
+			<include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + !String.IsEqual(System.Language,Hebrew)">Control_Pos10</include>
+			<include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">Control_Pos11</include>
 			<posx>60r</posx>
-			<posy>275</posy>
+			<posy>365</posy>
 			<control type="image" description="לא נבחר5">
 			  <posx>-20</posx>
 			  <width>40</width>
@@ -79,17 +83,19 @@
 		<control type="group" description="סמן חץ שמאלה">
 			<include>Animation_WidgetPosition</include>
 			<visible>[Control.HasFocus(311) + Container(311).HasPrevious] | [Control.HasFocus(312) + Container(312).HasPrevious] | [Control.HasFocus(315) + Container(315).HasPrevious] | [Control.HasFocus(316) + Container(316).HasPrevious]</visible>
-			<posx>10l</posx>
-			<posy>275</posy>
+			<include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + !String.IsEqual(System.Language,Hebrew)">Control_Pos15</include>
+			<include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">Control_Pos53</include>
+			<posx>10</posx>
+			<posy>365</posy>
 			<control type="image" description="לא נבחר5">
-			  <posx>20</posx>
+			  <posx>0</posx>
 			  <width>40</width>
 			  <height>40</height>
 			  <texture border="0">images/Arrow2NF.png</texture>
 			  <visible>[Control.HasFocus(311) + !Container(311).Position(0)] | [Control.HasFocus(312) + !Container(312).Position(0)] | [Control.HasFocus(315) + !Container(315).Position(0)] | [Control.HasFocus(316) + !Container(316).Position(0)]</visible>
 			</control>
 			<control type="image" description="נבחר5">
-			  <posx>20</posx>
+			  <posx>0</posx>
 			  <width>40</width>
 			  <height>40</height>
 			  <texture border="0">images/Arrow2FO.png</texture>
@@ -98,11 +104,8 @@
 		</control>
 		<control type="group" id="700" description="Shelf items שורה עליונה בכחול">
 		  <include>Fade_WidgetOverlay</include>
-		  <!--<animation description="Slide-NoShrink_he" condition="[Skin.String(MenuDesign,4)] + Skin.HasSetting(WidgetShrink) + [!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(315) + Control.HasFocus(9000)] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-300,0">Conditional</animation>
-		  <animation description="Slide-NoShrink_en" condition="[Skin.String(MenuDesign,4)] + Skin.HasSetting(WidgetShrink) + [!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(315) + Control.HasFocus(9000)] + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="50,0">Conditional</animation>-->
-		  <animation decription="WidgetShrink_Horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign) | Skin.String(MenuDesign,6)] + !Skin.HasSetting(WidgetShrink) + [ Player.HasVideo | !$EXP[ContentsWidget]]" effect="zoom" tween="Cubic" easing="out" center="960,800" start="100,100" end="50,50" delay="220" time="440" reversible="true">Conditional</animation>
-		  <animation decription="WidgetShrink_Panel" condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + !Skin.HasSetting(WidgetShrink) + [ Player.HasVideo | !$EXP[ContentsWidget]]" effect="zoom" tween="Cubic" easing="out" center="960,600" start="100,100" end="50,50" delay="220" time="440" reversible="true">Conditional</animation>
-		  <animation decription="WidgetShrink_Vertical" condition="[Skin.String(MenuDesign,4)] + !Skin.HasSetting(WidgetShrink) + [ Player.HasVideo | !$EXP[ContentsWidget]]" effect="zoom" tween="Cubic" easing="out" center="960,1050" start="100,100" end="50,50" delay="220" time="440" reversible="true">Conditional</animation>
+		  <animation decription="WidgetShrink_Horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign) | Skin.String(MenuDesign,6)] + [ Player.HasVideo | !$EXP[ContentsWidget] + Skin.HasSetting(WidgetShrink) ]" effect="zoom" tween="Cubic" easing="out" center="960,800" start="100,100" end="50,50" delay="220" time="440" reversible="true">Conditional</animation>
+		  <animation decription="WidgetShrink_Panel" condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + [ Player.HasVideo | !$EXP[ContentsWidget] + Skin.HasSetting(WidgetShrink) ]" effect="zoom" tween="Cubic" easing="out" center="960,550" start="100,100" end="50,50" delay="220" time="440" reversible="true">Conditional</animation>
 		  
 		  <include description="פנל מדף סרטים שנוספו לאחרונה" condition="!Skin.HasSetting(MoviesShelfWL)">Movies_RA</include>
 		  <include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include> 
@@ -115,6 +118,8 @@
   </include>
   
   <include name="Widget_Movement" description="Widget">
+    <posx>40</posx>
+    <posy>170</posy>
 	<onup condition="Control.IsVisible(7011)">7017</onup>
 	<onup condition="Control.IsVisible(9009)">9009</onup>
 	<onup condition="Player.HasAudio + !Control.IsVisible(9009)">ActivateWindow(12901)</onup>
@@ -302,12 +307,14 @@
 		<visible>Skin.String(sw109) + String.IsEqual(Window(home).Property(Button.ID),109)</visible>
 	</control>
 	
-	<control type="grouplist" description="קדימונים 5">
+	<control type="grouplist" id="9015" description="קדימונים 5">
 	  <include>Fade10</include>
 	  <visible>!Skin.HasSetting(EnableTrailerButton2) + !Skin.String(WidgetDesign) + Control.IsVisible(311)</visible>
 	  <include>Animation_WidgetPosition</include>
+	  <include>Animation_WidgetMenuDesignV</include>
 	  <posx>275</posx>
-	  <posy>190</posy>
+	  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)]">Control_Pos8</include>
+	  <posy>235</posy>
 	  <width>1900</width>
 	  <height>985</height>
 	  <orientation>horizontal</orientation>
@@ -315,12 +322,14 @@
 	  <include>Trailer_311_5</include>
 	</control>
 	
-	<control type="grouplist" description="קדימונים 7">
+	<control type="grouplist" id="9015" description="קדימונים 7">
 	  <include>Fade10</include>
 	  <visible>!Skin.HasSetting(EnableTrailerButton2) + Skin.String(WidgetDesign,0) + Control.IsVisible(311)</visible>
 	  <include>Animation_WidgetPosition</include>
+	  <include>Animation_WidgetMenuDesignV</include>
 	  <posx>218</posx>
-	  <posy>190</posy>
+	  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)]">Control_Pos8</include>
+	  <posy>235</posy>
 	  <width>1900</width>
 	  <height>985</height>
 	  <orientation>horizontal</orientation>
@@ -328,12 +337,14 @@
 	  <include>Trailer_311_7</include>
 	</control>
 	
-	<control type="grouplist" description="קדימונים 9">
+	<control type="grouplist" id="9015" description="קדימונים 9">
 	  <include>Fade10</include>
 	  <visible>!Skin.HasSetting(EnableTrailerButton2) + Skin.String(WidgetDesign,1) + Control.IsVisible(311)</visible>
 	  <include>Animation_WidgetPosition</include>
+	  <include>Animation_WidgetMenuDesignV</include>
 	  <posx>188</posx>
-	  <posy>190</posy>
+	  <include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)]">Control_Pos8</include>
+	  <posy>235</posy>
 	  <width>1900</width>
 	  <height>985</height>
 	  <orientation>horizontal</orientation>
@@ -489,33 +500,29 @@
 	  <animation condition="Skin.String(WidgetPosition,1) + $EXP[MenuDesignH]" effect="slide" start="0,0" end="0,50" time="0">Conditional</animation>
 	  <animation condition="Skin.String(WidgetPosition,2) + $EXP[MenuDesignH]" effect="slide" start="0,0" end="0,100" time="0">Conditional</animation>
 	  <animation condition="Skin.String(WidgetPosition,3) + $EXP[MenuDesignH]" effect="slide" start="0,0" end="0,150" time="0">Conditional</animation>
-	  <animation condition="Skin.String(WidgetPosition,4) + $EXP[MenuDesignH]" effect="slide" start="0,0" end="0,250" time="0">Conditional</animation>
-	  <animation condition="Skin.String(WidgetPosition,5) + $EXP[MenuDesignH]" effect="slide" start="0,0" end="0,285" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,4) + $EXP[MenuDesignH]" effect="slide" start="0,0" end="0,205" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,5) + $EXP[MenuDesignH]" effect="slide" start="0,0" end="0,240" time="0">Conditional</animation>
 	  
-	  <animation condition="Skin.String(WidgetPosition,1) + $EXP[MenuDesignP]" effect="slide" start="0,0" end="0,10" time="0">Conditional</animation>
-	  <animation condition="Skin.String(WidgetPosition,2) + $EXP[MenuDesignP]" effect="slide" start="0,0" end="0,25" time="0">Conditional</animation>
-	  <animation condition="Skin.String(WidgetPosition,3) + $EXP[MenuDesignP]" effect="slide" start="0,0" end="0,40" time="0">Conditional</animation>
-	  <animation condition="Skin.String(WidgetPosition,4) + $EXP[MenuDesignP]" effect="slide" start="0,0" end="0,60" time="0">Conditional</animation>
-	  <animation condition="Skin.String(WidgetPosition,5) + $EXP[MenuDesignP]" effect="slide" start="0,0" end="0,70" time="0">Conditional</animation>
-	  
-	  <animation condition="Skin.String(WidgetPosition,1) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,100" time="0">Conditional</animation>
-	  <animation condition="Skin.String(WidgetPosition,2) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,200" time="0">Conditional</animation>
-	  <animation condition="Skin.String(WidgetPosition,3) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,300" time="0">Conditional</animation>
-	  <animation condition="Skin.String(WidgetPosition,4) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,400" time="0">Conditional</animation>
-	  <animation condition="Skin.String(WidgetPosition,5) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,550" time="0">Conditional</animation>
-	  
-	  <animation condition="[Skin.String(MenuDesign,4)] + Skin.HasSetting(WidgetShrink) + !$EXP[ContentsWidget] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-300,0">Conditional</animation>
-	  <animation condition="[Skin.String(MenuDesign,4)] + Skin.HasSetting(WidgetShrink) + !$EXP[ContentsWidget] + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="300,0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,1) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,55" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,2) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,155" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,3) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,255" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,4) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,355" time="0">Conditional</animation>
+	  <animation condition="Skin.String(WidgetPosition,5) + $EXP[MenuDesignV]" effect="slide" start="0,0" end="0,505" time="0">Conditional</animation>
   </include>
-	
+  
+  <include name="Animation_WidgetMenuDesignV">
+    <animation condition="$EXP[MenuDesignV]" effect="zoom" center="auto" start="90,90" end="90,90" time="0">Conditional</animation>
+	<animation condition="$EXP[MenuDesignV] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-120,0">Conditional</animation>
+	<animation condition="$EXP[MenuDesignV] + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="130,0">Conditional</animation>
+  </include>
   <include name="MoviesShortcutsCommons" description="מדף סרטים/סדרות5">
-	<posx>40</posx>
-    <posy>125</posy>
+	<posx>0</posx>
+    <posy>0</posy>
     <width>1920</width>
-    <height>500</height>
+    <height>390</height>
     <orientation>horizontal</orientation>
 	<include>Animation_WidgetPosition</include>
-	
+	<include>Animation_WidgetMenuDesignV</include>
     <itemlayout height="350" width="368">
       <control type="group">
 		  <animation condition="true" effect="fade" start="80" end="80" time="0">Conditional</animation>
@@ -525,7 +532,7 @@
 			<param name="posx" value="50"/>
 			<param name="posy" value="60"/>
 			<param name="width" value="270"/>
-			<param name="posx2" value="25"/>
+			<param name="posx2" value="50"/>
 		  </include>
       </control>
     </itemlayout>
@@ -539,19 +546,20 @@
 			<param name="posx" value="50"/>
 			<param name="posy" value="60"/>
 			<param name="width" value="270"/>
-			<param name="posx2" value="25"/>
+			<param name="posx2" value="50"/>
 		  </include>
 	  </control>
 	</focusedlayout>
   </include>
   	
   <include name="MoviesShortcutsCommons0" description="מדף סרטים/סדרות7">
-	<posx>40</posx>
-    <posy>125</posy>
+	<posx>0</posx>
+    <posy>0</posy>
     <width>1830</width>
-    <height>500</height>
+    <height>390</height>
     <orientation>horizontal</orientation>
 	<include>Animation_WidgetPosition</include>
+	<include>Animation_WidgetMenuDesignV</include>
     <itemlayout height="350" width="260">
       <control type="group">
 		  <animation condition="true" effect="fade" start="80" end="80" time="0">Conditional</animation>
@@ -591,12 +599,13 @@
   </include>
   
   <include name="MoviesShortcutsCommons1" description="מדף סרטים/סדרות9">
-	<posx>40</posx>
-    <posy>125</posy>
+	<posx>0</posx>
+    <posy>0</posy>
     <width>1838</width>
-    <height>500</height>
+    <height>390</height>
     <orientation>horizontal</orientation>
 	<include>Animation_WidgetPosition</include>
+	<include>Animation_WidgetMenuDesignV</include>
     <itemlayout height="350" width="202">
       <control type="group">
 		  <animation condition="true" effect="fade" start="80" end="80" time="0">Conditional</animation>
@@ -732,7 +741,7 @@
 		<height>200</height>
 		<posx>$PARAM[posx2]</posx>
 		<posy>120</posy>
-		<texture>misc/help/off.png</texture>
+		<texture>images/off.png</texture>
 		<visible>String.IsEmpty(ListItem.Property(off)) | Window.IsVisible(Custom1173.xml) + String.IsEmpty(Container(315).ListItem(0).Property(off))</visible>
 		<visible>Control.IsVisible(315) | Window.IsVisible(Custom1175.xml)</visible>
 		<visible>![String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
