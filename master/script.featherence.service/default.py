@@ -445,7 +445,7 @@ elif mode >= 200 and mode <= 249:
 								formula = formula + newline + 'sw'+str(i)+'=0' + str(x)
 								formula = formula + newline + 'sw'+str(i)+'_name=0' + str(xbmc.getInfoLabel('Skin.String(sw'+str(i)+'_name'))
 																
-								for i2 in range(100,110):
+								for i2 in range(100,120):
 									'''Sub'''
 									x = label_T.get('label'+str(i)+'_'+str(i2))
 									if x != "" and x != None:

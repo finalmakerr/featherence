@@ -10,7 +10,7 @@
       <height>1030</height>	  
 	  <posx>370</posx>
 	  <posy>50</posy>	        
-	  <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
+	  <texture colordiffuse="$VAR[MenuColor]">buttons/types/bd0.png</texture>
 	  <width>1180</width>	  
 	</control>
     <control type="label" id="2" description="Header label">
@@ -102,7 +102,7 @@
               <posy>0</posy>
               <width>840</width>
               <height>63</height>
-			  <texture border="30" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texture>
+			  <texture colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd0.png</texture>
             </control>
             <control type="label">
               <posx>30</posx>
@@ -119,7 +119,7 @@
               <posy>0</posy>
               <width>840</width>
               <height>63</height>
-              <texture border="30" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
+              <texture colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd0.png</texture>
               <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(10)">Conditional</animation>
             </control>
             <control type="label">

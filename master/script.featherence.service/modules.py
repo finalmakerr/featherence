@@ -854,8 +854,14 @@ def mode29(value, command, header, exit, name, printpoint):
 					setSkinSetting('0', x_, list2[returned], force=True)
 			elif x[:2] == '1.':
 				setSkinSetting('1', str(returned2), list2[returned], force=True)
+			
+			elif x[:2] == 's.':
+				#mode = find_string(x, '.', '_')
+				if 's.32_6' in x:
+					xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=32&value=6)')
 				
 			else:
+				#if '#' in x: x.replace('#','&')
 				xbmc.executebuiltin(x) ; xbmc.sleep(10)
 	
 	text2 = newline + 'value' + space2 + str(value) + newline + \
@@ -1775,6 +1781,7 @@ def mode210(value, admin, name, printpoint):
 		printpoint = printpoint + "0"
 		if property_temp == property_buttonid or property_temp2 == property_buttonid_: printpoint = printpoint + "9B"
 		if property_temp2 == "": printpoint = printpoint + "9C"
+		if property_temp == 'None' or property_temp2 == 'None': printpoint = printpoint + "9F"
 		else:
 			try:
 				if not int(property_temp2) > 0: printpoint = printpoint + "9D"
@@ -1918,9 +1925,9 @@ def mode211(value, admin, name, printpoint):
 	'''------------------------------
 	---Create-New-Item---------------
 	------------------------------'''
-	extra = "" ; TypeError = "" ; x = "" ; y = ""
+	extra = "" ; TypeError = "" ; x = "" ; y = "" ; max = 109
 	
-	#xbmc.executebuiltin('Action(Close)')
+	if not xbmc.getCondVisibility('Skin.HasSetting(Performance)'): max = 119
 	try:
 		if not int(property_buttonid_) > 0: printpoint = printpoint + "1" ; notification(localize(257) + space2 + '211', "", "", 1000)
 	except: printpoint = printpoint + 'q'
@@ -1932,7 +1939,7 @@ def mode211(value, admin, name, printpoint):
 			#from variables2 import *
 			#label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id)) ; action = actionT.get('action'+str(id))
 			xbmc.executebuiltin('Dialog.Close(1175)')
-			for i in range(100,109):
+			for i in range(100,max):
 				x = xbmc.getInfoLabel('Skin.String(label'+str(i)+')')
 				if x == "":
 					y = str(i)
@@ -2291,6 +2298,17 @@ def mode215(value, value2, name, printpoint):
 			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/animals.png')
 			'''---------------------------'''
 	
+	for i in range(90,119):
+		x = idT.get('id'+str(i))
+		#x = xbmc.getInfoLabel('Skin.String(id'+str(i)+')')
+		if x != "" or x == 'None':
+			try:
+				int(x) + 1
+				#extra2 = extra2 + newline + 'i' + space2 + str(i) + space + 'x' + space2 + str(x) + space
+			except Exception, TypeError:
+				setSkinSetting('0','id'+str(i),"",force=True)
+				extra2 = extra2 + newline + 'i' + space2 + str(i) + space + 'x' + space2 + str(x) + space
+				
 	text = "value" + space2 + str(value) + space + "id" + space2 + str(id) + newline + \
 	"value2" + space2 + str(value2) + newline + \
 	"idT" + space2 + str(idT) + newline + \

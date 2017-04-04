@@ -531,7 +531,7 @@
 		  <posy>0</posy>
 		  <width>880</width>
 		  <height>85</height>
-		  <texture border="40" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
+		  <texture colordiffuse="$VAR[MenuColor]">buttons/types/bd0.png</texture>
 		</control>
 		<include>View51_Common</include>
 		<control type="label" description="שם">
@@ -551,7 +551,7 @@
 		  <posy>0</posy>
 		  <width>880</width>
 		  <height>85</height>
-		  <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
+		  <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd0.png</texture>
 		</control>
 		<include>View51_Common</include>
 		
@@ -660,7 +660,7 @@
               <posy>20</posy>
               <width>360</width>
               <height>100</height>
-              <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
+              <texture colordiffuse="$VAR[MenuColor]">buttons/types/bd0.png</texture>
             </control>
 			<control type="label" description="פרק/עונה">
               <include>LabelC3</include>
@@ -720,7 +720,7 @@
               <posy>20</posy>
               <width>360</width>
               <height>100</height>
-              <texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
+              <texture colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd0.png</texture>
             </control>
 		    <control type="label" description="פרק/עונה">
               <include>LabelC3</include>
@@ -1190,7 +1190,7 @@
 	  </focusedlayout>
   </include>
   <include name="View58_Common">
-    <control type="image" description="תמונה לא נבחר">
+    <control type="image" description="פוסטר">
 	  
 	  <include>BorderFrame</include>
 	  <posx>55</posx>

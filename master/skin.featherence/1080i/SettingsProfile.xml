@@ -20,7 +20,7 @@
       <onup>2</onup>
       <ondown>2</ondown>
       <textoffsetx>20</textoffsetx>
-	  <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>
+	  <texturenofocus colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd0.png</texturenofocus>
 	  <include>ButtonC1</include>
     </control>
 	<control type="image" description="ProfileThumb">
@@ -57,7 +57,7 @@
 	      <control type="image">
 			<width>900</width>
 			<height>81</height>
-			<texture border="20" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
+			<texture colordiffuse="$VAR[MenuColor]">buttons/types/bd0.png</texture>
 			<aspectratio>stretch</aspectratio>
 	      </control>	
 		  <control type="label" description="Main Label">
@@ -74,7 +74,7 @@
           <control type="image">
 			<width>900</width>
 			<height>81</height>
-			<texture border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
+			<texture colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd0.png</texture>
 			<aspectratio>stretch</aspectratio>
 		  </control>
 		  <control type="label" description="Main Label">

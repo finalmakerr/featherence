@@ -21,7 +21,7 @@
 		<control type="grouplist" id="3" description="TopMenu">
 		  <posx>350</posx>
 		  <posy>70</posy>
-		  <width>1220</width>
+		  <width>1226</width>
 		  <align>center</align>
 		  <height>100</height>
 		  <itemgap>5</itemgap>
@@ -32,8 +32,8 @@
 		  <orientation>horizontal</orientation>
 		</control>
 		<control type="button" id="10" description="Category Button">
-		  <width>300</width>
-		  <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>
+		  <width>302</width>
+		  <texturenofocus colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd0.png</texturenofocus>
 		  <include>ButtonC1</include>
 		</control>
 		<control type="grouplist" id="5" description="Stage">
