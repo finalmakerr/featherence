@@ -277,8 +277,8 @@
     <height>950</height>
     <width>20</width>
     <orientation>vertical</orientation>
-	<texturesliderbar diffuse="buttons/types/bd.png" colordiffuse="$VAR[IconUnFocusColor]" border="10">buttons/ButtonA0.png</texturesliderbar> <!--ff000000-->
-    <texturesliderbarfocus diffuse="buttons/types/bd.png" colordiffuse="$VAR[IconFocusColor]" border="10">buttons/ButtonA0.png</texturesliderbarfocus> <!--FFFFBBBB-->
+	<texturesliderbar colordiffuse="$VAR[IconUnFocusColor]" border="10">buttons/ButtonA0.png</texturesliderbar> <!--ff000000-->
+    <texturesliderbarfocus colordiffuse="$VAR[IconFocusColor]" border="10">buttons/ButtonA0.png</texturesliderbarfocus> <!--FFFFBBBB-->
 	<textureslidernib border="15">-</textureslidernib>
     <pulseonselect>false</pulseonselect>
     <showonepage>false</showonepage>

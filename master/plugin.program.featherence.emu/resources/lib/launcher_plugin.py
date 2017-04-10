@@ -417,6 +417,7 @@ class Main:
                                             info.wShowWindow = 0
                                         else:
                                             info = None
+                                        print 'startproc' + space2 + str(startproc) + '[CR]'
                                         startproc = subprocess_hack.Popen(r'%s %s' % (application, arguments), cwd=apppath, startupinfo=info)
                                         startproc.wait()
                                 elif (sys.platform.startswith('linux')):

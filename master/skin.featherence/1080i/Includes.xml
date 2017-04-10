@@ -36,7 +36,7 @@
         <posy>-150</posy>
         <width>1460</width>
         <height>800</height>
-        <texture border="20" colordiffuse="$VAR[MenuColor]">buttons/types/bd.png</texture>
+        <texture colordiffuse="$VAR[MenuColor]">buttons/types/bd0.png</texture>
         <visible>![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]</visible>
       </control>
 	  <control type="image">
@@ -135,7 +135,7 @@
 		<include>Border_Common</include>
 		<height>190</height>
         <width>440</width>
-        <texture border="20" colordiffuse="$VAR[TopInformationColor]">buttons/types/bd.png</texture>
+        <texture colordiffuse="$VAR[TopInformationColor]">buttons/types/bd0.png</texture>
       </control>
 	  <control type="grouplist">
 	    <height>205</height>

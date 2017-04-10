@@ -7,7 +7,7 @@
 	  <include>Slide3f</include>
 	  <include>TopInformationSize01</include>
 	  <!--<visible>[[Window.IsVisible(DialogFullScreenInfo.xml) | Window.IsVisible(DialogFavourites.xml) |  Window.IsVisible(VideoOSD.xml) | Window.IsVisible(DialogSubtitles.xml)] + VideoPlayer.IsFullscreen + Player.Paused] | Window.IsVisible(DialogVideoInfo.xml) | [Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | String.IsEqual(Window(home).Property(Button.ID),97)]] | [$EXP[View57] | $EXP[View58]] + [Container.Content(Seasons) | Container.Content(Episodes) | [Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(Custom1175.xml)] | !Skin.HasSetting(ShowTopVideoInformation)] | $EXP[View51] | $EXP[View50] | $EXP[View54] | $EXP[View59] | Control.IsVisible(11) | Control.IsVisible(50) | Control.IsVisible(56) | Control.IsVisible(450) | Window.IsVisible(MusicVisualisation.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(Custom1170.xml) + [String.IsEqual(Window(home).Property(TEMP),TopVideoInformationColor) | String.IsEqual(Window(home).Property(TEMP),TopVideoInformationFontColor)]</visible>-->
-	  <visible>!Window.IsVisible(Home.xml) + $EXP[Contents] | Window.IsVisible(Home.xml) + $EXP[ContentsWidget]</visible>
+	  <visible>!Window.IsVisible(Home.xml) + $EXP[Contents] | Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(Home.xml) + $EXP[ContentsWidget]</visible>
 	  <visible>![ [ $EXP[View57] |  $EXP[View58] ] + [Control.HasFocus(7017) | Control.HasFocus(60) | Container.OnNext | Container.OnPrevious | Container.Scrolling] ]</visible>
 	  <visible>![Window.IsVisible(MyPVRGuide.xml) + !System.IdleTime(3) + !Window.IsVisible(DialogPVRInfo.xml]</visible>
 	  <animation condition="[System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)] + !Skin.HasSetting(Performance)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
@@ -225,7 +225,7 @@
 				<param name="posy" value="-243" />
 				<param name="width" value="700" />
 				<param name="condition" value="!Window.IsVisible(DialogVideoInfo.xml) + [$EXP[View50s] | $EXP[View59]]" />
-				<param name="diffuse" value="buttons/types/bd.png" />
+				<param name="diffuse" value="buttons/types/bd0.png" />
 			</include>
 			
 			<include content="TopVideoInformation9" description="תמונת פרק / SideVideoInformation51">
@@ -234,7 +234,7 @@
 				<param name="posy" value="-250" />
 				<param name="width" value="480" />
 				<param name="condition" value="!Window.IsVisible(DialogVideoInfo.xml) + [ $EXP[View51s] ]" />
-				<param name="diffuse" value="buttons/types/bd.png" />
+				<param name="diffuse" value="buttons/types/bd0.png" />
 				<param name="border" value="-40" />
 			</include>
 			
@@ -276,8 +276,10 @@
 				</control>
 			  </control>
 			  <control type="group" description="עונה ופרק/יוצר הרחבה">
+				<include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos16</include>
 				<posx>1240</posx>
 				<posy>109</posy>
+				
 				<!--<animation description="Slide59_he" condition="$EXP[View59] + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="15,0">Conditional</animation>
 				<animation description="SlideOthers_he" condition="!$EXP[View59] + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0">Conditional</animation>-->
 				<!--<visible>!String.IsEmpty(Control.GetLabel(1480))</visible>-->
@@ -577,7 +579,7 @@
 		</control>
 		<control type="image" id="11050" description="פוסטר -עם מסגרת">
 		  <aspectratio>stretch</aspectratio>
-		  <texture diffuse="buttons/types/bd.png" border="0" background="false">$VAR[TopVideoInformation4]</texture>
+		  <texture diffuse="buttons/types/bd0.png" border="0" background="false">$VAR[TopVideoInformation4]</texture>
 		  <visible>!String.Contains(ListItem.Label,$LOCALIZE[33078]) + !String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Label,Next Page) + String.IsEmpty(Control.GetLabel(11156)) + Window.IsVisible(MyVideoNav.xml)</visible>
 		</control>
 		<control type="label" id="1104" description="***פוסטר***">

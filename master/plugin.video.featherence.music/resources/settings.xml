@@ -19,6 +19,7 @@
 		<setting type="lsep" label=""/>
 		<setting id="Custom_10001" type="bool" default="true" label="30050" visible="false"/>
 		<setting id="Custom_10002" type="bool" default="true" label="30052" visible="true"/>
+		<setting id="Custom_10003" type="bool" default="false" label="30053" visible="true"/>
 		<setting id="Addon_ShowLog" type="bool" default="true" label="$LOCALIZE[33073]" visible="true"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32419]" visible="eq(-1,true)"/>
 		<setting id="Addon_ShowLog2" type="slider" default="1" label="$ADDON[script.featherence.service 32420]" range="0,1,7" visible="eq(-2,true)" option="int" subsetting="true"/>

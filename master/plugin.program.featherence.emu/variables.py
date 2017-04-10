@@ -82,7 +82,7 @@ if systemplatformwindows:
 	else: emulator_path = os.path.join(addons_path, 'emulator.retroarch_win64', '')
 	
 	emulator_file = os.path.join(emulator_path, 'retroarch.exe')
-	emulator_file_ = emulator_file + space + '-D'
+	emulator_file_ = '"' + emulator_file  + '"' + space + '-D'
 	retroarchcfg_file = os.path.join(emulator_path, 'retroarch.cfg')
 	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
 	
@@ -90,7 +90,7 @@ elif systemplatformlinuxraspberrypi or OS == 'oe2':
 	emulator_path = os.path.join(addons_path, 'emulator.tools.retroarch', '')
 	
 	emulator_file = os.path.join(emulator_path, 'bin', 'retroarch.sh')	
-	emulator_file_ = emulator_file
+	emulator_file_ = '"' + emulator_file + '"'
 	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
 	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
 
@@ -99,7 +99,7 @@ elif systemplatformlinux and not systemplatformandroid:
 	else: emulator_path = os.path.join(addons_path, 'emulator.retroarch', '')
 	
 	emulator_file = os.path.join(emulator_path, 'bin', 'retroarch.sh')	
-	emulator_file_ = emulator_file
+	emulator_file_ = '"' + emulator_file + '"'
 	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
 	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
 
@@ -107,7 +107,7 @@ elif systemplatformandroid:
 	emulator_path = '/data/data/com.retroarch/'
 	
 	emulator_file = '/system/bin/am'
-	emulator_file_ = emulator_file
+	emulator_file_ = '"' + emulator_file + '"'
 	retroarchcfg_file = "/data/data/com.retroarch/retroarch.cfg"
 	retroarchcoreoptionscfg_file = "/data/data/com.retroarch/.retroarch-core-options.cfg"
 	
@@ -115,7 +115,7 @@ else:
 	emulator_path = os.path.join(addons_path, 'emulator.retroarch', '')
 	
 	emulator_file = os.path.join(emulator_path, 'bin', 'retroarch.sh')	
-	emulator_file_ = emulator_file
+	emulator_file_ = '"' + emulator_file + '"'
 	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
 	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
 	

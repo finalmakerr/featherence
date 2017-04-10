@@ -147,7 +147,7 @@
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="535" />
 		<param name="posx" value="0" />
-		<param name="posy" value="0" />
+		<param name="posy" value="-20" />
 		<param name="width" value="485" />
 		<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
 		
@@ -714,13 +714,13 @@
 		<control type="button" id="10" description="אישור">
 		  <width>200</width>
 		  <label>186</label>
-		  <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>
+		  <texturenofocus colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd0.png</texturenofocus>
 		  <include>ButtonC1</include>
 		</control>
 		<control type="button" id="11" description="הגדרות">
 		  <width>200</width>
 		  <label>5</label>
-		  <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>
+		  <texturenofocus colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd0.png</texturenofocus>
 		  <include>ButtonC1</include>
 		</control>
 	</control>
@@ -845,7 +845,7 @@
 		<textoffsetx>20</textoffsetx>
 		<textcolor>white</textcolor>
 		<!--<width>1040</width>-->
-		<texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>
+		<texturenofocus colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd0.png</texturenofocus>
 		<include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 		<include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		<height>70</height>
@@ -871,8 +871,8 @@
         <ondown>4</ondown>
         <onleft>noop</onleft>
         <onright>noop</onright>
-		<texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>
-		<texturefocus border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texturefocus>
+		<texturenofocus colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd0.png</texturenofocus>
+		<texturefocus colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd0.png</texturefocus>
       </control>
 	  <control type="grouplist" id="9001">
         <height>775</height>
@@ -893,8 +893,8 @@
           <label>186</label>
 		  <posx>210</posx>
 		  <posy>5</posy>
-		  <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>
-		  <texturefocus border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texturefocus>
+		  <texturenofocus colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd0.png</texturenofocus>
+		  <texturefocus colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd0.png</texturefocus>
         </control>
         <control type="button" id="29" description="Cancel">
           <width>200</width>
@@ -903,8 +903,8 @@
           <aligny>center</aligny>
           <label>222</label>
 		  <posy>5</posy>
-		  <texturenofocus border="40" colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd.png</texturenofocus>
-		  <texturefocus border="40" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texturefocus>
+		  <texturenofocus colordiffuse="$VAR[ButtonUnFocusColor]">buttons/types/bd0.png</texturenofocus>
+		  <texturefocus colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd0.png</texturefocus>
         </control>
       </control>	
   </include>

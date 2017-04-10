@@ -9,7 +9,7 @@ WIP - WORK IN PROGRESS
 ------------------------
 Featherence ROFL v0.0.9 (02-Mar-17)
 ------------------------
-- Added Remi Giliard, Lama Faché channel.
+- Added Remi Giliard, Lama Faché channels.
 - Added thumbnails, fanart and description for Foreign Standup category.
 - Minor links update.
 

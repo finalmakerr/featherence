@@ -329,7 +329,7 @@
 				  <posy>5</posy>
 				  <height>62</height>
 				  <width>62</width>
-				  <texture diffuse="buttons/types/bd.png" background="false">$INFO[ListItem.Property(Addon.Path)]/icon.png</texture>
+				  <texture diffuse="buttons/types/bd0.png" background="false">$INFO[ListItem.Property(Addon.Path)]/icon.png</texture>
 				  <visible>!String.IsEmpty(ListItem.Property(Addon.Path))</visible>
 				</control>
 				<control type="label">
@@ -383,7 +383,7 @@
 				  <posy>5</posy>
 				  <height>62</height>
 				  <width>62</width>
-				  <texture diffuse="buttons/types/bd.png" background="false">$INFO[ListItem.Property(Addon.Path)]/icon.png</texture>
+				  <texture diffuse="buttons/types/bd0.png" background="false">$INFO[ListItem.Property(Addon.Path)]/icon.png</texture>
 				  <visible>!String.IsEmpty(ListItem.Property(Addon.Path))</visible>
 				</control>
 				<control type="label">
@@ -451,7 +451,7 @@
 				  <posy>5</posy>
 				  <height>62</height>
 				  <width>62</width>
-				  <texture diffuse="buttons/types/bd.png" background="false">$INFO[ListItem.Property(Addon.Path)]/icon.png</texture>
+				  <texture diffuse="buttons/types/bd0.png" background="false">$INFO[ListItem.Property(Addon.Path)]/icon.png</texture>
 				  <visible>!String.IsEmpty(ListItem.Property(Addon.Path))</visible>
 				</control>
 				<control type="label">
@@ -505,7 +505,7 @@
 				  <posy>5</posy>
 				  <height>62</height>
 				  <width>62</width>
-				  <texture diffuse="buttons/types/bd.png" background="false">$INFO[ListItem.Property(Addon.Path)]/icon.png</texture>
+				  <texture diffuse="buttons/types/bd0.png" background="false">$INFO[ListItem.Property(Addon.Path)]/icon.png</texture>
 				  <visible>!String.IsEmpty(ListItem.Property(Addon.Path))</visible>
 				</control>
 				<control type="label">

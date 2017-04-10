@@ -62,6 +62,14 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 		list.append('&youtube_pl=PL9aMpOzf_PLV_Jex7GIRlGNGC7Y6nPpm8')
 		addDir(addonString(30052).encode('utf-8'),list,17,thumb,'Thanks and credits to Tomer Dror.','1',0,fanart)
 	
+	if Custom_10003 == "true":
+		'''Talia Kahalani's Playlists'''
+		thumb = os.path.join(addonPath,'icon.png')
+		fanart = os.path.join(featherenceservice_path,'fanart.jpg')
+		list = []
+		list.append('&youtube_pl=PLxMyxN4aYD2nPziqfqff8d_cu4xUnv0Ku')
+		addDir(addonString(30053).encode('utf-8'),list,17,thumb,'Thanks and credits to Talia Kahalani.','1',0,fanart)
+	
 	if xbmc.getCondVisibility('Skin.HasSetting(Admin)'):
 		list = []
 		list.append('&youtube_ch=ShlomoArtziOfficial')
@@ -229,12 +237,12 @@ def CATEGORIES10002(name, iconimage, desc, fanart):
 def CATEGORIES101(name, iconimage, desc, fanart):
 	'''Israeli Music'''
 	addDir(addonString(30001).encode('utf-8'),'',10101,featherenceserviceicons_path + "music.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30001).encode('utf-8')),'1',0, getAddonFanart(10101, default="")) #Israeli Music
-	addDir(addonString(30002).encode('utf-8'),'',10102,featherenceserviceicons_path + "karaoke.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30002).encode('utf-8')),'1',0, getAddonFanart(10102, default="http://www.totalsingersupport.com/wp-content/uploads/2012/11/Sexy_Singing_Amit_Friedman.jpg")) #Israeli Karaoke
+	addDir(addonString(30002).encode('utf-8'),'',10102,featherenceserviceicons_path + "microphone.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30002).encode('utf-8')),'1',0, getAddonFanart(10102, default="http://www.totalsingersupport.com/wp-content/uploads/2012/11/Sexy_Singing_Amit_Friedman.jpg")) #Israeli Karaoke
 	addDir(addonString(30004).encode('utf-8'),'',10104,featherenceserviceicons_path + "guitar.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30004).encode('utf-8')),'1',0, getAddonFanart(10104, default="https://upload.wikimedia.org/wikipedia/commons/7/72/Flickr_-_Government_Press_Office_(GPO)_-_Shlomo_Artzi_performing_at_a_rock_festival_in_the_Red_Sea.jpg")) #Israeli Liveshows
-	addDir(addonString(30005).encode('utf-8'),'',10105,featherenceserviceicons_path + "microphone.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30005).encode('utf-8')),'1',0, getAddonFanart(10105, default="http://telavivparty.com/wp-content/uploads/2016/08/Light-House-Club-Tel-Aviv.jpg")) #Israeli Djs
+	addDir(addonString(30005).encode('utf-8'),'',10105,featherenceserviceicons_path + "radio.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30005).encode('utf-8')),'1',0, getAddonFanart(10105, default="http://telavivparty.com/wp-content/uploads/2016/08/Light-House-Club-Tel-Aviv.jpg")) #Israeli Djs
 	
 	addDir(addonString(30006).encode('utf-8'),'',10106,featherenceserviceicons_path + "music.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30006).encode('utf-8')),'1',0, getAddonFanart(10106, default="http://haflla.com/wp-content/uploads/2014/10/pic4.jpg")) #Mizrahit Music
-	addDir(addonString(30007).encode('utf-8'),'',10107,featherenceserviceicons_path + "karaoke.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30007).encode('utf-8')),'1',0, getAddonFanart(10107, default="http://www.totalsingersupport.com/wp-content/uploads/2012/11/Sexy_Singing_Amit_Friedman.jpg")) #Mizrahit Karaoke
+	addDir(addonString(30007).encode('utf-8'),'',10107,featherenceserviceicons_path + "microphone.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30007).encode('utf-8')),'1',0, getAddonFanart(10107, default="http://www.totalsingersupport.com/wp-content/uploads/2012/11/Sexy_Singing_Amit_Friedman.jpg")) #Mizrahit Karaoke
 	addDir(addonString(30009).encode('utf-8'),'',10109,featherenceserviceicons_path + "guitar.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30009).encode('utf-8')),'1',0, getAddonFanart(10108, default="https://i.ytimg.com/vi/089IRvkNAGg/maxresdefault.jpg")) #Mizrahit Liveshows
 	
 
@@ -243,8 +251,7 @@ def CATEGORIES111(name, iconimage, desc, fanart):
 	addDir(addonString(30011).encode('utf-8'),'',11101,featherenceserviceicons_path + "music.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30011).encode('utf-8')),'1',0, getAddonFanart(11101)) #Foreign Music
 	addDir(addonString(30012).encode('utf-8'),'',11102,featherenceserviceicons_path + "karaoke.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30012).encode('utf-8')),'1',0, getAddonFanart(11102, default="http://www.totalsingersupport.com/wp-content/uploads/2012/11/Sexy_Singing_Amit_Friedman.jpg")) #Foreign Karaoke
 	addDir(addonString(30014).encode('utf-8'),'',11104,featherenceserviceicons_path + "guitar.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30014).encode('utf-8')),'1',0, getAddonFanart(11104, default="https://cbsampradio.files.wordpress.com/2012/12/neyogrammynoms1.jpg")) #Foreign Liveshows
-	addDir(addonString(30015).encode('utf-8'),'',11105,featherenceserviceicons_path + "microphone.png",addonString(30015).encode('utf-8'),'1',0, getAddonFanart(11105, default="https://tiestoclublife.files.wordpress.com/2014/05/dj_tiesto_club_life_2014_img372.jpg")) #Foreign Djs
-	addDir(addonString(30022).encode('utf-8'),'',11109,featherenceserviceicons_path + "colorpalette.png",addonString(30022).encode('utf-8'),'1',0, getAddonFanart(11109, default="https://s-media-cache-ak0.pinimg.com/originals/3f/be/f1/3fbef1cae14dea30c181f1f008839a1d.jpg")) #Fashion Shows
+	addDir(addonString(30015).encode('utf-8'),'',11105,featherenceserviceicons_path + "radio.png",addonString(30015).encode('utf-8'),'1',0, getAddonFanart(11105, default="https://tiestoclublife.files.wordpress.com/2014/05/dj_tiesto_club_life_2014_img372.jpg")) #Foreign Djs
 
 def CATEGORIES10101(name, iconimage, desc, fanart):
 	'''------------------------------

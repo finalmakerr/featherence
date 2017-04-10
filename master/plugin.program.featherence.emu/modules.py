@@ -641,8 +641,10 @@ def getfileID(file):
 	elif file == "Sega Genesis_1P_Comix Zone.zip":
 		fileID_L.append('mqqeq63yqrj7tjy') #featherence.guser14
 		fileID_L.append('onxt95lnodlcz1j') #featherence.guser1
+		fileID_L.append('pplovpj9phinatn') #user15
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
 		
 	elif file == "Sega Master System.zip":
 		fileID_L.append('c5ingtyhgkwjmx7') #user1
@@ -923,14 +925,14 @@ def getfileID(file):
 		fileName_L.append('Source 2')
 	elif file == "Dreamcast_2P_World Series Baseball 2K1.zip":
 		fileID_L.append('vl84nsaxl8ub3x4') #featherence.guser9
-		#fileID_L.append('') #featherence.guser14
+		fileID_L.append('m30uet1g0z9zo80') #featherence.guser14
 		fileName_L.append('Source 1')
-		#fileName_L.append('Source 2')
+		fileName_L.append('Source 2')
 	elif file == "Dreamcast_2P_TrickStyle.zip":
 		fileID_L.append('75ig1in12omssr9') #featherence.guser9
-		#fileID_L.append('') #featherence.guser14
+		fileID_L.append('xpwmd5q8ky31nr6') #featherence.guser14
 		fileName_L.append('Source 1')
-		#fileName_L.append('Source 2')
+		fileName_L.append('Source 2')
 	elif file == "Dreamcast_1P_Time Stalkers.zip": fileID = "ajshhv8ju30i4hh" #featherence.guser9
 	elif file == "Dreamcast_4P_Sonic Shuffle.zip": fileID = "vf2466gbp4oyn0v" #featherence.guser9 #500MB FREE
 	
@@ -1018,7 +1020,6 @@ def installemuconsole(force=False):
 		printpoint = printpoint + '6'
 		notification("OS and hardware are not supported!","www.featherence.com","",2000)
 	
-	#installaddon('script.module.featherence.emu', update=True)
 	installaddonP('script.module.featherence.emu', update=True)
 	if not os.path.exists(emulator_path) and not '6' in printpoint: notification('Featherence Emu Console addon is missing!',"Manual download from addon settings","",4000)
 
@@ -1030,7 +1031,6 @@ def copyconfig(force=False):
 		installemuconsole()
 	else:
 		for file in os.listdir(path):
-			#print file
 			x = os.path.join(config_path, file)
 			if not os.path.exists(x) or force == True:
 				copyfiles(os.path.join(path,file), x)
@@ -1094,6 +1094,19 @@ def keys_help(filename):
 	
 	text = "filename" + space2 + str(filename)
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+
+def copykeymaps():
+	returned = dialogyesno('Would you like to continue?','This action will overwrite your current related files!')
+	if returned == 'ok':
+		keymaps_path = os.path.join(userdata_path, 'keymaps', '')
+		copyfiles(emukeymaps_path, keymaps_path)
+		xbmc.executebuiltin('Action(reloadkeymaps)')
+		
+		filename_ = ""
+		for file in os.listdir(emukeymaps_path):
+			filename = os.path.basename(file)
+			filename_ = filename_ + ', ' + filename
+		dialogok('Keymaps copied!', filename_, '', '')
 	
 def setconfig(force=False):
 	name = 'setconfig' ; printpoint = "" ; extra = ""

@@ -247,7 +247,7 @@
 		<height>40</height>
 		<posx>0</posx>
 		<posy>0</posy>
-		<texture diffuse="buttons/types/bd.png" colordiffuse="$VAR[TopInformationColor]" border="0">buttons/ButtonA0.png</texture>
+		<texture colordiffuse="$VAR[TopInformationColor]" border="0">buttons/types/bd0.png</texture>
 		<width>100%</width>
 	  </control>
 	  <control type="label" id="11300" description="">					

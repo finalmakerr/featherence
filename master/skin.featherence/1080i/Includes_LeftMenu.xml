@@ -31,9 +31,9 @@
       <include content="MenuBackground">
 			<param name="id" value="" />
 			<param name="color" value="$VAR[MenuColor]" />
-			<param name="height" value="574" />
+			<param name="height" value="590" />
 			<param name="posx" value="0" />
-			<param name="posy" value="-20" />
+			<param name="posy" value="-35" />
 			<param name="width" value="483" />
 			
 			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
@@ -1477,7 +1477,7 @@
 		<control type="group" description="סמן חץ למעלה">
 			<include>Fade4</include>
 			<posx>0</posx>
-			<posy>-24</posy>
+			<posy>-30</posy>
 			<visible>!Control.IsVisible(90000) | Control.IsVisible(90000) + [ControlGroup(9000).HasFocus() + Container(9000).HasPrevious | ControlGroup(9001).HasFocus() + Container(9001).HasPrevious | ControlGroup(9002).HasFocus() + Container(9002).HasPrevious]</visible>
 			<control type="image" description="לא נבחר">
 			  <width>40</width>
@@ -1497,7 +1497,7 @@
 			<include>Fade4</include>
 			<visible>!Control.IsVisible(90000) | Control.IsVisible(90000) + [ControlGroup(9000).HasFocus() + Container(9000).HasNext | ControlGroup(9001).HasFocus() + Container(9001).HasNext | ControlGroup(9002).HasFocus() + Container(9002).HasNext]</visible>
 			<posx>0</posx>
-			<posy>514</posy>
+			<posy>520</posy>
 			<control type="image" description="לא נבחר">
 			  <width>40</width>
 			  <height>40</height>

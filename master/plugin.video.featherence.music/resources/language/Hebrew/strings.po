@@ -98,6 +98,10 @@ msgctxt "#30052"
 msgid "Tomer Dror's Playlists"
 msgstr "תומר דרור פלייליסטים"
 
+msgctxt "#30053"
+msgid "Talia Kahalani's Playlists"
+msgstr "טליה קהלני פלייליסטים"
+
 msgctxt "#30101"
 msgid "Eviatar Banai"
 msgstr "אביתר בנאי"

@@ -11,7 +11,7 @@ WIP - WORK IN PROGRESS
 - Added option to choose highlight font color.
 
 ------------------------
-Featherence v0.7.2 (xx-Feb-17)
+Featherence v0.7.2 (10-Apr-17)
 ------------------------
 - Added 3 different weather fanart packages (Skin Settings).
 - Added 8 different weather icons packages (Skin Settings).
@@ -39,7 +39,16 @@ Overall Design:
 - Main Color now effect thumbnails border and fill them up when needed.
 - Major overall design updates (A lots of design prespective as been updated!).
 - Major update of Dialogs windows.
+- Major update of EPG timeline window.
 - Major update trailers OSD buttons.
+- Minor update of SettingsProfile window.
+- Minor update of Weather window.
+
+Performance:
+- Major reduce of Textures.xbt size.
+- Apply Power of Two Rule for all skin images.
+- Major reduce of unnecessary animations and layers of images.
+- Auto Trigger feature for ignoring extensive images processing during some instances.
 
 Top Information Bar:
 - Added MPAA, Ratings and Votes to DialogVideoInfo window.
@@ -65,7 +74,6 @@ Widget:
 - Minor update of widget script.
 - Selected widget is more noticeable.
 - Widgets are now available during video playback (Size reduced!)
-
 
 ------------------------
 Featherence v0.7.1 (02-Feb-17)

@@ -60,7 +60,7 @@
       </include>
       <control type="label" id="101" description="כותרת ראשי">
         <posx>40</posx>
-		<posy>-50</posy>
+		<posy>-20</posy>
         <width>900</width>
         <align>left</align>
         <label>-</label>
@@ -71,7 +71,7 @@
       </control>
       <control type="label" id="12" description="סהכ">
         <posx>40</posx>
-        <posy>-80</posy>
+        <posy>-50</posy>
         <width>480</width>
         <align>left</align>
         <font>size30B</font>
@@ -181,7 +181,7 @@
       </include>
       <control type="label" id="102" description="כותרת ראשי">
         <posx>40r</posx>
-		<posy>-50</posy>
+		<posy>-20</posy>
         <width>900</width>
         <align>right</align>
         <label>-</label>
@@ -192,7 +192,7 @@
       </control>
       <control type="label" id="13" description="סהכ">
         <posx>40r</posx>
-        <posy>-80</posy>
+        <posy>-50</posy>
         <width>480</width>
         <align>right</align>
         <font>size30B</font>

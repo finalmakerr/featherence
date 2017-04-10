@@ -250,7 +250,7 @@
     <align>right</align>
 	<font>size24</font>
     <texturenofocus>-</texturenofocus>
-	<texture border="20" colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd.png</texture>
+	<texture colordiffuse="$VAR[ButtonFocusColor]">buttons/types/bd0.png</texture>
   </include>
   <include name="ButtonL4" description="()">
 	<width>480</width>
@@ -300,7 +300,7 @@
   </include>
    
   <include name="Border_Common">
-    <bordertexture colordiffuse="ff000000" border="40">buttons/types/bd.png</bordertexture>
+    <bordertexture colordiffuse="ff000000" border="40">buttons/types/bd0.png</bordertexture>
 	<bordersize>1</bordersize>
   </include>
   
@@ -315,7 +315,7 @@
   </include>
   
   <include name="Border_Common4">
-    <bordertexture colordiffuse="ff000000" border="40">buttons/types/bd.png</bordertexture>
+    <bordertexture colordiffuse="ff000000" border="40">buttons/types/bd0.png</bordertexture>
 	<bordersize>1</bordersize>
   </include>
   
@@ -1327,16 +1327,16 @@
 	  <animation condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="400,0" delay="0" time="700" reversible="true">Conditional</animation>
 	  <animation condition="!String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-400,0" delay="0" time="700" reversible="true">Conditional</animation>
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos48</include>
-      <height>525</height>
+      <height>529</height>
 	  <posx>1880</posx>
 	  <posy>340</posy>	  
 	  <width>480</width>
       <include content="MenuBackground">
 			<param name="id" value="" />
 			<param name="color" value="$VAR[MenuColor]" />
-			<param name="height" value="570" />
+			<param name="height" value="590" />
 			<param name="posx" value="0" />
-			<param name="posy" value="-20" />
+			<param name="posy" value="-35" />
 			<param name="width" value="483" />
 			
 			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
@@ -1484,13 +1484,55 @@
      <posx>10</posx>
    </include>
    <include name="Control_Pos14" description="">
-     
+     <posx>310</posx>
    </include>
    <include name="Control_Pos15" description="">
 	 <posx>220</posx>
    </include>
+   <include name="Control_Pos16" description="">
+     <posx>1250</posx>
+   </include>
+   <include name="Control_Pos17" description="">
+     <posx></posx>
+   </include>
+   <include name="Control_Pos18" description="">
+     <posx></posx>
+   </include>
+   <include name="Control_Pos19" description="">
+     <posx></posx>
+   </include>
+   <include name="Control_Pos20" description="">
+     <posx></posx>
+   </include>
+   <include name="Control_Pos21" description="">
+     <posx></posx>
+   </include>
+   <include name="Control_Pos22" description="">
+     <posx></posx>
+   </include>
+   <include name="Control_Pos23" description="">
+     <posx></posx>
+   </include>
+   <include name="Control_Pos24" description="">
+     <posx></posx>
+   </include>
+   <include name="Control_Pos25" description="">
+     <posx></posx>
+   </include>
+   <include name="Control_Pos26" description="">
+     <posx></posx>
+   </include>
+   <include name="Control_Pos27" description="">
+     <posx></posx>
+   </include>
+   <include name="Control_Pos28" description="">
+     <posx></posx>
+   </include>
+   <include name="Control_Pos29" description="">
+     <posx></posx>
+   </include>
    <include name="Control_Pos30" description="">
-	 
+	 <posx>1570</posx>
    </include>
    <include name="Control_Pos31" description="">
 	 <posx>-210</posx>
