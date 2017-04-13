@@ -93,7 +93,7 @@
 	  <animation description="בית-ו'ידגט" condition="Window.IsVisible(Home.xml) + $EXP[ContentsWidget] | Window.IsVisible(CustomHomeCustomizer.xml)" effect="fade" start="0" end="100" delay="600" time="220" reversible="true">Conditional</animation>
 	  <include condition="String.IsEqual(System.Language,Hebrew)">AlignRtl</include>
 	  <animation condition="System.IdleTime(60) + !Window.IsVisible(CustomHomeCustomizer.xml)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
-	  <visible>[Window.IsVisible(Home.xml) + !Skin.HasSetting(widget) + [Control.IsVisible(311) | Control.IsVisible(312) | Control.HasFocus(315) | Control.HasFocus(316)]] | !Window.IsVisible(Home.xml)</visible>
+	  <visible>[Window.IsVisible(Home.xml) + [Control.IsVisible(311) | Control.IsVisible(312) | Control.HasFocus(315) | Control.HasFocus(316)]] | !Window.IsVisible(Home.xml)</visible>
 	  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !Window.IsVisible(CustomHomeCustomizer2.xml) | !Window.IsVisible(CustomHomeCustomizer.xml)</visible>
 	  <visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() | ![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]</visible>
 	  <visible>!Window.IsVisible(Custom1173.xml)</visible>
