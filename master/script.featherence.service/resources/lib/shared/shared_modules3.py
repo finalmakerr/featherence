@@ -2043,6 +2043,7 @@ def pluginend(admin):
 					if 'Hebrew' in General_LanguageL:
 						installaddonP('repository.xbmc-israel', update=True)
 						#installaddonP('repository.kodil', update=True)
+						installaddonP('repository.multidownrepo', update=True)
 						installaddonP('plugin.video.jksp', update=True)
 				
 					if 'English' in General_LanguageL:
