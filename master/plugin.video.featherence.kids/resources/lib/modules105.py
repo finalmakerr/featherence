@@ -15,6 +15,7 @@ def CATEGORIES105B(General_LanguageL, background, background2): #סרטים לי
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.jksp/?action=listing&category=%D7%A1%D7%A8%D7%98%D7%99%D7%9D%20%D7%90%D7%A0%D7%99%D7%9E%D7%A6%D7%94%20%D7%9E%D7%93%D7%95%D7%91%D7%91%D7%99%D7%9D')
+		list.append('&custom8=plugin://plugin.video.multidown/?action=showposts&extra&page&thumbnail&title=%D7%9E%D7%93%D7%95%D7%91%D7%91&url=http%3A%2F%2Fwww.multidown.me%2Fcategory%2F%25d7%25a1%25d7%25a8%25d7%2598%25d7%2599%25d7%259d-%25d7%259c%25d7%2594%25d7%2595%25d7%25a8%25d7%2593%25d7%2594-%25d7%2595%25d7%259c%25d7%25a6%25d7%25a4%25d7%2599%25d7%2599%25d7%2594-%25d7%2599%25d7%25a9%25d7%2599%25d7%25a8%25d7%2594%2Fdubbed%2F')
 		check_movix_me = urlcheck('http://www.movix.me/series', ping=False)
 		if check_movix_me == 'ok':
 			addDir('-' + localize(137) + space + 'Movix','&activatewindow=plugin://plugin.video.movixws/?description&iconimage=https%3a%2f%2fencrypted-tbn1.gstatic.com%2fimages%3fq%3dtbn%3aANd9GcQlAUVuxDFwhHYzmwfhcUEBgQXkkWi5XnM4ZyKxGecol952w-Rp&mode=6&name=Search%20-%20%d7%97%d7%99%d7%a4%d7%95%d7%a9&url=%20',8,featherenceserviceicons_path + 'se.png','http://www.movix.me/','1',0,getAddonFanart(background, custom="", default=background2))

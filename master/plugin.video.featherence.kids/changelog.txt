@@ -7,6 +7,11 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence Kids v0.2.18 (xx-xx-17)
+------------------------
+- Added Multidown addon for Hebrew users.
+
+------------------------
 Featherence Kids v0.2.17 (16-Mar-17)
 ------------------------
 - Added jksp movies addon (Hebrew).
