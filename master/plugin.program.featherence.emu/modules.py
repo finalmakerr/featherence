@@ -884,6 +884,10 @@ def getfileID(file):
 	elif file == "Dreamcast_1P_Chicken Run.zip": fileID = "tfptc1k2gyek83z" #featherence.guser1
 	elif file == "Dreamcast_2P_Virtua Fighter 3tb.zip": fileID = "nsvr0pe2hbsqffw" #featherence.guser1
 	
+	elif file == "Dreamcast_1P_PenPen TriIcelon.zip": fileID = "ge9tpiw7fdw0ofw" #featherence.guser2
+	elif file == "Dreamcast_1P_Snow Surfers.zip": fileID = "9hf0jcrrxar34ss" #featherence.guser2
+	elif file == "Dreamcast_4P_Exhibition of Speed.zip": fileID = "bsdur801mn9u7l5" #featherence.guser2
+	
 	elif file == "Dreamcast_1P_KAO the Kangaroo.zip": fileID = "2z1mlgks35y8upf" #featherence.guser3
 	elif file == "Dreamcast_1P_Maken X.zip": fileID = "vx81423u25uvb65" #featherence.guser3
 	elif file == "Dreamcast_4P_Spawn - In the Demon's Hand.zip": fileID = "tlwo34jfiu4xy61" #featherence.guser3
@@ -894,6 +898,9 @@ def getfileID(file):
 	elif file == "Dreamcast_4P_Quake III Arena.zip": fileID = "gitt8vkzijg5ud2" #featherence.guser4
 
 	elif file == "Dreamcast_2P_Tony Hawk's Pro Skater.zip": fileID = "vioqjp3wvhidwjr" #featherence.guser5
+	elif file == "Dreamcast_1P_Rippin' Riders Snowboarding.zip": fileID = "0j9gv4l8ew4wtcr" #featherence.guser5
+	elif file == "Dreamcast_1P_Seventh Cross Evolution.zip": fileID = "dl6hetwzduvvpj5" #featherence.guser5
+	elif file == "Dreamcast_1P_Magforce Racing.zip": fileID = "0nw24vpxmtbpquc" #featherence.guser5
 	
 	elif file == "Dreamcast_4P_ChuChu Rocket!.zip": fileID = "heeb8qqagnphxzl" #featherence.guser6
 	elif file == "Dreamcast_4P_Virtua Tennis.zip": fileID = "wu843fsy9eql7wt" #featherence.guser6
@@ -950,6 +957,11 @@ def getfileID(file):
 	elif file == "Dreamcast_1P_Rez.zip": fileID = "vraq5mgqsd0sqx2" #featherence.guser12
 	elif file == "Dreamcast_2P_Test Drive 6.zip": fileID = "ja583d5z77lbvn9" #featherence.guser12
 	elif file == "Dreamcast_4P_Propeller Arena.zip": fileID = "41h77xde159helg" #featherence.guser12
+	
+	elif file == "Dreamcast_1P_Seventh Cross Evolution.zip": fileID = "lddzct1g75fiqk4" #featherence.guser13
+	elif file == "Dreamcast_2P_POD - Speedzone.zip": fileID = "ezut8yb2i66nwxd" #featherence.guser13
+	elif file == "Dreamcast_2P_Suzuki ALSTARE Extreme Racing.zip": fileID = "f63m0770wh2to90" #featherence.guser13
+	elif file == "Dreamcast_2P_Cannon Spike.zip": fileID = "frhxnwxjok071ok" #featherence.guser13
 	
 	elif file == "Dreamcast_2P_Buggy Heat": fileID = "fh0j7lpyyh3ep89" #featherence.guser14
 	

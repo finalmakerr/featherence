@@ -1711,9 +1711,9 @@ def installaddonP(addon, update=True):
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
 	
-	elif addon == 'plugin.video.jksp':
+	elif addon == 'repository.Jk$p':
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			DownloadFile("https://www.dropbox.com/s/ois8fzb6ylsdfjt/plugin.video.jksp.zip?dl=1", addon + ".zip", packages_path, addons_path, silent=True)
+			DownloadFile("https://github.com/Jksp/jksp.repo/raw/master/repository/zips/repository.Jk%24p/repository.Jk%24p-1.0.2.zip", addon + ".zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass

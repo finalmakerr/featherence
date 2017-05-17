@@ -12413,7 +12413,7 @@
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Super Shot Soccer.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Sport</genre>
+					<genre>Sports</genre>
 					<release>2002</release>
 					<publisher>Tecmo</publisher>
 					<gameplot>A soccer game developed and published by Tecmo.</gameplot>
@@ -15676,6 +15676,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0065</id>
+					<name>Magforce Racing</name>
+					<filename>rom_pathDreamcast/_1P/Magforce Racing/Magforce Racing.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Magforce Racing.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Magforce Racing.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>1999</release>
+					<publisher>Crave Entertainment</publisher>
+					<gameplot>Killer Loop is a futuristic racing game released in 1999. It was developed by VCC Entertainment and published by Crave Entertainment.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2b1d81ea61668385a37ed78fde0060</id>
 					<name>Max Steel - Covert Missions</name>
 					<filename>rom_pathDreamcast/_1P/Max Steel - Covert Missions/Max Steel - Covert Missions.gdi</filename>
@@ -15732,6 +15747,21 @@
 					<release>1999</release>
 					<publisher>Namco</publisher>
 					<gameplot>Mr Driller is a real-time puzzle game that relies solely on quick-thinking and a bit of planning. Gameplay is a combination of Tetris and Boulder Dash: You have to drill down through multi-colored blocks to reach the bottom while avoiding the consequences of reckless drilling (blocks may fall on you and crush you).</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0032</id>
+					<name>PenPen TriIcelon</name>
+					<filename>rom_pathDreamcast/_1P/PenPen TriIcelon/PenPen TriIcelon.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/PenPen TriIcelon.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/PenPen TriIcelon.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>1999</release>
+					<publisher>Infogrames</publisher>
+					<gameplot>Funny animal characters compete in a madcap triathlon on ice. Select one of seven whimsical characters including a penguin, shark, walrus, hippo, octopus, bird or dog. Race against each other or against the clock in three unique events including belly-surfing, ice-walking, and swimming. While the graphics catch your eye, it's the addictively fun gameplay which really makes Pen Pen TriIceLon shine.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -15796,6 +15826,36 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0066</id>
+					<name>Rippin' Riders Snowboarding</name>
+					<filename>rom_pathDreamcast/_1P/Rippin' Riders Snowboarding/Rippin' Riders Snowboarding.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Rippin' Riders Snowboarding.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Rippin' Riders Snowboarding.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sport / Action</genre>
+					<release>1999</release>
+					<publisher>Sega</publisher>
+					<gameplot>Slash and burn your way through wild and wintery terrain - jump huge boulders, shred steep ravines, and rack up the points with your insane tricks.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0067</id>
+					<name>Seventh Cross Evolution</name>
+					<filename>rom_pathDreamcast/_1P/Seventh Cross Evolution/Seventh Cross Evolution.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Seventh Cross Evolution.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Seventh Cross Evolution.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Simulation</genre>
+					<release>2000</release>
+					<publisher>UFO Interactive</publisher>
+					<gameplot>For what purpose does the seed exist? As a witness to this world, you will provide the answer...Seventh Cross Evolution is a simulation game like no other; you are the creator of your own evolutionary destiny.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2b1d81ea61668385a37ed78fde0008</id>
 					<name>Shenmue</name>
 					<filename>rom_pathDreamcast/_1P/Shenmue/Shenmue_cd1.cdi</filename>
@@ -15810,6 +15870,20 @@
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
+				<rom>
+					<id>7d2b1d81ea61668385a37ed78fde0068</id>
+					<name>Snow Surfers</name>
+					<filename>rom_pathDreamcast/_1P/Snow Surfers/Snow Surfers.gdi</filename>
+					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Snow Surfers.jpg</thumb>
+					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Snow Surfers.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports</genre>
+					<release>1999</release>
+					<publisher>Sega</publisher>
+					<gameplot>This game, called Rippin' Riders in the US, Snow Surfers in Europe, and Cool Boarders Burrrn (クールボーダーズ･バーン) in Japan, is a 1999 snowboarding game by UEP Systems for the Sega Dreamcast.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
 				<rom>
 					<id>7d2b1d81ea61668385a37ed78fde0063</id>
 					<name>Spider-Man</name>
@@ -15983,6 +16057,21 @@
 					<release>1999</release>
 					<publisher>ASC Games</publisher>
 					<gameplot>Ladies and Gentlemen, get ready for the biggest and wildest race of your life... Get behind the wheel of a 4x4 off road vehicle and prepare to battle your way through various challenging courses from all over the world. Save your 'Artificial Intelligence' skill level and challenge your opponents' best times, or simply go head to head on the toughest maddest, off road racer to hit any console ever.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0025</id>
+					<name>Cannon Spike</name>
+					<filename>rom_pathDreamcast/_2P/Cannon Spike/Cannon Spike.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Cannon Spike.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Cannon Spike.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Shooter</genre>
+					<release>2000</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Far into the future, a rogue group of terrorist robots wreak havoc on the world and it's citizens. The Anti Robot Squad Special Forces has been created to overthrow these radical robots. With an arsenal of weapons and high-powered Motor Boots, you must lead a courageous legion of seven members through multiple levels of robotic terror, huge bosses and other evils. Prepare yourself for the ultimate in speed, strategy and firepower.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -16197,6 +16286,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0027</id>
+					<name>POD - Speedzone</name>
+					<filename>rom_pathDreamcast/_2P/POD - Speedzone/POD - Speedzone.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/POD - Speedzone.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/POD - Speedzone.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>2000</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>Slip onto SegaNet and blast into POD SpeedZone, the fastest arcade racer for your Sega Dreamcast online. Pilot 8 futuristic cars across 6 surreal, mercilessly interactive tracks. Hone your maneuvers and master the weapons offline - then prove your racing chops in the POD online circuit. Get fast - before the SpeedZone leaves you in the dust.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2b2d51ea61668385a37ed78fde0077</id>
 					<name>Power Stone</name>
 					<filename>rom_pathDreamcast/_2P/Power Stone/Power Stone.gdi</filename>
@@ -16328,6 +16432,21 @@
 					<release>2000</release>
 					<publisher>Capcom</publisher>
 					<gameplot>3rd update to Street Fighter 3, Capcom's classic 2D fighter. The new version includes new music and artwork, more super arts for each character, a grading system, a manual throw system, path selection and new characters including (YES!) Chun-Li. The Dreamcast port also offers a training record option were you can record a certain move or combo and have it play against you over and over to see how you can parry it, plus a "system direction" option which allows you to modify practically every aspect of the game (air-blocking, combo limits, etc.) to customize it to your liking.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2b2d51ea61668385a37ed78fde0028</id>
+					<name>Suzuki ALSTARE Extreme Racing</name>
+					<filename>rom_pathDreamcast/_2P/Suzuki ALSTARE Extreme Racing/Suzuki ALSTARE Extreme Racing.gdi</filename>
+					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Suzuki ALSTARE Extreme Racing.jpg</thumb>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Suzuki ALSTARE Extreme Racing.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing / Sports</genre>
+					<release>1999</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>Join Team Suzuki Alstare for the fastest race of your life! Race wicked-fast bikes in the great outdoors. Customize the official Team bikes Suzuki Alstare SuperBike GSX-R750 and Suzuki Alstare SportBike GSX-R600. Fast-paced motorcycle racing at 60 Frames Per Second. Cutting Edge 3D graphics. Race on 12 Diverse tracks and then try them in Reverse Mode. 4 game modes including 2 player split-screen.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -16549,6 +16668,21 @@
 					<release>2000</release>
 					<publisher>SEGA</publisher>
 					<gameplot>ChuChu Rocket is an action puzzler, designed predominantly as a multi-player game. You have indirect control over mice, and must guide them to the safety of a rocket, and away from a cat. You do this by placing arrows on the ground, which they will follow. The multi-player game is a frantic all-against-all duel, in which each player's mice will only follow instructions of their own colour. You can play this mode on your own against CPU opponents, or take on a series of predefined puzzles</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d3b2d81ea61668385a37ed78fde0033</id>
+					<name>Exhibition of Speed</name>
+					<filename>rom_pathDreamcast/_4P/Exhibition of Speed/Exhibition of Speed.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Exhibition of Speed.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Exhibition of Speed.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>2001</release>
+					<publisher>Titus</publisher>
+					<gameplot>Looking for high-speed authentic arcade action? Strap yourself firmly in for this electrifying new racing game. Extensive game features include over twenty world-class racing vehicles including hidden cars, fifteen challenging tracks with varying weather conditions in five different universes, spectacular car jumps with additional boosters on the track, stunning visual SFX on the landscapes and multiplayer gaming for up to four players.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
