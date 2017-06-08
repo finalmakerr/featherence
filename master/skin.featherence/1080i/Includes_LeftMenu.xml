@@ -1209,7 +1209,7 @@
 		 <visible>!String.Contains(ListItem.Path,plugin://)</visible>
 	   </control>
 	   <control type="image" id="190" description="רגיל">
-		 <texture>misc/dvdcases/dvdcases.png</texture>
+		 <texture>misc/dvdcases/dvdcasesd.png</texture>
 		 <visible description="listitem">!String.Contains(ListItem.Rating,9.) + !VideoPlayer.IsFullscreen | VideoPlayer.IsFullscreen</visible>
 		 <visible description="videoplayer">VideoPlayer.IsFullscreen + !String.Contains(VideoPlayer.Rating,9.) | !VideoPlayer.IsFullscreen</visible>
 		 <visible description="red">!String.Contains(ListItem.path,videodb://movies/sets/)</visible>

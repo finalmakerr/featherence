@@ -772,7 +772,7 @@
 	  <animation description="View57/58" condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [$EXP[Contents] | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-77" delay="3000" time="700" reversible="false">Conditional</animation>
 	  <animation description="View59" condition="$EXP[View59]" effect="zoom" center="0,1240" start="100,109" end="100,109" time="0" reversible="false">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="zoom" center="auto" start="100,100" end="100,85">Conditional</animation>
-	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="slide" start="0,0" end="1070,-130">Conditional</animation>
+	  <animation condition="Window.IsVisible(DialogTextViewer.xml)" effect="slide" start="0,0" end="1062,-130">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogGameControllers.xml)" effect="zoom" center="auto" start="100,100" end="100,55">Conditional</animation>
 	  <animation condition="Window.IsVisible(DialogGameControllers.xml)" effect="slide" start="0,0" end="1490,280">Conditional</animation>
 	  <animation condition="Window.IsVisible(Custom1170.xml)" effect="zoom" center="auto" start="100,100" end="100,40">Conditional</animation>

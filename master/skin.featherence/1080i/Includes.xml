@@ -132,6 +132,7 @@
 	  <!--<animation effect="fade" start="100" end="0" time="4000">VisibleChange</animation>-->
 	  <!--<animation condition="System.IdleTime(5)" effect="fade" start="100" end="0" time="4000">Conditional</animation>-->
       <control type="image" description="מסגרת">
+		<include>Fade_TopInformationOverlay</include>
 		<include>Border_Common</include>
 		<height>190</height>
         <width>440</width>

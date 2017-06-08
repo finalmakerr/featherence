@@ -16,7 +16,6 @@
 	  <posy>345</posy>	  
 	  <width>480</width>	  	  
       <include content="MenuBackground">
-			<param name="border" value="40" />
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="0" />
 			<param name="posx" value="0" />
