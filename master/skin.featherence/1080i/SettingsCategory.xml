@@ -4,7 +4,7 @@
   <controls>
 	<include>Backgrounds3</include>
 	<control type="group" description="">
-	  <posy>73</posy>
+	  <posy>75</posy>
 	  <include>Slide1</include>
 	  <include>Slide2</include>
 		<control type="label" id="2" description="Heading">
@@ -19,6 +19,7 @@
 		<include>ArrowsLeftRight</include>
 		<include condition="!Skin.HasSetting(Performance)">ArrowsUpDown</include>
 		<control type="grouplist" id="3" description="TopMenu">
+		  <include>TopInformationSize0</include>
 		  <posx>350</posx>
 		  <posy>70</posy>
 		  <width>1226</width>
@@ -37,6 +38,7 @@
 		  <include>ButtonC1</include>
 		</control>
 		<control type="grouplist" id="5" description="Stage">
+		  <include>TopInformationSize0</include>
 		  <posx>350</posx>
 		  <posy>170</posy>
 		  <width>1220</width>

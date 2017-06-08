@@ -11,6 +11,11 @@ WIP - WORK IN PROGRESS
 - Added option to choose highlight font color.
 
 ------------------------
+Featherence v0.7.3 (xx-xx-17)
+------------------------
+- Added option to control TopMenuDialogSlider transperancy (Subtitle Offset).
+
+------------------------
 Featherence v0.7.2 (10-Apr-17)
 ------------------------
 - Added 3 different weather fanart packages (Skin Settings).
