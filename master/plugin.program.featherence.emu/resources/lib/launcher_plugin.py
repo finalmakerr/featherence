@@ -316,10 +316,20 @@ class Main:
                     application = rom["altapp"]
                 else:
                     application = launcher["application"]
+                    application = application.replace('" -D','"',1)
+                    application = application.replace('"','')
                 apppath = os.path.dirname(application)
                 rompath = os.path.dirname(rom["filename"])
                 romname = os.path.splitext(romfile)[0]
-    
+
+                text = "launcher" + space2 + str(launcher) + newline + \
+                'launcherID' + space2 + str(launcherID) + newline + \
+                'application' + space2 + str(application) + newline + \
+                'apppath' + space2 + str(apppath) + newline + \
+                'rompath' + space2 + str(rompath) + newline + \
+                'romName' + space2 + str(romName)
+                printlog(title='_run_rom', printpoint="", text=text, level=0, option="")
+				
                 if ( os.path.exists(apppath) ) :
                     if ( os.path.exists(rom["filename"]) ) :
                         files = []
@@ -417,7 +427,6 @@ class Main:
                                             info.wShowWindow = 0
                                         else:
                                             info = None
-                                        print 'startproc' + space2 + str(startproc) + '[CR]'
                                         startproc = subprocess_hack.Popen(r'%s %s' % (application, arguments), cwd=apppath, startupinfo=info)
                                         startproc.wait()
                                 elif (sys.platform.startswith('linux')):

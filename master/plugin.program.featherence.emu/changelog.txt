@@ -8,11 +8,12 @@ WIP - WORK IN PROGRESS
 - Added Dreamcast disc swap support.
 
 ------------------------
-Featherence Emu v0.1.4 (xx-Mar-17)
+Featherence Emu v0.1.4 (09-Jun-17)
 ------------------------
+- Added Xbox, PS4, Wii, Ouya, Alienware Dual Compatible. controllers.
 - Major update of Copy Keymaps (In-Game keybiding).
-+ Major bug fix (script failed).
-+ Added Xbox, PS4, Wii, Ouya, Alienware Dual Compatible. controllers.
+- Major bug fix (script failed).
+- Major bug fix when launching games using latest Kodi version.
 - Major bug fix with Copy Keymaps (In-Game keysbinding).
 
 ------------------------
