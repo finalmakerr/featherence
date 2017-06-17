@@ -198,11 +198,11 @@
 	  <animation description="No full Fanart-SideVideoInformation" condition="!Skin.HasSetting(View50_Plus2) + $EXP[View50s] + !Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogAddonSettings.xml)" effect="zoom" center="0,1100" start="100,112" end="100,112" time="0" reversible="false">Conditional</animation>
 	  <animation description="Home-Panel" condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml) | Window.IsVisible(CustomHomeCustomizer2.xml)] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + [!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()]" effect="slide" start="0,0" end="0,-7" time="0" reversible="false">Conditional</animation>
 	  <visible>!Window.IsVisible(DialogFavourites.xml)</visible>
-	  <visible>Player.HasVideo</visible>
+	  <visible>Player.HasVideo + !VideoPlayer.IsFullscreen</visible>
 	  <control type="videowindow" id="7011" description="חלון וידאו">
 		  <animation description="slide-Vertical_he" condition="[$EXP[View50] | Control.IsVisible(11)] + String.IsEqual(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-245,70" time="0">Conditional</animation>
 		  <animation description="slide-Vertical_en" condition="[$EXP[View50] | Control.IsVisible(11)] + !String.IsEqual(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="235,70" time="0">Conditional</animation>
-		  <animation description="50_zoom" condition="[$EXP[View50] | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="86,85.5" time="0">Conditional</animation>
+		  <animation description="50_zoom" condition="[$EXP[View50] | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="75,75" end="75,75" time="0">Conditional</animation>
 		  <animation description="others_zoom" condition="[$EXP[View54] | $EXP[View57] | $EXP[View58] | Window.IsVisible(MyPVRGuide.xml)]" effect="zoom" center="960,50" start="100,100" end="86,48" time="0">Conditional</animation>
 		  
 		  
@@ -275,6 +275,7 @@
 		<width>1920</width>
 		<visible>Control.IsVisible(7011)</visible>
 		<visible>![$EXP[View51] | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml)]</visible>
+		<visible>!Window.IsVisible(DialogAddonSettings.xml)</visible>
 	  </control>
 	  
 	  <control type="button" id="7017" description="51">

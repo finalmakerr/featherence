@@ -2,7 +2,8 @@
 <window>
   <defaultcontrol>700</defaultcontrol>
   <controls>
-
+	<control type="group">
+	  <include>TopInformationSize0</include>
 	<include content="MenuBackground">
 		<param name="color" value="$VAR[MenuColor]" />
 		<param name="height" value="980" />
@@ -26,7 +27,7 @@
       </control>
 	  <control type="button" id="700" description="כפתור סגור חלון">
 		<left>940</left>
-		<top>-18</top>
+		<top>0</top>
 		<width>96</width>
 		<height>48</height>
 		<label>-</label>
@@ -65,6 +66,7 @@
 		<!--<visible>!String.IsEqual(System.Language,Hebrew)</visible>-->
 	  </control>
 	  <include>ScrollBar</include>  
+    </control>
     </control>
   </controls>
 </window>

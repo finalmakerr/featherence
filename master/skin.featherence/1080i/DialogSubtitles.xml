@@ -298,6 +298,7 @@
 			</control>
         </control>
         <control type="group" id="251" description="כפתור צד">
+		  <include>TopInformationSize0</include>
 		  <animation condition="ControlGroup(251).HasFocus" effect="slide" start="0,0" end="330,0" delay="0" time="700" reversible="true">Conditional</animation>
 		  <height>500</height>	  
 		  <posx>-360</posx>

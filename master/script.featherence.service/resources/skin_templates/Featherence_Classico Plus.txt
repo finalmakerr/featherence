@@ -1,4 +1,10 @@
 ------------------------
+Featherence Classico Plus (17-Jun-17)
+------------------------
+- Added SubCenter and Subtitles support.
+- Choosing YES for extra contents will no longer overwrite video plugins settings such as Exodus, Salts etc..
+
+------------------------
 Featherence Classico Plus (22-Apr-17)
 ------------------------
 - Added multidown addon.

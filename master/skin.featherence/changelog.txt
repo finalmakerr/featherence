@@ -7,13 +7,14 @@ WIP - WORK IN PROGRESS
 ------------------------
 - ??Added option to hide Top Video Information on fullscreen video while skiping back/next.
 - Added option to disable the auto close of the video/audio OSD.
-- Increase maximum customised buttons by 10.
 - Added option to choose highlight font color.
 
 ------------------------
-Featherence v0.7.3 (xx-xx-17)
+Featherence v0.7.3 (17-Jun-17)
 ------------------------
 - Added option to control TopMenuDialogSlider transperancy (Subtitle Offset).
+- Increase maximum customised buttons by 10.
+- Minor bugs fix.
 
 ------------------------
 Featherence v0.7.2 (10-Apr-17)

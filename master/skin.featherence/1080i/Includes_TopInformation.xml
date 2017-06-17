@@ -19,29 +19,22 @@
 	<orientation>horizontal</orientation>
 	<posy>5</posy>
 	<width min="100" max="300">auto</width>
-	<visible>!Skin.String(TopInformationIcons, 0) | Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]</visible>
-	<visible>!Skin.String(TopInformationIcons,0) + System.IdleTime(5)</visible>
+	<visible>!Skin.String(TopInformationIcons, 0) + System.IdleTime(5) | Player.HasMedia</visible>
 	<control type="image">
 	  <aspectratio aligny="center">keep</aspectratio>
-	  <include>Slide1</include>
 	  <aligny>center</aligny>
-	  <posx>420</posx>
-	  <posy>3</posy>
-	  <texture colordiffuse="$VAR[TopInformationColor]">$VAR[Badges]</texture>
+	  <texture>$VAR[Badges]</texture>
 	  <height>$PARAM[iconheight]</height>
 	  <width>$PARAM[height]</width>
-	  <visible>Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]</visible>
+	  <visible>Player.HasMedia + [System.IdleTime(5) | VideoPlayer.IsFullscreen]</visible>
 	</control>
 	<control type="image">
 	  <aspectratio aligny="center">keep</aspectratio>
-	  <include>Slide1</include>
 	  <aligny>center</aligny>
-	  <posx>420</posx>
-	  <posy>3</posy>
-	  <texture colordiffuse="$VAR[TopInformationColor]">$VAR[Badges2]</texture>
+	  <texture>$VAR[Badges2]</texture>
 	  <height>$PARAM[iconheight]</height>
 	  <width>$PARAM[height]</width>
-	  <visible>Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]</visible>
+	  <visible>Player.HasMedia + [System.IdleTime(5) | VideoPlayer.IsFullscreen]</visible>
 	</control>
 	<control type="label" id="821" description="Weather">
 	  <width min="75" max="100">auto</width>
@@ -54,7 +47,7 @@
 	  <label>$INFO[Weather.Temperature]</label>
 	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),1)</visible>
 	  <visible>!IsEmpty(Weather.Temperature) + !String.IsEqual(Weather.Temperature,°C)</visible>
-	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
+	  <visible>!Player.HasMedia</visible>
 	</control>
 	<control type="image" id="820" description="Weather">
 	  <width>30</width>
@@ -63,7 +56,7 @@
 	  <aspectratio aligny="center">stretch</aspectratio>
 	  <texture colordiffuse="$VAR[TopInformationFontColor]">$VAR[WeatherIcons]</texture>
 	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),1)</visible>
-	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
+	  <visible>!Player.HasMedia</visible>
 	</control>
 	<control type="image" id="824" description="אין אינטרנט">
 	  <height>$PARAM[iconheight]</height>
@@ -71,7 +64,7 @@
 	  <aspectratio aligny="center">keep</aspectratio>
 	  <texture colordiffuse="$VAR[TopInformationFontColor]">$VAR[824label2]</texture>
 	  <visible>!Skin.String(TopInformationIcons) | String.Contains(Skin.String(TopInformationIcons),2)</visible>
-	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
+	  <visible>!Player.HasMedia</visible>
 	</control>
 	<control type="image" id="825" description="ביצועים גבוהים">
 	  <height>$PARAM[iconheight]</height>
@@ -80,7 +73,7 @@
 	  <texture colordiffuse="$VAR[TopInformationFontColor]">special://home/addons/script.featherence.service/resources/icons/q3r.png</texture>
 	  <visible>Skin.HasSetting(Performance)</visible>
 	  <visible>!Skin.String(TopInformationIcons)</visible>
-	  <visible>![Player.HasMedia + [VideoPlayer.IsFullscreen | Window.IsVisible(DialogSubtitles.xml)]]</visible>
+	  <visible>!Player.HasMedia</visible>
 	</control>
    </control>
     </definition>
@@ -323,6 +316,7 @@
 					
 					<visible>Window.IsActive(LoginScreen.xml) | !Skin.HasSetting(ShowClock)</visible> <!--Window.IsActive(home) | -->
 					<visible>Skin.String(TopInformationIcons,0) | !Skin.String(TopInformationIcons,0) + !System.IdleTime(5)</visible>
+					<visible>!VideoPlayer.IsFullscreen</visible>
 					<width>560</width>
 			    </control>
 			  </control>			 
