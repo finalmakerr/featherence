@@ -255,6 +255,7 @@
 		<animation description="50_slide_he" condition="[$EXP[View50] | Control.IsVisible(11)] + String.IsEqual(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="-240,320" time="0">Conditional</animation>
 		<animation description="50_slide_en" condition="[$EXP[View50] | Control.IsVisible(11)] + !String.IsEqual(System.Language,Hebrew) + !Window.IsVisible(MyPVRGuide.xml)" effect="slide" start="0,0" end="230,320" time="0">Conditional</animation>
 		<animation description="50_zoom" condition="[$EXP[View50] | Control.IsVisible(11)] + !Window.IsVisible(MyPVRGuide.xml)" effect="zoom" center="auto" start="100,100" end="75,179" time="0">Conditional</animation>
+		<animation description="54_slide" condition="$EXP[View54]" effect="slide" start="0,0" end="0,70" time="0">Conditional</animation>
 		<animation description="SideVideoInformation59_en" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" start="0,0" end="565,20" time="0">Conditional</animation>
 	    <animation description="SideVideoInformation59_he" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" start="0,0" end="-565,20" time="0">Conditional</animation>
 		<animation description="59-slide_zoom" condition="$EXP[View59]" effect="zoom" center="auto" end="41,86" time="0">Conditional</animation>

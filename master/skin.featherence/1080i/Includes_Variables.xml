@@ -11,10 +11,10 @@
     <value condition="![!Skin.HasSetting(ShowDVDCases) | Skin.HasSetting(ShowDVDCases2)]">0</value>
 	<value condition="![!String.Contains(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>
 	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
-	<value condition="$EXP[View50] + !Skin.HasSetting(ShowDVDCases2)">14</value>
-	<value condition="![ $EXP[View57] + !Skin.HasSetting(ShowDVDCases) ] | !$EXP[View57]">5</value>
-	<value condition="![ $EXP[View59] + !Skin.HasSetting(ShowDVDCases) ] | !$EXP[View59]">15</value>
-	<value condition="![ [ [ $EXP[View54] | $EXP[View58] ] + Skin.HasSetting(ShowDVDCases2) ] | !$EXP[View54] + !$EXP[View58] ]">6</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31011])] + !Skin.HasSetting(ShowDVDCases2)">14</value>
+	<value condition="![ [String.IsEqual(Container.Viewmode,$LOCALIZE[31013])] + !Skin.HasSetting(ShowDVDCases) ] | ![String.IsEqual(Container.Viewmode,$LOCALIZE[31013])]">5</value>
+	<value condition="![ [String.IsEqual(Container.Viewmode,$LOCALIZE[31016])] + !Skin.HasSetting(ShowDVDCases) ] | ![String.IsEqual(Container.Viewmode,$LOCALIZE[31016])]">15</value>
+	<value condition="![ [ [ [String.IsEqual(Container.Viewmode,$LOCALIZE[31015])] | [String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] ] + Skin.HasSetting(ShowDVDCases2) ] | ![String.IsEqual(Container.Viewmode,$LOCALIZE[31015])] + ![String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] ]">6</value>
 	<value condition="![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + !Window.IsVisible(Home.xml)">7</value>
 	<value condition="![ [!String.IsEmpty(ListItem.Rating) | !String.IsEmpty(Container.ListItemNoWrap(-3).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(3).Rating)] | Window.IsVisible(Home.xml) ] + !String.Contains(Container.FolderPath,videodb://)">8</value>
 	<value condition="Window.IsVisible(Home.xml) + [String.IsEqual(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget317))]">12</value>
@@ -311,7 +311,7 @@
   <variable name="VideoInformation1" description="עונה/פרק/וידאו/סינון">
 	<value condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Season)">$LOCALIZE[20373] $INFO[ListItem.Season]</value>
 	<value condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
-	<value condition="!String.IsEmpty(ListItem.Episode) + Container.Content(Episodes) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.TVShowTitle) + $EXP[View56]">$LOCALIZE[20359] $INFO[ListItem.Episode]</value>
+	<value condition="!String.IsEmpty(ListItem.Episode) + Container.Content(Episodes) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.TVShowTitle) + [String.IsEqual(Container.Viewmode,$LOCALIZE[31012])]">$LOCALIZE[20359] $INFO[ListItem.Episode]</value>
 	<value condition="String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)">$VAR[GenreLabel]</value>
 	<value description="Popcorn Time" condition="String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_movies&endpoint=folders&mediaType=movies) | String.IsEqual(Container.FolderPath,plugin://plugin.video.kodipopcorntime/?action=genres_TV-shows&endpoint=folders&mediaType=movies)">$VAR[GenreLabel]</value>
 	<value description="Exodus" condition="String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=movieGenres) | String.IsEqual(Container.FolderPath,plugin://plugin.video.exodus/?action=tvGenres)">$VAR[GenreLabel]</value>
