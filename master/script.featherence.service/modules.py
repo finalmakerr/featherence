@@ -529,10 +529,10 @@ def mode10(admin, name, printpoint):
 		dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy)')
 		dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress)')
 		setPlayerInfo()
-		videostarttweak(admin)
+		#videostarttweak(admin)
 		ii = 0
 		if playerhasvideo and xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)'): xbmc.executebuiltin('Action(Info)')
-		while (playerhasvideo or playerhasaudio or dialogbusyW or dialogprogressW or ii < 2) and not xbmc.abortRequested:
+		while (playerhasvideo or playerhasaudio or dialogbusyW or dialogprogressW) and ii < 3 and not xbmc.abortRequested:
 			xbmc.sleep(5000)
 			videoplayertweak(admin, playerhasvideo)
 			playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')

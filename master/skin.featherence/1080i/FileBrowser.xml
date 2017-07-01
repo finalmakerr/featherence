@@ -68,7 +68,7 @@
 		  <font>size28</font>
 		  <label>$LOCALIZE[571] $INFO[Window(home).Property(TEMP)] $INFO[Window(home).Property(Button.Name)]</label>
 		  <onclick>RunScript(script.featherence.service,,?mode=235)</onclick>
-		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(Window(home).Property(Button.ID)) + !IntegerGreaterThan(Window(home).Property(Button.ID),99) + !Window.IsVisible(Custom1139.xml)</visible>
+		  <visible>Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(Window(home).Property(Button.ID)) + !Integer.IsGreater(Window(home).Property(Button.ID),99) + !Window.IsVisible(Custom1139.xml)</visible>
 		  <visible>String.IsEqual(Window(home).Property(TEMP),icon) | String.IsEqual(Window(home).Property(TEMP),background)</visible>
 		  <visible>Window.IsVisible(FileBrowser.xml)</visible>
 		</control>

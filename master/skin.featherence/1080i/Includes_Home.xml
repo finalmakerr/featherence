@@ -105,7 +105,10 @@
 	  <width>1880</width>
 	  <orientation>horizontal</orientation>
 	  <onup condition="Player.HasMedia">ActivateWindow(12901)</onup>
-	  <ondown condition="Control.IsVisible(700) + ![Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(Window(1117).Property(HideInactiveButtons))]">700</ondown>
+	  <ondown condition="Control.IsVisible(311) + Integer.IsGreater(Container(311).NumItems,1)">311</ondown> <!--![Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(Window(1117).Property(HideInactiveButtons))]-->
+	  <ondown condition="Control.IsVisible(312) + Integer.IsGreater(Container(312).NumItems,1)">312</ondown>
+	  <ondown condition="Control.IsVisible(315) + Integer.IsGreater(Container(315).NumItems,1)">315</ondown>
+	  <ondown condition="Control.IsVisible(316) + Integer.IsGreater(Container(316).NumItems,1)">316</ondown>
 	  <ondown condition="Control.IsVisible(7011)">7017</ondown>
 	  <ondown condition="Control.IsVisible(9000)">9000</ondown>
 	  <ondown condition="$EXP[View51]">50</ondown>
@@ -173,7 +176,10 @@
 	  <onleft condition="Skin.HasSetting(SPMiniButtons)">9020</onleft>
 	  <onright condition="Control.IsVisible(9020)">9020</onright>
 	  <onright>9000</onright>
-	  <onup condition="Control.IsVisible(700) + ![Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(Window(1117).Property(HideInactiveButtons))]">700</onup>
+	  <onup condition="Control.IsVisible(311) + Integer.IsGreater(Container(311).NumItems,1)">311</onup> <!--![Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(Window(1117).Property(HideInactiveButtons))]-->
+	  <onup condition="Control.IsVisible(312) + Integer.IsGreater(Container(312).NumItems,1)">312</onup>
+	  <onup condition="Control.IsVisible(315) + Integer.IsGreater(Container(315).NumItems,1)">315</onup>
+	  <onup condition="Control.IsVisible(316) + Integer.IsGreater(Container(316).NumItems,1)">316</onup>
 	  <onup condition="Control.IsVisible(7011)">7017</onup>
 	  <onup condition="Control.IsVisible(9009)">9009</onup>
 	  <!--<onup>520</onup>-->
@@ -210,7 +216,10 @@
 	  <onleft condition="Skin.HasSetting(SPMiniButtons)">9020</onleft>
 	  <onright condition="Control.IsVisible(9020)">9020</onright>
 	  <onright>9000</onright>
-	  <onup condition="Control.IsVisible(700) + ![Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(Window(1117).Property(HideInactiveButtons))]">700</onup>
+	  <onup condition="Control.IsVisible(311) + Integer.IsGreater(Container(311).NumItems,1)">311</onup> <!--![Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(Window(1117).Property(HideInactiveButtons))]-->
+	  <onup condition="Control.IsVisible(312) + Integer.IsGreater(Container(312).NumItems,1)">312</onup>
+	  <onup condition="Control.IsVisible(315) + Integer.IsGreater(Container(315).NumItems,1)">315</onup>
+	  <onup condition="Control.IsVisible(316) + Integer.IsGreater(Container(316).NumItems,1)">316</onup>
 	  <onup condition="Control.IsVisible(7011)">7017</onup>
 	  <onup condition="Control.IsVisible(9009)">9009</onup>
 	  <!--<onup>520</onup>-->
@@ -319,7 +328,10 @@
 	  <ondown condition="Window.IsVisible(Home.xml) + !$EXP[ContentsWidget]">Action(PageUp)</ondown>
 	  <ondown condition="Window.IsVisible(Home.xml) + !$EXP[ContentsWidget]">Action(PageUp)</ondown>
 	  <ondown condition="Window.IsVisible(Home.xml) + !$EXP[ContentsWidget]">SetFocus(9000,0)</ondown>
-	  <ondown condition="Control.IsVisible(700)">700</ondown>
+	  <ondown condition="Control.IsVisible(311) + Integer.IsGreater(Container(311).NumItems,1)">311</ondown> <!--![Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(Window(1117).Property(HideInactiveButtons))]-->
+	  <ondown condition="Control.IsVisible(312) + Integer.IsGreater(Container(312).NumItems,1)">312</ondown>
+	  <ondown condition="Control.IsVisible(315) + Integer.IsGreater(Container(315).NumItems,1)">315</ondown>
+	  <ondown condition="Control.IsVisible(316) + Integer.IsGreater(Container(316).NumItems,1)">316</ondown>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
 	  <orientation>horizontal</orientation>
 	  <include condition="Skin.String(MenuDesign,4)" description="מאונך">MenuDesign_HomeSP3</include>

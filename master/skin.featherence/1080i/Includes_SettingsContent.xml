@@ -1933,7 +1933,7 @@
 		<label2>$INFO[Window(home).Property(Remote_Name)]</label2>
 		<thumb>special://home/addons/script.featherence.service/resources/icons/remoteb.png</thumb>
 		<property name="rinfo">$LOCALIZE[32146]</property>
-		<onclick>RunScript(script.featherence.service,,?mode=27)</onclick>
+		<onclick>RunScript(script.featherence.remote,,?mode=27)</onclick>
 		<visible>Container(100).Hasfocus(2)</visible>
 		<visible>System.Platform.Linux + !System.Platform.Android + !System.Platform.Linux.RaspberryPi + System.HasAddon(service.openelec.settings) + System.HasAddon(script.featherence.service)</visible>
 	  </item>
