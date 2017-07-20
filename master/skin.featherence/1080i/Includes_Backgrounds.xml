@@ -115,8 +115,6 @@
 	
 	<!--<animation description="SideVideoInformation59_slide_en" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" end="0,0" time="0">Conditional</animation>
 	<animation description="SideVideoInformation59_slide_he" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="0,0" time="0">Conditional</animation>-->
-	
-	<animation description="FullFanartTopVideoInformation_57/58" condition="[ $EXP[View57] | $EXP[View58] ] + !Player.HasVideo + Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(ShowTopVideoInformation) + $EXP[Contents] + !Container.OnNext + !Container.OnPrevious + !Control.HasFocus(60)" effect="zoom" start="100,100" end="100,51" delay="3000" time="0" reversible="false">Conditional</animation>
 	<animation description="FullFanartTopVideoInformation_54" condition="$EXP[View54] + Skin.HasSetting(FullFanart54)" effect="zoom" center="0,0" start="100,50.5" end="100,50.5" delay="0" time="0" reversible="false">Conditional</animation>	 
 	<animation description="No full Fanart-SideVideoInformation" condition="!Skin.HasSetting(View50_Plus2) + $EXP[View50s] + !Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogAddonSettings.xml)" effect="zoom" center="0,1100" start="100,112" end="100,112" time="0" reversible="false">Conditional</animation>
 	<animation description="No full Fanart-Vertical_he" condition="!Skin.HasSetting(View50_Plus2) + $EXP[View50] + !Window.IsVisible(DialogAddonSettings.xml) + String.IsEqual(System.Language,Hebrew)" effect="zoom" center="0,1080" start="100,100" end="75,86.15" time="0">Conditional</animation>
@@ -171,7 +169,7 @@
   </include>
   
   <include name="MainBackground3_ani">
-     <visible>!Control.IsVisible(7013) | $EXP[View59] + !Skin.HasSetting(FullFanartTopVideoInformation)</visible>
+     <visible>!Control.IsVisible(7013) | $EXP[View59]</visible>
 	 <include>TopInformationSize12</include>
      <include condition="!Skin.HasSetting(Performance)">Fade_MainBackgroundOverlay</include>
 	 <animation description="View50_Plus2_he" condition="!Skin.HasSetting(View50_Plus2) + $EXP[View50t] + !Window.IsVisible(DialogAddonSettings.xml) + String.IsEqual(System.Language,Hebrew)" effect="zoom" center="0,990" start="100,100" end="74.4,84" time="0" reversible="false">Conditional</animation>

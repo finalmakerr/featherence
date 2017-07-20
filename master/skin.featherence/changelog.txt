@@ -10,6 +10,16 @@ WIP - WORK IN PROGRESS
 - Added option to choose highlight font color.
 
 ------------------------
+Featherence v0.7.4 (20-Jul-17)
+------------------------
+- Added auto hide for ExtendedProgressBar during fullscreen video (for example Quasar progress bar).
+- Minor bugs fix.
++ DVDcases not showing up.
+- Minor performance improved.
+- Minor update of Super Widget feature.
+- Wall and Poster view are now always static (no shrink option).
+
+------------------------
 Featherence v0.7.3 (17-Jun-17)
 ------------------------
 - Added option to control TopMenuDialogSlider transperancy (Subtitle Offset).

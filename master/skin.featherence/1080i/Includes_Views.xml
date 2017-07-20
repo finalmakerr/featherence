@@ -786,8 +786,6 @@
 		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View57_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,12" reversible="true">Conditional</animation>
 		<animation description="מרווח_slide_he" condition="Skin.HasSetting(View57_Distance) + String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,12" reversible="true">Conditional</animation>
 		<animation description="slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" end="-10,0" reversible="true">Conditional</animation>
-		<animation condition="Skin.HasSetting(View57_Distance) + !Container(57).OnNext + !Container(57).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation) + !Control.HasFocus(7017) + [$EXP[Contents] | Player.HasVideo]" effect="slide" start="0,0" end="0,-40" delay="3000" time="700" reversible="false">Conditional</animation>
-		<animation condition="!Skin.HasSetting(View57_Distance) + !Container(57).OnNext + !Container(57).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation) + !Control.HasFocus(7017) + [$EXP[Contents] | Player.HasVideo]" effect="slide" start="0,0" end="0,-30" delay="3000" time="700" reversible="false">Conditional</animation>
 		<animation condition="Skin.HasSetting(View57_Distance) + Control.HasFocus(7017)" effect="slide" start="0,0" end="0,60" delay="0" time="700" reversible="false">Conditional</animation>
 		<animation condition="!Skin.HasSetting(View57_Distance) + Control.HasFocus(7017)" effect="slide" start="0,0" end="0,80" delay="0" time="700" reversible="false">Conditional</animation>
 		<control type="panel" id="57">
@@ -944,11 +942,12 @@
 	  <posx>23</posx>
 	  <posy>19</posy>              
 	  <height>312</height>
-	  <visible>!Skin.HasSetting(ShowDVDCases)</visible>
+	  
 	  <width>237</width>
 	  <include>ShowDVDCases</include>
+	  <!--<visible>!Skin.HasSetting(ShowDVDCases)</visible>
 	  <visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)</visible>
-	  <visible>!String.IsEmpty(ListItem.Genre) | !String.IsEmpty(ListItem.Plot) | String.Contains(ListItem.Path,videodb://1/7) | String.Contains(ListItem.path,videodb://movies/sets/)</visible>
+	  <visible>!String.IsEmpty(ListItem.Genre) | !String.IsEmpty(ListItem.Plot) | String.Contains(ListItem.Path,videodb://1/7) | String.Contains(ListItem.path,videodb://movies/sets/)</visible>-->
 	</control>
     <control type="image" description="רקע כיתוב">
 	  <animation condition="Skin.HasSetting(ShowDVDCases2)" effect="fade" start="60" end="60" time="0">Conditional</animation>
@@ -1016,8 +1015,6 @@
 	    <animation condition="Control.HasFocus(7017) + Player.HasVideo" effect="slide" start="0,0" end="0,-45" time="700" reversible="false">Conditional</animation>
 		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View58_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,0" reversible="true">Conditional</animation>
 	    <animation description="מרווח_slide_he" condition="Skin.HasSetting(View58_Distance) + String.IsEqual(System.Language,Hebrew)" effect="slide" end="-32,0" reversible="true">Conditional</animation>
-	    <animation condition="Skin.HasSetting(View58_Distance) + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation) + !Control.HasFocus(7017) + [$EXP[Contents] | Player.HasVideo]" effect="slide" start="0,0" end="0,-42" delay="3000" time="700" reversible="false">Conditional</animation>
-	    <animation condition="!Skin.HasSetting(View58_Distance) + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation) + !Control.HasFocus(7017) + [$EXP[Contents] | Player.HasVideo]" effect="slide" start="0,0" end="0,-42" delay="3000" time="700" reversible="false">Conditional</animation>
 
         <control type="panel" id="58">
 		  <include>TopInformationSize1</include>

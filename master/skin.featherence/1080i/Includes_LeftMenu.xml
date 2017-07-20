@@ -110,22 +110,21 @@
 		  <font>size28</font>
 		  <label>$LOCALIZE[20445] $LOCALIZE[244]</label>
 		  <enable>[!Skin.HasSetting(ShowTopVideoInformation) | $EXP[View59]] + !Skin.HasSetting(background2)</enable>
-		  <selected>[!$EXP[View59] + !$EXP[View54] + !Skin.HasSetting(FullFanartTopVideoInformation)] | [$EXP[View59] + Skin.HasSetting(FullFanart59)] | [$EXP[View54] + !Skin.HasSetting(FullFanart54)]</selected>
-		  <onclick condition="!$EXP[View59] + !$EXP[View54]">Skin.ToggleSetting(FullFanartTopVideoInformation)</onclick>
+		  <selected>[$EXP[View59] + Skin.HasSetting(FullFanart59)] | [$EXP[View54] + !Skin.HasSetting(FullFanart54)]</selected>
 		  <onclick condition="$EXP[View54]">Skin.ToggleSetting(FullFanart54)</onclick>
 		  <onclick condition="$EXP[View59]">Skin.ToggleSetting(FullFanart59)</onclick>
-		  <visible>$EXP[View57] | $EXP[View58] | $EXP[View54] | $EXP[View59]</visible>
+		  <visible>$EXP[View54] | $EXP[View59]</visible>
         </control>
-		<control type="radiobutton" id="105" description="פאנארט מסך מלא - ZOOM OUT">
+		<control type="radiobutton" id="105" description="ZOOM OUT">
 		  <include>SideMenuCommon</include>
 		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
-		  <label>$LOCALIZE[20445] $LOCALIZE[244] - ZOOM OUT</label>
-		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(FullFanartTopVideoInformation) + !Skin.HasSetting(background2)</enable>
+		  <label>ZOOM OUT</label>
+		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + !Skin.HasSetting(background2)</enable>
 		  <selected>Skin.HasSetting(FullFanartZoomOut)</selected>
 		  <onclick>Skin.ToggleSetting(FullFanartZoomOut)</onclick>
-		  <visible>$EXP[View57] | $EXP[View58]</visible> <!-- | $EXP[View59]-->
+		  <visible>$EXP[View57] | $EXP[View58]</visible>
         </control>
 		<control type="button" id="106" description="שקיפות עטיפות">
 		  <include>SideMenuCommon</include>
@@ -133,7 +132,7 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31030]: $INFO[Skin.String(MoviesTVCoversOverlay)]</label>
-		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + [!Skin.HasSetting(FullFanartTopVideoInformation) | Skin.HasSetting(AlwaysFanart)] | $EXP[View54]</enable>
+		  <enable>!Skin.HasSetting(ShowTopVideoInformation) + [Skin.HasSetting(AlwaysFanart)] | $EXP[View54]</enable>
 		  <onclick condition="!Skin.String(MoviesTVCoversOverlay)">Skin.SetString(MoviesTVCoversOverlay, 100)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 100)">Skin.SetString(MoviesTVCoversOverlay, 95)</onclick>
 		  <onclick condition="Skin.String(MoviesTVCoversOverlay, 95)">Skin.SetString(MoviesTVCoversOverlay, 90)</onclick>
@@ -295,7 +294,7 @@
 		  <onclick>Skin.ToggleSetting(TopVideoInformationFontSize)</onclick>
 		  <visible></visible>
         </control>
-		<control type="radiobutton" id="120" description="הצג משך זמן">
+		<control type="radiobutton" id="121" description="הצג משך זמן">
           <include>SideMenuCommon</include>
 		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
@@ -305,7 +304,7 @@
 		  <onclick>Skin.ToggleSetting(Show_Duration)</onclick>
 		  <visible>$EXP[View50]</visible>
         </control>
-		<control type="radiobutton" id="124" description="מרווח עטיפות">
+		<control type="radiobutton" id="125" description="מרווח עטיפות">
 		  <include>SideMenuCommon</include>
 		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
@@ -318,7 +317,7 @@
 		  <onclick condition="$EXP[View54]">Skin.ToggleSetting(View54_Distance)</onclick>
 		  <visible>$EXP[View57] | $EXP[View58] | $EXP[View54] | $EXP[View59]</visible>
         </control>
-		<control type="radiobutton" id="125" description="הסתר פאנארט בזמן ניווט">
+		<control type="radiobutton" id="126" description="הסתר פאנארט בזמן ניווט">
 		  <include>SideMenuCommon</include>
 		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
@@ -329,7 +328,7 @@
 		  <visible>$EXP[View57] | $EXP[View58]</visible>
 		  <visible>false</visible>
         </control>
-		<control type="radiobutton" id="126" description="אפשר אנימציית גלישה">
+		<control type="radiobutton" id="127" description="אפשר אנימציית גלישה">
 		  <include>SideMenuCommon</include>
 		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
@@ -340,7 +339,7 @@
 		  <visible>$EXP[View51] | $EXP[View50] | $EXP[View59]</visible>
 		  <visible>!Skin.HasSetting(Performance)</visible>
         </control>
-		<control type="button" id="127" description="יישור: ">
+		<control type="button" id="128" description="יישור: ">
 		  <include>SideMenuCommon</include>
 		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
@@ -996,18 +995,6 @@
   
   <include name="CommonLeftMenuButtons">
     <include>button123_enablefanart</include>
-	<control type="radiobutton" id="138" description="פאנארט מסך מלא">
-	  <include>SideMenuCommon</include>
-	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
-	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
-	  <font>size28</font>
-	  <label>$LOCALIZE[20445] $LOCALIZE[244]</label>
-	  <selected>!Skin.HasSetting(FullFanartBackground2)</selected>
-	  <enable>!Skin.HasSetting(background2)</enable>
-	  <onclick>Skin.ToggleSetting(FullFanartBackground2)</onclick>
-	  <visible>!$EXP[View57]</visible>
-	  <visible>false</visible>
-	</control>
   </include>
   <include name="LeftMenuMyPlaylist">
     <include>button2_views</include>
@@ -1179,8 +1166,8 @@
 	   <visible>false</visible>
      </control>
 	 <control type="group">
-	   <visible>String.IsEmpty(Control.GetLabel(11156)) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(Home.xml)] | VideoPlayer.IsFullscreen</visible>
-	   <visible>!String.Contains(ListItem.Label,$LOCALIZE[33078]) + !String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Label,Next Page)</visible>
+	   <!--<visible>String.IsEmpty(Control.GetLabel(11156)) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(Home.xml)] | VideoPlayer.IsFullscreen</visible>
+	   <visible>!String.Contains(ListItem.Label,$LOCALIZE[33078]) + !String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Label,Next Page)</visible>-->
 	   <control type="label" id="1103" description="***דירוג***">
           <label>$VAR[TopVideoInformation3]</label>
 		  <visible>false</visible>
@@ -1190,7 +1177,7 @@
 		 <visible description="listitem">String.Contains(ListItem.Rating,9.) + !VideoPlayer.IsFullscreen | VideoPlayer.IsFullscreen</visible>
 		 <visible description="videoplayer">VideoPlayer.IsFullscreen + String.Contains(VideoPlayer.Rating,9.) | !VideoPlayer.IsFullscreen</visible>
 		 <visible description="red">!String.Contains(ListItem.path,videodb://movies/sets/)</visible>
-		 <visible description="yellow">String.IsEmpty(ListItem.VideoResolution) + String.IsEmpty(ListItem.VideoCodec) | String.Contains(Container.FolderPath,videodb:) | VideoPlayer.IsFullscreen</visible>
+		 <visible description="yellow">String.IsEmpty(ListItem.VideoResolution) | String.Contains(Container.FolderPath,videodb:) | VideoPlayer.IsFullscreen</visible>
 	   </control>
 	   <control type="image" id="1910" description="הטובים ביותר">
 		 <texture colordiffuse="ff6699cc">misc/dvdcases/dvdcases.png</texture>
@@ -1204,16 +1191,16 @@
 	   </control>
 	   <control type="image" id="193" description="מקומי">
 		 <texture colordiffuse="ffffff00">misc/dvdcases/dvdcases.png</texture>
-		 <visible>[Integer.IsGreater(ListItem.Size,10) | !String.IsEmpty(ListItem.VideoResolution) | !String.IsEmpty(ListItem.VideoCodec)] | Window.IsVisible(DialogFullScreenInfo.xml) + [Integer.IsGreater(VideoPlayer.Size,10)]</visible>
+		 <visible>[Integer.IsGreater(ListItem.Size,10) | !String.IsEmpty(ListItem.VideoResolution)] | Window.IsVisible(DialogFullScreenInfo.xml) + [Integer.IsGreater(VideoPlayer.Size,10)]</visible>
 		 <visible>![String.Contains(ListItem.Path,videodb://1/7) | String.Contains(ListItem.path,videodb://movies/sets/)]</visible>
 		 <visible>!String.Contains(ListItem.Path,plugin://)</visible>
 	   </control>
 	   <control type="image" id="190" description="רגיל">
-		 <texture>misc/dvdcases/dvdcasesd.png</texture>
+		 <texture>misc/dvdcases/dvdcases.png</texture>
 		 <visible description="listitem">!String.Contains(ListItem.Rating,9.) + !VideoPlayer.IsFullscreen | VideoPlayer.IsFullscreen</visible>
 		 <visible description="videoplayer">VideoPlayer.IsFullscreen + !String.Contains(VideoPlayer.Rating,9.) | !VideoPlayer.IsFullscreen</visible>
 		 <visible description="red">!String.Contains(ListItem.path,videodb://movies/sets/)</visible>
-		 <visible description="yellow">String.IsEmpty(ListItem.VideoResolution) + String.IsEmpty(ListItem.VideoCodec) | String.Contains(Container.FolderPath,videodb:) | VideoPlayer.IsFullscreen</visible>
+		 <visible description="yellow">String.IsEmpty(ListItem.VideoResolution) | String.Contains(Container.FolderPath,videodb:) | VideoPlayer.IsFullscreen</visible>
 	   </control>
 	   <control type="image" id="1900" description="רגיל">
 		 <texture>misc/dvdcases/dvdcases.png</texture>

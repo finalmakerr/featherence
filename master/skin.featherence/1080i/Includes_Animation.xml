@@ -3,7 +3,7 @@
    <include name="Slide1" description="(Backgrounds)">
      <animation condition="[$EXP[View54] | Control.IsVisible(56) | [Control.HasFocus(7017) + [$EXP[View57] | $EXP[View58]]] ] + Player.HasVideo + !$EXP[View50] + !Control.IsVisible(11) + !$EXP[View51] + !$EXP[View59]" effect="slide" start="0,0" end="0,552" time="700" reversible="false">Conditional</animation>
 	 <animation description="MyPVRGuide" condition="Player.HasVideo + Control.IsVisible(11) + [Window.IsVisible(MyPVRGuide.xml)]" effect="slide" start="0,0" end="0,552" time="700" reversible="false">Conditional</animation>
-	 <animation condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [$EXP[Contents] | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,552" delay="3000" time="700" reversible="false">Conditional</animation>
+	 <!--<animation condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [$EXP[Contents] | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,552" delay="3000" time="700" reversible="false">Conditional</animation>-->
 	 
 	 <animation description="No Fanart" condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + $EXP[Contents] + [IsEmpty(Control.GetLabel(70130)) | Skin.HasSetting(background2)] + !Container.OnNext + !Container.OnPrevious + !Player.HasVideo + !Skin.HasSetting(ShowTopVideoInformation)" effect="slide" start="0,0" end="0,-252" delay="3000" time="700" reversible="false">Conditional</animation>
    </include>
@@ -15,7 +15,7 @@
    <include name="Slide2" description="(Zoom-Backgrounds)">
      <animation condition="[Control.IsVisible(56) | [Control.HasFocus(7017) + [$EXP[View57] | $EXP[View58]]] ] + Player.HasVideo + !$EXP[View50] + !Control.IsVisible(11) + !$EXP[View51] + !$EXP[View59]" effect="zoom" end="100,50" time="700" reversible="false">Conditional</animation>
 	 <animation description="MyPVRGuide" condition="Player.HasVideo + Control.IsVisible(11) + [Window.IsVisible(MyPVRGuide.xml)]" effect="zoom" end="100,50" time="700" reversible="false">Conditional</animation>
-	 <animation condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [$EXP[Contents] | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="100,50" delay="3000" time="700" reversible="false">Conditional</animation>
+	 <!--<animation condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + [$EXP[Contents] | Player.HasVideo] + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="100,50" delay="3000" time="700" reversible="false">Conditional</animation>-->
 	 <animation description="No Fanart" condition="[$EXP[View57] |  $EXP[View58]] + [!Control.HasFocus(7017)] + !Control.HasFocus(60) + $EXP[Contents] + [IsEmpty(Control.GetLabel(70130)) | Skin.HasSetting(background2)] + !Container.OnNext + !Container.OnPrevious + !Player.HasVideo + !Skin.HasSetting(ShowTopVideoInformation)" effect="zoom" end="100,150" delay="3000" time="700" reversible="false">Conditional</animation>
    </include>
    <include name="Slide2.7" description="(Fanart) / 58">
@@ -41,7 +41,7 @@
    </include>
    
    <include name="Slide2.4" description="(zoom)">
-	 <animation condition="!$EXP[View54] + !$EXP[View59] + !Skin.HasSetting(FullFanartTopVideoInformation) + Skin.HasSetting(FullFanartZoomOut) + Control.IsVisible(7013) + [Container.Content(Tvshows) | Container.Content(Movies)] + $EXP[Contents] + !Player.HasVideo + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Container(59).OnNext + !Container(59).OnPrevious + !Control.HasFocus(60) + [!Skin.HasSetting(ShowTopVideoInformation) | Control.IsVisible(59)]" effect="zoom" end="70,70" center="150,0" delay="3000" time="700" reversible="false">Conditional</animation>
+	 <animation condition="!$EXP[View54] + !$EXP[View59] + Skin.HasSetting(FullFanartZoomOut) + Control.IsVisible(7013) + [Container.Content(Tvshows) | Container.Content(Movies)] + $EXP[Contents] + !Player.HasVideo + !Container(57).OnNext + !Container(57).OnPrevious + !Container(58).OnNext + !Container(58).OnPrevious + !Container(59).OnNext + !Container(59).OnPrevious + !Control.HasFocus(60) + [!Skin.HasSetting(ShowTopVideoInformation) | Control.IsVisible(59)]" effect="zoom" end="70,70" center="150,0" delay="3000" time="700" reversible="false">Conditional</animation>
    </include>
    
    <include name="Slide3" description="(TopVideoInformation)">

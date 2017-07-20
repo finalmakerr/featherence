@@ -1078,6 +1078,7 @@
   <include name="TopDialogExtendedProgressBar" description="חלון עדכון ספרייה">
     <control type="group">
 		<visible>!Skin.HasSetting(HideLibraryUpdates) | [ Skin.HasSetting(HideLibraryUpdates) + [!VideoPlayer.IsFullscreen | Window.IsVisible(VideoOSD.xml)] ]</visible>
+		<visible>!System.IdleTime(10) + VideoPlayer.IsFullscreen | !VideoPlayer.IsFullscreen</visible>
 		<visible>!Window.IsVisible(DialogNotification.xml)</visible>
 		<posx>610</posx>
 		<posy>-6</posy>
