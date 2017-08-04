@@ -531,7 +531,7 @@ def mode10(admin, name, printpoint):
 		setPlayerInfo()
 		#videostarttweak(admin)
 		ii = 0
-		if playerhasvideo and xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)'): xbmc.executebuiltin('Action(Info)')
+		#if playerhasvideo and xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)'): xbmc.executebuiltin('Action(Info)')
 		while (playerhasvideo or playerhasaudio or dialogbusyW or dialogprogressW) and ii < 3 and not xbmc.abortRequested:
 			xbmc.sleep(5000)
 			videoplayertweak(admin, playerhasvideo)
@@ -2536,8 +2536,8 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "ListItem.Label" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.Label]'))
 			message = message + newline + "ListItem.Title" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.Title]'))
 			message = message + newline + "ListItem.TVShowTitle" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.TVShowTitle]'))
-			message = message + newline + "custom" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.Trailer]')) #CUSTOM TEST
-			message = message + newline + "custom2" + space2 + str(xbmc.getInfoLabel('Container(50).ListItemPosition(0).Overlay')) #CUSTOM TEST
+			message = message + newline + "custom" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.VideoResolution]')) #CUSTOM TEST
+			message = message + newline + "custom2" + space2 + str(xbmc.getInfoLabel('$INFO[ListItem.VideoCodec]')) #CUSTOM TEST
 			message = message + newline + "custom3" + space2 + str(xbmc.getInfoLabel('System.BuildVersion')) #CUSTOM TEST
 			message = message + newline + "ListItem.Property(TotalEpisodes)" + space2 + str(xbmc.getInfoLabel('ListItem.Property(TotalEpisodes)')) #CUSTOM TEST
 			message = message + newline + "Window(home).Property(RecentMovie.1.Art(fanart))" + space2 + str(xbmc.getInfoLabel('Window(home).Property(RecentMovie.1.Art(fanart))')) #CUSTOM TEST

@@ -7,6 +7,12 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence Kids v0.2.19 (04-Apr-17)
+------------------------
+- Added ToysMyToys Cartoons Tiny Channel.
+- Minor links update.
+
+------------------------
 Featherence Kids v0.2.18 (17-May-17)
 ------------------------
 - Added Multidown addon for Hebrew users.

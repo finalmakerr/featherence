@@ -2279,7 +2279,8 @@ def CATEGORIES107Q(General_LanguageL, background, background2): #רובו אוט
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
 		list.append('&youtube_id=mZxJzyK59Uw') #S1
-		list.append('&youtube_pl=PLRcpGe2aAjX0nTVoWmuhzC-oqVfEGOKS5')
+		list.append('&youtube_pl=PLcyqaXyZIttUEJlDocJ9DdyQqEaNY_Bex')
+		list.append('&youtube_ch=roivisual')
 		
 	'''אוזבקית'''
 	if 'Uzbek' in General_LanguageL:
@@ -2412,7 +2413,7 @@ def CATEGORIES107Q(General_LanguageL, background, background2): #רובו אוט
 	
 	'''רוסית'''
 	if 'Russian' in General_LanguageL:
-		list.append('&youtube_pl=')
+		list.append('&youtube_pl=PL3zlK7az2OJ1HVLHDoryakaTzbJGuM7iW')
 	
 	'''שוודית'''
 	if 'Swedish' in General_LanguageL:
