@@ -7,6 +7,12 @@ WIP - WORK IN PROGRESS
 ------------------------
 - Added Dreamcast disc swap support.
 
+
+------------------------
+Featherence Emu v0.1.5 (xx-xxx-17)
+------------------------
+- Added Kodi's Joystick mapping for Krypton.
+
 ------------------------
 Featherence Emu v0.1.4 (09-Jun-17)
 ------------------------
