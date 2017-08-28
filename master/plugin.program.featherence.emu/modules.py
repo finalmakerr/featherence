@@ -1112,10 +1112,16 @@ def copykeymaps():
 	if returned == 'ok':
 		keymaps_path = os.path.join(userdata_path, 'keymaps', '')
 		copyfiles(emukeymaps_path, keymaps_path)
+		
+		keymaps2_path = os.path.join(userdata_path, 'addon_data', 'peripheral.joystick', 'resources', 'buttonmaps', 'xml', '')
+		copyfiles(emukeymaps2_path, keymaps2_path)
 		xbmc.executebuiltin('Action(reloadkeymaps)')
 		
 		filename_ = ""
 		for file in os.listdir(emukeymaps_path):
+			filename = os.path.basename(file)
+			filename_ = filename_ + ', ' + filename
+		for file in os.listdir(emukeymaps2_path):
 			filename = os.path.basename(file)
 			filename_ = filename_ + ', ' + filename
 		dialogok('Keymaps copied!', filename_, '', '')

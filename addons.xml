@@ -397,7 +397,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="5.3.81" provider-name="jdf76, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="5.4.15" provider-name="jdf76, bromix">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -523,7 +523,7 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.3.78" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.3.79" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.24.0"/>

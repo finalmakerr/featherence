@@ -460,7 +460,7 @@
 	  <value condition="Player.Forwarding32x | Player.Rewinding32x">32x</value>
   </variable>
 	<variable name="tips">
-	  <value condition="String.IsEqual(Window(home).Property(tips),1)">[B]Featherence Support Team[/B][CR]Did you know?[CR]We are offering support for all of our addons.[CR]For support send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook support group:[CR]https://www.facebook.com/groups/featherence</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),1)">[B]Featherence Support Team[/B][CR]Did you know?[CR]We are offering support for all of our addons.[CR]For support visit: www.featherence.com</value>
 	  <value condition="String.IsEqual(Window(home).Property(tips),2)">[B]AutoView:[/B][CR]Did you know?[CR]You can force your preferred view for predefined categories such as: Movies/TVshows/Seasons/Episodes/Movies Set/Actors/Genre and more...</value>
 	  <value condition="String.IsEqual(Window(home).Property(tips),3)">[B]Save/Load skin design:[/B][CR]Did you know?[CR]You can save your skin design and use that as backup or even share it with your friends.</value>
 	  <value condition="String.IsEqual(Window(home).Property(tips),4)">[B]Coloring:[/B][CR]Did you know?[CR]You can color every piece of aspect in the skin.</value>
@@ -469,7 +469,7 @@
 	  <value condition="String.IsEqual(Window(home).Property(tips),7)">[B]Home views:[/B][CR]Did you know?[CR]You can change the home buttons position to panel/horizontal/vertical.</value>
 	  <value condition="String.IsEqual(Window(home).Property(tips),8)">[B]Movies widget:[/B][CR]Did you know?[CR]You can easily access random unwatched movies in your library or recently added movies.[CR]You may also play trailers directly from the widget.</value>
 	  <value condition="String.IsEqual(Window(home).Property(tips),9)">[B]TVshows widget:[/B][CR]Did you know?[CR]You can easily access your in progress TVshows or recently added episodes.[CR]You may also force refresh for triggering the next episode if needed.</value>
-	  <value condition="String.IsEqual(Window(home).Property(tips),10)">[B]Share your ideas:[/B][CR]Would like to see something different?[CR]We want to hear you![CR]For requests send us an email to:[CR]featherence@groups.facebook.com[CR]Or visit our facebook group:[CR]https://www.facebook.com/groups/featherence</value>
+	  <value condition="String.IsEqual(Window(home).Property(tips),10)">[B]Share your ideas:[/B][CR]Would like to see something different?[CR]We want to hear you![CR]For requests visit us: www.featherence.com</value>
 	  <value condition="String.IsEqual(Window(home).Property(tips),11)">[B]Featherence Service:[/B][CR]Did you know?[CR]You can open Featherence Service addon for using prebuilt tools.</value>
 	  <value condition="String.IsEqual(Window(home).Property(tips),12)">[B]Internet:[/B][CR]Did you know?[CR]You can open your web browser or network settings using Featherence settings's tab.</value>
 	  <value condition="String.IsEqual(Window(home).Property(tips),13)">[B]Wall / Posters views:[/B][CR]Did you know?[CR]You can adjust those views settings using the View Settings in the left menu.</value>

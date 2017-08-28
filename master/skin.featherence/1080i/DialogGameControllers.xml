@@ -42,9 +42,9 @@
 				<param name="type0" value="false" description="MenuBackground"/>
 				<param name="type1" value="true" description="DialogBackground"/>
 			</include>
-			<control type="grouplist" id="3" description="Controller profiles grouplist">
-				<posx>449</posx>
-				<posy>223</posy>
+			<control type="grouplist" id="3" description="תפריט משני (סוג שלט)">
+				<posx>453.5</posx>
+				<posy>226</posy>
 				<width>940</width>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -118,9 +118,9 @@
 				<height>1</height>
 				<width>1</width>
 			</control>
-			<control type="grouplist" id="9001">
-				<posx>449</posx>
-				<posy>143</posy>
+			<control type="grouplist" id="9001" description="תפריט ראשי">
+				<posx>453.5</posx>
+				<posy>146.5</posy>
 				<width>1022</width>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>

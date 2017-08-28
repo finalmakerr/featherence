@@ -10,6 +10,12 @@ WIP - WORK IN PROGRESS
 - Added option to choose highlight font color.
 
 ------------------------
+Featherence v0.7.5 (28-Aug-17)
+------------------------
+- Major bug fix of Manual search string (Subtitles Window).
+- Minor update of DialogGameControllers window.
+
+------------------------
 Featherence v0.7.4 (20-Jul-17)
 ------------------------
 - Added auto hide for ExtendedProgressBar during fullscreen video (for example Quasar progress bar).

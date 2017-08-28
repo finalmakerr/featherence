@@ -1952,6 +1952,7 @@
 		<property name="rinfo"></property>
 		<onclick>RunScript(script.featherence.service,,?mode=512&amp;value=1)</onclick>
 		<visible>Container(100).Hasfocus(2)</visible>
+		<visible>false</visible>
 	  </item>
 	  <item id="26" description="Post on Facebook!">
 		<label>Post on Facebook!</label>

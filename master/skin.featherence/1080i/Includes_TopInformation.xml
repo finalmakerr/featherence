@@ -75,6 +75,15 @@
 	  <visible>!Skin.String(TopInformationIcons)</visible>
 	  <visible>!Player.HasMedia</visible>
 	</control>
+	<control type="image" id="826" description="ADMIN">
+	  <height>$PARAM[iconheight]</height>
+	  <width>$PARAM[iconheight]</width>
+	  <aspectratio aligny="center">keep</aspectratio>
+	  <texture colordiffuse="$VAR[TopInformationFontColor]">special://home/addons/script.featherence.service/resources/icons/fix.png</texture>
+	  <visible>!Skin.String(TopInformationIcons)</visible>
+	  <visible>Skin.HasSetting(Admin)</visible>
+	  <visible>!Player.HasMedia</visible>
+	</control>
    </control>
     </definition>
   </include>

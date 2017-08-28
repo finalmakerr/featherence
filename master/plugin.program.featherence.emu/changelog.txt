@@ -11,7 +11,7 @@ WIP - WORK IN PROGRESS
 ------------------------
 Featherence Emu v0.1.5 (xx-xxx-17)
 ------------------------
-- Added Kodi's Joystick mapping for Krypton.
+- Added Kodi's PS3 mapping for Krypton.
 
 ------------------------
 Featherence Emu v0.1.4 (09-Jun-17)

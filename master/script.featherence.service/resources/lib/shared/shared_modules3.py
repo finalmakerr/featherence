@@ -2044,7 +2044,7 @@ def pluginend(admin):
 						installaddonP('repository.xbmc-israel', update=True)
 						#installaddonP('repository.kodil', update=True)
 						installaddonP('repository.multidownrepo', update=True)
-						installaddonP('repository.Jk$p', update=True)
+						#installaddonP('repository.Jk$p', update=True)
 				
 					if 'English' in General_LanguageL:
 						installaddonP('repository.metalkettle', update=True)

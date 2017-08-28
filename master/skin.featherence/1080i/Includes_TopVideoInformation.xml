@@ -134,7 +134,7 @@
 		  <scroll>false</scroll>
 		  <posx>690</posx>
           <posy>31</posy>
-          <height>70</height>
+          <height>75</height>
           <font>size34</font>
           <textcolor>yellow</textcolor>
           <align>center</align>

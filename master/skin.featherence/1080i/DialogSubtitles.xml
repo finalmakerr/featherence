@@ -412,11 +412,11 @@
 					<thumb></thumb>
 					<onclick>RunScript(script.featherence.service,,?mode=8)</onclick>
 				</item>
-				<item id="2" description="חיפוש ידני">
+				<item id="160" description="חיפוש ידני">
 					<visible></visible>
 					<label>$LOCALIZE[24120]</label>
 					<thumb></thumb>
-					<onclick>RunScript(script.featherence.service,,?mode=8)</onclick>
+					<onclick>SendClick(160)</onclick>
 				</item>
 			  </content>
 			</control>
@@ -598,6 +598,9 @@
 		</control>
 	  </control>
 	  
+	  <control type="button" id="160">
+	    <visible>false</visible>
+	  </control>
 	  <include content="Arrows_UpDown">
 		<param name="posx" value="1450" />
 		<param name="posy" value="820" />

@@ -1,4 +1,9 @@
 ------------------------
+Featherence Classico Plus (20-Aug-17)
+------------------------
+- Added Exodus's dynamic widget for movies and tvshows.
+
+------------------------
 Featherence Classico Plus (17-Jun-17)
 ------------------------
 - Added SubCenter and Subtitles support.
