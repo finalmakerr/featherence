@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-  <variable name="11155label">
-    <value condition="[Container.Content(Seasons) | Container.Content(Episodes)] + !String.IsEmpty(Control.GetLabel(1105)) + [!String.IsEmpty(Control.GetLabel(1106)) | String.Contains(Control.GetLabel(11010),Episode) | String.Contains(Control.GetLabel(11010),$LOCALIZE[20359]) | String.Contains(ListItem.Label,$LOCALIZE(20366)) | String.IsEqual(ListItem.Label,..)] + [!String.Contains(Container.FolderPath,plugin://plugin.video.youtube) + !String.Contains(Container.FolderPath,plugin://plugin.video.smithsonian)]">0</value>
-	<value condition="false">4</value>
-	<value condition="false">5</value>
-	<!--<value>test</value>-->
-  </variable>
-  
   <variable name="11156label" description="">
     <value condition="![!Skin.HasSetting(ShowDVDCases) | Skin.HasSetting(ShowDVDCases2)]">0</value>
 	<value condition="![!String.Contains(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>

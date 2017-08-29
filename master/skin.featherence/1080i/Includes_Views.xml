@@ -122,18 +122,7 @@
 		<height>40</height>
 		<label>$VAR[Button11300]</label>
 		<posy>-2</posy>
-		<textcolor>grey</textcolor>
-		<width>60</width>
-		<visible>[Container.Content(TVShows) + Integer.IsGreater(ListItem.Property(WatchedEpisodes),0) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)</visible>
-		<visible>Window.IsVisible(MyVideoNav.xml)</visible>
-	  </control>
-	  <control type="label" description="טקסט נצפה">					
-		<include condition="String.IsEqual(System.Language,Hebrew)">LabelL7</include>
-		<include condition="!String.IsEqual(System.Language,Hebrew)">LabelR7</include>
-		<height>40</height>
-		<label>$VAR[Button11300]</label>
-		<posy>-2</posy>
-		<textcolor>grey</textcolor>
+		<textcolor>red</textcolor>
 		<width>60</width>
 		<visible>[Container.Content(TVShows) + Integer.IsGreater(ListItem.Property(WatchedEpisodes),0) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)</visible>
 		<visible>Window.IsVisible(MyVideoNav.xml)</visible>
@@ -146,7 +135,6 @@
 		  <textcolor>grey</textcolor>
 		  <width>60</width>
 		  <wrapmultiline>true</wrapmultiline>
-		  <visible>String.IsEmpty(Control.GetLabel(11155))</visible>
 	  </control>
 	</control>
 	<control type="label" description="שם">
@@ -235,7 +223,7 @@
 		<height>40</height>
 		<label>$VAR[Button11300]</label>
 		<posy>-2</posy>
-		<textcolor>grey</textcolor>
+		<textcolor>red</textcolor>
 		<width>60</width>
 		<visible>[Container.Content(TVShows) + Integer.IsGreater(ListItem.Property(WatchedEpisodes),0) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Seasons) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] | [Container.Content(Episodes)] + Skin.String(ListItemUnWatchedEpisodes)</visible>
 		<visible>Window.IsVisible(MyVideoNav.xml)</visible>
@@ -248,7 +236,6 @@
 		  <textcolor>grey</textcolor>
 		  <width>60</width>
 		  <wrapmultiline>true</wrapmultiline>
-		  <visible>String.IsEmpty(Control.GetLabel(11155)) + !String.IsEmpty(Control.GetLabel(11153))</visible>
 	  </control>
 	</control>
 	<control type="label" description="שם">
@@ -653,7 +640,7 @@
           <height>825</height>
 		  <include>4ways</include>
 		  <viewtype label="31012">Grid</viewtype>
-		  <itemlayout description="(Seasons/Episodes)" condition="!String.IsEmpty(Control.GetLabel(11155))" height="100" width="960"> <!--String.Contains(Container.FolderName,Mako)-->
+		  <itemlayout description="(Seasons/Episodes)" height="100" width="960"> <!--String.Contains(Container.FolderName,Mako)-->
 			<control type="image" description="מסגרת">
 			  <!--<include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>-->
               <posx>760</posx>
@@ -713,7 +700,7 @@
 			  </control>
 			</control>
 		  </itemlayout>
-          <focusedlayout description="(Seasons/Episodes)" condition="!String.IsEmpty(Control.GetLabel(11155))" height="100" width="960">    
+          <focusedlayout description="(Seasons/Episodes)" height="100" width="960">    
 			<include>AutoView</include>
 			<control type="image" description="מסגרת">
 			  <posx>760</posx>

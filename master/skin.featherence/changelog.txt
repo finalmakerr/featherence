@@ -10,6 +10,11 @@ WIP - WORK IN PROGRESS
 - Added option to choose highlight font color.
 
 ------------------------
+Featherence v0.7.6 (29-Aug-17)
+------------------------
+- Minor bugs fix.
+
+------------------------
 Featherence v0.7.5 (28-Aug-17)
 ------------------------
 - Major bug fix of Manual search string (Subtitles Window).
