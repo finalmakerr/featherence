@@ -41,13 +41,23 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					fileID = getfileID(file)
 					if fileID != "":
 						filename__ = filename_.replace(" ", "%20")
-						DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Master%20System_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+						if not '[GD]' in fileID:
+							DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Master%20System_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+						else:
+							fileID = fileID.replace('[GD]',"")
+							DownloadFile("https://drive.google.com/uc?export=download&id="+fileID, "1.zip", temp_path, rom_path, percentinfo=2)
 					else: printpoint = printpoint + 'D'
 				
 				if 'D' in printpoint:
 					file = "Sega Master System.zip"
 					fileID = getfileID(file)
-					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Master%20System.zip?dl=1", file, temp_path, rom_path, percentinfo=5)
+					if fileID != "":
+						if not '[GD]' in fileID:
+							DownloadFile("https://www.dropbox.com/s/"+fileID+"/Sega%20Master%20System.zip?dl=1", file, temp_path, rom_path, percentinfo=5)
+						else:
+							fileID = fileID.replace('[GD]',"")
+							DownloadFile("https://drive.google.com/uc?export=download&id="+fileID, file, temp_path, rom_path, percentinfo=5)
+						
 				
 		
 			elif category == 'Featherence_turbografx16':
@@ -332,6 +342,28 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 					fileID = getfileID(file)
 					filename__ = filename_.replace(" ", "%20")
 					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/Dreamcast_4P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+			
+			elif category == 'Featherence_gamecube':
+				if launcher == 'Featherence_gamecube1P':
+					filename_ = filename.replace(':',"")
+					file = "GameCube_1P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					filename__ = filename_.replace(" ", "%20")
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/GameCube_1P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+				
+				elif launcher == 'Featherence_gamecube2P':
+					filename_ = filename.replace(':',"")
+					file = "GameCube_2P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					filename__ = filename_.replace(" ", "%20")
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/GameCube_2P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+				
+				elif launcher == 'Featherence_gamecube4P':
+					filename_ = filename.replace(':',"")
+					file = "GameCube_4P_" + filename_ + ".zip"
+					fileID = getfileID(file)
+					filename__ = filename_.replace(" ", "%20")
+					if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/GameCube_4P_" + filename__ + ".zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 	
 	text = "category" + space2 + str(category) + newline + \
 	"launcher" + space2 + str(launcher) + newline + \
@@ -394,6 +426,7 @@ def chmod():
 		os.system("export LD_LIBRARY_PATH='"+ emulator_path +"lib/'")
 	
 def getfileID(file):
+	name = 'getfileID' ; printpoint = ""
 	fileID = "" ; fileID_L = [""] ; fileName_L = ['--> (Exit)']
 	if file == "linux.featherence.emu.zip": fileID = "1i7zhab80o8chyn" #finalmakerr
 	elif file == "nvram_diff.zip":
@@ -650,9 +683,12 @@ def getfileID(file):
 		fileID_L.append('c5ingtyhgkwjmx7') #user1
 		fileID_L.append('3v6kt7hcj4udnrq') #htpt
 		fileID_L.append('nbzv9gotdcksbng') #buy
+		fileID_L.append('[GD]0B_dmZM8wv6D9Q25CUXAwVHJUWU0') #featherence.user1[GD]
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
+		fileName_L.append('Source 4 [GD]')
+		
 	elif file == "Super Nintendo.zip":
 		fileID_L.append('dficnt390sp2j8w') #user1
 		fileID_L.append('fn27r1mmyos91hd') #htpt
@@ -970,7 +1006,22 @@ def getfileID(file):
 	elif file == "Dreamcast_1P_Mr Driller.zip": fileID = "qya7f8ezviyuuty" #featherence.guser16
 	elif file == "Dreamcast_2P_The King of Fighters '99.zip": fileID = "8e83i6xwnai5pme" #featherence.guser16
 	
+	elif file == "GameCube_2P_Dragon Ball Z - Sagas.zip": fileID = "0ixd5o3khrzpxsn" #htptdebugout3
+	elif file == "GameCube_1P_Harvest Moon - A Wonderful Life.zip": fileID = "xphq4yi7pmjm9c8" #htptdebugout4
+	elif file == "GameCube_4P_Final Fantasy Crystal Chronicles.zip": fileID = "kjqid9mbk16jyvz" #htptdebugout
+	elif file == "GameCube_1P_The Hobbit.zip": fileID = "upipaypo68eafw8" #htptdebugout
+	elif file == "GameCube_1P_Eternal Darkness.zip": fileID = "l54zplyf17nw87y" #featherence.guser15
+	elif file == "GameCube_4P_Custom Robo.zip": fileID = "til1ueqxf0p6jew" #featherence.guser17
+	elif file == "GameCube_1P_Resident Evil 3 - Nemesis.zip": fileID = "f8zwx2bq7twi17d" #featherence.guser18
+	elif file == "GameCube_4P_FIFA Street 2.zip": fileID = "vzo24s9kvz27tbl" #featherence.guser22
 	
+	elif file == ".zip":
+		fileID_L.append('[GD]') #featherence.user1 [GD]
+		fileID_L.append('') #
+		fileID_L.append('') #
+		fileName_L.append('Source 1')
+		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
 	
 	if fileID_L != [""] and fileName_L != ['--> (Exit)'] and fileID == "":
 		returned, value = dialogselect('Choose a file to download', fileName_L)
@@ -978,7 +1029,10 @@ def getfileID(file):
 			fileID = fileID_L[int(returned)]
 			'''---------------------------'''
 		else: fileID = ""
-		
+	
+	text = "fileID" + space2 + str(fileID) + newline + \
+	"fileID_L" + space2 + str(fileID_L)
+	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	return fileID
 
 def searchtrailer(filename):
@@ -1408,7 +1462,7 @@ def copylaunchers(force=False):
 				elif OS == "i386": _turbografx16_args = 'mednafen.pce.fast'
 				else: _turbografx16_args = 'mednafen.pce.fast'
 			elif systemplatformwindows: _turbografx16_args = 'mednafen.pce.fast_libretro.dll'
-			dp.update(90,'Generating Launchers file',"Setting _segagenesis_args..")
+			dp.update(80,'Generating Launchers file',"Setting _segagenesis_args..")
 			replace_word(emudata_launcher_file,'_turbografx16_args',_turbografx16_args, infile_="", LineR=False , LineClean=False)
 			
 			if systemplatformandroid: _dreamcast_args = 'start -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -e ROM "%rom%" -e LIBRETRO /data/data/com.retroarch/cores/reicast_libretro_android.so'
@@ -1417,10 +1471,20 @@ def copylaunchers(force=False):
 				elif OS == "i386": _dreamcast_args = 'reicast'
 				else: _dreamcast_args = 'reicast'
 			elif systemplatformwindows: _dreamcast_args = 'reicast_libretro.dll'
-			dp.update(95,'Generating Launchers file',"Setting _dreamcast_args..")
+			dp.update(90,'Generating Launchers file',"Setting _dreamcast_args..")
 			replace_word(emudata_launcher_file,'_dreamcast_args',_dreamcast_args, infile_="", LineR=False , LineClean=False)
-			dp.update(100,'Generating Launchers file',"Finising..") ; xbmc.sleep(500)
 			
+			if systemplatformandroid: _gamecube_args = 'start -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -e ROM "%rom%" -e LIBRETRO /data/data/com.retroarch/cores/dolphin_libretro_android.so'
+			elif systemplatformlinux:
+				if systemplatformlinuxraspberrypi or OS == "oe2": _gamecube_args = ""
+				elif OS == "i386": _gamecube_args = 'dolphin'
+				else: _gamecube_args = 'dolphin'
+			elif systemplatformwindows: _gamecube_args = 'dolphin_libretro.dll'
+			dp.update(95,'Generating Launchers file',"Setting _gamecube_args..")
+			replace_word(emudata_launcher_file,'_gamecube_args',_gamecube_args, infile_="", LineR=False , LineClean=False)
+			
+			
+		dp.update(100,'Generating Launchers file',"Finising..")
 		dp.close
 	
 	text = "force" + space2 + str(force) + newline + \
@@ -1434,16 +1498,19 @@ def filterbyos(x):
 	if systemplatformwindows:
 		if OS == "win32":
 			if x == 'Featherence_nintendods': returned = "filter"
+			if x == 'Featherence_gamecube': returned = "filter"
 	
 	elif systemplatformandroid: pass
 	
 	elif systemplatformlinux:
 		if systemplatformlinuxraspberrypi or OS == "oe2":
-			#if x == 'Featherence_nintendods': returned = "filter"
+			if x == 'Featherence_nintendods': returned = "filter"
 			if x == 'Featherence_dreamcast': returned = "filter"
+			if x == 'Featherence_gamecube': returned = "filter"
 		elif OS == "i386":
 			if x == 'Featherence_nintendods': returned = "filter"
 			if x == 'Featherence_dreamcast': returned = "filter"
+			if x == 'Featherence_gamecube': returned = "filter"
 			
 	
 	

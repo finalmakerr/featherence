@@ -3178,6 +3178,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	
 	CATEGORIES107F(General_LanguageL, background, background2) #קירוקי
 	CATEGORIES107Q(General_LanguageL, background, background2) #רובו אוטו פולי
+	CATEGORIES107R(General_LanguageL, background, background2) #מטוסי על
 
 	'''רוי בוי'''
 	list = []

@@ -47,7 +47,7 @@ def getResponse(url, size, referer, agent, cookie, silent):
             size = int(size)
             req.add_header('Range',   'bytes=%d-' % size)
 
-        resp = urllib2.urlopen(req, timeout=10)
+        resp = urllib2.urlopen(req, timeout=20)
         returned = resp
     except Exception, TypeError:
         returned = None
@@ -60,8 +60,8 @@ def getResponse(url, size, referer, agent, cookie, silent):
     'TypeError' + space2 + str(TypeError) + newline + \
     'agent' + space2 + str(agent)
     printlog(title="getResponse-commondownloader", printpoint=printpoint, text=text, level=1, option="")
-
-    return returned
+	
+    return returned, str(TypeError)
 	
 def download(url, dest, title=None, referer=None, agent=None, cookie=None, silent=False):
     if not title:
@@ -91,7 +91,7 @@ def download(url, dest, title=None, referer=None, agent=None, cookie=None, silen
 
 
 def doDownload(url, dest, title, referer, agent, cookie, silent=False, percentinfo=10):
-    printpoint = "" ; extra = ""
+    printpoint = "" ; extra = "" ; TypeError = ""
     exe = printlog(title="exe", printpoint="", text="", level=0, option="")
     try: test = percentinfo + 1
     except: percentinfo = 10
@@ -107,17 +107,22 @@ def doDownload(url, dest, title, referer, agent, cookie, silent=False, percentin
 
     file = dest.rsplit(os.sep, 1)[-1]
 
-    resp = getResponse(url, 0, referer, agent, cookie, silent)
+    resp, TypeError = getResponse(url, 0, referer, agent, cookie, silent)
     
     xbmc.executebuiltin('Dialog.Close(busydialog)')
 	
     if not resp:
         if silent != True or exe != "":
-            dialogok(title, dest, localize(13036, s=[localize(33003)]), localize(15301)) #Failed for %s, Couldn't connect to network server
+            if TypeError == "":
+				dialogok(title, dest, localize(13036, s=[localize(33003)]), localize(15301)) #Failed for %s, Couldn't connect to network server
+            else:
+				dialogok(title, TypeError, localize(13036, s=[localize(33003)]), localize(15301))
         return "skip"
 
     try:    content = int(resp.headers['Content-Length'])
-    except: content = 0
+    except Exception, TypeError:
+        content = 0
+        TypeError = str(TypeError) + " " + str(TypeError)
 
     try:    resumable = 'bytes' in resp.headers['Accept-Ranges'].lower()
     except: resumable = False
@@ -125,6 +130,13 @@ def doDownload(url, dest, title, referer, agent, cookie, silent=False, percentin
     if resumable:
         pass
 
+    text = 'url' + space2 + str(url) + newline + \
+    'dest' + space2 + str(dest) + newline + \
+    'title' + space2 + str(title) + newline + \
+    'content' + space2 + str(content) + newline + \
+    'resp.headers' + space2 + str(resp.headers)
+    printlog(title="commondownloader", printpoint=printpoint, text=text, level=0, option="")
+	
     if content < 1:
         if silent != True or exe != "": dialogok(title, file, localize(1446) + space + localize(21802), localize(13036, s=[localize(33003)]))
         return "skip"
@@ -155,6 +167,8 @@ def doDownload(url, dest, title, referer, agent, cookie, silent=False, percentin
 
     chunk  = None
     chunks = []
+    
+    
 
     while True and not xbmc.abortRequested:
         downloaded = total
@@ -243,17 +257,11 @@ def doDownload(url, dest, title, referer, agent, cookie, silent=False, percentin
                 #create new response
                 text = 'Download resumed (%d) %s' % (resume, dest)
                 printlog(title="doDownload", printpoint=printpoint, text=text, level=1, option="")
-                resp = getResponse(url, total, referer, agent, cookie, silent)
+                resp, TypeError = getResponse(url, total, referer, agent, cookie, silent)
             else:
                 #use existing response
                 pass
 
-	
-	text = 'url' + space2 + str(url) + newline + \
-	'dest' + space2 + str(dest) + newline + \
-	'title' + space2 + str(title) + newline + \
-	'resp.headers' + space2 + str(resp.headers)
-	printlog(title="commondownloader", printpoint=printpoint, text=text, level=0, option="")
 
 if __name__ == '__main__':
     if 'commondownloader.py' in sys.argv[0]:

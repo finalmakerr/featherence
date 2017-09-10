@@ -353,15 +353,17 @@ def ListPlaylist2(name, url, iconimage, desc, num, viewtype, fanart):
 	
 	text = extra
 	printlog(title='ListPlaylist2', printpoint=printpoint, text=text, level=0, option="")
-	
+
 def OPEN_URL(url):
-    req = urllib2.Request(url)
-    req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
-    response = urllib2.urlopen(req)
-    link=response.read()
-    response.close()
-    '''---------------------------'''
-    return link
+	link = "" ; TypeError = ""
+	try:
+		req = urllib2.Request(url)
+		req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
+		response = urllib2.urlopen(req)
+		link=response.read()
+		response.close()
+	except Exception, TypeError: notification('OPEN_URL Error',str(TypeError),'',4000)
+	return link
 
 def PlayVideos(name, mode, url, iconimage, desc, num, fanart):
 	x = url
@@ -947,7 +949,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 			printpoint = printpoint + '2'
 			url = 'https://www.googleapis.com/youtube/v3/channels?id='+x2+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
 			
-		if onlydata == True: pass
+		if onlydata == True or link == "": url = ""
 		else:
 			link = OPEN_URL(url)
 			prms=json.loads(link)
@@ -984,7 +986,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 			text = '***The following video ID is broken!' + space + str(title) + space + str(x) + '***'
 			printlog(title='apimaster_video error!', printpoint=printpoint, text=text, level=1, option="")
 			title_L.append('[COLOR=red]' + title + space + '[Deleted!]' + '[/COLOR]')
-		if not '9' in printpoint:
+		if not '9' in printpoint and link != "":
 			
 			prms=json.loads(link)
 			text = "url" + space2 + str(url) + newline + \

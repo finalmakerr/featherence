@@ -646,9 +646,6 @@ def CATEGORIES107G(General_LanguageL, background, background2): #סמי הכבא
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f824.jpg&mode=3&name=%d7%a1%d7%9e%d7%99-%d7%94%d7%9b%d7%91%d7%90%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91-fireman-sam%2fseason%2f1&series_id=824&series_name=%d7%a1%d7%9e%d7%99-%d7%94%d7%9b%d7%91%d7%90%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91-fireman-sam%2fseason%2f1&summary&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f824%2f%d7%a1%d7%9e%d7%99-%d7%94%d7%9b%d7%91%d7%90%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91-fireman-sam%2fseason%2f1')
-		list.append('&youtube_pl=PLWe-dtph0LIoLXbFwMyFK40JxLulnv0ma')
-		list.append('&youtube_pl=PL_TbWUH2U7KmZtYRZlJtxzmYFP_m81vSk')
-		list.append('&youtube_pl=PLN0EJVTzRDL-IJiTK4_B1ni8tlRNQvaBg')
 		list.append('&youtube_pl=PL8x83ieZ_yGXSJbCVjtUc6ZV3XWY95iEH')
 		list.append('&youtube_id=yw1gocZyn8o')
 		list.append('&youtube_id=e3ChxP5afl4')
@@ -2425,17 +2422,18 @@ def CATEGORIES107Q(General_LanguageL, background, background2): #רובו אוט
 	
 	addDir(addonString(10736).encode('utf-8'),list,17,'http://vignette1.wikia.nocookie.net/robotsupremacy/images/5/59/Poli.jpg/revision/latest?cb=20150722015429',addonString(107360).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/3FWijEthPu0/maxresdefault.jpg", default=background2))
 
-def CATEGORIES107R(General_LanguageL, background, background2): #
+def CATEGORIES107R(General_LanguageL, background, background2): #מטוסי על
 	'''קטנטנים'''
 	list = []
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
-		list.append('&youtube_pl=')
+		list.append('&youtube_pl=PLfcYs4SRZfuKHBFMWhKcZuL39ZrLY-52P')
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
-		list.append('&youtube_pl=')
-		list.append('&youtube_pl=')
+		list.append('&youtube_id=mkGiWDnFIus')
+		if not 'Hebrew' in General_LanguageL: list.append('&youtube_pl=PLme6PyN3c6adNPYYS9DJrg8Z2ttd8yJlH')
+		
 	'''אוזבקית'''
 	if 'Uzbek' in General_LanguageL:
 		list.append('&youtube_pl=')
@@ -2545,6 +2543,7 @@ def CATEGORIES107R(General_LanguageL, background, background2): #
 	'''קוריאנית'''
 	if 'Korean' in General_LanguageL:
 		list.append('&youtube_pl=')
+		if not 'Hebrew' in General_LanguageL: list.append('&youtube_pl=PLWi6nzVYwR35t7pmzPm8lj22dyWLqGfpK')
 	
 	'''קזחית'''
 	if 'Kazakh' in General_LanguageL:
@@ -2574,7 +2573,7 @@ def CATEGORIES107R(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10737).encode('utf-8'),list,17,"http://www.kidslicensing.com/wp-content/uploads/NEWS-Super-wings.jpg",addonString(107370).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/11AwsAQnEso/maxresdefault.jpg", default=background2))
 
 def CATEGORIES107S(General_LanguageL, background, background2): #בוב הבנאי
 	'''קטנטנים'''

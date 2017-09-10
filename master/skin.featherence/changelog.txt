@@ -10,6 +10,12 @@ WIP - WORK IN PROGRESS
 - Added option to choose highlight font color.
 
 ------------------------
+Featherence v0.7.7 (xx-xx-17)
+------------------------
+- Minor bugs fix in skin design window.
+- Minor bug fix when Super Widget and Standard Kodi Widget are active.
+
+------------------------
 Featherence v0.7.6 (29-Aug-17)
 ------------------------
 - Minor bugs fix.

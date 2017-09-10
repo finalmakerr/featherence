@@ -74,9 +74,12 @@ Addon_Version = getsetting('Addon_Version')
 addonuserdata_path = os.path.join(addondata_path, addonID, '')
 
 '''Emulator'''
+core_updater_buildbot_url = ""
 if systemplatformwindows:
 	if getsetting('OS') != "":
-		if getsetting('OS') == "win64": emulator_path = os.path.join(addons_path, 'emulator.retroarch_win64', '')
+		if getsetting('OS') == "win64":
+			emulator_path = os.path.join(addons_path, 'emulator.retroarch_win64', '')
+			core_updater_buildbot_url = "http://buildbot.libretro.com/nightly/windows/x86_64/latest/"
 		elif getsetting('OS') == "win32": emulator_path = os.path.join(addons_path, 'emulator.retroarch_win32', '')
 		else: emulator_path = os.path.join(addons_path, 'emulator.retroarch_win64', '')
 	else: emulator_path = os.path.join(addons_path, 'emulator.retroarch_win64', '')
@@ -93,6 +96,7 @@ elif systemplatformlinuxraspberrypi or OS == 'oe2':
 	emulator_file_ = '"' + emulator_file + '"'
 	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
 	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
+	core_updater_buildbot_url = "http://buildbot.libretro.com/nightly/linux/x86_64/latest/"
 
 elif systemplatformlinux and not systemplatformandroid:
 	if getsetting('OS') == "i386": emulator_path = os.path.join(addons_path, 'emulator.retroarch_i386', '')
@@ -102,6 +106,7 @@ elif systemplatformlinux and not systemplatformandroid:
 	emulator_file_ = '"' + emulator_file + '"'
 	retroarchcfg_file = os.path.join(emulator_path, 'config', 'retroarch.cfg')
 	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
+	core_updater_buildbot_url = "http://buildbot.libretro.com/nightly/linux/x86_64/latest/"
 
 elif systemplatformandroid:
 	emulator_path = '/data/data/com.retroarch/'
@@ -135,8 +140,15 @@ if systemplatformandroid: shader_path = os.path.join(emulator_path,'shaders_glsl
 else: shader_path = os.path.join(featherence_emu_module_path,'shaders','')
 if systemplatformlinuxraspberrypi or OS == 'oe2': config_path2 = os.path.join(featherence_emu_module_path,'config2','')
 else: config_path2 = os.path.join(featherence_emu_module_path,'config','')
+'''New Version'''
+content_database_path = os.path.join(featherence_emu_module_path,'database','')
+cursor_directory_path = os.path.join(featherence_emu_module_path,'database','cursors','')
+audio_filter_dir = os.path.join(featherence_emu_module_path,'filters','audio','')
+video_filter_dir = os.path.join(featherence_emu_module_path,'filters','video','')
 
 autoconfig_path2 = os.path.join(featherence_emu_module_path,'autoconfig','')
+assets_directory = os.path.join(featherence_emu_module_path,'assets','')
+overlay_directory = os.path.join(featherence_emu_module_path,'overlay','')
 
 '''Emulator userdata'''
 emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')
@@ -154,6 +166,10 @@ emumedia_path = os.path.join(addonPath,'resources','media','')
 screenshots_path = os.path.join(emulatordata_path,'screenshots','')
 cheats_path = os.path.join(emulatordata_path,'cheats','')
 dirsL = [save_path, savestate_path, autoconfig_path, screenshots_path, cheats_path, rom_path]
+
+'''New Version'''
+input_remapping_directory_path = os.path.join(emulatordata_path,'remaps','')
+core_assets_directory = os.path.join(emulatordata_path,'downloads','')
 
 '''Featherence Emu'''
 emulanuncher_file = os.path.join(addonPath,'resources','launchers','launchers.xml')
@@ -204,8 +220,16 @@ optionsL.append('audio_volume') ; options_L.append('*')
 
 staticL = [] ; static_L = []
 staticL.append('libretro_path') ; static_L.append(cores_path)
+staticL.append('libretro_directory') ; static_L.append(cores_path)
 staticL.append('libretro_info_path') ; static_L.append(coresinfo_path)
-staticL.append('system_directory') ; static_L.append(system_path) 
+staticL.append('system_directory') ; static_L.append(system_path)
+staticL.append('content_database_path') ; static_L.append(content_database_path)
+staticL.append('cursor_directory') ; static_L.append(cursor_directory_path)
+staticL.append('input_remapping_directory') ; static_L.append(input_remapping_directory_path)
+staticL.append('video_filter_dir') ; static_L.append(video_filter_dir)
+staticL.append('audio_filter_dir') ; static_L.append(audio_filter_dir)
+staticL.append('core_assets_directory') ; static_L.append(core_assets_directory)
+staticL.append('assets_directory') ; static_L.append(assets_directory)
 staticL.append('rgui_config_directory') ; static_L.append(config_path)
 staticL.append('video_shader_dir') ; static_L.append(shader_path)
 staticL.append('video_shader') ; static_L.append(os.path.join(shader_path, '*','') + '.{cg,cgp,shader}')
@@ -217,7 +241,9 @@ staticL.append('savefile_directory') ; static_L.append(save_path)
 staticL.append('savestate_directory') ; static_L.append(savestate_path)
 staticL.append('content_directory') ; static_L.append(rom_path)
 staticL.append('rgui_browser_directory') ; static_L.append(rom_path)
-staticL.append('overlay_directory') ; static_L.append(config_path)
+staticL.append('overlay_directory') ; static_L.append(overlay_directory)
+
+staticL.append('core_updater_buildbot_url') ; static_L.append(core_updater_buildbot_url)
 
 staticL.append('config_save_on_exit') ; static_L.append('true')
 staticL.append('fps_show') ; static_L.append('false')

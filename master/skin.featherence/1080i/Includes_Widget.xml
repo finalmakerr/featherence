@@ -27,7 +27,7 @@
 		
 
 		<control type="group" description="סמן חץ ימינה">
-			<visible>[Control.HasFocus(311) + Container(311).HasNext] | [Control.HasFocus(312) + Container(312).HasNext] | [Control.HasFocus(315) + Container(315).HasNext] | [Control.HasFocus(31) + Container(316).HasNext]</visible>
+			<visible>[Control.HasFocus(311) + Container(311).HasNext] | [Control.HasFocus(312) + Container(312).HasNext] | [Control.HasFocus(315) + Container(315).HasNext] | [Control.HasFocus(316) + Container(316).HasNext]</visible>
 			<include>Animation_WidgetPosition</include>
 			<include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + !String.IsEqual(System.Language,Hebrew)">Control_Pos10</include>
 			<include condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">Control_Pos11</include>

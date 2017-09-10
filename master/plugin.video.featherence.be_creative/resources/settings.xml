@@ -41,10 +41,6 @@
 		<setting type="lsep" label="$ADDON[script.featherence.service 32079]"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32157]"/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=7)" label="$ADDON[script.featherence.service 32158]" option="close" visible="true"/>
-		<setting type="lsep" label="$ADDON[script.featherence.service 32108]"/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=1)" label="$ADDON[script.featherence.service 32078]" option="close" visible="true"/>
-		<setting type="lsep" label="$ADDON[script.featherence.service 32048] $ADDON[script.featherence.service 32049]" visible="true"/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=7)" label="$ADDON[script.featherence.service 32073]" option="close" visible=""/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32072]"/>
 		<setting type="action" action="RunScript(script.featherence.service,,?mode=32&amp;value=3)" label="$ADDON[script.featherence.service 32076]" option="close" visible="true"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32071]"/>

@@ -6,12 +6,17 @@
 WIP - WORK IN PROGRESS
 ------------------------
 - Added Dreamcast disc swap support.
-
+- Added G-Drive file storage support.
+- Major update of Featherence's Emu Console Linux 64 bit.
 
 ------------------------
-Featherence Emu v0.1.5 (xx-xxx-17)
+Featherence Emu v0.1.5 (10-Sep-17)
 ------------------------
+- Added more information when download is failed (usually error 429 - The person who shared it hit their daily limit of traffic or downloads).
 - Added Kodi's PS3 mapping for Krypton.
+- Added new console: GameCube (WIP).
+- Major update of Featherence's Emu Console for Windows 64 bit.
+
 
 ------------------------
 Featherence Emu v0.1.4 (09-Jun-17)

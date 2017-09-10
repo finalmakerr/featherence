@@ -2740,8 +2740,8 @@ msgid "Robocar Poli"
 msgstr "רובו אוטו פולי"
 
 msgctxt "#10737
-msgid ""
-msgstr ""
+msgid "Super Wings"
+msgstr "מטוסי על"
 
 msgctxt "#10738
 msgid "The 7D"
@@ -5970,8 +5970,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#107370
-msgid ""
-msgstr ""
+msgid "Super Wings (Korean: 출동! 슈퍼윙스; Chinese: 超级飞侠) is a 2014 animated television series co-produced by FunnyFlux Entertainment in South Korea, Qianqi Animation in China, and Little Airplane Productions in the United States, with the production support from the Educational Broadcasting System and CJ E&M in South Korea, and additional support from KOCCA."
+msgstr "'ט הוא מטוס סילון קטן ומהיר שמוסר חבילות לילדים מכל העולם. בביקוריו נחשף ג'ט למגוון של נופים מרהיבים, לפלאי העולם ולתרבויות זרות ועוזר לילדים להשיג את רצונותיהם בשיתוף פעולה עם יתר מטוסי העל."
 
 msgctxt "#107380
 msgid "The 7D defend the land of Jollywood from the magical villains Grim and Hildy Gloom who attempt to dethrone Queen Delightful and rule Jollywood.[1] The Glooms attempt to steal magical gems from the 7D mine to aid in their efforts."

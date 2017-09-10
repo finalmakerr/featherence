@@ -6,26 +6,35 @@ from shared_modules import *
 
 def mode0(admin, name, printpoint):
 	'''test'''
-	for i in range(90,120):
-		i_ = xbmc.getInfoLabel('Skin.String(label'+str(i)+')')
-		if i_ != "" and i_ != None:
-			setSkinSetting('0','id'+str(i),"")
-			setSkinSetting('0','label'+str(i),"")
-			setSkinSetting('0','action'+str(i),"")
-			setSkinSetting('0','color'+str(i),"")
-			setSkinSetting('0','icon'+str(i),"")
-			setSkinSetting('0','background'+str(i),"")
-			setSkinSetting('1','off'+str(i),"")
-			setSkinSetting('1','pwd'+str(i),"")
-			setSkinSetting('1','sub'+str(i),"")
-			setSkinSetting('0','sw'+str(i),"")
-			setSkinSetting('0','sw'+str(i)+'_name',"")
-	#xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/play/?video_id=WFwHq6cY040)')
+	emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')
+	rom_path = os.path.join(emulatordata_path,'rom','')
+	
+	DownloadFile("https://drive.google.com/uc?export=download&confirm=CCwH&id=0B_dmZM8wv6D9ZGRFU0d6OFZXdzA", '1.zip', temp_path, rom_path, percentinfo=2)
+	#DownloadFile("https://drive.google.com/uc?get=download&id=0B_dmZM8wv6D9ZGRFU0d6OFZXdzA", '1.zip', temp_path, rom_path, percentinfo=2)
+	#DownloadFile("https://drive.google.com/uc?export=download&id=0B7-ya5fAYJHWd0U5MmV4RDlYTVk?format=zip", '1', temp_path, rom_path, percentinfo=2)
+	#DownloadFile("https://docs.google.com/document/d/0B7-ya5fAYJHWd0U5MmV4RDlYTVk/export?format=zip", '1', temp_path, rom_path, percentinfo=2)
+	if 1 + 1 == 3:
+		for i in range(90,120):
+			i_ = xbmc.getInfoLabel('Skin.String(label'+str(i)+')')
+			if i_ != "" and i_ != None:
+				setSkinSetting('0','id'+str(i),"")
+				setSkinSetting('0','label'+str(i),"")
+				setSkinSetting('0','action'+str(i),"")
+				setSkinSetting('0','color'+str(i),"")
+				setSkinSetting('0','icon'+str(i),"")
+				setSkinSetting('0','background'+str(i),"")
+				setSkinSetting('1','off'+str(i),"")
+				setSkinSetting('1','pwd'+str(i),"")
+				setSkinSetting('1','sub'+str(i),"")
+				setSkinSetting('0','sw'+str(i),"")
+				setSkinSetting('0','sw'+str(i)+'_name',"")
+		
 	if 1 + 1 == 3:
 		finalurl = 'plugin://plugin.video.youtube/play/?video_id=WFwHq6cY040'
 		pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO) ; pl.add(finalurl)
 		playlist = [] ; playlist.append(finalurl)
 		xbmc.Player().play(pl)
+	#xbmc.executebuiltin('PlayMedia(plugin://plugin.video.youtube/play/?video_id=WFwHq6cY040)')
 
 def mode4(value, value2, value3, name, printpoint):
 	'''Action'''
@@ -2225,7 +2234,7 @@ def mode215(value, value2, name, printpoint):
 	if value == "_" or value == x:
 		'''ראשי'''
 		background = backgroundT.get('icon'+x)
-		if id != "" and id != None and 1 + 1 == 2:	
+		if id != "" and id != None:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id)) ; action = actionT.get('action'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(31814))
 			if not defaultactionbuttons or value2 == 'RESET' or action == "": setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.kids,return)')
@@ -2236,7 +2245,7 @@ def mode215(value, value2, name, printpoint):
 	x = '94' ; id = idT2.get(x)
 	if value == "_" or value == x:
 		'''ראשי'''
-		if id != "" and id != None and 1 + 1 == 2:	
+		if id != "" and id != None:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id)) ; action = actionT.get('action'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(2))
 			if not defaultactionbuttons or value2 == 'RESET' or action == "": setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.music,return)')
@@ -2247,18 +2256,18 @@ def mode215(value, value2, name, printpoint):
 	x = '95' ; id = idT2.get(x)
 	if value == "_" or value == x:
 		'''ראשי'''
-		if id != "" and id != None and 1 + 1 == 3:
+		if id != "" and id != None:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id)) ; action = actionT.get('action'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,"")
-			if not defaultactionbuttons or value2 == 'RESET' or action == "": setSkinSetting('0','action'+id,'')
-			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'')
+			if not defaultactionbuttons or value2 == 'RESET' or action == "": setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.youtube,return)')
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/music.png')
 			'''---------------------------'''	
 	
 	'''תמונות'''
 	x = '96' ; id = idT2.get(x)
 	if value == "_" or value == x:
 		'''ראשי'''
-		if id != "" and id != None and 1 + 1 == 2:	
+		if id != "" and id != None:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id)) ; action = actionT.get('action'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(1))
 			if not defaultactionbuttons or value2 == 'RESET' or action == "": setSkinSetting('0','action'+id,'ActivateWindow(Pictures)')
@@ -2269,7 +2278,7 @@ def mode215(value, value2, name, printpoint):
 	x = '97' ; id = idT2.get(x)
 	if value == "_" or value == x:
 		'''ראשי'''
-		if id != "" and id != None and 1 + 1 == 2:	
+		if id != "" and id != None:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id)) ; action = actionT.get('action'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,localize(8))
 			if not defaultactionbuttons or value2 == 'RESET' or action == "": setSkinSetting('0','action'+id,'ActivateWindow(MyWeather.xml)')
@@ -2291,7 +2300,7 @@ def mode215(value, value2, name, printpoint):
 	x = '99' ; id = idT2.get(x)
 	if value == "_" or value == x:
 		'''ראשי'''
-		if id != "" and id != None and 1 + 1 == 2:	
+		if id != "" and id != None:	
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id)) ; action = actionT.get('action'+str(id))
 			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,addonString(32803).encode('utf-8'))
 			if not defaultactionbuttons or value2 == 'RESET' or action == "": setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.featherence.docu,return)')
@@ -2761,6 +2770,7 @@ def mode233(value, admin, name, printpoint):
 					elif os.path.exists(x2): path = x2
 				else: path = featherenceservicebackgrounds_path
 				#xbmc.executebuiltin('Skin.SetImage(background'+y+',,'+path+')')
+				
 				returned_ = setPath(type=type,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
 				if returned_ != "": setSkinSetting('0','background'+y,to_unicode(returned_))
 				
@@ -2779,8 +2789,10 @@ def mode233(value, admin, name, printpoint):
 				#xbmc.executebuiltin('Skin.SetImage(icon'+y+',,'+path+')')
 				returned_ = setPath(type=2,mask="pic", folderpath=path, original=False) ; xbmc.sleep(500) ; property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
 				if returned_ != "": setSkinSetting('0','icon'+y,to_unicode(returned_))
+				
 			else: printpoint = printpoint + '9'
 			
+			#if property_temp2 != 'default':
 			setProperty('TEMP', '', type="home")
 			setProperty('TEMP2', '', type="home")
 			

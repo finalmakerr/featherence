@@ -1,4 +1,10 @@
 ------------------------
+Featherence Classico Plus (xx-xx-17)
+------------------------
+- Update Exodus's dynamic widget for movies and tvshows.
+- Update Israeli TV shows button.
+
+------------------------
 Featherence Classico Plus (20-Aug-17)
 ------------------------
 - Added Exodus's dynamic widget for movies and tvshows.

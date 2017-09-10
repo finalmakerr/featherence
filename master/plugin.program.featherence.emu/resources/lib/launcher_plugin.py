@@ -80,9 +80,7 @@ __settings__ = Addon( id="plugin.program.featherence.emu" )
 __lang__ = __settings__.getLocalizedString
 
 # Main code
-from shared_variables import *
-from shared_modules import *
-from modules import *
+from shared_variables import * ; from shared_modules import * ; from modules import * ; frun()
 
 class Main:
     launchers = {}

@@ -194,7 +194,7 @@
 				<visible>!Window.IsVisible(MyPVRChannels.xml)</visible>
 				<visible>!String.Contains(Container.FolderPath,special://userdata/library/videos/) + !String.Contains(Container.FolderPath,/var/media/) + !String.Contains(Container.FolderPath,special://home/external/)</visible>
 				<visible>!String.Contains(MusicPlayer.Title,featherence)</visible>
-				<width>400</width>
+				<width>500</width>
 			  </control>
 			  <control type="group">
 				  <visible>!Window.IsVisible(DialogExtendedProgressBar.xml) + !Window.IsVisible(DialogNotification.xml)</visible>

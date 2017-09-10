@@ -232,7 +232,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.extreme" version="0.1.8" name="Featherence Extreme" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.extreme" version="0.1.9" name="Featherence Extreme" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.24.0" />
 	<import addon="script.featherence.service" version="0.3.46"/>
@@ -311,7 +311,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.3.8" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.3.9" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.python" version="2.24.0" />
 	<import addon="script.featherence.service" version="0.3.46"/>
@@ -353,7 +353,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.rofl" name="Featherence ROFL" version="0.0.9" provider-name="finalmakerr , Lidor Malich">
+<addon id="plugin.video.featherence.rofl" name="Featherence ROFL" version="0.0.10" provider-name="finalmakerr , Lidor Malich">
   <requires>
     <import addon="xbmc.python" version="2.24.0" />
 	<import addon="script.featherence.service" version="0.3.46"/>

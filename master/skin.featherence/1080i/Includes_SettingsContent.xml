@@ -1961,6 +1961,7 @@
 		<property name="rinfo">$ADDON[script.featherence.service 32048] $ADDON[script.featherence.service 32049]</property>
 		<onclick>RunScript(script.featherence.service,,?mode=7)</onclick>
 		<visible>Container(100).Hasfocus(2)</visible>
+		<visible>false</visible>
 		<visible>Skin.HasSetting(Admin)</visible>
 	  </item>
 	  <item id="27" description="">

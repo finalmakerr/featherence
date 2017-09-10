@@ -559,9 +559,12 @@ def CleanString4(x):
 	return returned
 	
 def setPath(type=0,mask="", folderpath="", original=True):
-	setSkinSetting("0", 'TEMP', "")
 	name = 'setPath' ; printpoint = '' ; returned = "" ; count = 0
-	folderpath = to_utf8(folderpath)
+	folderpath = to_utf8(folderpath) ; TEMP = xbmc.getInfoLabel('Skin.String(TEMP)') ; x2 = "" ; x2_ = ""
+	
+	setSkinSetting("0", 'TEMP', "")
+	
+	
 	if mask == 'pic': mask = '.jpg|.jpeg|.JPEG|.bmp|.gif|.GIF|.png|.PNG'
 	elif mask == 'music': mask = '.mp3|.flac|.wav|.m3u'
 	if type == 0: xbmc.executebuiltin('Skin.SetPath(TEMP)')
@@ -579,17 +582,20 @@ def setPath(type=0,mask="", folderpath="", original=True):
 		dialogfilebrowserW = xbmc.getCondVisibility('Window.IsVisible(FileBrowser.xml)')
 		
 	xbmc.sleep(500)
-	#TEMP = xbmc.getInfoLabel('Window(home).Property(TEMP)')
-	TEMP = xbmc.getInfoLabel('Skin.String(TEMP)')
-	x2, x2_ = TranslatePath(TEMP, filename=True)
-	#x2, x2_ = TranslatePath(TEMP, filename=True)
+	property_temp2 = xbmc.getInfoLabel('Window(home).Property(TEMP2)')
+	if property_temp2 != 'default':
+		#TEMP = xbmc.getInfoLabel('Window(home).Property(TEMP)')
+		TEMP = xbmc.getInfoLabel('Skin.String(TEMP)')
+		x2, x2_ = TranslatePath(TEMP, filename=True)
+		#x2, x2_ = TranslatePath(TEMP, filename=True)
 
-	if x2 == "": notification_common("6")
-	elif original == True or x2_ == "": returned = x2
-	elif original == False: returned = x2_
+		if x2 == "": notification_common("6")
+		elif original == True or x2_ == "": returned = x2
+		elif original == False: returned = x2_
 	
 	text = 'type' + space2 + str(to_utf8(type)) + newline + \
 	'mask' + space2 + str(to_utf8(mask)) + newline + \
+	'property_temp2' + space2 + str(property_temp2) + newline + \
 	'folderpath' + space2 + str(to_utf8(folderpath)) + newline + \
 	'original' + space2 + str(to_utf8(original)) + newline + \
 	'x2' + space2 + str(to_utf8(x2)) + newline + \
@@ -1598,6 +1604,13 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 
 '''Below CODES are against Kodi's rules'''
 
+def frun():
+	skin = xbmc.getSkinDir()
+	if skin != "skin.featherence":
+		notification('Featherence is missing!','www.featherence.com','',4000)
+		sys.exit(0)
+	
+	
 def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percentinfo=""):
 	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = "" ; returned = ""
 	downloadpath2 = os.path.join(downloadpath, filename)

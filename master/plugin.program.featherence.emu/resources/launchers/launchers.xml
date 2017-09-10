@@ -29,6 +29,15 @@
 			<finished>false</finished>
 		</category>
 		<category>
+			<id>Featherence_gamecube</id>
+			<name>GameCube</name>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/gamecube.jpg</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<description></description>
+			<finished>false</finished>
+		</category>
+		<category>
 			<id>Featherence_nintendo</id>
 			<name>Nintendo</name>
 			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/nintendo.png</thumb>
@@ -16944,5 +16953,579 @@
 			</roms>
 		</launcher>
 		
+				<launcher>
+			<id>Featherence_gamecube1P</id>
+			<name>GameCube 1P</name>
+			<category>Featherence_gamecube</category>
+			<application>emulator_file</application>
+			<args>lib_args_gamecube_args "%rom%"</args>
+			<rompath>rom_pathGameCube/_1P/</rompath>
+			<thumbpath>rom_pathGameCube/_1P/_Artwork/boxfront/</thumbpath>
+			<fanartpath>rom_pathGameCube/_1P/_Artwork/screenshot/</fanartpath>
+			<trailerpath>rom_pathGameCube/_1P/_Artwork/gameplay(video)/</trailerpath>
+			<custompath></custompath>
+			<romext>iso</romext>
+			<platform>GameCube</platform>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/1P.png</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<release></release>
+			<publisher></publisher>
+			<launcherplot></launcherplot>
+			<finished>false</finished>
+			<minimize>false</minimize>
+			<lnk></lnk>
+			<roms>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10000</id>
+					<name>Harvest Moon - A Wonderful Life</name>
+					<filename>rom_pathGameCube/_1P/Harvest Moon - A Wonderful Life.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Harvest Moon - A Wonderful Life.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Harvest Moon - A Wonderful Life.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Simulation / Role-Playing</genre>
+					<release>2004</release>
+					<publisher>Natsume </publisher>
+					<gameplot>Harvest Moon: A Wonderful Life will span a lifetime on the farm and follow the drama that goes with it. Not only must you build and successfully run a farm, but you must also build a successful life with family and friends! This new Harvest Moon experience will take the best qualities of the series and add more...more animals, more vegetables and more drama! What sort of life will you live?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10001</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10002</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10003</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10004</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10005</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10006</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10007</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10008</id>
+					<name>Eternal Darkness</name>
+					<filename>rom_pathGameCube/_1P/Eternal Darkness.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Eternal Darkness.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Eternal Darkness.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure / Horror</genre>
+					<release>2002</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Eternal Darkness: Sanity's Requiem is a psychological horror action adventure, released in 2002 by Nintendo for the Gamecube. It tells the stories of twelve characters that span across the world and two millennia who have to deal with ancient forces of evil which have been trying to manifest themselves in our world. Chapters take place in Ancient Rome, Persia, the Middle East, and modern-day Rhode Island. Throughout the game, the protagonists will have access to several weapons appropriate for their era, from bastard sword & gladius to flintlock pistol and shotgun.The game features an involved Magic system, which allows different spells to be created through the combination of runes. These spells can attack enemies, dispel illusions, and heal both the body and items.Eternal Darkness: Sanity's Requiem also has a unique feature called Sanity. If an enemy sees a character, their Sanity meter drops. When Sanity gets low, hallucinations begin to plague the character. Walls bleed, voices whisper from nowhere, the camera gets disoriented. Sanity can be restored by dealing a finishing move on a dying enemy, or with spells or some items.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10009</id>
+					<name>Resident Evil 3 - Nemesis</name>
+					<filename>rom_pathGameCube/_1P/Resident Evil 3 - Nemesis.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Resident Evil 3 - Nemesis.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Resident Evil 3 - Nemesis.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure</genre>
+					<release>2006</release>
+					<publisher>Capcom</publisher>
+					<gameplot>The first half of the game occurs 24 hours prior to Resident Evil 2 and the second half takes place two days after. The storyline expands upon the settings and events of the T-virus outbreak in Raccoon City, and concludes with the fate of the city and its infected population.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10010</id>
+					<name>The Hobbit</name>
+					<filename>rom_pathGameCube/_1P/The Hobbit.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/The Hobbit.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/The Hobbit.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Platform</genre>
+					<release>2003</release>
+					<publisher>Sierra</publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+			</roms>
+		</launcher>
+		
+		<launcher>
+			<id>Featherence_gamecube2P</id>
+			<name>GameCube 2P</name>
+			<category>Featherence_gamecube</category>
+			<application>emulator_file</application>
+			<args>lib_args_gamecube_args "%rom%"</args>
+			<rompath>rom_pathGameCube/_2P/</rompath>
+			<thumbpath>rom_pathGameCube/_2P/_Artwork/boxfront/</thumbpath>
+			<fanartpath>rom_pathGameCube/_2P/_Artwork/screenshot/</fanartpath>
+			<trailerpath>rom_pathGameCube/_2P/_Artwork/gameplay(video)/</trailerpath>
+			<custompath></custompath>
+			<romext>iso</romext>
+			<platform>GameCube</platform>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/2P.png</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<release></release>
+			<publisher></publisher>
+			<launcherplot></launcherplot>
+			<finished>false</finished>
+			<minimize>false</minimize>
+			<lnk></lnk>
+			<roms>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f2p0000</id>
+					<name></name>
+					<filename>rom_pathGameCube/_2P/</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f2p0001</id>
+					<name>Dragon Ball Z - Sagas</name>
+					<filename>rom_pathGameCube/_2P/Dragon Ball Z - Sagas.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Dragon Ball Z - Sagas.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Dragon Ball Z - Sagas.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>2005</release>
+					<publisher>Atari</publisher>
+					<gameplot>Dragon Ball Z Sagas is a game that tells how the story of Dragon Ball Z began. You play as six heroes from the show such as Goku, Gohan, and Piccolo.[CR]Your mission is to recreate the elements of the Saiyan-Cell Games Sagas. Along the way you must face evil enemies, as well as collecting Z-Coins so you can upgrade some new abilities and moves and Capsules that can give you more fighting power and energy. At the end of some areas their will be a boss that you must defeat such as Raditz, Nappa, Captain Ginyu, Frieza and Cell. Single player mode features three difficulty levels easy, normal and hard.[CR]The game also has a Co-op mode where you can play in Sagas or Pendulum mode. You can select any chapter from the single player mode. It is similar to Single player mode, but the difficulty level is higher.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f2p0002</id>
+					<name></name>
+					<filename>rom_pathGameCube/_2P/</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f2p0003</id>
+					<name>Need for Speed - Most Wanted</name>
+					<filename>rom_pathGameCube/_2P/Need for Speed - Most Wanted.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Need for Speed - Most Wanted.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Need for Speed - Most Wanted.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>2005</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>The player arrives in Rockport City, driving a racing version of the BMW M3 GTR (E46). Following Mia Townsend (played by Josie Maran), the player proves his driving prowess as he is pursued by a veteran police officer named Sergeant Cross (played by Dean McKenzie), who vows to take down the player and end street racing in Rockport.Races seem to be in the player's favor until a particular group of racers, led by the game's antagonist, Clarence "Razor" Callahan (played by Derek Hamilton), sabotages and win the player's car in a race.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f2p0004</id>
+					<name></name>
+					<filename>rom_pathGameCube/_2P/</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f2p0005</id>
+					<name></name>
+					<filename>rom_pathGameCube/_2P/</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f2p0006</id>
+					<name></name>
+					<filename>rom_pathGameCube/_2P/</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f2p0007</id>
+					<name></name>
+					<filename>rom_pathGameCube/_2P/</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f2p0008</id>
+					<name></name>
+					<filename>rom_pathGameCube/_2P/</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f2p0009</id>
+					<name></name>
+					<filename>rom_pathGameCube/_2P/</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f2p0010</id>
+					<name></name>
+					<filename>rom_pathGameCube/_2P/</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+			</roms>
+		</launcher>
+	
+		<launcher>
+			<id>Featherence_gamecube4P</id>
+			<name>GameCube 4P</name>
+			<category>Featherence_gamecube</category>
+			<application>emulator_file</application>
+			<args>lib_args_gamecube_args "%rom%"</args>
+			<rompath>rom_pathGameCube/_4P/</rompath>
+			<thumbpath>rom_pathGameCube/_4P/_Artwork/boxfront/</thumbpath>
+			<fanartpath>rom_pathGameCube/_4P/_Artwork/screenshot/</fanartpath>
+			<trailerpath>rom_pathGameCube/_4P/_Artwork/gameplay(video)/</trailerpath>
+			<custompath></custompath>
+			<romext>iso</romext>
+			<platform>GameCube</platform>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/4P.png</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<release></release>
+			<publisher></publisher>
+			<launcherplot></launcherplot>
+			<finished>false</finished>
+			<minimize>false</minimize>
+			<lnk></lnk>
+			<roms>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0000</id>
+					<name>FIFA Street 2</name>
+					<filename>rom_pathGameCube/_4P/FIFA Street 2.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/FIFA Street 2.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/FIFA Street 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports</genre>
+					<release>2006</release>
+					<publisher>EA Sports</publisher>
+					<gameplot>FIFA Street 2 is the 2006 sequel to the EA Sports video game FIFA Street. A new "trick stick beat" system was introduced and new authentic tricks were also introduced. The game was released for the GameCube, Nintendo DS, PlayStation 2, PSP, Xbox, and mobile phones. The player on the game cover is Portugal international Cristiano Ronaldo.The home console editions of the game received average reviews for the improvements on the first FIFA Street. However, the hand-held versions, particularly on the DS, were received poorly for not including those innovations.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0001</id>
+					<name>Final Fantasy Crystal Chronicles</name>
+					<filename>rom_pathGameCube/_4P/Final Fantasy Crystal Chronicles.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Final Fantasy Crystal Chronicles.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Final Fantasy Crystal Chronicles.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Role-Playing</genre>
+					<release>2004</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Join a crystal caravan! A deadly miasma has swallowed the land, and it's up to you to hold it at bay! Many dangers lie along your journey, but you need not face them alone. Enlist your friends in a crystal caravan and make your mark together in the Crystal Chronicles!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0002</id>
+					<name>Custom Robo</name>
+					<filename>rom_pathGameCube/_4P/Custom Robo.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Custom Robo.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Custom Robo.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Role-Playing</genre>
+					<release>2004</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Get ready to enter a world of hypertech weapons, holosseums, and heavy-barrel battles. Custom Robo puts you in the pilot's seat of a state-of-the-art war machine in the not-too-distant future where crime and justice duke it out in virtual battlegrounds. With the game's powerful, innovative customization, you can construct your robot from the ground up using an arsenal of more than 200 parts and weapons, from guns and bombs to robo models and homing pods. Many weapons are freely available on the market, but some--deadly and highly illegal--can only be acquired in secret robo gambling rooms and from the hands of crime syndicates.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0003</id>
+					<name>Def Jam Vendetta</name>
+					<filename>rom_pathGameCube/_4P/Def Jam Vendetta.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Def Jam Vendetta.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Def Jam Vendetta.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Fighting / Sports</genre>
+					<release>2003</release>
+					<publisher>EA Sports BIG</publisher>
+					<gameplot>The unlikely combination of Def Jam recording artists and underground wrestling is the subject of this Electronic Arts release, which features the 3D likenesses of such musicians as Ludacris, Redman, DMX, Scarface, Ghostface Killa, Method Man, and more as playable characters. Developed by AKI Corporation, whose previous experience in the genre includes titles WWF No Mercy and WCW/NWO Revenge, Def Jam Vendetta offers an estimated 1,500 animations for each of the 45 included characters. A total of ten different venues are available, and one of the featured modes offers a storyline complete with soap opera-style drama to go along with the suplexes and body slams. Up to four players can compete in Single, Tag-Team, Handicap, or Battle Royale matches.EA combines the game-making prowess of Aki and the boisterous characters from hip-hop's Def Jam Records. The result is Def Jam Vendetta, a curious concoction that just might have the goods to attract hardcore and mainstream gamers alike. The game features 12 Def Jam artists including Redman, Method Man, Ludacris, DMX, N.O.R.E., and Scarface. As you make your way through the game, you'll be able to unlock all 45 characters plus aditional venues, girls, and concept art.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0004</id>
+					<name></name>
+					<filename>rom_pathGameCube/_4P/</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0005</id>
+					<name></name>
+					<filename>rom_pathGameCube/_4P/</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0006</id>
+					<name></name>
+					<filename>rom_pathGameCube/_4P/</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0007</id>
+					<name></name>
+					<filename>rom_pathGameCube/_4P/</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0008</id>
+					<name></name>
+					<filename>rom_pathGameCube/_4P/</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0009</id>
+					<name></name>
+					<filename>rom_pathGameCube/_4P/</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0010</id>
+					<name></name>
+					<filename>rom_pathGameCube/_4P/</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+			</roms>
+		</launcher>
+
 	</launchers>
+
 </advanced_launcher>
