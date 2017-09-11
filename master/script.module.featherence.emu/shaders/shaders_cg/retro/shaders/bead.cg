@@ -1,0 +1,93 @@
+/* COMPATIBILITY 
+   - HLSL compilers
+   - Cg   compilers
+*/
+
+/*
+   Author: Themaister
+   License: Public domain
+*/
+
+#pragma parameter BEAD_HIGH "Bead High" 0.35 0.0 1.0 0.01
+#pragma parameter BEAD_LOW  "Bead Low"  0.2  0.0 1.0 0.01
+
+#ifdef PARAMETER_UNIFORM
+uniform float BEAD_HIGH;
+uniform float BEAD_LOW;
+#else
+#define BEAD_HIGH 0.35
+#define BEAD_LOW  0.2
+#endif
+
+struct tex_coord
+{
+   float2 c11;
+   float2 pixel_no;
+};
+
+struct input
+{
+   float2 video_size;
+   float2 texture_size;
+   float2 output_size;
+   float  frame_count;
+   float  frame_direction;
+   float frame_rotation;
+};
+
+void main_vertex
+(
+   float4 position : POSITION,
+   out float4 oPosition : POSITION,
+   uniform float4x4 modelViewProj,
+
+   float4 color : COLOR,
+   out float4 oColor : COLOR,
+
+   float2 tex : TEXCOORD0,
+
+   uniform input IN,
+   out tex_coord coords : TEXCOORD1
+)
+{
+   oPosition = mul(modelViewProj, position);
+   oColor = color;
+
+   coords.c11 = tex;
+   coords.pixel_no = tex * IN.texture_size;
+}
+
+float dist(float2 coord, float2 source)
+{
+   float2 delta = coord - source;
+   return sqrt(dot(delta, delta));
+}
+
+float rolloff(float len)
+{
+   return exp(-6.0 * len);
+}
+
+
+float3 lookup(float2 pixel_no, float3 color)
+{
+   float delta = dist(frac(pixel_no), float2(0.5, 0.5));
+
+   if (delta > BEAD_LOW && delta < BEAD_HIGH)
+      return color;
+   else if (delta >= BEAD_HIGH)
+      return color * rolloff(delta - BEAD_HIGH);
+   else if (delta <= BEAD_LOW)
+      return color * rolloff(BEAD_LOW - delta);
+   else
+      return float3(0.0, 0.0, 0.0);
+}
+
+#define TEX(coord) tex2D(s0, co.coord).rgb
+
+float4 main_fragment(in tex_coord co : TEXCOORD1, uniform sampler2D s0 : TEXUNIT0) : COLOR
+{
+   float3 mid_color = lookup(co.pixel_no, TEX(c11));
+   return float4(mid_color, 1.0);
+}
+

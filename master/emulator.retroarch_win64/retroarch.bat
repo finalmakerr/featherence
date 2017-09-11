@@ -1,2 +1,0 @@
-retroarch.exe
-pause
