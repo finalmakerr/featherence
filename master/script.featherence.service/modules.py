@@ -9,9 +9,9 @@ def mode0(admin, name, printpoint):
 	emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')
 	rom_path = os.path.join(emulatordata_path,'rom','')
 	
-	DownloadFile("https://drive.google.com/uc?export=download&confirm=CCwH&id=0B_dmZM8wv6D9ZGRFU0d6OFZXdzA", '1.zip', temp_path, rom_path, percentinfo=2)
+	#DownloadFile("https://drive.google.com/uc?export=download&confirm=CCwH&id=0B_dmZM8wv6D9ZGRFU0d6OFZXdzA", '1.zip', temp_path, rom_path, percentinfo=2)
 	#DownloadFile("https://drive.google.com/uc?get=download&id=0B_dmZM8wv6D9ZGRFU0d6OFZXdzA", '1.zip', temp_path, rom_path, percentinfo=2)
-	#DownloadFile("https://drive.google.com/uc?export=download&id=0B7-ya5fAYJHWd0U5MmV4RDlYTVk?format=zip", '1', temp_path, rom_path, percentinfo=2)
+	DownloadFile("https://drive.google.com/uc?export=download&id=0B7-ya5fAYJHWeWttQWxWcmdaQzA", '1', temp_path, rom_path, percentinfo=2)
 	#DownloadFile("https://docs.google.com/document/d/0B7-ya5fAYJHWd0U5MmV4RDlYTVk/export?format=zip", '1', temp_path, rom_path, percentinfo=2)
 	if 1 + 1 == 3:
 		for i in range(90,120):
