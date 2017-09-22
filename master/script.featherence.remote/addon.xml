@@ -8,7 +8,14 @@
   <extension point="xbmc.addon.metadata">
 	<platform>all</platform>
     <summary>Control your OpenELEC with any standard Remote Control</summary>
-    <description></description>
+    <description lang="en">Available Remotes Brand:
+	LG
+	Philips
+	Pilot
+	Samsung
+	Sharp
+	Toshiba
+	</description>
     <disclaimer></disclaimer>
 	<email>finalmakerr@gmail.com</email>
 	<forum></forum>

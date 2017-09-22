@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.featherence.remote" name="Featherence Remote" version="0.1.3" provider-name="finalmakerr">
+<addon id="script.featherence.remote" name="Featherence Remote" version="0.1.4" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.python" version="2.24.0"/>
   </requires>
@@ -8,7 +8,14 @@
   <extension point="xbmc.addon.metadata">
 	<platform>all</platform>
     <summary>Control your OpenELEC with any standard Remote Control</summary>
-    <description></description>
+    <description lang="en">Available Remotes Brand:
+	LG
+	Philips
+	Pilot
+	Samsung
+	Sharp
+	Toshiba
+	</description>
     <disclaimer></disclaimer>
 	<email>finalmakerr@gmail.com</email>
 	<forum></forum>

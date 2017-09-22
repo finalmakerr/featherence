@@ -17480,16 +17480,16 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0008</id>
-					<name></name>
-					<filename>rom_pathGameCube/_4P/</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<name>Super Smash Bros Melee</name>
+					<filename>rom_pathGameCube/_4P/Super Smash Bros Melee.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Super Smash Bros Melee.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Super Smash Bros Melee.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action / Fighting / Platform</genre>
+					<release>2001</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Super Smash Bros. Melee differs from traditional fighting games in that inflicting the most damage does not guarantee victory. Instead, opposing players must force their opponents beyond the boundaries of the stage. Most attacks inflict damage and can, if enough damage is dealt, knock back the enemy. Each character's health is measured by a meter that represents the damage received as a percentage. The higher the percentage value, the farther the player gets knocked back, and the easier they are to knock off the stage. Unlike other games of the same genre, in which moves are entered by button-input combinations, most moves in Super Smash Bros. Melee can be accessed via one-button presses and a joystick direction.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>

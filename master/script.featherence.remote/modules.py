@@ -164,11 +164,11 @@ def testRemote(Remote_Name, Remote_Name2, Remote_TestingTime):
 				printpoint = printpoint + "7"
 				notification_common("9")
 				setProperty('Remote_Name', Remote_Name, type="home")
-				dialogok(addonString(32025).encode('utf-8'), addonString_servicehtpt(32030).encode('utf-8'),'[CR]' + localize(74828),"")
+				dialogok(addonString(32025).encode('utf-8'), addonString(32030).encode('utf-8'),'[CR]' + localize(74828),"")
 
 def cleartable():
 	#printpoint = printpoint + "1"
-	dialogok(addonString(32025).encode('utf-8') + space + localize(1223), addonString_servicehtpt(18).encode('utf-8'), "", localize(78984))
+	dialogok(addonString(32025).encode('utf-8') + space + localize(1223), addonString(18).encode('utf-8'), "", localize(78984))
 	setsetting('Remote_Name', 'None')
 	setProperty('Remote_Name', 'None', type="home")
 	setsetting('Remote_LastDate', datenowS)
