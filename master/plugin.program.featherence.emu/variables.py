@@ -135,6 +135,7 @@ else: coresinfo_path = cores_path
 
 '''Featherence Emu Module'''
 featherence_emu_module_path = os.path.join(addons_path, 'script.module.featherence.emu', '')
+featherence_emu_module2_path = os.path.join(addons_path, 'script.module.featherence.emu2', '')
 system_path = os.path.join(featherence_emu_module_path, 'system','')
 if systemplatformandroid: shader_path = os.path.join(emulator_path,'shaders_glsl','')
 else: shader_path = os.path.join(featherence_emu_module_path,'shaders','')
@@ -147,7 +148,7 @@ audio_filter_dir = os.path.join(featherence_emu_module_path,'filters','audio',''
 video_filter_dir = os.path.join(featherence_emu_module_path,'filters','video','')
 
 autoconfig_path2 = os.path.join(featherence_emu_module_path,'autoconfig','')
-assets_directory = os.path.join(featherence_emu_module_path,'assets','')
+assets_directory = os.path.join(featherence_emu_module2_path,'assets','')
 dynamic_wallpapers_directory = os.path.join(featherence_emu_module_path,'assets','wallpapers','')
 overlay_directory = os.path.join(featherence_emu_module_path,'overlay','')
 
