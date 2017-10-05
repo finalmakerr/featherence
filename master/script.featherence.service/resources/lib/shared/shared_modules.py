@@ -1605,11 +1605,7 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 '''Below CODES are against Kodi's rules'''
 
 def frun():
-	skin = xbmc.getSkinDir()
-	if skin != "skin.featherence":
-		notification('Featherence is missing!','www.featherence.com','',4000)
-		sys.exit(0)
-	
+	xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=14&value=Featherence_Code)')
 	
 def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percentinfo=""):
 	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = "" ; returned = ""
@@ -1900,12 +1896,10 @@ def installaddonP(addon, update=True):
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
 	
-	elif 'repository.metalkettle' in addon: #GITHUB PATH
-		if not 'resource.' in addon and not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
-			version = getVersion(addon, 'https://raw.githubusercontent.com/Shani-08/MetalKettles-Addon-Repository-1/master/addons.xml')
-			file = addon + '-' + str(version) + '.zip'
-			DownloadFile('https://github.com/Shani-08/MetalKettles-Addon-Repository-1/raw/master/zips/'+addon+'/'+file, file, packages_path, addons_path, silent=True)
-			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+	elif 'repository.mdrepo' in addon: #FIXED PATH
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("http://muckys.mediaportal4kodi.ml/repository.mdrepo-1.0.2.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon) or os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"

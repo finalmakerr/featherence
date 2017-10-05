@@ -52,6 +52,8 @@
 	  <setting id="Debug_PasswordKeeper" type="bool" default="false" label="32119" visible="false"/>
 	  <setting id="Debug_Title" type="text" default="" label="$LOCALIZE[369]" visible="false"/>
 	  <setting id="Debug_Message" type="text" default="" label="$LOCALIZE[15007]" visible="false"/>
+	  <setting id="Featherence_auth" type="text" default="" label="" visible="false"/>
+	  <setting id="Featherence_auth2" type="text" default="" label="" visible="false"/>
 	  <setting type="lsep" label=""/>
 	  <setting type="lsep" label="32120"/>
 	  <setting id="admin" type="bool" default="false" label="$LOCALIZE[20191]" visible="true"/>

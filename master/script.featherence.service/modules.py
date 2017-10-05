@@ -166,6 +166,31 @@ def mode6(value):
 	'currentpwd' + space2 + str(currentpwd) + newline
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
+def mode14(value, name, printpoint):
+	Featherence_auth = getsetting('Featherence_auth')
+	set1v = ""
+	
+	if Featherence_auth == Featherence_auth2:
+		printpoint = printpoint + '7'
+	else:
+		printpoint = printpoint + '1'
+		dialogok('Get your Featherence code by visit:','www.featherence.com/news','','',line2c='white')
+		returned, set1v = dialognumeric(0,'Featherence Code',"",'1','','') ; xbmc.sleep(500)
+		if set1v != Featherence_auth2:
+			printpoint = printpoint + '5'
+			notification(localize(12342),"","",1000)
+			xbmc.executebuiltin('ReplaceWindow(Home.xml)')
+		else:
+			printpoint = printpoint + '5'
+			notification("Thank you for visiting Featherence, friends :)","Please by all means, Enjoy Featherence's addons :)","",4000)
+			setsetting_custom1('script.featherence.service','Featherence_auth',set1v)
+	
+	text = 'value' + space2 + str(value) + newline + \
+	'set1v' + space2 + str(set1v) + newline + \
+	'Featherence_auth' + space2 + str(Featherence_auth) + newline + \
+	'Featherence_auth2' + space2 + str(Featherence_auth2)
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+	
 def mode8(admin, name, printpoint):
 	'''------------------------------
 	---SMART-SUBTITLE-SEARCH---------

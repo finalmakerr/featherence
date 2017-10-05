@@ -1015,6 +1015,7 @@ def getfileID(file):
 	elif file == "GameCube_1P_Resident Evil 3 - Nemesis.zip": fileID = "f8zwx2bq7twi17d" #featherence.guser18
 	elif file == "GameCube_4P_FIFA Street 2.zip": fileID = "vzo24s9kvz27tbl" #featherence.guser22
 	elif file == "GameCube_4P_Super Smash Bros Melee.zip": fileID = "455rbf1bsi8grh6" #featherence.guser19
+	elif file == "GameCube_4P_FIFA Street 2.zip": fileID = "kja0fjndelz2ct1" #featherence.guser20
 	
 	elif file == ".zip":
 		fileID_L.append('[GD]') #featherence.user1 [GD]

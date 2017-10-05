@@ -112,6 +112,14 @@ elif mode == 13:
 	name = "skinsettings 20-100"
 	mode13(value, name, printpoint)
 	'''---------------------------'''
+
+elif mode == 14:
+	'''------------------------------
+	---Featherence_Auth--------------
+	------------------------------'''
+	name = 'mode14 (Featherence_Auth)'
+	mode14(value, name, printpoint)
+	'''---------------------------'''
 	
 elif mode == 17:
 	'''------------------------------

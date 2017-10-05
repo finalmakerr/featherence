@@ -27,8 +27,8 @@
       <b>noop</b>
       <x>Back</x>
       <y>ContextMenu</y>
-      <start>ActivateWindow(PlayerControls)</start>
-      <back>PreviousMenu</back>
+      <start>Pause</start>
+      <back>FullScreen</back>
       <guide>ActivateWindow(Home)</guide>
       <up>Up</up>
       <down>Down</down>
@@ -66,11 +66,11 @@
   <FullscreenVideo>
     <joystick>
       <a>Pause</a>
-      <b>Stop</b>
-      <x>OSD</x>
-      <y>FullScreen</y>
-      <start>Info</start>
-      <back>Seek(-7)</back>
+      <b>noop</b>
+      <x>Back</x>
+      <y>OSD</y>
+      <start>Pause</start>
+      <back>FullScreen</back>
       <guide>ActivateWindow(Home)</guide>
       <up>ChapterOrBigStepForward</up>
       <down>ChapterOrBigStepBack</down>
@@ -80,16 +80,16 @@
       <rightthumb>AspectRatio</rightthumb>
       <lefttrigger>AnalogRewind</lefttrigger>
       <righttrigger>AnalogFastForward</righttrigger>
-      <leftbumper>AnalogRewind</leftbumper>
-      <rightbumper>AnalogFastForward</rightbumper>
+      <leftbumper>Action(VolumeDown)</leftbumper>
+      <rightbumper>Action(VolumeUp)</rightbumper>
       <leftstickleft>AnalogSeekBack</leftstickleft>
       <leftstickright>AnalogSeekForward</leftstickright>
-      <leftstickup>AnalogSeekForward</leftstickup>
-      <leftstickdown>AnalogSeekBack</leftstickdown>
-      <rightstickleft>VolumeDown</rightstickleft>
-      <rightstickright>VolumeUp</rightstickright>
-      <rightstickup>VolumeUp</rightstickup>
-      <rightstickdown>VolumeDown</rightstickdown>
+      <leftstickup>SubtitleDelayPlus</leftstickup>
+      <leftstickdown>SubtitleDelayMinus</leftstickdown>
+      <rightstickleft>noop</rightstickleft>
+      <rightstickright>noop</rightstickright>
+      <rightstickup>noop</rightstickup>
+      <rightstickdown>noop</rightstickdown>
     </joystick>
   </FullscreenVideo>
   <FullscreenLiveTV>

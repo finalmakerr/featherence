@@ -301,7 +301,7 @@
 	<!--Home.xml-->
 	<onup condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Control.IsVisible(9009)">9009</onup>
 	<onup condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + !Control.IsVisible(9009)">ActivateWindow(12901)</onup>
-	<ondown condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Control.IsVisible(700)">700</ondown>
+	<ondown condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Control.IsVisible(700) + !Control.IsVisible(9000)">700</ondown>
 	<ondown condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Control.IsVisible(9000)">9000</ondown>
 	<onleft condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + Skin.String(MenuDesign,4) + !String.IsEqual(System.Language,Hebrew)">9000</onleft>
 	<onleft condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)]">700</onleft>

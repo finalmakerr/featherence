@@ -322,11 +322,9 @@
   </variable>
   <variable name="VideoInformation3" description="מידע צדדי (11153)">
 	<value condition="!String.IsEmpty(ListItem.ChannelNumber) + !String.IsEmpty(ListItem.Progress)">$INFO[ListItem.ChannelNumber] $INFO[ListItem.Progress]</value>
-	<value condition="[Window.IsVisible(MyVideoNav.xml) | String.IsEmpty(Control.GetLabel(1101))]"></value>
 	<value condition="!String.IsEmpty(ListItem.ChannelNumber)">$INFO[ListItem.ChannelNumber]</value>
 	<value condition="Window.IsVisible(MyPics.xml) + !String.IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
 	<value condition="!String.IsEmpty(ListItem.Label2) + !String.IsEqual(ListItem.Label2,0 B) + !Window.IsVisible(MyVideoNav.xml)">$INFO[ListItem.Label2]</value>
-	<value condition="[!String.IsEmpty(Container.ListItemNoWrap(-1).Label2) | !String.IsEmpty(Container.ListItemNoWrap(1).Label2)] + !Window.IsVisible(MyVideoNav.xml)"></value>
   </variable>
   <variable name="VideoInformation4">
 	<value condition="Integer.IsGreater(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[33054]</value>

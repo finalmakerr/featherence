@@ -38,7 +38,7 @@
 		  <include condition="Window.IsVisible(10100)">BottomMenuDialogYesNo</include>
 		  <include condition="Window.IsVisible(12002)">BottomMenuDialogOk</include>
 		  <include condition="Window.IsVisible(10101)">BottomMenuDialogProgress</include>
-		  <include condition="Window.IsVisible(DialogBusy.xml)">BottomMenuDialogBusy</include>
+		  <include condition="Window.IsVisible(DialogBusy.xml) + !Window.IsVisible(12002)">BottomMenuDialogBusy</include>
 	  </control>
 	</control>
   </include>       

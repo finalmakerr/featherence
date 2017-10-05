@@ -356,13 +356,13 @@ def ListPlaylist2(name, url, iconimage, desc, num, viewtype, fanart):
 
 def OPEN_URL(url):
 	link = "" ; TypeError = ""
-	try:
-		req = urllib2.Request(url)
-		req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
-		response = urllib2.urlopen(req)
-		link=response.read()
-		response.close()
-	except Exception, TypeError: notification('OPEN_URL Error',str(TypeError),'',4000)
+	#try:
+	req = urllib2.Request(url)
+	req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
+	response = urllib2.urlopen(req)
+	link=response.read()
+	response.close()
+	#except Exception, TypeError: notification('OPEN_URL Error',str(TypeError),'',4000)
 	return link
 
 def PlayVideos(name, mode, url, iconimage, desc, num, fanart):
@@ -569,12 +569,9 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					'''---------------------------'''
 					
 				elif "&youtube_ch=" in x:
-					#try:
-					if 1 + 1 == 2:
-						finalurl, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(x, name, iconimage, desc, fanart, playlist=playlist, onlydata=False)
-						finalurl = playlist_L
-					#except Exception, TypeError: extra = extra + newline + "apimaster_TypeError" + space2 + str(TypeError) ; printpoint = printpoint + "6"
-					'''---------------------------'''
+					finalurl, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(x, name, iconimage, desc, fanart, playlist=playlist, onlydata=False)
+					finalurl = playlist_L
+					
 				elif "&youtube_pl=" in x:
 					#x = x.replace("&youtube_pl=","")
 					#try:
@@ -944,18 +941,19 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		
 		url = 'https://www.googleapis.com/youtube/v3/channels?forUsername='+x2+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
 		link = OPEN_URL(url)
-		#print 'link__' + space2 + str(link)
-		if '"totalResults": 0' in link or '"items": []' in link:
+		if '"totalResults": 0' in link or '"items": []' in link or link == "":
 			printpoint = printpoint + '2'
-			url = 'https://www.googleapis.com/youtube/v3/channels?id='+x2+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
+			if onlydata == True: url = 'https://www.googleapis.com/youtube/v3/channels?id='+x2+'&key='+api_youtube_featherence+'&part=snippet%2Cstatistics%2CcontentDetails&maxResults='+maxResults
+			else: url = 'https://www.googleapis.com/youtube/v3/channels?id='+x2+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
 			
-		if onlydata == True or link == "": url = ""
-		else:
-			link = OPEN_URL(url)
-			prms=json.loads(link)
-			try: id_ = str(prms['items'][i][u'id'])
-			except: id_ = str(prms['items'][i][u'snippet'][u'channelId'])
-			url = 'https://www.googleapis.com/youtube/v3/search?channelId='+id_+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
+		#if onlydata == True or link == "": url = ""
+		#if link == "": url = ""
+		#else:
+		link = OPEN_URL(url)
+		prms=json.loads(link)
+		try: id_ = str(prms['items'][i][u'id'])
+		except: id_ = str(prms['items'][i][u'snippet'][u'channelId'])
+		if onlydata != True or link == "": url = 'https://www.googleapis.com/youtube/v3/search?channelId='+id_+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
 
 	elif '&dailymotion_id=' in x:
 		title2 = '[Video]'
@@ -1094,7 +1092,12 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 						fanart_ = str(prms['items'][i][u'snippet'][u'thumbnails'][u'high'][u'url'])
 					except Exception, TypeError: extra = extra + newline + 'thumb TypeError: ' + str(TypeError) + space + 'i' + space2 + str(i) + space + 'id_' + space2 + str(id_)
 					desc_ = str(prms['items'][i][u'snippet'][u'description'].encode('utf-8'))
-					
+					if onlydata == True and 'statistics' in link:
+						views_ = str(prms['items'][i][u'statistics'][u'viewCount'].encode('utf-8')) ; views_ = space + 'View Counts: ' + str(views_)
+						subscriber_ = str(prms['items'][i][u'statistics'][u'subscriberCount'].encode('utf-8')) ; subscriber_ = space + 'Subscribers: ' + str(subscriber_)
+						videocount_ = str(prms['items'][i][u'statistics'][u'videoCount'].encode('utf-8')) ; subscriber_ = space + 'Videos Counts: ' + str(videocount_)
+						desc_ = desc_ + views_ + subscriber_ + videocount_
+						
 					
 					id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L, count, invalid__, duplicates__ = apimaster2(playlist, id_, id_L, finalurl_, playlist_L, title_, title_L, title2, thumb_, thumb_L, desc_, desc_L, fanart, fanart_, fanart_L, count, invalid__, duplicates__, i, i_='i')
 					
@@ -1199,10 +1202,12 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 	if except__ != "": extra = "except__" + space2 + str(except__) + "(" + str(len(except__)) + ")" + newline + extra
 	if playlist != []: extra = "playlist" + space2 + str(playlist) + newline + extra
 	
-	#'link' + space2 + str(link) + newline + \
+	if link != "": linkT = "True"
+	else: linkT = "False"
 	text = "i" + space2 + str(i) + space + "totalResults" + space2 + str(totalResults) + space + "numOfItems2" + space2 + str(numOfItems2) + newline + \
 	'onlydata' + space2 + str(onlydata) + newline + \
 	"x" + space2 + str(x) + newline + \
+	'link' + space2 + str(linkT) + newline + \
 	'url' + space2 + str(url) + newline + \
 	'prms' + space2 + str(prms) + newline + \
 	'finalurl_' + space2 + str(finalurl_) + newline + \
@@ -2007,6 +2012,7 @@ def pluginend(admin):
 	---MODES-LIST--------------------
 	------------------------------'''
 	if mode == None or ((url == None or len(url)<1) and mode < 100) or 1 + 1 == 3:
+		
 		if addonID == 'plugin.video.featherence.kids':
 			if General_Language == "":
 				CATEGORIES200()
@@ -2016,7 +2022,7 @@ def pluginend(admin):
 		
 		else: CATEGORIES()
 		
-		systemlanguage = xbmc.getInfoLabel('System.Language')
+		systemlanguage = xbmc.getInfoLabel('System.Language') ; frun()
 		
 		if 1 + 1 == 2:
 			getsetting('Addon_Update')
@@ -2025,6 +2031,7 @@ def pluginend(admin):
 			getsetting('Addon_UpdateLog')
 			getsetting('Addon_ShowLog')
 			getsetting('Addon_ShowLog2')
+			
 			
 			VerReset = ""
 			#if addonID == 'plugin.video.featherence.music' and Addon_Version == '0.0.17': VerReset = "true"
@@ -2049,7 +2056,7 @@ def pluginend(admin):
 						#installaddonP('repository.Jk$p', update=True)
 				
 					if 'English' in General_LanguageL:
-						installaddonP('repository.metalkettle', update=True)
+						installaddonP('repository.mdrepo', update=True)
 				
 		#except Exception, TypeError:
 			#extra = extra + newline + "TypeError" + space2 + str(TypeError)

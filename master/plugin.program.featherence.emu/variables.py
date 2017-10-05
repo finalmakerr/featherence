@@ -148,6 +148,7 @@ video_filter_dir = os.path.join(featherence_emu_module_path,'filters','video',''
 
 autoconfig_path2 = os.path.join(featherence_emu_module_path,'autoconfig','')
 assets_directory = os.path.join(featherence_emu_module_path,'assets','')
+dynamic_wallpapers_directory = os.path.join(featherence_emu_module_path,'assets','wallpapers','')
 overlay_directory = os.path.join(featherence_emu_module_path,'overlay','')
 
 '''Emulator userdata'''
@@ -230,6 +231,7 @@ staticL.append('video_filter_dir') ; static_L.append(video_filter_dir)
 staticL.append('audio_filter_dir') ; static_L.append(audio_filter_dir)
 staticL.append('core_assets_directory') ; static_L.append(core_assets_directory)
 staticL.append('assets_directory') ; static_L.append(assets_directory)
+staticL.append('dynamic_wallpapers_directory') ; static_L.append(dynamic_wallpapers_directory)
 staticL.append('rgui_config_directory') ; static_L.append(config_path)
 staticL.append('video_shader_dir') ; static_L.append(shader_path)
 staticL.append('video_shader') ; static_L.append(os.path.join(shader_path, '*','') + '.{cg,cgp,shader}')
