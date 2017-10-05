@@ -144,7 +144,7 @@
 	  
 	  <control type="image" id="7013" description="פאנארט 1">
 		<include>fanart3form</include>
-		<include>TopInformationSize11</include>
+		<include condition="!Window.IsVisible(DialogAddonSettings.xml) + !Window.IsVisible(DialogBusy.xml) + !Window.IsVisible(DialogConfirm.xml)">TopInformationSize11</include>
 		<animation condition="[$EXP[View54] | Control.IsVisible(56) | [Control.HasFocus(7017) + [$EXP[View57] | $EXP[View58]]] ] + Player.HasVideo + !$EXP[View50] + !Control.IsVisible(11) + !$EXP[View51] + !$EXP[View59]" effect="slide" start="0,0" end="0,552" time="700" reversible="false">Conditional</animation>
 		
 		<posx>0</posx>

@@ -176,7 +176,7 @@ def mode14(value, name, printpoint):
 			printpoint = printpoint + '2'
 		else:
 			printpoint = printpoint + '3'
-			returned2, value2 = getRandom(0, min=0, max=100, percent=40)
+			returned2, value2 = getRandom(0, min=0, max=100, percent=10)
 			if returned2 == 'ok':
 				setsetting_custom1('script.featherence.service','Featherence_auth',"")
 	else:
@@ -191,12 +191,14 @@ def mode14(value, name, printpoint):
 			printpoint = printpoint + '7'
 			notification("Thank you for visiting Featherence, friends :)","Please by all means, Enjoy Featherence's addons :)","",4000)
 			setsetting_custom1('script.featherence.service','Featherence_auth',set1v)
-			setsetting_custom1('script.featherence.service','Featherence_authDate',datenowS)
+			setsetting_custom1('script.featherence.service','Featherence_authdate',datenowS)
 	
 	text = 'value' + space2 + str(value) + newline + \
 	'set1v' + space2 + str(set1v) + newline + \
 	'Featherence_auth' + space2 + str(Featherence_auth) + newline + \
-	'Featherence_auth2' + space2 + str(Featherence_auth2)
+	'Featherence_auth2' + space2 + str(Featherence_auth2) + newline + \
+	'Featherence_authdate' + space2 + str(Featherence_authdate) + newline + \
+	'datenowS' + space2 + str(datenowS)
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 	
 def mode8(admin, name, printpoint):

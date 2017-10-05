@@ -4,6 +4,7 @@
   <controls>
     <!--<include>BlackBackground</include>-->
 	<include>Backgrounds3</include>
+	<include>TopInformationSize0</include>
     <control type="group" description="תפריט שמאל (9)">
 	  <include>Slide6</include>
       <height>530</height>

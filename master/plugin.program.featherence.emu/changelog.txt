@@ -9,7 +9,7 @@ WIP - WORK IN PROGRESS
 - Added G-Drive file storage support.
 
 ------------------------
-Featherence Emu v0.1.5 (xx-xx-17)
+Featherence Emu v0.1.5 (06-Oct-17)
 ------------------------
 - Added more information when download is failed (usually error 429 - The person who shared it hit their daily limit of traffic or downloads).
 - Added Kodi's PS3 mapping for Krypton.
