@@ -12,7 +12,8 @@ def CATEGORIES101Z(General_LanguageL, background, background2): #ערוצי טל
 	'''עברית'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&youtube_ch=') #
+		list.append('&youtube_pl=PLErYJg2XgxyXTMAJvmFXoW6Qe66Ztw0Fk') #
+		list.append('&youtube_pl=PLTleo-h9TFqJjTeFTqb73lgpJxW77BJkS') #
 		list.append('&youtube_ch=23music/playlists') #ערוץ החינוכית מוזיקה
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (addonString_servicefeatherence(32900).encode('utf-8')),list,17,"http://flaglane.com/download/israeli-flag/israeli-flag-medium.png",addonString_servicefeatherence(32082).encode('utf-8') % (addonString_servicefeatherence(32900).encode('utf-8')),'1',0,getAddonFanart(background, custom="http://pre15.deviantart.net/2dd4/th/pre/f/2015/166/3/2/israel_aph_by_wolf_kid1000-d8xdbyp.jpg"))
 		

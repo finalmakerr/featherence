@@ -14,6 +14,8 @@ def CATEGORIES101B(General_LanguageL, background, background2): #השירים ה
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_pl=PLGnTTJWIWt4ezrmDDx7WJCB18lC4brt4X') #שירי ילדים
+		list.append('&youtube_pl=PLTleo-h9TFqJjTeFTqb73lgpJxW77BJkS') #שירי ילדים
+		list.append('&youtube_pl=PLErYJg2XgxyXTMAJvmFXoW6Qe66Ztw0Fk') #שירי ילדים
 	addDir('-' + addonString(10101).encode('utf-8') % (addonString_servicefeatherence(32900).encode('utf-8')),list,17,"http://flaglane.com/download/israeli-flag/israeli-flag-medium.png",addonString(101010).encode('utf-8') % (addonString_servicefeatherence(32900).encode('utf-8')),'1',0,getAddonFanart(background, custom="http://pre15.deviantart.net/2dd4/th/pre/f/2015/166/3/2/israel_aph_by_wolf_kid1000-d8xdbyp.jpg"))
 		
 	'''אנגלית'''
