@@ -135,6 +135,11 @@
       <size>39</size>
       <style>bold</style>
     </font>
+	<font>
+      <name>size40</name>
+      <filename>arial.ttf</filename>
+      <size>40</size>
+    </font>
     <font>
       <name>size42</name>
       <filename>arial.ttf</filename>

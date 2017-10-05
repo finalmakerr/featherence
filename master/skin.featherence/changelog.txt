@@ -10,12 +10,13 @@ WIP - WORK IN PROGRESS
 - Added option to choose highlight font color.
 
 ------------------------
-Featherence v0.7.7 (xx-xx-17)
+Featherence v0.7.7 (05-Oct-17)
 ------------------------
 - Minor bugs fix.
 + In skin design and home window.
-+ When Super Widget and Standard Kodi Widget are active.
 + Show addon status (Disable, Enable, Uninstalled).
++ Time information font tweaked to fit screen.
++ When Super Widget and Standard Kodi Widget are active.
 
 ------------------------
 Featherence v0.7.6 (29-Aug-17)

@@ -92,15 +92,15 @@
   </include>
   <include name="LabelC31" description="(טקסט3/DEFAULT)">
     <align>center</align>
-	<font>size42</font>
+	<font>size40</font>
   </include>
   <include name="LabelR31" description="?">
     <align>right</align>
-	<font>size42</font>
+	<font>size40</font>
   </include>
   <include name="LabelL31" description="?">
     <align>left</align>
-	<font>size42</font>
+	<font>size40</font>
   </include>
   <include name="LabelC4" description="(טקסט4)">
     <align>center</align>

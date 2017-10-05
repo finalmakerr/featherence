@@ -1089,6 +1089,7 @@ def installemuconsole(force=False):
 		notification("OS and hardware are not supported!","www.featherence.com","",2000)
 	
 	installaddonP('script.module.featherence.emu', update=True)
+	installaddonP('script.module.featherence.emu2', update=True)
 	if not os.path.exists(emulator_path) and not '6' in printpoint: notification('Featherence Emu Console addon is missing!',"Manual download from addon settings","",4000)
 
 def copyconfig(force=False):

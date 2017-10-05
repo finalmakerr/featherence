@@ -36,6 +36,7 @@ Skin_Version = getsetting('Skin_Version')
 Skin_ShowLog = getsetting('Skin_ShowLog')
 Skin_ShowLog2 = getsetting('Skin_ShowLog2')
 Featherence_auth = getsetting('Featherence_auth')
+Featherence_authdate = getsetting('Featherence_authdate')
 
 ScreenSaver_Music = getsetting('ScreenSaver_Music')
 '''---------------------------'''

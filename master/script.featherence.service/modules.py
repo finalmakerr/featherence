@@ -171,19 +171,27 @@ def mode14(value, name, printpoint):
 	set1v = ""
 	
 	if Featherence_auth == Featherence_auth2:
-		printpoint = printpoint + '7'
-	else:
 		printpoint = printpoint + '1'
+		if Featherence_authdate == datenowS:
+			printpoint = printpoint + '2'
+		else:
+			printpoint = printpoint + '3'
+			returned2, value2 = getRandom(0, min=0, max=100, percent=40)
+			if returned2 == 'ok':
+				setsetting_custom1('script.featherence.service','Featherence_auth',"")
+	else:
+		printpoint = printpoint + '4'
 		dialogok('Get your Featherence code by visit:','www.featherence.com/news','','',line2c='white')
 		returned, set1v = dialognumeric(0,'Featherence Code',"",'1','','') ; xbmc.sleep(500)
 		if set1v != Featherence_auth2:
-			printpoint = printpoint + '5'
+			printpoint = printpoint + '8'
 			notification(localize(12342),"","",1000)
 			xbmc.executebuiltin('ReplaceWindow(Home.xml)')
 		else:
-			printpoint = printpoint + '5'
+			printpoint = printpoint + '7'
 			notification("Thank you for visiting Featherence, friends :)","Please by all means, Enjoy Featherence's addons :)","",4000)
 			setsetting_custom1('script.featherence.service','Featherence_auth',set1v)
+			setsetting_custom1('script.featherence.service','Featherence_authDate',datenowS)
 	
 	text = 'value' + space2 + str(value) + newline + \
 	'set1v' + space2 + str(set1v) + newline + \
@@ -2277,15 +2285,15 @@ def mode215(value, value2, name, printpoint):
 			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/music.png')
 			'''---------------------------'''
 	
-	'''ריק'''
+	'''YouTube'''
 	x = '95' ; id = idT2.get(x)
 	if value == "_" or value == x:
 		'''ראשי'''
 		if id != "" and id != None:
 			label = labelT.get('label'+str(id)) ; icon = iconT.get('icon'+str(id)) ; action = actionT.get('action'+str(id))
-			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,"")
+			if label == "" or label == "..." or value2 == 'RESET' or value2 == 'RESET-LABEL': setSkinSetting('0','label'+id,"YouTube")
 			if not defaultactionbuttons or value2 == 'RESET' or action == "": setSkinSetting('0','action'+id,'ActivateWindow(10025,plugin://plugin.video.youtube,return)')
-			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/music.png')
+			if icon == "" or value2 == 'RESET' or value2 == 'RESET-ICON': setSkinSetting('0','icon'+id,'special://home/addons/script.featherence.service/resources/icons/youtube.png')
 			'''---------------------------'''	
 	
 	'''תמונות'''

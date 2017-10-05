@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.featherence" version="0.7.6" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.7.7" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.12.0"/>
 	<import addon="script.featherence.service" version="0.2.14"/>
 	<!--<import addon="resource.uisounds.featherence" version="0.0.1"/>-->
   </requires>
   <extension point="xbmc.gui.skin" debugging="false">
-	<res width="1280" height="960" aspect="4:3" default="false" folder="1080i"/>
-	<res width="1706" height="960" aspect="16:9" default="false" folder="1080i"/>
-	<res width="1920" height="1440" aspect="4:3" default="false" folder="1080i" />
-	<res width="1920" height="1280" aspect="3:2" default="false" folder="1080i" />
-	<res width="1920" height="1200" aspect="16:10" default="false" folder="1080i" />
-	<res width="2560" height="1080" aspect="21:9" default="false" folder="1080i" />
-	<res width="1280" height="720" aspect="16:9" default="false" folder="1080i"/>
     <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
   </extension>
   <extension point="xbmc.addon.metadata">
