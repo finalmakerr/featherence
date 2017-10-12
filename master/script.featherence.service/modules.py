@@ -9,10 +9,21 @@ def mode0(admin, name, printpoint):
 	emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')
 	rom_path = os.path.join(emulatordata_path,'rom','')
 	
-	#DownloadFile("https://drive.google.com/uc?export=download&confirm=CCwH&id=0B_dmZM8wv6D9ZGRFU0d6OFZXdzA", '1.zip', temp_path, rom_path, percentinfo=2)
-	#DownloadFile("https://drive.google.com/uc?get=download&id=0B_dmZM8wv6D9ZGRFU0d6OFZXdzA", '1.zip', temp_path, rom_path, percentinfo=2)
-	DownloadFile("https://drive.google.com/uc?export=download&id=0B7-ya5fAYJHWeWttQWxWcmdaQzA", '1', temp_path, rom_path, percentinfo=2)
-	#DownloadFile("https://docs.google.com/document/d/0B7-ya5fAYJHWd0U5MmV4RDlYTVk/export?format=zip", '1', temp_path, rom_path, percentinfo=2)
+	download_file_from_google_drive('0B_dmZM8wv6D9U2ZWZDRfS3ZFLVU', os.path.join(temp_path,'1.zip'))
+	
+	#DownloadFile("https://googledrive.com/host/0B_dmZM8wv6D9ZzNncnVOUW1CVEk", '1.zip', temp_path, rom_path, percentinfo=2)
+	#DownloadFile("https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0B_dmZM8wv6D9ZzNncnVOUW1CVEk", '1.zip', temp_path, rom_path, percentinfo=2)
+	#DownloadFile("https://drive.google.com/uc?get=download&id=0B_dmZM8wv6D9ZzNncnVOUW1CVEk", '1.zip', temp_path, rom_path, percentinfo=2)
+	#DownloadFile("https://drive.google.com/uc?export=download&id=0B_dmZM8wv6D9ZzNncnVOUW1CVEk", '1', temp_path, rom_path, percentinfo=2)
+	#DownloadFile("https://docs.google.com/document/d/0B_dmZM8wv6D9ZzNncnVOUW1CVEk/export?format=zip", '1', temp_path, rom_path, percentinfo=2)
+	if 1 + 1 == 3:
+		path = os.path.join(addons_path, 'script.module.featherence.emu', 'config', '')
+		force = True
+		for file in os.listdir(path):
+			x = 'C:\\Users\\finalmakerr\\AppData\\Roaming\\Kodi\\userdata\\addon_data\\emulator.retroarch\\config\\'
+			if not os.path.exists(x) or force == True:
+				copyfiles(os.path.join(path,file), x)
+	
 	if 1 + 1 == 3:
 		for i in range(90,120):
 			i_ = xbmc.getInfoLabel('Skin.String(label'+str(i)+')')
@@ -565,7 +576,7 @@ def mode10(admin, name, printpoint):
 	'''------------------------------
 	---VideoPlayer demon-------------
 	------------------------------'''
-	xbmc.sleep(3000)
+	
 	if property_mode10 == "":
 		setProperty('mode10', 'true', type="home")
 		playerhasvideo = xbmc.getCondVisibility('Player.HasVideo')

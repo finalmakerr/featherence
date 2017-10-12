@@ -109,6 +109,11 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	list.append('&youtube_ch=UCEkZHiGsR4jvWeHunEB3Qaw')
 	addDir(addonString(30403).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=UCEkZHiGsR4jvWeHunEB3Qaw',0,getAddonFanart(background, default='getAPIdata', custom=""))
 	
+	'''Moto Madness'''
+	list = []
+	list.append('&youtube_ch=dirtyhusky69')
+	addDir(addonString(30413).encode('utf-8'),list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=dirtyhusky69',0,getAddonFanart(background, default='getAPIdata', custom=""))
+	
 	'''Remi Gillard'''
 	list = []
 	list.append('&youtube_ch=nqtv')
@@ -248,7 +253,6 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	list.append('&custom8=plugin://plugin.video.MakoTV/?iconimage=http%3a%2f%2fimg.mako.co.il%2f2014%2f07%2f17%2fB-kitzis_.jpg&mode=1&name=%d7%aa%d7%9b%d7%a0%d7%99%d7%aa%20%d7%a7%d7%99%d7%a6%d7%99%d7%a1&url=http%3a%2f%2fwww.mako.co.il%2fmako-vod-keshet%2fkitzis')
 	
 	addDir(addonString(30658).encode('utf-8'),list,17,thumb,desc_,'1',0,getAddonFanart(background, default=thumb, custom=""))
-	
 		
 def CATEGORIES103(name, iconimage, desc, fanart):
 	'''סטנדאפ ישראלי'''
@@ -790,6 +794,14 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	
 	list.append('&youtube_se='+commonsearch)
 	addDir(addonString(30818).encode('utf-8'),list,17,thumb,addonString(30819).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
+	
+	'''Conan O'Brien'''
+	fanart = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Conan_O%27Brien_by_Gage_Skidmore.jpg/1200px-Conan_O%27Brien_by_Gage_Skidmore.jpg' #גדול
+	thumb = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Conan_O%27Brien_by_Gage_Skidmore.jpg/330px-Conan_O%27Brien_by_Gage_Skidmore.jpg' #בינוני
+	list = []
+	
+	list.append('&youtube_se='+commonsearch)
+	addDir(addonString(30822).encode('utf-8'),list,17,thumb,addonString(30823).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''Dave Chappelle'''
 	fanart = 'http://mizhollywood.com/wp-content/uploads/2014/06/119747432-e1371518463818.jpg' #גדול

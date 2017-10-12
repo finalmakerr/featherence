@@ -4,15 +4,16 @@
 
 * Featherence Service:  Core addon for every addon used in Featherence.
 * Featherence Docu:     Nature, Science, Space, Technology and more..
+* Featherence Emu:      Let's play a game!
 * Featherence Kids:     My kids are loving it!
 * Featherence Extreme:  Watch sport extreme videos.
 * Featherence Music:    For people who love Music!
+* Featherence Remote:    
 * Featherence:          Beauty, Light and Modern interface.
 * Featherence ROFL:     What's so funny? :)
 
 # **Links:**
 
 * [Website](https://www.featherence.com/)
-* [Facebook](https://www.facebook.com/groups/featherence/)
 * [YouTube](https://www.youtube.com/user/finalmakerr)
 * [Featherence Repository](https://github.com/finalmakerr/featherence/raw/master/repository.featherence/repository.featherence-1.1.0.zip)

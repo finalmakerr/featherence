@@ -9,11 +9,23 @@ WIP - WORK IN PROGRESS
 - Added G-Drive file storage support.
 
 ------------------------
+Featherence Emu v0.1.6 (xx-Oct-17)
+------------------------
+- Major update of GameCube console.
++ Added default optimal core configuration.
++ Added few more games for GameCube per users requests.
++ Major update of fanart and download links for current available games.
+
+
+------------------------
 Featherence Emu v0.1.5 (06-Oct-17)
 ------------------------
 - Added more information when download is failed (usually error 429 - The person who shared it hit their daily limit of traffic or downloads).
 - Added Kodi's PS3 mapping for Krypton.
 - Added new console: GameCube (WIP).
++ In order to play for now you must one time enable option called Enable Hardware Shared Context.
++ Dolphin Core support only 1 controller for now.
++ Available games are very few atm but will upload more on demand.
 - Major update of Featherence's Emu Console for Windows 64 bit and Linux 64 bit.
 
 ------------------------

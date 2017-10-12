@@ -125,7 +125,7 @@
     <include descripton="פנל" condition="Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)">Menu_Home9000_0</include>
     <include descripton="מאוזן" condition="Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | !Skin.String(MenuDesign)">Menu_Home9000_1</include>
     <include descripton="מאוזן3" condition="Skin.String(MenuDesign,6)">Menu_Home9000_2</include>
-    <include descripton="מאומך" condition="Skin.String(MenuDesign,4)">Menu_Home9000_3</include>
+    <include descripton="מאונך" condition="Skin.String(MenuDesign,4)">Menu_Home9000_3</include>
   </include>
   
   <include name="Menu_Home9000_0">

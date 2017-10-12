@@ -1006,16 +1006,23 @@ def getfileID(file):
 	elif file == "Dreamcast_1P_Mr Driller.zip": fileID = "qya7f8ezviyuuty" #featherence.guser16
 	elif file == "Dreamcast_2P_The King of Fighters '99.zip": fileID = "8e83i6xwnai5pme" #featherence.guser16
 	
-	elif file == "GameCube_2P_Dragon Ball Z - Sagas.zip": fileID = "0ixd5o3khrzpxsn" #htptdebugout3
-	elif file == "GameCube_1P_Harvest Moon - A Wonderful Life.zip": fileID = "xphq4yi7pmjm9c8" #htptdebugout4
-	elif file == "GameCube_4P_Final Fantasy Crystal Chronicles.zip": fileID = "kjqid9mbk16jyvz" #htptdebugout
-	elif file == "GameCube_1P_The Hobbit.zip": fileID = "upipaypo68eafw8" #htptdebugout
-	elif file == "GameCube_1P_Eternal Darkness.zip": fileID = "l54zplyf17nw87y" #featherence.guser15
-	elif file == "GameCube_4P_Custom Robo.zip": fileID = "til1ueqxf0p6jew" #featherence.guser17
-	elif file == "GameCube_1P_Resident Evil 3 - Nemesis.zip": fileID = "f8zwx2bq7twi17d" #featherence.guser18
-	elif file == "GameCube_4P_FIFA Street 2.zip": fileID = "vzo24s9kvz27tbl" #featherence.guser22
-	elif file == "GameCube_4P_Super Smash Bros Melee.zip": fileID = "455rbf1bsi8grh6" #featherence.guser19
-	elif file == "GameCube_4P_FIFA Street 2.zip": fileID = "kja0fjndelz2ct1" #featherence.guser20
+	elif file == "GameCube_2P_Dragon Ball Z - Sagas.zip": fileID = "whko171pzg4xvpu" #htptdebugout3 V
+	elif file == "GameCube_1P_Harvest Moon - A Wonderful Life.zip": fileID = "xomv5o1u5abarpg" #htptdebugout4 V
+	
+	elif file == "GameCube_1P_The Hobbit.zip": fileID = "grjwl1dn5n6v3hd" #htptdebugout V
+	elif file == "GameCube_1P_Eternal Darkness.zip": fileID = "qyz7xkxm9z7pc37" #featherence.guser15 V
+	
+	elif file == "GameCube_2P_Need for Speed - Most Wanted.zip": fileID = "golzp2pv3p05ze3" #featherence.user23 V
+	elif file == "GameCube_1P_Beyond Good And Evil.zip": fileID = "ogosdnzb06fbuid" #featherence.user24
+	elif file == "GameCube_1P_MegaMan Network Transmission.zip": fileID = "52no9knaz7fx4x4" #featherence.user25
+	
+	elif file == "GameCube_1P_Resident Evil 3 - Nemesis.zip": fileID = "9u8wbt79c6zev16" #featherence.guser18 V
+	elif file == "GameCube_4P_Custom Robo.zip": fileID = "laxjkglh69uzq3i" #featherence.guser17 V
+	elif file == "GameCube_4P_Def Jam Vendetta.zip": fileID = "zekunpm2ehqo0rp" #featherence.user22 V
+	elif file == "GameCube_4P_FIFA Street 2.zip": fileID = "axypvfzxwor788a" #featherence.guser20 V
+	elif file == "GameCube_4P_Final Fantasy Crystal Chronicles.zip": fileID = "raw54ghb5cghxfr" #htptdebugout V
+	elif file == "GameCube_4P_Super Smash Bros Melee.zip": fileID = "va1jvchx86eryv5" #featherence.guser19 V
+	
 	
 	elif file == ".zip":
 		fileID_L.append('[GD]') #featherence.user1 [GD]
@@ -1100,7 +1107,8 @@ def copyconfig(force=False):
 		installemuconsole()
 	else:
 		for file in os.listdir(path):
-			x = os.path.join(config_path, file)
+			if os.path.isdir(os.path.join(path,file)): x = os.path.join(config_path, file) ; extra = extra + 'IsDir!'
+			else: x = os.path.join(config_path, file)
 			if not os.path.exists(x) or force == True:
 				copyfiles(os.path.join(path,file), x)
 			
@@ -1110,7 +1118,8 @@ def copyconfig(force=False):
 			mkdirs()
 			setconfig(force=True)
 
-	text = "extra" + space2 + str(extra)
+	text = "extra" + space2 + str(extra) + newline + \
+	'os.listdir(path)' + space2 + str(os.listdir(path))
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
 def copyautoconfig(force=False):

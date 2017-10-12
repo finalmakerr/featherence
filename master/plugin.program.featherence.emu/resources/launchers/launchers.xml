@@ -16953,7 +16953,7 @@
 			</roms>
 		</launcher>
 		
-				<launcher>
+		<launcher>
 			<id>Featherence_gamecube1P</id>
 			<name>GameCube 1P</name>
 			<category>Featherence_gamecube</category>
@@ -16977,37 +16977,52 @@
 			<lnk></lnk>
 			<roms>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78fp10000</id>
-					<name>Harvest Moon - A Wonderful Life</name>
-					<filename>rom_pathGameCube/_1P/Harvest Moon - A Wonderful Life.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Harvest Moon - A Wonderful Life.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Harvest Moon - A Wonderful Life.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Simulation / Role-Playing</genre>
-					<release>2004</release>
-					<publisher>Natsume </publisher>
-					<gameplot>Harvest Moon: A Wonderful Life will span a lifetime on the farm and follow the drama that goes with it. Not only must you build and successfully run a farm, but you must also build a successful life with family and friends! This new Harvest Moon experience will take the best qualities of the series and add more...more animals, more vegetables and more drama! What sort of life will you live?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10001</id>
-					<name></name>
-					<filename>rom_pathGameCube/_1P/.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<name>Beyond Good And Evil</name>
+					<filename>rom_pathGameCube/_1P/Beyond Good And Evil.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Beyond Good And Evil.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Beyond Good And Evil.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action / Adventure</genre>
+					<release>2003</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>Beyond Good & Evil takes place in the year 2435 on the mining planet of Hillys, located in Sector Four, a remote section of the galaxy. The architecture of the city around which the game takes place was designed with a rustic European style. The world itself combines modern elements, such as e-mail and credit cards, with those of science fiction and fantasy, such as spaceships and anthropomorphic animals coexisting with humans. The once-peaceful planet is under siege by aliens called the DomZ that abduct beings and either drain their life force for power or implant them with spores to convert them into slaves. A military dictatorship called the Alpha Sections takes power, promising to defend the populace. However, the Alpha Sections seem unable to stop the DomZ despite their public assurances. An underground resistance movement, the IRIS Network, fights the Alpha Sections, believing them to be in league with the DomZ.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10002</id>
+					<name>Chibi Robo</name>
+					<filename>rom_pathGameCube/_1P/Chibi Robo.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Chibi Robo.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Chibi Robo.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure / Platform</genre>
+					<release>2006</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Like most families, the Sandersons bicker about money and cleaning. Unlike most families, though, they also have robotic spiders, aliens, and talking toys to worry about. Enter Chibi-Robo, a tiny robot programmed to spread happiness. Join him on his quest to restore order to the Sanderson house and SAVE THE WORLD!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10003</id>
+					<name>SpongeBob SquarePants - Battle for Bikini Bottom</name>
+					<filename>rom_pathGameCube/_1P/SpongeBob SquarePants - Battle for Bikini Bottom.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/SpongeBob SquarePants - Battle for Bikini Bottom.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/SpongeBob SquarePants - Battle for Bikini Bottom.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Platform</genre>
+					<release>2003</release>
+					<publisher>THQ</publisher>
+					<gameplot>In an effort to cause the kind of global mayhem he has always dreamed of, the evil Plankton has set in motion his most diabolical plot ever to take over the world. The fate of Bikini Bottom has been put in the hands (or small tentacles) of three unsuspecting heroes. Put your platform skills to the test as SpongeBob, Patrick, or Sandy Cheeks, with an array of insane new maneuvers and power-ups at your disposal. Explore a huge 3D world, encounter familiar friends, and finally put an end to Plankton's evil scheme.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10033</id>
 					<name></name>
 					<filename>rom_pathGameCube/_1P/.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
@@ -17022,7 +17037,97 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78fp10003</id>
+					<id>7d2gcd81ea61668385a37ed78fp10034</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10035</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10036</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10037</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10038</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10039</id>
+					<name></name>
+					<filename>rom_pathGameCube/_1P/.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10040</id>
 					<name></name>
 					<filename>rom_pathGameCube/_1P/.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
@@ -17038,61 +17143,16 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10004</id>
-					<name></name>
-					<filename>rom_pathGameCube/_1P/.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<name>Pac-Man World 3</name>
+					<filename>rom_pathGameCube/_1P/Pac-Man World 3.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Pac-Man World 3.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Pac-Man World 3.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>7d2gcd81ea61668385a37ed78fp10005</id>
-					<name></name>
-					<filename>rom_pathGameCube/_1P/.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>7d2gcd81ea61668385a37ed78fp10006</id>
-					<name></name>
-					<filename>rom_pathGameCube/_1P/.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>7d2gcd81ea61668385a37ed78fp10007</id>
-					<name></name>
-					<filename>rom_pathGameCube/_1P/.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action / Platform</genre>
+					<release>2005</release>
+					<publisher>Namco</publisher>
+					<gameplot>Pac-Man returns to the platforming challenges of Pac World in this third 3D adventure, which allies the dot-munching master with a couple of his oldest rivals. A misguided mastermind named Erwin believes he's found a way to enter the Spectral Realm at will, but his machine is tearing at the very fabric of reality, and will cause the collapse of the ghosts' home plane of existence if it's not stopped. In desperation, Clyde and Pinky teleport Pac to their realm, in the hope that he can help save it before it disappears into nothingness. To overcome the many challenges of this transdimensional dilemma, Pac can run, jump, and punch, use a variety of power-ups, and even wield influence over the flow of time. Pinky and Clyde can do their part to help the cause, as both are playable in the game. For longtime fans of the arcade icon, some Pac-Man World 3 levels are based on original Pac-Man mazes, and an emulation of the coin-op sensation is included as well.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17112,6 +17172,51 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10000</id>
+					<name>Harvest Moon - A Wonderful Life</name>
+					<filename>rom_pathGameCube/_1P/Harvest Moon - A Wonderful Life.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Harvest Moon - A Wonderful Life.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Harvest Moon - A Wonderful Life.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Simulation / Role-Playing</genre>
+					<release>2004</release>
+					<publisher>Natsume </publisher>
+					<gameplot>Harvest Moon: A Wonderful Life will span a lifetime on the farm and follow the drama that goes with it. Not only must you build and successfully run a farm, but you must also build a successful life with family and friends! This new Harvest Moon experience will take the best qualities of the series and add more...more animals, more vegetables and more drama! What sort of life will you live?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10005</id>
+					<name>MegaMan Network Transmission</name>
+					<filename>rom_pathGameCube/_1P/MegaMan Network Transmission.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/MegaMan Network Transmission.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/MegaMan Network Transmission.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Platform</genre>
+					<release>2003</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Mega Man Network Transmission, known in Japan as Rockman EXE Transmission, is a video game developed by Arika and published by Capcom and ShoPro Entertainment for the Nintendo GameCube console.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10006</id>
+					<name>Rayman 3 - Hoodlum Havoc</name>
+					<filename>rom_pathGameCube/_1P/Rayman 3 - Hoodlum Havoc.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Rayman 3 - Hoodlum Havoc.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Rayman 3 - Hoodlum Havoc.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Platform</genre>
+					<release>2003</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>Rayman's universe has fallen into a chaotic world of wicked powers, bizarre characters, and merciless combat. When Globox accidentally swallows the Lord of the Dark Lums, a fanatic army of trigger-happy Hoodlums wreaks total havoc to get their Lord back. Rayman's only chance is to purge the Dark Lum Lord from the manic Globox, scour the lands for new powers, and battle with hordes of Hoodlum soldiers. Even without arms or legs, Rayman can still unleash an arsenal of special powers and fighting moves.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10009</id>
 					<name>Resident Evil 3 - Nemesis</name>
 					<filename>rom_pathGameCube/_1P/Resident Evil 3 - Nemesis.iso</filename>
@@ -17123,6 +17228,21 @@
 					<release>2006</release>
 					<publisher>Capcom</publisher>
 					<gameplot>The first half of the game occurs 24 hours prior to Resident Evil 2 and the second half takes place two days after. The storyline expands upon the settings and events of the T-virus outbreak in Raccoon City, and concludes with the fate of the city and its infected population.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10007</id>
+					<name>Skies of Arcadia Legends</name>
+					<filename>rom_pathGameCube/_1P/Skies of Arcadia Legends.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Skies of Arcadia Legends.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Skies of Arcadia Legends.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Role-Playing</genre>
+					<release>2003</release>
+					<publisher>Sega</publisher>
+					<gameplot>Battle to Save Arcadia![CR]You are Vyse, a young pirate on a quest to save Arcadia. Wage battle against an evil Empire as you make a name for yourself on land and in the sky. Will you become a Legend?[CR]-New "Wanted" Battles, new characters, weapons, and more![CR]-An improved battle engine featuring spectacular special attacks[CR]-Experience the Director's Cut with hours of new gameplay![CR]-Employ devastating weapons and magic[CR]-Explore a full 3D world to recruit up to 22 crew members</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17259,16 +17379,16 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f2p0006</id>
-					<name></name>
-					<filename>rom_pathGameCube/_2P/</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<name>The Sims Bustin Out</name>
+					<filename>rom_pathGameCube/_2P/The Sims Bustin Out.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/The Sims Bustin Out.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/The Sims Bustin Out.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Simulation / Life</genre>
+					<release>2003</release>
+					<publisher>Maxis</publisher>
+					<gameplot>The Sims Bustin' Out is the second title in The Sims console series and the first The Sims title to not be released on PC. It featured the same 3D environment and engine the past game did, however adds several features from The Sims expansion packs: The Sims: Hot Date, The Sims: Superstar, and The Sims: Livin' Large. Bustin' Out was released for the Game Boy Advance, GameCube, PlayStation 2, Xbox and N-Gage in the fourth quarter of 2003. As the title suggests, the Sims can get out of the house to visit other locations such as Shiny Things Lab or Casa Caliente. There are two modes. Bust Out Mode which has mission based gameplay and Freeplay Mode which is open-ended gameplay very much like the original The Sims PC game.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17359,32 +17479,17 @@
 			<lnk></lnk>
 			<roms>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78f4p0000</id>
-					<name>FIFA Street 2</name>
-					<filename>rom_pathGameCube/_4P/FIFA Street 2.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/FIFA Street 2.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/FIFA Street 2.jpg</fanart>
+					<id>7d2gcd81ea61668385a37ed78f4p0004</id>
+					<name>1080 Avalanche</name>
+					<filename>rom_pathGameCube/_4P/1080 Avalanche.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/1080 Avalanche.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/1080 Avalanche.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Sports</genre>
-					<release>2006</release>
-					<publisher>EA Sports</publisher>
-					<gameplot>FIFA Street 2 is the 2006 sequel to the EA Sports video game FIFA Street. A new "trick stick beat" system was introduced and new authentic tricks were also introduced. The game was released for the GameCube, Nintendo DS, PlayStation 2, PSP, Xbox, and mobile phones. The player on the game cover is Portugal international Cristiano Ronaldo.The home console editions of the game received average reviews for the improvements on the first FIFA Street. However, the hand-held versions, particularly on the DS, were received poorly for not including those innovations.</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>7d2gcd81ea61668385a37ed78f4p0001</id>
-					<name>Final Fantasy Crystal Chronicles</name>
-					<filename>rom_pathGameCube/_4P/Final Fantasy Crystal Chronicles.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Final Fantasy Crystal Chronicles.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Final Fantasy Crystal Chronicles.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Action / Role-Playing</genre>
-					<release>2004</release>
+					<genre>Racing / Sports</genre>
+					<release>2003</release>
 					<publisher>Nintendo</publisher>
-					<gameplot>Join a crystal caravan! A deadly miasma has swallowed the land, and it's up to you to hold it at bay! Many dangers lie along your journey, but you need not face them alone. Enlist your friends in a crystal caravan and make your mark together in the Crystal Chronicles!</gameplot>
+					<gameplot>1080° Avalanche is a snowboarding game for the Nintendo GameCube, developed by Nintendo's in-house development studio, NST, and published by Nintendo. Avalanche is a sequel to 1080° Snowboarding for the Nintendo 64. The game has an emphasis on racing, rather than doing tricks, in contrast to other popular snowboarding games, such as the SSX series. It can output in 480p and Dolby Pro Logic II and supports four players on one GameCube as well as LAN play with up to four GameCubes.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17419,47 +17524,62 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78f4p0004</id>
-					<name></name>
-					<filename>rom_pathGameCube/_4P/</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<id>7d2gcd81ea61668385a37ed78f4p0000</id>
+					<name>FIFA Street 2</name>
+					<filename>rom_pathGameCube/_4P/FIFA Street 2.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/FIFA Street 2.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/FIFA Street 2.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Sports</genre>
+					<release>2006</release>
+					<publisher>EA Sports</publisher>
+					<gameplot>FIFA Street 2 is the 2006 sequel to the EA Sports video game FIFA Street. A new "trick stick beat" system was introduced and new authentic tricks were also introduced. The game was released for the GameCube, Nintendo DS, PlayStation 2, PSP, Xbox, and mobile phones. The player on the game cover is Portugal international Cristiano Ronaldo.The home console editions of the game received average reviews for the improvements on the first FIFA Street. However, the hand-held versions, particularly on the DS, were received poorly for not including those innovations.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0001</id>
+					<name>Final Fantasy Crystal Chronicles</name>
+					<filename>rom_pathGameCube/_4P/Final Fantasy Crystal Chronicles.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Final Fantasy Crystal Chronicles.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Final Fantasy Crystal Chronicles.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Role-Playing</genre>
+					<release>2004</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Join a crystal caravan! A deadly miasma has swallowed the land, and it's up to you to hold it at bay! Many dangers lie along your journey, but you need not face them alone. Enlist your friends in a crystal caravan and make your mark together in the Crystal Chronicles!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0005</id>
-					<name></name>
-					<filename>rom_pathGameCube/_4P/</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<name>Gauntlet - Dark Legacy</name>
+					<filename>rom_pathGameCube/_4P/Gauntlet - Dark Legacy.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Gauntlet - Dark Legacy.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Gauntlet - Dark Legacy.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action</genre>
+					<release>2002</release>
+					<publisher>Midway</publisher>
+					<gameplot>Gauntlet: Dark Legacy is the follow-up to Gauntlet: Legends and another installment in the long-running Gauntlet series of hack-and-slash action games. As with all the Gauntlet games, you play a medieval fantasy character who, along with allies if you have them, fights his or her way through hordes of evil creatures on the never ending quest for more gold and perhaps even an eventual goal.[CR]This version contains the characters and levels from Gauntlet: Legends, plus the new characters and levels from the Dark Legacy arcade game, with a few extra levels thrown in.[CR]There are eight characters to initially choose from: the mighty Warrior, the deadly Valkyrie, the quick-footed Archer, the powerful Wizard, the spellcasting Sorceress, the stalwart Knight, the valiant Dwarf, and the chaotic Jester. Although there are similarities between characters from the two games, each character looks and plays differently. In addition, there are eight alternative-modes for these characters to unlock, plus dozens of secret characters to obtain. With a multi-tap, up to four players can play, with rules governing how much they can hurt each other. Unlike the original Gauntlets, the levels you'll face take place in various terrain from forests to mountains to volcanic plains. Many of the monsters are familiar to old fans of the series, but there are some new blood among the ranks of evil, including some rather large foes.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0006</id>
-					<name></name>
-					<filename>rom_pathGameCube/_4P/</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<name>Gotcha Force</name>
+					<filename>rom_pathGameCube/_4P/Gotcha Force.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Gotcha Force.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Gotcha Force.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Fighting</genre>
+					<release>2003</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Gotcha Force is a fighting / third-person shooter video game developed and published by Capcom for the GameCube in 2003. The game consists primarily of collecting small toys, called Gotcha Borgs, and battling with them.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>

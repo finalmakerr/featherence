@@ -1136,35 +1136,44 @@ def movefiles(source, target):
 		
 def copyfiles(source, target):
 	'''Copy files/folders'''
-	name = 'copyfiles' ; printpoint = "" ; source1 = source[-1:] ; targetdir = "" ; TypeError = "" ; extra = ""
+	name = 'copyfiles' ; printpoint = "" ; source1 = source[-1:] ; sourcedir = "" ; targetdir = "" ; TypeError = "" ; extra = ""
 
 	import shutil
 	try:
 		if os.path.isdir(source) == True:
 			printpoint = printpoint + "1"
+			sourcedir = os.path.basename(source)
+			#sourcedir = source.replace(sourcedir, "", 1)
+			if not os.path.exists(os.path.join(target)):
+				printpoint = printpoint + "2"
+				os.mkdir(os.path.join(target))
+
 			copytree(source, target, symlinks=False, ignore=None)
 		else:
-			printpoint = printpoint + "2"
+			printpoint = printpoint + "3"
 			targetdir = os.path.basename(target)
 			targetdir = target.replace(targetdir, "", 1)
 			
 			if not os.path.exists(targetdir):
-				printpoint = printpoint + "3"
+				printpoint = printpoint + "4"
 				os.mkdir(targetdir)
 			if os.path.isfile(source) == True:
-				printpoint = printpoint + "4"
+				printpoint = printpoint + "5"
 				shutil.copy(source, target)
 				#shutil.copyfile(source, target)
 			else:
-				printpoint = printpoint + "5"
+				printpoint = printpoint + "6"
 				shutil.copy(source, target)
-				#terminal('cp -rf '+source+' '+target+'',name + space2 + source + space5 + target) ; printpoint = printpoint + "3"
 			
 	except Exception, TypeError:
 		try: extra = extra + newline + "TypeError" + space2 + str(TypeError)
 		except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + 'Unknown'
 
-	text = "source" + space2 + to_utf8(source) + space + "target" + space2 + to_utf8(target) + space + "source1" + space2 + to_utf8(source1) + space + 'targetdir' + space2 + to_utf8(targetdir) + extra
+	text = "source" + space2 + to_utf8(source) + newline + \
+	"target" + space2 + to_utf8(target) + newline + \
+	"source1" + space2 + to_utf8(source1) + newline + \
+	'targetdir' + space2 + to_utf8(targetdir) + newline + \
+	'sourcedir' + space2 + to_utf8(sourcedir) + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
 def notification_common(custom, message2=""):
@@ -1606,7 +1615,46 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 
 def frun():
 	xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=14&value=Featherence_Code)')
+
+def download_file_from_google_drive(id, destination):
+	name = 'download_file_from_google_drive' ; printpoint = "" ; returned = ""
+	import requests
+	def get_confirm_token(response):
+		for key, value in response.cookies.items():
+			if key.startswith('download_warning'):
+				return value
+		
+		return None
+		
+	def save_response_content(response, destination):
+		CHUNK_SIZE = 32768
+		
+		with open(destination, "wb") as f:
+			for chunk in response.iter_content(CHUNK_SIZE):
+				if chunk: # filter out keep-alive new chunks
+					pass #f.write(chunk)
 	
+	URL = "https://docs.google.com/uc?export=download"
+	
+	session = requests.Session()
+	
+	response = session.get(URL, params = { 'id' : id }, stream = True)
+	token = get_confirm_token(response)
+	
+	if token:
+		params = { 'id' : id, 'confirm' : token }
+		response = session.get(URL, params = params, stream = True)
+	
+	save_response_content(response, destination)
+
+	
+	text = "returned" + space2 + str(returned) + newline + \
+	"id" + space2 + str(id) + newline + \
+	'destination' + space2 + str(destination) + newline + \
+	'response' + space2 + str(response) + newline + \
+	'token' + space2 + str(token) + newline
+	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
+		
 def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percentinfo=""):
 	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = "" ; returned = ""
 	downloadpath2 = os.path.join(downloadpath, filename)

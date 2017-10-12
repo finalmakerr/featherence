@@ -65,7 +65,7 @@ featherenceservicebackgrounds_path = os.path.join(addons_path, 'resource.images.
 systemlanguage = xbmc.getInfoLabel('System.Language')
 containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
 '''---------------------------'''
-Featherence_auth2 = '2030'
+Featherence_auth2 = '2580'
 
 '''------------------------------
 ---Window(Home).Property(key)----
