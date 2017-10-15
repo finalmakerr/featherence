@@ -7,6 +7,11 @@ WIP - WORK IN PROGRESS
 ------------------------
 
 ------------------------
+Featherence Kids v0.2.22 (xx-xx-17)
+------------------------
+- Added new YouTube API for better performance.
+
+------------------------
 Featherence Kids v0.2.21 (05-Oct-17)
 ------------------------
 - Added more songs for kids (Hebrew).

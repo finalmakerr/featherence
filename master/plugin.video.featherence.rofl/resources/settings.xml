@@ -35,6 +35,11 @@
 		<setting type="lsep" label="$ADDON[script.featherence.service 32075]" visible="eq(-3,true) + eq(-1,true)"/>
 	</category>
 	
+	<category label="Cache" description="">
+	  <setting label="Video pages cache time" type="number" id="page_cache" default="1000000000"/>
+	  <setting label="Main page cache time" type="number" id="main_cache" default="300"/>
+	</category>
+	
 	<category label="About" description="About">
 		<setting type="lsep" label=""/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32079]"/>

@@ -7,6 +7,11 @@ WIP (WORK IN PROGRESS)
 -----------------------
 
 ------------------------
+Featherence Music v0.3.10 (xx-xx-17)
+------------------------
+- Added new YouTube API for better performance.
+
+------------------------
 Featherence Music v0.3.9 (12-June-17)
 ------------------------
 - Minor links update.

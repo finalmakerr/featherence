@@ -1,4 +1,10 @@
 ------------------------
+Featherence Classico Plus (19-10-17)
+------------------------
+- Added script.quasar.burst and plugin.video.quasar optimal settings.
+- Update Israeli TV shows button.
+
+------------------------
 Featherence Classico Plus (04-10-17)
 ------------------------
 - Update Exodus's dynamic widget for movies and tvshows.

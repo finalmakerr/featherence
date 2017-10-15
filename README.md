@@ -8,7 +8,7 @@
 * Featherence Kids:     My kids are loving it!
 * Featherence Extreme:  Watch sport extreme videos.
 * Featherence Music:    For people who love Music!
-* Featherence Remote:    
+* Featherence Remote:   Control your Kodi with IR Device.
 * Featherence:          Beauty, Light and Modern interface.
 * Featherence ROFL:     What's so funny? :)
 

@@ -23,4 +23,5 @@
   <expression name="View57">[String.IsEqual(Container.Viewmode,$LOCALIZE[31013])]</expression>
   <expression name="View58">[String.IsEqual(Container.Viewmode,$LOCALIZE[31014])]</expression>
   <expression name="View59">[String.IsEqual(Container.Viewmode,$LOCALIZE[31016])]</expression>
+  <expression name="NoDialogConfirm">[!String.IsEqual(Container.NumItems,)]</expression>
 </includes>

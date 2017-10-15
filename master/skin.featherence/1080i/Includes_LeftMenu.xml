@@ -294,7 +294,7 @@
 		  <onclick>Skin.ToggleSetting(TopVideoInformationFontSize)</onclick>
 		  <visible></visible>
         </control>
-		<control type="radiobutton" id="121" description="הצג משך זמן">
+		<control type="radiobutton" id="124" description="הצג משך זמן">
           <include>SideMenuCommon</include>
 		  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
@@ -1165,9 +1165,10 @@
 	   <label>$VAR[11156label]</label>
 	   <visible>false</visible>
      </control>
+	 <include>InProgressBadge_</include>
 	 <control type="group">
-	   <!--<visible>String.IsEmpty(Control.GetLabel(11156)) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(Home.xml)] | VideoPlayer.IsFullscreen</visible>
-	   <visible>!String.Contains(ListItem.Label,$LOCALIZE[33078]) + !String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Label,Next Page)</visible>-->
+	   <visible>String.IsEmpty(Control.GetLabel(11156)) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(Home.xml)] | VideoPlayer.IsFullscreen</visible>
+	   <visible>!String.Contains(ListItem.Label,$LOCALIZE[33078]) + !String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Label,Next Page)</visible>
 	   <control type="label" id="1103" description="***דירוג***">
           <label>$VAR[TopVideoInformation3]</label>
 		  <visible>false</visible>

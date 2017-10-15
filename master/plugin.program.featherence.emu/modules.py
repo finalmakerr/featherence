@@ -1006,22 +1006,31 @@ def getfileID(file):
 	elif file == "Dreamcast_1P_Mr Driller.zip": fileID = "qya7f8ezviyuuty" #featherence.guser16
 	elif file == "Dreamcast_2P_The King of Fighters '99.zip": fileID = "8e83i6xwnai5pme" #featherence.guser16
 	
-	elif file == "GameCube_2P_Dragon Ball Z - Sagas.zip": fileID = "whko171pzg4xvpu" #htptdebugout3 V
-	elif file == "GameCube_1P_Harvest Moon - A Wonderful Life.zip": fileID = "xomv5o1u5abarpg" #htptdebugout4 V
+	elif file == "GameCube_2P_Dragon Ball Z - Sagas.zip": fileID = "whko171pzg4xvpu" #htptdebugout3
+	elif file == "GameCube_1P_Harvest Moon - A Wonderful Life.zip": fileID = "xomv5o1u5abarpg" #htptdebugout4
 	
-	elif file == "GameCube_1P_The Hobbit.zip": fileID = "grjwl1dn5n6v3hd" #htptdebugout V
-	elif file == "GameCube_1P_Eternal Darkness.zip": fileID = "qyz7xkxm9z7pc37" #featherence.guser15 V
+	elif file == "GameCube_1P_The Hobbit.zip": fileID = "grjwl1dn5n6v3hd" #htptdebugout
+	elif file == "GameCube_1P_Eternal Darkness.zip": fileID = "qyz7xkxm9z7pc37" #featherence.guser15
+	elif file == "GameCube_1P_Skies of Arcadia Legends.zip": fileID = "lrhhqtzg5wugume" #featherence.guser26
 	
-	elif file == "GameCube_2P_Need for Speed - Most Wanted.zip": fileID = "golzp2pv3p05ze3" #featherence.user23 V
+	elif file == "GameCube_2P_Need for Speed - Most Wanted.zip": fileID = "golzp2pv3p05ze3" #featherence.user23
+	elif file == "GameCube_2P_The Sims Bustin Out.zip": fileID = "inlmjf6lsaezxgs" #featherence.user28
 	elif file == "GameCube_1P_Beyond Good And Evil.zip": fileID = "ogosdnzb06fbuid" #featherence.user24
 	elif file == "GameCube_1P_MegaMan Network Transmission.zip": fileID = "52no9knaz7fx4x4" #featherence.user25
 	
-	elif file == "GameCube_1P_Resident Evil 3 - Nemesis.zip": fileID = "9u8wbt79c6zev16" #featherence.guser18 V
-	elif file == "GameCube_4P_Custom Robo.zip": fileID = "laxjkglh69uzq3i" #featherence.guser17 V
-	elif file == "GameCube_4P_Def Jam Vendetta.zip": fileID = "zekunpm2ehqo0rp" #featherence.user22 V
-	elif file == "GameCube_4P_FIFA Street 2.zip": fileID = "axypvfzxwor788a" #featherence.guser20 V
-	elif file == "GameCube_4P_Final Fantasy Crystal Chronicles.zip": fileID = "raw54ghb5cghxfr" #htptdebugout V
-	elif file == "GameCube_4P_Super Smash Bros Melee.zip": fileID = "va1jvchx86eryv5" #featherence.guser19 V
+	elif file == "GameCube_1P_Resident Evil 3 - Nemesis.zip": fileID = "9u8wbt79c6zev16" #featherence.guser18
+	elif file == "GameCube_1P_Pikmin.zip": fileID = "jeiy3pht3q2kcmm" #featherence.guser29
+	elif file == "GameCube_2P_Bloody Roar Primal Fury.zip": fileID = "fxguxoavyxkchjh" #featherence.guser27
+	elif file == "GameCube_4P_WWE Day Of Reckoning 2.zip": fileID = "czd6e0ht63ekuru" #featherence.guser27
+	elif file == "GameCube_1P_Rayman 3 - Hoodlum Havoc.zip": fileID = "4hx8geahm9stum9" #featherence.guser29
+	elif file == "GameCube_1P_Viewtiful Joe.zip": fileID = "ab4unal3wlq65cr" #featherence.user31
+	elif file == "GameCube_1P_Pikmin 2.zip": fileID = "ab6c3ivn1cg1if0" #featherence.user31
+	elif file == "GameCube_4P_Custom Robo.zip": fileID = "laxjkglh69uzq3i" #featherence.guser17
+	elif file == "GameCube_4P_Def Jam Vendetta.zip": fileID = "zekunpm2ehqo0rp" #featherence.user22
+	elif file == "GameCube_4P_FIFA Street 2.zip": fileID = "axypvfzxwor788a" #featherence.guser20
+	elif file == "GameCube_4P_Final Fantasy Crystal Chronicles.zip": fileID = "raw54ghb5cghxfr" #htptdebugout
+	elif file == "GameCube_4P_Gauntlet - Dark Legacy.zip": fileID = "l8z2iz55tkub33j" #featherence.user28
+	elif file == "GameCube_4P_Super Smash Bros Melee.zip": fileID = "va1jvchx86eryv5" #featherence.guser19
 	
 	
 	elif file == ".zip":
@@ -1252,7 +1261,7 @@ def setconfig(force=False):
 			
 			i += 1
 	
-	dp.update(95,"staticconfig..", "")
+	dp.update(95,"staticconfig..", "...")
 	staticconfig(force=True)
 	dp.update(100,"Finishing Configuration...", "")
 

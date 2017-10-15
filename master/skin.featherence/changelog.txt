@@ -10,6 +10,11 @@ WIP - WORK IN PROGRESS
 - Added option to choose highlight font color.
 
 ------------------------
+Featherence v0.7.8 (xx-Oct-17)
+------------------------
+- Minor bugs fix.
+
+------------------------
 Featherence v0.7.7 (05-Oct-17)
 ------------------------
 - Minor bugs fix.

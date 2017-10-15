@@ -952,7 +952,9 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		link = OPEN_URL(url)
 		prms=json.loads(link)
 		try: id_ = str(prms['items'][i][u'id'])
-		except: id_ = str(prms['items'][i][u'snippet'][u'channelId'])
+		except:
+			try: id_ = str(prms['items'][i][u'snippet'][u'channelId'])
+			except: id_ = ""
 		if onlydata != True or link == "": url = 'https://www.googleapis.com/youtube/v3/search?channelId='+id_+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
 
 	elif '&dailymotion_id=' in x:
@@ -1325,9 +1327,12 @@ def TVMode_check(admin, url, playlists):
 			---PLAYLIST->-1------------------
 			------------------------------'''
 			printpoint = printpoint + "5"
-			returned = dialogyesno(addonString_servicefeatherence(32412).encode('utf-8'), addonString_servicefeatherence(32413).encode('utf-8'))
-			if returned == "ok": returned = TvMode(url)
-			'''---------------------------'''
+			containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
+			if 'featherence' in containerfolderpath:
+				printpoint = printpoint + "A"
+				returned = dialogyesno(addonString_servicefeatherence(32412).encode('utf-8'), addonString_servicefeatherence(32413).encode('utf-8'))
+				if returned == "ok": returned = TvMode(url)
+				'''---------------------------'''
 		else: printpoint = printpoint + "8"
 				
 	printlog(title='TVMode_check', printpoint=printpoint, text="", level=0, option="")
@@ -1348,8 +1353,9 @@ def TvMode2(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart):
 			if scriptfeatherenceservice_random != "": returned = 'ok'
 			else:
 				#if (xbmc.getCondVisibility('Window.Previous(VideoFullScreen.xml)') or xbmc.getCondVisibility('Window.Previous(DialogBusy.xml)') or xbmc.getCondVisibility('Window.Previous(VideoOSD.xml)')) and xbmc.getCondVisibility('Player.HasVideo'):
+				containerfolderpath = xbmc.getInfoLabel('Container.FolderPath')
 				if General_TVModeForce == "true": returned = 'ok'
-				else:
+				elif 'featherence' in containerfolderpath:
 					returned = dialogyesno(addonString_servicefeatherence(32412).encode('utf-8'), extra)
 			
 		if returned == 'ok': mode = 5
@@ -1525,7 +1531,7 @@ def urlcheck(url, ping=False, timeout=1):
 	return returned
 	
 def YOUList2(name, url, iconimage, desc, num, viewtype):
-	returned = "" ; printpoint = "" ; i = 0 ; urlL = ['channel', 'user'] #, 'show'
+	returned = "ok" ; printpoint = "" ; i = 0 ; urlL = ['channel', 'user'] #, 'show'
 	url = CleanString2(url)
 	if '&youtube_ch=' in url or (not '&' in url and not '=' in url):
 		printpoint = printpoint + '1'
@@ -1540,17 +1546,19 @@ def YOUList2(name, url, iconimage, desc, num, viewtype):
 		default = 'http://www.youtube.com/'
 		default2 = 'plugin://plugin.video.youtube/'
 		
-		for x in urlL:
-			returned = urlcheck(default + urlL[i] + '/' + url + '/')
-			if returned == "ok": break
-			else:
-				i += 1
+		if 1 + 1 == 3:
+			for x in urlL:
+				returned = urlcheck(default + urlL[i] + '/' + url + '/')
+				if returned == "ok": break
+				else:
+					i += 1
 
 		if returned == 'ok':
 			printpoint = printpoint + '7'
 			update_view(default2 + urlL[i] + '/' + url + '/', num, viewtype, ok=False)
 	else:
 		printpoint = printpoint + '9'
+		
 	text = "name" + space2 + str(name) + newline + \
 	"url" + space2 + url + newline + \
 	"i" + space2 + str(i) + space + "returned" + space2 + str(returned)
@@ -1624,9 +1632,6 @@ def setaddonFanart(fanart, Fanart_Enable, Fanart_EnableCustom):
 	return returned
 
 def getAddonFanart(category, custom="", default="", urlcheck_=False):
-	#admin = xbmc.getInfoLabel('Skin.HasSetting(Admin)')
-	#admin2 = xbmc.getInfoLabel('Skin.HasSetting(Admin2)')
-	#admin3 = xbmc.getInfoLabel('Skin.HasSetting(Admin3)')
 	returned = "" ; category_path = "" ; printpoint = "" ; extra = "" ; 
 	
 	if custom != "":
@@ -1950,7 +1955,19 @@ def setAddon_UpdateLog(admin, Addon_Version, Addon_UpdateDate, Addon_ShowLog, Ad
 	"Addon_ShowLog2" + space2 + str(Addon_ShowLog2)
 	'''---------------------------'''
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
-	
+
+def cacheplugin():
+	try:
+		from StorageServer import StorageServer
+	except:
+		import lib.storageserverdummy as StorageServer
+	try:
+	    import StorageServer
+	except:
+	    import storageserverdummy as StorageServer
+
+	cache = StorageServer.StorageServer(addonID, 24) # (Your plugin name, Cache time in hours)
+ 
 def pluginend(admin):
 	try: from modules import *
 	except: pass

@@ -130,7 +130,7 @@
 <addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.1.5" provider-name="finalmakerr, Angelscry">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.simplejson" version="2.0.9"/>
+    <import addon="script.module.simplejson" version="2.0.9" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>executable</provides>
@@ -232,7 +232,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.extreme" version="0.1.9" name="Featherence Extreme" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.extreme" version="0.1.10" name="Featherence Extreme" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.24.0" />
 	<import addon="script.featherence.service" version="0.3.46"/>
@@ -530,11 +530,12 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.3.85" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.3.86" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.24.0"/>
-	<import addon="script.module.requests" version="2.3.0" optional="true"/>
+	<!--<import addon="script.module.requests" version="2.3.0" optional="true"/>
+	<import addon="script.common.plugin.cache" version="2.5.5" optional="true"/>-->
   </requires>
   <extension point="xbmc.python.script" library="default.py"/>
   <extension point="xbmc.service" library="service.py" start="startup"/>

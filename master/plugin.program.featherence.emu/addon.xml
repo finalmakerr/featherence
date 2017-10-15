@@ -2,7 +2,7 @@
 <addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.1.5" provider-name="finalmakerr, Angelscry">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.simplejson" version="2.0.9"/>
+    <import addon="script.module.simplejson" version="2.0.9" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>executable</provides>

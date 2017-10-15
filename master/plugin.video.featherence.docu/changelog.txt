@@ -7,6 +7,11 @@ WIP (WORK IN PROGRESS)--
 ------------------------
 
 ------------------------
+Featherence Docu v0.1.15 (xx-xx-17)
+------------------------
+- Added new YouTube API for better performance.
+
+------------------------
 Featherence Docu v0.1.14 (04-Dec-16)
 ------------------------
 - Added Discovery Documentary Channel in Space category.

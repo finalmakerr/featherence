@@ -109,6 +109,15 @@
 			<description></description>
 			<finished>false</finished>
 		</category>
+		<category>
+			<id>Featherence_dos</id>
+			<name>DOS</name>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/dos.jpg</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<description></description>
+			<finished>false</finished>
+		</category>
 	</categories>
 	<launchers>
 		<launcher>
@@ -15605,7 +15614,7 @@
 					<genre>Action</genre>
 					<release>2002</release>
 					<publisher>ESP</publisher>
-					<gameplot>Vertical shoot-em-up ported from the Naomi Arcade version. Ikaruga is more or less a sequel to Radiant Silvergun by Treasure, on the Sega Saturn.[CR]Based on a two-colors system, the player has to switch between the black & white sides of his ship during gameplay. The black side is immune to black enemy bullets which it consider as bonus, and dies on impact with a white enemy bullets. Your own black bullets damages white enemies twice as more as white bullets. And vice-versa for the white side. Those properties makes a balance between protecting yourself well and killing enemies fast.[CR]This aspect, combined with specific enemy patterns and a combo system makes Ikaruga an original shoot-em-up with a dose of strategy.</gameplot>
+					<gameplot>Vertical shoot-em-up ported from the Naomi Arcade version. Ikaruga is more or less a sequel to Radiant Silvergun by Treasure, on the Sega Saturn.[CR]Based on a two-colors system, the player has to switch between the black &amp; white sides of his ship during gameplay. The black side is immune to black enemy bullets which it consider as bonus, and dies on impact with a white enemy bullets. Your own black bullets damages white enemies twice as more as white bullets. And vice-versa for the white side. Those properties makes a balance between protecting yourself well and killing enemies fast.[CR]This aspect, combined with specific enemy patterns and a combo system makes Ikaruga an original shoot-em-up with a dose of strategy.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -16987,7 +16996,7 @@
 					<genre>Action / Adventure</genre>
 					<release>2003</release>
 					<publisher>Ubisoft</publisher>
-					<gameplot>Beyond Good & Evil takes place in the year 2435 on the mining planet of Hillys, located in Sector Four, a remote section of the galaxy. The architecture of the city around which the game takes place was designed with a rustic European style. The world itself combines modern elements, such as e-mail and credit cards, with those of science fiction and fantasy, such as spaceships and anthropomorphic animals coexisting with humans. The once-peaceful planet is under siege by aliens called the DomZ that abduct beings and either drain their life force for power or implant them with spores to convert them into slaves. A military dictatorship called the Alpha Sections takes power, promising to defend the populace. However, the Alpha Sections seem unable to stop the DomZ despite their public assurances. An underground resistance movement, the IRIS Network, fights the Alpha Sections, believing them to be in league with the DomZ.</gameplot>
+					<gameplot>Beyond Good &amp; Evil takes place in the year 2435 on the mining planet of Hillys, located in Sector Four, a remote section of the galaxy. The architecture of the city around which the game takes place was designed with a rustic European style. The world itself combines modern elements, such as e-mail and credit cards, with those of science fiction and fantasy, such as spaceships and anthropomorphic animals coexisting with humans. The once-peaceful planet is under siege by aliens called the DomZ that abduct beings and either drain their life force for power or implant them with spores to convert them into slaves. A military dictatorship called the Alpha Sections takes power, promising to defend the populace. However, the Alpha Sections seem unable to stop the DomZ despite their public assurances. An underground resistance movement, the IRIS Network, fights the Alpha Sections, believing them to be in league with the DomZ.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17023,61 +17032,61 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10033</id>
-					<name></name>
-					<filename>rom_pathGameCube/_1P/.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<name>Pikmin</name>
+					<filename>rom_pathGameCube/_1P/Pikmin.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Pikmin.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Pikmin.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Strategy</genre>
+					<release>2001</release>
+					<publisher>Nintendo EAD</publisher>
+					<gameplot>The tiny Extra-Terrestrial Captain Olimar is on vacation when his ship is hit by a comet. The S.S Dolphin makes a forced landing on a planet shedding parts as he goes (presumed to be Earth). Here he encounters the Pikimin. The Pikmin are verging on extinction and Olimar has 30 days to retrieve all the parts of his ship leading the Pkmin in a dash for survival.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10034</id>
-					<name></name>
-					<filename>rom_pathGameCube/_1P/.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<name>Viewtiful Joe</name>
+					<filename>rom_pathGameCube/_1P/Viewtiful Joe.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Viewtiful Joe.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Viewtiful Joe.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action / Fighting</genre>
+					<release>2003</release>
+					<publisher>Clover Studio</publisher>
+					<gameplot>Joe is no ordinary man and Viewtiful Joe is no ordinary game. Capcom's new superhero action game mixes funky cartoon-style visuals with classic side-scrolling gameplay and introduces the world's quirkiest million dollar action hero. More than just any ordinary dude, Joe must transform into the ultimate superhero. It's up to you to activate the correct view mode like "slow" or "zoom in" in order to clobber your enemies with beautiful style. You can also speed up or slow down your visual effects for even more "viewtiful" moves. Viewtiful Joe mixes an innovative viewpoint with an amazing stunt-filled action movie universe.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10035</id>
-					<name></name>
-					<filename>rom_pathGameCube/_1P/.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<name>Pikmin 2</name>
+					<filename>rom_pathGameCube/_1P/Pikmin 2.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Pikmin 2.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Pikmin 2.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Strategy </genre>
+					<release>2004</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Captain Olimar has returned to the planet where the Pikmin live, and he's all business this time. The company he works for is going bankrupt, so to save it, Olimar must salvage the treasure buried all over the planet. Of course, he'll need the help of the Pikmin to do that--he can't do anything by himself. Control one of two main characters--Olimar or his assistant--as you command your Pikmin to defeat enemies, propagate more Pikmin, collect precious doodads, and solve puzzles. With unlimited time, new colors of Pikmin, and two-player cooperative play, Pikmin 2 improves on the original in many ways.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10036</id>
-					<name></name>
-					<filename>rom_pathGameCube/_1P/.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<name>Resident Evil</name>
+					<filename>rom_pathGameCube/_1P/Resident Evil.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Resident Evil.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Resident Evil.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action / Horror</genre>
+					<release>2002</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Turn out the lights. Lock the Doors... Live the nightmare.[CR]Racoon City. Secluded mountain community, plagued by a storm of vicious attacks, is completely overrun. Mutant beasts, blood-thirsty zombies infest the landscape. You are S.T.A.R.S - Special Tactics and Rescue Squad. Your mission: investigate the ominous mansion at the core of the horrific disaster. Uncover secrets behind a radical, genetic research facility. With unspeakable horrors lurking around every corner, the ultimate test may be just to make it out alive!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17167,7 +17176,7 @@
 					<genre>Action / Adventure / Horror</genre>
 					<release>2002</release>
 					<publisher>Nintendo</publisher>
-					<gameplot>Eternal Darkness: Sanity's Requiem is a psychological horror action adventure, released in 2002 by Nintendo for the Gamecube. It tells the stories of twelve characters that span across the world and two millennia who have to deal with ancient forces of evil which have been trying to manifest themselves in our world. Chapters take place in Ancient Rome, Persia, the Middle East, and modern-day Rhode Island. Throughout the game, the protagonists will have access to several weapons appropriate for their era, from bastard sword & gladius to flintlock pistol and shotgun.The game features an involved Magic system, which allows different spells to be created through the combination of runes. These spells can attack enemies, dispel illusions, and heal both the body and items.Eternal Darkness: Sanity's Requiem also has a unique feature called Sanity. If an enemy sees a character, their Sanity meter drops. When Sanity gets low, hallucinations begin to plague the character. Walls bleed, voices whisper from nowhere, the camera gets disoriented. Sanity can be restored by dealing a finishing move on a dying enemy, or with spells or some items.</gameplot>
+					<gameplot>Eternal Darkness: Sanity's Requiem is a psychological horror action adventure, released in 2002 by Nintendo for the Gamecube. It tells the stories of twelve characters that span across the world and two millennia who have to deal with ancient forces of evil which have been trying to manifest themselves in our world. Chapters take place in Ancient Rome, Persia, the Middle East, and modern-day Rhode Island. Throughout the game, the protagonists will have access to several weapons appropriate for their era, from bastard sword &amp; gladius to flintlock pistol and shotgun.The game features an involved Magic system, which allows different spells to be created through the combination of runes. These spells can attack enemies, dispel illusions, and heal both the body and items.Eternal Darkness: Sanity's Requiem also has a unique feature called Sanity. If an enemy sees a character, their Sanity meter drops. When Sanity gets low, hallucinations begin to plague the character. Walls bleed, voices whisper from nowhere, the camera gets disoriented. Sanity can be restored by dealing a finishing move on a dying enemy, or with spells or some items.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17289,16 +17298,16 @@
 			<roms>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f2p0000</id>
-					<name></name>
-					<filename>rom_pathGameCube/_2P/</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<name>Bloody Roar Primal Fury</name>
+					<filename>rom_pathGameCube/_2P/Bloody Roar Primal Fury.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Bloody Roar Primal Fury.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Bloody Roar Primal Fury.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Fighting</genre>
+					<release>2002</release>
+					<publisher>Activision</publisher>
+					<gameplot>Wage an all-out assault as one of 16 fighters, each with the ability to transform mid-fight into their alternate Hpyer-beast life-form. Fight to the finish in 2-player head-to-head and single-player modes through 10 interactive and destructible mutli-level arenas. With fast and furious arena action-fighting has never looked this good or been this brutual.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17319,16 +17328,16 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f2p0002</id>
-					<name></name>
-					<filename>rom_pathGameCube/_2P/</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<name>Sonic Mega Collection</name>
+					<filename>rom_pathGameCube/_2P/Sonic Mega Collection.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Sonic Mega Collection.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Sonic Mega Collection.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Platform / Puzzle</genre>
+					<release>2002</release>
+					<publisher>Sega</publisher>
+					<gameplot>A compilation containing seven Sonic games, all originally released on the Sega Genesis console plus unlockable games and content.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17349,14 +17358,14 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f2p0004</id>
-					<name></name>
-					<filename>rom_pathGameCube/_2P/</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<name>Lost Kingdoms 2</name>
+					<filename>rom_pathGameCube/_2P/Lost Kingdoms 2.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Lost Kingdoms 2.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Lost Kingdoms 2.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre></genre>
-					<release></release>
+					<release>2003</release>
 					<publisher></publisher>
 					<gameplot></gameplot>
 					<altapp></altapp>
@@ -17364,16 +17373,16 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f2p0005</id>
-					<name></name>
-					<filename>rom_pathGameCube/_2P/</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/</fanart>
+					<name>Virtua Striker 2002</name>
+					<filename>rom_pathGameCube/_2P/Virtua Striker 2002.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Virtua Striker 2002.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Virtua Striker 2002.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Football / Sports</genre>
+					<release>2002</release>
+					<publisher>Sega</publisher>
+					<gameplot>The Virtua Striker series returns with 64 national football teams from around the world. Whether you play as France, Brazil, or Argentina, you can take your team to the final of the International Cup for a chance to win the trophy. On the road to the International Cup, you'll encounter more than 1,400 different players with their own stats and play in 13 stadiums. Virtua Striker 2002 also includes player edit and replay functions.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17585,16 +17594,16 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0007</id>
-					<name></name>
-					<filename>rom_pathGameCube/_4P/</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<name>Metal Arms - Glitch in the System</name>
+					<filename>rom_pathGameCube/_4P/Metal Arms - Glitch in the System.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Metal Arms - Glitch in the System.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Metal Arms - Glitch in the System.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Shooter / Action</genre>
+					<release>2003</release>
+					<publisher>Sierra</publisher>
+					<gameplot>You will play Glitch, a rebellious robot who is determined to destroy the evil army of Mil robots. Metal Arms features plenty of third-person robotic destruction. Glitch sports a large arsenal of weapons with which to complete his task. Original features include the ability to possess enemy Mils and use them for your own purposes. [CR]For variety Metal Arms includes a few vehicle levels, including drivable tanks and 'RAT' vehicles. Metal Arms features some platforming, but is more of a shooter. Helping to keep the player's interest is colorful a character design - all characters have an attitude.[CR]On the multiplayer side, Metal Arms features four-player split-screen gameplay with various modes including Possession Melee (your opponent's kills count for you!), standard Bot Brawl, King of the Hill, Moving Hill, Tag and Reverse Tag modes.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17615,10 +17624,55 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0009</id>
-					<name></name>
-					<filename>rom_pathGameCube/_4P/</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<name>Gladius</name>
+					<filename>rom_pathGameCube/_4P/Gladius.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Gladius.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Gladius.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Role-Playing / Strategy</genre>
+					<release>2003</release>
+					<publisher>LucasArts</publisher>
+					<gameplot>The darkness of the Great War has passed, and the lands of Gladius are peaceful once more. Now combat takes place only in the gladiator arenas, where schools from around the world compete for the title of Imperial Champions. Follow the grand saga of two young heroes, Ursula and Valens, as they recruit and train a team of warriors and compete in the gladiator games. Battle with deadly weapons and powerful magic as you learn vital combat tactics and enhance your own characters.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0010</id>
+					<name>WWE Day Of Reckoning 2</name>
+					<filename>rom_pathGameCube/_4P/WWE Day Of Reckoning 2.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/WWE Day Of Reckoning 2.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/WWE Day Of Reckoning 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting / Sports</genre>
+					<release>2005</release>
+					<publisher>THQ</publisher>
+					<gameplot>THIS LINE BETWEEN FRIEND AND FOE IS NOT ALWAYS CLEAR[CR]THIS TIME, TRUST NO ONE![CR]FEATURES[CR]IMPROVED GRAPHICS[CR]See the emotion on each WWE Superstar's face like never before and experience all-new "beyond broadcast" camera angles[CR]NEW AND LONGER STORY MODE[CR]Now a proven force in the WWE, take your created superstar on a continuing journey of deception and vindication[CR]ENHANCED FIGHTING SYSTEM[CR]Exclusive skill based submission system, all-new stamina system, improved AI tactics and new assisted defense system allow for more realistic matches[CR]NEW WWE LEGENDS[CR]Hulk Hogan, "Stone Cold" Steve Austin, Mankind, Bret "The Hitman" Hart and The Rock[CR]-CONTINUING STORYLINES[CR]-NEW WWE LEGENDS[CR]-ALL NEW STAMINA SYSTEM</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0011</id>
+					<name>TimeSplitters 2</name>
+					<filename>rom_pathGameCube/_4P/TimeSplitters 2.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/TimeSplitters 2.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/TimeSplitters 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Shooter</genre>
+					<release>2002</release>
+					<publisher>Eidos</publisher>
+					<gameplot>TimeSplitters 2, the sequel to Free Radical Design's PlayStation 2 launch title, once again sends players hurtling through time, as they battle the malevolent TimeSplitters in ten unique time periods, from the Wild West to a futuristic space station, and everything in between.[CR]The game's story finds Cortez, the series' hero, on a quest to discover the origins of the TimeSplitters, an enigmatic group that travels through time causing trouble for the good people of Earth. Using the paradoxes of time travel to his advantage, the hero can regularly join up with past and future versions of himself, to fight the enemy as a team. A wide selection of historical, modern, and futuristic weapons is available, and environments feature destructible elements.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0012</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre></genre>
@@ -17629,11 +17683,251 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78f4p0010</id>
-					<name></name>
-					<filename>rom_pathGameCube/_4P/</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/</fanart>
+					<id>7d2gcd81ea61668385a37ed78f4p0013</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0014</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0015</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0016</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0017</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0018</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0019</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0020</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0021</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0022</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0023</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0024</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0025</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0026</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0027</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0028</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0029</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre></genre>
@@ -17647,5 +17941,1853 @@
 		</launcher>
 
 	</launchers>
+
+	<launcher>
+		<id>Featherence_dos1P</id>
+		<name>DOS 1P</name>
+		<category>Featherence_dos</category>
+		<application>emulator_file</application>
+		<args>lib_args_dos_args "%rom%"</args>
+		<rompath>rom_pathDOS/_1P/</rompath>
+		<thumbpath>rom_pathDOS/_1P/_Artwork/boxfront/</thumbpath>
+		<fanartpath>rom_pathDOS/_1P/_Artwork/screenshot/</fanartpath>
+		<trailerpath>rom_pathDOS/_1P/_Artwork/gameplay(video)/</trailerpath>
+		<custompath></custompath>
+		<romext>bat</romext>
+		<platform>DOS</platform>
+		<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/1P.png</thumb>
+		<fanart></fanart>
+		<genre></genre>
+		<release></release>
+		<publisher></publisher>
+		<launcherplot></launcherplot>
+		<finished>false</finished>
+		<minimize>false</minimize>
+		<lnk></lnk>
+		<roms>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4000</id>
+				<name>Albion</name>
+				<filename>rom_pathDOS/_1P/Albion/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Albion.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Albion.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Role-Playing</genre>
+				<release>1996</release>
+				<publisher>Blue Byte</publisher>
+				<gameplot>Nothing is quite as it seems in this creepy, futuristic role-playing game. The year is 2227, and you've been sent by the mighty DDT Corporation to take some atmospheric readings on the planet Albion. Initially, it seems that the planet is barren (though rich with resources), but when your ship's systems fail, you soon discover a whole community of alien life forms living in harmony. Soon, your ship begins to act on its own, and it seems that the DDT Corporation had designs on destroying the planet all along! Live or die, it's up to you to stop your employer before it's too late.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4001</id>
+				<name>Capitalism Plus</name>
+				<filename>rom_pathDOS/_1P/Capitalism Plus/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Capitalism Plus.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Capitalism Plus.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Strategy</genre>
+				<release>1996</release>
+				<publisher>Interactive Magic </publisher>
+				<gameplot>A more advanced version of the original Capitalism was developed and released as Capitalism Plus on Jan 1, 1996 and published by Brøderbund for Windows 95 only. It added world maps, more products and enhanced management capabilities to the game in addition to improved SVGA graphics, more markets to dominate and random events including riots, disease and technology breakthroughs. With Capitalism Plus, a map and scenario editor program was also added enabling players to configure products, industries, goals and other items. Capitalism Plus is compatible with Windows XP and Windows Vista.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4002</id>
+				<name>Castles II - Siege and Conquest</name>
+				<filename>rom_pathDOS/_1P/Castles II - Siege and Conquest/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Castles II - Siege and Conquest.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Castles II - Siege and Conquest.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Strategy</genre>
+				<release>1992</release>
+				<publisher>Interplay Entertainment</publisher>
+				<gameplot>You choose to be one of five feuding lords vying for the Crown. Conquering, spying, sabotage, diplomacy, whatever it takes--as long as you keep the Pope and your people happy. You have to reach 7,000 points to petition the Pope for the throne, and then you have to maintain those points for 4-5 game months to win the game. However, your rivals will attack you as soon as the Pope declares his support, so be sure you have a strong military before applying for the Papal backing.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4003</id>
+				<name>Constructor</name>
+				<filename>rom_pathDOS/_1P/Constructor/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Constructor.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Constructor.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Strategy</genre>
+				<release>1997</release>
+				<publisher>System 3</publisher>
+				<gameplot>Constructor is a 1997 video game released originally for MS-DOS personal computers, and later ported to the PlayStation, macOS and Microsoft Windows-native DirectX 3. It was developed by System 3 and published by Acclaim Entertainment.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4004</id>
+				<name>Gobliiins</name>
+				<filename>rom_pathDOS/_1P/Gobliiins/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Gobliiins.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Gobliiins.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Adventure / Puzzle</genre>
+				<release>1991</release>
+				<publisher>Sierra On-Line</publisher>
+				<gameplot>Gobliiins is an adventure game where the player controls a team of three goblins: Oups, Ignatius and Asgard (Hooter, Dwayne, and BoBo in the US release) to find four magic components. A voodoo doll has turned their king Angoulafre mad and by collecting the components they can track down Niak the Wizard, the only one who can put things right. The player needs to solve various puzzles by combining the different skills of the three goblins. It's possible switch between them and control them separately. Most of the puzzles are based on coordinated actions. One can cast powerful but erratic spells, another can collect and use objects, and the last can hit things. Action icons are activated at the bottom of the screen. The game takes in 22 landscapes, each of which has puzzles which must be cleared. The characters have limited energy, which can be sapped by traps.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4005</id>
+				<name>Conquest of the New World</name>
+				<filename>rom_pathDOS/_1P/Conquest of the New World/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Conquest of the New World.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Conquest of the New World.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>1996</release>
+				<publisher>?</publisher>
+				<gameplot>Conquest of the New World puts you in control of a native civilization or an expeditionary force from one of five European countries. Compete against other players in the hopes of establishing control of the New World during the sixteenth century. Not a game that simulates the actual discovery and colonization of the Americas, Conquest of the New World is generated at the beginning of each game and each New World (and game) is therefore unique. [CR]Your job is to explore the New World, establish thriving colonies, produce and trade goods and eliminate your enemies or defend your claims from your opponents. Each player sets his own objectives for each game. For some players, winning the game may primarily involve finding lots of new landmarks in the New World and establishing many colonies. [CR]The Deluxe Edition adds several new features to the game. Primarily it adds the option to create and play scenarios and customize the world. In addition, nations now have different bonuses, several special resources and discoveries have been added and you can form trade alliances with other nations.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4006</id>
+				<name>Lords of the Realm</name>
+				<filename>rom_pathDOS/_1P/Lords of the Realm/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Lords of the Realm.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Lords of the Realm.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Strategy</genre>
+				<release>1994</release>
+				<publisher>Impressons Games</publisher>
+				<gameplot>The game takes place in a medieval setting, with several characters warring for the right to be either King of England, or King of Germany. Players manage their armies as well as their land and population, build and lay siege to castles, and generally attempt to crush their enemies.[CR]Battles between armies take place in a real-time environment, similar to real-time strategy games, with players able to control individual units as well as control them as a group, during which units would group into formations. Players may also choose to allow the computer to determine the outcome of the battle. The game also features a small castle-building portion.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4007</id>
+				<name>Supremacy - Your Will Be Done</name>
+				<filename>rom_pathDOS/_1P/Supremacy - Your Will Be Done/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Supremacy - Your Will Be Done.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Supremacy - Your Will Be Done.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Strategy</genre>
+				<release>1990</release>
+				<publisher>Virgin Interactive</publisher>
+				<gameplot>Supremacy: Your Will Be Done, released as Overlord in the US, is a strategy video game designed by David Perry &amp; Nick Bruty and produced by Probe Software.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4008</id>
+				<name>Putt Putt's Fun Pack</name>
+				<filename>rom_pathDOS/_1P/Putt Putt's Fun Pack/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Putt Putt's Fun Pack.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Putt Putt's Fun Pack.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Puzzle</genre>
+				<release>1993</release>
+				<publisher>Humongous Entertainment</publisher>
+				<gameplot>Play a multitude of games with Putt Putt and pep. It's more fun than a static board game.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4009</id>
+				<name>Putt-Putt Goes to the Moon</name>
+				<filename>rom_pathDOS/_1P/Putt-Putt Goes to the Moon/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Putt-Putt Goes to the Moon.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Putt-Putt Goes to the Moon.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Adventure / Puzzle </genre>
+				<release>1993</release>
+				<publisher>Infogrames</publisher>
+				<gameplot>Purple Car Lands on the Moon! [CR]Due to a freak accident at the Fireworks Factory, Putt-Putt is blasted to the moon. There he meets Rover, a lovely little lunar terrain vehicle left behind by the astronauts. Putt-Putt and Rover must work together to rebuild a rocket, and accomplish a few good deeds for the Moon People before they meet the Man in the Moon and are homeward bound. Putt-Putt Goes to the Moon teaches the benefit of cooperation and the lasting value of friendship.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4010</id>
+				<name>Putt-Putt Joins the Parade</name>
+				<filename>rom_pathDOS/_1P/Putt-Putt Joins the Parade/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Putt-Putt Joins the Parade.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Putt-Putt Joins the Parade.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Adventure / Puzzle </genre>
+				<release>1992</release>
+				<publisher>Infogrames</publisher>
+				<gameplot>What does it take to be in a parade? [CR]Hard work, a bright shiny chassis and a little help from your friends. That's what Putt-Putt® discovers as he gears up to join the annual Cartown Pet Parade. Children will be delighted as they meet the local carfolk, explore a toy shop, tool down the road and more. Along the way, they learn to think ahead, deal with unexpected problems, and give others a hand. The road to discovery has never been more fun - or more educational. Charming talking characters, lively sound effects and lifelike animation keep your child focused on the adventure.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4011</id>
+				<name>Puzznic</name>
+				<filename>rom_pathDOS/_1P/Puzznic/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Puzznic.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Puzznic.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Puzzle</genre>
+				<release>1989</release>
+				<publisher>Taito</publisher>
+				<gameplot>Puzznic is a tile-matching puzzle arcade game developed and produced by Taito in 1989.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4012</id>
+				<name>Quest For Glory IV - Shadows of Darkness</name>
+				<filename>rom_pathDOS/_1P/Quest For Glory IV - Shadows of Darkness/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Quest For Glory IV - Shadows of Darkness.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Quest For Glory IV - Shadows of Darkness.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Adventure / Role-Playing</genre>
+				<release>1993</release>
+				<publisher>Sierra </publisher>
+				<gameplot>You've saved the world, twice... You just want to bask in the glory of victory and maybe take a vacation. Without warning, you're magically transported from Tarna to a dark, gloomy place. Welcome to Mordavia, a land full of charm... and danger.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4013</id>
+				<name>Quest for Glory III - Wages of War</name>
+				<filename>rom_pathDOS/_1P/Quest for Glory III - Wages of War/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Quest for Glory III - Wages of War.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Quest for Glory III - Wages of War.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Adventure / Role-Playing</genre>
+				<release>1993</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4014</id>
+				<name>Shadow Knights</name>
+				<filename>rom_pathDOS/_1P/Shadow Knights/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Shadow Knights.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Shadow Knights.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Platform</genre>
+				<release>1990</release>
+				<publisher>Softdisk</publisher>
+				<gameplot>Shadow Knights is a platform game created by id Software and published by Softdisk in 1991.[CR]This is one of the several games written by id Software to fulfill their contractual obligation to produce games for Softdisk, where the id Software founders had been employed. It is a basic platform game with a considerable influence by the early Ninja Gaiden games.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4015</id>
+				<name>Syndicate</name>
+				<filename>rom_pathDOS/_1P/Syndicate/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Syndicate.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Syndicate.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Strategy</genre>
+				<release>1993</release>
+				<publisher>Bullfrog Production</publisher>
+				<gameplot>Syndicate is an isometric real-time tactical game from Bullfrog Productions created in 1993. It is the first title in the Syndicate series. An expansion pack, Syndicate: American Revolt, a sequel, Syndicate Wars, and a reboot Syndicate have also been released. The original game and expansion pack were re-released together in 1996 as Syndicate Plus.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4016</id>
+				<name>The Horde</name>
+				<filename>rom_pathDOS/_1P/The Horde/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/The Horde.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/The Horde.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Strategy</genre>
+				<release>1994</release>
+				<publisher>Crystal Dynamics</publisher>
+				<gameplot>The Horde is a hybrid action-strategy video game that was originally released on the 3DO platform, but was soon after ported to the Sega Saturn and MS-DOS. It was an unusual hybrid of action and strategy game for the time.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4017</id>
+				<name>The Settlers II -Gold Edition</name>
+				<filename>rom_pathDOS/_1P/The Settlers II -Gold Edition/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/The Settlers II -Gold Edition.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/The Settlers II -Gold Edition.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Strategy</genre>
+				<release>1997</release>
+				<publisher>Blue Byte</publisher>
+				<gameplot>The Settlers 2 is a good follow-up of the first game, with more possibilities, really incredible graphics and animations and a very low technical requirement when it was released (worked on a 486DX33). Some of the weaknesses: no real multiplayer (you had to play on a split screen with two mouses and share the keyboard) and only two speed for in-game time, making you wait just idling for 5 minutes sometime. Anyway, a top game remade in 3D in 2006 (The Settlers II 10th Anniversary).[CR]The Gold edition contains the original game and the Mission CD, which contains a new campaign, 12 new maps and an editor.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4018</id>
+				<name>WarCraft - Orcs &amp; Humans</name>
+				<filename>rom_pathDOS/_1P/WarCraft - Orcs &amp; Humans/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/WarCraft - Orcs &amp; Humans.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/WarCraft - Orcs &amp; Humans.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Strategy</genre>
+				<release>1994</release>
+				<publisher>Blizzard</publisher>
+				<gameplot>Warcraft: Orcs & Humans is a real-time strategy game, developed by Blizzard Entertainment and published by Blizzard and Interplay Entertainment. The MS-DOS version was released on 23 November 1994 and the Macintosh version in early 1996.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4019</id>
+				<name>Warcraft II - Tides of Darkness</name>
+				<filename>rom_pathDOS/_1P/Warcraft II - Tides of Darkness/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Warcraft II - Tides of Darkness.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Warcraft II - Tides of Darkness.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Strategy</genre>
+				<release>1995</release>
+				<publisher>Blizzard</publisher>
+				<gameplot>Players must collect resources, and produce buildings and units in order to defeat an opponent in combat on the ground, in the air and in some maps at sea. The more advanced combat units are produced at the same buildings as the basic units but also need the assistance of other buildings, or must be produced at buildings that have prerequisite buildings. The majority of the main screen shows the part of the territory on which the gamer is currently operating, and the minimap can select another location to appear in the larger display. The fog of war completely hides all territory which the gamer's has not explored, and shows only terrain but hides opponents' units and buildings if none of the gamer's units are present.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4020</id>
+				<name>Hugo in a new Adventure‎</name>
+				<filename>rom_pathDOS/_1P/Hugo in a new Adventure‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo in a new Adventure‎.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo in a new Adventure‎.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Platform / Action</genre>
+				<release>1991</release>
+				<publisher>ITE</publisher>
+				<gameplot>זוכרים את הוגו? כן, הטרול הקטן וההיפראקטיבי שכל כמה דקות מופיע על מסך הטלוויזיה שלכם וממליץ לכם לחסוך חשמל? יופי. עכשיו זוכרים איפה הוא התחיל? נכון מאוד, בערוץ הילדים. הוא היה הכוכב של משחק טלוויזיה פופולרי שהונחה על ידי גיל ססובר, טל ברמן, נמרוד רשף ועוד רבים וטובים. ובכן, מסתבר שקיימת למשחק הטלוויזיוני גם גירסת PC, ואתם יכולים לשוב ולהזכר בטרול הנחמד גם על מסך המחשב שלכם.[CR]אחד המשחקים הפופולרים ביותר בהם היה הוגו מתמודד הוא משחק הרכבות. היה על הוגו לנווט את דרכו במסלול פסי רכבת כאשר מולו שועטות רכבות שלא מתכוונות לעצור בשביל אף אחד. כשהוגו מבחין ברכבת באה מולו, הוא צריך לעבור במהרה לפס מקביל כדי להמנע מהתנגשות חזיתית. כשהוא מסיים את המסלול, מחכה לו עוד הרפתקה קטנה על הר גבוה בדרך לאהובתו שנחטפה על ידי המכשפה הרשעה גריזלדה. מי שרוצה לשוב ולשחק בהוגו יותר ממוזמן, והפעם יש אפילו בונוס: גם אם לא תצעקו לתוך הטלפון "לא זז לי! לא זז לי!" תוכלו לקבל משחק חוזר...</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6711bc1769cbd3f4020</id>
+				<name>Hugo Maze‎</name>
+				<filename>rom_pathDOS/_1P/Hugo Maze/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo Maze.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo Maze.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Platform / Action</genre>
+				<release>1992</release>
+				<publisher>ITE</publisher>
+				<gameplot>משחק הארקייד שהיה פעם בערוץ 6 בטלוויזיה. עליכם לעזור להוגו להגיע לסוף המכרה על ידי הכוונתו בפניות הרבות שבהם הוא יתקל. המכרה עצמו מלא בדינמיטים (מהם יש להמנע) וערמות זהב (אותם יש לקחת). כמו כן, יש במכרה מספר מסילות ברזל שעליהן נוסעים קרונות. זהירות! שהייה ממושכת מדי על מסילת ברזל עלולה להסתיים במוות... בסוף המכרה יש גשר ארוך עם חורים, ויש לקפוץ מעליהם כדי להגיע לשלב הסופי: חדר שלוש האפשרויות. בחדר זה תוכלו לבחור בדלת אחת מתוך שלוש הדלתות שבחדר - ולראות במה זכיתם. המשחק כולל גירסת את גירסת הטלוויזיה בה המפה מוצגת לפני תחילת המשחק, ואת גירסת הארקייד בה המפה מוצגת אחרי.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1ng1xa1ba6711bc1769zbd3f4020</id>
+				<name>Hugo 1</name>
+				<filename>rom_pathDOS/_1P/Hugo 1/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo 1.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo 1.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Platform / Action</genre>
+				<release>1996</release>
+				<publisher>ITE</publisher>
+				<gameplot>הוגו נוצר ב1990 ע"י חברה דנית בשם International Television Entertainment (או ITE בקיצור). המשחק פותח במיוחד למען צורת המשחק של טלוויזיה+טלפון. אני לא יודע מה היה המשחקון הראשון של החברה או מי היה הלקוח הראשון שלהם אבל די מהר הפופולאריות של הטרול האופטימי עלתה והוא התפשט אל מחוץ לדנמרק. לישראל הוא הגיע ב1994 ונחת היישר בערוץ הילדים, גם כאן בארץ הקודש, בהנחיית טובי מנחי ערוץ 6, המשחק הפך ללהיט בקרב הילדים ובני הנוער. כאשר סיים את דרכו בערוץ הילדים הוגו גוייס ע"י חברת החשמל למלחמה בנושא סכנות החשמל בשל היותו סמל מוכר לקהל היעד.[CR]העלילה בכל המשחקונים (הרבים) היא זהה: הוגו הוא טרול עליז הנשוי באושר לבת זוגו - הוגולינה, עד לרגע שבו גריזלדה, המכשפה המרשעת, חוטפת את זוגתו ואת ילדיו מסיבות שלא ידועות לנו. על הוגו לצאת למסע להציל את משפחתו ועל גריזלדה - לערום קשיים (איך מאייתים Cliché ?).[CR]משחקי הוגו הגיעו למחשב האישי כמעט מראשית דרכו של הוגו, אך זהו משחק המחשב הראשון של הוגו שתורגם ודובב לעברית ע"י מחשבת, המשחק מורכב מארבעה משחקונים:[CR]מתחת לפני המים - הוגו צולל עם משקפת ים ושנורקל בנהר וצריך להזהר מסרטנים, דגים רעבים ודיונונים (תמנונים?) יורי דיו[CR]במערת הקרח - הוגו צריך לקפץ בין עמודי קרח ולהזהר לא ליפול (או להתרסק על הקיר)[CR]גלגליות - הוגו מחליק על לוח גלישה (סקייטבורד) מאולתר וצריך להזהר מבונים, סלעים וגשרים רופפים [CR]קפיצה גזעית - הוגו מקפץ על גזעי עץ בנהר וצריך להזהר מענפים סוררים ומסכנת טביעה</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1eg1xa1ba6711bc1769zbd3f4020</id>
+				<name>Hugo 2‎‎</name>
+				<filename>rom_pathDOS/_1P/Hugo 2/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo 2.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo 2.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Platform / Action</genre>
+				<release>1997</release>
+				<publisher>ITE</publisher>
+				<gameplot>כדי להציל את הוגולינה והילדים מהמכשפה הרעה גריזלדה, יהיה עליך לעזור להוגו להתגבר על אתגרים רבים , כעת נעבור לפירוט של השלבים השונים: [CR]SNOWBOARD - הוגו בשלג [CR]שלב זה מתרחש בחורף. הוגו מטפס על הר כאשר המכשפה המרושעת מפעילה פצצה בראש ההר. כעת עליך לעזור להוגו לרוץ במהירות במורד ההר [CR]כדי להתחמק מהמפולת, בזמן שאתה מתחמק מכדורי שלג ענקים. מדי פעם יצוצו מולך אנשי שלג ויהיה עליך להילחם בהם עם כדורי שלג. כמו כן, מדי פעם יהיה עליך לבחור האם אתה רוצה להמשיך שמאלה או ימינה. אם תבחר בדרך האטית, המפולת עלולה להשיג אותך. למזלך להוגו יש מפה, והוא יכול להציץ בה כדי לבחור את הדרך העדיפה. הדרכים שמסומנות בירוק הן הדרכים המהירות יותר. [CR]NIMBUS - הוגו על האופנוע [CR]בשלב זה הוגו רוכב על אופנוע מסביב להר. על הוגו להגיע למערה של המכשפה, אך בדרך הוא יתקל בעיזים, בסלעים, בבורות ובסכנות אחרות. עליך לעזור להוגו להתחמק מכל הסכנות, ובנוסף לאסוף מיכלי דלק נוספים במהלך הדרך· כמו כן, מומלץ שתבדוק במפה שאתה נמצא בדרך הנכונה. [CR]DOLMEN CAVE - הוגו במערות [CR]בשלב DDLMEN CAVE הוגו מסתובב במבוך תת-קרקעי של מערות. מפלס המים במערות עולה באטיות ככל שהזמן עובר, ולכן עליך לצאת במהירות. להוגו יש מפה של המבוך התת-קרקעי אשר כולל מעליות, חבלי טיפוס ומפלצות רבות. [CR]BALLOON - הוגו בבלון פורח [CR]בשלב ה- BALLOON , הוגו טס בשמים בין הרים ומעל צוקיס קטלניים. לפתע, הכדור הפורח שלך מאבד אוויר ואתה צריך לזוז שמאלה וימינה כדי להגיע לתחתית המערה בלי להיפגע. </gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e21xa1ba6711bc1769zbd3f4020</id>
+				<name>Hugo 5‎‎</name>
+				<filename>rom_pathDOS/_1P/Hugo 5/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo 5.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo 5.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Platform / Action</genre>
+				<release>1997</release>
+				<publisher>ITE</publisher>
+				<gameplot>כולל ארבעה משחקונים:[CR]* צניחה - הוגו צונח עם מצנח רחיפה וצריך להזהר מחסידות נודדות ופצצות מוצנחות.[CR]* מגלשה - הוגו גולש על מזחלת שלג וצריך להזהר מאנשי שלג ובונים עצבניים.[CR]* טיפוס צוקים - הוגו מטפס על מצוקים מלאי סכנות.[CR]* גשר קורות - הוגו קופץ על קורות ועל גשרים בעוד הוא נזהר מסכנות, לא לשכוח את סדר הופעת הינשופים והצפרדעים.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e69xa1ba6711bc1769cbd3f4020</id>
+				<name>Hugo 6 - Wild River‎‎</name>
+				<filename>rom_pathDOS/_1P/Hugo 6 - Wild River‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo 6 - Wild River‎.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo 6 - Wild River‎.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Platform / Action</genre>
+				<release>1998</release>
+				<publisher>ITE</publisher>
+				<gameplot>זהו המשחק האחרון מסדרת הוגו ה"קלאסית" המקורית. וגם המשחק האחרון שתורגם/דובב לעברית מהסדרה הנ"ל.[CR]זהו גם המשחק הראשון שיצא רק לחלונות ולא לדוס, רציתי לומר "לצערי", אבל ניסיתי את המשחק בשני מחשבים עם XP ובשניהם הוא רץ בצורה חלקה לחלוטין... בואו נקווה שהתוצאה תהיה זהה במערכות הפעלה אחרות ובעיקר בויסטה הבאה עלינו לרעה.[CR]בדומה לכל שאר המשחקים מהסדרה הקלאסית (הוגו 1/2, הוגו 3, הוגו 4 והוגו 5) המשחק עצמו כולל ארבעה משחקונים:[CR]מסלול מסוכן - הוגו רוכב על עגלת-מכרה (Minecart) כל הדרך אל המערה של גריזלדה תוך כדי שהוא נזהר מפיגומים ומדרכים ללא מוצא.[CR]ביצה - הוגו מטייל בביצות שורצות עטלפים ועליו להזהר מבוץ טובעני ומציפור ה-Adda. זכרו את שני הקולות שהעצים ישמיעו, אתם תזדקקו להם על מנת לסיים את המסלול.[CR]נהר - הוגו שט בנהר הפרא בתוך חבית כשעליו להזהר מסלעים קוצניים, מנפילת החבית מתחת לרגליו ומדרכים ללא מוצא.[CR]אבנים - הוגו צועד ביער בעוד הוא נזהר מן האבנים אותן משגרת גריזלדה, ממגוון מכשולים על הקרקע ומדרכים ללא מוצא.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1ng1xa1ba6711bc1769zbd3f4020</id>
+				<name>Hugo - The Magic Oak</name>
+				<filename>rom_pathDOS/_1P/Hugo - The Magic Oak/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo - The Magic Oak.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo - The Magic Oak.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Platform / Action</genre>
+				<release>1998</release>
+				<publisher>ITE</publisher>
+				<gameplot>ץ האלון הקסום (או "הוגו - עץ האלון הקסום", כפי שמופיע על התקליטור) הוא משחק ששונה מסדרת הוגו הקלאסית. למיטב ידיעתי, זהו המשחק היחיד שלא מן הסדרה הקלאסית ושתורגם ע"י באג, שאר המשחקים החדשים יותר תורגמו, ועדיין נמכרים, ע"י קומפדיה. [CR]במשחק הזה עליכם לעזור לרַט, שהוא אחד מבניו של הוגו, לחזור לעץ האלון לאחר שגריזלדה כישפה אותו והפרידה אותו ממשפחתו. המשחק מחולק לשלושה חלקים - המסלול על הקרקע, המסלול בנהר (בתוך חבית) והמשחקונים. בתחילת המסלול ניתן לכם זמן בשעון חול וכל התקלות במכשול במסלול הקרקע ובמסלול הנהר תפחית מן החול ובכך מן הזמן. הזמן לא נעצר בזמן המשחקונים ולכן יש לסיימם במהרה.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4021</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4022</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4023</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4024</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4025</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4026</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4027</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4028</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4029</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4030</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4031</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4032</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4033</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4034</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4035</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4036</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4037</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4038</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e79ra1ba6713ec1769cbd3f4039</id>
+				<name></name>
+				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+		</roms>
+	</launcher>
+	
+	<launcher>
+		<id>Featherence_dos2P</id>
+		<name>DOS 2P</name>
+		<category>Featherence_dos</category>
+		<application>emulator_file</application>
+		<args>lib_args_dos_args "%rom%"</args>
+		<rompath>rom_pathDOS/_2P/</rompath>
+		<thumbpath>rom_pathDOS/_2P/_Artwork/boxfront/</thumbpath>
+		<fanartpath>rom_pathDOS/_2P/_Artwork/screenshot/</fanartpath>
+		<trailerpath>rom_pathDOS/_2P/_Artwork/gameplay(video)/</trailerpath>
+		<custompath></custompath>
+		<romext>bat</romext>
+		<platform>DOS</platform>
+		<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/2P.png</thumb>
+		<fanart></fanart>
+		<genre></genre>
+		<release></release>
+		<publisher></publisher>
+		<launcherplot></launcherplot>
+		<finished>false</finished>
+		<minimize>false</minimize>
+		<lnk></lnk>
+		<roms>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4004</id>
+				<name>Double Dragon 3</name>
+				<filename>rom_pathDOS/_2P/Double Dragon 3/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/Double Dragon 3.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/Double Dragon 3.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Action</genre>
+				<release>1988</release>
+				<publisher>Arcadia Systems, Inc.</publisher>
+				<gameplot>Set in a post-apocalyptic New York, Double Dragon is the story of Billy and Jimmy Lee, twin brothers trained in the fighting style of Sou-Setsu-Ken. Together, they manage a small martial arts training school, teaching their students in self-defense. One day, Billy's girlfriend, Marian, is kidnapped off the street by the "Black Warriors", a savage street gang led by a man named Willy. The Black Warriors demand the Lee brothers disclose their martial arts secrets in exchange for Marian's freedom. The Lee brothers set out on a rescue mission to crush the Black Warriors and save Marian.[CR]Using whatever techniques they have at their disposal, from the basic punches and kicks to the invulnerable elbow strike, as well any weapon that comes into their hands, the Lee brothers must pursue the gang through the city slum, industrial area and the forest before reaching their hideout to confront the big boss, Willy.[CR]The NES version of this game also has an additional VS. fighting mode for one or two players. Players choose from a field of six different characters (Billy and 5 of the enemy characters) and enter into a one-on-one fighting match. Players have to punch, kick, jumpkick, and even use a weapon against their opponents until someone's health bar is fully drained. The winner is the last one standing.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4005</id>
+				<name>Tyrian 2000</name>
+				<filename>rom_pathDOS/_2P/Tyrian 2000/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/Tyrian 2000.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/Tyrian 2000.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Shooter / Flying Vertical</genre>
+				<release>1985</release>
+				<publisher>Epic Games</publisher>
+				<gameplot>Tyrian is a scrolling shooter computer game developed by Eclipse Software and published in 1995 by Epic MegaGames.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4006</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4007</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4008</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4009</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4010</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4011</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4012</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4013</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4014</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4015</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4016</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4017</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4018</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4019</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4020</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4021</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4022</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4023</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4024</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4025</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4026</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4027</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4028</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4029</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4030</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4031</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4032</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4033</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4034</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4035</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4036</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4037</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4038</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4039</id>
+				<name></name>
+				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+		</roms>
+	</launcher>
+	
+	<launcher>
+		<id>Featherence_dos4P</id>
+		<name>DOS 4P</name>
+		<category>Featherence_dos</category>
+		<application>emulator_file</application>
+		<args>lib_args_dos_args "%rom%"</args>
+		<rompath>rom_pathDOS/_4P/</rompath>
+		<thumbpath>rom_pathDOS/_4P/_Artwork/boxfront/</thumbpath>
+		<fanartpath>rom_pathDOS/_4P/_Artwork/screenshot/</fanartpath>
+		<trailerpath>rom_pathDOS/_4P/_Artwork/gameplay(video)/</trailerpath>
+		<custompath></custompath>
+		<romext>bat</romext>
+		<platform>DOS</platform>
+		<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/4P.png</thumb>
+		<fanart></fanart>
+		<genre></genre>
+		<release></release>
+		<publisher></publisher>
+		<launcherplot></launcherplot>
+		<finished>false</finished>
+		<minimize>false</minimize>
+		<lnk></lnk>
+		<roms>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4004</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4005</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4006</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4007</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4008</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4009</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4010</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4011</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4012</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4013</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4014</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4015</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4016</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4017</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4018</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4019</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4020</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4021</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4022</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4023</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4024</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4025</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4026</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4027</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4028</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4029</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4030</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4031</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4032</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4033</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4034</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4035</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4036</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4037</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4038</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e29ra1ba6713ec1769cbd3f4039</id>
+				<name></name>
+				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>?</genre>
+				<release>?</release>
+				<publisher>?</publisher>
+				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+		</roms>
+	</launcher>
 
 </advanced_launcher>

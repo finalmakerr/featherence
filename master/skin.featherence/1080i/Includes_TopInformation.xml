@@ -101,7 +101,7 @@
 		  <visible>$PARAM[condition]</visible>
 		  <!--<height>$PARAM[height]</height>-->
 		  <posy>-6</posy>
-		  <animation condition="!Window.IsVisible(CustomHomeCustomizer.xml) + [System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)]" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
+		  <animation condition="!Window.IsVisible(CustomHomeCustomizer.xml) + [System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)]" effect="fade" start="100" end="0" time="7000" reversible="false">Conditional</animation>
 		  <control type="image" description="מסגרת">
 			<include>Fade_TopInformationOverlay</include>
 			<height>$PARAM[height]</height>

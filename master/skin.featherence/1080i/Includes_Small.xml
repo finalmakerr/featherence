@@ -276,10 +276,10 @@
 	  <posx>70r</posx>
 	  <posy>5</posy>
 	  <width>65</width>
-	  <!--<visible>Container.Content(TVShows) + Integer.IsGreater(ListItem.Property(WatchedEpisodes),0)</visible>-->
+	  <visible>String.IsEmpty(Control.GetLabel(11156)) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(Home.xml)]</visible>
+	  <visible>!String.Contains(ListItem.Label,$LOCALIZE[33078]) + !String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Label,Next Page)</visible>
 	  <visible>!String.IsEmpty(Control.GetLabel(11300)) | String.IsEqual(ListItem.Overlay,OverlayWatched.png) | Integer.IsGreater(ListItem.Property(WatchedEpisodes),0) + Integer.IsLess(ListItem.Property(UnWatchedEpisodes),0)</visible> 
 	  <control type="image" description="סמן נצפה">
-	  <!--<animation condition="$EXP[View57]" effect="zoom" center="60,-10" start="100,100" end="70,70" time="0">Conditional</animation>-->
 		  <aspectratio align="left">keep</aspectratio>
 		  <height>285</height>
 		  <posx>-165</posx>

@@ -2567,6 +2567,7 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + '---------------------------'
 			message = message + newline + "tips" + space2 + xbmc.getInfoLabel('Window(home).Property(tips)')
 			message = message + newline + "ListItem.Path" + space2 + xbmc.getInfoLabel('ListItem.Path')
+			message = message + newline + "Container.NumItems" + space2 + xbmc.getInfoLabel('Container.NumItems')
 			message = message + newline + "Container.FolderPath" + space2 + xbmc.getInfoLabel('Container.FolderPath')
 			message = message + newline + "Container.FolderName" + space2 + xbmc.getInfoLabel('Container.FolderName')
 			message = message + newline + "ListItem.Overlay" + space2 + xbmc.getInfoLabel('ListItem.Overlay')
