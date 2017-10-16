@@ -736,7 +736,7 @@
 			<control type="label" description="שם שחקן">
 			  <textcolor>yellow</textcolor>
 			  <include>LabelC13</include>
-			  <label>$INFO[ListItem.Label]</label> <!--[CR]$LOCALIZE[12391] $INFO[Container(311).ListItem(0).Property(runtime)]-->
+			  <label>$INFO[ListItem.Label]</label>
 			  <posx>33</posx>
 			  <posy>412</posy>
 			  <height>30</height>

@@ -5,12 +5,16 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
+- Added Dosbox support.
+- Added Dosbox English & Hebrew Categories.
+- Added dozen of DOS games.
 - Added Dreamcast disc swap support.
 - Added G-Drive file storage support.
 
 ------------------------
 Featherence Emu v0.1.6 (xx-Oct-17)
 ------------------------
+- Added Board genre for supported skin (Aka Featherence Skin).
 - Major update of GameCube console.
 + Added default optimal core configuration.
 + Added few more games for GameCube per users requests.

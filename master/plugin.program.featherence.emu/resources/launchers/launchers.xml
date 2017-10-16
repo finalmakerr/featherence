@@ -8211,7 +8211,7 @@
 					<fanart>rom_pathNintendo/_2P/_Artwork/screenshot/Archon.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Traditional</genre>
+					<genre>Board</genre>
 					<release>1989</release>
 					<publisher>Activision, Inc.Bullet-Proof Software</publisher>
 					<gameplot>The forces of light and dark are engaged in a climactic battle, and your decisions and skill will determine its outcome. Based on the computer title from Electronic Arts, Archon for NES is a board game with a twist: you must actively battle your opponent over contested squares. Each side has 18 fantasy creatures to deploy on a 9x9 checkerboard, from lowly knights and goblins to the powerful wizard and sorceress. Your goal is to either eliminate the opposing faction's units or to maintain control over five "power point" squares. When two creatures meet on the same space, a real-time battle ensues on a separate screen, with players directly controlling their character. Each square's color determines which unit, if any, receives a health advantage in combat.</gameplot>
@@ -9561,7 +9561,7 @@
 					<fanart>rom_pathNintendo 64/_4P/_Artwork/screenshot/Mario Party 2.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Miscellaneous</genre>
+					<genre>Board / Miscellaneous / Family</genre>
 					<release>2000</release>
 					<publisher>Hudson</publisher>
 					<gameplot>Mario and the gang are back for another round of Bowser-bashin' party action! Watch as your favorite Nintendo characters don different duds for each of the five all-new Adventure Boards! A slew of new tricks and devices bring new levels of challenge and excitement to board game play. New board maps, new Mini-Games, new action and new surprises means a whole new batch of fun! Get ready to unleash your best Hip Drops, hammer swings and high-flying high junks for another round of frenzied multi-player action!</gameplot>
@@ -9576,7 +9576,7 @@
 					<fanart>rom_pathNintendo 64/_4P/_Artwork/screenshot/Monopoly.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Action</genre>
+					<genre>Board</genre>
 					<release>1999</release>
 					<publisher>Minds-Eye Productions</publisher>
 					<gameplot>Mr. Monopoly is your Master of Ceremonies as the rich characters and colorful worlds of the Atlantic City Boardwalk come to life in full 3D animation! The best-selling board game of all time is better than ever with incredible N64 real-time graphics and expanded features. Enjoy classic Monopoly gameplay with non-stop wheeling and dealing from the rolling lawns of Park Place to the lowly back yards of Baltic Avenue.</gameplot>
@@ -17948,10 +17948,10 @@
 		<category>Featherence_dos</category>
 		<application>emulator_file</application>
 		<args>lib_args_dos_args "%rom%"</args>
-		<rompath>rom_pathDOS/_1P/</rompath>
-		<thumbpath>rom_pathDOS/_1P/_Artwork/boxfront/</thumbpath>
-		<fanartpath>rom_pathDOS/_1P/_Artwork/screenshot/</fanartpath>
-		<trailerpath>rom_pathDOS/_1P/_Artwork/gameplay(video)/</trailerpath>
+		<rompath>rom_pathDOS/_EN/</rompath>
+		<thumbpath>rom_pathDOS/_EN/_Artwork/boxfront/</thumbpath>
+		<fanartpath>rom_pathDOS/_EN/_Artwork/screenshot/</fanartpath>
+		<trailerpath>rom_pathDOS/_EN/_Artwork/gameplay(video)/</trailerpath>
 		<custompath></custompath>
 		<romext>bat</romext>
 		<platform>DOS</platform>
@@ -17968,9 +17968,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4000</id>
 				<name>Albion</name>
-				<filename>rom_pathDOS/_1P/Albion/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Albion.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Albion.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Albion/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Albion.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Albion.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Role-Playing</genre>
@@ -17983,9 +17983,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4001</id>
 				<name>Capitalism Plus</name>
-				<filename>rom_pathDOS/_1P/Capitalism Plus/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Capitalism Plus.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Capitalism Plus.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Capitalism Plus/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Capitalism Plus.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Capitalism Plus.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Strategy</genre>
@@ -17998,9 +17998,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4002</id>
 				<name>Castles II - Siege and Conquest</name>
-				<filename>rom_pathDOS/_1P/Castles II - Siege and Conquest/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Castles II - Siege and Conquest.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Castles II - Siege and Conquest.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Castles II - Siege and Conquest/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Castles II - Siege and Conquest.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Castles II - Siege and Conquest.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Strategy</genre>
@@ -18013,9 +18013,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4003</id>
 				<name>Constructor</name>
-				<filename>rom_pathDOS/_1P/Constructor/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Constructor.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Constructor.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Constructor/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Constructor.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Constructor.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Strategy</genre>
@@ -18028,9 +18028,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4004</id>
 				<name>Gobliiins</name>
-				<filename>rom_pathDOS/_1P/Gobliiins/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Gobliiins.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Gobliiins.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Gobliiins/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Gobliiins.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Gobliiins.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Adventure / Puzzle</genre>
@@ -18043,9 +18043,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4005</id>
 				<name>Conquest of the New World</name>
-				<filename>rom_pathDOS/_1P/Conquest of the New World/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Conquest of the New World.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Conquest of the New World.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Conquest of the New World/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Conquest of the New World.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Conquest of the New World.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -18058,9 +18058,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4006</id>
 				<name>Lords of the Realm</name>
-				<filename>rom_pathDOS/_1P/Lords of the Realm/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Lords of the Realm.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Lords of the Realm.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Lords of the Realm/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Lords of the Realm.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Lords of the Realm.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Strategy</genre>
@@ -18073,9 +18073,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4007</id>
 				<name>Supremacy - Your Will Be Done</name>
-				<filename>rom_pathDOS/_1P/Supremacy - Your Will Be Done/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Supremacy - Your Will Be Done.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Supremacy - Your Will Be Done.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Supremacy - Your Will Be Done/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Supremacy - Your Will Be Done.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Supremacy - Your Will Be Done.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Strategy</genre>
@@ -18088,12 +18088,12 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4008</id>
 				<name>Putt Putt's Fun Pack</name>
-				<filename>rom_pathDOS/_1P/Putt Putt's Fun Pack/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Putt Putt's Fun Pack.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Putt Putt's Fun Pack.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Putt Putt's Fun Pack/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Putt Putt's Fun Pack.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Putt Putt's Fun Pack.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>Puzzle</genre>
+				<genre>Board / Puzzle</genre>
 				<release>1993</release>
 				<publisher>Humongous Entertainment</publisher>
 				<gameplot>Play a multitude of games with Putt Putt and pep. It's more fun than a static board game.</gameplot>
@@ -18103,9 +18103,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4009</id>
 				<name>Putt-Putt Goes to the Moon</name>
-				<filename>rom_pathDOS/_1P/Putt-Putt Goes to the Moon/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Putt-Putt Goes to the Moon.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Putt-Putt Goes to the Moon.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Putt-Putt Goes to the Moon/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Putt-Putt Goes to the Moon.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Putt-Putt Goes to the Moon.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Adventure / Puzzle </genre>
@@ -18118,9 +18118,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4010</id>
 				<name>Putt-Putt Joins the Parade</name>
-				<filename>rom_pathDOS/_1P/Putt-Putt Joins the Parade/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Putt-Putt Joins the Parade.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Putt-Putt Joins the Parade.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Putt-Putt Joins the Parade/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Putt-Putt Joins the Parade.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Putt-Putt Joins the Parade.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Adventure / Puzzle </genre>
@@ -18133,9 +18133,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4011</id>
 				<name>Puzznic</name>
-				<filename>rom_pathDOS/_1P/Puzznic/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Puzznic.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Puzznic.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Puzznic/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Puzznic.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Puzznic.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Puzzle</genre>
@@ -18148,9 +18148,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4012</id>
 				<name>Quest For Glory IV - Shadows of Darkness</name>
-				<filename>rom_pathDOS/_1P/Quest For Glory IV - Shadows of Darkness/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Quest For Glory IV - Shadows of Darkness.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Quest For Glory IV - Shadows of Darkness.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Quest For Glory IV - Shadows of Darkness/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Quest For Glory IV - Shadows of Darkness.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Quest For Glory IV - Shadows of Darkness.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Adventure / Role-Playing</genre>
@@ -18163,9 +18163,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4013</id>
 				<name>Quest for Glory III - Wages of War</name>
-				<filename>rom_pathDOS/_1P/Quest for Glory III - Wages of War/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Quest for Glory III - Wages of War.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Quest for Glory III - Wages of War.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Quest for Glory III - Wages of War/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Quest for Glory III - Wages of War.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Quest for Glory III - Wages of War.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Adventure / Role-Playing</genre>
@@ -18178,9 +18178,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4014</id>
 				<name>Shadow Knights</name>
-				<filename>rom_pathDOS/_1P/Shadow Knights/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Shadow Knights.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Shadow Knights.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Shadow Knights/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Shadow Knights.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Shadow Knights.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Platform</genre>
@@ -18193,9 +18193,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4015</id>
 				<name>Syndicate</name>
-				<filename>rom_pathDOS/_1P/Syndicate/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Syndicate.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Syndicate.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Syndicate/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Syndicate.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Syndicate.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Strategy</genre>
@@ -18208,9 +18208,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4016</id>
 				<name>The Horde</name>
-				<filename>rom_pathDOS/_1P/The Horde/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/The Horde.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/The Horde.jpg</fanart>
+				<filename>rom_pathDOS/_EN/The Horde/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/The Horde.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/The Horde.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Strategy</genre>
@@ -18223,9 +18223,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4017</id>
 				<name>The Settlers II -Gold Edition</name>
-				<filename>rom_pathDOS/_1P/The Settlers II -Gold Edition/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/The Settlers II -Gold Edition.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/The Settlers II -Gold Edition.jpg</fanart>
+				<filename>rom_pathDOS/_EN/The Settlers II -Gold Edition/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/The Settlers II -Gold Edition.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/The Settlers II -Gold Edition.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Strategy</genre>
@@ -18238,9 +18238,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4018</id>
 				<name>WarCraft - Orcs &amp; Humans</name>
-				<filename>rom_pathDOS/_1P/WarCraft - Orcs &amp; Humans/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/WarCraft - Orcs &amp; Humans.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/WarCraft - Orcs &amp; Humans.jpg</fanart>
+				<filename>rom_pathDOS/_EN/WarCraft - Orcs &amp; Humans/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/WarCraft - Orcs &amp; Humans.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/WarCraft - Orcs &amp; Humans.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Strategy</genre>
@@ -18253,9 +18253,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4019</id>
 				<name>Warcraft II - Tides of Darkness</name>
-				<filename>rom_pathDOS/_1P/Warcraft II - Tides of Darkness/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Warcraft II - Tides of Darkness.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Warcraft II - Tides of Darkness.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Warcraft II - Tides of Darkness/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Warcraft II - Tides of Darkness.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Warcraft II - Tides of Darkness.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Strategy</genre>
@@ -18268,9 +18268,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4020</id>
 				<name>Hugo in a new Adventure‎</name>
-				<filename>rom_pathDOS/_1P/Hugo in a new Adventure‎/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo in a new Adventure‎.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo in a new Adventure‎.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Hugo in a new Adventure‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hugo in a new Adventure‎.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hugo in a new Adventure‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Platform / Action</genre>
@@ -18283,9 +18283,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6711bc1769cbd3f4020</id>
 				<name>Hugo Maze‎</name>
-				<filename>rom_pathDOS/_1P/Hugo Maze/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo Maze.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo Maze.jpg</fanart>
+				<filename>rom_pathDOS/_EN/Hugo Maze/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hugo Maze.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hugo Maze.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>Platform / Action</genre>
@@ -18296,251 +18296,206 @@
 				<altarg></altarg>
 			</rom>
 			<rom>
-				<id>d39a1ng1xa1ba6711bc1769zbd3f4020</id>
-				<name>Hugo 1</name>
-				<filename>rom_pathDOS/_1P/Hugo 1/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo 1.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo 1.jpg</fanart>
-				<trailer></trailer>
-				<custom></custom>
-				<genre>Platform / Action</genre>
-				<release>1996</release>
-				<publisher>ITE</publisher>
-				<gameplot>הוגו נוצר ב1990 ע"י חברה דנית בשם International Television Entertainment (או ITE בקיצור). המשחק פותח במיוחד למען צורת המשחק של טלוויזיה+טלפון. אני לא יודע מה היה המשחקון הראשון של החברה או מי היה הלקוח הראשון שלהם אבל די מהר הפופולאריות של הטרול האופטימי עלתה והוא התפשט אל מחוץ לדנמרק. לישראל הוא הגיע ב1994 ונחת היישר בערוץ הילדים, גם כאן בארץ הקודש, בהנחיית טובי מנחי ערוץ 6, המשחק הפך ללהיט בקרב הילדים ובני הנוער. כאשר סיים את דרכו בערוץ הילדים הוגו גוייס ע"י חברת החשמל למלחמה בנושא סכנות החשמל בשל היותו סמל מוכר לקהל היעד.[CR]העלילה בכל המשחקונים (הרבים) היא זהה: הוגו הוא טרול עליז הנשוי באושר לבת זוגו - הוגולינה, עד לרגע שבו גריזלדה, המכשפה המרשעת, חוטפת את זוגתו ואת ילדיו מסיבות שלא ידועות לנו. על הוגו לצאת למסע להציל את משפחתו ועל גריזלדה - לערום קשיים (איך מאייתים Cliché ?).[CR]משחקי הוגו הגיעו למחשב האישי כמעט מראשית דרכו של הוגו, אך זהו משחק המחשב הראשון של הוגו שתורגם ודובב לעברית ע"י מחשבת, המשחק מורכב מארבעה משחקונים:[CR]מתחת לפני המים - הוגו צולל עם משקפת ים ושנורקל בנהר וצריך להזהר מסרטנים, דגים רעבים ודיונונים (תמנונים?) יורי דיו[CR]במערת הקרח - הוגו צריך לקפץ בין עמודי קרח ולהזהר לא ליפול (או להתרסק על הקיר)[CR]גלגליות - הוגו מחליק על לוח גלישה (סקייטבורד) מאולתר וצריך להזהר מבונים, סלעים וגשרים רופפים [CR]קפיצה גזעית - הוגו מקפץ על גזעי עץ בנהר וצריך להזהר מענפים סוררים ומסכנת טביעה</gameplot>
-				<altapp></altapp>
-				<altarg></altarg>
-			</rom>
-			<rom>
-				<id>d39a1eg1xa1ba6711bc1769zbd3f4020</id>
-				<name>Hugo 2‎‎</name>
-				<filename>rom_pathDOS/_1P/Hugo 2/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo 2.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo 2.jpg</fanart>
-				<trailer></trailer>
-				<custom></custom>
-				<genre>Platform / Action</genre>
-				<release>1997</release>
-				<publisher>ITE</publisher>
-				<gameplot>כדי להציל את הוגולינה והילדים מהמכשפה הרעה גריזלדה, יהיה עליך לעזור להוגו להתגבר על אתגרים רבים , כעת נעבור לפירוט של השלבים השונים: [CR]SNOWBOARD - הוגו בשלג [CR]שלב זה מתרחש בחורף. הוגו מטפס על הר כאשר המכשפה המרושעת מפעילה פצצה בראש ההר. כעת עליך לעזור להוגו לרוץ במהירות במורד ההר [CR]כדי להתחמק מהמפולת, בזמן שאתה מתחמק מכדורי שלג ענקים. מדי פעם יצוצו מולך אנשי שלג ויהיה עליך להילחם בהם עם כדורי שלג. כמו כן, מדי פעם יהיה עליך לבחור האם אתה רוצה להמשיך שמאלה או ימינה. אם תבחר בדרך האטית, המפולת עלולה להשיג אותך. למזלך להוגו יש מפה, והוא יכול להציץ בה כדי לבחור את הדרך העדיפה. הדרכים שמסומנות בירוק הן הדרכים המהירות יותר. [CR]NIMBUS - הוגו על האופנוע [CR]בשלב זה הוגו רוכב על אופנוע מסביב להר. על הוגו להגיע למערה של המכשפה, אך בדרך הוא יתקל בעיזים, בסלעים, בבורות ובסכנות אחרות. עליך לעזור להוגו להתחמק מכל הסכנות, ובנוסף לאסוף מיכלי דלק נוספים במהלך הדרך· כמו כן, מומלץ שתבדוק במפה שאתה נמצא בדרך הנכונה. [CR]DOLMEN CAVE - הוגו במערות [CR]בשלב DDLMEN CAVE הוגו מסתובב במבוך תת-קרקעי של מערות. מפלס המים במערות עולה באטיות ככל שהזמן עובר, ולכן עליך לצאת במהירות. להוגו יש מפה של המבוך התת-קרקעי אשר כולל מעליות, חבלי טיפוס ומפלצות רבות. [CR]BALLOON - הוגו בבלון פורח [CR]בשלב ה- BALLOON , הוגו טס בשמים בין הרים ומעל צוקיס קטלניים. לפתע, הכדור הפורח שלך מאבד אוויר ואתה צריך לזוז שמאלה וימינה כדי להגיע לתחתית המערה בלי להיפגע. </gameplot>
-				<altapp></altapp>
-				<altarg></altarg>
-			</rom>
-			<rom>
-				<id>d39a1e21xa1ba6711bc1769zbd3f4020</id>
-				<name>Hugo 5‎‎</name>
-				<filename>rom_pathDOS/_1P/Hugo 5/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo 5.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo 5.jpg</fanart>
-				<trailer></trailer>
-				<custom></custom>
-				<genre>Platform / Action</genre>
-				<release>1997</release>
-				<publisher>ITE</publisher>
-				<gameplot>כולל ארבעה משחקונים:[CR]* צניחה - הוגו צונח עם מצנח רחיפה וצריך להזהר מחסידות נודדות ופצצות מוצנחות.[CR]* מגלשה - הוגו גולש על מזחלת שלג וצריך להזהר מאנשי שלג ובונים עצבניים.[CR]* טיפוס צוקים - הוגו מטפס על מצוקים מלאי סכנות.[CR]* גשר קורות - הוגו קופץ על קורות ועל גשרים בעוד הוא נזהר מסכנות, לא לשכוח את סדר הופעת הינשופים והצפרדעים.</gameplot>
-				<altapp></altapp>
-				<altarg></altarg>
-			</rom>
-			<rom>
-				<id>d39a1e69xa1ba6711bc1769cbd3f4020</id>
-				<name>Hugo 6 - Wild River‎‎</name>
-				<filename>rom_pathDOS/_1P/Hugo 6 - Wild River‎/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo 6 - Wild River‎.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo 6 - Wild River‎.jpg</fanart>
-				<trailer></trailer>
-				<custom></custom>
-				<genre>Platform / Action</genre>
-				<release>1998</release>
-				<publisher>ITE</publisher>
-				<gameplot>זהו המשחק האחרון מסדרת הוגו ה"קלאסית" המקורית. וגם המשחק האחרון שתורגם/דובב לעברית מהסדרה הנ"ל.[CR]זהו גם המשחק הראשון שיצא רק לחלונות ולא לדוס, רציתי לומר "לצערי", אבל ניסיתי את המשחק בשני מחשבים עם XP ובשניהם הוא רץ בצורה חלקה לחלוטין... בואו נקווה שהתוצאה תהיה זהה במערכות הפעלה אחרות ובעיקר בויסטה הבאה עלינו לרעה.[CR]בדומה לכל שאר המשחקים מהסדרה הקלאסית (הוגו 1/2, הוגו 3, הוגו 4 והוגו 5) המשחק עצמו כולל ארבעה משחקונים:[CR]מסלול מסוכן - הוגו רוכב על עגלת-מכרה (Minecart) כל הדרך אל המערה של גריזלדה תוך כדי שהוא נזהר מפיגומים ומדרכים ללא מוצא.[CR]ביצה - הוגו מטייל בביצות שורצות עטלפים ועליו להזהר מבוץ טובעני ומציפור ה-Adda. זכרו את שני הקולות שהעצים ישמיעו, אתם תזדקקו להם על מנת לסיים את המסלול.[CR]נהר - הוגו שט בנהר הפרא בתוך חבית כשעליו להזהר מסלעים קוצניים, מנפילת החבית מתחת לרגליו ומדרכים ללא מוצא.[CR]אבנים - הוגו צועד ביער בעוד הוא נזהר מן האבנים אותן משגרת גריזלדה, ממגוון מכשולים על הקרקע ומדרכים ללא מוצא.</gameplot>
-				<altapp></altapp>
-				<altarg></altarg>
-			</rom>
-			<rom>
-				<id>d39a1ng1xa1ba6711bc1769zbd3f4020</id>
-				<name>Hugo - The Magic Oak</name>
-				<filename>rom_pathDOS/_1P/Hugo - The Magic Oak/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/Hugo - The Magic Oak.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/Hugo - The Magic Oak.jpg</fanart>
-				<trailer></trailer>
-				<custom></custom>
-				<genre>Platform / Action</genre>
-				<release>1998</release>
-				<publisher>ITE</publisher>
-				<gameplot>ץ האלון הקסום (או "הוגו - עץ האלון הקסום", כפי שמופיע על התקליטור) הוא משחק ששונה מסדרת הוגו הקלאסית. למיטב ידיעתי, זהו המשחק היחיד שלא מן הסדרה הקלאסית ושתורגם ע"י באג, שאר המשחקים החדשים יותר תורגמו, ועדיין נמכרים, ע"י קומפדיה. [CR]במשחק הזה עליכם לעזור לרַט, שהוא אחד מבניו של הוגו, לחזור לעץ האלון לאחר שגריזלדה כישפה אותו והפרידה אותו ממשפחתו. המשחק מחולק לשלושה חלקים - המסלול על הקרקע, המסלול בנהר (בתוך חבית) והמשחקונים. בתחילת המסלול ניתן לכם זמן בשעון חול וכל התקלות במכשול במסלול הקרקע ובמסלול הנהר תפחית מן החול ובכך מן הזמן. הזמן לא נעצר בזמן המשחקונים ולכן יש לסיימם במהרה.</gameplot>
-				<altapp></altapp>
-				<altarg></altarg>
-			</rom>
-			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4021</id>
-				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Winter Challenge</name>
+				<filename>rom_pathDOS/_EN/Winter Challenge/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Winter Challenge.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Winter Challenge.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Sports</genre>
+				<release>1991</release>
+				<publisher>Accolade</publisher>
+				<gameplot>Winter Challenge is a video game that portrays seven winter sports that are competed in during the Winter Olympics.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4022</id>
-				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Nitemare 3D</name>
+				<filename>rom_pathDOS/_EN/Nitemare 3D/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Nitemare 3D.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Nitemare 3D.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Shooter / Horror</genre>
+				<release>1994</release>
+				<publisher>Gray Design Associates</publisher>
+				<gameplot>Nitemare 3D is a first-person shooter video game with a horror theme, released by Gray Design Associates in 1994 for MS-DOS and Windows 3.1x platforms.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4023</id>
-				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Archon Ultra</name>
+				<filename>rom_pathDOS/_EN/Archon Ultra/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Archon Ultra.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Archon Ultra.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1994</release>
+				<publisher>Softgold Computerspiele GmbH</publisher>
+				<gameplot>שחמט. מה כבר אפשר להגיד על שחמט? 32 כלים, 64 משבצות ומשחק עד ה"מט", לא? כנראה שלא... כל כך הרבה מילים נכתבו על משחק הלוח הזה, והוא עדיין מוסיף להיות אחד המשחקים הפופולריים בעולם, מאות שנים לאחר המצאתו. ואם בצורתו הקלאסית הוא כל כך אהוב, למה לא לנסות "לרכב על הגל" ולהוסיף קצת "פלפל" למשחק הפופולרי?[CR]זה בדיוק מה ש-Electronic Arts ניסו לעשות בשנת 1984 עם Archon, ועשור אחר-כך, Free Fall Associates פיתחו על בסיס המשחק ההוא את Archon Ultra, שכמו קודמו, הפך מיד ללהיט ענק. כמו במשחק השחמט הרגיל, גם Archon Ultra מתבסס על שני צדדים, שחור ולבן, שצריכים להתמודד ביניהם על הניצחון. הבסיס הוא דומה, אך יש הבדלים רבים בין שני המשחקים.[CR]ראשית כל, ב-Archon Ultra לא מתמודדים שני צדדים דומים. ההתמודדות במשחק היא בין כוחות האור (הלבנים) וכוחות החושך (השחורים). הכלים של כל צד שונים, בהתאם ל"תפקיד" של הצד. לכוחות האור יש כלים "חיוביים" ולרשות כוחות החושך עומדים כלים שליליים (קוסם לעומת מכשף וכו').</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4024</id>
-				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Beware of the Dog</name>
+				<filename>rom_pathDOS/_EN/Beware of the Dog/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Beware of the Dog.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Beware of the Dog.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Cards</genre>
+				<release>1996</release>
+				<publisher>Inner Workings</publisher>
+				<gameplot>כבר שנים ארוכות, אולי אפילו מאז המצאת מושג הדואר המודרני, שמתנהל קרב ענקים בין שני מחנות של יריבים מושבעים: מחנה הדוורים ומחנה הכלבים. הדוורים, מצד אחד, בסך הכל רוצים למלא את תפקידם בהצלחה, ולהעביר לכל דייר את המכתבים הממוענים אליו. מהצד השני ניתן למצוא את הכלבים, נאמנים לבעליהם עד תום, שלא מעוניינים לאפשר לאף אורח זר להניח את כף רגלו בשטחם. איך אפשר בכל זאת לספק שירותי דואר לבתים שמחזיקים כלב בחצר? שאלה טובה.[CR]Beware of the Dog מבוסס על היריבות הספציפית הזו. המשחק מתרחש בחצר בית, כאשר מצד אחד גר בה כלב נאמן, ומצד שני, מעוניין לעבור בה דוור נחוש על מנת להגיע אל דלת הבית ולמסור מכתב. חצר הבית מכילה מספר שבילים, וכל שביל מורכב ממספר משבצות. במקרה שלנו, המשחק מתנהל בתורים, כאשר בכל תור מוטלת קוביה אשר מחליטה כמה צעדים מותר לכל אחד מהצדדים להתקדם - צעד אחד בכל משבצת. מטרת הדוור היא להגיע למשבצת הסמוכה לדלת הבית, בעוד שהכלב צריך לנסות לתפוס את הדוור לפני כן. שימו לב: הכלב השובב חופר מנהרות בחצר, ומי שנכנס לתוכן עלול למצוא את עצמו במקום שונה לחלוטין ביציאה.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4025</id>
-				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Clue - Master Detective‎</name>
+				<filename>rom_pathDOS/_EN/Clue - Master Detective‎‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Clue - Master Detective‎.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Clue - Master Detective‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Cards / Puzzle</genre>
+				<release>1989</release>
+				<publisher>Mastertronic Ltd.</publisher>
+				<gameplot>"הרמז" ("Clue" או "Cluedo" בלועזית) הוא משחק לוח בלשי ותיק. הוא יצא במקור בשנת 1948 באנגליה, אך הפך פופולרי במהרה במדינות רבות נוספות בזכות ההמשחקיות המותחת שלו. כטבעם של משחקי לוח פופולריים, בשלב מסויים נעשה ניסיון לרכוב על ההצלחה ולהוציא לשוק גם משחק מחשב מתאים. במקרים רבים זה מצליח, אך לעיתים, כמו במקרה שלנו, משהו הולך לאיבוד בתהליך.[CR]"Clue - Master Detective" הוא עיבוד ממוחשב ל"הרמז"'. אם לדייק, המשחק הוא עיבוד ממוחשב למשחק לוח הנושא את אותו השם, שיצא בשנת 1988 כגרסת הרחבה למשחק "הרמז" המקורי. בתור כזה, הוא מכיל כמובן את האלמנטים הבסיסיים של משחק הלוח: מר בודי נרצח באכזריות באחוזתו שלו, והרוצח עדיין לא נלכד! ולא זאת בלבד - למעשה, הרוצח עדיין נמצא באחוזה! למרבה האימה, יחד עם הרוצח הנתעב נמצאים גם תשעה מבקרים תמימים, ולא ברור מי מהעשרה אשם ברצח. לרוב, מצב כזה מגיע הישר לידיהם של בלשי המשטרה המנוסים, אך לא הפעם. הפעם, מבקרי האחוזה ינהלו חקירה פנימית וישימו את האצבע על הרוצח בעצמם.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4026</id>
-				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Fatty Bear's Fun Pack‎</name>
+				<filename>rom_pathDOS/_EN/Fatty Bear's Fun Pack‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Fatty Bear's Fun Pack‎.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Fatty Bear's Fun Pack‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1993</release>
+				<publisher>Humongous Entertainment, Inc.</publisher>
+				<gameplot>"דובון בלון וחבילת הכיף" הוא בעצם אוסף של חמישה משחקים שונים: משחק הצורות, משחק הצביעה, אריסטו, משחק הרביעיות ומשחק הקווים והריבועים. בכל המשחקים אתם משחקים נגד דובון בלון, שדרך אגב, מדובב לעברית.[CR]במשחק הקווים והריבועים עליכם ליצור ריבועים על ידי השמת קווים במקומות המיועדים לכך. אך הדבר לא כל כך פשוט, מכיוון שעליכם לשים את הקווים במקומות שיאלצו את דובון לאפשר לכם לסגור ריבוע. גם דובון בלון עושה מנסה לעשות אותו דבר, ומי שיש לו יותר ריבועים בסוף מנצח.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4027</id>
-				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Hexxagon‎</name>
+				<filename>rom_pathDOS/_EN/Hexxagon‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hexxagon‎.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hexxagon‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1993</release>
+				<publisher>Software Creations</publisher>
+				<gameplot>משחק לוח לשני שחקנים או לשחקן אחד מול המחשב. בתחילת המשחק כל צד מקבל כמה כלים המונחים על לוח המשחק. הוא יכול "לשכפל" אותם למקומות הסמוכים או להקפיץ אותם למקומות הפחות סמוכים. כאשר כלי של צד אחד נוגע בכלים של הצד השני הוא "מאזרח" אותם. המטרה במשחק היא להשתלט על כל שטח הלוח או לסיים את המשחק עם מספר הכלים הרב ביותר. למשחק 3 רמות קושי.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4028</id>
-				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Hexxagon‎ 2</name>
+				<filename>rom_pathDOS/_EN/Hexxagon‎ 2/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hexxagon‎ 2.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hexxagon‎ 2.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1993</release>
+				<publisher>Software Creations</publisher>
+				<gameplot>משחק ההמשך לHEXXAGON 1 שדומה לו בכמעט הכל. גם פה בתחילת המשחק כל צד מקבל כמה כלים המונחים על לוח המשחק. הוא יכול "לשכפל" אותם למקומות הסמוכים או להקפיץ אותם למקומות הפחות סמוכים. כאשר כלי של צד אחד נוגע בכלים של הצד השני הוא "מאזרח" אותם. המטרה במשחק היא להשתלט על כל שטח הלוח או לסיים את המשחק עם מספר הכלים הרב ביותר. גם למשחק הזה 3 רמות קושי. גם הפעם ניתן לשחק מול המחשב או נגד שחקן אחר. ההבדל היחידי הוא ב"כלים", שהפכו ל"כדורים" ו"חומצה".</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39c1e79ra1ba6713ec1769cbd3f4029</id>
+				<name>Hoyle's Official Book of Games - Volume 1</name>
+				<filename>rom_pathDOS/_EN/Hoyle's Official Book of Games - Volume 1‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hoyle's Official Book of Games - Volume 1‎.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hoyle's Official Book of Games - Volume 1‎.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Cards</genre>
+				<release>1989</release>
+				<publisher>Sierra</publisher>
+				<gameplot>Play six different card games (Crazy Eights, Old Maid, Hearts, Gin Rummy, Cribbage, and Klondike Solitaire) against 0-3 computer opponents (as appropriate for each game).[CR]There are 18 available computer opponents, including characters from other Sierra games (Colonel Henry Dijon, Shelly LeBlanc, Officer Sonny Bonds, Larry Laffer, King Graham, Roger Wilco and Princess Rosella), Sierra employees (Warren Schwader and Jerry Moore) and their children, and others. The different opponents play the different games at different skill levels, and are broken up into "Serious" and "Not-So-Serious" categories. All the opponents will taunt you (in character) as you play (though you can turn off in-game conversation if it's too distracting).</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39b1e79ra1ba6713ec1769cbd3f4029</id>
+				<name>Hoyle's Official Book of Games - Volume 2‎</name>
+				<filename>rom_pathDOS/_EN/Hoyle's Official Book of Games - Volume 2/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hoyle's Official Book of Games - Volume 2.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hoyle's Official Book of Games - Volume 2‎.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Cards</genre>
+				<release>1991</release>
+				<publisher>Sierra</publisher>
+				<gameplot>Instead of popular card games, Hoyle Volume 3 offers 6 popular parlor games: checkers, backgammon, yacht, dominoes, snakes & ladders, and pachisi (another name for parcheesi). There are good news and bad news that come with this. The good news is that Sierra's game characters are back-- you can now play backgammon against Larry Laffer, or dominoes against Laura Bow. All the board games and characters are well-rendered, and as always, there are on-line rules for every game.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4029</id>
-				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Hoyle's Official Book of Games - Volume 3‎</name>
+				<filename>rom_pathDOS/_EN/Hoyle's Official Book of Games - Volume 3‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hoyle's Official Book of Games - Volume 3‎.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hoyle's Official Book of Games - Volume 3‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Cards</genre>
+				<release>1991</release>
+				<publisher>Sierra</publisher>
+				<gameplot>Instead of popular card games, Hoyle Volume 3 offers 6 popular parlor games: checkers, backgammon, yacht, dominoes, snakes & ladders, and pachisi (another name for parcheesi). There are good news and bad news that come with this. The good news is that Sierra's game characters are back-- you can now play backgammon against Larry Laffer, or dominoes against Laura Bow. All the board games and characters are well-rendered, and as always, there are on-line rules for every game.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4030</id>
-				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Monopoly Deluxe</name>
+				<filename>rom_pathDOS/_EN/Monopoly Deluxe/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Monopoly Deluxe.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Monopoly Deluxe.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Board</genre>
+				<release>1992</release>
+				<publisher>Virgin Games</publisher>
+				<gameplot>Until Westwood's Monopoly CD-ROM, this was the best PC conversion of parlor game classic.[CR]All the tokens are here, with up to 8 components, any number of which can be computer-controlled. The rules of Monopoly are included in full, thanks to Windows help file. As far as board games go, you can't really find fault with this Windows version of the classic.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4031</id>
-				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Stratego</name>
+				<filename>rom_pathDOS/_EN/Stratego/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Stratego.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Stratego.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Board</genre>
+				<release>1990</release>
+				<publisher>Accolade</publisher>
+				<gameplot>המשחק הוא משחק אסטרטגיה ל-2 שחקנים, המתרחש על גבי לוח משבצות 10X10. לכל צד 40 כלי משחק: 33 חיילים בעלי דרגות שונות, 6 פצצות ודגל אחד. כלי המשחק מעוצבים כך שניתן לראות את דרגתם רק מצדם האחד. כל שחקן רשאי לראות את דרגת כליו בלבד, אך נאסר עליו לראות את דרגות כלי יריבו.[CR]לפני תחילת המשחק, כל שחקן מסדר את 40 כליו כרצונו על פני הלוח, בארבע השורות הקרובות אליו. סידור מושכל של הכלים הוא חלק חיוני מאסטרטגיית המשחק ובעל השפעה רבה על מהלך המשחק.[CR]כל חייל יכול לנוע משבצת אחת - לפנים, לאחור או לצדדים אך לא באלכסון. יוצאים מן הכלל הם הפצצה והדגל, שאינם רשאים לנוע, והטוראי/גשש, היכול לנוע מספר משבצות כרצונו באחד מארבעת הכיוונים, אך לא לדלג מעל כלים. במרכז הלוח ישנם שני ריבועים בשטח 2X2 כל אחד, הנחשבים כים ולא ניתן לנוע דרכם.[CR]בכל תור יכול השחקן להניע אחד מחייליו על פי כללים אלו. אם המשבצת פנויה, זוהי תנועה רגילה. אם המשבצת תפוסה על ידי חייל יריב מהלך זה הוא התקפה.[CR]כאשר חייל תוקף חייל מדרגה גבוהה ממנו, או מותקף על ידו, הוא מורד מן הלוח, והחייל בעל הדרגה הגבוהה תופס את מקומו. במקרה ששתי הדרגות שוות, שני החיילים מורדים מן הלוח. מלבד בשני המקרים הבאים:[CR]אם מרגל תוקף רב אלוף או מותקף על ידיו, החייל התוקף מנצח ותופס את מקום החייל היריב.[CR]חבלן שתקף פצצה מנצח ותופס את מקומה, כל חייל אחר שתקף פצצה מורד מן הלוח אך הפצצה לא תופסת את מקומו. הפצצה איננה רשאית לתקוף.[CR]מטרת המשחק היא לגלות את דגל היריב וללכוד אותו. שחקן התופס את דגל היריב מוכרז מיידית כמנצח. דרך נוספת לנצח היא במקרה בו לא נשארים חיילים היכולים לזוז לאחד מהשחקנים (ואז השחקן השני מנצח).</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4032</id>
 				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_EN/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -18553,9 +18508,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4033</id>
 				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_EN/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -18568,9 +18523,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4034</id>
 				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_EN/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -18583,9 +18538,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4035</id>
 				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_EN/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -18598,9 +18553,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4036</id>
 				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_EN/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -18613,9 +18568,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4037</id>
 				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_EN/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -18628,9 +18583,9 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4038</id>
 				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_EN/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -18643,15 +18598,45 @@
 			<rom>
 				<id>d39a1e79ra1ba6713ec1769cbd3f4039</id>
 				<name></name>
-				<filename>rom_pathDOS/_1P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_1P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_1P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_EN/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
 				<release>?</release>
 				<publisher>?</publisher>
 				<gameplot>?</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4004</id>
+				<name>Double Dragon 3</name>
+				<filename>rom_pathDOS/_HE/Double Dragon 3/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Double Dragon 3.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Double Dragon 3.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Action</genre>
+				<release>1988</release>
+				<publisher>Arcadia Systems, Inc.</publisher>
+				<gameplot>Set in a post-apocalyptic New York, Double Dragon is the story of Billy and Jimmy Lee, twin brothers trained in the fighting style of Sou-Setsu-Ken. Together, they manage a small martial arts training school, teaching their students in self-defense. One day, Billy's girlfriend, Marian, is kidnapped off the street by the "Black Warriors", a savage street gang led by a man named Willy. The Black Warriors demand the Lee brothers disclose their martial arts secrets in exchange for Marian's freedom. The Lee brothers set out on a rescue mission to crush the Black Warriors and save Marian.[CR]Using whatever techniques they have at their disposal, from the basic punches and kicks to the invulnerable elbow strike, as well any weapon that comes into their hands, the Lee brothers must pursue the gang through the city slum, industrial area and the forest before reaching their hideout to confront the big boss, Willy.[CR]The NES version of this game also has an additional VS. fighting mode for one or two players. Players choose from a field of six different characters (Billy and 5 of the enemy characters) and enter into a one-on-one fighting match. Players have to punch, kick, jumpkick, and even use a weapon against their opponents until someone's health bar is fully drained. The winner is the last one standing.</gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e19ra1ba6713ec1769cbd3f4005</id>
+				<name>Tyrian 2000</name>
+				<filename>rom_pathDOS/_HE/Tyrian 2000/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Tyrian 2000.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Tyrian 2000.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Shooter / Flying Vertical</genre>
+				<release>1985</release>
+				<publisher>Epic Games</publisher>
+				<gameplot>Tyrian is a scrolling shooter computer game developed by Eclipse Software and published in 1995 by Epic MegaGames.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
@@ -18664,10 +18649,10 @@
 		<category>Featherence_dos</category>
 		<application>emulator_file</application>
 		<args>lib_args_dos_args "%rom%"</args>
-		<rompath>rom_pathDOS/_2P/</rompath>
-		<thumbpath>rom_pathDOS/_2P/_Artwork/boxfront/</thumbpath>
-		<fanartpath>rom_pathDOS/_2P/_Artwork/screenshot/</fanartpath>
-		<trailerpath>rom_pathDOS/_2P/_Artwork/gameplay(video)/</trailerpath>
+		<rompath>rom_pathDOS/_HE/</rompath>
+		<thumbpath>rom_pathDOS/_HE/_Artwork/boxfront/</thumbpath>
+		<fanartpath>rom_pathDOS/_HE/_Artwork/screenshot/</fanartpath>
+		<trailerpath>rom_pathDOS/_HE/_Artwork/gameplay(video)/</trailerpath>
 		<custompath></custompath>
 		<romext>bat</romext>
 		<platform>DOS</platform>
@@ -18682,296 +18667,311 @@
 		<lnk></lnk>
 		<roms>
 			<rom>
-				<id>d39a1e19ra1ba6713ec1769cbd3f4004</id>
-				<name>Double Dragon 3</name>
-				<filename>rom_pathDOS/_2P/Double Dragon 3/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/Double Dragon 3.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/Double Dragon 3.jpg</fanart>
+				<id>d39a1ng1xa1ba6711bc1769zbd3f4020</id>
+				<name>Hugo 1</name>
+				<filename>rom_pathDOS/_EN/Hugo 1/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hugo 1.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hugo 1.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>Action</genre>
-				<release>1988</release>
-				<publisher>Arcadia Systems, Inc.</publisher>
-				<gameplot>Set in a post-apocalyptic New York, Double Dragon is the story of Billy and Jimmy Lee, twin brothers trained in the fighting style of Sou-Setsu-Ken. Together, they manage a small martial arts training school, teaching their students in self-defense. One day, Billy's girlfriend, Marian, is kidnapped off the street by the "Black Warriors", a savage street gang led by a man named Willy. The Black Warriors demand the Lee brothers disclose their martial arts secrets in exchange for Marian's freedom. The Lee brothers set out on a rescue mission to crush the Black Warriors and save Marian.[CR]Using whatever techniques they have at their disposal, from the basic punches and kicks to the invulnerable elbow strike, as well any weapon that comes into their hands, the Lee brothers must pursue the gang through the city slum, industrial area and the forest before reaching their hideout to confront the big boss, Willy.[CR]The NES version of this game also has an additional VS. fighting mode for one or two players. Players choose from a field of six different characters (Billy and 5 of the enemy characters) and enter into a one-on-one fighting match. Players have to punch, kick, jumpkick, and even use a weapon against their opponents until someone's health bar is fully drained. The winner is the last one standing.</gameplot>
+				<genre>Platform / Action</genre>
+				<release>1996</release>
+				<publisher>ITE</publisher>
+				<gameplot>הוגו נוצר ב1990 ע"י חברה דנית בשם International Television Entertainment (או ITE בקיצור). המשחק פותח במיוחד למען צורת המשחק של טלוויזיה+טלפון. אני לא יודע מה היה המשחקון הראשון של החברה או מי היה הלקוח הראשון שלהם אבל די מהר הפופולאריות של הטרול האופטימי עלתה והוא התפשט אל מחוץ לדנמרק. לישראל הוא הגיע ב1994 ונחת היישר בערוץ הילדים, גם כאן בארץ הקודש, בהנחיית טובי מנחי ערוץ 6, המשחק הפך ללהיט בקרב הילדים ובני הנוער. כאשר סיים את דרכו בערוץ הילדים הוגו גוייס ע"י חברת החשמל למלחמה בנושא סכנות החשמל בשל היותו סמל מוכר לקהל היעד.[CR]העלילה בכל המשחקונים (הרבים) היא זהה: הוגו הוא טרול עליז הנשוי באושר לבת זוגו - הוגולינה, עד לרגע שבו גריזלדה, המכשפה המרשעת, חוטפת את זוגתו ואת ילדיו מסיבות שלא ידועות לנו. על הוגו לצאת למסע להציל את משפחתו ועל גריזלדה - לערום קשיים (איך מאייתים Cliché ?).[CR]משחקי הוגו הגיעו למחשב האישי כמעט מראשית דרכו של הוגו, אך זהו משחק המחשב הראשון של הוגו שתורגם ודובב לעברית ע"י מחשבת, המשחק מורכב מארבעה משחקונים:[CR]מתחת לפני המים - הוגו צולל עם משקפת ים ושנורקל בנהר וצריך להזהר מסרטנים, דגים רעבים ודיונונים (תמנונים?) יורי דיו[CR]במערת הקרח - הוגו צריך לקפץ בין עמודי קרח ולהזהר לא ליפול (או להתרסק על הקיר)[CR]גלגליות - הוגו מחליק על לוח גלישה (סקייטבורד) מאולתר וצריך להזהר מבונים, סלעים וגשרים רופפים [CR]קפיצה גזעית - הוגו מקפץ על גזעי עץ בנהר וצריך להזהר מענפים סוררים ומסכנת טביעה</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
-				<id>d39a1e19ra1ba6713ec1769cbd3f4005</id>
-				<name>Tyrian 2000</name>
-				<filename>rom_pathDOS/_2P/Tyrian 2000/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/Tyrian 2000.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/Tyrian 2000.jpg</fanart>
+				<id>d39a1eg1xa1ba6711bc1769zbd3f4020</id>
+				<name>Hugo 2‎‎</name>
+				<filename>rom_pathDOS/_EN/Hugo 2/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hugo 2.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hugo 2.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>Shooter / Flying Vertical</genre>
-				<release>1985</release>
-				<publisher>Epic Games</publisher>
-				<gameplot>Tyrian is a scrolling shooter computer game developed by Eclipse Software and published in 1995 by Epic MegaGames.</gameplot>
+				<genre>Platform / Action</genre>
+				<release>1997</release>
+				<publisher>ITE</publisher>
+				<gameplot>כדי להציל את הוגולינה והילדים מהמכשפה הרעה גריזלדה, יהיה עליך לעזור להוגו להתגבר על אתגרים רבים , כעת נעבור לפירוט של השלבים השונים: [CR]SNOWBOARD - הוגו בשלג [CR]שלב זה מתרחש בחורף. הוגו מטפס על הר כאשר המכשפה המרושעת מפעילה פצצה בראש ההר. כעת עליך לעזור להוגו לרוץ במהירות במורד ההר [CR]כדי להתחמק מהמפולת, בזמן שאתה מתחמק מכדורי שלג ענקים. מדי פעם יצוצו מולך אנשי שלג ויהיה עליך להילחם בהם עם כדורי שלג. כמו כן, מדי פעם יהיה עליך לבחור האם אתה רוצה להמשיך שמאלה או ימינה. אם תבחר בדרך האטית, המפולת עלולה להשיג אותך. למזלך להוגו יש מפה, והוא יכול להציץ בה כדי לבחור את הדרך העדיפה. הדרכים שמסומנות בירוק הן הדרכים המהירות יותר. [CR]NIMBUS - הוגו על האופנוע [CR]בשלב זה הוגו רוכב על אופנוע מסביב להר. על הוגו להגיע למערה של המכשפה, אך בדרך הוא יתקל בעיזים, בסלעים, בבורות ובסכנות אחרות. עליך לעזור להוגו להתחמק מכל הסכנות, ובנוסף לאסוף מיכלי דלק נוספים במהלך הדרך· כמו כן, מומלץ שתבדוק במפה שאתה נמצא בדרך הנכונה. [CR]DOLMEN CAVE - הוגו במערות [CR]בשלב DDLMEN CAVE הוגו מסתובב במבוך תת-קרקעי של מערות. מפלס המים במערות עולה באטיות ככל שהזמן עובר, ולכן עליך לצאת במהירות. להוגו יש מפה של המבוך התת-קרקעי אשר כולל מעליות, חבלי טיפוס ומפלצות רבות. [CR]BALLOON - הוגו בבלון פורח [CR]בשלב ה- BALLOON , הוגו טס בשמים בין הרים ומעל צוקיס קטלניים. לפתע, הכדור הפורח שלך מאבד אוויר ואתה צריך לזוז שמאלה וימינה כדי להגיע לתחתית המערה בלי להיפגע. </gameplot>
+				<altapp></altapp>
+				<altarg></altarg>
+			</rom>
+			<rom>
+				<id>d39a1e21xa1ba6711bc1769zbd3f4020</id>
+				<name>Hugo 5‎‎</name>
+				<filename>rom_pathDOS/_EN/Hugo 5/GO.BAT</filename>
+				<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hugo 5.jpg</thumb>
+				<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hugo 5.jpg</fanart>
+				<trailer></trailer>
+				<custom></custom>
+				<genre>Platform / Action</genre>
+				<release>1997</release>
+				<publisher>ITE</publisher>
+				<gameplot>כולל ארבעה משחקונים:[CR]* צניחה - הוגו צונח עם מצנח רחיפה וצריך להזהר מחסידות נודדות ופצצות מוצנחות.[CR]* מגלשה - הוגו גולש על מזחלת שלג וצריך להזהר מאנשי שלג ובונים עצבניים.[CR]* טיפוס צוקים - הוגו מטפס על מצוקים מלאי סכנות.[CR]* גשר קורות - הוגו קופץ על קורות ועל גשרים בעוד הוא נזהר מסכנות, לא לשכוח את סדר הופעת הינשופים והצפרדעים.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4006</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>1-Click Logo</name>
+				<filename>rom_pathDOS/_HE/1-Click Logo/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/1-Click Logo.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/1-Click Logo.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1995</release>
+				<publisher>Computest</publisher>
+				<gameplot>עבור רבים מבוגרי מערכת החינוך בשנות השמונים והתשעים, "לוגו" היה המגע הראשון עם מחשב. חמושים בסט פקודות בסיסי, ב"צב" צייתן ובהמון סבלנות, הם הצליחו לצייר ציורים מבלי להזדקק לעכבר או למסך מגע, ולפעמים, בלי לשים לב, אפילו הניחו לעצמם את היסודות של לימוד תכנות פרוצדורלי.[CR]בחברת "קומפיוטרס" החליטו לאפשר למתכנתים הצעירים ללמוד את עקרונות "לוגו" בשלבים. עבור הצעירים יותר, יצרו את "לוגי" - מעין לומדת "מבוא ללוגו" אשר מעניקה היכרות בסיסית ביותר עם עקרונות השפה והשיטה. משתמשים מתקדמים יותר כבר יכולים לעבור ל"לוגו במקש אחד" - ממשק גרפי שעוטף ומוסיף אפשרויות לממשק הלוגו המקורי. את הממשק המקורי, אגב, אפשר למצוא במימוש של "מחשבת" - "לוגו".[CR]אז מה זה "לוגו", על רגל אחת? "לוגו" הוא הכלאה בין שפת תכנות בסיסית לבין תוכנת ציור פשוטה, מה שמאפשר ליצור צורות גיאומטריות מורכבות לצד קשקושים פשוטים באמצעות סט פקודות מוגדר מראש ו"צב" - סמן המחשב שמטייל על המסך. את הצב אפשר להזיז קדימה ואחורה, ובנוסף - לסובב אותו לצדדים. בצורה זו, תוך שהצב מסרטט קווים על המסך, מתבצע הציור.[CR]הקשר בין תוכנת הציור לבין שפת התכנות נוצר הודות ל"פרוצדורות" - סדרת פעולות שניתן ללמד את הצב לעשות, כך שיצייר צורה מסויימת. על הפרוצדורה ניתן לחזור בכל פעם שרוצים לצייר את הצורה הזו, בדומה לפונקציה שאליה קוראים בכל פעם שרוצים לבצע פעולה לוגית מסויימת בשפת תכנות.[CR]כאמור, "לוגו במקש אחד" עוטף ומפשט את ממשק הלוגו המקורי. בעוד שבממשק המקורי, תזוזה נעשתה באמצעות הקלדת פקודות כדוגמת "קדימה 10, ימינה 45", הרי שב"לוגו במקש אחד" מספיק להקליק על הסמליל המתאים (או להקליד את האות המתאימה) כדי לבצע פעולות אלו. וכמובן, ניתן לבנות פרוצדורות כאלו באמצעות מסך עריכת ההליכים המובנה בלומדה.[CR]לצד האפשרויות המסורתיות של "לוגו", הלומדה הזו מציעה גם מספר הקלות. אפשר להשתמש בכמה הליכים מוגדרים מראש (ולצייר עיגולים, משולשים, מתומנים וצורות נוספות), ואפשר אף לטעון תמונות רקע או לשנות את אפשרויות הציור. בסוף הציור ניתן אף לבקש מהתוכנה שחזור, מה שיאפשר לעקוב אחרי הפקודות השונות על מנת להבין כיצד הגענו עד הלום.[CR]בסך הכל, "לוגו במקש אחד" עושה עבודה יפה כמעטפת של "לוגו" המקורי, ומאוד מקל על המשתמשים הצעירים בדרך להכרת העקרונות והבסיס של השפה.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4007</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>360 Points</name>
+				<filename>rom_pathDOS/_HE/360 Points/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/360 Points.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/360 Points.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1994</release>
+				<publisher>מטח</publisher>
+				<gameplot>המשחק "360 נקודות" הוא בשבילי שיא הנוסטלגיה בהתגלמותה. הרי בבית ספרי הישן (איך שאני שמח להגיד את זה...) הייתה מותקנת אותה תוכנה משעשעת מבית "מט"ח", המרכז לטכנולוגיה חינוכית. כן, אני זוכר את זה כאילו זה היה אתמול... ילדים זעירים מבריזים משיעורי מתמטיקה רק כדי לשחק במשחק, לשבור את השיא ולזכות בתהילת עולם! (מה רציתם? שנשחק ב"גורדי אלקטרוניקה"?).[CR]עכשיו, שנים רבות אחרי היתקלותי הראשונית (והאחרונה לתקופה ארוכה מאוד) אני מגלה שוב את גאוניותו של המשחק המצוין הזה. במשחק המשימה שלכם היא לשונית ופשוטה. עליכם להרכיב מילים מקבוצות של 7-3 אותיות שהמחשב מציג בפניכם. האותיות שמופיעות על המסך מבולגנות ולכן יש להקליד ולהשיב להן את סדרן הנורמלי.[CR]ככל שהמילה ארוכה יותר, כך אפשר לזכות ביותר נקודות בעת ההקלדה הנכונה של המילה המבולגנת. מטרת המשחק היא להגיע במהירות הגדולה ביותר ל-360 נקודות. ככל שהזמן קטן יותר, כך הסיכוי להיכנס לטבלת השיאים גדול יותר.[CR]כדי להתחיל לשחק במשחק יש להגדיר תחילה אם מעוניינים לשחק במשחק לשחקן יחיד או באחד לשניים. במשחק לשני שחקנים ניתן לבחור באחד משלוש רמות - "מתחילים", "מתקדמים" ו-"מומחים". ברמת מתחילים משחקים במילים בנות 5-3 אותיות. ברמת המתקדמים במילים בנות 6-4 אותיות וברמה האחרונה, רמת המומחים משחקים במילים בנות 7-5 אותיות.[CR]זה בערך כל מה שאפשר להגיד אבל ראוי להוסיף שהמשחק לא רק טומן בתוכו כיף אדיר אלא גם מצליח להחדיר מילים שכיחות למוח. מהרו לשחק אבל לפני כן, יש כמה כללי יסוד שצריך לדעת:[CR]חייבים לנצל את כל האותיות על המסך.[CR]מותר להרכיב כל מילה בעברית חוץ משמות פרטיים.[CR]מותר להשתמש באותיות השימוש (מש"ה וכל"ב) וליצור נטייה של מילים.[CR]מותר להשתמש גם בכתיב מלא וגם בכתיב חסר.[CR]אם משתמשים במקלדת - יש להליד אותיות סופיות ולא רגילות במקום המתאים.[CR]משחק מהנה ביותר!</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4008</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Alice in the English Land‎</name>
+				<filename>rom_pathDOS/_HE/Alice in the English Land‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Alice in the English Land‎.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Alice in the English Land‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1996</release>
+				<publisher>תקוע מחשבים בע"מ</publisher>
+				<gameplot>ולם מכירים את סיפור הילדים הקלאסי אודות אליסה בארץ הפלאות, והרפתקאותיה עם הארנב הלבן, הכובען המטורף, מלכת הלבבות , חתול צ'שייר ושאר הדמויות הצבעוניות שהיא פוגשת במסעה. אולם, הרפתקה פחות מוכרת של אליסה היא בארץ האנגלית, בלומדה של "תקוע מחשבים": Alice in the English Land.[CR]Alice in the English Land הינה לומדה אשר אמורה לשמש בתור מילון מאויר ומדבר, והמיועדת למתחילים. הלומדה כוללת למעלה ממאה וחמישים מלים ראשונות באנגלית, ומתרגלת הבנת הנקרא, הבנת הנשמע וכתיב נכון. היא מציעה מגוון של פעילויות לימודיות, קריינות, אנימציה, מוסיקה ועוד, כאשר כל מילה כתובה, מצויירת וניתנת להשמעה.[CR]הלומדה מחולקת לשתי רמות, כאשר ברמה הראשונה ניתן למצוא נושאים כגון "בבית", "בעלי חיים", "תחבורה", "פירות וירקות" ועוד, בעוד ברמה השנייה נושאים שונים (לאו דווקא מתקדמים יותר) כגון "פריטי לבוש", "פעולות", "סיפורים" ו"בחוץ". שתי הרמות מציעות בסופו של דבר את אותן אפשרויות התרגול, כאשר ההבדל למעשה הוא רק באוצר המילים.[CR]בכל נושא, אפשר לבחור באחד מששת משחקי התרגול הכלולים בלומדה: פרפר נחמד (משחק לשניים, שמזכיר מאוד את משחק הגמדים שניתן למצוא בלומדות "תקוע מחשבים" השונות, בו השחקנים מתחרים אחד נגד השני ונגד הזמן); הגד בעצמך (המתרגל שמיעה והגייה של מילים); עץ הפלא (מעין שיבוט של "איש תלוי"); "מילה לפי תמונה" ו"תמונה לפי מילה" (בדיוק כמו שנשמע מהשם, התאמה בין מילים לתמונות); ואחרון חביב - "הכתבה". הלומדה מאפשרת התאמה של מספר מאפיינים (כגון שימוש באותיות כתב או דפוס), והכל בליווי צמוד של דמויות מתוך הספר.[CR]לצד שתי הרמות המדוברות, הלומדה כוללת גם מספר יחידות נוספות, ואף תפריט עריכה. האם המסע של אליסה בארץ האנגלית ישתווה למסעה בארץ הפלאות? תלוי בכם...</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4009</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Alice in Word Land‎</name>
+				<filename>rom_pathDOS/_HE/Alice in Word Land‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Alice in Word Land‎.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Alice in Word Land‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1996</release>
+				<publisher>תקוע מחשבים בע"מ</publisher>
+				<gameplot>"אליסה בארץ המילים" הינה לומדה אשר אמורה לשמש בתור מילון מצויר ומדבר, והמיועדת למתחילים. הלומדה כוללת למעלה ממאה וחמישים מלים ראשונות בעברית, ומתרגלת הבנת הנקרא, הבנת הנשמע וכתיב נכון. היא מציעה מגוון של פעילויות לימודיות, קריינות, אנימציה, מוסיקה ועוד, כאשר כל מילה כתובה, מצויירת וניתנת להשמעה.[CR]הלומדה מחולקת לשתי רמות, כאשר ברמה הראשונה ניתן למצוא נושאים ניקודיים כגון "קמץ", "חיריק", "סגול", "שורוק" ועוד, בעוד ברמה השנייה נושאים שונים כגון "פריטי לבוש", "בעלי חיים", "כלי תחבורה" ו"בחוץ". שתי הרמות מציעות בגדול את אותן אפשרויות התרגול, כאשר ההבדל למעשה הוא רק באוצר המילים.[CR]לאחר בחירת נושא מסוים, אפשר לבחור באחד מששת משחקי התרגול הכלולים בלומדה: פרפר נחמד (משחק לשניים, שמזכיר מאוד את משחק הגמדים שניתן למצוא בלומדות "תקוע מחשבים" השונות, בו השחקנים מתחרים אחד נגד השני ונגד הזמן); הגד בעצמך (המתרגל שמיעה והגייה של מילים); עץ הפלא (מעין שיבוט של "איש תלוי"); "מילה לפי תמונה" ו"תמונה לפי מילה" (בדיוק כמו שנשמע מהשם, התאמה בין מילים לתמונות); ואחרון חביב - "הכתבה". הלומדה מאפשרת התאמה של מספר מאפיינים (כגון שימוש באותיות כתב או דפוס), והכל בליווי צמוד של דמויות מתוך הספר.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4010</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Amir's Game Menu</name>
+				<filename>rom_pathDOS/_HE/Amir's Game Menu/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Amir's Game Menu.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Amir's Game Menu.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release></release>
+				<publisher></publisher>
+				<gameplot>"תפריט המשחקים של אמיר" הוא אוסף משחקונים בסיסי ומצומצם מבית היוצר של מפתח פרטי, כנראה אמיר בכבודו ובעצמו. האוסף כולל ארבעה משחקים כחלק מתפריט המשחקים, עוד שניים מחוץ לתפריט, ומחולל תרגילים חדשים ליצירת תרגילים נוספים.[CR]ראשית, התפריט: "תפריט המשחקים של אמיר" כולל חמש אפשרויות לבחירה. ארבע האפשרויות הראשונות מובילות למשחקונים קלילים, והאפשרות החמישית נקראת "תרגילים חדשים" ומאפשרת לבנות תבניות חדשות עבור המשחקונים הנ"ל. כל המשחקים הינם בסיסיים ביותר ומיועדים לשחקנים בטווח גילאים צעיר עד מאוד.[CR]המשחק הראשון בתפריט הינו "מי יוצא דופן". במשחק זה, מוצגות על המסך ארבע צורות, ועל המשתמש לבחור את הצורה שיוצאת דופן. [CR]המשחק הבא הוא משחק "התאמת צורות", ובו השחקן מקבל שליטה על סמן בצורה כלשהי, ועליו לחפש על המסך צורה מתאימה ולהתאים בין הצורות. [CR]המשחק השלישי הוא משחק זיכרון, "משחק הזיכרון של אמיר" הוא נקרא. במשחק זה, המסך נחלק לשתי שורות, כאשר כל אחת מהן מכילה חמישה קלפים הפוכים. על השחקן לבחור קלף בשורה כלשהי, פעולה שתגלה מהו הציור שמסתתר מתחת לקלף. לאחר מכן, על השחקן לבחור קלף בשורה המקבילה, פעולה ששוב תגלה מהו הציור שמסתתר מתחת לקלף. המטרה היא לבחור ברצף שני קלפים, אחד מכל שורה, עם ציור זהה עליהם, תוך שימוש בזיכרון על מנת לאתר את המיקומים המתאימים. [CR]המשחק האחרון מהתפריט הוא משחק "ספירת בלונים" - במשחק זה מוצגים על המסך חמישה בלונים, כל אחד עם ספרה מ-1 ועד 5. על השחקן לעבור על חמשת הבלונים, לפי הסדר, ולפוצץ אותם.[CR]מעבר לארבעת המשחקים הכלולים בתפריט, אוסף זה כולל גם שני משחקים שאינם כלולים בתפריט. הראשון מביניהם, למרבה ההפתעה, הוא עוד משחק זיכרון! בניגוד למשחק הזיכרון הקודם, שאותו ניתן לשחק עם שחקן אחד או שניים, המשחק הזה מיועד לשני שחקנים בלבד. הפעם מדובר בגרסה קצת יותר מתקדמת של משחק הזיכרון, עם 32 קלפים אפשריים ולוח משחק סטנדרטי שאינו מורכב משתי שורות, ולכן לא מעניק רמזים לגבי המיקום של הקלפים המתאימים. [CR]המשחק השני הוא "משחק הניחושים", או "איש תלוי" אם תרצו. אולם, המשחק הזה עוסק רק במילים מעולם הפירות והירקות. במהלך המשחק, המחשב בוחר מילה כלשהי ומציג למשתמש את מספר האותיות שלה, כאשר כל אות מיוצגת באמצעות קו תחתי. על המשתמש לנחש מהי המילה המוסתרת, וזאת באמצעות ניחוש אותיות שנמצאות במילה. לאחר כל ניחוש נכון, המחשב יחליף את הקו התחתי באות המתאימה, מה שיצעיד את המשתמש צעד נוסף לקראת השלמת המילה כולה. אולם, מספר הנסיונות מוגבל, ולכן על המשתמש לשקול את ניחושיו בחוכמה.[CR]"אוסף המשחקים של אמיר" הוא כנראה לא מוצר מסחרי ובטח לא אוסף יוצא דופן, אבל הוא דוגמא יפה למה שניתן היה להגיע אליו, אפילו בשנות השמונים, עם שפת תכנות בסיסית וקצת זמן פנוי...</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4011</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Analytic Geometry</name>
+				<filename>rom_pathDOS/_HE/Analytic Geometry/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Analytic Geometry.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Analytic Geometry.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1993</release>
+				<publisher>תקוע מחשבים בע"מ</publisher>
+				<gameplot>"הנדסה אנליטית" היא לומדה עבור תלמידי חטיבת הביניים והתיכון, העוסקת בנקודות, בקטעים ובמערכת הצירים. הלומדה מלמדת את מושגי היסוד בהנדסה אנליטית, ומנסה להשתמש באמצעי המחשה שונים על מנת להעביר את הנושא.[CR]עיקר הלומדה מתרכז בשלושה פרקים מרכזיים: פרק הלימוד, פרק הבעיות ופרק המשימות. בפרק הלימוד, המשתמש נחשף לתורת ההנדסה האנליטית על ידי שיטת לימוד המבוססת על הדגמת פתרון בעיות שונות באמצעות איורים גרפיים והסברים מפורטים. זאת, כאשר נתוני הבעיות נקבעים על ידי המשתמש עצמו. בפרק זה, ניתן למצוא נושאים כגון "שיעורי הנקודה", סימטריה על הצירים השונים, ומרחק בין נקודות.[CR]לאחר לימוד נושא, ניתן לתרגל אותו באמצעות שני הפרקים האחרים. פרק ה"בעיות" מעניק גישה מהירה אל כל אחד משמונת סוגי הבעיות בכל אחד מהנושאים הנלמדים. זאת, כאשר בכל בעיה המשתמש יכול להעזר ברמזים ובהסברים בנוגע לפתרונה. לבסוף, בפרק ה"משימות", מגיע עיקר העבודה עם החומר הנלמד - הכנה למבחן, ביצוע המבחן ופעולות עזר שונות.[CR]בשורה התחתונה, מדובר בלומדה שמנסה להוות מבוא להנדסה אנליטית, עם הסברים ותרגילים בסיסיים בנושא.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4012</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Arabic for Beginners‎</name>
+				<filename>rom_pathDOS/_HE/Arabic for Beginners‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Arabic for Beginners‎.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Arabic for Beginners‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre></genre>
+				<release>1985</release>
+				<publisher>א.ד.מ מחשבים בע"מ</publisher>
+				<gameplot>"ערבית מדוברת למתחילים" שמה לה למטרה לערוך למשתמש היכרות ראשונית עם השפה הערבית המדוברת ולסייע לו לצעוד את צעדיו הראשונים לקראת השגת יכולת הבנה ודיבור. לשם כך, היא כוללת סקירה של אותיות הא'-ב' בערבית, ולאחר מכן שיעורים נבחרים בנושאים שונים: חלקי הגוף, צבעים, ימות השבוע ועוד ועוד. כל שיעור מתחיל עם סקירה זריזה של מילים חדשות, ממשיך עם דיאלוג קצר ומסתיים עם תרגול של הנושאים שנלמדו בשיעור. לאחר התרגול מופיע הציון אותו השיג המשתמש בתרגול, והמשתמש מועבר ישירות אל השיעור הבא.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4013</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Arithmetic Mazes‎</name>
+				<filename>rom_pathDOS/_HE/Arithmetic Mazes‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Arithmetic Mazes‎.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Arithmetic Mazes‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1994</release>
+				<publisher>בסט טכנולוגיות חינוכיות</publisher>
+				<gameplot>"מבוכים אריתמטיים" הוא מסוג המשחקים ששווה להכיר ולשמור, בייחוד אם השחקן לומד בבית-ספר יסודי.[CR]מטרת המשחק פשוטה מאוד: להוביל את דרכו של סמיילי מהלך קטן בשם "סומסום" דרך סדרה של 20 מבוכים.[CR]למרות הפשטות במבט הראשון, השלבים עוברים והמבוכים מסתבכים. יש לשים לב שהמבוכים אינם האלמנט היחידי במשחק. ניתן להוסיף למבוכים תרגילים בחשבון, כאשר יש בחירה בין פעולות חיבור, חיסור וכפל ארוך בתשע רמות שונות, בהן ניתן להיתקל בזמן המבוכים.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4014</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Everything Will Be OK‎</name>
+				<filename>rom_pathDOS/_HE/Everything Will Be OK‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Everything Will Be OK‎.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Everything Will Be OK‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1994</release>
+				<publisher>תקוע מחשבים בע"מ</publisher>
+				<gameplot>"שלום, באתי אליכם מכוכב 'יחד' ", מציג את עצמו חייזר קטן וחום. "יחד איתכם, נוכל לתקן ולסדר דברים" הוא טוען, וממשיך בשירה: "יחד נבנה עולם יפה יותר / יחד נבנה מקום נעים / ננקה וגם נדאג לסדר / תראו איך שיהיה מקסים". בכך נפתחת לומדת "יהיה בסדר" של תקוע מחשבים, לומדה אופטימית שמתרכזת ב"הבנת הנשמע", "הבחנה חזותית" ו"מדע לגיל הרך" כהגדרתה.[CR]בלומדה "יהיה בסדר" שלושה משחקים המבוססים על תיקון, השלמה והרכבה של תמונות שונות. המשחקים מלווים בסיפור מסגרת עלילתי וכוללים הנחיה קולית מלאה ושילוב אנימציה, צליל ומוסיקה. שלושת המשחקים מגיעים עם שלוש רמות קושי שונות, ובמהלכם המשתמש מלווה על ידי החייזר וחלליתו.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4015</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Gordi ABC‎</name>
+				<filename>rom_pathDOS/_HE/Gordi ABC‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Gordi ABC‎.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Gordi ABC‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1991</release>
+				<publisher>קומפדיה בע"מ</publisher>
+				<gameplot>משחק לימוד מסדרת גורדי לאלף בית הלועזי. במשחק יש אופציית לימוד ומשחקי אותיות שונים. ברובם, המחשב נותן מלה או אות ועל המשתמש להקיש אותה וכך ללמוד אותה. אך המשחק לא מיועד רק למי שרוצה ללמוד את האלף בית - הוא יכול לשמש גם את מי שרוצה ללמוד להקליד את האלף בית. כל זאת בעזרת המשחק המדליק "מרוץ מכוניות" בו כדי לעקוף מכונית צריך להקליד את האות שעל הגג שלה. אפשר להתחיל במהירות נמוכה, וככל שמגבירים את המהירות המשימה הופכת ליותר ויותר קשה ויותר ויותר מאתגרת, גם למי שכבר מכיר את האלף בית. משחק שגם מהנה וגם חינוכי!</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4016</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Gordi Fractions‎</name>
+				<filename>rom_pathDOS/_HE/Gordi Fractions‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Gordi Fractions‎.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Gordi Fractions‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1991</release>
+				<publisher>קומפדיה בע"מ</publisher>
+				<gameplot>משחק שמטרתו ללמד אתכם את חוקי השברים למיניהם. פרקי הלימוד מחולקים לארבעה נושאים, אותם תוכלו לבחור. בכל פרק, עליכם להכנס לטירה ולהביא חפץ יקר, אותו תקבלו אם תענו נכון ומהר על השאלות שיופיעו על המסך. כדי להתקדם עליכם לעבור מספר מכשולים בתוך הטירה: שדים, בורות ועוד. אם תענו נכון על השאלה, המכשול יקטן או יתרחק עד להעלמותו כליל, אולם אם תשובתך תהיה שגויה, המכשול יחזור ויגדל. עליכם להגיע לחפץ היקר בזמן מוקצב. הזמן הנותר לכם לביצוע משימתכם יופיע על המסך, בצד שמאל למטה. מטרתכם הסופית היא לאסוף ארבעה חפצים יקרים שונים.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4017</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Gordi Geometry</name>
+				<filename>rom_pathDOS/_HE/Gordi Geometry/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Gordi Geometry.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Gordi Geometry.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1991</release>
+				<publisher>קומפדיה בע"מ</publisher>
+				<gameplot>משחק לימוד להנדסת המישור. במשחק הזה תוכלו ללמוד מהם מרובעים, משולשים וקווים או כיצד לזהות זוויות ולחשב שטחים. לאחר שהבנתם את הבסיס, תוכלו לצאת להרפתקאה מופלאה: החיפוש אחר האוצר הגדול! במהלך החיפוש תפגשו גמד, נסיכה, ארנבת וזקנה, שילמדו אתכם את הנדסת המישור, ויעזרו לכם למצוא את האוצר!</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4018</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Geoboard‎</name>
+				<filename>rom_pathDOS/_HE/Geoboard‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Geoboard‎.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Geoboard‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Board / Strategy</genre>
+				<release>1994</release>
+				<publisher>קומפיוטרס</publisher>
+				<gameplot>"לוח הנדסי" הינו לומדה מבית "קומפיוטרס" שבבסיסה העזר הלימודי המוכר של לוח עץ אשר נעוצים בו מסמרים ואשר אפשר ליצור בו צורות הנדסיות באמצעות גומיות. הלומדה כוללת אפשרות לתרגול הנדסי, יחד עם אפשרות לבניה וחקירה חופשית.[CR]חלק התרגול של "לוח הנדסי" כולל עשרים ושישה תרגילים, המחולקים לשלוש רמות. בכל תרגיל, הלומדה תעזר בלוח העץ הממוסמר על מנת להציג צורה ולשאול שאלה שקשורה לצורה זו. למשל, אחת השאלות עשויה להציג שלושה משולשים ולשאול איזה מהם ישר זווית, שאלה אחרת עשויה לשאול על מיקום מרכזו של ריבוע, ושאלה שלישית עשויה לבקש למתוח גומיה הניצבת לגומיה נתונה. בכל שאלה ניתן לבקש רמז, או אף להשתמש בבניית עזר על מנת להגיע אל התשובה הרצויה.[CR]בניגוד לסגנון המובנה של חלק התרגול, החלק השני של הלומדה - בניה וחקירה - הוא חופשי ועצמאי. אתם מקבלים לוח מסמרים של בין 3x3 ל-11x11 (לבחירתכם), ויכולים למתוח עליו גומיות כאוות נפשכם. אפשר ליצור צורות, לצבוע אותן ואפילו לשמור או להדפיס בסופו של דבר את היצירה שלכם.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4019</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Gordi Memory</name>
+				<filename>rom_pathDOS/_HE/Gordi Memory/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Gordi Memory.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Gordi Memory.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1992</release>
+				<publisher>קומפדיה בע"מ</publisher>
+				<gameplot>משחק זיכרון שמיועד לא רק לגיל הרך, אלא לכל שכבות האוכלוסייה. כמו שאתם בוודאי זוכרים, זיכרון הוא דבר שניתן לשיפור בכל גיל וגיל. במשחק הזה יש כמה וכמה אופציות משחק. ניתן לשחק בחלל: המחשב מראה לכם חללית ועליכם ללחוץ על המספר המתאים כדי ליירט אותה, מספר שכמובן עליכם לזכור. כמו כן, יש את משחק הזיכרון הקלאסי: עליכם להתאים בין קלפים בעלי צבע, צורה או ציור דומים. לכל המשחקים שש רמות קושי.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4020</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Gordi Quantum Castle‎</name>
+				<filename>rom_pathDOS/_HE/Gordi Quantum Castle‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Gordi Quantum Castle‎.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Gordi Quantum Castle‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1992</release>
+				<publisher>קומפדיה בע"מ</publisher>
+				<gameplot>אתם עומדים להכנס לטירת חביסור המופלאה. זהירות! בתוך הטירה יש שדים אשר יציבו בפניכם מלכודות בצורת שאלות חשבון. עליכם להתגבר על המלכודות ולעבור בין חדרי הטירה השונים, שבהם אוצרות יקרים ותמונות נדירות. רק אם תצליחו לפתור את השאלות תוכלו לעבור בין החדרים ולאסוף את האוצרות! למשחק 7 רמות קושי.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4021</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Word Games</name>
+				<filename>rom_pathDOS/_HE/Word Games/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Word Games.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Word Games.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1998</release>
+				<publisher>NSE Software</publisher>
+				<gameplot>אין כמו משחקי מילים כדי להעביר את הזמן בחברה, או כך לפחות היה אפשר לטעון בשנות ה-90. לשם כך, פיתחו ב-NSE Software אוסף של שלושה משחקי מילים לשחקן אחד או לשני שחקנים: טריוויה, משבצ-אות ולינגו.[CR]המשחק הראשון, כאמור, הוא משחק טריוויה סטנדרטי, בו המטרה היא לענות על שאלות ידע כללי ולצבור את מירב הנקודות. עם זאת, מגוון הנושאים המשמש בסיס לשאלות הוא יחסית מצומצם ועוסק בשלוש קטגוריות בלבד: "שירים, לשון וספרות", "טבע, תרבות וספורט" ו"אנשים, היסטוריה ויהדות". לכל קבוצת נושאים מצויין ערכה בנקודות, וכל תשובה מזכה (או מחייבת) את העונה בסכום הנקודות המצויין. בנוסף, לאחר כל תשובה, מוצג מידע בסיסי ביותר אודות התשובה הנכונה.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4022</id>
-				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Bonus‎</name>
+				<filename>rom_pathDOS/_HE/Bonus‎/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Bonus‎.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Bonus‎.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Cards</genre>
+				<release>1993</release>
+				<publisher>מטח</publisher>
+				<gameplot>"בונוס" הוא בעצם משחק שבץ נא בגירסה ישראלית ממוחשבת. המשחק ב"בונוס" כולל אופציה לשחק מול המחשב או מול שחקן אחר.[CR]בנוסף לכללים הרגילים של כל משחק שבץ-נא, "בונוס" כולל גם מספר אפשרויות ייחודיות. למשל, במהלך המשחק יש אפשרות ל"שאליתא" - כדי לברר אם קיימת מילה מסוימת. בנוסף, אם שיבצתם מילה שהמחשב לא קיבל, תוכלו לערער ולחייב אותו לקבל את המילה.[CR]בצידי הלוח קיימות מספר משבצות צבעוניות שכאשר משבצים עליהן מילה יש אפשרות זכייה בבונוסים בדמות 100 נקודות, 40 נקודות או אפילו נקודה (בנימוק הלא משכנע של "דין פרוטה כדין מאה"). לפעמים הבונוסים באים רק בתנאי שאתם פותרים חידה קטנה, מה שהופך את המשחק למאתגר יותר.[CR]כמובן שניתן לשמור משחקים באמצע ולחזור אליהם לאחר זמן. "בונוס" מתוכנת לשמור, בנוסך לכך, את המשחק האחרון ששוחק. משחק מומלץ לאוהבי משחקי חשיבה או לכאלו שמעוניינים להעשיר את אוצר המילים שלהם. ועוד משהו: שימו לב לטבלת האלופים...</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4023</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -18984,9 +18984,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4024</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -18999,9 +18999,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4025</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19014,9 +19014,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4026</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19029,9 +19029,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4027</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19044,9 +19044,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4028</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19059,9 +19059,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4029</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19074,9 +19074,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4030</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19089,9 +19089,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4031</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19104,9 +19104,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4032</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19119,9 +19119,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4033</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19134,9 +19134,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4034</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19149,9 +19149,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4035</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19164,9 +19164,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4036</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19179,9 +19179,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4037</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19194,9 +19194,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4038</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19209,9 +19209,9 @@
 			<rom>
 				<id>d39a1e19ra1ba6713ec1769cbd3f4039</id>
 				<name></name>
-				<filename>rom_pathDOS/_2P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_2P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_2P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19230,10 +19230,10 @@
 		<category>Featherence_dos</category>
 		<application>emulator_file</application>
 		<args>lib_args_dos_args "%rom%"</args>
-		<rompath>rom_pathDOS/_4P/</rompath>
-		<thumbpath>rom_pathDOS/_4P/_Artwork/boxfront/</thumbpath>
-		<fanartpath>rom_pathDOS/_4P/_Artwork/screenshot/</fanartpath>
-		<trailerpath>rom_pathDOS/_4P/_Artwork/gameplay(video)/</trailerpath>
+		<rompath>rom_pathDOS/_RU/</rompath>
+		<thumbpath>rom_pathDOS/_RU/_Artwork/boxfront/</thumbpath>
+		<fanartpath>rom_pathDOS/_RU/_Artwork/screenshot/</fanartpath>
+		<trailerpath>rom_pathDOS/_RU/_Artwork/gameplay(video)/</trailerpath>
 		<custompath></custompath>
 		<romext>bat</romext>
 		<platform>DOS</platform>
@@ -19249,25 +19249,25 @@
 		<roms>
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4004</id>
-				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<name>Alphonit</name>
+				<filename>rom_pathDOS/_RU/Alphonit/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/Alphonit.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/Alphonit.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
-				<genre>?</genre>
-				<release>?</release>
-				<publisher>?</publisher>
-				<gameplot>?</gameplot>
+				<genre>Puzzle</genre>
+				<release>1991</release>
+				<publisher>תקוע מחשבים בע"מ</publisher>
+				<gameplot>לומדת "אלפונית" היא לומדה מבית "תקוע מחשבים", המיועדת לדוברי רוסית העושים את צעדיהם הראשונים בלימוד עברית. הלומדה נועדה לסייע בלימוד האלף-בית העברי, צורות אותיות דפוס וכתב (ודרך הגייתן), וכן לתרגל קריאת מילים עבריות מנוקדות. היא יצאה בשנת 1991, במהלך גל העלייה לישראל מברית המועצות לשעבר.[CR]"אלפונית" מחולקת לשלושה חלקים, כאשר השניים הראשונים עוסקים באלף-בית והשלישי במילים שלמות. החלק הראשון נקרא "מקש-אות", והוא מהווה את ההיכרות הבסיסית ביותר עם אותיות הא'-ב' העבריות. עבור כל אות, ניתן לראות כיצד היא נכתבת בכתב ובדפוס (וכן בכתב רש"י ובכתב עברי קדום), ללמוד כיצד היא נהגית או כמו איזה אות רוסית היא נשמעת, וכן להכיר מספר מילים בסיסיות המתחילות באות זו (בתרגום לרוסית והן בתעתיק). ניתן לעבור על כל האותיות לפי הסדר, או - כפי שמרמזת הכותרת "מקש-אות" - לקפוץ לכל אות רצויה על ידי הקשת המקש המתאים על המקלדת.[CR]לחלק השני ולחלק השלישי ("אלף בית" ו"מילים" בהתאמה) מאפיינים דומים. בשניהם, למשל, אפשר להציג את הממשק באותיות דפוס או באותיות כתב (בעברית) וכן ברוסית. שניהם מאפשרים לבחור נושא לשיעור, ואז לעבור לשיטת לימוד משותפת הכוללת אפשרות להציג את החומר, לתרגל, להבחן, וכן לשחק בשניים מהמשחקים המפורסמים של "תקוע מחשבים" - "עץ התפוח" ו"שני הגמדים". "עץ התפוח" מציב את השחקן בנעליו של חקלאי אשר מנסה לקטוף את פרי עמלו, אך לשם כך עליו לענות על מספר שאלות, כאשר כל תשובה שגויה מפילה תפוח אל הקרקע והחקלאי מאבד אותו. "שני הגמדים" הוא משחק לשני שחקנים, ראש בראש. שני השחקנים שולטים כל אחד בגמד, כאשר שניהם נמצאים במכרה, כל אחד מצידו האחד של אוצר. כל שחקן נדרש לענות על שאלה תחת מגבלת זמן, כאשר כל השתהות של שחקן אחד מקרבת את השחקן (והגמד) השני אל האוצר.[CR]מבחינת תוכן הפרקים, "אלף בית" עוסק בנושאים הבאים: אותיות הא'-ב', הגייה, שמות האותיות, מספרים וניקוד. תחת "מילים" אפשר למצוא פרקים אודות ארצות ויבשות, ערים בבריה"מ ובישראל, חודשי השנה (בעברית ובלועזית), שבטי ישראל, שמות, ראשי ממשלה, מילים לועזיות, מכוניות ובעלי חיים.[CR]בסף הכל, "אלפונית" עושה עבודה יפה בתור לומדה להיכרות עם השפה העברית, והיא אחת מתוך סדרת "שלום" לדוברי רוסית של תקוע מחשבים.</gameplot>
 				<altapp></altapp>
 				<altarg></altarg>
 			</rom>
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4005</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19280,9 +19280,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4006</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19295,9 +19295,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4007</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19310,9 +19310,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4008</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19325,9 +19325,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4009</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19340,9 +19340,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4010</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19355,9 +19355,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4011</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19370,9 +19370,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4012</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19385,9 +19385,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4013</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19400,9 +19400,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4014</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19415,9 +19415,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4015</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19430,9 +19430,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4016</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19445,9 +19445,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4017</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19460,9 +19460,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4018</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19475,9 +19475,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4019</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19490,9 +19490,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4020</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19505,9 +19505,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4021</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19520,9 +19520,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4022</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19535,9 +19535,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4023</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19550,9 +19550,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4024</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19565,9 +19565,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4025</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19580,9 +19580,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4026</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19595,9 +19595,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4027</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19610,9 +19610,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4028</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19625,9 +19625,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4029</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19640,9 +19640,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4030</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19655,9 +19655,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4031</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19670,9 +19670,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4032</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19685,9 +19685,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4033</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19700,9 +19700,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4034</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19715,9 +19715,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4035</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19730,9 +19730,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4036</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19745,9 +19745,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4037</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19760,9 +19760,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4038</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>
@@ -19775,9 +19775,9 @@
 			<rom>
 				<id>d39a1e29ra1ba6713ec1769cbd3f4039</id>
 				<name></name>
-				<filename>rom_pathDOS/_4P/?/GO.BAT</filename>
-				<thumb>rom_pathDOS/_4P/_Artwork/boxfront/?.jpg</thumb>
-				<fanart>rom_pathDOS/_4P/_Artwork/screenshot/?.jpg</fanart>
+				<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
+				<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
+				<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
 				<trailer></trailer>
 				<custom></custom>
 				<genre>?</genre>

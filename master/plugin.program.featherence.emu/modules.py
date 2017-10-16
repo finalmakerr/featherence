@@ -1013,10 +1013,15 @@ def getfileID(file):
 	elif file == "GameCube_1P_Eternal Darkness.zip": fileID = "qyz7xkxm9z7pc37" #featherence.guser15
 	elif file == "GameCube_1P_Skies of Arcadia Legends.zip": fileID = "lrhhqtzg5wugume" #featherence.guser26
 	
+	elif file == "GameCube_2P_Virtua Striker 2002.zip": fileID = "qjkno0uja4b154m" #featherence.user32
+	elif file == "GameCube_4P_Metal Arms - Glitch in the System.zip": fileID = "uvwkvrp6yg8tw2r" #featherence.user32
+	
+	elif file == "GameCube_2P_Sonic Mega Collection.zip": fileID = "dcx3mtdtgcb3q2a" #featherence.user23
 	elif file == "GameCube_2P_Need for Speed - Most Wanted.zip": fileID = "golzp2pv3p05ze3" #featherence.user23
 	elif file == "GameCube_2P_The Sims Bustin Out.zip": fileID = "inlmjf6lsaezxgs" #featherence.user28
 	elif file == "GameCube_1P_Beyond Good And Evil.zip": fileID = "ogosdnzb06fbuid" #featherence.user24
 	elif file == "GameCube_1P_MegaMan Network Transmission.zip": fileID = "52no9knaz7fx4x4" #featherence.user25
+	elif file == "GameCube_2P_Lost Kingdoms 2.zip": fileID = "jwj5efow82r1lwi" #featherence.user25
 	
 	elif file == "GameCube_1P_Resident Evil 3 - Nemesis.zip": fileID = "9u8wbt79c6zev16" #featherence.guser18
 	elif file == "GameCube_1P_Pikmin.zip": fileID = "jeiy3pht3q2kcmm" #featherence.guser29
