@@ -11,10 +11,10 @@ from shared_modules5 import *
 shared_modules3 is used for Kodi's plugins.
 Import the module and input the addDir in your addon module.py file.
 '''
+
 def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
-	url2 = url ; printpoint = "" ; returned = "" ; extra = "" ; name2 = "" ; iconimage2 = "" ; desc2 = ""
-	text = 'fanart' + space2 + str(fanart)
-	printlog(title='addDir_test0', printpoint=printpoint, text=text, level=0, option="")
+	url2 = url ; printpoint = "" ; returned = "" ; extra = "" ; name2 = "" ; iconimage2 = "" ; desc2 = "" ; filter=False
+	
 	name = str(to_utf8(name))
 	desc = str(to_utf8(desc))
 	fanart = str(to_utf8(fanart))
@@ -58,21 +58,33 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 			printpoint = printpoint + '3'
 			i = 0
 			for x in url:
-				x_ = "" ; q = ""
+				x_ = "" ; q = "" ; y = "" ; filter=False
+				for y in adddirfilter:
+					if y in str(x):
+						filter = True ; printpoint = printpoint + 'F'
+						break
+				
 				if '&' in x and '=' in x:
 					x_ = find_string(x, "&", '=')
-					if x != x_:
+					
+					if x != x_ and filter != True:
 						pass
 					else:
 						url_.append(x)
 				else: q = 'skipped'
-				#print 'i' + space2 + str(i) + space + 'x' + space2 + str(x) + space + 'x_' + space2 + str(x_) + space + 'q' + space2 + str(q) + space + 'url_' + space2 + str(url_)
+				print 'i' + space2 + str(i) + space + 'x' + space2 + str(x) + space + 'x_' + space2 + str(x_) + space + 'q' + space2 + str(q) + space + 'url_' + space2 + str(url_) + space + 'y' + space2 + str(y) + space + 'filter' + space2 + str(filter)
 				i += 1
 			for x in url_:
 				url.remove(x)
 				#print 'x' + space2 + str(x) + space + 'x_' + space2 + str(x_) + space + 'url' + space2 + str(url) + space + 'url_' + space2 + str(url_)
 		elif 'str' in returned:
-			if '&' in url and '=' in url:
+			printpoint = printpoint + '4'
+			for y in adddirfilter:
+				if y in str(returned):
+					filter = True
+					break
+			if filter == True: printpoint = printpoint + '9'
+			elif '&' in url and '=' in url:
 				url_ = find_string(url, "&", '=')
 				if url == url_:
 					printpoint = printpoint = '9s'
@@ -107,9 +119,6 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 		menu = menu_list(01, menu, addonID, name, url, mode, iconimage, desc, num, viewtype, fanart)
 		
 		isFolder = getisFolder(name, url, mode, iconimage, desc, num, viewtype, fanart)
-		
-		text = "addonID" + space2 + str(addonID) + newline + "name" + space2 + str(name) + newline + "url " + space2 + str(url) + newline + "url2" + space2 + str(url2) + newline + "mode" + space2 + str(mode) + newline + "iconimage" + space2 + str(iconimage) + newline + "desc" + space2 + str(desc) + newline + "num" + space2 + str(num)
-		printlog(title='addDir_test1', printpoint=printpoint, text=text, level=0, option="")
 
 		if mode == 41 or mode == 42 or mode == 44:
 			liz.setProperty('IsPlayable', 'true')
@@ -124,6 +133,9 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	text = "name" + space2 + str(name) + newline + \
 	"desc" + space2 + str(desc) + space + "addonID" + space2 + str(addonID) + newline + \
 	"iconimage" + space2 + str(iconimage) + newline + \
+	"mode" + space2 + str(mode) + newline + \
+	"url" + space2 + str(url) + newline + \
+	"url2" + space2 + str(url2) + newline + \
 	"num" + space2 + str(num) + newline + \
 	"fanart" + space2 + str(fanart)
 	printlog(title='addDir', printpoint=printpoint, text=text, level=0, option="")
@@ -1412,9 +1424,9 @@ def getAddonInfo(addon):
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	return thumb, fanart, summary, description, plot
 	
-def update_view(url, num, viewtype, ok=True, installaddon=True):
+def update_view(url, num, viewtype, ok=True, installaddon_=True):
 	printpoint = "" ; num_ = num
-	if installaddon == True:
+	if installaddon_ == True:
 		printpoint = printpoint + '1'
 		if 'plugin.' in num or 'plugin://plugin.' in url:
 			printpoint = printpoint + 'a'
@@ -1435,8 +1447,8 @@ def update_view(url, num, viewtype, ok=True, installaddon=True):
 			if not xbmc.getCondVisibility('System.HasAddon('+ num_ +')') or not os.path.exists(os.path.join(addons_path, num_)) and num_ != "" and num_ != None:
 				printpoint = printpoint + 'f'
 				notification_common("24")
-				#notification(num_,"","",4000)
-				#installaddon(num_, update=True)
+				notification(num_,"","",4000)
+				installaddonP(num_,update=True)
 				xbmc.sleep(2000)
 	
 	if '&activatewindow=' in url:
@@ -1461,6 +1473,8 @@ def update_view(url, num, viewtype, ok=True, installaddon=True):
 	elif 'ActivateWindow(' in url:
 		printpoint = printpoint + '5'
 		xbmc.executebuiltin(url)
+	elif 'f' in printpoint:
+		notification('Try again after installing addon',str(num_),"",2000)
 	else:
 		printpoint = printpoint + '7'
 		xbmc.executebuiltin('XBMC.Container.Update(%s)' % url )
@@ -2068,12 +2082,13 @@ def pluginend(admin):
 				if addonID == 'plugin.video.featherence.kids':
 					if 'Hebrew' in General_LanguageL:
 						installaddonP('repository.xbmc-israel', update=True)
-						#installaddonP('repository.kodil', update=True)
+						installaddonP('repository.kodil', update=True)
 						installaddonP('repository.multidownrepo', update=True)
-						#installaddonP('repository.Jk$p', update=True)
+						installaddonP('repository.Jk$p', update=True)
 				
 					if 'English' in General_LanguageL:
 						installaddonP('repository.mdrepo', update=True)
+						installaddonP('repository.metalkettle', update=True)
 				
 		#except Exception, TypeError:
 			#extra = extra + newline + "TypeError" + space2 + str(TypeError)
@@ -3591,7 +3606,7 @@ def ManageCustom(mode, name, url, thumb, desc, num, viewtype, fanart):
 				'''---------------------------'''
 				
 	if "7" in printpoint and not "8" in printpoint and not "9" in printpoint:
-		update_view(url, num, viewtype, installaddon=False)
+		update_view(url, num, viewtype, installaddon_=False)
 		#xbmcplugin.endOfDirectory(int(sys.argv[1]))
 		
 	text = "name" + space2 + str(name) + newline + \

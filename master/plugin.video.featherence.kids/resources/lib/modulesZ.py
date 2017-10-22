@@ -1351,6 +1351,7 @@ def CATEGORIES107Z(General_LanguageL, background, background2): #ערוצי טל
 		list.append('&youtube_ch=UC3djj8jS0370cu_ghKs_Ong') #hooplakidz
 		list.append('&youtube_ch=UCbYUa_MhIQFoS1i0xaNDjTQ') #Organic Learning
 		list.append('&youtube_ch=UCx5M8lD4NWfoDERFXy3MtyA') #ToysMyToys Cartoons
+		list.append('&youtube_ch=UC8310xZNVIsQAJHp0vlgkvw') #MLP 2017
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (addonString_servicefeatherence(32901).encode('utf-8')),list,17,"http://flaglane.com/download/british-flag/british-flag-medium.png",addonString_servicefeatherence(32082).encode('utf-8') % (addonString_servicefeatherence(32901).encode('utf-8')),'1',0,getAddonFanart(background,custom=""))
 
 	'''אוזבקית'''

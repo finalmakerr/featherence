@@ -8,7 +8,7 @@
 	  <include>TopInformationSize01</include>
 	  
 	  <!--<visible>[[Window.IsVisible(DialogFullScreenInfo.xml) | Window.IsVisible(DialogFavourites.xml) |  Window.IsVisible(VideoOSD.xml) | Window.IsVisible(DialogSubtitles.xml)] + VideoPlayer.IsFullscreen + Player.Paused] | Window.IsVisible(DialogVideoInfo.xml) | [Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | String.IsEqual(Window(home).Property(Button.ID),97)]] | [$EXP[View57] | $EXP[View58]] + [Container.Content(Seasons) | Container.Content(Episodes) | [Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(Custom1175.xml)] | !Skin.HasSetting(ShowTopVideoInformation)] | $EXP[View51] | $EXP[View50] | $EXP[View54] | $EXP[View59] | Control.IsVisible(11) | Control.IsVisible(50) | Control.IsVisible(56) | Control.IsVisible(450) | Window.IsVisible(MusicVisualisation.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(Custom1170.xml) + [String.IsEqual(Window(home).Property(TEMP),TopVideoInformationColor) | String.IsEqual(Window(home).Property(TEMP),TopVideoInformationFontColor)]</visible>-->
-	  <visible>!Window.IsVisible(Home.xml) + $EXP[Contents] | Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(Home.xml) + $EXP[ContentsWidget] |  Window.IsVisible(DialogVideoInfo.xml)</visible>
+	  <visible>!Window.IsVisible(Home.xml) + !Window.IsVisible(CustomHomeCustomizer.xml) + $EXP[NoDialogConfirm] | Window.IsVisible(Custom1173.xml) | Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(Home.xml) + $EXP[ContentsWidget] |  Window.IsVisible(DialogVideoInfo.xml)</visible>
 	  <visible>![ [$EXP[View57] |  $EXP[View58]] + Skin.HasSetting(ShowTopVideoInformation) | [Container.OnNext | Container.OnPrevious]] | Window.IsVisible(DialogVideoInfo.xml)</visible>
 	  <visible>![Window.IsVisible(MyPVRGuide.xml) + !System.IdleTime(3) + !Window.IsVisible(DialogPVRInfo.xml]</visible>
 	  <animation condition="[System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)] + !Skin.HasSetting(Performance)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
@@ -134,7 +134,7 @@
 	    <control type="label" description="שם">
 		  <scroll>false</scroll>
 		  <posx>690</posx>
-          <posy>31</posy>
+          <posy>35</posy>
           <height>75</height>
           <font>size34</font>
           <textcolor>yellow</textcolor>
@@ -718,7 +718,7 @@
 		  <posy>542</posy>
 		  <width>520</width>
 		  <height>815</height>
-		  <texture border="40" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonE0.png</texture>
+		  <texture border="0" colordiffuse="$VAR[TopVideoInformationColor]">buttons/ButtonA0.png</texture>
 		  <visible>$EXP[View51s]</visible>
 		  <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
 	  </control>

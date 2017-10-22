@@ -35,7 +35,7 @@ def CATEGORIES109B(General_LanguageL, background, background2): # לימוד ש�
 		list.append('&youtube_pl=PLtUvIcNPXN5-MzCyIXiYgF8Mod2u6eJ2Y')
 		list.append('&youtube_pl=PLEA969B1FD7AF939D')
 		list.append('&youtube_id=BGa3AqeqRy0')
-	addDir('-' + addonString(10901).encode('utf-8') % (addonString_servicefeatherence(32901).encode('utf-8')),list,17,"http://flaglane.com/download/british-flag/british-flag-medium.png",addonString(109010).encode('utf-8') % (addonString_servicefeatherence(32901).encode('utf-8')),'1',0,getAddonFanart(background,custom=""))
+	addDir('-' + addonString(10901).encode('utf-8') % (addonString_servicefeatherence(32901).encode('utf-8')),list,17,"http://flaglane.com/download/british-flag/british-flag-medium.png",addonString(109010).encode('utf-8') % (addonString_servicefeatherence(32901).encode('utf-8')),'1',0,getAddonFanart(background,custom="", default=background2))
 
 	'''אוזבקית'''
 	list = []

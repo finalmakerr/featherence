@@ -34,6 +34,8 @@ def CATEGORIES105B(General_LanguageL, background, background2): #סרטים לי
 	'''אנגלית'''
 	list = []
 	if 'English' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.cartoonson/?description&iconimage=C%3A%5CUsers%5Cfinalmakerr%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.cartoonson%2Fresources%2Ficons%2Fallcont.jpg&mode=1&name=%5BB%5D%5BCOLOR%20white%5DAll%20Content%5B%2FCOLOR%5D%5B%2FB%5D&url=http%3A%2F%2Fwww.cartoonson.com%2F')
+		list.append('&custom8=plugin://plugin.video.cartoonson/?description&iconimage=C%3A%5CUsers%5Cfinalmakerr%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.cartoonson%5Cicon.png&mode=1&name=%5BB%5D%5BCOLOR%20white%5DAll%20%20%20%20%20%20%20%20%5B%2FCOLOR%5D%5B%2FB%5D&url=http%3A%2F%2Fwww.cartoonson.com%2Fcartoons%2Fall-characters')
 		list.append('&youtube_ch=') #
 	addDir(addonString(5).encode('utf-8') % (addonString_servicefeatherence(32901).encode('utf-8')),list,6,"http://flaglane.com/download/british-flag/british-flag-medium.png",addonString(5).encode('utf-8') % (addonString_servicefeatherence(32901).encode('utf-8')),'1',0,getAddonFanart(background,custom="", default=background2))
 
@@ -476,6 +478,8 @@ def CATEGORIES105C(General_LanguageL, background, background2): #סרטים עם
 
 def CATEGORIES105D(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -629,10 +633,12 @@ def CATEGORIES105D(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105E(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -786,10 +792,12 @@ def CATEGORIES105E(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105F(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -943,10 +951,12 @@ def CATEGORIES105F(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105G(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1100,10 +1110,12 @@ def CATEGORIES105G(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105H(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1257,10 +1269,12 @@ def CATEGORIES105H(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105I(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1414,10 +1428,12 @@ def CATEGORIES105I(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105J(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1571,10 +1587,12 @@ def CATEGORIES105J(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105K(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1728,10 +1746,12 @@ def CATEGORIES105K(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105L(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1885,10 +1905,12 @@ def CATEGORIES105L(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105M(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2042,10 +2064,12 @@ def CATEGORIES105M(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105N(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2199,10 +2223,12 @@ def CATEGORIES105N(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105O(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2356,10 +2382,12 @@ def CATEGORIES105O(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105P(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2513,10 +2541,12 @@ def CATEGORIES105P(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105Q(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2670,10 +2700,12 @@ def CATEGORIES105Q(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105R(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2828,10 +2860,12 @@ def CATEGORIES105R(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105S(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2985,10 +3019,12 @@ def CATEGORIES105S(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105T(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -3143,10 +3179,12 @@ def CATEGORIES105T(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105U(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -3300,10 +3338,12 @@ def CATEGORIES105U(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105V(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -3457,10 +3497,12 @@ def CATEGORIES105V(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES105W(General_LanguageL, background, background2): #
 	'''סרטים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -3614,4 +3656,4 @@ def CATEGORIES105W(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom = "", default=background2))
+	addDir(addonString(105980).encode('utf-8'),list,6,"",addonString(105980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))

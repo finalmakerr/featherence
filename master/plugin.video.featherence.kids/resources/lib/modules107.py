@@ -11,6 +11,8 @@ if "plugin." in addonID: from shared_modules3 import *
 '''107'''
 def CATEGORIES107C(General_LanguageL, background, background2): #בוב הבנאי
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -18,6 +20,7 @@ def CATEGORIES107C(General_LanguageL, background, background2): #בוב הבנא
 		list.append('&youtube_pl=PL_8KXLhQVQMK80XCn7g3qVj7RwhrwiGHG') #בוב הבנאי
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.bobbycart/?description=http%3A%2F%2Fthetvdb.com%2Fbanners%2Ffanart%2Foriginal%2F78685-2.jpg&iconimage=http%3A%2F%2Fthetvdb.com%2Fbanners%2F_cache%2Fposters%2F78685-2.jpg&mode=2&name=%5BB%5D%5BCOLOR%20white%5DBob%20the%20Builder%5B%2FCOLOR%5D%5B%2FB%5D&url=http%3A%2F%2Fwww.toonget.net%2Fbob-the-builder')
 		list.append('&youtube_pl=PLiluoe0QNL4EXc5qYPJWoqZ2iyBPk3ybk') #בוב הבנאי
 		list.append('&youtube_pl=PL0sYiBnLzquZiY3lUx4gtdQjkYHEbls-4') #בוב הבנאי
 		list.append('&youtube_id=Qh5AelBoSG8')
@@ -159,10 +162,12 @@ def CATEGORIES107C(General_LanguageL, background, background2): #בוב הבנא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10707).encode('utf-8'),list,17,'http://www.moviesforkids.co.il/images/MainCatMovies/%D7%91%D7%95%D7%91-%D7%94%D7%91%D7%A0%D7%90%D7%99.jpg',addonString(107070).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://www.inspectorralf.com/wp-content/uploads/2014/03/Slider.jpg"))
+	addDir(addonString(10707).encode('utf-8'),list,17,'http://thetvdb.com/banners/_cache/posters/78685-2.jpg',addonString(107070).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://thetvdb.com/banners/fanart/original/78685-2.jpg"))
 
 def CATEGORIES107D(General_LanguageL, background, background2): #אדיבו
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -319,6 +324,8 @@ def CATEGORIES107D(General_LanguageL, background, background2): #אדיבו
 
 def CATEGORIES107E(General_LanguageL, background, background2): #דובי קטן
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -483,6 +490,8 @@ def CATEGORIES107E(General_LanguageL, background, background2): #דובי קטן
 
 def CATEGORIES107F(General_LanguageL, background, background2): #קירוקי
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -641,6 +650,8 @@ def CATEGORIES107F(General_LanguageL, background, background2): #קירוקי
 
 def CATEGORIES107G(General_LanguageL, background, background2): #סמי הכבאי
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -652,11 +663,13 @@ def CATEGORIES107G(General_LanguageL, background, background2): #סמי הכבא
 		
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.bobbycart/?description=http%3A%2F%2Fthetvdb.com%2Fbanners%2Ffanart%2Foriginal%2F73517-3.jpg&iconimage=http%3A%2F%2Fthetvdb.com%2Fbanners%2F_cache%2Fposters%2F73517-4.jpg&mode=2&name=%5BB%5D%5BCOLOR%20white%5DFireman%20Sam%5B%2FCOLOR%5D%5B%2FB%5D&url=http%3A%2F%2Fwww.toonget.net%2Ffireman-sam')
 		list.append('&youtube_pl=PLaeuNQbB1tFJP37MahWFjlXWNx9q2eOl8') #S1
 		list.append('&youtube_pl=PLaeuNQbB1tFIkXm9wgKKorHtO8c-xyOq9') #S2
 		list.append('&youtube_pl=PLP22qIfK2ZNSC2R9NYO5F3mF5outv5EAG') #S3
 		list.append('&youtube_pl=PLmUMsJYJMTVBaAzvHEnVzRtpZaUeTXJbf') #S5
 		list.append('&youtube_id=0dMIMC4-JpA')
+		
 	'''אוזבקית'''
 	if 'Uzbek' in General_LanguageL:
 		list.append('&youtube_pl=')
@@ -801,10 +814,12 @@ def CATEGORIES107G(General_LanguageL, background, background2): #סמי הכבא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10551).encode('utf-8'),list,17,'http://i.dailymail.co.uk/i/pix/2013/01/16/article-2263465-03C197B80000044D-654_306x423.jpg',addonString(105510).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://www.tiptopline.nl/internet/beeldscherm/graphics/fireman_sam-04.jpg"))
+	addDir(addonString(10551).encode('utf-8'),list,17,'http://thetvdb.com/banners/_cache/posters/73517-4.jpg',addonString(105510).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://thetvdb.com/banners/fanart/original/73517-3.jpg"))
 
 def CATEGORIES107H(General_LanguageL, background, background2): #החברים של ברני
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -963,6 +978,8 @@ def CATEGORIES107H(General_LanguageL, background, background2): #החברים ש
 
 def CATEGORIES107I(General_LanguageL, background, background2): #צוות אומי זומי
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1141,6 +1158,8 @@ def CATEGORIES107I(General_LanguageL, background, background2): #צוות אומ
 
 def CATEGORIES107J(General_LanguageL, background, background2): #ארמון החיות
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1297,10 +1316,12 @@ def CATEGORIES107J(General_LanguageL, background, background2): #ארמון הח
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10704).encode('utf-8'),list,17,"",addonString(107040).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10704).encode('utf-8'),list,17,"",addonString(107040).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES107K(General_LanguageL, background, background2): #הנסיכה סופייה
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1310,17 +1331,13 @@ def CATEGORIES107K(General_LanguageL, background, background2): #הנסיכה ס
 		list.append('&youtube_pl=PLVwL64lSxWWyAUC6Bv-GAbdgQAv3CuCrr') #Songs
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
-		list.append('&youtube_pl=PLv042z7GzQ6tH0CLphGp8jkbNvG5VbzMb')
 		list.append('&youtube_pl=PLrKOegyIpj3T0oEzvMtDFsSOPYMhZ-7ZV')
 		list.append('&youtube_pl=PL7HHeetyLbwHUDkTU9YJPU6lH_gyYGNir')
-		
-		list.append('&youtube_pl=PL9xh_xSDkgv8lxf9cHDiQ5aXDNGN9I-pk')
-		
-		
-		list.append('&youtube_pl=PL7HHeetyLbwHOQsmZBbloCaH4tGEE4ma9')
 		list.append('&youtube_pl=PLv042z7GzQ6tH0CLphGp8jkbNvG5VbzMb')
+		list.append('&youtube_pl=PLAWEtMG6fBxDDWchmhZmrU8nWHNZdcDSy')
 		list.append('&youtube_pl=')
 		list.append('&youtube_pl=')
+		
 	'''אוזבקית'''
 	if 'Uzbek' in General_LanguageL:
 		list.append('&youtube_pl=')
@@ -1464,6 +1481,8 @@ def CATEGORIES107K(General_LanguageL, background, background2): #הנסיכה ס
 
 def CATEGORIES107L(General_LanguageL, background, background2): #דוק רופאת הצעצועים
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1471,6 +1490,7 @@ def CATEGORIES107L(General_LanguageL, background, background2): #דוק רופא
 		list.append('&youtube_pl=PLVwL64lSxWWyRD2CIOc5qkXUuSWSsyuRh')
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.bobbycart/?description=http%3A%2F%2Fthetvdb.com%2Fbanners%2Ffanart%2Foriginal%2F258111-3.jpg&iconimage=http%3A%2F%2Fthetvdb.com%2Fbanners%2F_cache%2Fposters%2F258111-1.jpg&mode=2&name=%5BB%5D%5BCOLOR%20white%5DDoc%20McStuffins%5B%2FCOLOR%5D%5B%2FB%5D&url=http%3A%2F%2Fwww.toonget.net%2Fdoc-mcstuffins')
 		list.append('&youtube_pl=PLPYC---L3hwnlVCfoRsIaZQNe9AlH29qn')
 		list.append('&youtube_pl=')
 	'''אוזבקית'''
@@ -1611,10 +1631,12 @@ def CATEGORIES107L(General_LanguageL, background, background2): #דוק רופא
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10776).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Doc_McStuffins_logo.png/260px-Doc_McStuffins_logo.png",addonString(107760).encode('utf-8'),'1',0,getAddonFanart(background, custom = "http://www.msnbc.com/sites/msnbc/files/2013/09/ap110926047090.jpg", default=background2))
+	addDir(addonString(10776).encode('utf-8'),list,17,"http://thetvdb.com/banners/_cache/posters/258111-1.jpg",addonString(107760).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://thetvdb.com/banners/fanart/original/258111-3.jpg", default=background2))
 
 def CATEGORIES107M(General_LanguageL, background, background2): #קוסמות קטנות
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1781,6 +1803,8 @@ def CATEGORIES107M(General_LanguageL, background, background2): #קוסמות ק
 
 def CATEGORIES107N(General_LanguageL, background, background2): #נווה עצלנות
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1938,6 +1962,8 @@ def CATEGORIES107N(General_LanguageL, background, background2): #נווה עצל
 
 def CATEGORIES107O(General_LanguageL, background, background2): #החיוך של רוזי
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2099,7 +2125,8 @@ def CATEGORIES107O(General_LanguageL, background, background2): #החיוך של
 
 def CATEGORIES107P(General_LanguageL, background, background2): #סימסאלה גרים
 	'''קטנטנים'''
-	thumb = 'http://www.sdarot.pm/media/series/1775.jpg'
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2266,6 +2293,8 @@ def CATEGORIES107P(General_LanguageL, background, background2): #סימסאלה 
 
 def CATEGORIES107Q(General_LanguageL, background, background2): #רובו אוטו פולי
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2424,6 +2453,8 @@ def CATEGORIES107Q(General_LanguageL, background, background2): #רובו אוט
 
 def CATEGORIES107R(General_LanguageL, background, background2): #מטוסי על
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2431,6 +2462,7 @@ def CATEGORIES107R(General_LanguageL, background, background2): #מטוסי על
 		list.append('&youtube_pl=PLfcYs4SRZfuKHBFMWhKcZuL39ZrLY-52P')
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.bobbycart/?description=https%3A%2F%2Fwww.thetvdb.com%2Fbanners%2Ffanart%2Foriginal%2F295184-1.jpg&iconimage=https%3A%2F%2Fwww.thetvdb.com%2Fbanners%2F_cache%2Fposters%2F295184-1.jpg&mode=2&name=%5BB%5D%5BCOLOR%20white%5DSuper%20Wings!%5B%2FCOLOR%5D%5B%2FB%5D&url=http%3A%2F%2Fwww.toonget.net%2Fsuper-wings')
 		list.append('&youtube_id=mkGiWDnFIus')
 		if not 'Hebrew' in General_LanguageL: list.append('&youtube_pl=PLme6PyN3c6adNPYYS9DJrg8Z2ttd8yJlH')
 		
@@ -2573,10 +2605,12 @@ def CATEGORIES107R(General_LanguageL, background, background2): #מטוסי על
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10737).encode('utf-8'),list,17,"http://www.kidslicensing.com/wp-content/uploads/NEWS-Super-wings.jpg",addonString(107370).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/11AwsAQnEso/maxresdefault.jpg", default=background2))
+	addDir(addonString(10737).encode('utf-8'),list,17,"https://www.thetvdb.com/banners/_cache/posters/295184-1.jpg",addonString(107370).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://www.thetvdb.com/banners/fanart/original/295184-1.jpg", default=background2))
 
 def CATEGORIES107S(General_LanguageL, background, background2): #בוב הבנאי
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2731,6 +2765,8 @@ def CATEGORIES107S(General_LanguageL, background, background2): #בוב הבנא
 
 def CATEGORIES107T(General_LanguageL, background, background2): #
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2878,10 +2914,12 @@ def CATEGORIES107T(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES107U(General_LanguageL, background, background2): #
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -3029,10 +3067,12 @@ def CATEGORIES107U(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES107V(General_LanguageL, background, background2): #
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -3180,10 +3220,12 @@ def CATEGORIES107V(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES107W(General_LanguageL, background, background2): #
 	'''קטנטנים'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -3331,4 +3373,4 @@ def CATEGORIES107W(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(108980).encode('utf-8'),list,17,"",addonString(108980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))

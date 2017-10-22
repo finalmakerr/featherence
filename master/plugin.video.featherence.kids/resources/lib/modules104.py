@@ -11,6 +11,8 @@ if "plugin." in addonID: from shared_modules3 import *
 '''104'''
 def CATEGORIES104B(General_LanguageL, background, background2): #פריקבוי וצ'אם צ'אם
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -163,6 +165,8 @@ def CATEGORIES104B(General_LanguageL, background, background2): #פריקבוי 
 
 def CATEGORIES104C(General_LanguageL, background, background2): #פלאנט שין
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -315,6 +319,8 @@ def CATEGORIES104C(General_LanguageL, background, background2): #פלאנט שי
 
 def CATEGORIES104D(General_LanguageL, background, background2): #ג'ימי ניוטרון
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -467,6 +473,8 @@ def CATEGORIES104D(General_LanguageL, background, background2): #ג'ימי ני�
 
 def CATEGORIES104E(General_LanguageL, background, background2): #משוגעגע
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -620,6 +628,8 @@ def CATEGORIES104E(General_LanguageL, background, background2): #משוגעגע
 
 def CATEGORIES104F(General_LanguageL, background, background2): #הנוקמים: לוחמי העל
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -628,6 +638,7 @@ def CATEGORIES104F(General_LanguageL, background, background2): #הנוקמים:
 		list.append('&youtube_pl=')
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.cartoonson/?description&iconimage=http%3A%2F%2Fwww.cartoonson.com%2F_resources%2FCartoons%2Fshow%2F52%2Fimage%2F555x418%2Favenger_earths_mightiest_heroes.jpg&mode=2&name=%5BB%5D%5BCOLOR%20white%5DThe%20Avengers%3A%20Earths%20Mightiest%20Heroes%5B%2FCOLOR%5D%5B%2FB%5D&url=http%3A%2F%2Fwww.cartoonson.com%2Fcartoons%2Fview%2Fid%2Fthe-avengers-earth-s-mightiest-heroes')
 		list.append('&youtube_pl=PL3pJWvlMAbHh97E0hvpbEbhDcBE4o7prU') #S1
 		list.append('&youtube_pl=PL3pJWvlMAbHhhgf91BsqiGochD6yhbXY1') #S2
 	'''אוזבקית'''
@@ -768,10 +779,12 @@ def CATEGORIES104F(General_LanguageL, background, background2): #הנוקמים:
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10488).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/he/thumb/5/5a/Avengers_2010_animated.jpg/300px-Avengers_2010_animated.jpg",addonString(104880).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10488).encode('utf-8'),list,17,"https://www.thetvdb.com/banners/posters/192171-7.jpg",addonString(104880).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://www.thetvdb.com/banners/fanart/original/192171-4.jpg", default=background2))
 
 def CATEGORIES104G(General_LanguageL, background, background2): #מלחמת הכוכבים: המורדים
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -930,6 +943,8 @@ def CATEGORIES104G(General_LanguageL, background, background2): #מלחמת הכ
 
 def CATEGORIES104H(General_LanguageL, background, background2): #צ'ימה
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1102,6 +1117,8 @@ def CATEGORIES104H(General_LanguageL, background, background2): #צ'ימה
 	
 def CATEGORIES104I(General_LanguageL, background, background2): #דובוני אכפת לי
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1265,6 +1282,8 @@ def CATEGORIES104I(General_LanguageL, background, background2): #דובוני א
 
 def CATEGORIES104J(General_LanguageL, background, background2): #נילס הולגרסון
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1420,6 +1439,8 @@ def CATEGORIES104J(General_LanguageL, background, background2): #נילס הול
 
 def CATEGORIES104K(General_LanguageL, background, background2): #סיפורי מוש
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1571,6 +1592,7 @@ def CATEGORIES104K(General_LanguageL, background, background2): #סיפורי מ
 def CATEGORIES104L(General_LanguageL, background, background2): #אגדות האחים גרים
 	'''סדרות'''
 	thumb = 'https://i.ytimg.com/vi/k9LhldX2qNM/hqdefault.jpg'
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1729,6 +1751,8 @@ def CATEGORIES104L(General_LanguageL, background, background2): #אגדות הא
 
 def CATEGORIES104M(General_LanguageL, background, background2): #סאקורה לוכדת הקלפים
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -1880,6 +1904,8 @@ def CATEGORIES104M(General_LanguageL, background, background2): #סאקורה ל
 
 def CATEGORIES104N(General_LanguageL, background, background2): #נינג'גו - מאסטר הספינג'יצו
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2041,16 +2067,17 @@ def CATEGORIES104N(General_LanguageL, background, background2): #נינג'גו -
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10479).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/1820.jpg',addonString(104790).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://s1.dmcdn.net/KJt5P/1280x720-F13.jpg"))
+	addDir(addonString(10479).encode('utf-8'),list,17,thumb,addonString(104790).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES104O(General_LanguageL, background, background2): #אוטובוס הקסמים
 	'''סדרות'''
 	thumb = 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/The_Magic_School_Bus_title_credit.jpg/220px-The_Magic_School_Bus_title_credit.jpg'
+	fanart = ''
 	list = []
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
-		thumb = 'http://www.sdarot.pm/media/series/1032.jpg'
+		thumb = ''
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f1032.jpg&mode=5&name=%d7%a2%d7%95%d7%a0%d7%94%201&season_id=1&series_id=1032&series_name=%d7%90%d7%95%d7%98%d7%95%d7%91%d7%95%d7%a1-%d7%94%d7%a7%d7%a1%d7%9e%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94-the-magic-school-bus%2fseason%2f1&summary=%d7%a1%d7%93%d7%a8%d7%aa%20%d7%90%d7%a0%d7%99%d7%9e%d7%a6%d7%99%d7%94%20%d7%9e%d7%93%d7%95%d7%91%d7%91%d7%aa%20%d7%9c%d7%94%d7%a2%d7%a9%d7%a8%d7%aa%20%d7%94%d7%99%d7%93%d7%a2%20%d7%9c%d7%99%d7%9c%d7%93%d7%99%d7%9d%2c%20%d7%93%d7%a8%d7%9a%20%d7%a1%d7%99%d7%a4%d7%95%d7%a8%d7%95%20%d7%a9%d7%9c%20%d7%90%d7%95%d7%98%d7%95%d7%91%d7%95%d7%a1%20%d7%a7%d7%a1%d7%9e%d7%99%d7%9d%20%d7%a6%d7%94%d7%95%d7%91%20%d7%94%d7%9e%d7%92%d7%99%d7%a2%20%d7%9c%d7%9b%d7%9c%20%d7%9e%d7%a7%d7%95%d7%9d%20%d7%92%d7%9d%20%d7%94%d7%96%d7%a2%d7%99%d7%a8%20%d7%91%d7%99%d7%95%d7%aa%d7%a8%20%d7%9b%d7%93%d7%99%20%d7%9c%d7%9c%d7%9e%d7%95%d7%93%20%d7%95%d7%9c%d7%97%d7%a7%d7%95%d7%a8%20%d7%90%d7%aa%20%d7%94%d7%a2%d7%95%d7%9c%d7%9d%20%d7%a1%d7%91%d7%99%d7%91%d7%a0%d7%95.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f1032%2f%d7%90%d7%95%d7%98%d7%95%d7%91%d7%95%d7%a1-%d7%94%d7%a7%d7%a1%d7%9e%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91-%d7%aa%d7%a8%d7%92%d7%95%d7%9d-%d7%9e%d7%95%d7%91%d7%a0%d7%94-the-magic-school-bus%2fseason%2f1')
 		list.append('&youtube_pl=PLojgGSYuCHTB2q0TvkcGuhKteg3hNsZle')
 		list.append('&youtube_pl=')
@@ -2203,6 +2230,8 @@ def CATEGORIES104O(General_LanguageL, background, background2): #אוטובוס 
 
 def CATEGORIES104P(General_LanguageL, background, background2): #דיגימון [אוסף]
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2361,6 +2390,8 @@ def CATEGORIES104P(General_LanguageL, background, background2): #דיגימון 
 
 def CATEGORIES104Q(General_LanguageL, background, background2): #סיילור מון
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2372,6 +2403,8 @@ def CATEGORIES104Q(General_LanguageL, background, background2): #סיילור מ
 		
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
+		list.append('&name_=Season 1&&custom8=plugin://plugin.video.cartoonson/?description&iconimage=http%3A%2F%2Fwww.cartoonson.com%2F_resources%2FCartoons%2Fshow%2F85%2Fimage%2F555x418%2Fsailor-moon-season-1.jpg&mode=2&name=%5BB%5D%5BCOLOR%20white%5DSailor%20Moon%20(1992%E2%80%931993)%20Episodes%5B%2FCOLOR%5D%5B%2FB%5D&url=http%3A%2F%2Fwww.cartoonson.com%2Fcartoons%2Fview%2Fid%2Fsailor-moon-season-1')
+		list.append('&name_=Season 2&&custom8=plugin://plugin.video.cartoonson/?description&iconimage=http%3A%2F%2Fwww.cartoonson.com%2F_resources%2FCartoons%2Fshow%2F86%2Fimage%2F555x418%2Fsailor-moon-season-2.jpg&mode=2&name=%5BB%5D%5BCOLOR%20white%5DSailor%20Moon%20R%20(1993%E2%80%931994)%20Season%202%20Episodes%5B%2FCOLOR%5D%5B%2FB%5D&url=http%3A%2F%2Fwww.cartoonson.com%2Fcartoons%2Fview%2Fid%2Fsailor-moon-r-season-2')
 		list.append('&youtube_pl=PLA2A7425252E73586') #English
 		list.append('&youtube_pl=PL37753E7A32DB1E38') #English #http://ib.huluim.com/show_key_art/18617?size=1600x600
 		list.append('&youtube_pl=')
@@ -2518,10 +2551,12 @@ def CATEGORIES104Q(General_LanguageL, background, background2): #סיילור מ
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 	
-	addDir(addonString(10472).encode('utf-8'),list,17,'http://www.sdarot.pm/media/series/548.jpg',addonString(104720).encode('utf-8'),'1',"",getAddonFanart(background, custom="http://vignette3.wikia.nocookie.net/sailormoon/images/7/77/Sailor_moon_crystal_04_rei_usagi_and_ami_as_princesses.jpg/revision/latest?cb=20140818191116", default=background2))
+	addDir(addonString(10472).encode('utf-8'),list,17,thumb,addonString(104720).encode('utf-8'),'1',"",getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES104R(General_LanguageL, background, background2): #דראגון בול
 	'''סדרות'''
+	thumb = 'https://upload.wikimedia.org/wikipedia/en/c/c9/DB_Tank%C5%8Dbon.png'
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2670,10 +2705,12 @@ def CATEGORIES104R(General_LanguageL, background, background2): #דראגון ב
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10528).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/c/c9/DB_Tank%C5%8Dbon.png",addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcgjkDHLJ4ACWCtBhZH26FgKJLYIRdxB78cQ4q6IF.U6653o1OT0agXq5.ZnKCFmU7bvbHELaozXVCQOViok21vpwKKwwrQbrXZb50ko8.OCSJKpL0ME9m.Tr7mQarxYUJ5ObQh.j88cLczQdiHbaO0hGXBnXon57ycbQ._bgfuFI-&format=jpg", default=background2))
+	addDir(addonString(10528).encode('utf-8'),list,17,thumb,addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES104S(General_LanguageL, background, background2): #דראגון בול Z
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -2830,10 +2867,12 @@ def CATEGORIES104S(General_LanguageL, background, background2): #דראגון ב
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10528).encode('utf-8') + space + 'Z',list,17,"http://www.sdarot.pm/media/series/293.jpg",addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://www.technobuffalo.com/wp-content/uploads/2015/10/Dragon-Ball-Z-Extreme-Budoten.jpg", default=background2))
+	addDir(addonString(10528).encode('utf-8') + space + 'Z',list,17,thumb,addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES104T(General_LanguageL, background, background2): #דראגון בול S
 	'''סדרות'''
+	thumb = ''
+	fanart = 'http://iheartcartoon.com/wp-content/uploads/2015/09/dragon-ball-super-poster-570x805.0.0.jpg'
 	list = []
 	
 	'''עברית'''
@@ -2984,10 +3023,12 @@ def CATEGORIES104T(General_LanguageL, background, background2): #דראגון ב
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10528).encode('utf-8') + space + 'S',list,17,"http://www.sdarot.pm/media/series/1813.jpg",addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://iheartcartoon.com/wp-content/uploads/2015/09/dragon-ball-super-poster-570x805.0.0.jpg", default=background2))
+	addDir(addonString(10528).encode('utf-8') + space + 'S',list,17,thumb,addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES104U(General_LanguageL, background, background2): #דראגון בול GT
 	'''סדרות'''
+	thumb = ''
+	fanart = 'https://i.ytimg.com/vi/ojTY3lhlieo/maxresdefault.jpg'
 	list = []
 	
 	'''עברית'''
@@ -3138,10 +3179,12 @@ def CATEGORIES104U(General_LanguageL, background, background2): #דראגון ב
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10528).encode('utf-8') + space + 'GT',list,17,"http://www.sdarot.pm/media/series/1552.jpg",addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/ojTY3lhlieo/maxresdefault.jpg", default=background2))
+	addDir(addonString(10528).encode('utf-8') + space + 'GT',list,17,thumb,addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES104V(General_LanguageL, background, background2): #דראגון בול K
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -3292,10 +3335,12 @@ def CATEGORIES104V(General_LanguageL, background, background2): #דראגון ב
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10528).encode('utf-8') + space + 'K',list,17,"http://www.sdarot.pm/media/series/1275.jpg",addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(10528).encode('utf-8') + space + 'K',list,17,thumb,addonString(105280).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES104W(General_LanguageL, background, background2): #
 	'''סדרות'''
+	thumb = ''
+	fanart = ''
 	list = []
 	
 	'''עברית'''
@@ -3443,4 +3488,4 @@ def CATEGORIES104W(General_LanguageL, background, background2): #
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(104980).encode('utf-8'),list,17,"",addonString(104980).encode('utf-8'),'1',0,getAddonFanart(background, custom="", default=background2))
+	addDir(addonString(104980).encode('utf-8'),list,17,thumb,addonString(104980).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))

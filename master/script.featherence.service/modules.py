@@ -9,7 +9,7 @@ def mode0(admin, name, printpoint):
 	emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')
 	rom_path = os.path.join(emulatordata_path,'rom','')
 	
-	download_file_from_google_drive('0B_dmZM8wv6D9U2ZWZDRfS3ZFLVU', os.path.join(temp_path,'1.zip'))
+	#download_file_from_google_drive('0B_dmZM8wv6D9U2ZWZDRfS3ZFLVU', os.path.join(temp_path,'1.zip'))
 	
 	#DownloadFile("https://googledrive.com/host/0B_dmZM8wv6D9ZzNncnVOUW1CVEk", '1.zip', temp_path, rom_path, percentinfo=2)
 	#DownloadFile("https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0B_dmZM8wv6D9ZzNncnVOUW1CVEk", '1.zip', temp_path, rom_path, percentinfo=2)

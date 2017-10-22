@@ -1617,8 +1617,8 @@ def frun():
 	xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=14&value=Featherence_Code)')
 
 def download_file_from_google_drive(id, destination):
-	name = 'download_file_from_google_drive' ; printpoint = "" ; returned = ""
-	import requests
+	name = 'download_file_from_google_drive' ; printpoint = "" ; returned = "" ; session = ""
+	#import requests
 	def get_confirm_token(response):
 		for key, value in response.cookies.items():
 			if key.startswith('download_warning'):
@@ -1636,7 +1636,7 @@ def download_file_from_google_drive(id, destination):
 	
 	URL = "https://docs.google.com/uc?export=download"
 	
-	session = requests.Session()
+	#session = requests.Session()
 	
 	response = session.get(URL, params = { 'id' : id }, stream = True)
 	token = get_confirm_token(response)
@@ -1746,6 +1746,14 @@ def installaddonP(addon, update=True):
 	if addon == 'script.module.unidecode': #FIXED PATH
 		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
 			DownloadFile("https://www.dropbox.com/s/rprw7sexo9aefqu/script.module.unidecode-0.4.16.zip?dl=1", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif addon == 'repository.metalkettle':
+		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/kodil/kodil/raw/master/repo/repository.metalkettle/repository.metalkettle-2.0.0.zip", addon + ".zip", packages_path, addons_path, silent=True)
 			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
@@ -1961,6 +1969,27 @@ def installaddonP(addon, update=True):
 			else: printpoint = printpoint + "9"
 		elif "9" in printpoint: pass
 		else: printpoint = printpoint + "7"
+	
+	elif 'script.module.t0mm0.common' in addon: #FIXED PATH MODULE
+		if not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			DownloadFile("https://github.com/HIGHWAY99/repository.thehighway/raw/master/repo/script.module.t0mm0.common/script.module.t0mm0.common-2.1.1.01.zip", addon + ".zip", packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	elif 'plugin.video.cartoons8' in addon: #GITHUB PATH
+		installaddonP('script.module.t0mm0.common')
+		if not 'resource.' in addon and not 'module.' in addon and not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
+			version = getVersion(addon, 'https://raw.githubusercontent.com/VioletRed/MetalKettles-Addon-Repository/master/addons.xml')
+			file = addon + '-' + str(version) + '.zip'
+			DownloadFile('https://github.com/VioletRed/MetalKettles-Addon-Repository/raw/master/zips/' + addon+'/'+file, file, packages_path, addons_path, silent=True)
+			if os.path.exists(addons_path + addon): printpoint = printpoint + "5"
+			else: printpoint = printpoint + "9"
+		elif "9" in printpoint: pass
+		else: printpoint = printpoint + "7"
+	
+	
 	
 	elif 'plugin.audio.jango' in addon: #FIXED PATH
 		if not xbmc.getCondVisibility('System.HasAddon('+ addon +')') or not os.path.exists(addons_path + addon) and not "9" in printpoint:
