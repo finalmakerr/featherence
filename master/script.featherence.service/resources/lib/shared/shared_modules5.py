@@ -181,15 +181,16 @@ def gettitle2(x):
 		y = find_string(x, 'plugin://', '/?')
 		if '.' in y:
 			z = y.split('.')
-			r = len(z)
-			r = z[r - 1]
-			r = r[:5]
+			r_ = len(z)
+			r = z[r_ - 1] ; r = r[:5]
+			if r.lower() == 'video':
+				r = z[r_ - 2] ; r = r[:5]
 			title2 = space + '[' + str(r) + ']'
 	
-	text = "x" + space2 + str(x) + space2 + newline + \
-	"y" + space2 + str(y) + space2 + newline + \
-	"z" + space2 + str(z) + space2 + newline + \
-	"r" + space2 + str(r) + space2 + newline + \
+	text = "x" + space2 + str(x) + newline + \
+	"y" + space2 + str(y) + newline + \
+	"z" + space2 + str(z) + newline + \
+	"r" + space2 + str(r) + newline + \
 	"title2" + space2 + str(title2) + space2 + newline
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	

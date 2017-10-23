@@ -546,7 +546,11 @@ def getfileID(file):
 		fileID_L.append('7i5kxmk5d6g0cfj') #user9
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
-	elif file == "Arcade_2P_Tenth Degree.zip": fileID = "gjcgxchm9qyb58c" #
+	elif file == "Arcade_2P_Tenth Degree.zip":
+		fileID_L.append('4qvlwo6odg7nbyz') #guser15
+		fileID_L.append('gjcgxchm9qyb58c') #
+		fileName_L.append('Source 1')
+		fileName_L.append('Source 2')
 	elif file == "Arcade_2P_Tekken 3.zip":
 		fileID_L.append('n292k4l4rzdgxdf') #user5
 		fileID_L.append('m1qg58ukl1f4xve') #user9
@@ -612,8 +616,10 @@ def getfileID(file):
 	elif file == "Arcade_GEAR_Hyperdrive.zip":
 		fileID_L.append('dqa6ql7tzb9e6xb') #user4
 		fileID_L.append('wlmirerbe5dpezq') #user15
+		fileID_L.append('a5cof494e2zaob3') #user9
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
 		
 	elif file == "Arcade_FUN.zip":
 		fileID_L.append('p64howpq8a0p3yy') #user23
@@ -664,12 +670,14 @@ def getfileID(file):
 		fileName_L.append('Source 2')
 	
 	elif file == "Sega Genesis.zip":
+		fileID_L.append('z20nk10mktoscuh') #guser21
 		fileID_L.append('b8lph86pb4b5e0l') #user1
 		fileID_L.append('wzn29u4rg0251sq') #htpt
 		fileID_L.append('f8orv8r0hgrgm43') #buy
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
 	
 	elif file == "Sega Genesis_1P_Comix Zone.zip":
 		fileID_L.append('mqqeq63yqrj7tjy') #featherence.guser14
@@ -680,14 +688,16 @@ def getfileID(file):
 		fileName_L.append('Source 3')
 		
 	elif file == "Sega Master System.zip":
+		fileID_L.append('d8d9h9hpr52kmhg') #guser21
 		fileID_L.append('c5ingtyhgkwjmx7') #user1
 		fileID_L.append('3v6kt7hcj4udnrq') #htpt
 		fileID_L.append('nbzv9gotdcksbng') #buy
-		fileID_L.append('[GD]0B_dmZM8wv6D9Q25CUXAwVHJUWU0') #featherence.user1[GD]
+		#fileID_L.append('[GD]0B_dmZM8wv6D9Q25CUXAwVHJUWU0') #featherence.user1[GD]
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
-		fileName_L.append('Source 4 [GD]')
+		fileName_L.append('Source 4')
+		#fileName_L.append('Source 4 [GD]')
 		
 	elif file == "Super Nintendo.zip":
 		fileID_L.append('dficnt390sp2j8w') #user1
@@ -697,12 +707,14 @@ def getfileID(file):
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
 	elif file == "TurboGrafx 16.zip":
+		fileID_L.append('nrydawpwto8f0wk') #guser21
 		fileID_L.append('0zg9x4uw1hrm8zb') #user1
 		fileID_L.append('nn7rdkeke5vxm10') #htpt
 		fileID_L.append('r6dw9ippymncpo4') #buy
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
 	
 	
 	elif file == "Sony Playstation_1P_Alundra.zip": fileID = "8ajszedon75tzwx" #user12
@@ -787,7 +799,13 @@ def getfileID(file):
 	elif file == "Sony Playstation_1P_The Legend of Dragoon.zip": fileID = "cp6foxr496i78ay" #user9
 	elif file == "Sony Playstation_1P_Theme Hospital.zip": fileID = "rwofbkoodqr5m17" #user18
 	elif file == "Sony Playstation_1P_Thousand Arms.zip": fileID = "h8dieiggps4km5z" #user20
-	elif file == "Sony Playstation_1P_Tigger's Honey Hunt.zip": fileID = "2h9ieslidi0hnae" #user4
+	elif file == "Sony Playstation_1P_Tigger's Honey Hunt.zip":
+		fileID_L.append('2h9ieslidi0hnae') #user4
+		fileID_L.append('laxrgtg4eg90pdf') #guser9
+		fileName_L.append('Source 1')
+		fileName_L.append('Source 2')
+
+	elif file == "Sony Playstation_1P_Tigger's Honey Hunt.zip": fileID = "laxrgtg4eg90pdf" #guser9
 	elif file == "Sony Playstation_1P_Valkyrie Profile.zip": fileID = "bc9gg84b9r39ewx" #user20
 	elif file == "Sony Playstation_1P_WarCraft II - The Dark Saga.zip": fileID = "prnuctnm8zls2ce" #user23
 	elif file == "Sony Playstation_1P_Warhammer - Dark Omen.zip": fileID = "sn8irts9j710jmw" #user23
@@ -1019,9 +1037,19 @@ def getfileID(file):
 	elif file == "GameCube_2P_Sonic Mega Collection.zip": fileID = "dcx3mtdtgcb3q2a" #featherence.user23
 	elif file == "GameCube_2P_Need for Speed - Most Wanted.zip": fileID = "golzp2pv3p05ze3" #featherence.user23
 	elif file == "GameCube_2P_The Sims Bustin Out.zip": fileID = "inlmjf6lsaezxgs" #featherence.user28
+	elif file == "GameCube_2P_LEGO Star Wars - The Video Game.zip": fileID = "qrxh3vu41udqakx" #featherence.user24
 	elif file == "GameCube_1P_Beyond Good And Evil.zip": fileID = "ogosdnzb06fbuid" #featherence.user24
 	elif file == "GameCube_1P_MegaMan Network Transmission.zip": fileID = "52no9knaz7fx4x4" #featherence.user25
 	elif file == "GameCube_2P_Lost Kingdoms 2.zip": fileID = "jwj5efow82r1lwi" #featherence.user25
+	
+	elif file == "GameCube_4P_1080 Avalanche.zip": fileID = "083elwvzh12f8b8" #featherence.guser21
+	elif file == "GameCube_1P_Barnyard.zip": fileID = "ya52mb9fhnniqxg" #featherence.guser21
+	
+	elif file == "GameCube_2P_Sonic Adventure 2 - Battle.zip": fileID = "s5d367qymxmoigh" #featherence.guser22
+	elif file == "GameCube_1P_Yu-Gi-Oh! The Falsebound Kingdom.zip": fileID = "c6esgpae2pbw4rh" #featherence.guser22
+	
+	elif file == "GameCube_2P_Capcom VS SNK 2 EO.zip": fileID = "u1vyisqgwvvkdbq" #featherence.guser23
+	elif file == "GameCube_1P_SpongeBob SquarePants - Battle for Bikini Bottom.zip": fileID = "v8prwjjfag2bama" #featherence.guser23
 	
 	elif file == "GameCube_1P_Resident Evil 3 - Nemesis.zip": fileID = "9u8wbt79c6zev16" #featherence.guser18
 	elif file == "GameCube_1P_Pikmin.zip": fileID = "jeiy3pht3q2kcmm" #featherence.guser29
@@ -1032,10 +1060,26 @@ def getfileID(file):
 	elif file == "GameCube_1P_Pikmin 2.zip": fileID = "ab6c3ivn1cg1if0" #featherence.user31
 	elif file == "GameCube_4P_Custom Robo.zip": fileID = "laxjkglh69uzq3i" #featherence.guser17
 	elif file == "GameCube_4P_Def Jam Vendetta.zip": fileID = "zekunpm2ehqo0rp" #featherence.user22
+	elif file == "GameCube_4P_Gladius.zip": fileID = "ahvog0vseddtntm" #featherence.user22
 	elif file == "GameCube_4P_FIFA Street 2.zip": fileID = "axypvfzxwor788a" #featherence.guser20
+	elif file == "GameCube_4P_Mobile Suit Gundam - Gundam vs. Z Gundam.zip": fileID = "gauf1jwg268tsp7" #featherence.guser20
 	elif file == "GameCube_4P_Final Fantasy Crystal Chronicles.zip": fileID = "raw54ghb5cghxfr" #htptdebugout
 	elif file == "GameCube_4P_Gauntlet - Dark Legacy.zip": fileID = "l8z2iz55tkub33j" #featherence.user28
 	elif file == "GameCube_4P_Super Smash Bros Melee.zip": fileID = "va1jvchx86eryv5" #featherence.guser19
+	
+	elif file == "GameCube_1P_The Legend of Spyro - A New Beginning.zip": fileID = "wusr92t77ozqsuj" #featherence.guser24
+	elif file == "GameCube_1P_King Kong.zip": fileID = "dmx9ryunnf631vk" #featherence.guser24
+	
+	elif file == "GameCube_4P_TimeSplitters 2.zip": fileID = "nhnofqnm6cfvhwq" #featherence.user30
+	elif file == "GameCube_2P_Baldur's Gate - Dark Alliance.zip": fileID = "cksb86uf0w87i3t" #featherence.user30
+	
+	elif file == "GameCube_2P_The Lord of the Rings - The Return of the King.zip": fileID = "xmpa9ecrlilrmz0" #featherence.user33
+	elif file == "GameCube_4P_NBA Street Vol 2.zip": fileID = "stdt6dwbktug678" #featherence.user33
+	
+	elif file == "GameCube_2P_Knockout Kings 2003 2.zip": fileID = "e1043a31c43y3t7" #featherence.user34
+	elif file == "GameCube_2P_Mortal Kombat - Deadly Alliance.zip": fileID = "h6v0mvijruye3e1" #featherence.user34
+	
+	elif file == "GameCube_2P_Tony Hawk's American Wasteland.zip": fileID = "0u39ias29dovu8d" #featherence.user26
 	
 	
 	elif file == ".zip":

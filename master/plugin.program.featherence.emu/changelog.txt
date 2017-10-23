@@ -10,15 +10,19 @@ WIP - WORK IN PROGRESS
 - Added dozen of DOS games.
 - Added Dreamcast disc swap support.
 - Added G-Drive file storage support.
+- Added information for each console.
+- Added option to hide consoles on demand.
+- Added additional sources for high demand roms.
 
 ------------------------
-Featherence Emu v0.1.6 (xx-Oct-17)
+Featherence Emu v0.1.6 (23-Oct-17)
 ------------------------
+- Added additional sources for high demand roms.
 - Added Board genre for supported skin (Aka Featherence Skin).
 - Major update of GameCube console.
 + Added default optimal core configuration.
-+ Added few more games for GameCube per users requests.
-+ Major update of fanart and download links for current available games.
++ Added 20 new GameCube per users requests.
++ Update the fanart for the firsts GameCube's games.
 
 
 ------------------------

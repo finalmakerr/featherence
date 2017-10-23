@@ -13,6 +13,7 @@ WIP - WORK IN PROGRESS
 Featherence v0.7.8 (xx-Oct-17)
 ------------------------
 - Minor bugs fix.
+- Video Information bar is now always visible.
 
 ------------------------
 Featherence v0.7.7 (05-Oct-17)

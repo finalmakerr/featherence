@@ -1,0 +1,138 @@
+-------------------------
+---www.featherence.com---
+-------------------------
+
+------------------------
+WIP - WORK IN PROGRESS
+------------------------
+- Added Dosbox support.
+- Added Dosbox English & Hebrew Categories.
+- Added dozen of DOS games.
+- Added Dreamcast disc swap support.
+- Added G-Drive file storage support.
+- Added information for each console.
+- Added option to hide consoles on demand.
+- Added additional sources for high demand roms.
+
+------------------------
+Featherence Emu v0.1.6 (23-Oct-17)
+------------------------
+- Added additional sources for high demand roms.
+- Added Board genre for supported skin (Aka Featherence Skin).
+- Major update of GameCube console.
++ Added default optimal core configuration.
++ Added 20 new GameCube per users requests.
++ Update the fanart for the firsts GameCube's games.
+
+
+------------------------
+Featherence Emu v0.1.5 (06-Oct-17)
+------------------------
+- Added more information when download is failed (usually error 429 - The person who shared it hit their daily limit of traffic or downloads).
+- Added Kodi's PS3 mapping for Krypton.
+- Added new console: GameCube (WIP).
++ In order to play for now you must one time enable option called Enable Hardware Shared Context.
++ Dolphin Core support only 1 controller for now.
++ Available games are very few atm but will upload more on demand.
+- Major update of Featherence's Emu Console for Windows 64 bit and Linux 64 bit.
+
+------------------------
+Featherence Emu v0.1.4 (09-Jun-17)
+------------------------
+- Added Xbox, PS4, Wii, Ouya, Alienware Dual Compatible. controllers.
+- Major update of Copy Keymaps (In-Game keybiding).
+- Major bug fix (script failed).
+- Major bug fix when launching games using latest Kodi version.
+- Major bug fix with Copy Keymaps (In-Game keysbinding).
+
+------------------------
+Featherence Emu v0.1.3 (23-Feb-17)
+------------------------
+- Added new games:
++ 20-30 more games to Dreamcast console.
++ Comix Zone to Sega Genesis console.
+- Added Android support (WIP) - untested!.
+- Added Custom EMU Settings for advanced users who want to customise the consoles cfg files.
+- Added extra Video and Audio settings in the addon settings.
+- Added Customised color for undownloaded games.
+- Added Dreamcast memory slots support (preformat included!)
+- Added optimal settings for Dreamcast, converting original games to FULL HD.
+- Added option to change default roms path.
+- Bug fix when trying to download Dreamcast games.
+- Minor update of download modules.
+- Updated Dreamcast console support.
+
+------------------------
+Featherence Emu v0.1.2 (27-Jan-17)
+------------------------
+- Bugs fix for RPI -OPENELEC (WIP).
+- Bug fix for x64 generic - OPENELEC.
+
+------------------------
+Featherence Emu v0.1.1 (26-Jan-17)
+------------------------
+- Added dialog progress to some heavy duty settings.
+- Added filter for unavailable consoles for some platforms such as Dreamcast, Nintendo 64, Nintendo DS for RPI or Nintendo DS for Windows 32bits.
+- Added support for RPI (WIP-Need testers!).
+- Added support for Windows x86 (WIP-Need testers!).
+- Addon updates now auto refreshing the launcher and consoles configuration files.
+- Featherence Emu Console addon is now splitted for each OS and common modules are stored in Featherence Emu Module addon.
+- Major update of addon settings:
++ Added new categories Controllers and Download.
++ Added 142 Joysticks in-game keys support (WIP).
++ Added Operation System and Download OS Emulator in addon settings for some OS.
++ Better sort and description of settings.
+- Minor bugs fix:
++ No red label on undownloaded games.
++ No changelog appear when update occur.
+
+http://forum.kodi.tv/showthread.php?tid=304634
+Kind Note: This patch is very big and some contents may not work for some reasons, please share your information and be patient.
+
+------------------------
+Featherence Emu v0.1.0 (21-Jan-17)
+------------------------
+- Added changelog information.
+- Added Dreamcast roms (gdi only!) about 100GB so far.
+- Now support all Kodi skins.
+- Update consoles images.
+- Update configuration file for windows platforms.
+
+------------------------
+Featherence Emu v0.0.8 (02-Dec-16)
+------------------------
+- Added option to delete a game.
+- Added option to hide unavailable games.
+
+------------------------
+Featherence Emu v0.0.7 (12-Nov-16)
+------------------------
+- Added auto installation script for Featherence Emu Console addon.
+- Arcade FUN category is now available for download.
+- Minor update of download progress notification.
+
+------------------------
+Featherence Emu v0.0.6 (17-Jun-16)
+------------------------
+- Added adult contents.
+- Added hebrew translation.
+- Added keymaps instructions for each console.
+- Code Aesthetic.
+- Minor bugs fix.
+- Update addon information.
+- Update keyboard keymaps.
+
+------------------------
+Featherence Emu v0.0.5 (03-Jun-16)
+------------------------
+- Minor sound bug fix.
+
+------------------------
+Featherence Emu v0.0.4 (28-May-16)
+------------------------
+- Update OpenELEC compatibility.
+
+------------------------
+Featherence Emu v0.0.1-3 (21-May-16)
+------------------------
+- Alpha release.

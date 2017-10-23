@@ -1517,7 +1517,6 @@ def CATEGORIES101M(General_LanguageL, background, background2): #חגים
 		list.append('&youtube_pl=')
 	addDir('-' + addonString(10111).encode('utf-8') % (addonString_servicefeatherence(32910).encode('utf-8')),list,17,"http://flaglane.com/download/thai-flag/thai-flag-medium.png",addonString(101110).encode('utf-8') % (addonString_servicefeatherence(32910).encode('utf-8')),'1',0,getAddonFanart(background, custom="", default=background2))
 
-
 def CATEGORIES101N(General_LanguageL, background, background2): #ימי הולדת
 	'''ימי הולדת'''
 	

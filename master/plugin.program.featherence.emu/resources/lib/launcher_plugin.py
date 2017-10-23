@@ -484,8 +484,8 @@ class Main:
             categories = re.findall( "<category>(.*?)</category>", xml_categories[0] )
             for category in categories:
                 categorydata = {}
-                category_index = ["id","name","thumb","fanart","genre","plot"]
-                values = [re.findall("<id>(.*?)</id>",category), re.findall("<name>(.*?)</name>",category), re.findall("<thumb>(.*?)</thumb>",category), re.findall("<fanart>(.*?)</fanart>",category), re.findall("<genre>(.*?)</genre>",category), re.findall("<description>(.*?)</description>",category)]
+                category_index = ["id","name","thumb","fanart","genre","plot","enable"]
+                values = [re.findall("<id>(.*?)</id>",category), re.findall("<name>(.*?)</name>",category), re.findall("<thumb>(.*?)</thumb>",category), re.findall("<fanart>(.*?)</fanart>",category), re.findall("<genre>(.*?)</genre>",category), re.findall("<plot>(.*?)</plot>",category), re.findall("<enable>(.*?)</enable>",category)]
                 for index, n in enumerate(category_index):
                     try:
                         categorydata[n] = values[index][0]
@@ -535,7 +535,8 @@ class Main:
         from modules import filterbyos
         for key in sorted(self.categories, key= lambda x : self.categories[x]["name"]):
             returned = filterbyos(self.categories[key]['id'])
-            if ( self.categories[key]['id'] != "default" ) and returned == "":
+            if self.categories[key]['enable'] == "false": pass
+            elif ( self.categories[key]['id'] != "default" ) and returned == "":
                 self._add_category(self.categories[key]["name"], self.categories[key]["thumb"], self.categories[key]["fanart"], self.categories[key]["genre"], self.categories[key]["plot"], len(self.categories), key)
         xbmcplugin.endOfDirectory( handle=int( self._handle ), succeeded=True, cacheToDisc=False )
 

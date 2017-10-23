@@ -615,7 +615,7 @@ msgid "Mother Goose"
 msgstr "אמא אווזה"
 
 msgctxt "#10207
-msgid "Bilbi"
+msgid "Pippi Longstocking"
 msgstr "בילבי"
 
 msgctxt "#10208
@@ -1068,32 +1068,32 @@ msgid ""
 msgstr ""
 
 msgctxt "#10320
-msgid ""
-msgstr ""
+msgid "Once Upon a Time... Man"
+msgstr "היה היה - האדם"
 
 msgctxt "#10321
-msgid ""
-msgstr ""
+msgid "Once Upon a Time... Life"
+msgstr "היה היה - החיים"
 
 msgctxt "#10322
-msgid ""
-msgstr ""
+msgid "Once Upon a Time... Space"
+msgstr "היה היה - החלל"
 
 msgctxt "#10323
-msgid ""
-msgstr ""
+msgid "Once Upon a Time... The Americas"
+msgstr "היה היה - אמריקה"
 
 msgctxt "#10324
-msgid ""
-msgstr ""
+msgid "Once Upon a Time... The Explorers"
+msgstr "היה היה - גילוי ארצות"
 
 msgctxt "#10325
-msgid ""
-msgstr ""
+msgid "Once Upon a Time... The Discoverers"
+msgstr "היה היה - ממציאים"
 
 msgctxt "#10326
-msgid ""
-msgstr ""
+msgid "Once Upon a Time... Planet Earth"
+msgstr "היה היה - כדור הארץ"
 
 msgctxt "#10327
 msgid ""
@@ -1124,273 +1124,273 @@ msgid ""
 msgstr ""
 
 msgctxt "#10334
-msgid ""
-msgstr ""
+msgid "The Jetsons"
+msgstr "משפחת סילוני"
 
 msgctxt "#10335
-msgid ""
-msgstr ""
+msgid "Over the Garden Wall"
+msgstr "Over the Garden Wall"
 
 msgctxt "#10336
-msgid ""
-msgstr ""
+msgid "Yo Yogi!"
+msgstr "Yo Yogi!"
 
 msgctxt "#10337
-msgid ""
-msgstr ""
+msgid "As Told by Ginger"
+msgstr "סיפורי ג'ינג'ר"
 
 msgctxt "#10338
-msgid ""
-msgstr ""
+msgid "The Flintstones"
+msgstr "משפחת קדמוני"
 
 msgctxt "#10339
-msgid ""
-msgstr ""
+msgid "Courage the Cowardly Dog"
+msgstr "אמיץ הכלב הפחדן"
 
 msgctxt "#10340
-msgid ""
-msgstr ""
+msgid "Avatar: The Last Airbender"
+msgstr "אווטאר"
 
 msgctxt "#10341
-msgid ""
-msgstr ""
+msgid "Baby Looney Tunes"
+msgstr "Baby Looney Tunes"
 
 msgctxt "#10342
-msgid ""
-msgstr ""
+msgid "Adams Family"
+msgstr "משפחת אדמס"
 
 msgctxt "#10343
-msgid ""
-msgstr ""
+msgid "The Best of Mr. Peabody"
+msgstr "The Best of Mr. Peabody"
 
 msgctxt "#10344
-msgid ""
-msgstr ""
+msgid "Invader ZIM"
+msgstr "זים הפולש"
 
 msgctxt "#10345
-msgid ""
-msgstr ""
+msgid "Dragons"
+msgstr "Dragons"
 
 msgctxt "#10346
-msgid ""
-msgstr ""
+msgid "Generator Rex"
+msgstr "Generator Rex"
 
 msgctxt "#10347
-msgid ""
-msgstr ""
+msgid "Ed, Edd n Eddy"
+msgstr "Ed, Edd n Eddy"
 
 msgctxt "#10348
-msgid ""
-msgstr ""
+msgid "Æon Flux"
+msgstr "Æon Flux"
 
 msgctxt "#10349
-msgid ""
-msgstr ""
+msgid "Iron Man"
+msgstr "איירון מן"
 
 msgctxt "#10350
-msgid ""
-msgstr ""
+msgid "Young Justice"
+msgstr "Young Justice"
 
 msgctxt "#10351
-msgid ""
-msgstr ""
+msgid "DC Super Friends"
+msgstr "DC Super Friends"
 
 msgctxt "#10352
-msgid ""
-msgstr ""
+msgid "Scooby's Laff-A Lympics"
+msgstr "Scooby's Laff-A Lympics"
 
 msgctxt "#10353
-msgid ""
-msgstr ""
+msgid "Road Rovers"
+msgstr "Road Rovers"
 
 msgctxt "#10354
-msgid ""
-msgstr ""
+msgid "Cybersix"
+msgstr "Cybersix"
 
 msgctxt "#10355
-msgid ""
-msgstr ""
+msgid "SWAT Kats: The Radical Squadron"
+msgstr "SWAT Kats: The Radical Squadron"
 
 msgctxt "#10356
-msgid ""
-msgstr ""
+msgid "The Legend of Korra"
+msgstr "האגדה של קורה"
 
 msgctxt "#10357
-msgid ""
-msgstr ""
+msgid "The Ripping Friends"
+msgstr "The Ripping Friends"
 
 msgctxt "#10358
-msgid ""
-msgstr ""
+msgid "The Porky Pig Show"
+msgstr "The Porky Pig Show"
 
 msgctxt "#10359
-msgid ""
-msgstr ""
+msgid "The Oblongs"
+msgstr "The Oblongs"
 
 msgctxt "#10360
-msgid ""
-msgstr ""
+msgid "The Buzz on Maggie"
+msgstr "The Buzz on Maggie"
 
 msgctxt "#10361
-msgid ""
-msgstr ""
+msgid "Aquaman"
+msgstr "Aquaman"
 
 msgctxt "#10362
-msgid ""
-msgstr ""
+msgid "Frisky Dingo"
+msgstr "Frisky Dingo"
 
 msgctxt "#10363
-msgid ""
-msgstr ""
+msgid "One-Punch Man"
+msgstr "וואן-פאנץ' מאן"
 
 msgctxt "#10364
-msgid ""
-msgstr ""
+msgid "Archer"
+msgstr "ארצ'ר"
 
 msgctxt "#10365
-msgid ""
-msgstr ""
+msgid "Watership Down"
+msgstr "גבעת ווטרשיפ"
 
 msgctxt "#10366
-msgid ""
-msgstr ""
+msgid "The New Adventures of Winnie the Pooh"
+msgstr "The New Adventures of Winnie the Pooh"
 
 msgctxt "#10367
-msgid ""
-msgstr ""
+msgid "The New Adventures of Peter Pan"
+msgstr "The New Adventures of Peter Pan"
 
 msgctxt "#10368
-msgid ""
-msgstr ""
+msgid "The Deep"
+msgstr "The Deep"
 
 msgctxt "#10369
-msgid ""
-msgstr ""
+msgid "Tarzan and Jane"
+msgstr "Tarzan and Jane"
 
 msgctxt "#10370
-msgid ""
-msgstr ""
+msgid "Superman"
+msgstr "סופרמן"
 
 msgctxt "#10371
-msgid ""
-msgstr ""
+msgid "Recess"
+msgstr "Recess"
 
 msgctxt "#10372
-msgid ""
-msgstr ""
+msgid "Police Academy The Animated Series"
+msgstr "Police Academy The Animated Series"
 
 msgctxt "#10373
-msgid ""
-msgstr ""
+msgid "Kung Fu Panda: Legends of Awesomeness"
+msgstr "קונג פו פנדה: אגדת המגניבות"
 
 msgctxt "#10374
-msgid ""
-msgstr ""
+msgid "Justice League"
+msgstr "ליגת הצדק"
 
 msgctxt "#10375
-msgid ""
-msgstr ""
+msgid "Johnny Test"
+msgstr "ג'וני טסט"
 
 msgctxt "#10376
-msgid ""
-msgstr ""
+msgid "Marvel’s Hulk and the Agents of S.M.A.S.H"
+msgstr "Marvel’s Hulk and the Agents of S.M.A.S.H"
 
 msgctxt "#10377
-msgid ""
-msgstr ""
+msgid "Green Lantern"
+msgstr "Green Lantern"
 
 msgctxt "#10378
-msgid ""
-msgstr ""
+msgid "Marvel's Guardians of the Galaxy"
+msgstr "שומרי הגלקסיה"
 
 msgctxt "#10379
-msgid ""
-msgstr ""
+msgid "Future-Worm"
+msgstr "Future-Worm"
 
 msgctxt "#10380
-msgid ""
-msgstr ""
+msgid "Fraggle Rock"
+msgstr "פראגל רוק"
 
 msgctxt "#10381
-msgid ""
-msgstr ""
+msgid "Hercules"
+msgstr "הרקולס"
 
 msgctxt "#10382
-msgid ""
-msgstr ""
+msgid "Count Duckula"
+msgstr "הרוזן דאקולה"
 
 msgctxt "#10383
-msgid ""
-msgstr ""
+msgid "Chip 'n Dale Rescue Rangers"
+msgstr "יחידת ההצלה של צ'יפ ודייל"
 
 msgctxt "#10384
-msgid ""
-msgstr ""
+msgid "Buzz Lightyear of Star Command"
+msgstr "Buzz Lightyear of Star Command"
 
 msgctxt "#10385
-msgid ""
-msgstr ""
+msgid "Bugs Bunny"
+msgstr "באגס באני"
 
 msgctxt "#10386
-msgid ""
-msgstr ""
+msgid "Bratz"
+msgstr "בראץ"
 
 msgctxt "#10387
-msgid ""
-msgstr ""
+msgid "Ben 10"
+msgstr "Ben 10"
 
 msgctxt "#10388
-msgid ""
-msgstr ""
+msgid "Batman"
+msgstr "באטמן"
 
 msgctxt "#10389
-msgid ""
-msgstr ""
+msgid "Marvel's Avengers Assemble"
+msgstr "Marvel's Avengers Assemble"
 
 msgctxt "#10390
-msgid ""
-msgstr ""
+msgid "The Animals of Farthing Wood"
+msgstr "The Animals of Farthing Wood"
 
 msgctxt "#10391
-msgid ""
-msgstr ""
+msgid "Angry Birds Toons"
+msgstr "Angry Birds Toons"
 
 msgctxt "#10392
-msgid ""
-msgstr ""
+msgid "Andy Pandy"
+msgstr "Andy Pandy"
 
 msgctxt "#10393
-msgid ""
-msgstr ""
+msgid "101 Dalmatians: The Series"
+msgstr "101 כלבים דלמטים"
 
 msgctxt "#10394
-msgid ""
-msgstr ""
+msgid "PJ Masks"
+msgstr "כוח פיג'יי"
 
 msgctxt "#10395
-msgid ""
-msgstr ""
+msgid "Robin Hood: Mischief in Sherwood"
+msgstr "Robin Hood: Mischief in Sherwood"
 
 msgctxt "#10396
-msgid ""
-msgstr ""
+msgid "A Pup Named Scooby-Doo"
+msgstr "A Pup Named Scooby-Doo"
 
 msgctxt "#10397
-msgid ""
-msgstr ""
+msgid "דינוזאורים"
+msgstr "Dinosaurs"
 
 msgctxt "#10398
-msgid ""
-msgstr ""
+msgid "Danger Mouse"
+msgstr "סוכן חשאי: עכבר"
 
 msgctxt "#10399
-msgid ""
-msgstr ""
+msgid "Charlie and Lola"
+msgstr "צ'ארלי ולולה"
 
 #
 msgctxt "#10400
-msgid ""
-msgstr ""
+msgid "Bananas in Pyjamas"
+msgstr "בננות בפיג'מות"
 
 msgctxt "#10401
 msgid "ouch!"
@@ -1425,7 +1425,7 @@ msgid "Bug Alert"
 msgstr "באג בראש"
 
 msgctxt "#10409
-msgid "The Littl’ Bits"
+msgid "The Littl' Bits"
 msgstr "בארץ הקטקטים"
 
 msgctxt "#10410
@@ -1437,7 +1437,7 @@ msgid "Bouli"
 msgstr "בולי איש השלג"
 
 msgctxt "#10412
-msgid "Mermaid Melody Pichi Pichi Pitch"
+msgid "Mermaid Melody: Pichi Pichi Pitch"
 msgstr "בנות הים פיצ'י פיצ'י פיץ'"
 
 msgctxt "#10413
@@ -1445,7 +1445,7 @@ msgid "George of the Jungle"
 msgstr "ג'רג מלך הג'ונגל"
 
 msgctxt "#10414
-msgid "Mrs. Pepper Pot"
+msgid "Mrs. Pepperpot"
 msgstr "גברת פלפלת"
 
 msgctxt "#10415
@@ -1473,15 +1473,15 @@ msgid "The Ultimate Book of Spells"
 msgstr "הובוס ספר הקסמים הגדול"
 
 msgctxt "#10421
-msgid "Once Upon a Time..."
-msgstr "היה היה"
+msgid ""
+msgstr ""
 
 msgctxt "#10422
 msgid "The Smurfs"
 msgstr "הדרדסים"
 
 msgctxt "#10423
-msgid "The Snorks"
+msgid "Snorks"
 msgstr "הזרבובים"
 
 msgctxt "#10424
@@ -1565,7 +1565,7 @@ msgid "ThunderCats"
 msgstr "חתולי הרעם"
 
 msgctxt "#10444
-msgid "The World of David the Gnome"
+msgid "David the Gnome"
 msgstr "טוב טוב הגמד"
 
 msgctxt "#10445
@@ -1633,8 +1633,8 @@ msgid "Briefe von Felix"
 msgstr "פליקס הארנב"
 
 msgctxt "#10461
-msgid "Around the World in Eighty Days"
-msgstr "מסביב לעולם ב-80 יום"
+msgid "Around the World With Willy Fog"
+msgstr "מסביב לעולם עם וילי פוג"
 
 msgctxt "#10462
 msgid "Babar"
@@ -1649,7 +1649,7 @@ msgid "Max Steel"
 msgstr "מקס סטיל"
 
 msgctxt "#10465
-msgid "Fairytale Police Department"
+msgid "Fairy Tale Police Department"
 msgstr "משטרת האגדות"
 
 msgctxt "#10466
@@ -1657,7 +1657,7 @@ msgid "The Simpsons"
 msgstr "משפחת סימפסון"
 
 msgctxt "#10467
-msgid "NARUTO"
+msgid "Naruto"
 msgstr "נארוטו"
 
 msgctxt "#10468
@@ -1665,7 +1665,7 @@ msgid "The Wonderful Adventures of Nils"
 msgstr "נילס הולגרסון"
 
 msgctxt "#10469
-msgid "Sabrina, The Teenage Witch"
+msgid "Sabrina the Animated Series"
 msgstr "סברינה המכשפה הצעירה"
 
 msgctxt "#10470
@@ -1773,12 +1773,12 @@ msgid "Mighty Max"
 msgstr "מייטי מקס"
 
 msgctxt "#10496
-msgid ""
-msgstr ""
+msgid "The Adventures of Puss in Boots"
+msgstr "הרפתקאות החתול במגפיים"
 
 msgctxt "#10497
-msgid ""
-msgstr ""
+msgid "Bananaman"
+msgstr "Bananaman"
 
 msgctxt "#10498
 msgid "Cardcaptor Sakura"
@@ -2231,8 +2231,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#10610
-msgid ""
-msgstr ""
+msgid "Dinopaws"
+msgstr "Dinopaws"
 
 msgctxt "#10611
 msgid "Boowa and Kwala"
@@ -2291,8 +2291,8 @@ msgid "הגלופסים"
 msgstr "הגלופסים"
 
 msgctxt "#10625
-msgid ""
-msgstr ""
+msgid "My Little Pony"
+msgstr "הפוני הקטן שלי"
 
 msgctxt "#10626
 msgid "Heathcliff"
@@ -2443,8 +2443,8 @@ msgid "Cuddlies"
 msgstr "קטני"
 
 msgctxt "#10663
-msgid ""
-msgstr ""
+msgid "Tinga Tinga Tales"
+msgstr "Tinga Tinga Tales"
 
 msgctxt "#10664
 msgid ""
@@ -2592,12 +2592,12 @@ msgstr ""
 
 #
 msgctxt "#10700
-msgid ""
-msgstr ""
+msgid "My Friends Tigger and Pooh"
+msgstr "My Friends Tigger and Pooh"
 
 msgctxt "#10701
-msgid ""
-msgstr ""
+msgid "Go Jetters"
+msgstr "Go Jetters"
 
 msgctxt "#10702
 msgid "Adiboo"
@@ -2640,8 +2640,8 @@ msgid "Dora and Friends"
 msgstr "דורה וחברים"
 
 msgctxt "#10712
-msgid "Dan the postman"
-msgstr "דן הדוור"
+msgid "Postman Pat"
+msgstr "דר דוור"
 
 msgctxt "#10713
 msgid "דן ומוזלי"
@@ -2664,20 +2664,20 @@ msgid "Parents and puppies"
 msgstr "הורים וגורים"
 
 msgctxt "#10718
-msgid ""
-msgstr ""
+msgid "Kate and Mim-Mim"
+msgstr "Kate and Mim-Mim"
 
 msgctxt "#10719
 msgid "Hey Binba"
 msgstr "היי בינבה"
 
 msgctxt "#10720
-msgid ""
-msgstr ""
+msgid "Little Charley Bear"
+msgstr "Little Charley Bear"
 
 msgctxt "#10721
-msgid "Hello Kitty"
-msgstr "הלו קיטי"
+msgid "Hello Kitty and Friends"
+msgstr "הלו קיטי וחברים"
 
 msgctxt "#10722
 msgid "Sofia the First"
@@ -2913,20 +2913,20 @@ msgid "3 4 Work"
 msgstr "שלוש ארבע לעבודה"
 
 msgctxt "#10780
-msgid ""
-msgstr ""
+msgid "Dinosaur Train"
+msgstr "רכבת הדינוזאורים"
 
 msgctxt "#10781
-msgid ""
-msgstr ""
+msgid "The Octonauts"
+msgstr "The Octonauts"
 
 msgctxt "#10782
-msgid ""
-msgstr ""
+msgid "Sid the Science Kid"
+msgstr "Sid the Science Kid"
 
 msgctxt "#10783
-msgid ""
-msgstr ""
+msgid "Talking Tom and Friends"
+msgstr "Talking Tom and Friends"
 
 msgctxt "#10784
 msgid "Strawberry"
@@ -2993,8 +2993,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#10800
-msgid ""
-msgstr ""
+msgid "Kim Possible"
+msgstr "קים פוסיבול"
 
 msgctxt "#10801
 msgid "Eek! The Cat"
@@ -3233,16 +3233,16 @@ msgid "Austin & Ally"
 msgstr "אוסטין ואלי"
 
 msgctxt "#10860
-msgid ""
-msgstr ""
+msgid "Bob’s Burgers"
+msgstr "בובס בורגר"
 
 msgctxt "#10861
 msgid "Angel's Friends"
 msgstr "עיר המלאכים"
 
 msgctxt "#10862
-msgid ""
-msgstr ""
+msgid "The Cleveland Show"
+msgstr "המופע של קליבלנד"
 
 msgctxt "#10863
 msgid "Speed Racer The Next Generation"
@@ -3285,80 +3285,80 @@ msgid "Felix The Cat"
 msgstr "פליקס החתול"
 
 msgctxt "#10873
-msgid ""
-msgstr ""
+msgid "Family Guy"
+msgstr "איש משפחה"
 
 msgctxt "#10874
-msgid ""
-msgstr ""
+msgid "The Furchester Hotel"
+msgstr "The Furchester Hotel"
 
 msgctxt "#10875
 msgid "Sesame Street"
 msgstr "רחוב סומסום"
 
 msgctxt "#10876
-msgid ""
-msgstr ""
+msgid "Futurama"
+msgstr "פיוצ'רמה"
 
 msgctxt "#10877
-msgid ""
-msgstr ""
+msgid "Garfield and Friends"
+msgstr "גארפילד"
 
 msgctxt "#10878
-msgid ""
-msgstr ""
+msgid "He-Man and the Masters of the Universe"
+msgstr "הי-מן ושליטי היקום"
 
 msgctxt "#10879
-msgid ""
-msgstr ""
+msgid "King of the Hill"
+msgstr "המלך היל"
 
 msgctxt "#10880
-msgid ""
-msgstr ""
+msgid "The Mr. Peabody"
+msgstr "המופע של מר פיבודי ושרמן"
 
 msgctxt "#10881
-msgid ""
-msgstr ""
+msgid "Rugrats"
+msgstr "ראגרטס"
 
 msgctxt "#10882
-msgid ""
-msgstr ""
+msgid "Sarah & Duck"
+msgstr "Sarah & Duck"
 
 msgctxt "#10883
-msgid ""
-msgstr ""
+msgid "Thunderbirds Are Go!"
+msgstr "Thunderbirds Are Go!"
 
 msgctxt "#10884
-msgid ""
-msgstr ""
+msgid "Wacky Races"
+msgstr "Wacky Races"
 
 msgctxt "#10885
 msgid "Shaman King"
 msgstr "שאמן קינג"
 
 msgctxt "#10886
-msgid ""
-msgstr ""
+msgid "Where's Wally?"
+msgstr "איפה אפי?"
 
 msgctxt "#10887
-msgid ""
-msgstr ""
+msgid "Gravity Falls"
+msgstr "גרוויטי פולס"
 
 msgctxt "#10888
-msgid ""
-msgstr ""
+msgid "Hey Arnold!"
+msgstr "היי ארנולד!"
 
 msgctxt "#10889
-msgid ""
-msgstr ""
+msgid "Mr. Bean"
+msgstr "מיסטר בין"
 
 msgctxt "#10890
-msgid ""
-msgstr ""
+msgid "Code Lyoko"
+msgstr "קוד ליוקו"
 
 msgctxt "#10891
-msgid ""
-msgstr ""
+msgid "Code Lyoko: Evolution"
+msgstr "קוד ליוקו: אבולוציה"
 
 msgctxt "#10892
 msgid ""
@@ -3851,8 +3851,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#102070
-msgid ""
-msgstr ""
+msgid "One of the most loved and recognized characters in children's literature, Pippi Longstocking is the irrepressible and irresistible heroine from the classic books by Astrid Lindgren. Now in full, animated glory, Pippi is still known for her bright red pig tails, face full of freckles and super-human strength. Daughter of Captain Longstocking, Pippi sailed the seven seas, seven times - before she was seven! Having been separated from her dad on the story seas, she now takes care of herself just fine, thank you! She lives her life the way all children wish they could: in charge of her own destiny. So, even though energetic, free-spirited Pippi lives in a house with no parents, she manages to overcome all obstacles that come her way, and always with plenty of humor. Pippi rules!"
+msgstr "One of the most loved and recognized characters in children's literature, Pippi Longstocking is the irrepressible and irresistible heroine from the classic books by Astrid Lindgren. Now in full, animated glory, Pippi is still known for her bright red pig tails, face full of freckles and super-human strength. Daughter of Captain Longstocking, Pippi sailed the seven seas, seven times - before she was seven! Having been separated from her dad on the story seas, she now takes care of herself just fine, thank you! She lives her life the way all children wish they could: in charge of her own destiny. So, even though energetic, free-spirited Pippi lives in a house with no parents, she manages to overcome all obstacles that come her way, and always with plenty of humor. Pippi rules!"
 
 msgctxt "#102080
 msgid "Jack and the Beanstalk" is an English fairy tale. It appeared as "The Story of Jack Spriggins and the Enchanted Bean" in 1734 and as Benjamin Tabart's moralised "The History of Jack and the Bean-Stalk" in 1807."
@@ -3987,8 +3987,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#102410
-msgid "Masha and the Bear (Russian: Маша и Медведь, Masha i Medved') is an animated television series based loosely on the Russian folk tale, "Masha and the Bear". The series focuses on the adventures of a little girl named Masha and an anthropomorphic bear."
-msgstr "Masha and the Bear (Russian: Маша и Медведь, Masha i Medved') is an animated television series based loosely on the Russian folk tale, "Masha and the Bear". The series focuses on the adventures of a little girl named Masha and an anthropomorphic bear."
+msgid "The aim of Masha and the Bear series is simple and urgent at the same time — the series tries to introduce eternal truths to a child in a clear and entertaining way, to present the world in its diversity and to reveal positive features of any situation. The series also tries to explain the logic of actions in various difficult situations and helps to struggle with your own weak points in an unobtrusive way."
+msgstr "The aim of Masha and the Bear series is simple and urgent at the same time — the series tries to introduce eternal truths to a child in a clear and entertaining way, to present the world in its diversity and to reveal positive features of any situation. The series also tries to explain the logic of actions in various difficult situations and helps to struggle with your own weak points in an unobtrusive way."
 
 msgctxt "#102420
 msgid ""
@@ -4308,28 +4308,28 @@ msgid ""
 msgstr ""
 
 msgctxt "#103210
-msgid ""
-msgstr ""
+msgid "Once Upon a Time... Life, also known as Micro Patrol is a French-Japanese animated television series which tells the story of the human body for children. The program was originally produced in France in 1987 by Procidis and directed by Albert Barillé. The series consists of 26 episodes and originally was aired on the French channel Canal+, and then on the state owned channel FR3. It is the third part of the Once Upon a Time... series."
+msgstr "מסע המופלא אל תוך גוף האדם. הסדרה חושפת את הילדים הצעירים והמבוגרים כאחד לפלאי גוף האדם ולתהליכים המדהימים הקורים בו. הסדרה מאפשרת לכל גיל להבין את המתרחש בגופו בעזרת סיפורים מרתקים המכילים גם לימוד של מושגים אנטומיים בצורה נגישה וברורה. בכל פרק קיים מפגש בין הילדים לדמויות האהובות מ "היה היה" כשהן מגלמות הפעם את מנגנוני ההגנה של גוף האדם כ"טובים", והווירוסים והחיידקים המאיימים לתקוף את גופנו כ"רעים". בעזרת הסדרה ילמדו הילדים בצורה משעשעת ומוחשית על מנגנון גוף האדם ועל האיברים הפנימיים המרכיבים אותו, ביניהם תאי עצב, העין, האוזן, העור, הפה והשיניים, מערכת העיכול, מפעל הכבד, הכליות ומערכות הלימפה ."
 
 msgctxt "#103220
-msgid ""
-msgstr ""
+msgid "This was a French animated TV series from 1982. Directed by Albert Barillé."
+msgstr "This was a French animated TV series from 1982. Directed by Albert Barillé."
 
 msgctxt "#103230
 msgid ""
 msgstr ""
 
 msgctxt "#103240
-msgid ""
-msgstr ""
+msgid "אחת מהסדרות הפופולאריות ביותר ששודרו בישראל. הסדרה שהפכה לפולחן נועדה ללמד היסטוריה על ידי שימוש באנימציה ובהומור משובח. 26 הפרקים עקבו אחר ההיסטוריה האנושית החל מבריאת העולם בתחילת החיים, האדם הקדמון, הוויקינגים, יוון ורומא, מסעות הצלב ועוד. כל המאורעות סופרו ע"י מעקב אחר הדורות השונים של דמויות קבועות."
+msgstr "אחת מהסדרות הפופולאריות ביותר ששודרו בישראל. הסדרה שהפכה לפולחן נועדה ללמד היסטוריה על ידי שימוש באנימציה ובהומור משובח. 26 הפרקים עקבו אחר ההיסטוריה האנושית החל מבריאת העולם בתחילת החיים, האדם הקדמון, הוויקינגים, יוון ורומא, מסעות הצלב ועוד. כל המאורעות סופרו ע"י מעקב אחר הדורות השונים של דמויות קבועות."
 
 msgctxt "#103250
-msgid ""
-msgstr ""
+msgid "סדרת ההמשך ל"היה היה" הקלאסית, המתמקדת בממציאים ופורצי דרך גדולים: ארכימדס, גוטנברג, דה וינצ'י, פרסלסוס, גלילאו גלילאי, ניוטון, לאבואזייה, פאראדיי, דארווין, פסטר, אדיסון, מרקוני, פורד, מאיר קירי, איינשטיין ואפילו ארמסטרונג על הירח!"
+msgstr "סדרת ההמשך ל"היה היה" הקלאסית, המתמקדת בממציאים ופורצי דרך גדולים: ארכימדס, גוטנברג, דה וינצ'י, פרסלסוס, גלילאו גלילאי, ניוטון, לאבואזייה, פאראדיי, דארווין, פסטר, אדיסון, מרקוני, פורד, מאיר קירי, איינשטיין ואפילו ארמסטרונג על הירח!"
 
 msgctxt "#103260
-msgid ""
-msgstr ""
+msgid "Teenagers, the internationally-recognized characters of the series, will be the heroes of adventures in which they will play an active role. They will be a force for change, faced with situations and problems they need to resolve. The series will be based on facts, yet still primarily entertainment. Through their actions, they directly affect their planet and the resources that must be used responsibly and are not inexhaustible. The series will also help younger audiences to understand that pollution, hunger and water shortages are realities with specific causes – rather than inevitable evils to be dreaded, they are battles to be won with solutions to be found."
+msgstr "דואגים לכדור הארץ.הסדרה המצליחה שיצר אלברט ברילה, מלמדת אותנו על הכוכב שלנו באמצעות אנימציה והומור משובח.הסדרה מתמודדת עם הבעיות האקולוגיות הבוערות ביותר המעסיקות את העולם כולו: התחממות כדור הארץ והמסת הקרחונים, יערות הגשם וסכנת ההכחדה, זיהום הים, מ?חזור, אנרגיות חדשות ועוד...הגיעה העת להגביר את המודעות למ?פגעים המזיקים לכדור הארץ הנפלא שלנו ולהפנות את תשומת הלב לכל מה שביכולתנו לעשות כדי להגן עליו."
 
 msgctxt "#103270
 msgid ""
@@ -4360,273 +4360,273 @@ msgid ""
 msgstr ""
 
 msgctxt "#103340
-msgid ""
-msgstr ""
+msgid "The Jetsons is an animated sitcom that was produced by Hanna-Barbera. It was Hanna-Barbera’s Space Age counterpart to The Flintstones, a half-hour family sitcom projecting contemporary American culture and lifestyle into another time period. The Jetsons live in a futuristic utopia in the year 2062 of elaborate robotic contraptions, aliens, holograms, and whimsical inventions."
+msgstr "משפחת סילוני (באנגלית: The Jetsons, "משפחת ג'טסון") היא סדרת טלוויזיה אמריקאית מבית היוצר של האנה-ברברה, יוצרי הסדרה המצליחה "משפחת קדמוני". הסדרה היא קומדיית מצבים מונפשת. הסדרה המקורית היא בת 24 פרקים והופקה במקור לטלוויזיה בין השנים 1962 ל-1963. בעקבות הפופולריות אשר הסדרה צברה במשך השנים הובילו להפקת פרקים חדשים של הסדרה אשר הופקו בין השנים 1985 ל-1987 וליצירתם של שני סרטי טלוויזיה ("משפחת סילוני פוגשים את משפחת קדמוני" ו"רוק אנד רול עם ג'ודי סילוני") ושני סרטי קולנוע ("משפחת סילוני: הסרט" שיצא בתחילת שנות ה-90 וסרט אנימציה נוסף של האחים וורנר באותו שם שנמצא בתכנון)."
 
 msgctxt "#103350
-msgid ""
-msgstr ""
+msgid "Two brothers, Wirt and Greg, find themselves lost in the Unknown; a strange forest adrift in time. With the help of a wise old Woodsman and a foul-tempered bluebird named Beatrice, Wirt and Greg must travel across this strange land, in hope of finding their way home. Join them as they encounter surprises and obstacles on their journey through the wood."
+msgstr "Two brothers, Wirt and Greg, find themselves lost in the Unknown; a strange forest adrift in time. With the help of a wise old Woodsman and a foul-tempered bluebird named Beatrice, Wirt and Greg must travel across this strange land, in hope of finding their way home. Join them as they encounter surprises and obstacles on their journey through the wood."
 
 msgctxt "#103360
-msgid ""
-msgstr ""
+msgid "Welcome to the Yo Yogi! guide at TV Tome. Hanna Barbera struck gold twice when they made "Muppet Babies" versions of Flintstone Kids & A Pup Named Scooby Doo. But they struck out with its 3rd idea, Yo Yogi! Yo Yogi! featured the gang (except Boo Boo) as young teenagers (Yogi, Huck, Snagglepuss & Cindy). They worked for the LAF (Lost & Found) detective agency which was run by head security agent John Smith (later the park ranger), over @ Jellystone Mall (owned by Doggie Daddy & Augie Doggie). Causing trouble were teenage Dick Dastardly & his pup, Muttley, along with Roxy Bear. In the middle of the show's run, Kellogg's cereals offered 3-D glasses in which some scenes in an episode would be in 3-D. To signify when to put the 3-D glasses on, Yogi would spin his hat."
+msgstr "Welcome to the Yo Yogi! guide at TV Tome. Hanna Barbera struck gold twice when they made "Muppet Babies" versions of Flintstone Kids & A Pup Named Scooby Doo. But they struck out with its 3rd idea, Yo Yogi! Yo Yogi! featured the gang (except Boo Boo) as young teenagers (Yogi, Huck, Snagglepuss & Cindy). They worked for the LAF (Lost & Found) detective agency which was run by head security agent John Smith (later the park ranger), over @ Jellystone Mall (owned by Doggie Daddy & Augie Doggie). Causing trouble were teenage Dick Dastardly & his pup, Muttley, along with Roxy Bear. In the middle of the show's run, Kellogg's cereals offered 3-D glasses in which some scenes in an episode would be in 3-D. To signify when to put the 3-D glasses on, Yogi would spin his hat."
 
 msgctxt "#103370
-msgid ""
-msgstr ""
+msgid "As Told by Ginger focuses on middle schooler Ginger Foutley who, with her friends, tries to become more than a social geek."
+msgstr "סיפורי ג'ינגר (באנגלית: As Told by Ginger) היא תוכנית אמריקאית מונפשת שעלתה לאוויר ב- 25 באוקטובר 2000 בערוץ ניקלודיאון. הסדרה מתמקדת בחייה והרפתקאותיה של ג'ינג'ר פוטלי בחטיבת הביניים ובתיכון "לאקי", כאשר הסדרה מוצגת מנקודת מבטה של ג'ינג'ר כשהיא מתעדת את חייה ביומנה האישי. הסדרה זכורה הודות לעלילה, פיתוח הדמויות והעובדה שהדמויות מחליפות תלבושת כל יום.בארצות הברית, כמחצית מפרקי העונה השלישית לא שודרו. כמו כן, מספר פרקים קטן הוצא מסבב השידורים החוזרים, דבר שהותיר מעריצים רבים מאוכזבים במהלך סבב השידור הראשוני של הסדרה. בישראל שודרו כל פרקי הסדרה."
 
 msgctxt "#103380
-msgid ""
-msgstr ""
+msgid "The Flinstones is about a modern stone-age family, set in the prehistoric times. There's Fred, the meat-loving, bowling-playing fat man, Wilma, his wife who loves to cook and Pebbles, their cute baby daughter. Their next door neighbors are Barney, Fred's best friend, Betty, Barney's wife who always loves to hang out with Wilma, and their baby son Bamm-Bamm who is incredibly strong. The two families risk prehistoric danger or wild antics as they struggle to live normal lives."
+msgstr "משפחת קדמוני (באנגלית: The Flintstones, "משפחת פלינטסטון") היא סדרת אנימציה בת 166 פרקים שהופקה במקור על ידי האנה-ברברה לערוץ ABC, בין השנים 1960 ל-1966. בישראל הסדרה שודרה בטלוויזיה החינוכית ובערוץ 2 תחת שידורי קשת עם תרגום (שכן, גם שידר את סרט הקרוס אובר עם משפחת סילוני), בערוץ הילדים בדיבוב ובערוץ המזרח התיכון במשך שנים רבות. מאוחר יותר, שודרה גם בערוץ Cartoon Network ולאחר מכן בערוץ ג'וניור, בדיבוב מחדש.[CR]משפחת קדמוני נחשבת לאחת מסדרות הסיטקום המוצלחות ביותר שנעשו עד היום. וב-2002, פרסם מגזין הטלוויזיה TV Guide רשימה של 50 תוכניות הטלוויזיה הגדולות של כל הזמנים, ודרג את "משפחת קדמוני" במקום השלישי. הסדרה מבוססת במקור על קומדיית מצבים אמריקאית משנות החמישים בשם "The Honeymooners". הסדרה התמקדה בחייו של אדם קדמון השייך למעמד העובד בגרסה מודרנית של תקופת האבן, במשפחתו ובשכנו ברני אשר הוא גם חברו הטוב ביותר. סידרה מצוירת זו תוכננה במקור למבוגרים אבל שינו אותה שתהיה מיועדת לצעירים ומבוגרים כאחד. בשנת 1966 אחרי סיום הסדרה יצא לאקרנים סרט הקולנוע מצויר באורך מלא בשם "האיש ששמו קדמוני" המבוסס על הסדרה וזכה להצלחה, הן מסחרית והן מהביקורות."
 
 msgctxt "#103390
-msgid ""
-msgstr ""
+msgid "Courage the Cowardly Dog is an American animated horror comedy television series created by John R. Dilworth for Cartoon Network as part of the network's Cartoon Cartoons block. The main character is the eponymous pink, anthropomorphic dog who lives with a married elderly couple in the middle of Nowhere. The trio are frequently thrown into bizarre misadventures, often involving the paranormal or supernatural. The series is known for its dark, surreal humor and atmosphere."
+msgstr "אמיץ הכלב הפחדן (באנגלית: Courage the Cowardly Dog) הייתה סדרת אנימציה אמריקאית, ששודרה ב-Cartoon Network בין התאריכים מ-12 בנובמבר 1999 עד 22 בנובמבר 2002. מאוחר יותר שודרה הסדרה גם בערוץ הילדים בתרגום עברי ללא דיבוב עברי. פרק הפיילוט של הסדרה יצא ב-1995 תחת השם "התרנגול מחלל החיצון", והצלחתו היא זו שגרמה ליצירת הסדרה כולה ב-1999.[CR]הסדרה מספרת על כלב ביגל פחדן הנקרא באופן אירוני בשם אמיץ. אמיץ מאומץ על ידי אישה זקנה מלאת חום ואהבה בשם מיוריאל בג. מיוריאל מצאה אותו בסמטה כשהיה צעיר יותר, אחרי שהוא ברח מוטרינר משוגע בשם דוקטור אייזניק, שהטיס את שני הוריו לחלל. מיוריאל נשואה ליוסטס, איש זקן, עצבני, זעפן, אנוכי וחמדן שאינו אוהב את אמיץ (אך לעתים נדירות מפגין כלפיו רחמים). שלושתם גרים בחווה באמצע העיירה המכונה "אמצע שום מקום" וממוקמת בקנזס, והפנאי האהוב עליהם הוא צפייה בסרטי שחור לבן ישנים של אימה ומדע בדיוני. בכל פרק, אמיץ מציל את משפחתו ומגן עליה מפני המפלצות והיצורים המוזרים שחיים באזור העיירה ומנסים להרוס את חייהם. אמיץ, כנאמר, מציל את השניים אך רוב הפעמים יוסטס לכאורה לא מצליח לשרוד ולכן ישנן שתי אפשרויות לכך: ייתכן ונעדר, או שמוצג בתור שקית/כוס עם חומר מסוים (כמטאפורה לשרידים), ובפנים משקפיו. שמו האירוני של אמיץ למעשה מסמל את אופיו המיוחד - הוא כלב הסובל מפוביות רבות ומצליח, למרות הכל, להוכיח שהוא יכול להתגבר עליהן. כלומר, הוא פחדן אבל בעל אומץ להתגבר על פחדיו."
 
 msgctxt "#103400
-msgid ""
-msgstr ""
+msgid "The world is divided into four nations -- the Water Tribe, the Earth Kingdom, the Fire Nation and and the Air Nomads -- each represented by a natural element for which the nation is named. Benders have the ability to control and manipulate the element from their nation. Only the Avatar is the master of all four elements. The ruthless Fire Nation wants to conquer the world but the only bender who has enough power, the Avatar, has disappeared ... until now. His tribe soon discovers that Aang is the long-lost Avatar. Now Katara and Sokka must safeguard Aang on his journey to master all four elements and save the world from the Fire Nation."
+msgstr "אווטאר: כשף האוויר האחרון (באנגלית: Avatar: The Last Airbender) היא סדרת אנימציה אמריקאית, אשר נוצרה על ידי מייקל דנטה דימרטינו ובריאן קונייצקו. הסדרה שודרה במקור בארצות הברית בערוץ ניקלודאון מה־21 בפברואר 2006 עד ה־19 ביולי 2009. עלילת הסדרה עוקבת אחר הרפתקאותיו של אווטאר אנג וחבריו, אשר מנסים להציל את העולם מידי אומת האש.[CR]מלבד סדרת האנימציה, הופק גם סרט קולנוע אשר התבסס על עלילת העונה הראשונה של הסדרה. שני סרטים נוספים היו בתכנון, ליצירת טרילוגיה, אך עקב הכישלון הביקורתי של הסרט הראשון, הפקתם בוטלה. מוצרים נלווים נוספים בסדרה כוללים משחקי וידאו, קלפי משחק, בובות, סדרות קומיקס וצעצועי לגו אשר פותחו על ידי מספר חברות שונות.[CR]בישראל הסדרה משודרת בשפה האנגלית ובדיבוב לעברית בערוץ ניקלודאון ישראל."
 
 msgctxt "#103410
-msgid ""
-msgstr ""
+msgid "Baby Looney Tunes is an American animated television series taking place in an alternate universe depicting the Looney Tunes characters as toddler and preschool versions of themselves. It was produced by Warner Bros. Animation.[1] The show is similar to Muppet Babies, with the main characters taken care by Granny.The show premiered as a full series on July 28, 2001 and returned to WB stations usually before or after the Kids' WB block from 2001 to 2003 and continued to air on Cartoon Network when the series ended on October 16, 2006 and reruns from December 2006 to July 2010. Reruns of the show returned August 17, 2015 to help promote the premiere of the new Uncle Grandpa special, "Uncle Grandpa Babies" but stopped in 2016."
+msgstr "Baby Looney Tunes is an American animated television series taking place in an alternate universe depicting the Looney Tunes characters as toddler and preschool versions of themselves. It was produced by Warner Bros. Animation.[1] The show is similar to Muppet Babies, with the main characters taken care by Granny.The show premiered as a full series on July 28, 2001 and returned to WB stations usually before or after the Kids' WB block from 2001 to 2003 and continued to air on Cartoon Network when the series ended on October 16, 2006 and reruns from December 2006 to July 2010. Reruns of the show returned August 17, 2015 to help promote the premiere of the new Uncle Grandpa special, "Uncle Grandpa Babies" but stopped in 2016."
 
 msgctxt "#103420
-msgid ""
-msgstr ""
+msgid "The ghoulish adventures of Gomez and Morticia Addams."
+msgstr "משפחת אדמס (באנגלית: The Addams Family) היא משפחה בדיונית שהומצאה על ידי המאייר האמריקאי צ'ארלס אדמס בשנת 1937. עם הזמן הפכו הדמויות לגיבורי סדרת טלוויזיה, סדרות אנימציה וארבעה סרטים באורך מלא. צ'ארלס אדמס החל לפרסם את עלילות המשפחה במגזין "ניו יורקר". הדמויות זכו לפופולריות רבה, ועם הזמן למורטישה אדמס ולמשרתה לרץ', שאיתם התחיל אדמס את הסדרה, הצטרפו דמויות נוספות בנות משפחת אדמס.[CR]משפחת אדמס מהווה פארודיה על משפחה כל-אמריקאית טיפוסית: שני הורים אוהבים, ילדים, סבתא, חיית מחמד. אבל להבדיל ממשפחה אמריקאית ממוצעת, אשר כמעט תמיד דוגלת בערכים בורגניים ומקדשת את הפוליטיקלי קורקט, בני משפחת אדמס מאוהבים בגותי, בגרוטסקי ובמקבריות. הם מרבים לעסוק במוות, בייסורים ובאופל. בשושלת המפוארת של המשפחה ניתן למצוא רוצחים מפורסמים, מכשפות, קוסמים וסתם אנשים לא שפויים. כולם כאחד מהווים מקור גאווה והשראה למשפחה. הם לא מפחדים מהעל-טבעי, אלא חיים אותו יום יום. למעשה, הדבר הכמעט יחיד שמפחיד אותם באמת הוא האנשים ה"נורמאלים" שסובבים אותם."
 
 msgctxt "#103430
-msgid ""
-msgstr ""
+msgid "The time traveling misadventures of a genius dog and his adopted son."
+msgstr "The time traveling misadventures of a genius dog and his adopted son."
 
 msgctxt "#103440
-msgid ""
-msgstr ""
+msgid "Invader ZIM is an eccentric alien soldier from the planet Irk. He was banished from the Irken Empire after nearly destroying his home planet on an early mission. After begging his superiors, the Almighty Tallest Red and Purple, for another chance, they decide to get rid of him once and for all. They trick him into going on a "secret mission" to an obscure planet at the edge of the universe, a planet with the unlikely name of Earth, in hopes that he'll die along the way. But their trick backfires when ZIM safely reaches Earth and begins his ever-so-subtle conquest of it. He disguises himself as a schoolboy, and now the only person who can stop him is one kid - Dib, a somewhat insane paranormal researcher, who sees straight through ZIM's disguise and is intent on stopping his reign of "terror". The only problem is that neither of them is very good at stopping the other."
+msgstr "זים הפולש (באנגלית: Invader Zim) היא תוכנית אנימציה אשר שודרה במקור בערוץ ניקלודאון בין השנים 2001 עד 2006. התוכנית שודרה בשידורים חוזרים בערוץ עד שנת 2013. הסדרה עוסקת בחייזר מהאימפריה האירקנית בשם זים שנשלח למשימה חשאית לכבוש את כדור הארץ על ידי מנהיגיו, ביחד עם עוזרו GIR הרובוט שמסתווה בתור כלב, וזים ובעזרת תחפושת אדם מוזרה הם מנסים למצוא את החולשות של כדור הארץ, כדי שהצי המלחמתי האירקני יוכל להרוס את הכוכב עד יסודו, אבל חוקר העל-טבעי דיב מנסה כל פעם מחדש לעצור אותו, וכך נוצרות מלחמות רבות בין זים לדיב.
 
 msgctxt "#103450
-msgid ""
-msgstr ""
+msgid "Following directly after the events of How To Train Your Dragon but before How to Train Your Dragon 2, Dragons follows Hiccup as he tries to keep balance within the new cohabitation of Dragons and Vikings. Alongside keeping up with Berk's newest installment — A Dragon Training Academy — Hiccup, Toothless, and the rest of the Viking Teens are put to the test when they are faced with new worlds harsher than Berk, new dragons that can't all be trained, and new enemies who are looking for every reason to destroy the harmony between Vikings and Dragons all together."
+msgstr "Following directly after the events of How To Train Your Dragon but before How to Train Your Dragon 2, Dragons follows Hiccup as he tries to keep balance within the new cohabitation of Dragons and Vikings. Alongside keeping up with Berk's newest installment — A Dragon Training Academy — Hiccup, Toothless, and the rest of the Viking Teens are put to the test when they are faced with new worlds harsher than Berk, new dragons that can't all be trained, and new enemies who are looking for every reason to destroy the harmony between Vikings and Dragons all together."
 
 msgctxt "#103460
-msgid ""
-msgstr ""
+msgid "Five years prior to the start of the series, a massive explosion released nanites into the atmosphere, infecting every living thing on Earth. These nanites randomly activate inside their hosts, mutating the subject into a monster known as an E.V.O. (Exponentially Variegated Organism). These Evos are usually mindless creatures that are a danger to everything around them. To combat the Evo threat, the organization known as Providence was created to capture and cure them. Rex is a 15-year-old amnesiac teenager who, like everyone else, has been infected with nanites. However, unlike most Evos, Rex can control his nanites, allowing him to manifest a variety of powers and even cure other Evos of their mutations. Working with Providence under Agent Six, he helps stop the Evos as they appear. Working against Providence is Van Kleiss, an Evo with connections that are not only to the event whic"
+msgstr "Five years prior to the start of the series, a massive explosion released nanites into the atmosphere, infecting every living thing on Earth. These nanites randomly activate inside their hosts, mutating the subject into a monster known as an E.V.O. (Exponentially Variegated Organism). These Evos are usually mindless creatures that are a danger to everything around them. To combat the Evo threat, the organization known as Providence was created to capture and cure them. Rex is a 15-year-old amnesiac teenager who, like everyone else, has been infected with nanites. However, unlike most Evos, Rex can control his nanites, allowing him to manifest a variety of powers and even cure other Evos of their mutations. Working with Providence under Agent Six, he helps stop the Evos as they appear. Working against Providence is Van Kleiss, an Evo with connections that are not only to the event whic"
 
 msgctxt "#103470
-msgid ""
-msgstr ""
+msgid "Ed, Edd n Eddy is a Canadian-American animated comedy television series created by Danny Antonucci for Cartoon Network, and the sixth of the network's Cartoon Cartoons. The series revolves around three preteen boys: Ed, Edd "Double D," and Eddy—collectively known as "the Eds"—who live in a suburban cul-de-sac in the fictional town of Peach Creek. Under the unofficial leadership of Eddy, the trio frequently invent schemes to make money from their peers to purchase their favorite confectionery, jawbreakers. Their plans usually fail, leaving them in various, often humiliating, predicaments."
+msgstr "Ed, Edd n Eddy is a Canadian-American animated comedy television series created by Danny Antonucci for Cartoon Network, and the sixth of the network's Cartoon Cartoons. The series revolves around three preteen boys: Ed, Edd "Double D," and Eddy—collectively known as "the Eds"—who live in a suburban cul-de-sac in the fictional town of Peach Creek. Under the unofficial leadership of Eddy, the trio frequently invent schemes to make money from their peers to purchase their favorite confectionery, jawbreakers. Their plans usually fail, leaving them in various, often humiliating, predicaments."
 
 msgctxt "#103480
-msgid ""
-msgstr ""
+msgid "Æon Flux is set in a bizarre, dystopian, future world of mutant creatures, clones, and robots. The title character is a tall, bondage gear-clad secret agent from Monica, skilled in assassination and acrobatics. Her mission is to infiltrate the strongholds of the neighboring country of Bregna, which is led by her sometimes-nemesis and sometimes-lover Trevor Goodchild. Monica apparently represents a dynamic anarchist society, while Bregna embodies a centralized, scientifically planned state. The names of their respective characters reflect this: Flux as the self-directed agent from Monica and Goodchild as the technocratic leader of Bregna."
+msgstr "Æon Flux is set in a bizarre, dystopian, future world of mutant creatures, clones, and robots. The title character is a tall, bondage gear-clad secret agent from Monica, skilled in assassination and acrobatics. Her mission is to infiltrate the strongholds of the neighboring country of Bregna, which is led by her sometimes-nemesis and sometimes-lover Trevor Goodchild. Monica apparently represents a dynamic anarchist society, while Bregna embodies a centralized, scientifically planned state. The names of their respective characters reflect this: Flux as the self-directed agent from Monica and Goodchild as the technocratic leader of Bregna."
 
 msgctxt "#103490
-msgid ""
-msgstr ""
+msgid "Iron Man, also known as Iron Man: The Animated Series, is an American animated television series based on Marvel Comics' superhero Iron Man. The series aired from 1994 to 1996 in syndication as part of The Marvel Action Hour, which packaged Iron Man with another animated series based on Marvel properties, the Fantastic Four, with one half-hour episode from each series airing back-to-back. The show was backed by a toy line that featured many armor variants."
+msgstr "Iron Man, also known as Iron Man: The Animated Series, is an American animated television series based on Marvel Comics' superhero Iron Man. The series aired from 1994 to 1996 in syndication as part of The Marvel Action Hour, which packaged Iron Man with another animated series based on Marvel properties, the Fantastic Four, with one half-hour episode from each series airing back-to-back. The show was backed by a toy line that featured many armor variants."
 
 msgctxt "#103500
-msgid ""
-msgstr ""
+msgid "The series follows the lives of teenage heroes and sidekicks who are members of a fictional covert operation group referred to simply as "the team." Young Justice is essentially a young counterpart to the famous adult team, the Justice League. The main setting is a fictional universe apart from the previous DC Animated Universe (and other continuities) during a time period in which superheroes are a relatively recent phenomenon."
+msgstr "The series follows the lives of teenage heroes and sidekicks who are members of a fictional covert operation group referred to simply as "the team." Young Justice is essentially a young counterpart to the famous adult team, the Justice League. The main setting is a fictional universe apart from the previous DC Animated Universe (and other continuities) during a time period in which superheroes are a relatively recent phenomenon."
 
 msgctxt "#103510
-msgid ""
-msgstr ""
+msgid "The Super Friends are the World's Greatest Super Heroes. They work together to stop the villains and protect the innocent, keeping the world safe. Go, Super Friends."
+msgstr "The Super Friends are the World's Greatest Super Heroes. They work together to stop the villains and protect the innocent, keeping the world safe. Go, Super Friends."
 
 msgctxt "#103520
-msgid ""
-msgstr ""
+msgid "Scooby's All-Star Laff-A-Lympics is a two-hour Saturday morning animated program block produced by Hanna-Barbera Productions and broadcast on ABC from September 10, 1977 until October 28, 1978.The block featured five Hanna-Barbera series among its segments: The Scooby-Doo Show, Laff-A-Lympics, The Blue Falcon & Dynomutt, Captain Caveman and the Teen Angels and reruns of Scooby-Doo, Where Are You!. During the second season in 1978–79, the show was re-titled Scooby's All-Stars and broadcast on ABC from September 9, 1978 to October 28, 1978. The runtime was reduced from 120 minutes to 90 minutes by dropping The Blue Falcon & Dynomutt and Scooby-Doo, Where Are You!."
+msgstr "Scooby's All-Star Laff-A-Lympics is a two-hour Saturday morning animated program block produced by Hanna-Barbera Productions and broadcast on ABC from September 10, 1977 until October 28, 1978.The block featured five Hanna-Barbera series among its segments: The Scooby-Doo Show, Laff-A-Lympics, The Blue Falcon & Dynomutt, Captain Caveman and the Teen Angels and reruns of Scooby-Doo, Where Are You!. During the second season in 1978–79, the show was re-titled Scooby's All-Stars and broadcast on ABC from September 9, 1978 to October 28, 1978. The runtime was reduced from 120 minutes to 90 minutes by dropping The Blue Falcon & Dynomutt and Scooby-Doo, Where Are You!."
 
 msgctxt "#103530
-msgid ""
-msgstr ""
+msgid "Road Rovers is an American animated television series produced by Warner Bros. Animation that premiered on Kids' WB on September 7, 1996. After one season it ended on February 22, 1997. Reruns continued to air until September 6, 1997."
+msgstr "Road Rovers is an American animated television series produced by Warner Bros. Animation that premiered on Kids' WB on September 7, 1996. After one season it ended on February 22, 1997. Reruns continued to air until September 6, 1997."
 
 msgctxt "#103540
-msgid ""
-msgstr ""
+msgid "Cybersix is a Argentine/Canadian/Japanese science fiction television series, based on the comic strip of the same name by Carlos Meglia. The series was produced by the Vancouver-based Network of Animation and animated in Japan by TMS Entertainment."
+msgstr "Cybersix is a Argentine/Canadian/Japanese science fiction television series, based on the comic strip of the same name by Carlos Meglia. The series was produced by the Vancouver-based Network of Animation and animated in Japan by TMS Entertainment."
 
 msgctxt "#103550
-msgid ""
-msgstr ""
+msgid "Set in a world of anthropomorphic felines, this series follows the high-flying adventures of Chance "T-Bone" Furlong and Jake "Razor" Clawson. Members of Megakat City's elite law-enforcement agency, the pilots become grounded after their pursuit of archvillain Dark Kat sets them at odds with the headstrong Commander Feral. Reassigned to duties at a military salvage yard, Chance and Jake create their own high-tech jet from discarded parts and dedicate themselves to protecting the city in their secret identities as the SWAT Cats. Armed to the teeth and ready to roll, these masked vigilantes continue their quest to bring down Dark Kat and other threats to the city, including recurring baddies the Pastmaster, Dr. Viper and Hard Drive."
+msgstr "Set in a world of anthropomorphic felines, this series follows the high-flying adventures of Chance "T-Bone" Furlong and Jake "Razor" Clawson. Members of Megakat City's elite law-enforcement agency, the pilots become grounded after their pursuit of archvillain Dark Kat sets them at odds with the headstrong Commander Feral. Reassigned to duties at a military salvage yard, Chance and Jake create their own high-tech jet from discarded parts and dedicate themselves to protecting the city in their secret identities as the SWAT Cats. Armed to the teeth and ready to roll, these masked vigilantes continue their quest to bring down Dark Kat and other threats to the city, including recurring baddies the Pastmaster, Dr. Viper and Hard Drive."
 
 msgctxt "#103560
-msgid ""
-msgstr ""
+msgid "This follow-up series to "Avatar: The Last Airbender" is set 70 years after the events of "Avatar" and follows Korra, the next Avatar after Aang, who is from the Southern Water Tribe. With earth, water and fire under her belt, Korra must master the art of airbending. Korra's quest leads her to Republic City, a virtual melting pot where benders and nonbenders live together. But she soon discovers that the land is plagued by crime and a growing antibending revolution that threatens to tear the city apart. While dealing with the dangers, Korra begins her airbending training under the tutelage of Aang's son, Tenzin."
+msgstr "האגדה של קֹורה (באנגלית: The Legend of Korra) היא סדרת המשך לסדרת האנימציה האמריקאית "אווטאר", שנוצרה על ידי מייקל דנטה דימרטינו ובראיין קונייצקו. שידורה החל בניקלודיאון האמריקאי ב-14 באפריל 2012, ובישראלי בנובמבר 2012.עלילת הסדרה מתמקדת באווטאר קורה, הגלגול הבא של האווטאר לאחר אנג. קורה היא נערה בת 17 משבט המים הדרומי שלמדה את כישופיהם של אומות המים, האש והאדמה, אך לא את כשפי האוויר - אותם למדה בהמשך ממאסטר טֶנְזֶן, בנם של אוואטר אנג וקטרה. העלילה מתרחשת כ-70 שנה לאחר סיום של הסדרה המקורית, בעידן מודרני עם כלי רכב וספינות אוויר."
 
 msgctxt "#103570
-msgid ""
-msgstr ""
+msgid "Four young superheroes prepare to fight crime and all enemies for freedom."
+msgstr "Four young superheroes prepare to fight crime and all enemies for freedom."
 
 msgctxt "#103580
-msgid ""
-msgstr ""
+msgid "The Porky Pig show began on September 20,1964 and ended on March 14,1965. It had 26 Episodes. It began and ended with a song. Here is the opening song. THEME SONG "Who's our favorite TV star? Who comes on with a wham? Who's got the laughiest show by far? P-P-P-Porky Pig, our favorite ham! Ooh, that Porky, Porky Pig! He's the barnyard's Mr. Big! When the music starts, you wanna tap your toes. You feel like dancin' a jig! Swing around in a circle, and doesy-do! Time to watch Porky Pig. CLOSING SONG "Sadly now we sing again, to each and every one. Gladly we'll come back,and then, we'll all have more fun! Watching Porky and his friends, wish it never had to end. Don't forget next time we meet, we're planin' something big. Just be sure to join us then for Porky Pig!" The show went like this. Porky Pig Short. Random Short"
+msgstr "The Porky Pig show began on September 20,1964 and ended on March 14,1965. It had 26 Episodes. It began and ended with a song. Here is the opening song. THEME SONG "Who's our favorite TV star? Who comes on with a wham? Who's got the laughiest show by far? P-P-P-Porky Pig, our favorite ham! Ooh, that Porky, Porky Pig! He's the barnyard's Mr. Big! When the music starts, you wanna tap your toes. You feel like dancin' a jig! Swing around in a circle, and doesy-do! Time to watch Porky Pig. CLOSING SONG "Sadly now we sing again, to each and every one. Gladly we'll come back,and then, we'll all have more fun! Watching Porky and his friends, wish it never had to end. Don't forget next time we meet, we're planin' something big. Just be sure to join us then for Porky Pig!" The show went like this. Porky Pig Short. Random Short"
 
 msgctxt "#103590
-msgid ""
-msgstr ""
+msgid "The tight-knit Oblong clan lives in Hill Valley, a toxic valley downstream from your typical industrial waste site, which has caused a variety of bizarre physical and emotional abnormalities. At the head of the dinner table is the loving, limbless, tirelessly upbeat patriarch Bob Oblong and his adoring, alcohol-and-tobacco-addicted, bald-but-beautifully-wigged wife Pickles, who frequents the Rusty Bucket bar, owned by transexual Anita Bidet (who was originally to be named Sofonda Cox!). The family includes their conjoined twin sons Biff and Chip, who share three legs and three buttocks, but can't seem to agree on anything; sweet, tattling, 4-year-old daughter Beth, sporting a cucumber-like growth sprouting from her head; and youngest son Milo, a one-haired optimist who has every childhood emotional disorder and behavioral problem ever diagnosed. Other members of the family include Bob's"
+msgstr "The tight-knit Oblong clan lives in Hill Valley, a toxic valley downstream from your typical industrial waste site, which has caused a variety of bizarre physical and emotional abnormalities. At the head of the dinner table is the loving, limbless, tirelessly upbeat patriarch Bob Oblong and his adoring, alcohol-and-tobacco-addicted, bald-but-beautifully-wigged wife Pickles, who frequents the Rusty Bucket bar, owned by transexual Anita Bidet (who was originally to be named Sofonda Cox!). The family includes their conjoined twin sons Biff and Chip, who share three legs and three buttocks, but can't seem to agree on anything; sweet, tattling, 4-year-old daughter Beth, sporting a cucumber-like growth sprouting from her head; and youngest son Milo, a one-haired optimist who has every childhood emotional disorder and behavioral problem ever diagnosed. Other members of the family include Bob's"
 
 msgctxt "#103600
-msgid ""
-msgstr ""
+msgid "Maggie Pesky is an unusual young teen fly with big dreams, and this series is from her point of view. Set in the fly metropolis of Stickyfeet, Maggie gets the community's attention with her antics in a conventional world of upstanding flies. Maggie is always plotting to make even mundane tasks fun and exciting. Maggie's best friend, Rayna Cartflight, thinks Maggie's crazy schemes usually cross the line. Maggie's parents are Chauncey and Frieda Pesky. Dawn Swatworthy is Maggie's rival, a snobby girl."
+msgstr "Maggie Pesky is an unusual young teen fly with big dreams, and this series is from her point of view. Set in the fly metropolis of Stickyfeet, Maggie gets the community's attention with her antics in a conventional world of upstanding flies. Maggie is always plotting to make even mundane tasks fun and exciting. Maggie's best friend, Rayna Cartflight, thinks Maggie's crazy schemes usually cross the line. Maggie's parents are Chauncey and Frieda Pesky. Dawn Swatworthy is Maggie's rival, a snobby girl."
 
 msgctxt "#103610
-msgid ""
-msgstr ""
+msgid "Set in the lost city of Atlantis, Aquaman is the hero from the deep who protects the sea against any foes who threaten the peaceful undersea life. Aided by his ward Aqualad, Aquaman fights for justice on the ocean floor while keeping close contact with friends on dry land. On September 14, 1968 the Aquaman animated series was combined with Superman and Batman, along with brand new episodes starring the Justice League of America- Flash (Barry Allen), Hawkman (Carter Hall/Katar Hol), Green Lantern (Hal Jordan), and Atom (Ray Palmer), along with the Teen Titans (Aqualad, Kid-Flash, Robin, Speedy, and Wonder Girl.) Although Wonder Girl was among the Teen Titans, Wonder Woman was not involved in the show."
+msgstr "Set in the lost city of Atlantis, Aquaman is the hero from the deep who protects the sea against any foes who threaten the peaceful undersea life. Aided by his ward Aqualad, Aquaman fights for justice on the ocean floor while keeping close contact with friends on dry land. On September 14, 1968 the Aquaman animated series was combined with Superman and Batman, along with brand new episodes starring the Justice League of America- Flash (Barry Allen), Hawkman (Carter Hall/Katar Hol), Green Lantern (Hal Jordan), and Atom (Ray Palmer), along with the Teen Titans (Aqualad, Kid-Flash, Robin, Speedy, and Wonder Girl.) Although Wonder Girl was among the Teen Titans, Wonder Woman was not involved in the show."
 
 msgctxt "#103620
-msgid ""
-msgstr ""
+msgid "From the co-creators of "Sealab 2021," this tale revolves around a super villain named Killface and his struggle to destroy the world -- but he finds that global destruction is hard work. While Killface unenthusiastically deals with his tasks, his nemesis, billionaire playboy Xander Crews, is on the case. Xander's superhero alias, Awesome X, puts on a good face to make sure his action figure line of toys stays in business."
+msgstr "From the co-creators of "Sealab 2021," this tale revolves around a super villain named Killface and his struggle to destroy the world -- but he finds that global destruction is hard work. While Killface unenthusiastically deals with his tasks, his nemesis, billionaire playboy Xander Crews, is on the case. Xander's superhero alias, Awesome X, puts on a good face to make sure his action figure line of toys stays in business."
 
 msgctxt "#103630
-msgid ""
-msgstr ""
+msgid "One-Punch Man (Japanese: ワンパンマン Hepburn: Wanpanman) is an ongoing Japanese superhero parody webcomic created by an author using the pseudonym One[4] which began publication in early 2009.[5] The series quickly went viral, surpassing 7.9 million hits in June 2012.[6] The Japanese shortened name Wanpanman is a play on the long-running children's character Anpanman,[7] wanpan being a contraction of wanpanchi ("one punch").[8] One-Punch Man tells the story of Saitama, an extremely overpowered superhero, who has grown bored by the absence of challenge in his fight against evil and seeks to find a worthy opponent."
+msgstr "וואן-פאנץ' מאן (ביפנית: ワンパンマン; באנגלית: One-Punch Man, "איש האגרוף האחד") הוא זיכיון יפני מצליח שנוצר תחילה כובקומיקס ומאוחר יותר התפתחה למאנגה מודפסת ולסידרת אנימה.הוובקומיקס המקורי נוצר על ידי אמן אלמוני, בעל שם העט "One" והועלה לרשת בתחילת 2009. הסדרה הפכה ויראלית במהירות ולכן בשנת 2012 נרכשו הזכויות כדי להפיקה מחדש כמאנגה מודפסת בידי חברת Viz Media. גירסת אנימה טלוויזיונית בהפקת החברה Madhouse עלתה לאוויר לראשונה בשנת 2015. האנימה זכתה לפופולריות רבה ולשבחי המבקרים, האנימה מדורגת כאחת מ-30 סדרות הטלוויזיה הטובות ביותר אי פעם על פי האתר IMDb."
 
 msgctxt "#103640
-msgid ""
-msgstr ""
+msgid "Super-spy Sterling Archer, aided by an inept entourage, takes on espionage and domestic crime."
+msgstr "Super-spy Sterling Archer, aided by an inept entourage, takes on espionage and domestic crime."
 
-msgctxt "msgi650
-msgid ""
-msgstr ""
+msgctxt "103650
+msgid "Watership Down is a fantasy adventure novel by English author Richard Adams, published by Rex Collings Ltd of London in 1972. Set in southern England, the story features a small group of rabbits. Although they live in their natural environment, they are anthropomorphised, possessing their own culture, language, proverbs, poetry, and mythology. Evoking epic themes, the novel follows the rabbits as they escape the destruction of their warren and seek a place to establish a new home, encountering perils and temptations along the way."
+msgstr "גבעת ווטרשיפ (באנגלית: "Watership Down") הוא ספרו הראשון והמפורסם ביותר של ריצ'רד אדמס. הספר ראה אור באנגליה ב-1972. הספר מבוסס על אוסף סיפורים אשר סיפר אדמס לבנותיו במהלך טיול לסטרטפורד על אייוון (כ-40 קילומטר מדרום לאוקספורד), ומאוחר יותר הפצירו בו להפוך אותם לספר.הספר זכה להצלחה רבה מיד לאחר פרסומו, תורגם לשפות רבות וזכה בפרסים שונים. ב-1978 יצא סרט מצויר בעקבות הספר, וב-1999 עובד הספר לסדרת טלוויזיה מצוירת."
 
 msgctxt "#103660
-msgid ""
-msgstr ""
+msgid "Honey, anyone? Winnie the Pooh, Piglet, Rabbit, Eeyore, Tigger, Kanga, Roo and Christopher Robin from the A.A. Milne children's books, along with a few new friends, enjoy a series of animated adventures in the Hundred Acre Wood, courtesy of Walt Disney Studios."
+msgstr "Honey, anyone? Winnie the Pooh, Piglet, Rabbit, Eeyore, Tigger, Kanga, Roo and Christopher Robin from the A.A. Milne children's books, along with a few new friends, enjoy a series of animated adventures in the Hundred Acre Wood, courtesy of Walt Disney Studios."
 
 msgctxt "#103670
 msgid ""
 msgstr ""
 
 msgctxt "#103680
-msgid ""
-msgstr ""
+msgid "The adventures of the Nekton family, a family of daring underwater explorers who live aboard a state-of-the-art submarine, The Aronnax, and explore uncharted areas of the earth's oceans to unravel the mysteries of the deep."
+msgstr "The adventures of the Nekton family, a family of daring underwater explorers who live aboard a state-of-the-art submarine, The Aronnax, and explore uncharted areas of the earth's oceans to unravel the mysteries of the deep."
 
 msgctxt "#103690
-msgid ""
-msgstr ""
+msgid "Saved from a plane crash and given supernatural powers, teen Tarzan joins forces with brave city girl Jane to protect his jungle home from threats."
+msgstr "Saved from a plane crash and given supernatural powers, teen Tarzan joins forces with brave city girl Jane to protect his jungle home from threats."
 
 msgctxt "#103700
-msgid ""
-msgstr ""
+msgid "Superman battles evil while trying to conceal his alter ego, Clark Kent."
+msgstr "Superman battles evil while trying to conceal his alter ego, Clark Kent."
 
 msgctxt "#103710
-msgid ""
-msgstr ""
+msgid "Six brave fourth-graders at Third Street School make it their mission to protect the other kids on the playground. Despite the rule of King Bob and his minions, who enforce his unwritten laws, T.J, Ashley, Vince, Gus, Gretchen and Mikey seek a rational balance between conformity and individuality."
+msgstr "Six brave fourth-graders at Third Street School make it their mission to protect the other kids on the playground. Despite the rule of King Bob and his minions, who enforce his unwritten laws, T.J, Ashley, Vince, Gus, Gretchen and Mikey seek a rational balance between conformity and individuality."
 
 msgctxt "#103720
-msgid ""
-msgstr ""
+msgid "Police Academy: The Series, also known as Police Academy: The Animated Series, is a 1988 American animated television series based on the Police Academy series of films. The show was produced by Ruby-Spears Productions for Warner Bros. Television. It aired weekdays and lasted two seasons for a total of 65 episodes."
+msgstr "Police Academy: The Series, also known as Police Academy: The Animated Series, is a 1988 American animated television series based on the Police Academy series of films. The show was produced by Ruby-Spears Productions for Warner Bros. Television. It aired weekdays and lasted two seasons for a total of 65 episodes."
 
 msgctxt "#103730
-msgid ""
-msgstr ""
+msgid "This computer-animated series follows the adventures of Po, the energetic Dragon Warrior panda first introduced in the popular "Kung Fu Panda" feature film. Po, aided by mentor Shifu and the Furious Five -- Tigress, Mantis, Crane, Monkey and Viper -- now lives at the Jade Palace with the rest of the Furious Five and takes on new responsibilities while facing new adversaries as he continues his Dragon Warrior education. Lucy Liu and James Hong reprise their big-screen roles of Viper and Mr. Ping, respectively."
+msgstr "ונג פו פנדה: אגדת המגניבות (באנגלית:Kung Fu Panda: Legends of Awesomeness) היא סדרת ספין-אוף של הסרט "קונג פו פנדה" ."
 
 msgctxt "#103740
-msgid ""
-msgstr ""
+msgid "Justice League is an American animated television series which ran from 2001 to 2004 on Cartoon Network. It is part of the DC animated universe. The show was produced by Warner Bros. Animation. It is based on the Justice League of America and associated comic book characters published by DC Comics. After the second season, the series was replaced by Justice League Unlimited, a successor series which aired for three seasons."
+msgstr "ליגת הצדק" היא סדרת אנימציה המבוססת על קבוצת גיבורי העל הנושאת את אותו שם בהוצאת חברת DC קומיקס. הסדרה כוללת את הגרסה הכי מפורסמת של הקבוצה. בישראל שודרה הסדרה בערוץ הילדים.בעקבות הצלחתן של סדרות האנימציה באטמן - הסדרה המצוירת וסופרמן - הסדרה המצוירת, החליטה חטיבת האנימציה של האחים וורנר להפיק בשנת 2001 סדרה מצוירת על ליגת הצדק. מושכות ההפקה הופקדו בידי ברוס טים, האחראי לסדרת האנימציה המצליחה והמהוללת של באטמן. הסדרה רצה בהצלחה כשתי עונות (52 פרקים) תחת השם "ליגת הצדק: סדרת האנימציה" ושלוש עונות נוספות (39 פרקים) תחת השם "ליגת הצדק ללא גבולות"."
 
 msgctxt "#103750
-msgid ""
-msgstr ""
+msgid "ohnny Test is an animated television series produced by Warner Bros. Animation and Coliseum Entertainment, for the first and second seasons, and Cookie Jar, for the remainder of the series. It premiered on Kids' WB, on September 17, 2005, which continued to air the series through its second and third seasons. The rest of the series aired on Cartoon Network, from its debut on January 7, 2008, in the United States and internationally.[1][2] In Canada, the series aired on Teletoon, premiering September 8, 2006."
+msgstr "ג'וני טסט (באנגלית: Johnny Test) היא סדרת אנימציה אמריקאית-קנדית, שמשודרת משנת 2005. העונות הראשונות היו באנגלית, העונה הרביעית דובבה לעברית ושודרה בערוץ ניקלודאון והחמישית והשישית דובבו לעברית בערוץ הילדים.עלילת הסדרה מתמקדת בג'וני טסט, ילד משועמם בן 11 שמחפש תמיד אחרי דברים מגניבים והרפתקאות. לג'וני כלב מדבר בשם דוקי ושתי אחיות מדעניות שעושות עליו ניסויים שונים שנגמרים תמיד באסונות."
 
 msgctxt "#103760
-msgid ""
-msgstr ""
+msgid "Villains beware because some of Marvel's strongest superheroes -- Hulk, She-Hulk, A-Bomb, Red Hulk and Skaar -- are banding together. The members of the group, Agents of S.M.A.S.H., are setting out to prove that they are not monsters but rather Hulk-sized heroes. The heroes live together, so in addition to tackling worldwide threats, such as trying to prevent another planet from crashing into Earth, they also must deal with normal family problems like trying to housebreak a pet -- although most families don't have a giant red T-Rex as a pet."
+msgstr "Villains beware because some of Marvel's strongest superheroes -- Hulk, She-Hulk, A-Bomb, Red Hulk and Skaar -- are banding together. The members of the group, Agents of S.M.A.S.H., are setting out to prove that they are not monsters but rather Hulk-sized heroes. The heroes live together, so in addition to tackling worldwide threats, such as trying to prevent another planet from crashing into Earth, they also must deal with normal family problems like trying to housebreak a pet -- although most families don't have a giant red T-Rex as a pet."
 
 msgctxt "#103770
-msgid ""
-msgstr ""
+msgid "This animated series that follows the adventures of popular DC Comics character Green Lantern features Earth's Green Lantern, Hal Jordan, and partner Kilowog as they find themselves alone on the edge of Guardian Frontier fighting off an invasion by the deadly Red Lantern Corps. The Red Lanterns, powered by pure rage, have sworn to destroy the Green Lantern Corps and everything it stands for. Hal, dispatched on an experimental spacecraft, is soon joined by a new group of heroes on a mission to protect Guardian Frontier -- and the Green Lantern Corps itself."
+msgstr "This animated series that follows the adventures of popular DC Comics character Green Lantern features Earth's Green Lantern, Hal Jordan, and partner Kilowog as they find themselves alone on the edge of Guardian Frontier fighting off an invasion by the deadly Red Lantern Corps. The Red Lanterns, powered by pure rage, have sworn to destroy the Green Lantern Corps and everything it stands for. Hal, dispatched on an experimental spacecraft, is soon joined by a new group of heroes on a mission to protect Guardian Frontier -- and the Green Lantern Corps itself."
 
 msgctxt "#103780
-msgid ""
-msgstr ""
+msgid "Guardians of the Galaxy is an American animated television series. It is based on the Marvel Comics superhero team of the same name. It is produced by Marvel Television and Marvel Animation. The series airs on Disney XD. It premiered on September 26, 2015, as a part of the Marvel Universe block.While the series features the same main characters as the homonymous film,[2] director and writer James Gunn has stated that it is not a part of the Marvel Cinematic Universe nor connected to the film."
+msgstr "שומרי הגלקסיה (באנגלית: Guardians of the Galaxy) היא סדרת אנימציה מבית מארוול המשודרת בערוץ דיסני XD החל מה-1 באוגוסט 2015. הסדרה היא ספין-אוף טלוויזיוני לסרט שומרי הגלקסיה, אשר ממשיכה את עלילותיו. המדבבים במקור הם: ויל פרידל, טרוור דוול, ונסה מרשל, קווין מייקל ריצ'רדסון ודייוויד סובולוב. בערוץ דיסני ישראל, הסדרה עלתה ב-7 בפברואר 2016.לסדרה יש עונת קצרים הנקראת גם מקורות, אשר מספרת את סיפור מקורותם של סטאר-לורד, גאמורה, רוקט ראקון, דראקס וגרוט, עוד לפני שהתאחדו יחדם כשומרי הגלקסיה, ושודרה בארצות הברית החל מה-1 באוגוסט 2015 עד ה-29 באוגוסט 2015 ובישראל החל מה-7 בפברואר 2016 עד ה-18 בפברואר 2016."
 
 msgctxt "#103790
-msgid ""
-msgstr ""
+msgid "Meet Danny, inventor of the Time Machine Lunch Box. During its maiden voyage, the lunch box was hurled way into the future, where future scientists discovered a simple worm that they put through their genetic escalator, increasing the worm's intellectual capacity and need for adventure. This worm became FUTURE-WORM. Now he's returned to make sure Danny never has a boring day. One boy. One worm. Together. Into the past, present, and future. ...These are their adventures."
+msgstr "Meet Danny, inventor of the Time Machine Lunch Box. During its maiden voyage, the lunch box was hurled way into the future, where future scientists discovered a simple worm that they put through their genetic escalator, increasing the worm's intellectual capacity and need for adventure. This worm became FUTURE-WORM. Now he's returned to make sure Danny never has a boring day. One boy. One worm. Together. Into the past, present, and future. ...These are their adventures."
 
 msgctxt "#103800
-msgid ""
-msgstr ""
+msgid "The fertile imagination of Jim Henson spawned this colorful puppet program that was not only an international hit during the 1980s, but remains a much-loved favorite of viewers to this day. This series for both the young and young at heart follows the adventures of the Fraggles, a race of short, furry creatures living a carefree existence in a complex network of magical caves. When they're not filling their time playing games, singing songs or dancing their cares away, Gobo, Mokey, Red, Wembley and Boober Fraggle seek the sage advice of Marjory the Trash Heap, nosh on the confectionary constructions of the industrious Doozers, and attempt to stay clear of the giant beings known as Gorgs."
+msgstr "פראגל רוק (באנגלית: Fraggle Rock או Jim Henson's Fraggle Rock) היא תוכנית טלוויזיה בכיכובן של בובות, אשר נוצרה על ידי ג'ים הנסון. הדמויות המרכזיות היו קבוצה של יצורים הנקראים פראגולים (ביחיד: פראגל). התוכנית עלתה לאוויר ב-10 בינואר 1983, ושודרה עד ל-30 במרץ 1987. התוכנית שודרה בארצות הברית ברשת HBO, ובמקביל שודרה גם בבריטניה, קנדה וניו זילנד. בישראל הסדרה שודרה בערוץ 2 הניסיוני ובערוץ המזרח התיכון בשנות השמונים ובתחילת שנות התשעים. ב-2012, בערוץ ג'וניור שודרו 15 הפרקים הראשונים בדיבוב לעברית תחת השם "הפרוגלים". החל מ-16 ביולי 2017, ישודרו כל 96 הפרקים בדיבוב לעברית בטלוויזיה החינוכית.התוכנית הפכה ללהיט ברחבי העולם, כמו תוכניות דומות קודמות של הנסון כגון החבובות ורחוב סומסום."
 
 msgctxt "#103810
-msgid ""
-msgstr ""
+msgid "Disney's Hercules: The Animated Series is an American animated television series based on the 1997 film of the same name and the Greek myth. The television series served as the pilot direct-to-video episode Hercules: Zero to Hero. The series premiered in syndication on August 31, 1998, and on Disney's One Saturday Morning on September 12, 1998. The syndicated series ran 52 episodes, while the Saturday morning run ran 13.[1]The series follows Hercules, as a teenager, training as a hero, as well as trying to adjust to life. With his free-spirited friend Icarus, his future-seeing friend Cassandra, and his teacher Philoctetes ("Phil"), he battles his evil uncle Hades. Like all teenagers though, Hercules has to worry about peer pressure when the snobbish prince Adonis ridicules him. The series notably contradicts several events in the original film."
+msgstr "הרקולס (אנגלית: Disney's Hercules: The Animated Series) היא סדרת טלוויזיה מבית היוצר של חברת וולט דיסני שהופקה בשנת 1998. הסדרה מבוססת על סרט בשם זהה שהפיקו אולפני דיסני. לסדרה הופקה עונה אחת בלבד ובה 65 פרקים, הקשר של תוכן הסדרה למיתולוגיה היוונית קלוש מאד.עלילת הסדרה מתחרחשת לפני שהרקולס פגש את מגארה, כאשר הרקולס היה מתאמן אצל פילוקטטס על מנת להפוך לגיבור. בהשוואה לסרט עלילת הסדרה מתרחשת במהלך השיר של פילוקטטס "התקווה האחרונה". רק הפרק "הרקולס והשנתון" מתרחש לאחר אירועי הסרט, כאשר הרקולס ומגארה כבר נשואים. עלילת הסדרה מתמקדת בהרקולס בזמן שהוא למד באקדמיית פרומתאוס יחד עם חבריו איקרוס וקסנדרה."
 
 msgctxt "#103820
-msgid ""
-msgstr ""
+msgid "Count Duckula is a British animated comedy-drama dark fantasy television series created by British studio Cosgrove Hall Films and produced by Thames Television as a spin-off from Danger Mouse, a series in which the Count Duckula character was a recurring villain. Count Duckula aired from 6 September 1988 to 16 February 1993 across four series; in all, 65 episodes were made, each about 22 minutes long. All have been released on DVD in the UK, while only the first series has been released in North America."
+msgstr "הרוזן דאקולה (אנגלית: Count Duckula) היא סדרת אנימציה בריטית בת 65 פרקים שהופקה לטלוויזיה בין השנים 1988 ל-1993. הסדרה שודרה במקור בערוץ ITV בבריטניה ובישראל היא שודרה בערוץ הראשון בסוף שנות השמונים ובתחילת שנות התשעים. היא מאותה יוצרים של הסדרה הפופולרית דיינג'רמאוס. רוזן דאקולה הופיע לראשונה בתור אחד נבלים בסדרה "דיינג'רמאוס", לאחר מכן המפיקים החליטו להחזיר את דמותו ולעשות סדרה משלו שגם הפכה להצלחה. הסדרה היא פרודיה על הרוזן דרקולה וסרטי אימה.הסדרה מספרת את עלילותיו של דמות בדיונית בשם הרוזן דאקולה שהוא ערפד ברווז צמחוני שמתגורר בטרנסלווניה ביחד עם איגור המשרת הקפדן ונני מטפלת עוזרת הבית הטיפשה של דאקולה."
 
 msgctxt "#103830
-msgid ""
-msgstr ""
+msgid "Chip and Dale, two chipmunks with a nose for trouble, start a detective agency, Rescue Rangers, along with their new friends Gadget, Monterey Jack, and Zipper. The pint-sized detectives deal with crimes that are often "too small" for the police to handle, usually with other animals as their clients. The gang frequently finds itself going up against two particular arch villains: Mafia-style tabby cat Fat Cat and mad scientist Norton Nimnul (both voiced by Jim Cummings)."
+msgstr "יחידת ההצלה של צ'יפ ודייל (אנגלית: Chip 'n Dale Rescue Rangers) היא סדרת אנימציה בת 65 פרקים שהופקה על ידי חברת וולט דיסני לטלוויזיה בין השנים 1989–1990. הסדרה שודרה ב"זמן דיסני" בעשור הראשון של המאה ה-21. בסדרה כיכבו צמד דמויות הסנאים הוותיקות של דיסני צ'יפ ודייל, ביחד עם שלוש דמויות חדשות, בתור בלשים."
 
 msgctxt "#103840
-msgid ""
-msgstr ""
+msgid "This animated series, based on the popular "Toy Story" movies, features Buzz Lightyear's adventures as he patrols the galaxy with other space rangers working for Star Command, battling intergalactic crime boss Emperor Zurg and other evildoers. His team of cadets includes Booster Sinclair, Princess Mira and XR, the teammate with all the cool gadgets. Unlike in the movies, Patrick Warburton provides the voice of Buzz in this series. Other featured voices include Nicole Sullivan, Adam Carolla and Wayne Knight."
+msgstr "This animated series, based on the popular "Toy Story" movies, features Buzz Lightyear's adventures as he patrols the galaxy with other space rangers working for Star Command, battling intergalactic crime boss Emperor Zurg and other evildoers. His team of cadets includes Booster Sinclair, Princess Mira and XR, the teammate with all the cool gadgets. Unlike in the movies, Patrick Warburton provides the voice of Buzz in this series. Other featured voices include Nicole Sullivan, Adam Carolla and Wayne Knight."
 
 msgctxt "#103850
-msgid ""
-msgstr ""
+msgid "Bugs Bunny is an animated cartoon character; created in 1940 by Leon Schlesinger Productions (later Warner Bros. Cartoons) and voiced originally by Mel Blanc.[2] Bugs is best known for his starring roles in the Looney Tunes and Merrie Melodies series of animated short films, produced by Warner Bros. Due to his popularity during the golden age of American animation, he became an American cultural icon and the official mascot of Warner Bros. Entertainment."
+msgstr "באגס באני (באנגלית: Bugs Bunny) הוא ארנב מונפש המופיע בסדרות הסרטים המצוירים "לוני טונס" ו"מרי מלודיס" בהפקת האחים וורנר. אחת הדמויות המוכרות ביותר בעולם.הדמות של באגס באני התפתחה בהדרגתיות בעבודה משותפת של שישה יוצרים: בוב קְלאמְפֶּט, צ'אק ג'ונס, פריץ פרילינג, ארתור דייוויס, טֶקְס אֶיְוֶרי ורוברט מקימסון, בברוקלין, ניו יורק עבור חברת "ליאון שלזינגר פרודוקשנס" שהכינה סרטים מצוירים עבור האחים וורנר[1]. בשנת 1940 היא הופיעה "A Wild Hare" עם רוב המאפיינים הנוכחיים שלה, בהם האימרה: "What's up, Doc?" (בעברית: "מה קורה, דוק?")."
 
 msgctxt "#103860
-msgid ""
-msgstr ""
+msgid "Bratz is an American product line of fashion dolls and merchandise manufactured by MGA Entertainment.[1] Four original 10-inch dolls were released in 2001 —– Yasmin, Cloe, Jade, and Sasha, and in 2015, a fifth girl Raya, was added as the fifth official Bratz. They featured almond-shaped eyes adorned with eyeshadow, and lush, glossy lips.[1] Bratz reached great success and the original line of dolls was expanded with a number of spin-offs like Bratz Kidz and Bratz Babyz, as well as media featuring the Bratz characters, including a web series, movie, TV series, music albums, and video games. In 2005, global sales were two billion dollars, and by 2006, Bratz had about forty percent of the fashion-doll market."
+msgstr "בראץ (Bratz) היא סדרה פופולרית של בובות בצורת נערות מתבגרות, שלהן קו ביגוד ואביזרים נלווים רבים, שיוצר על ידי חברת MGA מדרום קליפורניה. ארבע הבובות המקוריות, שגודלן כ-25 סנטימטרים, ושמן "קלואי", "ג'ייד", "סאשה" ו"יסמין" ייצגו נערות מתבגרות בעלות ראשים גדולים בצורה לא פרופורציונלית לגופן, עיניים בצורת שקד, איפור בולט, ושפתיים עבות וחושניות. לבובות אלו נוספו לאחר מכן בובות רבות נוספות, ואביזרים רבים. יש גם בנים בסדרה בראץ ."
 
 msgctxt "#103870
-msgid ""
-msgstr ""
+msgid "Ben Tennyson, a 10-year-old boy, discovers a magical device that can turn him into 10 different alien heroes, each with its own unique abilities. With this newfound power, Ben, Grandpa Max and cousin Gwen help others and stop evildoers - but that doesn't mean he doesn't cause some superpowered kid mischief once and a while."
+msgstr "Ben Tennyson, a 10-year-old boy, discovers a magical device that can turn him into 10 different alien heroes, each with its own unique abilities. With this newfound power, Ben, Grandpa Max and cousin Gwen help others and stop evildoers - but that doesn't mean he doesn't cause some superpowered kid mischief once and a while."
 
 msgctxt "#103880
-msgid ""
-msgstr ""
+msgid "This animated series conveys the dark mood of the original "Batman" comic books. Unlike the light action "Batman" show of the 1960s, Gotham City's Caped Crusader, Bruce Wayne, is sometimes moody. And Robin's alter ego, Dick Grayson, has a more-mature personality than in the original series."
+msgstr "באטמן - הסדרה המצוירת (באנגלית: Batman: The Animated Series, בעברית נקראה "באטמן, איש העטלף") היא סדרת אנימציה מבית היוצר של האחים וורנר המבוססת על דמותו של באטמן, גיבור העל של חברת DC קומיקס. הסדרה זכתה בארבעה פרסי אמי והייתה מועמדת לשישה נוספים, והיא קיבלה שבחים רבים מהמבקרים וממעריצי הדמות על עצם היותה העיבוד המודרני הנאמן ביותר לדמות, תוך שימוש במורכבות עלילתית, אווירה אפלה ואיכות אמנותית[1]. זאת ועוד, היא נחשבת בעיניהם לייצוג הקנוני, המדויק והאמין ביותר של באטמן ואגדת העטלף מחוץ לקומיקס וכן הפכה בעיני רבים לסדרת הגיבורי-על הטובה ביותר ואחת מסדרות האנימציה הטובות ביותר בכל הזמנים."
 
 msgctxt "#103890
-msgid ""
-msgstr ""
+msgid "Iron Man, Hulk, Captain America and newcomer Falcon are members of the Avengers featured in this animated series. Iron Man leads the team, as the heroes live and train in their new headquarters in Avengers Tower. When the team assembles, no villain stands a chance, as the Avengers work together to counter evildoers. Whether they're stopping Dr. Doom from conquering Asgard or preventing Dracula from unleashing vampire hordes, the Avengers do whatever it takes to succeed and make sure that good prevails."
+msgstr "Iron Man, Hulk, Captain America and newcomer Falcon are members of the Avengers featured in this animated series. Iron Man leads the team, as the heroes live and train in their new headquarters in Avengers Tower. When the team assembles, no villain stands a chance, as the Avengers work together to counter evildoers. Whether they're stopping Dr. Doom from conquering Asgard or preventing Dracula from unleashing vampire hordes, the Avengers do whatever it takes to succeed and make sure that good prevails."
 
 msgctxt "#103900
-msgid ""
-msgstr ""
+msgid "Forced to leave their home in Farthing Wood, animals search for a new place to live."
+msgstr "Forced to leave their home in Farthing Wood, animals search for a new place to live."
 
 msgctxt "#103910
-msgid ""
-msgstr ""
+msgid "Red and his fearless avian friends must protect their eggs from the Bad Piggies."
+msgstr "Red and his fearless avian friends must protect their eggs from the Bad Piggies."
 
 msgctxt "#103920
-msgid ""
-msgstr ""
+msgid "Andy Pandy and his friends Looby Loo and Teddy have endless fun in their candy-colored world."
+msgstr "Andy Pandy and his friends Looby Loo and Teddy have endless fun in their candy-colored world."
 
 msgctxt "#103930
-msgid ""
-msgstr ""
+msgid "A TV series based on the animated and live-action movies of the same name, "101 Dalmatians: The Series" follows the adventures of the numerous puppies. Three puppies in particular -- Lucky, Rolly and Cadpig -- are the main focus of the show along with their friend Spot, a chicken who wants to be a dog."
+msgstr "A TV series based on the animated and live-action movies of the same name, "101 Dalmatians: The Series" follows the adventures of the numerous puppies. Three puppies in particular -- Lucky, Rolly and Cadpig -- are the main focus of the show along with their friend Spot, a chicken who wants to be a dog."
 
 msgctxt "#103940
-msgid ""
-msgstr ""
+msgid "Three friends transform into superheroes at night when they put on their pajamas. During the school day a problem arises, and during the night the culprit is found by the PJ Masks and the problem gets solved by sharing ideas, recognizing strengths and weaknesses, and the ability of working together to get the problem solved. Everything is made right for the children the next day thanks to the PJ Masks. Because bedtime is the right time to fight crime."
+msgstr "כוח פיג'יי הינה סדרת אנימציה ממוחשבת בריטית-צרפתית לילדים, אשר משודרת בישראל בערוץ דיסני ג'וניור.[CR]העלילה עוסקת על ילדים ביום שהופכים לגיבורי על חיות בלילה כדי להילחם בילדים הפושעים שעושים פשעים גם ביום. הילדים משתמשים בשיתוף פעולה של כל הצוות על מנת לפתור בעיות, ולהלחם כנגד אויביהם השונים."
 
 msgctxt "#103950
-msgid ""
-msgstr ""
+msgid "Robin Hood and his young cohorts find mischief in Sherwood Forest as they take on Prince John and ultimately try to save the day with a combination of comedy, magic and friendship. The series features new heroes and iconic characters from the Robin Hood franchise, including Maid Marian, charming Little John, grumpy Tuck, and Robin's funny cousin Scarlett. With Richard the Lionheart away at war, it's up to Robin and his adventurous pals to keep the peace without ever missing an opportunity to have fun."
+msgstr "Robin Hood and his young cohorts find mischief in Sherwood Forest as they take on Prince John and ultimately try to save the day with a combination of comedy, magic and friendship. The series features new heroes and iconic characters from the Robin Hood franchise, including Maid Marian, charming Little John, grumpy Tuck, and Robin's funny cousin Scarlett. With Richard the Lionheart away at war, it's up to Robin and his adventurous pals to keep the peace without ever missing an opportunity to have fun."
 
 msgctxt "#103960
-msgid ""
-msgstr ""
+msgid "The Mystery Inc. gang, as junior-high-aged teens and Scooby as a puppy, works together to solve supernatural mysteries, chase villains and dance to rock 'n' roll songs. Shaggy, Freddy, Daphne, Velma and Scooby-Doo get into all sorts of funny situations and, spoiler alert, the monsters all turn out to be bad guys in costumes."
+msgstr "The Mystery Inc. gang, as junior-high-aged teens and Scooby as a puppy, works together to solve supernatural mysteries, chase villains and dance to rock 'n' roll songs. Shaggy, Freddy, Daphne, Velma and Scooby-Doo get into all sorts of funny situations and, spoiler alert, the monsters all turn out to be bad guys in costumes."
 
 msgctxt "#103970
-msgid ""
-msgstr ""
+msgid "Dinosaurs is an American family sitcom comedy television series that was originally broadcast on ABC from April 26, 1991 to July 20, 1994. The show, about a family of anthropomorphic dinosaurs (portrayed by puppets), was produced by Michael Jacobs Productions and Jim Henson Productions in association with Walt Disney Television and distributed by Buena Vista International, Inc..[3][4] The characters were designed by Henson team member Kirk Thatcher."
+msgstr "דינוזאורים (באנגלית: "Dinosaurs") היא קומדיית מצבים אמריקנית ששודרה בשנים 1991–1994 ברשת ABC. בסה"כ הופקו ושודרו 65 פרקים ב-4 עונות.בישראל הסדרה שודרה בערוץ 2 במהלך אמצע שנות ה-90.עלילת הסדרה, אשר מתרחשת בשנת 60,000,003 לפני הספירה בפנגיאה, התמקדה בחייהם של בני משפחת סינקלייר, משפחת דינוזאורים מואנשת בעידן הפרהיסטורי - האב ארל, האם פראן, הבן הגדול והמרדן רובי, הבת הטיפשה והחומרנית שרלין והתינוק בייבי. בביתם מתגוררת גם אמה של פראן, אתיל. הסדרה מציגה באור הומוריסטי סטריאוטיפים על התרבות, החברה והטלוויזיה האמריקנית."
 
 msgctxt "#103980
-msgid ""
-msgstr ""
+msgid "Danger Mouse is a British animated television series, and it serves as a reboot of the 1981 series with the same name. The series is produced by FremantleMedia with animation by Irish Boulder Media. Danger Mouse premiered on CBBC on 28 September 2015.[1]The series revolves around Danger Mouse, the "world's greatest secret agent", and his hamster sidekick Penfold, who protect the world from a variety of dangers. With help from his boss Colonel K and the genius scientist Professor Squawkencluck, Danger Mouse is equipped to defeat his nemesis, Baron von Greenback. Within three weeks of the series running, Danger Mouse achieved 2.4 million viewers and became among the highest rated shows on CBBC."
+msgstr "סוכן חשאי: עכבר (באנגלית: Danger Mouse) היא סדרת אנימציה בריטית המהווה ריבוט לסדרה דיינג'ר מאוס מ-1981. הסדרה משודרת ב-CBBC החל מה-28 בספטמבר 2015 ובישראל תעלה ב-16 ביולי 2017 בערוץ דיסני ישראל.לאחר שלושה שבועות מבכורת הסדרה, הסדרה צברה כ-2.4 מיליון צפיות והפכה לאחת מהסדרות הנצפות ביותר ב-CBBC.[CR]ב-19 במאי 2016 הסדרה חודשה לעונה שנייה, וב-7 באפריל 2017 לעונה שלישית עם 26 פרקים."
 
 msgctxt "#103990
-msgid ""
-msgstr ""
+msgid "Charlie and Lola are fictional children created by the English writer and illustrator Lauren Child in 2000. They were introduced in a series of picture books and later adapted as animated television characters. Lola is an energetic, imaginative little girl; Charlie is a patient and kind older brother who is always willing to help his little sister Lola learn and grow."
+msgstr "Charlie and Lola are fictional children created by the English writer and illustrator Lauren Child in 2000. They were introduced in a series of picture books and later adapted as animated television characters. Lola is an energetic, imaginative little girl; Charlie is a patient and kind older brother who is always willing to help his little sister Lola learn and grow."
 
 #
 msgctxt "#104000
-msgid ""
-msgstr ""
+msgid "Bananas in Pyjamas. Bananas in Pyjamas is an Australian children's television show that premiered on 20 July 1992 on ABC. It has since become syndicated in many different countries, and dubbed into other languages. In the United States, the "Pyjamas" in the title was modified to reflect the American spelling pajamas."
+msgstr "בננות בפיג'מות (באנגלית: Bananas in Pyjamas) היא תוכנית טלוויזיה חינוכית לילדים בגילאי הגן ובית הספר היסודי בת 299 פרקים אשר עלתה במקור לשידור ברשת ABC האוסטרלית בשנת 1992. מאז הסדרה שודרה במדינות רבות ברחבי העולם בדיבוב לשפות שונות. בישראל הסדרה שודרה בדיבוב לעברית בטלוויזיה החינוכית בין השנים 1994- 2000, ובשנת 2012 יצאה בערוץ הופ עונה נוספת שהיא כולה באנימצייה ממוחשבת בתלת מימד . ב-2016 יצאו כמה מפרקי הסדרה ל-HOT V.O.D בשפת המקור ובליווי כתוביות תרגום בעברית.[CR]דמויות הסדרה נוצרו במקור בהשראת שיר ילדים בריטי משנת 1967 אשר נכתב על ידי המלחין הבריטי קארי בלייטון. השיר מתאר בננות בפיג'מות אשר רודפות אחר דובי צעצוע."
 
 msgctxt "#104010
 msgid ""
@@ -4645,7 +4645,7 @@ msgid "Animaniacs is an American animated television series, distributed by Warn
 msgstr "אנימניאקס (באנגלית: Animaniacs) היא סדרת אנימציה בת 99 פרקים שהופקה על ידי אולפני האחים וורנר בשיתוף עם סטיבן ספילברג לטלוויזיה מ-1993 עד 1998."
 
 msgctxt "#104050
-msgid ""
+msgid "They are mutants, genetically gifted human beings - the world's newest and most persecuted minority group. Amidst an increasing climate of fear and bigotry, one enlightened individual, Professor Charles Xavier, has created a safe haven for some of these powerful outcasts. The mutants here are taught to harness their unique abilities for the betterment of the human race. They fight against hostile Government agencies and mutant supremacist Magneto, and his factions, which seek to destroy the human race."
 msgstr "סדרה מצוירת על חבורת גיבורי על מוטנטיים נלחמים למען הצדק והאמונה של בני האדם."
 
 msgctxt "#104060
@@ -4661,7 +4661,7 @@ msgid ""
 msgstr "באג בראש (באנגלית: "Bug Alert") היא תוכנית בובות מדובבת ששודרה בטלוויזיה החינוכית. מטרת התוכנית היא להביא מסר לצופים שעלינו לשמור על עולמנו."
 
 msgctxt "#104090
-msgid "The Littl' Bits (森の陽気な小人たち ベルフィーとリルビット Mori no Yōki na Kobitotachi: Berufi to Rirubitto?, "Cheerful Dwarves of the Forest: Belfy and Lillabit") is a Japanese anime television series with 26 episodes, produced in 1980 by Tatsunoko Productions in Japan."
+msgid "The series describes the adventures of a race of tiny people (pixies) who live in a simple village in Foothill Forest. It focuses in particular on a group of children: Lillibit, Willibit, Snagglebit, Chip, and Browniebit. Snagglebit, the spoiled son of the mayor, is enamored of the beautiful Lillibit, but she's best friends with Willibit, the moral role model and main protagonist. Thus, even though they generally get along well, Willibit and Snagglebit often butt heads, especially over Lillibit. Snagglebit usually pals around with the short-in-stature Browniebit, who is something of a coward (and is often teased by Snagglebit for this), and Chip, who idolizes Lillibit's uncle, Dr. Snoozabit, and wants to be a doctor like him. Another frequently recurring child character is Teenybit (Willibit's younger sister), who befriends Scarybit, an ill-tempered, superstitious old woman assumed to"
 msgstr "בארץ הקטקטים (ביפנית: 森の陽気な小人たちベルフィーとリルビット, באנגלית: The Littl’ Bits)‏ היא סדרת אנימה יפנית בת 26 פרקים שהופקה לטלוויזיה ב-1980. בישראל שודרה הסדרה לראשונה בטלוויזיה החינוכית באמצע שנות השמונים."
 
 msgctxt "#104100
@@ -4673,19 +4673,19 @@ msgid "Bouli is an animated television series originally produced in France betw
 msgstr "בולי איש השלג (צרפתית: Bouli) היא סדרת אנימציה צרפתית שהופקה לטלוויזיה בשנים 1989-1991, לערוץ השני הצרפתי."
 
 msgctxt "#104120
-msgid "Mermaid Melody Pichi Pichi Pitch (マーメイドメロディーぴちぴちピッチ Māmeido Merodī Pichi Pichi Pitchi?) is a shōjo manga and anime series created by Michiko Yokote, with artwork by Pink Hanamori."
+msgid "Welcome to the Mermaid Melody: Pichi Pichi Pitch guide at TV Tome. Story After saving a nearly drowned boy, Mermaid Princess Lucia of the North Pacific Ocean Kingdom leaves her magic pearl in his custody. Seven years later she takes on human form and with the help of her guardian penguin, Hippo attempts to find that boy and reclaim her magic pearl. When she first meets up with the boy, Kaito she thinks he is rude, but when he is threatened by the undersea villains she reclaims her pearl and transforms into Pink Pearl Voice and defeats the villain by singing at her. After the fight Lucia (in her mermaid form) holds Kaito in her arms like she did 7 years ago, and from there realized the feelings she has for him. But unfortunately for her, mermaids or not allowed to love humans. In order to stop the coming evil Lucia must revive the Aqua Goddess Regina. In order for this to be done she mu"
 msgstr "בנות הים פיצ'י פיצ'י פיץ' (ביפנית: ぴちぴちピッチ [פיטי-פיטי-פיטי]; באנגלית: Mermaid Melody Pichi Pichi Pitch) היא סדרת מאנגה יפנית המופנית לנערות צעירות של פינק האנאמורי."
 
 msgctxt "#104130
-msgid ""
+msgid "This fresh take on a beloved cartoon character remembers the 1960's series for audiences of today. George of the Jungle is about the adventures of a clutzy but loveable jungle hero named George and his interactions with his friends Ape, Ursula and Magnolia."
 msgstr "עלילותיו של ג'ורג' - מלך הג'ונגל הידידותי והלא חכם במיוחד המגן על בעלי החיים ועל חבריו האנושיים בחיי היומיום"
 
 msgctxt "#104140
-msgid "Mrs. Pepper Pot,[1] known in Japanese as Spoon Oba-san (スプーンおばさん Supūn Obasan?, lit. "Aunt Spoon"), is a Japanese anime television series, based on the novel Mrs. Pepperpot by the Norwegian author Alf Prøysen."
+msgid "Mrs. Pepper Pot always wears a golden spoon around her neck. She lives with her husband, a painter, in a small village. Mrs. Pepper Pot, a cheerful, innocent, and hard working grannie, is beloved by the entire village. In fact, Mrs. Pepper Pot is quite a unique person. Nobody knows it, but she can quickly shrink her body as small as the spoon around her neck! It sounds like a big problem, yet she does not care much. When she becomes small, she can communicate with animals and enjoy wonderful adventures in the woods. Besides, she always changes back to her original size after a certain amount of time. So, why would she care? This is an amusing and extraordinary adventure of Mrs. Pepper Pot."
 msgstr "גברת פלפלת (ביפנית: スプーンおばさん, מילולית: "הגברת עם הכפית", באנגלית: Little Mrs. Pepperpot)‏ היא סדרת אנימה יפנית המבוססת על הספרים של המחבר והמלחין הנורווגי, אלף פרויסאן."
 
 msgctxt "#104150
-msgid "Doraemon (Japanese: ドラえもん) is a Japanese manga series written and illustrated by the manga writing team Fujiko Fujio."
+msgid "Nobita Nobi is so hapless that his 22nd century decendants are still impoverished as a result of his 20th century bumbling. In a bid to raise their social status, their servant, a robotic cat named Doraemon, decides to travel back in time and guide Nobita on the proper path to fortune. Unfortunately Doraemon, a dysfunctional robot that the familly acquired by accident (but chose to keep nonetheless), isn't much better off than Nobita. The robot leads Nobita on many adventures, and while Nobita's life certainly is more exciting with the robot cat from the future, it is questionable if it is in fact better in the way that Doraemon planned. Doraemon is one of the longest running TV series in Japan, while Sazae-san has been running longer, there are more episodes of Doraemon. While the original 1973 series was not very well received and fizzled after only 27 episodes, the 1979 series still r"
 msgstr "דורימון (ביפנית: ドラえもん, באנגלית: Doraemon) היא סדרת אנימה יפנית שבה למעלה מ-1500 פרקים ו-30 סרטים שהופקה לטלוויזיה החל משנת 1979 ועד היום ונחשבת לסדרת האנימה השנייה הארוכה ביותר בכל הזמנים, מיד לאחר הסדרה סאזאה (SAZAE) שלא יצאה מגבולות יפן."
 
 msgctxt "#104160
@@ -4693,7 +4693,7 @@ msgid "Digimon (デジモン Dejimon, branded as Digimon: Digital Monsters, styl
 msgstr "דיג'ימון (ביפנית: デジモン, באנגלית: Digimon) היא סדרת אנימה יפנית פופולרית ששודרה לאורך 7 עונות. השם "דיג'ימון" מורכב משתי מילים: "דיג'י" (קיצור של המילה האנגלית "דיג'יטל", כלומר, דיגיטלי) ו"מון" (קיצור של "מונסטר", מפלצת) ומשמעותו "מפלצת דיגיטלית" או "מפלצות דיגיטליות"."
 
 msgctxt "#104170
-msgid "Dennis the Menace is an American animated series produced by DIC Entertainment (now owned by DHX Media) (with season 2 co-produced by Crawleys Animation), based on the comic strip by Hank Ketcham."
+msgid "Based on Hank Ketcham's popular comic-strip, Dennis the Menace became a staple in countless households throughout the mid-80s. With the help of his precocious pals and his shaggy dog Ruff, Dennis uses his curiosity and imagination to keep his pleasant Midwestern neighborhood in a constant state of confusion and chaos."
 msgstr "דני שובבני (באנגלית: Dennis the Menace) היא סדרת אנימציה קומית לילדים בת 78 פרקים שהופקה לטלוויזיה בין 1986 ל-1988 בשיתוף פעולה אמריקאי-יפני-צרפתי, ואף עובדה מאוחר יותר לסרט."
 
 msgctxt "#104180
@@ -4701,31 +4701,31 @@ msgid "Wisdom of the Gnomes (Spanish: La llamada de los gnomos) is an animated s
 msgstr "דן-דין השופט (בספרדית: Llamada de los Gnomos) היא סדרת אנימציה ספרדית בת 26 פרקים שהופקה לטלוויזיה ב-1987."
 
 msgctxt "#104190
-msgid "Maya the Bee (German: Die Biene Maja) is the main character in The Adventures of Maya the Bee, a German book, comic book series and animated television series, first written by Waldemar Bonsels and published in 1912."
+msgid "Bonsels' original book contains fewer than 200 pages. The storyline is centered on the relation of Maya and her many adventures. Maya is a bee born in a bee hive during internal unrest: the hive is dividing itself into two new colonies. Maya is raised by her teacher, Mrs. Cassandra. Despite Mrs. Cassandra's warnings, Maya wants to explore the wide world and commits the unforgivable crime of leaving the hive. During her adventures, Maya, now in exile, befriends other insects and braves dangers with them. In the climax of the book, Maya is taken prisoner by hornets, the bees' sworn enemies. Prisoner of the hornets, Maya learns of a hornet plan to attack her native hive. Maya is faced with the decision to either return to hive and suffer her due punishment, saving the hive, or leaving the plan unannounced, saving herself but destroying the hive. As may be expected, Maya, after severe"
 msgstr "הדבורה מאיה (בגרמנית: Biene Maja, או "Die Biene Maja und ihre Abenteuer") הוא ספר לילדים שפרסם הסופר הגרמני ולדמאר בונזלס (Waldemar Bonsels) בשנת 1912."
 
 msgctxt "#104200
-msgid ""
+msgid "The series follows the adventures of three adolescent kids: Cassy, a third-year junior witch, Gus, a half-elf second-year junior wizard, and Verne, a logical kid who can't grasp the idea of magic. The three heroes must go through underground caverns filled with dangerous creatures in order to find the world's missing magic, of course they have a little help from thier book, friend and loyal magical companion U.B.O.S."
 msgstr "הסדרה מגוללת את סיפורם של שלושה ילדים שהולכים ללמוד בפנימיה לקוסמים, שם הם מקבלים לידיהם את הובוס, ספר הקסמים הגדול, אשר לוקח אותם למעמקי האדמה ומסביר להם שעליהם להילחם בזרלק, קוסם עליון שנכלא במעמקי האדמה על-ידי מועצת הקוסמים."
 
 msgctxt "#104210
 msgid ""
-msgstr "היה היה, היא סדרת אנימציה צרפתית לילדים.[CR]התוכנית באה ללמד חומר חינוכי על ידי העברתו בהומור."
+msgstr ""
 
 msgctxt "#104220
 msgid ""
 msgstr "הדרדסים (בצרפתית: Les Schtroumpfs; באנגלית: The Smurfs) הם דמויות בדיוניות אשר הומצאו במקור על ידי המאייר הבלגי פייר קוליפור, הידוע יותר בכינוי "פיו" ("Peyo"), ואשר עליהן התבססה רצועת קומיקס שהופיעה לראשונה בכתב העת ספירו ב-23 באוקטובר 1958 וסדרת אנימציה של 421 פרקים שהופקה לטלוויזיה בין השנים 1981–1989 על ידי האנה ברברה עבור רשת NBC."
 
 msgctxt "#104230
-msgid "Snorks is an animated television series produced by Hanna-Barbera which ran on NBC from September 15, 1984, to May 13, 1989."
+msgid "The Snorks are a race of small, colorful beings that live happily in the (saltwater) underwater world of Snorkland. They have snorkels on their heads, which are used to propel them swiftly through the water. As evidenced by the cartoon series, when a Snork becomes excited their tube makes a "snork" sound. They have much of the same technology as contemporary humans, adapted to their own aquatic environment. The Snorks use clams as currency ("clams" is also a slang term for money)."
 msgstr "הזרבובים (אנגלית: The Snorks) היא סדרת אנימציה בת 108 מקטעים ב־65 תוכניות (ארבע עונות שידור), שהופקה לטלוויזיה בין השנים 1984-1989."
 
 msgctxt "#104240
-msgid "Samurai Pizza Cats is an American animated television adaptation of the anime series Kyatto Ninden Teyandee (Cat Ninja Legend Teyandee), produced by Tatsunoko Productions and Sotsu Agency."
+msgid "The Samurai Pizza Cats are a trio of crime-fighting super-heroes in the town of Little Tokyo, Japan. Wearing Samurai costumes, they burst through the air to the rescue from a humongous cannon connected to their headquarters - A fast food restaurant. Little Tokyo is populated by all kinds of animals. The official governor of the town is the Emperor, but since he became insane, a council takes care of the well-being of the village. One of the members of this council is called Seymour "Big" Cheese, who secretly wishes to take over control of the village."
 msgstr "החתולים הסמוראים (ביפנית: キャッ党忍伝てやんでえ , באנגלית: Samurai Pizza Cats - חתולי פיצת הסמוראי) היא סדרת אנימה יפנית בת 54 פרקים שהופקה לטלוויזיה ב-1990."
 
 msgctxt "#104250
-msgid "3000 Leagues in Search of Mother (母をたずねて三千里 Haha o Tazunete Sanzenri?) is a Japanese anime television series directed by Isao Takahata and aired in 1976."
+msgid "3000 Leagues in Search of Mother is about an Italian boy, Marco, and his journey in search of his mother. Italy was in a deep depression, so to support her family, Marco`s mother went to Argentina to work as a domestic (like Piccolo`s sons went to America to work in Porco Rosso). But after she wrote to her family that she was sick, her letters stopped coming. So Marco decides to go to Argentina to look for her. Marco has to travel across Argentina to find her, meeting many wonderful people, and encountering many adventures during his journey."
 msgstr "הלב (ביפנית: 母をたずねて三千里)‏ היא סדרת אנימה יפנית בת 52 פרקים שביים ותסרט איסאו טאקאהטה (קבר הגחליליות) עוד השתתפו בתפקיד היצירה שמות בולטים כגון הייאו מיאזאקי ויושיוקי טומינו (גנדאם) והופקה לטלוויזיה ב-1976."
 
 msgctxt "#104260
@@ -4733,7 +4733,7 @@ msgid "The show revolves around the adventures of Denver, the last dinosaur - a 
 msgstr "קבוצת נערים מקליפורניה (שולי, ירמי, צלי ומאריו) מגלים ביצת דינוזאור אשר בוקעת ומתוכה יוצא דינוזאור קטן וידידותי. את שמו דנבר הוא מקבל אחרי שהנערים ראו פרסומת על גבי אוטובוס לעיר דנבר. דנבר הוא דינוזאור יוצא דופן אשר אוהב לנגן בגיטרה ולרכב על סקייטבורד. הוא מסוגל לחזור לתקופה הפרה-היסטורית בעזרת חלק מהביצה שממנה בקע. דנבר מוצא מקלט אצל החבורה מפני האמרגן מורטון פיצבק אשר רוצה להתעשר מלכידתו של דנבר. דנבר סיים את חייו במוות אלים בעסקת סמים שהשתבשה. הדינוזאור האחרון סבל במשך כל ימיו מבדידות וידיו הקצרות לא איפשרו לו להגיע לפורקן עצמי, כך הוא הידרדר לחיי סמים ופשע."
 
 msgctxt "#104270
-msgid "The Moomins are the central characters in a series of books and a comic strip by Swedish-speaking Finnish illustrator and writer Tove Jansson, originally published in Swedish by Schildts in Finland."
+msgid "In the remote and mysterious Moomin Valley live the Moomin trolls, gentle and peaceful creatures. Young Moomin and his family experience many strange adventures, both magical and mundane. Based on the children's stories by Tove Jansson."
 msgstr "המומינים (בשוודית: Mumin) הם הדמויות הראשיות בסדרת ספרים, וסדרת רצועות קומיקס מאת המאיירת והסופרת השוודית-פינית טוּבֶה ינסון, אשר פורסמו במקור בשפה השוודית בפינלנד על ידי המוציא לאור "Schildts Förlags Ab""
 
 msgctxt "#104280
@@ -4745,7 +4745,7 @@ msgid "Oggy and the Cockroaches (known as Oggy et les Cafards in French, often r
 msgstr "אוגי והמקקים (בצרפתית: Oggy et les Cafards) היא סדרת אנימציה צרפתית שהופקה על ידי חברת ההפקות גומון (Gaumont Film Company) בשנת 1998."
 
 msgctxt "#104300
-msgid "The Little Flying Bears (Croatian: Mali leteći medvjedići) is an animated television series produced by Zagreb Film and CinéGroupe."
+msgid "The Little Flying Bears (Croatian: Mali leteći medvjedići) is an animated television series produced by Zagreb Film and CinéGroupe. It was a Canadian/Croatian co-production which originally aired in 1990. This cartoon helps children realize the importance of protecting the environment. The series shows the harmful effects of pollution and fires as well as the important role of the ecosystem."
 msgstr "המעופפים הנועזים (קרואטית: Mali leteći medvjedi) היא סדרת אנימציה יוגוסלבית בשפה הקרואטית בת 39 פרקים שהופקה לטלוויזיה ב-1990."
 
 msgctxt "#104310
@@ -4753,11 +4753,11 @@ msgid "The Wonderful Wizard of Oz is an American children's novel written by aut
 msgstr "הקוסם מארץ עוץ (באנגלית: The Wonderful Wizard of Oz) הוא ספר ילדים, הראשון שנכתב בסדרת ספרי עוץ, מאת ל. פרנק באום. הספר, המשתייך לסוגת הפנטזיה, יצא לאור לראשונה בשנת 1900."
 
 msgctxt "#104320
-msgid "The Hulk is a fictional superhero appearing in American comic books published by Marvel Comics."
+msgid "The Incredible Hulk is an American animated television series starring the Marvel Comics character the Hulk. It ran two seasons, for 21 episodes, on the television network UPN from 1996 to 1997. Lou Ferrigno, who portrayed Universal's version of the Hulk on the 1970s live-action TV series, provided the Hulk's voice for the true version from Marvel.The show often featured cameo appearances by characters from other Marvel cartoons of the period. In the second season, the show's format, after UPN decided that Season 1 was too dark, was changed, and to give "female viewers a chance", the network ordered that She-Hulk be made a regular co-star. As a result, the series was officially renamed The Incredible Hulk and She-Hulk. The second season also featured the Grey Hulk."
 msgstr ""הענק המדהים" (באנגלית: The Incredible Hulk, מוכר גם בשמות: "הענק הירוק", "האלק האיום" או בקיצור: "האלק") הוא דמות בדיונית של גיבור-על המופיעה בחוברות הקומיקס ביקום מארוול קומיקס."
 
 msgctxt "#104330
-msgid "The Pink Panther is a series of comedy films featuring an inept French police detective, Inspector Jacques Clouseau."
+msgid "In 1963, movie director Blake Edwards asked David H. DePatie and Friz Freleng (who had just opened their cartoon studio, DePatie-Freleng) to design a character for the opening titles of his movie, "The Pink Panther". Of many drawings, Edwards selected the cool design by Hawley Pratt. The opening of the movie became so famous that United Artists, the distributor of the movie, told them to make a cartoon series with the character. The cartoon series started in 1964 and became very successful, the first short called "The Pink Phink" won an Academy Award. After the success of the Pink Panther cartoons, DePatie and Freleng introduced other cartoon series like "The Inspector" and "Roland and Rattfink", however, none of them became as famous as their first creation. The last theatrically released Pink Panther cartoon, "Therapeutic Pink", was made in 1977. More cartoons were made in 1978-1979"
 msgstr "הפנתר הוורוד (באנגלית: The Pink Panther), הוא שמה של סדרת סרטי קומדיה שהראשון שבה יצא בשנת 1963."
 
 msgctxt "#104340
@@ -4765,23 +4765,23 @@ msgid "The eponymous main character resides at the Newtown Zoo, with friends Ott
 msgstr "The eponymous main character resides at the Newtown Zoo, with friends Otto and Stella. The adventures Benjamin gets involved in often require slipping into various roles, learning new jobs, or discovering new and distant places."
 
 msgctxt "#104350
-msgid "The Penguins of Madagascar is an American CGI animated television series that has aired on Nickelodeon."
+msgid "While the main characters Alex, Marty, Gloria, and Melman are still relaxing in Africa (after the events of Madagascar: Escape 2 Africa), the four penguins: Skipper (the leader of the group), Kowalski (the smartest of the group), Private (the youngest) and Rico (the craziest), have returned to New York City in Central Park Zoo. The Penguins will rule the roost at their Central Park Zoo home, doing secret missions in the heart of New York City. At times their secret missions beckon them to venture out of the zoo. Just as the team thinks it has its urban acreage under control, a new neighbor moves in next door: Julien, King of the Lemurs (who has come to New York in some way). Now the penguins must compete against him for the supreme leader of Central Park Zoo."
 msgstr "הפינגווינים ממדגסקר (באנגלית: The Penguins of Madagascar) היא סדרת טלוויזיה המהווה ספין-אוף לסדרת סרטי "מדגסקר"."
 
 msgctxt "#104360
-msgid ""
-msgstr ""
+msgid "The "Axe Cop" web comic was created by then five-year-old Malachai Nicolle and his 29-year-old brother, Ethan, and chronicles the adventures of an axe-wielding police officer and his loyal team of allies as they fight bad guys. Written by Malachai and drawn by Ethan, the first five installments of "Axe Cop" were put online on January 25, 2010 and went viral in a matter of days."
+msgstr "The "Axe Cop" web comic was created by then five-year-old Malachai Nicolle and his 29-year-old brother, Ethan, and chronicles the adventures of an axe-wielding police officer and his loyal team of allies as they fight bad guys. Written by Malachai and drawn by Ethan, the first five installments of "Axe Cop" were put online on January 25, 2010 and went viral in a matter of days."
 
 msgctxt "#104370
-msgid "Wolverine and the X-Men is an American cartoon series by Marvel Animation. It is the fourth animated adaptation of the X-Men characters, the other three being Pryde of the X-Men, X-Men: The Animated Series, and X-Men: Evolution."
+msgid "After an attack on the mansion, Professor Charles Xavier and Jean Grey are missing. The X-Men disband and Scott begins to suffer from depression. Emma Frost is able to locate a comatose Charles on Genosha in the care of Magneto. Professor X telepathically orders Wolverine to lead the X-Men and set out to save the world from The Sentinel Project and prevent the Brotherhood of Mutants from taking over the world before the future ends up a bad one."
 msgstr "ולברין והאקס-מן (באנגלית: Wolverine and the X-Men) היא סדרת אנימציה אמריקאית המבוססת על סדרת הקומיקס אקס-מן. "
 
 msgctxt "#104380
-msgid "Bosco Adventure (Japanese: ボスコアドベンチャー Hepburn: Bosuko Adobenchā?) is an anime TV series produced by Nippon Animation, mainly inspired by a book "Storie del Bosco" of the Italian writer Tony Wolf, and other books of this author."
+msgid "The story is about a young elvish princess Apricot (アプリコット ひめ) whose mission is to return to her home - Fountain land, occupied by evil forces of a monster called Scorpion (スコーピオン), before the total eclipse of the Sun. If she manages to sit on a throne before the eclipse, she'll release a great power of water that will destroy the occupators. To prevent that from happening, she's been kidnapped by mysterious cloacked man called Hoodman (フードマン), and his, rather clumsy, aides: Jack (ジャック) and Franz (フランツ). Their mission is to keep princess away from her home land until the eclipse. In the first episode, she escapes from the villains by sending a message by her trusty mechanical bird Speak (スピーク). The princess's urgent call for help is accidentally heard by inhabitants of Bosco forest: brave and adventurous Frog (フローク), i"
 msgstr "חבורת הצב המעופף (ביפנית: ボスコアドベンチャー , באנגלית: Bosco Adventure, "הרפתקאת בוסקו")‏ היא סדרת אנימה יפנית בת 26 פרקים שהופקה לטלוויזיה ב-1986."
 
 msgctxt "#104390
-msgid "Back at the Barnyard is a Nickelodeon computer-animated television series that is a spin-off from the 2006 film, Barnyard."
+msgid "Created by Steve Oedekerk, Back to the Barnyard is the new spinoff on Nickelodeon based on the movie: Barnyard: The Original Party Animals. The series features some of the old characters from the movie as well a few new characters."
 msgstr "חברים בחווה (באנגלית: Back at the Barnyard) היא סדרה קומית באנימציה ממוחשבת של ערוץ ניקלודאון המהווה ספין-אוף לסרט בלאגן בחווה."
 
 msgctxt "#104400
@@ -4789,27 +4789,27 @@ msgid "Inspector Gadget is a French-American animated television series that rev
 msgstr "חוש-חש הבלש (באנגלית: Inspector Gadget (המפקח גאדג'ט)) היא סדרת אנימציה קומית לילדים בת 86 פרקים, שהופקה בין השנים 1983–1986."
 
 msgctxt "#104410
-msgid "Larva is a computer-animated comedy television series made by Tuba Entertainment in Seoul, South Korea. This cartoon shows two larvae as its main characters."
-msgstr "Larva is a computer-animated comedy television series made by Tuba Entertainment in Seoul, South Korea. This cartoon shows two larvae as its main characters."
+msgid "Animated comedy about two strange maggot’s, Red and Yellow, who live under the grill of a sewer drain where people play little attention. In this secret place, they relish in the things that people throw in the sewer, like chewed up bubble gum, melted ice cream, coins, rings, you name it. They sometimes get into trouble, happy and quarrel over possession of these things."
+msgstr "Animated comedy about two strange maggot’s, Red and Yellow, who live under the grill of a sewer drain where people play little attention. In this secret place, they relish in the things that people throw in the sewer, like chewed up bubble gum, melted ice cream, coins, rings, you name it. They sometimes get into trouble, happy and quarrel over possession of these things."
 
 msgctxt "#104420
-msgid "Nerds and Monsters is a Canadian animated series airing on YTV that follows three nerdy kids and a simple football linebacker on a fantastic uncharted island."
-msgstr "Nerds and Monsters is a Canadian animated series airing on YTV that follows three nerdy kids and a simple football linebacker on a fantastic uncharted island."
+msgid "Nerds and Monsters is an animated comedy that tosses a group of nerdy kids on a fantastic uncharted island. The tween castaways must use nothing but their smarts to survive the relentless attacks by the island's inhabitants - a tribe of hideous monsters that are mistakenly threatened by their human invaders. Lucky for the nerds, these dim-witted monsters don't have any smarts!"
+msgstr "Nerds and Monsters is an animated comedy that tosses a group of nerdy kids on a fantastic uncharted island. The tween castaways must use nothing but their smarts to survive the relentless attacks by the island's inhabitants - a tribe of hideous monsters that are mistakenly threatened by their human invaders. Lucky for the nerds, these dim-witted monsters don't have any smarts!"
 
 msgctxt "#104430
-msgid "ThunderCats is an American animated television series that was produced by Rankin/Bass Productions debuting in 1985, based on the characters created by Tobin "Ted" Wolf."
+msgid "The inhabitants of the planet Thundera evacuate just before it is destroyed. They were pursued by a band of mutants. All but one of their escape ships was destroyed. Only a small group of Thunderans (Thundercats) remained. With only half engine power, the group, which was led by Jaga, had to set a course for the nearest planet. Jaga commanded their ship while the other 7 were in their stasis tubes. Jaga died on their journey to Third Earth and their ship crashed there. Soon they made friends with various groups in the area and they designed a fortress. Mumm-Ra the centuries-old embodiment of evil, along with the mutants that destroyed the rest of the Thunderans are a constant threat. But Lion-O, the new leader of the Thundercats, with his weapon the "Sword of Omens" will help the Thundercats to have a standing chance."
 msgstr "חתולי הרעם (באנגלית: ThunderCats) היא סדרת אנימציה אמריקאית שהופקה לטלוויזיה לערוץ סינדיקציה בשנים 1985-1990, במשך 4 עונות. בישראל שודרה התוכנית בערוץ הילדים של הכבלים במהלך שנות ה-90, מלווה בכיתוביות וללא דיבוב לעברית."
 
 msgctxt "#104440
-msgid "The World of David the Gnome, originally titled David, el Gnomo (also known as David, the Gnome), is a Spanish animated television series based on the children's book The Secret Book of Gnomes, by the Dutch author Wil Huygen and illustrator Rien Poortvliet"
+msgid "The World of David the Gnome was based on the world famous children's books The Gnomes and The Secret of the Gnomes by Dutch authors Rien Poortvliet and Wil Huygen. David the Gnome, and his wife Lisa, were peace loving Gnomes who lived in a tree. They probably reminded more than a few children of their grandparents. David would travel around on the back of his trusty fox, Swift, who he would summon by whistling to help sick animals and gnomes and other mythical creatures with his medical expertise. Short series that lasted 26 episodes and the episodes were aired Saturday mornings on some channel, then Nickelodeon re-ran it in syndication as a part of their famous Nick Jr. block from 1988 up until fall 1996, then from 1996-1998 it was broadcasted on The Learning Channel. As of 1999 this show no longer airs anywhere in the world."
 msgstr "עלילת הסדרה מתמקדת בגמד יער בשם טובטוב אשר מתמחה בוטרינריה ומשתמש בידע שברשותו כדי לטפל בבעלי החיים ובגמדים האחרים ביער. כמו כן, לעתים רבות טובטוב נאלץ לפעול על מנת לצמצם את הנזקים הסביבתיים אותם גורמים בני האדם והטרולים."
 
 msgctxt "#104450
-msgid "The series centers around the adventures of three teenage girls from Beverly Hills – Sam, Alex and Clover – who live a double life as spies working for the World Organization of Human Protection (WOOHP)."
+msgid ""Totally Spies!" is a fast-paced and fun show that depicts 3 girlfriends 'with an attitude' who have to cope with their daily lives at high school as well as the unpredictable pressures of international espionage. Whether the girls are laying low on a secret island off the coast of Japan, on hands and knees deep within the sewers of Paris or crouched in the baggage hold of a private jet over the Bermudas, they confront the most intimidating - and demented - of villains, each with their own special agenda for demonic, global rude behavior! The three friends each use their specific talents to help save the world while stressing about next week's algebra final or finding a decent prom dress on time."
 msgstr "סדרה עוסקת בסם, קלובר ואלכס, בנות הלומדות בתיכון "בוורלי הילס" ובמקביל פועלות כסוכנות מרגלות בחברת "טופ" (WOOHP בגרסה המקורית) ומצילות את העולם. בגלל עבודתן השנייה נאלצות הבנות במקרים רבים להסתיר את זהותן ולאזן את החיים כמרגלות עם החיים הרגילים כתלמידות תיכון."
 
 msgctxt "#104460
-msgid "Tom and Jerry is an American animated series of short films created in 1940, by William Hanna and Joseph Barbera."
+msgid "This is all the Tom and Jerry shorts, from 1940 to 1967. The first 114 are from the Hanna-Barbera era (1940 – 1958), the next 13 are from the Gene Deitch era (1960 – 1962), and the last 34 are from the Chuck Jones era (1963 – 1967)."
 msgstr "טום וג'רי (באנגלית: Tom and Jerry)‏ היא שמה של סדרת סרטי אנימציה קצרים מיוחדים ומצחיקים שנוצרו על ידי ויליאם האנה וג'וזף ברברה עבור MGM בשנות הארבעים, שנות החמישים ושנות השישים."
 
 msgctxt "#104470
@@ -4817,7 +4817,7 @@ msgid "The Adventures of Tom Sawyer (トム・ソーヤーの冒険 Tomu Sōyā 
 msgstr "תום סויר (באנגלית: Adventures of Tom Sawyer, ביפנית: トム・ソーヤーの冒険) היא סדרת אנימה יפנית בת 49 פרקים שהופקה לטלוויזיה בשנת 1980 בהשראת הספר הרפתקאותיו של תום סויר מאת מארק טוויין."
 
 msgctxt "#104480
-msgid ""
+msgid "Turbo and his crew face challenges at home and abroad against crazy opponents -- surfing roaches, a con artist gecko, a pirate rat and a drift-racing cricket -- in far-flung destinations like Africa and a Mississippi swamp."
 msgstr "סדרת אנימציה המבוססת על הסרט המצליח "טורבו". גיבורי הסדרה הם חילזון בשם טורבו וחברי הצוות שלו, שמגנים על העיר סטארלייט ותושביה מפני הנבלים המבקשים להחריבה ומנסים להשיג את תואר האליפות."
 
 msgctxt "#104490
@@ -4825,40 +4825,40 @@ msgid "Titeuf is a Swiss comic series created by Zep in 1992, which was adapted 
 msgstr "טיטוף (צרפתית: Titeuf; "טִיטֶף") היא סדרת ספרי קומיקס וסרטי טלוויזיה צרפתית, המשודרת מאז 2001."
 
 msgctxt "#104500
-msgid "T.U.F.F. Puppy is an American animated television series created by Butch Hartman for Nickelodeon."
+msgid "Between The Chief (a hard-bitten flea), Kitty Katswell (a perp-popping perfectionist) and Keswick (a gizmo-generating genius), Turbo Undercover Fighting Force, aka T.U.F.F., is the slickest secret crime-crushing unit Petropolis has ever seen. Or anyway it was until Dudley Puppy showed up! Don't take that the wrong way. Dudley -- a mutt with the best of every doggie gene pool -- is a crime-fighting superstar. With the speed of a greyhound, the nose of a bloodhound and the punch of a boxer, he can't be stopped. But he's still a sloppy, excitable pup and he goes MAD for bones -- a weakness that is constantly landing Dudley and his purrfect partner Kitty Katswell in the claws of Verminious Snaptrap. Verminious is the wicked rat mastermind of the Diabolical Order Of Mayhem, or as cowering pets everywhere call it, D.O.O.M.! Along with such crusty comrades like Francisco the man-munching alliga"
 msgstr "כלב חשאי (באנגלית: T.U.F.F. Puppy) היא סדרת אנימציה אמריקאית שנוצרה על ידי בוץ' הארטמן המשודרת באנגלית בערוץ ניקלודיאון האמריקאי ומדובבת לעברית בערוץ ניקלודיאון הישראלי. "
 
 msgctxt "#104510
-msgid "Lucky Luke is a Belgian comics series created by Belgian cartoonist Maurice De Bevere, better known as Morris, and for one period written by René Goscinny."
+msgid "An animated series based on the European comic book about an American cowboy described as "The man who shoots faster than his shadow." Lucky Luke, with his horse Double Six, travels the Old West to right wrongs and bring evildoers (usually his traditional enemies the Dalton Brothers) to justice."
 msgstr "לאקי לוק (בצרפתית: Lucky Luke) היא סדרת קומיקס מאת המאייר והכותב הבלגי מוריס דה בוורה (שנודע בייחוד בכינויו האמנותי "מוריס"), אשר פורסמה לראשונה בשנת 1946 בכתב העת הבלגי ספירו."
 
 msgctxt "#104520
-msgid "Maya & Miguel is a children's television animated series produced by Scholastic Studios. It appears on PBS as part of the PBS Kids Go! lineup and on the CBBC channel in the UK."
+msgid "Maya & Miguel is based on two 10-year-old twins who are Hispanic and go to school, and make new friends. This show is made by Scholastic, who also makes childrens' favorites such as Clifford The Big Red Dog, Clifford's Puppy Days and The Magic School Bus. Maya & Miguel features guest stars including Erik Estrada, Lucy Liu, Carlos Ponce and Elizabeth PeÃ±a. The show is made for 5 year olds to 11 year olds, but other children might be interested in it as well. The show entertains and educate children. It will entertain as it is an animated comedy. It educates because it teaches Spanish Language, Culture, traditions and it encourages cultural diversity. The show describes the adventures of the Santo's Twins. As well, as the lessons and experiences the twins have. It explains how the twins deal with their problems along with family and friends. Theme Song: It's Maya and Miguel!"
 msgstr "מאיה ומיגל (באנגלית: Maya and Miguel) היא סדרת אנימציה אמריקאית ממוצא היספני אשר שודרה בערוץ הילדים ודודבה לעברית"
 
 msgctxt "#104530
-msgid ""
-msgstr ""
+msgid "הסדרה מתארת את קורותיו של חייזר בשם צומי המגיע לכדור הארץ מכוכב "טוק טוק" בחלליתו ופוגש במולי, בן-אדם החי בגפו בשכנות לדודתו ציפי, ידידתו נועם וחברו יעקב - איש התיקונים. מנהגי ומונחי כדור הארץ זרים לצומי ובכוכב טוק טוק הם שונים לחלוטין ואפילו חוקי הפיזיקה אינם זהים. חבריו עוזרים לו ללמוד אותם ולהתנהג כבן אדם.צומי חש נבוך מחוסר הבנת דרכי בני האדם. כאשר הוא נשאל האם הוא מכיר דבר מה הוא נוטה לומר שכן, תוך כדי אמירת צמד המשפטים המתחרזים "קלי קלות בטעם תות, קלות 'קלה' בטעם תה", ואז הוא משתמש ביכולתו ה"חייזרית" לגרום לסובבים אותו לקפוא לחלוטין ולא להיות מודעים לזמן העובר. צומי "שובר" את "הקיר הרביעי" ומתוודה בפני הצופים כי הוא אינו יודע מהו הדבר אותו הוא נשאל. אז הוא ינסה להבין מהו הדבר לפי הלחמי מילים וחריזות וימציא סיפור הקשור במונח. צומי ישחרר את האדם שהקפיא וישטח את משנתו. אז האדם יסביר לצומי "אם אתה לא יודע משהו, פשוט תשאל." בסוף הפרק יבין צומי ויחכים."
+msgstr "הסדרה מתארת את קורותיו של חייזר בשם צומי המגיע לכדור הארץ מכוכב "טוק טוק" בחלליתו ופוגש במולי, בן-אדם החי בגפו בשכנות לדודתו ציפי, ידידתו נועם וחברו יעקב - איש התיקונים. מנהגי ומונחי כדור הארץ זרים לצומי ובכוכב טוק טוק הם שונים לחלוטין ואפילו חוקי הפיזיקה אינם זהים. חבריו עוזרים לו ללמוד אותם ולהתנהג כבן אדם.צומי חש נבוך מחוסר הבנת דרכי בני האדם. כאשר הוא נשאל האם הוא מכיר דבר מה הוא נוטה לומר שכן, תוך כדי אמירת צמד המשפטים המתחרזים "קלי קלות בטעם תות, קלות 'קלה' בטעם תה", ואז הוא משתמש ביכולתו ה"חייזרית" לגרום לסובבים אותו לקפוא לחלוטין ולא להיות מודעים לזמן העובר. צומי "שובר" את "הקיר הרביעי" ומתוודה בפני הצופים כי הוא אינו יודע מהו הדבר אותו הוא נשאל. אז הוא ינסה להבין מהו הדבר לפי הלחמי מילים וחריזות וימציא סיפור הקשור במונח. צומי ישחרר את האדם שהקפיא וישטח את משנתו. אז האדם יסביר לצומי "אם אתה לא יודע משהו, פשוט תשאל." בסוף הפרק יבין צומי ויחכים."
 
 msgctxt "#104540
-msgid "Monster High is an American fashion doll franchise created by Mattel and launched in July 2010."
-msgstr "Monster High is an American fashion doll franchise created by Mattel and launched in July 2010."
+msgid "Monster High has characters based on different monsters. These characters have individual personalities, looks and traits. Even though the characters here are different to their monster parents."
+msgstr "Monster High has characters based on different monsters. These characters have individual personalities, looks and traits. Even though the characters here are different to their monster parents."
 
 msgctxt "#104550
-msgid "Winx Club is an action and fantasy show combined with comedic elements. In the mystical dimension of Magix, three special schools educate modern fairies, ambitious witches, and supernatural warriors or specialists, and wizards from all over the magical universe."
+msgid "Winx Club is an Italian animated TV show. In the mystical dimension of Magix, three special schools educate modern fairies, ambitious witches and supernatural warriors, and wizards from all over the magical universe."
 msgstr "עלילת הסדרה מתמקדת בפיות המשתמשות בקסמים על מנת להגן על ממלכתן מפני כוחות האפל."
 
 msgctxt "#104560
-msgid ""
-msgstr ""
+msgid "The lake is toxic. The forest creatures are mutants. The counselors are a danger to themselves and others. And the kids? They’re having the time of their lives! An animated comedy about 12-year-old daredevil and mastermind McGee, who was headed for an awesome summer at Camp Sunny Smiles when his bus took a wrong turn and landed him at old, run down and ridiculously spooky CAMP LAKEBOTTOM! McGee soon discovers though that Lakebottom is not just your average camp; it’s the BEST CAMP EVER! That is, if you’re into surfing “killer” waves, eating french flies at lunch and having monsters as counselors. Legend has it that Lakebottom was built on the haunted remains of Sir-Screams- A-Lot Amusement park. It may seem scary, but McGee is having a blast and will do anything to protect Lakebottom from his nemesis Buttsquat and the snooty camp across the lake, Camp Sunny Smiles."
+msgstr "The lake is toxic. The forest creatures are mutants. The counselors are a danger to themselves and others. And the kids? They’re having the time of their lives! An animated comedy about 12-year-old daredevil and mastermind McGee, who was headed for an awesome summer at Camp Sunny Smiles when his bus took a wrong turn and landed him at old, run down and ridiculously spooky CAMP LAKEBOTTOM! McGee soon discovers though that Lakebottom is not just your average camp; it’s the BEST CAMP EVER! That is, if you’re into surfing “killer” waves, eating french flies at lunch and having monsters as counselors. Legend has it that Lakebottom was built on the haunted remains of Sir-Screams- A-Lot Amusement park. It may seem scary, but McGee is having a blast and will do anything to protect Lakebottom from his nemesis Buttsquat and the snooty camp across the lake, Camp Sunny Smiles."
 
 msgctxt "#104570
 msgid "וואהא גדלה כל חייה בכפר הטרולים, אך היא שונה מהם - אין לה שיער על כל הגוף, היא לא נודפת ריח מסריח והיא למעשה כלל לא טרולית. וואהא נחושה להוכיח לכולם שהיא אולי שונה - אבל לא פחות טובה מכל טרול אחר."
 msgstr "וואהא גדלה כל חייה בכפר הטרולים, אך היא שונה מהם - אין לה שיער על כל הגוף, היא לא נודפת ריח מסריח והיא למעשה כלל לא טרולית. וואהא נחושה להוכיח לכולם שהיא אולי שונה - אבל לא פחות טובה מכל טרול אחר."
 
 msgctxt "#104580
-msgid "Mickey Mouse is a funny animal cartoon character and the official mascot of The Walt Disney Company."
-msgstr "מיקי מאוס (באנגלית: Mickey Mouse; בעברית: "מיקי העכבר") הוא דמות האנימציה והקומיקס הבדיונית המפורסמת ביותר שנוצרה על ידי המפיק וולט דיסני והאייקון שהוא מייצג שייך לאולפני דיסני."
+msgid "This Series features all of the animated short films produced by Walt Disney and Walt Disney Animation Studios, from 1921 to the present. This includes films produced at the Laugh-O-Gram Studio which Disney founded in 1921 as well as the animation studio now owned by The Walt Disney Company, called the Disney Brothers Cartoon Studio (1923), The Walt Disney Studio (1926), Walt Disney Productions (1929), Walt Disney Feature Animation (1986), and Walt Disney Animation Studios (2007), and includes all of the cartoons of Mickey Mouse, Donald Duck, Goofy, Pluto, Humphrey the Bear and the Disney produced Oswald the Lucky Rabbit shorts."
+msgstr "This Series features all of the animated short films produced by Walt Disney and Walt Disney Animation Studios, from 1921 to the present. This includes films produced at the Laugh-O-Gram Studio which Disney founded in 1921 as well as the animation studio now owned by The Walt Disney Company, called the Disney Brothers Cartoon Studio (1923), The Walt Disney Studio (1926), Walt Disney Productions (1929), Walt Disney Feature Animation (1986), and Walt Disney Animation Studios (2007), and includes all of the cartoons of Mickey Mouse, Donald Duck, Goofy, Pluto, Humphrey the Bear and the Disney produced Oswald the Lucky Rabbit shorts."
 
 msgctxt "#104590
 msgid "הסדרה מבוססת על העולם הווירטואלי מיקמק שהוקם ב-2009 ומהווה אחד ממשחקי הילדים הווירטואלים הנפוצים ביותר."
@@ -4869,23 +4869,23 @@ msgid "מכתבים מפליקס (בגרמנית: Briefe von Felix) הוא הר�
 msgstr "מכתבים מפליקס (בגרמנית: Briefe von Felix) הוא הראשון בסדרת ספרי ילדים שנכתבה על ידי הסופרת הגרמניה אנט לנגן ואוירה על ידי המאיירת קונסטנצה דרופ."
 
 msgctxt "#104610
-msgid ""
-msgstr ""
+msgid "Around the World with Willy Fog (original Spanish title La vuelta al mundo de Willy Fog) is a cartoon version of Around the World in Eighty Days by Jules Verne."
+msgstr "Around the World with Willy Fog (original Spanish title La vuelta al mundo de Willy Fog) is a cartoon version of Around the World in Eighty Days by Jules Verne."
 
 msgctxt "#104620
-msgid "Based on the books by Jean de Brunhoff and Laurent de Brunhoff, the plot focuses on the story of Babar as it is told by him to his children."
+msgid "The adventures of a beloved elephant king and his family come to life in this delightful animated series based on the children's books by Jean and Laurent de Brunhoff. Living in a huge mansion with his whole family of elephants, Babar has entertained over millions of toddlers, and even older children nation-wide."
 msgstr "עלילת הסדרה מבוססת על עלילת סדרת ספרי הילדים המצליחה של ז'אן דה ברונוף ומתמקדת בסיפור חייו ועלילותיו של הפיל בבר, כפי שהם מסופרים לילדיו."
 
 msgctxt "#104630
-msgid ""
-msgstr ""
+msgid "An 8 year old boy named Warren accidentally gets mixed up in a magic spell and turns into a monster every time he sneezes."
+msgstr "An 8 year old boy named Warren accidentally gets mixed up in a magic spell and turns into a monster every time he sneezes."
 
 msgctxt "#104640
 msgid "גיבור הסדרה הוא מקס מגראת'. כאשר מגיע מקס עם אמו לעמק קופר, מופיעות תופעות מוזרות והוא מתחיל לשים לב לאנרגיה מיוחדת שנמצאת בגופו."
 msgstr "גיבור הסדרה הוא מקס מגראת'. כאשר מגיע מקס עם אמו לעמק קופר, מופיעות תופעות מוזרות והוא מתחיל לשים לב לאנרגיה מיוחדת שנמצאת בגופו."
 
 msgctxt "104650
-msgid "The series takes place in Fairy Tale Land, when a fairy tale messed up, the cops Johnny Legend Fantasy and Christine Anderson come to fix it."
+msgid "The endings to the best known fairy tales are mysteriously & hilariously sabotaged, & It's up to the F.T.P.D. detectives to crack the cases, catch the culprits & set the tales back on track. Count on the Fairy Tale Police Department to get their man, troll, witch, goblin or whatever, Every Time!"
 msgstr "העלילה מספרת על ג'וני וכריס, צמד בלשי משטרה ממשטרת האגדות, שמקבלים מהבוס שלהם משימה להחזיר את האגדות הידועות למסלולן.[CR]בתחילת כל פרק המספר מספר את הסיפור, ובהמשך כל האגדות יוצאות מכל שליטה וכך זוג הבלשים צריכים להחזיר בכל סוף פרק את האגדה למסלולה. בין היתר עזרו השניים לפינוקיו, רפונזל, עמי ותמי, נסיך צפרדע, בגדי המלך החדשים, היפה והחיה ועוד."
 
 msgctxt "#104660
@@ -4893,7 +4893,7 @@ msgid "The Simpsons is an American animated sitcom created by Matt Groening for 
 msgstr "משפחת סימפסון או הסימפסונים (באנגלית: The Simpsons) היא קומדיית מצבים סאטירית מונפשת אמריקאית מצליחה אשר נוצרה על ידי מאט גריינינג עבור רשת פוקס האמריקאית. עלילת הסדרה, אשר עוסקת במשפחה האמריקנית הממוצעת ומתרחשת בעיר הבדיונית ספרינגפילד, מציגה באור הומוריסטי סטריאוטיפים על התרבות, החברה והטלוויזיה האמריקנית.[CR]זוהי הסדרה המצוירת הארוכה ביותר בתולדות ארצות הברית."
 
 msgctxt "#104670
-msgid "Naruto (ナルト?) is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, an adolescent ninja who constantly searches for recognition and dreams to become the Hokage, the ninja in his village who is acknowledged as the leader and the strongest of all."
+msgid "In another world, ninja are the ultimate power, and in the Village Hidden in the Leaves live the stealthiest ninja in the land. Twelve years earlier, the fearsome Nine-Tailed Fox terrorized the village and claimed many lives before it was subdued and its spirit sealed within the body of a baby boy. That boy, Naruto Uzumaki, has grown up to become a ninja-in-training who's more interested in pranks than in studying ninjutsu.. but Naruto is determined to become the greatest ninja ever!"
 msgstr "סדרת המאנגה של נארוטו יצאה לראשונה לשווקים ביפן בשנת 1999 על ידי המוציא לאור היפני Shueisha במגזין היפני "Weekly Shōnen Jump". סדרת המאנגה הסתיימה בנובמבר 2014 לאחר 72 כרכים.[CR]בעקבות הצלחת סדרת המאנגה הפיקו אולפני האנימציה סטודיו פיירו ואולפני האנימציה Aniplex שתי סדרות אנימה המבוססות על עלילת סדרת המאנגה."
 
 msgctxt "#104680
@@ -4901,7 +4901,7 @@ msgid "Nils Holgersson is a 14-year-old farm boy, the son of poor farmers. He is
 msgstr "העלילה מתמקדת בנילס הולגרסון, ילד שובב בן 14 אשר חי בחווה בשוודיה. הוריו של נילס הם עניים. נילס הוא עצלן וחסר כל התחשבות בזולת. נילס היה נוהג להתאכזר לחיות בחווה בזמנו הפנוי, עד שיום אחד הוא לוכד שדון. השדון הכועס מחליט להעניש את נילס על מעלליו, ועל כן הוא מכווץ אותו לגודל של ננס. בערמומיות הוא עמד לכאורה להעניק לנילס מטבע אולם חבט בו בעוצמה. בתור ננס נילס מסוגל כעת לדבר ולהבין את בעלי החיים. נילס וחיית המחמד שלו אוגי האוגר מצטרפים לאווז הבית מולי במסעו עם אווזי הבר, המונהגים על ידי המפקדת אקה, ללפלנד באזור הצפוני של שוודיה, שם השמש אינה שוקעת. ביחד הם טסים לאורך שוודיה כאשר נילס מקווה כי יצליח למצוא את הדרך לבטל את הכישוף ולחזור להיות גדול שוב. במהלך המסע אופיו של נילס משתנה והוא הופך לידיד החיות. בסופו של דבר שב נילס לגודלו המקורי אולם אז אבדה יכולתו לתקשר עם בעלי-חיים."
 
 msgctxt "#104690
-msgid "Sabrina, the Teenage Witch is an American sitcom based on the Archie comic book series of the same name."
+msgid "In the town of Greendale lives half-witch Sabrina Spellman, a cute twelve year-old with a big secret. Despite her uncle's warnings, Sabrina "borrows" spells from the spookie jar and wreaks middle school havoc with her friend Harvey - who has no clue about Sabrina's powers. Between Sabrina's unpredictable relatives and her hilariously miscast spells, Sabrina's life is one big fun-filled adventure just waiting to happen!"
 msgstr "סברינה המכשפה הצעירה (באנגלית: Sabrina, The Teenage Witch) היא קומדית מצבים אמריקאית מצליחה המבוססת על קומיקס. עלילת הסדרה מתמקדת בסברינה ספלמן, בת למכשף ולאם בת תמותה. היא גרה עם שתי דודותיה בגרינדייל (לפי הקומיקס) או בוסטברידג', מסצ'וסטס (לפי הסדרה המצולמת), ומנסה להתמודד עם השייכות שלה לשני העולמות. סדרה ארוכה יותר (7 עונות) ואינה סדרת אנימציה."
 
 msgctxt "#104700
@@ -4909,7 +4909,7 @@ msgid "Sonic X (Japanese: ソニックX Hepburn: Sonikku Ekkusu?) is a Japanese 
 msgstr "סוניק X (ביפנית: ソニックX) היא סדרת אנימה בת 78 פרקים המבוססת על סדרת משחקי הווידאו המצליחה, סוניק הקיפוד, ומציגה את סוניק במראהו החדש יותר - הסדרה מבוססת על שני משחקי Sonic Adventure שיצאו בשנת 1998 ועל המשחק Sonic Battle שיצא בשנת 2003, אף על פי שעלילת הסדרה מפתחת גם עלילה משלה בעונה 3."
 
 msgctxt "#104710
-msgid "The series follows the adventures of the titular character Sonic the Hedgehog and his sidekick Tails as they attempt to stop Dr. Robotnik and his array of robots from taking over the planet Mobius."
+msgid "Based on a popular Sega game series, The Adventures of Sonic the Hedgehog follows the adventures of Sonic and his buddy Miles "Tails" Prower. Sonic is the fast-movin', impatient hedgehog. Tails is his curious little friend who is always eager to learn and tag along with his pal during quests. Dr. Ivo Robotnik (now known as Dr. Eggman), an evil mad scientist, is constantly scheming to find a way to destroy the blue blur. But it never works, because Sonic is always one step ahead of him! After this show was introduced, Sonic the Hedgehog (also known as SatAM) came along. As they both aired during the same time era, people looked to this show for slapstick comedy, while SatAM was also there for people who desired a bit more focus on adventures. That show was based on Archie's Sonic-based comic strips, while this show was entirely accurate at the time. A few years after these two cartoons, D"
 msgstr "עלילת הסדרה מתרחשת בכוכב בדיוני בשם מוביוס ומתמקדת בהרפתקאותיהם של סוניק הקיפוד וחברו הטוב מיילס "טיילס" פראוור אשר יוצאים להגן על מוביוס מד"ר רובוטניק המרושע אשר מעוניין להשתלט על הכוכב בעזרת חבורת הרובוטים שלו."
 
 msgctxt "#104720
@@ -4973,8 +4973,8 @@ msgid "The story, set in the 17th century, follows a young Dogtanian (D'Artacan 
 msgstr "סדרת אנימציה המבוססת על הקלאסיקה של שלושת המוסקטרים כשהדמויות הראשיות בסיפור הן כלבים. דרטניאן, יוצא לצרפת כדי להיות אחד מהמוסקטרים של המלך. הוא מתיידד עם שלושת המוסקטרים ויחד עם חבריו האצילים מלמדים אותנו מהם אבירות, אמת, צדק, כבוד וחברות כשהמוטו שלהם הוא אחד בשביל כולם וכולם בשביל אחד."
 
 msgctxt "#104870
-msgid "Hero Factory (stylized as HERO FACTORY) was a line of construction toys created by the Lego Group marketed primarily at 6-to-16-year-olds. Premiering in the summer of 2010, the theme was created in response to the decision to close down production of the formerly-popular Lego construction theme Bionicle and acted as a successor."
-msgstr "Hero Factory (stylized as HERO FACTORY) was a line of construction toys created by the Lego Group marketed primarily at 6-to-16-year-olds. Premiering in the summer of 2010, the theme was created in response to the decision to close down production of the formerly-popular Lego construction theme Bionicle and acted as a successor."
+msgid "Far away in an entirely different galaxy to our own, there lies the surreal and high-tech Makuhero City, home to the Hero Factory, where new robotic heroes, powered by a strange semi-sentient material called quaza, are built every day. The factory was created by the wise architect of Makuhero City, the philanthropic Mr. Makuro, with the intention of upholding peace and prosperity throughout the universe, fighting the worst villains and monsters from all over the galaxy. The main story revolves around the Hero Factory Alpha Team and their allied rookie heroes combating evil on several different planets."
+msgstr "Far away in an entirely different galaxy to our own, there lies the surreal and high-tech Makuhero City, home to the Hero Factory, where new robotic heroes, powered by a strange semi-sentient material called quaza, are built every day. The factory was created by the wise architect of Makuhero City, the philanthropic Mr. Makuro, with the intention of upholding peace and prosperity throughout the universe, fighting the worst villains and monsters from all over the galaxy. The main story revolves around the Hero Factory Alpha Team and their allied rookie heroes combating evil on several different planets."
 
 msgctxt "#104880
 msgid "The Avengers: Earth's Mightiest Heroes! is an American animated television series by Marvel Animation in cooperation with Film Roman, based on the Marvel Comics superhero team the Avengers."
@@ -4993,28 +4993,28 @@ msgid "Ollie the ox- Ollie is the owner of the Funny Farm and isn't exactly the 
 msgstr "עלילת הסדרה עוקבת אחר הרפתקאותיו של החקלאי מוש השור בחוותו אשר מכילה חיות רבות ושונות, יחד עם חברו הטוב, צבי הצב וכלבו רקס."
 
 msgctxt "#104920
-msgid "A unique Bavarian girl, Sissi's, life changes forever after the day she meets the charming and noble princes, Franz and Karl. It doesn't take long until Sissi and Franz start to make plans for a future together, but there are so many people trying to make sure that the magnificent wedding day is delayed and postponed several times. Sissi and Franz must face jealousy, deceit, treason, and danger between the fronts of Austria and Hungary."
+msgid "Sissi's, a unique bavarian girl's life changes forever after the day she meets the charming and noble princes, Franz and Karl. It doesn't take long till Sissi and Franz start to make plans for a future together, but there are so many people who make sure that the magnificent wedding day is delayed and posponed several times. Sissi and Franz must face jealousy, deceit, treason, danger even between the fronts of Austria and Hungary. Does love really conquer all? Find out by following these fantastic adventures from the Europe of the 19th century."
 msgstr "הסדרה מציגה את הרפתקאותיה של סיסי והתאהבותה בנסיך פראנז (במציאות היה זה הנסיך פרנץ יוזף), כמו גם את התמודדותה עם קשיי ההסתגלות לחיים בבית המלוכה, עם ההתנגדות לאירוסיה והשפעות המרד ההונגרי. בפרקים הראשונים מוצגת סיסי באחוזת בית פוסי ופוגשת את הנסיך. בניגוד למציאות, לסדרה סוף טוב."
 
 msgctxt "#104930
-msgid "The cartoon is set inside a tropical resort called the Banana Cabana.[2] All of the cabana's staff members and residents are funny animals who have shaved off their fur and wear only underclothes. A dog named Howie is the manager and leader of the cabana. Each episode follows Howie and his "misfit" crew having unusual adventures in the Banana Cabana."
+msgid "Welcome to the Banana Cabana! Led by Howie, the fun-loving, hospitality-challenged manager, the Banana Cabana is home to mayhem, destruction and general debauchery... where there are no parents, no rules and no clothes... well, almost! But, Howie can't take all the credit! Surrounding Howie are his best friends and fellow employees - Octo, Bunny, Narwhal, Duck, Sloth and, a holdover from the old regime, Piggy."
 msgstr "עלילותיהם של האווי הכלבלב וחבריו העובדים במלון טרופי, בעולם של חיות מגולחות עם תחתונים בלבד."
 
 msgctxt "#104940
-msgid "The television series tells of Tak and his friend, Jeera, including his master, Jibolba, and other characters. Tak is faced with the responsibilities of being a shaman as he daily has to save his village from villains."
+msgid "This Nickelodeon series, based on the popular video game, follows the adventures of Tak (voiced by Hal Sparks), a 14-year-old shaman's assistant who has the ability to summon the magical Juju. Unfortunately, he's still learning to manage his new powers. Although his bumbling often angers the Chief, Tak's friends -- Jeera, the Chief's daughter; Keeko, a laid-back dreamer; and dim-witted Lok -- are always close by to help out when the Juju just isn't cooperating."
 msgstr "הסדרה מספרת על טאק, השאמן הצעיר של שבט הפופונונו. מדי פרק הכפר נקלע לבעיות ותסבוכות שנגרמות לרוב על ידי טאק והוא נאלץ לפתור אותן. למרות עזרתו הרבה של טאק הוא לא זוכה להוקרה מהצ'יף המפונק. חבריו הטובים של טאק הם ג'ירה,בתו של הצ'יף וקיקו הרגוע שאוהב להשתטות."
 
 msgctxt "#104950
-msgid "Max, a 12 year old boy, finds a magical cap that can teleport him across dimensions."
-msgstr "Max, a 12 year old boy, finds a magical cap that can teleport him across dimensions."
+msgid "Mighty Max is an American animated action/sci-fi/horror television series which aired from 1993 to 1994 to promote the British Mighty Max toys, an offshoot of the Polly Pocket line, created by Bluebird Toys in 1992. It ran for two seasons, with a total of 40 episodes airing during the show's run. It starred the voice talents of Rob Paulsen as Max, Richard Moll as Norman, Tony Jay as Virgil, and Tim Curry as Skullmaster."
+msgstr "Mighty Max is an American animated action/sci-fi/horror television series which aired from 1993 to 1994 to promote the British Mighty Max toys, an offshoot of the Polly Pocket line, created by Bluebird Toys in 1992. It ran for two seasons, with a total of 40 episodes airing during the show's run. It starred the voice talents of Rob Paulsen as Max, Richard Moll as Norman, Tony Jay as Virgil, and Tim Curry as Skullmaster."
 
 msgctxt "#104960
-msgid ""
-msgstr ""
+msgid "The famous cat protects the city of San Lorenzo, a mythical land invisible to the outside world."
+msgstr "The famous cat protects the city of San Lorenzo, a mythical land invisible to the outside world."
 
 msgctxt "#104970
-msgid ""
-msgstr ""
+msgid "Bananaman is a fictional character appearing in British comic books. Bananaman is a parody of traditional superheroes, being portrayed as a schoolboy who is transformed into a muscled, caped figure when he eats a banana."
+msgstr "Bananaman is a fictional character appearing in British comic books. Bananaman is a parody of traditional superheroes, being portrayed as a schoolboy who is transformed into a muscled, caped figure when he eats a banana."
 
 msgctxt "#104980
 msgid "Cardcaptor Sakura takes place in the fictional Japanese city of Tomoeda, which is somewhere near Tokyo. Ten-year-old Sakura Kinomoto accidentally releases a set of magical cards known as Clow Cards from a book in her basement created and named after the sorcerer Clow Reed. Each card has its own unique ability and can assume an alternate form when activated. The guardian of the cards, Cerberus, emerges from the book and chooses Sakura to retrieve the missing cards. As she finds each card, she battles its magical personification and defeats it by sealing it away. Cerberus acts as her guide, while her best friend and second cousin, Tomoyo Daidouji films her exploits and provides her with battle costumes. Sakura's older brother Toya Kinomoto watches over her, while pretending that he is unaware of what is going on."
@@ -5465,8 +5465,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#106100
-msgid ""
-msgstr ""
+msgid "An animation about three young dinosaurs exploring their unusual world."
+msgstr "An animation about three young dinosaurs exploring their unusual world."
 
 msgctxt "#106110
 msgid ""
@@ -5528,8 +5528,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#106260
-msgid "Heathcliff (aka Heathcliff and The Catillac Cats) is an American animated television series that debuted on September 5, 1984."
-msgstr "Heathcliff (aka Heathcliff and The Catillac Cats) is an American animated television series that debuted on September 5, 1984."
+msgid "This 30-minute Saturday morning cartoon was produced by Ruby-Spears Productions and aired a total of 26 episodes. The first season, called "Heathcliff and Dingbat," ran for 13 episodes and included backup segments with Dingbat and the Creeps (who were created specifically for this show). The second season, called "Heathcliff and Marmaduke," ran for 13 episodes and featured backup segments with fellow comic strip character Marmaduke."
+msgstr "This 30-minute Saturday morning cartoon was produced by Ruby-Spears Productions and aired a total of 26 episodes. The first season, called "Heathcliff and Dingbat," ran for 13 episodes and included backup segments with Dingbat and the Creeps (who were created specifically for this show). The second season, called "Heathcliff and Marmaduke," ran for 13 episodes and featured backup segments with fellow comic strip character Marmaduke."
 
 msgctxt "#106270
 msgid ""
@@ -5580,7 +5580,7 @@ msgid "Pim & Pimba play imaginative games with an object they have uncovered in 
 msgstr "Pim & Pimba play imaginative games with an object they have uncovered in the snow."
 
 msgctxt "#106390
-msgid "Fables of the Green Forest (山ねずみロッキーチャック Yama Nezumi Rokkī Chakku?, lit. "Rocky Chuck, the Mountain Rat", also known as Rocky Chuck the Woodchuck, Chuck the Beaver and Johnny Chuck)[1] is an animé television series based on a series of books published in the 1910s and 1920s by Thornton W. Burgess which ran on the Japanese network Fuji Television from 7 January 1973 to 30 December 1973. It consists of 52 episodes and was created by the animation studio Zuiyo Eizo (the predecessor to Nippon Animation).[CR]The series has been aired in many countries outside Japan, such as Germany (on Bayerischer Rundfunk), Spain (TVE), Romania (TVR 1), Portugal (RTP), Venezuela (VTV), Canada (TVOntario, dubbed in both English and French), and Hong Kong. The release of the series into Canada was done through ZIV International in 1978."
+msgid "The series consists of the adventures of Rocky, a woodchuck and his mate Polly in the Green Forest. They make a lot of friends among their neighbors, and everyone works together to avoid the attacks of the different predators that put them in danger, such as man, the weasel and the fox."
 msgstr "יפורי היער הירוק (ביפנית: 山ねずみロッキーチャック, בתרגום מילולי לעברית: "רוקי צ'אק, עכבר ההרים") היא סדרת אנימה המבוססת על סדרת ספרים שפורסמה בעשורים השני והשלישי של המאה ה-20 על ידי ת'ורנטון בורגס (Thornton W. Burgess), סופר ילדים אמריקאי.[CR]הסדרה שודרה ברשת הטלוויזיה היפנית "Fuji TV" בשנת 1973, החל ב-7 בינואר ועד 30 בדצמבר. הסדרה כוללת 52 פרקים, ועוסקת בהרפתקאותיהן של חיות היער השונות.[CR]מאוחר יותר שודרה הסדרה במדינות שונות מחוץ ליפן. בישראל נקלטה הסדרה בשנות השמונים בשידורי ערוץ המזרח התיכון (ערוץ "לבנון"), ומאוחר יותר שודרה בדיבוב לעברית בשידורי הניסיון של ערוץ 2. הסדרה דובבה על ידי גיורא קנת, שדיבב את כל הדמויות הגבריות, ועל ידי דנה יחזקאלי, שדיבבה את כל הדמויות הנשיות."
 
 msgctxt "#106400
@@ -5672,8 +5672,8 @@ msgid "BabyTV’s favourite foursome, the “Cuddlies”, present a series of en
 msgstr "BabyTV’s favourite foursome, the “Cuddlies”, present a series of entertaining stories from the world of the toddler. Join our charming friends and explore co-operation, sharing, and caring, as they help each-other solve simple dilemmas in a delightful, cooperative way."
 
 msgctxt "#106630
-msgid ""
-msgstr ""
+msgid "Lessons based on African folk tales."
+msgstr "Lessons based on African folk tales."
 
 msgctxt "#106640
 msgid ""
@@ -5820,14 +5820,14 @@ msgid ""
 msgstr ""
 
 
-#
+#קטנטנים
 msgctxt "#107000
-msgid ""
-msgstr ""
+msgid "Follow a 6-year-old girl named Darby and her puppy Buster, who join Pooh and Tigger on adventures in the Hundred Acre Wood. To help solve mysteries Pooh and Tigger wear homemade superhero costumes and become Super Sleuths. With their new friend Darby they tackle some of the Hundred Acre Wood's wonders. Episodes feature singalong music and encourage young viewers to take a thoughtful look at the world they live in."
+msgstr "Follow a 6-year-old girl named Darby and her puppy Buster, who join Pooh and Tigger on adventures in the Hundred Acre Wood. To help solve mysteries Pooh and Tigger wear homemade superhero costumes and become Super Sleuths. With their new friend Darby they tackle some of the Hundred Acre Wood's wonders. Episodes feature singalong music and encourage young viewers to take a thoughtful look at the world they live in."
 
 msgctxt "#107010
-msgid ""
-msgstr ""
+msgid "Go Jetters is a 3D animated British children's television series currently airing on CBeebies.[2]This geography based programme was commissioned by CBeebies Controller Kay Benbow and is a co-production of CBeebies In-house Production and BBC Worldwide.[3]Aimed at the upper-end of preschool ages 4–6,[4] Go Jetters follows the adventures of four heroes, Xuli, Kyan, Lars and Foz, as they travel the world with their teacher, mentor and friend, Ubercorn. The programme uses songs and music to expose facts about foreign countries and environments."
+msgstr "Go Jetters is a 3D animated British children's television series currently airing on CBeebies.[2]This geography based programme was commissioned by CBeebies Controller Kay Benbow and is a co-production of CBeebies In-house Production and BBC Worldwide.[3]Aimed at the upper-end of preschool ages 4–6,[4] Go Jetters follows the adventures of four heroes, Xuli, Kyan, Lars and Foz, as they travel the world with their teacher, mentor and friend, Ubercorn. The programme uses songs and music to expose facts about foreign countries and environments."
 
 msgctxt "#107020
 msgid ""
@@ -5870,8 +5870,8 @@ msgid "In this series, Dora, who is older than she was in the original Dora the 
 msgstr "הכירו את לין: הכירו את לין החייכנית והאופטימית אשר מאמינה שפרחים ממלאים את הלב שמחה, העצים עושים מצב רוח טוב, ופירות זו הדרך של העולם להגיש לנו ממתקים של הטבע.[CR][CR]בכדי להשיב טוּב לעולם הנדיב לין שותלת, עודרת, מטפחת ונוטעת בגינה המתוקה שלה."
 
 msgctxt "#107120
-msgid ""
-msgstr ""
+msgid "Postman Pat is a British stop-motion animated children's television series first produced by Woodland Animations.It is aimed at pre-school children, and concerns the adventures of Pat Clifton, a postman in the fictional village of Greendale (inspired by the real valley of Longsleddale near Kendal)."
+msgstr "דר דוור (באנגלית: Postman Pat, הדוור פט) היא סדרת טלוויזיה בריטית לילדים שהופקה במקור על ידי חברת הנפשות וודלנד. בישראל שודרה הסדרה בשנות התשעים והאלפיים בטלוויזיה החינוכית, ובהמשך גם בערוץ הופ!. הסדרה נחשבת לאחת מסדרות הטלוויזיה לילדים המוצלחות ביותר בממלכה המאוחדת.בשת 2014 יצא סרט הנפשה ממוחשבת באורך מלא על פי הסדרה בשם "יצאת כוכב" (באנגלית: Postman Pat: The Movie, "דר דוור: הסרט").בסדרה כיכב דר (במקור פט), דוור בריטי המחלק את הדואר לתושבי העיירה הבדיונית גרינדייל, בה הוא גר יחד עם חתולו ג'ס, ואגב כך נקלע להרפתקאות שונות. העיירה שוקקת החיים מדמה עיירה בריטית טיפוסית, שתושביה מסבירי הפנים ישמחו תמיד לשתות כוס תה עם דר ולחלוק איתו את חוויותיהם."
 
 msgctxt "#107130
 msgid ""
@@ -5894,19 +5894,19 @@ msgid ""
 msgstr ""
 
 msgctxt "#107180
-msgid ""
-msgstr ""
+msgid "Kate is a young girl with a wild imagination. It's that imagination that attracts a bunny named Mim-Mim, who becomes a larger-than-life playmate for Kate as they travel to the fantasy world of Mimiloo. Kate goes there whenever she has a problem at home that she needs to solve. In Mimiloo, Kate can be whatever she wants, from a princess to a pirate. Other residents of Mimiloo include gardener Gobble, inventor Tack and mischievous Boomer. When each adventure ends, Kate has solved her problem and is anxious to get home to tell her parents about it."
+msgstr "Kate is a young girl with a wild imagination. It's that imagination that attracts a bunny named Mim-Mim, who becomes a larger-than-life playmate for Kate as they travel to the fantasy world of Mimiloo. Kate goes there whenever she has a problem at home that she needs to solve. In Mimiloo, Kate can be whatever she wants, from a princess to a pirate. Other residents of Mimiloo include gardener Gobble, inventor Tack and mischievous Boomer. When each adventure ends, Kate has solved her problem and is anxious to get home to tell her parents about it."
 
 msgctxt "#107190
 msgid ""
 msgstr "'הסדרה מתמקדת בבובי, נער צעיר אשר חלם תמיד על מכונית משלו ובבינבה, מכונית צהובה קטנה ומדברת שבקעה מתוך ביצה מוזרה בתוך משחטת רכב.[CR][CR]בובי, אשר שומע אותה בוכה, יוצא לעזרתה רגע לפני שהיא נהרסת, ומאז הם נעשים חברים טובים. בינבה, בובי והכלב שלו, פונפון יוצאים יחדיו למסע הרפתקאות בעולם במטרה למצוא את אמהּ של בינבה. הם נאלצים להתחמק מזעם הרשע שמנסה לתפוס את בינבה בכל הזדמנות.'"
 
 msgctxt "#107200
-msgid ""
-msgstr ""
+msgid "Little Charley Bear is a 3D-CGI-Animated television show created & produced by Daniel Pickering, Annix Studios in 2007.[1] Narrated by James Corden, Little Charley Bear takes viewers on a journey into the world of let's pretend, where anything is possible.[2][3] Hit Entertainment were the original distributors, gaining a network deal with CBeebies in December 2008.The show idea was originally created by Pickering when he attended animation school in Dublin, Ireland in the mid-1990s. He pitched the show to many international distribution companies and broadcasters, it was rejected across the board & at this point he shelved the idea. In mid-2007 he met Jennifer Upton (a Producer with HiT Entertainment) she saw the concepts of the show & suggested to him he should take another look at it. Annix Studios put together a small test sequence & HiT entertainment were impressed enough to become joint partners on the project."
+msgstr "Little Charley Bear is a 3D-CGI-Animated television show created & produced by Daniel Pickering, Annix Studios in 2007.[1] Narrated by James Corden, Little Charley Bear takes viewers on a journey into the world of let's pretend, where anything is possible.[2][3] Hit Entertainment were the original distributors, gaining a network deal with CBeebies in December 2008.The show idea was originally created by Pickering when he attended animation school in Dublin, Ireland in the mid-1990s. He pitched the show to many international distribution companies and broadcasters, it was rejected across the board & at this point he shelved the idea. In mid-2007 he met Jennifer Upton (a Producer with HiT Entertainment) she saw the concepts of the show & suggested to him he should take another look at it. Annix Studios put together a small test sequence & HiT entertainment were impressed enough to become joint partners on the project."
 
 msgctxt "#107210
-msgid "Hello Kitty (Japanese: ハロー・キティ Hepburn: Harō Kiti?),[3] (full name: Kitty White (キティ・ホワイト Kiti Howaito?))[2] is a fictional character produced by the Japanese company Sanrio, created by Yuko Shimizu and currently designed by Yuko Yamaguchi."
+msgid "Hello Kitty and Friends is an Original Video Animation which was exclusively on home video in Japan, and aired on CBS in the United States in 1993. It also ran in reruns on Nick Jr. and Toon Disney. On the show, Kitty is a little girl living with her mother, father, and twin sister Mimmy, who is identical to Kitty but has different colored clothes and wears her bow under the opposite ear."
 msgstr ""הלו קיטי" (ביפנית: ハローキティ ; באנגלית: Hello Kitty) היא מותג פופולרי אשר הצמיח כמות רבה של מוצרים נלווים ואף סדרת אנימה לילדים (קודומו) ששודרה בישראל בטלוויזיה החינוכית."
 
 msgctxt "#107220
@@ -6142,20 +6142,20 @@ msgid ""
 msgstr ""
 
 msgctxt "#107800
-msgid ""
-msgstr ""
+msgid "Preschoolers get to hop on board the "Dinosaur Train" to learn about natural science, natural history and paleontology. Each half-hour episode of this series, produced in CGI-animated format by the Jim Henson Company, features Buddy, a preschool-aged Tyrannosaurus Rex, and his adoptive Pteranodon family traveling on a special train to meet all kinds of dinosaurs and explore the world inhabited by these amazing creatures. Also included are live-action segments hosted by paleontologist Scott Sampson."
+msgstr "Preschoolers get to hop on board the "Dinosaur Train" to learn about natural science, natural history and paleontology. Each half-hour episode of this series, produced in CGI-animated format by the Jim Henson Company, features Buddy, a preschool-aged Tyrannosaurus Rex, and his adoptive Pteranodon family traveling on a special train to meet all kinds of dinosaurs and explore the world inhabited by these amazing creatures. Also included are live-action segments hosted by paleontologist Scott Sampson."
 
 msgctxt "#107810
-msgid ""
-msgstr ""
+msgid "An intrepid band of explorers roam the oceans in search of adventure and fun. Led by a valiant polar bear and a daredevil kitten, these eight talented critters are always ready to embark on an exciting new mission."
+msgstr "An intrepid band of explorers roam the oceans in search of adventure and fun. Led by a valiant polar bear and a daredevil kitten, these eight talented critters are always ready to embark on an exciting new mission."
 
 msgctxt "#107820
-msgid ""
-msgstr ""
+msgid "A youngster named Sid, who aspires to a career in stand-up comedy, pitches a morning monologue to his stuffed animals that hinges on a burning question (such as "Why do bananas get brown spots?"), then spends the rest of the day searching for the answer in this hybrid combination of animation and puppetry from The Jim Henson Co., in its first PBS project since "Sesame Street.""
+msgstr "A youngster named Sid, who aspires to a career in stand-up comedy, pitches a morning monologue to his stuffed animals that hinges on a burning question (such as "Why do bananas get brown spots?"), then spends the rest of the day searching for the answer in this hybrid combination of animation and puppetry from The Jim Henson Co., in its first PBS project since "Sesame Street.""
 
 msgctxt "#107830
-msgid ""
-msgstr ""
+msgid "Talking Tom and Friends is a media franchise created and owned by Outfit7 Limited. The franchise focuses on various mobile apps involving anthropomorphic animal characters repeating things said by the user."
+msgstr "Talking Tom and Friends is a media franchise created and owned by Outfit7 Limited. The franchise focuses on various mobile apps involving anthropomorphic animal characters repeating things said by the user."
 
 msgctxt "#107840
 msgid "העלילה מספרת על ארץ של תות שדה המכונה "ארץ תות", שעשויה ממתקים ופירות.[CR][CR]בארץ תות גרות ילדות יתומות וחמודות: הילדה שגרה בארץ תות היא תותית ילדה קטנה עם לב ענק ואופטימיות מדבקת, עוזרת תמיד לחברים ומאמינה שהכל אפשרי. היא מלמדת מחקרים פותרת בעיות ומשחקת עם חברותיה עוגית, פיצפוצית, תפוזית ואחרות. תותית וחברותיה משתנות במראה שלהן."
@@ -6223,8 +6223,8 @@ msgstr ""
 
 #
 msgctxt "#108000
-msgid ""
-msgstr ""
+msgid "Kim Possible is an American animated action comedy-adventure[1][2][3][4] television series created by Bob Schooley and Mark McCorkle that originally aired on Disney Channel from June 7, 2002 to September 7, 2007. The show revolves around eponymous high school student Kim Possible, a teenager tasked with fighting crime on a regular basis while coping with everyday issues commonly associated with adolescence. Kim is aided by her clumsy best friend and sidekick Ron Stoppable, his pet naked mole rat Rufus and 10 year-old computer genius Wade. Known collectively as Team Possible, the majority of Kim and Ron's missions require them to thwart the evil plans of mad scientist–supervillain duo Dr. Drakken and his sidekick Shego, but they occasionally encounter other enemies as well."
+msgstr "קים פוסיבול (באנגלית: Kim Possible) היא תוכנית אנימציה זוכת פרס אמי לסדרות יומיות מבית היוצר של דיסני. התוכנית עוסקת בנערה גיבורת על, הפועלת להציל את העולם מול ניסיונות השתלטות של רשעי על. פרק טיפוסי של התוכנית מתחיל בניסיון השתלטות על העולם, או פגיעה בבני אדם. קים מגלה על כך מעוזרה, וייד בן ה-10, המומחה למחשבים, ופועלת להציל את בני האדם ולסכל את מאמצי הרשעים. סוף הפרק מתאפיין בתודות מצד האנשים שהוצלו על ידי קים ובקטע קומי שעוסק ברון, בדרך כלל בנפילת מכנסיו, דבר שקורה בדרך כלל בשל ניסיונותיו הכושלים להיראות "מגניב". לקים אין יכולות על-אנושיות מיוחדות, למעט יכולתה לבצע תרגילים אקרובטיים מסובכים שלמדה בתפקידה כמעודדת, ולכן היא מסתמכת על תושייתה ועל ידידיה כדי להצליח במשימותיה. חברתה הטובה ביותר היא מוניק."
 
 msgctxt "#108010
 msgid "Eek! the Cat is about a purple cat named Eek whose motto is "it never hurts to help". This attitude generally gets him into trouble, from which much of the humor of the show is derived. Other characters include Eek!'s human family, with whom he cannot communicate via spoken language; Sharky the Sharkdog (his worst nightmare), and Eek's girlfriend, Annabelle."
@@ -6335,8 +6335,8 @@ msgid "העלילה מתמקדת ביותם, חנון מלידה והדמות ה
 msgstr "העלילה מתמקדת ביותם, חנון מלידה והדמות הראשית בסדרה, המקים יחד עם חבריו מועדון בשם "מועדון החנונים". במועדון החנונים פועלים לפי ספר חוקים אותו כותב יותם בכל סוף פרק. בסדרה בני האדם משתייכים למעמדות שונים: בריונים, חנונים ומקובלים. המקובלים והחנונים חווים יחד אהבות, מזימות, אכזבות, בלגנים ודברים אחרים."
 
 msgctxt "#108280
-msgid "The series chronicles the hilarious and unlikely friendship between Max Asher (Jonny Gray), a celebrity snowboarder, and Alvin "Shred" Ackerman (Jake Goodman), a science whiz-kid, who become roommates and instant friends when Max moves to Colorado to train for the Winter Cup."
-msgstr "The series chronicles the hilarious and unlikely friendship between Max Asher (Jonny Gray), a celebrity snowboarder, and Alvin "Shred" Ackerman (Jake Goodman), a science whiz-kid, who become roommates and instant friends when Max moves to Colorado to train for the Winter Cup."
+msgid "Max & Shred is a buddy comedy about the unlikely friendship that forms when easygoing superstar snowboarder, Max Asher, moves in with anxious academic, Alvin Ackerman, and his family. The show centers on the boys’ odd couple relationship as they help and hinder each other through the trials of teenage life. Abby, Alvin’s driven older sister, and Howie, Alvin’s super smart eight-year-old protégé aid the boys in their adventures. Each half hour multi-cam episode will comically highlight the challenges of the young science whiz living with a celebrity athlete in the bustling ski town of Blizzard Springs. It’s gonna be siiiiick!"
+msgstr "Max & Shred is a buddy comedy about the unlikely friendship that forms when easygoing superstar snowboarder, Max Asher, moves in with anxious academic, Alvin Ackerman, and his family. The show centers on the boys’ odd couple relationship as they help and hinder each other through the trials of teenage life. Abby, Alvin’s driven older sister, and Howie, Alvin’s super smart eight-year-old protégé aid the boys in their adventures. Each half hour multi-cam episode will comically highlight the challenges of the young science whiz living with a celebrity athlete in the bustling ski town of Blizzard Springs. It’s gonna be siiiiick!"
 
 msgctxt "#108290
 msgid "Martin, an ordinary nine-year-old boy, has one strange characteristic: every morning he awakes to find himself transformed into fantastic and legendary beings – a Merlin-like wizard, a pharaoh, a caveman, a vampire, a superhero and many more transformations."
@@ -6403,8 +6403,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#108450
-msgid "Rabbids Invasion is a French/American animated television series which premiered on August 3, 2013 on Nickelodeon. It was produced by Ubisoft Motion Pictures, TeamTO, France Télévisions and Nickelodeon Productions. The show is based on the Raving Rabbids video game series produced by Ubisoft."
-msgstr "Rabbids Invasion is a French/American animated television series which premiered on August 3, 2013 on Nickelodeon. It was produced by Ubisoft Motion Pictures, TeamTO, France Télévisions and Nickelodeon Productions. The show is based on the Raving Rabbids video game series produced by Ubisoft."
+msgid "Rabbids Invasion brings the wacky comedy and characters from Ubisoft’s Raving Rabbids video games to US TV for the first time, and we think kids’ are going to really have fun watching them on their chaotic adventures,” said Russell Hicks, President of Content Development and Production, Nickelodeon. “This series will be a terrific complement to our top-rated lineup of original animated comedies on Saturday mornings."
+msgstr "Rabbids Invasion brings the wacky comedy and characters from Ubisoft’s Raving Rabbids video games to US TV for the first time, and we think kids’ are going to really have fun watching them on their chaotic adventures,” said Russell Hicks, President of Content Development and Production, Nickelodeon. “This series will be a terrific complement to our top-rated lineup of original animated comedies on Saturday mornings."
 
 msgctxt "#108460
 msgid ""
@@ -6463,16 +6463,16 @@ msgid "Set in Miami, Austin & Ally is a multi-camera comedy about the relationsh
 msgstr "אלי דוסון היא ילדה שכותבת שירים, בעלת פחד במה שעובדת בחנות כלי הנגינה של אביה. אוסטין מון הוא כוכב רוק שאוהב להיות על הבמה ושכל הזמן מסתבך בצרות. בתחילת העונה הוא שומע את אלי שרה כשהוא בא לחנות של אביה ומלחין את השיר שלה בסגנון שלו. השיר מתפרסם בכל רחבי האינטרנט וכך הוא נהיה כוכב רוק. לכן הוא מחליט שהאמרגנית שלו תהיה טריש - חברה שלו ושל אלי, עצלנית, שתמיד מוצאת דרכים איך להתחמק מאחריות, והשותפה שלו תהיה אלי, שכותבת את השירים, אך מפחדת להופיע בעצמה (עד לאמצע עונה 2)."
 
 msgctxt "#108600
-msgid ""
-msgstr ""
+msgid "Bob's Burgers is an American adult animated sitcom created by Loren Bouchard that premiered on Fox on January 9, 2011. The series centers on the Belchers – parents Bob and Linda, and their children Tina, Gene, and Louise – who run a hamburger restaurant. The show was conceived by Bouchard after he developed Home Movies. It is produced and distributed in association with 20th Century Fox Television."
+msgstr "Bob's Burgers is an American adult animated sitcom created by Loren Bouchard that premiered on Fox on January 9, 2011. The series centers on the Belchers – parents Bob and Linda, and their children Tina, Gene, and Louise – who run a hamburger restaurant. The show was conceived by Bouchard after he developed Home Movies. It is produced and distributed in association with 20th Century Fox Television."
 
 msgctxt "#108610
 msgid "Four Angels (Raf, Uri, Sweet and Miki) and four Devils (Sulfus, Cabiria, Kabale and Gas) are sent to Earth, in an unused area of the Golden School, where they learn everything they need to become Guardian Angels and Guardian Devils."
 msgstr "Four Angels (Raf, Uri, Sweet and Miki) and four Devils (Sulfus, Cabiria, Kabale and Gas) are sent to Earth, in an unused area of the Golden School, where they learn everything they need to become Guardian Angels and Guardian Devils."
 
 msgctxt "#108620
-msgid ""
-msgstr ""
+msgid "The Cleveland Show is an American animated sitcom created by Seth MacFarlane, Richard Appel, and Mike Henry for the Fox Broadcasting Company as a spin-off of Family Guy. The series centers on the Browns and Tubbs, two dysfunctional families consisting of parents Cleveland Brown and Donna Tubbs and their children Cleveland Brown, Jr., Roberta Tubbs, and Rallo Tubbs. Similar to Family Guy, it exhibits much of its humor in the form of cutaway gags that often lampoon American culture."
+msgstr "המופע של קליבלנד (באנגלית: The Cleveland Show) היא סדרת אנימציה אשר שודרה לראשונה ברשת Fox האמריקאית ב-27 בספטמבר 2009. היא בוטלה ב-2013.[CR]סדרה זו מגוללת את חייו של קליבלנד בראון ומשפחתו לאחר שעזב את העיר קוהוג ועבר חזרה לעיירת הולדתו הבדיונית, סטולבנד, וירג'יניה, שם נישא לדונה טאבס. יוצרי הסדרה הם סת' מקפרלן, מייק הנרי וריצ'רד אפל. הסדרה "המופע של קליבלנד" היא בעצם ספין-אוף לסדרה "איש משפחה"."
 
 msgctxt "#108630
 msgid "ספיד רייסר - הדור הבא היא סדרת אנימציה אמריקאית. המהווה המשך לסרט "ספיד רייסר"."
@@ -6515,80 +6515,80 @@ msgid "Felix the Cat is a funny animal cartoon character created in the silent f
 msgstr "פליקס החתול (באנגלית: Felix The Cat) הוא דמות אנימציה מתקופת הראינוע. פליקס הוא מדמויות האנימציה המוכרות ביותר בעולם, הן בזכות מאפייניו הפיזיים: גופו השחור לעומת פניו הלבנות ועיניו וחיוכו הענקיים, והן בזכות המצבים הסוריאליסטיים שבסרטיו. נחשב גם לראשון מדמויות הסרטים המצוירים שהיה לכוכב קולנוע אמיתי שהקהל נוהר לסרטיו."
 
 msgctxt "#108730
-msgid ""
-msgstr ""
+msgid "Sick, twisted and politically incorrect, the animated series features the adventures of the Griffin family. Endearingly ignorant Peter and his stay-at-home wife Lois reside in Quahog, R.I., and have three kids. Meg, the eldest child, is a social outcast, and teenage Chris is awkward and clueless when it comes to the opposite sex. The youngest, Stewie, is a genius baby bent on killing his mother and destroying the world. The talking dog, Brian, keeps Stewie in check while sipping martinis and sorting through his own life issues."
+msgstr "איש משפחה (באנגלית: Family Guy) היא סדרת טלוויזיה אמריקאית מסוגת קומדיית מצבים מונפשת, זוכת פרס אמי, המאופיינת בהומור פרוע, ביקורתי ושנון, ולרוב בוטה. עלילת הסדרה סובבת סביב משפחת גריפין, משפחה בלתי מתפקדת המורכבת מזוג ההורים פיטר ולויס, מילדיהם מג, כריס, סטואי ומכלבם המואנש, בריאן. עלילת הסדרה מתרחשת בעיר הדמיונית, קוהוג, במדינת רוד איילנד אשר בארצות הברית. המשפחה הופכת למגה משפחה בזכות ההורים מג וכריס. הסדרה נוצרה על ידי סת' מקפרלן עבור רשת הטלוויזיה פוקס."
 
 msgctxt "#108740
-msgid ""
-msgstr ""
+msgid "A close-knit family of cheerfully chaotic monsters runs the Furchester Hotel, an almost world-class facility. Owner Funella Furchester greets guests as they arrive, alongside husband Furgus Fuzz and daughter Phoebe. Joining the family at the Furchester are Phoebe's cousin Elmo, who is there for an extended visit, and Cookie Monster, who is working his dream job as a waiter, serving guests with room service and in the dining room. They all come together to solve problems in an attempt to keep their guests happy, an attitude that is in line with the family's motto: "A Furchester never gives up.""
+msgstr "A close-knit family of cheerfully chaotic monsters runs the Furchester Hotel, an almost world-class facility. Owner Funella Furchester greets guests as they arrive, alongside husband Furgus Fuzz and daughter Phoebe. Joining the family at the Furchester are Phoebe's cousin Elmo, who is there for an extended visit, and Cookie Monster, who is working his dream job as a waiter, serving guests with room service and in the dining room. They all come together to solve problems in an attempt to keep their guests happy, an attitude that is in line with the family's motto: "A Furchester never gives up.""
 
 msgctxt "#108750
 msgid "Rechov Sumsum (Hebrew: רחוב סומסום, "Sesame Street") is an Israeli educational television program for preschoolers, based on the popular U.S. children's show "Sesame Street"."
 msgstr ""רחוב סומסום" היא תוכנית טלוויזיה חינוכית לילדים בגילאי הרך. במקור הייתה זו תוכנית אמריקאית בשם "Sesame Street", אחת מתוכניות הילדים הוותיקות ביותר עד היום, ולאור הצלחתה, הופקו גרסאות מקומיות שלה ב-22 מדינות, לרבות בישראל."
 
 msgctxt "#108760
-msgid ""
-msgstr ""
+msgid "Accidentally frozen, pizza-deliverer Fry wakes up 1,000 years in the future. He is taken in by his sole descendant, an elderly and addled scientist who owns a small cargo delivery service. Among the other crew members are Capt. Leela, accountant Hermes, intern Amy, obnoxious robot Bender and lobsterlike moocher "Dr." Zoidberg."
+msgstr "פיוצ'רמה (באנגלית: Futurama) היא קומדיית מצבים אמריקאית זוכת שישה פרסי אמי מסוגת המדע בדיוני באנימציה למבוגרים שנוצרה על ידי מאט גריינינג ושודרה בין 1999 ל-2013, בתחילה בערוץ הטלוויזיה "FOX" ולאחר מכן בערוץ הטלוויזיה "Comedy Central". הסדרה עוקבת אחר שליח פיצה בשם פיליפ ג'יי פריי מניו יורק סיטי של סוף המאה ה-20, אשר שלא במכוון נקפא במשך כ-1,000 שנים, וצריך לסגל את חייו לתקופה החדשה, המאה ה-31. הסדרה שודרה במקור בארצות הברית בין השנים 1999–2003 ברשת פוקס וכללה חמש עונות ובסך הכול 72 פרקים. לאחר שהחוזה עם רשת פוקס תם, הסדרה עברה להיות משודרת בשידורים חוזרים בערוץ Cartoon Network מינואר 2003 ועד דצמבר 2007. בין השנים 2007 עד 2009 הופקו ישירות ל-DVD ארבעה סרטים חדשים אשר ממשיכים את עלילת הסדרה. בהמשך, נערכו הסרטים מחדש ושודרו בנוסף כפרקים בערוץ קומדי סנטרל שרכשה את הסדרה לאחר שהיא בוטלה על ידי רשת FOX."
 
 msgctxt "#108770
-msgid ""
-msgstr ""
+msgid "Garfield and Friends, also known as Garfield: The Animated Series, is an American animated television series based on the comic strip Garfield by Jim Davis. The show was produced by Film Roman, in association with United Media in Season 1, United Media/Mendelson in Season 2 and 3, United Media/Lee Mendelson Productions in Season 4–6, Lee Mendelson Productions in Season 7, and Paws, Inc., and ran on CBS Saturday mornings from September 17, 1988 to December 10, 1994, with reruns airing until October 7, 1995.[2][3] Seven seasons of the series were produced."
+msgstr "גארפילד וחברים (אנגלית: Garfield and Friends) היא סדרת אנימציה המבוססת על רצועת הקומיקס גארפילד מאת ג'ים דייוויס. הסדרה בת 121 הפרקים הופקה לטלוויזיה בין השנים 1988 ל-1994 עבור רשת CBS. בישראל הסדרה שודרה במקור בערוץ הראשון בסוף שנות התשעים בדיבוב המקורי באנגלית עם כתוביות בעברית. כמו כן הסדרה שודרה בערוץ הילדים ובערוץ ג'וניור, וניתן להזמינה לצפייה מיידית גם ב-HOT VOD.פרקי הסדרה הכילו גם עלילה אשר מבוססת על הקומיקס גארפילד וגם עלילה אשר התבססה על הקומיקס "החווה של אורסון" - רצועת קומיקס פחות מוכרות אשר נוצרה גם כן על ידי ג'ים דייוויס.121 הפרקים מכילים 242 תתי-פרקים אשר עסקו בעלילת "גארפילד" ו- 121 תתי-פרקים אשר עסקו בעלילת "החווה של אורסון". בכל פרק הוצגו שני תתי-פרקים של "גארפילד", שני תתי-פרקים קצרים אשר עלילתם התבססה על רצועת קומיקס מקורית ופרק אחד אשר עסק בעלילת "החווה של אורסון". כל פרקי הסדרה נמכרים כיום בארצות הברית בגירסת DVD."
 
 msgctxt "#108780
-msgid ""
-msgstr ""
+msgid "When he holds up the magical Sword of Power and utters the words "By the power of Grayskull," Prince Adam is transformed into Eternia's greatest champion, He-Man, who uses his powers to defend the realm from Skeletor and his evil forces."
+msgstr "הי-מן ושליטי היקום (אנגלית: He-Man and the Masters of the Universe) היא סדרת אנימציה של אולפני "פילמיישן" (Filmation) מז'אנר פנטזיה/פעולה והמדע בדיוני שמבוססת על סדרת צעצועים אשר מיוצרות על ידי חברת מאטל (Mattel) עם אותו שם. במרכזה עומד גיבור עב-שרירים בשם הי-מן וחבורת לוחמי צדק, הנלחמת נגד כנופיית הרוע ברשותו של סקלטור, מכשף שלדי מרושע. הסדרה המקורית שודרה בשנים 1983-1985.לאותה תקופה הי-מן נחשב לפריצת דרך בשביל תוכנית אנימציה לילדים שמציגה לראשונה אלימות פיזית שהובילה לשערוריה מצד ההורים, למרות זאת צברה פופולריות למשך שנים ואף הפכה לסדרת הדגל של אולפני "פילמיישן". הזיכיון הוליד גם סדרת משחקי מחשב, ספרי קומיקס, סרט לייב אקשן משנת 1987 שנקרא "שליטי היקום", סדרת המשך בשם "הרפתקאות החדשים של הי-מן" בתחילת שנות ה-90 של המאה ה-20 וב-2002 יצאה גרסה מחודשת עם אנימציה מתקדמת יותר אבל פחות פופולרית מהמקורי."
 
 msgctxt "#108790
-msgid ""
-msgstr ""
+msgid "King of the Hill is an American animated sitcom created by Mike Judge and Greg Daniels that ran from January 12, 1997 to May 6, 2010 on Fox. It centers on the Hills, a middle-class American family in the fictional city of Arlen, Texas. It attempts to maintain a realistic approach, seeking humor in the conventional and mundane aspects of everyday life."
+msgstr "המלך היל (באנגלית: King of the Hill) היא סדרת טלוויזיה קומית מצוירת שנוצרה על ידי מייק ג'אדג' (היוצר של ביוויס ובאטהד) וגרג דניאלס (התסריטאי של משפחת סימפסון) עבור רשת פוקס האמריקנית שזכתה בשני פרסי אמי.הסדרה שודרה במשך 13 עונות בין השנים 1997–2009. הסדרה מתארת את חייה של משפחת היל השמרנית מתודיסטית החיה בעיירה ארלן בטקסס. בניגוד לסיטקומים מצוירים אחרים (דוגמת איש משפחה וסאות' פארק), הסדרה מנסה לשמור על ריאליזם, ומוצאת את ההומור במצבים שגרתיים. הפופולריות של הסדרה הובילה לשידורים חוזרים שלה בארצות הברית ולשידורה גם במדינות אחרות. ב-2009 רשת פוקס החליטה לסיים את החוזה של הסדרה, ובכך הפכה העונה ה-13 לעונה האחרונה. יוצרי הסדרה ניסו לשכנע את רשת ABC לרכוש את הסדרה, ללא הצלחה. הפרק האחרון, באורך שעה, שודר ב-FOX ב-13 בספטמבר."
 
 msgctxt "#108800
-msgid ""
-msgstr ""
+msgid "The Mr. Peabody & Sherman Show is an American/Canadian animated web television series that is produced by DreamWorks Animation and Jay Ward Productions. The series is based on the 1960s segments, called "Peabody's Improbable History", that aired as part of The Adventures of Rocky and Bullwinkle and Friends, and the 2014 film, Mr. Peabody & Sherman, which was also produced by DreamWorks Animation.[2] The series premiered on October 9, 2015, on Netflix."
+msgstr "המופע של מר פיבודי ושרמן (באנגלית: The Mr. Peabody & Sherman Show) היא סדרת אנימציה אשר הופקה על ידי אולפני ההנפשה של דרימוורקס. הסדרה היא סדרת בת של הסרט "מר פיבודי ושרמן".העונה הראשונה עלתה בנטפליקס ב-9 באוקטובר 2015, העונה השנייה ב-18 במרץ 2016, העונה השלישית ב-21 באוקטובר 2016 והעונה הרביעית ב-21 באפריל 2017. לסדרה הוזמנו 78 פרקים בסך הכל."
 
 msgctxt "#108810
-msgid ""
-msgstr ""
+msgid "Rugrats is an American animated television series created by Arlene Klasky, Gábor Csupó and Paul Germain for Nickelodeon. The show focuses on a group of toddlers, most prominently Tommy, Chuckie, twins Phil and Lil, and Angelica, and their day-to-day lives, usually involving common life experiences that become adventures in the babies' imaginations.[3][4] Adults in the series are almost always unaware of what the children are up to."
+msgstr "רגרטס (באנגלית: Rugrats) היא סדרת אנימציה שמשודרת בערוץ ניקלודאון. הסדרה מספרת על השקפת חייהם של תינוקות וילדים קטנים והצרות שהם נקלעים לתוכן. ב-2003 יצא לסדרה ספין-אוף בשם "ראגרטס כבר גדולים", העוקב אחרי הדמויות תשע שנים מאוחר יותר. לסדרה שלושה סרטים קולנועיים: "רגרטס: הסרט", "רגרטס בפריס" ו"רגרטס משתוללים".הסרט הקולנועי הראשון של הסדרה, "רגרטס: הסרט", דובב בשנת 1998 לעברית על ידי שרון כהן, שם דובב על ידי אנשים שונים בניגוד לדיבוב העברי של הסדרה, בהם שרית וינו אלעד בתפקיד טומי, סיוון שביט בתפקיד דיל ואנג׳ליקה, וענת וקסמן ואוהד שחר (שבאותה תקופה היו נשואים) בתפקיד ההורים של טומי ודיל, דידי וסטן פיקלז. הדיבוב הופץ רק בבתי הקולנוע ובקלטות הווידאו. בעקבות הסרט, העונה הראשונה של הסדרה דובבה לעברית ושודרה בישראל בערוץ הראשון לקראת סוף שנות התשעים."
 
 msgctxt "#108820
-msgid ""
-msgstr ""
+msgid "Sarah is a 7-year-old girl with big eyes and a green hat. She lives with her best friend, a quacky, slightly manic fowl appropriately named Duck. Each episode features the pair setting out on simple but exciting adventures as they explore the world in their own imaginative way. The animated series focuses on the experiences of childhood as seen through Sarah's eyes as she learns new things every day. The show's objectives are to help kids learn about friendship, imagination and problem solving."
+msgstr "Sarah is a 7-year-old girl with big eyes and a green hat. She lives with her best friend, a quacky, slightly manic fowl appropriately named Duck. Each episode features the pair setting out on simple but exciting adventures as they explore the world in their own imaginative way. The animated series focuses on the experiences of childhood as seen through Sarah's eyes as she learns new things every day. The show's objectives are to help kids learn about friendship, imagination and problem solving."
 
 msgctxt "#108830
-msgid ""
-msgstr ""
+msgid "High-tech tales of adventurers rocketing around the world to fight evildoers."
+msgstr "High-tech tales of adventurers rocketing around the world to fight evildoers."
 
 msgctxt "#108840
-msgid ""
-msgstr ""
+msgid "Drivers compete in road rallies across North America, each hoping to win the title of World's Wackiest Racer."
+msgstr "Drivers compete in road rallies across North America, each hoping to win the title of World's Wackiest Racer."
 
 msgctxt "#108850
 msgid "Shaman King (Japanese: シャーマンキング Hepburn: Shāman Kingu?) is a Japanese manga series written and illustrated by Hiroyuki Takei."
 msgstr "שאמן קינג (ביפנית: シャーマンキング , באנגלית: Shaman King) היא שמה של סדרת מאנגה ואנימה יפנית. סדרת המאנגה מכילה 285 פרקים ב-32 כרכים שונים. סדרת האנימה אשר מבוססת על סדרת המאנגה, בת 64 פרקים והופקה לטלוויזיה בין השנים 2001 ל-2002. בישראל הסדרה משודרת בערוץ ג'טיקס."
 
 msgctxt "#108860
-msgid ""
-msgstr ""
+msgid "Wally sets out with a magic walking stick and his dog Woof."
+msgstr "Wally sets out with a magic walking stick and his dog Woof."
 
 msgctxt "#108870
-msgid ""
-msgstr ""
+msgid "Gravity Falls is an American animated television series produced by Disney Television Animation originally for Disney Channel (and then later for Disney XD) from June 15, 2012 to February 15, 2016."
+msgstr "רוויטי פולס (באנגלית: Gravity Falls) היא סדרת טלוויזיה קומית מצוירת המשודרת בערוץ דיסני ודיסני XD. מאז עלתה לאוויר זכתה הסדרה לביקורות חיוביות רבות ולמדרוג גבוה. ב-2013 דורגה גרוויטי פולס על ידי מגזין TV Guide כאחת מ-60 סדרות האנימציה הגדולות ביותר בכל הזמנים."
 
 msgctxt "#108880
-msgid ""
-msgstr ""
+msgid "Hey Arnold! is an American animated television series created by Craig Bartlett that aired on Nickelodeon from October 7, 1996 to June 8, 2004. The show centers on a fourth grader named Arnold, who lives with his grandparents in an inner-city boarding house. Episodes center on his experiences navigating big city life while dealing with the problems he and his friends encounter.Bartlett's idea for the show is based on a minor character named Arnold whom he created while working on Pee-wee's Playhouse. The executives enjoyed the character, and Bartlett completed the cast by drawing inspiration from people he grew up with in Portland, Oregon, and Seattle, Washington. Bartlett created the pilot episode in his living room in 1994 and official production began in 1995. The animators worked to transform Arnold from clay animation to cel animation, leading to the series' premiere. The show finished production in 2001 after 5 seasons and 100 episodes. A feature film based on the series, Hey Arnold!: The Movie, was released in 2002. All five seasons have been released on DVD.A television film continuation of the series, Hey Arnold!: The Jungle Movie, has been green-lit. It is expected to pick up from where the series ended and will resolve unanswered plot lines of the story.[2][3][4] The film is scheduled to premiere on November 24, 2017."
+msgstr "היי ארנולד! (באנגלית: !‏Hey Arnold) היא סדרת אנימציה ששודרה בישראל בערוץ 2. כיום משודרת התוכנית בערוץ ניקלודאון ובערוץ 10. הסדרה מספרת על חייו של ארנולד, ילד חכם וטוב לב, שמתמודד עם משפחה וחברים מוזרים ומצחיקים. התוכנית עלתה לשידור ב-7 באוקטובר 1996 וירדה ב-8 ביוני 2004. בשנת 2002 יצא "היי ארנולד!: הסרט", סרט קולנוע באורך מלא המבוסס על הסדרה. ב-7 במרץ הכריז הבמאי של הסדרה המקורית כי ניקלודיאון נתנו אור ירוק לעשיית סרט טלוויזיה שממשיך את הסדרה ויקרא היי ארנולד סרט הג'ונגל, בנוסף הוא הכריז כי כל המדבבים יחזרו לדבב את הדמויות שלהם. ב-24 ביולי 2016 בטקס הקומיק-קון נחספו העיצובים המחודשים של דמויות הסדרה והמראה שלהן בסרט. תאריך יציאת הסרט מיועד לסוף 2016 או בשנת 2017."
 
 msgctxt "#108890
-msgid ""
-msgstr ""
+msgid "Mr. Bean, also known as Mr. Bean: The Animated Series, is an animated television sitcom produced by Tiger Aspect Productions and, only for its first three seasons, by Richard Purdum Productions and Varga Holdings. It is based on the British live-action series of the same name, and the characters included Mr. Bean, Irma Gobb, Teddy, and the Reliant Supervan's mysterious driver, with the new addition of Mrs. Wicket, Bean's landlady, and her evil cat Scrapper. In February 2001, the series was officially announced, with it premièring shortly afterwards."
+msgstr "מיסטר בין (באנגלית: Mr. Bean: The Animated Series) היא תוכנית טלוויזיה מונפשת מסוגת קומדיית סלפסטיק, משנת 2002 שנוצרה באולפני Varga לפי תוכנית הטלוויזיה הפופולרית "מיסטר בין". התוכנית כוללת דמויות מהתוכנית המקורית, לרבות מיסטר בין, אירמה גוב (חברתו של בין), טדי והנהג המסתורי של הרליאנט סופר-ואן, בתוספת דמויות חדשות: גברת ויקט - בעלת הדירה של בין - וחתולה האכזרי סקראפר."
 
 msgctxt "#108900
-msgid ""
-msgstr ""
+msgid "Code Lyoko tells the story of a group of students who uncover a parallel universe called Lyoko inside a super-computer, which entraps a malevolent sentient AI called X.A.N.A"
+msgstr "Code Lyoko tells the story of a group of students who uncover a parallel universe called Lyoko inside a super-computer, which entraps a malevolent sentient AI called X.A.N.A"
 
 msgctxt "#108910
-msgid ""
-msgstr ""
+msgid "Code Lyoko: Evolution is the sequel to the French animated television series Code Lyoko. Set one year after the events of the original series, Jeremy Belpois, Odd Della Robbia, Ulrich Stern, William Dunbar, Yumi Ishiyama and Aelita Schaeffer return to their daily lives and routines at Kadic Academy. XANA, despite their success in defeating it previously, suddenly reappears, reborn with even more strength and power than ever before. The protagonists resume their former double lives in order to protect humanity from XANA's evil schemes once again. Joined by William Dunbar, who has finally been accepted as the sixth Lyoko warrior, and an unreliable girl-genius named Laura Gauthier, the seven heroes are bent on unraveling the reasons for such a return and to exterminate the malevolently evil sentient, autonomous artificial intelligence/multi-agent system that is threatening the world once ag."
+msgstr "Code Lyoko: Evolution is the sequel to the French animated television series Code Lyoko. Set one year after the events of the original series, Jeremy Belpois, Odd Della Robbia, Ulrich Stern, William Dunbar, Yumi Ishiyama and Aelita Schaeffer return to their daily lives and routines at Kadic Academy. XANA, despite their success in defeating it previously, suddenly reappears, reborn with even more strength and power than ever before. The protagonists resume their former double lives in order to protect humanity from XANA's evil schemes once again. Joined by William Dunbar, who has finally been accepted as the sixth Lyoko warrior, and an unreliable girl-genius named Laura Gauthier, the seven heroes are bent on unraveling the reasons for such a return and to exterminate the malevolently evil sentient, autonomous artificial intelligence/multi-agent system that is threatening the world once ag."
 
 msgctxt "#108920
 msgid ""
