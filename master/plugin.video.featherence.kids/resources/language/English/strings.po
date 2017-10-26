@@ -819,8 +819,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#10258
-msgid "Jungle Book"
-msgstr "ספר הגונגל"
+msgid "The Jungle Book: The Adventures of Mowgli"
+msgstr "ספר הגונגל: ההרפתקאות של מוגלי"
 
 msgctxt "#10259
 msgid ""
@@ -4055,8 +4055,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#102580
-msgid ""
-msgstr ""
+msgid "In the jungles of India, an orphaned human infant named Mowgli is taken in by a wolf pack under the sponsorship of the black panther, Bagheera. As Mowgli grows up with his canine family, he finds that he has a lot to learn about life in the jungle under the tutelage of Bagheera and Baloo the Bear. At the same time, Mowgli learns to thrive in his own way as he handles the threat of the tiger, Shere Khan and his minions. Throughout the boy's adventures, there is also the growing mystery of his origins and humanity that would change his life forever."
+msgstr "In the jungles of India, an orphaned human infant named Mowgli is taken in by a wolf pack under the sponsorship of the black panther, Bagheera. As Mowgli grows up with his canine family, he finds that he has a lot to learn about life in the jungle under the tutelage of Bagheera and Baloo the Bear. At the same time, Mowgli learns to thrive in his own way as he handles the threat of the tiger, Shere Khan and his minions. Throughout the boy's adventures, there is also the growing mystery of his origins and humanity that would change his life forever."
 
 msgctxt "#102590
 msgid ""
@@ -4536,7 +4536,7 @@ msgid "This animated series that follows the adventures of popular DC Comics cha
 msgstr "This animated series that follows the adventures of popular DC Comics character Green Lantern features Earth's Green Lantern, Hal Jordan, and partner Kilowog as they find themselves alone on the edge of Guardian Frontier fighting off an invasion by the deadly Red Lantern Corps. The Red Lanterns, powered by pure rage, have sworn to destroy the Green Lantern Corps and everything it stands for. Hal, dispatched on an experimental spacecraft, is soon joined by a new group of heroes on a mission to protect Guardian Frontier -- and the Green Lantern Corps itself."
 
 msgctxt "#103780
-msgid "Guardians of the Galaxy is an American animated television series. It is based on the Marvel Comics superhero team of the same name. It is produced by Marvel Television and Marvel Animation. The series airs on Disney XD. It premiered on September 26, 2015, as a part of the Marvel Universe block.While the series features the same main characters as the homonymous film,[2] director and writer James Gunn has stated that it is not a part of the Marvel Cinematic Universe nor connected to the film."
+msgid "Peter Quill is Star-Lord, the brash adventurer who, to save the universe from its greatest threats, joins forces with a quartet of disparate misfits--fan-favorite Rocket Raccoon, a tree-like humanoid named Groot, the enigmatic, expert fighter Gamora and the rough edged warrior Drax the Destroyer."
 msgstr "שומרי הגלקסיה (באנגלית: Guardians of the Galaxy) היא סדרת אנימציה מבית מארוול המשודרת בערוץ דיסני XD החל מה-1 באוגוסט 2015. הסדרה היא ספין-אוף טלוויזיוני לסרט שומרי הגלקסיה, אשר ממשיכה את עלילותיו. המדבבים במקור הם: ויל פרידל, טרוור דוול, ונסה מרשל, קווין מייקל ריצ'רדסון ודייוויד סובולוב. בערוץ דיסני ישראל, הסדרה עלתה ב-7 בפברואר 2016.לסדרה יש עונת קצרים הנקראת גם מקורות, אשר מספרת את סיפור מקורותם של סטאר-לורד, גאמורה, רוקט ראקון, דראקס וגרוט, עוד לפני שהתאחדו יחדם כשומרי הגלקסיה, ושודרה בארצות הברית החל מה-1 באוגוסט 2015 עד ה-29 באוגוסט 2015 ובישראל החל מה-7 בפברואר 2016 עד ה-18 בפברואר 2016."
 
 msgctxt "#103790
@@ -4620,8 +4620,8 @@ msgid "Danger Mouse is a British animated television series, and it serves as a 
 msgstr "סוכן חשאי: עכבר (באנגלית: Danger Mouse) היא סדרת אנימציה בריטית המהווה ריבוט לסדרה דיינג'ר מאוס מ-1981. הסדרה משודרת ב-CBBC החל מה-28 בספטמבר 2015 ובישראל תעלה ב-16 ביולי 2017 בערוץ דיסני ישראל.לאחר שלושה שבועות מבכורת הסדרה, הסדרה צברה כ-2.4 מיליון צפיות והפכה לאחת מהסדרות הנצפות ביותר ב-CBBC.[CR]ב-19 במאי 2016 הסדרה חודשה לעונה שנייה, וב-7 באפריל 2017 לעונה שלישית עם 26 פרקים."
 
 msgctxt "#103990
-msgid "Charlie and Lola are fictional children created by the English writer and illustrator Lauren Child in 2000. They were introduced in a series of picture books and later adapted as animated television characters. Lola is an energetic, imaginative little girl; Charlie is a patient and kind older brother who is always willing to help his little sister Lola learn and grow."
-msgstr "Charlie and Lola are fictional children created by the English writer and illustrator Lauren Child in 2000. They were introduced in a series of picture books and later adapted as animated television characters. Lola is an energetic, imaginative little girl; Charlie is a patient and kind older brother who is always willing to help his little sister Lola learn and grow."
+msgid "I have this little sister, Lola. She is small and very funny. Charlie & Lola is fun series targeted at preschool audiences about a boy named Charlie and his sister, Lola. Featuring a unique "collage" animation style and catchy background themes, the show follows the pair as Charlie helps out his often rather independent-minded sister, Lola. Lola can be rather firm-minded when it comes to things like not wanting to go to bed, or doing things on her own, but Charlie doesn't mind too much --- he knows how to come up with a creative solution to help Lola see a different point of view. Viewers can accompany the two as they travel to fantastic worlds using their amazing imaginations. Charlie & Lola is based on a series of books by Lauren Child, who works on the show as an associate producer."
+msgstr "I have this little sister, Lola. She is small and very funny. Charlie & Lola is fun series targeted at preschool audiences about a boy named Charlie and his sister, Lola. Featuring a unique "collage" animation style and catchy background themes, the show follows the pair as Charlie helps out his often rather independent-minded sister, Lola. Lola can be rather firm-minded when it comes to things like not wanting to go to bed, or doing things on her own, but Charlie doesn't mind too much --- he knows how to come up with a creative solution to help Lola see a different point of view. Viewers can accompany the two as they travel to fantastic worlds using their amazing imaginations. Charlie & Lola is based on a series of books by Lauren Child, who works on the show as an associate producer."
 
 #
 msgctxt "#104000
@@ -4917,11 +4917,11 @@ msgid "In Minato, Tokyo, a middle-school student named Usagi Tsukino befriends L
 msgstr "העלילה סובבת סביב הגיבורה הראשית, אוסגי צוקינו, ילדת בית ספר רגילה שנמצאה על ידי חתולה מדברת בשם לונה. אוסגי לומדת שבקרוב מאוד כדור הארץ יותקף על ידי ממלכת האופל (באנגלית: Dark kingdom) שבעבר הרחוק השמידו את ממלכת הירח. כוחותיה הרדומים של אוסגי מתעוררים ובעזרת הכוחות החדשים שלה וחבריה הרבים יוצאים להגן על כדור הארץ."
 
 msgctxt "#104730
-msgid "Samurai Jack tells the story of a young prince (voiced by Phil LaMarr) from feudal Japan, whose father acquired a magical katana that he used to defeat and seal a shape-shifting demon named Aku (Mako Iwamatsu). "
+msgid "Made by Genndy Tartakovsky, this cartoon tells the story of a great warrior displaced to the distant future by the evil shape-shifting wizard Aku. The world has become a bleak place under the rule of Aku, segregated into fantastic tribes and ruled by Aku's evil robot warlords. Jack travels this foreign landscape in search of a time portal that can return him to his home time so he can "undo the future that is Aku!"."
 msgstr "הסדרה מגוללת את סיפור הרפתקאותיו של נסיך ממלכה מהמזרח הרחוק מתקופת ימי הביניים. כאשר האימפריה של אביו הקיסר מושמדת על ידי השד אקו (יפנית 悪 "רשע"), שד שהובס בעבר על ידי האב, נמלט הנסיך - אז ילד צעיר, ומתחיל באימוני לחימה על מנת לשוב בבוא היום ולהביס את השד."
 
 msgctxt "#104740
-msgid "Emilio Salgari wrote several novels chronicling the adventures of Sandokan and Yanez, two of his most legendary creations. The pirates are introduced in The Tigers of Mompracem, which portrays their relentless struggle against the Dutch and British powers that seek to wipe them out. In subsequent novels they battle against James Brooke, the Raja of Sarawak and also travel to India to measure themselves against the Thugs, a notorious band of stranglers devoted to the goddess Kali."
+msgid "Sandokan the animated series was released in 1992 by Spanish animation studio BRB International, and broadcast in the United Kingdom on Channel 4. This children's animated show, written by Doug Stone and Dave Mallow, is loosely based on Salgari's novels. In the show Sandokan (here an anthropomorphized tiger) is an usurped prince who travels the seas as a pirate seeking to reclaim his rightful throne from the Rajah of Sarawak. The first nine episodes of the series are available in three DVD volumes in the United Kingdom. An animated movie, The Princess and the Pirate, was released in 1995."
 msgstr "הסדרה מבוססת על סדרת ספריו של הסופר האיטלקי אמיליו סלגרי (1862 - 1911) המספרים את סיפור הרפתקאותיהם של סנדוקאן, שודד ים מלזי המכונה "הנמר ממלזיה", ושל יאנז, הרפתקן פורטוגזי המשמש כיד ימינו. עלילת הספרים שונתה באופן משמעותי לצורך הסדרה המצוירת, ומדמות של פיראט אנטי-גיבור, כפי שהיא הוצגה בספרים, הפך סנדוקאן לנסיך שהודח מכיסאו ומנסה להשיב לעצמו את כס המלוכה."
 
 msgctxt "#104750
@@ -4937,7 +4937,7 @@ msgid "Power Rangers is a long-running American entertainment and merchandising 
 msgstr "פאוור ריינג'רס (אנגלית: Power Rangers) היא סדרת טלוויזיה וסדרת סרטים המבוססת ברובה על הסדרה היפנית "סופר סנטאי". זוהי אינה גרסה מדובבת בלבד של הסדרה היפנית המקורית, אלא למעשה סדרה "חדשה" עם שחקנים אמריקאים אשר משולבת עם קטעי אקשן רבים שנלקחו מהסדרה היפנית המקורית."
 
 msgctxt "#104780
-msgid "Pokémon (ポケモン Pokemon?, /ˈpoʊkeɪmɒn/ poh-kay-mon)12 is a media franchise owned by The Pokémon Company,3 and created by Satoshi Tajiri in 1995.4 It is centered on fictional creatures called "Pokémon", which humans capture and train to fight each other for sport."
+msgid "A young boy named Ash Ketchum embarks on a journey to become a "Pokemon Master" with his first Pokemon, Pikachu. Joining him on his travels are Brock, a girl-obsessed Rock Pokemon Trainer, and Misty, a tomboyish Water Pokemon Trainer who may have a crush on him. Ash and Co. end up traveling through various regions, including Kanto, the Orange Islands, and Johto, and then enter the Pokemon League competitions there. Along the way, they run into many confrontations with Jessie, James, and Meowth, a trio of Pokemon thieves who are apart of an evil organization called "Team Rocket". But everytime Team Rocket try to do their evil deeds, they fail thanks to Ash and his Pokemon."
 msgstr "פוקימון (באנגלית: Pokémon, ביפנית: ポケモン) הוא זיכיון מדיה שבבעלות חברת משחקי הווידאו נינטנדו אשר נוצר במקור על ידי סטושי טג'ירי. המוצר המקורי בזיכיון היה צמד משחקי תפקידים ששווקו על ידי נינטנדו בשנת 1996 כמשחקי וידאו עבור קונסולת המשחקים הניידת גיימבוי."
 
 msgctxt "#104790
@@ -4945,12 +4945,12 @@ msgid "Each season focuses on a specific ninja to improve character development.
 msgstr "הסדרה המצליחה מבית היוצר של לגו (Lego). כוכבי הסדרה מתמחים באומנות הלחימה המיוחדת ספינג'יטסו. כעת, עליהם להתמקצע, לאחד כוחות, ללמוד לשתף פעולה ולהגן על היקום כולו."
 
 msgctxt "#104800
-msgid "This version of tells a story of an extremely gullible, naive and morally confused wooden doll/marionette brought to life by a mystical turquoise-haired fairy. Pinocchio (Mokku) is characterized as having many character faults which he must learn to overcome in order to be worthy of being granted humanity. Some of these character faults include selfishness, rudeness, insensitivity, indolence, obstinacy, over- trusting, self-pity, stupidity, disobedience, compulsive lying, arrogance, greed, cowardice, recklessness, cruelty, foolishness and an inability to learn from mistakes."
-msgstr "רפתקאות פינוקיו (יפנית: 樫の木モック , אנגלית: Saban's Adventures of Pinocchio או Mokku of the Oak Tree)‏ היא סדרת אנימה יפנית בת 52 פרקים שהופקה לטלוויזיה ב-1972. הסדרה שודרה בערוץ 2 בשנות התשעים.[CR]הסדרה, מבוססת על פי הספר פינוקיו של הסופר האיטלקי קרלו לורנציני."
+msgid "The episodes tell the classic story of Pinocchio the wooden puppet, who often gets into trouble through being mischievous and naive. He leaves Geppetto to follow a puppet theater and together with a duck named Gina and a woodpecker called Rocco, Pinocchio finds his way through various adventures and eventually learns about values like friendship and courage. In the end, he finds his way back to Geppetto and a fairy transforms him into a real boy."
+msgstr "The episodes tell the classic story of Pinocchio the wooden puppet, who often gets into trouble through being mischievous and naive. He leaves Geppetto to follow a puppet theater and together with a duck named Gina and a woodpecker called Rocco, Pinocchio finds his way through various adventures and eventually learns about values like friendship and courage. In the end, he finds his way back to Geppetto and a fairy transforms him into a real boy."
 
 msgctxt "#104810
-msgid "A group of mutated turtle warriors must emerge from the shadows to protect New York City from an uprising criminal gang of ninjas."
-msgstr "A group of mutated turtle warriors must emerge from the shadows to protect New York City from an uprising criminal gang of ninjas."
+msgid "The most lovable friendly ghost, returns in this animated show, and Casper along with his 3 uncles, Fatso, Stretch and Stinkie who are there to scare and cause havoc, where Casper just trys to make friends. But would anyone be friends with a ghost?"
+msgstr "The most lovable friendly ghost, returns in this animated show, and Casper along with his 3 uncles, Fatso, Stretch and Stinkie who are there to scare and cause havoc, where Casper just trys to make friends. But would anyone be friends with a ghost?"
 
 msgctxt "#104820
 msgid "Charlie Brown is the central protagonist of the long-running comic strip Peanuts, syndicated in daily and Sunday newspapers in numerous countries all over the world."
@@ -4969,7 +4969,7 @@ msgid "Two anthropomorphic, flightless ducks named SwaySway (Robbie Daymond) and
 msgstr "געגע וברווז הם צמד ברווזים מחלקי לחם בעולמם "אגמגיה" העשוי ממים. געגע הוא צנום וצבע עורו ירוק זרחני, הוא מקבל ההחלטות מבין השניים אף על פי שכושר השיפוט שלו נוטה להשתבש מפעם לפעם ועל כך הוא מפצה בשליטה מלאה על ניווט הטנדר של השניים. ברווז הוא קטן ועגלגל, ניחן בהפרעת ריכוז קלה ומפצה עליה בהתלהבות שאינה נגמרת ובנאמנות בלתי מתפשרת לחברו.[CR]לעתים קרובות, געגע וברווז נקלעים להרפתקאות שונות ומשונות, אך הם גם צריכים להיזהר, מפני שיש להם לא מעט אויבים שרוצים ברעתם."
 
 msgctxt "#104860
-msgid "The story, set in the 17th century, follows a young Dogtanian (D'Artacan in the original Spanish version and Darutaniyan (ダルタニヤン) in the Japanese version and voiced by Satomi Majima (間嶋 里美)) who travels to Paris in order to become one of the King Louis XIII of France's musketeers."
+msgid "The exciting story of a loyal, young courageous pup and three debonair Muskehounds, fighting for honour and justice; a law unto themselves but forever faithfully following their motto, 'One For All & All For One'."
 msgstr "סדרת אנימציה המבוססת על הקלאסיקה של שלושת המוסקטרים כשהדמויות הראשיות בסיפור הן כלבים. דרטניאן, יוצא לצרפת כדי להיות אחד מהמוסקטרים של המלך. הוא מתיידד עם שלושת המוסקטרים ויחד עם חבריו האצילים מלמדים אותנו מהם אבירות, אמת, צדק, כבוד וחברות כשהמוטו שלהם הוא אחד בשביל כולם וכולם בשביל אחד."
 
 msgctxt "#104870
@@ -5351,7 +5351,7 @@ msgid ""
 msgstr ""
 
 msgctxt "#105820
-msgid "הרובוטריקים (באנגלית: Transformers) הנה סדרת תכניות ילדים שהומצאה בעקבות סדרת צעצועים מצליחה של חברת טאקארה היפנית ולאחריה נוצרו גם סרטים נלווים וספרי קומיקס."
+msgid "The Transformers: More Than Meets The Eye!" is an animated television series depicting a war between giant robots who could transform into vehicles, animals, and other objects."
 msgstr "הרובוטריקים (באנגלית: Transformers) הנה סדרת תכניות ילדים שהומצאה בעקבות סדרת צעצועים מצליחה של חברת טאקארה היפנית ולאחריה נוצרו גם סרטים נלווים וספרי קומיקס."
 
 msgctxt "#105830

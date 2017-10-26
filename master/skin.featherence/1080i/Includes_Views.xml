@@ -770,11 +770,11 @@
 	  <visible>$EXP[View57]</visible>
       <control type="group">
 		<animation condition="Control.HasFocus(7017) + Player.HasVideo" effect="slide" start="0,0" end="0,-100" time="700" reversible="false">Conditional</animation>
-		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View57_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,12" reversible="true">Conditional</animation>
-		<animation description="מרווח_slide_he" condition="Skin.HasSetting(View57_Distance) + String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,12" reversible="true">Conditional</animation>
+		<animation description="מרווח_slide_en" condition="!Skin.HasSetting(View57_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,12" reversible="true">Conditional</animation>
+		<animation description="מרווח_slide_he" condition="!Skin.HasSetting(View57_Distance) + String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,12" reversible="true">Conditional</animation>
 		<animation description="slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" end="-10,0" reversible="true">Conditional</animation>
-		<animation condition="Skin.HasSetting(View57_Distance) + Control.HasFocus(7017)" effect="slide" start="0,0" end="0,60" delay="0" time="700" reversible="false">Conditional</animation>
-		<animation condition="!Skin.HasSetting(View57_Distance) + Control.HasFocus(7017)" effect="slide" start="0,0" end="0,80" delay="0" time="700" reversible="false">Conditional</animation>
+		<animation condition="!Skin.HasSetting(View57_Distance) + Control.HasFocus(7017)" effect="slide" start="0,0" end="0,60" delay="0" time="700" reversible="false">Conditional</animation>
+		<animation condition="Skin.HasSetting(View57_Distance) + Control.HasFocus(7017)" effect="slide" start="0,0" end="0,80" delay="0" time="700" reversible="false">Conditional</animation>
 		<control type="panel" id="57">
 		  <include>TopInformationSize1</include>
 		  <include>Slide1</include>
@@ -805,10 +805,10 @@
 		<include condition="!Skin.HasSetting(Performance)">Fade_MoviesTVCoversOverlay</include>
 		<include>Slide2.4</include>
 		
-		<animation description="מרווח עטיפות" condition="$EXP[View57] + Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
-		<animation description="מרווח פוסטרים" condition="$EXP[View57] + Skin.HasSetting(View57_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
-		<animation description="מרווח עטיפות" condition="$EXP[View59] + Skin.HasSetting(View59_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
-		<animation description="מרווח פוסטרים" condition="$EXP[View59] + Skin.HasSetting(View59_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
+		<animation description="מרווח עטיפות" condition="$EXP[View57] + !Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
+		<animation description="מרווח פוסטרים" condition="$EXP[View57] + !Skin.HasSetting(View57_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
+		<animation description="מרווח עטיפות" condition="$EXP[View59] + !Skin.HasSetting(View59_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
+		<animation description="מרווח פוסטרים" condition="$EXP[View59] + !Skin.HasSetting(View59_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
 		<include>View57_Common</include>
 		<control type="label" description="כותרת">
 		  <animation condition="Skin.HasSetting(ShowDVDCases2)" effect="fade" start="60" end="60" time="0">Conditional</animation>
@@ -829,21 +829,21 @@
   <include name="ViewDesign_57_FocusedLayout">
 	<include>AutoView</include>
 	<control type="group">
-		<animation condition="$EXP[View57] + !Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View57_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+		<animation condition="$EXP[View57] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 		
-		<animation description="מרווח עטיפות+זום" condition="$EXP[View57] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="126.5,122" reversible="true">Conditional</animation>
-		<animation description="מרווח עטיפות" condition="$EXP[View57] + Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
+		<animation description="מרווח עטיפות+זום" condition="$EXP[View57] + !Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="126.5,122" reversible="true">Conditional</animation>
+		<animation description="מרווח עטיפות" condition="$EXP[View57] + Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View57_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
 
-		<animation description="מרווח פוסטרים+זום" condition="$EXP[View57] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="144,126.5" reversible="true">Conditional</animation>
-		<animation description="מרווח פוסטרים" condition="$EXP[View57] + Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
+		<animation description="מרווח פוסטרים+זום" condition="$EXP[View57] + !Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View57_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="144,126.5" reversible="true">Conditional</animation>
+		<animation description="מרווח פוסטרים" condition="$EXP[View57] + Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View57_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
 		
-		<animation condition="$EXP[View59] + !Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View59_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+		<animation condition="$EXP[View59] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View59_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 		
-		<animation description="מרווח עטיפות+זום" condition="$EXP[View59] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View59_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="126.5,122" reversible="true">Conditional</animation>
-		<animation description="מרווח עטיפות" condition="$EXP[View59] + Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View59_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
+		<animation description="מרווח עטיפות+זום" condition="$EXP[View59] + !Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View59_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="126.5,122" reversible="true">Conditional</animation>
+		<animation description="מרווח עטיפות" condition="$EXP[View59] + Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View59_Distance) + !Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="116.5,112" reversible="true">Conditional</animation>
 
-		<animation description="מרווח פוסטרים+זום" condition="$EXP[View59] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View59_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="144,126.5" reversible="true">Conditional</animation>
-		<animation description="מרווח פוסטרים" condition="$EXP[View59] + Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View59_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
+		<animation description="מרווח פוסטרים+זום" condition="$EXP[View59] + !Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View59_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="144,126.5" reversible="true">Conditional</animation>
+		<animation description="מרווח פוסטרים" condition="$EXP[View59] + Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View59_Distance) + Skin.HasSetting(ShowDVDCases)" effect="zoom" center="auto" end="134,116.5" reversible="true">Conditional</animation>
 		
 		<include>View57_Common</include>
 		<control type="image" description="סמן">
@@ -908,7 +908,7 @@
 	  <bordertexture colordiffuse="$VAR[MenuColor]" border="0">buttons/ButtonA0.png</bordertexture>
 	  <bordersize>1</bordersize>
 	  <aspectratio>stretch</aspectratio>
-	  <visible>!Skin.HasSetting(View57_Distance)</visible>
+	  <visible>Skin.HasSetting(View57_Distance)</visible>
 	</control>
 	<control type="image" description="תמונה">
 	  <include>BorderFrame</include>
@@ -920,7 +920,7 @@
 	  <bordertexture colordiffuse="$VAR[MenuColor]" border="0">buttons/ButtonA0.png</bordertexture>
 	  <bordersize>1</bordersize>
 	  <aspectratio>stretch</aspectratio>
-	  <visible>Skin.HasSetting(View57_Distance)</visible>
+	  <visible>!Skin.HasSetting(View57_Distance)</visible>
 	</control>
 	<include>Rating_</include>
 	<include>Duration_</include>
@@ -962,8 +962,8 @@
     <control type="group" description="">
 	  <visible>$EXP[View59]</visible>
       <control type="group">
-		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View59_Distance) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" end="-12,12" reversible="true">Conditional</animation>
-		<animation description="מרווח_slide_he" condition="Skin.HasSetting(View59_Distance) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="-12,12" reversible="true">Conditional</animation>
+		<animation description="מרווח_slide_en" condition="!Skin.HasSetting(View59_Distance) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" end="-12,12" reversible="true">Conditional</animation>
+		<animation description="מרווח_slide_he" condition="!Skin.HasSetting(View59_Distance) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="-12,12" reversible="true">Conditional</animation>
 
 		<animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
 		
@@ -1000,8 +1000,8 @@
 	  <visible>$EXP[View58]</visible>
       <control type="group">
 	    <animation condition="Control.HasFocus(7017) + Player.HasVideo" effect="slide" start="0,0" end="0,-45" time="700" reversible="false">Conditional</animation>
-		<animation description="מרווח_slide_en" condition="Skin.HasSetting(View58_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,0" reversible="true">Conditional</animation>
-	    <animation description="מרווח_slide_he" condition="Skin.HasSetting(View58_Distance) + String.IsEqual(System.Language,Hebrew)" effect="slide" end="-32,0" reversible="true">Conditional</animation>
+		<animation description="מרווח_slide_en" condition="!Skin.HasSetting(View58_Distance) + !String.IsEqual(System.Language,Hebrew)" effect="slide" end="-12,0" reversible="true">Conditional</animation>
+	    <animation description="מרווח_slide_he" condition="!Skin.HasSetting(View58_Distance) + String.IsEqual(System.Language,Hebrew)" effect="slide" end="-32,0" reversible="true">Conditional</animation>
 
         <control type="panel" id="58">
 		  <include>TopInformationSize1</include>
@@ -1043,10 +1043,10 @@
 		<control type="group">
 			<include>View54_Boat_Itemlayout_Animation</include>
 			<include condition="!Skin.HasSetting(Performance)">Fade_MoviesTVCoversOverlay</include>
-			<animation description="מרווח עטיפות" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
-			<animation description="מרווח פוסטרים" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
-			<animation description="מרווח עטיפות" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
-			<animation description="מרווח פוסטרים" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + !Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
+			<animation description="מרווח עטיפות" condition="$EXP[View58] + !Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
+			<animation description="מרווח פוסטרים" condition="$EXP[View58] + !Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
+			<animation description="מרווח עטיפות" condition="$EXP[View54] + !Skin.HasSetting(View54_Distance) + Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
+			<animation description="מרווח פוסטרים" condition="$EXP[View54] + !Skin.HasSetting(View54_Distance) + !Skin.HasSetting(ShowDVDCases2)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
 			<include>Slide2.4</include>
 			<include>View58_Common</include>
 			<control type="label" description="כותרת">
@@ -1081,17 +1081,17 @@
 		<include>AutoView</include>
 		<control type="group">
 			<include>View54_Boat_Focuslayout_Animation</include>
-			<animation condition="$EXP[View58] + !Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View58_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
-			<animation description="מרווח עטיפות" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
-			<animation description="מרווח עטיפות + זום" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="112,119" reversible="true">Conditional</animation>
-			<animation description="מרווח פוסטרים" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
-			<animation description="מרווח פוסטרים + זום" condition="$EXP[View58] + Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="125,123.5" reversible="true">Conditional</animation>
+			<animation condition="$EXP[View58] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View58_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+			<animation description="מרווח עטיפות" condition="$EXP[View58] + !Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
+			<animation description="מרווח עטיפות + זום" condition="$EXP[View58] + !Skin.HasSetting(View58_Distance) + Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="112,119" reversible="true">Conditional</animation>
+			<animation description="מרווח פוסטרים" condition="$EXP[View58] + !Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
+			<animation description="מרווח פוסטרים + זום" condition="$EXP[View58] + !Skin.HasSetting(View58_Distance) + !Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="125,123.5" reversible="true">Conditional</animation>
 			
-			<animation condition="$EXP[View54] + !Skin.HasSetting(SelectedZoom) + !Skin.HasSetting(View54_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
-			<animation description="מרווח עטיפות" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
-			<animation description="מרווח עטיפות + זום" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="112,119" reversible="true">Conditional</animation>
-			<animation description="מרווח פוסטרים" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + !Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
-			<animation description="מרווח פוסטרים + זום" condition="$EXP[View54] + Skin.HasSetting(View54_Distance) + !Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="125,123.5" reversible="true">Conditional</animation>
+			<animation condition="$EXP[View54] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View54_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
+			<animation description="מרווח עטיפות" condition="$EXP[View54] + !Skin.HasSetting(View54_Distance) + Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="105,112" reversible="true">Conditional</animation>
+			<animation description="מרווח עטיפות + זום" condition="$EXP[View54] + !Skin.HasSetting(View54_Distance) + Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="112,119" reversible="true">Conditional</animation>
+			<animation description="מרווח פוסטרים" condition="$EXP[View54] + !Skin.HasSetting(View54_Distance) + !Skin.HasSetting(ShowDVDCases2) + Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="120,118.5" reversible="true">Conditional</animation>
+			<animation description="מרווח פוסטרים + זום" condition="$EXP[View54] + !Skin.HasSetting(View54_Distance) + !Skin.HasSetting(ShowDVDCases2) + !Skin.HasSetting(SelectedZoom)" effect="zoom" center="auto" end="125,123.5" reversible="true">Conditional</animation>
 			
 			<animation description="זום 54" condition="$EXP[View54] + !Skin.HasSetting(SelectedZoom)" effect="slide" end="0,-12">Conditional</animation>
 			

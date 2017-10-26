@@ -310,7 +310,7 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31518]</label>
-		  <selected>$EXP[View57] + Skin.HasSetting(View57_Distance) | $EXP[View58] + Skin.HasSetting(View58_Distance) | $EXP[View59] + Skin.HasSetting(View59_Distance) | $EXP[View54] + Skin.HasSetting(View54_Distance)</selected>
+		  <selected>$EXP[View57] + !Skin.HasSetting(View57_Distance) | $EXP[View58] + !Skin.HasSetting(View58_Distance) | $EXP[View59] + !Skin.HasSetting(View59_Distance) | $EXP[View54] + !Skin.HasSetting(View54_Distance)</selected>
 		  <onclick condition="$EXP[View57]">Skin.ToggleSetting(View57_Distance)</onclick>
 		  <onclick condition="$EXP[View59]">Skin.ToggleSetting(View59_Distance)</onclick>
 		  <onclick condition="$EXP[View58]">Skin.ToggleSetting(View58_Distance)</onclick>

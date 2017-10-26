@@ -447,7 +447,7 @@
   
   <include name="Trailer_59">
 	  <control type="grouplist" description="קדימונים שורה 1">
-		  <animation description="" condition="Skin.HasSetting(View59_Distance)" effect="slide" end="20,-10">Conditional</animation>
+		  <animation description="" condition="!Skin.HasSetting(View59_Distance)" effect="slide" end="20,-10">Conditional</animation>
 		  <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
 		  <animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
 		  <animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
@@ -463,7 +463,7 @@
 		  <include>Trailer_59A</include>
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 2">
-		  <animation description="" condition="Skin.HasSetting(View59_Distance)" effect="slide" end="20,-10">Conditional</animation>
+		  <animation description="" condition="!Skin.HasSetting(View59_Distance)" effect="slide" end="20,-10">Conditional</animation>
 		  <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
 		  <animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
 		  <animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
@@ -479,7 +479,7 @@
 		  <include>Trailer_59B</include>
 	  </control>
 	  <control type="grouplist" description="קדימונים שורה 3">
-		  <animation description="" condition="Skin.HasSetting(View59_Distance)" effect="slide" end="20,-10">Conditional</animation>
+		  <animation description="" condition="!Skin.HasSetting(View59_Distance)" effect="slide" end="20,-10">Conditional</animation>
 		  <animation description="slide_he" condition="[String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="763,0">Conditional</animation>
 		  <animation description="slide_en+" condition="!String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,1)" effect="slide" end="20,0">Conditional</animation>
 		  <animation description="slide_he+" condition="String.IsEqual(System.Language,Hebrew) + Skin.String(View59Align,0)" effect="slide" end="-20,0">Conditional</animation>
