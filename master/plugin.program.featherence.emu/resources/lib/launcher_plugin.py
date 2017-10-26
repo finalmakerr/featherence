@@ -572,7 +572,8 @@ class Main:
 							'''Game is not available'''
 							if games_color2 != "": rom_name = '[COLOR=' + str(games_color2) + ']' + rom_name + '[/COLOR]'
 							else: rom_name = '[COLOR=red]' + rom_name + '[/COLOR]'
-						if os.path.exists(roms[key]["filename"]) or filter_games != 'true': self._add_rom(launcherID, rom_name, roms[key]["filename"], roms[key]["gamesys"], roms[key]["thumb"], defined_fanart, roms[key]["trailer"], roms[key]["custom"], roms[key]["genre"], roms[key]["release"], roms[key]["studio"], roms[key]["plot"], roms[key]["altapp"], roms[key]["altarg"], len(roms), key, False, "")
+						if roms[key]["name"] == 'XXXXX': pass
+						elif os.path.exists(roms[key]["filename"]) or filter_games != 'true': self._add_rom(launcherID, rom_name, roms[key]["filename"], roms[key]["gamesys"], roms[key]["thumb"], defined_fanart, roms[key]["trailer"], roms[key]["custom"], roms[key]["genre"], roms[key]["release"], roms[key]["studio"], roms[key]["plot"], roms[key]["altapp"], roms[key]["altarg"], len(roms), key, False, "")
 					xbmcplugin.endOfDirectory( handle=int( self._handle ), succeeded=True, cacheToDisc=False )
 				else:
 					notification(addonName + " - " + addonString(30349).encode('utf-8'),"","",3000)

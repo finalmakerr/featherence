@@ -445,132 +445,195 @@ def getfileID(file):
 		fileName_L.append('Source 3')
 	
 	elif file == "Arcade_1P.zip":
+		fileID_L.append('3mwprj1i6jrwgun') #featherence.user35
+		fileID_L.append('c270fci9syntfhq') #guser27
 		fileID_L.append('7yfdgvzhduoihn3') #user2
+		fileID_L.append('c7806h010agb82q') #featherence.user5
 		fileID_L.append('6wgx2fnsg4le83w') #htpt
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
+		fileName_L.append('Source 5')
 	elif file == "Arcade_1P_Turret Tower.zip":
 		fileID = "usyvftx1cx85528" #user1
 	
 	elif file == "Arcade_2P.zip":
+		fileID_L.append('8jf3dvardazlw3u') #guser26
+		fileID_L.append('94bxvexuh408yc7') #guser27
 		fileID_L.append('ccaqjedfl22e3ul') #user2
 		fileID_L.append('89gy9rn4qd64eln') #htpt
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
 
-	elif file == "Arcade_2P_Age Of Heroes - Silkroad 2.zip": fileID = "895suamvsymjpno" #user3
-	elif file == "Arcade_2P_Area 51.zip":
-		fileID_L.append('zgg4mpg6dh71z02') #user2
-		fileID_L.append('nwr1p6pthf4x56r') #user3
+	elif file == "Arcade_2P_Age Of Heroes - Silkroad 2.zip":
+		fileID_L.append('895suamvsymjpno') #htptuser3
+		fileID_L.append('5k1kkdavv5klqvh') #featherence.user15
+		fileID_L.append('morx74160s13ari') #infohtpt
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
-	elif file == "Arcade_2P_Area 51 Maximum Force Duo v2.0.zip": fileID = "o85q8ug25q9mp2l" #user4
+		fileName_L.append('Source 3')
+	elif file == "Arcade_2P_Area 51.zip":
+		fileID_L.append('zgg4mpg6dh71z02') #user2
+		fileID_L.append('nwr1p6pthf4x56r') #htptuser3
+		fileName_L.append('Source 1')
+		fileName_L.append('Source 2')
+		
+	elif file == "Arcade_2P_Area 51 Maximum Force Duo v2.0.zip":
+		fileID_L.append('o85q8ug25q9mp2l') #htptuser4
+		fileID_L.append('v74zfmphjua4xo6') #featherence.user35
+		fileName_L.append('Source 1')
+		fileName_L.append('Source 2')
+		
 	elif file == "Arcade_2P_Demon Front.zip":
-		fileID_L.append('txhs5uh9clmc3r6') #user3
+		fileID_L.append('txhs5uh9clmc3r6') #htptuser3
+		fileID_L.append('q6dyv0bzu7xvcdz') #guser26
 		fileID_L.append('ayhbrx2w0bd8h8v') #user1
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
+		
 	elif file == "Arcade_2P_Flame Gunner.zip":
-		fileID_L.append('vuijmkadpd046zq') #user3
-		fileID_L.append('') #
+		fileID_L.append('ag0k2gh5a20e7yg') #guser26
+		fileID_L.append('vuijmkadpd046zq') #htptuser3
+		fileID_L.append('1aor06jv3zm1sxy') #featherence.user15
+		fileID_L.append('pah5c5cmsiv5deu') #featherence.user28
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
 	elif file == "Arcade_2P_Garou - Mark of the Wolves.zip":
-		fileID_L.append('vto2ejyf6c1ujdi') #user4
+		fileID_L.append('ol5f0v2d9nkodyd') #guser27
+		fileID_L.append('rj4k7rcbw4u96en') #htptuser15
+		fileID_L.append('vto2ejyf6c1ujdi') #htptuser4
 		fileID_L.append('y2wgykv8e4h8yct') #user1
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
 	elif file == "Arcade_2P_Killer Instinct.zip":
-		fileID_L.append('r8fe105ibq1q5h1') #user3
+		fileID_L.append('r8fe105ibq1q5h1') #htptuser3
 		fileID_L.append('razg6k6kx4r3anj') #user2
+		fileID_L.append('yztr7wx3xeb0xxf') #guser24
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
 	elif file == "Arcade_2P_Killer Instinct 2.zip":
 		fileID_L.append('fpypqhka6xpgitp') #user2
-		fileID_L.append('ivkug7s9cqwmle3') #user4
+		fileID_L.append('ivkug7s9cqwmle3') #htptuser4
+		fileID_L.append('s4jlqn4316uxrq6') #guser24
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
-	elif file == "Arcade_2P_Lansquenet 2004.zip": fileID = "guveg252aaulyt6" #user3
+		fileName_L.append('Source 3')
+	elif file == "Arcade_2P_Lansquenet 2004.zip":
+		fileID_L.append('wpa5dmhsomtmq8j') #guser21
+		fileID_L.append('013po8qcsywg42l') #featherence.user15
+		fileID_L.append('guveg252aaulyt6') #htptuser3
+		fileID_L.append('2z1gs4443mp8nh6') #infohtpt
+		fileName_L.append('Source 1')
+		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
 	elif file == "Arcade_2P_Mace The Dark Age.zip":
-		fileID_L.append('0fnst5ov2muys5r') #user15
+		fileID_L.append('0fnst5ov2muys5r') #htptuser15
 		fileID_L.append('xbc793jnfkv08ig') #user2
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 	elif file == "Arcade_2P_Metal Slug 3.zip":
 		fileID_L.append('19d6olgmwnck2mm') #user16
-		fileID_L.append('r7l3ay23pop3vt2') #user15
+		fileID_L.append('r7l3ay23pop3vt2') #htptuser15
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 	elif file == "Arcade_2P_Metal Slug 4.zip":
 		fileID_L.append('c4gev22fialfe3l') #user16
-		fileID_L.append('m9vvqp6qv3zzcwv') #user15
+		fileID_L.append('m9vvqp6qv3zzcwv') #htptuser15
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 	elif file == "Arcade_2P_Metal Slug 5.zip":
 		fileID_L.append('z06jeyo28muofkn') #user16
-		fileID_L.append('vez9r4w9fk1wah4') #user15
+		fileID_L.append('vez9r4w9fk1wah4') #htptuser15
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 	elif file == "Arcade_2P_Prehistoric Isle 2.zip":
-		fileID_L.append('xkupgotlujvj85s') #user15
+		fileID_L.append('xkupgotlujvj85s') #htptuser15
 		fileID_L.append('yxtqtuk9o787ooo') #user17
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 	elif file == "Arcade_2P_Rage of the Dragons.zip":
-		fileID_L.append('k39kc1mvodbg043') #user15
+		fileID_L.append('k39kc1mvodbg043') #htptuser15
 		fileID_L.append('4gcdai4k67tm0nv') #user17
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 	elif file == "Arcade_2P_Red Earth.zip":
-		fileID_L.append('9hhzwyqmk2ucpza') #user15
+		fileID_L.append('9hhzwyqmk2ucpza') #htptuser15
 		fileID_L.append('engk0ny84jm6tk3') #user13
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 	elif file == "Arcade_2P_Sengoku 3.zip":
-		fileID_L.append('4ic19rfzksh6xfh') #user3
+		fileID_L.append('1p2vnxnxkklgxaz') #guser27
+		fileID_L.append('id3xcc355xa5mf9') #htptuser15
+		fileID_L.append('4ic19rfzksh6xfh') #htptuser3
 		fileID_L.append('drj6txmxc4solns') #user2
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
 	elif file == "Arcade_2P_SNK vs. Capcom - SVC Chaos.zip":
+		fileID_L.append('kzbct5liwenmmaa') #user20
 		fileID_L.append('ghzus8r4jtd9ysb') #user2
-		fileID_L.append('i9bev4l2ezw344t') #user3
+		fileID_L.append('i9bev4l2ezw344t') #htptuser3
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
 	elif file == "Arcade_2P_Street Fighter III 3rd Strike Fight for the Future.zip":
 		fileID_L.append('lkl0it20ui5gi70') #user11
 		fileID_L.append('lkou7298nbfm0sw') #user13
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 	elif file == "Arcade_2P_Tekken Tag Tournament.zip":
-		fileID_L.append('y85tbiwx1t5y29d') #user5
+		fileID_L.append('y85tbiwx1t5y29d') #htptuser5
 		fileID_L.append('7i5kxmk5d6g0cfj') #user9
+		fileID_L.append('dh8pamt9qqmwvv2') #featherence.user21
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
 	elif file == "Arcade_2P_Tenth Degree.zip":
 		fileID_L.append('4qvlwo6odg7nbyz') #guser15
 		fileID_L.append('gjcgxchm9qyb58c') #
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 	elif file == "Arcade_2P_Tekken 3.zip":
-		fileID_L.append('n292k4l4rzdgxdf') #user5
+		fileID_L.append('n292k4l4rzdgxdf') #htptuser5
 		fileID_L.append('m1qg58ukl1f4xve') #user9
+		fileID_L.append('c51pfektqxuzry2') #featherence.user28
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
 	elif file == "Arcade_2P_The Crystal of Kings.zip":
-		fileID_L.append('xh7444nz8urd69o') #user5
+		fileID_L.append('xh7444nz8urd69o') #htptuser5
 		fileID_L.append('urk6eqnvmxxk1pv') #user9
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 	elif file == "Arcade_2P_The King of Fighters '98 - The Slugfest.zip":
-		fileID_L.append('pnl27a9n5ehqulg') #user4
-		fileID_L.append('tzm0tk9pgdj2qg5') #user15
+		fileID_L.append('pnl27a9n5ehqulg') #htptuser4
+		fileID_L.append('tzm0tk9pgdj2qg5') #htptuser15
+		fileID_L.append('6mtqfngbg0rugv5') #featherence.user9
+		fileID_L.append('byo2ses423lgjud') #guser24
+		fileID_L.append('0599ud2braq4bh2') #infohtpt
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
+		fileName_L.append('Source 5')
 	elif file == "Arcade_2P_The King of Fighters 2002.zip":
-		fileID_L.append('p4xyb1efbbu1u36') #user4
+		fileID_L.append('flya0lnhzcngx0u') #user20
+		fileID_L.append('p4xyb1efbbu1u36') #htptuser4
 		fileID_L.append('3073773k6010fdk') #info
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
 	elif file == "Arcade_2P_The Last Blade 2.zip":
 		fileID_L.append('l0v1h690y55yx8j') #user15
 		fileID_L.append('qrlctae8cd6omml') #info
@@ -578,17 +641,27 @@ def getfileID(file):
 		fileName_L.append('Source 2')
 
 	elif file == "Arcade_3P.zip":
+		fileID_L.append('qmkxfdvv9da2gxc') #guser27
 		fileID_L.append('j6bl5uaa01uzspj') #user2
+		fileID_L.append('z72bbl6goev3tm9') #featherence.user6
+		fileID_L.append('2w87nyubjjfx5ry') #infohtpt
 		fileID_L.append('ix147pc6kx3d4ku') #htpt
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
+		fileName_L.append('Source 5')
 	elif file == "Arcade_4P.zip":
+		fileID_L.append('ubya3wg60fx3e6b') #guser14
+		fileID_L.append('2divr39cj5fgh77') #guser21
+		fileID_L.append('4e3645if0m5uom4') #user
 		fileID_L.append('5alcp543pmyqrzh') #user2
 		fileID_L.append('ps0tzg70af5d9nj') #htpt
-		fileID_L.append('') #info
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
+		fileName_L.append('Source 5')
 		
 	elif file == "Arcade_4P_Gauntlet Dark Legacy.zip":
 		fileID_L.append('oijy0kiz0l792xc') #user14
@@ -597,12 +670,18 @@ def getfileID(file):
 		fileName_L.append('Source 2')
 	elif file == "Arcade_4P_Gauntlet Legends.zip": fileID = "jdrbwfesdgm97tr" #info
 	elif file == "Arcade_ADULT.zip":
-		fileID_L.append('dzbucsurdxfx8lk') #user4
+		fileID_L.append('ykg6ac1mijbf9s4') #featherence.user35
+		fileID_L.append('jsxu39c2e113xtx') #guser27
+		fileID_L.append('5r0dnziuldo3d7p') #htptuser15
+		fileID_L.append('dzbucsurdxfx8lk') #htptuser4
 		fileID_L.append('rg4m5oi50c0g4e7') #user2
 		fileID_L.append('gabtdr7exw1s9x4') #info
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
+		fileName_L.append('Source 5')
+		fileName_L.append('Source 6')
 		
 	elif file == "Arcade_GEAR.zip":
 		fileID_L.append('v0si3xo3pt72xpa') #user34
@@ -614,7 +693,7 @@ def getfileID(file):
 		
 	elif file == "Arcade_GEAR_California Speed.zip": fileID = "gbfxppac8bbnw2b" #info
 	elif file == "Arcade_GEAR_Hyperdrive.zip":
-		fileID_L.append('dqa6ql7tzb9e6xb') #user4
+		fileID_L.append('dqa6ql7tzb9e6xb') #htptuser4
 		fileID_L.append('wlmirerbe5dpezq') #user15
 		fileID_L.append('a5cof494e2zaob3') #user9
 		fileName_L.append('Source 1')
@@ -623,11 +702,13 @@ def getfileID(file):
 		
 	elif file == "Arcade_FUN.zip":
 		fileID_L.append('p64howpq8a0p3yy') #user23
+		fileID_L.append('c4qdpngxl64yvro') #featherence.user6
 		fileID_L.append('1q8f4gv6ra6ritp') #htpt
 		fileID_L.append('xp1k65cp1f9ltai') #info
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
 	elif file == "Nintendo 64_1P.zip":
 		fileID_L.append('jp4xzb03m7nbghp') #buy
 		fileID_L.append('iu9ntsgd5g4csnw') #htpt
@@ -653,13 +734,15 @@ def getfileID(file):
 		fileID_L.append('nt05zl4ygnynxen') #user1
 		fileID_L.append('5ahtgh6bjq1gn42') #htpt
 		fileID_L.append('ie9dlkr4xxv44s7') #user34
+		fileID_L.append('itbbp4q1tkhg72f') #featherence.user34
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
 	elif file == "Nintendo DS_1P.zip":
 		fileID_L.append('e7e3yaudsjp629n') #user16
 		fileID_L.append('tajqg91605p22m2') #debugout1
-		fileID_L.append('e5oh0k4ixhnqlk8') #user3
+		fileID_L.append('e5oh0k4ixhnqlk8') #htptuser3
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
@@ -671,6 +754,9 @@ def getfileID(file):
 	
 	elif file == "Sega Genesis.zip":
 		fileID_L.append('z20nk10mktoscuh') #guser21
+		fileID_L.append('6w1sk5ii2xf1rul') #htptuser15
+		fileID_L.append('dguft9bbmjmcz4a') #user
+		fileID_L.append('ox7341moowe6svl') #featherence.user20
 		fileID_L.append('b8lph86pb4b5e0l') #user1
 		fileID_L.append('wzn29u4rg0251sq') #htpt
 		fileID_L.append('f8orv8r0hgrgm43') #buy
@@ -678,6 +764,9 @@ def getfileID(file):
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
 		fileName_L.append('Source 4')
+		fileName_L.append('Source 5')
+		fileName_L.append('Source 6')
+		fileName_L.append('Source 7')
 	
 	elif file == "Sega Genesis_1P_Comix Zone.zip":
 		fileID_L.append('mqqeq63yqrj7tjy') #featherence.guser14
@@ -689,32 +778,45 @@ def getfileID(file):
 		
 	elif file == "Sega Master System.zip":
 		fileID_L.append('d8d9h9hpr52kmhg') #guser21
+		fileID_L.append('rzcj1isx6srzb77') #user
 		fileID_L.append('c5ingtyhgkwjmx7') #user1
 		fileID_L.append('3v6kt7hcj4udnrq') #htpt
 		fileID_L.append('nbzv9gotdcksbng') #buy
+		fileID_L.append('luj3cv80ym83vf2') #infohtpt
 		#fileID_L.append('[GD]0B_dmZM8wv6D9Q25CUXAwVHJUWU0') #featherence.user1[GD]
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
 		fileName_L.append('Source 4')
+		fileName_L.append('Source 5')
+		fileName_L.append('Source 6')
 		#fileName_L.append('Source 4 [GD]')
 		
 	elif file == "Super Nintendo.zip":
+		fileID_L.append('bhyvkhb6ppeqawl') #user21
 		fileID_L.append('dficnt390sp2j8w') #user1
 		fileID_L.append('fn27r1mmyos91hd') #htpt
 		fileID_L.append('rlsyu3fa8pusvs3') #buy
+		fileID_L.append('1sm4z925qjhhmp7') #featherence.user28
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
+		fileName_L.append('Source 5')
+		
 	elif file == "TurboGrafx 16.zip":
 		fileID_L.append('nrydawpwto8f0wk') #guser21
+		fileID_L.append('0ey2l2jxkx0h59h') #htptuser15
 		fileID_L.append('0zg9x4uw1hrm8zb') #user1
+		fileID_L.append('13j4fo820ro5wbl') #featherence.user9
 		fileID_L.append('nn7rdkeke5vxm10') #htpt
 		fileID_L.append('r6dw9ippymncpo4') #buy
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
 		fileName_L.append('Source 4')
+		fileName_L.append('Source 5')
+		fileName_L.append('Source 6')
 	
 	
 	elif file == "Sony Playstation_1P_Alundra.zip": fileID = "8ajszedon75tzwx" #user12
@@ -728,7 +830,7 @@ def getfileID(file):
 	elif file == "Sony Playstation_1P_Command & Conquer - Red Alert.zip": fileID = "5m9je5lv7ed2y83" #user13
 	elif file == "Sony Playstation_1P_Command & Conquer - Red Alert - Retaliation.zip": fileID = "k6vmk2hy7ir61mn" #user14
 	elif file == "Sony Playstation_1P_Crash Bandicoot.zip":
-		fileID_L.append('st3jd9y0no8pbn0') #user5
+		fileID_L.append('st3jd9y0no8pbn0') #htptuser5
 		fileID_L.append('0jo5bm41o08orpm') #htpt
 		fileID_L.append('qid216wds25xr0i') #buy
 		fileName_L.append('Source 1')
@@ -754,10 +856,14 @@ def getfileID(file):
 	elif file == "Sony Playstation_1P_Dino Crisis.zip": fileID = "2efwp6im1aotg8v" #user12
 	elif file == "Sony Playstation_1P_Dino Crisis 2.zip": fileID = "awmx89zo20kmks4" #user7
 	elif file == "Sony Playstation_1P_Disney's Hercules Action Game.zip": fileID = "0lbyhyvt8qmpsc1" #user12
-	elif file == "Sony Playstation_1P_Dragon Valor.zip": fileID = "7q43b820d8hd71i" #user5
+	elif file == "Sony Playstation_1P_Dragon Valor.zip":
+		fileID_L.append('v3dwo2ts9ratc3e') #featherence.user35
+		fileID_L.append('7q43b820d8hd71i') #htptuser5
+		fileName_L.append('Source 1')
+		fileName_L.append('Source 2')
 	elif file == "Sony Playstation_1P_Driver.zip": fileID = "553sd3fh7lpoumn" #user12
 	elif file == "Sony Playstation_1P_Final Fantasy VII.zip": fileID = "85llpgfjz4uih2z" #user7
-	elif file == "Sony Playstation_1P_Final Fantasy VIII.zip": fileID = "gt5its29qvdt4f9" #user6
+	elif file == "Sony Playstation_1P_Final Fantasy VIII.zip": fileID = "gt5its29qvdt4f9" #htptuser6
 	elif file == "Sony Playstation_1P_Final Fantasy IX.zip":
 		fileID_L.append('i09gmh6nqruibmu') #user19
 		fileID_L.append('rgivtj2fjbbekvj') #user27
@@ -776,7 +882,7 @@ def getfileID(file):
 	elif file == "Sony Playstation_1P_Metal Gear Solid.zip": fileID = "zreea6rsbo6t7ca" #user8
 	elif file == "Sony Playstation_1P_Metal Gear Solid VR Missions.zip": fileID = "tql0ori6cqge22s" #user21
 	elif file == "Sony Playstation_1P_Oddworld - Abes Oddysee.zip": fileID = "gbibjsf4mzhbq0w" #user21
-	elif file == "Sony Playstation_1P_Pacman World.zip": fileID = "5j36isrgl4pasx7" #user5
+	elif file == "Sony Playstation_1P_Pacman World.zip": fileID = "5j36isrgl4pasx7" #htptuser5
 	elif file == "Sony Playstation_1P_Parasite Eve 2.zip": fileID = "j7ok6yv3k1aljpk" #user22
 	elif file == "Sony Playstation_1P_Populous - The Beginning.zip": fileID = "u3s4s391tz2vayc" #user22
 	elif file == "Sony Playstation_1P_Railroad Tycoon II.zip": fileID = "v272g24r6ii5djn" #user22
@@ -784,9 +890,9 @@ def getfileID(file):
 	elif file == "Sony Playstation_1P_Rayman Rush.zip": fileID = "vn5ssuexnirgmb3" #user22
 	elif file == "Sony Playstation_1P_Resident Evil 2.zip": fileID = "pafqxpgs1qhhgw5" #user17
 	elif file == "Sony Playstation_1P_Resident Evil 3.zip": fileID = "5m8ln06e5ehc6oh" #user17
-	elif file == "Sony Playstation_1P_Road Rash 3D.zip": fileID = "my6lt21oixpuy3l" #user5
+	elif file == "Sony Playstation_1P_Road Rash 3D.zip": fileID = "my6lt21oixpuy3l" #htptuser5
 	elif file == "Sony Playstation_1P_Silent Hill.zip": fileID = "ryfa2ekrjoe8aa6" #user17
-	elif file == "Sony Playstation_1P_Spider-Man.zip": fileID = "e2wc0xa7pk85sf1" #user6
+	elif file == "Sony Playstation_1P_Spider-Man.zip": fileID = "e2wc0xa7pk85sf1" #htptuser6
 	elif file == "Sony Playstation_1P_Spider-Man 2 - Enter Electro.zip": fileID = "icecnzvirlewruv" #user17
 	elif file == "Sony Playstation_1P_Spyro Year of the Dragon.zip": fileID = "c8j2hgeyd6x33xi" #user9
 	elif file == "Sony Playstation_1P_Spyro 2 - Riptos Rage.zip": fileID = "m5fa4oj1m1vbv1h" #user17
@@ -800,8 +906,8 @@ def getfileID(file):
 	elif file == "Sony Playstation_1P_Theme Hospital.zip": fileID = "rwofbkoodqr5m17" #user18
 	elif file == "Sony Playstation_1P_Thousand Arms.zip": fileID = "h8dieiggps4km5z" #user20
 	elif file == "Sony Playstation_1P_Tigger's Honey Hunt.zip":
-		fileID_L.append('2h9ieslidi0hnae') #user4
 		fileID_L.append('laxrgtg4eg90pdf') #guser9
+		fileID_L.append('2h9ieslidi0hnae') #htptuser4
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 
@@ -873,9 +979,8 @@ def getfileID(file):
 		
 	elif file == "Dreamcast_2P_Project Justice - Rival Schools 2.zip": fileID = "n9mnlaffe27f3h1" #featherence.user1
 	elif file == "Dreamcast_2P_Sonic Adventure 2.zip": fileID = "gyehvme4ky3bo93" #featherence.user1
-	elif file == "Dreamcast_1P_Headhunter.zip": fileID = "" #featherence.user2 #NEED TO FILL!!!
+	elif file == "Dreamcast_1P_Headhunter.zip": fileID = "nogvxl1mabgj6uo" #featherence.user2
 	elif file == "Dreamcast_2P_Street Fighter III - 3rd Strike.zip": fileID = "tew77v2lqhybj2j" #featherence.user2
-	elif file == "Dreamcast_1P_Skies of Arcadia.zip": fileID = "" #featherence.user3
 	
 	elif file == "Dreamcast_2P_Capcom vs. SNK.zip": fileID = "7373ygc3fk66rtq" #featherence.user4
 	elif file == "Dreamcast_2P_Samba De Amigo.zip": fileID = "2407wbot7t6alzr" #featherence.user4
@@ -892,13 +997,13 @@ def getfileID(file):
 	elif file == "Dreamcast_4P_90 Minutes - Sega Championship Football.zip": fileID = "wjv6tz7k330tzru" #featherence.user7
 	elif file == "Dreamcast_4P_NFL Blitz 2001.zip": fileID = "sg7nv9jz2jjklpe" #featherence.user7
 	
-	elif file == "Dreamcast_1P_Airforce Delta.zip": fileID = "qp9ni9hwtiejn04" #featherence.user9 (Possibly disc2 missing!)
+	elif file == "Dreamcast_1P_Airforce Delta.zip": fileID = "qp9ni9hwtiejn04" #featherence.user9
 	elif file == "Dreamcast_2P_4 Wheel Thunder.zip": fileID = "tvk2crtgpv50la7" #featherence.user9
 	elif file == "Dreamcast_1P_Illbleed.zip": fileID = "stbpzbrtmofinox" #featherence.user9
 	
 	elif file == "Dreamcast_1P_Alone in the Dark - The New Nightmare.zip": fileID = "8fle779l57z4kf5" #featherence.user11
 	
-	elif file == "Dreamcast_1P_Sword of the Berserk - Guts Rage.zip": fileID = "nlxzy78c9bsy1oh" #featherence.user12 #1.35GB FREE
+	elif file == "Dreamcast_1P_Sword of the Berserk - Guts Rage.zip": fileID = "nlxzy78c9bsy1oh" #featherence.user12
 	
 	elif file == "Dreamcast_1P_Skies of Arcadia.zip": fileID = "ans8hoynble9s7s" #featherence.user13
 	elif file == "Dreamcast_1P_Evolution 2 - Far Off Promise.zip": fileID = "jvwyia29ys2hmkt" #featherence.user13
@@ -916,6 +1021,8 @@ def getfileID(file):
 	
 	elif file == "Dreamcast_1P_AeroWings 2 - Airstrike.zip": fileID = "cmgiv70684dgdio" #featherence.user17
 	elif file == "Dreamcast_4P_V-Rally 2 - Expert Edition.zip": fileID = "4s8z1ya5rgnfm3a" #featherence.user17
+	elif file == "Dreamcast_2P_Frogger 2 - Swampy's Revenge.zip": fileID = "v3oyukmbbn6to1d" #featherence.user17
+	elif file == "Dreamcast_1P_Ikaruga.zip": fileID = "gxrryumrj9u3br9" #featherence.user17
 	
 	elif file == "Dreamcast_2P_Confidential Mission.zip": fileID = "f00lw5iu8slv5ks" #featherence.user18
 	elif file == "Dreamcast_2P_Flag to Flag.zip": fileID = "6ggdjke6uq1aq3q" #featherence.user18

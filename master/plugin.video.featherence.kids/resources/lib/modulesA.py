@@ -490,7 +490,24 @@ def CATEGORIES105A(General_LanguageL, background, background2): #עמוד הבא
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
-		list.append('&youtube_pl=')
+		list.append('&youtube_id=iipZpLSwTn4') #אמיל והבלשים
+		list.append('&youtube_id=PYTnccj8QW8') #ארתור - בסה"כ רוקנלרול
+		list.append('&youtube_id=cXUbOYJ6TEU') #ארתור - חבר הולך לאיבוד
+		list.append('&youtube_id=b_mVeOE8i0o') #בבי הקוסמת הצעירה (2012)
+		list.append('&youtube_id=yE5W16Czh4g') #בילבי
+		list.append('&youtube_id=jeN7D0jHjKQ') #גשם של פלאפל
+		list.append('&youtube_id=R4Zl42XfJtA') #הדרדסים
+		list.append('&youtube_id=R1O5law49HI') #הילד שרצה להיות דב
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=3&module=wallavod&name=%d7%a4%d7%a8%d7%a7%d7%99%d7%9d%20%d7%9e%d7%9c%d7%90%d7%99%d7%9d&url=seasonId%3d2549973') #היתקליף
+		list.append('&youtube_id=TlWVoNz_B3o') #הצילו אני דג
+		list.append('&youtube_id=2NpLGjQvtn8') #הרמב"ם הגדול
+		list.append('&youtube_id=3MXTabnJGl0') #חלב ודבש
+		list.append('&youtube_id=8xZDb6OK4e4') #מועדון ווינX
+		list.append('&youtube_id=SVXBErt1fHE') #מועדון ווינX
+		list.append('&youtube_id=zMSgF3xdHZ4') #מועדון ווינX
+		list.append('&youtube_id=87A_2Q2CSFc') #נילס הולגרסון
+		list.append('&youtube_id=_ixMuVcAGhA') #סוד השוקולד
+		list.append('&youtube_id=e3ChxP5afl4') #סמי הכבאי (הסרט)
 		list.append('&youtube_id=')
 		list.append('&youtube_id=')
 		list.append('&youtube_pl=')
@@ -498,8 +515,16 @@ def CATEGORIES105A(General_LanguageL, background, background2): #עמוד הבא
 		
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
+		list.append('&dailymotion_id=x2ixc2d') #ברבי
 		list.append('&youtube_id=RwY6ZNmV1OU')
 		list.append('&youtube_pl=PLZOPiMtEyky3WOXdj-PUdbTsGpsm-zS8m')
+		list.append('&dailymotion_id=x3gbixs') #היפיפייה הנרדמת (1959)
+		list.append('&youtube_id=r-3ckLnkPyc') #היתקליף
+		list.append('&youtube_id=k_huLZPULZg') #מועדון ווינX
+		list.append('&youtube_id=dLVm8IrUamM') #מועדון ווינX
+		list.append('&youtube_id=oMCRUUvwz58') #מועדון ווינX
+		list.append('&youtube_id=ZYw7hBoEiwo') #מועדון ווינX
+		
 		list.append('&youtube_pl=')
 		list.append('&youtube_pl=')
 
@@ -545,6 +570,17 @@ def CATEGORIES105A(General_LanguageL, background, background2): #עמוד הבא
 	'''הודית'''
 	if 'Hindi' in General_LanguageL:
 		list.append('&youtube_pl=')
+		list.append('&dailymotion_id=x2snuxz') #מלך האריות 1 (1994)
+		list.append('&dailymotion_id=x2sqt1o') #מלך האריות 3 (2004)
+		list.append('&dailymotion_id=x2snuxz') #סינדרלה (1950)
+		list.append('&dailymotion_id=x2ht25v') #Hindi
+		list.append('&dailymotion_id=x2ixbar') #Hindi
+		list.append('&dailymotion_id=x2ixc2d') #Hindi
+		list.append('&dailymotion_id=x2h66f2') #Hindi
+		list.append('&dailymotion_id=x3bxv3y') #Hindi
+		list.append('&dailymotion_id=x32n436') #Hindi
+		list.append('&dailymotion_id=x3255i6') #Hindi
+		list.append('&dailymotion_id=x3c28ns') #Hindi
 	
 	'''הולנדית'''
 	if 'Dutch' in General_LanguageL:
@@ -642,6 +678,22 @@ def CATEGORIES105A(General_LanguageL, background, background2): #עמוד הבא
 		
 	'''תאילנדית'''
 	if 'Thai' in General_LanguageL:
+		list.append('&dailymotion_id=x2elw3f') #היפה והחיה (1992)
+		list.append('&dailymotion_id=x2jjovt') #הנסיכה סופייה (2012)
+		list.append('&dailymotion_id=x2eu58u') #טינקרבל 5 (2014)
+		list.append('&dailymotion_id=x2elh43') #Thai
+		list.append('&dailymotion_id=x2ecgag') #Thai
+		list.append('&dailymotion_id=x2en51z') #Thai
+		list.append('&dailymotion_id=x2esd6p') #Thai
+		list.append('&dailymotion_id=x2eol06') #Thai
+		list.append('&dailymotion_id=x2ejc0p') #Thai
+		list.append('&dailymotion_id=x2eyr1k') #Thai
+		list.append('&dailymotion_id=x2ewf52') #Thai
+		list.append('&dailymotion_id=x2ewj2o') #Thai
+		list.append('&dailymotion_id=x2elgnb') #Thai
+		list.append('&dailymotion_id=x2esck4') #Thai
+		list.append('&dailymotion_id=x2elpyx') #Thai
+		list.append('&dailymotion_id=x2ed3l4') #Thai
 		list.append('&youtube_pl=')
 	
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom = "", default=background2))

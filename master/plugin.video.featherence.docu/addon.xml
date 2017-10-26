@@ -2,7 +2,7 @@
 <addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.13" provider-name="finalmakerr, yoel guy">
   <requires>
 	<import addon="xbmc.python" version="2.24.0" />
-	<import addon="script.featherence.service" version="0.3.46"/>
+	<import addon="script.featherence.service" version="0.3.86"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>

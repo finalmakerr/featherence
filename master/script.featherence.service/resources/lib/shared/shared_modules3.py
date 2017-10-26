@@ -72,7 +72,7 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 					else:
 						url_.append(x)
 				else: q = 'skipped'
-				print 'i' + space2 + str(i) + space + 'x' + space2 + str(x) + space + 'x_' + space2 + str(x_) + space + 'q' + space2 + str(q) + space + 'url_' + space2 + str(url_) + space + 'y' + space2 + str(y) + space + 'filter' + space2 + str(filter)
+				#print 'i' + space2 + str(i) + space + 'x' + space2 + str(x) + space + 'x_' + space2 + str(x_) + space + 'q' + space2 + str(q) + space + 'url_' + space2 + str(url_) + space + 'y' + space2 + str(y) + space + 'filter' + space2 + str(filter)
 				i += 1
 			for x in url_:
 				url.remove(x)

@@ -15536,7 +15536,7 @@
 					<custom></custom>
 					<genre>Action</genre>
 					<release>2000</release>
-					<publisher>Acclaim Entertainment</publisher>
+					<publisher>Acclaim</publisher>
 					<gameplot>In a future world were mankind and dolphins live together as equals, an alien force known as the Foe seeks to end this happy existence. The Foe damages the Earth's defense system, and alters history for the worse. One extraordinary dolphin, Ecco, must travel through time to set things right.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -16551,7 +16551,7 @@
 					<custom></custom>
 					<genre>Sports</genre>
 					<release>1999</release>
-					<publisher>Acclaim Entertainment</publisher>
+					<publisher>Acclaim</publisher>
 					<gameplot>The game is set in the future and based around the sport of Hoverboarding. The player can race or do stunts through metropolis versions of London, Tokyo, and Manhattan Island, or in a massive practice arena called the Velodrome.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -17120,15 +17120,15 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10038</id>
-					<name></name>
-					<filename>rom_pathGameCube/_1P/.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<name>Tak and the Power of Juju</name>
+					<filename>rom_pathGameCube/_1P/Tak and the Power of Juju.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Tak and the Power of Juju.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Tak and the Power of Juju.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
+					<genre>Platform</genre>
+					<release>2003</release>
+					<publisher>THQ</publisher>
 					<gameplot></gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
@@ -17150,16 +17150,16 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10040</id>
-					<name></name>
-					<filename>rom_pathGameCube/_1P/.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/.jpg</fanart>
+					<name>Super Monkey Ball Adventure</name>
+					<filename>rom_pathGameCube/_1P/Super Monkey Ball Adventure.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Super Monkey Ball Adventure.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Super Monkey Ball Adventure.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Platform</genre>
+					<release>2006</release>
+					<publisher>Sega </publisher>
+					<gameplot>Our four heroes from Super Monkey Ball - Aiai, Meemee, Baby and Gongon - were enjoying a typical day, when they saw a flying machine crash down on a nearby island. Soon, they discovered that the mysterious Naysayers have appeared, spreading discord and unhappiness all over the island. And to top it all off, the prince and princess of the neighboring islands have gone missing on Jungle Island - if they aren't found and returned, there's sure to be trouble! Can our heroes restore order to Monearth?Super Monkey Ball Adventure takes the monkey rolling madness of the previous games and puts a story-based spin on it. Choosing from one of the four monkeys, Players roll their way around the various islands of Monearth, talking to citizens and performing the tasks they request (such as delivering sandwiches, finding a missing baby, rescuing rare flowers, and more) to cheer them up.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17310,6 +17310,186 @@
 					<release>2005</release>
 					<publisher>Ubisoft</publisher>
 					<gameplot>Play as man. Play as Kong.[CR]Embark on an epic adventure created in collaboration with Academy Award-winning director Peter Jackson and based on the Universal Pictures' film. Survive as Jack in a world crawling with predators and live the legend as Kong.[CR]Use weapons, traps and your team wisely to survive in first-person as Jack.[CR]Break jaws, slam enemies and throw massive objects in Kong's third-person battles.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0039</id>
+					<name>Battalion Wars</name>
+					<filename>rom_pathGameCube/_1P/Battalion Wars.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Battalion Wars.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Battalion Wars.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Strategy</genre>
+					<release>2005</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>A global conflict has reached a stalemate in the console version of the Game Boy Advance series Advance Wars. The evil Kaiser Vlad, seeking to take advantage of the standoff, has assembled an army of shock troops, forcing The Western Frontier and the Tundran Territories to ally and fight back. Battalion Wars is a real-time strategy game that lets you control teams of soldiers and vehicles and lead them through more than 20 missions, using a variety of weapons and tactics.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0040</id>
+					<name>Geist</name>
+					<filename>rom_pathGameCube/_1P/Geist.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Geist.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Geist.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Shooter</genre>
+					<release>2005</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Take Possession! When a mission goes horribly wrong, you are captured and subjected to a ghastly experiment that rips your spirit from your physical body. Now you are trapped, forced to roam the halls of the shadowy Volks Corporation as a spectral phantom. As you explore, employ you hair-raising power of possession to control humans, animals and objects to infiltrate the compound, solve puzzles, and strike at your enemies. Only by unearthing the dark secrets of the Volks Corporation will you unravel the mystery of your condition and find a way to recover your human form.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0041</id>
+					<name>The Incredible Hulk - Ultimate Destruction</name>
+					<filename>rom_pathGameCube/_1P/The Incredible Hulk - Ultimate Destruction.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/The Incredible Hulk - Ultimate Destruction.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/The Incredible Hulk - Ultimate Destruction.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2005</release>
+					<publisher>Sierra </publisher>
+					<gameplot>The player controls the Hulk in an open world environment in which the player can visit most locations and interact with the environment while not engaged in missions. The game's bosses include Devil Hulk and Mercy, and the game's main villain is the Abomination.Boasting "Unstoppable Movement" means Hulk can run across walls and other vertical surfaces, climb any wall by digging his fingers into concrete, leap huge heights and distances all under the player's control. Hulk's combat abilities also reflect this increased power; cars and buses are simply smashed out of the way while fully charged attacks will toss vehicles, enemies and unlucky pedestrians into the air. At his most powerful, the Hulk can perform one of five different ultra-powerful Devastator attacks including the Critical Atomic Slam and the Critical Thunderclap. These attacks will clear enemies out for a multi-block radius, flatten entire buildings, and cause massive damage to enemies.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0042</id>
+					<name>TY the Tasmanian Tiger</name>
+					<filename>rom_pathGameCube/_1P/TY the Tasmanian Tiger.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/TY the Tasmanian Tiger.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/TY the Tasmanian Tiger.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Platform</genre>
+					<release>2002</release>
+					<publisher>Electronic Arts </publisher>
+					<gameplot>During a chance meeting with the Mystical Bunyip Elder, he discovers that his fellow Tasmanian Tigers are still alive, but are trapped in the otherworldly realm of the Dreamtime. He also learns that deep in the Australian outback there exists a rocky outcrop with five sockets. When five magic Talismans are placed in the sockets, the portal to the Dreamtime will open. Unfotunately, these Talismans have been lost and an evil cassowary by the name of Boss Cass is trying to find them. Now Ty is on a quest to recover the Talismans before Boss Cass. If Ty is successful in defeating Boss Cass and his evil minions and activating the portal, the Tasmanian Tigers will be freed and able to populate the earth once more.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0043</id>
+					<name>Vexx</name>
+					<filename>rom_pathGameCube/_1P/Vexx.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Vexx.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Vexx.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Platform</genre>
+					<release>2003</release>
+					<publisher>Acclaim</publisher>
+					<gameplot>Vexx is a 3D platforming video game developed by Acclaim Studios Austin and published by Acclaim Entertainment for the GameCube, PlayStation 2 and Xbox. It was also planned to be released for the Game Boy Advance but it was eventually cancelled. The objective consists of collecting magical hearts and unlocking more worlds to play, defeating enemies and jumping across platforms. Vexx is armed only with the legendary Astani war talons, which give him the power to defeat his enemies, as well as fly and swim under water.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0044</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0045</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0046</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0047</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0048</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0049</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0050</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17566,31 +17746,31 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea6166v385a37ed78f2p0010</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Fight Night Round 2</name>
+					<filename>rom_pathGameCube/_2P/Fight Night Round 2.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Fight Night Round 2.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Fight Night Round 2.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Fighting / Sports</genre>
+					<release>2005</release>
+					<publisher>EA Sports</publisher>
+					<gameplot>EA's Fight Night returns in its second installment. Once again, you can create a new boxer and start a career that begins as an amateur in a shady gym somewhere in Queens, NY and fight your way up to the top. Alternatively, you could relive the careers of some legendary boxers. Of course, you could go for a simple match with either a computer or a live opponent. Round 2 offers many new features, like fancy particle effects that show blood and sweat spraying into the camera in ultra slow-motion. The "Total Boxer Control", which lets you throw punches by making certain movements with the analog stick, has been improved. There are also many ways to customize the appearance of your character, up to the shaping of the cranium and ears. The soundtrack consists of a dozen contemporary (but unfortunately edited) hip-hop tracks.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385ac7ed78f2p0010</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>SSX 3</name>
+					<filename>rom_pathGameCube/_2P/SSX 3.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/SSX 3.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/SSX 3.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Sports</genre>
+					<release>2003</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>Players can discover the open mountain in the newest version of the smash-hit SSX snowboarding franchise. SSX 3 allows gamers to go anywhere gravity will take them. Players will discover a colossal mountain where they can immerse themselves in a free-roaming snow paradise.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17892,61 +18072,61 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0014</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>XGIII</name>
+					<filename>rom_pathGameCube/_4P/XGIII.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XGIII.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XGIII.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Racing</genre>
+					<release>2001</release>
+					<publisher>Acclaim</publisher>
+					<gameplot>XGIII: Extreme G Racing is a futuristic racing game. Six teams are competing to win a racing championship, the player taking control of any of the two riders available in each team. The game retains the action elements of the previous titles: as before, opponents will try to sabotage the race, and the player-controlled character is able to answer them with his own arsenal of weapons.Unlike the previous installments, weapons cannot be picked up on the road: the player has to purchase them with the money earned after a successful race. All weapons now deplete the player's weapon bar with each shot. Another change is the absence of the "nitro" boosts utilized in the previous entries; they have been replaced with a turbo system, where using the boost drains energy from the player character's shields.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0015</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Wave Race - Blue Storm</name>
+					<filename>rom_pathGameCube/_4P/Wave Race - Blue Storm.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Wave Race - Blue Storm.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Wave Race - Blue Storm.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Racing / Sports</genre>
+					<release>2001</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Wave Race: Blue Storm is a wave runner racing game released as a launch title for the Nintendo GameCube on September 14, 2001. A sequel to the 1996 Nintendo 64 game Wave Race 64, Wave Race: Blue Storm was developed by Nintendo-owned development studio, NST and published by Nintendo.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0016</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Hot Wheels - Velocity X</name>
+					<filename>rom_pathGameCube/_4P/Hot Wheels - Velocity X.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Hot Wheels - Velocity X.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Hot Wheels - Velocity X.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Racing</genre>
+					<release>2002</release>
+					<publisher>THQ</publisher>
+					<gameplot>Can you handle a typical Hot Wheels day filled with criminal racing gangs, huge loops, fast speeds, brutal crashes, and an arsenal of weapons? Hot Wheels Velocity X tests your driving skills in dangerous missions spanning five destructible levels. You must do whatever it takes to complete the missions--speed through loops, pull off wild stunts, catch big air off a jump, drive up walls and buildings, find hidden shortcuts, or simply just run your opponents off the road.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0017</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Godzilla - Destroy All Monsters Melee</name>
+					<filename>rom_pathGameCube/_4P/Godzilla - Destroy All Monsters Melee.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Godzilla - Destroy All Monsters Melee.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Godzilla - Destroy All Monsters Melee.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Fighting</genre>
+					<release>2002</release>
+					<publisher>Atari</publisher>
+					<gameplot>Godzilla: Destroy All Monsters Melee is a fighting game developed and published by Pipeworks Software, Inc. for the Nintendo GameCube in 2002. The game was later released for Game Boy Advance as Godzilla: Domination!. A version for the Xbox with additional content was released in 2003. A PlayStation 2 version was planned, but later cancelled.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>

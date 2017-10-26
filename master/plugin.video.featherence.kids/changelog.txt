@@ -5,11 +5,22 @@
 ------------------------
 WIP - WORK IN PROGRESS
 ------------------------
+- Added TV Mode support to hundreds more contents.
+- Major update of Sdarot.tv broken links (all of them!)
+- Major update of redirecting fanart and posters and plots to TVDB website.
 
 ------------------------
-Featherence Kids v0.2.22 (xx-xx-17)
+Featherence Kids v0.2.22 (26-10-17)
 ------------------------
+- Added contents in English from www.cartoonson.com and www.kisspanda.net.
+- Added auto download of Metalkettleepo (If English) and kodil repositories (If Hebrew).
+- Added hundreds of kids movies in English.
 - Added new YouTube API for better performance.
+- Cartoons8 contents are disabled till website if up again.
+- Code cosmetic.
+- JKSP Addon is back and live! Full HD dubbed movies!
+- Major update of broken links and plots information.
+- Major update of redirecting fanart and posters and plots to TVDB website (WIP).
 
 ------------------------
 Featherence Kids v0.2.21 (05-Oct-17)
