@@ -12,8 +12,7 @@
 		  <visible>Window.IsActive(DialogVideoInfo.xml) + [!String.IsEmpty(ListItem.Art(fanart)) | !String.IsEmpty(Fanart.Image) | !String.IsEmpty(ListItem.Art(season.fanart))]</visible>
 		  <width>1920</width>
 		</control>
-		<include>TopVideoInformation</include>
-		<include>TopInformation</include>
+		
 		<control type="group" description=" כפתורים וטקסט (אמצע)">
 		  <posx>670</posx>
 		  <posy>355</posy>
@@ -274,6 +273,8 @@
 			</content>
 		</control>
 		
+		<include>TopVideoInformation</include>
+		<include>TopInformation</include>
 	</control>
   </controls>
 </window>

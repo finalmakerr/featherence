@@ -418,8 +418,8 @@
   </variable>
   
   <variable name="222label2">
-    <value condition="!Skin.HasSetting(HomeFanartHalfScreen)">$LOCALIZE[106]</value>
-	<value condition="Skin.HasSetting(HomeFanartHalfScreen)">$LOCALIZE[107]</value>
+    <value condition="!Skin.HasSetting(HomeFanartHalfScreen)">$LOCALIZE[107]</value>
+	<value condition="Skin.HasSetting(HomeFanartHalfScreen)">$LOCALIZE[106]</value>
   </variable>
   
   <variable name="223label2">
@@ -513,6 +513,7 @@
 	<value condition="Skin.String(TopInformationSize,0)">SMALL</value>
 	<value condition="Skin.String(TopInformationSize,1)">MEDIUM</value>
 	<value condition="Skin.String(TopInformationSize,2)">LARGE</value>
+	<value condition="Skin.String(TopInformationSize,3)">$LOCALIZE[13278]</value>
   </variable>
   
   <variable name="325label2">
@@ -573,8 +574,8 @@
   </variable>
   
   <variable name="335label2">
-    <value description="ברירת מחדל" condition="!Skin.HasSetting(TopVideoInformationFontSize)">$LOCALIZE[13278]</value>
-	<value condition="Skin.HasSetting(TopVideoInformationFontSize)">BIGGER</value>
+    <value description="ברירת מחדל" condition="Skin.HasSetting(TopVideoInformationFontSize)">$LOCALIZE[13278]</value>
+	<value condition="!Skin.HasSetting(TopVideoInformationFontSize)">BIGGER</value>
   </variable>
   
   <variable name="481label2" description="">

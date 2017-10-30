@@ -253,8 +253,25 @@ def checkMode11(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	printlog(title="checkMode11", printpoint=printpoint, text=text, level=0, option="")
 	return id_L, title_L, thumb_L, desc_L, fanart_L
 	
+def getData(url):
+	data = ""
+	__USERAGENT__ = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11'
+	req = urllib2.Request(url)
+	req.add_header('User-Agent', __USERAGENT__)
+	data = req
+	#response = urllib2.urlopen(req)
+	#data = response.read().replace("\n", "").replace("\t", "").replace("\r", "")
+	#response.close()
+	#text = "url" + space2 + str(url) + newline + \
+	#"req" + space2 + str(req) + newline + \
+	#"response" + space2 + str(response) + newline + \
+	#"data" + space2 + str(data)
+	#printlog(title="getData", printpoint=printpoint, text=text, level=0, option="")
+	return data
+	
 def GetHTML(url, agent = 'Apple-iPhone/'):
-    html = geturllib.GetURL(url, 86400, agent)
+    #html = urllib.GetURL(url, 86400, agent)
+    html = urllib2.Request(url)
     html = html.replace('\n',            '')
     html = html.replace('\r',            '')
     html = html.replace('\t',            '')
@@ -318,7 +335,8 @@ def listURLS_(mode, name, url, iconimage, desc, page, viewtype, fanart):
 	
 	try: test = page + 1
 	except: page = 1
-	if '' in url: id_L, title_L, thumb_L, desc_L, extra, url, html, match, match_page, total, pageL = listURLS_1(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc, page, viewtype, fanart)
+	if 'http://nickjr.walla.co.il' in url: id_L, title_L, thumb_L, desc_L, extra, url, html, match, match_page, total, pageL = listURLS_3(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc, page, viewtype, fanart)
+	elif '' in url: id_L, title_L, thumb_L, desc_L, extra, url, html, match, match_page, total, pageL = listURLS_1(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc, page, viewtype, fanart)
 	elif '' in url: id_L, title_L, thumb_L, desc_L, extra, url, html, match, match_page, total, pageL = listURLS_3(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc, page, viewtype, fanart)
 	elif '' in url:
 		url = url.replace('&googledrive2=',"")
@@ -344,7 +362,7 @@ def listURLS_1(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc,
 	extra = "" ; TypeError = "" ; pageL = []
 	pageP = int(page) - 1
 	pageN = int(page) + 1
-	html_ = GetHTML(url + str(page))
+	html_ = getData(url + str(page))
 	
 	match_page = regex_from_to(html_, '<div class="pages">', '</div>', excluding=False)
 	match_page2 = re.compile('<a href="(.+?)">(.+?)</a>').findall(match_page)
@@ -353,7 +371,7 @@ def listURLS_1(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc,
 		except Exception, TypeError: extra = extra + newline + 'TypeError' + space2 + str(TypeError) + space + 'page_num' + space2 + str(page_num)
 	
 	if mode == 42:
-		page = random.choice(pageL)
+		if pageL != []: page = random.choice(pageL)
 		
 	html = '<div class="cartoon">' + html_.split('<div class="cartoon">', 1)[-1]
 	
@@ -382,7 +400,7 @@ def listURLS_2(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc,
 	extra = "" ; TypeError = "" ; pageL = [] ; match_page = "" ; match_page2 = ""
 	pageP = int(page) - 1
 	pageN = int(page) + 1
-	html_ = GetHTML(url)
+	html_ = getData(url)
 
 	if 1 + 1 == 3:
 		match_page = regex_from_to(html_, '<article class', '</article>', excluding=False)
@@ -421,16 +439,17 @@ def listURLS_3(id_L, title_L, thumb_L, desc_L, mode, name, url, iconimage, desc,
 	extra = "" ; TypeError = "" ; pageL = []
 	pageP = int(page) - 1
 	pageN = int(page) + 1
-	html_ = GetHTML(url + str(page))
+	html_ = getData(url)
 	
-	match_page = regex_from_to(html_, '<div class="pages">', '</div>', excluding=False)
+	match_page = regex_from_to(html_, '<a href="/tvshow/(.*?)</a>', excluding=False)
 	match_page2 = re.compile('<a href="(.+?)">(.+?)</a>').findall(match_page)
 	for page_url, page_num in match_page2:
 		try: pageL.append(int(page_num))
 		except Exception, TypeError: extra = extra + newline + 'TypeError' + space2 + str(TypeError) + space + 'page_num' + space2 + str(page_num)
 	
 	if mode == 42:
-		page = random.choice(pageL)
+		pass
+		#page = random.choice(pageL)
 		
 	html = '<div class="cartoon">' + html_.split('<div class="cartoon">', 1)[-1]
 	

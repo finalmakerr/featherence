@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window description="חלון מידע כותרת עליונה (10142)">
-  <!--<defaultcontrol always="false">13</defaultcontrol>-->
-  <include>Fade_WindowsOpenClose</include>
-  <visible>[Player.Paused + VideoPlayer.IsFullscreen] | Window.IsVisible(DialogPVRChannelsOSD.xml) | [Player.IsInternetStream] + [!String.IsEqual(System.InternetState,$LOCALIZE[15207]) + !String.IsEmpty(System.InternetState)]</visible>
-  <visible>!Window.IsVisible(VideoOSD.xml) + !Window.IsVisible(DialogSubtitles.xml)</visible>
-  <visible>System.IdleTime(1)</visible>
+<window>
+  <visible>!Window.IsVisible(VideoOSD.xml) + !Window.IsVisible(DialogSubtitles.xml) + Player.Paused</visible>
   <!--<onunload>ActivateWindow(VideoFullScreen.xml)</onunload>-->
   <controls>
-    <control type="group">
-	   <!--!ControlGroup(202).HasFocus()-->
-      <include>TopInformation</include>
-	  <include>TopVideoInformation</include>
-	</control>
+	<include>TopVideoInformation</include>
 	
-	<!--<control type="button" id="13">
-	  <visible>false</visible>
-	  <onclick>ActivateWindow(VideoOSD.xml)</onclick>
-	</control>-->
-	<include>WindowsBusy</include>
   </controls>
 </window>

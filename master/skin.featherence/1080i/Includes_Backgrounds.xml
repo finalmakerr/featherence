@@ -12,14 +12,14 @@
 	  <include>VideoPlayerWindow</include>
 	  <control type="multiimage" description="רקע פאנארט">
 	    <include>TopInformationSize3</include>
-	    <animation condition="!Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]" effect="zoom" start="100,100" end="100,51" time="0">Conditional</animation>
-		<animation description="Horizontal-Zoom" condition="!Skin.HasSetting(TopInformationSize) + !Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.3" time="0">Conditional</animation>
-		<animation description="Horizontal-Zoom2" condition="Skin.HasSetting(TopInformationSize) + !Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.7" time="0">Conditional</animation>
-		<animation description="No full Fanart-Vertical_he" condition="[!Skin.HasSetting(HomeFanartHalfScreen) + ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus + Window.IsVisible(Home.xml)]] + Skin.String(MenuDesign,4) + String.IsEqual(System.Language,Hebrew)" effect="zoom" center="0,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
-		<animation description="No full Fanart-Vertical_en" condition="[!Skin.HasSetting(HomeFanartHalfScreen) + ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus + Window.IsVisible(Home.xml)]] + Skin.String(MenuDesign,4) + !String.IsEqual(System.Language,Hebrew)" effect="zoom" center="1920,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
+	    <animation condition="Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]" effect="zoom" start="100,100" end="100,51" time="0">Conditional</animation>
+		<animation description="Horizontal-Zoom" condition="!Skin.HasSetting(TopInformationSize) + Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.3" time="0">Conditional</animation>
+		<animation description="Horizontal-Zoom2" condition="Skin.HasSetting(TopInformationSize) + Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.7" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_he" condition="[Skin.HasSetting(HomeFanartHalfScreen) + ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus + Window.IsVisible(Home.xml)]] + Skin.String(MenuDesign,4) + String.IsEqual(System.Language,Hebrew)" effect="zoom" center="0,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="[Skin.HasSetting(HomeFanartHalfScreen) + ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus + Window.IsVisible(Home.xml)]] + Skin.String(MenuDesign,4) + !String.IsEqual(System.Language,Hebrew)" effect="zoom" center="1920,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
 	    <animation description="Slide-Panel" condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | [[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() + Player.HasVideo]]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
 		<animation description="Slide-Horizontal" condition="![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + Player.HasVideo" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
-		<animation condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + !Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditional</animation>
+		<animation condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditional</animation>
 		<aspectratio align="top">scale</aspectratio>
 		<imagepath background="true">$VAR[background]</imagepath>
 		<include>MultiFanart_TimePerImage</include>
@@ -110,8 +110,8 @@
 	  </control>
   </include>
   <include name="fanart3form">
-	<animation description="SideVideoInformation59_zoom_en" condition="!Skin.HasSetting(FullFanart59) + [$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="zoom" center="1910,105" end="40.4,44.5" time="0" reversible="false">Conditional</animation>
-	<animation description="SideVideoInformation59_zoom_he" condition="!Skin.HasSetting(FullFanart59) + [$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="zoom" center="10,105" end="40.4,44.5" time="0" reversible="false">Conditional</animation>
+	<animation description="SideVideoInformation59_zoom_en" condition="!Skin.HasSetting(FullFanart59) + [$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="zoom" center="1912,105" end="40.6,44.5" time="0" reversible="false">Conditional</animation>
+	<animation description="SideVideoInformation59_zoom_he" condition="!Skin.HasSetting(FullFanart59) + [$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="zoom" center="5,105" end="40.7,44.5" time="0" reversible="false">Conditional</animation>
 	
 	<!--<animation description="SideVideoInformation59_slide_en" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [!String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,0)]" effect="slide" end="0,0" time="0">Conditional</animation>
 	<animation description="SideVideoInformation59_slide_he" condition="[$EXP[View59]] + !Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(System.Language,Hebrew) + !Skin.String(View59Align) | Skin.String(View59Align,1)]" effect="slide" end="0,0" time="0">Conditional</animation>-->
@@ -337,7 +337,7 @@
 	<onclick condition="Player.HasVideo">Fullscreen</onclick>
   </include>
   <variable name="background">
-    <value condition="Skin.HasSetting(EpisodeFanart) + !String.IsEmpty(ListItem.Thumb) + [Container.Content(seasons) | Container.Content(episodes)] + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Season)">$INFO[ListItem.Thumb]</value>
+    <value condition="!Skin.HasSetting(EpisodeFanart) + !String.IsEmpty(ListItem.Thumb) + [Container.Content(seasons) | Container.Content(episodes)] + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Season)">$INFO[ListItem.Thumb]</value>
 	<value condition="!String.IsEmpty(ListItem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
 	<value condition="!String.IsEmpty(Fanart.Image)">$INFO[Fanart.Image]</value>
 	<value condition="!String.IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
@@ -345,7 +345,7 @@
 	<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 	<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
 	<value condition="Window.IsVisible(MyPics.xml) + !String.IsEmpty(ListItem.FilenameAndPath)">$INFO[ListItem.FilenameAndPath]</value>
-	<value condition="Skin.HasSetting(PosterFanart) + !String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+	<value condition="!Skin.HasSetting(PosterFanart) + !String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
 	
     <value condition="Skin.HasSetting(SubBackground) + String.IsEqual(Window(home).Property(SubButton.ID_),90_100) + !String.IsEmpty(Skin.String(background90_100))">$INFO[Skin.String(background90_100)]</value>
 	<value condition="Skin.HasSetting(SubBackground) + String.IsEqual(Window(home).Property(SubButton.ID_),90_101) + !String.IsEmpty(Skin.String(background90_101))">$INFO[Skin.String(background90_101)]</value>
@@ -1090,7 +1090,7 @@
 	<value condition="String.IsEqual(Window(home).Property(Button.ID),118)">$INFO[Skin.String(background118)]</value>
 	<value condition="String.IsEqual(Window(home).Property(Button.ID),119)">$INFO[Skin.String(background119)]</value>
 	
-	<value condition="!Window.IsVisible(Home.xml) + Skin.HasSetting(PosterFanart) + String.IsEqual(Container.Viewmode,$LOCALIZE[31011])">$INFO[ListItem.Thumb]</value>
+	<value condition="!Window.IsVisible(Home.xml) + !Skin.HasSetting(PosterFanart) + String.IsEqual(Container.Viewmode,$LOCALIZE[31011])">$INFO[ListItem.Thumb]</value>
   </variable>
   <variable name="background2">
 	<value description="מעודפים" condition="Window.IsVisible(DialogFavourites.xml)">$VAR[background17]</value>
@@ -1102,7 +1102,7 @@
 	<value description="מזג אוויר" condition="Window.IsVisible(MyWeather.xml)">$VAR[background97]</value>
 	<value description="משחקים" condition="Window.IsVisible(MyPrograms.xml) + String.Contains(Container.FolderPath,plugin://plugin.program.advanced.launcher)">$VAR[background98]</value>
 	<value description="דוקו" condition="[String.Contains(Container.FolderPath,plugin://plugin.video.movixws/?) + String.Contains(Container.FolderPath,name=Documentary)]">$VAR[background99]</value>
-	<value condition="Skin.HasSetting(PosterFanart) + $EXP[View50]">$INFO[ListItem.Thumb]</value>
+	<value condition="!Skin.HasSetting(PosterFanart) + $EXP[View50]">$INFO[ListItem.Thumb]</value>
   </variable>
   
   <variable name="background17">

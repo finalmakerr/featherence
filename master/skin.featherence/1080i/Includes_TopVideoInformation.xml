@@ -8,9 +8,11 @@
 	  <include>TopInformationSize01</include>
 	  
 	  <!--<visible>[[Window.IsVisible(DialogFullScreenInfo.xml) | Window.IsVisible(DialogFavourites.xml) |  Window.IsVisible(VideoOSD.xml) | Window.IsVisible(DialogSubtitles.xml)] + VideoPlayer.IsFullscreen + Player.Paused] | Window.IsVisible(DialogVideoInfo.xml) | [Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | String.IsEqual(Window(home).Property(Button.ID),97)]] | [$EXP[View57] | $EXP[View58]] + [Container.Content(Seasons) | Container.Content(Episodes) | [Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(Custom1175.xml)] | !Skin.HasSetting(ShowTopVideoInformation)] | $EXP[View51] | $EXP[View50] | $EXP[View54] | $EXP[View59] | Control.IsVisible(11) | Control.IsVisible(50) | Control.IsVisible(56) | Control.IsVisible(450) | Window.IsVisible(MusicVisualisation.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(Custom1170.xml) + [String.IsEqual(Window(home).Property(TEMP),TopVideoInformationColor) | String.IsEqual(Window(home).Property(TEMP),TopVideoInformationFontColor)]</visible>-->
-	  <visible>!Window.IsVisible(Home.xml) + !Window.IsVisible(CustomHomeCustomizer.xml) + $EXP[NoDialogConfirm] | Window.IsVisible(Custom1173.xml) | Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(Home.xml) + $EXP[ContentsWidget] |  Window.IsVisible(DialogVideoInfo.xml)</visible>
-	  <visible>![ [$EXP[View57] |  $EXP[View58]] + Skin.HasSetting(ShowTopVideoInformation) | [Container.OnNext | Container.OnPrevious]] | Window.IsVisible(DialogVideoInfo.xml)</visible>
+	  
+	  <visible>!Window.IsVisible(Home.xml) + !Window.IsVisible(CustomHomeCustomizer.xml) + $EXP[NoDialogConfirm] | Window.IsVisible(Custom1173.xml) | Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(Home.xml) + $EXP[ContentsWidget] |  Window.IsVisible(DialogVideoInfo.xml) |  Window.IsVisible(VideoFullScreen.xml) | Window.IsVisible(DialogFullscreenInfo.xml)</visible>
+	  <visible>![ [$EXP[View57] |  $EXP[View58]] + Skin.HasSetting(ShowTopVideoInformation) | [Container.OnNext | Container.OnPrevious]] | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(VideoFullScreen.xml) | Window.IsVisible(DialogFullscreenInfo.xml)</visible>
 	  <visible>![Window.IsVisible(MyPVRGuide.xml) + !System.IdleTime(3) + !Window.IsVisible(DialogPVRInfo.xml]</visible>
+	  
 	  <animation condition="[System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)] + !Skin.HasSetting(Performance)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
 	  <animation condition="[System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)] + Skin.HasSetting(Performance)" effect="fade" start="100" end="0" time="220" reversible="false">Conditional</animation>
 	  
@@ -162,7 +164,7 @@
 	  <control type="group" description="תמונת פרק">
 		<posx>470</posx>
 		<posy>153</posy>	      
-		<visible>!Skin.HasSetting(EpisodeFanart) + !Player.HasVideo + !String.Contains(Container.FolderPath,plugin://)</visible>
+		<visible>Skin.HasSetting(EpisodeFanart) + !Player.HasVideo + !String.Contains(Container.FolderPath,plugin://)</visible>
 		<visible>![ $EXP[View57] | $EXP[View58] ] | Window.IsVisible(DialogVideoInfo.xml)</visible>
 		<animation description="VideoInformation50_he" condition="[$EXP[View50]] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="250,0" time="0">Conditional</animation>
 		<animation description="SideVideoInformation50_he" condition="$EXP[View50s] + !Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-58,0" time="0">Conditional</animation>
@@ -176,7 +178,7 @@
 		<include content="TopVideoInformation9" description="תמונת פרק">
 			<param name="height" value="720" />
 			<param name="posx" value="0" />
-			<param name="posy" value="0" />
+			<param name="posy" value="-2.5" />
 			<param name="width" value="720" />
 			<param name="condition" value="!Window.IsVisible(DialogVideoInfo.xml) + ![$EXP[View50s] | $EXP[View54] | $EXP[View59] | $EXP[View51] | $EXP[View51s] | $EXP[View56] ]" />
 			<param name="diffuse" value="buttons/ButtonA0.png" />
@@ -629,7 +631,7 @@
 		  <posy>$PARAM[posy]</posy>
 		  <width>$PARAM[width]</width>
 		  
-		  <visible>!Skin.HasSetting(TopVideoInformationFontSize) + !Window.IsVisible(DialogVideoInfo.xml)</visible>
+		  <visible>Skin.HasSetting(TopVideoInformationFontSize) + !Window.IsVisible(DialogVideoInfo.xml)</visible>
 		  <visible>$PARAM[condition]</visible>
 		</control>
 		
@@ -642,7 +644,7 @@
 		  <posy>$PARAM[posy]</posy>
 		  <width>$PARAM[width]</width>
 		  
-		  <visible>Skin.HasSetting(TopVideoInformationFontSize) | Window.IsVisible(DialogVideoInfo.xml)</visible>
+		  <visible>!Skin.HasSetting(TopVideoInformationFontSize) | Window.IsVisible(DialogVideoInfo.xml)</visible>
 		  <visible>$PARAM[condition]</visible>
 		</control>
 	</definition>

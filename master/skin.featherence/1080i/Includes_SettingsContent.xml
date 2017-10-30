@@ -964,7 +964,8 @@
 		<onclick condition="!Skin.String(TopInformationSize)">Skin.SetString(TopInformationSize,0)</onclick>
 		<onclick condition="Skin.String(TopInformationSize,0)">Skin.SetString(TopInformationSize,1)</onclick>
 		<onclick condition="Skin.String(TopInformationSize,1)">Skin.SetString(TopInformationSize,2)</onclick>
-		<onclick condition="Skin.String(TopInformationSize,2)">Skin.SetString(TopInformationSize,)</onclick>
+		<onclick condition="Skin.String(TopInformationSize,2)">Skin.SetString(TopInformationSize,3)</onclick>
+		<onclick condition="Skin.String(TopInformationSize,3)">Skin.SetString(TopInformationSize,)</onclick>
 		<include>CustomizerExit</include>
 		<visible>Container(100).Hasfocus(26)</visible>
 	  </item>

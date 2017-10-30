@@ -605,19 +605,19 @@
 		  <texture diffuse="buttons/colors/ffffffff.png">buttons/effects/choosen.png</texture>
 		  <visible>Skin.HasSetting(SelectionMarker2) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]</visible>
       </control>
-	  <control type="image" description="סמן בחירה 3">
+	  <!--<control type="image" description="סמן בחירה 3">
 		  <bordersize>1</bordersize>
 		  <posx>$PARAM[posx6]</posx>
           <posy>$PARAM[posy6]</posy>
           <width>$PARAM[width6]</width>
           <height>$PARAM[height6]</height>
 		  <texture border="10" colordiffuse="$VAR[SelectedFrameColor]">misc/frames/selector.png</texture>
-		  <visible>!$PARAM[homeicons] + [ [Skin.HasSetting(SelectionMarker) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)]] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]] ] | $PARAM[homeicons]</visible>
+		  <visible>!$PARAM[homeicons] + [ [Skin.HasSetting(SelectionMarker) + [Control.HasFocus(9000) | Window.IsVisible(Custom1173.xml)] ] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)] ]] | $PARAM[homeicons]</visible>
 		  <visible>!$PARAM[homeicons] + [$EXP[!Button.ID_17-21] | !Skin.HasSetting(SPMiniButtons)] | $PARAM[homeicons]</visible>
 		  <visible>String.IsEmpty(Window(home).Property(WidgetButton.ID_))</visible>
 		  <visible>$PARAM[homeicons] + [ [Skin.HasSetting(SelectionMarker) + Control.HasFocus(9020)] | [Window.IsVisible(CustomHomeCustomizer.xml) + [Window.IsVisible(Custom1175.xml) | Window.IsVisible(CustomHomeCustomizer2.xml) | Window.IsVisible(Custom1165.xml) + String.IsEqual(Window(home).Property(TEMP),SelectedFrameColor)]] ] | !$PARAM[homeicons]</visible>
 		  <visible>$PARAM[homeicons] + [ [String.IsEqual(Window(home).Property(Button.ID_),17) | String.IsEqual(Window(home).Property(Button.ID_),18) | String.IsEqual(Window(home).Property(Button.ID_),19) + !String.IsEqual(Window(home).Property(Button.ID_),20) + !String.IsEqual(Window(home).Property(Button.ID_),21) | String.IsEqual(Window(home).Property(Button.ID_),20) | String.IsEqual(Window(home).Property(Button.ID_),21)] ] | !$PARAM[homeicon]</visible>
-      </control>
+      </control>-->
 		
 	  <control type="image" description="צללית">
 		  <posx>$PARAM[posx]</posx>
@@ -1362,7 +1362,7 @@
 	 
 	 <param name="container" default="0"/>
 	 <param name="position" default="0"/>
-	 <param name="condition" default="true"/>
+	 <param name="condition" value="!Skin.HasSetting(Performance)"/>
 	 <definition>
 		<control type="group">
 		  <visible>Control.IsVisible($PARAM[container])</visible>

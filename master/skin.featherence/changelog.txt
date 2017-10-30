@@ -8,12 +8,22 @@ WIP - WORK IN PROGRESS
 - ??Added option to hide Top Video Information on fullscreen video while skiping back/next.
 - Added option to disable the auto close of the video/audio OSD.
 - Added option to choose highlight font color.
+- Added Video player information on fullscreen pause.
+- Update video screen pause image.
 
 ------------------------
-Featherence v0.7.8 (xx-Oct-17)
+Featherence v0.7.8 (30-Oct-17)
 ------------------------
+- Major update of default skin settings. Enabled by default now.
++ Allow Thumbnails Fanart.
++ Cover Distance.
++ Fanart-Home Full Screen.
++ Larger Icons.
++ Show Fanart from Episode / Season.
++ Top Bar size.
++ Video Information Font Size.
 - Minor bugs fix.
-- Minor update of default skin settings.
+- Minor update of Performance settings.
 - Video Information bar is now always visible.
 
 ------------------------

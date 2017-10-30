@@ -536,7 +536,7 @@
 				<param name="posy2" value="290" />
 				<param name="container" value="150" />
 				<param name="position" value="3" />
-				<param name="condition" value="true" />
+				<param name="condition" value="!Skin.HasSetting(Performance)"/>
 			</include>
 		</control>		
 	    <control type="image">
@@ -608,7 +608,7 @@
 		<param name="posy2" value="1040" />
 		<param name="container" value="120" />
 		<param name="position" value="4" />
-		<param name="condition" value="true" />
+		<param name="condition" value="!Skin.HasSetting(Performance)"/>
 	  </include>
 	  <include>TopInformation</include>
 	  <include>TopVideoInformation</include>

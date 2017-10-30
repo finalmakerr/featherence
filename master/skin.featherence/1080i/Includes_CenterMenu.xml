@@ -30,7 +30,16 @@
 			<param name="type0" value="true" description="MenuBackground"/>
 			<param name="type1" value="false" description="DialogBackground"/>
 	  </include>
-	  <include condition="!Skin.HasSetting(Performance)">ArrowsUpDown</include>
+	  <include content="Arrows_UpDown">
+		<param name="posx" value="217"/>
+		<param name="posy" value="-2"/>
+		<param name="posx2" value="217"/>
+		<param name="posy2" value="375"/>
+		 
+		<param name="container" value="9005"/>
+		<param name="position" value="4"/>
+		<param name="condition" value="!Skin.HasSetting(Performance)"/>
+	  </include>
 	  <control type="grouplist" id="9005">
 		<onup>9005</onup>
 		<ondown>9005</ondown>
@@ -60,16 +69,25 @@
 	  <visible>!String.Contains(Control.GetLabel(311),password) + !String.Contains(Control.GetLabel(311),$LOCALIZE[733]) + Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(DialogSubtitles.xml) + !Window.IsVisible(Custom1175.xml) | ![Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)] | Window.IsVisible(VideoOSD.xml)</visible>
 	  <include content="MenuBackground" condition="!Window.IsVisible(Custom1173.xml)">
 			<param name="color" value="$VAR[MenuColor]" />
-			<param name="height" value="410" />
+			<param name="height" value="420" />
 			<param name="posx" value="0" />
-			<param name="posy" value="0" />
+			<param name="posy" value="-7" />
 			<param name="width" value="483" />
 			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
 		
 			<param name="type0" value="true" description="MenuBackground"/>
 			<param name="type1" value="false" description="DialogBackground"/>
 	  </include>
-	  <include condition="!Skin.HasSetting(Performance)">ArrowsUpDown</include>
+	  <include content="Arrows_UpDown">
+		<param name="posx" value="217"/>
+		<param name="posy" value="-2"/>
+		<param name="posx2" value="217"/>
+		<param name="posy2" value="375"/>
+		 
+		<param name="container" value="9005"/>
+		<param name="position" value="4"/>
+		<param name="condition" value="!Skin.HasSetting(Performance)"/>
+	  </include>
 	  <control type="list" id="9005">
 		<onright condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)">309</onright>
 		<onleft condition="Window.IsVisible(DialogKeyboard.xml) + !Window.IsVisible(Custom1175.xml)">300</onleft>

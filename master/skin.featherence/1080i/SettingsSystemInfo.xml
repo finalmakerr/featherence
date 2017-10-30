@@ -8,7 +8,7 @@
 		<include>Slide1</include>
 	    <include>Slide2</include>
 		<include>MenuDesign_TopSettings_</include>
-        <include>MenuDesign_Settings_</include>
+        <include>MenuDesign_Settings</include>
     </control>
 	<include>MenuDesign_Left</include>
 	<include>TopVideoInformation</include>

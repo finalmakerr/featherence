@@ -11,6 +11,7 @@
         <posx>232</posx>
         <posy>32</posy>
 		<animation description="1170" condition="String.IsEqual(Window(home).Property(TEMP),TopVideoInformationColor)" effect="slide" tween="Cubic" easing="out" start="0,0" end="0,120" delay="0" time="700" reversible="false">Conditional</animation>
+		<include>TopInformationSize1</include>
 		<!-- background panel -->
 		<include content="MenuBackground">
 			<param name="id" value="" />

@@ -345,7 +345,7 @@
   
   <include name="TopInformation">
 	<include content="TopInformation_7016">
-	  <param name="condition" value="!Skin.String(TopInformationSize)" />
+	  <param name="condition" value="Skin.String(TopInformationSize,3)" />
 	  <param name="height" value="42.5" />
 	  <param name="iconheight" value="35" />
 	  <param name="d" value="true" />
@@ -375,7 +375,7 @@
 	</include>
 	
 	<include content="TopInformation_7016">
-	  <param name="condition" value="Skin.String(TopInformationSize,2)" />
+	  <param name="condition" value="[!Skin.String(TopInformationSize) | Skin.String(TopInformationSize,2)]" />
 	  <param name="height" value="90" />
 	  <param name="iconheight" value="80" />
 	  <param name="d" value="false" />
@@ -486,7 +486,7 @@
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.IsEmpty(Slideshow.EXIFDate) + !String.IsEmpty(Slideshow.Filedate)]">[COLOR red][B]$INFO[Slideshow.Filedate][/B][/COLOR] • $LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.Contains(Slideshow.Filename,airplay_photo)]">[COLOR yellow][B]תמונות מהאייפון/אייפד[/B][/COLOR]</value>
 	<value description="תמונות-מצגת" condition="[Window.IsActive(Slideshow.xml) + String.IsEmpty(Slideshow.Filedate)]">$LOCALIZE[552]: [COLOR yellow][B]$INFO[Slideshow.Filename][/B][/COLOR] שם הקובץ: </value>
-	<value condition="!String.IsEmpty(ListItem.Label) + [[String.IsEmpty(Control.GetLabel(1105)) + String.IsEmpty(Control.GetLabel(1106))] | [$EXP[View57] | $EXP[View58]]] + !System.IdleTime(3)">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value>
+	<!--<value condition="!String.IsEmpty(ListItem.Label)">[COLOR yellow][B]$INFO[ListItem.Label][/B][/COLOR]</value>-->
   </variable>
  
 </includes>

@@ -2157,7 +2157,7 @@ def pluginend(admin):
 		'''Play URL'''
 		listURLS(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 42:
-		listURL(mode, name, url, iconimage, desc, num, viewtype, fanart)
+		listURLS_(mode, name, url, iconimage, desc, num, viewtype, fanart)
 	elif mode == 44:
 		'''Play URL'''
 		playURL(mode, name, url, iconimage, desc, num, viewtype, fanart)

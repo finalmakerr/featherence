@@ -5,8 +5,8 @@
 	<value condition="![!String.Contains(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>
 	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
 	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31011])] + !Skin.HasSetting(ShowDVDCases2)">14</value>
-	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31013])] + !Skin.HasSetting(ShowDVDCases)]">5</value>
-	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31016])] + !Skin.HasSetting(ShowDVDCases)]">15</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31013])] + !Skin.HasSetting(ShowDVDCases)">5</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31016])] + !Skin.HasSetting(ShowDVDCases)">15</value>
 	<value condition="![ [ [ [String.IsEqual(Container.Viewmode,$LOCALIZE[31015])] | [String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] ] + Skin.HasSetting(ShowDVDCases2) ] | ![String.IsEqual(Container.Viewmode,$LOCALIZE[31015])] + ![String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] ]">6</value>
 	<value condition="![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + !Window.IsVisible(Home.xml)">7</value>
 	<value condition="![ [!String.IsEmpty(ListItem.Rating) | !String.IsEmpty(Container.ListItemNoWrap(-3).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(-1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(1).Rating) | !String.IsEmpty(Container.ListItemNoWrap(2).Rating) | !String.IsEmpty(Container.ListItemNoWrap(3).Rating)] | Window.IsVisible(Home.xml) ] + !String.Contains(Container.FolderPath,videodb://)">8</value>
@@ -154,8 +154,8 @@
   
   <variable name="IconFocusColor" description="בחירת צבע סמל נבחר">
     <!--Check if container 9020 have focus-->
-    <value condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + !Control.HasFocus(9000) + !Skin.String(IconUnFocusColor)" description="">FFFFFFFF</value>
-	<value condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + !Control.HasFocus(9000) + Skin.String(IconUnFocusColor)" description="">$INFO[Skin.String(IconUnFocusColor)]</value>
+    <value condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Control.HasFocus(9020) | ControlGroup(9009).HasFocus() | !String.IsEmpty(Window(home).Property(WidgetButton.ID_))] + !Window.IsVisible(Custom1173.xml) + !Skin.String(IconUnFocusColor)" description="">FFFFFFFF</value>
+	<value condition="[Window.IsVisible(Home.xml) | Window.IsVisible(CustomHomeCustomizer.xml)] + [Control.HasFocus(9020) | ControlGroup(9009).HasFocus() | !String.IsEmpty(Window(home).Property(WidgetButton.ID_))] + !Window.IsVisible(Custom1173.xml) + Skin.String(IconUnFocusColor)" description="">$INFO[Skin.String(IconUnFocusColor)]</value>
 	
     <value condition="Window.IsVisible(Custom1170.xml) + String.IsEqual(Window(home).Property(TEMP),IconFocusColor) + !String.IsEmpty(Window(home).Property(SelectedColor))" description="">$INFO[Window(home).Property(SelectedColor)]</value>
     <value condition="!Skin.String(IconFocusColor)" description="ברירת מחדל-light yellow">fffffacd</value>

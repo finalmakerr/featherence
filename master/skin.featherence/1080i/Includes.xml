@@ -168,46 +168,35 @@
 	  <left>867</left>
 	  <top>447</top>
 	  <visible>Player.Paused | Slideshow.IsPaused</visible>
+	  <control type="image" description="pause">
+		<left>-20</left>
+		<top>-20</top>
+		<width>226</width>
+		<height>226</height>
+		<texture>osd/featherence_pause1.png</texture>
+	  </control>
 	  <control type="image" description="logo">
-		<animation type="VisibleChange" reversible="false">
-			<effect type="fade" start="0" end="100" time="4000" delay="1000" />
-		</animation>
-		<animation type="WindowOpen" reversible="false">
-			<effect type="fade" start="0" end="100" time="4000" delay="1000" />
-		</animation>
-		<animation type="WindowClose" reversible="false">
-			<effect type="fade" start="100" end="0" time="0" delay="500" />
-		</animation>
-		<left>30</left>
-		<top>30</top>
-		<width>114</width>
-		<height>114</height>
-		<texture diffuse="BBBBBBBB">osd/featherence_pause4.png</texture>
+		<left>33</left>
+		<top>29</top>
+		<width>120</width>
+		<height>120</height>
+		<texture colordiffuse="grey2">DefaultUser.png</texture>
 	  </control>
 	  <control type="image" description="pause">
-		<animation type="VisibleChange" reversible="false">
-			<effect type="fade" start="0" end="90" time="500" />
-		</animation>
-		<animation type="WindowOpen" reversible="false">
-			<effect type="fade" start="0" end="90" time="500" />
-		</animation>
-		<animation type="WindowClose" reversible="false">
-			<effect type="fade" start="100" end="0" time="500" />
-		</animation>
 		<left>0</left>
 		<top>0</top>
 		<width>186</width>
 		<height>186</height>
-		<texture>osd/featherence_pause2.png</texture>
+		<texture colordiffuse="grey2">osd/featherence_pause5.png</texture>
 	  </control>
 	  <control type="label">
-	    <animation condition="true" effect="fade" start="50" end="50">Conditional</animation>
 		<align>center</align>
 		<height>186</height>
 	    <label>$INFO[Player.CacheLevel]</label>
 		<left>0</left>
 		<font>size18</font>
-		<top>-40</top>
+		<top>50</top>
+		<textcolor>grey2</textcolor>
 	    <width>186</width>
 	  </control>
 	</control>

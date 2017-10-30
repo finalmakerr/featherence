@@ -14,6 +14,7 @@
 	  </control>
 	<include>ScrollBar</include>
 	<include>TopVideoInformation</include>
+	<include>TopInformation</include>
 	<include>TouchSupport</include>
 	<include>WindowsBusy</include>
   </controls>

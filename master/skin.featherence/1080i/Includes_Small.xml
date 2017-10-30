@@ -280,11 +280,11 @@
 	  <visible>!String.Contains(ListItem.Label,$LOCALIZE[33078]) + !String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Label,Next Page)</visible>
 	  <visible>!String.IsEmpty(Control.GetLabel(11300)) | String.IsEqual(ListItem.Overlay,OverlayWatched.png) | Integer.IsGreater(ListItem.Property(WatchedEpisodes),0) + Integer.IsLess(ListItem.Property(UnWatchedEpisodes),0)</visible> 
 	  <control type="image" description="סמן נצפה">
-		  <aspectratio align="left">keep</aspectratio>
+		  <aspectratio align="left">stretch</aspectratio>
 		  <height>285</height>
-		  <posx>-165</posx>
+		  <posx>-168</posx>
 		  <posy>-4</posy>
-		  <width>345</width>
+		  <width>250</width>
 		  <texture>$VAR[Overlay]</texture>
 		  <visible>String.IsEmpty(Control.GetLabel(11156))</visible>
       </control>

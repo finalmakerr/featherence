@@ -146,7 +146,7 @@
 	  <width>400</width>
 	  <height>40</height>
 	  <label>$VAR[VideoInformation1]</label>
-	  <visible>[!Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [String.IsEmpty(ListItem.Icon) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Thumb)]</visible>
+	  <visible>[Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [String.IsEmpty(ListItem.Icon) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Thumb)]</visible>
 	</control>
 	<control type="label" description="שם עם תמונה מוגדלת">
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos47</include>
@@ -157,7 +157,7 @@
 	  <width>320</width>
 	  <height>40</height>
 	  <label>$VAR[VideoInformation1]</label>
-	  <visible>Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus)</visible>
+	  <visible>!Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus)</visible>
 	  <visible>[!String.IsEmpty(ListItem.Icon) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Thumb)] | String.IsEqual(Control.GetLabel(13055),DefaultFolderBack.png)</visible>
 	</control>
 	<control type="label" id="13055">
@@ -172,9 +172,9 @@
   <include name="View50_Genre">
     <control type="label" description="סגנונות">
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos34</include>
-	  <animation description="slide_he" condition="Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
-	  <animation description="slide_he" condition="Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-60,0" time="0">Conditional</animation>
-	  <animation description="slide_he" condition="!Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-30,0" time="0">Conditional</animation>
+	  <animation description="slide_he" condition="!Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
+	  <animation description="slide_he" condition="!Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-60,0" time="0">Conditional</animation>
+	  <animation description="slide_he" condition="Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-30,0" time="0">Conditional</animation>
 	  <animation description="slide_he" condition="Window.IsVisible(MyPics.xml) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
 	  <posx>85</posx>
 	  <posy>40</posy>
@@ -191,7 +191,7 @@
   </include>
   
   <include name="ViewDesign_50_FocusedLayout">
-    <include>AutoView</include>
+    <include condition="!Skin.HasSetting(Performance)">AutoView</include>
 	<control type="image" description="מסגרת">
 	  <animation condition="!Skin.HasSetting(View50_Plus)" effect="zoom" center="0,0" start="100,100" end="100,200">Conditional</animation>
 	  <posx>0</posx>
@@ -248,7 +248,7 @@
 	  <width>400</width>
 	  <height>40</height>
 	  <label>$VAR[VideoInformation1]</label>
-	  <visible>[!Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [String.IsEmpty(ListItem.Icon) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Thumb)]</visible>
+	  <visible>[Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [String.IsEmpty(ListItem.Icon) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Thumb)]</visible>
 	</control>
 	<control type="label" description="שם עם תמונה מוגדלת">
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos47</include>
@@ -260,15 +260,15 @@
 	  <width>320</width>
 	  <height>40</height>
 	  <label>$VAR[VideoInformation1]</label>
-	  <visible>Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus)</visible>
+	  <visible>!Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus)</visible>
 	  <visible>[!String.IsEmpty(ListItem.Icon) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Thumb)] | String.IsEqual(Control.GetLabel(13055),DefaultFolderBack.png)</visible>
 	</control>
 	<include condition="Skin.HasSetting(Performance) | Skin.HasSetting(Genre)">View50_Genre</include>
 	<control type="grouplist" description="תמונת סגנון">
 	    <animation condition="true" effect="zoom" center="auto" start="100,100" end="80,80">Conditional</animation>
 		<animation description="slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="30,0" time="0">Conditional</animation>
-		<animation description="slide_he" condition="Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="45,0" time="0">Conditional</animation>
-	    <animation description="slide_he" condition="Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-40,0" time="0">Conditional</animation>
+		<animation description="slide_he" condition="!Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + !String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="45,0" time="0">Conditional</animation>
+	    <animation description="slide_he" condition="!Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus) + String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="-40,0" time="0">Conditional</animation>
 	    <posx>0</posx>
 		<posy>30</posy>
 		<include condition="String.IsEqual(System.Language,Hebrew)">LabelR7</include>
@@ -327,7 +327,7 @@
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL7</include>
 	  <label>$VAR[TopVideoInformation7]</label>
 	  <visible>[[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
-	  <visible>[!Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [String.IsEmpty(ListItem.Icon) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Thumb)]</visible>
+	  <visible>[Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [String.IsEmpty(ListItem.Icon) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Thumb)]</visible>
 	</control>
 	<control type="label" description="משודר עכשיו עם תמונה מוגדלת">
 	  <animation description="slide_he" condition="String.IsEqual(System.Language,Hebrew)" effect="slide" start="0,0" end="142,0" time="0">Conditional</animation>
@@ -340,7 +340,7 @@
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL7</include>
 	  <label>$VAR[TopVideoInformation7]</label>
 	  <visible>[[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
-	  <visible>Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus)</visible>
+	  <visible>!Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus)</visible>
 	  <visible>[!String.IsEmpty(ListItem.Icon) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Thumb)] | String.IsEqual(Control.GetLabel(13055),DefaultFolderBack.png)</visible>
 	</control>
 	<control type="image" description="תמונה">
@@ -354,7 +354,7 @@
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">ImageL2</include>
 	  <texture background="true">$VAR[VideoInformation2]</texture>
 	  <visible>[!String.Contains(ListItem.path,videodb://movies/sets/)] | String.IsEmpty(ListItem.Genre)</visible>
-	  <visible>!Skin.HasSetting(View50_BiggerIcon)</visible>
+	  <visible>Skin.HasSetting(View50_BiggerIcon)</visible>
 	</control>
 	<control type="image" description="תמונה מוגדלת">
 	  <include>BorderFrame</include>
@@ -367,7 +367,7 @@
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">ImageL2</include>
 	  <texture background="true">$VAR[VideoInformation2]</texture>
 	  <visible>!String.Contains(ListItem.path,videodb://movies/sets/) | String.IsEmpty(ListItem.Genre)</visible>
-	  <visible>Skin.HasSetting(View50_BiggerIcon)</visible>
+	  <visible>!Skin.HasSetting(View50_BiggerIcon)</visible>
 	</control>
 	<control type="label" description="שעות/דקות/עונות">
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos37</include>
@@ -531,7 +531,7 @@
 		</control>
 	  </itemlayout>
 	  <focusedlayout description="(כללי)" condition="true" height="90" width="960">    
-		<include>AutoView</include>
+		<include condition="!Skin.HasSetting(Performance)">AutoView</include>
 		<control type="image" description="מסגרת">
 		  <include>Fade41</include>
 		  <posx>0</posx>
@@ -584,7 +584,7 @@
 	  <include>LabelL7</include>
 	  <label>$VAR[TopVideoInformation7]</label>
 	  <visible>[[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(DialogPVRGuideOSD.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)] + ListItem.HasEpg]</visible>
-	  <visible>[!Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [String.IsEmpty(ListItem.Icon) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Thumb)]</visible>
+	  <visible>[Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [String.IsEmpty(ListItem.Icon) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Thumb)]</visible>
 	</control>
 	<include>PVRprogress</include>
 	<control type="group" description="">
@@ -632,14 +632,13 @@
 	    <!--<animation condition="Player.HasVideo" effect="slide" start="0,0" end="0,-240" time="0" reversible="false">Conditional</animation>-->
 	    <include>Slide1</include>
 		<include>Slide2</include>
-		<include condition="!Skin.HasSetting(Performance)">ArrowsUpDown</include>
         <control type="panel" id="56">
 		  <posx>20</posx>
-          <posy>210</posy>
+          <posy>220</posy>
           <width>1880</width>
-          <height>825</height>
+          <height>820</height>
 		  <include>4ways</include>
-		  <viewtype label="31012">Grid</viewtype>
+		  <viewtype label="31012">List</viewtype>
 		  <itemlayout description="(Seasons/Episodes)" height="100" width="960"> <!--String.Contains(Container.FolderName,Mako)-->
 			<control type="image" description="מסגרת">
 			  <!--<include condition="!Skin.HasSetting(Performance)">Fade_MenuButtonsOverlay</include>-->
@@ -701,7 +700,7 @@
 			</control>
 		  </itemlayout>
           <focusedlayout description="(Seasons/Episodes)" height="100" width="960">    
-			<include>AutoView</include>
+			<include condition="!Skin.HasSetting(Performance)">AutoView</include>
 			<control type="image" description="מסגרת">
 			  <posx>760</posx>
               <posy>20</posy>
@@ -762,7 +761,17 @@
 			</control>     
           </focusedlayout>        		
 		</control>
-      </control>
+        <include content="Arrows_UpDown">
+			<param name="posx" value="937.5"/>
+			<param name="posy" value="210"/>
+			<param name="posx2" value="937.5"/>
+			<param name="posy2" value="1035"/>
+			 
+			<param name="container" value="56"/>
+			<param name="position" value="7"/>
+			<param name="condition" value="!Skin.HasSetting(Performance)"/>
+		</include>
+	  </control>
     </control>	
   </include>
   <include name="ViewDesign_57" description="Wall">
@@ -827,7 +836,7 @@
 	</control>
   </include>
   <include name="ViewDesign_57_FocusedLayout">
-	<include>AutoView</include>
+	<include condition="!Skin.HasSetting(Performance)">AutoView</include>
 	<control type="group">
 		<animation condition="$EXP[View57] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View57_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>
 		
@@ -1078,7 +1087,7 @@
 		</control>
 	  </itemlayout>
 	  <focusedlayout description="(Plugins)" height="510" width="373">
-		<include>AutoView</include>
+		<include condition="!Skin.HasSetting(Performance)">AutoView</include>
 		<control type="group">
 			<include>View54_Boat_Focuslayout_Animation</include>
 			<animation condition="$EXP[View58] + !Skin.HasSetting(SelectedZoom) + Skin.HasSetting(View58_Distance)" effect="zoom" center="auto" start="100,100" end="110,110">Conditional</animation>

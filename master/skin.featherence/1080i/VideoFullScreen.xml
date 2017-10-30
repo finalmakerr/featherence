@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="2005" description="חלון קידוד וידאו">
+<window>
   <defaultcontrol>-</defaultcontrol>
   <!--<onload condition="String.IsEmpty(Window(home).Property(VideoPlayer.Info))">AlarmClock(info,Action(Info),00:02,silent)</onload>
   <onload condition="String.IsEmpty(Window(home).Property(VideoPlayer.Info))">SetProperty(VideoPlayer.Info, true, home)</onload>-->
@@ -8,8 +8,7 @@
   <onload condition="String.IsEqual(VideoPlayer.Title,featherence_.mp4)">AlarmClock(featherence__,ReloadSkin(),00:01,silent)</onload>-->
   <controls>
     <control type="group">
-      <visible>!Window.IsActive(DialogFullscreenInfo.xml)</visible>
-      <animation effect="fade" time="200">VisibleChange</animation>
+      <!--<visible>!Window.IsActive(DialogFullscreenInfo.xml)</visible>-->
       <control type="image" description="Background">
         <width>1920</width>
         <height>300</height>
@@ -56,7 +55,7 @@
           <label>-</label>
         </control>
       </control>
-    </control>
-    <include>WindowsBusy</include>
+	</control>
+	
   </controls>
 </window>

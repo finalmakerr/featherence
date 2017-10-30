@@ -33,7 +33,7 @@
 			<param name="color" value="$VAR[MenuColor]" />
 			<param name="height" value="590" />
 			<param name="posx" value="0" />
-			<param name="posy" value="-35" />
+			<param name="posy" value="0" />
 			<param name="width" value="483" />
 			
 			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
@@ -195,7 +195,7 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31129]</label>
-		  <selected>Skin.HasSetting(PosterFanart)</selected>
+		  <selected>!Skin.HasSetting(PosterFanart)</selected>
 		  <onclick>Skin.ToggleSetting(PosterFanart)</onclick>
         </control>
 		<control type="radiobutton" id="112" description="הצג דירוג">
@@ -237,7 +237,7 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31469]</label>
-		  <selected>Skin.HasSetting(View50_BiggerIcon)</selected>
+		  <selected>!Skin.HasSetting(View50_BiggerIcon)</selected>
 		  <onclick>Skin.ToggleSetting(View50_BiggerIcon)</onclick>
 		  <visible>$EXP[View50]</visible>
         </control>
@@ -269,7 +269,7 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31489]</label>
-		  <selected>Skin.HasSetting(EpisodeFanart)</selected>
+		  <selected>!Skin.HasSetting(EpisodeFanart)</selected>
 		  <onclick>Skin.ToggleSetting(EpisodeFanart)</onclick>
 		  <visible>!String.IsEmpty(ListItem.Thumb) + [Container.Content(seasons) | Container.Content(episodes)] + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Season)</visible>
         </control>
@@ -290,7 +290,7 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 		  <font>size28</font>
 		  <label>$LOCALIZE[31473]</label>
-		  <selected>Skin.HasSetting(TopVideoInformationFontSize)</selected>
+		  <selected>!Skin.HasSetting(TopVideoInformationFontSize)</selected>
 		  <onclick>Skin.ToggleSetting(TopVideoInformationFontSize)</onclick>
 		  <visible></visible>
         </control>
@@ -302,6 +302,7 @@
 		  <label>$LOCALIZE[31544]</label>
 		  <selected>Skin.HasSetting(Show_Duration)</selected>
 		  <onclick>Skin.ToggleSetting(Show_Duration)</onclick>
+		  <onclick condition="!Skin.HasSetting(Show_Duration)">Notification(Active when idle for 3 seconds,,3000)</onclick>
 		  <visible>$EXP[View50]</visible>
         </control>
 		<control type="radiobutton" id="125" description="מרווח עטיפות">
@@ -376,7 +377,7 @@
 			<label>$LOCALIZE[31509]: $VAR[25label2]</label>
 			<onclick>Skin.ToggleSetting(AutoView)</onclick>
 			<selected>Skin.HasSetting(AutoView)</selected>
-			<visible>!Skin.HasSetting(ForceView)</visible>
+			<visible>!Skin.HasSetting(ForceView) + !Skin.HasSetting(Performance)</visible>
 		</control>
 		<control type="radiobutton" id="26" description="אילוץ תצוגה:">
 			<include>SideMenuCommon</include>
@@ -386,6 +387,7 @@
 			<label>$LOCALIZE[31508]: $VAR[26label2]</label>
 			<onclick>Skin.ToggleSetting(ForceView)</onclick>
 			<selected>Skin.HasSetting(ForceView)</selected>
+			<visible>!Skin.HasSetting(Performance)</visible>
 		</control>
 		
 		<control type="button" id="30" description="סרטים/כל חלון">
@@ -397,7 +399,7 @@
 			<font>size28</font>
 			<label>$VAR[30label2]</label>
 			<visible>Skin.HasSetting(AutoView) | Skin.HasSetting(ForceView)</visible>
-			<!--<visible>Window.IsVisible(MyVideoNav.xml)</visible>-->
+			<visible>!Skin.HasSetting(Performance)</visible>
 		</control>
 
 		<control type="button" id="31">
@@ -578,7 +580,7 @@
   <include name="LeftMenuDialogSelect">
     <control type="group" description="Side menu 3/5 group">
 	  <include>Slide6</include>
-      <height>500</height>	  
+      <height>515</height>	  
 	  <posx>-440</posx>
 	  <posy>290</posy>	  
 	  <width>580</width>
@@ -586,9 +588,9 @@
 		  <animation condition="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)" effect="zoom" start="100,100" end="148,100">Conditional</animation>
 		  <include content="MenuBackground">
 			<param name="color" value="$VAR[MenuColor]" />
-			<param name="height" value="672" />
+			<param name="height" value="642" />
 			<param name="posx" value="0" />
-			<param name="posy" value="0" />
+			<param name="posy" value="-20" />
 			<param name="width" value="583" />
 			<param name="condition" value="!Skin.HasSetting(MenuBackground)"/>
 			
@@ -599,7 +601,7 @@
       <control type="label" id="1" description="כותרת">
 		<include>LabelC12</include>
 		<posx>20</posx>
-		<posy>0</posy>
+		<posy>-10</posy>
         <width>540</width>
 		<visible>false</visible>
       </control>
@@ -608,7 +610,7 @@
 		<include>LabelC12</include>
 		<label>$VAR[DialogSelectTitle]</label>
 		<posx>20</posx>
-		<posy>0</posy>
+		<posy>-10</posy>
         <width>540</width>
 		<visible>!Control.IsVisible(1)</visible>
       </control>
@@ -630,7 +632,7 @@
 				<param name="id" value="" />
 				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonUnFocusColor]" />
-				<param name="height" value="66" />
+				<param name="height" value="60" />
 				<param name="posx" value="-30" />
 				<param name="posy" value="0" />
 				<param name="width" value="610" />
@@ -668,7 +670,7 @@
 				<param name="id" value="" />
 				<param name="border" value="0" />
 				<param name="color" value="$VAR[ButtonFocusColor]" />
-				<param name="height" value="66" />
+				<param name="height" value="60" />
 				<param name="posx" value="-30" />
 				<param name="posy" value="0" />
 				<param name="width" value="610" />
@@ -757,7 +759,7 @@
               <width>60</width>
               <bordersize>6</bordersize>
               <texture>$INFO[ListItem.Icon]</texture>
-              <aspectratio>keep</aspectratio>
+              <aspectratio>aspect</aspectratio>
             </control>
 		</itemlayout>
         <focusedlayout description="()" height="60" width="870">
@@ -805,18 +807,6 @@
               <texture>$INFO[ListItem.Icon]</texture>
               <aspectratio>aspect</aspectratio>
             </control>
-            <control type="image" description="אייקון2">
-			  <!--<include>Fade8</include>-->
-			  <animation condition="!String.IsEmpty(ListItem.Icon)" effect="zoom" end="700,700" time="0" reversible="false">Conditional</animation>
-			  <aspectratio>aspect</aspectratio>
-			  <posx>210</posx>
-              <posy>55</posy>
-              <height>55</height>
-              <bordersize>6</bordersize>
-              <texture>$INFO[ListItem.Icon]</texture>
-			  <visible>!String.IsEmpty(ListItem.Icon) + false</visible>
-              <width>55</width>
-            </control>
         </focusedlayout>        		
 	  </control>
       <include content="LeftMenuDialogSelect_30">
@@ -827,6 +817,26 @@
 	    <param name="condition" value="String.IsEqual(Window(home).Property(DialogSelect.Wide),1)" />
 	  </include>
 	</control>
+	<include content="Arrows_UpDown">
+		<param name="posx" value="225"/>
+		<param name="posy" value="330"/>
+		<param name="posx2" value="225"/>
+		<param name="posy2" value="780"/>
+		 
+		<param name="container" value="3"/>
+		<param name="position" value="6"/>
+		<param name="condition" value="!Skin.HasSetting(Performance)"/>
+	</include>
+	<include content="Arrows_UpDown">
+		<param name="posx" value="225"/>
+		<param name="posy" value="330"/>
+		<param name="posx2" value="225"/>
+		<param name="posy2" value="780"/>
+		 
+		<param name="container" value="6"/>
+		<param name="position" value="6"/>
+		<param name="condition" value="!Skin.HasSetting(Performance)"/>
+	</include>
   </include>
   
   <include name="LeftMenuMyPics" description="חלון צד תצוגת תמונות">
@@ -1269,7 +1279,7 @@
 	  <include>SideMenuCommon</include>
 	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
-	  <onclick condition="$EXP[View56] + String.IsEmpty(Control.GetLabel(11155))">SendClick(2)</onclick>
+	  <!--<onclick condition="$EXP[View56] + String.IsEmpty(Control.GetLabel(11155))">SendClick(2)</onclick>-->
 	  <font>size28</font>
 	  <!--<visible>!String.IsEmpty(Control.GetLabel(2))</visible>-->
 	</control>

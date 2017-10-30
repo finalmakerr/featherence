@@ -17,7 +17,6 @@
 		  <visible>false</visible>
 		</control>
 		<include>ArrowsLeftRight</include>
-		<include condition="!Skin.HasSetting(Performance)">ArrowsUpDown</include>
 		<control type="grouplist" id="3" description="TopMenu">
 		  <include>TopInformationSize0</include>
 		  <posx>350</posx>
@@ -42,7 +41,7 @@
 		  <posx>350</posx>
 		  <posy>170</posy>
 		  <width>1220</width>
-		  <height>760</height>
+		  <height>750</height>
 		  <onup>3</onup>
 		  <ondown>noop</ondown>
 		  <onright condition="!String.IsEqual(System.Language,Hebrew)">9000</onright>
@@ -80,6 +79,16 @@
 		  <visible>false</visible>
 		</control>
 	</control>
+	<include content="Arrows_UpDown">
+		<param name="posx" value="950"/>
+		<param name="posy" value="260"/>
+		<param name="posx2" value="950"/>
+		<param name="posy2" value="1035"/>
+		 
+		<param name="container" value="5"/>
+		<param name="position" value="9"/>
+		<param name="condition" value="!Skin.HasSetting(Performance)"/>
+	</include>
 	<include>ScrollBar</include>
     <include>MenuDesign_Left</include>
 	<include>TopVideoInformation</include>

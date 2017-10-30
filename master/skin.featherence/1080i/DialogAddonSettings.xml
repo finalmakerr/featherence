@@ -107,7 +107,7 @@
 		 
 		<param name="container" value="8999"/>
 		<param name="position" value="2"/>
-		<param name="condition" value="true"/>
+		<param name="condition" value="!Skin.HasSetting(Performance)"/>
 	  </include>
 	</control>
     <control type="group" description="קבוצה תפריט ראשי (2)">

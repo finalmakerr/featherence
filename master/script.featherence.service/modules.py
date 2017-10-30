@@ -6,8 +6,11 @@ from shared_modules import *
 
 def mode0(admin, name, printpoint):
 	'''test'''
-	emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')
-	rom_path = os.path.join(emulatordata_path,'rom','')
+	from shared_modules3 import *
+	from shared_variables3 import *
+	PlayVideos('name', 'mode', 'http://nickjr.walla.co.il/?w=//1887291', 'iconimage', 'desc', 'num', 'fanart')
+	#emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')
+	#rom_path = os.path.join(emulatordata_path,'rom','')
 	
 	#download_file_from_google_drive('0B_dmZM8wv6D9U2ZWZDRfS3ZFLVU', os.path.join(temp_path,'1.zip'))
 	
@@ -585,8 +588,12 @@ def mode10(admin, name, printpoint):
 		dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress)')
 		setPlayerInfo()
 		#videostarttweak(admin)
+		if playerhasvideo and xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)'):
+			if xbmc.getCondVisibility('String.IsEmpty(Window(home).Property(VideoPlayer.Info))'):
+				xbmc.executebuiltin('Action(Info)')
+				setProperty('VideoPlayer.Info', 'True', type="home")
+				
 		ii = 0
-		#if playerhasvideo and xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)'): xbmc.executebuiltin('Action(Info)')
 		while (playerhasvideo or playerhasaudio or dialogbusyW or dialogprogressW) and ii < 3 and not xbmc.abortRequested:
 			xbmc.sleep(5000)
 			videoplayertweak(admin, playerhasvideo)
