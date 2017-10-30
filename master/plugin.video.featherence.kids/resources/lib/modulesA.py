@@ -508,6 +508,7 @@ def CATEGORIES105A(General_LanguageL, background, background2): #עמוד הבא
 		list.append('&youtube_id=87A_2Q2CSFc') #נילס הולגרסון
 		list.append('&youtube_id=_ixMuVcAGhA') #סוד השוקולד
 		list.append('&youtube_id=e3ChxP5afl4') #סמי הכבאי (הסרט)
+		list.append('&youtube_id=nrspEf7H3Zk') #עלי באבא
 		list.append('&youtube_id=')
 		list.append('&youtube_id=')
 		list.append('&youtube_pl=')
@@ -524,6 +525,7 @@ def CATEGORIES105A(General_LanguageL, background, background2): #עמוד הבא
 		list.append('&youtube_id=dLVm8IrUamM') #מועדון ווינX
 		list.append('&youtube_id=oMCRUUvwz58') #מועדון ווינX
 		list.append('&youtube_id=ZYw7hBoEiwo') #מועדון ווינX
+		list.append('&youtube_id=dOA4-RuW_AU') #פינוקיו (1940)
 		
 		list.append('&youtube_pl=')
 		list.append('&youtube_pl=')

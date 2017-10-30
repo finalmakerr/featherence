@@ -107,15 +107,15 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	
 	'''אריות'''
 	list = []
-	list.append('&youtube_id=8KaqVQP7oMk')
-	list.append('&youtube_id=LU8DDYz68kM')
-	list.append('&youtube_id=JRSYMfC2PFU')
-	list.append('&youtube_id=EpnERlsfBFc')
-	list.append('&youtube_id=Z7inua2QVdM')
-	list.append('&youtube_id=2kYWXQ2N45c')
-	list.append('&youtube_pl=PL5o3ll3G4aczWH4OD47Jp4xTMH5hE3kUa&index=2')
-	list.append('&youtube_pl=PLkie5Q84Noe2IgDYmkMaXHZ743_T4vYcP')
-	list.append('&youtube_pl=PLkie5Q84Noe2IgDYmkMaXHZ743_T4vYcP')
+	list.append('&youtube_se=LION HD DOCUT')
+	list.append('&youtube_id=wVm0dHmYKP4')
+	list.append('&youtube_id=uymttVxi7ss')
+	list.append('&youtube_id=mR_r7hnF384')
+	list.append('&youtube_id=Iqy78KGBmSg')
+	list.append('&youtube_id=MrubmnIS-78')
+	list.append('&youtube_id=7kMv5reu1oo')
+	list.append('&youtube_pl=PLIFqWCuxNyogith_m0FMEX_ZZaUVb_AfR')
+	
 	addDir(addonString(30110).encode('utf-8'),list,17,'http://3.bp.blogspot.com/-Iff7IaN3DKI/UeUqIwYg3ZI/AAAAAAAAAZ4/1qJiCmolK7M/s1600/lion-photo.jpg',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30110).encode('utf-8')),'1',0,getAddonFanart(background, default=fanart, custom="http://4997-presscdn-0-37.pagely.netdna-cdn.com/wp-content/uploads/2014/12/Lion-Cubs.jpg"))
 	
 	'''גירפות'''

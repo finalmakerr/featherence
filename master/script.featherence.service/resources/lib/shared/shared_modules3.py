@@ -995,7 +995,8 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		except Exception, TypeError:
 			printpoint = printpoint + '9'
 			extra = extra + newline + 'TypeError' + space2 + str(TypeError)
-			text = '***The following video ID is broken!' + space + str(title) + space + str(x) + '***'
+			text = '***The following video ID is broken!' + space + str(title) + space + str(x) + '***' + newline + \
+			'url' + space2 + str(url)
 			printlog(title='apimaster_video error!', printpoint=printpoint, text=text, level=1, option="")
 			title_L.append('[COLOR=red]' + title + space + '[Deleted!]' + '[/COLOR]')
 		if not '9' in printpoint and link != "":
