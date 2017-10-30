@@ -9,7 +9,8 @@ WIP - WORK IN PROGRESS
 - Added option to disable the auto close of the video/audio OSD.
 - Added option to choose highlight font color.
 - Added Video player information on fullscreen pause.
-- Update video screen pause image.
+- Minor update video screen pause image.
+- Minor update OSD buttons textures.
 
 ------------------------
 Featherence v0.7.8 (30-Oct-17)
