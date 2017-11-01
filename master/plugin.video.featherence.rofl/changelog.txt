@@ -10,6 +10,7 @@ WIP - WORK IN PROGRESS
 Featherence ROFL v0.0.12 (xx-xx-17)
 ------------------------
 - Added new YouTube API for better performance.
+- Added TV Mode support to YouTube search sources.
 
 ------------------------
 Featherence ROFL v0.0.11 (13-10-17)

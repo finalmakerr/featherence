@@ -10,6 +10,12 @@ WIP (WORK IN PROGRESS)--
 Featherence Docu v0.1.15 (xx-xx-17)
 ------------------------
 - Added new YouTube API for better performance.
+- Added TV Mode support to YouTube search sources.
+- Major update of links in Nature & Space & Animals & History Categories.
++ Those links are now pure Docu movies in HD!
++ Those links have a dynamic plot, fanart and thumbnails.
++ Added thousands of new contents.
+- Major performance update result in a very fast addon!
 
 ------------------------
 Featherence Docu v0.1.14 (04-Dec-16)

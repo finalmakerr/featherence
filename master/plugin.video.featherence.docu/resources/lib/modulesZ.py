@@ -18,34 +18,6 @@ def CATEGORIES101Z(name, iconimage, desc, background, fanart):
 		
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, default=fanart))
 
-def CATEGORIES10101Z(name, iconimage, desc, background, fanart):
-	'''טבע - חיות'''
-	background = 10101
-	
-	list = []
-		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, default=fanart))
-
-def CATEGORIES10102Z(name, iconimage, desc, background, fanart):
-	'''טבע - חוקי טבע'''
-	background = 10102
-	
-	list = []
-		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, default=fanart))
-	
-def CATEGORIES10103Z(name, iconimage, desc, background, fanart):
-	'''טבע - מקומות'''
-	background = 10103
-	
-	list = []
-
-	list.append('&youtube_ch=')
-	list.append('&youtube_ch=')
-	list.append('&youtube_ch=')
-		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, default=fanart))
-
 def CATEGORIES102Z(name, iconimage, desc, background, fanart):
 	'''חלל'''
 	background = 102
@@ -61,22 +33,6 @@ def CATEGORIES102Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=HubbleSiteChannel')
 	list.append('&youtube_ch=UCmBobPZzLEOQ71AtLwnuntw')
 	
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, default=fanart))
-	
-def CATEGORIES103Z(name, iconimage, desc, background, fanart):
-	'''היסטוריה'''
-	background = 103
-	
-	list = []
-
-	list.append('&youtube_ch=UCQGjxZRfQ8Bt6rnudw2kgUQ')
-	list.append('&youtube_ch=UCErKUCncCyBgEdxWAtrj5hg')
-	list.append('&youtube_ch=AlternateHistoryHub')
-	list.append('&youtube_ch=UC5xIAFuCs4m2S4uPY9dp_Ww')
-	list.append('&youtube_ch=BlastfromthePast')
-	list.append('&youtube_ch=TheGreatWar')
-	list.append('&youtube_ch=UCBcIe5EBAxqK267uyEVibFw')
-		
 	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, default=fanart))
 
 def CATEGORIES104Z(name, iconimage, desc, background, fanart):

@@ -470,6 +470,7 @@ def getfileID(file):
 
 	elif file == "Arcade_2P_Age Of Heroes - Silkroad 2.zip":
 		fileID_L.append('bqrt9ltcb1h5zjh') #guser26
+		fileID_L.append('ssgx8m9k1jtt40p') #guser28
 		fileID_L.append('895suamvsymjpno') #htptuser3
 		fileID_L.append('5k1kkdavv5klqvh') #featherence.user15
 		fileID_L.append('morx74160s13ari') #infohtpt
@@ -477,6 +478,7 @@ def getfileID(file):
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
 		fileName_L.append('Source 4')
+		fileName_L.append('Source 5')
 	elif file == "Arcade_2P_Area 51.zip":
 		fileID_L.append('zgg4mpg6dh71z02') #user2
 		fileID_L.append('nwr1p6pthf4x56r') #htptuser3
@@ -531,6 +533,7 @@ def getfileID(file):
 		fileName_L.append('Source 3')
 	elif file == "Arcade_2P_Lansquenet 2004.zip":
 		fileID_L.append('wpa5dmhsomtmq8j') #guser21
+		fileID_L.append('eduqtej99r6dgev') #guser28
 		fileID_L.append('013po8qcsywg42l') #featherence.user15
 		fileID_L.append('guveg252aaulyt6') #htptuser3
 		fileID_L.append('2z1gs4443mp8nh6') #infohtpt
@@ -538,6 +541,7 @@ def getfileID(file):
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
 		fileName_L.append('Source 4')
+		fileName_L.append('Source 5')
 	elif file == "Arcade_2P_Mace The Dark Age.zip":
 		fileID_L.append('0fnst5ov2muys5r') #htptuser15
 		fileID_L.append('xbc793jnfkv08ig') #user2
@@ -638,9 +642,11 @@ def getfileID(file):
 		fileName_L.append('Source 3')
 	elif file == "Arcade_2P_The Last Blade 2.zip":
 		fileID_L.append('l0v1h690y55yx8j') #user15
+		fileID_L.append('clgyd5jwe4or11c') #guser28
 		fileID_L.append('qrlctae8cd6omml') #info
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
 
 	elif file == "Arcade_3P.zip":
 		fileID_L.append('qmkxfdvv9da2gxc') #guser27
@@ -671,8 +677,8 @@ def getfileID(file):
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 	elif file == "Arcade_4P_Gauntlet Legends.zip":
+		fileID_L.append('ztgnz1f1a5lrqg2') #
 		fileID_L.append('jdrbwfesdgm97tr') #info
-		fileID_L.append('') #
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 	elif file == "Arcade_ADULT.zip":
@@ -755,10 +761,12 @@ def getfileID(file):
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
 	elif file == "Nintendo DS_1P_.zip":
+		fileID_L.append('r4l6pftf2eqdjm6') #guser28
 		fileID_L.append('su8o3qbbickjk81') #info
 		fileID_L.append('8rk5qwv3t9whb4c') #htpt
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
+		fileName_L.append('Source 3')
 	
 	elif file == "Sega Genesis.zip":
 		fileID_L.append('z20nk10mktoscuh') #guser21
@@ -1202,7 +1210,10 @@ def getfileID(file):
 	elif file == "GameCube_2P_Tony Hawk's American Wasteland.zip": fileID = "0u39ias29dovu8d" #featherence.user26
 	
 	elif file == "GameCube_1P_Super Monkey Ball Adventure.zip": fileID = "yrpv3fzxnqd52kh" #featherence.guser13
+	elif file == "GameCube_1P_Geist.zip": fileID = "irm0lxcc35c0tik" #featherence.guser28
 	
+	elif file == "GameCube_4P_Godzilla - Destroy All Monsters Melee.zip": fileID = "eyyfxhm4o16lm3z" #featherence.user36
+	elif file == "GameCube_2P_Fight Night Round 2.zip": fileID = "pg21w7v9vf6nlm1" #featherence.user36
 	
 	elif file == ".zip":
 		fileID_L.append('[GD]') #featherence.user1 [GD]
