@@ -7,14 +7,6 @@
   <!--<onload condition="String.IsEqual(VideoPlayer.Title,featherence_.mp4)">AlarmClock(featherence_,Action(Stop),00:01,silent)</onload>
   <onload condition="String.IsEqual(VideoPlayer.Title,featherence_.mp4)">AlarmClock(featherence__,ReloadSkin(),00:01,silent)</onload>-->
   <controls>
-    <control type="group">
-      <!--<visible>!Window.IsActive(DialogFullscreenInfo.xml)</visible>-->
-      <control type="image" description="Background">
-        <width>1920</width>
-        <height>300</height>
-        <texture colordiffuse="ff000000" border="0">buttons/ButtonA0.png</texture>
-        <colordiffuse>FFFFFFFF</colordiffuse>
-      </control>
       <control type="grouplist" id="0">
         <posx>40</posx>
         <posy>70</posy>
@@ -55,7 +47,49 @@
           <label>-</label>
         </control>
       </control>
-	</control>
+	  <control type="group" id="1">
+			<depth>DepthOSD+</depth>
+			<visible>Player.Caching</visible>
+			<animation delay="300" effect="fade" time="200">Visible</animation>
+			<animation effect="fade" delay="200" time="150">Hidden</animation>
+			<centerleft>50%</centerleft>
+			<width>110</width>
+			<centertop>50%</centertop>
+			<height>110</height>
+			<control type="image" id="1">
+				<centerleft>50%</centerleft>
+				<centertop>50%</centertop>
+				<width>110</width>
+				<height>110</height>
+				<texture colordiffuse="BFFFFFFF">osd/texturebg_cache.png</texture>
+			</control>
+			<control type="image" id="1">
+				<centerleft>50%</centerleft>
+				<centertop>50%</centertop>
+				<width>92</width>
+				<height>92</height>
+				<texture>osd/texturebg_cache.png</texture>
+			</control>
+			<control type="image" id="1">
+				<centerleft>50%</centerleft>
+				<centertop>50%</centertop>
+				<width>92</width>
+				<height>92</height>
+				<!--<texture colordiffuse="FFFFFFFF">$INFO[Player.CacheLevel,dialogs/volume/progress/p,.png]</texture>-->
+				<texture colordiffuse="FFFFFFFF">osd/featherence_pause1.png</texture>
+			</control>
+			<control type="label" id="1">
+				<description>buffering value</description>
+				<label>$INFO[Player.CacheLevel]</label>
+				<centerleft>50%</centerleft>
+				<centertop>50%</centertop>
+				<width>200</width>
+				<height>200</height>
+				<aligny>center</aligny>
+				<align>center</align>
+				<font>size18</font>
+			</control>
+		</control>
 	
   </controls>
 </window>

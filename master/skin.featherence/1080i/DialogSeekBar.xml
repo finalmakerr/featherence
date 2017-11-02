@@ -3,13 +3,11 @@
 	<visible>[Window.IsVisible(VideoOSD.xml) | Window.IsActive(fullscreeninfo) | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + VideoPlayer.IsFullscreen</visible>
 	<visible>!Window.IsVisible(DialogSubtitles.xml) + !Window.IsVisible(MusicOSD.xml)</visible>
 	<depth>DepthOSD</depth>
+	<zorder>0</zorder>
 	<controls>
-		
 		<include>DialogSeekBar</include>
 		<include>featherencepause</include>
 		<include>ForwardingRewinding</include>
 		<include>TopInformation</include>
-		
-	  
 	</controls>
 </window>

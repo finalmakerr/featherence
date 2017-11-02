@@ -20,8 +20,6 @@ def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	fanart = str(to_utf8(fanart))
 	
 	if '$LOCALIZE' in name or '$ADDON' in name: name = xbmc.getInfoLabel(name)
-	if 'www.sdarot.pm' in iconimage:
-		iconimage = iconimage.replace('www.sdarot.pm','www.sdarot.wf',1)
 	if num == None: num = ""
 	if '&getAPIdata=' in str(num):
 		finalurl_, id_L, playlist_L, title_L, thumb_L, desc_L, fanart_L = apimaster(num, name, iconimage, desc, fanart, playlist=[], onlydata=True)
@@ -369,14 +367,13 @@ def ListPlaylist2(name, url, iconimage, desc, num, viewtype, fanart):
 
 def OPEN_URL(url):
 	link = "" ; TypeError = ""
-	#try:
-	#url = urllib.quote(url)
-	req = urllib2.Request(url)
-	req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
-	response = urllib2.urlopen(req)
-	link=response.read()
-	response.close()
-	#except Exception, TypeError: notification('OPEN_URL Error',str(TypeError),'',4000)
+	try:
+		req = urllib2.Request(url)
+		req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
+		response = urllib2.urlopen(req)
+		link=response.read()
+		response.close()
+	except Exception, TypeError: notification('OPEN_URL Error',str(TypeError),'',4000)
 	return link
 
 def PlayVideos(name, mode, url, iconimage, desc, num, fanart):
@@ -416,6 +413,9 @@ def PlayVideos(name, mode, url, iconimage, desc, num, fanart):
 	elif '&googledrive=' in url:
 		installaddon('plugin.video.gdrive', update=True)
 		url = url.replace("&googledrive=","")
+		url = url.replace(url,'plugin://plugin.video.gdrive?mode=streamURL&url=https://docs.google.com/file/d/'+url+'/preview')
+		
+		xbmc.executebuiltin('PlayMedia('+url+')')
 		
 	else: xbmc.executebuiltin('PlayMedia('+ url +')')
 	
@@ -685,12 +685,14 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						#mode = 13
 					else: addDir(str(i) + '.' + space + title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 				elif "&youtube_ch=" in x:
-					#x = x.replace("&youtube_ch=","")
 					#if "/playlists" in x: x = x.replace("/playlists","")
 					if 'O' in printpoint:
-						YOUList2(name, url, iconimage, desc, num, viewtype)
+						#x = x.replace("&youtube_ch=","")
+						YOUList2(name, x, iconimage, desc, num, viewtype)
 						mode = 9
-					else: mode_ = addDir(str(i) + '.' + space + title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0]) #addonString(192).encode('utf-8')
+					elif name2 != "":
+						addDir(title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+					else: addDir(str(i) + '.' + space + title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					
 					'''---------------------------'''
 				elif "&youtube_pl=" in x:
@@ -698,7 +700,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 					if 'O' in printpoint:
 						ListPlaylist2(name, url, iconimage, desc, num, viewtype, fanart)
 						mode = 13
-					else: addDir(str(i) + '.' + space + title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0]) #addonString(192).encode('utf-8')
+					else: addDir(str(i) + '.' + space + title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					'''---------------------------'''
 				elif "&youtube_id=" in x:
 					#x = x.replace("&youtube_id=","")
@@ -717,7 +719,9 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						x = x.replace("&custom_se=","")
 						YoutubeSearch(name, x, desc, num, viewtype)
 						mode = 3
-					elif name2 != "": addDir(title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+					elif name2 != "":
+						if addonID == 'plugin.video.featherence.docu': addDir(title_L[0], x, 5, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+						else: addDir(title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					else: addDir(str(i) + '.' + space + title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 				
 				if 1 + 1 == 2:
@@ -744,6 +748,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 	"name2 " + space2 + str(name2) + newline + \
 	"url " + space2 + str(url) + newline + \
 	"url2" + space2 + str(url2) + newline + \
+	"x" + space2 + str(x) + newline + \
 	"fanart" + space2 + str(fanart) + newline + \
 	"pl" + space2 + str(pl) + space + "playlist" + space2 + str(len(playlist)) + space + str(playlist) + newline + \
 	"finalurl" + space2 + str(finalurl) + space + "finalurlL" + space2 + str(finalurlL) + space + newline + extra
@@ -893,6 +898,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 	order = 'videoCount' # videoCount / title / relevance / rating / date
 	videoDuration = 'any' #long / medium  / short
 	videoDefinition = 'any'
+	relevanceLanguage = ''
 	videoDimension = '2d' #3d / any
 	safeSearch = 'moderate' # strict / none
 
@@ -900,6 +906,11 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		videoDuration = regex_from_to(x, '&videoDuration=', '&', excluding=True)
 		x = x.replace('&videoDuration='+videoDuration+'&',"")
 		#notification(x,videoDuration,'',2000)
+	
+	if '&relevanceLanguage=' in x:
+		relevanceLanguage = regex_from_to(x, '&relevanceLanguage=', '&', excluding=True)
+		x = x.replace('&relevanceLanguage='+relevanceLanguage+'&',"")
+		
 	elif addonID == 'plugin.video.featherence.docu':
 		videoDuration = 'long'
 		
@@ -915,6 +926,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 	
 	if addonID == 'plugin.video.featherence.kids':
 		safeSearch = 'strict'
+	
 	
 	if "&youtube_pl=" in x:
 		printpoint = printpoint + "1"
@@ -939,7 +951,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		
 		x2 = clean_commonsearch(x2, match=False)
 
-		url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+api_youtube_featherence+'&videoDuration='+videoDuration+'&videoDefinition='+videoDefinition+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults='+maxResults+'&pageToken='
+		url = 'https://www.googleapis.com/youtube/v3/search?q='+x2+'&key='+api_youtube_featherence+'&videoDuration='+videoDuration+'&videoDefinition='+videoDefinition+'&relevanceLanguage='+relevanceLanguage+'&safeSearch='+safeSearch+'&type=video&part=snippet&maxResults='+maxResults+'&pageToken='
 	elif "&youtube_se2=" in x:
 		'''WIP'''
 		printpoint = printpoint + "5"
@@ -968,19 +980,17 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		link = OPEN_URL(url)
 		if '"totalResults": 0' in link or '"items": []' in link or link == "":
 			printpoint = printpoint + '2'
-			if onlydata == True: url = 'https://www.googleapis.com/youtube/v3/channels?id='+x2+'&key='+api_youtube_featherence+'&part=snippet%2Cstatistics%2CcontentDetails&maxResults='+maxResults
-			else: url = 'https://www.googleapis.com/youtube/v3/channels?id='+x2+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
+			if onlydata == True: url = 'https://www.googleapis.com/youtube/v3/channels?id='+x2+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
+			else: 				 url = 'https://www.googleapis.com/youtube/v3/channels?id='+x2+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
 			
-		#if onlydata == True or link == "": url = ""
-		#if link == "": url = ""
-		#else:
-		link = OPEN_URL(url)
-		prms=json.loads(link)
-		try: id_ = str(prms['items'][i][u'id'])
-		except:
-			try: id_ = str(prms['items'][i][u'snippet'][u'channelId'])
-			except: id_ = ""
-		if onlydata != True or link == "": url = 'https://www.googleapis.com/youtube/v3/search?channelId='+id_+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
+		if link != "":
+			link = OPEN_URL(url)
+			prms=json.loads(link)
+			try: id_ = str(prms['items'][i][u'id'])
+			except:
+				try: id_ = str(prms['items'][i][u'snippet'][u'channelId'])
+				except: id_ = ""
+			if onlydata != True or link == "": url = 'https://www.googleapis.com/youtube/v3/search?channelId='+id_+'&key='+api_youtube_featherence+'&part=snippet&maxResults='+maxResults
 
 	elif '&dailymotion_id=' in x:
 		title2 = '[Video]'
@@ -1571,7 +1581,7 @@ def urlcheck(url, ping=False, timeout=1):
 	return returned
 	
 def YOUList2(name, url, iconimage, desc, num, viewtype):
-	returned = "ok" ; printpoint = "" ; i = 0 ; urlL = ['channel', 'user'] #, 'show'
+	returned = "ok" ; printpoint = "" ; i = 0 ; urlL = ['user', 'channel'] ; url_ = "" ; link = ""
 	url = CleanString2(url)
 	if '&youtube_ch=' in url or (not '&' in url and not '=' in url):
 		printpoint = printpoint + '1'
@@ -1585,22 +1595,23 @@ def YOUList2(name, url, iconimage, desc, num, viewtype):
 			
 		default = 'http://www.youtube.com/'
 		default2 = 'plugin://plugin.video.youtube/'
-		
-		if 1 + 1 == 3:
-			for x in urlL:
-				returned = urlcheck(default + urlL[i] + '/' + url + '/')
-				if returned == "ok": break
-				else:
-					i += 1
 
-		if returned == 'ok':
-			printpoint = printpoint + '7'
-			update_view(default2 + urlL[i] + '/' + url + '/', num, viewtype, ok=False)
+		url_ = 'https://www.googleapis.com/youtube/v3/channels?forUsername='+url+'&key='+api_youtube_featherence+'&part=snippet&maxResults=1'
+		link = OPEN_URL(url_)
+		if '"totalResults": 0' in link or '"items": []' in link or link == "":
+			printpoint = printpoint + '4' ; i += 1
+			#url_ = 'https://www.googleapis.com/youtube/v3/channels?id='+url+'&key='+api_youtube_featherence+'&part=snippet&maxResults=1'
+			#returned = urlcheck(default + urlL[i] + '/' + url + '/')
+
+		printpoint = printpoint + '7'
+		update_view(default2 + urlL[i] + '/' + url + '/', num, viewtype, ok=False)
 	else:
 		printpoint = printpoint + '9'
 		
 	text = "name" + space2 + str(name) + newline + \
 	"url" + space2 + url + newline + \
+	"url_" + space2 + url_ + newline + \
+	"link" + space2 + str(link) + newline + \
 	"i" + space2 + str(i) + space + "returned" + space2 + str(returned)
 	printlog(title='YOUList2', printpoint=printpoint, text=text, level=0, option="")
 
@@ -1671,154 +1682,15 @@ def setaddonFanart(fanart, Fanart_Enable, Fanart_EnableCustom):
 	printlog(title='setaddonFanart', printpoint=printpoint, text=text, level=0, option="")
 	return returned
 
-def getAddonFanart(category, custom="", default="", urlcheck_=False):
+def getAddonFanart(category=0, custom="", default="", urlcheck_=False):
 	returned = "" ; category_path = "" ; printpoint = "" ; extra = "" ; 
-	
-	if custom != "":
-		valid = ""
-		if urlcheck_ == True: 
-			valid = urlcheck(custom, ping=False, timeout=1)
-		
-		if 'ok' in valid or urlcheck_ != True:
-			printpoint = printpoint + "7"
-			returned = custom
-			
-	if returned == "" and not '7' in printpoint:
-		printpoint = printpoint + '1'
-		if Fanart_EnableCustom != "true" and default == "":
-			returned = addonFanart
-			printpoint = printpoint + "8"
-		elif category == 100: category_path = Fanart_Custom100
-		elif category == 101: category_path = Fanart_Custom101
-		elif category == 102: category_path = Fanart_Custom102
-		elif category == 103: category_path = Fanart_Custom103
-		elif category == 104: category_path = Fanart_Custom104
-		elif category == 105: category_path = Fanart_Custom105
-		elif category == 106: category_path = Fanart_Custom106
-		elif category == 107: category_path = Fanart_Custom107
-		elif category == 108: category_path = Fanart_Custom108
-		elif category == 109: category_path = Fanart_Custom109
-		elif category == 110: category_path = Fanart_Custom110
-		elif category == 111: category_path = Fanart_Custom111
-		elif category == 112: category_path = Fanart_Custom112
-		elif category == 113: category_path = Fanart_Custom113
-		elif category == 114: category_path = Fanart_Custom114
-		elif category == 115: category_path = Fanart_Custom115
-		elif category == 116: category_path = Fanart_Custom116
-		elif category == 117: category_path = Fanart_Custom117
-		elif category == 118: category_path = Fanart_Custom118
-		elif category == 119: category_path = Fanart_Custom119
-		
-		elif category == 10000: category_path = Fanart_Custom10000
-		elif category == 10001: category_path = Fanart_Custom10001
-		elif category == 10002: category_path = Fanart_Custom10002
-		elif category == 10003: category_path = Fanart_Custom10003
-		elif category == 10004: category_path = Fanart_Custom10004
-		elif category == 10005: category_path = Fanart_Custom10005
-		elif category == 10006: category_path = Fanart_Custom10006
-		elif category == 10007: category_path = Fanart_Custom10007
-		elif category == 10008: category_path = Fanart_Custom10008
-		elif category == 10009: category_path = Fanart_Custom10009
-		
-		elif category == 10100: category_path = Fanart_Custom10100
-		elif category == 10101: category_path = Fanart_Custom10101
-		elif category == 10102: category_path = Fanart_Custom10102
-		elif category == 10103: category_path = Fanart_Custom10103
-		elif category == 10104: category_path = Fanart_Custom10104
-		elif category == 10105: category_path = Fanart_Custom10105
-		elif category == 10106: category_path = Fanart_Custom10106
-		elif category == 10107: category_path = Fanart_Custom10107
-		elif category == 10108: category_path = Fanart_Custom10108
-		elif category == 10109: category_path = Fanart_Custom10109
-		elif category == 10200: category_path = Fanart_Custom10200
-		elif category == 10201: category_path = Fanart_Custom10201
-		elif category == 10202: category_path = Fanart_Custom10202
-		elif category == 10203: category_path = Fanart_Custom10203
-		elif category == 10204: category_path = Fanart_Custom10204
-		elif category == 10205: category_path = Fanart_Custom10205
-		elif category == 10206: category_path = Fanart_Custom10206
-		elif category == 10207: category_path = Fanart_Custom10207
-		elif category == 10208: category_path = Fanart_Custom10208
-		elif category == 10209: category_path = Fanart_Custom10209
-		
-		elif category == 11100: category_path = Fanart_Custom11100
-		elif category == 11101: category_path = Fanart_Custom11101
-		elif category == 11102: category_path = Fanart_Custom11102
-		elif category == 11103: category_path = Fanart_Custom11103
-		elif category == 11104: category_path = Fanart_Custom11104
-		elif category == 11105: category_path = Fanart_Custom11105
-		elif category == 11106: category_path = Fanart_Custom11106
-		elif category == 11107: category_path = Fanart_Custom11107
-		elif category == 11108: category_path = Fanart_Custom11108
-		elif category == 11109: category_path = Fanart_Custom11109
-		
-		else:
-			try:
-				if "Custom_Playlist" in category:
-					if category == "Custom_Playlist1": category_path = Custom_Playlist1_Fanart
-					elif category == "Custom_Playlist2": category_path = Custom_Playlist2_Fanart
-					elif category == "Custom_Playlist3": category_path = Custom_Playlist3_Fanart
-					elif category == "Custom_Playlist4": category_path = Custom_Playlist4_Fanart
-					elif category == "Custom_Playlist5": category_path = Custom_Playlist5_Fanart
-					elif category == "Custom_Playlist6": category_path = Custom_Playlist6_Fanart
-					elif category == "Custom_Playlist7": category_path = Custom_Playlist7_Fanart
-					elif category == "Custom_Playlist8": category_path = Custom_Playlist8_Fanart
-					elif category == "Custom_Playlist9": category_path = Custom_Playlist9_Fanart
-					elif category == "Custom_Playlist10": category_path = Custom_Playlist10_Fanart
-					else: printpoint = printpoint + "8"
-			except Exception, TypeError:
-				extra = extra + newline + "TypeError" + space2 + str(TypeError)
-				printpoint = printpoint + "8"
-	
-	
-		if category_path != "":
-			if "http://" in category_path or "www." in category_path:
-				printpoint = printpoint + "7a"
-				returned = category_path
-				#valid = urlcheck(value, ping=False)
-			else:
-				try:
-					category_path = os.path.join(xbmc.translatePath(category_path).decode("utf-8"))
-					category_path = category_path.encode('utf-8')
-				except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + str(TypeError).encode('utf-8')
-				if os.path.exists(category_path):
-					printpoint = printpoint + "7b"
-					
-					if 1 + 1 == 3:
-						category_path = os.path.join(xbmc.translatePath(category_path).decode("utf-8"))
-						try: category_path = category_path.encode('utf-8')
-						except: pass
-					
-				else:
-					setsetting('Fanart_Custom'+str(category),"")
-					printpoint = printpoint + "9d"
-		
-		elif default != "" and not '7' in printpoint: #default != 'getAPIdata'
-			printpoint = printpoint + '5'
-			returned, returned2 = TranslatePath(default, filename=True, urlcheck_=False, force=True)
-			if default == 'getAPIdata':
-				printpoint = printpoint + 'A'
-				returned = default
-			elif returned == "": printpoint = printpoint + "9"
-		else:
-			printpoint = printpoint + "9"
-			
-	if "9" in printpoint or "8" in printpoint:
-		try:
+	if custom == "":
+		if default == "":
 			if os.path.exists(addonFanart): returned = addonFanart
-		except Exception, TypeError:
-			extra = extra + newline + "TypeError" + space2 + str(TypeError)
-			returned = ""
-	
-	elif "7" in printpoint:
-		if default == "" and custom == "" or '7b' in printpoint: returned = category_path
-	
-	text = "category" + space2 + str(category) + newline + \
-	"custom" + space2 + str(custom) + newline + \
-	"default" + space2 + str(default) + newline + \
-	"returned" + space2 + str(returned) + newline + \
-	"category_path" + space2 + str(category_path) + extra
-	printlog(title='getAddonFanart', printpoint=printpoint, text=text, level=0, option="")
+		else:
+			returned = default
+	else:
+		returned = custom
 	return returned
 
 def checkAddon_Update(admin, Addon_Update, Addon_Version, addonVersion, Addon_UpdateDate, Addon_UpdateLog, Addon_ShowLog, Addon_ShowLog2, VerReset=""):
@@ -2636,6 +2508,7 @@ def pluginend2(admin, url, containerfolderpath, viewtype):
 			setView(viewtype, containerfolderpath, containerfolderpath2)
 			'''---------------------------'''
 	
+	setProperty('script.featherence.service_random', "", type="home")
 	'''------------------------------
 	---PRINT-END---------------------
 	------------------------------'''
@@ -3717,13 +3590,13 @@ def getLists(mode, name, url, iconimage, desc, num, viewtype, fanart):
 	count = 0
 	setProperty('script.featherence.service_random', "true", type="home")
 	xbmc.executebuiltin('Container.Refresh') ; xbmc.sleep(2000)
-	dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)')
-	while count < 20 and dialogbusyW and not xbmc.abortRequested:
+	dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)') ; dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
+	while count < 20 and (dialogbusyW or dialogprogressW or count < 5) and not xbmc.abortRequested:
 		if count == 0: notification('Random-Play','.','',2000)
 		elif count == 4: notification('Random-Play','..','',2000)
 		elif count == 8: notification('Random-Play','...','',2000)
 		xbmc.sleep(500)
-		dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)')
+		dialogbusyW = xbmc.getCondVisibility('Window.IsVisible(DialogBusy.xml)') ; dialogprogressW = xbmc.getCondVisibility('Window.IsVisible(DialogProgress.xml)')
 		count += 1
 	
 	setProperty('script.featherence.service_random', "", type="home")

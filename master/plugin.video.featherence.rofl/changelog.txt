@@ -11,6 +11,7 @@ Featherence ROFL v0.0.12 (xx-xx-17)
 ------------------------
 - Added new YouTube API for better performance.
 - Added TV Mode support to YouTube search sources.
+- Major performance update result in a very fast addon!
 
 ------------------------
 Featherence ROFL v0.0.11 (13-10-17)

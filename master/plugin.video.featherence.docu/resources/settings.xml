@@ -15,6 +15,8 @@
 		<setting type="lsep" label=""/>
 		<setting id="Search_History" type="bool" default="true" label="$ADDON[script.featherence.service 32046]" visible="true"/>
 		<setting id="Search_Limit" type="slider" default="40" label="$ADDON[script.featherence.service 32047]" range="0,40" option="int" enable="eq(-1,true)" subsetting="true" visible="true"/>
+		<setting id="Fanart_Enable" type="bool" default="true" label="$ADDON[script.featherence.service 32422]" description="אפשר רקעים" visible="true"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32074]" visible="eq(-1,true)"/>
 		<setting type="lsep" label=""/>
 		
 		<setting id="Addon_ShowLog" type="bool" default="true" label="$LOCALIZE[33073]" visible="true"/>
@@ -25,13 +27,6 @@
 		<setting id="Addon_UpdateLog" type="bool" default="false" label="Addon_UpdateLog" visible="false"/>
 		<setting id="Addon_Version" type="text" default="" label="Addon_Version" visible="false"/>
 		<setting type="lsep" label=""/>
-	</category>
-	
-	<category label="$LOCALIZE[33071]" description="רקעים מותאמים אישית">
-		<setting id="Fanart_Enable" type="bool" default="true" label="$ADDON[script.featherence.service 32422]" description="אפשר רקעים" visible="true"/>
-		<setting type="lsep" label="$ADDON[script.featherence.service 32074]" visible="eq(-1,true)"/>
-		<setting id="Fanart_EnableCustom" type="bool" default="false" label="$LOCALIZE[21389]" subsetting="true" description="אפשר רקע מותאם אישית" visible="eq(-2,true)"/>
-		<setting type="lsep" label="$ADDON[script.featherence.service 32075]" visible="eq(-3,true) + eq(-1,true)"/>
 	</category>
 	
 	<category label="About" description="About">

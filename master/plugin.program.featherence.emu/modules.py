@@ -699,9 +699,11 @@ def getfileID(file):
 		fileID_L.append('v0si3xo3pt72xpa') #user34
 		fileID_L.append('xn0t39q28xan2t6') #htpt
 		fileID_L.append('tffxq1rku4n0b3r') #info
+		fileID_L.append('glurpmeqf0wbw68') #featherence.user19
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
 		
 	elif file == "Arcade_GEAR_California Speed.zip": fileID = "gbfxppac8bbnw2b" #info
 	elif file == "Arcade_GEAR_Hyperdrive.zip":
@@ -715,14 +717,16 @@ def getfileID(file):
 	elif file == "Arcade_FUN.zip":
 		fileID_L.append('p64howpq8a0p3yy') #user23
 		fileID_L.append('c4qdpngxl64yvro') #featherence.user6
+		fileID_L.append('u5svfk5ew7tc2bo') #featherence.user12
+		fileID_L.append('hor7e33556dph7q') #guser19
 		fileID_L.append('1q8f4gv6ra6ritp') #htpt
 		fileID_L.append('xp1k65cp1f9ltai') #info
-		fileID_L.append('hor7e33556dph7q') #guser19
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
 		fileName_L.append('Source 4')
 		fileName_L.append('Source 5')
+		fileName_L.append('Source 6')
 	elif file == "Nintendo 64_1P.zip":
 		fileID_L.append('jp4xzb03m7nbghp') #buy
 		fileID_L.append('iu9ntsgd5g4csnw') #htpt
@@ -1022,6 +1026,7 @@ def getfileID(file):
 	elif file == "Dreamcast_1P_Alone in the Dark - The New Nightmare.zip": fileID = "8fle779l57z4kf5" #featherence.user11
 	
 	elif file == "Dreamcast_1P_Sword of the Berserk - Guts Rage.zip": fileID = "nlxzy78c9bsy1oh" #featherence.user12
+	elif file == "GameCube_4P_Hot Wheels - Velocity X.zip": fileID = "h4lv9b2h43r9j24" #featherence.user12
 	
 	elif file == "Dreamcast_1P_Skies of Arcadia.zip": fileID = "ans8hoynble9s7s" #featherence.user13
 	elif file == "Dreamcast_1P_Evolution 2 - Far Off Promise.zip": fileID = "jvwyia29ys2hmkt" #featherence.user13
@@ -1214,6 +1219,9 @@ def getfileID(file):
 	
 	elif file == "GameCube_4P_Godzilla - Destroy All Monsters Melee.zip": fileID = "eyyfxhm4o16lm3z" #featherence.user36
 	elif file == "GameCube_2P_Fight Night Round 2.zip": fileID = "pg21w7v9vf6nlm1" #featherence.user36
+	
+	elif file == "GameCube_2P_SSX 3.zip": fileID = "8uvxv4r1rqb6pgi" #featherence.user37
+	elif file == "GameCube_1P_Tak and the Power of Juju.zip": fileID = "tdy74pmhw93ax5b" #featherence.user37
 	
 	elif file == ".zip":
 		fileID_L.append('[GD]') #featherence.user1 [GD]

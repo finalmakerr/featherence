@@ -1882,20 +1882,20 @@ msgid ""
 msgstr ""
 
 msgctxt "#10523
-msgid ""
-msgstr ""
+msgid "Dragon Ball Kai"
+msgstr "דראגון בול K"
 
 msgctxt "#10524
-msgid ""
-msgstr ""
+msgid "Dragon Ball Super"
+msgstr "דראגון בול S"
 
 msgctxt "#10525
-msgid ""
-msgstr ""
+msgid "Dragon Ball Z"
+msgstr "דראגון בול Z"
 
 msgctxt "#10526
-msgid ""
-msgstr ""
+msgid "Dragon Ball GT"
+msgstr "דראגון בול GT"
 
 msgctxt "#10527
 msgid "Barbie in a Mermaid Tale"
@@ -4957,15 +4957,15 @@ msgid "Charlie Brown is the central protagonist of the long-running comic strip 
 msgstr "Charlie Brown is the central protagonist of the long-running comic strip Peanuts, syndicated in daily and Sunday newspapers in numerous countries all over the world."
 
 msgctxt "#104830
-msgid "After sneaking into his best friend Jimmy Neutron's laboratory and finding Jimmy's secret rocket ship, Sheen Estevez accidentally blasts himself into outer space when he disobeyed Jimmy's warning note ("Sheen, do not press this button.") and pressed the button Jimmy mentioned in his note. Four million and one light years away, Sheen crashes on Zeenu — an odd planet inhabited by aliens called Zeenunians. Soon after the crash, Sheen wants to go home, but his rocket ship was smashed when he flew into a house belonging to a Zeenunian named Dorkus, whose name Sheen ridicules for its similarity to the word "dork.""
+msgid "Planet Sheen is an American CGI animated television series. It is a 2010 spin-off of the 2002 series The Adventures of Jimmy Neutron: Boy Genius, it is created by Keith Alcorn and Steve Oedekerk, and based on characters created by John Davis, Keith Alcorn and Steve Oedekerk. The series has been picked up for 26 episodes by Nickelodeon for its first season. Jeff Garcia returned as voice of Sheen Estevez, and Bob Joles and Rob Paulsen are the voice of Nesmith and Doppy, all respectively. The series is animated at Omation Animation Studios, produced by O Entertainment and premiered on Nickelodeon on October 2, 2010 (along with "T.U.F.F. Puppy") in the United States."
 msgstr "העלילה מתחילה בכך ששין אסטבז, גיבור הסדרה, התגנב למעבדתו של חברו הטוב ביותר, ג'ימי ניוטרון. לאחר שהתגנב למעבדה, שין מצא את החללית הסודית שחברו בנה. שין נכנס לחללית, ותוך התלהבות רבה לחץ על כפתורייה ובלי כוונתו נשלח לחלל החיצון. לאחר שעבר מרחק של ארבעה מיליון ואחד שנות אור מכדור הארץ, שין התרסק על כוכב שנקרא "זינו". זינו הוא כוכב לכת בעל צורה מוזרה - כדור ירוק שבו תקוע קיסם החוצה את הכוכב, המאוכלס על ידי חייזרים הנקראים זינואיינים. החללית פגעה בבית זינואייני השייך לדורקוס, יועצו של קיסר זינו והרסה אותו, ותוצאת ההתרסקות גרמה לשנאתו של דורקוס את שין.[CR]מאז הריסת ביתו, דורקוס רוצה להשמיד את שין ולנקום בו, אך למרבה צערו, שין מסכל את תוכניותיו לחסל אותו. במהלך הסדרה, הקיסר רוכש חיבה כלפי שין. בזינו, שין מכיר חברים חדשים: דופי דופוויאלר (שבלול ירוק המרכיב משקפיים, אשר דומה מאוד לחברו של שין על פני כדור הארץ, קרל וויזר), הקיסר (השליט הגדול של זינו המאמין כי שין בא להביא את הגאולה לכוכב), נסמית' (שימפנזה זכר חכם אשר נשלח מכדור הארץ והתרסק כמו שין על הכוכב) ובת ששמה אסיפה, בה במהלך הסדרה שין מתאהב."
 
 msgctxt "#104840
-msgid "The pilot, named "Runaway Rocketboy," involves Jimmy testing a rocket ship that he has invented, and later uses it when he inadvertently stumbles upon a Yolkian plot to conquer Earth. The pilot was aired in short mini episodes on Nickelodeon before the film's release, and its plot was used for the film Jimmy Neutron: Boy Genius. The pilot was later included as an extra on the "Confusion Fusion" DVD. It was originally supposed to air as a short on KaBlam!, but the show got cancelled before the episode aired.[CR]The pilot had a few differences from the main series. In it, the clothes were different, the theme song was longer with a few lines that were cut later, Goddard was voiced by Kim Saxon, in lieu of Frank Welker, Carl Wheezer resembled his father, Sheen Estevez was absent and the title card had a picture in the scene, like all the other Nicktoons at the time. Also, the DNA Productions mascot was an animated cat."
+msgid "The Adventures of Jimmy Neutron: Boy Genius follows Jimmy Neutron, his faithful robotic dog, Goddard, and his eclectic friends and family as they experience life in Retroville. Jimmy is a typical kid, who just happens to be a genius. He creates gadgets to improve his everyday life, but his inventions go awry more often than not, and hilarious trouble ensues."
 msgstr "עלילת התוכנית סובבת סביב ג'ימי ניוטרון, ילד גאון שהמוח שלו מפותח בהרבה משל ילדים אחרים, והוא ממציא המצאות שלא מהעולם הזה. יש לו שני הורים תומכים, שני חברים מצחיקים ומגושמים וכלב רובוט אחד בשם גודארד. בכל יום ג'ימי מבלה את זמנו בפיתוח המצאות מטורפות במעבדה שלו, אשר מסבכות אותו בצרות."
 
 msgctxt "#104850
-msgid "Two anthropomorphic, flightless ducks named SwaySway (Robbie Daymond) and Buhdeuce (Eric Bauza), who are best friends, fly around the water-based planet Pondgea in a rocket-powered van delivering bread to the citizens. SwaySway, tall, thin and green, is the leader of the duo, and although he does not always use the best judgment, he is quite skilled at flying the van. Buhdeuce, short and round, is klutzier, but is also an enthusiastic and a loyal assistant to SwaySway. Oftentimes when they get in over their heads, they will "level up," or transform (in a similar vein to video game characters) into a variety of forms they need to solve their problems."
+msgid "Do you like riDUCKulous adventures? Sway Sway and Buhdeuce are a couple of super cool Breadwinners with a love for all loaves! These two quazy ducks fly a rocket van from the west to the yeast of Pondgea, making sure everyone gets some bread up in their beak. Yip-yip!"
 msgstr "געגע וברווז הם צמד ברווזים מחלקי לחם בעולמם "אגמגיה" העשוי ממים. געגע הוא צנום וצבע עורו ירוק זרחני, הוא מקבל ההחלטות מבין השניים אף על פי שכושר השיפוט שלו נוטה להשתבש מפעם לפעם ועל כך הוא מפצה בשליטה מלאה על ניווט הטנדר של השניים. ברווז הוא קטן ועגלגל, ניחן בהפרעת ריכוז קלה ומפצה עליה בהתלהבות שאינה נגמרת ובנאמנות בלתי מתפשרת לחברו.[CR]לעתים קרובות, געגע וברווז נקלעים להרפתקאות שונות ומשונות, אך הם גם צריכים להיזהר, מפני שיש להם לא מעט אויבים שרוצים ברעתם."
 
 msgctxt "#104860
@@ -4977,7 +4977,7 @@ msgid "Far away in an entirely different galaxy to our own, there lies the surre
 msgstr "Far away in an entirely different galaxy to our own, there lies the surreal and high-tech Makuhero City, home to the Hero Factory, where new robotic heroes, powered by a strange semi-sentient material called quaza, are built every day. The factory was created by the wise architect of Makuhero City, the philanthropic Mr. Makuro, with the intention of upholding peace and prosperity throughout the universe, fighting the worst villains and monsters from all over the galaxy. The main story revolves around the Hero Factory Alpha Team and their allied rookie heroes combating evil on several different planets."
 
 msgctxt "#104880
-msgid "The Avengers: Earth's Mightiest Heroes! is an American animated television series by Marvel Animation in cooperation with Film Roman, based on the Marvel Comics superhero team the Avengers."
+msgid "This animated series follows the adventures of the superhero team The Avengers - primarily consisting of Iron Man, Thor, Captain America, the Hulk, Ant-Man (a.k.a. Giant-Man), Wasp, Hawkeye, and the Black Panther - as they team up to save the world from dangers far too great for one superhero to handle alone. The Avengers frequently work with S.H.I.E.L.D., a peacekeeping agency run by Nick Fury (while the two aren't competing to save the world by their own means, which are often quite different)."
 msgstr "האוונג'רס: סדרת האנימציה (באנגלית: The Avengers: Earth's Mightiest Heroes, בישראל לוחמי העל) היא סדרת אנימציה אמריקאית המבוססת על סדרת הקומיקס האוונג'רס מבית מארוול קומיקס."
 
 msgctxt "#104890
@@ -5115,20 +5115,20 @@ msgid ""
 msgstr ""
 
 msgctxt "#105230
-msgid ""
-msgstr ""
+msgid "Rejoin Goku and his friends in a series of cosmic battles! Toei has redubbed, recut, and cleaned up the animation of the original 1989 animated series. The show's story arc has been refined to better follow the comic book series on which it is based. The show also features a new opening and ending. In the series, martial artist Goku, and his various friends, battle increasingly powerful enemies to defend the world against evil. Can Earth's defender defeat demons, aliens, and other villains?"
+msgstr "Rejoin Goku and his friends in a series of cosmic battles! Toei has redubbed, recut, and cleaned up the animation of the original 1989 animated series. The show's story arc has been refined to better follow the comic book series on which it is based. The show also features a new opening and ending. In the series, martial artist Goku, and his various friends, battle increasingly powerful enemies to defend the world against evil. Can Earth's defender defeat demons, aliens, and other villains?"
 
 msgctxt "#105240
-msgid ""
-msgstr ""
+msgid "The sequel to Dragon Ball Z, Dragon Ball Super takes place 4 years after Goku Son defeated the dangerous Majin Buu. Peace has returned to Earth and all the Dragon Ball champions A.K.A. The Z Fighters are settling into more normal lives, or are they?"
+msgstr "The sequel to Dragon Ball Z, Dragon Ball Super takes place 4 years after Goku Son defeated the dangerous Majin Buu. Peace has returned to Earth and all the Dragon Ball champions A.K.A. The Z Fighters are settling into more normal lives, or are they?"
 
 msgctxt "#105250
-msgid ""
-msgstr ""
+msgid "Many years have passed since Goku first searched for the Dragon Balls. He is a grown man, with a wife and son. He and his friends have settled into their own lives and, for the most part, things are rather peaceful. Then one day, Goku learns he is really a Saiyan and comes from another planet. Now begins new adventures for Goku and his friends as they defend their home against new, more powerful threats."
+msgstr "Many years have passed since Goku first searched for the Dragon Balls. He is a grown man, with a wife and son. He and his friends have settled into their own lives and, for the most part, things are rather peaceful. Then one day, Goku learns he is really a Saiyan and comes from another planet. Now begins new adventures for Goku and his friends as they defend their home against new, more powerful threats."
 
 msgctxt "#105260
-msgid ""
-msgstr ""
+msgid "Ten years have passed since Goku left his friends and family to hone his skills. But Goku soon finds himself helpless against the mystical power of the Dragon Balls and an accidental wish made by the devious Emperor Pilaf. His desire; that Goku once again become a child! Not daunted by this small setback, Goku, together with Trunks, and his own granddaughter Pan, blast off into the outer reaches of space in search of the mysterious Blackstar Dragon Balls. But these Dragon Balls have a fatal secret: if not collected within one year Earth will be destroyed."
+msgstr "Ten years have passed since Goku left his friends and family to hone his skills. But Goku soon finds himself helpless against the mystical power of the Dragon Balls and an accidental wish made by the devious Emperor Pilaf. His desire; that Goku once again become a child! Not daunted by this small setback, Goku, together with Trunks, and his own granddaughter Pan, blast off into the outer reaches of space in search of the mysterious Blackstar Dragon Balls. But these Dragon Balls have a fatal secret: if not collected within one year Earth will be destroyed."
 
 msgctxt "#105270
 msgid "Barbie stars as Merliah, a surfer who learns a shocking secret: she's a mermaid! She and her dolphin friend set out for an undersea adventure to rescue her mother, the queen of Oceana."

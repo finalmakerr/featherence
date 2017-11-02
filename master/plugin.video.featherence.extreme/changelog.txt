@@ -10,6 +10,7 @@ WIP (WORK IN PROGRESS)
 Featherence Extreme v0.1.11 (xx-xx-2017)
 ------------------------
 - Added TV Mode support to YouTube search sources.
+- Major performance update result in a very fast addon!
 
 ------------------------
 Featherence Extreme v0.1.10 (16-Oct-2017)

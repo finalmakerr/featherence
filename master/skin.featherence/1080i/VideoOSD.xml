@@ -340,21 +340,7 @@
 		</control>
 	  </control>
 	  
-	  <control type="group" description="!VideoPlayer.Content(LiveTV)">
-		<top>1014</top>
-		<visible>!VideoPlayer.Content(LiveTV) + false</visible>
-	    <control type="slider" id="87">
-		    <depth>DepthOSD+</depth>
-			<action>seek</action>
-			<left>0</left>
-			<top>27</top>
-			<width>1920</width>
-			<height>35</height>
-			<texturesliderbar colordiffuse="yellow">osd/texturebg_cache.png</texturesliderbar>
-			<textureslidernib colordiffuse="BBBBBBBB">osd/midtexture.png</textureslidernib>
-			<textureslidernibfocus bordercolordiffuse="yellow">osd/midtexture.png</textureslidernibfocus>
-		</control>
-	  </control>
+	  <include>DialogSeekBar</include>
 	  <include>TouchSupport</include>
 	</controls>
 </window>

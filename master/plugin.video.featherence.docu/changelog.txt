@@ -5,17 +5,23 @@
 ------------------------
 WIP (WORK IN PROGRESS)--
 ------------------------
+- Added Military Category.
+- Added Auto / Vehicles Category.
+- Added Artists Category.
 
 ------------------------
-Featherence Docu v0.1.15 (xx-xx-17)
+Featherence Docu v0.1.15 (02-Nov-17)
 ------------------------
 - Added new YouTube API for better performance.
 - Added TV Mode support to YouTube search sources.
-- Major update of links in Nature & Space & Animals & History Categories.
-+ Those links are now pure Docu movies in HD!
-+ Those links have a dynamic plot, fanart and thumbnails.
++ Added TV Mode support from within main menu categories.
+- Major update of all contents.
 + Added thousands of new contents.
++ Categories are now more user friendly.
++ Contets are now pure Docu movies in HD!
++ Contents have a dynamic plot, fanart and thumbnails.
 - Major performance update result in a very fast addon!
+
 
 ------------------------
 Featherence Docu v0.1.14 (04-Dec-16)
