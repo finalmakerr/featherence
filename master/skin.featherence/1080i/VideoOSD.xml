@@ -339,8 +339,6 @@
 		  <include>TopVideoInformation</include>
 		</control>
 	  </control>
-	  
-	  <include>DialogSeekBar</include>
 	  <include>TouchSupport</include>
 	</controls>
 </window>

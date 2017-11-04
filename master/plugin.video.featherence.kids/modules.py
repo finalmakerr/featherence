@@ -36,10 +36,10 @@ def CATEGORIES():
 	addDir(addonString(109).encode('utf-8'),'',109,featherenceserviceicons_path + 'ud.png',addonString(1090).encode('utf-8'),'1',0,"") #Learn Language
 	addDir(addonString(200).encode('utf-8') % (General_Language),'',200,featherenceserviceicons_path + 'ud.png','[COLOR=red]1: %s | 2: %s | 3: %s[/COLOR]' % (General_Language, General_Language2, General_Language3) + '[CR]' + addonString_servicefeatherence(32081).encode('utf-8'),'1',0,"") #Forigen Language
 	
-	#addDir('קלסיקלטת','plugin://plugin.video.wallaNew.video/?mode=1&module=338&name=קלסיקלטת&url=http://vod.walla.co.il/channel/338/clasicaletet',8,'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYE2VT8CR2O31MsqAhdaydYrqrCD--HCCdGcs7blBn3Zh92Kwq','','1',0,getAddonFanart(0))
-	#addDir('ניק','plugin://plugin.video.wallaNew.video/?mode=1&module=nick&name=ניק&url=http://nick.walla.co.il/',8,'http://www.karmieli.co.il/sites/default/files/images/nico.jpg','','1',0,getAddonFanart(0))
-	#addDir('גוניור','plugin://plugin.video.wallaNew.video/?mode=1&module=nickjr&name=גוניור&url=http://nickjr.walla.co.il/',8,'http://upload.wikimedia.org/wikipedia/he/1/19/%D7%A2%D7%A8%D7%95%D7%A5_%D7%92%27%D7%95%D7%A0%D7%99%D7%95%D7%A8.jpg','','1',0,getAddonFanart(0))
-	#addDir('421','http://nickjr.walla.co.il/item/2775381',42,'plot','','1',0,getAddonFanart(0))
+	addDir('קלסיקלטת','plugin://plugin.video.wallaNew.video/?mode=1&module=338&name=קלסיקלטת&url=http://vod.walla.co.il/channel/338/clasicaletet',8,'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYE2VT8CR2O31MsqAhdaydYrqrCD--HCCdGcs7blBn3Zh92Kwq','','1',0,getAddonFanart(0))
+	addDir('ניק','plugin://plugin.video.wallaNew.video/?mode=1&module=nick&name=ניק&url=http://nick.walla.co.il/',8,'http://www.karmieli.co.il/sites/default/files/images/nico.jpg','','1',0,getAddonFanart(0))
+	addDir('גוניור','plugin://plugin.video.wallaNew.video/?mode=1&module=nickjr&name=גוניור&url=http://nickjr.walla.co.il/',8,'http://upload.wikimedia.org/wikipedia/he/1/19/%D7%A2%D7%A8%D7%95%D7%A5_%D7%92%27%D7%95%D7%A0%D7%99%D7%95%D7%A8.jpg','','1',0,getAddonFanart(0))
+	addDir('421','http://nickjr.walla.co.il/item/2775381',42,'plot','','1',0,getAddonFanart(0))
 
 def CATEGORIES100(name, iconimage, desc, fanart):
 	'''------------------------------
@@ -1000,6 +1000,11 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	addDir(addonString(10415).encode('utf-8'),list,17,thumb,addonString(104150).encode('utf-8'),'1',"",fanart)
 	
 	CATEGORIES104P(General_LanguageL, background, background2) #דיגימון
+	CATEGORIES104W(General_LanguageL, background, background2) #Digimon Tamers
+	CATEGORIES104Y(General_LanguageL, background, background2) #Digimon Fusion
+	CATEGORIES104Z(General_LanguageL, background, background2) #Digimon Adventure Tri
+	CATEGORIES104AA(General_LanguageL, background, background2) #Digimon Xros Wars
+	CATEGORIES104AB(General_LanguageL, background, background2) #Digimon Universe: Appli Monsters
 	
 	'''דנבר הדינוזאור האחרון'''
 	thumb = 'https://www.thetvdb.com/banners/posters/73737-4.jpg'
@@ -2960,28 +2965,28 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 	addDir(addonString(10611).encode('utf-8'),list,17,'http://ww1.prweb.com/prfiles/2006/08/14/424791/uptotenBoowaKwala.jpg',addonString(106110).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://lh5.ggpht.com/Yq719nfYOCeafMVVZwlL7TONN1gxd4jKhkE9L4YcKwViWdBhAEi-WEeLBboTtQFOGGc=h900", default=background2))
 	
 	'''בייבי איינשטיין*'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://yt3.ggpht.com/-aRd660Gwyzg/AAAAAAAAAAI/AAAAAAAAAAA/_1rP7GM5bvk/s288-c-k-no-mo-rj-c0xffffff/photo.jpg'
+	fanart = 'https://images-na.ssl-images-amazon.com/images/I/71PRm7SiSnL._SL1500_.jpg'
 	list = []
 	
-	list.append('&youtube_ch=UCd_OgI9yXB1cZ5BER35mvIw') #בייבי איינשטיין
+	list.append('&youtube_ch=babyeinstein') #בייבי איינשטיין
 	
-	addDir(addonString(10603).encode('utf-8'),list,17,'http://d202m5krfqbpi5.cloudfront.net/books/1170326163l/46377.jpg',addonString(106030).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://allwallpapersnew.com/wp-content/gallery/baby-einstein-images/05008612327.jpg", default=background2))
+	addDir(addonString(10603).encode('utf-8'),list,17,thumb,addonString(106030).encode('utf-8'),'1',0,fanart)
 	
 	'''בילי בם בם'''
 	CATEGORIES106D(General_LanguageL, background, background2)
 	
 	'''בינג'''
-	thumb = ''
+	thumb = 'https://i.ytimg.com/vi/HWq9EuKkimI/hqdefault.jpg'
 	fanart = ''
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_pl=PLTleo-h9TFqJ4NDGmEMQXirjzWpATU1-3')
-	addDir('בינג',list,17,'https://i.ytimg.com/vi/HWq9EuKkimI/hqdefault.jpg','','1',0,fanart)
+	addDir('בינג',list,17,thumb,'','1',0,fanart)
 	
 	'''ברנרד*'''
-	thumb = 'https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Bernard_Bear_Poster.jpg/250px-Bernard_Bear_Poster.jpg'
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/80029-4.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/80029-5.jpg'
 	list = []
 	list.append('&youtube_pl=PLegWv2p63OBOSDqXOiBigHgsq_Ep2kaKY')
 	list.append('&youtube_pl=PLKLzBLbyOE9vMP4ZQaylo9gst_fgVTS01')
@@ -2989,12 +2994,12 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 	addDir(addonString(10615).encode('utf-8'),list,17,thumb,addonString(106150).encode('utf-8'),'1',0,fanart)
 	
 	'''גילגולון'''
-	thumb = ''
+	thumb = 'https://i.ytimg.com/vi/JH8wKDynqNY/hqdefault.jpg'
 	fanart = ''
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_pl=PLTleo-h9TFqJpX20e1Twkc18L3a5neRMl')
-	addDir('גילגולון',list,17,'https://i.ytimg.com/vi/JH8wKDynqNY/hqdefault.jpg','','1',0,fanart)
+	addDir('גילגולון',list,17,thumb,'','1',0,fanart)
 	
 	'''דביבוני בונבוני'''
 	thumb = ''
@@ -3017,8 +3022,8 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 	CATEGORIES106E(General_LanguageL, background, background2) #דרקו	
 	
 	'''Dinopaws*'''
-	thumb = ''
-	fanart = ''
+	thumb = 'http://thetvdb.com/banners/_cache/posters/278713-1.jpg'
+	fanart = 'http://thetvdb.com/banners/fanart/original/278713-3.jpg'
 	list = []
 	if 'English' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.bobbycart/?description=http%3A%2F%2Fthetvdb.com%2Fbanners%2Ffanart%2Foriginal%2F278713-3.jpg&iconimage=http%3A%2F%2Fthetvdb.com%2Fbanners%2F_cache%2Fposters%2F278713-1.jpg&mode=2&name=%5BB%5D%5BCOLOR%20white%5DDinopaws%5B%2FCOLOR%5D%5B%2FB%5D&url=http%3A%2F%2Fwww.toonget.net%2Fdinopaws')
@@ -3026,7 +3031,7 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 		list.append('&youtube_id=Vo2N47-NFPQ&t=573s')
 		list.append('&youtube_id=rkjrQ7oMpg0')
 		
-	addDir(addonString(10615).encode('utf-8'),list,17,'http://thetvdb.com/banners/_cache/posters/278713-1.jpg',addonString(106150).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://thetvdb.com/banners/fanart/original/278713-3.jpg", default=background2))
+	addDir(addonString(10615).encode('utf-8'),list,17,thumb,addonString(106150).encode('utf-8'),'1',0,fanart)
 	
 	'''הגלופסים'''
 	thumb = ''

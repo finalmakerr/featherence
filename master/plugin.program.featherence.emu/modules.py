@@ -760,10 +760,12 @@ def getfileID(file):
 	elif file == "Nintendo DS_1P.zip":
 		fileID_L.append('e7e3yaudsjp629n') #user16
 		fileID_L.append('tajqg91605p22m2') #debugout1
+		fileID_L.append('ac9ds7wskcjxggs') #featherence.user3
 		fileID_L.append('e5oh0k4ixhnqlk8') #htptuser3
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
+		fileName_L.append('Source 4')
 	elif file == "Nintendo DS_1P_.zip":
 		fileID_L.append('r4l6pftf2eqdjm6') #guser28
 		fileID_L.append('su8o3qbbickjk81') #info
@@ -817,6 +819,7 @@ def getfileID(file):
 	elif file == "Super Nintendo.zip":
 		fileID_L.append('bhyvkhb6ppeqawl') #user21
 		fileID_L.append('dficnt390sp2j8w') #user1
+		fileID_L.append('jvg1zzuygtpcit8') #featherence.user3
 		fileID_L.append('fn27r1mmyos91hd') #htpt
 		fileID_L.append('rlsyu3fa8pusvs3') #buy
 		fileID_L.append('1sm4z925qjhhmp7') #featherence.user28
@@ -825,6 +828,7 @@ def getfileID(file):
 		fileName_L.append('Source 3')
 		fileName_L.append('Source 4')
 		fileName_L.append('Source 5')
+		fileName_L.append('Source 6')
 		
 	elif file == "TurboGrafx 16.zip":
 		fileID_L.append('nrydawpwto8f0wk') #guser21
@@ -1222,6 +1226,7 @@ def getfileID(file):
 	
 	elif file == "GameCube_2P_SSX 3.zip": fileID = "8uvxv4r1rqb6pgi" #featherence.user37
 	elif file == "GameCube_1P_Tak and the Power of Juju.zip": fileID = "tdy74pmhw93ax5b" #featherence.user37
+	elif file == "GameCube_1P_The Incredible Hulk - Ultimate Destruction.zip": fileID = "eilwozrt4f9fqsi" #featherence.user3
 	
 	elif file == ".zip":
 		fileID_L.append('[GD]') #featherence.user1 [GD]

@@ -1108,20 +1108,20 @@ msgid ""
 msgstr ""
 
 msgctxt "#10330
-msgid ""
-msgstr ""
+msgid "Digimon Universe: Appli Monsters"
+msgstr "Digimon Universe: Appli Monsters"
 
 msgctxt "#10331
-msgid ""
-msgstr ""
+msgid "Digimon Xros Wars"
+msgstr "Digimon Xros Wars"
 
 msgctxt "#10332
-msgid ""
-msgstr ""
+msgid "Digimon Adventure Tri"
+msgstr "Digimon Adventure Tri"
 
 msgctxt "#10333
-msgid ""
-msgstr ""
+msgid "Digimon Fusion"
+msgstr "Digimon Fusion"
 
 msgctxt "#10334
 msgid "The Jetsons"
@@ -1453,8 +1453,8 @@ msgid "Doraemon"
 msgstr "דורימון"
 
 msgctxt "#10416
-msgid "Digimon"
-msgstr "דיגימון"
+msgid "Digimon: Digital Monsters"
+msgstr "דיגימון: מפלצות דיגיטליות"
 
 msgctxt "#10417
 msgid "Dennis the Menace"
@@ -1473,8 +1473,8 @@ msgid "The Ultimate Book of Spells"
 msgstr "הובוס ספר הקסמים הגדול"
 
 msgctxt "#10421
-msgid ""
-msgstr ""
+msgid "Digimon Tamers"
+msgstr "Digimon Tamers"
 
 msgctxt "#10422
 msgid "The Smurfs"
@@ -1749,8 +1749,8 @@ msgid "Star Wars Rebels"
 msgstr "מלחמת הכוכבים: המורדים"
 
 msgctxt "#10490
-msgid "Legends of Chima"
-msgstr "צ'ימה"
+msgid "LEGO Legends of Chima"
+msgstr "LEGO Legends of Chima"
 
 msgctxt "#10491
 msgid "Ox Tales"
@@ -4344,20 +4344,20 @@ msgid ""
 msgstr ""
 
 msgctxt "#103300
-msgid ""
-msgstr ""
+msgid "Everyone in the world uses smartphone apps. But inside them lurks unknown creatures called "Appli Monsters," or "Appmon." The Appmon are AI lifeforms with the ability to think and act, and exist in the boundary between the human world and digital space. In the vast sea of the internet, the "last boss AI" Leviathan takes control of the Appmon with a virus and begins hacking every system, thus starting to control the human world from the world of the net. Haru Shinkai is led to acquire the Appli Drive, and uses it to materialize Gatchmon, a search app monster."
+msgstr "Everyone in the world uses smartphone apps. But inside them lurks unknown creatures called "Appli Monsters," or "Appmon." The Appmon are AI lifeforms with the ability to think and act, and exist in the boundary between the human world and digital space. In the vast sea of the internet, the "last boss AI" Leviathan takes control of the Appmon with a virus and begins hacking every system, thus starting to control the human world from the world of the net. Haru Shinkai is led to acquire the Appli Drive, and uses it to materialize Gatchmon, a search app monster."
 
 msgctxt "#103310
-msgid ""
-msgstr ""
+msgid "Taiki Kudo is an upbeat boy with a desire to help those in need, although he tends to overexert himself. One day, he hears the voice of a Digimon named Shoutmon who is on the verge of death. Wanting to help him, Taiki is given a Digivice known as a Xros Loader, and he and his friends Akari Hinomoto and Zenjiro Tsurugi are warped to the Digital World where they meet Shoutmon and his allies, Ballistamon, Starmon and the Pickmons. By using the power of the Xros Loader, Taiki can perform a DigiXros, which can fuse any of his allies together into different forms. Taiki and his friends use this ability to fight the forces of the Bagura Empire while crossing paths with teams Blue Flare and Twilight."
+msgstr "Taiki Kudo is an upbeat boy with a desire to help those in need, although he tends to overexert himself. One day, he hears the voice of a Digimon named Shoutmon who is on the verge of death. Wanting to help him, Taiki is given a Digivice known as a Xros Loader, and he and his friends Akari Hinomoto and Zenjiro Tsurugi are warped to the Digital World where they meet Shoutmon and his allies, Ballistamon, Starmon and the Pickmons. By using the power of the Xros Loader, Taiki can perform a DigiXros, which can fuse any of his allies together into different forms. Taiki and his friends use this ability to fight the forces of the Bagura Empire while crossing paths with teams Blue Flare and Twilight."
 
 msgctxt "#103320
-msgid ""
-msgstr ""
+msgid "Digimon Adventure tri. is a Japanese action-adventure anime film series produced by Toei Animation. Celebrating the 15th anniversary of Akiyoshi Hongo's Digimon franchise, the six-part series serves as a direct sequel to the first two television series, Digimon Adventure and Digimon Adventure 02."
+msgstr "Digimon Adventure tri. is a Japanese action-adventure anime film series produced by Toei Animation. Celebrating the 15th anniversary of Akiyoshi Hongo's Digimon franchise, the six-part series serves as a direct sequel to the first two television series, Digimon Adventure and Digimon Adventure 02."
 
 msgctxt "#103330
-msgid ""
-msgstr ""
+msgid "Mikey Kudo, a 7th grade boy, heard a mysterious melody and followed it to an alley where a mysterious, legendary Digivice called the Fusion Loader appeared in front of him. Accompanied by his friends, Angie Hinomoto and Jeremy Tsurugi, they were dragged into the Digital World. They soon realized that the Digital World was a place inhabited by living creatures named Digimon and is now slowly being taken over by an evil empire named the Bagra Army. Now, Mikey and his "Fusion Fighters" team become an important figure to free the world from the Bagra Army, led by their Emperor Lord Bagra."
+msgstr "Mikey Kudo, a 7th grade boy, heard a mysterious melody and followed it to an alley where a mysterious, legendary Digivice called the Fusion Loader appeared in front of him. Accompanied by his friends, Angie Hinomoto and Jeremy Tsurugi, they were dragged into the Digital World. They soon realized that the Digital World was a place inhabited by living creatures named Digimon and is now slowly being taken over by an evil empire named the Bagra Army. Now, Mikey and his "Fusion Fighters" team become an important figure to free the world from the Bagra Army, led by their Emperor Lord Bagra."
 
 msgctxt "#103340
 msgid "The Jetsons is an animated sitcom that was produced by Hanna-Barbera. It was Hanna-Barbera’s Space Age counterpart to The Flintstones, a half-hour family sitcom projecting contemporary American culture and lifestyle into another time period. The Jetsons live in a futuristic utopia in the year 2062 of elaborate robotic contraptions, aliens, holograms, and whimsical inventions."
@@ -4637,7 +4637,7 @@ msgid ""
 msgstr "אגדות המלך שלמה היא סדרת אנימציית פלסטלינה ישראלית שהופקה לטלוויזיה על ידי האנימטור רוני אורן בשנים 1992 -1993."
 
 msgctxt "#104030
-msgid "The Magic School Bus is an edutainment multimedia franchise that consists of a book series, a TV series, and several video games among other things. Each of the stories within the franchise centers on the antics of a fictional elementary school teacher, Ms. Valerie Frizzle, and her class, who board an anthropomorphic Type A school bus, which takes them on field trips to impossible locations, such as the solar system, clouds, the past, and the human body."
+msgid "A classroom taught by Ms. Valerie Frizzle is always fun and exciting. The colorful teacher owns a Magic School Bus which can transform into different things like a spaceship, a battery, or even an alligator! These things can help Ms. Frizzle with visual teaching methods as she reveals information about anything in science. The students include Carlos, Phoebe, Keesha, Dorothy Ann, Tim, Ralphie, Arnold, and Wanda. Originally, The Magic School Bus aired on PBS. But when production ceased after four years, The Magic School Bus's run on PBS ended with it."
 msgstr "אוטובוס הקסמים (באנגלית: The Magic School Bus) היא סדרת ספרים שעובדה לסדרת טלוויזיה, אשר מעשירה את החשיבה המדעית."
 
 msgctxt "#104040
@@ -4689,8 +4689,8 @@ msgid "Nobita Nobi is so hapless that his 22nd century decendants are still impo
 msgstr "דורימון (ביפנית: ドラえもん, באנגלית: Doraemon) היא סדרת אנימה יפנית שבה למעלה מ-1500 פרקים ו-30 סרטים שהופקה לטלוויזיה החל משנת 1979 ועד היום ונחשבת לסדרת האנימה השנייה הארוכה ביותר בכל הזמנים, מיד לאחר הסדרה סאזאה (SAZAE) שלא יצאה מגבולות יפן."
 
 msgctxt "#104160
-msgid "Digimon (デジモン Dejimon, branded as Digimon: Digital Monsters, stylized as DIGIMON), short for "Digital Monsters" (デジタルモンスター Dejitaru Monsutā), is a Japanese media franchise encompassing virtual pet toys, anime, manga, video games, films and a trading card game."
-msgstr "דיג'ימון (ביפנית: デジモン, באנגלית: Digimon) היא סדרת אנימה יפנית פופולרית ששודרה לאורך 7 עונות. השם "דיג'ימון" מורכב משתי מילים: "דיג'י" (קיצור של המילה האנגלית "דיג'יטל", כלומר, דיגיטלי) ו"מון" (קיצור של "מונסטר", מפלצת) ומשמעותו "מפלצת דיגיטלית" או "מפלצות דיגיטליות"."
+msgid ""Digimon" are "Digital Monsters". According to the stories, they are inhabitants of the "Digital World", a manifestation of Earth's communication network. The stories tell of a group of mostly pre-teens, the "Chosen Children" (DigiDestined in the English version), who accompany special Digimon born to defend their world (and ours) from various evil forces. To help them surmount the most difficult obstacles found within both realms, the Digimon have the ability to evolve (Digivolve). In this process, the Digimon change appearance and become much stronger, often changing in personality as well. The group of children who come in contact with the Digital World changes from season to season."
+msgstr ""Digimon" are "Digital Monsters". According to the stories, they are inhabitants of the "Digital World", a manifestation of Earth's communication network. The stories tell of a group of mostly pre-teens, the "Chosen Children" (DigiDestined in the English version), who accompany special Digimon born to defend their world (and ours) from various evil forces. To help them surmount the most difficult obstacles found within both realms, the Digimon have the ability to evolve (Digivolve). In this process, the Digimon change appearance and become much stronger, often changing in personality as well. The group of children who come in contact with the Digital World changes from season to season."
 
 msgctxt "#104170
 msgid "Based on Hank Ketcham's popular comic-strip, Dennis the Menace became a staple in countless households throughout the mid-80s. With the help of his precocious pals and his shaggy dog Ruff, Dennis uses his curiosity and imagination to keep his pleasant Midwestern neighborhood in a constant state of confusion and chaos."
@@ -4709,8 +4709,8 @@ msgid "The series follows the adventures of three adolescent kids: Cassy, a thir
 msgstr "הסדרה מגוללת את סיפורם של שלושה ילדים שהולכים ללמוד בפנימיה לקוסמים, שם הם מקבלים לידיהם את הובוס, ספר הקסמים הגדול, אשר לוקח אותם למעמקי האדמה ומסביר להם שעליהם להילחם בזרלק, קוסם עליון שנכלא במעמקי האדמה על-ידי מועצת הקוסמים."
 
 msgctxt "#104210
-msgid ""
-msgstr ""
+msgid "There are other worlds out there. Digital, Organic, worlds where our dreams come true... Digimon Tamers takes place on an Earth where Digimon is a media icon. Card games and TV shows ARE Digimon. At least, that's what people think. A secret government organization has found another world, and its digital inhabitants are crossing over. Digimon run amok throughout Japan and three children with Digimon partners are out to stop them, learning important lessons along the way."
+msgstr "There are other worlds out there. Digital, Organic, worlds where our dreams come true... Digimon Tamers takes place on an Earth where Digimon is a media icon. Card games and TV shows ARE Digimon. At least, that's what people think. A secret government organization has found another world, and its digital inhabitants are crossing over. Digimon run amok throughout Japan and three children with Digimon partners are out to stop them, learning important lessons along the way."
 
 msgctxt "#104220
 msgid ""
@@ -4897,7 +4897,7 @@ msgid "In another world, ninja are the ultimate power, and in the Village Hidden
 msgstr "סדרת המאנגה של נארוטו יצאה לראשונה לשווקים ביפן בשנת 1999 על ידי המוציא לאור היפני Shueisha במגזין היפני "Weekly Shōnen Jump". סדרת המאנגה הסתיימה בנובמבר 2014 לאחר 72 כרכים.[CR]בעקבות הצלחת סדרת המאנגה הפיקו אולפני האנימציה סטודיו פיירו ואולפני האנימציה Aniplex שתי סדרות אנימה המבוססות על עלילת סדרת המאנגה."
 
 msgctxt "#104680
-msgid "Nils Holgersson is a 14-year-old farm boy, the son of poor farmers. He is lazy and disrespectful to his fellowman. In his spare time he enjoys abusing the animals in his family farm. One day Nils captures a tomte in a net while his family is at church and have left him home to memorize chapters from the Bible. The tomte proposes to Nils that if Nils frees him, the tomte will give him a huge gold coin. Nils rejects the offer and the tomte turns Nils into a tomte, which leaves him shrunken and able to talk with animals, who are thrilled to see the boy reduced to their size and are angry and hungry for revenge. While this is happening, wild geese are flying over the farm on one of their migrations, and a white farm goose called Morten attempts to join the wild ones."
+msgid "Nils Holgersson is a young boy on a farm who is cruel to the animals. But when he catches the farm's little goblin it becomes one prank too many. He is magically shrunk and suddenly the farm animals are out for revenge. He flees on the back of the goose Morten and they join up with a flock of wild geese. Together they travel all over Sweden, with Nils hoping to find a way to become big again."
 msgstr "העלילה מתמקדת בנילס הולגרסון, ילד שובב בן 14 אשר חי בחווה בשוודיה. הוריו של נילס הם עניים. נילס הוא עצלן וחסר כל התחשבות בזולת. נילס היה נוהג להתאכזר לחיות בחווה בזמנו הפנוי, עד שיום אחד הוא לוכד שדון. השדון הכועס מחליט להעניש את נילס על מעלליו, ועל כן הוא מכווץ אותו לגודל של ננס. בערמומיות הוא עמד לכאורה להעניק לנילס מטבע אולם חבט בו בעוצמה. בתור ננס נילס מסוגל כעת לדבר ולהבין את בעלי החיים. נילס וחיית המחמד שלו אוגי האוגר מצטרפים לאווז הבית מולי במסעו עם אווזי הבר, המונהגים על ידי המפקדת אקה, ללפלנד באזור הצפוני של שוודיה, שם השמש אינה שוקעת. ביחד הם טסים לאורך שוודיה כאשר נילס מקווה כי יצליח למצוא את הדרך לבטל את הכישוף ולחזור להיות גדול שוב. במהלך המסע אופיו של נילס משתנה והוא הופך לידיד החיות. בסופו של דבר שב נילס לגודלו המקורי אולם אז אבדה יכולתו לתקשר עם בעלי-חיים."
 
 msgctxt "#104690
@@ -4981,15 +4981,15 @@ msgid "This animated series follows the adventures of the superhero team The Ave
 msgstr "האוונג'רס: סדרת האנימציה (באנגלית: The Avengers: Earth's Mightiest Heroes, בישראל לוחמי העל) היא סדרת אנימציה אמריקאית המבוססת על סדרת הקומיקס האוונג'רס מבית מארוול קומיקס."
 
 msgctxt "#104890
-msgid ""
+msgid "Set between the events of Star Wars: Episodes III and IV, the story unfolds during a dark time when the evil Galactic Empire is tightening its grip of power on the galaxy. Imperial forces have occupied a remote planet and are ruining the lives of its people. The motley but clever crew of the starship Ghost — cowboy Jedi Kanan, ace pilot Hera, street-smart teenager Ezra, the “muscle” Zeb, warrior firebrand Sabine, and cantankerous old astromech droid Chopper — is among a select few who are brave enough to stand against the Empire. Together, they will face threatening new villains, encounter colorful adversaries, embark on thrilling adventures, and become heroes with the power to ignite a rebellion."
 msgstr "עלילת הסדרה מתרחשת בין האירועים שהתחוללו בפרקים 3 ו-4 של "מלחמת הכוכבים", בימים החשוכים שבהם האימפריה הגלקטית הידקה את אחיזתה בגלקסיה. כוחות האימפריה כבשו כוכב מרוחק וכעת הם ממררים את חיי תושביו. מנגד, הצוות של ספינת החלל "Ghost" הוא מהמעטים והאמיצים שמוכנים לצאת נגד האימפריה ולהילחם על עתידם."
 
 msgctxt "#104900
-msgid "The Land of Chima is a pristine land filled with tribes consisting of various anthropomorphic animals ranging from the Lions, Crocodiles, Eagles, Gorillas, Wolves, Ravens, Rhinos, Bears, Beavers, Scorpions, Spiders, Bats, Saber-Tooth Tigers, Mammoths, Vultures, Phoenixes, Tigers, Leopards, Ice Bears, and other animals."
+msgid "The magical world of CHIMA - a land ruled by animals that walk, talk, drive vehicles, use machinery and live in castles - was once a pristine, natural paradise but has now become a battle ground where friends have become worst enemies."
 msgstr "צ'ימה בה זורמים מים "טהורים" ובה חיים שבטים בעלי חיים שונים המתנהגים באורח אנושי: אריות, גורילות, עיטים, בונים, קרנפים, דובים, תנינים, זאבים, עורבים, עקרבים, עטלפים, עכבישים, טיגריסים, נשרים, ממותות, וציפורי הפניקס."
 
 msgctxt "#104910
-msgid "Ollie the ox- Ollie is the owner of the Funny Farm and isn't exactly the greenest grass on the farm. Although he means well, he sometimes makes situations worse than they usually are, but this is usually rare."
+msgid "The plot follows the adventures of Ollie the Ox as he run The Funny Farm, containing possibly every creature known, with his best friend Jack the Turtle whilst narrated by a sarcastic Toucan."
 msgstr "עלילת הסדרה עוקבת אחר הרפתקאותיו של החקלאי מוש השור בחוותו אשר מכילה חיות רבות ושונות, יחד עם חברו הטוב, צבי הצב וכלבו רקס."
 
 msgctxt "#104920
@@ -5017,11 +5017,11 @@ msgid "Bananaman is a fictional character appearing in British comic books. Bana
 msgstr "Bananaman is a fictional character appearing in British comic books. Bananaman is a parody of traditional superheroes, being portrayed as a schoolboy who is transformed into a muscled, caped figure when he eats a banana."
 
 msgctxt "#104980
-msgid "Cardcaptor Sakura takes place in the fictional Japanese city of Tomoeda, which is somewhere near Tokyo. Ten-year-old Sakura Kinomoto accidentally releases a set of magical cards known as Clow Cards from a book in her basement created and named after the sorcerer Clow Reed. Each card has its own unique ability and can assume an alternate form when activated. The guardian of the cards, Cerberus, emerges from the book and chooses Sakura to retrieve the missing cards. As she finds each card, she battles its magical personification and defeats it by sealing it away. Cerberus acts as her guide, while her best friend and second cousin, Tomoyo Daidouji films her exploits and provides her with battle costumes. Sakura's older brother Toya Kinomoto watches over her, while pretending that he is unaware of what is going on."
+msgid "Sakura Kinomoto is appointed Card Captor by the Guardian of the Seal, Kerberos, when she accidentally opens the magical book of Clow Cards and scatters them to the four winds. To protect the world from disaster she must capture all of the Clow Cards with the help of her friend Tomoyo and Kerberos."
 msgstr "סאקורה קינומוטו (ביפנית: פריחת הדובדבן) היא ילדה יפנית רגילה הלומדת בכיתה ד'. יום אחד נכנסה סאקורה לספריה של אביה, שם מצאה את ספר קלפי הקלאו. בתוך הספר היא מגלה ערימת קלפים, כאשר סאקורה מרימה את הקלף העליון בערימה, קלף הרוח, וקוראת את שמו, כל שאר הקלפים עפים ומתפזרים בכל האזור. יצור בשם קרברוס שנראה כמו דובון קטן עם כנפיים יוצא מכריכת הספר ומספר לה שעליה למצוא את כל הקלפים שעפו וללכוד אותם בטרם יפול אסון על העולם, כך סאקורה הפכה רשמית ל"לוכדת קלפי הקלאו"."
 
 msgctxt "#104990
-msgid "Grimm's Fairy Tale Classics (グリム名作劇場 Gurimu Meisaku Gekijō?) is a Japanese anime anthology series by Nippon Animation. The episodes are adaptations of a variety of folk and fairy tales, and not limited to Grimm's Fairy Tales."
+msgid "Known as "Grimm's Fairy Tale Classics" in the United States, "Gurimu Meisaku Gekijou" and "Shin Gurimu Meisaku Gekijou" in Japan (for the first and second seasons respectively), and "Grimm Masterpiece Theatre" elsewhere; this series consisted of Japanese interpretations of old fairy tales, from the Brothers Grimm and from others. It premiered in Japan in 1987, but was introduced to U.S. audiences in 1989 on Nickelodeon's Storytime Hour, lasting for a total run of 47 episodes."
 msgstr "אגדות האחים גרים (ביפנית: グリム名作劇場, באנגלית: Grimm Masterpiece Theatre) היא סדרת אנימה יפנית בת 24 פרקים שהופקה לטלוויזיה בשנת 1987 בהשראת מעשיות האחים גרים."
 
 
@@ -5485,8 +5485,9 @@ msgid ""
 msgstr ""
 
 msgctxt "#106150
-msgid "The show centers on a curious polar bear named Bernard, whose bumbling slapstick antics typically result in the bear being knocked unconscious or being severely injured by the end of an episode. Bernard doesn't speak, but he does communicate through guttural sounds."
-msgstr "The show centers on a curious polar bear named Bernard, whose bumbling slapstick antics typically result in the bear being knocked unconscious or being severely injured by the end of an episode. Bernard doesn't speak, but he does communicate through guttural sounds."
+msgid "Enjoy the hilarious adventures and misadventures of Bernard, a curious and comic polar bear that travels the world learning about us. Bernard transforms something as simple as taking a picture, facing a rainstorm or playing golf into a funny and difficult challenge."
+msgstr "Enjoy the hilarious adventures and misadventures of Bernard, a curious and comic polar bear that travels the world learning about us. Bernard transforms something as simple as taking a picture, facing a rainstorm or playing golf into a funny and difficult challenge."
+
 msgctxt "#106160
 msgid ""
 msgstr ""
@@ -5516,7 +5517,7 @@ msgid ""
 msgstr ""
 
 msgctxt "#106230
-msgid "The Care Bears are a group of multi-colored bear characters created by American Greetings Corporation, LLC in 1981, through its Those Characters From Cleveland research and development division, for use on greeting cards."
+msgid "The Care Bears keep watch over the earth to keep bad feelings at bay. Whenever a kid is feeling down, they are there to help bring a smile to the child's face. They live in a city in the sky, named Care-A-Lot. They hold meetings in the Hall of Caring to discuss important matters. Their cousins live in the Forest of Feelings. The Care Bear Cousins' leader is Braveheart Lion. Each bear and cousin has a special power, related to the symbol on its tummy. When they unite, they can use the Care Bear Stare to beam good energy at their enemies, such as No Heart, Professor Cold Heart, Shrieky, and Beastly. The bears have two modes of transportation, Cloudmobiles and Rainbow Rollers, which they fly down to earth on whenever there is trouble. They are alerted to problems by the Care-O-Meter. The Care Bears Family combined old episodes of Care Bears with new ones."
 msgstr "מספר נבלים שונים מנסים בסדרות ובסרטים לסכל את משימותיהם של הדובונים כי מטרתם היא למצוא את מחבוא ארץ אכפתיה ולקחת את סמלי הבטן של הדובונים. במהלך העונה הראשונה של הסדרה המקורית משנות השמונים היה זה פרופסור לב קר הרשע ועוזרו לב שפל ובעונה השנייה של אותה הסדרה הנבל הראשי היה "חסר לב" ועוזריו ספחת וצרחת."
 
 msgctxt "#106240

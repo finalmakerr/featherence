@@ -11,6 +11,7 @@ WIP - WORK IN PROGRESS
 - Added Video player information on fullscreen pause.
 - Minor update video screen pause image.
 - Minor update OSD buttons textures.
+- Added option to download Weather icons and backgrounds pack.
 
 ------------------------
 Featherence v0.7.8 (30-Oct-17)

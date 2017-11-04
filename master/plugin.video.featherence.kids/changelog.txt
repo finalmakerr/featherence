@@ -15,6 +15,8 @@ Featherence Kids v0.2.23 (xx-xx-17)
 ------------------------
 - Added TV Mode support to YouTube search sources.
 - Major performance update result in a very fast addon!
+- Minor update of links.
+- Minor update of posters, fanarts and plots in TV Shows category.
 
 ------------------------
 Featherence Kids v0.2.22 (26-Oct-17)

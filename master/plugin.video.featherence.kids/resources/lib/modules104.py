@@ -783,8 +783,8 @@ def CATEGORIES104F(General_LanguageL, background, background2): #הנוקמים:
 
 def CATEGORIES104G(General_LanguageL, background, background2): #מלחמת הכוכבים: המורדים
 	'''סדרות'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/283468-12.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/283468-13.jpg'
 	list = []
 	
 	'''עברית'''
@@ -941,10 +941,10 @@ def CATEGORIES104G(General_LanguageL, background, background2): #מלחמת הכ
 
 	addDir(addonString(10489).encode('utf-8'),list,17,thumb,addonString(104890).encode('utf-8'),'1',0,fanart)
 
-def CATEGORIES104H(General_LanguageL, background, background2): #צ'ימה
+def CATEGORIES104H(General_LanguageL, background, background2): #LEGO Legends of Chima
 	'''סדרות'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/265393-2.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/265393-1.jpg'
 	list = []
 	
 	'''עברית'''
@@ -958,7 +958,6 @@ def CATEGORIES104H(General_LanguageL, background, background2): #צ'ימה
 		list.append('&youtube_pl=')
 		list.append('&youtube_pl=')
 		list.append('&youtube_pl=PLLOeGExLxyzM1KZs9gemhepkgxARklymE') #S1+
-		
 		list.append('&youtube_id=Jc_ciq8MMZU') #S2E2
 		list.append('&youtube_id=OKs-XW3awNo') #S3E14
 		
@@ -1075,7 +1074,6 @@ def CATEGORIES104H(General_LanguageL, background, background2): #צ'ימה
 		list.append('&youtube_pl=PL8MyJbCU5Mi6muRS3QWGFdS9nOQKeKH8S') #S1
 		list.append('&youtube_pl=PL8MyJbCU5Mi4RA8hcBp6MjVE4xK6ixVid') #S2
 		list.append('&youtube_pl=PLv36p3yPlGlzJc138BRYRwtChMPDkYNVx') #S
-		
 	
 	'''קוריאנית'''
 	if 'Korean' in General_LanguageL:
@@ -1102,8 +1100,6 @@ def CATEGORIES104H(General_LanguageL, background, background2): #צ'ימה
 		list.append('&youtube_pl=PLAevrj2yKZu9PbEfkYpnpeoSBvilnEHFA')
 		list.append('&youtube_pl=PLTdC8moEK00K0AYc1AU_0swh0yuCOHhjo')
 		list.append('&youtube_pl=PLTdC8moEK00K0AYc1AU_0swh0yuCOHhjo')
-		
-		
 	
 	'''שוודית'''
 	if 'Swedish' in General_LanguageL:
@@ -1113,12 +1109,12 @@ def CATEGORIES104H(General_LanguageL, background, background2): #צ'ימה
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10490).encode('utf-8'),list,17,'http://www.watchcartoononline.com/thumbs/Lego-Legends-of-Chima-Season-3-Episode-14-Wings-of-Fire.jpg',addonString(104900).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://www.wallpapersforkids.com/wallpapers/1920x1080/lego_legends_of_chima_1.jpg"))
+	addDir(addonString(10490).encode('utf-8'),list,17,thumb,addonString(104900).encode('utf-8'),'1',0,fanart)
 	
 def CATEGORIES104I(General_LanguageL, background, background2): #דובוני אכפת לי
 	'''סדרות'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/76079-3.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/76079-6.jpg'
 	list = []
 	
 	'''עברית'''
@@ -1278,19 +1274,21 @@ def CATEGORIES104I(General_LanguageL, background, background2): #דובוני א
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10623).encode('utf-8'),list,17,'http://vignette4.wikia.nocookie.net/carebears/images/e/e5/Take_Care_Bear.jpg/revision/latest?cb=20120405172827',addonString(106230).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://7-themes.com/data_images/out/67/7001447-care-bears.jpg"))
+	addDir(addonString(10623).encode('utf-8'),list,17,thumb,addonString(106230).encode('utf-8'),'1',0,fanart)
 
 def CATEGORIES104J(General_LanguageL, background, background2): #נילס הולגרסון
 	'''סדרות'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/90821-5.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/90821-3.jpg'
 	list = []
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
+		thumb = 'https://www.thetvdb.com/banners/posters/90821-2.jpg'
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f713.jpg&mode=5&name=%d7%a2%d7%95%d7%a0%d7%94%201&season_id=1&series_id=713&series_name=%d7%a0%d7%99%d7%9c%d7%a1-%d7%94%d7%95%d7%9c%d7%92%d7%a8%d7%a1%d7%95%d7%9f-%d7%9e%d7%93%d7%95%d7%91%d7%91-the-wonderful-adventures-of-nils%2fseason%2f1&summary=%d7%a0%d7%99%d7%9c%d7%a1%20%d7%94%d7%95%d7%90%20%d7%99%d7%9c%d7%93%20%d7%a9%d7%95%d7%91%d7%91%20%d7%91%d7%9f%2014%20%d7%90%d7%a9%d7%a8%20%d7%97%d7%99%20%d7%91%d7%97%d7%95%d7%95%d7%94%20%d7%91%d7%a9%d7%91%d7%93%d7%99%d7%94.%20%d7%94%d7%95%d7%a8%d7%99%d7%95%20%d7%a9%d7%9c%20%d7%a0%d7%99%d7%9c%d7%a1%20%d7%94%d7%9d%20%d7%a2%d7%a0%d7%99%d7%99%d7%9d.%20%d7%95%d7%94%d7%95%d7%90%20%d7%a2%d7%a6%d7%9c%d7%9f%20%d7%95%d7%97%d7%a1%d7%a8%20%d7%9b%d7%9c%20%d7%94%d7%aa%d7%97%d7%a9%d7%91%d7%95%d7%aa%20%d7%91%d7%96%d7%95%d7%9c%d7%aa.%20%d7%a0%d7%99%d7%9c%d7%a1%20%d7%94%d7%99%d7%94%20%d7%a0%d7%95%d7%94%d7%92%20%d7%9c%d7%94%d7%aa%d7%90%d7%9b%d7%96%d7%a8%20%d7%9c%d7%97%d7%99%d7%95%d7%aa%20%d7%91%d7%97%d7%95%d7%95%d7%94%20%d7%91%d7%96%d7%9e%d7%a0%d7%95%20%d7%94%d7%a4%d7%a0%d7%95%d7%99%2c%20%d7%a2%d7%93%20%d7%a9%d7%99%d7%95%d7%9d%20%d7%90%d7%97%d7%93%20%d7%94%d7%95%d7%90%20%d7%9c%d7%95%d7%9b%d7%93%20%d7%a9%d7%93%d7%95%d7%9f.%20%d7%94%d7%a9%d7%93%d7%95%d7%9f%20%d7%94%d7%9b%d7%95%d7%a2%d7%a1%20%d7%9e%d7%97%d7%9c%d7%99%d7%98%20%d7%9c%d7%94%d7%a2%d7%a0%d7%99%d7%a9%20%d7%90%d7%aa%20%d7%a0%d7%99%d7%9c%d7%a1%20%d7%a2%d7%9c%20%d7%9e%d7%a2%d7%9c%d7%9c%d7%99%d7%95%2c%20%d7%95%d7%9c%d7%a2%d7%9c%20%d7%9b%d7%9f%20%d7%94%d7%95%d7%90%20%d7%9e%d7%9b%d7%95%d7%95%d7%a5%20%d7%90%d7%95%d7%aa%d7%95%20%d7%9c%d7%92%d7%95%d7%93%d7%9c%20%d7%a9%d7%9c%20%d7%a0%d7%a0%d7%a1.%20%d7%91%d7%aa%d7%95%d7%a8%20%d7%a0%d7%a0%d7%a1%20%d7%a0%d7%99%d7%9c%d7%a1%20%d7%9e%d7%a1%d7%95%d7%92%d7%9c%20%d7%9b%d7%a2%d7%aa%20%d7%9c%d7%93%d7%91%d7%a8%20%d7%95%d7%9c%d7%94%d7%91%d7%99%d7%9f%20%d7%90%d7%aa%20%d7%91%d7%a2%d7%9c%d7%99%20%d7%94%d7%97%d7%99%d7%99%d7%9d.%20%d7%a0%d7%99%d7%9c%d7%a1%20%d7%95%d7%97%d7%99%d7%99%d7%aa%20%d7%94%d7%9e%d7%97%d7%9e%d7%93%20%d7%a9%d7%9c%d7%95%20%d7%90%d7%95%d7%92%d7%99%20%d7%94%d7%90%d7%95%d7%92%d7%a8%20%d7%9e%d7%a6%d7%98%d7%a8%d7%a4%d7%99%d7%9d%20%d7%9c%d7%90%d7%95%d7%95%d7%96%20%d7%94%d7%91%d7%99%d7%aa%20%d7%9e%d7%95%d7%9c%d7%99%20%d7%91%d7%9e%d7%a1%d7%a2%d7%95%20%d7%a2%d7%9d%20%d7%90%d7%95%d7%95%d7%96%d7%99%20%d7%94%d7%91%d7%a8%2c%20%d7%94%d7%9e%d7%95%d7%a0%d7%94%d7%92%d7%99%d7%9d%20%d7%a2%d7%9c%20%d7%99%d7%93%d7%99%20%d7%94%d7%9e%d7%a4%d7%a7%d7%93%d7%aa%20%d7%90%d7%a7%d7%94%2c%20%d7%9c%d7%90%d7%96%d7%95%d7%a8%20%d7%94%d7%a6%d7%a4%d7%95%d7%a0%d7%99%20%d7%a9%d7%9c%20%d7%a9%d7%91%d7%93%d7%99%d7%94%2c%20%d7%a9%d7%9d%20%d7%94%d7%a9%d7%9e%d7%a9%20%d7%90%d7%99%d7%a0%d7%94%20%d7%a9%d7%95%d7%a7%d7%a2%d7%aa.%20%d7%91%d7%99%d7%97%d7%93%20%d7%94%d7%9d%20%d7%98%d7%a1%d7%99%d7%9d%20%d7%9c%d7%90%d7%95%d7%a8%d7%9a%20%d7%a9%d7%91%d7%93%d7%99%d7%94%20%d7%9b%d7%90%d7%a9%d7%a8%20%d7%a0%d7%99%d7%9c%d7%a1%20%d7%9e%d7%a7%d7%95%d7%95%d7%94%20%d7%9b%d7%99%20%d7%99%d7%a6%d7%9c%d7%99%d7%97%20%d7%9c%d7%9e%d7%a6%d7%95%d7%90%20%d7%90%d7%aa%20%d7%94%d7%93%d7%a8%d7%9a%20%d7%9c%d7%91%d7%98%d7%9c%20%d7%90%d7%aa%20%d7%94%d7%9b%d7%99%d7%a9%d7%95%d7%a3%20%d7%95%d7%9c%d7%97%d7%96%d7%95%d7%a8%20%d7%9c%d7%94%d7%99%d7%95%d7%aa%20%d7%92%d7%93%d7%95%d7%9c%20%d7%a9%d7%95%d7%91.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f713%2f%d7%a0%d7%99%d7%9c%d7%a1-%d7%94%d7%95%d7%9c%d7%92%d7%a8%d7%a1%d7%95%d7%9f-%d7%9e%d7%93%d7%95%d7%91%d7%91-the-wonderful-adventures-of-nils%2fseason%2f1')
 		list.append('&youtube_pl=PL_8KXLhQVQMKVZInMgWpGe9osYlO5lcBa') #Hebrew
 		list.append('&youtube_pl=PLwXEsK85wc0NYyg8whoBrNpRznTV7r1vP') #Hebrew
+		
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=')
@@ -1435,12 +1433,12 @@ def CATEGORIES104J(General_LanguageL, background, background2): #נילס הול
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10468).encode('utf-8'),list,17,'http://www.sratim.co.il/contents/series/images/IL/2072.jpg',addonString(104680).encode('utf-8'),'1',0,fanart)
+	addDir(addonString(10468).encode('utf-8'),list,17,thumb,addonString(104680).encode('utf-8'),'1',0,fanart)
 
 def CATEGORIES104K(General_LanguageL, background, background2): #סיפורי מוש
 	'''סדרות'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/82737-4.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/82737-2.jpg'
 	list = []
 	
 	'''עברית'''
@@ -1587,12 +1585,12 @@ def CATEGORIES104K(General_LanguageL, background, background2): #סיפורי מ
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10491).encode('utf-8'),list,17,'http://www.m4e.de/media/2014/09/SG_9a_4-530x357.jpg',addonString(104910).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://datas.series-tv-shows.com/pic/tvdb/12063/fanart.jpg"))
+	addDir(addonString(10491).encode('utf-8'),list,17,thumb,addonString(104910).encode('utf-8'),'1',0,fanart)
 
 def CATEGORIES104L(General_LanguageL, background, background2): #אגדות האחים גרים
 	'''סדרות'''
-	thumb = 'https://i.ytimg.com/vi/k9LhldX2qNM/hqdefault.jpg'
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/111131-3.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/111131-3.jpg'
 	list = []
 	
 	'''עברית'''
@@ -1751,8 +1749,8 @@ def CATEGORIES104L(General_LanguageL, background, background2): #אגדות הא
 
 def CATEGORIES104M(General_LanguageL, background, background2): #סאקורה לוכדת הקלפים
 	'''סדרות'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/70668-13.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/70668-2.jpg'
 	list = []
 	
 	'''עברית'''
@@ -1900,12 +1898,12 @@ def CATEGORIES104M(General_LanguageL, background, background2): #סאקורה ל
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10498).encode('utf-8'),list,17,"https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Cardcaptor_Sakura_vol1_cover.jpg/230px-Cardcaptor_Sakura_vol1_cover.jpg",addonString(104980).encode('utf-8'),'1',0,fanart)
+	addDir(addonString(10498).encode('utf-8'),list,17,thumb,addonString(104980).encode('utf-8'),'1',0,fanart)
 
 def CATEGORIES104N(General_LanguageL, background, background2): #נינג'גו - מאסטר הספינג'יצו
 	'''סדרות'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/253323-4.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/253323-12.jpg'
 	list = []
 	
 	'''עברית'''
@@ -2071,8 +2069,8 @@ def CATEGORIES104N(General_LanguageL, background, background2): #נינג'גו -
 
 def CATEGORIES104O(General_LanguageL, background, background2): #אוטובוס הקסמים
 	'''סדרות'''
-	thumb = 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/The_Magic_School_Bus_title_credit.jpg/220px-The_Magic_School_Bus_title_credit.jpg'
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/71416-8.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/71416-2.jpg'
 	list = []
 	
 	'''עברית'''
@@ -2226,12 +2224,12 @@ def CATEGORIES104O(General_LanguageL, background, background2): #אוטובוס 
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 	
-	addDir(addonString(10403).encode('utf-8'),list,17,thumb,addonString(104030).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://ecx.images-amazon.com/images/I/71HZ-fXNyYL._SL1094_.jpg", default=background2))
+	addDir(addonString(10403).encode('utf-8'),list,17,thumb,addonString(104030).encode('utf-8'),'1',0,fanart)
 
-def CATEGORIES104P(General_LanguageL, background, background2): #דיגימון [אוסף]
+def CATEGORIES104P(General_LanguageL, background, background2): #Digimon: Digital Monsters / דיגימון: מפלצות דיגיטליות
 	'''סדרות'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/72241-3.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/72241-8.jpg'
 	list = []
 	
 	'''עברית'''
@@ -2386,12 +2384,12 @@ def CATEGORIES104P(General_LanguageL, background, background2): #דיגימון 
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 
-	addDir(addonString(10416).encode('utf-8') + space + '[Collection]',list,17,'http://forumsgallery.tapuz.co.il/ForumsGallery/galleryimages/medium/453gallery_13767.gif',addonString(104160).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://static.zerochan.net/Digimon.full.1707809.jpg", default=background2))
+	addDir(addonString(10416).encode('utf-8'),list,17,thumb,addonString(104160).encode('utf-8'),'1',0,fanart)
 
 def CATEGORIES104Q(General_LanguageL, background, background2): #סיילור מון
 	'''סדרות'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/275039-7.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/275039-1.jpg'
 	list = []
 	
 	'''עברית'''
@@ -3337,10 +3335,319 @@ def CATEGORIES104V(General_LanguageL, background, background2): #Dragon Ball Kai
 
 	addDir(addonString(10523).encode('utf-8'),list,17,thumb,addonString(105230).encode('utf-8'),'1',0,fanart)
 
-def CATEGORIES104W(General_LanguageL, background, background2): #
+def CATEGORIES104W(General_LanguageL, background, background2): #Digimon Tamers
+
 	'''סדרות'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://www.thetvdb.com/banners/posters/277575-1.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/277575-3.jpg'
+	list = []
+	
+	'''עברית'''
+	if 'Hebrew' in General_LanguageL:
+		list.append('&youtube_pl=')
+	'''אנגלית'''
+	if 'English' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	'''אוזבקית'''
+	if 'Uzbek' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''איטלקית'''
+	if 'Italian' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	
+	'''אוקראינית'''
+	if 'Ukrainian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''אינדונזית'''
+	if 'Indonesian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''אירית'''
+	if 'Irish' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''בולגרית'''
+	if 'Bulgarian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''גאורגית'''
+	if 'Georgian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''גרמנית'''
+	if 'German' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	
+	'''דנית'''
+	if 'Dansk' in General_LanguageL:
+		list.append('&youtube_pl=')
+		
+	'''הודית'''
+	if 'Hindi' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''הולנדית'''
+	if 'Dutch' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''הונגרית'''
+	if 'Hungarian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''טורקית'''
+	if 'Turkish' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	
+	'''יוונית'''
+	if 'Greek' in General_LanguageL:
+		list.append('&youtube_pl=')
+		
+	'''יפנית'''
+	if 'Japanese' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''סינית'''
+	if 'Chinese' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''סלובקית'''
+	if 'Slovak' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''ספרדית'''
+	if 'Spanish' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''סרבית'''
+	if 'Serbian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''פולנית'''
+	if 'Polish' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''פורטוגזית'''
+	if 'Portuguese' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''פינית'''
+	if 'Finnish' in General_LanguageL:
+		list.append('&youtube_pl=')
+
+	'''ערבית'''
+	if 'Arabic' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''צ'כית'''
+	if 'Czech' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_id=')
+		
+	'''צרפתית'''
+	if 'French' in General_LanguageL:
+		list.append('&youtube_id=')
+	
+	'''קוריאנית'''
+	if 'Korean' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''קזחית'''
+	if 'Kazakh' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''קטלאנית'''
+	if 'Catalan' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''קריאולית האיטית'''
+	if 'Haitian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''רומנית'''
+	if 'Romanian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''רוסית'''
+	if 'Russian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''שוודית'''
+	if 'Swedish' in General_LanguageL:
+		list.append('&youtube_pl=')
+		
+	'''תאילנדית'''
+	if 'Thai' in General_LanguageL:
+		list.append('&youtube_pl=')
+
+	addDir(addonString(10421).encode('utf-8'),list,17,thumb,addonString(104210).encode('utf-8'),'1',0,fanart)
+
+def CATEGORIES104Y(General_LanguageL, background, background2): #Digimon Fusion
+
+	'''סדרות'''
+	thumb = 'https://www.thetvdb.com/banners/posters/272858-1.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/272858-2.jpg'
+	list = []
+	
+	'''עברית'''
+	if 'Hebrew' in General_LanguageL:
+		list.append('&youtube_pl=')
+	'''אנגלית'''
+	if 'English' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	'''אוזבקית'''
+	if 'Uzbek' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''איטלקית'''
+	if 'Italian' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	
+	'''אוקראינית'''
+	if 'Ukrainian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''אינדונזית'''
+	if 'Indonesian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''אירית'''
+	if 'Irish' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''בולגרית'''
+	if 'Bulgarian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''גאורגית'''
+	if 'Georgian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''גרמנית'''
+	if 'German' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	
+	'''דנית'''
+	if 'Dansk' in General_LanguageL:
+		list.append('&youtube_pl=')
+		
+	'''הודית'''
+	if 'Hindi' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''הולנדית'''
+	if 'Dutch' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''הונגרית'''
+	if 'Hungarian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''טורקית'''
+	if 'Turkish' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	
+	'''יוונית'''
+	if 'Greek' in General_LanguageL:
+		list.append('&youtube_pl=')
+		
+	'''יפנית'''
+	if 'Japanese' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''סינית'''
+	if 'Chinese' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''סלובקית'''
+	if 'Slovak' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''ספרדית'''
+	if 'Spanish' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''סרבית'''
+	if 'Serbian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''פולנית'''
+	if 'Polish' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''פורטוגזית'''
+	if 'Portuguese' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''פינית'''
+	if 'Finnish' in General_LanguageL:
+		list.append('&youtube_pl=')
+
+	'''ערבית'''
+	if 'Arabic' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''צ'כית'''
+	if 'Czech' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_id=')
+		
+	'''צרפתית'''
+	if 'French' in General_LanguageL:
+		list.append('&youtube_id=')
+	
+	'''קוריאנית'''
+	if 'Korean' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''קזחית'''
+	if 'Kazakh' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''קטלאנית'''
+	if 'Catalan' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''קריאולית האיטית'''
+	if 'Haitian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''רומנית'''
+	if 'Romanian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''רוסית'''
+	if 'Russian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''שוודית'''
+	if 'Swedish' in General_LanguageL:
+		list.append('&youtube_pl=')
+		
+	'''תאילנדית'''
+	if 'Thai' in General_LanguageL:
+		list.append('&youtube_pl=')
+
+	addDir(addonString(10333).encode('utf-8'),list,17,thumb,addonString(103330).encode('utf-8'),'1',0,fanart)
+
+def CATEGORIES104Z(General_LanguageL, background, background2): #Digimon Adventure Tri
+
+	'''סדרות'''
+	thumb = 'https://www.thetvdb.com/banners/posters/290290-11.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/290290-3.jpg'
 	list = []
 	
 	'''עברית'''
@@ -3489,3 +3796,311 @@ def CATEGORIES104W(General_LanguageL, background, background2): #
 		list.append('&youtube_pl=')
 
 	addDir(addonString(104980).encode('utf-8'),list,17,thumb,addonString(104980).encode('utf-8'),'1',0,fanart)
+
+def CATEGORIES104AA(General_LanguageL, background, background2): #Digimon Xros Wars
+
+	'''סדרות'''
+	thumb = 'https://www.thetvdb.com/banners/posters/202241-2.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/202241-2.jpg'
+	list = []
+	
+	'''עברית'''
+	if 'Hebrew' in General_LanguageL:
+		list.append('&youtube_pl=')
+	'''אנגלית'''
+	if 'English' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	'''אוזבקית'''
+	if 'Uzbek' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''איטלקית'''
+	if 'Italian' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	
+	'''אוקראינית'''
+	if 'Ukrainian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''אינדונזית'''
+	if 'Indonesian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''אירית'''
+	if 'Irish' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''בולגרית'''
+	if 'Bulgarian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''גאורגית'''
+	if 'Georgian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''גרמנית'''
+	if 'German' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	
+	'''דנית'''
+	if 'Dansk' in General_LanguageL:
+		list.append('&youtube_pl=')
+		
+	'''הודית'''
+	if 'Hindi' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''הולנדית'''
+	if 'Dutch' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''הונגרית'''
+	if 'Hungarian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''טורקית'''
+	if 'Turkish' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	
+	'''יוונית'''
+	if 'Greek' in General_LanguageL:
+		list.append('&youtube_pl=')
+		
+	'''יפנית'''
+	if 'Japanese' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''סינית'''
+	if 'Chinese' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''סלובקית'''
+	if 'Slovak' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''ספרדית'''
+	if 'Spanish' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''סרבית'''
+	if 'Serbian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''פולנית'''
+	if 'Polish' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''פורטוגזית'''
+	if 'Portuguese' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''פינית'''
+	if 'Finnish' in General_LanguageL:
+		list.append('&youtube_pl=')
+
+	'''ערבית'''
+	if 'Arabic' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''צ'כית'''
+	if 'Czech' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_id=')
+		
+	'''צרפתית'''
+	if 'French' in General_LanguageL:
+		list.append('&youtube_id=')
+	
+	'''קוריאנית'''
+	if 'Korean' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''קזחית'''
+	if 'Kazakh' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''קטלאנית'''
+	if 'Catalan' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''קריאולית האיטית'''
+	if 'Haitian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''רומנית'''
+	if 'Romanian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''רוסית'''
+	if 'Russian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''שוודית'''
+	if 'Swedish' in General_LanguageL:
+		list.append('&youtube_pl=')
+		
+	'''תאילנדית'''
+	if 'Thai' in General_LanguageL:
+		list.append('&youtube_pl=')
+
+	addDir(addonString(10331).encode('utf-8'),list,17,thumb,addonString(103310).encode('utf-8'),'1',0,fanart)
+
+def CATEGORIES104AB(General_LanguageL, background, background2): #Digimon Universe: Appli Monsters
+
+	'''סדרות'''
+	thumb = 'https://www.thetvdb.com/banners/posters/317566-3.jpg'
+	fanart = 'https://www.thetvdb.com/banners/fanart/original/317566-1.jpg'
+	list = []
+	
+	'''עברית'''
+	if 'Hebrew' in General_LanguageL:
+		list.append('&youtube_pl=')
+	'''אנגלית'''
+	if 'English' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	'''אוזבקית'''
+	if 'Uzbek' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''איטלקית'''
+	if 'Italian' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	
+	'''אוקראינית'''
+	if 'Ukrainian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''אינדונזית'''
+	if 'Indonesian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''אירית'''
+	if 'Irish' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''בולגרית'''
+	if 'Bulgarian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''גאורגית'''
+	if 'Georgian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''גרמנית'''
+	if 'German' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	
+	'''דנית'''
+	if 'Dansk' in General_LanguageL:
+		list.append('&youtube_pl=')
+		
+	'''הודית'''
+	if 'Hindi' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''הולנדית'''
+	if 'Dutch' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''הונגרית'''
+	if 'Hungarian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''טורקית'''
+	if 'Turkish' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+		list.append('&youtube_pl=')
+	
+	'''יוונית'''
+	if 'Greek' in General_LanguageL:
+		list.append('&youtube_pl=')
+		
+	'''יפנית'''
+	if 'Japanese' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''סינית'''
+	if 'Chinese' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''סלובקית'''
+	if 'Slovak' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''ספרדית'''
+	if 'Spanish' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''סרבית'''
+	if 'Serbian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''פולנית'''
+	if 'Polish' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''פורטוגזית'''
+	if 'Portuguese' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''פינית'''
+	if 'Finnish' in General_LanguageL:
+		list.append('&youtube_pl=')
+
+	'''ערבית'''
+	if 'Arabic' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''צ'כית'''
+	if 'Czech' in General_LanguageL:
+		list.append('&youtube_pl=')
+		list.append('&youtube_id=')
+		
+	'''צרפתית'''
+	if 'French' in General_LanguageL:
+		list.append('&youtube_id=')
+	
+	'''קוריאנית'''
+	if 'Korean' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''קזחית'''
+	if 'Kazakh' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''קטלאנית'''
+	if 'Catalan' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''קריאולית האיטית'''
+	if 'Haitian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''רומנית'''
+	if 'Romanian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''רוסית'''
+	if 'Russian' in General_LanguageL:
+		list.append('&youtube_pl=')
+	
+	'''שוודית'''
+	if 'Swedish' in General_LanguageL:
+		list.append('&youtube_pl=')
+		
+	'''תאילנדית'''
+	if 'Thai' in General_LanguageL:
+		list.append('&youtube_pl=')
+
+	addDir(addonString(10330).encode('utf-8'),list,17,thumb,addonString(103300).encode('utf-8'),'1',0,fanart)

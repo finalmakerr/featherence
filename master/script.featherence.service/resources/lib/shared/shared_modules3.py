@@ -15,9 +15,10 @@ Import the module and input the addDir in your addon module.py file.
 def addDir(name, url, mode, iconimage, desc, num, viewtype, fanart=""):
 	url2 = url ; printpoint = "" ; returned = "" ; extra = "" ; name2 = "" ; iconimage2 = "" ; desc2 = "" ; dura = "" ; filter=False
 	
-	name = str(to_utf8(name))
+	name = clean_addonString(name)
 	desc = str(to_utf8(desc))
 	fanart = str(to_utf8(fanart))
+	
 	
 	if '$LOCALIZE' in name or '$ADDON' in name: name = xbmc.getInfoLabel(name)
 	if num == None: num = ""
@@ -197,6 +198,25 @@ def get_params():
 					param[splitparams[0]]=splitparams[1]
 							
 	return param
+
+def clean_addonString(x):
+	printpoint = "" ; x_ = x ; y = "" ; y_ = "" ; z = ""
+	if 'addonString(' in x:
+		y = find_string(x, "addonString(", ')')
+		y_ = y.replace('addonString(',"") ; y_ = y_.replace(')',"")
+		try:
+			y_ = int(y_)
+			z = addonString(y_).encode('utf-8')
+			x_ = x.replace(y,z,1)
+		except: pass
+		
+		
+	text = 'x' + space2 + str(x) + newline + \
+	"y" + space2 + str(y) + newline + \
+	'y_' + space2 + str(y_) + newline + \
+	'z' + space2 + str(z)
+	printlog(title='clean_addonString', printpoint=printpoint, text=text, level=0, option="")
+	return to_utf8(x_)
 	
 def clean_commonsearch(x, match=False):
 	'''Used when searching in YouTube'''

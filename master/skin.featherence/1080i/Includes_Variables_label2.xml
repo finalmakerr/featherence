@@ -418,8 +418,8 @@
   </variable>
   
   <variable name="222label2">
-    <value condition="!Skin.HasSetting(HomeFanartHalfScreen)">$LOCALIZE[107]</value>
-	<value condition="Skin.HasSetting(HomeFanartHalfScreen)">$LOCALIZE[106]</value>
+    <value condition="!Skin.HasSetting(HomeFanartHalfScreen)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(HomeFanartHalfScreen)">$LOCALIZE[107]</value>
   </variable>
   
   <variable name="223label2">

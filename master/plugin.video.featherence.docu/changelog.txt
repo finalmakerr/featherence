@@ -10,7 +10,7 @@ WIP (WORK IN PROGRESS)--
 - Added Artists Category.
 
 ------------------------
-Featherence Docu v0.1.15 (02-Nov-17)
+Featherence Docu v0.1.15-16 (02-Nov-17)
 ------------------------
 - Added new YouTube API for better performance.
 - Added TV Mode support to YouTube search sources.

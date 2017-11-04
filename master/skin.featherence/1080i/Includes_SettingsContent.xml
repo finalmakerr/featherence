@@ -2325,7 +2325,6 @@
 		<onclick condition="Skin.String(WeatherIcons)">RunScript(script.featherence.service,,?mode=231&amp;value=resource.images.weathericons.$VAR[150label2]&amp;value2=1)</onclick>
 		<onclick condition="!Skin.String(WeatherIcons)">RunScript(script.featherence.service,,?mode=231&amp;value=resource.images.weathericons.flat&amp;value2=1)</onclick>
 		<visible>Container(100).Hasfocus(3)</visible>
-		<visible>Skin.HasSetting(Admin)</visible>
 	  </item>
 	  <item id="151" description="פאנארט - מזג אוויר">
 		<label>$LOCALIZE[20445] - $LOCALIZE[12600]</label>
