@@ -76,6 +76,10 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL2</include>
 		</control>
 		<control type="label" id="6" description="תאור הגדרה">
+		  <font>size30</font>
+		  <height>115</height>
+		  <textcolor>$VAR[TopVideoInformationFontColor]</textcolor>
+		  <wrapmultiline>true</wrapmultiline>
 		  <visible>false</visible>
 		</control>
 	</control>

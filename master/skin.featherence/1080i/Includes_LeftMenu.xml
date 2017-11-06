@@ -55,6 +55,7 @@
 		<include condition="Window.IsVisible(AddonBrowser.xml)">LeftMenuAddonBrowser</include>
 		<include condition="Window.IsVisible(MyPrograms.xml)">LeftMenuMyPrograms</include>
 		<include condition="Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml)">LeftMenuMyPVR</include>
+		<include condition="Window.IsVisible(EventLog.xml)">LeftMenuEventLog</include>
 	  </control>
       
 	  <control type="grouplist" id="9001">
@@ -1168,6 +1169,29 @@
 	<include>openViewSettings9001</include>
 	<include>AutoViewSettingsButton</include>
   </include>
+
+  <include name="LeftMenuEventLog" description="">
+	<include>button4_sortorder</include>
+	<control type="button" id="20" description="Clear button">
+	  <include>SideMenuCommon</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
+	  <label>$LOCALIZE[192]</label>
+	</control>
+	<control type="button" id="21" description="Level button">
+	  <include>SideMenuCommon</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+	  <font>size28</font>
+	  <label></label>
+	</control>
+	<control type="radiobutton" id="22" description="Only show current level radiobutton">
+	  <include>SideMenuCommon</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
+	</control>
+  </include>  
   
   
   <include name="ShowDVDCases">

@@ -2968,8 +2968,11 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 	thumb = 'https://yt3.ggpht.com/-aRd660Gwyzg/AAAAAAAAAAI/AAAAAAAAAAA/_1rP7GM5bvk/s288-c-k-no-mo-rj-c0xffffff/photo.jpg'
 	fanart = 'https://images-na.ssl-images-amazon.com/images/I/71PRm7SiSnL._SL1500_.jpg'
 	list = []
-	
-	list.append('&youtube_ch=babyeinstein') #בייבי איינשטיין
+
+	list.append('&youtube_pl=PLk2f9iGbtyhsJBj1PVTo54k51hfGClZVb') #Arts
+	list.append('&youtube_pl=PLk2f9iGbtyhuwYb9Y4BPGzUiktRUrANZI') #Animals
+	list.append('&youtube_pl=PLk2f9iGbtyhtBkgeCknuMEdaVz65ZAgrE') #Music
+	list.append('&youtube_pl=PLk2f9iGbtyhvc_8g9aTKHofXLaZ8dEo43') #Nature
 	
 	addDir(addonString(10603).encode('utf-8'),list,17,thumb,addonString(106030).encode('utf-8'),'1',0,fanart)
 	

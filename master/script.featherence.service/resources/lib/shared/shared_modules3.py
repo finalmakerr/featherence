@@ -565,6 +565,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 		if '&name_=' in x:
 			name2 = find_string(x, '&name_=', '&')
 			x = x.replace(name2,"",1)
+			x = x.replace(" ","",1)
 			name2 = name2.replace('&name_=',"",1)
 			name2 = name2.replace('&',"")
 			if name2 != "":
@@ -740,7 +741,7 @@ def MultiVideos(addonID, mode, name, url, iconimage, desc, num, viewtype, fanart
 						YoutubeSearch(name, x, desc, num, viewtype)
 						mode = 3
 					elif name2 != "":
-						if addonID == 'plugin.video.featherence.docu': addDir(title_L[0], x, 5, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
+						if addonID == 'plugin.video.featherence.docu' or addonID == 'plugin.video.featherence.extreme': addDir(title_L[0], x, 5, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 						else: addDir(title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 					else: addDir(str(i) + '.' + space + title_L[0], x, 17, thumb_L[0], desc_L[0], num, viewtype, fanart_L[0])
 				
@@ -856,7 +857,8 @@ def MultiVideos_play2(finalurl, pl, playlist, printpoint):
 			elif not dialogbusyW and not dialogprogressW: count += 2
 			else: count += 1
 			
-		if playerhasvideo and not dialogokW: printpoint = printpoint + "3"
+		if playerhasvideo and not dialogokW:
+			printpoint = printpoint + "3"
 		else:
 			dialogokW = xbmc.getCondVisibility('Window.IsVisible(DialogOK.xml)')
 			if dialogokW or count >= 20:
@@ -927,6 +929,10 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		x = x.replace('&videoDuration='+videoDuration+'&',"")
 		#notification(x,videoDuration,'',2000)
 	
+	if '&maxResults=' in x:
+		maxResults = regex_from_to(x, '&maxResults=', '&', excluding=True)
+		x = x.replace('&maxResults='+maxResults+'&',"")
+	
 	if '&relevanceLanguage=' in x:
 		relevanceLanguage = regex_from_to(x, '&relevanceLanguage=', '&', excluding=True)
 		x = x.replace('&relevanceLanguage='+relevanceLanguage+'&',"")
@@ -941,7 +947,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 		videoDefinition = regex_from_to(x, '&videoDefinition=', '&', excluding=True)
 		x = x.replace('&videoDefinition='+videoDefinition+'&',"")
 		#notification(x,videoDefinition,'',2000)
-	elif addonID == 'plugin.video.featherence.docu':
+	elif addonID == 'plugin.video.featherence.docu' or addonID == 'plugin.video.featherence.extreme':
 		videoDefinition = 'high'
 	
 	if addonID == 'plugin.video.featherence.kids':
@@ -1067,10 +1073,10 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 				except:
 					pass
 					
-				if '&youtube_pl=' in x:
+				if onlydata != True and ('&youtube_pl=' in x): # or '&youtube_se' in x
 					
 					count__ = 0
-					while count__ < 10 and not xbmc.abortRequested:
+					while count__ < 4 and not xbmc.abortRequested:
 						url_ = url.replace('&pageToken=', '&pageToken=' + nextpagetoken)
 						#try:
 						if 1 + 1 == 2:
@@ -1082,7 +1088,7 @@ def apimaster(x, title="", thumb="", desc="", fanart="", playlist=[], addonID=ad
 							try:
 								nextpagetoken = str(prms_['nextPageToken'])
 								nextpagetoken_L.append(nextpagetoken)
-							except: count__ = 10
+							except: count__ = 4
 							
 						text = 'nextpagetoken_L' + space2 + str(nextpagetoken_L) + newline + \
 						"url_" + space2 + str(url_) + newline + \
@@ -1901,6 +1907,7 @@ def cacheplugin():
 	cache = StorageServer.StorageServer(addonID, 24) # (Your plugin name, Cache time in hours)
  
 def pluginend(admin):
+	dialogbusy_ = dialogbusy("",1)
 	try: from modules import *
 	except: pass
 	try: from modulesp import *
@@ -2501,6 +2508,7 @@ def pluginend(admin):
 	------------------------------'''
 	printlog(title='pluginend', printpoint=printpoint, text=extra, level=0, option="")
 	'''---------------------------'''
+	dialogbusy_ = dialogbusy(dialogbusy_,0)
 	return url, name, mode, iconimage, desc, num, viewtype, fanart
 		
 def pluginend2(admin, url, containerfolderpath, viewtype):

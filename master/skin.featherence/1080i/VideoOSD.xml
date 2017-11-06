@@ -308,10 +308,10 @@
 					<label>-</label>
 					<width>100</width>
 					<height>100</height>
-					<onclick>close</onclick>
-					<onclick>ActivateWindow(10142)</onclick>
-					<visible>false</visible>
-					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)</visible>
+					<onclick>Action(Info)</onclick>
+					<onclick>Action(Left)</onclick>
+					<onclick>SetProperty(VideoPlayer.Info, true, home)</onclick>
+					<visible>!VideoPlayer.Content(LiveTV) + Player.Paused + String.IsEmpty(Window(home).Property(VideoPlayer.Info))</visible>
 				</control>
 				<control type="togglebutton" id="707" description="Volume">
 				    <enable>true</enable>

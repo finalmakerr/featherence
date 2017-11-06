@@ -493,9 +493,9 @@
   
   <include name="ViewDesign_570" description="Center List">
     <control type="group" description="">
-	  <visible>Control.IsVisible(570)</visible>
+	  <visible>Control.IsVisible(50)</visible>
       <control type="group">
-		<control type="list" id="570">
+		<control type="list" id="50">
 		  <include>TopInformationSize1</include>
 		  <include>Slide1</include>
 		  <include>Slide2</include>
@@ -505,7 +505,7 @@
 		  <width>1880</width>
 		  <height>930</height>
 		  <include>4ways</include>
-		  <include>ViewDesign_51_Layout</include>
+		  <include>ViewDesign_50_Layout</include>
 		</control>
       </control>
     </control>

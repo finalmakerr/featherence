@@ -590,9 +590,10 @@ def mode10(admin, name, printpoint):
 		#videostarttweak(admin)
 		if playerhasvideo and xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)'):
 			if xbmc.getCondVisibility('String.IsEmpty(Window(home).Property(VideoPlayer.Info))'):
+				pass
 				#xbmc.executebuiltin('Action(Info)')
-				setProperty('VideoPlayer.Info', 'True', type="home")
-				printpoint = printpoint + 'I'
+				#setProperty('VideoPlayer.Info', 'True', type="home")
+				#printpoint = printpoint + 'I'
 				
 		ii = 0
 		while (playerhasvideo or playerhasaudio or dialogbusyW or dialogprogressW) and ii < 3 and not xbmc.abortRequested:

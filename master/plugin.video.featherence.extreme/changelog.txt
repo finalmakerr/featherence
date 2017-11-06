@@ -7,9 +7,12 @@ WIP (WORK IN PROGRESS)
 ------------------------
 
 ------------------------
-Featherence Extreme v0.1.11 (xx-xx-2017)
+Featherence Extreme v0.1.11 (06-11-2017)
 ------------------------
+- Added Hebrew language support.
+- Added new categories and sub categories.
 - Added TV Mode support to YouTube search sources.
+- Major contents quality update - All HD and 100% relevance.
 - Major performance update result in a very fast addon!
 
 ------------------------

@@ -19,18 +19,18 @@ def getList(num=0):
 	elif num == 102:
 		'''Space / חלל'''
 		thumb = 'http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2014/02/searching_for_exoplanetary_systems/14282306-1-eng-GB/Searching_for_exoplanetary_systems.jpg'
-		se = 'Space DOCU' ; list.append('&name_=' + 'addonString(30002)' + '&&youtube_se='+se)
+		se = 'Alien space DOCU' ; list.append('&name_=' + 'addonString(30207)' + '&&youtube_se='+se)
 		se = 'Space Astronauts DOCU' ; list.append('&name_=' + 'addonString(30204)' + '&&youtube_se='+se)
 		se = 'Space Astronomy DOCU' ; list.append('&name_=' + 'addonString(30203)' + '&&youtube_se='+se)
+		se = 'BLACK HOLE space DOCU' ; list.append('&name_=' + 'addonString(30212)' + '&&youtube_se='+se)
 		se = 'Space Exploration DOCU' ; list.append('&name_=' + 'addonString(30201)' + '&&youtube_se='+se)
 		se = 'Hubble Space Telescope DOCU' ; list.append('&name_=' + 'addonString(30202)' + '&&youtube_se='+se)
-		se = 'Alien space DOCU' ; list.append('&name_=' + 'addonString(30207)' + '&&youtube_se='+se)
 		se = 'MARS space DOCU' ; list.append('&name_=' + 'addonString(30208)' + '&&youtube_se='+se)
+		se = 'METEORS space DOCU' ; list.append('&name_=' + 'addonString(30213)' + '&&youtube_se='+se)
+		se = 'MOON space DOCU' ; list.append('&name_=' + 'addonString(30211)' + '&&youtube_se='+se)
+		se = 'Space DOCU' ; list.append('&name_=' + 'addonString(30002)' + '&&youtube_se='+se)
 		se = 'SPACESHIP space DOCU' ; list.append('&name_=' + 'addonString(30209)' + '&&youtube_se='+se)
 		se = 'SPEED OF LIGHT space DOCU' ; list.append('&name_=' + 'addonString(30210)' + '&&youtube_se='+se)
-		se = 'MOON space DOCU' ; list.append('&name_=' + 'addonString(30211)' + '&&youtube_se='+se)
-		se = 'BLACK HOLE space DOCU' ; list.append('&name_=' + 'addonString(30212)' + '&&youtube_se='+se)
-		se = 'METEORS space DOCU' ; list.append('&name_=' + 'addonString(30213)' + '&&youtube_se='+se)
 		c8 = 'plugin://plugin.video.eso/' ; list.append('&name_=' + 'ESO' + '&&custom8='+c8)
 		c8 = 'plugin://plugin.video.esa/' ; list.append('&name_=' + 'ESA' + '&&custom8='+c8)
 	
@@ -48,8 +48,8 @@ def getList(num=0):
 		se = 'KING SOLOMON DOCU' ; list.append('&name_=' + 'addonString(30313)' + '&&youtube_se='+se)
 		se = 'NOMADS DOCU' ; list.append('&name_=' + 'addonString(30309)' + '&&youtube_se='+se)
 		se = 'ROMANS DOCU' ; list.append('&name_=' + 'addonString(30303)' + '&&youtube_se='+se)
-		se = 'VIKINGS DOCU' ; list.append('&name_=' + 'addonString(30307)' + '&&youtube_se='+se)
 		se = 'STONE, BRONZE, IRON, NEW AGE DOCU' ; list.append('&name_=' + 'addonString(30311)' + '&&youtube_se='+se)
+		se = 'VIKINGS DOCU' ; list.append('&name_=' + 'addonString(30307)' + '&&youtube_se='+se)
 		se = 'World War 1 DOCU' ; list.append('&name_=' + 'addonString(30301)' + ' 1' + '&&youtube_se='+se)
 		se = 'World War 2 DOCU' ; list.append('&name_=' + 'addonString(30301)' + ' 2' + '&&youtube_se='+se)
 		se = 'World War 3 DOCU' ; list.append('&name_=' + 'addonString(30301)' + ' 3' + '&&youtube_se='+se)
@@ -60,22 +60,24 @@ def getList(num=0):
 	elif num == 104:
 		thumb = 'http://orig07.deviantart.net/ff1a/f/2009/033/1/3/science_wallpaper_by_hamdanzinha.jpg'
 		fanart = 'http://wallpapercave.com/wp/582gycq.jpg'
-		se = 'Technology DOCU' ; list.append('&name_=' + 'addonString(30403)' + '&&youtube_se='+se)
+
+		se = 'Biology DOCU' ; list.append('&name_=' + 'addonString(30431)' + '&&youtube_se='+se)
+		se = 'Chemistry DOCU' ; list.append('&name_=' + 'addonString(30433)' + '&&youtube_se='+se)
+		se = 'Computers DOCU' ; list.append('&name_=' + 'addonString(30452)' + '&&youtube_se='+se)
+		se = 'Economics DOCU' ; list.append('&name_=' + 'addonString(30426)' + '&&youtube_se='+se)
+		se = 'Electronics DOCU' ; list.append('&name_=' + 'addonString(30453)' + '&&youtube_se='+se)
 		se = 'Humanities and Social Sciences DOCU' ; list.append('&name_=' + 'addonString(30401)' + '&&youtube_se='+se)
-		se = 'The science of nature DOCU' ; list.append('&name_=' + 'addonString(30402)' + '&&youtube_se='+se)
+		se = 'Math DOCU' ; list.append('&name_=' + 'addonString(30430)' + '&&youtube_se='+se)
+		se = 'Medicine DOCU' ; list.append('&name_=' + 'addonString(30435)' + '&&youtube_se='+se)
+		se = 'Philosophy DOCU' ; list.append('&name_=' + 'addonString(30425)' + '&&youtube_se='+se)
+		se = 'Physics DOCU' ; list.append('&name_=' + 'addonString(30432)' + '&&youtube_se='+se)
+		se = 'Politics DOCU' ; list.append('&name_=' + 'addonString(30422)' + '&&youtube_se='+se)
+		se = 'Psychology DOCU' ; list.append('&name_=' + 'addonString(30427)' + '&&youtube_se='+se)
 		se = 'Researches DOCU' ; list.append('&name_=' + 'addonString(30404)' + '&&youtube_se='+se)
 		se = 'Scientific experiments DOCU' ; list.append('&name_=' + 'addonString(30405)' + '&&youtube_se='+se)
-		se = 'Politics DOCU' ; list.append('&name_=' + 'addonString(30422)' + '&&youtube_se='+se)
-		se = 'Philosophy DOCU' ; list.append('&name_=' + 'addonString(30425)' + '&&youtube_se='+se)
-		se = 'Economics DOCU' ; list.append('&name_=' + 'addonString(30426)' + '&&youtube_se='+se)
-		se = 'Psychology DOCU' ; list.append('&name_=' + 'addonString(30427)' + '&&youtube_se='+se)
-		se = 'Math DOCU' ; list.append('&name_=' + 'addonString(30430)' + '&&youtube_se='+se)
-		se = 'Biology DOCU' ; list.append('&name_=' + 'addonString(30431)' + '&&youtube_se='+se)
-		se = 'Physics DOCU' ; list.append('&name_=' + 'addonString(30432)' + '&&youtube_se='+se)
-		se = 'Chemistry DOCU' ; list.append('&name_=' + 'addonString(30433)' + '&&youtube_se='+se)
-		se = 'Medicine DOCU' ; list.append('&name_=' + 'addonString(30435)' + '&&youtube_se='+se)
-		se = 'Electronics DOCU' ; list.append('&name_=' + 'addonString(30453)' + '&&youtube_se='+se)
-		se = 'Computers DOCU' ; list.append('&name_=' + 'addonString(30452)' + '&&youtube_se='+se)
+		se = 'Technology DOCU' ; list.append('&name_=' + 'addonString(30403)' + '&&youtube_se='+se)
+		se = 'The science of nature DOCU' ; list.append('&name_=' + 'addonString(30402)' + '&&youtube_se='+se)
+		
 		c8 = 'plugin://plugin.video.ted.talks/' ; list.append('&name_=' + 'Ted Talks' + '&&custom8='+c8)
 		
 	elif num == 105:
@@ -114,47 +116,45 @@ def getList(num=0):
 		'''Planet Earth / כדור הארץ'''
 		thumb = 'https://s-media-cache-ak0.pinimg.com/originals/f6/7c/e8/f67ce86161d17cbde49bac13be0ea023.jpg'
 		fanart = 'https://s-media-cache-ak0.pinimg.com/originals/99/db/19/99db19557aec73a897f07992cbc4d0c8.jpg'
-		se = 'PLANET EARTH DOCU' ; list.append('&name_=' + 'addonString(30006)' + '&&youtube_se='+se)
-		se = 'EARTH WORLD WONDER DOCU' ; list.append('&name_=' + 'addonString(30180)' + '&&youtube_se='+se)
-		se = 'EARTH OCEANS DOCU' ; list.append('&name_=' + 'addonString(30181)' + '&&youtube_se='+se)
-		se = 'EARTH CLIMATE DOCU' ; list.append('&name_=' + 'addonString(30182)' + '&&youtube_se='+se)
+		se = 'CLIMATE EARTH DOCU' ; list.append('&name_=' + 'addonString(30182)' + '&&youtube_se='+se)
 		se = 'Natural phenomena and disasters DOCU' ; list.append('&name_=' + 'addonString(30183)' + '&&youtube_se='+se)
 		se = 'Nature Ultra HD' ; list.append('&name_=' + 'addonString(30001)' + ' Ultra HD' + '&&youtube_se='+se)
+		se = 'OCEANS EARTH DOCU' ; list.append('&name_=' + 'addonString(30181)' + '&&youtube_se='+se)
+		se = 'PLANET EARTH DOCU' ; list.append('&name_=' + 'addonString(30006)' + '&&youtube_se='+se)
 		se = 'TREES DOCU' ; list.append('&name_=' + 'addonString(30171)' + '&&youtube_se='+se)
+		se = 'WORLD WONDER EARTH  DOCU' ; list.append('&name_=' + 'addonString(30180)' + '&&youtube_se='+se)
 	
 	elif num == 107:
 		'''Milatry / צבאי'''
 		thumb = 'https://www.armyrecognition.com/images/stories/customer/rafael/land/Spyder_missile_system_Rafael_IsraeL_Israeli_defence_industry_001.jpg'
 		fanart = 'https://i.ytimg.com/vi/VgukAu2Lvrg/maxresdefault.jpg'
-		if 1 + 1 == 3:
-			se = 'MILITARY TECH DOCU' ; list.append('&name_=' + 'addonString(30107)' + '&&youtube_se='+se)
-			se = 'TANK DOCU' ; list.append('&name_=' + 'addonString(30700)' + '&&youtube_se='+se)
-			se = 'fighter jets bombers DOCU' ; list.append('&name_=' + 'addonString(30701)' + '&&youtube_se='+se)
-			se = 'Combat helicopters DOCU' ; list.append('&name_=' + 'addonString(30702)' + '&&youtube_se='+se)
-			se = 'MISSILES DOCU' ; list.append('&name_=' + 'addonString(30703)' + '&&youtube_se='+se)
-			se = 'Special Forces / COMMANDOS DOCU' ; list.append('&name_=' + 'addonString(30704)' + '&&youtube_se='+se)
-			se = 'NUCLEAR WEAPON DOCU' ; list.append('&name_=' + 'addonString(30705)' + '&&youtube_se='+se)
-			se = 'SUBMARINE MILITARY DOCU' ; list.append('&name_=' + 'addonString(30706)' + '&&youtube_se='+se)
-			se = 'DESTROYER MILITARY NAVY DOCU' ; list.append('&name_=' + 'addonString(30707)' + '&&youtube_se='+se)
-			se = 'MOSSAD DOCU' ; list.append('&name_=' + 'addonString(30708)' + '&&youtube_se='+se)
-			se = 'AIRCRAFT CARRIER DOCU' ; list.append('&name_=' + 'addonString(30709)' + '&&youtube_se='+se)
-			se = 'COMBAT DRONES DOCU' ; list.append('&name_=' + 'addonString(30710)' + '&&youtube_se='+se)
-			
-			se = 'Paratroopers military DOCU' ; list.append('&name_=' + 'addonString(30711)' + '&&youtube_se='+se)
-			se = 'Artillery DOCU' ; list.append('&name_=' + 'addonString(30712)' + '&&youtube_se='+se)
-			se = 'SAM ANTI AIR MILITARY DOCU' ; list.append('&name_=' + 'addonString(30713)' + '&&youtube_se='+se)
-			se = 'Modern Infantry DOCU' ; list.append('&name_=' + 'addonString(30714)' + '&&youtube_se='+se)
-			se = 'DEFENSE SYSTEM MILITARY DOCU' ; list.append('&name_=' + 'addonString(30715)' + '&&youtube_se='+se)
-			se = 'GENERALS MILITARY DOCU' ; list.append('&name_=' + 'addonString(30716)' + '&&youtube_se='+se)
-			se = 'CYBER WAR MILITARY DOCU' ; list.append('&name_=' + 'addonString(30717)' + '&&youtube_se='+se)
-			se = 'COMBAT ROBOTS DOCU' ; list.append('&name_=' + 'addonString(30718)' + '&&youtube_se='+se)
-			se = 'SNIPERS MILITARY DOCU' ; list.append('&name_=' + 'addonString(30719)' + '&&youtube_se='+se)
-		
-		#ch = 'RAFAELsystemLTD' ; list.append('&name_=' + 'Rafael Advanced Defense Systems' + '&&youtube_ch='+ch)
-		#ch = 'idfnadesk' ; list.append('&name_=' + 'Israel Defense Forces' + '&&youtube_ch='+ch)
-		#ch = 'IAFmagazine' ; list.append('&name_=' + 'Israeli Air Force' + '&&youtube_ch='+ch)
+		se = 'AIRCRAFT CARRIER DOCU' ; list.append('&name_=' + 'addonString(30709)' + '&&youtube_se='+se)
+		se = 'Artillery DOCU' ; list.append('&name_=' + 'addonString(30712)' + '&&youtube_se='+se)
+		se = 'COMBAT DRONES DOCU' ; list.append('&name_=' + 'addonString(30710)' + '&&youtube_se='+se)
+		se = 'Combat helicopters DOCU' ; list.append('&name_=' + 'addonString(30702)' + '&&youtube_se='+se)
+		se = 'COMBAT ROBOTS DOCU' ; list.append('&name_=' + 'addonString(30718)' + '&&youtube_se='+se)
+		se = 'CYBER WAR MILITARY DOCU' ; list.append('&name_=' + 'addonString(30717)' + '&&youtube_se='+se)
+		se = 'DEFENSE SYSTEM MILITARY DOCU' ; list.append('&name_=' + 'addonString(30715)' + '&&youtube_se='+se)
+		se = 'DESTROYER MILITARY NAVY DOCU' ; list.append('&name_=' + 'addonString(30707)' + '&&youtube_se='+se)
+		se = 'fighter jets bombers DOCU' ; list.append('&name_=' + 'addonString(30701)' + '&&youtube_se='+se)
+		se = 'GENERALS MILITARY DOCU' ; list.append('&name_=' + 'addonString(30716)' + '&&youtube_se='+se)
+		se = 'MISSILES DOCU' ; list.append('&name_=' + 'addonString(30703)' + '&&youtube_se='+se)
+		se = 'MILITARY TECH DOCU' ; list.append('&name_=' + 'addonString(30007)' + '&&youtube_se='+se)
+		se = 'Modern Infantry DOCU' ; list.append('&name_=' + 'addonString(30714)' + '&&youtube_se='+se)
+		se = 'MOSSAD DOCU' ; list.append('&name_=' + 'addonString(30708)' + '&&youtube_se='+se)
+		se = 'NUCLEAR WEAPON DOCU' ; list.append('&name_=' + 'addonString(30705)' + '&&youtube_se='+se)
+		se = 'Paratroopers military DOCU' ; list.append('&name_=' + 'addonString(30711)' + '&&youtube_se='+se)
+		se = 'SAM ANTI AIR MILITARY DOCU' ; list.append('&name_=' + 'addonString(30713)' + '&&youtube_se='+se)
+		se = 'SNIPERS MILITARY DOCU' ; list.append('&name_=' + 'addonString(30719)' + '&&youtube_se='+se)
+		se = 'Special Forces / COMMANDOS DOCU' ; list.append('&name_=' + 'addonString(30704)' + '&&youtube_se='+se)
+		se = 'SUBMARINE MILITARY DOCU' ; list.append('&name_=' + 'addonString(30706)' + '&&youtube_se='+se)
+		se = 'TANK DOCU' ; list.append('&name_=' + 'addonString(30700)' + '&&youtube_se='+se)
+
+		ch = 'IAFmagazine' ; list.append('&name_=' + 'Israeli Air Force' + '&&youtube_ch='+ch)
+		ch = 'idfnadesk' ; list.append('&name_=' + 'Israel Defense Forces' + '&&youtube_ch='+ch)
 		ch = 'UCkU5SOTkVS6rFcx90XXsLAQ' ; list.append('&name_=' + 'Israeli Navy' + '&&youtube_ch='+ch)
-	
+		ch = 'RAFAELsystemLTD' ; list.append('&name_=' + 'Rafael Advanced Defense Systems' + '&&youtube_ch='+ch)
+		
 	elif num == 108:
 		'''Documentaries in Hebrew / דוקומנטרי בעברית'''
 		x = '&relevanceLanguage=he&'
@@ -179,8 +179,24 @@ def getList(num=0):
 		'''Auto / Vehicles / מכוניות'''
 		thumb = 'https://1bgnvt3q09toyb96v2ecsygm-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/Local-Motors-3D-printed-car.jpg'
 		fanart = 'http://images.car.bauercdn.com/pagefiles/69752/1752x1168/0000_00_0_genevamotorshow.jpg'
-		se = 'Auto Vehicles DOCU' ; list.append('&name_=' + 'addonString(30010)' + '&&youtube_se='+se)
-		se = 'ENGINES DOCU' ; list.append('&name_=' + 'addonString(31000)' + '&&youtube_se='+se)
+		se = '4x4 car DOCO ' ; list.append('&name_=' + '4x4' + '&&youtube_se='+se)
+		se = 'Alfa Romeo car DOCO ' ; list.append('&name_=' + 'Alfa Romeo' + '&&youtube_se='+se)
+		se = 'Audi car DOCO ' ; list.append('&name_=' + 'Audi' + '&&youtube_se='+se)
+		se = 'Auto Vehicles DOCU' ; list.append('&name_=' + 'Auto Vehicles' + '&&youtube_se='+se)
+		se = 'BMW car DOCO ' ; list.append('&name_=' + 'BMW' + '&&youtube_se='+se)
+		se = 'Bugatti car DOCO ' ; list.append('&name_=' + 'Bugatti' + '&&youtube_se='+se)
+		se = 'Cadillac car DOCO ' ; list.append('&name_=' + 'Cadillac' + '&&youtube_se='+se)
+		se = 'Ferrari car DOCO ' ; list.append('&name_=' + 'Ferrari' + '&&youtube_se='+se)
+		se = 'Ford car DOCO ' ; list.append('&name_=' + 'Ford' + '&&youtube_se='+se)
+		se = 'Honda car DOCO ' ; list.append('&name_=' + 'Honda' + '&&youtube_se='+se)
+		se = 'Lamborghini car DOCO ' ; list.append('&name_=' + 'Lamborghini' + '&&youtube_se='+se)
+		se = 'Mazda car DOCO ' ; list.append('&name_=' + 'Mazda' + '&&youtube_se='+se)
+		se = 'Mclaren car DOCO ' ; list.append('&name_=' + 'Mclaren' + '&&youtube_se='+se)
+		se = 'Mercedes car DOCO ' ; list.append('&name_=' + 'Mercedes' + '&&youtube_se='+se)
+		se = 'Nissan car DOCO ' ; list.append('&name_=' + 'Nissan' + '&&youtube_se='+se)
+		se = 'Porsche car DOCO ' ; list.append('&name_=' + 'Porsche' + '&&youtube_se='+se)
+		se = 'street racing car DOCO ' ; list.append('&name_=' + 'Street Racing' + '&&youtube_se='+se)
+		
 	return list, thumb, fanart
 	
 def CATEGORIES():
@@ -195,10 +211,10 @@ def CATEGORIES():
 	list, thumb, fanart = getList(104) ; addDir(addonString(30004).encode('utf-8'),list,17,thumb,addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30004).encode('utf-8')),'1',0,fanart)
 	list, thumb, fanart = getList(105) ; addDir(addonString(30005).encode('utf-8'),list,17,thumb,addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30005).encode('utf-8')),'1',0,fanart)
 	list, thumb, fanart = getList(106) ; addDir(addonString(30006).encode('utf-8'),list,17,thumb,addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30006).encode('utf-8')),'1',0, fanart)
-	#list, thumb, fanart = getList(107) ; addDir(addonString(30007).encode('utf-8'),list,17,thumb,addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30007).encode('utf-8')),'1',0,fanart)
+	list, thumb, fanart = getList(107) ; addDir(addonString(30007).encode('utf-8'),list,17,thumb,addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30007).encode('utf-8')),'1',0,fanart)
 	list, thumb, fanart = getList(108) ; addDir(addonString(30008).encode('utf-8'),list,17,thumb,addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30008).encode('utf-8')),'1',0,fanart)
-	#list, thumb, fanart = getList(109) ; addDir(addonString(30009).encode('utf-8'),list,17,thumb,addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30009).encode('utf-8')),'1',0,fanart)
-	#list, thumb, fanart = getList(110) ; addDir(addonString(30010).encode('utf-8'),list,17,thumb,addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30010).encode('utf-8')),'1',0,fanart)
+	list, thumb, fanart = getList(109) ; addDir(addonString(30009).encode('utf-8'),list,17,thumb,addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30009).encode('utf-8')),'1',0,fanart)
+	list, thumb, fanart = getList(110) ; addDir(addonString(30010).encode('utf-8'),list,17,thumb,addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30010).encode('utf-8')),'1',0,fanart)
 	
 	addon = 'plugin.video.smithsonian'
 	thumb, fanart, summary, description, plot = getAddonInfo(addon)

@@ -789,7 +789,14 @@ def dialogok(heading,line1,line2,line3, line1c="", line2c="", line3c="", line4c=
 	'line2: ' + str(line2) + newline + \
 	'line3: ' + str(line3) + newline + extra
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+
+def dialogbusy(dialog,value):
+	if value == 0: dialog.close()
+	elif value == 1: dialog = xbmcgui.DialogBusy() ; dialog.create()
+	else: dialog.update(value)
 	
+	return dialog
+
 def dialogselect(heading, list, autoclose=0):
 	'''------------------------------
 	---DIALOG-SELECT-----------------

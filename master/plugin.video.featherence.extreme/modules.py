@@ -12,52 +12,38 @@ def CATEGORIES():
 	'''Go-Pro'''
 	background = 100
 	
-	addDir(localize(137),"Go-Pro",3,featherenceserviceicons_path + "se.png","Search Go-Pro Video",'1',0, getAddonFanart(background))
+	addDir(localize(137),"Go-Pro",3,featherenceserviceicons_path + "se.png","Search Go-Pro Video",'1',0, '')
 	CATEGORIES_RANDOM() #אקראי
-	
-	'''Bushido'''
-	list = []
-	list.append('&youtube_ch=bushidocombatsports')
-	list.append('&youtube_ch=adarash91')
-	list.append('&youtube_ch=UC3dmfh0V4s3qAvx3f5KQsAw')
-	addDir('Bushido',list,17,"getAPIdata","getAPIdata",'&getAPIdata=&youtube_ch=bushidocombatsports',0, getAddonFanart(background, default="getAPIdata"))
-	
-	'''Exterme Sport'''
-	addon = 'plugin.video.extreme.com'
-	thumb, fanart, summary, description, plot = getAddonInfo(addon)
-	addDir('Extreme Sport','plugin://'+addon,8,thumb,plot,addon,0, getAddonFanart(background,default=fanart, custom=""))
-	
+
 	'''Go-Pro'''
+	thumb = 'http://www.wallpaperinhd.net/file/1958/600x338/16:9/gopro-logo-2100x915-wallpaper_1268410383.jpg'
+	fanart = 'https://i.ytimg.com/vi/mrNo5V441so/maxresdefault.jpg'
 	list = []
 	list.append('&youtube_ch=GoProCamera')
-	list.append('&youtube_ch=GoProMX')
-	list.append('&youtube_ch=GoProTutorials')
-	list.append('&youtube_ch=GoProWorldOfficial')
-	list.append('&youtube_ch=GoProUncut')
-	addDir('Go-Pro',list,17,'getAPIdata','getAPIdata','&getAPIdata=&youtube_ch=GoProCamera',0, getAddonFanart(background, default='getAPIdata', custom="https://i.vimeocdn.com/video/531419538.jpg?mw=1920&mh=1080&q=70"))
-	
-	'''Masters of Dirt'''
+	#list.append('&youtube_ch=GoProMX')
+	#list.append('&youtube_ch=GoProTutorials')
+	#list.append('&youtube_ch=GoProWorldOfficial')
+	#list.append('&youtube_ch=GoProUncut')
+	c8 = 'plugin://plugin.video.extreme.com/' ; list.append('&name_=' + 'Extreme Sport' + '&&custom8='+c8)
+	ch = 'XTremeVideo' ; list.append('&name_=' + 'XTremeVideo' + '&&youtube_ch='+ch)
+	addDir('Go-Pro',list,17,thumb,'getAPIdata','&getAPIdata=&youtube_ch=GoProCamera',0, fanart)
+
+	'''Motorcycles & Cars'''
+	thumb = 'https://i.pinimg.com/736x/a9/f4/8b/a9f48b833ed986eb00ebec084118ee23--car-wallpapers-hd-wallpaper.jpg'
+	fanart = 'https://www.bikerpunks.com/media/gallery/motorcycle-vs-car-hd-1920x1080.jpg'
 	list = []
-	list.append('&youtube_ch=mastersofdirt')
-	addDir('getAPIdata',list,17,'getAPIdata',"getAPIdata",'&getAPIdata=&youtube_ch=mastersofdirt',0, getAddonFanart(background, default='getAPIdata', custom="http://static.wixstatic.com/media/575ae7_2ac792df7f324d03ad555e8afef8972a.jpg"))
+	se = 'motorcycles / cars drifting stunts' ; list.append('&name_=' + 'WoW!' + '&&youtube_se='+se)
+	se = 'CAR MOTORCYCLE RACE VS' ; list.append('&name_=' + 'addonString(30020)' + '&&youtube_se='+se)
+	addDir(addonString(30001).encode('utf-8'),list,17,thumb,'www.featherence.com','1',0, fanart)
 	
-	'''MMA'''
+	'''Martial Arts'''
+	thumb = 'https://meetyourmartialartsinstructor.files.wordpress.com/2012/06/artes_marciais.jpg'
+	fanart = 'https://images2.alphacoders.com/233/233850.jpg'
 	list = []
-	list.append('&youtube_ch=MMAFightingonSBN')
-	list.append('&youtube_ch=mmadigest')
-	list.append('&youtube_ch=MMAjunkieVideo')
-	addDir('MMA',list,17,"getAPIdata","getAPIdata",'&getAPIdata=&youtube_ch=MMAFightingonSBN',0, getAddonFanart(background, default="getAPIdata"))
-	
-	'''UFC'''
-	list = []
-	list.append('&youtube_ch=UCvgfXK4nTYKudb0rFR6noLA')
-	list.append('&youtube_ch=TheBestofUFCandMMA')
-	addDir('UFC',list,17,"getAPIdata","getAPIdata",'&getAPIdata=&youtube_ch=UCvgfXK4nTYKudb0rFR6noLA',0, getAddonFanart(background, default="getAPIdata"))
-	
-	'''XTreme'''
-	list = []
-	list.append('&youtube_ch=XTremeVideo')
-	addDir('getAPIdata',list,17,'getAPIdata',"getAPIdata",'&getAPIdata=&youtube_ch=XTremeVideo',0, getAddonFanart(background, default='getAPIdata', custom="https://i.ytimg.com/vi/m54vzZNGpyc/maxresdefault.jpg"))
-	
-	
-	
+	se = 'K1 FULL FIGHTS' ; list.append('&name_=' + 'K1' + '&&youtube_se='+se + '&videoDuration=long&')
+	se = 'BUSHIDO FULL FIGHTS -flight -game -mma -movie -book -pisode' ; list.append('&name_=' + 'Bushido' + '&&youtube_se='+se + '&videoDuration=long&' + '&videoDefinition=any&')
+	se = 'MMA FULL FIGHTS' ; list.append('&name_=' + 'MMA' + '&&youtube_se='+se + '&videoDuration=long&')
+	se = 'SUMO FULL FIGHTS' ; list.append('&name_=' + 'Sumo' + '&&youtube_se='+se + '&videoDuration=long&')
+	se = 'UFC FULL FIGHTS -PRESS CONFERENCE' ; list.append('&name_=' + 'UFC' + '&&youtube_se='+se + '&videoDuration=long&')
+	addDir(addonString(30003).encode('utf-8'),list,17,thumb,'www.featherence.com','1',0, fanart)
+
