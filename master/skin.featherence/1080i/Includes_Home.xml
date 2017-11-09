@@ -248,7 +248,7 @@
 	  <visible>![Window.IsVisible(CustomHomeCustomizer2.xml) + !String.IsEmpty(Window(home).Property(WidgetButton.ID_))]</visible>
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos7</include>
 	  <posx>0</posx>
-	  <posy>60</posy>
+	  <posy>30</posy>
 	  <width>1850</width>
 	  <height>927</height>
 	  <onup condition="!Skin.HasSetting(SPMiniButtons)">9000</onup>

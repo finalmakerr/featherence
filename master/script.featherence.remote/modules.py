@@ -119,8 +119,6 @@ def Activate(Remote_Name, Remote_Name2, Remote_TestingTime, remotes_path):
 		
 		else: path = "" ; printpoint = printpoint + "9"
 		
-		#print "wow" + space + str(path)
-		
 		if systemplatformlinux or systemplatformlinuxraspberrypi:
 			os.system('ir-keytable -p '+Remote_Type+' -w '+path+' -D 700 -P 200')
 		

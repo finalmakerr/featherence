@@ -3,7 +3,7 @@
   <include name="Movies_RA" description="ייחוד כותרות עליונות-סרט אחרון">
     <control type="group">
       <control type="panel" id="311" description="פנל מדף סרטים שנוספו לאחרונה">
-        <visible>Library.HasContent(Movies) + [String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311)) | Control.HasFocus(311)]</visible>
+        <visible>Library.HasContent(Movies) + [String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
 		<visible>!Control.IsVisible(316)</visible>
 		<visible>!Skin.HasSetting(MoviesShelfWL)</visible>
 		<include>Widget_Movement</include>
@@ -317,7 +317,7 @@
   <include name="Movies_WL" description="ייחוד כותרות עליונות-אקראי">
     <control type="group">
       <control type="panel" id="311" description="פנל מדף סרטים אקראיים">>
-		<visible>Library.HasContent(Movies) + [String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311)) | Control.HasFocus(311)]</visible>
+		<visible>Library.HasContent(Movies) + [String.IsEqual(Window(home).Property(Button.ID),90) + !Skin.String(widget311) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget311))]</visible>
 		<visible>!Control.IsVisible(316)</visible>
 		<visible>Skin.HasSetting(MoviesShelfWL)</visible>
 		<include>Widget_Movement</include>
@@ -631,7 +631,7 @@
       <control type="panel" id="312" description="פנל מדף פרקים שנוספו לאחרונה">
 	    <visible>Library.HasContent(TVShows)</visible>
 		<visible>!Control.IsVisible(316)</visible>
-        <visible>!Skin.HasSetting(TVShelf_Watchlist) + [String.Contains(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312)) | Control.HasFocus(312)]</visible>
+        <visible>!Skin.HasSetting(TVShelf_Watchlist) + [String.Contains(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
 		<include>Widget_Movement</include>
         <include condition="!Skin.String(WidgetDesign)">MoviesShortcutsCommons</include>
 		<include condition="Skin.String(WidgetDesign,0)">MoviesShortcutsCommons0</include>
@@ -983,7 +983,7 @@
       <control type="panel" id="312" description="פנל מדף סדרות בתהליך">
 		<visible>Library.HasContent(TVShows)</visible>
 		<visible>!Control.IsVisible(316)</visible>
-		<visible>Skin.HasSetting(TVShelf_Watchlist) + [String.Contains(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312)) | Control.HasFocus(312)]</visible>
+		<visible>Skin.HasSetting(TVShelf_Watchlist) + [String.Contains(Window(home).Property(Button.ID),91) + !Skin.String(widget312) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget312))]</visible>
         <include>Widget_Movement</include>
         <include condition="!Skin.String(WidgetDesign)">MoviesShortcutsCommons</include>
 		<include condition="Skin.String(WidgetDesign,0)">MoviesShortcutsCommons0</include>

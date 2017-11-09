@@ -1473,7 +1473,7 @@
      <posx>40r</posx>
    </include>
    <include name="Control_Pos11" description="">
-     <posx>270r</posx>
+     <posx>285r</posx>
    </include>
    <include name="Control_Pos12" description="">
      <width>784.4</width>
@@ -1535,10 +1535,10 @@
 	 <posx>1570</posx>
    </include>
    <include name="Control_Pos31" description="">
-	 <posx>-210</posx>
+	 <posx>-221</posx>
    </include>
    <include name="Control_Pos32" description="">
-	 <posx>250</posx>
+	 <posx>263</posx>
    </include>
    <include name="Control_Pos33" description="">
 	 <height>773</height>
@@ -1572,10 +1572,9 @@
 	 <height>815</height>
    </include>
    <include name="Control_Pos43" description="">
-	 <posx>0</posx>
-	 <posy>0</posy>
+	 <posy>36</posy>
 	 <height>1080</height>
-	 <width>250</width>
+	 <width>272</width>
    </include>
    <include name="Control_Pos44" description="">
      <height>1150</height>

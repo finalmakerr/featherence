@@ -12,14 +12,14 @@
 	  <include>VideoPlayerWindow</include>
 	  <control type="multiimage" description="רקע פאנארט">
 	    <include>TopInformationSize3</include>
-	    <animation condition="!Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]" effect="zoom" start="100,100" end="100,51" time="0">Conditional</animation>
-		<animation description="Horizontal-Zoom" condition="!Skin.HasSetting(TopInformationSize) + !Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.3" time="0">Conditional</animation>
-		<animation description="Horizontal-Zoom2" condition="Skin.HasSetting(TopInformationSize) + !Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.7" time="0">Conditional</animation>
-		<animation description="No full Fanart-Vertical_he" condition="[!Skin.HasSetting(HomeFanartHalfScreen) + ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus + Window.IsVisible(Home.xml)]] + Skin.String(MenuDesign,4) + String.IsEqual(System.Language,Hebrew)" effect="zoom" center="0,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
-		<animation description="No full Fanart-Vertical_en" condition="[!Skin.HasSetting(HomeFanartHalfScreen) + ![Control.HasFocus(311) | Control.HasFocus(312) | ControlGroup(9009).HasFocus + Window.IsVisible(Home.xml)]] + Skin.String(MenuDesign,4) + !String.IsEqual(System.Language,Hebrew)" effect="zoom" center="1920,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
+	    <animation condition="Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]" effect="zoom" start="100,100" end="100,51" time="0">Conditional</animation>
+		<animation description="Horizontal-Zoom" condition="!Skin.HasSetting(TopInformationSize) + Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.3" time="0">Conditional</animation>
+		<animation description="Horizontal-Zoom2" condition="Skin.HasSetting(TopInformationSize) + Skin.HasSetting(HomeFanartHalfScreen) + [Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)]" effect="zoom" start="100,100" end="100,74.7" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_he" condition="Skin.HasSetting(HomeFanartHalfScreen) + Skin.String(MenuDesign,4) + String.IsEqual(System.Language,Hebrew)" effect="zoom" center="0,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
+		<animation description="No full Fanart-Vertical_en" condition="Skin.HasSetting(HomeFanartHalfScreen) + Skin.String(MenuDesign,4) + !String.IsEqual(System.Language,Hebrew)" effect="zoom" center="1920,0" start="100,100" end="86.3,100" time="0">Conditional</animation>
 	    <animation description="Slide-Panel" condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | [[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious() + Player.HasVideo]]" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
 		<animation description="Slide-Horizontal" condition="![Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + Player.HasVideo" effect="slide" start="0,0" end="0,551" time="220">Conditional</animation>
-		<animation condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + !Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditional</animation>
+		<animation condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + [[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] | Player.HasVideo] + Skin.HasSetting(HomeFanartHalfScreen)" effect="fade" start="100" end="0" time="220">Conditional</animation>
 		<aspectratio align="top">scale</aspectratio>
 		<imagepath background="true">$VAR[background]</imagepath>
 		<include>MultiFanart_TimePerImage</include>
@@ -29,13 +29,13 @@
 		<posy>0</posy>
 		<height>1080</height>
 		<width>1920</width>
-		<visible>!Player.HasVideo | [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + !Skin.HasSetting(HomeFanartHalfScreen)</visible>
+		<visible>!Player.HasVideo | [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)] + Skin.HasSetting(HomeFanartHalfScreen)</visible>
 		<visible>!Skin.HasSetting(background) | $EXP[ContentsWidget]</visible>
 		<visible>!Container.Scrolling + !Container.OnScrollNext + !Container.OnScrollPrevious + !Container.OnNext + !Container.OnPrevious</visible>
 	  </control>
 	  <control type="image" description="רקע תחתון צבע">
 	    <include condition="Skin.String(MenuDesign,4)">TopInformationSize0</include>
-	    <include condition="Skin.String(MenuDesign,4) | [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]">TopInformationSize1</include>
+	    <include condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]">TopInformationSize1</include>
 		<include description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)]">Control_Pos36</include>
 		<animation condition="[!Container(9000).Row(0) + !Container(9000).Row(1) | Container(9000).HasPrevious()] + [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]" effect="slide" start="0,0" end="0,29" time="220">Conditional</animation>
 		
@@ -56,7 +56,7 @@
   <include name="Backgrounds1_">
 	  <control type="image" description="רקע תחתון טקסטורה">
 		<include condition="Skin.String(MenuDesign,4)">TopInformationSize0</include>
-		<include condition="Skin.String(MenuDesign,4) | [Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]">TopInformationSize1</include>
+		<include condition="[Skin.String(MenuDesign,0) | Skin.String(MenuDesign,1) | Skin.String(MenuDesign,7)]">TopInformationSize1</include>
 		<include description="slide-horizontal" condition="[Skin.String(MenuDesign,2) | Skin.String(MenuDesign,3) | Skin.String(MenuDesign,6) | !Skin.String(MenuDesign)]">Control_Pos36</include>
 		<include description="slide-Vertical_he" condition="[Skin.String(MenuDesign,4) | Skin.String(MenuDesign,5)] + String.IsEqual(System.Language,Hebrew)">Control_Pos40</include>
 		<include>Fade_MainBackgroundOverlay</include>
@@ -1138,7 +1138,7 @@
 	<value condition="Skin.String(background94)">$INFO[Skin.String(background94)]</value>
   </variable>
   <variable name="background95">
-    <value condition="!Skin.String(background95) | String.Contains(Skin.String(background95),special://skin)">http://i.imgur.com/dzMGjSz.jpg</value>
+    <value condition="!Skin.String(background95) | String.Contains(Skin.String(background95),special://skin)">special://home/addons/plugin.video.youtube/fanart.jpg</value>
 	<value condition="Skin.String(background95)">$INFO[Skin.String(background95)]</value>
   </variable>
   <variable name="background96">

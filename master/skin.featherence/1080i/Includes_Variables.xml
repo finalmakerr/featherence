@@ -5,7 +5,7 @@
 	<value condition="![!String.Contains(Container.FolderPath,plugin://plugin.video.youtube/)]">3</value>
 	<value condition="![!Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(MyPics.xml) + !Window.IsVisible(FileBrowser.xml)]">4</value>
 	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31011])] + !Skin.HasSetting(ShowDVDCases2)">14</value>
-	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31013])] + !Skin.HasSetting(ShowDVDCases)">5</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31013])] + Skin.HasSetting(ShowDVDCases)">5</value>
 	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31016])] + !Skin.HasSetting(ShowDVDCases)">15</value>
 	<value condition="![ [ [ [String.IsEqual(Container.Viewmode,$LOCALIZE[31015])] | [String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] ] + Skin.HasSetting(ShowDVDCases2) ] | ![String.IsEqual(Container.Viewmode,$LOCALIZE[31015])] + ![String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] ]">6</value>
 	<value condition="![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + !Window.IsVisible(Home.xml)">7</value>
@@ -373,7 +373,10 @@
 	  <value condition="!String.Contains(ListItem.Writer,/)">http://localhost:52307/getthumb&amp;title=$INFO[Listitem.Writer]</value>
 	  <value>DefaultActor2.png</value>
   </variable>
-  
+  <variable name="getcastcontents">
+    <value condition="Container.Content(tvshows)">plugin://script.skin.helper.service/?action=getcast&amp;tvshow=$INFO[ListItem.Title]&amp;downloadthumbs=true</value>
+    <value condition="">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[ListItem.Title]&amp;downloadthumbs=true</value>
+  </variable>
   <variable name="TopVideoInformation1112a">
     <value condition="Integer.IsGreater(ListItem.Property(TotalSeasons),1) + [Container.Content(tvshows)]">$INFO[ListItem.Property(TotalSeasons)] </value>
   </variable>

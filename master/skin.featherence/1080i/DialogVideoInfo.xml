@@ -231,7 +231,10 @@
 		    <scrolltime>220</scrolltime>
 			<!-- itemlayout movies -->
 			<include>ActorsLayout</include>
-			<content>plugin://script.skin.helper.service/?action=getcast&amp;title=$INFO[ListItem.Title]&amp;downloadthumbs=true</content>
+			<include>getcastcontents</include>
+			<content>$VAR[getcastcontents]</content>
+			
+			<!--<content>plugin://script.skin.helper.service/?action=getcast&amp;title=$INFO[ListItem.Title]&amp;downloadthumbs=true</content>-->
 		</control>
 	
 		<control type="panel" id="52" description="במאי/כותבים">

@@ -91,7 +91,7 @@ def mode5(value, admin, name, printpoint):
 			installaddonP('resource.uisounds.featherence')
 			installaddonP('script.module.unidecode', update=False)
 			installaddonP('script.skinshortcuts')
-		xbmc.sleep(2000) ; setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
+		xbmc.sleep(5000) ; setSkin_Update(admin, datenowS, Skin_Version, Skin_UpdateDate, Skin_UpdateLog)
 	
 	setProperty('TEMP', '', type="home")
 	
@@ -1327,6 +1327,7 @@ def mode70(value, admin, name, printpoint, property_temp):
 	'''------------------------------
 	---ExtendedInfo------------------
 	------------------------------'''
+	xbmc.executebuiltin('ActivateWindow(busydialog)')
 	listitemlabel = xbmc.getInfoLabel('ListItem.Label')
 	listitemdbid = xbmc.getInfoLabel('ListItem.DBID')
 	listitemtitle = xbmc.getInfoLabel('ListItem.Title')
@@ -1438,6 +1439,7 @@ def mode70(value, admin, name, printpoint, property_temp):
 		installaddon(addon, update=True)
 		#installaddonP(addon, update=True)
 	
+	xbmc.executebuiltin('Dialog.Close(busydialog)')
 	text = "input" + space2 + input + space + 'value' + space2 + str(value) + newline + \
 	"INFO" + space2 + "listitemlabel" + space2 + listitemlabel + newline + "listitemtvshowtitle" + space2 + listitemtvshowtitle + newline + \
 	"listitemtitle" + space2 + listitemtitle + newline + "listitemdbid" + space2 + listitemdbid + newline + \

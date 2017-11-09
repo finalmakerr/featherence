@@ -1231,6 +1231,12 @@ def getfileID(file):
 	elif file == "GameCube_1P_TY the Tasmanian Tiger.zip": fileID = "8tgsii63y94lzje" #featherence.guser30
 	elif file == "GameCube_1P_Star Wars Rogue Squadron II - Rogue Leader.zip": fileID = "z2aommzvxdnaolz" #featherence.guser30
 	elif file == "GameCube_1P_P.N.03.zip": fileID = "59796rfj9csxv3o" #featherence.guser31
+	elif file == "GameCube_1P_The Simpsons Hit And Run.zip": fileID = "v9dr2ym9p0msffw" #featherence.guser31
+	elif file == "GameCube_1P_Spider Man 2.zip": fileID = "paymahssgfwrt1c" #featherence.guser32
+	elif file == "GameCube_4P_Viewtiful Joe Red Hot Rumble.zip": fileID = "we1jow8w43xzzly" #featherence.guser32
+	elif file == "GameCube_4P_Crash Tag Team Racing.zip": fileID = "bbjqevootnn4y4o" #featherence.guser33
+	elif file == "GameCube_4P_Sonic Riders.zip": fileID = "w98uu0tqyo9tvkz" #featherence.guser33
+	elif file == ".zip": fileID = "" #featherence.guser33
 	
 	elif file == ".zip":
 		fileID_L.append('[GD]') #featherence.user1 [GD]

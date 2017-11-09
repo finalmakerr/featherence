@@ -1,0 +1,746 @@
+-------------------------
+---www.featherence.com---
+-------------------------
+
+------------------------
+WIP - WORK IN PROGRESS
+------------------------
+- ??Added option to hide Top Video Information on fullscreen video while skiping back/next.
+- Added option to disable the auto close of the video/audio OSD.
+- Added option to choose highlight font color.
+
+------------------------
+Featherence v0.7.9 (09-Nov-17)
+------------------------
+- Added actors, director and writers thumbnails and information support across any addon.
+- Added info OSD button.
+- Added EventLog window.
+- Added Kodi's settings information.
+- Added option to download Weather icons and backgrounds pack.
+- Added Video player information on fullscreen pause.
+- Major update of default icons.
+- Minor update of default skin settings.
+- Minor update of video screen pause image.
+- Minor update OSD buttons textures.
+
+------------------------
+Featherence v0.7.8 (30-Oct-17)
+------------------------
+- Major update of default skin settings. Enabled by default now.
++ Allow Thumbnails Fanart.
++ Cover Distance.
++ Fanart-Home Full Screen.
++ Larger Icons.
++ Show Fanart from Episode / Season.
++ Top Bar size.
++ Video Information Font Size.
+- Minor bugs fix.
+- Minor update of Performance settings.
+- Video Information bar is now always visible.
+
+------------------------
+Featherence v0.7.7 (05-Oct-17)
+------------------------
+- Minor bugs fix.
++ In skin design and home window.
++ Show addon status (Disable, Enable, Uninstalled).
++ Time information font tweaked to fit screen.
++ When Super Widget and Standard Kodi Widget are active.
+
+------------------------
+Featherence v0.7.6 (29-Aug-17)
+------------------------
+- Minor bugs fix.
+
+------------------------
+Featherence v0.7.5 (28-Aug-17)
+------------------------
+- Major bug fix of Manual search string (Subtitles Window).
+- Minor update of DialogGameControllers window.
+
+------------------------
+Featherence v0.7.4 (20-Jul-17)
+------------------------
+- Added auto hide for ExtendedProgressBar during fullscreen video (for example Quasar progress bar).
+- Minor bugs fix.
++ DVDcases not showing up.
+- Minor performance improved.
+- Minor update of Super Widget feature.
+- Wall and Poster view are now always static (no shrink option).
+
+------------------------
+Featherence v0.7.3 (17-Jun-17)
+------------------------
+- Added option to control TopMenuDialogSlider transperancy (Subtitle Offset).
+- Increase maximum customised buttons by 10.
+- Minor bugs fix.
+
+------------------------
+Featherence v0.7.2 (10-Apr-17)
+------------------------
+- Added 3 different weather fanart packages (Skin Settings).
+- Added 8 different weather icons packages (Skin Settings).
+- Added DialogGameControllers window.
+- Added High Performance option (Skin Settings).
+- Added new category Add-in in skin settings (Easily install and manage Featherence's dependencies).
+- Buttons Layout is now selectable.
+- Clicking on the left menu icon will pop it up.
+- Clicking on the Top Bar while video is playing will open it up and the video OSD.
+- Minor bugs fix.
+
+Dialogues:
+- Major design update.
+- Minor update of some dialogues windows.
+- Position has been slightly improved.
+
+Home:
+- Added support for additional 10 main buttons (total of 20+7).
+- Added auto ID fix for bugged main buttons.
+- Major update of Vertical layout.
+
+Overall Design:
+- Added light black frame to every poster image.
+- 2D Buttons are now perfect squared with no radius (Across the skin).
+- Main Color now effect thumbnails border and fill them up when needed.
+- Major overall design updates (A lots of design prespective as been updated!).
+- Major update of Dialogs windows.
+- Major update of EPG timeline window.
+- Major update trailers OSD buttons.
+- Minor update of SettingsProfile window.
+- Minor update of Weather window.
+
+Performance:
+- Major reduce of Textures.xbt size.
+- Apply Power of Two Rule for all skin images.
+- Major reduce of unnecessary animations and layers of images.
+- Auto Trigger feature for ignoring extensive images processing during some instances.
+
+Top Information Bar:
+- Added MPAA, Ratings and Votes to DialogVideoInfo window.
+- Added two more sizes for top information bar.
+- Icons are now auto trigger on idle in the position of the time information.
+- Major design update.
+- Video Information is now triggered only when there are enough info.
+
+Views:
+- Added Covers Distance and Full Fanart features to Line view.
+- Added option to show video duration for Side List view.
+- Added Sliding/Fade Animation for some views.
+- Fade Animation is set to default for some views.
+- Major design update.
+
+Widget:
+- Added full genres support.
+- Added Super Widget feature. You may now assign a path for a button which will generate a complete dynamic widget.
+- Added Widget Position, Show Rating, Widget Shrink and Widget Fade features.
+- Added widget preview for easier configuration.
+- Major design update.
+- Major update of Widget animations and overall design.
+- Minor update of widget script.
+- Selected widget is more noticeable.
+- Widgets are now available during video playback (Size reduced!)
+
+------------------------
+Featherence v0.7.1 (02-Feb-17)
+------------------------
+- Added icons to power off sub buttons.
+- Added view addons changelog button for Krypton.
+- Bugs fix:
++ Always show volume level on mute.
++ Circles shapes + reshape/bigger icons features.
++ Clear fanart preview.
++ Colour focus keyboards buttons.
++ Fade time between different skin windows transition.
++ Issue with setting fanart to a single sub menu.
++ MyPVRGuide + DialogPVRInfo topvideoinformation.
++ Play random trailers (from widget).
++ Texture fanart background.
++ Sub Menu action feature (in different language then English).
++ Widgets actions information in skin design window.
++ Others..
+- Major update of Cross Fade Time (Multi-Fanart feature).
+- Minor update of addon settings window.
++ Description are smaller in height and can be auto scroll by demand.
+- Minor update of skin design pop up.
++ 0.5 sec delay added in order to see the current fanart when editing.
++ Improved please wait screen and preview.
++ Remember last fanart for preview purpose.
+- Minor update of Allow thumbnail fanart feature to support all skin views.
+- Minor update of skin design settings information.
+
+------------------------
+Featherence v0.7.0 (16-Jan-17)
+------------------------
+- ***Added Krypton support***.
+- Added action information in skin design window for Buttons, Sub Buttons and Widgets.
+- Added Artist Slideshow support (WIP).
+- Added auto-skin resolution support for touch devices and new TV with high resolution.
+- Added feature to show video/audio OSD by mouse clicking the top information bar.
+- Added left menu settings icon for skin's views.
+- Added option to ignore fanart for movies/tvshows widget.
+- Added music visualation support.
+- Added Party Mode feature to music library.
+- Added Premiered information to Side List view instead of year when available.
+- Added ScrollBar support to PVR Guide window.
+- Added show ratings feature to Side Wall view.
+- Added Topvideoinformation layer for DialogFavourites window.
+- Added WINDOW_DIALOG_CMS_OSD_SETTINGS.
+- Major update of skin animation performance (Less slow down!).
+- Minor bugs fix.
+- Minor update of skin layouts.
+- Minor update of SmartPlaylistEditor window.
+- Minor update of widget's labels design.
+
+------------------------
+Featherence v0.6.8 (24-Nov-16)
+------------------------
+- Added Romanian translation.
+- Minor bugs fix with Side Wall view.
+***Final version for Jarvis (Kodi-16)***
+
+------------------------
+Featherence v0.6.7 (17-Nov-16)
+------------------------
+- Added next/previous buttons arrows to horizontal3 layout.
+- Added show dvdcases option to Side View.
+- Major update of Side Wall view.
++ Added autoview/forceview support.
++ Added option to toggle LTR and RTL versions without changing the language.
++ Added option to toggle sliding/fade animation of the video information.
++ Added support for Programs, Pictures, music and addons view.
++ Fixed watched icons. 
+- Major bug fix with allow thumbnail fanart feature.
+- Major bug fix with edit button of SmartPlaylistRule window.
+- Minor update of Fanart Transperancy option for views: Wall, Side Wall and Posters.
+- Minor update of semi-auto subtitle script.
++ Increased timeout between refreshing and switching a server.
+- Minor update of top video information alignment.
+- Minor update of preview videoplayer in settings window.
++ Window is full sized and video preview at the side.
+
+------------------------
+Featherence v0.6.6 (03-Nov-16)
+------------------------
+- Added new view: Side Wall (WIP).
+- Added option to enable failsafe fanart.
++ For example: Entering Movies button and selecting an item without a fanart will display the movie's fanart of your homepage button.
+- Added option to enlarge widgets labels.
+- Added option to favour Center List over Side List view for some dialogs (FileBrowser for example).
+- Exit full screen video now always require one click only.
+- Minor bug fix with missing textures in dialogvideoinfo.
+- Minor update of DVDCases visibility.
+- Minor update of Covers Transperancy option.
+
+------------------------
+Featherence v0.6.4-5 (27-Oct-16)
+------------------------
+- Added new design mode for Center List view.
+- Added new design mode for Poster view.
+- Added new design mode for Wall view.
+- Added new video preview window for Center List view.
+- Added option to hide fanart on navigation for Wall and Poster views.
+- Added option to show fanart on half screen (in order to see it all in some users configurations).
+- Added play trailer in-full screen support for trailers button in all views.
+- Minors bugs fix.
++ DVDCases for movies sets / collections.
++ Home Buttons position are now saved when returning to home window.
++ script.module.unidecode unable to auto-installed.
++ Unable to edit custom widgets.
+- Minor performance update of animation during videoplayback.
+- Minor update of DialogSeekBar
++ Added seeking with mouse support.
++ Added time pass label.
++ Added seeking animation.
+- Minor update of English translation.
+- Minor update of Mini buttons.
++ Support scrolling back/forward in all layouts.
+- Skin design's top buttons are now always visible.
+
+------------------------
+Featherence v0.6.3 (20-Oct-16)
+------------------------
+- Added ForceView feature.
+- Added new design mode for Side List view.
+- Added new effect: Boat mode for Line view.
+- Added option to change video/audio OSD position (Setting is hidden by the stop OSD button).
+- Added transitions category in skin settings.
++ Moved Fade and zoom transitions settings from advanced category.
++ Added option to choose a logo and background between windows transition.
++ Added option to choose size and position of transition logo.
++ Added realtime preview for easy setup.
+- Animation fade tweak of trailers buttons.
+- Assigning icon/fanart image to a button no longer require clicking the OK button - Can simply click on the image.
+- Minor update of semi-auto subtitles.
++ Increased font size for semi-auto subtitles script notification.
++ Smart/Manual subtitle search now properly interrupt the script.
+- Major bug fix with button's widget aren't visible when tvshows library is empty.
+- Major bug fix with some touch device unable to edit main menu buttons (WIP).
+- Major update of DialogVideoInfo window.
++ *Added actors, director and writers thumbnails support across any addon.
+*Require script.skin.helper.service and script.extendedinfo.
++ Added directors and writers selection panel, including all writers information.
++ Added extra information to DialogVideoInfo window: Director, Studio, Writer, Country, Premiered..
+- Minor bugs fix.
+- Minor update of auto-close video/audio OSD feature.
+- Minor update of DVDCases colors per rating: Blue = High Rated 9+, Yellow = Local, Red = Set.
+- Minor update of extra mouse support feature.
+- Update network connection icon.
+
+------------------------
+Featherence v0.6.2 (13-Oct-16)
+------------------------
+- Added busy transition for skin windows.
+- Added extra coloring support for DialogNumeric window (Synced with DialogKeyboard).
+- Added extra mouse support option (WIP).
++ To be activate in the Mouse category.
++ This feature is auto-enabled if touch support is also enabled.
+- Added Next Aired support.
+- Added option to change font size of plot information.
+- Added option to change size of video/audio playback settings.
+- Added option to display fanart from episode and season thumbnail.
+- Added option to enable zoom animation between different skin windows.
+- Added option to lock up to 10 specific addons.
+- Added option to show trailers buttons for Side List, Center List, Poster, Wall and List views.
+- Added radio/tv channels toggle button in PVR side menu.
+- Added trailers buttons to widget window.
+- Added View Options side-button to Center List and Small List views.
+- Added volume category in skin design window with the following options:
++ Show volume icon, choose volume icon, volume background color, volume icon color, volume position, volume background overlay, volume icon overlay, show volume level percent, always show volume level on mute.
+- Major bugs fix with touch buttons on some windows.
+- Major update of Center List view.
++ Added RTL support and improved design.
+- Major update of Side List view.
++ Thumbnail support for any episodes, seasons, tvshows and movies.
++ Enlarge icon overall update.
+- Major update of subtitles semi-auto search notification.
++ Improve the search time duration and cycle between subtitles server.
++ Added support for any subtitles service.
++ Added status and timer notifications in the subtitles dialog window.
++ Added user interrupting and no subtitles were found notifications.
++ Overall script performance improved and bugs fix.
++ Removed the previous notifications.
++ Subtitles window will be auto faded also when there is no subtitle enable and no subs are currently found.
+- Major update of system information window.
+- Minor update of center menu / sub menu.
+- Minor update of DialogPVRChannelManager window.
+- Minor update of DialogSubtitles window.
+- Minor update of PVR window.
+- Minor update of Kodi's settings window.
+- Minor update of skin windows transition.
+- Minor update of Topvideoinformation window.
+
+------------------------
+Featherence v0.6.1 (02-Oct-16)
+------------------------
+- Added noification for unlocking a button with a password.
+- Added option to always hide library updating progress dialog when watching a video.
+- Added option to change button's colors overlay.
+- Added option to color font of Focus and Unfocus widget labels.
+- Added option to color font of Dialogs window title and content.
+- Added option to color font of Virtual Keyboard title and text.
+- Added option to color font of Top Information bar and Top Video Information bar.
+- Added option to enlarge icon in Side List view.
+- Added option to reset any single button to default state.
+- Added option to toggle show widget label's background on/off.
+- Added option to tweak maximum movies/tvshows widget items.
+- Added option to tweak the fade time between different skin windows (useful for low-end hardware).
+- Added option to change the transperancy level of the locking mark/icons.
+- Added submenu and widget support for Favourite, Settings and power buttons.
+- Added two news mouse icons.
+- Major bug fix with addons who use TrakTV when it's show only "Episode No.".
+- Major bug fix with locking a button and using Sub Menu action.
+- Major bug fix with new favourite button doesn't hide when set to and doesn't take an action.
+- Minor bug fix with VideoOSD window not closing properly on home screen.
+- Major touch buttons update.
+orientation, reposition, enlarge, executing action from skin design window support.
+- Major update of DialogSubtitles window.
+Added option to show current subtitle (Yellow) and previous (Grey) subtitles (WIP).
+Added auto refresh for current subtitles provider and skip to next if none are found and user is idle.
+- Major update of Color Background dialogues.
+- Major update of Smart search string feature (subtitles).
+- Minor bug fix with Random Background from widgets not working properly.
+- Minor design update of the three additionals small buttons.
+Also added a sync for big icons feature between the standards and those small icons.
+- Minor update of fanart position when browsing on some windows while video is playing.
+- Minor update of Featherence Classico Plus.
+- Minor update of Horizontal 2 layout.
+- Minor update of save/load feature.
+- Minor update of widget labels and frame size.
+- RSS category has been merged with Upper Design category.
+
+------------------------
+Featherence v0.6.0 (23-Sep-16)
+------------------------
+- Added IMDB rating to Side List view (Can be toggle on/off).
+- Added pass-lock category in skin design window.
+- Added password lock setting for skin design window.
+You better remember your password now if this option is enable
+- Added option to always show video/audio settings in the Video OSD buttons.
+- Added option to toggle skin changelog on/off and tweak it to show for Today, two days or a one week.
+Default is now 2 days - The day of the update and the next day.
+- Added option to change mouse cursor icon and color.
+- Added option to have a bit larger Top Information bar.
+- Added option to reschedule lock up after x minutes.
+- Added option to toggle button's labels postion in/out of the button.
+- Added option to toggle skin version on/off in home window.
+- Added option to have a 3 smaller icons at the end of your Vertical/Horizontal layout (Favourite, Settings, Power).
+- Added option to set RSS visibility across the entire skin.
+- Added option to set RSS delay time.
+- Added RSS category in skin design window.
+- Added RSS support.
+- Added two new buttons layout views: Horizontal 3 (9) and Panel 3 (18).
+- Added two new widget layout: Horizontal 7/9
+- Default favourite button ID has been changed.
+If you have two buttons you may disable one.
+- Minor bug fix with Arial font when switching skins.
+- Major bug fix with Transperancy Colour Fanart Background feature.
+- Major update of lock/unlock design and position.
+- Minor bugs fix.
+- Minor update of big icons feature.
+- Minor update of DialogFavourites window.
+- Major update of Touch Screen feature.
+Useable in every dialog window, design tweaked, can change the icon etc..
+- Minor update of Vertical layout.
+
+------------------------
+Featherence v0.5.12 (18-Sep-16)
+------------------------
+- Added customized image on startup.
+Can work pretty good with video intro follow up.
+- Added full widget support.
+You may now add widget to any button with full actions support, icons, fanart etc..
+Moving widgets around is very user friendly.
+- Added internal widget support for movies, tvshows and weather.
+You may now decide which button carry those build-in widgets and see which one is with a special mark (When in the skin design window).
+- Added shapes and effects support for widgets.
+- Added widget category in skin design window.
+- Minor bugs fix.
+- Minor performance boost.
+- Update Featherence Classico auto-update feature.
+- Update Music in Slideshow and Screensaver feature.
+- Update pass protection feature.
+You won't be able to enter any locked button at all without the right password and widgets will remain hidden.
+- Update titles design in DVD Case mode for views: Wall, Poster and Line.
+- Update video intro feature.
+
+------------------------
+Featherence v0.5.11 (11-Sep-16)
+------------------------
+- Add genres icons and multilanguage labels support for several addons.
+- Featherence Classico Plus build has been updated!
+Featherence Classico Plus build is now auto-update and available through the load button (save/load), changelog included from within Kodi.
+- Improve video intro feature.
+- Update AutoView feature.
+- Update FileBrowser window information.
+
+------------------------
+Featherence v0.5.10 (07-Sep-16)
+------------------------
+- Added Featherence GUI sound.
+- Added option to choose delay time for Video and Audio intro.
+- Added option to force volume level on startup.
+- Added startup category in skin settings.
+- Major bug fix with FileBrowser.
+- Update auto close video/audio OSD feature.
+
+------------------------
+Featherence v0.5.9 (29-Aug-16)
+------------------------
+- Update Color Fanart Background feature.
+- Update save/load feature and bug fix on some hardwares.
+
+------------------------
+Featherence v0.5.8 (31-Jul-16)
+------------------------
+- Major bug fix of coloring virtual keyboard.
+- Minor bug fix of Video OSD buttons while playing live TV (PVR).
+- Minor bug fix of showing top information bar upon entering a fullscreen video.
+- Update video osd auto close feature.
+
+------------------------
+Featherence v0.5.7 (24-Jul-16)
+------------------------
+- Playlist OSD button is now visible again.
+- Update music on slideshow feature.
+
+------------------------
+Featherence v0.5.6 (02-Jul-16)
+------------------------
+- Update playlist information during playback (Top Information Window).
+
+------------------------
+Featherence v0.5.5 (25-Jun-16)
+------------------------
+- Major performance update on home screen when fanart is enabled.
+
+------------------------
+Featherence v0.5.4 (19-Jun-16)
+------------------------
+- Added Multi-Fanart Cross Fade Time, Time per Image and shuffle/randomize options.
+- Major bug fixed of selecting colors.
+- Major bug fix with ExtendedInfo + TVshows addons.
+- Skin's changelog now can be toggle on/off (Featherence Service Settings).
+
+------------------------
+Featherence v0.5.1-3 (16-Jun-16)
+------------------------
+- Major bug fix with Video OSD on the subtitles window and on pause.
+- Major performance update on startup.
+- Major update of startup Music and Video.
+- Minor update of choosing icon/fanart method.
+- Minor update of skin's icons.
+
+------------------------
+Featherence v0.5.0 (11-Jun-16)
+------------------------
+***Jarvis (Kodi 16) will be supported now in Featherence Repo!
+Previous version of Kodi is available through http://offshore.git.com/finalmakerr***
+- Added download support for certain addons.
+- Added script.extendedinfo mod by Openeleq (Play/Add to library from various addons).
+- Major reduce of skin size.
+- Minor update of Featherence Emu's views.
+- Minor update of save build feature.
+- Minor update of video OSD buttons.
+- Update autocomplete feature.
+- Update subtitles dialog window.
+
+------------------------
+Featherence v0.4.10 (21-May-16)
+------------------------
+- Added scroll bar to coloring window.
+- Added 600+ new colors!! (Patch by George)
+- Added Multi-Fanart limited support using save/load.
+- Update Password Protection feature.
+- Update Tips on wait.
+  
+------------------------
+Featherence v0.4.9 (22-Apr-16)
+------------------------
+- Added buttons password protection (WIP).
+- Minor bug fix when loading a build - sometimes few buttons are missing.
+- Touch device support (WIP).
+- Update vertical menu to work better with BigIcons feature.
+
+------------------------
+Featherence v0.4.8 (29-Mar-16)
+------------------------
+- Added option to disable default widget.
+- Bug fix: Shutdown button.
+- Update coloring menu.
+
+------------------------
+Featherence v0.4.7 (11-Mar-16)
+------------------------
+- Added big icons feature to home buttons.
+  You may now enlarge your icons to fit one of 6 available shapes.
+- Added Action and Thumbnail toggle when selecting an action for a button.
+- Added multi fanart support for main/sub buttons.
+- Added weather resources addons in the skin folder - for Isengard only!
+- Minor bugs fix.
+- Update user path script for icons/fanart.
+
+------------------------
+Featherence v0.4.6 (25-Feb-16)
+------------------------
+- Added Repeat to video OSD buttons.
+- Added Yahoo support for Post in Facebook button.
+- Major Jarvis bug black screen fix.
+- Minor update Checkerboard template.
+- Update Music and Video on startup and slideshow.
+  You may now choose single file or path to be played randomly when triggered.
+- Update slideshow window information.
+
+------------------------
+Featherence v0.4.5 (22-Feb-16)
+------------------------
+- Added DialogPVRChannelManager and DialogPVRGroupManager.
+- *Added Jarvis support!
+- Minor update DialogSubtitles.
+- Major internal code maintenance.
+- Side Menus stay visible for few more seconds on unfocus.
+
+*Install from ZIP: http://offshoregit.com/finalmakerr
+
+------------------------
+Featherence v0.4.4 (14-Feb-16)
+------------------------
+- Added additonal Sub Menu action method.
+  You may use it to activate main button on a click or sub menu on an arrow click (depend on your current layout).
+- Added full video information on pause.
+- Added Save and Load button shortcut in Skin Design window.
+- Fixed path (special://) for buttons's Icons and fanart.
+  You may save then load to create special:// path for your current buttons all at once.
+- Minor bugs fix.
+- You may now change the action of the default buttons (or revert back if needed).
+
+------------------------
+Featherence v0.4.2 (11-Feb-16)
+------------------------
+- Added background for sub menus (optional).
+- Improve performance when scrolling.
+- Minor bugs fix.
+- Update coloring preview.
+- Update Music, File Manager, DialogMediaSource windows.
+
+------------------------
+Featherence v0.4.1 (05-Feb-16)
+------------------------
+- Minor bugs fix.
+- Reduce skin size.
+- Update build's management tool.
+- Update Transperancy template.
+
+------------------------
+Featherence v0.4.0 (04-Feb-16)
+------------------------
+- Added new templates: Transparency, Checkerboard.
+- Added reshape feature for custom icons with background (optional).
+- Added top info for file browser window (aka choosing icons/backgrounds).
+- Major update button's shapes and layouts sync.
+- Major update dialogsubtitles window.
+- Minor bugs fix.
+- Update description given in skin design options.
+- Update dialog select window.
+- Update subtitles history feature.
+- Update top backgrounds effects.
+- Update transperancy options preview feature.
+
+------------------------
+Featherence v0.3.2-4 (01-Feb-16)
+------------------------
+- Added 2D mode for all buttons (optional).
+- Added 5 different home buttons's shapes.
+- Added 400+ new colors option via manual mode.
+- Added coloring opion for menu's buttons (Focus/Unfocus).
+- Added coloring option for all backgrounds menus.
+- Added coloring opion for keyboard background, edit area and buttons (Focus/Unfocus).
+- Added preview display for all coloring options.
+- *Added double click check for some windows (aka if double click do different action).
+* For example - double clicking on selected color will go to save button, otherwise stay on the same button.
+- Added info button in coloring window.
+- Major update of all buttons textures and effects.
+- Major update of all dialog windows.
+- Major update of skin design options sort order.
+- Minor bugs fix.
+- You may now color, reshape and set overlay for every apsect in the skin.
+- Update colors window.
+- Update Default and Classico template.
+- Update radio buttons
+- Update transperancy option for all menu buttons.
+
+------------------------
+Featherence v0.3.1 (26-Jan-16)
+------------------------
+- Added icons to skin design's menus.
+- Added template: Classico.
+- DVD case is now marked for Wall and Posters views.
+- Major reduce skin size.
+- Update dialogtextviewer.
+- Update integrated player window.
+- Update weather icons and fanarts.
+
+------------------------
+Featherence v0.3.0 (24-Jan-16)
+------------------------
+- Added Show poster as fanart (optional).
+- Added fanart overlay adjustment for Wall and Posters views.
+- Added choose overlay for sub marker.
+- Minor bugs fix.
+- Update ExtendedInfo actions.
+- Update dialogselect window.
+- Update videos information bar.
+- Update widget script.
+
+------------------------
+Featherence v0.2.7 (20-Jan-16)
+------------------------
+- Minor bugs fix.
+- Update backup script.
+
+------------------------
+Featherence v0.2.5 (13-Jan-16)
+------------------------
+- Added custom action path.
+- Added default icons menu.
+- Minor bugs fix.
+- Update backup script.
+
+------------------------
+Featherence v0.2.4 (13-Jan-16)
+------------------------
+- Minor bugs fix.
+- Update backup script.
+
+------------------------
+Featherence v0.2.3 (06-Jan-16)
+------------------------
+- Minor bugs fix.
+
+------------------------
+Featherence v0.2.2 (01-Jan-16)
+------------------------
+- Added PVR support.
+- Option to enlarge Side List view for extra information.
+- Option to toggle fanart size for Side List view.
+- Update default settings.
+- Update autoview script.
+- Update ExtendedInfo buttons.
+- Update views.
+- Backup script now support all languages.
+- Minor bugs fix.
+
+------------------------
+Featherence v0.2.1 (24-Dec-15)
+------------------------
+- Minor bugs fix.
+- Update Side List view.
+- Update Save/Load script.
+
+------------------------
+Featherence v0.2.0 (22-Dec-15)
+------------------------
+- Added few more colors options.
+- Added default startup music.
+- Option to enlarge selected thumbnail.
+- Option to hide selector frame.
+- Option to color selector frame.
+- Option to fade out unfocused thumbnails for some views.
+- Minor update default design.
+- Update views.
+- Update inprogress and watched markers.
+- Update scrollbar.
+- Update edit manual color module.
+- *Major update save/load script.
+*Previous backups will not work.
+
+------------------------
+Featherence v0.1.4 (17-Dec-15)
+------------------------
+- Update RTL/LTR auto support. 
+- Minor bugs fix.
+
+------------------------
+Featherence v0.1.3 (16-Dec-15)
+------------------------
+- Option to reposition dialog Yes/No, OK, Busy, Progress...
+- Option to force static transperancy for unfocused buttons.
+- Option to show rolling disc art.
+- Option coloring buttons label & icons.
+- Top information auto align by language.
+- Show Tips on wait (optional).
+- Widget display genre & duration.
+- Major Update Horizontal & Vertical views.
+- Major design updates across the skin.
+- Major bugs fix.	
+
+------------------------
+Featherence v0.1.2 (13-Dec-15)
+------------------------
+- Vertical view added (two versions).
+- Horizontal view added (two versions).
+- Save/load button updated.
+
+------------------------
+Featherence v0.1.0 (09-Dec-15)
+------------------------
+- First release.
