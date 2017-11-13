@@ -823,12 +823,14 @@ def getfileID(file):
 		fileID_L.append('fn27r1mmyos91hd') #htpt
 		fileID_L.append('rlsyu3fa8pusvs3') #buy
 		fileID_L.append('1sm4z925qjhhmp7') #featherence.user28
+		fileID_L.append('sev6069n80kvl24') #featherence.user38
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
 		fileName_L.append('Source 4')
 		fileName_L.append('Source 5')
 		fileName_L.append('Source 6')
+		fileName_L.append('Source 7')
 		
 	elif file == "TurboGrafx 16.zip":
 		fileID_L.append('nrydawpwto8f0wk') #guser21
@@ -1236,7 +1238,8 @@ def getfileID(file):
 	elif file == "GameCube_4P_Viewtiful Joe Red Hot Rumble.zip": fileID = "we1jow8w43xzzly" #featherence.guser32
 	elif file == "GameCube_4P_Crash Tag Team Racing.zip": fileID = "bbjqevootnn4y4o" #featherence.guser33
 	elif file == "GameCube_4P_Sonic Riders.zip": fileID = "w98uu0tqyo9tvkz" #featherence.guser33
-	elif file == ".zip": fileID = "" #featherence.guser33
+	elif file == "GameCube_2P_Mortal Kombat Deadly Alliance.zip": fileID = "p2aj3h1r6m2sja0" #featherence.user38
+	elif file == "GameCube_4P_Sonic Heroes.zip": fileID = "6j70ncnz1p3vca1" #featherence.user38
 	
 	elif file == ".zip":
 		fileID_L.append('[GD]') #featherence.user1 [GD]

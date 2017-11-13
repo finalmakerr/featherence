@@ -12,7 +12,13 @@ WIP - WORK IN PROGRESS
 - Added G-Drive file storage support.
 - Added information for each console.
 - Added option to hide consoles on demand.
+
+------------------------
+Featherence Emu v0.1.7 (13-Nov-17)
+------------------------
+- Added about 10 more GameCube roms to 1P category.
 - Added additional sources for high demand roms.
++ Popular roms will be shown with up to 7 sources instead of 3.
 
 ------------------------
 Featherence Emu v0.1.6 (23-Oct-17)

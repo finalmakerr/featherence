@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.1.6" provider-name="finalmakerr, Angelscry">
+<addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.1.7" provider-name="finalmakerr, Angelscry">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
     <import addon="script.module.simplejson" version="2.0.9" optional="true"/>
@@ -12,7 +12,7 @@
 	<summary lang="en">Nostalgia Games</summary>
 	<summary lang="he">משחקי נוסטלגיה</summary>
     <description lang="en">Features:
-- 10 Consoles of choice.
+- 11 Consoles of choice.
 - Advanced customized settings in addon settings.
 - Adult contents support.
 - Auto generate of predifined CFG, DIFF and NVRAM Arcade's settings.
