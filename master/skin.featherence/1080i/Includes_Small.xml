@@ -358,9 +358,7 @@
   
   <include name="DialogSeekBar">
 	<control type="group" description="!VideoPlayer.Content(LiveTV)">
-		<animation effect="slide" start="0,90" end="0,0" time="200">WindowOpen</animation>
-		<animation effect="slide" start="0,90" end="0,0" time="200">VisibleChange</animation>
-		<top>1014</top>
+		<top>1020</top>
 		<visible>!VideoPlayer.Content(LiveTV)</visible>
 		<control type="image">
 			<left>0</left>
@@ -393,24 +391,26 @@
 			<overlaytexture>-</overlaytexture>
 			<info>Player.Progress</info>
 		</control>
+		<control type="slider" id="401">
+			<left>0</left>
+			<top>27</top>
+			<width>1920</width>
+			<height>35</height>
+			<texturesliderbar colordiffuse="00FFFFFF">osd/nub_bar.png</texturesliderbar>
+			<textureslidernib colordiffuse="$VAR[ButtonUnFocusColor]">osd/nub_bar.png</textureslidernib>
+			<textureslidernibfocus colordiffuse="$VAR[ButtonFocusColor]">osd/white.png</textureslidernibfocus>
+			<!--<visible>Player.Seeking</visible>
+			<visible>!Window.IsVisible(VideoOSD.xml)</visible>-->
+			<orientation>horizontal</orientation>
+		</control>
 		<control type="label" id="402">
 		  <font>size24</font>
 		  <posx>7</posx>
 		  <posy>7</posy>
 		</control>
-		<control type="slider" id="401">
-			<action>seek</action>
-			<left>0</left>
-			<top>27</top>
-			<width>1920</width>
-			<height>35</height>
-			<texturesliderbar colordiffuse="yellow">osd/texturebg_cache.png</texturesliderbar>
-			<textureslidernib colordiffuse="BBBBBBBB">osd/midtexture.png</textureslidernib>
-			<textureslidernibfocus bordercolordiffuse="yellow">osd/midtexture.png</textureslidernibfocus>
-			<visible>Player.Seeking</visible>
-			<visible>!Window.IsVisible(VideoOSD.xml)</visible>
-		</control>
+		
 	</control>
+	
   </include>
 	  
   <include name="Duration_">

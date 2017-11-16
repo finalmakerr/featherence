@@ -1002,9 +1002,9 @@ def CATEGORIES104(name, iconimage, desc, fanart):
 	CATEGORIES104P(General_LanguageL, background, background2) #דיגימון
 	CATEGORIES104W(General_LanguageL, background, background2) #Digimon Tamers
 	CATEGORIES104Y(General_LanguageL, background, background2) #Digimon Fusion
-	CATEGORIES104Z(General_LanguageL, background, background2) #Digimon Adventure Tri
 	CATEGORIES104AA(General_LanguageL, background, background2) #Digimon Xros Wars
 	CATEGORIES104AB(General_LanguageL, background, background2) #Digimon Universe: Appli Monsters
+	CATEGORIES104AC(General_LanguageL, background, background2) #Digimon Adventure Tri
 	
 	'''דנבר הדינוזאור האחרון'''
 	thumb = 'https://www.thetvdb.com/banners/posters/73737-4.jpg'

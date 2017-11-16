@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import xbmc, xbmcaddon, sys, os
 
 from shared_variables import  space, space2, addondata_path

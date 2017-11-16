@@ -10,6 +10,12 @@ WIP - WORK IN PROGRESS
 - Added option to choose highlight font color.
 
 ------------------------
+Featherence v0.7.10 (16-Nov-17)
+------------------------
+- Minor bugs fix.
+- Minor update of textures file.
+
+------------------------
 Featherence v0.7.9 (09-Nov-17)
 ------------------------
 - Added actors, director and writers thumbnails and information support across any addon.

@@ -86,6 +86,30 @@ msgctxt "#30022"
 msgid "Fashion Shows"
 msgstr "תצוגות אופנה"
 
+msgctxt "#30023"
+msgid "Songs"
+msgstr "שירים"
+
+msgctxt "#30024"
+msgid "Karaoke"
+msgstr "קריוקי"
+
+msgctxt "#30025"
+msgid "Liveshows"
+msgstr "הופעות חיות"
+
+msgctxt "#30026"
+msgid "הופעה"
+msgstr "הופעה"
+
+msgctxt "#30027"
+msgid "שיר"
+msgstr "שיר"
+
+msgctxt "#30028"
+msgid "קריוקי"
+msgstr "קריוקי"
+
 msgctxt "#30050"
 msgid "Amir Elgazar's Playlists"
 msgstr "אמיר אלגזר פלייליסטים"
@@ -103,31 +127,31 @@ msgid "Talia Kahalani's Playlists"
 msgstr "טליה קהלני פלייליסטים"
 
 msgctxt "#30101"
-msgid "Eviatar Banai"
+msgid "אביתר בנאי"
 msgstr "אביתר בנאי"
 
 msgctxt "#30102"
-msgid "Avraham Tal"
+msgid "אברהם טל"
 msgstr "אברהם טל"
 
 msgctxt "#30103"
-msgid "Eyal Golan"
+msgid "אייל גולן"
 msgstr "אייל גולן"
 
 msgctxt "#30104"
-msgid "Aunt beehive trimmed"
+msgid "כוורת דודה גזוז"
 msgstr "כוורת דודה גזוז"
 
 msgctxt "#30105"
-msgid "Ethnix"
+msgid "אתניקס"
 msgstr "אתניקס"
 
 msgctxt "#30107"
-msgid "Dudu Aharon"
+msgid "דודו אהרון"
 msgstr "דודו אהרון"
 
 msgctxt "#30108"
-msgid "Guy and Yahel"
+msgid "גיא ויהל"
 msgstr "גיא ויהל"
 
 msgctxt "#30109"
@@ -139,39 +163,35 @@ msgid ""
 msgstr ""
 
 msgctxt "#30111"
-msgid "Danny Sanderson"
+msgid "דני סנדרסון"
 msgstr "דני סנדרסון"
 
-msgctxt "#30148"
-msgid "Israel Gurion and Dudaim"
-msgstr "הדודאים"
-
 msgctxt "#30112"
-msgid "The Revivo Project"
+msgid "הפרויקט של רביבו"
 msgstr "הפרויקט של רביבו"
 
 msgctxt "#30113"
-msgid "Harel Skaat"
+msgid "הראל סקעת"
 msgstr "הראל סקעת"
 
 msgctxt "#30114"
-msgid "Haim Moshe"
+msgid "חיים משה"
 msgstr "חיים משה"
 
 msgctxt "#30116"
-msgid "Yakov Hatan"
+msgid "יעקב חתן"
 msgstr "יעקב חתן"
 
 msgctxt "#30115"
-msgid "Aunt beehive trimmed"
+msgid "כוורת דודה גזוז"
 msgstr "כוורת דודה גזוז"
 
 msgctxt "#30117"
-msgid "Ishay Levi"
+msgid "ישי לוי"
 msgstr "ישי לוי"
 
 msgctxt "#30118"
-msgid "Lior Narkis"
+msgid "ליאור נרקיס"
 msgstr "ליאור נרקיס"
 
 msgctxt "#30119"
@@ -179,39 +199,39 @@ msgid ""
 msgstr ""
 
 msgctxt "#30120"
-msgid "Mazi Cohen"
+msgid "מזי כהן"
 msgstr "מזי כהן"
 
 msgctxt "#30121"
-msgid "Mosh Ben Ari"
+msgid "מוש בן ארי ולהקת שבע"
 msgstr "מוש בן ארי ולהקת שבע"
 
 msgctxt "#30122"
-msgid "Moshik Afia"
+msgid "מושיק עפיה"
 msgstr "מושיק עפיה"
 
 msgctxt "#30123"
-msgid "Miri Mesika"
+msgid "מירי מסיקה"
 msgstr "מירי מסיקה"
 
 msgctxt "#30124"
-msgid "Maor Edri"
+msgid "מאור אדרי"
 msgstr "מאור אדרי"
 
 msgctxt "#30125"
-msgid "Moshe Perez"
+msgid "משה פרץ"
 msgstr "משה פרץ"
 
 msgctxt "#30126"
-msgid "Mashina"
+msgid "משינה"
 msgstr "משינה"
 
 msgctxt "#30127"
-msgid "Nathan Goshen"
+msgid "נתן גושן"
 msgstr "נתן גושן"
 
 msgctxt "#30128"
-msgid "Zohar Argov"
+msgid "זוהר ארגוב"
 msgstr "זוהר ארגוב"
 
 msgctxt "#30129"
@@ -219,7 +239,7 @@ msgid ""
 msgstr ""
 
 msgctxt "#30130"
-msgid "Ivri Lider"
+msgid "עברי לידר"
 msgstr "עברי לידר"
 
 msgctxt "#30131"
@@ -227,75 +247,79 @@ msgid ""
 msgstr ""
 
 msgctxt "#30132"
-msgid "Idan Raichel"
+msgid "עידן רייכל"
 msgstr "עידן רייכל"
 
 msgctxt "#30133"
-msgid "Omer Adam"
+msgid "עומר אדם"
 msgstr "עומר אדם"
 
 msgctxt "#30134"
-msgid ""
-msgstr ""
+msgid "סטטיק ובן אל"
+msgstr "סטטיק ובן אל"
 
 msgctxt "#30135"
-msgid "Peer Tasi"
+msgid "פאר טסי"
 msgstr "פאר טסי"
 
 msgctxt "#30106"
-msgid "Berry Sakharof"
+msgid "פורטיסחרוף"
 msgstr "פורטיסחרוף"
 
 msgctxt "#30136"
-msgid "Kobi Aflalo"
+msgid "קובי אפללו"
 msgstr "קובי אפללו"
 
 msgctxt "#30137"
-msgid "Kobi Peretz"
+msgid "קובי פרץ"
 msgstr "קובי פרץ"
 
 msgctxt "#30138"
-msgid "Keren Peles"
+msgid "קרן פלס"
 msgstr "קרן פלס"
 
 msgctxt "#30139"
-msgid "Rita"
+msgid "ריטה"
 msgstr "ריטה"
 
 msgctxt "#30140"
-msgid "Rami Kleinshtein"
+msgid "רמי קליינשטיין"
 msgstr "רמי קליינשטיין"
 
 msgctxt "#30141"
-msgid "Shiri Maimon"
+msgid "שירי מימון"
 msgstr "שירי מימון"
 
 msgctxt "#30142"
-msgid "Shalom Hanoch"
+msgid "שלום חנוך"
 msgstr "שלום חנוך"
 
 msgctxt "#30143"
-msgid "Shlomi Shabat"
+msgid "שלומי שבת"
 msgstr "שלומי שבת"
 
 msgctxt "#30144"
-msgid "Shlomo Artzi"
+msgid "שלמה ארצי"
 msgstr "שלמה ארצי"
 
 msgctxt "#30145"
-msgid "Sarit Hadad"
+msgid "שרית חדד"
 msgstr "שרית חדד"
 
 msgctxt "#30146"
-msgid "Eden Ben Zaken"
+msgid "עדן בן זקן"
 msgstr "עדן בן זקן"
 
 msgctxt "#30147"
-msgid "shani yitshari"
+msgid "שני יצהרי"
 msgstr "שני יצהרי"
 
+msgctxt "#30148"
+msgid "הדודאים"
+msgstr "הדודאים"
+
 msgctxt "#30149"
-msgid "The Yarkon Trio"
+msgid "שלישיית גשר הירקון"
 msgstr "שלישיית גשר הירקון"
 
 msgctxt "#30150"

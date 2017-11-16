@@ -1230,6 +1230,7 @@ def getfileID(file):
 	elif file == "GameCube_1P_Tak and the Power of Juju.zip": fileID = "tdy74pmhw93ax5b" #featherence.user37
 	elif file == "GameCube_1P_The Incredible Hulk - Ultimate Destruction.zip": fileID = "eilwozrt4f9fqsi" #featherence.user3
 	elif file == "GameCube_1P_Battalion Wars.zip": fileID = "mvpo4uc2mi4pfuw" #featherence.user10
+	elif file == "GameCube_2P_SSX Tricky.zip": fileID = "xj6x992avblo56m" #featherence.user10
 	elif file == "GameCube_1P_TY the Tasmanian Tiger.zip": fileID = "8tgsii63y94lzje" #featherence.guser30
 	elif file == "GameCube_1P_Star Wars Rogue Squadron II - Rogue Leader.zip": fileID = "z2aommzvxdnaolz" #featherence.guser30
 	elif file == "GameCube_1P_P.N.03.zip": fileID = "59796rfj9csxv3o" #featherence.guser31

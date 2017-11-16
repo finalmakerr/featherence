@@ -11,7 +11,7 @@
 	  <visible>!String.Contains(ListItem.Label,$LOCALIZE[33078]) + !String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Label,Next Page)</visible>
 	  <visible>!Window.IsVisible(Home.xml) + !Window.IsVisible(CustomHomeCustomizer.xml) + $EXP[NoDialogConfirm] | Window.IsVisible(Custom1173.xml) | Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(Home.xml) + $EXP[ContentsWidget] |  Window.IsVisible(DialogVideoInfo.xml) |  Window.IsVisible(VideoFullScreen.xml) | Window.IsVisible(DialogFullscreenInfo.xml) | Window.IsVisible(SettingsCategory.xml)</visible>
 	  <visible>![ [$EXP[View57] |  $EXP[View58]] + Skin.HasSetting(ShowTopVideoInformation) | [Container.OnNext | Container.OnPrevious]] | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(VideoFullScreen.xml) | Window.IsVisible(DialogFullscreenInfo.xml)</visible>
-	  <visible>![Window.IsVisible(MyPVRGuide.xml) + !System.IdleTime(3) + !Window.IsVisible(DialogPVRInfo.xml]</visible>
+	  <visible>![Window.IsVisible(MyPVRGuide.xml) + !System.IdleTime(3) + !Window.IsVisible(DialogPVRInfo.xml)]</visible>
 	  
 	  <animation condition="[System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)] + !Skin.HasSetting(Performance)" effect="fade" start="100" end="0" time="7000" reversible="true">Conditional</animation>
 	  <animation condition="[System.IdleTime(10) + Slideshow.IsActive + Window.IsVisible(SlideShow.xml) | System.IdleTime(60)] + Skin.HasSetting(Performance)" effect="fade" start="100" end="0" time="220" reversible="false">Conditional</animation>

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import xbmc, xbmcgui, xbmcaddon
 import os, sys
 
@@ -499,15 +501,18 @@ def CleanString(output, filter=[]):
 	'''---------------------------'''
 	return output4
 
-def CleanString2(x, comma=False):
+def CleanString2(x, comma=False, list_=False, empty=False):
 	'''clean characters for Random-Play'''
 	name = 'CleanString2' ; printpoint = ""
 	x2 = str(x)
-	x2 = x2.replace(' ','')
-	x2 = x2.replace(' ','')
 	x2 = x2.replace("'",'')
-	x2 = x2.replace("[",'')
-	x2 = x2.replace("]",'')
+	x2 = x2.replace("{",'')
+	x2 = x2.replace("}",'')
+	if empty == False:
+		x2 = x2.replace(' ','')
+	if list_ == False:
+		x2 = x2.replace("[",'')
+		x2 = x2.replace("]",'')
 	if comma == False: x2 = x2.replace(",",'|')
 		
 	text = "x" + space2 + str(x) + newline + "x2" + space2 + str(x2)
@@ -797,7 +802,7 @@ def dialogbusy(dialog,value):
 	
 	return dialog
 
-def dialogselect(heading, list, autoclose=0):
+def dialogselect(heading, list, autoclose=0, silent=False):
 	'''------------------------------
 	---DIALOG-SELECT-----------------
 	------------------------------'''
@@ -814,7 +819,7 @@ def dialogselect(heading, list, autoclose=0):
 	returned = int(returned)
 
 	if returned == -1:
-		notification_common("9")
+		if silent == False: notification_common("9")
 		value = ""
 	else:
 		value = list[returned]
@@ -1528,6 +1533,7 @@ def notification_common(custom, message2=""):
 	elif custom == "8": notification('$LOCALIZE[16200]',"","",2000) #HAPEULA BUTLA
 	elif custom == "9": notification('$LOCALIZE[16200]',addonString_servicefeatherence(32415).encode('utf-8'),"",2000) #HAPEULA BUTLA, LO BUTZHU SINUHIM
 	elif custom == "13": notification('$ADDON[script.featherence.service 32150]',"...","",2000) #Action completed successfully!
+	elif custom == "14": notification('No content has been found!',"...","",2000) #No content has been found!, ...
 	elif custom == "15":
 		playlistlength = xbmc.getInfoLabel('Playlist.Length(video)')
 		playlistposition = xbmc.getInfoLabel('Playlist.Position(video)')
@@ -1536,7 +1542,7 @@ def notification_common(custom, message2=""):
 	elif custom == "16": notification("Downloading Files...","","",4000) #
 	
 	elif custom == "17": notification(localize(257),'$LOCALIZE[1446]',"",2000) #Error, Unknown
-	elif custom == "18": notification(localize(257),message2,"",3000) #Error, Unknown
+	elif custom == "18": notification(localize(257),message2,"",3000) #Error, Custom
 	elif custom == "22": notification(addonString_servicefeatherence(32407).encode('utf-8'),'',"",4000) #The system is processing for solution...
 	elif custom == "23": notification(addonString_servicefeatherence(32406).encode('utf-8'), addonString_servicefeatherence(32405).encode('utf-8'),"",4000) #Active download in background
 	elif custom == "24": notification(addonString_servicefeatherence(32402).encode('utf-8'), addonString_servicefeatherence(32403).encode('utf-8'),"",2000) #Addon is missing! Trying to download addon
@@ -1650,6 +1656,13 @@ def regex_from_to(text, from_string, to_string, excluding=True):
 	printlog(title=name, printpoint=printpoint, text=text2, level=0, option="")
 	return str(r)
 
+def to_ascii(text=""):
+	result = text
+	try: result = unicode(text, "ascii")
+	except UnicodeError:
+		result = unicode(text, "utf-8")
+
+	return result
 def to_utf8(text):
 	result = text
 	if isinstance(text, unicode):

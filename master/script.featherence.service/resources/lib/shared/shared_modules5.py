@@ -141,8 +141,9 @@ def menu_list(custom, menu, addonID, name, url, mode, iconimage, desc, num, view
 		menu.append((localize(22083), "XBMC.RunPlugin(plugin://%s/?url=%s&mode=1&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart)))
 		'''Add to favourites [Featherence]'''
 		menu.append((localize(14076) + space + '[Featherence]', "XBMC.RunPlugin(plugin://%s/?url=%s&mode=24&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart)))
-	if mode == 5 or mode == 6 or mode == 17:
-		'''TV Mode'''
+	if mode == 5 or mode == 6 or mode == 17 or mode == 19:
+		'''Manual/TV Mode'''
+		menu.append(('Manual Mode', "XBMC.RunPlugin(plugin://%s/?url=%s&mode=6&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart)))
 		menu.append(('TV Mode', "XBMC.RunPlugin(plugin://%s/?url=%s&mode=5&name=%s&iconimage=%s&desc=%s&num=%s&viewtype=%s&fanart=%s)"% (addonID, urllib.quote_plus(url), urllib.quote_plus(name), iconimage, urllib.quote_plus(desc), num, viewtype, fanart)))
 	if mode >= 100 and mode <= 139 or mode >= 10001:
 		pass
