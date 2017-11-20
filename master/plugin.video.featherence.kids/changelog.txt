@@ -11,10 +11,11 @@ WIP - WORK IN PROGRESS
 - Added TV Mode support to YouTube search sources.
 
 ------------------------
-Featherence Kids v0.2.23 (xx-xx-17)
+Featherence Kids v0.2.23 (20-Nov-17)
 ------------------------
 - Added TV Mode support to YouTube search sources.
 - Major performance update result in a very fast addon!
+- Minor bugs fix.
 - Minor update of links.
 - Minor update of posters, fanarts and plots in TV Shows category.
 

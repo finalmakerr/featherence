@@ -14,7 +14,7 @@ def CATEGORIES105B(General_LanguageL, background, background2): #סרטים לי
 	'''עברית'''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&custom8=plugin://plugin.video.jksp/?action=listing&category=%D7%A1%D7%A8%D7%98%D7%99%D7%9D%20%D7%90%D7%A0%D7%99%D7%9E%D7%A6%D7%94%20%D7%9E%D7%93%D7%95%D7%91%D7%91%D7%99%D7%9D')
+		list.append('&custom8=plugin://plugin.video.jksp/?action=listing&category=Movies%20dubbed%20(Hebrew)-(%D7%A1%D7%A8%D7%98%D7%99%D7%9D%20%D7%9E%D7%93%D7%95%D7%91%D7%91%D7%99%D7%9D%20(%D7%A2%D7%91%D7%A8%D7%99%D7%AA')
 		list.append('&custom8=plugin://plugin.video.multidown/?action=showposts&extra&page&thumbnail&title=%D7%9E%D7%93%D7%95%D7%91%D7%91&url=http%3A%2F%2Fwww.multidown.me%2Fcategory%2F%25d7%25a1%25d7%25a8%25d7%2598%25d7%2599%25d7%259d-%25d7%259c%25d7%2594%25d7%2595%25d7%25a8%25d7%2593%25d7%2594-%25d7%2595%25d7%259c%25d7%25a6%25d7%25a4%25d7%2599%25d7%2599%25d7%2594-%25d7%2599%25d7%25a9%25d7%2599%25d7%25a8%25d7%2594%2Fdubbed%2F')
 		check_movix_me = urlcheck('http://www.movix.me/series', ping=False)
 		if check_movix_me == 'ok':
