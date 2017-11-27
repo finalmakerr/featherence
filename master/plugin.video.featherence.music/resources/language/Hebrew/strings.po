@@ -682,8 +682,8 @@ msgid "Born on 22 October 1993 in the United States is an Israeli singer Ministe
 msgstr "נולד ב-22 באוקטובר 1993 בארצות הברית הוא זמר ישראלי השר מוזיקת פופ ים-תיכוני ..."
 
 msgctxt "#30234"
-msgid ""
-msgstr ""
+msgid "סטטיק ובן-אל תבורי (לעתים מופיע כ"סטטיק & בן-אל תבורי") הם צמד מוזיקלי ישראלי שכולל את הזמרים לירז רוסו (סטטיק) ובן-אל תבורי והמפיק המוזיקלי ירדן פלג, שמוכר בשם הבמה ג'ורדי."
+msgstr "סטטיק ובן-אל תבורי (לעתים מופיע כ"סטטיק & בן-אל תבורי") הם צמד מוזיקלי ישראלי שכולל את הזמרים לירז רוסו (סטטיק) ובן-אל תבורי והמפיק המוזיקלי ירדן פלג, שמוכר בשם הבמה ג'ורדי."
 
 #פאר טסי"
 msgctxt "#30235"
@@ -745,8 +745,8 @@ msgid "Born on November 26, 1949, singer-songwriter, musician, composer and song
 msgstr " נולד ב-26 בנובמבר 1949 הוא זמר-יוצר, מוזיקאי, מלחין ופזמונאי ישראלי. נחשב לאחד הזמרים המצליחים בישראל..."
 
 msgctxt "#30245"
-msgid ""
-msgstr "[COLOR=yellow]שרית חדד (בעבר שרה חודדטוב; נולדה ב-20 בספטמבר 1978, י"ח באלול התשל"ח) היא זמרת ומוזיקאית ישראלית.[/COLOR][CR][CR]הוציאה מעל 20 אלבומים, וזכתה מספר פעמים בתואר "זמרת השנה" וכן בתואר "זמרת העשור" במצעד הפזמונים העברי.[CR]שרית חדד מתמחה במוזיקה מזרחית, והיא הזמרת המושמעת ביותר בישראל..."
+msgid "Sarit Hadad is an Israeli singer. In October 2009, the Israeli Music TV Channel crowned Hadad "best female singer of the 2000"."
+msgstr "Sarit Hadad is an Israeli singer. In October 2009, the Israeli Music TV Channel crowned Hadad "best female singer of the 2000"."
 
 msgctxt "#30247"
 msgid ""

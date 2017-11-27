@@ -17465,21 +17465,96 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37edw8f2p0049</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Ultimate Spider-Man</name>
+					<filename>rom_pathGameCube/_1P/Ultimate Spider-Man.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Ultimate Spider-Man.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Ultimate Spider-Man.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action</genre>
+					<release>2005</release>
+					<publisher>Activision</publisher>
+					<gameplot>Take on the role of the world's most famous Super Hero, Marvel's Spider-Man, and one of his most menacing nemeses, Venom, in an original storyline written and illustrated by the creative team behind the best-selling Ultimate Spider-Man comic book series.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37edw8f2p0050</id>
+					<name>Spartan - Total Warrior</name>
+					<filename>rom_pathGameCube/_1P/Spartan - Total Warrior.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Spartan - Total Warrior.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Spartan - Total Warrior.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>2005</release>
+					<publisher>SEGA</publisher>
+					<gameplot>The game has a fast-paced, arcade-like, mission-based gameplay. In each mission, you must succeed in minor goals like killing the generals of the opposition, escorting sappers to blow up enemy siege weaponry and preventing the enemy from making to behind your borders. The storyline progresses through cutscenes, shown in-between each mission.[CR]Depending on how you succeed in your mission, you get "tokens", which you can use to upgrade the health, damage or power of your character. The player is capable of doing special moves, which can be learned throughout the game. Some of the special moves gain their powers through the spartan gods, that aid the player in his battle. During the game, you can find different weapons like swords, bows and spears, and of course, shields.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0051</id>
+					<name>Power Rangers - Dino Thunder</name>
+					<filename>rom_pathGameCube/_1P/Power Rangers - Dino Thunder.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Power Rangers - Dino Thunder.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Power Rangers - Dino Thunder.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>2004</release>
+					<publisher>THQ</publisher>
+					<gameplot>Power Rangers Dino Thunder is a video game based on the television series of the same name developed by THQ. It was released in 2004.[CR]The player fights enemies as the three core rangers while meeting goals, such as finding and rescuing humans or defeating a number of monsters while the Black Ranger solves puzzles to free captured Zords. MegaZord battles also occur whenever an enemy enlarges to giant size. MegaZord levels allow the player to customize the ThunderSaurus MegaZord with auxiliary Zords obtained from the puzzle levels</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0052</id>
+					<name>Lost Kingdoms</name>
+					<filename>rom_pathGameCube/_1P/Lost Kingdoms.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Lost Kingdoms.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Lost Kingdoms.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Role-Playing</genre>
+					<release>2002</release>
+					<publisher>Activision</publisher>
+					<gameplot>A dark mysterious force has taken over the five Kingdoms of Argwyll, and only one person can solve the mystery and save the world--you, as Princess Katia. Now you must travel through the kingdom and explore over two dozen unique 3D worlds filled with graveyards, forests, mountains, and fortresses. Interact with characters, uncover secret areas, and unravel the mystery of the evil forces. During your adventures, you can summon over 100 guardian creatures to help battle hordes of monsters. Make it a solo mission or go head-to-head with friends in two-player Versus mode.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0053</id>
+					<name>Evolution Worlds</name>
+					<filename>rom_pathGameCube/_1P/Evolution Worlds.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Evolution Worlds.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Evolution Worlds.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Role-Playing</genre>
+					<release>2002</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>Quest For Glory[CR]Combining anime-style storytelling with hours of random dungeon-crawling, Evolution Worlds offers a unique twist on traditional RPG gameplay. Join young hero Mag Launcher and companions on a quest for fame and fortune.[CR]As son of a world-famous explorer, Mag has quite a reputation to live up to. With the help from his best friend Linear and his faithful butler Gre, Mag decides to go out on his own quest and make a name for himself in the world.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0054</id>
+					<name>Finding Nemo</name>
+					<filename>rom_pathGameCube/_1P/Finding Nemo.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Finding Nemo.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Finding Nemo.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>2003</release>
+					<publisher>THQ</publisher>
+					<gameplot>Finding Nemo is a 2003 action-adventure video game developed by Traveller's Tales. The game is based on the Finding Nemo film by Disney and Pixar. [CR]The goal is to complete different levels under the roles of film protagonists Nemo, Marlin or Dory. It includes cutscenes from the movie, and each clip is based on a level, e.g. hopping through a batch of jellyfish. It was also the last Pixar game developed by Traveller's Tales.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0055</id>
 					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
@@ -17821,91 +17896,91 @@
 				</rom>
 				<rom>
 					<id>7d2gcd811a61668385a37ed78f2p0010</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Shadow The Hedgehog</name>
+					<filename>rom_pathGameCube/_2P/Shadow The Hedgehog.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Shadow The Hedgehog.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Shadow The Hedgehog.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action</genre>
+					<release>2005</release>
+					<publisher>SEGA</publisher>
+					<gameplot>The world is in peril as forces, both good and evil, make a play for the powerful Chaos Emeralds. In Shadow the Hedgehog, you can control Shadow and choose which side to fight for. This 3D platformer lets you use weapons, vehicles, environmental objects, and time and space manipulation to combat your foes.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd811a61668385a37ed78f2p0011</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Batman Rise Of Sin Tzu</name>
+					<filename>rom_pathGameCube/_2P/Batman Rise Of Sin Tzu.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Batman Rise Of Sin Tzu.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Batman Rise Of Sin Tzu.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action</genre>
+					<release>2003</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>On the anniversary of the death of his parents, Bruce Wayne must face a new evil that is turning Gotham City into a crisis zone. Batman must rise to the challenge, as Sin Tzu leaves his mark on city.[CR]Along with Robin, Nightwing and Batgirl, Batman must battle through various locations in Gotham City in search of the truth behind this new foe, while fighting off the threat from other well known characters from the comic book series, Bane, Clayface and Scarecrow.[CR]Batman can use his full collection of weapons and gadgets to his advantage, including the Batarang and grappiling hook. Plus there's plenty of martial arts moves to bust on the bad guys, and if its too much to fight off, the 2 player co-op mode allows two characters to battle side-by-side.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd811a61668385a37ed78f2p0012</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Teenage Mutant Ninja Turtles</name>
+					<filename>rom_pathGameCube/_2P/Teenage Mutant Ninja Turtles.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Teenage Mutant Ninja Turtles.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Teenage Mutant Ninja Turtles.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action</genre>
+					<release>2003</release>
+					<publisher>Konami</publisher>
+					<gameplot>Be your favorite Teenage Mutant Ninja Turtle and master your ninja skills in their action-packed world. Roam NYC streets, scour underground sewers and fight your way across rooftops on a collision course with The Shredder and his vile pack of foot ninjas. Find scrolls to unlock special attack moves and effects. Interact with characters from the animated television series, such as Splinter and Casey Jones. Don't hide in your shell--be a hero.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd811a61668385a37ed78f2p0013</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Street Racing Syndicate</name>
+					<filename>rom_pathGameCube/_2P/Street Racing Syndicate.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Street Racing Syndicate.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Street Racing Syndicate.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Racing</genre>
+					<release>2004</release>
+					<publisher>Namco</publisher>
+					<gameplot>Street Racing Syndicate, often abbreviate SRS, is a multiplatform computer and video game produced by Eutechnyx, and released by Namco on August 31, 2004 for the PlayStation 2, GameCube, Xbox and Windows-based personal computers. The game was also released for the Game Boy Advance on October 4, 2005.[CR]This game features an underground import racing scene, on which the player's main objective is to gain respect and affection of various females in the city. This is featured in a way that the player must win a variety of respect challenges to attract girls and maintain a good victory streak in order to ensure that they remain with the player. Once in their car, the girls will present the next open race that the player enters. As the player continues to win races, dance videos will be unlocked for viewing.[CR]The game has 50 licensed cars from a variety of manufactures, including models from Nissan, Toyota, Mitsubishi, Lexus, Subaru, Mazda, and Volkswagen. SRS also features a car damage model that forces the player to drive carefully, heavy damages may impact car performance and heavy repairs may drain the player of money earned from their last race.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd811a61668385a37ed78f2p0014</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Tony Hawks Pro Skater 3</name>
+					<filename>rom_pathGameCube/_2P/Tony Hawks Pro Skater 3.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Tony Hawks Pro Skater 3.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Tony Hawks Pro Skater 3.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Sports</genre>
+					<release>2001</release>
+					<publisher>Activision</publisher>
+					<gameplot>You may not be able to live like the legend, but now you can skate like him. Skate as the legendary Tony Hawk or choose from a dream team of 12 top pro skaters, including old favorites like Lasek, Thomas, Muska, and Steamer, as well as new talent like Gilfberg, Caballero, Koston, and Mullen. Or enjoy full customization abilities with the enhanced Create-a-Skater (now including female skaters) and the Skatepark Editor. Travel from L.A. to Tokyo, Suburbia to Skater's Island performing challenges and meeting goals. New moves include the Revert, which allows you to link vert tricks, and flatland tricks such as Caspers, the Primo, and Handstand Manual. If you're good, you can even unlock hidden pro footage.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd811a61668385a37ed78f2p0015</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Rocky</name>
+					<filename>rom_pathGameCube/_2P/Rocky.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Rocky.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Rocky.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Fighting / Sports</genre>
+					<release>2002</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>The boxing simulator game has several modes, including Movie Mode, Exhibition and Knockout Tournament. In Movie Mode you can follow movie series, starting each part with three minor opponents and finishing the big boss in the end. Each character has personal weaknesses. Also you can train Rocky prior to each fight.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -18312,81 +18387,111 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0023</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Digimon World 4</name>
+					<filename>rom_pathGameCube/_4P/Digimon World 4.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Digimon World 4.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Digimon World 4.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Adventure</genre>
+					<release>2005</release>
+					<publisher>Bandai</publisher>
+					<gameplot>Digimon World 4, known as Digimon World X (デジモンワールドX Dejimon Wārudo X?) in Japan, is the second Digimon video game on GameCube, PlayStation 2, and Xbox game consoles, simultaneously. Instead of being a standard role-playing game like the previous Digimon games, Digimon World 4 has hack and slash gameplay and supports up to four players. The game is loosely based on the Digital Monster X-Evolution film (in fact, the game's opening uses footage from the film itself). The Nintendo GameCube version was not released in the PAL Region.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0024</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Crash Nitro Kart</name>
+					<filename>rom_pathGameCube/_4P/Crash Nitro Kart.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Crash Nitro Kart.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Crash Nitro Kart.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Racing / Arcade / Action</genre>
+					<release>2003</release>
+					<publisher>Vivendi</publisher>
+					<gameplot>Crash Bandicoot returns to the karting scene with a host of other characters from the adventure series, and this time they have both Neo Cortex and Emperor Velo to worry about. Velo has taken the crew to a remote planet, forced to race for their lives against Neo Cortex and his many evil doers.Choose from various game modes, from the straight into the action Arcade mode to Adventure mode, following Crash and the gang in the story to save Earth. Race against four friends in multiplayer battle modes, plus connect to the Gamecube for extra options and upload your high scores to the internet ranking system.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0025</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>WWE WRESTLEMANIA 19</name>
+					<filename>rom_pathGameCube/_4P/WWE WRESTLEMANIA 19.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/WWE WRESTLEMANIA 19.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/WWE WRESTLEMANIA 19.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Fighting / Sports</genre>
+					<release>2003</release>
+					<publisher>THQ</publisher>
+					<gameplot>The Main Event! All the biggest names in the WWE, including The Rock, Steve Austin, Goldberg, Hulk Hogan and Vince McMahon vie for the WrestleMania XIX title in a story of revenge.In the world of professional wrestling, main events don't get any bigger than Wrestlemania. With the GCN release of THQ's Wrestlemania XIX, WWE fans can take a crack at the coveted title belt. Wrestlemania XIX features a Rikishi-sized mass of improvements over last year's title, including an all-new story mode and improved gameplay.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0026</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Bomberman Jetters</name>
+					<filename>rom_pathGameCube/_4P/Bomberman Jetters.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Bomberman Jetters.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Bomberman Jetters.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action</genre>
+					<release>2004</release>
+					<publisher>Majesco Entertainment</publisher>
+					<gameplot>Bomberman Jetters (ボンバーマンジェッターズ Bonbāman Jettāzu?) is a 2002 Japanese anime television series created by Studio Deen and NAS. It has also spawned two manga series and three video games, one of which was localized and given an English dub. It is based on the popular Bomberman video game series created by Hudson Soft.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0027</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Conflict - Desert Storm</name>
+					<filename>rom_pathGameCube/_4P/Conflict - Desert Storm.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Conflict - Desert Storm.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Conflict - Desert Storm.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Shooter</genre>
+					<release>2003</release>
+					<publisher>Gotham Games</publisher>
+					<gameplot>Conflict: Desert Storm is a 2002 tactical third-person shooter set during the Persian Gulf War. It is the first video game in the Conflict video game series.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0028</id>
+					<name>X-Men Legends</name>
+					<filename>rom_pathGameCube/_4P/X-Men Legends.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/X-Men Legends.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/X-Men Legends.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>2004</release>
+					<publisher>Activision</publisher>
+					<gameplot>X-Men Legends is an action role-playing video game developed by Raven Software and published by Activision. It was released on the GameCube, PlayStation 2 and Xbox consoles in the fall of 2004. Barking Lizards Technologies developed the N-Gage port of the game, which was released in early 2005. Players can play as one of fifteen X-Men characters, with the ability to switch between four computer- or human-controlled characters at any time.[CR]X-Men Legends is not set in any particular Marvel Comics universe. It follows Alison Crestmere, a young mutant who has the ability to summon and control volcanic activity. As Alison is taught to control her powers at the X-Mansion, the X-Men are sent on several missions. Eventually the X-Men learn of Magneto's plan to cover the Earth in darkness from his base on Asteroid M.[CR]X-Men Legends received generally positive reviews from critics. The Xbox version was the best received, garnering aggregate scores of 83% and 82/100 on the review aggregating websites GameRankings and Metacritic respectively. Reviewers praised Raven's variation on cel-shaded graphics. Due to the success of the game a sequel was made, X-Men Legends II: Rise of Apocalypse.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0029</id>
+					<name>X-Men Legends II</name>
+					<filename>rom_pathGameCube/_4P/X-Men Legends II.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/X-Men Legends II.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/X-Men Legends II.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2005</release>
+					<publisher>Activision</publisher>
+					<gameplot>X-Men: Legends II - Rise of Apocalypse is an action role-playing game and a sequel to X-Men Legends. The player controls a party of four characters, though only one at a time can be controlled directly. Beside switching the characters for combat purposes, the player is often obliged to do so, because some of the tasks in the game require the specific abilities of a certain mutant. For example, Iceman can put out fire, Magneto can generate a metal bridge across a gap, etc.. Most of the time, however, is spent in combat, collecting loot and acquiring experience points. Unlike the first game, items dropped by enemies are random. The character will level up, become stronger, and learn new skills. The player can opt to allocate all the experience and skill points manually.[CR]Each character has several different skills based on their mutant powers. These include melee, boost, projectile, traps, and others. Each character can also learn powerful super skill: for example, Cyclops has a super beam attack that can hit multiple targets; Wolverine has a spinning attack that inflicts heavy damage; Magneto has a metal attack, crushing everything in sight by manipulating metal objects in the environment, etc.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0030</id>
 					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
@@ -18401,7 +18506,52 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78f4p0029</id>
+					<id>7d2gcd81ea61668385a37ed78f4p0031</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0032</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0033</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0034</id>
 					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>

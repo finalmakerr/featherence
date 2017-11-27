@@ -1231,6 +1231,7 @@ def getfileID(file):
 	elif file == "GameCube_1P_The Incredible Hulk - Ultimate Destruction.zip": fileID = "eilwozrt4f9fqsi" #featherence.user3
 	elif file == "GameCube_1P_Battalion Wars.zip": fileID = "mvpo4uc2mi4pfuw" #featherence.user10
 	elif file == "GameCube_2P_SSX Tricky.zip": fileID = "xj6x992avblo56m" #featherence.user10
+	elif file == "GameCube_4P_Digimon World 4.zip": fileID = "mkkszlr6il4rc7q" #featherence.user10
 	elif file == "GameCube_1P_TY the Tasmanian Tiger.zip": fileID = "8tgsii63y94lzje" #featherence.guser30
 	elif file == "GameCube_1P_Star Wars Rogue Squadron II - Rogue Leader.zip": fileID = "z2aommzvxdnaolz" #featherence.guser30
 	elif file == "GameCube_1P_P.N.03.zip": fileID = "59796rfj9csxv3o" #featherence.guser31
@@ -1241,6 +1242,13 @@ def getfileID(file):
 	elif file == "GameCube_4P_Sonic Riders.zip": fileID = "w98uu0tqyo9tvkz" #featherence.guser33
 	elif file == "GameCube_2P_Mortal Kombat Deadly Alliance.zip": fileID = "p2aj3h1r6m2sja0" #featherence.user38
 	elif file == "GameCube_4P_Sonic Heroes.zip": fileID = "6j70ncnz1p3vca1" #featherence.user38
+	elif file == "GameCube_2P_Need For Speed Underground 2.zip": fileID = "juh4bhi3wr2tm3i" #featherence.user39
+	elif file == "GameCube_4P_Wave Race - Blue Storm.zip": fileID = "jv963oaea4fmj90" #featherence.user39
+	elif file == "GameCube_1P_Crash Bandicoot The Wrath Of Cortex.zip": fileID = "6ze2dx0lf8vfjkf" #featherence.user40
+	elif file == "GameCube_4P_Super Monkey Ball 2.zip": fileID = "hovulkbsqnypjt5" #featherence.user40
+	elif file == "GameCube_4P_WWE WRESTLEMANIA 19.zip": fileID = "2bikwiexotc0n5q" #featherence.user41
+	elif file == "GameCube_1P_Evolution Worlds.zip": fileID = "ypmaqgt3ayuk7um" #featherence.user41
+	elif file == "GameCube_1P_Lost Kingdoms.zip": fileID = "" #featherence.user42
 	
 	elif file == ".zip":
 		fileID_L.append('[GD]') #featherence.user1 [GD]
