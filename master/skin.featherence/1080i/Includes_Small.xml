@@ -399,6 +399,7 @@
 			<texturesliderbar colordiffuse="00FFFFFF">osd/nub_bar.png</texturesliderbar>
 			<textureslidernib colordiffuse="$VAR[ButtonUnFocusColor]">osd/nub_bar.png</textureslidernib>
 			<textureslidernibfocus colordiffuse="$VAR[ButtonFocusColor]">osd/white.png</textureslidernibfocus>
+			<visible>!VideoPlayer.Content(livetv)</visible>
 			<!--<visible>Player.Seeking</visible>
 			<visible>!Window.IsVisible(VideoOSD.xml)</visible>-->
 			<orientation>horizontal</orientation>
