@@ -18492,16 +18492,16 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0030</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Teenage Mutant Ninja Turtles 2 - Battle Nexus</name>
+					<filename>rom_pathGameCube/_4P/Teenage Mutant Ninja Turtles 2 - Battle Nexus.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Teenage Mutant Ninja Turtles 2 - Battle Nexus.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Teenage Mutant Ninja Turtles 2 - Battle Nexus.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action</genre>
+					<release>2004</release>
+					<publisher>Konami</publisher>
+					<gameplot>The Teenage Mutant Ninja Turtles return--this time featuring simultaneous play for up to four players. In both cooperative and head-to-head modes, you and your friends can play as your favorite green heroes: Leonardo, Michelangelo, Donatello, and Raphael. Punch, kick, and duck your way through battles against The Shredder and his evil pack of Foot Ninjas. Each Turtle has distinct characteristics and abilities, and you can combine moves to perform more than 30 different types of attacks.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>

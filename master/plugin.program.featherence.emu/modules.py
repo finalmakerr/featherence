@@ -26,7 +26,7 @@ def del_game(plugin, category, launcher, rom, filename, filepath):
 	
 def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""):
 	name = 'downloads' ; printpoint = "" ; filename_ = ""
-	
+	skincheck()
 	if category != "" and filename != "" and filepath != "":
 		if not os.path.exists(os.path.join(filepath)): printpoint = '1'
 		else:
@@ -445,7 +445,6 @@ def getfileID(file):
 		fileName_L.append('Source 3')
 	
 	elif file == "Arcade_1P.zip":
-		fileID_L.append('3mwprj1i6jrwgun') #featherence.user35
 		fileID_L.append('c270fci9syntfhq') #guser27
 		fileID_L.append('7yfdgvzhduoihn3') #user2
 		fileID_L.append('c7806h010agb82q') #featherence.user5
@@ -454,7 +453,6 @@ def getfileID(file):
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
 		fileName_L.append('Source 4')
-		fileName_L.append('Source 5')
 	elif file == "Arcade_1P_Turret Tower.zip":
 		fileID = "usyvftx1cx85528" #user1
 	
@@ -752,11 +750,9 @@ def getfileID(file):
 		fileID_L.append('nt05zl4ygnynxen') #user1
 		fileID_L.append('5ahtgh6bjq1gn42') #htpt
 		fileID_L.append('ie9dlkr4xxv44s7') #user34
-		fileID_L.append('itbbp4q1tkhg72f') #featherence.user34
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
 		fileName_L.append('Source 3')
-		fileName_L.append('Source 4')
 	elif file == "Nintendo DS_1P.zip":
 		fileID_L.append('e7e3yaudsjp629n') #user16
 		fileID_L.append('tajqg91605p22m2') #debugout1
@@ -1248,7 +1244,11 @@ def getfileID(file):
 	elif file == "GameCube_4P_Super Monkey Ball 2.zip": fileID = "hovulkbsqnypjt5" #featherence.user40
 	elif file == "GameCube_4P_WWE WRESTLEMANIA 19.zip": fileID = "2bikwiexotc0n5q" #featherence.user41
 	elif file == "GameCube_1P_Evolution Worlds.zip": fileID = "ypmaqgt3ayuk7um" #featherence.user41
-	elif file == "GameCube_1P_Lost Kingdoms.zip": fileID = "" #featherence.user42
+	elif file == "GameCube_1P_Lost Kingdoms.zip": fileID = "scdowm0p6818exi" #featherence.user42
+	elif file == "GameCube_2P_Tony Hawks Pro Skater 3.zip": fileID = "g7zpqhv8zxmoutn" #featherence.user42
+	elif file == "GameCube_2P_Rocky.zip": fileID = "j6o2kjcp7wkyhyb" #featherence.user42
+	elif file == "GameCube_4P_X-Men Legends II.zip": fileID = "7boqseyn7pprex0" #featherence.user42
+	elif file == "GameCube_4P_Conflict - Desert Storm.zip": fileID = "l9jo0em2w4bobxf" #featherence.guser29
 	
 	elif file == ".zip":
 		fileID_L.append('[GD]') #featherence.user1 [GD]

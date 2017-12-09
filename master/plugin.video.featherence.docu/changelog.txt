@@ -7,6 +7,12 @@ WIP (WORK IN PROGRESS)--
 ------------------------
 
 ------------------------
+Featherence Docu v0.1.18 (11-Dec-17)
+------------------------
+- Minor bugs fix.
+- Minor update of links.
+
+------------------------
 Featherence Docu v0.1.17 (27-Nov-17)
 ------------------------
 - Added Military Category.

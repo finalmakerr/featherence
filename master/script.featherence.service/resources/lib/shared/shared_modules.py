@@ -1753,6 +1753,11 @@ def ReloadSkin(admin,force=True):
 	text = "property_reloadskin" + space2 + str(property_reloadskin)
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 
+def skincheck():
+	if xbmc.getSkinDir() == 'skin.featherence': pass
+	else:
+		notification('Featherence is missing!','www.featherence.com',"",2000)
+		sys.exit(0)
 def setProperty(id, value, type="home", force=True):
 
 	name = 'setProperty' ; printpoint = ""
@@ -1947,7 +1952,7 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 	
 	macaddress = xbmc.getInfoLabel('Network.MacAddress')
 	User_Name = xbmc.getInfoLabel('Skin.String(User_Name)')
-	if macaddress == '0C:8B:FD:9D:2F:CE' or User_Name == 'finalmakerr' or macaddress == 'C0:3F:D5:6B:10:41' or macaddress == 'B8:AE:ED:7E:A0:BF': admin3 = 'true'
+	if macaddress == '0C:8B:FD:9D:2F:CE' or User_Name == 'finalmakerr' or macaddress == 'C0:3F:D5:6B:10:41' or macaddress == 'B8:AE:ED:7E:A0:BF' or macaddress == 'AC:ED:5C:B2:1A:15': admin3 = 'true'
 	elif macaddress != "": admin3 = 'false'
 	else: admin3 = 'false'
 	

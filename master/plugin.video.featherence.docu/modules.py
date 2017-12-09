@@ -51,8 +51,8 @@ def getList(num=0):
 		se = 'STONE, BRONZE, IRON, NEW AGE DOCU' ; list.append('&name_=' + 'addonString(30311)' + '&&youtube_se='+se)
 		se = 'VIKINGS DOCU' ; list.append('&name_=' + 'addonString(30307)' + '&&youtube_se='+se)
 		se = 'World War 1 DOCU' ; list.append('&name_=' + 'addonString(30301)' + ' 1' + '&&youtube_se='+se)
-		se = 'World War 2 DOCU' ; list.append('&name_=' + 'addonString(30301)' + ' 2' + '&&youtube_se='+se)
-		se = 'World War 3 DOCU' ; list.append('&name_=' + 'addonString(30301)' + ' 3' + '&&youtube_se='+se)
+		se = 'World War 2 DOCU' ; list.append('&name_=' + 'addonString(30301)' + ' 2' +  '&&youtube_se='+se)
+		se = 'World War 3 DOCU' ; list.append('&name_=' + 'addonString(30301)' + ' 3' +  '&&youtube_se='+se)
 		
 		c8 = 'plugin://plugin.video.exodus/?action=movies&url=http%3A%2F%2Fwww.imdb.com%2Fsearch%2Ftitle%3Ftitle_type%3Dfeature%2Ctv_movie%2Cdocumentary%26num_votes%3D100%2C%26release_date%3D%2Cdate%5B0%5D%26genres%3Dhistory%26sort%3Dmoviemeter%2Casc%26count%3D40%26start%3D1' ; list.append('&name_=' + 'Movies' + '&&custom8='+c8)
 		c8 = 'plugin://plugin.video.exodus/?action=tvshows&url=http%3A%2F%2Fwww.imdb.com%2Fsearch%2Ftitle%3Ftitle_type%3Dtv_series%2Cmini_series%26release_date%3D%2Cdate%5B0%5D%26genres%3Dhistory%26sort%3Dmoviemeter%2Casc%26count%3D40%26start%3D1' ; list.append('&name_=' + 'TVShows' + '&&custom8='+c8)
@@ -84,8 +84,8 @@ def getList(num=0):
 		'''Animals / בעלי-חיים'''
 		thumb = 'http://3.bp.blogspot.com/-GmdLk2R6ahA/T55Ud9aXCcI/AAAAAAAABY4/4Z9aMnM0Ukc/s1600/Blue-Butterfuly-Latest-Animal-Wallpaper-2012.jpg'
 		fanart = ''
-		se = 'ANIMALS DOCU' ; list.append('&name_=' + 'addonString(30103)' + '&&youtube_se='+se)
-		se = 'ANIMALS 4K' ; list.append('&name_=' + 'addonString(30103)' + ' 4K' + '&&youtube_se='+se)
+		se = 'ANIMALS DOCU' ; list.append('&name_=' + 'addonString(30005)' + '&&youtube_se='+se)
+		se = 'ANIMALS 4K' ; list.append('&name_=' + 'addonString(30005)' + ' 4K' + '&&youtube_se='+se)
 		se = 'BAT DOCU' ; list.append('&name_=' + 'addonString(30127)' + '&&youtube_se='+se)
 		se = 'BEAR DOCU' ; list.append('&name_=' + 'addonString(30131)' + '&&youtube_se='+se)
 		se = 'BEE DOCU' ; list.append('&name_=' + 'addonString(30121)' + '&&youtube_se='+se)

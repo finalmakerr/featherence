@@ -183,8 +183,8 @@ msgid "Wolfs"
 msgstr "זאבים"
 
 msgctxt "#30134"
-msgid ""
-msgstr ""
+msgid "Butterfly"
+msgstr "פרפרים"
 
 msgctxt "#30135"
 msgid ""
@@ -367,8 +367,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#30180"
-msgid "Places"
-msgstr "מקומות"
+msgid "World Wonders"
+msgstr "פלאי עולם"
 
 msgctxt "#30181"
 msgid "Oceans"
@@ -379,7 +379,7 @@ msgid "Climates"
 msgstr "אקלים"
 
 msgctxt "#30183"
-msgid "Natural phenomena and disasters"
+msgid "Natural phenomena"
 msgstr "תופעות ואסונות טבע"
 
 msgctxt "#30184"
@@ -3645,7 +3645,13 @@ msgctxt "#30999"
 msgid "National Geographic"
 msgstr "נשיונאל ג'אוגראפיק"
 
+msgctxt "#31000"
+msgid ""
+msgstr ""
 
+msgctxt "#31001"
+msgid ""
+msgstr ""
 
 msgctxt "#112"
 msgid "Discovery"

@@ -200,30 +200,39 @@ def get_params():
 	return param
 
 def clean_addonString(x):
-	printpoint = "" ; x_ = x ; y = "" ; y_ = "" ; z = "" ; TypeError = "" ; extra = ""
+	printpoint = "" ; c = x ; x_ = x ; y = "" ; b = "" ; e = "" ; y_ = "" ; z = "" ; TypeError = "" ; extra = ""
 	
 	videoDuration = regex_from_to(x, '&videoDuration=', '&', excluding=True)
 	x = x.replace('&videoDuration='+videoDuration+'&',"")
 	videoDefinition = regex_from_to(x, '&videoDefinition=', '&', excluding=True)
 	x = x.replace('&videoDefinition='+videoDefinition+'&',"")
 	
-	x2 = x.split('addonString(')
-	for b in x2:
-		b = b.replace(')',"") ; b = b.replace('"',"") ; extra = extra + newline + 'b: ' + str(b)
-		try:
-			y_ = int(b)
-			z = addonString(y_).encode('utf-8')
-			x_ = x_.replace('addonString('+str(y_)+')',z,1)
-		except Exception, TypeError: extra = extra + newline + str(TypeError)
+	#x2 = x.split('addonString(')
+	x2 = find_string(x, "addonString(", ')')
+	e = x.replace(x2,"",1)
+	b = x2.replace('addonString(',"") ; b = b.replace(')',"")
+	try:
+		y_ = int(b)
+		z = addonString(y_).encode('utf-8')
+		c = z + e
+	#for b in x2:
+		#b = b.replace(')',"") ; b = b.replace('"',"") ; extra = extra + newline + 'b: ' + str(b)
+		#try:
+			#y_ = int(b)
+			#z = addonString(y_).encode('utf-8')
+			#x_ = x_.replace('addonString('+str(y_)+')',z,1)
+	except Exception, TypeError: extra = extra + newline + str(TypeError)
 		
 	text = 'x' + space2 + str(x) + newline + \
 	"x_" + space2 + str(x_) + newline + \
 	"x2" + space2 + str(x2) + newline + \
+	"b" + space2 + str(b) + newline + \
 	"y" + space2 + str(y) + newline + \
 	'y_' + space2 + str(y_) + newline + \
+	'c' + space2 + str(c) + newline + \
 	'z' + space2 + str(z) + extra
 	printlog(title='clean_addonString', printpoint=printpoint, text=text, level=0, option="")
-	return to_utf8(x_)
+	return to_utf8(c)
 	
 def clean_commonsearch(x, match=False):
 	'''Used when searching in YouTube'''
