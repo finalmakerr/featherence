@@ -27,7 +27,7 @@ msgid "Israeli Djs"
 msgstr "די ג'יי ישראליים"
 
 msgctxt "#30006"
-msgid "Mizrahit Music"
+msgid "מוזיקה מזרחית"
 msgstr "מוזיקה מזרחית"
 
 msgctxt "#30007"
@@ -109,6 +109,22 @@ msgstr "שיר"
 msgctxt "#30028"
 msgid "קריוקי"
 msgstr "קריוקי"
+
+msgctxt "#30029"
+msgid "מוזיקה ישראלית"
+msgstr "מוזיקה ישראלית"
+
+msgctxt "#30030"
+msgid "Live Show"
+msgstr "Live Show"
+
+msgctxt "#30031"
+msgid "Song"
+msgstr "Song"
+
+msgctxt "#30032"
+msgid "Karaoke"
+msgstr "Karaoke"
 
 msgctxt "#30050"
 msgid "Amir Elgazar's Playlists"

@@ -14,6 +14,11 @@ WIP - WORK IN PROGRESS
 - Added option to hide consoles on demand.
 
 ------------------------
+Featherence Emu v0.1.8 (21-Dec-17)
+------------------------
+- Added new category 2P to GameCube console with 26 new games!
+
+------------------------
 Featherence Emu v0.1.7 (13-Nov-17)
 ------------------------
 - Added about 10 more GameCube roms to 1P category.

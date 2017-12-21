@@ -8,8 +8,7 @@ if "plugin." in addonID: from shared_modules3 import *
 
 '''ערוצי טלוויזיה'''
 
-def CATEGORIES10101Z(name, iconimage, desc, background, fanart):
-	background = 101
+def CATEGORIES10101Z():
 	
 	'''מוזיקה ישראלית'''
 	list = []
@@ -18,10 +17,9 @@ def CATEGORIES10101Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=23music')
 	list.append('&youtube_ch=livni2')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES10102Z(name, iconimage, desc, background, fanart):
-	background = 102
+def CATEGORIES10102Z():
 	
 	'''קריוקי ישראלי'''
 	list = []
@@ -30,10 +28,9 @@ def CATEGORIES10102Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=HarifKaraoke')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES10104Z(name, iconimage, desc, background, fanart):
-	background = 104
+def CATEGORIES10104Z():
 	
 	'''הופעות חיות ישראליות'''
 	list = []
@@ -42,35 +39,31 @@ def CATEGORIES10104Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES10105Z(name, iconimage, desc, background, fanart):
-	'''די ג'י ישראליים'''
-	background = 105
-	
+def CATEGORIES10105Z():
+	'''DJS'''
 	list = []
-
 	list.append('&youtube_ch=UC4XhqoxGQ1oTifJ8yRsjKnA') #The Best Sets On The Net
-	list.append('&youtube_ch=')
-	list.append('&youtube_ch=')
+	list.append('&youtube_ch=TomorrowlandChannel') #Tomorrowland
+	list.append('&youtube_ch=dimitrivegasonline') #Dimitri Vegas & Like Mike
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 	
-def CATEGORIES10106Z(name, iconimage, desc, background, fanart):
+def CATEGORIES10106Z():
 	'''מוזיקה מזרחית'''
-	background = 106
 	
 	list = []
-
+	se = '"addonString(30006)' + space + 'addonString(30027)"'
+	list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES10107Z(name, iconimage, desc, background, fanart):
+def CATEGORIES10107Z():
 	'''קריוקי מזרחי'''
-	background = 107
 	
 	list = []
 
@@ -78,11 +71,10 @@ def CATEGORIES10107Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES10109Z(name, iconimage, desc, background, fanart):
+def CATEGORIES10109Z():
 	'''הופעות חיות מזרחיות'''
-	background = 108
 	
 	list = []
 
@@ -90,11 +82,10 @@ def CATEGORIES10109Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES11101Z(name, iconimage, desc, background, fanart):
+def CATEGORIES11101Z():
 	'''מוזיקה לועזית'''
-	background = 111
 	
 	list = []
 
@@ -102,11 +93,10 @@ def CATEGORIES11101Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES11102Z(name, iconimage, desc, background, fanart):
+def CATEGORIES11102Z():
 	'''קריוקי לועזי'''
-	background = 111
 	
 	list = []
 
@@ -114,33 +104,19 @@ def CATEGORIES11102Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=')
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES11104Z(name, iconimage, desc, background, fanart):
+def CATEGORIES11104Z():
 	'''הופעות חיות לועזיות'''
-	background = 114
 	
 	list = []
 
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES11105Z(name, iconimage, desc, background, fanart):
-	'''די ג'י לועזיים'''
-	background = 115
-	
-	list = []
-
-	list.append('&youtube_ch=TomorrowlandChannel') #Tomorrowland
-	list.append('&youtube_ch=dimitrivegasonline') #Dimitri Vegas & Like Mike
-	list.append('&youtube_ch=')
-		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
-
-def CATEGORIES11109Z(name, iconimage, desc, background, fanart):
+def CATEGORIES11109Z():
 	''''''
-	background = 119
 	
 	list = []
 
@@ -148,11 +124,10 @@ def CATEGORIES11109Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=') #
 	list.append('&youtube_ch=')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 	
-def CATEGORIES118Z(name, iconimage, desc, background, fanart):
+def CATEGORIES118Z():
 	'''מוזיקה קלאסית'''
-	background = 118
 	
 	list = []
 
@@ -160,11 +135,10 @@ def CATEGORIES118Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=TopClassicalMusic/playlists')
 	list.append('&youtube_ch=ClassicalMusicOn/playlists')
 		
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES114Z(name, iconimage, desc, background, fanart):
+def CATEGORIES114Z():
 	'''תצוגות אופנה'''
-	background = 114
 	
 	list = []
 
@@ -175,4 +149,4 @@ def CATEGORIES114Z(name, iconimage, desc, background, fanart):
 	list.append('&youtube_ch=SHOWstudio')
 	list.append('&youtube_ch=FatalefashionIII') #FF Channel
 	list.append('&youtube_ch=UCkxPf1eZSpKxY3veCPE6uNw')
-	addDir('-' + addonString_servicefeatherence(32089).encode('utf-8') % (name),list,17,featherenceserviceicons_path + 'tv.png',addonString_servicefeatherence(32082).encode('utf-8') % (name),'1',0,getAddonFanart(background, custom=fanart))
+	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))

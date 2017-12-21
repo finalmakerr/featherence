@@ -91,28 +91,6 @@ def CATEGORIES10105A(name, iconimage, desc, fanart):
 	list.append('&youtube_pl=PLLgkjg98m5INnhyZDV-vLGMzMXbQdYrA6')
 		
 	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
-	
-def CATEGORIES10106A(name, iconimage, desc, fanart):
-	'''מוזיקה מזרחית'''
-	background = 106
-	
-	list = []
-
-	list.append('&youtube_pl=PL5DEpNm9EvxlXBjHE2dbIQTsLoEba83x0')
-	list.append('&youtube_pl=PLFhqlkXfSkvJN_tq5MUZd_2ms8iSvnhCx')
-	list.append('&youtube_pl=PLTc0JNRljDnDGP78_AArd92uOID5cgXQ-')
-	list.append('&youtube_pl=PL76tprfc11flz1_awCcqXMU54HAKmU9hQ')
-	list.append('&youtube_pl=PL76C25ECA2C0A42D8')
-	list.append('&youtube_pl=PLHJ3aAavAyXPvWoAZDAbSjF7_rtxcj_GV')
-	list.append('&youtube_pl=PL244F4D7779BDB785')
-	list.append('&youtube_pl=PL4Y9oM_hCEX-ufbpFC1PFGNDgW0cs0VjC')
-	list.append('&youtube_pl=PL0-1r69ebVlq4lyF3IG2RCDv9K-7Cx4kb')
-	list.append('&youtube_pl=PL2ED2F272AAD77564')
-	list.append('&youtube_pl=PL6T48PIw2WV0lA-0CGnJkyBN9kHpZrMsN')
-	list.append('&youtube_pl=PLcTtnwINjBVetkyrXdlslnaB18-FGrIeB')
-	list.append('&youtube_pl=PLwc22f_a0ALr7yxtJfyMBL4UvghuPCyaW')
-		
-	addDir('-' + localize(33078),list,6,featherenceserviceicons_path + 'nextpage.png',"",'1',0,getAddonFanart(background, custom=""))
 
 def CATEGORIES10107A(name, iconimage, desc, fanart):
 	'''קריוקי מזרחי'''

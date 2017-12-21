@@ -17574,7 +17574,7 @@
 		<launcher>
 			<id>Featherence_gamecube2P</id>
 			<name>GameCube 2P</name>
-			<category>Featherence_gamecube_</category>
+			<category>Featherence_gamecube</category>
 			<application>emulator_file</application>
 			<args>lib_args_gamecube_args "%rom%"</args>
 			<rompath>rom_pathGameCube/_2P/</rompath>

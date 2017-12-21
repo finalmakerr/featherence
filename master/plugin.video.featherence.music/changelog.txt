@@ -9,9 +9,11 @@ WIP (WORK IN PROGRESS)
 ------------------------
 Featherence Music v0.3.10 (xx-xx-17)
 ------------------------
+- Added Music Box feature.
 - Added new feature that require less categories by using dialog select for choosing Songs, Karaoke or Liveshow.
 - Added new YouTube API for better performance.
 - Added TV Mode support to YouTube search sources.
+- Major changes to addon structure, making it more user friendly.
 - Major performance update result in a very fast addon!
 - Major update of links quality and relevence.
 

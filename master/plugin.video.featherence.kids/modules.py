@@ -3034,7 +3034,7 @@ def CATEGORIES106(name, iconimage, desc, fanart):
 		list.append('&youtube_id=Vo2N47-NFPQ&t=573s')
 		list.append('&youtube_id=rkjrQ7oMpg0')
 		
-	addDir(addonString(10615).encode('utf-8'),list,17,thumb,addonString(106150).encode('utf-8'),'1',0,fanart)
+	addDir(addonString(10610).encode('utf-8'),list,17,thumb,addonString(106100).encode('utf-8'),'1',0,fanart)
 	
 	'''הגלופסים'''
 	thumb = ''
