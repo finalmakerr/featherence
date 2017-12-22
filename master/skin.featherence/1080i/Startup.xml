@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-  <onload condition="!Window.Previous(VideoFullScreen.xml)">AlarmClock(startup,ReplaceWindow(Home.xml),00:03,silent)</onload>
+  <onload condition="!Window.Previous(VideoFullScreen.xml)">AlarmClock(startup,ReplaceWindow(Home.xml),00:06,silent)</onload>
   <onload condition="Window.Previous(VideoFullScreen.xml)">ReplaceWindow(Home.xml)</onload>
   <!--<onunload condition="Skin.String(StartUpVideo) + !Skin.HasSetting(StartUpVideoFullScreen)">AlarmClock(StartUpVideo,PlayMedia($INFO[Skin.String(StartUpVideo)]),00:02,silent)</onunload>
   <onunload condition="Skin.String(StartUpVideo) + Skin.HasSetting(StartUpVideoFullScreen)">AlarmClock(StartUpVideo,PlayMedia($INFO[Skin.String(StartUpVideo)],1),00:02,silent)</onunload>

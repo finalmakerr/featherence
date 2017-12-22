@@ -6,9 +6,10 @@ from shared_modules import *
 
 def mode0(admin, name, printpoint):
 	'''test'''
-	from shared_modules3 import *
-	from shared_variables3 import *
-	PlayVideos('name', 'mode', 'http://nickjr.walla.co.il/?w=//1887291', 'iconimage', 'desc', 'num', 'fanart')
+	mode11('','')
+	#from shared_modules3 import *
+	#from shared_variables3 import *
+	#PlayVideos('name', 'mode', 'http://nickjr.walla.co.il/?w=//1887291', 'iconimage', 'desc', 'num', 'fanart')
 	#emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')
 	#rom_path = os.path.join(emulatordata_path,'rom','')
 	
@@ -631,12 +632,12 @@ def mode11(name, printpoint):
 	IntroDelay = xbmc.getInfoLabel('Skin.String(IntroDelay)')
 	
 	if IntroDelay == "" or IntroDelay == '-':
-		IntroDelay = 1
+		IntroDelay = 0
 	else:
 		try:
 			IntroDelay = int(IntroDelay)
 		except:
-			IntroDelay = 1
+			IntroDelay = 0
 	
 	xsleep = int(IntroDelay) * 1000
 	xbmc.sleep(xsleep)

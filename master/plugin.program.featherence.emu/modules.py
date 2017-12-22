@@ -647,6 +647,7 @@ def getfileID(file):
 		fileName_L.append('Source 3')
 
 	elif file == "Arcade_3P.zip":
+		fileID_L.append('86hwvrrhp8xzxdx') #user41
 		fileID_L.append('qmkxfdvv9da2gxc') #guser27
 		fileID_L.append('j6bl5uaa01uzspj') #user2
 		fileID_L.append('z72bbl6goev3tm9') #featherence.user6
@@ -657,6 +658,7 @@ def getfileID(file):
 		fileName_L.append('Source 3')
 		fileName_L.append('Source 4')
 		fileName_L.append('Source 5')
+		fileName_L.append('Source 6')
 	elif file == "Arcade_4P.zip":
 		fileID_L.append('ubya3wg60fx3e6b') #guser14
 		fileID_L.append('2divr39cj5fgh77') #guser21
@@ -713,9 +715,10 @@ def getfileID(file):
 		fileName_L.append('Source 3')
 		
 	elif file == "Arcade_FUN.zip":
+		fileID_L.append('1rj7a2r2ve7kmqr') #user34
 		fileID_L.append('p64howpq8a0p3yy') #user23
 		fileID_L.append('c4qdpngxl64yvro') #featherence.user6
-		fileID_L.append('') #guser19!
+		fileID_L.append('w8se9aiv7odt44a') #guser19!
 		fileID_L.append('1q8f4gv6ra6ritp') #htpt
 		fileID_L.append('xp1k65cp1f9ltai') #info
 		fileName_L.append('Source 1')
@@ -723,6 +726,7 @@ def getfileID(file):
 		fileName_L.append('Source 3')
 		fileName_L.append('Source 4')
 		fileName_L.append('Source 5')
+		fileName_L.append('Source 6')
 	elif file == "Nintendo 64_1P.zip":
 		fileID_L.append('jp4xzb03m7nbghp') #buy
 		fileID_L.append('iu9ntsgd5g4csnw') #htpt
