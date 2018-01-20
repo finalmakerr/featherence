@@ -18020,7 +18020,7 @@
 		<launcher>
 			<id>Featherence_gamecube4P</id>
 			<name>GameCube 4P</name>
-			<category>Featherence_gamecube_</category>
+			<category>Featherence_gamecube</category>
 			<application>emulator_file</application>
 			<args>lib_args_gamecube_args "%rom%"</args>
 			<rompath>rom_pathGameCube/_4P/</rompath>

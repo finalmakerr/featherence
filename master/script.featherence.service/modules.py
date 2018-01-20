@@ -2474,7 +2474,6 @@ def mode218(value, admin, name, printpoint):
 	message = ""
 	if "view" in value:
 		customhomecustomizerW = xbmc.getCondVisibility('Window.IsVisible(CustomHomeCustomizer.xml)')
-		dialogfullscreeninfoW = xbmc.getCondVisibility('Window.IsVisible(DialogFullScreenInfo.xml)')
 		dialogvideoinfoW = xbmc.getCondVisibility('Window.IsVisible(DialogVideoInfo.xml)')
 		dialogsubtitlesW = xbmc.getCondVisibility('Window.IsVisible(DialogSubtitles.xml)')
 		homeW = xbmc.getCondVisibility('Window.IsVisible(Home.xml)')
@@ -2489,7 +2488,7 @@ def mode218(value, admin, name, printpoint):
 		message = message + newline + "TEMP" + space2 + property_temp
 		message = message + newline + "TEMP2" + space2 + property_temp2
 		
-		if dialogfullscreeninfoW and playerpaused:
+		if xbmc.getCondVisibility('Window.IsVisible(VideoFullScreen.xml)') and playerpaused:
 			message = message + newline + "VideoPlayer.Duration" + space2 + xbmc.getInfoLabel('VideoPlayer.Duration')
 			message = message + newline + "VideoPlayer.Year" + space2 + xbmc.getInfoLabel('VideoPlayer.Year')
 			message = message + newline + "VideoPlayer.Rating" + space2 + xbmc.getInfoLabel('VideoPlayer.Rating')
@@ -2498,7 +2497,8 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + "VideoPlayer.Genre" + space2 + xbmc.getInfoLabel('VideoPlayer.Genre')
 			message = message + newline + "VideoPlayer.Tagline" + space2 + xbmc.getInfoLabel('VideoPlayer.Tagline')
 			message = message + newline + "VideoPlayer.Title" + space2 + xbmc.getInfoLabel('VideoPlayer.Title')
-			message = message + newline + "custom" + space2 + xbmc.getInfoLabel('VideoPlayer.VideoCodec') #CUSTOM TEST
+			message = message + newline + "VideoPlayer.VideoCodec" + space2 + xbmc.getInfoLabel('VideoPlayer.VideoCodec') #CUSTOM TEST
+			message = message + newline + "Player.Progress" + space2 + xbmc.getInfoLabel('Player.Progress')
 			
 		elif myweatherW:
 			message = message + newline + "Day0 Title" + space2 + xbmc.getInfoLabel('Window.Property(Day0.Title)')

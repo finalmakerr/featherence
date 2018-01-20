@@ -334,7 +334,40 @@
 				</control>
 			</control>
 		  </control>
-        <control type="group">
+        <control type="group" id="6000">
+			<top>1020</top>
+			<visible>Player.SeekEnabled</visible>
+			<control type="button" id="87">
+				<left>-3000</left>
+				<top>-3000</top>
+				<width>1</width>
+				<height>1</height>
+				<texturefocus />
+				<texturenofocus />
+				<label></label>
+				<font></font>
+				<onup>202</onup>
+				<onunfocus condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onunfocus>
+				<ondown>202</ondown>
+				<onright>StepForward</onright>
+				<onleft>StepBack</onleft>
+				<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
+			</control>
+			<control type="slider">
+				<left>0</left>
+				<top>27</top>
+				<width>1920</width>
+				<height>35</height>
+				<texturesliderbar colordiffuse="00FFFFFF">osd/nub_bar.png</texturesliderbar>
+				<textureslidernib colordiffuse="$VAR[ButtonUnFocusColor]">osd/nub_bar.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="$VAR[ButtonFocusColor]">osd/white.png</textureslidernibfocus>
+				<visible>!VideoPlayer.Content(livetv)</visible>
+				<!--<visible>Player.Seeking</visible>
+				<visible>!Window.IsVisible(VideoOSD.xml)</visible>-->
+				<orientation>horizontal</orientation>
+			</control>
+		</control>
+		<control type="group">
 		  <visible>Player.Paused</visible>
 		  <include>TopVideoInformation</include>
 		</control>

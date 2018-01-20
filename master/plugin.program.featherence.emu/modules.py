@@ -965,7 +965,6 @@ def getfileID(file):
 	elif file == "Sony Playstation_2P_Super Puzzle Fighter II Turbo.zip": fileID = "acfsgyrxt3vqfjk" #user
 	elif file == "Sony Playstation_2P_Syphon Filter 2.zip": fileID = "f9g6t8mkisybzev" #user11
 	elif file == "Sony Playstation_2P_Tekken 3.zip": fileID = "mxhx48jousad3zg" #fix
-	elif file == "Sony Playstation_2P_Test Drive 5.zip": fileID = "ft1qjwsj5korqi3" #fix
 	elif file == "Sony Playstation_2P_Thrill Kill.zip": fileID = "ooyshbkenk68gpl" #fix
 	elif file == "Sony Playstation_2P_Tony Hawk's Pro Skater.zip": fileID = "4nopoihpr7zo9yo" #fix
 	elif file == "Sony Playstation_2P_Tony Hawk's Pro Skater 2.zip": fileID = "xx9kyy4g0n7nfq5" #user11
@@ -1257,6 +1256,9 @@ def getfileID(file):
 	elif file == "GameCube_4P_Bomberman Jetters.zip": fileID = "w9g3urlf4rdyog2" #featherence.user43
 	elif file == "GameCube_4P_Shadow The Hedgehog.zip": fileID = "of9gkwc91eo0v61" #featherence.user43
 	elif file == "GameCube_2P_Batman Rise Of Sin Tzu.zip": fileID = "ix5tcxlrcs5ka0u" #featherence.user8
+	elif file == "GameCube_2P_Teenage Mutant Ninja Turtles.zip": fileID = "nvxwwr1piadlfoe" #featherence.guser35
+	elif file == "GameCube_4P_Teenage Mutant Ninja Turtles 2 - Battle Nexus.zip": fileID = "riodsm03p0mofjb" #featherence.guser35
+	elif file == "Sony Playstation_2P_Test Drive 5.zip": fileID = "vtrhfh1iqsf9ydz" #featherence.guser35
 	
 	elif file == ".zip":
 		fileID_L.append('[GD]') #featherence.user1 [GD]

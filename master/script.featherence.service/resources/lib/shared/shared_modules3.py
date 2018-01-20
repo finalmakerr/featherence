@@ -2078,7 +2078,7 @@ def pluginend(admin):
 		
 		else: CATEGORIES()
 		
-		systemlanguage = xbmc.getInfoLabel('System.Language') ; frun()
+		systemlanguage = xbmc.getInfoLabel('System.Language') #; frun()
 		
 		if 1 + 1 == 2:
 			getsetting('Addon_Update')

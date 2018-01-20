@@ -14,9 +14,8 @@ def CATEGORIES():
 	addDir(addonString(30000).encode('utf-8'),'MyMusic',100,featherenceserviceicons_path + 'star.png',addonString_servicefeatherence(32800).encode('utf-8'),'1',0,getAddonFanart(100)) #My Music
 	addDir(addonString(30001).encode('utf-8'),'',101,featherenceserviceicons_path + 'sod.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30001).encode('utf-8')),'1',0,getAddonFanart(101)) #Israeli Music
 	addDir(addonString(30011).encode('utf-8'),'',111,featherenceserviceicons_path + 'us.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30011).encode('utf-8')),'1',0,getAddonFanart(111)) #Foreign Music
-	'''---------------------------'''
+	addDir(addonString(30005).encode('utf-8'),'',105,featherenceserviceicons_path + "radio.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30005).encode('utf-8')),'1',0, getAddonFanart(105)) #Djs
 	addDir(addonString(30022).encode('utf-8'),'',114,featherenceserviceicons_path + 'director.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30022).encode('utf-8')),'1',0,getAddonFanart(114)) #Fashion Shows
-	'''---------------------------'''
 	addDir(addonString(30018).encode('utf-8'),'',118,featherenceserviceicons_path + 'classical.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30018).encode('utf-8')),'1',0,getAddonFanart(118)) #Classical Music
 	addDir(addonString(30019).encode('utf-8'),'',119,featherenceserviceicons_path + 'radio.png',addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30019).encode('utf-8')),'1',0,getAddonFanart(119)) #Radio
 	addDir(localize(10516),'ActivateWindow(10502,special://userdata/)',201,featherenceserviceicons_path + 'music.png',"Local Kodi's music library",'1',0,getAddonFanart(100)) #Local Library
@@ -26,28 +25,28 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 	background = 100
 	
 	'''כפתור מוזיקה חדש..'''
-	addDir(addonString_servicefeatherence(32450).encode('utf-8') % (addonString(300).encode('utf-8')),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',0,getAddonFanart(background))
+	addDir(addonString_servicefeatherence(32156).encode('utf-8'),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',0,getAddonFanart(background))
 	
 	'''רשימת השמעה 1'''
-	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',0,getAddonFanart("Custom_Playlist1")
+	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',0,getAddonFanart("Custom_Playlist1"))
 	'''רשימת השמעה 2'''
-	if Custom_Playlist2_ID != "": addDir(Custom_Playlist2_Name,Custom_Playlist2_ID,18,Custom_Playlist2_Thumb,Custom_Playlist2_Description,'2',0,getAddonFanart("Custom_Playlist2")
+	if Custom_Playlist2_ID != "": addDir(Custom_Playlist2_Name,Custom_Playlist2_ID,18,Custom_Playlist2_Thumb,Custom_Playlist2_Description,'2',0,getAddonFanart("Custom_Playlist2"))
 	'''רשימת השמעה 3'''
-	if Custom_Playlist3_ID != "": addDir(Custom_Playlist3_Name,Custom_Playlist3_ID,18,Custom_Playlist3_Thumb,Custom_Playlist3_Description,'3',0,getAddonFanart("Custom_Playlist3")
+	if Custom_Playlist3_ID != "": addDir(Custom_Playlist3_Name,Custom_Playlist3_ID,18,Custom_Playlist3_Thumb,Custom_Playlist3_Description,'3',0,getAddonFanart("Custom_Playlist3"))
 	'''רשימת השמעה 4'''
-	if Custom_Playlist4_ID != "": addDir(Custom_Playlist4_Name,Custom_Playlist4_ID,18,Custom_Playlist4_Thumb,Custom_Playlist4_Description,'4',0,getAddonFanart("Custom_Playlist4")
+	if Custom_Playlist4_ID != "": addDir(Custom_Playlist4_Name,Custom_Playlist4_ID,18,Custom_Playlist4_Thumb,Custom_Playlist4_Description,'4',0,getAddonFanart("Custom_Playlist4"))
 	'''רשימת השמעה 5'''
-	if Custom_Playlist5_ID != "": addDir(Custom_Playlist5_Name,Custom_Playlist5_ID,18,Custom_Playlist5_Thumb,Custom_Playlist5_Description,'5',0,getAddonFanart("Custom_Playlist5")
+	if Custom_Playlist5_ID != "": addDir(Custom_Playlist5_Name,Custom_Playlist5_ID,18,Custom_Playlist5_Thumb,Custom_Playlist5_Description,'5',0,getAddonFanart("Custom_Playlist5"))
 	'''רשימת השמעה 6'''
-	if Custom_Playlist6_ID != "": addDir(Custom_Playlist6_Name,Custom_Playlist6_ID,18,Custom_Playlist6_Thumb,Custom_Playlist6_Description,'6',0,getAddonFanart("Custom_Playlist6")
+	if Custom_Playlist6_ID != "": addDir(Custom_Playlist6_Name,Custom_Playlist6_ID,18,Custom_Playlist6_Thumb,Custom_Playlist6_Description,'6',0,getAddonFanart("Custom_Playlist6"))
 	'''רשימת השמעה 7'''
-	if Custom_Playlist7_ID != "": addDir(Custom_Playlist7_Name,Custom_Playlist7_ID,18,Custom_Playlist7_Thumb,Custom_Playlist7_Description,'7',0,getAddonFanart("Custom_Playlist7")
+	if Custom_Playlist7_ID != "": addDir(Custom_Playlist7_Name,Custom_Playlist7_ID,18,Custom_Playlist7_Thumb,Custom_Playlist7_Description,'7',0,getAddonFanart("Custom_Playlist7"))
 	'''רשימת השמעה 8'''
-	if Custom_Playlist8_ID != "": addDir(Custom_Playlist8_Name,Custom_Playlist8_ID,18,Custom_Playlist8_Thumb,Custom_Playlist8_Description,'8',0,getAddonFanart("Custom_Playlist8")
+	if Custom_Playlist8_ID != "": addDir(Custom_Playlist8_Name,Custom_Playlist8_ID,18,Custom_Playlist8_Thumb,Custom_Playlist8_Description,'8',0,getAddonFanart("Custom_Playlist8"))
 	'''רשימת השמעה 9'''
-	if Custom_Playlist9_ID != "": addDir(Custom_Playlist9_Name,Custom_Playlist9_ID,18,Custom_Playlist9_Thumb,Custom_Playlist9_Description,'9',0,getAddonFanart("Custom_Playlist9")
+	if Custom_Playlist9_ID != "": addDir(Custom_Playlist9_Name,Custom_Playlist9_ID,18,Custom_Playlist9_Thumb,Custom_Playlist9_Description,'9',0,getAddonFanart("Custom_Playlist9"))
 	'''רשימת השמעה 10'''
-	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',0,getAddonFanart("Custom_Playlist10")
+	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',0,getAddonFanart("Custom_Playlist10"))
 	
 	if Custom_10001 == "true" and 1 + 1 == 3: addDir(addonString(30050).encode('utf-8'),'',10001,featherenceserviceicons_path + 'star.png',addonString(30051).encode('utf-8'),'1',0,'') #AMIR ELGAZAR PLAYLISTS
 	if Custom_10002 == "true":
@@ -232,26 +231,11 @@ def CATEGORIES10002(name, iconimage, desc, fanart):
 	
 def CATEGORIES101(name, iconimage, desc, fanart):
 	'''Israeli Music'''
-	addDir(addonString(30001).encode('utf-8'),'',10101,featherenceserviceicons_path + "music.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30001).encode('utf-8')),'1',0, getAddonFanart(10101, default="") #Israeli Music
-	addDir(addonString(30005).encode('utf-8'),'',10105,featherenceserviceicons_path + "radio.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30005).encode('utf-8')),'1',0, getAddonFanart(10105, default="http://telavivparty.com/wp-content/uploads/2016/08/Light-House-Club-Tel-Aviv.jpg") #Israeli Djs
+	CATEGORIES_RANDOM("",fanart)
+	'''חיפוש'''
+	addDir(localize(137),'שיר',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(30021).encode('utf-8')),'1',0,fanart)
 	
-	addDir(addonString(30006).encode('utf-8'),'',10106,featherenceserviceicons_path + "music.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30006).encode('utf-8')),'1',0, getAddonFanart(10106, default="http://haflla.com/wp-content/uploads/2014/10/pic4.jpg") #Mizrahit Music
-	
-def CATEGORIES111(name, iconimage, desc, fanart):
-	'''Foreign Music'''
-	addDir(addonString(30011).encode('utf-8'),'',11101,featherenceserviceicons_path + "music.png",addonString_servicefeatherence(32099).encode('utf-8') % (addonString(30011).encode('utf-8')),'1',0, getAddonFanart(11101)) #Foreign Music
-	addDir(addonString(30015).encode('utf-8'),'',11105,featherenceserviceicons_path + "radio.png",addonString(30015).encode('utf-8'),'1',0, getAddonFanart(11105, default="https://tiestoclublife.files.wordpress.com/2014/05/dj_tiesto_club_life_2014_img372.jpg") #Foreign Djs
-
-def CATEGORIES10101(name, iconimage, desc, fanart):
-	'''Israeli-Music'''
-	background = 101
-	commonsearch = 'commonsearch101'
-	
-	CATEGORIES_RANDOM(background,fanart)
-	
-	CATEGORIES10101() #Music Box
-	se = 'addonString(30029)'
-	addDir('MUSIC BOX',se,5,'',"",'1',0,fanart)
+	CATEGORIES10106Z() #Music Box
 
 	'''אביתר בנאי'''
 	thumb = 'http://images.mouse.co.il/storage/7/f/eviatar-ggg.jpg'
@@ -268,24 +252,23 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list2 = [] ; se = '"addonString(30102)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list3 = [] ; se = '"addonString(30102)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30102).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30202).encode('utf-8'),'1',0,fanart)
-
+	
+	'''אייל גולן'''
+	thumb = 'http://www.atzuma.co.il/uploaded/13112175e8e2be3e53e7dc74153479b3a0c726.jpg'
+	fanart = 'http://eco99fm.maariv.co.il/download/pictures/Show_245_4506.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30103).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30203).encode('utf-8'),'1',0,fanart)
+	
 	'''אתניקס'''
 	thumb = 'http://img.mako.co.il/2013/05/21/etnix_prn_c.jpg'
 	fanart = ''
 	list = [] ; se = '"addonString(30105)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30105)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list3 = [] ; se = '"addonString(30105)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	
 	addDir(addonString(30105).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30205).encode('utf-8'),'1',0,fanart)
 	
-	'''פורטיסחרוף'''
-	thumb = 'http://www.yosmusic.com/images/articles/big/fortis1284-b.jpg'
-	fanart = ''
-	list = [] ; se = '"addonString(30106)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30106)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30106)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30106).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30206).encode('utf-8'),'1',0,fanart)
-		
 	'''גיא ויהל'''
 	thumb = 'http://i.ytimg.com/vi/9fkcGdgj-iI/hqdefault.jpg'
 	fanart = ''
@@ -293,6 +276,14 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list2 = [] ; se = '"addonString(30108)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list3 = [] ; se = '"addonString(30108)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30108).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30208).encode('utf-8'),'1',0,fanart)
+
+	'''דודו אהרון'''
+	thumb = 'http://www.klr-lior.com/wp-content/gallery/omanim/dudu_aharon-hero_c.jpg'
+	fanart = 'http://haflla.com/wp-content/uploads/2014/12/pic53.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30107).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30207).encode('utf-8'),'1',0,fanart)
 	
 	'''דני סנדרסון'''
 	thumb = 'http://images1.calcalist.co.il/PicServer2/20122005/158200/YE0415562_l.jpg'
@@ -302,6 +293,22 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list3 = [] ; se = '"addonString(30111)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30111).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30211).encode('utf-8'),'1',0,fanart)
 	
+	'''הדודאים'''
+	thumb = 'https://i.ytimg.com/vi/vxA1AlH9o-0/hqdefault.jpg'
+	fanart = ''
+	list = [] ; se = '"addonString(30148)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30148)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30148)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30148).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30248).encode('utf-8'),'1',0,fanart) 
+	
+	'''הפרויקט של רביבו'''
+	thumb = 'http://img.mako.co.il/2012/08/23/revivo_project_purple_c.jpg'
+	fanart = 'http://haflla.com/wp-content/uploads/2015/06/pic15.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30112).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30212).encode('utf-8'),'1',0,fanart)
+	
 	'''הראל סקעת'''
 	thumb = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Flickr_-_aktivioslo_-_Harel_Skaat_-_Israel_%282%29_cropped.jpg/1200px-Flickr_-_aktivioslo_-_Harel_Skaat_-_Israel_%282%29_cropped.jpg'
 	fanart = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Flickr_-_aktivioslo_-_Harel_Skaat_-_Israel_%282%29_cropped.jpg/1200px-Flickr_-_aktivioslo_-_Harel_Skaat_-_Israel_%282%29_cropped.jpg'
@@ -310,13 +317,37 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list3 = [] ; se = '"addonString(30113)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30113).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30213).encode('utf-8'),'1',0,fanart)
 	
-	'''הדודאים'''
-	thumb = 'https://i.ytimg.com/vi/vxA1AlH9o-0/hqdefault.jpg'
-	fanart = ''
-	list = [] ; se = '"addonString(30148)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30148)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30148)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30148).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30248).encode('utf-8'),'1',0,fanart) 
+	'''זוהר ארגוב'''
+	thumb = 'https://upload.wikimedia.org/wikipedia/he/thumb/6/67/Argov.jpg/200px-Argov.jpg'
+	fanart = 'https://i.ytimg.com/vi/nM8XuZZQnt4/maxresdefault.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30128).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,'http://www.atzuma.co.il/uploaded/13112175e8e2be3e53e7dc74153479b3a0c726.jpg',addonString(30228).encode('utf-8'),'1',0,fanart)
+	
+	'''חיים משה'''
+	thumb = 'http://images.one.co.il/images/mag/450_250/gg789176.jpg'
+	fanart = 'http://www.tlvtimes.co.il/wp-content/uploads/2016/10/%D7%97%D7%99%D7%99%D7%9D-%D7%9E%D7%A9%D7%94.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30114).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30214).encode('utf-8'),'1',0,fanart)
+	
+	'''יעקב חתן'''
+	thumb = 'https://yt3.ggpht.com/-_rt6N50COLw/AAAAAAAAAAI/AAAAAAAAAAA/F_g5RBGIXfo/s100-c-k-no/photo.jpg'
+	fanart = 'http://haflla.com/wp-content/uploads/2016/02/pic-5.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30116).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30216).encode('utf-8'),'1',0,fanart)
+	
+	'''ישי לוי'''
+	thumb = 'http://harif.co.il/wp-content/uploads/2010/07/%D7%99%D7%A9%D7%99-%D7%9C%D7%95%D7%99-%D7%9E%D7%A8%D7%92%D7%A9-%D7%91%D7%A6%D7%99%D7%9C%D7%95%D7%9E%D7%99-%D7%94%D7%A7%D7%9C%D7%99%D7%A4-%D7%AA%D7%95%D7%93%D7%94.jpg'
+	fanart = 'http://ycom.co.il/wp-content/uploads/2017/04/%D7%99%D7%A9%D7%99-%D7%9C%D7%95%D7%993.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30117).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30217).encode('utf-8'),'1',0,fanart)
 
 	'''כוורת גזוז דודה'''
 	thumb = 'http://3.bp.blogspot.com/-MQNn8bDIkIU/TcN-z5QEkkI/AAAAAAAABCM/xYuRV3ht--I/s1600/%25D7%2593%25D7%2595%25D7%2593%25D7%2594+%25D7%25A6%25D7%2599%25D7%259C%25D7%2595%25D7%259D+%25D7%2590%25D7%2591%25D7%2599+%25D7%2592%25D7%25A0%25D7%2595%25D7%25A8.jpg'
@@ -325,6 +356,22 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list2 = [] ; se = '"addonString(30115)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list3 = [] ; se = '"addonString(30115)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30115).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30215).encode('utf-8'),'1',0,fanart)
+
+	'''ליאור נרקיס'''
+	thumb = 'http://bsn.co.il/sites/default/files/styles/home_page_main_story_image_480x269/public/%D7%9C%D7%99%D7%90%D7%95%D7%A8%20%D7%A0%D7%A8%D7%A7%D7%99%D7%A1.jpg'
+	fanart = 'http://hangar11.co.il/preprod/events/wp-content/uploads/2016/08/liornarkis-1.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30118).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30218).encode('utf-8'),'1',0,fanart)
+	 
+	'''מאור אדרי'''
+	thumb = 'http://img.mako.co.il/2012/09/12/maor_edri_suit_c.jpg'
+	fanart = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Maor_Edri.jpg/1200px-Maor_Edri.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30124).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30224).encode('utf-8'),'1',0,fanart)
 	
 	'''מוש בן ארי ולהקת שבע'''
 	thumb = 'http://www.nrg.co.il/images/archive/408x322/692/069.jpg'
@@ -333,6 +380,14 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list2 = [] ; se = '"addonString(30121)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list3 = [] ; se = '"addonString(30121)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30121).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30221).encode('utf-8'),'1',0,fanart)
+
+	'''מושיק עפיה'''
+	thumb = 'https://yt3.ggpht.com/-4IayEL0C0Rs/AAAAAAAAAAI/AAAAAAAAAAA/kEV66on9DOM/s100-c-k-no/photo.jpg'
+	fanart = 'http://haflla.com/wp-content/uploads/2014/11/pic21.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30122).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,fanart,addonString(30222).encode('utf-8'),'1',0,fanart)
 
 	'''מזי כהן'''
 	thumb = 'https://i.ytimg.com/vi/3JAAD8Ptq00/maxresdefault.jpg'
@@ -357,7 +412,15 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list2 = [] ; se = '"addonString(30126)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list3 = [] ; se = '"addonString(30126)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30126).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30226).encode('utf-8'),'1',0,fanart)
-	
+		 		
+	'''משה פרץ'''
+	thumb = 'https://i.ytimg.com/i/0ebT4a-IyuY61X8py3nzsg/mq1.jpg?v=52124db3'
+	fanart = 'http://haflla.com/wp-content/uploads/2014/11/pic-24.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30125).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30225).encode('utf-8'),'1',0,fanart)
+
 	'''נתן גושן'''
 	thumb = 'https://upload.wikimedia.org/wikipedia/he/2/27/%D7%A0%D7%AA%D7%9F_%D7%92%D7%95%D7%A9%D7%9F.jpg'
 	fanart = ''
@@ -381,7 +444,23 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list2 = [] ; se = '"addonString(30130)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list3 = [] ; se = '"addonString(30130)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30130).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30230).encode('utf-8'),'1',0,fanart)
+  	
+	'''עדן בן זקן'''
+	thumb = 'http://img.mako.co.il/2015/05/28/EDENBENZAKEN_c.jpg'
+	fanart = 'https://i.ytimg.com/vi/nwpLIXdrHS0/maxresdefault.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30146).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30246).encode('utf-8'),'1',0,fanart)
 	
+	'''עומר אדם'''
+	thumb = 'http://www.forbes.co.il/download/pictures/%D7%A2%D7%95%D7%9E%D7%A8%20%D7%90%D7%93%D7%9D%20490.jpg'
+	fanart = 'https://i.ytimg.com/vi/t-kLLFVMCgo/maxresdefault.jpg'
+	list = [] ; se = '"addonString(30133)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30133)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30133)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30133).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30233).encode('utf-8'),'1',0,fanart)
+			
 	'''עידן רייכל'''
 	thumb = 'https://yt3.ggpht.com/-vsBWN1RBQuk/AAAAAAAAAAI/AAAAAAAAAAA/SWZEbbG5oUY/s100-c-k-no/photo.jpg'
 	fanart = 'https://i.ytimg.com/vi/ZxHkMIRf7Kw/maxresdefault.jpg'
@@ -389,7 +468,31 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list2 = [] ; se = '"addonString(30132)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list3 = [] ; se = '"addonString(30132)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30132).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30232).encode('utf-8'),'1',0,fanart)
-  
+
+	'''פאר טסי'''
+	thumb = 'https://yt3.ggpht.com/-XdArdL_W374/AAAAAAAAAAI/AAAAAAAAAAA/phGLZNk8iwU/s100-c-k-no/photo.jpg'
+	fanart = 'http://www.heichalpt.co.il/wp-content/uploads/2017/01/%D7%A4%D7%90%D7%A8-%D7%98%D7%A1%D7%99.jpg'
+	list = [] ; se = '"addonString(30135)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30135)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30135)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30135).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30235).encode('utf-8'),'1',0,fanart)
+	
+	'''פורטיסחרוף'''
+	thumb = 'http://www.yosmusic.com/images/articles/big/fortis1284-b.jpg'
+	fanart = ''
+	list = [] ; se = '"addonString(30106)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30106)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30106)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30106).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30206).encode('utf-8'),'1',0,fanart)
+		
+	'''קובי פרץ'''
+	thumb = 'https://i.ytimg.com/i/GYqX6zfso91VDawbH_Nukw/mq1.jpg?v=4f5f486f'
+	fanart = 'http://haflla.com/wp-content/uploads/2015/03/pic181.jpg'
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30137).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30237).encode('utf-8'),'1',0,fanart)
+
 	'''קרן פלס'''
 	thumb = 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/KerenPelesNew.jpg/375px-KerenPelesNew.jpg'
 	fanart = 'http://www.bgalil.co.il/files/YAM%20SHEL%20GALIL%202015/keren.jpg'
@@ -430,14 +533,6 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list3 = [] ; se = '"addonString(30142)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30142).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30242).encode('utf-8'),'1',0,fanart)
 
-	'''שלמה ארצי'''
-	thumb = 'http://www.nrg.co.il/images/archive/465x349/1/403/734.jpg'
-	fanart = 'http://blinker.co.il/wp-content/uploads/2012/08/shlomo-artzi-1-e1345892186997.jpg'
-	list = [] ; se = '"addonString(30144)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30144)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30144)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30144).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30244).encode('utf-8'),'1',0,fanart)
-	
 	'''שלישית גשר הירקון'''
 	thumb = 'https://www.kedem-auctions.com/sites/default/files/sale/1300/19724.jpg'
 	fanart = ''
@@ -446,10 +541,34 @@ def CATEGORIES10101(name, iconimage, desc, fanart):
 	list3 = [] ; se = '"addonString(30149)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30149).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30249).encode('utf-8'),'1',0,fanart)
 		
-def CATEGORIES10105(name, iconimage, desc, fanart):
+	'''שלמה ארצי'''
+	thumb = 'http://www.nrg.co.il/images/archive/465x349/1/403/734.jpg'
+	fanart = 'http://blinker.co.il/wp-content/uploads/2012/08/shlomo-artzi-1-e1345892186997.jpg'
+	list = [] ; se = '"addonString(30144)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30144)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30144)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30144).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30244).encode('utf-8'),'1',0,fanart)
+	
+	'''שני יצהרי'''
+	thumb = 'http://images.one.co.il/images/mag/450_250/gg789176.jpg'
+	fanart = 'https://i.ytimg.com/vi/5WFr624zttI/maxresdefault.jpg'
+	list = [] ; se = '"addonString(30147)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30147)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30147)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30147).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30247).encode('utf-8'),'1',0,fanart)
+	
+	'''שרית חדד'''
+	thumb = 'https://i.ytimg.com/i/0m-czKbg-tL7J61RDdU1rg/mq1.jpg?v=54ac3da1'
+	fanart = 'https://upload.wikimedia.org/wikipedia/he/e/e8/%D7%A9%D7%A8%D7%99%D7%AA_%D7%97%D7%93%D7%93_%D7%A9%D7%A8%D7%94_%D7%A9%D7%A8%D7%94.jpeg'
+	list = [] ; se = '"addonString(30145)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"addonString(30145)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30145)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30145).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30245).encode('utf-8'),'1',0,fanart)
+
+def CATEGORIES105(name, iconimage, desc, fanart):
 	'''Djs'''
 	
-	CATEGORIES_RANDOM(background,fanart)
+	CATEGORIES_RANDOM(background="",fanart)
 	CATEGORIES10105Z() #Music Box
 	
 	'''Afrojack'''
@@ -619,166 +738,12 @@ def CATEGORIES10105(name, iconimage, desc, fanart):
 	
 	CATEGORIES10105A(name, iconimage, desc, fanart) #דף הבא
 	
-def CATEGORIES10106(name, iconimage, desc, fanart):
-	'''Mizrahit-Music'''
-	background = 106
-	
-	CATEGORIES_RANDOM(background,fanart)
-	'''חיפוש'''
-	addDir(localize(137),'שיר',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(30021).encode('utf-8')),'1',0,fanart)
-	
-	CATEGORIES10106Z() #Music Box
-
-	'''אייל גולן'''
-	thumb = 'http://www.atzuma.co.il/uploaded/13112175e8e2be3e53e7dc74153479b3a0c726.jpg'
-	fanart = 'http://eco99fm.maariv.co.il/download/pictures/Show_245_4506.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30103).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30203).encode('utf-8'),'1',0,fanart)
-	
-	'''דודו אהרון'''
-	thumb = 'http://www.klr-lior.com/wp-content/gallery/omanim/dudu_aharon-hero_c.jpg'
-	fanart = 'http://haflla.com/wp-content/uploads/2014/12/pic53.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30107).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30207).encode('utf-8'),'1',0,fanart)
-	
-	'''הפרויקט של רביבו'''
-	thumb = 'http://img.mako.co.il/2012/08/23/revivo_project_purple_c.jpg'
-	fanart = 'http://haflla.com/wp-content/uploads/2015/06/pic15.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30112).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30212).encode('utf-8'),'1',0,fanart)
-	
-	'''זוהר ארגוב'''
-	thumb = 'https://upload.wikimedia.org/wikipedia/he/thumb/6/67/Argov.jpg/200px-Argov.jpg'
-	fanart = 'https://i.ytimg.com/vi/nM8XuZZQnt4/maxresdefault.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30128).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,'http://www.atzuma.co.il/uploaded/13112175e8e2be3e53e7dc74153479b3a0c726.jpg',addonString(30228).encode('utf-8'),'1',0,fanart)
-	
-	'''חיים משה'''
-	thumb = 'http://images.one.co.il/images/mag/450_250/gg789176.jpg'
-	fanart = 'http://www.tlvtimes.co.il/wp-content/uploads/2016/10/%D7%97%D7%99%D7%99%D7%9D-%D7%9E%D7%A9%D7%94.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30114).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30214).encode('utf-8'),'1',0,fanart)
-	
-	'''יעקב חתן'''
-	thumb = 'https://yt3.ggpht.com/-_rt6N50COLw/AAAAAAAAAAI/AAAAAAAAAAA/F_g5RBGIXfo/s100-c-k-no/photo.jpg'
-	fanart = 'http://haflla.com/wp-content/uploads/2016/02/pic-5.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30116).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30216).encode('utf-8'),'1',0,fanart)
-	
-	'''ישי לוי'''
-	thumb = 'http://harif.co.il/wp-content/uploads/2010/07/%D7%99%D7%A9%D7%99-%D7%9C%D7%95%D7%99-%D7%9E%D7%A8%D7%92%D7%A9-%D7%91%D7%A6%D7%99%D7%9C%D7%95%D7%9E%D7%99-%D7%94%D7%A7%D7%9C%D7%99%D7%A4-%D7%AA%D7%95%D7%93%D7%94.jpg'
-	fanart = 'http://ycom.co.il/wp-content/uploads/2017/04/%D7%99%D7%A9%D7%99-%D7%9C%D7%95%D7%993.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30117).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30217).encode('utf-8'),'1',0,fanart)
-
-	'''ליאור נרקיס'''
-	thumb = 'http://bsn.co.il/sites/default/files/styles/home_page_main_story_image_480x269/public/%D7%9C%D7%99%D7%90%D7%95%D7%A8%20%D7%A0%D7%A8%D7%A7%D7%99%D7%A1.jpg'
-	fanart = 'http://hangar11.co.il/preprod/events/wp-content/uploads/2016/08/liornarkis-1.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30118).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30218).encode('utf-8'),'1',0,fanart)
-	 	
-	'''מושיק עפיה'''
-	thumb = 'https://yt3.ggpht.com/-4IayEL0C0Rs/AAAAAAAAAAI/AAAAAAAAAAA/kEV66on9DOM/s100-c-k-no/photo.jpg'
-	fanart = 'http://haflla.com/wp-content/uploads/2014/11/pic21.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30122).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,fanart,addonString(30222).encode('utf-8'),'1',0,fanart)
-	 
-	'''מאור אדרי'''
-	thumb = 'http://img.mako.co.il/2012/09/12/maor_edri_suit_c.jpg'
-	fanart = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Maor_Edri.jpg/1200px-Maor_Edri.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30124).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30224).encode('utf-8'),'1',0,fanart)
-	
-	'''משה פרץ'''
-	thumb = 'https://i.ytimg.com/i/0ebT4a-IyuY61X8py3nzsg/mq1.jpg?v=52124db3'
-	fanart = 'http://haflla.com/wp-content/uploads/2014/11/pic-24.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30125).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30225).encode('utf-8'),'1',0,fanart)
-	
-	'''עדן בן זקן'''
-	thumb = 'http://img.mako.co.il/2015/05/28/EDENBENZAKEN_c.jpg'
-	fanart = 'https://i.ytimg.com/vi/nwpLIXdrHS0/maxresdefault.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30146).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30246).encode('utf-8'),'1',0,fanart)
-	
-	'''מושיק עפיה'''
-	thumb = 'https://yt3.ggpht.com/-4IayEL0C0Rs/AAAAAAAAAAI/AAAAAAAAAAA/kEV66on9DOM/s100-c-k-no/photo.jpg'
-	fanart = ''
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30122).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30222).encode('utf-8'),'1',0,fanart)
-
-	'''עומר אדם'''
-	thumb = 'http://www.forbes.co.il/download/pictures/%D7%A2%D7%95%D7%9E%D7%A8%20%D7%90%D7%93%D7%9D%20490.jpg'
-	fanart = 'https://i.ytimg.com/vi/t-kLLFVMCgo/maxresdefault.jpg'
-	list = [] ; se = '"addonString(30133)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30133)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30133)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30133).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30233).encode('utf-8'),'1',0,fanart)
-	
-	'''פאר טסי'''
-	thumb = 'https://yt3.ggpht.com/-XdArdL_W374/AAAAAAAAAAI/AAAAAAAAAAA/phGLZNk8iwU/s100-c-k-no/photo.jpg'
-	fanart = 'http://www.heichalpt.co.il/wp-content/uploads/2017/01/%D7%A4%D7%90%D7%A8-%D7%98%D7%A1%D7%99.jpg'
-	list = [] ; se = '"addonString(30135)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30135)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30135)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30135).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30235).encode('utf-8'),'1',0,fanart)
-	
-	'''קובי פרץ'''
-	thumb = 'https://i.ytimg.com/i/GYqX6zfso91VDawbH_Nukw/mq1.jpg?v=4f5f486f'
-	fanart = 'http://haflla.com/wp-content/uploads/2015/03/pic181.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30137).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30237).encode('utf-8'),'1',0,fanart)
-
-	'''שרית חדד'''
-	thumb = 'https://i.ytimg.com/i/0m-czKbg-tL7J61RDdU1rg/mq1.jpg?v=54ac3da1'
-	fanart = 'https://upload.wikimedia.org/wikipedia/he/e/e8/%D7%A9%D7%A8%D7%99%D7%AA_%D7%97%D7%93%D7%93_%D7%A9%D7%A8%D7%94_%D7%A9%D7%A8%D7%94.jpeg'
-	list = [] ; se = '"addonString(30145)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30145)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30145)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30145).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30245).encode('utf-8'),'1',0,fanart)
-	
-	'''שני יצהרי'''
-	thumb = 'http://images.one.co.il/images/mag/450_250/gg789176.jpg'
-	fanart = 'https://i.ytimg.com/vi/5WFr624zttI/maxresdefault.jpg'
-	list = [] ; se = '"addonString(30147)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30147)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30147)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	addDir(addonString(30147).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30247).encode('utf-8'),'1',0,fanart)
-	
-def CATEGORIES11101(name, iconimage, desc, fanart):
+def CATEGORIES111(name, iconimage, desc, fanart):
 	'''Foreign-Music'''
 	background = 111
 	commonsearch = 'commonsearch111'
 	
-	CATEGORIES_RANDOM(background,fanart)
+	CATEGORIES_RANDOM(background="",fanart)
 	'''חיפוש'''
 	addDir(localize(137),'song',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(30021).encode('utf-8')),'1',0,fanart)
 	
@@ -787,741 +752,259 @@ def CATEGORIES11101(name, iconimage, desc, fanart):
 	'''Adele'''
 	thumb = 'http://cdn.cultofmac.com/wp-content/uploads/2015/11/adele-third-album-25.jpg'
 	fanart = 'http://yesofcorsa.com/wp-content/uploads/2015/09/1905_adele.jpg'
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_pl=PL2jZGLrfnPrwKpGWByChK2ujJsh8XGT1u')
-	list.append('&youtube_pl=PL9319650950E41B78')
-	list.append('&youtube_pl=PL1C76D5F2FB130533')             
-	list.append('&youtube_pl=PLEEyQEShYtdXMVAiHjpbSAIXRmuaxkiac') 
+	list = [] ; se = 'Adele Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Adele Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Adele live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30327).encode('utf-8'),list,17,thumb,addonString(30427).encode('utf-8'),'1',0,fanart)
 	
 	'''Aretha Franklin'''
 	thumb = 'http://sandiegofreepress.org/wp-content/uploads/2013/01/ARETHA-FRANKLIN-QUEEN-OF-SOUL.jpg'
 	fanart = 'http://img0.ndsstatic.com/wallpapers/54bd6b2fafd5e81b18a44a28a6cda97e_large.jpeg'
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=-aVCoKV6XpVJ8U1wNNOkbo6BzgCdf83m')
+	list = [] ; se = 'Aretha Franklin Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Aretha Franklin Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Aretha Franklin live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30326).encode('utf-8'),list,17,thumb,addonString(30426).encode('utf-8'),'1',0,fanart)
 	
 	'''Beyonce'''
 	thumb = 'http://factmag-images.s3.amazonaws.com/wp-content/uploads/2013/05/beyonce-5.13.20132.jpg'
 	fanart = 'http://askkissy.com/wp-content/uploads/2016/02/image4.jpeg'
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=arPDo5YMm5RA7XMeJtn5HFDdXPed4A-X')
+	list = [] ; se = 'Beyonce Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Beyonce Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Beyonce live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30302).encode('utf-8'),list,17,thumb,addonString(30402).encode('utf-8'),'1',0,fanart)
 	
 	'''Bob Marley'''
 	thumb = 'http://imgc.allpostersimages.com/images/P-473-488-90/65/6544/ATK4100Z/posters/bob-marley-colors.jpg/300px-Bob-Marley-in-Concert_Zurich_05-30-80.jpg'
 	fanart = 'https://i.ytimg.com/vi/_KzaFxGME9o/maxresdefault.jpg'
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLF76A601FD261FE55') 
+	list = [] ; se = 'Bob Marley Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Bob Marley Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Bob Marley live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30322).encode('utf-8'),list,17,thumb,addonString(30422).encode('utf-8'),'1',0,fanart)
 	
 	'''Bob Dylan'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PL7B7E250ABE8B4E64&index=2&spfreload=1')
-	addDir(addonString(30323).encode('utf-8'),list,17,"http://www.rockbandaide.com/wp-content/uploads/2014/02/Bob-Dylan-Times-are-Changing-C10113356.jpg",addonString(30423).encode('utf-8'),'1',0,"http://knownpeople.net/wp-content/uploads/b/bob-dylan-wallpapers.jpg")
+	thumb = 'http://www.rockbandaide.com/wp-content/uploads/2014/02/Bob-Dylan-Times-are-Changing-C10113356.jpg'
+	fanart = 'http://knownpeople.net/wp-content/uploads/b/bob-dylan-wallpapers.jpg'
+	list = [] ; se = 'Bob Dylan Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Bob Dylan Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Bob Dylan live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30323).encode('utf-8'),list,17,thumb,addonString(30423).encode('utf-8'),'1',0,fanart)
 	
 	'''Britney Spears'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PL595EC905D80443EB')
-	addDir(addonString(30350).encode('utf-8'),list,17,"http://guardianlv.com/wp-content/uploads/2013/12/Britney-Spears-Hits-Vegas-With-Piece-of-Me-Concert-Series-e1388228163153.jpg",addonString(30450).encode('utf-8'),'1',0,"http://science-all.com/images/wallpapers/britney-spears-wallpaper/britney-spears-wallpaper-8.jpg")
+	thumb = 'http://guardianlv.com/wp-content/uploads/2013/12/Britney-Spears-Hits-Vegas-With-Piece-of-Me-Concert-Series-e1388228163153.jpg'
+	fanart = 'http://science-all.com/images/wallpapers/britney-spears-wallpaper/britney-spears-wallpaper-8.jpg'
+	list = [] ; se = 'Britney Spears Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Britney Spears Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Britney Spears live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30350).encode('utf-8'),list,17,thumb,addonString(30450).encode('utf-8'),'1',0,fanart)
 	
 	'''Celine Dion'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLVNmwycFozUGB6b6fKcldWyfmZR4RZIJj')
-	addDir(addonString(30332).encode('utf-8'),list,17,"https://www.vegas.com/shows/concerts/celine-dion-las-vegas/lg_celine-dion-large-2.jpg",addonString(30432).encode('utf-8'),'1',0,"http://wallpapers55.com/wp-content/uploads/2013/11/hd-wallpaper-celine-dion.jpg")
+	thumb = 'https://www.vegas.com/shows/concerts/celine-dion-las-vegas/lg_celine-dion-large-2.jpg'
+	fanart = 'http://wallpapers55.com/wp-content/uploads/2013/11/hd-wallpaper-celine-dion.jpg'
+	list = [] ; se = 'Celine Dion Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Celine Dion Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Celine Dion live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30332).encode('utf-8'),list,17,thumb,addonString(30432).encode('utf-8'),'1',0,fanart)
 	
 	'''Christina Aguilera'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30307).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/article_main_image/public/media/christina-aguilera_press-2013-650b.jpg",addonString(30407).encode('utf-8'),'1',0,"https://images6.alphacoders.com/342/342248.jpg")
+	thumb = 'http://www.billboard.com/files/styles/article_main_image/public/media/christina-aguilera_press-2013-650b.jpg'
+	fanart = 'https://images6.alphacoders.com/342/342248.jpg'
+	list = [] ; se = 'Christina Aguilera Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Christina Aguilera Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Christina Aguilera live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30307).encode('utf-8'),list,17,thumb,addonString(30407).encode('utf-8'),'1',0,fanart)
 	
 	'''Coldplay'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLD88DB02A8CA3EBC2')
-	addDir(addonString(30329).encode('utf-8'),list,17,"http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/10/12/1318414177419/Coldplay-007.jpg",addonString(30429).encode('utf-8'),'1',0,"http://worldversus.com/img/coldplay.jpg")
+	thumb = 'http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/10/12/1318414177419/Coldplay-007.jpg'
+	fanart = 'http://worldversus.com/img/coldplay.jpg'
+	list = [] ; se = 'Coldplay Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Coldplay Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Coldplay live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30329).encode('utf-8'),list,17,thumb,addonString(30429).encode('utf-8'),'1',0,fanart)
 	
 	'''David Bowie'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PL4FA0D24F56BD0191')
-	addDir(addonString(30351).encode('utf-8'),list,17,"https://wallpaperscraft.com/image/david_bowie_face_fist_sweater_look_3332_1920x1080.jpg",addonString(30451).encode('utf-8'),'1',0,"http://www.monstersandcritics.com/wp-content/uploads/2016/01/david-bowie-album-blackstar.jpg")
+	thumb = 'https://wallpaperscraft.com/image/david_bowie_face_fist_sweater_look_3332_1920x1080.jpg'
+	fanart = 'http://www.monstersandcritics.com/wp-content/uploads/2016/01/david-bowie-album-blackstar.jpg'
+	list = [] ; se = 'David Bowie Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'David Bowie Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'David Bowie live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30351).encode('utf-8'),list,17,thumb,addonString(30451).encode('utf-8'),'1',0,fanart)
 	
 	'''Elton John'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLA910D381CD5AF74E')
-	addDir(addonString(30352).encode('utf-8'),list,17,"http://i.huffpost.com/gen/2722330/images/o-ELTON-JOHN-facebook.jpg",addonString(30452).encode('utf-8'),'1',0,"http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/Elton-John-HD-Wallpapers.jpg")
+	thumb = 'http://i.huffpost.com/gen/2722330/images/o-ELTON-JOHN-facebook.jpg'
+	fanart = 'http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/Elton-John-HD-Wallpapers.jpg'
+	list = [] ; se = 'Elton John Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Elton John Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Elton John live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30352).encode('utf-8'),list,17,thumb,addonString(30452).encode('utf-8'),'1',0,fanart)
 	
 	'''Elvis Presley'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLVsyHu2yDLkzdYcDjz8yqw84CmcYZGCIt')
-	addDir(addonString(30320).encode('utf-8'),list,17,"http://static.europosters.cz/image/750/plakatok/elvis-presley-portrait-i9038.jpg/375px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",addonString(30420).encode('utf-8'),'1',0,"http://www.alux.com/wp-content/uploads/2015/06/070a67ca54831a9f02541f76a8c5ec71_large_21275600.jpeg")
+	thumb = 'http://static.europosters.cz/image/750/plakatok/elvis-presley-portrait-i9038.jpg/375px-Elvis_Presley_promoting_Jailhouse_Rock.jpg'
+	fanart = 'http://www.alux.com/wp-content/uploads/2015/06/070a67ca54831a9f02541f76a8c5ec71_large_21275600.jpeg'
+	list = [] ; se = 'Elvis Presley Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Elvis Presley Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Elvis Presley live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30320).encode('utf-8'),list,17,thumb,addonString(30420).encode('utf-8'),'1',0,fanart)
 	
 	'''Eminem'''
-	thumb = ''
+	thumb = 'http://static.gigwise.com/artists/best-bets-albums-eminem-650-430%20(1).jpg'
 	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_ch=EminemVEVO')
-	addDir(addonString(30309).encode('utf-8'),list,17,"http://static.gigwise.com/artists/best-bets-albums-eminem-650-430%20(1).jpg",addonString(30409).encode('utf-8'),'1',0,"http://thesource.com/wp-content/uploads/2016/03/eminem-5.jpg")
+	list = [] ; se = 'Eminem Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Eminem Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Eminem live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30309).encode('utf-8'),list,17,thumb,addonString(30409).encode('utf-8'),'1',0,fanart)
 	
 	'''Enrique Iglesias'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_ch=EnriqueIglesiasVEVO')
-	addDir(addonString(30317).encode('utf-8'),list,17,"http://www.quoteauthors.com/wp-content/uploads/2015/10/enrique-iglesias.jpg",addonString(30417).encode('utf-8'),'1',0,"https://images8.alphacoders.com/421/421324.jpg")
+	thumb = 'http://www.quoteauthors.com/wp-content/uploads/2015/10/enrique-iglesias.jpg'
+	fanart = 'https://images8.alphacoders.com/421/421324.jpg'
+	list = [] ; se = 'Enrique Iglesias Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Enrique Iglesias Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Enrique Iglesias live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30317).encode('utf-8'),list,17,thumb,addonString(30417).encode('utf-8'),'1',0,fanart)
 	
 	'''Eric Clapton'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLnTKYzbTaPq4yjmTe5CwzpRUvHlJspIO7')
-	addDir(addonString(30324).encode('utf-8'),list,17,"http://rock.amazingradios.com/wp-content/uploads/2014/10/eric-clapton-9.jpg",addonString(30424).encode('utf-8'),'1',0,"https://ichef.bbci.co.uk/images/ic/1920x1080/p01hycb8.jpg")
+	thumb = 'http://rock.amazingradios.com/wp-content/uploads/2014/10/eric-clapton-9.jpg'
+	fanart = 'https://ichef.bbci.co.uk/images/ic/1920x1080/p01hycb8.jpg'
+	list = [] ; se = 'Eric Clapton Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Eric Clapton Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Eric Clapton live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30324).encode('utf-8'),list,17,thumb,addonString(30424).encode('utf-8'),'1',0,fanart)
 	
 	'''Jean Michel Jarre'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PL0X6k9ILt02rs8SYwNfNxgGHTDzTA-eWI')
-	addDir(addonString(30331).encode('utf-8'),list,17,"http://www.whale.to/c/zs107kz4jarre.jpg",addonString(30431).encode('utf-8'),'1',"electronic music", "http://assets.noisey.com/content-images/contentimage/71853/jmj-4.jpg")
+	thumb = 'http://www.whale.to/c/zs107kz4jarre.jpg'
+	fanart = 'http://assets.noisey.com/content-images/contentimage/71853/jmj-4.jpg'
+	list = [] ; se = 'Jean Michel Jarre Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Jean Michel Jarre Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Jean Michel Jarre live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30331).encode('utf-8'),list,17,thumb,addonString(30431).encode('utf-8'),'1',"electronic music", fanart)
 	
 	'''Jennifer Lopez'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLC9944199588E8EE8')
-	addDir(addonString(30318).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Jennifer_Lopez_GLAAD_2014.jpg/375px-Jennifer_Lopez_GLAAD_2014.jpg",addonString(30418).encode('utf-8'),'1',0,"http://www.hitsync.net/wp-content/uploads/2016/04/WDF_2451822.jpg")
+	thumb = 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Jennifer_Lopez_GLAAD_2014.jpg/375px-Jennifer_Lopez_GLAAD_2014.jpg'
+	fanart = 'http://www.hitsync.net/wp-content/uploads/2016/04/WDF_2451822.jpg'
+	list = [] ; se = 'Jennifer Lopez Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Jennifer Lopez Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Jennifer Lopez live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30318).encode('utf-8'),list,17,thumb,addonString(30418).encode('utf-8'),'1',0,fanart)
 	
 	'''Justin Bieber'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30330).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Believe_Tour_7%2C_2012.jpg/375px-Believe_Tour_7%2C_2012.jpg",addonString(30430).encode('utf-8'),'1',0,"http://deskbg.com/i/c/1920x1200/wpp/0/157/justin-bieber-desktop-background.jpg")
+	thumb = 'http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Believe_Tour_7%2C_2012.jpg/375px-Believe_Tour_7%2C_2012.jpg'
+	fanart = 'http://deskbg.com/i/c/1920x1200/wpp/0/157/justin-bieber-desktop-background.jpg'
+	list = [] ; se = 'Justin Bieber Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Justin Bieber Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Justin Bieber live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30330).encode('utf-8'),list,17,thumb,addonString(30430).encode('utf-8'),'1',0,fanart)
 	
 	'''Katy Perry'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_ch=KatyPerryVEVO')
-	addDir(addonString(30319).encode('utf-8'),list,17,"https://i.ytimg.com/vi/CevxZvSJLk8/maxresdefault.jpg",addonString(30419).encode('utf-8'),'1',0,"http://fullhdpictures.com/wp-content/uploads/2015/05/Best-of-Katy-Perry-Wallpapers.jpg")
+	thumb = 'https://i.ytimg.com/vi/CevxZvSJLk8/maxresdefault.jpg'
+	fanart = 'http://fullhdpictures.com/wp-content/uploads/2015/05/Best-of-Katy-Perry-Wallpapers.jpg'
+	list = [] ; se = 'Katy Perry Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Katy Perry Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Katy Perry live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30319).encode('utf-8'),list,17,thumb,addonString(30419).encode('utf-8'),'1',0,fanart)
 	
 	'''Meghan Trainor'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_ch=MeghanTrainorVEVO')
-	addDir(addonString(30321).encode('utf-8'),list,17,"http://www.rosh1.co.il/wp-content/uploads/2014/12/460792920-490x429.jpg",addonString(30421).encode('utf-8'),'1',0,"http://www.popologynow.com/wp-content/uploads/2016/05/Meghan-Trainor-Thats-What-She-Said.jpg")
+	thumb = 'http://www.rosh1.co.il/wp-content/uploads/2014/12/460792920-490x429.jpg'
+	fanart = 'http://www.popologynow.com/wp-content/uploads/2016/05/Meghan-Trainor-Thats-What-She-Said.jpg'
+	list = [] ; se = 'Meghan Trainor Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Meghan Trainor Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Meghan Trainor live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30321).encode('utf-8'),list,17,thumb,addonString(30421).encode('utf-8'),'1',0,fanart)
 	
 	'''Michael Jackson'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PL3CF35F99B7B4A227')
-	addDir(addonString(30301).encode('utf-8'),list,17,"https://michaeljacksonisrael.files.wordpress.com/2013/05/69235_majkl-dzhekson_or_michael-jack21.jpg",addonString(30401).encode('utf-8'),'1',0,"http://www.rockfm.mx/rock_tv/lesdoit-michaeljackson.jpg")
+	thumb = 'https://michaeljacksonisrael.files.wordpress.com/2013/05/69235_majkl-dzhekson_or_michael-jack21.jpg'
+	fanart = 'http://www.rockfm.mx/rock_tv/lesdoit-michaeljackson.jpg'
+	list = [] ; se = 'Michael Jackson Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Michael Jackson Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Michael Jackson live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30301).encode('utf-8'),list,17,thumb,addonString(30401).encode('utf-8'),'1',0,fanart)
 	
 	'''Maddona'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLOOBElWP-gj6hl7PQVcZak9FGri0ppeWG')
-	addDir(addonString(30311).encode('utf-8'),list,17,"http://g04.a.alicdn.com/kf/HTB1jqmjIVXXXXbSapXXq6xXFXXX4/%D7%AA%D7%90%D7%A8%D7%99%D7%9A-%D7%94%D7%9E%D7%A1%D7%AA%D7%95%D7%A8%D7%99%D7%9F-%D7%A9%D7%97%D7%A7%D7%A0%D7%99%D7%AA-%D7%A7%D7%95%D7%9C%D7%A0%D7%95%D7%A2-%D7%9E%D7%93%D7%95%D7%A0%D7%94-ciccone-%D7%A4%D7%95%D7%A1%D7%98%D7%A8-%D7%A6%D7%99%D7%95%D7%A8-%D7%93%D7%A7%D7%95%D7%A8%D7%98%D7%99%D7%91%D7%99-%D7%9C%D7%91%D7%99%D7%AA-%D7%91%D7%93-%D7%9E%D7%A9%D7%99-%D7%94%D7%93%D7%A4%D7%A1%D7%94.jpg",addonString(30411).encode('utf-8'),'1',0,"http://weneedfun.com/wp-content/uploads/2015/10/Madonna-HD-Pictures-17.jpg")
+	thumb = 'http://g04.a.alicdn.com/kf/HTB1jqmjIVXXXXbSapXXq6xXFXXX4/%D7%AA%D7%90%D7%A8%D7%99%D7%9A-%D7%94%D7%9E%D7%A1%D7%AA%D7%95%D7%A8%D7%99%D7%9F-%D7%A9%D7%97%D7%A7%D7%A0%D7%99%D7%AA-%D7%A7%D7%95%D7%9C%D7%A0%D7%95%D7%A2-%D7%9E%D7%93%D7%95%D7%A0%D7%94-ciccone-%D7%A4%D7%95%D7%A1%D7%98%D7%A8-%D7%A6%D7%99%D7%95%D7%A8-%D7%93%D7%A7%D7%95%D7%A8%D7%98%D7%99%D7%91%D7%99-%D7%9C%D7%91%D7%99%D7%AA-%D7%91%D7%93-%D7%9E%D7%A9%D7%99-%D7%94%D7%93%D7%A4%D7%A1%D7%94.jpg'
+	fanart = 'http://weneedfun.com/wp-content/uploads/2015/10/Madonna-HD-Pictures-17.jpg'
+	list = [] ; se = 'Maddona Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Maddona Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Maddona live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30311).encode('utf-8'),list,17,thumb,addonString(30411).encode('utf-8'),'1',0,fanart)
 	
 	'''Mariah Carey'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLEB34410B67CCA932')
-	addDir(addonString(30313).encode('utf-8'),list,17,"http://www.studentsoftheworld.info/sites/musique/img/2827_Maria_Carey_1.jpg",addonString(30413).encode('utf-8'),'1',0,"http://wallpaperswide.com/download/mariah_carey_2-wallpaper-1920x1080.jpg")
+	thumb = 'http://www.studentsoftheworld.info/sites/musique/img/2827_Maria_Carey_1.jpg'
+	fanart = 'https://www.biography.com/.image/t_share/MTIwNjA4NjM0MDM0MTYxMTY0/mariah-carey-9542177-1-402.jpg'
+	list = [] ; se = 'Mariah Carey Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Mariah Carey Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Mariah Carey live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30313).encode('utf-8'),list,17,thumb,addonString(30413).encode('utf-8'),'1',0,fanart)
 	
 	'''Maroon 5'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_ch=Maroon5VEVO')
-	addDir(addonString(30308).encode('utf-8'),list,17,"http://www.aaarena.com/assets/img/Concert_Maroon5.jpg",addonString(30408).encode('utf-8'),'1',0,"http://www.guitarfree.co.il/wp-content/uploads/8bc571dfd3347ae39c1002c81e32536a.jpg")
+	thumb = 'http://www.aaarena.com/assets/img/Concert_Maroon5.jpg'
+	fanart = "http://www.guitarfree.co.il/wp-content/uploads/8bc571dfd3347ae39c1002c81e32536a.jpg"
+	list = [] ; se = '"Maroon 5' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = '"Maroon 5' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = '"Maroon 5' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30308).encode('utf-8'),list,17,thumb,addonString(30408).encode('utf-8'),'1',0,fanart)
 	
 	'''Pharrell Williams'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_ch=PharrellWilliamsVEVO')
-	addDir(addonString(30312).encode('utf-8'),list,17,"http://cdn.bleedingcool.net/wp-content/uploads/2013/10/Pharrell-Williams.jpg",addonString(30412).encode('utf-8'),'1',0,"http://content.acclaimmag.com/content/uploads/2016/04/1398788909Adi_Pharrell.jpg")
+	thumb = 'http://cdn.bleedingcool.net/wp-content/uploads/2013/10/Pharrell-Williams.jpg'
+	fanart = 'http://content.acclaimmag.com/content/uploads/2016/04/1398788909Adi_Pharrell.jpg'
+	list = [] ; se = 'Pharrell Williams Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Pharrell Williams Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Pharrell Williams live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30312).encode('utf-8'),list,17,thumb,addonString(30412).encode('utf-8'),'1',0,fanart)
 	
 	'''Roy Orbison'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_ch=RoyOrbison')
-	list.append('&youtube_pl=PLvPrczMM8gz3y1Iboy6CsZ432HjCWUQgR&index=15')
-	addDir(addonString(30310).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/promo_650/public/stylus/1077939-roy-orbison-617-409.jpg",addonString(30410).encode('utf-8'),'1',0,"https://fanart.tv/fanart/music/0bbbc496-c7b5-4b3f-bb6d-bd312827d6e5/artistbackground/orbison-roy-503635210f7d1.jpg")
+	thumb = 'http://www.billboard.com/files/styles/promo_650/public/stylus/1077939-roy-orbison-617-409.jpg'
+	fanart = 'https://fanart.tv/fanart/music/0bbbc496-c7b5-4b3f-bb6d-bd312827d6e5/artistbackground/orbison-roy-503635210f7d1.jpg'
+	list = [] ; se = 'Roy Orbison Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Roy Orbison Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Roy Orbison live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30310).encode('utf-8'),list,17,thumb,addonString(30410).encode('utf-8'),'1',0,fanart)
 	
 	'''Rihanna'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PL2DC5A0B189256D7D&index=4')
-	addDir(addonString(30303).encode('utf-8'),list,17,"http://static1.1.sqspcdn.com/static/f/610086/15180915/1321583897117/Rihanna.jpg?token=kZt1lYEul%2FfTahdORTKehFd28NI%3D/site1/20091127/0023ae9885da0c7990e10d.jpg&pw=200",addonString(30403).encode('utf-8'),'1',0,"http://xdesktopwallpapers.com/wp-content/uploads/2011/08/Rihanna-Pink-Lips-N-Brown-Eyes-Face-Closeups.jpg")
+	thumb = 'http://static1.1.sqspcdn.com/static/f/610086/15180915/1321583897117/Rihanna.jpg?token=kZt1lYEul%2FfTahdORTKehFd28NI%3D/site1/20091127/0023ae9885da0c7990e10d.jpg&pw=200'
+	fanart = 'http://xdesktopwallpapers.com/wp-content/uploads/2011/08/Rihanna-Pink-Lips-N-Brown-Eyes-Face-Closeups.jpg'
+	list = [] ; se = 'Rihanna Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Rihanna Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Rihanna live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30303).encode('utf-8'),list,17,thumb,addonString(30403).encode('utf-8'),'1',0,fanart)
 	
 	'''Sam Smith'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30333).encode('utf-8'),list,17,"https://yt3.ggpht.com/-9z_bFRPDMYQ/AAAAAAAAAAI/AAAAAAAAAAA/czjhAF4k4aw/s100-c-k-no/photo.jpg",addonString(30433).encode('utf-8'),'1',0,"https://i.ytimg.com/vi/lf3W5YtcyaY/maxresdefault.jpg")
+	thumb = 'https://yt3.ggpht.com/-9z_bFRPDMYQ/AAAAAAAAAAI/AAAAAAAAAAA/czjhAF4k4aw/s100-c-k-no/photo.jpg'
+	fanart = 'https://i.ytimg.com/vi/lf3W5YtcyaY/maxresdefault.jpg'
+	list = [] ; se = 'Sam Smith Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Sam Smith Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Sam Smith live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30333).encode('utf-8'),list,17,thumb,addonString(30433).encode('utf-8'),'1',0,fanart)
 	
 	'''Taylor Swift'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_ch=TaylorSwiftVEVO')
-	addDir(addonString(30304).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/he/5/58/Taylor_Swift_-_Taylor_Swift_Album_Cover.png",addonString(30404).encode('utf-8'),'1',0,"http://hdcoolwallpapers.com/wp-content/uploads/2015/03/Taylor-Swift-Wallpapers-HD-041.jpg")
+	thumb = 'http://upload.wikimedia.org/wikipedia/he/5/58/Taylor_Swift_-_Taylor_Swift_Album_Cover.png'
+	fanart = 'http://hdcoolwallpapers.com/wp-content/uploads/2015/03/Taylor-Swift-Wallpapers-HD-041.jpg'
+	list = [] ; se = 'Taylor Swift Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Taylor Swift Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Taylor Swift live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30304).encode('utf-8'),list,17,thumb,addonString(30404).encode('utf-8'),'1',0,fanart)
 	
 	'''Usher'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_ch=UsherVEVO')
-	addDir(addonString(30315).encode('utf-8'),list,17,"http://www.usherdaily.com/wp-content/uploads/2015/02/usher-2014-cover-bb36-01-650.jpg",addonString(30415).encode('utf-8'),'1',0,"https://i.ytimg.com/vi/xbkUdPotU3A/maxresdefault.jpg")
+	thumb = 'http://www.usherdaily.com/wp-content/uploads/2015/02/usher-2014-cover-bb36-01-650.jpg'
+	fanart = 'https://i.ytimg.com/vi/xbkUdPotU3A/maxresdefault.jpg'
+	list = [] ; se = 'Usher Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Usher Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Usher live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30315).encode('utf-8'),list,17,thumb,addonString(30415).encode('utf-8'),'1',0,fanart)
 	
 	'''Whitney Houston'''
-	thumb = ''
-	fanart = ''
-	list = [] ; se = '"addonString(00000)' + space + 'addonString(30031)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(00000)' + space + 'addonString(30030)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(00000)' + space + 'addonString(30032)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PL201BB89398FE5675')
-	addDir(addonString(30314).encode('utf-8'),list,17,"http://img2.timeinc.net/people/i/2012/specials/yearend/obits/whitney-houston-1435.jpg",addonString(30414).encode('utf-8'),'1',0,"https://content2.promiflash.de/article-images/video_1080/whitney-houston-ganz-in-schwarz.jpg")
+	thumb = 'http://img2.timeinc.net/people/i/2012/specials/yearend/obits/whitney-houston-1435.jpg'
+	fanart = 'https://content2.promiflash.de/article-images/video_1080/whitney-houston-ganz-in-schwarz.jpg'
+	list = [] ; se = 'Whitney Houston Song' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list2 = [] ; se = 'Whitney Houston Karaoke' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list3 = [] ; se = 'Whitney Houston live show' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	addDir(addonString(30314).encode('utf-8'),list,17,thumb,addonString(30414).encode('utf-8'),'1',0,fanart)
 
 	CATEGORIES11101A(name, iconimage, desc, fanart) #דף הבא
-	
-def CATEGORIES11102(name, iconimage, desc, fanart):
-	'''Foreign-Karaoke'''
-	background = 112
-	commonsearch = 'commonsearch112'
-	
-	CATEGORIES_RANDOM(background,fanart)
-	'''חיפוש'''
-	addDir(localize(137),'karaoke',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (localize(13327)),'1',0,fanart)
-	
-	CATEGORIES11102() #Music Box
-		
-	'''Adele'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30327).encode('utf-8'),list,17,'http://cdn.cultofmac.com/wp-content/uploads/2015/11/adele-third-album-25.jpg',addonString(30427).encode('utf-8'),'1',0,"http://yesofcorsa.com/wp-content/uploads/2015/09/1905_adele.jpg")
-	
-	'''Aretha Franklin'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30326).encode('utf-8'),list,17,"http://sandiegofreepress.org/wp-content/uploads/2013/01/ARETHA-FRANKLIN-QUEEN-OF-SOUL.jpg",addonString(30426).encode('utf-8'),'1',0,"http://img0.ndsstatic.com/wallpapers/54bd6b2fafd5e81b18a44a28a6cda97e_large.jpeg")
-	
-	'''Beyonce'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30302).encode('utf-8'),list,17,"http://factmag-images.s3.amazonaws.com/wp-content/uploads/2013/05/beyonce-5.13.20132.jpg",addonString(30402).encode('utf-8'),'1',0,"http://askkissy.com/wp-content/uploads/2016/02/image4.jpeg")
-	
-	'''Bob Marley'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30322).encode('utf-8'),list,17,"http://imgc.allpostersimages.com/images/P-473-488-90/65/6544/ATK4100Z/posters/bob-marley-colors.jpg/300px-Bob-Marley-in-Concert_Zurich_05-30-80.jpg",addonString(30422).encode('utf-8'),'1',0,"https://i.ytimg.com/vi/_KzaFxGME9o/maxresdefault.jpg")
-	
-	'''Bob Dylan'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30323).encode('utf-8'),list,17,"http://www.rockbandaide.com/wp-content/uploads/2014/02/Bob-Dylan-Times-are-Changing-C10113356.jpg",addonString(30423).encode('utf-8'),'1',0,"http://knownpeople.net/wp-content/uploads/b/bob-dylan-wallpapers.jpg")
-	
-	'''Britney Spears'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30350).encode('utf-8'),list,17,"http://guardianlv.com/wp-content/uploads/2013/12/Britney-Spears-Hits-Vegas-With-Piece-of-Me-Concert-Series-e1388228163153.jpg",addonString(30450).encode('utf-8'),'1',0,"http://science-all.com/images/wallpapers/britney-spears-wallpaper/britney-spears-wallpaper-8.jpg")
-	
-	'''Celine Dion'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30332).encode('utf-8'),list,17,"https://www.vegas.com/shows/concerts/celine-dion-las-vegas/lg_celine-dion-large-2.jpg",addonString(30432).encode('utf-8'),'1',0,"http://wallpapers55.com/wp-content/uploads/2013/11/hd-wallpaper-celine-dion.jpg")
-	
-	'''Christina Aguilera'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30307).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/article_main_image/public/media/christina-aguilera_press-2013-650b.jpg",addonString(30407).encode('utf-8'),'1',0,"https://images6.alphacoders.com/342/342248.jpg")
-	
-	'''Coldplay'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30329).encode('utf-8'),list,17,"http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/10/12/1318414177419/Coldplay-007.jpg",addonString(30429).encode('utf-8'),'1',0,"http://worldversus.com/img/coldplay.jpg")
-	
-	'''David Bowie'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30351).encode('utf-8'),list,17,"https://wallpaperscraft.com/image/david_bowie_face_fist_sweater_look_3332_1920x1080.jpg",addonString(30451).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://wallpaperscraft.com/image/david_bowie_face_fist_sweater_look_3332_1920x1080.jpg")
-	
-	'''Elton John'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30352).encode('utf-8'),list,17,"http://i.huffpost.com/gen/2722330/images/o-ELTON-JOHN-facebook.jpg",addonString(30452).encode('utf-8'),'1',0,"http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/Elton-John-HD-Wallpapers.jpg")
-	
-	'''Elvis Presley'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30320).encode('utf-8'),list,17,"http://static.europosters.cz/image/750/plakatok/elvis-presley-portrait-i9038.jpg/375px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",addonString(30420).encode('utf-8'),'1',0,"http://www.alux.com/wp-content/uploads/2015/06/070a67ca54831a9f02541f76a8c5ec71_large_21275600.jpeg")
-	
-	'''Eminem'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PL7C428AEA0ABF7560')
-	list.append('&youtube_pl=PLkvGbaSME8vLpiGZHSLS8X-nIADHE8MRf')
-	addDir(addonString(30309).encode('utf-8'),list,17,"http://static.gigwise.com/artists/best-bets-albums-eminem-650-430%20(1).jpg",addonString(30409).encode('utf-8'),'1',0,"http://thesource.com/wp-content/uploads/2016/03/eminem-5.jpg")
-
-	'''Enrique Iglesias'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30317).encode('utf-8'),list,17,"http://www.quoteauthors.com/wp-content/uploads/2015/10/enrique-iglesias.jpg",addonString(30417).encode('utf-8'),'1',0,"https://images8.alphacoders.com/421/421324.jpg")
-	
-	'''Eric Clapton'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30324).encode('utf-8'),list,17,"http://rock.amazingradios.com/wp-content/uploads/2014/10/eric-clapton-9.jpg",addonString(30424).encode('utf-8'),'1',0,"https://ichef.bbci.co.uk/images/ic/1920x1080/p01hycb8.jpg")
-	
-	'''Jean Michel Jarre'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30331).encode('utf-8'),list,17,"http://www.whale.to/c/zs107kz4jarre.jpg",addonString(30431).encode('utf-8'),'1',"electronic music", "http://assets.noisey.com/content-images/contentimage/71853/jmj-4.jpg")
-	
-	'''Jennifer Lopez'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30318).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Jennifer_Lopez_GLAAD_2014.jpg/375px-Jennifer_Lopez_GLAAD_2014.jpg",addonString(30418).encode('utf-8'),'1',0,"http://www.hitsync.net/wp-content/uploads/2016/04/WDF_2451822.jpg")
-	
-	'''Justin Bieber'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30330).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Believe_Tour_7%2C_2012.jpg/375px-Believe_Tour_7%2C_2012.jpg",addonString(30430).encode('utf-8'),'1',0,"http://deskbg.com/i/c/1920x1200/wpp/0/157/justin-bieber-desktop-background.jpg")
-	
-	'''Katy Perry'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30319).encode('utf-8'),list,17,"https://i.ytimg.com/vi/CevxZvSJLk8/maxresdefault.jpg",addonString(30419).encode('utf-8'),'1',0,"http://fullhdpictures.com/wp-content/uploads/2015/05/Best-of-Katy-Perry-Wallpapers.jpg")
-	
-	'''Meghan Trainor'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30321).encode('utf-8'),list,17,"http://www.rosh1.co.il/wp-content/uploads/2014/12/460792920-490x429.jpg",addonString(30421).encode('utf-8'),'1',0,"http://www.popologynow.com/wp-content/uploads/2016/05/Meghan-Trainor-Thats-What-She-Said.jpg")
-	
-	'''Michael Jackson'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PL3CF35F99B7B4A227')
-	addDir(addonString(30301).encode('utf-8'),list,17,"https://michaeljacksonisrael.files.wordpress.com/2013/05/69235_majkl-dzhekson_or_michael-jack21.jpg",addonString(30401).encode('utf-8'),'1',0,"http://www.rockfm.mx/rock_tv/lesdoit-michaeljackson.jpg")
-	
-	'''Maddona'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLOOBElWP-gj6hl7PQVcZak9FGri0ppeWG')
-	addDir(addonString(30311).encode('utf-8'),list,17,"http://g04.a.alicdn.com/kf/HTB1jqmjIVXXXXbSapXXq6xXFXXX4/%D7%AA%D7%90%D7%A8%D7%99%D7%9A-%D7%94%D7%9E%D7%A1%D7%AA%D7%95%D7%A8%D7%99%D7%9F-%D7%A9%D7%97%D7%A7%D7%A0%D7%99%D7%AA-%D7%A7%D7%95%D7%9C%D7%A0%D7%95%D7%A2-%D7%9E%D7%93%D7%95%D7%A0%D7%94-ciccone-%D7%A4%D7%95%D7%A1%D7%98%D7%A8-%D7%A6%D7%99%D7%95%D7%A8-%D7%93%D7%A7%D7%95%D7%A8%D7%98%D7%99%D7%91%D7%99-%D7%9C%D7%91%D7%99%D7%AA-%D7%91%D7%93-%D7%9E%D7%A9%D7%99-%D7%94%D7%93%D7%A4%D7%A1%D7%94.jpg",addonString(30411).encode('utf-8'),'1',0,"http://weneedfun.com/wp-content/uploads/2015/10/Madonna-HD-Pictures-17.jpg")
-	
-	'''Mariah Carey'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLEB34410B67CCA932')
-	addDir(addonString(30313).encode('utf-8'),list,17,"http://www.studentsoftheworld.info/sites/musique/img/2827_Maria_Carey_1.jpg",addonString(30413).encode('utf-8'),'1',0,"http://wallpaperswide.com/download/mariah_carey_2-wallpaper-1920x1080.jpg")
-	
-	'''Maroon 5'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLAEq5ujOZ71rI-rJhF2OqUZWmjxpo4I9L')
-	list.append('&youtube_pl=PLnpWcMv6bu2UoS9jy7uRjvPWRrTe6bZQZ')
-	addDir(addonString(30308).encode('utf-8'),list,17,"http://www.aaarena.com/assets/img/Concert_Maroon5.jpg",addonString(30408).encode('utf-8'),'1',0,"http://www.guitarfree.co.il/wp-content/uploads/8bc571dfd3347ae39c1002c81e32536a.jpg")
-	
-	'''Pharrell Williams'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLIo8l2xEQymvfj8uwrw2TNbVImihLzLiH')
-	addDir(addonString(30312).encode('utf-8'),list,17,"http://cdn.bleedingcool.net/wp-content/uploads/2013/10/Pharrell-Williams.jpg",addonString(30412).encode('utf-8'),'1',0,"http://content.acclaimmag.com/content/uploads/2016/04/1398788909Adi_Pharrell.jpg")
-	
-	'''Roy Orbison'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30310).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/promo_650/public/stylus/1077939-roy-orbison-617-409.jpg",addonString(30410).encode('utf-8'),'1',0,"https://fanart.tv/fanart/music/0bbbc496-c7b5-4b3f-bb6d-bd312827d6e5/artistbackground/orbison-roy-503635210f7d1.jpg")
-	
-	'''Rihanna'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30303).encode('utf-8'),list,17,"http://static1.1.sqspcdn.com/static/f/610086/15180915/1321583897117/Rihanna.jpg?token=kZt1lYEul%2FfTahdORTKehFd28NI%3D/site1/20091127/0023ae9885da0c7990e10d.jpg&pw=200",addonString(30403).encode('utf-8'),'1',0,"http://xdesktopwallpapers.com/wp-content/uploads/2011/08/Rihanna-Pink-Lips-N-Brown-Eyes-Face-Closeups.jpg")
-	
-	'''Sam Smith'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30333).encode('utf-8'),list,17,"https://yt3.ggpht.com/-9z_bFRPDMYQ/AAAAAAAAAAI/AAAAAAAAAAA/czjhAF4k4aw/s100-c-k-no/photo.jpg",addonString(30433).encode('utf-8'),'1',0,"https://i.ytimg.com/vi/lf3W5YtcyaY/maxresdefault.jpg")
-	
-	'''Taylor Swift'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30304).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/he/5/58/Taylor_Swift_-_Taylor_Swift_Album_Cover.png",addonString(30404).encode('utf-8'),'1',0,"http://hdcoolwallpapers.com/wp-content/uploads/2015/03/Taylor-Swift-Wallpapers-HD-041.jpg")
-	
-	'''Usher'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30315).encode('utf-8'),list,17,"http://www.usherdaily.com/wp-content/uploads/2015/02/usher-2014-cover-bb36-01-650.jpg",addonString(30415).encode('utf-8'),'1',0,"https://i.ytimg.com/vi/xbkUdPotU3A/maxresdefault.jpg")
-	
-	'''Whitney Houston'''
-	list = []
-	list.append('&youtube_pl=PL201BB89398FE5675')
-	addDir(addonString(30314).encode('utf-8'),list,17,"http://img2.timeinc.net/people/i/2012/specials/yearend/obits/whitney-houston-1435.jpg",addonString(30414).encode('utf-8'),'1',0,"https://content2.promiflash.de/article-images/video_1080/whitney-houston-ganz-in-schwarz.jpg")
-	
-	CATEGORIES11102A(name, iconimage, desc, fanart) #דף הבא
-	
-def CATEGORIES11104(name, iconimage, desc, fanart):
-	'''Foreign-Liveshows'''
-	background = 114
-	commonsearch = 'commonsearch114'
-	
-	CATEGORIES_RANDOM(background,fanart)
-	'''חיפוש'''
-	addDir(localize(137),'liveshow',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(30020).encode('utf-8')),'1',0,fanart)
-	
-	CATEGORIES11104() #Music Box
-	
-	'''Adele'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30327).encode('utf-8'),list,17,'http://cdn.cultofmac.com/wp-content/uploads/2015/11/adele-third-album-25.jpg',addonString(30427).encode('utf-8'),'1',0,"http://yesofcorsa.com/wp-content/uploads/2015/09/1905_adele.jpg")
-	
-	'''Aretha Franklin'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_id=a3raW4rt2fE')
-	list.append('&youtube_id=y0xZsepl4Is')
-	list.append('&youtube_id=CbmB2nXJRDM')
-	addDir(addonString(30326).encode('utf-8'),list,17,"http://sandiegofreepress.org/wp-content/uploads/2013/01/ARETHA-FRANKLIN-QUEEN-OF-SOUL.jpg",addonString(30426).encode('utf-8'),'1',0,"http://img0.ndsstatic.com/wallpapers/54bd6b2fafd5e81b18a44a28a6cda97e_large.jpeg")
-	
-	'''Beyonce'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30302).encode('utf-8'),list,17,"http://factmag-images.s3.amazonaws.com/wp-content/uploads/2013/05/beyonce-5.13.20132.jpg",addonString(30402).encode('utf-8'),'1',0,"http://askkissy.com/wp-content/uploads/2016/02/image4.jpeg")
-	
-	'''Bob Marley'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30322).encode('utf-8'),list,17,"http://imgc.allpostersimages.com/images/P-473-488-90/65/6544/ATK4100Z/posters/bob-marley-colors.jpg/300px-Bob-Marley-in-Concert_Zurich_05-30-80.jpg",addonString(30422).encode('utf-8'),'1',0,"https://i.ytimg.com/vi/_KzaFxGME9o/maxresdefault.jpg")
-	
-	'''Bob Dylan'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30323).encode('utf-8'),list,17,"http://www.rockbandaide.com/wp-content/uploads/2014/02/Bob-Dylan-Times-are-Changing-C10113356.jpg",addonString(30423).encode('utf-8'),'1',0,"http://knownpeople.net/wp-content/uploads/b/bob-dylan-wallpapers.jpg")
-
-	'''Britney Spears'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30350).encode('utf-8'),list,17,"http://guardianlv.com/wp-content/uploads/2013/12/Britney-Spears-Hits-Vegas-With-Piece-of-Me-Concert-Series-e1388228163153.jpg",addonString(30450).encode('utf-8'),'1',0,"http://science-all.com/images/wallpapers/britney-spears-wallpaper/britney-spears-wallpaper-8.jpg")
-	
-	'''Celine Dion'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30332).encode('utf-8'),list,17,"https://www.vegas.com/shows/concerts/celine-dion-las-vegas/lg_celine-dion-large-2.jpg",addonString(30432).encode('utf-8'),'1',0,"http://wallpapers55.com/wp-content/uploads/2013/11/hd-wallpaper-celine-dion.jpg")
-	
-	'''Christina Aguilera'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30307).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/article_main_image/public/media/christina-aguilera_press-2013-650b.jpg",addonString(30407).encode('utf-8'),'1',0,"https://images6.alphacoders.com/342/342248.jpg")
-	
-	'''Coldplay'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_id=vMAyzVr_fZI')
-	addDir(addonString(30329).encode('utf-8'),list,17,"http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/10/12/1318414177419/Coldplay-007.jpg",addonString(30429).encode('utf-8'),'1',0,"http://worldversus.com/img/coldplay.jpg")
-	
-	'''David Bowie'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30351).encode('utf-8'),list,17,"https://wallpaperscraft.com/image/david_bowie_face_fist_sweater_look_3332_1920x1080.jpg",addonString(30451).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://www.monstersandcritics.com/wp-content/uploads/2016/01/david-bowie-album-blackstar.jpg")
-	
-	'''Elton John'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_id=9_5UFmJ7YhM')
-	list.append('&youtube_id=9_3WKNlZg-qr8')
-	addDir(addonString(30352).encode('utf-8'),list,17,"http://i.huffpost.com/gen/2722330/images/o-ELTON-JOHN-facebook.jpg",addonString(30452).encode('utf-8'),'1',0,"http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/Elton-John-HD-Wallpapers.jpg")
-	
-	'''Elvis Presley'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30320).encode('utf-8'),list,17,"http://static.europosters.cz/image/750/plakatok/elvis-presley-portrait-i9038.jpg/375px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",addonString(30420).encode('utf-8'),'1',0,"http://www.alux.com/wp-content/uploads/2015/06/070a67ca54831a9f02541f76a8c5ec71_large_21275600.jpeg")
-	
-	'''Eminem'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_id=ldWvm-ZqKaY')
-	list.append('&youtube_id=Dn3qfGz_Yq8')
-	list.append('&youtube_id=cc0YH5JdmKc')
-	list.append('&youtube_id=cKY7xpCZozE')
-	list.append('&youtube_id=7vAmygdfya0')
-	list.append('&youtube_id=trz0V6Fkb9I')
-	list.append('&youtube_id=-DWiECMKLDE')
-	list.append('&youtube_id=7LbT4MlfcP4')
-	list.append('&youtube_id=Lu1s83soD1I')
-	list.append('&youtube_id=clpxUD2bbWQ')
-	list.append('&youtube_id=8xeXEalVlQ4')
-	addDir(addonString(30309).encode('utf-8'),list,17,"http://static.gigwise.com/artists/best-bets-albums-eminem-650-430%20(1).jpg",addonString(30409).encode('utf-8'),'1',0,"http://thesource.com/wp-content/uploads/2016/03/eminem-5.jpg")
-
-	'''Enrique Iglesias'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30317).encode('utf-8'),list,17,"http://www.quoteauthors.com/wp-content/uploads/2015/10/enrique-iglesias.jpg",addonString(30417).encode('utf-8'),'1',0,"https://images8.alphacoders.com/421/421324.jpg")
-	
-	'''Eric Clapton'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30324).encode('utf-8'),list,17,"http://rock.amazingradios.com/wp-content/uploads/2014/10/eric-clapton-9.jpg",addonString(30424).encode('utf-8'),'1',0,"https://ichef.bbci.co.uk/images/ic/1920x1080/p01hycb8.jpg")
-	
-	'''Jean Michel Jarre'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30331).encode('utf-8'),list,17,"http://www.whale.to/c/zs107kz4jarre.jpg",addonString(30431).encode('utf-8'),'1',"electronic music", "http://assets.noisey.com/content-images/contentimage/71853/jmj-4.jpg")
-	
-	'''Jennifer Lopez'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30318).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Jennifer_Lopez_GLAAD_2014.jpg/375px-Jennifer_Lopez_GLAAD_2014.jpg",addonString(30418).encode('utf-8'),'1',0,"http://www.hitsync.net/wp-content/uploads/2016/04/WDF_2451822.jpg")
-	
-	'''Justin Bieber'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30330).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Believe_Tour_7%2C_2012.jpg/375px-Believe_Tour_7%2C_2012.jpg",addonString(30430).encode('utf-8'),'1',0,"http://deskbg.com/i/c/1920x1200/wpp/0/157/justin-bieber-desktop-background.jpg")
-	
-	'''Katy Perry'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_id=P65_WpalmdA')
-	list.append('&youtube_id=-1cyCmUdDNQ')
-	list.append('&youtube_id=RWmRIPoSj1A')
-	list.append('&youtube_id=lFgtmfaUmvU')
-	list.append('&youtube_id=6SmyCkJvh9Y')
-	addDir(addonString(30319).encode('utf-8'),list,17,"https://i.ytimg.com/vi/CevxZvSJLk8/maxresdefault.jpg",addonString(30419).encode('utf-8'),'1',0,"http://fullhdpictures.com/wp-content/uploads/2015/05/Best-of-Katy-Perry-Wallpapers.jpg")
-	
-	'''Meghan Trainor'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_id=GJ6cU-ZpHbU')
-	list.append('&youtube_id=ewaQgopjitg')
-	list.append('&youtube_id=gp4Pe0dqN8E')
-	list.append('&youtube_id=c-cRRs8uYgc')
-	addDir(addonString(30321).encode('utf-8'),list,17,"http://www.rosh1.co.il/wp-content/uploads/2014/12/460792920-490x429.jpg",addonString(30421).encode('utf-8'),'1',0,"http://www.popologynow.com/wp-content/uploads/2016/05/Meghan-Trainor-Thats-What-She-Said.jpg")
-	
-	'''Michael Jackson'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PL3CF35F99B7B4A227')
-	addDir(addonString(30301).encode('utf-8'),list,17,"https://michaeljacksonisrael.files.wordpress.com/2013/05/69235_majkl-dzhekson_or_michael-jack21.jpg",addonString(30401).encode('utf-8'),'1',0,"http://www.rockfm.mx/rock_tv/lesdoit-michaeljackson.jpg")
-	
-	'''Maddona'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLOOBElWP-gj6hl7PQVcZak9FGri0ppeWG')
-	list.append('&youtube_id=aiuB_e2QYb8')
-	list.append('&youtube_id=49BR8thSLIc')
-	list.append('&youtube_id=tph7mf068o4')
-	list.append('&youtube_id=bLZjDPhvqpM')
-	list.append('&youtube_id=Y4oCBZV8SHA')
-	list.append('&youtube_id=IR68GRYiPl4')
-	list.append('&youtube_id=liXbh4lZRmk')
-	list.append('&youtube_id=WfGjVnwavXk')
-	list.append('&youtube_id=i16PhTEKinA')
-	list.append('&youtube_id=72II5X6uceo')
-	list.append('&youtube_id=8eGtHXjRuO8')
-	addDir(addonString(30311).encode('utf-8'),list,17,"http://g04.a.alicdn.com/kf/HTB1jqmjIVXXXXbSapXXq6xXFXXX4/%D7%AA%D7%90%D7%A8%D7%99%D7%9A-%D7%94%D7%9E%D7%A1%D7%AA%D7%95%D7%A8%D7%99%D7%9F-%D7%A9%D7%97%D7%A7%D7%A0%D7%99%D7%AA-%D7%A7%D7%95%D7%9C%D7%A0%D7%95%D7%A2-%D7%9E%D7%93%D7%95%D7%A0%D7%94-ciccone-%D7%A4%D7%95%D7%A1%D7%98%D7%A8-%D7%A6%D7%99%D7%95%D7%A8-%D7%93%D7%A7%D7%95%D7%A8%D7%98%D7%99%D7%91%D7%99-%D7%9C%D7%91%D7%99%D7%AA-%D7%91%D7%93-%D7%9E%D7%A9%D7%99-%D7%94%D7%93%D7%A4%D7%A1%D7%94.jpg",addonString(30411).encode('utf-8'),'1',0,"http://weneedfun.com/wp-content/uploads/2015/10/Madonna-HD-Pictures-17.jpg")
-	
-	'''Mariah Carey'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PLEB34410B67CCA932')
-	list.append('&youtube_pl=PLW86BSRZLdyoLMixcdANNKKQGYI6cAxUd')
-	list.append('&youtube_id=fTtrc7Zmi7Q')
-	list.append('&youtube_id=zyh87AZ4s_c')
-	list.append('&youtube_id=7RIk7LKLNSI')
-	list.append('&youtube_id=hSfOMsbKk2w')
-	addDir(addonString(30313).encode('utf-8'),list,17,"http://www.studentsoftheworld.info/sites/musique/img/2827_Maria_Carey_1.jpg",addonString(30413).encode('utf-8'),'1',0,"http://wallpaperswide.com/download/mariah_carey_2-wallpaper-1920x1080.jpg")
-	
-	'''Maroon 5'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_id=C0PqR03HjW4')
-	list.append('&youtube_id=yrnrQDZb2dY')
-	list.append('&youtube_id=UbQll-N3AjA')
-	list.append('&youtube_id=_qCrV5lmpQ0')
-	list.append('&youtube_id=HqEpvbtoJec')
-	list.append('&youtube_id=oAABDqaIxNk')
-	list.append('&youtube_id=JlIsaeekv9E')
-	addDir(addonString(30308).encode('utf-8'),list,17,"http://www.aaarena.com/assets/img/Concert_Maroon5.jpg",addonString(30408).encode('utf-8'),'1',0,"http://www.guitarfree.co.il/wp-content/uploads/8bc571dfd3347ae39c1002c81e32536a.jpg")
-	
-	'''Pharrell Williams'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_id=mISFzxi1kE0')
-	list.append('&youtube_id=ALKKJ0o_ID8')
-	list.append('&youtube_id=pI3yse4zK_M')
-	list.append('&youtube_id=DB6Y-9e6pkI')
-	list.append('&youtube_id=AQ4uaqyzQ_M')
-	list.append('&youtube_id=oDEFegMpcYE')
-	addDir(addonString(30312).encode('utf-8'),list,17,"http://cdn.bleedingcool.net/wp-content/uploads/2013/10/Pharrell-Williams.jpg",addonString(30412).encode('utf-8'),'1',0,"http://content.acclaimmag.com/content/uploads/2016/04/1398788909Adi_Pharrell.jpg")
-	
-	'''Roy Orbison'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_id=uAkNGdBTDQ4')
-	list.append('&youtube_id=eV9GxtDao9g')
-	list.append('&youtube_id=Fb6luT4NNJU')
-	list.append('&youtube_id=9tZXIok6OF8')
-	list.append('&youtube_id=pra6ezRMejg')
-	list.append('&youtube_id=kkUNfpV8WUc')
-	addDir(addonString(30310).encode('utf-8'),list,17,"http://www.billboard.com/files/styles/promo_650/public/stylus/1077939-roy-orbison-617-409.jpg",addonString(30410).encode('utf-8'),'1',0,"https://fanart.tv/fanart/music/0bbbc496-c7b5-4b3f-bb6d-bd312827d6e5/artistbackground/orbison-roy-503635210f7d1.jpg")
-	
-	'''Rihanna'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30303).encode('utf-8'),list,17,"http://static1.1.sqspcdn.com/static/f/610086/15180915/1321583897117/Rihanna.jpg?token=kZt1lYEul%2FfTahdORTKehFd28NI%3D/site1/20091127/0023ae9885da0c7990e10d.jpg&pw=200",addonString(30403).encode('utf-8'),'1',0,"http://xdesktopwallpapers.com/wp-content/uploads/2011/08/Rihanna-Pink-Lips-N-Brown-Eyes-Face-Closeups.jpg")
-	
-	'''Sam Smith'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30333).encode('utf-8'),list,17,"https://yt3.ggpht.com/-9z_bFRPDMYQ/AAAAAAAAAAI/AAAAAAAAAAA/czjhAF4k4aw/s100-c-k-no/photo.jpg",addonString(30433).encode('utf-8'),'1',0,"https://i.ytimg.com/vi/lf3W5YtcyaY/maxresdefault.jpg")
-	
-	'''Taylor Swift'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30304).encode('utf-8'),list,17,"http://upload.wikimedia.org/wikipedia/he/5/58/Taylor_Swift_-_Taylor_Swift_Album_Cover.png",addonString(30404).encode('utf-8'),'1',0,"http://hdcoolwallpapers.com/wp-content/uploads/2015/03/Taylor-Swift-Wallpapers-HD-041.jpg")
-	
-	'''Usher'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	addDir(addonString(30315).encode('utf-8'),list,17,"http://www.usherdaily.com/wp-content/uploads/2015/02/usher-2014-cover-bb36-01-650.jpg",addonString(30415).encode('utf-8'),'1',0,"https://i.ytimg.com/vi/xbkUdPotU3A/maxresdefault.jpg")
-
-	'''Whitney Houston'''
-	list = []
-	list.append('&youtube_se='+commonsearch+'')
-	list.append('&youtube_pl=PL201BB89398FE5675')
-	addDir(addonString(30314).encode('utf-8'),list,17,"http://img2.timeinc.net/people/i/2012/specials/yearend/obits/whitney-houston-1435.jpg",addonString(30414).encode('utf-8'),'1',0,"https://content2.promiflash.de/article-images/video_1080/whitney-houston-ganz-in-schwarz.jpg")
-	
-	CATEGORIES11104A(name, iconimage, desc, fanart) #דף הבא
-	
-def CATEGORIES11105(name, iconimage, desc, fanart):
-	'''Foregin-Djs'''
-	background = 115
-	commonsearch = 'commonsearch115'
-	
-	CATEGORIES_RANDOM(background,fanart)
-	CATEGORIES11105() #Music Box
-	
-	
-	CATEGORIES11105A(name, iconimage, desc, fanart) #דף הבא
 
 def CATEGORIES114(name, iconimage, desc, fanart):
 	'''תצוגות אופנה'''
 	background = 114
 	commonsearch = 'commonsearch114'
 	
-	CATEGORIES_RANDOM(background,fanart)
+	CATEGORIES_RANDOM(background="",fanart)
 	CATEGORIES114() #Music Box
 	
 	'''Victoria Secret'''
@@ -1578,7 +1061,6 @@ def CATEGORIES114(name, iconimage, desc, fanart):
 	
 	
 	CATEGORIES114A(name, iconimage, desc, fanart) #דף הבא
-
 	
 def CATEGORIES118(name, iconimage, desc, fanart):
 	'''------------------------------
@@ -1587,7 +1069,7 @@ def CATEGORIES118(name, iconimage, desc, fanart):
 	background = 118
 	commonsearch = 'commonsearch118'
 	
-	CATEGORIES_RANDOM(background,fanart)
+	CATEGORIES_RANDOM(background="",fanart)
 	CATEGORIES118() #Music Box
 	
 	'''Antonin Dvorak'''

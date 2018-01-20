@@ -9,7 +9,7 @@ WIP - WORK IN PROGRESS
 - Major update of Sdarot.tv broken links (all of them!)
 
 ------------------------
-Featherence Kids v0.2.24 (2-Dec-17)
+Featherence Kids v0.2.24 (02-Dec-17)
 ------------------------
 - Added TV Mode support to YouTube search sources.
 - Major update of redirecting fanart and posters and plots to TVDB website.

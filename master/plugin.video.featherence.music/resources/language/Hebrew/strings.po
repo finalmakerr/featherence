@@ -23,8 +23,8 @@ msgid "Israeli Liveshows"
 msgstr "הופעות חיות מישראל"
 
 msgctxt "#30005"
-msgid "Israeli Djs"
-msgstr "די ג'יי ישראליים"
+msgid "Djs"
+msgstr "Djs"
 
 msgctxt "#30006"
 msgid "מוזיקה מזרחית"
@@ -115,16 +115,10 @@ msgid "מוזיקה ישראלית"
 msgstr "מוזיקה ישראלית"
 
 msgctxt "#30030"
-msgid "Live Show"
-msgstr "Live Show"
 
 msgctxt "#30031"
-msgid "Song"
-msgstr "Song"
 
 msgctxt "#30032"
-msgid "Karaoke"
-msgstr "Karaoke"
 
 msgctxt "#30050"
 msgid "Amir Elgazar's Playlists"

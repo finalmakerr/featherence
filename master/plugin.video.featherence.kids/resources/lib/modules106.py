@@ -622,7 +622,7 @@ def CATEGORIES106G(General_LanguageL, background, background2): #דובוני א
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
-		list.append('&youtube_pl=PL5P58zb1nYo8z3Bj06tEriLO1LMREAQK8')
+		list.append('&youtube_id=wkfFvOLWrHI')
 		list.append('&youtube_pl=')
 		
 	'''אנגלית'''
