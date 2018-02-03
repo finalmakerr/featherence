@@ -567,8 +567,8 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 
 def CATEGORIES105(name, iconimage, desc, fanart):
 	'''Djs'''
-	
-	CATEGORIES_RANDOM(background="",fanart)
+	background=105
+	CATEGORIES_RANDOM(background,fanart)
 	CATEGORIES10105Z() #Music Box
 	
 	'''Afrojack'''
@@ -743,11 +743,11 @@ def CATEGORIES111(name, iconimage, desc, fanart):
 	background = 111
 	commonsearch = 'commonsearch111'
 	
-	CATEGORIES_RANDOM(background="",fanart)
+	CATEGORIES_RANDOM(background,fanart)
 	'''חיפוש'''
 	addDir(localize(137),'song',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(30021).encode('utf-8')),'1',0,fanart)
 	
-	CATEGORIES11101() #Music Box
+	CATEGORIES11101Z() #Music Box
 	
 	'''Adele'''
 	thumb = 'http://cdn.cultofmac.com/wp-content/uploads/2015/11/adele-third-album-25.jpg'
@@ -1004,8 +1004,8 @@ def CATEGORIES114(name, iconimage, desc, fanart):
 	background = 114
 	commonsearch = 'commonsearch114'
 	
-	CATEGORIES_RANDOM(background="",fanart)
-	CATEGORIES114() #Music Box
+	CATEGORIES_RANDOM(background,fanart)
+	CATEGORIES114Z() #Music Box
 	
 	'''Victoria Secret'''
 	list = []
@@ -1069,8 +1069,8 @@ def CATEGORIES118(name, iconimage, desc, fanart):
 	background = 118
 	commonsearch = 'commonsearch118'
 	
-	CATEGORIES_RANDOM(background="",fanart)
-	CATEGORIES118() #Music Box
+	CATEGORIES_RANDOM(background,fanart)
+	CATEGORIES118Z() #Music Box
 	
 	'''Antonin Dvorak'''
 	list = []

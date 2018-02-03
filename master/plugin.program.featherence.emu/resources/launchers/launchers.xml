@@ -128,7 +128,7 @@
 			<fanart></fanart>
 			<genre></genre>
 			<description></description>
-			<enable>false</enable>
+			<enable></enable>
 			<finished>false</finished>
 		</category>
 	</categories>
@@ -19281,9 +19281,9 @@
 				<rom>
 					<id>d39a1ng1xa1ba6711bc1769zbd3f4020</id>
 					<name>Hugo 1</name>
-					<filename>rom_pathDOS/_EN/Hugo 1/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hugo 1.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hugo 1.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Hugo 1/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Hugo 1.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Hugo 1.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Platform / Action</genre>
@@ -19296,9 +19296,9 @@
 				<rom>
 					<id>d39a1eg1xa1ba6711bc1769zbd3f4020</id>
 					<name>Hugo 2‎‎</name>
-					<filename>rom_pathDOS/_EN/Hugo 2/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hugo 2.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hugo 2.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Hugo 2/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Hugo 2.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Hugo 2.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Platform / Action</genre>
@@ -19311,9 +19311,9 @@
 				<rom>
 					<id>d39a1e21xa1ba6711bc1769zbd3f4020</id>
 					<name>Hugo 5‎‎</name>
-					<filename>rom_pathDOS/_EN/Hugo 5/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hugo 5.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hugo 5.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Hugo 5/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Hugo 5.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Hugo 5.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Platform / Action</genre>
