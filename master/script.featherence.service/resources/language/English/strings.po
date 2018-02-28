@@ -580,12 +580,12 @@ msgid "www.featherence.com"
 msgstr "www.featherence.com"
 
 msgctxt "#32159"
-msgid ""
-msgstr ""
+msgid "Music Box"
+msgstr "Music Box"
 
 msgctxt "#32160"
-msgid ""
-msgstr ""
+msgid "I am feeling lucky $$$"
+msgstr "I am feeling lucky $$$"
 
 msgctxt "#32161"
 msgid ""

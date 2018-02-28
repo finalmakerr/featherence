@@ -8,7 +8,7 @@ if "plugin." in addonID: from shared_modules3 import *
 
 '''ערוצי טלוויזיה'''
 
-def CATEGORIES10101Z():
+def CATEGORIES10101Z(fanart=""):
 	
 	'''מוזיקה ישראלית'''
 	list = []
@@ -19,7 +19,7 @@ def CATEGORIES10101Z():
 		
 	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES10102Z():
+def CATEGORIES10102Z(fanart=""):
 	
 	'''קריוקי ישראלי'''
 	list = []
@@ -30,7 +30,7 @@ def CATEGORIES10102Z():
 		
 	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES10104Z():
+def CATEGORIES10104Z(fanart=""):
 	
 	'''הופעות חיות ישראליות'''
 	list = []
@@ -41,7 +41,7 @@ def CATEGORIES10104Z():
 		
 	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES10105Z():
+def CATEGORIES10105Z(fanart=""):
 	'''DJS'''
 	list = []
 	list.append('&youtube_ch=UC4XhqoxGQ1oTifJ8yRsjKnA') #The Best Sets On The Net
@@ -50,7 +50,7 @@ def CATEGORIES10105Z():
 		
 	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 	
-def CATEGORIES10106Z():
+def CATEGORIES10106Z(fanart=""):
 	'''מוזיקה מזרחית'''
 	
 	list = []
@@ -62,7 +62,7 @@ def CATEGORIES10106Z():
 		
 	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES10107Z():
+def CATEGORIES10107Z(fanart=""):
 	'''קריוקי מזרחי'''
 	
 	list = []
@@ -73,7 +73,7 @@ def CATEGORIES10107Z():
 		
 	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES10109Z():
+def CATEGORIES10109Z(fanart=""):
 	'''הופעות חיות מזרחיות'''
 	
 	list = []
@@ -84,7 +84,7 @@ def CATEGORIES10109Z():
 		
 	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES11101Z():
+def CATEGORIES11101Z(fanart=""):
 	'''מוזיקה לועזית'''
 	
 	list = []
@@ -95,7 +95,7 @@ def CATEGORIES11101Z():
 		
 	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES11102Z():
+def CATEGORIES11102Z(fanart=""):
 	'''קריוקי לועזי'''
 	
 	list = []
@@ -106,7 +106,7 @@ def CATEGORIES11102Z():
 		
 	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES11104Z():
+def CATEGORIES11104Z(fanart=""):
 	'''הופעות חיות לועזיות'''
 	
 	list = []
@@ -115,7 +115,7 @@ def CATEGORIES11104Z():
 		
 	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES11109Z():
+def CATEGORIES11109Z(fanart=""):
 	''''''
 	
 	list = []
@@ -126,7 +126,7 @@ def CATEGORIES11109Z():
 		
 	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 	
-def CATEGORIES118Z():
+def CATEGORIES118Z(fanart=""):
 	'''מוזיקה קלאסית'''
 	
 	list = []
@@ -137,7 +137,7 @@ def CATEGORIES118Z():
 		
 	addDir('-' + addonString_servicefeatherence(32159).encode('utf-8'),list,5,featherenceserviceicons_path + 'musicbox.png',addonString_servicefeatherence(32160).encode('utf-8'),'1',0,getAddonFanart(custom=fanart))
 
-def CATEGORIES114Z():
+def CATEGORIES114Z(fanart=""):
 	'''תצוגות אופנה'''
 	
 	list = []

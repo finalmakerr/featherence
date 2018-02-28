@@ -148,9 +148,9 @@
       </control>
       <control type="label" id="7" description="תאור כללי">
 		<!--<aligny>center</aligny>-->
-		<height>50</height>
+		<height>70</height>
 		<textoffsetx>20</textoffsetx>
-		<textoffsety>0</textoffsety>
+		<textoffsety>20</textoffsety>
 		<include condition="Skin.HasSetting(AddonSettingsScroll)">AddonSettingsScroll</include>
 		<scroll>false</scroll>
 		<shadowcolor>black</shadowcolor>

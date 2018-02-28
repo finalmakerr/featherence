@@ -1,0 +1,77 @@
+-------------------------
+---www.featherence.com---
+-------------------------
+
+------------------------
+WIP - WORK IN PROGRESS
+------------------------
+
+------------------------
+Featherence ROFL v0.0.12 (xx-xx-17)
+------------------------
+- Added new YouTube API for better performance.
+- Added TV Mode support to YouTube search sources.
+- Major performance update result in a very fast addon!
+
+------------------------
+Featherence ROFL v0.0.11 (13-10-17)
+------------------------
+- Added Conan O'Brien in foreign standup category.
+- Added Moto Madness channel in fail category.
+
+------------------------
+Featherence ROFL v0.0.10 (22-Apr-17)
+------------------------
+- Minor links update.
+
+------------------------
+Featherence ROFL v0.0.9 (02-Mar-17)
+------------------------
+- Added Remi Giliard, Lama Faché channels.
+- Added thumbnails, fanart and description for Foreign Standup category.
+- Minor links update.
+
+------------------------
+Featherence ROFL v0.0.8 (16-Dec-16)
+------------------------
+- Added Adi Ashkenazi to stand ups comedy.
+- Minor update of links, names, description, thumbnails and fanart.
+- Major update of autoview feature.
+Work on any skin now and you may add your default view for Main Menu, Sub Menu, and all others window from the addon settings or/and the context menu (Set View).
+
+------------------------
+Featherence ROFL v0.0.6-7 (27-Aug-16)
+------------------------
+- Added Cihan Kosif TV, Russian car crash.
+- Added a lots of Israeli TV Shows:
+הסטנדאפיסטים, צומת מילר, רמזור ועוד..
+- Update TV Mode feature for long playlist.
+
+------------------------
+Featherence ROFL v0.0.5 (12-Jul-16)
+------------------------
+- Added new contents.
+- Update addon settings interface.
+- Update contents sort order.
+
+------------------------
+Featherence ROFL v0.0.4 (05-May-16)
+------------------------
+- Added option to force TV Mode.
+
+------------------------
+Featherence ROFL v0.0.3 (30-Apr-16)
+------------------------
+- Minor bugs fix.
+
+------------------------
+Featherence ROFL v0.0.2 (06-Apr-16)
+------------------------
+- Added foreign stand-up.
+- Added english translation.
+- Code Cosmetic.
+
+------------------------
+Featherence ROFL v0.0.1 (02-Apr-16)
+------------------------
+- First Release.

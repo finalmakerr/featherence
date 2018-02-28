@@ -235,7 +235,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	'''חיפוש'''
 	addDir(localize(137),'שיר',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(30021).encode('utf-8')),'1',0,fanart)
 	
-	CATEGORIES10106Z() #Music Box
+	CATEGORIES10106Z(fanart) #Music Box
 
 	'''אביתר בנאי'''
 	thumb = 'http://images.mouse.co.il/storage/7/f/eviatar-ggg.jpg'
@@ -250,7 +250,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	fanart = ''
 	list = [] ; se = '"addonString(30102)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30102)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30102)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30102)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDefinition=high&')
 	addDir(addonString(30102).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30202).encode('utf-8'),'1',0,fanart)
 	
 	'''אייל גולן'''
@@ -258,7 +258,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	fanart = 'http://eco99fm.maariv.co.il/download/pictures/Show_245_4506.jpg'
 	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&')
 	addDir(addonString(30103).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30203).encode('utf-8'),'1',0,fanart)
 	
 	'''אתניקס'''
@@ -266,7 +266,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	fanart = ''
 	list = [] ; se = '"addonString(30105)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30105)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30105)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30105)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&&maxResults=5&')
 	addDir(addonString(30105).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30205).encode('utf-8'),'1',0,fanart)
 	
 	'''גיא ויהל'''
@@ -274,7 +274,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	fanart = ''
 	list = [] ; se = '"addonString(30108)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30108)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30108)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30108)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDefinition=high&&maxResults=20&')
 	addDir(addonString(30108).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30208).encode('utf-8'),'1',0,fanart)
 
 	'''דודו אהרון'''
@@ -282,7 +282,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	fanart = 'http://haflla.com/wp-content/uploads/2014/12/pic53.jpg'
 	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDefinition=high&&maxResults=20&')
 	addDir(addonString(30107).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30207).encode('utf-8'),'1',0,fanart)
 	
 	'''דני סנדרסון'''
@@ -290,7 +290,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	fanart = ''
 	list = [] ; se = '"addonString(30111)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30111)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30111)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30111)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDefinition=high&&maxResults=20&')
 	addDir(addonString(30111).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30211).encode('utf-8'),'1',0,fanart)
 	
 	'''הדודאים'''
@@ -298,7 +298,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	fanart = ''
 	list = [] ; se = '"addonString(30148)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30148)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30148)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30148)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&maxResults=20&')
 	addDir(addonString(30148).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30248).encode('utf-8'),'1',0,fanart) 
 	
 	'''הפרויקט של רביבו'''
@@ -306,7 +306,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	fanart = 'http://haflla.com/wp-content/uploads/2015/06/pic15.jpg'
 	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&&maxResults=5&')
 	addDir(addonString(30112).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30212).encode('utf-8'),'1',0,fanart)
 	
 	'''הראל סקעת'''
@@ -314,22 +314,22 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	fanart = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Flickr_-_aktivioslo_-_Harel_Skaat_-_Israel_%282%29_cropped.jpg/1200px-Flickr_-_aktivioslo_-_Harel_Skaat_-_Israel_%282%29_cropped.jpg'
 	list = [] ; se = '"addonString(30113)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30113)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30113)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	list3 = [] ; se = '"addonString(30113)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&&maxResults=3&')
 	addDir(addonString(30113).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30213).encode('utf-8'),'1',0,fanart)
 	
 	'''זוהר ארגוב'''
 	thumb = 'https://upload.wikimedia.org/wikipedia/he/thumb/6/67/Argov.jpg/200px-Argov.jpg'
 	fanart = 'https://i.ytimg.com/vi/nM8XuZZQnt4/maxresdefault.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=any&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=any&')
+	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&maxResults=10&')
 	addDir(addonString(30128).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,'http://www.atzuma.co.il/uploaded/13112175e8e2be3e53e7dc74153479b3a0c726.jpg',addonString(30228).encode('utf-8'),'1',0,fanart)
 	
 	'''חיים משה'''
 	thumb = 'http://images.one.co.il/images/mag/450_250/gg789176.jpg'
 	fanart = 'http://www.tlvtimes.co.il/wp-content/uploads/2016/10/%D7%97%D7%99%D7%99%D7%9D-%D7%9E%D7%A9%D7%94.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
-	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=any&')
+	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=any&')
 	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30114).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30214).encode('utf-8'),'1',0,fanart)
 	
@@ -569,7 +569,7 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 	'''Djs'''
 	background=105
 	CATEGORIES_RANDOM(background,fanart)
-	CATEGORIES10105Z() #Music Box
+	CATEGORIES10105Z(fanart) #Music Box
 	
 	'''Afrojack'''
 	thumb = 'http://assets.rollingstone.com/assets/images/video/afrojack-pays-tribute-to-mentor-david-guetta-20131023/101613-afrojack-623-1381937652.jpg'
@@ -747,7 +747,7 @@ def CATEGORIES111(name, iconimage, desc, fanart):
 	'''חיפוש'''
 	addDir(localize(137),'song',3,featherenceserviceicons_path + 'se.png',addonString_servicefeatherence(32416).encode('utf-8') % (addonString(30021).encode('utf-8')),'1',0,fanart)
 	
-	CATEGORIES11101Z() #Music Box
+	CATEGORIES11101Z(fanart) #Music Box
 	
 	'''Adele'''
 	thumb = 'http://cdn.cultofmac.com/wp-content/uploads/2015/11/adele-third-album-25.jpg'
@@ -1005,7 +1005,7 @@ def CATEGORIES114(name, iconimage, desc, fanart):
 	commonsearch = 'commonsearch114'
 	
 	CATEGORIES_RANDOM(background,fanart)
-	CATEGORIES114Z() #Music Box
+	CATEGORIES114Z(fanart) #Music Box
 	
 	'''Victoria Secret'''
 	list = []
@@ -1070,7 +1070,7 @@ def CATEGORIES118(name, iconimage, desc, fanart):
 	commonsearch = 'commonsearch118'
 	
 	CATEGORIES_RANDOM(background,fanart)
-	CATEGORIES118Z() #Music Box
+	CATEGORIES118Z(fanart) #Music Box
 	
 	'''Antonin Dvorak'''
 	list = []
