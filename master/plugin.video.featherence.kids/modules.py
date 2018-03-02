@@ -3949,24 +3949,24 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	addDir(addonString(10749).encode('utf-8'),list,17,thumb,addonString(107490).encode('utf-8'),'1',"",fanart)
 	
 	'''סיפורי פיות'''
-	thumb = ''
+	thumb = 'http://isc.wcdn.co.il/w9/skins/nick_jr/17/header_pic_2745.png'
 	fanart = ''
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&custom4=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%f1%e9%f4%e5%f8%e9%20%f4%e9%e5%fa&url=http%3a%2f%2fnickjr.walla.co.il%2f%3fw%3d%2f%2f2678298')
 		list.append('&youtube_pl=PLPWc8VdaIIsD8YvtRkkqjYC5SF7TKvAcM')
-	addDir(addonString(10755).encode('utf-8'),list,17,'http://isc.wcdn.co.il/w9/skins/nick_jr/17/header_pic_2745.png',addonString(107550).encode('utf-8'),'1',"",fanart)
+	addDir(addonString(10755).encode('utf-8'),list,17,thumb,addonString(107550).encode('utf-8'),'1',"",fanart)
 	
 	CATEGORIES107P(General_LanguageL, background, background2) #סימסאלה גרים
 	CATEGORIES107G(General_LanguageL, background, background2) #סמי הכבאי
 	
 	'''קלימרו'''
-	thumb = ''
-	fanart = ''
+	thumb = 'http://board.il.ikariam.gameforge.com/wcf/images/avatars/avatar-811.gif'
+	fanart = 'https://i.ytimg.com/vi/Uci_grLDJVo/maxresdefault.jpg'
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_pl=PLfcYs4SRZfuKZcfWNbg4f6tMHe3olHtlj')
-	addDir('קלימרו',list,17,'http://board.il.ikariam.gameforge.com/wcf/images/avatars/avatar-811.gif',addonString(107720).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/Uci_grLDJVo/maxresdefault.jpg", default=background2))
+	addDir('קלימרו',list,17,thumb,addonString(107720).encode('utf-8'),'1',0,fanart)
 	
 	'''סקרדי הסנאי'''
 	thumb = ''
