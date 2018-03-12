@@ -2335,7 +2335,6 @@
 		<onclick condition="Skin.String(WeatherFanart)">RunScript(script.featherence.service,,?mode=231&amp;value=resource.images.weatherfanart.$VAR[151label2]&amp;value2=1)</onclick>
 		<onclick condition="!Skin.String(WeatherFanart)">RunScript(script.featherence.service,,?mode=231&amp;value=resource.images.weatherfanart.single&amp;value2=1)</onclick>
 		<visible>Container(100).Hasfocus(3)</visible>
-		<visible>Skin.HasSetting(Admin)</visible>
 	  </item>
 	  
 	  <item id="155" description="resource.uisounds.featherence">

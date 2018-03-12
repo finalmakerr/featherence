@@ -386,8 +386,8 @@ msgid "Toggle button labels inside or outside the button."
 msgstr "שנה את מיקום כותרת הכפתור בפנים או מחוץ לכפתור."
 
 msgctxt "#31111"
-msgid "Choose your favourite icons for weather information."
-msgstr "Choose your favourite icons for weather information."
+msgid "Choose your favourite icons for weather information.[CR][COLOR=red]You may reselect a plugin in order to download it.[/COLOR]"
+msgstr "Choose your favourite icons for weather information.[CR][COLOR=red]You may reselect a plugin in order to download it.[/COLOR]"
 
 msgctxt "#31112"
 msgid "Set weather widget"

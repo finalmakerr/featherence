@@ -153,7 +153,7 @@
 		<width>1920</width>
 		<texture background="true">$VAR[background]</texture>
 		<visible>!String.IsEmpty(Control.GetLabel(70130))</visible>
-		<visible>!Skin.HasSetting(background2) | Window.IsVisible(MyWeather.xml)</visible>
+		<visible>!Skin.HasSetting(background2) | Window.IsVisible(MyWeather.xml) | [Window.IsVisible(Home.xml) + [String.IsEqual(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget317))]]</visible>
 		<visible>![$EXP[View59] + Player.HasVideo + !Skin.HasSetting(FullFanart59)]</visible>
 		<visible>!Container.Scrolling + !Container.OnScrollNext + !Container.OnScrollPrevious</visible>
 	  </control>
@@ -1052,7 +1052,7 @@
 	
 	<value condition="Control.IsVisible(316) + !String.IsEmpty(ListItem.thumb) + Skin.HasSetting(Admin)" description="סדרות">$INFO[ListItem.thumb]</value>
 	
-	<value description="מזג אוויר" condition="!Skin.HasSetting(WidgetFanart) + [String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget317)) + !Skin.HasSetting(wbackground97)] | Window.IsVisible(MyWeather.xml)">$VAR[WeatherFanart]</value>
+	<value description="מזג אוויר" condition="[String.IsEqual(Window(home).Property(Button.ID),97) + !Skin.String(widget317) | String.IsEqual(Window(home).Property(Button.ID),Skin.String(widget317))] | Window.IsVisible(MyWeather.xml)">$VAR[WeatherFanart]</value>
 	
 	<value condition="String.IsEqual(Window(home).Property(Button.ID),17) | Window.IsVisible(DialogFavourites.xml)">$VAR[background17]</value>
 	<value condition="String.IsEqual(Window(home).Property(Button.ID),18) | Window.IsVisible(DialogAddonSettings.xml)">$VAR[background18]</value>

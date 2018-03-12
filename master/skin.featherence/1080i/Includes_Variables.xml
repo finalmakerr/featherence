@@ -369,6 +369,18 @@
 	<value description="רענון" condition="Control.HasFocus(128)">$LOCALIZE[184]</value>
 	<value description="הגדרות" condition="Control.HasFocus(129)">$LOCALIZE[1390]</value>
   </variable>
+  <variable name="WeatherIconPath">
+    <value description="ברירת מחדל" condition="!Skin.String(WeatherIcons)">special://home/addons/resource.images.weathericons.outline/resources/$INFO[ListItem.Property(FanartCode)].png</value>
+	<value description="White" condition="Skin.String(WeatherIcons,0)">special://home/addons/resource.images.weathericons.white/resources/$INFO[ListItem.Property(FanartCode)].png</value>
+	<value description="Transparent" condition="Skin.String(WeatherIcons,1)">special://home/addons/resource.images.weathericons.transparent/resources/$INFO[ListItem.Property(FanartCode)].png</value>
+	<value description="Outline" condition="Skin.String(WeatherIcons,2)">special://home/addons/resource.images.weathericons.outline/resources/$INFO[ListItem.Property(FanartCode)].png</value>
+	<value description="Flat" condition="Skin.String(WeatherIcons,3)">special://home/addons/resource.images.weathericons.flat/resources/$INFO[ListItem.Property(FanartCode)].png</value>
+	<value description="Grey" condition="Skin.String(WeatherIcons,4)">special://home/addons/resource.images.weathericons.grey/resources/$INFO[ListItem.Property(FanartCode)].png</value>
+	<value description="Coloured" condition="Skin.String(WeatherIcons,5)">special://home/addons/resource.images.weathericons.coloured/resources/$INFO[ListItem.Property(FanartCode)].png</value>
+	<value description="Animated" condition="Skin.String(WeatherIcons,6)">special://home/addons/resource.images.weathericons.animated/resources/$INFO[ListItem.Property(FanartCode)].png</value>
+	<value description="3D-White" condition="Skin.String(WeatherIcons,7)">special://home/addons/resource.images.weathericons.3d-white/resources/$INFO[ListItem.Property(FanartCode)].png</value>
+	<value description="ED-Coloured" condition="Skin.String(WeatherIcons,8)">special://home/addons/resource.images.weathericons.ed-coloured/resources/$INFO[ListItem.Property(FanartCode)].png</value>
+  </variable>
   <variable name="writerthumb">
 	  <value condition="!String.Contains(ListItem.Writer,/)">http://localhost:52307/getthumb&amp;title=$INFO[Listitem.Writer]</value>
 	  <value>DefaultActor2.png</value>
