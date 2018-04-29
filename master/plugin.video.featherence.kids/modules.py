@@ -3357,7 +3357,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	fanart = ''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%e1%e2%e9%f0%e4%20%f9%ec%20%ec%e9%ef&url=http%3a%2f%2fnickjr.walla.co.il%2f%3fw%3d%2f%2f2717314')
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%90%d7%95%d7%9e%d7%99%20%d7%96%d7%95%d7%9e%d7%99&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f1744439')
 		list.append('&youtube_pl=PLPWc8VdaIIsDcjHMTBavJG-Rm8p0wvvW_')
 	addDir(addonString(10705).encode('utf-8'),list,17,'http://img.youtube.com/vi/lQt9W6DU5dQ/0.jpg',addonString(107110).encode('utf-8'),'1',"",fanart)
 	
@@ -3403,8 +3403,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	fanart = 'http://4.bp.blogspot.com/-lzXysVf6vg0/UyINE-X3B3I/AAAAAAAAXXs/XCoe51pywtw/s1600/Blaze_and_the_Monster_Machines_Nickelodeon_Preschool_Nick_Jr.jpg'
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		#list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%e1%ec%e9%e9%e6%20%e5%ee%eb%e5%f0%e9%e5%fa%20%e4%f2%f0%f7&url=http%3a%2f%2fnickjr.walla.co.il%2f%3fw%3d%2f%2f2868092') #Empty!
-		pass
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%91%d7%9c%d7%99%d7%99%d7%96%20%d7%95%d7%9e%d7%9b%d7%95%d7%a0%d7%99%d7%95%d7%aa%20%d7%94%d7%a2%d7%a0%d7%a7&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2868092')
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLcj83Ngp_IlMC0eE45W0FBily_QmTtgMQ')
 		list.append('&youtube_pl=')
@@ -3447,6 +3446,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	fanart = 'http://www.trbimg.com/img-53ee62bb/turbine/la-et-st-dora-and-friends-into-the-city-review-20140815'
 	list = []
 	if 'Hebrew' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%93%d7%95%d7%a8%d7%94%20%d7%95%d7%97%d7%91%d7%a8%d7%99%d7%9d&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2831952')
 		list.append('&custom4=http://62.90.90.56/walla_vod/_definst_/mp4:media/015/242/1524273-40.mp4/playlist.m3u8')
 		list.append('&youtube_id=-aeSQFWB1pA')
 		list.append('&youtube_id=zbSxLv4HH3I')
@@ -3573,10 +3573,17 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	fanart = ''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%e4%f1%e5%e3%20%f9%ec%20%ee%e9%e4&url=http%3a%2f%2fnickjr.walla.co.il%2f%3fw%3d%2f%2f1688505')
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%94%d7%a1%d7%95%d7%93%20%d7%a9%d7%9c%20%d7%9e%d7%99%d7%94&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f1688505')
 		list.append('&youtube_pl=PLPWc8VdaIIsCGEVOC2iJxnWNEjI13xbnA')
 	addDir(addonString(10723).encode('utf-8'),list,17,'http://msc.wcdn.co.il/w-2-1/w-300/768225-54.jpg',addonString(107230).encode('utf-8'),'1',0,fanart)
 	
+	'''הרמזים של בלו'''
+	thumb = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492577-46.jpg'
+	fanart = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492577-46.jpg'
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%94%d7%a8%d7%9e%d7%96%d7%99%d7%9d%20%d7%a9%d7%9c%20%d7%91%d7%9c%d7%95&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f1764817')
+	addDir('הרמזים של בלו',list,17,thumb,"",'1',0,fanart)
 	
 	'''הרפתקאות פיטר הארנב'''
 	thumb = ''
@@ -3611,13 +3618,29 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	addDir(addonString(10724).encode('utf-8'),list,17,'http://thetvdb.com/banners/_cache/posters/120621-1.jpg',addonString(107240).encode('utf-8'),'1',0,fanart)
 	
 	'''זמן לזוז'''
-	thumb = ''
-	fanart = ''
+	thumb = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492582-46.jpg'
+	fanart = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492582-46.jpg'
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&custom4=http://62.90.90.56/walla_vod/_definst_/mp4:media/015/871/1587113-40.mp4/playlist.m3u8')
-		list.append('&custom4=http://62.90.90.56/walla_vod/_definst_/mp4:media/015/871/1587119-40.mp4/playlist.m3u8')
-	addDir(addonString(10725).encode('utf-8'),list,17,'https://i.ytimg.com/vi/a-W-ieHFz8c/hqdefault.jpg',addonString(107250).encode('utf-8'),'1',0,fanart)
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%96%d7%9e%d7%9f%20%d7%9c%d7%96%d7%95%d7%96&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2696342')
+	addDir(addonString(10725).encode('utf-8'),list,17,thumb,addonString(107250).encode('utf-8'),'1',0,fanart)
+	
+	'''וונדה והחייזר'''
+	thumb = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492578-46.jpg'
+	fanart = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492578-46.jpg'
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%95%d7%95%d7%a0%d7%93%d7%94%20%d7%95%d7%94%d7%97%d7%99%d7%99%d7%96%d7%a8&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2854550')
+	
+	addDir('וונדה והחייזר',list,17,thumb,"",'1',0,fanart)
+	
+	'''וונדר פטס'''
+	thumb = 'https://img.wcdn.co.il/f_auto,w_200/2/4/9/2/2492579-46.jpg'
+	fanart = 'https://img.wcdn.co.il/f_auto,w_200/2/4/9/2/2492579-46.jpg'
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%95%d7%95%d7%a0%d7%93%d7%a8%20%d7%a4%d7%98%d7%a1&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f1724550')
+	addDir(addonString(10741).encode('utf-8'),list,17,thumb,addonString(107410).encode('utf-8'),'1',0,fanart)
 	
 	'''ויקי וג'וני'''
 	thumb = ''
@@ -3630,16 +3653,26 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	addDir(addonString(10726).encode('utf-8'),list,17,'https://i.ytimg.com/vi/fPnWeHeSxjw/mqdefault.jpg',addonString(107260).encode('utf-8'),'1',0,fanart)
 	
 	'''זאק וקוואק'''
-	thumb = ''
-	fanart = ''
+	thumb = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492580-46.jpg'
+	fanart = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492580-46.jpg'
 	list = []
 	if 'Hebrew' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%95%d7%95%d7%a0%d7%93%d7%a8%20%d7%a4%d7%98%d7%a1&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f1724550')
 		list.append('&youtube_pl=PL_8KXLhQVQMJM70o-LA7S6ufWVvLCJF9m')
 		
-	addDir('זאק וקוואק',list,17,'http://1.bp.blogspot.com/-UKBOMDSV9oI/U2IL5sBgVFI/AAAAAAAAQgI/iz9wB1kvkz0/s1600/Zack&Quck.jpg','','1',0,fanart)
+	addDir('זאק וקוואק',list,17,thumb,'','1',0,fanart)
+	
+	'''זהבית ופזית'''
+	thumb = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492581-46.jpg'
+	fanart = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492581-46.jpg'
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%96%d7%94%d7%91%d7%99%d7%aa%20%d7%95%d7%a4%d7%96%d7%99%d7%aa&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2920425')
+		
+	addDir(addonString(10743).encode('utf-8'),list,17,thumb,addonString(107430).encode('utf-8'),'1',0,fanart)
 	
 	'''חבורת 7ג'''
-	thumb = ''
+	thumb = 'http://www.disney.co.il/disney-channel/sites/default/files/local_territories/il-IL/hero_slides/il_7D_brs_gbl_1.png'
 	fanart = 'http://img3.wikia.nocookie.net/__cb20140709082318/disney/images/a/a4/The_7D.png'
 	list = []
 	if 'Hebrew' in General_LanguageL:
@@ -3648,10 +3681,22 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLe-Na2ky4G0AeFESccRuVngVs5dF7HtDe')
 				
-	addDir(addonString(10738).encode('utf-8'),list,17,'http://www.disney.co.il/disney-channel/sites/default/files/local_territories/il-IL/hero_slides/il_7D_brs_gbl_1.png',addonString(107380).encode('utf-8'),'1',0,fanart)
+	addDir(addonString(10738).encode('utf-8'),list,17,thumb,addonString(107380).encode('utf-8'),'1',0,fanart)
+	
+	'''חבורת הגופים'''
+	thumb = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492583-46.jpg'
+	fanart = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492583-46.jpg'
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%97%d7%91%d7%95%d7%a8%d7%aa%20%d7%94%d7%92%d7%95%d7%a4%d7%99%d7%9d&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2518204')
+	
+	if 'English' in General_LanguageL:
+		pass
+				
+	addDir(addonString(10753).encode('utf-8'),list,17,thumb,addonString(107530).encode('utf-8'),'1',0,fanart)
 	
 	'''חבורת החצר'''
-	thumb = ''
+	thumb = 'https://i.ytimg.com/vi/LXhoQcLeyt0/mqdefault.jpg'
 	fanart = 'https://i.ytimg.com/vi/jOYv12AcqMA/maxresdefault.jpg'
 	list = []
 	if 'Hebrew' in General_LanguageL:
@@ -3660,7 +3705,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	if 'English' in General_LanguageL:
 		list.append('&youtube_pl=PLYpg2jvVNY-PfH6fm_Erv0aIn-BPhnL5x&index')
 				
-	addDir(addonString(10739).encode('utf-8'),list,17,'https://i.ytimg.com/vi/LXhoQcLeyt0/mqdefault.jpg',addonString(107390).encode('utf-8'),'1',0,fanart)
+	addDir(addonString(10739).encode('utf-8'),list,17,thumb,addonString(107390).encode('utf-8'),'1',0,fanart)
 	
 	'''טימותי הולך לבית הספר'''
 	list = []
@@ -3684,6 +3729,17 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	list.append('&youtube_id=_vb2lCx36bA')
 	
 	addDir(addonString(10732).encode('utf-8'),list,17,'http://blog.tapuz.co.il/drrd/images/662689_1158.jpg',addonString(107320).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://ichef.bbci.co.uk/childrens-responsive-ichef/r/720/1x/cbeebies/cbeebies-timmytime-img-timmytimegroup_432_243.jpg", default=background2))
+	
+	'''טל והטלטלים'''
+	thumb = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492585-46.jpg'
+	fanart = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492585-46.jpg'
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%98%d7%9c%20%d7%95%d7%94%d7%aa%d7%9c%d7%aa%d7%9c%d7%99%d7%9d&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2947159')
+	if 'English' in General_LanguageL:
+		pass
+				
+	addDir(addonString(10754).encode('utf-8'),list,17,thumb,addonString(107540).encode('utf-8'),'1',0,fanart)
 	
 	'''טלטאביז'''
 	thumb = ''
@@ -3762,15 +3818,14 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	addDir('יובל המבולבל',list,17,'http://images1.ynet.co.il/PicServer3/2013/05/29/4652192/3977474099288408529no.jpg',addonString(107310).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://www.ashdodnet.com/dyncontent/t_post/2012/7/24/26370203843604787436.jpg", default=background2))
 	
 	'''יצירה בקצרה'''
-	thumb = ''
-	fanart = ''
+	thumb = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492588-46.jpg'
+	fanart = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492588-46.jpg'
 	list = []
 	if 'Hebrew' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%99%d7%a6%d7%99%d7%a8%d7%94%20%d7%91%d7%a7%d7%a6%d7%a8%d7%94&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2656308')
 		list.append('&youtube_pl=PLPWc8VdaIIsC0SPM0_dgOVIDn5vcCH8Ti')
 		list.append('&youtube_pl=PLPWc8VdaIIsD85fRihIJFTzwt9v_JX2t6')
-		list.append('&custom4=http://62.90.90.56/walla_vod/_definst_/mp4:media/015/233/1523392-40.mp4/playlist.m3u8')
-		list.append('&custom4=http://62.90.90.56/walla_vod/_definst_/mp4:media/015/242/1524273-40.mp4/playlist.m3u8')
-	addDir('יצירה בקצרה',list,17,'http://msc.wcdn.co.il/archive/1475513-5.jpg',addonString(107340).encode('utf-8'),'1',0,fanart)
+	addDir('יצירה בקצרה',list,17,thumb,addonString(107340).encode('utf-8'),'1',0,fanart)
 	
 	'''כח הקצב'''
 	thumb = 'http://www.yap.co.il/prdPics/257_desc3_3_2_1341484277.jpg'
@@ -3787,7 +3842,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	fanart = 'http://thetvdb.com/banners/fanart/original/74697-1.jpg'
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%ee%e2%ec%e9%ed%20%f2%ed%20%e3%e5%f8%e4&url=http%3a%2f%2fnickjr.walla.co.il%2f%3fw%3d%2f%2f1688309')
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%9e%d7%92%d7%9c%d7%99%d7%9d%20%d7%a2%d7%9d%20%d7%93%d7%95%d7%a8%d7%94&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f1688309')
 		list.append('&custom8=plugin://plugin.video.sdarot.tv/?image=http%3a%2f%2fwww.sdarot.wf%2fmedia%2fseries%2f855.jpg&mode=5&name=%d7%a2%d7%95%d7%a0%d7%94%201&season_id=1&series_id=855&series_name=%d7%9e%d7%92%d7%9c%d7%99%d7%9d-%d7%a2%d7%9d-%d7%93%d7%95%d7%a8%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91-dora-the-explorer%2fseason%2f1&summary=%d7%93%d7%95%d7%a8%d7%94%20%d7%94%d7%99%d7%9c%d7%93%d7%94%20%d7%a9%d7%9e%d7%9c%d7%9e%d7%93%d7%aa%20%d7%90%d7%95%d7%aa%d7%a0%d7%95%20%d7%90%d7%a0%d7%92%d7%9c%d7%99%d7%aa%20%d7%91%d7%a6%d7%95%d7%a8%d7%94%20%d7%a9%d7%9b%d7%99%d7%a3%20%d7%9c%d7%9c%d7%9e%d7%95%d7%93%20%d7%91%d7%94.&url=http%3a%2f%2fwww.sdarot.wf%2fwatch%2f855%2f%d7%9e%d7%92%d7%9c%d7%99%d7%9d-%d7%a2%d7%9d-%d7%93%d7%95%d7%a8%d7%94-%d7%9e%d7%93%d7%95%d7%91%d7%91-dora-the-explorer%2fseason%2f1')
 		
 	if 'English' in General_LanguageL:
@@ -3826,6 +3881,18 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		
 	addDir(addonString(10759).encode('utf-8'),list,17,'https://lumiere-a.akamaihd.net/v1/images/il_dj_props_miles_n_f4577f7d.png',addonString(107590).encode('utf-8'),'1',0,fanart)
 	
+	'''לה לה לופסי'''
+	thumb = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492590-46.jpg'
+	fanart = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492590-46.jpg'
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%9c%d7%94%20%d7%9c%d7%94%20%d7%9c%d7%95%d7%a4%d7%a1%d7%99&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2548392')
+		
+	if 'English' in General_LanguageL:
+		pass
+	
+	addDir(addonString(10758).encode('utf-8'),list,17,thumb,addonString(107580).encode('utf-8'),'1',0,fanart)
+	
 	'''לונטיק'''
 	thumb = 'https://yt3.ggpht.com/-PQGvx_HtSm0/AAAAAAAAAAI/AAAAAAAAAAA/zhHb-7-fKnk/s100-c-k-no/photo.jpg'
 	fanart = ''
@@ -3857,14 +3924,14 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	addDir(addonString(10744).encode('utf-8'),list,17,thumb,addonString(107440).encode('utf-8'),'1',0,fanart)
 	
 	'''מועדון המאפים הטובים'''
-	thumb = 'https://i.ytimg.com/vi/WyDNForq6b8/hqdefault.jpg'
-	fanart = ''
+	thumb = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492592-46.jpg'
+	fanart = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492592-46.jpg'
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%ee%f8%20%ec%ee%e4%20%e5%e2%e1%f8%fa%20%eb%eb%e4&url=http%3a%2f%2fnickjr.walla.co.il%2f%3fw%3d%2f%2f2743907')
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%9e%d7%95%d7%a2%d7%93%d7%95%d7%9f%20%d7%94%d7%9e%d7%90%d7%a4%d7%99%d7%9d%20%d7%94%d7%98%d7%95%d7%91%d7%99%d7%9d&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2690008')
 		list.append('&youtube_pl=PLPWc8VdaIIsDUd9awquJznDcL_aSyi00T')
 		list.append('&youtube_pl=PLPWc8VdaIIsCfrHCUj7XKDG_rvLwE9V-p')
-	addDir('מועדון המאפים הטובים',list,17,thumb,addonString(107450).encode('utf-8'),'1',"",fanart)
+	addDir('מועדון המאפים הטובים',list,17,thumb,"",'1',"",fanart)
 	
 	'''מיכל הקטנה'''
 	thumb = 'http://www.pashbar.co.il/pictures/show_big_0523173001376412565.jpg'
@@ -3873,6 +3940,14 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_pl=PLTNonj9ImqaKElCJ-4e8X_3BzXvzEYU_0')
 	addDir(addonString(10245).encode('utf-8'),list,17,thumb,addonString(102450).encode('utf-8'),'1',0,fanart)
+	
+	'''מיץ ושיר'''
+	thumb = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492594-46.jpg'
+	fanart = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492594-46.jpg'
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%9e%d7%99%d7%a5%20%d7%95%d7%a9%d7%99%d7%a8&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2918769')
+	addDir(addonString(10785).encode('utf-8'),list,17,thumb,addonString(107850).encode('utf-8'),'1',0,fanart)
 	
 	'''מיקי כוכבת הילדים'''
 	thumb = 'http://yt3.ggpht.com/-LQQaGMJh2g0/AAAAAAAAAAI/AAAAAAAAAAA/KebzcCn-y_Y/s88-c-k-no/photo.jpg'

@@ -984,7 +984,7 @@ def CATEGORIES107I(General_LanguageL, background, background2): #צוות אומ
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
-		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%e0%e5%ee%e9%20%e6%e5%ee%e9&url=http%3a%2f%2fnickjr.walla.co.il%2f%3fw%3d%2f%2f1744439')
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%90%d7%95%d7%9e%d7%99%20%d7%96%d7%95%d7%9e%d7%99&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f1744439')
 		list.append('&youtube_pl=')
 	'''אנגלית'''
 	if 'English' in General_LanguageL:

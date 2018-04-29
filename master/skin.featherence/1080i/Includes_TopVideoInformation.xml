@@ -6,8 +6,8 @@
 	  <include condition="!Skin.HasSetting(Performance)">Slide3</include>
 	  <include>Slide3f</include>
 	  <include>TopInformationSize01</include>
-	  
 	  <!--<visible>[[Window.IsVisible(DialogFullScreenInfo.xml) | Window.IsVisible(DialogFavourites.xml) |  Window.IsVisible(VideoOSD.xml) | Window.IsVisible(DialogSubtitles.xml)] + VideoPlayer.IsFullscreen + Player.Paused] | Window.IsVisible(DialogVideoInfo.xml) | [Window.IsVisible(Home.xml) + [Control.HasFocus(311) | Control.HasFocus(312) | String.IsEqual(Window(home).Property(Button.ID),97)]] | [$EXP[View57] | $EXP[View58]] + [Container.Content(Seasons) | Container.Content(Episodes) | [Window.IsVisible(CustomHomeCustomizer.xml) + Window.IsVisible(Custom1175.xml)] | !Skin.HasSetting(ShowTopVideoInformation)] | $EXP[View51] | $EXP[View50] | $EXP[View54] | $EXP[View59] | Control.IsVisible(11) | Control.IsVisible(50) | Control.IsVisible(56) | Control.IsVisible(450) | Window.IsVisible(MusicVisualisation.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(Custom1170.xml) + [String.IsEqual(Window(home).Property(TEMP),TopVideoInformationColor) | String.IsEqual(Window(home).Property(TEMP),TopVideoInformationFontColor)]</visible>-->
+	  <visible>!String.IsEmpty(Control.GetLabel(1108))</visible>
 	  <visible>!String.Contains(ListItem.Label,$LOCALIZE[33078]) + !String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Label,Next Page)</visible>
 	  <visible>!Window.IsVisible(Home.xml) + !Window.IsVisible(CustomHomeCustomizer.xml) + $EXP[NoDialogConfirm] | Window.IsVisible(Custom1173.xml) | Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(Home.xml) + $EXP[ContentsWidget] |  Window.IsVisible(DialogVideoInfo.xml) |  Window.IsVisible(VideoFullScreen.xml) | Window.IsVisible(DialogFullscreenInfo.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(MyWeather.xml) | String.Contains(ListItem.Label2,97) + !Skin.String(widget317) | String.IsEqual(ListItem.Label2,Skin.String(widget317))</visible>
 	  <visible>![ [$EXP[View57] |  $EXP[View58]] + Skin.HasSetting(ShowTopVideoInformation) | [Container.OnNext | Container.OnPrevious]] | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(VideoFullScreen.xml) | Window.IsVisible(DialogFullscreenInfo.xml)</visible>
@@ -872,7 +872,7 @@
 	<value condition="Window.IsVisible(SettingsSystemInfo.xml) + ControlGroup(100).HasFocus(97)">$LOCALIZE[13280]</value>
 	<value condition="Window.IsVisible(SettingsSystemInfo.xml) + ControlGroup(100).HasFocus(98)">$LOCALIZE[13281]</value>
 	<value condition="!String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
-	<value>...</value>
+	<!--<value>...</value>-->
   </variable>
   <variable name="TopVideoInformation9" description="תמונת פרק">
 	<value condition="Container.Content(Episodes) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
