@@ -34,7 +34,7 @@ def CATEGORIES():
 	list = []
 	se = 'motorcycles / cars drifting stunts' ; list.append('&name_=' + 'WoW!' + '&&youtube_se='+se)
 	se = 'CAR MOTORCYCLE RACE VS' ; list.append('&name_=' + 'addonString(30020)' + '&&youtube_se='+se)
-	addDir(addonString(30001).encode('utf-8'),list,17,thumb,'www.featherence.com','1',0, fanart)
+	addDir(addonString(30001).encode('utf-8'),list,17,thumb,'','1',0, fanart)
 	
 	'''Martial Arts'''
 	thumb = 'https://meetyourmartialartsinstructor.files.wordpress.com/2012/06/artes_marciais.jpg'
@@ -45,5 +45,5 @@ def CATEGORIES():
 	se = 'MMA FULL FIGHTS' ; list.append('&name_=' + 'MMA' + '&&youtube_se='+se + '&videoDuration=long&')
 	se = 'SUMO FULL FIGHTS' ; list.append('&name_=' + 'Sumo' + '&&youtube_se='+se + '&videoDuration=long&')
 	se = 'UFC FULL FIGHTS -PRESS CONFERENCE' ; list.append('&name_=' + 'UFC' + '&&youtube_se='+se + '&videoDuration=long&')
-	addDir(addonString(30003).encode('utf-8'),list,17,thumb,'www.featherence.com','1',0, fanart)
+	addDir(addonString(30003).encode('utf-8'),list,17,thumb,'','1',0, fanart)
 
