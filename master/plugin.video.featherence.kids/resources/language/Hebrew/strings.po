@@ -2945,8 +2945,8 @@ msgid "Smeshariki"
 msgstr "שמרסקי"
 
 msgctxt "#10788
-msgid ""
-msgstr ""
+msgid "ורדינון אמן הילדים"
+msgstr "ורדינון אמן הילדים"
 
 msgctxt "#10789
 msgid ""

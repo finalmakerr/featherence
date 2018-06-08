@@ -13,6 +13,7 @@ def CATEGORIES109B(General_LanguageL, background, background2): # לימוד ש�
 	'''עברית'''
 	list = []
 	if 'Hebrew' in General_LanguageL or 1 + 1 == 2:
+		list.append('&youtube_pl=PLNwr4tkwkcyLWT5v2tSGlU0Kr5L1K14wh') #לימוד אותיות ורדינון אמן הילדים
 		list.append('&youtube_pl=PLMtuxpU4MU-v9oDKLI3shidKa7cN9Nx0o')
 		list.append('&youtube_ch=23language/playlists') #ערוץ חינוכית שפות
 		

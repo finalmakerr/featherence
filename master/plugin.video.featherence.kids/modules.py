@@ -3652,6 +3652,15 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	
 	addDir(addonString(10726).encode('utf-8'),list,17,'https://i.ytimg.com/vi/fPnWeHeSxjw/mqdefault.jpg',addonString(107260).encode('utf-8'),'1',0,fanart)
 	
+	'''ורדינון אמן הילדים'''
+	thumb = 'http://www.myfirsthomepage.co.il/mfhp/image/tv/vardinon.jpg'
+	fanart = 'https://i.ytimg.com/vi/9YVBM63Lr00/maxresdefault.jpg'
+	list = []
+	if 'Hebrew' in General_LanguageL:
+		list.append('&youtube_ch=UC5ZXek-PKBbys-xIt1FliMQ')
+	
+	addDir(addonString(10788).encode('utf-8'),list,17,thumb,addonString(107880).encode('utf-8'),'1',0,fanart)
+	
 	'''זאק וקוואק'''
 	thumb = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492580-46.jpg'
 	fanart = 'http://img.wcdn.co.il/f_auto,w_200,t_41/2/4/9/2/2492580-46.jpg'
