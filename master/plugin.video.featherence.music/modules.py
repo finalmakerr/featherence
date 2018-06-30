@@ -28,25 +28,25 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 	addDir(addonString_servicefeatherence(32156).encode('utf-8'),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',0,getAddonFanart(background))
 	
 	'''רשימת השמעה 1'''
-	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',0,getAddonFanart("Custom_Playlist1"))
+	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',50,Custom_Playlist1_Fanart)
 	'''רשימת השמעה 2'''
-	if Custom_Playlist2_ID != "": addDir(Custom_Playlist2_Name,Custom_Playlist2_ID,18,Custom_Playlist2_Thumb,Custom_Playlist2_Description,'2',0,getAddonFanart("Custom_Playlist2"))
+	if Custom_Playlist2_ID != "": addDir(Custom_Playlist2_Name,Custom_Playlist2_ID,18,Custom_Playlist2_Thumb,Custom_Playlist2_Description,'2',50,Custom_Playlist2_Fanart)
 	'''רשימת השמעה 3'''
-	if Custom_Playlist3_ID != "": addDir(Custom_Playlist3_Name,Custom_Playlist3_ID,18,Custom_Playlist3_Thumb,Custom_Playlist3_Description,'3',0,getAddonFanart("Custom_Playlist3"))
+	if Custom_Playlist3_ID != "": addDir(Custom_Playlist3_Name,Custom_Playlist3_ID,18,Custom_Playlist3_Thumb,Custom_Playlist3_Description,'3',50,Custom_Playlist3_Fanart)
 	'''רשימת השמעה 4'''
-	if Custom_Playlist4_ID != "": addDir(Custom_Playlist4_Name,Custom_Playlist4_ID,18,Custom_Playlist4_Thumb,Custom_Playlist4_Description,'4',0,getAddonFanart("Custom_Playlist4"))
+	if Custom_Playlist4_ID != "": addDir(Custom_Playlist4_Name,Custom_Playlist4_ID,18,Custom_Playlist4_Thumb,Custom_Playlist4_Description,'4',50,Custom_Playlist4_Fanart)
 	'''רשימת השמעה 5'''
-	if Custom_Playlist5_ID != "": addDir(Custom_Playlist5_Name,Custom_Playlist5_ID,18,Custom_Playlist5_Thumb,Custom_Playlist5_Description,'5',0,getAddonFanart("Custom_Playlist5"))
+	if Custom_Playlist5_ID != "": addDir(Custom_Playlist5_Name,Custom_Playlist5_ID,18,Custom_Playlist5_Thumb,Custom_Playlist5_Description,'5',50,Custom_Playlist5_Fanart)
 	'''רשימת השמעה 6'''
-	if Custom_Playlist6_ID != "": addDir(Custom_Playlist6_Name,Custom_Playlist6_ID,18,Custom_Playlist6_Thumb,Custom_Playlist6_Description,'6',0,getAddonFanart("Custom_Playlist6"))
+	if Custom_Playlist6_ID != "": addDir(Custom_Playlist6_Name,Custom_Playlist6_ID,18,Custom_Playlist6_Thumb,Custom_Playlist6_Description,'6',50,Custom_Playlist6_Fanart)
 	'''רשימת השמעה 7'''
-	if Custom_Playlist7_ID != "": addDir(Custom_Playlist7_Name,Custom_Playlist7_ID,18,Custom_Playlist7_Thumb,Custom_Playlist7_Description,'7',0,getAddonFanart("Custom_Playlist7"))
+	if Custom_Playlist7_ID != "": addDir(Custom_Playlist7_Name,Custom_Playlist7_ID,18,Custom_Playlist7_Thumb,Custom_Playlist7_Description,'7',50,Custom_Playlist7_Fanart)
 	'''רשימת השמעה 8'''
-	if Custom_Playlist8_ID != "": addDir(Custom_Playlist8_Name,Custom_Playlist8_ID,18,Custom_Playlist8_Thumb,Custom_Playlist8_Description,'8',0,getAddonFanart("Custom_Playlist8"))
+	if Custom_Playlist8_ID != "": addDir(Custom_Playlist8_Name,Custom_Playlist8_ID,18,Custom_Playlist8_Thumb,Custom_Playlist8_Description,'8',50,Custom_Playlist8_Fanart)
 	'''רשימת השמעה 9'''
-	if Custom_Playlist9_ID != "": addDir(Custom_Playlist9_Name,Custom_Playlist9_ID,18,Custom_Playlist9_Thumb,Custom_Playlist9_Description,'9',0,getAddonFanart("Custom_Playlist9"))
+	if Custom_Playlist9_ID != "": addDir(Custom_Playlist9_Name,Custom_Playlist9_ID,18,Custom_Playlist9_Thumb,Custom_Playlist9_Description,'9',50,Custom_Playlist9_Fanart)
 	'''רשימת השמעה 10'''
-	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',0,getAddonFanart("Custom_Playlist10"))
+	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',50,Custom_Playlist10_Fanart)
 	
 	if Custom_10001 == "true" and 1 + 1 == 3: addDir(addonString(30050).encode('utf-8'),'',10001,featherenceserviceicons_path + 'star.png',addonString(30051).encode('utf-8'),'1',0,'') #AMIR ELGAZAR PLAYLISTS
 	if Custom_10002 == "true":

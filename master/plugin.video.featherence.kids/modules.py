@@ -51,25 +51,25 @@ def CATEGORIES100(name, iconimage, desc, fanart):
 	addDir(addonString_servicefeatherence(32156).encode('utf-8'),"New",20,featherenceserviceicons_path + 'clipboard.png',addonString_servicefeatherence(32451).encode('utf-8') + addonString_servicefeatherence(32452).encode('utf-8') + addonString_servicefeatherence(32453).encode('utf-8'),'s',50, getAddonFanart(fanart))
 		
 	'''רשימת השמעה 1'''
-	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',0,getAddonFanart("Custom_Playlist1"))
+	if Custom_Playlist1_ID != "": addDir(Custom_Playlist1_Name,Custom_Playlist1_ID,18,Custom_Playlist1_Thumb,Custom_Playlist1_Description,'1',50,Custom_Playlist1_Fanart)
 	'''רשימת השמעה 2'''
-	if Custom_Playlist2_ID != "": addDir(Custom_Playlist2_Name,Custom_Playlist2_ID,18,Custom_Playlist2_Thumb,Custom_Playlist2_Description,'2',50, getAddonFanart("Custom_Playlist2"))
+	if Custom_Playlist2_ID != "": addDir(Custom_Playlist2_Name,Custom_Playlist2_ID,18,Custom_Playlist2_Thumb,Custom_Playlist2_Description,'2',50,Custom_Playlist2_Fanart)
 	'''רשימת השמעה 3'''
-	if Custom_Playlist3_ID != "": addDir(Custom_Playlist3_Name,Custom_Playlist3_ID,18,Custom_Playlist3_Thumb,Custom_Playlist3_Description,'3',50, getAddonFanart("Custom_Playlist3"))
+	if Custom_Playlist3_ID != "": addDir(Custom_Playlist3_Name,Custom_Playlist3_ID,18,Custom_Playlist3_Thumb,Custom_Playlist3_Description,'3',50,Custom_Playlist3_Fanart)
 	'''רשימת השמעה 4'''
-	if Custom_Playlist4_ID != "": addDir(Custom_Playlist4_Name,Custom_Playlist4_ID,18,Custom_Playlist4_Thumb,Custom_Playlist4_Description,'4',50, getAddonFanart("Custom_Playlist4"))
+	if Custom_Playlist4_ID != "": addDir(Custom_Playlist4_Name,Custom_Playlist4_ID,18,Custom_Playlist4_Thumb,Custom_Playlist4_Description,'4',50,Custom_Playlist4_Fanart)
 	'''רשימת השמעה 5'''
-	if Custom_Playlist5_ID != "": addDir(Custom_Playlist5_Name,Custom_Playlist5_ID,18,Custom_Playlist5_Thumb,Custom_Playlist5_Description,'5',50, getAddonFanart("Custom_Playlist5"))
+	if Custom_Playlist5_ID != "": addDir(Custom_Playlist5_Name,Custom_Playlist5_ID,18,Custom_Playlist5_Thumb,Custom_Playlist5_Description,'5',50,Custom_Playlist5_Fanart)
 	'''רשימת השמעה 6'''
-	if Custom_Playlist6_ID != "": addDir(Custom_Playlist6_Name,Custom_Playlist6_ID,18,Custom_Playlist6_Thumb,Custom_Playlist6_Description,'6',50, getAddonFanart("Custom_Playlist6"))
+	if Custom_Playlist6_ID != "": addDir(Custom_Playlist6_Name,Custom_Playlist6_ID,18,Custom_Playlist6_Thumb,Custom_Playlist6_Description,'6',50,Custom_Playlist6_Fanart)
 	'''רשימת השמעה 7'''
-	if Custom_Playlist7_ID != "": addDir(Custom_Playlist7_Name,Custom_Playlist7_ID,18,Custom_Playlist7_Thumb,Custom_Playlist7_Description,'7',50, getAddonFanart("Custom_Playlist7"))
+	if Custom_Playlist7_ID != "": addDir(Custom_Playlist7_Name,Custom_Playlist7_ID,18,Custom_Playlist7_Thumb,Custom_Playlist7_Description,'7',50,Custom_Playlist7_Fanart)
 	'''רשימת השמעה 8'''
-	if Custom_Playlist8_ID != "": addDir(Custom_Playlist8_Name,Custom_Playlist8_ID,18,Custom_Playlist8_Thumb,Custom_Playlist8_Description,'8',50, getAddonFanart("Custom_Playlist8"))
+	if Custom_Playlist8_ID != "": addDir(Custom_Playlist8_Name,Custom_Playlist8_ID,18,Custom_Playlist8_Thumb,Custom_Playlist8_Description,'8',50,Custom_Playlist8_Fanart)
 	'''רשימת השמעה 9'''
-	if Custom_Playlist9_ID != "": addDir(Custom_Playlist9_Name,Custom_Playlist9_ID,18,Custom_Playlist9_Thumb,Custom_Playlist9_Description,'9',50, getAddonFanart("Custom_Playlist9"))
+	if Custom_Playlist9_ID != "": addDir(Custom_Playlist9_Name,Custom_Playlist9_ID,18,Custom_Playlist9_Thumb,Custom_Playlist9_Description,'9',50,Custom_Playlist9_Fanart)
 	'''רשימת השמעה 10'''
-	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',50, getAddonFanart("Custom_Playlist10"))
+	if Custom_Playlist10_ID != "": addDir(Custom_Playlist10_Name,Custom_Playlist10_ID,18,Custom_Playlist10_Thumb,Custom_Playlist10_Description,'10',50,Custom_Playlist10_Fanart)
 	
 	'''test'''
 	exe = printlog(title="test", printpoint="", text="", level=0, option="")
@@ -243,7 +243,8 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	fanart = ''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&youtube_id=Cmd0VxJmmBA')
+		list.append('&youtube_id=')
+		#list.append('&youtube_id=Cmd0VxJmmBA')
 	addDir(addonString(10204).encode('utf-8'),list,5,thumb,addonString(102040).encode('utf-8'),'1',0,fanart)
 	
 	'''אלאדין'''
@@ -333,7 +334,7 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	fanart = ''
 	list = []
 	if 'English' in General_LanguageL:
-		list.append('&youtube_id=W3RgLlrjiHE')
+		pass
 	addDir(addonString(10530).encode('utf-8'),list,5,'https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Beautybeastposter.jpg/220px-Beautybeastposter.jpg',addonString(105300).encode('utf-8'),'1',0,fanart)
 	
 	'''היפיפייה הנרדמת'''
@@ -341,7 +342,7 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	fanart = ''
 	list = []
 	if 'English' in General_LanguageL:
-		list.append('&youtube_id=-EmYTTjzUbg') #English
+		pass
 	addDir(addonString(10531).encode('utf-8'),list,5,'https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Sleeping_beauty_disney.jpg/220px-Sleeping_beauty_disney.jpg',addonString(105310).encode('utf-8'),'1',0,fanart)
 	
 	'''המכבים'''
@@ -349,7 +350,6 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	fanart = ''
 	list = []
 	if 'Hebrew' in General_LanguageL:
-		list.append('&youtube_id=LFoX4vn6Obg')
 		list.append('&youtube_id=WnR0EuLWSOo')
 	addDir(addonString(10225).encode('utf-8'),list,5,'http://www.ideals.co.il/wp-content/uploads/2015/02/nas3.jpg',addonString(102250).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/NUXjR_WIJfQ/maxresdefault.jpg"))
 	
@@ -363,7 +363,6 @@ def CATEGORIES102(name, iconimage, desc, fanart):
 	if 'English' in General_LanguageL:
 		list.append('&youtube_id=xkYnLdqrORE') #English
 		list.append('&youtube_id=TMoIGToMI-4') #English
-		list.append('&youtube_id=LRHTlRQhuTo') #Wizard Of Oz
 		list.append('&youtube_id=TnyoyDxm-Fs') #Wizard of Oz
 		
 	addDir(addonString(10431).encode('utf-8'),list,17,thumb,addonString(104310).encode('utf-8'),'1',0,fanart)
@@ -4340,15 +4339,12 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 		list.append('&youtube_pl=PLsDVVvjmKAxEeSD3K7wybKJ42BbZc5JlJ') #תומס הקטר
 		
 		list.append('&youtube_id=FrUVIyhhhkQ')
-		list.append('&youtube_id=5wko2ncDqmo')
 	if 'English' in General_LanguageL:
 		list.append('&custom8=plugin://plugin.video.bobbycart/?description=http%3A%2F%2Fthetvdb.com%2Fbanners%2Ffanart%2Foriginal%2F78949-8.jpg&iconimage=http%3A%2F%2Fthetvdb.com%2Fbanners%2F_cache%2Fposters%2F78949-3.jpg&mode=2&name=%5BB%5D%5BCOLOR%20white%5DThomas%20the%20Tank%20Engine%20%26%20Friends%5B%2FCOLOR%5D%5B%2FB%5D&url=http%3A%2F%2Fwww.toonget.net%2Fthomas-the-tank-engine-friends')
 		list.append('&youtube_pl=PLI2i4PrLia3gAAYjMaVbAwdt1xrOsUaXS')
 	
 	if 'Japanese' in General_LanguageL:
 		list.append('&youtube_pl=PLwGUVOoN_pI3QbBFmTHQ76uYtVS7c4yF9')
-		list.append('&youtube_id=mhwasuXjMKg') #תומס הקטר
-		list.append('&youtube_id=-r8U7pwvU8E') #תומס הקטר
 		
 	if 'Portuguese' in General_LanguageL:
 		list.append('&youtube_pl=') #תומס הקטר

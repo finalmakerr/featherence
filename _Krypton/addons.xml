@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.featherence" version="0.7.13" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.7.14" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.12.0"/>
 	<import addon="script.featherence.service" version="0.2.14"/>
