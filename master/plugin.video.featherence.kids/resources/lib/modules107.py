@@ -2293,8 +2293,8 @@ def CATEGORIES107P(General_LanguageL, background, background2): #סימסאלה 
 
 def CATEGORIES107Q(General_LanguageL, background, background2): #רובו אוטו פולי
 	'''קטנטנים'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://ae01.alicdn.com/kf/HTB1Q_29IpXXXXckXpXXq6xXFXXXJ/4pcs-Set-Robocar-Poli-Robot-Car-Transformation-Toys-Action-Anime-Figure-Kids-Toys-Gifts.jpg'
+	fanart = 'https://i.ytimg.com/vi/DE09Q2rcybs/maxresdefault.jpg'
 	list = []
 	
 	'''עברית'''
@@ -2449,7 +2449,7 @@ def CATEGORIES107Q(General_LanguageL, background, background2): #רובו אוט
 	if 'Thai' in General_LanguageL:
 		list.append('&youtube_pl=')
 	
-	addDir(addonString(10736).encode('utf-8'),list,17,'http://vignette1.wikia.nocookie.net/robotsupremacy/images/5/59/Poli.jpg/revision/latest?cb=20150722015429',addonString(107360).encode('utf-8'),'1',0,getAddonFanart(background, custom="https://i.ytimg.com/vi/3FWijEthPu0/maxresdefault.jpg", default=background2))
+	addDir(addonString(10736).encode('utf-8'),list,17,thumb,addonString(107360).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 
 def CATEGORIES107R(General_LanguageL, background, background2): #מטוסי על
 	'''קטנטנים'''

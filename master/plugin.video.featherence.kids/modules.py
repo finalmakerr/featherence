@@ -3784,17 +3784,16 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	addDir(addonString(10729).encode('utf-8'),list,17,'http://ia.media-imdb.com/images/M/MV5BMjE3MDcyMjcxN15BMl5BanBnXkFtZTYwNDQzNTQ5._V1_UX182_CR0,0,182,268_AL_.jpg',addonString(107290).encode('utf-8'),'1',0,fanart)
 	
 	'''טום הטרקטור*'''
-	thumb = ''
-	fanart = ''
+	thumb = 'https://i.ytimg.com/vi/M0o7XHPxKeE/maxresdefault.jpg'
+	fanart = 'https://i.ytimg.com/vi/M0o7XHPxKeE/maxresdefault.jpg'
 	list = []
 	if 'Hebrew' in General_LanguageL:
 		list.append('&youtube_pl=')
 		list.append('&youtube_pl=')
 		list.append('&youtube_id=')
 	if 'English' in General_LanguageL:
-		list.append('&youtube_pl=PLdAOY_vKneiD-zz9puRKNW9G5_EVehxN0') #S1
-		list.append('&youtube_pl=PLdAOY_vKneiBrNRt-9m0-jkLhqMtwLQ3V') #S2
-		list.append('&youtube_id=')
+		list.append('&youtube_id=RSkO-UDe0yg')
+		list.append('&youtube_id=Q28RkBLRnF0')
 
 	if 'Dutch' in General_LanguageL:
 		list.append('&youtube_pl=PL7888E4250CBA46CA') #טום הטרקטור
@@ -3813,7 +3812,7 @@ def CATEGORIES107(name, iconimage, desc, fanart):
 	if 'Spanish' in General_LanguageL:
 		list.append('&youtube_pl=') #טום הטרקטור
 	
-	addDir(addonString(10733).encode('utf-8'),list,17,'http://img3.wikia.nocookie.net/__cb20140514190239/traktor-tom/da/images/f/fa/Tractor_Tom.jpg',addonString(107330).encode('utf-8'),'1',0,getAddonFanart(background, custom="http://www.pohadkar.cz/public/media/Traktor_Tom/obrazky/tractor-tom-1.jpg", default=background2))
+	addDir(addonString(10733).encode('utf-8'),list,17,thumb,addonString(107330).encode('utf-8'),'1',0,getAddonFanart(background, custom=fanart, default=background2))
 	
 	'''יובל המבולבל'''
 	thumb = ''
