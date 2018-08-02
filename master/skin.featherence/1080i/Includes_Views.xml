@@ -147,6 +147,21 @@
 	  <height>40</height>
 	  <label>$VAR[VideoInformation1]</label>
 	  <visible>[Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [String.IsEmpty(ListItem.Icon) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Thumb)]</visible>
+	  <visible>!String.Contains(Container.FolderPath,plugin.video.quasar/torrents/)</visible>
+	</control>
+	<control type="textbox" description="שם טורנטים">
+	  <posx>10</posx>
+	  <font>size18</font>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos47</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR1</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL1</include>
+	  <wrapmultiline>true</wrapmultiline>
+	  <scroll>false</scroll>
+	  <posy>-4</posy>
+	  <width>430</width>
+	  <height>72</height>
+	  <label>$VAR[VideoInformation1]</label>
+	  <visible>String.Contains(Container.FolderPath,plugin.video.quasar/torrents/)</visible>
 	</control>
 	<control type="label" description="שם עם תמונה מוגדלת">
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos47</include>
@@ -159,6 +174,7 @@
 	  <label>$VAR[VideoInformation1]</label>
 	  <visible>!Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus)</visible>
 	  <visible>[!String.IsEmpty(ListItem.Icon) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Thumb)] | String.IsEqual(Control.GetLabel(13055),DefaultFolderBack.png)</visible>
+	  <visible>!String.Contains(Container.FolderPath,plugin.video.quasar/torrents/)</visible>
 	</control>
 	<control type="label" id="13055">
 	  <visible>false</visible>
@@ -238,6 +254,21 @@
 		  <wrapmultiline>true</wrapmultiline>
 	  </control>
 	</control>
+	<control type="textbox" description="שם טורנטים">
+	  <posx>10</posx>
+	  <textcolor>yellow</textcolor>
+	  <font>size18</font>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos47</include>
+	  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR1</include>
+	  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL1</include>
+	  <wrapmultiline>true</wrapmultiline>
+	  <scroll>true</scroll>
+	  <posy>-4</posy>
+	  <width>430</width>
+	  <height>72</height>
+	  <label>$VAR[VideoInformation1]</label>
+	  <visible>String.Contains(Container.FolderPath,plugin.video.quasar/torrents/)</visible>
+	</control>
 	<control type="label" description="שם">
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos47</include>
 	  <include condition="String.IsEqual(System.Language,Hebrew)">LabelR1</include>
@@ -249,6 +280,7 @@
 	  <height>40</height>
 	  <label>$VAR[VideoInformation1]</label>
 	  <visible>[Skin.HasSetting(View50_BiggerIcon) | Skin.HasSetting(View50_Plus)] | [String.IsEmpty(ListItem.Icon) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Thumb)]</visible>
+	  <visible>!String.Contains(Container.FolderPath,plugin.video.quasar/torrents/)</visible>
 	</control>
 	<control type="label" description="שם עם תמונה מוגדלת">
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos47</include>
@@ -262,6 +294,7 @@
 	  <label>$VAR[VideoInformation1]</label>
 	  <visible>!Skin.HasSetting(View50_BiggerIcon) + !Skin.HasSetting(View50_Plus)</visible>
 	  <visible>[!String.IsEmpty(ListItem.Icon) | !String.IsEmpty(ListItem.Art(poster)) | !String.IsEmpty(ListItem.Thumb)] | String.IsEqual(Control.GetLabel(13055),DefaultFolderBack.png)</visible>
+	  <visible>!String.Contains(Container.FolderPath,plugin.video.quasar/torrents/)</visible>
 	</control>
 	<include condition="Skin.HasSetting(Performance) | Skin.HasSetting(Genre)">View50_Genre</include>
 	<control type="grouplist" description="תמונת סגנון">
@@ -355,6 +388,7 @@
 	  <texture background="true">$VAR[VideoInformation2]</texture>
 	  <visible>[!String.Contains(ListItem.path,videodb://movies/sets/)] | String.IsEmpty(ListItem.Genre)</visible>
 	  <visible>Skin.HasSetting(View50_BiggerIcon)</visible>
+	  <visible>!String.Contains(Container.FolderPath,plugin.video.quasar/torrents/)</visible>
 	</control>
 	<control type="image" description="תמונה מוגדלת">
 	  <include>BorderFrame</include>
@@ -367,7 +401,7 @@
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">ImageL2</include>
 	  <texture background="true">$VAR[VideoInformation2]</texture>
 	  <visible>!String.Contains(ListItem.path,videodb://movies/sets/) | String.IsEmpty(ListItem.Genre)</visible>
-	  <visible>!Skin.HasSetting(View50_BiggerIcon)</visible>
+	  <visible>!Skin.HasSetting(View50_BiggerIcon) + !String.Contains(Container.FolderPath,plugin.video.quasar/torrents/)</visible>
 	</control>
 	<control type="label" description="שעות/דקות/עונות">
 	  <include condition="String.IsEqual(System.Language,Hebrew)">Control_Pos37</include>
