@@ -256,7 +256,8 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	'''אייל גולן'''
 	thumb = 'http://www.atzuma.co.il/uploaded/13112175e8e2be3e53e7dc74153479b3a0c726.jpg'
 	fanart = 'http://eco99fm.maariv.co.il/download/pictures/Show_245_4506.jpg'
-	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	
+	list = [] ; se = '"addonString(30103)' + space + 'addonString(30027)"' + space + 'EyalGolanOfficial' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30103)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list3 = [] ; se = '"addonString(30103)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&')
 	addDir(addonString(30103).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30203).encode('utf-8'),'1',0,fanart)
