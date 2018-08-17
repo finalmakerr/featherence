@@ -337,12 +337,23 @@
 	<onclick condition="Player.HasVideo">Fullscreen</onclick>
   </include>
   <variable name="background">
-    <value condition="!Skin.HasSetting(EpisodeFanart) + !String.IsEmpty(ListItem.Thumb) + [Container.Content(seasons) | Container.Content(episodes)] + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Season)">$INFO[ListItem.Thumb]</value>
+    <!--New 17.08 -->
+	
+	<value condition="!Skin.HasSetting(EpisodeFanart) + !String.IsEmpty(ListItem.Thumb) + [Container.Content(seasons) | Container.Content(episodes)] + !String.IsEmpty(ListItem.Episode) + !String.IsEmpty(ListItem.Season)">$INFO[ListItem.Thumb]</value>
+	
 	<value condition="!String.IsEmpty(ListItem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
 	<value condition="!String.IsEmpty(Fanart.Image)">$INFO[Fanart.Image]</value>
     <value condition="!String.IsEmpty(ListItem.Art(fanart)) + !Skin.String(ListItem.Art(fanart),)">$INFO[ListItem.Art(fanart)]</value>
 	<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-	<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+	<value condition="!String.IsEmpty(Container.Art(tvshow.fanart))">$INFO[Container.Art(tvshow.fanart)]</value>
+	<value condition="!String.IsEmpty(Container.Art(artist.fanart))">$INFO[Container.Art(artist.fanart)]</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31011])] + !String.IsEmpty(Container(50).ListItem.Art(fanart))">$INFO[Container(50).ListItem.Art(fanart)]</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31010])] + !String.IsEmpty(Container(51).ListItem.Art(fanart))">$INFO[Container(51).ListItem.Art(fanart)]</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31015])] + !String.IsEmpty(Container(54).ListItem.Art(fanart))">$INFO[Container(54).ListItem.Art(fanart)]</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31012])] + !String.IsEmpty(Container(56).ListItem.Art(fanart))">$INFO[Container(56).ListItem.Art(fanart)]</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31013])] + !String.IsEmpty(Container(57).ListItem.Art(fanart))">$INFO[Container(57).ListItem.Art(fanart)]</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31014])] + !String.IsEmpty(Container(58).ListItem.Art(fanart))">$INFO[Container(58).ListItem.Art(fanart)]</value>
+	<value condition="[String.IsEqual(Container.Viewmode,$LOCALIZE[31016])] + !String.IsEmpty(Container(59).ListItem.Art(fanart))">$INFO[Container(59).ListItem.Art(fanart)]</value>
 	<value condition="Window.IsVisible(MyPics.xml) + !String.IsEmpty(ListItem.FilenameAndPath) + String.Contains(ListItem.FilenameAndPath,.)">$INFO[ListItem.FilenameAndPath]</value>
 	
     <value condition="Skin.HasSetting(SubBackground) + String.IsEqual(Window(home).Property(SubButton.ID_),90_100) + !String.IsEmpty(Skin.String(background90_100))">$INFO[Skin.String(background90_100)]</value>

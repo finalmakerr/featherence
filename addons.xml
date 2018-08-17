@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="emulator.retroarch" name="Featherence Emu Console - OpenELEC" version="1.0.8" provider-name="zaggash, finalmakerr">
+<addon id="emulator.retroarch" name="Featherence Emu Console - OpenELEC" version="1.0.9" provider-name="zaggash, finalmakerr">
   <requires>
     <import addon="os.openelec.tv" version="3.2" optional="true"/>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -86,7 +86,7 @@
   </extension>
 </addon>
 
-<addon id="emulator.retroarch_win64" name="Featherence Emu Console - Windows x64" version="1.0.1" provider-name="finalmakerr">
+<addon id="emulator.retroarch_win64" name="Featherence Emu Console - Windows x64" version="1.0.2" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.python" version="2.24.0"/>
   </requires>
@@ -127,7 +127,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.1.12" provider-name="finalmakerr, Angelscry">
+<addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.1.13" provider-name="finalmakerr, Angelscry">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
     <import addon="script.module.simplejson" version="2.0.9" optional="true"/>

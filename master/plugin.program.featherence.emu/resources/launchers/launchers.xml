@@ -18908,21 +18908,6 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>d39a1e79ra1ba6713ec1769cbd3f4010</id>
-					<name>Putt-Putt Joins the Parade</name>
-					<filename>rom_pathDOS/_EN/Putt-Putt Joins the Parade/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Putt-Putt Joins the Parade.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Putt-Putt Joins the Parade.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Adventure / Puzzle </genre>
-					<release>1992</release>
-					<publisher>Infogrames</publisher>
-					<gameplot>What does it take to be in a parade? [CR]Hard work, a bright shiny chassis and a little help from your friends. That's what Putt-Putt® discovers as he gears up to join the annual Cartown Pet Parade. Children will be delighted as they meet the local carfolk, explore a toy shop, tool down the road and more. Along the way, they learn to think ahead, deal with unexpected problems, and give others a hand. The road to discovery has never been more fun - or more educational. Charming talking characters, lively sound effects and lifelike animation keep your child focused on the adventure.</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
 					<id>d39a1e79ra1ba6713ec1769cbd3f4011</id>
 					<name>Puzznic</name>
 					<filename>rom_pathDOS/_EN/Puzznic/GO.BAT</filename>
@@ -19575,6 +19560,21 @@
 					<release>1993</release>
 					<publisher>מטח</publisher>
 					<gameplot>"בונוס" הוא בעצם משחק שבץ נא בגירסה ישראלית ממוחשבת. המשחק ב"בונוס" כולל אופציה לשחק מול המחשב או מול שחקן אחר.[CR]בנוסף לכללים הרגילים של כל משחק שבץ-נא, "בונוס" כולל גם מספר אפשרויות ייחודיות. למשל, במהלך המשחק יש אפשרות ל"שאליתא" - כדי לברר אם קיימת מילה מסוימת. בנוסף, אם שיבצתם מילה שהמחשב לא קיבל, תוכלו לערער ולחייב אותו לקבל את המילה.[CR]בצידי הלוח קיימות מספר משבצות צבעוניות שכאשר משבצים עליהן מילה יש אפשרות זכייה בבונוסים בדמות 100 נקודות, 40 נקודות או אפילו נקודה (בנימוק הלא משכנע של "דין פרוטה כדין מאה"). לפעמים הבונוסים באים רק בתנאי שאתם פותרים חידה קטנה, מה שהופך את המשחק למאתגר יותר.[CR]כמובן שניתן לשמור משחקים באמצע ולחזור אליהם לאחר זמן. "בונוס" מתוכנת לשמור, בנוסך לכך, את המשחק האחרון ששוחק. משחק מומלץ לאוהבי משחקי חשיבה או לכאלו שמעוניינים להעשיר את אוצר המילים שלהם. ועוד משהו: שימו לב לטבלת האלופים...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769cbd3f4010</id>
+					<name>Putt-Putt Joins the Parade</name>
+					<filename>rom_pathDOS/_HE/Putt-Putt Joins the Parade/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Putt-Putt Joins the Parade.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Putt-Putt Joins the Parade.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure / Puzzle </genre>
+					<release>1992</release>
+					<publisher>Infogrames</publisher>
+					<gameplot>What does it take to be in a parade? [CR]Hard work, a bright shiny chassis and a little help from your friends. That's what Putt-Putt® discovers as he gears up to join the annual Cartown Pet Parade. Children will be delighted as they meet the local carfolk, explore a toy shop, tool down the road and more. Along the way, they learn to think ahead, deal with unexpected problems, and give others a hand. The road to discovery has never been more fun - or more educational. Charming talking characters, lively sound effects and lifelike animation keep your child focused on the adventure.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
