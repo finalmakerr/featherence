@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="3.5.3" provider-name="Sdarot">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.xbmcswift2" version="2.4.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+		<import addon="repository.sdarot" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="sdarottv.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Sdarot.Tv video contents.</summary>
+        <summary lang="he">סדרות מתוך האתר Sdarot.Tv</summary>
+        <description lang="en">Sdarot is a site that deals with direct viewing of various series from Israel and abroad. All series are on site contain subtitles, Israeli series also has translation sometimes. sdarot lets watch thousands of different series and tens of thousands of different episodes free! The site sdarot Updated on a daily base and allows direct viewing of innovative technologies while ensuring maximum quality without compromise.</description>
+        <description lang="he">סדרות הינו אתר העוסק בצפייה ישירה של סדרות שונות מהארץ ומחו"ל. כל הסדרות מח"ול הנמצאות באתר סדרות מכילות תרגום לעברית, גם בסדרות הישראליות יש תרגום לעתים. אתר סדרות מאפשר צפייה ישירה חינם לאלפי סדרות שונות ועשרות אלפי פרקים שונים בחינם! אתר סדרות מתעדכן על בסיס יומי ומאפשר צפייה ישירה בטכנולוגיות חדשניות תוך הקפדה על איכות מקסימלית ללא פשרות.</description>
+		<news>[B]Version 2.5.3[/B]
+- Change to a new domain.</news>
+        <supportedcontent>
+        <content>tvshows</content>
+        </supportedcontent>
+    </extension>
+</addon>
