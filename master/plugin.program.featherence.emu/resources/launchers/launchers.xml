@@ -20966,5 +20966,45 @@
 				</rom>
 			</roms>
 		</launcher>
+		<launcher>
+			<id>Featherence_win95_HE</id>
+			<name>WIN95 HE</name>
+			<category>Featherence_win95</category>
+			<application>emulator_file</application>
+			<args>lib_args_dos_args "%rom%"</args>
+			<rompath>rom_pathWIN95/_HE/</rompath>
+			<thumbpath>rom_pathWIN95/_HE/_Artwork/boxfront/</thumbpath>
+			<fanartpath>rom_pathWIN95/_HE/_Artwork/screenshot/</fanartpath>
+			<trailerpath>rom_pathWIN95/_HE/_Artwork/gameplay(video)/</trailerpath>
+			<custompath></custompath>
+			<romext>bat</romext>
+			<platform>WIN95</platform>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/1P.png</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<release></release>
+			<publisher></publisher>
+			<launcherplot></launcherplot>
+			<finished>false</finished>
+			<minimize>false</minimize>
+			<lnk></lnk>
+			<roms>
+				<rom>
+					<id>d39a1e21xa1ba6711bc1769zbd3f4021</id>
+					<name>Hugo on the Train‎‎</name>
+					<filename>rom_pathDOS/_HE/Hugo on the Train/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Hugo on the Train.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Hugo on the Train.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Platform / Action</genre>
+					<release>1998</release>
+					<publisher>ITE</publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+			</roms>
+		</launcher>
 	</launchers>
 </advanced_launcher>

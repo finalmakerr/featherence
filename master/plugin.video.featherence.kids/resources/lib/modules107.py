@@ -984,7 +984,7 @@ def CATEGORIES107I(General_LanguageL, background, background2): #צוות אומ
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
-		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%90%d7%95%d7%9e%d7%99%20%d7%96%d7%95%d7%9e%d7%99&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f1744439')
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%a8%d7%95%d7%91%d7%95%20%d7%90%d7%95%d7%98%d7%95%20%d7%a4%d7%95%d7%9c%d7%99&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2688025')
 		list.append('&youtube_pl=')
 	'''אנגלית'''
 	if 'English' in General_LanguageL:
@@ -1641,7 +1641,7 @@ def CATEGORIES107M(General_LanguageL, background, background2): #קוסמות ק
 	
 	'''עברית'''
 	if 'Hebrew' in General_LanguageL:
-		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%f7%e5%f1%ee%e5%fa%20%f7%e8%f0%e5%fa&url=http%3a%2f%2fnickjr.walla.co.il%2f%3fw%3d%2f%2f2868088')
+		list.append('&custom8=plugin://plugin.video.wallaNew.video/?mode=2&module=nickjr&name=%d7%a7%d7%95%d7%a1%d7%9e%d7%95%d7%aa%20%d7%a7%d7%98%d7%a0%d7%95%d7%aa&url=http%3a%2f%2fnickjr.walla.co.il%2ftvshow%2f2868088')
 		list.append('&youtube_pl=')
 	'''אנגלית'''
 	if 'English' in General_LanguageL:

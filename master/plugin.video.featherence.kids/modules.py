@@ -2900,10 +2900,9 @@ def CATEGORIES105(name, iconimage, desc, fanart):
 	background2 = "" #http://4.bp.blogspot.com/-Af2HcIQzlg8/UhwQ8lKPucI/AAAAAAAACIA/d7aY4RrxUfk/s1600/bambi-friends-disney-animated-movie-photo.jpg"
 	
 	CATEGORIES_RANDOM(background,fanart) #אקראי
-	CATEGORIES105Z(General_LanguageL, background, background2) #ערוצי טלוויזיה
 	CATEGORIES105B(General_LanguageL, background, background2) #סרטים לילדים ב-
 	CATEGORIES105C(General_LanguageL, background, background2) #סרטים עם תרגום ב-
-	CATEGORIES105A(General_LanguageL, background, background2) #עמוד הבא סרטים
+	#CATEGORIES105A(General_LanguageL, background, background2) #עמוד הבא סרטים
 	
 def CATEGORIES106(name, iconimage, desc, fanart):
 	'''לפעוטות'''

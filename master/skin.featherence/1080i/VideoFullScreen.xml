@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol>-</defaultcontrol>
-  <!--<onload condition="String.IsEmpty(Window(home).Property(VideoPlayer.Info))">AlarmClock(info,Action(Info),00:02,silent)</onload>
-  <onload condition="String.IsEmpty(Window(home).Property(VideoPlayer.Info))">SetProperty(VideoPlayer.Info, true, home)</onload>-->
-  <onload condition="String.IsEmpty(Window(home).Property(mode10)) + !Pvr.IsPlayingTv + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !String.IsEqual(VideoPlayer.Title,featherence_.mp4) + !String.IsEqual(Window(home).Property(TEMP),startup)">RunScript(script.featherence.service,,?mode=10)</onload>
-  <!--<onload condition="String.IsEqual(VideoPlayer.Title,featherence_.mp4)">AlarmClock(featherence_,Action(Stop),00:01,silent)</onload>
-  <onload condition="String.IsEqual(VideoPlayer.Title,featherence_.mp4)">AlarmClock(featherence__,ReloadSkin(),00:01,silent)</onload>-->
+  <!--<onload condition="String.IsEmpty(Window(home).Property(mode10)) + !Pvr.IsPlayingTv + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !String.IsEqual(VideoPlayer.Title,featherence_.mp4) + !String.IsEqual(Window(home).Property(TEMP),startup)">RunScript(script.featherence.service,,?mode=10)</onload>-->
   <controls>
       <control type="grouplist" id="0">
         <posx>40</posx>

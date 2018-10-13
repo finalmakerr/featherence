@@ -3,6 +3,7 @@
   <requires>
     <import addon="os.openelec.tv" version="3.2" optional="true"/>
 	<import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.featherence.emu" version="1.1.6"/>
   </requires>
   <extension point="xbmc.python.script"
              library="default.py">

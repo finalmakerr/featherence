@@ -47,8 +47,8 @@
       <button id="15" description="B button (down)">Select</button>
       <button id="14" description="A button (right)"></button>
 	  <button id="13" description="X button (top)">ContextMenu</button>
-      <button id="12" description="R button (shoulder)">FastForward</button>
-	  <button id="11" description="L button (shoulder)">Rewind</button>
+      <button id="12" description="R button (shoulder)">noop</button>
+	  <button id="11" description="L button (shoulder)">noop</button>
       <button id="10" description="R2 button (trigger)">VolumeUp</button>
       <button id="9" description="L2 button (trigger)">VolumeDown</button>	  
       <button id="8" description="Left D-pad">Left</button>
@@ -57,7 +57,7 @@
       <button id="5" description="Up D-pad">Up</button>	  
       <button id="4" description="Start button">OSD</button>
       <button id="3" description="R3 button (thumb)">Mute</button>
-	  <button id="2" description="L3 button (thumb)">CodecInfo</button>
+	  <button id="2" description="L3 button (thumb)">Info</button>
 	  <button id="1" description="Select button">FullScreen</button>
 	  
 	  <axis limit="-1" id="1" rest="0" description="L Left">noop</axis>
@@ -104,15 +104,17 @@
 	  <button id="15" description="B button (down)">OSD</button>	  
 	  <button id="14" description="A button (right)">ShowSubtitles</button>
 	  <button id="13" description="X button (top)">OSD</button>
-	  <button id="12" description="R button (shoulder)">FastForward</button>
-	  <button id="11" description="L button (shoulder)">Rewind</button>
+	  <button id="12" description="R button (shoulder)">noop</button>
+	  <button id="11" description="L button (shoulder)">noop</button>
 	  <button id="4" description="Start button">Pause</button>
       <button id="8" description="Left D-pad">StepBack</button>      
 	  <button id="7" description="Down D-pad">BigStepBack</button>	  
 	  <button id="6" description="Right D-pad">StepForward</button>
       <button id="5" description="Up D-pad">BigStepForward</button>
+	  <button id="10" description="R2 button (trigger)">VolumeUp</button>
+      <button id="9" description="L2 button (trigger)">VolumeDown</button>	  
 	  <button id="3" description="R3 button (thumb)">Mute</button>
-	  <button id="2" description="L3 button (thumb)">CodecInfo</button>
+	  <button id="2" description="L3 button (thumb)">Info</button>
 	  <button id="1" description="Select button">FullScreen</button>
 	  <!-- ignore other buttons (mapped to axes) -->
 	  <axis id="13" rest="-32768" description="L2 button (shoulder)">noop</axis>

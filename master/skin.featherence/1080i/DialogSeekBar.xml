@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<visible>[Window.IsVisible(VideoOSD.xml) | Window.IsActive(fullscreeninfo) | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + VideoPlayer.IsFullscreen</visible>
-	<visible>!Window.IsVisible(DialogSubtitles.xml) + !Window.IsVisible(MusicOSD.xml)</visible>
+	<visible>Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Player.ShowInfo | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(playerprocessinfo) | !IsEmpty(Player.SeekNumeric)</visible>
+	<visible>!Window.IsActive(sliderdialog)</visible>
 	<depth>DepthOSD</depth>
 	<zorder>0</zorder>
 	<controls>

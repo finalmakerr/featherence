@@ -76,16 +76,16 @@
       <down>ChapterOrBigStepBack</down>
       <right>StepForward</right>
       <left>StepBack</left>
-      <leftthumb>ShowSubtitles</leftthumb>
-      <rightthumb>AspectRatio</rightthumb>
-      <lefttrigger>AnalogRewind</lefttrigger>
-      <righttrigger>AnalogFastForward</righttrigger>
+      <leftthumb>Action(CodecInfo)</leftthumb>
+      <rightthumb>Action(Mute)</rightthumb>
+      <lefttrigger></lefttrigger>
+      <righttrigger>AspectRatio</righttrigger>
       <leftbumper>Action(VolumeDown)</leftbumper>
       <rightbumper>Action(VolumeUp)</rightbumper>
-      <leftstickleft>AnalogSeekBack</leftstickleft>
-      <leftstickright>AnalogSeekForward</leftstickright>
-      <leftstickup>SubtitleDelayPlus</leftstickup>
-      <leftstickdown>SubtitleDelayMinus</leftstickdown>
+      <leftstickleft>ShowSubtitles</leftstickleft>
+      <leftstickright>noop</leftstickright>
+      <leftstickup>noop</leftstickup>
+      <leftstickdown>noop</leftstickdown>
       <rightstickleft>noop</rightstickleft>
       <rightstickright>noop</rightstickright>
       <rightstickup>noop</rightstickup>

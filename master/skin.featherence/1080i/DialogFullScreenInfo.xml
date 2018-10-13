@@ -2,8 +2,17 @@
 <window>
   <visible>!Window.IsVisible(VideoOSD.xml) + !Window.IsVisible(DialogSubtitles.xml) + Player.Paused</visible>
   <visible>!Window.IsVisible(DialogPlayerProcessInfo.xml)</visible>
+  <defaultcontrol always="true">5553</defaultcontrol>
   <controls>
 	<include>TopVideoInformation</include>
-	
+	<control type="button" id="5553">
+		<width>auto</width>
+		<height>100</height>
+		<posx>10000</posx>
+		<posy>10000</posy>
+		<textoffsetx>80</textoffsetx>
+		<label>$LOCALIZE[207]</label>
+		<!--<onclick>Dialog.Close(fullscreeninfo)</onclick>-->
+	</control>
   </controls>
 </window>

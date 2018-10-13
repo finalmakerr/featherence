@@ -240,7 +240,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	'''אביתר בנאי'''
 	thumb = 'http://images.mouse.co.il/storage/7/f/eviatar-ggg.jpg'
 	fanart = ''
-	list = [] ; se = '"addonString(30101)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list = [] ; se = '"addonString(30101)' + space + 'addonString(30027)"' + space + 'EviatarBanaiOfficial' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30101)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list3 = [] ; se = '"addonString(30101)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&')
 	addDir(addonString(30101).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30201).encode('utf-8'),'1',0,fanart)
@@ -248,7 +248,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	'''אברהם טל'''
 	thumb = 'http://images.mouse.co.il/storage/a/d/Avraham_Tal_490.jpg'
 	fanart = ''
-	list = [] ; se = '"addonString(30102)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list = [] ; se = '"addonString(30102)' + space + 'addonString(30027)"' + space + 'avrahamtal' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30102)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list3 = [] ; se = '"addonString(30102)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDefinition=high&')
 	addDir(addonString(30102).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30202).encode('utf-8'),'1',0,fanart)
@@ -265,7 +265,7 @@ def CATEGORIES101(name, iconimage, desc, fanart):
 	'''אתניקס'''
 	thumb = 'http://img.mako.co.il/2013/05/21/etnix_prn_c.jpg'
 	fanart = ''
-	list = [] ; se = '"addonString(30105)' + space + 'addonString(30027)"' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
+	list = [] ; se = '"addonString(30105)' + space + 'addonString(30027)"' + space + 'EthnixOfficial' ; list.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list2 = [] ; se = '"addonString(30105)' + space + 'addonString(30028)"' ; list2.append('&youtube_se=' + se + '&videoDefinition=high&')
 	list3 = [] ; se = '"addonString(30105)' + space + 'addonString(30026)"' ; list3.append('&youtube_se=' + se + '&videoDuration=long&&videoDefinition=high&&maxResults=5&')
 	addDir(addonString(30105).encode('utf-8'),{ 'Karaoke': list2, 'Liveshows': list3, 'Songs': list },17,thumb,addonString(30205).encode('utf-8'),'1',0,fanart)
