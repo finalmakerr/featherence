@@ -16999,6 +16999,21 @@
 			<lnk></lnk>
 			<roms>
 				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp12101</id>
+					<name>Batman - Dark Tomorrow</name>
+					<filename>rom_pathGameCube/_1P/Batman - Dark Tomorrow.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Batman - Dark Tomorrow.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Batman - Dark Tomorrow.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>2003</release>
+					<publisher>Kemco</publisher>
+					<gameplot>Batman, the Dark Knight detective of Gotham City, is back in an all-new adventure. In Batman: Dark Tomorrow, it's up to Batman to solve the mystery and save the day. The legendary Caped Crusader must use all his mental and physical skills, batglider capabilities, devices from his utility belt, and sleuthing prowess to fight crime and defeat enemies. You must battle both new and familiar enemies, including Mr. Freeze, Poison Ivy, and the Joker. But in some missions, stealth is just as important as brute force.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10001</id>
 					<name>Beyond Good And Evil</name>
 					<filename>rom_pathGameCube/_1P/Beyond Good And Evil.iso</filename>
@@ -17606,6 +17621,51 @@
 					<release>2002</release>
 					<publisher>Activision</publisher>
 					<gameplot>Wage an all-out assault as one of 16 fighters, each with the ability to transform mid-fight into their alternate Hpyer-beast life-form. Fight to the finish in 2-player head-to-head and single-player modes through 10 interactive and destructible mutli-level arenas. With fast and furious arena action-fighting has never looked this good or been this brutual.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed1af2p0000</id>
+					<name>Burnout</name>
+					<filename>rom_pathGameCube/_2P/Burnout.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Burnout.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Burnout.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>2002</release>
+					<publisher>Acclaim</publisher>
+					<gameplot>Burnout is a arcade style racing game in the mold of the Test Drive or Need For Speed series. In this game, you are racing on realistic streets with real traffic to contend with. There are 6 courses on which to race, 3 of which are reminiscent of Europe, and 3 from the USA. There are several vehicles to choose from, ranging from compact cars to pickups. However, they are not based on real makes and models. One notable feature of Burnout is the "Burn Meter." The Burn Meter is a gauge that is filled by performing reckless stunts, like racing into oncoming traffic, or power-drifting through corners. Once the Burn Meter is filled, your car gets a super speed boost.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed1af3p0000</id>
+					<name>Burnout 2 - Point of Impact</name>
+					<filename>rom_pathGameCube/_2P/Burnout 2 - Point of Impact.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Burnout 2 - Point of Impact.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Burnout 2 - Point of Impact.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>2003</release>
+					<publisher>Acclaim</publisher>
+					<gameplot>Burnout is a street racing game focused around speed and crashing. Unlike many games which focus on closed course driving, you get to drive through cities with real traffic and city infrastructure. Designers have built an entire city and surrounding areas, and implement the race courses throughput the countie's streets. As a result, many times certain parts of race-courses interlace with other parts of other races. As well, instead of encouraging strategic driving and safe driving, Burnout strongly encourages offensive driving. Driving on the wrong side of the road, barely missing passing traffic, drifting, and jumps all add to your boost "burnout" meter. Speed boosts and jumps aid your attempt to dive past buses, trucks and anything else that gets in the way. The more offensive and dangerous your driving is, the more boost you get!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed1af2p0000</id>
+					<name>Bust-A-Move 3000</name>
+					<filename>rom_pathGameCube/_2P/Bust-A-Move 3000.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Bust-A-Move 3000.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Bust-A-Move 3000.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Puzzle / Strategy</genre>
+					<release>2003</release>
+					<publisher>Activision</publisher>
+					<gameplot>Everybody's favorite bubble-bustin' puzzle game is in the house for the Nintendo GameCube! Launch your bubbles and pop as many as you can before they reach the deadline. Score high by matching 3 bubbles or more to trigger a chain reaction.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
