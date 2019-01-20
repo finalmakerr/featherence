@@ -73,11 +73,11 @@
 	<category label="30411" description="Audio Settings">
 		<setting label="Apply Settings" type="action" option="close" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%SET_CONFIG%%)"/>		
 		<setting type="lsep" label=""/>
-		<setting id="audio_driver" type="select" default="" values=" |alsa|alsathread|oss|openal|sdl" label="audio_driver" visible="true"/>
+		<setting id="audio_driver" type="select" default="alsathread" values=" |alsa|alsathread|oss|openal|sdl" label="audio_driver" visible="true"/>
 		<setting type="lsep" label="Audio volume. Volume is expressed in dB. 0 dB is normal volume. No gain will be applied. Gain can be controlled in runtime with input_volume_up/input_volume_down."/>
 		<setting id="audio_volume" type="slider" default="-27" range="-40,10" option="int" label="audio_volume" visible="true"/>
 		<setting type="lsep" label="Override the default audio device the audio_driver uses. This is driver dependant. E.g. ALSA wants a PCM device, OSS wants a path (e.g. /dev/dsp), Jack wants portnames (e.g. system:playback1,system:playback_2), and so on ..."/>
-		<setting id="audio_device" type="text" default="" label="audio_device" visible="true"/>
+		<setting id="audio_device" type="text" default="hw:0,3" label="audio_device" visible="true"/>
 		<setting type="lsep" label="Desired audio latency in milliseconds. Might not be honored if driver can't provide given latency."/>
 		<setting id="audio_latency" type="text" default="" label="audio_latency" visible="true"/>
 		<setting type="lsep" label="Audio output samplerate."/>

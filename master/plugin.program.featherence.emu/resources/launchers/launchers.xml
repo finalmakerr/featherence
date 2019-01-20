@@ -17044,6 +17044,36 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d2gcd81ea61668385a37ac78fp10002</id>
+					<name>Looney Tunes - Back in Action</name>
+					<filename>rom_pathGameCube/_1P/Looney Tunes - Back in Action.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Looney Tunes - Back in Action.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Looney Tunes - Back in Action.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Platform</genre>
+					<release>2003</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>Looney Tunes: Back in Action is a platforming video game released in 2003 by Electronic Arts. The game is based on the film of the same name.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ac78cp12002</id>
+					<name>Luigi's Mansion</name>
+					<filename>rom_pathGameCube/_1P/Luigi's Mansion.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Luigi's Mansion.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Luigi's Mansion.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure</genre>
+					<release>2001</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Luigi's Won a Mansion! The bad news is that it's crawling with ghosts... and Mario seems to be trapped inside... Luigi's in for a spooktacular surprise as he creeps into the pitch-dark mansion he won, armed with only a flashlight and a vacuum custom-made for sucking up ghosts. Ghosts lurk in every nook and cranny. You'll have to master the Poltergust 3000 to vacuum them all up! Jewels, coins and cash are hidden throughout the mansion-and finding it all will be worth your while... You'll have to solve the mansion's many mysteries to catch a gallery of quirky ghouls, such as the fire-belching Mr. Luggs. Deep inside the mansion hide elusive boss ghosts like Bogmire, each with ghastly powers and a ghostly bone to pick with Luigi! After collecting special medals, you'll be able to shoot fire, water, and ice from your vacuum to unearth secrets and thwart extra-eerie ghosts!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10003</id>
 					<name>SpongeBob SquarePants - Battle for Bikini Bottom</name>
 					<filename>rom_pathGameCube/_1P/SpongeBob SquarePants - Battle for Bikini Bottom.iso</filename>
@@ -18476,6 +18506,36 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d1bcd81ea61668385a37ed74f9c0024</id>
+					<name>Shrek Smash n' Crash Racing</name>
+					<filename>rom_pathGameCube/_4P/Shrek Smash n' Crash Racing.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Shrek Smash n' Crash Racing.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Shrek Smash n' Crash Racing.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>2006</release>
+					<publisher>Activision</publisher>
+					<gameplot>Shrek Smash n' Crash Racing is a racing game released in November 2006. The game is based on the Shrek movie series. Players have the option of playing one of twelve Shrek characters, using racing and combat skills to defeat other racers. It was released for the Game Boy Advance, Nintendo DS, Nintendo GameCube, PlayStation 2, and PlayStation Portable. Original music for the game was composed by Finn Robertson. This game is the last Shrek game released on the GameCube.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d1bcd81ea61668385a37ed78f4p0024</id>
+					<name>Worms 3D</name>
+					<filename>rom_pathGameCube/_4P/Worms 3D.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Worms 3D.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Worms 3D.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Strategy</genre>
+					<release>2004</release>
+					<publisher>Sega</publisher>
+					<gameplot>The gameplay itself hasn't changed much from its predecessors, with the exception of the three-dimensional view, which allows the player more freedom, and more possibilities, to complete the task at hand. Modes like Campaign and Quick Match return from previous versions. The game also features a multiplayer feature, as well as the ability to edit and create teams. The objective of most of the matches is to eliminate the opposing forces' worms, whereas the Campaign mode gives the player sets of specific goals which he needs to complete. The campaign consists of 35 small missions in which the player has to utilise their worms to complete a certain task, like destroy enemy worms, collect a certain crate, or even unique missions, like having to detonate 16 hidden landmines in a certain time. All of the missions give awards depending on how well you do. Gold medals usually unlock bonuses as for example maps, challenge missions, infos about weapons or voice banks. In the challenge missions in you have to use a weapon/utility to collect targets that add to your timebank which increases steadily. Getting a gold medal here unlocks maps or locked weapons.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0025</id>
 					<name>WWE WRESTLEMANIA 19</name>
 					<filename>rom_pathGameCube/_4P/WWE WRESTLEMANIA 19.iso</filename>
@@ -19208,40 +19268,40 @@
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769cbd3f4036</id>
-					<name></name>
-					<filename>rom_pathDOS/_EN/?/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/?.jpg</fanart>
+					<name>The Humans</name>
+					<filename>rom_pathDOS/_EN/The Humans/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/The Humans.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/The Humans.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
+					<genre>Puzzle</genre>
+					<release>1992</release>
+					<publisher>GameTek</publisher>
+					<gameplot>The Humans is an old dos game, published in 1992 by GameTek. Main genre of this old game is puzzle. We gave this game stunning rating of 64 and you can download it for free right here. When this game first came out, magazines celebrated it as a very good successor of pupalar game Lemmings. Even the distribution company declare this game wants to be more famous, than Lemmings series. As time has shown, they have ultimately failed, but still it is a very good puzzle game. Soo, what's this game about? It is about nice, stupid, greedy, but also kind-hearted creatures - people, or The Humans. The game begins in prehistory, where you start with a couple of people who do not have many abilities. The goal is to hammer out until present time. You have to lead people through various traps, find new tools, learn to use them and develop other skills. For example, when you find the spear, you have to learn how to jump into the distance, lit her shrub that stands in your way, or frighten away a dinosaur that threaten you. Humans are, at the very beginning, of course, only barbarians and you have to lead them to learn something. During the game you will discover several inventions (such as the wheel, gunpowder, guns,...) which you must know how to use, so you may proceed to the next level. Difficulty increases with each level and even at level 10 the game is pretty difficult.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769cbd3f4037</id>
-					<name></name>
-					<filename>rom_pathDOS/_EN/?/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/?.jpg</fanart>
+					<name>7 Colors</name>
+					<filename>rom_pathDOS/_EN/7 Colors/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/7 Colors.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/7 Colors.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
+					<genre>Puzzle</genre>
+					<release>1991</release>
+					<publisher>Gamos</publisher>
+					<gameplot>7 Colors is a computer strategy game/puzzle game, designed by Dmitry Pashkov. It was developed by the Russian company Gamos in 1991. The game was published by Infogrames for MS-DOS, Amiga, and NEC PC-9801.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769cbd3f4038</id>
-					<name></name>
-					<filename>rom_pathDOS/_EN/?/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/?.jpg</fanart>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>?</genre>
@@ -19253,10 +19313,10 @@
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769cbd3f4039</id>
-					<name></name>
-					<filename>rom_pathDOS/_EN/?/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/?.jpg</fanart>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>?</genre>
@@ -19269,30 +19329,30 @@
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4004</id>
 					<name>Double Dragon 3</name>
-					<filename>rom_pathDOS/_HE/Double Dragon 3/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Double Dragon 3.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Double Dragon 3.jpg</fanart>
+					<filename>rom_pathDOS/_EN/Double Dragon 3/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Double Dragon 3.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Double Dragon 3.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Action</genre>
 					<release>1988</release>
-					<publisher>Arcadia Systems, Inc.</publisher>
-					<gameplot>Set in a post-apocalyptic New York, Double Dragon is the story of Billy and Jimmy Lee, twin brothers trained in the fighting style of Sou-Setsu-Ken. Together, they manage a small martial arts training school, teaching their students in self-defense. One day, Billy's girlfriend, Marian, is kidnapped off the street by the "Black Warriors", a savage street gang led by a man named Willy. The Black Warriors demand the Lee brothers disclose their martial arts secrets in exchange for Marian's freedom. The Lee brothers set out on a rescue mission to crush the Black Warriors and save Marian.[CR]Using whatever techniques they have at their disposal, from the basic punches and kicks to the invulnerable elbow strike, as well any weapon that comes into their hands, the Lee brothers must pursue the gang through the city slum, industrial area and the forest before reaching their hideout to confront the big boss, Willy.[CR]The NES version of this game also has an additional VS. fighting mode for one or two players. Players choose from a field of six different characters (Billy and 5 of the enemy characters) and enter into a one-on-one fighting match. Players have to punch, kick, jumpkick, and even use a weapon against their opponents until someone's health bar is fully drained. The winner is the last one standing.</gameplot>
+					<publisENr>Arcadia Systems, Inc.</publisENr>
+					<gameplot>Set in a post-apocalyptic New York, Double Dragon is tEN story of Billy and Jimmy Lee, twin brotENrs trained in tEN fighting style of Sou-Setsu-Ken. TogetENr, tENy manage a small martial arts training school, teaching tENir students in self-defense. One day, Billy's girlfriend, Marian, is kidnapped off tEN street by tEN "Black Warriors", a savage street gang led by a man named Willy. TEN Black Warriors demand tEN Lee brotENrs disclose tENir martial arts secrets in exchange for Marian's freedom. TEN Lee brotENrs set out on a rescue mission to crush tEN Black Warriors and save Marian.[CR]Using whatever techniques tENy have at tENir disposal, from tEN basic puncENs and kicks to tEN invulnerable elbow strike, as well any weapon that comes into tENir hands, tEN Lee brotENrs must pursue tEN gang through tEN city slum, industrial area and tEN forest before reaching tENir hideout to confront tEN big boss, Willy.[CR]TEN NES version of this game also has an additional VS. fighting mode for one or two players. Players choose from a field of six different characters (Billy and 5 of tEN enemy characters) and enter into a one-on-one fighting match. Players have to punch, kick, jumpkick, and even use a weapon against tENir opponents until someone's ENalth bar is fully drained. TEN winner is tEN last one standing.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4005</id>
 					<name>Tyrian 2000</name>
-					<filename>rom_pathDOS/_HE/Tyrian 2000/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Tyrian 2000.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Tyrian 2000.jpg</fanart>
+					<filename>rom_pathDOS/_EN/Tyrian 2000/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Tyrian 2000.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Tyrian 2000.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Shooter / Flying Vertical</genre>
 					<release>1985</release>
-					<publisher>Epic Games</publisher>
-					<gameplot>Tyrian is a scrolling shooter computer game developed by Eclipse Software and published in 1995 by Epic MegaGames.</gameplot>
+					<publisENr>Epic Games</publisENr>
+					<gameplot>Tyrian is a scrolling shooter computer game developed by Eclipse Software and publisENd in 1995 by Epic MegaGames.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
