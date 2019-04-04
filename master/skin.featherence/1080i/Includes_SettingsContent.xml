@@ -2313,6 +2313,15 @@
 		<onclick>Skin.ToggleSetting(Performance)</onclick>
 		<visible>Container(100).Hasfocus(4)</visible>
 	  </item>
+	  <item id="85" description="4K Resolution">
+		<label>$LOCALIZE[31871]</label>
+		<label2>$VAR[85label2]</label2>
+		<thumb>special://home/addons/script.featherence.service/resources/icons/q3r.png</thumb>
+		<property name="rinfo">$LOCALIZE[31872]</property>
+		<onclick>Skin.ToggleSetting(4K50)</onclick>
+		<onclick>RunScript(script.featherence.service,,?mode=84&amp;value=1)</onclick>
+		<visible>Container(100).Hasfocus(4)</visible>
+	  </item>
 	  
 	  <!--150-Add-in-200-->
 	  <!--<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=studiologos&amp;type=resource.images.studios)</onclick>-->

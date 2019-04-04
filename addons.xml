@@ -423,6 +423,29 @@
     </extension>
 </addon>
 
+	<addon id="plugin.video.wallaNew.video" name="וואלה" version="3.3.2" provider-name="sbentin, shlomico, nil">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="walla.py">
+			<provides>video</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<platform>all</platform>
+			<minversion>31632</minversion>
+			<summary lang="en">Watch Walla video contents.</summary>
+			<summary lang="he">צפה במידע VOD מאתר walla</summary>
+			<description lang="en">Watch Walla contents (inculde Yes, Nickoldeon and Viva).</description>
+			<description lang="he">צפה במגוון הסרטים ערוצים וסדרות הניתנים לצפיה דרך אתר video.walla.co.il</description>
+			<disclaimer>This addon parse Walla site, you should check Walla's TOS before you using. It's as is</disclaimer>
+			<supportedcontent>
+			  <content>tvshows</content>
+			  <content>episodes</content>
+			  <content>movies</content>
+			</supportedcontent>
+		</extension>
+	</addon>
+
 <addon id="plugin.video.youtube" name="YouTube" version="5.4.15" provider-name="jdf76, bromix">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -556,7 +579,7 @@
   </extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.4.12" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.4.14" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.24.0"/>

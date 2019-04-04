@@ -25,14 +25,9 @@
 	</category>
 
     <category label="$LOCALIZE[5]" description="Settings">
-		<setting type="lsep" label="Choose your OS manually." visible="System.Platform.Windows | System.Platform.Linux + !System.Platform.Android + !System.Platform.Linux.RaspberryPi"/>
-		<setting label="Windows Operation System" type="select" id="OS" default="" values=" |win64|win32" visible="System.Platform.Windows"/>
-		<setting label="OpenELEC Operation System" type="select" id="OS" default="" values=" |x86_64|i386" visible="System.Platform.Linux + !System.Platform.Android + !System.Platform.Linux.RaspberryPi"/>
 		<setting type="lsep" label="script.module.featherence.emu v$INFO[System.AddonVersion(script.module.featherence.emu)]"/>
-		<setting type="lsep" label="emulator.retroarch_win32 v$INFO[System.AddonVersion(emulator.retroarch_win32)]" visible="System.Platform.Windows + eq(-3,win32)"/>
-		<setting type="lsep" label="emulator.retroarch_win64 v$INFO[System.AddonVersion(emulator.retroarch_win64)]" visible="System.Platform.Windows + eq(-4,win64)"/>
-		<setting type="lsep" label="emulator.retroarch v$INFO[System.AddonVersion(emulator.retroarch)]" visible="System.Platform.Linux + !System.Platform.Android + !System.Platform.Linux.RaspberryPi + !eq(-5,i386)"/>
-		<setting type="lsep" label="emulator.retroarch_i386 v$INFO[System.AddonVersion(emulator.retroarch_i386)]" visible="System.Platform.Linux + !System.Platform.Android + !System.Platform.Linux.RaspberryPi + eq(-6,i386)"/>
+		<setting type="lsep" label="emulator.retroarch_win64 v$INFO[System.AddonVersion(emulator.retroarch_win64)]" visible="System.Platform.Windows"/>
+		<setting type="lsep" label="emulator.retroarch v$INFO[System.AddonVersion(emulator.retroarch)]" visible="System.Platform.Linux + !System.Platform.Android + !System.Platform.Linux.RaspberryPi"/>
 		
 		<setting label="Download OS Emulator" type="action" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%OS_INSTALL%%)"/>
 		<setting type="lsep" label="Use this option in order to create new data table for listing games information."/>

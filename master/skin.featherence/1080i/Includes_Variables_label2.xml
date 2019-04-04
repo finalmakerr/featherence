@@ -287,6 +287,10 @@
 	<value condition="!Skin.HasSetting(Performance)">$LOCALIZE[106]</value>
 	<value condition="Skin.HasSetting(Performance)">$LOCALIZE[107]</value>
   </variable>
+  <variable name="85label2">
+	<value condition="!Skin.HasSetting(4K50)">$LOCALIZE[106]</value>
+	<value condition="Skin.HasSetting(4K50)">$LOCALIZE[107]</value>
+  </variable>
   
   <variable name="150label2">
     <value description="resource.images.weathericons.flat" condition="!Skin.String(WeatherIcons)">$LOCALIZE[13278]</value>

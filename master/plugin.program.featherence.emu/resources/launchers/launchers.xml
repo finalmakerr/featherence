@@ -12198,10 +12198,10 @@
 				</rom>
 				<rom>
 					<id>d3ba8bb48800ac0cd011721656abd96f</id>
-					<name>Pacman World</name>
-					<filename>rom_pathSony Playstation/_1P/Pacman World/Pacman World.m3u</filename>
-					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Pacman World.jpg</thumb>
-					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Pacman World.jpg</fanart>
+					<name>Pac-Man World</name>
+					<filename>rom_pathSony Playstation/_1P/Pac-Man World/Pac-Man World.m3u</filename>
+					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Pac-Man World.jpg</thumb>
+					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Pac-Man World.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Platform</genre>
@@ -17015,10 +17015,10 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668335a37ed78fp12101</id>
-					<name>Paper Mario - The Thousand-Year Door</name>
-					<filename>rom_pathGameCube/_1P/Paper Mario - The Thousand-Year Door.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Paper Mario - The Thousand-Year Door.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Paper Mario - The Thousand-Year Door.jpg</fanart>
+					<name>Paper Mario - The Thousand Year Door</name>
+					<filename>rom_pathGameCube/_1P/Paper Mario - The Thousand Year Door.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Paper Mario - The Thousand Year Door.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Paper Mario - The Thousand Year Door.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Adventure / Role-Playing</genre>
@@ -17690,6 +17690,21 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37edw8f2p0055</id>
+					<name>Winnie the Pooh's Rumbly Tumbly Adventure</name>
+					<filename>rom_pathGameCube/_1P/Winnie the Pooh's Rumbly Tumbly Adventure.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Winnie the Pooh's Rumbly Tumbly Adventure.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Winnie the Pooh's Rumbly Tumbly Adventure.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure / Platform</genre>
+					<release>2005</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>Join Winnie the Pooh and his friends on five birthday-themed adventures. In Winnie the Pooh Rumbly Tumbly Adventures, you can play as Tigger, Piglet, Eeyore, and Winnie the Pooh. Find as many honey pots as you can, but beware of the mischievous Heffalumps and Woozles, who steal honey. Whether you're finding a new house for Eeyore or helping Tigger out of a sticky situation, you'll experience all the adventures of Pooh and his friends in the Hundred Acre Wood.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0055</id>
 					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
@@ -18181,16 +18196,16 @@
 				</rom>
 				<rom>
 					<id>7d2gcd811a61668385a37ed78f2p0016</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Disney Pixar Cars</name>
+					<filename>rom_pathGameCube/_2P/Disney Pixar Cars.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Disney Pixar Cars.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Disney Pixar Cars.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Racing</genre>
+					<release>2006</release>
+					<publisher>THQ</publisher>
+					<gameplot>Cars is a racing game, based on the movie of the same name, that allows the player to explore the world of Radiator Springs and surrounding areas in an open world mission-based structure. The story revolved around racing rookie Lightning McQueen, who wants to become a famous racer and compete in the Piston Cup, the equivalent of NASCAR races. You can roam freely, talk to other characters and accept race challenges to advance the story. There are over 20 Road Races to choose from in the Story Mode as well as 5 Piston Cup Races and additional mini-games. The player is awarded bonus points in the Story Mode that can be used to unlock bonus content material such as boost abilities, new racers (10 in total), new environments, and mini-games, such as an obstacle course or a military training event. The game also features an Arcade Menu that allows quick access to races unlocked from Story Mode as well as a VS. Mode where the player can compete head-to-head.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -18747,16 +18762,16 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0031</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Pokemon XD - Gale of Darkness</name>
+					<filename>rom_pathGameCube/_4P/Pokemon XD - Gale of Darkness.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Pokemon XD - Gale of Darkness.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Pokemon XD - Gale of Darkness.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Role-Playing</genre>
+					<release>2005</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Pokemon XD is a sequel to the role-playing game Pokémon Coliseum. You'll play as Michael, a Pokémon trainer who is trying to thwart the evil Cipher. Cipher plans to control the world by using the powerful, but unpredictable, shadow Pokémon. Now you must fight back by collecting your own shadow Pokémon and beating Cipher's goons in battle. Pokémon XD also lets you import Pokémon from Game Boy Advance Pokémon games and participate in head-to-head battles with other players.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>

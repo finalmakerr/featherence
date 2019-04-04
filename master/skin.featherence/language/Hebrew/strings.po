@@ -1835,6 +1835,14 @@ msgctxt "#31870"
 msgid "Choose an image file to appear on startup (Default is black screen with Please Wait message).[CR]You may want to sync your custom image with the video intro you're using!"
 msgstr "Choose an image file to appear on startup (Default is black screen with Please Wait message).[CR]You may want to sync your custom image with the video intro you're using!"
 
+msgctxt "#31871"
+msgid "4K 50FPS resolution"
+msgstr "4K 50FPS רזולוציית"
+
+msgctxt "#31872"
+msgid "Add new 4K resolution to Kodi."
+msgstr "Add new 4K resolution to Kodi."
+
 msgctxt "#31999"
 msgid ""
 msgstr ""

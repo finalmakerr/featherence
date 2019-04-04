@@ -318,6 +318,14 @@ elif mode == 70:
 	mode70(value, admin, name, printpoint, property_temp)
 	'''---------------------------'''
 
+elif mode == 84:
+	'''------------------------------
+	---4K50--------------------------
+	------------------------------'''
+	name = 'ExtendedInfo'
+	mode84(value, admin, name, printpoint)
+	'''---------------------------'''
+	
 elif mode >= 200 and mode <= 249:
 	'''------------------------------
 	---CustomHomeCustomizer-200-249--
