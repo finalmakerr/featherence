@@ -16972,6 +16972,21 @@
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
+				<rom>
+					<id>7d3b2d81ea61667385a37ed78fde0060</id>
+					<name>Monopoly Party</name>
+					<filename>rom_pathDreamcast/_4P/Monopoly Party/Monopoly Party.gdi</filename>
+					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Monopoly Party.jpg</thumb>
+					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Monopoly Party.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Strategy</genre>
+					<release>2002</release>
+					<publisher>Infogrames Entertainment</publisher>
+					<gameplot>The Monopoly Party game is the fastest way to discover what your friends are really like. It's an intense buying, trading, building, and deal-making frenzy because every player moves at the same time. Here's how it works: Everyone rolls a set of dice at the same time. As soon as everyone rolls, everyone moves. Just roll and go. Then do all of the things you love, such as buy property, pass "Go," and draw cards from "Community Chest." Play Monopoly Party and find out who will cut you a deal when the chips are down and who will bankrupt you out of the game.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
 			</roms>
 		</launcher>
 		
@@ -19147,21 +19162,6 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>d39a1e79ra1ba6713ec1769cbd3f4009</id>
-					<name>Putt-Putt Goes to the Moon</name>
-					<filename>rom_pathDOS/_EN/Putt-Putt Goes to the Moon/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Putt-Putt Goes to the Moon.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Putt-Putt Goes to the Moon.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Adventure / Puzzle </genre>
-					<release>1993</release>
-					<publisher>Infogrames</publisher>
-					<gameplot>Purple Car Lands on the Moon! [CR]Due to a freak accident at the Fireworks Factory, Putt-Putt is blasted to the moon. There he meets Rover, a lovely little lunar terrain vehicle left behind by the astronauts. Putt-Putt and Rover must work together to rebuild a rocket, and accomplish a few good deeds for the Moon People before they meet the Man in the Moon and are homeward bound. Putt-Putt Goes to the Moon teaches the benefit of cooperation and the lasting value of friendship.</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
 					<id>d39a1e79ra1ba6713ec1769cbd3f4011</id>
 					<name>Puzznic</name>
 					<filename>rom_pathDOS/_EN/Puzznic/GO.BAT</filename>
@@ -19829,6 +19829,21 @@
 					<release>1992</release>
 					<publisher>Infogrames</publisher>
 					<gameplot>What does it take to be in a parade? [CR]Hard work, a bright shiny chassis and a little help from your friends. That's what Putt-Putt® discovers as he gears up to join the annual Cartown Pet Parade. Children will be delighted as they meet the local carfolk, explore a toy shop, tool down the road and more. Along the way, they learn to think ahead, deal with unexpected problems, and give others a hand. The road to discovery has never been more fun - or more educational. Charming talking characters, lively sound effects and lifelike animation keep your child focused on the adventure.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769cbd3f4009</id>
+					<name>Putt-Putt Goes to the Moon</name>
+					<filename>rom_pathDOS/_HE/Putt-Putt Goes to the Moon/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Putt-Putt Goes to the Moon.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Putt-Putt Goes to the Moon.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure / Puzzle </genre>
+					<release>1993</release>
+					<publisher>Infogrames</publisher>
+					<gameplot>Purple Car Lands on the Moon! [CR]Due to a freak accident at the Fireworks Factory, Putt-Putt is blasted to the moon. There he meets Rover, a lovely little lunar terrain vehicle left behind by the astronauts. Putt-Putt and Rover must work together to rebuild a rocket, and accomplish a few good deeds for the Moon People before they meet the Man in the Moon and are homeward bound. Putt-Putt Goes to the Moon teaches the benefit of cooperation and the lasting value of friendship.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
