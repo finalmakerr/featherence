@@ -1,1 +1,2 @@
 retroarch.exe -v
+pause

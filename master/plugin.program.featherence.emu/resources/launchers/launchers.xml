@@ -9448,12 +9448,12 @@
 				</rom>
 				<rom>
 					<id>7590a5245e8c2091a4a26fe4c332c057</id>
-					<name>F-Zero X</name>
+					<name>XXXXX</name>
 					<filename>rom_pathNintendo 64/_4P/F-ZERO X.zip</filename>
 					<thumb>rom_pathNintendo 64/_4P/_Artwork/boxfront/F-ZERO X.jpg</thumb>
 					<fanart>rom_pathNintendo 64/_4P/_Artwork/screenshot/F-ZERO X.jpg</fanart>
 					<trailer></trailer>
-					<custom></custom>
+					<custom>NOT WORKING!</custom>
 					<genre>Driving</genre>
 					<release>1998</release>
 					<publisher>Nintendo</publisher>
@@ -16972,21 +16972,6 @@
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
-				<rom>
-					<id>7d3b2d81ea61667385a37ed78fde0060</id>
-					<name>Monopoly Party</name>
-					<filename>rom_pathDreamcast/_4P/Monopoly Party/Monopoly Party.gdi</filename>
-					<thumb>rom_pathDreamcast/_4P/_Artwork/boxfront/Monopoly Party.jpg</thumb>
-					<fanart>rom_pathDreamcast/_4P/_Artwork/screenshot/Monopoly Party.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Strategy</genre>
-					<release>2002</release>
-					<publisher>Infogrames Entertainment</publisher>
-					<gameplot>The Monopoly Party game is the fastest way to discover what your friends are really like. It's an intense buying, trading, building, and deal-making frenzy because every player moves at the same time. Here's how it works: Everyone rolls a set of dice at the same time. As soon as everyone rolls, everyone moves. Just roll and go. Then do all of the things you love, such as buy property, pass "Go," and draw cards from "Community Chest." Play Monopoly Party and find out who will cut you a deal when the chips are down and who will bankrupt you out of the game.</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
 			</roms>
 		</launcher>
 		
@@ -17046,7 +17031,7 @@
 				<rom>
 					<id>7d2gcd81ea61168385a37ed78fp12101</id>
 					<name>Resident Evil 4</name>
-					<filename>rom_pathGameCube/_1P/Resident Evil 4.iso</filename>
+					<filename>rom_pathGameCube/_1P/Resident Evil 4_cd1.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Resident Evil 4.jpg</thumb>
 					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Resident Evil 4.jpg</fanart>
 					<trailer></trailer>
@@ -17091,7 +17076,7 @@
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp12101</id>
 					<name>Metal Gear Solid - The Twin Snakes</name>
-					<filename>rom_pathGameCube/_1P/Metal Gear Solid - The Twin Snakes.iso</filename>
+					<filename>rom_pathGameCube/_1P/Metal Gear Solid - The Twin Snakes_cd1.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Metal Gear Solid - The Twin Snakes.jpg</thumb>
 					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Metal Gear Solid - The Twin Snakes.jpg</fanart>
 					<trailer></trailer>
@@ -17220,6 +17205,21 @@
 					<release>2003</release>
 					<publisher>Clover Studio</publisher>
 					<gameplot>Joe is no ordinary man and Viewtiful Joe is no ordinary game. Capcom's new superhero action game mixes funky cartoon-style visuals with classic side-scrolling gameplay and introduces the world's quirkiest million dollar action hero. More than just any ordinary dude, Joe must transform into the ultimate superhero. It's up to you to activate the correct view mode like "slow" or "zoom in" in order to clobber your enemies with beautiful style. You can also speed up or slow down your visual effects for even more "viewtiful" moves. Viewtiful Joe mixes an innovative viewpoint with an amazing stunt-filled action movie universe.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp10035</id>
+					<name>Fire Emblem - Path Of Radiance</name>
+					<filename>rom_pathGameCube/_1P/Fire Emblem - Path Of Radiance.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Fire Emblem - Path Of Radiance.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Fire Emblem - Path Of Radiance.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Role-Playing / Strategy</genre>
+					<release>2005</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Fire Emblem: Path of Radiance brings back to consoles the strategic combat series Fire Emblem from the Game Boy Advance. In this installment, you can control units such as knights, mages, and winged creatures, and use their unique fighting styles to win battles and gain experience. Fire Emblem: Path of Radiance also includes a detailed story that connects the battles and characters together.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17705,7 +17705,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37edw8f2p0055</id>
-					<name>Winnie the Pooh's Rumbly Tumbly Adventure</name>
+					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_1P/Winnie the Pooh's Rumbly Tumbly Adventure.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Winnie the Pooh's Rumbly Tumbly Adventure.jpg</thumb>
 					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Winnie the Pooh's Rumbly Tumbly Adventure.jpg</fanart>
@@ -17805,6 +17805,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d2gcd81ea61668385a37ed1af3p1060</id>
+					<name>Pokemon Colosseum</name>
+					<filename>rom_pathGameCube/_2P/Pokemon Colosseum.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Pokemon Colosseum.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Pokemon Colosseum.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Role-Playing</genre>
+					<release>2004</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Pokemon fans can now battle their favorite Pokemon on the grand stage. Starring a brand new leading character, Pokemon, Colosseum offers a story mode that pits you against tough trainers who routinely catch damaged Pokemon. In Battle mode, you can use the Game Boy Advance cable to send your team from your Pokemon Ruby or Pokemon Sapphire Game Pak to your Gamecube, then witness the true potential of your team. Rescue Pokemon and watch them come to life in spectacular Colosseum battles.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2gcd81ea61668385a37ed1af2p0000</id>
 					<name>Bust-A-Move 3000</name>
 					<filename>rom_pathGameCube/_2P/Bust-A-Move 3000.iso</filename>
@@ -17861,21 +17876,6 @@
 					<release>2002</release>
 					<publisher>Sega</publisher>
 					<gameplot>A compilation containing seven Sonic games, all originally released on the Sega Genesis console plus unlockable games and content.</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>7d2gcd81ea61668385a37ed78f2p0003</id>
-					<name>Need for Speed - Most Wanted</name>
-					<filename>rom_pathGameCube/_2P/Need for Speed - Most Wanted.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Need for Speed - Most Wanted.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Need for Speed - Most Wanted.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Racing</genre>
-					<release>2005</release>
-					<publisher>Electronic Arts</publisher>
-					<gameplot>The player arrives in Rockport City, driving a racing version of the BMW M3 GTR (E46). Following Mia Townsend (played by Josie Maran), the player proves his driving prowess as he is pursued by a veteran police officer named Sergeant Cross (played by Dean McKenzie), who vows to take down the player and end street racing in Rockport.Races seem to be in the player's favor until a particular group of racers, led by the game's antagonist, Clarence "Razor" Callahan (played by Derek Hamilton), sabotages and win the player's car in a race.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -18372,7 +18372,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0006</id>
-					<name>Gotcha Force</name>
+					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_4P/Gotcha Force.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Gotcha Force.jpg</thumb>
 					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Gotcha Force.jpg</fanart>
@@ -18777,7 +18777,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0031</id>
-					<name>Pokemon XD - Gale of Darkness</name>
+					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_4P/Pokemon XD - Gale of Darkness.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Pokemon XD - Gale of Darkness.jpg</thumb>
 					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Pokemon XD - Gale of Darkness.jpg</fanart>
