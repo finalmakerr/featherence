@@ -23,70 +23,6 @@
   </extension>
 </addon>
 
-<addon id="emulator.retroarch_android" name="Featherence Emu Console - Android" version="1.0.0" provider-name="finalmakerr">
-  <requires>
-	<import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.script"
-             library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<platform>android</platform>
-    <summary>Multi-emulator frontend based on libretro</summary>
-    <description lang="en"></description>
-	<description lang="he">_</description>
-    <disclaimer></disclaimer>
-	<email>finalmakerr@gmail.com</email>
-	<forum>http://forum.kodi.tv/showthread.php?tid=304634</forum>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/emulator.retroarch</source>
-	<website>www.featherence.com</website>
-  </extension>
-</addon>
-
-<addon id="emulator.retroarch_i386" name="Featherence Emu Console - OpenELEC i386" version="1.0.2" provider-name="zaggash, finalmakerr">
-  <requires>
-    <import addon="os.openelec.tv" version="3.2" optional="true"/>
-	<import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.script"
-             library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
-    <summary>Multi-emulator frontend based on libretro</summary>
-    <description lang="en">generic-i386</description>
-	<description lang="he">_</description>
-    <disclaimer></disclaimer>
-	<email>finalmakerr@gmail.com</email>
-	<forum>http://forum.kodi.tv/showthread.php?tid=304634</forum>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/emulator.retroarch</source>
-	<website>www.featherence.com</website>
-  </extension>
-</addon>
-
-<addon id="emulator.retroarch_win32" name="Featherence Emu Console - Windows x86" version="1.0.0" provider-name="finalmakerr">
-  <requires>
-	<import addon="xbmc.python" version="2.24.0"/>
-  </requires>
-  <extension point="xbmc.python.script"
-             library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<platform>windx</platform>
-    <summary>Multi-emulator frontend based on libretro</summary>
-    <description lang="en">_</description>
-	<description lang="he">_</description>
-    <disclaimer></disclaimer>
-	<email>finalmakerr@gmail.com</email>
-	<forum>http://forum.kodi.tv/showthread.php?tid=304634</forum>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/emulator.retroarch</source>
-	<website>www.featherence.com</website>
-  </extension>
-</addon>
-
 <addon id="emulator.retroarch_win64" name="Featherence Emu Console - Windows x64" version="1.0.2" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.python" version="2.24.0"/>
@@ -104,26 +40,6 @@
 	<email>finalmakerr@gmail.com</email>
 	<forum>http://forum.kodi.tv/showthread.php?tid=304634</forum>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/emulator.retroarch_win64</source>
-	<website>www.featherence.com</website>
-  </extension>
-</addon>
-
-<addon id="emulator.tools.retroarch" name="Featherence Emu Console - OpenELEC2" version="1.0.2" provider-name="Mezo, finalmakerr">
-  <requires>
-	<import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.script"
-             library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<platform>linux</platform>
-    <summary>Multi-emulator frontend based on libretro</summary>
-    <description>For RPI/WETEK</description>
-    <disclaimer></disclaimer>
-	<email>finalmakerr@gmail.com</email>
-	<forum>http://forum.kodi.tv/showthread.php?tid=304634</forum>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/emulator.tool.retroarch</source>
 	<website>www.featherence.com</website>
   </extension>
 </addon>
