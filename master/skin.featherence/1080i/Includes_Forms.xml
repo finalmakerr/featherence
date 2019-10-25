@@ -1155,14 +1155,14 @@
 				<width>$PARAM[width]</width>
 				<include condition="true">LabelL1</include>
 				<height>66</height>
-				<label>-</label>
+				<label></label>
 				<textoffsetx>45</textoffsetx>
 			</control>
 			<control type="button" id="7" description="Cancel">
 				<width>$PARAM[width]</width>
 				<include condition="true">LabelL1</include>
 				<height>66</height>
-				<label>-</label>
+				<label></label>
 				<textoffsetx>45</textoffsetx>
 			</control>
 			<control type="button" id="1265" description="עוד...">

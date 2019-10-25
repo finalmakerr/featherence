@@ -45,14 +45,14 @@
       <posy>60</posy>
       <width>1860</width>
       <align>center</align>
-      <label>-</label>
+      <label></label>
     </control>
     <control type="label" id="3" description="help information">
       <posx>30</posx>
       <posy>105</posy>
       <width>1860</width>
       <align>center</align>
-      <label>-</label>
+      <label></label>
     </control>
   </controls>
 </window>

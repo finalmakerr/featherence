@@ -1763,7 +1763,7 @@
 	    <height>500</height>
 		<posy>-500</posy>
 	    <width>920</width>
-	    <label>-</label>
+	    <label></label>
 		
 	</control>
 	<control type="label" id="2">
@@ -2080,14 +2080,6 @@
 		<thumb></thumb>
 		<property name="rinfo"></property>
 		<onclick>RunScript(script.featherence.service,,?mode=30&amp;value=$INFO[Skin.String(User_Name)]&amp;value2=$LOCALIZE[1014]&amp;value3=&amp;value4=&amp;value5=User_Name)</onclick>
-		<visible>Container(100).Hasfocus(1)</visible>
-	  </item>
-	  <item id="3" description="הצג טיפים במצב המתנה">
-		<label>$LOCALIZE[31038]</label>
-		<label2>$VAR[3label2]</label2>
-		<thumb>special://home/addons/script.featherence.service/resources/icons/information.png</thumb>
-		<property name="rinfo">$LOCALIZE[31060]</property>
-		<onclick>Skin.ToggleSetting(tips)</onclick>
 		<visible>Container(100).Hasfocus(1)</visible>
 	  </item>
 	  <item id="5" description="הפעל ו'ידגט">

@@ -5,9 +5,16 @@
 	<onload condition="Player.PauseEnabled">SetFocus(602)</onload>
 	<onload condition="!Control.IsVisible(602) + Control.IsVisible(603)">SetFocus(603)</onload>
 	<depth>DepthOSD</depth>
+	
+	<coordinates>
+		<system>1</system>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
     <controls>
 	  <control type="group">
 	    <visible>!Window.IsVisible(DialogSubtitles.xml)</visible>
+		
 		<control type="group" description="כפתורים עליונים">
 			<!--<animation effect="slide" end="0,-438" time="240" tween="quadratic" condition="!Window.IsVisible(DialogFullScreenInfo.xml) + [System.IdleTime(7) | Window.IsVisible(SliderDialog) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDTeletext) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]">Conditional</animation>-->
 			<!--<animation effect="slide" end="0,-438" time="240" tween="quadratic" condition="System.IdleTime(7)">Conditional</animation>-->
@@ -99,7 +106,7 @@
 					<textoffsety>60</textoffsety>
 					<texturefocus>osd/buttons/OSDBookMarksFO.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDBookMarksNF.png</texturenofocus>
-					<label>-</label>
+					<label></label>
 					<width>100</width>
 					<height>100</height>
 					<onclick>ActivateWindow(videobookmarks)</onclick>
@@ -134,7 +141,7 @@
 				<control type="button" id="705" description="3D">
 					<texturefocus>osd/buttons/OSDStereoscopicFO.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDStereoscopicNF.png</texturenofocus>
-					<label>-</label>
+					<label></label>
 					<width>100</width>
 					<height>100</height>
 					<ondown>NextStereoMode</ondown>
@@ -186,7 +193,7 @@
 					<textoffsety>60</textoffsety>
 					<texturefocus>osd/buttons/OSDChannelDownFO.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDChannelDownNF.png</texturenofocus>
-					<label>-</label>
+					<label></label>
 					<width>100</width>
 					<height>100</height>
 					<onclick>PlayerControl(Next)</onclick>
@@ -208,7 +215,7 @@
 				<control type="button" id="802" description="ערוץ הבא">
 					<texturefocus>osd/buttons/OSDChannelUPFO.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDChannelUPNF.png</texturenofocus>
-					<label>-</label>
+					<label></label>
 					<width>100</width>
 					<height>100</height>
 					<onclick>PlayerControl(Previous)</onclick>
@@ -219,7 +226,7 @@
 					<texturenofocus>osd/buttons/OSDRecordOffNF.png</texturenofocus>
 					<alttexturefocus>osd/buttons/OSDRecordOnFO.png</alttexturefocus>
 					<alttexturenofocus>osd/buttons/OSDRecordOnNF.png</alttexturenofocus>
-					<label>-</label>
+					<label></label>
 					<altlabel>208</altlabel>
 					<width>100</width>
 					<height>100</height>
@@ -231,7 +238,7 @@
 				<control type="button" id="807">
 					<texturefocus>osd/buttons/OSDChannelListFO.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDChannelListNF.png</texturenofocus>
-					<label>-</label>
+					<label></label>
 					<width>100</width>
 					<height>100</height>
 					<onclick>Dialog.close(VideoOSD)</onclick>
@@ -242,7 +249,7 @@
 				<control type="button" id="808">
 					<texturefocus>osd/buttons/OSDepgFO.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDepgNF.png</texturenofocus>
-					<label>-</label>
+					<label></label>
 					<width>100</width>
 					<height>100</height>
 					<onclick condition="VideoFullScreen.xml">Action(Back)</onclick>					
@@ -253,7 +260,7 @@
 				<control type="button" id="810">
 					<texturefocus>osd/buttons/OSDTeleTextFO.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDTeleTextNF.png</texturenofocus>
-					<label>-</label>
+					<label></label>
 					<width>100</width>
 					<height>100</height>
 					<onclick>ActivateWindow(Teletext)</onclick>
@@ -262,7 +269,7 @@
 				<control type="button" id="604" description="קדימה">
 					<texturefocus>osd/buttons/OSDForwardFO+.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDForwardNF.png</texturenofocus>
-					<label>-</label>
+					<label></label>
 					<width>100</width>
 					<height>100</height>
 					<onup>PlayerControl(Next)</onup>	
@@ -296,7 +303,7 @@
 				<control type="button" id="704" description="DVD">
 					<texturefocus>osd/buttons/OSDDvdFO.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDDvdNF.png</texturenofocus>
-					<label>-</label>
+					<label></label>
 					<width>100</width>
 					<height>100</height>
 					<onclick>PlayerControl(ShowVideoMenu)</onclick>
@@ -305,7 +312,7 @@
 			    <control type="button" id="706" description="מידע">
 					<texturefocus>osd/buttons/OSDInfoFO.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDInfoNF.png</texturenofocus>
-					<label>-</label>
+					<label></label>
 					<width>100</width>
 					<height>100</height>
 					<onclick>Action(Info)</onclick>
@@ -353,23 +360,12 @@
 				<onleft>StepBack</onleft>
 				<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
 			</control>
-			<control type="slider">
-				<left>0</left>
-				<top>27</top>
-				<width>1920</width>
-				<height>35</height>
-				<texturesliderbar colordiffuse="00FFFFFF">osd/nub_bar.png</texturesliderbar>
-				<textureslidernib colordiffuse="$VAR[ButtonUnFocusColor]">osd/nub_bar.png</textureslidernib>
-				<textureslidernibfocus colordiffuse="$VAR[ButtonFocusColor]">osd/white.png</textureslidernibfocus>
-				<visible>!VideoPlayer.Content(livetv)</visible>
-				<!--<visible>Player.Seeking</visible>
-				<visible>!Window.IsVisible(VideoOSD.xml)</visible>-->
-				<orientation>horizontal</orientation>
-			</control>
+
 		</control>
 		<control type="group">
 		  <visible>Player.Paused</visible>
 		  <include>TopVideoInformation</include>
+		  <include>TopInformation</include>
 		</control>
 	  </control>
 	  <include>TouchSupport</include>

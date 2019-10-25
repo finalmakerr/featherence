@@ -10,7 +10,7 @@
 		<control type="label" id="2" description="Heading">
 		  <height>75</height>
 		  <include>LabelC11</include>
-		  <label>-</label>
+		  <label></label>
 		  <posx>330</posx>
 		  <posy>20</posy>
 		  <width>1260</width>

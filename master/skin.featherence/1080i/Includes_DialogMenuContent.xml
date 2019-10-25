@@ -12,19 +12,6 @@
 		<wrapmultiline>true</wrapmultiline>
 		<visible>!Window.IsVisible(10100)</visible>
 	  </control>
-	  <control type="textbox" id="1500" description="טיפים">
-	    <animation condition="true" effect="slide" start="0,0" end="10,0">Conditional</animation>
-	    <visible>!Window.IsVisible(DialogProgress.xml) + !Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogOK.xml)</visible>
-		<visible>!String.IsEmpty(Window(home).Property(tips)) + System.IdleTime(2) + !Skin.HasSetting(tips)</visible>
-		<textcolor>$VAR[DialogFontColor]</textcolor>
-	    <include>LabelC2</include>
-	    <height>200</height>
-		<posx>0</posx>
-	    <width>580</width>
-		<label>$VAR[tips]</label>
-		<visible>!Window.IsVisible(10100)</visible>
-	  </control>
-
 	  <control type="progress" id="10" description="Progressbar">
 	    <visible>!Window.IsVisible(DialogProgress.xml) + !Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogOK.xml)</visible>
 		<height>20</height>
@@ -250,11 +237,11 @@
         <posy>0</posy>
         <width>22</width>
         <height>390</height>
-        <texturesliderbackground>images/slider_bg.png</texturesliderbackground>
-        <texturesliderbar>images/slider_bg.png</texturesliderbar>
-        <texturesliderbarfocus>images/slider_bg.png</texturesliderbarfocus>
-        <textureslidernib>images/slider_nib.png</textureslidernib>
-        <textureslidernibfocus>images/slider_nib.png</textureslidernibfocus>
+        <texturesliderbackground>images/slider-background.png</texturesliderbackground>
+        <texturesliderbar>images/settings-toggle-button-focus.png</texturesliderbar>
+        <texturesliderbarfocus>images/settings-toggle-button-nofocus.png</texturesliderbarfocus>
+        <textureslidernib>images/slider-nib-nofocus.png</textureslidernib>
+        <textureslidernibfocus>images/slider-nib-focus.png</textureslidernibfocus>
         <onleft>5</onleft>
         <onright>9001</onright>
         <showonepage>false</showonepage>
@@ -342,7 +329,7 @@
         <width>1000</width>
         <height>70</height>
         <font>-</font>
-        <label>-</label>
+        <label></label>
         <align>left</align>
         <onup>29</onup>
         <ondown>21</ondown>
@@ -512,7 +499,7 @@
 		<control type="label" id="2" description="חדש*">
 		  <height>70</height>
 		  <include>LabelC11</include>
-		  <label>-</label>
+		  <label></label>
           <width>300</width>
         </control>
 		<control type="label" id="103" description="Profile Directory">
@@ -568,7 +555,7 @@
         <width>1000</width>
         <height>70</height>
         <font>-</font>
-        <label>-</label>
+        <label></label>
         <align>left</align>
         <onup>29</onup>
         <ondown>4</ondown>
@@ -865,7 +852,7 @@
         <width>1000</width>
         <height>70</height>
         <font>-</font>
-        <label>-</label>
+        <label></label>
         <align>left</align>
         <onup>29</onup>
         <ondown>4</ondown>
@@ -1056,7 +1043,7 @@
 		  <aligny>center</aligny>
 		  <textcolor>yellow</textcolor>
 		  <include>LabelC12</include>
-		  <label>-</label>
+		  <label></label>
 		  <posx>10</posx>
 		  <width>680</width>
         </control>
@@ -1067,7 +1054,7 @@
 		  <include condition="!String.IsEqual(System.Language,Hebrew)">LabelL4</include>-->
 		  <include>Fade7</include>
           <scroll>true</scroll>
-          <label>-</label>
+          <label></label>
 		  <posy>35</posy>
 		  <posx>10</posx>
 		  <width>680</width>
@@ -1091,7 +1078,7 @@
 		  <aligny>center</aligny>
 		  <textcolor>yellow</textcolor>
 		  <include>LabelC12</include>
-		  <label>-</label>
+		  <label></label>
 		  <posx>10</posx>
 		  <width>680</width>
         </control>
@@ -1100,7 +1087,7 @@
 		  <include>LabelC13</include>
 		  <include>Fade7</include>
           <scroll>true</scroll>
-          <label>-</label>
+          <label></label>
 		  <posx>10</posx>
 		  <posy>35</posy>
 		  <width>680</width>

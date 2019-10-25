@@ -25,7 +25,7 @@
 			<textoffsety>60</textoffsety>
 			<texturefocus>osd/buttons/OSDBookMarksFO.png</texturefocus>
 			<texturenofocus>osd/buttons/OSDBookMarksNF.png</texturenofocus>
-			<label>-</label>
+			<label></label>
 			<width>100</width>
 			<height>100</height>
 			<onclick>ActivateWindow(videobookmarks)</onclick>
@@ -50,7 +50,7 @@
 		<control type="button" id="705" description="3D">
 			<texturefocus>osd/buttons/OSDStereoscopicFO.png</texturefocus>
 			<texturenofocus>osd/buttons/OSDStereoscopicNF.png</texturenofocus>
-			<label>-</label>
+			<label></label>
 			<width>100</width>
 			<height>100</height>
 			<ondown>NextStereoMode</ondown>
@@ -90,7 +90,7 @@
 			<textoffsety>60</textoffsety>
 			<texturefocus>osd/buttons/OSDChannelDownFO.png</texturefocus>
 			<texturenofocus>osd/buttons/OSDChannelDownNF.png</texturenofocus>
-			<label>-</label>
+			<label></label>
 			<width>100</width>
 			<height>100</height>
 			<onclick>PlayerControl(Next)</onclick>
@@ -111,7 +111,7 @@
 		<control type="button" id="802" description="ערוץ הבא">
 			<texturefocus>osd/buttons/OSDChannelUPFO.png</texturefocus>
 			<texturenofocus>osd/buttons/OSDChannelUPNF.png</texturenofocus>
-			<label>-</label>
+			<label></label>
 			<width>100</width>
 			<height>100</height>
 			<onclick>PlayerControl(Previous)</onclick>
@@ -122,7 +122,7 @@
 			<texturenofocus>osd/buttons/OSDRecordOffNF.png</texturenofocus>
 			<alttexturefocus>osd/buttons/OSDRecordOnFO.png</alttexturefocus>
 			<alttexturenofocus>osd/buttons/OSDRecordOnNF.png</alttexturenofocus>
-			<label>-</label>
+			<label></label>
 			<altlabel>208</altlabel>
 			<width>100</width>
 			<height>100</height>
@@ -134,7 +134,7 @@
 		<control type="button" id="807">
 			<texturefocus>osd/buttons/OSDChannelListFO.png</texturefocus>
 			<texturenofocus>osd/buttons/OSDChannelListNF.png</texturenofocus>
-			<label>-</label>
+			<label></label>
 			<width>100</width>
 			<height>100</height>
 			<onclick>ActivateWindow(PVROSDChannels)</onclick>
@@ -145,7 +145,7 @@
 		<control type="button" id="808">
 			<texturefocus>osd/buttons/OSDepgFO.png</texturefocus>
 			<texturenofocus>osd/buttons/OSDepgNF.png</texturenofocus>
-			<label>-</label>
+			<label></label>
 			<width>100</width>
 			<height>100</height>
 			<onclick condition="VideoFullScreen.xml">Action(Back)</onclick>					
@@ -155,7 +155,7 @@
 		<control type="button" id="810">
 			<texturefocus>osd/buttons/OSDTeleTextFO.png</texturefocus>
 			<texturenofocus>osd/buttons/OSDTeleTextNF.png</texturenofocus>
-			<label>-</label>
+			<label></label>
 			<width>100</width>
 			<height>100</height>
 			<onclick>ActivateWindow(Teletext)</onclick>
@@ -164,7 +164,7 @@
 		<control type="button" id="604" description="קדימה">
 			<texturefocus>osd/buttons/OSDForwardFO+.png</texturefocus>
 			<texturenofocus>osd/buttons/OSDForwardNF.png</texturenofocus>
-			<label>-</label>
+			<label></label>
 			<width>100</width>
 			<height>100</height>
 			<onup>PlayerControl(Next)</onup>	
@@ -187,7 +187,7 @@
 		<control type="button" id="704" description="DVD">
 			<texturefocus>osd/buttons/OSDDvdFO.png</texturefocus>
 			<texturenofocus>osd/buttons/OSDDvdNF.png</texturenofocus>
-			<label>-</label>
+			<label></label>
 			<width>100</width>
 			<height>100</height>
 			<onclick>PlayerControl(ShowVideoMenu)</onclick>
@@ -196,7 +196,7 @@
 		<control type="button" id="706" description="מידע">
 			<texturefocus>osd/buttons/OSDInfoFO.png</texturefocus>
 			<texturenofocus>osd/buttons/OSDInfoNF.png</texturenofocus>
-			<label>-</label>
+			<label></label>
 			<width>100</width>
 			<height>100</height>
 			<onclick>close</onclick>

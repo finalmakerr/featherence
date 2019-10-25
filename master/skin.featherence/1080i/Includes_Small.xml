@@ -357,21 +357,74 @@
   </include>
   
   <include name="DialogSeekBar">
-	<control type="group" description="!VideoPlayer.Content(LiveTV)">
-		<top>1020</top>
-		<visible>!VideoPlayer.Content(LiveTV)</visible>
-		<control type="image">
+	<control type="group" id="682">
+			<top>1040</top>
+			<height>40</height>
 			<left>0</left>
-			<top>4</top>
 			<width>1920</width>
-			<height>70</height>
+			<visible>Window.IsActive(FullscreenVideo) | Window.IsActive(FullscreenGame) | Window.IsActive(Visualisation)</visible>
+			<control type="image">
+				<texture border="8">images/panel.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<control type="group">
+				<visible>!Player.HasGame</visible>
+				
+				<control type="progress">
+					<description>Progressbar Cache</description>
+					<midtexture border="2">images/scrollbar-slider-horz-nofocus.png</midtexture>
+					<info>Player.ProgressCache</info>
+					<animation effect="fade" end="50" condition="true">Conditional</animation>
+				</control>
+					
+				<control type="progress" id="23">
+					<description>Progressbar</description>
+					<info>Player.Progress</info>
+					<visible>!VideoPlayer.HasEpg</visible>
+				</control>
+				
+				<control type="progress" id="24">
+					<description>Progressbar</description>
+					<info>PVR.EpgEventProgress</info>
+					<visible>VideoPlayer.HasEpg</visible>
+				</control>
+				
+				<control type="progress" id="401">
+					<description>Progressbar</description>
+					<texturebg colordiffuse="$VAR[ButtonFocusColor]" border="4">images/progress-background.png</texturebg>
+					<colordiffuse>88FFFFFF</colordiffuse>
+					<visible>Player.Seeking</visible>
+				</control>
+				
+				<control type="ranges">
+					<height>12</height>
+					<lefttexture>white.png</lefttexture>
+					<midtexture colordiffuse="FFFF0000">white.png</midtexture>
+					<righttexture>white2.png</righttexture>
+					<info>Player.Cutlist</info>
+				</control>
+				
+				<control type="ranges">
+					<height>10</height>
+					<righttexture colordiffuse="aaffffff">white2.png</righttexture>
+					<info>Player.Chapters</info>
+				</control>
+			</control>
+		</control>
+
+	<control type="group">
+		<visible>false</visible>
+		<top>1020</top>
+		<height>40</height>
+		<left>480</left>
+		<width>960</width>
+		<control type="image">
+			<top>10</top>
 			<texture border="1,32,1,1">osd/bottombar.png</texture>
 		</control>
 		<control type="progress">
-			<left>0</left>
 			<top>27</top>
-			<width>1920</width>
-			<height>35</height>
 			<texturebg>osd/texturebg.png</texturebg>
 			<lefttexture>-</lefttexture>
 			<midtexture>osd/midtexture_cache.png</midtexture>
@@ -379,11 +432,9 @@
 			<overlaytexture>-</overlaytexture>
 			<info>Player.ProgressCache</info>
 		</control>
-		<control type="progress" id="23">
-			<left>0</left>
+		<control type="progress">
 			<top>27</top>
-			<width>1920</width>
-			<height>35</height>
+			<height>40</height>
 			<texturebg>osd/texturebg_cache.png</texturebg>
 			<lefttexture>-</lefttexture>
 			<midtexture>osd/midtexture.png</midtexture>
@@ -392,24 +443,15 @@
 			<info>Player.Progress</info>
 		</control>
 		<control type="slider" id="401">
-			<left>0</left>
 			<top>27</top>
-			<width>1920</width>
-			<height>35</height>
 			<texturesliderbar colordiffuse="00FFFFFF">osd/nub_bar.png</texturesliderbar>
 			<textureslidernib colordiffuse="$VAR[ButtonUnFocusColor]">osd/nub_bar.png</textureslidernib>
 			<textureslidernibfocus colordiffuse="$VAR[ButtonFocusColor]">osd/white.png</textureslidernibfocus>
-			<visible>!VideoPlayer.Content(livetv)</visible>
 			<!--<visible>Player.Seeking</visible>
 			<visible>!Window.IsVisible(VideoOSD.xml)</visible>-->
 			<orientation>horizontal</orientation>
+			<visible>Player.SeekEnabled</visible>
 		</control>
-		<control type="label" id="402">
-		  <font>size24</font>
-		  <posx>7</posx>
-		  <posy>7</posy>
-		</control>
-		
 	</control>
 	
   </include>

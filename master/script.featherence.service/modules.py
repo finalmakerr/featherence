@@ -2600,7 +2600,6 @@ def mode218(value, admin, name, printpoint):
 			message = message + newline + '---------------------------'
 			message = message + newline + "SelectedColor" + space2 + xbmc.getInfoLabel('Window(home).Property(SelectedColor)')
 			message = message + newline + '---------------------------'
-			message = message + newline + "tips" + space2 + xbmc.getInfoLabel('Window(home).Property(tips)')
 			message = message + newline + "ListItem.Path" + space2 + xbmc.getInfoLabel('ListItem.Path')
 			message = message + newline + "Container.NumItems" + space2 + xbmc.getInfoLabel('Container.NumItems')
 			message = message + newline + "Container.FolderPath" + space2 + xbmc.getInfoLabel('Container.FolderPath')

@@ -253,6 +253,28 @@
 	 <animation condition="Skin.String(TopInformationOverlay,100)" effect="fade" end="100" time="0">Conditional</animation>
    </include>
    
+   <include name="BottomPaneOpenCloseAnim">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="fade" time="300"/>
+			<effect type="slide" start="0,25" time="500" tween="cubic" easing="out"/>
+		</animation>
+		
+		<animation type="WindowClose" reversible="false">
+			<effect type="fade" time="300"/>
+			<effect type="slide" end="0,25" time="400" tween="cubic" easing="out"/>
+		</animation>
+		
+		<animation type="Visible" reversible="false">
+			<effect type="fade" time="300"/>
+			<effect type="slide" start="0,25" time="500" tween="cubic" easing="out"/>
+		</animation>
+		
+		<animation type="Hidden" reversible="false">
+			<effect type="fade" time="300"/>
+			<effect type="slide" end="0,25" time="400" tween="cubic" easing="out"/>
+		</animation>
+	</include>
+	
    <include name="Fade_WindowsOpenClose">
      <animation type="WindowOpen" reversible="false" condition="!Skin.String(WindowsOpenClose)">
 	   <effect type="fade" start="40" end="100" time="440" />

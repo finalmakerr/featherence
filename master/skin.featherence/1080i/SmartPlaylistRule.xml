@@ -75,7 +75,7 @@
         <posx>15</posx>
         <posy>234</posy>
         <width>918</width>
-        <label>-</label>
+        <label></label>
         <onup>9001</onup>
         <onleft>20</onleft>
         <onright>20</onright>

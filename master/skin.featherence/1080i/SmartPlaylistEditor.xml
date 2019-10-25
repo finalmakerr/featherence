@@ -67,7 +67,7 @@
         <aligny>center</aligny>
         <focusedcolor>white</focusedcolor>
         <selectedcolor>white</selectedcolor>
-        <label>-</label>
+        <label></label>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>
         <onup>22</onup>

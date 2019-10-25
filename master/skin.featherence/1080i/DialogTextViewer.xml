@@ -30,7 +30,7 @@
 		<top>0</top>
 		<width>96</width>
 		<height>48</height>
-		<label>-</label>
+		<label></label>
 		<font>-</font>
 		<onclick>PreviousMenu</onclick>
 		<texturefocus border="5" colordiffuse="$VAR[KeyboardFocusColor]">osd/keyboard/DialogCloseButton.png</texturefocus>

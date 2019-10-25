@@ -3,7 +3,7 @@
   <default type="label">
     <posx>0</posx>
     <posy>0</posy>
-    <label>-</label>
+    <label></label>
     <height>75</height>
     <align>left</align>
     <aligny>center</aligny>
@@ -22,7 +22,7 @@
     <posx>0</posx>
     <posy>0</posy>
     <height>75</height>
-    <label>-</label>
+    <label></label>
     <align>left</align>
     <aligny>center</aligny>
     <font>size36</font>
@@ -39,7 +39,7 @@
     <scrollsuffix>...</scrollsuffix>
   </default>
   <default type="textbox">
-    <label>-</label>
+    <label></label>
     <font>size30</font>
     <textcolor>white</textcolor>
     <shadowcolor>shadow</shadowcolor>
@@ -90,8 +90,7 @@
 	<disabledcolor>grey</disabledcolor>
 	<focusedcolor>yellow</focusedcolor>
 	<font>size34</font>
-    <height>75</height>
-    <label>-</label>  
+    <height>75</height> 
 	<posx>0</posx>
     <posy>0</posy>    
     <pulseonselect>false</pulseonselect>
@@ -113,7 +112,7 @@
 	<font>size34</font>	
     <height>75</height>
 	<hinttext>...</hinttext>
-    <label>-</label>
+    <label></label>
     <posx>0</posx>
     <posy>0</posy>	
 	<pulseonselect>false</pulseonselect>
@@ -135,8 +134,7 @@
 	<disabledcolor>grey</disabledcolor>
 	<focusedcolor>yellow</focusedcolor>
 	<font>size34</font>
-    <height>75</height>
-    <label>-</label>  
+    <height>75</height> 
 	<posx>0</posx>
     <posy>0</posy>    
     <pulseonselect>false</pulseonselect>
@@ -162,8 +160,7 @@
 	<disabledcolor>grey</disabledcolor>
 	<focusedcolor>yellow</focusedcolor>
 	<font>size34</font>
-    <height>75</height>
-    <label>-</label>  
+    <height>75</height> 
 	<posx>0</posx>
     <posy>10</posy>    
     <pulseonselect>false</pulseonselect>
@@ -216,7 +213,7 @@
     <posy>0</posy>
     <width>450</width>
     <height>75</height>
-    <label>-</label>
+    <label></label>
     <font>size34</font>
     <textureup>images/ArrowUpNF.png</textureup>
     <textureupfocus>images/ArrowUpFO.png</textureupfocus>
@@ -277,13 +274,25 @@
     <height>950</height>
     <width>20</width>
     <orientation>vertical</orientation>
-	<texturesliderbar colordiffuse="$VAR[IconUnFocusColor]" border="10">buttons/ButtonA0.png</texturesliderbar> <!--ff000000-->
-    <texturesliderbarfocus colordiffuse="$VAR[IconFocusColor]" border="10">buttons/ButtonA0.png</texturesliderbarfocus> <!--FFFFBBBB-->
-	<textureslidernib border="15">-</textureslidernib>
+	<texturesliderbackground border="4">images/scrollbar-background.png</texturesliderbackground>
+	<texturesliderbar colordiffuse="$VAR[IconUnFocusColor]" border="2">images/scrollbar-slider.png</texturesliderbar>
+	<texturesliderbarfocus colordiffuse="$VAR[ButtonFocusColor]" border="2">images/scrollbar-slider.png</texturesliderbarfocus>
+	<textureslidernib colordiffuse="$VAR[IconUnFocusColor]">images/scrollbar-nib.png</textureslidernib>
+	<textureslidernibfocus colordiffuse="$VAR[IconFocusColor]">images/scrollbar-nib.png</textureslidernibfocus>
     <pulseonselect>false</pulseonselect>
     <showonepage>false</showonepage>
 	
   </default>
+  
+  <default type="progress">
+		<width>400</width>
+		<height>40</height>
+		<texturebg border="4">images/progress-background.png</texturebg>
+		<lefttexture />
+		<midtexture border="2">images/scrollbar-slider.png</midtexture>
+		<righttexture />
+		<overlaytexture />
+	</default>
   <default type="mover">
 	<left>60</left>
 	<top>192</top>

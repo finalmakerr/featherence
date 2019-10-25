@@ -63,7 +63,7 @@
 		<posy>-20</posy>
         <width>900</width>
         <align>left</align>
-        <label>-</label>
+        <label></label>
         <font>size30B</font>
         <haspath>true</haspath>
         <textcolor>yellow</textcolor>
@@ -76,7 +76,7 @@
         <align>left</align>
         <font>size30B</font>
         <textcolor>yellow</textcolor>
-        <label>-</label>
+        <label></label>
       </control>
       <control type="list" id="20" description="רשימה שמאל">
         <posx>-30</posx>
@@ -184,7 +184,7 @@
 		<posy>-20</posy>
         <width>900</width>
         <align>right</align>
-        <label>-</label>
+        <label></label>
         <font>size30B</font>
         <haspath>true</haspath>
         <textcolor>yellow</textcolor>
@@ -197,7 +197,7 @@
         <align>right</align>
         <font>size30B</font>
         <textcolor>yellow</textcolor>
-        <label>-</label>
+        <label></label>
       </control>
       <control type="list" id="21" description="רשימה ימין">
         <posx>0</posx>

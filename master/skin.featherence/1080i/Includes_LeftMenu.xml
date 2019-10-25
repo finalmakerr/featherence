@@ -1059,7 +1059,7 @@
 	  <include condition="String.IsEqual(System.Language,Hebrew)">ButtonR1</include>
 	  <include condition="!String.IsEqual(System.Language,Hebrew)">ButtonL1</include>
 	  <font>size28</font>
-	  <label>-</label>
+	  <label></label>
 	</control>
   </include>
   <include name="LeftMenuMyPVR" description="חלון צד טלוויזיה חיה">
