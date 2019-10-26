@@ -321,8 +321,8 @@
 	<value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
   </variable>
   <variable name="VideoInformation3" description="מידע צדדי (11153)">
-	<value condition="!String.IsEmpty(ListItem.ChannelNumber) + !String.IsEmpty(ListItem.Progress)">$INFO[ListItem.ChannelNumber] $INFO[ListItem.Progress]</value>
-	<value condition="!String.IsEmpty(ListItem.ChannelNumber)">$INFO[ListItem.ChannelNumber]</value>
+	<value condition="!String.IsEmpty(ListItem.ChannelNumberLabel) + !String.IsEmpty(ListItem.Progress)">$INFO[ListItem.ChannelNumberLabel] $INFO[ListItem.Progress]</value>
+	<value condition="!String.IsEmpty(ListItem.ChannelNumberLabel)">$INFO[ListItem.ChannelNumberLabel]</value>
 	<value condition="Window.IsVisible(MyPics.xml) + !String.IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
 	<value condition="!String.IsEmpty(ListItem.Label2) + !String.IsEqual(ListItem.Label2,0 B) + !Window.IsVisible(MyVideoNav.xml)">$INFO[ListItem.Label2]</value>
   </variable>
@@ -470,6 +470,12 @@
 	  <value condition="Control.IsVisible(6)">$INFO[Control.GetLabel(1)] ($INFO[Container(6).NumItems])</value>
 	  <value condition="Control.IsVisible(3) + String.IsEmpty(Contol.GetLabel(1))">$ADDON[script.featherence.service 32423] ($INFO[Container(3).NumItems])</value>
 	  <value condition="Control.IsVisible(6) + String.IsEmpty(Contol.GetLabel(1))">$ADDON[script.featherence.service 32423] ($INFO[Container(6).NumItems])</value>
+	</variable>
+	<variable name="TimeLabels">
+		<value condition="Player.Seeking + VideoPlayer.HasEPG">$INFO[PVR.EpgEventSeekTime]$INFO[PVR.EpgEventDuration, / ,]</value>
+		<value condition="Player.Seeking">$INFO[Player.SeekTime]$INFO[Player.Duration, / ,]</value>
+		<value condition="VideoPlayer.HasEpg">$INFO[PVR.EpgEventElapsedTime]$INFO[PVR.EpgEventDuration, / ,]</value>
+		<value>$INFO[VideoPlayer.Time]$INFO[Player.Duration, / ,]</value>
 	</variable>
 	<variable name="ManualColor">
 	  <value condition="!String.IsEmpty(Window(home).Property(SelectedColor))">$INFO[Window(home).Property(SelectedColor)]</value>

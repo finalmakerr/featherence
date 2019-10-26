@@ -299,9 +299,9 @@
         </control>
         <control type="group" id="251" description="כפתור צד">
 		  <include>TopInformationSize0</include>
-		  <animation condition="ControlGroup(251).HasFocus" effect="slide" start="0,0" end="330,0" delay="0" time="700" reversible="true">Conditional</animation>
+		  
 		  <height>500</height>	  
-		  <posx>-360</posx>
+		  <posx>-30</posx>
 		  <posy>385</posy>	  
 		  <width>450</width>
 			<control type="list" id="151">
@@ -568,30 +568,30 @@
 		<onright>noop</onright>
 		<visible allowhiddenfocus="true">!System.IdleTime(5) | ControlGroup(70).HasFocus</visible>
 		<control type="togglebutton" id="71">
-			<texturefocus>osd/buttons/OSDPauseFO.png</texturefocus>
-			<texturenofocus>osd/buttons/OSDPauseNF.png</texturenofocus>
-			<alttexturefocus>osd/buttons/OSDPlayFO.png</alttexturefocus>
-			<alttexturenofocus>osd/buttons/OSDPlayNF.png</alttexturenofocus>
-			<width>100</width>
-			<height>100</height>
+			<texturefocus border="20,20,20,20">osd/buttons/OSDPauseFO.png</texturefocus>
+			<texturenofocus border="20,20,20,20">osd/buttons/OSDPauseNF.png</texturenofocus>
+			<alttexturefocus border="20,20,20,20">osd/buttons/OSDPlayFO.png</alttexturefocus>
+			<alttexturenofocus border="20,20,20,20">osd/buttons/OSDPlayNF.png</alttexturenofocus>
+			<width>120</width>
+			<height>120</height>
 			<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 			<onclick>PlayerControl(Play)</onclick>
 		</control>
 		<control type="button" id="72">
-			<texturefocus>osd/buttons/OSDBackFO.png</texturefocus>
-			<texturenofocus>osd/buttons/OSDBackNF.png</texturenofocus>
-			<width>100</width>
-			<height>100</height>
+			<texturefocus border="20,20,20,20">osd/buttons/OSDBackFO.png</texturefocus>
+			<texturenofocus border="20,20,20,20">osd/buttons/OSDBackNF.png</texturenofocus>
+			<width>120</width>
+			<height>120</height>
 			<onclick>Close</onclick>
 		</control>
 		<control type="togglebutton" id="703">
-			<texturefocus>osd/buttons/OSDSubtitlesFO.png</texturefocus>
-			<texturenofocus>osd/buttons/OSDSubtitlesNF.png</texturenofocus>
-			<alttexturefocus>osd/buttons/OSDSubtitles2FO.png</alttexturefocus>
-			<alttexturenofocus>osd/buttons/OSDSubtitles2NF.png</alttexturenofocus>
+			<texturefocus border="20,20,20,20">osd/buttons/OSDSubtitlesFO.png</texturefocus>
+			<texturenofocus border="20,20,20,20">osd/buttons/OSDSubtitlesNF.png</texturenofocus>
+			<alttexturefocus border="20,20,20,20">osd/buttons/OSDSubtitles2FO.png</alttexturefocus>
+			<alttexturenofocus border="20,20,20,20">osd/buttons/OSDSubtitles2NF.png</alttexturenofocus>
 			<usealttexture>!VideoPlayer.SubtitlesEnabled | !VideoPlayer.HasSubtitles</usealttexture>
-			<width>100</width>
-			<height>100</height>
+			<width>120</width>
+			<height>120</height>
 			<onup condition="VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled">SubtitleDelayPlus</onup>
 			<ondown condition="VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled">SubtitleDelayMinus</ondown>
 			<onclick>Action(ShowSubtitles)</onclick>

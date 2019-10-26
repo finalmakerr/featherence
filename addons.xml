@@ -314,7 +314,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="3.5.3" provider-name="Sdarot">
+<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="2.5.3" provider-name="Sdarot">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.xbmcswift2" version="2.4.0"/>
@@ -534,7 +534,7 @@
   </extension>
 </addon>
 
-<addon id="skin.featherence" version="0.8.0" name="Featherence" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.8.1" name="Featherence" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.gui" version="5.14.0"/>
 	<import addon="script.featherence.service" version="0.2.14"/>

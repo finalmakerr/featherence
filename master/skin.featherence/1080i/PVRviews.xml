@@ -36,7 +36,6 @@
 		  <height>1000</height>
 		  <pagecontrol>10</pagecontrol>
 		  <scrolltime>0</scrolltime>
-		  <!--<progresstexture description="A texture which indicates the current progress time" colordiffuse="BBFFFFFF" border="1">progress/ProgressBG.png</progresstexture>-->
 		  <timeblocks description="The number of timeframes on the top row.">20</timeblocks>
 		  <rulerunit description="Timeframe of each unit on the top row. 1 unit equals 5 minutes.">6</rulerunit>
 		  <include>4ways</include>
@@ -63,7 +62,7 @@
 			  <aligny>center</aligny>
 			  <textcolor>grey</textcolor>
 			  <selectedcolor>yellow</selectedcolor>
-			  <info>ListItem.ChannelNumber</info>
+			  <info>ListItem.ChannelNumberLabel</info>
 			</control>
 			<control type="image" description="כפתור">
 			  <posx>50</posx>
@@ -102,7 +101,7 @@
 			  <aligny>center</aligny>
 			  <textcolor>yellow</textcolor>
 			  <selectedcolor>yellow</selectedcolor>
-			  <info>ListItem.ChannelNumber</info>
+			  <info>ListItem.ChannelNumberLabel</info>
 			</control>
 			<control type="image" description="כפתור">
 			  <posx>50</posx>

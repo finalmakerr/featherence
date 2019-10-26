@@ -15,10 +15,6 @@
 	  <control type="progress" id="10" description="Progressbar">
 	    <visible>!Window.IsVisible(DialogProgress.xml) + !Window.IsVisible(DialogYesNo.xml) + !Window.IsVisible(DialogOK.xml)</visible>
 		<height>20</height>
-		<texturebg border="5,0,5,0">progress/ProgressBG.png</texturebg>
-		<midtexture border="0,1,0,1">progress/ProgressM.png</midtexture>
-		<righttexture border="1,1,5,1">progress/ProgressR.png</righttexture>
-		<lefttexture border="5,1,1,1">progress/ProgressL.png</lefttexture>
 		<visible>!Window.IsVisible(10100)</visible>
 	  </control>
   </include>
@@ -115,11 +111,8 @@
 	</control>
 	<control type="progress" description="Progressbar">
 	  <posy>-10</posy>
+	  <width>600</width>
 	  <height>20</height>
-	  <texturebg border="5,0,5,0">progress/ProgressBG.png</texturebg>
-	  <midtexture border="0,1,0,1">progress/ProgressM.png</midtexture>
-	  <righttexture border="1,1,5,1">progress/ProgressR.png</righttexture>
-	  <lefttexture border="5,1,1,1">progress/ProgressL.png</lefttexture>
 	  <info>System.Progressbar</info>
 	  <visible>!Window.IsVisible(10100)</visible>
 	</control>
@@ -1097,10 +1090,6 @@
           <posy>60</posy>
           <width>100</width>
           <height>10</height>
-          <texturebg>progress/ProgressBG.png</texturebg>
-          <midtexture>progress/ProgressM.png</midtexture>
-          <righttexture>progress/ProgressR.png</righttexture>
-          <lefttexture>progress/ProgressL.png</lefttexture>
         </control>
 		<control type="label" description="">
 		  <include>LabelC7</include>

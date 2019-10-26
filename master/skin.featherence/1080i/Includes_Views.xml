@@ -487,10 +487,6 @@
 		  <posy>10</posy>
 		  <width>120</width>
 		  <height>13</height>
-		  <texturebg>MusicOSD/ProgressBG.png</texturebg>
-		  <midtexture>MusicOSD/ProgressM.png</midtexture>
-		  <righttexture>MusicOSD/ProgressR.png</righttexture>
-		  <lefttexture>MusicOSD/ProgressL.png</lefttexture>
 		  <info>ListItem.Progress</info>
 		</control>
 		<control type="label" description="EndTime">

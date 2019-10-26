@@ -126,10 +126,10 @@
 			<altlabel>208</altlabel>
 			<width>100</width>
 			<height>100</height>
-			<onclick>PlayerControl(Record)</onclick>
-			<enable>Player.CanRecord</enable>
-			<usealttexture>Player.Recording</usealttexture>
-			<visible>[VideoPlayer.Content(LiveTV) | Pvr.IsPlayingTv] + Player.CanRecord</visible>
+			<onclick>PVR.ToggleRecordPlayingChannel</onclick>
+			<enable>PVR.CanRecordPlayingChannel</enable>
+			<usealttexture>PVR.IsRecordingPlayingChannel</usealttexture>
+			<visible>[VideoPlayer.Content(LiveTV) | Pvr.IsPlayingTv] + PVR.CanRecordPlayingChannel</visible>
 		</control>		
 		<control type="button" id="807">
 			<texturefocus>osd/buttons/OSDChannelListFO.png</texturefocus>

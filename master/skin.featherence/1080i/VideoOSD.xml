@@ -55,32 +55,32 @@
 				<onright>202</onright>
 				<visible>Player.HasMedia</visible>
 				<control type="togglebutton" id="698" description="מיקום כפתורי OSD">
-					<texturefocus>osd/buttons/OSDChannelUPFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDChannelUPNF.png</texturenofocus>
-					<alttexturefocus>osd/buttons/OSDChannelDownFO.png</alttexturefocus>
-					<alttexturenofocus>osd/buttons/OSDChannelDownNF.png</alttexturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDChannelUPFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDChannelUPNF.png</texturenofocus>
+					<alttexturefocus border="20,20,20,20">osd/buttons/OSDChannelDownFO.png</alttexturefocus>
+					<alttexturenofocus border="20,20,20,20">osd/buttons/OSDChannelDownNF.png</alttexturenofocus>
 					<usealttexture>Skin.HasSetting(OSDPosition)</usealttexture>
-                    <width>100</width>
-					<height>100</height>
+                    <width>120</width>
+					<height>120</height>
 					<onclick>Skin.ToggleSetting(OSDPosition)</onclick>
 					<onclick>Action(Close)</onclick>
 					<visible>!String.IsEmpty(Window(home).Property(OSDPlus))</visible>
 				</control>
 				<control type="button" id="699" description="עדכון ספרייה">
-					<texturefocus>osd/buttons/OSDMinusFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDMinusNF.png</texturenofocus>
-                    <width>100</width>
-					<height>100</height>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDMinusFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDMinusNF.png</texturenofocus>
+                    <width>120</width>
+					<height>120</height>
 					<onclick>UpdateLibrary(video)</onclick>
 					<visible>Library.IsScanningVideo</visible>
 				</control>
 				<control type="togglebutton" id="611" description="Repeat">
-					<texturefocus>osd/buttons/OSDRepeatFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDRepeatNF.png</texturenofocus>
-					<alttexturefocus>osd/buttons/OSDRepeatAllFO.png</alttexturefocus>
-					<alttexturenofocus>osd/buttons/OSDRepeatAllNF.png</alttexturenofocus>
-					<width>100</width>
-					<height>100</height>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDRepeatFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDRepeatNF.png</texturenofocus>
+					<alttexturefocus border="20,20,20,20">osd/buttons/OSDRepeatAllFO.png</alttexturefocus>
+					<alttexturenofocus border="20,20,20,20">osd/buttons/OSDRepeatAllNF.png</alttexturenofocus>
+					<width>120</width>
+					<height>120</height>
 					<usealttexture>Playlist.IsRepeat | Playlist.IsRepeatOne</usealttexture>
 					<onclick>PlayerControl(RepeatAll)</onclick>
 					<altclick>PlayerControl(RepeatOff)</altclick>
@@ -90,12 +90,12 @@
 				</control>	
 				<control type="togglebutton" id="612" description="Audio">
 				    <enable>Player.HasAudio</enable>
-					<texturefocus>osd/buttons/OSDRandomOffFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDRandomOffNF.png</texturenofocus>
-					<alttexturefocus>osd/buttons/OSDRandomOnFO.png</alttexturefocus>
-					<alttexturenofocus>osd/buttons/OSDRandomOnNF.png</alttexturenofocus>
-					<width>100</width>
-					<height>100</height>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDRandomOffFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDRandomOffNF.png</texturenofocus>
+					<alttexturefocus border="20,20,20,20">osd/buttons/OSDRandomOnFO.png</alttexturefocus>
+					<alttexturenofocus border="20,20,20,20">osd/buttons/OSDRandomOnNF.png</alttexturenofocus>
+					<width>120</width>
+					<height>120</height>
 					<usealttexture>Playlist.IsRandom</usealttexture>
 					<onclick>PlayerControl(Random)</onclick>
 					<altclick>PlayerControl(Random)</altclick>
@@ -104,46 +104,46 @@
 				</control>
 			    <control type="button" id="700" description="Bookmark">
 					<textoffsety>60</textoffsety>
-					<texturefocus>osd/buttons/OSDBookMarksFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDBookMarksNF.png</texturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDBookMarksFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDBookMarksNF.png</texturenofocus>
 					<label></label>
-					<width>100</width>
-					<height>100</height>
+					<width>120</width>
+					<height>120</height>
 					<onclick>ActivateWindow(videobookmarks)</onclick>
 					<visible>false</visible>
 				</control>
 				<control type="button" id="701" description="הגדרות אודיו">
-					<texturefocus>osd/buttons/OSDAudioSFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDAudioSNF.png</texturenofocus>
-                    <width>100</width>
-					<height>100</height>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDAudioSFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDAudioSNF.png</texturenofocus>
+                    <width>120</width>
+					<height>120</height>
 					<onclick>ActivateWindow(osdaudiosettings)</onclick>
 					<visible>!String.IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(VideoAudioOSDAlwaysOn) + Player.HasVideo</visible>
 				</control>
 				<control type="button" id="702" description="הגדרות וידאו">
-					<texturefocus>osd/buttons/OSDVideoFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDVideoNF.png</texturenofocus>
-					<width>100</width>
-					<height>100</height>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDVideoFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDVideoNF.png</texturenofocus>
+					<width>120</width>
+					<height>120</height>
 					<onclick>ActivateWindow(osdvideosettings)</onclick>
 					<visible>!String.IsEmpty(Window(home).Property(OSDPlus)) | Skin.HasSetting(VideoAudioOSDAlwaysOn)</visible>
 					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="button" id="709" description="רשימת השמעה">
-					<texturefocus>osd/buttons/OSDBookMarksFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDBookMarksNF.png</texturenofocus>
-					<width>100</width>
-					<height>100</height>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDBookMarksFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDBookMarksNF.png</texturenofocus>
+					<width>120</width>
+					<height>120</height>
 					<onclick>Dialog.Close(videoosd)</onclick>
 					<onclick>ActivateWindow(videoplaylist)</onclick>
 					<visible>!String.IsEmpty(Window(home).Property(OSDPlus)) + [Integer.IsGreater(Playlist.Length(video),1) | Integer.IsGreater(Playlist.Length(music),1)]</visible>
 				</control>
 				<control type="button" id="705" description="3D">
-					<texturefocus>osd/buttons/OSDStereoscopicFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDStereoscopicNF.png</texturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDStereoscopicFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDStereoscopicNF.png</texturenofocus>
 					<label></label>
-					<width>100</width>
-					<height>100</height>
+					<width>120</width>
+					<height>120</height>
 					<ondown>NextStereoMode</ondown>
 					<onup>PreviousStereoMode</onup>
 					<onclick>ToggleStereoMode</onclick>
@@ -154,22 +154,22 @@
 					<!--<visible>String.IsEqual(VideoPlayer.VideoResolution,720) | String.IsEqual(VideoPlayer.VideoResolution,1080) | String.IsEqual(VideoPlayer.VideoResolution,4K)</visible>-->
 				</control>				
 				<control type="togglebutton" id="603" description="הפסק">
-					<texturefocus>osd/buttons/OSDStopFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDStopNF.png</texturenofocus>
-					<alttexturefocus>osd/buttons/OSDStop2FO.png</alttexturefocus>
-					<alttexturenofocus>osd/buttons/OSDStop2NF.png</alttexturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDStopFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDStopNF.png</texturenofocus>
+					<alttexturefocus border="20,20,20,20">osd/buttons/OSDStop2FO.png</alttexturefocus>
+					<alttexturenofocus border="20,20,20,20">osd/buttons/OSDStop2NF.png</alttexturenofocus>
 					<usealttexture>!String.IsEmpty(Window(home).Property(OSDPlus))</usealttexture>
-					<width>100</width>
-					<height>100</height>
+					<width>120</width>
+					<height>120</height>
 					<onclick>PlayerControl(Stop)</onclick>
 					<onup condition="String.IsEmpty(Window(home).Property(OSDPlus))">SetProperty(OSDPlus,true,home)</onup>
 					<onup condition="!String.IsEmpty(Window(home).Property(OSDPlus))">ClearProperty(OSDPlus,home)</onup>
 				</control>
 				<control type="button" id="613" description="Audio">
-					<texturefocus>osd/buttons/OSDLyricsFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDLyricsNF.png</texturenofocus>
-                    <width>100</width>
-					<height>100</height>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDLyricsFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDLyricsNF.png</texturenofocus>
+                    <width>120</width>
+					<height>120</height>
 					<!--<onclick>close</onclick>-->
 					<onclick condition="String.IsEmpty(Skin.String(LyricPath))">Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
 					<onclick condition="!String.IsEmpty(Skin.String(LyricPath))">XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
@@ -177,10 +177,10 @@
 					<visible>!String.IsEmpty(Window(home).Property(OSDPlus))</visible>
 				</control>
 				<control type="button" id="601" description="אחורה">
-					<texturefocus>osd/buttons/OSDRewindFO+.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDRewindNF.png</texturenofocus>
-					<width>100</width>
-					<height>100</height>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDRewindFO+.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDRewindNF.png</texturenofocus>
+					<width>120</width>
+					<height>120</height>
 					<onup>PlayerControl(Previous)</onup>		
 					<onclick condition="Player.Paused">PlayerControl(Play)</onclick>
 					<onclick>PlayerControl(Rewind)</onclick>
@@ -191,87 +191,87 @@
 				</control>
 				<control type="button" id="803" description="ערוץ קודם">
 					<textoffsety>60</textoffsety>
-					<texturefocus>osd/buttons/OSDChannelDownFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDChannelDownNF.png</texturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDChannelDownFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDChannelDownNF.png</texturenofocus>
 					<label></label>
-					<width>100</width>
-					<height>100</height>
+					<width>120</width>
+					<height>120</height>
 					<onclick>PlayerControl(Next)</onclick>
 					<visible>Player.NextEnabled + VideoPlayer.Content(LiveTV)</visible>
 				</control>						
 				<control type="togglebutton" id="602" description="נגן/עצור">
 					<altclick condition="Player.Paused">PlayerControl(Play)</altclick>
-					<texturefocus>osd/buttons/OSDPauseFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDPauseNF.png</texturenofocus>
-					<alttexturefocus>osd/buttons/OSDPlayFO.png</alttexturefocus>
-					<alttexturenofocus>osd/buttons/OSDPlayNF.png</alttexturenofocus>
-					<width>100</width>
-					<height>100</height>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDPauseFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDPauseNF.png</texturenofocus>
+					<alttexturefocus border="20,20,20,20">osd/buttons/OSDPlayFO.png</alttexturefocus>
+					<alttexturenofocus border="20,20,20,20">osd/buttons/OSDPlayNF.png</alttexturenofocus>
+					<width>120</width>
+					<height>120</height>
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 					<onclick>PlayerControl(Play)</onclick>
 					<visible>Player.PauseEnabled</visible>
 					<!--<visible>!String.Contains(Player.FolderPath,rtmp://) + !String.Contains(Player.FolderPath,mms://)</visible>-->
 				</control>
 				<control type="button" id="802" description="ערוץ הבא">
-					<texturefocus>osd/buttons/OSDChannelUPFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDChannelUPNF.png</texturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDChannelUPFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDChannelUPNF.png</texturenofocus>
 					<label></label>
-					<width>100</width>
-					<height>100</height>
+					<width>120</width>
+					<height>120</height>
 					<onclick>PlayerControl(Previous)</onclick>
 					<visible>Player.PreviousEnabled + VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="togglebutton" id="804" description="הקלטה">
-					<texturefocus>osd/buttons/OSDRecordOffFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDRecordOffNF.png</texturenofocus>
-					<alttexturefocus>osd/buttons/OSDRecordOnFO.png</alttexturefocus>
-					<alttexturenofocus>osd/buttons/OSDRecordOnNF.png</alttexturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDRecordOffFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDRecordOffNF.png</texturenofocus>
+					<alttexturefocus border="20,20,20,20">osd/buttons/OSDRecordOnFO.png</alttexturefocus>
+					<alttexturenofocus border="20,20,20,20">osd/buttons/OSDRecordOnNF.png</alttexturenofocus>
 					<label></label>
 					<altlabel>208</altlabel>
-					<width>100</width>
-					<height>100</height>
-					<onclick>PlayerControl(Record)</onclick>
-					<enable>Player.CanRecord</enable>
-					<usealttexture>Player.Recording</usealttexture>
-					<visible>[VideoPlayer.Content(LiveTV) | Pvr.IsPlayingTv] + Player.CanRecord</visible>
+					<width>120</width>
+					<height>120</height>
+					<onclick>PVR.ToggleRecordPlayingChannel</onclick>
+					<enable>PVR.CanRecordPlayingChannel</enable>
+					<usealttexture>PVR.IsRecordingPlayingChannel</usealttexture>
+					<visible>[VideoPlayer.Content(LiveTV) | Pvr.IsPlayingTv] + PVR.CanRecordPlayingChannel</visible>
 				</control>		
 				<control type="button" id="807">
-					<texturefocus>osd/buttons/OSDChannelListFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDChannelListNF.png</texturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDChannelListFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDChannelListNF.png</texturenofocus>
 					<label></label>
-					<width>100</width>
-					<height>100</height>
+					<width>120</width>
+					<height>120</height>
 					<onclick>Dialog.close(VideoOSD)</onclick>
 					<onclick>ActivateWindow(PVROSDChannels)</onclick>
 					<visible>VideoPlayer.Content(LiveTV) | Pvr.IsPlayingTv</visible>
 					<visible>VideoPlayer.IsFullscreen</visible>
 				</control>
 				<control type="button" id="808">
-					<texturefocus>osd/buttons/OSDepgFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDepgNF.png</texturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDepgFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDepgNF.png</texturenofocus>
 					<label></label>
-					<width>100</width>
-					<height>100</height>
+					<width>120</width>
+					<height>120</height>
 					<onclick condition="VideoFullScreen.xml">Action(Back)</onclick>					
 					<onclick>ActivateWindow(PVROSDGuide)</onclick>
 					<visible>Pvr.HasEpg | VideoPlayer.HasEpg</visible>
 					<visible>false</visible>
 				</control>
 				<control type="button" id="810">
-					<texturefocus>osd/buttons/OSDTeleTextFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDTeleTextNF.png</texturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDTeleTextFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDTeleTextNF.png</texturenofocus>
 					<label></label>
-					<width>100</width>
-					<height>100</height>
+					<width>120</width>
+					<height>120</height>
 					<onclick>ActivateWindow(Teletext)</onclick>
 					<visible>Pvr.HasTxt</visible>
 				</control>				
 				<control type="button" id="604" description="קדימה">
-					<texturefocus>osd/buttons/OSDForwardFO+.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDForwardNF.png</texturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDForwardFO+.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDForwardNF.png</texturenofocus>
 					<label></label>
-					<width>100</width>
-					<height>100</height>
+					<width>120</width>
+					<height>120</height>
 					<onup>PlayerControl(Next)</onup>	
 					<onclick condition="Player.Paused">PlayerControl(Play)</onclick>
 					<onclick>PlayerControl(Forward)</onclick>
@@ -281,13 +281,13 @@
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="togglebutton" id="703" description="תרגום">
-					<texturefocus>osd/buttons/OSDSubtitlesFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDSubtitlesNF.png</texturenofocus>
-					<alttexturefocus>osd/buttons/OSDSubtitles2FO.png</alttexturefocus>
-					<alttexturenofocus>osd/buttons/OSDSubtitles2NF.png</alttexturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDSubtitlesFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDSubtitlesNF.png</texturenofocus>
+					<alttexturefocus border="20,20,20,20">osd/buttons/OSDSubtitles2FO.png</alttexturefocus>
+					<alttexturenofocus border="20,20,20,20">osd/buttons/OSDSubtitles2NF.png</alttexturenofocus>
 					<usealttexture>!VideoPlayer.SubtitlesEnabled | !VideoPlayer.HasSubtitles</usealttexture>
-					<width>100</width>
-					<height>100</height>
+					<width>120</width>
+					<height>120</height>
 					<onup condition="VideoPlayer.HasSubtitles">SubtitleDelayPlus</onup>
 					<ondown condition="VideoPlayer.HasSubtitles">SubtitleDelayMinus</ondown>
 					<ondown condition="!VideoPlayer.HasSubtitles">close</ondown>
@@ -301,20 +301,20 @@
 					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="button" id="704" description="DVD">
-					<texturefocus>osd/buttons/OSDDvdFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDDvdNF.png</texturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDDvdFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDDvdNF.png</texturenofocus>
 					<label></label>
-					<width>100</width>
-					<height>100</height>
+					<width>120</width>
+					<height>120</height>
 					<onclick>PlayerControl(ShowVideoMenu)</onclick>
 					<visible>VideoPlayer.HasMenu</visible>
 				</control>
 			    <control type="button" id="706" description="מידע">
-					<texturefocus>osd/buttons/OSDInfoFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDInfoNF.png</texturenofocus>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDInfoFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDInfoNF.png</texturenofocus>
 					<label></label>
-					<width>100</width>
-					<height>100</height>
+					<width>120</width>
+					<height>120</height>
 					<onclick>Action(Info)</onclick>
 					<onclick>Action(Left)</onclick>
 					<onclick>SetProperty(VideoPlayer.Info, true, home)</onclick>
@@ -322,12 +322,12 @@
 				</control>
 				<control type="togglebutton" id="707" description="Volume">
 				    <enable>true</enable>
-					<texturefocus>osd/buttons/OSDAudioFO.png</texturefocus>
-					<texturenofocus>osd/buttons/OSDAudioNF.png</texturenofocus>
-					<alttexturefocus>osd/buttons/OSDAudio2FO.png</alttexturefocus>
-					<alttexturenofocus>osd/buttons/OSDAudio2NF.png</alttexturenofocus>
-					<width>100</width>
-					<height>100</height>
+					<texturefocus border="20,20,20,20">osd/buttons/OSDAudioFO.png</texturefocus>
+					<texturenofocus border="20,20,20,20">osd/buttons/OSDAudioNF.png</texturenofocus>
+					<alttexturefocus border="20,20,20,20">osd/buttons/OSDAudio2FO.png</alttexturefocus>
+					<alttexturenofocus border="20,20,20,20">osd/buttons/OSDAudio2NF.png</alttexturenofocus>
+					<width>120</width>
+					<height>120</height>
 					<usealttexture>Player.Muted | Integer.IsLess(Player.Volume,1)</usealttexture>
 					<onup>Action(VolumeUp)</onup>
 					<ondown>Action(VolumeDown)</ondown>

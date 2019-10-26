@@ -4,67 +4,67 @@
   <include name="Content_Custom1173_100">
     <item id="20" description="כפתורי בית">
 		<label>$LOCALIZE[31066]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
 	<item id="28" description="פאנארט">
 		<label>$LOCALIZE[20445]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
 	<item id="26" description="עיצוב עליון">
 		<label>$LOCALIZE[31064]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
 	<item id="21" description="כפתורי תפריט">
 		<label>$LOCALIZE[31061]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
 	<item id="27" description="מקלדת">
 		<label>$LOCALIZE[31065]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
 	<item id="24" description="עכבר">
 		<label>$LOCALIZE[31436]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
 	<item id="30" description="ו'ידגט">
 		<label>$LOCALIZE[31078]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
 	<item id="23" description="עוצמה">
 		<label>13376</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
 	<item id="22" description="דיאלוגים">
 		<label>$LOCALIZE[31062]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
 	<item id="32" description="מעברים">
 		<label>$LOCALIZE[31510]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
 	<item id="29" description="מסך מגע">
 		<label>$LOCALIZE[31083]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
 	<item id="31" description="נעילת סיסמא">
 		<label>$LOCALIZE[31079]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
 	<item id="25" description="מתקדם">
 		<label>10038</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	
   </include>
@@ -72,44 +72,44 @@
   <include name="Content_Settings_100">
     <item id="2">
 		<label>Featherence</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	<item id="1" description="כללי">
 		<label>128</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	<item id="3" description="הרחבות">
 		<label>24001</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	<item id="4" description="קבצים">
 		<label>1214</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
   </include>
   
   <include name="Content_Custom1170_100">
     <item id="1" description="כללי">
 		<label>128</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	<item id="2" description="וידאו">
 		<label>3</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	<item id="3" description="כלים">
 		<label>$LOCALIZE[77473]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 		<visible>System.HasAddon(script.featherence.install)</visible>
 	</item>
 	<item id="4" description="מתקדם">
 		<label>$LOCALIZE[10038]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 		<visible>false</visible>
 	</item>
 	<item id="5">
 		<label>featherence</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 		<visible>false</visible>
 	</item>
   </include>
@@ -117,26 +117,26 @@
   <include name="Content_Custom1172_100">
       <item id="1" description="כללי">
 		<label>128</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	<item id="2" description="וידאו">
 		<label>3</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 		<visible>false</visible>
 	</item>
 	<item id="3">
 		<label>כלים</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 		<visible>false</visible>
 	</item>
 	<item id="4">
 		<label>מתקדם</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 		<visible>false</visible>
 	</item>
 	<item id="5">
 		<label>featherence</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 		<visible>false</visible>
 	</item>
   </include>
@@ -144,19 +144,19 @@
   <include name="Content_SkinSettings_100">
 	<item id="1" description="כללי">
 		<label>128</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	<item id="2" description="הפעלה">
 		<label>$LOCALIZE[31856]</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	<item id="3" description="Add-in">
 		<label>Add-in</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 	<item id="4" description="Advanced">
 		<label>10038</label>
-		<onclick>noop</onclick>
+		<!--<onclick>noop</onclick>-->
 	</item>
 
   </include>
@@ -1735,10 +1735,6 @@
 	</control>
 	<control type="progress" id="22" description="CPU BAR">
 	  <height>15</height>
-	  <texturebg border="0,5,5,0">MusicOSD/ProgressBG.png</texturebg>
-	  <midtexture border="0,5,0,5">MusicOSD/ProgressM.png</midtexture>
-	  <righttexture border="0,5,6,5">MusicOSD/ProgressR.png</righttexture>
-	  <lefttexture border="6,5,0,5">MusicOSD/ProgressL.png</lefttexture>
 	  <overlaytexture>-</overlaytexture>
 	  <info>System.CPUUsage</info>
 	</control>
@@ -1750,11 +1746,6 @@
 	<control type="progress" id="24">
 	  <description>Memory BAR</description>
 	  <height>15</height>
-	  
-	  <texturebg border="0,5,5,0">MusicOSD/ProgressBG.png</texturebg>
-	  <midtexture border="0,5,0,5">MusicOSD/ProgressM.png</midtexture>
-	  <righttexture border="0,5,6,5">MusicOSD/ProgressR.png</righttexture>
-	  <lefttexture border="6,5,0,5">MusicOSD/ProgressL.png</lefttexture>
 	  <overlaytexture>-</overlaytexture>
 	  <info>system.memory(used)</info>
 	</control>
