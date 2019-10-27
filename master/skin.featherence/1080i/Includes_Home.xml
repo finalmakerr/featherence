@@ -146,6 +146,7 @@
 	  <onup condition="Control.IsVisible(700) + ![Window.IsVisible(CustomHomeCustomizer.xml) + !String.IsEmpty(Window(1117).Property(HideInactiveButtons))]">700</onup>
 	  <onup condition="Control.IsVisible(7011)">7017</onup>
 	  <onup condition="Control.IsVisible(9009)">9009</onup>
+	  <onup condition="!Control.IsVisible(9009) + Player.HasMedia">ActivateWindow(12901)</onup>
 	  <!--<onup>520</onup>-->
 	  <ondown>noop</ondown>
 	  <scrolltime tween="sine" easing="out">220</scrolltime>
@@ -182,6 +183,7 @@
 	  <onup condition="Control.IsVisible(316) + Integer.IsGreater(Container(316).NumItems,1)">316</onup>
 	  <onup condition="Control.IsVisible(7011)">7017</onup>
 	  <onup condition="Control.IsVisible(9009)">9009</onup>
+	  <onup condition="!Control.IsVisible(9009) + Player.HasMedia">ActivateWindow(12901)</onup>
 	  <!--<onup>520</onup>-->
 	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + String.IsEqual(Container(9000).ListItemNoWrap(0).Property(sub),$LOCALIZE[20122]) + Skin.HasSetting(SubMenuAction) + [String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect)) | !Skin.String(PassProtect)]">ActivateWindow(1138)</ondown>
 	  <ondown>noop</ondown>
@@ -222,6 +224,7 @@
 	  <onup condition="Control.IsVisible(316) + Integer.IsGreater(Container(316).NumItems,1)">316</onup>
 	  <onup condition="Control.IsVisible(7011)">7017</onup>
 	  <onup condition="Control.IsVisible(9009)">9009</onup>
+	  <onup condition="!Control.IsVisible(9009) + Player.HasMedia">ActivateWindow(12901)</onup>
 	  <!--<onup>520</onup>-->
 	  <ondown description="openSUB-horizontal" condition="!Window.IsVisible(CustomHomeCustomizer.xml) + String.IsEqual(Container(9000).ListItem(0).Property(sub),$LOCALIZE[20122]) + Skin.HasSetting(SubMenuAction) + [String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) | !String.IsEmpty(Container(9000).ListItem(0).Property(pwd)) + !String.IsEmpty(Window(home).Property(PassProtect)) | !Skin.String(PassProtect)]">ActivateWindow(1138)</ondown>
 	  <ondown>noop</ondown>

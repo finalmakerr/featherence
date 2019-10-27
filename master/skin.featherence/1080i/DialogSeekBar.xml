@@ -2,6 +2,7 @@
 <window>
 	<zorder>2</zorder>
 	<visible>[Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding | Player.Paused | Player.Caching | Player.ShowInfo | Player.ShowTime | Player.IsTempo | Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]</visible>
+	<visible>[Window.IsActive(FullscreenVideo) | Window.IsActive(FullscreenGame) | Window.IsActive(Visualisation) | Window.IsActive(subtitlesearch)] + Player.Paused + !Player.ShowInfo</visible>
 	<depth>DepthOSD</depth>
 	<controls>
 		<include>DialogSeekBar</include>

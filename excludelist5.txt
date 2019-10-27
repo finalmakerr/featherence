@@ -1,14 +1,3 @@
-\#\
-.rar
-\_\
-\__\
-.pdf
-.psd
-.xbt
-Thumbs.db
-script.module.featherence.emu\system\dc\vmu
-script.module.featherence.emu\system\dc\data\
-.retroarch-game-history.txt
 modules.py\
 variables.py\
 launcher_plugin.py\
