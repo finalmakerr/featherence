@@ -8427,6 +8427,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>20feedcea92c5c40a177Ce1885501f51</id>
+					<name>110-in-1</name>
+					<filename>rom_pathNintendo/_2P/110-in-1.zip</filename>
+					<thumb>rom_pathNintendo/_2P/_Artwork/boxfront/110-in-1.jpg</thumb>
+					<fanart>rom_pathNintendo/_2P/_Artwork/screenshot/110-in-1.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>2f0fa88d4977fcc3747c22d0e023ffe6</id>
 					<name>Joust</name>
 					<filename>rom_pathNintendo/_2P/Joust.zip</filename>
@@ -10506,13 +10521,73 @@
 					<name>Comix Zone</name>
 					<filename>rom_pathSega Genesis/_1P/Comix Zone.zip</filename>
 					<thumb>rom_pathSega Genesis/_1P/_Artwork/boxfront/Comix Zone.png</thumb>
-					<fanart>rom_pathSega Genesis/_1P/_Artwork/screenshot/Comix Zone.jpg</fanart>
+					<fanart>rom_pathSega Genesis/_1P/_Artwork/screenshot/Comix Zone.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Action / Fighting</genre>
 					<release>1995</release>
 					<publisher>SEGA</publisher>
 					<gameplot>ENTER THE COMIX ZONE: THE FIRST TRULY INTERACTIVE COMIC BOOK! Play as Sketch Turner, a street-wise comic book artist who gets trapped in the comic book world of his own creation. Warp into the Comix Zone with all the action and adventure of your favorite comics! Battle panel by panel through full comic book pages drawn by real comic book artists! Sharpen your fighting skills to defeat mutant enemies drawn in by Mortus, public enemy no. 1. Rip up the page with superhero power-ups and tons of intense fighting moves!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>4171c11114cd2dcf45312a0b51dd1711</id>
+					<name>Batman Returns</name>
+					<filename>rom_pathSega Genesis/_1P/Batman Returns.zip</filename>
+					<thumb>rom_pathSega Genesis/_1P/_Artwork/boxfront/Batman Returns.png</thumb>
+					<fanart>rom_pathSega Genesis/_1P/_Artwork/screenshot/Batman Returns.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>1992</release>
+					<publisher>SEGA</publisher>
+					<gameplot>The Genesis title based on Batman Returns is a platform game in which the Dark Knight must traverse five action-filled levels on his way to confront the Penguin.Areas include the rooftops of Gotham City, Max Shreck's department store, the Red Triangle Circus and the sewers. Besides run-and-jump action, there's also a lot of combat in the game, as many of the Penguin's henchmen stand in Batman's way. He can knock them out with punches and kicks and a number of extra weapons stored in his utility belt. These include batarangs, which come in standard and self-seeking varieties, and smoke bombs that stun enemies for a while. In addition, Batman can shoot from his grappling gun and unleash a deadly swarm of bats towards enemies. All of these weapons have limited ammo, however, that must be collected.Other special tools Batman can use include the grappling hook to reach high places or swing across chasms, and his cape, which can be used to slow falls.Each of the five levels features several boss battles against Catwoman, the Penguin and others.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>4171c11114cd2dcf45311b0b51dd1711</id>
+					<name>688 Attack Sub</name>
+					<filename>rom_pathSega Genesis/_1P/688 Attack Sub.zip</filename>
+					<thumb>rom_pathSega Genesis/_1P/_Artwork/boxfront/688 Attack Sub.jpg</thumb>
+					<fanart>rom_pathSega Genesis/_1P/_Artwork/screenshot/688 Attack Sub.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>4171c11114cd2dcf45311b0b51da2711</id>
+					<name>Addams Family Values</name>
+					<filename>rom_pathSega Genesis/_1P/Addams Family Values.zip</filename>
+					<thumb>rom_pathSega Genesis/_1P/_Artwork/boxfront/Addams Family Values.jpg</thumb>
+					<fanart>rom_pathSega Genesis/_1P/_Artwork/screenshot/Addams Family Values.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>4171c11111bd2dcf45311b0b51da2711</id>
+					<name>Alex Kidd in the Enchanted Castle</name>
+					<filename>rom_pathSega Genesis/_1P/Alex Kidd in the Enchanted Castle.zip</filename>
+					<thumb>rom_pathSega Genesis/_1P/_Artwork/boxfront/Alex Kidd in the Enchanted Castle.jpg</thumb>
+					<fanart>rom_pathSega Genesis/_1P/_Artwork/screenshot/Alex Kidd in the Enchanted Castle.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
