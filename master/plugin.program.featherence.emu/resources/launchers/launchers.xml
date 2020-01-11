@@ -15902,21 +15902,6 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2b1d81ea61668385a37ed78fde0007</id>
-					<name>Resident Evil 3 - Nemesis</name>
-					<filename>rom_pathDreamcast/_1P/Resident Evil 3 - Nemesis/Resident Evil 3 - Nemesis.gdi</filename>
-					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Resident Evil 3 - Nemesis.jpg</thumb>
-					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Resident Evil 3 - Nemesis.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Action</genre>
-					<release>2000</release>
-					<publisher>Capcom</publisher>
-					<gameplot>Resident Evil 3 takes place during the events of Resident Evil 2. The midwestern town of Raccoon City is in ruins, having been overrun with the undead creating T-virus thanks to the wacky hijinks of William Birkin and Umbrella Inc. The player must guide Jill "master of unlocking" Valentine (one of the two main protagonists of the original Resident Evil) out of the city alive. Along the way, Jill will interact with and receive help from (or hindered by) three Umbrella mercenaries who are also stranded in Raccoon City. Standing in the way of your group's last escape are a horde of flesh-eating zombified citizens, homicidal mutants, and a relentless killing machine known only as Nemesis who is determined to hunt down and kill the survivors of the original Resident Evil, including Jill.</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
 					<id>7d2b1d81ea61668385a37ed78fde0062</id>
 					<name>Rez</name>
 					<filename>rom_pathDreamcast/_1P/Rez/Rez.gdi</filename>
@@ -17836,10 +17821,10 @@
 			<roms>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f2p0000</id>
-					<name>Bloody Roar Primal Fury</name>
-					<filename>rom_pathGameCube/_2P/Bloody Roar Primal Fury.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Bloody Roar Primal Fury.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Bloody Roar Primal Fury.jpg</fanart>
+					<name>Bloody Roar - Primal Fury</name>
+					<filename>rom_pathGameCube/_2P/Bloody Roar - Primal Fury.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Bloody Roar - Primal Fury.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Bloody Roar - Primal Fury.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Fighting</genre>
@@ -18150,21 +18135,6 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37eda8f2p0010</id>
-					<name>Mortal Kombat Deadly Alliance</name>
-					<filename>rom_pathGameCube/_2P/Mortal Kombat Deadly Alliance.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Mortal Kombat Deadly Alliance.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Mortal Kombat Deadly Alliance.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Fighting</genre>
-					<release>2002</release>
-					<publisher>Midway</publisher>
-					<gameplot>Two powerful sorcerers, Shang Tsung and Quan Chi, have joined forces to achieve the supreme goal: immortality. Will earth survive their deadly alliance?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
 					<id>7d2gcd81ea61668585a37ed78f2p0010</id>
 					<name>Need For Speed Underground 2</name>
 					<filename>rom_pathGameCube/_2P/Need For Speed Underground 2.iso</filename>
@@ -18357,7 +18327,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0002</id>
-					<name>Custom Robo</name>
+					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_4P/Custom Robo.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Custom Robo.jpg</thumb>
 					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Custom Robo.jpg</fanart>
