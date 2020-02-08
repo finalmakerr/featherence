@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="2.5.3" provider-name="Sdarot">
+<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="3.5.3" provider-name="Sdarot">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.xbmcswift2" version="2.4.0"/>
