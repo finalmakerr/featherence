@@ -172,6 +172,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d9d1d1cea66668385a37ed78fde3fe2</id>
+					<name>Ajaxj</name>
+					<filename>rom_pathArcade/_1P/ajax.zip</filename>
+					<thumb>rom_pathArcade/_1P/_Artwork/boxfront/ajax.jpg</thumb>
+					<fanart>rom_pathArcade/_1P/_Artwork/screenshot/ajax.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Shooter / Flying Vertical</genre>
+					<release>1987</release>
+					<publisher>Konami</publisher>
+					<gameplot>The player has been issued an emergency order. He must save the earth from being conquered by enemy forces. He climbs into his helicopter and prepares for intense aerial combat. Shooting oncoming enemy aircrafts and bombing the enemies below, he tries to make his way through the different stages to reach the enemy base. When he finishes the first stage, he is transported to his next mission by ab aircraft carrier. He hops into his jet fighters, tanks, ships, helicopters, and aircraft carriers. The player must also be aware of unseen enemies and surprise attacks. Different kinds of power ups can be obtained throughout the game. These include: '3' 3-Way: Bullets fire forward, right, and left. 'L' Laser: Player can shoot double lasers. 'T' Triple: Missiles are fired that spread out three ways in front. 'V' Vulcan: Rapid bullets are fired in the directions controlled. 'B' Bomb: Air to ground missles which can be upgraded twice. 'O' Orbital: A small drone using the same weaponry as the helicopter which can be otained by clearing a special formation of little red fighters. There is an additional super weapon that destroys all the enemies on the screen at once. However, use of this weapon is limited. Ajax contains 2 different types of stages : 2-D and 3-D. In the 2-D stage, the player controls a helicopter. In the 3-D stage, the player commands a jet fighter. Ajax features some impressive graphics filled with rotation and scaling effects (some may get a little dizzy, though!), a solid soundtrack and excellent game control. Highly recommended for any shoot'em up enthusiast!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>5cf6c100ed2b883f119c416c8167ef56</id>
 					<name>Aqua Jack</name>
 					<filename>rom_pathArcade/_1P/aquajack.zip</filename>
@@ -1504,9 +1519,9 @@
 				<rom>
 					<id>909f7cfb383324122568ed37d11d6430</id>
 					<name>Ehrgeiz</name>
-					<filename>rom_pathArcade/_2P/ehrgeiz.zip</filename>
-					<thumb>rom_pathArcade/_2P/_Artwork/boxfront/ehrgeiz.png</thumb>
-					<fanart>rom_pathArcade/_2P/_Artwork/screenshot/ehrgeiz.png</fanart>
+					<filename>rom_pathSony Playstation/_2P/ehrgeiz.zip</filename>
+					<thumb>rom_pathSony Playstation/_2P/_Artwork/boxfront/ehrgeiz.png</thumb>
+					<fanart>rom_pathSony Playstation/_2P/_Artwork/screenshot/ehrgeiz.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Fighter / Versus</genre>
@@ -12679,7 +12694,7 @@
 				<rom>
 					<id>39f8fdbe5f4c4babaf49fa2dfaff6837</id>
 					<name>Warhammer - Dark Omen</name>
-					<filename>rom_pathSony Playstation/_1P/Warhammer - Dark Omen/Warhammer - Dark Omen.m3u</filename>
+					<filename>rom_pathSony Playstation/_1P/Warhammer - Dark Omen/Warhammer - Dark Omen.cue</filename>
 					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Warhammer - Dark Omen.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Warhammer - Dark Omen.jpg</fanart>
 					<trailer></trailer>
@@ -17299,21 +17314,6 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78fp10036</id>
-					<name>Resident Evil</name>
-					<filename>rom_pathGameCube/_1P/Resident Evil.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Resident Evil.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Resident Evil.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Action / Horror</genre>
-					<release>2002</release>
-					<publisher>Capcom</publisher>
-					<gameplot>Turn out the lights. Lock the Doors... Live the nightmare.[CR]Racoon City. Secluded mountain community, plagued by a storm of vicious attacks, is completely overrun. Mutant beasts, blood-thirsty zombies infest the landscape. You are S.T.A.R.S - Special Tactics and Rescue Squad. Your mission: investigate the ominous mansion at the core of the horrific disaster. Uncover secrets behind a radical, genetic research facility. With unspeakable horrors lurking around every corner, the ultimate test may be just to make it out alive!</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10037</id>
 					<name>The Legend of Spyro - A New Beginning</name>
 					<filename>rom_pathGameCube/_1P/The Legend of Spyro - A New Beginning.iso</filename>
@@ -17766,15 +17766,30 @@
 				<rom>
 					<id>7d2gcd81ea61668385a37edw8f2p0055</id>
 					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_1P/Winnie the Pooh's Rumbly Tumbly Adventure.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Winnie the Pooh's Rumbly Tumbly Adventure.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Winnie the Pooh's Rumbly Tumbly Adventure.jpg</fanart>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Adventure / Platform</genre>
 					<release>2005</release>
 					<publisher>Ubisoft</publisher>
 					<gameplot>Join Winnie the Pooh and his friends on five birthday-themed adventures. In Winnie the Pooh Rumbly Tumbly Adventures, you can play as Tigger, Piglet, Eeyore, and Winnie the Pooh. Find as many honey pots as you can, but beware of the mischievous Heffalumps and Woozles, who steal honey. Whether you're finding a new house for Eeyore or helping Tigger out of a sticky situation, you'll experience all the adventures of Pooh and his friends in the Hundred Acre Wood.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2vcd81ea61668385a37edw8f2p0055</id>
+					<name>X-Men - The Official Game</name>
+					<filename>rom_pathGameCube/_1P/X-Men - The Official Game.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/X-Men - The Official Game.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/X-Men - The Official Game.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2006</release>
+					<publisher>Activision</publisher>
+					<gameplot>Master the power of the X-Men--Obliterate enemies and objects as Wolverine, using your lethal adamantium claws and crushing brute force. As Nightcrawler, scale walls, swing from rafters and teleport through environments to surprise enemies. Shoot ice bursts and create hailstorms as lightning-fast Iceman. For even more power, utilize fury and adrenaline modes. Become a part of the X-Men movie universe--Embark on a globe-spanning conflict featuring every element of the X-Men universe--from favorite villains to famous locations such as Alkali Lake, plus the voices and likenesses of key actors from the films. Battle fierce enemies, join forces with comrades--Face off against movie villains such as Pyro, Magneto and Sabretooth, plus added foes like legions of Sentinels. Storm, Colossus and Cyclops join forces with you in gameplay that includes melee fighting, stealth-style action and time-based missions.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17955,21 +17970,6 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78f2p0005</id>
-					<name>Virtua Striker 2002</name>
-					<filename>rom_pathGameCube/_2P/Virtua Striker 2002.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Virtua Striker 2002.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Virtua Striker 2002.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Football / Sports</genre>
-					<release>2002</release>
-					<publisher>Sega</publisher>
-					<gameplot>The Virtua Striker series returns with 64 national football teams from around the world. Whether you play as France, Brazil, or Argentina, you can take your team to the final of the International Cup for a chance to win the trophy. On the road to the International Cup, you'll encounter more than 1,400 different players with their own stats and play in 13 stadiums. Virtua Striker 2002 also includes player edit and replay functions.</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
 					<id>7d2gcd81ea61668385a37ed78f2p0006</id>
 					<name>The Sims Bustin Out</name>
 					<filename>rom_pathGameCube/_2P/The Sims Bustin Out.iso</filename>
@@ -18131,21 +18131,6 @@
 					<release>2003</release>
 					<publisher>Electronic Arts</publisher>
 					<gameplot>Players can discover the open mountain in the newest version of the smash-hit SSX snowboarding franchise. SSX 3 allows gamers to go anywhere gravity will take them. Players will discover a colossal mountain where they can immerse themselves in a free-roaming snow paradise.</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>7d2gcd81ea61668585a37ed78f2p0010</id>
-					<name>Need For Speed Underground 2</name>
-					<filename>rom_pathGameCube/_2P/Need For Speed Underground 2.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Need For Speed Underground 2.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Need For Speed Underground 2.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Racing</genre>
-					<release>2004</release>
-					<publisher>EA</publisher>
-					<gameplot>Need For Speed Underground 2 takes place in Bayview after the events of Need for Speed: Underground. The prologue begins with the player driving in a Nissan Skyline R34 in Olympic City (though the racing scenes are actually in Bayview), the setting of NFS:UG. He then receives a race challenge from a rather ominous personality who offers him a spot on his crew, but "won't take 'no' for an answer." The player races off — despite Samantha's warnings — only to be ambushed by a mysterious driver in a rage that totals his Skyline. The driver, who has a unique scythe tattoo, makes a call confirming the accident, and the flashback fades out.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -18732,7 +18717,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0025</id>
-					<name>WWE WRESTLEMANIA 19</name>
+					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_4P/WWE WRESTLEMANIA 19.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/WWE WRESTLEMANIA 19.jpg</thumb>
 					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/WWE WRESTLEMANIA 19.jpg</fanart>
@@ -18742,21 +18727,6 @@
 					<release>2003</release>
 					<publisher>THQ</publisher>
 					<gameplot>The Main Event! All the biggest names in the WWE, including The Rock, Steve Austin, Goldberg, Hulk Hogan and Vince McMahon vie for the WrestleMania XIX title in a story of revenge.In the world of professional wrestling, main events don't get any bigger than Wrestlemania. With the GCN release of THQ's Wrestlemania XIX, WWE fans can take a crack at the coveted title belt. Wrestlemania XIX features a Rikishi-sized mass of improvements over last year's title, including an all-new story mode and improved gameplay.</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>7d2gcd81ea61668385a37ed78f4p0026</id>
-					<name>Bomberman Jetters</name>
-					<filename>rom_pathGameCube/_4P/Bomberman Jetters.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Bomberman Jetters.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Bomberman Jetters.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Action</genre>
-					<release>2004</release>
-					<publisher>Majesco Entertainment</publisher>
-					<gameplot>Bomberman Jetters (ボンバーマンジェッターズ Bonbāman Jettāzu?) is a 2002 Japanese anime television series created by Studio Deen and NAS. It has also spawned two manga series and three video games, one of which was localized and given an English dub. It is based on the popular Bomberman video game series created by Hudson Soft.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>

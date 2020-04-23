@@ -43,6 +43,7 @@
 	    <setting id="Skin_UpdateDate" type="text" default="" label="Skin_UpdateDate" visible="false"/>
 	    <setting id="Skin_UpdateLog" type="bool" default="true" label="Skin_UpdateLog" visible="false"/>
 	    <setting id="Skin_Version" type="text" default="" label="Skin_Version" visible="false"/>
+		<setting id="SdarotTV_Force_Play" type="bool" default="true" label="SdarotTV Force Play" visible="true"/>
 	</category>
 	
 	<category label="Debug">
