@@ -102,6 +102,16 @@
 			<finished>false</finished>
 		</category>
 		<category>
+			<id>Featherence_playstation2</id>
+			<name>Sony Playstation 2</name>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/playstation2.jpg</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<description></description>
+			<enable></enable>
+			<finished>false</finished>
+		</category>
+		<category>
 			<id>Featherence_supernintendo</id>
 			<name>Super Nintendo</name>
 			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/snes.jpg</thumb>
@@ -543,6 +553,21 @@
 					<release>1982</release>
 					<publisher>Gottlieb</publisher>
 					<gameplot>The object of the Q*bert game is to change the color of the top of the cubes to the Destination color indicated at the upper-left corner of the screen (below Player 1's score) by hopping onto them. When all the cubes in the pyramid have been changed to the Destination color, the screen will advance to the next round, with the player-controlled Q*bert character starting back on the top cube. At the beginning of each Level, there will be a short demonstration cycle with Q*bert hopping around four cubes to explain to the player the play action of each Level. Each level consists of four Rounds. The current level number and round number is displayed at the upper-right corner of the screen (below Player 2's score in a 2-player game). The game play starts with Q*bert appearing at the top of the pyramid. The joystick will move Q*bert from cube to cube by hopping in any of four diagonal directions. Q*bert can move anywhere on the pyramid, but jumping off will kill him. Hopping on the rotating disk will take Q*bert back to the top of the pyramid. In the first two Rounds of play, Q*bert will have to avoid touching the red and purple balls. These deadly objects drop randomly onto the second-from-the-top level and bounce downwards. The red balls will fall off the bottom, but the purple ball will stop at the bottom and hatch into Coily, the snake which chases Q*bert. To destroy Coily, lure him to the edge, then jump unto a disk. The disk will take Q*bert back to the top and Coily will fall off, awarding 500 points and clearing the board of all other 'nasty' characters. Starting at the 3rd Round of play, other 'nasty' characters come into play. The green characters or objects are safe to hop onto and will award points. All other 'nasty' characters are deadly to touch. In the third Round the red balls will stop falling, but two purple characters named Ugg and Wrong Way will appear at the lower portion of the pyramid and travel sideways and upwards (Ugg is the one with the snout moving from right to left on the right sides of the cubes, and Wrong Way is the one with the big eyes moving from left to right on the left sides of the cubes). They will not chase Q*bert, but will move randomly to get in Q*bert's way. In the third Round and every Round after, based on an internal timer, a green ball will appear and bounce down from the top of the pyramid. Hopping Q*bert onto the green ball will award 100 points, and freeze all the characters on the screen for a few seconds, but 'Q*bert' will still be able to move to complete the color changes. During the 4th Round of play, two green characters named Slick and Sam will appear, based on the internal timer (Slick is the one wearing shades; Sam does not wear shades, otherwise their function is identical). They will drop onto the second level from the top and hop randomly downwards. If they hop onto a cube that Q*bert has already changed the color of, the cube will change to a different color to thwart Q*Bert. Hopping Q*Bert onto Slick or Sam will stop them and award 300 points. Throughout the remaining Rounds, all the characters and objects will appear in random combinations with increasing speed. To add variety to the game, the disks will change positions every Round, and in the higher Levels the number of disks will change. During Level 2, the play action will increase in difficulty from changing the cubes to one color, to changing the color of the cubes twice. This mean: that each cube would have to be hopped on twice to change the pyramid to the destination color, completing the Round. Starting at Level 3 and for all remaining Rounds, and Levels, the play action will become more difficult. The object remains to change the cubes to the Destination color, but if Q*Bert hops on any cube, that cube will change color. So even if the cube has already been changed to the Destination color, it will change again. Here is a rundown of how all the colors change : Legend : S - Starting Color I - Intermediate Color D - Destination color LEVEL 1 : When Q*bert jumps on S or I, it changes to D. When he jumps on D, it stays at D (NOTE : During the 4th round, when Slick/Sam jumps on D, it changes to I). LEVEL 2 : When Q*bert jumps on S, it changes to I. When he jumps on I, it changes to D. When he jumps on D, it stays at D. LEVEL 3 : When Q*bert jumps on S, it changes to D. When he jumps on D, it changes back to S. Q*bert must start again. LEVEL 4 : When Q*bert jumps on S, it changes to I. When he jumps on I, it changes to D. When he jumps on D, it changes back to I. Q*bert must start again. LEVEL 5 : When Q*bert jumps on S, it changes to I. When he jumps on I, it changes to D. When he jumps on D, it changes back to S. Q*bert must start again. LEVELS 6-9 : Same color pattern as Level 5. The difference is the increased speed of Q*bert and the 'nasty' characters. There are also bonus points awarded at the end of each round for successfully completing the round. The bonus for the completion of the 1st round is 1000 points. This Bonus will progressively increase each Round by 250 points to a maximum of 5000 points at Level 5.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ac2769cbd3f4032</id>
+					<name>volfied</name>
+					<filename>rom_pathArcade/_1P/volfied.zip</filename>
+					<thumb>rom_pathArcade/_1P/_Artwork/boxfront/volfied.jpg</thumb>
+					<fanart>rom_pathArcade/_1P/_Artwork/screenshot/volfied.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Miscellaneous</genre>
+					<release>1989</release>
+					<publisher>Taito</publisher>
+					<gameplot><gameplot>בר לפני שנים ביסס Volfied את מקומו, בצדק יש לומר, בין משחקי "סגירת השטחים" הטובים ביותר. גם בעידן שבו יוצאים לאור גירסאות חדשות של סגנון המשחק הממכר, בגרפיקה מרשימה, מצליח Volfied להשאיר אותם רחוק מאחור במרוץ אל לב הגיימר הממוצע. אין ספק, מדובר ביצירה מושלמת.[CR][CR]למי שטרם זכה להכיר, משחקי סגירת שטחים הם ללא-ספק בין הממכרים שבמשחקים (לצד סנייק ופק-מן). המטרה, כפי שמשתמע מהכותר עצמו, היא לסגור שטחים. האמצעים? פשוטים מאוד בתיאוריה, אבל קשים הרבה יותר כשמכניסים לעסק חרקים חסרי-פחד. שטח המשחק, מלבני בצורתו, כולל שטח כבוש ושטח שטרם-נכבש. המטרה היא כמובן לכבוש את כל השטח, או לפחות אחוז משמעותי מאוד ממנו (מעל 80%). בתוך השטח שטרם-נכבש, מתרוצצים להם באקראיות חרקים ומכרסמים משונים, כך שיש לתכנן ולתזמן מראש כל ניסיון כיבוש. רוב הזמן תהיו בטוחים בשטח שלכם, זה שכבר נכבש, אבל בחלק מהשלבים תאלצו להיזהר גם שם. כדי לכבוש שטח שמאוכלס על ידי החרקים, תצטרכו "למתוח קו" מקצה כבוש אחד לשני, כך שהשטח הריק שנוצר יסתפח לשטחים שכבר בשליטתנו. יש לציין שנגיעה באחד מהחרקים משמעותה מוות מיידי.[CR][CR]במידה ואתם מצליחים לסגור שטח שבתוכו ממוקמת "לבנה", אתם תקבלו בונוס, כמו מהירות או לב נוסף. למשחק רמות קושי שונות ואפשרות לשני שחקנים, אך רק לסירוגין (לא בו-זמנית). מתכנתי Volfied לא המציאו את הגלגל, Xonix היה קיים כמה שנים קודם לכן, אבל אין ספק שהם שיכללו את ההמצאה המקורית בעשרות מונים. מדובר במשחק ממכר, כייפי ומאתגר.</gameplot></gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -1513,21 +1538,6 @@
 					<release>1993</release>
 					<publisher>Capcom</publisher>
 					<gameplot>North American &amp; World release. Game developed in Japan. For more information about the game itself, please see the original Japanese release entry; "Ultimate Ecology [Green Board]".</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>909f7cfb383324122568ed37d11d6430</id>
-					<name>Ehrgeiz</name>
-					<filename>rom_pathSony Playstation/_2P/ehrgeiz.zip</filename>
-					<thumb>rom_pathSony Playstation/_2P/_Artwork/boxfront/ehrgeiz.png</thumb>
-					<fanart>rom_pathSony Playstation/_2P/_Artwork/screenshot/ehrgeiz.png</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Fighter / Versus</genre>
-					<release>1998</release>
-					<publisher>Square / Namco</publisher>
-					<gameplot>A 3-D fighting game reminiscent of "Power Stone" by Capcom. The world's most brutal tournament has as its trophy the legendary weapon 'EHRGEIZ'. Fighters from around the world assemble to claim this prize and its mysterious power. Featuring interactive backgrounds.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -10932,6 +10942,21 @@
 			<lnk></lnk>
 			<roms>
 				<rom>
+					<id>d39a1e79ra1ba6713ac2769cbd3f4032</id>
+					<name>Volfied</name>
+					<filename>rom_pathSega Genesis/_2P/Volfied.zip</filename>
+					<thumb>rom_pathSega Genesis/_2P/_Artwork/boxfront/Volfied.jpg</thumb>
+					<fanart>rom_pathSega Genesis/_2P/_Artwork/screenshot/Volfied.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Miscellaneous</genre>
+					<release>1989</release>
+					<publisher>Taito</publisher>
+					<gameplot><gameplot>בר לפני שנים ביסס Volfied את מקומו, בצדק יש לומר, בין משחקי "סגירת השטחים" הטובים ביותר. גם בעידן שבו יוצאים לאור גירסאות חדשות של סגנון המשחק הממכר, בגרפיקה מרשימה, מצליח Volfied להשאיר אותם רחוק מאחור במרוץ אל לב הגיימר הממוצע. אין ספק, מדובר ביצירה מושלמת.[CR][CR]למי שטרם זכה להכיר, משחקי סגירת שטחים הם ללא-ספק בין הממכרים שבמשחקים (לצד סנייק ופק-מן). המטרה, כפי שמשתמע מהכותר עצמו, היא לסגור שטחים. האמצעים? פשוטים מאוד בתיאוריה, אבל קשים הרבה יותר כשמכניסים לעסק חרקים חסרי-פחד. שטח המשחק, מלבני בצורתו, כולל שטח כבוש ושטח שטרם-נכבש. המטרה היא כמובן לכבוש את כל השטח, או לפחות אחוז משמעותי מאוד ממנו (מעל 80%). בתוך השטח שטרם-נכבש, מתרוצצים להם באקראיות חרקים ומכרסמים משונים, כך שיש לתכנן ולתזמן מראש כל ניסיון כיבוש. רוב הזמן תהיו בטוחים בשטח שלכם, זה שכבר נכבש, אבל בחלק מהשלבים תאלצו להיזהר גם שם. כדי לכבוש שטח שמאוכלס על ידי החרקים, תצטרכו "למתוח קו" מקצה כבוש אחד לשני, כך שהשטח הריק שנוצר יסתפח לשטחים שכבר בשליטתנו. יש לציין שנגיעה באחד מהחרקים משמעותה מוות מיידי.[CR][CR]במידה ואתם מצליחים לסגור שטח שבתוכו ממוקמת "לבנה", אתם תקבלו בונוס, כמו מהירות או לב נוסף. למשחק רמות קושי שונות ואפשרות לשני שחקנים, אך רק לסירוגין (לא בו-זמנית). מתכנתי Volfied לא המציאו את הגלגל, Xonix היה קיים כמה שנים קודם לכן, אבל אין ספק שהם שיכללו את ההמצאה המקורית בעשרות מונים. מדובר במשחק ממכר, כייפי ומאתגר.</gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>0cd2b15be231aeaa79b4e2d9690f9670</id>
 					<name>Cadash</name>
 					<filename>rom_pathSega Genesis/_2P/Cadash.zip</filename>
@@ -12818,6 +12843,21 @@
 					<release>2002</release>
 					<publisher>Bandai</publisher>
 					<gameplot>Cute, Cuddly, and Ready to Rumble! Digimon Rumble Arena comes to life in this truly Digimonumental release! With user friendly controls and loads of adventure, it's easy to learn, yet hard to put down. Fun for the entire family, Digimon Rumble Arena provides classic fighting gameplay for 1 or 2 players.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>909f7cfb383324122568ed37d11d6430</id>
+					<name>Ehrgeiz</name>
+					<filename>rom_pathSony Playstation/_2P/ehrgeiz.zip</filename>
+					<thumb>rom_pathSony Playstation/_2P/_Artwork/boxfront/ehrgeiz.png</thumb>
+					<fanart>rom_pathSony Playstation/_2P/_Artwork/screenshot/ehrgeiz.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighter / Versus</genre>
+					<release>1998</release>
+					<publisher>Square / Namco</publisher>
+					<gameplot>A 3-D fighting game reminiscent of "Power Stone" by Capcom. The world's most brutal tournament has as its trophy the legendary weapon 'EHRGEIZ'. Fighters from around the world assemble to claim this prize and its mysterious power. Featuring interactive backgrounds.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -18909,7 +18949,7 @@
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769cbd3f4025</id>
 					<name>Clue - Master Detective‎</name>
-					<filename>rom_pathDOS/_EN/Clue - Master Detective‎‎/GO.BAT</filename>
+					<filename>rom_pathDOS/_EN/Clue - Master Detective‎/GO.BAT</filename>
 					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Clue - Master Detective‎.jpg</thumb>
 					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Clue - Master Detective‎.jpg</fanart>
 					<trailer></trailer>
@@ -19382,7 +19422,7 @@
 					<genre>Miscellaneous</genre>
 					<release>1989</release>
 					<publisher>Taito</publisher>
-					<gameplot>An update of Taito's 1981 classic, "Qix", Volfied adopts the same 'draw boxes to colour in the background' gameplay of its predecessor but updates both the graphics and in-game enemies. A number of power-ups are available, revealed when certain sections of the background have been filled, such as Speed-up, temporary enemy freeze and laser. The player's ship is only in danger from the game's enemies while the player is actually drawing a line. Each level must be completed within a tight time limit.</gameplot>
+					<gameplot><gameplot>בר לפני שנים ביסס Volfied את מקומו, בצדק יש לומר, בין משחקי "סגירת השטחים" הטובים ביותר. גם בעידן שבו יוצאים לאור גירסאות חדשות של סגנון המשחק הממכר, בגרפיקה מרשימה, מצליח Volfied להשאיר אותם רחוק מאחור במרוץ אל לב הגיימר הממוצע. אין ספק, מדובר ביצירה מושלמת.[CR][CR]למי שטרם זכה להכיר, משחקי סגירת שטחים הם ללא-ספק בין הממכרים שבמשחקים (לצד סנייק ופק-מן). המטרה, כפי שמשתמע מהכותר עצמו, היא לסגור שטחים. האמצעים? פשוטים מאוד בתיאוריה, אבל קשים הרבה יותר כשמכניסים לעסק חרקים חסרי-פחד. שטח המשחק, מלבני בצורתו, כולל שטח כבוש ושטח שטרם-נכבש. המטרה היא כמובן לכבוש את כל השטח, או לפחות אחוז משמעותי מאוד ממנו (מעל 80%). בתוך השטח שטרם-נכבש, מתרוצצים להם באקראיות חרקים ומכרסמים משונים, כך שיש לתכנן ולתזמן מראש כל ניסיון כיבוש. רוב הזמן תהיו בטוחים בשטח שלכם, זה שכבר נכבש, אבל בחלק מהשלבים תאלצו להיזהר גם שם. כדי לכבוש שטח שמאוכלס על ידי החרקים, תצטרכו "למתוח קו" מקצה כבוש אחד לשני, כך שהשטח הריק שנוצר יסתפח לשטחים שכבר בשליטתנו. יש לציין שנגיעה באחד מהחרקים משמעותה מוות מיידי.[CR][CR]במידה ואתם מצליחים לסגור שטח שבתוכו ממוקמת "לבנה", אתם תקבלו בונוס, כמו מהירות או לב נוסף. למשחק רמות קושי שונות ואפשרות לשני שחקנים, אך רק לסירוגין (לא בו-זמנית). מתכנתי Volfied לא המציאו את הגלגל, Xonix היה קיים כמה שנים קודם לכן, אבל אין ספק שהם שיכללו את ההמצאה המקורית בעשרות מונים. מדובר במשחק ממכר, כייפי ומאתגר.</gameplot></gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -19448,31 +19488,31 @@
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769cbd3f4038</id>
-					<name>XXXXX</name>
-					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Dangerous Dave</name>
+					<filename>rom_pathDOS/_EN/Dangerous Dave/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Dangerous Dave.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Dangerous Dave.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
+					<genre>Action / Arcade</genre>
+					<release>1990</release>
+					<publisher>Softdisk Publishing</publisher>
+					<gameplot>כיום כמעט כל אחד יכול ליצור משחק סטייל "דייב", אולי אפילו בפחות עבודה מזו שעשה ג'ון רומארו. אז למה דווקא "דייב"? טוב, אחרי הכל, המשחק המקורי הוא תמיד הטוב ביותר - גם אם רק מדובר במשחק פלטפורמה מהפשוטים שנראו אי פעם.[CR]שלא כמו במשחקי פלטפורמה אחרים, כאן המשחק מתרכז יותר בהתחמקויות ותזמון נכון מאשר ביריות. דייב, הדמות החביבה שאותה אתם משחקים, צריך להיות הרבה יותר זהיר ממסוכן (למרות הכותרת של המשחק). מעבר מכשולים מתוזמנים וקפיצה מהפלטפורמות הנכונות אל הנכונות בהחלט לא מצריכים תואר של "מסוכן".[CR]קלייד קופר, בן של מדען נאס"א, זכה בכל גביעי האליפות של תחרות הסקייטבורדים של "אידוויל". אתם תמיד חמדתם באותם גביעים ולכן אתם מחליטים לאתגר את קופר הצעיר בתחרות ריצה שבה המנצח לוקח את כל הגביעים. התנאים שקבעתם: המסלול יקבע על ידיכם ואתם תתחילו את המרוץ כמה מטרים לפניו. העסקה: נחתמה. המסלול: סולם. והגביעים הולכים ל: דייב? לא נראה לי...[CR]כמובן שקלייד היה מספיק משוגע כדי לגנוב חזרה את כל הגביעים ולהחביא אותם במחבוא עתיק יומין של פיראטים. לאחר שקלייד מציג לכם את הפתח למחבוא, צינור כסוף, אתם לוקחים על עצמכם את המשימה, וכאן מתחיל הקווסט שלכם. אתם משחקים את "דייב המסוכן" והמשימה שלכם היא למצוא את כל הגביעים שקלייד החביא ולצאת ממחבוא הפיראטים בחיים. אתם תעמדו בפני עשבים שוטים ומשוגעים, אש שטנית, מים מתוחכמים ואולי אפילו מפלצות המחבוא! בכל שלב מעשרת השלבים המטרה שלכם היא למצוא את הגביע של השלב, לקחת אותו, ולעבור דרך הדלת של השלב כמה שיותר מהר. כמובן שתהיה לכם עזרה במאבק נגד האויבים שבמחבוא. אתם עלולים למצוא כמה מהאקדחים של הפיראטים ששהו במקום בעבר ואולי אפילו כמה רחפות שאביו של קלייד השאיר מאחוריו. בעזרתם תוכלו להראות לקלייד שעל "דייב המסוכן" לא עובדים כל כך מהר.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769cbd3f4039</id>
-					<name>XXXXX</name>
-					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>English from Another World</name>
+					<filename>rom_pathDOS/_EN/English from Another World/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/English from Another World.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/English from Another World.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
+					<genre>Educational</genre>
+					<release>1996</release>
+					<publisher>מחשבת בע"מ</publisher>
+					<gameplot>כפי שניתן להבין משמה, "אנגלית מעולם אחר" היא לומדה שנועדה לעזור לילדי ישראל ללמוד את השפה האנגלית. היא מנסה לעשות זאת בדרך הומוריסטית, בעזרתו של רוקי - גיבור הלומדה - וחבריו, ובקריינותו של דניאל פאר.[CR]הלומדה מחולקת לארבע חלקים, כאשר כל חלק מחולק למספר קטעים: קטע שמדגים מבנה של משפטים, קטע שמדגים חילוף מושא, קטע שמדגים איך משיבים על שאלות מסוגים שונים וקטע אנסין. לאחר לימוד כל קטע ישנה אפשרות לתרגל את חומר הלימוד בצורה שמלמדת את המשתמש כיצד להרכיב משפטים, איך לענות על שאלות וכיצד לפענח קטע אנסין. בנוסף, הלומדה מספקת מילון אנגלי-עברי של המשפטים המופיעים בה ומאפשרת למשתמש להקליט את עצמו כדי לתרגל דיבור באנגלית.[CR]כמו כן, כל חלק מכיל שלושה משחקונים שמאפשרים למשתמש לתרגל את המילים והמשפטים שנלמדו. במשחקון הראשון נבדקת יכולת המשתמש להרכיב משפטים מתוך אוצר מילים נתון, וזאת באמצעות דרישה להרכיב משפט בהתאם לתמונה שמופיעה. במשחקון השני נבדקת יכולת האיות של המשתמש, באמצעות דרישה לכתוב את המילה שהקריין אומר. המשחקון השלישי הוא הפשוט ביותר, ובו המשתמש מתבקש לבחור את המילה שהקריין אומר.[CR]בשורה התחתונה, מדובר בלומדה ישראלית טובה, שמיועדת לתלמידים בעלי ידע בסיסי באנגלית שרוצים עזרה בשיפור כישורי השפה שלהם. הלומדה מצליחה במשימתה ויחסית ללומדה ישראלית עושה זאת עם הרבה חן וחוש הומור.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -19506,6 +19546,1191 @@
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6001</id>
+					<name>Donald Ducks Playground</name>
+					<filename>rom_pathDOS/_EN/Donald Ducks Playground/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Donald Ducks Playground.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Donald Ducks Playground.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Educational</genre>
+					<release>1984</release>
+					<publisher>Sierra</publisher>
+					<gameplot>דונאלד דאק, הברווז המפורסם ביותר ברחבי תבל, החליט לצ'פר את האחיינים שלו - היואי, דיואי ולואי. לאחיינים הקטנים יש מגרש משחקים קטן, ודונאלד רוצה לאבזר אותו בשבילם. אולם, כמו שכולם יודעים, כסף לא גדל על העצים, אפילו לא בעולם המופלא של דונאלד דאק. בשביל לקנות את משאת נפשו, על דונאלד להרוויח ביושר את כספו. ואת זה, כידוע, עושים באמצעות עבודה.[CR]ב-Donald Duck's Playground, דונאלד דאק יכול לעבוד בארבע עבודות שונות: במכולת, בחנות הצעצועים, בתחנת הרכבת ובנמל התעופה. בכל אחד מהמיקומים הנ"ל, על דונאלד לבחור מהו אורך המשמרת אותה הוא רוצה למלא (בין דקה לשמונה דקות) ומיד אח"כ להתחיל במשימה שהוטלה עליו. כל מטלה שהוא ממלא בהצלחה מכניסה לו סכום מסויים, ובסוף המשמרת הוא מסיים עם הכסף שהצטבר במהלכה.[CR]כאמור, דונאלד יכול לבחור בין ארבע עבודות שונות. הוא יכול להחליט לעבוד במכולת, שם הוא מסייע במיון ירקות - עליו ראשית לתפוס את הירק שמושלך לעברו, ולאחר מכן להניח אותו בארגז המתאים. עבודת מיון דומה הוא יכול לבצע גם בנמל התעופה, שם הוא הוצב ליד מסוע המזוודות, ועליו לשלוח את המזוודות המתאימות אל היעדים המתאימים לפי השם שמופיע עליהן. אם נמאס לו מסחיבת מזוודות, הוא יכול לקפוץ לסביבה העליזה של חנות הצעצועים, שם הוא צריך לקחת צעצועים שונים אל המדפים המתאימים להם. ולסיום, בתחנת הרכבת מחכה לו עבודת ניתוב רכבות מאתגרת, המאפשרת לרכבות השונות לאסוף ולפרוק סחורה בתחנות המתאימות.[CR]לאחר יום עבודה קשה ומעייף, מגיע השלב שכולם, או לפחות שלושת האחיינים, חיכו לו! דונאלד יכול לעבור את הכביש ולהגיע לחנויות השונות, שם אפשר למצוא מתנות והפתעות לרוב. דונאלד יכול להחליט מה הוא רוצה לקנות ולהציב את המתנה שלו במגרש המשחקים של האחיינים. כעת, כשהוא יקרא להם לשחק, מובטחות להם שעות של הנאה!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6002</id>
+					<name>007 Licence to Kill</name>
+					<filename>rom_pathDOS/_EN/007 Licence to Kill/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/007 Licence to Kill.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/007 Licence to Kill.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1989</release>
+					<publisher>Domark Ltd</publisher>
+					<gameplot>מי לא מכיר את הסוכן הסמוי המפורסם בעולם - בונד, ג'יימס בונד? נשים רוצות אותו, גברים רוצים להיות כמוהו והסרטים שלו זוכים לפופולריות עצומה בכל רחבי העולם... ובכן, כל מי שאי פעם חלם לשרת בשירות הוד מלכותה יכול עתה להגשים את חלומו בעזרת המשחק "007: Licence to Kill".[CR]המשחק הזה מבוסס על הסרט הנושא את אותו השם, ולכן העלילה שלהם זהה: ברון הסמים רב העצמה סנצ'ז רצח את הכלה של החבר הכי טוב שלכם. המשימה שלכם: לנקום את מותה ולחסל את הברון. במשך 6 שלבים מרתקים אתם תטיסו מסוקים ומטוסים, תבצעו פעלולים מרהיבים בין שמיים וארץ, תתחמקו מצלצלים חדים מתחת למים ועוד ועוד.[CR]האם אתם מסוגלים לחסל את דרככם לאורך השביל שמוביל אל הברון? סביר להניח שכן, אחרת לא היו נותנים דווקא לכם רישיון להרוג...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6003</id>
+					<name>A Nightmare On Elm Street</name>
+					<filename>rom_pathDOS/_EN/A Nightmare On Elm Street/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/A Nightmare On Elm Street.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/A Nightmare On Elm Street.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1989</release>
+					<publisher>Monarch Software</publisher>
+					<gameplot>פרדי קרוגר - שם שמעורר אימה ופחד אצל כל מי שאי פעם ראה סרט מסדרתו המפורסמת או אפילו שמע על עלילותיו. למי שלא מכיר, פרדי שלנו עוסק במקצוע חביב ופופולרי - הוא רוצח סדרתי. כמובן שהוא לא "סתם עוד רוצח". לפרדי יש שיטת פעולה יחודית - הוא תוקף אנשים כשהם ישנים, דרך חלומות (עוד סיבה לכך שקשה לאנשים לישון אחרי צפייה באחד הסרטים :)). "סיוט ברחוב אלם", שמבוסס על הסרט המצליח בעל אותו השם, הוא משחק אקשן ממבט עילי - בכיכובו של פרדי קרוגר כמובן. המשחק מתחיל כשאתם נצרכים לבחור באחד מחמשת ה"חברים". החבר הנבחר יצטרך לאתר את שאר חבריו כדי שיוכל להתמודד בעזרתם מול פרדי קרוגר. לכל "חבר" יש יכולת שונה (מכת אגרוף, מקל קסמים, סכין מיוחד וכדומה) אבל אל תשכחו לבחון את סעיפי הכוח והנפש לפני שאתם בוחרים לוחם. לאחר בחירת השחקן שלכם, אתם מגיעים לשלב ההקדמה, אולי החלק הכי גרוע במשחק. איש לבן (שנראה כאילו הוא צץ מפרסומת של קולגייט) נתון לגמרי לשליטתכם. אתם צריכים להדריך אותו בשכונתו של פרדי ולמצוא את הבית שלו. כמובן שהמלאכה לא כל כך קלה. השכונה נראית יותר כמו מבוך ופרדי ירוץ אחריכם וינסה לעצור אתכם בכל מחיר. בביתו של פרדי מחכה לכם נזירה נחמדה יחסית (מה בדיוק היא עושה שם?) שתציף אתכם במידע. עכשיו, המשחק האמיתי מתחיל! אתם מוצאים את עצמכם בתוך הבית של פרדי - בית אדיר בגודלו, מלא במפלצות, מטבעות ואמצעי לחימה. אתם צריכים לנווט את עצמכם בתוך הבית, לאסוף מטבעות, אמצעי לחימה, בונוסים ולהילחם במפלצות האורבות לכם. רק כך תוכלו להגיע אל פרדי קרוגר - ולהפסיק את הסיוט.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6004</id>
+					<name>Aaargh!</name>
+					<filename>rom_pathDOS/_EN/Aaargh!/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Aaargh!.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Aaargh!.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1988</release>
+					<publisher>Arcadia Systems</publisher>
+					<gameplot>המפלצות יצאו לחופשי, והן עושות את דרכן מתוך מערות האופל הישר אל תוך הערים. הן באות על מנת לחולל מהומה, ליצור תוהו ובוהו ולגרום להרס רב, וכל זאת תוך כדי חיפוש הביצה המפורסמת של רוק, הציפור המיתולוגית. אולם, זהו רק חלק מהסיפור של שתי המפלצות הנוראות - ענק בעל קרן ולטאה מפלצתית. המניע האחר שלהן הוא רצון עז לנקמה, נקמה שמגיעה אחרי כל כך הרבה שנים של חיים בהרים, בתוך מערות, לשם נדחקו על ידי בני האדם.[CR]שתי המפלצות, הענק והלטאה, מוכנות לעשות הכל על מנת להשיג את ביצת הזהב של רוק. ומי נשלח להציל את המצב עבור בני האדם? אף אחד, יש לקוות. הפעם, למעשה, אתם מקבלים את השליטה על המפלצות עצמן. אתם נדרשים להשמיד, להרוס ולחסל את כל מה שנקרה בדרככם - החל מגדודי ההגנה של בני האדם וכלה בציפורים יורקות אש - במהלך החיפוש אחר הביצה הקסומה שתתן לכם כוחות על. בדרך, תצטרכו לאסוף לא פחות מחמש ביצים נוספות, קטנות יותר מביצת הזהב, שמסתתרות בתוך מבנים מוגנים של בני האדם, אי שם בלב הערים שעל האי שלכם. רק לאחר מכן תגיעו אל הר הגעש המסתורי שבו מסתתרת ביצת הזהב העצומה.[CR]כאמור, המטרה ב-Aaargh! היא לעבור בין עשר הערים באי "דרנס" בחיפוש אחר ביצי רוק. בכל עיר, עליכם להרוס את המבנים באמצעות אגרופים או כדורי אש עד שתמצאו את הביצה המסתתרת, אם ישנה כזאת. לעיתים לא תמצאו ביצה בעיר, ואז תצטרכו להמשיך לחפש אותה בעיר אחרת. בפעמים אחרות, אם יקח לכם יותר מדי זמן לאתר ביצה, בני האדם יצליחו להבריח אותה בשלום אל עיר שכנה. בכל מקרה, בכל עיר ינסה כוח מגן להדוף אתכם לפני שתספיקו לחולל יותר מדי הרס. למזלכם, אם נפגעתם, תוכלו להשיב את כוחכם באמצעות אכילת בני אדם או בונוסים שמסתתרים לאורך המסך.[CR]אם אתם בוגרי Rampage שעדיין לא השביעו את יצר ההרס שלהם, בטח תשמחו לנסות גם את Aaargh!. תוכלו אפילו להתמודד מול שחקן שני, בניסיון להגיע אל הביצה ראשונים!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6005</id>
+					<name>Abuse</name>
+					<filename>rom_pathDOS/_EN/Abuse/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Abuse.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Abuse.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1995</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>ב-Abuse אתם שולטים בסוכן מיוחד לבוש חליפת קרב ומצויד בכלי נשק רבי עוצמה שנשלח כדי לנקות מתקן כליאה ענקי מהיצורים ששורצים בו.[CR]היצורים דומים באופן מפחיד ליצורים מהנוסע השמיני וכפי שניתן לנחש הם גם מתנהגים כמוהם: הם יקפצו עליכם מכל מקום - מהתקרה, מתוך קירות ואפילו מתוך הריצפה - ויציפו אתכם במספריהם האדירים. כאילו שלא מספיק שה"חמודים" האלה יכולים לארגן לכם חתיכת "מסיבת הפתעה" (או "מסיבת שחט את השחקן המסכן", אם תרצו) הם גם באים מצוידים על גביהם במגוון כלי הנשק שיש לכם.[CR]בנוסף למפלצות האלה, המשחק עמוס גם ברובוטים שונים ובמלכודות שיוסיפו למגוון הדרכים בהן אתם יכולים למות.[CR]את המשחק תתחילו כשאתם מצוידים רק באקדח לייזר עם תחמושת בלתי מוגבלת. במהלך המשחק תוכלו למצוא כלי נשק חזקים רבים כגון: מטול רימונים, משגר טילים, להביור (הנשק הכי חזק, אם תשחקו אתם תראו למה), רובה גאוס ועוד.[CR]המשחק דואג ליצור אווירה שתשאיר אתכם רוב הזמן על קצות הבהונות, בעזרת תאורה די אפלה וקולות של היצורים שיישמעו במקומות רבים ויגרמו לכם לחשוב פעמיים אם כדאי לכם להמשיך ללכת. כמו כן, המשחק ידאג להפתיע אתכם במקרים רבים ע"י התקפות פתע של המפלצות, ותאמינו לי, כאשר מתוך האפלה והשקט היחסי יקפצו עליכם עשרות מפלצות מכל הכיוונים - עם שאגות ויללות מטורפות [שיקפיאו אפילו את דמו של המאהב הלטיני הכי לוהט :-)], אתם תשמחו שאלה לא אתם שנמצאים שם.[CR]במהלך המשחק גם תוכלו למצוא מקומות סודיים עם תחמושת, כלי נשק וריפוי שיהוו הקלה קטנה לפני הטבח הבא.[CR]דבר נוסף שמוסיף פלפל למשחק הוא שהיכולת לשמור אותו רק בנקודות שמירה המפוזרות לאורכו, וקחו את עצתי: שימרו את המשחק בכל הזדמנות ובתאי שמירה שונים.[CR]לסיכום, הייתי רוצה לתת לכם מספר עצות: אל תשחקו לפני השינה ו/או כשאתם לבד, אלא אם אתם מוכנים לטירוף ולאימה. אל תשכחו שהדמות שלכם יכולה לקפוץ גבוה, השתמשו בזה כדי להימנע ממגע לא רצוי עם ה"חתלתולים". כשאתם מקבלים את הלהביור או תחמושת בשבילו אתם גם בדרך כלל תצטרכו להשתמש בו תוך זמן קצר, אז היו מוכנים... בהצלחה בקרב!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6006</id>
+					<name>Airborne Ranger</name>
+					<filename>rom_pathDOS/_EN/Airborne Ranger/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Airborne Ranger.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Airborne Ranger.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1988</release>
+					<publisher>MicroProse Software</publisher>
+					<gameplot>משחק בו אתם משחקים צנחן אמריקאי למשימות מיוחדות בשטח האויב. במהלך המשחק אתם מקבלים משימות שונות ועליכם לצנוח עם הציוד שלכם ולמלא את המשימה. יהיה עליכם לשחרר חטופים, למצוא חבילות ואפילו לרגל אחר ציוד חדשני של האויב. בתחילת כל משימה תוכלו לבחור את הציוד איתו תצנחו ואת המקום המדויק אליו תרצו לצנוח. לפעמים תתקלו בציוד שהוצנח במשימה קודמת, ותוכלו להעזר בו במשימה הנוכחית שלכם. מוכנים? קדימה!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6007</id>
+					<name>Ajax</name>
+					<filename>rom_pathDOS/_EN/Ajax/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Ajax.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Ajax.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1989</release>
+					<publisher>Konami</publisher>
+					<gameplot>אני עדיין מחכה ליום בו יצירה קלאסית של Konami תאכזב אותי! בכל תחום בו עסקו המתכנתים המעולים שלהם עד היום, זה לא קרה. מיותר לציין שגם עם Ajax, משחק חלליות ישן וטוב, זה לא קורה. למרות שהשם מעלה אסוציאציות קצת מוזרות של חומרי ניקוי, המשחק עצמו מלא באקשן אינסופי ובכיף טהור.[CR]Ajax הוא חלק בלתי נפרד מז'אנר משחקי החלל והיריות ממבט עילי. ז'אנר שכולל בין השאר את Tyrian, Raptor ו-Zone 66, ולא במקרה אני מזכיר את הדובדבנים שבקצפת עם Ajax שלנו. אתם שולטים בדבור (Drone) - כלי טייס משוכלל ומציוד היטב. אתם רואים את הדבור עצמו, שדומה הרבה יותר למסוק רגיל, ממבט עילי. כדי שהעלילה תתאים למציאות, החליטו ב-Konami שתפקידכם הוא לשלוט על הדבור מרחוק, בעזרת עכבר, מקלדת או ג'ויסטיק. כזה הוא הדבור - כלי טיס תוקף שנשלט מרחוק. המשימה שלכם היא פשוטה וממוקדת. עליכם לחדור אל תוך המבצר של החיזריים, להרוס את המבצר עצמו ולהרוג את החייזרים (למרות שלא ידוע לנו מה הם עשו לכם...)! כמובן שבפועל המשימה שלכם קצת שונה - עליכם לירות בכל כלי תעופה או כלי אויב שצץ במסך. או במילים אחרות; "לגמור" את התחמושת הבלתי מוגבלת על כל עצם שנע.[CR]התחמושת שלכם מורכבת משלושה אמצעי לחימה. טילי אוויר-אוויר שמשמשים לניטרול מטרות באוויר (הממ...), טילי אוויר קרקע שמשמשים להפצצת מטרות על האדמה (כמו טנקים ועמדות ירי) ופצצת POW שמפוצצת את כל מה שנמצא במסך (אתם מתחילים את המשחק עם שתי פצצות כאלו - מומלץ לשמור אחת לפחות ל"בוסים").כמו כן, את המשחק אתם מתחילים עם מלאי בלתי מוגבל של טילים רגילים ועם 7 ספינות (לבבות). במידה והגעתם ל-5000 או ל-15,000 נקודות תקבלו ספינת בונוס. מומלץ בחום להתמכר לטוב ביותר!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6008</id>
+					<name>Alcatraz</name>
+					<filename>rom_pathDOS/_EN/Alcatraz/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Alcatraz.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Alcatraz.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1992</release>
+					<publisher>Infogrames</publisher>
+					<gameplot>השנה היא 1996, שבע שנים לאחר שרעידת אדמה עזה פקדה את אזור סאן-פרנסיסקו ושינתה את סדרי האזור לחלוטין. האי אלקטרז, ששימש בעבר הרחוק בתור בית כלא פדרלי עבור פושעים מסוכנים ביותר, הוסב כעת למפקדה הראשית של קרטל סמים אכזרי, בפיקודו של מיגל טרדיאז הידוע לשמצה. כעת, שני חיילי-קומדנו נשלחים בחשאי אל האי המבוצר כדי לחטוף את טרדיאז ולחסל את המפקדה שלו.[CR]לאחר ששני החיילים הגיעו בחתירה אל האי, עליהם לחדור לתוך אחד הבניינים על מנת להשיג מסמכים מרשיעים שישמשו נגד טרדיאז. משהושגו המסמכים, יש להמשיך לבניין אחר ולאתר בו את מחסן הסמים הראשי ואת המשרד לעניינים פיננסיים, על מנת להניח בהם פצצות זמן ולחסל את תוכנם. לבסוף, יש לחדור לתוך בניין שלישי באמצעות טיפוס על הקירות וכניסה דרך הגג, שם ימצא טרדיאז בכבודו ובעצמו. יש לתפוס אותו על מנת להשלים את המשימה.[CR]ב-Alcatraz השליטה היא על שני שחקים אשר משמשים בתור חיילי הקומדנו, כאשר יש אפשרות לשחק עם שחקן אנושי אחד או שניים. שני החיילים מוצגים בתוך מסך מפוצל, ובמקרה שרק שחקן אנושי אחד משחק, עליו לשלוט בהם סימולטנית, כלומר, הוא יכול לשלוט רק באחד מהם בכל רגע נתון אך בזמן זה החייל השני ממשיך להיות פגיע. למרבה המזל, החיילים יכולים להתחבא בין הקירות וכך ניתן להתרכז בהפעלת חייל אחד ברגע נתון.[CR]לאורך המשחק, על השחקן לקדם את שני החיילים שלו אל עבר היעד, כאשר מנגד מסתערים עליהם עשרות אויבים מכל עבר ומנסים לחסל אותם באמצעות סכינים, רימונים, רובים, להביורים ואגרופים. שני החיילים, אשר מתחילים את המשחק עם מספר סכינים כל אחד, צריכים להגן על עצמם בעוז ולהרוג את הקמים עליהם. במידה והם יצליחו, יהיה באפשרותם לאסוף את הנשק של האויבים ולהשתמש בו בעתיד. עם זאת, למרבה הצער, בעוד ששני החיילים יכולים לשאת על עצמם מספר כלי נשק בו זמנית, הזמן היחיד בו הם יכולים להחליף את הנשק בו הם משתמשים הוא כאשר הם מסתתרים באחד מהמחבואות, כך שרצוי לא להקלע לקרב עם נשק שקרוב מדי לסיומו.[CR]על מנת לצאת מהאי, יש להגיע אל נקודת המפגש, שם יחכה מסוק צבאי. אולם, למשימה הוקצבו שעתיים בדיוק, ואפילו איחור של דקות ספורות יגרום לפספוס המסוק. במקרה כזה, יהיה צורך למצוא דרך אחרת לעזוב את אלקטרז ולחזור אל חופיה של סאן-פרנסיסקו... בהצלחה!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6009</id>
+					<name>Alien Syndrome</name>
+					<filename>rom_pathDOS/_EN/Alien Syndrome/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Alien Syndrome.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Alien Syndrome.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1987</release>
+					<publisher>SEGA Enterprises</publisher>
+					<gameplot>ב-Alien Syndrome, משחק של "סגה" שדומה פלאים ל-Cyberdogs (או שמא עלי להפוך את סדר המשפט?) אתם נשלחים למשימה קשה ביותר אך מלאת הפתעות. לאחר שחייזרים אימתנים, לא מהסוג שספילברג חשב עליהם, חוטפים את חבריכם - אתם נשלחים לחלל כדי להשיב אותם הביתה בשלום ולהשמיד את החיזרים.[CR]ללא עזרת התוכנה המועילה בעולם המשחקים השנים - Dosbox, המשחק הוא סיוט ללא מוצא. מסך הפתיחה מופיע בתחילה כשתי דקות ומשימת ההתנקשות בחיזרים באופן איטי ושיטתי הופכת במהרה למבצע בריחה המוני. אז מה אם החוצנים פולטים לעברי דברים משונים? העיקר להציל כמה שיותר שבויים בדרך לשלב הבא![CR]לעומת זאת, בעזרת DosBox, הסיפור הוא שונה לחלוטין. כבר צריך להתקדם בזהירות, לירות בדיוק מירבי ולתכנן מהלכים קדימה - בדיוק כמו במשימה אמיתית. הכל מתחיל להתבהר. במהרה גם הפליטות של החוצנים בעצם מתבררות כיריות. ניקוי שישה ספינות חלל מהטפילים הדביקים כבר לא נראה כל כך קשה - למרות שלעבור את ה"בוסים" בסיומות של השלבים הוא המכשול העיקרי.[CR]עם האטת המשחק, יתחילו להתגלות הסגולות האמיתיות שלו (ושל סגה) ויתחיל הכיף האמיתי (שבאמת מסתתר פה).</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6010</id>
+					<name>Alley Cat</name>
+					<filename>rom_pathDOS/_EN/Alley Cat/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Alley Cat.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Alley Cat.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1984</release>
+					<publisher>IBM</publisher>
+					<gameplot>"חתול רחוב" הוא משחק ישן וקלאסי שמפורסם בתחום הנוסטלגיה במשחקים. לו הייתי יכול לבחור משחק אחד שיהווה דוגמה ל"קלאסיקה" אין ספק שהייתי בוחר ב"חתול רחוב". לא רק מכיוון שהמשחק עובד בכל מחשב למרות תאריך הייצור הישן שלו (זאת בזכות מנגנון מיוחד שמתאים את "חתול רחוב" למחשב שעליו הוא מופעל. מנגנון כזה בכל משחק ישן היה חוסך הרבה בעיות הרצה), אלא גם מכיוון שהמשחק הוא פשוט ממכר בצורה בלתי רגילה.[CR]אתם מגלמים את התפקיד של החתול המסכן והמאוהב. הוא יוצא למשימה חשובה שבסופה הוא מקווה למצוא את אהובתו החתולה. אתם צריכים לקפוץ מעל כלבים דוהרים, לברוח ממכשירי ניקוי משוגעים ולהתחמק ממכשולים נוספים. כמובן שכחתול אתם חייבים גם לדאוג לעצמכם: לאכול כמה שיותר עכברים, לגנוב חביות חלב מכלבים ישנים ולאכול דגים במגוון רחב של שלבים צבעוניים (יחסית לשנה כמובן).[CR]יצירה שהיא חובה בכל בית שוחר נוסטלגיה - הרבה אנשים גדלו על משחק הארקייד המצוין הזה, ואני בטוח שעוד הרבה ימשיכו לגדול עליו...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6011</id>
+					<name>Ant Attack</name>
+					<filename>rom_pathDOS/_EN/Ant Attack/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Ant Attack.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Ant Attack.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1994</release>
+					<publisher>Dataware</publisher>
+					<gameplot>איזו נוסטלגיה! Ant Attack הוא פשוט העתק מדויק, או גירסא משופרת יותר של משחק שהיה לי על הקומודור המזדקן. בהחלט מדובר באחד המשחקים הכי קטנים ומהנים שראיתי זה שנים, הרעיון מאחוריו הוא פשוט אך גאוני.[CR]כולנו (או לפחות רובנו), שונאים נמלים, שלא נדבר על החלקאים שביננו. אז מה עושים איתם? בחיים הפרטיים, שום דבר - הם לא גורמים לנזק ממשי. אבל מה קורה כשהנמלים הקטנות והטורדניות האלה מוצאות דרכן אל חווה שקטה והופכים לנמלות ענק? זה בדיוק מה שקרה לגיבור המשחק שלנו, חקלאי במקצועו. הוא החליט לקחת את העניין בשליטה. אין לו לאן לברוח, אין לו איפה להתחבא ולכן כל מה שהוא יכול לעשות זה לתקוף! בעזרתכם כמובן.[CR]המלאכה רחוקה מלהיות קלה. כדי להעיף את האורחים הבלתי רצויים עליכם ליישר את ההרים שיצרו הנמלים בעזרת הבולדוזר. אחרי שעשיתם זאת והגעתם אל ה"אויבים", אתם צריכים להתקיף אותם בעזרת התרסיס הרעיל והלא ידידותי (לא לנמלים ולא לאוזון) שלכם. בינתיים הנמלים ימשיכו להתפזר ולהתרבות כך שאם אתם לא תפעלו מהר, הן ישתלטו על כל האזור ומי יודע מה יקרה אחרי זה. בנוסף, יש כמה תנאי שטח שיקלו עליכם ויהוו מחסום איתן בינכם ובין הנמלים. אבנים הן יותר מדי חלקות ותלולות בשבילן והן גם לא יחצו מים בגלל החוסר באמצעי שחייה (כך שגם הדלי שלכם יעשה את העבודה נאמנה). ולבסוף, שאריות של תרסיס יקבעו בין שניכם גבול מושלם.[CR]לסיכום, שעות רבות של הנאה טמונות בחקלאי הקטן שלנו ובמתקפת הנמלים ההרסנית. קל מאוד להתמכר - קשה מאוד להיגמל. Ant Attack מומלץ במיוחד לאוהבי משחקי הארקייד המהירים והתזוזתיים.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6012</id>
+					<name>Astrofire</name>
+					<filename>rom_pathDOS/_EN/Astrofire/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Astrofire.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Astrofire.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1994</release>
+					<publisher>ORT</publisher>
+					<gameplot>Astrofire הוא משחק ארקייד ממכר עם גרפיקה מצוינת וצבעים מדהימים.[CR]כטייסי "מטוס חלל" אתם צריכים לעבור כ-75 שלבים, לפוצץ בכל אחד מהם אסטרואידים וחלליות ולאסוף "מגבירי כח" ונשקים חדשים. בסך הכל אתם אמורים להילחם מול 18 סוגים שונים של חלליות ויריבים.[CR]העלילה קצרה יחסית אבל סגנון המשחק הממכר מחפה על כך באופן מעולה. כדור הארץ החדש נמצא תחת התקפה! צי אדיר של חלליות סחף את החלל והרס את כל מה שעמד בדרכו. עליכם, לבדכם, להסיר את האיום החייזרי ולהרוס את צי החלליות.[CR]למי שעדיין לא הבין, במשחק אתם שולטים בכלי טייס בחלל ועליכם לירות על כל מה שמופיע מולכם - חלליות, גלים של עצמים ואסטרואידים. בהחלט מדובר באתגר רציני - אז שתהיה לכם בהצלחה!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6013</id>
+					<name>Avoid The Noid</name>
+					<filename>rom_pathDOS/_EN/Avoid The Noid/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Avoid The Noid.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Avoid The Noid.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1989</release>
+					<publisher>ShareData</publisher>
+					<gameplot>משחק מהנה שבעצם נוצר על ידי דומינוס פיצה כדי לקדם את המכירות שלהם. אתם משחקים נער משלוחים, שמקבל לידיו פיצה שעליו להעביר ללקוח תוך חצי שעה. המשימה לא כל כך פשוטה, כי בבניין שבו עליכם לבצע את המשלוח נמצאים נוידים מרושעים שמתרוצצים בו ומחפשים הזדמנות לגנוב לכם את הפיצה. אתם מתחילים בקומת הקרקע ועליכם להגיע עד לקומה העליונה, כשככל שאתם עולים הנוידים מתרבים. בקומות מסוימות יש חורים ברצפה, ויהיה עליכם לקפוץ מעליהם, ובקומות אחרות הדלת תהיה נעולה ותצטרכו לפתוח אותה בעזרת מפתח שלקחתם קודם. כדי לעבור את הנויד, יהיה עליכם להתגלגל או לקפוץ, וכדי להשתמש בדברים צריך ללחוץ ENTER.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6014</id>
+					<name>Baby Jo in - Going Home</name>
+					<filename>rom_pathDOS/_EN/Baby Jo in - Going Home/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Baby Jo in - Going Home.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Baby Jo in - Going Home.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1991</release>
+					<publisher>Loriciel</publisher>
+					<gameplot>משחק פלטפורמה נחמד וצבעוני שבו עליכם להחזיר את גיבור המשחק הביתה, בדומה למשחקי מחשב רבים. אולם, הגיבור של המשחק הזה הוא לא גיבור שגרתי, כזה שמרבים לפגוש בעולם משחקי המחשב! הגיבור של המשחק הזה הוא לא אחר מאשר "בייבי ג'ו" התינוק...[CR]לא כל כך ברור מה גרם לג'ו הקטנטן להגיע כל כך רחוק מהבית - האם הוא נחטף על ידי חוטף אכזר? האם הוריו נטשו אותו וברחו? או שמא הוא פשוט הלך לאיבוד באמצע טיול שגרתי? יתכן ולעולם לא נדע... מה שאנחנו כן יודעים הוא שג'ו התינוק מאוד רוצה להגיע הביתה, והוא יעשה הכל כדי לעשות זאת.[CR]לצערו של בייבי ג'ו, הדרך הביתה לא כל כך קלה. הוא צריך לעבור 4 שלבים מלאים אויבים ומזיקים. יהיה עליו להתמודד עם צרעות עוקצניות, תולעים חלקלקות, סערות עזות ועוד ועוד. למזלו, הוא יכול לאסוף בדרכו את מיטב הציוד שבעזרתו ניתן להתמודד עם סכנות מסוג אלו (לפחות עבור תינוק): חיתולים, בקבוקי חלב ו...רעשנים! בעזרת הציוד הזה, אין מכשול שבייבי ג'ו לא יצליח להתגבר עליו...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6015</id>
+					<name>Arkanoid</name>
+					<filename>rom_pathDOS/_EN/Arkanoid/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Arkanoid.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Arkanoid.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1987</release>
+					<publisher>Taito</publisher>
+					<gameplot>אחת הגירסאות הראשונות של משחקי "שבירת לבנים". ספינת חלל בשם "ארקאנויד" הותקפה וניזוקה קשות על ידי כוח חיזרי מרושע. רק חללית קטנה בשם "ואוס" הצליחה להימלט מהספינה ולהגיע לחלל העמוק. אולם, צרותיה של "ואוס" לא תמו. בחלל העמוק גורם עוין הצליח ללכוד אותה ועליה למצוא דרך להמלט. את הדרך לחופשי על "ואוס" לעשות דרך 32 שלבים שבסופם היא תפגוש את מנהיג החוטפים ותתמודד איתו. עד למפגש זה עליה לפלס את דרכה דרך מספר גדול של לבנים שמסודרות באופנים שונים. את הלבנים היא שוברת בעזרת שליחת כדור אל הלבנים וניפוצם. מאחורי כמה לבנים מסתתרות "הפתעות" בדמות כדורים נוספים, יריות, תוספת לספינה ועוד. ברגע ש"ואוס" לא תצליח לשלוח את הכדור ללבנים, היא תאבד את הסיכוי להשתחרר...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6016</id>
+					<name>Arkanoid 2</name>
+					<filename>rom_pathDOS/_EN/Arkanoid 2/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Arkanoid 2.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Arkanoid 2.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1989</release>
+					<publisher>Taito</publisher>
+					<gameplot>משחק המשך עבור אחת הגירסאות הראשונות של משחקי "שבירת לבנים". במשחק הראשון, ספינת חלל בשם "ארקאנויד" הותקפה וניזוקה קשות על ידי כוח חיזרי מרושע. רק חללית קטנה בשם "ואוס" הצליחה להימלט מהספינה ולהגיע לחלל העמוק. אולם, צרותיה של "ואוס" לא תמו. בחלל העמוק גורם עוין הצליח ללכוד אותה ועליה למצוא דרך להמלט. "ואוס" הצליחה להגיע לחופשי על ידי מעבר דרך 32 שלבים שבסופם היא פגשה את מנהיג החוטפים והתמודדה איתו. עד לאותו מפגש, היא פילסה את דרכה דרך מספר גדול של לבנים שמסודרות באופנים שונים. את הלבנים היא שברה בעזרת שליחת כדור אליהם וניפוצם. מאחורי מספר לבנים הסתתרו "הפתעות" בדמות כדורים נוספים, יריות, תוספת לספינה ועוד.[CR]אולם כעת, זמן רב עבר וכוחות הרשע שבו מהמתים. יצור מרושע המסוגל לעבור בין מימדים ניצל את כוחו כדי להכנס ליקום שלנו דרך מימד אחר. כמובן שהוא לא בא לבד - הוא הביא איתו את חללית הענק שלו - "קסורג". כדי להגן על היקום, ספינת החלל "מיקסטק" (תאומה של ספינת החלל "ארקאנויד") שיגרה את החללית "ואוס 2". כעת על "ואוס 2" לבצע מתקפת-מנע כנגד "קסורג" ולסכל את תוכניתם המרושעת של כוחות האופל.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6017</id>
+					<name>Back to the Future Part 2</name>
+					<filename>rom_pathDOS/_EN/Back to the Future Part 2/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Back to the Future Part 2.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Back to the Future Part 2.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1990</release>
+					<publisher>Konami</publisher>
+					<gameplot>למרבה האירוניה, "בחזרה לעתיד 2" הוא בעצם המשחק הראשון בסדרתה הייחודית של Mirrorsoft. השם נובע כמובן מהקשר החזק בין המשחק לבין הסרט הקלאסי עליו הוא מבוסס "בחזרה לעתיד 2", בכיכובו של מייקל ג'יי פוקס המפורסם.[CR]העלילה במשחק ממשיכה את סיומה של עלילת הסרט. הדוקטור ומרטי מקפליי, ג'יי פוקס בסרט, חוזרים אחורה בזמן כדי להציל את גורלו וגורל משפחתו של מקפליי וכדי למנוע מהרשע האכזר, ביפ (Biff) את שינוי העתיד. בהחלט עלילה שראויה למשחק - ואפילו ליותר מזה.[CR]"בחזרה לעתיד 2", המשחק, מחולק לחמישה חלקים שונים המבוססים על סצינות מהסרט. החלק הראשון הוא בסגנון Paperboy אלא שהאופניים המוכרות הוחלפו בשמחה רבה עם רחפות מפורסמות עוד יותר והתוספת של יריבים מרושעים מבורכת.[CR]החלק השני שונה בהרבה מהראשון וניתן להשוואה עם Gauntlet הקלאסי. המטרה כאן היא להדריך את חברתו של מרטי, ג'ניפר, אל מחוץ לביתו מבלי שתפגוש אף אחד מארבעת חברי הבית. כחובב מושבע של משחקי Gauntlet, עליי להודות שהנאה מרובה קטפתי דווקא מחלק זה.[CR]החלק השלישי והמשעשע ביותר הוא קרב מכות אימנתי נגד ביפ - היריב המושבע! קפיצות, בעיטות ומכות בסגנון Street Fighter יעשו את העבודה. בהחלט עוד חלק מבורך מסדרת המיני משחקים.[CR]החלק הבא, השונה בחבורה, הוא משחק פאזל. במשחק זה צריך לסדר נכונה פאזל מונפש של חברי להקתו של מרטי. החלק האחרון, בדומה לראשון, הוא מרדף רחפות בו המעגל נסגר סופית ואתם נוגעים בהזדמנות לגמור את כל חמשת המיני-משחקים המשעשעים.[CR]"בחזרה לעתיד 2" הוא בהחלט תוסף מבורך לסרט מצוין, קלאסי וכמעט בלתי נשכח. הוא כולל גיוון מדהים, עם ארבעה סגנונות משחק שונים שלא נופלים אחד מהשני ברמות ההנאה. אז הגיע הזמן לארוז את מה שצריך ולצאת למסע מופלא בזמן...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6018</id>
+					<name>Back to the Future Part 3</name>
+					<filename>rom_pathDOS/_EN/Back to the Future Part 3/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Back to the Future Part 3.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Back to the Future Part 3.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1991</release>
+					<publisher>Image Works</publisher>
+					<gameplot>השנה היא 1885. שוב. דוק בראון מוצא את עצמו תקוע עם דלוריאן אחת, ללא יכולת לחזור חזרה לתקופת חייו המקורית. במקביל, השנה היא גם 1955, שוב. זו השנה שבה מרטי תקוע, לאחר שהדלוריאן חטפה מכת-ברק, בעודו מנסה לחזור חזרה ל-1985. מבולבלים? גם הם. אבל הם גם בעלי תושיה בלתי נלאים, ויחד הם יוצאים להרפתקה על ציר הזמן ותוך ניסיון שלא לשכתב את ההיסטוריה, או לפחות לא יותר מדי. איך זה נגמר בסוף, הרי, כולם יודעים.[CR]"בחזרה לעתיד 3" מבוסס על ארבעה קטעים מתוך סרטו המצליח של סטיבן ספילברג, בכיכובם של מייקל ג'יי פוקס וכריסטופר לויד. ארבעת הקטעים הללו מגולמים בתור ארבעה משחקונים, כל אחד עם סגנון שונה (למעשה, הראשון מגיע עם שני סגנונות שונים!).[CR]המשחקון הראשון מתרחש במקום שנקרא "גיא-קלייטון" - אלא אם כן, כמובן, דוק יצליח להציל את קלרה קלייטון המבועתת מנפילה לתהום! עגלת הסוסים של קלרה שועטת במהירות אל עבר קצה צוק, ורק אם דוק וסוסו יצליחו לצלוח את שדה המכשולים שמפריד בינם לבינה, הטרגדיה הזו תמנע. לרוע המזל, קטע הדרך שמפריד ביניהם הוא למעשה שדה קרב בו נלחמים זה בזה בוקרים ואינדיאנים ללא רחמים. גרזנים, כדורים וחצים מפלחים את האוויר, ודוק צריך להתחמק מפגיעה קטלנית בעודו מקפיד לקפוץ מעל תהומות ומכשולים או להתכופף ולחמוק מעצמים מעופפים. תחילה, המשחק משוחק במבט מהצד, ולאחר מכן עובר למבט עילי. דוק יכול להרשות לעצמו יפול מהסוס מספר פעמים, אך פעם אחת יותר מדי, ואהובתו (שעדיין לא יודעת על כך) תהפוך לקורבן טרגי של התרחשות חסרת מזל.[CR]בשנת 1885, אף אחד עדיין לא שמע על קלינט איסטווד, כוכב המערבונים המחוספס. כלומר, עד שמרטי מק-פליי הציג את עצמו בשם זה בפני סב-סבו, שיימוס. כעת, מרטי משתתף במטווח ברווזים שבו עליו להוכיח שהוא ראוי לשם שבחר לעצמו. ברווזים ובוקרים הם מטרות לגיטימיות, אך כדאי להמנע מפגיעה מקרית בסבתא חסרת המזל שעשויה לצוץ משום מקום.[CR]אקדח הוא לא כלי הנשק היחיד שבו יודע להשתמש מרטי. למעשה, התיכוניסט ההרפתקן יודע להטיל צלחות-שיש למרחקים, והוא מתכוון (או שמא נאלץ?) להשתמש ביכולת הזו על מנת להביס את ביופורד "כלב משוגע" טאנן - סבו של ביף הבריון - בדו-קרב מהסרטים. טאנן וחבורתו מתבצרים בקבוצת בניינים בעיירה ולא מהססים להשתמש בנשק חם כנגד מרטי, אך הוא מנגד משתמש במלאי הצלחות האינסופי של חברת "פריזבי-פאי" בתור... פריזבי! כנהוג לומר, השאר היסטוריה.[CR]המשחקון האחרון מתרחש על גג רכבת דוהרת, והוא המפתח לחזרה הביתה בשלום. בהעדר דלק בשנת 1885, מרטי ודוק צריכים להביא את הדלוריאן למהירות הקסומה של 88 מייל לשעה בדרך יצירתית יותר - רתימה לרכבת, למשל. על מנת לעשות זאת, מרטי צריך לאסוף מספיק דינמיות לחימום דוד המנוע, בעודו נלחם בחבורת שודדים מרושעים. רק כך, הדלוריאן תוכל להחזיר אותם להווה.[CR]"בחזרה לעתיד 3" הוא משחק מאתגר בסך הכל, עם גיוון יחסי של ארבעה משחקונים שונים. אמנם אין לכם את הפריבילגיה של כוכבי המשחק - חזרה אחורה בזמן על מנת לתקן טעויות - אך למרבה המזל, תוכלו להספק בחלופה לא פחות רעה במקרה הזה: חזרה על המשחק עד כדי שליטה מוחלטת...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6019</id>
+					<name>Bad Street Brawler</name>
+					<filename>rom_pathDOS/_EN/Bad Street Brawler/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Bad Street Brawler.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Bad Street Brawler.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1987</release>
+					<publisher>Mindscape</publisher>
+					<gameplot>רמת הביטחון בעיר מדרדרת. תוהו ובוהו שורר ברחובות. כנופיות של עבריינים משליטות שלטון טרור על האזרחים. צריך מישהו שיציל את המצב ויחזיר את הביטחון לרחובות. והמישהו הזה הוא דיוק דיוויס, זמר פאנק לשעבר ומומחה לאומנויות לחימה בהווה.[CR]דיוק לוקח על עצמו את המשימה בגלל סיבה מאוד אישית - הוא רוצה שסבתא שלו תוכל להלך ברחובות בשלווה. כישורי הלחימה של דיוויס באים לידי ביטוי בכמה אופנים. ראשית, הוא יכול לבעוט ביריביו או להעיף אותם בעזרת ברכיות. מלבד זאת, הוא יכול להפיל אותם לרצפה. ולסיום, גולת הכותרת של דיוויס - "המשיכה באוזן". דיוויס יכול להרים את יריבו מהאוזניים, לנענע אותו באוויר וכך לחסל את כוחותיו. לפיתת האוזן הזו יעילה כנגד כמעט כל היריבים שיפגוש דייויס.[CR]ככל שדיוק יתקדם, האויבים שלו ילכו ויתחזקו. בסוף כל שלב הוא יפגוש את "הבוס" - נגדו יצטרך דיוויס לאמץ את מיטב כוחותיו. למען סבתא שלו, נקווה שיצליח...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6020</id>
+					<name>Ballistix</name>
+					<filename>rom_pathDOS/_EN/Ballistix/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Ballistix.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Ballistix.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Arcade / Action</genre>
+					<release>1989</release>
+					<publisher>Psyclapse</publisher>
+					<gameplot>זה פינבול? זה הוקי אוויר? זה כדורגל? זה "כדור הרעם"! מעין ספורט עתידני שעיקרו הצורך הכל כך בסיסי לקחת כדור ולהכניס אותו לשער. המשחק נוצר במקור עבור ה-Amiga וה-Atari ST, אך עבר הסבה ל-DOS ושווק על ידי חברת Psygnosis, שאחראית לעשרות משחקי מחשב כגון Wipeout, סדרת הנמלולים ועוד. שמו המקורי של המשחק הוא "Ballistix", אך בארץ הוא שווק על ידי "מחשבת" תחת השם "כדור הרעם".[CR]"כדור הרעם" הוא משחק לשחקן אחד או שניים. הוא מתנהל בתוך מגרש, כאשר לכל אחד מהשחקנים ישנו שער, והמטרה היא להזיז את הכדור ולהבקיע את שער היריב. השחקן שולט על חץ שיכול לנוע על גבי המגרש, ויכול לירות מעין כדורים קטנים לכל עבר. זוהי בעצם הדרך להזיז את הכדור הראשי: הזזת החץ כך שיצביע לכיוון הכדור, ומשם לכיוון הרצוי, ו"ירי" כדור קטן שיפגע בכדור הגדול ויזיז אותו לכיוון זה. תנועת הכדורים מצייתת לחוקי הפיזיקה, כך שזווית הפגיעה ועוצמתה משפיעות על תזוזת הכדור וכיוונו.[CR]במשחק לשחקן יחיד, ההתמודדות היא מול מעין כוח משיכה שמפיל או מקפיץ את הכדור. כמובן שהכיף האמיתי נמצא בהתמודדות מול יריב אנושי, שיעשה הכל כדי להגן על השער שלו. ואם זה לא מספיק, עם התקדמות השלבים, המגרש עצמו הופך למכשול גדול יותר ויותר: מגנטים מושכים את הכדור, מנהרות מעלימות אותו, בריכות חומצה מטביעות אותו, חיצים אדומים גורמים להאצה והפתעות רבות אחרות משפיעות על הכדור או על השחקנים בדרכים שונות. המשחק עצמו מכיל 130 שלבים כאלה.[CR]"מחשבת" ידועה בעיקר בזכות סדרת משחקי ההרפתקה שהיא שיווקה בארץ, אך במקרה הזה היא זיהתה משחק ארקייד כיף וממכר ששני שחקנים בהחלט יהנו ממנו.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6021</id>
+					<name>Bamba</name>
+					<filename>rom_pathDOS/_EN/Bamba/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Bamba.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Bamba.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1996</release>
+					<publisher>אסם</publisher>
+					<gameplot>מאז נדחתה על הסף תיאוריית הקונספירציה שלי על איך התינוק של במבה ופרסומותיו מעבירים מסרים בלתי הולמים היישר לתת המודע של ילדים שבריריים ובלתי מוגנים, אני איני מחמיץ הזדמנות לעקוץ את המונופול הזה (במבה שממבה - הוא עדיין מונופול). למרות זאת, בהתחשב בקהל היעד של "מסיבמבה" (קהל יעד "שברירי ובלתי מוגן"), יצירה שחולקה חינם עם קניית המוצר עצמו, אני לא רואה שום דבר רע במשחק.[CR]אי אפשר להעיר על הפרסומות הגלויות (והסמויות?) במשחק, אין אף חיה (מסוכנת) שלא מחייכת חיוך רחב (למרות שהחיוך של הנמר משדר משהו בסגנון אני-יודע-משהו-שאתה-לא) והמשימות הן פשוטות אך מאתגרות לגיל הרך. המשימה העיקרית היא, איך לא, חלוקת במבה לכל חיות הג'ונגל, וזאת לפי הסדר שאותו קובע המחשב. בנוסף על משימת החלוקה, אתם נדרשים לאסוף אותיות מהסלוגן המוכר: "אין כמו במבה של אסם". לבסוף, תגיעו למפעל הייצור של המוצר שם מתרחשת מסיבת הפתעה פרועה ביותר לתינוק של במבה.[CR]אין ספק שקהל היעד הצעיר ימצא את המסע בג'ונגל ובחלומו של במבה הקטן, קסום, מהפנט ואולי אפילו קצת כיפי. למרות זאת, אתם ההורים חייבים לקחת בחשבון את תופעות הלוואי הבלתי נמנעות של המשחק שכוללות בין היתר שאגות "אנירוצהבמבה!" ברחבי הבית ולפעמים גם התנהגות מיני-פסיכופטית או בחלק מהמקרים במבה-פוביה... תהנו!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6022</id>
+					<name>Barbarian</name>
+					<filename>rom_pathDOS/_EN/Barbarian/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Barbarian.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Barbarian.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1989</release>
+					<publisher>Melbourne House</publisher>
+					<gameplot>"ברברי" הוא משחק פלטפורמה שונה במקצת ממשחקי פלטפורמה "קלאסיים" אך בכל זאת, על אף גילו המתקדם, הוא מצליח לככב ברשימת האהדה שלי למשחקי פלטפורמה (יחד עם כל יצירותיה של Apogee). המשחק, שמסתפק בעלילה מינימלית ובמקסימום אקשן, שווק על ידי חברת Mastertronic, חברה ותיקה לשעבר בתחום משחקי המחשב, למחשב הביתי אחרי ששנתיים קודם לכן הוא שווק על ידי Psygnosis (החברה העומדת מאחורי סדרת "הנמלולים") לאטארי. העלילה היא כל כך פשוטה שניתן לנחשה רק בעזרת התבוננות בתמונת מסך אחת מהמשחק. לא פחות ולא יותר: אתם משחקים אדם ברברי (או במילים יותר שקטות: לוחם שנולד כך) וצריכים לחרוש את העולם הוירטואלי של Mastertronic בחיפוש אחר מפלצות. הפאנל שעוזר לכם בכל משימות "טבח המפלצות" שלכם אמנם די מסובך בתחילה, ולא מוסיף למהירות הפעולה אך עם הזמן, ניתן לשלוט בפאנל במקצועיות. לסיכום, צאו עם גיבור האטארי שלכם להרפתקאה מלאת מלחמות קטנות. קיפצו מפלטפורמות לפלטפורמות, נוסו על נפשכם, הניפו בחרבכם וכמובן הפיקו מזה הכי הרבה כיף שאתם יכולים - בהצלחה!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6023</id>
+					<name>Bart Simpsons House Of Weirdness</name>
+					<filename>rom_pathDOS/_EN/Bart Simpsons House Of Weirdness/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Bart Simpsons House Of Weirdness.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Bart Simpsons House Of Weirdness.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1991</release>
+					<publisher>Konami</publisher>
+					<gameplot>בארט, הפרחח המפורסם מ"משפחת סימפסון", עולל תעלול אחד יותר מדי. על תעלול כזה הומר ומארג', הוריו, לא היו יכולים לשתוק, והם שלחו אותו לריתוק בחדרו. אולם, בארט הוא לא ילד שמסוגל לשבת בשקט בחדר, ולא עובר זמן רב עד שהוא פותח את חלונו ויוצא לשוטט בחיפוש אחר תעסוקה. והתעסוקה אכן מוצאת אותו...[CR]Bart's House of Weirdness מורכב משישה שלבים שונים, שכל אחד מהם מתרחש במיקום אחר. חמשת השלבים הראשונים מורכבים ממשימות פשוטות יחסית. למשל, בארט צריך לעזור לאחותו מגי למצוא את הכדור האבוד שלה, או להתגנב לתוך הקולנוע. המשימה האחרונה היא המורכבת ביותר: בארט מגיע אל קראסטילנד, פארק השעשועים של קראסטי הליצן - גיבור הילדות הבלתי מעורער של בארט. שם, עליו להציל את קראסטי מפני סייד-שואו בוב המטורף שרוצה לקחת את מקומו.[CR]בארט, כמובן, לא יוצא להרפתקאות הללו בידיים ריקות. הוא אוסף לעצמו שלל כלי נשק מאולתרים: קלע, ספריי, חצי קליעה וכלי נשק נוספים יעזרו לו במשימות השונות שלו. עם אוסף כלי הנשק הזה, ועם רוח הקרב של בארט, כדאי שסייד-שואו בוב יתחיל לחשוש כבר מעכשיו...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6024</id>
+					<name>Batman - The Movie</name>
+					<filename>rom_pathDOS/_EN/Batman - The Movie/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Batman - The Movie.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Batman - The Movie.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1990</release>
+					<publisher>Data East</publisher>
+					<gameplot>באטמן, איש העטלף מגותהאם סיטי, חוזר לעוד הרפתקה מסוכנת מול כמה מהפושעים המסוכנים בעולם. בשגרה הוא אולי בנאדם רגיל, אך בעת צרה הוא מיד חוזר למערת העטלף שלו, מכסה את עצמו בחליפה ובגלימה המפורסמות שלו, קופץ לתוך הבאטמוביל וממהר להציל את האנשים היקרים של גותהאם סיטי מעוד צרה שמאיימת עליהם.[CR]משחק זה מורכב מחמישה שלבים שונים, כל אחד עם אויב מסוכן ואכזרי אחר. בשלב הראשון באטמן צריך למצוא את הג'וקר המשוגע שפשט על המפעל הכימי. בשלב השני, הוא צריך לברוח מהג'וקר בעזרת הבאטמוביל שלו אל תוך מערת העטלף. בשלב שמגיע לאחר מכן, יהיה על באטמן למצוא חפץ מסוים ששייך לג'וקר. אם הוא יצליח, הוא יעבור לשלב הבא בו עליו להתמודד עם בלונים שמכילים גז מסוכן. ובשלב האחרון, איש העטלף יתמודד פנים אל מול פנים מול הג'וקר בקרב הסופי כדי להכריע מי מהם יצא כשידו על העליונה. גורל אנשי גותהאם סיטי תלוי בכך...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6025</id>
+					<name>Battle Europe</name>
+					<filename>rom_pathDOS/_EN/Battle Europe/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Battle Europe.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Battle Europe.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release></release>
+					<publisher>Comspec</publisher>
+					<gameplot>זוכרים את המשחק Battle Tank שהיה פעם ב-SEGA? במשחק ההוא שלטתם על טנק והייתם צריכים להגן על פסל של ציפור מזהב. המשחק הזה הוא בדיוק אותו דבר - אבל בהרבה יותר מגניב...[CR]כן, גם פה אתם משחקים עם טנק וגם פה יש לכם ציפור וגם פה אתם נלחמים נגד טנקים אחרים אבל זה נראה בהרבה יותר טוב. קודם כל, המבט הוא לא עילי כמו במשחק הישן אלה בצורה תלת מימדית (בערך). בנוסף, הכל נראה יותר צבוע ויפה.[CR]המטרה שלכם היא להרוס את כל הטנקים שיש במסך ובו זמנית להגן על ציפור הזהב. יש לכם מפה שעוזרת לכם וגם בונוסים שתוכלו לקחת...[CR]בקיצור, אין לי מה להוסיף עוד על המשחק חוץ מהעובדה שזה משחק מגניב ושווה בהחלט לשחק בו...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6026</id>
+					<name>Beetlejuice in Skeletons in The Closet</name>
+					<filename>rom_pathDOS/_EN/Beetlejuice in Skeletons in The Closet/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Beetlejuice in Skeletons in The Closet.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Beetlejuice in Skeletons in The Closet.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1990</release>
+					<publisher>Hi-Tech Expressions</publisher>
+					<gameplot>Beetlejuice: Skeletons in the Closet הוא משחק שמבוסס על הסדרה המצוירת Beetlejuice, שבתורה מבוססת על הסרט Beetlejuice (איזו הפתעה!). למי שלא מכיר את הסרט אני ממליץ בחום לראות אותו, הוא שייך לתקופה שבה טים ברטון עדיין עשה סרטים טובים. גם הסדרה די מוצלחת יחסית לסטנדרטים של סדרות ילדים מצוירות, למרות שהקשר לסרט הוא בעיקר בשמות של הדמויות ולא יותר מזה.[CR]ונחזור למשחק – כאמור, הוא מבוסס די בחופשיות על פרק בסדרה (פרק 3 בעונה הראשונה, למי שמתעקש לדעת). בפרק ביטלג'וס מגלה שאחרי ששיקר לכולם וצבר "שלדים בארון" הוא צריך להיפטר מהם בעזרת אמירת האמת לפני שהם יגלו את השקרים שלו לכולם. במשחק תשלטו בדמותו של ביטלג'וס ועליכם להשמיד את השלדים שמתרוצצים על לוח המשחק המשובץ על ידי יריקות. למה? ככה. בכל פעם שתפגעו בשלד, לידיה, חברתכם הטובה, תמהר למקום עם שואב אבק ותעלים אותו. כשכל השלדים ישאבו - תעברו שלב. אם שלד יגע בכם בעודו ב"חיים" - נפסלתם. אם שלד יגע בלידיה, היא תיכלא עד שתשחררו אותה. עד כאן פשוט וקל.[CR]בהתחלה תוכלו לירוק רק ב"בודדת", אך בכל פעם שתהרסו שלד, תקבלו אפשרות לקחת בונוס. יש שלושה חיזוקי נשק: ירי רציף שנותן לכם לירוק 4 פעמים ברצף, ירייה א-לה-מגרש השדים שתשחרר 8 יריקות בכל כיוון וראש שמאפשר לביטלג'וס לזרוק את ראשו לכיוון אליו הוא פונה. זה הנשק החביב עלי, כי הראש חוזר למקום שבו ביטלג'וס נמצא ומאפשר בכך חיסולי קומבו. מיותר לציין שאם תיפסלו, החיזוק יעלם ותתחילו שוב עם היריקה הבסיסית. בנוסף קיימים עוד שני בונוסים: הנחשים שיקפיאו את כל השלדים בשלב למספר שניות והברק שישחרר את לידיה מהכלוב אם היא נתפסה. אפשרות לבונוס נוסף מגיעה בצורת החיפושיות שמסתובבות בשלב. בכל פעם שתאכלו חיפושית שונה תקבל אות אחרת, ואחרי שתתפסו 5 חיפושיות ותרכיבו את המילה Truth (רואים את הקישור לעלילה בפרק? גאוני), כל השלדים בשלב יתפרקו וכל מה שיישאר לעשות זה לחכות ללידיה שתשאב את כולם.[CR]גם האויבים מתחזקים עם העלייה בשלבים. בהתחלה תתקלו בשלדים לבנים שמתים אחרי יריקה אחת, אך בהמשך (או אם לידיה לא הספיקה לשאוב אותם בזמן והשלדים קמו לתחייה) יופיעו שלדים כחולים או ורודים שצריכים 2 או 3 יריקות בהתאמה. חוץ מהם, מדי פעם יופיעו ה"חברים" של ביטלג'וס – ז'ק השלד, ג'ינג'ר העכבישה או המפלצת מעבר לרחוב (היי, ככה קוראים להם, זו לא המצאה שלי). אין להם השפעה בשגרה, אבל אם יגע בהם שלד הם יכעסו, יתחילו לנוע מהר על הלוח ויפסלו אתכם בנגיעה. אפשר להרגיע אותם עם ירייה או פשוט להימנע מלגעת בהם. האויב האחרון היא תולעת החול שתופיע אם תעמדו במקום אחד יותר מכמה שניות וגם כאן הפתרון פשוט – אל תפסיקו לרוץ![CR]בסה'כ מדובר במשחק שמשלב בצורה טובה פשטות ומשחקיות ממכרת. הוא נחמד להעביר כמה דקות משחק בכיף אבל בשלבים המתקדמים הוא הופך ליותר ויותר מתסכל, במיוחד בגלל שחלוקת האויבים היא רנדומלית ואם נפסלתם בשלב מתקדם והתחלתם מחדש עם שלב של שלושה שלדים ורודים אין סיכוי להתאושש. כל 10 שלבים תקבלו סיסמה והמשחק כנראה נגמר בשלב מסוים אבל אין לי מושג, אני בד'כ נפסל בסביבות שלב 60.[CR]מומלץ למי ששיחק בו פעם ורוצה להיזכר או למי שממש רוצה לדעת מה העסיק אותנו בתחילת שנות התשעים. לכל השאר אני ממליץ לנסות במקום את אי הקופים, שיצא באותה שנה.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6027</id>
+					<name>Blackthorne</name>
+					<filename>rom_pathDOS/_EN/Blackthorne/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Blackthorne.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Blackthorne.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1994</release>
+					<publisher>Blizzard</publisher>
+					<gameplot>"קייל, בני, אתה חייב לקחת את אבן האור ולהתחבא בקרב בני כדור הארץ. שמור עליה בחייך, אם היא תיפול לידיו המרושעות של סלרק הכל יהיה אבוד. עם הזמן אתה תגדל ותתחזק, ויום אחד אתה תחזור לטואול כדי להגשים את גורלך".[CR]אלה היו המילים האחרונות שאמר ולרוס, מלך האנשים בטואול לילדו קייל לפני שקוסמו האישי שיגר אותו אל כדור הארץ. היה זה בלילה בו כוחותיו של סלרק, מלך המפלצות, פשטו על סטונפיסט החריבו אותה ושיעבדו את בני האדם. מאז עברו עשרים שנים. קייל אכן גדל והתחזק, ולילה אפל אחד חזר כדור האור של קסם השיגור והחזיר אותו לטואול. חמוש ברובה ציד איטי ומגוון אביזרים שהוא מוצא במהלך דרכו, יוצא קייל להלחם במפלצות ולשחרר את בני עמו.[CR]משחק מעולה זה לוקח את הסבלנים שביניכם למסעו המופלא של קייל. הלא סבלנים שביניכם, אלו שמחפשים משחק יריות מהיר, בו יורים על כל מה שזז בסגנון קווייק, יתאכזבו מפעולותיו האיטיות של קייל ומהליכתו ה.. איך לומר- לא ממש זריזה. אבל אל תתנו לי לבאס אתכם, מי שמחפש את קווייק יוריד את קווייק, לא?. מוצב לפניכם משחק נפלא, וברגע שתיכנסו לראש שלו - תתמכרו ולא תוכלו להשתחרר.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6028</id>
+					<name>Blake Stone - Aliens of Gold</name>
+					<filename>rom_pathDOS/_EN/Blake Stone - Aliens of Gold/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Blake Stone - Aliens of Gold.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Blake Stone - Aliens of Gold.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1993</release>
+					<publisher>JAM Productions</publisher>
+					<gameplot>Action / Arcade</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6029</id>
+					<name>Bonkheads</name>
+					<filename>rom_pathDOS/_EN/Bonkheads/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Bonkheads.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Bonkheads.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1998</release>
+					<publisher>1 AM Entertainment</publisher>
+					<gameplot>החיים בעיר הטרולים, Trollsville, היו פשוטים ושלווים למדי, לפחות עד ששטפה את העיר מכת מזיקים טורדנית. לעזרתה של העיר נחלצו צמד הטרולים גרג ות'וג, אשר אימצו את השיטה שהגו מריו ולואיג'י במשחק .Mario Bros - תקיפת המזיקים מפלטפורמה נמוכה יותר ובעיטתם אל עבר האופק.[CR]המשחק מתנהל על גבי מספר פלטפורמות, כאשר הטרול המיועד מתחיל מהפלטפורמה התחתונה ואילו המזיקים (בדמות כלבי בולדוג, דביבונים, דבורים ועוד ועוד) מתחילים מהעליונה. בכל שלב, מטרת השחקן היא לחסל את שלל המזיקים שמופיעים בו - דבר שנעשה על ידי קפיצה מתחת לפלטפורמה שעליה נמצא המזיק (ועל ידי כך "הרדמתו" לזמן קצר) ולאחר מכן בעיטתו אל מחוץ למסך. אולם, על השחקן למהר - אם יספיק המזיק להתעורר לפני שיבעט אל מחוץ למסך - יחזור המזיק לחיים עם כוחות מחודשים. בנוסף, אם יצליח המזיק להגיע אל תחתית המסך - הוא יחזור מיד אל ראש המסך למסע מחודש, אך יתוגבר במהירות רבה יותר. וכמובן, אם זה לא מספיק, קופצים לביקור מדי פעם גם "בוסים" שונים שאותם קצת קשה יותר לנצח...[CR]כדי לסיים את משימתם הקשה בהצלחה, גרג ות'וג יכולים להעזר במגוון בונוסים המופיעים לאורך המשחק. הבונוסים יהפכו את הטרולים למהירים יותר, חזקים יותר, ובאופן כללי - כשירים יותר להתמודד עם בעית המזיקים שפוקדת אותם. בנוסף, כאשר נראה שאפסה התקווה והמזיקים נמצאים בכל מקום - תמיד ניתן לפנות אל ארגז ה-TNT הממוקם במכרז המסך ולהמם את כל שוכני המסך בבת אחת.[CR]את כל 144 השלבים של Bonkheads אפשר לנסות לסיים לבד, אך משחק בשני שחקנים יכולה גם להכפיל את ההנאה. במקרה כזה גרג ות'וג ישתפו פעולה (או יתחרו אחד מול השני) בו זמנית במטרה להחזיר את עיר הטרולים לימיה הטובים והשלווים, לפני שצרת המזיקים פקדה אותה...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6030</id>
+					<name>Bouncing Babies</name>
+					<filename>rom_pathDOS/_EN/Bouncing Babies/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Bouncing Babies.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Bouncing Babies.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1984</release>
+					<publisher>Dave Baskin</publisher>
+					<gameplot>שרפות בבניינים פורצות כל הזמן. בדרך כלל יש למכבי האש מזל ורוב האנשים מתפנים דרך המדרגות ולא נאלצים לקפוץ מהבניין הבוער. במשחק הזה, לא היה להם מזל. עשרות תינוקות נלכדו בתוך בניין בוער והדרך היחידה שלהם להנצל היא לקפוץ מהחלון. אם הם היו מבוגרים, וודאי היו כולם קופצים לאותו מקום ולכן היה מספיק להעמיד מזרן ענק מתחת לחלון. הבעיה עם תינוקות היא שהם לא תמיד מודעים למעשים שלהם, ולכן יש כאלה שקופצים רחוק מהבניין ויש כאלה שקופצים קרוב אליו. בעקבות זאת, נאלצים צמד כבאים לחכות מתחת לבניין עם אלונקה-טרמפולינה, לצפות לאן התינוקות יקפצו ו"להקפיץ" אותם לתוך האמבולנס המחכה בצד. שם הם כבר יהיו בטוחים.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6031</id>
+					<name>Brutal - Paws of Fury</name>
+					<filename>rom_pathDOS/_EN/Brutal - Paws of Fury/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Brutal - Paws of Fury.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Brutal - Paws of Fury.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Fightingy</genre>
+					<release>1995</release>
+					<publisher>GameTek</publisher>
+					<gameplot>מה רבו משחקי המכות הדו-מימדיים. מאז מורטל קומבט האגדי יצאו לאור עשרות משחקי דמה ולא מעט "חיקויים". אני לא בדיוק יודע כיצד לכנות את Brutal Paws Of Fury, משחק שנחשב על ידי רבים לאגדי לא פחות. הוא לא בדיוק רע והוא גם לא בדיוק טוב. בינוני שכזה. למרות שהכל מסביב מצויין, הדמויות, הגרפיקה והאנימציות, פשוט לא מצאתי את המשחק מושך או ממכר במיוחד.[CR]בנוסף לגרפיקה ולדמויות המטורפות (שכוללות בין היתר ארנב, צ'יטה, שועל וחתולה), מעריצי המשחק ישמחו לציין לטובה את התרגילים המיוחדים של הדמויות, האווירה הקלילה, אפשרות ה"שידור החוזר" וכמובן את הנופים המרהיבים שעל יופיים אין עוררין. בנוסף לכל המצויין לעיל, Brutal Paws Of Fury מכיל שלוש רמות לחימה (קל, בינוני וקשה) וכולל גם מספר רב של אפשרויות עריכה.[CR]לא הבחירה הראשונה שלי במשחקי המכות, אבל אלטרנטיבה לא רעה לשעות המתות של היום.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6032</id>
+					<name>Comet Busters!</name>
+					<filename>rom_pathDOS/_EN/Comet Busters!/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Comet Busters!.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Comet Busters!.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1996</release>
+					<publisher>HAMCO</publisher>
+					<gameplot>בתור אחד ממשחקי המחשב הראשונים, לא היה ספק ש-Asteroids יזכה לשלל חידושים ושיבוטים. וכך, בין Astrofire לבין EGA Roids לבין עוד אינספור משחקים, אפשר למצוא גם את "Comet Busters!", שמהווה ללא ספק את אחד מהחידושים המוצלחים ביותר למשחק המיתולוגי.[CR]במקור, Comet Busters נוצר בתור תרגיל לימודי בתכנות עבור חלונות, מתישהו בשנת 1991. אולם, המשחק החל לצבור פופולריות רבה, והיוצר, Steven E. Hugg, שדרג אותו עד להגעה אל הגירסה הסופית (1.4), ששוחררה לאחר מכן להורדה חופשית והיא הגרסה המוצעת להורדה גם באתר.[CR]במהלך המשחק, אתם מקבלים לידיכם את השליטה על חללית קטנה ומדליקה, אי שם בתוך המרחב האינסופי של החלל. מסביבכם - אסטרואידים תועים, חלליות אויב ויצורים קטלניים (המכונים "קרונים"). מטרתכם - לשרוד. בניגוד למה שניתן אולי לחשוב, בהחלט לא מדובר במשימה קלה, כאשר כל פגיעה באסטרואיד תשמיד אתכם כליל, כל מעבר ליד חללית אויב עשוי להסתיים ביירוט ממוקד וכל מפגש עם הקרונים טומן בחובו סכנה ברורה ומיידית. למזלכם הרב, החללית שלכם מצויידת בתותח אוטומטי ובמבער אחורי (לצד מקלט AM מקולקל), מה שמאפשר לכם להשמיד את הנקרה בדרככם (או לפחות להתחמק ממנו), אם רק תהיו מספיק זריזים. כל פגיעה באסטרואיד תפצל אותו למספר חלקים קטנים יותר (שגם אותם יש להשמיד עד שיעלמו כליל), בעוד שפגיעה באויבים האחרים תחסל אותם בבת אחת.[CR]אחד היתרונות של Comet Busters הוא השליטה הרבה שיש לשחקן על המתרחש במשחק. מאפיינים רבים במשחק ניתנים להתאמה, החל ממהירות הפגזים או מהירות החללית וכלה בכוח הדחף שלה. זאת, בנוסף ליכולות המיוחדות שניתן לשייך לחללית (שדה כוח מגן, יכולות חמקניות ועוד). עוד יתרון חשוב הוא היכולת לשחק עם עד 4 שחקנים, בו זמנית (במידה ומוצאים מספיק מקום ליד המקלדת), בשיתוף או "ראש בראש". ניתן גם להגדיר את ההתנהגות של האסטרואידים או של החלליות כאשר פוגע בהם פגז, את רמת הקושי של המשחק ועוד ועוד.[CR]גם בתחום החוויה ההיקפית המשחק לא ממש מאכזב. הוא מגיע עם מספר מנגינות מלהיבות אליהן ניתן להוסיף מנגינות מהאוסף הפרטי, והאפקטים הקוליים מוסיפים להתלהבות הכללית. הגרפיקה סבירה בהחלט, והתנועה על המסך חלקה ו"זורמת". השליטה על החלליות קצת מורכבת, אך זוהי המטרה במשחקים מהסוג הזה.[CR]בסך הכל, מדובר ביופי של חידוש למשחק האסטרואידים הקלאסי. לא רע בשביל פרוייקט שהתחיל בתור ניסוי בתכנות עבור חלונות...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6033</id>
+					<name>Comix Zone</name>
+					<filename>rom_pathDOS/_EN/Comix Zone/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Comix Zone.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Comix Zone.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6034</id>
+					<name>Commander Keen 1</name>
+					<filename>rom_pathDOS/_EN/Commander Keen 1/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Commander Keen 1.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Commander Keen 1.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1990</release>
+					<publisher>id Software</publisher>
+					<gameplot>"קומנדר קין - אבוד במאדים" הינו הפרק הראשון מתוך תת-הסדרה "קומנדר קין ופלישת הוורטיקונים", הכוללת שני פרקים נוספים. הפרק הראשון שוחרר בחינם, בעוד שני הפרקים האחרים נמכרו בתשלום.[CR]בילי בלייז, גאון בן 8, הצליח לבנות (לאחר שעות של עבודה מתמדת בחצר האחורית שלו) ספינת חלל בין-כוכבית. כיאה לגאון, הוא הצליח לעשות זאת על ידי צירוף של פחיות שימורים, גומי ופלסטיק. כאשר הוריו מחוץ לעיר והבייביסיטר שלו נרדמת, בילי מתחמק לחצר האחורית, חובש את קסדת הבייסבול של אחיו הגדול והופך להיות לא אחר מאשר קומנדר קין - הכוח המגן של כדור הארץ! בתוך ספינת החלל שלו הוא משליט צדק גלקטי ביד ברזל![CR]לרוע מזלו של קין, חייזרים מהכוכב "וורטיקון 6" מגלים על קיומו וזוממים לחסל אותו. בזמן שקין יוצא למסע-חקר בהרי מאדים, הוורטיקונים גונבים מהחללית שלו חלקים חיוניים ומחביאים אותם בערים רחוקות במאדים. כעת על קין למצוא ולהשיב את כל חלקי החללית האבודים, לנצח את הוורטיקונים ולחזור הביתה לפני שההורים שלו מגיעים![CR]אולם, לפני שקין יוצא למסע הזה - יש כמה דברים שהוא צריך לדעת על מאדים. קודם כל, נאסא גרמה בזמנו, שלא בידיעתה, לתקרית דיפלומטית חמורה במאדים. כאשר היא הנחיתה את חללית המחקר שלה, ה"ויקינג", על אדמת הכוכב האדום, היא בטעות מחצה למוות את מלך מאדים! על ידי כך, היא שיחררה מעבדות את ה"יורפים" (היצורים הנחמדים בעלי העין האחת) וכך הכעיסה מאוד את ה"גארגים" (היצורים האכזריים של מאדים). עקב כך, הגארגים יצרו רובוטים שאמורים לעזור בביצוע עבודות ובשמירה. כדאי לקין להזהר מהם - הם מאוד טובים במה שהם עושים... מלבד זאת, אם קין יתקל במקרה בצעצוע תוצרת כדור הארץ, שלא יתבלבל. מזה שנים מבקרים חייזרים ממאדים בכדור הארץ וגונבים צעצועים! כדאי לקין לשים לב לצעצועים האלו - יכול להיות שהוא ימצא אותם מועילים ביותר במקרים מסויימים...[CR]כעת, ההרפתקה של קין מתחילה. האם הוא יצליח למלא את משימותיו הרבות והקשות לפני שהוריו ישימו לב להיעדרו?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6035</id>
+					<name>Commander Keen 2</name>
+					<filename>rom_pathDOS/_EN/Commander Keen 2/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Commander Keen 2.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Commander Keen 2.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1990</release>
+					<publisher>Apogee Software</publisher>
+					<gameplot>"קומנדר קין - כדור הארץ מתפוצץ" הינו הפרק השני מתוך תת-הסדרה "קומנדר קין ופלישת הוורטיקונים", הכוללת שני פרקים נוספים.[CR]בילי בלייז, גאון בן 8, הצליח לבנות (לאחר שעות של עבודה מתמדת בחצר האחורית שלו) ספינת חלל בין-כוכבית. כיאה לגאון, הוא הצליח לעשות זאת על ידי צירוף של פחיות שימורים, גומי ופלסטיק. כאשר הוריו מחוץ לעיר והבייביסיטר שלו נרדמת, בילי מתחמק לחצר האחורית, חובש את קסדת הבייסבול של אחיו הגדול והופך להיות לא אחר מאשר קומנדר קין - הכוח המגן של כדור הארץ! בתוך ספינת החלל שלו הוא משליט צדק גלקטי ביד ברזל![CR]בפרק הקודם, קומנדר קין הצליח לסכל את המזימה של הוורטיקונים לנטוש אותו על מאדים באמצעות מציאת כל חלקי החללית שלו והרכבתה מחדש. היתה זו משימה מסוכנת, אך למעשה היא בסך הכל היוותה פתיח לאימה שמגיעה לאחר מכן...[CR]ההורים שלו חושבים שהוא ישן, אך אין זמן לתנומה - חללית וורטיקונית מרחפת מעל כדור הארץ, מתכוננת להשמיד כל עיר מרכזית באמצעות קרן הלייזר הקטלנית שלהם. על קין להתגנב לספינת החלל ולעצור את כל הצוותים השונים של החללית מביצוע המשימה הנוראה שלהם. אם הוא חלילה ייכשל, כדור הארץ יתפוצץ! מצד שני, במקרה כזה, הוא לא יצטרך להגיע הביתה בזמן לבית הספר...[CR]ההתלבטות של קין היא גדולה, אך בסופו של דבר הוא מחליט להציל את כדור הארץ, גם במחיר הגעה לבית הספר. וכך, קין מוצא את עצמו בהרפתקה חדשה לגמרי![CR]מטרתו של קין בפרק זה הינה למצוא את כל ציוד הלייזר שעל ספינת הוורטיקונים ולהשמיד אותו. הציוד הזה מפוזר בין חדרים שונים על ספינת החלל. לאורך הדרך, קין יכול לאסוף חפצים שונים שיסייעו לו במשימתו. בנוסף, הוא ימצא כלי נשק חדש וקטלני במיוחד: אקדח וורטיקוני. עם האקדח הזה, ועם הכישורים שהוא רכש בפרק הראשון, לוורטיקונים אין סיכוי!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6036</id>
+					<name>Commander Keen 3</name>
+					<filename>rom_pathDOS/_EN/Commander Keen 3/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Commander Keen 3.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Commander Keen 3.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1990</release>
+					<publisher>Apogee Software</publisher>
+					<gameplot>"קומנדר קין - קין חייב למות" הינו הפרק השלישי מתוך תת-הסדרה "קומנדר קין ופלישת הוורטיקונים", הכוללת שני פרקים נוספים.[CR]בילי בלייז, גאון בן 8, הצליח לבנות (לאחר שעות של עבודה מתמדת בחצר האחורית שלו) ספינת חלל בין-כוכבית. כיאה לגאון, הוא הצליח לעשות זאת על ידי צירוף של פחיות שימורים, גומי ופלסטיק. כאשר הוריו מחוץ לעיר והבייביסיטר שלו נרדמת, בילי מתחמק לחצר האחורית, חובש את קסדת הבייסבול של אחיו הגדול והופך להיות לא אחר מאשר קומנדר קין - הכוח המגן של כדור הארץ! בתוך ספינת החלל שלו הוא משליט צדק גלקטי ביד ברזל![CR]בפרק הקודם, קין הצליח לסכל את מזימתם של הוורטיקונים להשמיד את כדור הארץ. ספינת החלל האימתנית שלהם נוטרלה, והיא נאלצה לשוב לכוכב האם שלה, מובסת, ולדווח למפקד העליון על כישלונה החרוץ. מנגד, קין, אחרי תנומה קלה, חגג את נצחונו באמצעות טיסות ניצחון ברחבי החלל החיצון, שמח וטוב לב. אולם, הוורטיקונים לא מוכנים לוותר בקלות כזו, והם אורבים לו בחשאי, מוכנים עם כלי נשק טעונים באנרגיה ועם מחשבה אחת ויחידה: קין חייב למות![CR]את המסע שלו בחלל קין מסיים בהגעה אל הכוכב וורטיקון 6, שם הוא נוחת על האי וורטיוויל. באי זה הוא מתוודע אל החיים בפרברי וורטיקון. משם, הוא ממשיך ל"ניו וורטיקון", המקום בו החיים הם מסוכנים ואפלים.[CR]בפרק הזה, קין יצטרך להתמודד עם כוחות הצבא של מתקן וורטיקוני צבאי, ומשם להמשיך למבוך הבלתי אפשרי של מערות האבדון. אם יצליח לעבור אותו בהצלחה, יגיע בסופו של דבר אל טירת המפקד העליון של הוורטיקונים, שם כל חששותיו ואמונותיו יפגשו את המציאות ליצירת סיום בלתי נשכח לטרילוגיה!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6037</id>
+					<name>Commander Keen 4</name>
+					<filename>rom_pathDOS/_EN/Commander Keen 4/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Commander Keen 4.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Commander Keen 4.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Arcade</genre>
+					<release>1991</release>
+					<publisher>Apogee Software</publisher>
+					<gameplot>קומנדר קין - סוד האורקל" הינו הפרק הראשון מתוך תת-הסדרה "קומנדר קין: להתראות, גלקסיה!" (שהגיעה לאחר טרילוגיית "קומנדר קין ופלישת הוורטיקונים"), והיא כוללת פרק אחד נוסף. פרק זה שוחרר בחינם, בעוד הפרק השני נמכר בתשלום.[CR]בילי בלייז, הידוע גם בכינויו "קומנדר קין", עבד בשקדנות בבית המלאכה שבחצר האחורית שלו, מרכיב את המצאתו הנוכחית: מקלט ה-Photachyon. בקצרה, מקלט זה הינו מכשיר רדיו מיידי - ניתן לכוון אותו אל עבר כל נקודה ביקום ולקלוט שידורי רדיו כאילו הם משודרים ממרחק מטרים ספורים. לאחר שהצליח לקלוט בעיקר קומדיות חוצנים גרועות, לפתע בילי שומע מסר מוזר בשפת ה-Omnispeak, השפה שאותה לימדו אותו הוורטיקונים...[CR]המסר קטוע לחלוטין, וההפרעות בו רבות, אך בילי מצליח להוציא ממנו את העיקר: גזע חיזרים מסתורי ובלתי מוכר, השיקדי, זומם להשמיד את היקום! בלי לחשוב פעמיים, בילי מגיע למסקנה הבלתי נמנעת: זוהי משימה עבור קומנדר קין![CR]בזמן שבילי שב וחובש את קדסת הפוטבול של אחיו, שלוש שאלות עיקריות מנקרות במוחו: מי הם השיקדי? היכן הם? ומדוע הם זוממים להשמיד את היקום? הוא מטפס אל תוך החללית שבנה ומתחיל בהכנות לקראת המראה אל עבר כוכב גנוסטיקוס 6, מקום מושבם של הגנוסטיקנים, מגיני האורקל. הם חייבים לו טובה, והגיע הזמן לפדות אותה.[CR]עם הנחיתה בגנוסטיקוס, מצפה לקין קבלת פנים נסערת: אחד מעוזרי המועצה מגיע אליו בריצה ומספר לו שהשיקדי הקדימו אותו! למעשה, הם חטפו את חברי המועצה הגבוהה ולקחו אותם אל ארצות האופל, אי שם במערב הרחוק. חברי המועצה הם בני אלמוות, כך שאין חשש שהם נהרגו, אך בלעדיהם, לא ניתן להפעיל את האורקל![CR]כעת, על קין להדק חגורות, להמריא אל עבר ארצות האופל, ולשחרר את חברי המועצה העליונה החטופים!</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6038</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6039</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6040</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6041</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6042</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6043</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6044</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6045</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6046</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6047</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6048</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6049</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6050</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6051</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6052</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6053</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6054</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6055</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6056</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6057</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6058</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6059</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6060</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6061</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6062</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6063</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6064</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6065</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6066</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6067</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6068</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6069</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6070</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6071</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6072</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6073</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6074</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6075</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6076</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6077</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6078</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6079</id>
+					<name>XXXXX</name>
+					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>?</genre>
+					<release>?</release>
+					<publisher>?</publisher>
+					<gameplot>?</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
 			</roms>
 		</launcher>
 		
@@ -19532,6 +20757,21 @@
 			<minimize>false</minimize>
 			<lnk></lnk>
 			<roms>
+				<rom>
+					<id>d39a1ne1qx3ba6711bc1769zbd3f4020</id>
+					<name>Simon The Sorcerer 1</name>
+					<filename>rom_pathDOS/_HE/Simon The Sorcerer 1/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Simon The Sorcerer 1.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Simon The Sorcerer 1.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Platform / Action</genre>
+					<release>1993</release>
+					<publisher>Adventuresoft</publisher>
+					<gameplot>שוליית המכשף היא שמה של סדרה בת חמישה כותרים של משחקי מחשב עלילתיים והומוריסטיים מסוגת משחקי ההרפתקה, אשר יצאו לאור על ידי חברות AdventureSoft ו-Silver Style Entertainment בשנות התשעים ושנות האלפיים. דרך הפעולה בה מבוססת על הצבעה והקלקה, ניהול דיאלוגים ושימוש בחפצים.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
 				<rom>
 					<id>d39a1ng1xa1ba6711bc1769zbd3f4020</id>
 					<name>Hugo 1</name>
@@ -19851,8 +21091,8 @@
 					<id>d39a1e79ra1ba6713ec1769cbd3f4009</id>
 					<name>Putt-Putt Goes to the Moon</name>
 					<filename>rom_pathDOS/_HE/Putt-Putt Goes to the Moon/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Putt-Putt Goes to the Moon.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Putt-Putt Goes to the Moon.jpg</fanart>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Putt-Putt Goes to the Moon.png</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Putt-Putt Goes to the Moon.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Adventure / Puzzle </genre>
@@ -19864,22 +21104,22 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4023</id>
-					<name></name>
-					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
+					<name>Fraction Cave - Part 1</name>
+					<filename>rom_pathDOS/_HE/Fraction Cave - Part 1/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Fraction Cave - Part 1.png</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Fraction Cave - Part 1.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
+					<genre>Educational</genre>
+					<release>1992</release>
+					<publisher>תקוע מחשבים בע"מ</publisher>
+					<gameplot>"מערת השברים - חלק א'" הינו חלקו הראשון של זוג לומדות בנושא שברים. הלומדה מקיפה את נושא השברים לתלמידי הכיתות הראשונות, ובפרט לתלמידי כיתות ג'-ד'. היא כוללת שיעורים בנושאים: מונה ומכנה, חיבור וחיסור שברים עם מכנה זהה, צמצום והרחבת שברים וכפל במספר שלם. בנוסף, נכלל בה מקבץ תרגילי חזרה.[CR]ייחודה של הלומדה הוא בכך שהיא משלבת את הסבר החומר עם תרגול בדרך של משחק ואנימציה. סיפור הרקע שמוצג למשתמש הוא ש"מפלצות איומות חטפו את בתו של מלך החשבון! הן שומרות עליה במערה אפלה. הגיבור אמיץ-הלב שינסה להציל את הנסיכה, חייב לענות נכונה על השאלות של המפלצות, אחרת סופו יהיה מר". תרחיש סביר וריאלי לחלוטין, ללא ספק.[CR]לפני היציאה לדרך, המלך מצייד את הגיבור בידע הנחוץ לו על מנת לעבור את המסע. בחלק זה, הלומדה כוללת קטעי לימוד מלווים באיורים והסברים אודות שברים. לבסוף, על הגיבור לצאת אל הלא-נודע, להתעמת עם המפלצות האיומות ולהשיב את הנסיכה הביתה בשלום.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4024</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -19894,7 +21134,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4025</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -19909,7 +21149,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4026</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -19924,7 +21164,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4027</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -19939,7 +21179,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4028</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -19954,7 +21194,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4029</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -19969,7 +21209,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4030</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -19984,7 +21224,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4031</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -19999,7 +21239,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4032</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -20014,7 +21254,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4033</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -20029,7 +21269,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4034</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -20044,7 +21284,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4035</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -20059,7 +21299,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4036</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -20074,7 +21314,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4037</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -20089,7 +21329,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4038</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -20104,7 +21344,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4039</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_HE/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/?.jpg</fanart>
@@ -20160,7 +21400,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4005</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20175,7 +21415,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4006</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20190,7 +21430,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4007</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20205,7 +21445,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4008</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20220,7 +21460,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4009</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20235,7 +21475,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4010</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20250,7 +21490,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4011</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20265,7 +21505,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4012</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20280,7 +21520,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4013</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20295,7 +21535,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4014</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20310,7 +21550,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4015</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20325,7 +21565,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4016</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20340,7 +21580,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4017</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20355,7 +21595,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4018</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20370,7 +21610,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4019</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20385,7 +21625,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4020</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20400,7 +21640,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4021</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20415,7 +21655,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4022</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20430,7 +21670,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4023</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20445,7 +21685,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4024</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20460,7 +21700,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4025</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20475,7 +21715,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4026</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20490,7 +21730,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4027</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20505,7 +21745,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4028</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20520,7 +21760,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4029</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20535,7 +21775,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4030</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20550,7 +21790,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4031</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20565,7 +21805,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4032</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20580,7 +21820,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4033</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20595,7 +21835,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4034</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20610,7 +21850,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4035</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20625,7 +21865,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4036</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20640,7 +21880,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4037</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20655,7 +21895,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4038</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20670,7 +21910,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e29ra1ba6713ec1769cbd3f4039</id>
-					<name></name>
+					<name>XXXXX</name>
 					<filename>rom_pathDOS/_RU/?/GO.BAT</filename>
 					<thumb>rom_pathDOS/_RU/_Artwork/boxfront/?.jpg</thumb>
 					<fanart>rom_pathDOS/_RU/_Artwork/screenshot/?.jpg</fanart>
@@ -20685,17 +21925,16 @@
 				</rom>
 			</roms>
 		</launcher>
-		
 		<launcher>
-			<id>Featherence_win95_en</id>
-			<name>WIN95 EN</name>
-			<category>Featherence_win95</category>
+			<id>Featherence_scummvm</id>
+			<name>scummvm</name>
+			<category>Featherence_dos</category>
 			<application>emulator_file</application>
-			<args>lib_args_dos_args "%rom%"</args>
-			<rompath>rom_pathWIN95/_EN/</rompath>
-			<thumbpath>rom_pathWIN95/_EN/_Artwork/boxfront/</thumbpath>
-			<fanartpath>rom_pathWIN95/_EN/_Artwork/screenshot/</fanartpath>
-			<trailerpath>rom_pathWIN95/_EN/_Artwork/gameplay(video)/</trailerpath>
+			<args>lib_args_scummvm_args "%rom%"</args>
+			<rompath>rom_pathDOS/_SCUMMVM/</rompath>
+			<thumbpath>rom_pathDOS/_SCUMMVM/_Artwork/boxfront/</thumbpath>
+			<fanartpath>rom_pathDOS/_SCUMMVM/_Artwork/screenshot/</fanartpath>
+			<trailerpath>rom_pathDOS/_SCUMMVM/_Artwork/gameplay(video)/</trailerpath>
 			<custompath></custompath>
 			<romext>bat</romext>
 			<platform>WIN95</platform>
@@ -20710,11 +21949,26 @@
 			<lnk></lnk>
 			<roms>
 				<rom>
+					<id>d39a1ne1qx3ba6711bב1169zbd3f4029</id>
+					<name>Simon The Sorcerer 2</name>
+					<filename>rom_pathDOS/_SCUMMVM/Simon The Sorcerer 2/CD/I.EXE</filename>
+					<thumb>rom_pathDOS/_SCUMMVM/_Artwork/boxfront/Simon The Sorcerer 2.jpg</thumb>
+					<fanart>rom_pathDOS/_SCUMMVM/_Artwork/screenshot/Simon The Sorcerer 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Platform / Action</genre>
+					<release>1993</release>
+					<publisher>Adventuresoft</publisher>
+					<gameplot>סיימון המכשף חוזר! והפעם יש לו קוקו! לאחר שהביס את סורדיד במשחק הקודם, סיימון חזר לעולמנו ולשגרת חייו המשעממת. אולם, הדברים לא ימשיכו להתנהל על מי מנוחות, שהרי המשחק הקודם היה הצלחה גדולה ו-Adventuresoft לבטח הרגישה מחויבות לסחוט עוד כמה מצלצלים מגיבורנו המכושף. לכן, סורדיד חוזר כרוח רפאים ועד מהרה מוצא לעצמו שוליה שבעזרתו הוא מנסה ללכוד את סיימון, וזאת באמצעות ארון מכושף (הזמן-תחה). סיימון הסקרן נכנס אל הארון ועד מהרה נשלח למימד אחר, אולם במקום להגיע אל סף דלתו של סורדיד, הוא נוחת בכניסה לחנותו של המכשף קליפסו (שאותו הציל במשחק הקודם) וממנו הוא לומד פרט חשוב ביותר: הארון שבק חיים, וכדי להתניעו מחדש ולחזור הביתה, הוא זקוק לאבקת הכוח. כאן מתחיל המסע של סיימון למציאתה, מסע שעתיד להתפתל ולהסתבך.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>d32f3e79ra1ba6713ec1769cbd3f4034</id>
 					<name>Baldies</name>
-					<filename>rom_pathWIN95/_EN/Baldies/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_EN/_Artwork/boxfront/Baldies.jpg</thumb>
-					<fanart>rom_pathWIN95/_EN/_Artwork/screenshot/Baldies.jpg</fanart>
+					<filename>rom_pathWIN95/_SCUMMVM/Baldies/GO.BAT</filename>
+					<thumb>rom_pathWIN95/_SCUMMVM/_Artwork/boxfront/Baldies.jpg</thumb>
+					<fanart>rom_pathWIN95/_SCUMMVM/_Artwork/screenshot/Baldies.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Strategy</genre>
@@ -20725,546 +21979,36 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4005</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
+					<id>d39a1e21xa1ba6711bc1769zbd3f4021</id>
+					<name>Hugo on the Train‎‎</name>
+					<filename>rom_pathDOS/_SCUMMVM/Hugo on the Train/GO.BAT</filename>
+					<thumb>rom_pathDOS/_SCUMMVM/_Artwork/boxfront/Hugo on the Train.jpg</thumb>
+					<fanart>rom_pathDOS/_SCUMMVM/_Artwork/screenshot/Hugo on the Train.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4006</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4007</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4008</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4009</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4010</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4011</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4012</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4013</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4014</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4015</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4016</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4017</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4018</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4019</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4020</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4021</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4022</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4023</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4024</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4025</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4026</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4027</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4028</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4029</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4030</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4031</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4032</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4033</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4034</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4035</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4036</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4037</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4038</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>d32f3e29ra1ba6713ec1769cbd3f4039</id>
-					<name></name>
-					<filename>rom_pathWIN95/_RU/?/GO.BAT</filename>
-					<thumb>rom_pathWIN95/_RU/_Artwork/boxfront/?.jpg</thumb>
-					<fanart>rom_pathWIN95/_RU/_Artwork/screenshot/?.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
+					<genre>Platform / Action</genre>
+					<release>1998</release>
+					<publisher>ITE</publisher>
+					<gameplot></gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 			</roms>
 		</launcher>
 		<launcher>
-			<id>Featherence_win95_HE</id>
-			<name>WIN95 HE</name>
-			<category>Featherence_win95</category>
+			<id>Featherence_playstation22P</id>
+			<name>Sony Playstation 2P</name>
+			<category>Featherence_playstation2</category>
 			<application>emulator_file</application>
-			<args>lib_args_dos_args "%rom%"</args>
-			<rompath>rom_pathWIN95/_HE/</rompath>
-			<thumbpath>rom_pathWIN95/_HE/_Artwork/boxfront/</thumbpath>
-			<fanartpath>rom_pathWIN95/_HE/_Artwork/screenshot/</fanartpath>
-			<trailerpath>rom_pathWIN95/_HE/_Artwork/gameplay(video)/</trailerpath>
+			<args>lib_args_ps2_args "%rom%"</args>
+			<rompath>rom_pathSony Playstation 2/_2P/</rompath>
+			<thumbpath>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/</thumbpath>
+			<fanartpath>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/</fanartpath>
+			<trailerpath>rom_pathSony Playstation 2/_2P/_Artwork/gameplay(video)/</trailerpath>
 			<custompath></custompath>
-			<romext>bat</romext>
-			<platform>WIN95</platform>
-			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/1P.png</thumb>
+			<romext>m3u</romext>
+			<platform>Playstation 2</platform>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/2P.png</thumb>
 			<fanart></fanart>
 			<genre></genre>
 			<release></release>
@@ -21275,17 +22019,17 @@
 			<lnk></lnk>
 			<roms>
 				<rom>
-					<id>d39a1e21xa1ba6711bc1769zbd3f4021</id>
-					<name>Hugo on the Train‎‎</name>
-					<filename>rom_pathDOS/_HE/Hugo on the Train/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Hugo on the Train.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Hugo on the Train.jpg</fanart>
+					<id>57fe106afc5fcc9dfc22978536f3358e</id>
+					<name>Ben 10 - Ultimate Alien Cosmic Destruction</name>
+					<filename>rom_pathSony Playstation 2/_2P/Ben 10 - Ultimate Alien Cosmic Destruction/Ben 10 - Ultimate Alien Cosmic Destruction.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/Ben 10 - Ultimate Alien Cosmic Destruction.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/Ben 10 - Ultimate Alien Cosmic Destruction.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Platform / Action</genre>
-					<release>1998</release>
-					<publisher>ITE</publisher>
-					<gameplot></gameplot>
+					<genre>Action</genre>
+					<release>1999</release>
+					<publisher>Eighting/Raizing</publisher>
+					<gameplot>With the dawning of the new millennium, a new breed of assassins emerges-altered humans who transmute into violent, raging beasts. All must fight and survive to satisfy their own inner quests...</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>

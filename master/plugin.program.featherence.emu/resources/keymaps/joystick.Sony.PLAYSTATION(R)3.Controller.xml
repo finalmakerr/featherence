@@ -113,8 +113,8 @@
       <button id="5" description="Up D-pad">BigStepForward</button>
 	  <button id="10" description="R2 button (trigger)">VolumeUp</button>
       <button id="9" description="L2 button (trigger)">VolumeDown</button>	  
-	  <button id="3" description="R3 button (thumb)">Mute</button>
-	  <button id="2" description="L3 button (thumb)">Info</button>
+	  <button id="3" description="R3 button (thumb)">noop</button>
+	  <button id="2" description="L3 button (thumb)">noop</button>
 	  <button id="1" description="Select button">FullScreen</button>
 	  <!-- ignore other buttons (mapped to axes) -->
 	  <axis id="13" rest="-32768" description="L2 button (shoulder)">noop</axis>
