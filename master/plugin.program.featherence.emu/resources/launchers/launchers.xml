@@ -19759,7 +19759,7 @@
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769ebd3f6015</id>
 					<name>Arkanoid</name>
-					<filename>rom_pathDOS/_EN/Arkanoid/GO.BAT</filename>
+					<filename>rom_pathDOS/_EN/Arkanoid/Arkanoid.BAT</filename>
 					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Arkanoid.png</thumb>
 					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Arkanoid.png</fanart>
 					<trailer></trailer>
@@ -20103,76 +20103,76 @@
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769ebd3f6038</id>
-					<name>XXXXX</name>
-					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<name>Commander Keen 5</name>
+					<filename>rom_pathDOS/_EN/Commander Keen 5/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Commander Keen 5.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Commander Keen 5.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
+					<genre>Action / Arcade</genre>
+					<release>1991</release>
+					<publisher>Apogee Software</publisher>
+					<gameplot>"קומנדר קין - מכונת הארמגדון" הינו הפרק השני מתוך תת-הסדרה "קומנדר קין: להתראות, גלקסיה!" (שהגיעה לאחר טרילוגיית "קומנדר קין ופלישת הוורטיקונים"), והיא כוללת פרק אחד נוסף.[CR]בפרק הקודם, הגיבור שלנו, בילי בלייז - הידוע גם בכינויו "קומנדר קין" - המריא אל החלל החיצון בחיפוש אחד זן החוצנים המסתורי - השיקדי - אשר זוממים להשמיד את היקום. קין תכנן להעזר בחברי המועצה העליונה של הגנוסטיקנים, היושבים בכוכב גנוסטיקוס 6. אולם, עם ההגעה לשם, קין גילה שחברי המועצה נחטפו על ידי השיקדי! בלית ברירה, קין נאלץ לשנות את תוכניתו המקורית ולטוס אל ארצות האופל, שם הוא הצליח לשחרר את חברי המועצה הקדמונים.[CR]לאחר שקין שחרר את חברי המועצה משוביים, הם הפעילו את מקור הידע והחוכמה שלהם - האורקל. האורקל גילה לקין שהשיקדי כמעט והשלימו מכונה שכל מטרתה היא להשמיד את היקום![CR]בפרק הזה, קין מתגנב אל תוך ה"אומגמטיק" - תחנת החלל של השיקדי - ומנסה בכל כוחו להספיק לנטרל אותה, לפני שיהיה מאוחר מדי...</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769ebd3f6039</id>
-					<name>XXXXX</name>
-					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<name>Commander Keen 6</name>
+					<filename>rom_pathDOS/_EN/Commander Keen 6/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Commander Keen 6.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Commander Keen 6.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
+					<genre>Action / Arcade</genre>
+					<release>1991</release>
+					<publisher>FormGen</publisher>
+					<gameplot>"קומנדר קין - חייזרים אכלו את השמרטפית שלי" הינו הפרק האחרון בסדרת קין, והוא אינו משתייך לתת סדרה כלשהי. הוא מגיע לאחר שני הפרקים של תת-הסדרה "קומנדר קין: להתראות, גלקסיה!" ולאחר טרילוגיית "קומנדר קין ופלישת הוורטיקונים".[CR]בפרק הזה, קין נשלח למשימה חייזרית אחרונה. בזמן שהילד הקטן בילי בלייז (הידוע גם בתור "קומנדר קין") עובד על מחשב הכיס החדש שלו בחצר האחורית, הבייביסיטר שלו, מולי, קוראת לו לבוא ולאכול ארוחת ערב. הוא מתעלם וממשיך לעבוד על המחשב, אך לפתע נשמע בחוץ קול רעשני![CR]קין ממהר החוצה ומגלה שמולי נעלמה. מבט נוסף אל עבר הדשא מגלה פתקון קטן: ה"Bloogs of Fribbulus Xax" הולכים להכין את הארוחה הבאה שלהם מהבייביסיטר שלו! כעת על קין להציל את מולי במהירות, לפני שהוריו יחזרו הביתה וישמעו את התירוץ הכי הזוי בעולם - "חייזרים אכלו את הבייביסיטר שלי!".</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769ebd3f6040</id>
-					<name>XXXXX</name>
-					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<name>Commander Keen 7</name>
+					<filename>rom_pathDOS/_EN/Commander Keen 7/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Commander Keen 7.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Commander Keen 7.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
+					<genre>Action / Arcade</genre>
+					<release>1992</release>
+					<publisher>Softdisk Publishing</publisher>
+					<gameplot>"קומנדר קין - חלומותיו של קין" (אשר מכונה לעיתים "קין 7", "קין 3.5" או "הפרק האבוד") הינו פרק שיצא בתקופה שבין הטרילוגיה המקורית ("קומנדר קין ופלישת הוורטיקונים") ובין המשך הסדרה ("קומנדר קין: להתראות, גלקסיה!"). הפרק הזה לא מתקשר רשמית לעלילה של סדרת קין, ומתבסס על עלילה צדדית.[CR]בילי בלייז, גאון בן 8, הצליח לבנות (לאחר שעות של עבודה מתמדת בחצר האחורית שלו) ספינת חלל בין-כוכבית. כיאה לגאון, הוא הצליח לעשות זאת על ידי צירוף של פחיות שימורים, גומי ופלסטיק. כאשר הוריו מחוץ לעיר והבייביסיטר שלו נרדמת, בילי מתחמק לחצר האחורית, חובש את קסדת הבייסבול של אחיו הגדול והופך להיות לא אחר מאשר קומנדר קין - הכוח המגן של כדור הארץ! בתוך ספינת החלל שלו הוא משליט צדק גלקטי ביד ברזל![CR]הפרק הזה מתחיל עם ויכוח של בילי עם אימו: בילי טוען שמכיוון שזה עתה הצליח להציל את כדור הארץ, אין לחייב אותו לאכול את הירקות שבארוחת הצהריים שלו. לאחר חלופת דברים קצרה, בילי נשלח אל חדרו ומחליט לתפוס תנומה קלה.[CR]לפתע, בילי מתעורר! המיטה שלו, שזה עתה שכנה לבטח בתוך חדר סטנדרטי, נמצאת כעת בראש גבעה! לצידי המיטה עמדו בביטחון שני תפוחי אדמה עצומים, קסדות לראשם וכידונים בידיהם. הם הסבירו בקצרה שקין הובא לשם על ידי מכונת החלומות, ושעליו להתלוות אליהם מיידית. מסתבר שמלך הירקות, בכבודו ובעצמו, דורש לראות את קין![CR]קומנדר קין עדיין לא הספיק להפנים את שעבר עליו וכבר נתקל במראה חדש ונוראי: ילד מסכן, אזוק בשרשראות ברזל ומתחנן שקין יציל אותו ואת חבריו ממכונת החלומות. לקין כבר אין ספק מה צריך להעשות, והוא שולף את הנשק הסודי שלו - אקדח וורטיקוני - ויוצא למשימה קשה ומתאגרת: לחסל את מלך הירקות ולהשמיד את מכונת החלומות!</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769ebd3f6041</id>
-					<name>XXXXX</name>
-					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<name>Congo Bongo</name>
+					<filename>rom_pathDOS/_EN/Congo Bongo/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Congo Bongo.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Congo Bongo.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
+					<genre>Arcade</genre>
+					<release>1984</release>
+					<publisher>SEGA Corporation</publisher>
+					<gameplot>בראשית היה קינג-קונג, גורילת הענק שהטילה את אימתה על תושבי ניו-יורק. אחר כך הגיע דונקי-קונג של Nintendo, שהסתפק בחטיפת נסיכות מזדמנות והטלת חביות על הגיבור החביב מריו בניסיון למנוע ממנו להצילן. Sega, כמובן, לא התכוונה להשאר מחוץ לחגיגה, והביאה לעולם כתשובה את הקוף המיידה שלה: Congo Bongo.[CR]עלילת המשחק, אם למשחק כזה יכולה להיות עלילה, מתרחשת אי שם בג'ונגל פראי בערבות אפריקה. גיבור המשחק הוא צייד נועז וחסר-פחד, שמוכן לעשות הכל על מנת להתנקם בבונגו הגורילה שהצית את האוהל שלו. במסגרת מסע הנקמה שלו, הצייד יצטרך לעבור ארבעה שלבים מלאי סכנה שבסופם, בתקווה, יצליח להגיע אל בונגו ולתת לו כוויה ברגל.[CR]בשלב הראשון, הצייד מוצא את בונגו על ראש הר גבוה, מקפץ מצד לצד ומיידה אגוזי קוקוס בהתלהבות. הצייד יצטרך לפלס את דרכו אל ראש ההר תוך התחמקות זריזה מהקוקוסים המתעופפים, רק כדי למצוא את בונגו מתחמק אל השלב הבא: אגם הנחשים. בשלב זה, על הצייד להתחמק מנחשים ועקרבים תוך שהוא חוצה את האגם על גבי היפופוטמים אקראיים. גם אם יצליח, הוא עדיין יהיה רחוק שני שלבים מהנקמה המתוקה, כאשר בראשון יצטרך למצוא מסתור בבורות שונים מפני הקרנפים הדורסניים, ובשני ינסה לחצות שוב לגונה על גבי היפופוטמים, עלי נופר ובולי עץ, משל היה צפרדע שמנסה לחצות את הכביש.[CR]Congo Bongo מעולם לא הצליח כמו המשחקים מהם שאב השראה. בכל זאת, כמה גורילות יכולות לקנות מקום בהיכל התהילה של משחקי הוידאו?</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769ebd3f6042</id>
-					<name>XXXXX</name>
-					<filename>rom_pathDOS/_EN/XXXXX/GO.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/XXXXX.png</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/XXXXX.png</fanart>
+					<name>Conquest</name>
+					<filename>rom_pathDOS/_EN/Conquest/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Conquest.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Conquest.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>?</genre>
-					<release>?</release>
-					<publisher>?</publisher>
-					<gameplot>?</gameplot>
+					<genre>Arcade</genre>
+					<release>1983</release>
+					<publisher>Windmill Software</publisher>
+					<gameplot>חידוש של WindMill למשחק הפופולרי Joust. במשחק הזה אתם שולטים על איה (סוג של עוף) שנמצאת במלחמת השרדות עם עופות אחרים. כדי לשרוד, האיה צריכה לעוף מעל העופות האחרים ולפגוע בהם מלמעלה. פעולה כזו תהפוך את העוף הנפגע לביצה - אותה צריך לאסוף בזמן מסוים. אם האיה לא תצליח לאסוף את הביצה בזמן הזה, הביצה תבקע ועוד עוף יצא ממנה. במשחק יש מספר פלטפורמות - דבר שמקל על "מארב" לעופות האחרים. מיותר לציין שפגיעה של העופות באיה תפסיל אותה ושיש להזהר מכך, אך כדאי לציין שקיימת אפשרות של שני שחקנים...</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -20775,7 +20775,7 @@
 				<rom>
 					<id>d39a1ng1xa1ba6711bc1769zbd3f4020</id>
 					<name>Hugo 1</name>
-					<filename>rom_pathDOS/_HE/Hugo 1/GO.BAT</filename>
+					<filename>rom_pathDOS/_HE/Hugo 1/Hugo 1.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Hugo 1.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Hugo 1.jpg</fanart>
 					<trailer></trailer>
